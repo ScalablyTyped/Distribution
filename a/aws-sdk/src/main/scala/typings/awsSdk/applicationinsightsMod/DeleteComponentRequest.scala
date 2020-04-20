@@ -20,7 +20,6 @@ object DeleteComponentRequest {
   @scala.inline
   def apply(ComponentName: ComponentName, ResourceGroupName: ResourceGroupName): DeleteComponentRequest = {
     val __obj = js.Dynamic.literal(ComponentName = ComponentName.asInstanceOf[js.Any], ResourceGroupName = ResourceGroupName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteComponentRequest]
   }
 }

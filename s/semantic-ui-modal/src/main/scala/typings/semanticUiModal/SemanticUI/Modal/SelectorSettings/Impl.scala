@@ -23,7 +23,6 @@ object Impl {
   @scala.inline
   def apply(approve: String, close: String, deny: String): Impl = {
     val __obj = js.Dynamic.literal(approve = approve.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], deny = deny.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Impl]
   }
 }

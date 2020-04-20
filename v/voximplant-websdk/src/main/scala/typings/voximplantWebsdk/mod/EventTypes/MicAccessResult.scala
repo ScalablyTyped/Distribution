@@ -19,7 +19,6 @@ object MicAccessResult {
   @scala.inline
   def apply(result: Boolean): MicAccessResult = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MicAccessResult]
   }
 }

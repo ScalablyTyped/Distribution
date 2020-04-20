@@ -13,7 +13,6 @@ object SplitPaneState {
   @scala.inline
   def apply(active: Boolean, resized: Boolean): SplitPaneState = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], resized = resized.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SplitPaneState]
   }
 }

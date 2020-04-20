@@ -20,7 +20,6 @@ object CreateAliasRequest {
   @scala.inline
   def apply(Alias: AliasName, DirectoryId: DirectoryId): CreateAliasRequest = {
     val __obj = js.Dynamic.literal(Alias = Alias.asInstanceOf[js.Any], DirectoryId = DirectoryId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateAliasRequest]
   }
 }

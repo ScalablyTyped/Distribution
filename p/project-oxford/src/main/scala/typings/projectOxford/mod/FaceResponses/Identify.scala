@@ -14,7 +14,6 @@ object Identify {
   @scala.inline
   def apply(candidates: js.Array[AnonConfidence], faceId: String): Identify = {
     val __obj = js.Dynamic.literal(candidates = candidates.asInstanceOf[js.Any], faceId = faceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Identify]
   }
 }

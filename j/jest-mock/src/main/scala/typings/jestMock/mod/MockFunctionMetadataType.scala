@@ -18,22 +18,20 @@ trait MockFunctionMetadataType extends js.Object
 
 object MockFunctionMetadataType {
   @scala.inline
-  def array: typings.jestMock.jestMockStrings.array = this.cast("array")
+  def array: typings.jestMock.jestMockStrings.array = "array".asInstanceOf[typings.jestMock.jestMockStrings.array]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def collection: typings.jestMock.jestMockStrings.collection = "collection".asInstanceOf[typings.jestMock.jestMockStrings.collection]
   @scala.inline
-  def collection: typings.jestMock.jestMockStrings.collection = this.cast("collection")
+  def constant: typings.jestMock.jestMockStrings.constant = "constant".asInstanceOf[typings.jestMock.jestMockStrings.constant]
   @scala.inline
-  def constant: typings.jestMock.jestMockStrings.constant = this.cast("constant")
+  def function: typings.jestMock.jestMockStrings.function = "function".asInstanceOf[typings.jestMock.jestMockStrings.function]
   @scala.inline
-  def function: typings.jestMock.jestMockStrings.function = this.cast("function")
+  def `null`: typings.jestMock.jestMockStrings.`null` = "null".asInstanceOf[typings.jestMock.jestMockStrings.`null`]
   @scala.inline
-  def `null`: typings.jestMock.jestMockStrings.`null` = this.cast("null")
+  def `object`: typings.jestMock.jestMockStrings.`object` = "object".asInstanceOf[typings.jestMock.jestMockStrings.`object`]
   @scala.inline
-  def `object`: typings.jestMock.jestMockStrings.`object` = this.cast("object")
+  def regexp: typings.jestMock.jestMockStrings.regexp = "regexp".asInstanceOf[typings.jestMock.jestMockStrings.regexp]
   @scala.inline
-  def regexp: typings.jestMock.jestMockStrings.regexp = this.cast("regexp")
-  @scala.inline
-  def undefined: typings.jestMock.jestMockStrings.undefined = this.cast("undefined")
+  def undefined: typings.jestMock.jestMockStrings.undefined = "undefined".asInstanceOf[typings.jestMock.jestMockStrings.undefined]
 }
 

@@ -13,12 +13,10 @@ trait NxSelectionCellType extends js.Object
 
 object NxSelectionCellType {
   @scala.inline
-  def D: typings.qlikEngineapi.qlikEngineapiStrings.D = this.cast("D")
+  def D: typings.qlikEngineapi.qlikEngineapiStrings.D = "D".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.D]
   @scala.inline
-  def L: typings.qlikEngineapi.qlikEngineapiStrings.L = this.cast("L")
+  def L: typings.qlikEngineapi.qlikEngineapiStrings.L = "L".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.L]
   @scala.inline
-  def T: typings.qlikEngineapi.qlikEngineapiStrings.T = this.cast("T")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def T: typings.qlikEngineapi.qlikEngineapiStrings.T = "T".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.T]
 }
 

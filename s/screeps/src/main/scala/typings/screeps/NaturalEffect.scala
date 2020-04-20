@@ -22,7 +22,6 @@ object NaturalEffect {
   @scala.inline
   def apply(effect: EffectConstant, ticksRemaining: Double): NaturalEffect = {
     val __obj = js.Dynamic.literal(effect = effect.asInstanceOf[js.Any], ticksRemaining = ticksRemaining.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NaturalEffect]
   }
 }

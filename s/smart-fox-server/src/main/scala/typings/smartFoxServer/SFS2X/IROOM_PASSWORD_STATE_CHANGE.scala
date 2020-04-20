@@ -13,7 +13,6 @@ object IROOM_PASSWORD_STATE_CHANGE {
   @scala.inline
   def apply(room: SFSRoom): IROOM_PASSWORD_STATE_CHANGE = {
     val __obj = js.Dynamic.literal(room = room.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IROOM_PASSWORD_STATE_CHANGE]
   }
 }

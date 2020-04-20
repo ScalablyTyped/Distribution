@@ -6,49 +6,49 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait WhereableQueryBuilder[T] extends js.Object {
-  def andWhere[K /* <: String */](
+  def andWhere[K /* <: /* keyof T */ String */](
     lhs: K,
     comparison: ComparisonRestriction,
     rhs: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ): this.type = js.native
-  def andWhere[K /* <: String */](
+  def andWhere[K /* <: /* keyof T */ String */](
     lhs: K,
     comparison: InRestriction,
     rhs: js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
     ]
   ): this.type = js.native
-  def orWhere[K /* <: String */](
+  def orWhere[K /* <: /* keyof T */ String */](
     lhs: K,
     comparison: ComparisonRestriction,
     rhs: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ): this.type = js.native
-  def orWhere[K /* <: String */](
+  def orWhere[K /* <: /* keyof T */ String */](
     lhs: K,
     comparison: InRestriction,
     rhs: js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
     ]
   ): this.type = js.native
-  def tokenWhere[K /* <: String */](
+  def tokenWhere[K /* <: /* keyof T */ String */](
     lhs: K,
     comparison: ComparisonRestriction,
     rhs: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ): this.type = js.native
-  def tokenWhere[K /* <: String */](
+  def tokenWhere[K /* <: /* keyof T */ String */](
     lhs: K,
     comparison: InRestriction,
     rhs: js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
     ]
   ): this.type = js.native
-  def ttl[K /* <: String */](columnName: K): this.type = js.native
-  def where[K /* <: String */](
+  def ttl[K /* <: /* keyof T */ String */](columnName: K): this.type = js.native
+  def where[K /* <: /* keyof T */ String */](
     lhs: K,
     comparison: ComparisonRestriction,
     rhs: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ): this.type = js.native
-  def where[K /* <: String */](
+  def where[K /* <: /* keyof T */ String */](
     lhs: K,
     comparison: InRestriction,
     rhs: js.Array[

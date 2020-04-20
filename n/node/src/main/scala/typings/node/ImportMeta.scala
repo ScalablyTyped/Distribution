@@ -12,7 +12,6 @@ object ImportMeta {
   @scala.inline
   def apply(url: java.lang.String): ImportMeta = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ImportMeta]
   }
 }

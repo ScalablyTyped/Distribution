@@ -2,7 +2,7 @@ package typings.hexoUtil.mod
 
 import typings.hexoUtil.hexoUtilBooleans.`false`
 import typings.hexoUtil.hexoUtilStrings._empty
-import typings.node.NodeJS.ProcessEnv
+import typings.node.NodeJS.Dict
 import typings.node.childProcessMod.SerializationType
 import typings.node.childProcessMod.SpawnOptions
 import typings.node.childProcessMod.StdioOptions
@@ -22,7 +22,7 @@ object hexoSpawnDisableEncodingOptions {
     cwd: String = null,
     detached: js.UndefOr[Boolean] = js.undefined,
     encoding: _empty | `false` = null,
-    env: ProcessEnv = null,
+    env: Dict[String] = null,
     gid: Int | Double = null,
     serialization: SerializationType = null,
     shell: Boolean | String = null,

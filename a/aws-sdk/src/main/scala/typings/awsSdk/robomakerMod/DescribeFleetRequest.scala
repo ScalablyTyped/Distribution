@@ -16,7 +16,6 @@ object DescribeFleetRequest {
   @scala.inline
   def apply(fleet: Arn): DescribeFleetRequest = {
     val __obj = js.Dynamic.literal(fleet = fleet.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeFleetRequest]
   }
 }

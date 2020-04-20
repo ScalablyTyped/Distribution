@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactDocumentTitleProps {
   @scala.inline
-  def ReactDocumentTitleProps: DocumentTitleProps.type = typings.reactDocumentTitle.mod.DocumentTitleProps
+  def ReactDocumentTitleProps: DocumentTitleProps.type = DocumentTitleProps
   type ReactDocumentTitleProps = DocumentTitleProps
 }
 

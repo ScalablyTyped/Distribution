@@ -15,7 +15,6 @@ object AnonRadius {
   @scala.inline
   def apply(radius: Double, segments: Double, thetaLength: Double, thetaStart: Double): AnonRadius = {
     val __obj = js.Dynamic.literal(radius = radius.asInstanceOf[js.Any], segments = segments.asInstanceOf[js.Any], thetaLength = thetaLength.asInstanceOf[js.Any], thetaStart = thetaStart.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRadius]
   }
 }

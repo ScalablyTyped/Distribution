@@ -23,7 +23,7 @@ object infrastructureMod extends js.Object {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
   }
   
-  def bundler[T /* <: StringDictionary[Constructor] */, P /* <: String */](services: T): Bundle[T, P] = js.native
+  def bundler[T /* <: StringDictionary[Constructor] */, P /* <: /* keyof T */ String */](services: T): Bundle[T, P] = js.native
   @js.native
   object RequestHelper extends js.Object {
     @JSName("del")

@@ -33,7 +33,6 @@ object ReactionsCreateForTeamDiscussionCommentInOrgParams {
     team_slug: String
   ): ReactionsCreateForTeamDiscussionCommentInOrgParams = {
     val __obj = js.Dynamic.literal(comment_number = comment_number.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], discussion_number = discussion_number.asInstanceOf[js.Any], org = org.asInstanceOf[js.Any], team_slug = team_slug.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReactionsCreateForTeamDiscussionCommentInOrgParams]
   }
 }

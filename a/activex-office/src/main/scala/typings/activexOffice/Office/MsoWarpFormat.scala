@@ -86,82 +86,80 @@ trait MsoWarpFormat extends js.Object
 
 object MsoWarpFormat {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoWarpFormat1: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def msoWarpFormat1: `0` = this.cast(0)
+  def msoWarpFormat10: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def msoWarpFormat10: `9` = this.cast(9)
+  def msoWarpFormat11: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def msoWarpFormat11: `10` = this.cast(10)
+  def msoWarpFormat12: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def msoWarpFormat12: `11` = this.cast(11)
+  def msoWarpFormat13: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def msoWarpFormat13: `12` = this.cast(12)
+  def msoWarpFormat14: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def msoWarpFormat14: `13` = this.cast(13)
+  def msoWarpFormat15: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def msoWarpFormat15: `14` = this.cast(14)
+  def msoWarpFormat16: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def msoWarpFormat16: `15` = this.cast(15)
+  def msoWarpFormat17: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def msoWarpFormat17: `16` = this.cast(16)
+  def msoWarpFormat18: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def msoWarpFormat18: `17` = this.cast(17)
+  def msoWarpFormat19: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def msoWarpFormat19: `18` = this.cast(18)
+  def msoWarpFormat2: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoWarpFormat2: `1` = this.cast(1)
+  def msoWarpFormat20: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def msoWarpFormat20: `19` = this.cast(19)
+  def msoWarpFormat21: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def msoWarpFormat21: `20` = this.cast(20)
+  def msoWarpFormat22: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def msoWarpFormat22: `21` = this.cast(21)
+  def msoWarpFormat23: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def msoWarpFormat23: `22` = this.cast(22)
+  def msoWarpFormat24: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def msoWarpFormat24: `23` = this.cast(23)
+  def msoWarpFormat25: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def msoWarpFormat25: `24` = this.cast(24)
+  def msoWarpFormat26: `25` = 25.asInstanceOf[`25`]
   @scala.inline
-  def msoWarpFormat26: `25` = this.cast(25)
+  def msoWarpFormat27: `26` = 26.asInstanceOf[`26`]
   @scala.inline
-  def msoWarpFormat27: `26` = this.cast(26)
+  def msoWarpFormat28: `27` = 27.asInstanceOf[`27`]
   @scala.inline
-  def msoWarpFormat28: `27` = this.cast(27)
+  def msoWarpFormat29: `28` = 28.asInstanceOf[`28`]
   @scala.inline
-  def msoWarpFormat29: `28` = this.cast(28)
+  def msoWarpFormat3: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoWarpFormat3: `2` = this.cast(2)
+  def msoWarpFormat30: `29` = 29.asInstanceOf[`29`]
   @scala.inline
-  def msoWarpFormat30: `29` = this.cast(29)
+  def msoWarpFormat31: `30` = 30.asInstanceOf[`30`]
   @scala.inline
-  def msoWarpFormat31: `30` = this.cast(30)
+  def msoWarpFormat32: `31` = 31.asInstanceOf[`31`]
   @scala.inline
-  def msoWarpFormat32: `31` = this.cast(31)
+  def msoWarpFormat33: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def msoWarpFormat33: `32` = this.cast(32)
+  def msoWarpFormat34: `33` = 33.asInstanceOf[`33`]
   @scala.inline
-  def msoWarpFormat34: `33` = this.cast(33)
+  def msoWarpFormat35: `34` = 34.asInstanceOf[`34`]
   @scala.inline
-  def msoWarpFormat35: `34` = this.cast(34)
+  def msoWarpFormat36: `35` = 35.asInstanceOf[`35`]
   @scala.inline
-  def msoWarpFormat36: `35` = this.cast(35)
+  def msoWarpFormat37: `36` = 36.asInstanceOf[`36`]
   @scala.inline
-  def msoWarpFormat37: `36` = this.cast(36)
+  def msoWarpFormat4: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoWarpFormat4: `3` = this.cast(3)
+  def msoWarpFormat5: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoWarpFormat5: `4` = this.cast(4)
+  def msoWarpFormat6: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def msoWarpFormat6: `5` = this.cast(5)
+  def msoWarpFormat7: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def msoWarpFormat7: `6` = this.cast(6)
+  def msoWarpFormat8: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def msoWarpFormat8: `7` = this.cast(7)
+  def msoWarpFormat9: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def msoWarpFormat9: `8` = this.cast(8)
-  @scala.inline
-  def msoWarpFormatMixed: `-2` = this.cast(-2)
+  def msoWarpFormatMixed: `-2` = -2.asInstanceOf[`-2`]
 }
 

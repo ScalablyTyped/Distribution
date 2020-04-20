@@ -16,7 +16,6 @@ object DecodeAuthorizationMessageRequest {
   @scala.inline
   def apply(EncodedMessage: encodedMessageType): DecodeAuthorizationMessageRequest = {
     val __obj = js.Dynamic.literal(EncodedMessage = EncodedMessage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DecodeAuthorizationMessageRequest]
   }
 }

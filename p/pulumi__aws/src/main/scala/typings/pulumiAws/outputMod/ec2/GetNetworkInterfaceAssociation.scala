@@ -38,7 +38,6 @@ object GetNetworkInterfaceAssociation {
     publicIp: String
   ): GetNetworkInterfaceAssociation = {
     val __obj = js.Dynamic.literal(allocationId = allocationId.asInstanceOf[js.Any], associationId = associationId.asInstanceOf[js.Any], ipOwnerId = ipOwnerId.asInstanceOf[js.Any], publicDnsName = publicDnsName.asInstanceOf[js.Any], publicIp = publicIp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetNetworkInterfaceAssociation]
   }
 }

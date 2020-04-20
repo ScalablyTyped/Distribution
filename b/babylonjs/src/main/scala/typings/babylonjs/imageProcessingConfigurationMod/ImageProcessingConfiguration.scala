@@ -67,7 +67,7 @@ class ImageProcessingConfiguration () extends js.Object {
   /**
     * Gets wether the image processing is applied through a post process or not.
     */
-  def applyByPostProcess(): Boolean = js.native
+  def applyByPostProcess: Boolean = js.native
   /**
     * Sets wether the image processing is applied through a post process or not.
     */
@@ -82,7 +82,7 @@ class ImageProcessingConfiguration () extends js.Object {
   /**
     * Gets wether the color curves effect is enabled.
     */
-  def colorCurvesEnabled(): Boolean = js.native
+  def colorCurvesEnabled: Boolean = js.native
   /**
     * Sets wether the color curves effect is enabled.
     */
@@ -90,7 +90,7 @@ class ImageProcessingConfiguration () extends js.Object {
   /**
     * Gets wether the color grading texture contains BGR values.
     */
-  def colorGradingBGR(): Boolean = js.native
+  def colorGradingBGR: Boolean = js.native
   /**
     * Sets wether the color grading texture contains BGR values.
     */
@@ -98,7 +98,7 @@ class ImageProcessingConfiguration () extends js.Object {
   /**
     * Gets wether the color grading effect is enabled.
     */
-  def colorGradingEnabled(): Boolean = js.native
+  def colorGradingEnabled: Boolean = js.native
   /**
     * Sets wether the color grading effect is enabled.
     */
@@ -106,7 +106,7 @@ class ImageProcessingConfiguration () extends js.Object {
   /**
     * Color grading LUT texture used in the effect if colorGradingEnabled is set to true
     */
-  def colorGradingTexture(): Nullable[BaseTexture] = js.native
+  def colorGradingTexture: Nullable[BaseTexture] = js.native
   /**
     * Color grading LUT texture used in the effect if colorGradingEnabled is set to true
     */
@@ -114,7 +114,7 @@ class ImageProcessingConfiguration () extends js.Object {
   /**
     * Gets wether the color grading effect is using a green depth for the 3d Texture.
     */
-  def colorGradingWithGreenDepth(): Boolean = js.native
+  def colorGradingWithGreenDepth: Boolean = js.native
   /**
     * Sets wether the color grading effect is using a green depth for the 3d Texture.
     */
@@ -122,7 +122,7 @@ class ImageProcessingConfiguration () extends js.Object {
   /**
     * Gets the contrast used in the effect.
     */
-  def contrast(): Double = js.native
+  def contrast: Double = js.native
   /**
     * Sets the contrast used in the effect.
     */
@@ -130,7 +130,7 @@ class ImageProcessingConfiguration () extends js.Object {
   /**
     * Gets the Exposure used in the effect.
     */
-  def exposure(): Double = js.native
+  def exposure: Double = js.native
   /**
     * Sets the Exposure used in the effect.
     */
@@ -143,7 +143,7 @@ class ImageProcessingConfiguration () extends js.Object {
   /**
     * Gets wether the image processing is enabled or not.
     */
-  def isEnabled(): Boolean = js.native
+  def isEnabled: Boolean = js.native
   /**
     * Sets wether the image processing is enabled or not.
     */
@@ -168,7 +168,7 @@ class ImageProcessingConfiguration () extends js.Object {
   /**
     * Gets wether the tone mapping effect is enabled.
     */
-  def toneMappingEnabled(): Boolean = js.native
+  def toneMappingEnabled: Boolean = js.native
   /**
     * Sets wether the tone mapping effect is enabled.
     */
@@ -176,7 +176,7 @@ class ImageProcessingConfiguration () extends js.Object {
   /**
     * Gets the type of tone mapping effect.
     */
-  def toneMappingType(): Double = js.native
+  def toneMappingType: Double = js.native
   /**
     * Sets the type of tone mapping effect used in BabylonJS.
     */
@@ -184,7 +184,7 @@ class ImageProcessingConfiguration () extends js.Object {
   /**
     * Gets the vignette blend mode allowing different kind of effect.
     */
-  def vignetteBlendMode(): Double = js.native
+  def vignetteBlendMode: Double = js.native
   /**
     * Sets the vignette blend mode allowing different kind of effect.
     */
@@ -192,7 +192,7 @@ class ImageProcessingConfiguration () extends js.Object {
   /**
     * Gets wether the vignette effect is enabled.
     */
-  def vignetteEnabled(): Boolean = js.native
+  def vignetteEnabled: Boolean = js.native
   /**
     * Sets wether the vignette effect is enabled.
     */
@@ -235,10 +235,10 @@ object ImageProcessingConfiguration extends js.Object {
   /**
     * Used to apply the vignette as a mix with the pixel color.
     */
-  def VIGNETTEMODE_MULTIPLY(): Double = js.native
+  def VIGNETTEMODE_MULTIPLY: Double = js.native
   /**
     * Used to apply the vignette as a replacement of the pixel color.
     */
-  def VIGNETTEMODE_OPAQUE(): Double = js.native
+  def VIGNETTEMODE_OPAQUE: Double = js.native
 }
 

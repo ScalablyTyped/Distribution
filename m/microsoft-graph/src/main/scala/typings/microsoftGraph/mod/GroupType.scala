@@ -13,12 +13,10 @@ trait GroupType extends js.Object
 
 object GroupType {
   @scala.inline
-  def azureAD: typings.microsoftGraph.microsoftGraphStrings.azureAD = this.cast("azureAD")
+  def azureAD: typings.microsoftGraph.microsoftGraphStrings.azureAD = "azureAD".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.azureAD]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def unifiedGroups: typings.microsoftGraph.microsoftGraphStrings.unifiedGroups = "unifiedGroups".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unifiedGroups]
   @scala.inline
-  def unifiedGroups: typings.microsoftGraph.microsoftGraphStrings.unifiedGroups = this.cast("unifiedGroups")
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = this.cast("unknownFutureValue")
+  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }
 

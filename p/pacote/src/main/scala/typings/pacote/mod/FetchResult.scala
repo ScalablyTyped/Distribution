@@ -23,7 +23,6 @@ object FetchResult {
   @scala.inline
   def apply(from: String, integrity: String, resolved: String): FetchResult = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], integrity = integrity.asInstanceOf[js.Any], resolved = resolved.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FetchResult]
   }
 }

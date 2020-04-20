@@ -17,7 +17,6 @@ object VideoFormatsCollection {
   @scala.inline
   def apply(get: (String, Double) => VideoFormat, list: String => VideoFormatsListResponse): VideoFormatsCollection = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[VideoFormatsCollection]
   }
 }

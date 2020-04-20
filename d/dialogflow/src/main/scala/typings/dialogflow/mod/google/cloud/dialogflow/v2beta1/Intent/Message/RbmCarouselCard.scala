@@ -25,7 +25,7 @@ class RbmCarouselCard () extends IRbmCarouselCard {
   var cardContents_RbmCarouselCard: js.Array[IRbmCardContent] = js.native
   /** RbmCarouselCard cardWidth. */
   @JSName("cardWidth")
-  var cardWidth_RbmCarouselCard: CardWidth | String = js.native
+  var cardWidth_RbmCarouselCard: CardWidth | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard.CardWidth * / any */ String) = js.native
   /**
     * Converts this RbmCarouselCard to JSON.
     * @returns JSON object

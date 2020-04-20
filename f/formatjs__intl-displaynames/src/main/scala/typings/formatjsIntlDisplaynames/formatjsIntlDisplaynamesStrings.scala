@@ -39,7 +39,7 @@ object formatjsIntlDisplaynamesStrings {
   sealed trait short extends js.Object
   
   @scala.inline
-  def `best fit`: `best fit` = "best fit".asInstanceOf[`best fit`]
+  def `best fit`: `best fit` = ("best fit").asInstanceOf[`best fit`]
   @scala.inline
   def code: code = "code".asInstanceOf[code]
   @scala.inline

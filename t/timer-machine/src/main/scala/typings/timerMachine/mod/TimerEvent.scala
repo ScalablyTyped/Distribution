@@ -13,12 +13,10 @@ trait TimerEvent extends js.Object
 
 object TimerEvent {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def start: typings.timerMachine.timerMachineStrings.start = "start".asInstanceOf[typings.timerMachine.timerMachineStrings.start]
   @scala.inline
-  def start: typings.timerMachine.timerMachineStrings.start = this.cast("start")
+  def stop: typings.timerMachine.timerMachineStrings.stop = "stop".asInstanceOf[typings.timerMachine.timerMachineStrings.stop]
   @scala.inline
-  def stop: typings.timerMachine.timerMachineStrings.stop = this.cast("stop")
-  @scala.inline
-  def time: typings.timerMachine.timerMachineStrings.time = this.cast("time")
+  def time: typings.timerMachine.timerMachineStrings.time = "time".asInstanceOf[typings.timerMachine.timerMachineStrings.time]
 }
 

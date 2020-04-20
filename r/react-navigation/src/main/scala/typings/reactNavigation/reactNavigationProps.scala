@@ -10,7 +10,7 @@ trait reactNavigationProps {
   def NavigationEventsProps: typings.reactNavigation.mod.NavigationEventsProps.type = typings.reactNavigation.mod.NavigationEventsProps
   type NavigationEventsProps = typings.reactNavigation.mod.NavigationEventsProps
   @scala.inline
-  def NavigationProviderProps: AnonValue.type = typings.reactNavigation.AnonValue
+  def NavigationProviderProps: AnonValue.type = AnonValue
   type NavigationProviderProps = AnonValue
   @scala.inline
   def SafeAreaViewProps: typings.reactNavigation.mod.SafeAreaViewProps.type = typings.reactNavigation.mod.SafeAreaViewProps

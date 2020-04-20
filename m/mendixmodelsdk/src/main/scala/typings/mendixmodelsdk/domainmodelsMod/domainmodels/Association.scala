@@ -37,13 +37,13 @@ class Association protected () extends AssociationBase {
   val child_FAssociation: IEntity = js.native
   @JSName("model")
   var model_FAssociation: IModel = js.native
-  def child(): Entity = js.native
+  def child: Entity = js.native
   def child(newValue: Entity): js.Any = js.native
-  def childConnection(): IPoint = js.native
+  def childConnection: IPoint = js.native
   def childConnection(newValue: IPoint): js.Any = js.native
   @JSName("containerAsDomainModel")
-  def containerAsDomainModel_MAssociation(): DomainModel = js.native
-  def parentConnection(): IPoint = js.native
+  def containerAsDomainModel_MAssociation: DomainModel = js.native
+  def parentConnection: IPoint = js.native
   def parentConnection(newValue: IPoint): js.Any = js.native
 }
 

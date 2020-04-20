@@ -33,7 +33,6 @@ object CreateNotificationSubscriptionRequest {
     SubscriptionType: SubscriptionType
   ): CreateNotificationSubscriptionRequest = {
     val __obj = js.Dynamic.literal(Endpoint = Endpoint.asInstanceOf[js.Any], OrganizationId = OrganizationId.asInstanceOf[js.Any], Protocol = Protocol.asInstanceOf[js.Any], SubscriptionType = SubscriptionType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateNotificationSubscriptionRequest]
   }
 }

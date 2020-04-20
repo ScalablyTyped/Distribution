@@ -14,7 +14,6 @@ object AnonFormat {
   @scala.inline
   def apply(format: `[latCommalon]` | `[lonCommalat]`): AnonFormat = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFormat]
   }
 }

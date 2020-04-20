@@ -12,7 +12,6 @@ object AnonActiveOpacityNumber {
   @scala.inline
   def apply(activeOpacity: Double): AnonActiveOpacityNumber = {
     val __obj = js.Dynamic.literal(activeOpacity = activeOpacity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonActiveOpacityNumber]
   }
 }

@@ -22,7 +22,6 @@ object StateWithAmplitude {
     numBits: Double
   ): StateWithAmplitude = {
     val __obj = js.Dynamic.literal(amplitude = amplitude.asInstanceOf[js.Any], asBitString = js.Any.fromFunction0(asBitString), asNumber = js.Any.fromFunction0(asNumber), index = index.asInstanceOf[js.Any], numBits = numBits.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StateWithAmplitude]
   }
 }

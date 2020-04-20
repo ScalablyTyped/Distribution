@@ -16,7 +16,6 @@ object DescribeServiceAccessPoliciesResponse {
   @scala.inline
   def apply(AccessPolicies: AccessPoliciesStatus): DescribeServiceAccessPoliciesResponse = {
     val __obj = js.Dynamic.literal(AccessPolicies = AccessPolicies.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeServiceAccessPoliciesResponse]
   }
 }

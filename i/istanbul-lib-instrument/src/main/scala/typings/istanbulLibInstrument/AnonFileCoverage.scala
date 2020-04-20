@@ -14,7 +14,6 @@ object AnonFileCoverage {
   @scala.inline
   def apply(fileCoverage: FileCoverage, sourceMappingURL: String): AnonFileCoverage = {
     val __obj = js.Dynamic.literal(fileCoverage = fileCoverage.asInstanceOf[js.Any], sourceMappingURL = sourceMappingURL.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFileCoverage]
   }
 }

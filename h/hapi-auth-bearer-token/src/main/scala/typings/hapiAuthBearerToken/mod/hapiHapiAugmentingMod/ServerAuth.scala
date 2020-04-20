@@ -15,7 +15,6 @@ object ServerAuth {
   @scala.inline
   def apply(strategy: (String, `bearer-access-token`, SchemaOptions) => Unit): ServerAuth = {
     val __obj = js.Dynamic.literal(strategy = js.Any.fromFunction3(strategy))
-  
     __obj.asInstanceOf[ServerAuth]
   }
 }

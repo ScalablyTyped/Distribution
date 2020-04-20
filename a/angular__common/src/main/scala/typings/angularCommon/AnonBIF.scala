@@ -12,7 +12,6 @@ object AnonBIF {
   @scala.inline
   def apply(BIF: js.Array[String]): AnonBIF = {
     val __obj = js.Dynamic.literal(BIF = BIF.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBIF]
   }
 }

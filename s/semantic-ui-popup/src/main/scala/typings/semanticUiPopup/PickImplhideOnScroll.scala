@@ -15,7 +15,6 @@ object PickImplhideOnScroll {
   @scala.inline
   def apply(hideOnScroll: auto | `false`): PickImplhideOnScroll = {
     val __obj = js.Dynamic.literal(hideOnScroll = hideOnScroll.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplhideOnScroll]
   }
 }

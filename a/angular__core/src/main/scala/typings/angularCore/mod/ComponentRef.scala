@@ -10,11 +10,11 @@ abstract class ComponentRef[C] () extends js.Object {
   /**
     * The change detector for this component instance.
     */
-  def changeDetectorRef(): ChangeDetectorRef = js.native
+  def changeDetectorRef: ChangeDetectorRef = js.native
   /**
     * The type of this component (as created by a `ComponentFactory` class).
     */
-  def componentType(): Type[_] = js.native
+  def componentType: Type[_] = js.native
   /**
     * Destroys the component instance and all of the data structures associated with it.
     */
@@ -23,19 +23,19 @@ abstract class ComponentRef[C] () extends js.Object {
     * The [host view](guide/glossary#view-tree) defined by the template
     * for this component instance.
     */
-  def hostView(): ViewRef = js.native
+  def hostView: ViewRef = js.native
   /**
     * The [dependency injector](guide/glossary#injector) for this component instance.
     */
-  def injector(): Injector = js.native
+  def injector: Injector = js.native
   /**
     * This component instance.
     */
-  def instance(): C = js.native
+  def instance: C = js.native
   /**
     * The host or anchor [element](guide/glossary#element) for this component instance.
     */
-  def location(): ElementRef[_] = js.native
+  def location: ElementRef[_] = js.native
   /**
     * A lifecycle hook that provides additional developer-defined cleanup
     * functionality for the component.

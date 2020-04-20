@@ -20,7 +20,6 @@ object CSVMappingParameters {
   @scala.inline
   def apply(RecordColumnDelimiter: RecordColumnDelimiter, RecordRowDelimiter: RecordRowDelimiter): CSVMappingParameters = {
     val __obj = js.Dynamic.literal(RecordColumnDelimiter = RecordColumnDelimiter.asInstanceOf[js.Any], RecordRowDelimiter = RecordRowDelimiter.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CSVMappingParameters]
   }
 }

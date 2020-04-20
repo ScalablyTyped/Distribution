@@ -16,7 +16,6 @@ object DeleteFileEntry {
   @scala.inline
   def apply(filePath: Path): DeleteFileEntry = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteFileEntry]
   }
 }

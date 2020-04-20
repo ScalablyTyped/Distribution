@@ -21,7 +21,6 @@ object WebAclAssociationArgs {
   @scala.inline
   def apply(resourceArn: Input[String], webAclId: Input[String]): WebAclAssociationArgs = {
     val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any], webAclId = webAclId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WebAclAssociationArgs]
   }
 }

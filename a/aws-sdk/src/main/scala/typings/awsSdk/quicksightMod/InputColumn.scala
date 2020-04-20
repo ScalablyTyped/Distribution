@@ -20,7 +20,6 @@ object InputColumn {
   @scala.inline
   def apply(Name: ColumnName, Type: InputColumnDataType): InputColumn = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InputColumn]
   }
 }

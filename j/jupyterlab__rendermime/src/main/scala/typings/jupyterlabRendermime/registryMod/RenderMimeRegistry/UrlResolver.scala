@@ -41,7 +41,7 @@ class UrlResolver protected () extends IResolver {
   /**
     * The path of the object, from which local urls can be derived.
     */
-  def path(): String = js.native
+  def path: String = js.native
   def path(value: String): js.Any = js.native
   /**
     * Resolve a relative url to an absolute url path.

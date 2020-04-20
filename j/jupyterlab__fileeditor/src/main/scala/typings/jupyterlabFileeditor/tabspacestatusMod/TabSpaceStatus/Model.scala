@@ -20,6 +20,6 @@ class Model () extends VDomModel {
     * The editor config from the settings system.
     */
   @JSName("config")
-  def config_Union(): IConfig | Null = js.native
+  def config_Union: IConfig | Null = js.native
 }
 

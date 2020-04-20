@@ -13,7 +13,6 @@ object AnonCardList {
   @scala.inline
   def apply(cardList: js.Array[Card]): AnonCardList = {
     val __obj = js.Dynamic.literal(cardList = cardList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCardList]
   }
 }

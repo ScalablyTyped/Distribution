@@ -28,7 +28,6 @@ object RegisterDeviceRequest {
   @scala.inline
   def apply(IdentityId: IdentityId, IdentityPoolId: IdentityPoolId, Platform: Platform, Token: PushToken): RegisterDeviceRequest = {
     val __obj = js.Dynamic.literal(IdentityId = IdentityId.asInstanceOf[js.Any], IdentityPoolId = IdentityPoolId.asInstanceOf[js.Any], Platform = Platform.asInstanceOf[js.Any], Token = Token.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RegisterDeviceRequest]
   }
 }

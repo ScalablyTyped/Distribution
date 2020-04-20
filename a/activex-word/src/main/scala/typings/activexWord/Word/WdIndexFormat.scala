@@ -24,20 +24,18 @@ trait WdIndexFormat extends js.Object
 
 object WdIndexFormat {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdIndexBulleted: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdIndexBulleted: `4` = this.cast(4)
+  def wdIndexClassic: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdIndexClassic: `1` = this.cast(1)
+  def wdIndexFancy: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdIndexFancy: `2` = this.cast(2)
+  def wdIndexFormal: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdIndexFormal: `5` = this.cast(5)
+  def wdIndexModern: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdIndexModern: `3` = this.cast(3)
+  def wdIndexSimple: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdIndexSimple: `6` = this.cast(6)
-  @scala.inline
-  def wdIndexTemplate: `0` = this.cast(0)
+  def wdIndexTemplate: `0` = 0.asInstanceOf[`0`]
 }
 

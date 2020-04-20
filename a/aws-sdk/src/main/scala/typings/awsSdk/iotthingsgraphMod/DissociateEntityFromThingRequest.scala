@@ -20,7 +20,6 @@ object DissociateEntityFromThingRequest {
   @scala.inline
   def apply(entityType: EntityType, thingName: ThingName): DissociateEntityFromThingRequest = {
     val __obj = js.Dynamic.literal(entityType = entityType.asInstanceOf[js.Any], thingName = thingName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DissociateEntityFromThingRequest]
   }
 }

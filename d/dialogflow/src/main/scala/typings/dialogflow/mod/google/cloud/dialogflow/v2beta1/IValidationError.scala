@@ -12,12 +12,18 @@ trait IValidationError extends js.Object {
   /** ValidationError errorMessage */
   var errorMessage: js.UndefOr[String | Null] = js.undefined
   /** ValidationError severity */
-  var severity: js.UndefOr[Severity | String | Null] = js.undefined
+  var severity: js.UndefOr[
+    Severity | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.ValidationError.Severity * / any */ String) | Null
+  ] = js.undefined
 }
 
 object IValidationError {
   @scala.inline
-  def apply(entries: js.Array[String] = null, errorMessage: String = null, severity: Severity | String = null): IValidationError = {
+  def apply(
+    entries: js.Array[String] = null,
+    errorMessage: String = null,
+    severity: Severity | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.ValidationError.Severity * / any */ String) = null
+  ): IValidationError = {
     val __obj = js.Dynamic.literal()
     if (entries != null) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
     if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])

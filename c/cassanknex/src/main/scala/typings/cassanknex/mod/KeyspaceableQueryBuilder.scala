@@ -18,7 +18,6 @@ object KeyspaceableQueryBuilder {
     withSimpleStrategy: Double => KeyspaceableQueryBuilder
   ): KeyspaceableQueryBuilder = {
     val __obj = js.Dynamic.literal(withDurableWrites = js.Any.fromFunction1(withDurableWrites), withNetworkTopologyStrategy = js.Any.fromFunction1(withNetworkTopologyStrategy), withSimpleStrategy = js.Any.fromFunction1(withSimpleStrategy))
-  
     __obj.asInstanceOf[KeyspaceableQueryBuilder]
   }
 }

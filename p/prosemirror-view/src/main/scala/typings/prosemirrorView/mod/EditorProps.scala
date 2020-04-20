@@ -8,6 +8,7 @@ import typings.prosemirrorModel.mod.ResolvedPos
 import typings.prosemirrorModel.mod.Schema
 import typings.prosemirrorModel.mod.Slice
 import typings.prosemirrorView.AnonRight
+import typings.std.ClipboardEvent
 import typings.std.Event_
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
@@ -189,7 +190,7 @@ trait EditorProps[S /* <: Schema[_, _] */] extends js.Object {
     * the event to get at the raw content.
     */
   var handlePaste: js.UndefOr[
-    (js.Function3[/* view */ EditorView[S], /* event */ Event_, /* slice */ Slice[S], Boolean]) | Null
+    (js.Function3[/* view */ EditorView[S], /* event */ ClipboardEvent, /* slice */ Slice[S], Boolean]) | Null
   ] = js.undefined
   /**
     * Called when the view, after updating its state, tries to scroll
@@ -303,7 +304,7 @@ object EditorProps {
     handleDrop: (/* view */ EditorView[S], /* event */ Event_, /* slice */ Slice[S], /* moved */ Boolean) => Boolean = null,
     handleKeyDown: (/* view */ EditorView[S], /* event */ KeyboardEvent) => Boolean = null,
     handleKeyPress: (/* view */ EditorView[S], /* event */ KeyboardEvent) => Boolean = null,
-    handlePaste: (/* view */ EditorView[S], /* event */ Event_, /* slice */ Slice[S]) => Boolean = null,
+    handlePaste: (/* view */ EditorView[S], /* event */ ClipboardEvent, /* slice */ Slice[S]) => Boolean = null,
     handleScrollToSelection: /* view */ EditorView[S] => Boolean = null,
     handleTextInput: (/* view */ EditorView[S], /* from */ Double, /* to */ Double, /* text */ String) => Boolean = null,
     handleTripleClick: (/* view */ EditorView[S], /* pos */ Double, /* event */ MouseEvent) => Boolean = null,

@@ -20,7 +20,6 @@ object IDataRecord {
   @scala.inline
   def apply(qValues: js.Array[String]): IDataRecord = {
     val __obj = js.Dynamic.literal(qValues = qValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDataRecord]
   }
 }

@@ -14,12 +14,10 @@ trait ManagedDeviceOwnerType extends js.Object
 
 object ManagedDeviceOwnerType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def company: typings.microsoftGraph.microsoftGraphStrings.company = "company".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.company]
   @scala.inline
-  def company: typings.microsoftGraph.microsoftGraphStrings.company = this.cast("company")
+  def personal: typings.microsoftGraph.microsoftGraphStrings.personal = "personal".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.personal]
   @scala.inline
-  def personal: typings.microsoftGraph.microsoftGraphStrings.personal = this.cast("personal")
-  @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
+  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
 }
 

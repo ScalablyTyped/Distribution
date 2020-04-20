@@ -18,7 +18,6 @@ object SystemData {
   @scala.inline
   def apply(manufacturer: String, model: String, serial: String, sku: String, uuid: String, version: String): SystemData = {
     val __obj = js.Dynamic.literal(manufacturer = manufacturer.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], serial = serial.asInstanceOf[js.Any], sku = sku.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SystemData]
   }
 }

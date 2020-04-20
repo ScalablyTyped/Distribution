@@ -13,7 +13,6 @@ object IPointerVisualizationSettings {
   @scala.inline
   def apply(isBarrelButtonFeedbackEnabled: Boolean, isContactFeedbackEnabled: Boolean): IPointerVisualizationSettings = {
     val __obj = js.Dynamic.literal(isBarrelButtonFeedbackEnabled = isBarrelButtonFeedbackEnabled.asInstanceOf[js.Any], isContactFeedbackEnabled = isContactFeedbackEnabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPointerVisualizationSettings]
   }
 }

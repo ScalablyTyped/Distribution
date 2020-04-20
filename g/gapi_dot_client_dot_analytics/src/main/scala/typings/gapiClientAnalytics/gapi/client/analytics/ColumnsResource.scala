@@ -15,7 +15,6 @@ object ColumnsResource {
   @scala.inline
   def apply(list: AnonReportType => Request_[Columns]): ColumnsResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[ColumnsResource]
   }
 }

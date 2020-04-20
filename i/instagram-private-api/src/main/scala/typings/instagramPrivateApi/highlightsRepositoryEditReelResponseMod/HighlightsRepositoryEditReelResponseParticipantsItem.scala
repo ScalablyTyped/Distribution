@@ -14,7 +14,6 @@ object HighlightsRepositoryEditReelResponseParticipantsItem {
   @scala.inline
   def apply(answer: Double, ts: Double, user: HighlightsRepositoryEditReelResponseUser): HighlightsRepositoryEditReelResponseParticipantsItem = {
     val __obj = js.Dynamic.literal(answer = answer.asInstanceOf[js.Any], ts = ts.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HighlightsRepositoryEditReelResponseParticipantsItem]
   }
 }

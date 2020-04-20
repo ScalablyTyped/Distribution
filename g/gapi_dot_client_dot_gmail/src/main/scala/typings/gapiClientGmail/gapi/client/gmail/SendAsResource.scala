@@ -65,7 +65,6 @@ object SendAsResource {
     verify: AnonPrettyPrint => Request_[Unit]
   ): SendAsResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), smimeInfo = smimeInfo.asInstanceOf[js.Any], update = js.Any.fromFunction1(update), verify = js.Any.fromFunction1(verify))
-  
     __obj.asInstanceOf[SendAsResource]
   }
 }

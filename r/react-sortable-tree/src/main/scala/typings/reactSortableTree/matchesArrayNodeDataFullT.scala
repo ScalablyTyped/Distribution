@@ -16,7 +16,6 @@ object matchesArrayNodeDataFullT {
   @scala.inline
   def apply(matches: js.Array[NodeData], treeData: js.Array[TreeItem]): matchesArrayNodeDataFullT = {
     val __obj = js.Dynamic.literal(matches = matches.asInstanceOf[js.Any], treeData = treeData.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[matchesArrayNodeDataFullT]
   }
 }

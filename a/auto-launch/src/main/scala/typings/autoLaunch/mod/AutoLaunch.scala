@@ -27,7 +27,6 @@ object AutoLaunch {
     isEnabled: () => js.Promise[Boolean]
   ): AutoLaunch = {
     val __obj = js.Dynamic.literal(disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), isEnabled = js.Any.fromFunction0(isEnabled))
-  
     __obj.asInstanceOf[AutoLaunch]
   }
 }

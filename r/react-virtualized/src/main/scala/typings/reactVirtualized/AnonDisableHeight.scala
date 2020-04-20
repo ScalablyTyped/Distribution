@@ -15,7 +15,6 @@ object AnonDisableHeight {
   @scala.inline
   def apply(disableHeight: `false`, disableWidth: `false`, onResize: () => Unit): AnonDisableHeight = {
     val __obj = js.Dynamic.literal(disableHeight = disableHeight.asInstanceOf[js.Any], disableWidth = disableWidth.asInstanceOf[js.Any], onResize = js.Any.fromFunction0(onResize))
-  
     __obj.asInstanceOf[AnonDisableHeight]
   }
 }

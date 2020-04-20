@@ -121,7 +121,6 @@ object selection {
     selectElementChildren: (HTMLElement, Boolean) => Unit
   ): selection = {
     val __obj = js.Dynamic.literal(collapse = js.Any.fromFunction1(collapse), getAncestorElement = js.Any.fromFunction1(getAncestorElement), getParentElement = js.Any.fromFunction0(getParentElement), getParentOfType = js.Any.fromFunction2(getParentOfType), getSelectedElement = js.Any.fromFunction0(getSelectedElement), getSelectedHtml = js.Any.fromFunction0(getSelectedHtml), getSelectedText = js.Any.fromFunction0(getSelectedText), getType = js.Any.fromFunction0(getType), hasAncestorElement = js.Any.fromFunction1(hasAncestorElement), inSelection = js.Any.fromFunction1(inSelection), isTag = js.Any.fromFunction2(isTag), remove = js.Any.fromFunction0(remove), selectElement = js.Any.fromFunction2(selectElement), selectElementChildren = js.Any.fromFunction2(selectElementChildren))
-  
     __obj.asInstanceOf[selection]
   }
 }

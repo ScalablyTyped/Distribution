@@ -1,8 +1,6 @@
 package typings.titanium.Titanium.Network
 
 import typings.titanium.Titanium.Proxy
-import typings.titanium.Titanium.UI.TabGroup
-import typings.titanium.Titanium.UI.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,195 +8,161 @@ import scala.scalajs.js.annotation._
 /**
 		 * Cookie object used to manage the system cookie store and HTTP client cookie store.
 		 */
-trait Cookie extends Proxy {
+@JSGlobal("Titanium.Network.Cookie")
+@js.native
+class Cookie () extends Proxy {
   /**
   			 * The comment describing the purpose of this cookie
   			 */
-  var comment: String
+  var comment: String = js.native
   /**
   			 * The domain attribute of the cookie.
   			 */
-  var domain: String
+  var domain: String = js.native
   /**
   			 * The expiration Date of the cookie.
   			 */
-  var expiryDate: String
+  var expiryDate: String = js.native
   /**
   			 * The httponly attribute of the cookie.
   			 */
-  var httponly: Boolean
+  var httponly: Boolean = js.native
   /**
   			 * Sets the Max-Age attribute of a Cookie, in delta-seconds.
   			 */
-  var maxAge: Double
+  var maxAge: Double = js.native
   /**
   			 * The name of the cookie.
   			 */
-  val name: String
+  val name: String = js.native
   /**
   			 * The origual url attribute of the cookie.
   			 */
-  var originalUrl: String
+  var originalUrl: String = js.native
   /**
   			 * The path attribute of the cookie.
   			 */
-  var path: String
+  var path: String = js.native
   /**
   			 * The secure attribute of the cookie.
   			 */
-  var secure: Boolean
+  var secure: Boolean = js.native
   /**
   			 * The value of the cookie.
   			 */
-  var value: String
+  var value: String = js.native
   /**
   			 * The version of the cookie specification to which this cookie conforms.
   			 */
-  var version: Double
+  var version: Double = js.native
   /**
   			 * Gets the value of the <Titanium.Network.Cookie.comment> property.
+  			 * @deprecated Access <Titanium.Network.Cookie.comment> instead.
   			 */
-  def getComment(): String
+  def getComment(): String = js.native
   /**
   			 * Gets the value of the <Titanium.Network.Cookie.domain> property.
+  			 * @deprecated Access <Titanium.Network.Cookie.domain> instead.
   			 */
-  def getDomain(): String
+  def getDomain(): String = js.native
   /**
   			 * Gets the value of the <Titanium.Network.Cookie.expiryDate> property.
+  			 * @deprecated Access <Titanium.Network.Cookie.expiryDate> instead.
   			 */
-  def getExpiryDate(): String
+  def getExpiryDate(): String = js.native
   /**
   			 * Gets the value of the <Titanium.Network.Cookie.httponly> property.
+  			 * @deprecated Access <Titanium.Network.Cookie.httponly> instead.
   			 */
-  def getHttponly(): Boolean
+  def getHttponly(): Boolean = js.native
   /**
   			 * Gets the value of the <Titanium.Network.Cookie.maxAge> property.
+  			 * @deprecated Access <Titanium.Network.Cookie.maxAge> instead.
   			 */
-  def getMaxAge(): Double
+  def getMaxAge(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.Network.Cookie.name> property.
+  			 * @deprecated Access <Titanium.Network.Cookie.name> instead.
   			 */
-  def getName(): String
+  def getName(): String = js.native
   /**
   			 * Gets the value of the <Titanium.Network.Cookie.originalUrl> property.
+  			 * @deprecated Access <Titanium.Network.Cookie.originalUrl> instead.
   			 */
-  def getOriginalUrl(): String
+  def getOriginalUrl(): String = js.native
   /**
   			 * Gets the value of the <Titanium.Network.Cookie.path> property.
+  			 * @deprecated Access <Titanium.Network.Cookie.path> instead.
   			 */
-  def getPath(): String
+  def getPath(): String = js.native
   /**
   			 * Gets the value of the <Titanium.Network.Cookie.secure> property.
+  			 * @deprecated Access <Titanium.Network.Cookie.secure> instead.
   			 */
-  def getSecure(): Boolean
+  def getSecure(): Boolean = js.native
   /**
   			 * Gets the value of the <Titanium.Network.Cookie.value> property.
+  			 * @deprecated Access <Titanium.Network.Cookie.value> instead.
   			 */
-  def getValue(): String
+  def getValue(): String = js.native
   /**
   			 * Gets the value of the <Titanium.Network.Cookie.version> property.
+  			 * @deprecated Access <Titanium.Network.Cookie.version> instead.
   			 */
-  def getVersion(): Double
+  def getVersion(): Double = js.native
   /**
   			 * Returns true if the cookie is valid.
   			 */
-  def isValid(): Boolean
+  def isValid(): Boolean = js.native
   /**
   			 * Sets the value of the <Titanium.Network.Cookie.comment> property.
+  			 * @deprecated Set the value using <Titanium.Network.Cookie.comment> instead.
   			 */
-  def setComment(comment: String): Unit
+  def setComment(comment: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Network.Cookie.domain> property.
+  			 * @deprecated Set the value using <Titanium.Network.Cookie.domain> instead.
   			 */
-  def setDomain(domain: String): Unit
+  def setDomain(domain: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Network.Cookie.expiryDate> property.
+  			 * @deprecated Set the value using <Titanium.Network.Cookie.expiryDate> instead.
   			 */
-  def setExpiryDate(expiryDate: String): Unit
+  def setExpiryDate(expiryDate: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Network.Cookie.httponly> property.
+  			 * @deprecated Set the value using <Titanium.Network.Cookie.httponly> instead.
   			 */
-  def setHttponly(httponly: Boolean): Unit
+  def setHttponly(httponly: Boolean): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Network.Cookie.maxAge> property.
+  			 * @deprecated Set the value using <Titanium.Network.Cookie.maxAge> instead.
   			 */
-  def setMaxAge(maxAge: Double): Unit
+  def setMaxAge(maxAge: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Network.Cookie.originalUrl> property.
+  			 * @deprecated Set the value using <Titanium.Network.Cookie.originalUrl> instead.
   			 */
-  def setOriginalUrl(originalUrl: String): Unit
+  def setOriginalUrl(originalUrl: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Network.Cookie.path> property.
+  			 * @deprecated Set the value using <Titanium.Network.Cookie.path> instead.
   			 */
-  def setPath(path: String): Unit
+  def setPath(path: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Network.Cookie.secure> property.
+  			 * @deprecated Set the value using <Titanium.Network.Cookie.secure> instead.
   			 */
-  def setSecure(secure: Boolean): Unit
+  def setSecure(secure: Boolean): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Network.Cookie.value> property.
+  			 * @deprecated Set the value using <Titanium.Network.Cookie.value> instead.
   			 */
-  def setValue(value: String): Unit
+  def setValue(value: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Network.Cookie.version> property.
+  			 * @deprecated Set the value using <Titanium.Network.Cookie.version> instead.
   			 */
-  def setVersion(version: Double): Unit
-}
-
-object Cookie {
-  @scala.inline
-  def apply(
-    addEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    apiName: String,
-    applyProperties: js.Any => Unit,
-    bubbleParent: Boolean,
-    comment: String,
-    domain: String,
-    expiryDate: String,
-    fireEvent: (String, js.Any) => Unit,
-    getApiName: () => String,
-    getBubbleParent: () => Boolean,
-    getComment: () => String,
-    getDomain: () => String,
-    getExpiryDate: () => String,
-    getHttponly: () => Boolean,
-    getMaxAge: () => Double,
-    getName: () => String,
-    getOriginalUrl: () => String,
-    getPath: () => String,
-    getSecure: () => Boolean,
-    getValue: () => String,
-    getVersion: () => Double,
-    httponly: Boolean,
-    isValid: () => Boolean,
-    maxAge: Double,
-    name: String,
-    originalUrl: String,
-    path: String,
-    removeEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    secure: Boolean,
-    setBubbleParent: Boolean => Unit,
-    setComment: String => Unit,
-    setDomain: String => Unit,
-    setExpiryDate: String => Unit,
-    setHttponly: Boolean => Unit,
-    setMaxAge: Double => Unit,
-    setOriginalUrl: String => Unit,
-    setPath: String => Unit,
-    setSecure: Boolean => Unit,
-    setValue: String => Unit,
-    setVersion: Double => Unit,
-    value: String,
-    version: Double,
-    getLifecycleContainer: () => Window | TabGroup = null,
-    lifecycleContainer: Window | TabGroup = null,
-    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ Window, Unit]) with (js.Function1[/* lifecycleContainer */ TabGroup, Unit]) = null
-  ): Cookie = {
-    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName.asInstanceOf[js.Any], applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], expiryDate = expiryDate.asInstanceOf[js.Any], fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getComment = js.Any.fromFunction0(getComment), getDomain = js.Any.fromFunction0(getDomain), getExpiryDate = js.Any.fromFunction0(getExpiryDate), getHttponly = js.Any.fromFunction0(getHttponly), getMaxAge = js.Any.fromFunction0(getMaxAge), getName = js.Any.fromFunction0(getName), getOriginalUrl = js.Any.fromFunction0(getOriginalUrl), getPath = js.Any.fromFunction0(getPath), getSecure = js.Any.fromFunction0(getSecure), getValue = js.Any.fromFunction0(getValue), getVersion = js.Any.fromFunction0(getVersion), httponly = httponly.asInstanceOf[js.Any], isValid = js.Any.fromFunction0(isValid), maxAge = maxAge.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], originalUrl = originalUrl.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], removeEventListener = js.Any.fromFunction2(removeEventListener), secure = secure.asInstanceOf[js.Any], setBubbleParent = js.Any.fromFunction1(setBubbleParent), setComment = js.Any.fromFunction1(setComment), setDomain = js.Any.fromFunction1(setDomain), setExpiryDate = js.Any.fromFunction1(setExpiryDate), setHttponly = js.Any.fromFunction1(setHttponly), setMaxAge = js.Any.fromFunction1(setMaxAge), setOriginalUrl = js.Any.fromFunction1(setOriginalUrl), setPath = js.Any.fromFunction1(setPath), setSecure = js.Any.fromFunction1(setSecure), setValue = js.Any.fromFunction1(setValue), setVersion = js.Any.fromFunction1(setVersion), value = value.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
-    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
-    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Cookie]
-  }
+  def setVersion(version: Double): Unit = js.native
 }
 

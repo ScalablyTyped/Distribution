@@ -16,7 +16,6 @@ object GetMountTargetArgs {
   @scala.inline
   def apply(mountTargetId: String): GetMountTargetArgs = {
     val __obj = js.Dynamic.literal(mountTargetId = mountTargetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetMountTargetArgs]
   }
 }

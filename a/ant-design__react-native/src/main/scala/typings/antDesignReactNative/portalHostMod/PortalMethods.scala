@@ -15,7 +15,6 @@ object PortalMethods {
   @scala.inline
   def apply(mount: ReactNode => Double, unmount: Double => Unit, update: (Double, ReactNode) => Unit): PortalMethods = {
     val __obj = js.Dynamic.literal(mount = js.Any.fromFunction1(mount), unmount = js.Any.fromFunction1(unmount), update = js.Any.fromFunction2(update))
-  
     __obj.asInstanceOf[PortalMethods]
   }
 }

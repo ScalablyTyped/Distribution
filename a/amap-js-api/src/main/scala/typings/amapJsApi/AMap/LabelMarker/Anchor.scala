@@ -19,24 +19,22 @@ trait Anchor extends js.Object
 
 object Anchor {
   @scala.inline
-  def `bottom-center`: typings.amapJsApi.amapJsApiStrings.`bottom-center` = this.cast("bottom-center")
+  def `bottom-center`: typings.amapJsApi.amapJsApiStrings.`bottom-center` = "bottom-center".asInstanceOf[typings.amapJsApi.amapJsApiStrings.`bottom-center`]
   @scala.inline
-  def `bottom-left`: typings.amapJsApi.amapJsApiStrings.`bottom-left` = this.cast("bottom-left")
+  def `bottom-left`: typings.amapJsApi.amapJsApiStrings.`bottom-left` = "bottom-left".asInstanceOf[typings.amapJsApi.amapJsApiStrings.`bottom-left`]
   @scala.inline
-  def `bottom-right`: typings.amapJsApi.amapJsApiStrings.`bottom-right` = this.cast("bottom-right")
+  def `bottom-right`: typings.amapJsApi.amapJsApiStrings.`bottom-right` = "bottom-right".asInstanceOf[typings.amapJsApi.amapJsApiStrings.`bottom-right`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.amapJsApi.amapJsApiStrings.center = "center".asInstanceOf[typings.amapJsApi.amapJsApiStrings.center]
   @scala.inline
-  def center: typings.amapJsApi.amapJsApiStrings.center = this.cast("center")
+  def `middle-left`: typings.amapJsApi.amapJsApiStrings.`middle-left` = "middle-left".asInstanceOf[typings.amapJsApi.amapJsApiStrings.`middle-left`]
   @scala.inline
-  def `middle-left`: typings.amapJsApi.amapJsApiStrings.`middle-left` = this.cast("middle-left")
+  def `middle-right`: typings.amapJsApi.amapJsApiStrings.`middle-right` = "middle-right".asInstanceOf[typings.amapJsApi.amapJsApiStrings.`middle-right`]
   @scala.inline
-  def `middle-right`: typings.amapJsApi.amapJsApiStrings.`middle-right` = this.cast("middle-right")
+  def `top-center`: typings.amapJsApi.amapJsApiStrings.`top-center` = "top-center".asInstanceOf[typings.amapJsApi.amapJsApiStrings.`top-center`]
   @scala.inline
-  def `top-center`: typings.amapJsApi.amapJsApiStrings.`top-center` = this.cast("top-center")
+  def `top-left`: typings.amapJsApi.amapJsApiStrings.`top-left` = "top-left".asInstanceOf[typings.amapJsApi.amapJsApiStrings.`top-left`]
   @scala.inline
-  def `top-left`: typings.amapJsApi.amapJsApiStrings.`top-left` = this.cast("top-left")
-  @scala.inline
-  def `top-right`: typings.amapJsApi.amapJsApiStrings.`top-right` = this.cast("top-right")
+  def `top-right`: typings.amapJsApi.amapJsApiStrings.`top-right` = "top-right".asInstanceOf[typings.amapJsApi.amapJsApiStrings.`top-right`]
 }
 

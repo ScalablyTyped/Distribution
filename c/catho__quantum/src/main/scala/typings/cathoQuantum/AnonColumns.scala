@@ -13,7 +13,6 @@ object AnonColumns {
   @scala.inline
   def apply(columns: Double, width: Double): AnonColumns = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonColumns]
   }
 }

@@ -20,7 +20,6 @@ object revokeReasonForRevocation {
   @scala.inline
   def apply(flag: reasonForRevocation, string: String): revokeReasonForRevocation = {
     val __obj = js.Dynamic.literal(flag = flag.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[revokeReasonForRevocation]
   }
 }

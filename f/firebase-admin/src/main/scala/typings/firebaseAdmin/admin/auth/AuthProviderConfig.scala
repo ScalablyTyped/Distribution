@@ -30,7 +30,6 @@ object AuthProviderConfig {
   @scala.inline
   def apply(displayName: String, enabled: Boolean, providerId: String): AuthProviderConfig = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], providerId = providerId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AuthProviderConfig]
   }
 }

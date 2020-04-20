@@ -69,6 +69,12 @@ trait Logger extends js.Object {
     */
   def info(msg: js.Any*): Unit = js.native
   /**
+    * Output debug message to console including appropriate icons
+    *
+    * @param msg any data to log to the console
+    */
+  def log(msg: js.Any*): Unit = js.native
+  /**
     * Plugin API entry point. This will be called for each enabled method each time the level is set
     * (including initially), and should return a MethodFactory to be used for the given log method, at the given level,
     * for a logger with the given name. If you'd like to retain all the reliability and features of loglevel, it's

@@ -12,7 +12,6 @@ object ApplyCodeActionCommandResult {
   @scala.inline
   def apply(successMessage: java.lang.String): ApplyCodeActionCommandResult = {
     val __obj = js.Dynamic.literal(successMessage = successMessage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ApplyCodeActionCommandResult]
   }
 }

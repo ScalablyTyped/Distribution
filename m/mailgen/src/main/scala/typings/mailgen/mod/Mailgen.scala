@@ -23,7 +23,6 @@ object Mailgen {
     parseParams: js.Any => js.Any
   ): Mailgen = {
     val __obj = js.Dynamic.literal(cacheThemes = js.Any.fromFunction0(cacheThemes), generate = js.Any.fromFunction1(generate), generatePlaintext = js.Any.fromFunction1(generatePlaintext), parseParams = js.Any.fromFunction1(parseParams))
-  
     __obj.asInstanceOf[Mailgen]
   }
 }

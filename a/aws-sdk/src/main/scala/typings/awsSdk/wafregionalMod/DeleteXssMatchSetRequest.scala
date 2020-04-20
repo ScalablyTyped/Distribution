@@ -20,7 +20,6 @@ object DeleteXssMatchSetRequest {
   @scala.inline
   def apply(ChangeToken: ChangeToken, XssMatchSetId: ResourceId): DeleteXssMatchSetRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken.asInstanceOf[js.Any], XssMatchSetId = XssMatchSetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteXssMatchSetRequest]
   }
 }

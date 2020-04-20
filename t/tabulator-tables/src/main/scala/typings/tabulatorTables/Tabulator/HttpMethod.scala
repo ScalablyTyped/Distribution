@@ -12,10 +12,8 @@ trait HttpMethod extends js.Object
 
 object HttpMethod {
   @scala.inline
-  def GET: typings.tabulatorTables.tabulatorTablesStrings.GET = this.cast("GET")
+  def GET: typings.tabulatorTables.tabulatorTablesStrings.GET = "GET".asInstanceOf[typings.tabulatorTables.tabulatorTablesStrings.GET]
   @scala.inline
-  def POST: typings.tabulatorTables.tabulatorTablesStrings.POST = this.cast("POST")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def POST: typings.tabulatorTables.tabulatorTablesStrings.POST = "POST".asInstanceOf[typings.tabulatorTables.tabulatorTablesStrings.POST]
 }
 

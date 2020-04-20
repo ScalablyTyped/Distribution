@@ -22,7 +22,6 @@ object AnonDeferCloseChannel {
     vhost: String
   ): AnonDeferCloseChannel = {
     val __obj = js.Dynamic.literal(deferCloseChannel = deferCloseChannel.asInstanceOf[js.Any], prefetch = prefetch.asInstanceOf[js.Any], redeliveries = redeliveries.asInstanceOf[js.Any], retry = retry.asInstanceOf[js.Any], vhost = vhost.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDeferCloseChannel]
   }
 }

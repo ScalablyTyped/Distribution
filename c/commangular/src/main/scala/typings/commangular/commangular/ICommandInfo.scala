@@ -39,7 +39,6 @@ object ICommandInfo {
     resultKey: String => js.Any
   ): ICommandInfo = {
     val __obj = js.Dynamic.literal(canceled = js.Any.fromFunction0(canceled), commandExecuted = js.Any.fromFunction0(commandExecuted), dataPassed = js.Any.fromFunction1(dataPassed), resultKey = js.Any.fromFunction1(resultKey))
-  
     __obj.asInstanceOf[ICommandInfo]
   }
 }

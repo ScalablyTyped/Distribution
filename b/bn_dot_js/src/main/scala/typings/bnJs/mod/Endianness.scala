@@ -12,10 +12,8 @@ trait Endianness extends js.Object
 
 object Endianness {
   @scala.inline
-  def be: typings.bnJs.bnJsStrings.be = this.cast("be")
+  def be: typings.bnJs.bnJsStrings.be = "be".asInstanceOf[typings.bnJs.bnJsStrings.be]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def le: typings.bnJs.bnJsStrings.le = this.cast("le")
+  def le: typings.bnJs.bnJsStrings.le = "le".asInstanceOf[typings.bnJs.bnJsStrings.le]
 }
 

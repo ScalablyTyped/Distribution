@@ -30,6 +30,7 @@ import typings.node.fsMod.MakeDirectoryOptions
 import typings.node.fsMod.OpenDirOptions
 import typings.node.fsMod.PathLike
 import typings.node.fsMod.ReadStream
+import typings.node.fsMod.ReadSyncOptions
 import typings.node.fsMod.RmDirOptions
 import typings.node.fsMod.Stats
 import typings.node.fsMod.WriteFileOptions
@@ -103,6 +104,7 @@ trait Typeoffs extends js.Object {
   val readdir: Typeofreaddir = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
   val readlink: Typeofreadlink = js.native
+  val readv: Typeofreadv = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
   val realpath: Typeofrealpath = js.native
   val realpathSync: TypeofrealpathSync = js.native
@@ -380,6 +382,11 @@ trait Typeoffs extends js.Object {
   def readFileSync_Union(path: Double, options: String): String | Buffer = js.native
   @JSName("readFileSync")
   def readFileSync_Union(path: PathLike, options: String): String | Buffer = js.native
+  /**
+    * Similar to the above `fs.readSync` function, this version takes an optional `options` object.
+    * If no `options` object is specified, it will default with the above values.
+    */
+  def readSync(fd: Double, buffer: ArrayBufferView): Double = js.native
   def readSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double): Double = js.native
   /**
     * Synchronously reads data from the file referenced by the supplied file descriptor, returning the number of bytes read.
@@ -390,6 +397,7 @@ trait Typeoffs extends js.Object {
     * @param position The offset from the beginning of the file from which data should be read. If `null`, data will be read from the current position.
     */
   def readSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double, position: Double): Double = js.native
+  def readSync(fd: Double, buffer: ArrayBufferView, opts: ReadSyncOptions): Double = js.native
   /**
     * Synchronous readdir(3) - read a directory.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -439,6 +447,11 @@ trait Typeoffs extends js.Object {
   def readlinkSync_Union(path: PathLike): String | Buffer = js.native
   @JSName("readlinkSync")
   def readlinkSync_buffer(path: PathLike, options: buffer): Buffer = js.native
+  /**
+    * See `readv`.
+    */
+  def readvSync(fd: Double, buffers: js.Array[ArrayBufferView]): Double = js.native
+  def readvSync(fd: Double, buffers: js.Array[ArrayBufferView], position: Double): Double = js.native
   /**
     * Synchronous rename(2) - Change the name or location of a file or directory.
     * @param oldPath A path to a file. If a URL is provided, it must use the `file:` protocol.

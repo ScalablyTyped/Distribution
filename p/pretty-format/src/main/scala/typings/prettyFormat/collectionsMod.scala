@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object collectionsMod extends js.Object {
   def printIteratorEntries(
-    iterator: Iterator[_, _, js.UndefOr[scala.Nothing]],
+    iterator: Iterator[js.Tuple2[_, _], _, js.UndefOr[scala.Nothing]],
     config: Config,
     indentation: String,
     depth: Double,
@@ -22,7 +22,7 @@ object collectionsMod extends js.Object {
     printer: Printer
   ): String = js.native
   def printIteratorEntries(
-    iterator: Iterator[_, _, js.UndefOr[scala.Nothing]],
+    iterator: Iterator[js.Tuple2[_, _], _, js.UndefOr[scala.Nothing]],
     config: Config,
     indentation: String,
     depth: Double,

@@ -16,7 +16,6 @@ object DeleteIdentityPoolInput {
   @scala.inline
   def apply(IdentityPoolId: IdentityPoolId): DeleteIdentityPoolInput = {
     val __obj = js.Dynamic.literal(IdentityPoolId = IdentityPoolId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteIdentityPoolInput]
   }
 }

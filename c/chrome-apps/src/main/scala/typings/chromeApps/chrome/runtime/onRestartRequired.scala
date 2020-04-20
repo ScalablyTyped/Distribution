@@ -4,9 +4,12 @@ import org.scalablytyped.runtime.TopLevel
 import typings.chromeApps.AnonAPPUPDATE
 import typings.chromeApps.chrome.ToStringLiteral
 import typings.chromeApps.chrome.events.Event
-import typings.chromeApps.chromeAppsStrings.app_update
-import typings.chromeApps.chromeAppsStrings.os_update
-import typings.chromeApps.chromeAppsStrings.periodic
+import typings.chromeApps.chromeAppsStrings.APP_UPDATE
+import typings.chromeApps.chromeAppsStrings.OS_UPDATE
+import typings.chromeApps.chromeAppsStrings.PERIODIC
+import typings.chromeApps.chromeAppsStrings.app_update_
+import typings.chromeApps.chromeAppsStrings.os_update_
+import typings.chromeApps.chromeAppsStrings.periodic_
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,7 +28,11 @@ object onRestartRequired
   extends TopLevel[
       Event[
         js.Function1[
-          /* reason */ ToStringLiteral[AnonAPPUPDATE, String, Exclude[String, app_update | os_update | periodic]], 
+          /* reason */ ToStringLiteral[
+            AnonAPPUPDATE, 
+            APP_UPDATE | OS_UPDATE | PERIODIC, 
+            Exclude[APP_UPDATE | OS_UPDATE | PERIODIC, app_update_ | os_update_ | periodic_]
+          ], 
           Unit
         ]
       ]

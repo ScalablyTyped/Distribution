@@ -38,7 +38,7 @@ trait Process extends EventEmitter {
   var connected: Boolean = js.native
   var debugPort: Double = js.native
   var domain: Domain = js.native
-  var env: ProcessEnv = js.native
+  var env: Dict[String] = js.native
   var execArgv: js.Array[String] = js.native
   var execPath: String = js.native
   var exitCode: js.UndefOr[Double] = js.native

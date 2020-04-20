@@ -13,7 +13,6 @@ object RestrictOptions {
   @scala.inline
   def apply(idField: String, ownerField: String): RestrictOptions = {
     val __obj = js.Dynamic.literal(idField = idField.asInstanceOf[js.Any], ownerField = ownerField.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RestrictOptions]
   }
 }

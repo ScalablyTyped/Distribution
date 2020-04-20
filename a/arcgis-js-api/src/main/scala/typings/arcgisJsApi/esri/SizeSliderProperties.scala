@@ -22,7 +22,7 @@ trait SizeSliderProperties extends SmartMappingSliderBaseProperties {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider.html#style)
     */
-  var style: js.UndefOr[SizeSliderStyle] = js.undefined
+  var style: js.UndefOr[SizeSliderStyleProperties] = js.undefined
   /**
     * The view model for the SizeSlider widget. This class contains all the logic (properties and methods) that controls this widget's behavior. See the [SizeSliderViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider-SizeSliderViewModel.html) class to access all properties and methods on the SizeSlider widget.
     *
@@ -46,7 +46,7 @@ object SizeSliderProperties {
     min: Int | Double = null,
     precision: Int | Double = null,
     stops: js.Array[SizeStopProperties] = null,
-    style: SizeSliderStyle = null,
+    style: SizeSliderStyleProperties = null,
     viewModel: SizeSliderViewModelProperties = null,
     zoomOptions: SmartMappingSliderBaseZoomOptions = null
   ): SizeSliderProperties = {

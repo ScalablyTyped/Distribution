@@ -16,7 +16,6 @@ object MIDIOptions {
   @scala.inline
   def apply(sysex: Boolean): MIDIOptions = {
     val __obj = js.Dynamic.literal(sysex = sysex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MIDIOptions]
   }
 }

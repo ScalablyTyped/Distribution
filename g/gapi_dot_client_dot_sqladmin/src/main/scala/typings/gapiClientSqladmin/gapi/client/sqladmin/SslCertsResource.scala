@@ -39,7 +39,6 @@ object SslCertsResource {
     list: AnonFields => Request_[SslCertsListResponse]
   ): SslCertsResource = {
     val __obj = js.Dynamic.literal(createEphemeral = js.Any.fromFunction1(createEphemeral), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[SslCertsResource]
   }
 }

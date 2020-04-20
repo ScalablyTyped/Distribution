@@ -23,7 +23,6 @@ object CollectionPartitionKey {
   @scala.inline
   def apply(kind: PartitionKind, paths: js.Array[String]): CollectionPartitionKey = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CollectionPartitionKey]
   }
 }

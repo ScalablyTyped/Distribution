@@ -14,7 +14,6 @@ object Context {
   @scala.inline
   def apply(session: js.Any, sessionHandler: AnonRegenerateId): Context = {
     val __obj = js.Dynamic.literal(session = session.asInstanceOf[js.Any], sessionHandler = sessionHandler.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Context]
   }
 }

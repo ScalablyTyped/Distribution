@@ -119,7 +119,7 @@ class Observable[T] () extends js.Object {
   /**
     * Gets the list of observers
     */
-  def observers(): js.Array[Observer[T]] = js.native
+  def observers: js.Array[Observer[T]] = js.native
   /**
     * Remove an Observer from the Observable object
     * @param observer the instance of the Observer to remove

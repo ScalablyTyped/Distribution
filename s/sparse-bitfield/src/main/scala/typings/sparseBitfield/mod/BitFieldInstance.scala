@@ -46,7 +46,6 @@ object BitFieldInstance {
     toBuffer: () => Buffer
   ): BitFieldInstance = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), getByte = js.Any.fromFunction1(getByte), pages = pages.asInstanceOf[js.Any], set = js.Any.fromFunction2(set), setByte = js.Any.fromFunction2(setByte), toBuffer = js.Any.fromFunction0(toBuffer))
-  
     __obj.asInstanceOf[BitFieldInstance]
   }
 }

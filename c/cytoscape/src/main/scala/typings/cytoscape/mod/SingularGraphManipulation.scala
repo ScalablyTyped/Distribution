@@ -28,7 +28,6 @@ object SingularGraphManipulation {
   @scala.inline
   def apply(cy: () => Core, inside: () => Boolean, removed: () => Boolean): SingularGraphManipulation = {
     val __obj = js.Dynamic.literal(cy = js.Any.fromFunction0(cy), inside = js.Any.fromFunction0(inside), removed = js.Any.fromFunction0(removed))
-  
     __obj.asInstanceOf[SingularGraphManipulation]
   }
 }

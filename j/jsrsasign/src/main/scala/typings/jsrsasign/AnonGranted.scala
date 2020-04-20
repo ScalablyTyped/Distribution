@@ -24,7 +24,6 @@ object AnonGranted {
     waiting: Double
   ): AnonGranted = {
     val __obj = js.Dynamic.literal(granted = granted.asInstanceOf[js.Any], grantedWithMods = grantedWithMods.asInstanceOf[js.Any], rejection = rejection.asInstanceOf[js.Any], revocationNotification = revocationNotification.asInstanceOf[js.Any], revocationWarning = revocationWarning.asInstanceOf[js.Any], waiting = waiting.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGranted]
   }
 }

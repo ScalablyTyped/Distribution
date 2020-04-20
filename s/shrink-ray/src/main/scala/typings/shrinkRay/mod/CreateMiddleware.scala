@@ -4,6 +4,7 @@ import typings.express.mod.RequestHandler
 import typings.express.mod.Request_
 import typings.express.mod.Response_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,8 +13,8 @@ import scala.scalajs.js.annotation._
 trait CreateMiddleware extends js.Object {
   @JSName("filter")
   var filter_Original: FilterFunction = js.native
-  def apply(): RequestHandler[ParamsDictionary] = js.native
-  def apply(options: Options): RequestHandler[ParamsDictionary] = js.native
-  def filter(req: Request_[ParamsDictionary], res: Response_[_]): Boolean = js.native
+  def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  def apply(options: Options): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  def filter(req: Request_[ParamsDictionary, _, _, Query], res: Response_[_]): Boolean = js.native
 }
 

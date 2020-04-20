@@ -13,7 +13,6 @@ object AnonPreliminary {
   @scala.inline
   def apply(full: Double, preliminary: Double): AnonPreliminary = {
     val __obj = js.Dynamic.literal(full = full.asInstanceOf[js.Any], preliminary = preliminary.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPreliminary]
   }
 }

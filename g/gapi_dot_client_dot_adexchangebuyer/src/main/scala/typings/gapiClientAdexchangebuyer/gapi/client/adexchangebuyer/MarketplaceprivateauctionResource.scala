@@ -15,7 +15,6 @@ object MarketplaceprivateauctionResource {
   @scala.inline
   def apply(updateproposal: AnonPrettyPrint => Request_[Unit]): MarketplaceprivateauctionResource = {
     val __obj = js.Dynamic.literal(updateproposal = js.Any.fromFunction1(updateproposal))
-  
     __obj.asInstanceOf[MarketplaceprivateauctionResource]
   }
 }

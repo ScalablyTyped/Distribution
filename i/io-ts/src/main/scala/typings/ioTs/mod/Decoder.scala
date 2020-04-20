@@ -14,7 +14,6 @@ object Decoder {
   @scala.inline
   def apply[I, A](decode: I => Validation[A], name: String, validate: (I, Context) => Validation[A]): Decoder[I, A] = {
     val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), name = name.asInstanceOf[js.Any], validate = js.Any.fromFunction2(validate))
-  
     __obj.asInstanceOf[Decoder[I, A]]
   }
 }

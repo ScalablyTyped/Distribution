@@ -14,7 +14,6 @@ object AnonCancelled {
   @scala.inline
   def apply(cancelled: Boolean, reason: XummCancelReason): AnonCancelled = {
     val __obj = js.Dynamic.literal(cancelled = cancelled.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCancelled]
   }
 }

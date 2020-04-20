@@ -26,7 +26,6 @@ object IPropertyDefAdmin {
     Validation: IValidation
   ): IPropertyDefAdmin = {
     val __obj = js.Dynamic.literal(AllowAutomaticPermissions = AllowAutomaticPermissions.asInstanceOf[js.Any], AutomaticValue = AutomaticValue.asInstanceOf[js.Any], Clone = js.Any.fromFunction0(Clone), NamedValueNamespaces = NamedValueNamespaces.asInstanceOf[js.Any], PropertyDef = PropertyDef.asInstanceOf[js.Any], SemanticAliases = SemanticAliases.asInstanceOf[js.Any], Validation = Validation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPropertyDefAdmin]
   }
 }

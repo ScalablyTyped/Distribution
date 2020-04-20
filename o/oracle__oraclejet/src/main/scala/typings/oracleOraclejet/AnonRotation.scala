@@ -31,7 +31,6 @@ object AnonRotation {
     style: js.Object
   ): AnonRotation = {
     val __obj = js.Dynamic.literal(converter = converter.asInstanceOf[js.Any], rendered = rendered.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], scaling = scaling.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRotation]
   }
 }

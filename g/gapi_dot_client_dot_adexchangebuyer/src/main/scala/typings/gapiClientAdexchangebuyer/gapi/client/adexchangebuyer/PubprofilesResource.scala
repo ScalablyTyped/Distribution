@@ -15,7 +15,6 @@ object PubprofilesResource {
   @scala.inline
   def apply(list: AnonAccountId => Request_[GetPublisherProfilesByAccountIdResponse]): PubprofilesResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[PubprofilesResource]
   }
 }

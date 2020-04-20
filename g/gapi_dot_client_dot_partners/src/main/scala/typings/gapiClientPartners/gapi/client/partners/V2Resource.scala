@@ -30,7 +30,6 @@ object V2Resource {
     updateLeads: AnonPp => Request_[Lead]
   ): V2Resource = {
     val __obj = js.Dynamic.literal(getPartnersstatus = js.Any.fromFunction1(getPartnersstatus), updateCompanies = js.Any.fromFunction1(updateCompanies), updateLeads = js.Any.fromFunction1(updateLeads))
-  
     __obj.asInstanceOf[V2Resource]
   }
 }

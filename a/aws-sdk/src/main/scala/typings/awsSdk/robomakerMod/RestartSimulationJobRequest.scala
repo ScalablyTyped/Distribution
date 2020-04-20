@@ -16,7 +16,6 @@ object RestartSimulationJobRequest {
   @scala.inline
   def apply(job: Arn): RestartSimulationJobRequest = {
     val __obj = js.Dynamic.literal(job = job.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RestartSimulationJobRequest]
   }
 }

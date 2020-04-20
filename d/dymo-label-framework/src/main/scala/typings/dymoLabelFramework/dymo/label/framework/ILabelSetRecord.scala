@@ -46,7 +46,6 @@ object ILabelSetRecord {
     setTextMarkup: (String, String) => ILabelSetRecord
   ): ILabelSetRecord = {
     val __obj = js.Dynamic.literal(setBase64Image = js.Any.fromFunction2(setBase64Image), setText = js.Any.fromFunction2(setText), setTextMarkup = js.Any.fromFunction2(setTextMarkup))
-  
     __obj.asInstanceOf[ILabelSetRecord]
   }
 }

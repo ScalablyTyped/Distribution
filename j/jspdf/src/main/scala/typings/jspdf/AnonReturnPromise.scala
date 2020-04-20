@@ -12,7 +12,6 @@ object AnonReturnPromise {
   @scala.inline
   def apply(returnPromise: Boolean): AnonReturnPromise = {
     val __obj = js.Dynamic.literal(returnPromise = returnPromise.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonReturnPromise]
   }
 }

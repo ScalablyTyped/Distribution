@@ -12,7 +12,6 @@ object RehypeReact {
   @scala.inline
   def apply(Compiler: js.Any => js.Any): RehypeReact = {
     val __obj = js.Dynamic.literal(Compiler = js.Any.fromFunction1(Compiler))
-  
     __obj.asInstanceOf[RehypeReact]
   }
 }

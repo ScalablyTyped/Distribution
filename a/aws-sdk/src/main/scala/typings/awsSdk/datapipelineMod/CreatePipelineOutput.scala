@@ -16,7 +16,6 @@ object CreatePipelineOutput {
   @scala.inline
   def apply(pipelineId: id): CreatePipelineOutput = {
     val __obj = js.Dynamic.literal(pipelineId = pipelineId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreatePipelineOutput]
   }
 }

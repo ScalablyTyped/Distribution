@@ -22,7 +22,6 @@ object IReferenceResolverHost {
     resolveRelativePath: (String, String) => String
   ): IReferenceResolverHost = {
     val __obj = js.Dynamic.literal(directoryExists = js.Any.fromFunction1(directoryExists), fileExists = js.Any.fromFunction1(fileExists), getParentDirectory = js.Any.fromFunction1(getParentDirectory), getScriptSnapshot = js.Any.fromFunction1(getScriptSnapshot), resolveRelativePath = js.Any.fromFunction2(resolveRelativePath))
-  
     __obj.asInstanceOf[IReferenceResolverHost]
   }
 }

@@ -14,7 +14,6 @@ object ILanIdentifier {
   @scala.inline
   def apply(infrastructureId: LanIdentifierData, networkAdapterId: String, portId: LanIdentifierData): ILanIdentifier = {
     val __obj = js.Dynamic.literal(infrastructureId = infrastructureId.asInstanceOf[js.Any], networkAdapterId = networkAdapterId.asInstanceOf[js.Any], portId = portId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ILanIdentifier]
   }
 }

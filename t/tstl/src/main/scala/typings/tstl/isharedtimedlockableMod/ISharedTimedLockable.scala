@@ -33,7 +33,6 @@ object ISharedTimedLockable {
     unlock_shared: () => js.Promise[Unit]
   ): ISharedTimedLockable = {
     val __obj = js.Dynamic.literal(lock_shared = js.Any.fromFunction0(lock_shared), try_lock_shared = js.Any.fromFunction0(try_lock_shared), try_lock_shared_for = js.Any.fromFunction1(try_lock_shared_for), try_lock_shared_until = js.Any.fromFunction1(try_lock_shared_until), unlock_shared = js.Any.fromFunction0(unlock_shared))
-  
     __obj.asInstanceOf[ISharedTimedLockable]
   }
 }

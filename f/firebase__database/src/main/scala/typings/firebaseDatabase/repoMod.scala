@@ -73,7 +73,7 @@ object repoMod extends js.Object {
     ): Unit = js.native
     def callOnCompleteCallback(callback: Null, status: String): Unit = js.native
     def callOnCompleteCallback(callback: Null, status: String, errorReason: String): Unit = js.native
-    def database(): Database = js.native
+    def database: Database = js.native
     /**
       * Generate ServerValues using some variables from the repo object.
       */

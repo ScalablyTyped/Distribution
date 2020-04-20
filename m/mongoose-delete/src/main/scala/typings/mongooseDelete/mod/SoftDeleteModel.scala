@@ -8,6 +8,7 @@ import typings.mongoose.mod.Model_
 import typings.mongoose.mod.Query
 import typings.mongoose.mod.QueryFindOneAndUpdateOptions
 import typings.mongoose.mod.Types.ObjectId
+import typings.mongoose.mod.UpdateQuery
 import typings.mongoose.rawResulttrueQueryFindOneArrayFilters
 import typings.mongoose.rawResulttrueupserttruene
 import typings.mongoose.upserttruenewtrueQueryFin
@@ -162,28 +163,28 @@ trait SoftDeleteModel[T /* <: Document */, QueryHelpers] extends Model_[T, Query
   /** Find One And Update only deleted documents */
   def findOneAndUpdateDeleted(): DocumentQueryanynullanyAll = js.native
   /** Find One And Update only deleted documents */
-  def findOneAndUpdateDeleted(conditions: FilterQuery[_], update: js.Any): DocumentQueryanynullanyAll = js.native
+  def findOneAndUpdateDeleted(conditions: FilterQuery[_], update: UpdateQuery[_]): DocumentQueryanynullanyAll = js.native
   /** Find One And Update only deleted documents */
   def findOneAndUpdateDeleted(
     conditions: FilterQuery[_],
-    update: js.Any,
+    update: UpdateQuery[_],
     callback: js.Function3[/* err */ js.Any, /* doc */ js.Any | Null, /* res */ js.Any, Unit]
   ): DocumentQueryanynullanyAll = js.native
   /** Find One And Update only deleted documents */
-  def findOneAndUpdateDeleted(conditions: FilterQuery[_], update: js.Any, options: QueryFindOneAndUpdateOptions): DocumentQueryanynullanyAll = js.native
+  def findOneAndUpdateDeleted(conditions: FilterQuery[_], update: UpdateQuery[_], options: QueryFindOneAndUpdateOptions): DocumentQueryanynullanyAll = js.native
   /** Find One And Update only deleted documents */
   def findOneAndUpdateDeleted(
     conditions: FilterQuery[_],
-    update: js.Any,
+    update: UpdateQuery[_],
     options: QueryFindOneAndUpdateOptions,
     callback: js.Function3[/* err */ js.Any, /* doc */ js.Any | Null, /* res */ js.Any, Unit]
   ): DocumentQueryanynullanyAll = js.native
   /** Find One And Update only deleted documents */
-  def findOneAndUpdateDeleted(conditions: FilterQuery[_], update: js.Any, options: rawResulttrueQueryFindOneArrayFilters): QueryFindAndModifyWriteOpBatchSize = js.native
+  def findOneAndUpdateDeleted(conditions: FilterQuery[_], update: UpdateQuery[_], options: rawResulttrueQueryFindOneArrayFilters): QueryFindAndModifyWriteOpBatchSize = js.native
   /** Find One And Update only deleted documents */
   def findOneAndUpdateDeleted(
     conditions: FilterQuery[_],
-    update: js.Any,
+    update: UpdateQuery[_],
     options: rawResulttrueQueryFindOneArrayFilters,
     callback: js.Function3[
       /* err */ js.Any, 
@@ -193,11 +194,11 @@ trait SoftDeleteModel[T /* <: Document */, QueryHelpers] extends Model_[T, Query
     ]
   ): QueryFindAndModifyWriteOpBatchSize = js.native
   /** Find One And Update only deleted documents */
-  def findOneAndUpdateDeleted(conditions: FilterQuery[_], update: js.Any, options: rawResulttrueupserttruene): QueryFindAndModifyWriteOpAnd = js.native
+  def findOneAndUpdateDeleted(conditions: FilterQuery[_], update: UpdateQuery[_], options: rawResulttrueupserttruene): QueryFindAndModifyWriteOpAnd = js.native
   /** Find One And Update only deleted documents */
   def findOneAndUpdateDeleted(
     conditions: FilterQuery[_],
-    update: js.Any,
+    update: UpdateQuery[_],
     options: rawResulttrueupserttruene,
     callback: js.Function3[
       /* err */ js.Any, 
@@ -207,39 +208,39 @@ trait SoftDeleteModel[T /* <: Document */, QueryHelpers] extends Model_[T, Query
     ]
   ): QueryFindAndModifyWriteOpAnd = js.native
   /** Find One And Update only deleted documents */
-  def findOneAndUpdateDeleted(conditions: FilterQuery[_], update: js.Any, options: upserttruenewtrueQueryFin): DocumentQueryanyanyAll = js.native
+  def findOneAndUpdateDeleted(conditions: FilterQuery[_], update: UpdateQuery[_], options: upserttruenewtrueQueryFin): DocumentQueryanyanyAll = js.native
   /** Find One And Update only deleted documents */
   def findOneAndUpdateDeleted(
     conditions: FilterQuery[_],
-    update: js.Any,
+    update: UpdateQuery[_],
     options: upserttruenewtrueQueryFin,
     callback: js.Function3[/* err */ js.Any, /* doc */ js.Any, /* res */ js.Any, Unit]
   ): DocumentQueryanyanyAll = js.native
   /** Find One And Update all documents including deleted */
   def findOneAndUpdateWithDeleted(): DocumentQueryanynullanyAll = js.native
   /** Find One And Update all documents including deleted */
-  def findOneAndUpdateWithDeleted(conditions: FilterQuery[_], update: js.Any): DocumentQueryanynullanyAll = js.native
+  def findOneAndUpdateWithDeleted(conditions: FilterQuery[_], update: UpdateQuery[_]): DocumentQueryanynullanyAll = js.native
   /** Find One And Update all documents including deleted */
   def findOneAndUpdateWithDeleted(
     conditions: FilterQuery[_],
-    update: js.Any,
+    update: UpdateQuery[_],
     callback: js.Function3[/* err */ js.Any, /* doc */ js.Any | Null, /* res */ js.Any, Unit]
   ): DocumentQueryanynullanyAll = js.native
   /** Find One And Update all documents including deleted */
-  def findOneAndUpdateWithDeleted(conditions: FilterQuery[_], update: js.Any, options: QueryFindOneAndUpdateOptions): DocumentQueryanynullanyAll = js.native
+  def findOneAndUpdateWithDeleted(conditions: FilterQuery[_], update: UpdateQuery[_], options: QueryFindOneAndUpdateOptions): DocumentQueryanynullanyAll = js.native
   /** Find One And Update all documents including deleted */
   def findOneAndUpdateWithDeleted(
     conditions: FilterQuery[_],
-    update: js.Any,
+    update: UpdateQuery[_],
     options: QueryFindOneAndUpdateOptions,
     callback: js.Function3[/* err */ js.Any, /* doc */ js.Any | Null, /* res */ js.Any, Unit]
   ): DocumentQueryanynullanyAll = js.native
   /** Find One And Update all documents including deleted */
-  def findOneAndUpdateWithDeleted(conditions: FilterQuery[_], update: js.Any, options: rawResulttrueQueryFindOneArrayFilters): QueryFindAndModifyWriteOpBatchSize = js.native
+  def findOneAndUpdateWithDeleted(conditions: FilterQuery[_], update: UpdateQuery[_], options: rawResulttrueQueryFindOneArrayFilters): QueryFindAndModifyWriteOpBatchSize = js.native
   /** Find One And Update all documents including deleted */
   def findOneAndUpdateWithDeleted(
     conditions: FilterQuery[_],
-    update: js.Any,
+    update: UpdateQuery[_],
     options: rawResulttrueQueryFindOneArrayFilters,
     callback: js.Function3[
       /* err */ js.Any, 
@@ -249,11 +250,11 @@ trait SoftDeleteModel[T /* <: Document */, QueryHelpers] extends Model_[T, Query
     ]
   ): QueryFindAndModifyWriteOpBatchSize = js.native
   /** Find One And Update all documents including deleted */
-  def findOneAndUpdateWithDeleted(conditions: FilterQuery[_], update: js.Any, options: rawResulttrueupserttruene): QueryFindAndModifyWriteOpAnd = js.native
+  def findOneAndUpdateWithDeleted(conditions: FilterQuery[_], update: UpdateQuery[_], options: rawResulttrueupserttruene): QueryFindAndModifyWriteOpAnd = js.native
   /** Find One And Update all documents including deleted */
   def findOneAndUpdateWithDeleted(
     conditions: FilterQuery[_],
-    update: js.Any,
+    update: UpdateQuery[_],
     options: rawResulttrueupserttruene,
     callback: js.Function3[
       /* err */ js.Any, 
@@ -263,11 +264,11 @@ trait SoftDeleteModel[T /* <: Document */, QueryHelpers] extends Model_[T, Query
     ]
   ): QueryFindAndModifyWriteOpAnd = js.native
   /** Find One And Update all documents including deleted */
-  def findOneAndUpdateWithDeleted(conditions: FilterQuery[_], update: js.Any, options: upserttruenewtrueQueryFin): DocumentQueryanyanyAll = js.native
+  def findOneAndUpdateWithDeleted(conditions: FilterQuery[_], update: UpdateQuery[_], options: upserttruenewtrueQueryFin): DocumentQueryanyanyAll = js.native
   /** Find One And Update all documents including deleted */
   def findOneAndUpdateWithDeleted(
     conditions: FilterQuery[_],
-    update: js.Any,
+    update: UpdateQuery[_],
     options: upserttruenewtrueQueryFin,
     callback: js.Function3[/* err */ js.Any, /* doc */ js.Any, /* res */ js.Any, Unit]
   ): DocumentQueryanyanyAll = js.native
@@ -384,36 +385,36 @@ trait SoftDeleteModel[T /* <: Document */, QueryHelpers] extends Model_[T, Query
   def restore(conditions: js.Any): Query[T] with QueryHelpers = js.native
   def restore(conditions: js.Any, fn: Callback[T, this.type]): Query[T] with QueryHelpers = js.native
   /** Update only deleted documents */
-  def updateDeleted(conditions: FilterQuery[_], doc: js.Any): Queryany = js.native
+  def updateDeleted(conditions: FilterQuery[_], doc: UpdateQuery[_]): Queryany = js.native
   /** Update only deleted documents */
   def updateDeleted(
     conditions: FilterQuery[_],
-    doc: js.Any,
+    doc: UpdateQuery[_],
     callback: js.Function2[/* err */ js.Any, /* raw */ js.Any, Unit]
   ): Queryany = js.native
   /** Update only deleted documents */
-  def updateDeleted(conditions: FilterQuery[_], doc: js.Any, options: ModelUpdateOptions): Queryany = js.native
+  def updateDeleted(conditions: FilterQuery[_], doc: UpdateQuery[_], options: ModelUpdateOptions): Queryany = js.native
   /** Update only deleted documents */
   def updateDeleted(
     conditions: FilterQuery[_],
-    doc: js.Any,
+    doc: UpdateQuery[_],
     options: ModelUpdateOptions,
     callback: js.Function2[/* err */ js.Any, /* raw */ js.Any, Unit]
   ): Queryany = js.native
   /** Update all documents including deleted */
-  def updateWithDeleted(conditions: FilterQuery[_], doc: js.Any): Queryany = js.native
+  def updateWithDeleted(conditions: FilterQuery[_], doc: UpdateQuery[_]): Queryany = js.native
   /** Update all documents including deleted */
   def updateWithDeleted(
     conditions: FilterQuery[_],
-    doc: js.Any,
+    doc: UpdateQuery[_],
     callback: js.Function2[/* err */ js.Any, /* raw */ js.Any, Unit]
   ): Queryany = js.native
   /** Update all documents including deleted */
-  def updateWithDeleted(conditions: FilterQuery[_], doc: js.Any, options: ModelUpdateOptions): Queryany = js.native
+  def updateWithDeleted(conditions: FilterQuery[_], doc: UpdateQuery[_], options: ModelUpdateOptions): Queryany = js.native
   /** Update all documents including deleted */
   def updateWithDeleted(
     conditions: FilterQuery[_],
-    doc: js.Any,
+    doc: UpdateQuery[_],
     options: ModelUpdateOptions,
     callback: js.Function2[/* err */ js.Any, /* raw */ js.Any, Unit]
   ): Queryany = js.native

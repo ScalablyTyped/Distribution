@@ -13,7 +13,6 @@ object SpringProps {
   @scala.inline
   def apply(from: Double, velocity: Double): SpringProps = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], velocity = velocity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SpringProps]
   }
 }

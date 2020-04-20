@@ -13,7 +13,6 @@ object ReadonlyactionNamestring {
   @scala.inline
   def apply(actionName: String): ReadonlyactionNamestring = {
     val __obj = js.Dynamic.literal(actionName = actionName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReadonlyactionNamestring]
   }
 }

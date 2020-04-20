@@ -16,7 +16,21 @@ trait MapViewBase extends js.Object {
     *   * Object with a combination of `target`, `center`, `scale` and `rotation` properties (with `target` being any of the types listed above). The `center` property is provided as a convenience to animate the [MapView.center](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapViewBase.html#center) and is equivalent to specifying the `target` with the center [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html).
     *
     *
-    * This function returns a promise which resolves as soon as the new view has been set to the target. If the transition is animated, then the ongoing animation can be obtained using [MapView.animation](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapViewBase.html#animation).  If a tiled map service is used as the basemap and `snapToZoom` property is set to `true` in [constraints](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapViewBase.html#constraints), the `goTo` method will zoom in to fit the defined `target`. If `snapToZoom` property is set to `false`, the `goTo` method will zoom to the exact `target`.
+    * This function returns a promise which resolves as soon as the new view has been set to the target. If the transition is animated, then the ongoing animation can be obtained using [MapView.animation](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapViewBase.html#animation). If setting the view to the new target fails, the promise returned by the goTo() method rejects with an error. Use a catch statement, to handle the error:
+    * ```js
+    * view.goTo({
+    *   center: [-126, 49]
+    * })
+    * .catch(function(error) {
+    *   if (error.name != "AbortError") {
+    *      console.error(error);
+    *   }
+    * });
+    * ```
+    *
+    * If a tiled map service is used as the basemap and `snapToZoom` property is set to `true` in [constraints](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapViewBase.html#constraints),
+    * the `goTo` method will zoom in to fit the defined `target`.
+    * If `snapToZoom` property is set to `false`, the `goTo` method will zoom to the exact `target`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapViewBase.html#goTo)
     *

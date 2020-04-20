@@ -26,15 +26,15 @@ class Fractal_ () extends EventEmitter {
   def config(config: FractalConfig): this.type = js.native
   def extend(plugin: String): this.type = js.native
   def extend(plugin: js.ThisFunction1[/* this */ this.type, /* core */ js.Any, Unit]): this.type = js.native
-  def get[K /* <: String */, V](path: K): js.UndefOr[
+  def get[K /* <: /* keyof T */ String */, V](path: K): js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | V | Null
   ] = js.native
-  def get[K /* <: String */, V](path: K, defaultValue: V): js.UndefOr[
+  def get[K /* <: /* keyof T */ String */, V](path: K, defaultValue: V): js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | V | Null
   ] = js.native
   def load(): js.Promise[Unit] = js.native
-  def set[K /* <: String */](path: K): this.type = js.native
-  def set[K /* <: String */](
+  def set[K /* <: /* keyof T */ String */](path: K): this.type = js.native
+  def set[K /* <: /* keyof T */ String */](
     path: K,
     value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ): this.type = js.native

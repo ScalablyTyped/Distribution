@@ -47,7 +47,6 @@ object MersenneTwister {
     random_long: () => Double
   ): MersenneTwister = {
     val __obj = js.Dynamic.literal(init_seed = js.Any.fromFunction1(init_seed), random = js.Any.fromFunction0(random), random_excl = js.Any.fromFunction0(random_excl), random_incl = js.Any.fromFunction0(random_incl), random_int = js.Any.fromFunction0(random_int), random_int31 = js.Any.fromFunction0(random_int31), random_long = js.Any.fromFunction0(random_long))
-  
     __obj.asInstanceOf[MersenneTwister]
   }
 }

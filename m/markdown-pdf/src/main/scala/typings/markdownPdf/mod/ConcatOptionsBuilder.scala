@@ -12,7 +12,6 @@ object ConcatOptionsBuilder {
   @scala.inline
   def apply(from: ConcatFromOptionsBuilder): ConcatOptionsBuilder = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConcatOptionsBuilder]
   }
 }

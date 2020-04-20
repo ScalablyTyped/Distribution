@@ -15,7 +15,6 @@ object AnonRecipientCertificate {
   @scala.inline
   def apply(recipientCertificate: default, recipientPrivateKey: ArrayBuffer): AnonRecipientCertificate = {
     val __obj = js.Dynamic.literal(recipientCertificate = recipientCertificate.asInstanceOf[js.Any], recipientPrivateKey = recipientPrivateKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRecipientCertificate]
   }
 }

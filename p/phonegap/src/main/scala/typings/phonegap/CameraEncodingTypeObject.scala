@@ -13,7 +13,6 @@ object CameraEncodingTypeObject {
   @scala.inline
   def apply(JPEG: Double, PNG: Double): CameraEncodingTypeObject = {
     val __obj = js.Dynamic.literal(JPEG = JPEG.asInstanceOf[js.Any], PNG = PNG.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CameraEncodingTypeObject]
   }
 }

@@ -29,7 +29,6 @@ object AnonDescriptors {
     routes: js.Array[NavigationRoute[NavigationParams]]
   ): AnonDescriptors = {
     val __obj = js.Dynamic.literal(closingRouteKeys = closingRouteKeys.asInstanceOf[js.Any], descriptors = descriptors.asInstanceOf[js.Any], openingRouteKeys = openingRouteKeys.asInstanceOf[js.Any], previousDescriptors = previousDescriptors.asInstanceOf[js.Any], previousRoutes = previousRoutes.asInstanceOf[js.Any], replacingRouteKeys = replacingRouteKeys.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDescriptors]
   }
 }

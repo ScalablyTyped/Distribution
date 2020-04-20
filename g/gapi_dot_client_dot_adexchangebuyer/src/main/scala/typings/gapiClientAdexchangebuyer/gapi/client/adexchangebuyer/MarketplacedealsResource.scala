@@ -27,7 +27,6 @@ object MarketplacedealsResource {
     update: AnonOauthtoken => Request_[EditAllOrderDealsResponse]
   ): MarketplacedealsResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[MarketplacedealsResource]
   }
 }

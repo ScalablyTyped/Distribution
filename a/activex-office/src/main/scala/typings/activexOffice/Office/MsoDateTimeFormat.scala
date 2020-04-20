@@ -40,36 +40,34 @@ trait MsoDateTimeFormat extends js.Object
 
 object MsoDateTimeFormat {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoDateTimeFigureOut: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def msoDateTimeFigureOut: `14` = this.cast(14)
+  def msoDateTimeFormatMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def msoDateTimeFormatMixed: `-2` = this.cast(-2)
+  def msoDateTimeHmm: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def msoDateTimeHmm: `10` = this.cast(10)
+  def msoDateTimeHmmss: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def msoDateTimeHmmss: `11` = this.cast(11)
+  def msoDateTimeMMMMdyyyy: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoDateTimeMMMMdyyyy: `4` = this.cast(4)
+  def msoDateTimeMMMMyy: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def msoDateTimeMMMMyy: `6` = this.cast(6)
+  def msoDateTimeMMddyyHmm: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def msoDateTimeMMddyyHmm: `8` = this.cast(8)
+  def msoDateTimeMMddyyhmmAMPM: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def msoDateTimeMMddyyhmmAMPM: `9` = this.cast(9)
+  def msoDateTimeMMyy: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def msoDateTimeMMyy: `7` = this.cast(7)
+  def msoDateTimeMdyy: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoDateTimeMdyy: `1` = this.cast(1)
+  def msoDateTimedMMMMyyyy: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoDateTimedMMMMyyyy: `3` = this.cast(3)
+  def msoDateTimedMMMyy: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def msoDateTimedMMMyy: `5` = this.cast(5)
+  def msoDateTimeddddMMMMddyyyy: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoDateTimeddddMMMMddyyyy: `2` = this.cast(2)
+  def msoDateTimehmmAMPM: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def msoDateTimehmmAMPM: `12` = this.cast(12)
-  @scala.inline
-  def msoDateTimehmmssAMPM: `13` = this.cast(13)
+  def msoDateTimehmmssAMPM: `13` = 13.asInstanceOf[`13`]
 }
 

@@ -14,7 +14,6 @@ object AnonNewValue {
   @scala.inline
   def apply(newValue: ComponentProps, oldValue: ComponentProps): AnonNewValue = {
     val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNewValue]
   }
 }

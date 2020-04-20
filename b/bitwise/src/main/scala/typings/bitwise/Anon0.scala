@@ -15,7 +15,6 @@ object Anon0 {
   @scala.inline
   def apply(read: UInt4 => js.Tuple4[Bit, Bit, Bit, Bit], write: js.Tuple4[Bit, Bit, Bit, Bit] => UInt4): Anon0 = {
     val __obj = js.Dynamic.literal(read = js.Any.fromFunction1(read), write = js.Any.fromFunction1(write))
-  
     __obj.asInstanceOf[Anon0]
   }
 }

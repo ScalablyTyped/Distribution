@@ -14,10 +14,8 @@ trait MsoScriptLocation extends js.Object
 
 object MsoScriptLocation {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoScriptLocationInBody: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoScriptLocationInBody: `2` = this.cast(2)
-  @scala.inline
-  def msoScriptLocationInHead: `1` = this.cast(1)
+  def msoScriptLocationInHead: `1` = 1.asInstanceOf[`1`]
 }
 

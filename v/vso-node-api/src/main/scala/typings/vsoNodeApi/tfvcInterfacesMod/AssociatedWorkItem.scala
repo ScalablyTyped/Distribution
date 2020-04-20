@@ -32,7 +32,6 @@ object AssociatedWorkItem {
     workItemType: String
   ): AssociatedWorkItem = {
     val __obj = js.Dynamic.literal(assignedTo = assignedTo.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], webUrl = webUrl.asInstanceOf[js.Any], workItemType = workItemType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssociatedWorkItem]
   }
 }

@@ -15,14 +15,12 @@ trait ConstraintClassName extends js.Object
 
 object ConstraintClassName {
   @scala.inline
-  def MaxNorm: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.MaxNorm = this.cast("MaxNorm")
+  def MaxNorm: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.MaxNorm = "MaxNorm".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.MaxNorm]
   @scala.inline
-  def MinMaxNorm: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.MinMaxNorm = this.cast("MinMaxNorm")
+  def MinMaxNorm: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.MinMaxNorm = "MinMaxNorm".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.MinMaxNorm]
   @scala.inline
-  def NonNeg: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.NonNeg = this.cast("NonNeg")
+  def NonNeg: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.NonNeg = "NonNeg".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.NonNeg]
   @scala.inline
-  def UnitNorm: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.UnitNorm = this.cast("UnitNorm")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UnitNorm: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.UnitNorm = "UnitNorm".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.UnitNorm]
 }
 

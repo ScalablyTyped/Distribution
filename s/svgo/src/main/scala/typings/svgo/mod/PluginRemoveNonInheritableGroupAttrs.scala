@@ -12,7 +12,6 @@ object PluginRemoveNonInheritableGroupAttrs {
   @scala.inline
   def apply(removeNonInheritableGroupAttrs: Boolean | js.Object): PluginRemoveNonInheritableGroupAttrs = {
     val __obj = js.Dynamic.literal(removeNonInheritableGroupAttrs = removeNonInheritableGroupAttrs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PluginRemoveNonInheritableGroupAttrs]
   }
 }

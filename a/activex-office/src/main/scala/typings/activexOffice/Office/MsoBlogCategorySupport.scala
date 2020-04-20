@@ -16,12 +16,10 @@ trait MsoBlogCategorySupport extends js.Object
 
 object MsoBlogCategorySupport {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoBlogMultipleCategories: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoBlogMultipleCategories: `2` = this.cast(2)
+  def msoBlogNoCategories: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def msoBlogNoCategories: `0` = this.cast(0)
-  @scala.inline
-  def msoBlogOneCategory: `1` = this.cast(1)
+  def msoBlogOneCategory: `1` = 1.asInstanceOf[`1`]
 }
 

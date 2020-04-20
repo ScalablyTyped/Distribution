@@ -12,7 +12,6 @@ object RouteResponse {
   @scala.inline
   def apply(agents: js.Array[AgentResponse]): RouteResponse = {
     val __obj = js.Dynamic.literal(agents = agents.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RouteResponse]
   }
 }

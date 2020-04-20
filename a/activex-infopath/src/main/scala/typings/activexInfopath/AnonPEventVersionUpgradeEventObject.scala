@@ -13,7 +13,6 @@ object AnonPEventVersionUpgradeEventObject {
   @scala.inline
   def apply(pEvent: VersionUpgradeEventObject): AnonPEventVersionUpgradeEventObject = {
     val __obj = js.Dynamic.literal(pEvent = pEvent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPEventVersionUpgradeEventObject]
   }
 }

@@ -15,7 +15,6 @@ object AnonAssetcode {
   @scala.inline
   def apply(asset_code: String, asset_issuer: String, asset_type: AssetType): AnonAssetcode = {
     val __obj = js.Dynamic.literal(asset_code = asset_code.asInstanceOf[js.Any], asset_issuer = asset_issuer.asInstanceOf[js.Any], asset_type = asset_type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAssetcode]
   }
 }

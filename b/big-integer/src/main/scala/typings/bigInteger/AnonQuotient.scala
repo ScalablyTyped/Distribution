@@ -14,7 +14,6 @@ object AnonQuotient {
   @scala.inline
   def apply(quotient: BigInteger, remainder: BigInteger): AnonQuotient = {
     val __obj = js.Dynamic.literal(quotient = quotient.asInstanceOf[js.Any], remainder = remainder.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonQuotient]
   }
 }

@@ -15,7 +15,6 @@ object XRView {
   @scala.inline
   def apply(eye: XREye, projectionMatrix: Float32Array, transform: XRRigidTransform): XRView = {
     val __obj = js.Dynamic.literal(eye = eye.asInstanceOf[js.Any], projectionMatrix = projectionMatrix.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[XRView]
   }
 }

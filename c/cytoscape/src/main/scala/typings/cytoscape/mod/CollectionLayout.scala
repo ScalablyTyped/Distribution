@@ -31,7 +31,6 @@ object CollectionLayout {
     makeLayout: LayoutOptions => Layouts
   ): CollectionLayout = {
     val __obj = js.Dynamic.literal(createLayout = js.Any.fromFunction1(createLayout), layout = js.Any.fromFunction1(layout), makeLayout = js.Any.fromFunction1(makeLayout))
-  
     __obj.asInstanceOf[CollectionLayout]
   }
 }

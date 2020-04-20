@@ -14,7 +14,6 @@ object Image {
   @scala.inline
   def apply(data: js.Any, height: Double, width: Double): Image = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Image]
   }
 }

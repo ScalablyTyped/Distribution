@@ -14,13 +14,13 @@ trait reactRouterNavigationProps {
   type CardProps = typings.reactRouterNavigation.mod.CardProps
   type NavBarProps = CardSubViewProps
   @scala.inline
-  def NavigationProps: NavigationComponentProps.type = typings.reactRouterNavigation.mod.NavigationComponentProps
+  def NavigationProps: NavigationComponentProps.type = NavigationComponentProps
   type NavigationProps = NavigationComponentProps
   @scala.inline
   def TabProps: typings.reactRouterNavigation.mod.TabProps.type = typings.reactRouterNavigation.mod.TabProps
   type TabProps = typings.reactRouterNavigation.mod.TabProps
   @scala.inline
-  def TabsProps: TabBarComponentProps.type = typings.reactRouterNavigation.mod.TabBarComponentProps
+  def TabsProps: TabBarComponentProps.type = TabBarComponentProps
   type TabsProps = TabBarComponentProps
 }
 

@@ -15,7 +15,6 @@ object PickImplwidth {
   @scala.inline
   def apply(width: next | initial | Double): PickImplwidth = {
     val __obj = js.Dynamic.literal(width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplwidth]
   }
 }

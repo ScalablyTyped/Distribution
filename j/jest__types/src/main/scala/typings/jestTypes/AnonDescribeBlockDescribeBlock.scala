@@ -16,7 +16,6 @@ object AnonDescribeBlockDescribeBlock {
   @scala.inline
   def apply(describeBlock: DescribeBlock, name: run_describe_finish): AnonDescribeBlockDescribeBlock = {
     val __obj = js.Dynamic.literal(describeBlock = describeBlock.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDescribeBlockDescribeBlock]
   }
 }

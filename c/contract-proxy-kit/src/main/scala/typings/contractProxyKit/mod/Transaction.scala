@@ -20,7 +20,6 @@ object Transaction {
     value: Double | String | js.Object
   ): Transaction = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Transaction]
   }
 }

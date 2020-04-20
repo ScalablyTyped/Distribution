@@ -25,7 +25,6 @@ object UpdateTaskSetRequest {
   @scala.inline
   def apply(cluster: String, scale: Scale, service: String, taskSet: String): UpdateTaskSetRequest = {
     val __obj = js.Dynamic.literal(cluster = cluster.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], taskSet = taskSet.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateTaskSetRequest]
   }
 }

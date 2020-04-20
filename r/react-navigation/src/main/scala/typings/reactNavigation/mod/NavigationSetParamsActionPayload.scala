@@ -15,7 +15,6 @@ object NavigationSetParamsActionPayload {
   @scala.inline
   def apply(key: String, params: NavigationParams): NavigationSetParamsActionPayload = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NavigationSetParamsActionPayload]
   }
 }

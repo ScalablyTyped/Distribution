@@ -23,32 +23,30 @@ trait URLPart extends js.Object
 
 object URLPart {
   @scala.inline
-  def auth: typings.urlParse.urlParseStrings.auth = this.cast("auth")
+  def auth: typings.urlParse.urlParseStrings.auth = "auth".asInstanceOf[typings.urlParse.urlParseStrings.auth]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def hash: typings.urlParse.urlParseStrings.hash = "hash".asInstanceOf[typings.urlParse.urlParseStrings.hash]
   @scala.inline
-  def hash: typings.urlParse.urlParseStrings.hash = this.cast("hash")
+  def host: typings.urlParse.urlParseStrings.host = "host".asInstanceOf[typings.urlParse.urlParseStrings.host]
   @scala.inline
-  def host: typings.urlParse.urlParseStrings.host = this.cast("host")
+  def hostname: typings.urlParse.urlParseStrings.hostname = "hostname".asInstanceOf[typings.urlParse.urlParseStrings.hostname]
   @scala.inline
-  def hostname: typings.urlParse.urlParseStrings.hostname = this.cast("hostname")
+  def href: typings.urlParse.urlParseStrings.href = "href".asInstanceOf[typings.urlParse.urlParseStrings.href]
   @scala.inline
-  def href: typings.urlParse.urlParseStrings.href = this.cast("href")
+  def origin: typings.urlParse.urlParseStrings.origin = "origin".asInstanceOf[typings.urlParse.urlParseStrings.origin]
   @scala.inline
-  def origin: typings.urlParse.urlParseStrings.origin = this.cast("origin")
+  def password: typings.urlParse.urlParseStrings.password = "password".asInstanceOf[typings.urlParse.urlParseStrings.password]
   @scala.inline
-  def password: typings.urlParse.urlParseStrings.password = this.cast("password")
+  def pathname: typings.urlParse.urlParseStrings.pathname = "pathname".asInstanceOf[typings.urlParse.urlParseStrings.pathname]
   @scala.inline
-  def pathname: typings.urlParse.urlParseStrings.pathname = this.cast("pathname")
+  def port: typings.urlParse.urlParseStrings.port = "port".asInstanceOf[typings.urlParse.urlParseStrings.port]
   @scala.inline
-  def port: typings.urlParse.urlParseStrings.port = this.cast("port")
+  def protocol: typings.urlParse.urlParseStrings.protocol = "protocol".asInstanceOf[typings.urlParse.urlParseStrings.protocol]
   @scala.inline
-  def protocol: typings.urlParse.urlParseStrings.protocol = this.cast("protocol")
+  def query: typings.urlParse.urlParseStrings.query = "query".asInstanceOf[typings.urlParse.urlParseStrings.query]
   @scala.inline
-  def query: typings.urlParse.urlParseStrings.query = this.cast("query")
+  def slashes: typings.urlParse.urlParseStrings.slashes = "slashes".asInstanceOf[typings.urlParse.urlParseStrings.slashes]
   @scala.inline
-  def slashes: typings.urlParse.urlParseStrings.slashes = this.cast("slashes")
-  @scala.inline
-  def username: typings.urlParse.urlParseStrings.username = this.cast("username")
+  def username: typings.urlParse.urlParseStrings.username = "username".asInstanceOf[typings.urlParse.urlParseStrings.username]
 }
 

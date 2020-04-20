@@ -12,7 +12,6 @@ object ObjectExplorerCloseSessionInfo {
   @scala.inline
   def apply(sessionId: String): ObjectExplorerCloseSessionInfo = {
     val __obj = js.Dynamic.literal(sessionId = sessionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ObjectExplorerCloseSessionInfo]
   }
 }

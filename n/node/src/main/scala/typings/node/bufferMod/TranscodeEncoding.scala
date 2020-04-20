@@ -16,18 +16,16 @@ trait TranscodeEncoding extends js.Object
 
 object TranscodeEncoding {
   @scala.inline
-  def ascii: typings.node.nodeStrings.ascii = this.cast("ascii")
+  def ascii: typings.node.nodeStrings.ascii = "ascii".asInstanceOf[typings.node.nodeStrings.ascii]
   @scala.inline
-  def binary: typings.node.nodeStrings.binary = this.cast("binary")
+  def binary: typings.node.nodeStrings.binary = "binary".asInstanceOf[typings.node.nodeStrings.binary]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def latin1: typings.node.nodeStrings.latin1 = "latin1".asInstanceOf[typings.node.nodeStrings.latin1]
   @scala.inline
-  def latin1: typings.node.nodeStrings.latin1 = this.cast("latin1")
+  def ucs2: typings.node.nodeStrings.ucs2 = "ucs2".asInstanceOf[typings.node.nodeStrings.ucs2]
   @scala.inline
-  def ucs2: typings.node.nodeStrings.ucs2 = this.cast("ucs2")
+  def utf16le: typings.node.nodeStrings.utf16le = "utf16le".asInstanceOf[typings.node.nodeStrings.utf16le]
   @scala.inline
-  def utf16le: typings.node.nodeStrings.utf16le = this.cast("utf16le")
-  @scala.inline
-  def utf8: typings.node.nodeStrings.utf8 = this.cast("utf8")
+  def utf8: typings.node.nodeStrings.utf8 = "utf8".asInstanceOf[typings.node.nodeStrings.utf8]
 }
 

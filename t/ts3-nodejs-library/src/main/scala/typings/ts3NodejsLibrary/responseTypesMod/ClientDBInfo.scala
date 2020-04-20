@@ -40,7 +40,6 @@ object ClientDBInfo {
     client_unique_identifier: String
   ): ClientDBInfo = {
     val __obj = js.Dynamic.literal(client_base64HashClientUID = client_base64HashClientUID.asInstanceOf[js.Any], client_created = client_created.asInstanceOf[js.Any], client_database_id = client_database_id.asInstanceOf[js.Any], client_description = client_description.asInstanceOf[js.Any], client_flag_avatar = client_flag_avatar.asInstanceOf[js.Any], client_lastconnected = client_lastconnected.asInstanceOf[js.Any], client_lastip = client_lastip.asInstanceOf[js.Any], client_month_bytes_downloaded = client_month_bytes_downloaded.asInstanceOf[js.Any], client_month_bytes_uploaded = client_month_bytes_uploaded.asInstanceOf[js.Any], client_nickname = client_nickname.asInstanceOf[js.Any], client_total_bytes_downloaded = client_total_bytes_downloaded.asInstanceOf[js.Any], client_total_bytes_uploaded = client_total_bytes_uploaded.asInstanceOf[js.Any], client_totalconnections = client_totalconnections.asInstanceOf[js.Any], client_unique_identifier = client_unique_identifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClientDBInfo]
   }
 }

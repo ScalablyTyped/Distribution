@@ -38,7 +38,6 @@ object CommentsResource {
     removeContent: AnonCommentId => Request_[Comment]
   ): CommentsResource = {
     val __obj = js.Dynamic.literal(approve = js.Any.fromFunction1(approve), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), listByBlog = js.Any.fromFunction1(listByBlog), markAsSpam = js.Any.fromFunction1(markAsSpam), removeContent = js.Any.fromFunction1(removeContent))
-  
     __obj.asInstanceOf[CommentsResource]
   }
 }

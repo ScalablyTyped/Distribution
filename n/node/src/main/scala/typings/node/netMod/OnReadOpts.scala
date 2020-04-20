@@ -19,7 +19,6 @@ object OnReadOpts {
   @scala.inline
   def apply(buffer: Uint8Array | js.Function0[Uint8Array], callback: (Double, Uint8Array) => Boolean): OnReadOpts = {
     val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], callback = js.Any.fromFunction2(callback))
-  
     __obj.asInstanceOf[OnReadOpts]
   }
 }

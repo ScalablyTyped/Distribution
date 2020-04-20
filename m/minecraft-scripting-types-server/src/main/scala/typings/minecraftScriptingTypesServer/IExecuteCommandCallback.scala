@@ -13,7 +13,6 @@ object IExecuteCommandCallback {
   @scala.inline
   def apply(command: String, data: AnonMessage): IExecuteCommandCallback = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IExecuteCommandCallback]
   }
 }

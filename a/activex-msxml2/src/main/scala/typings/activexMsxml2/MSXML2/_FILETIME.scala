@@ -13,7 +13,6 @@ object _FILETIME {
   @scala.inline
   def apply(dwHighDateTime: Double, dwLowDateTime: Double): _FILETIME = {
     val __obj = js.Dynamic.literal(dwHighDateTime = dwHighDateTime.asInstanceOf[js.Any], dwLowDateTime = dwLowDateTime.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[_FILETIME]
   }
 }

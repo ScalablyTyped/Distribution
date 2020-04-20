@@ -20,16 +20,14 @@ trait MsoTabStopType extends js.Object
 
 object MsoTabStopType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoTabStopCenter: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoTabStopCenter: `2` = this.cast(2)
+  def msoTabStopDecimal: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoTabStopDecimal: `4` = this.cast(4)
+  def msoTabStopLeft: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoTabStopLeft: `1` = this.cast(1)
+  def msoTabStopMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def msoTabStopMixed: `-2` = this.cast(-2)
-  @scala.inline
-  def msoTabStopRight: `3` = this.cast(3)
+  def msoTabStopRight: `3` = 3.asInstanceOf[`3`]
 }
 

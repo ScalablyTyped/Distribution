@@ -21,7 +21,6 @@ object ProjectsResource {
     list: AnonMaxResults => Request_[ProjectList]
   ): ProjectsResource = {
     val __obj = js.Dynamic.literal(getServiceAccount = js.Any.fromFunction1(getServiceAccount), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[ProjectsResource]
   }
 }

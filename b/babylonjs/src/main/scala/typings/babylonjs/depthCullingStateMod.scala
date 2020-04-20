@@ -29,21 +29,21 @@ object depthCullingStateMod extends js.Object {
     var _zOffset: js.Any = js.native
     @JSName("apply")
     def apply(gl: WebGLRenderingContext): Unit = js.native
-    def cull(): Nullable[Boolean] = js.native
+    def cull: Nullable[Boolean] = js.native
     def cull(value: Nullable[Boolean]): js.Any = js.native
-    def cullFace(): Nullable[Double] = js.native
+    def cullFace: Nullable[Double] = js.native
     def cullFace(value: Nullable[Double]): js.Any = js.native
-    def depthFunc(): Nullable[Double] = js.native
+    def depthFunc: Nullable[Double] = js.native
     def depthFunc(value: Nullable[Double]): js.Any = js.native
-    def depthMask(): Boolean = js.native
+    def depthMask: Boolean = js.native
     def depthMask(value: Boolean): js.Any = js.native
-    def depthTest(): Boolean = js.native
+    def depthTest: Boolean = js.native
     def depthTest(value: Boolean): js.Any = js.native
-    def frontFace(): Nullable[Double] = js.native
+    def frontFace: Nullable[Double] = js.native
     def frontFace(value: Nullable[Double]): js.Any = js.native
-    def isDirty(): Boolean = js.native
+    def isDirty: Boolean = js.native
     def reset(): Unit = js.native
-    def zOffset(): Double = js.native
+    def zOffset: Double = js.native
     def zOffset(value: Double): js.Any = js.native
   }
   

@@ -20,7 +20,6 @@ object DeltaTime {
   @scala.inline
   def apply(offsetSeconds: OffsetSeconds, timeExpression: TimeExpression): DeltaTime = {
     val __obj = js.Dynamic.literal(offsetSeconds = offsetSeconds.asInstanceOf[js.Any], timeExpression = timeExpression.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeltaTime]
   }
 }

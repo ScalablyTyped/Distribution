@@ -14,7 +14,6 @@ object PreviewInfo {
   @scala.inline
   def apply(config: js.Array[PreviewConfig], content: js.Array[String], tags: js.Array[String]): PreviewInfo = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PreviewInfo]
   }
 }

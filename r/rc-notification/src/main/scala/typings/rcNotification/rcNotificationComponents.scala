@@ -1,5 +1,6 @@
 package typings.rcNotification
 
+import typings.rcNotification.mod.default
 import typings.react.mod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -7,10 +8,10 @@ import scala.scalajs.js.annotation._
 
 object rcNotificationComponents extends rcNotificationProps {
   @scala.inline
-  def Lib: ComponentType[LibProps] = js.constructorOf[typings.rcNotification.mod.default].asInstanceOf[typings.react.mod.ComponentType[LibProps]]
+  def Lib: ComponentType[LibProps] = js.constructorOf[default].asInstanceOf[ComponentType[LibProps]]
   @scala.inline
-  def Notice: ComponentType[NoticeProps] = js.constructorOf[typings.rcNotification.noticeMod.default].asInstanceOf[typings.react.mod.ComponentType[NoticeProps]]
+  def Notice: ComponentType[NoticeProps] = js.constructorOf[typings.rcNotification.noticeMod.default].asInstanceOf[ComponentType[NoticeProps]]
   @scala.inline
-  def Notification: ComponentType[NotificationProps] = js.constructorOf[typings.rcNotification.notificationMod.default].asInstanceOf[typings.react.mod.ComponentType[NotificationProps]]
+  def Notification: ComponentType[NotificationProps] = js.constructorOf[typings.rcNotification.notificationMod.default].asInstanceOf[ComponentType[NotificationProps]]
 }
 

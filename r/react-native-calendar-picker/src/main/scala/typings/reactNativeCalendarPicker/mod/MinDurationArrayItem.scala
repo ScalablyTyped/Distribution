@@ -13,7 +13,6 @@ object MinDurationArrayItem {
   @scala.inline
   def apply(date: MomentParsable, minDuration: Double): MinDurationArrayItem = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], minDuration = minDuration.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MinDurationArrayItem]
   }
 }

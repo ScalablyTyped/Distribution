@@ -15,6 +15,9 @@ class RefinementType[C /* <: Any_ */, A, O, I] protected () extends Type_[A, O, 
     `type`: C,
     predicate: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Predicate<A> */ js.Any
   ) = this()
+  /**
+    * @since 1.0.0
+    */
   val _tag: typings.ioTs.ioTsStrings.RefinementType = js.native
   val predicate: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Predicate<A> */ js.Any = js.native
   val `type`: C = js.native

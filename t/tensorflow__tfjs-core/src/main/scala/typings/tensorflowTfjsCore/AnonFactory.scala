@@ -14,7 +14,6 @@ object AnonFactory {
   @scala.inline
   def apply(factory: () => KernelBackend | js.Promise[KernelBackend], priority: Double): AnonFactory = {
     val __obj = js.Dynamic.literal(factory = js.Any.fromFunction0(factory), priority = priority.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFactory]
   }
 }

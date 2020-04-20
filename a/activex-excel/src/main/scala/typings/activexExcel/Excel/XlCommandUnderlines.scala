@@ -16,12 +16,10 @@ trait XlCommandUnderlines extends js.Object
 
 object XlCommandUnderlines {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlCommandUnderlinesAutomatic: `-4105` = -4105.asInstanceOf[`-4105`]
   @scala.inline
-  def xlCommandUnderlinesAutomatic: `-4105` = this.cast(-4105)
+  def xlCommandUnderlinesOff: `-4146` = -4146.asInstanceOf[`-4146`]
   @scala.inline
-  def xlCommandUnderlinesOff: `-4146` = this.cast(-4146)
-  @scala.inline
-  def xlCommandUnderlinesOn: `1` = this.cast(1)
+  def xlCommandUnderlinesOn: `1` = 1.asInstanceOf[`1`]
 }
 

@@ -34,7 +34,6 @@ object JQueryCallback {
     remove: /* repeated */ js.Any => js.Any
   ): JQueryCallback = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), disable = js.Any.fromFunction0(disable), disabled = js.Any.fromFunction0(disabled), empty = js.Any.fromFunction0(empty), fire = js.Any.fromFunction1(fire), fireWith = js.Any.fromFunction2(fireWith), fired = js.Any.fromFunction0(fired), has = js.Any.fromFunction1(has), lock = js.Any.fromFunction0(lock), locked = js.Any.fromFunction0(locked), remove = js.Any.fromFunction1(remove))
-  
     __obj.asInstanceOf[JQueryCallback]
   }
 }

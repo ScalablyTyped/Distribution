@@ -22,18 +22,16 @@ trait AcRecord extends js.Object
 
 object AcRecord {
   @scala.inline
-  def acFirst: `2` = this.cast(2)
+  def acFirst: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def acGoTo: `4` = this.cast(4)
+  def acGoTo: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def acLast: `3` = this.cast(3)
+  def acLast: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def acNewRec: `5` = this.cast(5)
+  def acNewRec: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def acNext: `1` = this.cast(1)
+  def acNext: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def acPrevious: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def acPrevious: `0` = 0.asInstanceOf[`0`]
 }
 

@@ -13,7 +13,7 @@ package object mod {
     */
   type SinonStubbedInstance[TType] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof TType ]: sinon.sinon.SinonStubbedMember<TType[P]>}
-    */ typings.sinon.sinonStrings.SinonStubbedInstance with TType
+    */ typings.sinon.sinonStrings.SinonStubbedInstance with org.scalablytyped.runtime.TopLevel[TType]
   /**
     * Replaces a type with a Sinon stub if it's a function.
     */

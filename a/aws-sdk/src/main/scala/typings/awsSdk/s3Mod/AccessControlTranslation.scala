@@ -16,7 +16,6 @@ object AccessControlTranslation {
   @scala.inline
   def apply(Owner: OwnerOverride): AccessControlTranslation = {
     val __obj = js.Dynamic.literal(Owner = Owner.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AccessControlTranslation]
   }
 }

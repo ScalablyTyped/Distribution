@@ -18,7 +18,6 @@ object ReactMicStopEvent {
   @scala.inline
   def apply(blob: Blob, blobURL: String, option: AnonAudioBitsPerSecond, startTime: Double, stopTime: Double): ReactMicStopEvent = {
     val __obj = js.Dynamic.literal(blob = blob.asInstanceOf[js.Any], blobURL = blobURL.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], stopTime = stopTime.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReactMicStopEvent]
   }
 }

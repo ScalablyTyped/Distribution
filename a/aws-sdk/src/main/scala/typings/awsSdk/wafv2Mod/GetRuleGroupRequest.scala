@@ -24,7 +24,6 @@ object GetRuleGroupRequest {
   @scala.inline
   def apply(Id: EntityId, Name: EntityName, Scope: Scope): GetRuleGroupRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Scope = Scope.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetRuleGroupRequest]
   }
 }

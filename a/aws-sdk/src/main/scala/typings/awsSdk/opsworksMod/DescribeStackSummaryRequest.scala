@@ -16,7 +16,6 @@ object DescribeStackSummaryRequest {
   @scala.inline
   def apply(StackId: String): DescribeStackSummaryRequest = {
     val __obj = js.Dynamic.literal(StackId = StackId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeStackSummaryRequest]
   }
 }

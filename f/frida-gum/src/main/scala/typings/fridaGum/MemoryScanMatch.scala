@@ -19,7 +19,6 @@ object MemoryScanMatch {
   @scala.inline
   def apply(address: NativePointer, size: Double): MemoryScanMatch = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MemoryScanMatch]
   }
 }

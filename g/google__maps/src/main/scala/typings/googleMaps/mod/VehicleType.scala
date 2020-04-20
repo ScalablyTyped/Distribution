@@ -27,40 +27,38 @@ trait VehicleType extends js.Object
 
 object VehicleType {
   @scala.inline
-  def BUS: typings.googleMaps.googleMapsStrings.BUS = this.cast("BUS")
+  def BUS: typings.googleMaps.googleMapsStrings.BUS = "BUS".asInstanceOf[typings.googleMaps.googleMapsStrings.BUS]
   @scala.inline
-  def CABLE_CAR: typings.googleMaps.googleMapsStrings.CABLE_CAR = this.cast("CABLE_CAR")
+  def CABLE_CAR: typings.googleMaps.googleMapsStrings.CABLE_CAR = "CABLE_CAR".asInstanceOf[typings.googleMaps.googleMapsStrings.CABLE_CAR]
   @scala.inline
-  def COMMUTER_TRAIN: typings.googleMaps.googleMapsStrings.COMMUTER_TRAIN = this.cast("COMMUTER_TRAIN")
+  def COMMUTER_TRAIN: typings.googleMaps.googleMapsStrings.COMMUTER_TRAIN = "COMMUTER_TRAIN".asInstanceOf[typings.googleMaps.googleMapsStrings.COMMUTER_TRAIN]
   @scala.inline
-  def FERRY: typings.googleMaps.googleMapsStrings.FERRY = this.cast("FERRY")
+  def FERRY: typings.googleMaps.googleMapsStrings.FERRY = "FERRY".asInstanceOf[typings.googleMaps.googleMapsStrings.FERRY]
   @scala.inline
-  def FUNICULAR: typings.googleMaps.googleMapsStrings.FUNICULAR = this.cast("FUNICULAR")
+  def FUNICULAR: typings.googleMaps.googleMapsStrings.FUNICULAR = "FUNICULAR".asInstanceOf[typings.googleMaps.googleMapsStrings.FUNICULAR]
   @scala.inline
-  def GONDOLA_LIFT: typings.googleMaps.googleMapsStrings.GONDOLA_LIFT = this.cast("GONDOLA_LIFT")
+  def GONDOLA_LIFT: typings.googleMaps.googleMapsStrings.GONDOLA_LIFT = "GONDOLA_LIFT".asInstanceOf[typings.googleMaps.googleMapsStrings.GONDOLA_LIFT]
   @scala.inline
-  def HEAVY_RAIL: typings.googleMaps.googleMapsStrings.HEAVY_RAIL = this.cast("HEAVY_RAIL")
+  def HEAVY_RAIL: typings.googleMaps.googleMapsStrings.HEAVY_RAIL = "HEAVY_RAIL".asInstanceOf[typings.googleMaps.googleMapsStrings.HEAVY_RAIL]
   @scala.inline
-  def HIGH_SPEED_TRAIN: typings.googleMaps.googleMapsStrings.HIGH_SPEED_TRAIN = this.cast("HIGH_SPEED_TRAIN")
+  def HIGH_SPEED_TRAIN: typings.googleMaps.googleMapsStrings.HIGH_SPEED_TRAIN = "HIGH_SPEED_TRAIN".asInstanceOf[typings.googleMaps.googleMapsStrings.HIGH_SPEED_TRAIN]
   @scala.inline
-  def INTERCITY_BUS: typings.googleMaps.googleMapsStrings.INTERCITY_BUS = this.cast("INTERCITY_BUS")
+  def INTERCITY_BUS: typings.googleMaps.googleMapsStrings.INTERCITY_BUS = "INTERCITY_BUS".asInstanceOf[typings.googleMaps.googleMapsStrings.INTERCITY_BUS]
   @scala.inline
-  def METRO_RAIL: typings.googleMaps.googleMapsStrings.METRO_RAIL = this.cast("METRO_RAIL")
+  def METRO_RAIL: typings.googleMaps.googleMapsStrings.METRO_RAIL = "METRO_RAIL".asInstanceOf[typings.googleMaps.googleMapsStrings.METRO_RAIL]
   @scala.inline
-  def MONORAIL: typings.googleMaps.googleMapsStrings.MONORAIL = this.cast("MONORAIL")
+  def MONORAIL: typings.googleMaps.googleMapsStrings.MONORAIL = "MONORAIL".asInstanceOf[typings.googleMaps.googleMapsStrings.MONORAIL]
   @scala.inline
-  def OTHER: typings.googleMaps.googleMapsStrings.OTHER = this.cast("OTHER")
+  def OTHER: typings.googleMaps.googleMapsStrings.OTHER = "OTHER".asInstanceOf[typings.googleMaps.googleMapsStrings.OTHER]
   @scala.inline
-  def RAIL: typings.googleMaps.googleMapsStrings.RAIL = this.cast("RAIL")
+  def RAIL: typings.googleMaps.googleMapsStrings.RAIL = "RAIL".asInstanceOf[typings.googleMaps.googleMapsStrings.RAIL]
   @scala.inline
-  def SHARE_TAXI: typings.googleMaps.googleMapsStrings.SHARE_TAXI = this.cast("SHARE_TAXI")
+  def SHARE_TAXI: typings.googleMaps.googleMapsStrings.SHARE_TAXI = "SHARE_TAXI".asInstanceOf[typings.googleMaps.googleMapsStrings.SHARE_TAXI]
   @scala.inline
-  def SUBWAY: typings.googleMaps.googleMapsStrings.SUBWAY = this.cast("SUBWAY")
+  def SUBWAY: typings.googleMaps.googleMapsStrings.SUBWAY = "SUBWAY".asInstanceOf[typings.googleMaps.googleMapsStrings.SUBWAY]
   @scala.inline
-  def TRAM: typings.googleMaps.googleMapsStrings.TRAM = this.cast("TRAM")
+  def TRAM: typings.googleMaps.googleMapsStrings.TRAM = "TRAM".asInstanceOf[typings.googleMaps.googleMapsStrings.TRAM]
   @scala.inline
-  def TROLLEYBUS: typings.googleMaps.googleMapsStrings.TROLLEYBUS = this.cast("TROLLEYBUS")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def TROLLEYBUS: typings.googleMaps.googleMapsStrings.TROLLEYBUS = "TROLLEYBUS".asInstanceOf[typings.googleMaps.googleMapsStrings.TROLLEYBUS]
 }
 

@@ -12,7 +12,6 @@ object AnonShallow {
   @scala.inline
   def apply(shallow: Boolean): AnonShallow = {
     val __obj = js.Dynamic.literal(shallow = shallow.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonShallow]
   }
 }

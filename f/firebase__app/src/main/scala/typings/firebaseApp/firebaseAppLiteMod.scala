@@ -43,13 +43,13 @@ object firebaseAppLiteMod extends js.Object {
     def _getService(name: String): FirebaseService = js.native
     def _getService(name: String, instanceIdentifier: String): FirebaseService = js.native
     @JSName("automaticDataCollectionEnabled")
-    def automaticDataCollectionEnabled_MFirebaseAppLiteImpl(): Boolean = js.native
+    def automaticDataCollectionEnabled_MFirebaseAppLiteImpl: Boolean = js.native
     @JSName("automaticDataCollectionEnabled")
     def automaticDataCollectionEnabled_MFirebaseAppLiteImpl(`val`: Boolean): js.Any = js.native
     @JSName("name")
-    def name_MFirebaseAppLiteImpl(): String = js.native
+    def name_MFirebaseAppLiteImpl: String = js.native
     @JSName("options")
-    def options_MFirebaseAppLiteImpl(): FirebaseOptions = js.native
+    def options_MFirebaseAppLiteImpl: FirebaseOptions = js.native
   }
   
 }

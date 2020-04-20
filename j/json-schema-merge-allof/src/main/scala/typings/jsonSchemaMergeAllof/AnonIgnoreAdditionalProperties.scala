@@ -13,7 +13,6 @@ object AnonIgnoreAdditionalProperties {
   @scala.inline
   def apply(ignoreAdditionalProperties: `true`): AnonIgnoreAdditionalProperties = {
     val __obj = js.Dynamic.literal(ignoreAdditionalProperties = ignoreAdditionalProperties.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIgnoreAdditionalProperties]
   }
 }

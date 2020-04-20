@@ -24,7 +24,6 @@ object DisassociateLinkRequest {
   @scala.inline
   def apply(DeviceId: String, GlobalNetworkId: String, LinkId: String): DisassociateLinkRequest = {
     val __obj = js.Dynamic.literal(DeviceId = DeviceId.asInstanceOf[js.Any], GlobalNetworkId = GlobalNetworkId.asInstanceOf[js.Any], LinkId = LinkId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisassociateLinkRequest]
   }
 }

@@ -12,7 +12,6 @@ object Comparator {
   @scala.inline
   def apply[T](compare: (T, T) => Double): Comparator[T] = {
     val __obj = js.Dynamic.literal(compare = js.Any.fromFunction2(compare))
-  
     __obj.asInstanceOf[Comparator[T]]
   }
 }

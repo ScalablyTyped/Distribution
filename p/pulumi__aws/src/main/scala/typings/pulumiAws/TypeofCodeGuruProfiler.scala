@@ -13,7 +13,6 @@ object TypeofCodeGuruProfiler {
   @scala.inline
   def apply(Types: TypeofCodeGuruProfiler): TypeofCodeGuruProfiler = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofCodeGuruProfiler]
   }
 }

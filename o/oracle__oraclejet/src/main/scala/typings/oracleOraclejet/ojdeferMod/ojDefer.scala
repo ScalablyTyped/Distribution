@@ -893,9 +893,9 @@ trait ojDefer extends JetElement[ojDeferSettableProperties] {
     useCapture: Boolean
   ): Unit = js.native
   def getProperty(property: String): js.Any = js.native
-  def getProperty[T /* <: String */](property: T): /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojdefer.ojDefer[T] */ js.Any = js.native
+  def getProperty[T /* <: /* keyof @oracle/oraclejet.@oracle/oraclejet/ojdefer.ojDeferSettableProperties */ String */](property: T): /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojdefer.ojDefer[T] */ js.Any = js.native
   def setProperties(properties: ojDeferSettablePropertiesLenient): Unit = js.native
-  def setProperty[T /* <: String */](
+  def setProperty[T /* <: /* keyof @oracle/oraclejet.@oracle/oraclejet/ojdefer.ojDeferSettableProperties */ String */](
     property: T,
     value: (/* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojdefer.ojDeferSettableProperties[T] */ js.Any) | (JetSetPropertyType[T, ojDeferSettableProperties])
   ): Unit = js.native

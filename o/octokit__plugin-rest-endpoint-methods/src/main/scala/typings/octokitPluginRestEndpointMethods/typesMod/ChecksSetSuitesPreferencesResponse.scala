@@ -16,7 +16,6 @@ object ChecksSetSuitesPreferencesResponse {
     repository: ChecksSetSuitesPreferencesResponseRepository
   ): ChecksSetSuitesPreferencesResponse = {
     val __obj = js.Dynamic.literal(preferences = preferences.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChecksSetSuitesPreferencesResponse]
   }
 }

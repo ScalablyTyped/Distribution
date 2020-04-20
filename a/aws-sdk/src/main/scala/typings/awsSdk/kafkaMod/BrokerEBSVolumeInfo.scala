@@ -24,7 +24,6 @@ object BrokerEBSVolumeInfo {
   @scala.inline
   def apply(KafkaBrokerNodeId: string, VolumeSizeGB: integer): BrokerEBSVolumeInfo = {
     val __obj = js.Dynamic.literal(KafkaBrokerNodeId = KafkaBrokerNodeId.asInstanceOf[js.Any], VolumeSizeGB = VolumeSizeGB.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BrokerEBSVolumeInfo]
   }
 }

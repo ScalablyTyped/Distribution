@@ -16,7 +16,6 @@ object DescribeCompilationJobRequest {
   @scala.inline
   def apply(CompilationJobName: EntityName): DescribeCompilationJobRequest = {
     val __obj = js.Dynamic.literal(CompilationJobName = CompilationJobName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeCompilationJobRequest]
   }
 }

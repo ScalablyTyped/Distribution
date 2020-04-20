@@ -20,7 +20,6 @@ object TestFailoverMessage {
   @scala.inline
   def apply(NodeGroupId: AllowedNodeGroupId, ReplicationGroupId: String): TestFailoverMessage = {
     val __obj = js.Dynamic.literal(NodeGroupId = NodeGroupId.asInstanceOf[js.Any], ReplicationGroupId = ReplicationGroupId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TestFailoverMessage]
   }
 }

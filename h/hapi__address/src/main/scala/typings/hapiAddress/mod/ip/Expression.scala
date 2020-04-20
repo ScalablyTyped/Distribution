@@ -28,7 +28,6 @@ object Expression {
   @scala.inline
   def apply(cidr: Cidr, raw: String, regex: RegExp, versions: js.Array[Version]): Expression = {
     val __obj = js.Dynamic.literal(cidr = cidr.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], regex = regex.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Expression]
   }
 }

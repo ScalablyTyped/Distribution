@@ -19,24 +19,22 @@ trait LoggingDriverType extends js.Object
 
 object LoggingDriverType {
   @scala.inline
-  def awslogs: typings.dockerode.dockerodeStrings.awslogs = this.cast("awslogs")
+  def awslogs: typings.dockerode.dockerodeStrings.awslogs = "awslogs".asInstanceOf[typings.dockerode.dockerodeStrings.awslogs]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def etwlogs: typings.dockerode.dockerodeStrings.etwlogs = "etwlogs".asInstanceOf[typings.dockerode.dockerodeStrings.etwlogs]
   @scala.inline
-  def etwlogs: typings.dockerode.dockerodeStrings.etwlogs = this.cast("etwlogs")
+  def fluentd: typings.dockerode.dockerodeStrings.fluentd = "fluentd".asInstanceOf[typings.dockerode.dockerodeStrings.fluentd]
   @scala.inline
-  def fluentd: typings.dockerode.dockerodeStrings.fluentd = this.cast("fluentd")
+  def gelf: typings.dockerode.dockerodeStrings.gelf = "gelf".asInstanceOf[typings.dockerode.dockerodeStrings.gelf]
   @scala.inline
-  def gelf: typings.dockerode.dockerodeStrings.gelf = this.cast("gelf")
+  def journald: typings.dockerode.dockerodeStrings.journald = "journald".asInstanceOf[typings.dockerode.dockerodeStrings.journald]
   @scala.inline
-  def journald: typings.dockerode.dockerodeStrings.journald = this.cast("journald")
+  def `json-file`: typings.dockerode.dockerodeStrings.`json-file` = "json-file".asInstanceOf[typings.dockerode.dockerodeStrings.`json-file`]
   @scala.inline
-  def `json-file`: typings.dockerode.dockerodeStrings.`json-file` = this.cast("json-file")
+  def none: typings.dockerode.dockerodeStrings.none = "none".asInstanceOf[typings.dockerode.dockerodeStrings.none]
   @scala.inline
-  def none: typings.dockerode.dockerodeStrings.none = this.cast("none")
+  def splunk: typings.dockerode.dockerodeStrings.splunk = "splunk".asInstanceOf[typings.dockerode.dockerodeStrings.splunk]
   @scala.inline
-  def splunk: typings.dockerode.dockerodeStrings.splunk = this.cast("splunk")
-  @scala.inline
-  def syslog: typings.dockerode.dockerodeStrings.syslog = this.cast("syslog")
+  def syslog: typings.dockerode.dockerodeStrings.syslog = "syslog".asInstanceOf[typings.dockerode.dockerodeStrings.syslog]
 }
 

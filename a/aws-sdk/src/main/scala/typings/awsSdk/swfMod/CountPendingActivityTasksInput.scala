@@ -20,7 +20,6 @@ object CountPendingActivityTasksInput {
   @scala.inline
   def apply(domain: DomainName, taskList: TaskList): CountPendingActivityTasksInput = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], taskList = taskList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CountPendingActivityTasksInput]
   }
 }

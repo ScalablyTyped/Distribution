@@ -82,7 +82,6 @@ object IParser {
     registerOscHandler: (Double, js.Function1[/* data */ String, Boolean]) => IDisposable
   ): IParser = {
     val __obj = js.Dynamic.literal(registerCsiHandler = js.Any.fromFunction2(registerCsiHandler), registerDcsHandler = js.Any.fromFunction2(registerDcsHandler), registerEscHandler = js.Any.fromFunction2(registerEscHandler), registerOscHandler = js.Any.fromFunction2(registerOscHandler))
-  
     __obj.asInstanceOf[IParser]
   }
 }

@@ -16,7 +16,6 @@ object AuthCode {
   @scala.inline
   def apply(authCode: String, clientId: String, expires: Date, userId: String): AuthCode = {
     val __obj = js.Dynamic.literal(authCode = authCode.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], expires = expires.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AuthCode]
   }
 }

@@ -32,7 +32,6 @@ object AnonAssetType {
     selected: js.Array[scala.Nothing]
   ): AnonAssetType = {
     val __obj = js.Dynamic.literal(assetType = assetType.asInstanceOf[js.Any], backgroundColor = backgroundColor.asInstanceOf[js.Any], callback = js.Any.fromFunction2(callback), first = first.asInstanceOf[js.Any], groupTypes = groupTypes.asInstanceOf[js.Any], imageMargin = imageMargin.asInstanceOf[js.Any], imagesPerRow = imagesPerRow.asInstanceOf[js.Any], maximum = maximum.asInstanceOf[js.Any], selectSingleItem = selectSingleItem.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAssetType]
   }
 }

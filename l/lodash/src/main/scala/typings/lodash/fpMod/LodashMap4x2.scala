@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait LodashMap4x2[T] extends js.Object {
   def apply(iteratee: String): js.Array[_] = js.native
   def apply(iteratee: js.Object): js.Array[Boolean] = js.native
-  def apply[K /* <: String */](iteratee: K): js.Array[
+  def apply[K /* <: /* keyof T */ String */](iteratee: K): js.Array[
     /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ] = js.native
 }

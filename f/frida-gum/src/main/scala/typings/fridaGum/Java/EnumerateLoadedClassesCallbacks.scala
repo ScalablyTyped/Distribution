@@ -24,7 +24,6 @@ object EnumerateLoadedClassesCallbacks {
   @scala.inline
   def apply(onComplete: () => Unit, onMatch: (String, NativePointer) => Unit): EnumerateLoadedClassesCallbacks = {
     val __obj = js.Dynamic.literal(onComplete = js.Any.fromFunction0(onComplete), onMatch = js.Any.fromFunction2(onMatch))
-  
     __obj.asInstanceOf[EnumerateLoadedClassesCallbacks]
   }
 }

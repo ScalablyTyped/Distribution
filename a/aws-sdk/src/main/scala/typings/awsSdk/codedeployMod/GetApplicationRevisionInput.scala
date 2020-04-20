@@ -20,7 +20,6 @@ object GetApplicationRevisionInput {
   @scala.inline
   def apply(applicationName: ApplicationName, revision: RevisionLocation): GetApplicationRevisionInput = {
     val __obj = js.Dynamic.literal(applicationName = applicationName.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetApplicationRevisionInput]
   }
 }

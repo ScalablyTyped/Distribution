@@ -41,7 +41,6 @@ object GetGroupResult {
     users: js.Array[GetGroupUser]
   ): GetGroupResult = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], groupId = groupId.asInstanceOf[js.Any], groupName = groupName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetGroupResult]
   }
 }

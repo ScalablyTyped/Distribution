@@ -14,7 +14,6 @@ object subtitleTrackLoadedData {
   @scala.inline
   def apply(details: LevelDetails, id: String, stats: Stats): subtitleTrackLoadedData = {
     val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[subtitleTrackLoadedData]
   }
 }

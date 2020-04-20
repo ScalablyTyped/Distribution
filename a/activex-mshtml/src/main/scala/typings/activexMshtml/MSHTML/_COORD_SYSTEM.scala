@@ -24,20 +24,18 @@ trait _COORD_SYSTEM extends js.Object
 
 object _COORD_SYSTEM {
   @scala.inline
-  def COORD_SYSTEM_CLIENT: `5` = this.cast(5)
+  def COORD_SYSTEM_CLIENT: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def COORD_SYSTEM_CONTAINER: `2` = this.cast(2)
+  def COORD_SYSTEM_CONTAINER: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def COORD_SYSTEM_CONTENT: `3` = this.cast(3)
+  def COORD_SYSTEM_CONTENT: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def COORD_SYSTEM_FRAME: `4` = this.cast(4)
+  def COORD_SYSTEM_FRAME: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def COORD_SYSTEM_GLOBAL: `0` = this.cast(0)
+  def COORD_SYSTEM_GLOBAL: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def COORD_SYSTEM_Max: `2147483647` = this.cast(2147483647)
+  def COORD_SYSTEM_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
   @scala.inline
-  def COORD_SYSTEM_PARENT: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def COORD_SYSTEM_PARENT: `1` = 1.asInstanceOf[`1`]
 }
 

@@ -18,7 +18,6 @@ object AnonFooterLayout {
   @scala.inline
   def apply(footerLayout: _empty | now, showOn: focus | image, timeIncrement: String): AnonFooterLayout = {
     val __obj = js.Dynamic.literal(footerLayout = footerLayout.asInstanceOf[js.Any], showOn = showOn.asInstanceOf[js.Any], timeIncrement = timeIncrement.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFooterLayout]
   }
 }

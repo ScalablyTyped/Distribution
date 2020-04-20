@@ -13,7 +13,6 @@ object JSONRequest {
   @scala.inline
   def apply(send: js.Object => Unit, sendRPC: js.Object => Unit): JSONRequest = {
     val __obj = js.Dynamic.literal(send = js.Any.fromFunction1(send), sendRPC = js.Any.fromFunction1(sendRPC))
-  
     __obj.asInstanceOf[JSONRequest]
   }
 }

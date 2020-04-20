@@ -16,7 +16,6 @@ object CreateHumanTaskUiResponse {
   @scala.inline
   def apply(HumanTaskUiArn: HumanTaskUiArn): CreateHumanTaskUiResponse = {
     val __obj = js.Dynamic.literal(HumanTaskUiArn = HumanTaskUiArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateHumanTaskUiResponse]
   }
 }

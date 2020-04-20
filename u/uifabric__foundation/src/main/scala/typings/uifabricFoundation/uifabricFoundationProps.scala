@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait uifabricFoundationProps {
   @scala.inline
-  def ThemeProviderProps: IThemeProviderProps.type = typings.uifabricFoundation.themeProviderMod.IThemeProviderProps
+  def ThemeProviderProps: IThemeProviderProps.type = IThemeProviderProps
   type ThemeProviderProps = IThemeProviderProps
 }
 

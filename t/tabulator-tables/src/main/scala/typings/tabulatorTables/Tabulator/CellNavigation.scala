@@ -31,7 +31,6 @@ object CellNavigation {
     up: () => Unit
   ): CellNavigation = {
     val __obj = js.Dynamic.literal(down = js.Any.fromFunction0(down), left = js.Any.fromFunction0(left), next = js.Any.fromFunction0(next), prev = js.Any.fromFunction0(prev), right = js.Any.fromFunction0(right), up = js.Any.fromFunction0(up))
-  
     __obj.asInstanceOf[CellNavigation]
   }
 }

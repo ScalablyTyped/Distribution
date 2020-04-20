@@ -13,7 +13,6 @@ object UniqueItemsParams {
   @scala.inline
   def apply(i: Double, j: Double): UniqueItemsParams = {
     val __obj = js.Dynamic.literal(i = i.asInstanceOf[js.Any], j = j.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UniqueItemsParams]
   }
 }

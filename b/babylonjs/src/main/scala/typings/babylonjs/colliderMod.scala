@@ -83,12 +83,12 @@ object colliderMod extends js.Object {
       hasMaterial: Boolean,
       hostMesh: AbstractMesh
     ): Unit = js.native
-    def collisionMask(): Double = js.native
+    def collisionMask: Double = js.native
     def collisionMask(mask: Double): js.Any = js.native
     /**
       * Gets the plane normal used to compute the sliding response (in local space)
       */
-    def slidePlaneNormal(): Vector3 = js.native
+    def slidePlaneNormal: Vector3 = js.native
   }
   
 }

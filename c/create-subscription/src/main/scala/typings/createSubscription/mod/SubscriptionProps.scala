@@ -14,7 +14,6 @@ object SubscriptionProps {
   @scala.inline
   def apply[S, T](children: T => ReactNode, source: S): SubscriptionProps[S, T] = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), source = source.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SubscriptionProps[S, T]]
   }
 }

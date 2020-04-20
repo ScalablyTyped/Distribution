@@ -24,20 +24,18 @@ trait MsoOLEMenuGroup extends js.Object
 
 object MsoOLEMenuGroup {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoOLEMenuGroupContainer: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoOLEMenuGroupContainer: `2` = this.cast(2)
+  def msoOLEMenuGroupEdit: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoOLEMenuGroupEdit: `1` = this.cast(1)
+  def msoOLEMenuGroupFile: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def msoOLEMenuGroupFile: `0` = this.cast(0)
+  def msoOLEMenuGroupHelp: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def msoOLEMenuGroupHelp: `5` = this.cast(5)
+  def msoOLEMenuGroupNone: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def msoOLEMenuGroupNone: `-1` = this.cast(-1)
+  def msoOLEMenuGroupObject: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoOLEMenuGroupObject: `3` = this.cast(3)
-  @scala.inline
-  def msoOLEMenuGroupWindow: `4` = this.cast(4)
+  def msoOLEMenuGroupWindow: `4` = 4.asInstanceOf[`4`]
 }
 

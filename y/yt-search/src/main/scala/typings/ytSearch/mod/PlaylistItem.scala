@@ -28,7 +28,6 @@ object PlaylistItem {
     videoId: String
   ): PlaylistItem = {
     val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], listId = listId.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], thumbnailUrl = thumbnailUrl.asInstanceOf[js.Any], thumbnailUrlHQ = thumbnailUrlHQ.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], videoId = videoId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PlaylistItem]
   }
 }

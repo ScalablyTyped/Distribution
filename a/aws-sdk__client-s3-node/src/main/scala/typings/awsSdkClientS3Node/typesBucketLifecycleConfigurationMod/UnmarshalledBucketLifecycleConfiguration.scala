@@ -17,7 +17,6 @@ object UnmarshalledBucketLifecycleConfiguration {
   @scala.inline
   def apply(Rules: js.Array[UnmarshalledLifecycleRule]): UnmarshalledBucketLifecycleConfiguration = {
     val __obj = js.Dynamic.literal(Rules = Rules.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnmarshalledBucketLifecycleConfiguration]
   }
 }

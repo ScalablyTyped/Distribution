@@ -22,7 +22,6 @@ object ContextParams {
     seed: js.Any
   ): ContextParams = {
     val __obj = js.Dynamic.literal(beans = beans.asInstanceOf[js.Any], components = components.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], overrideBeans = overrideBeans.asInstanceOf[js.Any], seed = seed.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ContextParams]
   }
 }

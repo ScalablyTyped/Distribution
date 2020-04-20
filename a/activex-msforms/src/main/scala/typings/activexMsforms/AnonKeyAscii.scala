@@ -13,7 +13,6 @@ object AnonKeyAscii {
   @scala.inline
   def apply(KeyAscii: ReturnInteger): AnonKeyAscii = {
     val __obj = js.Dynamic.literal(KeyAscii = KeyAscii.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonKeyAscii]
   }
 }

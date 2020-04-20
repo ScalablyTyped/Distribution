@@ -12,7 +12,6 @@ object AnonIndexNumber {
   @scala.inline
   def apply(Index: Double): AnonIndexNumber = {
     val __obj = js.Dynamic.literal(Index = Index.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIndexNumber]
   }
 }

@@ -16,7 +16,6 @@ object GetApnsSandboxChannelRequest {
   @scala.inline
   def apply(ApplicationId: string): GetApnsSandboxChannelRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetApnsSandboxChannelRequest]
   }
 }

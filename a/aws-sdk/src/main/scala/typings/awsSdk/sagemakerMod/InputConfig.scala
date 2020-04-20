@@ -24,7 +24,6 @@ object InputConfig {
   @scala.inline
   def apply(DataInputConfig: DataInputConfig, Framework: Framework, S3Uri: S3Uri): InputConfig = {
     val __obj = js.Dynamic.literal(DataInputConfig = DataInputConfig.asInstanceOf[js.Any], Framework = Framework.asInstanceOf[js.Any], S3Uri = S3Uri.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InputConfig]
   }
 }

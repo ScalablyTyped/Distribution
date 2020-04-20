@@ -14,7 +14,12 @@ package object mod {
   ]
   type WebsocketRequestHandler = js.Function3[
     /* ws */ typings.ws.mod.^, 
-    /* req */ typings.express.mod.Request_[typings.expressServeStaticCore.mod.ParamsDictionary], 
+    /* req */ typings.express.mod.Request_[
+      typings.expressServeStaticCore.mod.ParamsDictionary, 
+      js.Any, 
+      js.Any, 
+      typings.expressServeStaticCore.mod.Query
+    ], 
     /* next */ typings.express.mod.NextFunction, 
     scala.Unit
   ]

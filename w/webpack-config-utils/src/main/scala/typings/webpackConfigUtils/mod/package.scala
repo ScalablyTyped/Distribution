@@ -17,5 +17,5 @@ package object mod {
   type Falsy = js.UndefOr[typings.webpackConfigUtils.mod._Falsy | scala.Null]
   type NonEmptyObject[T, P /* <: typings.webpackConfigUtils.mod.DefinedObjKeys[T] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ PP in P ]: T[PP]}
-    */ typings.webpackConfigUtils.webpackConfigUtilsStrings.NonEmptyObject with T
+    */ typings.webpackConfigUtils.webpackConfigUtilsStrings.NonEmptyObject with org.scalablytyped.runtime.TopLevel[T]
 }

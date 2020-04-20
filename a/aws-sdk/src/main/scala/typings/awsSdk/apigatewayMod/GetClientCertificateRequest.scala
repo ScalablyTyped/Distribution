@@ -16,7 +16,6 @@ object GetClientCertificateRequest {
   @scala.inline
   def apply(clientCertificateId: String): GetClientCertificateRequest = {
     val __obj = js.Dynamic.literal(clientCertificateId = clientCertificateId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetClientCertificateRequest]
   }
 }

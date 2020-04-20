@@ -13,7 +13,19 @@ object dvaStrings {
   sealed trait `@@routerSlashLOCATION_CHANGE` extends js.Object
   
   @js.native
+  sealed trait history extends js.Object
+  
+  @js.native
+  sealed trait location extends js.Object
+  
+  @js.native
+  sealed trait `match` extends js.Object
+  
+  @js.native
   sealed trait matchPath extends js.Object
+  
+  @js.native
+  sealed trait staticContext extends js.Object
   
   @js.native
   sealed trait takeEvery extends EffectType
@@ -38,7 +50,15 @@ object dvaStrings {
   @scala.inline
   def `@@routerSlashLOCATION_CHANGE`: `@@routerSlashLOCATION_CHANGE` = "@@router/LOCATION_CHANGE".asInstanceOf[`@@routerSlashLOCATION_CHANGE`]
   @scala.inline
+  def history: history = "history".asInstanceOf[history]
+  @scala.inline
+  def location: location = "location".asInstanceOf[location]
+  @scala.inline
+  def `match`: `match` = "match".asInstanceOf[`match`]
+  @scala.inline
   def matchPath: matchPath = "matchPath".asInstanceOf[matchPath]
+  @scala.inline
+  def staticContext: staticContext = "staticContext".asInstanceOf[staticContext]
   @scala.inline
   def takeEvery: takeEvery = "takeEvery".asInstanceOf[takeEvery]
   @scala.inline

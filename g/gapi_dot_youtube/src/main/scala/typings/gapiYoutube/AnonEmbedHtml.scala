@@ -15,7 +15,6 @@ object AnonEmbedHtml {
   @scala.inline
   def apply(embedHtml: String): AnonEmbedHtml = {
     val __obj = js.Dynamic.literal(embedHtml = embedHtml.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEmbedHtml]
   }
 }

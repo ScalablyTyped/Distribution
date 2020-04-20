@@ -20,7 +20,6 @@ object ChangeMessageVisibilityBatchRequest {
   @scala.inline
   def apply(Entries: ChangeMessageVisibilityBatchRequestEntryList, QueueUrl: String): ChangeMessageVisibilityBatchRequest = {
     val __obj = js.Dynamic.literal(Entries = Entries.asInstanceOf[js.Any], QueueUrl = QueueUrl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChangeMessageVisibilityBatchRequest]
   }
 }

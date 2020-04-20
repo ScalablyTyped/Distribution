@@ -20,7 +20,6 @@ object ICommand {
   @scala.inline
   def apply(execute: () => js.Any): ICommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute))
-  
     __obj.asInstanceOf[ICommand]
   }
 }

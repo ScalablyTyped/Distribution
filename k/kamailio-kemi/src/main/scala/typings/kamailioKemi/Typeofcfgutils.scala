@@ -38,7 +38,6 @@ object Typeofcfgutils {
     unlock: String => Double
   ): Typeofcfgutils = {
     val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), core_hash = js.Any.fromFunction3(core_hash), lock = js.Any.fromFunction1(lock), pkg_status = js.Any.fromFunction0(pkg_status), pkg_summary = js.Any.fromFunction0(pkg_summary), rand_event = js.Any.fromFunction0(rand_event), rand_get_prob = js.Any.fromFunction0(rand_get_prob), rand_reset_prob = js.Any.fromFunction0(rand_reset_prob), rand_set_prob = js.Any.fromFunction1(rand_set_prob), shm_status = js.Any.fromFunction0(shm_status), shm_summary = js.Any.fromFunction0(shm_summary), trylock = js.Any.fromFunction1(trylock), unlock = js.Any.fromFunction1(unlock))
-  
     __obj.asInstanceOf[Typeofcfgutils]
   }
 }

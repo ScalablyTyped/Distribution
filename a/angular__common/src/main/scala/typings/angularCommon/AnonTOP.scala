@@ -14,7 +14,6 @@ object AnonTOP {
   @scala.inline
   def apply(JPY: js.Array[String], TOP: js.Array[String], USD: js.Array[String]): AnonTOP = {
     val __obj = js.Dynamic.literal(JPY = JPY.asInstanceOf[js.Any], TOP = TOP.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTOP]
   }
 }

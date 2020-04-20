@@ -171,7 +171,7 @@ class DSVModel_ protected ()
     * Whether this model has been disposed.
     */
   @JSName("isDisposed")
-  def isDisposed_MDSVModel_(): Boolean = js.native
+  def isDisposed_MDSVModel_ : Boolean = js.native
   /**
     * Get the metadata for a cell in the data model.
     *
@@ -195,7 +195,7 @@ class DSVModel_ protected ()
   /**
     * A promise that resolves when the model has parsed all of its data.
     */
-  def ready(): js.Promise[Unit] = js.native
+  def ready: js.Promise[Unit] = js.native
   /**
     * Get the row count for a region in the data model.
     *

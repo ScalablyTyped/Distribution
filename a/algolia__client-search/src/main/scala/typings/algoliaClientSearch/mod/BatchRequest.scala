@@ -21,7 +21,6 @@ object BatchRequest {
   @scala.inline
   def apply(action: BatchActionType, body: Record[String, _]): BatchRequest = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchRequest]
   }
 }

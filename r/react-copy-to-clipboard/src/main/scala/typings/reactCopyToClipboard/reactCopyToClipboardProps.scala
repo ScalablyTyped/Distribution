@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactCopyToClipboardProps {
   @scala.inline
-  def ReactCopyToClipboardProps: Props.type = typings.reactCopyToClipboard.mod.Props
+  def ReactCopyToClipboardProps: Props.type = Props
   type ReactCopyToClipboardProps = Props
 }
 

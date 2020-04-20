@@ -20,7 +20,6 @@ object RegisterEcsClusterRequest {
   @scala.inline
   def apply(EcsClusterArn: String, StackId: String): RegisterEcsClusterRequest = {
     val __obj = js.Dynamic.literal(EcsClusterArn = EcsClusterArn.asInstanceOf[js.Any], StackId = StackId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RegisterEcsClusterRequest]
   }
 }

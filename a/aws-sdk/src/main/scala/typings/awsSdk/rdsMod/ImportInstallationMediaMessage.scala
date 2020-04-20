@@ -38,7 +38,6 @@ object ImportInstallationMediaMessage {
     OSInstallationMediaPath: String
   ): ImportInstallationMediaMessage = {
     val __obj = js.Dynamic.literal(CustomAvailabilityZoneId = CustomAvailabilityZoneId.asInstanceOf[js.Any], Engine = Engine.asInstanceOf[js.Any], EngineInstallationMediaPath = EngineInstallationMediaPath.asInstanceOf[js.Any], EngineVersion = EngineVersion.asInstanceOf[js.Any], OSInstallationMediaPath = OSInstallationMediaPath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ImportInstallationMediaMessage]
   }
 }

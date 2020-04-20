@@ -12,7 +12,6 @@ object VideoCodecSettings {
   @scala.inline
   def apply(codec: VideoCodec): VideoCodecSettings = {
     val __obj = js.Dynamic.literal(codec = codec.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VideoCodecSettings]
   }
 }

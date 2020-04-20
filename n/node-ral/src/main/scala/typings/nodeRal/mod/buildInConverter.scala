@@ -19,24 +19,22 @@ trait buildInConverter extends js.Object
 
 object buildInConverter {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def form: typings.nodeRal.nodeRalStrings.form = "form".asInstanceOf[typings.nodeRal.nodeRalStrings.form]
   @scala.inline
-  def form: typings.nodeRal.nodeRalStrings.form = this.cast("form")
+  def formData: typings.nodeRal.nodeRalStrings.formData = "formData".asInstanceOf[typings.nodeRal.nodeRalStrings.formData]
   @scala.inline
-  def formData: typings.nodeRal.nodeRalStrings.formData = this.cast("formData")
+  def json: typings.nodeRal.nodeRalStrings.json = "json".asInstanceOf[typings.nodeRal.nodeRalStrings.json]
   @scala.inline
-  def json: typings.nodeRal.nodeRalStrings.json = this.cast("json")
+  def protobuf: typings.nodeRal.nodeRalStrings.protobuf = "protobuf".asInstanceOf[typings.nodeRal.nodeRalStrings.protobuf]
   @scala.inline
-  def protobuf: typings.nodeRal.nodeRalStrings.protobuf = this.cast("protobuf")
+  def querystring: typings.nodeRal.nodeRalStrings.querystring = "querystring".asInstanceOf[typings.nodeRal.nodeRalStrings.querystring]
   @scala.inline
-  def querystring: typings.nodeRal.nodeRalStrings.querystring = this.cast("querystring")
+  def raw: typings.nodeRal.nodeRalStrings.raw = "raw".asInstanceOf[typings.nodeRal.nodeRalStrings.raw]
   @scala.inline
-  def raw: typings.nodeRal.nodeRalStrings.raw = this.cast("raw")
+  def redis: typings.nodeRal.nodeRalStrings.redis = "redis".asInstanceOf[typings.nodeRal.nodeRalStrings.redis]
   @scala.inline
-  def redis: typings.nodeRal.nodeRalStrings.redis = this.cast("redis")
+  def stream: typings.nodeRal.nodeRalStrings.stream = "stream".asInstanceOf[typings.nodeRal.nodeRalStrings.stream]
   @scala.inline
-  def stream: typings.nodeRal.nodeRalStrings.stream = this.cast("stream")
-  @scala.inline
-  def string: typings.nodeRal.nodeRalStrings.string = this.cast("string")
+  def string: typings.nodeRal.nodeRalStrings.string = "string".asInstanceOf[typings.nodeRal.nodeRalStrings.string]
 }
 

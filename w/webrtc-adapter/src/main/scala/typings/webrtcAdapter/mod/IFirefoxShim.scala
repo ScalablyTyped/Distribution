@@ -25,7 +25,6 @@ object IFirefoxShim {
     shimSenderGetStats: Window_ => Unit
   ): IFirefoxShim = {
     val __obj = js.Dynamic.literal(shimOnTrack = js.Any.fromFunction1(shimOnTrack), shimPeerConnection = js.Any.fromFunction1(shimPeerConnection), shimRTCDataChannel = js.Any.fromFunction1(shimRTCDataChannel), shimReceiverGetStats = js.Any.fromFunction1(shimReceiverGetStats), shimRemoveStream = js.Any.fromFunction1(shimRemoveStream), shimSenderGetStats = js.Any.fromFunction1(shimSenderGetStats))
-  
     __obj.asInstanceOf[IFirefoxShim]
   }
 }

@@ -16,7 +16,6 @@ object Logger_ {
   @scala.inline
   def apply(error: js.Any => Unit, log: js.Any => Unit): Logger_ = {
     val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error), log = js.Any.fromFunction1(log))
-  
     __obj.asInstanceOf[Logger_]
   }
 }

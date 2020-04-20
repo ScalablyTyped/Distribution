@@ -16,7 +16,6 @@ object AnonFocusMenu {
   @scala.inline
   def apply(focusMenu: Boolean): AnonFocusMenu = {
     val __obj = js.Dynamic.literal(focusMenu = focusMenu.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFocusMenu]
   }
 }

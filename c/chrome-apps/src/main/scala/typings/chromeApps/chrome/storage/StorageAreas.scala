@@ -13,12 +13,10 @@ trait StorageAreas extends js.Object
 
 object StorageAreas {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def local: typings.chromeApps.chromeAppsStrings.local = "local".asInstanceOf[typings.chromeApps.chromeAppsStrings.local]
   @scala.inline
-  def local: typings.chromeApps.chromeAppsStrings.local = this.cast("local")
+  def managed: typings.chromeApps.chromeAppsStrings.managed = "managed".asInstanceOf[typings.chromeApps.chromeAppsStrings.managed]
   @scala.inline
-  def managed: typings.chromeApps.chromeAppsStrings.managed = this.cast("managed")
-  @scala.inline
-  def sync: typings.chromeApps.chromeAppsStrings.sync = this.cast("sync")
+  def sync: typings.chromeApps.chromeAppsStrings.sync = "sync".asInstanceOf[typings.chromeApps.chromeAppsStrings.sync]
 }
 

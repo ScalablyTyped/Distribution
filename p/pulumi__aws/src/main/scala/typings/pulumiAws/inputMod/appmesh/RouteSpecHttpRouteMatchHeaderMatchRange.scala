@@ -21,7 +21,6 @@ object RouteSpecHttpRouteMatchHeaderMatchRange {
   @scala.inline
   def apply(end: Input[Double], start: Input[Double]): RouteSpecHttpRouteMatchHeaderMatchRange = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RouteSpecHttpRouteMatchHeaderMatchRange]
   }
 }

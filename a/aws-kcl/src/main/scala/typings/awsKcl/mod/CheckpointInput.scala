@@ -12,7 +12,6 @@ object CheckpointInput {
   @scala.inline
   def apply(checkpointer: Checkpointer): CheckpointInput = {
     val __obj = js.Dynamic.literal(checkpointer = checkpointer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CheckpointInput]
   }
 }

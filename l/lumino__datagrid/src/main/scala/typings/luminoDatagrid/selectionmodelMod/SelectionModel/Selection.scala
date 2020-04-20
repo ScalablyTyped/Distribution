@@ -38,7 +38,6 @@ object Selection {
   @scala.inline
   def apply(c1: Double, c2: Double, r1: Double, r2: Double): Selection = {
     val __obj = js.Dynamic.literal(c1 = c1.asInstanceOf[js.Any], c2 = c2.asInstanceOf[js.Any], r1 = r1.asInstanceOf[js.Any], r2 = r2.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Selection]
   }
 }

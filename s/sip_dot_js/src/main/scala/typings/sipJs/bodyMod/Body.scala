@@ -42,7 +42,6 @@ object Body {
   @scala.inline
   def apply(content: String, contentDisposition: String, contentType: String): Body = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], contentDisposition = contentDisposition.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Body]
   }
 }

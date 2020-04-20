@@ -23,7 +23,6 @@ object CipherNameAndProtocol {
   @scala.inline
   def apply(name: String, standardName: String, version: String): CipherNameAndProtocol = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], standardName = standardName.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CipherNameAndProtocol]
   }
 }

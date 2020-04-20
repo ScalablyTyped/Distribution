@@ -15,7 +15,6 @@ object CreateReplicaAction {
   @scala.inline
   def apply(RegionName: String): CreateReplicaAction = {
     val __obj = js.Dynamic.literal(RegionName = RegionName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateReplicaAction]
   }
 }

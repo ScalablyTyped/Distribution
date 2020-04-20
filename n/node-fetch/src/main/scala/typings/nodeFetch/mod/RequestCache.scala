@@ -16,18 +16,16 @@ trait RequestCache extends js.Object
 
 object RequestCache {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def default: typings.nodeFetch.nodeFetchStrings.default = "default".asInstanceOf[typings.nodeFetch.nodeFetchStrings.default]
   @scala.inline
-  def default: typings.nodeFetch.nodeFetchStrings.default = this.cast("default")
+  def `force-cache`: typings.nodeFetch.nodeFetchStrings.`force-cache` = "force-cache".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`force-cache`]
   @scala.inline
-  def `force-cache`: typings.nodeFetch.nodeFetchStrings.`force-cache` = this.cast("force-cache")
+  def `no-cache`: typings.nodeFetch.nodeFetchStrings.`no-cache` = "no-cache".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`no-cache`]
   @scala.inline
-  def `no-cache`: typings.nodeFetch.nodeFetchStrings.`no-cache` = this.cast("no-cache")
+  def `no-store`: typings.nodeFetch.nodeFetchStrings.`no-store` = "no-store".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`no-store`]
   @scala.inline
-  def `no-store`: typings.nodeFetch.nodeFetchStrings.`no-store` = this.cast("no-store")
+  def `only-if-cached`: typings.nodeFetch.nodeFetchStrings.`only-if-cached` = "only-if-cached".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`only-if-cached`]
   @scala.inline
-  def `only-if-cached`: typings.nodeFetch.nodeFetchStrings.`only-if-cached` = this.cast("only-if-cached")
-  @scala.inline
-  def reload: typings.nodeFetch.nodeFetchStrings.reload = this.cast("reload")
+  def reload: typings.nodeFetch.nodeFetchStrings.reload = "reload".asInstanceOf[typings.nodeFetch.nodeFetchStrings.reload]
 }
 

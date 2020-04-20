@@ -19,7 +19,7 @@ trait Gradient extends js.Object {
   /**
   	 * An array of colors, as a color name or hex triplet.
   	 */
-  var colors: js.UndefOr[js.Array[GradientColorRef | String]] = js.undefined
+  var colors: js.UndefOr[js.Array[GradientColorRef | java.lang.String]] = js.undefined
   /**
   	 * End point for the gradient.
   	 */
@@ -39,7 +39,7 @@ trait Gradient extends js.Object {
   /**
   	 * Type of gradient, either 'linear' or 'radial'.
   	 */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object Gradient {
@@ -47,12 +47,12 @@ object Gradient {
   def apply(
     backfillEnd: js.UndefOr[Boolean] = js.undefined,
     backfillStart: js.UndefOr[Boolean] = js.undefined,
-    colors: js.Array[GradientColorRef | String] = null,
+    colors: js.Array[GradientColorRef | java.lang.String] = null,
     endPoint: Point = null,
     endRadius: Int | Double = null,
     startPoint: Point = null,
     startRadius: Int | Double = null,
-    `type`: String = null
+    `type`: java.lang.String = null
   ): Gradient = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(backfillEnd)) __obj.updateDynamic("backfillEnd")(backfillEnd.asInstanceOf[js.Any])

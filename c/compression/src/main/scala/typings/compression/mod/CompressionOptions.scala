@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.express.mod.Request_
 import typings.express.mod.Response_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -114,7 +115,7 @@ object CompressionOptions {
     */
   /* property */ StringDictionary[js.Any] = null,
     chunkSize: Int | Double = null,
-    filter: (/* req */ Request_[ParamsDictionary], /* res */ Response_[js.Any]) => Boolean = null,
+    filter: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => Boolean = null,
     level: Int | Double = null,
     memLevel: Int | Double = null,
     strategy: Int | Double = null,

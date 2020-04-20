@@ -27,7 +27,6 @@ object ReactComponentLike {
     state: js.Any
   ): ReactComponentLike = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], forceUpdate = js.Any.fromFunction1(forceUpdate), props = props.asInstanceOf[js.Any], refs = refs.asInstanceOf[js.Any], render = js.Any.fromFunction0(render), setState = js.Any.fromFunction1(setState), state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReactComponentLike]
   }
 }

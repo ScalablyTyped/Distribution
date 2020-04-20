@@ -14,7 +14,6 @@ object AnonOriginalEvent {
   @scala.inline
   def apply(originalEvent: Event_, query: String): AnonOriginalEvent = {
     val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOriginalEvent]
   }
 }

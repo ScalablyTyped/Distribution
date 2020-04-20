@@ -14,7 +14,6 @@ object HighlightResult {
   @scala.inline
   def apply(language: String, relevance: Double, value: js.Array[HastNode]): HighlightResult = {
     val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any], relevance = relevance.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HighlightResult]
   }
 }

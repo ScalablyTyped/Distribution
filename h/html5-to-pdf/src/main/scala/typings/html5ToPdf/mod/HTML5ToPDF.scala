@@ -24,7 +24,6 @@ object HTML5ToPDF {
     start: () => js.Promise[Page]
   ): HTML5ToPDF = {
     val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), close = js.Any.fromFunction0(close), includeAssets = js.Any.fromFunction0(includeAssets), parseOptions = js.Any.fromFunction1(parseOptions), start = js.Any.fromFunction0(start))
-  
     __obj.asInstanceOf[HTML5ToPDF]
   }
 }

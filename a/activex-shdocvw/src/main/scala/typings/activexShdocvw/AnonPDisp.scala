@@ -13,7 +13,6 @@ object AnonPDisp {
   @scala.inline
   def apply(URL: js.Any, pDisp: js.Any): AnonPDisp = {
     val __obj = js.Dynamic.literal(URL = URL.asInstanceOf[js.Any], pDisp = pDisp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPDisp]
   }
 }

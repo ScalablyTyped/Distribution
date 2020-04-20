@@ -9,5 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait LengthsParametersConstructor
   extends Instantiable0[LengthsParameters]
-     with Instantiable1[/* properties */ LengthsParametersProperties, LengthsParameters]
+     with Instantiable1[/* properties */ LengthsParametersProperties, LengthsParameters] {
+  def fromJSON(json: js.Any): LengthsParameters = js.native
+}
 

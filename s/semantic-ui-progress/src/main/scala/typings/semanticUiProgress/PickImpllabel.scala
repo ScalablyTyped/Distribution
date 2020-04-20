@@ -15,7 +15,6 @@ object PickImpllabel {
   @scala.inline
   def apply(label: percent | ratio): PickImpllabel = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpllabel]
   }
 }

@@ -13,7 +13,6 @@ object SpaceRequest {
   @scala.inline
   def apply(minHeight: Double, minWidth: Double): SpaceRequest = {
     val __obj = js.Dynamic.literal(minHeight = minHeight.asInstanceOf[js.Any], minWidth = minWidth.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SpaceRequest]
   }
 }

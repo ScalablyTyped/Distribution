@@ -43,22 +43,22 @@ class LabStatus protected () extends ILabStatus {
     * Returns a signal for when application changes its busy status.
     */
   @JSName("busySignal")
-  def busySignal_MLabStatus(): ISignal[JupyterFrontEnd[IShell], Boolean] = js.native
+  def busySignal_MLabStatus: ISignal[JupyterFrontEnd[IShell], Boolean] = js.native
   /**
     * Returns a signal for when application changes its dirty status.
     */
   @JSName("dirtySignal")
-  def dirtySignal_MLabStatus(): ISignal[JupyterFrontEnd[IShell], Boolean] = js.native
+  def dirtySignal_MLabStatus: ISignal[JupyterFrontEnd[IShell], Boolean] = js.native
   /**
     * Whether the application is busy.
     */
   @JSName("isBusy")
-  def isBusy_MLabStatus(): Boolean = js.native
+  def isBusy_MLabStatus: Boolean = js.native
   /**
     * Whether the application is dirty.
     */
   @JSName("isDirty")
-  def isDirty_MLabStatus(): Boolean = js.native
+  def isDirty_MLabStatus: Boolean = js.native
   /**
     * Set the application state to busy.
     *

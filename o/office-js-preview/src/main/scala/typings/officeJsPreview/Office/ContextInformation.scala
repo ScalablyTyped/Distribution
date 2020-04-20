@@ -26,7 +26,6 @@ object ContextInformation {
   @scala.inline
   def apply(host: HostType, platform: PlatformType, version: String): ContextInformation = {
     val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ContextInformation]
   }
 }

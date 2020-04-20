@@ -15,7 +15,6 @@ object BlockMap {
   @scala.inline
   def apply(files: js.Array[BlockMapFile], version: `1` | `2`): BlockMap = {
     val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BlockMap]
   }
 }

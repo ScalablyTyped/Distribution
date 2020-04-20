@@ -12,7 +12,6 @@ object AnonShouldBreak {
   @scala.inline
   def apply(shouldBreak: Boolean): AnonShouldBreak = {
     val __obj = js.Dynamic.literal(shouldBreak = shouldBreak.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonShouldBreak]
   }
 }

@@ -46,7 +46,6 @@ object ConfigsResource {
     submit: AnonBearertoken => Request_[Operation]
   ): ConfigsResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), submit = js.Any.fromFunction1(submit))
-  
     __obj.asInstanceOf[ConfigsResource]
   }
 }

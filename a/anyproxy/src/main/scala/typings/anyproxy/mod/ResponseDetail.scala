@@ -14,7 +14,6 @@ object ResponseDetail {
   @scala.inline
   def apply(_res: ServerResponse, response: Response): ResponseDetail = {
     val __obj = js.Dynamic.literal(_res = _res.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResponseDetail]
   }
 }

@@ -15,7 +15,6 @@ object AnonErrorSchema {
   @scala.inline
   def apply(errorSchema: ErrorSchema, errors: js.Array[AjvError]): AnonErrorSchema = {
     val __obj = js.Dynamic.literal(errorSchema = errorSchema.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonErrorSchema]
   }
 }

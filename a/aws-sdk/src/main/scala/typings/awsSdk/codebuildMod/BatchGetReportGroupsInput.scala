@@ -16,7 +16,6 @@ object BatchGetReportGroupsInput {
   @scala.inline
   def apply(reportGroupArns: ReportGroupArns): BatchGetReportGroupsInput = {
     val __obj = js.Dynamic.literal(reportGroupArns = reportGroupArns.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchGetReportGroupsInput]
   }
 }

@@ -23,7 +23,6 @@ object AnonFootnotes {
     summary: String
   ): AnonFootnotes = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], footnotes = footnotes.asInstanceOf[js.Any], groups = groups.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFootnotes]
   }
 }

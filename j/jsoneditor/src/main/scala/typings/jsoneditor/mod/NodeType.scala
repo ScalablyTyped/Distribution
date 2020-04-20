@@ -14,14 +14,12 @@ trait NodeType extends js.Object
 
 object NodeType {
   @scala.inline
-  def array: typings.jsoneditor.jsoneditorStrings.array = this.cast("array")
+  def array: typings.jsoneditor.jsoneditorStrings.array = "array".asInstanceOf[typings.jsoneditor.jsoneditorStrings.array]
   @scala.inline
-  def auto: typings.jsoneditor.jsoneditorStrings.auto = this.cast("auto")
+  def auto: typings.jsoneditor.jsoneditorStrings.auto = "auto".asInstanceOf[typings.jsoneditor.jsoneditorStrings.auto]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `object`: typings.jsoneditor.jsoneditorStrings.`object` = "object".asInstanceOf[typings.jsoneditor.jsoneditorStrings.`object`]
   @scala.inline
-  def `object`: typings.jsoneditor.jsoneditorStrings.`object` = this.cast("object")
-  @scala.inline
-  def string: typings.jsoneditor.jsoneditorStrings.string = this.cast("string")
+  def string: typings.jsoneditor.jsoneditorStrings.string = "string".asInstanceOf[typings.jsoneditor.jsoneditorStrings.string]
 }
 

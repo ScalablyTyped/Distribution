@@ -18,7 +18,6 @@ object Jsonp {
   @scala.inline
   def apply[TResponse](request: AnonPathString, response: AnonData[TResponse]): Jsonp[TResponse] = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Jsonp[TResponse]]
   }
 }

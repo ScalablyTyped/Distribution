@@ -14,7 +14,6 @@ object AnonHealType {
   @scala.inline
   def apply(amount: Double, healType: EventHealType, targetId: String): AnonHealType = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], healType = healType.asInstanceOf[js.Any], targetId = targetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHealType]
   }
 }

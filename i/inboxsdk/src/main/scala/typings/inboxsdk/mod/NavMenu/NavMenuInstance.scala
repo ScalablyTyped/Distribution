@@ -12,7 +12,6 @@ object NavMenuInstance {
   @scala.inline
   def apply(addNavItem: NavItemDescriptor => NavItemView): NavMenuInstance = {
     val __obj = js.Dynamic.literal(addNavItem = js.Any.fromFunction1(addNavItem))
-  
     __obj.asInstanceOf[NavMenuInstance]
   }
 }

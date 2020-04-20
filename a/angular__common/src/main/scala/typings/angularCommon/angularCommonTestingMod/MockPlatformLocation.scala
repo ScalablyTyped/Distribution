@@ -13,7 +13,7 @@ class MockPlatformLocation () extends PlatformLocation {
   var hashUpdate: js.Any = js.native
   var parseChanges: js.Any = js.native
   var urlChanges: js.Any = js.native
-  def state(): js.Any = js.native
-  def url(): String = js.native
+  def state: js.Any = js.native
+  def url: String = js.native
 }
 

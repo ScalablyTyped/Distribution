@@ -27,7 +27,6 @@ object MessageRemoved {
   @scala.inline
   def apply(id: String, message_id: String, to: String): MessageRemoved = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], message_id = message_id.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MessageRemoved]
   }
 }

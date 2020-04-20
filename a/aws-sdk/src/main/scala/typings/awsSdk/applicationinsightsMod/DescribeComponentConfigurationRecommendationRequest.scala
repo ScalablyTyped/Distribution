@@ -24,7 +24,6 @@ object DescribeComponentConfigurationRecommendationRequest {
   @scala.inline
   def apply(ComponentName: ComponentName, ResourceGroupName: ResourceGroupName, Tier: Tier): DescribeComponentConfigurationRecommendationRequest = {
     val __obj = js.Dynamic.literal(ComponentName = ComponentName.asInstanceOf[js.Any], ResourceGroupName = ResourceGroupName.asInstanceOf[js.Any], Tier = Tier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeComponentConfigurationRecommendationRequest]
   }
 }

@@ -18,7 +18,6 @@ object TimedTextPoint {
   @scala.inline
   def apply(unit: TimedTextUnit, x: Double, y: Double): TimedTextPoint = {
     val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TimedTextPoint]
   }
 }

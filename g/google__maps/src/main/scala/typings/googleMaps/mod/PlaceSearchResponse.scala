@@ -39,7 +39,6 @@ object PlaceSearchResponse {
     status: SearchResponseStatus
   ): PlaceSearchResponse = {
     val __obj = js.Dynamic.literal(error_message = error_message.asInstanceOf[js.Any], html_attributions = html_attributions.asInstanceOf[js.Any], next_page_token = next_page_token.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PlaceSearchResponse]
   }
 }

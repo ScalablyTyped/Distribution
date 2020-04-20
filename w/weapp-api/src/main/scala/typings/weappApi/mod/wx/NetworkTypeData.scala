@@ -17,7 +17,6 @@ object NetworkTypeData {
   @scala.inline
   def apply(networkType: `2g` | `3g` | `4g` | wifi): NetworkTypeData = {
     val __obj = js.Dynamic.literal(networkType = networkType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NetworkTypeData]
   }
 }

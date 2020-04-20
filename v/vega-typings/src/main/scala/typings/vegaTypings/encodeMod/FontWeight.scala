@@ -23,32 +23,30 @@ trait FontWeight extends js.Object
 
 object FontWeight {
   @scala.inline
-  def `100`: typings.vegaTypings.vegaTypingsNumbers.`100` = this.cast(100)
+  def `100`: typings.vegaTypings.vegaTypingsNumbers.`100` = 100.asInstanceOf[typings.vegaTypings.vegaTypingsNumbers.`100`]
   @scala.inline
-  def `200`: typings.vegaTypings.vegaTypingsNumbers.`200` = this.cast(200)
+  def `200`: typings.vegaTypings.vegaTypingsNumbers.`200` = 200.asInstanceOf[typings.vegaTypings.vegaTypingsNumbers.`200`]
   @scala.inline
-  def `300`: typings.vegaTypings.vegaTypingsNumbers.`300` = this.cast(300)
+  def `300`: typings.vegaTypings.vegaTypingsNumbers.`300` = 300.asInstanceOf[typings.vegaTypings.vegaTypingsNumbers.`300`]
   @scala.inline
-  def `400`: typings.vegaTypings.vegaTypingsNumbers.`400` = this.cast(400)
+  def `400`: typings.vegaTypings.vegaTypingsNumbers.`400` = 400.asInstanceOf[typings.vegaTypings.vegaTypingsNumbers.`400`]
   @scala.inline
-  def `500`: typings.vegaTypings.vegaTypingsNumbers.`500` = this.cast(500)
+  def `500`: typings.vegaTypings.vegaTypingsNumbers.`500` = 500.asInstanceOf[typings.vegaTypings.vegaTypingsNumbers.`500`]
   @scala.inline
-  def `600`: typings.vegaTypings.vegaTypingsNumbers.`600` = this.cast(600)
+  def `600`: typings.vegaTypings.vegaTypingsNumbers.`600` = 600.asInstanceOf[typings.vegaTypings.vegaTypingsNumbers.`600`]
   @scala.inline
-  def `700`: typings.vegaTypings.vegaTypingsNumbers.`700` = this.cast(700)
+  def `700`: typings.vegaTypings.vegaTypingsNumbers.`700` = 700.asInstanceOf[typings.vegaTypings.vegaTypingsNumbers.`700`]
   @scala.inline
-  def `800`: typings.vegaTypings.vegaTypingsNumbers.`800` = this.cast(800)
+  def `800`: typings.vegaTypings.vegaTypingsNumbers.`800` = 800.asInstanceOf[typings.vegaTypings.vegaTypingsNumbers.`800`]
   @scala.inline
-  def `900`: typings.vegaTypings.vegaTypingsNumbers.`900` = this.cast(900)
+  def `900`: typings.vegaTypings.vegaTypingsNumbers.`900` = 900.asInstanceOf[typings.vegaTypings.vegaTypingsNumbers.`900`]
   @scala.inline
-  def bold: typings.vegaTypings.vegaTypingsStrings.bold = this.cast("bold")
+  def bold: typings.vegaTypings.vegaTypingsStrings.bold = "bold".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.bold]
   @scala.inline
-  def bolder: typings.vegaTypings.vegaTypingsStrings.bolder = this.cast("bolder")
+  def bolder: typings.vegaTypings.vegaTypingsStrings.bolder = "bolder".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.bolder]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def lighter: typings.vegaTypings.vegaTypingsStrings.lighter = "lighter".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.lighter]
   @scala.inline
-  def lighter: typings.vegaTypings.vegaTypingsStrings.lighter = this.cast("lighter")
-  @scala.inline
-  def normal: typings.vegaTypings.vegaTypingsStrings.normal = this.cast("normal")
+  def normal: typings.vegaTypings.vegaTypingsStrings.normal = "normal".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.normal]
 }
 

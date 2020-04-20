@@ -31,7 +31,6 @@ object PlaylistAuthor {
     userUrl: String
   ): PlaylistAuthor = {
     val __obj = js.Dynamic.literal(channelId = channelId.asInstanceOf[js.Any], channelText = channelText.asInstanceOf[js.Any], channelUrl = channelUrl.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any], userText = userText.asInstanceOf[js.Any], userUrl = userUrl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PlaylistAuthor]
   }
 }

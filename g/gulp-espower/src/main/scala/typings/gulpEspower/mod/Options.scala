@@ -12,7 +12,6 @@ object Options {
   @scala.inline
   def apply(patterns: js.Array[String]): Options = {
     val __obj = js.Dynamic.literal(patterns = patterns.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Options]
   }
 }

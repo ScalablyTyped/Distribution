@@ -1,14 +1,42 @@
 package typings.botvs.mod._Global_.botvs
 
+import typings.botvs.botvsStrings.Buy
+import typings.botvs.botvsStrings.CancelOrder
+import typings.botvs.botvsStrings.GetAccount
+import typings.botvs.botvsStrings.GetBaseCurrency
+import typings.botvs.botvsStrings.GetCurrency
+import typings.botvs.botvsStrings.GetDepth
+import typings.botvs.botvsStrings.GetFee
+import typings.botvs.botvsStrings.GetLabel
+import typings.botvs.botvsStrings.GetMinPrice
+import typings.botvs.botvsStrings.GetMinStock
+import typings.botvs.botvsStrings.GetName
+import typings.botvs.botvsStrings.GetOrder
+import typings.botvs.botvsStrings.GetOrders
+import typings.botvs.botvsStrings.GetPosition
+import typings.botvs.botvsStrings.GetRate
+import typings.botvs.botvsStrings.GetRawJSON
+import typings.botvs.botvsStrings.GetRecords
+import typings.botvs.botvsStrings.GetTicker
+import typings.botvs.botvsStrings.GetTrades
+import typings.botvs.botvsStrings.GetUSDCNY
+import typings.botvs.botvsStrings.IO
+import typings.botvs.botvsStrings.Log
+import typings.botvs.botvsStrings.Sell
+import typings.botvs.botvsStrings.SetContractType
+import typings.botvs.botvsStrings.SetDirection
+import typings.botvs.botvsStrings.SetMarginLevel
+import typings.botvs.botvsStrings.SetPrecision
+import typings.botvs.botvsStrings.SetRate
 import typings.botvs.botvsStrings.api
-import typings.botvs.botvsStrings.buy
+import typings.botvs.botvsStrings.buy_
 import typings.botvs.botvsStrings.closebuy
 import typings.botvs.botvsStrings.closebuy_today
 import typings.botvs.botvsStrings.closesell
 import typings.botvs.botvsStrings.closesell_today
 import typings.botvs.botvsStrings.cny
 import typings.botvs.botvsStrings.currency
-import typings.botvs.botvsStrings.sell
+import typings.botvs.botvsStrings.sell_
 import typings.botvs.botvsStrings.usd
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -192,7 +220,10 @@ trait Exchange extends js.Object {
     * @param Args
     * @return {botvs.AsyncJob<T>}
     */
-  def Go[T](Method: String, Args: js.Any*): AsyncJob[T] = js.native
+  def Go[T](
+    Method: GetName | GetLabel | GetUSDCNY | GetRate | SetRate | SetPrecision | GetCurrency | GetBaseCurrency | GetTicker | GetDepth | GetTrades | GetRecords | GetAccount | Buy | Sell | GetOrders | GetOrder | CancelOrder | Log | GetMinStock | GetMinPrice | GetFee | GetRawJSON | typings.botvs.botvsStrings.Go | IO | GetPosition | SetMarginLevel | SetDirection | SetContractType,
+    Args: js.Any*
+  ): AsyncJob[T] = js.native
   def IO[T](Api: String): T = js.native
   def IO[T](Api: String, ApiName: String): T = js.native
   def IO[T](Api: String, ApiName: String, Args: String): T = js.native
@@ -344,7 +375,7 @@ trait Exchange extends js.Object {
     * @constructor
     */
   @JSName("SetDirection")
-  def SetDirection_buy(Direction: buy): Unit = js.native
+  def SetDirection_buy(Direction: buy_): Unit = js.native
   @JSName("SetDirection")
   def SetDirection_closebuy(Direction: closebuy): Unit = js.native
   @JSName("SetDirection")
@@ -354,7 +385,7 @@ trait Exchange extends js.Object {
   @JSName("SetDirection")
   def SetDirection_closeselltoday(Direction: closesell_today): Unit = js.native
   @JSName("SetDirection")
-  def SetDirection_sell(Direction: sell): Unit = js.native
+  def SetDirection_sell(Direction: sell_): Unit = js.native
   /**
     * 设置杆杠大小
     *

@@ -2,6 +2,7 @@ package typings.samlp.mod
 
 import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +18,7 @@ trait IdPOptions extends js.Object {
   var encryptionAlgorithm: js.UndefOr[String] = js.undefined
   var encryptionCert: js.UndefOr[String | Buffer] = js.undefined
   var encryptionPublicKey: js.UndefOr[String | Buffer] = js.undefined
-  var getUserFromRequest: js.UndefOr[js.Function1[/* req */ Request_[ParamsDictionary], _]] = js.undefined
+  var getUserFromRequest: js.UndefOr[js.Function1[/* req */ Request_[ParamsDictionary, _, _, Query], _]] = js.undefined
   var inResponseTo: js.UndefOr[String] = js.undefined
   var issuer: String
   var key: String | Buffer
@@ -30,7 +31,7 @@ trait IdPOptions extends js.Object {
   def getPostURL(
     audience: String,
     authnRequestDom: js.Any,
-    req: Request_[ParamsDictionary],
+    req: Request_[ParamsDictionary, _, _, Query],
     callback: js.Function2[/* err */ js.Any, /* url */ String, Unit]
   ): Unit
 }
@@ -39,7 +40,7 @@ object IdPOptions {
   @scala.inline
   def apply(
     cert: String | Buffer,
-    getPostURL: (String, js.Any, Request_[ParamsDictionary], js.Function2[/* err */ js.Any, /* url */ String, Unit]) => Unit,
+    getPostURL: (String, js.Any, Request_[ParamsDictionary, _, _, Query], js.Function2[/* err */ js.Any, /* url */ String, Unit]) => Unit,
     issuer: String,
     key: String | Buffer,
     RelayState: String = null,
@@ -50,7 +51,7 @@ object IdPOptions {
     encryptionAlgorithm: String = null,
     encryptionCert: String | Buffer = null,
     encryptionPublicKey: String | Buffer = null,
-    getUserFromRequest: /* req */ Request_[ParamsDictionary] => _ = null,
+    getUserFromRequest: /* req */ Request_[ParamsDictionary, _, _, Query] => _ = null,
     inResponseTo: String = null,
     keyEncryptionAlgorighm: String = null,
     lifetimeInSeconds: Int | Double = null,

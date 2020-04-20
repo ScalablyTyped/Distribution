@@ -17,7 +17,6 @@ object Anon37 {
   @scala.inline
   def apply(dialCode: Plussign86, id: CN, label: `China Leftparenthesis中国Rightparenthesis`): Anon37 = {
     val __obj = js.Dynamic.literal(dialCode = dialCode.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Anon37]
   }
 }

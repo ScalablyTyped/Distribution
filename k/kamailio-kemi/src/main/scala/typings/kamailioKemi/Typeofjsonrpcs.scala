@@ -12,7 +12,6 @@ object Typeofjsonrpcs {
   @scala.inline
   def apply(exec: String => Double): Typeofjsonrpcs = {
     val __obj = js.Dynamic.literal(exec = js.Any.fromFunction1(exec))
-  
     __obj.asInstanceOf[Typeofjsonrpcs]
   }
 }

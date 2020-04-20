@@ -12,10 +12,8 @@ trait Alignment extends js.Object
 
 object Alignment {
   @scala.inline
-  def `0`: typings.sharepoint.sharepointNumbers.`0` = this.cast(0)
+  def `0`: typings.sharepoint.sharepointNumbers.`0` = 0.asInstanceOf[typings.sharepoint.sharepointNumbers.`0`]
   @scala.inline
-  def `2`: typings.sharepoint.sharepointNumbers.`2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `2`: typings.sharepoint.sharepointNumbers.`2` = 2.asInstanceOf[typings.sharepoint.sharepointNumbers.`2`]
 }
 

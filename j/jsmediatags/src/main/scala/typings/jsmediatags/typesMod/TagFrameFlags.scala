@@ -15,7 +15,6 @@ object TagFrameFlags {
   @scala.inline
   def apply(format: AnonCompression, message: AnonFilealterpreservation): TagFrameFlags = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TagFrameFlags]
   }
 }

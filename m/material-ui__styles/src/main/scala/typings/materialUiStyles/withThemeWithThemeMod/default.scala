@@ -1,5 +1,7 @@
 package typings.materialUiStyles.withThemeWithThemeMod
 
+import typings.materialUiStyles.materialUiStylesStrings.innerRef
+import typings.materialUiStyles.materialUiStylesStrings.theme
 import typings.materialUiTypes.mod.ConsistentWith
 import typings.materialUiTypes.mod.Omit
 import typings.react.mod.ComponentClass
@@ -24,7 +26,7 @@ object default extends js.Object {
           ComponentClass[ConsistentWith[ComponentProps[_], WithTheme[Theme]], ComponentState]
         ]
       ], 
-      String
+      theme | innerRef
     ]) with Partial[WithTheme[Theme]] with ThemedComponentProps
   ] = js.native
   def apply[Theme](component: FunctionComponent[ConsistentWith[ComponentProps[_], WithTheme[Theme]]]): ComponentType[
@@ -33,7 +35,7 @@ object default extends js.Object {
         FunctionComponent[ConsistentWith[ComponentProps[_], WithTheme[Theme]]], 
         ComponentProps[FunctionComponent[ConsistentWith[ComponentProps[_], WithTheme[Theme]]]]
       ], 
-      String
+      theme | innerRef
     ]) with Partial[WithTheme[Theme]] with ThemedComponentProps
   ] = js.native
 }

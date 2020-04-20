@@ -12,7 +12,6 @@ object AnonEnumValuesAnonSuspendUnprocessed {
   @scala.inline
   def apply(enumValues: AnonSuspendUnprocessed): AnonEnumValuesAnonSuspendUnprocessed = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumValuesAnonSuspendUnprocessed]
   }
 }

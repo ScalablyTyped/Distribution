@@ -14,7 +14,6 @@ object AnonAvoidHeadRequests {
   @scala.inline
   def apply(avoidHeadRequests: Boolean, disallowedXhrHeaders: js.Array[String], timeoutInSec: Double): AnonAvoidHeadRequests = {
     val __obj = js.Dynamic.literal(avoidHeadRequests = avoidHeadRequests.asInstanceOf[js.Any], disallowedXhrHeaders = disallowedXhrHeaders.asInstanceOf[js.Any], timeoutInSec = timeoutInSec.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAvoidHeadRequests]
   }
 }

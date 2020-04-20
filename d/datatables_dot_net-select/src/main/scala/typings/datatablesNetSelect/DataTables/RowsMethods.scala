@@ -19,7 +19,6 @@ object RowsMethods {
   @scala.inline
   def apply(deselect: () => Api, select: () => Api): RowsMethods = {
     val __obj = js.Dynamic.literal(deselect = js.Any.fromFunction0(deselect), select = js.Any.fromFunction0(select))
-  
     __obj.asInstanceOf[RowsMethods]
   }
 }

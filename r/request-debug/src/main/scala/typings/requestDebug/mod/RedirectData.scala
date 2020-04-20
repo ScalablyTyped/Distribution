@@ -16,7 +16,6 @@ object RedirectData {
   @scala.inline
   def apply(debugId: Double, headers: Headers, statusCode: Double, uri: String): RedirectData = {
     val __obj = js.Dynamic.literal(debugId = debugId.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RedirectData]
   }
 }

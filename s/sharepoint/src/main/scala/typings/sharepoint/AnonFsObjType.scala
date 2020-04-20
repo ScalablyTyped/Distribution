@@ -14,7 +14,6 @@ object AnonFsObjType {
   @scala.inline
   def apply(fsObjType: FileSystemObjectType, id: Double): AnonFsObjType = {
     val __obj = js.Dynamic.literal(fsObjType = fsObjType.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFsObjType]
   }
 }

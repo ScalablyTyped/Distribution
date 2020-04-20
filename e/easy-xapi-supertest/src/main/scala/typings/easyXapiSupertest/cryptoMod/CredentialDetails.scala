@@ -28,7 +28,6 @@ object CredentialDetails {
     pfx: String
   ): CredentialDetails = {
     val __obj = js.Dynamic.literal(ca = ca.asInstanceOf[js.Any], cert = cert.asInstanceOf[js.Any], ciphers = ciphers.asInstanceOf[js.Any], crl = crl.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], passphrase = passphrase.asInstanceOf[js.Any], pfx = pfx.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CredentialDetails]
   }
 }

@@ -23,7 +23,6 @@ object Breakpoints {
     xsmall: AnonColumns
   ): Breakpoints = {
     val __obj = js.Dynamic.literal(large = large.asInstanceOf[js.Any], medium = medium.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any], xlarge = xlarge.asInstanceOf[js.Any], xsmall = xsmall.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Breakpoints]
   }
 }

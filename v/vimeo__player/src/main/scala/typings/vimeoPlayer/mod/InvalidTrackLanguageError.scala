@@ -17,7 +17,6 @@ object InvalidTrackLanguageError {
     name: typings.vimeoPlayer.vimeoPlayerStrings.InvalidTrackLanguageError
   ): InvalidTrackLanguageError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InvalidTrackLanguageError]
   }
 }

@@ -12,7 +12,6 @@ object SketchMSUserDocument {
   @scala.inline
   def apply(document: AnonPageListCollapsed): SketchMSUserDocument = {
     val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SketchMSUserDocument]
   }
 }

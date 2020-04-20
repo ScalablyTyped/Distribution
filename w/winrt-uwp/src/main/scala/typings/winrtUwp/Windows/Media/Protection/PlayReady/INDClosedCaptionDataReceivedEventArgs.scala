@@ -22,7 +22,6 @@ object INDClosedCaptionDataReceivedEventArgs {
     presentationTimestamp: Double
   ): INDClosedCaptionDataReceivedEventArgs = {
     val __obj = js.Dynamic.literal(closedCaptionData = closedCaptionData.asInstanceOf[js.Any], closedCaptionDataFormat = closedCaptionDataFormat.asInstanceOf[js.Any], presentationTimestamp = presentationTimestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INDClosedCaptionDataReceivedEventArgs]
   }
 }

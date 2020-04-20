@@ -43,7 +43,6 @@ object FoldersResource {
     update: AnonFingerprint => Request_[Folder]
   ): FoldersResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), entities = js.Any.fromFunction1(entities), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), move_entities_to_folder = js.Any.fromFunction1(move_entities_to_folder), revert = js.Any.fromFunction1(revert), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[FoldersResource]
   }
 }

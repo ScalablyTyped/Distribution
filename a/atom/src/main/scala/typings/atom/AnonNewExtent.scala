@@ -20,7 +20,6 @@ object AnonNewExtent {
   @scala.inline
   def apply(newExtent: Point, newText: String, oldExtent: Point, start: Point): AnonNewExtent = {
     val __obj = js.Dynamic.literal(newExtent = newExtent.asInstanceOf[js.Any], newText = newText.asInstanceOf[js.Any], oldExtent = oldExtent.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNewExtent]
   }
 }

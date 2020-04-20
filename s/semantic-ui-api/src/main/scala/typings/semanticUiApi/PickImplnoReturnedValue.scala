@@ -13,7 +13,6 @@ object PickImplnoReturnedValue {
   @scala.inline
   def apply(noReturnedValue: String): PickImplnoReturnedValue = {
     val __obj = js.Dynamic.literal(noReturnedValue = noReturnedValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplnoReturnedValue]
   }
 }

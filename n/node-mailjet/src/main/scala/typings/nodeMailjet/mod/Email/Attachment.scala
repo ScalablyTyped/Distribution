@@ -14,7 +14,6 @@ object Attachment {
   @scala.inline
   def apply(Base64Content: String, ContentType: String, Filename: String): Attachment = {
     val __obj = js.Dynamic.literal(Base64Content = Base64Content.asInstanceOf[js.Any], ContentType = ContentType.asInstanceOf[js.Any], Filename = Filename.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Attachment]
   }
 }

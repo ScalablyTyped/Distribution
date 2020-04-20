@@ -14,7 +14,6 @@ object Request {
   @scala.inline
   def apply(locale: String, rawLocale: Locale): Request = {
     val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], rawLocale = rawLocale.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Request]
   }
 }

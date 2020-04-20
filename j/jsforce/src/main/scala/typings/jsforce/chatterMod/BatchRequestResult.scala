@@ -13,7 +13,6 @@ object BatchRequestResult {
   @scala.inline
   def apply(result: RequestResult, statusCode: String): BatchRequestResult = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchRequestResult]
   }
 }

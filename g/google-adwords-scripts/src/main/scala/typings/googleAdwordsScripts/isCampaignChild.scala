@@ -12,7 +12,6 @@ object isCampaignChild {
   @scala.inline
   def apply(getCampaign: () => Campaign): isCampaignChild = {
     val __obj = js.Dynamic.literal(getCampaign = js.Any.fromFunction0(getCampaign))
-  
     __obj.asInstanceOf[isCampaignChild]
   }
 }

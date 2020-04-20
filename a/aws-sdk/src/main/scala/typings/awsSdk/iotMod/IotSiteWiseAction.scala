@@ -20,7 +20,6 @@ object IotSiteWiseAction {
   @scala.inline
   def apply(putAssetPropertyValueEntries: PutAssetPropertyValueEntryList, roleArn: AwsArn): IotSiteWiseAction = {
     val __obj = js.Dynamic.literal(putAssetPropertyValueEntries = putAssetPropertyValueEntries.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IotSiteWiseAction]
   }
 }

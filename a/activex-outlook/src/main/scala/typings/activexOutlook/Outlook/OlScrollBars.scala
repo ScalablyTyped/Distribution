@@ -18,14 +18,12 @@ trait OlScrollBars extends js.Object
 
 object OlScrollBars {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olScrollBarsBoth: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def olScrollBarsBoth: `3` = this.cast(3)
+  def olScrollBarsHorizontal: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olScrollBarsHorizontal: `1` = this.cast(1)
+  def olScrollBarsNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def olScrollBarsNone: `0` = this.cast(0)
-  @scala.inline
-  def olScrollBarsVertical: `2` = this.cast(2)
+  def olScrollBarsVertical: `2` = 2.asInstanceOf[`2`]
 }
 

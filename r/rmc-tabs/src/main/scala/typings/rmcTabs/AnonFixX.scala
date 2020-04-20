@@ -13,7 +13,6 @@ object AnonFixX {
   @scala.inline
   def apply(fixX: Boolean, fixY: Boolean): AnonFixX = {
     val __obj = js.Dynamic.literal(fixX = fixX.asInstanceOf[js.Any], fixY = fixY.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFixX]
   }
 }

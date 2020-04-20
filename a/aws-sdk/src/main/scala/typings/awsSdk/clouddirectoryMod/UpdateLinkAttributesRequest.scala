@@ -28,7 +28,6 @@ object UpdateLinkAttributesRequest {
     TypedLinkSpecifier: TypedLinkSpecifier
   ): UpdateLinkAttributesRequest = {
     val __obj = js.Dynamic.literal(AttributeUpdates = AttributeUpdates.asInstanceOf[js.Any], DirectoryArn = DirectoryArn.asInstanceOf[js.Any], TypedLinkSpecifier = TypedLinkSpecifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateLinkAttributesRequest]
   }
 }

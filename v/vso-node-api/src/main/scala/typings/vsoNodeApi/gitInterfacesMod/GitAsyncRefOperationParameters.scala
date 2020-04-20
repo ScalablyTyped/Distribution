@@ -32,7 +32,6 @@ object GitAsyncRefOperationParameters {
     source: GitAsyncRefOperationSource
   ): GitAsyncRefOperationParameters = {
     val __obj = js.Dynamic.literal(generatedRefName = generatedRefName.asInstanceOf[js.Any], ontoRefName = ontoRefName.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GitAsyncRefOperationParameters]
   }
 }

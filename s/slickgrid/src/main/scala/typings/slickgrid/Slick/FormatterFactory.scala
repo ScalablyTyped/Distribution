@@ -12,7 +12,6 @@ object FormatterFactory {
   @scala.inline
   def apply[T /* <: SlickData */](getFormatter: Column[T] => Formatter[_]): FormatterFactory[T] = {
     val __obj = js.Dynamic.literal(getFormatter = js.Any.fromFunction1(getFormatter))
-  
     __obj.asInstanceOf[FormatterFactory[T]]
   }
 }

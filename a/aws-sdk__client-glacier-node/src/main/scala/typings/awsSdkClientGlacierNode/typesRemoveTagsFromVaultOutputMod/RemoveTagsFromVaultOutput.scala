@@ -18,7 +18,6 @@ object RemoveTagsFromVaultOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): RemoveTagsFromVaultOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RemoveTagsFromVaultOutput]
   }
 }

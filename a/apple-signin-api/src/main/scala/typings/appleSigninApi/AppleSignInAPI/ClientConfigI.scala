@@ -17,7 +17,6 @@ object ClientConfigI {
   @scala.inline
   def apply(clientId: String, redirectURI: String, scope: String, state: String, usePopup: Boolean): ClientConfigI = {
     val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], redirectURI = redirectURI.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], usePopup = usePopup.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClientConfigI]
   }
 }

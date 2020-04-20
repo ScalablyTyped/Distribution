@@ -17,7 +17,6 @@ object SankeyLinkProps {
   @scala.inline
   def apply(color: String, source: AnonId, target: AnonId, thickness: Double, value: Double): SankeyLinkProps = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], thickness = thickness.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SankeyLinkProps]
   }
 }

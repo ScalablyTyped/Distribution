@@ -14,10 +14,8 @@ trait WdIndexType extends js.Object
 
 object WdIndexType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdIndexIndent: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdIndexIndent: `0` = this.cast(0)
-  @scala.inline
-  def wdIndexRunin: `1` = this.cast(1)
+  def wdIndexRunin: `1` = 1.asInstanceOf[`1`]
 }
 

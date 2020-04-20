@@ -13,7 +13,6 @@ object AnonAntLocale {
   @scala.inline
   def apply(antLocale: Requireable[js.Object]): AnonAntLocale = {
     val __obj = js.Dynamic.literal(antLocale = antLocale.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAntLocale]
   }
 }

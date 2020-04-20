@@ -21,7 +21,6 @@ object ClusterIconInfo {
   @scala.inline
   def apply(index: Double, text: java.lang.String, title: java.lang.String): ClusterIconInfo = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClusterIconInfo]
   }
 }

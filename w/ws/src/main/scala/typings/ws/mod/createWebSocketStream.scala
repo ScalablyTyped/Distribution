@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object createWebSocketStream extends js.Object {
   // WebSocket stream
+  def apply(websocket: WebSocket): Duplex = js.native
   def apply(websocket: WebSocket, options: DuplexOptions): Duplex = js.native
 }
 

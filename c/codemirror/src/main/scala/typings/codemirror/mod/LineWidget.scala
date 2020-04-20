@@ -16,7 +16,6 @@ object LineWidget {
   @scala.inline
   def apply(changed: () => Unit, clear: () => Unit): LineWidget = {
     val __obj = js.Dynamic.literal(changed = js.Any.fromFunction0(changed), clear = js.Any.fromFunction0(clear))
-  
     __obj.asInstanceOf[LineWidget]
   }
 }

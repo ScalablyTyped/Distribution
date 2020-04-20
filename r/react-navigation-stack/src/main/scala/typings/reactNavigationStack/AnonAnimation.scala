@@ -15,7 +15,6 @@ object AnonAnimation {
   @scala.inline
   def apply(animation: spring, config: OmitSpringAnimationConfig): AnonAnimation = {
     val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAnimation]
   }
 }

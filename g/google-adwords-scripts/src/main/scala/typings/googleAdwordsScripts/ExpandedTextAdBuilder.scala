@@ -30,7 +30,6 @@ object ExpandedTextAdBuilder {
     withTrackingTemplate: String => ExpandedTextAdBuilder[ExpandedTextAd]
   ): ExpandedTextAdBuilder[ExpandedTextAd] = {
     val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), withCustomParameters = js.Any.fromFunction1(withCustomParameters), withDescription = js.Any.fromFunction1(withDescription), withFinalUrl = js.Any.fromFunction1(withFinalUrl), withHeadlinePart1 = js.Any.fromFunction1(withHeadlinePart1), withHeadlinePart2 = js.Any.fromFunction1(withHeadlinePart2), withMobileFinalUrl = js.Any.fromFunction1(withMobileFinalUrl), withPath1 = js.Any.fromFunction1(withPath1), withPath2 = js.Any.fromFunction1(withPath2), withTrackingTemplate = js.Any.fromFunction1(withTrackingTemplate))
-  
     __obj.asInstanceOf[ExpandedTextAdBuilder[ExpandedTextAd]]
   }
 }

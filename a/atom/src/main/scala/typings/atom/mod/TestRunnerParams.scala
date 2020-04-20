@@ -37,7 +37,6 @@ object TestRunnerParams {
     testPaths: js.Array[String]
   ): TestRunnerParams = {
     val __obj = js.Dynamic.literal(buildAtomEnvironment = js.Any.fromFunction1(buildAtomEnvironment), buildDefaultApplicationDelegate = js.Any.fromFunction0(buildDefaultApplicationDelegate), headless = headless.asInstanceOf[js.Any], logFile = logFile.asInstanceOf[js.Any], testPaths = testPaths.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TestRunnerParams]
   }
 }

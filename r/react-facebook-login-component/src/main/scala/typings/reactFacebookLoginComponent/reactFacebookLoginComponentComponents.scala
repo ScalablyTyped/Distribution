@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactFacebookLoginComponentComponents extends reactFacebookLoginComponentProps {
   @scala.inline
-  def FacebookLogin: ComponentType[FacebookLoginProps] = js.constructorOf[typings.reactFacebookLoginComponent.mod.FacebookLogin].asInstanceOf[typings.react.mod.ComponentType[FacebookLoginProps]]
+  def FacebookLogin: ComponentType[FacebookLoginProps] = js.constructorOf[typings.reactFacebookLoginComponent.mod.FacebookLogin].asInstanceOf[ComponentType[FacebookLoginProps]]
 }
 

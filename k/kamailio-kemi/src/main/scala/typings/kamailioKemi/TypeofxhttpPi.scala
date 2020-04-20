@@ -12,7 +12,6 @@ object TypeofxhttpPi {
   @scala.inline
   def apply(dispatch: () => Double): TypeofxhttpPi = {
     val __obj = js.Dynamic.literal(dispatch = js.Any.fromFunction0(dispatch))
-  
     __obj.asInstanceOf[TypeofxhttpPi]
   }
 }

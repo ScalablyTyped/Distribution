@@ -29,7 +29,6 @@ object gradutils {
   @scala.inline
   def apply(getColor: (js.Object, js.Object) => Unit, reverse: js.Object => Unit): gradutils = {
     val __obj = js.Dynamic.literal(getColor = js.Any.fromFunction2(getColor), reverse = js.Any.fromFunction1(reverse))
-  
     __obj.asInstanceOf[gradutils]
   }
 }

@@ -23,7 +23,6 @@ object GetCampaignOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, CampaignResponse: UnmarshalledCampaignResponse): GetCampaignOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], CampaignResponse = CampaignResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetCampaignOutput]
   }
 }

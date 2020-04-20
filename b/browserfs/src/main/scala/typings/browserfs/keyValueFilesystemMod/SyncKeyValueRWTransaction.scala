@@ -40,7 +40,6 @@ object SyncKeyValueRWTransaction {
     put: (String, Buffer, Boolean) => Boolean
   ): SyncKeyValueRWTransaction = {
     val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), commit = js.Any.fromFunction0(commit), del = js.Any.fromFunction1(del), get = js.Any.fromFunction1(get), put = js.Any.fromFunction3(put))
-  
     __obj.asInstanceOf[SyncKeyValueRWTransaction]
   }
 }

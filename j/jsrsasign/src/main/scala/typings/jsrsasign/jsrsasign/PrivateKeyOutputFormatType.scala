@@ -13,12 +13,10 @@ trait PrivateKeyOutputFormatType extends js.Object
 
 object PrivateKeyOutputFormatType {
   @scala.inline
-  def PKCS1PRV: typings.jsrsasign.jsrsasignStrings.PKCS1PRV = this.cast("PKCS1PRV")
+  def PKCS1PRV: typings.jsrsasign.jsrsasignStrings.PKCS1PRV = "PKCS1PRV".asInstanceOf[typings.jsrsasign.jsrsasignStrings.PKCS1PRV]
   @scala.inline
-  def PKCS5PRV: typings.jsrsasign.jsrsasignStrings.PKCS5PRV = this.cast("PKCS5PRV")
+  def PKCS5PRV: typings.jsrsasign.jsrsasignStrings.PKCS5PRV = "PKCS5PRV".asInstanceOf[typings.jsrsasign.jsrsasignStrings.PKCS5PRV]
   @scala.inline
-  def PKCS8PRV: typings.jsrsasign.jsrsasignStrings.PKCS8PRV = this.cast("PKCS8PRV")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def PKCS8PRV: typings.jsrsasign.jsrsasignStrings.PKCS8PRV = "PKCS8PRV".asInstanceOf[typings.jsrsasign.jsrsasignStrings.PKCS8PRV]
 }
 

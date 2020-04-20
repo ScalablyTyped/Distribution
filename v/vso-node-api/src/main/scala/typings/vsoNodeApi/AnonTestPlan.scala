@@ -13,7 +13,6 @@ object AnonTestPlan {
   @scala.inline
   def apply(testPlan: Double, testSuite: Double): AnonTestPlan = {
     val __obj = js.Dynamic.literal(testPlan = testPlan.asInstanceOf[js.Any], testSuite = testSuite.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTestPlan]
   }
 }

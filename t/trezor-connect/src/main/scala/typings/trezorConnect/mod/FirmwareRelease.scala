@@ -32,7 +32,6 @@ object FirmwareRelease {
     version: js.Array[Double]
   ): FirmwareRelease = {
     val __obj = js.Dynamic.literal(bootloader_version = bootloader_version.asInstanceOf[js.Any], changelog = changelog.asInstanceOf[js.Any], channel = channel.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], min_bootloader_version = min_bootloader_version.asInstanceOf[js.Any], min_bridge_version = min_bridge_version.asInstanceOf[js.Any], min_firmware_version = min_firmware_version.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FirmwareRelease]
   }
 }

@@ -13,7 +13,6 @@ object TypeofEventListeners {
   @scala.inline
   def apply(Core: TypeofCore): TypeofEventListeners = {
     val __obj = js.Dynamic.literal(Core = Core.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofEventListeners]
   }
 }

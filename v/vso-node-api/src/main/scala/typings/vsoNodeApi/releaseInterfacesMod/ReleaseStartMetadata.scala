@@ -44,7 +44,6 @@ object ReleaseStartMetadata {
     reason: ReleaseReason
   ): ReleaseStartMetadata = {
     val __obj = js.Dynamic.literal(artifacts = artifacts.asInstanceOf[js.Any], definitionId = definitionId.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], isDraft = isDraft.asInstanceOf[js.Any], manualEnvironments = manualEnvironments.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReleaseStartMetadata]
   }
 }

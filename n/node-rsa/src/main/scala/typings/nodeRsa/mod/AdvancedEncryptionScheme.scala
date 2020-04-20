@@ -17,7 +17,6 @@ object AdvancedEncryptionScheme {
   @scala.inline
   def AdvancedEncryptionSchemePKCS1(padding: Double, scheme: pkcs1): AdvancedEncryptionScheme = {
     val __obj = js.Dynamic.literal(padding = padding.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AdvancedEncryptionScheme]
   }
   @scala.inline

@@ -20,7 +20,6 @@ object CancelPipelineReprocessingRequest {
   @scala.inline
   def apply(pipelineName: PipelineName, reprocessingId: ReprocessingId): CancelPipelineReprocessingRequest = {
     val __obj = js.Dynamic.literal(pipelineName = pipelineName.asInstanceOf[js.Any], reprocessingId = reprocessingId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CancelPipelineReprocessingRequest]
   }
 }

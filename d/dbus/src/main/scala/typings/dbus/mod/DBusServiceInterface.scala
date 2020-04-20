@@ -39,7 +39,6 @@ object DBusServiceInterface {
     update: () => Unit
   ): DBusServiceInterface = {
     val __obj = js.Dynamic.literal(addMethod = js.Any.fromFunction3(addMethod), addProperty = js.Any.fromFunction2(addProperty), addSignal = js.Any.fromFunction2(addSignal), emitSignal = js.Any.fromFunction2(emitSignal), update = js.Any.fromFunction0(update))
-  
     __obj.asInstanceOf[DBusServiceInterface]
   }
 }

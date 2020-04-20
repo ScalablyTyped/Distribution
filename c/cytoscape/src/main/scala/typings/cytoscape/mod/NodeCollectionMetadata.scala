@@ -57,7 +57,6 @@ object NodeCollectionMetadata {
     totalDegree: Boolean => Double
   ): NodeCollectionMetadata = {
     val __obj = js.Dynamic.literal(maxDegree = js.Any.fromFunction1(maxDegree), maxIndegree = js.Any.fromFunction1(maxIndegree), maxOutdegree = js.Any.fromFunction1(maxOutdegree), minDegree = js.Any.fromFunction1(minDegree), minIndegree = js.Any.fromFunction1(minIndegree), minOutdegree = js.Any.fromFunction1(minOutdegree), totalDegree = js.Any.fromFunction1(totalDegree))
-  
     __obj.asInstanceOf[NodeCollectionMetadata]
   }
 }

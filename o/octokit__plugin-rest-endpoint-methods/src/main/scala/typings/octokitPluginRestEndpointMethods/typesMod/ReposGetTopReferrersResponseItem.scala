@@ -14,7 +14,6 @@ object ReposGetTopReferrersResponseItem {
   @scala.inline
   def apply(count: Double, referrer: String, uniques: Double): ReposGetTopReferrersResponseItem = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], referrer = referrer.asInstanceOf[js.Any], uniques = uniques.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReposGetTopReferrersResponseItem]
   }
 }

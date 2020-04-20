@@ -17,20 +17,18 @@ trait RatingAustraliaMoviesType extends js.Object
 
 object RatingAustraliaMoviesType {
   @scala.inline
-  def agesAbove15: typings.microsoftGraph.microsoftGraphStrings.agesAbove15 = this.cast("agesAbove15")
+  def agesAbove15: typings.microsoftGraph.microsoftGraphStrings.agesAbove15 = "agesAbove15".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.agesAbove15]
   @scala.inline
-  def agesAbove18: typings.microsoftGraph.microsoftGraphStrings.agesAbove18 = this.cast("agesAbove18")
+  def agesAbove18: typings.microsoftGraph.microsoftGraphStrings.agesAbove18 = "agesAbove18".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.agesAbove18]
   @scala.inline
-  def allAllowed: typings.microsoftGraph.microsoftGraphStrings.allAllowed = this.cast("allAllowed")
+  def allAllowed: typings.microsoftGraph.microsoftGraphStrings.allAllowed = "allAllowed".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allAllowed]
   @scala.inline
-  def allBlocked: typings.microsoftGraph.microsoftGraphStrings.allBlocked = this.cast("allBlocked")
+  def allBlocked: typings.microsoftGraph.microsoftGraphStrings.allBlocked = "allBlocked".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allBlocked]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def general: typings.microsoftGraph.microsoftGraphStrings.general = "general".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.general]
   @scala.inline
-  def general: typings.microsoftGraph.microsoftGraphStrings.general = this.cast("general")
+  def mature: typings.microsoftGraph.microsoftGraphStrings.mature = "mature".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.mature]
   @scala.inline
-  def mature: typings.microsoftGraph.microsoftGraphStrings.mature = this.cast("mature")
-  @scala.inline
-  def parentalGuidance: typings.microsoftGraph.microsoftGraphStrings.parentalGuidance = this.cast("parentalGuidance")
+  def parentalGuidance: typings.microsoftGraph.microsoftGraphStrings.parentalGuidance = "parentalGuidance".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.parentalGuidance]
 }
 

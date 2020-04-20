@@ -17,7 +17,6 @@ object Static {
   @scala.inline
   def apply(loadTimeZone: js.Object => Unit): Static = {
     val __obj = js.Dynamic.literal(loadTimeZone = js.Any.fromFunction1(loadTimeZone))
-  
     __obj.asInstanceOf[Static]
   }
 }

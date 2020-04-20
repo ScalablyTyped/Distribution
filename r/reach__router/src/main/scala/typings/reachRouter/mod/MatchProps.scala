@@ -14,7 +14,6 @@ object MatchProps {
   @scala.inline
   def apply[TParams](children: /* props */ MatchRenderProps[TParams] => ReactNode, path: String): MatchProps[TParams] = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), path = path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MatchProps[TParams]]
   }
 }

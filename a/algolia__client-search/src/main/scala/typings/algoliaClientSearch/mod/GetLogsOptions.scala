@@ -19,7 +19,6 @@ object GetLogsOptions {
   @scala.inline
   def apply(length: Double, offset: Double): GetLogsOptions = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetLogsOptions]
   }
 }

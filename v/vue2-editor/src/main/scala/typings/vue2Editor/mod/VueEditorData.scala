@@ -12,7 +12,6 @@ object VueEditorData {
   @scala.inline
   def apply(quill: js.Any): VueEditorData = {
     val __obj = js.Dynamic.literal(quill = quill.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VueEditorData]
   }
 }

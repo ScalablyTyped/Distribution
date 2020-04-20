@@ -12,7 +12,6 @@ object GeoRegion {
   @scala.inline
   def apply(regionCode: String): GeoRegion = {
     val __obj = js.Dynamic.literal(regionCode = regionCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GeoRegion]
   }
 }

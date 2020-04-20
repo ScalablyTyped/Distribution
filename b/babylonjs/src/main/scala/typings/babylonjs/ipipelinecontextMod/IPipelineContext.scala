@@ -25,7 +25,6 @@ object IPipelineContext {
     isReady: Boolean
   ): IPipelineContext = {
     val __obj = js.Dynamic.literal(_handlesSpectorRebuildCallback = js.Any.fromFunction1(_handlesSpectorRebuildCallback), isAsync = isAsync.asInstanceOf[js.Any], isReady = isReady.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPipelineContext]
   }
 }

@@ -14,7 +14,6 @@ object IStrategyOption {
   @scala.inline
   def apply(callbackURL: String, clientID: String, clientSecret: String): IStrategyOption = {
     val __obj = js.Dynamic.literal(callbackURL = callbackURL.asInstanceOf[js.Any], clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IStrategyOption]
   }
 }

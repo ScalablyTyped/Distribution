@@ -12,7 +12,6 @@ object IDataProtectionProviderFactory {
   @scala.inline
   def apply(createOverloadExplicit: String => DataProtectionProvider): IDataProtectionProviderFactory = {
     val __obj = js.Dynamic.literal(createOverloadExplicit = js.Any.fromFunction1(createOverloadExplicit))
-  
     __obj.asInstanceOf[IDataProtectionProviderFactory]
   }
 }

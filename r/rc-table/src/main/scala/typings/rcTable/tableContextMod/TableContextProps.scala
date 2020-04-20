@@ -24,7 +24,6 @@ object TableContextProps {
     scrollbarSize: Double
   ): TableContextProps = {
     val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], getComponent = js.Any.fromFunction2(getComponent), prefixCls = prefixCls.asInstanceOf[js.Any], scrollbarSize = scrollbarSize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TableContextProps]
   }
 }

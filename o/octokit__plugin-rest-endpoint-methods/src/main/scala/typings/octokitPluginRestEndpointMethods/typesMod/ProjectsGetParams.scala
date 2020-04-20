@@ -12,7 +12,6 @@ object ProjectsGetParams {
   @scala.inline
   def apply(project_id: Double): ProjectsGetParams = {
     val __obj = js.Dynamic.literal(project_id = project_id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProjectsGetParams]
   }
 }

@@ -21,7 +21,6 @@ object UploadBufferArgs {
   @scala.inline
   def apply(diskId: Input[String], gatewayArn: Input[String]): UploadBufferArgs = {
     val __obj = js.Dynamic.literal(diskId = diskId.asInstanceOf[js.Any], gatewayArn = gatewayArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UploadBufferArgs]
   }
 }

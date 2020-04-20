@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "kamailio-kemi"
-version := "5.3-dt-20190317Z-184f48"
+version := "5.3-dt-20190317Z-68a7ce"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

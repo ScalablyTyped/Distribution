@@ -23,7 +23,6 @@ object SwitcherCallBackParam {
     valueAccessor: () => js.Any
   ): SwitcherCallBackParam = {
     val __obj = js.Dynamic.literal(isInitial = isInitial.asInstanceOf[js.Any], newViewModel = newViewModel.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], oldViewModel = oldViewModel.asInstanceOf[js.Any], valueAccessor = js.Any.fromFunction0(valueAccessor))
-  
     __obj.asInstanceOf[SwitcherCallBackParam]
   }
 }

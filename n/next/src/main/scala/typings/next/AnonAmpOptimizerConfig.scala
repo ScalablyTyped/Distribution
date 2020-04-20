@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 trait AnonAmpOptimizerConfig extends js.Object {
   var ampOptimizerConfig: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var assetPrefix: js.UndefOr[String] = js.undefined
+  var basePath: String
   var buildId: String
   var canonicalBase: String
   var customServer: js.UndefOr[Boolean] = js.undefined
@@ -25,6 +26,7 @@ trait AnonAmpOptimizerConfig extends js.Object {
 object AnonAmpOptimizerConfig {
   @scala.inline
   def apply(
+    basePath: String,
     buildId: String,
     canonicalBase: String,
     documentMiddlewareEnabled: Boolean,
@@ -39,7 +41,7 @@ object AnonAmpOptimizerConfig {
     dev: js.UndefOr[Boolean] = js.undefined,
     runtimeConfig: StringDictionary[js.Any] = null
   ): AnonAmpOptimizerConfig = {
-    val __obj = js.Dynamic.literal(buildId = buildId.asInstanceOf[js.Any], canonicalBase = canonicalBase.asInstanceOf[js.Any], documentMiddlewareEnabled = documentMiddlewareEnabled.asInstanceOf[js.Any], generateEtags = generateEtags.asInstanceOf[js.Any], hasCssMode = hasCssMode.asInstanceOf[js.Any], poweredByHeader = poweredByHeader.asInstanceOf[js.Any], previewProps = previewProps.asInstanceOf[js.Any], staticMarkup = staticMarkup.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(basePath = basePath.asInstanceOf[js.Any], buildId = buildId.asInstanceOf[js.Any], canonicalBase = canonicalBase.asInstanceOf[js.Any], documentMiddlewareEnabled = documentMiddlewareEnabled.asInstanceOf[js.Any], generateEtags = generateEtags.asInstanceOf[js.Any], hasCssMode = hasCssMode.asInstanceOf[js.Any], poweredByHeader = poweredByHeader.asInstanceOf[js.Any], previewProps = previewProps.asInstanceOf[js.Any], staticMarkup = staticMarkup.asInstanceOf[js.Any])
     if (ampOptimizerConfig != null) __obj.updateDynamic("ampOptimizerConfig")(ampOptimizerConfig.asInstanceOf[js.Any])
     if (assetPrefix != null) __obj.updateDynamic("assetPrefix")(assetPrefix.asInstanceOf[js.Any])
     if (!js.isUndefined(customServer)) __obj.updateDynamic("customServer")(customServer.asInstanceOf[js.Any])

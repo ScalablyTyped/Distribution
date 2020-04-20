@@ -13,7 +13,6 @@ object TypeofSMS {
   @scala.inline
   def apply(Types: TypeofSMS): TypeofSMS = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofSMS]
   }
 }

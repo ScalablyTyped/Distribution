@@ -16,7 +16,6 @@ object GetDomainRequest {
   @scala.inline
   def apply(domainName: DomainName): GetDomainRequest = {
     val __obj = js.Dynamic.literal(domainName = domainName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDomainRequest]
   }
 }

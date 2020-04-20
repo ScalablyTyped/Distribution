@@ -13,7 +13,6 @@ object IOSTCrypto {
   @scala.inline
   def apply(sha3: String => String, verify: (String, String, String, String) => Double): IOSTCrypto = {
     val __obj = js.Dynamic.literal(sha3 = js.Any.fromFunction1(sha3), verify = js.Any.fromFunction4(verify))
-  
     __obj.asInstanceOf[IOSTCrypto]
   }
 }

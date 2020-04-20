@@ -14,7 +14,6 @@ object MorphTarget {
   @scala.inline
   def apply(name: String, vertices: js.Array[Vector3]): MorphTarget = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MorphTarget]
   }
 }

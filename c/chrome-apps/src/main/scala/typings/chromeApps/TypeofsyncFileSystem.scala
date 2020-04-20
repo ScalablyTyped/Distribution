@@ -56,9 +56,9 @@ trait TypeofsyncFileSystem extends js.Object {
     callback: js.Function1[
       /* policy */ ToStringLiteral[
         /* import warning: importer.ImportType#apply Failed type conversion: typeof ConflictResolutionPolicy */ js.Any, 
-        String, 
+        /* keyof typeof ConflictResolutionPolicy */ String, 
         Exclude[
-          String, 
+          /* keyof typeof ConflictResolutionPolicy */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: typeof ConflictResolutionPolicy[keyof typeof ConflictResolutionPolicy] */ js.Any
         ]
       ], 
@@ -76,9 +76,9 @@ trait TypeofsyncFileSystem extends js.Object {
     callback: js.Function1[
       /* status */ ToStringLiteral[
         /* import warning: importer.ImportType#apply Failed type conversion: typeof FileStatus */ js.Any, 
-        String, 
+        /* keyof typeof FileStatus */ String, 
         Exclude[
-          String, 
+          /* keyof typeof FileStatus */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: typeof FileStatus[keyof typeof FileStatus] */ js.Any
         ]
       ], 
@@ -100,9 +100,9 @@ trait TypeofsyncFileSystem extends js.Object {
     callback: js.Function1[
       /* status */ ToStringLiteral[
         /* import warning: importer.ImportType#apply Failed type conversion: typeof ServiceStatus */ js.Any, 
-        String, 
+        /* keyof typeof ServiceStatus */ String, 
         Exclude[
-          String, 
+          /* keyof typeof ServiceStatus */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: typeof ServiceStatus[keyof typeof ServiceStatus] */ js.Any
         ]
       ], 
@@ -143,9 +143,9 @@ trait TypeofsyncFileSystem extends js.Object {
   def setConflictResolutionPolicy(
     policy: ToStringLiteral[
       /* import warning: importer.ImportType#apply Failed type conversion: typeof ConflictResolutionPolicy */ js.Any, 
-      String, 
+      /* keyof typeof ConflictResolutionPolicy */ String, 
       Exclude[
-        String, 
+        /* keyof typeof ConflictResolutionPolicy */ String, 
         /* import warning: importer.ImportType#apply Failed type conversion: typeof ConflictResolutionPolicy[keyof typeof ConflictResolutionPolicy] */ js.Any
       ]
     ]
@@ -153,9 +153,9 @@ trait TypeofsyncFileSystem extends js.Object {
   def setConflictResolutionPolicy(
     policy: ToStringLiteral[
       /* import warning: importer.ImportType#apply Failed type conversion: typeof ConflictResolutionPolicy */ js.Any, 
-      String, 
+      /* keyof typeof ConflictResolutionPolicy */ String, 
       Exclude[
-        String, 
+        /* keyof typeof ConflictResolutionPolicy */ String, 
         /* import warning: importer.ImportType#apply Failed type conversion: typeof ConflictResolutionPolicy[keyof typeof ConflictResolutionPolicy] */ js.Any
       ]
     ],

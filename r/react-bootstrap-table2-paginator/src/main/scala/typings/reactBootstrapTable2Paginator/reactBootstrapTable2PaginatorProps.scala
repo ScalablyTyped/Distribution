@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait reactBootstrapTable2PaginatorProps {
   @scala.inline
-  def PaginationListStandaloneProps: PaginationChildProps.type = typings.reactBootstrapTable2Paginator.mod.PaginationChildProps
+  def PaginationListStandaloneProps: PaginationChildProps.type = PaginationChildProps
   type PaginationListStandaloneProps = PaginationChildProps
   @scala.inline
-  def PaginationTotalStandaloneProps: PaginationChildProps.type = typings.reactBootstrapTable2Paginator.mod.PaginationChildProps
+  def PaginationTotalStandaloneProps: PaginationChildProps.type = PaginationChildProps
   type PaginationTotalStandaloneProps = PaginationChildProps
   @scala.inline
   def SizePerPageDropdownStandaloneProps: typings.reactBootstrapTable2Paginator.mod.SizePerPageDropdownStandaloneProps.type = typings.reactBootstrapTable2Paginator.mod.SizePerPageDropdownStandaloneProps

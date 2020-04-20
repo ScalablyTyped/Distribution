@@ -12,7 +12,6 @@ object IFacepileAddFaceExampleState {
   @scala.inline
   def apply(numberOfFaces: Double): IFacepileAddFaceExampleState = {
     val __obj = js.Dynamic.literal(numberOfFaces = numberOfFaces.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IFacepileAddFaceExampleState]
   }
 }

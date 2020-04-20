@@ -17,18 +17,16 @@ trait DataDetectorTypes extends js.Object
 
 object DataDetectorTypes {
   @scala.inline
-  def address: typings.reactNative.reactNativeStrings.address = this.cast("address")
+  def address: typings.reactNative.reactNativeStrings.address = "address".asInstanceOf[typings.reactNative.reactNativeStrings.address]
   @scala.inline
-  def all: all_ = this.cast("all")
+  def all: all_ = "all".asInstanceOf[all_]
   @scala.inline
-  def calendarEvent: typings.reactNative.reactNativeStrings.calendarEvent = this.cast("calendarEvent")
+  def calendarEvent: typings.reactNative.reactNativeStrings.calendarEvent = "calendarEvent".asInstanceOf[typings.reactNative.reactNativeStrings.calendarEvent]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def link: typings.reactNative.reactNativeStrings.link = "link".asInstanceOf[typings.reactNative.reactNativeStrings.link]
   @scala.inline
-  def link: typings.reactNative.reactNativeStrings.link = this.cast("link")
+  def none: typings.reactNative.reactNativeStrings.none = "none".asInstanceOf[typings.reactNative.reactNativeStrings.none]
   @scala.inline
-  def none: typings.reactNative.reactNativeStrings.none = this.cast("none")
-  @scala.inline
-  def phoneNumber: typings.reactNative.reactNativeStrings.phoneNumber = this.cast("phoneNumber")
+  def phoneNumber: typings.reactNative.reactNativeStrings.phoneNumber = "phoneNumber".asInstanceOf[typings.reactNative.reactNativeStrings.phoneNumber]
 }
 

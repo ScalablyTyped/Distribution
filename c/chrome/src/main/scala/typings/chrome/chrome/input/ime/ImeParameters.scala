@@ -15,7 +15,6 @@ object ImeParameters {
   @scala.inline
   def apply(engineID: String, items: js.Array[MenuItem]): ImeParameters = {
     val __obj = js.Dynamic.literal(engineID = engineID.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ImeParameters]
   }
 }

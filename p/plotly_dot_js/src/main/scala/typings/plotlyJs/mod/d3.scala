@@ -584,6 +584,7 @@ object d3 extends js.Object {
   val schemeSet2: js.Array[String] = js.native
   val schemeSet3: js.Array[String] = js.native
   val schemeSpectral: js.Array[js.Array[String]] = js.native
+  val schemeTableau10: js.Array[String] = js.native
   val schemeYlGn: js.Array[js.Array[String]] = js.native
   val schemeYlGnBu: js.Array[js.Array[String]] = js.native
   val schemeYlOrBr: js.Array[js.Array[String]] = js.native
@@ -1480,7 +1481,7 @@ object d3 extends js.Object {
     ]
   ): js.Promise[DSVParsedArray[ParsedRow]] = js.native
   def csvFormat[T /* <: js.Object */](rows: js.Array[T]): String = js.native
-  def csvFormat[T /* <: js.Object */](rows: js.Array[T], columns: js.Array[String]): String = js.native
+  def csvFormat[T /* <: js.Object */](rows: js.Array[T], columns: js.Array[/* keyof T */ String]): String = js.native
   def csvFormatRows(rows: js.Array[js.Array[String]]): String = js.native
   def csvParse[Columns /* <: String */](csvString: String): DSVRowArray[Columns] = js.native
   def csvParse[ParsedRow /* <: js.Object */, Columns /* <: String */](
@@ -2087,6 +2088,7 @@ object d3 extends js.Object {
   def interpolateBrBG(t: Double): String = js.native
   def interpolateBuGn(t: Double): String = js.native
   def interpolateBuPu(t: Double): String = js.native
+  def interpolateCividis(t: Double): String = js.native
   def interpolateCool(t: Double): String = js.native
   def interpolateCubehelix(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
   def interpolateCubehelix(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
@@ -2165,6 +2167,7 @@ object d3 extends js.Object {
   def interpolateString(a: AnonToString, b: AnonToString): js.Function1[/* t */ Double, String] = js.native
   def interpolateTransformCss(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
   def interpolateTransformSvg(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
+  def interpolateTurbo(t: Double): String = js.native
   def interpolateViridis(t: Double): String = js.native
   def interpolateWarm(t: Double): String = js.native
   def interpolateYlGn(t: Double): String = js.native
@@ -2316,7 +2319,7 @@ object d3 extends js.Object {
   def partition[Datum](): PartitionLayout[Datum] = js.native
   def path(): Path_ = js.native
   def permute[T](array: NumberDictionary[T], keys: ArrayLike[Double]): js.Array[T] = js.native
-  def permute[T, K /* <: String */](`object`: T, keys: ArrayLike[K]): js.Array[
+  def permute[T, K /* <: /* keyof T */ String */](`object`: T, keys: ArrayLike[K]): js.Array[
     /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ] = js.native
   def pie(): Pie_[_, Double | typings.d3Shape.AnonValueOf] = js.native
@@ -3007,7 +3010,7 @@ object d3 extends js.Object {
     ]
   ): js.Promise[DSVParsedArray[ParsedRow]] = js.native
   def tsvFormat[T /* <: js.Object */](rows: js.Array[T]): String = js.native
-  def tsvFormat[T /* <: js.Object */](rows: js.Array[T], columns: js.Array[String]): String = js.native
+  def tsvFormat[T /* <: js.Object */](rows: js.Array[T], columns: js.Array[/* keyof T */ String]): String = js.native
   def tsvFormatRows(rows: js.Array[js.Array[String]]): String = js.native
   def tsvParse[Columns /* <: String */](tsvString: String): DSVRowArray[Columns] = js.native
   def tsvParse[ParsedRow /* <: js.Object */, Columns /* <: String */](

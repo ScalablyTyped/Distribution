@@ -24,7 +24,6 @@ object RemoveFacetFromObjectRequest {
   @scala.inline
   def apply(DirectoryArn: Arn, ObjectReference: ObjectReference, SchemaFacet: SchemaFacet): RemoveFacetFromObjectRequest = {
     val __obj = js.Dynamic.literal(DirectoryArn = DirectoryArn.asInstanceOf[js.Any], ObjectReference = ObjectReference.asInstanceOf[js.Any], SchemaFacet = SchemaFacet.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RemoveFacetFromObjectRequest]
   }
 }

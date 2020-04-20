@@ -11,7 +11,7 @@ trait LaunchPermissionConfiguration extends js.Object {
     */
   var userGroups: js.UndefOr[StringList] = js.native
   /**
-    *  The AWS account ID. 
+    * The AWS account ID. 
     */
   var userIds: js.UndefOr[AccountList] = js.native
 }

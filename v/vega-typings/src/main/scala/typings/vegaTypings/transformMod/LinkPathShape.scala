@@ -15,16 +15,14 @@ trait LinkPathShape extends js.Object
 
 object LinkPathShape {
   @scala.inline
-  def arc: typings.vegaTypings.vegaTypingsStrings.arc = this.cast("arc")
+  def arc: typings.vegaTypings.vegaTypingsStrings.arc = "arc".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.arc]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def curve: typings.vegaTypings.vegaTypingsStrings.curve = "curve".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.curve]
   @scala.inline
-  def curve: typings.vegaTypings.vegaTypingsStrings.curve = this.cast("curve")
+  def diagonal: typings.vegaTypings.vegaTypingsStrings.diagonal = "diagonal".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.diagonal]
   @scala.inline
-  def diagonal: typings.vegaTypings.vegaTypingsStrings.diagonal = this.cast("diagonal")
+  def line: typings.vegaTypings.vegaTypingsStrings.line = "line".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.line]
   @scala.inline
-  def line: typings.vegaTypings.vegaTypingsStrings.line = this.cast("line")
-  @scala.inline
-  def orthogonal: typings.vegaTypings.vegaTypingsStrings.orthogonal = this.cast("orthogonal")
+  def orthogonal: typings.vegaTypings.vegaTypingsStrings.orthogonal = "orthogonal".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.orthogonal]
 }
 

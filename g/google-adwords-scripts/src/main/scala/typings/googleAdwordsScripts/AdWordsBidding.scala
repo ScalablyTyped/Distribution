@@ -18,7 +18,6 @@ object AdWordsBidding {
     getStrategyType: () => String
   ): AdWordsBidding = {
     val __obj = js.Dynamic.literal(getStrategy = js.Any.fromFunction0(getStrategy), getStrategySource = js.Any.fromFunction0(getStrategySource), getStrategyType = js.Any.fromFunction0(getStrategyType))
-  
     __obj.asInstanceOf[AdWordsBidding]
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNotificationSystemReduxProps {
   @scala.inline
-  def ReactNotificationSystemReduxProps: NotificationsProps.type = typings.reactNotificationSystemRedux.mod.NotificationsProps
+  def ReactNotificationSystemReduxProps: NotificationsProps.type = NotificationsProps
   type ReactNotificationSystemReduxProps = NotificationsProps
 }
 

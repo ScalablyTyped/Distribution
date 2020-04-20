@@ -15,16 +15,14 @@ trait Arm64Shifter extends js.Object
 
 object Arm64Shifter {
   @scala.inline
-  def asr: typings.fridaGum.fridaGumStrings.asr = this.cast("asr")
+  def asr: typings.fridaGum.fridaGumStrings.asr = "asr".asInstanceOf[typings.fridaGum.fridaGumStrings.asr]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def lsl: typings.fridaGum.fridaGumStrings.lsl = "lsl".asInstanceOf[typings.fridaGum.fridaGumStrings.lsl]
   @scala.inline
-  def lsl: typings.fridaGum.fridaGumStrings.lsl = this.cast("lsl")
+  def lsr: typings.fridaGum.fridaGumStrings.lsr = "lsr".asInstanceOf[typings.fridaGum.fridaGumStrings.lsr]
   @scala.inline
-  def lsr: typings.fridaGum.fridaGumStrings.lsr = this.cast("lsr")
+  def msl: typings.fridaGum.fridaGumStrings.msl = "msl".asInstanceOf[typings.fridaGum.fridaGumStrings.msl]
   @scala.inline
-  def msl: typings.fridaGum.fridaGumStrings.msl = this.cast("msl")
-  @scala.inline
-  def ror: typings.fridaGum.fridaGumStrings.ror = this.cast("ror")
+  def ror: typings.fridaGum.fridaGumStrings.ror = "ror".asInstanceOf[typings.fridaGum.fridaGumStrings.ror]
 }
 

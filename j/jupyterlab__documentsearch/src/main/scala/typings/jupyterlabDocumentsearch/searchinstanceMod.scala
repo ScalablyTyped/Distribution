@@ -57,7 +57,7 @@ object searchinstanceMod extends js.Object {
     /**
       * A signal emitted when the object is disposed.
       */
-    def disposed(): ISignal[this.type, Unit] = js.native
+    def disposed: ISignal[this.type, Unit] = js.native
     /**
       * Focus the search widget input.
       */
@@ -66,15 +66,15 @@ object searchinstanceMod extends js.Object {
       * Test if the object has been disposed.
       */
     @JSName("isDisposed")
-    def isDisposed_MSearchInstance(): Boolean = js.native
+    def isDisposed_MSearchInstance: Boolean = js.native
     /**
       * The search provider.
       */
-    def provider(): ISearchProvider[Widget] = js.native
+    def provider: ISearchProvider[Widget] = js.native
     /**
       * The search widget.
       */
-    def searchWidget(): Widget = js.native
+    def searchWidget: Widget = js.native
     /**
       * If there is a replace box, show it.
       */

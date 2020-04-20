@@ -12,7 +12,6 @@ object AnonCommonName {
   @scala.inline
   def apply(commonName: String): AnonCommonName = {
     val __obj = js.Dynamic.literal(commonName = commonName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCommonName]
   }
 }

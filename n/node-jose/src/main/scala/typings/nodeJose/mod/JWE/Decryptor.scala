@@ -12,7 +12,6 @@ object Decryptor {
   @scala.inline
   def apply(decrypt: String => js.Promise[DecryptResult]): Decryptor = {
     val __obj = js.Dynamic.literal(decrypt = js.Any.fromFunction1(decrypt))
-  
     __obj.asInstanceOf[Decryptor]
   }
 }

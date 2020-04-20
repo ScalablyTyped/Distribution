@@ -15,10 +15,8 @@ trait Miscellaneous extends js.Object
 
 object Miscellaneous {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wiaAnyDeviceID: Asterisk = "*".asInstanceOf[Asterisk]
   @scala.inline
-  def wiaAnyDeviceID: Asterisk = this.cast("*")
-  @scala.inline
-  def wiaIDUnknown: `Leftcurlybracket00000000-0000-0000-0000-000000000000Rightcurlybracket` = this.cast("{00000000-0000-0000-0000-000000000000}")
+  def wiaIDUnknown: `Leftcurlybracket00000000-0000-0000-0000-000000000000Rightcurlybracket` = "{00000000-0000-0000-0000-000000000000}".asInstanceOf[`Leftcurlybracket00000000-0000-0000-0000-000000000000Rightcurlybracket`]
 }
 

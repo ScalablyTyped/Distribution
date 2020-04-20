@@ -13,7 +13,6 @@ object TypeofScriptSnapshot {
   @scala.inline
   def apply(fromString: String => IScriptSnapshot): TypeofScriptSnapshot = {
     val __obj = js.Dynamic.literal(fromString = js.Any.fromFunction1(fromString))
-  
     __obj.asInstanceOf[TypeofScriptSnapshot]
   }
 }

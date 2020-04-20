@@ -13,7 +13,6 @@ object RuntimeDownloadProgress {
   @scala.inline
   def apply(downloadedBytes: Double, totalBytes: Double): RuntimeDownloadProgress = {
     val __obj = js.Dynamic.literal(downloadedBytes = downloadedBytes.asInstanceOf[js.Any], totalBytes = totalBytes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RuntimeDownloadProgress]
   }
 }

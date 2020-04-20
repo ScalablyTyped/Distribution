@@ -13,12 +13,10 @@ trait MobileAppPublishingState extends js.Object
 
 object MobileAppPublishingState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def notPublished: typings.microsoftGraph.microsoftGraphStrings.notPublished = "notPublished".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notPublished]
   @scala.inline
-  def notPublished: typings.microsoftGraph.microsoftGraphStrings.notPublished = this.cast("notPublished")
+  def processing: typings.microsoftGraph.microsoftGraphStrings.processing = "processing".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.processing]
   @scala.inline
-  def processing: typings.microsoftGraph.microsoftGraphStrings.processing = this.cast("processing")
-  @scala.inline
-  def published: typings.microsoftGraph.microsoftGraphStrings.published = this.cast("published")
+  def published: typings.microsoftGraph.microsoftGraphStrings.published = "published".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.published]
 }
 

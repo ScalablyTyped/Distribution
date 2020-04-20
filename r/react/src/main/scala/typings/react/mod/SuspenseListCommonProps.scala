@@ -20,7 +20,6 @@ object SuspenseListCommonProps {
   @scala.inline
   def apply(children: ReactElement | Iterable[ReactElement]): SuspenseListCommonProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SuspenseListCommonProps]
   }
 }

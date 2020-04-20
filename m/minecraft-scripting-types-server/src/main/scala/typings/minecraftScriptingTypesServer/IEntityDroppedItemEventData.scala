@@ -24,7 +24,6 @@ object IEntityDroppedItemEventData {
   @scala.inline
   def apply(entity: IEntity, item_stack: IItemStack): IEntityDroppedItemEventData = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], item_stack = item_stack.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IEntityDroppedItemEventData]
   }
 }

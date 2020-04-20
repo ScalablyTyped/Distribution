@@ -14,7 +14,6 @@ object ScriptSignature {
   @scala.inline
   def apply(hashType: Double, signature: Buffer): ScriptSignature = {
     val __obj = js.Dynamic.literal(hashType = hashType.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScriptSignature]
   }
 }

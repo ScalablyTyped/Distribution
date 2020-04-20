@@ -13,7 +13,6 @@ object LocationMapping {
   @scala.inline
   def apply(accessMappingMoniker: String, location: String): LocationMapping = {
     val __obj = js.Dynamic.literal(accessMappingMoniker = accessMappingMoniker.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LocationMapping]
   }
 }

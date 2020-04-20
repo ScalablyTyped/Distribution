@@ -19,7 +19,6 @@ object SymbolType {
   @scala.inline
   def apply(draw: (CanvasPathD3Shape, Double) => Unit): SymbolType = {
     val __obj = js.Dynamic.literal(draw = js.Any.fromFunction2(draw))
-  
     __obj.asInstanceOf[SymbolType]
   }
 }

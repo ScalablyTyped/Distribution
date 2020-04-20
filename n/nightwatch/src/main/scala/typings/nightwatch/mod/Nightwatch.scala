@@ -22,7 +22,6 @@ object Nightwatch {
     verify: NightwatchAssertions
   ): Nightwatch = {
     val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], assert = assert.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any], expect = expect.asInstanceOf[js.Any], verify = verify.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Nightwatch]
   }
 }

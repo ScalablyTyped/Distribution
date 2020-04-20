@@ -15,7 +15,6 @@ object PayPalTokenizeReturn {
   @scala.inline
   def apply(close: () => js.Any): PayPalTokenizeReturn = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close))
-  
     __obj.asInstanceOf[PayPalTokenizeReturn]
   }
 }

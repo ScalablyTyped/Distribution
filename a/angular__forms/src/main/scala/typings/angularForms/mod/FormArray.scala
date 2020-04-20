@@ -117,7 +117,7 @@ class FormArray protected () extends AbstractControl {
   /**
     * Length of the control array.
     */
-  def length(): Double = js.native
+  def length: Double = js.native
   /**
     * Patches the value of the `FormArray`. It accepts an array that matches the
     * structure of the control, and does its best to match the values to the correct

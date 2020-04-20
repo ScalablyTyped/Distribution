@@ -20,7 +20,6 @@ object UpdateDefaultBranchInput {
   @scala.inline
   def apply(defaultBranchName: BranchName, repositoryName: RepositoryName): UpdateDefaultBranchInput = {
     val __obj = js.Dynamic.literal(defaultBranchName = defaultBranchName.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateDefaultBranchInput]
   }
 }

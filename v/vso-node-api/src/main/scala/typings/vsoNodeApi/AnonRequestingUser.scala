@@ -13,7 +13,6 @@ object AnonRequestingUser {
   @scala.inline
   def apply(requestingUser: Double, serviceAccount: Double): AnonRequestingUser = {
     val __obj = js.Dynamic.literal(requestingUser = requestingUser.asInstanceOf[js.Any], serviceAccount = serviceAccount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRequestingUser]
   }
 }

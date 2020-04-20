@@ -104,7 +104,7 @@ object futureMod extends js.Object {
       * A promise that resolves when the future is done.
       */
     @JSName("done")
-    def done_MKernelFutureHandler(): js.Promise[REPLY] = js.native
+    def done_MKernelFutureHandler: js.Promise[REPLY] = js.native
     /**
       * Handle an incoming kernel message.
       */
@@ -113,11 +113,11 @@ object futureMod extends js.Object {
       * Get the original outgoing message.
       */
     @JSName("msg")
-    def msg_MKernelFutureHandler(): REQUEST = js.native
+    def msg_MKernelFutureHandler: REQUEST = js.native
     /**
       * Get the iopub handler.
       */
-    def onIOPub(): js.Function1[/* msg */ IIOPubMessage[IOPubMessageType], Unit | js.Thenable[Unit]] = js.native
+    def onIOPub: js.Function1[/* msg */ IIOPubMessage[IOPubMessageType], Unit | js.Thenable[Unit]] = js.native
     /**
       * Set the iopub handler.
       */
@@ -134,7 +134,7 @@ object futureMod extends js.Object {
     /**
       * Get the reply handler.
       */
-    def onReply(): js.Function1[/* msg */ REPLY, Unit | js.Thenable[Unit]] = js.native
+    def onReply: js.Function1[/* msg */ REPLY, Unit | js.Thenable[Unit]] = js.native
     /**
       * Set the reply handler.
       */
@@ -153,7 +153,7 @@ object futureMod extends js.Object {
     /**
       * Get the stdin handler.
       */
-    def onStdin(): js.Function1[/* msg */ IStdinMessage[StdinMessageType], Unit | js.Thenable[Unit]] = js.native
+    def onStdin: js.Function1[/* msg */ IStdinMessage[StdinMessageType], Unit | js.Thenable[Unit]] = js.native
     /**
       * Set the stdin handler.
       */

@@ -14,7 +14,6 @@ object AnonOid {
   @scala.inline
   def apply(hash: AnonAlg | SignaturePolicyIdentifier, oid: String): AnonOid = {
     val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], oid = oid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOid]
   }
 }

@@ -19,7 +19,6 @@ object IVaultNamedValueStorageOperations {
     SetNamedValues: (MFNamedValueType, String, INamedValues) => Unit
   ): IVaultNamedValueStorageOperations = {
     val __obj = js.Dynamic.literal(GetNamedValues = js.Any.fromFunction2(GetNamedValues), RemoveNamedValues = js.Any.fromFunction3(RemoveNamedValues), SetNamedValues = js.Any.fromFunction3(SetNamedValues))
-  
     __obj.asInstanceOf[IVaultNamedValueStorageOperations]
   }
 }

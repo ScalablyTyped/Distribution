@@ -20,7 +20,6 @@ object ExcludedDisplayKeyword {
     remove: () => Unit
   ): ExcludedDisplayKeyword = {
     val __obj = js.Dynamic.literal(getAdGroup = js.Any.fromFunction0(getAdGroup), getCampaign = js.Any.fromFunction0(getCampaign), getId = js.Any.fromFunction0(getId), getText = js.Any.fromFunction0(getText), remove = js.Any.fromFunction0(remove))
-  
     __obj.asInstanceOf[ExcludedDisplayKeyword]
   }
 }

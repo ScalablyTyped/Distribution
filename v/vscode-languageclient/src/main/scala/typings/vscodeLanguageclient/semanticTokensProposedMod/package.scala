@@ -10,25 +10,19 @@ package object semanticTokensProposedMod {
     /* document */ typings.vscode.mod.TextDocument, 
     /* range */ typings.vscode.mod.Range, 
     /* token */ typings.vscode.mod.CancellationToken, 
-    typings.vscode.mod.ProviderResult[
-      typings.vscodeLanguageclient.semanticTokensProposedMod.vscodeAugmentingMod.SemanticTokens
-    ]
+    typings.vscode.mod.ProviderResult[typings.vscode.mod.SemanticTokens]
   ]
   type DocumentSemanticsTokensEditsSignature = js.ThisFunction3[
     /* this */ scala.Unit, 
     /* document */ typings.vscode.mod.TextDocument, 
     /* previousResultId */ java.lang.String, 
     /* token */ typings.vscode.mod.CancellationToken, 
-    typings.vscode.mod.ProviderResult[
-      typings.vscodeLanguageclient.semanticTokensProposedMod.vscodeAugmentingMod.SemanticTokensEdits | typings.vscodeLanguageclient.semanticTokensProposedMod.vscodeAugmentingMod.SemanticTokens
-    ]
+    typings.vscode.mod.ProviderResult[typings.vscode.mod.SemanticTokensEdits | typings.vscode.mod.SemanticTokens]
   ]
   type DocumentSemanticsTokensSignature = js.ThisFunction2[
     /* this */ scala.Unit, 
     /* document */ typings.vscode.mod.TextDocument, 
     /* token */ typings.vscode.mod.CancellationToken, 
-    typings.vscode.mod.ProviderResult[
-      typings.vscodeLanguageclient.semanticTokensProposedMod.vscodeAugmentingMod.SemanticTokens
-    ]
+    typings.vscode.mod.ProviderResult[typings.vscode.mod.SemanticTokens]
   ]
 }

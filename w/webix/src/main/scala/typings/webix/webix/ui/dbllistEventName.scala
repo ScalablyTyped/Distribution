@@ -17,20 +17,18 @@ trait dbllistEventName extends js.Object
 
 object dbllistEventName {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def onAfterLoad: typings.webix.webixStrings.onAfterLoad = "onAfterLoad".asInstanceOf[typings.webix.webixStrings.onAfterLoad]
   @scala.inline
-  def onAfterLoad: typings.webix.webixStrings.onAfterLoad = this.cast("onAfterLoad")
+  def onBeforeLoad: typings.webix.webixStrings.onBeforeLoad = "onBeforeLoad".asInstanceOf[typings.webix.webixStrings.onBeforeLoad]
   @scala.inline
-  def onBeforeLoad: typings.webix.webixStrings.onBeforeLoad = this.cast("onBeforeLoad")
+  def onBindRequest: typings.webix.webixStrings.onBindRequest = "onBindRequest".asInstanceOf[typings.webix.webixStrings.onBindRequest]
   @scala.inline
-  def onBindRequest: typings.webix.webixStrings.onBindRequest = this.cast("onBindRequest")
+  def onChange: typings.webix.webixStrings.onChange = "onChange".asInstanceOf[typings.webix.webixStrings.onChange]
   @scala.inline
-  def onChange: typings.webix.webixStrings.onChange = this.cast("onChange")
+  def onDestruct: typings.webix.webixStrings.onDestruct = "onDestruct".asInstanceOf[typings.webix.webixStrings.onDestruct]
   @scala.inline
-  def onDestruct: typings.webix.webixStrings.onDestruct = this.cast("onDestruct")
+  def onLoadError: typings.webix.webixStrings.onLoadError = "onLoadError".asInstanceOf[typings.webix.webixStrings.onLoadError]
   @scala.inline
-  def onLoadError: typings.webix.webixStrings.onLoadError = this.cast("onLoadError")
-  @scala.inline
-  def onViewShow: typings.webix.webixStrings.onViewShow = this.cast("onViewShow")
+  def onViewShow: typings.webix.webixStrings.onViewShow = "onViewShow".asInstanceOf[typings.webix.webixStrings.onViewShow]
 }
 

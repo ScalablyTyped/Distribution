@@ -12,14 +12,14 @@ import scala.scalajs.js.annotation._
 @js.native
 object combineLatest extends js.Object {
   def apply[R](observables: (ObservableInput[_] | (js.Function1[/* repeated */ js.Any, R]) | SchedulerLike)*): Observable[R] = js.native
-  def apply[O /* <: ObservableInput[_] */](sources: js.Array[O]): Observable[js.Array[ObservedValueOf[O]]] = js.native
-  def apply[O /* <: ObservableInput[_] */](sources: js.Array[O], scheduler: SchedulerLike): Observable[js.Array[ObservedValueOf[O]]] = js.native
+  def apply[O1 /* <: ObservableInput[_] */](sources: js.Array[O1]): Observable[js.Array[ObservedValueOf[O1]]] = js.native
+  def apply[O1 /* <: ObservableInput[_] */](sources: js.Array[O1], scheduler: SchedulerLike): Observable[js.Array[ObservedValueOf[O1]]] = js.native
   def apply[O1 /* <: ObservableInput[_] */](v1: O1): Observable[js.Array[ObservedValueOf[O1]]] = js.native
   def apply[O1 /* <: ObservableInput[_] */](v1: O1, scheduler: SchedulerLike): Observable[js.Array[ObservedValueOf[O1]]] = js.native
-  def apply[O /* <: ObservableInput[_] */, R](sources: js.Array[O], resultSelector: js.Function1[/* repeated */ ObservedValueOf[O], R]): Observable[R] = js.native
-  def apply[O /* <: ObservableInput[_] */, R](
-    sources: js.Array[O],
-    resultSelector: js.Function1[/* repeated */ ObservedValueOf[O], R],
+  def apply[O1 /* <: ObservableInput[_] */, R](sources: js.Array[O1], resultSelector: js.Function1[/* v1 */ ObservedValueOf[O1], R]): Observable[R] = js.native
+  def apply[O1 /* <: ObservableInput[_] */, R](
+    sources: js.Array[O1],
+    resultSelector: js.Function1[/* v1 */ ObservedValueOf[O1], R],
     scheduler: SchedulerLike
   ): Observable[R] = js.native
   def apply[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */](sources: js.Tuple2[O1, O2]): Observable[js.Tuple2[ObservedValueOf[O1], ObservedValueOf[O2]]] = js.native

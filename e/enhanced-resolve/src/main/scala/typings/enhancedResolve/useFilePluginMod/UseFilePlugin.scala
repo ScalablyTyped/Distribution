@@ -21,7 +21,6 @@ object UseFilePlugin {
     target: String
   ): UseFilePlugin = {
     val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), filename = filename.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UseFilePlugin]
   }
 }

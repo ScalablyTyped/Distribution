@@ -20,7 +20,6 @@ object VideosResource {
   @scala.inline
   def apply(annotate: AnonAccesstoken => Request_[GoogleLongrunningOperation]): VideosResource = {
     val __obj = js.Dynamic.literal(annotate = js.Any.fromFunction1(annotate))
-  
     __obj.asInstanceOf[VideosResource]
   }
 }

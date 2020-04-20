@@ -16,7 +16,6 @@ object FlashBitmapInstance {
   @scala.inline
   def apply(getBits: () => FlashBitmap, hPixels: Double, setBits: FlashBitmap => Unit, vPixels: Double): FlashBitmapInstance = {
     val __obj = js.Dynamic.literal(getBits = js.Any.fromFunction0(getBits), hPixels = hPixels.asInstanceOf[js.Any], setBits = js.Any.fromFunction1(setBits), vPixels = vPixels.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FlashBitmapInstance]
   }
 }

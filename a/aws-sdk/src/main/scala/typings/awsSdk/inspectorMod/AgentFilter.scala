@@ -20,7 +20,6 @@ object AgentFilter {
   @scala.inline
   def apply(agentHealthCodes: AgentHealthCodeList, agentHealths: AgentHealthList): AgentFilter = {
     val __obj = js.Dynamic.literal(agentHealthCodes = agentHealthCodes.asInstanceOf[js.Any], agentHealths = agentHealths.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AgentFilter]
   }
 }

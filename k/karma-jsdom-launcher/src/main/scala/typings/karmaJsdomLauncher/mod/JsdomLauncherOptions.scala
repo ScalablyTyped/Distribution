@@ -17,7 +17,6 @@ object JsdomLauncherOptions {
   @scala.inline
   def apply(jsdom: ConstructorOptions): JsdomLauncherOptions = {
     val __obj = js.Dynamic.literal(jsdom = jsdom.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JsdomLauncherOptions]
   }
 }

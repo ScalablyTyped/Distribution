@@ -19,24 +19,22 @@ trait ReferrerPolicy extends js.Object
 
 object ReferrerPolicy {
   @scala.inline
-  def _empty: typings.std.stdStrings._empty = this.cast("")
+  def _empty: typings.std.stdStrings._empty = "".asInstanceOf[typings.std.stdStrings._empty]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `no-referrer`: typings.std.stdStrings.`no-referrer` = "no-referrer".asInstanceOf[typings.std.stdStrings.`no-referrer`]
   @scala.inline
-  def `no-referrer`: typings.std.stdStrings.`no-referrer` = this.cast("no-referrer")
+  def `no-referrer-when-downgrade`: typings.std.stdStrings.`no-referrer-when-downgrade` = "no-referrer-when-downgrade".asInstanceOf[typings.std.stdStrings.`no-referrer-when-downgrade`]
   @scala.inline
-  def `no-referrer-when-downgrade`: typings.std.stdStrings.`no-referrer-when-downgrade` = this.cast("no-referrer-when-downgrade")
+  def origin: typings.std.stdStrings.origin = "origin".asInstanceOf[typings.std.stdStrings.origin]
   @scala.inline
-  def origin: typings.std.stdStrings.origin = this.cast("origin")
+  def `origin-when-cross-origin`: typings.std.stdStrings.`origin-when-cross-origin` = "origin-when-cross-origin".asInstanceOf[typings.std.stdStrings.`origin-when-cross-origin`]
   @scala.inline
-  def `origin-when-cross-origin`: typings.std.stdStrings.`origin-when-cross-origin` = this.cast("origin-when-cross-origin")
+  def `same-origin`: typings.std.stdStrings.`same-origin` = "same-origin".asInstanceOf[typings.std.stdStrings.`same-origin`]
   @scala.inline
-  def `same-origin`: typings.std.stdStrings.`same-origin` = this.cast("same-origin")
+  def `strict-origin`: typings.std.stdStrings.`strict-origin` = "strict-origin".asInstanceOf[typings.std.stdStrings.`strict-origin`]
   @scala.inline
-  def `strict-origin`: typings.std.stdStrings.`strict-origin` = this.cast("strict-origin")
+  def `strict-origin-when-cross-origin`: typings.std.stdStrings.`strict-origin-when-cross-origin` = "strict-origin-when-cross-origin".asInstanceOf[typings.std.stdStrings.`strict-origin-when-cross-origin`]
   @scala.inline
-  def `strict-origin-when-cross-origin`: typings.std.stdStrings.`strict-origin-when-cross-origin` = this.cast("strict-origin-when-cross-origin")
-  @scala.inline
-  def `unsafe-url`: typings.std.stdStrings.`unsafe-url` = this.cast("unsafe-url")
+  def `unsafe-url`: typings.std.stdStrings.`unsafe-url` = "unsafe-url".asInstanceOf[typings.std.stdStrings.`unsafe-url`]
 }
 

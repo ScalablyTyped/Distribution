@@ -32,7 +32,6 @@ object ChatRoomStateUpdate {
   @scala.inline
   def apply(from: String, resource: String, room: String, state: ChatStateType): ChatRoomStateUpdate = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChatRoomStateUpdate]
   }
 }

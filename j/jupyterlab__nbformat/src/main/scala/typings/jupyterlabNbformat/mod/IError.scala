@@ -31,7 +31,6 @@ object IError {
   @scala.inline
   def apply(ename: String, evalue: String, output_type: error, traceback: js.Array[String]): IError = {
     val __obj = js.Dynamic.literal(ename = ename.asInstanceOf[js.Any], evalue = evalue.asInstanceOf[js.Any], output_type = output_type.asInstanceOf[js.Any], traceback = traceback.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IError]
   }
 }

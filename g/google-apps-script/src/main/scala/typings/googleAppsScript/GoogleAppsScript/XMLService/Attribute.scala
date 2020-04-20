@@ -43,7 +43,6 @@ object Attribute {
     setValue: String => Attribute
   ): Attribute = {
     val __obj = js.Dynamic.literal(getName = js.Any.fromFunction0(getName), getNamespace = js.Any.fromFunction0(getNamespace), getValue = js.Any.fromFunction0(getValue), setName = js.Any.fromFunction1(setName), setNamespace = js.Any.fromFunction1(setNamespace), setValue = js.Any.fromFunction1(setValue))
-  
     __obj.asInstanceOf[Attribute]
   }
 }

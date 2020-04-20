@@ -41,12 +41,12 @@ class Database protected () extends IOfflineProvider {
     * Gets a boolean indicating if scene must be saved in the database
     */
   @JSName("enableSceneOffline")
-  def enableSceneOffline_MDatabase(): Boolean = js.native
+  def enableSceneOffline_MDatabase: Boolean = js.native
   /**
     * Gets a boolean indicating if textures must be saved in the database
     */
   @JSName("enableTexturesOffline")
-  def enableTexturesOffline_MDatabase(): Boolean = js.native
+  def enableTexturesOffline_MDatabase: Boolean = js.native
 }
 
 /* static members */

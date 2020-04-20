@@ -27,7 +27,6 @@ object Impl {
   @scala.inline
   def apply(fixed: String, omitted: String, pusher: String, sidebar: String): Impl = {
     val __obj = js.Dynamic.literal(fixed = fixed.asInstanceOf[js.Any], omitted = omitted.asInstanceOf[js.Any], pusher = pusher.asInstanceOf[js.Any], sidebar = sidebar.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Impl]
   }
 }

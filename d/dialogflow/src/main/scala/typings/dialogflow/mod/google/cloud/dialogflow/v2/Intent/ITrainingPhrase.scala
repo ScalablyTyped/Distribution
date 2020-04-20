@@ -15,7 +15,9 @@ trait ITrainingPhrase extends js.Object {
   /** TrainingPhrase timesAddedCount */
   var timesAddedCount: js.UndefOr[Double | Null] = js.undefined
   /** TrainingPhrase type */
-  var `type`: js.UndefOr[Type | String | Null] = js.undefined
+  var `type`: js.UndefOr[
+    Type | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Intent.TrainingPhrase.Type * / any */ String) | Null
+  ] = js.undefined
 }
 
 object ITrainingPhrase {
@@ -24,7 +26,7 @@ object ITrainingPhrase {
     name: String = null,
     parts: js.Array[IPart] = null,
     timesAddedCount: Int | Double = null,
-    `type`: Type | String = null
+    `type`: Type | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Intent.TrainingPhrase.Type * / any */ String) = null
   ): ITrainingPhrase = {
     val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

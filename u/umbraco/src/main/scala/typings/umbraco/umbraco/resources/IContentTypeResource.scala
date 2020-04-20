@@ -52,7 +52,6 @@ object IContentTypeResource {
     getAllowedTypes: Double => IPromise[IResourcePromise]
   ): IContentTypeResource = {
     val __obj = js.Dynamic.literal(getAllPropertyTypeAliases = js.Any.fromFunction0(getAllPropertyTypeAliases), getAllowedTypes = js.Any.fromFunction1(getAllowedTypes))
-  
     __obj.asInstanceOf[IContentTypeResource]
   }
 }

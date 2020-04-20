@@ -14,7 +14,6 @@ object SkippedTest {
   @scala.inline
   def apply(requirement: String, skipped: `true`): SkippedTest = {
     val __obj = js.Dynamic.literal(requirement = requirement.asInstanceOf[js.Any], skipped = skipped.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SkippedTest]
   }
 }

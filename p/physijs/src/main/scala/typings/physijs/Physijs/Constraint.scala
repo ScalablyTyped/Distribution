@@ -12,7 +12,6 @@ object Constraint {
   @scala.inline
   def apply(getDefinition: () => js.Any): Constraint = {
     val __obj = js.Dynamic.literal(getDefinition = js.Any.fromFunction0(getDefinition))
-  
     __obj.asInstanceOf[Constraint]
   }
 }

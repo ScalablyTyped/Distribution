@@ -14,7 +14,6 @@ object AudioData {
   @scala.inline
   def apply(channelData: js.Array[Float32Array], sampleRate: Double): AudioData = {
     val __obj = js.Dynamic.literal(channelData = channelData.asInstanceOf[js.Any], sampleRate = sampleRate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AudioData]
   }
 }

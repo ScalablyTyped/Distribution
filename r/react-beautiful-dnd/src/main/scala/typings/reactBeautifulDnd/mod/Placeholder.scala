@@ -14,7 +14,6 @@ object Placeholder {
   @scala.inline
   def apply(client: BoxModel, display: String, tagName: String): Placeholder = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Placeholder]
   }
 }

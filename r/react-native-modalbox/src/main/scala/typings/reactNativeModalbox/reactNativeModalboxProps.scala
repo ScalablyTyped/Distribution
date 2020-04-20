@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeModalboxProps {
   @scala.inline
-  def ReactNativeModalboxProps: ModalProps.type = typings.reactNativeModalbox.mod.ModalProps
+  def ReactNativeModalboxProps: ModalProps.type = ModalProps
   type ReactNativeModalboxProps = ModalProps
 }
 

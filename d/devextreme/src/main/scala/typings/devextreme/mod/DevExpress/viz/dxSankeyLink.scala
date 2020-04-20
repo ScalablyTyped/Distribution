@@ -27,7 +27,6 @@ object dxSankeyLink {
     showTooltip: () => Unit
   ): dxSankeyLink = {
     val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], hideTooltip = js.Any.fromFunction0(hideTooltip), hover = js.Any.fromFunction1(hover), isHovered = js.Any.fromFunction0(isHovered), showTooltip = js.Any.fromFunction0(showTooltip))
-  
     __obj.asInstanceOf[dxSankeyLink]
   }
 }

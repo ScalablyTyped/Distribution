@@ -20,7 +20,6 @@ object UnshareDirectoryRequest {
   @scala.inline
   def apply(DirectoryId: DirectoryId, UnshareTarget: UnshareTarget): UnshareDirectoryRequest = {
     val __obj = js.Dynamic.literal(DirectoryId = DirectoryId.asInstanceOf[js.Any], UnshareTarget = UnshareTarget.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnshareDirectoryRequest]
   }
 }

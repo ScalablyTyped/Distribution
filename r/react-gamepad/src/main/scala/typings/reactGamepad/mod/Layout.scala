@@ -18,7 +18,6 @@ object Layout {
     buttons: js.Array[Button | Null]
   ): Layout = {
     val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], buttonAxis = buttonAxis.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Layout]
   }
 }

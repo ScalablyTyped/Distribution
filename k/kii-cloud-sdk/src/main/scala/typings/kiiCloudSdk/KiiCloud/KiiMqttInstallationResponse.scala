@@ -13,7 +13,6 @@ object KiiMqttInstallationResponse {
   @scala.inline
   def apply(installationID: String, installationRegistrationID: String): KiiMqttInstallationResponse = {
     val __obj = js.Dynamic.literal(installationID = installationID.asInstanceOf[js.Any], installationRegistrationID = installationRegistrationID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KiiMqttInstallationResponse]
   }
 }

@@ -5,7 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type AsyncAutoTask[R1, R /* <: typings.async.mod.Dictionary[_] */, E] = (typings.async.mod.AsyncAutoTaskFunctionWithoutDependencies[R1, E]) | (js.Array[java.lang.String | (typings.async.mod.AsyncAutoTaskFunction[R1, R, E])])
+  type AsyncAutoTask[R1, R /* <: typings.async.mod.Dictionary[_] */, E] = (typings.async.mod.AsyncAutoTaskFunctionWithoutDependencies[R1, E]) | (js.Array[
+    (/* keyof R */ java.lang.String) | (typings.async.mod.AsyncAutoTaskFunction[R1, R, E])
+  ])
   type AsyncAutoTaskFunction[R1, R /* <: typings.async.mod.Dictionary[_] */, E] = js.Function2[
     /* results */ R, 
     /* cb */ (typings.async.mod.AsyncResultCallback[R1, E]) | typings.async.mod.ErrorCallback[E], 
@@ -17,7 +19,7 @@ package object mod {
   ]
   type AsyncAutoTasks[R /* <: typings.async.mod.Dictionary[_] */, E] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof R ]: async.async.AsyncAutoTask<R[K], R, E>}
-    */ typings.async.asyncStrings.AsyncAutoTasks with R
+    */ typings.async.asyncStrings.AsyncAutoTasks with org.scalablytyped.runtime.TopLevel[R]
   type AsyncBooleanIterator[T, E] = js.Function2[
     /* item */ T, 
     /* callback */ typings.async.mod.AsyncBooleanResultCallback[E], 

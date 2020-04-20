@@ -15,7 +15,6 @@ object MembershipResource {
   @scala.inline
   def apply(get: AnonPagesize => Request_[Seriesmembership]): MembershipResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
-  
     __obj.asInstanceOf[MembershipResource]
   }
 }

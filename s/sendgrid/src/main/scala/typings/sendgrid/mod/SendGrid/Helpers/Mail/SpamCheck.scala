@@ -27,7 +27,6 @@ object SpamCheck {
     toJSON: () => AnonPosttourl
   ): SpamCheck = {
     val __obj = js.Dynamic.literal(getEnable = js.Any.fromFunction0(getEnable), getPosttoUrl = js.Any.fromFunction0(getPosttoUrl), getThreshold = js.Any.fromFunction0(getThreshold), setEnable = js.Any.fromFunction1(setEnable), setPosttoUrl = js.Any.fromFunction1(setPosttoUrl), setThreshold = js.Any.fromFunction1(setThreshold), toJSON = js.Any.fromFunction0(toJSON))
-  
     __obj.asInstanceOf[SpamCheck]
   }
 }

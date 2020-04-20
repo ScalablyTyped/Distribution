@@ -13,7 +13,6 @@ object AadOauthTokenResult {
   @scala.inline
   def apply(accessToken: String, refreshTokenCache: String): AadOauthTokenResult = {
     val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], refreshTokenCache = refreshTokenCache.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AadOauthTokenResult]
   }
 }

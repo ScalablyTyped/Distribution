@@ -15,7 +15,6 @@ object TcpipChannelData {
   @scala.inline
   def apply(destIP: String, destPort: Double, srcIP: String, srcPort: Double): TcpipChannelData = {
     val __obj = js.Dynamic.literal(destIP = destIP.asInstanceOf[js.Any], destPort = destPort.asInstanceOf[js.Any], srcIP = srcIP.asInstanceOf[js.Any], srcPort = srcPort.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TcpipChannelData]
   }
 }

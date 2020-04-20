@@ -15,7 +15,6 @@ object AttachmentsResource {
   @scala.inline
   def apply(get: AnonId => Request_[MessagePartBody]): AttachmentsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
-  
     __obj.asInstanceOf[AttachmentsResource]
   }
 }

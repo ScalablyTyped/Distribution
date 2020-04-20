@@ -13,12 +13,10 @@ trait StrokeJoin extends js.Object
 
 object StrokeJoin {
   @scala.inline
-  def BEVEL: typings.figma.figmaStrings.BEVEL = this.cast("BEVEL")
+  def BEVEL: typings.figma.figmaStrings.BEVEL = "BEVEL".asInstanceOf[typings.figma.figmaStrings.BEVEL]
   @scala.inline
-  def MITER: typings.figma.figmaStrings.MITER = this.cast("MITER")
+  def MITER: typings.figma.figmaStrings.MITER = "MITER".asInstanceOf[typings.figma.figmaStrings.MITER]
   @scala.inline
-  def ROUND: typings.figma.figmaStrings.ROUND = this.cast("ROUND")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ROUND: typings.figma.figmaStrings.ROUND = "ROUND".asInstanceOf[typings.figma.figmaStrings.ROUND]
 }
 

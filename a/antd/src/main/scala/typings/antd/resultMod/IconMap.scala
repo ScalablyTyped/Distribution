@@ -1,9 +1,7 @@
 package typings.antd.resultMod
 
-import typings.antDesignIcons.componentsAntdIconMod.AntdIconProps
+import typings.antd.PickAntdIconPropschildren
 import typings.react.mod.ForwardRefExoticComponent
-import typings.react.mod.RefAttributes
-import typings.std.HTMLSpanElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,9 +9,9 @@ import scala.scalajs.js.annotation._
 @JSImport("antd/lib/result", "IconMap")
 @js.native
 object IconMap extends js.Object {
-  var error: ForwardRefExoticComponent[AntdIconProps with RefAttributes[HTMLSpanElement]] = js.native
-  var info: ForwardRefExoticComponent[AntdIconProps with RefAttributes[HTMLSpanElement]] = js.native
-  var success: ForwardRefExoticComponent[AntdIconProps with RefAttributes[HTMLSpanElement]] = js.native
-  var warning: ForwardRefExoticComponent[AntdIconProps with RefAttributes[HTMLSpanElement]] = js.native
+  var error: ForwardRefExoticComponent[PickAntdIconPropschildren] = js.native
+  var info: ForwardRefExoticComponent[PickAntdIconPropschildren] = js.native
+  var success: ForwardRefExoticComponent[PickAntdIconPropschildren] = js.native
+  var warning: ForwardRefExoticComponent[PickAntdIconPropschildren] = js.native
 }
 

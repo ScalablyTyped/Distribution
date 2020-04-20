@@ -12,7 +12,6 @@ object AuthBase {
   @scala.inline
   def apply(clientId: String): AuthBase = {
     val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AuthBase]
   }
 }

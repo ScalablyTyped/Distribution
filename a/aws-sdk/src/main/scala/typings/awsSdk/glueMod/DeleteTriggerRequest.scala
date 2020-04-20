@@ -16,7 +16,6 @@ object DeleteTriggerRequest {
   @scala.inline
   def apply(Name: NameString): DeleteTriggerRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteTriggerRequest]
   }
 }

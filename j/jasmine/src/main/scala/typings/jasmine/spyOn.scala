@@ -13,6 +13,6 @@ object spyOn extends js.Object {
     * @param object The object upon which to install the `Spy`.
     * @param method The name of the method to replace with a `Spy`.
     */
-  def apply[T](`object`: T, method: String): Spy = js.native
+  def apply[T](`object`: T, method: /* keyof T */ String): Spy = js.native
 }
 

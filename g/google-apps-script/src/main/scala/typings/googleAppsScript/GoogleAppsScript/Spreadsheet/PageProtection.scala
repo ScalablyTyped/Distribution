@@ -29,7 +29,6 @@ object PageProtection {
     setProtected: Boolean => Unit
   ): PageProtection = {
     val __obj = js.Dynamic.literal(addUser = js.Any.fromFunction1(addUser), getUsers = js.Any.fromFunction0(getUsers), isProtected = js.Any.fromFunction0(isProtected), removeUser = js.Any.fromFunction1(removeUser), setProtected = js.Any.fromFunction1(setProtected))
-  
     __obj.asInstanceOf[PageProtection]
   }
 }

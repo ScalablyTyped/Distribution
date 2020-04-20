@@ -16,7 +16,6 @@ object DescribeStateMachineForExecutionInput {
   @scala.inline
   def apply(executionArn: Arn): DescribeStateMachineForExecutionInput = {
     val __obj = js.Dynamic.literal(executionArn = executionArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeStateMachineForExecutionInput]
   }
 }

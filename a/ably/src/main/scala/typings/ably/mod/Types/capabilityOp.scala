@@ -18,22 +18,20 @@ trait capabilityOp extends js.Object
 
 object capabilityOp {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `channel-metadata`: typings.ably.ablyStrings.`channel-metadata` = "channel-metadata".asInstanceOf[typings.ably.ablyStrings.`channel-metadata`]
   @scala.inline
-  def `channel-metadata`: typings.ably.ablyStrings.`channel-metadata` = this.cast("channel-metadata")
+  def history: typings.ably.ablyStrings.history = "history".asInstanceOf[typings.ably.ablyStrings.history]
   @scala.inline
-  def history: typings.ably.ablyStrings.history = this.cast("history")
+  def presence: typings.ably.ablyStrings.presence = "presence".asInstanceOf[typings.ably.ablyStrings.presence]
   @scala.inline
-  def presence: typings.ably.ablyStrings.presence = this.cast("presence")
+  def publish: typings.ably.ablyStrings.publish = "publish".asInstanceOf[typings.ably.ablyStrings.publish]
   @scala.inline
-  def publish: typings.ably.ablyStrings.publish = this.cast("publish")
+  def `push-admin`: typings.ably.ablyStrings.`push-admin` = "push-admin".asInstanceOf[typings.ably.ablyStrings.`push-admin`]
   @scala.inline
-  def `push-admin`: typings.ably.ablyStrings.`push-admin` = this.cast("push-admin")
+  def `push-subscribe`: typings.ably.ablyStrings.`push-subscribe` = "push-subscribe".asInstanceOf[typings.ably.ablyStrings.`push-subscribe`]
   @scala.inline
-  def `push-subscribe`: typings.ably.ablyStrings.`push-subscribe` = this.cast("push-subscribe")
+  def stats: typings.ably.ablyStrings.stats = "stats".asInstanceOf[typings.ably.ablyStrings.stats]
   @scala.inline
-  def stats: typings.ably.ablyStrings.stats = this.cast("stats")
-  @scala.inline
-  def subscribe: typings.ably.ablyStrings.subscribe = this.cast("subscribe")
+  def subscribe: typings.ably.ablyStrings.subscribe = "subscribe".asInstanceOf[typings.ably.ablyStrings.subscribe]
 }
 

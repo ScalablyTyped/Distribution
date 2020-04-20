@@ -13,7 +13,6 @@ object AnonHasEverOpened {
   @scala.inline
   def apply(hasEverOpened: `true`): AnonHasEverOpened = {
     val __obj = js.Dynamic.literal(hasEverOpened = hasEverOpened.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHasEverOpened]
   }
 }

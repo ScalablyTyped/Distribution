@@ -14,7 +14,6 @@ object SendMultipartMessageParams {
   @scala.inline
   def apply(parts: js.Array[SendMessagePayload], roomId: String): SendMultipartMessageParams = {
     val __obj = js.Dynamic.literal(parts = parts.asInstanceOf[js.Any], roomId = roomId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SendMultipartMessageParams]
   }
 }

@@ -16,12 +16,10 @@ trait WdGutterStyle extends js.Object
 
 object WdGutterStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdGutterPosLeft: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdGutterPosLeft: `0` = this.cast(0)
+  def wdGutterPosRight: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdGutterPosRight: `2` = this.cast(2)
-  @scala.inline
-  def wdGutterPosTop: `1` = this.cast(1)
+  def wdGutterPosTop: `1` = 1.asInstanceOf[`1`]
 }
 

@@ -12,10 +12,8 @@ trait InferenceClassificationType extends js.Object
 
 object InferenceClassificationType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def focused: typings.microsoftGraph.microsoftGraphStrings.focused = "focused".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.focused]
   @scala.inline
-  def focused: typings.microsoftGraph.microsoftGraphStrings.focused = this.cast("focused")
-  @scala.inline
-  def other: typings.microsoftGraph.microsoftGraphStrings.other = this.cast("other")
+  def other: typings.microsoftGraph.microsoftGraphStrings.other = "other".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.other]
 }
 

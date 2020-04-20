@@ -12,10 +12,8 @@ trait ButtonType extends js.Object
 
 object ButtonType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def image: typings.wegameApi.wegameApiStrings.image = "image".asInstanceOf[typings.wegameApi.wegameApiStrings.image]
   @scala.inline
-  def image: typings.wegameApi.wegameApiStrings.image = this.cast("image")
-  @scala.inline
-  def text: typings.wegameApi.wegameApiStrings.text = this.cast("text")
+  def text: typings.wegameApi.wegameApiStrings.text = "text".asInstanceOf[typings.wegameApi.wegameApiStrings.text]
 }
 

@@ -10,6 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ChipsProps extends js.Object {
+  var allowDuplicate: js.UndefOr[Boolean] = js.undefined
   var ariaLabelledBy: js.UndefOr[String] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
@@ -23,6 +24,7 @@ trait ChipsProps extends js.Object {
   var onFocus: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
   var onRemove: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
+  var separator: js.UndefOr[String] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
   var tooltip: js.UndefOr[js.Any] = js.undefined
   var tooltipOptions: js.UndefOr[TooltipOptions] = js.undefined
@@ -32,6 +34,7 @@ trait ChipsProps extends js.Object {
 object ChipsProps {
   @scala.inline
   def apply(
+    allowDuplicate: js.UndefOr[Boolean] = js.undefined,
     ariaLabelledBy: String = null,
     className: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
@@ -45,12 +48,14 @@ object ChipsProps {
     onFocus: /* event */ Event_ => Unit = null,
     onRemove: /* e */ AnonValue => Unit = null,
     placeholder: String = null,
+    separator: String = null,
     style: js.Object = null,
     tooltip: js.Any = null,
     tooltipOptions: TooltipOptions = null,
     value: js.Array[_] = null
   ): ChipsProps = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowDuplicate)) __obj.updateDynamic("allowDuplicate")(allowDuplicate.asInstanceOf[js.Any])
     if (ariaLabelledBy != null) __obj.updateDynamic("ariaLabelledBy")(ariaLabelledBy.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
@@ -64,6 +69,7 @@ object ChipsProps {
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction1(onRemove))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (tooltipOptions != null) __obj.updateDynamic("tooltipOptions")(tooltipOptions.asInstanceOf[js.Any])

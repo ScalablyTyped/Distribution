@@ -13,7 +13,6 @@ object Result {
   @scala.inline
   def apply(exportTokens: ExportTokens, injectableSource: String): Result = {
     val __obj = js.Dynamic.literal(exportTokens = exportTokens.asInstanceOf[js.Any], injectableSource = injectableSource.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Result]
   }
 }

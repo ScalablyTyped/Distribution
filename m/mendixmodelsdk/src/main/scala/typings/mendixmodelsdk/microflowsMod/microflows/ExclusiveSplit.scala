@@ -25,13 +25,13 @@ class ExclusiveSplit protected () extends MicroflowObject {
   ) = this()
   @JSName("model")
   var model_FExclusiveSplit: IModel = js.native
-  def caption(): String = js.native
+  def caption: String = js.native
   def caption(newValue: String): js.Any = js.native
-  def documentation(): String = js.native
+  def documentation: String = js.native
   def documentation(newValue: String): js.Any = js.native
-  def errorHandlingType(): ErrorHandlingType = js.native
+  def errorHandlingType: ErrorHandlingType = js.native
   def errorHandlingType(newValue: ErrorHandlingType): js.Any = js.native
-  def splitCondition(): SplitCondition = js.native
+  def splitCondition: SplitCondition = js.native
   def splitCondition(newValue: SplitCondition): js.Any = js.native
 }
 

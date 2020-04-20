@@ -18,17 +18,17 @@ trait CurrencyPatterns
   var resolvedCurrency: js.UndefOr[js.Any] = js.undefined
   var signDisplayPatterns: js.UndefOr[js.Any] = js.undefined
   @JSName("accounting")
-  def accounting_MCurrencyPatterns(): CurrencySignDisplayPatterns
+  def accounting_MCurrencyPatterns: CurrencySignDisplayPatterns
   @JSName("code")
-  def code_MCurrencyPatterns(): this.type
+  def code_MCurrencyPatterns: this.type
   @JSName("name")
-  def name_MCurrencyPatterns(): this.type
+  def name_MCurrencyPatterns: this.type
   @JSName("narrowSymbol")
-  def narrowSymbol_MCurrencyPatterns(): this.type
+  def narrowSymbol_MCurrencyPatterns: this.type
   @JSName("standard")
-  def standard_MCurrencyPatterns(): CurrencySignDisplayPatterns
+  def standard_MCurrencyPatterns: CurrencySignDisplayPatterns
   @JSName("symbol")
-  def symbol_MCurrencyPatterns(): this.type
+  def symbol_MCurrencyPatterns: this.type
 }
 
 object CurrencyPatterns {

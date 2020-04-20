@@ -39,14 +39,12 @@ trait CallbackTrigger extends js.Object
 
 object CallbackTrigger {
   @scala.inline
-  def INITIALIZE: typings.googlepay.googlepayStrings.INITIALIZE = this.cast("INITIALIZE")
+  def INITIALIZE: typings.googlepay.googlepayStrings.INITIALIZE = "INITIALIZE".asInstanceOf[typings.googlepay.googlepayStrings.INITIALIZE]
   @scala.inline
-  def OFFER_INFO: typings.googlepay.googlepayStrings.OFFER_INFO = this.cast("OFFER_INFO")
+  def OFFER_INFO: typings.googlepay.googlepayStrings.OFFER_INFO = "OFFER_INFO".asInstanceOf[typings.googlepay.googlepayStrings.OFFER_INFO]
   @scala.inline
-  def SHIPPING_ADDRESS: typings.googlepay.googlepayStrings.SHIPPING_ADDRESS = this.cast("SHIPPING_ADDRESS")
+  def SHIPPING_ADDRESS: typings.googlepay.googlepayStrings.SHIPPING_ADDRESS = "SHIPPING_ADDRESS".asInstanceOf[typings.googlepay.googlepayStrings.SHIPPING_ADDRESS]
   @scala.inline
-  def SHIPPING_OPTION: typings.googlepay.googlepayStrings.SHIPPING_OPTION = this.cast("SHIPPING_OPTION")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SHIPPING_OPTION: typings.googlepay.googlepayStrings.SHIPPING_OPTION = "SHIPPING_OPTION".asInstanceOf[typings.googlepay.googlepayStrings.SHIPPING_OPTION]
 }
 

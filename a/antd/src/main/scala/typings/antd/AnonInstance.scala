@@ -14,7 +14,6 @@ object AnonInstance {
   @scala.inline
   def apply(instance: NotificationInstance, prefixCls: String): AnonInstance = {
     val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonInstance]
   }
 }

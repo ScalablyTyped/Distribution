@@ -18,7 +18,6 @@ object AnonStreamStream {
   @scala.inline
   def apply(stream: Stream): AnonStreamStream = {
     val __obj = js.Dynamic.literal(stream = stream.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonStreamStream]
   }
 }

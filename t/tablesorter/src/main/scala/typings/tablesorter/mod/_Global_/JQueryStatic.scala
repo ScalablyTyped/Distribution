@@ -16,7 +16,6 @@ object JQueryStatic {
   @scala.inline
   def apply[TElement](tablesorter: Tablesorter[TElement]): JQueryStatic[TElement] = {
     val __obj = js.Dynamic.literal(tablesorter = tablesorter.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JQueryStatic[TElement]]
   }
 }

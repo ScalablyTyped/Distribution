@@ -28,7 +28,6 @@ object AnonAmazon {
     windows: AnonPhone
   ): AnonAmazon = {
     val __obj = js.Dynamic.literal(amazon = amazon.asInstanceOf[js.Any], android = android.asInstanceOf[js.Any], any = any.asInstanceOf[js.Any], apple = apple.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], tablet = tablet.asInstanceOf[js.Any], windows = windows.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAmazon]
   }
 }

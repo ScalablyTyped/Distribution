@@ -12,10 +12,8 @@ trait Italian extends _ALL
 
 object Italian {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def it: typings.qlik.qlikStrings.it = "it".asInstanceOf[typings.qlik.qlikStrings.it]
   @scala.inline
-  def it: typings.qlik.qlikStrings.it = this.cast("it")
-  @scala.inline
-  def `it-IT`: typings.qlik.qlikStrings.`it-IT` = this.cast("it-IT")
+  def `it-IT`: typings.qlik.qlikStrings.`it-IT` = "it-IT".asInstanceOf[typings.qlik.qlikStrings.`it-IT`]
 }
 

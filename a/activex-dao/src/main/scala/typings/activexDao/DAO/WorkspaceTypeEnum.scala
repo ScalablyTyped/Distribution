@@ -14,10 +14,8 @@ trait WorkspaceTypeEnum extends js.Object
 
 object WorkspaceTypeEnum {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dbUseJet: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def dbUseJet: `2` = this.cast(2)
-  @scala.inline
-  def dbUseODBC: `1` = this.cast(1)
+  def dbUseODBC: `1` = 1.asInstanceOf[`1`]
 }
 

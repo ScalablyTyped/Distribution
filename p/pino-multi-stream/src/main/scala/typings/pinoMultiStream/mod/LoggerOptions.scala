@@ -2,6 +2,7 @@ package typings.pinoMultiStream.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.pino.AnonAsObject
+import typings.pino.AnonBindings
 import typings.pino.mod.LevelWithSilent
 import typings.pino.mod.PrettyOptions
 import typings.pino.mod.SerializerFn
@@ -24,6 +25,7 @@ object LoggerOptions {
     changeLevelName: String = null,
     customLevels: StringDictionary[Double] = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
+    formatters: AnonBindings = null,
     level: LevelWithSilent | String = null,
     levelKey: String = null,
     levelVal: Int | Double = null,
@@ -47,6 +49,7 @@ object LoggerOptions {
     if (changeLevelName != null) __obj.updateDynamic("changeLevelName")(changeLevelName.asInstanceOf[js.Any])
     if (customLevels != null) __obj.updateDynamic("customLevels")(customLevels.asInstanceOf[js.Any])
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (formatters != null) __obj.updateDynamic("formatters")(formatters.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (levelKey != null) __obj.updateDynamic("levelKey")(levelKey.asInstanceOf[js.Any])
     if (levelVal != null) __obj.updateDynamic("levelVal")(levelVal.asInstanceOf[js.Any])

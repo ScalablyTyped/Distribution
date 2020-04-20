@@ -15,7 +15,6 @@ object AnonDetectScreenOrientation {
   @scala.inline
   def apply(detectScreenOrientation: Boolean): AnonDetectScreenOrientation = {
     val __obj = js.Dynamic.literal(detectScreenOrientation = detectScreenOrientation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDetectScreenOrientation]
   }
 }

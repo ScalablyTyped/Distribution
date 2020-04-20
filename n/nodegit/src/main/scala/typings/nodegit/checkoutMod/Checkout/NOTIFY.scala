@@ -24,20 +24,18 @@ trait NOTIFY extends js.Object
 
 object NOTIFY {
   @scala.inline
-  def ALL: `65535` = this.cast(65535)
+  def ALL: `65535` = 65535.asInstanceOf[`65535`]
   @scala.inline
-  def CONFLICT: `1` = this.cast(1)
+  def CONFLICT: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def DIRTY: `2` = this.cast(2)
+  def DIRTY: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def IGNORED: `16` = this.cast(16)
+  def IGNORED: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def NONE: `0` = this.cast(0)
+  def NONE: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def UNTRACKED: `8` = this.cast(8)
+  def UNTRACKED: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def UPDATED: `4` = this.cast(4)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UPDATED: `4` = 4.asInstanceOf[`4`]
 }
 

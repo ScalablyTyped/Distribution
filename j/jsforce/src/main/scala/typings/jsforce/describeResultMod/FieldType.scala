@@ -34,54 +34,52 @@ trait FieldType extends js.Object
 
 object FieldType {
   @scala.inline
-  def address: typings.jsforce.jsforceStrings.address = this.cast("address")
+  def address: typings.jsforce.jsforceStrings.address = "address".asInstanceOf[typings.jsforce.jsforceStrings.address]
   @scala.inline
-  def anyType: typings.jsforce.jsforceStrings.anyType = this.cast("anyType")
+  def anyType: typings.jsforce.jsforceStrings.anyType = "anyType".asInstanceOf[typings.jsforce.jsforceStrings.anyType]
   @scala.inline
-  def base64: typings.jsforce.jsforceStrings.base64 = this.cast("base64")
+  def base64: typings.jsforce.jsforceStrings.base64 = "base64".asInstanceOf[typings.jsforce.jsforceStrings.base64]
   @scala.inline
-  def boolean: typings.jsforce.jsforceStrings.boolean = this.cast("boolean")
+  def boolean: typings.jsforce.jsforceStrings.boolean = "boolean".asInstanceOf[typings.jsforce.jsforceStrings.boolean]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def combobox: typings.jsforce.jsforceStrings.combobox = "combobox".asInstanceOf[typings.jsforce.jsforceStrings.combobox]
   @scala.inline
-  def combobox: typings.jsforce.jsforceStrings.combobox = this.cast("combobox")
+  def complexvalue: typings.jsforce.jsforceStrings.complexvalue = "complexvalue".asInstanceOf[typings.jsforce.jsforceStrings.complexvalue]
   @scala.inline
-  def complexvalue: typings.jsforce.jsforceStrings.complexvalue = this.cast("complexvalue")
+  def currency: typings.jsforce.jsforceStrings.currency = "currency".asInstanceOf[typings.jsforce.jsforceStrings.currency]
   @scala.inline
-  def currency: typings.jsforce.jsforceStrings.currency = this.cast("currency")
+  def date: typings.jsforce.jsforceStrings.date = "date".asInstanceOf[typings.jsforce.jsforceStrings.date]
   @scala.inline
-  def date: typings.jsforce.jsforceStrings.date = this.cast("date")
+  def datetime: typings.jsforce.jsforceStrings.datetime = "datetime".asInstanceOf[typings.jsforce.jsforceStrings.datetime]
   @scala.inline
-  def datetime: typings.jsforce.jsforceStrings.datetime = this.cast("datetime")
+  def double: typings.jsforce.jsforceStrings.double = "double".asInstanceOf[typings.jsforce.jsforceStrings.double]
   @scala.inline
-  def double: typings.jsforce.jsforceStrings.double = this.cast("double")
+  def email: typings.jsforce.jsforceStrings.email = "email".asInstanceOf[typings.jsforce.jsforceStrings.email]
   @scala.inline
-  def email: typings.jsforce.jsforceStrings.email = this.cast("email")
+  def encryptedstring: typings.jsforce.jsforceStrings.encryptedstring = "encryptedstring".asInstanceOf[typings.jsforce.jsforceStrings.encryptedstring]
   @scala.inline
-  def encryptedstring: typings.jsforce.jsforceStrings.encryptedstring = this.cast("encryptedstring")
+  def id: typings.jsforce.jsforceStrings.id = "id".asInstanceOf[typings.jsforce.jsforceStrings.id]
   @scala.inline
-  def id: typings.jsforce.jsforceStrings.id = this.cast("id")
+  def int: typings.jsforce.jsforceStrings.int = "int".asInstanceOf[typings.jsforce.jsforceStrings.int]
   @scala.inline
-  def int: typings.jsforce.jsforceStrings.int = this.cast("int")
+  def location: typings.jsforce.jsforceStrings.location = "location".asInstanceOf[typings.jsforce.jsforceStrings.location]
   @scala.inline
-  def location: typings.jsforce.jsforceStrings.location = this.cast("location")
+  def multipicklist: typings.jsforce.jsforceStrings.multipicklist = "multipicklist".asInstanceOf[typings.jsforce.jsforceStrings.multipicklist]
   @scala.inline
-  def multipicklist: typings.jsforce.jsforceStrings.multipicklist = this.cast("multipicklist")
+  def percent: typings.jsforce.jsforceStrings.percent = "percent".asInstanceOf[typings.jsforce.jsforceStrings.percent]
   @scala.inline
-  def percent: typings.jsforce.jsforceStrings.percent = this.cast("percent")
+  def phone: typings.jsforce.jsforceStrings.phone = "phone".asInstanceOf[typings.jsforce.jsforceStrings.phone]
   @scala.inline
-  def phone: typings.jsforce.jsforceStrings.phone = this.cast("phone")
+  def picklist: typings.jsforce.jsforceStrings.picklist = "picklist".asInstanceOf[typings.jsforce.jsforceStrings.picklist]
   @scala.inline
-  def picklist: typings.jsforce.jsforceStrings.picklist = this.cast("picklist")
+  def reference: typings.jsforce.jsforceStrings.reference = "reference".asInstanceOf[typings.jsforce.jsforceStrings.reference]
   @scala.inline
-  def reference: typings.jsforce.jsforceStrings.reference = this.cast("reference")
+  def string: typings.jsforce.jsforceStrings.string = "string".asInstanceOf[typings.jsforce.jsforceStrings.string]
   @scala.inline
-  def string: typings.jsforce.jsforceStrings.string = this.cast("string")
+  def textarea: typings.jsforce.jsforceStrings.textarea = "textarea".asInstanceOf[typings.jsforce.jsforceStrings.textarea]
   @scala.inline
-  def textarea: typings.jsforce.jsforceStrings.textarea = this.cast("textarea")
+  def time: typings.jsforce.jsforceStrings.time = "time".asInstanceOf[typings.jsforce.jsforceStrings.time]
   @scala.inline
-  def time: typings.jsforce.jsforceStrings.time = this.cast("time")
-  @scala.inline
-  def url: typings.jsforce.jsforceStrings.url = this.cast("url")
+  def url: typings.jsforce.jsforceStrings.url = "url".asInstanceOf[typings.jsforce.jsforceStrings.url]
 }
 

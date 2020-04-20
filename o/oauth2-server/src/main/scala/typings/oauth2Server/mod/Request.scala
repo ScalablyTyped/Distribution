@@ -3,6 +3,7 @@ package typings.oauth2Server.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.oauth2Server.oauth2ServerBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation._
   */
 class Request () extends js.Object {
   def this(options: StringDictionary[js.Any]) = this()
-  def this(options: Request_[ParamsDictionary]) = this()
+  def this(options: Request_[ParamsDictionary, _, _, Query]) = this()
   var body: js.UndefOr[js.Any] = js.native
   var headers: js.UndefOr[StringDictionary[String]] = js.native
   var method: js.UndefOr[String] = js.native

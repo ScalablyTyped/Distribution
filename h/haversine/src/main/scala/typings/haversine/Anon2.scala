@@ -13,7 +13,6 @@ object Anon2 {
   @scala.inline
   def apply(format: geojson): Anon2 = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Anon2]
   }
 }

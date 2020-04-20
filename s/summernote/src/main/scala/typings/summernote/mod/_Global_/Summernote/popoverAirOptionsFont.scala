@@ -13,12 +13,10 @@ trait popoverAirOptionsFont extends js.Object
 
 object popoverAirOptionsFont {
   @scala.inline
-  def bold: typings.summernote.summernoteStrings.bold = this.cast("bold")
+  def bold: typings.summernote.summernoteStrings.bold = "bold".asInstanceOf[typings.summernote.summernoteStrings.bold]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def clear: typings.summernote.summernoteStrings.clear = "clear".asInstanceOf[typings.summernote.summernoteStrings.clear]
   @scala.inline
-  def clear: typings.summernote.summernoteStrings.clear = this.cast("clear")
-  @scala.inline
-  def underline: typings.summernote.summernoteStrings.underline = this.cast("underline")
+  def underline: typings.summernote.summernoteStrings.underline = "underline".asInstanceOf[typings.summernote.summernoteStrings.underline]
 }
 

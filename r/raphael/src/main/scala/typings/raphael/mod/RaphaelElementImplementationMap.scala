@@ -36,7 +36,6 @@ object RaphaelElementImplementationMap {
     text: RaphaelElementByTechnologyMap[SVGTextElement, VMLTextElement]
   ): RaphaelElementImplementationMap = {
     val __obj = js.Dynamic.literal(circle = circle.asInstanceOf[js.Any], ellipse = ellipse.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RaphaelElementImplementationMap]
   }
 }

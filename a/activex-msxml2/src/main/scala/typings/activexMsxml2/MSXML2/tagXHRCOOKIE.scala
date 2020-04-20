@@ -24,7 +24,6 @@ object tagXHRCOOKIE {
     pwszValue: String
   ): tagXHRCOOKIE = {
     val __obj = js.Dynamic.literal(dwFlags = dwFlags.asInstanceOf[js.Any], ftExpires = ftExpires.asInstanceOf[js.Any], pwszName = pwszName.asInstanceOf[js.Any], pwszP3PPolicy = pwszP3PPolicy.asInstanceOf[js.Any], pwszUrl = pwszUrl.asInstanceOf[js.Any], pwszValue = pwszValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[tagXHRCOOKIE]
   }
 }

@@ -17,7 +17,6 @@ object UnmarshalledAnalyticsExportDestination {
   @scala.inline
   def apply(S3BucketDestination: UnmarshalledAnalyticsS3BucketDestination): UnmarshalledAnalyticsExportDestination = {
     val __obj = js.Dynamic.literal(S3BucketDestination = S3BucketDestination.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnmarshalledAnalyticsExportDestination]
   }
 }

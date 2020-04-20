@@ -14,7 +14,6 @@ object components {
   @scala.inline
   def apply(dateCellWrapper: ComponentType[js.Object], eventWrapper: ComponentType[Event]): components = {
     val __obj = js.Dynamic.literal(dateCellWrapper = dateCellWrapper.asInstanceOf[js.Any], eventWrapper = eventWrapper.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[components]
   }
 }

@@ -20,7 +20,6 @@ object ReceiptRuleSnsAction {
   @scala.inline
   def apply(position: Double, topicArn: String): ReceiptRuleSnsAction = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], topicArn = topicArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReceiptRuleSnsAction]
   }
 }

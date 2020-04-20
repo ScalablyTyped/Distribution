@@ -13,7 +13,6 @@ object UpdateMetadataInfo {
   @scala.inline
   def apply(currentName: String, metadata: MetadataInfo): UpdateMetadataInfo = {
     val __obj = js.Dynamic.literal(currentName = currentName.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateMetadataInfo]
   }
 }

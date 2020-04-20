@@ -59,7 +59,7 @@ class ParenthesisExpression protected () extends Expression {
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
-  def expression(): Expression = js.native
+  def expression: Expression = js.native
   def expression(newValue: Expression): js.Any = js.native
 }
 

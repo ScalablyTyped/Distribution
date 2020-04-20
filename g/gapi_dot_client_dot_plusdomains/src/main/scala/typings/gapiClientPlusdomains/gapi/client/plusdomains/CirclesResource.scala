@@ -41,7 +41,6 @@ object CirclesResource {
     update: AnonKey => Request_[Circle]
   ): CirclesResource = {
     val __obj = js.Dynamic.literal(addPeople = js.Any.fromFunction1(addPeople), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), remove = js.Any.fromFunction1(remove), removePeople = js.Any.fromFunction1(removePeople), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[CirclesResource]
   }
 }

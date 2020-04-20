@@ -23,14 +23,14 @@ class WsdlEntry protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FWsdlEntry: IModel = js.native
-  def containerAsWsdlDescription(): WsdlDescription = js.native
-  def contents(): String = js.native
+  def containerAsWsdlDescription: WsdlDescription = js.native
+  def contents: String = js.native
   def contents(newValue: String): js.Any = js.native
-  def localizedContentsFormat(): String = js.native
+  def localizedContentsFormat: String = js.native
   def localizedContentsFormat(newValue: String): js.Any = js.native
-  def localizedLocationFormat(): String = js.native
+  def localizedLocationFormat: String = js.native
   def localizedLocationFormat(newValue: String): js.Any = js.native
-  def location(): String = js.native
+  def location: String = js.native
   def location(newValue: String): js.Any = js.native
 }
 

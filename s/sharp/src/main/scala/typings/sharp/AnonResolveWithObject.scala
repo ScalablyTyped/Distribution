@@ -13,7 +13,6 @@ object AnonResolveWithObject {
   @scala.inline
   def apply(resolveWithObject: `false`): AnonResolveWithObject = {
     val __obj = js.Dynamic.literal(resolveWithObject = resolveWithObject.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonResolveWithObject]
   }
 }

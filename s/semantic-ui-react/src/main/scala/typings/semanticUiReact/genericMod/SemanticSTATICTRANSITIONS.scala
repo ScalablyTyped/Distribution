@@ -17,20 +17,18 @@ trait SemanticSTATICTRANSITIONS extends js.Object
 
 object SemanticSTATICTRANSITIONS {
   @scala.inline
-  def bounce: typings.semanticUiReact.semanticUiReactStrings.bounce = this.cast("bounce")
+  def bounce: typings.semanticUiReact.semanticUiReactStrings.bounce = "bounce".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bounce]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def flash: typings.semanticUiReact.semanticUiReactStrings.flash = "flash".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.flash]
   @scala.inline
-  def flash: typings.semanticUiReact.semanticUiReactStrings.flash = this.cast("flash")
+  def glow: typings.semanticUiReact.semanticUiReactStrings.glow = "glow".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.glow]
   @scala.inline
-  def glow: typings.semanticUiReact.semanticUiReactStrings.glow = this.cast("glow")
+  def jiggle: typings.semanticUiReact.semanticUiReactStrings.jiggle = "jiggle".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.jiggle]
   @scala.inline
-  def jiggle: typings.semanticUiReact.semanticUiReactStrings.jiggle = this.cast("jiggle")
+  def pulse: typings.semanticUiReact.semanticUiReactStrings.pulse = "pulse".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pulse]
   @scala.inline
-  def pulse: typings.semanticUiReact.semanticUiReactStrings.pulse = this.cast("pulse")
+  def shake: typings.semanticUiReact.semanticUiReactStrings.shake = "shake".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.shake]
   @scala.inline
-  def shake: typings.semanticUiReact.semanticUiReactStrings.shake = this.cast("shake")
-  @scala.inline
-  def tada: typings.semanticUiReact.semanticUiReactStrings.tada = this.cast("tada")
+  def tada: typings.semanticUiReact.semanticUiReactStrings.tada = "tada".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tada]
 }
 

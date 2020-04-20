@@ -14,14 +14,12 @@ trait ListenTargetOptions extends js.Object
 
 object ListenTargetOptions {
   @scala.inline
-  def body: typings.ionicCore.ionicCoreStrings.body = this.cast("body")
+  def body: typings.ionicCore.ionicCoreStrings.body = "body".asInstanceOf[typings.ionicCore.ionicCoreStrings.body]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def document: typings.ionicCore.ionicCoreStrings.document = "document".asInstanceOf[typings.ionicCore.ionicCoreStrings.document]
   @scala.inline
-  def document: typings.ionicCore.ionicCoreStrings.document = this.cast("document")
+  def parent: typings.ionicCore.ionicCoreStrings.parent = "parent".asInstanceOf[typings.ionicCore.ionicCoreStrings.parent]
   @scala.inline
-  def parent: typings.ionicCore.ionicCoreStrings.parent = this.cast("parent")
-  @scala.inline
-  def window: typings.ionicCore.ionicCoreStrings.window = this.cast("window")
+  def window: typings.ionicCore.ionicCoreStrings.window = "window".asInstanceOf[typings.ionicCore.ionicCoreStrings.window]
 }
 

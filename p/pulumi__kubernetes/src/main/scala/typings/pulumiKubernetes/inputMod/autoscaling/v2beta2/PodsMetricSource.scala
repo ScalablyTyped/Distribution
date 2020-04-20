@@ -25,7 +25,6 @@ object PodsMetricSource {
   @scala.inline
   def apply(metric: Input[MetricIdentifier], target: Input[MetricTarget]): PodsMetricSource = {
     val __obj = js.Dynamic.literal(metric = metric.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PodsMetricSource]
   }
 }

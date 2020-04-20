@@ -14,7 +14,6 @@ object RankedStatsDto {
   @scala.inline
   def apply(champions: js.Array[ChampionStatsDto], modifyDate: Double, summonerId: Double): RankedStatsDto = {
     val __obj = js.Dynamic.literal(champions = champions.asInstanceOf[js.Any], modifyDate = modifyDate.asInstanceOf[js.Any], summonerId = summonerId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RankedStatsDto]
   }
 }

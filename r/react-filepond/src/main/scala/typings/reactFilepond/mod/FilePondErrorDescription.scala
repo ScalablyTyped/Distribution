@@ -13,7 +13,6 @@ object FilePondErrorDescription {
   @scala.inline
   def apply(main: String, sub: String): FilePondErrorDescription = {
     val __obj = js.Dynamic.literal(main = main.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FilePondErrorDescription]
   }
 }

@@ -12,7 +12,6 @@ object IDatePickerCaptionState {
   @scala.inline
   def apply(monthRightOffset: Double): IDatePickerCaptionState = {
     val __obj = js.Dynamic.literal(monthRightOffset = monthRightOffset.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDatePickerCaptionState]
   }
 }

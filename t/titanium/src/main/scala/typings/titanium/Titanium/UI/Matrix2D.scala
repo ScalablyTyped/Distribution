@@ -8,8 +8,9 @@ import scala.scalajs.js.annotation._
 /**
 		 * The 2D Matrix is an object for holding values for an affine transformation matrix.
 		 */
+@JSGlobal("Titanium.UI.Matrix2D")
 @js.native
-trait Matrix2D extends Proxy {
+class Matrix2D () extends Proxy {
   /**
   			 * The entry at position [1,1] in the matrix.
   			 */
@@ -35,27 +36,33 @@ trait Matrix2D extends Proxy {
   			 */
   var ty: Double = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.2DMatrix.a> property.
+  			 * Gets the value of the <Titanium.UI.Matrix2D.a> property.
+  			 * @deprecated Access <Titanium.UI.Matrix2D.a> instead.
   			 */
   def getA(): Double = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.2DMatrix.b> property.
+  			 * Gets the value of the <Titanium.UI.Matrix2D.b> property.
+  			 * @deprecated Access <Titanium.UI.Matrix2D.b> instead.
   			 */
   def getB(): Double = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.2DMatrix.c> property.
+  			 * Gets the value of the <Titanium.UI.Matrix2D.c> property.
+  			 * @deprecated Access <Titanium.UI.Matrix2D.c> instead.
   			 */
   def getC(): Double = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.2DMatrix.d> property.
+  			 * Gets the value of the <Titanium.UI.Matrix2D.d> property.
+  			 * @deprecated Access <Titanium.UI.Matrix2D.d> instead.
   			 */
   def getD(): Double = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.2DMatrix.tx> property.
+  			 * Gets the value of the <Titanium.UI.Matrix2D.tx> property.
+  			 * @deprecated Access <Titanium.UI.Matrix2D.tx> instead.
   			 */
   def getTx(): Double = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.2DMatrix.ty> property.
+  			 * Gets the value of the <Titanium.UI.Matrix2D.ty> property.
+  			 * @deprecated Access <Titanium.UI.Matrix2D.ty> instead.
   			 */
   def getTy(): Double = js.native
   /**
@@ -72,33 +79,39 @@ trait Matrix2D extends Proxy {
   def rotate(angle: Double): Matrix2D = js.native
   def rotate(angle: Double, toAngle: Double): Matrix2D = js.native
   /**
-  			 * Returns a `2DMatrix` object that specifies a scaling animation from one scale to another.
+  			 * Returns a `Matrix2D` object that specifies a scaling animation from one scale to another.
   			 */
   def scale(sx: Double, sy: Double): Matrix2D = js.native
   def scale(sx: Double, sy: Double, toSx: Double): Matrix2D = js.native
   def scale(sx: Double, sy: Double, toSx: Double, toSy: Double): Matrix2D = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.2DMatrix.a> property.
+  			 * Sets the value of the <Titanium.UI.Matrix2D.a> property.
+  			 * @deprecated Set the value using <Titanium.UI.Matrix2D.a> instead.
   			 */
   def setA(a: Double): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.2DMatrix.b> property.
+  			 * Sets the value of the <Titanium.UI.Matrix2D.b> property.
+  			 * @deprecated Set the value using <Titanium.UI.Matrix2D.b> instead.
   			 */
   def setB(b: Double): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.2DMatrix.c> property.
+  			 * Sets the value of the <Titanium.UI.Matrix2D.c> property.
+  			 * @deprecated Set the value using <Titanium.UI.Matrix2D.c> instead.
   			 */
   def setC(c: Double): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.2DMatrix.d> property.
+  			 * Sets the value of the <Titanium.UI.Matrix2D.d> property.
+  			 * @deprecated Set the value using <Titanium.UI.Matrix2D.d> instead.
   			 */
   def setD(d: Double): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.2DMatrix.tx> property.
+  			 * Sets the value of the <Titanium.UI.Matrix2D.tx> property.
+  			 * @deprecated Set the value using <Titanium.UI.Matrix2D.tx> instead.
   			 */
   def setTx(tx: Double): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.2DMatrix.ty> property.
+  			 * Sets the value of the <Titanium.UI.Matrix2D.ty> property.
+  			 * @deprecated Set the value using <Titanium.UI.Matrix2D.ty> instead.
   			 */
   def setTy(ty: Double): Unit = js.native
   /**

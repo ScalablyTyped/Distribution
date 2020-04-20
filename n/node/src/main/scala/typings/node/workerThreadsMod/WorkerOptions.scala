@@ -1,6 +1,7 @@
 package typings.node.workerThreadsMod
 
-import typings.node.NodeJS.ProcessEnv
+import typings.node.NodeJS.Dict
+import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,13 +14,17 @@ trait WorkerOptions extends js.Object {
     * were passed as CLI options to the script.
     */
   var argv: js.UndefOr[js.Array[_]] = js.undefined
-  var env: js.UndefOr[ProcessEnv | js.Symbol] = js.undefined
+  var env: js.UndefOr[Dict[String] | js.Symbol] = js.undefined
   var eval: js.UndefOr[Boolean] = js.undefined
   var execArgv: js.UndefOr[js.Array[String]] = js.undefined
   var resourceLimits: js.UndefOr[ResourceLimits] = js.undefined
   var stderr: js.UndefOr[Boolean] = js.undefined
   var stdin: js.UndefOr[Boolean] = js.undefined
   var stdout: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Additional data to send in the first worker message.
+    */
+  var transferList: js.UndefOr[js.Array[ArrayBuffer | MessagePort]] = js.undefined
   var workerData: js.UndefOr[js.Any] = js.undefined
 }
 
@@ -27,13 +32,14 @@ object WorkerOptions {
   @scala.inline
   def apply(
     argv: js.Array[_] = null,
-    env: ProcessEnv | js.Symbol = null,
+    env: Dict[String] | js.Symbol = null,
     eval: js.UndefOr[Boolean] = js.undefined,
     execArgv: js.Array[String] = null,
     resourceLimits: ResourceLimits = null,
     stderr: js.UndefOr[Boolean] = js.undefined,
     stdin: js.UndefOr[Boolean] = js.undefined,
     stdout: js.UndefOr[Boolean] = js.undefined,
+    transferList: js.Array[ArrayBuffer | MessagePort] = null,
     workerData: js.Any = null
   ): WorkerOptions = {
     val __obj = js.Dynamic.literal()
@@ -45,6 +51,7 @@ object WorkerOptions {
     if (!js.isUndefined(stderr)) __obj.updateDynamic("stderr")(stderr.asInstanceOf[js.Any])
     if (!js.isUndefined(stdin)) __obj.updateDynamic("stdin")(stdin.asInstanceOf[js.Any])
     if (!js.isUndefined(stdout)) __obj.updateDynamic("stdout")(stdout.asInstanceOf[js.Any])
+    if (transferList != null) __obj.updateDynamic("transferList")(transferList.asInstanceOf[js.Any])
     if (workerData != null) __obj.updateDynamic("workerData")(workerData.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkerOptions]
   }

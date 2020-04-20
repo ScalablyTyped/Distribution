@@ -19,24 +19,22 @@ trait WidthCalculationMethod extends js.Object
 
 object WidthCalculationMethod {
   @scala.inline
-  def bodyOffset: typings.iframeResizer.iframeResizerStrings.bodyOffset = this.cast("bodyOffset")
+  def bodyOffset: typings.iframeResizer.iframeResizerStrings.bodyOffset = "bodyOffset".asInstanceOf[typings.iframeResizer.iframeResizerStrings.bodyOffset]
   @scala.inline
-  def bodyScroll: typings.iframeResizer.iframeResizerStrings.bodyScroll = this.cast("bodyScroll")
+  def bodyScroll: typings.iframeResizer.iframeResizerStrings.bodyScroll = "bodyScroll".asInstanceOf[typings.iframeResizer.iframeResizerStrings.bodyScroll]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def documentElementOffset: typings.iframeResizer.iframeResizerStrings.documentElementOffset = "documentElementOffset".asInstanceOf[typings.iframeResizer.iframeResizerStrings.documentElementOffset]
   @scala.inline
-  def documentElementOffset: typings.iframeResizer.iframeResizerStrings.documentElementOffset = this.cast("documentElementOffset")
+  def documentElementScroll: typings.iframeResizer.iframeResizerStrings.documentElementScroll = "documentElementScroll".asInstanceOf[typings.iframeResizer.iframeResizerStrings.documentElementScroll]
   @scala.inline
-  def documentElementScroll: typings.iframeResizer.iframeResizerStrings.documentElementScroll = this.cast("documentElementScroll")
+  def max: typings.iframeResizer.iframeResizerStrings.max = "max".asInstanceOf[typings.iframeResizer.iframeResizerStrings.max]
   @scala.inline
-  def max: typings.iframeResizer.iframeResizerStrings.max = this.cast("max")
+  def min: typings.iframeResizer.iframeResizerStrings.min = "min".asInstanceOf[typings.iframeResizer.iframeResizerStrings.min]
   @scala.inline
-  def min: typings.iframeResizer.iframeResizerStrings.min = this.cast("min")
+  def rightMostElement: typings.iframeResizer.iframeResizerStrings.rightMostElement = "rightMostElement".asInstanceOf[typings.iframeResizer.iframeResizerStrings.rightMostElement]
   @scala.inline
-  def rightMostElement: typings.iframeResizer.iframeResizerStrings.rightMostElement = this.cast("rightMostElement")
+  def scroll: typings.iframeResizer.iframeResizerStrings.scroll = "scroll".asInstanceOf[typings.iframeResizer.iframeResizerStrings.scroll]
   @scala.inline
-  def scroll: typings.iframeResizer.iframeResizerStrings.scroll = this.cast("scroll")
-  @scala.inline
-  def taggedElement: typings.iframeResizer.iframeResizerStrings.taggedElement = this.cast("taggedElement")
+  def taggedElement: typings.iframeResizer.iframeResizerStrings.taggedElement = "taggedElement".asInstanceOf[typings.iframeResizer.iframeResizerStrings.taggedElement]
 }
 

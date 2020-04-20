@@ -24,7 +24,6 @@ object AnonCancelledFailed {
     succeeded: Double
   ): AnonCancelledFailed = {
     val __obj = js.Dynamic.literal(cancelled = cancelled.asInstanceOf[js.Any], failed = failed.asInstanceOf[js.Any], inProgress = inProgress.asInstanceOf[js.Any], notSet = notSet.asInstanceOf[js.Any], queued = queued.asInstanceOf[js.Any], succeeded = succeeded.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCancelledFailed]
   }
 }

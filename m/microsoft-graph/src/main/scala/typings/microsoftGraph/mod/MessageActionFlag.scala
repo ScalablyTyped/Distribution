@@ -21,28 +21,26 @@ trait MessageActionFlag extends js.Object
 
 object MessageActionFlag {
   @scala.inline
-  def any: typings.microsoftGraph.microsoftGraphStrings.any = this.cast("any")
+  def any: typings.microsoftGraph.microsoftGraphStrings.any = "any".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.any]
   @scala.inline
-  def call: typings.microsoftGraph.microsoftGraphStrings.call = this.cast("call")
+  def call: typings.microsoftGraph.microsoftGraphStrings.call = "call".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.call]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def doNotForward: typings.microsoftGraph.microsoftGraphStrings.doNotForward = "doNotForward".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.doNotForward]
   @scala.inline
-  def doNotForward: typings.microsoftGraph.microsoftGraphStrings.doNotForward = this.cast("doNotForward")
+  def followUp: typings.microsoftGraph.microsoftGraphStrings.followUp = "followUp".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.followUp]
   @scala.inline
-  def followUp: typings.microsoftGraph.microsoftGraphStrings.followUp = this.cast("followUp")
+  def forward: typings.microsoftGraph.microsoftGraphStrings.forward = "forward".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.forward]
   @scala.inline
-  def forward: typings.microsoftGraph.microsoftGraphStrings.forward = this.cast("forward")
+  def fyi: typings.microsoftGraph.microsoftGraphStrings.fyi = "fyi".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.fyi]
   @scala.inline
-  def fyi: typings.microsoftGraph.microsoftGraphStrings.fyi = this.cast("fyi")
+  def noResponseNecessary: typings.microsoftGraph.microsoftGraphStrings.noResponseNecessary = "noResponseNecessary".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.noResponseNecessary]
   @scala.inline
-  def noResponseNecessary: typings.microsoftGraph.microsoftGraphStrings.noResponseNecessary = this.cast("noResponseNecessary")
+  def read: typings.microsoftGraph.microsoftGraphStrings.read = "read".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.read]
   @scala.inline
-  def read: typings.microsoftGraph.microsoftGraphStrings.read = this.cast("read")
+  def reply: typings.microsoftGraph.microsoftGraphStrings.reply = "reply".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.reply]
   @scala.inline
-  def reply: typings.microsoftGraph.microsoftGraphStrings.reply = this.cast("reply")
+  def replyToAll: typings.microsoftGraph.microsoftGraphStrings.replyToAll = "replyToAll".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.replyToAll]
   @scala.inline
-  def replyToAll: typings.microsoftGraph.microsoftGraphStrings.replyToAll = this.cast("replyToAll")
-  @scala.inline
-  def review: typings.microsoftGraph.microsoftGraphStrings.review = this.cast("review")
+  def review: typings.microsoftGraph.microsoftGraphStrings.review = "review".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.review]
 }
 

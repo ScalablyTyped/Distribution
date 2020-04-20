@@ -17,7 +17,7 @@ trait HTMLSelectElement
     * Retrieves a reference to the form that the object is embedded in.
     */
   val form: HTMLFormElement | Null = js.native
-  @JSName(scala.scalajs.js.Symbol.iterator)
+  @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[Element]] = js.native
   val labels: NodeListOf[HTMLLabelElement] = js.native
   /**

@@ -12,7 +12,6 @@ object RsaPssParams {
   @scala.inline
   def apply(name: java.lang.String, saltLength: Double): RsaPssParams = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], saltLength = saltLength.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RsaPssParams]
   }
 }

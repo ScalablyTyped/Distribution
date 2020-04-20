@@ -14,7 +14,6 @@ object SingleResponse {
   @scala.inline
   def apply(data: GIFObject, meta: AnonMsg, pagination: AnonCount): SingleResponse = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], pagination = pagination.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SingleResponse]
   }
 }

@@ -40,7 +40,6 @@ object Typeofuac {
     uac_restore_to: () => Double
   ): Typeofuac = {
     val __obj = js.Dynamic.literal(uac_auth = js.Any.fromFunction0(uac_auth), uac_reg_disable = js.Any.fromFunction2(uac_reg_disable), uac_reg_enable = js.Any.fromFunction2(uac_reg_enable), uac_reg_lookup = js.Any.fromFunction2(uac_reg_lookup), uac_reg_refresh = js.Any.fromFunction1(uac_reg_refresh), uac_reg_request_to = js.Any.fromFunction2(uac_reg_request_to), uac_reg_status = js.Any.fromFunction1(uac_reg_status), uac_replace_from = js.Any.fromFunction2(uac_replace_from), uac_replace_from_uri = js.Any.fromFunction1(uac_replace_from_uri), uac_replace_to = js.Any.fromFunction2(uac_replace_to), uac_replace_to_uri = js.Any.fromFunction1(uac_replace_to_uri), uac_req_send = js.Any.fromFunction0(uac_req_send), uac_restore_from = js.Any.fromFunction0(uac_restore_from), uac_restore_to = js.Any.fromFunction0(uac_restore_to))
-  
     __obj.asInstanceOf[Typeofuac]
   }
 }

@@ -23,7 +23,6 @@ object GetSecretsResult {
   @scala.inline
   def apply(id: String, plaintext: StringDictionary[String], secrets: js.Array[GetSecretsSecret]): GetSecretsResult = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], plaintext = plaintext.asInstanceOf[js.Any], secrets = secrets.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetSecretsResult]
   }
 }

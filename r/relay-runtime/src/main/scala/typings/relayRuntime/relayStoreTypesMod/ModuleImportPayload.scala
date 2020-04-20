@@ -27,7 +27,6 @@ object ModuleImportPayload {
     variables: Variables
   ): ModuleImportPayload = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], dataID = dataID.asInstanceOf[js.Any], operationReference = operationReference.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], typeName = typeName.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ModuleImportPayload]
   }
 }

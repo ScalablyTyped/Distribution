@@ -16,9 +16,9 @@ object xtreenodeMod extends js.Object {
     var parent: XTreeNode[T] | Null = js.native
     var right: XTreeNode[T] | Null = js.native
     var value: T = js.native
-    def grand(): XTreeNode[T] | Null = js.native
-    def sibling(): XTreeNode[T] | Null = js.native
-    def uncle(): XTreeNode[T] | Null = js.native
+    def grand: XTreeNode[T] | Null = js.native
+    def sibling: XTreeNode[T] | Null = js.native
+    def uncle: XTreeNode[T] | Null = js.native
   }
   
 }

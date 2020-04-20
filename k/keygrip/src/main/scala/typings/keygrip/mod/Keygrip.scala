@@ -14,7 +14,6 @@ object Keygrip {
   @scala.inline
   def apply(index: (js.Any, String) => Double, sign: js.Any => String, verify: (js.Any, String) => Boolean): Keygrip = {
     val __obj = js.Dynamic.literal(index = js.Any.fromFunction2(index), sign = js.Any.fromFunction1(sign), verify = js.Any.fromFunction2(verify))
-  
     __obj.asInstanceOf[Keygrip]
   }
 }

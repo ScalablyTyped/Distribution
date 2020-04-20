@@ -20,7 +20,6 @@ object AuthorizeIpRulesRequest {
   @scala.inline
   def apply(GroupId: IpGroupId, UserRules: IpRuleList): AuthorizeIpRulesRequest = {
     val __obj = js.Dynamic.literal(GroupId = GroupId.asInstanceOf[js.Any], UserRules = UserRules.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AuthorizeIpRulesRequest]
   }
 }

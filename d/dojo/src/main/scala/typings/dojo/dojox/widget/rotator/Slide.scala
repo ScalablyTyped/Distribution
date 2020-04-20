@@ -45,7 +45,6 @@ object Slide {
     slideUp: js.Object => js.Any
   ): Slide = {
     val __obj = js.Dynamic.literal(slideDown = js.Any.fromFunction1(slideDown), slideLeft = js.Any.fromFunction1(slideLeft), slideRight = js.Any.fromFunction1(slideRight), slideUp = js.Any.fromFunction1(slideUp))
-  
     __obj.asInstanceOf[Slide]
   }
 }

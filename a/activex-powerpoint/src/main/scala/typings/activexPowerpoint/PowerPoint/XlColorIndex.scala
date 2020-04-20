@@ -14,10 +14,8 @@ trait XlColorIndex extends js.Object
 
 object XlColorIndex {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlColorIndexAutomatic: `-4105` = -4105.asInstanceOf[`-4105`]
   @scala.inline
-  def xlColorIndexAutomatic: `-4105` = this.cast(-4105)
-  @scala.inline
-  def xlColorIndexNone: `-4142` = this.cast(-4142)
+  def xlColorIndexNone: `-4142` = -4142.asInstanceOf[`-4142`]
 }
 

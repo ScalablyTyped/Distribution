@@ -13,7 +13,6 @@ object WalkerItem {
   @scala.inline
   def apply(path: String, stats: typings.fsExtra.mod.Stats): WalkerItem = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WalkerItem]
   }
 }

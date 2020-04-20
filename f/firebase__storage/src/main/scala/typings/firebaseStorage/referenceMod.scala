@@ -27,7 +27,7 @@ object referenceMod extends js.Object {
     var listAllHelper: js.Any = js.native
     var location: Location = js.native
     var throwIfRoot_ : js.Any = js.native
-    def bucket(): String = js.native
+    def bucket: String = js.native
     /**
       * @return A reference to the object obtained by
       *     appending childPath, removing any duplicate, beginning, or trailing
@@ -39,7 +39,7 @@ object referenceMod extends js.Object {
       * @return A promise that resolves if the deletion succeeds.
       */
     def delete(): js.Promise[Unit] = js.native
-    def fullPath(): String = js.native
+    def fullPath: String = js.native
     /**
       * @return A promise that resolves with the download
       *     URL for this object.
@@ -92,13 +92,13 @@ object referenceMod extends js.Object {
       */
     def listAll(): js.Promise[ListResult] = js.native
     /* protected */ def mappings(): Mappings = js.native
-    def name(): String = js.native
+    def name: String = js.native
     /* protected */ def newRef(authWrapper: AuthWrapper, location: Location): Reference = js.native
     /**
       * @return A reference to the parent of the
       *     current object, or null if the current object is the root.
       */
-    def parent(): Reference | Null = js.native
+    def parent: Reference | Null = js.native
     def put(data: ArrayBuffer): UploadTask = js.native
     def put(data: ArrayBuffer, metadata: Metadata): UploadTask = js.native
     /**
@@ -125,8 +125,8 @@ object referenceMod extends js.Object {
       * @return An reference to the root of this
       *     object's bucket.
       */
-    def root(): Reference = js.native
-    def storage(): Service = js.native
+    def root: Reference = js.native
+    def storage: Service = js.native
     /**
       * Updates the metadata for this object.
       * @param metadata The new metadata for the object.

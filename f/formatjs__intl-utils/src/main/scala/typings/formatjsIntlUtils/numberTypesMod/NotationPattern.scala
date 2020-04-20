@@ -20,7 +20,6 @@ object NotationPattern {
     standard: SignPattern
   ): NotationPattern = {
     val __obj = js.Dynamic.literal(compactLong = compactLong.asInstanceOf[js.Any], compactShort = compactShort.asInstanceOf[js.Any], scientific = scientific.asInstanceOf[js.Any], standard = standard.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NotationPattern]
   }
 }

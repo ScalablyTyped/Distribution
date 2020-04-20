@@ -66,7 +66,6 @@ object AnonMNT {
     XPF: js.Array[scala.Nothing]
   ): AnonMNT = {
     val __obj = js.Dynamic.literal(AUD = AUD.asInstanceOf[js.Any], BDT = BDT.asInstanceOf[js.Any], BRL = BRL.asInstanceOf[js.Any], BYN = BYN.asInstanceOf[js.Any], CAD = CAD.asInstanceOf[js.Any], CNY = CNY.asInstanceOf[js.Any], GBP = GBP.asInstanceOf[js.Any], HKD = HKD.asInstanceOf[js.Any], ILS = ILS.asInstanceOf[js.Any], INR = INR.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any], KHR = KHR.asInstanceOf[js.Any], KRW = KRW.asInstanceOf[js.Any], LAK = LAK.asInstanceOf[js.Any], MNT = MNT.asInstanceOf[js.Any], MXN = MXN.asInstanceOf[js.Any], NZD = NZD.asInstanceOf[js.Any], PLN = PLN.asInstanceOf[js.Any], PYG = PYG.asInstanceOf[js.Any], RUB = RUB.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any], VND = VND.asInstanceOf[js.Any], XAF = XAF.asInstanceOf[js.Any], XCD = XCD.asInstanceOf[js.Any], XOF = XOF.asInstanceOf[js.Any], XPF = XPF.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMNT]
   }
 }

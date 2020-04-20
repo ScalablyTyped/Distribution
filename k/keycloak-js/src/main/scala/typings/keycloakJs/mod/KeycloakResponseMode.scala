@@ -12,10 +12,8 @@ trait KeycloakResponseMode extends js.Object
 
 object KeycloakResponseMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fragment: typings.keycloakJs.keycloakJsStrings.fragment = "fragment".asInstanceOf[typings.keycloakJs.keycloakJsStrings.fragment]
   @scala.inline
-  def fragment: typings.keycloakJs.keycloakJsStrings.fragment = this.cast("fragment")
-  @scala.inline
-  def query: typings.keycloakJs.keycloakJsStrings.query = this.cast("query")
+  def query: typings.keycloakJs.keycloakJsStrings.query = "query".asInstanceOf[typings.keycloakJs.keycloakJsStrings.query]
 }
 

@@ -20,7 +20,6 @@ object IAuthManagerServiceProvider {
     unauthenticate: () => Unit
   ): IAuthManagerServiceProvider = {
     val __obj = js.Dynamic.literal(authenticate = js.Any.fromFunction0(authenticate), checkAuthOnRefresh = js.Any.fromFunction0(checkAuthOnRefresh), redirectWhenUnauthenticated = js.Any.fromFunction0(redirectWhenUnauthenticated), unauthenticate = js.Any.fromFunction0(unauthenticate))
-  
     __obj.asInstanceOf[IAuthManagerServiceProvider]
   }
 }

@@ -16,7 +16,6 @@ object GetVoiceConnectorTerminationHealthRequest {
   @scala.inline
   def apply(VoiceConnectorId: NonEmptyString): GetVoiceConnectorTerminationHealthRequest = {
     val __obj = js.Dynamic.literal(VoiceConnectorId = VoiceConnectorId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetVoiceConnectorTerminationHealthRequest]
   }
 }

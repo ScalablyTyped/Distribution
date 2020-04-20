@@ -22,7 +22,6 @@ object IEquipmentComponent {
   @scala.inline
   def apply(slot_drop_chance: js.Array[AnonDropchance], table: String): IEquipmentComponent = {
     val __obj = js.Dynamic.literal(slot_drop_chance = slot_drop_chance.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IEquipmentComponent]
   }
 }

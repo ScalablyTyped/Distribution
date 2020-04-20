@@ -21,7 +21,7 @@ class ɵangularPackagesCoreCoreL protected () extends ɵangularPackagesCoreCoreK
   val properties: StringDictionary[js.Any] = js.native
   val styles: StringDictionary[Null | String] = js.native
   def addChild(child: DebugNode): Unit = js.native
-  def children(): js.Array[DebugElement] = js.native
+  def children: js.Array[DebugElement] = js.native
   def insertBefore(refChild: DebugNode, newChild: DebugNode): Unit = js.native
   def insertChildrenAfter(child: DebugNode, newChildren: js.Array[DebugNode]): Unit = js.native
   def query(predicate: Predicate[DebugElement]): DebugElement = js.native

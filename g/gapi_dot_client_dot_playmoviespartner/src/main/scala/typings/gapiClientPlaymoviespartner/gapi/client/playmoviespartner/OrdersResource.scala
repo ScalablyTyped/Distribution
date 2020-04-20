@@ -28,7 +28,6 @@ object OrdersResource {
   @scala.inline
   def apply(get: AnonAlt => Request_[Order], list: AnonBearertoken => Request_[ListOrdersResponse]): OrdersResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[OrdersResource]
   }
 }

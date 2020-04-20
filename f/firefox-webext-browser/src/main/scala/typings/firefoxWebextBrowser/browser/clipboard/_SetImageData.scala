@@ -13,10 +13,8 @@ trait _SetImageData extends js.Object
 
 object _SetImageData {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def jpeg: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.jpeg = "jpeg".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.jpeg]
   @scala.inline
-  def jpeg: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.jpeg = this.cast("jpeg")
-  @scala.inline
-  def png: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.png = this.cast("png")
+  def png: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.png = "png".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.png]
 }
 

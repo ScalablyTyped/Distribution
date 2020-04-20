@@ -19,7 +19,6 @@ object AnonCharsToEscape {
   @scala.inline
   def apply(charsToEscape: String, escapeChar: String): AnonCharsToEscape = {
     val __obj = js.Dynamic.literal(charsToEscape = charsToEscape.asInstanceOf[js.Any], escapeChar = escapeChar.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCharsToEscape]
   }
 }

@@ -16,12 +16,10 @@ trait OlStoreType extends js.Object
 
 object OlStoreType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olStoreANSI: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def olStoreANSI: `3` = this.cast(3)
+  def olStoreDefault: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olStoreDefault: `1` = this.cast(1)
-  @scala.inline
-  def olStoreUnicode: `2` = this.cast(2)
+  def olStoreUnicode: `2` = 2.asInstanceOf[`2`]
 }
 

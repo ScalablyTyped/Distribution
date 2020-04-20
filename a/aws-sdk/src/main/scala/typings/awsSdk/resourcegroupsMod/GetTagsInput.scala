@@ -16,7 +16,6 @@ object GetTagsInput {
   @scala.inline
   def apply(Arn: GroupArn): GetTagsInput = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetTagsInput]
   }
 }

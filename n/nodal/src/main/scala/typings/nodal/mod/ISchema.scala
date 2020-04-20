@@ -13,7 +13,6 @@ object ISchema {
   @scala.inline
   def apply(columns: js.Array[IColumn], table: String): ISchema = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISchema]
   }
 }

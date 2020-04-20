@@ -348,344 +348,342 @@ trait PpEntryEffect extends js.Object
 
 object PpEntryEffect {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ppEffectAppear: `3844` = 3844.asInstanceOf[`3844`]
   @scala.inline
-  def ppEffectAppear: `3844` = this.cast(3844)
+  def ppEffectBlindsHorizontal: `769` = 769.asInstanceOf[`769`]
   @scala.inline
-  def ppEffectBlindsHorizontal: `769` = this.cast(769)
+  def ppEffectBlindsVertical: `770` = 770.asInstanceOf[`770`]
   @scala.inline
-  def ppEffectBlindsVertical: `770` = this.cast(770)
+  def ppEffectBoxDown: `3925` = 3925.asInstanceOf[`3925`]
   @scala.inline
-  def ppEffectBoxDown: `3925` = this.cast(3925)
+  def ppEffectBoxIn: `3074` = 3074.asInstanceOf[`3074`]
   @scala.inline
-  def ppEffectBoxIn: `3074` = this.cast(3074)
+  def ppEffectBoxLeft: `3922` = 3922.asInstanceOf[`3922`]
   @scala.inline
-  def ppEffectBoxLeft: `3922` = this.cast(3922)
+  def ppEffectBoxOut: `3073` = 3073.asInstanceOf[`3073`]
   @scala.inline
-  def ppEffectBoxOut: `3073` = this.cast(3073)
+  def ppEffectBoxRight: `3924` = 3924.asInstanceOf[`3924`]
   @scala.inline
-  def ppEffectBoxRight: `3924` = this.cast(3924)
+  def ppEffectBoxUp: `3923` = 3923.asInstanceOf[`3923`]
   @scala.inline
-  def ppEffectBoxUp: `3923` = this.cast(3923)
+  def ppEffectCheckerboardAcross: `1025` = 1025.asInstanceOf[`1025`]
   @scala.inline
-  def ppEffectCheckerboardAcross: `1025` = this.cast(1025)
+  def ppEffectCheckerboardDown: `1026` = 1026.asInstanceOf[`1026`]
   @scala.inline
-  def ppEffectCheckerboardDown: `1026` = this.cast(1026)
+  def ppEffectCircleOut: `3845` = 3845.asInstanceOf[`3845`]
   @scala.inline
-  def ppEffectCircleOut: `3845` = this.cast(3845)
+  def ppEffectCombHorizontal: `3847` = 3847.asInstanceOf[`3847`]
   @scala.inline
-  def ppEffectCombHorizontal: `3847` = this.cast(3847)
+  def ppEffectCombVertical: `3848` = 3848.asInstanceOf[`3848`]
   @scala.inline
-  def ppEffectCombVertical: `3848` = this.cast(3848)
+  def ppEffectConveyorLeft: `3882` = 3882.asInstanceOf[`3882`]
   @scala.inline
-  def ppEffectConveyorLeft: `3882` = this.cast(3882)
+  def ppEffectConveyorRight: `3883` = 3883.asInstanceOf[`3883`]
   @scala.inline
-  def ppEffectConveyorRight: `3883` = this.cast(3883)
+  def ppEffectCoverDown: `1284` = 1284.asInstanceOf[`1284`]
   @scala.inline
-  def ppEffectCoverDown: `1284` = this.cast(1284)
+  def ppEffectCoverLeft: `1281` = 1281.asInstanceOf[`1281`]
   @scala.inline
-  def ppEffectCoverLeft: `1281` = this.cast(1281)
+  def ppEffectCoverLeftDown: `1287` = 1287.asInstanceOf[`1287`]
   @scala.inline
-  def ppEffectCoverLeftDown: `1287` = this.cast(1287)
+  def ppEffectCoverLeftUp: `1285` = 1285.asInstanceOf[`1285`]
   @scala.inline
-  def ppEffectCoverLeftUp: `1285` = this.cast(1285)
+  def ppEffectCoverRight: `1283` = 1283.asInstanceOf[`1283`]
   @scala.inline
-  def ppEffectCoverRight: `1283` = this.cast(1283)
+  def ppEffectCoverRightDown: `1288` = 1288.asInstanceOf[`1288`]
   @scala.inline
-  def ppEffectCoverRightDown: `1288` = this.cast(1288)
+  def ppEffectCoverRightUp: `1286` = 1286.asInstanceOf[`1286`]
   @scala.inline
-  def ppEffectCoverRightUp: `1286` = this.cast(1286)
+  def ppEffectCoverUp: `1282` = 1282.asInstanceOf[`1282`]
   @scala.inline
-  def ppEffectCoverUp: `1282` = this.cast(1282)
+  def ppEffectCrawlFromDown: `3344` = 3344.asInstanceOf[`3344`]
   @scala.inline
-  def ppEffectCrawlFromDown: `3344` = this.cast(3344)
+  def ppEffectCrawlFromLeft: `3341` = 3341.asInstanceOf[`3341`]
   @scala.inline
-  def ppEffectCrawlFromLeft: `3341` = this.cast(3341)
+  def ppEffectCrawlFromRight: `3343` = 3343.asInstanceOf[`3343`]
   @scala.inline
-  def ppEffectCrawlFromRight: `3343` = this.cast(3343)
+  def ppEffectCrawlFromUp: `3342` = 3342.asInstanceOf[`3342`]
   @scala.inline
-  def ppEffectCrawlFromUp: `3342` = this.cast(3342)
+  def ppEffectCubeDown: `3917` = 3917.asInstanceOf[`3917`]
   @scala.inline
-  def ppEffectCubeDown: `3917` = this.cast(3917)
+  def ppEffectCubeLeft: `3914` = 3914.asInstanceOf[`3914`]
   @scala.inline
-  def ppEffectCubeLeft: `3914` = this.cast(3914)
+  def ppEffectCubeRight: `3916` = 3916.asInstanceOf[`3916`]
   @scala.inline
-  def ppEffectCubeRight: `3916` = this.cast(3916)
+  def ppEffectCubeUp: `3915` = 3915.asInstanceOf[`3915`]
   @scala.inline
-  def ppEffectCubeUp: `3915` = this.cast(3915)
+  def ppEffectCut: `257` = 257.asInstanceOf[`257`]
   @scala.inline
-  def ppEffectCut: `257` = this.cast(257)
+  def ppEffectCutThroughBlack: `258` = 258.asInstanceOf[`258`]
   @scala.inline
-  def ppEffectCutThroughBlack: `258` = this.cast(258)
+  def ppEffectDiamondOut: `3846` = 3846.asInstanceOf[`3846`]
   @scala.inline
-  def ppEffectDiamondOut: `3846` = this.cast(3846)
+  def ppEffectDissolve: `1537` = 1537.asInstanceOf[`1537`]
   @scala.inline
-  def ppEffectDissolve: `1537` = this.cast(1537)
+  def ppEffectDoorsHorizontal: `3885` = 3885.asInstanceOf[`3885`]
   @scala.inline
-  def ppEffectDoorsHorizontal: `3885` = this.cast(3885)
+  def ppEffectDoorsVertical: `3884` = 3884.asInstanceOf[`3884`]
   @scala.inline
-  def ppEffectDoorsVertical: `3884` = this.cast(3884)
+  def ppEffectFade: `1793` = 1793.asInstanceOf[`1793`]
   @scala.inline
-  def ppEffectFade: `1793` = this.cast(1793)
+  def ppEffectFadeSmoothly: `3849` = 3849.asInstanceOf[`3849`]
   @scala.inline
-  def ppEffectFadeSmoothly: `3849` = this.cast(3849)
+  def ppEffectFerrisWheelLeft: `3899` = 3899.asInstanceOf[`3899`]
   @scala.inline
-  def ppEffectFerrisWheelLeft: `3899` = this.cast(3899)
+  def ppEffectFerrisWheelRight: `3900` = 3900.asInstanceOf[`3900`]
   @scala.inline
-  def ppEffectFerrisWheelRight: `3900` = this.cast(3900)
+  def ppEffectFlashOnceFast: `3841` = 3841.asInstanceOf[`3841`]
   @scala.inline
-  def ppEffectFlashOnceFast: `3841` = this.cast(3841)
+  def ppEffectFlashOnceMedium: `3842` = 3842.asInstanceOf[`3842`]
   @scala.inline
-  def ppEffectFlashOnceMedium: `3842` = this.cast(3842)
+  def ppEffectFlashOnceSlow: `3843` = 3843.asInstanceOf[`3843`]
   @scala.inline
-  def ppEffectFlashOnceSlow: `3843` = this.cast(3843)
+  def ppEffectFlashbulb: `3909` = 3909.asInstanceOf[`3909`]
   @scala.inline
-  def ppEffectFlashbulb: `3909` = this.cast(3909)
+  def ppEffectFlipDown: `3908` = 3908.asInstanceOf[`3908`]
   @scala.inline
-  def ppEffectFlipDown: `3908` = this.cast(3908)
+  def ppEffectFlipLeft: `3905` = 3905.asInstanceOf[`3905`]
   @scala.inline
-  def ppEffectFlipLeft: `3905` = this.cast(3905)
+  def ppEffectFlipRight: `3907` = 3907.asInstanceOf[`3907`]
   @scala.inline
-  def ppEffectFlipRight: `3907` = this.cast(3907)
+  def ppEffectFlipUp: `3906` = 3906.asInstanceOf[`3906`]
   @scala.inline
-  def ppEffectFlipUp: `3906` = this.cast(3906)
+  def ppEffectFlyFromBottom: `3332` = 3332.asInstanceOf[`3332`]
   @scala.inline
-  def ppEffectFlyFromBottom: `3332` = this.cast(3332)
+  def ppEffectFlyFromBottomLeft: `3335` = 3335.asInstanceOf[`3335`]
   @scala.inline
-  def ppEffectFlyFromBottomLeft: `3335` = this.cast(3335)
+  def ppEffectFlyFromBottomRight: `3336` = 3336.asInstanceOf[`3336`]
   @scala.inline
-  def ppEffectFlyFromBottomRight: `3336` = this.cast(3336)
+  def ppEffectFlyFromLeft: `3329` = 3329.asInstanceOf[`3329`]
   @scala.inline
-  def ppEffectFlyFromLeft: `3329` = this.cast(3329)
+  def ppEffectFlyFromRight: `3331` = 3331.asInstanceOf[`3331`]
   @scala.inline
-  def ppEffectFlyFromRight: `3331` = this.cast(3331)
+  def ppEffectFlyFromTop: `3330` = 3330.asInstanceOf[`3330`]
   @scala.inline
-  def ppEffectFlyFromTop: `3330` = this.cast(3330)
+  def ppEffectFlyFromTopLeft: `3333` = 3333.asInstanceOf[`3333`]
   @scala.inline
-  def ppEffectFlyFromTopLeft: `3333` = this.cast(3333)
+  def ppEffectFlyFromTopRight: `3334` = 3334.asInstanceOf[`3334`]
   @scala.inline
-  def ppEffectFlyFromTopRight: `3334` = this.cast(3334)
+  def ppEffectFlyThroughIn: `3890` = 3890.asInstanceOf[`3890`]
   @scala.inline
-  def ppEffectFlyThroughIn: `3890` = this.cast(3890)
+  def ppEffectFlyThroughInBounce: `3892` = 3892.asInstanceOf[`3892`]
   @scala.inline
-  def ppEffectFlyThroughInBounce: `3892` = this.cast(3892)
+  def ppEffectFlyThroughOut: `3891` = 3891.asInstanceOf[`3891`]
   @scala.inline
-  def ppEffectFlyThroughOut: `3891` = this.cast(3891)
+  def ppEffectFlyThroughOutBounce: `3893` = 3893.asInstanceOf[`3893`]
   @scala.inline
-  def ppEffectFlyThroughOutBounce: `3893` = this.cast(3893)
+  def ppEffectGalleryLeft: `3880` = 3880.asInstanceOf[`3880`]
   @scala.inline
-  def ppEffectGalleryLeft: `3880` = this.cast(3880)
+  def ppEffectGalleryRight: `3881` = 3881.asInstanceOf[`3881`]
   @scala.inline
-  def ppEffectGalleryRight: `3881` = this.cast(3881)
+  def ppEffectGlitterDiamondDown: `3875` = 3875.asInstanceOf[`3875`]
   @scala.inline
-  def ppEffectGlitterDiamondDown: `3875` = this.cast(3875)
+  def ppEffectGlitterDiamondLeft: `3872` = 3872.asInstanceOf[`3872`]
   @scala.inline
-  def ppEffectGlitterDiamondLeft: `3872` = this.cast(3872)
+  def ppEffectGlitterDiamondRight: `3874` = 3874.asInstanceOf[`3874`]
   @scala.inline
-  def ppEffectGlitterDiamondRight: `3874` = this.cast(3874)
+  def ppEffectGlitterDiamondUp: `3873` = 3873.asInstanceOf[`3873`]
   @scala.inline
-  def ppEffectGlitterDiamondUp: `3873` = this.cast(3873)
+  def ppEffectGlitterHexagonDown: `3879` = 3879.asInstanceOf[`3879`]
   @scala.inline
-  def ppEffectGlitterHexagonDown: `3879` = this.cast(3879)
+  def ppEffectGlitterHexagonLeft: `3876` = 3876.asInstanceOf[`3876`]
   @scala.inline
-  def ppEffectGlitterHexagonLeft: `3876` = this.cast(3876)
+  def ppEffectGlitterHexagonRight: `3878` = 3878.asInstanceOf[`3878`]
   @scala.inline
-  def ppEffectGlitterHexagonRight: `3878` = this.cast(3878)
+  def ppEffectGlitterHexagonUp: `3877` = 3877.asInstanceOf[`3877`]
   @scala.inline
-  def ppEffectGlitterHexagonUp: `3877` = this.cast(3877)
+  def ppEffectHoneycomb: `3898` = 3898.asInstanceOf[`3898`]
   @scala.inline
-  def ppEffectHoneycomb: `3898` = this.cast(3898)
+  def ppEffectMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def ppEffectMixed: `-2` = this.cast(-2)
+  def ppEffectNewsflash: `3850` = 3850.asInstanceOf[`3850`]
   @scala.inline
-  def ppEffectNewsflash: `3850` = this.cast(3850)
+  def ppEffectNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def ppEffectNone: `0` = this.cast(0)
+  def ppEffectOrbitDown: `3929` = 3929.asInstanceOf[`3929`]
   @scala.inline
-  def ppEffectOrbitDown: `3929` = this.cast(3929)
+  def ppEffectOrbitLeft: `3926` = 3926.asInstanceOf[`3926`]
   @scala.inline
-  def ppEffectOrbitLeft: `3926` = this.cast(3926)
+  def ppEffectOrbitRight: `3928` = 3928.asInstanceOf[`3928`]
   @scala.inline
-  def ppEffectOrbitRight: `3928` = this.cast(3928)
+  def ppEffectOrbitUp: `3927` = 3927.asInstanceOf[`3927`]
   @scala.inline
-  def ppEffectOrbitUp: `3927` = this.cast(3927)
+  def ppEffectPanDown: `3933` = 3933.asInstanceOf[`3933`]
   @scala.inline
-  def ppEffectPanDown: `3933` = this.cast(3933)
+  def ppEffectPanLeft: `3930` = 3930.asInstanceOf[`3930`]
   @scala.inline
-  def ppEffectPanLeft: `3930` = this.cast(3930)
+  def ppEffectPanRight: `3932` = 3932.asInstanceOf[`3932`]
   @scala.inline
-  def ppEffectPanRight: `3932` = this.cast(3932)
+  def ppEffectPanUp: `3931` = 3931.asInstanceOf[`3931`]
   @scala.inline
-  def ppEffectPanUp: `3931` = this.cast(3931)
+  def ppEffectPeekFromDown: `3338` = 3338.asInstanceOf[`3338`]
   @scala.inline
-  def ppEffectPeekFromDown: `3338` = this.cast(3338)
+  def ppEffectPeekFromLeft: `3337` = 3337.asInstanceOf[`3337`]
   @scala.inline
-  def ppEffectPeekFromLeft: `3337` = this.cast(3337)
+  def ppEffectPeekFromRight: `3339` = 3339.asInstanceOf[`3339`]
   @scala.inline
-  def ppEffectPeekFromRight: `3339` = this.cast(3339)
+  def ppEffectPeekFromUp: `3340` = 3340.asInstanceOf[`3340`]
   @scala.inline
-  def ppEffectPeekFromUp: `3340` = this.cast(3340)
+  def ppEffectPlusOut: `3851` = 3851.asInstanceOf[`3851`]
   @scala.inline
-  def ppEffectPlusOut: `3851` = this.cast(3851)
+  def ppEffectPushDown: `3852` = 3852.asInstanceOf[`3852`]
   @scala.inline
-  def ppEffectPushDown: `3852` = this.cast(3852)
+  def ppEffectPushLeft: `3853` = 3853.asInstanceOf[`3853`]
   @scala.inline
-  def ppEffectPushLeft: `3853` = this.cast(3853)
+  def ppEffectPushRight: `3854` = 3854.asInstanceOf[`3854`]
   @scala.inline
-  def ppEffectPushRight: `3854` = this.cast(3854)
+  def ppEffectPushUp: `3855` = 3855.asInstanceOf[`3855`]
   @scala.inline
-  def ppEffectPushUp: `3855` = this.cast(3855)
+  def ppEffectRandom: `513` = 513.asInstanceOf[`513`]
   @scala.inline
-  def ppEffectRandom: `513` = this.cast(513)
+  def ppEffectRandomBarsHorizontal: `2305` = 2305.asInstanceOf[`2305`]
   @scala.inline
-  def ppEffectRandomBarsHorizontal: `2305` = this.cast(2305)
+  def ppEffectRandomBarsVertical: `2306` = 2306.asInstanceOf[`2306`]
   @scala.inline
-  def ppEffectRandomBarsVertical: `2306` = this.cast(2306)
+  def ppEffectRevealBlackLeft: `3896` = 3896.asInstanceOf[`3896`]
   @scala.inline
-  def ppEffectRevealBlackLeft: `3896` = this.cast(3896)
+  def ppEffectRevealBlackRight: `3897` = 3897.asInstanceOf[`3897`]
   @scala.inline
-  def ppEffectRevealBlackRight: `3897` = this.cast(3897)
+  def ppEffectRevealSmoothLeft: `3894` = 3894.asInstanceOf[`3894`]
   @scala.inline
-  def ppEffectRevealSmoothLeft: `3894` = this.cast(3894)
+  def ppEffectRevealSmoothRight: `3895` = 3895.asInstanceOf[`3895`]
   @scala.inline
-  def ppEffectRevealSmoothRight: `3895` = this.cast(3895)
+  def ppEffectRippleCenter: `3867` = 3867.asInstanceOf[`3867`]
   @scala.inline
-  def ppEffectRippleCenter: `3867` = this.cast(3867)
+  def ppEffectRippleLeftDown: `3870` = 3870.asInstanceOf[`3870`]
   @scala.inline
-  def ppEffectRippleLeftDown: `3870` = this.cast(3870)
+  def ppEffectRippleLeftUp: `3869` = 3869.asInstanceOf[`3869`]
   @scala.inline
-  def ppEffectRippleLeftUp: `3869` = this.cast(3869)
+  def ppEffectRippleRightDown: `3871` = 3871.asInstanceOf[`3871`]
   @scala.inline
-  def ppEffectRippleRightDown: `3871` = this.cast(3871)
+  def ppEffectRippleRightUp: `3868` = 3868.asInstanceOf[`3868`]
   @scala.inline
-  def ppEffectRippleRightUp: `3868` = this.cast(3868)
+  def ppEffectRotateDown: `3921` = 3921.asInstanceOf[`3921`]
   @scala.inline
-  def ppEffectRotateDown: `3921` = this.cast(3921)
+  def ppEffectRotateLeft: `3918` = 3918.asInstanceOf[`3918`]
   @scala.inline
-  def ppEffectRotateLeft: `3918` = this.cast(3918)
+  def ppEffectRotateRight: `3920` = 3920.asInstanceOf[`3920`]
   @scala.inline
-  def ppEffectRotateRight: `3920` = this.cast(3920)
+  def ppEffectRotateUp: `3919` = 3919.asInstanceOf[`3919`]
   @scala.inline
-  def ppEffectRotateUp: `3919` = this.cast(3919)
+  def ppEffectShredRectangleIn: `3912` = 3912.asInstanceOf[`3912`]
   @scala.inline
-  def ppEffectShredRectangleIn: `3912` = this.cast(3912)
+  def ppEffectShredRectangleOut: `3913` = 3913.asInstanceOf[`3913`]
   @scala.inline
-  def ppEffectShredRectangleOut: `3913` = this.cast(3913)
+  def ppEffectShredStripsIn: `3910` = 3910.asInstanceOf[`3910`]
   @scala.inline
-  def ppEffectShredStripsIn: `3910` = this.cast(3910)
+  def ppEffectShredStripsOut: `3911` = 3911.asInstanceOf[`3911`]
   @scala.inline
-  def ppEffectShredStripsOut: `3911` = this.cast(3911)
+  def ppEffectSpiral: `3357` = 3357.asInstanceOf[`3357`]
   @scala.inline
-  def ppEffectSpiral: `3357` = this.cast(3357)
+  def ppEffectSplitHorizontalIn: `3586` = 3586.asInstanceOf[`3586`]
   @scala.inline
-  def ppEffectSplitHorizontalIn: `3586` = this.cast(3586)
+  def ppEffectSplitHorizontalOut: `3585` = 3585.asInstanceOf[`3585`]
   @scala.inline
-  def ppEffectSplitHorizontalOut: `3585` = this.cast(3585)
+  def ppEffectSplitVerticalIn: `3588` = 3588.asInstanceOf[`3588`]
   @scala.inline
-  def ppEffectSplitVerticalIn: `3588` = this.cast(3588)
+  def ppEffectSplitVerticalOut: `3587` = 3587.asInstanceOf[`3587`]
   @scala.inline
-  def ppEffectSplitVerticalOut: `3587` = this.cast(3587)
+  def ppEffectStretchAcross: `3351` = 3351.asInstanceOf[`3351`]
   @scala.inline
-  def ppEffectStretchAcross: `3351` = this.cast(3351)
+  def ppEffectStretchDown: `3355` = 3355.asInstanceOf[`3355`]
   @scala.inline
-  def ppEffectStretchDown: `3355` = this.cast(3355)
+  def ppEffectStretchLeft: `3352` = 3352.asInstanceOf[`3352`]
   @scala.inline
-  def ppEffectStretchLeft: `3352` = this.cast(3352)
+  def ppEffectStretchRight: `3354` = 3354.asInstanceOf[`3354`]
   @scala.inline
-  def ppEffectStretchRight: `3354` = this.cast(3354)
+  def ppEffectStretchUp: `3353` = 3353.asInstanceOf[`3353`]
   @scala.inline
-  def ppEffectStretchUp: `3353` = this.cast(3353)
+  def ppEffectStripsDownLeft: `2563` = 2563.asInstanceOf[`2563`]
   @scala.inline
-  def ppEffectStripsDownLeft: `2563` = this.cast(2563)
+  def ppEffectStripsDownRight: `2564` = 2564.asInstanceOf[`2564`]
   @scala.inline
-  def ppEffectStripsDownRight: `2564` = this.cast(2564)
+  def ppEffectStripsLeftDown: `2567` = 2567.asInstanceOf[`2567`]
   @scala.inline
-  def ppEffectStripsLeftDown: `2567` = this.cast(2567)
+  def ppEffectStripsLeftUp: `2565` = 2565.asInstanceOf[`2565`]
   @scala.inline
-  def ppEffectStripsLeftUp: `2565` = this.cast(2565)
+  def ppEffectStripsRightDown: `2568` = 2568.asInstanceOf[`2568`]
   @scala.inline
-  def ppEffectStripsRightDown: `2568` = this.cast(2568)
+  def ppEffectStripsRightUp: `2566` = 2566.asInstanceOf[`2566`]
   @scala.inline
-  def ppEffectStripsRightUp: `2566` = this.cast(2566)
+  def ppEffectStripsUpLeft: `2561` = 2561.asInstanceOf[`2561`]
   @scala.inline
-  def ppEffectStripsUpLeft: `2561` = this.cast(2561)
+  def ppEffectStripsUpRight: `2562` = 2562.asInstanceOf[`2562`]
   @scala.inline
-  def ppEffectStripsUpRight: `2562` = this.cast(2562)
+  def ppEffectSwitchDown: `3904` = 3904.asInstanceOf[`3904`]
   @scala.inline
-  def ppEffectSwitchDown: `3904` = this.cast(3904)
+  def ppEffectSwitchLeft: `3901` = 3901.asInstanceOf[`3901`]
   @scala.inline
-  def ppEffectSwitchLeft: `3901` = this.cast(3901)
+  def ppEffectSwitchRight: `3903` = 3903.asInstanceOf[`3903`]
   @scala.inline
-  def ppEffectSwitchRight: `3903` = this.cast(3903)
+  def ppEffectSwitchUp: `3902` = 3902.asInstanceOf[`3902`]
   @scala.inline
-  def ppEffectSwitchUp: `3902` = this.cast(3902)
+  def ppEffectSwivel: `3356` = 3356.asInstanceOf[`3356`]
   @scala.inline
-  def ppEffectSwivel: `3356` = this.cast(3356)
+  def ppEffectUncoverDown: `2052` = 2052.asInstanceOf[`2052`]
   @scala.inline
-  def ppEffectUncoverDown: `2052` = this.cast(2052)
+  def ppEffectUncoverLeft: `2049` = 2049.asInstanceOf[`2049`]
   @scala.inline
-  def ppEffectUncoverLeft: `2049` = this.cast(2049)
+  def ppEffectUncoverLeftDown: `2055` = 2055.asInstanceOf[`2055`]
   @scala.inline
-  def ppEffectUncoverLeftDown: `2055` = this.cast(2055)
+  def ppEffectUncoverLeftUp: `2053` = 2053.asInstanceOf[`2053`]
   @scala.inline
-  def ppEffectUncoverLeftUp: `2053` = this.cast(2053)
+  def ppEffectUncoverRight: `2051` = 2051.asInstanceOf[`2051`]
   @scala.inline
-  def ppEffectUncoverRight: `2051` = this.cast(2051)
+  def ppEffectUncoverRightDown: `2056` = 2056.asInstanceOf[`2056`]
   @scala.inline
-  def ppEffectUncoverRightDown: `2056` = this.cast(2056)
+  def ppEffectUncoverRightUp: `2054` = 2054.asInstanceOf[`2054`]
   @scala.inline
-  def ppEffectUncoverRightUp: `2054` = this.cast(2054)
+  def ppEffectUncoverUp: `2050` = 2050.asInstanceOf[`2050`]
   @scala.inline
-  def ppEffectUncoverUp: `2050` = this.cast(2050)
+  def ppEffectVortexDown: `3866` = 3866.asInstanceOf[`3866`]
   @scala.inline
-  def ppEffectVortexDown: `3866` = this.cast(3866)
+  def ppEffectVortexLeft: `3863` = 3863.asInstanceOf[`3863`]
   @scala.inline
-  def ppEffectVortexLeft: `3863` = this.cast(3863)
+  def ppEffectVortexRight: `3865` = 3865.asInstanceOf[`3865`]
   @scala.inline
-  def ppEffectVortexRight: `3865` = this.cast(3865)
+  def ppEffectVortexUp: `3864` = 3864.asInstanceOf[`3864`]
   @scala.inline
-  def ppEffectVortexUp: `3864` = this.cast(3864)
+  def ppEffectWarpIn: `3888` = 3888.asInstanceOf[`3888`]
   @scala.inline
-  def ppEffectWarpIn: `3888` = this.cast(3888)
+  def ppEffectWarpOut: `3889` = 3889.asInstanceOf[`3889`]
   @scala.inline
-  def ppEffectWarpOut: `3889` = this.cast(3889)
+  def ppEffectWedge: `3856` = 3856.asInstanceOf[`3856`]
   @scala.inline
-  def ppEffectWedge: `3856` = this.cast(3856)
+  def ppEffectWheel1Spoke: `3857` = 3857.asInstanceOf[`3857`]
   @scala.inline
-  def ppEffectWheel1Spoke: `3857` = this.cast(3857)
+  def ppEffectWheel2Spokes: `3858` = 3858.asInstanceOf[`3858`]
   @scala.inline
-  def ppEffectWheel2Spokes: `3858` = this.cast(3858)
+  def ppEffectWheel3Spokes: `3859` = 3859.asInstanceOf[`3859`]
   @scala.inline
-  def ppEffectWheel3Spokes: `3859` = this.cast(3859)
+  def ppEffectWheel4Spokes: `3860` = 3860.asInstanceOf[`3860`]
   @scala.inline
-  def ppEffectWheel4Spokes: `3860` = this.cast(3860)
+  def ppEffectWheel8Spokes: `3861` = 3861.asInstanceOf[`3861`]
   @scala.inline
-  def ppEffectWheel8Spokes: `3861` = this.cast(3861)
+  def ppEffectWheelReverse1Spoke: `3862` = 3862.asInstanceOf[`3862`]
   @scala.inline
-  def ppEffectWheelReverse1Spoke: `3862` = this.cast(3862)
+  def ppEffectWindowHorizontal: `3887` = 3887.asInstanceOf[`3887`]
   @scala.inline
-  def ppEffectWindowHorizontal: `3887` = this.cast(3887)
+  def ppEffectWindowVertical: `3886` = 3886.asInstanceOf[`3886`]
   @scala.inline
-  def ppEffectWindowVertical: `3886` = this.cast(3886)
+  def ppEffectWipeDown: `2820` = 2820.asInstanceOf[`2820`]
   @scala.inline
-  def ppEffectWipeDown: `2820` = this.cast(2820)
+  def ppEffectWipeLeft: `2817` = 2817.asInstanceOf[`2817`]
   @scala.inline
-  def ppEffectWipeLeft: `2817` = this.cast(2817)
+  def ppEffectWipeRight: `2819` = 2819.asInstanceOf[`2819`]
   @scala.inline
-  def ppEffectWipeRight: `2819` = this.cast(2819)
+  def ppEffectWipeUp: `2818` = 2818.asInstanceOf[`2818`]
   @scala.inline
-  def ppEffectWipeUp: `2818` = this.cast(2818)
+  def ppEffectZoomBottom: `3350` = 3350.asInstanceOf[`3350`]
   @scala.inline
-  def ppEffectZoomBottom: `3350` = this.cast(3350)
+  def ppEffectZoomCenter: `3349` = 3349.asInstanceOf[`3349`]
   @scala.inline
-  def ppEffectZoomCenter: `3349` = this.cast(3349)
+  def ppEffectZoomIn: `3345` = 3345.asInstanceOf[`3345`]
   @scala.inline
-  def ppEffectZoomIn: `3345` = this.cast(3345)
+  def ppEffectZoomInSlightly: `3346` = 3346.asInstanceOf[`3346`]
   @scala.inline
-  def ppEffectZoomInSlightly: `3346` = this.cast(3346)
+  def ppEffectZoomOut: `3347` = 3347.asInstanceOf[`3347`]
   @scala.inline
-  def ppEffectZoomOut: `3347` = this.cast(3347)
-  @scala.inline
-  def ppEffectZoomOutSlightly: `3348` = this.cast(3348)
+  def ppEffectZoomOutSlightly: `3348` = 3348.asInstanceOf[`3348`]
 }
 

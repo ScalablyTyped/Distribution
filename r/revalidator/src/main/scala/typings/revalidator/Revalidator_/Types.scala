@@ -18,22 +18,20 @@ trait Types extends js.Object
 
 object Types {
   @scala.inline
-  def any: typings.revalidator.revalidatorStrings.any = this.cast("any")
+  def any: typings.revalidator.revalidatorStrings.any = "any".asInstanceOf[typings.revalidator.revalidatorStrings.any]
   @scala.inline
-  def array: typings.revalidator.revalidatorStrings.array = this.cast("array")
+  def array: typings.revalidator.revalidatorStrings.array = "array".asInstanceOf[typings.revalidator.revalidatorStrings.array]
   @scala.inline
-  def boolean: typings.revalidator.revalidatorStrings.boolean = this.cast("boolean")
+  def boolean: typings.revalidator.revalidatorStrings.boolean = "boolean".asInstanceOf[typings.revalidator.revalidatorStrings.boolean]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def integer: typings.revalidator.revalidatorStrings.integer = "integer".asInstanceOf[typings.revalidator.revalidatorStrings.integer]
   @scala.inline
-  def integer: typings.revalidator.revalidatorStrings.integer = this.cast("integer")
+  def `null`: typings.revalidator.revalidatorStrings.`null` = "null".asInstanceOf[typings.revalidator.revalidatorStrings.`null`]
   @scala.inline
-  def `null`: typings.revalidator.revalidatorStrings.`null` = this.cast("null")
+  def number: typings.revalidator.revalidatorStrings.number = "number".asInstanceOf[typings.revalidator.revalidatorStrings.number]
   @scala.inline
-  def number: typings.revalidator.revalidatorStrings.number = this.cast("number")
+  def `object`: typings.revalidator.revalidatorStrings.`object` = "object".asInstanceOf[typings.revalidator.revalidatorStrings.`object`]
   @scala.inline
-  def `object`: typings.revalidator.revalidatorStrings.`object` = this.cast("object")
-  @scala.inline
-  def string: typings.revalidator.revalidatorStrings.string = this.cast("string")
+  def string: typings.revalidator.revalidatorStrings.string = "string".asInstanceOf[typings.revalidator.revalidatorStrings.string]
 }
 

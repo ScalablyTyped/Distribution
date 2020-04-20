@@ -18,12 +18,10 @@ trait HttpMethod extends js.Object
 
 object HttpMethod {
   @scala.inline
-  def DELETE: typings.deezerSdk.deezerSdkStrings.DELETE = this.cast("DELETE")
+  def DELETE: typings.deezerSdk.deezerSdkStrings.DELETE = "DELETE".asInstanceOf[typings.deezerSdk.deezerSdkStrings.DELETE]
   @scala.inline
-  def GET: typings.deezerSdk.deezerSdkStrings.GET = this.cast("GET")
+  def GET: typings.deezerSdk.deezerSdkStrings.GET = "GET".asInstanceOf[typings.deezerSdk.deezerSdkStrings.GET]
   @scala.inline
-  def POST: typings.deezerSdk.deezerSdkStrings.POST = this.cast("POST")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def POST: typings.deezerSdk.deezerSdkStrings.POST = "POST".asInstanceOf[typings.deezerSdk.deezerSdkStrings.POST]
 }
 

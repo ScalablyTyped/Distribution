@@ -20,7 +20,6 @@ object AnonDisable {
   @scala.inline
   def apply(disable: () => Api, enable: () => Api): AnonDisable = {
     val __obj = js.Dynamic.literal(disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable))
-  
     __obj.asInstanceOf[AnonDisable]
   }
 }

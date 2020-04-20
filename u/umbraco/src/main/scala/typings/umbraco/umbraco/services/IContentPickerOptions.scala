@@ -18,7 +18,6 @@ object IContentPickerOptions {
   @scala.inline
   def apply(callback: js.Function, multipicker: Boolean): IContentPickerOptions = {
     val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any], multipicker = multipicker.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IContentPickerOptions]
   }
 }

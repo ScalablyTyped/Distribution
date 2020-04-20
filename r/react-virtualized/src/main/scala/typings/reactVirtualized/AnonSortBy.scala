@@ -14,7 +14,6 @@ object AnonSortBy {
   @scala.inline
   def apply(sortBy: String, sortDirection: SortDirectionType): AnonSortBy = {
     val __obj = js.Dynamic.literal(sortBy = sortBy.asInstanceOf[js.Any], sortDirection = sortDirection.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSortBy]
   }
 }

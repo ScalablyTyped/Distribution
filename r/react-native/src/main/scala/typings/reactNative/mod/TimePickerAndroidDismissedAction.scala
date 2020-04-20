@@ -13,7 +13,6 @@ object TimePickerAndroidDismissedAction {
   @scala.inline
   def apply(action: dismissedAction): TimePickerAndroidDismissedAction = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TimePickerAndroidDismissedAction]
   }
 }

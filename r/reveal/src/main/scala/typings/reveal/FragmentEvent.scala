@@ -14,7 +14,6 @@ object FragmentEvent {
   @scala.inline
   def apply(fragment: Element): FragmentEvent = {
     val __obj = js.Dynamic.literal(fragment = fragment.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FragmentEvent]
   }
 }

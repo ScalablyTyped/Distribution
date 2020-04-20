@@ -23,7 +23,6 @@ object GetLoadBalancerListener {
     sslCertificateId: String
   ): GetLoadBalancerListener = {
     val __obj = js.Dynamic.literal(instancePort = instancePort.asInstanceOf[js.Any], instanceProtocol = instanceProtocol.asInstanceOf[js.Any], lbPort = lbPort.asInstanceOf[js.Any], lbProtocol = lbProtocol.asInstanceOf[js.Any], sslCertificateId = sslCertificateId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetLoadBalancerListener]
   }
 }

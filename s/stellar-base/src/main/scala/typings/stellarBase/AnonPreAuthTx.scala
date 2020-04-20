@@ -12,7 +12,6 @@ object AnonPreAuthTx {
   @scala.inline
   def apply(preAuthTx: js.Any): AnonPreAuthTx = {
     val __obj = js.Dynamic.literal(preAuthTx = preAuthTx.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPreAuthTx]
   }
 }

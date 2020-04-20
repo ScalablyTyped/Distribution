@@ -14,7 +14,6 @@ object AnonBarSpace {
   @scala.inline
   def apply(barSpace: Double, fromX: Double, groupSpace: Double): AnonBarSpace = {
     val __obj = js.Dynamic.literal(barSpace = barSpace.asInstanceOf[js.Any], fromX = fromX.asInstanceOf[js.Any], groupSpace = groupSpace.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBarSpace]
   }
 }

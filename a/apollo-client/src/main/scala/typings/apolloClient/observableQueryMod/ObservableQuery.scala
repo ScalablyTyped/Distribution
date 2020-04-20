@@ -33,7 +33,7 @@ class ObservableQuery[TData, TVariables] protected () extends Observable[ApolloQ
   var updateLastResult: js.Any = js.native
   var variables: TVariables = js.native
   def currentResult(): ApolloCurrentResult[TData] = js.native
-  def fetchMore[K /* <: String */](
+  def fetchMore[K /* <: /* keyof TVariables */ String */](
     fetchMoreOptions: (FetchMoreQueryOptions[TVariables, K]) with (FetchMoreOptions[TData, TVariables])
   ): js.Promise[ApolloQueryResult[TData]] = js.native
   def getCurrentResult(): ApolloCurrentQueryResult[TData] = js.native

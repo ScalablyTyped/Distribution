@@ -17,7 +17,6 @@ object appFrameworkCssMatrix {
   @scala.inline
   def apply(a: Double, b: Double, c: Double, d: Double, e: Double, f: Double): appFrameworkCssMatrix = {
     val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], c = c.asInstanceOf[js.Any], d = d.asInstanceOf[js.Any], e = e.asInstanceOf[js.Any], f = f.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[appFrameworkCssMatrix]
   }
 }

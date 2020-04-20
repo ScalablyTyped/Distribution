@@ -1,5 +1,6 @@
 package typings.reactNativeJoi.mod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +11,7 @@ trait Rules[P /* <: js.Object */] extends js.Object {
   var params: js.UndefOr[
     ObjectSchema | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof P ]: react-native-joi.react-native-joi.SchemaLike}
-    */ typings.reactNativeJoi.reactNativeJoiStrings.Rules with js.Any)
+    */ typings.reactNativeJoi.reactNativeJoiStrings.Rules with TopLevel[js.Any])
   ] = js.undefined
   var setup: js.UndefOr[js.ThisFunction1[/* this */ ExtensionBoundSchema, /* params */ P, Schema | Unit]] = js.undefined
   var validate: js.UndefOr[
@@ -32,7 +33,7 @@ object Rules {
     description: String | (js.Function1[/* params */ P, String]) = null,
     params: ObjectSchema | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof P ]: react-native-joi.react-native-joi.SchemaLike}
-    */ typings.reactNativeJoi.reactNativeJoiStrings.Rules with js.Any) = null,
+    */ typings.reactNativeJoi.reactNativeJoiStrings.Rules with TopLevel[js.Any]) = null,
     setup: js.ThisFunction1[/* this */ ExtensionBoundSchema, /* params */ P, Schema | Unit] = null,
     validate: js.ThisFunction4[
       /* this */ ExtensionBoundSchema, 

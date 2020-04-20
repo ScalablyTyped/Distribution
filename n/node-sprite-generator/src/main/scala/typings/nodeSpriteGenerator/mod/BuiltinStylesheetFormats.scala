@@ -17,20 +17,18 @@ trait BuiltinStylesheetFormats extends js.Object
 
 object BuiltinStylesheetFormats {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def css: typings.nodeSpriteGenerator.nodeSpriteGeneratorStrings.css = "css".asInstanceOf[typings.nodeSpriteGenerator.nodeSpriteGeneratorStrings.css]
   @scala.inline
-  def css: typings.nodeSpriteGenerator.nodeSpriteGeneratorStrings.css = this.cast("css")
+  def javascript: typings.nodeSpriteGenerator.nodeSpriteGeneratorStrings.javascript = "javascript".asInstanceOf[typings.nodeSpriteGenerator.nodeSpriteGeneratorStrings.javascript]
   @scala.inline
-  def javascript: typings.nodeSpriteGenerator.nodeSpriteGeneratorStrings.javascript = this.cast("javascript")
+  def less: typings.nodeSpriteGenerator.nodeSpriteGeneratorStrings.less = "less".asInstanceOf[typings.nodeSpriteGenerator.nodeSpriteGeneratorStrings.less]
   @scala.inline
-  def less: typings.nodeSpriteGenerator.nodeSpriteGeneratorStrings.less = this.cast("less")
+  def `prefixed-css`: typings.nodeSpriteGenerator.nodeSpriteGeneratorStrings.`prefixed-css` = "prefixed-css".asInstanceOf[typings.nodeSpriteGenerator.nodeSpriteGeneratorStrings.`prefixed-css`]
   @scala.inline
-  def `prefixed-css`: typings.nodeSpriteGenerator.nodeSpriteGeneratorStrings.`prefixed-css` = this.cast("prefixed-css")
+  def sass: typings.nodeSpriteGenerator.nodeSpriteGeneratorStrings.sass = "sass".asInstanceOf[typings.nodeSpriteGenerator.nodeSpriteGeneratorStrings.sass]
   @scala.inline
-  def sass: typings.nodeSpriteGenerator.nodeSpriteGeneratorStrings.sass = this.cast("sass")
+  def scss: typings.nodeSpriteGenerator.nodeSpriteGeneratorStrings.scss = "scss".asInstanceOf[typings.nodeSpriteGenerator.nodeSpriteGeneratorStrings.scss]
   @scala.inline
-  def scss: typings.nodeSpriteGenerator.nodeSpriteGeneratorStrings.scss = this.cast("scss")
-  @scala.inline
-  def stylus: typings.nodeSpriteGenerator.nodeSpriteGeneratorStrings.stylus = this.cast("stylus")
+  def stylus: typings.nodeSpriteGenerator.nodeSpriteGeneratorStrings.stylus = "stylus".asInstanceOf[typings.nodeSpriteGenerator.nodeSpriteGeneratorStrings.stylus]
 }
 

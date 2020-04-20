@@ -22,7 +22,6 @@ object ITableViewCtlSaveInfo {
   @scala.inline
   def apply(qInternalView: ITableViewSaveInfo, qSourceView: ITableViewSaveInfo): ITableViewCtlSaveInfo = {
     val __obj = js.Dynamic.literal(qInternalView = qInternalView.asInstanceOf[js.Any], qSourceView = qSourceView.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ITableViewCtlSaveInfo]
   }
 }

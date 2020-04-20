@@ -24,20 +24,18 @@ trait MsoArrowheadStyle extends js.Object
 
 object MsoArrowheadStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoArrowheadDiamond: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def msoArrowheadDiamond: `5` = this.cast(5)
+  def msoArrowheadNone: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoArrowheadNone: `1` = this.cast(1)
+  def msoArrowheadOpen: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoArrowheadOpen: `3` = this.cast(3)
+  def msoArrowheadOval: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def msoArrowheadOval: `6` = this.cast(6)
+  def msoArrowheadStealth: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoArrowheadStealth: `4` = this.cast(4)
+  def msoArrowheadStyleMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def msoArrowheadStyleMixed: `-2` = this.cast(-2)
-  @scala.inline
-  def msoArrowheadTriangle: `2` = this.cast(2)
+  def msoArrowheadTriangle: `2` = 2.asInstanceOf[`2`]
 }
 

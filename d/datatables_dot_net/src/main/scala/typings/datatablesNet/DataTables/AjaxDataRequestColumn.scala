@@ -22,7 +22,6 @@ object AjaxDataRequestColumn {
     searchable: Boolean
   ): AjaxDataRequestColumn = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], orderable = orderable.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], searchable = searchable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AjaxDataRequestColumn]
   }
 }

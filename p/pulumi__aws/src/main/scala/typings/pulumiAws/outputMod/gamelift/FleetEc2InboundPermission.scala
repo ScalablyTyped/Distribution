@@ -28,7 +28,6 @@ object FleetEc2InboundPermission {
   @scala.inline
   def apply(fromPort: Double, ipRange: String, protocol: String, toPort: Double): FleetEc2InboundPermission = {
     val __obj = js.Dynamic.literal(fromPort = fromPort.asInstanceOf[js.Any], ipRange = ipRange.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], toPort = toPort.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FleetEc2InboundPermission]
   }
 }

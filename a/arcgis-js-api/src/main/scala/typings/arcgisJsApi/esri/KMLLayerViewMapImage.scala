@@ -45,7 +45,6 @@ object KMLLayerViewMapImage {
     rotation: Double
   ): KMLLayerViewMapImage = {
     val __obj = js.Dynamic.literal(Extent = Extent.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), href = href.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), rotation = rotation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KMLLayerViewMapImage]
   }
 }

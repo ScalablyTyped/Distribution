@@ -24,7 +24,6 @@ object AliasTarget {
   @scala.inline
   def apply(DNSName: DNSName, EvaluateTargetHealth: AliasHealthEnabled, HostedZoneId: ResourceId): AliasTarget = {
     val __obj = js.Dynamic.literal(DNSName = DNSName.asInstanceOf[js.Any], EvaluateTargetHealth = EvaluateTargetHealth.asInstanceOf[js.Any], HostedZoneId = HostedZoneId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AliasTarget]
   }
 }

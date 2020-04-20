@@ -12,10 +12,8 @@ trait PeriodDstJson extends js.Object
 
 object PeriodDstJson {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def local: typings.timezonecomplete.timezonecompleteStrings.local = "local".asInstanceOf[typings.timezonecomplete.timezonecompleteStrings.local]
   @scala.inline
-  def local: typings.timezonecomplete.timezonecompleteStrings.local = this.cast("local")
-  @scala.inline
-  def regular: typings.timezonecomplete.timezonecompleteStrings.regular = this.cast("regular")
+  def regular: typings.timezonecomplete.timezonecompleteStrings.regular = "regular".asInstanceOf[typings.timezonecomplete.timezonecompleteStrings.regular]
 }
 

@@ -14,7 +14,6 @@ object Interchange {
   @scala.inline
   def apply(destroy: () => Unit, replace: String => Unit): Interchange = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), replace = js.Any.fromFunction1(replace))
-  
     __obj.asInstanceOf[Interchange]
   }
 }

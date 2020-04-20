@@ -25,7 +25,6 @@ object IAccessControlEntry {
     UserOrGroupID: Double
   ): IAccessControlEntry = {
     val __obj = js.Dynamic.literal(ChangePermissionsPermission = ChangePermissionsPermission.asInstanceOf[js.Any], Clone = js.Any.fromFunction0(Clone), EditPermission = EditPermission.asInstanceOf[js.Any], IsGroup = IsGroup.asInstanceOf[js.Any], ReadPermission = ReadPermission.asInstanceOf[js.Any], UserOrGroupID = UserOrGroupID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IAccessControlEntry]
   }
 }

@@ -15,7 +15,6 @@ object AnonRemovedFiles {
   @scala.inline
   def apply(removedFiles: js.Array[String], results: js.Array[Diagnostic], updatedFiles: js.Array[String]): AnonRemovedFiles = {
     val __obj = js.Dynamic.literal(removedFiles = removedFiles.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any], updatedFiles = updatedFiles.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRemovedFiles]
   }
 }

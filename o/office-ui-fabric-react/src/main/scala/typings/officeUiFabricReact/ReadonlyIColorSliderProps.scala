@@ -3,6 +3,9 @@ package typings.officeUiFabricReact
 import typings.officeUiFabricReact.colorSliderTypesMod.IColorSlider
 import typings.officeUiFabricReact.colorSliderTypesMod.IColorSliderStyleProps
 import typings.officeUiFabricReact.colorSliderTypesMod.IColorSliderStyles
+import typings.officeUiFabricReact.officeUiFabricReactStrings.alpha
+import typings.officeUiFabricReact.officeUiFabricReactStrings.hue
+import typings.officeUiFabricReact.officeUiFabricReactStrings.transparency
 import typings.react.mod.CSSProperties
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
@@ -35,6 +38,7 @@ trait ReadonlyIColorSliderProps extends js.Object {
   val styles: js.UndefOr[IStyleFunctionOrObject[IColorSliderStyleProps, IColorSliderStyles]] = js.undefined
   val theme: js.UndefOr[ITheme] = js.undefined
   val thumbColor: js.UndefOr[String] = js.undefined
+  val `type`: js.UndefOr[hue | alpha | transparency] = js.undefined
   val value: js.UndefOr[Double] = js.undefined
 }
 
@@ -53,6 +57,7 @@ object ReadonlyIColorSliderProps {
     styles: IStyleFunctionOrObject[IColorSliderStyleProps, IColorSliderStyles] = null,
     theme: ITheme = null,
     thumbColor: String = null,
+    `type`: hue | alpha | transparency = null,
     value: Int | Double = null
   ): ReadonlyIColorSliderProps = {
     val __obj = js.Dynamic.literal()
@@ -68,6 +73,7 @@ object ReadonlyIColorSliderProps {
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (thumbColor != null) __obj.updateDynamic("thumbColor")(thumbColor.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlyIColorSliderProps]
   }

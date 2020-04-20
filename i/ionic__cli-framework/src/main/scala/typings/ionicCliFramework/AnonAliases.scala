@@ -26,7 +26,6 @@ object AnonAliases {
     path: js.Array[CommandPathItem[C, N, M, I, O]]
   ): AnonAliases[C, N, M, I, O] = {
     val __obj = js.Dynamic.literal(aliases = aliases.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAliases[C, N, M, I, O]]
   }
 }

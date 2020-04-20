@@ -162,7 +162,7 @@ object sessionDefaultMod extends js.Object {
       * handling. As such, it should be treated as read-only.
       */
     @JSName("anyMessage")
-    def anyMessage_MSessionConnection(): ISignal[this.type, IAnyMessageArgs] = js.native
+    def anyMessage_MSessionConnection: ISignal[this.type, IAnyMessageArgs] = js.native
     /**
       * Change the kernel.
       *
@@ -183,7 +183,7 @@ object sessionDefaultMod extends js.Object {
       * A signal proxied from the kernel about the connection status.
       */
     @JSName("connectionStatusChanged")
-    def connectionStatusChanged_MSessionConnection(): ISignal[this.type, ConnectionStatus] = js.native
+    def connectionStatusChanged_MSessionConnection: ISignal[this.type, ConnectionStatus] = js.native
     /**
       * Dispose of the resources held by the object.
       *
@@ -201,27 +201,27 @@ object sessionDefaultMod extends js.Object {
       * A signal emitted when the session is disposed.
       */
     @JSName("disposed")
-    def disposed_MSessionConnection(): ISignal[this.type, Unit] = js.native
+    def disposed_MSessionConnection: ISignal[this.type, Unit] = js.native
     /**
       * Get the session id.
       */
     @JSName("id")
-    def id_MSessionConnection(): String = js.native
+    def id_MSessionConnection: String = js.native
     /**
       * A signal proxied from the kernel about iopub kernel messages.
       */
     @JSName("iopubMessage")
-    def iopubMessage_MSessionConnection(): ISignal[this.type, IIOPubMessage[IOPubMessageType]] = js.native
+    def iopubMessage_MSessionConnection: ISignal[this.type, IIOPubMessage[IOPubMessageType]] = js.native
     /**
       * Test whether the session has been disposed.
       */
     @JSName("isDisposed")
-    def isDisposed_MSessionConnection(): Boolean = js.native
+    def isDisposed_MSessionConnection: Boolean = js.native
     /**
       * A signal emitted when the kernel changes.
       */
     @JSName("kernelChanged")
-    def kernelChanged_MSessionConnection(): ISignal[this.type, IKernelChangedArgs] = js.native
+    def kernelChanged_MSessionConnection: ISignal[this.type, IKernelChangedArgs] = js.native
     /**
       * Get the session kernel connection object.
       *
@@ -229,17 +229,17 @@ object sessionDefaultMod extends js.Object {
       * This is a read-only property, and can be altered by [changeKernel].
       */
     @JSName("kernel")
-    def kernel_MSessionConnection(): IKernelConnection | Null = js.native
+    def kernel_MSessionConnection: IKernelConnection | Null = js.native
     /**
       * Get the model associated with the session.
       */
     @JSName("model")
-    def model_MSessionConnection(): IModel = js.native
+    def model_MSessionConnection: IModel = js.native
     /**
       * Get the session name.
       */
     @JSName("name")
-    def name_MSessionConnection(): String = js.native
+    def name_MSessionConnection: String = js.native
     /**
       * Handle any kernel messages.
       */
@@ -264,12 +264,12 @@ object sessionDefaultMod extends js.Object {
       * Get the session path.
       */
     @JSName("path")
-    def path_MSessionConnection(): String = js.native
+    def path_MSessionConnection: String = js.native
     /**
       * A signal emitted when a session property changes.
       */
     @JSName("propertyChanged")
-    def propertyChanged_MSessionConnection(): ISignal[
+    def propertyChanged_MSessionConnection: ISignal[
         this.type, 
         typings.jupyterlabServices.jupyterlabServicesStrings.path | typings.jupyterlabServices.jupyterlabServicesStrings.name | typings.jupyterlabServices.jupyterlabServicesStrings.`type`
       ] = js.native
@@ -331,17 +331,17 @@ object sessionDefaultMod extends js.Object {
       * A signal proxied from the connection about the kernel status.
       */
     @JSName("statusChanged")
-    def statusChanged_MSessionConnection(): ISignal[this.type, Status] = js.native
+    def statusChanged_MSessionConnection: ISignal[this.type, Status] = js.native
     /**
       * Get the session type.
       */
     @JSName("type")
-    def type_MSessionConnection(): String = js.native
+    def type_MSessionConnection: String = js.native
     /**
       * A signal proxied from the kernel for an unhandled kernel message.
       */
     @JSName("unhandledMessage")
-    def unhandledMessage_MSessionConnection(): ISignal[this.type, IMessage[MessageType]] = js.native
+    def unhandledMessage_MSessionConnection: ISignal[this.type, IMessage[MessageType]] = js.native
     /**
       * Update the session based on a session model from the server.
       *

@@ -77,7 +77,6 @@ object Arm64CpuContext {
     x9: NativePointer
   ): Arm64CpuContext = {
     val __obj = js.Dynamic.literal(fp = fp.asInstanceOf[js.Any], lr = lr.asInstanceOf[js.Any], pc = pc.asInstanceOf[js.Any], sp = sp.asInstanceOf[js.Any], x0 = x0.asInstanceOf[js.Any], x1 = x1.asInstanceOf[js.Any], x10 = x10.asInstanceOf[js.Any], x11 = x11.asInstanceOf[js.Any], x12 = x12.asInstanceOf[js.Any], x13 = x13.asInstanceOf[js.Any], x14 = x14.asInstanceOf[js.Any], x15 = x15.asInstanceOf[js.Any], x16 = x16.asInstanceOf[js.Any], x17 = x17.asInstanceOf[js.Any], x18 = x18.asInstanceOf[js.Any], x19 = x19.asInstanceOf[js.Any], x2 = x2.asInstanceOf[js.Any], x20 = x20.asInstanceOf[js.Any], x21 = x21.asInstanceOf[js.Any], x22 = x22.asInstanceOf[js.Any], x23 = x23.asInstanceOf[js.Any], x24 = x24.asInstanceOf[js.Any], x25 = x25.asInstanceOf[js.Any], x26 = x26.asInstanceOf[js.Any], x27 = x27.asInstanceOf[js.Any], x28 = x28.asInstanceOf[js.Any], x3 = x3.asInstanceOf[js.Any], x4 = x4.asInstanceOf[js.Any], x5 = x5.asInstanceOf[js.Any], x6 = x6.asInstanceOf[js.Any], x7 = x7.asInstanceOf[js.Any], x8 = x8.asInstanceOf[js.Any], x9 = x9.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Arm64CpuContext]
   }
 }

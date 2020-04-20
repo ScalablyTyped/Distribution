@@ -23,18 +23,16 @@ trait ShellFolderViewSelectItem extends js.Object
 
 object ShellFolderViewSelectItem {
   @scala.inline
-  def Deselect: `0` = this.cast(0)
+  def Deselect: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def DeselectAllButThis: `4` = this.cast(4)
+  def DeselectAllButThis: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def EditMode: `3` = this.cast(3)
+  def EditMode: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def Focus: `16` = this.cast(16)
+  def Focus: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def ScrollIntoView: `8` = this.cast(8)
+  def ScrollIntoView: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def Select: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Select: `1` = 1.asInstanceOf[`1`]
 }
 

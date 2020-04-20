@@ -14,7 +14,6 @@ object AccountThresholds {
   @scala.inline
   def apply(high_threshold: Double, low_threshold: Double, med_threshold: Double): AccountThresholds = {
     val __obj = js.Dynamic.literal(high_threshold = high_threshold.asInstanceOf[js.Any], low_threshold = low_threshold.asInstanceOf[js.Any], med_threshold = med_threshold.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AccountThresholds]
   }
 }

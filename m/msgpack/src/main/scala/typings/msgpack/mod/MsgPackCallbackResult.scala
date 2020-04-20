@@ -13,7 +13,6 @@ object MsgPackCallbackResult {
   @scala.inline
   def apply(ok: Boolean, status: Double): MsgPackCallbackResult = {
     val __obj = js.Dynamic.literal(ok = ok.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MsgPackCallbackResult]
   }
 }

@@ -16,7 +16,6 @@ object DescribeSuggestersResponse {
   @scala.inline
   def apply(Suggesters: SuggesterStatusList): DescribeSuggestersResponse = {
     val __obj = js.Dynamic.literal(Suggesters = Suggesters.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeSuggestersResponse]
   }
 }

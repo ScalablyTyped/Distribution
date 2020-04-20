@@ -15,7 +15,6 @@ object AnonCurState {
   @scala.inline
   def apply(curState: String, prevState: String): AnonCurState = {
     val __obj = js.Dynamic.literal(curState = curState.asInstanceOf[js.Any], prevState = prevState.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCurState]
   }
 }

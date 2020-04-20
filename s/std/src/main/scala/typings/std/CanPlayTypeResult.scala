@@ -13,12 +13,10 @@ trait CanPlayTypeResult extends js.Object
 
 object CanPlayTypeResult {
   @scala.inline
-  def _empty: typings.std.stdStrings._empty = this.cast("")
+  def _empty: typings.std.stdStrings._empty = "".asInstanceOf[typings.std.stdStrings._empty]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def maybe: typings.std.stdStrings.maybe = "maybe".asInstanceOf[typings.std.stdStrings.maybe]
   @scala.inline
-  def maybe: typings.std.stdStrings.maybe = this.cast("maybe")
-  @scala.inline
-  def probably: typings.std.stdStrings.probably = this.cast("probably")
+  def probably: typings.std.stdStrings.probably = "probably".asInstanceOf[typings.std.stdStrings.probably]
 }
 

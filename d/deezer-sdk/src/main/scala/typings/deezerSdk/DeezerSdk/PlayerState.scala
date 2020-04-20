@@ -18,7 +18,6 @@ object PlayerState {
   @scala.inline
   def apply(muted: Boolean, repeat: Double, shuffle: Boolean, volume: Double): PlayerState = {
     val __obj = js.Dynamic.literal(muted = muted.asInstanceOf[js.Any], repeat = repeat.asInstanceOf[js.Any], shuffle = shuffle.asInstanceOf[js.Any], volume = volume.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PlayerState]
   }
 }

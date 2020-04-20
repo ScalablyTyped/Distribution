@@ -26,7 +26,6 @@ object SurvivalGameInfo {
   @scala.inline
   def apply(score: Double, timeToWave: Double, wave: Double): SurvivalGameInfo = {
     val __obj = js.Dynamic.literal(score = score.asInstanceOf[js.Any], timeToWave = timeToWave.asInstanceOf[js.Any], wave = wave.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SurvivalGameInfo]
   }
 }

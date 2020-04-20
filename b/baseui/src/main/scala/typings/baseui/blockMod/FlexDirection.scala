@@ -17,20 +17,18 @@ trait FlexDirection extends js.Object
 
 object FlexDirection {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def column: typings.baseui.baseuiStrings.column = "column".asInstanceOf[typings.baseui.baseuiStrings.column]
   @scala.inline
-  def column: typings.baseui.baseuiStrings.column = this.cast("column")
+  def `column-reverse`: typings.baseui.baseuiStrings.`column-reverse` = "column-reverse".asInstanceOf[typings.baseui.baseuiStrings.`column-reverse`]
   @scala.inline
-  def `column-reverse`: typings.baseui.baseuiStrings.`column-reverse` = this.cast("column-reverse")
+  def inherit: typings.baseui.baseuiStrings.inherit = "inherit".asInstanceOf[typings.baseui.baseuiStrings.inherit]
   @scala.inline
-  def inherit: typings.baseui.baseuiStrings.inherit = this.cast("inherit")
+  def initial: typings.baseui.baseuiStrings.initial = "initial".asInstanceOf[typings.baseui.baseuiStrings.initial]
   @scala.inline
-  def initial: typings.baseui.baseuiStrings.initial = this.cast("initial")
+  def row: typings.baseui.baseuiStrings.row = "row".asInstanceOf[typings.baseui.baseuiStrings.row]
   @scala.inline
-  def row: typings.baseui.baseuiStrings.row = this.cast("row")
+  def `row-reverse`: typings.baseui.baseuiStrings.`row-reverse` = "row-reverse".asInstanceOf[typings.baseui.baseuiStrings.`row-reverse`]
   @scala.inline
-  def `row-reverse`: typings.baseui.baseuiStrings.`row-reverse` = this.cast("row-reverse")
-  @scala.inline
-  def unset: typings.baseui.baseuiStrings.unset = this.cast("unset")
+  def unset: typings.baseui.baseuiStrings.unset = "unset".asInstanceOf[typings.baseui.baseuiStrings.unset]
 }
 

@@ -20,7 +20,6 @@ object SignatureHelpParameter {
     name: java.lang.String
   ): SignatureHelpParameter = {
     val __obj = js.Dynamic.literal(displayParts = displayParts.asInstanceOf[js.Any], documentation = documentation.asInstanceOf[js.Any], isOptional = isOptional.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SignatureHelpParameter]
   }
 }

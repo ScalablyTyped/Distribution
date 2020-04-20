@@ -23,7 +23,6 @@ object DetailsResource {
     update: AnonEditId => Request_[AppDetails]
   ): DetailsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[DetailsResource]
   }
 }

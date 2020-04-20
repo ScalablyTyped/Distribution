@@ -16,6 +16,6 @@ object UniqueIdGenerator extends js.Object {
   /**
     * Gets an unique (relatively to the current scene) Id
     */
-  def UniqueId(): Double = js.native
+  def UniqueId: Double = js.native
 }
 

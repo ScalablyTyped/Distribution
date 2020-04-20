@@ -24,7 +24,6 @@ object DisplayNamesData {
   @scala.inline
   def apply(patterns: AnonLocale, types: AnonCurrency): DisplayNamesData = {
     val __obj = js.Dynamic.literal(patterns = patterns.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisplayNamesData]
   }
 }

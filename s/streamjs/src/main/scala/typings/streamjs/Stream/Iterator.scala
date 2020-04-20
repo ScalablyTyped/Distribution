@@ -13,7 +13,6 @@ object Iterator {
   @scala.inline
   def apply[T](done: Boolean, next: () => T): Iterator[T] = {
     val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], next = js.Any.fromFunction0(next))
-  
     __obj.asInstanceOf[Iterator[T]]
   }
 }

@@ -26,7 +26,6 @@ object DataTypeAbstract {
   @scala.inline
   def apply(dialectTypes: String): DataTypeAbstract = {
     val __obj = js.Dynamic.literal(dialectTypes = dialectTypes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DataTypeAbstract]
   }
 }

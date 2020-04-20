@@ -13,12 +13,10 @@ trait OverviewTypes extends js.Object
 
 object OverviewTypes {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `false`: typings.osrm.osrmStrings.`false` = "false".asInstanceOf[typings.osrm.osrmStrings.`false`]
   @scala.inline
-  def `false`: typings.osrm.osrmStrings.`false` = this.cast("false")
+  def full: typings.osrm.osrmStrings.full = "full".asInstanceOf[typings.osrm.osrmStrings.full]
   @scala.inline
-  def full: typings.osrm.osrmStrings.full = this.cast("full")
-  @scala.inline
-  def simplified: typings.osrm.osrmStrings.simplified = this.cast("simplified")
+  def simplified: typings.osrm.osrmStrings.simplified = "simplified".asInstanceOf[typings.osrm.osrmStrings.simplified]
 }
 

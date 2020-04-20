@@ -12,7 +12,6 @@ object UseGlobalFiltersState {
   @scala.inline
   def apply[D /* <: js.Object */](globalFilter: js.Any): UseGlobalFiltersState[D] = {
     val __obj = js.Dynamic.literal(globalFilter = globalFilter.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UseGlobalFiltersState[D]]
   }
 }

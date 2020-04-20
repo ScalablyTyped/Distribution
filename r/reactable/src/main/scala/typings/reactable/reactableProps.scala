@@ -10,16 +10,16 @@ import scala.scalajs.js.annotation._
 
 trait reactableProps {
   @scala.inline
-  def TableProps: TableComponentProperties.type = typings.reactable.mod.TableComponentProperties
+  def TableProps: TableComponentProperties.type = TableComponentProperties
   type TableProps[T] = TableComponentProperties[T]
   @scala.inline
-  def TdProps: TdProperties.type = typings.reactable.mod.TdProperties
+  def TdProps: TdProperties.type = TdProperties
   type TdProps = TdProperties
   @scala.inline
-  def ThProps: ThProperties.type = typings.reactable.mod.ThProperties
+  def ThProps: ThProperties.type = ThProperties
   type ThProps = ThProperties
   @scala.inline
-  def TrProps: TrProperties.type = typings.reactable.mod.TrProperties
+  def TrProps: TrProperties.type = TrProperties
   type TrProps[T] = TrProperties[T]
 }
 

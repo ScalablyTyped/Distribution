@@ -12,7 +12,6 @@ object TransitionCallbackProps {
   @scala.inline
   def apply(closing: Boolean): TransitionCallbackProps = {
     val __obj = js.Dynamic.literal(closing = closing.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TransitionCallbackProps]
   }
 }

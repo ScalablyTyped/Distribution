@@ -12,10 +12,8 @@ trait Bit extends js.Object
 
 object Bit {
   @scala.inline
-  def `0`: typings.bitwise.bitwiseNumbers.`0` = this.cast(0)
+  def `0`: typings.bitwise.bitwiseNumbers.`0` = 0.asInstanceOf[typings.bitwise.bitwiseNumbers.`0`]
   @scala.inline
-  def `1`: typings.bitwise.bitwiseNumbers.`1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `1`: typings.bitwise.bitwiseNumbers.`1` = 1.asInstanceOf[typings.bitwise.bitwiseNumbers.`1`]
 }
 

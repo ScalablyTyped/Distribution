@@ -1,5 +1,7 @@
 package typings.titanium.Titanium.UI
 
+import typings.titanium.Titanium.Event
+import typings.titanium.Titanium.Module
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,6 +9,11 @@ import scala.scalajs.js.annotation._
 /**
 		 * A set of constants for the styles available for <Titanium.UI.ActivityIndicator> objects.
 		 */
+@JSGlobal("Titanium.UI.ActivityIndicatorStyle")
+@js.native
+class ActivityIndicatorStyle () extends Module
+
+/* static members */
 @JSGlobal("Titanium.UI.ActivityIndicatorStyle")
 @js.native
 object ActivityIndicatorStyle extends js.Object {
@@ -41,7 +48,7 @@ object ActivityIndicatorStyle extends js.Object {
   /**
   			 * Adds the specified callback as an event listener for the named event.
   			 */
-  def addEventListener(name: String, callback: js.Function1[/* param0 */ js.Any, _]): Unit = js.native
+  def addEventListener(name: String, callback: js.Function1[/* param0 */ Event, Unit]): Unit = js.native
   /**
   			 * Applies the properties to the proxy.
   			 */
@@ -53,30 +60,32 @@ object ActivityIndicatorStyle extends js.Object {
   def fireEvent(name: String, event: js.Any): Unit = js.native
   /**
   			 * Gets the value of the <Titanium.UI.ActivityIndicatorStyle.apiName> property.
+  			 * @deprecated Access <Titanium.UI.ActivityIndicatorStyle.apiName> instead.
   			 */
   def getApiName(): String = js.native
   /**
   			 * Gets the value of the <Titanium.UI.ActivityIndicatorStyle.bubbleParent> property.
+  			 * @deprecated Access <Titanium.UI.ActivityIndicatorStyle.bubbleParent> instead.
   			 */
   def getBubbleParent(): Boolean = js.native
   /**
   			 * Gets the value of the <Titanium.UI.ActivityIndicatorStyle.lifecycleContainer> property.
+  			 * @deprecated Access <Titanium.UI.ActivityIndicatorStyle.lifecycleContainer> instead.
   			 */
   def getLifecycleContainer(): Window | TabGroup = js.native
   /**
   			 * Removes the specified callback as an event listener for the named event.
   			 */
-  def removeEventListener(name: String, callback: js.Function1[/* param0 */ js.Any, _]): Unit = js.native
+  def removeEventListener(name: String, callback: js.Function1[/* param0 */ Event, Unit]): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.ActivityIndicatorStyle.bubbleParent> property.
+  			 * @deprecated Set the value using <Titanium.UI.ActivityIndicatorStyle.bubbleParent> instead.
   			 */
   def setBubbleParent(bubbleParent: Boolean): Unit = js.native
-  /**
-  			 * Sets the value of the <Titanium.UI.ActivityIndicatorStyle.lifecycleContainer> property.
-  			 */
   def setLifecycleContainer(lifecycleContainer: TabGroup): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.ActivityIndicatorStyle.lifecycleContainer> property.
+  			 * @deprecated Set the value using <Titanium.UI.ActivityIndicatorStyle.lifecycleContainer> instead.
   			 */
   def setLifecycleContainer(lifecycleContainer: Window): Unit = js.native
 }

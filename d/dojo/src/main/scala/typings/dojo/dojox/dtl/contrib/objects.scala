@@ -22,7 +22,6 @@ object objects {
   @scala.inline
   def apply(key: (js.Any, js.Any) => js.Any): objects = {
     val __obj = js.Dynamic.literal(key = js.Any.fromFunction2(key))
-  
     __obj.asInstanceOf[objects]
   }
 }

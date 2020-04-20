@@ -16,16 +16,14 @@ trait PhononAjaxErrorFlag extends js.Object
 
 object PhononAjaxErrorFlag {
   @scala.inline
-  def JSON_MALFORMED: typings.phonon.phononStrings.JSON_MALFORMED = this.cast("JSON_MALFORMED")
+  def JSON_MALFORMED: typings.phonon.phononStrings.JSON_MALFORMED = "JSON_MALFORMED".asInstanceOf[typings.phonon.phononStrings.JSON_MALFORMED]
   @scala.inline
-  def NO_INTERNET_ACCESS: typings.phonon.phononStrings.NO_INTERNET_ACCESS = this.cast("NO_INTERNET_ACCESS")
+  def NO_INTERNET_ACCESS: typings.phonon.phononStrings.NO_INTERNET_ACCESS = "NO_INTERNET_ACCESS".asInstanceOf[typings.phonon.phononStrings.NO_INTERNET_ACCESS]
   @scala.inline
-  def REQUEST_CANCELED: typings.phonon.phononStrings.REQUEST_CANCELED = this.cast("REQUEST_CANCELED")
+  def REQUEST_CANCELED: typings.phonon.phononStrings.REQUEST_CANCELED = "REQUEST_CANCELED".asInstanceOf[typings.phonon.phononStrings.REQUEST_CANCELED]
   @scala.inline
-  def TIMEOUT_EXCEEDED: typings.phonon.phononStrings.TIMEOUT_EXCEEDED = this.cast("TIMEOUT_EXCEEDED")
+  def TIMEOUT_EXCEEDED: typings.phonon.phononStrings.TIMEOUT_EXCEEDED = "TIMEOUT_EXCEEDED".asInstanceOf[typings.phonon.phononStrings.TIMEOUT_EXCEEDED]
   @scala.inline
-  def XMLHTTPREQUEST_UNAVAILABLE: typings.phonon.phononStrings.XMLHTTPREQUEST_UNAVAILABLE = this.cast("XMLHTTPREQUEST_UNAVAILABLE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def XMLHTTPREQUEST_UNAVAILABLE: typings.phonon.phononStrings.XMLHTTPREQUEST_UNAVAILABLE = "XMLHTTPREQUEST_UNAVAILABLE".asInstanceOf[typings.phonon.phononStrings.XMLHTTPREQUEST_UNAVAILABLE]
 }
 

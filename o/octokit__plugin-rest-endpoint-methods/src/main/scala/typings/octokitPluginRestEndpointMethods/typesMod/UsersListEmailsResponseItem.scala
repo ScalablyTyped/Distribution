@@ -15,7 +15,6 @@ object UsersListEmailsResponseItem {
   @scala.inline
   def apply(email: String, primary: Boolean, verified: Boolean, visibility: String): UsersListEmailsResponseItem = {
     val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], primary = primary.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any], visibility = visibility.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UsersListEmailsResponseItem]
   }
 }

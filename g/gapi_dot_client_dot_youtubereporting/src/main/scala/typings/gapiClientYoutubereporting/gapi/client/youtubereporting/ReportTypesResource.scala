@@ -15,7 +15,6 @@ object ReportTypesResource {
   @scala.inline
   def apply(list: AnonFields => Request_[ListReportTypesResponse]): ReportTypesResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[ReportTypesResource]
   }
 }

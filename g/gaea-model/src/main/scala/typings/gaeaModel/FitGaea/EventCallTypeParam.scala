@@ -14,7 +14,6 @@ object EventCallTypeParam {
   @scala.inline
   def apply(editor: String, field: String, label: String): EventCallTypeParam = {
     val __obj = js.Dynamic.literal(editor = editor.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventCallTypeParam]
   }
 }

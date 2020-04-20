@@ -13,12 +13,10 @@ trait DevicePushState extends js.Object
 
 object DevicePushState {
   @scala.inline
-  def ACTIVE: typings.ably.ablyStrings.ACTIVE = this.cast("ACTIVE")
+  def ACTIVE: typings.ably.ablyStrings.ACTIVE = "ACTIVE".asInstanceOf[typings.ably.ablyStrings.ACTIVE]
   @scala.inline
-  def FAILED: typings.ably.ablyStrings.FAILED = this.cast("FAILED")
+  def FAILED: typings.ably.ablyStrings.FAILED = "FAILED".asInstanceOf[typings.ably.ablyStrings.FAILED]
   @scala.inline
-  def FAILING: typings.ably.ablyStrings.FAILING = this.cast("FAILING")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def FAILING: typings.ably.ablyStrings.FAILING = "FAILING".asInstanceOf[typings.ably.ablyStrings.FAILING]
 }
 

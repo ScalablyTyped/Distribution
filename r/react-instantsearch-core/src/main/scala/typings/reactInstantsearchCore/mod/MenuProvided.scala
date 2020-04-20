@@ -25,7 +25,6 @@ object MenuProvided {
     searchForItems: /* repeated */ js.Any => js.Any
   ): MenuProvided = {
     val __obj = js.Dynamic.literal(createURL = js.Any.fromFunction1(createURL), currentRefinement = currentRefinement.asInstanceOf[js.Any], isFromSearch = isFromSearch.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], refine = js.Any.fromFunction1(refine), searchForItems = js.Any.fromFunction1(searchForItems))
-  
     __obj.asInstanceOf[MenuProvided]
   }
 }

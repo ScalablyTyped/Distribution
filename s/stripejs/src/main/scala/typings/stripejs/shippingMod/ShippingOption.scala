@@ -30,7 +30,6 @@ object ShippingOption {
   @scala.inline
   def apply(amount: Double, detail: String, id: String, label: String): ShippingOption = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ShippingOption]
   }
 }

@@ -37,7 +37,6 @@ object IBaseCellMetadata {
   @scala.inline
   def apply(jupyter: PartialIBaseCellJupyterMe, name: String, tags: js.Array[String], trusted: Boolean): IBaseCellMetadata = {
     val __obj = js.Dynamic.literal(jupyter = jupyter.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], trusted = trusted.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IBaseCellMetadata]
   }
 }

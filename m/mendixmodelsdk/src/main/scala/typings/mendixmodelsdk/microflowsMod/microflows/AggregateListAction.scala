@@ -26,16 +26,16 @@ class AggregateListAction protected () extends MicroflowAction {
   ) = this()
   @JSName("model")
   var model_FAggregateListAction: IModel = js.native
-  def aggregateFunction(): AggregateFunctionEnum = js.native
+  def aggregateFunction: AggregateFunctionEnum = js.native
   def aggregateFunction(newValue: AggregateFunctionEnum): js.Any = js.native
   def attribute(): js.Any = js.native
   def attribute(newValue: IAttribute): js.Any = js.native
-  def attributeQualifiedName(): String | Null = js.native
+  def attributeQualifiedName: String | Null = js.native
   @JSName("attribute")
-  def attribute_Union(): IAttribute | Null = js.native
-  def inputListVariableName(): String = js.native
+  def attribute_Union: IAttribute | Null = js.native
+  def inputListVariableName: String = js.native
   def inputListVariableName(newValue: String): js.Any = js.native
-  def outputVariableName(): String = js.native
+  def outputVariableName: String = js.native
   def outputVariableName(newValue: String): js.Any = js.native
 }
 

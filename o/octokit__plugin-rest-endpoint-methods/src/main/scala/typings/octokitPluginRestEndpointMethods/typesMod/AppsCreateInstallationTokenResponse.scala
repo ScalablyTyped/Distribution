@@ -20,7 +20,6 @@ object AppsCreateInstallationTokenResponse {
     token: String
   ): AppsCreateInstallationTokenResponse = {
     val __obj = js.Dynamic.literal(expires_at = expires_at.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], repositories = repositories.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AppsCreateInstallationTokenResponse]
   }
 }

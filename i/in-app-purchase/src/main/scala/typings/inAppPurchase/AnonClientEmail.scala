@@ -15,7 +15,6 @@ object AnonClientEmail {
   @scala.inline
   def apply(clientEmail: String, privateKey: String): AnonClientEmail = {
     val __obj = js.Dynamic.literal(clientEmail = clientEmail.asInstanceOf[js.Any], privateKey = privateKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonClientEmail]
   }
 }

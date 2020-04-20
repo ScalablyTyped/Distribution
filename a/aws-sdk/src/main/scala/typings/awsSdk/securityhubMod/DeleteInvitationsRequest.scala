@@ -16,7 +16,6 @@ object DeleteInvitationsRequest {
   @scala.inline
   def apply(AccountIds: AccountIdList): DeleteInvitationsRequest = {
     val __obj = js.Dynamic.literal(AccountIds = AccountIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteInvitationsRequest]
   }
 }

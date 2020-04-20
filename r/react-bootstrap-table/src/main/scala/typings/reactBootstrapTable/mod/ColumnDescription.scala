@@ -98,7 +98,7 @@ trait ColumnDescription[TRow /* <: js.Object */] extends js.Object {
   	 * Name of the column.
   	 * Comes from TableHeader.dataField property.
   	 */
-  var name: String
+  var name: /* keyof TRow */ String
   /**
   	 * Flag to indicate whether the data in this column should be included in a search.
   	 * Comes from TableHeader.searchable property.
@@ -143,7 +143,7 @@ trait ColumnDescription[TRow /* <: js.Object */] extends js.Object {
   	 * Custom sort function to use for this column.
   	 * Comes from TableHeader.sortFunc property.
   	 */
-  def sortFunc(a: TRow, b: TRow, order: SortOrder, sortField: String, extraData: js.Any): Double
+  def sortFunc(a: TRow, b: TRow, order: SortOrder, sortField: /* keyof TRow */ String, extraData: js.Any): Double
 }
 
 object ColumnDescription {
@@ -178,17 +178,16 @@ object ColumnDescription {
     hidden: Boolean,
     hiddenOnInsert: Boolean,
     invalidEditColumnClassName: String | (js.Function2[/* cell */ js.Any, /* row */ TRow, String]),
-    name: String,
+    name: /* keyof TRow */ String,
     searchable: Boolean,
     sort: Boolean,
-    sortFunc: (TRow, TRow, SortOrder, String, js.Any) => Double,
+    sortFunc: (TRow, TRow, SortOrder, /* keyof TRow */ String, js.Any) => Double,
     sortFuncExtraData: js.Any,
     style: CSSProperties,
     text: String | Double | Boolean | ReactElement,
     width: String
   ): ColumnDescription[TRow] = {
     val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], attrs = attrs.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], columnTitle = columnTitle.asInstanceOf[js.Any], customEditor = customEditor.asInstanceOf[js.Any], editAttrs = editAttrs.asInstanceOf[js.Any], editClassName = editClassName.asInstanceOf[js.Any], editable = editable.asInstanceOf[js.Any], expandable = expandable.asInstanceOf[js.Any], export = export.asInstanceOf[js.Any], filterFormatted = filterFormatted.asInstanceOf[js.Any], filterValue = js.Any.fromFunction2(filterValue), format = js.Any.fromFunction4(format), formatExtraData = formatExtraData.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any], hiddenOnInsert = hiddenOnInsert.asInstanceOf[js.Any], invalidEditColumnClassName = invalidEditColumnClassName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], searchable = searchable.asInstanceOf[js.Any], sort = sort.asInstanceOf[js.Any], sortFunc = js.Any.fromFunction5(sortFunc), sortFuncExtraData = sortFuncExtraData.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ColumnDescription[TRow]]
   }
 }

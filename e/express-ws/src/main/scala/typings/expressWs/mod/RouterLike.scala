@@ -19,9 +19,9 @@ trait RouterLike
   var get_Original: IRouterMatcher[this.type] = js.native
   def get(path: PathParams, subApplication: typings.expressServeStaticCore.mod.Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
-  def get[P /* <: Params */, ResBody, ReqBody](
+  def get[P /* <: Params */, ResBody, ReqBody, ReqQuery](
     path: PathParams,
-    handlers: ((RequestHandler[P, ResBody, ReqBody]) | (RequestHandlerParams[P, ResBody, ReqBody]))*
+    handlers: ((RequestHandler[P, ResBody, ReqBody, ReqQuery]) | (RequestHandlerParams[P, ResBody, ReqBody, ReqQuery]))*
   ): this.type = js.native
 }
 

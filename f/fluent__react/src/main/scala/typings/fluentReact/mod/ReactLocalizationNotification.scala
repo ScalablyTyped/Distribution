@@ -12,7 +12,6 @@ object ReactLocalizationNotification {
   @scala.inline
   def apply(relocalize: () => Unit): ReactLocalizationNotification = {
     val __obj = js.Dynamic.literal(relocalize = js.Any.fromFunction0(relocalize))
-  
     __obj.asInstanceOf[ReactLocalizationNotification]
   }
 }

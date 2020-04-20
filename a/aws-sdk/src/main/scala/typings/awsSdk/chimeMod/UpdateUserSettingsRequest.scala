@@ -24,7 +24,6 @@ object UpdateUserSettingsRequest {
   @scala.inline
   def apply(AccountId: String, UserId: String, UserSettings: UserSettings): UpdateUserSettingsRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], UserId = UserId.asInstanceOf[js.Any], UserSettings = UserSettings.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateUserSettingsRequest]
   }
 }

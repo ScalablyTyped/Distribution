@@ -12,7 +12,6 @@ object DeleteProjectAdministrators {
   @scala.inline
   def apply(userId: Double): DeleteProjectAdministrators = {
     val __obj = js.Dynamic.literal(userId = userId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteProjectAdministrators]
   }
 }

@@ -35,7 +35,6 @@ object NetworkStats {
   @scala.inline
   def apply(NetworkType: bluetooth | cellular | ethernet | none | wifi | wimax | other | unknown | UNSUPPORTED): NetworkStats = {
     val __obj = js.Dynamic.literal(NetworkType = NetworkType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NetworkStats]
   }
 }

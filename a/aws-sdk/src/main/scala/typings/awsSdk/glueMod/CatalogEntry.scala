@@ -20,7 +20,6 @@ object CatalogEntry {
   @scala.inline
   def apply(DatabaseName: NameString, TableName: NameString): CatalogEntry = {
     val __obj = js.Dynamic.literal(DatabaseName = DatabaseName.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CatalogEntry]
   }
 }

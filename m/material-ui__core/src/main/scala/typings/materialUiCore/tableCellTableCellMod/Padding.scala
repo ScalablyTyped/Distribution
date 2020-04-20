@@ -14,14 +14,12 @@ trait Padding extends js.Object
 
 object Padding {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def checkbox: typings.materialUiCore.materialUiCoreStrings.checkbox = "checkbox".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.checkbox]
   @scala.inline
-  def checkbox: typings.materialUiCore.materialUiCoreStrings.checkbox = this.cast("checkbox")
+  def default: typings.materialUiCore.materialUiCoreStrings.default = "default".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.default]
   @scala.inline
-  def default: typings.materialUiCore.materialUiCoreStrings.default = this.cast("default")
+  def dense: typings.materialUiCore.materialUiCoreStrings.dense = "dense".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.dense]
   @scala.inline
-  def dense: typings.materialUiCore.materialUiCoreStrings.dense = this.cast("dense")
-  @scala.inline
-  def none: typings.materialUiCore.materialUiCoreStrings.none = this.cast("none")
+  def none: typings.materialUiCore.materialUiCoreStrings.none = "none".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.none]
 }
 

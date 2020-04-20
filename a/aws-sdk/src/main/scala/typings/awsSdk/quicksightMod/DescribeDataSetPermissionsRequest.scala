@@ -20,7 +20,6 @@ object DescribeDataSetPermissionsRequest {
   @scala.inline
   def apply(AwsAccountId: AwsAccountId, DataSetId: ResourceId): DescribeDataSetPermissionsRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], DataSetId = DataSetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeDataSetPermissionsRequest]
   }
 }

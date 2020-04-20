@@ -20,16 +20,14 @@ trait MFTriggerWeekOfMonth extends js.Object
 
 object MFTriggerWeekOfMonth {
   @scala.inline
-  def FirstWeek: `1` = this.cast(1)
+  def FirstWeek: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def FourthWeek: `4` = this.cast(4)
+  def FourthWeek: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def LastWeek: `5` = this.cast(5)
+  def LastWeek: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def SecondWeek: `2` = this.cast(2)
+  def SecondWeek: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def ThirdWeek: `3` = this.cast(3)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ThirdWeek: `3` = 3.asInstanceOf[`3`]
 }
 

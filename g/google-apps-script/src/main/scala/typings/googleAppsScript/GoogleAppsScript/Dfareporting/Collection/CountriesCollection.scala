@@ -17,7 +17,6 @@ object CountriesCollection {
   @scala.inline
   def apply(get: (String, String) => Country, list: String => CountriesListResponse): CountriesCollection = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[CountriesCollection]
   }
 }

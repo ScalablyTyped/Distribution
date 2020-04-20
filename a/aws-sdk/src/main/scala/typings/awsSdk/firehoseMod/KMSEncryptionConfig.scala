@@ -16,7 +16,6 @@ object KMSEncryptionConfig {
   @scala.inline
   def apply(AWSKMSKeyARN: AWSKMSKeyARN): KMSEncryptionConfig = {
     val __obj = js.Dynamic.literal(AWSKMSKeyARN = AWSKMSKeyARN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KMSEncryptionConfig]
   }
 }

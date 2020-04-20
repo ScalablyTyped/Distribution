@@ -13,7 +13,6 @@ object AnonChildrenElement {
   @scala.inline
   def apply(children: Element): AnonChildrenElement = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonChildrenElement]
   }
 }

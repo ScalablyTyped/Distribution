@@ -16,7 +16,6 @@ object DeleteResolverEndpointRequest {
   @scala.inline
   def apply(ResolverEndpointId: ResourceId): DeleteResolverEndpointRequest = {
     val __obj = js.Dynamic.literal(ResolverEndpointId = ResolverEndpointId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteResolverEndpointRequest]
   }
 }

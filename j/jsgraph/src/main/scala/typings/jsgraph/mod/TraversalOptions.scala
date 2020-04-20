@@ -20,7 +20,6 @@ object TraversalOptions {
     traverseContext: TraversalContext
   ): TraversalOptions = {
     val __obj = js.Dynamic.literal(allowEmptyStartVector = allowEmptyStartVector.asInstanceOf[js.Any], signalStart = signalStart.asInstanceOf[js.Any], startVector = startVector.asInstanceOf[js.Any], traverseContext = traverseContext.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TraversalOptions]
   }
 }

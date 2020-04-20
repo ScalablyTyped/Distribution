@@ -18,14 +18,12 @@ trait MFFolderListingItemGroupingMode extends js.Object
 
 object MFFolderListingItemGroupingMode {
   @scala.inline
-  def GroupObjectsByObjectType: `1` = this.cast(1)
+  def GroupObjectsByObjectType: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def GroupViewsAndFoldersByType: `1024` = this.cast(1024)
+  def GroupViewsAndFoldersByType: `1024` = 1024.asInstanceOf[`1024`]
   @scala.inline
-  def NoGrouping: `0` = this.cast(0)
+  def NoGrouping: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def Unspecified: `-1` = this.cast(-1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Unspecified: `-1` = -1.asInstanceOf[`-1`]
 }
 

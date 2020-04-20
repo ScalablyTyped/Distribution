@@ -13,7 +13,6 @@ object ITriggerEvents {
   @scala.inline
   def apply(down: js.Any => js.Any, up: js.Any => js.Any): ITriggerEvents = {
     val __obj = js.Dynamic.literal(down = js.Any.fromFunction1(down), up = js.Any.fromFunction1(up))
-  
     __obj.asInstanceOf[ITriggerEvents]
   }
 }

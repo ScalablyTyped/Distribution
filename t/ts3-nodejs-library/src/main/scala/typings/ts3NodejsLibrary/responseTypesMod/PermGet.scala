@@ -14,7 +14,6 @@ object PermGet {
   @scala.inline
   def apply(permid: Double, permsid: String, permvalue: Double): PermGet = {
     val __obj = js.Dynamic.literal(permid = permid.asInstanceOf[js.Any], permsid = permsid.asInstanceOf[js.Any], permvalue = permvalue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PermGet]
   }
 }

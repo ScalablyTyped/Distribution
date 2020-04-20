@@ -105,7 +105,7 @@ object postProcessRenderEffectMod extends js.Object {
     /**
       * Checks if all the post processes in the effect are supported.
       */
-    def isSupported(): Boolean = js.native
+    def isSupported: Boolean = js.native
   }
   
 }

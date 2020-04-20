@@ -12,7 +12,6 @@ object Window {
   @scala.inline
   def apply(whale: Typeofwhale): Window = {
     val __obj = js.Dynamic.literal(whale = whale.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Window]
   }
 }

@@ -20,7 +20,6 @@ object Typeofrtjson {
     update_branch: () => Double
   ): Typeofrtjson = {
     val __obj = js.Dynamic.literal(init_routes = js.Any.fromFunction1(init_routes), next_route = js.Any.fromFunction0(next_route), push_routes = js.Any.fromFunction0(push_routes), update_branch = js.Any.fromFunction0(update_branch))
-  
     __obj.asInstanceOf[Typeofrtjson]
   }
 }

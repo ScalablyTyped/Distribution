@@ -13,7 +13,6 @@ object AnonFollowing {
   @scala.inline
   def apply(following: Boolean, pyong: Boolean): AnonFollowing = {
     val __obj = js.Dynamic.literal(following = following.asInstanceOf[js.Any], pyong = pyong.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFollowing]
   }
 }

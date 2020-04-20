@@ -16,7 +16,6 @@ object RunCommandParameters {
   @scala.inline
   def apply(RunCommandTargets: RunCommandTargets): RunCommandParameters = {
     val __obj = js.Dynamic.literal(RunCommandTargets = RunCommandTargets.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RunCommandParameters]
   }
 }

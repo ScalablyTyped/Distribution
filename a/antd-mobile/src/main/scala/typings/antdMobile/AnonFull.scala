@@ -13,7 +13,6 @@ object AnonFull {
   @scala.inline
   def apply(full: Boolean, prefixCls: String): AnonFull = {
     val __obj = js.Dynamic.literal(full = full.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFull]
   }
 }

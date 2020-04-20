@@ -14,7 +14,6 @@ object JSONBaseAttributes {
   @scala.inline
   def apply(createdAt: String, objectId: String, updatedAt: String): JSONBaseAttributes = {
     val __obj = js.Dynamic.literal(createdAt = createdAt.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any], updatedAt = updatedAt.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JSONBaseAttributes]
   }
 }

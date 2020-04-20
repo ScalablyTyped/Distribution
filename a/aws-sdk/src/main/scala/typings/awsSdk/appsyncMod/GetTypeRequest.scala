@@ -24,7 +24,6 @@ object GetTypeRequest {
   @scala.inline
   def apply(apiId: String, format: TypeDefinitionFormat, typeName: ResourceName): GetTypeRequest = {
     val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], typeName = typeName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetTypeRequest]
   }
 }

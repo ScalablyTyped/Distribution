@@ -24,7 +24,6 @@ object SearchInstance {
     ] => Unit
   ): SearchInstance = {
     val __obj = js.Dynamic.literal(registerSearchQueryRewriter = js.Any.fromFunction1(registerSearchQueryRewriter), registerSearchSuggestionsProvider = js.Any.fromFunction1(registerSearchSuggestionsProvider))
-  
     __obj.asInstanceOf[SearchInstance]
   }
 }

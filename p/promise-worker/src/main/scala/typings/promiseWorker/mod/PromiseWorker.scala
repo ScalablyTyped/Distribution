@@ -21,7 +21,6 @@ object PromiseWorker {
   @scala.inline
   def apply(postMessage: js.Any => js.Promise[js.Any]): PromiseWorker = {
     val __obj = js.Dynamic.literal(postMessage = js.Any.fromFunction1(postMessage))
-  
     __obj.asInstanceOf[PromiseWorker]
   }
 }

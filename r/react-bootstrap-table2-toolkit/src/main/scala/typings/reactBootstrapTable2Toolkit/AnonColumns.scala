@@ -22,7 +22,6 @@ object AnonColumns {
     toggles: js.Array[Boolean]
   ): AnonColumns = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], onColumnToggle = js.Any.fromFunction1(onColumnToggle), toggles = toggles.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonColumns]
   }
 }

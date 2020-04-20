@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 object reactAppComponents extends reactAppProps {
   @scala.inline
-  def Header: ComponentType[js.Object] = js.constructorOf[typings.reactApp.mod.Header].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
+  def Header: ComponentType[js.Object] = js.constructorOf[typings.reactApp.mod.Header].asInstanceOf[ComponentType[js.Object]]
   @scala.inline
-  def Layout: ComponentType[LayoutProps] = js.constructorOf[typings.reactApp.mod.Layout].asInstanceOf[typings.react.mod.ComponentType[LayoutProps]]
+  def Layout: ComponentType[LayoutProps] = js.constructorOf[typings.reactApp.mod.Layout].asInstanceOf[ComponentType[LayoutProps]]
   @scala.inline
-  def Link: ComponentType[LinkProps] = js.constructorOf[typings.reactApp.mod.Link].asInstanceOf[typings.react.mod.ComponentType[LinkProps]]
+  def Link: ComponentType[LinkProps] = js.constructorOf[typings.reactApp.mod.Link].asInstanceOf[ComponentType[LinkProps]]
   @scala.inline
-  def Navigation: ComponentType[js.Object] = js.constructorOf[typings.reactApp.mod.Navigation].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
+  def Navigation: ComponentType[js.Object] = js.constructorOf[typings.reactApp.mod.Navigation].asInstanceOf[ComponentType[js.Object]]
 }
 

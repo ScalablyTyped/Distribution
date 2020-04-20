@@ -14,7 +14,6 @@ object AnonIsAvailable {
   @scala.inline
   def apply(isAvailable: `false`): AnonIsAvailable = {
     val __obj = js.Dynamic.literal(isAvailable = isAvailable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsAvailable]
   }
 }

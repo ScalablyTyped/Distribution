@@ -14,10 +14,8 @@ trait nonHotkeyEvents extends js.Object
 
 object nonHotkeyEvents {
   @scala.inline
-  def REGISTERED: registered = this.cast("registered")
+  def REGISTERED: registered = "registered".asInstanceOf[registered]
   @scala.inline
-  def UNREGISTERED: unregistered = this.cast("unregistered")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UNREGISTERED: unregistered = "unregistered".asInstanceOf[unregistered]
 }
 

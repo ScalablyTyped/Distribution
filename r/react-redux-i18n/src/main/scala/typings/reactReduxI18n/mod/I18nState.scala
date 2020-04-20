@@ -13,7 +13,6 @@ object I18nState {
   @scala.inline
   def apply(locale: String, translations: TranslationObjects): I18nState = {
     val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[I18nState]
   }
 }

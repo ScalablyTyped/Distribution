@@ -16,7 +16,6 @@ object BatchGetProjectsInput {
   @scala.inline
   def apply(names: ProjectNames): BatchGetProjectsInput = {
     val __obj = js.Dynamic.literal(names = names.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchGetProjectsInput]
   }
 }

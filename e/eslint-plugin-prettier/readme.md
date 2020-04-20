@@ -1,7 +1,7 @@
 
 # Scala.js typings for eslint-plugin-prettier
 
-Typings are for version 2.2
+Typings are for version 3.1
 
 ## Library description:
 Runs prettier as an eslint rule

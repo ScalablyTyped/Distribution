@@ -12,7 +12,6 @@ object SymbolConstructor {
   @scala.inline
   def apply(asyncIterator: js.Symbol): SymbolConstructor = {
     val __obj = js.Dynamic.literal(asyncIterator = asyncIterator.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SymbolConstructor]
   }
 }

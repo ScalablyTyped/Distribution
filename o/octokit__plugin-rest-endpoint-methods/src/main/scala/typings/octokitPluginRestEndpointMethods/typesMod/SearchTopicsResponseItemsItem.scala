@@ -34,7 +34,6 @@ object SearchTopicsResponseItemsItem {
     updated_at: String
   ): SearchTopicsResponseItemsItem = {
     val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], created_by = created_by.asInstanceOf[js.Any], curated = curated.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], display_name = display_name.asInstanceOf[js.Any], featured = featured.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], released = released.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any], short_description = short_description.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SearchTopicsResponseItemsItem]
   }
 }

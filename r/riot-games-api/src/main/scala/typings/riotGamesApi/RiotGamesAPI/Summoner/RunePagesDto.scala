@@ -13,7 +13,6 @@ object RunePagesDto {
   @scala.inline
   def apply(pages: js.Array[RunePageDto], summonerId: Double): RunePagesDto = {
     val __obj = js.Dynamic.literal(pages = pages.asInstanceOf[js.Any], summonerId = summonerId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RunePagesDto]
   }
 }

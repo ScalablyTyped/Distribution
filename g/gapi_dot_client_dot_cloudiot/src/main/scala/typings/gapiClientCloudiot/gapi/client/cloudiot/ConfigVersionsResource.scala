@@ -18,7 +18,6 @@ object ConfigVersionsResource {
   @scala.inline
   def apply(list: AnonAccesstoken => Request_[ListDeviceConfigVersionsResponse]): ConfigVersionsResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[ConfigVersionsResource]
   }
 }

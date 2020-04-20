@@ -1,5 +1,6 @@
 package typings.stellarSdk.horizonApiMod.Horizon
 
+import org.scalablytyped.runtime.TopLevel
 import typings.stellarBase.mod.AssetType
 import typings.stellarSdk.horizonApiMod.Horizon.OperationResponseType.allowTrust
 import scala.scalajs.js
@@ -24,7 +25,7 @@ object AllowTrustOperationResponse {
   def apply(
     _links: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in T | 'self' ]: stellar-sdk.stellar-sdk/lib/horizon_api.Horizon.ResponseLink}
-    */ typings.stellarSdk.stellarSdkStrings.BaseResponse with js.Any,
+    */ typings.stellarSdk.stellarSdkStrings.BaseResponse with TopLevel[js.Any],
     asset_code: String,
     asset_issuer: String,
     asset_type: AssetType,

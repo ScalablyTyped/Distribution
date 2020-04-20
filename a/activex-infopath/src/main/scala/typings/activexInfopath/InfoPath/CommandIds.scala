@@ -368,364 +368,362 @@ trait CommandIds extends js.Object
 
 object CommandIds {
   @scala.inline
-  def AddWordToDictionary: `131` = this.cast(131)
+  def AddWordToDictionary: `131` = 131.asInstanceOf[`131`]
   @scala.inline
-  def AlignTextCenter: `33` = this.cast(33)
+  def AlignTextCenter: `33` = 33.asInstanceOf[`33`]
   @scala.inline
-  def AlignTextJustify: `35` = this.cast(35)
+  def AlignTextJustify: `35` = 35.asInstanceOf[`35`]
   @scala.inline
-  def AlignTextLeft: `32` = this.cast(32)
+  def AlignTextLeft: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def AlignTextRight: `34` = this.cast(34)
+  def AlignTextRight: `34` = 34.asInstanceOf[`34`]
   @scala.inline
-  def ClearAutoSpace: `85` = this.cast(85)
+  def ClearAutoSpace: `85` = 85.asInstanceOf[`85`]
   @scala.inline
-  def ClearBulletedList: `59` = this.cast(59)
+  def ClearBulletedList: `59` = 59.asInstanceOf[`59`]
   @scala.inline
-  def ClearFontFormatting: `109` = this.cast(109)
+  def ClearFontFormatting: `109` = 109.asInstanceOf[`109`]
   @scala.inline
-  def ClearNumberedList: `58` = this.cast(58)
+  def ClearNumberedList: `58` = 58.asInstanceOf[`58`]
   @scala.inline
-  def Close: `4` = this.cast(4)
+  def Close: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def Copy: `53` = this.cast(53)
+  def Copy: `53` = 53.asInstanceOf[`53`]
   @scala.inline
-  def CorrectAllOfMisspelledWord: `134` = this.cast(134)
+  def CorrectAllOfMisspelledWord: `134` = 134.asInstanceOf[`134`]
   @scala.inline
-  def CorrectMisspelledWord: `133` = this.cast(133)
+  def CorrectMisspelledWord: `133` = 133.asInstanceOf[`133`]
   @scala.inline
-  def Cut: `52` = this.cast(52)
+  def Cut: `52` = 52.asInstanceOf[`52`]
   @scala.inline
-  def DecreaseFontSizeBy2: `117` = this.cast(117)
+  def DecreaseFontSizeBy2: `117` = 117.asInstanceOf[`117`]
   @scala.inline
-  def DecreaseIndent: `60` = this.cast(60)
+  def DecreaseIndent: `60` = 60.asInstanceOf[`60`]
   @scala.inline
-  def DeleteMisspelledWord: `135` = this.cast(135)
+  def DeleteMisspelledWord: `135` = 135.asInstanceOf[`135`]
   @scala.inline
-  def DeleteSelectedColumns: `68` = this.cast(68)
+  def DeleteSelectedColumns: `68` = 68.asInstanceOf[`68`]
   @scala.inline
-  def DeleteSelectedRows: `67` = this.cast(67)
+  def DeleteSelectedRows: `67` = 67.asInstanceOf[`67`]
   @scala.inline
-  def DeleteSelectedTable: `66` = this.cast(66)
+  def DeleteSelectedTable: `66` = 66.asInstanceOf[`66`]
   @scala.inline
-  def DrawTable: `50` = this.cast(50)
+  def DrawTable: `50` = 50.asInstanceOf[`50`]
   @scala.inline
-  def EraseTable: `51` = this.cast(51)
+  def EraseTable: `51` = 51.asInstanceOf[`51`]
   @scala.inline
-  def FindNextMisspelledWord: `132` = this.cast(132)
+  def FindNextMisspelledWord: `132` = 132.asInstanceOf[`132`]
   @scala.inline
-  def FindReplaceFindNext: `119` = this.cast(119)
+  def FindReplaceFindNext: `119` = 119.asInstanceOf[`119`]
   @scala.inline
-  def FormatPainterApplyFormatting: `23` = this.cast(23)
+  def FormatPainterApplyFormatting: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def FormatPainterApplyFormattingPersistent: `25` = this.cast(25)
+  def FormatPainterApplyFormattingPersistent: `25` = 25.asInstanceOf[`25`]
   @scala.inline
-  def FormatPainterCopyFormatting: `24` = this.cast(24)
+  def FormatPainterCopyFormatting: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def FormatPainterCopyFormattingPersistent: `172` = this.cast(172)
+  def FormatPainterCopyFormattingPersistent: `172` = 172.asInstanceOf[`172`]
   @scala.inline
-  def GetCurrentMisspelledWord: `139` = this.cast(139)
+  def GetCurrentMisspelledWord: `139` = 139.asInstanceOf[`139`]
   @scala.inline
-  def GetDefaultFontColor: `98` = this.cast(98)
+  def GetDefaultFontColor: `98` = 98.asInstanceOf[`98`]
   @scala.inline
-  def GetDefaultHighlightColor: `97` = this.cast(97)
+  def GetDefaultHighlightColor: `97` = 97.asInstanceOf[`97`]
   @scala.inline
-  def GetFindReplaceOptionSearchDirection: `94` = this.cast(94)
+  def GetFindReplaceOptionSearchDirection: `94` = 94.asInstanceOf[`94`]
   @scala.inline
-  def GetFindReplaceState: `171` = this.cast(171)
+  def GetFindReplaceState: `171` = 171.asInstanceOf[`171`]
   @scala.inline
-  def GetFindString: `87` = this.cast(87)
+  def GetFindString: `87` = 87.asInstanceOf[`87`]
   @scala.inline
-  def GetFontAvailableByIndex: `102` = this.cast(102)
+  def GetFontAvailableByIndex: `102` = 102.asInstanceOf[`102`]
   @scala.inline
-  def GetFontSizeAvailableByIndex: `104` = this.cast(104)
+  def GetFontSizeAvailableByIndex: `104` = 104.asInstanceOf[`104`]
   @scala.inline
-  def GetFontSizesAvailableCount: `103` = this.cast(103)
+  def GetFontSizesAvailableCount: `103` = 103.asInstanceOf[`103`]
   @scala.inline
-  def GetFontsAvailableCount: `101` = this.cast(101)
+  def GetFontsAvailableCount: `101` = 101.asInstanceOf[`101`]
   @scala.inline
-  def GetHyperlinkAddress: `159` = this.cast(159)
+  def GetHyperlinkAddress: `159` = 159.asInstanceOf[`159`]
   @scala.inline
-  def GetHyperlinkDisplayText: `158` = this.cast(158)
+  def GetHyperlinkDisplayText: `158` = 158.asInstanceOf[`158`]
   @scala.inline
-  def GetPictureAlternativeText: `169` = this.cast(169)
+  def GetPictureAlternativeText: `169` = 169.asInstanceOf[`169`]
   @scala.inline
-  def GetPictureHeight: `167` = this.cast(167)
+  def GetPictureHeight: `167` = 167.asInstanceOf[`167`]
   @scala.inline
-  def GetPictureTextWrapping: `170` = this.cast(170)
+  def GetPictureTextWrapping: `170` = 170.asInstanceOf[`170`]
   @scala.inline
-  def GetPictureWidth: `168` = this.cast(168)
+  def GetPictureWidth: `168` = 168.asInstanceOf[`168`]
   @scala.inline
-  def GetReplaceWithString: `89` = this.cast(89)
+  def GetReplaceWithString: `89` = 89.asInstanceOf[`89`]
   @scala.inline
-  def GetSelectedCellBottomPadding: `151` = this.cast(151)
+  def GetSelectedCellBottomPadding: `151` = 151.asInstanceOf[`151`]
   @scala.inline
-  def GetSelectedCellLeftPadding: `150` = this.cast(150)
+  def GetSelectedCellLeftPadding: `150` = 150.asInstanceOf[`150`]
   @scala.inline
-  def GetSelectedCellRightPadding: `152` = this.cast(152)
+  def GetSelectedCellRightPadding: `152` = 152.asInstanceOf[`152`]
   @scala.inline
-  def GetSelectedCellTopPadding: `149` = this.cast(149)
+  def GetSelectedCellTopPadding: `149` = 149.asInstanceOf[`149`]
   @scala.inline
-  def GetSelectedCellVerticalAlignment: `148` = this.cast(148)
+  def GetSelectedCellVerticalAlignment: `148` = 148.asInstanceOf[`148`]
   @scala.inline
-  def GetSelectedColumnWidth: `142` = this.cast(142)
+  def GetSelectedColumnWidth: `142` = 142.asInstanceOf[`142`]
   @scala.inline
-  def GetSelectedRowHeight: `140` = this.cast(140)
+  def GetSelectedRowHeight: `140` = 140.asInstanceOf[`140`]
   @scala.inline
-  def GetSelectedTextBackgroundColor: `127` = this.cast(127)
+  def GetSelectedTextBackgroundColor: `127` = 127.asInstanceOf[`127`]
   @scala.inline
-  def GetSelectedTextFont: `124` = this.cast(124)
+  def GetSelectedTextFont: `124` = 124.asInstanceOf[`124`]
   @scala.inline
-  def GetSelectedTextFontColor: `125` = this.cast(125)
+  def GetSelectedTextFontColor: `125` = 125.asInstanceOf[`125`]
   @scala.inline
-  def GetSelectedTextFontSize: `123` = this.cast(123)
+  def GetSelectedTextFontSize: `123` = 123.asInstanceOf[`123`]
   @scala.inline
-  def GetSelectedTextHighlightColor: `126` = this.cast(126)
+  def GetSelectedTextHighlightColor: `126` = 126.asInstanceOf[`126`]
   @scala.inline
-  def GetSpellingSuggestion: `138` = this.cast(138)
+  def GetSpellingSuggestion: `138` = 138.asInstanceOf[`138`]
   @scala.inline
-  def GetSpellingSuggestionsCount: `137` = this.cast(137)
+  def GetSpellingSuggestionsCount: `137` = 137.asInstanceOf[`137`]
   @scala.inline
-  def GetSubmitButtonCaption: `9` = this.cast(9)
+  def GetSubmitButtonCaption: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def GetTableDirection: `77` = this.cast(77)
+  def GetTableDirection: `77` = 77.asInstanceOf[`77`]
   @scala.inline
-  def GetTableHorizontalAlignment: `75` = this.cast(75)
+  def GetTableHorizontalAlignment: `75` = 75.asInstanceOf[`75`]
   @scala.inline
-  def GotoFirstErrorOnView: `107` = this.cast(107)
+  def GotoFirstErrorOnView: `107` = 107.asInstanceOf[`107`]
   @scala.inline
-  def GotoNextErrorOnView: `10` = this.cast(10)
+  def GotoNextErrorOnView: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def IgnoreAllOfMisspelledWord: `130` = this.cast(130)
+  def IgnoreAllOfMisspelledWord: `130` = 130.asInstanceOf[`130`]
   @scala.inline
-  def IgnoreMisspelledWord: `129` = this.cast(129)
+  def IgnoreMisspelledWord: `129` = 129.asInstanceOf[`129`]
   @scala.inline
-  def IncreaseFontSizeBy2: `118` = this.cast(118)
+  def IncreaseFontSizeBy2: `118` = 118.asInstanceOf[`118`]
   @scala.inline
-  def IncreaseIndent: `61` = this.cast(61)
+  def IncreaseIndent: `61` = 61.asInstanceOf[`61`]
   @scala.inline
-  def InsertBulletedList: `22` = this.cast(22)
+  def InsertBulletedList: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def InsertBulletedListEmptyCircle: `48` = this.cast(48)
+  def InsertBulletedListEmptyCircle: `48` = 48.asInstanceOf[`48`]
   @scala.inline
-  def InsertBulletedListSolidCircle: `47` = this.cast(47)
+  def InsertBulletedListSolidCircle: `47` = 47.asInstanceOf[`47`]
   @scala.inline
-  def InsertBulletedListSolidSquare: `49` = this.cast(49)
+  def InsertBulletedListSolidSquare: `49` = 49.asInstanceOf[`49`]
   @scala.inline
-  def InsertColumnLeft: `64` = this.cast(64)
+  def InsertColumnLeft: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def InsertColumnRight: `65` = this.cast(65)
+  def InsertColumnRight: `65` = 65.asInstanceOf[`65`]
   @scala.inline
-  def InsertHorizontalLine: `78` = this.cast(78)
+  def InsertHorizontalLine: `78` = 78.asInstanceOf[`78`]
   @scala.inline
-  def InsertHyperlink: `81` = this.cast(81)
+  def InsertHyperlink: `81` = 81.asInstanceOf[`81`]
   @scala.inline
-  def InsertImage: `80` = this.cast(80)
+  def InsertImage: `80` = 80.asInstanceOf[`80`]
   @scala.inline
-  def InsertNumberedList: `21` = this.cast(21)
+  def InsertNumberedList: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def InsertNumberedListAlphaLowercase: `43` = this.cast(43)
+  def InsertNumberedListAlphaLowercase: `43` = 43.asInstanceOf[`43`]
   @scala.inline
-  def InsertNumberedListAlphaUppercase: `44` = this.cast(44)
+  def InsertNumberedListAlphaUppercase: `44` = 44.asInstanceOf[`44`]
   @scala.inline
-  def InsertNumberedListDecimal: `42` = this.cast(42)
+  def InsertNumberedListDecimal: `42` = 42.asInstanceOf[`42`]
   @scala.inline
-  def InsertNumberedListRomanLowercase: `45` = this.cast(45)
+  def InsertNumberedListRomanLowercase: `45` = 45.asInstanceOf[`45`]
   @scala.inline
-  def InsertNumberedListRomanUppercase: `46` = this.cast(46)
+  def InsertNumberedListRomanUppercase: `46` = 46.asInstanceOf[`46`]
   @scala.inline
-  def InsertPictureFromFile: `13` = this.cast(13)
+  def InsertPictureFromFile: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def InsertRowAbove: `62` = this.cast(62)
+  def InsertRowAbove: `62` = 62.asInstanceOf[`62`]
   @scala.inline
-  def InsertRowBelow: `63` = this.cast(63)
+  def InsertRowBelow: `63` = 63.asInstanceOf[`63`]
   @scala.inline
-  def InsertTable: `128` = this.cast(128)
+  def InsertTable: `128` = 128.asInstanceOf[`128`]
   @scala.inline
-  def IsFormDirectionLeftToRight: `175` = this.cast(175)
+  def IsFormDirectionLeftToRight: `175` = 175.asInstanceOf[`175`]
   @scala.inline
-  def IsFormDirectionRightToLeft: `174` = this.cast(174)
+  def IsFormDirectionRightToLeft: `174` = 174.asInstanceOf[`174`]
   @scala.inline
-  def MergeCells: `73` = this.cast(73)
+  def MergeCells: `73` = 73.asInstanceOf[`73`]
   @scala.inline
-  def Paste: `54` = this.cast(54)
+  def Paste: `54` = 54.asInstanceOf[`54`]
   @scala.inline
-  def PasteAsText: `178` = this.cast(178)
+  def PasteAsText: `178` = 178.asInstanceOf[`178`]
   @scala.inline
-  def PasteKeepSourceFormatting: `176` = this.cast(176)
+  def PasteKeepSourceFormatting: `176` = 176.asInstanceOf[`176`]
   @scala.inline
-  def PasteMatchDestination: `177` = this.cast(177)
+  def PasteMatchDestination: `177` = 177.asInstanceOf[`177`]
   @scala.inline
-  def Redo: `57` = this.cast(57)
+  def Redo: `57` = 57.asInstanceOf[`57`]
   @scala.inline
-  def RemoveHyperlink: `160` = this.cast(160)
+  def RemoveHyperlink: `160` = 160.asInstanceOf[`160`]
   @scala.inline
-  def Replace: `95` = this.cast(95)
+  def Replace: `95` = 95.asInstanceOf[`95`]
   @scala.inline
-  def ReplaceAll: `96` = this.cast(96)
+  def ReplaceAll: `96` = 96.asInstanceOf[`96`]
   @scala.inline
-  def Save: `5` = this.cast(5)
+  def Save: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def SaveAs: `6` = this.cast(6)
+  def SaveAs: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def SelectAll: `55` = this.cast(55)
+  def SelectAll: `55` = 55.asInstanceOf[`55`]
   @scala.inline
-  def SelectCell: `72` = this.cast(72)
+  def SelectCell: `72` = 72.asInstanceOf[`72`]
   @scala.inline
-  def SelectColumns: `71` = this.cast(71)
+  def SelectColumns: `71` = 71.asInstanceOf[`71`]
   @scala.inline
-  def SelectHyperlink: `82` = this.cast(82)
+  def SelectHyperlink: `82` = 82.asInstanceOf[`82`]
   @scala.inline
-  def SelectNextColumn: `146` = this.cast(146)
+  def SelectNextColumn: `146` = 146.asInstanceOf[`146`]
   @scala.inline
-  def SelectNextRow: `144` = this.cast(144)
+  def SelectNextRow: `144` = 144.asInstanceOf[`144`]
   @scala.inline
-  def SelectPreviousColumn: `147` = this.cast(147)
+  def SelectPreviousColumn: `147` = 147.asInstanceOf[`147`]
   @scala.inline
-  def SelectPreviousRow: `145` = this.cast(145)
+  def SelectPreviousRow: `145` = 145.asInstanceOf[`145`]
   @scala.inline
-  def SelectRows: `70` = this.cast(70)
+  def SelectRows: `70` = 70.asInstanceOf[`70`]
   @scala.inline
-  def SelectTable: `69` = this.cast(69)
+  def SelectTable: `69` = 69.asInstanceOf[`69`]
   @scala.inline
-  def Set15LineSpacing: `40` = this.cast(40)
+  def Set15LineSpacing: `40` = 40.asInstanceOf[`40`]
   @scala.inline
-  def SetAutoSpaceBetweenAsianAndLatinText: `83` = this.cast(83)
+  def SetAutoSpaceBetweenAsianAndLatinText: `83` = 83.asInstanceOf[`83`]
   @scala.inline
-  def SetAutoSpaceBetweenAsianTextAndNumbers: `84` = this.cast(84)
+  def SetAutoSpaceBetweenAsianTextAndNumbers: `84` = 84.asInstanceOf[`84`]
   @scala.inline
-  def SetDoubleLineSpacing: `41` = this.cast(41)
+  def SetDoubleLineSpacing: `41` = 41.asInstanceOf[`41`]
   @scala.inline
-  def SetFindReplaceOptionMatchCase: `91` = this.cast(91)
+  def SetFindReplaceOptionMatchCase: `91` = 91.asInstanceOf[`91`]
   @scala.inline
-  def SetFindReplaceOptionSearchDirection: `93` = this.cast(93)
+  def SetFindReplaceOptionSearchDirection: `93` = 93.asInstanceOf[`93`]
   @scala.inline
-  def SetFindReplaceOptionUseWildcards: `92` = this.cast(92)
+  def SetFindReplaceOptionUseWildcards: `92` = 92.asInstanceOf[`92`]
   @scala.inline
-  def SetFindReplaceOptionWholeWordOnly: `90` = this.cast(90)
+  def SetFindReplaceOptionWholeWordOnly: `90` = 90.asInstanceOf[`90`]
   @scala.inline
-  def SetFindString: `86` = this.cast(86)
+  def SetFindString: `86` = 86.asInstanceOf[`86`]
   @scala.inline
-  def SetFontFormattingBold: `26` = this.cast(26)
+  def SetFontFormattingBold: `26` = 26.asInstanceOf[`26`]
   @scala.inline
-  def SetFontFormattingHeading1: `110` = this.cast(110)
+  def SetFontFormattingHeading1: `110` = 110.asInstanceOf[`110`]
   @scala.inline
-  def SetFontFormattingHeading2: `111` = this.cast(111)
+  def SetFontFormattingHeading2: `111` = 111.asInstanceOf[`111`]
   @scala.inline
-  def SetFontFormattingHeading3: `112` = this.cast(112)
+  def SetFontFormattingHeading3: `112` = 112.asInstanceOf[`112`]
   @scala.inline
-  def SetFontFormattingHeading4: `113` = this.cast(113)
+  def SetFontFormattingHeading4: `113` = 113.asInstanceOf[`113`]
   @scala.inline
-  def SetFontFormattingHeading5: `114` = this.cast(114)
+  def SetFontFormattingHeading5: `114` = 114.asInstanceOf[`114`]
   @scala.inline
-  def SetFontFormattingHeading6: `115` = this.cast(115)
+  def SetFontFormattingHeading6: `115` = 115.asInstanceOf[`115`]
   @scala.inline
-  def SetFontFormattingItalic: `27` = this.cast(27)
+  def SetFontFormattingItalic: `27` = 27.asInstanceOf[`27`]
   @scala.inline
-  def SetFontFormattingNormal: `116` = this.cast(116)
+  def SetFontFormattingNormal: `116` = 116.asInstanceOf[`116`]
   @scala.inline
-  def SetFontFormattingStrikethrough: `31` = this.cast(31)
+  def SetFontFormattingStrikethrough: `31` = 31.asInstanceOf[`31`]
   @scala.inline
-  def SetFontFormattingSubscript: `30` = this.cast(30)
+  def SetFontFormattingSubscript: `30` = 30.asInstanceOf[`30`]
   @scala.inline
-  def SetFontFormattingSuperscript: `29` = this.cast(29)
+  def SetFontFormattingSuperscript: `29` = 29.asInstanceOf[`29`]
   @scala.inline
-  def SetFontFormattingUnderline: `28` = this.cast(28)
+  def SetFontFormattingUnderline: `28` = 28.asInstanceOf[`28`]
   @scala.inline
-  def SetPictureAlternativeText: `166` = this.cast(166)
+  def SetPictureAlternativeText: `166` = 166.asInstanceOf[`166`]
   @scala.inline
-  def SetPictureHeight: `164` = this.cast(164)
+  def SetPictureHeight: `164` = 164.asInstanceOf[`164`]
   @scala.inline
-  def SetPictureInlineWithText: `161` = this.cast(161)
+  def SetPictureInlineWithText: `161` = 161.asInstanceOf[`161`]
   @scala.inline
-  def SetPictureToLeftOfText: `162` = this.cast(162)
+  def SetPictureToLeftOfText: `162` = 162.asInstanceOf[`162`]
   @scala.inline
-  def SetPictureToRightOfText: `163` = this.cast(163)
+  def SetPictureToRightOfText: `163` = 163.asInstanceOf[`163`]
   @scala.inline
-  def SetPictureWidth: `165` = this.cast(165)
+  def SetPictureWidth: `165` = 165.asInstanceOf[`165`]
   @scala.inline
-  def SetReplaceWithString: `88` = this.cast(88)
+  def SetReplaceWithString: `88` = 88.asInstanceOf[`88`]
   @scala.inline
-  def SetSelectedCellAlignmentBottom: `156` = this.cast(156)
+  def SetSelectedCellAlignmentBottom: `156` = 156.asInstanceOf[`156`]
   @scala.inline
-  def SetSelectedCellAlignmentMiddle: `154` = this.cast(154)
+  def SetSelectedCellAlignmentMiddle: `154` = 154.asInstanceOf[`154`]
   @scala.inline
-  def SetSelectedCellAlignmentTop: `155` = this.cast(155)
+  def SetSelectedCellAlignmentTop: `155` = 155.asInstanceOf[`155`]
   @scala.inline
-  def SetSelectedCellPadding: `153` = this.cast(153)
+  def SetSelectedCellPadding: `153` = 153.asInstanceOf[`153`]
   @scala.inline
-  def SetSelectedColumnWidth: `143` = this.cast(143)
+  def SetSelectedColumnWidth: `143` = 143.asInstanceOf[`143`]
   @scala.inline
-  def SetSelectedRowHeight: `141` = this.cast(141)
+  def SetSelectedRowHeight: `141` = 141.asInstanceOf[`141`]
   @scala.inline
-  def SetSelectedTextBackgroundColor: `122` = this.cast(122)
+  def SetSelectedTextBackgroundColor: `122` = 122.asInstanceOf[`122`]
   @scala.inline
-  def SetSelectedTextFont: `106` = this.cast(106)
+  def SetSelectedTextFont: `106` = 106.asInstanceOf[`106`]
   @scala.inline
-  def SetSelectedTextFontColor: `121` = this.cast(121)
+  def SetSelectedTextFontColor: `121` = 121.asInstanceOf[`121`]
   @scala.inline
-  def SetSelectedTextFontSize: `105` = this.cast(105)
+  def SetSelectedTextFontSize: `105` = 105.asInstanceOf[`105`]
   @scala.inline
-  def SetSelectedTextHighlightColor: `120` = this.cast(120)
+  def SetSelectedTextHighlightColor: `120` = 120.asInstanceOf[`120`]
   @scala.inline
-  def SetSingleLineSpacing: `39` = this.cast(39)
+  def SetSingleLineSpacing: `39` = 39.asInstanceOf[`39`]
   @scala.inline
-  def SetSpellingOptionCheckAsYouType: `136` = this.cast(136)
+  def SetSpellingOptionCheckAsYouType: `136` = 136.asInstanceOf[`136`]
   @scala.inline
-  def SetTableDirection: `76` = this.cast(76)
+  def SetTableDirection: `76` = 76.asInstanceOf[`76`]
   @scala.inline
-  def SetTableHorizontalAlignment: `74` = this.cast(74)
+  def SetTableHorizontalAlignment: `74` = 74.asInstanceOf[`74`]
   @scala.inline
-  def SetTextDirectionDefault: `36` = this.cast(36)
+  def SetTextDirectionDefault: `36` = 36.asInstanceOf[`36`]
   @scala.inline
-  def SetTextDirectionLeftToRight: `37` = this.cast(37)
+  def SetTextDirectionLeftToRight: `37` = 37.asInstanceOf[`37`]
   @scala.inline
-  def SetTextDirectionRightToLeft: `38` = this.cast(38)
+  def SetTextDirectionRightToLeft: `38` = 38.asInstanceOf[`38`]
   @scala.inline
-  def ShowBordersShadingDialog: `18` = this.cast(18)
+  def ShowBordersShadingDialog: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def ShowCurrentErrorMessage: `11` = this.cast(11)
+  def ShowCurrentErrorMessage: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def ShowDigitalSignaturesDialog: `108` = this.cast(108)
+  def ShowDigitalSignaturesDialog: `108` = 108.asInstanceOf[`108`]
   @scala.inline
-  def ShowEditHyperlinkDialog: `20` = this.cast(20)
+  def ShowEditHyperlinkDialog: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def ShowExportToExcelDialog: `7` = this.cast(7)
+  def ShowExportToExcelDialog: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def ShowExportToPDFXPSDialog: `173` = this.cast(173)
+  def ShowExportToPDFXPSDialog: `173` = 173.asInstanceOf[`173`]
   @scala.inline
-  def ShowExportToWebDialog: `2` = this.cast(2)
+  def ShowExportToWebDialog: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def ShowFormatPictureDialog: `17` = this.cast(17)
+  def ShowFormatPictureDialog: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def ShowImportFormDataDialog: `1` = this.cast(1)
+  def ShowImportFormDataDialog: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def ShowInsertHyperlinkDialog: `19` = this.cast(19)
+  def ShowInsertHyperlinkDialog: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def ShowInsertSymbolDialog: `79` = this.cast(79)
+  def ShowInsertSymbolDialog: `79` = 79.asInstanceOf[`79`]
   @scala.inline
-  def ShowInsertTableDialog: `14` = this.cast(14)
+  def ShowInsertTableDialog: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def ShowMergeFormDialog: `0` = this.cast(0)
+  def ShowMergeFormDialog: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def ShowSetLanguageDialog: `12` = this.cast(12)
+  def ShowSetLanguageDialog: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def ShowSetSelectedTextFontColorDialog: `99` = this.cast(99)
+  def ShowSetSelectedTextFontColorDialog: `99` = 99.asInstanceOf[`99`]
   @scala.inline
-  def ShowSetSelectedTextHighlightColorDialog: `100` = this.cast(100)
+  def ShowSetSelectedTextHighlightColorDialog: `100` = 100.asInstanceOf[`100`]
   @scala.inline
-  def ShowSplitCellsDialog: `15` = this.cast(15)
+  def ShowSplitCellsDialog: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def ShowTablePropertiesDialog: `16` = this.cast(16)
+  def ShowTablePropertiesDialog: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def SplitCells: `157` = this.cast(157)
+  def SplitCells: `157` = 157.asInstanceOf[`157`]
   @scala.inline
-  def Submit: `8` = this.cast(8)
+  def Submit: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def Undo: `56` = this.cast(56)
+  def Undo: `56` = 56.asInstanceOf[`56`]
   @scala.inline
-  def WorkOffline: `3` = this.cast(3)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def WorkOffline: `3` = 3.asInstanceOf[`3`]
 }
 

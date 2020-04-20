@@ -27,7 +27,7 @@ class VerticalFlow protected () extends Widget {
   ) = this()
   @JSName("model")
   var model_FVerticalFlow: IModel = js.native
-  def widgets(): IList[Widget] = js.native
+  def widgets: IList[Widget] = js.native
 }
 
 /* static members */

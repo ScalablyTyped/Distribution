@@ -16,7 +16,6 @@ object GetApprovalRuleTemplateInput {
   @scala.inline
   def apply(approvalRuleTemplateName: ApprovalRuleTemplateName): GetApprovalRuleTemplateInput = {
     val __obj = js.Dynamic.literal(approvalRuleTemplateName = approvalRuleTemplateName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetApprovalRuleTemplateInput]
   }
 }

@@ -24,7 +24,6 @@ object GroupVersionForDiscovery {
   @scala.inline
   def apply(groupVersion: String, version: String): GroupVersionForDiscovery = {
     val __obj = js.Dynamic.literal(groupVersion = groupVersion.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GroupVersionForDiscovery]
   }
 }

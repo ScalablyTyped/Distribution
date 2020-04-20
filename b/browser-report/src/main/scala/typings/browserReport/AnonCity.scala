@@ -17,7 +17,6 @@ object AnonCity {
   @scala.inline
   def apply(city: String, code: String, latitude: String, longitude: String, name: String, timezone: String): AnonCity = {
     val __obj = js.Dynamic.literal(city = city.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], timezone = timezone.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCity]
   }
 }

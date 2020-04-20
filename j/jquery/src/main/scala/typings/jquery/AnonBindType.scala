@@ -18,7 +18,6 @@ object AnonBindType {
   @scala.inline
   def apply(bindType: String): AnonBindType = {
     val __obj = js.Dynamic.literal(bindType = bindType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBindType]
   }
 }

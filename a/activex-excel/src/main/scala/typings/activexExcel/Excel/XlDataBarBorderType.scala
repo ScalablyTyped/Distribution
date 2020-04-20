@@ -14,10 +14,8 @@ trait XlDataBarBorderType extends js.Object
 
 object XlDataBarBorderType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlDataBarBorderNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def xlDataBarBorderNone: `0` = this.cast(0)
-  @scala.inline
-  def xlDataBarBorderSolid: `1` = this.cast(1)
+  def xlDataBarBorderSolid: `1` = 1.asInstanceOf[`1`]
 }
 

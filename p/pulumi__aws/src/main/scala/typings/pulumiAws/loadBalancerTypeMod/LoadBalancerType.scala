@@ -12,10 +12,8 @@ trait LoadBalancerType extends js.Object
 
 object LoadBalancerType {
   @scala.inline
-  def application: typings.pulumiAws.pulumiAwsStrings.application = this.cast("application")
+  def application: typings.pulumiAws.pulumiAwsStrings.application = "application".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.application]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def network: typings.pulumiAws.pulumiAwsStrings.network = this.cast("network")
+  def network: typings.pulumiAws.pulumiAwsStrings.network = "network".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.network]
 }
 

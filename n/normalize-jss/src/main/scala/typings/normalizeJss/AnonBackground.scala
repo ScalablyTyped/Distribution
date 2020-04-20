@@ -13,7 +13,6 @@ object AnonBackground {
   @scala.inline
   def apply(background: String, textDecorationSkip: String): AnonBackground = {
     val __obj = js.Dynamic.literal(background = background.asInstanceOf[js.Any], textDecorationSkip = textDecorationSkip.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBackground]
   }
 }

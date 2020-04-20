@@ -22,7 +22,6 @@ object IEntityView {
     relatedEntities: RelatedEntityCollection
   ): IEntityView = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], entityState = entityState.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], logicalName = logicalName.asInstanceOf[js.Any], relatedEntities = relatedEntities.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IEntityView]
   }
 }

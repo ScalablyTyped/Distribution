@@ -15,7 +15,6 @@ object AnonFontSizeLineHeight {
   @scala.inline
   def apply(color: String, fontSize: Double, lineHeight: Double, textAlign: String): AnonFontSizeLineHeight = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any], textAlign = textAlign.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFontSizeLineHeight]
   }
 }

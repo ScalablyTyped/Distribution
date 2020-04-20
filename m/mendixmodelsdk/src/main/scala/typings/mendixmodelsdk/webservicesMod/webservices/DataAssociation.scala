@@ -29,24 +29,24 @@ class DataAssociation protected () extends DataEntityBase {
   def associationByContract(): js.Any = js.native
   def associationByContract(newValue: MsdAssociation): js.Any = js.native
   @JSName("associationByContract")
-  def associationByContract_Union(): MsdAssociation | Null = js.native
-  def associationQualifiedName(): String | Null = js.native
+  def associationByContract_Union: MsdAssociation | Null = js.native
+  def associationQualifiedName: String | Null = js.native
   @JSName("association")
-  def association_Union(): IAssociationBase | Null = js.native
+  def association_Union: IAssociationBase | Null = js.native
   /**
     * In version 8.5.0: introduced
     */
-  def description(): String = js.native
+  def description: String = js.native
   def description(newValue: String): js.Any = js.native
   /**
     * In version 8.0.0: introduced
     */
-  def exposedAssociationName(): String = js.native
+  def exposedAssociationName: String = js.native
   def exposedAssociationName(newValue: String): js.Any = js.native
   /**
     * In version 8.5.0: introduced
     */
-  def summary(): String = js.native
+  def summary: String = js.native
   def summary(newValue: String): js.Any = js.native
 }
 

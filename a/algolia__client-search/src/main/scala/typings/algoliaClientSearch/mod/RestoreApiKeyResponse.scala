@@ -15,7 +15,6 @@ object RestoreApiKeyResponse {
   @scala.inline
   def apply(createdAt: String): RestoreApiKeyResponse = {
     val __obj = js.Dynamic.literal(createdAt = createdAt.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RestoreApiKeyResponse]
   }
 }

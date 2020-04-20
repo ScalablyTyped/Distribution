@@ -14,7 +14,6 @@ object GitCommit {
   @scala.inline
   def apply(author: GitAuthor, message: String, tree: String): GitCommit = {
     val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], tree = tree.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GitCommit]
   }
 }

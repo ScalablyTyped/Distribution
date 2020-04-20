@@ -13,7 +13,6 @@ object AnonBatch {
   @scala.inline
   def apply(batch: `true`): AnonBatch = {
     val __obj = js.Dynamic.literal(batch = batch.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBatch]
   }
 }

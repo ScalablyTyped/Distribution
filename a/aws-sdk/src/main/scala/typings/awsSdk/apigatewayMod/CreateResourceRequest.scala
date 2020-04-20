@@ -24,7 +24,6 @@ object CreateResourceRequest {
   @scala.inline
   def apply(parentId: String, pathPart: String, restApiId: String): CreateResourceRequest = {
     val __obj = js.Dynamic.literal(parentId = parentId.asInstanceOf[js.Any], pathPart = pathPart.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateResourceRequest]
   }
 }

@@ -76,7 +76,6 @@ object PanFade {
     panFadeUp: js.Object => js.Any
   ): PanFade = {
     val __obj = js.Dynamic.literal(panFade = js.Any.fromFunction1(panFade), panFadeDown = js.Any.fromFunction1(panFadeDown), panFadeLeft = js.Any.fromFunction1(panFadeLeft), panFadeRight = js.Any.fromFunction1(panFadeRight), panFadeUp = js.Any.fromFunction1(panFadeUp))
-  
     __obj.asInstanceOf[PanFade]
   }
 }

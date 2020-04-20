@@ -15,7 +15,6 @@ object Entry {
   @scala.inline
   def apply(license: String, repository: String, source: String, sourceText: String): Entry = {
     val __obj = js.Dynamic.literal(license = license.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], sourceText = sourceText.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Entry]
   }
 }

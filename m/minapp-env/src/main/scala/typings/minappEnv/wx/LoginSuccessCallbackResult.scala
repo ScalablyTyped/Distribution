@@ -13,7 +13,6 @@ object LoginSuccessCallbackResult {
   @scala.inline
   def apply(code: String): LoginSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LoginSuccessCallbackResult]
   }
 }

@@ -16,7 +16,6 @@ object PatchRuleGroup {
   @scala.inline
   def apply(PatchRules: PatchRuleList): PatchRuleGroup = {
     val __obj = js.Dynamic.literal(PatchRules = PatchRules.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PatchRuleGroup]
   }
 }

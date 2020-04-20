@@ -25,7 +25,6 @@ object RevokedCertificate {
     userCertificate: Integer
   ): RevokedCertificate = {
     val __obj = js.Dynamic.literal(crlEntryExtensions = crlEntryExtensions.asInstanceOf[js.Any], fromSchema = js.Any.fromFunction1(fromSchema), revocationDate = revocationDate.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema), userCertificate = userCertificate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RevokedCertificate]
   }
 }

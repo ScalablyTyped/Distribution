@@ -13,7 +13,6 @@ object ResetCacheInput {
   @scala.inline
   def apply(GatewayARN: GatewayARN): ResetCacheInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResetCacheInput]
   }
 }

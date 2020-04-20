@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactGithubButtonProps {
   @scala.inline
-  def ReactGithubButtonProps: ReactGitHubButtonProps.type = typings.reactGithubButton.mod.ReactGitHubButtonProps
+  def ReactGithubButtonProps: ReactGitHubButtonProps.type = ReactGitHubButtonProps
   type ReactGithubButtonProps = ReactGitHubButtonProps
 }
 

@@ -24,10 +24,8 @@ trait Environment extends js.Object
 
 object Environment {
   @scala.inline
-  def PRODUCTION: typings.googlepay.googlepayStrings.PRODUCTION = this.cast("PRODUCTION")
+  def PRODUCTION: typings.googlepay.googlepayStrings.PRODUCTION = "PRODUCTION".asInstanceOf[typings.googlepay.googlepayStrings.PRODUCTION]
   @scala.inline
-  def TEST: typings.googlepay.googlepayStrings.TEST = this.cast("TEST")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def TEST: typings.googlepay.googlepayStrings.TEST = "TEST".asInstanceOf[typings.googlepay.googlepayStrings.TEST]
 }
 

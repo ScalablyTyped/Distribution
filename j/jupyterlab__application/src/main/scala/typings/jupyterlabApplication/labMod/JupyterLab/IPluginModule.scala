@@ -20,7 +20,6 @@ object IPluginModule {
   @scala.inline
   def apply(default: JupyterFrontEndPlugin[_] | js.Array[JupyterFrontEndPlugin[_]]): IPluginModule = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPluginModule]
   }
 }

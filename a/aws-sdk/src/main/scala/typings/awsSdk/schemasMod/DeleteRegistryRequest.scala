@@ -13,7 +13,6 @@ object DeleteRegistryRequest {
   @scala.inline
   def apply(RegistryName: string): DeleteRegistryRequest = {
     val __obj = js.Dynamic.literal(RegistryName = RegistryName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteRegistryRequest]
   }
 }

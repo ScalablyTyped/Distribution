@@ -29,7 +29,6 @@ object LifecyclePolicyPolicyDetails {
     targetTags: StringDictionary[js.Any]
   ): LifecyclePolicyPolicyDetails = {
     val __obj = js.Dynamic.literal(resourceTypes = resourceTypes.asInstanceOf[js.Any], schedules = schedules.asInstanceOf[js.Any], targetTags = targetTags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LifecyclePolicyPolicyDetails]
   }
 }

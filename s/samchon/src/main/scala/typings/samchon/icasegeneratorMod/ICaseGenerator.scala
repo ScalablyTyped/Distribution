@@ -24,7 +24,6 @@ object ICaseGenerator {
   @scala.inline
   def apply(at: Double => js.Array[Double], size: () => Double): ICaseGenerator = {
     val __obj = js.Dynamic.literal(at = js.Any.fromFunction1(at), size = js.Any.fromFunction0(size))
-  
     __obj.asInstanceOf[ICaseGenerator]
   }
 }

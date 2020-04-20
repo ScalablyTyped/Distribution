@@ -14,7 +14,6 @@ object IProgressUpdateEvent {
   @scala.inline
   def apply(progress: Double, totalBytesExpectedToWrite: Double, totalBytesWritten: Double): IProgressUpdateEvent = {
     val __obj = js.Dynamic.literal(progress = progress.asInstanceOf[js.Any], totalBytesExpectedToWrite = totalBytesExpectedToWrite.asInstanceOf[js.Any], totalBytesWritten = totalBytesWritten.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IProgressUpdateEvent]
   }
 }

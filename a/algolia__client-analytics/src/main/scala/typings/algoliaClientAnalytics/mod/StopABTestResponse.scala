@@ -23,7 +23,6 @@ object StopABTestResponse {
   @scala.inline
   def apply(abTestID: Double, index: String, taskID: Double): StopABTestResponse = {
     val __obj = js.Dynamic.literal(abTestID = abTestID.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], taskID = taskID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopABTestResponse]
   }
 }

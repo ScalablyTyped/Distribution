@@ -29,7 +29,6 @@ object MutableRecordSource {
     toJSON: () => StringDictionary[Record]
   ): MutableRecordSource = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getRecordIDs = js.Any.fromFunction0(getRecordIDs), getStatus = js.Any.fromFunction1(getStatus), has = js.Any.fromFunction1(has), remove = js.Any.fromFunction1(remove), set = js.Any.fromFunction2(set), size = js.Any.fromFunction0(size), toJSON = js.Any.fromFunction0(toJSON))
-  
     __obj.asInstanceOf[MutableRecordSource]
   }
 }

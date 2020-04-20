@@ -14,7 +14,6 @@ object AnonItemsResourceQualifier {
   @scala.inline
   def apply(items: ResourceQualifier, returnValue: Double): AnonItemsResourceQualifier = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonItemsResourceQualifier]
   }
 }

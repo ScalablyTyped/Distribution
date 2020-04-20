@@ -25,7 +25,6 @@ object Card {
   @scala.inline
   def apply(printJson: () => String): Card = {
     val __obj = js.Dynamic.literal(printJson = js.Any.fromFunction0(printJson))
-  
     __obj.asInstanceOf[Card]
   }
 }

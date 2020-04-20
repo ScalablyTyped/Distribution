@@ -12,7 +12,6 @@ object LocateViewModelLocateErrorEvent {
   @scala.inline
   def apply(error: Error): LocateViewModelLocateErrorEvent = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LocateViewModelLocateErrorEvent]
   }
 }

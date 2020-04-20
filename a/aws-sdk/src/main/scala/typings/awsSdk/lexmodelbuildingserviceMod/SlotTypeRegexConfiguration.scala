@@ -16,7 +16,6 @@ object SlotTypeRegexConfiguration {
   @scala.inline
   def apply(pattern: RegexPattern): SlotTypeRegexConfiguration = {
     val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SlotTypeRegexConfiguration]
   }
 }

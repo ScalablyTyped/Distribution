@@ -29,7 +29,6 @@ object IRenderer {
   @scala.inline
   def apply(createHandle: () => HTMLDivElement, createTabBar: () => TabBar[Widget]): IRenderer = {
     val __obj = js.Dynamic.literal(createHandle = js.Any.fromFunction0(createHandle), createTabBar = js.Any.fromFunction0(createTabBar))
-  
     __obj.asInstanceOf[IRenderer]
   }
 }

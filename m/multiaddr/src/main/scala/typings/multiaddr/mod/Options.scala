@@ -15,7 +15,6 @@ object Options {
   @scala.inline
   def apply(family: String, host: String, port: String, transport: String): Options = {
     val __obj = js.Dynamic.literal(family = family.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], transport = transport.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Options]
   }
 }

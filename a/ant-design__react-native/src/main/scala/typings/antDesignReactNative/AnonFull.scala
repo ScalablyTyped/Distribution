@@ -12,7 +12,6 @@ object AnonFull {
   @scala.inline
   def apply(full: Boolean): AnonFull = {
     val __obj = js.Dynamic.literal(full = full.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFull]
   }
 }

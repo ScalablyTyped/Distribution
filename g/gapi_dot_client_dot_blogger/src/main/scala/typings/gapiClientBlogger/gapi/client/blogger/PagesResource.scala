@@ -42,7 +42,6 @@ object PagesResource {
     update: AnonPublish => Request_[Page]
   ): PagesResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), publish = js.Any.fromFunction1(publish), revert = js.Any.fromFunction1(revert), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[PagesResource]
   }
 }

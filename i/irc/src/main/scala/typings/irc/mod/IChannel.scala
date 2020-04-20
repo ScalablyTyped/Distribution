@@ -17,7 +17,6 @@ object IChannel {
   @scala.inline
   def apply(name: String, topic: String, users: String): IChannel = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IChannel]
   }
 }

@@ -1,6 +1,7 @@
 package typings.reactLoadable.LoadableExport
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
 import typings.reactLoadable.reactLoadableBooleans.`false`
@@ -14,7 +15,7 @@ trait OptionsWithMap[Props, Exports /* <: StringDictionary[js.Any] */] extends C
     */
   var loader: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof Exports ]: (): std.Promise<Exports[P]>}
-    */ typings.reactLoadable.reactLoadableStrings.OptionsWithMap with Exports
+    */ typings.reactLoadable.reactLoadableStrings.OptionsWithMap with TopLevel[Exports]
   /**
     * If you want to customize what gets rendered from your loader you can also pass `render`.
     *
@@ -38,7 +39,7 @@ object OptionsWithMap {
   def apply[Props, Exports /* <: StringDictionary[js.Any] */](
     loader: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof Exports ]: (): std.Promise<Exports[P]>}
-    */ typings.reactLoadable.reactLoadableStrings.OptionsWithMap with Exports,
+    */ typings.reactLoadable.reactLoadableStrings.OptionsWithMap with TopLevel[Exports],
     loading: ComponentType[LoadingComponentProps],
     render: (Exports, Props) => ReactNode,
     delay: Double | `false` = null,

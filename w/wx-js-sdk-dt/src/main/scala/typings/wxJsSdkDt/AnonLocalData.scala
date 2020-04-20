@@ -12,7 +12,6 @@ object AnonLocalData {
   @scala.inline
   def apply(localData: String): AnonLocalData = {
     val __obj = js.Dynamic.literal(localData = localData.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLocalData]
   }
 }

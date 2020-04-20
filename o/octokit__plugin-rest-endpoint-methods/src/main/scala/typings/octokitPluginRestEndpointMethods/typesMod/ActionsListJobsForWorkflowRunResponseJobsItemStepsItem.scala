@@ -24,7 +24,6 @@ object ActionsListJobsForWorkflowRunResponseJobsItemStepsItem {
     status: String
   ): ActionsListJobsForWorkflowRunResponseJobsItemStepsItem = {
     val __obj = js.Dynamic.literal(completed_at = completed_at.asInstanceOf[js.Any], conclusion = conclusion.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], started_at = started_at.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ActionsListJobsForWorkflowRunResponseJobsItemStepsItem]
   }
 }

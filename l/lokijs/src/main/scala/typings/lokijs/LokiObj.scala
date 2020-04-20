@@ -14,7 +14,6 @@ object LokiObj {
   @scala.inline
   def apply($loki: Double, meta: AnonCreated): LokiObj = {
     val __obj = js.Dynamic.literal($loki = $loki.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LokiObj]
   }
 }

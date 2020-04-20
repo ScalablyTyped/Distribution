@@ -13,7 +13,6 @@ object TypeofRekognition {
   @scala.inline
   def apply(Types: TypeofRekognition): TypeofRekognition = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofRekognition]
   }
 }

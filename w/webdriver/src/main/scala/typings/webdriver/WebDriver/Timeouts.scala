@@ -13,12 +13,10 @@ trait Timeouts extends js.Object
 
 object Timeouts {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `implicit`: typings.webdriver.webdriverStrings.`implicit` = "implicit".asInstanceOf[typings.webdriver.webdriverStrings.`implicit`]
   @scala.inline
-  def `implicit`: typings.webdriver.webdriverStrings.`implicit` = this.cast("implicit")
+  def pageLoad: typings.webdriver.webdriverStrings.pageLoad = "pageLoad".asInstanceOf[typings.webdriver.webdriverStrings.pageLoad]
   @scala.inline
-  def pageLoad: typings.webdriver.webdriverStrings.pageLoad = this.cast("pageLoad")
-  @scala.inline
-  def script: typings.webdriver.webdriverStrings.script = this.cast("script")
+  def script: typings.webdriver.webdriverStrings.script = "script".asInstanceOf[typings.webdriver.webdriverStrings.script]
 }
 

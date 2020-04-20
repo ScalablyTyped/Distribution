@@ -16,7 +16,6 @@ object GetOTAUpdateRequest {
   @scala.inline
   def apply(otaUpdateId: OTAUpdateId): GetOTAUpdateRequest = {
     val __obj = js.Dynamic.literal(otaUpdateId = otaUpdateId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetOTAUpdateRequest]
   }
 }

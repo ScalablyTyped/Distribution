@@ -18,7 +18,6 @@ object DeleteVaultOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): DeleteVaultOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteVaultOutput]
   }
 }

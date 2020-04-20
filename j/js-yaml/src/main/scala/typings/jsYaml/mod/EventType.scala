@@ -12,10 +12,8 @@ trait EventType extends js.Object
 
 object EventType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def close: typings.jsYaml.jsYamlStrings.close = "close".asInstanceOf[typings.jsYaml.jsYamlStrings.close]
   @scala.inline
-  def close: typings.jsYaml.jsYamlStrings.close = this.cast("close")
-  @scala.inline
-  def open: typings.jsYaml.jsYamlStrings.open = this.cast("open")
+  def open: typings.jsYaml.jsYamlStrings.open = "open".asInstanceOf[typings.jsYaml.jsYamlStrings.open]
 }
 

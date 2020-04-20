@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait IndexDescription[T] extends js.Object {
   var deduplicate: js.UndefOr[Boolean] = js.undefined
   var expireAfter: js.UndefOr[Double] = js.undefined
-  var fields: js.Array[String]
+  var fields: js.Array[/* keyof T */ String]
   var sparse: js.UndefOr[Boolean] = js.undefined
   var `type`: IndexType
   var unique: js.UndefOr[Boolean] = js.undefined
@@ -16,7 +16,7 @@ trait IndexDescription[T] extends js.Object {
 object IndexDescription {
   @scala.inline
   def apply[T](
-    fields: js.Array[String],
+    fields: js.Array[/* keyof T */ String],
     `type`: IndexType,
     deduplicate: js.UndefOr[Boolean] = js.undefined,
     expireAfter: Int | Double = null,

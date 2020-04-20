@@ -14,7 +14,6 @@ object PartialModule {
   @scala.inline
   def apply(fileName: String, statements: js.Array[Statement]): PartialModule = {
     val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], statements = statements.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PartialModule]
   }
 }

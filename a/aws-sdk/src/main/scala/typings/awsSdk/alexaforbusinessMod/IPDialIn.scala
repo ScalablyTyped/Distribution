@@ -20,7 +20,6 @@ object IPDialIn {
   @scala.inline
   def apply(CommsProtocol: CommsProtocol, Endpoint: Endpoint): IPDialIn = {
     val __obj = js.Dynamic.literal(CommsProtocol = CommsProtocol.asInstanceOf[js.Any], Endpoint = Endpoint.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPDialIn]
   }
 }

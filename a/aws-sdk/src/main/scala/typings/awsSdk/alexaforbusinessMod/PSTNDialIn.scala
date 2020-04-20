@@ -33,7 +33,6 @@ object PSTNDialIn {
     PhoneNumber: OutboundPhoneNumber
   ): PSTNDialIn = {
     val __obj = js.Dynamic.literal(CountryCode = CountryCode.asInstanceOf[js.Any], OneClickIdDelay = OneClickIdDelay.asInstanceOf[js.Any], OneClickPinDelay = OneClickPinDelay.asInstanceOf[js.Any], PhoneNumber = PhoneNumber.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PSTNDialIn]
   }
 }

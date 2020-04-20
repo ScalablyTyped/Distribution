@@ -24,7 +24,6 @@ object PDFPageItem {
     render: /* repeated */ js.Any => js.Any
   ): PDFPageItem = {
     val __obj = js.Dynamic.literal(_transport = _transport.asInstanceOf[js.Any], commonObjs = commonObjs.asInstanceOf[js.Any], getAnnotations = js.Any.fromFunction1(getAnnotations), getTextContent = js.Any.fromFunction1(getTextContent), getViewport = js.Any.fromFunction1(getViewport), render = js.Any.fromFunction1(render))
-  
     __obj.asInstanceOf[PDFPageItem]
   }
 }

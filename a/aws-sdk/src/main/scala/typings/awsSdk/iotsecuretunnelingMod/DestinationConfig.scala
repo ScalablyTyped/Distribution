@@ -20,7 +20,6 @@ object DestinationConfig {
   @scala.inline
   def apply(services: ServiceList, thingName: ThingName): DestinationConfig = {
     val __obj = js.Dynamic.literal(services = services.asInstanceOf[js.Any], thingName = thingName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DestinationConfig]
   }
 }

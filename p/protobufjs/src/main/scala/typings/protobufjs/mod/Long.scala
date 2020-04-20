@@ -17,7 +17,6 @@ object Long {
   @scala.inline
   def apply(high: Double, low: Double, unsigned: Boolean): Long = {
     val __obj = js.Dynamic.literal(high = high.asInstanceOf[js.Any], low = low.asInstanceOf[js.Any], unsigned = unsigned.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Long]
   }
 }

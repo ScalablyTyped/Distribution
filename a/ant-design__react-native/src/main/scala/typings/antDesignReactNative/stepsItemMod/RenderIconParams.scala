@@ -14,7 +14,6 @@ object RenderIconParams {
   @scala.inline
   def apply(error: Boolean, starting: Boolean, waiting: Boolean): RenderIconParams = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], starting = starting.asInstanceOf[js.Any], waiting = waiting.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RenderIconParams]
   }
 }

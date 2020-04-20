@@ -14,7 +14,6 @@ object AnonVisibilities {
   @scala.inline
   def apply(overloads: AnonType, tags: AnonProperties, visibilities: AnonEnum): AnonVisibilities = {
     val __obj = js.Dynamic.literal(overloads = overloads.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], visibilities = visibilities.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonVisibilities]
   }
 }

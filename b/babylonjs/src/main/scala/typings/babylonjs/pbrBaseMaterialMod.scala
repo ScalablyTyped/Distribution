@@ -382,7 +382,7 @@ object pbrBaseMaterialMod extends js.Object {
     /**
       * Returns true if alpha blending should be disabled.
       */
-    /* private */ def _disableAlphaBlending(): js.Any = js.native
+    /* private */ def _disableAlphaBlending: js.Any = js.native
     /**
       * Specifies whether or not the alpha value of the albedo texture should be used for alpha blending.
       */
@@ -423,7 +423,7 @@ object pbrBaseMaterialMod extends js.Object {
     /**
       * Gets the current transparency mode.
       */
-    def transparencyMode(): Nullable[Double] = js.native
+    def transparencyMode: Nullable[Double] = js.native
     /**
       * Sets the transparency mode of the material.
       *
@@ -439,7 +439,7 @@ object pbrBaseMaterialMod extends js.Object {
     /**
       * Enabled the use of logarithmic depth buffers, which is good for wide depth buffers.
       */
-    def useLogarithmicDepth(): Boolean = js.native
+    def useLogarithmicDepth: Boolean = js.native
     /**
       * Enabled the use of logarithmic depth buffers, which is good for wide depth buffers.
       */

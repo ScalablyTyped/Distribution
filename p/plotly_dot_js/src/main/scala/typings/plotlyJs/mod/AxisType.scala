@@ -16,16 +16,14 @@ trait AxisType extends js.Object
 
 object AxisType {
   @scala.inline
-  def _dash: `-_` = this.cast("-")
+  def _dash: `-_` = "-".asInstanceOf[`-_`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def category: typings.plotlyJs.plotlyJsStrings.category = "category".asInstanceOf[typings.plotlyJs.plotlyJsStrings.category]
   @scala.inline
-  def category: typings.plotlyJs.plotlyJsStrings.category = this.cast("category")
+  def date: typings.plotlyJs.plotlyJsStrings.date = "date".asInstanceOf[typings.plotlyJs.plotlyJsStrings.date]
   @scala.inline
-  def date: typings.plotlyJs.plotlyJsStrings.date = this.cast("date")
+  def linear: typings.plotlyJs.plotlyJsStrings.linear = "linear".asInstanceOf[typings.plotlyJs.plotlyJsStrings.linear]
   @scala.inline
-  def linear: typings.plotlyJs.plotlyJsStrings.linear = this.cast("linear")
-  @scala.inline
-  def log: typings.plotlyJs.plotlyJsStrings.log = this.cast("log")
+  def log: typings.plotlyJs.plotlyJsStrings.log = "log".asInstanceOf[typings.plotlyJs.plotlyJsStrings.log]
 }
 

@@ -31,7 +31,6 @@ object ReactionsCreateForPullRequestReviewCommentParams {
     repo: String
   ): ReactionsCreateForPullRequestReviewCommentParams = {
     val __obj = js.Dynamic.literal(comment_id = comment_id.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReactionsCreateForPullRequestReviewCommentParams]
   }
 }

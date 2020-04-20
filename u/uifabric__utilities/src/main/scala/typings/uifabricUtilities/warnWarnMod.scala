@@ -1,5 +1,6 @@
 package typings.uifabricUtilities
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +13,6 @@ object warnWarnMod extends js.Object {
   def warn(message: String): Unit = js.native
   type ISettingsMap[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? string}
-    */ typings.uifabricUtilities.uifabricUtilitiesStrings.ISettingsMap with js.Any
+    */ typings.uifabricUtilities.uifabricUtilitiesStrings.ISettingsMap with TopLevel[js.Any]
 }
 

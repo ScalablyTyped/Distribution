@@ -11,28 +11,42 @@ object dictUtilMod extends js.Object {
     treeData: js.Array[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DataNode */ _
     ],
-    expandedKeys: js.Array[String]
-  ): js.Array[String] = js.native
+    expandedKeys: js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ _
+    ]
+  ): js.Array[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ _
+  ] = js.native
   def calcRangeKeys(
     treeData: js.Array[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DataNode */ _
     ],
-    expandedKeys: js.Array[String],
-    startKey: String
-  ): js.Array[String] = js.native
+    expandedKeys: js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ _
+    ],
+    startKey: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ js.Any
+  ): js.Array[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ _
+  ] = js.native
   def calcRangeKeys(
     treeData: js.Array[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DataNode */ _
     ],
-    expandedKeys: js.Array[String],
-    startKey: String,
-    endKey: String
-  ): js.Array[String] = js.native
+    expandedKeys: js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ _
+    ],
+    startKey: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ js.Any,
+    endKey: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ js.Any
+  ): js.Array[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ _
+  ] = js.native
   def convertDirectoryKeysToNodes(
     treeData: js.Array[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DataNode */ _
     ],
-    keys: js.Array[String]
+    keys: js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ _
+    ]
   ): js.Array[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DataNode */ _
   ] = js.native

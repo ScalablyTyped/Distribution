@@ -17,7 +17,6 @@ object ISerializable {
   @scala.inline
   def apply(aiDataContract: js.Any): ISerializable = {
     val __obj = js.Dynamic.literal(aiDataContract = aiDataContract.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISerializable]
   }
 }

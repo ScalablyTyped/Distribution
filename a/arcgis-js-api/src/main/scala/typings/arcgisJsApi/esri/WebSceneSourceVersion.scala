@@ -31,7 +31,6 @@ object WebSceneSourceVersion {
     propertyIsEnumerable: PropertyKey => Boolean
   ): WebSceneSourceVersion = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), major = major.asInstanceOf[js.Any], minor = minor.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-  
     __obj.asInstanceOf[WebSceneSourceVersion]
   }
 }

@@ -14,10 +14,8 @@ trait XlSpeakDirection extends js.Object
 
 object XlSpeakDirection {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlSpeakByColumns: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlSpeakByColumns: `1` = this.cast(1)
-  @scala.inline
-  def xlSpeakByRows: `0` = this.cast(0)
+  def xlSpeakByRows: `0` = 0.asInstanceOf[`0`]
 }
 

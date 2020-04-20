@@ -17,7 +17,6 @@ object PieCenterContext {
   @scala.inline
   def apply(componentElement: Element, innerBounds: js.Object, label: String, outerBounds: js.Object): PieCenterContext = {
     val __obj = js.Dynamic.literal(componentElement = componentElement.asInstanceOf[js.Any], innerBounds = innerBounds.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], outerBounds = outerBounds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PieCenterContext]
   }
 }

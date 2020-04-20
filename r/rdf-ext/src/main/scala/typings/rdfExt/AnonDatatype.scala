@@ -25,7 +25,6 @@ object AnonDatatype {
     value: PropType[Literal, value]
   ): AnonDatatype = {
     val __obj = js.Dynamic.literal(datatype = datatype.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], termType = termType.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDatatype]
   }
 }

@@ -12,7 +12,6 @@ object IRequestTask {
   @scala.inline
   def apply(abort: () => Unit): IRequestTask = {
     val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort))
-  
     __obj.asInstanceOf[IRequestTask]
   }
 }

@@ -20,26 +20,24 @@ trait PointStyle extends js.Object
 
 object PointStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def circle: typings.chartJs.chartJsStrings.circle = "circle".asInstanceOf[typings.chartJs.chartJsStrings.circle]
   @scala.inline
-  def circle: typings.chartJs.chartJsStrings.circle = this.cast("circle")
+  def cross: typings.chartJs.chartJsStrings.cross = "cross".asInstanceOf[typings.chartJs.chartJsStrings.cross]
   @scala.inline
-  def cross: typings.chartJs.chartJsStrings.cross = this.cast("cross")
+  def crossRot: typings.chartJs.chartJsStrings.crossRot = "crossRot".asInstanceOf[typings.chartJs.chartJsStrings.crossRot]
   @scala.inline
-  def crossRot: typings.chartJs.chartJsStrings.crossRot = this.cast("crossRot")
+  def dash: typings.chartJs.chartJsStrings.dash = "dash".asInstanceOf[typings.chartJs.chartJsStrings.dash]
   @scala.inline
-  def dash: typings.chartJs.chartJsStrings.dash = this.cast("dash")
+  def line: typings.chartJs.chartJsStrings.line = "line".asInstanceOf[typings.chartJs.chartJsStrings.line]
   @scala.inline
-  def line: typings.chartJs.chartJsStrings.line = this.cast("line")
+  def rect: typings.chartJs.chartJsStrings.rect = "rect".asInstanceOf[typings.chartJs.chartJsStrings.rect]
   @scala.inline
-  def rect: typings.chartJs.chartJsStrings.rect = this.cast("rect")
+  def rectRot: typings.chartJs.chartJsStrings.rectRot = "rectRot".asInstanceOf[typings.chartJs.chartJsStrings.rectRot]
   @scala.inline
-  def rectRot: typings.chartJs.chartJsStrings.rectRot = this.cast("rectRot")
+  def rectRounded: typings.chartJs.chartJsStrings.rectRounded = "rectRounded".asInstanceOf[typings.chartJs.chartJsStrings.rectRounded]
   @scala.inline
-  def rectRounded: typings.chartJs.chartJsStrings.rectRounded = this.cast("rectRounded")
+  def star: typings.chartJs.chartJsStrings.star = "star".asInstanceOf[typings.chartJs.chartJsStrings.star]
   @scala.inline
-  def star: typings.chartJs.chartJsStrings.star = this.cast("star")
-  @scala.inline
-  def triangle: typings.chartJs.chartJsStrings.triangle = this.cast("triangle")
+  def triangle: typings.chartJs.chartJsStrings.triangle = "triangle".asInstanceOf[typings.chartJs.chartJsStrings.triangle]
 }
 

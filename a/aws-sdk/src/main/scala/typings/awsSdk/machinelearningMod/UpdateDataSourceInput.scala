@@ -20,7 +20,6 @@ object UpdateDataSourceInput {
   @scala.inline
   def apply(DataSourceId: EntityId, DataSourceName: EntityName): UpdateDataSourceInput = {
     val __obj = js.Dynamic.literal(DataSourceId = DataSourceId.asInstanceOf[js.Any], DataSourceName = DataSourceName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateDataSourceInput]
   }
 }

@@ -15,7 +15,6 @@ object AnonEnd {
   @scala.inline
   def apply(end: Double, node: TextNode, start: Double): AnonEnd = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnd]
   }
 }

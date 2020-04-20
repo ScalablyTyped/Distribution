@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeSwipeoutProps {
   @scala.inline
-  def ReactNativeSwipeoutProps: SwipeoutProperties.type = typings.reactNativeSwipeout.mod.SwipeoutProperties
+  def ReactNativeSwipeoutProps: SwipeoutProperties.type = SwipeoutProperties
   type ReactNativeSwipeoutProps = SwipeoutProperties
 }
 

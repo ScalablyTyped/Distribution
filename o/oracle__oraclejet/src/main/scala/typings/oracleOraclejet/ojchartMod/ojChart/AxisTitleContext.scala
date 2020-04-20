@@ -17,7 +17,6 @@ object AxisTitleContext {
   @scala.inline
   def apply(axis: xAxis | yAxis | y2Axis, subId: String): AxisTitleContext = {
     val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], subId = subId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AxisTitleContext]
   }
 }

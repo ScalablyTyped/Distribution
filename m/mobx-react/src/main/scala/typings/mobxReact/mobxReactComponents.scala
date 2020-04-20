@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object mobxReactComponents extends mobxReactProps {
   @scala.inline
-  def Provider: ComponentType[ProviderProps] = typings.mobxReact.mod.Provider.asInstanceOf[typings.react.mod.ComponentType[ProviderProps]]
+  def Provider: ComponentType[ProviderProps] = typings.mobxReact.mod.Provider.asInstanceOf[ComponentType[ProviderProps]]
 }
 

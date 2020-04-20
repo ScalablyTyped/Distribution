@@ -940,16 +940,16 @@ trait EC2 extends Service {
   /**
     * Creates a placement group in which to launch instances. The strategy of the placement group determines how the instances are organized within the group.  A cluster placement group is a logical grouping of instances within a single Availability Zone that benefit from low network latency, high network throughput. A spread placement group places instances on distinct hardware. A partition placement group places groups of instances in different partitions, where instances in one partition do not share the same hardware with instances in another partition. For more information, see Placement Groups in the Amazon Elastic Compute Cloud User Guide.
     */
-  def createPlacementGroup(): Request[js.Object, AWSError] = js.native
-  def createPlacementGroup(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  def createPlacementGroup(): Request[CreatePlacementGroupResult, AWSError] = js.native
+  def createPlacementGroup(callback: js.Function2[/* err */ AWSError, /* data */ CreatePlacementGroupResult, Unit]): Request[CreatePlacementGroupResult, AWSError] = js.native
   /**
     * Creates a placement group in which to launch instances. The strategy of the placement group determines how the instances are organized within the group.  A cluster placement group is a logical grouping of instances within a single Availability Zone that benefit from low network latency, high network throughput. A spread placement group places instances on distinct hardware. A partition placement group places groups of instances in different partitions, where instances in one partition do not share the same hardware with instances in another partition. For more information, see Placement Groups in the Amazon Elastic Compute Cloud User Guide.
     */
-  def createPlacementGroup(params: CreatePlacementGroupRequest): Request[js.Object, AWSError] = js.native
+  def createPlacementGroup(params: CreatePlacementGroupRequest): Request[CreatePlacementGroupResult, AWSError] = js.native
   def createPlacementGroup(
     params: CreatePlacementGroupRequest,
-    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
-  ): Request[js.Object, AWSError] = js.native
+    callback: js.Function2[/* err */ AWSError, /* data */ CreatePlacementGroupResult, Unit]
+  ): Request[CreatePlacementGroupResult, AWSError] = js.native
   /**
     * Creates a listing for Amazon EC2 Standard Reserved Instances to be sold in the Reserved Instance Marketplace. You can submit one Standard Reserved Instance listing at a time. To get a list of your Standard Reserved Instances, you can use the DescribeReservedInstances operation.  Only Standard Reserved Instances can be sold in the Reserved Instance Marketplace. Convertible Reserved Instances cannot be sold.  The Reserved Instance Marketplace matches sellers who want to resell Standard Reserved Instance capacity that they no longer need with buyers who want to purchase additional capacity. Reserved Instances bought and sold through the Reserved Instance Marketplace work like any other Reserved Instances. To sell your Standard Reserved Instances, you must first register as a seller in the Reserved Instance Marketplace. After completing the registration process, you can create a Reserved Instance Marketplace listing of some or all of your Standard Reserved Instances, and specify the upfront price to receive for them. Your Standard Reserved Instance listings then become available for purchase. To view the details of your Standard Reserved Instance listing, you can use the DescribeReservedInstancesListings operation. For more information, see Reserved Instance Marketplace in the Amazon Elastic Compute Cloud User Guide.
     */
@@ -1969,6 +1969,29 @@ trait EC2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
+    * Deregisters tag keys to prevent tags that have the specified tag keys from being included in scheduled event notifications for resources in the Region.
+    */
+  def deregisterInstanceEventNotificationAttributes(): Request[DeregisterInstanceEventNotificationAttributesResult, AWSError] = js.native
+  def deregisterInstanceEventNotificationAttributes(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DeregisterInstanceEventNotificationAttributesResult, 
+      Unit
+    ]
+  ): Request[DeregisterInstanceEventNotificationAttributesResult, AWSError] = js.native
+  /**
+    * Deregisters tag keys to prevent tags that have the specified tag keys from being included in scheduled event notifications for resources in the Region.
+    */
+  def deregisterInstanceEventNotificationAttributes(params: DeregisterInstanceEventNotificationAttributesRequest): Request[DeregisterInstanceEventNotificationAttributesResult, AWSError] = js.native
+  def deregisterInstanceEventNotificationAttributes(
+    params: DeregisterInstanceEventNotificationAttributesRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DeregisterInstanceEventNotificationAttributesResult, 
+      Unit
+    ]
+  ): Request[DeregisterInstanceEventNotificationAttributesResult, AWSError] = js.native
+  /**
     * Deregisters the specified members (network interfaces) from the transit gateway multicast group.
     */
   def deregisterTransitGatewayMulticastGroupMembers(): Request[DeregisterTransitGatewayMulticastGroupMembersResult, AWSError] = js.native
@@ -2544,6 +2567,29 @@ trait EC2 extends Service {
     params: DescribeInstanceCreditSpecificationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstanceCreditSpecificationsResult, Unit]
   ): Request[DescribeInstanceCreditSpecificationsResult, AWSError] = js.native
+  /**
+    * Describes the tag keys that are registered to appear in scheduled event notifications for resources in the current Region.
+    */
+  def describeInstanceEventNotificationAttributes(): Request[DescribeInstanceEventNotificationAttributesResult, AWSError] = js.native
+  def describeInstanceEventNotificationAttributes(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DescribeInstanceEventNotificationAttributesResult, 
+      Unit
+    ]
+  ): Request[DescribeInstanceEventNotificationAttributesResult, AWSError] = js.native
+  /**
+    * Describes the tag keys that are registered to appear in scheduled event notifications for resources in the current Region.
+    */
+  def describeInstanceEventNotificationAttributes(params: DescribeInstanceEventNotificationAttributesRequest): Request[DescribeInstanceEventNotificationAttributesResult, AWSError] = js.native
+  def describeInstanceEventNotificationAttributes(
+    params: DescribeInstanceEventNotificationAttributesRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DescribeInstanceEventNotificationAttributesResult, 
+      Unit
+    ]
+  ): Request[DescribeInstanceEventNotificationAttributesResult, AWSError] = js.native
   /**
     * Describes the status of the specified instances or all of your instances. By default, only running instances are described, unless you specifically indicate to return the status of all instances. Instance status includes the following components:    Status checks - Amazon EC2 performs status checks on running EC2 instances to identify hardware and software issues. For more information, see Status Checks for Your Instances and Troubleshooting Instances with Failed Status Checks in the Amazon Elastic Compute Cloud User Guide.    Scheduled events - Amazon EC2 can schedule events (such as reboot, stop, or terminate) for your instances related to hardware issues, software updates, or system maintenance. For more information, see Scheduled Events for Your Instances in the Amazon Elastic Compute Cloud User Guide.    Instance state - You can manage your instances from the moment you launch them through their termination. For more information, see Instance Lifecycle in the Amazon Elastic Compute Cloud User Guide.  
     */
@@ -4930,6 +4976,29 @@ trait EC2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ RegisterImageResult, Unit]
   ): Request[RegisterImageResult, AWSError] = js.native
   /**
+    * Registers a set of tag keys to include in scheduled event notifications for your resources.  To remove tags, use .
+    */
+  def registerInstanceEventNotificationAttributes(): Request[RegisterInstanceEventNotificationAttributesResult, AWSError] = js.native
+  def registerInstanceEventNotificationAttributes(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ RegisterInstanceEventNotificationAttributesResult, 
+      Unit
+    ]
+  ): Request[RegisterInstanceEventNotificationAttributesResult, AWSError] = js.native
+  /**
+    * Registers a set of tag keys to include in scheduled event notifications for your resources.  To remove tags, use .
+    */
+  def registerInstanceEventNotificationAttributes(params: RegisterInstanceEventNotificationAttributesRequest): Request[RegisterInstanceEventNotificationAttributesResult, AWSError] = js.native
+  def registerInstanceEventNotificationAttributes(
+    params: RegisterInstanceEventNotificationAttributesRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ RegisterInstanceEventNotificationAttributesResult, 
+      Unit
+    ]
+  ): Request[RegisterInstanceEventNotificationAttributesResult, AWSError] = js.native
+  /**
     * Registers members (network interfaces) with the transit gateway multicast group. A member is a network interface associated with a supported EC2 instance that receives multicast traffic. For information about supported instances, see Multicast Consideration in Amazon VPC Transit Gateways. After you add the members, use SearchTransitGatewayMulticastGroups to verify that the members were added to the transit gateway multicast group.
     */
   def registerTransitGatewayMulticastGroupMembers(): Request[RegisterTransitGatewayMulticastGroupMembersResult, AWSError] = js.native
@@ -5307,12 +5376,12 @@ trait EC2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
-    * Launches the specified number of instances using an AMI for which you have permissions.  You can specify a number of options, or leave the default options. The following rules apply:   [EC2-VPC] If you don't specify a subnet ID, we choose a default subnet from your default VPC for you. If you don't have a default VPC, you must specify a subnet ID in the request.   [EC2-Classic] If don't specify an Availability Zone, we choose one for you.   Some instance types must be launched into a VPC. If you do not have a default VPC, or if you do not specify a subnet ID, the request fails. For more information, see Instance Types Available Only in a VPC.   [EC2-VPC] All instances have a network interface with a primary private IPv4 address. If you don't specify this address, we choose one from the IPv4 range of your subnet.   Not all instance types support IPv6 addresses. For more information, see Instance Types.   If you don't specify a security group ID, we use the default security group. For more information, see Security Groups.   If any of the AMIs have a product code attached for which the user has not subscribed, the request fails.   You can create a launch template, which is a resource that contains the parameters to launch an instance. When you launch an instance using RunInstances, you can specify the launch template instead of specifying the launch parameters. To ensure faster instance launches, break up large requests into smaller batches. For example, create five separate launch requests for 100 instances each instead of one launch request for 500 instances. An instance is ready for you to use when it's in the running state. You can check the state of your instance using DescribeInstances. You can tag instances and EBS volumes during launch, after launch, or both. For more information, see CreateTags and Tagging Your Amazon EC2 Resources. Linux instances have access to the public key of the key pair at boot. You can use this key to provide secure access to the instance. Amazon EC2 public images use this feature to provide secure access without passwords. For more information, see Key Pairs in the Amazon Elastic Compute Cloud User Guide. For troubleshooting, see What To Do If An Instance Immediately Terminates, and Troubleshooting Connecting to Your Instance in the Amazon Elastic Compute Cloud User Guide.
+    * Launches the specified number of instances using an AMI for which you have permissions. You can specify a number of options, or leave the default options. The following rules apply:   [EC2-VPC] If you don't specify a subnet ID, we choose a default subnet from your default VPC for you. If you don't have a default VPC, you must specify a subnet ID in the request.   [EC2-Classic] If don't specify an Availability Zone, we choose one for you.   Some instance types must be launched into a VPC. If you do not have a default VPC, or if you do not specify a subnet ID, the request fails. For more information, see Instance Types Available Only in a VPC.   [EC2-VPC] All instances have a network interface with a primary private IPv4 address. If you don't specify this address, we choose one from the IPv4 range of your subnet.   Not all instance types support IPv6 addresses. For more information, see Instance Types.   If you don't specify a security group ID, we use the default security group. For more information, see Security Groups.   If any of the AMIs have a product code attached for which the user has not subscribed, the request fails.   You can create a launch template, which is a resource that contains the parameters to launch an instance. When you launch an instance using RunInstances, you can specify the launch template instead of specifying the launch parameters. To ensure faster instance launches, break up large requests into smaller batches. For example, create five separate launch requests for 100 instances each instead of one launch request for 500 instances. An instance is ready for you to use when it's in the running state. You can check the state of your instance using DescribeInstances. You can tag instances and EBS volumes during launch, after launch, or both. For more information, see CreateTags and Tagging Your Amazon EC2 Resources. Linux instances have access to the public key of the key pair at boot. You can use this key to provide secure access to the instance. Amazon EC2 public images use this feature to provide secure access without passwords. For more information, see Key Pairs in the Amazon Elastic Compute Cloud User Guide. For troubleshooting, see What To Do If An Instance Immediately Terminates, and Troubleshooting Connecting to Your Instance in the Amazon Elastic Compute Cloud User Guide.
     */
   def runInstances(): Request[Reservation, AWSError] = js.native
   def runInstances(callback: js.Function2[/* err */ AWSError, /* data */ Reservation, Unit]): Request[Reservation, AWSError] = js.native
   /**
-    * Launches the specified number of instances using an AMI for which you have permissions.  You can specify a number of options, or leave the default options. The following rules apply:   [EC2-VPC] If you don't specify a subnet ID, we choose a default subnet from your default VPC for you. If you don't have a default VPC, you must specify a subnet ID in the request.   [EC2-Classic] If don't specify an Availability Zone, we choose one for you.   Some instance types must be launched into a VPC. If you do not have a default VPC, or if you do not specify a subnet ID, the request fails. For more information, see Instance Types Available Only in a VPC.   [EC2-VPC] All instances have a network interface with a primary private IPv4 address. If you don't specify this address, we choose one from the IPv4 range of your subnet.   Not all instance types support IPv6 addresses. For more information, see Instance Types.   If you don't specify a security group ID, we use the default security group. For more information, see Security Groups.   If any of the AMIs have a product code attached for which the user has not subscribed, the request fails.   You can create a launch template, which is a resource that contains the parameters to launch an instance. When you launch an instance using RunInstances, you can specify the launch template instead of specifying the launch parameters. To ensure faster instance launches, break up large requests into smaller batches. For example, create five separate launch requests for 100 instances each instead of one launch request for 500 instances. An instance is ready for you to use when it's in the running state. You can check the state of your instance using DescribeInstances. You can tag instances and EBS volumes during launch, after launch, or both. For more information, see CreateTags and Tagging Your Amazon EC2 Resources. Linux instances have access to the public key of the key pair at boot. You can use this key to provide secure access to the instance. Amazon EC2 public images use this feature to provide secure access without passwords. For more information, see Key Pairs in the Amazon Elastic Compute Cloud User Guide. For troubleshooting, see What To Do If An Instance Immediately Terminates, and Troubleshooting Connecting to Your Instance in the Amazon Elastic Compute Cloud User Guide.
+    * Launches the specified number of instances using an AMI for which you have permissions. You can specify a number of options, or leave the default options. The following rules apply:   [EC2-VPC] If you don't specify a subnet ID, we choose a default subnet from your default VPC for you. If you don't have a default VPC, you must specify a subnet ID in the request.   [EC2-Classic] If don't specify an Availability Zone, we choose one for you.   Some instance types must be launched into a VPC. If you do not have a default VPC, or if you do not specify a subnet ID, the request fails. For more information, see Instance Types Available Only in a VPC.   [EC2-VPC] All instances have a network interface with a primary private IPv4 address. If you don't specify this address, we choose one from the IPv4 range of your subnet.   Not all instance types support IPv6 addresses. For more information, see Instance Types.   If you don't specify a security group ID, we use the default security group. For more information, see Security Groups.   If any of the AMIs have a product code attached for which the user has not subscribed, the request fails.   You can create a launch template, which is a resource that contains the parameters to launch an instance. When you launch an instance using RunInstances, you can specify the launch template instead of specifying the launch parameters. To ensure faster instance launches, break up large requests into smaller batches. For example, create five separate launch requests for 100 instances each instead of one launch request for 500 instances. An instance is ready for you to use when it's in the running state. You can check the state of your instance using DescribeInstances. You can tag instances and EBS volumes during launch, after launch, or both. For more information, see CreateTags and Tagging Your Amazon EC2 Resources. Linux instances have access to the public key of the key pair at boot. You can use this key to provide secure access to the instance. Amazon EC2 public images use this feature to provide secure access without passwords. For more information, see Key Pairs in the Amazon Elastic Compute Cloud User Guide. For troubleshooting, see What To Do If An Instance Immediately Terminates, and Troubleshooting Connecting to Your Instance in the Amazon Elastic Compute Cloud User Guide.
     */
   def runInstances(params: RunInstancesRequest): Request[Reservation, AWSError] = js.native
   def runInstances(

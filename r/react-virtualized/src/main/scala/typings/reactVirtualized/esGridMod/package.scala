@@ -13,6 +13,7 @@ package object esGridMod {
     /* props */ typings.reactVirtualized.esGridMod.GridCellProps, 
     typings.react.mod.ReactNode
   ]
+  type OverscanIndices = typings.reactVirtualized.mod.OverscanIndexRange
   type OverscanIndicesGetter = js.Function1[
     /* params */ typings.reactVirtualized.esGridMod.OverscanIndicesGetterParams, 
     typings.reactVirtualized.esGridMod.OverscanIndices

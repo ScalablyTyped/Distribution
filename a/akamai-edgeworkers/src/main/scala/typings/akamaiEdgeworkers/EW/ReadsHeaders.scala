@@ -15,7 +15,6 @@ object ReadsHeaders {
   @scala.inline
   def apply(getHeader: String => js.Array[String] | Null): ReadsHeaders = {
     val __obj = js.Dynamic.literal(getHeader = js.Any.fromFunction1(getHeader))
-  
     __obj.asInstanceOf[ReadsHeaders]
   }
 }

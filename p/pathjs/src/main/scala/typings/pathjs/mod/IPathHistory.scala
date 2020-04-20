@@ -20,7 +20,6 @@ object IPathHistory {
     pushState: (js.Any, String, String) => Unit
   ): IPathHistory = {
     val __obj = js.Dynamic.literal(initial = initial.asInstanceOf[js.Any], listen = js.Any.fromFunction1(listen), popState = js.Any.fromFunction1(popState), pushState = js.Any.fromFunction3(pushState))
-  
     __obj.asInstanceOf[IPathHistory]
   }
 }

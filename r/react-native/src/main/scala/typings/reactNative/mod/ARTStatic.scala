@@ -23,7 +23,6 @@ object ARTStatic {
     Text: Instantiable0[ARTText]
   ): ARTStatic = {
     val __obj = js.Dynamic.literal(ClippingRectangle = ClippingRectangle.asInstanceOf[js.Any], Group = Group.asInstanceOf[js.Any], Shape = Shape.asInstanceOf[js.Any], Surface = Surface.asInstanceOf[js.Any], Text = Text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ARTStatic]
   }
 }

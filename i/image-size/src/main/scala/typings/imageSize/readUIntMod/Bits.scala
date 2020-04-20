@@ -12,10 +12,8 @@ trait Bits extends js.Object
 
 object Bits {
   @scala.inline
-  def `16`: typings.imageSize.imageSizeNumbers.`16` = this.cast(16)
+  def `16`: typings.imageSize.imageSizeNumbers.`16` = 16.asInstanceOf[typings.imageSize.imageSizeNumbers.`16`]
   @scala.inline
-  def `32`: typings.imageSize.imageSizeNumbers.`32` = this.cast(32)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `32`: typings.imageSize.imageSizeNumbers.`32` = 32.asInstanceOf[typings.imageSize.imageSizeNumbers.`32`]
 }
 

@@ -1,7 +1,7 @@
 package typings.antd.affixMod
 
 import typings.react.mod.CSSProperties
-import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import typings.std.Window_
 import scala.scalajs.js
@@ -9,7 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AffixProps extends js.Object {
-  var children: ReactElement
+  var children: ReactNode
   var className: js.UndefOr[String] = js.undefined
   /** 距离窗口底部达到指定偏移量后触发 */
   var offsetBottom: js.UndefOr[Double] = js.undefined
@@ -28,7 +28,7 @@ trait AffixProps extends js.Object {
 object AffixProps {
   @scala.inline
   def apply(
-    children: ReactElement,
+    children: ReactNode = null,
     className: String = null,
     offsetBottom: Int | Double = null,
     offsetTop: Int | Double = null,
@@ -37,7 +37,8 @@ object AffixProps {
     style: CSSProperties = null,
     target: () => Window_ | HTMLElement | Null = null
   ): AffixProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (offsetBottom != null) __obj.updateDynamic("offsetBottom")(offsetBottom.asInstanceOf[js.Any])
     if (offsetTop != null) __obj.updateDynamic("offsetTop")(offsetTop.asInstanceOf[js.Any])

@@ -13,7 +13,6 @@ object AnonAsBytes {
   @scala.inline
   def apply(asBytes: `true`): AnonAsBytes = {
     val __obj = js.Dynamic.literal(asBytes = asBytes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAsBytes]
   }
 }

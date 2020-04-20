@@ -42,8 +42,8 @@ abstract class Element protected () extends AbstractElement {
     *  -  if false, a load is required to access these properties.
     */
   @JSName("isLoaded")
-  def isLoaded_MElement(): Boolean = js.native
+  def isLoaded_MElement: Boolean = js.native
   @JSName("unit")
-  def unit_MElement(): ModelUnit = js.native
+  def unit_MElement: ModelUnit = js.native
 }
 

@@ -13,12 +13,10 @@ trait Graph2dBarChartAlign extends js.Object
 
 object Graph2dBarChartAlign {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.vis.visStrings.center = "center".asInstanceOf[typings.vis.visStrings.center]
   @scala.inline
-  def center: typings.vis.visStrings.center = this.cast("center")
+  def left: typings.vis.visStrings.left = "left".asInstanceOf[typings.vis.visStrings.left]
   @scala.inline
-  def left: typings.vis.visStrings.left = this.cast("left")
-  @scala.inline
-  def right: typings.vis.visStrings.right = this.cast("right")
+  def right: typings.vis.visStrings.right = "right".asInstanceOf[typings.vis.visStrings.right]
 }
 

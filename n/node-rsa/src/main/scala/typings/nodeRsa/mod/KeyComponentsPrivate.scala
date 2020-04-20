@@ -29,7 +29,6 @@ object KeyComponentsPrivate {
     q: Buffer
   ): KeyComponentsPrivate = {
     val __obj = js.Dynamic.literal(coeff = coeff.asInstanceOf[js.Any], d = d.asInstanceOf[js.Any], dmp1 = dmp1.asInstanceOf[js.Any], dmq1 = dmq1.asInstanceOf[js.Any], e = e.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KeyComponentsPrivate]
   }
 }

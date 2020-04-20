@@ -14,7 +14,6 @@ object FetchByOffsetCapability {
   @scala.inline
   def apply[D](implementation: iteration | randomAccess): FetchByOffsetCapability[D] = {
     val __obj = js.Dynamic.literal(implementation = implementation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FetchByOffsetCapability[D]]
   }
 }

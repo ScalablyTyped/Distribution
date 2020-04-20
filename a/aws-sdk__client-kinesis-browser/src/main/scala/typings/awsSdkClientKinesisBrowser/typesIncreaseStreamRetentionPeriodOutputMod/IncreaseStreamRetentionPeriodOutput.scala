@@ -18,7 +18,6 @@ object IncreaseStreamRetentionPeriodOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): IncreaseStreamRetentionPeriodOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IncreaseStreamRetentionPeriodOutput]
   }
 }

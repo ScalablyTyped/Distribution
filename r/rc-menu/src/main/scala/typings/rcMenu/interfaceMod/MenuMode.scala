@@ -15,16 +15,14 @@ trait MenuMode extends js.Object
 
 object MenuMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def horizontal: typings.rcMenu.rcMenuStrings.horizontal = "horizontal".asInstanceOf[typings.rcMenu.rcMenuStrings.horizontal]
   @scala.inline
-  def horizontal: typings.rcMenu.rcMenuStrings.horizontal = this.cast("horizontal")
+  def `inline`: typings.rcMenu.rcMenuStrings.`inline` = "inline".asInstanceOf[typings.rcMenu.rcMenuStrings.`inline`]
   @scala.inline
-  def `inline`: typings.rcMenu.rcMenuStrings.`inline` = this.cast("inline")
+  def vertical: typings.rcMenu.rcMenuStrings.vertical = "vertical".asInstanceOf[typings.rcMenu.rcMenuStrings.vertical]
   @scala.inline
-  def vertical: typings.rcMenu.rcMenuStrings.vertical = this.cast("vertical")
+  def `vertical-left`: typings.rcMenu.rcMenuStrings.`vertical-left` = "vertical-left".asInstanceOf[typings.rcMenu.rcMenuStrings.`vertical-left`]
   @scala.inline
-  def `vertical-left`: typings.rcMenu.rcMenuStrings.`vertical-left` = this.cast("vertical-left")
-  @scala.inline
-  def `vertical-right`: typings.rcMenu.rcMenuStrings.`vertical-right` = this.cast("vertical-right")
+  def `vertical-right`: typings.rcMenu.rcMenuStrings.`vertical-right` = "vertical-right".asInstanceOf[typings.rcMenu.rcMenuStrings.`vertical-right`]
 }
 

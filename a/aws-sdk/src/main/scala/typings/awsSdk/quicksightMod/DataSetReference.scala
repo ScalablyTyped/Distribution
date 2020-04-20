@@ -20,7 +20,6 @@ object DataSetReference {
   @scala.inline
   def apply(DataSetArn: Arn, DataSetPlaceholder: NonEmptyString): DataSetReference = {
     val __obj = js.Dynamic.literal(DataSetArn = DataSetArn.asInstanceOf[js.Any], DataSetPlaceholder = DataSetPlaceholder.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DataSetReference]
   }
 }

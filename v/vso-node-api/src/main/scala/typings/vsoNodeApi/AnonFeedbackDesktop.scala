@@ -26,7 +26,6 @@ object AnonFeedbackDesktop {
     xTWeb: Double
   ): AnonFeedbackDesktop = {
     val __obj = js.Dynamic.literal(feedbackDesktop = feedbackDesktop.asInstanceOf[js.Any], feedbackWeb = feedbackWeb.asInstanceOf[js.Any], sessionInsightsForAll = sessionInsightsForAll.asInstanceOf[js.Any], unknown = unknown.asInstanceOf[js.Any], xTDesktop = xTDesktop.asInstanceOf[js.Any], xTDesktop2 = xTDesktop2.asInstanceOf[js.Any], xTWeb = xTWeb.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFeedbackDesktop]
   }
 }

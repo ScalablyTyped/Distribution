@@ -13,7 +13,6 @@ object AnonTargetHyperlink {
   @scala.inline
   def apply(Target: Hyperlink): AnonTargetHyperlink = {
     val __obj = js.Dynamic.literal(Target = Target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTargetHyperlink]
   }
 }

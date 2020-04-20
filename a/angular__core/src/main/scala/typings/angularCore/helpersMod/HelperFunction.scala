@@ -32,28 +32,26 @@ trait HelperFunction extends js.Object
 
 object HelperFunction {
   @scala.inline
-  def animate: __ngRendererAnimateHelper = this.cast("__ngRendererAnimateHelper")
+  def animate: __ngRendererAnimateHelper = "__ngRendererAnimateHelper".asInstanceOf[__ngRendererAnimateHelper]
   @scala.inline
-  def any: AnyDuringRendererMigration = this.cast("AnyDuringRendererMigration")
+  def any: AnyDuringRendererMigration = "AnyDuringRendererMigration".asInstanceOf[AnyDuringRendererMigration]
   @scala.inline
-  def attachViewAfter: __ngRendererAttachViewAfterHelper = this.cast("__ngRendererAttachViewAfterHelper")
+  def attachViewAfter: __ngRendererAttachViewAfterHelper = "__ngRendererAttachViewAfterHelper".asInstanceOf[__ngRendererAttachViewAfterHelper]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def createElement: __ngRendererCreateElementHelper = "__ngRendererCreateElementHelper".asInstanceOf[__ngRendererCreateElementHelper]
   @scala.inline
-  def createElement: __ngRendererCreateElementHelper = this.cast("__ngRendererCreateElementHelper")
+  def createTemplateAnchor: __ngRendererCreateTemplateAnchorHelper = "__ngRendererCreateTemplateAnchorHelper".asInstanceOf[__ngRendererCreateTemplateAnchorHelper]
   @scala.inline
-  def createTemplateAnchor: __ngRendererCreateTemplateAnchorHelper = this.cast("__ngRendererCreateTemplateAnchorHelper")
+  def createText: __ngRendererCreateTextHelper = "__ngRendererCreateTextHelper".asInstanceOf[__ngRendererCreateTextHelper]
   @scala.inline
-  def createText: __ngRendererCreateTextHelper = this.cast("__ngRendererCreateTextHelper")
+  def destroyView: __ngRendererDestroyViewHelper = "__ngRendererDestroyViewHelper".asInstanceOf[__ngRendererDestroyViewHelper]
   @scala.inline
-  def destroyView: __ngRendererDestroyViewHelper = this.cast("__ngRendererDestroyViewHelper")
+  def detachView: __ngRendererDetachViewHelper = "__ngRendererDetachViewHelper".asInstanceOf[__ngRendererDetachViewHelper]
   @scala.inline
-  def detachView: __ngRendererDetachViewHelper = this.cast("__ngRendererDetachViewHelper")
+  def projectNodes: __ngRendererProjectNodesHelper = "__ngRendererProjectNodesHelper".asInstanceOf[__ngRendererProjectNodesHelper]
   @scala.inline
-  def projectNodes: __ngRendererProjectNodesHelper = this.cast("__ngRendererProjectNodesHelper")
+  def setElementAttribute: __ngRendererSetElementAttributeHelper = "__ngRendererSetElementAttributeHelper".asInstanceOf[__ngRendererSetElementAttributeHelper]
   @scala.inline
-  def setElementAttribute: __ngRendererSetElementAttributeHelper = this.cast("__ngRendererSetElementAttributeHelper")
-  @scala.inline
-  def splitNamespace: __ngRendererSplitNamespaceHelper = this.cast("__ngRendererSplitNamespaceHelper")
+  def splitNamespace: __ngRendererSplitNamespaceHelper = "__ngRendererSplitNamespaceHelper".asInstanceOf[__ngRendererSplitNamespaceHelper]
 }
 

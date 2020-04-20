@@ -13,7 +13,6 @@ object AsObject {
   @scala.inline
   def apply(value: Uint8Array | String): AsObject = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AsObject]
   }
 }

@@ -61,7 +61,7 @@ class Completer_ protected () extends Widget {
     * The editor used by the completion widget.
     */
   @JSName("editor")
-  def editor_Union(): IEditor | Null = js.native
+  def editor_Union: IEditor | Null = js.native
   /**
     * Handle the DOM events for the widget.
     *
@@ -79,7 +79,7 @@ class Completer_ protected () extends Widget {
     * The model used by the completer widget.
     */
   @JSName("model")
-  def model_Union(): IModel | Null = js.native
+  def model_Union: IModel | Null = js.native
   /**
     * Handle model state changes.
     */
@@ -95,7 +95,7 @@ class Completer_ protected () extends Widget {
   /**
     * A signal emitted when a selection is made from the completer menu.
     */
-  def selected(): ISignal[this.type, String] = js.native
+  def selected: ISignal[this.type, String] = js.native
   /**
     * A signal emitted when the completer widget's visibility changes.
     *
@@ -103,6 +103,6 @@ class Completer_ protected () extends Widget {
     * This signal is useful when there are multiple floating widgets that may
     * contend with the same space and ought to be mutually exclusive.
     */
-  def visibilityChanged(): ISignal[this.type, Unit] = js.native
+  def visibilityChanged: ISignal[this.type, Unit] = js.native
 }
 

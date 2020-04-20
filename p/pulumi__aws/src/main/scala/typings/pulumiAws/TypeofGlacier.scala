@@ -13,7 +13,6 @@ object TypeofGlacier {
   @scala.inline
   def apply(Types: TypeofGlacier): TypeofGlacier = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofGlacier]
   }
 }

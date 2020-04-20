@@ -12,7 +12,6 @@ object AnonEnumValuesAnonAliasMemberGroupRole {
   @scala.inline
   def apply(enumValues: AnonAliasMemberGroupRole): AnonEnumValuesAnonAliasMemberGroupRole = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumValuesAnonAliasMemberGroupRole]
   }
 }

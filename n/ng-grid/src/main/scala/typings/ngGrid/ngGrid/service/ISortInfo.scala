@@ -12,7 +12,6 @@ object ISortInfo {
   @scala.inline
   def apply(fields: js.Array[String]): ISortInfo = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISortInfo]
   }
 }

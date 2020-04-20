@@ -18,7 +18,6 @@ object OutgoingResponseWithSession {
   @scala.inline
   def apply(message: String, session: Session): OutgoingResponseWithSession = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OutgoingResponseWithSession]
   }
 }

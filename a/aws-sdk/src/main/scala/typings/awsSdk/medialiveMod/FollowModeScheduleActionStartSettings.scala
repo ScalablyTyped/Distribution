@@ -20,7 +20,6 @@ object FollowModeScheduleActionStartSettings {
   @scala.inline
   def apply(FollowPoint: FollowPoint, ReferenceActionName: string): FollowModeScheduleActionStartSettings = {
     val __obj = js.Dynamic.literal(FollowPoint = FollowPoint.asInstanceOf[js.Any], ReferenceActionName = ReferenceActionName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FollowModeScheduleActionStartSettings]
   }
 }

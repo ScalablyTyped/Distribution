@@ -16,7 +16,6 @@ object DeleteWebhookResult {
   @scala.inline
   def apply(webhook: Webhook): DeleteWebhookResult = {
     val __obj = js.Dynamic.literal(webhook = webhook.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteWebhookResult]
   }
 }

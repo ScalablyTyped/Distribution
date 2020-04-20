@@ -16,7 +16,6 @@ object WafOverrideAction {
   @scala.inline
   def apply(Type: WafOverrideActionType): WafOverrideAction = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WafOverrideAction]
   }
 }

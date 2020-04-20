@@ -18,7 +18,6 @@ object AnonIcon {
   @scala.inline
   def apply(icon: Element, mode: String, onClick: () => Unit, styles: StringDictionary[RegisteredStyle[_]]): AnonIcon = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], onClick = js.Any.fromFunction0(onClick), styles = styles.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIcon]
   }
 }

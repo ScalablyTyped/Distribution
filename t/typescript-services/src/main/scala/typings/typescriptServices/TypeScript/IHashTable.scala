@@ -28,7 +28,6 @@ object IHashTable {
     some: (js.Function3[/* k */ String, /* value */ T, /* context */ js.Any, Unit], js.Any) => Boolean
   ): IHashTable[T] = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), addOrUpdate = js.Any.fromFunction2(addOrUpdate), count = js.Any.fromFunction0(count), every = js.Any.fromFunction2(every), getAllKeys = js.Any.fromFunction0(getAllKeys), lookup = js.Any.fromFunction1(lookup), map = js.Any.fromFunction2(map), some = js.Any.fromFunction2(some))
-  
     __obj.asInstanceOf[IHashTable[T]]
   }
 }

@@ -16,7 +16,6 @@ object Album {
   @scala.inline
   def apply(id: String, title: String): Album = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Album]
   }
 }

@@ -13,7 +13,6 @@ object TestSchedulerOptions {
   @scala.inline
   def apply(startRun: GlobalConfig => Unit): TestSchedulerOptions = {
     val __obj = js.Dynamic.literal(startRun = js.Any.fromFunction1(startRun))
-  
     __obj.asInstanceOf[TestSchedulerOptions]
   }
 }

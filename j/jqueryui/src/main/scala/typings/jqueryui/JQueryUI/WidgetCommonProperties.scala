@@ -31,7 +31,6 @@ object WidgetCommonProperties {
     window: Window_
   ): WidgetCommonProperties = {
     val __obj = js.Dynamic.literal(defaultElement = defaultElement.asInstanceOf[js.Any], document = document.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any], widgetEventPrefix = widgetEventPrefix.asInstanceOf[js.Any], widgetFullName = widgetFullName.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WidgetCommonProperties]
   }
 }

@@ -20,7 +20,6 @@ object DissociatePackageRequest {
   @scala.inline
   def apply(DomainName: DomainName, PackageID: PackageID): DissociatePackageRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any], PackageID = PackageID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DissociatePackageRequest]
   }
 }

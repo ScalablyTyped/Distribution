@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 object reactPortalComponents extends reactPortalProps {
   @scala.inline
-  def Portal: ComponentType[PortalProps] = js.constructorOf[typings.reactPortal.mod.Portal].asInstanceOf[typings.react.mod.ComponentType[PortalProps]]
+  def Portal: ComponentType[PortalProps] = js.constructorOf[typings.reactPortal.mod.Portal].asInstanceOf[ComponentType[PortalProps]]
   @scala.inline
-  def PortalWithState: ComponentType[PortalWithStateProps] = js.constructorOf[typings.reactPortal.mod.PortalWithState].asInstanceOf[typings.react.mod.ComponentType[PortalWithStateProps]]
+  def PortalWithState: ComponentType[PortalWithStateProps] = js.constructorOf[typings.reactPortal.mod.PortalWithState].asInstanceOf[ComponentType[PortalWithStateProps]]
 }
 

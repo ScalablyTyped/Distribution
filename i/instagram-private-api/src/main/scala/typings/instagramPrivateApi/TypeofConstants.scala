@@ -55,7 +55,6 @@ object TypeofConstants {
     WEB_HOSTNAME: wwwDotinstagramDotcom
   ): TypeofConstants = {
     val __obj = js.Dynamic.literal(APP_VERSION = APP_VERSION.asInstanceOf[js.Any], APP_VERSION_CODE = APP_VERSION_CODE.asInstanceOf[js.Any], BLOKS_VERSION_ID = BLOKS_VERSION_ID.asInstanceOf[js.Any], BREADCRUMB_KEY = BREADCRUMB_KEY.asInstanceOf[js.Any], EXPERIMENTS = EXPERIMENTS.asInstanceOf[js.Any], FACEBOOK_ANALYTICS_APPLICATION_ID = FACEBOOK_ANALYTICS_APPLICATION_ID.asInstanceOf[js.Any], FACEBOOK_ORCA_APPLICATION_ID = FACEBOOK_ORCA_APPLICATION_ID.asInstanceOf[js.Any], FACEBOOK_OTA_FIELDS = FACEBOOK_OTA_FIELDS.asInstanceOf[js.Any], HOST = HOST.asInstanceOf[js.Any], HOSTNAME = HOSTNAME.asInstanceOf[js.Any], LOGIN_EXPERIMENTS = LOGIN_EXPERIMENTS.asInstanceOf[js.Any], SIGNATURE_KEY = SIGNATURE_KEY.asInstanceOf[js.Any], SIGNATURE_VERSION = SIGNATURE_VERSION.asInstanceOf[js.Any], WEBHOST = WEBHOST.asInstanceOf[js.Any], WEB_HOSTNAME = WEB_HOSTNAME.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofConstants]
   }
 }

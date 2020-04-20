@@ -19,7 +19,6 @@ object _CellValue {
   @scala.inline
   def CellRichTextValue(richText: js.Array[RichText]): _CellValue = {
     val __obj = js.Dynamic.literal(richText = richText.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[_CellValue]
   }
   @scala.inline
@@ -27,7 +26,6 @@ object _CellValue {
     error: NumbersignNSlashA | NumbersignREFExclamationmark | NumbersignNAMEQuestionmark | NumbersignDIVSlash0Exclamationmark | NumbersignNULLExclamationmark | NumbersignVALUEExclamationmark | NumbersignNUMExclamationmark
   ): _CellValue = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[_CellValue]
   }
   @scala.inline
@@ -39,7 +37,6 @@ object _CellValue {
   @scala.inline
   def CellHyperlinkValue(hyperlink: String, text: String): _CellValue = {
     val __obj = js.Dynamic.literal(hyperlink = hyperlink.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[_CellValue]
   }
   @scala.inline

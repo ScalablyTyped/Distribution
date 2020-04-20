@@ -24,7 +24,6 @@ object GetCampaignVersionRequest {
   @scala.inline
   def apply(ApplicationId: string, CampaignId: string, Version: string): GetCampaignVersionRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], CampaignId = CampaignId.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetCampaignVersionRequest]
   }
 }

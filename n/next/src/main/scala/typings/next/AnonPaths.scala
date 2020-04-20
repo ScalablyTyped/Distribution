@@ -14,7 +14,6 @@ object AnonPaths {
   @scala.inline
   def apply[P /* <: ParsedUrlQuery */](fallback: Boolean, paths: js.Array[String | AnonParamsP[P]]): AnonPaths[P] = {
     val __obj = js.Dynamic.literal(fallback = fallback.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPaths[P]]
   }
 }

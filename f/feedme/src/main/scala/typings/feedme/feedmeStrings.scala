@@ -74,19 +74,19 @@ object feedmeStrings {
   @scala.inline
   def pipe: pipe = "pipe".asInstanceOf[pipe]
   @scala.inline
-  def `rss 0Dot90`: `rss 0Dot90` = "rss 0.90".asInstanceOf[`rss 0Dot90`]
+  def `rss 0Dot90`: `rss 0Dot90` = ("rss 0.90").asInstanceOf[`rss 0Dot90`]
   @scala.inline
-  def `rss 0Dot91`: `rss 0Dot91` = "rss 0.91".asInstanceOf[`rss 0Dot91`]
+  def `rss 0Dot91`: `rss 0Dot91` = ("rss 0.91").asInstanceOf[`rss 0Dot91`]
   @scala.inline
-  def `rss 0Dot92`: `rss 0Dot92` = "rss 0.92".asInstanceOf[`rss 0Dot92`]
+  def `rss 0Dot92`: `rss 0Dot92` = ("rss 0.92").asInstanceOf[`rss 0Dot92`]
   @scala.inline
-  def `rss 0Dot93`: `rss 0Dot93` = "rss 0.93".asInstanceOf[`rss 0Dot93`]
+  def `rss 0Dot93`: `rss 0Dot93` = ("rss 0.93").asInstanceOf[`rss 0Dot93`]
   @scala.inline
-  def `rss 0Dot94`: `rss 0Dot94` = "rss 0.94".asInstanceOf[`rss 0Dot94`]
+  def `rss 0Dot94`: `rss 0Dot94` = ("rss 0.94").asInstanceOf[`rss 0Dot94`]
   @scala.inline
-  def `rss 1Dot0`: `rss 1Dot0` = "rss 1.0".asInstanceOf[`rss 1Dot0`]
+  def `rss 1Dot0`: `rss 1Dot0` = ("rss 1.0").asInstanceOf[`rss 1Dot0`]
   @scala.inline
-  def `rss 2Dot0`: `rss 2Dot0` = "rss 2.0".asInstanceOf[`rss 2Dot0`]
+  def `rss 2Dot0`: `rss 2Dot0` = ("rss 2.0").asInstanceOf[`rss 2Dot0`]
   @scala.inline
   def `type`: `type` = "type".asInstanceOf[`type`]
   @scala.inline

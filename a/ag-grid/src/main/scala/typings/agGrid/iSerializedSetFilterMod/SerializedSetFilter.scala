@@ -13,7 +13,6 @@ object SerializedSetFilter {
   @scala.inline
   def apply(filterType: String, values: js.Array[String]): SerializedSetFilter = {
     val __obj = js.Dynamic.literal(filterType = filterType.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SerializedSetFilter]
   }
 }

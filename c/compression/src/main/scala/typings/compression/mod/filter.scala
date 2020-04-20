@@ -3,6 +3,7 @@ package typings.compression.mod
 import typings.express.mod.Request_
 import typings.express.mod.Response_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,6 +34,6 @@ object filter extends js.Object {
     *
     * @see {@link https://github.com/expressjs/compression#filter-1|`.filter` documentation}
     */
-  def apply(req: Request_[ParamsDictionary], res: Response_[_]): Boolean = js.native
+  def apply(req: Request_[ParamsDictionary, _, _, Query], res: Response_[_]): Boolean = js.native
 }
 

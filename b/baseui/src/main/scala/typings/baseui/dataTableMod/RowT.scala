@@ -13,7 +13,6 @@ object RowT {
   @scala.inline
   def apply(data: js.Any, id: Double | String): RowT = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RowT]
   }
 }

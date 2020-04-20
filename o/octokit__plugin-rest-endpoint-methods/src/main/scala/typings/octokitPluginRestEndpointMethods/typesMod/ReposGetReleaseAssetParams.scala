@@ -14,7 +14,6 @@ object ReposGetReleaseAssetParams {
   @scala.inline
   def apply(asset_id: Double, owner: String, repo: String): ReposGetReleaseAssetParams = {
     val __obj = js.Dynamic.literal(asset_id = asset_id.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReposGetReleaseAssetParams]
   }
 }

@@ -16,18 +16,16 @@ trait MountPropagation extends js.Object
 
 object MountPropagation {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `private`: typings.dockerode.dockerodeStrings.`private` = "private".asInstanceOf[typings.dockerode.dockerodeStrings.`private`]
   @scala.inline
-  def `private`: typings.dockerode.dockerodeStrings.`private` = this.cast("private")
+  def rprivate: typings.dockerode.dockerodeStrings.rprivate = "rprivate".asInstanceOf[typings.dockerode.dockerodeStrings.rprivate]
   @scala.inline
-  def rprivate: typings.dockerode.dockerodeStrings.rprivate = this.cast("rprivate")
+  def rshared: typings.dockerode.dockerodeStrings.rshared = "rshared".asInstanceOf[typings.dockerode.dockerodeStrings.rshared]
   @scala.inline
-  def rshared: typings.dockerode.dockerodeStrings.rshared = this.cast("rshared")
+  def rslave: typings.dockerode.dockerodeStrings.rslave = "rslave".asInstanceOf[typings.dockerode.dockerodeStrings.rslave]
   @scala.inline
-  def rslave: typings.dockerode.dockerodeStrings.rslave = this.cast("rslave")
+  def shared: typings.dockerode.dockerodeStrings.shared = "shared".asInstanceOf[typings.dockerode.dockerodeStrings.shared]
   @scala.inline
-  def shared: typings.dockerode.dockerodeStrings.shared = this.cast("shared")
-  @scala.inline
-  def slave: typings.dockerode.dockerodeStrings.slave = this.cast("slave")
+  def slave: typings.dockerode.dockerodeStrings.slave = "slave".asInstanceOf[typings.dockerode.dockerodeStrings.slave]
 }
 

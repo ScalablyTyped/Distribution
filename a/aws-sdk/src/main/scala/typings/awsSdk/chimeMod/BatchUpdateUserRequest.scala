@@ -20,7 +20,6 @@ object BatchUpdateUserRequest {
   @scala.inline
   def apply(AccountId: NonEmptyString, UpdateUserRequestItems: UpdateUserRequestItemList): BatchUpdateUserRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], UpdateUserRequestItems = UpdateUserRequestItems.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchUpdateUserRequest]
   }
 }

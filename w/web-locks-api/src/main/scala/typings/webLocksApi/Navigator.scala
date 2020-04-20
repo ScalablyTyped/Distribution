@@ -12,7 +12,6 @@ object Navigator {
   @scala.inline
   def apply(locks: LockManager): Navigator = {
     val __obj = js.Dynamic.literal(locks = locks.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Navigator]
   }
 }

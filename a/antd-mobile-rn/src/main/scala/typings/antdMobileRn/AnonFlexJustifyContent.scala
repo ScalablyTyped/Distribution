@@ -14,7 +14,6 @@ object AnonFlexJustifyContent {
   @scala.inline
   def apply(alignItems: String, flex: Double, justifyContent: String): AnonFlexJustifyContent = {
     val __obj = js.Dynamic.literal(alignItems = alignItems.asInstanceOf[js.Any], flex = flex.asInstanceOf[js.Any], justifyContent = justifyContent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFlexJustifyContent]
   }
 }

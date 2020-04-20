@@ -510,8 +510,11 @@ trait Chain[T, V] extends js.Object {
     * Wrapped type `any[]`.
     * @see _.map
     **/
-  def map[TResult](iterator: (ListIterator[T, TResult]) | (ObjectIterator[T, TResult])): Chain[TResult, js.Array[TResult]] = js.native
-  def map[TResult](iterator: (ListIterator[T, TResult]) | (ObjectIterator[T, TResult]), context: js.Any): Chain[TResult, js.Array[TResult]] = js.native
+  def map[TArray](iterator: (ListIterator[T, js.Array[TArray]]) | (ObjectIterator[T, js.Array[TArray]])): ChainOfArrays[TArray] = js.native
+  def map[TArray](
+    iterator: (ListIterator[T, js.Array[TArray]]) | (ObjectIterator[T, js.Array[TArray]]),
+    context: js.Any
+  ): ChainOfArrays[TArray] = js.native
   /**
     * Wrapped type `object`.
     * @see _.mapObject
@@ -522,12 +525,9 @@ trait Chain[T, V] extends js.Object {
     * @see _.map
     **/
   @JSName("map")
-  def map_TArray_ChainOfArrays[TArray](iterator: (ListIterator[T, js.Array[TArray]]) | (ObjectIterator[T, js.Array[TArray]])): ChainOfArrays[TArray] = js.native
+  def map_TResult_Chain[TResult](iterator: (ListIterator[T, TResult]) | (ObjectIterator[T, TResult])): Chain[TResult, js.Array[TResult]] = js.native
   @JSName("map")
-  def map_TArray_ChainOfArrays[TArray](
-    iterator: (ListIterator[T, js.Array[TArray]]) | (ObjectIterator[T, js.Array[TArray]]),
-    context: js.Any
-  ): ChainOfArrays[TArray] = js.native
+  def map_TResult_Chain[TResult](iterator: (ListIterator[T, TResult]) | (ObjectIterator[T, TResult]), context: js.Any): Chain[TResult, js.Array[TResult]] = js.native
   /**
     * Wrapped type `any[]`.
     * @see _.matcher
@@ -627,9 +627,9 @@ trait Chain[T, V] extends js.Object {
     * Wrapped type `object`.
     * @see _.pick
     **/
-  def pick[K /* <: String */](keys: K*): Chain[TypeOfDictionary[Pick[V, K]], Pick[V, K]] = js.native
-  def pick[K /* <: String */](keys: js.Array[K]): Chain[TypeOfDictionary[Pick[V, K]], Pick[V, K]] = js.native
-  def pick[K /* <: String */](
+  def pick[K /* <: /* keyof V */ String */](keys: K*): Chain[TypeOfDictionary[Pick[V, K]], Pick[V, K]] = js.native
+  def pick[K /* <: /* keyof V */ String */](keys: js.Array[K]): Chain[TypeOfDictionary[Pick[V, K]], Pick[V, K]] = js.native
+  def pick[K /* <: /* keyof V */ String */](
     predicate: ObjectIterator[
       /* import warning: importer.ImportType#apply Failed type conversion: V[K] */ js.Any, 
       Boolean

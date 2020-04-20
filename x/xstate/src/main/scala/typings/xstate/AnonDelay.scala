@@ -14,7 +14,6 @@ object AnonDelay {
   @scala.inline
   def apply[TContext, TEvent /* <: EventObject */](delay: Double | String | (Expr[TContext, TEvent, Double])): AnonDelay[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDelay[TContext, TEvent]]
   }
 }

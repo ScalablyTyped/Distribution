@@ -19,7 +19,6 @@ object ParsedOption {
   @scala.inline
   def apply(parsed: js.Any, raw: String): ParsedOption = {
     val __obj = js.Dynamic.literal(parsed = parsed.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ParsedOption]
   }
 }

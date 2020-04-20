@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "object-merge"
-version := "2.5-dt-20180215Z-8f11e7"
+version := "2.5-dt-20180215Z-eadec3"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

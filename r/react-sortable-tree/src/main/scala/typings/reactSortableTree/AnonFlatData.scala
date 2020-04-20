@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AnonFlatData[T, I /* <: String | Double */, K /* <: String */, P /* <: String */] extends js.Object {
+trait AnonFlatData[T, I /* <: String | Double */, K /* <: /* keyof T */ String */, P /* <: /* keyof T */ String */] extends js.Object {
   var flatData: NumberDictionary[T] | StringDictionary[T]
   // tslint:disable-next-line:no-unnecessary-generics
   var getKey: js.UndefOr[
@@ -27,7 +27,7 @@ trait AnonFlatData[T, I /* <: String | Double */, K /* <: String */, P /* <: Str
 
 object AnonFlatData {
   @scala.inline
-  def apply[T, I /* <: String | Double */, K /* <: String */, P /* <: String */](
+  def apply[T, I /* <: String | Double */, K /* <: /* keyof T */ String */, P /* <: /* keyof T */ String */](
     flatData: NumberDictionary[T] | StringDictionary[T],
     getKey: /* item */ T => /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = null,
     getParentKey: /* item */ T => /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any = null,

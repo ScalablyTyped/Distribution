@@ -1,5 +1,6 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +20,7 @@ trait ɵDirectiveDef[T] extends js.Object {
     */
   val declaredInputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: string}
-    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef with js.Any
+    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef with TopLevel[js.Any]
   val doCheck: js.Function0[Unit] | Null
   /**
     * Name under which the directive is exported (for use with local references in template)
@@ -83,7 +84,7 @@ trait ɵDirectiveDef[T] extends js.Object {
     */
   val inputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: string}
-    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef with js.Any
+    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef with TopLevel[js.Any]
   val onChanges: js.Function0[Unit] | Null
   val onDestroy: js.Function0[Unit] | Null
   val onInit: js.Function0[Unit] | Null
@@ -94,7 +95,7 @@ trait ɵDirectiveDef[T] extends js.Object {
     */
   val outputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: string}
-    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef with js.Any
+    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef with TopLevel[js.Any]
   /** Function that resolves providers and publishes them into the DI system. */
   var providersResolver: (js.Function2[
     /* def */ ɵDirectiveDef[T], 
@@ -126,14 +127,14 @@ object ɵDirectiveDef {
   def apply[T](
     declaredInputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: string}
-    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef with js.Any,
+    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef with TopLevel[js.Any],
     hostVars: Double,
     inputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: string}
-    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef with js.Any,
+    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef with TopLevel[js.Any],
     outputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: string}
-    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef with js.Any,
+    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef with TopLevel[js.Any],
     selectors: ɵCssSelectorList,
     `type`: Type[T],
     afterContentChecked: () => Unit = null,

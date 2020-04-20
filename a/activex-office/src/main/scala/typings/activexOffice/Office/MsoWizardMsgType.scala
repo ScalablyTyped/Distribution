@@ -20,16 +20,14 @@ trait MsoWizardMsgType extends js.Object
 
 object MsoWizardMsgType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoWizardMsgLocalStateOff: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoWizardMsgLocalStateOff: `2` = this.cast(2)
+  def msoWizardMsgLocalStateOn: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoWizardMsgLocalStateOn: `1` = this.cast(1)
+  def msoWizardMsgResuming: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def msoWizardMsgResuming: `5` = this.cast(5)
+  def msoWizardMsgShowHelp: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoWizardMsgShowHelp: `3` = this.cast(3)
-  @scala.inline
-  def msoWizardMsgSuspending: `4` = this.cast(4)
+  def msoWizardMsgSuspending: `4` = 4.asInstanceOf[`4`]
 }
 

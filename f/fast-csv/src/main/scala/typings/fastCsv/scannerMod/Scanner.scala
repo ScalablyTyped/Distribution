@@ -19,10 +19,10 @@ class Scanner protected () extends js.Object {
   def advancePastToken(token: Token): Scanner = js.native
   def advanceTo(cursor: Double): Scanner = js.native
   def advanceToToken(token: Token): Scanner = js.native
-  def hasMoreCharacters(): Boolean = js.native
-  def lineFromCursor(): String = js.native
-  def nextCharacterToken(): MaybeToken = js.native
-  def nextNonSpaceToken(): MaybeToken = js.native
+  def hasMoreCharacters: Boolean = js.native
+  def lineFromCursor: String = js.native
+  def nextCharacterToken: MaybeToken = js.native
+  def nextNonSpaceToken: MaybeToken = js.native
   def truncateToCursor(): Scanner = js.native
 }
 

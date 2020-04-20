@@ -12,7 +12,6 @@ object HTMLVideoElement {
   @scala.inline
   def apply(mozSrcObject: js.Any): HTMLVideoElement = {
     val __obj = js.Dynamic.literal(mozSrcObject = mozSrcObject.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HTMLVideoElement]
   }
 }

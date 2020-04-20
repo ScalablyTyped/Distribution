@@ -2112,6 +2112,7 @@ package object mediaconvertMod {
   type integerMin1Max32 = scala.Double
   type integerMin1Max4 = scala.Double
   type integerMin1Max6 = scala.Double
+  type integerMin1Max60000 = scala.Double
   type integerMin1Max64 = scala.Double
   type integerMin22050Max48000 = scala.Double
   type integerMin24Max60000 = scala.Double
@@ -2148,6 +2149,7 @@ package object mediaconvertMod {
   type listOfHlsAdMarkers = js.Array[typings.awsSdk.mediaconvertMod.HlsAdMarkers]
   type listOfHlsAdditionalManifest = js.Array[typings.awsSdk.mediaconvertMod.HlsAdditionalManifest]
   type listOfHlsCaptionLanguageMapping = js.Array[typings.awsSdk.mediaconvertMod.HlsCaptionLanguageMapping]
+  type listOfHopDestination = js.Array[typings.awsSdk.mediaconvertMod.HopDestination]
   type listOfId3Insertion = js.Array[typings.awsSdk.mediaconvertMod.Id3Insertion]
   type listOfInput = js.Array[typings.awsSdk.mediaconvertMod.Input]
   type listOfInputClipping = js.Array[typings.awsSdk.mediaconvertMod.InputClipping]
@@ -2166,6 +2168,7 @@ package object mediaconvertMod {
   type listOfOutputGroupDetail = js.Array[typings.awsSdk.mediaconvertMod.OutputGroupDetail]
   type listOfPreset = js.Array[typings.awsSdk.mediaconvertMod.Preset]
   type listOfQueue = js.Array[typings.awsSdk.mediaconvertMod.Queue]
+  type listOfQueueTransition = js.Array[typings.awsSdk.mediaconvertMod.QueueTransition]
   type listOfString = js.Array[typings.awsSdk.mediaconvertMod.string]
   type listOfStringMin1 = js.Array[typings.awsSdk.mediaconvertMod.stringMin1]
   type listOfStringMin36Max36Pattern09aFAF809aFAF409aFAF409aFAF409aFAF12 = js.Array[

@@ -20,7 +20,6 @@ object Config {
   @scala.inline
   def apply(domains: StringDictionary[js.Array[String]], vars: StringDictionary[StringDictionary[js.Any]]): Config = {
     val __obj = js.Dynamic.literal(domains = domains.asInstanceOf[js.Any], vars = vars.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Config]
   }
 }

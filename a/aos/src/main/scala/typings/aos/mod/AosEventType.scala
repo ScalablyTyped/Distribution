@@ -12,10 +12,8 @@ trait AosEventType extends js.Object
 
 object AosEventType {
   @scala.inline
-  def aosColonin: typings.aos.aosStrings.aosColonin = this.cast("aos:in")
+  def aosColonin: typings.aos.aosStrings.aosColonin = "aos:in".asInstanceOf[typings.aos.aosStrings.aosColonin]
   @scala.inline
-  def aosColonout: typings.aos.aosStrings.aosColonout = this.cast("aos:out")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def aosColonout: typings.aos.aosStrings.aosColonout = "aos:out".asInstanceOf[typings.aos.aosStrings.aosColonout]
 }
 

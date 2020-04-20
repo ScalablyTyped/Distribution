@@ -14,7 +14,6 @@ object Options {
   @scala.inline
   def apply(basepath: String, specification: Specification, target: String): Options = {
     val __obj = js.Dynamic.literal(basepath = basepath.asInstanceOf[js.Any], specification = specification.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Options]
   }
 }

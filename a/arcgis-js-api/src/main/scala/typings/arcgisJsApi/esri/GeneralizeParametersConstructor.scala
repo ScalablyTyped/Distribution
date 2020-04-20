@@ -9,5 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GeneralizeParametersConstructor
   extends Instantiable0[GeneralizeParameters]
-     with Instantiable1[/* properties */ GeneralizeParametersProperties, GeneralizeParameters]
+     with Instantiable1[/* properties */ GeneralizeParametersProperties, GeneralizeParameters] {
+  def fromJSON(json: js.Any): GeneralizeParameters = js.native
+}
 

@@ -2,6 +2,7 @@ package typings.istanbulMiddleware
 
 import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.istanbulMiddleware.mod.ClientMatcher
 import typings.istanbulMiddleware.mod.PathTransformer
 import scala.scalajs.js
@@ -17,8 +18,8 @@ trait AnonMatcher extends js.Object {
 object AnonMatcher {
   @scala.inline
   def apply(
-    matcher: /* req */ Request_[ParamsDictionary] => Boolean = null,
-    pathTransformer: /* req */ Request_[ParamsDictionary] => String = null,
+    matcher: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => Boolean = null,
+    pathTransformer: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => String = null,
     verbose: js.UndefOr[Boolean] = js.undefined
   ): AnonMatcher = {
     val __obj = js.Dynamic.literal()

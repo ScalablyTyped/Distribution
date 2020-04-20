@@ -13,7 +13,6 @@ object jCaptcha {
   @scala.inline
   def apply(reset: () => Unit, validate: () => Unit): jCaptcha = {
     val __obj = js.Dynamic.literal(reset = js.Any.fromFunction0(reset), validate = js.Any.fromFunction0(validate))
-  
     __obj.asInstanceOf[jCaptcha]
   }
 }

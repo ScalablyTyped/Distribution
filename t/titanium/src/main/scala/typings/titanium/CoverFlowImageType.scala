@@ -17,7 +17,7 @@ trait CoverFlowImageType extends js.Object {
   /**
   	 * Image to use, as a local file URL, `Blob`, or `File`.
   	 */
-  var image: js.UndefOr[String | Blob | File] = js.undefined
+  var image: js.UndefOr[java.lang.String | Blob | File] = js.undefined
   /**
   	 * Display width for the image, in Apple points.
   	 */
@@ -26,7 +26,11 @@ trait CoverFlowImageType extends js.Object {
 
 object CoverFlowImageType {
   @scala.inline
-  def apply(height: Int | Double = null, image: String | Blob | File = null, width: Int | Double = null): CoverFlowImageType = {
+  def apply(
+    height: Int | Double = null,
+    image: java.lang.String | Blob | File = null,
+    width: Int | Double = null
+  ): CoverFlowImageType = {
     val __obj = js.Dynamic.literal()
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])

@@ -15,16 +15,14 @@ trait ApplicationGuardBlockClipboardSharingType extends js.Object
 
 object ApplicationGuardBlockClipboardSharingType {
   @scala.inline
-  def blockBoth: typings.microsoftGraph.microsoftGraphStrings.blockBoth = this.cast("blockBoth")
+  def blockBoth: typings.microsoftGraph.microsoftGraphStrings.blockBoth = "blockBoth".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blockBoth]
   @scala.inline
-  def blockContainerToHost: typings.microsoftGraph.microsoftGraphStrings.blockContainerToHost = this.cast("blockContainerToHost")
+  def blockContainerToHost: typings.microsoftGraph.microsoftGraphStrings.blockContainerToHost = "blockContainerToHost".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blockContainerToHost]
   @scala.inline
-  def blockHostToContainer: typings.microsoftGraph.microsoftGraphStrings.blockHostToContainer = this.cast("blockHostToContainer")
+  def blockHostToContainer: typings.microsoftGraph.microsoftGraphStrings.blockHostToContainer = "blockHostToContainer".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blockHostToContainer]
   @scala.inline
-  def blockNone: typings.microsoftGraph.microsoftGraphStrings.blockNone = this.cast("blockNone")
+  def blockNone: typings.microsoftGraph.microsoftGraphStrings.blockNone = "blockNone".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blockNone]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def notConfigured: typings.microsoftGraph.microsoftGraphStrings.notConfigured = this.cast("notConfigured")
+  def notConfigured: typings.microsoftGraph.microsoftGraphStrings.notConfigured = "notConfigured".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notConfigured]
 }
 

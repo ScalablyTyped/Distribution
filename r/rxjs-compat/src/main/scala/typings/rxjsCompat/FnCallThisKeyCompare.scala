@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait FnCallThisKeyCompare extends js.Object {
-  def apply[T](key: String): js.Any = js.native
-  def apply[T, K /* <: String */](
+  def apply[T](key: /* keyof T */ String): js.Any = js.native
+  def apply[T, K /* <: /* keyof T */ String */](
     key: K,
     compare: js.Function2[
       /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ /* x */ js.Any, 

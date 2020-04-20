@@ -2,6 +2,7 @@ package typings.swaggerExpressValidator.mod
 
 import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,10 +10,20 @@ import scala.scalajs.js.annotation._
 trait Options extends js.Object {
   var allowNullable: js.UndefOr[Boolean] = js.undefined
   var requestValidationFn: js.UndefOr[
-    js.Function3[/* req */ Request_[ParamsDictionary], /* data */ js.Any, /* errors */ js.Any, Unit]
+    js.Function3[
+      /* req */ Request_[ParamsDictionary, _, _, Query], 
+      /* data */ js.Any, 
+      /* errors */ js.Any, 
+      Unit
+    ]
   ] = js.undefined
   var responseValidationFn: js.UndefOr[
-    js.Function3[/* req */ Request_[ParamsDictionary], /* data */ js.Any, /* errors */ js.Any, Unit]
+    js.Function3[
+      /* req */ Request_[ParamsDictionary, _, _, Query], 
+      /* data */ js.Any, 
+      /* errors */ js.Any, 
+      Unit
+    ]
   ] = js.undefined
   var schema: String
   var validateRequest: js.UndefOr[Boolean] = js.undefined
@@ -24,8 +35,8 @@ object Options {
   def apply(
     schema: String,
     allowNullable: js.UndefOr[Boolean] = js.undefined,
-    requestValidationFn: (/* req */ Request_[ParamsDictionary], /* data */ js.Any, /* errors */ js.Any) => Unit = null,
-    responseValidationFn: (/* req */ Request_[ParamsDictionary], /* data */ js.Any, /* errors */ js.Any) => Unit = null,
+    requestValidationFn: (/* req */ Request_[ParamsDictionary, _, _, Query], /* data */ js.Any, /* errors */ js.Any) => Unit = null,
+    responseValidationFn: (/* req */ Request_[ParamsDictionary, _, _, Query], /* data */ js.Any, /* errors */ js.Any) => Unit = null,
     validateRequest: js.UndefOr[Boolean] = js.undefined,
     validateResponse: js.UndefOr[Boolean] = js.undefined
   ): Options = {

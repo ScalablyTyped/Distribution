@@ -12,7 +12,6 @@ object LambdaConfig {
   @scala.inline
   def apply(allowNullInjection: Boolean): LambdaConfig = {
     val __obj = js.Dynamic.literal(allowNullInjection = allowNullInjection.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LambdaConfig]
   }
 }

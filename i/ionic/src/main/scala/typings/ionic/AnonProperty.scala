@@ -12,7 +12,6 @@ object AnonProperty {
   @scala.inline
   def apply(property: String): AnonProperty = {
     val __obj = js.Dynamic.literal(property = property.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonProperty]
   }
 }

@@ -12,10 +12,8 @@ trait VppTokenAccountType extends js.Object
 
 object VppTokenAccountType {
   @scala.inline
-  def business: typings.microsoftGraph.microsoftGraphStrings.business = this.cast("business")
+  def business: typings.microsoftGraph.microsoftGraphStrings.business = "business".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.business]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def education: typings.microsoftGraph.microsoftGraphStrings.education = this.cast("education")
+  def education: typings.microsoftGraph.microsoftGraphStrings.education = "education".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.education]
 }
 

@@ -19,24 +19,22 @@ trait OverlayPositioning extends js.Object
 
 object OverlayPositioning {
   @scala.inline
-  def `bottom-center`: typings.openlayers.openlayersStrings.`bottom-center` = this.cast("bottom-center")
+  def `bottom-center`: typings.openlayers.openlayersStrings.`bottom-center` = "bottom-center".asInstanceOf[typings.openlayers.openlayersStrings.`bottom-center`]
   @scala.inline
-  def `bottom-left`: typings.openlayers.openlayersStrings.`bottom-left` = this.cast("bottom-left")
+  def `bottom-left`: typings.openlayers.openlayersStrings.`bottom-left` = "bottom-left".asInstanceOf[typings.openlayers.openlayersStrings.`bottom-left`]
   @scala.inline
-  def `bottom-right`: typings.openlayers.openlayersStrings.`bottom-right` = this.cast("bottom-right")
+  def `bottom-right`: typings.openlayers.openlayersStrings.`bottom-right` = "bottom-right".asInstanceOf[typings.openlayers.openlayersStrings.`bottom-right`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `center-center`: typings.openlayers.openlayersStrings.`center-center` = "center-center".asInstanceOf[typings.openlayers.openlayersStrings.`center-center`]
   @scala.inline
-  def `center-center`: typings.openlayers.openlayersStrings.`center-center` = this.cast("center-center")
+  def `center-left`: typings.openlayers.openlayersStrings.`center-left` = "center-left".asInstanceOf[typings.openlayers.openlayersStrings.`center-left`]
   @scala.inline
-  def `center-left`: typings.openlayers.openlayersStrings.`center-left` = this.cast("center-left")
+  def `center-right`: typings.openlayers.openlayersStrings.`center-right` = "center-right".asInstanceOf[typings.openlayers.openlayersStrings.`center-right`]
   @scala.inline
-  def `center-right`: typings.openlayers.openlayersStrings.`center-right` = this.cast("center-right")
+  def `top-center`: typings.openlayers.openlayersStrings.`top-center` = "top-center".asInstanceOf[typings.openlayers.openlayersStrings.`top-center`]
   @scala.inline
-  def `top-center`: typings.openlayers.openlayersStrings.`top-center` = this.cast("top-center")
+  def `top-left`: typings.openlayers.openlayersStrings.`top-left` = "top-left".asInstanceOf[typings.openlayers.openlayersStrings.`top-left`]
   @scala.inline
-  def `top-left`: typings.openlayers.openlayersStrings.`top-left` = this.cast("top-left")
-  @scala.inline
-  def `top-right`: typings.openlayers.openlayersStrings.`top-right` = this.cast("top-right")
+  def `top-right`: typings.openlayers.openlayersStrings.`top-right` = "top-right".asInstanceOf[typings.openlayers.openlayersStrings.`top-right`]
 }
 

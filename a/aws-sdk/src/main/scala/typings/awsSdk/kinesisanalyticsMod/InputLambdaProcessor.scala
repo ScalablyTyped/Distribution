@@ -20,7 +20,6 @@ object InputLambdaProcessor {
   @scala.inline
   def apply(ResourceARN: ResourceARN, RoleARN: RoleARN): InputLambdaProcessor = {
     val __obj = js.Dynamic.literal(ResourceARN = ResourceARN.asInstanceOf[js.Any], RoleARN = RoleARN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InputLambdaProcessor]
   }
 }

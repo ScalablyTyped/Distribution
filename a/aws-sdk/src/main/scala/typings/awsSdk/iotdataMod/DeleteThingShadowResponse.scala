@@ -16,7 +16,6 @@ object DeleteThingShadowResponse {
   @scala.inline
   def apply(payload: JsonDocument): DeleteThingShadowResponse = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteThingShadowResponse]
   }
 }

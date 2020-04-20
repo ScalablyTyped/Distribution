@@ -28,7 +28,6 @@ object Invalidation {
   @scala.inline
   def apply(CreateTime: timestamp, Id: String, InvalidationBatch: InvalidationBatch, Status: String): Invalidation = {
     val __obj = js.Dynamic.literal(CreateTime = CreateTime.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], InvalidationBatch = InvalidationBatch.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Invalidation]
   }
 }

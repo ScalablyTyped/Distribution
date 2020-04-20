@@ -13,12 +13,10 @@ trait AutoplayEvent extends js.Object
 
 object AutoplayEvent {
   @scala.inline
-  def autoplay: typings.swiper.swiperStrings.autoplay = this.cast("autoplay")
+  def autoplay: typings.swiper.swiperStrings.autoplay = "autoplay".asInstanceOf[typings.swiper.swiperStrings.autoplay]
   @scala.inline
-  def autoplayStart: typings.swiper.swiperStrings.autoplayStart = this.cast("autoplayStart")
+  def autoplayStart: typings.swiper.swiperStrings.autoplayStart = "autoplayStart".asInstanceOf[typings.swiper.swiperStrings.autoplayStart]
   @scala.inline
-  def autoplayStop: typings.swiper.swiperStrings.autoplayStop = this.cast("autoplayStop")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def autoplayStop: typings.swiper.swiperStrings.autoplayStop = "autoplayStop".asInstanceOf[typings.swiper.swiperStrings.autoplayStop]
 }
 

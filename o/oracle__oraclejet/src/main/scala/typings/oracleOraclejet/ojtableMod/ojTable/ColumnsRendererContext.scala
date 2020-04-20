@@ -28,7 +28,6 @@ object ColumnsRendererContext {
     row: StringDictionary[js.Any]
   ): ColumnsRendererContext[K, D] = {
     val __obj = js.Dynamic.literal(cellContext = cellContext.asInstanceOf[js.Any], columnIndex = columnIndex.asInstanceOf[js.Any], componentElement = componentElement.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], parentElement = parentElement.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ColumnsRendererContext[K, D]]
   }
 }

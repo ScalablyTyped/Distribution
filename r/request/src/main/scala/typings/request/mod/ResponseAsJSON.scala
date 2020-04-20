@@ -15,7 +15,6 @@ object ResponseAsJSON {
   @scala.inline
   def apply(body: js.Any, headers: Headers, request: RequestAsJSON, statusCode: Double): ResponseAsJSON = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResponseAsJSON]
   }
 }

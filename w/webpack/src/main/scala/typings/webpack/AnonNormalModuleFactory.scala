@@ -13,7 +13,6 @@ object AnonNormalModuleFactory {
   @scala.inline
   def apply(normalModuleFactory: NormalModuleFactory_): AnonNormalModuleFactory = {
     val __obj = js.Dynamic.literal(normalModuleFactory = normalModuleFactory.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNormalModuleFactory]
   }
 }

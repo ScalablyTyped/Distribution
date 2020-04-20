@@ -18,14 +18,12 @@ trait styleMsContentZooming extends js.Object
 
 object styleMsContentZooming {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleMsContentZoomingNone: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleMsContentZoomingNone: `1` = this.cast(1)
+  def styleMsContentZoomingNotSet: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleMsContentZoomingNotSet: `0` = this.cast(0)
+  def styleMsContentZoomingZoom: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleMsContentZoomingZoom: `2` = this.cast(2)
-  @scala.inline
-  def styleMsContentZooming_Max: `2147483647` = this.cast(2147483647)
+  def styleMsContentZooming_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

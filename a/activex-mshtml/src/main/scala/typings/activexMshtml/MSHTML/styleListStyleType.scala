@@ -46,42 +46,40 @@ trait styleListStyleType extends js.Object
 
 object styleListStyleType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleListStyleTypeArmenian: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def styleListStyleTypeArmenian: `12` = this.cast(12)
+  def styleListStyleTypeCircle: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleListStyleTypeCircle: `2` = this.cast(2)
+  def styleListStyleTypeDecimal: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def styleListStyleTypeDecimal: `4` = this.cast(4)
+  def styleListStyleTypeDecimalLeadingZero: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def styleListStyleTypeDecimalLeadingZero: `10` = this.cast(10)
+  def styleListStyleTypeDisc: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleListStyleTypeDisc: `1` = this.cast(1)
+  def styleListStyleTypeGeorgian: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def styleListStyleTypeGeorgian: `11` = this.cast(11)
+  def styleListStyleTypeLowerAlpha: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def styleListStyleTypeLowerAlpha: `7` = this.cast(7)
+  def styleListStyleTypeLowerGreek: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def styleListStyleTypeLowerGreek: `16` = this.cast(16)
+  def styleListStyleTypeLowerLatin: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def styleListStyleTypeLowerLatin: `14` = this.cast(14)
+  def styleListStyleTypeLowerRoman: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def styleListStyleTypeLowerRoman: `5` = this.cast(5)
+  def styleListStyleTypeNone: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def styleListStyleTypeNone: `9` = this.cast(9)
+  def styleListStyleTypeNotSet: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleListStyleTypeNotSet: `0` = this.cast(0)
+  def styleListStyleTypeSquare: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def styleListStyleTypeSquare: `3` = this.cast(3)
+  def styleListStyleTypeUpperAlpha: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def styleListStyleTypeUpperAlpha: `8` = this.cast(8)
+  def styleListStyleTypeUpperGreek: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def styleListStyleTypeUpperGreek: `15` = this.cast(15)
+  def styleListStyleTypeUpperLatin: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def styleListStyleTypeUpperLatin: `13` = this.cast(13)
+  def styleListStyleTypeUpperRoman: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def styleListStyleTypeUpperRoman: `6` = this.cast(6)
-  @scala.inline
-  def styleListStyleType_Max: `2147483647` = this.cast(2147483647)
+  def styleListStyleType_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

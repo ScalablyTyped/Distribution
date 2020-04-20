@@ -75,134 +75,132 @@ trait KerasClassName extends js.Object
 
 object KerasClassName {
   @scala.inline
-  def Activation: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Activation = this.cast("Activation")
+  def Activation: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Activation = "Activation".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Activation]
   @scala.inline
-  def Adadelta: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Adadelta = this.cast("Adadelta")
+  def Adadelta: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Adadelta = "Adadelta".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Adadelta]
   @scala.inline
-  def Adagrad: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Adagrad = this.cast("Adagrad")
+  def Adagrad: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Adagrad = "Adagrad".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Adagrad]
   @scala.inline
-  def Adam: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Adam = this.cast("Adam")
+  def Adam: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Adam = "Adam".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Adam]
   @scala.inline
-  def Adamax: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Adamax = this.cast("Adamax")
+  def Adamax: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Adamax = "Adamax".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Adamax]
   @scala.inline
-  def Add: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Add = this.cast("Add")
+  def Add: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Add = "Add".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Add]
   @scala.inline
-  def Average: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Average = this.cast("Average")
+  def Average: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Average = "Average".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Average]
   @scala.inline
-  def AveragePooling1D: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.AveragePooling1D = this.cast("AveragePooling1D")
+  def AveragePooling1D: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.AveragePooling1D = "AveragePooling1D".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.AveragePooling1D]
   @scala.inline
-  def AveragePooling2D: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.AveragePooling2D = this.cast("AveragePooling2D")
+  def AveragePooling2D: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.AveragePooling2D = "AveragePooling2D".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.AveragePooling2D]
   @scala.inline
-  def BatchNormalization: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.BatchNormalization = this.cast("BatchNormalization")
+  def BatchNormalization: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.BatchNormalization = "BatchNormalization".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.BatchNormalization]
   @scala.inline
-  def Concatenate: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Concatenate = this.cast("Concatenate")
+  def Concatenate: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Concatenate = "Concatenate".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Concatenate]
   @scala.inline
-  def Constant: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Constant = this.cast("Constant")
+  def Constant: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Constant = "Constant".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Constant]
   @scala.inline
-  def Conv1D: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Conv1D = this.cast("Conv1D")
+  def Conv1D: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Conv1D = "Conv1D".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Conv1D]
   @scala.inline
-  def Conv2D: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Conv2D = this.cast("Conv2D")
+  def Conv2D: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Conv2D = "Conv2D".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Conv2D]
   @scala.inline
-  def Conv2DTranspose: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Conv2DTranspose = this.cast("Conv2DTranspose")
+  def Conv2DTranspose: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Conv2DTranspose = "Conv2DTranspose".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Conv2DTranspose]
   @scala.inline
-  def Cropping2D: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Cropping2D = this.cast("Cropping2D")
+  def Cropping2D: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Cropping2D = "Cropping2D".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Cropping2D]
   @scala.inline
-  def Dense: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Dense = this.cast("Dense")
+  def Dense: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Dense = "Dense".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Dense]
   @scala.inline
-  def DepthwiseConv2D: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.DepthwiseConv2D = this.cast("DepthwiseConv2D")
+  def DepthwiseConv2D: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.DepthwiseConv2D = "DepthwiseConv2D".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.DepthwiseConv2D]
   @scala.inline
-  def Dot: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Dot = this.cast("Dot")
+  def Dot: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Dot = "Dot".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Dot]
   @scala.inline
-  def Dropout: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Dropout = this.cast("Dropout")
+  def Dropout: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Dropout = "Dropout".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Dropout]
   @scala.inline
-  def ELU: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ELU = this.cast("ELU")
+  def ELU: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ELU = "ELU".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ELU]
   @scala.inline
-  def Embedding: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Embedding = this.cast("Embedding")
+  def Embedding: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Embedding = "Embedding".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Embedding]
   @scala.inline
-  def Flatten: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Flatten = this.cast("Flatten")
+  def Flatten: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Flatten = "Flatten".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Flatten]
   @scala.inline
-  def GRU: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GRU = this.cast("GRU")
+  def GRU: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GRU = "GRU".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GRU]
   @scala.inline
-  def GlobalAveragePooling1D: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GlobalAveragePooling1D = this.cast("GlobalAveragePooling1D")
+  def GlobalAveragePooling1D: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GlobalAveragePooling1D = "GlobalAveragePooling1D".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GlobalAveragePooling1D]
   @scala.inline
-  def GlobalAveragePooling2D: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GlobalAveragePooling2D = this.cast("GlobalAveragePooling2D")
+  def GlobalAveragePooling2D: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GlobalAveragePooling2D = "GlobalAveragePooling2D".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GlobalAveragePooling2D]
   @scala.inline
-  def GlobalMaxPooling1D: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GlobalMaxPooling1D = this.cast("GlobalMaxPooling1D")
+  def GlobalMaxPooling1D: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GlobalMaxPooling1D = "GlobalMaxPooling1D".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GlobalMaxPooling1D]
   @scala.inline
-  def GlobalMaxPooling2D: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GlobalMaxPooling2D = this.cast("GlobalMaxPooling2D")
+  def GlobalMaxPooling2D: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GlobalMaxPooling2D = "GlobalMaxPooling2D".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GlobalMaxPooling2D]
   @scala.inline
-  def Identity: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Identity = this.cast("Identity")
+  def Identity: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Identity = "Identity".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Identity]
   @scala.inline
-  def InputLayer: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.InputLayer = this.cast("InputLayer")
+  def InputLayer: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.InputLayer = "InputLayer".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.InputLayer]
   @scala.inline
-  def L1L2: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.L1L2 = this.cast("L1L2")
+  def L1L2: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.L1L2 = "L1L2".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.L1L2]
   @scala.inline
-  def LSTM: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.LSTM = this.cast("LSTM")
+  def LSTM: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.LSTM = "LSTM".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.LSTM]
   @scala.inline
-  def LeakyReLU: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.LeakyReLU = this.cast("LeakyReLU")
+  def LeakyReLU: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.LeakyReLU = "LeakyReLU".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.LeakyReLU]
   @scala.inline
-  def Masking: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Masking = this.cast("Masking")
+  def Masking: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Masking = "Masking".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Masking]
   @scala.inline
-  def MaxNorm: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.MaxNorm = this.cast("MaxNorm")
+  def MaxNorm: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.MaxNorm = "MaxNorm".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.MaxNorm]
   @scala.inline
-  def MaxPooling1D: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.MaxPooling1D = this.cast("MaxPooling1D")
+  def MaxPooling1D: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.MaxPooling1D = "MaxPooling1D".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.MaxPooling1D]
   @scala.inline
-  def MaxPooling2D: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.MaxPooling2D = this.cast("MaxPooling2D")
+  def MaxPooling2D: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.MaxPooling2D = "MaxPooling2D".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.MaxPooling2D]
   @scala.inline
-  def Maximum: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Maximum = this.cast("Maximum")
+  def Maximum: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Maximum = "Maximum".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Maximum]
   @scala.inline
-  def MinMaxNorm: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.MinMaxNorm = this.cast("MinMaxNorm")
+  def MinMaxNorm: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.MinMaxNorm = "MinMaxNorm".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.MinMaxNorm]
   @scala.inline
-  def Minimum: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Minimum = this.cast("Minimum")
+  def Minimum: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Minimum = "Minimum".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Minimum]
   @scala.inline
-  def Momentum: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Momentum = this.cast("Momentum")
+  def Momentum: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Momentum = "Momentum".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Momentum]
   @scala.inline
-  def Multiply: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Multiply = this.cast("Multiply")
+  def Multiply: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Multiply = "Multiply".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Multiply]
   @scala.inline
-  def NonNeg: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.NonNeg = this.cast("NonNeg")
+  def NonNeg: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.NonNeg = "NonNeg".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.NonNeg]
   @scala.inline
-  def Ones: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Ones = this.cast("Ones")
+  def Ones: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Ones = "Ones".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Ones]
   @scala.inline
-  def Orthogonal: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Orthogonal = this.cast("Orthogonal")
+  def Orthogonal: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Orthogonal = "Orthogonal".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Orthogonal]
   @scala.inline
-  def PReLU: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.PReLU = this.cast("PReLU")
+  def PReLU: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.PReLU = "PReLU".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.PReLU]
   @scala.inline
-  def Permute: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Permute = this.cast("Permute")
+  def Permute: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Permute = "Permute".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Permute]
   @scala.inline
-  def RMSProp: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RMSProp = this.cast("RMSProp")
+  def RMSProp: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RMSProp = "RMSProp".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RMSProp]
   @scala.inline
-  def RandomNormal: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RandomNormal = this.cast("RandomNormal")
+  def RandomNormal: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RandomNormal = "RandomNormal".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RandomNormal]
   @scala.inline
-  def RandomUniform: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RandomUniform = this.cast("RandomUniform")
+  def RandomUniform: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RandomUniform = "RandomUniform".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RandomUniform]
   @scala.inline
-  def ReLU: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ReLU = this.cast("ReLU")
+  def ReLU: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ReLU = "ReLU".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ReLU]
   @scala.inline
-  def RepeatVector: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RepeatVector = this.cast("RepeatVector")
+  def RepeatVector: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RepeatVector = "RepeatVector".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RepeatVector]
   @scala.inline
-  def Reshape: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Reshape = this.cast("Reshape")
+  def Reshape: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Reshape = "Reshape".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Reshape]
   @scala.inline
-  def SGD: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.SGD = this.cast("SGD")
+  def SGD: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.SGD = "SGD".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.SGD]
   @scala.inline
-  def SeparableConv2D: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.SeparableConv2D = this.cast("SeparableConv2D")
+  def SeparableConv2D: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.SeparableConv2D = "SeparableConv2D".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.SeparableConv2D]
   @scala.inline
-  def SimpleRNN: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.SimpleRNN = this.cast("SimpleRNN")
+  def SimpleRNN: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.SimpleRNN = "SimpleRNN".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.SimpleRNN]
   @scala.inline
-  def Softmax: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Softmax = this.cast("Softmax")
+  def Softmax: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Softmax = "Softmax".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Softmax]
   @scala.inline
-  def ThresholdedReLU: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ThresholdedReLU = this.cast("ThresholdedReLU")
+  def ThresholdedReLU: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ThresholdedReLU = "ThresholdedReLU".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ThresholdedReLU]
   @scala.inline
-  def TruncatedNormal: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.TruncatedNormal = this.cast("TruncatedNormal")
+  def TruncatedNormal: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.TruncatedNormal = "TruncatedNormal".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.TruncatedNormal]
   @scala.inline
-  def UnitNorm: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.UnitNorm = this.cast("UnitNorm")
+  def UnitNorm: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.UnitNorm = "UnitNorm".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.UnitNorm]
   @scala.inline
-  def UpSampling2D: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.UpSampling2D = this.cast("UpSampling2D")
+  def UpSampling2D: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.UpSampling2D = "UpSampling2D".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.UpSampling2D]
   @scala.inline
-  def VarianceScaling: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.VarianceScaling = this.cast("VarianceScaling")
+  def VarianceScaling: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.VarianceScaling = "VarianceScaling".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.VarianceScaling]
   @scala.inline
-  def ZeroPadding2D: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ZeroPadding2D = this.cast("ZeroPadding2D")
+  def ZeroPadding2D: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ZeroPadding2D = "ZeroPadding2D".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ZeroPadding2D]
   @scala.inline
-  def Zeros: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Zeros = this.cast("Zeros")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Zeros: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Zeros = "Zeros".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Zeros]
 }
 

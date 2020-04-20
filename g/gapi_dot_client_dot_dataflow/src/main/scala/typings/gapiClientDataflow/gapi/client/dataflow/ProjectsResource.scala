@@ -23,7 +23,6 @@ object ProjectsResource {
     workerMessages: AnonUploadprotocol => Request_[SendWorkerMessagesResponse]
   ): ProjectsResource = {
     val __obj = js.Dynamic.literal(jobs = jobs.asInstanceOf[js.Any], locations = locations.asInstanceOf[js.Any], templates = templates.asInstanceOf[js.Any], workerMessages = js.Any.fromFunction1(workerMessages))
-  
     __obj.asInstanceOf[ProjectsResource]
   }
 }

@@ -12,7 +12,6 @@ object TagParams {
   @scala.inline
   def apply(tag: String): TagParams = {
     val __obj = js.Dynamic.literal(tag = tag.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TagParams]
   }
 }

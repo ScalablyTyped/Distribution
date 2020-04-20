@@ -25,7 +25,6 @@ object IPostLink {
   @scala.inline
   def apply($postLink: () => Unit): IPostLink = {
     val __obj = js.Dynamic.literal($postLink = js.Any.fromFunction0($postLink))
-  
     __obj.asInstanceOf[IPostLink]
   }
 }

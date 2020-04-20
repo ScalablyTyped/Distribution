@@ -15,16 +15,14 @@ trait EventType extends js.Object
 
 object EventType {
   @scala.inline
-  def action: typings.reactNavigation.reactNavigationStrings.action = this.cast("action")
+  def action: typings.reactNavigation.reactNavigationStrings.action = "action".asInstanceOf[typings.reactNavigation.reactNavigationStrings.action]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def didBlur: typings.reactNavigation.reactNavigationStrings.didBlur = "didBlur".asInstanceOf[typings.reactNavigation.reactNavigationStrings.didBlur]
   @scala.inline
-  def didBlur: typings.reactNavigation.reactNavigationStrings.didBlur = this.cast("didBlur")
+  def didFocus: typings.reactNavigation.reactNavigationStrings.didFocus = "didFocus".asInstanceOf[typings.reactNavigation.reactNavigationStrings.didFocus]
   @scala.inline
-  def didFocus: typings.reactNavigation.reactNavigationStrings.didFocus = this.cast("didFocus")
+  def willBlur: typings.reactNavigation.reactNavigationStrings.willBlur = "willBlur".asInstanceOf[typings.reactNavigation.reactNavigationStrings.willBlur]
   @scala.inline
-  def willBlur: typings.reactNavigation.reactNavigationStrings.willBlur = this.cast("willBlur")
-  @scala.inline
-  def willFocus: typings.reactNavigation.reactNavigationStrings.willFocus = this.cast("willFocus")
+  def willFocus: typings.reactNavigation.reactNavigationStrings.willFocus = "willFocus".asInstanceOf[typings.reactNavigation.reactNavigationStrings.willFocus]
 }
 

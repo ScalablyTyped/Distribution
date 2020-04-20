@@ -16,7 +16,6 @@ object DescribeResourceGroupsRequest {
   @scala.inline
   def apply(resourceGroupArns: BatchDescribeArnList): DescribeResourceGroupsRequest = {
     val __obj = js.Dynamic.literal(resourceGroupArns = resourceGroupArns.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeResourceGroupsRequest]
   }
 }

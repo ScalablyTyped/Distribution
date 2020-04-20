@@ -18,14 +18,12 @@ trait TaskPaneGroup extends js.Object
 
 object TaskPaneGroup {
   @scala.inline
-  def GoTo: `3` = this.cast(3)
+  def GoTo: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def Main: `4` = this.cast(4)
+  def Main: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def New: `1` = this.cast(1)
+  def New: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def ViewAndModify: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ViewAndModify: `2` = 2.asInstanceOf[`2`]
 }
 

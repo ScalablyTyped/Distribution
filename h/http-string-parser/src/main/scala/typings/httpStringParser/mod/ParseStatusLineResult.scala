@@ -14,7 +14,6 @@ object ParseStatusLineResult {
   @scala.inline
   def apply(protocol: String, statusCode: String, statusMessage: String): ParseStatusLineResult = {
     val __obj = js.Dynamic.literal(protocol = protocol.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], statusMessage = statusMessage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ParseStatusLineResult]
   }
 }

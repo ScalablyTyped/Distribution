@@ -23,7 +23,6 @@ object Output {
   @scala.inline
   def apply(headers: js.Object, payload: Payload, statusCode: Double): Output = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Output]
   }
 }

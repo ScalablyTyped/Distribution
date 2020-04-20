@@ -17,7 +17,6 @@ object SkEnumSkPointModeLinesSkP {
   @scala.inline
   def apply(Lines: SkPointMode, Points: SkPointMode, Polygon: SkPointMode, values: js.Array[SkPointMode]): SkEnumSkPointModeLinesSkP = {
     val __obj = js.Dynamic.literal(Lines = Lines.asInstanceOf[js.Any], Points = Points.asInstanceOf[js.Any], Polygon = Polygon.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SkEnumSkPointModeLinesSkP]
   }
 }

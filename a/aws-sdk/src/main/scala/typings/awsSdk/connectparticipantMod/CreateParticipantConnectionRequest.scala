@@ -20,7 +20,6 @@ object CreateParticipantConnectionRequest {
   @scala.inline
   def apply(ParticipantToken: ParticipantToken, Type: ConnectionTypeList): CreateParticipantConnectionRequest = {
     val __obj = js.Dynamic.literal(ParticipantToken = ParticipantToken.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateParticipantConnectionRequest]
   }
 }

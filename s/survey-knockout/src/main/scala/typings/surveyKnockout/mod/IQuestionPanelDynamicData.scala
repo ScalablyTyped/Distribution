@@ -24,7 +24,6 @@ object IQuestionPanelDynamicData {
     setPanelItemData: (ISurveyData, String, js.Any) => js.Any
   ): IQuestionPanelDynamicData = {
     val __obj = js.Dynamic.literal(getItemIndex = js.Any.fromFunction1(getItemIndex), getPanelItemData = js.Any.fromFunction1(getPanelItemData), getRootData = js.Any.fromFunction0(getRootData), getSharedQuestionFromArray = js.Any.fromFunction2(getSharedQuestionFromArray), getSurvey = js.Any.fromFunction0(getSurvey), setPanelItemData = js.Any.fromFunction3(setPanelItemData))
-  
     __obj.asInstanceOf[IQuestionPanelDynamicData]
   }
 }

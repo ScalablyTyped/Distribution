@@ -20,7 +20,6 @@ object DeleteRevisionRequest {
   @scala.inline
   def apply(DataSetId: string, RevisionId: string): DeleteRevisionRequest = {
     val __obj = js.Dynamic.literal(DataSetId = DataSetId.asInstanceOf[js.Any], RevisionId = RevisionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteRevisionRequest]
   }
 }

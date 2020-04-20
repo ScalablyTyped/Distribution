@@ -20,16 +20,14 @@ trait styleWordBreak extends js.Object
 
 object styleWordBreak {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleWordBreakBreakAll: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleWordBreakBreakAll: `2` = this.cast(2)
+  def styleWordBreakKeepAll: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def styleWordBreakKeepAll: `3` = this.cast(3)
+  def styleWordBreakNormal: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleWordBreakNormal: `1` = this.cast(1)
+  def styleWordBreakNotSet: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleWordBreakNotSet: `0` = this.cast(0)
-  @scala.inline
-  def styleWordBreak_Max: `2147483647` = this.cast(2147483647)
+  def styleWordBreak_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

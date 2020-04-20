@@ -20,26 +20,24 @@ trait Sector extends js.Object
 
 object Sector {
   @scala.inline
-  def ART_MUSIC_ENTERTAINMENT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ART_MUSIC_ENTERTAINMENT = this.cast("ART_MUSIC_ENTERTAINMENT")
+  def ART_MUSIC_ENTERTAINMENT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ART_MUSIC_ENTERTAINMENT = "ART_MUSIC_ENTERTAINMENT".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ART_MUSIC_ENTERTAINMENT]
   @scala.inline
-  def BEAUTY_COSMETICS_HEALTH: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BEAUTY_COSMETICS_HEALTH = this.cast("BEAUTY_COSMETICS_HEALTH")
+  def BEAUTY_COSMETICS_HEALTH: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BEAUTY_COSMETICS_HEALTH = "BEAUTY_COSMETICS_HEALTH".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BEAUTY_COSMETICS_HEALTH]
   @scala.inline
-  def FOOD_WINE_RESTAURANTS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FOOD_WINE_RESTAURANTS = this.cast("FOOD_WINE_RESTAURANTS")
+  def FOOD_WINE_RESTAURANTS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FOOD_WINE_RESTAURANTS = "FOOD_WINE_RESTAURANTS".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FOOD_WINE_RESTAURANTS]
   @scala.inline
-  def FURNITURE_GARDEN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FURNITURE_GARDEN = this.cast("FURNITURE_GARDEN")
+  def FURNITURE_GARDEN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FURNITURE_GARDEN = "FURNITURE_GARDEN".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FURNITURE_GARDEN]
   @scala.inline
-  def HOSPITALITY_TRAVEL_CORIDING: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.HOSPITALITY_TRAVEL_CORIDING = this.cast("HOSPITALITY_TRAVEL_CORIDING")
+  def HOSPITALITY_TRAVEL_CORIDING: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.HOSPITALITY_TRAVEL_CORIDING = "HOSPITALITY_TRAVEL_CORIDING".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.HOSPITALITY_TRAVEL_CORIDING]
   @scala.inline
-  def RENTALS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.RENTALS = this.cast("RENTALS")
+  def RENTALS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.RENTALS = "RENTALS".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.RENTALS]
   @scala.inline
-  def SERVICES_JOBBING_EDUCATION: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SERVICES_JOBBING_EDUCATION = this.cast("SERVICES_JOBBING_EDUCATION")
+  def SERVICES_JOBBING_EDUCATION: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SERVICES_JOBBING_EDUCATION = "SERVICES_JOBBING_EDUCATION".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SERVICES_JOBBING_EDUCATION]
   @scala.inline
-  def SPORT_RECREATION_ACTIVITIES: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SPORT_RECREATION_ACTIVITIES = this.cast("SPORT_RECREATION_ACTIVITIES")
+  def SPORT_RECREATION_ACTIVITIES: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SPORT_RECREATION_ACTIVITIES = "SPORT_RECREATION_ACTIVITIES".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SPORT_RECREATION_ACTIVITIES]
   @scala.inline
-  def STORES_FASHION_ACCESSORIES_OBJECTS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.STORES_FASHION_ACCESSORIES_OBJECTS = this.cast("STORES_FASHION_ACCESSORIES_OBJECTS")
+  def STORES_FASHION_ACCESSORIES_OBJECTS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.STORES_FASHION_ACCESSORIES_OBJECTS = "STORES_FASHION_ACCESSORIES_OBJECTS".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.STORES_FASHION_ACCESSORIES_OBJECTS]
   @scala.inline
-  def TICKETING: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TICKETING = this.cast("TICKETING")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def TICKETING: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TICKETING = "TICKETING".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TICKETING]
 }
 

@@ -13,7 +13,6 @@ object AnonContextTitle {
   @scala.inline
   def apply(contextTitle: String, openDocumentsInClient: Boolean): AnonContextTitle = {
     val __obj = js.Dynamic.literal(contextTitle = contextTitle.asInstanceOf[js.Any], openDocumentsInClient = openDocumentsInClient.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonContextTitle]
   }
 }

@@ -46,7 +46,6 @@ object GetLogGroupResult {
     tags: StringDictionary[js.Any]
   ): GetLogGroupResult = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], creationTime = creationTime.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kmsKeyId = kmsKeyId.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], retentionInDays = retentionInDays.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetLogGroupResult]
   }
 }

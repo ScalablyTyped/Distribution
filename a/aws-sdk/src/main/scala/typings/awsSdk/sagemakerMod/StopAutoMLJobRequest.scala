@@ -16,7 +16,6 @@ object StopAutoMLJobRequest {
   @scala.inline
   def apply(AutoMLJobName: AutoMLJobName): StopAutoMLJobRequest = {
     val __obj = js.Dynamic.literal(AutoMLJobName = AutoMLJobName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopAutoMLJobRequest]
   }
 }

@@ -13,7 +13,6 @@ object AnonBorderless {
   @scala.inline
   def apply(borderless: Boolean, pressColor: String): AnonBorderless = {
     val __obj = js.Dynamic.literal(borderless = borderless.asInstanceOf[js.Any], pressColor = pressColor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBorderless]
   }
 }

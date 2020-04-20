@@ -128,7 +128,6 @@ object Deque {
     unshift: /* repeated */ Item => Double
   ): Deque[Item] = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), dequeue = js.Any.fromFunction0(dequeue), enqueue = js.Any.fromFunction1(enqueue), get = js.Any.fromFunction1(get), insertBack = js.Any.fromFunction1(insertBack), insertFront = js.Any.fromFunction1(insertFront), isEmpty = js.Any.fromFunction0(isEmpty), length = length.asInstanceOf[js.Any], peekBack = js.Any.fromFunction0(peekBack), peekFront = js.Any.fromFunction0(peekFront), pop = js.Any.fromFunction0(pop), push = js.Any.fromFunction1(push), removeBack = js.Any.fromFunction0(removeBack), removeFront = js.Any.fromFunction0(removeFront), shift = js.Any.fromFunction0(shift), toArray = js.Any.fromFunction0(toArray), toJSON = js.Any.fromFunction0(toJSON), unshift = js.Any.fromFunction1(unshift))
-  
     __obj.asInstanceOf[Deque[Item]]
   }
 }

@@ -18,7 +18,6 @@ object ApisResource {
   @scala.inline
   def apply(getRest: AnonAlt => Request_[RestDescription], list: AnonFields => Request_[DirectoryList]): ApisResource = {
     val __obj = js.Dynamic.literal(getRest = js.Any.fromFunction1(getRest), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[ApisResource]
   }
 }

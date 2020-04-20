@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery-deferred"
-version := "0.3-dt-20200117Z-23e9b3"
+version := "0.3-dt-20200117Z-a51504"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

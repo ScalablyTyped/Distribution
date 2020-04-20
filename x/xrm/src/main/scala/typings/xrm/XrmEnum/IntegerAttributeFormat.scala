@@ -18,10 +18,8 @@ trait IntegerAttributeFormat extends js.Object
 
 object IntegerAttributeFormat {
   @scala.inline
-  def Duration: duration = this.cast("duration")
+  def Duration: duration = "duration".asInstanceOf[duration]
   @scala.inline
-  def None: none = this.cast("none")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def None: none = "none".asInstanceOf[none]
 }
 

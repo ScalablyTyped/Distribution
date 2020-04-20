@@ -23,7 +23,6 @@ object IViewportDatasourceParams {
     setRowData: NumberDictionary[js.Any] => Unit
   ): IViewportDatasourceParams = {
     val __obj = js.Dynamic.literal(getRow = js.Any.fromFunction1(getRow), setRowCount = js.Any.fromFunction1(setRowCount), setRowData = js.Any.fromFunction1(setRowData))
-  
     __obj.asInstanceOf[IViewportDatasourceParams]
   }
 }

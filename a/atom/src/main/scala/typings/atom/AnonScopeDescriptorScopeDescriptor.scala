@@ -15,7 +15,6 @@ object AnonScopeDescriptorScopeDescriptor {
   @scala.inline
   def apply(scopeDescriptor: ScopeDescriptor, value: FileEncoding): AnonScopeDescriptorScopeDescriptor = {
     val __obj = js.Dynamic.literal(scopeDescriptor = scopeDescriptor.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonScopeDescriptorScopeDescriptor]
   }
 }

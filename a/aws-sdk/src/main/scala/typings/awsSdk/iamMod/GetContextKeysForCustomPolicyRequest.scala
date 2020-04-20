@@ -16,7 +16,6 @@ object GetContextKeysForCustomPolicyRequest {
   @scala.inline
   def apply(PolicyInputList: SimulationPolicyListType): GetContextKeysForCustomPolicyRequest = {
     val __obj = js.Dynamic.literal(PolicyInputList = PolicyInputList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetContextKeysForCustomPolicyRequest]
   }
 }

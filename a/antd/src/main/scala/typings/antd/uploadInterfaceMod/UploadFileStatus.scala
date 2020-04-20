@@ -15,16 +15,14 @@ trait UploadFileStatus extends js.Object
 
 object UploadFileStatus {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def done: typings.antd.antdStrings.done = "done".asInstanceOf[typings.antd.antdStrings.done]
   @scala.inline
-  def done: typings.antd.antdStrings.done = this.cast("done")
+  def error: typings.antd.antdStrings.error = "error".asInstanceOf[typings.antd.antdStrings.error]
   @scala.inline
-  def error: typings.antd.antdStrings.error = this.cast("error")
+  def removed: typings.antd.antdStrings.removed = "removed".asInstanceOf[typings.antd.antdStrings.removed]
   @scala.inline
-  def removed: typings.antd.antdStrings.removed = this.cast("removed")
+  def success: typings.antd.antdStrings.success = "success".asInstanceOf[typings.antd.antdStrings.success]
   @scala.inline
-  def success: typings.antd.antdStrings.success = this.cast("success")
-  @scala.inline
-  def uploading: typings.antd.antdStrings.uploading = this.cast("uploading")
+  def uploading: typings.antd.antdStrings.uploading = "uploading".asInstanceOf[typings.antd.antdStrings.uploading]
 }
 

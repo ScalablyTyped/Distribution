@@ -16,12 +16,10 @@ trait XlCalcFor extends js.Object
 
 object XlCalcFor {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlAllValues: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def xlAllValues: `0` = this.cast(0)
+  def xlColGroups: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlColGroups: `2` = this.cast(2)
-  @scala.inline
-  def xlRowGroups: `1` = this.cast(1)
+  def xlRowGroups: `1` = 1.asInstanceOf[`1`]
 }
 

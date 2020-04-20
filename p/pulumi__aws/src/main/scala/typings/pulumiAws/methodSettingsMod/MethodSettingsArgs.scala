@@ -36,7 +36,6 @@ object MethodSettingsArgs {
     stageName: Input[String]
   ): MethodSettingsArgs = {
     val __obj = js.Dynamic.literal(methodPath = methodPath.asInstanceOf[js.Any], restApi = restApi.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any], stageName = stageName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MethodSettingsArgs]
   }
 }

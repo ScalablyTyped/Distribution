@@ -65,58 +65,56 @@ trait TokenFlagLOWER extends js.Object
 
 object TokenFlagLOWER {
   @scala.inline
-  def a: a_ = this.cast("a")
+  def a: a_ = "a".asInstanceOf[a_]
   @scala.inline
-  def b: b_ = this.cast("b")
+  def b: b_ = "b".asInstanceOf[b_]
   @scala.inline
-  def c: c_ = this.cast("c")
+  def c: c_ = "c".asInstanceOf[c_]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def d: d_ = "d".asInstanceOf[d_]
   @scala.inline
-  def d: d_ = this.cast("d")
+  def e: e_ = "e".asInstanceOf[e_]
   @scala.inline
-  def e: e_ = this.cast("e")
+  def f: f_ = "f".asInstanceOf[f_]
   @scala.inline
-  def f: f_ = this.cast("f")
+  def g: g_ = "g".asInstanceOf[g_]
   @scala.inline
-  def g: g_ = this.cast("g")
+  def h: h_ = "h".asInstanceOf[h_]
   @scala.inline
-  def h: h_ = this.cast("h")
+  def i: i_ = "i".asInstanceOf[i_]
   @scala.inline
-  def i: i_ = this.cast("i")
+  def j: j_ = "j".asInstanceOf[j_]
   @scala.inline
-  def j: j_ = this.cast("j")
+  def k: k_ = "k".asInstanceOf[k_]
   @scala.inline
-  def k: k_ = this.cast("k")
+  def l: l_ = "l".asInstanceOf[l_]
   @scala.inline
-  def l: l_ = this.cast("l")
+  def m: m_ = "m".asInstanceOf[m_]
   @scala.inline
-  def m: m_ = this.cast("m")
+  def n: n_ = "n".asInstanceOf[n_]
   @scala.inline
-  def n: n_ = this.cast("n")
+  def o: o_ = "o".asInstanceOf[o_]
   @scala.inline
-  def o: o_ = this.cast("o")
+  def p: p_ = "p".asInstanceOf[p_]
   @scala.inline
-  def p: p_ = this.cast("p")
+  def q: q_ = "q".asInstanceOf[q_]
   @scala.inline
-  def q: q_ = this.cast("q")
+  def r: r_ = "r".asInstanceOf[r_]
   @scala.inline
-  def r: r_ = this.cast("r")
+  def s: s_ = "s".asInstanceOf[s_]
   @scala.inline
-  def s: s_ = this.cast("s")
+  def t: t_ = "t".asInstanceOf[t_]
   @scala.inline
-  def t: t_ = this.cast("t")
+  def u: u_ = "u".asInstanceOf[u_]
   @scala.inline
-  def u: u_ = this.cast("u")
+  def v: v_ = "v".asInstanceOf[v_]
   @scala.inline
-  def v: v_ = this.cast("v")
+  def w: w_ = "w".asInstanceOf[w_]
   @scala.inline
-  def w: w_ = this.cast("w")
+  def x: x_ = "x".asInstanceOf[x_]
   @scala.inline
-  def x: x_ = this.cast("x")
+  def y: y_ = "y".asInstanceOf[y_]
   @scala.inline
-  def y: y_ = this.cast("y")
-  @scala.inline
-  def z: z_ = this.cast("z")
+  def z: z_ = "z".asInstanceOf[z_]
 }
 

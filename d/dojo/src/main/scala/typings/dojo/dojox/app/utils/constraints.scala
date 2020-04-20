@@ -49,7 +49,6 @@ object constraints {
     setSelectedChild: (View, js.Object, View) => Unit
   ): constraints = {
     val __obj = js.Dynamic.literal(getAllSelectedChildren = js.Any.fromFunction2(getAllSelectedChildren), getSelectedChild = js.Any.fromFunction2(getSelectedChild), register = js.Any.fromFunction1(register), setSelectedChild = js.Any.fromFunction3(setSelectedChild))
-  
     __obj.asInstanceOf[constraints]
   }
 }

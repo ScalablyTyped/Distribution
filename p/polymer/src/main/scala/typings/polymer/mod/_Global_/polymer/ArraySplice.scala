@@ -12,7 +12,6 @@ object ArraySplice {
   @scala.inline
   def apply(calculateSplices: (js.Array[js.Any], js.Array[js.Any]) => js.Array[PolymerSplice]): ArraySplice = {
     val __obj = js.Dynamic.literal(calculateSplices = js.Any.fromFunction2(calculateSplices))
-  
     __obj.asInstanceOf[ArraySplice]
   }
 }

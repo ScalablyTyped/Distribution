@@ -21,7 +21,6 @@ object VpcEndpointSubnetAssociationArgs {
   @scala.inline
   def apply(subnetId: Input[String], vpcEndpointId: Input[String]): VpcEndpointSubnetAssociationArgs = {
     val __obj = js.Dynamic.literal(subnetId = subnetId.asInstanceOf[js.Any], vpcEndpointId = vpcEndpointId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VpcEndpointSubnetAssociationArgs]
   }
 }

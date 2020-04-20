@@ -14,7 +14,6 @@ object AnonRequired {
   @scala.inline
   def apply(required: Double, supported: Double, unsupported: Double): AnonRequired = {
     val __obj = js.Dynamic.literal(required = required.asInstanceOf[js.Any], supported = supported.asInstanceOf[js.Any], unsupported = unsupported.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRequired]
   }
 }

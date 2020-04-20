@@ -6,6 +6,7 @@ import typings.bunyan.mod.Stream
 import typings.express.mod.Request_
 import typings.express.mod.Response_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.node.NodeJS.WritableStream
 import typings.std.Error
 import scala.scalajs.js
@@ -37,9 +38,9 @@ object Options {
   def apply(
     excludes: js.Array[String] = null,
     format: String | FormatFunction = null,
-    genReqId: /* req */ Request_[ParamsDictionary] => String = null,
+    genReqId: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => String = null,
     immediate: js.UndefOr[Boolean] = js.undefined,
-    includesFn: (/* req */ Request_[ParamsDictionary], /* res */ Response_[js.Any]) => js.Any = null,
+    includesFn: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => js.Any = null,
     level: LogLevel = null,
     levelFn: (/* status */ Double, /* err */ Error | Null, /* meta */ js.Any) => String = null,
     logger: typings.bunyan.mod.^ = null,

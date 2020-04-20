@@ -14,7 +14,6 @@ object ValidationSection {
   @scala.inline
   def apply(ContentIsValid: Boolean, RenderedContent: String, ValidationErrors: js.Object): ValidationSection = {
     val __obj = js.Dynamic.literal(ContentIsValid = ContentIsValid.asInstanceOf[js.Any], RenderedContent = RenderedContent.asInstanceOf[js.Any], ValidationErrors = ValidationErrors.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ValidationSection]
   }
 }

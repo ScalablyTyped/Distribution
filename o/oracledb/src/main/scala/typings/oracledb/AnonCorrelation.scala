@@ -35,7 +35,6 @@ object AnonCorrelation {
     priority: Double
   ): AnonCorrelation = {
     val __obj = js.Dynamic.literal(correlation = correlation.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], exceptionQueue = exceptionQueue.asInstanceOf[js.Any], expiration = expiration.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCorrelation]
   }
 }

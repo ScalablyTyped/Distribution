@@ -13,7 +13,6 @@ object IMessageDialogFactory {
   @scala.inline
   def apply(create: String => MessageDialog, createWithTitle: (String, String) => MessageDialog): IMessageDialogFactory = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), createWithTitle = js.Any.fromFunction2(createWithTitle))
-  
     __obj.asInstanceOf[IMessageDialogFactory]
   }
 }

@@ -14,7 +14,6 @@ object GlobalInstance {
   @scala.inline
   def apply(addSidebarContentPanel: ContentPanelDescriptor => js.Promise[ContentPanelView]): GlobalInstance = {
     val __obj = js.Dynamic.literal(addSidebarContentPanel = js.Any.fromFunction1(addSidebarContentPanel))
-  
     __obj.asInstanceOf[GlobalInstance]
   }
 }

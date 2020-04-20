@@ -15,16 +15,14 @@ trait uAngle extends js.Object
 
 object uAngle {
   @scala.inline
-  def arcmin: typings.convertUnits.convertUnitsStrings.arcmin = this.cast("arcmin")
+  def arcmin: typings.convertUnits.convertUnitsStrings.arcmin = "arcmin".asInstanceOf[typings.convertUnits.convertUnitsStrings.arcmin]
   @scala.inline
-  def arcsec: typings.convertUnits.convertUnitsStrings.arcsec = this.cast("arcsec")
+  def arcsec: typings.convertUnits.convertUnitsStrings.arcsec = "arcsec".asInstanceOf[typings.convertUnits.convertUnitsStrings.arcsec]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def deg: typings.convertUnits.convertUnitsStrings.deg = "deg".asInstanceOf[typings.convertUnits.convertUnitsStrings.deg]
   @scala.inline
-  def deg: typings.convertUnits.convertUnitsStrings.deg = this.cast("deg")
+  def grad: typings.convertUnits.convertUnitsStrings.grad = "grad".asInstanceOf[typings.convertUnits.convertUnitsStrings.grad]
   @scala.inline
-  def grad: typings.convertUnits.convertUnitsStrings.grad = this.cast("grad")
-  @scala.inline
-  def rad: typings.convertUnits.convertUnitsStrings.rad = this.cast("rad")
+  def rad: typings.convertUnits.convertUnitsStrings.rad = "rad".asInstanceOf[typings.convertUnits.convertUnitsStrings.rad]
 }
 

@@ -16,7 +16,6 @@ object UnassignInstanceRequest {
   @scala.inline
   def apply(InstanceId: String): UnassignInstanceRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnassignInstanceRequest]
   }
 }

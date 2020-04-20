@@ -22,18 +22,16 @@ trait styleVisibility extends js.Object
 
 object styleVisibility {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleVisibilityCollapse: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def styleVisibilityCollapse: `4` = this.cast(4)
+  def styleVisibilityHidden: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def styleVisibilityHidden: `3` = this.cast(3)
+  def styleVisibilityInherit: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleVisibilityInherit: `1` = this.cast(1)
+  def styleVisibilityNotSet: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleVisibilityNotSet: `0` = this.cast(0)
+  def styleVisibilityVisible: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleVisibilityVisible: `2` = this.cast(2)
-  @scala.inline
-  def styleVisibility_Max: `2147483647` = this.cast(2147483647)
+  def styleVisibility_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

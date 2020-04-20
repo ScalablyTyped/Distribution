@@ -14,7 +14,6 @@ object IROOM_VARIABLES_UPDATE {
   @scala.inline
   def apply(changedVars: js.Array[String], room: SFSRoom): IROOM_VARIABLES_UPDATE = {
     val __obj = js.Dynamic.literal(changedVars = changedVars.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IROOM_VARIABLES_UPDATE]
   }
 }

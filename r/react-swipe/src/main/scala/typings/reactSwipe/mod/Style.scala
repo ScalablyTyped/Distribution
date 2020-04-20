@@ -15,7 +15,6 @@ object Style {
   @scala.inline
   def apply(child: CSSProperties, container: CSSProperties, wrapper: CSSProperties): Style = {
     val __obj = js.Dynamic.literal(child = child.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], wrapper = wrapper.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Style]
   }
 }

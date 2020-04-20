@@ -13,7 +13,6 @@ object GetLaunchTemplateCreditSpecification {
   @scala.inline
   def apply(cpuCredits: String): GetLaunchTemplateCreditSpecification = {
     val __obj = js.Dynamic.literal(cpuCredits = cpuCredits.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetLaunchTemplateCreditSpecification]
   }
 }

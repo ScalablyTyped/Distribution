@@ -15,7 +15,6 @@ object GitPullRequestMergeOptions {
   @scala.inline
   def apply(disableRenames: Boolean): GitPullRequestMergeOptions = {
     val __obj = js.Dynamic.literal(disableRenames = disableRenames.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GitPullRequestMergeOptions]
   }
 }

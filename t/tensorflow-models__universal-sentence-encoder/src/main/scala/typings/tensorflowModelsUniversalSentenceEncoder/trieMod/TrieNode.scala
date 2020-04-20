@@ -16,7 +16,6 @@ object TrieNode {
   @scala.inline
   def apply(children: StringDictionary[TrieNode], end: Boolean, parent: TrieNode, word: OutputNode): TrieNode = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], word = word.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TrieNode]
   }
 }

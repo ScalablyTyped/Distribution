@@ -25,7 +25,6 @@ object GetVpcCidrBlockAssociation {
   @scala.inline
   def apply(associationId: String, cidrBlock: String, state: String): GetVpcCidrBlockAssociation = {
     val __obj = js.Dynamic.literal(associationId = associationId.asInstanceOf[js.Any], cidrBlock = cidrBlock.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetVpcCidrBlockAssociation]
   }
 }

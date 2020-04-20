@@ -15,11 +15,11 @@ trait windowToolbarParam extends js.Object {
   /**
   	 * Background color for the toolbar, as a color name or hex triplet.
   	 */
-  var barColor: js.UndefOr[String] = js.undefined
+  var barColor: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * The tintColor to apply to the tool bar.
   	 */
-  var tintColor: js.UndefOr[String] = js.undefined
+  var tintColor: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Defines if the toolbar is translucent.
   	 */
@@ -30,8 +30,8 @@ object windowToolbarParam {
   @scala.inline
   def apply(
     animated: js.UndefOr[Boolean] = js.undefined,
-    barColor: String = null,
-    tintColor: String = null,
+    barColor: java.lang.String = null,
+    tintColor: java.lang.String = null,
     translucent: js.UndefOr[Boolean] = js.undefined
   ): windowToolbarParam = {
     val __obj = js.Dynamic.literal()

@@ -11,6 +11,11 @@ import scala.scalajs.js.annotation._
 	 */
 @JSGlobal("Titanium.Module")
 @js.native
+class Module () extends Proxy
+
+/* static members */
+@JSGlobal("Titanium.Module")
+@js.native
 object Module extends js.Object {
   /**
   		 * The name of the API that this proxy corresponds to.
@@ -27,7 +32,7 @@ object Module extends js.Object {
   /**
   		 * Adds the specified callback as an event listener for the named event.
   		 */
-  def addEventListener(name: String, callback: js.Function1[/* param0 */ js.Any, _]): Unit = js.native
+  def addEventListener(name: String, callback: js.Function1[/* param0 */ Event, Unit]): Unit = js.native
   /**
   		 * Applies the properties to the proxy.
   		 */
@@ -35,33 +40,36 @@ object Module extends js.Object {
   /**
   		 * Fires a synthesized event to any registered listeners.
   		 */
+  def fireEvent(name: String): Unit = js.native
   def fireEvent(name: String, event: js.Any): Unit = js.native
   /**
   		 * Gets the value of the <Titanium.Module.apiName> property.
+  		 * @deprecated Access <Titanium.Module.apiName> instead.
   		 */
   def getApiName(): String = js.native
   /**
   		 * Gets the value of the <Titanium.Module.bubbleParent> property.
+  		 * @deprecated Access <Titanium.Module.bubbleParent> instead.
   		 */
   def getBubbleParent(): Boolean = js.native
   /**
   		 * Gets the value of the <Titanium.Module.lifecycleContainer> property.
+  		 * @deprecated Access <Titanium.Module.lifecycleContainer> instead.
   		 */
   def getLifecycleContainer(): Window | TabGroup = js.native
   /**
   		 * Removes the specified callback as an event listener for the named event.
   		 */
-  def removeEventListener(name: String, callback: js.Function1[/* param0 */ js.Any, _]): Unit = js.native
+  def removeEventListener(name: String, callback: js.Function1[/* param0 */ Event, Unit]): Unit = js.native
   /**
   		 * Sets the value of the <Titanium.Module.bubbleParent> property.
+  		 * @deprecated Set the value using <Titanium.Module.bubbleParent> instead.
   		 */
   def setBubbleParent(bubbleParent: Boolean): Unit = js.native
-  /**
-  		 * Sets the value of the <Titanium.Module.lifecycleContainer> property.
-  		 */
   def setLifecycleContainer(lifecycleContainer: TabGroup): Unit = js.native
   /**
   		 * Sets the value of the <Titanium.Module.lifecycleContainer> property.
+  		 * @deprecated Set the value using <Titanium.Module.lifecycleContainer> instead.
   		 */
   def setLifecycleContainer(lifecycleContainer: Window): Unit = js.native
 }

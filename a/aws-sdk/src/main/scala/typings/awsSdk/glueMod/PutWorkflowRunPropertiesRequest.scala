@@ -24,7 +24,6 @@ object PutWorkflowRunPropertiesRequest {
   @scala.inline
   def apply(Name: NameString, RunId: IdString, RunProperties: WorkflowRunProperties): PutWorkflowRunPropertiesRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], RunId = RunId.asInstanceOf[js.Any], RunProperties = RunProperties.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutWorkflowRunPropertiesRequest]
   }
 }

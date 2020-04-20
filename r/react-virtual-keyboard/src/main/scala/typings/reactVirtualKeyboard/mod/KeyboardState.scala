@@ -13,7 +13,6 @@ object KeyboardState {
   @scala.inline
   def apply(className: String, value: String): KeyboardState = {
     val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KeyboardState]
   }
 }

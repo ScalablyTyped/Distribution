@@ -12,10 +12,8 @@ trait BootstrapVersion extends js.Object
 
 object BootstrapVersion {
   @scala.inline
-  def `3`: typings.reactBootstrapTable.reactBootstrapTableStrings.`3` = this.cast("3")
+  def `3`: typings.reactBootstrapTable.reactBootstrapTableStrings.`3` = "3".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.`3`]
   @scala.inline
-  def `4`: typings.reactBootstrapTable.reactBootstrapTableStrings.`4` = this.cast("4")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `4`: typings.reactBootstrapTable.reactBootstrapTableStrings.`4` = "4".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.`4`]
 }
 

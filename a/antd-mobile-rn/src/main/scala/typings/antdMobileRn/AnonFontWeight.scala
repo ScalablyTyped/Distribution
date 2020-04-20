@@ -24,7 +24,6 @@ object AnonFontWeight {
     marginTop: Double
   ): AnonFontWeight = {
     val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontWeight = fontWeight.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], marginTop = marginTop.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFontWeight]
   }
 }

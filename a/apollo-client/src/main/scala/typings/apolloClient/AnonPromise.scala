@@ -14,7 +14,6 @@ object AnonPromise {
   @scala.inline
   def apply(promise: js.Promise[js.Array[_]], subscription: Subscription): AnonPromise = {
     val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPromise]
   }
 }

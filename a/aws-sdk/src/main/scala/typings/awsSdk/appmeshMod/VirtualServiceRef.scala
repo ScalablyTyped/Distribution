@@ -40,7 +40,6 @@ object VirtualServiceRef {
     virtualServiceName: ServiceName
   ): VirtualServiceRef = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], meshName = meshName.asInstanceOf[js.Any], meshOwner = meshOwner.asInstanceOf[js.Any], resourceOwner = resourceOwner.asInstanceOf[js.Any], virtualServiceName = virtualServiceName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VirtualServiceRef]
   }
 }

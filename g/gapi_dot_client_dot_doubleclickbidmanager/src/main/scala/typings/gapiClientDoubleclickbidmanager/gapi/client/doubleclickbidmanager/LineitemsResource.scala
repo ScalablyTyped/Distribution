@@ -20,7 +20,6 @@ object LineitemsResource {
     uploadlineitems: AnonAlt => Request_[UploadLineItemsResponse]
   ): LineitemsResource = {
     val __obj = js.Dynamic.literal(downloadlineitems = js.Any.fromFunction1(downloadlineitems), uploadlineitems = js.Any.fromFunction1(uploadlineitems))
-  
     __obj.asInstanceOf[LineitemsResource]
   }
 }

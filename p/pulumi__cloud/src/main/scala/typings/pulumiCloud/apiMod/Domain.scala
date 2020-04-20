@@ -33,7 +33,6 @@ object Domain {
     domainName: String
   ): Domain = {
     val __obj = js.Dynamic.literal(certificateBody = certificateBody.asInstanceOf[js.Any], certificateChain = certificateChain.asInstanceOf[js.Any], certificatePrivateKey = certificatePrivateKey.asInstanceOf[js.Any], domainName = domainName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Domain]
   }
 }

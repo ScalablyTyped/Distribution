@@ -16,7 +16,6 @@ object AccessPointVpcConfiguration {
   @scala.inline
   def apply(vpcId: String): AccessPointVpcConfiguration = {
     val __obj = js.Dynamic.literal(vpcId = vpcId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AccessPointVpcConfiguration]
   }
 }

@@ -24,7 +24,6 @@ object S3Source {
   @scala.inline
   def apply(bucketName: BucketName, key: Key_, version: Version): S3Source = {
     val __obj = js.Dynamic.literal(bucketName = bucketName.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[S3Source]
   }
 }

@@ -16,7 +16,6 @@ object SetSecurityTokenServicePreferencesRequest {
   @scala.inline
   def apply(GlobalEndpointTokenVersion: globalEndpointTokenVersion): SetSecurityTokenServicePreferencesRequest = {
     val __obj = js.Dynamic.literal(GlobalEndpointTokenVersion = GlobalEndpointTokenVersion.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetSecurityTokenServicePreferencesRequest]
   }
 }

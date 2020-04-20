@@ -14,7 +14,6 @@ object AnonInUndoRedoNewXMLNode {
   @scala.inline
   def apply(InUndoRedo: Boolean, NewXMLNode: XMLNode): AnonInUndoRedoNewXMLNode = {
     val __obj = js.Dynamic.literal(InUndoRedo = InUndoRedo.asInstanceOf[js.Any], NewXMLNode = NewXMLNode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonInUndoRedoNewXMLNode]
   }
 }

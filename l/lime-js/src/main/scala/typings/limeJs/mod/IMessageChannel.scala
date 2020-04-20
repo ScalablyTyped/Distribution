@@ -13,7 +13,6 @@ object IMessageChannel {
   @scala.inline
   def apply(onMessage: Message => js.Any, sendMessage: Message => Unit): IMessageChannel = {
     val __obj = js.Dynamic.literal(onMessage = js.Any.fromFunction1(onMessage), sendMessage = js.Any.fromFunction1(sendMessage))
-  
     __obj.asInstanceOf[IMessageChannel]
   }
 }

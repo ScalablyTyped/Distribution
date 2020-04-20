@@ -12,7 +12,6 @@ object RenderOption {
   @scala.inline
   def apply(driver: js.Any): RenderOption = {
     val __obj = js.Dynamic.literal(driver = driver.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RenderOption]
   }
 }

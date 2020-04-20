@@ -17,7 +17,6 @@ object AnonGetAllZoomLevelsForPage {
     getBestZoomLevelForPage: Double | SourceProvider
   ): AnonGetAllZoomLevelsForPage = {
     val __obj = js.Dynamic.literal(getAllZoomLevelsForPage = getAllZoomLevelsForPage.asInstanceOf[js.Any], getBestZoomLevelForPage = getBestZoomLevelForPage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGetAllZoomLevelsForPage]
   }
 }

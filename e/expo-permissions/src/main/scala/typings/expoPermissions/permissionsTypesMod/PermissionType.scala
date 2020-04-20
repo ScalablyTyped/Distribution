@@ -20,26 +20,24 @@ trait PermissionType extends js.Object
 
 object PermissionType {
   @scala.inline
-  def audioRecording: typings.expoPermissions.expoPermissionsStrings.audioRecording = this.cast("audioRecording")
+  def audioRecording: typings.expoPermissions.expoPermissionsStrings.audioRecording = "audioRecording".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.audioRecording]
   @scala.inline
-  def calendar: typings.expoPermissions.expoPermissionsStrings.calendar = this.cast("calendar")
+  def calendar: typings.expoPermissions.expoPermissionsStrings.calendar = "calendar".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.calendar]
   @scala.inline
-  def camera: typings.expoPermissions.expoPermissionsStrings.camera = this.cast("camera")
+  def camera: typings.expoPermissions.expoPermissionsStrings.camera = "camera".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.camera]
   @scala.inline
-  def cameraRoll: typings.expoPermissions.expoPermissionsStrings.cameraRoll = this.cast("cameraRoll")
+  def cameraRoll: typings.expoPermissions.expoPermissionsStrings.cameraRoll = "cameraRoll".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.cameraRoll]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def contacts: typings.expoPermissions.expoPermissionsStrings.contacts = "contacts".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.contacts]
   @scala.inline
-  def contacts: typings.expoPermissions.expoPermissionsStrings.contacts = this.cast("contacts")
+  def location: typings.expoPermissions.expoPermissionsStrings.location = "location".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.location]
   @scala.inline
-  def location: typings.expoPermissions.expoPermissionsStrings.location = this.cast("location")
+  def notifications: typings.expoPermissions.expoPermissionsStrings.notifications = "notifications".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.notifications]
   @scala.inline
-  def notifications: typings.expoPermissions.expoPermissionsStrings.notifications = this.cast("notifications")
+  def reminders: typings.expoPermissions.expoPermissionsStrings.reminders = "reminders".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.reminders]
   @scala.inline
-  def reminders: typings.expoPermissions.expoPermissionsStrings.reminders = this.cast("reminders")
+  def systemBrightness: typings.expoPermissions.expoPermissionsStrings.systemBrightness = "systemBrightness".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.systemBrightness]
   @scala.inline
-  def systemBrightness: typings.expoPermissions.expoPermissionsStrings.systemBrightness = this.cast("systemBrightness")
-  @scala.inline
-  def userFacingNotifications: typings.expoPermissions.expoPermissionsStrings.userFacingNotifications = this.cast("userFacingNotifications")
+  def userFacingNotifications: typings.expoPermissions.expoPermissionsStrings.userFacingNotifications = "userFacingNotifications".asInstanceOf[typings.expoPermissions.expoPermissionsStrings.userFacingNotifications]
 }
 

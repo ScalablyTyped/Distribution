@@ -12,7 +12,6 @@ object LikedFeedResponseUsertags {
   @scala.inline
   def apply(in: js.Array[LikedFeedResponseInItem]): LikedFeedResponseUsertags = {
     val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LikedFeedResponseUsertags]
   }
 }

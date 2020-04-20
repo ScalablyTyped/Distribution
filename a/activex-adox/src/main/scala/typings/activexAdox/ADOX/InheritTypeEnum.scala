@@ -20,16 +20,14 @@ trait InheritTypeEnum extends js.Object
 
 object InheritTypeEnum {
   @scala.inline
-  def adInheritBoth: `3` = this.cast(3)
+  def adInheritBoth: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def adInheritContainers: `2` = this.cast(2)
+  def adInheritContainers: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def adInheritNoPropogate: `4` = this.cast(4)
+  def adInheritNoPropogate: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def adInheritNone: `0` = this.cast(0)
+  def adInheritNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def adInheritObjects: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def adInheritObjects: `1` = 1.asInstanceOf[`1`]
 }
 

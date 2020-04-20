@@ -24,7 +24,6 @@ object AnonDay {
     quarter: /* repeated */ js.Any => js.Any
   ): AnonDay = {
     val __obj = js.Dynamic.literal(day = js.Any.fromFunction1(day), dayPeriod = js.Any.fromFunction1(dayPeriod), era = js.Any.fromFunction1(era), month = js.Any.fromFunction1(month), ordinalNumber = js.Any.fromFunction1(ordinalNumber), quarter = js.Any.fromFunction1(quarter))
-  
     __obj.asInstanceOf[AnonDay]
   }
 }

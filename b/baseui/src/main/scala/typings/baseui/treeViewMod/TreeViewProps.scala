@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TreeViewProps extends js.Object {
-  var data: js.Array[TreeNode]
-  var getId: js.UndefOr[js.Function1[/* node */ TreeNode, Double | String]] = js.undefined
+  var data: js.Array[TreeNode[_]]
+  var getId: js.UndefOr[js.Function1[/* node */ TreeNode[_], Double | String]] = js.undefined
   var indentGuides: js.UndefOr[Boolean] = js.undefined
-  var onToggle: js.UndefOr[js.Function1[/* node */ TreeNode, Unit]] = js.undefined
+  var onToggle: js.UndefOr[js.Function1[/* node */ TreeNode[_], Unit]] = js.undefined
   var overrides: js.UndefOr[TreeViewOverrides] = js.undefined
   var renderAll: js.UndefOr[Boolean] = js.undefined
   var singleExpanded: js.UndefOr[Boolean] = js.undefined
@@ -17,10 +17,10 @@ trait TreeViewProps extends js.Object {
 object TreeViewProps {
   @scala.inline
   def apply(
-    data: js.Array[TreeNode],
-    getId: /* node */ TreeNode => Double | String = null,
+    data: js.Array[TreeNode[_]],
+    getId: /* node */ TreeNode[_] => Double | String = null,
     indentGuides: js.UndefOr[Boolean] = js.undefined,
-    onToggle: /* node */ TreeNode => Unit = null,
+    onToggle: /* node */ TreeNode[_] => Unit = null,
     overrides: TreeViewOverrides = null,
     renderAll: js.UndefOr[Boolean] = js.undefined,
     singleExpanded: js.UndefOr[Boolean] = js.undefined

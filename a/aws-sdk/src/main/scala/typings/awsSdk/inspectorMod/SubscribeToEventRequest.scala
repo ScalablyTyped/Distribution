@@ -24,7 +24,6 @@ object SubscribeToEventRequest {
   @scala.inline
   def apply(event: InspectorEvent, resourceArn: Arn, topicArn: Arn): SubscribeToEventRequest = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], resourceArn = resourceArn.asInstanceOf[js.Any], topicArn = topicArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SubscribeToEventRequest]
   }
 }

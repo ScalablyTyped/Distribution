@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "relay-compiler"
-version := "8.0-dt-20200225Z-94849a"
+version := "8.0-dt-20200225Z-45d6e4"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "graphql" % "14.6.0-f78e99",
-  "org.scalablytyped" %%% "relay-runtime" % "8.0-dt-20200407Z-aad1ab",
-  "org.scalablytyped" %%% "std" % "3.8-a0108c")
+  "org.scalablytyped" %%% "graphql" % "14.6.0-d18599",
+  "org.scalablytyped" %%% "relay-runtime" % "8.0-dt-20200407Z-ca065b",
+  "org.scalablytyped" %%% "std" % "3.8-9b2470")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

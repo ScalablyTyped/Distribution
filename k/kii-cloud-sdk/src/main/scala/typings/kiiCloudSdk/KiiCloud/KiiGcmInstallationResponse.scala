@@ -12,7 +12,6 @@ object KiiGcmInstallationResponse {
   @scala.inline
   def apply(installationID: String): KiiGcmInstallationResponse = {
     val __obj = js.Dynamic.literal(installationID = installationID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KiiGcmInstallationResponse]
   }
 }

@@ -29,7 +29,6 @@ object NodeDeletedEventArgs {
   @scala.inline
   def apply(isUndoRedo: Boolean, oldNextSibling: CustomXmlNode, oldNode: CustomXmlNode): NodeDeletedEventArgs = {
     val __obj = js.Dynamic.literal(isUndoRedo = isUndoRedo.asInstanceOf[js.Any], oldNextSibling = oldNextSibling.asInstanceOf[js.Any], oldNode = oldNode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NodeDeletedEventArgs]
   }
 }

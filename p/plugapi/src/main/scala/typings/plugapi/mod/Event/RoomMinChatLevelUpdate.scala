@@ -15,7 +15,6 @@ object RoomMinChatLevelUpdate {
   @scala.inline
   def apply(id: Double, level: Double, user: User): RoomMinChatLevelUpdate = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RoomMinChatLevelUpdate]
   }
 }

@@ -14,14 +14,12 @@ trait GridDirection extends js.Object
 
 object GridDirection {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def column: typings.materialUiCore.materialUiCoreStrings.column = "column".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.column]
   @scala.inline
-  def column: typings.materialUiCore.materialUiCoreStrings.column = this.cast("column")
+  def `column-reverse`: typings.materialUiCore.materialUiCoreStrings.`column-reverse` = "column-reverse".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`column-reverse`]
   @scala.inline
-  def `column-reverse`: typings.materialUiCore.materialUiCoreStrings.`column-reverse` = this.cast("column-reverse")
+  def row: typings.materialUiCore.materialUiCoreStrings.row = "row".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.row]
   @scala.inline
-  def row: typings.materialUiCore.materialUiCoreStrings.row = this.cast("row")
-  @scala.inline
-  def `row-reverse`: typings.materialUiCore.materialUiCoreStrings.`row-reverse` = this.cast("row-reverse")
+  def `row-reverse`: typings.materialUiCore.materialUiCoreStrings.`row-reverse` = "row-reverse".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`row-reverse`]
 }
 

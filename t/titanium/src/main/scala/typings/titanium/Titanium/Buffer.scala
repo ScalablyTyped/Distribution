@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation._
 /**
 	 * Buffer is a mutable, resizable container for raw data.
 	 */
+@JSGlobal("Titanium.Buffer")
 @js.native
-trait Buffer extends Proxy {
+class Buffer () extends Proxy {
   /**
   		 * Byte order of this buffer.
   		 */
@@ -51,18 +52,22 @@ trait Buffer extends Proxy {
   def fill(fillByte: Double, offset: Double, length: Double): Unit = js.native
   /**
   		 * Gets the value of the <Titanium.Buffer.byteOrder> property.
+  		 * @deprecated Access <Titanium.Buffer.byteOrder> instead.
   		 */
   def getByteOrder(): Double = js.native
   /**
   		 * Gets the value of the <Titanium.Buffer.length> property.
+  		 * @deprecated Access <Titanium.Buffer.length> instead.
   		 */
   def getLength(): Double = js.native
   /**
   		 * Gets the value of the <Titanium.Buffer.type> property.
+  		 * @deprecated Access <Titanium.Buffer.type> instead.
   		 */
   def getType(): String = js.native
   /**
   		 * Gets the value of the <Titanium.Buffer.value> property.
+  		 * @deprecated Access <Titanium.Buffer.value> instead.
   		 */
   def getValue(): Double | String = js.native
   /**
@@ -77,22 +82,23 @@ trait Buffer extends Proxy {
   def release(): Unit = js.native
   /**
   		 * Sets the value of the <Titanium.Buffer.byteOrder> property.
+  		 * @deprecated Set the value using <Titanium.Buffer.byteOrder> instead.
   		 */
   def setByteOrder(byteOrder: Double): Unit = js.native
   /**
   		 * Sets the value of the <Titanium.Buffer.length> property.
+  		 * @deprecated Set the value using <Titanium.Buffer.length> instead.
   		 */
   def setLength(length: Double): Unit = js.native
   /**
   		 * Sets the value of the <Titanium.Buffer.type> property.
+  		 * @deprecated Set the value using <Titanium.Buffer.type> instead.
   		 */
   def setType(`type`: String): Unit = js.native
-  /**
-  		 * Sets the value of the <Titanium.Buffer.value> property.
-  		 */
   def setValue(value: String): Unit = js.native
   /**
   		 * Sets the value of the <Titanium.Buffer.value> property.
+  		 * @deprecated Set the value using <Titanium.Buffer.value> instead.
   		 */
   def setValue(value: Double): Unit = js.native
   /**

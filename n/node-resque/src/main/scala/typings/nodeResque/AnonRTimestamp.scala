@@ -14,7 +14,6 @@ object AnonRTimestamp {
   @scala.inline
   def apply(rTimestamp: Double, tasks: js.Array[Job[_]]): AnonRTimestamp = {
     val __obj = js.Dynamic.literal(rTimestamp = rTimestamp.asInstanceOf[js.Any], tasks = tasks.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRTimestamp]
   }
 }

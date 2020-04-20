@@ -48,16 +48,16 @@ class CodeCell_ protected () extends Cell {
   /**
     * Get the output area for the cell.
     */
-  def outputArea(): OutputArea = js.native
+  def outputArea: OutputArea = js.native
   /**
     * The view state of output being collapsed.
     */
-  def outputHidden(): Boolean = js.native
+  def outputHidden: Boolean = js.native
   def outputHidden(value: Boolean): js.Any = js.native
   /**
     * Whether the output is in a scrolled state?
     */
-  def outputsScrolled(): Boolean = js.native
+  def outputsScrolled: Boolean = js.native
   def outputsScrolled(value: Boolean): js.Any = js.native
   /**
     * Save view collapse state to model
@@ -66,7 +66,7 @@ class CodeCell_ protected () extends Cell {
   /**
     * Whether to sync the scrolled state to the cell model.
     */
-  def syncScrolled(): Boolean = js.native
+  def syncScrolled: Boolean = js.native
   def syncScrolled(value: Boolean): js.Any = js.native
 }
 

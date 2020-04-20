@@ -13,7 +13,8 @@ class default protected () extends Triangulation {
     targetProj: typings.ol.projectionMod.default,
     targetExtent: Extent,
     maxSourceExtent: Extent,
-    errorThreshold: Double
+    errorThreshold: Double,
+    opt_destinationResolution: Double
   ) = this()
   /* CompleteClass */
   override def calculateSourceExtent(): Extent = js.native

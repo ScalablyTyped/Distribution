@@ -12,7 +12,6 @@ object AnonOnSelect {
   @scala.inline
   def apply(onSelect: () => Unit): AnonOnSelect = {
     val __obj = js.Dynamic.literal(onSelect = js.Any.fromFunction0(onSelect))
-  
     __obj.asInstanceOf[AnonOnSelect]
   }
 }

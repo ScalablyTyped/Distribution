@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactMicComponents extends reactMicProps {
   @scala.inline
-  def ReactMic: ComponentType[ReactMicProps] = js.constructorOf[typings.reactMic.mod.ReactMic].asInstanceOf[typings.react.mod.ComponentType[ReactMicProps]]
+  def ReactMic: ComponentType[ReactMicProps] = js.constructorOf[typings.reactMic.mod.ReactMic].asInstanceOf[ComponentType[ReactMicProps]]
 }
 

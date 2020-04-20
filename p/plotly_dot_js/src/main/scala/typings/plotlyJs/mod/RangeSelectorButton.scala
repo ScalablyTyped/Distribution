@@ -29,7 +29,6 @@ object RangeSelectorButton {
     stepmode: backward | todate
   ): RangeSelectorButton = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any], stepmode = stepmode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RangeSelectorButton]
   }
 }

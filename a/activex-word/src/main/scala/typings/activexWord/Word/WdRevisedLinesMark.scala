@@ -18,14 +18,12 @@ trait WdRevisedLinesMark extends js.Object
 
 object WdRevisedLinesMark {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdRevisedLinesMarkLeftBorder: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdRevisedLinesMarkLeftBorder: `1` = this.cast(1)
+  def wdRevisedLinesMarkNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdRevisedLinesMarkNone: `0` = this.cast(0)
+  def wdRevisedLinesMarkOutsideBorder: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdRevisedLinesMarkOutsideBorder: `3` = this.cast(3)
-  @scala.inline
-  def wdRevisedLinesMarkRightBorder: `2` = this.cast(2)
+  def wdRevisedLinesMarkRightBorder: `2` = 2.asInstanceOf[`2`]
 }
 

@@ -18,7 +18,6 @@ object AnonRemove {
     store: (String, js.Function2[/* err */ Error, /* res */ File, Unit]) => Unit
   ): AnonRemove = {
     val __obj = js.Dynamic.literal(remove = js.Any.fromFunction2(remove), store = js.Any.fromFunction2(store))
-  
     __obj.asInstanceOf[AnonRemove]
   }
 }

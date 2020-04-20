@@ -20,7 +20,6 @@ object TerminateInstanceInAutoScalingGroupType {
   @scala.inline
   def apply(InstanceId: XmlStringMaxLen19, ShouldDecrementDesiredCapacity: ShouldDecrementDesiredCapacity): TerminateInstanceInAutoScalingGroupType = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any], ShouldDecrementDesiredCapacity = ShouldDecrementDesiredCapacity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TerminateInstanceInAutoScalingGroupType]
   }
 }

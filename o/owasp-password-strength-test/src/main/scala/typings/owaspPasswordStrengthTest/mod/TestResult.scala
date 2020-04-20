@@ -40,7 +40,6 @@ object TestResult {
     strong: Boolean
   ): TestResult = {
     val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], failedTests = failedTests.asInstanceOf[js.Any], isPassphrase = isPassphrase.asInstanceOf[js.Any], optionalTestErrors = optionalTestErrors.asInstanceOf[js.Any], optionalTestsPassed = optionalTestsPassed.asInstanceOf[js.Any], passedTests = passedTests.asInstanceOf[js.Any], requiredTestErrors = requiredTestErrors.asInstanceOf[js.Any], strong = strong.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TestResult]
   }
 }

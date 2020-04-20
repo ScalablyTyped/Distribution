@@ -13,7 +13,6 @@ object RowState {
   @scala.inline
   def apply(screens: ScreenMap): RowState = {
     val __obj = js.Dynamic.literal(screens = screens.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RowState]
   }
 }

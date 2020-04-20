@@ -20,7 +20,6 @@ object CloudwatchLogsAction {
   @scala.inline
   def apply(logGroupName: LogGroupName, roleArn: AwsArn): CloudwatchLogsAction = {
     val __obj = js.Dynamic.literal(logGroupName = logGroupName.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CloudwatchLogsAction]
   }
 }

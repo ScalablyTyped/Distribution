@@ -26,7 +26,6 @@ object ComplexityOptions {
     upperCase: Double
   ): ComplexityOptions = {
     val __obj = js.Dynamic.literal(lowerCase = lowerCase.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], numeric = numeric.asInstanceOf[js.Any], requirementCount = requirementCount.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], upperCase = upperCase.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ComplexityOptions]
   }
 }

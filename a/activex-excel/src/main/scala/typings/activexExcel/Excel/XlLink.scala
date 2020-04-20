@@ -18,14 +18,12 @@ trait XlLink extends js.Object
 
 object XlLink {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlExcelLinks: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlExcelLinks: `1` = this.cast(1)
+  def xlOLELinks: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlOLELinks: `2` = this.cast(2)
+  def xlPublishers: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xlPublishers: `5` = this.cast(5)
-  @scala.inline
-  def xlSubscribers: `6` = this.cast(6)
+  def xlSubscribers: `6` = 6.asInstanceOf[`6`]
 }
 

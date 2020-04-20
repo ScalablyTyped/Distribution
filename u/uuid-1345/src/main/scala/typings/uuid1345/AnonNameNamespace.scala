@@ -16,7 +16,6 @@ object AnonNameNamespace {
   @scala.inline
   def apply(encoding: `object`, name: String, namespace: UuidTypes): AnonNameNamespace = {
     val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNameNamespace]
   }
 }

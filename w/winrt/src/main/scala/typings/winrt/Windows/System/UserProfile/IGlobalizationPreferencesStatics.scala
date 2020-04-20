@@ -26,7 +26,6 @@ object IGlobalizationPreferencesStatics {
     weekStartsOn: DayOfWeek
   ): IGlobalizationPreferencesStatics = {
     val __obj = js.Dynamic.literal(calendars = calendars.asInstanceOf[js.Any], clocks = clocks.asInstanceOf[js.Any], currencies = currencies.asInstanceOf[js.Any], homeGeographicRegion = homeGeographicRegion.asInstanceOf[js.Any], languages = languages.asInstanceOf[js.Any], weekStartsOn = weekStartsOn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IGlobalizationPreferencesStatics]
   }
 }

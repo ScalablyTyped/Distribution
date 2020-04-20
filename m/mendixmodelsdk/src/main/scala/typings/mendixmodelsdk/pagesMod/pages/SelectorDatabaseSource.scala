@@ -26,11 +26,11 @@ class SelectorDatabaseSource protected () extends SelectorSource {
   ) = this()
   @JSName("model")
   var model_FSelectorDatabaseSource: IModel = js.native
-  def databaseConstraints(): IList[DatabaseConstraint] = js.native
+  def databaseConstraints: IList[DatabaseConstraint] = js.native
   /**
     * In version 6.2.0: introduced
     */
-  def sortBar(): GridSortBar = js.native
+  def sortBar: GridSortBar = js.native
   def sortBar(newValue: GridSortBar): js.Any = js.native
 }
 

@@ -15,7 +15,6 @@ object Permission {
   @scala.inline
   def apply(id: String, permissionMode: PermissionMode, resource: String): Permission = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], permissionMode = permissionMode.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Permission]
   }
 }

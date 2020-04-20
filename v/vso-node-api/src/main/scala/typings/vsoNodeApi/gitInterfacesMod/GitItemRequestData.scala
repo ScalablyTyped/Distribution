@@ -32,7 +32,6 @@ object GitItemRequestData {
     latestProcessedChange: Boolean
   ): GitItemRequestData = {
     val __obj = js.Dynamic.literal(includeContentMetadata = includeContentMetadata.asInstanceOf[js.Any], includeLinks = includeLinks.asInstanceOf[js.Any], itemDescriptors = itemDescriptors.asInstanceOf[js.Any], latestProcessedChange = latestProcessedChange.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GitItemRequestData]
   }
 }

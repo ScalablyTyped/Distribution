@@ -83,152 +83,150 @@ trait SchedulerEventName extends js.Object
 
 object SchedulerEventName {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def onAfterEventDisplay: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onAfterEventDisplay = "onAfterEventDisplay".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onAfterEventDisplay]
   @scala.inline
-  def onAfterEventDisplay: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onAfterEventDisplay = this.cast("onAfterEventDisplay")
+  def onAfterFolderToggle: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onAfterFolderToggle = "onAfterFolderToggle".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onAfterFolderToggle]
   @scala.inline
-  def onAfterFolderToggle: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onAfterFolderToggle = this.cast("onAfterFolderToggle")
+  def onAfterLightbox: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onAfterLightbox = "onAfterLightbox".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onAfterLightbox]
   @scala.inline
-  def onAfterLightbox: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onAfterLightbox = this.cast("onAfterLightbox")
+  def onAfterSchedulerResize: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onAfterSchedulerResize = "onAfterSchedulerResize".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onAfterSchedulerResize]
   @scala.inline
-  def onAfterSchedulerResize: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onAfterSchedulerResize = this.cast("onAfterSchedulerResize")
+  def onBeforeCollapse: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeCollapse = "onBeforeCollapse".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeCollapse]
   @scala.inline
-  def onBeforeCollapse: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeCollapse = this.cast("onBeforeCollapse")
+  def onBeforeDrag: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeDrag = "onBeforeDrag".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeDrag]
   @scala.inline
-  def onBeforeDrag: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeDrag = this.cast("onBeforeDrag")
+  def onBeforeEventChanged: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventChanged = "onBeforeEventChanged".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventChanged]
   @scala.inline
-  def onBeforeEventChanged: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventChanged = this.cast("onBeforeEventChanged")
+  def onBeforeEventCreated: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventCreated = "onBeforeEventCreated".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventCreated]
   @scala.inline
-  def onBeforeEventCreated: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventCreated = this.cast("onBeforeEventCreated")
+  def onBeforeEventDelete: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventDelete = "onBeforeEventDelete".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventDelete]
   @scala.inline
-  def onBeforeEventDelete: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventDelete = this.cast("onBeforeEventDelete")
+  def onBeforeEventDisplay: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventDisplay = "onBeforeEventDisplay".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventDisplay]
   @scala.inline
-  def onBeforeEventDisplay: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventDisplay = this.cast("onBeforeEventDisplay")
+  def onBeforeEventDragIn: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventDragIn = "onBeforeEventDragIn".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventDragIn]
   @scala.inline
-  def onBeforeEventDragIn: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventDragIn = this.cast("onBeforeEventDragIn")
+  def onBeforeEventDragOut: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventDragOut = "onBeforeEventDragOut".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventDragOut]
   @scala.inline
-  def onBeforeEventDragOut: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventDragOut = this.cast("onBeforeEventDragOut")
+  def onBeforeExpand: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeExpand = "onBeforeExpand".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeExpand]
   @scala.inline
-  def onBeforeExpand: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeExpand = this.cast("onBeforeExpand")
+  def onBeforeExternalDragIn: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeExternalDragIn = "onBeforeExternalDragIn".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeExternalDragIn]
   @scala.inline
-  def onBeforeExternalDragIn: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeExternalDragIn = this.cast("onBeforeExternalDragIn")
+  def onBeforeFolderToggle: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeFolderToggle = "onBeforeFolderToggle".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeFolderToggle]
   @scala.inline
-  def onBeforeFolderToggle: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeFolderToggle = this.cast("onBeforeFolderToggle")
+  def onBeforeLightbox: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeLightbox = "onBeforeLightbox".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeLightbox]
   @scala.inline
-  def onBeforeLightbox: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeLightbox = this.cast("onBeforeLightbox")
+  def onBeforeSectionRender: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeSectionRender = "onBeforeSectionRender".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeSectionRender]
   @scala.inline
-  def onBeforeSectionRender: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeSectionRender = this.cast("onBeforeSectionRender")
+  def onBeforeTodayDisplayed: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeTodayDisplayed = "onBeforeTodayDisplayed".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeTodayDisplayed]
   @scala.inline
-  def onBeforeTodayDisplayed: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeTodayDisplayed = this.cast("onBeforeTodayDisplayed")
+  def onBeforeTooltip: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeTooltip = "onBeforeTooltip".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeTooltip]
   @scala.inline
-  def onBeforeTooltip: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeTooltip = this.cast("onBeforeTooltip")
+  def onBeforeViewChange: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeViewChange = "onBeforeViewChange".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeViewChange]
   @scala.inline
-  def onBeforeViewChange: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeViewChange = this.cast("onBeforeViewChange")
+  def onCellClick: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onCellClick = "onCellClick".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onCellClick]
   @scala.inline
-  def onCellClick: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onCellClick = this.cast("onCellClick")
+  def onCellDblClick: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onCellDblClick = "onCellDblClick".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onCellDblClick]
   @scala.inline
-  def onCellDblClick: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onCellDblClick = this.cast("onCellDblClick")
+  def onClearAll: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onClearAll = "onClearAll".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onClearAll]
   @scala.inline
-  def onClearAll: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onClearAll = this.cast("onClearAll")
+  def onClick: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onClick = "onClick".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onClick]
   @scala.inline
-  def onClick: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onClick = this.cast("onClick")
+  def onCollapse: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onCollapse = "onCollapse".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onCollapse]
   @scala.inline
-  def onCollapse: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onCollapse = this.cast("onCollapse")
+  def onConfirmedBeforeEventDelete: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onConfirmedBeforeEventDelete = "onConfirmedBeforeEventDelete".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onConfirmedBeforeEventDelete]
   @scala.inline
-  def onConfirmedBeforeEventDelete: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onConfirmedBeforeEventDelete = this.cast("onConfirmedBeforeEventDelete")
+  def onContextMenu: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onContextMenu = "onContextMenu".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onContextMenu]
   @scala.inline
-  def onContextMenu: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onContextMenu = this.cast("onContextMenu")
+  def onDblClick: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onDblClick = "onDblClick".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onDblClick]
   @scala.inline
-  def onDblClick: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onDblClick = this.cast("onDblClick")
+  def onDragEnd: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onDragEnd = "onDragEnd".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onDragEnd]
   @scala.inline
-  def onDragEnd: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onDragEnd = this.cast("onDragEnd")
+  def onEmptyClick: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEmptyClick = "onEmptyClick".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEmptyClick]
   @scala.inline
-  def onEmptyClick: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEmptyClick = this.cast("onEmptyClick")
+  def onEventAdded: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventAdded = "onEventAdded".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventAdded]
   @scala.inline
-  def onEventAdded: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventAdded = this.cast("onEventAdded")
+  def onEventCancel: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventCancel = "onEventCancel".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventCancel]
   @scala.inline
-  def onEventCancel: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventCancel = this.cast("onEventCancel")
+  def onEventChanged: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventChanged = "onEventChanged".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventChanged]
   @scala.inline
-  def onEventChanged: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventChanged = this.cast("onEventChanged")
+  def onEventCollision: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventCollision = "onEventCollision".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventCollision]
   @scala.inline
-  def onEventCollision: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventCollision = this.cast("onEventCollision")
+  def onEventCopied: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventCopied = "onEventCopied".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventCopied]
   @scala.inline
-  def onEventCopied: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventCopied = this.cast("onEventCopied")
+  def onEventCreated: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventCreated = "onEventCreated".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventCreated]
   @scala.inline
-  def onEventCreated: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventCreated = this.cast("onEventCreated")
+  def onEventCut: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventCut = "onEventCut".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventCut]
   @scala.inline
-  def onEventCut: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventCut = this.cast("onEventCut")
+  def onEventDeleted: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventDeleted = "onEventDeleted".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventDeleted]
   @scala.inline
-  def onEventDeleted: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventDeleted = this.cast("onEventDeleted")
+  def onEventDrag: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventDrag = "onEventDrag".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventDrag]
   @scala.inline
-  def onEventDrag: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventDrag = this.cast("onEventDrag")
+  def onEventDragIn: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventDragIn = "onEventDragIn".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventDragIn]
   @scala.inline
-  def onEventDragIn: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventDragIn = this.cast("onEventDragIn")
+  def onEventDragOut: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventDragOut = "onEventDragOut".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventDragOut]
   @scala.inline
-  def onEventDragOut: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventDragOut = this.cast("onEventDragOut")
+  def onEventDropOut: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventDropOut = "onEventDropOut".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventDropOut]
   @scala.inline
-  def onEventDropOut: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventDropOut = this.cast("onEventDropOut")
+  def onEventIdChange: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventIdChange = "onEventIdChange".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventIdChange]
   @scala.inline
-  def onEventIdChange: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventIdChange = this.cast("onEventIdChange")
+  def onEventLoading: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventLoading = "onEventLoading".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventLoading]
   @scala.inline
-  def onEventLoading: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventLoading = this.cast("onEventLoading")
+  def onEventPasted: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventPasted = "onEventPasted".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventPasted]
   @scala.inline
-  def onEventPasted: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventPasted = this.cast("onEventPasted")
+  def onEventSave: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventSave = "onEventSave".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventSave]
   @scala.inline
-  def onEventSave: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onEventSave = this.cast("onEventSave")
+  def onExpand: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onExpand = "onExpand".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onExpand]
   @scala.inline
-  def onExpand: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onExpand = this.cast("onExpand")
+  def onExternalDragIn: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onExternalDragIn = "onExternalDragIn".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onExternalDragIn]
   @scala.inline
-  def onExternalDragIn: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onExternalDragIn = this.cast("onExternalDragIn")
+  def onLightbox: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onLightbox = "onLightbox".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onLightbox]
   @scala.inline
-  def onLightbox: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onLightbox = this.cast("onLightbox")
+  def onLightboxButton: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onLightboxButton = "onLightboxButton".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onLightboxButton]
   @scala.inline
-  def onLightboxButton: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onLightboxButton = this.cast("onLightboxButton")
+  def onLimitViolation: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onLimitViolation = "onLimitViolation".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onLimitViolation]
   @scala.inline
-  def onLimitViolation: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onLimitViolation = this.cast("onLimitViolation")
+  def onLoadError: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onLoadError = "onLoadError".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onLoadError]
   @scala.inline
-  def onLoadError: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onLoadError = this.cast("onLoadError")
+  def onLocationError: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onLocationError = "onLocationError".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onLocationError]
   @scala.inline
-  def onLocationError: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onLocationError = this.cast("onLocationError")
+  def onMouseDown: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onMouseDown = "onMouseDown".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onMouseDown]
   @scala.inline
-  def onMouseDown: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onMouseDown = this.cast("onMouseDown")
+  def onMouseMove: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onMouseMove = "onMouseMove".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onMouseMove]
   @scala.inline
-  def onMouseMove: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onMouseMove = this.cast("onMouseMove")
+  def onOptionsLoad: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onOptionsLoad = "onOptionsLoad".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onOptionsLoad]
   @scala.inline
-  def onOptionsLoad: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onOptionsLoad = this.cast("onOptionsLoad")
+  def onOptionsLoadFinal: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onOptionsLoadFinal = "onOptionsLoadFinal".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onOptionsLoadFinal]
   @scala.inline
-  def onOptionsLoadFinal: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onOptionsLoadFinal = this.cast("onOptionsLoadFinal")
+  def onOptionsLoadStart: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onOptionsLoadStart = "onOptionsLoadStart".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onOptionsLoadStart]
   @scala.inline
-  def onOptionsLoadStart: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onOptionsLoadStart = this.cast("onOptionsLoadStart")
+  def onSaveError: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onSaveError = "onSaveError".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onSaveError]
   @scala.inline
-  def onSaveError: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onSaveError = this.cast("onSaveError")
+  def onScaleAdd: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onScaleAdd = "onScaleAdd".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onScaleAdd]
   @scala.inline
-  def onScaleAdd: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onScaleAdd = this.cast("onScaleAdd")
+  def onScaleDblClick: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onScaleDblClick = "onScaleDblClick".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onScaleDblClick]
   @scala.inline
-  def onScaleDblClick: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onScaleDblClick = this.cast("onScaleDblClick")
+  def onSchedulerReady: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onSchedulerReady = "onSchedulerReady".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onSchedulerReady]
   @scala.inline
-  def onSchedulerReady: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onSchedulerReady = this.cast("onSchedulerReady")
+  def onSchedulerResize: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onSchedulerResize = "onSchedulerResize".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onSchedulerResize]
   @scala.inline
-  def onSchedulerResize: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onSchedulerResize = this.cast("onSchedulerResize")
+  def onTemplatesReady: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onTemplatesReady = "onTemplatesReady".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onTemplatesReady]
   @scala.inline
-  def onTemplatesReady: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onTemplatesReady = this.cast("onTemplatesReady")
+  def onTimelineCreated: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onTimelineCreated = "onTimelineCreated".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onTimelineCreated]
   @scala.inline
-  def onTimelineCreated: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onTimelineCreated = this.cast("onTimelineCreated")
+  def onViewChange: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onViewChange = "onViewChange".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onViewChange]
   @scala.inline
-  def onViewChange: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onViewChange = this.cast("onViewChange")
+  def onViewMoreClick: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onViewMoreClick = "onViewMoreClick".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onViewMoreClick]
   @scala.inline
-  def onViewMoreClick: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onViewMoreClick = this.cast("onViewMoreClick")
+  def onXLE: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onXLE = "onXLE".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onXLE]
   @scala.inline
-  def onXLE: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onXLE = this.cast("onXLE")
+  def onXLS: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onXLS = "onXLS".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onXLS]
   @scala.inline
-  def onXLS: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onXLS = this.cast("onXLS")
+  def onXScaleClick: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onXScaleClick = "onXScaleClick".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onXScaleClick]
   @scala.inline
-  def onXScaleClick: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onXScaleClick = this.cast("onXScaleClick")
+  def onXScaleDblClick: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onXScaleDblClick = "onXScaleDblClick".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onXScaleDblClick]
   @scala.inline
-  def onXScaleDblClick: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onXScaleDblClick = this.cast("onXScaleDblClick")
+  def onYScaleClick: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onYScaleClick = "onYScaleClick".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onYScaleClick]
   @scala.inline
-  def onYScaleClick: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onYScaleClick = this.cast("onYScaleClick")
-  @scala.inline
-  def onYScaleDblClick: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onYScaleDblClick = this.cast("onYScaleDblClick")
+  def onYScaleDblClick: typings.dhtmlxscheduler.dhtmlxschedulerStrings.onYScaleDblClick = "onYScaleDblClick".asInstanceOf[typings.dhtmlxscheduler.dhtmlxschedulerStrings.onYScaleDblClick]
 }
 

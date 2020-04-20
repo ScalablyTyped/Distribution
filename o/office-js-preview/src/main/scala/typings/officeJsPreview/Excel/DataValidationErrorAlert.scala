@@ -53,7 +53,6 @@ object DataValidationErrorAlert {
     title: String
   ): DataValidationErrorAlert = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], showAlert = showAlert.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DataValidationErrorAlert]
   }
 }

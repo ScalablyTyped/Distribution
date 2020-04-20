@@ -20,7 +20,6 @@ object JobManifest {
   @scala.inline
   def apply(Location: JobManifestLocation, Spec: JobManifestSpec): JobManifest = {
     val __obj = js.Dynamic.literal(Location = Location.asInstanceOf[js.Any], Spec = Spec.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JobManifest]
   }
 }

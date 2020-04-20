@@ -15,7 +15,6 @@ object DeserializerManager {
   @scala.inline
   def apply(add: /* repeated */ Deserializer => Disposable, deserialize: js.Object => js.UndefOr[js.Object]): DeserializerManager = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), deserialize = js.Any.fromFunction1(deserialize))
-  
     __obj.asInstanceOf[DeserializerManager]
   }
 }

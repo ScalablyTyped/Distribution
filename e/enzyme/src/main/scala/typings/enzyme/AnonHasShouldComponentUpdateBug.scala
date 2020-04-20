@@ -12,7 +12,6 @@ object AnonHasShouldComponentUpdateBug {
   @scala.inline
   def apply(hasShouldComponentUpdateBug: Boolean): AnonHasShouldComponentUpdateBug = {
     val __obj = js.Dynamic.literal(hasShouldComponentUpdateBug = hasShouldComponentUpdateBug.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHasShouldComponentUpdateBug]
   }
 }

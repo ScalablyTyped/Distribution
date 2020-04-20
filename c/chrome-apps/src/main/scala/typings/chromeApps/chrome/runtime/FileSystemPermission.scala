@@ -20,7 +20,6 @@ object FileSystemPermission {
   @scala.inline
   def apply(fileSystem: js.Array[write_ | retainEntries | directory | requestFileSystem]): FileSystemPermission = {
     val __obj = js.Dynamic.literal(fileSystem = fileSystem.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FileSystemPermission]
   }
 }

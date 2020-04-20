@@ -15,16 +15,14 @@ trait ExtendedFormats extends js.Object
 
 object ExtendedFormats {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `long-convenient`: typings.javascriptTimeAgo.javascriptTimeAgoStrings.`long-convenient` = "long-convenient".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.`long-convenient`]
   @scala.inline
-  def `long-convenient`: typings.javascriptTimeAgo.javascriptTimeAgoStrings.`long-convenient` = this.cast("long-convenient")
+  def `long-time`: typings.javascriptTimeAgo.javascriptTimeAgoStrings.`long-time` = "long-time".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.`long-time`]
   @scala.inline
-  def `long-time`: typings.javascriptTimeAgo.javascriptTimeAgoStrings.`long-time` = this.cast("long-time")
+  def `short-convenient`: typings.javascriptTimeAgo.javascriptTimeAgoStrings.`short-convenient` = "short-convenient".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.`short-convenient`]
   @scala.inline
-  def `short-convenient`: typings.javascriptTimeAgo.javascriptTimeAgoStrings.`short-convenient` = this.cast("short-convenient")
+  def `short-time`: typings.javascriptTimeAgo.javascriptTimeAgoStrings.`short-time` = "short-time".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.`short-time`]
   @scala.inline
-  def `short-time`: typings.javascriptTimeAgo.javascriptTimeAgoStrings.`short-time` = this.cast("short-time")
-  @scala.inline
-  def tiny: typings.javascriptTimeAgo.javascriptTimeAgoStrings.tiny = this.cast("tiny")
+  def tiny: typings.javascriptTimeAgo.javascriptTimeAgoStrings.tiny = "tiny".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.tiny]
 }
 

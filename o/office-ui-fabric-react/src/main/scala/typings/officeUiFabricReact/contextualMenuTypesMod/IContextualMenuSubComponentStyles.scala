@@ -21,7 +21,6 @@ object IContextualMenuSubComponentStyles {
     menuItem: IStyleFunctionOrObject[IContextualMenuItemStyleProps, _]
   ): IContextualMenuSubComponentStyles = {
     val __obj = js.Dynamic.literal(callout = callout.asInstanceOf[js.Any], menuItem = menuItem.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IContextualMenuSubComponentStyles]
   }
 }

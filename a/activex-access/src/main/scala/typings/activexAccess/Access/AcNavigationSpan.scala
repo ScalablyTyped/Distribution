@@ -14,10 +14,8 @@ trait AcNavigationSpan extends js.Object
 
 object AcNavigationSpan {
   @scala.inline
-  def acHorizontal: `0` = this.cast(0)
+  def acHorizontal: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def acVertical: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def acVertical: `1` = 1.asInstanceOf[`1`]
 }
 

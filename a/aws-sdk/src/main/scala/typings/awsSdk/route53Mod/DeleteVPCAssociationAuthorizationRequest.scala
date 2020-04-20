@@ -20,7 +20,6 @@ object DeleteVPCAssociationAuthorizationRequest {
   @scala.inline
   def apply(HostedZoneId: ResourceId, VPC: VPC): DeleteVPCAssociationAuthorizationRequest = {
     val __obj = js.Dynamic.literal(HostedZoneId = HostedZoneId.asInstanceOf[js.Any], VPC = VPC.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteVPCAssociationAuthorizationRequest]
   }
 }

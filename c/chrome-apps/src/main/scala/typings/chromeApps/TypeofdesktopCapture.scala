@@ -26,9 +26,9 @@ trait TypeofdesktopCapture extends js.Object {
     sources: js.Array[
       ToStringLiteral[
         /* import warning: importer.ImportType#apply Failed type conversion: typeof DesktopCaptureSourceType */ js.Any, 
-        String, 
+        /* keyof typeof DesktopCaptureSourceType */ String, 
         Exclude[
-          String, 
+          /* keyof typeof DesktopCaptureSourceType */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: typeof DesktopCaptureSourceType[keyof typeof DesktopCaptureSourceType] */ js.Any
         ]
       ]
@@ -45,16 +45,15 @@ object TypeofdesktopCapture {
     chooseDesktopMedia: (js.Array[
       ToStringLiteral[
         /* import warning: importer.ImportType#apply Failed type conversion: typeof DesktopCaptureSourceType */ js.Any, 
-        String, 
+        /* keyof typeof DesktopCaptureSourceType */ String, 
         Exclude[
-          String, 
+          /* keyof typeof DesktopCaptureSourceType */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: typeof DesktopCaptureSourceType[keyof typeof DesktopCaptureSourceType] */ js.Any
         ]
       ]
     ], js.Function1[/* streamId */ String, Unit]) => integer
   ): TypeofdesktopCapture = {
     val __obj = js.Dynamic.literal(DesktopCaptureSourceType = DesktopCaptureSourceType.asInstanceOf[js.Any], cancelChooseDesktopMedia = js.Any.fromFunction1(cancelChooseDesktopMedia), chooseDesktopMedia = js.Any.fromFunction2(chooseDesktopMedia))
-  
     __obj.asInstanceOf[TypeofdesktopCapture]
   }
 }

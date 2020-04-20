@@ -13,7 +13,6 @@ object AnonFramebufferHeight {
   @scala.inline
   def apply(framebufferHeight: Double, framebufferWidth: Double): AnonFramebufferHeight = {
     val __obj = js.Dynamic.literal(framebufferHeight = framebufferHeight.asInstanceOf[js.Any], framebufferWidth = framebufferWidth.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFramebufferHeight]
   }
 }

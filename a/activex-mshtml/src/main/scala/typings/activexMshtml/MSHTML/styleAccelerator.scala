@@ -16,12 +16,10 @@ trait styleAccelerator extends js.Object
 
 object styleAccelerator {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleAcceleratorFalse: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleAcceleratorFalse: `0` = this.cast(0)
+  def styleAcceleratorTrue: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleAcceleratorTrue: `1` = this.cast(1)
-  @scala.inline
-  def styleAccelerator_Max: `2147483647` = this.cast(2147483647)
+  def styleAccelerator_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

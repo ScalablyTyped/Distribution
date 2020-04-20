@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait rcPaginationProps {
   @scala.inline
-  def RcPaginationProps: PaginationProps.type = typings.rcPagination.mod.PaginationProps
+  def RcPaginationProps: PaginationProps.type = PaginationProps
   type RcPaginationProps = PaginationProps
 }
 

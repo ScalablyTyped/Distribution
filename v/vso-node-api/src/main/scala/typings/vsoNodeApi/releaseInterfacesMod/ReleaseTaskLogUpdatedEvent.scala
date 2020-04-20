@@ -20,7 +20,6 @@ object ReleaseTaskLogUpdatedEvent {
     timelineRecordId: String
   ): ReleaseTaskLogUpdatedEvent = {
     val __obj = js.Dynamic.literal(environmentId = environmentId.asInstanceOf[js.Any], lines = lines.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], releaseId = releaseId.asInstanceOf[js.Any], timelineRecordId = timelineRecordId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReleaseTaskLogUpdatedEvent]
   }
 }

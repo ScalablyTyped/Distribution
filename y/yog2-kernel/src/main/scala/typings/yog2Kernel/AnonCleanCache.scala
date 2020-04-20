@@ -13,7 +13,6 @@ object AnonCleanCache {
   @scala.inline
   def apply(cleanCache: () => Unit): AnonCleanCache = {
     val __obj = js.Dynamic.literal(cleanCache = js.Any.fromFunction0(cleanCache))
-  
     __obj.asInstanceOf[AnonCleanCache]
   }
 }

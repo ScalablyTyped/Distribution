@@ -19,7 +19,6 @@ object TimeoutConfig {
   @scala.inline
   def apply(timeoutMs: Double): TimeoutConfig = {
     val __obj = js.Dynamic.literal(timeoutMs = timeoutMs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TimeoutConfig]
   }
 }

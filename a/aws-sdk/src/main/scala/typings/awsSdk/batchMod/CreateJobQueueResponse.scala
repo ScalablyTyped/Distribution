@@ -20,7 +20,6 @@ object CreateJobQueueResponse {
   @scala.inline
   def apply(jobQueueArn: String, jobQueueName: String): CreateJobQueueResponse = {
     val __obj = js.Dynamic.literal(jobQueueArn = jobQueueArn.asInstanceOf[js.Any], jobQueueName = jobQueueName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateJobQueueResponse]
   }
 }

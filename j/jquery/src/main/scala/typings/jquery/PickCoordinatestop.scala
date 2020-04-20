@@ -14,7 +14,6 @@ object PickCoordinatestop {
   @scala.inline
   def apply(top: Double): PickCoordinatestop = {
     val __obj = js.Dynamic.literal(top = top.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickCoordinatestop]
   }
 }

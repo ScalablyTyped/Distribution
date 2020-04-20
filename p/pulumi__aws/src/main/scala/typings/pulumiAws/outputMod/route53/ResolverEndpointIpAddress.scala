@@ -21,7 +21,6 @@ object ResolverEndpointIpAddress {
   @scala.inline
   def apply(ip: String, ipId: String, subnetId: String): ResolverEndpointIpAddress = {
     val __obj = js.Dynamic.literal(ip = ip.asInstanceOf[js.Any], ipId = ipId.asInstanceOf[js.Any], subnetId = subnetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResolverEndpointIpAddress]
   }
 }

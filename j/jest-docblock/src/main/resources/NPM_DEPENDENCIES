@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jest-docblock" : "25.2.6"
+      "jest-docblock" : "25.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "jest-docblock" : "25.2.6"
+      "jest-docblock" : "25.3.0"
     }
   ],
   "compile-devDependencies" : [

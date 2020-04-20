@@ -16,16 +16,16 @@ trait QueryCache_ extends js.Object {
   def getQuery(queryKey: AnyQueryKey): js.UndefOr[CachedQuery] = js.native
   def getQueryData(key: String): js.UndefOr[js.Any] = js.native
   def getQueryData(key: AnyQueryKey): js.UndefOr[js.Any] = js.native
-  def prefetchQuery[TResult, TKey /* <: AnyQueryKey */](queryKey: TKey, queryFn: QueryFunction[TResult, TKey]): js.Promise[TResult] = js.native
-  def prefetchQuery[TResult, TKey /* <: AnyQueryKey */](queryKey: TKey, queryFn: QueryFunction[TResult, TKey], config: QueryOptions[TResult]): js.Promise[TResult] = js.native
-  def prefetchQuery[TResult, TKey /* <: AnyQueryKey */](queryKey: js.UndefOr[scala.Nothing], queryFn: QueryFunction[TResult, TKey]): js.Promise[TResult] = js.native
-  def prefetchQuery[TResult, TKey /* <: AnyQueryKey */](
+  def prefetchQuery[TResult, TKey /* <: String */](queryKey: TKey, queryFn: QueryFunction[TResult, js.Array[TKey]]): js.Promise[TResult] = js.native
+  def prefetchQuery[TResult, TKey /* <: String */](queryKey: TKey, queryFn: QueryFunction[TResult, js.Array[TKey]], config: QueryOptions[TResult]): js.Promise[TResult] = js.native
+  def prefetchQuery[TResult, TKey /* <: String */](queryKey: js.UndefOr[scala.Nothing], queryFn: QueryFunction[TResult, js.Array[TKey]]): js.Promise[TResult] = js.native
+  def prefetchQuery[TResult, TKey /* <: String */](
     queryKey: js.UndefOr[scala.Nothing],
-    queryFn: QueryFunction[TResult, TKey],
+    queryFn: QueryFunction[TResult, js.Array[TKey]],
     config: QueryOptions[TResult]
   ): js.Promise[TResult] = js.native
-  def prefetchQuery[TResult, TKey /* <: AnyQueryKey */](queryKey: Null, queryFn: QueryFunction[TResult, TKey]): js.Promise[TResult] = js.native
-  def prefetchQuery[TResult, TKey /* <: AnyQueryKey */](queryKey: Null, queryFn: QueryFunction[TResult, TKey], config: QueryOptions[TResult]): js.Promise[TResult] = js.native
+  def prefetchQuery[TResult, TKey /* <: String */](queryKey: Null, queryFn: QueryFunction[TResult, js.Array[TKey]]): js.Promise[TResult] = js.native
+  def prefetchQuery[TResult, TKey /* <: String */](queryKey: Null, queryFn: QueryFunction[TResult, js.Array[TKey]], config: QueryOptions[TResult]): js.Promise[TResult] = js.native
   def prefetchQuery[TResult, TKey /* <: AnyQueryKey */, TVariables /* <: AnyVariables */](hasQueryKeyVariablesQueryFnConfig: AnonConfig[TKey, TVariables, TResult]): js.Promise[TResult] = js.native
   def prefetchQuery[TResult, TKey /* <: AnyQueryKey */, TVariables /* <: AnyVariables */](
     queryKey: TKey,
@@ -61,113 +61,113 @@ trait QueryCache_ extends js.Object {
     config: QueryOptions[TResult]
   ): js.Promise[TResult] = js.native
   @JSName("prefetchQuery")
-  def prefetchQuery_TResultTKey_String[TResult, TKey /* <: String */](queryKey: TKey, queryFn: QueryFunction[TResult, js.Array[TKey]]): js.Promise[TResult] = js.native
+  def prefetchQuery_TResultTKey_AnyQueryKey[TResult, TKey /* <: AnyQueryKey */](queryKey: TKey, queryFn: QueryFunction[TResult, TKey]): js.Promise[TResult] = js.native
   @JSName("prefetchQuery")
-  def prefetchQuery_TResultTKey_String[TResult, TKey /* <: String */](queryKey: TKey, queryFn: QueryFunction[TResult, js.Array[TKey]], config: QueryOptions[TResult]): js.Promise[TResult] = js.native
+  def prefetchQuery_TResultTKey_AnyQueryKey[TResult, TKey /* <: AnyQueryKey */](queryKey: TKey, queryFn: QueryFunction[TResult, TKey], config: QueryOptions[TResult]): js.Promise[TResult] = js.native
   @JSName("prefetchQuery")
-  def prefetchQuery_TResultTKey_String[TResult, TKey /* <: String */](queryKey: js.UndefOr[scala.Nothing], queryFn: QueryFunction[TResult, js.Array[TKey]]): js.Promise[TResult] = js.native
+  def prefetchQuery_TResultTKey_AnyQueryKey[TResult, TKey /* <: AnyQueryKey */](queryKey: js.UndefOr[scala.Nothing], queryFn: QueryFunction[TResult, TKey]): js.Promise[TResult] = js.native
   @JSName("prefetchQuery")
-  def prefetchQuery_TResultTKey_String[TResult, TKey /* <: String */](
+  def prefetchQuery_TResultTKey_AnyQueryKey[TResult, TKey /* <: AnyQueryKey */](
     queryKey: js.UndefOr[scala.Nothing],
+    queryFn: QueryFunction[TResult, TKey],
+    config: QueryOptions[TResult]
+  ): js.Promise[TResult] = js.native
+  @JSName("prefetchQuery")
+  def prefetchQuery_TResultTKey_AnyQueryKey[TResult, TKey /* <: AnyQueryKey */](queryKey: Null, queryFn: QueryFunction[TResult, TKey]): js.Promise[TResult] = js.native
+  @JSName("prefetchQuery")
+  def prefetchQuery_TResultTKey_AnyQueryKey[TResult, TKey /* <: AnyQueryKey */](queryKey: Null, queryFn: QueryFunction[TResult, TKey], config: QueryOptions[TResult]): js.Promise[TResult] = js.native
+  @JSName("prefetchQuery")
+  def prefetchQuery_TResultTKey_StringTVariables_AnyVariables[TResult, TKey /* <: String */, TVariables /* <: AnyVariables */](
+    queryKey: TKey,
+    variables: TVariables,
+    queryFn: QueryFunctionWithVariables[TResult, js.Array[TKey], TVariables]
+  ): js.Promise[TResult] = js.native
+  @JSName("prefetchQuery")
+  def prefetchQuery_TResultTKey_StringTVariables_AnyVariables[TResult, TKey /* <: String */, TVariables /* <: AnyVariables */](
+    queryKey: TKey,
+    variables: TVariables,
+    queryFn: QueryFunctionWithVariables[TResult, js.Array[TKey], TVariables],
+    config: QueryOptions[TResult]
+  ): js.Promise[TResult] = js.native
+  @JSName("prefetchQuery")
+  def prefetchQuery_TResultTKey_StringTVariables_AnyVariables[TResult, TKey /* <: String */, TVariables /* <: AnyVariables */](
+    queryKey: js.UndefOr[scala.Nothing],
+    variables: TVariables,
+    queryFn: QueryFunctionWithVariables[TResult, js.Array[TKey], TVariables]
+  ): js.Promise[TResult] = js.native
+  @JSName("prefetchQuery")
+  def prefetchQuery_TResultTKey_StringTVariables_AnyVariables[TResult, TKey /* <: String */, TVariables /* <: AnyVariables */](
+    queryKey: js.UndefOr[scala.Nothing],
+    variables: TVariables,
+    queryFn: QueryFunctionWithVariables[TResult, js.Array[TKey], TVariables],
+    config: QueryOptions[TResult]
+  ): js.Promise[TResult] = js.native
+  @JSName("prefetchQuery")
+  def prefetchQuery_TResultTKey_StringTVariables_AnyVariables[TResult, TKey /* <: String */, TVariables /* <: AnyVariables */](
+    queryKey: Null,
+    variables: TVariables,
+    queryFn: QueryFunctionWithVariables[TResult, js.Array[TKey], TVariables]
+  ): js.Promise[TResult] = js.native
+  @JSName("prefetchQuery")
+  def prefetchQuery_TResultTKey_StringTVariables_AnyVariables[TResult, TKey /* <: String */, TVariables /* <: AnyVariables */](
+    queryKey: Null,
+    variables: TVariables,
+    queryFn: QueryFunctionWithVariables[TResult, js.Array[TKey], TVariables],
+    config: QueryOptions[TResult]
+  ): js.Promise[TResult] = js.native
+  @JSName("prefetchQuery")
+  def prefetchQuery_false[TResult, TKey /* <: String */](
+    queryKey: js.Function0[js.UndefOr[TKey | `false` | Null]],
+    queryFn: QueryFunction[TResult, js.Array[TKey]]
+  ): js.Promise[TResult] = js.native
+  @JSName("prefetchQuery")
+  def prefetchQuery_false[TResult, TKey /* <: String */](
+    queryKey: js.Function0[js.UndefOr[TKey | `false` | Null]],
     queryFn: QueryFunction[TResult, js.Array[TKey]],
     config: QueryOptions[TResult]
   ): js.Promise[TResult] = js.native
   @JSName("prefetchQuery")
-  def prefetchQuery_TResultTKey_String[TResult, TKey /* <: String */](queryKey: Null, queryFn: QueryFunction[TResult, js.Array[TKey]]): js.Promise[TResult] = js.native
+  def prefetchQuery_false[TResult, TKey /* <: String */](queryKey: `false`, queryFn: QueryFunction[TResult, js.Array[TKey]]): js.Promise[TResult] = js.native
   @JSName("prefetchQuery")
-  def prefetchQuery_TResultTKey_String[TResult, TKey /* <: String */](queryKey: Null, queryFn: QueryFunction[TResult, js.Array[TKey]], config: QueryOptions[TResult]): js.Promise[TResult] = js.native
+  def prefetchQuery_false[TResult, TKey /* <: String */](queryKey: `false`, queryFn: QueryFunction[TResult, js.Array[TKey]], config: QueryOptions[TResult]): js.Promise[TResult] = js.native
   @JSName("prefetchQuery")
-  def prefetchQuery_TResultTKey_StringTVariables_AnyVariables[TResult, TKey /* <: String */, TVariables /* <: AnyVariables */](
-    queryKey: TKey,
+  def prefetchQuery_false[TResult, TKey /* <: AnyQueryKey */, TVariables /* <: AnyVariables */](
+    queryKey: js.Function0[js.UndefOr[TKey | `false` | Null]],
     variables: TVariables,
-    queryFn: QueryFunctionWithVariables[TResult, js.Array[TKey], TVariables]
+    queryFn: QueryFunctionWithVariables[TResult, TKey, TVariables]
   ): js.Promise[TResult] = js.native
   @JSName("prefetchQuery")
-  def prefetchQuery_TResultTKey_StringTVariables_AnyVariables[TResult, TKey /* <: String */, TVariables /* <: AnyVariables */](
-    queryKey: TKey,
+  def prefetchQuery_false[TResult, TKey /* <: AnyQueryKey */, TVariables /* <: AnyVariables */](
+    queryKey: js.Function0[js.UndefOr[TKey | `false` | Null]],
     variables: TVariables,
-    queryFn: QueryFunctionWithVariables[TResult, js.Array[TKey], TVariables],
+    queryFn: QueryFunctionWithVariables[TResult, TKey, TVariables],
     config: QueryOptions[TResult]
   ): js.Promise[TResult] = js.native
   @JSName("prefetchQuery")
-  def prefetchQuery_TResultTKey_StringTVariables_AnyVariables[TResult, TKey /* <: String */, TVariables /* <: AnyVariables */](
-    queryKey: js.UndefOr[scala.Nothing],
+  def prefetchQuery_false[TResult, TKey /* <: AnyQueryKey */, TVariables /* <: AnyVariables */](
+    queryKey: `false`,
     variables: TVariables,
-    queryFn: QueryFunctionWithVariables[TResult, js.Array[TKey], TVariables]
+    queryFn: QueryFunctionWithVariables[TResult, TKey, TVariables]
   ): js.Promise[TResult] = js.native
   @JSName("prefetchQuery")
-  def prefetchQuery_TResultTKey_StringTVariables_AnyVariables[TResult, TKey /* <: String */, TVariables /* <: AnyVariables */](
-    queryKey: js.UndefOr[scala.Nothing],
+  def prefetchQuery_false[TResult, TKey /* <: AnyQueryKey */, TVariables /* <: AnyVariables */](
+    queryKey: `false`,
     variables: TVariables,
-    queryFn: QueryFunctionWithVariables[TResult, js.Array[TKey], TVariables],
+    queryFn: QueryFunctionWithVariables[TResult, TKey, TVariables],
     config: QueryOptions[TResult]
   ): js.Promise[TResult] = js.native
   @JSName("prefetchQuery")
-  def prefetchQuery_TResultTKey_StringTVariables_AnyVariables[TResult, TKey /* <: String */, TVariables /* <: AnyVariables */](
-    queryKey: Null,
-    variables: TVariables,
-    queryFn: QueryFunctionWithVariables[TResult, js.Array[TKey], TVariables]
-  ): js.Promise[TResult] = js.native
+  def prefetchQuery_false_TResultTKey_AnyQueryKey[TResult, TKey /* <: AnyQueryKey */](queryKey: js.Function0[js.UndefOr[TKey | `false` | Null]], queryFn: QueryFunction[TResult, TKey]): js.Promise[TResult] = js.native
   @JSName("prefetchQuery")
-  def prefetchQuery_TResultTKey_StringTVariables_AnyVariables[TResult, TKey /* <: String */, TVariables /* <: AnyVariables */](
-    queryKey: Null,
-    variables: TVariables,
-    queryFn: QueryFunctionWithVariables[TResult, js.Array[TKey], TVariables],
-    config: QueryOptions[TResult]
-  ): js.Promise[TResult] = js.native
-  @JSName("prefetchQuery")
-  def prefetchQuery_false[TResult, TKey /* <: AnyQueryKey */](queryKey: js.Function0[js.UndefOr[TKey | `false` | Null]], queryFn: QueryFunction[TResult, TKey]): js.Promise[TResult] = js.native
-  @JSName("prefetchQuery")
-  def prefetchQuery_false[TResult, TKey /* <: AnyQueryKey */](
+  def prefetchQuery_false_TResultTKey_AnyQueryKey[TResult, TKey /* <: AnyQueryKey */](
     queryKey: js.Function0[js.UndefOr[TKey | `false` | Null]],
     queryFn: QueryFunction[TResult, TKey],
     config: QueryOptions[TResult]
   ): js.Promise[TResult] = js.native
   @JSName("prefetchQuery")
-  def prefetchQuery_false[TResult, TKey /* <: AnyQueryKey */](queryKey: `false`, queryFn: QueryFunction[TResult, TKey]): js.Promise[TResult] = js.native
+  def prefetchQuery_false_TResultTKey_AnyQueryKey[TResult, TKey /* <: AnyQueryKey */](queryKey: `false`, queryFn: QueryFunction[TResult, TKey]): js.Promise[TResult] = js.native
   @JSName("prefetchQuery")
-  def prefetchQuery_false[TResult, TKey /* <: AnyQueryKey */](queryKey: `false`, queryFn: QueryFunction[TResult, TKey], config: QueryOptions[TResult]): js.Promise[TResult] = js.native
-  @JSName("prefetchQuery")
-  def prefetchQuery_false[TResult, TKey /* <: AnyQueryKey */, TVariables /* <: AnyVariables */](
-    queryKey: js.Function0[js.UndefOr[TKey | `false` | Null]],
-    variables: TVariables,
-    queryFn: QueryFunctionWithVariables[TResult, TKey, TVariables]
-  ): js.Promise[TResult] = js.native
-  @JSName("prefetchQuery")
-  def prefetchQuery_false[TResult, TKey /* <: AnyQueryKey */, TVariables /* <: AnyVariables */](
-    queryKey: js.Function0[js.UndefOr[TKey | `false` | Null]],
-    variables: TVariables,
-    queryFn: QueryFunctionWithVariables[TResult, TKey, TVariables],
-    config: QueryOptions[TResult]
-  ): js.Promise[TResult] = js.native
-  @JSName("prefetchQuery")
-  def prefetchQuery_false[TResult, TKey /* <: AnyQueryKey */, TVariables /* <: AnyVariables */](
-    queryKey: `false`,
-    variables: TVariables,
-    queryFn: QueryFunctionWithVariables[TResult, TKey, TVariables]
-  ): js.Promise[TResult] = js.native
-  @JSName("prefetchQuery")
-  def prefetchQuery_false[TResult, TKey /* <: AnyQueryKey */, TVariables /* <: AnyVariables */](
-    queryKey: `false`,
-    variables: TVariables,
-    queryFn: QueryFunctionWithVariables[TResult, TKey, TVariables],
-    config: QueryOptions[TResult]
-  ): js.Promise[TResult] = js.native
-  @JSName("prefetchQuery")
-  def prefetchQuery_false_TResultTKey_String[TResult, TKey /* <: String */](
-    queryKey: js.Function0[js.UndefOr[TKey | `false` | Null]],
-    queryFn: QueryFunction[TResult, js.Array[TKey]]
-  ): js.Promise[TResult] = js.native
-  @JSName("prefetchQuery")
-  def prefetchQuery_false_TResultTKey_String[TResult, TKey /* <: String */](
-    queryKey: js.Function0[js.UndefOr[TKey | `false` | Null]],
-    queryFn: QueryFunction[TResult, js.Array[TKey]],
-    config: QueryOptions[TResult]
-  ): js.Promise[TResult] = js.native
-  @JSName("prefetchQuery")
-  def prefetchQuery_false_TResultTKey_String[TResult, TKey /* <: String */](queryKey: `false`, queryFn: QueryFunction[TResult, js.Array[TKey]]): js.Promise[TResult] = js.native
-  @JSName("prefetchQuery")
-  def prefetchQuery_false_TResultTKey_String[TResult, TKey /* <: String */](queryKey: `false`, queryFn: QueryFunction[TResult, js.Array[TKey]], config: QueryOptions[TResult]): js.Promise[TResult] = js.native
+  def prefetchQuery_false_TResultTKey_AnyQueryKey[TResult, TKey /* <: AnyQueryKey */](queryKey: `false`, queryFn: QueryFunction[TResult, TKey], config: QueryOptions[TResult]): js.Promise[TResult] = js.native
   @JSName("prefetchQuery")
   def prefetchQuery_false_TResultTKey_StringTVariables_AnyVariables[TResult, TKey /* <: String */, TVariables /* <: AnyVariables */](
     queryKey: js.Function0[js.UndefOr[TKey | `false` | Null]],

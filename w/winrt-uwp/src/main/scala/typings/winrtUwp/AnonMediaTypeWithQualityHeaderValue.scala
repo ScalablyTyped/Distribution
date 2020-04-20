@@ -14,7 +14,6 @@ object AnonMediaTypeWithQualityHeaderValue {
   @scala.inline
   def apply(mediaTypeWithQualityHeaderValue: HttpMediaTypeWithQualityHeaderValue, returnValue: Boolean): AnonMediaTypeWithQualityHeaderValue = {
     val __obj = js.Dynamic.literal(mediaTypeWithQualityHeaderValue = mediaTypeWithQualityHeaderValue.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMediaTypeWithQualityHeaderValue]
   }
 }

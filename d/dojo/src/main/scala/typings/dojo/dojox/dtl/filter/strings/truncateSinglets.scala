@@ -62,7 +62,6 @@ object truncateSinglets {
     param: Boolean
   ): truncateSinglets = {
     val __obj = js.Dynamic.literal(area = area.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], br = br.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], hr = hr.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], param = param.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[truncateSinglets]
   }
 }

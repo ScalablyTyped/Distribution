@@ -48,7 +48,7 @@ import scala.scalajs.js.annotation._
 class Arguments () extends js.Object {
   def this(raw: js.Array[GoogleActionsV2Argument]) = this()
   /** @public */
-  @JSName(scala.scalajs.js.Symbol.iterator)
+  @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[GoogleActionsV2Argument]] = js.native
   /** @public */
   var parsed: Parsed = js.native

@@ -16,7 +16,6 @@ object UiTemplate {
   @scala.inline
   def apply(Content: TemplateContent): UiTemplate = {
     val __obj = js.Dynamic.literal(Content = Content.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UiTemplate]
   }
 }

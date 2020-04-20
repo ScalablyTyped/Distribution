@@ -13,7 +13,6 @@ object PickImplloadOnce {
   @scala.inline
   def apply(loadOnce: Boolean): PickImplloadOnce = {
     val __obj = js.Dynamic.literal(loadOnce = loadOnce.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplloadOnce]
   }
 }

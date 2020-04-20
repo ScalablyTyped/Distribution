@@ -20,7 +20,6 @@ object DeletePullRequestApprovalRuleInput {
   @scala.inline
   def apply(approvalRuleName: ApprovalRuleName, pullRequestId: PullRequestId): DeletePullRequestApprovalRuleInput = {
     val __obj = js.Dynamic.literal(approvalRuleName = approvalRuleName.asInstanceOf[js.Any], pullRequestId = pullRequestId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeletePullRequestApprovalRuleInput]
   }
 }

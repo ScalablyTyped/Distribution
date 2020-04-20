@@ -248,7 +248,7 @@ object Matrix extends js.Object {
   /**
     * Gets an identity matrix that must not be updated
     */
-  def IdentityReadOnly(): DeepImmutable[typings.babylonjs.mathVectorMod.Matrix] = js.native
+  def IdentityReadOnly: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix] = js.native
   /**
     * Creates a new identity matrix and stores the result in a given matrix
     * @param result defines the target matrix

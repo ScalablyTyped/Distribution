@@ -110,7 +110,6 @@ object range_ {
     ie: js.Object
   ): range_ = {
     val __obj = js.Dynamic.literal(BlockTagNames = BlockTagNames.asInstanceOf[js.Any], W3CRange = js.Any.fromFunction0(W3CRange), adjacentNoneTextNode = js.Any.fromFunction2(adjacentNoneTextNode), atBeginningOfContainer = js.Any.fromFunction3(atBeginningOfContainer), atEndOfContainer = js.Any.fromFunction3(atEndOfContainer), create = js.Any.fromFunction1(create), getAncestor = js.Any.fromFunction3(getAncestor), getBlockAncestor = js.Any.fromFunction3(getBlockAncestor), getCommonAncestor = js.Any.fromFunction3(getCommonAncestor), getIndex = js.Any.fromFunction2(getIndex), getNode = js.Any.fromFunction2(getNode), getSelection = js.Any.fromFunction2(getSelection), ie = ie.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[range_]
   }
 }

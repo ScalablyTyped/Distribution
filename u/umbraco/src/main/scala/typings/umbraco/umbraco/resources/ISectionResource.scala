@@ -18,7 +18,6 @@ object ISectionResource {
   @scala.inline
   def apply(getSections: () => Unit): ISectionResource = {
     val __obj = js.Dynamic.literal(getSections = js.Any.fromFunction0(getSections))
-  
     __obj.asInstanceOf[ISectionResource]
   }
 }

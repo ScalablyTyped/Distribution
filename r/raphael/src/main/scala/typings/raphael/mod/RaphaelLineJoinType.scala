@@ -13,12 +13,10 @@ trait RaphaelLineJoinType extends js.Object
 
 object RaphaelLineJoinType {
   @scala.inline
-  def bevel: typings.raphael.raphaelStrings.bevel = this.cast("bevel")
+  def bevel: typings.raphael.raphaelStrings.bevel = "bevel".asInstanceOf[typings.raphael.raphaelStrings.bevel]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def miter: typings.raphael.raphaelStrings.miter = "miter".asInstanceOf[typings.raphael.raphaelStrings.miter]
   @scala.inline
-  def miter: typings.raphael.raphaelStrings.miter = this.cast("miter")
-  @scala.inline
-  def round: typings.raphael.raphaelStrings.round = this.cast("round")
+  def round: typings.raphael.raphaelStrings.round = "round".asInstanceOf[typings.raphael.raphaelStrings.round]
 }
 

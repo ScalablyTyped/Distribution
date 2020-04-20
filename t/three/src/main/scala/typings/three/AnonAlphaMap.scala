@@ -25,7 +25,6 @@ object AnonAlphaMap {
     uvTransform: IUniform
   ): AnonAlphaMap = {
     val __obj = js.Dynamic.literal(alphaMap = alphaMap.asInstanceOf[js.Any], diffuse = diffuse.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], uv2Transform = uv2Transform.asInstanceOf[js.Any], uvTransform = uvTransform.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAlphaMap]
   }
 }

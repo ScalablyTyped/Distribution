@@ -31,7 +31,6 @@ object NameMap {
     update: (InternalNamePath, js.Function1[/* origin */ T, T | Null]) => Unit
   ): NameMap[T] = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = list.asInstanceOf[js.Any], map = js.Any.fromFunction1(map), set = js.Any.fromFunction2(set), toJSON = js.Any.fromFunction0(toJSON), update = js.Any.fromFunction2(update))
-  
     __obj.asInstanceOf[NameMap[T]]
   }
 }

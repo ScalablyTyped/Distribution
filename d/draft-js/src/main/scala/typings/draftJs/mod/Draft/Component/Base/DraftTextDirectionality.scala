@@ -13,12 +13,10 @@ trait DraftTextDirectionality extends js.Object
 
 object DraftTextDirectionality {
   @scala.inline
-  def LTR: typings.draftJs.draftJsStrings.LTR = this.cast("LTR")
+  def LTR: typings.draftJs.draftJsStrings.LTR = "LTR".asInstanceOf[typings.draftJs.draftJsStrings.LTR]
   @scala.inline
-  def NEUTRAL: typings.draftJs.draftJsStrings.NEUTRAL = this.cast("NEUTRAL")
+  def NEUTRAL: typings.draftJs.draftJsStrings.NEUTRAL = "NEUTRAL".asInstanceOf[typings.draftJs.draftJsStrings.NEUTRAL]
   @scala.inline
-  def RTL: typings.draftJs.draftJsStrings.RTL = this.cast("RTL")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def RTL: typings.draftJs.draftJsStrings.RTL = "RTL".asInstanceOf[typings.draftJs.draftJsStrings.RTL]
 }
 

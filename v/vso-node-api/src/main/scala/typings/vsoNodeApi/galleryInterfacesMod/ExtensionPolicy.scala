@@ -19,7 +19,6 @@ object ExtensionPolicy {
   @scala.inline
   def apply(install: ExtensionPolicyFlags, request: ExtensionPolicyFlags): ExtensionPolicy = {
     val __obj = js.Dynamic.literal(install = install.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExtensionPolicy]
   }
 }

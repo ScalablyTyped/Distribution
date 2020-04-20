@@ -17,7 +17,6 @@ object ClientState {
   @scala.inline
   def apply(clientId: String, status: String, timestamp: Double, userId: String): ClientState = {
     val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClientState]
   }
 }

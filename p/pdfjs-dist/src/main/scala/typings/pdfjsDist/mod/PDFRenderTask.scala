@@ -18,7 +18,6 @@ object PDFRenderTask {
   @scala.inline
   def apply(cancel: () => Unit, promise: PDFPromise[PDFPageProxy]): PDFRenderTask = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), promise = promise.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PDFRenderTask]
   }
 }

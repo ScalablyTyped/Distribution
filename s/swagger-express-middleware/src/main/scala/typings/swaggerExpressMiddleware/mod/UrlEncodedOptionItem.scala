@@ -2,6 +2,7 @@ package typings.swaggerExpressMiddleware.mod
 
 import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -30,13 +31,15 @@ trait UrlEncodedOptionItem extends js.Object {
     * or a mime type with a wildcard (like * /x-www-form-urlencoded). If a function, the type option is called as fn(req) and the request is parsed if it returns a truthy value.
     * Defaults to application/x-www-form-urlencoded.
     */
-  var `type`: js.UndefOr[(js.Function1[/* req */ Request_[ParamsDictionary], String]) | String] = js.undefined
+  var `type`: js.UndefOr[
+    (js.Function1[/* req */ Request_[ParamsDictionary, _, _, Query], String]) | String
+  ] = js.undefined
   /**
     * function to verify body content, the parsing can be aborted by throwing an error.
     */
   var verify: js.UndefOr[
     js.Function4[
-      /* req */ Request_[ParamsDictionary], 
+      /* req */ Request_[ParamsDictionary, _, _, Query], 
       /* res */ Response, 
       /* buf */ Buffer, 
       /* encoding */ String, 
@@ -51,8 +54,8 @@ object UrlEncodedOptionItem {
     extended: js.UndefOr[Boolean] = js.undefined,
     inflate: js.UndefOr[Boolean] = js.undefined,
     limit: String | Double = null,
-    `type`: (js.Function1[/* req */ Request_[ParamsDictionary], String]) | String = null,
-    verify: (/* req */ Request_[ParamsDictionary], /* res */ Response, /* buf */ Buffer, /* encoding */ String) => Unit = null
+    `type`: (js.Function1[/* req */ Request_[ParamsDictionary, _, _, Query], String]) | String = null,
+    verify: (/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response, /* buf */ Buffer, /* encoding */ String) => Unit = null
   ): UrlEncodedOptionItem = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(extended)) __obj.updateDynamic("extended")(extended.asInstanceOf[js.Any])

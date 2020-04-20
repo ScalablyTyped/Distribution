@@ -18,7 +18,6 @@ object CompileTypeMetadata {
     reference: js.Any
   ): CompileTypeMetadata = {
     val __obj = js.Dynamic.literal(diDeps = diDeps.asInstanceOf[js.Any], lifecycleHooks = lifecycleHooks.asInstanceOf[js.Any], reference = reference.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CompileTypeMetadata]
   }
 }

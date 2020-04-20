@@ -12,7 +12,6 @@ object AnonTooltipAnonCont {
   @scala.inline
   def apply(tooltip: AnonCont): AnonTooltipAnonCont = {
     val __obj = js.Dynamic.literal(tooltip = tooltip.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTooltipAnonCont]
   }
 }

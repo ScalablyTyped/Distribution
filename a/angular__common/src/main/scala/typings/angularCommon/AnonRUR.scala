@@ -32,7 +32,6 @@ object AnonRUR {
     XXX: js.Array[String]
   ): AnonRUR = {
     val __obj = js.Dynamic.literal(GEL = GEL.asInstanceOf[js.Any], KZT = KZT.asInstanceOf[js.Any], RON = RON.asInstanceOf[js.Any], RUB = RUB.asInstanceOf[js.Any], RUR = RUR.asInstanceOf[js.Any], THB = THB.asInstanceOf[js.Any], TMT = TMT.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any], UAH = UAH.asInstanceOf[js.Any], XXX = XXX.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRUR]
   }
 }

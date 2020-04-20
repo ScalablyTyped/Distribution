@@ -16,7 +16,6 @@ object BatchDescribeSimulationJobRequest {
   @scala.inline
   def apply(jobs: Arns): BatchDescribeSimulationJobRequest = {
     val __obj = js.Dynamic.literal(jobs = jobs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchDescribeSimulationJobRequest]
   }
 }

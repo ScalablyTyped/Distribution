@@ -14,7 +14,6 @@ object IColor3Like {
   @scala.inline
   def apply(b: float, g: float, r: float): IColor3Like = {
     val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IColor3Like]
   }
 }

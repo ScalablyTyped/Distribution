@@ -13,7 +13,6 @@ object OnKeyListener {
   @scala.inline
   def apply(onKey: (typings.androiduix.android.content.DialogInterface, Double, KeyEvent) => Boolean): OnKeyListener = {
     val __obj = js.Dynamic.literal(onKey = js.Any.fromFunction3(onKey))
-  
     __obj.asInstanceOf[OnKeyListener]
   }
 }

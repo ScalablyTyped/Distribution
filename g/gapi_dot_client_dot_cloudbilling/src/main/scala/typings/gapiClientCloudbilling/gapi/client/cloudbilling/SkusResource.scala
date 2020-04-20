@@ -15,7 +15,6 @@ object SkusResource {
   @scala.inline
   def apply(list: AnonCallback => Request_[ListSkusResponse]): SkusResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[SkusResource]
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for express-sitemap-xml
 
-Typings are for version 1.0
+Typings are for version 1.1
 
 ## Library description:
 Express middleware to serve `sitemap.xml` from a list of URLs

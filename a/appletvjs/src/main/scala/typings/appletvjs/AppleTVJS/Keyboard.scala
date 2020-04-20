@@ -18,7 +18,6 @@ object Keyboard {
   @scala.inline
   def apply(onTextChange: () => Unit, text: String): Keyboard = {
     val __obj = js.Dynamic.literal(onTextChange = js.Any.fromFunction0(onTextChange), text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Keyboard]
   }
 }

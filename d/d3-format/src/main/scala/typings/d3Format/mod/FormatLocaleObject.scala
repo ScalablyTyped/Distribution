@@ -34,7 +34,6 @@ object FormatLocaleObject {
     formatPrefix: (String, Double) => js.Function1[/* n */ Double | AnonValueOf, String]
   ): FormatLocaleObject = {
     val __obj = js.Dynamic.literal(format = js.Any.fromFunction1(format), formatPrefix = js.Any.fromFunction2(formatPrefix))
-  
     __obj.asInstanceOf[FormatLocaleObject]
   }
 }

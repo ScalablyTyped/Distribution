@@ -14,7 +14,6 @@ object FormChangeInfo {
   @scala.inline
   def apply(changedFields: js.Array[FieldData], forms: Forms): FormChangeInfo = {
     val __obj = js.Dynamic.literal(changedFields = changedFields.asInstanceOf[js.Any], forms = forms.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FormChangeInfo]
   }
 }

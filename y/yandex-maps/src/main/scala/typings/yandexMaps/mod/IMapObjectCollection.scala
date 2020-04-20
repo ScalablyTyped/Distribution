@@ -23,7 +23,6 @@ object IMapObjectCollection {
     remove: js.Object => IMapObjectCollection
   ): IMapObjectCollection = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), events = events.asInstanceOf[js.Any], getIterator = js.Any.fromFunction0(getIterator), getMap = js.Any.fromFunction0(getMap), options = options.asInstanceOf[js.Any], remove = js.Any.fromFunction1(remove))
-  
     __obj.asInstanceOf[IMapObjectCollection]
   }
 }

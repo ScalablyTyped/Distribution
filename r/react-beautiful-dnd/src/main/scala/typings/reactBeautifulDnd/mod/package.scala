@@ -22,7 +22,7 @@ package object mod {
   type DroppableIdMap = org.scalablytyped.runtime.StringDictionary[typings.reactBeautifulDnd.reactBeautifulDndBooleans.`true`]
   type ElementId = typings.reactBeautifulDnd.mod.Id
   type Id = java.lang.String
-  type Omit[T, K /* <: java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[java.lang.String, K]]
+  type Omit[T, K /* <: /* keyof T */ java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
   type OnBeforeCaptureResponder = js.Function1[/* before */ typings.reactBeautifulDnd.mod.BeforeCapture, scala.Unit]
   type OnBeforeDragStartResponder = js.Function1[/* start */ typings.reactBeautifulDnd.mod.DragStart, scala.Unit]
   type OnDragEndResponder = js.Function2[

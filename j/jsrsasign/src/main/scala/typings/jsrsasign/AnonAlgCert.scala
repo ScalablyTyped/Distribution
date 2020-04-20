@@ -13,7 +13,6 @@ object AnonAlgCert {
   @scala.inline
   def apply(alg: String, cert: String): AnonAlgCert = {
     val __obj = js.Dynamic.literal(alg = alg.asInstanceOf[js.Any], cert = cert.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAlgCert]
   }
 }

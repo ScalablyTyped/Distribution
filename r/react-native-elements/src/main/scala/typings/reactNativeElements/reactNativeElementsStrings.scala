@@ -314,6 +314,9 @@ object reactNativeElementsStrings {
   sealed trait radiobutton_unchecked extends js.Object
   
   @js.native
+  sealed trait replaceTheme extends js.Object
+  
+  @js.native
   sealed trait resize extends js.Object
   
   @js.native
@@ -380,6 +383,9 @@ object reactNativeElementsStrings {
   sealed trait telephoneNumber extends js.Object
   
   @js.native
+  sealed trait theme extends js.Object
+  
+  @js.native
   sealed trait timing extends js.Object
   
   @js.native
@@ -396,6 +402,9 @@ object reactNativeElementsStrings {
   
   @js.native
   sealed trait `unless-editing` extends js.Object
+  
+  @js.native
+  sealed trait updateTheme extends js.Object
   
   @js.native
   sealed trait username extends js.Object
@@ -644,6 +653,8 @@ object reactNativeElementsStrings {
   @scala.inline
   def radiobutton_unchecked: radiobutton_unchecked = "radiobutton_unchecked".asInstanceOf[radiobutton_unchecked]
   @scala.inline
+  def replaceTheme: replaceTheme = "replaceTheme".asInstanceOf[replaceTheme]
+  @scala.inline
   def resize: resize = "resize".asInstanceOf[resize]
   @scala.inline
   def right: right = "right".asInstanceOf[right]
@@ -688,6 +699,8 @@ object reactNativeElementsStrings {
   @scala.inline
   def telephoneNumber: telephoneNumber = "telephoneNumber".asInstanceOf[telephoneNumber]
   @scala.inline
+  def theme: theme = "theme".asInstanceOf[theme]
+  @scala.inline
   def timing: timing = "timing".asInstanceOf[timing]
   @scala.inline
   def top: top = "top".asInstanceOf[top]
@@ -699,6 +712,8 @@ object reactNativeElementsStrings {
   def twitter: twitter = "twitter".asInstanceOf[twitter]
   @scala.inline
   def `unless-editing`: `unless-editing` = "unless-editing".asInstanceOf[`unless-editing`]
+  @scala.inline
+  def updateTheme: updateTheme = "updateTheme".asInstanceOf[updateTheme]
   @scala.inline
   def username: username = "username".asInstanceOf[username]
   @scala.inline

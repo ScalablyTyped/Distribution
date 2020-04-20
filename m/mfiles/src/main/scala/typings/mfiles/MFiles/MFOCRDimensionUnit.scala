@@ -16,12 +16,10 @@ trait MFOCRDimensionUnit extends js.Object
 
 object MFOCRDimensionUnit {
   @scala.inline
-  def InchX100: `2` = this.cast(2)
+  def InchX100: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def MillimeterX10: `1` = this.cast(1)
+  def MillimeterX10: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def Pixel: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Pixel: `0` = 0.asInstanceOf[`0`]
 }
 

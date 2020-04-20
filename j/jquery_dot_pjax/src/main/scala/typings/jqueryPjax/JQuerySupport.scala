@@ -15,7 +15,6 @@ object JQuerySupport {
   @scala.inline
   def apply(pjax: Boolean): JQuerySupport = {
     val __obj = js.Dynamic.literal(pjax = pjax.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JQuerySupport]
   }
 }

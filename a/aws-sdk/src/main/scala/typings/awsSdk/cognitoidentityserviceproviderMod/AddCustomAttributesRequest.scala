@@ -20,7 +20,6 @@ object AddCustomAttributesRequest {
   @scala.inline
   def apply(CustomAttributes: CustomAttributesListType, UserPoolId: UserPoolIdType): AddCustomAttributesRequest = {
     val __obj = js.Dynamic.literal(CustomAttributes = CustomAttributes.asInstanceOf[js.Any], UserPoolId = UserPoolId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddCustomAttributesRequest]
   }
 }

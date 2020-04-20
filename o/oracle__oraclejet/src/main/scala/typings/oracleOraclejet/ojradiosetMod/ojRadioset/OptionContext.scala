@@ -16,7 +16,6 @@ object OptionContext {
   @scala.inline
   def apply[D](component: Element, data: D, index: Double): OptionContext[D] = {
     val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OptionContext[D]]
   }
 }

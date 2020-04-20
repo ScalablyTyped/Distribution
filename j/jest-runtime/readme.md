@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-runtime
 
-Typings are for version 25.2.7
+Typings are for version 25.3.0
 
 
 

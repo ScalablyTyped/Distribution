@@ -12,7 +12,6 @@ object AnonContext {
   @scala.inline
   def apply(context: AnonHref): AnonContext = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonContext]
   }
 }

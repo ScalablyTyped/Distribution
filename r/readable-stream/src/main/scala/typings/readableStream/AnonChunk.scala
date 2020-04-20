@@ -13,7 +13,6 @@ object AnonChunk {
   @scala.inline
   def apply(chunk: js.Any, encoding: String): AnonChunk = {
     val __obj = js.Dynamic.literal(chunk = chunk.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonChunk]
   }
 }

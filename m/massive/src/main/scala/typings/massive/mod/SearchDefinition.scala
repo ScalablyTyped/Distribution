@@ -14,7 +14,6 @@ object SearchDefinition {
   @scala.inline
   def apply(fields: js.Array[String], term: String, where: AnyObject[_]): SearchDefinition = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], term = term.asInstanceOf[js.Any], where = where.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SearchDefinition]
   }
 }

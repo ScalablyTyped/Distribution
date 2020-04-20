@@ -16,12 +16,10 @@ trait MODE extends js.Object
 
 object MODE {
   @scala.inline
-  def MERGE_BASE: `4` = this.cast(4)
+  def MERGE_BASE: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def RANGE: `2` = this.cast(2)
+  def RANGE: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def SINGLE: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SINGLE: `1` = 1.asInstanceOf[`1`]
 }
 

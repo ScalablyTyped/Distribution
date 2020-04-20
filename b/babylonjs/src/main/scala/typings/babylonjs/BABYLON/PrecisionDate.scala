@@ -15,6 +15,6 @@ object PrecisionDate extends js.Object {
   /**
     * Gets either window.performance.now() if supported or Date.now() else
     */
-  def Now(): Double = js.native
+  def Now: Double = js.native
 }
 

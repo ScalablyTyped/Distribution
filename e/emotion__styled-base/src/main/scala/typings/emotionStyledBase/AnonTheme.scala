@@ -12,7 +12,6 @@ object AnonTheme {
   @scala.inline
   def apply(theme: /* import warning: importer.ImportType#apply Failed type conversion: infer Theme */ js.Any): AnonTheme = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTheme]
   }
 }

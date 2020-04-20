@@ -16,7 +16,6 @@ object LogCollection {
   @scala.inline
   def apply(logs: js.Array[Log], pagination: LogPagination): LogCollection = {
     val __obj = js.Dynamic.literal(logs = logs.asInstanceOf[js.Any], pagination = pagination.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LogCollection]
   }
 }

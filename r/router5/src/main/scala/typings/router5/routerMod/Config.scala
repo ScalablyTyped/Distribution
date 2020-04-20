@@ -21,7 +21,6 @@ object Config {
     forwardMap: Record[String, _]
   ): Config = {
     val __obj = js.Dynamic.literal(decoders = decoders.asInstanceOf[js.Any], defaultParams = defaultParams.asInstanceOf[js.Any], encoders = encoders.asInstanceOf[js.Any], forwardMap = forwardMap.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Config]
   }
 }

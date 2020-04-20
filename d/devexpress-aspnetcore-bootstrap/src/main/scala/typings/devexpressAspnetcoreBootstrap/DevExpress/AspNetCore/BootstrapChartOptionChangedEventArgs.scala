@@ -23,7 +23,6 @@ object BootstrapChartOptionChangedEventArgs {
     value: js.Any
   ): BootstrapChartOptionChangedEventArgs = {
     val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], fullName = fullName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], previousValue = previousValue.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BootstrapChartOptionChangedEventArgs]
   }
 }

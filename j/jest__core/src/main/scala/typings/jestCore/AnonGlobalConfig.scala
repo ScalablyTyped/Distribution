@@ -15,7 +15,6 @@ object AnonGlobalConfig {
   @scala.inline
   def apply(globalConfig: GlobalConfig, results: AggregatedResult): AnonGlobalConfig = {
     val __obj = js.Dynamic.literal(globalConfig = globalConfig.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGlobalConfig]
   }
 }

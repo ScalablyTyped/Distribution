@@ -22,30 +22,28 @@ trait Types extends js.Object
 
 object Types {
   @scala.inline
-  def alternatives: typings.hapiJoi.hapiJoiStrings.alternatives = this.cast("alternatives")
+  def alternatives: typings.hapiJoi.hapiJoiStrings.alternatives = "alternatives".asInstanceOf[typings.hapiJoi.hapiJoiStrings.alternatives]
   @scala.inline
-  def any: typings.hapiJoi.hapiJoiStrings.any = this.cast("any")
+  def any: typings.hapiJoi.hapiJoiStrings.any = "any".asInstanceOf[typings.hapiJoi.hapiJoiStrings.any]
   @scala.inline
-  def array: typings.hapiJoi.hapiJoiStrings.array = this.cast("array")
+  def array: typings.hapiJoi.hapiJoiStrings.array = "array".asInstanceOf[typings.hapiJoi.hapiJoiStrings.array]
   @scala.inline
-  def binary: typings.hapiJoi.hapiJoiStrings.binary = this.cast("binary")
+  def binary: typings.hapiJoi.hapiJoiStrings.binary = "binary".asInstanceOf[typings.hapiJoi.hapiJoiStrings.binary]
   @scala.inline
-  def boolean: typings.hapiJoi.hapiJoiStrings.boolean = this.cast("boolean")
+  def boolean: typings.hapiJoi.hapiJoiStrings.boolean = "boolean".asInstanceOf[typings.hapiJoi.hapiJoiStrings.boolean]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def date: typings.hapiJoi.hapiJoiStrings.date = "date".asInstanceOf[typings.hapiJoi.hapiJoiStrings.date]
   @scala.inline
-  def date: typings.hapiJoi.hapiJoiStrings.date = this.cast("date")
+  def function: typings.hapiJoi.hapiJoiStrings.function = "function".asInstanceOf[typings.hapiJoi.hapiJoiStrings.function]
   @scala.inline
-  def function: typings.hapiJoi.hapiJoiStrings.function = this.cast("function")
+  def link: typings.hapiJoi.hapiJoiStrings.link = "link".asInstanceOf[typings.hapiJoi.hapiJoiStrings.link]
   @scala.inline
-  def link: typings.hapiJoi.hapiJoiStrings.link = this.cast("link")
+  def number: typings.hapiJoi.hapiJoiStrings.number = "number".asInstanceOf[typings.hapiJoi.hapiJoiStrings.number]
   @scala.inline
-  def number: typings.hapiJoi.hapiJoiStrings.number = this.cast("number")
+  def `object`: typings.hapiJoi.hapiJoiStrings.`object` = "object".asInstanceOf[typings.hapiJoi.hapiJoiStrings.`object`]
   @scala.inline
-  def `object`: typings.hapiJoi.hapiJoiStrings.`object` = this.cast("object")
+  def string: typings.hapiJoi.hapiJoiStrings.string = "string".asInstanceOf[typings.hapiJoi.hapiJoiStrings.string]
   @scala.inline
-  def string: typings.hapiJoi.hapiJoiStrings.string = this.cast("string")
-  @scala.inline
-  def symbol: typings.hapiJoi.hapiJoiStrings.symbol = this.cast("symbol")
+  def symbol: typings.hapiJoi.hapiJoiStrings.symbol = "symbol".asInstanceOf[typings.hapiJoi.hapiJoiStrings.symbol]
 }
 

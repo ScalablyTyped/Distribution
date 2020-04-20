@@ -14,7 +14,6 @@ object Features {
   @scala.inline
   def apply(flash: Boolean, flashVersion: Double, iframe: Boolean): Features = {
     val __obj = js.Dynamic.literal(flash = flash.asInstanceOf[js.Any], flashVersion = flashVersion.asInstanceOf[js.Any], iframe = iframe.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Features]
   }
 }

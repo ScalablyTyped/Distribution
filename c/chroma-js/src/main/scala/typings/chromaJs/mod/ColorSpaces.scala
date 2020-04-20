@@ -32,7 +32,6 @@ object ColorSpaces {
     rgba: js.Tuple4[Double, Double, Double, Double]
   ): ColorSpaces = {
     val __obj = js.Dynamic.literal(cmyk = cmyk.asInstanceOf[js.Any], gl = gl.asInstanceOf[js.Any], hcl = hcl.asInstanceOf[js.Any], hsi = hsi.asInstanceOf[js.Any], hsl = hsl.asInstanceOf[js.Any], hsv = hsv.asInstanceOf[js.Any], lab = lab.asInstanceOf[js.Any], lch = lch.asInstanceOf[js.Any], rgb = rgb.asInstanceOf[js.Any], rgba = rgba.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ColorSpaces]
   }
 }

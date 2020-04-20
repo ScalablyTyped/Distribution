@@ -18,7 +18,6 @@ object Callback {
     onKeyUp: (Double, typings.androiduix.android.view.KeyEvent) => Boolean
   ): Callback = {
     val __obj = js.Dynamic.literal(onKeyDown = js.Any.fromFunction2(onKeyDown), onKeyLongPress = js.Any.fromFunction2(onKeyLongPress), onKeyUp = js.Any.fromFunction2(onKeyUp))
-  
     __obj.asInstanceOf[Callback]
   }
 }

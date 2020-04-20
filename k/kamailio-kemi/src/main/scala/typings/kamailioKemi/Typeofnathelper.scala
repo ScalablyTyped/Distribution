@@ -34,7 +34,6 @@ object Typeofnathelper {
     set_contact_alias: () => Double
   ): Typeofnathelper = {
     val __obj = js.Dynamic.literal(add_contact_alias = js.Any.fromFunction0(add_contact_alias), add_contact_alias_addr = js.Any.fromFunction3(add_contact_alias_addr), add_rcv_param = js.Any.fromFunction1(add_rcv_param), fix_nated_contact = js.Any.fromFunction0(fix_nated_contact), fix_nated_register = js.Any.fromFunction0(fix_nated_register), fix_nated_sdp = js.Any.fromFunction1(fix_nated_sdp), fix_nated_sdp_ip = js.Any.fromFunction2(fix_nated_sdp_ip), handle_ruri_alias = js.Any.fromFunction0(handle_ruri_alias), is_rfc1918 = js.Any.fromFunction1(is_rfc1918), nat_uac_test = js.Any.fromFunction1(nat_uac_test), set_contact_alias = js.Any.fromFunction0(set_contact_alias))
-  
     __obj.asInstanceOf[Typeofnathelper]
   }
 }

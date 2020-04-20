@@ -24,9 +24,9 @@ class SortItemList protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FSortItemList: IModel = js.native
-  def containerAsDatabaseRetrieveSource(): DatabaseRetrieveSource = js.native
-  def containerAsSort(): Sort = js.native
-  def items(): IList[SortItem] = js.native
+  def containerAsDatabaseRetrieveSource: DatabaseRetrieveSource = js.native
+  def containerAsSort: Sort = js.native
+  def items: IList[SortItem] = js.native
 }
 
 /* static members */

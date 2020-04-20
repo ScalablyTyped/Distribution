@@ -19,7 +19,6 @@ object SearchFieldInterface {
   @scala.inline
   def apply(getValue: () => String, setValue: String => Unit): SearchFieldInterface = {
     val __obj = js.Dynamic.literal(getValue = js.Any.fromFunction0(getValue), setValue = js.Any.fromFunction1(setValue))
-  
     __obj.asInstanceOf[SearchFieldInterface]
   }
 }

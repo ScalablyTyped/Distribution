@@ -18,6 +18,7 @@ trait Optionsrawtrue extends js.Object {
   var raw: js.UndefOr[Boolean with `true`] = js.undefined
   var salt: js.UndefOr[Buffer] = js.undefined
   var saltLength: js.UndefOr[Double] = js.undefined
+  var secret: js.UndefOr[Buffer] = js.undefined
   var timeCost: js.UndefOr[Double] = js.undefined
   var `type`: js.UndefOr[`0` | `1` | `2`] = js.undefined
   var version: js.UndefOr[Double] = js.undefined
@@ -33,6 +34,7 @@ object Optionsrawtrue {
     raw: js.UndefOr[Boolean with `true`] = js.undefined,
     salt: Buffer = null,
     saltLength: Int | Double = null,
+    secret: Buffer = null,
     timeCost: Int | Double = null,
     `type`: `0` | `1` | `2` = null,
     version: Int | Double = null
@@ -45,6 +47,7 @@ object Optionsrawtrue {
     if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
     if (salt != null) __obj.updateDynamic("salt")(salt.asInstanceOf[js.Any])
     if (saltLength != null) __obj.updateDynamic("saltLength")(saltLength.asInstanceOf[js.Any])
+    if (secret != null) __obj.updateDynamic("secret")(secret.asInstanceOf[js.Any])
     if (timeCost != null) __obj.updateDynamic("timeCost")(timeCost.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])

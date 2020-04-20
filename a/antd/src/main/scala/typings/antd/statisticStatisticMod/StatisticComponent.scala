@@ -13,7 +13,6 @@ object StatisticComponent {
   @scala.inline
   def apply(Countdown: TypeofCountdown): StatisticComponent = {
     val __obj = js.Dynamic.literal(Countdown = Countdown.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StatisticComponent]
   }
 }

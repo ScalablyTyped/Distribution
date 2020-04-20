@@ -18,7 +18,6 @@ object TimedTextSize {
   @scala.inline
   def apply(height: Double, unit: TimedTextUnit, width: Double): TimedTextSize = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], unit = unit.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TimedTextSize]
   }
 }

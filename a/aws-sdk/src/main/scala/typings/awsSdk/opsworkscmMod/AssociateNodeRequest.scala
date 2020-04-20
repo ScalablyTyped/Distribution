@@ -24,7 +24,6 @@ object AssociateNodeRequest {
   @scala.inline
   def apply(EngineAttributes: EngineAttributes, NodeName: NodeName, ServerName: ServerName): AssociateNodeRequest = {
     val __obj = js.Dynamic.literal(EngineAttributes = EngineAttributes.asInstanceOf[js.Any], NodeName = NodeName.asInstanceOf[js.Any], ServerName = ServerName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssociateNodeRequest]
   }
 }

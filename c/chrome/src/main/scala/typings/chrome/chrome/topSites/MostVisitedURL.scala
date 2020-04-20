@@ -15,7 +15,6 @@ object MostVisitedURL {
   @scala.inline
   def apply(title: String, url: String): MostVisitedURL = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MostVisitedURL]
   }
 }

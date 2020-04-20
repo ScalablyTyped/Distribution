@@ -16,7 +16,6 @@ object GetDeliverabilityTestReportRequest {
   @scala.inline
   def apply(ReportId: ReportId): GetDeliverabilityTestReportRequest = {
     val __obj = js.Dynamic.literal(ReportId = ReportId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDeliverabilityTestReportRequest]
   }
 }

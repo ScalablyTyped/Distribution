@@ -1,5 +1,6 @@
 package typings.pulumiAws.authorizerMod
 
+import typings.pulumiAws.outputMod.apigatewayv2.AuthorizerJwtConfiguration
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.outputMod.Output_
@@ -9,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@pulumi/aws/apigateway/authorizer", "Authorizer")
+@JSImport("@pulumi/aws/apigatewayv2/authorizer", "Authorizer")
 @js.native
 class Authorizer protected () extends CustomResource {
   /**
@@ -22,55 +23,45 @@ class Authorizer protected () extends CustomResource {
   def this(name: String, args: AuthorizerArgs) = this()
   def this(name: String, args: AuthorizerArgs, opts: CustomResourceOptions) = this()
   /**
-    * The credentials required for the authorizer.
-    * To specify an IAM Role for API Gateway to assume, use the IAM Role ARN.
+    * The API identifier.
     */
-  val authorizerCredentials: Output_[js.UndefOr[String]] = js.native
+  val apiId: Output_[String] = js.native
   /**
-    * The TTL of cached authorizer results in seconds.
-    * Defaults to `300`.
+    * The required credentials as an IAM role for API Gateway to invoke the authorizer.
+    * Supported only for `REQUEST` authorizers.
     */
-  val authorizerResultTtlInSeconds: Output_[js.UndefOr[Double]] = js.native
+  val authorizerCredentialsArn: Output_[js.UndefOr[String]] = js.native
+  /**
+    * The authorizer type. Valid values: `JWT`, `REQUEST`.
+    * For WebSocket APIs, specify `REQUEST` for a Lambda function using incoming request parameters.
+    * For HTTP APIs, specify `JWT` to use JSON Web Tokens.
+    */
+  val authorizerType: Output_[String] = js.native
   /**
     * The authorizer's Uniform Resource Identifier (URI).
-    * This must be a well-formed Lambda function URI in the form of `arn:aws:apigateway:{region}:lambda:path/{service_api}`,
-    * e.g. `arn:aws:apigateway:us-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-west-2:012345678912:function:my-function/invocations`
+    * For `REQUEST` authorizers this must be a well-formed Lambda function URI, such as the `invokeArn` attribute of the [`aws.lambda.Function`](https://www.terraform.io/docs/providers/aws/r/lambda_function.html) resource.
+    * Supported only for `REQUEST` authorizers.
     */
   val authorizerUri: Output_[js.UndefOr[String]] = js.native
   /**
-    * The source of the identity in an incoming request.
-    * Defaults to `method.request.header.Authorization`. For `REQUEST` type, this may be a comma-separated list of values, including headers, query string parameters and stage variables - e.g. `"method.request.header.SomeHeaderName,method.request.querystring.SomeQueryStringName,stageVariables.SomeStageVariableName"`
+    * The identity sources for which authorization is requested.
+    * For `REQUEST` authorizers the value is a list of one or more mapping expressions of the specified request parameters.
+    * For `JWT` authorizers the single entry specifies where to extract the JSON Web Token (JWT) from inbound requests.
     */
-  val identitySource: Output_[js.UndefOr[String]] = js.native
+  val identitySources: Output_[js.Array[String]] = js.native
   /**
-    * A validation expression for the incoming identity.
-    * For `TOKEN` type, this value should be a regular expression. The incoming token from the client is matched
-    * against this expression, and will proceed if the token matches. If the token doesn't match,
-    * the client receives a 401 Unauthorized response.
+    * The configuration of a JWT authorizer. Required for the `JWT` authorizer type.
+    * Supported only for HTTP APIs.
     */
-  val identityValidationExpression: Output_[js.UndefOr[String]] = js.native
+  val jwtConfiguration: Output_[js.UndefOr[AuthorizerJwtConfiguration]] = js.native
   /**
-    * The name of the authorizer
+    * The name of the authorizer.
     */
   val name: Output_[String] = js.native
-  /**
-    * A list of the Amazon Cognito user pool ARNs.
-    * Each element is of this format: `arn:aws:cognito-idp:{region}:{account_id}:userpool/{user_pool_id}`.
-    */
-  val providerArns: Output_[js.UndefOr[js.Array[String]]] = js.native
-  /**
-    * The ID of the associated REST API
-    */
-  val restApi: Output_[String] = js.native
-  /**
-    * The type of the authorizer. Possible values are `TOKEN` for a Lambda function using a single authorization token submitted in a custom header, `REQUEST` for a Lambda function using incoming request parameters, or `COGNITO_USER_POOLS` for using an Amazon Cognito user pool.
-    * Defaults to `TOKEN`.
-    */
-  val `type`: Output_[js.UndefOr[String]] = js.native
 }
 
 /* static members */
-@JSImport("@pulumi/aws/apigateway/authorizer", "Authorizer")
+@JSImport("@pulumi/aws/apigatewayv2/authorizer", "Authorizer")
 @js.native
 object Authorizer extends js.Object {
   /**
@@ -88,6 +79,6 @@ object Authorizer extends js.Object {
     * Returns true if the given object is an instance of Authorizer.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
-  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/authorizer.Authorizer */ Boolean = js.native
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/authorizer.Authorizer */ Boolean = js.native
 }
 

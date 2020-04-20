@@ -17,7 +17,6 @@ object ConnectionSite {
   @scala.inline
   def apply(getIndex: () => Integer, getPageElement: () => PageElement): ConnectionSite = {
     val __obj = js.Dynamic.literal(getIndex = js.Any.fromFunction0(getIndex), getPageElement = js.Any.fromFunction0(getPageElement))
-  
     __obj.asInstanceOf[ConnectionSite]
   }
 }

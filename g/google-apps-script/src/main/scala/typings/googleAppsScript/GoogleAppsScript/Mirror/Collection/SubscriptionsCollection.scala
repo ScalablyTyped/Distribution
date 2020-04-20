@@ -26,7 +26,6 @@ object SubscriptionsCollection {
     update: (Subscription, String) => Subscription
   ): SubscriptionsCollection = {
     val __obj = js.Dynamic.literal(insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction0(list), remove = js.Any.fromFunction1(remove), update = js.Any.fromFunction2(update))
-  
     __obj.asInstanceOf[SubscriptionsCollection]
   }
 }

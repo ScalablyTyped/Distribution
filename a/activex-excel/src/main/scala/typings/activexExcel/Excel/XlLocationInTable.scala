@@ -28,24 +28,22 @@ trait XlLocationInTable extends js.Object
 
 object XlLocationInTable {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlColumnHeader: `-4110` = -4110.asInstanceOf[`-4110`]
   @scala.inline
-  def xlColumnHeader: `-4110` = this.cast(-4110)
+  def xlColumnItem: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xlColumnItem: `5` = this.cast(5)
+  def xlDataHeader: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlDataHeader: `3` = this.cast(3)
+  def xlDataItem: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def xlDataItem: `7` = this.cast(7)
+  def xlPageHeader: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlPageHeader: `2` = this.cast(2)
+  def xlPageItem: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def xlPageItem: `6` = this.cast(6)
+  def xlRowHeader: `-4153` = -4153.asInstanceOf[`-4153`]
   @scala.inline
-  def xlRowHeader: `-4153` = this.cast(-4153)
+  def xlRowItem: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlRowItem: `4` = this.cast(4)
-  @scala.inline
-  def xlTableBody: `8` = this.cast(8)
+  def xlTableBody: `8` = 8.asInstanceOf[`8`]
 }
 

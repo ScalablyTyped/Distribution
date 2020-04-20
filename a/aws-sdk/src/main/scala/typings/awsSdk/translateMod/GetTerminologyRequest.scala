@@ -20,7 +20,6 @@ object GetTerminologyRequest {
   @scala.inline
   def apply(Name: ResourceName, TerminologyDataFormat: TerminologyDataFormat): GetTerminologyRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], TerminologyDataFormat = TerminologyDataFormat.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetTerminologyRequest]
   }
 }

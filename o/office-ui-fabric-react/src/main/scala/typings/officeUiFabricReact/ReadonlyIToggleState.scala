@@ -13,7 +13,6 @@ object ReadonlyIToggleState {
   @scala.inline
   def apply(checked: Boolean): ReadonlyIToggleState = {
     val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReadonlyIToggleState]
   }
 }

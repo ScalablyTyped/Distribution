@@ -20,7 +20,6 @@ object RejectAssignmentRequest {
   @scala.inline
   def apply(AssignmentId: EntityId, RequesterFeedback: String): RejectAssignmentRequest = {
     val __obj = js.Dynamic.literal(AssignmentId = AssignmentId.asInstanceOf[js.Any], RequesterFeedback = RequesterFeedback.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RejectAssignmentRequest]
   }
 }

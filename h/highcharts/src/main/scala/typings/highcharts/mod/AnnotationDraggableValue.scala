@@ -14,14 +14,12 @@ trait AnnotationDraggableValue extends js.Object
 
 object AnnotationDraggableValue {
   @scala.inline
-  def _empty: typings.highcharts.highchartsStrings._empty = this.cast("")
+  def _empty: typings.highcharts.highchartsStrings._empty = "".asInstanceOf[typings.highcharts.highchartsStrings._empty]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def x: typings.highcharts.highchartsStrings.x = "x".asInstanceOf[typings.highcharts.highchartsStrings.x]
   @scala.inline
-  def x: typings.highcharts.highchartsStrings.x = this.cast("x")
+  def xy: typings.highcharts.highchartsStrings.xy = "xy".asInstanceOf[typings.highcharts.highchartsStrings.xy]
   @scala.inline
-  def xy: typings.highcharts.highchartsStrings.xy = this.cast("xy")
-  @scala.inline
-  def y: typings.highcharts.highchartsStrings.y = this.cast("y")
+  def y: typings.highcharts.highchartsStrings.y = "y".asInstanceOf[typings.highcharts.highchartsStrings.y]
 }
 

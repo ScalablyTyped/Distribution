@@ -12,7 +12,7 @@ trait EncodeStringDict extends js.Object {
   /**
   	 * Character encoding to use when encoding this string to bytes.
   	 */
-  var charset: js.UndefOr[String] = js.undefined
+  var charset: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Destination buffer.
   	 */
@@ -24,7 +24,7 @@ trait EncodeStringDict extends js.Object {
   /**
   	 * Source string to encode.
   	 */
-  var source: String
+  var source: java.lang.String
   /**
   	 * Number of characters in `source` to encode.
   	 */
@@ -39,8 +39,8 @@ object EncodeStringDict {
   @scala.inline
   def apply(
     dest: Buffer,
-    source: String,
-    charset: String = null,
+    source: java.lang.String,
+    charset: java.lang.String = null,
     destPosition: Int | Double = null,
     sourceLength: Int | Double = null,
     sourcePosition: Int | Double = null

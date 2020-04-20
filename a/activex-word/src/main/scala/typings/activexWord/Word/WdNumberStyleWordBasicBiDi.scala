@@ -14,22 +14,20 @@ trait WdNumberStyleWordBasicBiDi extends js.Object
 
 object WdNumberStyleWordBasicBiDi {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdCaptionNumberStyleBidiLetter1: `49` = 49.asInstanceOf[`49`]
   @scala.inline
-  def wdCaptionNumberStyleBidiLetter1: `49` = this.cast(49)
+  def wdCaptionNumberStyleBidiLetter2: `50` = 50.asInstanceOf[`50`]
   @scala.inline
-  def wdCaptionNumberStyleBidiLetter2: `50` = this.cast(50)
+  def wdListNumberStyleBidi1: `49` = 49.asInstanceOf[`49`]
   @scala.inline
-  def wdListNumberStyleBidi1: `49` = this.cast(49)
+  def wdListNumberStyleBidi2: `50` = 50.asInstanceOf[`50`]
   @scala.inline
-  def wdListNumberStyleBidi2: `50` = this.cast(50)
+  def wdNoteNumberStyleBidiLetter1: `49` = 49.asInstanceOf[`49`]
   @scala.inline
-  def wdNoteNumberStyleBidiLetter1: `49` = this.cast(49)
+  def wdNoteNumberStyleBidiLetter2: `50` = 50.asInstanceOf[`50`]
   @scala.inline
-  def wdNoteNumberStyleBidiLetter2: `50` = this.cast(50)
+  def wdPageNumberStyleBidiLetter1: `49` = 49.asInstanceOf[`49`]
   @scala.inline
-  def wdPageNumberStyleBidiLetter1: `49` = this.cast(49)
-  @scala.inline
-  def wdPageNumberStyleBidiLetter2: `50` = this.cast(50)
+  def wdPageNumberStyleBidiLetter2: `50` = 50.asInstanceOf[`50`]
 }
 

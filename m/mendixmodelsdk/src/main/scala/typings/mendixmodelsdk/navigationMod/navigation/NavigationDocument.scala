@@ -38,54 +38,54 @@ class NavigationDocument protected () extends ProjectDocument {
   @JSName("profiles")
   val profiles_FNavigationDocument: IList[INavigationProfileBase] = js.native
   @JSName("containerAsProject")
-  def containerAsProject_MNavigationDocument(): Project = js.native
+  def containerAsProject_MNavigationDocument: Project = js.native
   /**
     * In version 7.2.0: deleted
     */
-  def desktopProfile(): NavigationProfile = js.native
+  def desktopProfile: NavigationProfile = js.native
   def desktopProfile(newValue: NavigationProfile): js.Any = js.native
   /**
     * In version 7.2.0: deleted
     * In version 7.0.2: introduced
     */
-  def hybridPhoneProfile(): NavigationProfile = js.native
+  def hybridPhoneProfile: NavigationProfile = js.native
   def hybridPhoneProfile(newValue: NavigationProfile): js.Any = js.native
   /**
     * In version 7.0.0: deleted
     * In version 6.10.4: introduced
     */
-  def hybridPhoneProfile6(): NavigationProfile = js.native
+  def hybridPhoneProfile6: NavigationProfile = js.native
   def hybridPhoneProfile6(newValue: NavigationProfile): js.Any = js.native
   /**
     * In version 7.2.0: deleted
     * In version 7.0.2: introduced
     */
-  def hybridTabletProfile(): NavigationProfile = js.native
+  def hybridTabletProfile: NavigationProfile = js.native
   def hybridTabletProfile(newValue: NavigationProfile): js.Any = js.native
   /**
     * In version 7.0.0: deleted
     * In version 6.10.4: introduced
     */
-  def hybridTabletProfile6(): NavigationProfile = js.native
+  def hybridTabletProfile6: NavigationProfile = js.native
   def hybridTabletProfile6(newValue: NavigationProfile): js.Any = js.native
   /**
     * In version 7.0.2: deleted
     */
-  def offlinePhoneProfile(): NavigationProfile = js.native
+  def offlinePhoneProfile: NavigationProfile = js.native
   def offlinePhoneProfile(newValue: NavigationProfile): js.Any = js.native
   /**
     * In version 7.2.0: deleted
     */
-  def phoneProfile(): NavigationProfile = js.native
+  def phoneProfile: NavigationProfile = js.native
   def phoneProfile(newValue: NavigationProfile): js.Any = js.native
   /**
     * In version 7.2.0: introduced
     */
-  def profiles(): IList[NavigationProfileBase] = js.native
+  def profiles: IList[NavigationProfileBase] = js.native
   /**
     * In version 7.2.0: deleted
     */
-  def tabletProfile(): NavigationProfile = js.native
+  def tabletProfile: NavigationProfile = js.native
   def tabletProfile(newValue: NavigationProfile): js.Any = js.native
 }
 

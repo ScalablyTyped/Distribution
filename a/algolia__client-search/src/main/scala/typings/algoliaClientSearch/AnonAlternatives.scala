@@ -15,7 +15,6 @@ object AnonAlternatives {
   @scala.inline
   def apply(alternatives: js.Array[AnonLength]): AnonAlternatives = {
     val __obj = js.Dynamic.literal(alternatives = alternatives.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAlternatives]
   }
 }

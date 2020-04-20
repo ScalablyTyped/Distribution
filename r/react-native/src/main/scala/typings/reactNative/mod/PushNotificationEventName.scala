@@ -14,14 +14,12 @@ trait PushNotificationEventName extends js.Object
 
 object PushNotificationEventName {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def localNotification: typings.reactNative.reactNativeStrings.localNotification = "localNotification".asInstanceOf[typings.reactNative.reactNativeStrings.localNotification]
   @scala.inline
-  def localNotification: typings.reactNative.reactNativeStrings.localNotification = this.cast("localNotification")
+  def notification: typings.reactNative.reactNativeStrings.notification = "notification".asInstanceOf[typings.reactNative.reactNativeStrings.notification]
   @scala.inline
-  def notification: typings.reactNative.reactNativeStrings.notification = this.cast("notification")
+  def register: typings.reactNative.reactNativeStrings.register = "register".asInstanceOf[typings.reactNative.reactNativeStrings.register]
   @scala.inline
-  def register: typings.reactNative.reactNativeStrings.register = this.cast("register")
-  @scala.inline
-  def registrationError: typings.reactNative.reactNativeStrings.registrationError = this.cast("registrationError")
+  def registrationError: typings.reactNative.reactNativeStrings.registrationError = "registrationError".asInstanceOf[typings.reactNative.reactNativeStrings.registrationError]
 }
 

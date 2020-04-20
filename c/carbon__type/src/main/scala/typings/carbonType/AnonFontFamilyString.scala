@@ -12,7 +12,6 @@ object AnonFontFamilyString {
   @scala.inline
   def apply(fontFamily: String): AnonFontFamilyString = {
     val __obj = js.Dynamic.literal(fontFamily = fontFamily.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFontFamilyString]
   }
 }

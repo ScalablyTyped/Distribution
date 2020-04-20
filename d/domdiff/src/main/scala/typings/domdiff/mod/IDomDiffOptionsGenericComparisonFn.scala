@@ -15,7 +15,6 @@ object IDomDiffOptionsGenericComparisonFn {
   @scala.inline
   def apply(compare: (js.Any, js.Any) => Boolean): IDomDiffOptionsGenericComparisonFn = {
     val __obj = js.Dynamic.literal(compare = js.Any.fromFunction2(compare))
-  
     __obj.asInstanceOf[IDomDiffOptionsGenericComparisonFn]
   }
 }

@@ -13,7 +13,6 @@ object PickImplkeyboardShortcuts {
   @scala.inline
   def apply(keyboardShortcuts: Boolean): PickImplkeyboardShortcuts = {
     val __obj = js.Dynamic.literal(keyboardShortcuts = keyboardShortcuts.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplkeyboardShortcuts]
   }
 }

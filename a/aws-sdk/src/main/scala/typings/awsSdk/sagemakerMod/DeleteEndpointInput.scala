@@ -16,7 +16,6 @@ object DeleteEndpointInput {
   @scala.inline
   def apply(EndpointName: EndpointName): DeleteEndpointInput = {
     val __obj = js.Dynamic.literal(EndpointName = EndpointName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteEndpointInput]
   }
 }

@@ -24,7 +24,7 @@ object integrationsCordovaMod extends js.Object {
     @JSName("summary")
     val summary_Integration: `Target native iOS and Android with Apache Cordova` = js.native
     @JSName("config")
-    def config_MIntegration(): IntegrationConfig = js.native
+    def config_MIntegration: IntegrationConfig = js.native
     /* InferMemberOverrides */
     override def enable(config: ProjectIntegration): js.Promise[Unit] = js.native
     def getConfig(): js.Promise[js.UndefOr[CordovaConfig]] = js.native

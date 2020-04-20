@@ -26,7 +26,6 @@ object IShape {
     shift: js.Array[Double] => IShape
   ): IShape = {
     val __obj = js.Dynamic.literal(contains = js.Any.fromFunction1(contains), equals = js.Any.fromFunction1(equals), getBounds = js.Any.fromFunction0(getBounds), getGeometry = js.Any.fromFunction0(getGeometry), getType = js.Any.fromFunction0(getType), scale = js.Any.fromFunction1(scale), shift = js.Any.fromFunction1(shift))
-  
     __obj.asInstanceOf[IShape]
   }
 }

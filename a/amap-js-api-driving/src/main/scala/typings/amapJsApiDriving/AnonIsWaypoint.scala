@@ -12,7 +12,6 @@ object AnonIsWaypoint {
   @scala.inline
   def apply(isWaypoint: Boolean): AnonIsWaypoint = {
     val __obj = js.Dynamic.literal(isWaypoint = isWaypoint.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsWaypoint]
   }
 }

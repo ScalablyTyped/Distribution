@@ -20,7 +20,6 @@ object ContainerDependency {
   @scala.inline
   def apply(condition: ContainerCondition, containerName: String): ContainerDependency = {
     val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any], containerName = containerName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ContainerDependency]
   }
 }

@@ -29,7 +29,6 @@ object Typeofremote {
     SeleniumServer: Instantiable1[/* jar */ String, SeleniumServer]
   ): Typeofremote = {
     val __obj = js.Dynamic.literal(DriverService = DriverService.asInstanceOf[js.Any], FileDetector = FileDetector.asInstanceOf[js.Any], SeleniumServer = SeleniumServer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Typeofremote]
   }
 }

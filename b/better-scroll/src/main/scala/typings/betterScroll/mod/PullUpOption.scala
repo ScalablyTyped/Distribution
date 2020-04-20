@@ -12,7 +12,6 @@ object PullUpOption {
   @scala.inline
   def apply(threshold: Double): PullUpOption = {
     val __obj = js.Dynamic.literal(threshold = threshold.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PullUpOption]
   }
 }

@@ -56,7 +56,6 @@ object DirectionsViewModelSelectedTravelMode {
     timeAttributeName: String
   ): DirectionsViewModelSelectedTravelMode = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id.asInstanceOf[js.Any], impedanceAttributeName = impedanceAttributeName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), timeAttributeName = timeAttributeName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DirectionsViewModelSelectedTravelMode]
   }
 }

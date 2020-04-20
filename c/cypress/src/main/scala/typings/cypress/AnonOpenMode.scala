@@ -1,6 +1,6 @@
 package typings.cypress
 
-import typings.cypress.cypressMod.Nullable
+import typings.cypress.mod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

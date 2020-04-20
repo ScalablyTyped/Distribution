@@ -15,7 +15,6 @@ object ExtensionQueryResult {
   @scala.inline
   def apply(results: js.Array[ExtensionFilterResult]): ExtensionQueryResult = {
     val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExtensionQueryResult]
   }
 }

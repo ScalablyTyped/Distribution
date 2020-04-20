@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TrialComponentSource extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) of the source.
+    * The source ARN.
     */
   var SourceArn: TrialComponentSourceArn = js.native
   /**

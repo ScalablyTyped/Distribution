@@ -20,7 +20,6 @@ object UpdateResourceRequest {
   @scala.inline
   def apply(ResourceArn: ResourceArnString, RoleArn: IAMRoleArn): UpdateResourceRequest = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateResourceRequest]
   }
 }

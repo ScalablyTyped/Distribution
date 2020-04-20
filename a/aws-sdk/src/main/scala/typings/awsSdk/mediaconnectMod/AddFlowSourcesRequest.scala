@@ -20,7 +20,6 @@ object AddFlowSourcesRequest {
   @scala.inline
   def apply(FlowArn: string, Sources: listOfSetSourceRequest): AddFlowSourcesRequest = {
     val __obj = js.Dynamic.literal(FlowArn = FlowArn.asInstanceOf[js.Any], Sources = Sources.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddFlowSourcesRequest]
   }
 }

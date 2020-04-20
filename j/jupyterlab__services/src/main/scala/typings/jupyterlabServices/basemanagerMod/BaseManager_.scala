@@ -70,11 +70,11 @@ abstract class BaseManager_ protected () extends IManager {
     * A signal emitted when the delegate is disposed.
     */
   @JSName("disposed")
-  def disposed_MBaseManager_(): ISignal[this.type, Unit] = js.native
+  def disposed_MBaseManager_ : ISignal[this.type, Unit] = js.native
   /**
     * Test whether the delegate has been disposed.
     */
   @JSName("isDisposed")
-  def isDisposed_MBaseManager_(): Boolean = js.native
+  def isDisposed_MBaseManager_ : Boolean = js.native
 }
 

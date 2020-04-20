@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object swan {
   type AccelerometerChangeCallback = js.Function1[/* res */ typings.baiduApp.swan.AccelerometerData, scala.Unit]
-  type ArrayPropsDefinition[T] = js.Array[java.lang.String]
+  type ArrayPropsDefinition[T] = js.Array[/* keyof T */ java.lang.String]
   type BuiltInEvent[T /* <: typings.baiduApp.swan.EventType */, Detail] = typings.baiduApp.swan.BaseEvent[T, Detail]
   type CheckSessionOption = typings.baiduApp.swan.BaseOptions[js.Any, js.Any]
   // CombinedInstance models the `this`, i.e. instance type for (user defined) component
@@ -43,7 +43,7 @@ package object swan {
   type PropsDefinition[T] = typings.baiduApp.swan.ArrayPropsDefinition[T] | typings.baiduApp.swan.RecordPropsDefinition[T]
   type RecordPropsDefinition[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: baidu-app.swan.PropValidator<T[K]>}
-    */ typings.baiduApp.baiduAppStrings.RecordPropsDefinition with T
+    */ typings.baiduApp.baiduAppStrings.RecordPropsDefinition with org.scalablytyped.runtime.TopLevel[T]
   // #endregion
   // #region 网络API列表
   // 发起请求

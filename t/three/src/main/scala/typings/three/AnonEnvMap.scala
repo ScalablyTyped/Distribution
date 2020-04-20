@@ -23,7 +23,6 @@ object AnonEnvMap {
     refractionRatio: IUniform
   ): AnonEnvMap = {
     val __obj = js.Dynamic.literal(envMap = envMap.asInstanceOf[js.Any], flipEnvMap = flipEnvMap.asInstanceOf[js.Any], maxMipLevel = maxMipLevel.asInstanceOf[js.Any], reflectivity = reflectivity.asInstanceOf[js.Any], refractionRatio = refractionRatio.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnvMap]
   }
 }

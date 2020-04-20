@@ -13,7 +13,6 @@ object StrategyEnum {
   @scala.inline
   def apply(attention: Double, entropy: Double): StrategyEnum = {
     val __obj = js.Dynamic.literal(attention = attention.asInstanceOf[js.Any], entropy = entropy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StrategyEnum]
   }
 }

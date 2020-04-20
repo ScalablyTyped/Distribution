@@ -22,7 +22,6 @@ object AnonDefault {
   @scala.inline
   def apply(basePaths: js.Array[String], default: String): AnonDefault = {
     val __obj = js.Dynamic.literal(basePaths = basePaths.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDefault]
   }
 }

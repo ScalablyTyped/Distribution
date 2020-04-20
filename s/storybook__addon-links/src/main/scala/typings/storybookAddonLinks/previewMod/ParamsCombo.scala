@@ -13,7 +13,6 @@ object ParamsCombo {
   @scala.inline
   def apply(kind: String, story: String): ParamsCombo = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], story = story.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ParamsCombo]
   }
 }

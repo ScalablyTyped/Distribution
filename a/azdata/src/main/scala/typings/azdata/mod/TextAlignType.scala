@@ -16,18 +16,16 @@ trait TextAlignType extends js.Object
 
 object TextAlignType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.azdata.azdataStrings.center = "center".asInstanceOf[typings.azdata.azdataStrings.center]
   @scala.inline
-  def center: typings.azdata.azdataStrings.center = this.cast("center")
+  def inherit: typings.azdata.azdataStrings.inherit = "inherit".asInstanceOf[typings.azdata.azdataStrings.inherit]
   @scala.inline
-  def inherit: typings.azdata.azdataStrings.inherit = this.cast("inherit")
+  def initial: typings.azdata.azdataStrings.initial = "initial".asInstanceOf[typings.azdata.azdataStrings.initial]
   @scala.inline
-  def initial: typings.azdata.azdataStrings.initial = this.cast("initial")
+  def justify: typings.azdata.azdataStrings.justify = "justify".asInstanceOf[typings.azdata.azdataStrings.justify]
   @scala.inline
-  def justify: typings.azdata.azdataStrings.justify = this.cast("justify")
+  def left: typings.azdata.azdataStrings.left = "left".asInstanceOf[typings.azdata.azdataStrings.left]
   @scala.inline
-  def left: typings.azdata.azdataStrings.left = this.cast("left")
-  @scala.inline
-  def right: typings.azdata.azdataStrings.right = this.cast("right")
+  def right: typings.azdata.azdataStrings.right = "right".asInstanceOf[typings.azdata.azdataStrings.right]
 }
 

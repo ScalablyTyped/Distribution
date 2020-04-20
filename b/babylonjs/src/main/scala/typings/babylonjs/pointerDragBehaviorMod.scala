@@ -138,11 +138,11 @@ object pointerDragBehaviorMod extends js.Object {
       *  The name of the behavior
       */
     @JSName("name")
-    def name_MPointerDragBehavior(): String = js.native
+    def name_MPointerDragBehavior: String = js.native
     /**
       * Gets the options used by the behavior
       */
-    def options(): AnonDragAxis = js.native
+    def options: AnonDragAxis = js.native
     /**
       * Sets the options used by the behavior
       */

@@ -14,7 +14,6 @@ object AnonCscrequired {
   @scala.inline
   def apply(allowed: Boolean, csc_required: Boolean, items: js.Array[AnonId]): AnonCscrequired = {
     val __obj = js.Dynamic.literal(allowed = allowed.asInstanceOf[js.Any], csc_required = csc_required.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCscrequired]
   }
 }

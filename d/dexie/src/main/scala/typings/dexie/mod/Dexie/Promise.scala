@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Promise[T] extends js.Object {
-  @JSName(scala.scalajs.js.Symbol.toStringTag)
+  @JSName(js.Symbol.toStringTag)
   val toStringTag: typings.dexie.dexieStrings.Promise = js.native
   def `catch`(): Promise[T] = js.native
   /**

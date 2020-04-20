@@ -20,7 +20,6 @@ object UntagRoleRequest {
   @scala.inline
   def apply(RoleName: roleNameType, TagKeys: tagKeyListType): UntagRoleRequest = {
     val __obj = js.Dynamic.literal(RoleName = RoleName.asInstanceOf[js.Any], TagKeys = TagKeys.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UntagRoleRequest]
   }
 }

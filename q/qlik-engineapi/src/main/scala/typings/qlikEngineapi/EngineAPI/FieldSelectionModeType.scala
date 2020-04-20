@@ -13,12 +13,10 @@ trait FieldSelectionModeType extends js.Object
 
 object FieldSelectionModeType {
   @scala.inline
-  def AND: typings.qlikEngineapi.qlikEngineapiStrings.AND = this.cast("AND")
+  def AND: typings.qlikEngineapi.qlikEngineapiStrings.AND = "AND".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.AND]
   @scala.inline
-  def NORMAL: typings.qlikEngineapi.qlikEngineapiStrings.NORMAL = this.cast("NORMAL")
+  def NORMAL: typings.qlikEngineapi.qlikEngineapiStrings.NORMAL = "NORMAL".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.NORMAL]
   @scala.inline
-  def NOT: typings.qlikEngineapi.qlikEngineapiStrings.NOT = this.cast("NOT")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def NOT: typings.qlikEngineapi.qlikEngineapiStrings.NOT = "NOT".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.NOT]
 }
 

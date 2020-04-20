@@ -12,10 +12,8 @@ trait HistoryMethod extends js.Object
 
 object HistoryMethod {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def pushState: typings.next.nextStrings.pushState = "pushState".asInstanceOf[typings.next.nextStrings.pushState]
   @scala.inline
-  def pushState: typings.next.nextStrings.pushState = this.cast("pushState")
-  @scala.inline
-  def replaceState: typings.next.nextStrings.replaceState = this.cast("replaceState")
+  def replaceState: typings.next.nextStrings.replaceState = "replaceState".asInstanceOf[typings.next.nextStrings.replaceState]
 }
 

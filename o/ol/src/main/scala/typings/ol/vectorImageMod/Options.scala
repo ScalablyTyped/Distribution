@@ -15,7 +15,9 @@ trait Options extends js.Object {
   var imageRatio: js.UndefOr[Double] = js.undefined
   var map: js.UndefOr[typings.ol.pluggableMapMod.default] = js.undefined
   var maxResolution: js.UndefOr[Double] = js.undefined
+  var maxZoom: js.UndefOr[Double] = js.undefined
   var minResolution: js.UndefOr[Double] = js.undefined
+  var minZoom: js.UndefOr[Double] = js.undefined
   var opacity: js.UndefOr[Double] = js.undefined
   var renderBuffer: js.UndefOr[Double] = js.undefined
   var renderOrder: js.UndefOr[OrderFunction] = js.undefined
@@ -36,7 +38,9 @@ object Options {
     imageRatio: Int | Double = null,
     map: typings.ol.pluggableMapMod.default = null,
     maxResolution: Int | Double = null,
+    maxZoom: Int | Double = null,
     minResolution: Int | Double = null,
+    minZoom: Int | Double = null,
     opacity: Int | Double = null,
     renderBuffer: Int | Double = null,
     renderOrder: (/* p0 */ FeatureLike, /* p1 */ FeatureLike) => Double = null,
@@ -54,7 +58,9 @@ object Options {
     if (imageRatio != null) __obj.updateDynamic("imageRatio")(imageRatio.asInstanceOf[js.Any])
     if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
     if (maxResolution != null) __obj.updateDynamic("maxResolution")(maxResolution.asInstanceOf[js.Any])
+    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
     if (minResolution != null) __obj.updateDynamic("minResolution")(minResolution.asInstanceOf[js.Any])
+    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (renderBuffer != null) __obj.updateDynamic("renderBuffer")(renderBuffer.asInstanceOf[js.Any])
     if (renderOrder != null) __obj.updateDynamic("renderOrder")(js.Any.fromFunction2(renderOrder))

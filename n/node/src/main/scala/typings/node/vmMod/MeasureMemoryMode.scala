@@ -12,10 +12,8 @@ trait MeasureMemoryMode extends js.Object
 
 object MeasureMemoryMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def detailed: typings.node.nodeStrings.detailed = "detailed".asInstanceOf[typings.node.nodeStrings.detailed]
   @scala.inline
-  def detailed: typings.node.nodeStrings.detailed = this.cast("detailed")
-  @scala.inline
-  def summary: typings.node.nodeStrings.summary = this.cast("summary")
+  def summary: typings.node.nodeStrings.summary = "summary".asInstanceOf[typings.node.nodeStrings.summary]
 }
 

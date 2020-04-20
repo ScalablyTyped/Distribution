@@ -12,10 +12,8 @@ trait InteractionPixiEvents extends js.Object
 
 object InteractionPixiEvents {
   @scala.inline
-  def added: typings.pixiJs.pixiJsStrings.added = this.cast("added")
+  def added: typings.pixiJs.pixiJsStrings.added = "added".asInstanceOf[typings.pixiJs.pixiJsStrings.added]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def removed: typings.pixiJs.pixiJsStrings.removed = this.cast("removed")
+  def removed: typings.pixiJs.pixiJsStrings.removed = "removed".asInstanceOf[typings.pixiJs.pixiJsStrings.removed]
 }
 

@@ -14,7 +14,6 @@ object AnonAccessLocation {
   @scala.inline
   def apply(accessLocation: UriParam, accessMethod: AnonOidString): AnonAccessLocation = {
     val __obj = js.Dynamic.literal(accessLocation = accessLocation.asInstanceOf[js.Any], accessMethod = accessMethod.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAccessLocation]
   }
 }

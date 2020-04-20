@@ -23,7 +23,7 @@ trait DeleteStackInstancesInput extends js.Object {
     */
   var OperationPreferences: js.UndefOr[StackSetOperationPreferences] = js.native
   /**
-    * The regions where you want to delete stack set instances. 
+    * The Regions where you want to delete stack set instances. 
     */
   var Regions: RegionList = js.native
   /**

@@ -12,7 +12,6 @@ object ISelectState {
   @scala.inline
   def apply(isOpen: Boolean): ISelectState = {
     val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISelectState]
   }
 }

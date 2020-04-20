@@ -28,7 +28,6 @@ object Typeofxlog {
     xwarn: String => Double
   ): Typeofxlog = {
     val __obj = js.Dynamic.literal(xalert = js.Any.fromFunction1(xalert), xcrit = js.Any.fromFunction1(xcrit), xdbg = js.Any.fromFunction1(xdbg), xerr = js.Any.fromFunction1(xerr), xinfo = js.Any.fromFunction1(xinfo), xlog = js.Any.fromFunction2(xlog), xnotice = js.Any.fromFunction1(xnotice), xwarn = js.Any.fromFunction1(xwarn))
-  
     __obj.asInstanceOf[Typeofxlog]
   }
 }

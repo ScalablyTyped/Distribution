@@ -20,7 +20,6 @@ object PutLifecycleConfigurationRequest {
   @scala.inline
   def apply(FileSystemId: FileSystemId, LifecyclePolicies: LifecyclePolicies): PutLifecycleConfigurationRequest = {
     val __obj = js.Dynamic.literal(FileSystemId = FileSystemId.asInstanceOf[js.Any], LifecyclePolicies = LifecyclePolicies.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutLifecycleConfigurationRequest]
   }
 }

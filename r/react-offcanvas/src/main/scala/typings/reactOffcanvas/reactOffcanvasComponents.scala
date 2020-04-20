@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 object reactOffcanvasComponents extends reactOffcanvasProps {
   @scala.inline
-  def OffCanvas: ComponentType[OffCanvasProps] = js.constructorOf[typings.reactOffcanvas.mod.OffCanvas].asInstanceOf[typings.react.mod.ComponentType[OffCanvasProps]]
+  def OffCanvas: ComponentType[OffCanvasProps] = js.constructorOf[typings.reactOffcanvas.mod.OffCanvas].asInstanceOf[ComponentType[OffCanvasProps]]
   @scala.inline
-  def OffCanvasBody: ComponentType[OffCanvasBodyProps] = js.constructorOf[typings.reactOffcanvas.mod.OffCanvasBody].asInstanceOf[typings.react.mod.ComponentType[OffCanvasBodyProps]]
+  def OffCanvasBody: ComponentType[OffCanvasBodyProps] = js.constructorOf[typings.reactOffcanvas.mod.OffCanvasBody].asInstanceOf[ComponentType[OffCanvasBodyProps]]
   @scala.inline
-  def OffCanvasMenu: ComponentType[OffCanvasMenuProps] = js.constructorOf[typings.reactOffcanvas.mod.OffCanvasMenu].asInstanceOf[typings.react.mod.ComponentType[OffCanvasMenuProps]]
+  def OffCanvasMenu: ComponentType[OffCanvasMenuProps] = js.constructorOf[typings.reactOffcanvas.mod.OffCanvasMenu].asInstanceOf[ComponentType[OffCanvasMenuProps]]
 }
 

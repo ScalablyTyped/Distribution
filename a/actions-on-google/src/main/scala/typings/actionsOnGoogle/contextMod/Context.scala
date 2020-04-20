@@ -45,7 +45,6 @@ object Context {
   @scala.inline
   def apply[TParameters /* <: Parameters */](lifespan: Double, name: String, parameters: TParameters): Context[TParameters] = {
     val __obj = js.Dynamic.literal(lifespan = lifespan.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Context[TParameters]]
   }
 }

@@ -14,7 +14,6 @@ object Classifiers {
   @scala.inline
   def apply(classifiers: js.Array[Classifier]): Classifiers = {
     val __obj = js.Dynamic.literal(classifiers = classifiers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Classifiers]
   }
 }

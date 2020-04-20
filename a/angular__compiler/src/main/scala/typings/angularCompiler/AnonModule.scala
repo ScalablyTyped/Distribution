@@ -15,7 +15,6 @@ object AnonModule {
   @scala.inline
   def apply(module: CompileIdentifierMetadata, provider: CompileProviderMetadata): AnonModule = {
     val __obj = js.Dynamic.literal(module = module.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonModule]
   }
 }

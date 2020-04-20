@@ -13,7 +13,6 @@ object Skew {
   @scala.inline
   def apply(angle: Double, confidence: Double): Skew = {
     val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], confidence = confidence.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Skew]
   }
 }

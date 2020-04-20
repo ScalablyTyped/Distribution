@@ -18,20 +18,18 @@ trait Scope extends js.Object
 
 object Scope {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def scopeDotaddress: typings.baiduApp.baiduAppStrings.scopeDotaddress = "scope.address".asInstanceOf[typings.baiduApp.baiduAppStrings.scopeDotaddress]
   @scala.inline
-  def scopeDotaddress: typings.baiduApp.baiduAppStrings.scopeDotaddress = this.cast("scope.address")
+  def scopeDotinvoiceTitle: typings.baiduApp.baiduAppStrings.scopeDotinvoiceTitle = "scope.invoiceTitle".asInstanceOf[typings.baiduApp.baiduAppStrings.scopeDotinvoiceTitle]
   @scala.inline
-  def scopeDotinvoiceTitle: typings.baiduApp.baiduAppStrings.scopeDotinvoiceTitle = this.cast("scope.invoiceTitle")
+  def scopeDotrecord: typings.baiduApp.baiduAppStrings.scopeDotrecord = "scope.record".asInstanceOf[typings.baiduApp.baiduAppStrings.scopeDotrecord]
   @scala.inline
-  def scopeDotrecord: typings.baiduApp.baiduAppStrings.scopeDotrecord = this.cast("scope.record")
+  def scopeDotuserInfo: typings.baiduApp.baiduAppStrings.scopeDotuserInfo = "scope.userInfo".asInstanceOf[typings.baiduApp.baiduAppStrings.scopeDotuserInfo]
   @scala.inline
-  def scopeDotuserInfo: typings.baiduApp.baiduAppStrings.scopeDotuserInfo = this.cast("scope.userInfo")
+  def scopeDotuserLocation: typings.baiduApp.baiduAppStrings.scopeDotuserLocation = "scope.userLocation".asInstanceOf[typings.baiduApp.baiduAppStrings.scopeDotuserLocation]
   @scala.inline
-  def scopeDotuserLocation: typings.baiduApp.baiduAppStrings.scopeDotuserLocation = this.cast("scope.userLocation")
+  def scopeDotwerun: typings.baiduApp.baiduAppStrings.scopeDotwerun = "scope.werun".asInstanceOf[typings.baiduApp.baiduAppStrings.scopeDotwerun]
   @scala.inline
-  def scopeDotwerun: typings.baiduApp.baiduAppStrings.scopeDotwerun = this.cast("scope.werun")
-  @scala.inline
-  def scopeDotwritePhotosAlbum: typings.baiduApp.baiduAppStrings.scopeDotwritePhotosAlbum = this.cast("scope.writePhotosAlbum")
+  def scopeDotwritePhotosAlbum: typings.baiduApp.baiduAppStrings.scopeDotwritePhotosAlbum = "scope.writePhotosAlbum".asInstanceOf[typings.baiduApp.baiduAppStrings.scopeDotwritePhotosAlbum]
 }
 

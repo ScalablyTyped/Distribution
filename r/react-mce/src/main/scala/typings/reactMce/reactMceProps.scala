@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactMceProps {
   @scala.inline
-  def ReactMceProps: ReactMCEProps.type = typings.reactMce.mod.ReactMCEProps
+  def ReactMceProps: ReactMCEProps.type = ReactMCEProps
   type ReactMceProps = ReactMCEProps
 }
 

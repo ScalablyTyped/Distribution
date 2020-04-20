@@ -31,7 +31,6 @@ object ItemCollection {
     items: js.Array[Annotation | Overlay | ItemCollection]
   ): ItemCollection = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], getFlattenedItemList = getFlattenedItemList.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ItemCollection]
   }
 }

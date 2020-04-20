@@ -12,7 +12,6 @@ object IVaultTraditionalFolderOperations {
   @scala.inline
   def apply(GetTraditionalFolderContents: Double => ITraditionalFolderContents): IVaultTraditionalFolderOperations = {
     val __obj = js.Dynamic.literal(GetTraditionalFolderContents = js.Any.fromFunction1(GetTraditionalFolderContents))
-  
     __obj.asInstanceOf[IVaultTraditionalFolderOperations]
   }
 }

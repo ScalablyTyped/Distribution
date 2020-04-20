@@ -28,24 +28,22 @@ trait OlExchangeConnectionMode extends js.Object
 
 object OlExchangeConnectionMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olCachedConnectedDrizzle: `600` = 600.asInstanceOf[`600`]
   @scala.inline
-  def olCachedConnectedDrizzle: `600` = this.cast(600)
+  def olCachedConnectedFull: `700` = 700.asInstanceOf[`700`]
   @scala.inline
-  def olCachedConnectedFull: `700` = this.cast(700)
+  def olCachedConnectedHeaders: `500` = 500.asInstanceOf[`500`]
   @scala.inline
-  def olCachedConnectedHeaders: `500` = this.cast(500)
+  def olCachedDisconnected: `400` = 400.asInstanceOf[`400`]
   @scala.inline
-  def olCachedDisconnected: `400` = this.cast(400)
+  def olCachedOffline: `200` = 200.asInstanceOf[`200`]
   @scala.inline
-  def olCachedOffline: `200` = this.cast(200)
+  def olDisconnected: `300` = 300.asInstanceOf[`300`]
   @scala.inline
-  def olDisconnected: `300` = this.cast(300)
+  def olNoExchange: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def olNoExchange: `0` = this.cast(0)
+  def olOffline: `100` = 100.asInstanceOf[`100`]
   @scala.inline
-  def olOffline: `100` = this.cast(100)
-  @scala.inline
-  def olOnline: `800` = this.cast(800)
+  def olOnline: `800` = 800.asInstanceOf[`800`]
 }
 

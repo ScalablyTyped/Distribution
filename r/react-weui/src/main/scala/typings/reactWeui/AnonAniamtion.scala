@@ -28,7 +28,6 @@ object AnonAniamtion {
     mapKeys: AnonLabel
   ): AnonAniamtion = {
     val __obj = js.Dynamic.literal(aniamtion = aniamtion.asInstanceOf[js.Any], defaultIndex = defaultIndex.asInstanceOf[js.Any], groupIndex = groupIndex.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], indicatorHeight = indicatorHeight.asInstanceOf[js.Any], indicatorTop = indicatorTop.asInstanceOf[js.Any], itemHeight = itemHeight.asInstanceOf[js.Any], mapKeys = mapKeys.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAniamtion]
   }
 }

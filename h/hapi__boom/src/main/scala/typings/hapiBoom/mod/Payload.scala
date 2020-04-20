@@ -23,7 +23,6 @@ object Payload {
   @scala.inline
   def apply(error: String, message: String, statusCode: Double): Payload = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Payload]
   }
 }

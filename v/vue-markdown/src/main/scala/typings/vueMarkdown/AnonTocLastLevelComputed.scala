@@ -12,7 +12,6 @@ object AnonTocLastLevelComputed {
   @scala.inline
   def apply(tocLastLevelComputed: js.Any): AnonTocLastLevelComputed = {
     val __obj = js.Dynamic.literal(tocLastLevelComputed = tocLastLevelComputed.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTocLastLevelComputed]
   }
 }

@@ -16,18 +16,16 @@ trait EmojiSkin extends js.Object
 
 object EmojiSkin {
   @scala.inline
-  def `1`: typings.emojiMart.emojiMartNumbers.`1` = this.cast(1)
+  def `1`: typings.emojiMart.emojiMartNumbers.`1` = 1.asInstanceOf[typings.emojiMart.emojiMartNumbers.`1`]
   @scala.inline
-  def `2`: typings.emojiMart.emojiMartNumbers.`2` = this.cast(2)
+  def `2`: typings.emojiMart.emojiMartNumbers.`2` = 2.asInstanceOf[typings.emojiMart.emojiMartNumbers.`2`]
   @scala.inline
-  def `3`: typings.emojiMart.emojiMartNumbers.`3` = this.cast(3)
+  def `3`: typings.emojiMart.emojiMartNumbers.`3` = 3.asInstanceOf[typings.emojiMart.emojiMartNumbers.`3`]
   @scala.inline
-  def `4`: typings.emojiMart.emojiMartNumbers.`4` = this.cast(4)
+  def `4`: typings.emojiMart.emojiMartNumbers.`4` = 4.asInstanceOf[typings.emojiMart.emojiMartNumbers.`4`]
   @scala.inline
-  def `5`: typings.emojiMart.emojiMartNumbers.`5` = this.cast(5)
+  def `5`: typings.emojiMart.emojiMartNumbers.`5` = 5.asInstanceOf[typings.emojiMart.emojiMartNumbers.`5`]
   @scala.inline
-  def `6`: typings.emojiMart.emojiMartNumbers.`6` = this.cast(6)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `6`: typings.emojiMart.emojiMartNumbers.`6` = 6.asInstanceOf[typings.emojiMart.emojiMartNumbers.`6`]
 }
 

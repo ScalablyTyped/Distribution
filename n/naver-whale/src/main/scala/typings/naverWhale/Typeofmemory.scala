@@ -13,7 +13,6 @@ object Typeofmemory {
   @scala.inline
   def apply(getInfo: js.Function1[/* info */ MemoryInfo, Unit] => Unit): Typeofmemory = {
     val __obj = js.Dynamic.literal(getInfo = js.Any.fromFunction1(getInfo))
-  
     __obj.asInstanceOf[Typeofmemory]
   }
 }

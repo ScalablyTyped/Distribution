@@ -48,7 +48,6 @@ object AnonAmbient {
     version: Double
   ): AnonAmbient = {
     val __obj = js.Dynamic.literal(ambient = ambient.asInstanceOf[js.Any], directional = directional.asInstanceOf[js.Any], directionalShadow = directionalShadow.asInstanceOf[js.Any], directionalShadowMap = directionalShadowMap.asInstanceOf[js.Any], directionalShadowMatrix = directionalShadowMatrix.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], hemi = hemi.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any], pointShadow = pointShadow.asInstanceOf[js.Any], pointShadowMap = pointShadowMap.asInstanceOf[js.Any], pointShadowMatrix = pointShadowMatrix.asInstanceOf[js.Any], probe = probe.asInstanceOf[js.Any], rectArea = rectArea.asInstanceOf[js.Any], spot = spot.asInstanceOf[js.Any], spotShadow = spotShadow.asInstanceOf[js.Any], spotShadowMap = spotShadowMap.asInstanceOf[js.Any], spotShadowMatrix = spotShadowMatrix.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAmbient]
   }
 }

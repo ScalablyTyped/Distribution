@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Specifies the text style for the <Font> Object.
+		 * The font used for body texts.
 		 */
 @JSGlobal("Titanium.UI.TEXT_STYLE_BODY")
 @js.native

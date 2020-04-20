@@ -13,7 +13,6 @@ object PartitionKeyMap {
   @scala.inline
   def apply(link: String, range: Range): PartitionKeyMap = {
     val __obj = js.Dynamic.literal(link = link.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PartitionKeyMap]
   }
 }

@@ -46,44 +46,42 @@ trait WdColorIndex extends js.Object
 
 object WdColorIndex {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdAuto: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdAuto: `0` = this.cast(0)
+  def wdBlack: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdBlack: `1` = this.cast(1)
+  def wdBlue: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdBlue: `2` = this.cast(2)
+  def wdBrightGreen: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdBrightGreen: `4` = this.cast(4)
+  def wdByAuthor: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def wdByAuthor: `-1` = this.cast(-1)
+  def wdDarkBlue: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def wdDarkBlue: `9` = this.cast(9)
+  def wdDarkRed: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def wdDarkRed: `13` = this.cast(13)
+  def wdDarkYellow: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def wdDarkYellow: `14` = this.cast(14)
+  def wdGray25: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def wdGray25: `16` = this.cast(16)
+  def wdGray50: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def wdGray50: `15` = this.cast(15)
+  def wdGreen: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def wdGreen: `11` = this.cast(11)
+  def wdNoHighlight: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdNoHighlight: `0` = this.cast(0)
+  def wdPink: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdPink: `5` = this.cast(5)
+  def wdRed: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdRed: `6` = this.cast(6)
+  def wdTeal: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def wdTeal: `10` = this.cast(10)
+  def wdTurquoise: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdTurquoise: `3` = this.cast(3)
+  def wdViolet: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def wdViolet: `12` = this.cast(12)
+  def wdWhite: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def wdWhite: `8` = this.cast(8)
-  @scala.inline
-  def wdYellow: `7` = this.cast(7)
+  def wdYellow: `7` = 7.asInstanceOf[`7`]
 }
 

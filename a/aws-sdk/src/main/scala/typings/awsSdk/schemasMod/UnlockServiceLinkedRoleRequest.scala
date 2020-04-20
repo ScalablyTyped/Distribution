@@ -13,7 +13,6 @@ object UnlockServiceLinkedRoleRequest {
   @scala.inline
   def apply(RoleArn: stringMin1Max1600): UnlockServiceLinkedRoleRequest = {
     val __obj = js.Dynamic.literal(RoleArn = RoleArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnlockServiceLinkedRoleRequest]
   }
 }

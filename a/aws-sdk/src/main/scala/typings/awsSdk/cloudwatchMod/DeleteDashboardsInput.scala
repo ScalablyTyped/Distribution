@@ -16,7 +16,6 @@ object DeleteDashboardsInput {
   @scala.inline
   def apply(DashboardNames: DashboardNames): DeleteDashboardsInput = {
     val __obj = js.Dynamic.literal(DashboardNames = DashboardNames.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteDashboardsInput]
   }
 }

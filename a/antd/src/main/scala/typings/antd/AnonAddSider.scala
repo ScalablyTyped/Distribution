@@ -13,7 +13,6 @@ object AnonAddSider {
   @scala.inline
   def apply(addSider: String => Unit, removeSider: String => Unit): AnonAddSider = {
     val __obj = js.Dynamic.literal(addSider = js.Any.fromFunction1(addSider), removeSider = js.Any.fromFunction1(removeSider))
-  
     __obj.asInstanceOf[AnonAddSider]
   }
 }

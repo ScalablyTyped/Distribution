@@ -16,18 +16,16 @@ trait Direction extends js.Object
 
 object Direction {
   @scala.inline
-  def bottom: typings.detox.detoxStrings.bottom = this.cast("bottom")
+  def bottom: typings.detox.detoxStrings.bottom = "bottom".asInstanceOf[typings.detox.detoxStrings.bottom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def down: typings.detox.detoxStrings.down = "down".asInstanceOf[typings.detox.detoxStrings.down]
   @scala.inline
-  def down: typings.detox.detoxStrings.down = this.cast("down")
+  def left: typings.detox.detoxStrings.left = "left".asInstanceOf[typings.detox.detoxStrings.left]
   @scala.inline
-  def left: typings.detox.detoxStrings.left = this.cast("left")
+  def right: typings.detox.detoxStrings.right = "right".asInstanceOf[typings.detox.detoxStrings.right]
   @scala.inline
-  def right: typings.detox.detoxStrings.right = this.cast("right")
+  def top: typings.detox.detoxStrings.top = "top".asInstanceOf[typings.detox.detoxStrings.top]
   @scala.inline
-  def top: typings.detox.detoxStrings.top = this.cast("top")
-  @scala.inline
-  def up: typings.detox.detoxStrings.up = this.cast("up")
+  def up: typings.detox.detoxStrings.up = "up".asInstanceOf[typings.detox.detoxStrings.up]
 }
 

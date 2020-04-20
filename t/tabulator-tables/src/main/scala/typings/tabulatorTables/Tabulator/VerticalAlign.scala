@@ -13,12 +13,10 @@ trait VerticalAlign extends js.Object
 
 object VerticalAlign {
   @scala.inline
-  def bottom: typings.tabulatorTables.tabulatorTablesStrings.bottom = this.cast("bottom")
+  def bottom: typings.tabulatorTables.tabulatorTablesStrings.bottom = "bottom".asInstanceOf[typings.tabulatorTables.tabulatorTablesStrings.bottom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def middle: typings.tabulatorTables.tabulatorTablesStrings.middle = "middle".asInstanceOf[typings.tabulatorTables.tabulatorTablesStrings.middle]
   @scala.inline
-  def middle: typings.tabulatorTables.tabulatorTablesStrings.middle = this.cast("middle")
-  @scala.inline
-  def top: typings.tabulatorTables.tabulatorTablesStrings.top = this.cast("top")
+  def top: typings.tabulatorTables.tabulatorTablesStrings.top = "top".asInstanceOf[typings.tabulatorTables.tabulatorTablesStrings.top]
 }
 

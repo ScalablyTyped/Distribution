@@ -20,7 +20,6 @@ object WebACLSummary {
   @scala.inline
   def apply(Name: ResourceName, WebACLId: ResourceId): WebACLSummary = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], WebACLId = WebACLId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WebACLSummary]
   }
 }

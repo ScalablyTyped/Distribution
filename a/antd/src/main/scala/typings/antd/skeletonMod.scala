@@ -1,5 +1,7 @@
 package typings.antd
 
+import typings.antd.skeletonSkeletonMod.SkeletonProps
+import typings.react.mod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,16 +10,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object skeletonMod extends js.Object {
   @js.native
-  class default ()
-    extends typings.antd.skeletonSkeletonMod.default
-  
-  /* static members */
-  @js.native
   object default extends js.Object {
-    var Avatar: TypeofSkeletonAvatar = js.native
-    var Button: TypeofSkeletonButton = js.native
-    var Input: TypeofSkeletonInput = js.native
-    var defaultProps: PartialSkeletonProps = js.native
+    var Avatar: AnonDefaultProps = js.native
+    var Button: AnonCall = js.native
+    var Input: AnonCallDefaultProps = js.native
+    var defaultProps: AnonAvatar = js.native
+    def apply(props: SkeletonProps): Element = js.native
   }
   
 }

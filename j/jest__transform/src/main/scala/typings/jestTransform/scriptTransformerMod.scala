@@ -30,12 +30,12 @@ object scriptTransformerMod extends js.Object {
     var _transformCache: js.Any = js.native
     var _transformConfigCache: js.Any = js.native
     def preloadTransformer(filepath: Path): Unit = js.native
-    def requireAndTranspileModule[ModuleType](moduleName: String): ModuleType = js.native
-    def requireAndTranspileModule[ModuleType](moduleName: String, callback: js.Function1[/* module */ ModuleType, Unit]): ModuleType = js.native
+    def requireAndTranspileModule[ModuleType](moduleName: String): js.Promise[ModuleType] = js.native
+    def requireAndTranspileModule[ModuleType](moduleName: String, callback: js.Function1[/* module */ ModuleType, js.Promise[Unit]]): js.Promise[ModuleType] = js.native
     @JSName("requireAndTranspileModule")
-    def requireAndTranspileModule_ModuleType_Promise[ModuleType](moduleName: String): js.Promise[ModuleType] = js.native
+    def requireAndTranspileModule_ModuleType_ModuleType[ModuleType](moduleName: String): ModuleType = js.native
     @JSName("requireAndTranspileModule")
-    def requireAndTranspileModule_ModuleType_Promise[ModuleType](moduleName: String, callback: js.Function1[/* module */ ModuleType, js.Promise[Unit]]): js.Promise[ModuleType] = js.native
+    def requireAndTranspileModule_ModuleType_ModuleType[ModuleType](moduleName: String, callback: js.Function1[/* module */ ModuleType, Unit]): ModuleType = js.native
     def shouldTransform(filename: Path): Boolean = js.native
     def transform(filename: Path, options: Options): TransformResult = js.native
     def transform(filename: Path, options: Options, fileSource: String): TransformResult = js.native

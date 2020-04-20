@@ -20,7 +20,6 @@ object AnonHighlightResult {
   @scala.inline
   def apply[TDoc](_highlightResult: HighlightResult[TDoc], objectID: String): AnonHighlightResult[TDoc] = {
     val __obj = js.Dynamic.literal(_highlightResult = _highlightResult.asInstanceOf[js.Any], objectID = objectID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHighlightResult[TDoc]]
   }
 }

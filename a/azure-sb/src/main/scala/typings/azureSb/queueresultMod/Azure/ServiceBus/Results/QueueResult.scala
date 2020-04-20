@@ -13,7 +13,6 @@ object QueueResult {
   @scala.inline
   def apply(parse: js.Object => js.Object | js.Array[js.Object], serialize: QueueProperties => String): QueueResult = {
     val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), serialize = js.Any.fromFunction1(serialize))
-  
     __obj.asInstanceOf[QueueResult]
   }
 }

@@ -13,7 +13,6 @@ object TransformableToBuffer {
   @scala.inline
   def apply(toBuffer: () => Buffer): TransformableToBuffer = {
     val __obj = js.Dynamic.literal(toBuffer = js.Any.fromFunction0(toBuffer))
-  
     __obj.asInstanceOf[TransformableToBuffer]
   }
 }

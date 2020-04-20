@@ -21,28 +21,26 @@ trait NumberFormatPartTypes extends js.Object
 
 object NumberFormatPartTypes {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def currency: typings.std.stdStrings.currency = "currency".asInstanceOf[typings.std.stdStrings.currency]
   @scala.inline
-  def currency: typings.std.stdStrings.currency = this.cast("currency")
+  def decimal: typings.std.stdStrings.decimal = "decimal".asInstanceOf[typings.std.stdStrings.decimal]
   @scala.inline
-  def decimal: typings.std.stdStrings.decimal = this.cast("decimal")
+  def fraction: typings.std.stdStrings.fraction = "fraction".asInstanceOf[typings.std.stdStrings.fraction]
   @scala.inline
-  def fraction: typings.std.stdStrings.fraction = this.cast("fraction")
+  def group: typings.std.stdStrings.group = "group".asInstanceOf[typings.std.stdStrings.group]
   @scala.inline
-  def group: typings.std.stdStrings.group = this.cast("group")
+  def infinity: typings.std.stdStrings.infinity = "infinity".asInstanceOf[typings.std.stdStrings.infinity]
   @scala.inline
-  def infinity: typings.std.stdStrings.infinity = this.cast("infinity")
+  def integer: typings.std.stdStrings.integer = "integer".asInstanceOf[typings.std.stdStrings.integer]
   @scala.inline
-  def integer: typings.std.stdStrings.integer = this.cast("integer")
+  def literal: typings.std.stdStrings.literal = "literal".asInstanceOf[typings.std.stdStrings.literal]
   @scala.inline
-  def literal: typings.std.stdStrings.literal = this.cast("literal")
+  def minusSign: typings.std.stdStrings.minusSign = "minusSign".asInstanceOf[typings.std.stdStrings.minusSign]
   @scala.inline
-  def minusSign: typings.std.stdStrings.minusSign = this.cast("minusSign")
+  def nan: typings.std.stdStrings.nan = "nan".asInstanceOf[typings.std.stdStrings.nan]
   @scala.inline
-  def nan: typings.std.stdStrings.nan = this.cast("nan")
+  def percentSign: typings.std.stdStrings.percentSign = "percentSign".asInstanceOf[typings.std.stdStrings.percentSign]
   @scala.inline
-  def percentSign: typings.std.stdStrings.percentSign = this.cast("percentSign")
-  @scala.inline
-  def plusSign: typings.std.stdStrings.plusSign = this.cast("plusSign")
+  def plusSign: typings.std.stdStrings.plusSign = "plusSign".asInstanceOf[typings.std.stdStrings.plusSign]
 }
 

@@ -12,10 +12,8 @@ trait Theme extends js.Object
 
 object Theme {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dark: typings.grecaptcha.grecaptchaStrings.dark = "dark".asInstanceOf[typings.grecaptcha.grecaptchaStrings.dark]
   @scala.inline
-  def dark: typings.grecaptcha.grecaptchaStrings.dark = this.cast("dark")
-  @scala.inline
-  def light: typings.grecaptcha.grecaptchaStrings.light = this.cast("light")
+  def light: typings.grecaptcha.grecaptchaStrings.light = "light".asInstanceOf[typings.grecaptcha.grecaptchaStrings.light]
 }
 

@@ -15,16 +15,14 @@ trait Flavour extends js.Object
 
 object Flavour {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def long: typings.javascriptTimeAgo.javascriptTimeAgoStrings.long = "long".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.long]
   @scala.inline
-  def long: typings.javascriptTimeAgo.javascriptTimeAgoStrings.long = this.cast("long")
+  def narrow: typings.javascriptTimeAgo.javascriptTimeAgoStrings.narrow = "narrow".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.narrow]
   @scala.inline
-  def narrow: typings.javascriptTimeAgo.javascriptTimeAgoStrings.narrow = this.cast("narrow")
+  def short: typings.javascriptTimeAgo.javascriptTimeAgoStrings.short = "short".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.short]
   @scala.inline
-  def short: typings.javascriptTimeAgo.javascriptTimeAgoStrings.short = this.cast("short")
+  def `short-time`: typings.javascriptTimeAgo.javascriptTimeAgoStrings.`short-time` = "short-time".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.`short-time`]
   @scala.inline
-  def `short-time`: typings.javascriptTimeAgo.javascriptTimeAgoStrings.`short-time` = this.cast("short-time")
-  @scala.inline
-  def tiny: typings.javascriptTimeAgo.javascriptTimeAgoStrings.tiny = this.cast("tiny")
+  def tiny: typings.javascriptTimeAgo.javascriptTimeAgoStrings.tiny = "tiny".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.tiny]
 }
 

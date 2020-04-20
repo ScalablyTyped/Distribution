@@ -16,18 +16,16 @@ trait DeviceThreatProtectionLevel extends js.Object
 
 object DeviceThreatProtectionLevel {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def high: typings.microsoftGraph.microsoftGraphStrings.high = "high".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.high]
   @scala.inline
-  def high: typings.microsoftGraph.microsoftGraphStrings.high = this.cast("high")
+  def low: typings.microsoftGraph.microsoftGraphStrings.low = "low".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.low]
   @scala.inline
-  def low: typings.microsoftGraph.microsoftGraphStrings.low = this.cast("low")
+  def medium: typings.microsoftGraph.microsoftGraphStrings.medium = "medium".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.medium]
   @scala.inline
-  def medium: typings.microsoftGraph.microsoftGraphStrings.medium = this.cast("medium")
+  def notSet: typings.microsoftGraph.microsoftGraphStrings.notSet = "notSet".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notSet]
   @scala.inline
-  def notSet: typings.microsoftGraph.microsoftGraphStrings.notSet = this.cast("notSet")
+  def secured: typings.microsoftGraph.microsoftGraphStrings.secured = "secured".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.secured]
   @scala.inline
-  def secured: typings.microsoftGraph.microsoftGraphStrings.secured = this.cast("secured")
-  @scala.inline
-  def unavailable: typings.microsoftGraph.microsoftGraphStrings.unavailable = this.cast("unavailable")
+  def unavailable: typings.microsoftGraph.microsoftGraphStrings.unavailable = "unavailable".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unavailable]
 }
 

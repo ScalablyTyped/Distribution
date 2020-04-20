@@ -42,7 +42,6 @@ object Typeofsdpops {
     sdp_with_media: String => Double
   ): Typeofsdpops = {
     val __obj = js.Dynamic.literal(keep_codecs_by_id = js.Any.fromFunction2(keep_codecs_by_id), keep_codecs_by_name = js.Any.fromFunction2(keep_codecs_by_name), remove_codecs_by_id = js.Any.fromFunction2(remove_codecs_by_id), remove_codecs_by_name = js.Any.fromFunction2(remove_codecs_by_name), remove_line_by_prefix = js.Any.fromFunction2(remove_line_by_prefix), remove_media = js.Any.fromFunction1(remove_media), sdp_content = js.Any.fromFunction0(sdp_content), sdp_content_flags = js.Any.fromFunction1(sdp_content_flags), sdp_get = js.Any.fromFunction1(sdp_get), sdp_get_line_startswith = js.Any.fromFunction2(sdp_get_line_startswith), sdp_print = js.Any.fromFunction1(sdp_print), sdp_transport = js.Any.fromFunction1(sdp_transport), sdp_with_active_media = js.Any.fromFunction1(sdp_with_active_media), sdp_with_ice = js.Any.fromFunction0(sdp_with_ice), sdp_with_media = js.Any.fromFunction1(sdp_with_media))
-  
     __obj.asInstanceOf[Typeofsdpops]
   }
 }

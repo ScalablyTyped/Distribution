@@ -15,16 +15,14 @@ trait BodyParser extends js.Object
 
 object BodyParser {
   @scala.inline
-  def $: typings.hoxy.hoxyStrings.$ = this.cast("$")
+  def $: typings.hoxy.hoxyStrings.$ = "$".asInstanceOf[typings.hoxy.hoxyStrings.$]
   @scala.inline
-  def buffer: typings.hoxy.hoxyStrings.buffer = this.cast("buffer")
+  def buffer: typings.hoxy.hoxyStrings.buffer = "buffer".asInstanceOf[typings.hoxy.hoxyStrings.buffer]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def json: typings.hoxy.hoxyStrings.json = "json".asInstanceOf[typings.hoxy.hoxyStrings.json]
   @scala.inline
-  def json: typings.hoxy.hoxyStrings.json = this.cast("json")
+  def params: typings.hoxy.hoxyStrings.params = "params".asInstanceOf[typings.hoxy.hoxyStrings.params]
   @scala.inline
-  def params: typings.hoxy.hoxyStrings.params = this.cast("params")
-  @scala.inline
-  def string: typings.hoxy.hoxyStrings.string = this.cast("string")
+  def string: typings.hoxy.hoxyStrings.string = "string".asInstanceOf[typings.hoxy.hoxyStrings.string]
 }
 

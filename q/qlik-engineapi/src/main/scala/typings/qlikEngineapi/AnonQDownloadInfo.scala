@@ -12,7 +12,6 @@ object AnonQDownloadInfo {
   @scala.inline
   def apply(qDownloadInfo: js.Any): AnonQDownloadInfo = {
     val __obj = js.Dynamic.literal(qDownloadInfo = qDownloadInfo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonQDownloadInfo]
   }
 }

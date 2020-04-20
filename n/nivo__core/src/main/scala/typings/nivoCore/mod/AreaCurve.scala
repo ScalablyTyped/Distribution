@@ -20,26 +20,24 @@ trait AreaCurve extends js.Object
 
 object AreaCurve {
   @scala.inline
-  def basis: typings.nivoCore.nivoCoreStrings.basis = this.cast("basis")
+  def basis: typings.nivoCore.nivoCoreStrings.basis = "basis".asInstanceOf[typings.nivoCore.nivoCoreStrings.basis]
   @scala.inline
-  def cardinal: typings.nivoCore.nivoCoreStrings.cardinal = this.cast("cardinal")
+  def cardinal: typings.nivoCore.nivoCoreStrings.cardinal = "cardinal".asInstanceOf[typings.nivoCore.nivoCoreStrings.cardinal]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def catmullRom: typings.nivoCore.nivoCoreStrings.catmullRom = "catmullRom".asInstanceOf[typings.nivoCore.nivoCoreStrings.catmullRom]
   @scala.inline
-  def catmullRom: typings.nivoCore.nivoCoreStrings.catmullRom = this.cast("catmullRom")
+  def linear: typings.nivoCore.nivoCoreStrings.linear = "linear".asInstanceOf[typings.nivoCore.nivoCoreStrings.linear]
   @scala.inline
-  def linear: typings.nivoCore.nivoCoreStrings.linear = this.cast("linear")
+  def monotoneX: typings.nivoCore.nivoCoreStrings.monotoneX = "monotoneX".asInstanceOf[typings.nivoCore.nivoCoreStrings.monotoneX]
   @scala.inline
-  def monotoneX: typings.nivoCore.nivoCoreStrings.monotoneX = this.cast("monotoneX")
+  def monotoneY: typings.nivoCore.nivoCoreStrings.monotoneY = "monotoneY".asInstanceOf[typings.nivoCore.nivoCoreStrings.monotoneY]
   @scala.inline
-  def monotoneY: typings.nivoCore.nivoCoreStrings.monotoneY = this.cast("monotoneY")
+  def natural: typings.nivoCore.nivoCoreStrings.natural = "natural".asInstanceOf[typings.nivoCore.nivoCoreStrings.natural]
   @scala.inline
-  def natural: typings.nivoCore.nivoCoreStrings.natural = this.cast("natural")
+  def step: typings.nivoCore.nivoCoreStrings.step = "step".asInstanceOf[typings.nivoCore.nivoCoreStrings.step]
   @scala.inline
-  def step: typings.nivoCore.nivoCoreStrings.step = this.cast("step")
+  def stepAfter: typings.nivoCore.nivoCoreStrings.stepAfter = "stepAfter".asInstanceOf[typings.nivoCore.nivoCoreStrings.stepAfter]
   @scala.inline
-  def stepAfter: typings.nivoCore.nivoCoreStrings.stepAfter = this.cast("stepAfter")
-  @scala.inline
-  def stepBefore: typings.nivoCore.nivoCoreStrings.stepBefore = this.cast("stepBefore")
+  def stepBefore: typings.nivoCore.nivoCoreStrings.stepBefore = "stepBefore".asInstanceOf[typings.nivoCore.nivoCoreStrings.stepBefore]
 }
 

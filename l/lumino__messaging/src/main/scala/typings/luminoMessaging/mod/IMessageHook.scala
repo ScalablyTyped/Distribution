@@ -22,7 +22,6 @@ object IMessageHook {
   @scala.inline
   def apply(messageHook: (IMessageHandler, Message) => Boolean): IMessageHook = {
     val __obj = js.Dynamic.literal(messageHook = js.Any.fromFunction2(messageHook))
-  
     __obj.asInstanceOf[IMessageHook]
   }
 }

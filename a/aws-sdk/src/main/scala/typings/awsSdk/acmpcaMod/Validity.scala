@@ -20,7 +20,6 @@ object Validity {
   @scala.inline
   def apply(Type: ValidityPeriodType, Value: PositiveLong): Validity = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Validity]
   }
 }

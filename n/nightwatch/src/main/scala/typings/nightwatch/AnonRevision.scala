@@ -14,7 +14,6 @@ object AnonRevision {
   @scala.inline
   def apply(revision: String, time: String, version: String): AnonRevision = {
     val __obj = js.Dynamic.literal(revision = revision.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRevision]
   }
 }

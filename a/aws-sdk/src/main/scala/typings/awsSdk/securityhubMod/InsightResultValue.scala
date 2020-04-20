@@ -20,7 +20,6 @@ object InsightResultValue {
   @scala.inline
   def apply(Count: Integer, GroupByAttributeValue: NonEmptyString): InsightResultValue = {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], GroupByAttributeValue = GroupByAttributeValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InsightResultValue]
   }
 }

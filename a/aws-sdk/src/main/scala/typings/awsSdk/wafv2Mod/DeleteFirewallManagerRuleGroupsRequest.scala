@@ -20,7 +20,6 @@ object DeleteFirewallManagerRuleGroupsRequest {
   @scala.inline
   def apply(WebACLArn: ResourceArn, WebACLLockToken: LockToken): DeleteFirewallManagerRuleGroupsRequest = {
     val __obj = js.Dynamic.literal(WebACLArn = WebACLArn.asInstanceOf[js.Any], WebACLLockToken = WebACLLockToken.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteFirewallManagerRuleGroupsRequest]
   }
 }

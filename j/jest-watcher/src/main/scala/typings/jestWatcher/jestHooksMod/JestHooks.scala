@@ -26,7 +26,6 @@ object JestHooks {
     isUsed: AvailableHooks => Double
   ): JestHooks = {
     val __obj = js.Dynamic.literal(_emitter = _emitter.asInstanceOf[js.Any], _listeners = _listeners.asInstanceOf[js.Any], _subscriber = _subscriber.asInstanceOf[js.Any], getEmitter = js.Any.fromFunction0(getEmitter), getSubscriber = js.Any.fromFunction0(getSubscriber), isUsed = js.Any.fromFunction1(isUsed))
-  
     __obj.asInstanceOf[JestHooks]
   }
 }

@@ -18,7 +18,6 @@ object GeneratorProps {
   @scala.inline
   def apply(displayName: String, suffixCls: String, tagName: header | footer | main | section): GeneratorProps = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], suffixCls = suffixCls.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GeneratorProps]
   }
 }

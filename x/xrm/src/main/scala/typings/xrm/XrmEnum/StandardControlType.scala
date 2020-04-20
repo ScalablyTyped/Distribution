@@ -38,30 +38,28 @@ trait StandardControlType extends js.Object
 
 object StandardControlType {
   @scala.inline
-  def IFrame: iframe = this.cast("iframe")
+  def IFrame: iframe = "iframe".asInstanceOf[iframe]
   @scala.inline
-  def KBSearch: kbsearch = this.cast("kbsearch")
+  def KBSearch: kbsearch = "kbsearch".asInstanceOf[kbsearch]
   @scala.inline
-  def Lookup: lookup = this.cast("lookup")
+  def Lookup: lookup = "lookup".asInstanceOf[lookup]
   @scala.inline
-  def MultiSelectOptionSet: multiselectoptionset = this.cast("multiselectoptionset")
+  def MultiSelectOptionSet: multiselectoptionset = "multiselectoptionset".asInstanceOf[multiselectoptionset]
   @scala.inline
-  def Notes: notes = this.cast("notes")
+  def Notes: notes = "notes".asInstanceOf[notes]
   @scala.inline
-  def OptionSet: optionset = this.cast("optionset")
+  def OptionSet: optionset = "optionset".asInstanceOf[optionset]
   @scala.inline
-  def QuickForm: quickform = this.cast("quickform")
+  def QuickForm: quickform = "quickform".asInstanceOf[quickform]
   @scala.inline
-  def Standard: standard = this.cast("standard")
+  def Standard: standard = "standard".asInstanceOf[standard]
   @scala.inline
-  def SubGrid: subgrid = this.cast("subgrid")
+  def SubGrid: subgrid = "subgrid".asInstanceOf[subgrid]
   @scala.inline
-  def TimeLineWall: timelinewall = this.cast("timelinewall")
+  def TimeLineWall: timelinewall = "timelinewall".asInstanceOf[timelinewall]
   @scala.inline
-  def TimerControl: timercontrol = this.cast("timercontrol")
+  def TimerControl: timercontrol = "timercontrol".asInstanceOf[timercontrol]
   @scala.inline
-  def WebResource: webresource = this.cast("webresource")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def WebResource: webresource = "webresource".asInstanceOf[webresource]
 }
 

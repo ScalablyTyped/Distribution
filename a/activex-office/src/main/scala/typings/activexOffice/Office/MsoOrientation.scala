@@ -16,12 +16,10 @@ trait MsoOrientation extends js.Object
 
 object MsoOrientation {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoOrientationHorizontal: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoOrientationHorizontal: `1` = this.cast(1)
+  def msoOrientationMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def msoOrientationMixed: `-2` = this.cast(-2)
-  @scala.inline
-  def msoOrientationVertical: `2` = this.cast(2)
+  def msoOrientationVertical: `2` = 2.asInstanceOf[`2`]
 }
 

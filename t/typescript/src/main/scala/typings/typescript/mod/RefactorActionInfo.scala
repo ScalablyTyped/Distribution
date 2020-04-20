@@ -25,7 +25,6 @@ object RefactorActionInfo {
   @scala.inline
   def apply(description: java.lang.String, name: java.lang.String): RefactorActionInfo = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RefactorActionInfo]
   }
 }

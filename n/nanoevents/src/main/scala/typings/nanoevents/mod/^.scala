@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class ^[T /* <: js.Object */] () extends NanoEvents[T] {
   /* CompleteClass */
-  override def emit[U /* <: String */](
+  override def emit[U /* <: /* keyof T */ String */](
     name: U,
     value: /* import warning: importer.ImportType#apply Failed type conversion: T[U] */ js.Any
   ): Unit = js.native
   /* CompleteClass */
-  override def on[U /* <: String */](
+  override def on[U /* <: /* keyof T */ String */](
     name: U,
     callBack: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[U] */ /* arg */ js.Any, 

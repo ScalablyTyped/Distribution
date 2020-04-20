@@ -14,7 +14,6 @@ object AnonE {
   @scala.inline
   def apply(E: Tensor, lambda: Tensor): AnonE = {
     val __obj = js.Dynamic.literal(E = E.asInstanceOf[js.Any], lambda = lambda.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonE]
   }
 }

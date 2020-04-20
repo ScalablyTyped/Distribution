@@ -20,7 +20,6 @@ object ExportCertificateRequest {
   @scala.inline
   def apply(CertificateArn: Arn, Passphrase: PassphraseBlob): ExportCertificateRequest = {
     val __obj = js.Dynamic.literal(CertificateArn = CertificateArn.asInstanceOf[js.Any], Passphrase = Passphrase.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExportCertificateRequest]
   }
 }

@@ -15,7 +15,6 @@ object FanFundingEventsResource {
   @scala.inline
   def apply(list: AnonPageToken => Request_[FanFundingEventListResponse]): FanFundingEventsResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[FanFundingEventsResource]
   }
 }

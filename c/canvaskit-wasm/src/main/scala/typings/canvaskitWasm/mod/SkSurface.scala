@@ -32,7 +32,6 @@ object SkSurface {
     width: () => Double
   ): SkSurface = {
     val __obj = js.Dynamic.literal(captureFrameAsSkPicture = js.Any.fromFunction1(captureFrameAsSkPicture), delete = js.Any.fromFunction0(delete), deleteAfter = js.Any.fromFunction0(deleteAfter), dispose = js.Any.fromFunction0(dispose), flush = js.Any.fromFunction0(flush), getCanvas = js.Any.fromFunction0(getCanvas), height = js.Any.fromFunction0(height), isAliasOf = js.Any.fromFunction1(isAliasOf), isDeleted = js.Any.fromFunction0(isDeleted), makeImageSnapshot = js.Any.fromFunction0(makeImageSnapshot), makeSurface = js.Any.fromFunction1(makeSurface), width = js.Any.fromFunction0(width))
-  
     __obj.asInstanceOf[SkSurface]
   }
 }

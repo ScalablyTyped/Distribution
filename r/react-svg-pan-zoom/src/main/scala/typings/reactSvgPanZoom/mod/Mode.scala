@@ -13,12 +13,10 @@ trait Mode extends js.Object
 
 object Mode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def idle: typings.reactSvgPanZoom.reactSvgPanZoomStrings.idle = "idle".asInstanceOf[typings.reactSvgPanZoom.reactSvgPanZoomStrings.idle]
   @scala.inline
-  def idle: typings.reactSvgPanZoom.reactSvgPanZoomStrings.idle = this.cast("idle")
+  def panning: typings.reactSvgPanZoom.reactSvgPanZoomStrings.panning = "panning".asInstanceOf[typings.reactSvgPanZoom.reactSvgPanZoomStrings.panning]
   @scala.inline
-  def panning: typings.reactSvgPanZoom.reactSvgPanZoomStrings.panning = this.cast("panning")
-  @scala.inline
-  def zooming: typings.reactSvgPanZoom.reactSvgPanZoomStrings.zooming = this.cast("zooming")
+  def zooming: typings.reactSvgPanZoom.reactSvgPanZoomStrings.zooming = "zooming".asInstanceOf[typings.reactSvgPanZoom.reactSvgPanZoomStrings.zooming]
 }
 

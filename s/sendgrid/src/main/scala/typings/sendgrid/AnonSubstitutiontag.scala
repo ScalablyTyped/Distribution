@@ -13,7 +13,6 @@ object AnonSubstitutiontag {
   @scala.inline
   def apply(enable: Boolean, substitution_tag: String): AnonSubstitutiontag = {
     val __obj = js.Dynamic.literal(enable = enable.asInstanceOf[js.Any], substitution_tag = substitution_tag.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSubstitutiontag]
   }
 }

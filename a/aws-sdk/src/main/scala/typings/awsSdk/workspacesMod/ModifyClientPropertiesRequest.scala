@@ -20,7 +20,6 @@ object ModifyClientPropertiesRequest {
   @scala.inline
   def apply(ClientProperties: ClientProperties, ResourceId: NonEmptyString): ModifyClientPropertiesRequest = {
     val __obj = js.Dynamic.literal(ClientProperties = ClientProperties.asInstanceOf[js.Any], ResourceId = ResourceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ModifyClientPropertiesRequest]
   }
 }

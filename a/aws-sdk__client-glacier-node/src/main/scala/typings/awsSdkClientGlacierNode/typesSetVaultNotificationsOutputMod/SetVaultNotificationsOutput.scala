@@ -18,7 +18,6 @@ object SetVaultNotificationsOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): SetVaultNotificationsOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetVaultNotificationsOutput]
   }
 }

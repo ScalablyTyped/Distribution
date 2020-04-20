@@ -16,7 +16,6 @@ object IDropHintDetails {
   @scala.inline
   def apply(dropHintElementRef: HTMLElement, endX: Double, originX: Double, startX: Double): IDropHintDetails = {
     val __obj = js.Dynamic.literal(dropHintElementRef = dropHintElementRef.asInstanceOf[js.Any], endX = endX.asInstanceOf[js.Any], originX = originX.asInstanceOf[js.Any], startX = startX.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDropHintDetails]
   }
 }

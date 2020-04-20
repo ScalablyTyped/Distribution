@@ -15,7 +15,6 @@ object GatsbyGraphQLScalarType {
   @scala.inline
   def apply(config: ComposeScalarTypeConfig, kind: SCALAR): GatsbyGraphQLScalarType = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GatsbyGraphQLScalarType]
   }
 }

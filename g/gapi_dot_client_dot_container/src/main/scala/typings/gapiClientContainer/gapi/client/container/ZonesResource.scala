@@ -21,7 +21,6 @@ object ZonesResource {
     operations: OperationsResource
   ): ZonesResource = {
     val __obj = js.Dynamic.literal(clusters = clusters.asInstanceOf[js.Any], getServerconfig = js.Any.fromFunction1(getServerconfig), operations = operations.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ZonesResource]
   }
 }

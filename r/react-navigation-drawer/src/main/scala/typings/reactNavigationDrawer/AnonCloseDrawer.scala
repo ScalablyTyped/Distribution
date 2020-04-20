@@ -14,7 +14,6 @@ object AnonCloseDrawer {
   @scala.inline
   def apply(closeDrawer: () => js.Any, openDrawer: () => js.Any, toggleDrawer: () => js.Any): AnonCloseDrawer = {
     val __obj = js.Dynamic.literal(closeDrawer = js.Any.fromFunction0(closeDrawer), openDrawer = js.Any.fromFunction0(openDrawer), toggleDrawer = js.Any.fromFunction0(toggleDrawer))
-  
     __obj.asInstanceOf[AnonCloseDrawer]
   }
 }

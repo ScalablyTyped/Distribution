@@ -12,7 +12,6 @@ object AnonNavigationOptionsOptions {
   @scala.inline
   def apply[Options](navigationOptions: Options): AnonNavigationOptionsOptions[Options] = {
     val __obj = js.Dynamic.literal(navigationOptions = navigationOptions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNavigationOptionsOptions[Options]]
   }
 }

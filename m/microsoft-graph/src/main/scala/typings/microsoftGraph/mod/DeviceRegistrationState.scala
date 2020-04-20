@@ -19,22 +19,20 @@ trait DeviceRegistrationState extends js.Object
 
 object DeviceRegistrationState {
   @scala.inline
-  def approvalPending: typings.microsoftGraph.microsoftGraphStrings.approvalPending = this.cast("approvalPending")
+  def approvalPending: typings.microsoftGraph.microsoftGraphStrings.approvalPending = "approvalPending".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.approvalPending]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def certificateReset: typings.microsoftGraph.microsoftGraphStrings.certificateReset = "certificateReset".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.certificateReset]
   @scala.inline
-  def certificateReset: typings.microsoftGraph.microsoftGraphStrings.certificateReset = this.cast("certificateReset")
+  def keyConflict: typings.microsoftGraph.microsoftGraphStrings.keyConflict = "keyConflict".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.keyConflict]
   @scala.inline
-  def keyConflict: typings.microsoftGraph.microsoftGraphStrings.keyConflict = this.cast("keyConflict")
+  def notRegistered: typings.microsoftGraph.microsoftGraphStrings.notRegistered = "notRegistered".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notRegistered]
   @scala.inline
-  def notRegistered: typings.microsoftGraph.microsoftGraphStrings.notRegistered = this.cast("notRegistered")
+  def notRegisteredPendingEnrollment: typings.microsoftGraph.microsoftGraphStrings.notRegisteredPendingEnrollment = "notRegisteredPendingEnrollment".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notRegisteredPendingEnrollment]
   @scala.inline
-  def notRegisteredPendingEnrollment: typings.microsoftGraph.microsoftGraphStrings.notRegisteredPendingEnrollment = this.cast("notRegisteredPendingEnrollment")
+  def registered: typings.microsoftGraph.microsoftGraphStrings.registered = "registered".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.registered]
   @scala.inline
-  def registered: typings.microsoftGraph.microsoftGraphStrings.registered = this.cast("registered")
+  def revoked: typings.microsoftGraph.microsoftGraphStrings.revoked = "revoked".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.revoked]
   @scala.inline
-  def revoked: typings.microsoftGraph.microsoftGraphStrings.revoked = this.cast("revoked")
-  @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
+  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
 }
 

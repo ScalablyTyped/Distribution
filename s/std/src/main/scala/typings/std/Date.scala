@@ -26,7 +26,7 @@ trait Date extends _IDBValidKey {
     * @throws {TypeError} If 'hint' was given something other than "number", "string", or "default".
     * @returns A number if 'hint' was "number", a string if 'hint' was "string" or "default".
     */
-  @JSName(scala.scalajs.js.Symbol.toPrimitive)
+  @JSName(js.Symbol.toPrimitive)
   var toPrimitive: (js.Function1[default, java.lang.String]) with (js.Function1[string, java.lang.String]) with (js.Function1[number, Double]) with (js.Function1[/* hint */ java.lang.String, java.lang.String | Double]) = js.native
   /** Gets the day-of-the-month, using local time. */
   def getDate(): Double = js.native

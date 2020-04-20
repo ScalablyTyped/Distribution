@@ -19,7 +19,6 @@ object PointsFilter {
     testers: js.Array[IdentityRef]
   ): PointsFilter = {
     val __obj = js.Dynamic.literal(configurationNames = configurationNames.asInstanceOf[js.Any], testcaseIds = testcaseIds.asInstanceOf[js.Any], testers = testers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PointsFilter]
   }
 }

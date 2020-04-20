@@ -30,9 +30,11 @@ package object securityhubMod {
   type AwsRdsDbInstanceAssociatedRoles = js.Array[typings.awsSdk.securityhubMod.AwsRdsDbInstanceAssociatedRole]
   type AwsRdsDbInstanceVpcSecurityGroups = js.Array[typings.awsSdk.securityhubMod.AwsRdsDbInstanceVpcSecurityGroup]
   type AwsS3BucketServerSideEncryptionRules = js.Array[typings.awsSdk.securityhubMod.AwsS3BucketServerSideEncryptionRule]
+  type AwsSecurityFindingIdentifierList = js.Array[typings.awsSdk.securityhubMod.AwsSecurityFindingIdentifier]
   type AwsSecurityFindingList = js.Array[typings.awsSdk.securityhubMod.AwsSecurityFinding]
   type AwsSnsTopicSubscriptionList = js.Array[typings.awsSdk.securityhubMod.AwsSnsTopicSubscription]
   type AwsWafWebAclRuleList = js.Array[typings.awsSdk.securityhubMod.AwsWafWebAclRule]
+  type BatchUpdateFindingsUnprocessedFindingsList = js.Array[typings.awsSdk.securityhubMod.BatchUpdateFindingsUnprocessedFinding]
   type Boolean = scala.Boolean
   type CategoryList = js.Array[typings.awsSdk.securityhubMod.NonEmptyString]
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.securityhubMod.ClientApiVersions
@@ -118,6 +120,7 @@ package object securityhubMod {
   type Partition = typings.awsSdk.securityhubMod._Partition | java.lang.String
   type ProductSubscriptionArnList = js.Array[typings.awsSdk.securityhubMod.NonEmptyString]
   type ProductsList = js.Array[typings.awsSdk.securityhubMod.Product]
+  type RatioScale = scala.Double
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.ACTIVE
     - typings.awsSdk.awsSdkStrings.ARCHIVED

@@ -19,7 +19,6 @@ object ChangedIdentities {
   @scala.inline
   def apply(identities: js.Array[Identity], sequenceContext: ChangedIdentitiesContext): ChangedIdentities = {
     val __obj = js.Dynamic.literal(identities = identities.asInstanceOf[js.Any], sequenceContext = sequenceContext.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChangedIdentities]
   }
 }

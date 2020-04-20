@@ -1,11 +1,11 @@
 package typings.titanium.Titanium.UI.iOS
 
 import typings.titanium.BoundaryIdentifier
-import typings.titanium.ReferenceInsets
+import typings.titanium.Padding
 import typings.titanium.Titanium.Proxy
-import typings.titanium.Titanium.UI.TabGroup
 import typings.titanium.Titanium.UI.View
-import typings.titanium.Titanium.UI.Window
+import typings.titanium.titaniumStrings.boundarycollision
+import typings.titanium.titaniumStrings.itemcollision
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,120 +13,125 @@ import scala.scalajs.js.annotation._
 /**
 			 * Dynamic behavior to support collisions between items and boundaries.
 			 */
-trait CollisionBehavior extends Proxy {
+@JSGlobal("Titanium.UI.iOS.CollisionBehavior")
+@js.native
+class CollisionBehavior () extends Proxy {
   /**
   				 * Boundary identfiers added to this behavior.
   				 */
-  val boundaryIdentifiers: js.Array[BoundaryIdentifier]
+  val boundaryIdentifiers: js.Array[BoundaryIdentifier] = js.native
   /**
   				 * Specifies the collision behavior.
   				 */
-  var collisionMode: Double
+  var collisionMode: Double = js.native
   /**
   				 * Items added to this behavior.
   				 */
-  val items: js.Array[View]
+  val items: js.Array[View] = js.native
   /**
   				 * Insets to apply when using the animator's reference view as the boundary.
   				 */
-  var referenceInsets: ReferenceInsets
+  var referenceInsets: Padding = js.native
   /**
   				 * Use the animator's reference view as the boundary.
   				 */
-  var treatReferenceAsBoundary: Boolean
+  var treatReferenceAsBoundary: Boolean = js.native
   /**
   				 * Adds a boundary to this behavior.
   				 */
-  def addBoundary(boundary: BoundaryIdentifier): Unit
+  def addBoundary(boundary: BoundaryIdentifier): Unit = js.native
+  /**
+  				 * Adds the specified callback as an event listener for the named event.
+  				 */
+  @JSName("addEventListener")
+  def addEventListener_boundarycollision(
+    name: boundarycollision,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ CollisionBehaviorBoundarycollisionEvent, Unit]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_itemcollision(
+    name: itemcollision,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ CollisionBehaviorItemcollisionEvent, Unit]
+  ): Unit = js.native
   /**
   				 * Adds an item to this behavior.
   				 */
-  def addItem(item: js.Any): Unit
+  def addItem(item: View): Unit = js.native
+  /**
+  				 * Fires a synthesized event to any registered listeners.
+  				 */
+  @JSName("fireEvent")
+  def fireEvent_boundarycollision(name: boundarycollision): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_boundarycollision(name: boundarycollision, event: CollisionBehaviorBoundarycollisionEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_itemcollision(name: itemcollision): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_itemcollision(name: itemcollision, event: CollisionBehaviorItemcollisionEvent): Unit = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iOS.CollisionBehavior.boundaryIdentifiers> property.
+  				 * @deprecated Access <Titanium.UI.iOS.CollisionBehavior.boundaryIdentifiers> instead.
   				 */
-  def getBoundaryIdentifiers(): js.Array[BoundaryIdentifier]
+  def getBoundaryIdentifiers(): js.Array[BoundaryIdentifier] = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iOS.CollisionBehavior.collisionMode> property.
+  				 * @deprecated Access <Titanium.UI.iOS.CollisionBehavior.collisionMode> instead.
   				 */
-  def getCollisionMode(): Double
+  def getCollisionMode(): Double = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iOS.CollisionBehavior.items> property.
+  				 * @deprecated Access <Titanium.UI.iOS.CollisionBehavior.items> instead.
   				 */
-  def getItems(): js.Array[View]
+  def getItems(): js.Array[View] = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iOS.CollisionBehavior.referenceInsets> property.
+  				 * @deprecated Access <Titanium.UI.iOS.CollisionBehavior.referenceInsets> instead.
   				 */
-  def getReferenceInsets(): ReferenceInsets
+  def getReferenceInsets(): Padding = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iOS.CollisionBehavior.treatReferenceAsBoundary> property.
+  				 * @deprecated Access <Titanium.UI.iOS.CollisionBehavior.treatReferenceAsBoundary> instead.
   				 */
-  def getTreatReferenceAsBoundary(): Boolean
+  def getTreatReferenceAsBoundary(): Boolean = js.native
   /**
   				 * Removes all boundaries from this behavior.
   				 */
-  def removeAllBoundaries(): Unit
+  def removeAllBoundaries(): Unit = js.native
   /**
   				 * Removes the specified boundary from this behavior.
   				 */
-  def removeBoundary(boundary: BoundaryIdentifier): Unit
+  def removeBoundary(boundary: BoundaryIdentifier): Unit = js.native
+  /**
+  				 * Removes the specified callback as an event listener for the named event.
+  				 */
+  @JSName("removeEventListener")
+  def removeEventListener_boundarycollision(
+    name: boundarycollision,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ CollisionBehaviorBoundarycollisionEvent, Unit]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_itemcollision(
+    name: itemcollision,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ CollisionBehaviorItemcollisionEvent, Unit]
+  ): Unit = js.native
   /**
   				 * Removes the specified item from this behavior.
   				 */
-  def removeItem(item: js.Any): Unit
+  def removeItem(item: View): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.UI.iOS.CollisionBehavior.collisionMode> property.
+  				 * @deprecated Set the value using <Titanium.UI.iOS.CollisionBehavior.collisionMode> instead.
   				 */
-  def setCollisionMode(collisionMode: Double): Unit
+  def setCollisionMode(collisionMode: Double): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.UI.iOS.CollisionBehavior.referenceInsets> property.
+  				 * @deprecated Set the value using <Titanium.UI.iOS.CollisionBehavior.referenceInsets> instead.
   				 */
-  def setReferenceInsets(referenceInsets: ReferenceInsets): Unit
+  def setReferenceInsets(referenceInsets: Padding): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.UI.iOS.CollisionBehavior.treatReferenceAsBoundary> property.
+  				 * @deprecated Set the value using <Titanium.UI.iOS.CollisionBehavior.treatReferenceAsBoundary> instead.
   				 */
-  def setTreatReferenceAsBoundary(treatReferenceAsBoundary: Boolean): Unit
-}
-
-object CollisionBehavior {
-  @scala.inline
-  def apply(
-    addBoundary: BoundaryIdentifier => Unit,
-    addEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    addItem: js.Any => Unit,
-    apiName: String,
-    applyProperties: js.Any => Unit,
-    boundaryIdentifiers: js.Array[BoundaryIdentifier],
-    bubbleParent: Boolean,
-    collisionMode: Double,
-    fireEvent: (String, js.Any) => Unit,
-    getApiName: () => String,
-    getBoundaryIdentifiers: () => js.Array[BoundaryIdentifier],
-    getBubbleParent: () => Boolean,
-    getCollisionMode: () => Double,
-    getItems: () => js.Array[View],
-    getReferenceInsets: () => ReferenceInsets,
-    getTreatReferenceAsBoundary: () => Boolean,
-    items: js.Array[View],
-    referenceInsets: ReferenceInsets,
-    removeAllBoundaries: () => Unit,
-    removeBoundary: BoundaryIdentifier => Unit,
-    removeEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    removeItem: js.Any => Unit,
-    setBubbleParent: Boolean => Unit,
-    setCollisionMode: Double => Unit,
-    setReferenceInsets: ReferenceInsets => Unit,
-    setTreatReferenceAsBoundary: Boolean => Unit,
-    treatReferenceAsBoundary: Boolean,
-    getLifecycleContainer: () => Window | TabGroup = null,
-    lifecycleContainer: Window | TabGroup = null,
-    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ Window, Unit]) with (js.Function1[/* lifecycleContainer */ TabGroup, Unit]) = null
-  ): CollisionBehavior = {
-    val __obj = js.Dynamic.literal(addBoundary = js.Any.fromFunction1(addBoundary), addEventListener = js.Any.fromFunction2(addEventListener), addItem = js.Any.fromFunction1(addItem), apiName = apiName.asInstanceOf[js.Any], applyProperties = js.Any.fromFunction1(applyProperties), boundaryIdentifiers = boundaryIdentifiers.asInstanceOf[js.Any], bubbleParent = bubbleParent.asInstanceOf[js.Any], collisionMode = collisionMode.asInstanceOf[js.Any], fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getBoundaryIdentifiers = js.Any.fromFunction0(getBoundaryIdentifiers), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getCollisionMode = js.Any.fromFunction0(getCollisionMode), getItems = js.Any.fromFunction0(getItems), getReferenceInsets = js.Any.fromFunction0(getReferenceInsets), getTreatReferenceAsBoundary = js.Any.fromFunction0(getTreatReferenceAsBoundary), items = items.asInstanceOf[js.Any], referenceInsets = referenceInsets.asInstanceOf[js.Any], removeAllBoundaries = js.Any.fromFunction0(removeAllBoundaries), removeBoundary = js.Any.fromFunction1(removeBoundary), removeEventListener = js.Any.fromFunction2(removeEventListener), removeItem = js.Any.fromFunction1(removeItem), setBubbleParent = js.Any.fromFunction1(setBubbleParent), setCollisionMode = js.Any.fromFunction1(setCollisionMode), setReferenceInsets = js.Any.fromFunction1(setReferenceInsets), setTreatReferenceAsBoundary = js.Any.fromFunction1(setTreatReferenceAsBoundary), treatReferenceAsBoundary = treatReferenceAsBoundary.asInstanceOf[js.Any])
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
-    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
-    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CollisionBehavior]
-  }
+  def setTreatReferenceAsBoundary(treatReferenceAsBoundary: Boolean): Unit = js.native
 }
 

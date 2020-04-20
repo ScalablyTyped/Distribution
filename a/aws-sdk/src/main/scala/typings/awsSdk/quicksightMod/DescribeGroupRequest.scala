@@ -24,7 +24,6 @@ object DescribeGroupRequest {
   @scala.inline
   def apply(AwsAccountId: AwsAccountId, GroupName: GroupName, Namespace: Namespace): DescribeGroupRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], GroupName = GroupName.asInstanceOf[js.Any], Namespace = Namespace.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeGroupRequest]
   }
 }

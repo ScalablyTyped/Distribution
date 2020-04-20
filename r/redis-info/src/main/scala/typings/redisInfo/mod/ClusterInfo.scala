@@ -12,7 +12,6 @@ object ClusterInfo {
   @scala.inline
   def apply(cluster_enabled: Flag): ClusterInfo = {
     val __obj = js.Dynamic.literal(cluster_enabled = cluster_enabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClusterInfo]
   }
 }

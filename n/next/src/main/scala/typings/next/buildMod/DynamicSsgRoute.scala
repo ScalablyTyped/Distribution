@@ -16,7 +16,6 @@ object DynamicSsgRoute {
   @scala.inline
   def apply(dataRoute: String, dataRouteRegex: String, fallback: String | `false`, routeRegex: String): DynamicSsgRoute = {
     val __obj = js.Dynamic.literal(dataRoute = dataRoute.asInstanceOf[js.Any], dataRouteRegex = dataRouteRegex.asInstanceOf[js.Any], fallback = fallback.asInstanceOf[js.Any], routeRegex = routeRegex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DynamicSsgRoute]
   }
 }

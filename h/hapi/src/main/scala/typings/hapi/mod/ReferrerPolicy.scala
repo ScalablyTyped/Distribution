@@ -19,24 +19,22 @@ trait ReferrerPolicy extends js.Object
 
 object ReferrerPolicy {
   @scala.inline
-  def _empty: typings.hapi.hapiStrings._empty = this.cast("")
+  def _empty: typings.hapi.hapiStrings._empty = "".asInstanceOf[typings.hapi.hapiStrings._empty]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `no-referrer`: typings.hapi.hapiStrings.`no-referrer` = "no-referrer".asInstanceOf[typings.hapi.hapiStrings.`no-referrer`]
   @scala.inline
-  def `no-referrer`: typings.hapi.hapiStrings.`no-referrer` = this.cast("no-referrer")
+  def `no-referrer-when-downgrade`: typings.hapi.hapiStrings.`no-referrer-when-downgrade` = "no-referrer-when-downgrade".asInstanceOf[typings.hapi.hapiStrings.`no-referrer-when-downgrade`]
   @scala.inline
-  def `no-referrer-when-downgrade`: typings.hapi.hapiStrings.`no-referrer-when-downgrade` = this.cast("no-referrer-when-downgrade")
+  def origin: typings.hapi.hapiStrings.origin = "origin".asInstanceOf[typings.hapi.hapiStrings.origin]
   @scala.inline
-  def origin: typings.hapi.hapiStrings.origin = this.cast("origin")
+  def `origin-when-cross-origin`: typings.hapi.hapiStrings.`origin-when-cross-origin` = "origin-when-cross-origin".asInstanceOf[typings.hapi.hapiStrings.`origin-when-cross-origin`]
   @scala.inline
-  def `origin-when-cross-origin`: typings.hapi.hapiStrings.`origin-when-cross-origin` = this.cast("origin-when-cross-origin")
+  def `same-origin`: typings.hapi.hapiStrings.`same-origin` = "same-origin".asInstanceOf[typings.hapi.hapiStrings.`same-origin`]
   @scala.inline
-  def `same-origin`: typings.hapi.hapiStrings.`same-origin` = this.cast("same-origin")
+  def `strict-origin`: typings.hapi.hapiStrings.`strict-origin` = "strict-origin".asInstanceOf[typings.hapi.hapiStrings.`strict-origin`]
   @scala.inline
-  def `strict-origin`: typings.hapi.hapiStrings.`strict-origin` = this.cast("strict-origin")
+  def `strict-origin-when-cross-origin`: typings.hapi.hapiStrings.`strict-origin-when-cross-origin` = "strict-origin-when-cross-origin".asInstanceOf[typings.hapi.hapiStrings.`strict-origin-when-cross-origin`]
   @scala.inline
-  def `strict-origin-when-cross-origin`: typings.hapi.hapiStrings.`strict-origin-when-cross-origin` = this.cast("strict-origin-when-cross-origin")
-  @scala.inline
-  def `unsafe-url`: typings.hapi.hapiStrings.`unsafe-url` = this.cast("unsafe-url")
+  def `unsafe-url`: typings.hapi.hapiStrings.`unsafe-url` = "unsafe-url".asInstanceOf[typings.hapi.hapiStrings.`unsafe-url`]
 }
 

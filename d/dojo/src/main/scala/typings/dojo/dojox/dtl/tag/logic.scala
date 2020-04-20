@@ -73,7 +73,6 @@ object logic {
     ifnotequal: (js.Any, js.Any) => js.Any
   ): logic = {
     val __obj = js.Dynamic.literal(ForNode = js.Any.fromFunction4(ForNode), IfEqualNode = js.Any.fromFunction5(IfEqualNode), IfNode = js.Any.fromFunction4(IfNode), for_ = js.Any.fromFunction2(for_), if_ = js.Any.fromFunction2(if_), ifequal = js.Any.fromFunction2(ifequal), ifnotequal = js.Any.fromFunction2(ifnotequal))
-  
     __obj.asInstanceOf[logic]
   }
 }

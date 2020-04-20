@@ -30,7 +30,6 @@ object TokenInfoDictionary {
     targetMapToBuffer: () => Uint8Array
   ): TokenInfoDictionary = {
     val __obj = js.Dynamic.literal(addMapping = js.Any.fromFunction2(addMapping), buildDictionary = js.Any.fromFunction1(buildDictionary), getFeatures = js.Any.fromFunction1(getFeatures), loadDictionary = js.Any.fromFunction1(loadDictionary), loadPosVector = js.Any.fromFunction1(loadPosVector), loadTargetMap = js.Any.fromFunction1(loadTargetMap), put = js.Any.fromFunction5(put), targetMapToBuffer = js.Any.fromFunction0(targetMapToBuffer))
-  
     __obj.asInstanceOf[TokenInfoDictionary]
   }
 }

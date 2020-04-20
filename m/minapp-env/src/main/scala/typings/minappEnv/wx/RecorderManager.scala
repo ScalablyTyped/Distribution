@@ -101,7 +101,6 @@ object RecorderManager {
     stop: () => Unit
   ): RecorderManager = {
     val __obj = js.Dynamic.literal(onError = js.Any.fromFunction1(onError), onFrameRecorded = js.Any.fromFunction1(onFrameRecorded), onInterruptionBegin = js.Any.fromFunction1(onInterruptionBegin), onInterruptionEnd = js.Any.fromFunction1(onInterruptionEnd), onPause = js.Any.fromFunction1(onPause), onResume = js.Any.fromFunction1(onResume), onStart = js.Any.fromFunction1(onStart), onStop = js.Any.fromFunction1(onStop), pause = js.Any.fromFunction0(pause), resume = js.Any.fromFunction0(resume), start = js.Any.fromFunction1(start), stop = js.Any.fromFunction0(stop))
-  
     __obj.asInstanceOf[RecorderManager]
   }
 }

@@ -13,7 +13,6 @@ object Slider {
   @scala.inline
   def apply(destroy: () => Unit): Slider = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy))
-  
     __obj.asInstanceOf[Slider]
   }
 }

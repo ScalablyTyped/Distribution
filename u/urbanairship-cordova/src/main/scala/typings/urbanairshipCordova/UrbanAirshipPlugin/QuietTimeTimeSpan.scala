@@ -21,7 +21,6 @@ object QuietTimeTimeSpan {
   @scala.inline
   def apply(endHour: Double, endMinute: Double, startHour: Double, startMinute: Double): QuietTimeTimeSpan = {
     val __obj = js.Dynamic.literal(endHour = endHour.asInstanceOf[js.Any], endMinute = endMinute.asInstanceOf[js.Any], startHour = startHour.asInstanceOf[js.Any], startMinute = startMinute.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[QuietTimeTimeSpan]
   }
 }

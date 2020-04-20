@@ -30,7 +30,6 @@ object AnonHaspin {
     status_code: String
   ): AnonHaspin = {
     val __obj = js.Dynamic.literal(has_pin = has_pin.asInstanceOf[js.Any], last_reminded_at = last_reminded_at.asInstanceOf[js.Any], last_viewed_at = last_viewed_at.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], signature_id = signature_id.asInstanceOf[js.Any], signed_at = signed_at.asInstanceOf[js.Any], signer_email_address = signer_email_address.asInstanceOf[js.Any], signer_name = signer_name.asInstanceOf[js.Any], status_code = status_code.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHaspin]
   }
 }

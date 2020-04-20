@@ -26,7 +26,6 @@ object SendDialogOptions {
   @scala.inline
   def apply(link: String, method: String, to: String): SendDialogOptions = {
     val __obj = js.Dynamic.literal(link = link.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SendDialogOptions]
   }
 }

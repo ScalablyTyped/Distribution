@@ -25,7 +25,6 @@ object UpdateTemplateActiveVersionRequest {
     TemplateType: string
   ): UpdateTemplateActiveVersionRequest = {
     val __obj = js.Dynamic.literal(TemplateActiveVersionRequest = TemplateActiveVersionRequest.asInstanceOf[js.Any], TemplateName = TemplateName.asInstanceOf[js.Any], TemplateType = TemplateType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateTemplateActiveVersionRequest]
   }
 }

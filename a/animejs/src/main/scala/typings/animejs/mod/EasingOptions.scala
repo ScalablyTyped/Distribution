@@ -41,68 +41,66 @@ trait EasingOptions extends js.Object
 
 object EasingOptions {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def easeInBack: typings.animejs.animejsStrings.easeInBack = "easeInBack".asInstanceOf[typings.animejs.animejsStrings.easeInBack]
   @scala.inline
-  def easeInBack: typings.animejs.animejsStrings.easeInBack = this.cast("easeInBack")
+  def easeInBounce: typings.animejs.animejsStrings.easeInBounce = "easeInBounce".asInstanceOf[typings.animejs.animejsStrings.easeInBounce]
   @scala.inline
-  def easeInBounce: typings.animejs.animejsStrings.easeInBounce = this.cast("easeInBounce")
+  def easeInCirc: typings.animejs.animejsStrings.easeInCirc = "easeInCirc".asInstanceOf[typings.animejs.animejsStrings.easeInCirc]
   @scala.inline
-  def easeInCirc: typings.animejs.animejsStrings.easeInCirc = this.cast("easeInCirc")
+  def easeInCubic: typings.animejs.animejsStrings.easeInCubic = "easeInCubic".asInstanceOf[typings.animejs.animejsStrings.easeInCubic]
   @scala.inline
-  def easeInCubic: typings.animejs.animejsStrings.easeInCubic = this.cast("easeInCubic")
+  def easeInElastic: typings.animejs.animejsStrings.easeInElastic = "easeInElastic".asInstanceOf[typings.animejs.animejsStrings.easeInElastic]
   @scala.inline
-  def easeInElastic: typings.animejs.animejsStrings.easeInElastic = this.cast("easeInElastic")
+  def easeInExpo: typings.animejs.animejsStrings.easeInExpo = "easeInExpo".asInstanceOf[typings.animejs.animejsStrings.easeInExpo]
   @scala.inline
-  def easeInExpo: typings.animejs.animejsStrings.easeInExpo = this.cast("easeInExpo")
+  def easeInOutBack: typings.animejs.animejsStrings.easeInOutBack = "easeInOutBack".asInstanceOf[typings.animejs.animejsStrings.easeInOutBack]
   @scala.inline
-  def easeInOutBack: typings.animejs.animejsStrings.easeInOutBack = this.cast("easeInOutBack")
+  def easeInOutBounce: typings.animejs.animejsStrings.easeInOutBounce = "easeInOutBounce".asInstanceOf[typings.animejs.animejsStrings.easeInOutBounce]
   @scala.inline
-  def easeInOutBounce: typings.animejs.animejsStrings.easeInOutBounce = this.cast("easeInOutBounce")
+  def easeInOutCirc: typings.animejs.animejsStrings.easeInOutCirc = "easeInOutCirc".asInstanceOf[typings.animejs.animejsStrings.easeInOutCirc]
   @scala.inline
-  def easeInOutCirc: typings.animejs.animejsStrings.easeInOutCirc = this.cast("easeInOutCirc")
+  def easeInOutCubic: typings.animejs.animejsStrings.easeInOutCubic = "easeInOutCubic".asInstanceOf[typings.animejs.animejsStrings.easeInOutCubic]
   @scala.inline
-  def easeInOutCubic: typings.animejs.animejsStrings.easeInOutCubic = this.cast("easeInOutCubic")
+  def easeInOutElastic: typings.animejs.animejsStrings.easeInOutElastic = "easeInOutElastic".asInstanceOf[typings.animejs.animejsStrings.easeInOutElastic]
   @scala.inline
-  def easeInOutElastic: typings.animejs.animejsStrings.easeInOutElastic = this.cast("easeInOutElastic")
+  def easeInOutExpo: typings.animejs.animejsStrings.easeInOutExpo = "easeInOutExpo".asInstanceOf[typings.animejs.animejsStrings.easeInOutExpo]
   @scala.inline
-  def easeInOutExpo: typings.animejs.animejsStrings.easeInOutExpo = this.cast("easeInOutExpo")
+  def easeInOutQuad: typings.animejs.animejsStrings.easeInOutQuad = "easeInOutQuad".asInstanceOf[typings.animejs.animejsStrings.easeInOutQuad]
   @scala.inline
-  def easeInOutQuad: typings.animejs.animejsStrings.easeInOutQuad = this.cast("easeInOutQuad")
+  def easeInOutQuart: typings.animejs.animejsStrings.easeInOutQuart = "easeInOutQuart".asInstanceOf[typings.animejs.animejsStrings.easeInOutQuart]
   @scala.inline
-  def easeInOutQuart: typings.animejs.animejsStrings.easeInOutQuart = this.cast("easeInOutQuart")
+  def easeInOutQuint: typings.animejs.animejsStrings.easeInOutQuint = "easeInOutQuint".asInstanceOf[typings.animejs.animejsStrings.easeInOutQuint]
   @scala.inline
-  def easeInOutQuint: typings.animejs.animejsStrings.easeInOutQuint = this.cast("easeInOutQuint")
+  def easeInOutSine: typings.animejs.animejsStrings.easeInOutSine = "easeInOutSine".asInstanceOf[typings.animejs.animejsStrings.easeInOutSine]
   @scala.inline
-  def easeInOutSine: typings.animejs.animejsStrings.easeInOutSine = this.cast("easeInOutSine")
+  def easeInQuad: typings.animejs.animejsStrings.easeInQuad = "easeInQuad".asInstanceOf[typings.animejs.animejsStrings.easeInQuad]
   @scala.inline
-  def easeInQuad: typings.animejs.animejsStrings.easeInQuad = this.cast("easeInQuad")
+  def easeInQuart: typings.animejs.animejsStrings.easeInQuart = "easeInQuart".asInstanceOf[typings.animejs.animejsStrings.easeInQuart]
   @scala.inline
-  def easeInQuart: typings.animejs.animejsStrings.easeInQuart = this.cast("easeInQuart")
+  def easeInQuint: typings.animejs.animejsStrings.easeInQuint = "easeInQuint".asInstanceOf[typings.animejs.animejsStrings.easeInQuint]
   @scala.inline
-  def easeInQuint: typings.animejs.animejsStrings.easeInQuint = this.cast("easeInQuint")
+  def easeInSine: typings.animejs.animejsStrings.easeInSine = "easeInSine".asInstanceOf[typings.animejs.animejsStrings.easeInSine]
   @scala.inline
-  def easeInSine: typings.animejs.animejsStrings.easeInSine = this.cast("easeInSine")
+  def easeOutBack: typings.animejs.animejsStrings.easeOutBack = "easeOutBack".asInstanceOf[typings.animejs.animejsStrings.easeOutBack]
   @scala.inline
-  def easeOutBack: typings.animejs.animejsStrings.easeOutBack = this.cast("easeOutBack")
+  def easeOutBounce: typings.animejs.animejsStrings.easeOutBounce = "easeOutBounce".asInstanceOf[typings.animejs.animejsStrings.easeOutBounce]
   @scala.inline
-  def easeOutBounce: typings.animejs.animejsStrings.easeOutBounce = this.cast("easeOutBounce")
+  def easeOutCirc: typings.animejs.animejsStrings.easeOutCirc = "easeOutCirc".asInstanceOf[typings.animejs.animejsStrings.easeOutCirc]
   @scala.inline
-  def easeOutCirc: typings.animejs.animejsStrings.easeOutCirc = this.cast("easeOutCirc")
+  def easeOutCubic: typings.animejs.animejsStrings.easeOutCubic = "easeOutCubic".asInstanceOf[typings.animejs.animejsStrings.easeOutCubic]
   @scala.inline
-  def easeOutCubic: typings.animejs.animejsStrings.easeOutCubic = this.cast("easeOutCubic")
+  def easeOutElastic: typings.animejs.animejsStrings.easeOutElastic = "easeOutElastic".asInstanceOf[typings.animejs.animejsStrings.easeOutElastic]
   @scala.inline
-  def easeOutElastic: typings.animejs.animejsStrings.easeOutElastic = this.cast("easeOutElastic")
+  def easeOutExpo: typings.animejs.animejsStrings.easeOutExpo = "easeOutExpo".asInstanceOf[typings.animejs.animejsStrings.easeOutExpo]
   @scala.inline
-  def easeOutExpo: typings.animejs.animejsStrings.easeOutExpo = this.cast("easeOutExpo")
+  def easeOutQuad: typings.animejs.animejsStrings.easeOutQuad = "easeOutQuad".asInstanceOf[typings.animejs.animejsStrings.easeOutQuad]
   @scala.inline
-  def easeOutQuad: typings.animejs.animejsStrings.easeOutQuad = this.cast("easeOutQuad")
+  def easeOutQuart: typings.animejs.animejsStrings.easeOutQuart = "easeOutQuart".asInstanceOf[typings.animejs.animejsStrings.easeOutQuart]
   @scala.inline
-  def easeOutQuart: typings.animejs.animejsStrings.easeOutQuart = this.cast("easeOutQuart")
+  def easeOutQuint: typings.animejs.animejsStrings.easeOutQuint = "easeOutQuint".asInstanceOf[typings.animejs.animejsStrings.easeOutQuint]
   @scala.inline
-  def easeOutQuint: typings.animejs.animejsStrings.easeOutQuint = this.cast("easeOutQuint")
+  def easeOutSine: typings.animejs.animejsStrings.easeOutSine = "easeOutSine".asInstanceOf[typings.animejs.animejsStrings.easeOutSine]
   @scala.inline
-  def easeOutSine: typings.animejs.animejsStrings.easeOutSine = this.cast("easeOutSine")
-  @scala.inline
-  def linear: typings.animejs.animejsStrings.linear = this.cast("linear")
+  def linear: typings.animejs.animejsStrings.linear = "linear".asInstanceOf[typings.animejs.animejsStrings.linear]
 }
 

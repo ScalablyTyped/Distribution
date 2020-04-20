@@ -20,7 +20,6 @@ object S3BatchResult {
     treatMissingKeysAs: S3BatchResultResultCode
   ): S3BatchResult = {
     val __obj = js.Dynamic.literal(invocationId = invocationId.asInstanceOf[js.Any], invocationSchemaVersion = invocationSchemaVersion.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any], treatMissingKeysAs = treatMissingKeysAs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[S3BatchResult]
   }
 }

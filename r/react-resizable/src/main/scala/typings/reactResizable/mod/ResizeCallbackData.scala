@@ -16,7 +16,6 @@ object ResizeCallbackData {
   @scala.inline
   def apply(handle: ResizeHandle, node: HTMLElement, size: AnonHeight): ResizeCallbackData = {
     val __obj = js.Dynamic.literal(handle = handle.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResizeCallbackData]
   }
 }

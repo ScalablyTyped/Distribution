@@ -13,7 +13,6 @@ object Options {
   @scala.inline
   def apply(url: String): Options = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Options]
   }
 }

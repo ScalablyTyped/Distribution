@@ -20,7 +20,6 @@ object SalesforceAction {
   @scala.inline
   def apply(token: SalesforceToken, url: SalesforceEndpoint): SalesforceAction = {
     val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SalesforceAction]
   }
 }

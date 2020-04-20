@@ -20,7 +20,6 @@ object UpdatePullRequestDescriptionInput {
   @scala.inline
   def apply(description: Description, pullRequestId: PullRequestId): UpdatePullRequestDescriptionInput = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], pullRequestId = pullRequestId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdatePullRequestDescriptionInput]
   }
 }

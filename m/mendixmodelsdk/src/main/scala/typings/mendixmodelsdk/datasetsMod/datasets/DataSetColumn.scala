@@ -27,17 +27,17 @@ class DataSetColumn protected () extends Element {
   /**
     * In version 7.9.0: introduced
     */
-  def columnType(): DataType = js.native
+  def columnType: DataType = js.native
   def columnType(newValue: DataType): js.Any = js.native
-  def containerAsJavaDataSetSource(): JavaDataSetSource = js.native
-  def name(): String = js.native
+  def containerAsJavaDataSetSource: JavaDataSetSource = js.native
+  def name: String = js.native
   def name(newValue: String): js.Any = js.native
   /**
     * The value of this property is conceptually of type dataTypes.LegacyDataType.
     *
     * In version 7.9.0: deleted
     */
-  def `type`(): String = js.native
+  def `type`: String = js.native
   def `type`(newValue: String): js.Any = js.native
 }
 

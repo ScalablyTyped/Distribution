@@ -15,7 +15,6 @@ object AnonContentSize {
   @scala.inline
   def apply(contentSize: AnonHeightWidth, eventCount: Double, target: Double, text: String): AnonContentSize = {
     val __obj = js.Dynamic.literal(contentSize = contentSize.asInstanceOf[js.Any], eventCount = eventCount.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonContentSize]
   }
 }

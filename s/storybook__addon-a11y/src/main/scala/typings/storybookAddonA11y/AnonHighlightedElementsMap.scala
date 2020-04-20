@@ -13,7 +13,6 @@ object AnonHighlightedElementsMap {
   @scala.inline
   def apply(highlightedElementsMap: Map[_, _]): AnonHighlightedElementsMap = {
     val __obj = js.Dynamic.literal(highlightedElementsMap = highlightedElementsMap.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHighlightedElementsMap]
   }
 }

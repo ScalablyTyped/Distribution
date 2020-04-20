@@ -16,18 +16,16 @@ trait ResizeMode extends js.Object
 
 object ResizeMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.reactSketchapp.reactSketchappStrings.center = "center".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.center]
   @scala.inline
-  def center: typings.reactSketchapp.reactSketchappStrings.center = this.cast("center")
+  def contain: typings.reactSketchapp.reactSketchappStrings.contain = "contain".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.contain]
   @scala.inline
-  def contain: typings.reactSketchapp.reactSketchappStrings.contain = this.cast("contain")
+  def cover: typings.reactSketchapp.reactSketchappStrings.cover = "cover".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.cover]
   @scala.inline
-  def cover: typings.reactSketchapp.reactSketchappStrings.cover = this.cast("cover")
+  def none: typings.reactSketchapp.reactSketchappStrings.none = "none".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.none]
   @scala.inline
-  def none: typings.reactSketchapp.reactSketchappStrings.none = this.cast("none")
+  def repeat: typings.reactSketchapp.reactSketchappStrings.repeat = "repeat".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.repeat]
   @scala.inline
-  def repeat: typings.reactSketchapp.reactSketchappStrings.repeat = this.cast("repeat")
-  @scala.inline
-  def stretch: typings.reactSketchapp.reactSketchappStrings.stretch = this.cast("stretch")
+  def stretch: typings.reactSketchapp.reactSketchappStrings.stretch = "stretch".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.stretch]
 }
 

@@ -16,7 +16,6 @@ object DeleteVoiceConnectorStreamingConfigurationRequest {
   @scala.inline
   def apply(VoiceConnectorId: NonEmptyString): DeleteVoiceConnectorStreamingConfigurationRequest = {
     val __obj = js.Dynamic.literal(VoiceConnectorId = VoiceConnectorId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteVoiceConnectorStreamingConfigurationRequest]
   }
 }

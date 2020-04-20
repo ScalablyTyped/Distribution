@@ -18,14 +18,12 @@ trait CopyRecordOptionsEnum extends js.Object
 
 object CopyRecordOptionsEnum {
   @scala.inline
-  def adCopyAllowEmulation: `4` = this.cast(4)
+  def adCopyAllowEmulation: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def adCopyNonRecursive: `2` = this.cast(2)
+  def adCopyNonRecursive: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def adCopyOverWrite: `1` = this.cast(1)
+  def adCopyOverWrite: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def adCopyUnspecified: `-1` = this.cast(-1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def adCopyUnspecified: `-1` = -1.asInstanceOf[`-1`]
 }
 

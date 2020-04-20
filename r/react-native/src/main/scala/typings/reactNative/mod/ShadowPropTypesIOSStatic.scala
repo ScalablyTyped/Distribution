@@ -32,7 +32,6 @@ object ShadowPropTypesIOSStatic {
   @scala.inline
   def apply(shadowColor: String, shadowOffset: AnonHeight, shadowOpacity: Double, shadowRadius: Double): ShadowPropTypesIOSStatic = {
     val __obj = js.Dynamic.literal(shadowColor = shadowColor.asInstanceOf[js.Any], shadowOffset = shadowOffset.asInstanceOf[js.Any], shadowOpacity = shadowOpacity.asInstanceOf[js.Any], shadowRadius = shadowRadius.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ShadowPropTypesIOSStatic]
   }
 }

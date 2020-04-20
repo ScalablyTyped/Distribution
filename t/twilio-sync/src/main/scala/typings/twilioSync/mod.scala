@@ -173,25 +173,25 @@ object mod extends js.Object {
       * @type String
       * @readonly
       */
-    val version: js.Any = js.native
+    def version: js.Any = js.native
   }
   
   /* static members */
   @js.native
   object SyncDocument extends js.Object {
-    val `type`: String = js.native
+    def `type`: String = js.native
   }
   
   /* static members */
   @js.native
   object SyncList extends js.Object {
-    val `type`: String = js.native
+    def `type`: String = js.native
   }
   
   /* static members */
   @js.native
   object SyncMap extends js.Object {
-    val `type`: String = js.native
+    def `type`: String = js.native
   }
   
   /* static members */
@@ -203,7 +203,7 @@ object mod extends js.Object {
       * @type String
       * @readonly
       */
-    val version: js.Any = js.native
+    def version: js.Any = js.native
   }
   
 }

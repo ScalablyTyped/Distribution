@@ -39,10 +39,10 @@ abstract class Type protected () extends Element {
   val containerAsListType_FType: IListType = js.native
   @JSName("model")
   var model_FType: IModel = js.native
-  def containerAsBasicParameterType(): BasicParameterType = js.native
-  def containerAsJavaAction(): JavaAction = js.native
-  def containerAsJavaActionParameter(): JavaActionParameter = js.native
-  def containerAsListType(): ListType = js.native
+  def containerAsBasicParameterType: BasicParameterType = js.native
+  def containerAsJavaAction: JavaAction = js.native
+  def containerAsJavaActionParameter: JavaActionParameter = js.native
+  def containerAsListType: ListType = js.native
 }
 
 /* static members */

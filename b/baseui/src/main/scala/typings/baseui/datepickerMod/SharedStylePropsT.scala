@@ -55,7 +55,6 @@ object SharedStylePropsT {
     $startDate: Boolean
   ): SharedStylePropsT = {
     val __obj = js.Dynamic.literal($date = $date.asInstanceOf[js.Any], $disabled = $disabled.asInstanceOf[js.Any], $hasRangeHighlighted = $hasRangeHighlighted.asInstanceOf[js.Any], $hasRangeOnRight = $hasRangeOnRight.asInstanceOf[js.Any], $hasRangeSelected = $hasRangeSelected.asInstanceOf[js.Any], $isHeader = $isHeader.asInstanceOf[js.Any], $isHighlighted = $isHighlighted.asInstanceOf[js.Any], $isHovered = $isHovered.asInstanceOf[js.Any], $outsideMonth = $outsideMonth.asInstanceOf[js.Any], $pseudoHighlighted = $pseudoHighlighted.asInstanceOf[js.Any], $pseudoSelected = $pseudoSelected.asInstanceOf[js.Any], $range = $range.asInstanceOf[js.Any], $selected = $selected.asInstanceOf[js.Any], $startDate = $startDate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SharedStylePropsT]
   }
 }

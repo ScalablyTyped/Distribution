@@ -22,18 +22,16 @@ trait styleWebkitBoxPack extends js.Object
 
 object styleWebkitBoxPack {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleWebkitBoxPackCenter: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleWebkitBoxPackCenter: `2` = this.cast(2)
+  def styleWebkitBoxPackEnd: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleWebkitBoxPackEnd: `1` = this.cast(1)
+  def styleWebkitBoxPackJustify: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def styleWebkitBoxPackJustify: `3` = this.cast(3)
+  def styleWebkitBoxPackNotSet: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def styleWebkitBoxPackNotSet: `5` = this.cast(5)
+  def styleWebkitBoxPackStart: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleWebkitBoxPackStart: `0` = this.cast(0)
-  @scala.inline
-  def styleWebkitBoxPack_Max: `2147483647` = this.cast(2147483647)
+  def styleWebkitBoxPack_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

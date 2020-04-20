@@ -24,7 +24,6 @@ object AnonBlock {
     value: AnonCrypto
   ): AnonBlock = {
     val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any], network = network.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], transaction_id = transaction_id.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBlock]
   }
 }

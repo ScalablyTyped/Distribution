@@ -33,7 +33,6 @@ object Pattern {
     toSvg: () => String
   ): Pattern = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], toBase64 = js.Any.fromFunction0(toBase64), toDataUri = js.Any.fromFunction0(toDataUri), toDataUrl = js.Any.fromFunction0(toDataUrl), toSvg = js.Any.fromFunction0(toSvg))
-  
     __obj.asInstanceOf[Pattern]
   }
 }

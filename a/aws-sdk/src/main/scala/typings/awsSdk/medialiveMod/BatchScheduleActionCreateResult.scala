@@ -16,7 +16,6 @@ object BatchScheduleActionCreateResult {
   @scala.inline
   def apply(ScheduleActions: listOfScheduleAction): BatchScheduleActionCreateResult = {
     val __obj = js.Dynamic.literal(ScheduleActions = ScheduleActions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchScheduleActionCreateResult]
   }
 }

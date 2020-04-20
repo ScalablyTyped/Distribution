@@ -12,10 +12,8 @@ trait ImageSourceType extends js.Object
 
 object ImageSourceType {
   @scala.inline
-  def album: typings.weappApi.weappApiStrings.album = this.cast("album")
+  def album: typings.weappApi.weappApiStrings.album = "album".asInstanceOf[typings.weappApi.weappApiStrings.album]
   @scala.inline
-  def camera: typings.weappApi.weappApiStrings.camera = this.cast("camera")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def camera: typings.weappApi.weappApiStrings.camera = "camera".asInstanceOf[typings.weappApi.weappApiStrings.camera]
 }
 

@@ -17,20 +17,18 @@ trait SnackbarClassKey extends js.Object
 
 object SnackbarClassKey {
   @scala.inline
-  def anchorOriginBottomCenter: typings.materialUiCore.materialUiCoreStrings.anchorOriginBottomCenter = this.cast("anchorOriginBottomCenter")
+  def anchorOriginBottomCenter: typings.materialUiCore.materialUiCoreStrings.anchorOriginBottomCenter = "anchorOriginBottomCenter".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.anchorOriginBottomCenter]
   @scala.inline
-  def anchorOriginBottomLeft: typings.materialUiCore.materialUiCoreStrings.anchorOriginBottomLeft = this.cast("anchorOriginBottomLeft")
+  def anchorOriginBottomLeft: typings.materialUiCore.materialUiCoreStrings.anchorOriginBottomLeft = "anchorOriginBottomLeft".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.anchorOriginBottomLeft]
   @scala.inline
-  def anchorOriginBottomRight: typings.materialUiCore.materialUiCoreStrings.anchorOriginBottomRight = this.cast("anchorOriginBottomRight")
+  def anchorOriginBottomRight: typings.materialUiCore.materialUiCoreStrings.anchorOriginBottomRight = "anchorOriginBottomRight".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.anchorOriginBottomRight]
   @scala.inline
-  def anchorOriginTopCenter: typings.materialUiCore.materialUiCoreStrings.anchorOriginTopCenter = this.cast("anchorOriginTopCenter")
+  def anchorOriginTopCenter: typings.materialUiCore.materialUiCoreStrings.anchorOriginTopCenter = "anchorOriginTopCenter".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.anchorOriginTopCenter]
   @scala.inline
-  def anchorOriginTopLeft: typings.materialUiCore.materialUiCoreStrings.anchorOriginTopLeft = this.cast("anchorOriginTopLeft")
+  def anchorOriginTopLeft: typings.materialUiCore.materialUiCoreStrings.anchorOriginTopLeft = "anchorOriginTopLeft".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.anchorOriginTopLeft]
   @scala.inline
-  def anchorOriginTopRight: typings.materialUiCore.materialUiCoreStrings.anchorOriginTopRight = this.cast("anchorOriginTopRight")
+  def anchorOriginTopRight: typings.materialUiCore.materialUiCoreStrings.anchorOriginTopRight = "anchorOriginTopRight".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.anchorOriginTopRight]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def root: typings.materialUiCore.materialUiCoreStrings.root = this.cast("root")
+  def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
 }
 

@@ -23,7 +23,6 @@ object FontMetricsObject {
   @scala.inline
   def apply(b: Double, f: Double, h: Double): FontMetricsObject = {
     val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], f = f.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FontMetricsObject]
   }
 }

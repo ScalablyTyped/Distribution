@@ -23,7 +23,6 @@ object WorkItemFieldReference {
   @scala.inline
   def apply(name: String, referenceName: String, url: String): WorkItemFieldReference = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], referenceName = referenceName.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WorkItemFieldReference]
   }
 }

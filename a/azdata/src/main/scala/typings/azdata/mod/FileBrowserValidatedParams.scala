@@ -13,7 +13,6 @@ object FileBrowserValidatedParams {
   @scala.inline
   def apply(message: String, succeeded: Boolean): FileBrowserValidatedParams = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], succeeded = succeeded.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FileBrowserValidatedParams]
   }
 }

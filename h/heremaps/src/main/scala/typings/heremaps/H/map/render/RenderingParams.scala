@@ -70,7 +70,6 @@ object RenderingParams {
     zoom: Double
   ): RenderingParams = {
     val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], cacheOnly = cacheOnly.asInstanceOf[js.Any], pixelRatio = pixelRatio.asInstanceOf[js.Any], priorityCenter = priorityCenter.asInstanceOf[js.Any], projection = projection.asInstanceOf[js.Any], screenCenter = screenCenter.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RenderingParams]
   }
 }

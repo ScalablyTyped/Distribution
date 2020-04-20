@@ -1,6 +1,6 @@
 package typings.node.childProcessMod
 
-import typings.node.NodeJS.ProcessEnv
+import typings.node.NodeJS.Dict
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ object ForkOptions {
   def apply(
     cwd: String = null,
     detached: js.UndefOr[Boolean] = js.undefined,
-    env: ProcessEnv = null,
+    env: Dict[String] = null,
     execArgv: js.Array[String] = null,
     execPath: String = null,
     gid: Int | Double = null,

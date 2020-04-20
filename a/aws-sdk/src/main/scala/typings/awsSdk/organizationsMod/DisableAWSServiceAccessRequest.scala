@@ -16,7 +16,6 @@ object DisableAWSServiceAccessRequest {
   @scala.inline
   def apply(ServicePrincipal: ServicePrincipal): DisableAWSServiceAccessRequest = {
     val __obj = js.Dynamic.literal(ServicePrincipal = ServicePrincipal.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisableAWSServiceAccessRequest]
   }
 }

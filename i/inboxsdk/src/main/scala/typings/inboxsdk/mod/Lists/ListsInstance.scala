@@ -18,7 +18,6 @@ object ListsInstance {
     registerThreadRowViewSelectionHandler: js.Function0[_] => js.Function0[Unit]
   ): ListsInstance = {
     val __obj = js.Dynamic.literal(getSelectedThreadRowViews = js.Any.fromFunction0(getSelectedThreadRowViews), registerThreadRowViewHandler = js.Any.fromFunction1(registerThreadRowViewHandler), registerThreadRowViewSelectionHandler = js.Any.fromFunction1(registerThreadRowViewSelectionHandler))
-  
     __obj.asInstanceOf[ListsInstance]
   }
 }

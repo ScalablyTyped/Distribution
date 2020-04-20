@@ -59,7 +59,6 @@ object CacheKey {
     includeVariable: String => Unit
   ): CacheKey = {
     val __obj = js.Dynamic.literal(excludeQueryString = js.Any.fromFunction0(excludeQueryString), includeCookie = js.Any.fromFunction1(includeCookie), includeHeader = js.Any.fromFunction1(includeHeader), includeQueryArgument = js.Any.fromFunction1(includeQueryArgument), includeQueryString = js.Any.fromFunction0(includeQueryString), includeVariable = js.Any.fromFunction1(includeVariable))
-  
     __obj.asInstanceOf[CacheKey]
   }
 }

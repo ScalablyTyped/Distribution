@@ -1,5 +1,6 @@
 package typings.typestyle.typestyleMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Record
 import typings.typestyle.AnonAutoGenerateTag
 import typings.typestyle.typesMod.FontFace
@@ -79,6 +80,6 @@ class TypeStyle protected () extends js.Object {
     */
   def stylesheet[Classes /* <: Record[String, NestedCSSProperties] */](classes: Classes): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ ClassName in keyof Classes ]: string}
-    */ typings.typestyle.typestyleStrings.TypeStyle with js.Any = js.native
+    */ typings.typestyle.typestyleStrings.TypeStyle with TopLevel[js.Any] = js.native
 }
 

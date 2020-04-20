@@ -15,10 +15,8 @@ trait AnchorDirectionShape extends js.Object
 
 object AnchorDirectionShape {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def left: typings.reactDates.reactDatesStrings.left = "left".asInstanceOf[typings.reactDates.reactDatesStrings.left]
   @scala.inline
-  def left: typings.reactDates.reactDatesStrings.left = this.cast("left")
-  @scala.inline
-  def right: typings.reactDates.reactDatesStrings.right = this.cast("right")
+  def right: typings.reactDates.reactDatesStrings.right = "right".asInstanceOf[typings.reactDates.reactDatesStrings.right]
 }
 

@@ -16,7 +16,6 @@ object DeleteConfigurationSetTrackingOptionsRequest {
   @scala.inline
   def apply(ConfigurationSetName: ConfigurationSetName): DeleteConfigurationSetTrackingOptionsRequest = {
     val __obj = js.Dynamic.literal(ConfigurationSetName = ConfigurationSetName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteConfigurationSetTrackingOptionsRequest]
   }
 }

@@ -16,7 +16,6 @@ object MonitoringInput {
   @scala.inline
   def apply(EndpointInput: EndpointInput): MonitoringInput = {
     val __obj = js.Dynamic.literal(EndpointInput = EndpointInput.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MonitoringInput]
   }
 }

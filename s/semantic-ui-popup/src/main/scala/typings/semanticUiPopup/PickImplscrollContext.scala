@@ -13,7 +13,6 @@ object PickImplscrollContext {
   @scala.inline
   def apply(scrollContext: String | JQuery): PickImplscrollContext = {
     val __obj = js.Dynamic.literal(scrollContext = scrollContext.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplscrollContext]
   }
 }

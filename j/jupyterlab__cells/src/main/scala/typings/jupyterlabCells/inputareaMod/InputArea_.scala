@@ -32,15 +32,15 @@ class InputArea_ protected () extends Widget {
   /**
     * Get the CodeEditor used by the cell.
     */
-  def editor(): IEditor = js.native
+  def editor: IEditor = js.native
   /**
     * Get the CodeEditorWrapper used by the cell.
     */
-  def editorWidget(): CodeEditorWrapper = js.native
+  def editorWidget: CodeEditorWrapper = js.native
   /**
     * Get the prompt node used by the cell.
     */
-  def promptNode(): HTMLElement = js.native
+  def promptNode: HTMLElement = js.native
   /**
     * Render an input instead of the text editor.
     */

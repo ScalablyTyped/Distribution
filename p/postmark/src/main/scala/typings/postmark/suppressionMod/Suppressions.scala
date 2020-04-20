@@ -12,7 +12,6 @@ object Suppressions {
   @scala.inline
   def apply(Suppressions: js.Array[Suppression]): Suppressions = {
     val __obj = js.Dynamic.literal(Suppressions = Suppressions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Suppressions]
   }
 }

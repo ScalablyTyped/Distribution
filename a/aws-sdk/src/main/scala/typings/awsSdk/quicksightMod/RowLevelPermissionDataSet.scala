@@ -20,7 +20,6 @@ object RowLevelPermissionDataSet {
   @scala.inline
   def apply(Arn: Arn, PermissionPolicy: RowLevelPermissionPolicy): RowLevelPermissionDataSet = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], PermissionPolicy = PermissionPolicy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RowLevelPermissionDataSet]
   }
 }

@@ -20,7 +20,6 @@ object DeleteScalingPolicyInput {
   @scala.inline
   def apply(FleetId: FleetIdOrArn, Name: NonZeroAndMaxString): DeleteScalingPolicyInput = {
     val __obj = js.Dynamic.literal(FleetId = FleetId.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteScalingPolicyInput]
   }
 }

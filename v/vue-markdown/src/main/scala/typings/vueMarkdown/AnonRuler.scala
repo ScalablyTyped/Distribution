@@ -24,7 +24,6 @@ object AnonRuler {
     tokenize: js.Any
   ): AnonRuler = {
     val __obj = js.Dynamic.literal(State = State.asInstanceOf[js.Any], parse = parse.asInstanceOf[js.Any], ruler = ruler.asInstanceOf[js.Any], ruler2 = ruler2.asInstanceOf[js.Any], skipToken = skipToken.asInstanceOf[js.Any], tokenize = tokenize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRuler]
   }
 }

@@ -13,7 +13,6 @@ object TypeofSQS {
   @scala.inline
   def apply(Types: TypeofSQS): TypeofSQS = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofSQS]
   }
 }

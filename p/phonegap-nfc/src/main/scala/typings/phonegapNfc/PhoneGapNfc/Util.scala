@@ -30,7 +30,6 @@ object Util {
     stringToBytes: String => js.Array[Double]
   ): Util = {
     val __obj = js.Dynamic.literal(bytesToHexString = js.Any.fromFunction1(bytesToHexString), bytesToString = js.Any.fromFunction1(bytesToString), stringToBytes = js.Any.fromFunction1(stringToBytes))
-  
     __obj.asInstanceOf[Util]
   }
 }

@@ -50,7 +50,6 @@ object AsyncKeyValueRWTransaction {
     put: (String, Buffer, Boolean, js.Function2[/* e */ ApiError, /* committed */ js.UndefOr[Boolean], Unit]) => Unit
   ): AsyncKeyValueRWTransaction = {
     val __obj = js.Dynamic.literal(abort = js.Any.fromFunction1(abort), commit = js.Any.fromFunction1(commit), del = js.Any.fromFunction2(del), get = js.Any.fromFunction2(get), put = js.Any.fromFunction4(put))
-  
     __obj.asInstanceOf[AsyncKeyValueRWTransaction]
   }
 }

@@ -1,5 +1,11 @@
 package typings.jestJasmine2.reportDispatcherMod
 
+import typings.jestJasmine2.jestJasmine2Strings.jasmineDone
+import typings.jestJasmine2.jestJasmine2Strings.jasmineStarted
+import typings.jestJasmine2.jestJasmine2Strings.specDone
+import typings.jestJasmine2.jestJasmine2Strings.specStarted
+import typings.jestJasmine2.jestJasmine2Strings.suiteDone
+import typings.jestJasmine2.jestJasmine2Strings.suiteStarted
 import typings.jestJasmine2.specMod.SpecResult
 import typings.jestJasmine2.suiteMod.SuiteResult
 import typings.jestJasmine2.typesMod.Reporter
@@ -11,7 +17,7 @@ import scala.scalajs.js.annotation._
 @JSImport("jest-jasmine2/build/jasmine/ReportDispatcher", JSImport.Default)
 @js.native
 class default protected () extends ReportDispatcher {
-  def this(methods: js.Array[String]) = this()
+  def this(methods: js.Array[jasmineDone | jasmineStarted | specDone | specStarted | suiteDone | suiteStarted]) = this()
   /* CompleteClass */
   override def addReporter(reporter: Reporter): Unit = js.native
   /* CompleteClass */

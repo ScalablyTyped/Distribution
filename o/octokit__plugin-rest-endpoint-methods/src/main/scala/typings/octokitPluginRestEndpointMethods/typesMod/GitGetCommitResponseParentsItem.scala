@@ -13,7 +13,6 @@ object GitGetCommitResponseParentsItem {
   @scala.inline
   def apply(sha: String, url: String): GitGetCommitResponseParentsItem = {
     val __obj = js.Dynamic.literal(sha = sha.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GitGetCommitResponseParentsItem]
   }
 }

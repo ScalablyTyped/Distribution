@@ -13,7 +13,6 @@ object Resolved {
   @scala.inline
   def apply(fn: /* repeated */ js.Any => js.Any, schema: js.Object): Resolved = {
     val __obj = js.Dynamic.literal(fn = js.Any.fromFunction1(fn), schema = schema.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Resolved]
   }
 }

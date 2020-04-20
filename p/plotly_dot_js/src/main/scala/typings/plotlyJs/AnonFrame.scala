@@ -14,7 +14,6 @@ object AnonFrame {
   @scala.inline
   def apply(frame: AnonDuration, transition: Transition): AnonFrame = {
     val __obj = js.Dynamic.literal(frame = frame.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFrame]
   }
 }

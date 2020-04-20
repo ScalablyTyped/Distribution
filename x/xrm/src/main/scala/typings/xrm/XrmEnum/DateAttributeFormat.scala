@@ -18,10 +18,8 @@ trait DateAttributeFormat extends js.Object
 
 object DateAttributeFormat {
   @scala.inline
-  def Date: date = this.cast("date")
+  def Date: date = "date".asInstanceOf[date]
   @scala.inline
-  def DateTime: datetime = this.cast("datetime")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def DateTime: datetime = "datetime".asInstanceOf[datetime]
 }
 

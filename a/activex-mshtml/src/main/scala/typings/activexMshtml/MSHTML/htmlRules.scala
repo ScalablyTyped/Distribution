@@ -24,20 +24,18 @@ trait htmlRules extends js.Object
 
 object htmlRules {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def htmlRulesNotSet: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def htmlRulesNotSet: `0` = this.cast(0)
+  def htmlRules_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
   @scala.inline
-  def htmlRules_Max: `2147483647` = this.cast(2147483647)
+  def htmlRulesall: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def htmlRulesall: `5` = this.cast(5)
+  def htmlRulescols: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def htmlRulescols: `4` = this.cast(4)
+  def htmlRulesgroups: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def htmlRulesgroups: `2` = this.cast(2)
+  def htmlRulesnone: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def htmlRulesnone: `1` = this.cast(1)
-  @scala.inline
-  def htmlRulesrows: `3` = this.cast(3)
+  def htmlRulesrows: `3` = 3.asInstanceOf[`3`]
 }
 

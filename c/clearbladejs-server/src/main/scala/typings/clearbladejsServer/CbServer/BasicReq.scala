@@ -27,7 +27,6 @@ object BasicReq {
     userid: String
   ): BasicReq = {
     val __obj = js.Dynamic.literal(isLogging = isLogging.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], systemKey = systemKey.asInstanceOf[js.Any], systemSecret = systemSecret.asInstanceOf[js.Any], userEmail = userEmail.asInstanceOf[js.Any], userToken = userToken.asInstanceOf[js.Any], userid = userid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BasicReq]
   }
 }

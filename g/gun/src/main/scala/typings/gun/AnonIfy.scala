@@ -28,7 +28,6 @@ object AnonIfy {
     soul: ChainReference[_, _, `false`] => String
   ): AnonIfy = {
     val __obj = js.Dynamic.literal(ify = js.Any.fromFunction1(ify), is = js.Any.fromFunction1(is), soul = js.Any.fromFunction1(soul))
-  
     __obj.asInstanceOf[AnonIfy]
   }
 }

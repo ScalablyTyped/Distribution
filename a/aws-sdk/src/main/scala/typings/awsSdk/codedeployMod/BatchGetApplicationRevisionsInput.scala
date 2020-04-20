@@ -20,7 +20,6 @@ object BatchGetApplicationRevisionsInput {
   @scala.inline
   def apply(applicationName: ApplicationName, revisions: RevisionLocationList): BatchGetApplicationRevisionsInput = {
     val __obj = js.Dynamic.literal(applicationName = applicationName.asInstanceOf[js.Any], revisions = revisions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchGetApplicationRevisionsInput]
   }
 }

@@ -16,7 +16,6 @@ object DescribeMountTargetSecurityGroupsResponse {
   @scala.inline
   def apply(SecurityGroups: SecurityGroups): DescribeMountTargetSecurityGroupsResponse = {
     val __obj = js.Dynamic.literal(SecurityGroups = SecurityGroups.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeMountTargetSecurityGroupsResponse]
   }
 }

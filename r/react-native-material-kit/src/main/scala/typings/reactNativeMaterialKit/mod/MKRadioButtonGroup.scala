@@ -12,7 +12,6 @@ object MKRadioButtonGroup {
   @scala.inline
   def apply(buttons: js.Array[_]): MKRadioButtonGroup = {
     val __obj = js.Dynamic.literal(buttons = buttons.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MKRadioButtonGroup]
   }
 }

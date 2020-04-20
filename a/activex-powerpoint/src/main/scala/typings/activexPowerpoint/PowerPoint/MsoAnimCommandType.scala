@@ -16,12 +16,10 @@ trait MsoAnimCommandType extends js.Object
 
 object MsoAnimCommandType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoAnimCommandTypeCall: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoAnimCommandTypeCall: `1` = this.cast(1)
+  def msoAnimCommandTypeEvent: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def msoAnimCommandTypeEvent: `0` = this.cast(0)
-  @scala.inline
-  def msoAnimCommandTypeVerb: `2` = this.cast(2)
+  def msoAnimCommandTypeVerb: `2` = 2.asInstanceOf[`2`]
 }
 

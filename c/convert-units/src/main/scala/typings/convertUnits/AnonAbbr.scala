@@ -18,7 +18,6 @@ object AnonAbbr {
   @scala.inline
   def apply[T /* <: unit */](abbr: T, measure: measure, system: system, unit: AnonName): AnonAbbr[T] = {
     val __obj = js.Dynamic.literal(abbr = abbr.asInstanceOf[js.Any], measure = measure.asInstanceOf[js.Any], system = system.asInstanceOf[js.Any], unit = unit.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAbbr[T]]
   }
 }

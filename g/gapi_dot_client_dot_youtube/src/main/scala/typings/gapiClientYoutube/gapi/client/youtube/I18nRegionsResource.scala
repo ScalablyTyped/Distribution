@@ -15,7 +15,6 @@ object I18nRegionsResource {
   @scala.inline
   def apply(list: AnonUserIp => Request_[I18nRegionListResponse]): I18nRegionsResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[I18nRegionsResource]
   }
 }

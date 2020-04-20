@@ -3,6 +3,7 @@ package typings.sinonExpressMock
 import typings.express.mod.Request_
 import typings.express.mod.Response_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.sinon.mod.SinonStub
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -49,8 +50,8 @@ object mod extends js.Object {
       def is(args: js.Any*): js.Any = js.native
     }
     
-    def apply[T /* <: js.Object */](): MockReq with T with Request_[ParamsDictionary] = js.native
-    def apply[T /* <: js.Object */](options: T): MockReq with T with Request_[ParamsDictionary] = js.native
+    def apply[T /* <: js.Object */](): MockReq with T with (Request_[ParamsDictionary, _, _, Query]) = js.native
+    def apply[T /* <: js.Object */](options: T): MockReq with T with (Request_[ParamsDictionary, _, _, Query]) = js.native
   }
   
   @js.native

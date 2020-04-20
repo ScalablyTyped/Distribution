@@ -16,7 +16,6 @@ object DeregisterEcsClusterRequest {
   @scala.inline
   def apply(EcsClusterArn: String): DeregisterEcsClusterRequest = {
     val __obj = js.Dynamic.literal(EcsClusterArn = EcsClusterArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeregisterEcsClusterRequest]
   }
 }

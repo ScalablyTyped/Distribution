@@ -12,7 +12,6 @@ object RenderProps {
   @scala.inline
   def apply(closeFn: () => Unit): RenderProps = {
     val __obj = js.Dynamic.literal(closeFn = js.Any.fromFunction0(closeFn))
-  
     __obj.asInstanceOf[RenderProps]
   }
 }

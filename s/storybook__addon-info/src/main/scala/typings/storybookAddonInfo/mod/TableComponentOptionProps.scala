@@ -13,7 +13,6 @@ object TableComponentOptionProps {
   @scala.inline
   def apply(propDefinitions: js.Array[AnonDefaultValue]): TableComponentOptionProps = {
     val __obj = js.Dynamic.literal(propDefinitions = propDefinitions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TableComponentOptionProps]
   }
 }

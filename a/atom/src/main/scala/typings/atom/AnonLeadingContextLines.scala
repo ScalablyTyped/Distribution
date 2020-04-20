@@ -24,7 +24,6 @@ object AnonLeadingContextLines {
     trailingContextLines: js.Array[String]
   ): AnonLeadingContextLines = {
     val __obj = js.Dynamic.literal(leadingContextLines = leadingContextLines.asInstanceOf[js.Any], lineText = lineText.asInstanceOf[js.Any], lineTextOffset = lineTextOffset.asInstanceOf[js.Any], matchText = matchText.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any], trailingContextLines = trailingContextLines.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLeadingContextLines]
   }
 }

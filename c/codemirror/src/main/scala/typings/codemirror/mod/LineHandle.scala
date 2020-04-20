@@ -12,7 +12,6 @@ object LineHandle {
   @scala.inline
   def apply(text: String): LineHandle = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LineHandle]
   }
 }

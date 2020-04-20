@@ -14,7 +14,6 @@ object AnonBuffer {
   @scala.inline
   def apply(buffer: Buffer, parsed: AnonDNS): AnonBuffer = {
     val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], parsed = parsed.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBuffer]
   }
 }

@@ -16,7 +16,6 @@ object DeleteConformancePackRequest {
   @scala.inline
   def apply(ConformancePackName: ConformancePackName): DeleteConformancePackRequest = {
     val __obj = js.Dynamic.literal(ConformancePackName = ConformancePackName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteConformancePackRequest]
   }
 }

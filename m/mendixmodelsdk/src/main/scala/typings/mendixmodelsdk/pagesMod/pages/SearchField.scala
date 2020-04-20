@@ -23,21 +23,21 @@ abstract class SearchField protected () extends ControlBarItem {
   ) = this()
   @JSName("model")
   var model_FSearchField: IModel = js.native
-  def caption(): Text = js.native
+  def caption: Text = js.native
   def caption(newValue: Text): js.Any = js.native
   /**
     * In version 7.21.0: introduced
     */
-  def customDateFormat(): String = js.native
+  def customDateFormat: String = js.native
   def customDateFormat(newValue: String): js.Any = js.native
-  def defaultValue(): String = js.native
+  def defaultValue: String = js.native
   def defaultValue(newValue: String): js.Any = js.native
   /**
     * In version 7.21.0: introduced
     */
-  def placeholder(): Text = js.native
+  def placeholder: Text = js.native
   def placeholder(newValue: Text): js.Any = js.native
-  def `type`(): SearchFieldType = js.native
+  def `type`: SearchFieldType = js.native
   def `type`(newValue: SearchFieldType): js.Any = js.native
 }
 

@@ -18,7 +18,6 @@ object DistanceMatrixResponse {
     rows: js.Array[DistanceMatrixResponseRow]
   ): DistanceMatrixResponse = {
     val __obj = js.Dynamic.literal(destinationAddresses = destinationAddresses.asInstanceOf[js.Any], originAddresses = originAddresses.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DistanceMatrixResponse]
   }
 }

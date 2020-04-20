@@ -16,18 +16,16 @@ trait FacetType extends js.Object
 
 object FacetType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def circle: typings.bizcharts.bizchartsStrings.circle = "circle".asInstanceOf[typings.bizcharts.bizchartsStrings.circle]
   @scala.inline
-  def circle: typings.bizcharts.bizchartsStrings.circle = this.cast("circle")
+  def list: typings.bizcharts.bizchartsStrings.list = "list".asInstanceOf[typings.bizcharts.bizchartsStrings.list]
   @scala.inline
-  def list: typings.bizcharts.bizchartsStrings.list = this.cast("list")
+  def matrix: typings.bizcharts.bizchartsStrings.matrix = "matrix".asInstanceOf[typings.bizcharts.bizchartsStrings.matrix]
   @scala.inline
-  def matrix: typings.bizcharts.bizchartsStrings.matrix = this.cast("matrix")
+  def mirror: typings.bizcharts.bizchartsStrings.mirror = "mirror".asInstanceOf[typings.bizcharts.bizchartsStrings.mirror]
   @scala.inline
-  def mirror: typings.bizcharts.bizchartsStrings.mirror = this.cast("mirror")
+  def rect: typings.bizcharts.bizchartsStrings.rect = "rect".asInstanceOf[typings.bizcharts.bizchartsStrings.rect]
   @scala.inline
-  def rect: typings.bizcharts.bizchartsStrings.rect = this.cast("rect")
-  @scala.inline
-  def tree: typings.bizcharts.bizchartsStrings.tree = this.cast("tree")
+  def tree: typings.bizcharts.bizchartsStrings.tree = "tree".asInstanceOf[typings.bizcharts.bizchartsStrings.tree]
 }
 

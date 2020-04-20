@@ -14,7 +14,6 @@ object AnonBaseUrl {
   @scala.inline
   def apply(baseUrl: String, headers: AnonAuthorization, timeout: Double): AnonBaseUrl = {
     val __obj = js.Dynamic.literal(baseUrl = baseUrl.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBaseUrl]
   }
 }

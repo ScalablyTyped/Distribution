@@ -25,7 +25,7 @@ abstract class MenuWidget protected () extends Widget {
   ) = this()
   @JSName("model")
   var model_FMenuWidget: IModel = js.native
-  def menuSource(): MenuSource = js.native
+  def menuSource: MenuSource = js.native
   def menuSource(newValue: MenuSource): js.Any = js.native
 }
 

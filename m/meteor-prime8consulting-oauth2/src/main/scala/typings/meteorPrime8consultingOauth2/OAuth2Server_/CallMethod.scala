@@ -25,7 +25,6 @@ object CallMethod {
     authCodeGrant: (String, String, String, js.Array[String], String, js.Function2[/* err */ Error, /* authCodeGrantResult */ AuthCodeGrantResult, Unit]) => Unit
   ): CallMethod = {
     val __obj = js.Dynamic.literal(authCodeGrant = js.Any.fromFunction6(authCodeGrant))
-  
     __obj.asInstanceOf[CallMethod]
   }
 }

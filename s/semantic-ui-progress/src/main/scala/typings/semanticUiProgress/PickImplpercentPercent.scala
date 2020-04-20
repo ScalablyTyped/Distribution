@@ -13,7 +13,6 @@ object PickImplpercentPercent {
   @scala.inline
   def apply(percent: String): PickImplpercentPercent = {
     val __obj = js.Dynamic.literal(percent = percent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplpercentPercent]
   }
 }

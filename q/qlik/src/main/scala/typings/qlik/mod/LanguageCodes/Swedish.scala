@@ -12,10 +12,8 @@ trait Swedish extends _ALL
 
 object Swedish {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def sv: typings.qlik.qlikStrings.sv = "sv".asInstanceOf[typings.qlik.qlikStrings.sv]
   @scala.inline
-  def sv: typings.qlik.qlikStrings.sv = this.cast("sv")
-  @scala.inline
-  def `sv-SE`: typings.qlik.qlikStrings.`sv-SE` = this.cast("sv-SE")
+  def `sv-SE`: typings.qlik.qlikStrings.`sv-SE` = "sv-SE".asInstanceOf[typings.qlik.qlikStrings.`sv-SE`]
 }
 

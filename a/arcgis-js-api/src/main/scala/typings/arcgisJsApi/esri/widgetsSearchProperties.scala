@@ -45,6 +45,14 @@ trait widgetsSearchProperties
     */
   var autoSelect: js.UndefOr[Boolean] = js.undefined
   /**
+    * When true, the widget is visually withdrawn and cannot be interacted with.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#disabled)
+    *
+    * @default false
+    */
+  var disabled: js.UndefOr[Boolean] = js.undefined
+  /**
     * The widget's default CSS icon class.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#iconClass)
@@ -176,6 +184,7 @@ object widgetsSearchProperties {
     autoSelect: js.UndefOr[Boolean] = js.undefined,
     container: String | HTMLElement = null,
     destroyed: js.UndefOr[Boolean] = js.undefined,
+    disabled: js.UndefOr[Boolean] = js.undefined,
     goToOverride: (/* view */ MapView | SceneView, /* goToParameters */ js.Any) => Unit = null,
     iconClass: String = null,
     id: String = null,
@@ -203,6 +212,7 @@ object widgetsSearchProperties {
     if (!js.isUndefined(autoSelect)) __obj.updateDynamic("autoSelect")(autoSelect.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (goToOverride != null) __obj.updateDynamic("goToOverride")(js.Any.fromFunction2(goToOverride))
     if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])

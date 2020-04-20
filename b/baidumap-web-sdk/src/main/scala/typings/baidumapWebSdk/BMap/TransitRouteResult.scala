@@ -26,7 +26,6 @@ object TransitRouteResult {
     policy: TransitPolicy
   ): TransitRouteResult = {
     val __obj = js.Dynamic.literal(city = city.asInstanceOf[js.Any], getEnd = js.Any.fromFunction0(getEnd), getNumPlans = js.Any.fromFunction0(getNumPlans), getPlan = js.Any.fromFunction1(getPlan), getStart = js.Any.fromFunction0(getStart), moreResultsUrl = moreResultsUrl.asInstanceOf[js.Any], policy = policy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TransitRouteResult]
   }
 }

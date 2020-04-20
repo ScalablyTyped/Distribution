@@ -16,7 +16,6 @@ object DeleteSuppressedDestinationRequest {
   @scala.inline
   def apply(EmailAddress: EmailAddress): DeleteSuppressedDestinationRequest = {
     val __obj = js.Dynamic.literal(EmailAddress = EmailAddress.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteSuppressedDestinationRequest]
   }
 }

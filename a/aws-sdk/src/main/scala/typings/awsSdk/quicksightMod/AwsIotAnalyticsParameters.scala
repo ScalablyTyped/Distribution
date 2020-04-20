@@ -16,7 +16,6 @@ object AwsIotAnalyticsParameters {
   @scala.inline
   def apply(DataSetName: DataSetName): AwsIotAnalyticsParameters = {
     val __obj = js.Dynamic.literal(DataSetName = DataSetName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AwsIotAnalyticsParameters]
   }
 }

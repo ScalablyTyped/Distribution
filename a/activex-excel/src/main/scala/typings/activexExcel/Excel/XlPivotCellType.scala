@@ -30,26 +30,24 @@ trait XlPivotCellType extends js.Object
 
 object XlPivotCellType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlPivotCellBlankCell: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def xlPivotCellBlankCell: `9` = this.cast(9)
+  def xlPivotCellCustomSubtotal: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def xlPivotCellCustomSubtotal: `7` = this.cast(7)
+  def xlPivotCellDataField: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlPivotCellDataField: `4` = this.cast(4)
+  def xlPivotCellDataPivotField: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def xlPivotCellDataPivotField: `8` = this.cast(8)
+  def xlPivotCellGrandTotal: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlPivotCellGrandTotal: `3` = this.cast(3)
+  def xlPivotCellPageFieldItem: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def xlPivotCellPageFieldItem: `6` = this.cast(6)
+  def xlPivotCellPivotField: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xlPivotCellPivotField: `5` = this.cast(5)
+  def xlPivotCellPivotItem: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlPivotCellPivotItem: `1` = this.cast(1)
+  def xlPivotCellSubtotal: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlPivotCellSubtotal: `2` = this.cast(2)
-  @scala.inline
-  def xlPivotCellValue: `0` = this.cast(0)
+  def xlPivotCellValue: `0` = 0.asInstanceOf[`0`]
 }
 

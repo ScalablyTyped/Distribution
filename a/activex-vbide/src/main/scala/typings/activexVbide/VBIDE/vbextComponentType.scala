@@ -20,16 +20,14 @@ trait vbextComponentType extends js.Object
 
 object vbextComponentType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def vbext_ct_ActiveXDesigner: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def vbext_ct_ActiveXDesigner: `11` = this.cast(11)
+  def vbext_ct_ClassModule: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def vbext_ct_ClassModule: `2` = this.cast(2)
+  def vbext_ct_Document: `100` = 100.asInstanceOf[`100`]
   @scala.inline
-  def vbext_ct_Document: `100` = this.cast(100)
+  def vbext_ct_MSForm: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def vbext_ct_MSForm: `3` = this.cast(3)
-  @scala.inline
-  def vbext_ct_StdModule: `1` = this.cast(1)
+  def vbext_ct_StdModule: `1` = 1.asInstanceOf[`1`]
 }
 

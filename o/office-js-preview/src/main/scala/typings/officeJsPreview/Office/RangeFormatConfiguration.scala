@@ -23,7 +23,6 @@ object RangeFormatConfiguration {
   @scala.inline
   def apply(cells: Table | RangeCoordinates, format: js.Object): RangeFormatConfiguration = {
     val __obj = js.Dynamic.literal(cells = cells.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RangeFormatConfiguration]
   }
 }

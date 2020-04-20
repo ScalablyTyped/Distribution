@@ -16,7 +16,6 @@ object AnonTr {
   @scala.inline
   def apply(bl: Point, br: Point, tl: Point, tr: Point): AnonTr = {
     val __obj = js.Dynamic.literal(bl = bl.asInstanceOf[js.Any], br = br.asInstanceOf[js.Any], tl = tl.asInstanceOf[js.Any], tr = tr.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTr]
   }
 }

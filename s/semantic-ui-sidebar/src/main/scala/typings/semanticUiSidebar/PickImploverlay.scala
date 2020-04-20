@@ -13,7 +13,6 @@ object PickImploverlay {
   @scala.inline
   def apply(overlay: String): PickImploverlay = {
     val __obj = js.Dynamic.literal(overlay = overlay.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImploverlay]
   }
 }

@@ -16,7 +16,6 @@ object OpenedFileIoRequestedEventOptions {
   @scala.inline
   def apply(data: ArrayBuffer, fileSystemId: String, offset: Double, openRequestId: Double, requestId: Double): OpenedFileIoRequestedEventOptions = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], fileSystemId = fileSystemId.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], openRequestId = openRequestId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OpenedFileIoRequestedEventOptions]
   }
 }

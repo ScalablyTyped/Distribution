@@ -13,12 +13,10 @@ trait TileLayout extends js.Object
 
 object TileLayout {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dz: typings.sharp.sharpStrings.dz = "dz".asInstanceOf[typings.sharp.sharpStrings.dz]
   @scala.inline
-  def dz: typings.sharp.sharpStrings.dz = this.cast("dz")
+  def google: typings.sharp.sharpStrings.google = "google".asInstanceOf[typings.sharp.sharpStrings.google]
   @scala.inline
-  def google: typings.sharp.sharpStrings.google = this.cast("google")
-  @scala.inline
-  def zoomify: typings.sharp.sharpStrings.zoomify = this.cast("zoomify")
+  def zoomify: typings.sharp.sharpStrings.zoomify = "zoomify".asInstanceOf[typings.sharp.sharpStrings.zoomify]
 }
 

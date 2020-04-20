@@ -13,7 +13,6 @@ object PickImplboundary {
   @scala.inline
   def apply(boundary: String | JQuery): PickImplboundary = {
     val __obj = js.Dynamic.literal(boundary = boundary.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplboundary]
   }
 }

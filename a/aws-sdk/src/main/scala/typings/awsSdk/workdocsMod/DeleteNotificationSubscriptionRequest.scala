@@ -20,7 +20,6 @@ object DeleteNotificationSubscriptionRequest {
   @scala.inline
   def apply(OrganizationId: IdType, SubscriptionId: IdType): DeleteNotificationSubscriptionRequest = {
     val __obj = js.Dynamic.literal(OrganizationId = OrganizationId.asInstanceOf[js.Any], SubscriptionId = SubscriptionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteNotificationSubscriptionRequest]
   }
 }

@@ -20,7 +20,6 @@ object UplinkEchoConfig {
   @scala.inline
   def apply(antennaUplinkConfigArn: ConfigArn, enabled: Boolean): UplinkEchoConfig = {
     val __obj = js.Dynamic.literal(antennaUplinkConfigArn = antennaUplinkConfigArn.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UplinkEchoConfig]
   }
 }

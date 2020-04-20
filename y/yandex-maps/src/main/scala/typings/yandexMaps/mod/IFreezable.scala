@@ -20,7 +20,6 @@ object IFreezable {
     unfreeze: () => IFreezable
   ): IFreezable = {
     val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], freeze = js.Any.fromFunction0(freeze), isFrozen = js.Any.fromFunction0(isFrozen), unfreeze = js.Any.fromFunction0(unfreeze))
-  
     __obj.asInstanceOf[IFreezable]
   }
 }

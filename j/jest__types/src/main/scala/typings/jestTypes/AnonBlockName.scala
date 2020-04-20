@@ -18,7 +18,6 @@ object AnonBlockName {
   @scala.inline
   def apply(blockName: BlockName, mode: BlockMode, name: finish_describe_definition): AnonBlockName = {
     val __obj = js.Dynamic.literal(blockName = blockName.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBlockName]
   }
 }

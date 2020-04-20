@@ -15,7 +15,6 @@ object AnonObjectType {
   @scala.inline
   def apply(objectType: (GraphQLObjectType[_, _, StringDictionary[_]]) | GraphQLInterfaceType): AnonObjectType = {
     val __obj = js.Dynamic.literal(objectType = objectType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonObjectType]
   }
 }

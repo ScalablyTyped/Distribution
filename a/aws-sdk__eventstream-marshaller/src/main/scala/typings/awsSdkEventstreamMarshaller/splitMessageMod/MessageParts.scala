@@ -15,7 +15,6 @@ object MessageParts {
   @scala.inline
   def apply(body: Uint8Array, headers: DataView): MessageParts = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MessageParts]
   }
 }

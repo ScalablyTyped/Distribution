@@ -13,7 +13,6 @@ object AnonGZip {
   @scala.inline
   def apply(GZip: Double, None: Double): AnonGZip = {
     val __obj = js.Dynamic.literal(GZip = GZip.asInstanceOf[js.Any], None = None.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGZip]
   }
 }

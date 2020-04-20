@@ -15,7 +15,6 @@ object FlatTreeNode {
   @scala.inline
   def apply(childrenCount: Double, hasParent: Boolean, id: String, level: Double): FlatTreeNode = {
     val __obj = js.Dynamic.literal(childrenCount = childrenCount.asInstanceOf[js.Any], hasParent = hasParent.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FlatTreeNode]
   }
 }

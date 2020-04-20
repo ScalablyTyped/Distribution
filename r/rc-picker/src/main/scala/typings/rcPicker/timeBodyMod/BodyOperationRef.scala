@@ -12,7 +12,6 @@ object BodyOperationRef {
   @scala.inline
   def apply(onUpDown: Double => Unit): BodyOperationRef = {
     val __obj = js.Dynamic.literal(onUpDown = js.Any.fromFunction1(onUpDown))
-  
     __obj.asInstanceOf[BodyOperationRef]
   }
 }

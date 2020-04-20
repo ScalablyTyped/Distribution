@@ -16,7 +16,6 @@ object SecurityProfileTarget {
   @scala.inline
   def apply(arn: SecurityProfileTargetArn): SecurityProfileTarget = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SecurityProfileTarget]
   }
 }

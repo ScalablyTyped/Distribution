@@ -43,7 +43,6 @@ object dxFunnelItem {
     value: Double
   ): dxFunnelItem = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], getColor = js.Any.fromFunction0(getColor), hover = js.Any.fromFunction1(hover), isHovered = js.Any.fromFunction0(isHovered), isSelected = js.Any.fromFunction0(isSelected), percent = percent.asInstanceOf[js.Any], select = js.Any.fromFunction1(select), showTooltip = js.Any.fromFunction0(showTooltip), value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[dxFunnelItem]
   }
 }

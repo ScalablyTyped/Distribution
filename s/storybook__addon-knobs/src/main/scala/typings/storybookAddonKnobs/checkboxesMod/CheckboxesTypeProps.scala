@@ -20,7 +20,6 @@ object CheckboxesTypeProps {
     onChange: CheckboxesTypeKnobValue => CheckboxesTypeKnobValue
   ): CheckboxesTypeProps = {
     val __obj = js.Dynamic.literal(isInline = isInline.asInstanceOf[js.Any], knob = knob.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
-  
     __obj.asInstanceOf[CheckboxesTypeProps]
   }
 }

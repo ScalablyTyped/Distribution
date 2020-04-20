@@ -16,7 +16,6 @@ object DeleteJobQueueRequest {
   @scala.inline
   def apply(jobQueue: String): DeleteJobQueueRequest = {
     val __obj = js.Dynamic.literal(jobQueue = jobQueue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteJobQueueRequest]
   }
 }

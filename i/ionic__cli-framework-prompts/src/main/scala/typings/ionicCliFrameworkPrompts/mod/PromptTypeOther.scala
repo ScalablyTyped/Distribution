@@ -13,12 +13,10 @@ trait PromptTypeOther extends js.Object
 
 object PromptTypeOther {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def input: typings.ionicCliFrameworkPrompts.ionicCliFrameworkPromptsStrings.input = "input".asInstanceOf[typings.ionicCliFrameworkPrompts.ionicCliFrameworkPromptsStrings.input]
   @scala.inline
-  def input: typings.ionicCliFrameworkPrompts.ionicCliFrameworkPromptsStrings.input = this.cast("input")
+  def list: typings.ionicCliFrameworkPrompts.ionicCliFrameworkPromptsStrings.list = "list".asInstanceOf[typings.ionicCliFrameworkPrompts.ionicCliFrameworkPromptsStrings.list]
   @scala.inline
-  def list: typings.ionicCliFrameworkPrompts.ionicCliFrameworkPromptsStrings.list = this.cast("list")
-  @scala.inline
-  def password: typings.ionicCliFrameworkPrompts.ionicCliFrameworkPromptsStrings.password = this.cast("password")
+  def password: typings.ionicCliFrameworkPrompts.ionicCliFrameworkPromptsStrings.password = "password".asInstanceOf[typings.ionicCliFrameworkPrompts.ionicCliFrameworkPromptsStrings.password]
 }
 

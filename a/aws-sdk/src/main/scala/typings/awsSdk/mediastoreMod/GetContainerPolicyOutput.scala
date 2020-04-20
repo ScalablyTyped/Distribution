@@ -16,7 +16,6 @@ object GetContainerPolicyOutput {
   @scala.inline
   def apply(Policy: ContainerPolicy): GetContainerPolicyOutput = {
     val __obj = js.Dynamic.literal(Policy = Policy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetContainerPolicyOutput]
   }
 }

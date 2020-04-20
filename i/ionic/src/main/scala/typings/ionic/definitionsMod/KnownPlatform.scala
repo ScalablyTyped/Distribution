@@ -15,16 +15,14 @@ trait KnownPlatform extends js.Object
 
 object KnownPlatform {
   @scala.inline
-  def android: typings.ionic.ionicStrings.android = this.cast("android")
+  def android: typings.ionic.ionicStrings.android = "android".asInstanceOf[typings.ionic.ionicStrings.android]
   @scala.inline
-  def browser: typings.ionic.ionicStrings.browser = this.cast("browser")
+  def browser: typings.ionic.ionicStrings.browser = "browser".asInstanceOf[typings.ionic.ionicStrings.browser]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ios: typings.ionic.ionicStrings.ios = "ios".asInstanceOf[typings.ionic.ionicStrings.ios]
   @scala.inline
-  def ios: typings.ionic.ionicStrings.ios = this.cast("ios")
+  def windows: typings.ionic.ionicStrings.windows = "windows".asInstanceOf[typings.ionic.ionicStrings.windows]
   @scala.inline
-  def windows: typings.ionic.ionicStrings.windows = this.cast("windows")
-  @scala.inline
-  def wp8: typings.ionic.ionicStrings.wp8 = this.cast("wp8")
+  def wp8: typings.ionic.ionicStrings.wp8 = "wp8".asInstanceOf[typings.ionic.ionicStrings.wp8]
 }
 

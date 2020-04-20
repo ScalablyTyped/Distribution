@@ -34,7 +34,6 @@ object IHitArea {
   @scala.inline
   def apply(contains: (Double, Double) => Boolean): IHitArea = {
     val __obj = js.Dynamic.literal(contains = js.Any.fromFunction2(contains))
-  
     __obj.asInstanceOf[IHitArea]
   }
 }

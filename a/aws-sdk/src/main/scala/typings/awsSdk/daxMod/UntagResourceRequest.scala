@@ -20,7 +20,6 @@ object UntagResourceRequest {
   @scala.inline
   def apply(ResourceName: String, TagKeys: KeyList): UntagResourceRequest = {
     val __obj = js.Dynamic.literal(ResourceName = ResourceName.asInstanceOf[js.Any], TagKeys = TagKeys.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UntagResourceRequest]
   }
 }

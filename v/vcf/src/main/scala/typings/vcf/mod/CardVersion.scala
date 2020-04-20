@@ -13,12 +13,10 @@ trait CardVersion extends js.Object
 
 object CardVersion {
   @scala.inline
-  def `2Dot1`: typings.vcf.vcfStrings.`2Dot1` = this.cast("2.1")
+  def `2Dot1`: typings.vcf.vcfStrings.`2Dot1` = "2.1".asInstanceOf[typings.vcf.vcfStrings.`2Dot1`]
   @scala.inline
-  def `3Dot0`: typings.vcf.vcfStrings.`3Dot0` = this.cast("3.0")
+  def `3Dot0`: typings.vcf.vcfStrings.`3Dot0` = "3.0".asInstanceOf[typings.vcf.vcfStrings.`3Dot0`]
   @scala.inline
-  def `4Dot0`: typings.vcf.vcfStrings.`4Dot0` = this.cast("4.0")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `4Dot0`: typings.vcf.vcfStrings.`4Dot0` = "4.0".asInstanceOf[typings.vcf.vcfStrings.`4Dot0`]
 }
 

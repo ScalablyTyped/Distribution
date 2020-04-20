@@ -44,40 +44,38 @@ trait WdThemeColorIndex extends js.Object
 
 object WdThemeColorIndex {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdNotThemeColor: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def wdNotThemeColor: `-1` = this.cast(-1)
+  def wdThemeColorAccent1: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdThemeColorAccent1: `4` = this.cast(4)
+  def wdThemeColorAccent2: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdThemeColorAccent2: `5` = this.cast(5)
+  def wdThemeColorAccent3: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdThemeColorAccent3: `6` = this.cast(6)
+  def wdThemeColorAccent4: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def wdThemeColorAccent4: `7` = this.cast(7)
+  def wdThemeColorAccent5: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def wdThemeColorAccent5: `8` = this.cast(8)
+  def wdThemeColorAccent6: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def wdThemeColorAccent6: `9` = this.cast(9)
+  def wdThemeColorBackground1: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def wdThemeColorBackground1: `12` = this.cast(12)
+  def wdThemeColorBackground2: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def wdThemeColorBackground2: `14` = this.cast(14)
+  def wdThemeColorHyperlink: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def wdThemeColorHyperlink: `10` = this.cast(10)
+  def wdThemeColorHyperlinkFollowed: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def wdThemeColorHyperlinkFollowed: `11` = this.cast(11)
+  def wdThemeColorMainDark1: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdThemeColorMainDark1: `0` = this.cast(0)
+  def wdThemeColorMainDark2: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdThemeColorMainDark2: `2` = this.cast(2)
+  def wdThemeColorMainLight1: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdThemeColorMainLight1: `1` = this.cast(1)
+  def wdThemeColorMainLight2: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdThemeColorMainLight2: `3` = this.cast(3)
+  def wdThemeColorText1: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def wdThemeColorText1: `13` = this.cast(13)
-  @scala.inline
-  def wdThemeColorText2: `15` = this.cast(15)
+  def wdThemeColorText2: `15` = 15.asInstanceOf[`15`]
 }
 

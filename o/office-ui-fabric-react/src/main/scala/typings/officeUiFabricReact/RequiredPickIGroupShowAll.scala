@@ -14,7 +14,6 @@ object RequiredPickIGroupShowAll {
   @scala.inline
   def apply(theme: ITheme): RequiredPickIGroupShowAll = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RequiredPickIGroupShowAll]
   }
 }

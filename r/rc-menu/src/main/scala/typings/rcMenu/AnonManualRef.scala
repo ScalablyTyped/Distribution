@@ -15,7 +15,6 @@ object AnonManualRef {
   @scala.inline
   def apply(manualRef: () => Unit, onMouseEnter: () => Unit, onMouseLeave: () => Unit, onSelect: () => Unit): AnonManualRef = {
     val __obj = js.Dynamic.literal(manualRef = js.Any.fromFunction0(manualRef), onMouseEnter = js.Any.fromFunction0(onMouseEnter), onMouseLeave = js.Any.fromFunction0(onMouseLeave), onSelect = js.Any.fromFunction0(onSelect))
-  
     __obj.asInstanceOf[AnonManualRef]
   }
 }

@@ -12,10 +12,8 @@ trait EditValidatorType extends js.Object
 
 object EditValidatorType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def error: typings.reactBootstrapTable.reactBootstrapTableStrings.error = "error".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.error]
   @scala.inline
-  def error: typings.reactBootstrapTable.reactBootstrapTableStrings.error = this.cast("error")
-  @scala.inline
-  def success: typings.reactBootstrapTable.reactBootstrapTableStrings.success = this.cast("success")
+  def success: typings.reactBootstrapTable.reactBootstrapTableStrings.success = "success".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.success]
 }
 

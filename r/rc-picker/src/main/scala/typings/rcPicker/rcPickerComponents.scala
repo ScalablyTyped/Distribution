@@ -1,5 +1,6 @@
 package typings.rcPicker
 
+import typings.rcPicker.dateBodyMod.default
 import typings.react.mod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -7,50 +8,50 @@ import scala.scalajs.js.annotation._
 
 object rcPickerComponents extends rcPickerProps {
   @scala.inline
-  def DateBody[DateType]: ComponentType[DateBodyProps[DateType]] = typings.rcPicker.dateBodyMod.default.asInstanceOf[typings.react.mod.ComponentType[DateBodyProps[DateType]]]
+  def DateBody[DateType]: ComponentType[DateBodyProps[DateType]] = default.asInstanceOf[ComponentType[DateBodyProps[DateType]]]
   @scala.inline
-  def DateHeader[DateType]: ComponentType[DateHeaderProps[DateType]] = typings.rcPicker.dateHeaderMod.default.asInstanceOf[typings.react.mod.ComponentType[DateHeaderProps[DateType]]]
+  def DateHeader[DateType]: ComponentType[DateHeaderProps[DateType]] = typings.rcPicker.dateHeaderMod.default.asInstanceOf[ComponentType[DateHeaderProps[DateType]]]
   @scala.inline
-  def DatetimePanel[DateType]: ComponentType[DatetimePanelProps[DateType]] = typings.rcPicker.datetimePanelMod.default.asInstanceOf[typings.react.mod.ComponentType[DatetimePanelProps[DateType]]]
+  def DatetimePanel[DateType]: ComponentType[DatetimePanelProps[DateType]] = typings.rcPicker.datetimePanelMod.default.asInstanceOf[ComponentType[DatetimePanelProps[DateType]]]
   @scala.inline
-  def DecadeBody[DateType]: ComponentType[DecadeBodyProps[DateType]] = typings.rcPicker.decadeBodyMod.default.asInstanceOf[typings.react.mod.ComponentType[DecadeBodyProps[DateType]]]
+  def DecadeBody[DateType]: ComponentType[DecadeBodyProps[DateType]] = typings.rcPicker.decadeBodyMod.default.asInstanceOf[ComponentType[DecadeBodyProps[DateType]]]
   @scala.inline
-  def DecadeHeader[DateType]: ComponentType[DecadeHeaderProps[DateType]] = typings.rcPicker.decadeHeaderMod.default.asInstanceOf[typings.react.mod.ComponentType[DecadeHeaderProps[DateType]]]
+  def DecadeHeader[DateType]: ComponentType[DecadeHeaderProps[DateType]] = typings.rcPicker.decadeHeaderMod.default.asInstanceOf[ComponentType[DecadeHeaderProps[DateType]]]
   @scala.inline
-  def GetRanges: ComponentType[GetRangesProps] = typings.rcPicker.getRangesMod.default.asInstanceOf[typings.react.mod.ComponentType[GetRangesProps]]
+  def GetRanges: ComponentType[GetRangesProps] = typings.rcPicker.getRangesMod.default.asInstanceOf[ComponentType[GetRangesProps]]
   @scala.inline
-  def Header: ComponentType[HeaderProps] = typings.rcPicker.headerMod.default.asInstanceOf[typings.react.mod.ComponentType[HeaderProps]]
+  def Header: ComponentType[HeaderProps] = typings.rcPicker.headerMod.default.asInstanceOf[ComponentType[HeaderProps]]
   @scala.inline
-  def Lib[DateType]: ComponentType[LibProps[DateType]] = js.constructorOf[typings.rcPicker.mod.default[DateType]].asInstanceOf[typings.react.mod.ComponentType[LibProps[DateType]]]
+  def Lib[DateType]: ComponentType[LibProps[DateType]] = js.constructorOf[typings.rcPicker.mod.default[DateType]].asInstanceOf[ComponentType[LibProps[DateType]]]
   @scala.inline
-  def MonthBody[DateType]: ComponentType[MonthBodyProps[DateType]] = typings.rcPicker.monthBodyMod.default.asInstanceOf[typings.react.mod.ComponentType[MonthBodyProps[DateType]]]
+  def MonthBody[DateType]: ComponentType[MonthBodyProps[DateType]] = typings.rcPicker.monthBodyMod.default.asInstanceOf[ComponentType[MonthBodyProps[DateType]]]
   @scala.inline
-  def MonthHeader[DateType]: ComponentType[MonthHeaderProps[DateType]] = typings.rcPicker.monthHeaderMod.default.asInstanceOf[typings.react.mod.ComponentType[MonthHeaderProps[DateType]]]
+  def MonthHeader[DateType]: ComponentType[MonthHeaderProps[DateType]] = typings.rcPicker.monthHeaderMod.default.asInstanceOf[ComponentType[MonthHeaderProps[DateType]]]
   @scala.inline
-  def PanelBody[DateType]: ComponentType[PanelBodyProps[DateType]] = typings.rcPicker.panelBodyMod.default.asInstanceOf[typings.react.mod.ComponentType[PanelBodyProps[DateType]]]
+  def PanelBody[DateType]: ComponentType[PanelBodyProps[DateType]] = typings.rcPicker.panelBodyMod.default.asInstanceOf[ComponentType[PanelBodyProps[DateType]]]
   @scala.inline
-  def Picker[DateType]: ComponentType[PickerProps[DateType]] = js.constructorOf[typings.rcPicker.pickerMod.default[DateType]].asInstanceOf[typings.react.mod.ComponentType[PickerProps[DateType]]]
+  def Picker[DateType]: ComponentType[PickerProps[DateType]] = js.constructorOf[typings.rcPicker.pickerMod.default[DateType]].asInstanceOf[ComponentType[PickerProps[DateType]]]
   @scala.inline
-  def PickerPanel[DateType]: ComponentType[PickerPanelProps[DateType]] = typings.rcPicker.pickerPanelMod.default.asInstanceOf[typings.react.mod.ComponentType[PickerPanelProps[DateType]]]
+  def PickerPanel[DateType]: ComponentType[PickerPanelProps[DateType]] = typings.rcPicker.pickerPanelMod.default.asInstanceOf[ComponentType[PickerPanelProps[DateType]]]
   @scala.inline
-  def PickerTrigger: ComponentType[PickerTriggerProps] = typings.rcPicker.pickerTriggerMod.default.asInstanceOf[typings.react.mod.ComponentType[PickerTriggerProps]]
+  def PickerTrigger: ComponentType[PickerTriggerProps] = typings.rcPicker.pickerTriggerMod.default.asInstanceOf[ComponentType[PickerTriggerProps]]
   @scala.inline
-  def QuarterBody[DateType]: ComponentType[QuarterBodyProps[DateType]] = typings.rcPicker.quarterBodyMod.default.asInstanceOf[typings.react.mod.ComponentType[QuarterBodyProps[DateType]]]
+  def QuarterBody[DateType]: ComponentType[QuarterBodyProps[DateType]] = typings.rcPicker.quarterBodyMod.default.asInstanceOf[ComponentType[QuarterBodyProps[DateType]]]
   @scala.inline
-  def QuarterHeader[DateType]: ComponentType[QuarterHeaderProps[DateType]] = typings.rcPicker.quarterHeaderMod.default.asInstanceOf[typings.react.mod.ComponentType[QuarterHeaderProps[DateType]]]
+  def QuarterHeader[DateType]: ComponentType[QuarterHeaderProps[DateType]] = typings.rcPicker.quarterHeaderMod.default.asInstanceOf[ComponentType[QuarterHeaderProps[DateType]]]
   @scala.inline
-  def RangePicker[DateType]: ComponentType[RangePickerProps[DateType]] = js.constructorOf[typings.rcPicker.rangePickerMod.default[DateType]].asInstanceOf[typings.react.mod.ComponentType[RangePickerProps[DateType]]]
+  def RangePicker[DateType]: ComponentType[RangePickerProps[DateType]] = js.constructorOf[typings.rcPicker.rangePickerMod.default[DateType]].asInstanceOf[ComponentType[RangePickerProps[DateType]]]
   @scala.inline
-  def TimeBody[DateType]: ComponentType[TimeBodyProps[DateType]] = typings.rcPicker.timeBodyMod.default.asInstanceOf[typings.react.mod.ComponentType[TimeBodyProps[DateType]]]
+  def TimeBody[DateType]: ComponentType[TimeBodyProps[DateType]] = typings.rcPicker.timeBodyMod.default.asInstanceOf[ComponentType[TimeBodyProps[DateType]]]
   @scala.inline
-  def TimeHeader[DateType]: ComponentType[TimeHeaderProps[DateType]] = typings.rcPicker.timeHeaderMod.default.asInstanceOf[typings.react.mod.ComponentType[TimeHeaderProps[DateType]]]
+  def TimeHeader[DateType]: ComponentType[TimeHeaderProps[DateType]] = typings.rcPicker.timeHeaderMod.default.asInstanceOf[ComponentType[TimeHeaderProps[DateType]]]
   @scala.inline
-  def TimePanel[DateType]: ComponentType[TimePanelProps[DateType]] = typings.rcPicker.timePanelMod.default.asInstanceOf[typings.react.mod.ComponentType[TimePanelProps[DateType]]]
+  def TimePanel[DateType]: ComponentType[TimePanelProps[DateType]] = typings.rcPicker.timePanelMod.default.asInstanceOf[ComponentType[TimePanelProps[DateType]]]
   @scala.inline
-  def TimeUnitColumn: ComponentType[TimeUnitColumnProps] = typings.rcPicker.timeUnitColumnMod.default.asInstanceOf[typings.react.mod.ComponentType[TimeUnitColumnProps]]
+  def TimeUnitColumn: ComponentType[TimeUnitColumnProps] = typings.rcPicker.timeUnitColumnMod.default.asInstanceOf[ComponentType[TimeUnitColumnProps]]
   @scala.inline
-  def YearBody[DateType]: ComponentType[YearBodyProps[DateType]] = typings.rcPicker.yearBodyMod.default.asInstanceOf[typings.react.mod.ComponentType[YearBodyProps[DateType]]]
+  def YearBody[DateType]: ComponentType[YearBodyProps[DateType]] = typings.rcPicker.yearBodyMod.default.asInstanceOf[ComponentType[YearBodyProps[DateType]]]
   @scala.inline
-  def YearHeader[DateType]: ComponentType[YearHeaderProps[DateType]] = typings.rcPicker.yearHeaderMod.default.asInstanceOf[typings.react.mod.ComponentType[YearHeaderProps[DateType]]]
+  def YearHeader[DateType]: ComponentType[YearHeaderProps[DateType]] = typings.rcPicker.yearHeaderMod.default.asInstanceOf[ComponentType[YearHeaderProps[DateType]]]
 }
 

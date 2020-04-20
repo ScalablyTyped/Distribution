@@ -24,7 +24,6 @@ object CreateAliasRequest {
   @scala.inline
   def apply(Alias: EmailAddress, EntityId: WorkMailIdentifier, OrganizationId: OrganizationId): CreateAliasRequest = {
     val __obj = js.Dynamic.literal(Alias = Alias.asInstanceOf[js.Any], EntityId = EntityId.asInstanceOf[js.Any], OrganizationId = OrganizationId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateAliasRequest]
   }
 }

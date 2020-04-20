@@ -16,12 +16,10 @@ trait XlWebFormatting extends js.Object
 
 object XlWebFormatting {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlWebFormattingAll: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlWebFormattingAll: `1` = this.cast(1)
+  def xlWebFormattingNone: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlWebFormattingNone: `3` = this.cast(3)
-  @scala.inline
-  def xlWebFormattingRTF: `2` = this.cast(2)
+  def xlWebFormattingRTF: `2` = 2.asInstanceOf[`2`]
 }
 

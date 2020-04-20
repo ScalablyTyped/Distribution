@@ -33,50 +33,48 @@ trait ComposeOperator extends js.Object
 
 object ComposeOperator {
   @scala.inline
-  def Add: typings.gm.gmStrings.Add = this.cast("Add")
+  def Add: typings.gm.gmStrings.Add = "Add".asInstanceOf[typings.gm.gmStrings.Add]
   @scala.inline
-  def Atop: typings.gm.gmStrings.Atop = this.cast("Atop")
+  def Atop: typings.gm.gmStrings.Atop = "Atop".asInstanceOf[typings.gm.gmStrings.Atop]
   @scala.inline
-  def Bumpmap: typings.gm.gmStrings.Bumpmap = this.cast("Bumpmap")
+  def Bumpmap: typings.gm.gmStrings.Bumpmap = "Bumpmap".asInstanceOf[typings.gm.gmStrings.Bumpmap]
   @scala.inline
-  def Copy: typings.gm.gmStrings.Copy = this.cast("Copy")
+  def Copy: typings.gm.gmStrings.Copy = "Copy".asInstanceOf[typings.gm.gmStrings.Copy]
   @scala.inline
-  def CopyBlack: typings.gm.gmStrings.CopyBlack = this.cast("CopyBlack")
+  def CopyBlack: typings.gm.gmStrings.CopyBlack = "CopyBlack".asInstanceOf[typings.gm.gmStrings.CopyBlack]
   @scala.inline
-  def CopyBlue: typings.gm.gmStrings.CopyBlue = this.cast("CopyBlue")
+  def CopyBlue: typings.gm.gmStrings.CopyBlue = "CopyBlue".asInstanceOf[typings.gm.gmStrings.CopyBlue]
   @scala.inline
-  def CopyCyan: typings.gm.gmStrings.CopyCyan = this.cast("CopyCyan")
+  def CopyCyan: typings.gm.gmStrings.CopyCyan = "CopyCyan".asInstanceOf[typings.gm.gmStrings.CopyCyan]
   @scala.inline
-  def CopyGreen: typings.gm.gmStrings.CopyGreen = this.cast("CopyGreen")
+  def CopyGreen: typings.gm.gmStrings.CopyGreen = "CopyGreen".asInstanceOf[typings.gm.gmStrings.CopyGreen]
   @scala.inline
-  def CopyMagenta: typings.gm.gmStrings.CopyMagenta = this.cast("CopyMagenta")
+  def CopyMagenta: typings.gm.gmStrings.CopyMagenta = "CopyMagenta".asInstanceOf[typings.gm.gmStrings.CopyMagenta]
   @scala.inline
-  def CopyOpacity: typings.gm.gmStrings.CopyOpacity = this.cast("CopyOpacity")
+  def CopyOpacity: typings.gm.gmStrings.CopyOpacity = "CopyOpacity".asInstanceOf[typings.gm.gmStrings.CopyOpacity]
   @scala.inline
-  def CopyRed: typings.gm.gmStrings.CopyRed = this.cast("CopyRed")
+  def CopyRed: typings.gm.gmStrings.CopyRed = "CopyRed".asInstanceOf[typings.gm.gmStrings.CopyRed]
   @scala.inline
-  def CopyYellow: typings.gm.gmStrings.CopyYellow = this.cast("CopyYellow")
+  def CopyYellow: typings.gm.gmStrings.CopyYellow = "CopyYellow".asInstanceOf[typings.gm.gmStrings.CopyYellow]
   @scala.inline
-  def Difference: typings.gm.gmStrings.Difference = this.cast("Difference")
+  def Difference: typings.gm.gmStrings.Difference = "Difference".asInstanceOf[typings.gm.gmStrings.Difference]
   @scala.inline
-  def Divide: typings.gm.gmStrings.Divide = this.cast("Divide")
+  def Divide: typings.gm.gmStrings.Divide = "Divide".asInstanceOf[typings.gm.gmStrings.Divide]
   @scala.inline
-  def In: typings.gm.gmStrings.In = this.cast("In")
+  def In: typings.gm.gmStrings.In = "In".asInstanceOf[typings.gm.gmStrings.In]
   @scala.inline
-  def Minus: typings.gm.gmStrings.Minus = this.cast("Minus")
+  def Minus: typings.gm.gmStrings.Minus = "Minus".asInstanceOf[typings.gm.gmStrings.Minus]
   @scala.inline
-  def Multiply: typings.gm.gmStrings.Multiply = this.cast("Multiply")
+  def Multiply: typings.gm.gmStrings.Multiply = "Multiply".asInstanceOf[typings.gm.gmStrings.Multiply]
   @scala.inline
-  def Out: typings.gm.gmStrings.Out = this.cast("Out")
+  def Out: typings.gm.gmStrings.Out = "Out".asInstanceOf[typings.gm.gmStrings.Out]
   @scala.inline
-  def Over: typings.gm.gmStrings.Over = this.cast("Over")
+  def Over: typings.gm.gmStrings.Over = "Over".asInstanceOf[typings.gm.gmStrings.Over]
   @scala.inline
-  def Plus: typings.gm.gmStrings.Plus = this.cast("Plus")
+  def Plus: typings.gm.gmStrings.Plus = "Plus".asInstanceOf[typings.gm.gmStrings.Plus]
   @scala.inline
-  def Subtract: typings.gm.gmStrings.Subtract = this.cast("Subtract")
+  def Subtract: typings.gm.gmStrings.Subtract = "Subtract".asInstanceOf[typings.gm.gmStrings.Subtract]
   @scala.inline
-  def Xor: Xor_ = this.cast("Xor")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Xor: Xor_ = "Xor".asInstanceOf[Xor_]
 }
 

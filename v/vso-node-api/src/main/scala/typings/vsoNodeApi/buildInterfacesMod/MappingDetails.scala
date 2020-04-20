@@ -23,7 +23,6 @@ object MappingDetails {
   @scala.inline
   def apply(localPath: String, mappingType: String, serverPath: String): MappingDetails = {
     val __obj = js.Dynamic.literal(localPath = localPath.asInstanceOf[js.Any], mappingType = mappingType.asInstanceOf[js.Any], serverPath = serverPath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MappingDetails]
   }
 }

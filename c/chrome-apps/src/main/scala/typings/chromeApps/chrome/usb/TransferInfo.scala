@@ -5,16 +5,26 @@ import typings.chromeApps.AnonDEVICE
 import typings.chromeApps.AnonIN
 import typings.chromeApps.chrome.ToStringLiteral
 import typings.chromeApps.chrome.integer
-import typings.chromeApps.chromeAppsStrings.`class`
-import typings.chromeApps.chromeAppsStrings.device_
-import typings.chromeApps.chromeAppsStrings.endpoint
-import typings.chromeApps.chromeAppsStrings.in
-import typings.chromeApps.chromeAppsStrings.interface
+import typings.chromeApps.chromeAppsStrings.CLASS
+import typings.chromeApps.chromeAppsStrings.DEVICE
+import typings.chromeApps.chromeAppsStrings.ENDPOINT
+import typings.chromeApps.chromeAppsStrings.IN
+import typings.chromeApps.chromeAppsStrings.INTERFACE
+import typings.chromeApps.chromeAppsStrings.OTHER
+import typings.chromeApps.chromeAppsStrings.OUT
+import typings.chromeApps.chromeAppsStrings.RESERVED
+import typings.chromeApps.chromeAppsStrings.STANDARD
+import typings.chromeApps.chromeAppsStrings.VENDOR
+import typings.chromeApps.chromeAppsStrings.class_
+import typings.chromeApps.chromeAppsStrings.device__
+import typings.chromeApps.chromeAppsStrings.endpoint_
+import typings.chromeApps.chromeAppsStrings.in_
+import typings.chromeApps.chromeAppsStrings.interface_
 import typings.chromeApps.chromeAppsStrings.other_
-import typings.chromeApps.chromeAppsStrings.out
-import typings.chromeApps.chromeAppsStrings.reserved
-import typings.chromeApps.chromeAppsStrings.standard
-import typings.chromeApps.chromeAppsStrings.vendor
+import typings.chromeApps.chromeAppsStrings.out_
+import typings.chromeApps.chromeAppsStrings.reserved_
+import typings.chromeApps.chromeAppsStrings.standard_
+import typings.chromeApps.chromeAppsStrings.vendor_
 import typings.std.ArrayBuffer
 import typings.std.Exclude
 import scala.scalajs.js
@@ -28,7 +38,7 @@ trait TransferInfo extends js.Object {
     * The transfer direction ('in' or 'out').
     * @see Direction
     */
-  var direction: ToStringLiteral[AnonIN, String, Exclude[String, in | out]]
+  var direction: ToStringLiteral[AnonIN, IN | OUT, Exclude[IN | OUT, in_ | out_]]
   /** The wIndex field, see *Ibid*. */
   var index: integer
   /** The maximum number of bytes to receive(required only by input transfers). */
@@ -38,14 +48,22 @@ trait TransferInfo extends js.Object {
     * The target given by index must be claimed if 'interface' or 'endpoint'.
     * @see Recipient
     */
-  var recipient: ToStringLiteral[AnonDEVICE, String, Exclude[String, device_ | interface | endpoint | other_]]
+  var recipient: ToStringLiteral[
+    AnonDEVICE, 
+    DEVICE | INTERFACE | ENDPOINT | OTHER, 
+    Exclude[DEVICE | INTERFACE | ENDPOINT | OTHER, device__ | interface_ | endpoint_ | other_]
+  ]
   /** The bRequest field, see *Universal Serial Bus Specification Revision 1.1 § 9.3.* */
   var request: integer
   /**
     * The request type.
     * @see RequestType
     */
-  var requestType: ToStringLiteral[AnonCLASS, String, Exclude[String, standard | `class` | vendor | reserved]]
+  var requestType: ToStringLiteral[
+    AnonCLASS, 
+    STANDARD | CLASS | VENDOR | RESERVED, 
+    Exclude[STANDARD | CLASS | VENDOR | RESERVED, standard_ | class_ | vendor_ | reserved_]
+  ]
   /**
     * @since Chrome 43.
     * Request timeout (in milliseconds).
@@ -60,11 +78,19 @@ trait TransferInfo extends js.Object {
 object TransferInfo {
   @scala.inline
   def apply(
-    direction: ToStringLiteral[AnonIN, String, Exclude[String, in | out]],
+    direction: ToStringLiteral[AnonIN, IN | OUT, Exclude[IN | OUT, in_ | out_]],
     index: integer,
-    recipient: ToStringLiteral[AnonDEVICE, String, Exclude[String, device_ | interface | endpoint | other_]],
+    recipient: ToStringLiteral[
+      AnonDEVICE, 
+      DEVICE | INTERFACE | ENDPOINT | OTHER, 
+      Exclude[DEVICE | INTERFACE | ENDPOINT | OTHER, device__ | interface_ | endpoint_ | other_]
+    ],
     request: integer,
-    requestType: ToStringLiteral[AnonCLASS, String, Exclude[String, standard | `class` | vendor | reserved]],
+    requestType: ToStringLiteral[
+      AnonCLASS, 
+      STANDARD | CLASS | VENDOR | RESERVED, 
+      Exclude[STANDARD | CLASS | VENDOR | RESERVED, standard_ | class_ | vendor_ | reserved_]
+    ],
     value: integer,
     data: ArrayBuffer = null,
     length: Int | Double = null,

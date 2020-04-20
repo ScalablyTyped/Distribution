@@ -21,8 +21,8 @@ class ReadableStreamBuffer () extends Readable {
   def feed(data: String, encoding: String): Unit = js.native
   def feed(data: Buffer): Unit = js.native
   def feed(data: Buffer, encoding: String): Unit = js.native
-  def size(): Double = js.native
+  def size: Double = js.native
   def stop(): Unit = js.native
-  def stopped(): Boolean = js.native
+  def stopped: Boolean = js.native
 }
 

@@ -22,7 +22,6 @@ object Util {
     inherit: (js.Function, js.Function) => js.Any
   ): Util = {
     val __obj = js.Dynamic.literal(argsToArray = js.Any.fromFunction1(argsToArray), extend = js.Any.fromFunction2(extend), formatException = js.Any.fromFunction1(formatException), htmlEscape = js.Any.fromFunction1(htmlEscape), inherit = js.Any.fromFunction2(inherit))
-  
     __obj.asInstanceOf[Util]
   }
 }

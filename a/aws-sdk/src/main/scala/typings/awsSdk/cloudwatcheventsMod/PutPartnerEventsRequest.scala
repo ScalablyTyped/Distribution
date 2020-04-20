@@ -16,7 +16,6 @@ object PutPartnerEventsRequest {
   @scala.inline
   def apply(Entries: PutPartnerEventsRequestEntryList): PutPartnerEventsRequest = {
     val __obj = js.Dynamic.literal(Entries = Entries.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutPartnerEventsRequest]
   }
 }

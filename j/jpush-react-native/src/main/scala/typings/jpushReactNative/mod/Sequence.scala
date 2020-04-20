@@ -15,7 +15,6 @@ object Sequence {
   @scala.inline
   def apply(sequence: Double): Sequence = {
     val __obj = js.Dynamic.literal(sequence = sequence.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Sequence]
   }
 }

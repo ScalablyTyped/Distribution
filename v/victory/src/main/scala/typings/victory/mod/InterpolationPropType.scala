@@ -29,44 +29,42 @@ trait InterpolationPropType extends js.Object
 
 object InterpolationPropType {
   @scala.inline
-  def basis: typings.victory.victoryStrings.basis = this.cast("basis")
+  def basis: typings.victory.victoryStrings.basis = "basis".asInstanceOf[typings.victory.victoryStrings.basis]
   @scala.inline
-  def basisClosed: typings.victory.victoryStrings.basisClosed = this.cast("basisClosed")
+  def basisClosed: typings.victory.victoryStrings.basisClosed = "basisClosed".asInstanceOf[typings.victory.victoryStrings.basisClosed]
   @scala.inline
-  def basisOpen: typings.victory.victoryStrings.basisOpen = this.cast("basisOpen")
+  def basisOpen: typings.victory.victoryStrings.basisOpen = "basisOpen".asInstanceOf[typings.victory.victoryStrings.basisOpen]
   @scala.inline
-  def bundle: typings.victory.victoryStrings.bundle = this.cast("bundle")
+  def bundle: typings.victory.victoryStrings.bundle = "bundle".asInstanceOf[typings.victory.victoryStrings.bundle]
   @scala.inline
-  def cardinal: typings.victory.victoryStrings.cardinal = this.cast("cardinal")
+  def cardinal: typings.victory.victoryStrings.cardinal = "cardinal".asInstanceOf[typings.victory.victoryStrings.cardinal]
   @scala.inline
-  def cardinalClosed: typings.victory.victoryStrings.cardinalClosed = this.cast("cardinalClosed")
+  def cardinalClosed: typings.victory.victoryStrings.cardinalClosed = "cardinalClosed".asInstanceOf[typings.victory.victoryStrings.cardinalClosed]
   @scala.inline
-  def cardinalOpen: typings.victory.victoryStrings.cardinalOpen = this.cast("cardinalOpen")
+  def cardinalOpen: typings.victory.victoryStrings.cardinalOpen = "cardinalOpen".asInstanceOf[typings.victory.victoryStrings.cardinalOpen]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def catmullRom: typings.victory.victoryStrings.catmullRom = "catmullRom".asInstanceOf[typings.victory.victoryStrings.catmullRom]
   @scala.inline
-  def catmullRom: typings.victory.victoryStrings.catmullRom = this.cast("catmullRom")
+  def catmullRomClosed: typings.victory.victoryStrings.catmullRomClosed = "catmullRomClosed".asInstanceOf[typings.victory.victoryStrings.catmullRomClosed]
   @scala.inline
-  def catmullRomClosed: typings.victory.victoryStrings.catmullRomClosed = this.cast("catmullRomClosed")
+  def catmullRomOpen: typings.victory.victoryStrings.catmullRomOpen = "catmullRomOpen".asInstanceOf[typings.victory.victoryStrings.catmullRomOpen]
   @scala.inline
-  def catmullRomOpen: typings.victory.victoryStrings.catmullRomOpen = this.cast("catmullRomOpen")
+  def linear: typings.victory.victoryStrings.linear = "linear".asInstanceOf[typings.victory.victoryStrings.linear]
   @scala.inline
-  def linear: typings.victory.victoryStrings.linear = this.cast("linear")
+  def linearClosed: typings.victory.victoryStrings.linearClosed = "linearClosed".asInstanceOf[typings.victory.victoryStrings.linearClosed]
   @scala.inline
-  def linearClosed: typings.victory.victoryStrings.linearClosed = this.cast("linearClosed")
+  def monotoneX: typings.victory.victoryStrings.monotoneX = "monotoneX".asInstanceOf[typings.victory.victoryStrings.monotoneX]
   @scala.inline
-  def monotoneX: typings.victory.victoryStrings.monotoneX = this.cast("monotoneX")
+  def monotoneY: typings.victory.victoryStrings.monotoneY = "monotoneY".asInstanceOf[typings.victory.victoryStrings.monotoneY]
   @scala.inline
-  def monotoneY: typings.victory.victoryStrings.monotoneY = this.cast("monotoneY")
+  def natural: typings.victory.victoryStrings.natural = "natural".asInstanceOf[typings.victory.victoryStrings.natural]
   @scala.inline
-  def natural: typings.victory.victoryStrings.natural = this.cast("natural")
+  def radial: typings.victory.victoryStrings.radial = "radial".asInstanceOf[typings.victory.victoryStrings.radial]
   @scala.inline
-  def radial: typings.victory.victoryStrings.radial = this.cast("radial")
+  def step: typings.victory.victoryStrings.step = "step".asInstanceOf[typings.victory.victoryStrings.step]
   @scala.inline
-  def step: typings.victory.victoryStrings.step = this.cast("step")
+  def stepAfter: typings.victory.victoryStrings.stepAfter = "stepAfter".asInstanceOf[typings.victory.victoryStrings.stepAfter]
   @scala.inline
-  def stepAfter: typings.victory.victoryStrings.stepAfter = this.cast("stepAfter")
-  @scala.inline
-  def stepBefore: typings.victory.victoryStrings.stepBefore = this.cast("stepBefore")
+  def stepBefore: typings.victory.victoryStrings.stepBefore = "stepBefore".asInstanceOf[typings.victory.victoryStrings.stepBefore]
 }
 

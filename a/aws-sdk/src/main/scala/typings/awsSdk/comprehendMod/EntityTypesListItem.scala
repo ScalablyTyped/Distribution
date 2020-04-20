@@ -16,7 +16,6 @@ object EntityTypesListItem {
   @scala.inline
   def apply(Type: EntityTypeName): EntityTypesListItem = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EntityTypesListItem]
   }
 }

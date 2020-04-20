@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 trait TriStateCheckboxProps extends js.Object {
   var ariaLabelledBy: js.UndefOr[String] = js.undefined
   var className: js.UndefOr[String] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var inputId: js.UndefOr[String] = js.undefined
   var name: js.UndefOr[String] = js.undefined
@@ -24,6 +25,7 @@ object TriStateCheckboxProps {
   def apply(
     ariaLabelledBy: String = null,
     className: String = null,
+    disabled: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     inputId: String = null,
     name: String = null,
@@ -36,6 +38,7 @@ object TriStateCheckboxProps {
     val __obj = js.Dynamic.literal()
     if (ariaLabelledBy != null) __obj.updateDynamic("ariaLabelledBy")(ariaLabelledBy.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inputId != null) __obj.updateDynamic("inputId")(inputId.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

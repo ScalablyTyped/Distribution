@@ -1,7 +1,7 @@
 
 # Scala.js typings for vue-scrollto
 
-Typings are for version 2.17.1
+Typings are for version 2.18.1
 
 ## Library description:
 Adds a directive that listens for click events and scrolls to elements.

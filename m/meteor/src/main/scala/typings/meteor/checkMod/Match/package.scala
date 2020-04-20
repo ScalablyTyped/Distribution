@@ -14,7 +14,7 @@ package object Match {
   ]
   type PatternMatch[T /* <: typings.meteor.checkMod.Match.Pattern */] = js.Any | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias meteor.meteor/check.Match.PatternMatch<T[K]> * / object}
-    */ typings.meteor.meteorStrings.PatternMatch with js.Any) | (js.Array[
+    */ typings.meteor.meteorStrings.PatternMatch with org.scalablytyped.runtime.TopLevel[js.Any]) | (js.Array[
     /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias meteor.meteor/check.Match.PatternMatch<T[0]> */ js.Object
   ]) | T | js.Function | scala.Boolean | scala.Double | java.lang.String
 }

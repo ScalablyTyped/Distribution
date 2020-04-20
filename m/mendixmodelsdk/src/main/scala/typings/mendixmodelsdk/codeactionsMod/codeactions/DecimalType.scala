@@ -32,9 +32,9 @@ class DecimalType protected () extends PrimitiveType {
   @JSName("model")
   var model_FDecimalType: IModel = js.native
   @JSName("containerAsBasicParameterType")
-  def containerAsBasicParameterType_MDecimalType(): BasicParameterType = js.native
+  def containerAsBasicParameterType_MDecimalType: BasicParameterType = js.native
   @JSName("containerAsCodeAction")
-  def containerAsCodeAction_MDecimalType(): CodeAction = js.native
+  def containerAsCodeAction_MDecimalType: CodeAction = js.native
 }
 
 /* static members */

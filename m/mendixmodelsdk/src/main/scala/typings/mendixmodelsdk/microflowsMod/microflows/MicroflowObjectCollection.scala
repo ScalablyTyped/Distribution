@@ -24,9 +24,9 @@ class MicroflowObjectCollection protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FMicroflowObjectCollection: IModel = js.native
-  def containerAsLoopedActivity(): LoopedActivity = js.native
-  def containerAsMicroflowBase(): MicroflowBase = js.native
-  def objects(): IList[MicroflowObject] = js.native
+  def containerAsLoopedActivity: LoopedActivity = js.native
+  def containerAsMicroflowBase: MicroflowBase = js.native
+  def objects: IList[MicroflowObject] = js.native
 }
 
 /* static members */

@@ -13,7 +13,6 @@ object ClientGetDbidFromUid {
   @scala.inline
   def apply(cldbid: Double, cluid: String): ClientGetDbidFromUid = {
     val __obj = js.Dynamic.literal(cldbid = cldbid.asInstanceOf[js.Any], cluid = cluid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClientGetDbidFromUid]
   }
 }

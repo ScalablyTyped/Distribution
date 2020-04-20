@@ -15,7 +15,6 @@ object AuthorizationI {
   @scala.inline
   def apply(code: String, id_token: String, state: String): AuthorizationI = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], id_token = id_token.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AuthorizationI]
   }
 }

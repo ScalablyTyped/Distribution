@@ -28,7 +28,6 @@ object ICoreApplication {
     runWithActivationFactories: IGetActivationFactory => Unit
   ): ICoreApplication = {
     val __obj = js.Dynamic.literal(getCurrentView = js.Any.fromFunction0(getCurrentView), id = id.asInstanceOf[js.Any], onresuming = onresuming.asInstanceOf[js.Any], onsuspending = onsuspending.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], run = js.Any.fromFunction1(run), runWithActivationFactories = js.Any.fromFunction1(runWithActivationFactories))
-  
     __obj.asInstanceOf[ICoreApplication]
   }
 }

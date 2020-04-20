@@ -14,7 +14,6 @@ object AnonBLimitToList {
   @scala.inline
   def apply(bLimitToList: Boolean, id: String, items: js.Array[_]): AnonBLimitToList = {
     val __obj = js.Dynamic.literal(bLimitToList = bLimitToList.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBLimitToList]
   }
 }

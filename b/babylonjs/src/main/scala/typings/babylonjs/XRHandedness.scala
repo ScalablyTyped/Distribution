@@ -13,12 +13,10 @@ trait XRHandedness extends js.Object
 
 object XRHandedness {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def left: typings.babylonjs.babylonjsStrings.left = "left".asInstanceOf[typings.babylonjs.babylonjsStrings.left]
   @scala.inline
-  def left: typings.babylonjs.babylonjsStrings.left = this.cast("left")
+  def none: typings.babylonjs.babylonjsStrings.none = "none".asInstanceOf[typings.babylonjs.babylonjsStrings.none]
   @scala.inline
-  def none: typings.babylonjs.babylonjsStrings.none = this.cast("none")
-  @scala.inline
-  def right: typings.babylonjs.babylonjsStrings.right = this.cast("right")
+  def right: typings.babylonjs.babylonjsStrings.right = "right".asInstanceOf[typings.babylonjs.babylonjsStrings.right]
 }
 

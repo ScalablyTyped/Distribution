@@ -16,12 +16,10 @@ trait XlFindLookIn extends js.Object
 
 object XlFindLookIn {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlComments: `-4144` = -4144.asInstanceOf[`-4144`]
   @scala.inline
-  def xlComments: `-4144` = this.cast(-4144)
+  def xlFormulas: `-4123` = -4123.asInstanceOf[`-4123`]
   @scala.inline
-  def xlFormulas: `-4123` = this.cast(-4123)
-  @scala.inline
-  def xlValues: `-4163` = this.cast(-4163)
+  def xlValues: `-4163` = -4163.asInstanceOf[`-4163`]
 }
 

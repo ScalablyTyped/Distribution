@@ -12,7 +12,6 @@ object Crypto {
   @scala.inline
   def apply(generateRandomKey: js.Function2[/* error */ ErrorInfo, /* key */ String, Unit] => Unit): Crypto = {
     val __obj = js.Dynamic.literal(generateRandomKey = js.Any.fromFunction1(generateRandomKey))
-  
     __obj.asInstanceOf[Crypto]
   }
 }

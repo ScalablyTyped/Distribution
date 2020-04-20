@@ -12,7 +12,6 @@ object AnonUnsubscribe {
   @scala.inline
   def apply(unsubscribe: () => Unit): AnonUnsubscribe = {
     val __obj = js.Dynamic.literal(unsubscribe = js.Any.fromFunction0(unsubscribe))
-  
     __obj.asInstanceOf[AnonUnsubscribe]
   }
 }

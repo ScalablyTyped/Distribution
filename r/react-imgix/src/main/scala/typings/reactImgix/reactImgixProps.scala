@@ -10,10 +10,10 @@ trait reactImgixProps {
   type BackgroundProps[P] = PropsWithChildren[P]
   type PictureProps[P] = PropsWithChildren[P]
   @scala.inline
-  def ReactImgixProps: SharedImigixAndSourceProps.type = typings.reactImgix.mod.SharedImigixAndSourceProps
+  def ReactImgixProps: SharedImigixAndSourceProps.type = SharedImigixAndSourceProps
   type ReactImgixProps = SharedImigixAndSourceProps
   @scala.inline
-  def SourceProps: SharedImigixAndSourceProps.type = typings.reactImgix.mod.SharedImigixAndSourceProps
+  def SourceProps: SharedImigixAndSourceProps.type = SharedImigixAndSourceProps
   type SourceProps = SharedImigixAndSourceProps
 }
 

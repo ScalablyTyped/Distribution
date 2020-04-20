@@ -44,7 +44,6 @@ object FCVolumeSource {
     wwids: js.Array[String]
   ): FCVolumeSource = {
     val __obj = js.Dynamic.literal(fsType = fsType.asInstanceOf[js.Any], lun = lun.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], targetWWNs = targetWWNs.asInstanceOf[js.Any], wwids = wwids.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FCVolumeSource]
   }
 }

@@ -13,7 +13,6 @@ object PickImplinteractive {
   @scala.inline
   def apply(interactive: Boolean): PickImplinteractive = {
     val __obj = js.Dynamic.literal(interactive = interactive.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplinteractive]
   }
 }

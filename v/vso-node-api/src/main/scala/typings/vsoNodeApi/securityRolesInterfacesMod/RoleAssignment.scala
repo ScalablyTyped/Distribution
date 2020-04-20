@@ -28,7 +28,6 @@ object RoleAssignment {
   @scala.inline
   def apply(access: RoleAccess, accessDisplayName: String, identity: IdentityRef, role: SecurityRole): RoleAssignment = {
     val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], accessDisplayName = accessDisplayName.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RoleAssignment]
   }
 }

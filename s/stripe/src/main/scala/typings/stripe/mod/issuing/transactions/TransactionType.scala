@@ -16,18 +16,16 @@ trait TransactionType extends js.Object
 
 object TransactionType {
   @scala.inline
-  def capture: typings.stripe.stripeStrings.capture = this.cast("capture")
+  def capture: typings.stripe.stripeStrings.capture = "capture".asInstanceOf[typings.stripe.stripeStrings.capture]
   @scala.inline
-  def cash_withdrawal: typings.stripe.stripeStrings.cash_withdrawal = this.cast("cash_withdrawal")
+  def cash_withdrawal: typings.stripe.stripeStrings.cash_withdrawal = "cash_withdrawal".asInstanceOf[typings.stripe.stripeStrings.cash_withdrawal]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dispute: typings.stripe.stripeStrings.dispute = "dispute".asInstanceOf[typings.stripe.stripeStrings.dispute]
   @scala.inline
-  def dispute: typings.stripe.stripeStrings.dispute = this.cast("dispute")
+  def dispute_loss: typings.stripe.stripeStrings.dispute_loss = "dispute_loss".asInstanceOf[typings.stripe.stripeStrings.dispute_loss]
   @scala.inline
-  def dispute_loss: typings.stripe.stripeStrings.dispute_loss = this.cast("dispute_loss")
+  def refund: typings.stripe.stripeStrings.refund = "refund".asInstanceOf[typings.stripe.stripeStrings.refund]
   @scala.inline
-  def refund: typings.stripe.stripeStrings.refund = this.cast("refund")
-  @scala.inline
-  def refund_reversal: typings.stripe.stripeStrings.refund_reversal = this.cast("refund_reversal")
+  def refund_reversal: typings.stripe.stripeStrings.refund_reversal = "refund_reversal".asInstanceOf[typings.stripe.stripeStrings.refund_reversal]
 }
 

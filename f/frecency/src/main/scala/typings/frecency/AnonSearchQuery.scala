@@ -13,7 +13,6 @@ object AnonSearchQuery {
   @scala.inline
   def apply[T](searchQuery: T, selectedId: String): AnonSearchQuery[T] = {
     val __obj = js.Dynamic.literal(searchQuery = searchQuery.asInstanceOf[js.Any], selectedId = selectedId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSearchQuery[T]]
   }
 }

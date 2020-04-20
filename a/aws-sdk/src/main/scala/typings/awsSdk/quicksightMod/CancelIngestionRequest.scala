@@ -24,7 +24,6 @@ object CancelIngestionRequest {
   @scala.inline
   def apply(AwsAccountId: AwsAccountId, DataSetId: java.lang.String, IngestionId: IngestionId): CancelIngestionRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], DataSetId = DataSetId.asInstanceOf[js.Any], IngestionId = IngestionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CancelIngestionRequest]
   }
 }

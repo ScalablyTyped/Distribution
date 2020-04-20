@@ -33,12 +33,12 @@ class DivContainer protected () extends ConditionallyVisibleWidget {
   /**
     * In version 8.3.0: introduced
     */
-  def onClickAction(): ClientAction = js.native
+  def onClickAction: ClientAction = js.native
   def onClickAction(newValue: ClientAction): js.Any = js.native
   /**
     * In version 7.23.0: introduced
     */
-  def renderMode(): ContainerRenderMode = js.native
+  def renderMode: ContainerRenderMode = js.native
   def renderMode(newValue: ContainerRenderMode): js.Any = js.native
   def widget(): js.Any = js.native
   def widget(newValue: Widget): js.Any = js.native
@@ -46,11 +46,11 @@ class DivContainer protected () extends ConditionallyVisibleWidget {
     * In version 7.15.0: deleted
     */
   @JSName("widget")
-  def widget_Union(): Widget | Null = js.native
+  def widget_Union: Widget | Null = js.native
   /**
     * In version 7.15.0: introduced
     */
-  def widgets(): IList[Widget] = js.native
+  def widgets: IList[Widget] = js.native
 }
 
 /* static members */

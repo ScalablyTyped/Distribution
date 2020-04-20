@@ -13,7 +13,6 @@ object Navigator {
   @scala.inline
   def apply(notification: Notification): Navigator = {
     val __obj = js.Dynamic.literal(notification = notification.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Navigator]
   }
 }

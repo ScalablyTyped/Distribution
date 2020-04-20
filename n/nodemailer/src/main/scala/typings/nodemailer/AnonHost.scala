@@ -14,7 +14,6 @@ object AnonHost {
   @scala.inline
   def apply(host: String, port: Double, secure: Boolean): AnonHost = {
     val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], secure = secure.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHost]
   }
 }

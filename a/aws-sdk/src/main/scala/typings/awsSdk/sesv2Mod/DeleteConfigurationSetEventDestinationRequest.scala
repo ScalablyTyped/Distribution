@@ -20,7 +20,6 @@ object DeleteConfigurationSetEventDestinationRequest {
   @scala.inline
   def apply(ConfigurationSetName: ConfigurationSetName, EventDestinationName: EventDestinationName): DeleteConfigurationSetEventDestinationRequest = {
     val __obj = js.Dynamic.literal(ConfigurationSetName = ConfigurationSetName.asInstanceOf[js.Any], EventDestinationName = EventDestinationName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteConfigurationSetEventDestinationRequest]
   }
 }

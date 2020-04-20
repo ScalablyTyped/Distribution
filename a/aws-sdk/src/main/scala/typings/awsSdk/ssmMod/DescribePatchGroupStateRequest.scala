@@ -16,7 +16,6 @@ object DescribePatchGroupStateRequest {
   @scala.inline
   def apply(PatchGroup: PatchGroup): DescribePatchGroupStateRequest = {
     val __obj = js.Dynamic.literal(PatchGroup = PatchGroup.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribePatchGroupStateRequest]
   }
 }

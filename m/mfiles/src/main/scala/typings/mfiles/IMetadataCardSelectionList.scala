@@ -26,7 +26,6 @@ object IMetadataCardSelectionList {
     SetFilter: (String, Double, Double) => Unit
   ): IMetadataCardSelectionList = {
     val __obj = js.Dynamic.literal(AutoSelect = js.Any.fromFunction1(AutoSelect), Events = Events.asInstanceOf[js.Any], Filter = Filter.asInstanceOf[js.Any], FilteringValue = FilteringValue.asInstanceOf[js.Any], Items = Items.asInstanceOf[js.Any], MoreResults = MoreResults.asInstanceOf[js.Any], SetFilter = js.Any.fromFunction3(SetFilter))
-  
     __obj.asInstanceOf[IMetadataCardSelectionList]
   }
 }

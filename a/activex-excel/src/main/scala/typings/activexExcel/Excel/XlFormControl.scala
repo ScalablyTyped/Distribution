@@ -30,26 +30,24 @@ trait XlFormControl extends js.Object
 
 object XlFormControl {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlButtonControl: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def xlButtonControl: `0` = this.cast(0)
+  def xlCheckBox: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlCheckBox: `1` = this.cast(1)
+  def xlDropDown: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlDropDown: `2` = this.cast(2)
+  def xlEditBox: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlEditBox: `3` = this.cast(3)
+  def xlGroupBox: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlGroupBox: `4` = this.cast(4)
+  def xlLabel: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xlLabel: `5` = this.cast(5)
+  def xlListBox: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def xlListBox: `6` = this.cast(6)
+  def xlOptionButton: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def xlOptionButton: `7` = this.cast(7)
+  def xlScrollBar: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def xlScrollBar: `8` = this.cast(8)
-  @scala.inline
-  def xlSpinner: `9` = this.cast(9)
+  def xlSpinner: `9` = 9.asInstanceOf[`9`]
 }
 

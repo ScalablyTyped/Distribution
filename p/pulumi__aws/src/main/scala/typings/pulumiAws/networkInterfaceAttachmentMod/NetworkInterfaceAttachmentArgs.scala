@@ -25,7 +25,6 @@ object NetworkInterfaceAttachmentArgs {
   @scala.inline
   def apply(deviceIndex: Input[Double], instanceId: Input[String], networkInterfaceId: Input[String]): NetworkInterfaceAttachmentArgs = {
     val __obj = js.Dynamic.literal(deviceIndex = deviceIndex.asInstanceOf[js.Any], instanceId = instanceId.asInstanceOf[js.Any], networkInterfaceId = networkInterfaceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NetworkInterfaceAttachmentArgs]
   }
 }

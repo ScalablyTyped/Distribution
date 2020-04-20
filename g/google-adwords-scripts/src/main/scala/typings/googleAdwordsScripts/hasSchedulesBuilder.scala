@@ -12,7 +12,6 @@ object hasSchedulesBuilder {
   @scala.inline
   def apply[B](withSchedules: ExtensionScheduleInput => B): hasSchedulesBuilder[B] = {
     val __obj = js.Dynamic.literal(withSchedules = js.Any.fromFunction1(withSchedules))
-  
     __obj.asInstanceOf[hasSchedulesBuilder[B]]
   }
 }

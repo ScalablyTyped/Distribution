@@ -14,10 +14,8 @@ trait fmRepeatDirection extends js.Object
 
 object fmRepeatDirection {
   @scala.inline
-  def _fmRepeatDirectionHorizontal: `0` = this.cast(0)
+  def _fmRepeatDirectionHorizontal: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def _fmRepeatDirectionVertical: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def _fmRepeatDirectionVertical: `1` = 1.asInstanceOf[`1`]
 }
 

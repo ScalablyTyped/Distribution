@@ -13,7 +13,6 @@ object AnonScroll {
   @scala.inline
   def apply(scroll: AnonLeft, size: AnonHeight): AnonScroll = {
     val __obj = js.Dynamic.literal(scroll = scroll.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonScroll]
   }
 }

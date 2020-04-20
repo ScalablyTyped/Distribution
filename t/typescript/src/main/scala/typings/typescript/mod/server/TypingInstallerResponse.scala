@@ -14,7 +14,6 @@ object TypingInstallerResponse {
     kind: ActionSet | ActionInvalidate | EventTypesRegistry | ActionPackageInstalled | EventBeginInstallTypes | EventEndInstallTypes | EventInitializationFailed
   ): TypingInstallerResponse = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypingInstallerResponse]
   }
 }

@@ -16,7 +16,6 @@ object UnregisteredInstallationEntry {
   @scala.inline
   def apply(fid: String, registrationStatus: `0`): UnregisteredInstallationEntry = {
     val __obj = js.Dynamic.literal(fid = fid.asInstanceOf[js.Any], registrationStatus = registrationStatus.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnregisteredInstallationEntry]
   }
 }

@@ -21,7 +21,6 @@ object EventTargetRunCommandTarget {
   @scala.inline
   def apply(key: Input[String], values: Input[js.Array[Input[String]]]): EventTargetRunCommandTarget = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventTargetRunCommandTarget]
   }
 }

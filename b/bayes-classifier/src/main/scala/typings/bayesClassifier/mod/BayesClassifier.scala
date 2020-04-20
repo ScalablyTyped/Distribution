@@ -24,7 +24,6 @@ object BayesClassifier {
     train: () => Unit
   ): BayesClassifier = {
     val __obj = js.Dynamic.literal(addDocument = js.Any.fromFunction2(addDocument), addDocuments = js.Any.fromFunction2(addDocuments), classify = js.Any.fromFunction1(classify), getClassifications = js.Any.fromFunction1(getClassifications), restore = js.Any.fromFunction1(restore), train = js.Any.fromFunction0(train))
-  
     __obj.asInstanceOf[BayesClassifier]
   }
 }

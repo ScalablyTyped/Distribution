@@ -14,7 +14,6 @@ object AnonPostProcess {
   @scala.inline
   def apply(postProcess: sprintf, sprintf: js.Array[String]): AnonPostProcess = {
     val __obj = js.Dynamic.literal(postProcess = postProcess.asInstanceOf[js.Any], sprintf = sprintf.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPostProcess]
   }
 }

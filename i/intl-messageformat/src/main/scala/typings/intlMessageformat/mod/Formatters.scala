@@ -31,7 +31,6 @@ object Formatters {
     getPluralRules: ConstructorParameters[AnonSupportedLocalesOf] => PluralRules
   ): Formatters = {
     val __obj = js.Dynamic.literal(getDateTimeFormat = js.Any.fromFunction1(getDateTimeFormat), getNumberFormat = js.Any.fromFunction1(getNumberFormat), getPluralRules = js.Any.fromFunction1(getPluralRules))
-  
     __obj.asInstanceOf[Formatters]
   }
 }

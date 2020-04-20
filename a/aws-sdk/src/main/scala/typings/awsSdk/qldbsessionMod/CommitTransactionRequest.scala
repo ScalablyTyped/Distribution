@@ -20,7 +20,6 @@ object CommitTransactionRequest {
   @scala.inline
   def apply(CommitDigest: CommitDigest, TransactionId: TransactionId): CommitTransactionRequest = {
     val __obj = js.Dynamic.literal(CommitDigest = CommitDigest.asInstanceOf[js.Any], TransactionId = TransactionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CommitTransactionRequest]
   }
 }

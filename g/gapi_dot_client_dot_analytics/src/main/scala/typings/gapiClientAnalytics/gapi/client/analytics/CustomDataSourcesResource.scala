@@ -15,7 +15,6 @@ object CustomDataSourcesResource {
   @scala.inline
   def apply(list: AnonPrettyPrint => Request_[CustomDataSources]): CustomDataSourcesResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[CustomDataSourcesResource]
   }
 }

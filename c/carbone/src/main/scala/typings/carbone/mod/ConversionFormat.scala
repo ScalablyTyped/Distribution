@@ -15,7 +15,6 @@ object ConversionFormat {
   @scala.inline
   def apply(desc: String, extension: String, format: String, id: String): ConversionFormat = {
     val __obj = js.Dynamic.literal(desc = desc.asInstanceOf[js.Any], extension = extension.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConversionFormat]
   }
 }

@@ -13,7 +13,6 @@ object Typeofregex {
   @scala.inline
   def apply(pcre_match: (String, String) => Double, pcre_match_group: (String, Double) => Double): Typeofregex = {
     val __obj = js.Dynamic.literal(pcre_match = js.Any.fromFunction2(pcre_match), pcre_match_group = js.Any.fromFunction2(pcre_match_group))
-  
     __obj.asInstanceOf[Typeofregex]
   }
 }

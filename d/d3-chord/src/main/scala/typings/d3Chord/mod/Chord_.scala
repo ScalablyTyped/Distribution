@@ -19,7 +19,6 @@ object Chord_ {
   @scala.inline
   def apply(source: ChordSubgroup, target: ChordSubgroup): Chord_ = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Chord_]
   }
 }

@@ -18,7 +18,6 @@ object IMembershipSPWeb {
   @scala.inline
   def apply(AllUsers: () => IExpression, Groups: () => IExpression, Users: () => IExpression): IMembershipSPWeb = {
     val __obj = js.Dynamic.literal(AllUsers = js.Any.fromFunction0(AllUsers), Groups = js.Any.fromFunction0(Groups), Users = js.Any.fromFunction0(Users))
-  
     __obj.asInstanceOf[IMembershipSPWeb]
   }
 }

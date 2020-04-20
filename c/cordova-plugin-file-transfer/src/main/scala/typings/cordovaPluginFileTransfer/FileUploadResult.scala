@@ -20,7 +20,6 @@ object FileUploadResult {
   @scala.inline
   def apply(bytesSent: Double, headers: js.Any, response: String, responseCode: Double): FileUploadResult = {
     val __obj = js.Dynamic.literal(bytesSent = bytesSent.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], responseCode = responseCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FileUploadResult]
   }
 }

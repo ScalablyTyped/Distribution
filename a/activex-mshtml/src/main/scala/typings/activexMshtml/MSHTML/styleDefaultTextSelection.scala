@@ -16,12 +16,10 @@ trait styleDefaultTextSelection extends js.Object
 
 object styleDefaultTextSelection {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleDefaultTextSelectionFalse: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleDefaultTextSelectionFalse: `0` = this.cast(0)
+  def styleDefaultTextSelectionTrue: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleDefaultTextSelectionTrue: `1` = this.cast(1)
-  @scala.inline
-  def styleDefaultTextSelection_Max: `2147483647` = this.cast(2147483647)
+  def styleDefaultTextSelection_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

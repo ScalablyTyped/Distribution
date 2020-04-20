@@ -20,7 +20,6 @@ object Lookup {
     toEnumerable: () => Enumerable[Grouping[TKey, TValue]]
   ): Lookup[TKey, TValue] = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), length = js.Any.fromFunction0(length), toEnumerable = js.Any.fromFunction0(toEnumerable))
-  
     __obj.asInstanceOf[Lookup[TKey, TValue]]
   }
 }

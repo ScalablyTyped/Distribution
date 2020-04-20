@@ -32,7 +32,6 @@ object defaultMode {
   @scala.inline
   def apply(contains: js.Array[_], illegal: String, keywords: js.Object, lexems: js.Array[_]): defaultMode = {
     val __obj = js.Dynamic.literal(contains = contains.asInstanceOf[js.Any], illegal = illegal.asInstanceOf[js.Any], keywords = keywords.asInstanceOf[js.Any], lexems = lexems.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[defaultMode]
   }
 }

@@ -22,7 +22,6 @@ object MusicGenre {
     music_genre_vanity: String
   ): MusicGenre = {
     val __obj = js.Dynamic.literal(music_genre_id = music_genre_id.asInstanceOf[js.Any], music_genre_name = music_genre_name.asInstanceOf[js.Any], music_genre_name_extended = music_genre_name_extended.asInstanceOf[js.Any], music_genre_parent_id = music_genre_parent_id.asInstanceOf[js.Any], music_genre_vanity = music_genre_vanity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MusicGenre]
   }
 }

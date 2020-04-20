@@ -16,7 +16,6 @@ object LoadListener {
     onLoad: typings.androiduix.androidui.image.NetDrawable => js.Any
   ): LoadListener = {
     val __obj = js.Dynamic.literal(onError = js.Any.fromFunction1(onError), onLoad = js.Any.fromFunction1(onLoad))
-  
     __obj.asInstanceOf[LoadListener]
   }
 }

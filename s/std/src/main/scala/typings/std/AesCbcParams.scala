@@ -15,7 +15,6 @@ object AesCbcParams {
     name: java.lang.String
   ): AesCbcParams = {
     val __obj = js.Dynamic.literal(iv = iv.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AesCbcParams]
   }
 }

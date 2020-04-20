@@ -41,7 +41,6 @@ object CollectionSelection {
     unselectify: () => CollectionSelection
   ): CollectionSelection = {
     val __obj = js.Dynamic.literal(deselect = js.Any.fromFunction0(deselect), select = js.Any.fromFunction0(select), selectify = js.Any.fromFunction0(selectify), unselect = js.Any.fromFunction0(unselect), unselectify = js.Any.fromFunction0(unselectify))
-  
     __obj.asInstanceOf[CollectionSelection]
   }
 }

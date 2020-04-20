@@ -15,7 +15,6 @@ object AgentNotebookMaterializedInfo {
   @scala.inline
   def apply(favorite: Boolean, materializedId: Double, materializedName: String, targetDatabase: String): AgentNotebookMaterializedInfo = {
     val __obj = js.Dynamic.literal(favorite = favorite.asInstanceOf[js.Any], materializedId = materializedId.asInstanceOf[js.Any], materializedName = materializedName.asInstanceOf[js.Any], targetDatabase = targetDatabase.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AgentNotebookMaterializedInfo]
   }
 }

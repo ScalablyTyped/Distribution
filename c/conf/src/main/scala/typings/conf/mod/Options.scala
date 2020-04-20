@@ -1,6 +1,7 @@
 package typings.conf.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.node.Buffer
 import typings.node.NodeJS.TypedArray
 import typings.std.DataView
@@ -152,7 +153,7 @@ trait Options[T] extends js.Object {
   val schema: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: conf.conf.Schema}
-    */ typings.conf.confStrings.Options with js.Any
+    */ typings.conf.confStrings.Options with TopLevel[js.Any]
   ] = js.undefined
   /**
   		Function to serialize the config object to a UTF-8 string when writing the config file.
@@ -185,7 +186,7 @@ object Options {
     projectVersion: String = null,
     schema: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: conf.conf.Schema}
-    */ typings.conf.confStrings.Options with js.Any = null,
+    */ typings.conf.confStrings.Options with TopLevel[js.Any] = null,
     serialize: /* value */ T => String = null,
     watch: js.UndefOr[Boolean] = js.undefined
   ): Options[T] = {

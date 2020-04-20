@@ -13,7 +13,6 @@ object HitsProvided {
   @scala.inline
   def apply[THit](hits: js.Array[Hit[THit]]): HitsProvided[THit] = {
     val __obj = js.Dynamic.literal(hits = hits.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HitsProvided[THit]]
   }
 }

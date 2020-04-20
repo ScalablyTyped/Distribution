@@ -14,10 +14,8 @@ trait XlAllocationValue extends js.Object
 
 object XlAllocationValue {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlAllocateIncrement: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlAllocateIncrement: `2` = this.cast(2)
-  @scala.inline
-  def xlAllocateValue: `1` = this.cast(1)
+  def xlAllocateValue: `1` = 1.asInstanceOf[`1`]
 }
 

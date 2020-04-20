@@ -19,7 +19,6 @@ object IEditorViewState {
     viewState: IViewState
   ): IEditorViewState = {
     val __obj = js.Dynamic.literal(contributionsState = contributionsState.asInstanceOf[js.Any], cursorState = cursorState.asInstanceOf[js.Any], viewState = viewState.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IEditorViewState]
   }
   @scala.inline

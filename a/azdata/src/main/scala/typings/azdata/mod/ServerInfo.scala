@@ -68,7 +68,6 @@ object ServerInfo {
     serverVersion: String
   ): ServerInfo = {
     val __obj = js.Dynamic.literal(azureVersion = azureVersion.asInstanceOf[js.Any], engineEditionId = engineEditionId.asInstanceOf[js.Any], isCloud = isCloud.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], osVersion = osVersion.asInstanceOf[js.Any], serverEdition = serverEdition.asInstanceOf[js.Any], serverLevel = serverLevel.asInstanceOf[js.Any], serverMajorVersion = serverMajorVersion.asInstanceOf[js.Any], serverMinorVersion = serverMinorVersion.asInstanceOf[js.Any], serverReleaseVersion = serverReleaseVersion.asInstanceOf[js.Any], serverVersion = serverVersion.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ServerInfo]
   }
 }

@@ -14,14 +14,12 @@ trait OpenGraphValueType extends js.Object
 
 object OpenGraphValueType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def number: typings.reactNativeFbsdk.reactNativeFbsdkStrings.number = "number".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.number]
   @scala.inline
-  def number: typings.reactNativeFbsdk.reactNativeFbsdkStrings.number = this.cast("number")
+  def `open-graph-object`: typings.reactNativeFbsdk.reactNativeFbsdkStrings.`open-graph-object` = "open-graph-object".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.`open-graph-object`]
   @scala.inline
-  def `open-graph-object`: typings.reactNativeFbsdk.reactNativeFbsdkStrings.`open-graph-object` = this.cast("open-graph-object")
+  def photo: typings.reactNativeFbsdk.reactNativeFbsdkStrings.photo = "photo".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.photo]
   @scala.inline
-  def photo: typings.reactNativeFbsdk.reactNativeFbsdkStrings.photo = this.cast("photo")
-  @scala.inline
-  def string: typings.reactNativeFbsdk.reactNativeFbsdkStrings.string = this.cast("string")
+  def string: typings.reactNativeFbsdk.reactNativeFbsdkStrings.string = "string".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.string]
 }
 

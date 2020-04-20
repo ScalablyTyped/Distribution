@@ -36,7 +36,7 @@ object typescriptTupleStrings {
   sealed trait shorterRight extends js.Object
   
   @scala.inline
-  def `Cannot reverse an infinite tuple`: `Cannot reverse an infinite tuple` = "Cannot reverse an infinite tuple".asInstanceOf[`Cannot reverse an infinite tuple`]
+  def `Cannot reverse an infinite tuple`: `Cannot reverse an infinite tuple` = ("Cannot reverse an infinite tuple").asInstanceOf[`Cannot reverse an infinite tuple`]
   @scala.inline
   def Infinite: Infinite = "Infinite".asInstanceOf[Infinite]
   @scala.inline
@@ -46,9 +46,9 @@ object typescriptTupleStrings {
   @scala.inline
   def InfiniteTupleSet: InfiniteTupleSet = "InfiniteTupleSet".asInstanceOf[InfiniteTupleSet]
   @scala.inline
-  def `Left is not finite`: `Left is not finite` = "Left is not finite".asInstanceOf[`Left is not finite`]
+  def `Left is not finite`: `Left is not finite` = ("Left is not finite").asInstanceOf[`Left is not finite`]
   @scala.inline
-  def `TupleSet is not finite`: `TupleSet is not finite` = "TupleSet is not finite".asInstanceOf[`TupleSet is not finite`]
+  def `TupleSet is not finite`: `TupleSet is not finite` = ("TupleSet is not finite").asInstanceOf[`TupleSet is not finite`]
   @scala.inline
   def equal: equal = "equal".asInstanceOf[equal]
   @scala.inline

@@ -34,7 +34,6 @@ object TopicRuleCloudwatchAlarm {
     stateValue: Input[String]
   ): TopicRuleCloudwatchAlarm = {
     val __obj = js.Dynamic.literal(alarmName = alarmName.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], stateReason = stateReason.asInstanceOf[js.Any], stateValue = stateValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TopicRuleCloudwatchAlarm]
   }
 }

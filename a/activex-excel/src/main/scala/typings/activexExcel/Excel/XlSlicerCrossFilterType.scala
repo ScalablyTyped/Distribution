@@ -16,12 +16,10 @@ trait XlSlicerCrossFilterType extends js.Object
 
 object XlSlicerCrossFilterType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlSlicerCrossFilterShowItemsWithDataAtTop: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlSlicerCrossFilterShowItemsWithDataAtTop: `2` = this.cast(2)
+  def xlSlicerCrossFilterShowItemsWithNoData: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlSlicerCrossFilterShowItemsWithNoData: `3` = this.cast(3)
-  @scala.inline
-  def xlSlicerNoCrossFilter: `1` = this.cast(1)
+  def xlSlicerNoCrossFilter: `1` = 1.asInstanceOf[`1`]
 }
 

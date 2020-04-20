@@ -12,7 +12,6 @@ object AnonEnumValuesAnonRegex {
   @scala.inline
   def apply(enumValues: AnonRegex): AnonEnumValuesAnonRegex = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumValuesAnonRegex]
   }
 }

@@ -16,7 +16,6 @@ object OnAttachStateChangeListener {
     onViewDetachedFromWindow: typings.androiduix.android.view.View => js.Any
   ): OnAttachStateChangeListener = {
     val __obj = js.Dynamic.literal(onViewAttachedToWindow = js.Any.fromFunction1(onViewAttachedToWindow), onViewDetachedFromWindow = js.Any.fromFunction1(onViewDetachedFromWindow))
-  
     __obj.asInstanceOf[OnAttachStateChangeListener]
   }
 }

@@ -14,7 +14,6 @@ object GetClusterSetting {
   @scala.inline
   def apply(name: String, value: String): GetClusterSetting = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetClusterSetting]
   }
 }

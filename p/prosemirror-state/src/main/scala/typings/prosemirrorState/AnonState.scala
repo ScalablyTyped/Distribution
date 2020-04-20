@@ -16,7 +16,6 @@ object AnonState {
   @scala.inline
   def apply[S /* <: Schema[_, _] */](state: EditorState[S], transactions: js.Array[Transaction[S]]): AnonState[S] = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any], transactions = transactions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonState[S]]
   }
 }

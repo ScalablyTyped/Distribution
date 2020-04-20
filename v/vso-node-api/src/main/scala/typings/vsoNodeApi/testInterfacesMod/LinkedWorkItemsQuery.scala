@@ -24,7 +24,6 @@ object LinkedWorkItemsQuery {
     workItemCategory: String
   ): LinkedWorkItemsQuery = {
     val __obj = js.Dynamic.literal(automatedTestNames = automatedTestNames.asInstanceOf[js.Any], planId = planId.asInstanceOf[js.Any], pointIds = pointIds.asInstanceOf[js.Any], suiteIds = suiteIds.asInstanceOf[js.Any], testCaseIds = testCaseIds.asInstanceOf[js.Any], workItemCategory = workItemCategory.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LinkedWorkItemsQuery]
   }
 }

@@ -48,7 +48,6 @@ object ImagesResource {
     setLabels: AnonKeyOauthtoken => Request_[Operation]
   ): ImagesResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), deprecate = js.Any.fromFunction1(deprecate), get = js.Any.fromFunction1(get), getFromFamily = js.Any.fromFunction1(getFromFamily), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), setLabels = js.Any.fromFunction1(setLabels))
-  
     __obj.asInstanceOf[ImagesResource]
   }
 }

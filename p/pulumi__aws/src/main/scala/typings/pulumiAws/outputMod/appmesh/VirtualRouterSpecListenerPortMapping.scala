@@ -20,7 +20,6 @@ object VirtualRouterSpecListenerPortMapping {
   @scala.inline
   def apply(port: Double, protocol: String): VirtualRouterSpecListenerPortMapping = {
     val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VirtualRouterSpecListenerPortMapping]
   }
 }

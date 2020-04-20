@@ -57,7 +57,6 @@ object MeetingSuggestion {
     subject: String
   ): MeetingSuggestion = {
     val __obj = js.Dynamic.literal(attendees = attendees.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], meetingString = meetingString.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MeetingSuggestion]
   }
 }

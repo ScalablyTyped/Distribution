@@ -12,7 +12,6 @@ object DestinationStream {
   @scala.inline
   def apply(write: String => Unit): DestinationStream = {
     val __obj = js.Dynamic.literal(write = js.Any.fromFunction1(write))
-  
     __obj.asInstanceOf[DestinationStream]
   }
 }

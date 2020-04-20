@@ -25,7 +25,6 @@ object AddRangeSelectionParams {
     rowStart: Double
   ): AddRangeSelectionParams = {
     val __obj = js.Dynamic.literal(columnEnd = columnEnd.asInstanceOf[js.Any], columnStart = columnStart.asInstanceOf[js.Any], floatingEnd = floatingEnd.asInstanceOf[js.Any], floatingStart = floatingStart.asInstanceOf[js.Any], rowEnd = rowEnd.asInstanceOf[js.Any], rowStart = rowStart.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddRangeSelectionParams]
   }
 }

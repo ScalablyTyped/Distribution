@@ -13,7 +13,6 @@ object PickImplqueue {
   @scala.inline
   def apply(queue: Boolean): PickImplqueue = {
     val __obj = js.Dynamic.literal(queue = queue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplqueue]
   }
 }

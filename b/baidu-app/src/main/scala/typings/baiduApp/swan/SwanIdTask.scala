@@ -14,7 +14,6 @@ object SwanIdTask {
   @scala.inline
   def apply(data: AnonSwanid, errno: String): SwanIdTask = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], errno = errno.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SwanIdTask]
   }
 }

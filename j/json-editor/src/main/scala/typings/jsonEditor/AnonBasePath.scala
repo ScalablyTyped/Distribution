@@ -12,7 +12,6 @@ object AnonBasePath {
   @scala.inline
   def apply(basePath: String): AnonBasePath = {
     val __obj = js.Dynamic.literal(basePath = basePath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBasePath]
   }
 }

@@ -17,7 +17,6 @@ object AnonTintColor {
   @scala.inline
   def apply(height: Double, left: Double, position: String, tintColor: String, top: Double, width: Double): AnonTintColor = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], tintColor = tintColor.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTintColor]
   }
 }

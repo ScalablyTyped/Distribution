@@ -13,7 +13,6 @@ object AnonIssuingBank {
   @scala.inline
   def apply(CountryOfIssuance: String, IssuingBank: String): AnonIssuingBank = {
     val __obj = js.Dynamic.literal(CountryOfIssuance = CountryOfIssuance.asInstanceOf[js.Any], IssuingBank = IssuingBank.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIssuingBank]
   }
 }

@@ -36,32 +36,30 @@ trait XdTaskPaneType extends js.Object
 
 object XdTaskPaneType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xdTaskPaneBulletsNumbering: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def xdTaskPaneBulletsNumbering: `9` = this.cast(9)
+  def xdTaskPaneClipArt: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xdTaskPaneClipArt: `5` = this.cast(5)
+  def xdTaskPaneDesignerNew: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xdTaskPaneDesignerNew: `2` = this.cast(2)
+  def xdTaskPaneFillOutAForm: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xdTaskPaneFillOutAForm: `1` = this.cast(1)
+  def xdTaskPaneFind: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def xdTaskPaneFind: `6` = this.cast(6)
+  def xdTaskPaneFormatting: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def xdTaskPaneFormatting: `8` = this.cast(8)
+  def xdTaskPaneHTML: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def xdTaskPaneHTML: `0` = this.cast(0)
+  def xdTaskPaneHWSWorkflow: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def xdTaskPaneHWSWorkflow: `12` = this.cast(12)
+  def xdTaskPaneHelp: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xdTaskPaneHelp: `4` = this.cast(4)
+  def xdTaskPaneParaFormatting: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def xdTaskPaneParaFormatting: `11` = this.cast(11)
+  def xdTaskPaneReplace: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def xdTaskPaneReplace: `7` = this.cast(7)
+  def xdTaskPaneSearchResults: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xdTaskPaneSearchResults: `3` = this.cast(3)
-  @scala.inline
-  def xdTaskPaneSpelling: `10` = this.cast(10)
+  def xdTaskPaneSpelling: `10` = 10.asInstanceOf[`10`]
 }
 

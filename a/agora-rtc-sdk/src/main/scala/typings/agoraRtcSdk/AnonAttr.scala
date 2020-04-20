@@ -19,7 +19,6 @@ object AnonAttr {
   @scala.inline
   def apply(attr: Double, uid: String | Double): AnonAttr = {
     val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAttr]
   }
 }

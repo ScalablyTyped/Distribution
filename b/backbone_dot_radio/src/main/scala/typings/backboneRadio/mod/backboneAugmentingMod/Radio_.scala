@@ -21,7 +21,6 @@ object Radio_ {
     tuneOut: String => Radio
   ): Radio_ = {
     val __obj = js.Dynamic.literal(channel = js.Any.fromFunction1(channel), log = js.Any.fromFunction3(log), tuneIn = js.Any.fromFunction1(tuneIn), tuneOut = js.Any.fromFunction1(tuneOut))
-  
     __obj.asInstanceOf[Radio_]
   }
 }

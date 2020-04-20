@@ -12,7 +12,6 @@ object AnonSignature {
   @scala.inline
   def apply(signature: String): AnonSignature = {
     val __obj = js.Dynamic.literal(signature = signature.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSignature]
   }
 }

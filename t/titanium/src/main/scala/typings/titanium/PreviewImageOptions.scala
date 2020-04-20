@@ -12,7 +12,7 @@ trait PreviewImageOptions extends js.Object {
   /**
   	 * Function called back if the preview fails. Check the `message` property of passed back parameter.
   	 */
-  var error: js.UndefOr[js.Function1[/* param0 */ PreviewImageError, _]] = js.undefined
+  var error: js.UndefOr[js.Function1[/* param0 */ PreviewImageError, Unit]] = js.undefined
   /**
   	 * The image to preview. Must be a blob based on a file, such as from <Titanium.Filesystem.File.read>.
   	 */
@@ -20,15 +20,15 @@ trait PreviewImageOptions extends js.Object {
   /**
   	 * Function to be called back if the preview succeeds. No info is passed.
   	 */
-  var success: js.UndefOr[js.Function1[/* param0 */ js.Any, _]] = js.undefined
+  var success: js.UndefOr[js.Function1[/* param0 */ SuccessResponse, Unit]] = js.undefined
 }
 
 object PreviewImageOptions {
   @scala.inline
   def apply(
-    error: /* param0 */ PreviewImageError => _ = null,
+    error: /* param0 */ PreviewImageError => Unit = null,
     image: Blob = null,
-    success: /* param0 */ js.Any => _ = null
+    success: /* param0 */ SuccessResponse => Unit = null
   ): PreviewImageOptions = {
     val __obj = js.Dynamic.literal()
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))

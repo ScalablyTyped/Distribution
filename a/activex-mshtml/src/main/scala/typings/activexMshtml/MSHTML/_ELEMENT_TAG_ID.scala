@@ -464,460 +464,458 @@ trait _ELEMENT_TAG_ID extends js.Object
 
 object _ELEMENT_TAG_ID {
   @scala.inline
-  def ELEMENT_TAG_ID_Max: `2147483647` = this.cast(2147483647)
+  def ELEMENT_TAG_ID_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
   @scala.inline
-  def TAGID_A: `2` = this.cast(2)
+  def TAGID_A: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def TAGID_ABBR: `110` = this.cast(110)
+  def TAGID_ABBR: `110` = 110.asInstanceOf[`110`]
   @scala.inline
-  def TAGID_ACRONYM: `3` = this.cast(3)
+  def TAGID_ACRONYM: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def TAGID_ADDRESS: `4` = this.cast(4)
+  def TAGID_ADDRESS: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def TAGID_APPLET: `5` = this.cast(5)
+  def TAGID_APPLET: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def TAGID_AREA: `6` = this.cast(6)
+  def TAGID_AREA: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def TAGID_ARTICLE: `199` = this.cast(199)
+  def TAGID_ARTICLE: `199` = 199.asInstanceOf[`199`]
   @scala.inline
-  def TAGID_ASIDE: `200` = this.cast(200)
+  def TAGID_ASIDE: `200` = 200.asInstanceOf[`200`]
   @scala.inline
-  def TAGID_AUDIO: `192` = this.cast(192)
+  def TAGID_AUDIO: `192` = 192.asInstanceOf[`192`]
   @scala.inline
-  def TAGID_B: `7` = this.cast(7)
+  def TAGID_B: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def TAGID_BASE: `8` = this.cast(8)
+  def TAGID_BASE: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def TAGID_BASEFONT: `9` = this.cast(9)
+  def TAGID_BASEFONT: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def TAGID_BDO: `10` = this.cast(10)
+  def TAGID_BDO: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def TAGID_BGSOUND: `11` = this.cast(11)
+  def TAGID_BGSOUND: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def TAGID_BIG: `12` = this.cast(12)
+  def TAGID_BIG: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def TAGID_BLINK: `13` = this.cast(13)
+  def TAGID_BLINK: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def TAGID_BLOCKQUOTE: `14` = this.cast(14)
+  def TAGID_BLOCKQUOTE: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def TAGID_BODY: `15` = this.cast(15)
+  def TAGID_BODY: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def TAGID_BR: `16` = this.cast(16)
+  def TAGID_BR: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def TAGID_BUTTON: `17` = this.cast(17)
+  def TAGID_BUTTON: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def TAGID_CANVAS: `195` = this.cast(195)
+  def TAGID_CANVAS: `195` = 195.asInstanceOf[`195`]
   @scala.inline
-  def TAGID_CAPTION: `18` = this.cast(18)
+  def TAGID_CAPTION: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def TAGID_CENTER: `19` = this.cast(19)
+  def TAGID_CENTER: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def TAGID_CITE: `20` = this.cast(20)
+  def TAGID_CITE: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def TAGID_CODE: `21` = this.cast(21)
+  def TAGID_CODE: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def TAGID_COL: `22` = this.cast(22)
+  def TAGID_COL: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def TAGID_COLGROUP: `23` = this.cast(23)
+  def TAGID_COLGROUP: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def TAGID_COMMAND: `220` = this.cast(220)
+  def TAGID_COMMAND: `220` = 220.asInstanceOf[`220`]
   @scala.inline
-  def TAGID_COMMENT: `24` = this.cast(24)
+  def TAGID_COMMENT: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def TAGID_COMMENT_RAW: `25` = this.cast(25)
+  def TAGID_COMMENT_RAW: `25` = 25.asInstanceOf[`25`]
   @scala.inline
-  def TAGID_COUNT: `224` = this.cast(224)
+  def TAGID_COUNT: `224` = 224.asInstanceOf[`224`]
   @scala.inline
-  def TAGID_DATALIST: `217` = this.cast(217)
+  def TAGID_DATALIST: `217` = 217.asInstanceOf[`217`]
   @scala.inline
-  def TAGID_DD: `26` = this.cast(26)
+  def TAGID_DD: `26` = 26.asInstanceOf[`26`]
   @scala.inline
-  def TAGID_DEL: `27` = this.cast(27)
+  def TAGID_DEL: `27` = 27.asInstanceOf[`27`]
   @scala.inline
-  def TAGID_DETAILS: `221` = this.cast(221)
+  def TAGID_DETAILS: `221` = 221.asInstanceOf[`221`]
   @scala.inline
-  def TAGID_DFN: `28` = this.cast(28)
+  def TAGID_DFN: `28` = 28.asInstanceOf[`28`]
   @scala.inline
-  def TAGID_DIR: `29` = this.cast(29)
+  def TAGID_DIR: `29` = 29.asInstanceOf[`29`]
   @scala.inline
-  def TAGID_DIV: `30` = this.cast(30)
+  def TAGID_DIV: `30` = 30.asInstanceOf[`30`]
   @scala.inline
-  def TAGID_DL: `31` = this.cast(31)
+  def TAGID_DL: `31` = 31.asInstanceOf[`31`]
   @scala.inline
-  def TAGID_DOCTYPE: `196` = this.cast(196)
+  def TAGID_DOCTYPE: `196` = 196.asInstanceOf[`196`]
   @scala.inline
-  def TAGID_DT: `32` = this.cast(32)
+  def TAGID_DT: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def TAGID_EM: `33` = this.cast(33)
+  def TAGID_EM: `33` = 33.asInstanceOf[`33`]
   @scala.inline
-  def TAGID_EMBED: `34` = this.cast(34)
+  def TAGID_EMBED: `34` = 34.asInstanceOf[`34`]
   @scala.inline
-  def TAGID_FIELDSET: `35` = this.cast(35)
+  def TAGID_FIELDSET: `35` = 35.asInstanceOf[`35`]
   @scala.inline
-  def TAGID_FIGCAPTION: `201` = this.cast(201)
+  def TAGID_FIGCAPTION: `201` = 201.asInstanceOf[`201`]
   @scala.inline
-  def TAGID_FIGURE: `202` = this.cast(202)
+  def TAGID_FIGURE: `202` = 202.asInstanceOf[`202`]
   @scala.inline
-  def TAGID_FONT: `36` = this.cast(36)
+  def TAGID_FONT: `36` = 36.asInstanceOf[`36`]
   @scala.inline
-  def TAGID_FOOTER: `203` = this.cast(203)
+  def TAGID_FOOTER: `203` = 203.asInstanceOf[`203`]
   @scala.inline
-  def TAGID_FORM: `37` = this.cast(37)
+  def TAGID_FORM: `37` = 37.asInstanceOf[`37`]
   @scala.inline
-  def TAGID_FRAME: `38` = this.cast(38)
+  def TAGID_FRAME: `38` = 38.asInstanceOf[`38`]
   @scala.inline
-  def TAGID_FRAMESET: `39` = this.cast(39)
+  def TAGID_FRAMESET: `39` = 39.asInstanceOf[`39`]
   @scala.inline
-  def TAGID_GENERIC: `40` = this.cast(40)
+  def TAGID_GENERIC: `40` = 40.asInstanceOf[`40`]
   @scala.inline
-  def TAGID_H1: `41` = this.cast(41)
+  def TAGID_H1: `41` = 41.asInstanceOf[`41`]
   @scala.inline
-  def TAGID_H2: `42` = this.cast(42)
+  def TAGID_H2: `42` = 42.asInstanceOf[`42`]
   @scala.inline
-  def TAGID_H3: `43` = this.cast(43)
+  def TAGID_H3: `43` = 43.asInstanceOf[`43`]
   @scala.inline
-  def TAGID_H4: `44` = this.cast(44)
+  def TAGID_H4: `44` = 44.asInstanceOf[`44`]
   @scala.inline
-  def TAGID_H5: `45` = this.cast(45)
+  def TAGID_H5: `45` = 45.asInstanceOf[`45`]
   @scala.inline
-  def TAGID_H6: `46` = this.cast(46)
+  def TAGID_H6: `46` = 46.asInstanceOf[`46`]
   @scala.inline
-  def TAGID_HEAD: `47` = this.cast(47)
+  def TAGID_HEAD: `47` = 47.asInstanceOf[`47`]
   @scala.inline
-  def TAGID_HEADER: `204` = this.cast(204)
+  def TAGID_HEADER: `204` = 204.asInstanceOf[`204`]
   @scala.inline
-  def TAGID_HGROUP: `205` = this.cast(205)
+  def TAGID_HGROUP: `205` = 205.asInstanceOf[`205`]
   @scala.inline
-  def TAGID_HR: `48` = this.cast(48)
+  def TAGID_HR: `48` = 48.asInstanceOf[`48`]
   @scala.inline
-  def TAGID_HTML: `49` = this.cast(49)
+  def TAGID_HTML: `49` = 49.asInstanceOf[`49`]
   @scala.inline
-  def TAGID_I: `50` = this.cast(50)
+  def TAGID_I: `50` = 50.asInstanceOf[`50`]
   @scala.inline
-  def TAGID_IFRAME: `51` = this.cast(51)
+  def TAGID_IFRAME: `51` = 51.asInstanceOf[`51`]
   @scala.inline
-  def TAGID_IMG: `52` = this.cast(52)
+  def TAGID_IMG: `52` = 52.asInstanceOf[`52`]
   @scala.inline
-  def TAGID_INPUT: `53` = this.cast(53)
+  def TAGID_INPUT: `53` = 53.asInstanceOf[`53`]
   @scala.inline
-  def TAGID_INS: `54` = this.cast(54)
+  def TAGID_INS: `54` = 54.asInstanceOf[`54`]
   @scala.inline
-  def TAGID_ISINDEX: `219` = this.cast(219)
+  def TAGID_ISINDEX: `219` = 219.asInstanceOf[`219`]
   @scala.inline
-  def TAGID_KBD: `55` = this.cast(55)
+  def TAGID_KBD: `55` = 55.asInstanceOf[`55`]
   @scala.inline
-  def TAGID_KEYGEN: `197` = this.cast(197)
+  def TAGID_KEYGEN: `197` = 197.asInstanceOf[`197`]
   @scala.inline
-  def TAGID_LABEL: `56` = this.cast(56)
+  def TAGID_LABEL: `56` = 56.asInstanceOf[`56`]
   @scala.inline
-  def TAGID_LAST_PREDEFINED: `10000` = this.cast(10000)
+  def TAGID_LAST_PREDEFINED: `10000` = 10000.asInstanceOf[`10000`]
   @scala.inline
-  def TAGID_LEGEND: `57` = this.cast(57)
+  def TAGID_LEGEND: `57` = 57.asInstanceOf[`57`]
   @scala.inline
-  def TAGID_LI: `58` = this.cast(58)
+  def TAGID_LI: `58` = 58.asInstanceOf[`58`]
   @scala.inline
-  def TAGID_LINK: `59` = this.cast(59)
+  def TAGID_LINK: `59` = 59.asInstanceOf[`59`]
   @scala.inline
-  def TAGID_LISTING: `60` = this.cast(60)
+  def TAGID_LISTING: `60` = 60.asInstanceOf[`60`]
   @scala.inline
-  def TAGID_MAP: `61` = this.cast(61)
+  def TAGID_MAP: `61` = 61.asInstanceOf[`61`]
   @scala.inline
-  def TAGID_MARK: `206` = this.cast(206)
+  def TAGID_MARK: `206` = 206.asInstanceOf[`206`]
   @scala.inline
-  def TAGID_MARQUEE: `62` = this.cast(62)
+  def TAGID_MARQUEE: `62` = 62.asInstanceOf[`62`]
   @scala.inline
-  def TAGID_MATHML_ANNOTATION_XML: `210` = this.cast(210)
+  def TAGID_MATHML_ANNOTATION_XML: `210` = 210.asInstanceOf[`210`]
   @scala.inline
-  def TAGID_MATHML_MATH: `211` = this.cast(211)
+  def TAGID_MATHML_MATH: `211` = 211.asInstanceOf[`211`]
   @scala.inline
-  def TAGID_MATHML_MI: `212` = this.cast(212)
+  def TAGID_MATHML_MI: `212` = 212.asInstanceOf[`212`]
   @scala.inline
-  def TAGID_MATHML_MN: `213` = this.cast(213)
+  def TAGID_MATHML_MN: `213` = 213.asInstanceOf[`213`]
   @scala.inline
-  def TAGID_MATHML_MO: `214` = this.cast(214)
+  def TAGID_MATHML_MO: `214` = 214.asInstanceOf[`214`]
   @scala.inline
-  def TAGID_MATHML_MS: `215` = this.cast(215)
+  def TAGID_MATHML_MS: `215` = 215.asInstanceOf[`215`]
   @scala.inline
-  def TAGID_MATHML_MTEXT: `216` = this.cast(216)
+  def TAGID_MATHML_MTEXT: `216` = 216.asInstanceOf[`216`]
   @scala.inline
-  def TAGID_MENU: `63` = this.cast(63)
+  def TAGID_MENU: `63` = 63.asInstanceOf[`63`]
   @scala.inline
-  def TAGID_META: `64` = this.cast(64)
+  def TAGID_META: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def TAGID_NAV: `207` = this.cast(207)
+  def TAGID_NAV: `207` = 207.asInstanceOf[`207`]
   @scala.inline
-  def TAGID_NEXTID: `65` = this.cast(65)
+  def TAGID_NEXTID: `65` = 65.asInstanceOf[`65`]
   @scala.inline
-  def TAGID_NOBR: `66` = this.cast(66)
+  def TAGID_NOBR: `66` = 66.asInstanceOf[`66`]
   @scala.inline
-  def TAGID_NOEMBED: `67` = this.cast(67)
+  def TAGID_NOEMBED: `67` = 67.asInstanceOf[`67`]
   @scala.inline
-  def TAGID_NOFRAMES: `68` = this.cast(68)
+  def TAGID_NOFRAMES: `68` = 68.asInstanceOf[`68`]
   @scala.inline
-  def TAGID_NOSCRIPT: `69` = this.cast(69)
+  def TAGID_NOSCRIPT: `69` = 69.asInstanceOf[`69`]
   @scala.inline
-  def TAGID_NULL: `0` = this.cast(0)
+  def TAGID_NULL: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def TAGID_OBJECT: `70` = this.cast(70)
+  def TAGID_OBJECT: `70` = 70.asInstanceOf[`70`]
   @scala.inline
-  def TAGID_OL: `71` = this.cast(71)
+  def TAGID_OL: `71` = 71.asInstanceOf[`71`]
   @scala.inline
-  def TAGID_OPTGROUP: `109` = this.cast(109)
+  def TAGID_OPTGROUP: `109` = 109.asInstanceOf[`109`]
   @scala.inline
-  def TAGID_OPTION: `72` = this.cast(72)
+  def TAGID_OPTION: `72` = 72.asInstanceOf[`72`]
   @scala.inline
-  def TAGID_P: `73` = this.cast(73)
+  def TAGID_P: `73` = 73.asInstanceOf[`73`]
   @scala.inline
-  def TAGID_PARAM: `74` = this.cast(74)
+  def TAGID_PARAM: `74` = 74.asInstanceOf[`74`]
   @scala.inline
-  def TAGID_PLAINTEXT: `75` = this.cast(75)
+  def TAGID_PLAINTEXT: `75` = 75.asInstanceOf[`75`]
   @scala.inline
-  def TAGID_PRE: `76` = this.cast(76)
+  def TAGID_PRE: `76` = 76.asInstanceOf[`76`]
   @scala.inline
-  def TAGID_PROCESSINGINSTRUCTION: `198` = this.cast(198)
+  def TAGID_PROCESSINGINSTRUCTION: `198` = 198.asInstanceOf[`198`]
   @scala.inline
-  def TAGID_PROGRESS: `209` = this.cast(209)
+  def TAGID_PROGRESS: `209` = 209.asInstanceOf[`209`]
   @scala.inline
-  def TAGID_Q: `77` = this.cast(77)
+  def TAGID_Q: `77` = 77.asInstanceOf[`77`]
   @scala.inline
-  def TAGID_ROOT: `108` = this.cast(108)
+  def TAGID_ROOT: `108` = 108.asInstanceOf[`108`]
   @scala.inline
-  def TAGID_RP: `78` = this.cast(78)
+  def TAGID_RP: `78` = 78.asInstanceOf[`78`]
   @scala.inline
-  def TAGID_RT: `79` = this.cast(79)
+  def TAGID_RT: `79` = 79.asInstanceOf[`79`]
   @scala.inline
-  def TAGID_RUBY: `80` = this.cast(80)
+  def TAGID_RUBY: `80` = 80.asInstanceOf[`80`]
   @scala.inline
-  def TAGID_S: `81` = this.cast(81)
+  def TAGID_S: `81` = 81.asInstanceOf[`81`]
   @scala.inline
-  def TAGID_SAMP: `82` = this.cast(82)
+  def TAGID_SAMP: `82` = 82.asInstanceOf[`82`]
   @scala.inline
-  def TAGID_SCRIPT: `83` = this.cast(83)
+  def TAGID_SCRIPT: `83` = 83.asInstanceOf[`83`]
   @scala.inline
-  def TAGID_SECTION: `208` = this.cast(208)
+  def TAGID_SECTION: `208` = 208.asInstanceOf[`208`]
   @scala.inline
-  def TAGID_SELECT: `84` = this.cast(84)
+  def TAGID_SELECT: `84` = 84.asInstanceOf[`84`]
   @scala.inline
-  def TAGID_SMALL: `85` = this.cast(85)
+  def TAGID_SMALL: `85` = 85.asInstanceOf[`85`]
   @scala.inline
-  def TAGID_SOURCE: `193` = this.cast(193)
+  def TAGID_SOURCE: `193` = 193.asInstanceOf[`193`]
   @scala.inline
-  def TAGID_SPAN: `86` = this.cast(86)
+  def TAGID_SPAN: `86` = 86.asInstanceOf[`86`]
   @scala.inline
-  def TAGID_STRIKE: `87` = this.cast(87)
+  def TAGID_STRIKE: `87` = 87.asInstanceOf[`87`]
   @scala.inline
-  def TAGID_STRONG: `88` = this.cast(88)
+  def TAGID_STRONG: `88` = 88.asInstanceOf[`88`]
   @scala.inline
-  def TAGID_STYLE: `89` = this.cast(89)
+  def TAGID_STYLE: `89` = 89.asInstanceOf[`89`]
   @scala.inline
-  def TAGID_SUB: `90` = this.cast(90)
+  def TAGID_SUB: `90` = 90.asInstanceOf[`90`]
   @scala.inline
-  def TAGID_SUMMARY: `222` = this.cast(222)
+  def TAGID_SUMMARY: `222` = 222.asInstanceOf[`222`]
   @scala.inline
-  def TAGID_SUP: `91` = this.cast(91)
+  def TAGID_SUP: `91` = 91.asInstanceOf[`91`]
   @scala.inline
-  def TAGID_SVG_A: `111` = this.cast(111)
+  def TAGID_SVG_A: `111` = 111.asInstanceOf[`111`]
   @scala.inline
-  def TAGID_SVG_ALTGLYPH: `112` = this.cast(112)
+  def TAGID_SVG_ALTGLYPH: `112` = 112.asInstanceOf[`112`]
   @scala.inline
-  def TAGID_SVG_ALTGLYPHDEF: `113` = this.cast(113)
+  def TAGID_SVG_ALTGLYPHDEF: `113` = 113.asInstanceOf[`113`]
   @scala.inline
-  def TAGID_SVG_ALTGLYPHITEM: `114` = this.cast(114)
+  def TAGID_SVG_ALTGLYPHITEM: `114` = 114.asInstanceOf[`114`]
   @scala.inline
-  def TAGID_SVG_ANIMATE: `115` = this.cast(115)
+  def TAGID_SVG_ANIMATE: `115` = 115.asInstanceOf[`115`]
   @scala.inline
-  def TAGID_SVG_ANIMATECOLOR: `116` = this.cast(116)
+  def TAGID_SVG_ANIMATECOLOR: `116` = 116.asInstanceOf[`116`]
   @scala.inline
-  def TAGID_SVG_ANIMATEMOTION: `117` = this.cast(117)
+  def TAGID_SVG_ANIMATEMOTION: `117` = 117.asInstanceOf[`117`]
   @scala.inline
-  def TAGID_SVG_ANIMATETRANSFORM: `118` = this.cast(118)
+  def TAGID_SVG_ANIMATETRANSFORM: `118` = 118.asInstanceOf[`118`]
   @scala.inline
-  def TAGID_SVG_CIRCLE: `119` = this.cast(119)
+  def TAGID_SVG_CIRCLE: `119` = 119.asInstanceOf[`119`]
   @scala.inline
-  def TAGID_SVG_CLIPPATH: `120` = this.cast(120)
+  def TAGID_SVG_CLIPPATH: `120` = 120.asInstanceOf[`120`]
   @scala.inline
-  def TAGID_SVG_COLOR_PROFILE: `121` = this.cast(121)
+  def TAGID_SVG_COLOR_PROFILE: `121` = 121.asInstanceOf[`121`]
   @scala.inline
-  def TAGID_SVG_CURSOR: `122` = this.cast(122)
+  def TAGID_SVG_CURSOR: `122` = 122.asInstanceOf[`122`]
   @scala.inline
-  def TAGID_SVG_DEFINITION_SRC: `123` = this.cast(123)
+  def TAGID_SVG_DEFINITION_SRC: `123` = 123.asInstanceOf[`123`]
   @scala.inline
-  def TAGID_SVG_DEFS: `124` = this.cast(124)
+  def TAGID_SVG_DEFS: `124` = 124.asInstanceOf[`124`]
   @scala.inline
-  def TAGID_SVG_DESC: `125` = this.cast(125)
+  def TAGID_SVG_DESC: `125` = 125.asInstanceOf[`125`]
   @scala.inline
-  def TAGID_SVG_ELLIPSE: `126` = this.cast(126)
+  def TAGID_SVG_ELLIPSE: `126` = 126.asInstanceOf[`126`]
   @scala.inline
-  def TAGID_SVG_FEBLEND: `127` = this.cast(127)
+  def TAGID_SVG_FEBLEND: `127` = 127.asInstanceOf[`127`]
   @scala.inline
-  def TAGID_SVG_FECOLORMATRIX: `128` = this.cast(128)
+  def TAGID_SVG_FECOLORMATRIX: `128` = 128.asInstanceOf[`128`]
   @scala.inline
-  def TAGID_SVG_FECOMPONENTTRANSFER: `129` = this.cast(129)
+  def TAGID_SVG_FECOMPONENTTRANSFER: `129` = 129.asInstanceOf[`129`]
   @scala.inline
-  def TAGID_SVG_FECOMPOSITE: `130` = this.cast(130)
+  def TAGID_SVG_FECOMPOSITE: `130` = 130.asInstanceOf[`130`]
   @scala.inline
-  def TAGID_SVG_FECONVOLVEMATRIX: `131` = this.cast(131)
+  def TAGID_SVG_FECONVOLVEMATRIX: `131` = 131.asInstanceOf[`131`]
   @scala.inline
-  def TAGID_SVG_FEDIFFUSELIGHTING: `132` = this.cast(132)
+  def TAGID_SVG_FEDIFFUSELIGHTING: `132` = 132.asInstanceOf[`132`]
   @scala.inline
-  def TAGID_SVG_FEDISPLACEMENTMAP: `133` = this.cast(133)
+  def TAGID_SVG_FEDISPLACEMENTMAP: `133` = 133.asInstanceOf[`133`]
   @scala.inline
-  def TAGID_SVG_FEDISTANTLIGHT: `134` = this.cast(134)
+  def TAGID_SVG_FEDISTANTLIGHT: `134` = 134.asInstanceOf[`134`]
   @scala.inline
-  def TAGID_SVG_FEFLOOD: `135` = this.cast(135)
+  def TAGID_SVG_FEFLOOD: `135` = 135.asInstanceOf[`135`]
   @scala.inline
-  def TAGID_SVG_FEFUNCA: `136` = this.cast(136)
+  def TAGID_SVG_FEFUNCA: `136` = 136.asInstanceOf[`136`]
   @scala.inline
-  def TAGID_SVG_FEFUNCB: `137` = this.cast(137)
+  def TAGID_SVG_FEFUNCB: `137` = 137.asInstanceOf[`137`]
   @scala.inline
-  def TAGID_SVG_FEFUNCG: `138` = this.cast(138)
+  def TAGID_SVG_FEFUNCG: `138` = 138.asInstanceOf[`138`]
   @scala.inline
-  def TAGID_SVG_FEFUNCR: `139` = this.cast(139)
+  def TAGID_SVG_FEFUNCR: `139` = 139.asInstanceOf[`139`]
   @scala.inline
-  def TAGID_SVG_FEGAUSSIANBLUR: `140` = this.cast(140)
+  def TAGID_SVG_FEGAUSSIANBLUR: `140` = 140.asInstanceOf[`140`]
   @scala.inline
-  def TAGID_SVG_FEIMAGE: `141` = this.cast(141)
+  def TAGID_SVG_FEIMAGE: `141` = 141.asInstanceOf[`141`]
   @scala.inline
-  def TAGID_SVG_FEMERGE: `142` = this.cast(142)
+  def TAGID_SVG_FEMERGE: `142` = 142.asInstanceOf[`142`]
   @scala.inline
-  def TAGID_SVG_FEMERGENODE: `143` = this.cast(143)
+  def TAGID_SVG_FEMERGENODE: `143` = 143.asInstanceOf[`143`]
   @scala.inline
-  def TAGID_SVG_FEMORPHOLOGY: `144` = this.cast(144)
+  def TAGID_SVG_FEMORPHOLOGY: `144` = 144.asInstanceOf[`144`]
   @scala.inline
-  def TAGID_SVG_FEOFFSET: `145` = this.cast(145)
+  def TAGID_SVG_FEOFFSET: `145` = 145.asInstanceOf[`145`]
   @scala.inline
-  def TAGID_SVG_FEPOINTLIGHT: `146` = this.cast(146)
+  def TAGID_SVG_FEPOINTLIGHT: `146` = 146.asInstanceOf[`146`]
   @scala.inline
-  def TAGID_SVG_FESPECULARLIGHTING: `147` = this.cast(147)
+  def TAGID_SVG_FESPECULARLIGHTING: `147` = 147.asInstanceOf[`147`]
   @scala.inline
-  def TAGID_SVG_FESPOTLIGHT: `148` = this.cast(148)
+  def TAGID_SVG_FESPOTLIGHT: `148` = 148.asInstanceOf[`148`]
   @scala.inline
-  def TAGID_SVG_FETILE: `149` = this.cast(149)
+  def TAGID_SVG_FETILE: `149` = 149.asInstanceOf[`149`]
   @scala.inline
-  def TAGID_SVG_FETURBULENCE: `150` = this.cast(150)
+  def TAGID_SVG_FETURBULENCE: `150` = 150.asInstanceOf[`150`]
   @scala.inline
-  def TAGID_SVG_FILTER: `151` = this.cast(151)
+  def TAGID_SVG_FILTER: `151` = 151.asInstanceOf[`151`]
   @scala.inline
-  def TAGID_SVG_FONT: `152` = this.cast(152)
+  def TAGID_SVG_FONT: `152` = 152.asInstanceOf[`152`]
   @scala.inline
-  def TAGID_SVG_FONT_FACE: `153` = this.cast(153)
+  def TAGID_SVG_FONT_FACE: `153` = 153.asInstanceOf[`153`]
   @scala.inline
-  def TAGID_SVG_FONT_FACE_FORMAT: `154` = this.cast(154)
+  def TAGID_SVG_FONT_FACE_FORMAT: `154` = 154.asInstanceOf[`154`]
   @scala.inline
-  def TAGID_SVG_FONT_FACE_NAME: `155` = this.cast(155)
+  def TAGID_SVG_FONT_FACE_NAME: `155` = 155.asInstanceOf[`155`]
   @scala.inline
-  def TAGID_SVG_FONT_FACE_SRC: `156` = this.cast(156)
+  def TAGID_SVG_FONT_FACE_SRC: `156` = 156.asInstanceOf[`156`]
   @scala.inline
-  def TAGID_SVG_FONT_FACE_URI: `157` = this.cast(157)
+  def TAGID_SVG_FONT_FACE_URI: `157` = 157.asInstanceOf[`157`]
   @scala.inline
-  def TAGID_SVG_FOREIGNOBJECT: `158` = this.cast(158)
+  def TAGID_SVG_FOREIGNOBJECT: `158` = 158.asInstanceOf[`158`]
   @scala.inline
-  def TAGID_SVG_G: `159` = this.cast(159)
+  def TAGID_SVG_G: `159` = 159.asInstanceOf[`159`]
   @scala.inline
-  def TAGID_SVG_GLYPH: `160` = this.cast(160)
+  def TAGID_SVG_GLYPH: `160` = 160.asInstanceOf[`160`]
   @scala.inline
-  def TAGID_SVG_GLYPHREF: `161` = this.cast(161)
+  def TAGID_SVG_GLYPHREF: `161` = 161.asInstanceOf[`161`]
   @scala.inline
-  def TAGID_SVG_HKERN: `162` = this.cast(162)
+  def TAGID_SVG_HKERN: `162` = 162.asInstanceOf[`162`]
   @scala.inline
-  def TAGID_SVG_IMAGE: `163` = this.cast(163)
+  def TAGID_SVG_IMAGE: `163` = 163.asInstanceOf[`163`]
   @scala.inline
-  def TAGID_SVG_LINE: `164` = this.cast(164)
+  def TAGID_SVG_LINE: `164` = 164.asInstanceOf[`164`]
   @scala.inline
-  def TAGID_SVG_LINEARGRADIENT: `165` = this.cast(165)
+  def TAGID_SVG_LINEARGRADIENT: `165` = 165.asInstanceOf[`165`]
   @scala.inline
-  def TAGID_SVG_MARKER: `166` = this.cast(166)
+  def TAGID_SVG_MARKER: `166` = 166.asInstanceOf[`166`]
   @scala.inline
-  def TAGID_SVG_MASK: `167` = this.cast(167)
+  def TAGID_SVG_MASK: `167` = 167.asInstanceOf[`167`]
   @scala.inline
-  def TAGID_SVG_METADATA: `168` = this.cast(168)
+  def TAGID_SVG_METADATA: `168` = 168.asInstanceOf[`168`]
   @scala.inline
-  def TAGID_SVG_MISSING_GLYPH: `169` = this.cast(169)
+  def TAGID_SVG_MISSING_GLYPH: `169` = 169.asInstanceOf[`169`]
   @scala.inline
-  def TAGID_SVG_MPATH: `170` = this.cast(170)
+  def TAGID_SVG_MPATH: `170` = 170.asInstanceOf[`170`]
   @scala.inline
-  def TAGID_SVG_PATH: `171` = this.cast(171)
+  def TAGID_SVG_PATH: `171` = 171.asInstanceOf[`171`]
   @scala.inline
-  def TAGID_SVG_PATTERN: `172` = this.cast(172)
+  def TAGID_SVG_PATTERN: `172` = 172.asInstanceOf[`172`]
   @scala.inline
-  def TAGID_SVG_POLYGON: `173` = this.cast(173)
+  def TAGID_SVG_POLYGON: `173` = 173.asInstanceOf[`173`]
   @scala.inline
-  def TAGID_SVG_POLYLINE: `174` = this.cast(174)
+  def TAGID_SVG_POLYLINE: `174` = 174.asInstanceOf[`174`]
   @scala.inline
-  def TAGID_SVG_RADIALGRADIENT: `175` = this.cast(175)
+  def TAGID_SVG_RADIALGRADIENT: `175` = 175.asInstanceOf[`175`]
   @scala.inline
-  def TAGID_SVG_RECT: `176` = this.cast(176)
+  def TAGID_SVG_RECT: `176` = 176.asInstanceOf[`176`]
   @scala.inline
-  def TAGID_SVG_SCRIPT: `177` = this.cast(177)
+  def TAGID_SVG_SCRIPT: `177` = 177.asInstanceOf[`177`]
   @scala.inline
-  def TAGID_SVG_SET: `178` = this.cast(178)
+  def TAGID_SVG_SET: `178` = 178.asInstanceOf[`178`]
   @scala.inline
-  def TAGID_SVG_STOP: `179` = this.cast(179)
+  def TAGID_SVG_STOP: `179` = 179.asInstanceOf[`179`]
   @scala.inline
-  def TAGID_SVG_STYLE: `180` = this.cast(180)
+  def TAGID_SVG_STYLE: `180` = 180.asInstanceOf[`180`]
   @scala.inline
-  def TAGID_SVG_SVG: `181` = this.cast(181)
+  def TAGID_SVG_SVG: `181` = 181.asInstanceOf[`181`]
   @scala.inline
-  def TAGID_SVG_SWITCH: `182` = this.cast(182)
+  def TAGID_SVG_SWITCH: `182` = 182.asInstanceOf[`182`]
   @scala.inline
-  def TAGID_SVG_SYMBOL: `183` = this.cast(183)
+  def TAGID_SVG_SYMBOL: `183` = 183.asInstanceOf[`183`]
   @scala.inline
-  def TAGID_SVG_TEXT: `184` = this.cast(184)
+  def TAGID_SVG_TEXT: `184` = 184.asInstanceOf[`184`]
   @scala.inline
-  def TAGID_SVG_TEXTPATH: `185` = this.cast(185)
+  def TAGID_SVG_TEXTPATH: `185` = 185.asInstanceOf[`185`]
   @scala.inline
-  def TAGID_SVG_TITLE: `186` = this.cast(186)
+  def TAGID_SVG_TITLE: `186` = 186.asInstanceOf[`186`]
   @scala.inline
-  def TAGID_SVG_TREF: `187` = this.cast(187)
+  def TAGID_SVG_TREF: `187` = 187.asInstanceOf[`187`]
   @scala.inline
-  def TAGID_SVG_TSPAN: `188` = this.cast(188)
+  def TAGID_SVG_TSPAN: `188` = 188.asInstanceOf[`188`]
   @scala.inline
-  def TAGID_SVG_USE: `189` = this.cast(189)
+  def TAGID_SVG_USE: `189` = 189.asInstanceOf[`189`]
   @scala.inline
-  def TAGID_SVG_VIEW: `190` = this.cast(190)
+  def TAGID_SVG_VIEW: `190` = 190.asInstanceOf[`190`]
   @scala.inline
-  def TAGID_SVG_VKERN: `191` = this.cast(191)
+  def TAGID_SVG_VKERN: `191` = 191.asInstanceOf[`191`]
   @scala.inline
-  def TAGID_TABLE: `92` = this.cast(92)
+  def TAGID_TABLE: `92` = 92.asInstanceOf[`92`]
   @scala.inline
-  def TAGID_TBODY: `93` = this.cast(93)
+  def TAGID_TBODY: `93` = 93.asInstanceOf[`93`]
   @scala.inline
-  def TAGID_TC: `94` = this.cast(94)
+  def TAGID_TC: `94` = 94.asInstanceOf[`94`]
   @scala.inline
-  def TAGID_TD: `95` = this.cast(95)
+  def TAGID_TD: `95` = 95.asInstanceOf[`95`]
   @scala.inline
-  def TAGID_TEXTAREA: `96` = this.cast(96)
+  def TAGID_TEXTAREA: `96` = 96.asInstanceOf[`96`]
   @scala.inline
-  def TAGID_TFOOT: `97` = this.cast(97)
+  def TAGID_TFOOT: `97` = 97.asInstanceOf[`97`]
   @scala.inline
-  def TAGID_TH: `98` = this.cast(98)
+  def TAGID_TH: `98` = 98.asInstanceOf[`98`]
   @scala.inline
-  def TAGID_THEAD: `99` = this.cast(99)
+  def TAGID_THEAD: `99` = 99.asInstanceOf[`99`]
   @scala.inline
-  def TAGID_TITLE: `100` = this.cast(100)
+  def TAGID_TITLE: `100` = 100.asInstanceOf[`100`]
   @scala.inline
-  def TAGID_TR: `101` = this.cast(101)
+  def TAGID_TR: `101` = 101.asInstanceOf[`101`]
   @scala.inline
-  def TAGID_TRACK: `218` = this.cast(218)
+  def TAGID_TRACK: `218` = 218.asInstanceOf[`218`]
   @scala.inline
-  def TAGID_TT: `102` = this.cast(102)
+  def TAGID_TT: `102` = 102.asInstanceOf[`102`]
   @scala.inline
-  def TAGID_U: `103` = this.cast(103)
+  def TAGID_U: `103` = 103.asInstanceOf[`103`]
   @scala.inline
-  def TAGID_UL: `104` = this.cast(104)
+  def TAGID_UL: `104` = 104.asInstanceOf[`104`]
   @scala.inline
-  def TAGID_UNKNOWN: `1` = this.cast(1)
+  def TAGID_UNKNOWN: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def TAGID_VAR: `105` = this.cast(105)
+  def TAGID_VAR: `105` = 105.asInstanceOf[`105`]
   @scala.inline
-  def TAGID_VIDEO: `194` = this.cast(194)
+  def TAGID_VIDEO: `194` = 194.asInstanceOf[`194`]
   @scala.inline
-  def TAGID_WBR: `106` = this.cast(106)
+  def TAGID_WBR: `106` = 106.asInstanceOf[`106`]
   @scala.inline
-  def TAGID_XMP: `107` = this.cast(107)
+  def TAGID_XMP: `107` = 107.asInstanceOf[`107`]
   @scala.inline
-  def TAGID_X_MS_WEBVIEW: `223` = this.cast(223)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def TAGID_X_MS_WEBVIEW: `223` = 223.asInstanceOf[`223`]
 }
 

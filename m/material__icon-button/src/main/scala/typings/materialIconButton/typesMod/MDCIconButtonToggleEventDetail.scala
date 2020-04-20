@@ -12,7 +12,6 @@ object MDCIconButtonToggleEventDetail {
   @scala.inline
   def apply(isOn: Boolean): MDCIconButtonToggleEventDetail = {
     val __obj = js.Dynamic.literal(isOn = isOn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MDCIconButtonToggleEventDetail]
   }
 }

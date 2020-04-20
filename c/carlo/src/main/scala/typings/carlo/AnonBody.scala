@@ -24,7 +24,6 @@ object AnonBody {
   @scala.inline
   def apply(body: Buffer, headers: js.Object, status: Double): AnonBody = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBody]
   }
 }

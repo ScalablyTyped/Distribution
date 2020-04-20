@@ -12,7 +12,6 @@ object UuidData {
   @scala.inline
   def apply(os: String): UuidData = {
     val __obj = js.Dynamic.literal(os = os.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UuidData]
   }
 }

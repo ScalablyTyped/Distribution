@@ -12,10 +12,8 @@ trait EndingType extends js.Object
 
 object EndingType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def native: typings.std.stdStrings.native = "native".asInstanceOf[typings.std.stdStrings.native]
   @scala.inline
-  def native: typings.std.stdStrings.native = this.cast("native")
-  @scala.inline
-  def transparent: typings.std.stdStrings.transparent = this.cast("transparent")
+  def transparent: typings.std.stdStrings.transparent = "transparent".asInstanceOf[typings.std.stdStrings.transparent]
 }
 

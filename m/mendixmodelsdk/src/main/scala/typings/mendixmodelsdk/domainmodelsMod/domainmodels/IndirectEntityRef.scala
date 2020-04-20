@@ -33,7 +33,7 @@ class IndirectEntityRef protected () extends EntityRef {
   ) = this()
   @JSName("model")
   var model_FIndirectEntityRef: IModel = js.native
-  def steps(): IList[EntityRefStep] = js.native
+  def steps: IList[EntityRefStep] = js.native
 }
 
 /* static members */

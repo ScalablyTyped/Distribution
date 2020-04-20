@@ -33,7 +33,6 @@ object HttpHandler {
     handle: (HttpRequest[StreamType], HttpHandlerOptions) => js.Promise[HttpResponse[StreamType]]
   ): HttpHandler[StreamType, HttpOptionsType] = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), handle = js.Any.fromFunction2(handle))
-  
     __obj.asInstanceOf[HttpHandler[StreamType, HttpOptionsType]]
   }
 }

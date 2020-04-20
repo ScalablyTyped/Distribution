@@ -67,6 +67,10 @@ class Cluster protected () extends CustomResource {
     */
   val dbSubnetGroupName: Output_[String] = js.native
   /**
+    * A value that indicates whether the DB cluster has deletion protection enabled. The database can't be deleted when deletion protection is enabled. By default, deletion protection is disabled.
+    */
+  val deletionProtection: Output_[js.UndefOr[Boolean]] = js.native
+  /**
     * List of log types to export to cloudwatch. If omitted, no logs will be exported.
     * The following log types are supported: `audit`, `profiler`.
     */

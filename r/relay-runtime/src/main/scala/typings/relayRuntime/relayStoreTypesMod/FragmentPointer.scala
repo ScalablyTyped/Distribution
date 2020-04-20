@@ -17,7 +17,6 @@ object FragmentPointer {
   @scala.inline
   def apply(__fragmentOwner: RequestDescriptor, __fragments: StringDictionary[Variables], __id: DataID): FragmentPointer = {
     val __obj = js.Dynamic.literal(__fragmentOwner = __fragmentOwner.asInstanceOf[js.Any], __fragments = __fragments.asInstanceOf[js.Any], __id = __id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FragmentPointer]
   }
 }

@@ -32,7 +32,6 @@ object APIGroupList {
   @scala.inline
   def apply(apiVersion: String, groups: js.Array[APIGroup], kind: String): APIGroupList = {
     val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], groups = groups.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[APIGroupList]
   }
 }

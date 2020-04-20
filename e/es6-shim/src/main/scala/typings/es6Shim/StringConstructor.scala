@@ -28,7 +28,6 @@ object StringConstructor {
     raw: (TemplateStringsArray, /* repeated */ js.Any) => java.lang.String
   ): StringConstructor = {
     val __obj = js.Dynamic.literal(fromCodePoint = js.Any.fromFunction1(fromCodePoint), raw = js.Any.fromFunction2(raw))
-  
     __obj.asInstanceOf[StringConstructor]
   }
 }

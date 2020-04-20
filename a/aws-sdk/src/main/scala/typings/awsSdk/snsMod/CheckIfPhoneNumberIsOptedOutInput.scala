@@ -16,7 +16,6 @@ object CheckIfPhoneNumberIsOptedOutInput {
   @scala.inline
   def apply(phoneNumber: PhoneNumber): CheckIfPhoneNumberIsOptedOutInput = {
     val __obj = js.Dynamic.literal(phoneNumber = phoneNumber.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CheckIfPhoneNumberIsOptedOutInput]
   }
 }

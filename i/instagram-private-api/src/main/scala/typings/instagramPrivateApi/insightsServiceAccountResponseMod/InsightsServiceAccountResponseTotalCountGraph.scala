@@ -13,7 +13,6 @@ object InsightsServiceAccountResponseTotalCountGraph {
   @scala.inline
   def apply(data_points: js.Array[InsightsServiceAccountResponseDataPointsItem], graph_name: String): InsightsServiceAccountResponseTotalCountGraph = {
     val __obj = js.Dynamic.literal(data_points = data_points.asInstanceOf[js.Any], graph_name = graph_name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InsightsServiceAccountResponseTotalCountGraph]
   }
 }

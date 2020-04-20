@@ -13,7 +13,6 @@ object PickImpldetachable {
   @scala.inline
   def apply(detachable: Boolean): PickImpldetachable = {
     val __obj = js.Dynamic.literal(detachable = detachable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpldetachable]
   }
 }

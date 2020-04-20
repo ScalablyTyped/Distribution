@@ -28,7 +28,6 @@ object FormItem {
   @scala.inline
   def apply(getId: () => String, getLabel: () => String, navigate: () => Unit): FormItem = {
     val __obj = js.Dynamic.literal(getId = js.Any.fromFunction0(getId), getLabel = js.Any.fromFunction0(getLabel), navigate = js.Any.fromFunction0(navigate))
-  
     __obj.asInstanceOf[FormItem]
   }
 }

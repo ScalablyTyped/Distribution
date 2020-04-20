@@ -38,7 +38,6 @@ object CreateTrafficPolicyInstanceRequest {
     TrafficPolicyVersion: TrafficPolicyVersion
   ): CreateTrafficPolicyInstanceRequest = {
     val __obj = js.Dynamic.literal(HostedZoneId = HostedZoneId.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], TTL = TTL.asInstanceOf[js.Any], TrafficPolicyId = TrafficPolicyId.asInstanceOf[js.Any], TrafficPolicyVersion = TrafficPolicyVersion.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateTrafficPolicyInstanceRequest]
   }
 }

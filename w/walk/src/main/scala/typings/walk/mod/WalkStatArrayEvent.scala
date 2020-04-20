@@ -15,16 +15,14 @@ trait WalkStatArrayEvent extends js.Object
 
 object WalkStatArrayEvent {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def directories: typings.walk.walkStrings.directories = "directories".asInstanceOf[typings.walk.walkStrings.directories]
   @scala.inline
-  def directories: typings.walk.walkStrings.directories = this.cast("directories")
+  def directoryError: typings.walk.walkStrings.directoryError = "directoryError".asInstanceOf[typings.walk.walkStrings.directoryError]
   @scala.inline
-  def directoryError: typings.walk.walkStrings.directoryError = this.cast("directoryError")
+  def errors: typings.walk.walkStrings.errors = "errors".asInstanceOf[typings.walk.walkStrings.errors]
   @scala.inline
-  def errors: typings.walk.walkStrings.errors = this.cast("errors")
+  def files: typings.walk.walkStrings.files = "files".asInstanceOf[typings.walk.walkStrings.files]
   @scala.inline
-  def files: typings.walk.walkStrings.files = this.cast("files")
-  @scala.inline
-  def nodeError: typings.walk.walkStrings.nodeError = this.cast("nodeError")
+  def nodeError: typings.walk.walkStrings.nodeError = "nodeError".asInstanceOf[typings.walk.walkStrings.nodeError]
 }
 

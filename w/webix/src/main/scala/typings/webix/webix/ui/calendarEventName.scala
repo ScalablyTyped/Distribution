@@ -45,76 +45,74 @@ trait calendarEventName extends js.Object
 
 object calendarEventName {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def onAfterContextMenu: typings.webix.webixStrings.onAfterContextMenu = "onAfterContextMenu".asInstanceOf[typings.webix.webixStrings.onAfterContextMenu]
   @scala.inline
-  def onAfterContextMenu: typings.webix.webixStrings.onAfterContextMenu = this.cast("onAfterContextMenu")
+  def onAfterDateSelect: typings.webix.webixStrings.onAfterDateSelect = "onAfterDateSelect".asInstanceOf[typings.webix.webixStrings.onAfterDateSelect]
   @scala.inline
-  def onAfterDateSelect: typings.webix.webixStrings.onAfterDateSelect = this.cast("onAfterDateSelect")
+  def onAfterMonthChange: typings.webix.webixStrings.onAfterMonthChange = "onAfterMonthChange".asInstanceOf[typings.webix.webixStrings.onAfterMonthChange]
   @scala.inline
-  def onAfterMonthChange: typings.webix.webixStrings.onAfterMonthChange = this.cast("onAfterMonthChange")
+  def onAfterRender: typings.webix.webixStrings.onAfterRender = "onAfterRender".asInstanceOf[typings.webix.webixStrings.onAfterRender]
   @scala.inline
-  def onAfterRender: typings.webix.webixStrings.onAfterRender = this.cast("onAfterRender")
+  def onAfterScroll: typings.webix.webixStrings.onAfterScroll = "onAfterScroll".asInstanceOf[typings.webix.webixStrings.onAfterScroll]
   @scala.inline
-  def onAfterScroll: typings.webix.webixStrings.onAfterScroll = this.cast("onAfterScroll")
+  def onAfterZoom: typings.webix.webixStrings.onAfterZoom = "onAfterZoom".asInstanceOf[typings.webix.webixStrings.onAfterZoom]
   @scala.inline
-  def onAfterZoom: typings.webix.webixStrings.onAfterZoom = this.cast("onAfterZoom")
+  def onBeforeContextMenu: typings.webix.webixStrings.onBeforeContextMenu = "onBeforeContextMenu".asInstanceOf[typings.webix.webixStrings.onBeforeContextMenu]
   @scala.inline
-  def onBeforeContextMenu: typings.webix.webixStrings.onBeforeContextMenu = this.cast("onBeforeContextMenu")
+  def onBeforeDateSelect: typings.webix.webixStrings.onBeforeDateSelect = "onBeforeDateSelect".asInstanceOf[typings.webix.webixStrings.onBeforeDateSelect]
   @scala.inline
-  def onBeforeDateSelect: typings.webix.webixStrings.onBeforeDateSelect = this.cast("onBeforeDateSelect")
+  def onBeforeMonthChange: typings.webix.webixStrings.onBeforeMonthChange = "onBeforeMonthChange".asInstanceOf[typings.webix.webixStrings.onBeforeMonthChange]
   @scala.inline
-  def onBeforeMonthChange: typings.webix.webixStrings.onBeforeMonthChange = this.cast("onBeforeMonthChange")
+  def onBeforeRender: typings.webix.webixStrings.onBeforeRender = "onBeforeRender".asInstanceOf[typings.webix.webixStrings.onBeforeRender]
   @scala.inline
-  def onBeforeRender: typings.webix.webixStrings.onBeforeRender = this.cast("onBeforeRender")
+  def onBeforeZoom: typings.webix.webixStrings.onBeforeZoom = "onBeforeZoom".asInstanceOf[typings.webix.webixStrings.onBeforeZoom]
   @scala.inline
-  def onBeforeZoom: typings.webix.webixStrings.onBeforeZoom = this.cast("onBeforeZoom")
+  def onBindRequest: typings.webix.webixStrings.onBindRequest = "onBindRequest".asInstanceOf[typings.webix.webixStrings.onBindRequest]
   @scala.inline
-  def onBindRequest: typings.webix.webixStrings.onBindRequest = this.cast("onBindRequest")
+  def onBlur: typings.webix.webixStrings.onBlur = "onBlur".asInstanceOf[typings.webix.webixStrings.onBlur]
   @scala.inline
-  def onBlur: typings.webix.webixStrings.onBlur = this.cast("onBlur")
+  def onChange: typings.webix.webixStrings.onChange = "onChange".asInstanceOf[typings.webix.webixStrings.onChange]
   @scala.inline
-  def onChange: typings.webix.webixStrings.onChange = this.cast("onChange")
+  def onDateClear: typings.webix.webixStrings.onDateClear = "onDateClear".asInstanceOf[typings.webix.webixStrings.onDateClear]
   @scala.inline
-  def onDateClear: typings.webix.webixStrings.onDateClear = this.cast("onDateClear")
+  def onDateSelect: typings.webix.webixStrings.onDateSelect = "onDateSelect".asInstanceOf[typings.webix.webixStrings.onDateSelect]
   @scala.inline
-  def onDateSelect: typings.webix.webixStrings.onDateSelect = this.cast("onDateSelect")
+  def onDestruct: typings.webix.webixStrings.onDestruct = "onDestruct".asInstanceOf[typings.webix.webixStrings.onDestruct]
   @scala.inline
-  def onDestruct: typings.webix.webixStrings.onDestruct = this.cast("onDestruct")
+  def onEnter: typings.webix.webixStrings.onEnter = "onEnter".asInstanceOf[typings.webix.webixStrings.onEnter]
   @scala.inline
-  def onEnter: typings.webix.webixStrings.onEnter = this.cast("onEnter")
+  def onFocus: typings.webix.webixStrings.onFocus = "onFocus".asInstanceOf[typings.webix.webixStrings.onFocus]
   @scala.inline
-  def onFocus: typings.webix.webixStrings.onFocus = this.cast("onFocus")
+  def onItemClick: typings.webix.webixStrings.onItemClick = "onItemClick".asInstanceOf[typings.webix.webixStrings.onItemClick]
   @scala.inline
-  def onItemClick: typings.webix.webixStrings.onItemClick = this.cast("onItemClick")
+  def onItemDblClick: typings.webix.webixStrings.onItemDblClick = "onItemDblClick".asInstanceOf[typings.webix.webixStrings.onItemDblClick]
   @scala.inline
-  def onItemDblClick: typings.webix.webixStrings.onItemDblClick = this.cast("onItemDblClick")
+  def onKeyPress: typings.webix.webixStrings.onKeyPress = "onKeyPress".asInstanceOf[typings.webix.webixStrings.onKeyPress]
   @scala.inline
-  def onKeyPress: typings.webix.webixStrings.onKeyPress = this.cast("onKeyPress")
+  def onLongTouch: typings.webix.webixStrings.onLongTouch = "onLongTouch".asInstanceOf[typings.webix.webixStrings.onLongTouch]
   @scala.inline
-  def onLongTouch: typings.webix.webixStrings.onLongTouch = this.cast("onLongTouch")
+  def onMouseMove: typings.webix.webixStrings.onMouseMove = "onMouseMove".asInstanceOf[typings.webix.webixStrings.onMouseMove]
   @scala.inline
-  def onMouseMove: typings.webix.webixStrings.onMouseMove = this.cast("onMouseMove")
+  def onMouseMoving: typings.webix.webixStrings.onMouseMoving = "onMouseMoving".asInstanceOf[typings.webix.webixStrings.onMouseMoving]
   @scala.inline
-  def onMouseMoving: typings.webix.webixStrings.onMouseMoving = this.cast("onMouseMoving")
+  def onMouseOut: typings.webix.webixStrings.onMouseOut = "onMouseOut".asInstanceOf[typings.webix.webixStrings.onMouseOut]
   @scala.inline
-  def onMouseOut: typings.webix.webixStrings.onMouseOut = this.cast("onMouseOut")
+  def onSwipeX: typings.webix.webixStrings.onSwipeX = "onSwipeX".asInstanceOf[typings.webix.webixStrings.onSwipeX]
   @scala.inline
-  def onSwipeX: typings.webix.webixStrings.onSwipeX = this.cast("onSwipeX")
+  def onSwipeY: typings.webix.webixStrings.onSwipeY = "onSwipeY".asInstanceOf[typings.webix.webixStrings.onSwipeY]
   @scala.inline
-  def onSwipeY: typings.webix.webixStrings.onSwipeY = this.cast("onSwipeY")
+  def onTimedKeyPress: typings.webix.webixStrings.onTimedKeyPress = "onTimedKeyPress".asInstanceOf[typings.webix.webixStrings.onTimedKeyPress]
   @scala.inline
-  def onTimedKeyPress: typings.webix.webixStrings.onTimedKeyPress = this.cast("onTimedKeyPress")
+  def onTodaySet: typings.webix.webixStrings.onTodaySet = "onTodaySet".asInstanceOf[typings.webix.webixStrings.onTodaySet]
   @scala.inline
-  def onTodaySet: typings.webix.webixStrings.onTodaySet = this.cast("onTodaySet")
+  def onTouchEnd: typings.webix.webixStrings.onTouchEnd = "onTouchEnd".asInstanceOf[typings.webix.webixStrings.onTouchEnd]
   @scala.inline
-  def onTouchEnd: typings.webix.webixStrings.onTouchEnd = this.cast("onTouchEnd")
+  def onTouchMove: typings.webix.webixStrings.onTouchMove = "onTouchMove".asInstanceOf[typings.webix.webixStrings.onTouchMove]
   @scala.inline
-  def onTouchMove: typings.webix.webixStrings.onTouchMove = this.cast("onTouchMove")
+  def onTouchStart: typings.webix.webixStrings.onTouchStart = "onTouchStart".asInstanceOf[typings.webix.webixStrings.onTouchStart]
   @scala.inline
-  def onTouchStart: typings.webix.webixStrings.onTouchStart = this.cast("onTouchStart")
+  def onViewResize: typings.webix.webixStrings.onViewResize = "onViewResize".asInstanceOf[typings.webix.webixStrings.onViewResize]
   @scala.inline
-  def onViewResize: typings.webix.webixStrings.onViewResize = this.cast("onViewResize")
-  @scala.inline
-  def onViewShow: typings.webix.webixStrings.onViewShow = this.cast("onViewShow")
+  def onViewShow: typings.webix.webixStrings.onViewShow = "onViewShow".asInstanceOf[typings.webix.webixStrings.onViewShow]
 }
 

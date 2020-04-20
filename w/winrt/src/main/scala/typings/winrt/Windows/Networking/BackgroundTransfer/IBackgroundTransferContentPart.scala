@@ -15,7 +15,6 @@ object IBackgroundTransferContentPart {
   @scala.inline
   def apply(setFile: IStorageFile => Unit, setHeader: (String, String) => Unit, setText: String => Unit): IBackgroundTransferContentPart = {
     val __obj = js.Dynamic.literal(setFile = js.Any.fromFunction1(setFile), setHeader = js.Any.fromFunction2(setHeader), setText = js.Any.fromFunction1(setText))
-  
     __obj.asInstanceOf[IBackgroundTransferContentPart]
   }
 }

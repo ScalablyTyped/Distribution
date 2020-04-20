@@ -28,7 +28,6 @@ object AnonDomain {
     subdomain: String
   ): AnonDomain = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], pathString = pathString.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any], secure = secure.asInstanceOf[js.Any], subdomain = subdomain.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDomain]
   }
 }

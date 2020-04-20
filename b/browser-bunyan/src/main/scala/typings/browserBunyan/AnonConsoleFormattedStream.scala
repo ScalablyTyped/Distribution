@@ -15,7 +15,6 @@ object AnonConsoleFormattedStream {
   @scala.inline
   def apply(ConsoleFormattedStream: ConsoleFormattedStream, ConsoleRawStream: ConsoleRawStream): AnonConsoleFormattedStream = {
     val __obj = js.Dynamic.literal(ConsoleFormattedStream = ConsoleFormattedStream.asInstanceOf[js.Any], ConsoleRawStream = ConsoleRawStream.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonConsoleFormattedStream]
   }
 }

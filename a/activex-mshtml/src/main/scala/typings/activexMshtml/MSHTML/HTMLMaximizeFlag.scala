@@ -16,12 +16,10 @@ trait HTMLMaximizeFlag extends js.Object
 
 object HTMLMaximizeFlag {
   @scala.inline
-  def HTMLMaximizeFlagNo: `0` = this.cast(0)
+  def HTMLMaximizeFlagNo: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def HTMLMaximizeFlagYes: `65536` = this.cast(65536)
+  def HTMLMaximizeFlagYes: `65536` = 65536.asInstanceOf[`65536`]
   @scala.inline
-  def HTMLMaximizeFlag_Max: `2147483647` = this.cast(2147483647)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def HTMLMaximizeFlag_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

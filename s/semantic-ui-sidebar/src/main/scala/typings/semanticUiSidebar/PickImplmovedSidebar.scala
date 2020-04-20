@@ -13,7 +13,6 @@ object PickImplmovedSidebar {
   @scala.inline
   def apply(movedSidebar: String): PickImplmovedSidebar = {
     val __obj = js.Dynamic.literal(movedSidebar = movedSidebar.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplmovedSidebar]
   }
 }

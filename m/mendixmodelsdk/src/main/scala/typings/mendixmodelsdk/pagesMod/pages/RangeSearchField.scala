@@ -26,16 +26,16 @@ class RangeSearchField protected () extends SearchField {
   ) = this()
   @JSName("model")
   var model_FRangeSearchField: IModel = js.native
-  def includeLower(): Boolean = js.native
+  def includeLower: Boolean = js.native
   def includeLower(newValue: Boolean): js.Any = js.native
-  def includeUpper(): Boolean = js.native
+  def includeUpper: Boolean = js.native
   def includeUpper(newValue: Boolean): js.Any = js.native
   /**
     * The value of this property is conceptually of type paths.LegacyAttributePath.
     *
     * In version 7.11.0: deleted
     */
-  def lowerBound(): String = js.native
+  def lowerBound: String = js.native
   def lowerBound(newValue: String): js.Any = js.native
   def lowerBoundRef(): js.Any = js.native
   def lowerBoundRef(newValue: AttributeRef): js.Any = js.native
@@ -43,13 +43,13 @@ class RangeSearchField protected () extends SearchField {
     * In version 7.11.0: introduced
     */
   @JSName("lowerBoundRef")
-  def lowerBoundRef_Union(): AttributeRef | Null = js.native
+  def lowerBoundRef_Union: AttributeRef | Null = js.native
   /**
     * The value of this property is conceptually of type paths.LegacyAttributePath.
     *
     * In version 7.11.0: deleted
     */
-  def upperBound(): String = js.native
+  def upperBound: String = js.native
   def upperBound(newValue: String): js.Any = js.native
   def upperBoundRef(): js.Any = js.native
   def upperBoundRef(newValue: AttributeRef): js.Any = js.native
@@ -57,7 +57,7 @@ class RangeSearchField protected () extends SearchField {
     * In version 7.11.0: introduced
     */
   @JSName("upperBoundRef")
-  def upperBoundRef_Union(): AttributeRef | Null = js.native
+  def upperBoundRef_Union: AttributeRef | Null = js.native
 }
 
 /* static members */

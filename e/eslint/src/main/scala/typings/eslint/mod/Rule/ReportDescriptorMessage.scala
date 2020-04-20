@@ -14,13 +14,11 @@ object ReportDescriptorMessage {
   @scala.inline
   def AnonMessage(message: String): ReportDescriptorMessage = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReportDescriptorMessage]
   }
   @scala.inline
   def AnonMessageId(messageId: String): ReportDescriptorMessage = {
     val __obj = js.Dynamic.literal(messageId = messageId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReportDescriptorMessage]
   }
 }

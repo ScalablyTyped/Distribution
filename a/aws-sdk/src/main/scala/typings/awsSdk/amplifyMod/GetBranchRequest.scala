@@ -20,7 +20,6 @@ object GetBranchRequest {
   @scala.inline
   def apply(appId: AppId, branchName: BranchName): GetBranchRequest = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], branchName = branchName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBranchRequest]
   }
 }

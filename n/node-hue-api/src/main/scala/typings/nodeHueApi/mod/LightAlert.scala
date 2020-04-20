@@ -13,12 +13,10 @@ trait LightAlert extends js.Object
 
 object LightAlert {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def lselect: typings.nodeHueApi.nodeHueApiStrings.lselect = "lselect".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.lselect]
   @scala.inline
-  def lselect: typings.nodeHueApi.nodeHueApiStrings.lselect = this.cast("lselect")
+  def none: typings.nodeHueApi.nodeHueApiStrings.none = "none".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.none]
   @scala.inline
-  def none: typings.nodeHueApi.nodeHueApiStrings.none = this.cast("none")
-  @scala.inline
-  def select: typings.nodeHueApi.nodeHueApiStrings.select = this.cast("select")
+  def select: typings.nodeHueApi.nodeHueApiStrings.select = "select".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.select]
 }
 

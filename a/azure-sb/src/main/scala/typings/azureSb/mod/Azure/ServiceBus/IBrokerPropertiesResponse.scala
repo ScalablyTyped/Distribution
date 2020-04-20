@@ -15,7 +15,6 @@ object IBrokerPropertiesResponse {
   @scala.inline
   def apply(DeliveryCount: Double, LockToken: String, LockedUntil: DateString, SequenceNumber: Double): IBrokerPropertiesResponse = {
     val __obj = js.Dynamic.literal(DeliveryCount = DeliveryCount.asInstanceOf[js.Any], LockToken = LockToken.asInstanceOf[js.Any], LockedUntil = LockedUntil.asInstanceOf[js.Any], SequenceNumber = SequenceNumber.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IBrokerPropertiesResponse]
   }
 }

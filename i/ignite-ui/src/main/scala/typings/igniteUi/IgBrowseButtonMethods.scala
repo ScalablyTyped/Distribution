@@ -17,7 +17,6 @@ object IgBrowseButtonMethods {
   @scala.inline
   def apply(attachFilePicker: (js.Object, js.Object) => Unit, destroy: () => Unit, getFilePicker: () => Unit): IgBrowseButtonMethods = {
     val __obj = js.Dynamic.literal(attachFilePicker = js.Any.fromFunction2(attachFilePicker), destroy = js.Any.fromFunction0(destroy), getFilePicker = js.Any.fromFunction0(getFilePicker))
-  
     __obj.asInstanceOf[IgBrowseButtonMethods]
   }
 }

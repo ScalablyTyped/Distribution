@@ -37,7 +37,6 @@ object SelectOption {
   @scala.inline
   def apply(disabled: Boolean, label: String, selected: Boolean, value: String): SelectOption = {
     val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SelectOption]
   }
 }

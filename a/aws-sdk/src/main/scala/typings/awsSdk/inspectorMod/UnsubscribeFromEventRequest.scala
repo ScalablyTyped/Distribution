@@ -24,7 +24,6 @@ object UnsubscribeFromEventRequest {
   @scala.inline
   def apply(event: InspectorEvent, resourceArn: Arn, topicArn: Arn): UnsubscribeFromEventRequest = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], resourceArn = resourceArn.asInstanceOf[js.Any], topicArn = topicArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnsubscribeFromEventRequest]
   }
 }

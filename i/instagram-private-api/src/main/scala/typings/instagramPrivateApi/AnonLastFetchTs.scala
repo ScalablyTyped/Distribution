@@ -20,7 +20,6 @@ object AnonLastFetchTs {
     lastTotalCount: Double | String
   ): AnonLastFetchTs = {
     val __obj = js.Dynamic.literal(broadcastId = broadcastId.asInstanceOf[js.Any], lastFetchTs = lastFetchTs.asInstanceOf[js.Any], lastSeenTs = lastSeenTs.asInstanceOf[js.Any], lastTotalCount = lastTotalCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLastFetchTs]
   }
 }

@@ -12,7 +12,6 @@ object AnonPrefixCls {
   @scala.inline
   def apply(prefixCls: String): AnonPrefixCls = {
     val __obj = js.Dynamic.literal(prefixCls = prefixCls.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPrefixCls]
   }
 }

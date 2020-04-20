@@ -31,7 +31,6 @@ object QueryResource {
   @scala.inline
   def apply(sql: AnonHdrs => Request_[Sqlresponse], sqlGet: AnonHdrs => Request_[Sqlresponse]): QueryResource = {
     val __obj = js.Dynamic.literal(sql = js.Any.fromFunction1(sql), sqlGet = js.Any.fromFunction1(sqlGet))
-  
     __obj.asInstanceOf[QueryResource]
   }
 }

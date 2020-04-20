@@ -17,12 +17,10 @@ trait FAX_RECEIPT_TYPE_ENUM extends js.Object
 
 object FAX_RECEIPT_TYPE_ENUM {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def frtMAIL: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def frtMAIL: `1` = this.cast(1)
+  def frtMSGBOX: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def frtMSGBOX: `4` = this.cast(4)
-  @scala.inline
-  def frtNONE: `0` = this.cast(0)
+  def frtNONE: `0` = 0.asInstanceOf[`0`]
 }
 

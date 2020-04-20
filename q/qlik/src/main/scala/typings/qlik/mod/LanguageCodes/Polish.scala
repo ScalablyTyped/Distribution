@@ -12,10 +12,8 @@ trait Polish extends _ALL
 
 object Polish {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def pl: typings.qlik.qlikStrings.pl = "pl".asInstanceOf[typings.qlik.qlikStrings.pl]
   @scala.inline
-  def pl: typings.qlik.qlikStrings.pl = this.cast("pl")
-  @scala.inline
-  def `pl-PL`: typings.qlik.qlikStrings.`pl-PL` = this.cast("pl-PL")
+  def `pl-PL`: typings.qlik.qlikStrings.`pl-PL` = "pl-PL".asInstanceOf[typings.qlik.qlikStrings.`pl-PL`]
 }
 

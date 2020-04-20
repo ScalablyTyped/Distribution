@@ -16,7 +16,6 @@ object StartLoggingRequest {
   @scala.inline
   def apply(Name: String): StartLoggingRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StartLoggingRequest]
   }
 }

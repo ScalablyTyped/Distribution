@@ -16,7 +16,6 @@ object DeleteBackupPlanInput {
   @scala.inline
   def apply(BackupPlanId: String): DeleteBackupPlanInput = {
     val __obj = js.Dynamic.literal(BackupPlanId = BackupPlanId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteBackupPlanInput]
   }
 }

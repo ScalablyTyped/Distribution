@@ -21,7 +21,6 @@ object DocumentHighlightProvider {
     provideDocumentHighlights: (ITextModel, Position, CancellationToken) => ProviderResult[js.Array[DocumentHighlight]]
   ): DocumentHighlightProvider = {
     val __obj = js.Dynamic.literal(provideDocumentHighlights = js.Any.fromFunction3(provideDocumentHighlights))
-  
     __obj.asInstanceOf[DocumentHighlightProvider]
   }
 }

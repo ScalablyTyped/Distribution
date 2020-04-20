@@ -1,5 +1,6 @@
 package typings.styledSystem.mod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +15,7 @@ trait VariantArgs[TStyle, K /* <: String */, TPropName] extends js.Object {
   var variants: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in K ]: TStyle}
-    */ typings.styledSystem.styledSystemStrings.VariantArgs with js.Any
+    */ typings.styledSystem.styledSystemStrings.VariantArgs with TopLevel[js.Any]
   ] = js.undefined
 }
 
@@ -26,7 +27,7 @@ object VariantArgs {
     scale: String = null,
     variants: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in K ]: TStyle}
-    */ typings.styledSystem.styledSystemStrings.VariantArgs with js.Any = null
+    */ typings.styledSystem.styledSystemStrings.VariantArgs with TopLevel[js.Any] = null
   ): VariantArgs[TStyle, K, TPropName] = {
     val __obj = js.Dynamic.literal()
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])

@@ -18,7 +18,6 @@ object StartStreamEncryptionOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): StartStreamEncryptionOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StartStreamEncryptionOutput]
   }
 }

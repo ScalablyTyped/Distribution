@@ -60,7 +60,6 @@ object AnonHRK {
     XCD: js.Array[js.UndefOr[String]]
   ): AnonHRK = {
     val __obj = js.Dynamic.literal(AUD = AUD.asInstanceOf[js.Any], BMD = BMD.asInstanceOf[js.Any], BRL = BRL.asInstanceOf[js.Any], BSD = BSD.asInstanceOf[js.Any], BZD = BZD.asInstanceOf[js.Any], CAD = CAD.asInstanceOf[js.Any], DOP = DOP.asInstanceOf[js.Any], EGP = EGP.asInstanceOf[js.Any], GBP = GBP.asInstanceOf[js.Any], HKD = HKD.asInstanceOf[js.Any], HRK = HRK.asInstanceOf[js.Any], ILS = ILS.asInstanceOf[js.Any], INR = INR.asInstanceOf[js.Any], JMD = JMD.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any], KGS = KGS.asInstanceOf[js.Any], KRW = KRW.asInstanceOf[js.Any], MXN = MXN.asInstanceOf[js.Any], NZD = NZD.asInstanceOf[js.Any], THB = THB.asInstanceOf[js.Any], TTD = TTD.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any], XCD = XCD.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHRK]
   }
 }

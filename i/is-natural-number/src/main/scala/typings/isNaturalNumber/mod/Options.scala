@@ -15,7 +15,6 @@ object Options {
   @scala.inline
   def apply(includeZero: Boolean): Options = {
     val __obj = js.Dynamic.literal(includeZero = includeZero.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Options]
   }
 }

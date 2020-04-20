@@ -159,7 +159,7 @@ object pointsCloudSystemMod extends js.Object {
     /**
       * Gets if `setParticles()` computes or not the mesh bounding box when computing the particle positions.
       */
-    def computeBoundingBox(): Boolean = js.native
+    def computeBoundingBox: Boolean = js.native
     /**
       * Tells to `setParticles()` to compute or not the mesh bounding box when computing the particle positions.
       */
@@ -169,7 +169,7 @@ object pointsCloudSystemMod extends js.Object {
       * Default value : false. The PCS is faster when it's set to false.
       * Note : the particle colors are stored values, so setting `computeParticleColor` to false will keep yet the last colors set.
       */
-    def computeParticleColor(): Boolean = js.native
+    def computeParticleColor: Boolean = js.native
     /**
       * Tells to `setParticles()` to compute the particle colors or not.
       * Default value : true. The PCS is faster when it's set to false.
@@ -188,7 +188,7 @@ object pointsCloudSystemMod extends js.Object {
       * Default value : false. The PCS is faster when it's set to false.
       * Note : the particle textures are stored values, so setting `computeParticleTexture` to false will keep yet the last colors set.
       */
-    def computeParticleTexture(): Boolean = js.native
+    def computeParticleTexture: Boolean = js.native
     def computeParticleTexture(`val`: Boolean): js.Any = js.native
     /**
       * Releases all held resources
@@ -205,7 +205,7 @@ object pointsCloudSystemMod extends js.Object {
       * Gets whether the PCS is always visible or not
       * doc :
       */
-    def isAlwaysVisible(): Boolean = js.native
+    def isAlwaysVisible: Boolean = js.native
     /**
       * Sets the PCS as always visible or not
       * doc :

@@ -12,7 +12,6 @@ object GithubBranch {
   @scala.inline
   def apply(name: String): GithubBranch = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GithubBranch]
   }
 }

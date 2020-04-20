@@ -40,7 +40,6 @@ object Typeofstorage {
     sync: StorageArea
   ): Typeofstorage = {
     val __obj = js.Dynamic.literal(local = local.asInstanceOf[js.Any], managed = managed.asInstanceOf[js.Any], onChanged = onChanged.asInstanceOf[js.Any], sync = sync.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Typeofstorage]
   }
 }

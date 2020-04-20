@@ -26,22 +26,20 @@ trait MFExportContentFlag extends js.Object
 
 object MFExportContentFlag {
   @scala.inline
-  def ClearArchivalMarker: `8` = this.cast(8)
+  def ClearArchivalMarker: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def DestroyAfterExport: `4` = this.cast(4)
+  def DestroyAfterExport: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def ExportInformationOnDestroyedData: `64` = this.cast(64)
+  def ExportInformationOnDestroyedData: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def IndicateDropouts: `1024` = this.cast(1024)
+  def IndicateDropouts: `1024` = 1024.asInstanceOf[`1024`]
   @scala.inline
-  def LatestVersionsOnly: `2` = this.cast(2)
+  def LatestVersionsOnly: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def None: `0` = this.cast(0)
+  def None: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def SaveFilesAlsoAsPDFA: `32` = this.cast(32)
+  def SaveFilesAlsoAsPDFA: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def UseMultipleContentPackages: `128` = this.cast(128)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UseMultipleContentPackages: `128` = 128.asInstanceOf[`128`]
 }
 

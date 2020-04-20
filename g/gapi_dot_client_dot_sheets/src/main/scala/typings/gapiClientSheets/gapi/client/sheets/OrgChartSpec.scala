@@ -12,6 +12,11 @@ trait OrgChartSpec extends js.Object {
   var labels: js.UndefOr[ChartData] = js.undefined
   /** The color of the org chart nodes. */
   var nodeColor: js.UndefOr[Color] = js.undefined
+  /**
+    * The color of the org chart nodes.
+    * If node_color is also set, this field takes precedence.
+    */
+  var nodeColorStyle: js.UndefOr[ColorStyle] = js.undefined
   /** The size of the org chart nodes. */
   var nodeSize: js.UndefOr[String] = js.undefined
   /**
@@ -23,6 +28,11 @@ trait OrgChartSpec extends js.Object {
   var parentLabels: js.UndefOr[ChartData] = js.undefined
   /** The color of the selected org chart nodes. */
   var selectedNodeColor: js.UndefOr[Color] = js.undefined
+  /**
+    * The color of the selected org chart nodes.
+    * If selected_node_color is also set, this field takes precedence.
+    */
+  var selectedNodeColorStyle: js.UndefOr[ColorStyle] = js.undefined
   /**
     * The data containing the tooltip for the corresponding node.  A blank value
     * results in no tooltip being displayed for the node.
@@ -36,17 +46,21 @@ object OrgChartSpec {
   def apply(
     labels: ChartData = null,
     nodeColor: Color = null,
+    nodeColorStyle: ColorStyle = null,
     nodeSize: String = null,
     parentLabels: ChartData = null,
     selectedNodeColor: Color = null,
+    selectedNodeColorStyle: ColorStyle = null,
     tooltips: ChartData = null
   ): OrgChartSpec = {
     val __obj = js.Dynamic.literal()
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (nodeColor != null) __obj.updateDynamic("nodeColor")(nodeColor.asInstanceOf[js.Any])
+    if (nodeColorStyle != null) __obj.updateDynamic("nodeColorStyle")(nodeColorStyle.asInstanceOf[js.Any])
     if (nodeSize != null) __obj.updateDynamic("nodeSize")(nodeSize.asInstanceOf[js.Any])
     if (parentLabels != null) __obj.updateDynamic("parentLabels")(parentLabels.asInstanceOf[js.Any])
     if (selectedNodeColor != null) __obj.updateDynamic("selectedNodeColor")(selectedNodeColor.asInstanceOf[js.Any])
+    if (selectedNodeColorStyle != null) __obj.updateDynamic("selectedNodeColorStyle")(selectedNodeColorStyle.asInstanceOf[js.Any])
     if (tooltips != null) __obj.updateDynamic("tooltips")(tooltips.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrgChartSpec]
   }

@@ -14,7 +14,6 @@ object PickImplrandom {
   @scala.inline
   def apply(random: RandomSettings): PickImplrandom = {
     val __obj = js.Dynamic.literal(random = random.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplrandom]
   }
 }

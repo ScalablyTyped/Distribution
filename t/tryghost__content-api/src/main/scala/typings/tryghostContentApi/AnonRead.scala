@@ -1,7 +1,7 @@
 package typings.tryghostContentApi
 
 import typings.tryghostContentApi.mod.Author
-import typings.tryghostContentApi.mod.AuthorsObject
+import typings.tryghostContentApi.mod.Authors
 import typings.tryghostContentApi.mod.BrowseFunction
 import typings.tryghostContentApi.mod.Nullable
 import typings.tryghostContentApi.mod.Params
@@ -13,12 +13,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AnonRead extends js.Object {
   @JSName("browse")
-  var browse_Original: BrowseFunction[AuthorsObject] = js.native
+  var browse_Original: BrowseFunction[Authors] = js.native
   @JSName("read")
   var read_Original: ReadFunction[Author] = js.native
-  def browse(): js.Promise[AuthorsObject] = js.native
-  def browse(options: Params): js.Promise[AuthorsObject] = js.native
-  def browse(options: Params, memberToken: Nullable[String]): js.Promise[AuthorsObject] = js.native
+  def browse(): js.Promise[Authors] = js.native
+  def browse(options: Params): js.Promise[Authors] = js.native
+  def browse(options: Params, memberToken: Nullable[String]): js.Promise[Authors] = js.native
   def read(data: AnonId): js.Promise[Author] = js.native
   def read(data: AnonId, options: Params): js.Promise[Author] = js.native
   def read(data: AnonId, options: Params, memberToken: Nullable[String]): js.Promise[Author] = js.native

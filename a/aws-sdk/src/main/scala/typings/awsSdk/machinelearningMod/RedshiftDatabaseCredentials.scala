@@ -14,7 +14,6 @@ object RedshiftDatabaseCredentials {
   @scala.inline
   def apply(Password: RedshiftDatabasePassword, Username: RedshiftDatabaseUsername): RedshiftDatabaseCredentials = {
     val __obj = js.Dynamic.literal(Password = Password.asInstanceOf[js.Any], Username = Username.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RedshiftDatabaseCredentials]
   }
 }

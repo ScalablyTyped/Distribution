@@ -19,7 +19,6 @@ object IEmailComposerService {
     open: IEmailComposerOptions => IPromise[_]
   ): IEmailComposerService = {
     val __obj = js.Dynamic.literal(addAlias = js.Any.fromFunction2(addAlias), isAvailable = js.Any.fromFunction0(isAvailable), open = js.Any.fromFunction1(open))
-  
     __obj.asInstanceOf[IEmailComposerService]
   }
 }

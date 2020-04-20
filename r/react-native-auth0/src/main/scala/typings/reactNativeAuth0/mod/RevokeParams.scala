@@ -12,7 +12,6 @@ object RevokeParams {
   @scala.inline
   def apply(refreshToken: String): RevokeParams = {
     val __obj = js.Dynamic.literal(refreshToken = refreshToken.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RevokeParams]
   }
 }

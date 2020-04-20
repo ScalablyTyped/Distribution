@@ -14,7 +14,6 @@ object GetJobQueueComputeEnvironmentOrder {
   @scala.inline
   def apply(computeEnvironment: String, order: Double): GetJobQueueComputeEnvironmentOrder = {
     val __obj = js.Dynamic.literal(computeEnvironment = computeEnvironment.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetJobQueueComputeEnvironmentOrder]
   }
 }

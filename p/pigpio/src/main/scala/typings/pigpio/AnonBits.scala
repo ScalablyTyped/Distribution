@@ -16,7 +16,6 @@ object AnonBits {
   @scala.inline
   def apply(bits: Double): AnonBits = {
     val __obj = js.Dynamic.literal(bits = bits.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBits]
   }
 }

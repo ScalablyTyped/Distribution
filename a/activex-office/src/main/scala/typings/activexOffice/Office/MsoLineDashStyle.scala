@@ -36,32 +36,30 @@ trait MsoLineDashStyle extends js.Object
 
 object MsoLineDashStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoLineDash: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoLineDash: `4` = this.cast(4)
+  def msoLineDashDot: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def msoLineDashDot: `5` = this.cast(5)
+  def msoLineDashDotDot: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def msoLineDashDotDot: `6` = this.cast(6)
+  def msoLineDashStyleMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def msoLineDashStyleMixed: `-2` = this.cast(-2)
+  def msoLineLongDash: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def msoLineLongDash: `7` = this.cast(7)
+  def msoLineLongDashDot: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def msoLineLongDashDot: `8` = this.cast(8)
+  def msoLineLongDashDotDot: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def msoLineLongDashDotDot: `9` = this.cast(9)
+  def msoLineRoundDot: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoLineRoundDot: `3` = this.cast(3)
+  def msoLineSolid: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoLineSolid: `1` = this.cast(1)
+  def msoLineSquareDot: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoLineSquareDot: `2` = this.cast(2)
+  def msoLineSysDash: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def msoLineSysDash: `10` = this.cast(10)
+  def msoLineSysDashDot: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def msoLineSysDashDot: `12` = this.cast(12)
-  @scala.inline
-  def msoLineSysDot: `11` = this.cast(11)
+  def msoLineSysDot: `11` = 11.asInstanceOf[`11`]
 }
 

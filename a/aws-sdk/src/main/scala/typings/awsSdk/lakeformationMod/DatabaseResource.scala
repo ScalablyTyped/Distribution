@@ -16,7 +16,6 @@ object DatabaseResource {
   @scala.inline
   def apply(Name: NameString): DatabaseResource = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DatabaseResource]
   }
 }

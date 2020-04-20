@@ -13,7 +13,6 @@ object AnonClosedByInboxSDK {
   @scala.inline
   def apply(closedByInboxSDK: Boolean, messageID: String): AnonClosedByInboxSDK = {
     val __obj = js.Dynamic.literal(closedByInboxSDK = closedByInboxSDK.asInstanceOf[js.Any], messageID = messageID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonClosedByInboxSDK]
   }
 }

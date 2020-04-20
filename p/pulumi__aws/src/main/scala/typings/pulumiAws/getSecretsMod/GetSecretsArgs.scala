@@ -17,7 +17,6 @@ object GetSecretsArgs {
   @scala.inline
   def apply(secrets: js.Array[GetSecretsSecret]): GetSecretsArgs = {
     val __obj = js.Dynamic.literal(secrets = secrets.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetSecretsArgs]
   }
 }

@@ -13,7 +13,6 @@ object WaitingContextWaitProps {
   @scala.inline
   def apply(fallback: Element): WaitingContextWaitProps = {
     val __obj = js.Dynamic.literal(fallback = fallback.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WaitingContextWaitProps]
   }
 }

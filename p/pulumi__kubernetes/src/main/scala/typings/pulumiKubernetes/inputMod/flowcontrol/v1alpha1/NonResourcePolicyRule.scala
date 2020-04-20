@@ -34,7 +34,6 @@ object NonResourcePolicyRule {
   @scala.inline
   def apply(nonResourceURLs: Input[js.Array[Input[String]]], verbs: Input[js.Array[Input[String]]]): NonResourcePolicyRule = {
     val __obj = js.Dynamic.literal(nonResourceURLs = nonResourceURLs.asInstanceOf[js.Any], verbs = verbs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NonResourcePolicyRule]
   }
 }

@@ -15,7 +15,6 @@ object AnonChromeresources {
   @scala.inline
   def apply(chrome_resources: StringDictionary[ExtensionURL | StringDictionary[ExtensionURL]], version: String): AnonChromeresources = {
     val __obj = js.Dynamic.literal(chrome_resources = chrome_resources.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonChromeresources]
   }
 }

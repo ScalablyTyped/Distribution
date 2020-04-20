@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactMotionUiPackProps {
   @scala.inline
-  def ReactMotionUiPackProps: TransitionProps.type = typings.reactMotionUiPack.mod.Transition.TransitionProps
+  def ReactMotionUiPackProps: TransitionProps.type = TransitionProps
   type ReactMotionUiPackProps = TransitionProps
 }
 

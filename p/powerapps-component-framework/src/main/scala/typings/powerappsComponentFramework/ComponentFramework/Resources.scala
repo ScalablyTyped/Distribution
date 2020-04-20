@@ -29,7 +29,6 @@ object Resources {
     getString: String => String
   ): Resources = {
     val __obj = js.Dynamic.literal(getResource = js.Any.fromFunction3(getResource), getString = js.Any.fromFunction1(getString))
-  
     __obj.asInstanceOf[Resources]
   }
 }

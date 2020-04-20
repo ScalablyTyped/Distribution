@@ -20,7 +20,6 @@ object ComponentDidLoad {
   @scala.inline
   def apply(componentDidLoad: () => Unit): ComponentDidLoad = {
     val __obj = js.Dynamic.literal(componentDidLoad = js.Any.fromFunction0(componentDidLoad))
-  
     __obj.asInstanceOf[ComponentDidLoad]
   }
 }

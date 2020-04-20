@@ -40,7 +40,6 @@ object AnonClassNameBottomLeftGrid {
     styleTopRightGrid: Validator[CSSProperties]
   ): AnonClassNameBottomLeftGrid = {
     val __obj = js.Dynamic.literal(classNameBottomLeftGrid = classNameBottomLeftGrid.asInstanceOf[js.Any], classNameBottomRightGrid = classNameBottomRightGrid.asInstanceOf[js.Any], classNameTopLeftGrid = classNameTopLeftGrid.asInstanceOf[js.Any], classNameTopRightGrid = classNameTopRightGrid.asInstanceOf[js.Any], enableFixedColumnScroll = enableFixedColumnScroll.asInstanceOf[js.Any], enableFixedRowScroll = enableFixedRowScroll.asInstanceOf[js.Any], fixedColumnCount = fixedColumnCount.asInstanceOf[js.Any], fixedRowCount = fixedRowCount.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], styleBottomLeftGrid = styleBottomLeftGrid.asInstanceOf[js.Any], styleBottomRightGrid = styleBottomRightGrid.asInstanceOf[js.Any], styleTopLeftGrid = styleTopLeftGrid.asInstanceOf[js.Any], styleTopRightGrid = styleTopRightGrid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonClassNameBottomLeftGrid]
   }
 }

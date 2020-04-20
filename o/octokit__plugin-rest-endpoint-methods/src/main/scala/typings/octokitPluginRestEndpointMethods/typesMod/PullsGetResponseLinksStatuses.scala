@@ -12,7 +12,6 @@ object PullsGetResponseLinksStatuses {
   @scala.inline
   def apply(href: String): PullsGetResponseLinksStatuses = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PullsGetResponseLinksStatuses]
   }
 }

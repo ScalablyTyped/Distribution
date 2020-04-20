@@ -14,12 +14,10 @@ trait ExternalAudienceScope extends js.Object
 
 object ExternalAudienceScope {
   @scala.inline
-  def all: typings.microsoftGraph.microsoftGraphStrings.all = this.cast("all")
+  def all: typings.microsoftGraph.microsoftGraphStrings.all = "all".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.all]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def contactsOnly: typings.microsoftGraph.microsoftGraphStrings.contactsOnly = "contactsOnly".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.contactsOnly]
   @scala.inline
-  def contactsOnly: typings.microsoftGraph.microsoftGraphStrings.contactsOnly = this.cast("contactsOnly")
-  @scala.inline
-  def none: none_ = this.cast("none")
+  def none: none_ = "none".asInstanceOf[none_]
 }
 

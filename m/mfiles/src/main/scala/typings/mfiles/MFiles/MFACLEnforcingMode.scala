@@ -18,14 +18,12 @@ trait MFACLEnforcingMode extends js.Object
 
 object MFACLEnforcingMode {
   @scala.inline
-  def Automatic: `0` = this.cast(0)
+  def Automatic: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def None: `3` = this.cast(3)
+  def None: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def Provided: `1` = this.cast(1)
+  def Provided: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def ResetToDefault: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ResetToDefault: `2` = 2.asInstanceOf[`2`]
 }
 

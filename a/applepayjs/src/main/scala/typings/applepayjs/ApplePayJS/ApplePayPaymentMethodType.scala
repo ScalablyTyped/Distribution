@@ -17,14 +17,12 @@ trait ApplePayPaymentMethodType extends js.Object
 
 object ApplePayPaymentMethodType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def credit: typings.applepayjs.applepayjsStrings.credit = "credit".asInstanceOf[typings.applepayjs.applepayjsStrings.credit]
   @scala.inline
-  def credit: typings.applepayjs.applepayjsStrings.credit = this.cast("credit")
+  def debit: typings.applepayjs.applepayjsStrings.debit = "debit".asInstanceOf[typings.applepayjs.applepayjsStrings.debit]
   @scala.inline
-  def debit: typings.applepayjs.applepayjsStrings.debit = this.cast("debit")
+  def prepaid: typings.applepayjs.applepayjsStrings.prepaid = "prepaid".asInstanceOf[typings.applepayjs.applepayjsStrings.prepaid]
   @scala.inline
-  def prepaid: typings.applepayjs.applepayjsStrings.prepaid = this.cast("prepaid")
-  @scala.inline
-  def store: typings.applepayjs.applepayjsStrings.store = this.cast("store")
+  def store: typings.applepayjs.applepayjsStrings.store = "store".asInstanceOf[typings.applepayjs.applepayjsStrings.store]
 }
 

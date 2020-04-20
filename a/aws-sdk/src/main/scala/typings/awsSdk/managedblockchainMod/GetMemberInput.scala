@@ -20,7 +20,6 @@ object GetMemberInput {
   @scala.inline
   def apply(MemberId: ResourceIdString, NetworkId: ResourceIdString): GetMemberInput = {
     val __obj = js.Dynamic.literal(MemberId = MemberId.asInstanceOf[js.Any], NetworkId = NetworkId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetMemberInput]
   }
 }

@@ -12,7 +12,6 @@ object BaseOperation {
   @scala.inline
   def apply(objects: () => js.Array[_]): BaseOperation = {
     val __obj = js.Dynamic.literal(objects = js.Any.fromFunction0(objects))
-  
     __obj.asInstanceOf[BaseOperation]
   }
 }

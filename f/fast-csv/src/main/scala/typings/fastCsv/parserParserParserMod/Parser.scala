@@ -24,7 +24,6 @@ object Parser {
     rowParser: js.Any
   ): Parser = {
     val __obj = js.Dynamic.literal(parse = js.Any.fromFunction2(parse), parseRow = parseRow.asInstanceOf[js.Any], parseWithComments = parseWithComments.asInstanceOf[js.Any], parseWithoutComments = parseWithoutComments.asInstanceOf[js.Any], parserOptions = parserOptions.asInstanceOf[js.Any], rowParser = rowParser.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Parser]
   }
 }

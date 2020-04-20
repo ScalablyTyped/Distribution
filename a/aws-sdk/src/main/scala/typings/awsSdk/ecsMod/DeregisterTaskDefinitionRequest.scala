@@ -16,7 +16,6 @@ object DeregisterTaskDefinitionRequest {
   @scala.inline
   def apply(taskDefinition: String): DeregisterTaskDefinitionRequest = {
     val __obj = js.Dynamic.literal(taskDefinition = taskDefinition.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeregisterTaskDefinitionRequest]
   }
 }

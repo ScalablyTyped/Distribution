@@ -43,7 +43,6 @@ object ITag {
   @scala.inline
   def apply(created_time: String, id: String, user: IUserInfo, x: Double, y: Double): ITag = {
     val __obj = js.Dynamic.literal(created_time = created_time.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ITag]
   }
 }

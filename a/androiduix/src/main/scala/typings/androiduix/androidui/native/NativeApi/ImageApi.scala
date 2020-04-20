@@ -20,7 +20,6 @@ object ImageApi {
     recycleImage: Double => Unit
   ): ImageApi = {
     val __obj = js.Dynamic.literal(createImage = js.Any.fromFunction1(createImage), getPixels = js.Any.fromFunction6(getPixels), loadImage = js.Any.fromFunction2(loadImage), recycleImage = js.Any.fromFunction1(recycleImage))
-  
     __obj.asInstanceOf[ImageApi]
   }
 }

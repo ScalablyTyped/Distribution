@@ -21,7 +21,6 @@ object AnonOnRenderCell {
     startIndex: Double
   ): AnonOnRenderCell = {
     val __obj = js.Dynamic.literal(onRenderCell = js.Any.fromFunction3(onRenderCell), renderedWindowsAhead = renderedWindowsAhead.asInstanceOf[js.Any], renderedWindowsBehind = renderedWindowsBehind.asInstanceOf[js.Any], startIndex = startIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOnRenderCell]
   }
 }

@@ -14,7 +14,6 @@ object PickTextTypeKnobvalue {
   @scala.inline
   def apply(value: TextTypeKnobValue): PickTextTypeKnobvalue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickTextTypeKnobvalue]
   }
 }

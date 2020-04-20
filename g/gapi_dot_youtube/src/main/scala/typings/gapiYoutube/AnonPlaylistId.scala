@@ -23,7 +23,6 @@ object AnonPlaylistId {
   @scala.inline
   def apply(playlistId: String, playlistItemId: String, resourceId: AnonKind): AnonPlaylistId = {
     val __obj = js.Dynamic.literal(playlistId = playlistId.asInstanceOf[js.Any], playlistItemId = playlistItemId.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPlaylistId]
   }
 }

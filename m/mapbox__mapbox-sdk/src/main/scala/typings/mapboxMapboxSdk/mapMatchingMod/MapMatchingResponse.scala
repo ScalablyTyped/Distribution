@@ -25,7 +25,6 @@ object MapMatchingResponse {
   @scala.inline
   def apply(code: String, matchings: js.Array[Matching], tracepoints: js.Array[Tracepoint]): MapMatchingResponse = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], matchings = matchings.asInstanceOf[js.Any], tracepoints = tracepoints.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MapMatchingResponse]
   }
 }

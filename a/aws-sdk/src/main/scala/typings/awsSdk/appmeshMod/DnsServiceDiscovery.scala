@@ -16,7 +16,6 @@ object DnsServiceDiscovery {
   @scala.inline
   def apply(hostname: Hostname): DnsServiceDiscovery = {
     val __obj = js.Dynamic.literal(hostname = hostname.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DnsServiceDiscovery]
   }
 }

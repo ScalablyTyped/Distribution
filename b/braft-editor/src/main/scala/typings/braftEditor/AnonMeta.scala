@@ -13,7 +13,6 @@ object AnonMeta {
   @scala.inline
   def apply(meta: AnonAlt, url: String): AnonMeta = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMeta]
   }
 }

@@ -21,7 +21,7 @@ trait IContainer_[T /* <: PElem */, SourceT /* <: IContainer[T, SourceT, Iterato
   /**
     * @inheritDoc
     */
-  @JSName(scala.scalajs.js.Symbol.iterator)
+  @JSName(js.Symbol.iterator)
   var iterator_IContainer_ : js.Function0[IterableIterator[T]] = js.native
   /**
     * Range Assigner.

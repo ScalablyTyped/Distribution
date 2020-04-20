@@ -15,7 +15,6 @@ object ASTNode {
   @scala.inline
   def apply(children: js.Array[ASTNode], name: String, semantic: String, tokens: String): ASTNode = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], semantic = semantic.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ASTNode]
   }
 }

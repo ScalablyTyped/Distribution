@@ -21,7 +21,6 @@ object ModulesInHierachicDirectoriesPlugin {
     target: String
   ): ModulesInHierachicDirectoriesPlugin = {
     val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), directories = directories.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ModulesInHierachicDirectoriesPlugin]
   }
 }

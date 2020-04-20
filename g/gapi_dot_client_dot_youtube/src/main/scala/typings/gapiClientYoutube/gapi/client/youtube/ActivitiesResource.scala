@@ -27,7 +27,6 @@ object ActivitiesResource {
   @scala.inline
   def apply(insert: AnonAlt => Request_[Activity], list: AnonChannelId => Request_[ActivityListResponse]): ActivitiesResource = {
     val __obj = js.Dynamic.literal(insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[ActivitiesResource]
   }
 }

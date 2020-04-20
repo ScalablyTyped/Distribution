@@ -16,7 +16,6 @@ object ModulesInRootPlugin {
   @scala.inline
   def apply(apply: typings.enhancedResolve.resolverMod.^ => Unit, path: String, source: String, target: String): ModulesInRootPlugin = {
     val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), path = path.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ModulesInRootPlugin]
   }
 }

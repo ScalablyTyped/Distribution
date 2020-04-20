@@ -12,10 +12,8 @@ trait QueryEngineType extends js.Object
 
 object QueryEngineType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def equery: typings.grasp.graspStrings.equery = "equery".asInstanceOf[typings.grasp.graspStrings.equery]
   @scala.inline
-  def equery: typings.grasp.graspStrings.equery = this.cast("equery")
-  @scala.inline
-  def squery: typings.grasp.graspStrings.squery = this.cast("squery")
+  def squery: typings.grasp.graspStrings.squery = "squery".asInstanceOf[typings.grasp.graspStrings.squery]
 }
 

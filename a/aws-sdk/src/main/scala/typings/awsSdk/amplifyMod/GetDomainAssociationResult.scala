@@ -16,7 +16,6 @@ object GetDomainAssociationResult {
   @scala.inline
   def apply(domainAssociation: DomainAssociation): GetDomainAssociationResult = {
     val __obj = js.Dynamic.literal(domainAssociation = domainAssociation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDomainAssociationResult]
   }
 }

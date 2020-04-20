@@ -81,7 +81,7 @@ object mgrsMod extends js.Object {
     def fromLocale(str: String): String = js.native
     def parse(dms: String): Double = js.native
     def parse(dms: Double): Double = js.native
-    def separator(): String = js.native
+    def separator: String = js.native
     def separator(char: String): js.Any = js.native
     def toBrng(deg: Double): String = js.native
     def toBrng(deg: Double, format: Format): String = js.native

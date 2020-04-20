@@ -10,7 +10,7 @@ object forEachObjIndexedMod extends js.Object {
   def default[T](
     fn: js.Function3[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      /* key */ String, 
+      /* keyof T */ /* key */ String, 
       /* obj */ T, 
       Unit
     ]
@@ -18,7 +18,7 @@ object forEachObjIndexedMod extends js.Object {
   def default[T](
     fn: js.Function3[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      /* key */ String, 
+      /* keyof T */ /* key */ String, 
       /* obj */ T, 
       Unit
     ],

@@ -15,7 +15,6 @@ object DataStudioApp {
   @scala.inline
   def apply(createCommunityConnector: () => CommunityConnector): DataStudioApp = {
     val __obj = js.Dynamic.literal(createCommunityConnector = js.Any.fromFunction0(createCommunityConnector))
-  
     __obj.asInstanceOf[DataStudioApp]
   }
 }

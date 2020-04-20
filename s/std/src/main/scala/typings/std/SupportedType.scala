@@ -15,16 +15,14 @@ trait SupportedType extends js.Object
 
 object SupportedType {
   @scala.inline
-  def applicationSlashxhtmlPlussignxml: typings.std.stdStrings.applicationSlashxhtmlPlussignxml = this.cast("application/xhtml+xml")
+  def applicationSlashxhtmlPlussignxml: typings.std.stdStrings.applicationSlashxhtmlPlussignxml = "application/xhtml+xml".asInstanceOf[typings.std.stdStrings.applicationSlashxhtmlPlussignxml]
   @scala.inline
-  def applicationSlashxml: typings.std.stdStrings.applicationSlashxml = this.cast("application/xml")
+  def applicationSlashxml: typings.std.stdStrings.applicationSlashxml = "application/xml".asInstanceOf[typings.std.stdStrings.applicationSlashxml]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def imageSlashsvgPlussignxml: typings.std.stdStrings.imageSlashsvgPlussignxml = "image/svg+xml".asInstanceOf[typings.std.stdStrings.imageSlashsvgPlussignxml]
   @scala.inline
-  def imageSlashsvgPlussignxml: typings.std.stdStrings.imageSlashsvgPlussignxml = this.cast("image/svg+xml")
+  def textSlashhtml: typings.std.stdStrings.textSlashhtml = "text/html".asInstanceOf[typings.std.stdStrings.textSlashhtml]
   @scala.inline
-  def textSlashhtml: typings.std.stdStrings.textSlashhtml = this.cast("text/html")
-  @scala.inline
-  def textSlashxml: typings.std.stdStrings.textSlashxml = this.cast("text/xml")
+  def textSlashxml: typings.std.stdStrings.textSlashxml = "text/xml".asInstanceOf[typings.std.stdStrings.textSlashxml]
 }
 

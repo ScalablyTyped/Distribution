@@ -14,14 +14,12 @@ trait ErrorTextStatus extends js.Object
 
 object ErrorTextStatus {
   @scala.inline
-  def abort: typings.jquery.jqueryStrings.abort = this.cast("abort")
+  def abort: typings.jquery.jqueryStrings.abort = "abort".asInstanceOf[typings.jquery.jqueryStrings.abort]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def error: typings.jquery.jqueryStrings.error = "error".asInstanceOf[typings.jquery.jqueryStrings.error]
   @scala.inline
-  def error: typings.jquery.jqueryStrings.error = this.cast("error")
+  def parsererror: typings.jquery.jqueryStrings.parsererror = "parsererror".asInstanceOf[typings.jquery.jqueryStrings.parsererror]
   @scala.inline
-  def parsererror: typings.jquery.jqueryStrings.parsererror = this.cast("parsererror")
-  @scala.inline
-  def timeout: typings.jquery.jqueryStrings.timeout = this.cast("timeout")
+  def timeout: typings.jquery.jqueryStrings.timeout = "timeout".asInstanceOf[typings.jquery.jqueryStrings.timeout]
 }
 

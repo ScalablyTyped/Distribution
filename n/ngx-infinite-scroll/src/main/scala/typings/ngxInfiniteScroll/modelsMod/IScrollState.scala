@@ -20,7 +20,6 @@ object IScrollState {
     triggered: IScrollerDistance
   ): IScrollState = {
     val __obj = js.Dynamic.literal(lastScrollPosition = lastScrollPosition.asInstanceOf[js.Any], lastTotalToScroll = lastTotalToScroll.asInstanceOf[js.Any], totalToScroll = totalToScroll.asInstanceOf[js.Any], triggered = triggered.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IScrollState]
   }
 }

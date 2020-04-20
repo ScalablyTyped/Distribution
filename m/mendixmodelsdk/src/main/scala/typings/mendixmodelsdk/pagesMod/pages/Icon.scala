@@ -29,11 +29,11 @@ abstract class Icon protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FIcon: IModel = js.native
-  def containerAsBottomBarItem(): BottomBarItem = js.native
-  def containerAsButton(): Button = js.native
-  def containerAsControlBarButton(): ControlBarButton = js.native
-  def containerAsMenuItem(): MenuItem = js.native
-  def containerAsWidgetValue(): WidgetValue = js.native
+  def containerAsBottomBarItem: BottomBarItem = js.native
+  def containerAsButton: Button = js.native
+  def containerAsControlBarButton: ControlBarButton = js.native
+  def containerAsMenuItem: MenuItem = js.native
+  def containerAsWidgetValue: WidgetValue = js.native
 }
 
 /* static members */

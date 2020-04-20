@@ -26,22 +26,22 @@ class TableRow protected () extends Element {
   /**
     * In version 8.0.0: introduced
     */
-  def appearance(): Appearance = js.native
+  def appearance: Appearance = js.native
   def appearance(newValue: Appearance): js.Any = js.native
   /**
     * In version 8.0.0: deleted
     */
-  def `class`(): String = js.native
+  def `class`: String = js.native
   def `class`(newValue: String): js.Any = js.native
   def conditionalVisibilitySettings(): js.Any = js.native
   def conditionalVisibilitySettings(newValue: ConditionalVisibilitySettings): js.Any = js.native
   @JSName("conditionalVisibilitySettings")
-  def conditionalVisibilitySettings_Union(): ConditionalVisibilitySettings | Null = js.native
-  def containerAsTable(): Table = js.native
+  def conditionalVisibilitySettings_Union: ConditionalVisibilitySettings | Null = js.native
+  def containerAsTable: Table = js.native
   /**
     * In version 8.0.0: deleted
     */
-  def style(): String = js.native
+  def style: String = js.native
   def style(newValue: String): js.Any = js.native
 }
 

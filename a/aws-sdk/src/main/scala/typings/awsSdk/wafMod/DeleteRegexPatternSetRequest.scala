@@ -20,7 +20,6 @@ object DeleteRegexPatternSetRequest {
   @scala.inline
   def apply(ChangeToken: ChangeToken, RegexPatternSetId: ResourceId): DeleteRegexPatternSetRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken.asInstanceOf[js.Any], RegexPatternSetId = RegexPatternSetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteRegexPatternSetRequest]
   }
 }

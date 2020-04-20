@@ -17,7 +17,6 @@ object AnonCodomain {
   @scala.inline
   def apply[T](codomain: T, domain: Constructor[String], identity: Boolean, kind: String, name: String): AnonCodomain[T] = {
     val __obj = js.Dynamic.literal(codomain = codomain.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCodomain[T]]
   }
 }

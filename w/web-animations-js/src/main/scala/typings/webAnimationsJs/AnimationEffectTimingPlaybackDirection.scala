@@ -14,14 +14,12 @@ trait AnimationEffectTimingPlaybackDirection extends js.Object
 
 object AnimationEffectTimingPlaybackDirection {
   @scala.inline
-  def alternate: typings.webAnimationsJs.webAnimationsJsStrings.alternate = this.cast("alternate")
+  def alternate: typings.webAnimationsJs.webAnimationsJsStrings.alternate = "alternate".asInstanceOf[typings.webAnimationsJs.webAnimationsJsStrings.alternate]
   @scala.inline
-  def `alternate-reverse`: typings.webAnimationsJs.webAnimationsJsStrings.`alternate-reverse` = this.cast("alternate-reverse")
+  def `alternate-reverse`: typings.webAnimationsJs.webAnimationsJsStrings.`alternate-reverse` = "alternate-reverse".asInstanceOf[typings.webAnimationsJs.webAnimationsJsStrings.`alternate-reverse`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def normal: typings.webAnimationsJs.webAnimationsJsStrings.normal = "normal".asInstanceOf[typings.webAnimationsJs.webAnimationsJsStrings.normal]
   @scala.inline
-  def normal: typings.webAnimationsJs.webAnimationsJsStrings.normal = this.cast("normal")
-  @scala.inline
-  def reverse: typings.webAnimationsJs.webAnimationsJsStrings.reverse = this.cast("reverse")
+  def reverse: typings.webAnimationsJs.webAnimationsJsStrings.reverse = "reverse".asInstanceOf[typings.webAnimationsJs.webAnimationsJsStrings.reverse]
 }
 

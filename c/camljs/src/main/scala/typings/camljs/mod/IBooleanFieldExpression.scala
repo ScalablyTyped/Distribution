@@ -30,7 +30,6 @@ object IBooleanFieldExpression {
     NotEqualTo: Boolean => IExpression
   ): IBooleanFieldExpression = {
     val __obj = js.Dynamic.literal(EqualTo = js.Any.fromFunction1(EqualTo), IsFalse = js.Any.fromFunction0(IsFalse), IsNotNull = js.Any.fromFunction0(IsNotNull), IsNull = js.Any.fromFunction0(IsNull), IsTrue = js.Any.fromFunction0(IsTrue), NotEqualTo = js.Any.fromFunction1(NotEqualTo))
-  
     __obj.asInstanceOf[IBooleanFieldExpression]
   }
 }

@@ -47,7 +47,7 @@ package object utilsMod {
   type DeepFreeze_ = js.Function1[/* obj */ js.Object, typings.grommet.utilsMod.DeepReadonly[js.Object]]
   type DeepReadonly[T /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ K in keyof T ]: T[K] extends object? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias grommet.grommet/utils.DeepReadonly<T[K]> * / object : T[K]}
-    */ typings.grommet.grommetStrings.DeepReadonly with js.Any
+    */ typings.grommet.grommetStrings.DeepReadonly with org.scalablytyped.runtime.TopLevel[js.Any]
   /* Rewritten from type alias, can be one of: 
     - typings.grommet.grommetStrings.none
     - typings.grommet.utilsMod.EdgeSizeType
@@ -84,8 +84,8 @@ package object utilsMod {
   type NonUndefined[T] = T
   type NonUndefinedProps[T /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]:? grommet.grommet/utils.NonUndefined<T[K]>}
-    */ typings.grommet.grommetStrings.NonUndefinedProps with T
-  type Omit[T, K] = typings.std.Pick[T, typings.std.Exclude[java.lang.String, K]]
+    */ typings.grommet.grommetStrings.NonUndefinedProps with org.scalablytyped.runtime.TopLevel[T]
+  type Omit[T, K] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
   /* Rewritten from type alias, can be one of: 
     - typings.grommet.grommetStrings.weak
     - typings.grommet.grommetStrings.medium

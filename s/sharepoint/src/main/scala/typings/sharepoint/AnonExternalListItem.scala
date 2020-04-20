@@ -15,7 +15,6 @@ object AnonExternalListItem {
   @scala.inline
   def apply(ExternalListItem: Boolean, FsObjType: Double, Id: Double, Url: String): AnonExternalListItem = {
     val __obj = js.Dynamic.literal(ExternalListItem = ExternalListItem.asInstanceOf[js.Any], FsObjType = FsObjType.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Url = Url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonExternalListItem]
   }
 }

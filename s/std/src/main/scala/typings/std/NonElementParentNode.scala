@@ -15,7 +15,6 @@ object NonElementParentNode {
   @scala.inline
   def apply(getElementById: java.lang.String => Element | Null): NonElementParentNode = {
     val __obj = js.Dynamic.literal(getElementById = js.Any.fromFunction1(getElementById))
-  
     __obj.asInstanceOf[NonElementParentNode]
   }
 }

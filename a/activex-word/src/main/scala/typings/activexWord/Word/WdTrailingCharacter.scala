@@ -16,12 +16,10 @@ trait WdTrailingCharacter extends js.Object
 
 object WdTrailingCharacter {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdTrailingNone: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdTrailingNone: `2` = this.cast(2)
+  def wdTrailingSpace: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdTrailingSpace: `1` = this.cast(1)
-  @scala.inline
-  def wdTrailingTab: `0` = this.cast(0)
+  def wdTrailingTab: `0` = 0.asInstanceOf[`0`]
 }
 

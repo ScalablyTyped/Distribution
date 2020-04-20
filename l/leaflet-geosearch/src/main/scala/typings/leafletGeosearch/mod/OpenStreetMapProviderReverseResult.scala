@@ -18,7 +18,6 @@ object OpenStreetMapProviderReverseResult {
   @scala.inline
   def apply(bounds: BoundsTuple, label: String, raw: AnonAddress, x: String, y: String): OpenStreetMapProviderReverseResult = {
     val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OpenStreetMapProviderReverseResult]
   }
 }

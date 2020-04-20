@@ -14,7 +14,6 @@ object ComposeButtonClickEvent {
   @scala.inline
   def apply(composeView: ComposeView, dropdown: DropdownView): ComposeButtonClickEvent = {
     val __obj = js.Dynamic.literal(composeView = composeView.asInstanceOf[js.Any], dropdown = dropdown.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ComposeButtonClickEvent]
   }
 }

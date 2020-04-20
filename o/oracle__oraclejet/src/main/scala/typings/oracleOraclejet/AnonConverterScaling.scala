@@ -20,7 +20,6 @@ object AnonConverterScaling {
   @scala.inline
   def apply(converter: js.Object, scaling: none | thousand | million | billion | trillion | quadrillion | auto): AnonConverterScaling = {
     val __obj = js.Dynamic.literal(converter = converter.asInstanceOf[js.Any], scaling = scaling.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonConverterScaling]
   }
 }

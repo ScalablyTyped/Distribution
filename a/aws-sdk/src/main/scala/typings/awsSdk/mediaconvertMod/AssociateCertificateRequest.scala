@@ -16,7 +16,6 @@ object AssociateCertificateRequest {
   @scala.inline
   def apply(Arn: string): AssociateCertificateRequest = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssociateCertificateRequest]
   }
 }

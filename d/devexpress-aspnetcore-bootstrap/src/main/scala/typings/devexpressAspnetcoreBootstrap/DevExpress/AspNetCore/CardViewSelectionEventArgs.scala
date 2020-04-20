@@ -22,7 +22,6 @@ object CardViewSelectionEventArgs {
     visibleIndex: Double
   ): CardViewSelectionEventArgs = {
     val __obj = js.Dynamic.literal(isAllRecordsOnPage = isAllRecordsOnPage.asInstanceOf[js.Any], isChangedOnServer = isChangedOnServer.asInstanceOf[js.Any], isSelected = isSelected.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CardViewSelectionEventArgs]
   }
 }

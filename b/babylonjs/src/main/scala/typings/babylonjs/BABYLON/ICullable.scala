@@ -24,7 +24,6 @@ object ICullable {
   @scala.inline
   def apply(isCompletelyInFrustum: js.Array[Plane] => Boolean, isInFrustum: js.Array[Plane] => Boolean): ICullable = {
     val __obj = js.Dynamic.literal(isCompletelyInFrustum = js.Any.fromFunction1(isCompletelyInFrustum), isInFrustum = js.Any.fromFunction1(isInFrustum))
-  
     __obj.asInstanceOf[ICullable]
   }
 }

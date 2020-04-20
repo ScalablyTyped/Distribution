@@ -15,7 +15,6 @@ object MobileFriendlyTestResource {
   @scala.inline
   def apply(run: AnonAccesstoken => Request_[RunMobileFriendlyTestResponse]): MobileFriendlyTestResource = {
     val __obj = js.Dynamic.literal(run = js.Any.fromFunction1(run))
-  
     __obj.asInstanceOf[MobileFriendlyTestResource]
   }
 }

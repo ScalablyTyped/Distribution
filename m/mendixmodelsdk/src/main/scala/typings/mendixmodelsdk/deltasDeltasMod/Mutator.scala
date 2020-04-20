@@ -31,7 +31,6 @@ object Mutator {
   @scala.inline
   def IRemoveMutator(mutatorType: REMOVE, removalIndex: Double): Mutator = {
     val __obj = js.Dynamic.literal(mutatorType = mutatorType.asInstanceOf[js.Any], removalIndex = removalIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Mutator]
   }
 }

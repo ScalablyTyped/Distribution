@@ -13,12 +13,10 @@ trait IdleState extends js.Object
 
 object IdleState {
   @scala.inline
-  def active: typings.naverWhale.naverWhaleStrings.active = this.cast("active")
+  def active: typings.naverWhale.naverWhaleStrings.active = "active".asInstanceOf[typings.naverWhale.naverWhaleStrings.active]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def idle: typings.naverWhale.naverWhaleStrings.idle = "idle".asInstanceOf[typings.naverWhale.naverWhaleStrings.idle]
   @scala.inline
-  def idle: typings.naverWhale.naverWhaleStrings.idle = this.cast("idle")
-  @scala.inline
-  def locked: typings.naverWhale.naverWhaleStrings.locked = this.cast("locked")
+  def locked: typings.naverWhale.naverWhaleStrings.locked = "locked".asInstanceOf[typings.naverWhale.naverWhaleStrings.locked]
 }
 

@@ -19,24 +19,22 @@ trait ARIAState extends js.Object
 
 object ARIAState {
   @scala.inline
-  def `aria-busy`: typings.ariaQuery.ariaQueryStrings.`aria-busy` = this.cast("aria-busy")
+  def `aria-busy`: typings.ariaQuery.ariaQueryStrings.`aria-busy` = "aria-busy".asInstanceOf[typings.ariaQuery.ariaQueryStrings.`aria-busy`]
   @scala.inline
-  def `aria-checked`: typings.ariaQuery.ariaQueryStrings.`aria-checked` = this.cast("aria-checked")
+  def `aria-checked`: typings.ariaQuery.ariaQueryStrings.`aria-checked` = "aria-checked".asInstanceOf[typings.ariaQuery.ariaQueryStrings.`aria-checked`]
   @scala.inline
-  def `aria-disabled`: typings.ariaQuery.ariaQueryStrings.`aria-disabled` = this.cast("aria-disabled")
+  def `aria-disabled`: typings.ariaQuery.ariaQueryStrings.`aria-disabled` = "aria-disabled".asInstanceOf[typings.ariaQuery.ariaQueryStrings.`aria-disabled`]
   @scala.inline
-  def `aria-expanded`: typings.ariaQuery.ariaQueryStrings.`aria-expanded` = this.cast("aria-expanded")
+  def `aria-expanded`: typings.ariaQuery.ariaQueryStrings.`aria-expanded` = "aria-expanded".asInstanceOf[typings.ariaQuery.ariaQueryStrings.`aria-expanded`]
   @scala.inline
-  def `aria-grabbed`: typings.ariaQuery.ariaQueryStrings.`aria-grabbed` = this.cast("aria-grabbed")
+  def `aria-grabbed`: typings.ariaQuery.ariaQueryStrings.`aria-grabbed` = "aria-grabbed".asInstanceOf[typings.ariaQuery.ariaQueryStrings.`aria-grabbed`]
   @scala.inline
-  def `aria-hidden`: typings.ariaQuery.ariaQueryStrings.`aria-hidden` = this.cast("aria-hidden")
+  def `aria-hidden`: typings.ariaQuery.ariaQueryStrings.`aria-hidden` = "aria-hidden".asInstanceOf[typings.ariaQuery.ariaQueryStrings.`aria-hidden`]
   @scala.inline
-  def `aria-invalid`: typings.ariaQuery.ariaQueryStrings.`aria-invalid` = this.cast("aria-invalid")
+  def `aria-invalid`: typings.ariaQuery.ariaQueryStrings.`aria-invalid` = "aria-invalid".asInstanceOf[typings.ariaQuery.ariaQueryStrings.`aria-invalid`]
   @scala.inline
-  def `aria-pressed`: typings.ariaQuery.ariaQueryStrings.`aria-pressed` = this.cast("aria-pressed")
+  def `aria-pressed`: typings.ariaQuery.ariaQueryStrings.`aria-pressed` = "aria-pressed".asInstanceOf[typings.ariaQuery.ariaQueryStrings.`aria-pressed`]
   @scala.inline
-  def `aria-selected`: typings.ariaQuery.ariaQueryStrings.`aria-selected` = this.cast("aria-selected")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `aria-selected`: typings.ariaQuery.ariaQueryStrings.`aria-selected` = "aria-selected".asInstanceOf[typings.ariaQuery.ariaQueryStrings.`aria-selected`]
 }
 

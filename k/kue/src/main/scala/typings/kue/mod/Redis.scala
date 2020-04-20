@@ -25,7 +25,6 @@ object Redis {
     reset: () => Unit
   ): Redis = {
     val __obj = js.Dynamic.literal(client = js.Any.fromFunction0(client), configureFactory = js.Any.fromFunction2(configureFactory), createClient = js.Any.fromFunction0(createClient), createClientFactory = js.Any.fromFunction1(createClientFactory), pubsubClient = js.Any.fromFunction0(pubsubClient), reset = js.Any.fromFunction0(reset))
-  
     __obj.asInstanceOf[Redis]
   }
 }

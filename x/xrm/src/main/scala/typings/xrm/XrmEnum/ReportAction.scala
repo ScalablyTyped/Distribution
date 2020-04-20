@@ -18,10 +18,8 @@ trait ReportAction extends js.Object
 
 object ReportAction {
   @scala.inline
-  def Filter: filter = this.cast("filter")
+  def Filter: filter = "filter".asInstanceOf[filter]
   @scala.inline
-  def Run: run = this.cast("run")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Run: run = "run".asInstanceOf[run]
 }
 

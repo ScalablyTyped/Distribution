@@ -106,7 +106,7 @@ object Tools extends js.Object {
   /**
     * Gets or sets the base URL to use to load assets
     */
-  def BaseUrl(): String = js.native
+  def BaseUrl: String = js.native
   def BaseUrl(value: String): js.Any = js.native
   /**
     * Removes unwanted characters from an url
@@ -364,7 +364,7 @@ object Tools extends js.Object {
   /**
     * Gets or sets the retry strategy to apply when an error happens while loading an asset
     */
-  def DefaultRetryStrategy(): js.Function3[
+  def DefaultRetryStrategy: js.Function3[
     /* url */ String, 
     /* request */ typings.babylonjs.webRequestMod.WebRequest, 
     /* retryIndex */ Double, 
@@ -679,7 +679,7 @@ object Tools extends js.Object {
   /**
     * Gets current log cache (list of logs)
     */
-  def LogCache(): String = js.native
+  def LogCache: String = js.native
   /**
     * Sets the current log level (MessageLogLevel / WarningLogLevel / ErrorLogLevel)
     */
@@ -703,7 +703,7 @@ object Tools extends js.Object {
   /**
     * Gets either window.performance.now() if supported or Date.now() else
     */
-  def Now(): Double = js.native
+  def Now: Double = js.native
   /**
     * Callback called when a new log is added
     */
@@ -715,7 +715,7 @@ object Tools extends js.Object {
   /**
     * Gets or sets a function used to pre-process url before using them to load assets
     */
-  def PreprocessUrl(): js.Function1[/* url */ String, String] = js.native
+  def PreprocessUrl: js.Function1[/* url */ String, String] = js.native
   def PreprocessUrl(processor: js.Function1[/* url */ String, String]): js.Any = js.native
   /**
     * Implementation from http://stackoverflow.com/questions/105034/how-to-create-a-guid-uuid-in-javascript/2117523#answer-2117523
@@ -774,7 +774,7 @@ object Tools extends js.Object {
     * Use this object to register external classes like custom textures or material
     * to allow the laoders to instantiate them
     */
-  def RegisteredExternalClasses(): org.scalablytyped.runtime.StringDictionary[js.Object] = js.native
+  def RegisteredExternalClasses: org.scalablytyped.runtime.StringDictionary[js.Object] = js.native
   def RegisteredExternalClasses(classes: org.scalablytyped.runtime.StringDictionary[js.Object]): js.Any = js.native
   /**
     * Sets the cors behavior on a dom element. This will add the required Tools.CorsBehavior to the element.
@@ -838,7 +838,7 @@ object Tools extends js.Object {
     * Gets or sets a global variable indicating if fallback texture must be used when a texture cannot be loaded
     * @ignorenaming
     */
-  def UseFallbackTexture(): Boolean = js.native
+  def UseFallbackTexture: Boolean = js.native
   def UseFallbackTexture(value: Boolean): js.Any = js.native
   /**
     * Write a warning message to the console
@@ -849,12 +849,12 @@ object Tools extends js.Object {
     * Gets a value indicating the number of loading errors
     * @ignorenaming
     */
-  def errorsCount(): Double = js.native
+  def errorsCount: Double = js.native
   /**
     * Texture content used if a texture cannot loaded
     * @ignorenaming
     */
-  def fallbackTexture(): String = js.native
+  def fallbackTexture: String = js.native
   def fallbackTexture(value: String): js.Any = js.native
   /**
     * This method will return the name of the full name of the class, including its owning module (if any).

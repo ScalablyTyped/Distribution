@@ -219,12 +219,12 @@ trait ChainReference[DataType, ReferenceKey, IsTop /* <: pre_root | root | `fals
     *
     * **Here the type of callback respect to the actual behavior**
     */
-  def get[K /* <: String */](key: K): ChainReference[
+  def get[K /* <: /* keyof DataType */ String */](key: K): ChainReference[
     /* import warning: importer.ImportType#apply Failed type conversion: DataType[K] */ js.Any, 
     K, 
     `false` | root
   ] = js.native
-  def get[K /* <: String */](
+  def get[K /* <: /* keyof DataType */ String */](
     key: K,
     callback: js.Function2[/* paramA */ Recordgunrootidbackontagg, /* paramB */ Recordofftonexttheonasbac, Unit]
   ): ChainReference[

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "typescript-compare"
-version := "0.0.2-47d384"
+version := "0.0.2-f1a338"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

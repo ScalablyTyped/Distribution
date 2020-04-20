@@ -13,7 +13,6 @@ object PickImplbound {
   @scala.inline
   def apply(bound: String): PickImplbound = {
     val __obj = js.Dynamic.literal(bound = bound.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplbound]
   }
 }

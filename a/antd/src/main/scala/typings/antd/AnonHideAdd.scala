@@ -14,7 +14,6 @@ object AnonHideAdd {
   @scala.inline
   def apply(hideAdd: Boolean, tabPosition: TabsPosition): AnonHideAdd = {
     val __obj = js.Dynamic.literal(hideAdd = hideAdd.asInstanceOf[js.Any], tabPosition = tabPosition.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHideAdd]
   }
 }

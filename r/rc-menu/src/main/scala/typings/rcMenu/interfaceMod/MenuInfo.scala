@@ -25,7 +25,6 @@ object MenuInfo {
     keyPath: js.Array[Key]
   ): MenuInfo = {
     val __obj = js.Dynamic.literal(domEvent = domEvent.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], keyPath = keyPath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MenuInfo]
   }
 }

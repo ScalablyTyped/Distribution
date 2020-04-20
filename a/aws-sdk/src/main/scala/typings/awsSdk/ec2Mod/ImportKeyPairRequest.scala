@@ -18,13 +18,23 @@ trait ImportKeyPairRequest extends js.Object {
     * The public key. For API calls, the text must be base64-encoded. For command line tools, base64 encoding is performed for you.
     */
   var PublicKeyMaterial: _Blob = js.native
+  /**
+    * The tags to apply to the imported key pair.
+    */
+  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.native
 }
 
 object ImportKeyPairRequest {
   @scala.inline
-  def apply(KeyName: String, PublicKeyMaterial: _Blob, DryRun: js.UndefOr[scala.Boolean] = js.undefined): ImportKeyPairRequest = {
+  def apply(
+    KeyName: String,
+    PublicKeyMaterial: _Blob,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    TagSpecifications: TagSpecificationList = null
+  ): ImportKeyPairRequest = {
     val __obj = js.Dynamic.literal(KeyName = KeyName.asInstanceOf[js.Any], PublicKeyMaterial = PublicKeyMaterial.asInstanceOf[js.Any])
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (TagSpecifications != null) __obj.updateDynamic("TagSpecifications")(TagSpecifications.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportKeyPairRequest]
   }
 }

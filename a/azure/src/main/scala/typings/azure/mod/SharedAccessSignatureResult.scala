@@ -16,7 +16,6 @@ object SharedAccessSignatureResult {
   @scala.inline
   def apply(baseUrl: String, path: String, queryString: AnonSe, url: () => String): SharedAccessSignatureResult = {
     val __obj = js.Dynamic.literal(baseUrl = baseUrl.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], queryString = queryString.asInstanceOf[js.Any], url = js.Any.fromFunction0(url))
-  
     __obj.asInstanceOf[SharedAccessSignatureResult]
   }
 }

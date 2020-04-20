@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.`double-click`
 import typings.arcgisJsApi.arcgisJsApiStrings.`immediate-click`
+import typings.arcgisJsApi.arcgisJsApiStrings.`immediate-double-click`
 import typings.arcgisJsApi.arcgisJsApiStrings.`key-down`
 import typings.arcgisJsApi.arcgisJsApiStrings.`key-up`
 import typings.arcgisJsApi.arcgisJsApiStrings.`layerview-create-error`
@@ -25,11 +26,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.arcgisJsApi.esri.Evented because Inheritance from two classes. Inlined emit, emit, hasEventListener, on, on */ @js.native
 trait View
   extends Accessor
      with corePromise
-     with Evented
      with DOMContainer {
   /**
     * Collection containing a flat list of all the created [LayerViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) related to the basemap, operational layers, and group layers in this view.
@@ -68,7 +69,7 @@ trait View
     */
   val input: Input = js.native
   /**
-    * Indication whether the view is being interacted with (for example when panning).
+    * Indication whether the view is being interacted with (for example when panning or by an interactive tool).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#interacting)
     *
@@ -87,6 +88,14 @@ trait View
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#map)
     */
   var map: Map = js.native
+  /**
+    * Indication whether the view is being navigated (for example when panning).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#navigating)
+    *
+    * @default false
+    */
+  val navigating: Boolean = js.native
   /**
     * Options to configure the navigation behavior of the View.
     *
@@ -138,7 +147,7 @@ trait View
     */
   var spatialReference: SpatialReference = js.native
   /**
-    * Indication whether the view is animating, being interacted with or resizing.
+    * Indication whether the view is animating, being navigated with or resizing.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#stationary)
     */
@@ -166,6 +175,17 @@ trait View
     */
   val updating: Boolean = js.native
   /**
+    * Emits an event on the instance. This method should only be used when creating subclasses of this class.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Evented.html#emit)
+    *
+    * @param type The name of the event.
+    * @param event The event payload.
+    *
+    */
+  def emit(`type`: String): Boolean = js.native
+  def emit(`type`: String, event: js.Any): Boolean = js.native
+  /**
     * Sets the focus on the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#focus)
@@ -173,6 +193,25 @@ trait View
     *
     */
   def focus(): Unit = js.native
+  /**
+    * Indicates whether there is an event listener on the instance that matches the provided event name.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Evented.html#hasEventListener)
+    *
+    * @param type The name of the event.
+    *
+    */
+  def hasEventListener(`type`: String): Boolean = js.native
+  /**
+    * Registers an event handler on the instance. Call this method to hook an event with a listener.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Evented.html#on)
+    *
+    * @param type A event type, or an array of event types, to listen for.
+    * @param listener The function to call when the event is fired.
+    *
+    */
+  def on(`type`: String, listener: EventHandler): IHandle = js.native
   /**
     * Registers an event handler on the instance. Call this method to hook an event with a listener. See the [Events summary table](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#events-summary) for a list of listened events.
     *
@@ -187,6 +226,7 @@ trait View
   def on(`type`: String, modifiersOrHandler: js.Array[String], handler: js.Function): js.Any = js.native
   def on(`type`: String, modifiersOrHandler: js.Function): js.Any = js.native
   def on(`type`: String, modifiersOrHandler: js.Function, handler: js.Function): js.Any = js.native
+  def on(`type`: js.Array[String], listener: EventHandler): IHandle = js.native
   def on(`type`: js.Array[String], modifiersOrHandler: js.Array[String]): js.Any = js.native
   def on(`type`: js.Array[String], modifiersOrHandler: js.Array[String], handler: js.Function): js.Any = js.native
   def on(`type`: js.Array[String], modifiersOrHandler: js.Function): js.Any = js.native
@@ -219,6 +259,14 @@ trait View
   def on_immediateclick(name: `immediate-click`, eventHandler: ViewImmediateClickEventHandler): IHandle = js.native
   @JSName("on")
   def on_immediateclick(name: `immediate-click`, modifiers: js.Array[String], eventHandler: ViewImmediateClickEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_immediatedoubleclick(name: `immediate-double-click`, eventHandler: ViewImmediateDoubleClickEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_immediatedoubleclick(
+    name: `immediate-double-click`,
+    modifiers: js.Array[String],
+    eventHandler: ViewImmediateDoubleClickEventHandler
+  ): IHandle = js.native
   @JSName("on")
   def on_keydown(name: `key-down`, eventHandler: ViewKeyDownEventHandler): IHandle = js.native
   @JSName("on")

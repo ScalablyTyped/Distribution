@@ -20,7 +20,6 @@ object GetBotRequest {
   @scala.inline
   def apply(name: BotName, versionOrAlias: String): GetBotRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], versionOrAlias = versionOrAlias.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBotRequest]
   }
 }

@@ -20,7 +20,6 @@ object ReceiptFilter {
   @scala.inline
   def apply(IpFilter: ReceiptIpFilter, Name: ReceiptFilterName): ReceiptFilter = {
     val __obj = js.Dynamic.literal(IpFilter = IpFilter.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReceiptFilter]
   }
 }

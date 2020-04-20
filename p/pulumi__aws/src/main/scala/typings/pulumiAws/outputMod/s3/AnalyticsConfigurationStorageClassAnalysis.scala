@@ -13,7 +13,6 @@ object AnalyticsConfigurationStorageClassAnalysis {
   @scala.inline
   def apply(dataExport: AnalyticsConfigurationStorageClassAnalysisDataExport): AnalyticsConfigurationStorageClassAnalysis = {
     val __obj = js.Dynamic.literal(dataExport = dataExport.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnalyticsConfigurationStorageClassAnalysis]
   }
 }

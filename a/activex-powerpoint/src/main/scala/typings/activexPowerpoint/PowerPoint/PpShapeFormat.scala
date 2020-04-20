@@ -22,18 +22,16 @@ trait PpShapeFormat extends js.Object
 
 object PpShapeFormat {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ppShapeFormatBMP: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def ppShapeFormatBMP: `3` = this.cast(3)
+  def ppShapeFormatEMF: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def ppShapeFormatEMF: `5` = this.cast(5)
+  def ppShapeFormatGIF: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def ppShapeFormatGIF: `0` = this.cast(0)
+  def ppShapeFormatJPG: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def ppShapeFormatJPG: `1` = this.cast(1)
+  def ppShapeFormatPNG: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def ppShapeFormatPNG: `2` = this.cast(2)
-  @scala.inline
-  def ppShapeFormatWMF: `4` = this.cast(4)
+  def ppShapeFormatWMF: `4` = 4.asInstanceOf[`4`]
 }
 

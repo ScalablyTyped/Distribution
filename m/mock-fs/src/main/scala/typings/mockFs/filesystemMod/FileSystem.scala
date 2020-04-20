@@ -20,7 +20,6 @@ object FileSystem {
   @scala.inline
   def apply(getItem: String => typings.mockFs.itemMod.^, getRoot: () => typings.mockFs.directoryMod.^): FileSystem = {
     val __obj = js.Dynamic.literal(getItem = js.Any.fromFunction1(getItem), getRoot = js.Any.fromFunction0(getRoot))
-  
     __obj.asInstanceOf[FileSystem]
   }
 }

@@ -18,6 +18,7 @@ class VariableSizeList ()
     * If you would like to delay this re-render until e.g. a state update has completed in the parent component,
     * specify a value of false for the second, optional parameter.
     */
+  def resetAfterIndex(index: Double): Unit = js.native
   def resetAfterIndex(index: Double, shouldForceUpdate: Boolean): Unit = js.native
   /**
     * Scroll to the specified offset (scrollTop or scrollLeft, depending on the direction prop).

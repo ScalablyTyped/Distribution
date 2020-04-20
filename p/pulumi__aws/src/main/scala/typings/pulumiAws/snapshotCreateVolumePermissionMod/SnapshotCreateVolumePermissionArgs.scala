@@ -21,7 +21,6 @@ object SnapshotCreateVolumePermissionArgs {
   @scala.inline
   def apply(accountId: Input[String], snapshotId: Input[String]): SnapshotCreateVolumePermissionArgs = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], snapshotId = snapshotId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SnapshotCreateVolumePermissionArgs]
   }
 }

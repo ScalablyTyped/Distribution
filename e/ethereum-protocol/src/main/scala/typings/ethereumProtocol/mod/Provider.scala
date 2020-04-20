@@ -12,7 +12,6 @@ object Provider {
   @scala.inline
   def apply(sendAsync: (JSONRPCRequestPayload, JSONRPCErrorCallback) => scala.Unit): Provider = {
     val __obj = js.Dynamic.literal(sendAsync = js.Any.fromFunction2(sendAsync))
-  
     __obj.asInstanceOf[Provider]
   }
 }

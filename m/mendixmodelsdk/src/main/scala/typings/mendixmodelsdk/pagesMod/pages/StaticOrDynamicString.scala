@@ -29,7 +29,7 @@ class StaticOrDynamicString protected () extends Element {
     *
     * In version 7.11.0: deleted
     */
-  def attribute(): String = js.native
+  def attribute: String = js.native
   def attribute(newValue: String): js.Any = js.native
   def attributeRef(): js.Any = js.native
   def attributeRef(newValue: AttributeRef): js.Any = js.native
@@ -37,12 +37,12 @@ class StaticOrDynamicString protected () extends Element {
     * In version 7.11.0: introduced
     */
   @JSName("attributeRef")
-  def attributeRef_Union(): AttributeRef | Null = js.native
-  def containerAsLinkButton(): LinkButton = js.native
-  def containerAsOpenLinkClientAction(): OpenLinkClientAction = js.native
-  def isDynamic(): Boolean = js.native
+  def attributeRef_Union: AttributeRef | Null = js.native
+  def containerAsLinkButton: LinkButton = js.native
+  def containerAsOpenLinkClientAction: OpenLinkClientAction = js.native
+  def isDynamic: Boolean = js.native
   def isDynamic(newValue: Boolean): js.Any = js.native
-  def value(): String = js.native
+  def value: String = js.native
   def value(newValue: String): js.Any = js.native
 }
 

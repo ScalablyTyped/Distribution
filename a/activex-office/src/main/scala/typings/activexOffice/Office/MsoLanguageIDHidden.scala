@@ -16,12 +16,10 @@ trait MsoLanguageIDHidden extends js.Object
 
 object MsoLanguageIDHidden {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoLanguageIDChineseHongKong: `3076` = 3076.asInstanceOf[`3076`]
   @scala.inline
-  def msoLanguageIDChineseHongKong: `3076` = this.cast(3076)
+  def msoLanguageIDChineseMacao: `5124` = 5124.asInstanceOf[`5124`]
   @scala.inline
-  def msoLanguageIDChineseMacao: `5124` = this.cast(5124)
-  @scala.inline
-  def msoLanguageIDEnglishTrinidad: `11273` = this.cast(11273)
+  def msoLanguageIDEnglishTrinidad: `11273` = 11273.asInstanceOf[`11273`]
 }
 

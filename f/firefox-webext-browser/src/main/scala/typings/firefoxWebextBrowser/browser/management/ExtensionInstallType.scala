@@ -21,14 +21,12 @@ trait ExtensionInstallType extends js.Object
 
 object ExtensionInstallType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def development: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.development = "development".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.development]
   @scala.inline
-  def development: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.development = this.cast("development")
+  def normal: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal = "normal".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal]
   @scala.inline
-  def normal: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal = this.cast("normal")
+  def other: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.other = "other".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.other]
   @scala.inline
-  def other: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.other = this.cast("other")
-  @scala.inline
-  def sideload: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.sideload = this.cast("sideload")
+  def sideload: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.sideload = "sideload".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.sideload]
 }
 

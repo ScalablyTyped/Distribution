@@ -22,18 +22,16 @@ trait MFFolderDefType extends js.Object
 
 object MFFolderDefType {
   @scala.inline
-  def AnyFolder: `1` = this.cast(1)
+  def AnyFolder: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def PropertyFolder: `3` = this.cast(3)
+  def PropertyFolder: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def SearchFolder: `5` = this.cast(5)
+  def SearchFolder: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def TraditionalFolder: `4` = this.cast(4)
+  def TraditionalFolder: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def Unknown: `0` = this.cast(0)
+  def Unknown: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def ViewFolder: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ViewFolder: `2` = 2.asInstanceOf[`2`]
 }
 

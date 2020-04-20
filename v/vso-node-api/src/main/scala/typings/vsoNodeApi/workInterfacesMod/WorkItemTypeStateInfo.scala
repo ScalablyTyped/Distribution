@@ -20,7 +20,6 @@ object WorkItemTypeStateInfo {
   @scala.inline
   def apply(states: StringDictionary[String], workItemTypeName: String): WorkItemTypeStateInfo = {
     val __obj = js.Dynamic.literal(states = states.asInstanceOf[js.Any], workItemTypeName = workItemTypeName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WorkItemTypeStateInfo]
   }
 }

@@ -13,7 +13,6 @@ object PickImplexactCount {
   @scala.inline
   def apply(exactCount: String): PickImplexactCount = {
     val __obj = js.Dynamic.literal(exactCount = exactCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplexactCount]
   }
 }

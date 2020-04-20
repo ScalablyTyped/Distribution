@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /* Inlined std.Promise<void> & {cancel (): void} */
 @js.native
 trait Promisevoidcancelvoid extends js.Object {
-  @JSName(scala.scalajs.js.Symbol.toStringTag)
+  @JSName(js.Symbol.toStringTag)
   val toStringTag: String = js.native
   def cancel(): Unit = js.native
   /**

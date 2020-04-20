@@ -15,7 +15,6 @@ object SparklineOptionsFetch {
   @scala.inline
   def apply[TEntry](fetch: TEntry => Double): SparklineOptionsFetch[TEntry] = {
     val __obj = js.Dynamic.literal(fetch = js.Any.fromFunction1(fetch))
-  
     __obj.asInstanceOf[SparklineOptionsFetch[TEntry]]
   }
 }

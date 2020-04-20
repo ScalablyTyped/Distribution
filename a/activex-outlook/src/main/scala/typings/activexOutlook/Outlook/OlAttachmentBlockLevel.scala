@@ -14,10 +14,8 @@ trait OlAttachmentBlockLevel extends js.Object
 
 object OlAttachmentBlockLevel {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olAttachmentBlockLevelNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def olAttachmentBlockLevelNone: `0` = this.cast(0)
-  @scala.inline
-  def olAttachmentBlockLevelOpen: `1` = this.cast(1)
+  def olAttachmentBlockLevelOpen: `1` = 1.asInstanceOf[`1`]
 }
 

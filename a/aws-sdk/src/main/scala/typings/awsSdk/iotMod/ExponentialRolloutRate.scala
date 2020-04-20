@@ -28,7 +28,6 @@ object ExponentialRolloutRate {
     rateIncreaseCriteria: RateIncreaseCriteria
   ): ExponentialRolloutRate = {
     val __obj = js.Dynamic.literal(baseRatePerMinute = baseRatePerMinute.asInstanceOf[js.Any], incrementFactor = incrementFactor.asInstanceOf[js.Any], rateIncreaseCriteria = rateIncreaseCriteria.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExponentialRolloutRate]
   }
 }

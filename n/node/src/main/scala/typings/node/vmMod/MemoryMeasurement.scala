@@ -13,7 +13,6 @@ object MemoryMeasurement {
   @scala.inline
   def apply(total: AnonJsMemoryEstimate): MemoryMeasurement = {
     val __obj = js.Dynamic.literal(total = total.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MemoryMeasurement]
   }
 }

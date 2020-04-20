@@ -12,10 +12,8 @@ trait SubTitleType extends js.Object
 
 object SubTitleType {
   @scala.inline
-  def ass: typings.dplayer.dplayerStrings.ass = this.cast("ass")
+  def ass: typings.dplayer.dplayerStrings.ass = "ass".asInstanceOf[typings.dplayer.dplayerStrings.ass]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def webvtt: typings.dplayer.dplayerStrings.webvtt = this.cast("webvtt")
+  def webvtt: typings.dplayer.dplayerStrings.webvtt = "webvtt".asInstanceOf[typings.dplayer.dplayerStrings.webvtt]
 }
 

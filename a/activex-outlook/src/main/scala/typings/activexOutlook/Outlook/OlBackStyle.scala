@@ -14,10 +14,8 @@ trait OlBackStyle extends js.Object
 
 object OlBackStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olBackStyleOpaque: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olBackStyleOpaque: `1` = this.cast(1)
-  @scala.inline
-  def olBackStyleTransparent: `0` = this.cast(0)
+  def olBackStyleTransparent: `0` = 0.asInstanceOf[`0`]
 }
 

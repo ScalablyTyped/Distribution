@@ -22,7 +22,6 @@ object MaxPoolWithArgmaxAttrs {
     strides: (js.Tuple2[Double, Double]) | Double
   ): MaxPoolWithArgmaxAttrs = {
     val __obj = js.Dynamic.literal(filterSize = filterSize.asInstanceOf[js.Any], includeBatchInIndex = includeBatchInIndex.asInstanceOf[js.Any], pad = pad.asInstanceOf[js.Any], strides = strides.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MaxPoolWithArgmaxAttrs]
   }
 }

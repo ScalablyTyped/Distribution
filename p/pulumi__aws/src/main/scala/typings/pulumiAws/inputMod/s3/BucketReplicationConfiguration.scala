@@ -21,7 +21,6 @@ object BucketReplicationConfiguration {
   @scala.inline
   def apply(role: Input[String], rules: Input[js.Array[Input[BucketReplicationConfigurationRule]]]): BucketReplicationConfiguration = {
     val __obj = js.Dynamic.literal(role = role.asInstanceOf[js.Any], rules = rules.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BucketReplicationConfiguration]
   }
 }

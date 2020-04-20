@@ -20,7 +20,6 @@ object AnonFileExists {
     resolvePath: String => String
   ): AnonFileExists = {
     val __obj = js.Dynamic.literal(fileExists = js.Any.fromFunction1(fileExists), getExecutingFilePath = js.Any.fromFunction0(getExecutingFilePath), readFile = js.Any.fromFunction1(readFile), resolvePath = js.Any.fromFunction1(resolvePath))
-  
     __obj.asInstanceOf[AnonFileExists]
   }
 }

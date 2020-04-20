@@ -16,7 +16,6 @@ object DeleteApplicationRequest {
   @scala.inline
   def apply(ResourceGroupName: ResourceGroupName): DeleteApplicationRequest = {
     val __obj = js.Dynamic.literal(ResourceGroupName = ResourceGroupName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteApplicationRequest]
   }
 }

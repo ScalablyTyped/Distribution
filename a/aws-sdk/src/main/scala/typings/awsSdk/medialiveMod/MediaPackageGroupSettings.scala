@@ -16,7 +16,6 @@ object MediaPackageGroupSettings {
   @scala.inline
   def apply(Destination: OutputLocationRef): MediaPackageGroupSettings = {
     val __obj = js.Dynamic.literal(Destination = Destination.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MediaPackageGroupSettings]
   }
 }

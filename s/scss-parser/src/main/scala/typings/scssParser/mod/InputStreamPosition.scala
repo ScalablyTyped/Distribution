@@ -14,7 +14,6 @@ object InputStreamPosition {
   @scala.inline
   def apply(column: Double, cursor: Double, line: Double): InputStreamPosition = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], cursor = cursor.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InputStreamPosition]
   }
 }

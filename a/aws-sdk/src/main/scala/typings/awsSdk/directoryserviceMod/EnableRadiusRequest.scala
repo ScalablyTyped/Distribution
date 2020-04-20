@@ -20,7 +20,6 @@ object EnableRadiusRequest {
   @scala.inline
   def apply(DirectoryId: DirectoryId, RadiusSettings: RadiusSettings): EnableRadiusRequest = {
     val __obj = js.Dynamic.literal(DirectoryId = DirectoryId.asInstanceOf[js.Any], RadiusSettings = RadiusSettings.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EnableRadiusRequest]
   }
 }

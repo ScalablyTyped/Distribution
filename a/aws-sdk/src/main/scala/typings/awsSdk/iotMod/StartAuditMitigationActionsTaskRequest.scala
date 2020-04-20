@@ -33,7 +33,6 @@ object StartAuditMitigationActionsTaskRequest {
     taskId: AuditMitigationActionsTaskId
   ): StartAuditMitigationActionsTaskRequest = {
     val __obj = js.Dynamic.literal(auditCheckToActionsMapping = auditCheckToActionsMapping.asInstanceOf[js.Any], clientRequestToken = clientRequestToken.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], taskId = taskId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StartAuditMitigationActionsTaskRequest]
   }
 }

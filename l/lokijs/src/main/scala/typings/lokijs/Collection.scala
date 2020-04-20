@@ -1,6 +1,7 @@
 package typings.lokijs
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.lokijs.lokijsBooleans.`true`
 import typings.lokijs.lokijsStrings.$aeq
 import typings.lokijs.lokijsStrings.$between
@@ -53,10 +54,10 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
   var autoupdate: Boolean = js.native
   var binaryIndices: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof E ]: lokijs.BinaryIndex}
-    */ typings.lokijs.lokijsStrings.Collection with js.Any = js.native
+    */ typings.lokijs.lokijsStrings.Collection with TopLevel[js.Any] = js.native
   var cachedBinaryIndex: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof E ]: lokijs.BinaryIndex}
-    */ typings.lokijs.lokijsStrings.Collection with js.Any) | Null = js.native
+    */ typings.lokijs.lokijsStrings.Collection with TopLevel[js.Any]) | Null = js.native
   var cachedData: js.Array[E] | Null = js.native
   var cachedIndex: js.Array[Double] | Null = js.native
   var changes: js.Array[CollectionChange] = js.native
@@ -86,26 +87,26 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
   var transactional: Boolean = js.native
   var transforms: StringDictionary[js.Array[Transform]] = js.native
   var ttl: AnonAge = js.native
-  var uniqueNames: js.Array[String] = js.native
+  var uniqueNames: js.Array[/* keyof E */ String] = js.native
   /**
     * Adaptively insert a selected item to the index.
     * @param dataPosition : coll.data array index/position
     * @param binaryIndexName : index to search for dataPosition in
     */
-  def adaptiveBinaryIndexInsert(dataPosition: Double, binaryIndexName: String): Unit = js.native
+  def adaptiveBinaryIndexInsert(dataPosition: Double, binaryIndexName: /* keyof E */ String): Unit = js.native
   /**
     * Adaptively remove a selected item from the index.
     * @param dataPosition : coll.data array index/position
     * @param binaryIndexName : index to search for dataPosition in
     */
-  def adaptiveBinaryIndexRemove(dataPosition: Double, binaryIndexName: String): Unit = js.native
-  def adaptiveBinaryIndexRemove(dataPosition: Double, binaryIndexName: String, removedFromIndexOnly: Boolean): Unit = js.native
+  def adaptiveBinaryIndexRemove(dataPosition: Double, binaryIndexName: /* keyof E */ String): Unit = js.native
+  def adaptiveBinaryIndexRemove(dataPosition: Double, binaryIndexName: /* keyof E */ String, removedFromIndexOnly: Boolean): Unit = js.native
   /**
     * Adaptively update a selected item within an index.
     * @param dataPosition : coll.data array index/position
     * @param binaryIndexName : index to search for dataPosition in
     */
-  def adaptiveBinaryIndexUpdate(dataPosition: Double, binaryIndexName: String): Unit = js.native
+  def adaptiveBinaryIndexUpdate(dataPosition: Double, binaryIndexName: /* keyof E */ String): Unit = js.native
   /**
     * Add object to collection
     */
@@ -160,16 +161,16 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
     * @param value - unique value to search for
     * @returns document matching the value passed
     */
-  def by(field: String): js.Function1[/* value */ js.Any, js.UndefOr[E]] = js.native
-  def by(field: String, value: js.Any): js.UndefOr[E] = js.native
+  def by(field: /* keyof E */ String): js.Function1[/* value */ js.Any, js.UndefOr[E]] = js.native
+  def by(field: /* keyof E */ String, value: js.Any): js.UndefOr[E] = js.native
   def byExample(template: js.Object): AnonAndArray = js.native
   @JSName("by")
-  def by_Union(field: String): js.UndefOr[E | (js.Function1[/* value */ js.Any, js.UndefOr[E]])] = js.native
+  def by_Union(field: /* keyof E */ String): js.UndefOr[E | (js.Function1[/* value */ js.Any, js.UndefOr[E]])] = js.native
   /**
     * Internal method used for indexed $between.  Given a prop (index name), and a value
     * (which may or may not yet exist) this will find the final position of that upper range value.
     */
-  def calculateRangeEnd(prop: String, `val`: js.Any): Double = js.native
+  def calculateRangeEnd(prop: /* keyof E */ String, `val`: js.Any): Double = js.native
   /**
     * Internal method used for index maintenance and indexed searching.
     * Calculates the beginning of an index range for a given value.
@@ -184,14 +185,14 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
     * @param val - value to find within index
     * @param [adaptive] - if true, we will return insert position
     */
-  def calculateRangeStart(prop: String, `val`: js.Any): Double = js.native
-  def calculateRangeStart(prop: String, `val`: js.Any, adaptive: Boolean): Double = js.native
+  def calculateRangeStart(prop: /* keyof E */ String, `val`: js.Any): Double = js.native
+  def calculateRangeStart(prop: /* keyof E */ String, `val`: js.Any, adaptive: Boolean): Double = js.native
   @JSName("calculateRange")
-  def calculateRange_aeq(op: $aeq, prop: String, `val`: js.Any): js.Array[Double] = js.native
+  def calculateRange_aeq(op: $aeq, prop: /* keyof E */ String, `val`: js.Any): js.Array[Double] = js.native
   @JSName("calculateRange")
-  def calculateRange_between(op: $between, prop: String, `val`: js.Any): js.Array[Double] = js.native
+  def calculateRange_between(op: $between, prop: /* keyof E */ String, `val`: js.Any): js.Array[Double] = js.native
   @JSName("calculateRange")
-  def calculateRange_dteq(op: $dteq, prop: String, `val`: js.Any): js.Array[Double] = js.native
+  def calculateRange_dteq(op: $dteq, prop: /* keyof E */ String, `val`: js.Any): js.Array[Double] = js.native
   /**
     * calculateRange() - Binary Search utility method to find range/segment of values matching criteria.
     *    this is used for collection.find() and first find filter of resultset/dynview
@@ -203,17 +204,17 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
     * @returns [start, end] index array positions
     */
   @JSName("calculateRange")
-  def calculateRange_eq(op: $eq, prop: String, `val`: js.Any): js.Array[Double] = js.native
+  def calculateRange_eq(op: $eq, prop: /* keyof E */ String, `val`: js.Any): js.Array[Double] = js.native
   @JSName("calculateRange")
-  def calculateRange_gt(op: $gt, prop: String, `val`: js.Any): js.Array[Double] = js.native
+  def calculateRange_gt(op: $gt, prop: /* keyof E */ String, `val`: js.Any): js.Array[Double] = js.native
   @JSName("calculateRange")
-  def calculateRange_gte(op: $gte, prop: String, `val`: js.Any): js.Array[Double] = js.native
+  def calculateRange_gte(op: $gte, prop: /* keyof E */ String, `val`: js.Any): js.Array[Double] = js.native
   @JSName("calculateRange")
-  def calculateRange_in(op: $in, prop: String, `val`: js.Any): js.Array[Double] = js.native
+  def calculateRange_in(op: $in, prop: /* keyof E */ String, `val`: js.Any): js.Array[Double] = js.native
   @JSName("calculateRange")
-  def calculateRange_lt(op: $lt, prop: String, `val`: js.Any): js.Array[Double] = js.native
+  def calculateRange_lt(op: $lt, prop: /* keyof E */ String, `val`: js.Any): js.Array[Double] = js.native
   @JSName("calculateRange")
-  def calculateRange_lte(op: $lte, prop: String, `val`: js.Any): js.Array[Double] = js.native
+  def calculateRange_lte(op: $lte, prop: /* keyof E */ String, `val`: js.Any): js.Array[Double] = js.native
   /**
     * Chain method, used for beginning a series of chained find() and/or view() operations
     * on a collection.
@@ -244,8 +245,8 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
     * @param [options.randomSamplingFactor] - percentage of total rows to randomly sample
     * @param [options.repair] - whether to fix problems if they are encountered
     */
-  def checkIndex(property: String): Boolean = js.native
-  def checkIndex(property: String, options: PartialCheckIndexOptions): Boolean = js.native
+  def checkIndex(property: /* keyof E */ String): Boolean = js.native
+  def checkIndex(property: /* keyof E */ String, options: PartialCheckIndexOptions): Boolean = js.native
   /**
     * Empties the collection.
     * @param [options] - configure clear behavior
@@ -293,9 +294,9 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
     * @param property - name of property to create binary index on
     * @param [force] - (Optional) flag indicating whether to construct index immediately
     */
-  def ensureIndex(property: String): Unit = js.native
-  def ensureIndex(property: String, force: Boolean): Unit = js.native
-  def ensureUniqueIndex(field: String): UniqueIndex[E] = js.native
+  def ensureIndex(property: /* keyof E */ String): Unit = js.native
+  def ensureIndex(property: /* keyof E */ String, force: Boolean): Unit = js.native
+  def ensureUniqueIndex(field: /* keyof E */ String): UniqueIndex[E] = js.native
   def eqJoin(joinData: js.Array[_], leftJoinProp: String, rightJoinProp: String): Resultset[_] = js.native
   def eqJoin(
     joinData: js.Array[_],
@@ -548,7 +549,7 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
     * Find object by unindexed field by property equal to value,
     * simply iterates and returns the first element matching the query
     */
-  def findOneUnindexed(prop: String, value: js.Any): (E with LokiObj) | Null = js.native
+  def findOneUnindexed(prop: /* keyof E */ String, value: js.Any): (E with LokiObj) | Null = js.native
   def flagBinaryIndexDirty(index: String): Unit = js.native
   def flagBinaryIndexesDirty(): Unit = js.native
   def flushChanges(): Unit = js.native
@@ -561,7 +562,7 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
     * @param dataPosition : coll.data array index/position
     * @param binaryIndexName : index to search for dataPosition in
     */
-  def getBinaryIndexPosition(dataPosition: Double, binaryIndexName: String): Double | Null = js.native
+  def getBinaryIndexPosition(dataPosition: Double, binaryIndexName: /* keyof E */ String): Double | Null = js.native
   def getChangeDelta(obj: js.Any): js.Any = js.native
   def getChangeDelta(obj: js.Any, old: js.Any): js.Any = js.native
   def getChanges(): js.Array[CollectionChange] = js.native

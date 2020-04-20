@@ -12,7 +12,6 @@ object UpdateManyPayload {
   @scala.inline
   def apply(tickets: js.Array[UpdateModel]): UpdateManyPayload = {
     val __obj = js.Dynamic.literal(tickets = tickets.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateManyPayload]
   }
 }

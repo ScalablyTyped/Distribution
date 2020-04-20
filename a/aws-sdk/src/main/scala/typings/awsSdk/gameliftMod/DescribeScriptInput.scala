@@ -16,7 +16,6 @@ object DescribeScriptInput {
   @scala.inline
   def apply(ScriptId: ScriptIdOrArn): DescribeScriptInput = {
     val __obj = js.Dynamic.literal(ScriptId = ScriptId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeScriptInput]
   }
 }

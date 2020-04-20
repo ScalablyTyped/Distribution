@@ -2,6 +2,7 @@ package typings.vscode.mod
 
 import typings.vscode.AnonIncrement
 import typings.vscode.AnonPreserveFocus
+import typings.vscode.AnonWebviewOptions
 import typings.vscode.QuickPickOptionscanPickMa
 import typings.vscode.Thenable
 import scala.scalajs.js
@@ -55,6 +56,8 @@ object window extends js.Object {
     showOptions: ViewColumn,
     options: WebviewPanelOptions with WebviewOptions
   ): WebviewPanel = js.native
+  def registerCustomEditorProvider(viewType: String, provider: CustomTextEditorProvider): Disposable = js.native
+  def registerCustomEditorProvider(viewType: String, provider: CustomTextEditorProvider, options: AnonWebviewOptions): Disposable = js.native
   def registerTreeDataProvider[T](viewId: String, treeDataProvider: TreeDataProvider[T]): Disposable = js.native
   def registerUriHandler(handler: UriHandler): Disposable = js.native
   def registerWebviewPanelSerializer(viewType: String, serializer: WebviewPanelSerializer): Disposable = js.native

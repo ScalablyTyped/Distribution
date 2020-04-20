@@ -13,12 +13,10 @@ trait TaskStatus extends js.Object
 
 object TaskStatus {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def pending: typings.mobxTask.mobxTaskStrings.pending = "pending".asInstanceOf[typings.mobxTask.mobxTaskStrings.pending]
   @scala.inline
-  def pending: typings.mobxTask.mobxTaskStrings.pending = this.cast("pending")
+  def rejected: typings.mobxTask.mobxTaskStrings.rejected = "rejected".asInstanceOf[typings.mobxTask.mobxTaskStrings.rejected]
   @scala.inline
-  def rejected: typings.mobxTask.mobxTaskStrings.rejected = this.cast("rejected")
-  @scala.inline
-  def resolved: typings.mobxTask.mobxTaskStrings.resolved = this.cast("resolved")
+  def resolved: typings.mobxTask.mobxTaskStrings.resolved = "resolved".asInstanceOf[typings.mobxTask.mobxTaskStrings.resolved]
 }
 

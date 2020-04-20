@@ -18,20 +18,18 @@ trait TokenType extends js.Object
 
 object TokenType {
   @scala.inline
-  def card: typings.reactStripeElements.reactStripeElementsStrings.card = this.cast("card")
+  def card: typings.reactStripeElements.reactStripeElementsStrings.card = "card".asInstanceOf[typings.reactStripeElements.reactStripeElementsStrings.card]
   @scala.inline
-  def cardCvc: typings.reactStripeElements.reactStripeElementsStrings.cardCvc = this.cast("cardCvc")
+  def cardCvc: typings.reactStripeElements.reactStripeElementsStrings.cardCvc = "cardCvc".asInstanceOf[typings.reactStripeElements.reactStripeElementsStrings.cardCvc]
   @scala.inline
-  def cardExpiry: typings.reactStripeElements.reactStripeElementsStrings.cardExpiry = this.cast("cardExpiry")
+  def cardExpiry: typings.reactStripeElements.reactStripeElementsStrings.cardExpiry = "cardExpiry".asInstanceOf[typings.reactStripeElements.reactStripeElementsStrings.cardExpiry]
   @scala.inline
-  def cardNumber: typings.reactStripeElements.reactStripeElementsStrings.cardNumber = this.cast("cardNumber")
+  def cardNumber: typings.reactStripeElements.reactStripeElementsStrings.cardNumber = "cardNumber".asInstanceOf[typings.reactStripeElements.reactStripeElementsStrings.cardNumber]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def iban: typings.reactStripeElements.reactStripeElementsStrings.iban = "iban".asInstanceOf[typings.reactStripeElements.reactStripeElementsStrings.iban]
   @scala.inline
-  def iban: typings.reactStripeElements.reactStripeElementsStrings.iban = this.cast("iban")
+  def idealBank: typings.reactStripeElements.reactStripeElementsStrings.idealBank = "idealBank".asInstanceOf[typings.reactStripeElements.reactStripeElementsStrings.idealBank]
   @scala.inline
-  def idealBank: typings.reactStripeElements.reactStripeElementsStrings.idealBank = this.cast("idealBank")
-  @scala.inline
-  def paymentRequestButton: typings.reactStripeElements.reactStripeElementsStrings.paymentRequestButton = this.cast("paymentRequestButton")
+  def paymentRequestButton: typings.reactStripeElements.reactStripeElementsStrings.paymentRequestButton = "paymentRequestButton".asInstanceOf[typings.reactStripeElements.reactStripeElementsStrings.paymentRequestButton]
 }
 

@@ -16,7 +16,6 @@ object XLScroll {
   @scala.inline
   def apply(scrollToCell: String => Unit): XLScroll = {
     val __obj = js.Dynamic.literal(scrollToCell = js.Any.fromFunction1(scrollToCell))
-  
     __obj.asInstanceOf[XLScroll]
   }
 }

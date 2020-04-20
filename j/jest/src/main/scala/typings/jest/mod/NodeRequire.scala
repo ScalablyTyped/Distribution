@@ -25,7 +25,6 @@ object NodeRequire {
   @scala.inline
   def apply(requireActual: String => js.Any, requireMock: String => js.Any): NodeRequire = {
     val __obj = js.Dynamic.literal(requireActual = js.Any.fromFunction1(requireActual), requireMock = js.Any.fromFunction1(requireMock))
-  
     __obj.asInstanceOf[NodeRequire]
   }
 }

@@ -53,7 +53,6 @@ object IR {
     selections: js.Array[Selection]
   ): IR = {
     val __obj = js.Dynamic.literal(documentName = documentName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], module = module.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IR]
   }
   @scala.inline
@@ -111,7 +110,6 @@ object IR {
     loc: Location
   ): IR = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IR]
   }
   @scala.inline
@@ -290,7 +288,6 @@ object IR {
   @scala.inline
   def Literal(kind: typings.relayCompiler.relayCompilerStrings.Literal, loc: Location, value: js.Any): IR = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IR]
   }
   @scala.inline
@@ -349,7 +346,6 @@ object IR {
     value: ArgumentValue
   ): IR = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IR]
   }
 }

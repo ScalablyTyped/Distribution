@@ -14,7 +14,6 @@ object HapiRouterArgs {
   @scala.inline
   def apply(request: AnonPath, routes: Routes): HapiRouterArgs = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HapiRouterArgs]
   }
 }

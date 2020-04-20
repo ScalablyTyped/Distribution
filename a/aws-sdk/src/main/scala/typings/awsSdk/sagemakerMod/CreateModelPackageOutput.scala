@@ -16,7 +16,6 @@ object CreateModelPackageOutput {
   @scala.inline
   def apply(ModelPackageArn: ModelPackageArn): CreateModelPackageOutput = {
     val __obj = js.Dynamic.literal(ModelPackageArn = ModelPackageArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateModelPackageOutput]
   }
 }

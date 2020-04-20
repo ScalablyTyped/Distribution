@@ -17,7 +17,6 @@ object BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedO
   @scala.inline
   def apply(enabled: Input[Boolean]): BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects]
   }
 }

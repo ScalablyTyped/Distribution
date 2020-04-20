@@ -30,26 +30,24 @@ trait MFPredefinedSearchFilterType extends js.Object
 
 object MFPredefinedSearchFilterType {
   @scala.inline
-  def DocumentsAccessedByMeLastMonth: `30006` = this.cast(30006)
+  def DocumentsAccessedByMeLastMonth: `30006` = 30006.asInstanceOf[`30006`]
   @scala.inline
-  def DocumentsAccessedByMeLastWeek: `30005` = this.cast(30005)
+  def DocumentsAccessedByMeLastWeek: `30005` = 30005.asInstanceOf[`30005`]
   @scala.inline
-  def DocumentsAccessedByMeLastYear: `30007` = this.cast(30007)
+  def DocumentsAccessedByMeLastYear: `30007` = 30007.asInstanceOf[`30007`]
   @scala.inline
-  def DocumentsAccessedByMeToday: `30004` = this.cast(30004)
+  def DocumentsAccessedByMeToday: `30004` = 30004.asInstanceOf[`30004`]
   @scala.inline
-  def DocumentsModifiedLastMonth: `30002` = this.cast(30002)
+  def DocumentsModifiedLastMonth: `30002` = 30002.asInstanceOf[`30002`]
   @scala.inline
-  def DocumentsModifiedLastWeek: `30001` = this.cast(30001)
+  def DocumentsModifiedLastWeek: `30001` = 30001.asInstanceOf[`30001`]
   @scala.inline
-  def DocumentsModifiedLastYear: `30003` = this.cast(30003)
+  def DocumentsModifiedLastYear: `30003` = 30003.asInstanceOf[`30003`]
   @scala.inline
-  def DocumentsModifiedToday: `30000` = this.cast(30000)
+  def DocumentsModifiedToday: `30000` = 30000.asInstanceOf[`30000`]
   @scala.inline
-  def ObjectType: `1` = this.cast(1)
+  def ObjectType: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def Unspecified: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Unspecified: `0` = 0.asInstanceOf[`0`]
 }
 

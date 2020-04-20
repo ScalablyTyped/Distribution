@@ -15,7 +15,6 @@ object GaugeBar {
   @scala.inline
   def apply(color: Color, line: PartialGaugeLine, thickness: Double): GaugeBar = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], thickness = thickness.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GaugeBar]
   }
 }

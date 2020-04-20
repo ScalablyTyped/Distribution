@@ -18,22 +18,20 @@ trait Unit extends js.Object
 
 object Unit {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def d: typings.humanizeDuration.humanizeDurationStrings.d = "d".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.d]
   @scala.inline
-  def d: typings.humanizeDuration.humanizeDurationStrings.d = this.cast("d")
+  def h: typings.humanizeDuration.humanizeDurationStrings.h = "h".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.h]
   @scala.inline
-  def h: typings.humanizeDuration.humanizeDurationStrings.h = this.cast("h")
+  def m: typings.humanizeDuration.humanizeDurationStrings.m = "m".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.m]
   @scala.inline
-  def m: typings.humanizeDuration.humanizeDurationStrings.m = this.cast("m")
+  def mo: typings.humanizeDuration.humanizeDurationStrings.mo = "mo".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.mo]
   @scala.inline
-  def mo: typings.humanizeDuration.humanizeDurationStrings.mo = this.cast("mo")
+  def ms: typings.humanizeDuration.humanizeDurationStrings.ms = "ms".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.ms]
   @scala.inline
-  def ms: typings.humanizeDuration.humanizeDurationStrings.ms = this.cast("ms")
+  def s: typings.humanizeDuration.humanizeDurationStrings.s = "s".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.s]
   @scala.inline
-  def s: typings.humanizeDuration.humanizeDurationStrings.s = this.cast("s")
+  def w: typings.humanizeDuration.humanizeDurationStrings.w = "w".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.w]
   @scala.inline
-  def w: typings.humanizeDuration.humanizeDurationStrings.w = this.cast("w")
-  @scala.inline
-  def y: typings.humanizeDuration.humanizeDurationStrings.y = this.cast("y")
+  def y: typings.humanizeDuration.humanizeDurationStrings.y = "y".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.y]
 }
 

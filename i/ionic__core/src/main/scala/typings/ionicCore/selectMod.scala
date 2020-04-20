@@ -113,7 +113,7 @@ object selectMod extends js.Object {
       * the value of the select.
       */
     var value: js.UndefOr[js.Any | Null] = js.native
-    /* private */ def childOpts(): js.Any = js.native
+    /* private */ def childOpts: js.Any = js.native
     @JSName("componentDidLoad")
     def componentDidLoad_MSelect(): Unit = js.native
     @JSName("connectedCallback")

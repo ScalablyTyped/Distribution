@@ -13,7 +13,6 @@ object CallbackArgument {
   @scala.inline
   def apply(issuer: String, maxLength: Double): CallbackArgument = {
     val __obj = js.Dynamic.literal(issuer = issuer.asInstanceOf[js.Any], maxLength = maxLength.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CallbackArgument]
   }
 }

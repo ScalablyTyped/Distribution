@@ -143,11 +143,11 @@ object baseTextureMod extends js.Object {
     def _getFromCache(url: Nullable[String], noMipmap: Boolean, sampling: Double): Nullable[InternalTexture] = js.native
     def _getFromCache(url: Nullable[String], noMipmap: Boolean, sampling: Double, invertY: Boolean): Nullable[InternalTexture] = js.native
     /** @hidden */
-    def _lodTextureHigh(): Nullable[BaseTexture] = js.native
+    def _lodTextureHigh: Nullable[BaseTexture] = js.native
     /** @hidden */
-    def _lodTextureLow(): Nullable[BaseTexture] = js.native
+    def _lodTextureLow: Nullable[BaseTexture] = js.native
     /** @hidden */
-    def _lodTextureMid(): Nullable[BaseTexture] = js.native
+    def _lodTextureMid: Nullable[BaseTexture] = js.native
     /**
       * Indicates that textures need to be re-calculated for all materials
       */
@@ -157,8 +157,8 @@ object baseTextureMod extends js.Object {
     /**
       * Get if the texture can rescale.
       */
-    def canRescale(): Boolean = js.native
-    def coordinatesMode(): Double = js.native
+    def canRescale: Boolean = js.native
+    def coordinatesMode: Double = js.native
     /**
       * How a texture is mapped.
       *
@@ -220,7 +220,7 @@ object baseTextureMod extends js.Object {
       * @returns the transformation matrix
       */
     def getTextureMatrix(): Matrix = js.native
-    def hasAlpha(): Boolean = js.native
+    def hasAlpha: Boolean = js.native
     /**
       * Define if the texture is having a usable alpha value (can be use for transparency or glossiness for instance).
       */
@@ -230,32 +230,32 @@ object baseTextureMod extends js.Object {
       * You can set the irradiance texture to rely on a texture instead of the spherical approach.
       * This texture need to have the same characteristics than its parent (Cube vs 2d, coordinates mode, Gamma/Linear, RGBD).
       */
-    def irradianceTexture(): Nullable[BaseTexture] = js.native
+    def irradianceTexture: Nullable[BaseTexture] = js.native
     def irradianceTexture(value: Nullable[BaseTexture]): js.Any = js.native
     /**
       * Define if the texture is a 2d array texture (webgl 2) or if false a 2d texture.
       */
-    def is2DArray(): Boolean = js.native
+    def is2DArray: Boolean = js.native
     def is2DArray(value: Boolean): js.Any = js.native
     /**
       * Define if the texture is a 3d texture (webgl 2) or if false a 2d texture.
       */
-    def is3D(): Boolean = js.native
+    def is3D: Boolean = js.native
     def is3D(value: Boolean): js.Any = js.native
     /**
       * Define if the texture is preventinga material to render or not.
       * If not and the texture is not ready, the engine will use a default black texture instead.
       */
-    def isBlocking(): Boolean = js.native
+    def isBlocking: Boolean = js.native
     /**
       * Define if the texture is a cube texture or if false a 2d texture.
       */
-    def isCube(): Boolean = js.native
+    def isCube: Boolean = js.native
     def isCube(value: Boolean): js.Any = js.native
     /**
       * Gets or sets whether or not the texture contains RGBD data.
       */
-    def isRGBD(): Boolean = js.native
+    def isRGBD: Boolean = js.native
     def isRGBD(value: Boolean): js.Any = js.native
     /**
       * Get if the texture is ready to be used (downloaded, converted, mip mapped...).
@@ -272,22 +272,22 @@ object baseTextureMod extends js.Object {
       * By default we are using a log2 of the linear roughness helping to keep a better resolution for
       * average roughness values.
       */
-    def linearSpecularLOD(): Boolean = js.native
+    def linearSpecularLOD: Boolean = js.native
     def linearSpecularLOD(value: Boolean): js.Any = js.native
     /**
       * With prefiltered texture, defined the offset used during the prefiltering steps.
       */
-    def lodGenerationOffset(): Double = js.native
+    def lodGenerationOffset: Double = js.native
     def lodGenerationOffset(value: Double): js.Any = js.native
     /**
       * With prefiltered texture, defined the scale used during the prefiltering steps.
       */
-    def lodGenerationScale(): Double = js.native
+    def lodGenerationScale: Double = js.native
     def lodGenerationScale(value: Double): js.Any = js.native
     /**
       * Are mip maps generated for this texture or not.
       */
-    def noMipmap(): Boolean = js.native
+    def noMipmap: Boolean = js.native
     /**
       * Callback triggered when the texture has been disposed.
       * Kept for back compatibility, you can use the onDisposeObservable instead.
@@ -323,15 +323,15 @@ object baseTextureMod extends js.Object {
     /**
       * Get the texture underlying format (RGB, RGBA...)
       */
-    def textureFormat(): Double = js.native
+    def textureFormat: Double = js.native
     /**
       * Get the texture underlying type (INT, FLOAT...)
       */
-    def textureType(): Double = js.native
+    def textureType: Double = js.native
     /**
       * Define the unique id of the texture in the scene.
       */
-    def uid(): String = js.native
+    def uid: String = js.native
     /**
       * Update the sampling mode of the texture.
       * Default is Trilinear mode.

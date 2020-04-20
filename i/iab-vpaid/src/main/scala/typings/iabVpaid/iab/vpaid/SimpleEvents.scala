@@ -32,50 +32,48 @@ trait SimpleEvents extends js.Object
 
 object SimpleEvents {
   @scala.inline
-  def AdDurationChange: typings.iabVpaid.iabVpaidStrings.AdDurationChange = this.cast("AdDurationChange")
+  def AdDurationChange: typings.iabVpaid.iabVpaidStrings.AdDurationChange = "AdDurationChange".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdDurationChange]
   @scala.inline
-  def AdExpandedChange: typings.iabVpaid.iabVpaidStrings.AdExpandedChange = this.cast("AdExpandedChange")
+  def AdExpandedChange: typings.iabVpaid.iabVpaidStrings.AdExpandedChange = "AdExpandedChange".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdExpandedChange]
   @scala.inline
-  def AdImpression: typings.iabVpaid.iabVpaidStrings.AdImpression = this.cast("AdImpression")
+  def AdImpression: typings.iabVpaid.iabVpaidStrings.AdImpression = "AdImpression".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdImpression]
   @scala.inline
-  def AdLinearChange: typings.iabVpaid.iabVpaidStrings.AdLinearChange = this.cast("AdLinearChange")
+  def AdLinearChange: typings.iabVpaid.iabVpaidStrings.AdLinearChange = "AdLinearChange".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdLinearChange]
   @scala.inline
-  def AdLoaded: typings.iabVpaid.iabVpaidStrings.AdLoaded = this.cast("AdLoaded")
+  def AdLoaded: typings.iabVpaid.iabVpaidStrings.AdLoaded = "AdLoaded".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdLoaded]
   @scala.inline
-  def AdPaused: typings.iabVpaid.iabVpaidStrings.AdPaused = this.cast("AdPaused")
+  def AdPaused: typings.iabVpaid.iabVpaidStrings.AdPaused = "AdPaused".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdPaused]
   @scala.inline
-  def AdPlaying: typings.iabVpaid.iabVpaidStrings.AdPlaying = this.cast("AdPlaying")
+  def AdPlaying: typings.iabVpaid.iabVpaidStrings.AdPlaying = "AdPlaying".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdPlaying]
   @scala.inline
-  def AdRemainingTimeChange: typings.iabVpaid.iabVpaidStrings.AdRemainingTimeChange = this.cast("AdRemainingTimeChange")
+  def AdRemainingTimeChange: typings.iabVpaid.iabVpaidStrings.AdRemainingTimeChange = "AdRemainingTimeChange".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdRemainingTimeChange]
   @scala.inline
-  def AdSizeChange: typings.iabVpaid.iabVpaidStrings.AdSizeChange = this.cast("AdSizeChange")
+  def AdSizeChange: typings.iabVpaid.iabVpaidStrings.AdSizeChange = "AdSizeChange".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdSizeChange]
   @scala.inline
-  def AdSkippableStateChange: typings.iabVpaid.iabVpaidStrings.AdSkippableStateChange = this.cast("AdSkippableStateChange")
+  def AdSkippableStateChange: typings.iabVpaid.iabVpaidStrings.AdSkippableStateChange = "AdSkippableStateChange".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdSkippableStateChange]
   @scala.inline
-  def AdSkipped: typings.iabVpaid.iabVpaidStrings.AdSkipped = this.cast("AdSkipped")
+  def AdSkipped: typings.iabVpaid.iabVpaidStrings.AdSkipped = "AdSkipped".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdSkipped]
   @scala.inline
-  def AdStarted: typings.iabVpaid.iabVpaidStrings.AdStarted = this.cast("AdStarted")
+  def AdStarted: typings.iabVpaid.iabVpaidStrings.AdStarted = "AdStarted".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdStarted]
   @scala.inline
-  def AdStopped: typings.iabVpaid.iabVpaidStrings.AdStopped = this.cast("AdStopped")
+  def AdStopped: typings.iabVpaid.iabVpaidStrings.AdStopped = "AdStopped".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdStopped]
   @scala.inline
-  def AdUserAcceptInvitation: typings.iabVpaid.iabVpaidStrings.AdUserAcceptInvitation = this.cast("AdUserAcceptInvitation")
+  def AdUserAcceptInvitation: typings.iabVpaid.iabVpaidStrings.AdUserAcceptInvitation = "AdUserAcceptInvitation".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdUserAcceptInvitation]
   @scala.inline
-  def AdUserClose: typings.iabVpaid.iabVpaidStrings.AdUserClose = this.cast("AdUserClose")
+  def AdUserClose: typings.iabVpaid.iabVpaidStrings.AdUserClose = "AdUserClose".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdUserClose]
   @scala.inline
-  def AdUserMinimize: typings.iabVpaid.iabVpaidStrings.AdUserMinimize = this.cast("AdUserMinimize")
+  def AdUserMinimize: typings.iabVpaid.iabVpaidStrings.AdUserMinimize = "AdUserMinimize".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdUserMinimize]
   @scala.inline
-  def AdVideoComplete: typings.iabVpaid.iabVpaidStrings.AdVideoComplete = this.cast("AdVideoComplete")
+  def AdVideoComplete: typings.iabVpaid.iabVpaidStrings.AdVideoComplete = "AdVideoComplete".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdVideoComplete]
   @scala.inline
-  def AdVideoFirstQuartile: typings.iabVpaid.iabVpaidStrings.AdVideoFirstQuartile = this.cast("AdVideoFirstQuartile")
+  def AdVideoFirstQuartile: typings.iabVpaid.iabVpaidStrings.AdVideoFirstQuartile = "AdVideoFirstQuartile".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdVideoFirstQuartile]
   @scala.inline
-  def AdVideoMidpoint: typings.iabVpaid.iabVpaidStrings.AdVideoMidpoint = this.cast("AdVideoMidpoint")
+  def AdVideoMidpoint: typings.iabVpaid.iabVpaidStrings.AdVideoMidpoint = "AdVideoMidpoint".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdVideoMidpoint]
   @scala.inline
-  def AdVideoStart: typings.iabVpaid.iabVpaidStrings.AdVideoStart = this.cast("AdVideoStart")
+  def AdVideoStart: typings.iabVpaid.iabVpaidStrings.AdVideoStart = "AdVideoStart".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdVideoStart]
   @scala.inline
-  def AdVideoThirdQuartile: typings.iabVpaid.iabVpaidStrings.AdVideoThirdQuartile = this.cast("AdVideoThirdQuartile")
+  def AdVideoThirdQuartile: typings.iabVpaid.iabVpaidStrings.AdVideoThirdQuartile = "AdVideoThirdQuartile".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdVideoThirdQuartile]
   @scala.inline
-  def AdVolumeChange: typings.iabVpaid.iabVpaidStrings.AdVolumeChange = this.cast("AdVolumeChange")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def AdVolumeChange: typings.iabVpaid.iabVpaidStrings.AdVolumeChange = "AdVolumeChange".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdVolumeChange]
 }
 

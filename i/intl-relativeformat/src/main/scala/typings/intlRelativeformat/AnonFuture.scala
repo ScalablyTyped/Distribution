@@ -14,7 +14,6 @@ object AnonFuture {
   @scala.inline
   def apply(future: Record[String, String], past: Record[String, String]): AnonFuture = {
     val __obj = js.Dynamic.literal(future = future.asInstanceOf[js.Any], past = past.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFuture]
   }
 }

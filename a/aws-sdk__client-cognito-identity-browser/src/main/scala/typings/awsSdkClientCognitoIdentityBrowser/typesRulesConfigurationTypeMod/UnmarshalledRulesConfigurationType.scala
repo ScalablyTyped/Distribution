@@ -17,7 +17,6 @@ object UnmarshalledRulesConfigurationType {
   @scala.inline
   def apply(Rules: js.Array[UnmarshalledMappingRule]): UnmarshalledRulesConfigurationType = {
     val __obj = js.Dynamic.literal(Rules = Rules.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnmarshalledRulesConfigurationType]
   }
 }

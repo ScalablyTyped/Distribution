@@ -19,7 +19,6 @@ object CaptureIndex {
   @scala.inline
   def apply(end: Double, index: Double, length: Double, start: Double): CaptureIndex = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CaptureIndex]
   }
 }

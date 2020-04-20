@@ -13,7 +13,6 @@ object FileSaved {
   @scala.inline
   def apply(path: String): FileSaved = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FileSaved]
   }
 }

@@ -41,7 +41,7 @@ object ɵAttributeMarker {
     * ```
     */
   @scala.inline
-  def Bindings: `3` = this.cast(3)
+  def Bindings: `3` = 3.asInstanceOf[`3`]
   /**
     * Signals class declaration.
     *
@@ -59,7 +59,7 @@ object ɵAttributeMarker {
     * ```
     */
   @scala.inline
-  def Classes: `1` = this.cast(1)
+  def Classes: `1` = 1.asInstanceOf[`1`]
   /**
     * Signals that the following attribute will be translated by runtime i18n
     *
@@ -75,7 +75,7 @@ object ɵAttributeMarker {
     * var _c1 = ['moo', 'car', AttributeMarker.I18n, 'foo', 'bar'];
     */
   @scala.inline
-  def I18n: `6` = this.cast(6)
+  def I18n: `6` = 6.asInstanceOf[`6`]
   /**
     * An implicit marker which indicates that the value in the array are of `attributeKey`,
     * `attributeValue` format.
@@ -84,14 +84,14 @@ object ɵAttributeMarker {
     * it should not be present at runtime by the negative number.
     */
   @scala.inline
-  def ImplicitAttributes: `-1` = this.cast(-1)
+  def ImplicitAttributes: `-1` = -1.asInstanceOf[`-1`]
   /**
     * Marker indicates that the following 3 values in the attributes array are:
     * namespaceUri, attributeName, attributeValue
     * in that order.
     */
   @scala.inline
-  def NamespaceURI: `0` = this.cast(0)
+  def NamespaceURI: `0` = 0.asInstanceOf[`0`]
   /**
     * Signals that the following attribute is `ngProjectAs` and its value is a parsed `CssSelector`.
     *
@@ -108,7 +108,7 @@ object ɵAttributeMarker {
     * ```
     */
   @scala.inline
-  def ProjectAs: `5` = this.cast(5)
+  def ProjectAs: `5` = 5.asInstanceOf[`5`]
   /**
     * Signals style declaration.
     *
@@ -127,7 +127,7 @@ object ɵAttributeMarker {
     * ```
     */
   @scala.inline
-  def Styles: `2` = this.cast(2)
+  def Styles: `2` = 2.asInstanceOf[`2`]
   /**
     * Signals that the following attribute names were hoisted from an inline-template declaration.
     *
@@ -152,8 +152,6 @@ object ɵAttributeMarker {
     * ```
     */
   @scala.inline
-  def Template: `4` = this.cast(4)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Template: `4` = 4.asInstanceOf[`4`]
 }
 

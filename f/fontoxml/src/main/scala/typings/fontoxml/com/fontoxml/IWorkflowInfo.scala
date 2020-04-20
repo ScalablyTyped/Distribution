@@ -13,7 +13,6 @@ object IWorkflowInfo {
   @scala.inline
   def apply(displayName: String, id: String): IWorkflowInfo = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IWorkflowInfo]
   }
 }

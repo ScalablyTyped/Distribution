@@ -20,7 +20,6 @@ object RouteSpecHttpRouteActionWeightedTarget {
   @scala.inline
   def apply(virtualNode: String, weight: Double): RouteSpecHttpRouteActionWeightedTarget = {
     val __obj = js.Dynamic.literal(virtualNode = virtualNode.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RouteSpecHttpRouteActionWeightedTarget]
   }
 }

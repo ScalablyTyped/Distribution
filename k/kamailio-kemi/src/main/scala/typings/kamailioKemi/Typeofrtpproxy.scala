@@ -46,7 +46,6 @@ object Typeofrtpproxy {
     start_recording: () => Double
   ): Typeofrtpproxy = {
     val __obj = js.Dynamic.literal(rtpproxy_answer = js.Any.fromFunction1(rtpproxy_answer), rtpproxy_answer0 = js.Any.fromFunction0(rtpproxy_answer0), rtpproxy_answer_ip = js.Any.fromFunction2(rtpproxy_answer_ip), rtpproxy_destroy = js.Any.fromFunction1(rtpproxy_destroy), rtpproxy_destroy0 = js.Any.fromFunction0(rtpproxy_destroy0), rtpproxy_manage = js.Any.fromFunction1(rtpproxy_manage), rtpproxy_manage0 = js.Any.fromFunction0(rtpproxy_manage0), rtpproxy_manage_ip = js.Any.fromFunction2(rtpproxy_manage_ip), rtpproxy_offer = js.Any.fromFunction1(rtpproxy_offer), rtpproxy_offer0 = js.Any.fromFunction0(rtpproxy_offer0), rtpproxy_offer_ip = js.Any.fromFunction2(rtpproxy_offer_ip), rtpproxy_stop_stream2uac = js.Any.fromFunction0(rtpproxy_stop_stream2uac), rtpproxy_stop_stream2uas = js.Any.fromFunction0(rtpproxy_stop_stream2uas), rtpproxy_stream2uac = js.Any.fromFunction2(rtpproxy_stream2uac), rtpproxy_stream2uas = js.Any.fromFunction2(rtpproxy_stream2uas), set_rtpproxy_set = js.Any.fromFunction1(set_rtpproxy_set), start_recording = js.Any.fromFunction0(start_recording))
-  
     __obj.asInstanceOf[Typeofrtpproxy]
   }
 }

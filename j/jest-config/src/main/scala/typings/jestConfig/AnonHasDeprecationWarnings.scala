@@ -14,7 +14,6 @@ object AnonHasDeprecationWarnings {
   @scala.inline
   def apply(hasDeprecationWarnings: Boolean, options: AllOptions): AnonHasDeprecationWarnings = {
     val __obj = js.Dynamic.literal(hasDeprecationWarnings = hasDeprecationWarnings.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHasDeprecationWarnings]
   }
 }

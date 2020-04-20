@@ -16,7 +16,6 @@ object BatchGetOnPremisesInstancesInput {
   @scala.inline
   def apply(instanceNames: InstanceNameList): BatchGetOnPremisesInstancesInput = {
     val __obj = js.Dynamic.literal(instanceNames = instanceNames.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchGetOnPremisesInstancesInput]
   }
 }

@@ -13,7 +13,6 @@ object TextTrackCueEventMap {
   @scala.inline
   def apply(enter: Event_, exit: Event_): TextTrackCueEventMap = {
     val __obj = js.Dynamic.literal(enter = enter.asInstanceOf[js.Any], exit = exit.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TextTrackCueEventMap]
   }
 }

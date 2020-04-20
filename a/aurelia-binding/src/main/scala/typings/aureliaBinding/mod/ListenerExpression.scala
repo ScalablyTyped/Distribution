@@ -12,7 +12,6 @@ object ListenerExpression {
   @scala.inline
   def apply(createBinding: js.Any => Binding): ListenerExpression = {
     val __obj = js.Dynamic.literal(createBinding = js.Any.fromFunction1(createBinding))
-  
     __obj.asInstanceOf[ListenerExpression]
   }
 }

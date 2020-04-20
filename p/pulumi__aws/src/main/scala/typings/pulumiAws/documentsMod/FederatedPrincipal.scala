@@ -14,7 +14,6 @@ object FederatedPrincipal {
   @scala.inline
   def apply(Federated: Input[js.Array[Input[String]] | String]): FederatedPrincipal = {
     val __obj = js.Dynamic.literal(Federated = Federated.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FederatedPrincipal]
   }
 }

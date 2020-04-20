@@ -20,7 +20,6 @@ object DeleteLoadBalancerListenerInput {
   @scala.inline
   def apply(LoadBalancerName: AccessPointName, LoadBalancerPorts: Ports): DeleteLoadBalancerListenerInput = {
     val __obj = js.Dynamic.literal(LoadBalancerName = LoadBalancerName.asInstanceOf[js.Any], LoadBalancerPorts = LoadBalancerPorts.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteLoadBalancerListenerInput]
   }
 }

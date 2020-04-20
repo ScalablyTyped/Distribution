@@ -28,7 +28,7 @@ class FreeCameraDeviceOrientationInput () extends ICameraInput[FreeCamera] {
     * Define the camera controlled by the input.
     */
   @JSName("camera")
-  def camera_MFreeCameraDeviceOrientationInput(): FreeCamera = js.native
+  def camera_MFreeCameraDeviceOrientationInput: FreeCamera = js.native
   @JSName("camera")
   def camera_MFreeCameraDeviceOrientationInput(camera: FreeCamera): js.Any = js.native
   /**

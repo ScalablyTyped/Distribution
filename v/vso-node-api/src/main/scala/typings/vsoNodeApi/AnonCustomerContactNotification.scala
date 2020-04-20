@@ -20,7 +20,6 @@ object AnonCustomerContactNotification {
     reviewNotification: Double
   ): AnonCustomerContactNotification = {
     val __obj = js.Dynamic.literal(customerContactNotification = customerContactNotification.asInstanceOf[js.Any], publisherMemberUpdateNotification = publisherMemberUpdateNotification.asInstanceOf[js.Any], qnaNotification = qnaNotification.asInstanceOf[js.Any], reviewNotification = reviewNotification.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCustomerContactNotification]
   }
 }

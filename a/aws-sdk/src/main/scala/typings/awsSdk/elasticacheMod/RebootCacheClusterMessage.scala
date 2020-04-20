@@ -20,7 +20,6 @@ object RebootCacheClusterMessage {
   @scala.inline
   def apply(CacheClusterId: String, CacheNodeIdsToReboot: CacheNodeIdsList): RebootCacheClusterMessage = {
     val __obj = js.Dynamic.literal(CacheClusterId = CacheClusterId.asInstanceOf[js.Any], CacheNodeIdsToReboot = CacheNodeIdsToReboot.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RebootCacheClusterMessage]
   }
 }

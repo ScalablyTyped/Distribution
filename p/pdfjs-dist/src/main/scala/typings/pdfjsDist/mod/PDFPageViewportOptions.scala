@@ -24,7 +24,6 @@ object PDFPageViewportOptions {
     viewBox: js.Any
   ): PDFPageViewportOptions = {
     val __obj = js.Dynamic.literal(dontFlip = dontFlip.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], viewBox = viewBox.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PDFPageViewportOptions]
   }
 }

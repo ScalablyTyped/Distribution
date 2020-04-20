@@ -22,7 +22,6 @@ object ProviderOverride {
     value: js.Any
   ): ProviderOverride = {
     val __obj = js.Dynamic.literal(deprecatedBehavior = deprecatedBehavior.asInstanceOf[js.Any], deps = deps.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProviderOverride]
   }
 }

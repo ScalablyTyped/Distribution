@@ -14,7 +14,6 @@ object AnonListStyle {
   @scala.inline
   def apply(dataSource: js.Array[scala.Nothing], listStyle: () => Unit, showSearch: Boolean): AnonListStyle = {
     val __obj = js.Dynamic.literal(dataSource = dataSource.asInstanceOf[js.Any], listStyle = js.Any.fromFunction0(listStyle), showSearch = showSearch.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonListStyle]
   }
 }

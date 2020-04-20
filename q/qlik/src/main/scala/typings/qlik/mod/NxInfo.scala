@@ -13,7 +13,6 @@ object NxInfo {
   @scala.inline
   def apply(qId: String, qType: String): NxInfo = {
     val __obj = js.Dynamic.literal(qId = qId.asInstanceOf[js.Any], qType = qType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NxInfo]
   }
 }

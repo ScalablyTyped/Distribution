@@ -52,7 +52,6 @@ object ApiResourceLocation {
     routeTemplate: String
   ): ApiResourceLocation = {
     val __obj = js.Dynamic.literal(area = area.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], maxVersion = maxVersion.asInstanceOf[js.Any], minVersion = minVersion.asInstanceOf[js.Any], releasedVersion = releasedVersion.asInstanceOf[js.Any], resourceName = resourceName.asInstanceOf[js.Any], resourceVersion = resourceVersion.asInstanceOf[js.Any], routeTemplate = routeTemplate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ApiResourceLocation]
   }
 }

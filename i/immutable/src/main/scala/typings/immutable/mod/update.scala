@@ -14,7 +14,7 @@ object update extends js.Object {
     notSetValue: NSV,
     updater: js.Function1[/* value */ V | NSV, V]
   ): js.Array[V] = js.native
-  def apply[C, K /* <: String */](
+  def apply[C, K /* <: /* keyof C */ String */](
     `object`: C,
     key: K,
     updater: js.Function1[
@@ -22,7 +22,7 @@ object update extends js.Object {
       /* import warning: importer.ImportType#apply Failed type conversion: C[K] */ js.Any
     ]
   ): C = js.native
-  def apply[C, K /* <: String */, NSV](
+  def apply[C, K /* <: /* keyof C */ String */, NSV](
     `object`: C,
     key: K,
     notSetValue: NSV,

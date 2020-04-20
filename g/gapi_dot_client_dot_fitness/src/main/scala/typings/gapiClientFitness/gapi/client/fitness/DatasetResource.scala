@@ -18,7 +18,6 @@ object DatasetResource {
   @scala.inline
   def apply(aggregate: AnonFields => Request_[AggregateResponse]): DatasetResource = {
     val __obj = js.Dynamic.literal(aggregate = js.Any.fromFunction1(aggregate))
-  
     __obj.asInstanceOf[DatasetResource]
   }
 }

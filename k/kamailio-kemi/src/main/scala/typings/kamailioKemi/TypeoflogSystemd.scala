@@ -13,7 +13,6 @@ object TypeoflogSystemd {
   @scala.inline
   def apply(sd_journal_print: (String, String) => Double, sd_journal_send_xvap: String => Double): TypeoflogSystemd = {
     val __obj = js.Dynamic.literal(sd_journal_print = js.Any.fromFunction2(sd_journal_print), sd_journal_send_xvap = js.Any.fromFunction1(sd_journal_send_xvap))
-  
     __obj.asInstanceOf[TypeoflogSystemd]
   }
 }

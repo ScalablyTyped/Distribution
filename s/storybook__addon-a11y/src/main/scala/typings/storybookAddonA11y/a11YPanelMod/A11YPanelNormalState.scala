@@ -24,7 +24,6 @@ object A11YPanelNormalState {
     violations: js.Array[Result]
   ): A11YPanelNormalState = {
     val __obj = js.Dynamic.literal(incomplete = incomplete.asInstanceOf[js.Any], passes = passes.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], violations = violations.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[A11YPanelNormalState]
   }
 }

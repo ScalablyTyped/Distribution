@@ -16,7 +16,6 @@ object PropertyNameQuery {
   @scala.inline
   def apply(PropertyNameHint: PropertyNameHint): PropertyNameQuery = {
     val __obj = js.Dynamic.literal(PropertyNameHint = PropertyNameHint.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PropertyNameQuery]
   }
 }

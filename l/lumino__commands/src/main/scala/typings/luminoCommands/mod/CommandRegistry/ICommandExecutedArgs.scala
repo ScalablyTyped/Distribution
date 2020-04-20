@@ -27,7 +27,6 @@ object ICommandExecutedArgs {
   @scala.inline
   def apply(args: ReadonlyPartialJSONObject, id: String, result: js.Promise[_]): ICommandExecutedArgs = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICommandExecutedArgs]
   }
 }

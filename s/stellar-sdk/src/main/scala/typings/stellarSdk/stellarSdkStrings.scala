@@ -92,11 +92,11 @@ object stellarSdkStrings {
   @scala.inline
   def BaseResponse: BaseResponse = "BaseResponse".asInstanceOf[BaseResponse]
   @scala.inline
-  def `Internal Server Error`: `Internal Server Error` = "Internal Server Error".asInstanceOf[`Internal Server Error`]
+  def `Internal Server Error`: `Internal Server Error` = ("Internal Server Error").asInstanceOf[`Internal Server Error`]
   @scala.inline
-  def `Rate Limit Exceeded`: `Rate Limit Exceeded` = "Rate Limit Exceeded".asInstanceOf[`Rate Limit Exceeded`]
+  def `Rate Limit Exceeded`: `Rate Limit Exceeded` = ("Rate Limit Exceeded").asInstanceOf[`Rate Limit Exceeded`]
   @scala.inline
-  def `Transaction Failed`: `Transaction Failed` = "Transaction Failed".asInstanceOf[`Transaction Failed`]
+  def `Transaction Failed`: `Transaction Failed` = ("Transaction Failed").asInstanceOf[`Transaction Failed`]
   @scala.inline
   def account: account = "account".asInstanceOf[account]
   @scala.inline

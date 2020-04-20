@@ -12,7 +12,6 @@ object AnonRemoveListener {
   @scala.inline
   def apply(removeListener: () => Unit): AnonRemoveListener = {
     val __obj = js.Dynamic.literal(removeListener = js.Any.fromFunction0(removeListener))
-  
     __obj.asInstanceOf[AnonRemoveListener]
   }
 }

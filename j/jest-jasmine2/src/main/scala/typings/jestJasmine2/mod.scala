@@ -9,6 +9,12 @@ import typings.expect.typesMod.MatcherState
 import typings.expect.typesMod.Matchers
 import typings.jestEnvironment.mod.JestEnvironment
 import typings.jestJasmine2.createSpyMod.Fn
+import typings.jestJasmine2.jestJasmine2Strings.jasmineDone
+import typings.jestJasmine2.jestJasmine2Strings.jasmineStarted
+import typings.jestJasmine2.jestJasmine2Strings.specDone
+import typings.jestJasmine2.jestJasmine2Strings.specStarted
+import typings.jestJasmine2.jestJasmine2Strings.suiteDone
+import typings.jestJasmine2.jestJasmine2Strings.suiteStarted
 import typings.jestJasmine2.jsApiReporterMod.default
 import typings.jestJasmine2.suiteMod.Attributes
 import typings.jestJasmine2.typesMod.Spy
@@ -33,7 +39,10 @@ object mod extends js.Object {
     var DEFAULT_TIMEOUT_INTERVAL: Double = js.native
     var Env: ReturnType[js.Function1[/* j$ */ this.type, AnonInstantiable]] = js.native
     var JsApiReporter: Instantiable1[/* options */ AnonTimer, default] = js.native
-    var ReportDispatcher: Instantiable1[/* methods */ js.Array[String], typings.jestJasmine2.reportDispatcherMod.default] = js.native
+    var ReportDispatcher: Instantiable1[
+        /* methods */ js.Array[jasmineDone | jasmineStarted | specDone | specStarted | suiteDone | suiteStarted], 
+        typings.jestJasmine2.reportDispatcherMod.default
+      ] = js.native
     var Spec: TypeofSpec = js.native
     var SpyRegistry: Instantiable1[
         js.UndefOr[/* hasCurrentSpies */ AnonCurrentSpies], 

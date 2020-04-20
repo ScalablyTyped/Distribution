@@ -16,12 +16,10 @@ trait OLE_TRISTATE extends js.Object
 
 object OLE_TRISTATE {
   @scala.inline
-  def Checked: `1` = this.cast(1)
+  def Checked: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def Gray: `2` = this.cast(2)
+  def Gray: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def Unchecked: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Unchecked: `0` = 0.asInstanceOf[`0`]
 }
 

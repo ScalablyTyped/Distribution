@@ -48,7 +48,7 @@ object httpMod extends js.Object {
     var client: IClient = js.native
     @JSName("guard")
     var guard_Original: PaginatorGuard[T] = js.native
-    @JSName(scala.scalajs.js.Symbol.iterator)
+    @JSName(js.Symbol.iterator)
     var iterator_Paginator: js.Function0[this.type] = js.native
     var max: js.UndefOr[Double] = js.native
     @JSName("reqgen")
@@ -71,7 +71,7 @@ object httpMod extends js.Object {
     var client: IClient = js.native
     @JSName("guard")
     var guard_Original: PaginatorGuard[T] = js.native
-    @JSName(scala.scalajs.js.Symbol.iterator)
+    @JSName(js.Symbol.iterator)
     var iterator_TokenPaginator: js.Function0[this.type] = js.native
     var max: js.UndefOr[Double] = js.native
     @JSName("reqgen")

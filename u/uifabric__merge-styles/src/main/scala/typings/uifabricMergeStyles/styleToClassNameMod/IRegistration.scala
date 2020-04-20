@@ -16,7 +16,6 @@ object IRegistration {
   @scala.inline
   def apply(args: js.Array[IStyle], className: String, key: String, rulesToInsert: js.Array[String]): IRegistration = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], rulesToInsert = rulesToInsert.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IRegistration]
   }
 }

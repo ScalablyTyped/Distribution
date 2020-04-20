@@ -15,7 +15,7 @@ object addDomListener extends js.Object {
     * @param handler 事件功能函数
     * @param context 事件上下文
     */
-  def apply[N /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any */, E /* <: String */, C](
+  def apply[N /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any */, E /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 92 */ js.Any */, C](
     // tslint:disable-next-line: no-unnecessary-generics
   instance: /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementTagNameMap[N] */ js.Any,
     eventName: E,
@@ -25,7 +25,7 @@ object addDomListener extends js.Object {
       Unit
     ]
   ): EventListener[`0`] = js.native
-  def apply[N /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any */, E /* <: String */, C](
+  def apply[N /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any */, E /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 92 */ js.Any */, C](
     // tslint:disable-next-line: no-unnecessary-generics
   instance: /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementTagNameMap[N] */ js.Any,
     eventName: E,

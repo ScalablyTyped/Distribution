@@ -24,7 +24,6 @@ object PutUserPolicyRequest {
   @scala.inline
   def apply(PolicyDocument: policyDocumentType, PolicyName: policyNameType, UserName: existingUserNameType): PutUserPolicyRequest = {
     val __obj = js.Dynamic.literal(PolicyDocument = PolicyDocument.asInstanceOf[js.Any], PolicyName = PolicyName.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutUserPolicyRequest]
   }
 }

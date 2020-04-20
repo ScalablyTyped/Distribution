@@ -44,7 +44,6 @@ object ProjectsResource {
     updateRemoteConfig: AnonAlt => Request_[RemoteConfig]
   ): ProjectsResource = {
     val __obj = js.Dynamic.literal(getRemoteConfig = js.Any.fromFunction1(getRemoteConfig), updateRemoteConfig = js.Any.fromFunction1(updateRemoteConfig))
-  
     __obj.asInstanceOf[ProjectsResource]
   }
 }

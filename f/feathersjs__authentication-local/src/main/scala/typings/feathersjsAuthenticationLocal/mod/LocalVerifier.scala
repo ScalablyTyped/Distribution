@@ -2,6 +2,7 @@ package typings.feathersjsAuthenticationLocal.mod
 
 import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.feathersjsAuthenticationLocal.AnonMessage
 import typings.feathersjsFeathers.mod.Application
 import typings.feathersjsFeathers.mod.Paginated
@@ -19,7 +20,7 @@ class LocalVerifier protected () extends js.Object {
   def _normalizeResult[T](results: Paginated[T]): js.Promise[T] = js.native
    // normalizes result from service to account for pagination
   def verify(
-    req: Request_[ParamsDictionary],
+    req: Request_[ParamsDictionary, _, _, Query],
     username: String,
     password: String,
     done: js.Function3[

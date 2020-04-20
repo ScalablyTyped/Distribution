@@ -13,7 +13,6 @@ object SqlFragmentType {
   @scala.inline
   def apply(parameters: js.Array[PrimitiveValueExpressionType], sql: String): SqlFragmentType = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], sql = sql.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SqlFragmentType]
   }
 }

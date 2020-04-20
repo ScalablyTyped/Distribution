@@ -16,7 +16,6 @@ object DeleteTopicInput {
   @scala.inline
   def apply(TopicArn: topicARN): DeleteTopicInput = {
     val __obj = js.Dynamic.literal(TopicArn = TopicArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteTopicInput]
   }
 }

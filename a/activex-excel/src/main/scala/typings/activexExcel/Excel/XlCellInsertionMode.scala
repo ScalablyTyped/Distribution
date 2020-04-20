@@ -16,12 +16,10 @@ trait XlCellInsertionMode extends js.Object
 
 object XlCellInsertionMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlInsertDeleteCells: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlInsertDeleteCells: `1` = this.cast(1)
+  def xlInsertEntireRows: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlInsertEntireRows: `2` = this.cast(2)
-  @scala.inline
-  def xlOverwriteCells: `0` = this.cast(0)
+  def xlOverwriteCells: `0` = 0.asInstanceOf[`0`]
 }
 

@@ -15,7 +15,6 @@ object AnonSyncEventType {
   @scala.inline
   def apply(SyncEventType: MsoSyncEventType, Wb: Workbook): AnonSyncEventType = {
     val __obj = js.Dynamic.literal(SyncEventType = SyncEventType.asInstanceOf[js.Any], Wb = Wb.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSyncEventType]
   }
 }

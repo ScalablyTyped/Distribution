@@ -13,7 +13,6 @@ object FlashComponentsPanel {
   @scala.inline
   def apply(addItemToDocument: () => js.Any, reload: () => js.Any): FlashComponentsPanel = {
     val __obj = js.Dynamic.literal(addItemToDocument = js.Any.fromFunction0(addItemToDocument), reload = js.Any.fromFunction0(reload))
-  
     __obj.asInstanceOf[FlashComponentsPanel]
   }
 }

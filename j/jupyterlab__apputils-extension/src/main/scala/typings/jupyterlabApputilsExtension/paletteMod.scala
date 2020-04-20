@@ -41,7 +41,7 @@ object paletteMod extends js.Object {
     /* CompleteClass */
     override def addItem(options: IPaletteItem): IDisposable = js.native
     @JSName("placeholder")
-    def placeholder_MPalette(): String = js.native
+    def placeholder_MPalette: String = js.native
     /**
       * The placeholder text of the command palette's search input.
       */

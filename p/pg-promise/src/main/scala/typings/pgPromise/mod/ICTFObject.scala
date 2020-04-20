@@ -14,7 +14,6 @@ object ICTFObject {
   @scala.inline
   def apply(toPostgres: js.Any => js.Any): ICTFObject = {
     val __obj = js.Dynamic.literal(toPostgres = js.Any.fromFunction1(toPostgres))
-  
     __obj.asInstanceOf[ICTFObject]
   }
 }

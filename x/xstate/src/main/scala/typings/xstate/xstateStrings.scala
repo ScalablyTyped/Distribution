@@ -31,9 +31,6 @@ object xstateStrings {
   sealed trait TransitionDefinitionMap extends js.Object
   
   @js.native
-  sealed trait TransitionsConfigMap extends js.Object
-  
-  @js.native
   sealed trait _empty extends js.Object
   
   @js.native
@@ -94,8 +91,6 @@ object xstateStrings {
   def StatesDefinition: StatesDefinition = "StatesDefinition".asInstanceOf[StatesDefinition]
   @scala.inline
   def TransitionDefinitionMap: TransitionDefinitionMap = "TransitionDefinitionMap".asInstanceOf[TransitionDefinitionMap]
-  @scala.inline
-  def TransitionsConfigMap: TransitionsConfigMap = "TransitionsConfigMap".asInstanceOf[TransitionsConfigMap]
   @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline

@@ -13,7 +13,6 @@ object AnonRequire {
   @scala.inline
   def apply(require: String | `true`): AnonRequire = {
     val __obj = js.Dynamic.literal(require = require.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRequire]
   }
 }

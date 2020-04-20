@@ -18,7 +18,6 @@ object HistoryAdapter {
     trigger: (js.Any, String) => Unit
   ): HistoryAdapter = {
     val __obj = js.Dynamic.literal(bind = js.Any.fromFunction3(bind), onDomLoad = js.Any.fromFunction1(onDomLoad), trigger = js.Any.fromFunction2(trigger))
-  
     __obj.asInstanceOf[HistoryAdapter]
   }
 }

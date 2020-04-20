@@ -14,7 +14,6 @@ object IQueryResult {
   @scala.inline
   def apply(data: Array[IDocumentData], errMsg: String): IQueryResult = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IQueryResult]
   }
 }

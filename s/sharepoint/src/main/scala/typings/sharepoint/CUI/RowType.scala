@@ -13,12 +13,10 @@ trait RowType extends js.Object
 
 object RowType {
   @scala.inline
-  def `2`: typings.sharepoint.sharepointNumbers.`2` = this.cast(2)
+  def `2`: typings.sharepoint.sharepointNumbers.`2` = 2.asInstanceOf[typings.sharepoint.sharepointNumbers.`2`]
   @scala.inline
-  def `3`: typings.sharepoint.sharepointNumbers.`3` = this.cast(3)
+  def `3`: typings.sharepoint.sharepointNumbers.`3` = 3.asInstanceOf[typings.sharepoint.sharepointNumbers.`3`]
   @scala.inline
-  def `4`: typings.sharepoint.sharepointNumbers.`4` = this.cast(4)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `4`: typings.sharepoint.sharepointNumbers.`4` = 4.asInstanceOf[typings.sharepoint.sharepointNumbers.`4`]
 }
 

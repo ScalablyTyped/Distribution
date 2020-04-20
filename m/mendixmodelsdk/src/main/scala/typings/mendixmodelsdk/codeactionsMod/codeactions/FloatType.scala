@@ -32,9 +32,9 @@ class FloatType protected () extends PrimitiveType {
   @JSName("model")
   var model_FFloatType: IModel = js.native
   @JSName("containerAsBasicParameterType")
-  def containerAsBasicParameterType_MFloatType(): BasicParameterType = js.native
+  def containerAsBasicParameterType_MFloatType: BasicParameterType = js.native
   @JSName("containerAsCodeAction")
-  def containerAsCodeAction_MFloatType(): CodeAction = js.native
+  def containerAsCodeAction_MFloatType: CodeAction = js.native
 }
 
 /* static members */

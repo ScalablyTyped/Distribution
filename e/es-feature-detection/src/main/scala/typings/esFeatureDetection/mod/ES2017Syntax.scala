@@ -13,12 +13,10 @@ trait ES2017Syntax extends js.Object
 
 object ES2017Syntax {
   @scala.inline
-  def `Trailing parameter commas`: typings.esFeatureDetection.esFeatureDetectionStrings.`Trailing parameter commas` = this.cast("Trailing parameter commas")
+  def `Trailing parameter commas`: typings.esFeatureDetection.esFeatureDetectionStrings.`Trailing parameter commas` = ("Trailing parameter commas").asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.`Trailing parameter commas`]
   @scala.inline
-  def __all: typings.esFeatureDetection.esFeatureDetectionStrings.__all = this.cast("__all")
+  def __all: typings.esFeatureDetection.esFeatureDetectionStrings.__all = "__all".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.__all]
   @scala.inline
-  def asyncSlashawait: typings.esFeatureDetection.esFeatureDetectionStrings.asyncSlashawait = this.cast("async/await")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def asyncSlashawait: typings.esFeatureDetection.esFeatureDetectionStrings.asyncSlashawait = "async/await".asInstanceOf[typings.esFeatureDetection.esFeatureDetectionStrings.asyncSlashawait]
 }
 

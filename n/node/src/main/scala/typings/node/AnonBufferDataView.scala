@@ -14,7 +14,6 @@ object AnonBufferDataView {
   @scala.inline
   def apply(buffer: DataView, bytesWritten: Double): AnonBufferDataView = {
     val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], bytesWritten = bytesWritten.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBufferDataView]
   }
 }

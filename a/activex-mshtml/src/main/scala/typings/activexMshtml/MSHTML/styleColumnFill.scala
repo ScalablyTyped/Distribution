@@ -18,14 +18,12 @@ trait styleColumnFill extends js.Object
 
 object styleColumnFill {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleColumnFillAuto: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleColumnFillAuto: `0` = this.cast(0)
+  def styleColumnFillBalance: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleColumnFillBalance: `1` = this.cast(1)
+  def styleColumnFillNotSet: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleColumnFillNotSet: `2` = this.cast(2)
-  @scala.inline
-  def styleColumnFill_Max: `2147483647` = this.cast(2147483647)
+  def styleColumnFill_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

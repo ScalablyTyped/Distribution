@@ -13,7 +13,6 @@ object PickImplcontent {
   @scala.inline
   def apply(content: String): PickImplcontent = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplcontent]
   }
 }

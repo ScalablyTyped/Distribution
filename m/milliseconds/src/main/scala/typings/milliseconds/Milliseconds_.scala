@@ -26,7 +26,6 @@ object Milliseconds_ {
     years: Double => Double
   ): Milliseconds_ = {
     val __obj = js.Dynamic.literal(days = js.Any.fromFunction1(days), hours = js.Any.fromFunction1(hours), minutes = js.Any.fromFunction1(minutes), months = js.Any.fromFunction1(months), seconds = js.Any.fromFunction1(seconds), weeks = js.Any.fromFunction1(weeks), years = js.Any.fromFunction1(years))
-  
     __obj.asInstanceOf[Milliseconds_]
   }
 }

@@ -13,7 +13,6 @@ object ActionsListRepoWorkflowsResponse {
   @scala.inline
   def apply(total_count: Double, workflows: js.Array[ActionsListRepoWorkflowsResponseWorkflowsItem]): ActionsListRepoWorkflowsResponse = {
     val __obj = js.Dynamic.literal(total_count = total_count.asInstanceOf[js.Any], workflows = workflows.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ActionsListRepoWorkflowsResponse]
   }
 }

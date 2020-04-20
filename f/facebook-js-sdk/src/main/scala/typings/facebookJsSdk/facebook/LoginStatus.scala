@@ -14,14 +14,12 @@ trait LoginStatus extends js.Object
 
 object LoginStatus {
   @scala.inline
-  def authorization_expired: typings.facebookJsSdk.facebookJsSdkStrings.authorization_expired = this.cast("authorization_expired")
+  def authorization_expired: typings.facebookJsSdk.facebookJsSdkStrings.authorization_expired = "authorization_expired".asInstanceOf[typings.facebookJsSdk.facebookJsSdkStrings.authorization_expired]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def connected: typings.facebookJsSdk.facebookJsSdkStrings.connected = "connected".asInstanceOf[typings.facebookJsSdk.facebookJsSdkStrings.connected]
   @scala.inline
-  def connected: typings.facebookJsSdk.facebookJsSdkStrings.connected = this.cast("connected")
+  def not_authorized: typings.facebookJsSdk.facebookJsSdkStrings.not_authorized = "not_authorized".asInstanceOf[typings.facebookJsSdk.facebookJsSdkStrings.not_authorized]
   @scala.inline
-  def not_authorized: typings.facebookJsSdk.facebookJsSdkStrings.not_authorized = this.cast("not_authorized")
-  @scala.inline
-  def unknown: typings.facebookJsSdk.facebookJsSdkStrings.unknown = this.cast("unknown")
+  def unknown: typings.facebookJsSdk.facebookJsSdkStrings.unknown = "unknown".asInstanceOf[typings.facebookJsSdk.facebookJsSdkStrings.unknown]
 }
 

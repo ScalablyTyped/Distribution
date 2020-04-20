@@ -14,7 +14,6 @@ object mediaAttachedData {
   @scala.inline
   def apply(mediaSource: String, video: HTMLVideoElement): mediaAttachedData = {
     val __obj = js.Dynamic.literal(mediaSource = mediaSource.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[mediaAttachedData]
   }
 }

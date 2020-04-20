@@ -28,21 +28,21 @@ class JavaActionParameterMapping protected () extends CodeActionParameterMapping
     *
     * In version 6.7.0: deleted
     */
-  def argument(): String = js.native
+  def argument: String = js.native
   def argument(newValue: String): js.Any = js.native
-  def parameter(): IJavaActionParameter = js.native
+  def parameter: IJavaActionParameter = js.native
   def parameter(newValue: IJavaActionParameter): js.Any = js.native
-  def parameterQualifiedName(): String = js.native
+  def parameterQualifiedName: String = js.native
   /**
     * In version 7.21.0: introduced
     */
-  def parameterValue(): CodeActionParameterValue = js.native
+  def parameterValue: CodeActionParameterValue = js.native
   def parameterValue(newValue: CodeActionParameterValue): js.Any = js.native
   /**
     * In version 7.21.0: deleted
     * In version 6.7.0: introduced
     */
-  def value(): JavaActionParameterValue = js.native
+  def value: JavaActionParameterValue = js.native
   def value(newValue: JavaActionParameterValue): js.Any = js.native
 }
 

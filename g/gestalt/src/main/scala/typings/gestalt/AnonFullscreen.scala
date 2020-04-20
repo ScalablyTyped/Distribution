@@ -16,7 +16,6 @@ object AnonFullscreen {
   @scala.inline
   def apply(event: SyntheticEvent[HTMLDivElement, Event_], fullscreen: Boolean): AnonFullscreen = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], fullscreen = fullscreen.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFullscreen]
   }
 }

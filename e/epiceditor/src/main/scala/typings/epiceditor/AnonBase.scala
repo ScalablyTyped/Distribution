@@ -14,7 +14,6 @@ object AnonBase {
   @scala.inline
   def apply(base: String, editor: String, preview: String): AnonBase = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], editor = editor.asInstanceOf[js.Any], preview = preview.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBase]
   }
 }

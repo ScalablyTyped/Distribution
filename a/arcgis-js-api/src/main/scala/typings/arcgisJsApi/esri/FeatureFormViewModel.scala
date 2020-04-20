@@ -8,10 +8,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-trait FeatureFormViewModel
-  extends Accessor
-     with Evented {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.arcgisJsApi.esri.Evented because Inheritance from two classes. Inlined emit, emit, hasEventListener, on, on */ @js.native
+trait FeatureFormViewModel extends Accessor {
   /**
     * The associated feature containing the editable attributes. A common way to access this is via the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#hitTest) or [SceneView's](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#hitTest) `hitTest()` method.
     *
@@ -58,6 +57,17 @@ trait FeatureFormViewModel
     */
   var valid: Boolean = js.native
   /**
+    * Emits an event on the instance. This method should only be used when creating subclasses of this class.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Evented.html#emit)
+    *
+    * @param type The name of the event.
+    * @param event The event payload.
+    *
+    */
+  def emit(`type`: String): Boolean = js.native
+  def emit(`type`: String, event: js.Any): Boolean = js.native
+  /**
     * Convenience method to find input fields.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FeatureFormViewModel.html#findField)
@@ -74,6 +84,26 @@ trait FeatureFormViewModel
     *
     */
   def getValues(): js.Any = js.native
+  /**
+    * Indicates whether there is an event listener on the instance that matches the provided event name.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Evented.html#hasEventListener)
+    *
+    * @param type The name of the event.
+    *
+    */
+  def hasEventListener(`type`: String): Boolean = js.native
+  /**
+    * Registers an event handler on the instance. Call this method to hook an event with a listener.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Evented.html#on)
+    *
+    * @param type A event type, or an array of event types, to listen for.
+    * @param listener The function to call when the event is fired.
+    *
+    */
+  def on(`type`: String, listener: EventHandler): IHandle = js.native
+  def on(`type`: js.Array[String], listener: EventHandler): IHandle = js.native
   @JSName("on")
   def on_submit(name: submit, eventHandler: FeatureFormViewModelSubmitEventHandler): IHandle = js.native
   @JSName("on")

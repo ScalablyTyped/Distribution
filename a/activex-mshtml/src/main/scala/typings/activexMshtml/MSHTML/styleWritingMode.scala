@@ -36,32 +36,30 @@ trait styleWritingMode extends js.Object
 
 object styleWritingMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleWritingModeBtlr: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def styleWritingModeBtlr: `6` = this.cast(6)
+  def styleWritingModeBtrl: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def styleWritingModeBtrl: `3` = this.cast(3)
+  def styleWritingModeLr: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def styleWritingModeLr: `9` = this.cast(9)
+  def styleWritingModeLrbt: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def styleWritingModeLrbt: `7` = this.cast(7)
+  def styleWritingModeLrtb: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleWritingModeLrtb: `0` = this.cast(0)
+  def styleWritingModeNotSet: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def styleWritingModeNotSet: `4` = this.cast(4)
+  def styleWritingModeRl: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def styleWritingModeRl: `10` = this.cast(10)
+  def styleWritingModeRlbt: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def styleWritingModeRlbt: `8` = this.cast(8)
+  def styleWritingModeRltb: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleWritingModeRltb: `2` = this.cast(2)
+  def styleWritingModeTb: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def styleWritingModeTb: `11` = this.cast(11)
+  def styleWritingModeTblr: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def styleWritingModeTblr: `5` = this.cast(5)
+  def styleWritingModeTbrl: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleWritingModeTbrl: `1` = this.cast(1)
-  @scala.inline
-  def styleWritingMode_Max: `2147483647` = this.cast(2147483647)
+  def styleWritingMode_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

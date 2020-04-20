@@ -15,7 +15,6 @@ object AnonAeadAlgorithm {
   @scala.inline
   def apply(aeadAlgorithm: String, algorithm: String, data: Uint8Array): AnonAeadAlgorithm = {
     val __obj = js.Dynamic.literal(aeadAlgorithm = aeadAlgorithm.asInstanceOf[js.Any], algorithm = algorithm.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAeadAlgorithm]
   }
 }

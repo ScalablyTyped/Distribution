@@ -17,20 +17,18 @@ trait RTCIceConnectionState extends js.Object
 
 object RTCIceConnectionState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def checking: typings.reactNativeWebrtc.reactNativeWebrtcStrings.checking = "checking".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.checking]
   @scala.inline
-  def checking: typings.reactNativeWebrtc.reactNativeWebrtcStrings.checking = this.cast("checking")
+  def closed: typings.reactNativeWebrtc.reactNativeWebrtcStrings.closed = "closed".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.closed]
   @scala.inline
-  def closed: typings.reactNativeWebrtc.reactNativeWebrtcStrings.closed = this.cast("closed")
+  def completed: typings.reactNativeWebrtc.reactNativeWebrtcStrings.completed = "completed".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.completed]
   @scala.inline
-  def completed: typings.reactNativeWebrtc.reactNativeWebrtcStrings.completed = this.cast("completed")
+  def connected: typings.reactNativeWebrtc.reactNativeWebrtcStrings.connected = "connected".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.connected]
   @scala.inline
-  def connected: typings.reactNativeWebrtc.reactNativeWebrtcStrings.connected = this.cast("connected")
+  def disconnected: typings.reactNativeWebrtc.reactNativeWebrtcStrings.disconnected = "disconnected".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.disconnected]
   @scala.inline
-  def disconnected: typings.reactNativeWebrtc.reactNativeWebrtcStrings.disconnected = this.cast("disconnected")
+  def failed: typings.reactNativeWebrtc.reactNativeWebrtcStrings.failed = "failed".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.failed]
   @scala.inline
-  def failed: typings.reactNativeWebrtc.reactNativeWebrtcStrings.failed = this.cast("failed")
-  @scala.inline
-  def `new`: typings.reactNativeWebrtc.reactNativeWebrtcStrings.`new` = this.cast("new")
+  def `new`: typings.reactNativeWebrtc.reactNativeWebrtcStrings.`new` = "new".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.`new`]
 }
 

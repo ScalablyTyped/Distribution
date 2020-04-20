@@ -16,7 +16,6 @@ object ListenerTlsAcmCertificate {
   @scala.inline
   def apply(certificateArn: Arn): ListenerTlsAcmCertificate = {
     val __obj = js.Dynamic.literal(certificateArn = certificateArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListenerTlsAcmCertificate]
   }
 }

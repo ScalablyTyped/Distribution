@@ -16,7 +16,6 @@ object GetBaiduChannelRequest {
   @scala.inline
   def apply(ApplicationId: string): GetBaiduChannelRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBaiduChannelRequest]
   }
 }

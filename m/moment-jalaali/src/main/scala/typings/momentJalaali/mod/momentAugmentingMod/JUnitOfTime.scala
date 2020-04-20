@@ -12,10 +12,8 @@ trait JUnitOfTime extends js.Object
 
 object JUnitOfTime {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def jMonth: typings.momentJalaali.momentJalaaliStrings.jMonth = "jMonth".asInstanceOf[typings.momentJalaali.momentJalaaliStrings.jMonth]
   @scala.inline
-  def jMonth: typings.momentJalaali.momentJalaaliStrings.jMonth = this.cast("jMonth")
-  @scala.inline
-  def jYear: typings.momentJalaali.momentJalaaliStrings.jYear = this.cast("jYear")
+  def jYear: typings.momentJalaali.momentJalaaliStrings.jYear = "jYear".asInstanceOf[typings.momentJalaali.momentJalaaliStrings.jYear]
 }
 

@@ -12,7 +12,6 @@ object AnonResizable {
   @scala.inline
   def apply(Resizable: Boolean): AnonResizable = {
     val __obj = js.Dynamic.literal(Resizable = Resizable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonResizable]
   }
 }

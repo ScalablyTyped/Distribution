@@ -12,7 +12,6 @@ object ZlibParams {
   @scala.inline
   def apply(params: (Double, Double, js.Function0[Unit]) => Unit): ZlibParams = {
     val __obj = js.Dynamic.literal(params = js.Any.fromFunction3(params))
-  
     __obj.asInstanceOf[ZlibParams]
   }
 }

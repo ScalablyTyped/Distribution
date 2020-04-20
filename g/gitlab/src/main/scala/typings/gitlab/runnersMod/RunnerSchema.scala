@@ -28,7 +28,6 @@ object RunnerSchema {
     status: String
   ): RunnerSchema = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ip_address = ip_address.asInstanceOf[js.Any], is_shared = is_shared.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], online = online.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RunnerSchema]
   }
 }

@@ -26,7 +26,6 @@ object IHttpFilter {
     sendRequestAsync: HttpRequestMessage => IPromiseWithIAsyncOperationWithProgress[HttpResponseMessage, HttpProgress]
   ): IHttpFilter = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), sendRequestAsync = js.Any.fromFunction1(sendRequestAsync))
-  
     __obj.asInstanceOf[IHttpFilter]
   }
 }

@@ -24,7 +24,6 @@ object GitLastChangeTreeItems {
   @scala.inline
   def apply(commits: js.Array[GitCommitRef], items: js.Array[GitLastChangeItem], lastExploredTime: Date): GitLastChangeTreeItems = {
     val __obj = js.Dynamic.literal(commits = commits.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], lastExploredTime = lastExploredTime.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GitLastChangeTreeItems]
   }
 }

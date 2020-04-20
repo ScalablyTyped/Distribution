@@ -16,7 +16,6 @@ object DeleteOrganizationalUnitRequest {
   @scala.inline
   def apply(OrganizationalUnitId: OrganizationalUnitId): DeleteOrganizationalUnitRequest = {
     val __obj = js.Dynamic.literal(OrganizationalUnitId = OrganizationalUnitId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteOrganizationalUnitRequest]
   }
 }

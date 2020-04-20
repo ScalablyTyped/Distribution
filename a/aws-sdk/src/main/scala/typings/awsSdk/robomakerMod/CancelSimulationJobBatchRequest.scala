@@ -16,7 +16,6 @@ object CancelSimulationJobBatchRequest {
   @scala.inline
   def apply(batch: Arn): CancelSimulationJobBatchRequest = {
     val __obj = js.Dynamic.literal(batch = batch.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CancelSimulationJobBatchRequest]
   }
 }

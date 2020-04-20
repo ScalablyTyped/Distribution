@@ -20,7 +20,6 @@ object Order {
   @scala.inline
   def apply(Column: NameString, SortOrder: IntegerFlag): Order = {
     val __obj = js.Dynamic.literal(Column = Column.asInstanceOf[js.Any], SortOrder = SortOrder.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Order]
   }
 }

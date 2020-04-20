@@ -20,7 +20,6 @@ object DetectSyntaxRequest {
   @scala.inline
   def apply(LanguageCode: SyntaxLanguageCode, Text: String): DetectSyntaxRequest = {
     val __obj = js.Dynamic.literal(LanguageCode = LanguageCode.asInstanceOf[js.Any], Text = Text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DetectSyntaxRequest]
   }
 }

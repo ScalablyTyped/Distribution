@@ -12,7 +12,6 @@ object OEmbedAdapterConfig {
   @scala.inline
   def apply(apiKey: String): OEmbedAdapterConfig = {
     val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OEmbedAdapterConfig]
   }
 }

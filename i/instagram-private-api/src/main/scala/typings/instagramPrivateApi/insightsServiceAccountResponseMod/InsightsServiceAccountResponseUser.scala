@@ -26,7 +26,6 @@ object InsightsServiceAccountResponseUser {
     username: String
   ): InsightsServiceAccountResponseUser = {
     val __obj = js.Dynamic.literal(business_manager = business_manager.asInstanceOf[js.Any], business_profile = business_profile.asInstanceOf[js.Any], followers_count = followers_count.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], instagram_user_id = instagram_user_id.asInstanceOf[js.Any], profile_picture = profile_picture.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InsightsServiceAccountResponseUser]
   }
 }

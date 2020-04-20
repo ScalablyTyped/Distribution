@@ -18,7 +18,6 @@ object IBreadcrumbData {
     renderedOverflowItems: js.Array[IBreadcrumbItem]
   ): IBreadcrumbData = {
     val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], renderedItems = renderedItems.asInstanceOf[js.Any], renderedOverflowItems = renderedOverflowItems.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IBreadcrumbData]
   }
 }

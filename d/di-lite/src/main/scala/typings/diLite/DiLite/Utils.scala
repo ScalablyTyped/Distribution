@@ -12,7 +12,6 @@ object Utils {
   @scala.inline
   def apply(invokeStmt: (js.Any, String) => String): Utils = {
     val __obj = js.Dynamic.literal(invokeStmt = js.Any.fromFunction2(invokeStmt))
-  
     __obj.asInstanceOf[Utils]
   }
 }

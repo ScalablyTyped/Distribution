@@ -14,7 +14,6 @@ object PackageInfo {
   @scala.inline
   def apply(name: String, path: String, version: String): PackageInfo = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PackageInfo]
   }
 }

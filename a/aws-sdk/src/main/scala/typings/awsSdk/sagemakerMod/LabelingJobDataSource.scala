@@ -16,7 +16,6 @@ object LabelingJobDataSource {
   @scala.inline
   def apply(S3DataSource: LabelingJobS3DataSource): LabelingJobDataSource = {
     val __obj = js.Dynamic.literal(S3DataSource = S3DataSource.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LabelingJobDataSource]
   }
 }

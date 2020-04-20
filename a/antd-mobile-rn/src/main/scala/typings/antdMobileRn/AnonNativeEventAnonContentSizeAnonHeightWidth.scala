@@ -12,7 +12,6 @@ object AnonNativeEventAnonContentSizeAnonHeightWidth {
   @scala.inline
   def apply(nativeEvent: AnonContentSizeAnonHeightWidth): AnonNativeEventAnonContentSizeAnonHeightWidth = {
     val __obj = js.Dynamic.literal(nativeEvent = nativeEvent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNativeEventAnonContentSizeAnonHeightWidth]
   }
 }

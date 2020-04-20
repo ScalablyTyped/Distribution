@@ -58,7 +58,6 @@ object AnnotationsetsResource {
     update: AnonBearertoken => Request_[AnnotationSet]
   ): AnnotationsetsResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), search = js.Any.fromFunction1(search), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[AnnotationsetsResource]
   }
 }

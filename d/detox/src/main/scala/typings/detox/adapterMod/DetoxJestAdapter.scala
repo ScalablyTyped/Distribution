@@ -24,7 +24,6 @@ object DetoxJestAdapter {
     specStarted: () => Unit
   ): DetoxJestAdapter = {
     val __obj = js.Dynamic.literal(afterAll = js.Any.fromFunction0(afterAll), beforeEach = js.Any.fromFunction0(beforeEach), detox = detox.asInstanceOf[js.Any], specDone = js.Any.fromFunction0(specDone), specStarted = js.Any.fromFunction0(specStarted))
-  
     __obj.asInstanceOf[DetoxJestAdapter]
   }
 }

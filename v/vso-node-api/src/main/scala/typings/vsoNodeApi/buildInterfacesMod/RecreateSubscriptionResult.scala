@@ -13,7 +13,6 @@ object RecreateSubscriptionResult {
   @scala.inline
   def apply(eventType: String, repositoryType: String): RecreateSubscriptionResult = {
     val __obj = js.Dynamic.literal(eventType = eventType.asInstanceOf[js.Any], repositoryType = repositoryType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RecreateSubscriptionResult]
   }
 }

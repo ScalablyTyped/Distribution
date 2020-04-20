@@ -19,7 +19,6 @@ object AnonNewRange {
   @scala.inline
   def apply(newRange: Range, oldRange: Range): AnonNewRange = {
     val __obj = js.Dynamic.literal(newRange = newRange.asInstanceOf[js.Any], oldRange = oldRange.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNewRange]
   }
 }

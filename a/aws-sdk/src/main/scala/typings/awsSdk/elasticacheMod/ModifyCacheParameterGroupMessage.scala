@@ -20,7 +20,6 @@ object ModifyCacheParameterGroupMessage {
   @scala.inline
   def apply(CacheParameterGroupName: String, ParameterNameValues: ParameterNameValueList): ModifyCacheParameterGroupMessage = {
     val __obj = js.Dynamic.literal(CacheParameterGroupName = CacheParameterGroupName.asInstanceOf[js.Any], ParameterNameValues = ParameterNameValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ModifyCacheParameterGroupMessage]
   }
 }

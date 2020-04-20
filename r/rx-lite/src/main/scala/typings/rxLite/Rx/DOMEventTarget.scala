@@ -16,7 +16,6 @@ object DOMEventTarget {
     removeEventListener: (String, js.Function1[/* e */ js.Any, _], Boolean) => Unit
   ): DOMEventTarget = {
     val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction3(addEventListener), removeEventListener = js.Any.fromFunction3(removeEventListener))
-  
     __obj.asInstanceOf[DOMEventTarget]
   }
 }

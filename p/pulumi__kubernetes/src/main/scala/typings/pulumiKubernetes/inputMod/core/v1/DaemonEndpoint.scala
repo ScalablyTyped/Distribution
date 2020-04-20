@@ -19,7 +19,6 @@ object DaemonEndpoint {
   @scala.inline
   def apply(Port: Input[Double]): DaemonEndpoint = {
     val __obj = js.Dynamic.literal(Port = Port.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DaemonEndpoint]
   }
 }

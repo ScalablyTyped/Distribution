@@ -13,7 +13,6 @@ object AnonButtonStyle {
   @scala.inline
   def apply(buttonStyle: RadioGroupButtonStyle): AnonButtonStyle = {
     val __obj = js.Dynamic.literal(buttonStyle = buttonStyle.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonButtonStyle]
   }
 }

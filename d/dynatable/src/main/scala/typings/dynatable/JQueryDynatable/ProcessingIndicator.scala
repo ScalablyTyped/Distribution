@@ -39,7 +39,6 @@ object ProcessingIndicator {
     show: () => Unit
   ): ProcessingIndicator = {
     val __obj = js.Dynamic.literal(attach = js.Any.fromFunction0(attach), create = js.Any.fromFunction0(create), hide = js.Any.fromFunction0(hide), init = js.Any.fromFunction0(init), position = js.Any.fromFunction0(position), show = js.Any.fromFunction0(show))
-  
     __obj.asInstanceOf[ProcessingIndicator]
   }
 }

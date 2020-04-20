@@ -12,10 +12,8 @@ trait TotalModeType extends js.Object
 
 object TotalModeType {
   @scala.inline
-  def TOTAL_EXPR: typings.qlikEngineapi.qlikEngineapiStrings.TOTAL_EXPR = this.cast("TOTAL_EXPR")
+  def TOTAL_EXPR: typings.qlikEngineapi.qlikEngineapiStrings.TOTAL_EXPR = "TOTAL_EXPR".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.TOTAL_EXPR]
   @scala.inline
-  def TOTAL_OFF: typings.qlikEngineapi.qlikEngineapiStrings.TOTAL_OFF = this.cast("TOTAL_OFF")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def TOTAL_OFF: typings.qlikEngineapi.qlikEngineapiStrings.TOTAL_OFF = "TOTAL_OFF".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.TOTAL_OFF]
 }
 

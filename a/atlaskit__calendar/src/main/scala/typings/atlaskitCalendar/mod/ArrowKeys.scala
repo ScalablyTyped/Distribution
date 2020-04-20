@@ -14,14 +14,12 @@ trait ArrowKeys extends js.Object
 
 object ArrowKeys {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def down: typings.atlaskitCalendar.atlaskitCalendarStrings.down = "down".asInstanceOf[typings.atlaskitCalendar.atlaskitCalendarStrings.down]
   @scala.inline
-  def down: typings.atlaskitCalendar.atlaskitCalendarStrings.down = this.cast("down")
+  def left: typings.atlaskitCalendar.atlaskitCalendarStrings.left = "left".asInstanceOf[typings.atlaskitCalendar.atlaskitCalendarStrings.left]
   @scala.inline
-  def left: typings.atlaskitCalendar.atlaskitCalendarStrings.left = this.cast("left")
+  def right: typings.atlaskitCalendar.atlaskitCalendarStrings.right = "right".asInstanceOf[typings.atlaskitCalendar.atlaskitCalendarStrings.right]
   @scala.inline
-  def right: typings.atlaskitCalendar.atlaskitCalendarStrings.right = this.cast("right")
-  @scala.inline
-  def up: typings.atlaskitCalendar.atlaskitCalendarStrings.up = this.cast("up")
+  def up: typings.atlaskitCalendar.atlaskitCalendarStrings.up = "up".asInstanceOf[typings.atlaskitCalendar.atlaskitCalendarStrings.up]
 }
 

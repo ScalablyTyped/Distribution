@@ -28,7 +28,7 @@ trait XmlAttribute[Parent] extends js.Object {
   /**
     * Gets the name of this attribute.
     */
-  def name(): String = js.native
+  def name: String = js.native
   /**
     * Sets the name of this attribute.
     */

@@ -61,7 +61,7 @@ class GeometryBufferRenderer protected () extends js.Object {
   /**
     * Gets a boolean indicating if objects positions are enabled for the G buffer.
     */
-  def enablePosition(): Boolean = js.native
+  def enablePosition: Boolean = js.native
   /**
     * Sets whether or not objects positions are enabled for the G buffer.
     */
@@ -69,7 +69,7 @@ class GeometryBufferRenderer protected () extends js.Object {
   /**
     * Gets a boolean indicating if objects roughness are enabled in the G buffer.
     */
-  def enableReflectivity(): Boolean = js.native
+  def enableReflectivity: Boolean = js.native
   /**
     * Sets wether or not objects roughness are enabled for the G buffer.
     */
@@ -77,7 +77,7 @@ class GeometryBufferRenderer protected () extends js.Object {
   /**
     * Gets a boolean indicating if objects velocities are enabled for the G buffer.
     */
-  def enableVelocity(): Boolean = js.native
+  def enableVelocity: Boolean = js.native
   /**
     * Sets wether or not objects velocities are enabled for the G buffer.
     */
@@ -104,12 +104,12 @@ class GeometryBufferRenderer protected () extends js.Object {
     * Gets wether or not G buffer are supported by the running hardware.
     * This requires draw buffer supports
     */
-  def isSupported(): Boolean = js.native
+  def isSupported: Boolean = js.native
   /**
     * Gets the ratio used by the buffer during its creation.
     * How big is the buffer related to the main canvas.
     */
-  def ratio(): Double = js.native
+  def ratio: Double = js.native
   /**
     * Set the render list (meshes to be rendered) used in the G buffer.
     */
@@ -117,7 +117,7 @@ class GeometryBufferRenderer protected () extends js.Object {
   /**
     * Gets the number of samples used to render the buffer (anti aliasing).
     */
-  def samples(): Double = js.native
+  def samples: Double = js.native
   /**
     * Sets the number of samples used to render the buffer (anti aliasing).
     */
@@ -125,7 +125,7 @@ class GeometryBufferRenderer protected () extends js.Object {
   /**
     * Gets the scene associated with the buffer.
     */
-  def scene(): Scene = js.native
+  def scene: Scene = js.native
 }
 
 /* static members */

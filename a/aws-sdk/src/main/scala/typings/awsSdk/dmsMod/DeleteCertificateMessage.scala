@@ -16,7 +16,6 @@ object DeleteCertificateMessage {
   @scala.inline
   def apply(CertificateArn: String): DeleteCertificateMessage = {
     val __obj = js.Dynamic.literal(CertificateArn = CertificateArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteCertificateMessage]
   }
 }

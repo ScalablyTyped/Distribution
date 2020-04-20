@@ -24,7 +24,6 @@ object ScriptingCompleteResult {
     success: Boolean
   ): ScriptingCompleteResult = {
     val __obj = js.Dynamic.literal(canceled = canceled.asInstanceOf[js.Any], errorDetails = errorDetails.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], hasError = hasError.asInstanceOf[js.Any], operationId = operationId.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScriptingCompleteResult]
   }
 }

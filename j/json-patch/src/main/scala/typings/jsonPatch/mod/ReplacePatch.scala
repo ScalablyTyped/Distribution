@@ -16,7 +16,6 @@ object ReplacePatch {
   @scala.inline
   def apply(op: replace, path: String, value: js.Any): ReplacePatch = {
     val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReplacePatch]
   }
 }

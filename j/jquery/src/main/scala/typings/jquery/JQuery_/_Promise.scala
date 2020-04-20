@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait _Promise[T] extends js.Object {
-  @JSName(scala.scalajs.js.Symbol.toStringTag)
+  @JSName(js.Symbol.toStringTag)
   val toStringTag: typings.jquery.jqueryStrings.Promise = js.native
   /**
     * Attaches a callback for only the rejection of the Promise.

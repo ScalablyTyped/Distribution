@@ -16,7 +16,6 @@ object StartSessionRequest {
   @scala.inline
   def apply(LedgerName: LedgerName): StartSessionRequest = {
     val __obj = js.Dynamic.literal(LedgerName = LedgerName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StartSessionRequest]
   }
 }

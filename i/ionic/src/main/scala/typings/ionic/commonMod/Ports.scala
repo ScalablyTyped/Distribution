@@ -14,7 +14,6 @@ object Ports {
   @scala.inline
   def apply(livereloadPort: Double, notificationPort: Double, port: Double): Ports = {
     val __obj = js.Dynamic.literal(livereloadPort = livereloadPort.asInstanceOf[js.Any], notificationPort = notificationPort.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Ports]
   }
 }

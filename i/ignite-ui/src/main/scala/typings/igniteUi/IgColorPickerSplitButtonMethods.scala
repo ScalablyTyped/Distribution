@@ -54,7 +54,6 @@ object IgColorPickerSplitButtonMethods {
     widget: () => Unit
   ): IgColorPickerSplitButtonMethods = {
     val __obj = js.Dynamic.literal(collapse = js.Any.fromFunction1(collapse), destroy = js.Any.fromFunction0(destroy), expand = js.Any.fromFunction1(expand), setColor = js.Any.fromFunction1(setColor), switchToButton = js.Any.fromFunction1(switchToButton), toggle = js.Any.fromFunction1(toggle), widget = js.Any.fromFunction0(widget))
-  
     __obj.asInstanceOf[IgColorPickerSplitButtonMethods]
   }
 }

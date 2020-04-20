@@ -99,7 +99,7 @@ class VolumetricLightScatteringPostProcess protected () extends PostProcess {
     * @hidden
     * VolumetricLightScatteringPostProcess.useDiffuseColor is no longer used, use the mesh material directly instead
     */
-  def useDiffuseColor(): Boolean = js.native
+  def useDiffuseColor: Boolean = js.native
   def useDiffuseColor(useDiffuseColor: Boolean): js.Any = js.native
 }
 

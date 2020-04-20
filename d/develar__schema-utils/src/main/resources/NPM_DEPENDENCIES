@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@develar/schema-utils" : "2.6.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@develar/schema-utils" : "2.6.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

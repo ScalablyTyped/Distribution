@@ -21,7 +21,6 @@ object BootstrapButtonEventMap {
     lostFocus: EventArgs
   ): BootstrapButtonEventMap = {
     val __obj = js.Dynamic.literal(checkedChanged = checkedChanged.asInstanceOf[js.Any], click = click.asInstanceOf[js.Any], gotFocus = gotFocus.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], lostFocus = lostFocus.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BootstrapButtonEventMap]
   }
 }

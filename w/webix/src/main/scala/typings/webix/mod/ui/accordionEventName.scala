@@ -15,16 +15,14 @@ trait accordionEventName extends js.Object
 
 object accordionEventName {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def onAfterCollapse: typings.webix.webixStrings.onAfterCollapse = "onAfterCollapse".asInstanceOf[typings.webix.webixStrings.onAfterCollapse]
   @scala.inline
-  def onAfterCollapse: typings.webix.webixStrings.onAfterCollapse = this.cast("onAfterCollapse")
+  def onAfterExpand: typings.webix.webixStrings.onAfterExpand = "onAfterExpand".asInstanceOf[typings.webix.webixStrings.onAfterExpand]
   @scala.inline
-  def onAfterExpand: typings.webix.webixStrings.onAfterExpand = this.cast("onAfterExpand")
+  def onBindRequest: typings.webix.webixStrings.onBindRequest = "onBindRequest".asInstanceOf[typings.webix.webixStrings.onBindRequest]
   @scala.inline
-  def onBindRequest: typings.webix.webixStrings.onBindRequest = this.cast("onBindRequest")
+  def onDestruct: typings.webix.webixStrings.onDestruct = "onDestruct".asInstanceOf[typings.webix.webixStrings.onDestruct]
   @scala.inline
-  def onDestruct: typings.webix.webixStrings.onDestruct = this.cast("onDestruct")
-  @scala.inline
-  def onViewShow: typings.webix.webixStrings.onViewShow = this.cast("onViewShow")
+  def onViewShow: typings.webix.webixStrings.onViewShow = "onViewShow".asInstanceOf[typings.webix.webixStrings.onViewShow]
 }
 

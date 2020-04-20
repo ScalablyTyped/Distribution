@@ -17,7 +17,6 @@ object SseKmsEncryptedObjects {
   @scala.inline
   def apply(Status: Enabled | Disabled | String): SseKmsEncryptedObjects = {
     val __obj = js.Dynamic.literal(Status = Status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SseKmsEncryptedObjects]
   }
 }

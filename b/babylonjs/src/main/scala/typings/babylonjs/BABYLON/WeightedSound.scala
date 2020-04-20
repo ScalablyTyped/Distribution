@@ -30,7 +30,7 @@ class WeightedSound protected () extends js.Object {
   /**
     * The size of cone in degrees for a directional sound in which there will be no attenuation.
     */
-  def directionalConeInnerAngle(): Double = js.native
+  def directionalConeInnerAngle: Double = js.native
   /**
     * The size of cone in degress for a directional sound in which there will be no attenuation.
     */
@@ -39,7 +39,7 @@ class WeightedSound protected () extends js.Object {
     * Size of cone in degrees for a directional sound outside of which there will be no sound.
     * Listener angles between innerAngle and outerAngle will falloff linearly.
     */
-  def directionalConeOuterAngle(): Double = js.native
+  def directionalConeOuterAngle: Double = js.native
   /**
     * Size of cone in degrees for a directional sound outside of which there will be no sound.
     * Listener angles between innerAngle and outerAngle will falloff linearly.
@@ -62,7 +62,7 @@ class WeightedSound protected () extends js.Object {
   /**
     * Playback volume.
     */
-  def volume(): Double = js.native
+  def volume: Double = js.native
   /**
     * Playback volume.
     */

@@ -12,10 +12,8 @@ trait ScrollPosition extends js.Object
 
 object ScrollPosition {
   @scala.inline
-  def Bottom: typings.reactBootstrapTable.reactBootstrapTableStrings.Bottom = this.cast("Bottom")
+  def Bottom: typings.reactBootstrapTable.reactBootstrapTableStrings.Bottom = "Bottom".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.Bottom]
   @scala.inline
-  def Top: typings.reactBootstrapTable.reactBootstrapTableStrings.Top = this.cast("Top")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Top: typings.reactBootstrapTable.reactBootstrapTableStrings.Top = "Top".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.Top]
 }
 

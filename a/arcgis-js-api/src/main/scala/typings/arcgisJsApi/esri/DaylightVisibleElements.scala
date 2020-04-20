@@ -10,33 +10,25 @@ trait DaylightVisibleElements extends Object {
   /**
     * When set to `false`, neither the date nor the season picker are displayed.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#visibleElements)
-    *
-    * @default true
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#VisibleElements)
     */
   var datePicker: js.UndefOr[Boolean] = js.undefined
   /**
     * When set to `false`, neither of the play buttons are displayed.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#visibleElements)
-    *
-    * @default true
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#VisibleElements)
     */
   var playButtons: js.UndefOr[Boolean] = js.undefined
   /**
     * When set to `false`, the shadow toggle button is not displayed.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#visibleElements)
-    *
-    * @default true
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#VisibleElements)
     */
   var shadowsToggle: js.UndefOr[Boolean] = js.undefined
   /**
     * When set to `false`, the timezone selector is not displayed.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#visibleElements)
-    *
-    * @default true
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#VisibleElements)
     */
   var timezone: js.UndefOr[Boolean] = js.undefined
 }

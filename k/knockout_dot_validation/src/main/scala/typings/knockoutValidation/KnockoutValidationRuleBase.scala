@@ -12,7 +12,6 @@ object KnockoutValidationRuleBase {
   @scala.inline
   def apply(message: String | KnockoutValidationMessageFunction): KnockoutValidationRuleBase = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KnockoutValidationRuleBase]
   }
 }

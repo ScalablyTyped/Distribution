@@ -37,7 +37,6 @@ object config {
   @scala.inline
   def apply(configMerge: (js.Object, js.Object) => js.Any, configProcessHas: js.Object => js.Any): config = {
     val __obj = js.Dynamic.literal(configMerge = js.Any.fromFunction2(configMerge), configProcessHas = js.Any.fromFunction1(configProcessHas))
-  
     __obj.asInstanceOf[config]
   }
 }

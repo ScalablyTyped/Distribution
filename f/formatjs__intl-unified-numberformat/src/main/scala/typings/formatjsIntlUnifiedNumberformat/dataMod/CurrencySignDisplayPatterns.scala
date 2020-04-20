@@ -28,15 +28,15 @@ import scala.scalajs.js.annotation._
   @JSName("standard")
   var standard_FCurrencySignDisplayPatterns: SignPattern
   @JSName("always")
-  def always_MCurrencySignDisplayPatterns(): NotationPattern
+  def always_MCurrencySignDisplayPatterns: NotationPattern
   @JSName("auto")
-  def auto_MCurrencySignDisplayPatterns(): NotationPattern
+  def auto_MCurrencySignDisplayPatterns: NotationPattern
   @JSName("exceptZero")
-  def exceptZero_MCurrencySignDisplayPatterns(): NotationPattern
+  def exceptZero_MCurrencySignDisplayPatterns: NotationPattern
   @JSName("never")
-  def never_MCurrencySignDisplayPatterns(): NotationPattern
-  def scientific(): SignPattern
-  def standard(): SignPattern
+  def never_MCurrencySignDisplayPatterns: NotationPattern
+  def scientific: SignPattern
+  def standard: SignPattern
 }
 
 object CurrencySignDisplayPatterns {

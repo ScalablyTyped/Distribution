@@ -36,58 +36,56 @@ trait ButtonClassKey extends js.Object
 
 object ButtonClassKey {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def colorInherit: typings.materialUiCore.materialUiCoreStrings.colorInherit = "colorInherit".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.colorInherit]
   @scala.inline
-  def colorInherit: typings.materialUiCore.materialUiCoreStrings.colorInherit = this.cast("colorInherit")
+  def contained: typings.materialUiCore.materialUiCoreStrings.contained = "contained".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.contained]
   @scala.inline
-  def contained: typings.materialUiCore.materialUiCoreStrings.contained = this.cast("contained")
+  def containedPrimary: typings.materialUiCore.materialUiCoreStrings.containedPrimary = "containedPrimary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.containedPrimary]
   @scala.inline
-  def containedPrimary: typings.materialUiCore.materialUiCoreStrings.containedPrimary = this.cast("containedPrimary")
+  def containedSecondary: typings.materialUiCore.materialUiCoreStrings.containedSecondary = "containedSecondary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.containedSecondary]
   @scala.inline
-  def containedSecondary: typings.materialUiCore.materialUiCoreStrings.containedSecondary = this.cast("containedSecondary")
+  def disabled: typings.materialUiCore.materialUiCoreStrings.disabled = "disabled".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.disabled]
   @scala.inline
-  def disabled: typings.materialUiCore.materialUiCoreStrings.disabled = this.cast("disabled")
+  def extendedFab: typings.materialUiCore.materialUiCoreStrings.extendedFab = "extendedFab".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.extendedFab]
   @scala.inline
-  def extendedFab: typings.materialUiCore.materialUiCoreStrings.extendedFab = this.cast("extendedFab")
+  def fab: typings.materialUiCore.materialUiCoreStrings.fab = "fab".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.fab]
   @scala.inline
-  def fab: typings.materialUiCore.materialUiCoreStrings.fab = this.cast("fab")
+  def flat: typings.materialUiCore.materialUiCoreStrings.flat = "flat".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.flat]
   @scala.inline
-  def flat: typings.materialUiCore.materialUiCoreStrings.flat = this.cast("flat")
+  def flatPrimary: typings.materialUiCore.materialUiCoreStrings.flatPrimary = "flatPrimary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.flatPrimary]
   @scala.inline
-  def flatPrimary: typings.materialUiCore.materialUiCoreStrings.flatPrimary = this.cast("flatPrimary")
+  def flatSecondary: typings.materialUiCore.materialUiCoreStrings.flatSecondary = "flatSecondary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.flatSecondary]
   @scala.inline
-  def flatSecondary: typings.materialUiCore.materialUiCoreStrings.flatSecondary = this.cast("flatSecondary")
+  def focusVisible: typings.materialUiCore.materialUiCoreStrings.focusVisible = "focusVisible".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.focusVisible]
   @scala.inline
-  def focusVisible: typings.materialUiCore.materialUiCoreStrings.focusVisible = this.cast("focusVisible")
+  def fullWidth: typings.materialUiCore.materialUiCoreStrings.fullWidth = "fullWidth".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.fullWidth]
   @scala.inline
-  def fullWidth: typings.materialUiCore.materialUiCoreStrings.fullWidth = this.cast("fullWidth")
+  def label: typings.materialUiCore.materialUiCoreStrings.label = "label".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.label]
   @scala.inline
-  def label: typings.materialUiCore.materialUiCoreStrings.label = this.cast("label")
+  def mini: typings.materialUiCore.materialUiCoreStrings.mini = "mini".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.mini]
   @scala.inline
-  def mini: typings.materialUiCore.materialUiCoreStrings.mini = this.cast("mini")
+  def outlined: typings.materialUiCore.materialUiCoreStrings.outlined = "outlined".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.outlined]
   @scala.inline
-  def outlined: typings.materialUiCore.materialUiCoreStrings.outlined = this.cast("outlined")
+  def outlinedPrimary: typings.materialUiCore.materialUiCoreStrings.outlinedPrimary = "outlinedPrimary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.outlinedPrimary]
   @scala.inline
-  def outlinedPrimary: typings.materialUiCore.materialUiCoreStrings.outlinedPrimary = this.cast("outlinedPrimary")
+  def outlinedSecondary: typings.materialUiCore.materialUiCoreStrings.outlinedSecondary = "outlinedSecondary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.outlinedSecondary]
   @scala.inline
-  def outlinedSecondary: typings.materialUiCore.materialUiCoreStrings.outlinedSecondary = this.cast("outlinedSecondary")
+  def raised: typings.materialUiCore.materialUiCoreStrings.raised = "raised".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.raised]
   @scala.inline
-  def raised: typings.materialUiCore.materialUiCoreStrings.raised = this.cast("raised")
+  def raisedPrimary: typings.materialUiCore.materialUiCoreStrings.raisedPrimary = "raisedPrimary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.raisedPrimary]
   @scala.inline
-  def raisedPrimary: typings.materialUiCore.materialUiCoreStrings.raisedPrimary = this.cast("raisedPrimary")
+  def raisedSecondary: typings.materialUiCore.materialUiCoreStrings.raisedSecondary = "raisedSecondary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.raisedSecondary]
   @scala.inline
-  def raisedSecondary: typings.materialUiCore.materialUiCoreStrings.raisedSecondary = this.cast("raisedSecondary")
+  def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
   @scala.inline
-  def root: typings.materialUiCore.materialUiCoreStrings.root = this.cast("root")
+  def sizeLarge: typings.materialUiCore.materialUiCoreStrings.sizeLarge = "sizeLarge".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.sizeLarge]
   @scala.inline
-  def sizeLarge: typings.materialUiCore.materialUiCoreStrings.sizeLarge = this.cast("sizeLarge")
+  def sizeSmall: typings.materialUiCore.materialUiCoreStrings.sizeSmall = "sizeSmall".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.sizeSmall]
   @scala.inline
-  def sizeSmall: typings.materialUiCore.materialUiCoreStrings.sizeSmall = this.cast("sizeSmall")
+  def text: typings.materialUiCore.materialUiCoreStrings.text = "text".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.text]
   @scala.inline
-  def text: typings.materialUiCore.materialUiCoreStrings.text = this.cast("text")
+  def textPrimary: typings.materialUiCore.materialUiCoreStrings.textPrimary = "textPrimary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.textPrimary]
   @scala.inline
-  def textPrimary: typings.materialUiCore.materialUiCoreStrings.textPrimary = this.cast("textPrimary")
-  @scala.inline
-  def textSecondary: typings.materialUiCore.materialUiCoreStrings.textSecondary = this.cast("textSecondary")
+  def textSecondary: typings.materialUiCore.materialUiCoreStrings.textSecondary = "textSecondary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.textSecondary]
 }
 

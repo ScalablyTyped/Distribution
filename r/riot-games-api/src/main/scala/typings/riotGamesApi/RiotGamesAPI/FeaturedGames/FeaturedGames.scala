@@ -13,7 +13,6 @@ object FeaturedGames {
   @scala.inline
   def apply(clientRefreshInterval: Double, gameList: js.Array[FeaturedGameInfo]): FeaturedGames = {
     val __obj = js.Dynamic.literal(clientRefreshInterval = clientRefreshInterval.asInstanceOf[js.Any], gameList = gameList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FeaturedGames]
   }
 }

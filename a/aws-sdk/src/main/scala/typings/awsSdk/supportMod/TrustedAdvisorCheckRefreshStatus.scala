@@ -24,7 +24,6 @@ object TrustedAdvisorCheckRefreshStatus {
   @scala.inline
   def apply(checkId: String, millisUntilNextRefreshable: Long, status: String): TrustedAdvisorCheckRefreshStatus = {
     val __obj = js.Dynamic.literal(checkId = checkId.asInstanceOf[js.Any], millisUntilNextRefreshable = millisUntilNextRefreshable.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TrustedAdvisorCheckRefreshStatus]
   }
 }

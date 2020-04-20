@@ -16,18 +16,16 @@ trait EventType extends js.Object
 
 object EventType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def close: typings.k6.k6Strings.close = "close".asInstanceOf[typings.k6.k6Strings.close]
   @scala.inline
-  def close: typings.k6.k6Strings.close = this.cast("close")
+  def error: typings.k6.k6Strings.error = "error".asInstanceOf[typings.k6.k6Strings.error]
   @scala.inline
-  def error: typings.k6.k6Strings.error = this.cast("error")
+  def message: typings.k6.k6Strings.message = "message".asInstanceOf[typings.k6.k6Strings.message]
   @scala.inline
-  def message: typings.k6.k6Strings.message = this.cast("message")
+  def open: typings.k6.k6Strings.open = "open".asInstanceOf[typings.k6.k6Strings.open]
   @scala.inline
-  def open: typings.k6.k6Strings.open = this.cast("open")
+  def ping: typings.k6.k6Strings.ping = "ping".asInstanceOf[typings.k6.k6Strings.ping]
   @scala.inline
-  def ping: typings.k6.k6Strings.ping = this.cast("ping")
-  @scala.inline
-  def pong: typings.k6.k6Strings.pong = this.cast("pong")
+  def pong: typings.k6.k6Strings.pong = "pong".asInstanceOf[typings.k6.k6Strings.pong]
 }
 

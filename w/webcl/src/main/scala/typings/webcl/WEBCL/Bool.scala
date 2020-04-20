@@ -15,10 +15,8 @@ trait Bool extends js.Object
 
 object Bool {
   @scala.inline
-  def FALSE: `0` = this.cast(0)
+  def FALSE: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def TRUE: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def TRUE: `1` = 1.asInstanceOf[`1`]
 }
 

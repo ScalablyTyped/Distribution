@@ -14,7 +14,6 @@ object AnonExports {
   @scala.inline
   def apply(exports: js.Any, fullpath: String, properties: js.Array[String]): AnonExports = {
     val __obj = js.Dynamic.literal(exports = exports.asInstanceOf[js.Any], fullpath = fullpath.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonExports]
   }
 }

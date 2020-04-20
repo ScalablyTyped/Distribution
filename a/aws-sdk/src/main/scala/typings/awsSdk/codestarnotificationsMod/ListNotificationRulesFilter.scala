@@ -20,7 +20,6 @@ object ListNotificationRulesFilter {
   @scala.inline
   def apply(Name: ListNotificationRulesFilterName, Value: ListNotificationRulesFilterValue): ListNotificationRulesFilter = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListNotificationRulesFilter]
   }
 }

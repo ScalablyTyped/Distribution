@@ -13,7 +13,6 @@ object AnonConnectionId {
   @scala.inline
   def apply(connectionId: integer): AnonConnectionId = {
     val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonConnectionId]
   }
 }

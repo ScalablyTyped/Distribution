@@ -23,7 +23,6 @@ object IRenderer {
   @scala.inline
   def apply(renderItem: IRenderData => VirtualElement): IRenderer = {
     val __obj = js.Dynamic.literal(renderItem = js.Any.fromFunction1(renderItem))
-  
     __obj.asInstanceOf[IRenderer]
   }
 }

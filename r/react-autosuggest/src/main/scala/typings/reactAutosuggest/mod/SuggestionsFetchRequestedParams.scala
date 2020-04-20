@@ -21,7 +21,6 @@ object SuggestionsFetchRequestedParams {
     value: String
   ): SuggestionsFetchRequestedParams = {
     val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SuggestionsFetchRequestedParams]
   }
 }

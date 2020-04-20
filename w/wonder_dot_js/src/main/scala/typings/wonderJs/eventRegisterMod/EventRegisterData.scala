@@ -15,7 +15,6 @@ object EventRegisterData {
   @scala.inline
   def apply(domHandler: js.Function, handler: js.Function, originHandler: js.Function, priority: Double): EventRegisterData = {
     val __obj = js.Dynamic.literal(domHandler = domHandler.asInstanceOf[js.Any], handler = handler.asInstanceOf[js.Any], originHandler = originHandler.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventRegisterData]
   }
 }

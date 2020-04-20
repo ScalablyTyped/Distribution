@@ -32,7 +32,6 @@ object NewSurfaceOptions {
     notification: String
   ): NewSurfaceOptions = {
     val __obj = js.Dynamic.literal(capabilities = capabilities.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], notification = notification.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NewSurfaceOptions]
   }
 }

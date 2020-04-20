@@ -11,7 +11,7 @@ trait ConnectionPoolConfigurationInfo extends js.Object {
     */
   var ConnectionBorrowTimeout: js.UndefOr[Integer] = js.native
   /**
-    *  One or more SQL statements for the proxy to run when opening each new database connection. Typically used with SET statements to make sure that each connection has identical settings such as time zone and character set. This setting is empty by default. For multiple statements, use semicolons as the separator. You can also include multiple variables in a single SET statement, such as SET x=1, y=2. 
+    *  One or more SQL statements for the proxy to run when opening each new database connection. Typically used with SET statements to make sure that each connection has identical settings such as time zone and character set. This setting is empty by default. For multiple statements, use semicolons as the separator. You can also include multiple variables in a single SET statement, such as SET x=1, y=2.   InitQuery is not currently supported for PostgreSQL.
     */
   var InitQuery: js.UndefOr[String] = js.native
   /**

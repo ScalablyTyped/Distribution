@@ -16,7 +16,6 @@ object UserSettings {
   @scala.inline
   def apply(Telephony: TelephonySettings): UserSettings = {
     val __obj = js.Dynamic.literal(Telephony = Telephony.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UserSettings]
   }
 }

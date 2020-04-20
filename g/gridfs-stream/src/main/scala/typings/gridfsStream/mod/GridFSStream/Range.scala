@@ -13,7 +13,6 @@ object Range {
   @scala.inline
   def apply(endPos: Double, startPos: Double): Range = {
     val __obj = js.Dynamic.literal(endPos = endPos.asInstanceOf[js.Any], startPos = startPos.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Range]
   }
 }

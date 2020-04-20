@@ -12,7 +12,6 @@ object InsightsServiceAccountResponseFollowStatus {
   @scala.inline
   def apply(nodes: js.Array[InsightsServiceAccountResponseNodesItem]): InsightsServiceAccountResponseFollowStatus = {
     val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InsightsServiceAccountResponseFollowStatus]
   }
 }

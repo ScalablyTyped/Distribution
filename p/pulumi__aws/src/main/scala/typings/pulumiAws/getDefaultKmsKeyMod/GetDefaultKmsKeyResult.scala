@@ -20,7 +20,6 @@ object GetDefaultKmsKeyResult {
   @scala.inline
   def apply(id: String, keyArn: String): GetDefaultKmsKeyResult = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], keyArn = keyArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDefaultKmsKeyResult]
   }
 }

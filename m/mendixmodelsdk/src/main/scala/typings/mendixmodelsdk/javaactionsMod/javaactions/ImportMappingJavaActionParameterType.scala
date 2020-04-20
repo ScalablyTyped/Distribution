@@ -33,7 +33,7 @@ class ImportMappingJavaActionParameterType protected ()
   @JSName("model")
   var model_FImportMappingJavaActionParameterType: IModel = js.native
   @JSName("containerAsCodeActionParameter")
-  def containerAsCodeActionParameter_MImportMappingJavaActionParameterType(): CodeActionParameter = js.native
+  def containerAsCodeActionParameter_MImportMappingJavaActionParameterType: CodeActionParameter = js.native
 }
 
 /* static members */

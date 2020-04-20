@@ -13,7 +13,6 @@ object AnonConvert {
   @scala.inline
   def apply[U](convert: Boolean, error: U): AnonConvert[U] = {
     val __obj = js.Dynamic.literal(convert = convert.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonConvert[U]]
   }
 }

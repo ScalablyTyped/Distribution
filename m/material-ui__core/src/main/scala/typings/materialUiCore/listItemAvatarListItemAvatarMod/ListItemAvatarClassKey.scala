@@ -12,10 +12,8 @@ trait ListItemAvatarClassKey extends js.Object
 
 object ListItemAvatarClassKey {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def icon: typings.materialUiCore.materialUiCoreStrings.icon = "icon".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.icon]
   @scala.inline
-  def icon: typings.materialUiCore.materialUiCoreStrings.icon = this.cast("icon")
-  @scala.inline
-  def root: typings.materialUiCore.materialUiCoreStrings.root = this.cast("root")
+  def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
 }
 

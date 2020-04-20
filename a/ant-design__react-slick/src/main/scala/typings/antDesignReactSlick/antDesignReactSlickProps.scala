@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait antDesignReactSlickProps {
   @scala.inline
-  def ReactSlickProps: Settings.type = typings.antDesignReactSlick.mod.Settings
+  def ReactSlickProps: Settings.type = Settings
   type ReactSlickProps = Settings
 }
 

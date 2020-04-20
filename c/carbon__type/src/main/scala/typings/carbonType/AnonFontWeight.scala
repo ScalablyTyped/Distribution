@@ -15,7 +15,6 @@ object AnonFontWeight {
   @scala.inline
   def apply(fontFamily: String, fontSize: String, fontWeight: Double, letterSpacing: Double): AnonFontWeight = {
     val __obj = js.Dynamic.literal(fontFamily = fontFamily.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontWeight = fontWeight.asInstanceOf[js.Any], letterSpacing = letterSpacing.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFontWeight]
   }
 }

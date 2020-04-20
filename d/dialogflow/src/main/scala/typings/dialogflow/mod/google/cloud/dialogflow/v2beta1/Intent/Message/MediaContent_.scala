@@ -21,7 +21,7 @@ class MediaContent_ () extends IMediaContent {
   var mediaObjects_MediaContent_ : js.Array[IResponseMediaObject] = js.native
   /** MediaContent mediaType. */
   @JSName("mediaType")
-  var mediaType_MediaContent_ : ResponseMediaType | String = js.native
+  var mediaType_MediaContent_ : ResponseMediaType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.Message.MediaContent.ResponseMediaType * / any */ String) = js.native
   /**
     * Converts this MediaContent to JSON.
     * @returns JSON object

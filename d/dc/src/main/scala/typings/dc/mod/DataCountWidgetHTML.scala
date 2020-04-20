@@ -13,7 +13,6 @@ object DataCountWidgetHTML {
   @scala.inline
   def apply(all: String, some: String): DataCountWidgetHTML = {
     val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], some = some.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DataCountWidgetHTML]
   }
 }

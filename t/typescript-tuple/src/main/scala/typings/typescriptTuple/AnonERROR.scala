@@ -16,7 +16,6 @@ object AnonERROR {
   @scala.inline
   def apply(CODENAME: InfiniteLeft with Infinite, ERROR: `Left is not finite`): AnonERROR = {
     val __obj = js.Dynamic.literal(CODENAME = CODENAME.asInstanceOf[js.Any], ERROR = ERROR.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonERROR]
   }
 }

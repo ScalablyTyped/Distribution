@@ -48,7 +48,6 @@ object AnonAUTH {
     XHTML_IM: String
   ): AnonAUTH = {
     val __obj = js.Dynamic.literal(AUTH = AUTH.asInstanceOf[js.Any], BIND = BIND.asInstanceOf[js.Any], BOSH = BOSH.asInstanceOf[js.Any], CLIENT = CLIENT.asInstanceOf[js.Any], DISCO_INFO = DISCO_INFO.asInstanceOf[js.Any], DISCO_ITEMS = DISCO_ITEMS.asInstanceOf[js.Any], FRAMING = FRAMING.asInstanceOf[js.Any], HTTPBIND = HTTPBIND.asInstanceOf[js.Any], MUC = MUC.asInstanceOf[js.Any], PROFILE = PROFILE.asInstanceOf[js.Any], ROSTER = ROSTER.asInstanceOf[js.Any], SASL = SASL.asInstanceOf[js.Any], SESSION = SESSION.asInstanceOf[js.Any], STANZAS = STANZAS.asInstanceOf[js.Any], STREAM = STREAM.asInstanceOf[js.Any], VERSION = VERSION.asInstanceOf[js.Any], XHTML = XHTML.asInstanceOf[js.Any], XHTML_IM = XHTML_IM.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAUTH]
   }
 }

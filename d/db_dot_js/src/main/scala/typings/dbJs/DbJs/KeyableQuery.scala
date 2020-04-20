@@ -12,7 +12,6 @@ object KeyableQuery {
   @scala.inline
   def apply[T](keys: () => KeysQuery[T]): KeyableQuery[T] = {
     val __obj = js.Dynamic.literal(keys = js.Any.fromFunction0(keys))
-  
     __obj.asInstanceOf[KeyableQuery[T]]
   }
 }

@@ -24,7 +24,6 @@ object PutAccessPointPolicyRequest {
   @scala.inline
   def apply(AccountId: AccountId, Name: AccessPointName, Policy: Policy): PutAccessPointPolicyRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Policy = Policy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutAccessPointPolicyRequest]
   }
 }

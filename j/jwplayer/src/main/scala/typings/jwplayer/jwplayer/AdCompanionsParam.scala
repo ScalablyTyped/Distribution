@@ -13,7 +13,6 @@ object AdCompanionsParam {
   @scala.inline
   def apply(companions: js.Array[_], tag: String): AdCompanionsParam = {
     val __obj = js.Dynamic.literal(companions = companions.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AdCompanionsParam]
   }
 }

@@ -12,10 +12,8 @@ trait CarouselEvent extends js.Object
 
 object CarouselEvent {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def slidDotbsDotcarousel: typings.bootstrap.bootstrapStrings.slidDotbsDotcarousel = "slid.bs.carousel".asInstanceOf[typings.bootstrap.bootstrapStrings.slidDotbsDotcarousel]
   @scala.inline
-  def slidDotbsDotcarousel: typings.bootstrap.bootstrapStrings.slidDotbsDotcarousel = this.cast("slid.bs.carousel")
-  @scala.inline
-  def slideDotbsDotcarousel: typings.bootstrap.bootstrapStrings.slideDotbsDotcarousel = this.cast("slide.bs.carousel")
+  def slideDotbsDotcarousel: typings.bootstrap.bootstrapStrings.slideDotbsDotcarousel = "slide.bs.carousel".asInstanceOf[typings.bootstrap.bootstrapStrings.slideDotbsDotcarousel]
 }
 

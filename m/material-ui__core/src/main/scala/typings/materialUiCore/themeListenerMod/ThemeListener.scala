@@ -19,7 +19,6 @@ object ThemeListener {
     unsubscribe: (MuiContext[S], Double) => Unit
   ): ThemeListener[S] = {
     val __obj = js.Dynamic.literal(initial = js.Any.fromFunction1(initial), subscribe = js.Any.fromFunction2(subscribe), unsubscribe = js.Any.fromFunction2(unsubscribe))
-  
     __obj.asInstanceOf[ThemeListener[S]]
   }
 }

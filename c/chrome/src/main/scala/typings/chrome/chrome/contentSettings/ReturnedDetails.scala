@@ -13,7 +13,6 @@ object ReturnedDetails {
   @scala.inline
   def apply(setting: js.Any): ReturnedDetails = {
     val __obj = js.Dynamic.literal(setting = setting.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReturnedDetails]
   }
 }

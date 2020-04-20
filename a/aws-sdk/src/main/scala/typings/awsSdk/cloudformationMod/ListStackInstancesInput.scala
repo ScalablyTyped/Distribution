@@ -19,7 +19,7 @@ trait ListStackInstancesInput extends js.Object {
     */
   var StackInstanceAccount: js.UndefOr[Account] = js.native
   /**
-    * The name of the region where you want to list stack instances. 
+    * The name of the Region where you want to list stack instances. 
     */
   var StackInstanceRegion: js.UndefOr[Region] = js.native
   /**

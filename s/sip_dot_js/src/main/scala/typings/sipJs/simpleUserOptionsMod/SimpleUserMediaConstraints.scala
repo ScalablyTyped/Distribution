@@ -15,7 +15,6 @@ object SimpleUserMediaConstraints {
   @scala.inline
   def apply(audio: Boolean, video: Boolean): SimpleUserMediaConstraints = {
     val __obj = js.Dynamic.literal(audio = audio.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SimpleUserMediaConstraints]
   }
 }

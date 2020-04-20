@@ -20,7 +20,6 @@ object GroupQuery {
   @scala.inline
   def apply(GroupName: GroupName, ResourceQuery: ResourceQuery): GroupQuery = {
     val __obj = js.Dynamic.literal(GroupName = GroupName.asInstanceOf[js.Any], ResourceQuery = ResourceQuery.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GroupQuery]
   }
 }

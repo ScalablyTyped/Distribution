@@ -12,7 +12,6 @@ object SubmenuConfig {
   @scala.inline
   def apply(items: js.Array[SubmenuItemConfig]): SubmenuConfig = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SubmenuConfig]
   }
 }

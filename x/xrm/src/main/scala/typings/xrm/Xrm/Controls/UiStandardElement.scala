@@ -26,7 +26,6 @@ object UiStandardElement {
     setVisible: Boolean => Unit
   ): UiStandardElement = {
     val __obj = js.Dynamic.literal(getLabel = js.Any.fromFunction0(getLabel), getVisible = js.Any.fromFunction0(getVisible), setLabel = js.Any.fromFunction1(setLabel), setVisible = js.Any.fromFunction1(setVisible))
-  
     __obj.asInstanceOf[UiStandardElement]
   }
 }

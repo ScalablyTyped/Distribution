@@ -22,7 +22,6 @@ object Clipboard {
   @scala.inline
   def apply(readText: () => Thenable[String], writeText: String => Thenable[Unit]): Clipboard = {
     val __obj = js.Dynamic.literal(readText = js.Any.fromFunction0(readText), writeText = js.Any.fromFunction1(writeText))
-  
     __obj.asInstanceOf[Clipboard]
   }
 }

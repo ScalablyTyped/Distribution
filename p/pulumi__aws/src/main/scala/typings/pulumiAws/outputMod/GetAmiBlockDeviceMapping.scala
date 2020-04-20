@@ -17,7 +17,6 @@ object GetAmiBlockDeviceMapping {
   @scala.inline
   def apply(deviceName: String, ebs: StringDictionary[js.Any], noDevice: String, virtualName: String): GetAmiBlockDeviceMapping = {
     val __obj = js.Dynamic.literal(deviceName = deviceName.asInstanceOf[js.Any], ebs = ebs.asInstanceOf[js.Any], noDevice = noDevice.asInstanceOf[js.Any], virtualName = virtualName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetAmiBlockDeviceMapping]
   }
 }

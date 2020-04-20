@@ -12,7 +12,6 @@ object AnonMessageID {
   @scala.inline
   def apply(messageID: String): AnonMessageID = {
     val __obj = js.Dynamic.literal(messageID = messageID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMessageID]
   }
 }

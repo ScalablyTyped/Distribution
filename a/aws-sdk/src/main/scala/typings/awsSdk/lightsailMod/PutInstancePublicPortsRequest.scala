@@ -20,7 +20,6 @@ object PutInstancePublicPortsRequest {
   @scala.inline
   def apply(instanceName: ResourceName, portInfos: PortInfoList): PutInstancePublicPortsRequest = {
     val __obj = js.Dynamic.literal(instanceName = instanceName.asInstanceOf[js.Any], portInfos = portInfos.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutInstancePublicPortsRequest]
   }
 }

@@ -20,7 +20,6 @@ object KeyCertPair {
   @scala.inline
   def apply(cert_chain: Buffer, private_key: Buffer): KeyCertPair = {
     val __obj = js.Dynamic.literal(cert_chain = cert_chain.asInstanceOf[js.Any], private_key = private_key.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KeyCertPair]
   }
 }

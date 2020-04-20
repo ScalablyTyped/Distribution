@@ -16,7 +16,6 @@ object SaxesStartTagPlain {
   @scala.inline
   def apply(attributes: Record[String, SaxesAttributeNS | String], name: String): SaxesStartTagPlain = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SaxesStartTagPlain]
   }
 }

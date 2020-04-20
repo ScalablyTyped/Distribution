@@ -15,7 +15,6 @@ object AnonFocused {
   @scala.inline
   def apply(focused: Boolean, route: NavigationRoute[NavigationParams]): AnonFocused = {
     val __obj = js.Dynamic.literal(focused = focused.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFocused]
   }
 }

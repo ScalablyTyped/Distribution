@@ -19,7 +19,6 @@ object IOptions {
   @scala.inline
   def apply(value: IMimeBundle): IOptions = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IOptions]
   }
 }

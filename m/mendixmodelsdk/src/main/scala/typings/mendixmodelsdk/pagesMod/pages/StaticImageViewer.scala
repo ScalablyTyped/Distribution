@@ -33,24 +33,24 @@ class StaticImageViewer protected () extends ConditionallyVisibleWidget {
   /**
     * In version 8.6.0: introduced
     */
-  def alternativeText(): ClientTemplate = js.native
+  def alternativeText: ClientTemplate = js.native
   def alternativeText(newValue: ClientTemplate): js.Any = js.native
-  def clickAction(): ClientAction = js.native
+  def clickAction: ClientAction = js.native
   def clickAction(newValue: ClientAction): js.Any = js.native
-  def height(): Double = js.native
+  def height: Double = js.native
   def height(newValue: Double): js.Any = js.native
-  def heightUnit(): ImageSizeUnit = js.native
+  def heightUnit: ImageSizeUnit = js.native
   def heightUnit(newValue: ImageSizeUnit): js.Any = js.native
   def image(): js.Any = js.native
   def image(newValue: IImage): js.Any = js.native
-  def imageQualifiedName(): String | Null = js.native
+  def imageQualifiedName: String | Null = js.native
   @JSName("image")
-  def image_Union(): IImage | Null = js.native
-  def responsive(): Boolean = js.native
+  def image_Union: IImage | Null = js.native
+  def responsive: Boolean = js.native
   def responsive(newValue: Boolean): js.Any = js.native
-  def width(): Double = js.native
+  def width: Double = js.native
   def width(newValue: Double): js.Any = js.native
-  def widthUnit(): ImageSizeUnit = js.native
+  def widthUnit: ImageSizeUnit = js.native
   def widthUnit(newValue: ImageSizeUnit): js.Any = js.native
 }
 

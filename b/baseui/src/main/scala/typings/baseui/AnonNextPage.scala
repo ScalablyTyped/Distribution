@@ -13,7 +13,6 @@ object AnonNextPage {
   @scala.inline
   def apply(nextPage: Double, prevPage: Double): AnonNextPage = {
     val __obj = js.Dynamic.literal(nextPage = nextPage.asInstanceOf[js.Any], prevPage = prevPage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNextPage]
   }
 }

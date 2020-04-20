@@ -12,7 +12,6 @@ object PluginRemoveDimensions {
   @scala.inline
   def apply(removeDimensions: Boolean | js.Object): PluginRemoveDimensions = {
     val __obj = js.Dynamic.literal(removeDimensions = removeDimensions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PluginRemoveDimensions]
   }
 }

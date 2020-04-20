@@ -13,10 +13,8 @@ trait ManagedAppFlaggedReason extends js.Object
 
 object ManagedAppFlaggedReason {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def none: none_ = "none".asInstanceOf[none_]
   @scala.inline
-  def none: none_ = this.cast("none")
-  @scala.inline
-  def rootedDevice: typings.microsoftGraph.microsoftGraphStrings.rootedDevice = this.cast("rootedDevice")
+  def rootedDevice: typings.microsoftGraph.microsoftGraphStrings.rootedDevice = "rootedDevice".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.rootedDevice]
 }
 

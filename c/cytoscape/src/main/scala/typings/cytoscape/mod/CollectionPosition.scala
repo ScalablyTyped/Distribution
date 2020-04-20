@@ -32,7 +32,6 @@ object CollectionPosition {
     renderedBoundingbox: BoundingBoxOptions => BoundingBox12 with BoundingBoxWH
   ): CollectionPosition = {
     val __obj = js.Dynamic.literal(boundingBox = js.Any.fromFunction1(boundingBox), boundingbox = js.Any.fromFunction1(boundingbox), renderedBoundingBox = js.Any.fromFunction1(renderedBoundingBox), renderedBoundingbox = js.Any.fromFunction1(renderedBoundingbox))
-  
     __obj.asInstanceOf[CollectionPosition]
   }
 }

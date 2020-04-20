@@ -13,7 +13,6 @@ object AnonRefreshToken {
   @scala.inline
   def apply(host: String, refreshToken: String): AnonRefreshToken = {
     val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], refreshToken = refreshToken.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRefreshToken]
   }
 }

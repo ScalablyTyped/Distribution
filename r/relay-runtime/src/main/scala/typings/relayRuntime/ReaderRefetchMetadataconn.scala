@@ -21,7 +21,6 @@ object ReaderRefetchMetadataconn {
     operation: String | ConcreteRequest
   ): ReaderRefetchMetadataconn = {
     val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], fragmentPathInResult = fragmentPathInResult.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReaderRefetchMetadataconn]
   }
 }

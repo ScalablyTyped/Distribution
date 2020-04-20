@@ -20,16 +20,14 @@ trait MsoClipboardFormat extends js.Object
 
 object MsoClipboardFormat {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoClipboardFormatHTML: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoClipboardFormatHTML: `2` = this.cast(2)
+  def msoClipboardFormatMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def msoClipboardFormatMixed: `-2` = this.cast(-2)
+  def msoClipboardFormatNative: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoClipboardFormatNative: `1` = this.cast(1)
+  def msoClipboardFormatPlainText: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoClipboardFormatPlainText: `4` = this.cast(4)
-  @scala.inline
-  def msoClipboardFormatRTF: `3` = this.cast(3)
+  def msoClipboardFormatRTF: `3` = 3.asInstanceOf[`3`]
 }
 

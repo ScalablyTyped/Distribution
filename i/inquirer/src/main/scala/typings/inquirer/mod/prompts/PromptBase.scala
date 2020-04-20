@@ -25,7 +25,6 @@ object PromptBase {
   @scala.inline
   def apply(run: () => js.Promise[_], status: PromptState): PromptBase = {
     val __obj = js.Dynamic.literal(run = js.Any.fromFunction0(run), status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PromptBase]
   }
 }

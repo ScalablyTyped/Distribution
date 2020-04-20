@@ -12,7 +12,6 @@ object ExistsOptions {
   @scala.inline
   def apply(count: Double): ExistsOptions = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExistsOptions]
   }
 }

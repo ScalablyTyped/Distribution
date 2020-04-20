@@ -16,18 +16,16 @@ trait ResponseType extends js.Object
 
 object ResponseType {
   @scala.inline
-  def arraybuffer: typings.axios.axiosStrings.arraybuffer = this.cast("arraybuffer")
+  def arraybuffer: typings.axios.axiosStrings.arraybuffer = "arraybuffer".asInstanceOf[typings.axios.axiosStrings.arraybuffer]
   @scala.inline
-  def blob: typings.axios.axiosStrings.blob = this.cast("blob")
+  def blob: typings.axios.axiosStrings.blob = "blob".asInstanceOf[typings.axios.axiosStrings.blob]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def document: typings.axios.axiosStrings.document = "document".asInstanceOf[typings.axios.axiosStrings.document]
   @scala.inline
-  def document: typings.axios.axiosStrings.document = this.cast("document")
+  def json: typings.axios.axiosStrings.json = "json".asInstanceOf[typings.axios.axiosStrings.json]
   @scala.inline
-  def json: typings.axios.axiosStrings.json = this.cast("json")
+  def stream: typings.axios.axiosStrings.stream = "stream".asInstanceOf[typings.axios.axiosStrings.stream]
   @scala.inline
-  def stream: typings.axios.axiosStrings.stream = this.cast("stream")
-  @scala.inline
-  def text: typings.axios.axiosStrings.text = this.cast("text")
+  def text: typings.axios.axiosStrings.text = "text".asInstanceOf[typings.axios.axiosStrings.text]
 }
 

@@ -30,7 +30,6 @@ object AnonConverter {
     scaling: none | thousand | million | billion | trillion | quadrillion | auto
   ): AnonConverter = {
     val __obj = js.Dynamic.literal(converter = converter.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], labelStyle = labelStyle.asInstanceOf[js.Any], renderer = js.Any.fromFunction1(renderer), scaling = scaling.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonConverter]
   }
 }

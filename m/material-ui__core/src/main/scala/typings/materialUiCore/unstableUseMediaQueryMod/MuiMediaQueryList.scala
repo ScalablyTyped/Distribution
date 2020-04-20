@@ -19,7 +19,6 @@ object MuiMediaQueryList {
     removeListener: MuiMediaQueryListListener => Unit
   ): MuiMediaQueryList = {
     val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction1(addListener), matches = matches.asInstanceOf[js.Any], removeListener = js.Any.fromFunction1(removeListener))
-  
     __obj.asInstanceOf[MuiMediaQueryList]
   }
 }

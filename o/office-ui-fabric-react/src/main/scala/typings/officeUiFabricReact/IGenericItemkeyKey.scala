@@ -18,7 +18,6 @@ object IGenericItemkeyKey {
   @scala.inline
   def apply(ValidationState: ValidationState, imageInitials: String, key: Key, primaryText: String): IGenericItemkeyKey = {
     val __obj = js.Dynamic.literal(ValidationState = ValidationState.asInstanceOf[js.Any], imageInitials = imageInitials.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], primaryText = primaryText.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IGenericItemkeyKey]
   }
 }

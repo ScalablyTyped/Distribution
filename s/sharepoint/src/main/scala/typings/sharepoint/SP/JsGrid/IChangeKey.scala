@@ -21,7 +21,6 @@ object IChangeKey {
     Reserve: () => Unit
   ): IChangeKey = {
     val __obj = js.Dynamic.literal(CompareTo = js.Any.fromFunction1(CompareTo), GetVersionNumber = js.Any.fromFunction0(GetVersionNumber), Release = js.Any.fromFunction0(Release), Reserve = js.Any.fromFunction0(Reserve))
-  
     __obj.asInstanceOf[IChangeKey]
   }
 }

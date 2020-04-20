@@ -14,14 +14,12 @@ trait StepperClasskey extends js.Object
 
 object StepperClasskey {
   @scala.inline
-  def alternativeLabel: typings.materialUiCore.materialUiCoreStrings.alternativeLabel = this.cast("alternativeLabel")
+  def alternativeLabel: typings.materialUiCore.materialUiCoreStrings.alternativeLabel = "alternativeLabel".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.alternativeLabel]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def horizontal: typings.materialUiCore.materialUiCoreStrings.horizontal = "horizontal".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.horizontal]
   @scala.inline
-  def horizontal: typings.materialUiCore.materialUiCoreStrings.horizontal = this.cast("horizontal")
+  def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
   @scala.inline
-  def root: typings.materialUiCore.materialUiCoreStrings.root = this.cast("root")
-  @scala.inline
-  def vertical: typings.materialUiCore.materialUiCoreStrings.vertical = this.cast("vertical")
+  def vertical: typings.materialUiCore.materialUiCoreStrings.vertical = "vertical".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.vertical]
 }
 

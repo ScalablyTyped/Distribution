@@ -15,7 +15,6 @@ object IKookiesProvider {
   @scala.inline
   def apply(config: Config, defaults: Options, setConfig: Config => Unit, setDefaults: Options => Unit): IKookiesProvider = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], defaults = defaults.asInstanceOf[js.Any], setConfig = js.Any.fromFunction1(setConfig), setDefaults = js.Any.fromFunction1(setDefaults))
-  
     __obj.asInstanceOf[IKookiesProvider]
   }
 }

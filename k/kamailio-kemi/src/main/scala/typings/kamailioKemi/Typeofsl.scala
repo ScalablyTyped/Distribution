@@ -20,7 +20,6 @@ object Typeofsl {
     sl_send_reply: (Double, String) => Double
   ): Typeofsl = {
     val __obj = js.Dynamic.literal(send_reply = js.Any.fromFunction2(send_reply), sl_forward_reply = js.Any.fromFunction2(sl_forward_reply), sl_reply_error = js.Any.fromFunction0(sl_reply_error), sl_send_reply = js.Any.fromFunction2(sl_send_reply))
-  
     __obj.asInstanceOf[Typeofsl]
   }
 }

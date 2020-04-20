@@ -13,7 +13,6 @@ object AnonGeoTransform {
   @scala.inline
   def apply(geoTransform: js.Any, rasterSize: js.Any): AnonGeoTransform = {
     val __obj = js.Dynamic.literal(geoTransform = geoTransform.asInstanceOf[js.Any], rasterSize = rasterSize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGeoTransform]
   }
 }

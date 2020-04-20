@@ -24,7 +24,6 @@ object PatchSource {
   @scala.inline
   def apply(Configuration: PatchSourceConfiguration, Name: PatchSourceName, Products: PatchSourceProductList): PatchSource = {
     val __obj = js.Dynamic.literal(Configuration = Configuration.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Products = Products.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PatchSource]
   }
 }

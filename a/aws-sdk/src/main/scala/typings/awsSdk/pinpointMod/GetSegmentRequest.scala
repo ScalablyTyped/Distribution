@@ -20,7 +20,6 @@ object GetSegmentRequest {
   @scala.inline
   def apply(ApplicationId: string, SegmentId: string): GetSegmentRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], SegmentId = SegmentId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetSegmentRequest]
   }
 }

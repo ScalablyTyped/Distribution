@@ -21,28 +21,26 @@ trait VBR extends js.Object
 
 object VBR {
   @scala.inline
-  def `-1`: typings.audiosprite.audiospriteNumbers.`-1` = this.cast(-1)
+  def `-1`: typings.audiosprite.audiospriteNumbers.`-1` = -1.asInstanceOf[typings.audiosprite.audiospriteNumbers.`-1`]
   @scala.inline
-  def `0`: typings.audiosprite.audiospriteNumbers.`0` = this.cast(0)
+  def `0`: typings.audiosprite.audiospriteNumbers.`0` = 0.asInstanceOf[typings.audiosprite.audiospriteNumbers.`0`]
   @scala.inline
-  def `1`: typings.audiosprite.audiospriteNumbers.`1` = this.cast(1)
+  def `1`: typings.audiosprite.audiospriteNumbers.`1` = 1.asInstanceOf[typings.audiosprite.audiospriteNumbers.`1`]
   @scala.inline
-  def `2`: typings.audiosprite.audiospriteNumbers.`2` = this.cast(2)
+  def `2`: typings.audiosprite.audiospriteNumbers.`2` = 2.asInstanceOf[typings.audiosprite.audiospriteNumbers.`2`]
   @scala.inline
-  def `3`: typings.audiosprite.audiospriteNumbers.`3` = this.cast(3)
+  def `3`: typings.audiosprite.audiospriteNumbers.`3` = 3.asInstanceOf[typings.audiosprite.audiospriteNumbers.`3`]
   @scala.inline
-  def `4`: typings.audiosprite.audiospriteNumbers.`4` = this.cast(4)
+  def `4`: typings.audiosprite.audiospriteNumbers.`4` = 4.asInstanceOf[typings.audiosprite.audiospriteNumbers.`4`]
   @scala.inline
-  def `5`: typings.audiosprite.audiospriteNumbers.`5` = this.cast(5)
+  def `5`: typings.audiosprite.audiospriteNumbers.`5` = 5.asInstanceOf[typings.audiosprite.audiospriteNumbers.`5`]
   @scala.inline
-  def `6`: typings.audiosprite.audiospriteNumbers.`6` = this.cast(6)
+  def `6`: typings.audiosprite.audiospriteNumbers.`6` = 6.asInstanceOf[typings.audiosprite.audiospriteNumbers.`6`]
   @scala.inline
-  def `7`: typings.audiosprite.audiospriteNumbers.`7` = this.cast(7)
+  def `7`: typings.audiosprite.audiospriteNumbers.`7` = 7.asInstanceOf[typings.audiosprite.audiospriteNumbers.`7`]
   @scala.inline
-  def `8`: typings.audiosprite.audiospriteNumbers.`8` = this.cast(8)
+  def `8`: typings.audiosprite.audiospriteNumbers.`8` = 8.asInstanceOf[typings.audiosprite.audiospriteNumbers.`8`]
   @scala.inline
-  def `9`: typings.audiosprite.audiospriteNumbers.`9` = this.cast(9)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `9`: typings.audiosprite.audiospriteNumbers.`9` = 9.asInstanceOf[typings.audiosprite.audiospriteNumbers.`9`]
 }
 

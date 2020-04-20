@@ -13,7 +13,6 @@ object PickImplcolor {
   @scala.inline
   def apply(color: String): PickImplcolor = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplcolor]
   }
 }

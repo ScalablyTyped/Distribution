@@ -15,7 +15,6 @@ object AnonAbsolute {
   @scala.inline
   def apply(absolute: Double, alpha: Double, beta: Double, gamma: Double): AnonAbsolute = {
     val __obj = js.Dynamic.literal(absolute = absolute.asInstanceOf[js.Any], alpha = alpha.asInstanceOf[js.Any], beta = beta.asInstanceOf[js.Any], gamma = gamma.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAbsolute]
   }
 }

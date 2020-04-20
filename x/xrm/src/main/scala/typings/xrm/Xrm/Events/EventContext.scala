@@ -67,7 +67,6 @@ object EventContext {
     setSharedVariable: (String, js.Any) => Unit
   ): EventContext = {
     val __obj = js.Dynamic.literal(getContext = js.Any.fromFunction0(getContext), getDepth = js.Any.fromFunction0(getDepth), getEventSource = js.Any.fromFunction0(getEventSource), getFormContext = js.Any.fromFunction0(getFormContext), getSharedVariable = js.Any.fromFunction1(getSharedVariable), setSharedVariable = js.Any.fromFunction2(setSharedVariable))
-  
     __obj.asInstanceOf[EventContext]
   }
 }

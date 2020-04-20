@@ -16,7 +16,6 @@ object IgtvChannelFeedResponseImageVersions2 {
     candidates: js.Array[IgtvChannelFeedResponseCandidatesItem]
   ): IgtvChannelFeedResponseImageVersions2 = {
     val __obj = js.Dynamic.literal(additional_candidates = additional_candidates.asInstanceOf[js.Any], candidates = candidates.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IgtvChannelFeedResponseImageVersions2]
   }
 }

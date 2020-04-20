@@ -15,7 +15,17 @@ import scala.scalajs.js.annotation._
 @JSImport("baseui", "styled")
 @js.native
 object styled_figcaption extends js.Object {
-  def apply[P /* <: js.Object */, T](component: figcaption, styledFn: js.Function1[/* props */ AnonTheme[T] with P, StyleObject]): StyletronComponent[(Pick[ComponentProps[figcaption], Exclude[String, AnonClassName]]) with P] = js.native
-  def apply[P /* <: js.Object */, T](component: figcaption, styledFn: StyleObject): StyletronComponent[(Pick[ComponentProps[figcaption], Exclude[String, AnonClassName]]) with P] = js.native
+  def apply[P /* <: js.Object */, T](component: figcaption, styledFn: js.Function1[/* props */ AnonTheme[T] with P, StyleObject]): StyletronComponent[
+    (Pick[
+      ComponentProps[figcaption], 
+      Exclude[/* keyof react.react.ComponentProps<'figcaption'> */ String, AnonClassName]
+    ]) with P
+  ] = js.native
+  def apply[P /* <: js.Object */, T](component: figcaption, styledFn: StyleObject): StyletronComponent[
+    (Pick[
+      ComponentProps[figcaption], 
+      Exclude[/* keyof react.react.ComponentProps<'figcaption'> */ String, AnonClassName]
+    ]) with P
+  ] = js.native
 }
 

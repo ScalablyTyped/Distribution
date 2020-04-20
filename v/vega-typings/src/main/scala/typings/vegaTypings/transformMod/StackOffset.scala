@@ -13,12 +13,10 @@ trait StackOffset extends js.Object
 
 object StackOffset {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.vegaTypings.vegaTypingsStrings.center = "center".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.center]
   @scala.inline
-  def center: typings.vegaTypings.vegaTypingsStrings.center = this.cast("center")
+  def normalize: typings.vegaTypings.vegaTypingsStrings.normalize = "normalize".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.normalize]
   @scala.inline
-  def normalize: typings.vegaTypings.vegaTypingsStrings.normalize = this.cast("normalize")
-  @scala.inline
-  def zero: typings.vegaTypings.vegaTypingsStrings.zero = this.cast("zero")
+  def zero: typings.vegaTypings.vegaTypingsStrings.zero = "zero".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.zero]
 }
 

@@ -27,7 +27,6 @@ object DeveloperMetadataCollection {
     search: (SearchDeveloperMetadataRequest, String) => SearchDeveloperMetadataResponse
   ): DeveloperMetadataCollection = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get), search = js.Any.fromFunction2(search))
-  
     __obj.asInstanceOf[DeveloperMetadataCollection]
   }
 }

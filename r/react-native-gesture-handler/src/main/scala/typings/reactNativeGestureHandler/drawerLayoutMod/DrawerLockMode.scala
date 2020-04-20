@@ -13,12 +13,10 @@ trait DrawerLockMode extends js.Object
 
 object DrawerLockMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `locked-closed`: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.`locked-closed` = "locked-closed".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.`locked-closed`]
   @scala.inline
-  def `locked-closed`: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.`locked-closed` = this.cast("locked-closed")
+  def `locked-open`: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.`locked-open` = "locked-open".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.`locked-open`]
   @scala.inline
-  def `locked-open`: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.`locked-open` = this.cast("locked-open")
-  @scala.inline
-  def unlocked: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.unlocked = this.cast("unlocked")
+  def unlocked: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.unlocked = "unlocked".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.unlocked]
 }
 

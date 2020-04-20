@@ -12,7 +12,6 @@ object AnonAttributeGroups {
   @scala.inline
   def apply(attributeGroups: js.Any): AnonAttributeGroups = {
     val __obj = js.Dynamic.literal(attributeGroups = attributeGroups.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAttributeGroups]
   }
 }

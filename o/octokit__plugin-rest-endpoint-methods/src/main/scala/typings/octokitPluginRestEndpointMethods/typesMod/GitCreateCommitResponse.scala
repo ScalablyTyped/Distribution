@@ -30,7 +30,6 @@ object GitCreateCommitResponse {
     verification: GitCreateCommitResponseVerification
   ): GitCreateCommitResponse = {
     val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], committer = committer.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], parents = parents.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], tree = tree.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], verification = verification.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GitCreateCommitResponse]
   }
 }

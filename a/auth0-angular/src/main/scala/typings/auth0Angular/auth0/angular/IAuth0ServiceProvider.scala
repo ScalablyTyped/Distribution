@@ -21,7 +21,6 @@ object IAuth0ServiceProvider {
   @scala.inline
   def apply(init: IAuth0ClientOptions => Unit, on: (String, js.Function1[/* repeated */ js.Any, _]) => Unit): IAuth0ServiceProvider = {
     val __obj = js.Dynamic.literal(init = js.Any.fromFunction1(init), on = js.Any.fromFunction2(on))
-  
     __obj.asInstanceOf[IAuth0ServiceProvider]
   }
 }

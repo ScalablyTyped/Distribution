@@ -29,7 +29,6 @@ object OnNetworkStatusChangeCallbackResult {
   @scala.inline
   def apply(isConnected: Boolean, networkType: wifi | `2g` | `3g` | `4g` | unknown | none): OnNetworkStatusChangeCallbackResult = {
     val __obj = js.Dynamic.literal(isConnected = isConnected.asInstanceOf[js.Any], networkType = networkType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnNetworkStatusChangeCallbackResult]
   }
 }

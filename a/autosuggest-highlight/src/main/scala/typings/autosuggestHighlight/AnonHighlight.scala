@@ -13,7 +13,6 @@ object AnonHighlight {
   @scala.inline
   def apply(highlight: Boolean, text: String): AnonHighlight = {
     val __obj = js.Dynamic.literal(highlight = highlight.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHighlight]
   }
 }

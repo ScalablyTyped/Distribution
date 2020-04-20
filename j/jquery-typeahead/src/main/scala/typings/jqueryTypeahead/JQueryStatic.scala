@@ -13,7 +13,6 @@ object JQueryStatic {
   @scala.inline
   def apply(typeahead: Options => JQuery): JQueryStatic = {
     val __obj = js.Dynamic.literal(typeahead = js.Any.fromFunction1(typeahead))
-  
     __obj.asInstanceOf[JQueryStatic]
   }
 }

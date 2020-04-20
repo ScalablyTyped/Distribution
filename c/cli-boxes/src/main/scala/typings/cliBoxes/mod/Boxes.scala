@@ -85,7 +85,6 @@ object Boxes {
     singleDouble: BoxStyle
   ): Boxes = {
     val __obj = js.Dynamic.literal(bold = bold.asInstanceOf[js.Any], classic = classic.asInstanceOf[js.Any], double = double.asInstanceOf[js.Any], doubleSingle = doubleSingle.asInstanceOf[js.Any], round = round.asInstanceOf[js.Any], single = single.asInstanceOf[js.Any], singleDouble = singleDouble.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Boxes]
   }
 }

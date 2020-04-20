@@ -24,7 +24,6 @@ object SearchDijkstraResult {
   @scala.inline
   def apply(distanceTo: NodeSingular => Double, pathTo: NodeSingular => CollectionReturnValue): SearchDijkstraResult = {
     val __obj = js.Dynamic.literal(distanceTo = js.Any.fromFunction1(distanceTo), pathTo = js.Any.fromFunction1(pathTo))
-  
     __obj.asInstanceOf[SearchDijkstraResult]
   }
 }

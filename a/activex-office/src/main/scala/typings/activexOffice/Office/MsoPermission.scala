@@ -28,26 +28,24 @@ trait MsoPermission extends js.Object
 
 object MsoPermission {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoPermissionAllCommon: `127` = 127.asInstanceOf[`127`]
   @scala.inline
-  def msoPermissionAllCommon: `127` = this.cast(127)
+  def msoPermissionChange: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def msoPermissionChange: `15` = this.cast(15)
+  def msoPermissionEdit: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoPermissionEdit: `2` = this.cast(2)
+  def msoPermissionExtract: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def msoPermissionExtract: `8` = this.cast(8)
+  def msoPermissionFullControl: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def msoPermissionFullControl: `64` = this.cast(64)
+  def msoPermissionObjModel: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def msoPermissionObjModel: `32` = this.cast(32)
+  def msoPermissionPrint: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def msoPermissionPrint: `16` = this.cast(16)
+  def msoPermissionRead: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoPermissionRead: `1` = this.cast(1)
+  def msoPermissionSave: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoPermissionSave: `4` = this.cast(4)
-  @scala.inline
-  def msoPermissionView: `1` = this.cast(1)
+  def msoPermissionView: `1` = 1.asInstanceOf[`1`]
 }
 

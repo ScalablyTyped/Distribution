@@ -13,7 +13,6 @@ object AnonSearchObject {
   @scala.inline
   def apply(SearchObject: Search): AnonSearchObject = {
     val __obj = js.Dynamic.literal(SearchObject = SearchObject.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSearchObject]
   }
 }

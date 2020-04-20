@@ -16,12 +16,10 @@ trait htmlZOrder extends js.Object
 
 object htmlZOrder {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def htmlZOrderBack: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def htmlZOrderBack: `1` = this.cast(1)
+  def htmlZOrderFront: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def htmlZOrderFront: `0` = this.cast(0)
-  @scala.inline
-  def htmlZOrder_Max: `2147483647` = this.cast(2147483647)
+  def htmlZOrder_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

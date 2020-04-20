@@ -23,7 +23,6 @@ object AnonFromUrl {
     upload: (ReadStream, AnonStore, js.Function2[/* err */ Error, /* res */ AnonFile, Unit]) => Unit
   ): AnonFromUrl = {
     val __obj = js.Dynamic.literal(fromUrl = js.Any.fromFunction3(fromUrl), upload = js.Any.fromFunction3(upload))
-  
     __obj.asInstanceOf[AnonFromUrl]
   }
 }

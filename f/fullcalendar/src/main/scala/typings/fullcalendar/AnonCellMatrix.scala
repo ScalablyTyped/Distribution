@@ -25,7 +25,6 @@ object AnonCellMatrix {
     tbodyEl: JQuery
   ): AnonCellMatrix = {
     val __obj = js.Dynamic.literal(cellMatrix = cellMatrix.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], segLevels = segLevels.asInstanceOf[js.Any], segMatrix = segMatrix.asInstanceOf[js.Any], segs = segs.asInstanceOf[js.Any], tbodyEl = tbodyEl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCellMatrix]
   }
 }

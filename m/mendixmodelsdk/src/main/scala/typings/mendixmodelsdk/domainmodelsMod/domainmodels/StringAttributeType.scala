@@ -28,8 +28,8 @@ class StringAttributeType protected () extends AttributeType {
   @JSName("model")
   var model_FStringAttributeType: IModel = js.native
   @JSName("containerAsAttribute")
-  def containerAsAttribute_MStringAttributeType(): Attribute = js.native
-  def length(): Double = js.native
+  def containerAsAttribute_MStringAttributeType: Attribute = js.native
+  def length: Double = js.native
   def length(newValue: Double): js.Any = js.native
 }
 

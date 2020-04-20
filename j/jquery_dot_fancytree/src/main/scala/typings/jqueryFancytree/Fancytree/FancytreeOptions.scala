@@ -77,9 +77,6 @@ trait FancytreeOptions
   var minExpandLevel: js.UndefOr[Double] = js.undefined
   /** navigate to next node by typing the first letters (default: false) */
   var quicksearch: js.UndefOr[Boolean] = js.undefined
-  /** Right to left mode (default: false) */
-  @JSName("rtl")
-  var rtl_FancytreeOptions: js.UndefOr[`false`] = js.undefined
   /** optional margins for node.scrollIntoView() (default: {top: 0, bottom: 0}) */
   var scrollOfs: js.UndefOr[AnonBottom] = js.undefined
   /** scrollable container for node.scrollIntoView() (default: $container) */
@@ -169,7 +166,7 @@ object FancytreeOptions {
     renderNode: (/* event */ JQueryEventObject, /* data */ EventData) => Unit = null,
     renderTitle: (/* event */ JQueryEventObject, /* data */ EventData) => Unit = null,
     restore: (/* event */ JQueryEventObject, /* data */ EventData) => Unit = null,
-    rtl: `false` = null,
+    rtl: js.UndefOr[Boolean] = js.undefined,
     scrollOfs: AnonBottom = null,
     scrollParent: JQuery = null,
     select: (/* event */ JQueryEventObject, /* data */ EventData) => Unit = null,
@@ -238,7 +235,7 @@ object FancytreeOptions {
     if (renderNode != null) __obj.updateDynamic("renderNode")(js.Any.fromFunction2(renderNode))
     if (renderTitle != null) __obj.updateDynamic("renderTitle")(js.Any.fromFunction2(renderTitle))
     if (restore != null) __obj.updateDynamic("restore")(js.Any.fromFunction2(restore))
-    if (rtl != null) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])
     if (scrollOfs != null) __obj.updateDynamic("scrollOfs")(scrollOfs.asInstanceOf[js.Any])
     if (scrollParent != null) __obj.updateDynamic("scrollParent")(scrollParent.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction2(select))

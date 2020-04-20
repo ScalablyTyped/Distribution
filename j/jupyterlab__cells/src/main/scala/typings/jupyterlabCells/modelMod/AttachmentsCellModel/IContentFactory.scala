@@ -21,7 +21,6 @@ object IContentFactory {
     createAttachmentsModel: typings.jupyterlabAttachments.modelMod.IAttachmentsModel.IOptions => IAttachmentsModel
   ): IContentFactory = {
     val __obj = js.Dynamic.literal(createAttachmentsModel = js.Any.fromFunction1(createAttachmentsModel))
-  
     __obj.asInstanceOf[IContentFactory]
   }
 }

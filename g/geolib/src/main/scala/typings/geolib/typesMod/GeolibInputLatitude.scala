@@ -14,13 +14,11 @@ object GeolibInputLatitude {
   @scala.inline
   def AnonLat(lat: GeolibLatitudeInputValue): GeolibInputLatitude = {
     val __obj = js.Dynamic.literal(lat = lat.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GeolibInputLatitude]
   }
   @scala.inline
   def AnonLatitudeGeolibLatitudeInputValue(latitude: GeolibLatitudeInputValue): GeolibInputLatitude = {
     val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GeolibInputLatitude]
   }
 }

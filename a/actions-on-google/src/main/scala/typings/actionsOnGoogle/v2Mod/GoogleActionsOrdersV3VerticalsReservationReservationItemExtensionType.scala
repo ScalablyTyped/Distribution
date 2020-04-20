@@ -13,12 +13,10 @@ trait GoogleActionsOrdersV3VerticalsReservationReservationItemExtensionType exte
 
 object GoogleActionsOrdersV3VerticalsReservationReservationItemExtensionType {
   @scala.inline
-  def HAIRDRESSER: typings.actionsOnGoogle.actionsOnGoogleStrings.HAIRDRESSER = this.cast("HAIRDRESSER")
+  def HAIRDRESSER: typings.actionsOnGoogle.actionsOnGoogleStrings.HAIRDRESSER = "HAIRDRESSER".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.HAIRDRESSER]
   @scala.inline
-  def RESERVATION_TYPE_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.RESERVATION_TYPE_UNSPECIFIED = this.cast("RESERVATION_TYPE_UNSPECIFIED")
+  def RESERVATION_TYPE_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.RESERVATION_TYPE_UNSPECIFIED = "RESERVATION_TYPE_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.RESERVATION_TYPE_UNSPECIFIED]
   @scala.inline
-  def RESTAURANT: typings.actionsOnGoogle.actionsOnGoogleStrings.RESTAURANT = this.cast("RESTAURANT")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def RESTAURANT: typings.actionsOnGoogle.actionsOnGoogleStrings.RESTAURANT = "RESTAURANT".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.RESTAURANT]
 }
 

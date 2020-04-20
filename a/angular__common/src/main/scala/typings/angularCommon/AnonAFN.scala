@@ -30,7 +30,6 @@ object AnonAFN {
     XCD: js.Array[String]
   ): AnonAFN = {
     val __obj = js.Dynamic.literal(AFN = AFN.asInstanceOf[js.Any], CAD = CAD.asInstanceOf[js.Any], CNY = CNY.asInstanceOf[js.Any], HKD = HKD.asInstanceOf[js.Any], IRR = IRR.asInstanceOf[js.Any], MXN = MXN.asInstanceOf[js.Any], NZD = NZD.asInstanceOf[js.Any], THB = THB.asInstanceOf[js.Any], XCD = XCD.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAFN]
   }
 }

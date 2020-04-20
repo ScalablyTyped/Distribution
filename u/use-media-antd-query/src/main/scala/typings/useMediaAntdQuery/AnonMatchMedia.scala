@@ -13,7 +13,6 @@ object AnonMatchMedia {
   @scala.inline
   def apply(matchMedia: String, maxWidth: Double): AnonMatchMedia = {
     val __obj = js.Dynamic.literal(matchMedia = matchMedia.asInstanceOf[js.Any], maxWidth = maxWidth.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMatchMedia]
   }
 }

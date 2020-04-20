@@ -20,7 +20,6 @@ object ParameterObject {
   @scala.inline
   def apply(attributes: ParameterAttributeList, id: fieldNameString): ParameterObject = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ParameterObject]
   }
 }

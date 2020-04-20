@@ -1,5 +1,6 @@
 package typings.mithrilGlobal
 
+import org.scalablytyped.runtime.TopLevel
 import typings.mithril.streamMod.Stream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,16 +16,16 @@ trait AnonCall extends js.Object {
     fn: js.Function1[/* values */ S, T],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param streams because its type {[ I in keyof S ]: Stream<S[I]>} is not an array type */ streams: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ I in keyof S ]: mithril.mithril/stream.Stream<S[I]>}
-    */ typings.mithrilGlobal.mithrilGlobalStrings.AnonCall with S
+    */ typings.mithrilGlobal.mithrilGlobalStrings.AnonCall with TopLevel[S]
   ): Stream[T] = js.native
   def merge[S /* <: js.Array[_] */](
     streams: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ I in keyof S ]: mithril.mithril/stream.Stream<S[I]>}
-    */ typings.mithrilGlobal.mithrilGlobalStrings.AnonCall with S
+    */ typings.mithrilGlobal.mithrilGlobalStrings.AnonCall with TopLevel[S]
   ): Stream[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ I in keyof S ]: S[I]}
-    */ typings.mithrilGlobal.mithrilGlobalStrings.AnonCall with S
+    */ typings.mithrilGlobal.mithrilGlobalStrings.AnonCall with TopLevel[S]
   ] = js.native
   def scan[T, U](fn: js.Function2[/* acc */ U, /* value */ T, U], acc: U, stream: Stream[T]): Stream[U] = js.native
   def scanMerge[U](pairs: js.Array[js.Tuple2[Stream[_], js.Function2[/* acc */ U, /* value */ _, U]]], acc: U): Stream[U] = js.native

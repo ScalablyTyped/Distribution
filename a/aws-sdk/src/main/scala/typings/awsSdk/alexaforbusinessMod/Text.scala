@@ -20,7 +20,6 @@ object Text {
   @scala.inline
   def apply(Locale: Locale, Value: TextValue): Text = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Text]
   }
 }

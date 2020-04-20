@@ -14,7 +14,6 @@ object RoadsRequestResponse {
   @scala.inline
   def apply(body: String, response: IncomingMessage): RoadsRequestResponse = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RoadsRequestResponse]
   }
 }

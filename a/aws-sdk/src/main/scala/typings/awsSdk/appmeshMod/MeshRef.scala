@@ -30,7 +30,6 @@ object MeshRef {
   @scala.inline
   def apply(arn: Arn, meshName: ResourceName, meshOwner: AccountId, resourceOwner: AccountId): MeshRef = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], meshName = meshName.asInstanceOf[js.Any], meshOwner = meshOwner.asInstanceOf[js.Any], resourceOwner = resourceOwner.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MeshRef]
   }
 }

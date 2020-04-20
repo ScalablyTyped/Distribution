@@ -30,7 +30,6 @@ object SignatureHelpProvider {
     provideSignatureHelp: (TextDocument, Position, CancellationToken, SignatureHelpContext) => ProviderResult[SignatureHelp]
   ): SignatureHelpProvider = {
     val __obj = js.Dynamic.literal(provideSignatureHelp = js.Any.fromFunction4(provideSignatureHelp))
-  
     __obj.asInstanceOf[SignatureHelpProvider]
   }
 }

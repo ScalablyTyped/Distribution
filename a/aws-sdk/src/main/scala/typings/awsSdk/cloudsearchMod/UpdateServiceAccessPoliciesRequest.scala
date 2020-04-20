@@ -17,7 +17,6 @@ object UpdateServiceAccessPoliciesRequest {
   @scala.inline
   def apply(AccessPolicies: PolicyDocument, DomainName: DomainName): UpdateServiceAccessPoliciesRequest = {
     val __obj = js.Dynamic.literal(AccessPolicies = AccessPolicies.asInstanceOf[js.Any], DomainName = DomainName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateServiceAccessPoliciesRequest]
   }
 }

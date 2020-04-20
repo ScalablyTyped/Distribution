@@ -13,12 +13,10 @@ trait ChangeType extends js.Object
 
 object ChangeType {
   @scala.inline
-  def attributes: typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.attributes = this.cast("attributes")
+  def attributes: typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.attributes = "attributes".asInstanceOf[typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.attributes]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def children: typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.children = "children".asInstanceOf[typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.children]
   @scala.inline
-  def children: typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.children = this.cast("children")
-  @scala.inline
-  def text: typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.text = this.cast("text")
+  def text: typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.text = "text".asInstanceOf[typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.text]
 }
 

@@ -14,13 +14,11 @@ object Volume {
   @scala.inline
   def SharedVolume(kind: typings.pulumiCloud.pulumiCloudStrings.SharedVolume, name: String): Volume = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Volume]
   }
   @scala.inline
   def HostPathVolume(kind: typings.pulumiCloud.pulumiCloudStrings.HostPathVolume, path: String): Volume = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Volume]
   }
 }

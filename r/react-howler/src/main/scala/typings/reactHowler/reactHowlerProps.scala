@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactHowlerProps {
   @scala.inline
-  def ReactHowlerProps: Props.type = typings.reactHowler.mod.Props
+  def ReactHowlerProps: Props.type = Props
   type ReactHowlerProps = Props
 }
 

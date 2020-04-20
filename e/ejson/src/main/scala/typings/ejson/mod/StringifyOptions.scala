@@ -13,7 +13,6 @@ object StringifyOptions {
   @scala.inline
   def apply(canonical: Boolean, indent: Boolean | Double | String): StringifyOptions = {
     val __obj = js.Dynamic.literal(canonical = canonical.asInstanceOf[js.Any], indent = indent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StringifyOptions]
   }
 }

@@ -20,7 +20,6 @@ object RunPipelineActivityRequest {
   @scala.inline
   def apply(payloads: MessagePayloads, pipelineActivity: PipelineActivity): RunPipelineActivityRequest = {
     val __obj = js.Dynamic.literal(payloads = payloads.asInstanceOf[js.Any], pipelineActivity = pipelineActivity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RunPipelineActivityRequest]
   }
 }

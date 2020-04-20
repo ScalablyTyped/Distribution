@@ -13,7 +13,6 @@ object Event {
   @scala.inline
   def apply(defaultPrevented: Boolean, preventDefault: () => Unit): Event = {
     val __obj = js.Dynamic.literal(defaultPrevented = defaultPrevented.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault))
-  
     __obj.asInstanceOf[Event]
   }
 }

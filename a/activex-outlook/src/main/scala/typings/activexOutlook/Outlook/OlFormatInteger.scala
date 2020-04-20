@@ -18,14 +18,12 @@ trait OlFormatInteger extends js.Object
 
 object OlFormatInteger {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olFormatIntegerComputer1: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olFormatIntegerComputer1: `2` = this.cast(2)
+  def olFormatIntegerComputer2: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def olFormatIntegerComputer2: `3` = this.cast(3)
+  def olFormatIntegerComputer3: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def olFormatIntegerComputer3: `4` = this.cast(4)
-  @scala.inline
-  def olFormatIntegerPlain: `1` = this.cast(1)
+  def olFormatIntegerPlain: `1` = 1.asInstanceOf[`1`]
 }
 

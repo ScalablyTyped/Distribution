@@ -22,7 +22,6 @@ object IXmlLoadSettings {
     validateOnParse: Boolean
   ): IXmlLoadSettings = {
     val __obj = js.Dynamic.literal(elementContentWhiteSpace = elementContentWhiteSpace.asInstanceOf[js.Any], maxElementDepth = maxElementDepth.asInstanceOf[js.Any], prohibitDtd = prohibitDtd.asInstanceOf[js.Any], resolveExternals = resolveExternals.asInstanceOf[js.Any], validateOnParse = validateOnParse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IXmlLoadSettings]
   }
 }

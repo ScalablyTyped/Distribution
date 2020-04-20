@@ -12,7 +12,6 @@ object AnonEnumValuesAnonInvalidFilterClause {
   @scala.inline
   def apply(enumValues: AnonInvalidFilterClause): AnonEnumValuesAnonInvalidFilterClause = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumValuesAnonInvalidFilterClause]
   }
 }

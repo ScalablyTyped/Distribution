@@ -14,6 +14,14 @@ trait BasemapGallery extends Widget_ {
     */
   var activeBasemap: Basemap = js.native
   /**
+    * When `true`, sets the widget to a disabled state so the user cannot interact with it.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html#disabled)
+    *
+    * @default false
+    */
+  var disabled: Boolean = js.native
+  /**
     * The widget's default CSS icon class.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html#iconClass)

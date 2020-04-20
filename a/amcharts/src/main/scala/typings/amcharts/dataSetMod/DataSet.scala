@@ -64,7 +64,6 @@ object DataSet {
     title: String
   ): DataSet = {
     val __obj = js.Dynamic.literal(categoryField = categoryField.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], compared = compared.asInstanceOf[js.Any], dataProvider = dataProvider.asInstanceOf[js.Any], fieldMappings = fieldMappings.asInstanceOf[js.Any], showInCompare = showInCompare.asInstanceOf[js.Any], showInSelect = showInSelect.asInstanceOf[js.Any], stockEvents = stockEvents.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DataSet]
   }
 }

@@ -14,14 +14,12 @@ trait ManagedAppDataEncryptionType extends js.Object
 
 object ManagedAppDataEncryptionType {
   @scala.inline
-  def afterDeviceRestart: typings.microsoftGraph.microsoftGraphStrings.afterDeviceRestart = this.cast("afterDeviceRestart")
+  def afterDeviceRestart: typings.microsoftGraph.microsoftGraphStrings.afterDeviceRestart = "afterDeviceRestart".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.afterDeviceRestart]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def useDeviceSettings: typings.microsoftGraph.microsoftGraphStrings.useDeviceSettings = "useDeviceSettings".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.useDeviceSettings]
   @scala.inline
-  def useDeviceSettings: typings.microsoftGraph.microsoftGraphStrings.useDeviceSettings = this.cast("useDeviceSettings")
+  def whenDeviceLocked: typings.microsoftGraph.microsoftGraphStrings.whenDeviceLocked = "whenDeviceLocked".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.whenDeviceLocked]
   @scala.inline
-  def whenDeviceLocked: typings.microsoftGraph.microsoftGraphStrings.whenDeviceLocked = this.cast("whenDeviceLocked")
-  @scala.inline
-  def whenDeviceLockedExceptOpenFiles: typings.microsoftGraph.microsoftGraphStrings.whenDeviceLockedExceptOpenFiles = this.cast("whenDeviceLockedExceptOpenFiles")
+  def whenDeviceLockedExceptOpenFiles: typings.microsoftGraph.microsoftGraphStrings.whenDeviceLockedExceptOpenFiles = "whenDeviceLockedExceptOpenFiles".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.whenDeviceLockedExceptOpenFiles]
 }
 

@@ -13,7 +13,6 @@ object DPlayerHighLightItem {
   @scala.inline
   def apply(text: String, time: Double): DPlayerHighLightItem = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DPlayerHighLightItem]
   }
 }

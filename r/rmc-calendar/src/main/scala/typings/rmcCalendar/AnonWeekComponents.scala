@@ -13,7 +13,6 @@ object AnonWeekComponents {
   @scala.inline
   def apply(weekComponents: js.Array[ReactNode]): AnonWeekComponents = {
     val __obj = js.Dynamic.literal(weekComponents = weekComponents.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonWeekComponents]
   }
 }

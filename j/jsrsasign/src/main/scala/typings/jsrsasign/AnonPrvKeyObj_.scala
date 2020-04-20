@@ -14,7 +14,6 @@ object AnonPrvKeyObj_ {
   @scala.inline
   def apply(prvKeyObj: RSAKey, pubKeyObj: RSAKey): AnonPrvKeyObj_ = {
     val __obj = js.Dynamic.literal(prvKeyObj = prvKeyObj.asInstanceOf[js.Any], pubKeyObj = pubKeyObj.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPrvKeyObj_]
   }
 }

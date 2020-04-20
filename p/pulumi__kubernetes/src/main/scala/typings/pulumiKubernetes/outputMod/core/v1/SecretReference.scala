@@ -23,7 +23,6 @@ object SecretReference {
   @scala.inline
   def apply(name: String, namespace: String): SecretReference = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SecretReference]
   }
 }

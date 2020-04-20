@@ -13,7 +13,6 @@ object AnonAlphabetize {
   @scala.inline
   def apply(alphabetize: Boolean, order: String): AnonAlphabetize = {
     val __obj = js.Dynamic.literal(alphabetize = alphabetize.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAlphabetize]
   }
 }

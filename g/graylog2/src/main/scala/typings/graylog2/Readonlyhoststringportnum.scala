@@ -14,7 +14,6 @@ object Readonlyhoststringportnum {
   @scala.inline
   def apply(host: String, port: Double): Readonlyhoststringportnum = {
     val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Readonlyhoststringportnum]
   }
 }

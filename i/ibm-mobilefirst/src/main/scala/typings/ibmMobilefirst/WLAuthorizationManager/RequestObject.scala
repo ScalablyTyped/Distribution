@@ -12,7 +12,6 @@ object RequestObject {
   @scala.inline
   def apply(setRequestHeader: (String, String) => Unit): RequestObject = {
     val __obj = js.Dynamic.literal(setRequestHeader = js.Any.fromFunction2(setRequestHeader))
-  
     __obj.asInstanceOf[RequestObject]
   }
 }

@@ -24,34 +24,32 @@ trait QueryOperator extends js.Object
 
 object QueryOperator {
   @scala.inline
-  def CONTAINS: typings.servicenowLondon.servicenowLondonStrings.CONTAINS = this.cast("CONTAINS")
+  def CONTAINS: typings.servicenowLondon.servicenowLondonStrings.CONTAINS = "CONTAINS".asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.CONTAINS]
   @scala.inline
-  def `DOES NOT CONTAIN`: typings.servicenowLondon.servicenowLondonStrings.`DOES NOT CONTAIN` = this.cast("DOES NOT CONTAIN")
+  def `DOES NOT CONTAIN`: typings.servicenowLondon.servicenowLondonStrings.`DOES NOT CONTAIN` = ("DOES NOT CONTAIN").asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.`DOES NOT CONTAIN`]
   @scala.inline
-  def ENDSWITH: typings.servicenowLondon.servicenowLondonStrings.ENDSWITH = this.cast("ENDSWITH")
+  def ENDSWITH: typings.servicenowLondon.servicenowLondonStrings.ENDSWITH = "ENDSWITH".asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.ENDSWITH]
   @scala.inline
-  def Equalssign: typings.servicenowLondon.servicenowLondonStrings.Equalssign = this.cast("=")
+  def Equalssign: typings.servicenowLondon.servicenowLondonStrings.Equalssign = "=".asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.Equalssign]
   @scala.inline
-  def ExclamationmarkEqualssign: typings.servicenowLondon.servicenowLondonStrings.ExclamationmarkEqualssign = this.cast("!=")
+  def ExclamationmarkEqualssign: typings.servicenowLondon.servicenowLondonStrings.ExclamationmarkEqualssign = "!=".asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.ExclamationmarkEqualssign]
   @scala.inline
-  def Greaterthansign: typings.servicenowLondon.servicenowLondonStrings.Greaterthansign = this.cast(">")
+  def Greaterthansign: typings.servicenowLondon.servicenowLondonStrings.Greaterthansign = ">".asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.Greaterthansign]
   @scala.inline
-  def GreaterthansignEqualssign: typings.servicenowLondon.servicenowLondonStrings.GreaterthansignEqualssign = this.cast(">=")
+  def GreaterthansignEqualssign: typings.servicenowLondon.servicenowLondonStrings.GreaterthansignEqualssign = ">=".asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.GreaterthansignEqualssign]
   @scala.inline
-  def IN: typings.servicenowLondon.servicenowLondonStrings.IN = this.cast("IN")
+  def IN: typings.servicenowLondon.servicenowLondonStrings.IN = "IN".asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.IN]
   @scala.inline
-  def INSTANCEOF: typings.servicenowLondon.servicenowLondonStrings.INSTANCEOF = this.cast("INSTANCEOF")
+  def INSTANCEOF: typings.servicenowLondon.servicenowLondonStrings.INSTANCEOF = "INSTANCEOF".asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.INSTANCEOF]
   @scala.inline
-  def Lessthansign: typings.servicenowLondon.servicenowLondonStrings.Lessthansign = this.cast("<")
+  def Lessthansign: typings.servicenowLondon.servicenowLondonStrings.Lessthansign = "<".asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.Lessthansign]
   @scala.inline
-  def LessthansignEqualssign: typings.servicenowLondon.servicenowLondonStrings.LessthansignEqualssign = this.cast("<=")
+  def LessthansignEqualssign: typings.servicenowLondon.servicenowLondonStrings.LessthansignEqualssign = "<=".asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.LessthansignEqualssign]
   @scala.inline
-  def `NOT IN`: typings.servicenowLondon.servicenowLondonStrings.`NOT IN` = this.cast("NOT IN")
+  def `NOT IN`: typings.servicenowLondon.servicenowLondonStrings.`NOT IN` = ("NOT IN").asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.`NOT IN`]
   @scala.inline
-  def SAMEAS: typings.servicenowLondon.servicenowLondonStrings.SAMEAS = this.cast("SAMEAS")
+  def SAMEAS: typings.servicenowLondon.servicenowLondonStrings.SAMEAS = "SAMEAS".asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.SAMEAS]
   @scala.inline
-  def STARTSWITH: typings.servicenowLondon.servicenowLondonStrings.STARTSWITH = this.cast("STARTSWITH")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def STARTSWITH: typings.servicenowLondon.servicenowLondonStrings.STARTSWITH = "STARTSWITH".asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.STARTSWITH]
 }
 

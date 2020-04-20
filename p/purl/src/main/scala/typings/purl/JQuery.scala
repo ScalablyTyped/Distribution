@@ -16,7 +16,6 @@ object JQuery {
   @scala.inline
   def apply(url: () => Url): JQuery = {
     val __obj = js.Dynamic.literal(url = js.Any.fromFunction0(url))
-  
     __obj.asInstanceOf[JQuery]
   }
 }

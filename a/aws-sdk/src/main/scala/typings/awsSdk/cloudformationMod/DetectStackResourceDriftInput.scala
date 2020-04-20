@@ -20,7 +20,6 @@ object DetectStackResourceDriftInput {
   @scala.inline
   def apply(LogicalResourceId: LogicalResourceId, StackName: StackNameOrId): DetectStackResourceDriftInput = {
     val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId.asInstanceOf[js.Any], StackName = StackName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DetectStackResourceDriftInput]
   }
 }

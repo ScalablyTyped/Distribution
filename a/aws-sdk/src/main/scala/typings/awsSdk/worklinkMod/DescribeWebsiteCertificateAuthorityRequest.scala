@@ -20,7 +20,6 @@ object DescribeWebsiteCertificateAuthorityRequest {
   @scala.inline
   def apply(FleetArn: FleetArn, WebsiteCaId: Id): DescribeWebsiteCertificateAuthorityRequest = {
     val __obj = js.Dynamic.literal(FleetArn = FleetArn.asInstanceOf[js.Any], WebsiteCaId = WebsiteCaId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeWebsiteCertificateAuthorityRequest]
   }
 }

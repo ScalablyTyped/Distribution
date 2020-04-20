@@ -12,7 +12,6 @@ object AqlLiteral {
   @scala.inline
   def apply(toAQL: () => String): AqlLiteral = {
     val __obj = js.Dynamic.literal(toAQL = js.Any.fromFunction0(toAQL))
-  
     __obj.asInstanceOf[AqlLiteral]
   }
 }

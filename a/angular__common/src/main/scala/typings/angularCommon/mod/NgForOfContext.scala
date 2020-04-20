@@ -14,9 +14,9 @@ class NgForOfContext[T, U /* <: NgIterable[T] */] protected () extends js.Object
   var count: Double = js.native
   var index: Double = js.native
   var ngForOf: U = js.native
-  def even(): Boolean = js.native
-  def first(): Boolean = js.native
-  def last(): Boolean = js.native
-  def odd(): Boolean = js.native
+  def even: Boolean = js.native
+  def first: Boolean = js.native
+  def last: Boolean = js.native
+  def odd: Boolean = js.native
 }
 

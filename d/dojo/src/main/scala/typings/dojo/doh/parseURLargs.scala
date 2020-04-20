@@ -28,7 +28,6 @@ object parseURLargs {
   @scala.inline
   def apply(isDebug: Boolean, noGlobals: Boolean, scopeMap: js.Array[_]): parseURLargs = {
     val __obj = js.Dynamic.literal(isDebug = isDebug.asInstanceOf[js.Any], noGlobals = noGlobals.asInstanceOf[js.Any], scopeMap = scopeMap.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[parseURLargs]
   }
 }

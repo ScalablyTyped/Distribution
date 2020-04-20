@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import typings.reactVirtualized.AnonClientHeight
-import typings.reactVirtualized.AnonStartIndex
 import typings.reactVirtualized.esCellMeasurerMod.CellMeasurerCacheInterface
 import typings.reactVirtualized.esCellMeasurerMod.KeyMapper
+import typings.reactVirtualized.mod.IndexRange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -60,7 +60,7 @@ object MasonryProps {
     className: String = null,
     id: String = null,
     keyMapper: (/* rowIndex */ Double, /* columnIndex */ Double) => js.Any = null,
-    onCellsRendered: /* params */ AnonStartIndex => Unit = null,
+    onCellsRendered: /* params */ IndexRange => Unit = null,
     onScroll: /* params */ AnonClientHeight => Unit = null,
     overscanByPixels: Int | Double = null,
     role: String = null,

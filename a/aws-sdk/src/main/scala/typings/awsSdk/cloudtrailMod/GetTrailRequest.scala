@@ -16,7 +16,6 @@ object GetTrailRequest {
   @scala.inline
   def apply(Name: String): GetTrailRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetTrailRequest]
   }
 }

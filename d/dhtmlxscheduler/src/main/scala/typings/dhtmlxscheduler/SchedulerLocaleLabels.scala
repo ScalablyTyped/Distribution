@@ -42,7 +42,6 @@ object SchedulerLocaleLabels {
     week_tab: String
   ): SchedulerLocaleLabels = {
     val __obj = js.Dynamic.literal(confirm_closing = confirm_closing.asInstanceOf[js.Any], confirm_deleting = confirm_deleting.asInstanceOf[js.Any], day_tab = day_tab.asInstanceOf[js.Any], dhx_cal_today_button = dhx_cal_today_button.asInstanceOf[js.Any], icon_cancel = icon_cancel.asInstanceOf[js.Any], icon_delete = icon_delete.asInstanceOf[js.Any], icon_details = icon_details.asInstanceOf[js.Any], icon_edit = icon_edit.asInstanceOf[js.Any], icon_save = icon_save.asInstanceOf[js.Any], month_tab = month_tab.asInstanceOf[js.Any], new_event = new_event.asInstanceOf[js.Any], section_description = section_description.asInstanceOf[js.Any], section_time = section_time.asInstanceOf[js.Any], unit_tab = unit_tab.asInstanceOf[js.Any], week_tab = week_tab.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SchedulerLocaleLabels]
   }
 }

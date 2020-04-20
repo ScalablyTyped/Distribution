@@ -13,7 +13,6 @@ object IConfig {
   @scala.inline
   def apply(onError: Error => Unit): IConfig = {
     val __obj = js.Dynamic.literal(onError = js.Any.fromFunction1(onError))
-  
     __obj.asInstanceOf[IConfig]
   }
 }

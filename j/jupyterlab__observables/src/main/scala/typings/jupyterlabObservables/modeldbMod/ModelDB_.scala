@@ -63,7 +63,7 @@ class ModelDB_ () extends IModelDB {
     * functions of the object.
     */
   @JSName("basePath")
-  def basePath_MModelDB_(): String = js.native
+  def basePath_MModelDB_ : String = js.native
   /**
     * Create an undoable list and insert it in the database.
     *
@@ -151,7 +151,7 @@ class ModelDB_ () extends IModelDB {
     * Whether the database is disposed.
     */
   @JSName("isDisposed")
-  def isDisposed_MModelDB_(): Boolean = js.native
+  def isDisposed_MModelDB_ : Boolean = js.native
   /**
     * Set a value at a path. Not intended to
     * be called by user code, instead use the

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactInputCalendarComponents extends reactInputCalendarProps {
   @scala.inline
-  def ReactInputCalendar: ComponentType[ReactInputCalendarProps] = js.constructorOf[typings.reactInputCalendar.reactInputCalendar.ReactInputCalendar].asInstanceOf[typings.react.mod.ComponentType[ReactInputCalendarProps]]
+  def ReactInputCalendar: ComponentType[ReactInputCalendarProps] = js.constructorOf[typings.reactInputCalendar.reactInputCalendar.ReactInputCalendar].asInstanceOf[ComponentType[ReactInputCalendarProps]]
 }
 

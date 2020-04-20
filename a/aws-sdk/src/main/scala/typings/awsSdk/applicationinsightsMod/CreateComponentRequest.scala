@@ -24,7 +24,6 @@ object CreateComponentRequest {
   @scala.inline
   def apply(ComponentName: ComponentName, ResourceGroupName: ResourceGroupName, ResourceList: ResourceList): CreateComponentRequest = {
     val __obj = js.Dynamic.literal(ComponentName = ComponentName.asInstanceOf[js.Any], ResourceGroupName = ResourceGroupName.asInstanceOf[js.Any], ResourceList = ResourceList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateComponentRequest]
   }
 }

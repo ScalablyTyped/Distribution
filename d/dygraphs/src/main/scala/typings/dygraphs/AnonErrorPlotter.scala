@@ -14,7 +14,6 @@ object AnonErrorPlotter {
   @scala.inline
   def apply(errorPlotter: js.Any, fillPlotter: js.Any, linePlotter: js.Any): AnonErrorPlotter = {
     val __obj = js.Dynamic.literal(errorPlotter = errorPlotter.asInstanceOf[js.Any], fillPlotter = fillPlotter.asInstanceOf[js.Any], linePlotter = linePlotter.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonErrorPlotter]
   }
 }

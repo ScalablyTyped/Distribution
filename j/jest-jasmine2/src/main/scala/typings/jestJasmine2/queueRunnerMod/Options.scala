@@ -25,7 +25,6 @@ object Options {
     userContext: js.Any
   ): Options = {
     val __obj = js.Dynamic.literal(clearTimeout = clearTimeout.asInstanceOf[js.Any], fail = js.Any.fromFunction1(fail), onException = js.Any.fromFunction1(onException), queueableFns = queueableFns.asInstanceOf[js.Any], setTimeout = setTimeout.asInstanceOf[js.Any], userContext = userContext.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Options]
   }
 }

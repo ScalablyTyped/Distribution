@@ -16,12 +16,10 @@ trait htmlSelectExFlag extends js.Object
 
 object htmlSelectExFlag {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def htmlSelectExFlagHideSelectionInDesign: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def htmlSelectExFlagHideSelectionInDesign: `1` = this.cast(1)
+  def htmlSelectExFlagNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def htmlSelectExFlagNone: `0` = this.cast(0)
-  @scala.inline
-  def htmlSelectExFlag_Max: `2147483647` = this.cast(2147483647)
+  def htmlSelectExFlag_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

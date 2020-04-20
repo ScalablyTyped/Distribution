@@ -12,7 +12,6 @@ object WordExtractor {
   @scala.inline
   def apply(extract: String => js.Promise[Document]): WordExtractor = {
     val __obj = js.Dynamic.literal(extract = js.Any.fromFunction1(extract))
-  
     __obj.asInstanceOf[WordExtractor]
   }
 }

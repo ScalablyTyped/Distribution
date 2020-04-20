@@ -20,7 +20,6 @@ object CreateJsonClassifierRequest {
   @scala.inline
   def apply(JsonPath: JsonPath, Name: NameString): CreateJsonClassifierRequest = {
     val __obj = js.Dynamic.literal(JsonPath = JsonPath.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateJsonClassifierRequest]
   }
 }

@@ -20,7 +20,6 @@ object DOMSearchable {
     getElementsByTagName: String => js.Array[Node] | Null
   ): DOMSearchable = {
     val __obj = js.Dynamic.literal(getElementById = js.Any.fromFunction1(getElementById), getElementsByClassName = js.Any.fromFunction1(getElementsByClassName), getElementsByName = js.Any.fromFunction1(getElementsByName), getElementsByTagName = js.Any.fromFunction1(getElementsByTagName))
-  
     __obj.asInstanceOf[DOMSearchable]
   }
 }

@@ -13,7 +13,6 @@ object AnonOutlineOffset {
   @scala.inline
   def apply(appearance: String, outlineOffset: String): AnonOutlineOffset = {
     val __obj = js.Dynamic.literal(appearance = appearance.asInstanceOf[js.Any], outlineOffset = outlineOffset.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOutlineOffset]
   }
 }

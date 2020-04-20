@@ -22,7 +22,6 @@ object AudioSourceInfo {
   @scala.inline
   def apply(id: Double | String, name: String): AudioSourceInfo = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AudioSourceInfo]
   }
 }

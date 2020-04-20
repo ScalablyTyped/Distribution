@@ -13,12 +13,10 @@ trait StrokeLineJoin extends js.Object
 
 object StrokeLineJoin {
   @scala.inline
-  def bevel: typings.amapJsApi.amapJsApiStrings.bevel = this.cast("bevel")
+  def bevel: typings.amapJsApi.amapJsApiStrings.bevel = "bevel".asInstanceOf[typings.amapJsApi.amapJsApiStrings.bevel]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def miter: typings.amapJsApi.amapJsApiStrings.miter = "miter".asInstanceOf[typings.amapJsApi.amapJsApiStrings.miter]
   @scala.inline
-  def miter: typings.amapJsApi.amapJsApiStrings.miter = this.cast("miter")
-  @scala.inline
-  def round: typings.amapJsApi.amapJsApiStrings.round = this.cast("round")
+  def round: typings.amapJsApi.amapJsApiStrings.round = "round".asInstanceOf[typings.amapJsApi.amapJsApiStrings.round]
 }
 

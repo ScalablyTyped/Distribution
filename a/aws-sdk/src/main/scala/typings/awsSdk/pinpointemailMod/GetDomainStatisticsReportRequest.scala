@@ -24,7 +24,6 @@ object GetDomainStatisticsReportRequest {
   @scala.inline
   def apply(Domain: Identity, EndDate: Timestamp, StartDate: Timestamp): GetDomainStatisticsReportRequest = {
     val __obj = js.Dynamic.literal(Domain = Domain.asInstanceOf[js.Any], EndDate = EndDate.asInstanceOf[js.Any], StartDate = StartDate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDomainStatisticsReportRequest]
   }
 }

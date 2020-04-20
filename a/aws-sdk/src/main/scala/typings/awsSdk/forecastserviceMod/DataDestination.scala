@@ -16,7 +16,6 @@ object DataDestination {
   @scala.inline
   def apply(S3Config: S3Config): DataDestination = {
     val __obj = js.Dynamic.literal(S3Config = S3Config.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DataDestination]
   }
 }

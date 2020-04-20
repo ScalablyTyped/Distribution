@@ -87,6 +87,12 @@ trait BasemapLayerList extends Widget_ {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#viewModel)
     */
   var viewModel: BasemapLayerListViewModel = js.native
+  /**
+    * The visible elements that are displayed within the widget. This property provides the ability to turn individual elements of the widget's display on/off.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#visibleElements)
+    */
+  var visibleElements: VisibleElements = js.native
   @JSName("on")
   def on_triggeraction(name: `trigger-action`, eventHandler: BasemapLayerListTriggerActionEventHandler): IHandle = js.native
   /**

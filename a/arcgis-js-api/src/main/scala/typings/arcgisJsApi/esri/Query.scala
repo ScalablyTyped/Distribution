@@ -30,6 +30,17 @@ trait Query
   extends Accessor
      with JSONSupport {
   /**
+    * Indicates if the service should cache the query results. It only applies if the layer's [capabilities.query.supportsCacheHint](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities) is set to `true`. Use only for queries that have the same parameters every time the app is used. Some examples of cacheable queries:
+    *   * Queries that fetch [statistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#outStatistics) or [features](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#returnGeometry) on app load.
+    *   * Queries based on [preset input](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#where), for example, a drop-down list of US states.
+    *   * Queries based on [preset extents](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#geometry), for example bookmarks, in web maps.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#cacheHint)
+    *
+    * @default false
+    */
+  var cacheHint: Boolean = js.native
+  /**
     * Datum transformation used for projecting geometries in the query results when [outSpatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#outSpatialReference) is different than the layer's spatial reference. Requires ArcGIS Server service 10.5 or greater.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#datumTransformation)
@@ -61,7 +72,7 @@ trait Query
     */
   var geometryPrecision: Double = js.native
   /**
-    * Used only in [statistical queries](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#statistic). When one or more field names are provided in this property, the output statisics will be grouped based on unique values from those fields. This is only valid when [outStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#outStatistics) has been defined.
+    * Used only in [statistical queries](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#statistic). When one or more field names are provided in this property, the output statistics will be grouped based on unique values from those fields. This is only valid when [outStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#outStatistics) has been defined.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#groupByFieldsForStatistics)
     */
@@ -128,6 +139,8 @@ trait Query
     *   * If specifying outFields as expressions on a feature service-based [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html), the service capabilities `advancedQueryCapabilities.supportsOutFieldSQLExpression` and `useStandardizedQueries` must both be true.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#outFields)
+    *
+    * @default null
     */
   var outFields: js.Array[String] = js.native
   /**

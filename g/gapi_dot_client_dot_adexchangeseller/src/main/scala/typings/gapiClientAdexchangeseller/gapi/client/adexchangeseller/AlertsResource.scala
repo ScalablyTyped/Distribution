@@ -15,7 +15,6 @@ object AlertsResource {
   @scala.inline
   def apply(list: AnonAlt => Request_[Alerts]): AlertsResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[AlertsResource]
   }
 }

@@ -14,10 +14,8 @@ trait AcDataAccessPageView extends js.Object
 
 object AcDataAccessPageView {
   @scala.inline
-  def acDataAccessPageBrowse: `0` = this.cast(0)
+  def acDataAccessPageBrowse: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def acDataAccessPageDesign: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def acDataAccessPageDesign: `1` = 1.asInstanceOf[`1`]
 }
 

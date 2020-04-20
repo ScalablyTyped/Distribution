@@ -12,7 +12,6 @@ object SuggestionHighlightedParams {
   @scala.inline
   def apply(suggestion: js.Any): SuggestionHighlightedParams = {
     val __obj = js.Dynamic.literal(suggestion = suggestion.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SuggestionHighlightedParams]
   }
 }

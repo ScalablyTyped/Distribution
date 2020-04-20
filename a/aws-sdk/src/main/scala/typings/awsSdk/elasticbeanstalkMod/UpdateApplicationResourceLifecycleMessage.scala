@@ -20,7 +20,6 @@ object UpdateApplicationResourceLifecycleMessage {
   @scala.inline
   def apply(ApplicationName: ApplicationName, ResourceLifecycleConfig: ApplicationResourceLifecycleConfig): UpdateApplicationResourceLifecycleMessage = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], ResourceLifecycleConfig = ResourceLifecycleConfig.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateApplicationResourceLifecycleMessage]
   }
 }

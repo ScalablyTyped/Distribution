@@ -17,20 +17,18 @@ trait Events extends js.Object
 
 object Events {
   @scala.inline
-  def beforeclose: typings.slideout.slideoutStrings.beforeclose = this.cast("beforeclose")
+  def beforeclose: typings.slideout.slideoutStrings.beforeclose = "beforeclose".asInstanceOf[typings.slideout.slideoutStrings.beforeclose]
   @scala.inline
-  def beforeopen: typings.slideout.slideoutStrings.beforeopen = this.cast("beforeopen")
+  def beforeopen: typings.slideout.slideoutStrings.beforeopen = "beforeopen".asInstanceOf[typings.slideout.slideoutStrings.beforeopen]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def close: typings.slideout.slideoutStrings.close = "close".asInstanceOf[typings.slideout.slideoutStrings.close]
   @scala.inline
-  def close: typings.slideout.slideoutStrings.close = this.cast("close")
+  def open: typings.slideout.slideoutStrings.open = "open".asInstanceOf[typings.slideout.slideoutStrings.open]
   @scala.inline
-  def open: typings.slideout.slideoutStrings.open = this.cast("open")
+  def translate: typings.slideout.slideoutStrings.translate = "translate".asInstanceOf[typings.slideout.slideoutStrings.translate]
   @scala.inline
-  def translate: typings.slideout.slideoutStrings.translate = this.cast("translate")
+  def translateend: typings.slideout.slideoutStrings.translateend = "translateend".asInstanceOf[typings.slideout.slideoutStrings.translateend]
   @scala.inline
-  def translateend: typings.slideout.slideoutStrings.translateend = this.cast("translateend")
-  @scala.inline
-  def translatestart: typings.slideout.slideoutStrings.translatestart = this.cast("translatestart")
+  def translatestart: typings.slideout.slideoutStrings.translatestart = "translatestart".asInstanceOf[typings.slideout.slideoutStrings.translatestart]
 }
 

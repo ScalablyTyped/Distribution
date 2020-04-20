@@ -18,22 +18,20 @@ trait Placement extends js.Object
 
 object Placement {
   @scala.inline
-  def bottom: typings.rcTooltip.rcTooltipStrings.bottom = this.cast("bottom")
+  def bottom: typings.rcTooltip.rcTooltipStrings.bottom = "bottom".asInstanceOf[typings.rcTooltip.rcTooltipStrings.bottom]
   @scala.inline
-  def bottomLeft: typings.rcTooltip.rcTooltipStrings.bottomLeft = this.cast("bottomLeft")
+  def bottomLeft: typings.rcTooltip.rcTooltipStrings.bottomLeft = "bottomLeft".asInstanceOf[typings.rcTooltip.rcTooltipStrings.bottomLeft]
   @scala.inline
-  def bottomRight: typings.rcTooltip.rcTooltipStrings.bottomRight = this.cast("bottomRight")
+  def bottomRight: typings.rcTooltip.rcTooltipStrings.bottomRight = "bottomRight".asInstanceOf[typings.rcTooltip.rcTooltipStrings.bottomRight]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def left: typings.rcTooltip.rcTooltipStrings.left = "left".asInstanceOf[typings.rcTooltip.rcTooltipStrings.left]
   @scala.inline
-  def left: typings.rcTooltip.rcTooltipStrings.left = this.cast("left")
+  def right: typings.rcTooltip.rcTooltipStrings.right = "right".asInstanceOf[typings.rcTooltip.rcTooltipStrings.right]
   @scala.inline
-  def right: typings.rcTooltip.rcTooltipStrings.right = this.cast("right")
+  def top: typings.rcTooltip.rcTooltipStrings.top = "top".asInstanceOf[typings.rcTooltip.rcTooltipStrings.top]
   @scala.inline
-  def top: typings.rcTooltip.rcTooltipStrings.top = this.cast("top")
+  def topLeft: typings.rcTooltip.rcTooltipStrings.topLeft = "topLeft".asInstanceOf[typings.rcTooltip.rcTooltipStrings.topLeft]
   @scala.inline
-  def topLeft: typings.rcTooltip.rcTooltipStrings.topLeft = this.cast("topLeft")
-  @scala.inline
-  def topRight: typings.rcTooltip.rcTooltipStrings.topRight = this.cast("topRight")
+  def topRight: typings.rcTooltip.rcTooltipStrings.topRight = "topRight".asInstanceOf[typings.rcTooltip.rcTooltipStrings.topRight]
 }
 

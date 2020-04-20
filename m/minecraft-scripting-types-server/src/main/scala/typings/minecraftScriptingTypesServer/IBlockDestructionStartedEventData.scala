@@ -24,7 +24,6 @@ object IBlockDestructionStartedEventData {
   @scala.inline
   def apply(block_position: VectorXYZ, player: IEntity): IBlockDestructionStartedEventData = {
     val __obj = js.Dynamic.literal(block_position = block_position.asInstanceOf[js.Any], player = player.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IBlockDestructionStartedEventData]
   }
 }

@@ -13,7 +13,6 @@ object PickImplpersist {
   @scala.inline
   def apply(persist: Boolean): PickImplpersist = {
     val __obj = js.Dynamic.literal(persist = persist.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplpersist]
   }
 }

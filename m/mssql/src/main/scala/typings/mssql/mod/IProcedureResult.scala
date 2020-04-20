@@ -19,7 +19,6 @@ object IProcedureResult {
     rowsAffected: js.Array[Double]
   ): IProcedureResult[T] = {
     val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any], recordset = recordset.asInstanceOf[js.Any], recordsets = recordsets.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any], rowsAffected = rowsAffected.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IProcedureResult[T]]
   }
 }

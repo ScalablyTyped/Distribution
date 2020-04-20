@@ -15,7 +15,6 @@ object AnonInfo {
   @scala.inline
   def apply(info: PDFInfo, metadata: PDFMetadata): AnonInfo = {
     val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonInfo]
   }
 }

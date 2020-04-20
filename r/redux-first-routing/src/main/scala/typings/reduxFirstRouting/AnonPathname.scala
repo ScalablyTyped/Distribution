@@ -17,7 +17,6 @@ object AnonPathname {
   @scala.inline
   def apply[P /* <: Pathname */, S /* <: Search */, H /* <: Hash */](hash: H, pathname: P, search: S): AnonPathname[P, S, H] = {
     val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPathname[P, S, H]]
   }
 }

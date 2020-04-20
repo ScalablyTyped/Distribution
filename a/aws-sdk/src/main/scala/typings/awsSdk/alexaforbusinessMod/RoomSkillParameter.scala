@@ -20,7 +20,6 @@ object RoomSkillParameter {
   @scala.inline
   def apply(ParameterKey: RoomSkillParameterKey, ParameterValue: RoomSkillParameterValue): RoomSkillParameter = {
     val __obj = js.Dynamic.literal(ParameterKey = ParameterKey.asInstanceOf[js.Any], ParameterValue = ParameterValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RoomSkillParameter]
   }
 }

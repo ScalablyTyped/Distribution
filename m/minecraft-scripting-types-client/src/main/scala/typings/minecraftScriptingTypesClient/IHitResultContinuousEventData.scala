@@ -24,7 +24,6 @@ object IHitResultContinuousEventData {
   @scala.inline
   def apply(entity: IEntity, position: VectorXYZ): IHitResultContinuousEventData = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IHitResultContinuousEventData]
   }
 }

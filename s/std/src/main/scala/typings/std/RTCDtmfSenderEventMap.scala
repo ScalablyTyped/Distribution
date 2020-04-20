@@ -12,7 +12,6 @@ object RTCDtmfSenderEventMap {
   @scala.inline
   def apply(tonechange: RTCDTMFToneChangeEvent): RTCDtmfSenderEventMap = {
     val __obj = js.Dynamic.literal(tonechange = tonechange.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RTCDtmfSenderEventMap]
   }
 }

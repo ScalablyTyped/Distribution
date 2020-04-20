@@ -16,7 +16,6 @@ object errMsgstringExtConfig {
   @scala.inline
   def apply(errMsg: String, extConfig: js.Any): errMsgstringExtConfig = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], extConfig = extConfig.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[errMsgstringExtConfig]
   }
 }

@@ -1,6 +1,6 @@
 package typings.baseui.menuMod
 
-import typings.baseui.AnonListItem
+import typings.baseui.AnonChildMenuPopover
 import typings.baseui.baseuiStrings.compact
 import typings.baseui.baseuiStrings.default_
 import typings.react.mod.ReactNode
@@ -17,7 +17,7 @@ trait OptionListProps extends BaseMenuPropsT {
   var getChildMenu: js.UndefOr[js.Function1[/* item */ js.Any, ReactNode]] = js.undefined
   var item: js.Any
   var onMouseEnter: js.UndefOr[js.Function1[/* event */ MouseEvent, _]] = js.undefined
-  var overrides: js.UndefOr[AnonListItem] = js.undefined
+  var overrides: js.UndefOr[AnonChildMenuPopover] = js.undefined
   var renderHrefAsAnchor: js.UndefOr[Boolean] = js.undefined
   var resetMenu: js.UndefOr[js.Function0[Unit]] = js.undefined
   var size: js.UndefOr[default_ | compact] = js.undefined
@@ -33,7 +33,7 @@ object OptionListProps {
     $isHighlighted: js.UndefOr[Boolean] = js.undefined,
     getChildMenu: /* item */ js.Any => ReactNode = null,
     onMouseEnter: /* event */ MouseEvent => _ = null,
-    overrides: AnonListItem = null,
+    overrides: AnonChildMenuPopover = null,
     renderAll: js.UndefOr[Boolean] = js.undefined,
     renderHrefAsAnchor: js.UndefOr[Boolean] = js.undefined,
     resetMenu: () => Unit = null,

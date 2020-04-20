@@ -22,7 +22,6 @@ object AnonFontFamily {
     lineHeight: String
   ): AnonFontFamily = {
     val __obj = js.Dynamic.literal(fontFamily = fontFamily.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontWeight = fontWeight.asInstanceOf[js.Any], letterSpacing = letterSpacing.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFontFamily]
   }
 }

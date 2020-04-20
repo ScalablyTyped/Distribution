@@ -16,7 +16,6 @@ object RemoveAction {
   @scala.inline
   def apply(MemberId: ResourceIdString): RemoveAction = {
     val __obj = js.Dynamic.literal(MemberId = MemberId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RemoveAction]
   }
 }

@@ -15,7 +15,6 @@ object AnonRun {
   @scala.inline
   def apply(debug: NodeModule, run: NodeModule): AnonRun = {
     val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any], run = run.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRun]
   }
 }

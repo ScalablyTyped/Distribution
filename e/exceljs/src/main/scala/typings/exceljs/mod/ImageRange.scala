@@ -14,7 +14,6 @@ object ImageRange {
   @scala.inline
   def apply(br: AnonCol | Anchor, tl: AnonCol | Anchor): ImageRange = {
     val __obj = js.Dynamic.literal(br = br.asInstanceOf[js.Any], tl = tl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ImageRange]
   }
 }

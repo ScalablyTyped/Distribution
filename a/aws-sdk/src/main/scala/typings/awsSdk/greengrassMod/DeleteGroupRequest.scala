@@ -16,7 +16,6 @@ object DeleteGroupRequest {
   @scala.inline
   def apply(GroupId: string): DeleteGroupRequest = {
     val __obj = js.Dynamic.literal(GroupId = GroupId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteGroupRequest]
   }
 }

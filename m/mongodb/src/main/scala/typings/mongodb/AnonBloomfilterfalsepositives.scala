@@ -36,18 +36,18 @@ object AnonBloomfilterfalsepositives {
     `total size of bloom filters`: Double
   ): AnonBloomfilterfalsepositives = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bloom filter false positives")(`bloom filter false positives`.asInstanceOf[js.Any])
-    __obj.updateDynamic("bloom filter hits")(`bloom filter hits`.asInstanceOf[js.Any])
-    __obj.updateDynamic("bloom filter misses")(`bloom filter misses`.asInstanceOf[js.Any])
-    __obj.updateDynamic("bloom filter pages evicted from cache")(`bloom filter pages evicted from cache`.asInstanceOf[js.Any])
-    __obj.updateDynamic("bloom filter pages read into cache")(`bloom filter pages read into cache`.asInstanceOf[js.Any])
-    __obj.updateDynamic("bloom filters in the LSM tree")(`bloom filters in the LSM tree`.asInstanceOf[js.Any])
-    __obj.updateDynamic("chunks in the LSM tree")(`chunks in the LSM tree`.asInstanceOf[js.Any])
-    __obj.updateDynamic("highest merge generation in the LSM tree")(`highest merge generation in the LSM tree`.asInstanceOf[js.Any])
-    __obj.updateDynamic("queries that could have benefited from a Bloom filter that did not exist")(`queries that could have benefited from a Bloom filter that did not exist`.asInstanceOf[js.Any])
-    __obj.updateDynamic("sleep for LSM checkpoint throttle")(`sleep for LSM checkpoint throttle`.asInstanceOf[js.Any])
-    __obj.updateDynamic("sleep for LSM merge throttle")(`sleep for LSM merge throttle`.asInstanceOf[js.Any])
-    __obj.updateDynamic("total size of bloom filters")(`total size of bloom filters`.asInstanceOf[js.Any])
+    __obj.updateDynamic("bloom filter false positives")((`bloom filter false positives`).asInstanceOf[js.Any])
+    __obj.updateDynamic("bloom filter hits")((`bloom filter hits`).asInstanceOf[js.Any])
+    __obj.updateDynamic("bloom filter misses")((`bloom filter misses`).asInstanceOf[js.Any])
+    __obj.updateDynamic("bloom filter pages evicted from cache")((`bloom filter pages evicted from cache`).asInstanceOf[js.Any])
+    __obj.updateDynamic("bloom filter pages read into cache")((`bloom filter pages read into cache`).asInstanceOf[js.Any])
+    __obj.updateDynamic("bloom filters in the LSM tree")((`bloom filters in the LSM tree`).asInstanceOf[js.Any])
+    __obj.updateDynamic("chunks in the LSM tree")((`chunks in the LSM tree`).asInstanceOf[js.Any])
+    __obj.updateDynamic("highest merge generation in the LSM tree")((`highest merge generation in the LSM tree`).asInstanceOf[js.Any])
+    __obj.updateDynamic("queries that could have benefited from a Bloom filter that did not exist")((`queries that could have benefited from a Bloom filter that did not exist`).asInstanceOf[js.Any])
+    __obj.updateDynamic("sleep for LSM checkpoint throttle")((`sleep for LSM checkpoint throttle`).asInstanceOf[js.Any])
+    __obj.updateDynamic("sleep for LSM merge throttle")((`sleep for LSM merge throttle`).asInstanceOf[js.Any])
+    __obj.updateDynamic("total size of bloom filters")((`total size of bloom filters`).asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonBloomfilterfalsepositives]
   }
 }

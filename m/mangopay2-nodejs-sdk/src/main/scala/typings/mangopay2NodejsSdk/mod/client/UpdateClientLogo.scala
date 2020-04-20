@@ -15,7 +15,6 @@ object UpdateClientLogo {
   @scala.inline
   def apply(File: String): UpdateClientLogo = {
     val __obj = js.Dynamic.literal(File = File.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateClientLogo]
   }
 }

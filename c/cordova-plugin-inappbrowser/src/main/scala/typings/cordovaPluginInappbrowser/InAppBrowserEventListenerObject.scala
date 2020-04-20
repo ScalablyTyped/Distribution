@@ -12,7 +12,6 @@ object InAppBrowserEventListenerObject {
   @scala.inline
   def apply(handleEvent: InAppBrowserEvent => Unit): InAppBrowserEventListenerObject = {
     val __obj = js.Dynamic.literal(handleEvent = js.Any.fromFunction1(handleEvent))
-  
     __obj.asInstanceOf[InAppBrowserEventListenerObject]
   }
 }

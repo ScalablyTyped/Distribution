@@ -14,7 +14,6 @@ object PickImpluseLegacy {
   @scala.inline
   def apply(useLegacy: auto | Boolean): PickImpluseLegacy = {
     val __obj = js.Dynamic.literal(useLegacy = useLegacy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpluseLegacy]
   }
 }

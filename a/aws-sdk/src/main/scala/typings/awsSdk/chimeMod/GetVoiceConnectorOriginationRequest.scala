@@ -16,7 +16,6 @@ object GetVoiceConnectorOriginationRequest {
   @scala.inline
   def apply(VoiceConnectorId: NonEmptyString): GetVoiceConnectorOriginationRequest = {
     val __obj = js.Dynamic.literal(VoiceConnectorId = VoiceConnectorId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetVoiceConnectorOriginationRequest]
   }
 }

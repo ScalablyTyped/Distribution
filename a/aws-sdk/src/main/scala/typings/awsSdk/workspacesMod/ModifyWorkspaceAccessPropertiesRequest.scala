@@ -20,7 +20,6 @@ object ModifyWorkspaceAccessPropertiesRequest {
   @scala.inline
   def apply(ResourceId: DirectoryId, WorkspaceAccessProperties: WorkspaceAccessProperties): ModifyWorkspaceAccessPropertiesRequest = {
     val __obj = js.Dynamic.literal(ResourceId = ResourceId.asInstanceOf[js.Any], WorkspaceAccessProperties = WorkspaceAccessProperties.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ModifyWorkspaceAccessPropertiesRequest]
   }
 }

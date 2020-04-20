@@ -23,7 +23,6 @@ object HostedFieldsAccountDetails {
   @scala.inline
   def apply(cardType: String, lastFour: String, lastTwo: String): HostedFieldsAccountDetails = {
     val __obj = js.Dynamic.literal(cardType = cardType.asInstanceOf[js.Any], lastFour = lastFour.asInstanceOf[js.Any], lastTwo = lastTwo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HostedFieldsAccountDetails]
   }
 }

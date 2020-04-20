@@ -13,7 +13,6 @@ object AnonBindingRewriteValidators {
   @scala.inline
   def apply(bindingRewriteValidators: js.Any, parseObjectLiteral: String => js.Array[_]): AnonBindingRewriteValidators = {
     val __obj = js.Dynamic.literal(bindingRewriteValidators = bindingRewriteValidators.asInstanceOf[js.Any], parseObjectLiteral = js.Any.fromFunction1(parseObjectLiteral))
-  
     __obj.asInstanceOf[AnonBindingRewriteValidators]
   }
 }

@@ -16,18 +16,16 @@ trait ApprovalStatus extends js.Object
 
 object ApprovalStatus {
   @scala.inline
-  def APPROVED: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.APPROVED = this.cast("APPROVED")
+  def APPROVED: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.APPROVED = "APPROVED".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.APPROVED]
   @scala.inline
-  def DISAPPROVED: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.DISAPPROVED = this.cast("DISAPPROVED")
+  def DISAPPROVED: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.DISAPPROVED = "DISAPPROVED".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.DISAPPROVED]
   @scala.inline
-  def FAMILY_SAFE: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.FAMILY_SAFE = this.cast("FAMILY_SAFE")
+  def FAMILY_SAFE: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.FAMILY_SAFE = "FAMILY_SAFE".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.FAMILY_SAFE]
   @scala.inline
-  def NON_FAMILY_SAFE: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.NON_FAMILY_SAFE = this.cast("NON_FAMILY_SAFE")
+  def NON_FAMILY_SAFE: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.NON_FAMILY_SAFE = "NON_FAMILY_SAFE".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.NON_FAMILY_SAFE]
   @scala.inline
-  def PORN: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.PORN = this.cast("PORN")
+  def PORN: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.PORN = "PORN".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.PORN]
   @scala.inline
-  def UNCHECKED: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.UNCHECKED = this.cast("UNCHECKED")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UNCHECKED: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.UNCHECKED = "UNCHECKED".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.UNCHECKED]
 }
 

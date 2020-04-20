@@ -18,12 +18,10 @@ trait ScalarType extends js.Object
 
 object ScalarType {
   @scala.inline
-  def boolean: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.boolean = this.cast("boolean")
+  def boolean: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.boolean = "boolean".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.boolean]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def count: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.count = "count".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.count]
   @scala.inline
-  def count: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.count = this.cast("count")
-  @scala.inline
-  def string: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.string = this.cast("string")
+  def string: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.string = "string".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.string]
 }
 

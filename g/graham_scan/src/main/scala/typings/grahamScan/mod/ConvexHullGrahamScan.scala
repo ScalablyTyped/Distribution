@@ -14,7 +14,6 @@ object ConvexHullGrahamScan {
   @scala.inline
   def apply(addPoint: (Double, Double) => Unit, getHull: () => js.Array[AnonX]): ConvexHullGrahamScan = {
     val __obj = js.Dynamic.literal(addPoint = js.Any.fromFunction2(addPoint), getHull = js.Any.fromFunction0(getHull))
-  
     __obj.asInstanceOf[ConvexHullGrahamScan]
   }
 }

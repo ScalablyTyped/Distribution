@@ -55,24 +55,24 @@ class EnumerationType protected () extends DataType {
   @JSName("model")
   var model_FEnumerationType: IModel = js.native
   @JSName("containerAsAppServiceActionParameter")
-  def containerAsAppServiceActionParameter_MEnumerationType(): AppServiceActionParameter = js.native
+  def containerAsAppServiceActionParameter_MEnumerationType: AppServiceActionParameter = js.native
   @JSName("containerAsAppServiceAction")
-  def containerAsAppServiceAction_MEnumerationType(): AppServiceAction = js.native
+  def containerAsAppServiceAction_MEnumerationType: AppServiceAction = js.native
   @JSName("containerAsConstant")
-  def containerAsConstant_MEnumerationType(): Constant = js.native
+  def containerAsConstant_MEnumerationType: Constant = js.native
   @JSName("containerAsDataSetParameter")
-  def containerAsDataSetParameter_MEnumerationType(): DataSetParameter = js.native
+  def containerAsDataSetParameter_MEnumerationType: DataSetParameter = js.native
   @JSName("containerAsDocumentTemplateParameter")
-  def containerAsDocumentTemplateParameter_MEnumerationType(): DocumentTemplateParameter = js.native
+  def containerAsDocumentTemplateParameter_MEnumerationType: DocumentTemplateParameter = js.native
   @JSName("containerAsImportMapping")
-  def containerAsImportMapping_MEnumerationType(): ImportMapping = js.native
+  def containerAsImportMapping_MEnumerationType: ImportMapping = js.native
   @JSName("containerAsMicroflowBase")
-  def containerAsMicroflowBase_MEnumerationType(): MicroflowBase = js.native
+  def containerAsMicroflowBase_MEnumerationType: MicroflowBase = js.native
   @JSName("containerAsMicroflowParameterBase")
-  def containerAsMicroflowParameterBase_MEnumerationType(): MicroflowParameterBase = js.native
-  def enumeration(): IEnumeration = js.native
+  def containerAsMicroflowParameterBase_MEnumerationType: MicroflowParameterBase = js.native
+  def enumeration: IEnumeration = js.native
   def enumeration(newValue: IEnumeration): js.Any = js.native
-  def enumerationQualifiedName(): String = js.native
+  def enumerationQualifiedName: String = js.native
 }
 
 /* static members */

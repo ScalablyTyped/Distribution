@@ -26,7 +26,6 @@ object Tokenizers {
   @scala.inline
   def apply(nonword: String => js.Array[String], obj: ObjTokenizer, whitespace: String => js.Array[String]): Tokenizers = {
     val __obj = js.Dynamic.literal(nonword = js.Any.fromFunction1(nonword), obj = obj.asInstanceOf[js.Any], whitespace = js.Any.fromFunction1(whitespace))
-  
     __obj.asInstanceOf[Tokenizers]
   }
 }

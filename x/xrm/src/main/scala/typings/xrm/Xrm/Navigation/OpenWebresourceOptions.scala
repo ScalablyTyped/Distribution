@@ -15,7 +15,6 @@ object OpenWebresourceOptions {
   @scala.inline
   def apply(height: Double, openInNewWindow: Boolean, width: Double): OpenWebresourceOptions = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], openInNewWindow = openInNewWindow.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OpenWebresourceOptions]
   }
 }

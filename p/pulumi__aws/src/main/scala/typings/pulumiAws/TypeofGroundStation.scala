@@ -13,7 +13,6 @@ object TypeofGroundStation {
   @scala.inline
   def apply(Types: TypeofGroundStation): TypeofGroundStation = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofGroundStation]
   }
 }

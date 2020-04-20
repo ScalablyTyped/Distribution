@@ -221,6 +221,14 @@ object axisMod extends js.Object {
     def tickLabelPadding(padding: Double): this.type = js.native
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - typings.plottable.plottableStrings.left
+    - typings.plottable.plottableStrings.right
+    - typings.plottable.plottableStrings.top
+    - typings.plottable.plottableStrings.bottom
+  */
+  trait AxisOrientation extends js.Object
+  
   /* static members */
   @js.native
   object Axis extends js.Object {
@@ -263,6 +271,5 @@ object axisMod extends js.Object {
     var top: typings.plottable.plottableStrings.top = js.native
   }
   
-  type AxisOrientation = String
 }
 

@@ -87,7 +87,6 @@ object DateProvider {
     prevRollover: (Date, Double, Modifier, TimePeriod) => Date
   ): DateProvider = {
     val __obj = js.Dynamic.literal(UTC = js.Any.fromFunction0(UTC), localTime = js.Any.fromFunction0(localTime), next = js.Any.fromFunction6(next), nextRollover = js.Any.fromFunction4(nextRollover), prev = js.Any.fromFunction6(prev), prevRollover = js.Any.fromFunction4(prevRollover))
-  
     __obj.asInstanceOf[DateProvider]
   }
 }

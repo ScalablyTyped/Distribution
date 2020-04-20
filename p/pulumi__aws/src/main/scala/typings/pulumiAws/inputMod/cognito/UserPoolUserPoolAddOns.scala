@@ -17,7 +17,6 @@ object UserPoolUserPoolAddOns {
   @scala.inline
   def apply(advancedSecurityMode: Input[String]): UserPoolUserPoolAddOns = {
     val __obj = js.Dynamic.literal(advancedSecurityMode = advancedSecurityMode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UserPoolUserPoolAddOns]
   }
 }

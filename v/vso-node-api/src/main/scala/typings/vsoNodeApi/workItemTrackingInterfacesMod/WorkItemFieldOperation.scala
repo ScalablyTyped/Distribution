@@ -19,7 +19,6 @@ object WorkItemFieldOperation {
   @scala.inline
   def apply(name: String, referenceName: String): WorkItemFieldOperation = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], referenceName = referenceName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WorkItemFieldOperation]
   }
 }

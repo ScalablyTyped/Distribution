@@ -20,16 +20,14 @@ trait htmlMediaNetworkState extends js.Object
 
 object htmlMediaNetworkState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def htmlMediaNetworkStateEmpty: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def htmlMediaNetworkStateEmpty: `0` = this.cast(0)
+  def htmlMediaNetworkStateIdle: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def htmlMediaNetworkStateIdle: `1` = this.cast(1)
+  def htmlMediaNetworkStateLoading: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def htmlMediaNetworkStateLoading: `2` = this.cast(2)
+  def htmlMediaNetworkStateNoSource: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def htmlMediaNetworkStateNoSource: `3` = this.cast(3)
-  @scala.inline
-  def htmlMediaNetworkState_Max: `2147483647` = this.cast(2147483647)
+  def htmlMediaNetworkState_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

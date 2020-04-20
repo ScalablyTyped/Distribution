@@ -18,14 +18,12 @@ trait MsoPresetLightingSoftness extends js.Object
 
 object MsoPresetLightingSoftness {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoLightingBright: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoLightingBright: `3` = this.cast(3)
+  def msoLightingDim: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoLightingDim: `1` = this.cast(1)
+  def msoLightingNormal: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoLightingNormal: `2` = this.cast(2)
-  @scala.inline
-  def msoPresetLightingSoftnessMixed: `-2` = this.cast(-2)
+  def msoPresetLightingSoftnessMixed: `-2` = -2.asInstanceOf[`-2`]
 }
 

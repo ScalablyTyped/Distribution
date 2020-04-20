@@ -102,7 +102,7 @@ object pathMod extends js.Object {
       *
       * @const
       */
-    def Empty(): Path = js.native
+    def Empty: Path = js.native
     /**
       * @param {!Path} left
       * @param {!Path} right
@@ -121,9 +121,9 @@ object pathMod extends js.Object {
   @js.native
   object ValidationPath extends js.Object {
     /** @const {number} Maximum key depth. */
-    def MAX_PATH_DEPTH(): Double = js.native
+    def MAX_PATH_DEPTH: Double = js.native
     /** @const {number} Maximum number of (UTF8) bytes in a Firebase path. */
-    def MAX_PATH_LENGTH_BYTES(): Double = js.native
+    def MAX_PATH_LENGTH_BYTES: Double = js.native
   }
   
 }

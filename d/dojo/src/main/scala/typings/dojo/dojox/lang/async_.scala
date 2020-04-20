@@ -69,7 +69,6 @@ object async_ {
     seq: js.Any => Unit
   ): async_ = {
     val __obj = js.Dynamic.literal(any = js.Any.fromFunction1(any), ifThen = js.Any.fromFunction3(ifThen), loop = js.Any.fromFunction2(loop), par = js.Any.fromFunction1(par), select = js.Any.fromFunction2(select), seq = js.Any.fromFunction1(seq))
-  
     __obj.asInstanceOf[async_]
   }
 }

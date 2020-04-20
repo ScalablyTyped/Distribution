@@ -20,7 +20,6 @@ object Typeofrls {
     update_subs: (String, String) => Double
   ): Typeofrls = {
     val __obj = js.Dynamic.literal(handle_notify = js.Any.fromFunction0(handle_notify), handle_subscribe = js.Any.fromFunction0(handle_subscribe), handle_subscribe_uri = js.Any.fromFunction1(handle_subscribe_uri), update_subs = js.Any.fromFunction2(update_subs))
-  
     __obj.asInstanceOf[Typeofrls]
   }
 }

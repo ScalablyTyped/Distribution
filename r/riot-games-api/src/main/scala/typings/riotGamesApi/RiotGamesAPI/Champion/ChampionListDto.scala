@@ -12,7 +12,6 @@ object ChampionListDto {
   @scala.inline
   def apply(champions: js.Array[ChampionDto]): ChampionListDto = {
     val __obj = js.Dynamic.literal(champions = champions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChampionListDto]
   }
 }

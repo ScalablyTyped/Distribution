@@ -20,7 +20,6 @@ object AnonW1 {
   @scala.inline
   def apply(W1: PinDefinition, W2: PinDefinition): AnonW1 = {
     val __obj = js.Dynamic.literal(W1 = W1.asInstanceOf[js.Any], W2 = W2.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonW1]
   }
 }

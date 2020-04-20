@@ -34,7 +34,6 @@ object Pattern6 {
     ] => Plan[js.Any]
   ): Pattern6[T1, T2, T3, T4, T5, T6] = {
     val __obj = js.Dynamic.literal(and = js.Any.fromFunction1(and), thenDo = js.Any.fromFunction1(thenDo))
-  
     __obj.asInstanceOf[Pattern6[T1, T2, T3, T4, T5, T6]]
   }
 }

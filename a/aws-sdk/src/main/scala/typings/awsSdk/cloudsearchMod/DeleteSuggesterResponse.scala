@@ -16,7 +16,6 @@ object DeleteSuggesterResponse {
   @scala.inline
   def apply(Suggester: SuggesterStatus): DeleteSuggesterResponse = {
     val __obj = js.Dynamic.literal(Suggester = Suggester.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteSuggesterResponse]
   }
 }

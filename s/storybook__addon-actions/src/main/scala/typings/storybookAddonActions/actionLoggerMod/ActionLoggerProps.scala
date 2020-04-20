@@ -14,7 +14,6 @@ object ActionLoggerProps {
   @scala.inline
   def apply(actions: js.Array[ActionDisplay], onClear: () => Unit): ActionLoggerProps = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], onClear = js.Any.fromFunction0(onClear))
-  
     __obj.asInstanceOf[ActionLoggerProps]
   }
 }

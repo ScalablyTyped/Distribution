@@ -47,7 +47,6 @@ object ICommAngularProvider {
     mapTo: String => ICommAngularDescriptor
   ): ICommAngularProvider = {
     val __obj = js.Dynamic.literal(asFlow = js.Any.fromFunction0(asFlow), asParallel = js.Any.fromFunction0(asParallel), asSequence = js.Any.fromFunction0(asSequence), findCommand = js.Any.fromFunction1(findCommand), mapTo = js.Any.fromFunction1(mapTo))
-  
     __obj.asInstanceOf[ICommAngularProvider]
   }
 }

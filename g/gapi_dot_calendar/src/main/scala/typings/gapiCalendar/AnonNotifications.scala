@@ -12,7 +12,6 @@ object AnonNotifications {
   @scala.inline
   def apply(notifications: js.Array[AnonMethodType]): AnonNotifications = {
     val __obj = js.Dynamic.literal(notifications = notifications.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNotifications]
   }
 }

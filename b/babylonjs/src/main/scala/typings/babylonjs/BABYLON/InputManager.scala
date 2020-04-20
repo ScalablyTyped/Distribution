@@ -90,16 +90,16 @@ class InputManager protected () extends js.Object {
   /**
     * Gets the mesh that is currently under the pointer
     */
-  def meshUnderPointer(): Nullable[AbstractMesh] = js.native
+  def meshUnderPointer: Nullable[AbstractMesh] = js.native
   /**
     * Gets or sets the current on-screen X position of the pointer
     */
-  def pointerX(): Double = js.native
+  def pointerX: Double = js.native
   def pointerX(value: Double): js.Any = js.native
   /**
     * Gets or sets the current on-screen Y position of the pointer
     */
-  def pointerY(): Double = js.native
+  def pointerY: Double = js.native
   def pointerY(value: Double): js.Any = js.native
   /**
     * Force the value of meshUnderPointer
@@ -135,7 +135,7 @@ class InputManager protected () extends js.Object {
   /**
     * Gets the pointer coordinates in 2D without any translation (ie. straight out of the pointer event)
     */
-  def unTranslatedPointer(): Vector2 = js.native
+  def unTranslatedPointer: Vector2 = js.native
 }
 
 /* static members */

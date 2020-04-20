@@ -12,7 +12,6 @@ object Typeofpike {
   @scala.inline
   def apply(pike_check_req: () => Double): Typeofpike = {
     val __obj = js.Dynamic.literal(pike_check_req = js.Any.fromFunction0(pike_check_req))
-  
     __obj.asInstanceOf[Typeofpike]
   }
 }

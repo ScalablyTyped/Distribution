@@ -12,7 +12,6 @@ object HeroAccuracy {
   @scala.inline
   def apply(hero: String, img: String, weapon_accuracy: String): HeroAccuracy = {
     val __obj = js.Dynamic.literal(hero = hero.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], weapon_accuracy = weapon_accuracy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HeroAccuracy]
   }
 }

@@ -13,7 +13,6 @@ object Colorizer {
   @scala.inline
   def apply(colorize: (String, String) => Unit, format: (String, js.Any) => Unit): Colorizer = {
     val __obj = js.Dynamic.literal(colorize = js.Any.fromFunction2(colorize), format = js.Any.fromFunction2(format))
-  
     __obj.asInstanceOf[Colorizer]
   }
 }

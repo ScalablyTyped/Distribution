@@ -14,7 +14,6 @@ object AnonNetworks {
   @scala.inline
   def apply(Networks: StringDictionary[NetworkInfo]): AnonNetworks = {
     val __obj = js.Dynamic.literal(Networks = Networks.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNetworks]
   }
 }

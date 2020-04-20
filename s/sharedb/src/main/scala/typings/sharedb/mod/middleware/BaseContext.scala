@@ -31,7 +31,6 @@ object BaseContext {
     backend: sharedb
   ): BaseContext = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], agent = agent.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BaseContext]
   }
 }

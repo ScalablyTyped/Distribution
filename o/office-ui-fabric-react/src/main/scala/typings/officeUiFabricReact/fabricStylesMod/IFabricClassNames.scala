@@ -13,7 +13,6 @@ object IFabricClassNames {
   @scala.inline
   def apply(bodyThemed: String, root: String): IFabricClassNames = {
     val __obj = js.Dynamic.literal(bodyThemed = bodyThemed.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IFabricClassNames]
   }
 }

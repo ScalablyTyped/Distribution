@@ -15,7 +15,6 @@ object SetSkipAllPausesParameterType {
   @scala.inline
   def apply(skip: Boolean): SetSkipAllPausesParameterType = {
     val __obj = js.Dynamic.literal(skip = skip.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetSkipAllPausesParameterType]
   }
 }

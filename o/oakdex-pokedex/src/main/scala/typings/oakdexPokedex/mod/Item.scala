@@ -26,7 +26,6 @@ object Item {
     prices: js.Array[ItemPrice]
   ): Item = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], descriptions = descriptions.asInstanceOf[js.Any], effects = effects.asInstanceOf[js.Any], fling_power = fling_power.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any], pockets = pockets.asInstanceOf[js.Any], prices = prices.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Item]
   }
 }

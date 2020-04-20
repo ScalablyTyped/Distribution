@@ -19,7 +19,6 @@ object CheckFailure {
   @scala.inline
   def apply(property: String, reason: String): CheckFailure = {
     val __obj = js.Dynamic.literal(property = property.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CheckFailure]
   }
 }

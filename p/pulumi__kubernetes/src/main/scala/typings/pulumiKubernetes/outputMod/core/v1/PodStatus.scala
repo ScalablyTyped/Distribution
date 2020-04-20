@@ -116,7 +116,6 @@ object PodStatus {
     startTime: String
   ): PodStatus = {
     val __obj = js.Dynamic.literal(conditions = conditions.asInstanceOf[js.Any], containerStatuses = containerStatuses.asInstanceOf[js.Any], ephemeralContainerStatuses = ephemeralContainerStatuses.asInstanceOf[js.Any], hostIP = hostIP.asInstanceOf[js.Any], initContainerStatuses = initContainerStatuses.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], nominatedNodeName = nominatedNodeName.asInstanceOf[js.Any], phase = phase.asInstanceOf[js.Any], podIP = podIP.asInstanceOf[js.Any], podIPs = podIPs.asInstanceOf[js.Any], qosClass = qosClass.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PodStatus]
   }
 }

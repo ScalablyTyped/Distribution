@@ -33,7 +33,6 @@ object PropertyDifference {
     PropertyPath: PropertyPath
   ): PropertyDifference = {
     val __obj = js.Dynamic.literal(ActualValue = ActualValue.asInstanceOf[js.Any], DifferenceType = DifferenceType.asInstanceOf[js.Any], ExpectedValue = ExpectedValue.asInstanceOf[js.Any], PropertyPath = PropertyPath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PropertyDifference]
   }
 }

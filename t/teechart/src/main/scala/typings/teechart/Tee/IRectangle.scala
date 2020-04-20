@@ -16,7 +16,6 @@ object IRectangle {
   @scala.inline
   def apply(contains: IPoint => Boolean, height: Double, width: Double, x: Double, y: Double): IRectangle = {
     val __obj = js.Dynamic.literal(contains = js.Any.fromFunction1(contains), height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IRectangle]
   }
 }

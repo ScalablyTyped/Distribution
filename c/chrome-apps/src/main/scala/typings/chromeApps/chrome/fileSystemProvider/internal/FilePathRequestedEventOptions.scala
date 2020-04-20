@@ -18,7 +18,6 @@ object FilePathRequestedEventOptions {
   @scala.inline
   def apply(filePath: String, fileSystemId: String, requestId: integer): FilePathRequestedEventOptions = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any], fileSystemId = fileSystemId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FilePathRequestedEventOptions]
   }
 }

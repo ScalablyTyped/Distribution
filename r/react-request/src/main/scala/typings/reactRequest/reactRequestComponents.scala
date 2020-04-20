@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactRequestComponents extends reactRequestProps {
   @scala.inline
-  def Fetch[T]: ComponentType[FetchProps[T]] = js.constructorOf[typings.reactRequest.mod.Fetch[T]].asInstanceOf[typings.react.mod.ComponentType[FetchProps[T]]]
+  def Fetch[T]: ComponentType[FetchProps[T]] = js.constructorOf[typings.reactRequest.mod.Fetch[T]].asInstanceOf[ComponentType[FetchProps[T]]]
 }
 

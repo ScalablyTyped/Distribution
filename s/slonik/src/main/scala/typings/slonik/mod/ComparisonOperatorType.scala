@@ -17,20 +17,18 @@ trait ComparisonOperatorType extends js.Object
 
 object ComparisonOperatorType {
   @scala.inline
-  def Equalssign: typings.slonik.slonikStrings.Equalssign = this.cast("=")
+  def Equalssign: typings.slonik.slonikStrings.Equalssign = "=".asInstanceOf[typings.slonik.slonikStrings.Equalssign]
   @scala.inline
-  def ExclamationmarkEqualssign: typings.slonik.slonikStrings.ExclamationmarkEqualssign = this.cast("!=")
+  def ExclamationmarkEqualssign: typings.slonik.slonikStrings.ExclamationmarkEqualssign = "!=".asInstanceOf[typings.slonik.slonikStrings.ExclamationmarkEqualssign]
   @scala.inline
-  def Greaterthansign: typings.slonik.slonikStrings.Greaterthansign = this.cast(">")
+  def Greaterthansign: typings.slonik.slonikStrings.Greaterthansign = ">".asInstanceOf[typings.slonik.slonikStrings.Greaterthansign]
   @scala.inline
-  def GreaterthansignEqualssign: typings.slonik.slonikStrings.GreaterthansignEqualssign = this.cast(">=")
+  def GreaterthansignEqualssign: typings.slonik.slonikStrings.GreaterthansignEqualssign = ">=".asInstanceOf[typings.slonik.slonikStrings.GreaterthansignEqualssign]
   @scala.inline
-  def Lessthansign: typings.slonik.slonikStrings.Lessthansign = this.cast("<")
+  def Lessthansign: typings.slonik.slonikStrings.Lessthansign = "<".asInstanceOf[typings.slonik.slonikStrings.Lessthansign]
   @scala.inline
-  def LessthansignEqualssign: typings.slonik.slonikStrings.LessthansignEqualssign = this.cast("<=")
+  def LessthansignEqualssign: typings.slonik.slonikStrings.LessthansignEqualssign = "<=".asInstanceOf[typings.slonik.slonikStrings.LessthansignEqualssign]
   @scala.inline
-  def LessthansignGreaterthansign: typings.slonik.slonikStrings.LessthansignGreaterthansign = this.cast("<>")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def LessthansignGreaterthansign: typings.slonik.slonikStrings.LessthansignGreaterthansign = "<>".asInstanceOf[typings.slonik.slonikStrings.LessthansignGreaterthansign]
 }
 

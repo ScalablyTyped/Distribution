@@ -13,7 +13,6 @@ object ErrorArgs {
   @scala.inline
   def apply(details: Dict, error: String): ErrorArgs = {
     val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ErrorArgs]
   }
 }

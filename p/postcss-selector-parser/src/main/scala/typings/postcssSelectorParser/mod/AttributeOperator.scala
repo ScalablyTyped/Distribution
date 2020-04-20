@@ -16,18 +16,16 @@ trait AttributeOperator extends js.Object
 
 object AttributeOperator {
   @scala.inline
-  def $Equalssign: typings.postcssSelectorParser.postcssSelectorParserStrings.$Equalssign = this.cast("$=")
+  def $Equalssign: typings.postcssSelectorParser.postcssSelectorParserStrings.$Equalssign = "$=".asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.$Equalssign]
   @scala.inline
-  def AsteriskEqualssign: typings.postcssSelectorParser.postcssSelectorParserStrings.AsteriskEqualssign = this.cast("*=")
+  def AsteriskEqualssign: typings.postcssSelectorParser.postcssSelectorParserStrings.AsteriskEqualssign = "*=".asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.AsteriskEqualssign]
   @scala.inline
-  def Equalssign: typings.postcssSelectorParser.postcssSelectorParserStrings.Equalssign = this.cast("=")
+  def Equalssign: typings.postcssSelectorParser.postcssSelectorParserStrings.Equalssign = "=".asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.Equalssign]
   @scala.inline
-  def TildeEqualssign: typings.postcssSelectorParser.postcssSelectorParserStrings.TildeEqualssign = this.cast("~=")
+  def TildeEqualssign: typings.postcssSelectorParser.postcssSelectorParserStrings.TildeEqualssign = "~=".asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.TildeEqualssign]
   @scala.inline
-  def VerticallineEqualssign: typings.postcssSelectorParser.postcssSelectorParserStrings.VerticallineEqualssign = this.cast("|=")
+  def VerticallineEqualssign: typings.postcssSelectorParser.postcssSelectorParserStrings.VerticallineEqualssign = "|=".asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.VerticallineEqualssign]
   @scala.inline
-  def `^Equalssign`: typings.postcssSelectorParser.postcssSelectorParserStrings.`^Equalssign` = this.cast("^=")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `^Equalssign`: typings.postcssSelectorParser.postcssSelectorParserStrings.`^Equalssign` = "^=".asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.`^Equalssign`]
 }
 

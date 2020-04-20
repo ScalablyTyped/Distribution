@@ -27,10 +27,10 @@ class JavaScriptActionParameterMapping protected () extends CodeActionParameterM
   ) = this()
   @JSName("model")
   var model_FJavaScriptActionParameterMapping: IModel = js.native
-  def parameter(): IJavaScriptActionParameter = js.native
+  def parameter: IJavaScriptActionParameter = js.native
   def parameter(newValue: IJavaScriptActionParameter): js.Any = js.native
-  def parameterQualifiedName(): String = js.native
-  def parameterValue(): CodeActionParameterValue = js.native
+  def parameterQualifiedName: String = js.native
+  def parameterValue: CodeActionParameterValue = js.native
   def parameterValue(newValue: CodeActionParameterValue): js.Any = js.native
 }
 

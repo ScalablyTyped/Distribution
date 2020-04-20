@@ -13,7 +13,6 @@ object ExportParameters {
   @scala.inline
   def apply(fileId: String, mimeType: String): ExportParameters = {
     val __obj = js.Dynamic.literal(fileId = fileId.asInstanceOf[js.Any], mimeType = mimeType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExportParameters]
   }
 }

@@ -52,7 +52,6 @@ object MetadataRequestedEventOptions {
     thumbnail: Boolean
   ): MetadataRequestedEventOptions = {
     val __obj = js.Dynamic.literal(entryPath = entryPath.asInstanceOf[js.Any], fileSystemId = fileSystemId.asInstanceOf[js.Any], isDirectory = isDirectory.asInstanceOf[js.Any], mimeType = mimeType.asInstanceOf[js.Any], modificationTime = modificationTime.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], thumbnail = thumbnail.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MetadataRequestedEventOptions]
   }
 }

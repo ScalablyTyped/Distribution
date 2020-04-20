@@ -49,7 +49,6 @@ object ValdrMessage {
     translateAvailable: Boolean
   ): ValdrMessage = {
     val __obj = js.Dynamic.literal(addMessages = js.Any.fromFunction1(addMessages), angularMessagesEnabled = angularMessagesEnabled.asInstanceOf[js.Any], getMessage = js.Any.fromFunction3(getMessage), setTemplate = js.Any.fromFunction1(setTemplate), templateUrl = templateUrl.asInstanceOf[js.Any], translateAvailable = translateAvailable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ValdrMessage]
   }
 }

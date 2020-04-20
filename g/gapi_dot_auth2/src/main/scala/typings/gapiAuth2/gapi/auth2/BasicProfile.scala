@@ -24,7 +24,6 @@ object BasicProfile {
     getName: () => String
   ): BasicProfile = {
     val __obj = js.Dynamic.literal(getEmail = js.Any.fromFunction0(getEmail), getFamilyName = js.Any.fromFunction0(getFamilyName), getGivenName = js.Any.fromFunction0(getGivenName), getId = js.Any.fromFunction0(getId), getImageUrl = js.Any.fromFunction0(getImageUrl), getName = js.Any.fromFunction0(getName))
-  
     __obj.asInstanceOf[BasicProfile]
   }
 }

@@ -23,7 +23,6 @@ object ISeriesList {
     items: js.Array[ISeries]
   ): ISeriesList = {
     val __obj = js.Dynamic.literal(anyUsesAxes = js.Any.fromFunction0(anyUsesAxes), chart = chart.asInstanceOf[js.Any], clicked = js.Any.fromFunction1(clicked), firstVisible = js.Any.fromFunction0(firstVisible), items = items.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISeriesList]
   }
 }

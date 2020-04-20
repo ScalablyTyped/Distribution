@@ -258,7 +258,7 @@ object cameraMod extends js.Object {
     /**
       * Returns the current camera absolute rotation
       */
-    def absoluteRotation(): Quaternion = js.native
+    def absoluteRotation: Quaternion = js.native
     /**
       * Attach the input controls to a specific dom element to get the input from.
       * @param element Defines the element the controls should be listened from
@@ -365,7 +365,7 @@ object cameraMod extends js.Object {
     /**
       * Gets the current world space position of the camera.
       */
-    def globalPosition(): Vector3 = js.native
+    def globalPosition: Vector3 = js.native
     /**
       * Check whether a mesh is part of the current active mesh list of the camera
       * @param mesh Defines the mesh to check
@@ -391,19 +391,19 @@ object cameraMod extends js.Object {
     /**
       * Gets the left camera of a rig setup in case of Rigged Camera
       */
-    def isLeftCamera(): Boolean = js.native
+    def isLeftCamera: Boolean = js.native
     /**
       * Gets the right camera of a rig setup in case of Rigged Camera
       */
-    def isRightCamera(): Boolean = js.native
+    def isRightCamera: Boolean = js.native
     /**
       * Gets the left camera of a rig setup in case of Rigged Camera
       */
-    def leftCamera(): Nullable[FreeCamera] = js.native
+    def leftCamera: Nullable[FreeCamera] = js.native
     /**
       * Define the current local position of the camera in the scene
       */
-    def position(): Vector3 = js.native
+    def position: Vector3 = js.native
     def position(newPosition: Vector3): js.Any = js.native
     /**
       * Restored camera state. You must call storeState() first.
@@ -411,15 +411,15 @@ object cameraMod extends js.Object {
       */
     def restoreState(): Boolean = js.native
     /** @hidden */
-    def rigCameras(): js.Array[Camera] = js.native
+    def rigCameras: js.Array[Camera] = js.native
     /**
       * Gets the post process used by the rig cameras
       */
-    def rigPostProcess(): Nullable[PostProcess] = js.native
+    def rigPostProcess: Nullable[PostProcess] = js.native
     /**
       * Gets the right camera of a rig setup in case of Rigged Camera
       */
-    def rightCamera(): Nullable[FreeCamera] = js.native
+    def rightCamera: Nullable[FreeCamera] = js.native
     /**
       * Serialiaze the camera setup to a json represention
       * @returns the JSON representation

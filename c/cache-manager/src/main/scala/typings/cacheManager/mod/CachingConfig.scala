@@ -12,7 +12,6 @@ object CachingConfig {
   @scala.inline
   def apply(ttl: Double | TtlFunction): CachingConfig = {
     val __obj = js.Dynamic.literal(ttl = ttl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CachingConfig]
   }
 }

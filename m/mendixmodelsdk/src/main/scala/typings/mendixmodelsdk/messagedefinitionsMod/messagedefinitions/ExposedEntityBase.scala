@@ -26,9 +26,9 @@ abstract class ExposedEntityBase protected () extends ExposedMember {
   ) = this()
   @JSName("model")
   var model_FExposedEntityBase: IModel = js.native
-  def entity(): IEntity = js.native
+  def entity: IEntity = js.native
   def entity(newValue: IEntity): js.Any = js.native
-  def entityQualifiedName(): String = js.native
+  def entityQualifiedName: String = js.native
 }
 
 /* static members */

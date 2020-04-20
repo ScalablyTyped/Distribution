@@ -16,7 +16,6 @@ object ConfigurationSet {
   @scala.inline
   def apply(Name: ConfigurationSetName): ConfigurationSet = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConfigurationSet]
   }
 }

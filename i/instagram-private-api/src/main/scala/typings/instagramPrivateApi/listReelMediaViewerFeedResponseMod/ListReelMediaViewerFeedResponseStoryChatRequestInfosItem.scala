@@ -22,7 +22,6 @@ object ListReelMediaViewerFeedResponseStoryChatRequestInfosItem {
     users: js.Array[ListReelMediaViewerFeedResponseUsersItem]
   ): ListReelMediaViewerFeedResponseStoryChatRequestInfosItem = {
     val __obj = js.Dynamic.literal(cursor = cursor.asInstanceOf[js.Any], requester_usernames = requester_usernames.asInstanceOf[js.Any], total_participant_requests = total_participant_requests.asInstanceOf[js.Any], total_thread_participants = total_thread_participants.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListReelMediaViewerFeedResponseStoryChatRequestInfosItem]
   }
 }

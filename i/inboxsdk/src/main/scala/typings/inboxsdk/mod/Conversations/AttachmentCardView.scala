@@ -31,7 +31,6 @@ object AttachmentCardView {
     on: (destroy, js.Function0[Unit]) => Unit
   ): AttachmentCardView = {
     val __obj = js.Dynamic.literal(addButton = js.Any.fromFunction1(addButton), destroyed = destroyed.asInstanceOf[js.Any], getAttachmentType = js.Any.fromFunction0(getAttachmentType), getDownloadURL = js.Any.fromFunction0(getDownloadURL), getMessageView = js.Any.fromFunction0(getMessageView), getTitle = js.Any.fromFunction0(getTitle), on = js.Any.fromFunction2(on))
-  
     __obj.asInstanceOf[AttachmentCardView]
   }
 }

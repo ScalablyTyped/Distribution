@@ -17,20 +17,18 @@ trait VisualType extends js.Object
 
 object VisualType {
   @scala.inline
-  def DirectColor: typings.gm.gmStrings.DirectColor = this.cast("DirectColor")
+  def DirectColor: typings.gm.gmStrings.DirectColor = "DirectColor".asInstanceOf[typings.gm.gmStrings.DirectColor]
   @scala.inline
-  def GrayScale: typings.gm.gmStrings.GrayScale = this.cast("GrayScale")
+  def GrayScale: typings.gm.gmStrings.GrayScale = "GrayScale".asInstanceOf[typings.gm.gmStrings.GrayScale]
   @scala.inline
-  def PseudoColor: typings.gm.gmStrings.PseudoColor = this.cast("PseudoColor")
+  def PseudoColor: typings.gm.gmStrings.PseudoColor = "PseudoColor".asInstanceOf[typings.gm.gmStrings.PseudoColor]
   @scala.inline
-  def StaticColor: typings.gm.gmStrings.StaticColor = this.cast("StaticColor")
+  def StaticColor: typings.gm.gmStrings.StaticColor = "StaticColor".asInstanceOf[typings.gm.gmStrings.StaticColor]
   @scala.inline
-  def StaticGray: typings.gm.gmStrings.StaticGray = this.cast("StaticGray")
+  def StaticGray: typings.gm.gmStrings.StaticGray = "StaticGray".asInstanceOf[typings.gm.gmStrings.StaticGray]
   @scala.inline
-  def TrueColor: typings.gm.gmStrings.TrueColor = this.cast("TrueColor")
+  def TrueColor: typings.gm.gmStrings.TrueColor = "TrueColor".asInstanceOf[typings.gm.gmStrings.TrueColor]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def default: typings.gm.gmStrings.default = this.cast("default")
+  def default: typings.gm.gmStrings.default = "default".asInstanceOf[typings.gm.gmStrings.default]
 }
 

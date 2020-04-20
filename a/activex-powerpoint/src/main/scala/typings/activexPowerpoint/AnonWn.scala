@@ -13,7 +13,6 @@ object AnonWn {
   @scala.inline
   def apply(Wn: SlideShowWindow): AnonWn = {
     val __obj = js.Dynamic.literal(Wn = Wn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonWn]
   }
 }

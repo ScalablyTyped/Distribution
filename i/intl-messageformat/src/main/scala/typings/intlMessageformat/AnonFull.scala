@@ -15,7 +15,6 @@ object AnonFull {
   @scala.inline
   def apply(full: AnonMonth, long: AnonDay, medium: AnonDay, short: AnonDay): AnonFull = {
     val __obj = js.Dynamic.literal(full = full.asInstanceOf[js.Any], long = long.asInstanceOf[js.Any], medium = medium.asInstanceOf[js.Any], short = short.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFull]
   }
 }

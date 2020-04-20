@@ -18,14 +18,12 @@ trait WdHebSpellStart extends js.Object
 
 object WdHebSpellStart {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdFullScript: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdFullScript: `0` = this.cast(0)
+  def wdMixedAuthorizedScript: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdMixedAuthorizedScript: `3` = this.cast(3)
+  def wdMixedScript: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdMixedScript: `2` = this.cast(2)
-  @scala.inline
-  def wdPartialScript: `1` = this.cast(1)
+  def wdPartialScript: `1` = 1.asInstanceOf[`1`]
 }
 

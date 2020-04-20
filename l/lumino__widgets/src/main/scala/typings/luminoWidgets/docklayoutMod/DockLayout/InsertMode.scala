@@ -22,18 +22,16 @@ trait InsertMode extends js.Object
 
 object InsertMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `split-bottom`: typings.luminoWidgets.luminoWidgetsStrings.`split-bottom` = "split-bottom".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`split-bottom`]
   @scala.inline
-  def `split-bottom`: typings.luminoWidgets.luminoWidgetsStrings.`split-bottom` = this.cast("split-bottom")
+  def `split-left`: typings.luminoWidgets.luminoWidgetsStrings.`split-left` = "split-left".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`split-left`]
   @scala.inline
-  def `split-left`: typings.luminoWidgets.luminoWidgetsStrings.`split-left` = this.cast("split-left")
+  def `split-right`: typings.luminoWidgets.luminoWidgetsStrings.`split-right` = "split-right".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`split-right`]
   @scala.inline
-  def `split-right`: typings.luminoWidgets.luminoWidgetsStrings.`split-right` = this.cast("split-right")
+  def `split-top`: typings.luminoWidgets.luminoWidgetsStrings.`split-top` = "split-top".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`split-top`]
   @scala.inline
-  def `split-top`: typings.luminoWidgets.luminoWidgetsStrings.`split-top` = this.cast("split-top")
+  def `tab-after`: typings.luminoWidgets.luminoWidgetsStrings.`tab-after` = "tab-after".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`tab-after`]
   @scala.inline
-  def `tab-after`: typings.luminoWidgets.luminoWidgetsStrings.`tab-after` = this.cast("tab-after")
-  @scala.inline
-  def `tab-before`: typings.luminoWidgets.luminoWidgetsStrings.`tab-before` = this.cast("tab-before")
+  def `tab-before`: typings.luminoWidgets.luminoWidgetsStrings.`tab-before` = "tab-before".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`tab-before`]
 }
 

@@ -46,7 +46,6 @@ object FileLoaderBase {
   @scala.inline
   def apply(load: () => js.Object, parse: () => js.Array[AnonExports]): FileLoaderBase = {
     val __obj = js.Dynamic.literal(load = js.Any.fromFunction0(load), parse = js.Any.fromFunction0(parse))
-  
     __obj.asInstanceOf[FileLoaderBase]
   }
 }

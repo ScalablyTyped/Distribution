@@ -13,7 +13,6 @@ object AnonHasErrors {
   @scala.inline
   def apply(hasErrors: Boolean, inputFiles: js.Array[String]): AnonHasErrors = {
     val __obj = js.Dynamic.literal(hasErrors = hasErrors.asInstanceOf[js.Any], inputFiles = inputFiles.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHasErrors]
   }
 }

@@ -17,7 +17,6 @@ object AnonAuthorized {
   @scala.inline
   def apply(Authorized: `1`, Denied: `2`, NotDetermined: `0`): AnonAuthorized = {
     val __obj = js.Dynamic.literal(Authorized = Authorized.asInstanceOf[js.Any], Denied = Denied.asInstanceOf[js.Any], NotDetermined = NotDetermined.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAuthorized]
   }
 }

@@ -29,7 +29,6 @@ object TinderHistory {
     squads: js.Array[_]
   ): TinderHistory = {
     val __obj = js.Dynamic.literal(blocks = blocks.asInstanceOf[js.Any], deleted_lists = deleted_lists.asInstanceOf[js.Any], last_activity_date = last_activity_date.asInstanceOf[js.Any], liked_messages = liked_messages.asInstanceOf[js.Any], lists = lists.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any], squads = squads.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TinderHistory]
   }
 }

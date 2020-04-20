@@ -14,7 +14,6 @@ object MIMEConverter {
   @scala.inline
   def apply(read: String => js.Any | Promise_[_], write: js.Any => String | Promise_[String]): MIMEConverter = {
     val __obj = js.Dynamic.literal(read = js.Any.fromFunction1(read), write = js.Any.fromFunction1(write))
-  
     __obj.asInstanceOf[MIMEConverter]
   }
 }

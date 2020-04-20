@@ -24,7 +24,6 @@ object AnonAttrParamMapper {
     ParamTypes: AnonEnum
   ): AnonAttrParamMapper = {
     val __obj = js.Dynamic.literal(AttrParamMapper = AttrParamMapper.asInstanceOf[js.Any], Category = Category.asInstanceOf[js.Any], InputParamMapper = InputParamMapper.asInstanceOf[js.Any], OpExecutor = OpExecutor.asInstanceOf[js.Any], OpMapper = OpMapper.asInstanceOf[js.Any], ParamTypes = ParamTypes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAttrParamMapper]
   }
 }

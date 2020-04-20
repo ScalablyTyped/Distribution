@@ -14,7 +14,6 @@ object Envelope {
   @scala.inline
   def apply(message: Message, room: String, user: User): Envelope = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Envelope]
   }
 }

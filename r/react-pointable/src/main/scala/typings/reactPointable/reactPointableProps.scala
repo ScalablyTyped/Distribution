@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactPointableProps {
   @scala.inline
-  def ReactPointableProps: PointableProps.type = typings.reactPointable.mod.PointableProps
+  def ReactPointableProps: PointableProps.type = PointableProps
   type ReactPointableProps = PointableProps
 }
 

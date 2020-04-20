@@ -14,14 +14,12 @@ trait LightGroupType extends js.Object
 
 object LightGroupType {
   @scala.inline
-  def LightGroup: typings.nodeHueApi.nodeHueApiStrings.LightGroup = this.cast("LightGroup")
+  def LightGroup: typings.nodeHueApi.nodeHueApiStrings.LightGroup = "LightGroup".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.LightGroup]
   @scala.inline
-  def LightSource: typings.nodeHueApi.nodeHueApiStrings.LightSource = this.cast("LightSource")
+  def LightSource: typings.nodeHueApi.nodeHueApiStrings.LightSource = "LightSource".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.LightSource]
   @scala.inline
-  def Luminaire: typings.nodeHueApi.nodeHueApiStrings.Luminaire = this.cast("Luminaire")
+  def Luminaire: typings.nodeHueApi.nodeHueApiStrings.Luminaire = "Luminaire".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.Luminaire]
   @scala.inline
-  def Room: typings.nodeHueApi.nodeHueApiStrings.Room = this.cast("Room")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Room: typings.nodeHueApi.nodeHueApiStrings.Room = "Room".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.Room]
 }
 

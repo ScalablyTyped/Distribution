@@ -13,7 +13,6 @@ object UserRepositoryInfoResponseBiographyWithEntities {
   @scala.inline
   def apply(entities: js.Array[_], raw_text: String): UserRepositoryInfoResponseBiographyWithEntities = {
     val __obj = js.Dynamic.literal(entities = entities.asInstanceOf[js.Any], raw_text = raw_text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UserRepositoryInfoResponseBiographyWithEntities]
   }
 }

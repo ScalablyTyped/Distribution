@@ -69,124 +69,122 @@ trait key extends js.Object
 
 object key {
   @scala.inline
-  def ar: typings.flatpickr.flatpickrStrings.ar = this.cast("ar")
+  def ar: typings.flatpickr.flatpickrStrings.ar = "ar".asInstanceOf[typings.flatpickr.flatpickrStrings.ar]
   @scala.inline
-  def at: typings.flatpickr.flatpickrStrings.at = this.cast("at")
+  def at: typings.flatpickr.flatpickrStrings.at = "at".asInstanceOf[typings.flatpickr.flatpickrStrings.at]
   @scala.inline
-  def az: typings.flatpickr.flatpickrStrings.az = this.cast("az")
+  def az: typings.flatpickr.flatpickrStrings.az = "az".asInstanceOf[typings.flatpickr.flatpickrStrings.az]
   @scala.inline
-  def be: typings.flatpickr.flatpickrStrings.be = this.cast("be")
+  def be: typings.flatpickr.flatpickrStrings.be = "be".asInstanceOf[typings.flatpickr.flatpickrStrings.be]
   @scala.inline
-  def bg: typings.flatpickr.flatpickrStrings.bg = this.cast("bg")
+  def bg: typings.flatpickr.flatpickrStrings.bg = "bg".asInstanceOf[typings.flatpickr.flatpickrStrings.bg]
   @scala.inline
-  def bn: typings.flatpickr.flatpickrStrings.bn = this.cast("bn")
+  def bn: typings.flatpickr.flatpickrStrings.bn = "bn".asInstanceOf[typings.flatpickr.flatpickrStrings.bn]
   @scala.inline
-  def bs: typings.flatpickr.flatpickrStrings.bs = this.cast("bs")
+  def bs: typings.flatpickr.flatpickrStrings.bs = "bs".asInstanceOf[typings.flatpickr.flatpickrStrings.bs]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cat: typings.flatpickr.flatpickrStrings.cat = "cat".asInstanceOf[typings.flatpickr.flatpickrStrings.cat]
   @scala.inline
-  def cat: typings.flatpickr.flatpickrStrings.cat = this.cast("cat")
+  def cs: typings.flatpickr.flatpickrStrings.cs = "cs".asInstanceOf[typings.flatpickr.flatpickrStrings.cs]
   @scala.inline
-  def cs: typings.flatpickr.flatpickrStrings.cs = this.cast("cs")
+  def cy: typings.flatpickr.flatpickrStrings.cy = "cy".asInstanceOf[typings.flatpickr.flatpickrStrings.cy]
   @scala.inline
-  def cy: typings.flatpickr.flatpickrStrings.cy = this.cast("cy")
+  def da: typings.flatpickr.flatpickrStrings.da = "da".asInstanceOf[typings.flatpickr.flatpickrStrings.da]
   @scala.inline
-  def da: typings.flatpickr.flatpickrStrings.da = this.cast("da")
+  def de: typings.flatpickr.flatpickrStrings.de = "de".asInstanceOf[typings.flatpickr.flatpickrStrings.de]
   @scala.inline
-  def de: typings.flatpickr.flatpickrStrings.de = this.cast("de")
+  def default: typings.flatpickr.flatpickrStrings.default = "default".asInstanceOf[typings.flatpickr.flatpickrStrings.default]
   @scala.inline
-  def default: typings.flatpickr.flatpickrStrings.default = this.cast("default")
+  def en: typings.flatpickr.flatpickrStrings.en = "en".asInstanceOf[typings.flatpickr.flatpickrStrings.en]
   @scala.inline
-  def en: typings.flatpickr.flatpickrStrings.en = this.cast("en")
+  def eo: typings.flatpickr.flatpickrStrings.eo = "eo".asInstanceOf[typings.flatpickr.flatpickrStrings.eo]
   @scala.inline
-  def eo: typings.flatpickr.flatpickrStrings.eo = this.cast("eo")
+  def es: typings.flatpickr.flatpickrStrings.es = "es".asInstanceOf[typings.flatpickr.flatpickrStrings.es]
   @scala.inline
-  def es: typings.flatpickr.flatpickrStrings.es = this.cast("es")
+  def et: typings.flatpickr.flatpickrStrings.et = "et".asInstanceOf[typings.flatpickr.flatpickrStrings.et]
   @scala.inline
-  def et: typings.flatpickr.flatpickrStrings.et = this.cast("et")
+  def fa: typings.flatpickr.flatpickrStrings.fa = "fa".asInstanceOf[typings.flatpickr.flatpickrStrings.fa]
   @scala.inline
-  def fa: typings.flatpickr.flatpickrStrings.fa = this.cast("fa")
+  def fi: typings.flatpickr.flatpickrStrings.fi = "fi".asInstanceOf[typings.flatpickr.flatpickrStrings.fi]
   @scala.inline
-  def fi: typings.flatpickr.flatpickrStrings.fi = this.cast("fi")
+  def fo: typings.flatpickr.flatpickrStrings.fo = "fo".asInstanceOf[typings.flatpickr.flatpickrStrings.fo]
   @scala.inline
-  def fo: typings.flatpickr.flatpickrStrings.fo = this.cast("fo")
+  def fr: typings.flatpickr.flatpickrStrings.fr = "fr".asInstanceOf[typings.flatpickr.flatpickrStrings.fr]
   @scala.inline
-  def fr: typings.flatpickr.flatpickrStrings.fr = this.cast("fr")
+  def gr: typings.flatpickr.flatpickrStrings.gr = "gr".asInstanceOf[typings.flatpickr.flatpickrStrings.gr]
   @scala.inline
-  def gr: typings.flatpickr.flatpickrStrings.gr = this.cast("gr")
+  def he: typings.flatpickr.flatpickrStrings.he = "he".asInstanceOf[typings.flatpickr.flatpickrStrings.he]
   @scala.inline
-  def he: typings.flatpickr.flatpickrStrings.he = this.cast("he")
+  def hi: typings.flatpickr.flatpickrStrings.hi = "hi".asInstanceOf[typings.flatpickr.flatpickrStrings.hi]
   @scala.inline
-  def hi: typings.flatpickr.flatpickrStrings.hi = this.cast("hi")
+  def hr: typings.flatpickr.flatpickrStrings.hr = "hr".asInstanceOf[typings.flatpickr.flatpickrStrings.hr]
   @scala.inline
-  def hr: typings.flatpickr.flatpickrStrings.hr = this.cast("hr")
+  def hu: typings.flatpickr.flatpickrStrings.hu = "hu".asInstanceOf[typings.flatpickr.flatpickrStrings.hu]
   @scala.inline
-  def hu: typings.flatpickr.flatpickrStrings.hu = this.cast("hu")
+  def id: typings.flatpickr.flatpickrStrings.id = "id".asInstanceOf[typings.flatpickr.flatpickrStrings.id]
   @scala.inline
-  def id: typings.flatpickr.flatpickrStrings.id = this.cast("id")
+  def is: typings.flatpickr.flatpickrStrings.is = "is".asInstanceOf[typings.flatpickr.flatpickrStrings.is]
   @scala.inline
-  def is: typings.flatpickr.flatpickrStrings.is = this.cast("is")
+  def it: typings.flatpickr.flatpickrStrings.it = "it".asInstanceOf[typings.flatpickr.flatpickrStrings.it]
   @scala.inline
-  def it: typings.flatpickr.flatpickrStrings.it = this.cast("it")
+  def ja: typings.flatpickr.flatpickrStrings.ja = "ja".asInstanceOf[typings.flatpickr.flatpickrStrings.ja]
   @scala.inline
-  def ja: typings.flatpickr.flatpickrStrings.ja = this.cast("ja")
+  def ka: typings.flatpickr.flatpickrStrings.ka = "ka".asInstanceOf[typings.flatpickr.flatpickrStrings.ka]
   @scala.inline
-  def ka: typings.flatpickr.flatpickrStrings.ka = this.cast("ka")
+  def km: typings.flatpickr.flatpickrStrings.km = "km".asInstanceOf[typings.flatpickr.flatpickrStrings.km]
   @scala.inline
-  def km: typings.flatpickr.flatpickrStrings.km = this.cast("km")
+  def ko: typings.flatpickr.flatpickrStrings.ko = "ko".asInstanceOf[typings.flatpickr.flatpickrStrings.ko]
   @scala.inline
-  def ko: typings.flatpickr.flatpickrStrings.ko = this.cast("ko")
+  def kz: typings.flatpickr.flatpickrStrings.kz = "kz".asInstanceOf[typings.flatpickr.flatpickrStrings.kz]
   @scala.inline
-  def kz: typings.flatpickr.flatpickrStrings.kz = this.cast("kz")
+  def lt: typings.flatpickr.flatpickrStrings.lt = "lt".asInstanceOf[typings.flatpickr.flatpickrStrings.lt]
   @scala.inline
-  def lt: typings.flatpickr.flatpickrStrings.lt = this.cast("lt")
+  def lv: typings.flatpickr.flatpickrStrings.lv = "lv".asInstanceOf[typings.flatpickr.flatpickrStrings.lv]
   @scala.inline
-  def lv: typings.flatpickr.flatpickrStrings.lv = this.cast("lv")
+  def mk: typings.flatpickr.flatpickrStrings.mk = "mk".asInstanceOf[typings.flatpickr.flatpickrStrings.mk]
   @scala.inline
-  def mk: typings.flatpickr.flatpickrStrings.mk = this.cast("mk")
+  def mn: typings.flatpickr.flatpickrStrings.mn = "mn".asInstanceOf[typings.flatpickr.flatpickrStrings.mn]
   @scala.inline
-  def mn: typings.flatpickr.flatpickrStrings.mn = this.cast("mn")
+  def ms: typings.flatpickr.flatpickrStrings.ms = "ms".asInstanceOf[typings.flatpickr.flatpickrStrings.ms]
   @scala.inline
-  def ms: typings.flatpickr.flatpickrStrings.ms = this.cast("ms")
+  def my: typings.flatpickr.flatpickrStrings.my = "my".asInstanceOf[typings.flatpickr.flatpickrStrings.my]
   @scala.inline
-  def my: typings.flatpickr.flatpickrStrings.my = this.cast("my")
+  def nl: typings.flatpickr.flatpickrStrings.nl = "nl".asInstanceOf[typings.flatpickr.flatpickrStrings.nl]
   @scala.inline
-  def nl: typings.flatpickr.flatpickrStrings.nl = this.cast("nl")
+  def no: typings.flatpickr.flatpickrStrings.no = "no".asInstanceOf[typings.flatpickr.flatpickrStrings.no]
   @scala.inline
-  def no: typings.flatpickr.flatpickrStrings.no = this.cast("no")
+  def pa: typings.flatpickr.flatpickrStrings.pa = "pa".asInstanceOf[typings.flatpickr.flatpickrStrings.pa]
   @scala.inline
-  def pa: typings.flatpickr.flatpickrStrings.pa = this.cast("pa")
+  def pl: typings.flatpickr.flatpickrStrings.pl = "pl".asInstanceOf[typings.flatpickr.flatpickrStrings.pl]
   @scala.inline
-  def pl: typings.flatpickr.flatpickrStrings.pl = this.cast("pl")
+  def pt: typings.flatpickr.flatpickrStrings.pt = "pt".asInstanceOf[typings.flatpickr.flatpickrStrings.pt]
   @scala.inline
-  def pt: typings.flatpickr.flatpickrStrings.pt = this.cast("pt")
+  def ro: typings.flatpickr.flatpickrStrings.ro = "ro".asInstanceOf[typings.flatpickr.flatpickrStrings.ro]
   @scala.inline
-  def ro: typings.flatpickr.flatpickrStrings.ro = this.cast("ro")
+  def ru: typings.flatpickr.flatpickrStrings.ru = "ru".asInstanceOf[typings.flatpickr.flatpickrStrings.ru]
   @scala.inline
-  def ru: typings.flatpickr.flatpickrStrings.ru = this.cast("ru")
+  def si: typings.flatpickr.flatpickrStrings.si = "si".asInstanceOf[typings.flatpickr.flatpickrStrings.si]
   @scala.inline
-  def si: typings.flatpickr.flatpickrStrings.si = this.cast("si")
+  def sk: typings.flatpickr.flatpickrStrings.sk = "sk".asInstanceOf[typings.flatpickr.flatpickrStrings.sk]
   @scala.inline
-  def sk: typings.flatpickr.flatpickrStrings.sk = this.cast("sk")
+  def sl: typings.flatpickr.flatpickrStrings.sl = "sl".asInstanceOf[typings.flatpickr.flatpickrStrings.sl]
   @scala.inline
-  def sl: typings.flatpickr.flatpickrStrings.sl = this.cast("sl")
+  def sq: typings.flatpickr.flatpickrStrings.sq = "sq".asInstanceOf[typings.flatpickr.flatpickrStrings.sq]
   @scala.inline
-  def sq: typings.flatpickr.flatpickrStrings.sq = this.cast("sq")
+  def sr: typings.flatpickr.flatpickrStrings.sr = "sr".asInstanceOf[typings.flatpickr.flatpickrStrings.sr]
   @scala.inline
-  def sr: typings.flatpickr.flatpickrStrings.sr = this.cast("sr")
+  def sv: typings.flatpickr.flatpickrStrings.sv = "sv".asInstanceOf[typings.flatpickr.flatpickrStrings.sv]
   @scala.inline
-  def sv: typings.flatpickr.flatpickrStrings.sv = this.cast("sv")
+  def th: typings.flatpickr.flatpickrStrings.th = "th".asInstanceOf[typings.flatpickr.flatpickrStrings.th]
   @scala.inline
-  def th: typings.flatpickr.flatpickrStrings.th = this.cast("th")
+  def tr: typings.flatpickr.flatpickrStrings.tr = "tr".asInstanceOf[typings.flatpickr.flatpickrStrings.tr]
   @scala.inline
-  def tr: typings.flatpickr.flatpickrStrings.tr = this.cast("tr")
+  def uk: typings.flatpickr.flatpickrStrings.uk = "uk".asInstanceOf[typings.flatpickr.flatpickrStrings.uk]
   @scala.inline
-  def uk: typings.flatpickr.flatpickrStrings.uk = this.cast("uk")
+  def vn: typings.flatpickr.flatpickrStrings.vn = "vn".asInstanceOf[typings.flatpickr.flatpickrStrings.vn]
   @scala.inline
-  def vn: typings.flatpickr.flatpickrStrings.vn = this.cast("vn")
+  def zh: typings.flatpickr.flatpickrStrings.zh = "zh".asInstanceOf[typings.flatpickr.flatpickrStrings.zh]
   @scala.inline
-  def zh: typings.flatpickr.flatpickrStrings.zh = this.cast("zh")
-  @scala.inline
-  def zh_tw: typings.flatpickr.flatpickrStrings.zh_tw = this.cast("zh_tw")
+  def zh_tw: typings.flatpickr.flatpickrStrings.zh_tw = "zh_tw".asInstanceOf[typings.flatpickr.flatpickrStrings.zh_tw]
 }
 

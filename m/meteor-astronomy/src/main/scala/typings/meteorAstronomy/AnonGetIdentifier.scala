@@ -13,7 +13,6 @@ object AnonGetIdentifier {
   @scala.inline
   def apply(getIdentifier: js.Any => String, getValues: () => js.Array[_]): AnonGetIdentifier = {
     val __obj = js.Dynamic.literal(getIdentifier = js.Any.fromFunction1(getIdentifier), getValues = js.Any.fromFunction0(getValues))
-  
     __obj.asInstanceOf[AnonGetIdentifier]
   }
 }

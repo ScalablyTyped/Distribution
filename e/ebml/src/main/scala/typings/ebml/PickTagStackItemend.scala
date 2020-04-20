@@ -13,7 +13,6 @@ object PickTagStackItemend {
   @scala.inline
   def apply(end: Double): PickTagStackItemend = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickTagStackItemend]
   }
 }

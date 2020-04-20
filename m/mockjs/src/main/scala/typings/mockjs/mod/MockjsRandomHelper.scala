@@ -29,7 +29,6 @@ object MockjsRandomHelper {
     upper: S => S
   ): MockjsRandomHelper = {
     val __obj = js.Dynamic.literal(capitalize = js.Any.fromFunction1(capitalize), lower = js.Any.fromFunction1(lower), pick = js.Any.fromFunction1(pick), shuffle = js.Any.fromFunction1(shuffle), upper = js.Any.fromFunction1(upper))
-  
     __obj.asInstanceOf[MockjsRandomHelper]
   }
 }

@@ -189,7 +189,7 @@ trait Portal
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#eueiEnabled)
     *
-    * @default false
+    * @default null
     */
   var eueiEnabled: Boolean = js.native
   /**

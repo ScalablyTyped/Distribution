@@ -13,12 +13,10 @@ trait ScopeType extends js.Object
 
 object ScopeType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def rules: typings.algoliaClientSearch.algoliaClientSearchStrings.rules = "rules".asInstanceOf[typings.algoliaClientSearch.algoliaClientSearchStrings.rules]
   @scala.inline
-  def rules: typings.algoliaClientSearch.algoliaClientSearchStrings.rules = this.cast("rules")
+  def settings: typings.algoliaClientSearch.algoliaClientSearchStrings.settings = "settings".asInstanceOf[typings.algoliaClientSearch.algoliaClientSearchStrings.settings]
   @scala.inline
-  def settings: typings.algoliaClientSearch.algoliaClientSearchStrings.settings = this.cast("settings")
-  @scala.inline
-  def synonyms: typings.algoliaClientSearch.algoliaClientSearchStrings.synonyms = this.cast("synonyms")
+  def synonyms: typings.algoliaClientSearch.algoliaClientSearchStrings.synonyms = "synonyms".asInstanceOf[typings.algoliaClientSearch.algoliaClientSearchStrings.synonyms]
 }
 

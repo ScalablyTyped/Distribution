@@ -13,7 +13,6 @@ object AnonRelease {
   @scala.inline
   def apply(build: Double, release: Double): AnonRelease = {
     val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRelease]
   }
 }

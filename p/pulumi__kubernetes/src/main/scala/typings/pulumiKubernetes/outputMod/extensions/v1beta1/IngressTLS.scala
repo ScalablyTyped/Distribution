@@ -27,7 +27,6 @@ object IngressTLS {
   @scala.inline
   def apply(hosts: js.Array[String], secretName: String): IngressTLS = {
     val __obj = js.Dynamic.literal(hosts = hosts.asInstanceOf[js.Any], secretName = secretName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IngressTLS]
   }
 }

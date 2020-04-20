@@ -25,7 +25,6 @@ object IMatrixColumnOwner {
     onShowInMultipleColumnsChanged: MatrixDropdownColumn => Unit
   ): IMatrixColumnOwner = {
     val __obj = js.Dynamic.literal(getCellType = js.Any.fromFunction0(getCellType), getLocale = js.Any.fromFunction0(getLocale), getMarkdownHtml = js.Any.fromFunction1(getMarkdownHtml), getProcessedText = js.Any.fromFunction1(getProcessedText), getRequiredText = js.Any.fromFunction0(getRequiredText), onColumnCellTypeChanged = js.Any.fromFunction1(onColumnCellTypeChanged), onColumnPropertiesChanged = js.Any.fromFunction1(onColumnPropertiesChanged), onShowInMultipleColumnsChanged = js.Any.fromFunction1(onShowInMultipleColumnsChanged))
-  
     __obj.asInstanceOf[IMatrixColumnOwner]
   }
 }

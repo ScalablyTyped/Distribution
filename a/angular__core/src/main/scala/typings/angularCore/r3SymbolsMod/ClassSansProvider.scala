@@ -23,7 +23,6 @@ object ClassSansProvider {
   @scala.inline
   def apply(useClass: Type[_]): ClassSansProvider = {
     val __obj = js.Dynamic.literal(useClass = useClass.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClassSansProvider]
   }
 }

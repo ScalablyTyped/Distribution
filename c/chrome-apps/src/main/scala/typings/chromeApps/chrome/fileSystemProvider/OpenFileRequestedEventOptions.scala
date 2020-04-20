@@ -16,7 +16,7 @@ trait OpenFileRequestedEventOptions extends FilePathRequestedEventOptions {
     * Whether the file will be used for reading or writing.
     * @see ChangeType
     */
-  var mode: ToStringLiteral[AnonREAD, String, Exclude[String, READ | WRITE]]
+  var mode: ToStringLiteral[AnonREAD, READ | WRITE, Exclude[READ | WRITE, READ | WRITE]]
 }
 
 object OpenFileRequestedEventOptions {
@@ -24,11 +24,10 @@ object OpenFileRequestedEventOptions {
   def apply(
     filePath: String,
     fileSystemId: String,
-    mode: ToStringLiteral[AnonREAD, String, Exclude[String, READ | WRITE]],
+    mode: ToStringLiteral[AnonREAD, READ | WRITE, Exclude[READ | WRITE, READ | WRITE]],
     requestId: integer
   ): OpenFileRequestedEventOptions = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any], fileSystemId = fileSystemId.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OpenFileRequestedEventOptions]
   }
 }

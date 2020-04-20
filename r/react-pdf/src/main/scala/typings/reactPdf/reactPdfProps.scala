@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactPdfProps {
   @scala.inline
-  def DocumentProps: Props.type = typings.reactPdf.documentMod.Props
+  def DocumentProps: Props.type = Props
   type DocumentProps = Props
   @scala.inline
   def OutlineProps: typings.reactPdf.outlineMod.Props.type = typings.reactPdf.outlineMod.Props

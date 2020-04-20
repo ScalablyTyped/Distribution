@@ -15,7 +15,6 @@ object EventSourceEventMap {
   @scala.inline
   def apply(error: Event, message: MessageEvent, open: Event): EventSourceEventMap = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventSourceEventMap]
   }
 }

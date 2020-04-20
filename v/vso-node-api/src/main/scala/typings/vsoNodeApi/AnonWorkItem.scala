@@ -13,7 +13,6 @@ object AnonWorkItem {
   @scala.inline
   def apply(workItem: Double, workItemLink: Double): AnonWorkItem = {
     val __obj = js.Dynamic.literal(workItem = workItem.asInstanceOf[js.Any], workItemLink = workItemLink.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonWorkItem]
   }
 }

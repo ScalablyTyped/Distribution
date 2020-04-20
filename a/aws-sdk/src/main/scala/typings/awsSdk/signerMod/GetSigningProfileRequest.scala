@@ -16,7 +16,6 @@ object GetSigningProfileRequest {
   @scala.inline
   def apply(profileName: ProfileName): GetSigningProfileRequest = {
     val __obj = js.Dynamic.literal(profileName = profileName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetSigningProfileRequest]
   }
 }

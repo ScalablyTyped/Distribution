@@ -23,7 +23,6 @@ object StatusObject {
   @scala.inline
   def apply(code: status, details: String, metadata: Metadata): StatusObject = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StatusObject]
   }
 }

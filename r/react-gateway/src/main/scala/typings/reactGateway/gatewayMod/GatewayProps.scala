@@ -12,7 +12,6 @@ object GatewayProps {
   @scala.inline
   def apply(into: String): GatewayProps = {
     val __obj = js.Dynamic.literal(into = into.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GatewayProps]
   }
 }

@@ -12,7 +12,6 @@ object AnonPending {
   @scala.inline
   def apply(pending: Boolean): AnonPending = {
     val __obj = js.Dynamic.literal(pending = pending.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPending]
   }
 }

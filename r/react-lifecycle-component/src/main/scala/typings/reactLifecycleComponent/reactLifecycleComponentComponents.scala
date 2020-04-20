@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactLifecycleComponentComponents extends reactLifecycleComponentProps {
   @scala.inline
-  def LifecycleComponent: ComponentType[LifecycleComponentProps[js.Any, js.Any]] = js.constructorOf[typings.reactLifecycleComponent.mod.LifecycleComponent].asInstanceOf[typings.react.mod.ComponentType[LifecycleComponentProps[js.Any, js.Any]]]
+  def LifecycleComponent: ComponentType[LifecycleComponentProps[js.Any, js.Any]] = js.constructorOf[typings.reactLifecycleComponent.mod.LifecycleComponent].asInstanceOf[ComponentType[LifecycleComponentProps[js.Any, js.Any]]]
 }
 

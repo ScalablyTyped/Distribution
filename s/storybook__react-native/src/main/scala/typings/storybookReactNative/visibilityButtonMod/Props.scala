@@ -12,7 +12,6 @@ object Props {
   @scala.inline
   def apply(onPress: () => Unit): Props = {
     val __obj = js.Dynamic.literal(onPress = js.Any.fromFunction0(onPress))
-  
     __obj.asInstanceOf[Props]
   }
 }

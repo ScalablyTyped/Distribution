@@ -260,7 +260,7 @@ class SaxesParser[O /* <: SaxesOptions */] () extends js.Object {
     * Indicates whether or not the parser is closed. If ``true``, wait for
     * the ``ready`` event to write again.
     */
-  def closed(): Boolean = js.native
+  def closed: Boolean = js.native
   /**
     * The column number of the next character to be read by the parser.  *
     * This field is zero-based. (The first column in a line is 0.)
@@ -273,7 +273,7 @@ class SaxesParser[O /* <: SaxesOptions */] () extends js.Object {
     * See [[column]] for a number that corresponds to a count of Unicode
     * characters.
     */
-  def columnIndex(): Double = js.native
+  def columnIndex: Double = js.native
   /**
     * Report a parsing error. This method is made public so that client code may
     * check for issues that are outside the scope of this project and can report
@@ -318,7 +318,7 @@ class SaxesParser[O /* <: SaxesOptions */] () extends js.Object {
     * This field is not based on counting Unicode characters but is to be
     * interpreted as a plain index into a JavaScript string.
     */
-  def position(): Double = js.native
+  def position: Double = js.native
   /**
     * Resolve a namespace prefix.
     *

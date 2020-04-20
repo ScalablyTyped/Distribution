@@ -22,7 +22,6 @@ object AnonBMDBZD {
     JPY: js.Array[String]
   ): AnonBMDBZD = {
     val __obj = js.Dynamic.literal(BBD = BBD.asInstanceOf[js.Any], BMD = BMD.asInstanceOf[js.Any], BZD = BZD.asInstanceOf[js.Any], CAD = CAD.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBMDBZD]
   }
 }

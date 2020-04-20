@@ -27,7 +27,6 @@ object StringOptions {
     symbols: Boolean
   ): StringOptions = {
     val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], casing = casing.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], numeric = numeric.asInstanceOf[js.Any], pool = pool.asInstanceOf[js.Any], symbols = symbols.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StringOptions]
   }
 }

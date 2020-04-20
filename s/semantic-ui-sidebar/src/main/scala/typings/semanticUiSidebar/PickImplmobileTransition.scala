@@ -13,7 +13,6 @@ object PickImplmobileTransition {
   @scala.inline
   def apply(mobileTransition: String): PickImplmobileTransition = {
     val __obj = js.Dynamic.literal(mobileTransition = mobileTransition.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplmobileTransition]
   }
 }

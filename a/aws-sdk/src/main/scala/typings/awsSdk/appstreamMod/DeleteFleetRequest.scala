@@ -16,7 +16,6 @@ object DeleteFleetRequest {
   @scala.inline
   def apply(Name: String): DeleteFleetRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteFleetRequest]
   }
 }

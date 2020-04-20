@@ -14,10 +14,8 @@ trait MsoComboStyle extends js.Object
 
 object MsoComboStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoComboLabel: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoComboLabel: `1` = this.cast(1)
-  @scala.inline
-  def msoComboNormal: `0` = this.cast(0)
+  def msoComboNormal: `0` = 0.asInstanceOf[`0`]
 }
 

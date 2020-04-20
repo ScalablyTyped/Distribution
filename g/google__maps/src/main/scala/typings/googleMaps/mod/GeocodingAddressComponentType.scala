@@ -21,28 +21,26 @@ trait GeocodingAddressComponentType extends js.Object
 
 object GeocodingAddressComponentType {
   @scala.inline
-  def bus_station: typings.googleMaps.googleMapsStrings.bus_station = this.cast("bus_station")
+  def bus_station: typings.googleMaps.googleMapsStrings.bus_station = "bus_station".asInstanceOf[typings.googleMaps.googleMapsStrings.bus_station]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def establishment: typings.googleMaps.googleMapsStrings.establishment = "establishment".asInstanceOf[typings.googleMaps.googleMapsStrings.establishment]
   @scala.inline
-  def establishment: typings.googleMaps.googleMapsStrings.establishment = this.cast("establishment")
+  def floor: typings.googleMaps.googleMapsStrings.floor = "floor".asInstanceOf[typings.googleMaps.googleMapsStrings.floor]
   @scala.inline
-  def floor: typings.googleMaps.googleMapsStrings.floor = this.cast("floor")
+  def parking: typings.googleMaps.googleMapsStrings.parking = "parking".asInstanceOf[typings.googleMaps.googleMapsStrings.parking]
   @scala.inline
-  def parking: typings.googleMaps.googleMapsStrings.parking = this.cast("parking")
+  def point_of_interest: typings.googleMaps.googleMapsStrings.point_of_interest = "point_of_interest".asInstanceOf[typings.googleMaps.googleMapsStrings.point_of_interest]
   @scala.inline
-  def point_of_interest: typings.googleMaps.googleMapsStrings.point_of_interest = this.cast("point_of_interest")
+  def post_box: typings.googleMaps.googleMapsStrings.post_box = "post_box".asInstanceOf[typings.googleMaps.googleMapsStrings.post_box]
   @scala.inline
-  def post_box: typings.googleMaps.googleMapsStrings.post_box = this.cast("post_box")
+  def postal_town: typings.googleMaps.googleMapsStrings.postal_town = "postal_town".asInstanceOf[typings.googleMaps.googleMapsStrings.postal_town]
   @scala.inline
-  def postal_town: typings.googleMaps.googleMapsStrings.postal_town = this.cast("postal_town")
+  def room: typings.googleMaps.googleMapsStrings.room = "room".asInstanceOf[typings.googleMaps.googleMapsStrings.room]
   @scala.inline
-  def room: typings.googleMaps.googleMapsStrings.room = this.cast("room")
+  def street_number: typings.googleMaps.googleMapsStrings.street_number = "street_number".asInstanceOf[typings.googleMaps.googleMapsStrings.street_number]
   @scala.inline
-  def street_number: typings.googleMaps.googleMapsStrings.street_number = this.cast("street_number")
+  def train_station: typings.googleMaps.googleMapsStrings.train_station = "train_station".asInstanceOf[typings.googleMaps.googleMapsStrings.train_station]
   @scala.inline
-  def train_station: typings.googleMaps.googleMapsStrings.train_station = this.cast("train_station")
-  @scala.inline
-  def transit_station: typings.googleMaps.googleMapsStrings.transit_station = this.cast("transit_station")
+  def transit_station: typings.googleMaps.googleMapsStrings.transit_station = "transit_station".asInstanceOf[typings.googleMaps.googleMapsStrings.transit_station]
 }
 

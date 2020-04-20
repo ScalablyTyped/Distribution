@@ -28,7 +28,6 @@ object Transform {
   @scala.inline
   def apply(convert: Key => Key, invert: Key => Key): Transform = {
     val __obj = js.Dynamic.literal(convert = js.Any.fromFunction1(convert), invert = js.Any.fromFunction1(invert))
-  
     __obj.asInstanceOf[Transform]
   }
 }

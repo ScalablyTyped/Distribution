@@ -14,7 +14,6 @@ object AnonMaxMin {
   @scala.inline
   def apply(max: Vector3, min: Vector3): AnonMaxMin = {
     val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMaxMin]
   }
 }

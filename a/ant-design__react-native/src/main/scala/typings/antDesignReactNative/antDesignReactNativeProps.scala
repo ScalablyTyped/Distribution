@@ -28,10 +28,10 @@ import scala.scalajs.js.annotation._
 
 trait antDesignReactNativeProps {
   @scala.inline
-  def AccordionProps: AccordionNativeProps.type = typings.antDesignReactNative.accordionMod.AccordionNativeProps
+  def AccordionProps: AccordionNativeProps.type = AccordionNativeProps
   type AccordionProps[T] = AccordionNativeProps[T]
   @scala.inline
-  def ActivityIndicatorProps: ActivityIndicatorNativeProps.type = typings.antDesignReactNative.activityIndicatorMod.ActivityIndicatorNativeProps
+  def ActivityIndicatorProps: ActivityIndicatorNativeProps.type = ActivityIndicatorNativeProps
   type ActivityIndicatorProps = ActivityIndicatorNativeProps
   @scala.inline
   def AgreeItemProps: typings.antDesignReactNative.agreeItemMod.AgreeItemProps.type = typings.antDesignReactNative.agreeItemMod.AgreeItemProps
@@ -40,7 +40,7 @@ trait antDesignReactNativeProps {
   def AlertContainerProps: typings.antDesignReactNative.alertContainerMod.AlertContainerProps.type = typings.antDesignReactNative.alertContainerMod.AlertContainerProps
   type AlertContainerProps = typings.antDesignReactNative.alertContainerMod.AlertContainerProps
   @scala.inline
-  def AndroidContainerProps: ActionSheetNativeProps.type = typings.antDesignReactNative.androidContainerMod.ActionSheetNativeProps
+  def AndroidContainerProps: ActionSheetNativeProps.type = ActionSheetNativeProps
   type AndroidContainerProps = ActionSheetNativeProps
   @scala.inline
   def BadgeProps: typings.antDesignReactNative.badgeMod.BadgeProps.type = typings.antDesignReactNative.badgeMod.BadgeProps
@@ -55,7 +55,7 @@ trait antDesignReactNativeProps {
   def CameraRollPickerProps: typings.antDesignReactNative.cameraRollPickerMod.CameraRollPickerProps.type = typings.antDesignReactNative.cameraRollPickerMod.CameraRollPickerProps
   type CameraRollPickerProps = typings.antDesignReactNative.cameraRollPickerMod.CameraRollPickerProps
   @scala.inline
-  def CardProps: CardNativeProps.type = typings.antDesignReactNative.cardMod.CardNativeProps
+  def CardProps: CardNativeProps.type = CardNativeProps
   type CardProps = CardNativeProps
   @scala.inline
   def CardBodyProps: typings.antDesignReactNative.cardBodyMod.CardBodyProps.type = typings.antDesignReactNative.cardBodyMod.CardBodyProps
@@ -88,10 +88,10 @@ trait antDesignReactNativeProps {
   def DatepickerProps: typings.antDesignReactNative.datePickerPropsMod.DatePickerProps.type = typings.antDesignReactNative.datePickerPropsMod.DatePickerProps
   type DatepickerProps = typings.antDesignReactNative.datePickerPropsMod.DatePickerProps
   @scala.inline
-  def DefaultTabBarProps: PropsType.type = typings.antDesignReactNative.defaultTabBarMod.PropsType
+  def DefaultTabBarProps: PropsType.type = PropsType
   type DefaultTabBarProps = PropsType
   @scala.inline
-  def DrawerProps: DrawerNativeProps.type = typings.antDesignReactNative.drawerMod.DrawerNativeProps
+  def DrawerProps: DrawerNativeProps.type = DrawerNativeProps
   type DrawerProps = DrawerNativeProps
   @scala.inline
   def FlexProps: typings.antDesignReactNative.flexFlexMod.FlexProps.type = typings.antDesignReactNative.flexFlexMod.FlexProps
@@ -115,7 +115,7 @@ trait antDesignReactNativeProps {
   def ImageRollProps: typings.antDesignReactNative.imageRollMod.ImageRollProps.type = typings.antDesignReactNative.imageRollMod.ImageRollProps
   type ImageRollProps = typings.antDesignReactNative.imageRollMod.ImageRollProps
   @scala.inline
-  def InputProps: TextInputProps.type = typings.antDesignReactNative.inputMod.TextInputProps
+  def InputProps: TextInputProps.type = TextInputProps
   type InputProps = TextInputProps
   @scala.inline
   def InputItemProps: typings.antDesignReactNative.inputItemMod.InputItemProps.type = typings.antDesignReactNative.inputItemMod.InputItemProps
@@ -139,18 +139,18 @@ trait antDesignReactNativeProps {
   def ModalProps: typings.antDesignReactNative.modalModalMod.ModalProps.type = typings.antDesignReactNative.modalModalMod.ModalProps
   type ModalProps = typings.antDesignReactNative.modalModalMod.ModalProps
   @scala.inline
-  def ModalViewProps: IModalPropTypes.type = typings.antDesignReactNative.modalViewMod.IModalPropTypes
+  def ModalViewProps: IModalPropTypes.type = IModalPropTypes
   type ModalViewProps = IModalPropTypes
   type NativePickerDotiosProps = typings.reactNative.mod.PickerProps
   type NativePickerDotiosItemProps = PickerItemProps
   @scala.inline
-  def NoticeBarProps: NoticeNativeProps.type = typings.antDesignReactNative.noticeBarMod.NoticeNativeProps
+  def NoticeBarProps: NoticeNativeProps.type = NoticeNativeProps
   type NoticeBarProps = NoticeNativeProps
   @scala.inline
   def OperationContainerProps: typings.antDesignReactNative.operationContainerMod.OperationContainerProps.type = typings.antDesignReactNative.operationContainerMod.OperationContainerProps
   type OperationContainerProps = typings.antDesignReactNative.operationContainerMod.OperationContainerProps
   @scala.inline
-  def PaginationProps: PaginationNativeProps.type = typings.antDesignReactNative.paginationMod.PaginationNativeProps
+  def PaginationProps: PaginationNativeProps.type = PaginationNativeProps
   type PaginationProps = PaginationNativeProps
   @scala.inline
   def PickerProps: typings.antDesignReactNative.pickerMod.PickerProps.type = typings.antDesignReactNative.pickerMod.PickerProps
@@ -165,7 +165,7 @@ trait antDesignReactNativeProps {
   def PopoverItemProps: typings.antDesignReactNative.popoverMod.PopoverItemProps.type = typings.antDesignReactNative.popoverMod.PopoverItemProps
   type PopoverItemProps = typings.antDesignReactNative.popoverMod.PopoverItemProps
   @scala.inline
-  def PopupProps: PopupDatePickerProps.type = typings.antDesignReactNative.popupMod.PopupDatePickerProps
+  def PopupProps: PopupDatePickerProps.type = PopupDatePickerProps
   type PopupProps = PopupDatePickerProps
   @scala.inline
   def PortalProps: typings.antDesignReactNative.portalPortalMod.PortalProps.type = typings.antDesignReactNative.portalPortalMod.PortalProps
@@ -180,19 +180,19 @@ trait antDesignReactNativeProps {
   def ProgressProps: typings.antDesignReactNative.progressMod.ProgressProps.type = typings.antDesignReactNative.progressMod.ProgressProps
   type ProgressProps = typings.antDesignReactNative.progressMod.ProgressProps
   @scala.inline
-  def PromptContainerProps: PropmptContainerProps.type = typings.antDesignReactNative.promptContainerMod.PropmptContainerProps
+  def PromptContainerProps: PropmptContainerProps.type = PropmptContainerProps
   type PromptContainerProps = PropmptContainerProps
   @scala.inline
   def ProviderProps: typings.antDesignReactNative.providerMod.ProviderProps.type = typings.antDesignReactNative.providerMod.ProviderProps
   type ProviderProps = typings.antDesignReactNative.providerMod.ProviderProps
   @scala.inline
-  def RadioProps: RadioNativeProps.type = typings.antDesignReactNative.radioRadioMod.RadioNativeProps
+  def RadioProps: RadioNativeProps.type = RadioNativeProps
   type RadioProps = RadioNativeProps
   @scala.inline
-  def RadioItemProps: RadioItemNativeProps.type = typings.antDesignReactNative.radioItemMod.RadioItemNativeProps
+  def RadioItemProps: RadioItemNativeProps.type = RadioItemNativeProps
   type RadioItemProps = RadioItemNativeProps
   @scala.inline
-  def ResultProps: ResultNativeProps.type = typings.antDesignReactNative.resultMod.ResultNativeProps
+  def ResultProps: ResultNativeProps.type = ResultNativeProps
   type ResultProps = ResultNativeProps
   @scala.inline
   def SearchBarProps: typings.antDesignReactNative.searchBarMod.SearchBarProps.type = typings.antDesignReactNative.searchBarMod.SearchBarProps
@@ -201,7 +201,7 @@ trait antDesignReactNativeProps {
   def SegmentedControlProps: typings.antDesignReactNative.segmentedIosMod.SegmentedControlProps.type = typings.antDesignReactNative.segmentedIosMod.SegmentedControlProps
   type SegmentedControlProps = typings.antDesignReactNative.segmentedIosMod.SegmentedControlProps
   @scala.inline
-  def SegmentedDotandroidProps: SegmentControlProps.type = typings.antDesignReactNative.segmentedAndroidMod.SegmentControlProps
+  def SegmentedDotandroidProps: SegmentControlProps.type = SegmentControlProps
   type SegmentedDotandroidProps = SegmentControlProps
   @scala.inline
   def SegmentedDotiosProps: typings.antDesignReactNative.segmentedIosMod.SegmentedControlProps.type = typings.antDesignReactNative.segmentedIosMod.SegmentedControlProps
@@ -210,7 +210,7 @@ trait antDesignReactNativeProps {
   def SliderProps: typings.antDesignReactNative.sliderMod.SliderProps.type = typings.antDesignReactNative.sliderMod.SliderProps
   type SliderProps = typings.antDesignReactNative.sliderMod.SliderProps
   @scala.inline
-  def StepperProps: StepProps.type = typings.antDesignReactNative.stepperMod.StepProps
+  def StepperProps: StepProps.type = StepProps
   type StepperProps = StepProps
   @scala.inline
   def StepsProps: typings.antDesignReactNative.stepsMod.StepsProps.type = typings.antDesignReactNative.stepsMod.StepsProps
@@ -222,10 +222,10 @@ trait antDesignReactNativeProps {
   def SwipeActionProps: typings.antDesignReactNative.swipeActionMod.SwipeActionProps.type = typings.antDesignReactNative.swipeActionMod.SwipeActionProps
   type SwipeActionProps = typings.antDesignReactNative.swipeActionMod.SwipeActionProps
   @scala.inline
-  def SwitchProps: AntmSwitchProps.type = typings.antDesignReactNative.switchMod.AntmSwitchProps
+  def SwitchProps: AntmSwitchProps.type = AntmSwitchProps
   type SwitchProps = AntmSwitchProps
   @scala.inline
-  def TabBarProps: TabBarNativeProps.type = typings.antDesignReactNative.tabBarMod.TabBarNativeProps
+  def TabBarProps: TabBarNativeProps.type = TabBarNativeProps
   type TabBarProps = TabBarNativeProps
   @scala.inline
   def TabBarItemProps: typings.antDesignReactNative.tabBarItemMod.TabBarItemProps.type = typings.antDesignReactNative.tabBarItemMod.TabBarItemProps
@@ -234,7 +234,7 @@ trait antDesignReactNativeProps {
   def TabsProps: typings.antDesignReactNative.tabsTabsMod.TabsProps.type = typings.antDesignReactNative.tabsTabsMod.TabsProps
   type TabsProps = typings.antDesignReactNative.tabsTabsMod.TabsProps
   @scala.inline
-  def TagProps: TagNativeProps.type = typings.antDesignReactNative.tagMod.TagNativeProps
+  def TagProps: TagNativeProps.type = TagNativeProps
   type TagProps = TagNativeProps
   type TextProps = typings.reactNative.mod.TextProps
   @scala.inline
@@ -244,7 +244,7 @@ trait antDesignReactNativeProps {
   def ThemeProviderProps: typings.antDesignReactNative.libStyleMod.ThemeProviderProps.type = typings.antDesignReactNative.libStyleMod.ThemeProviderProps
   type ThemeProviderProps = typings.antDesignReactNative.libStyleMod.ThemeProviderProps
   @scala.inline
-  def ToastContainerProps: ToastProps.type = typings.antDesignReactNative.toastContainerMod.ToastProps
+  def ToastContainerProps: ToastProps.type = ToastProps
   type ToastContainerProps = ToastProps
   type ViewProps = typings.reactNative.mod.ViewProps
   @scala.inline

@@ -14,7 +14,6 @@ object SystemIntent {
   @scala.inline
   def apply(data: ProtoAnystringJsonObject, intent: String): SystemIntent = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], intent = intent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SystemIntent]
   }
 }

@@ -19,7 +19,6 @@ object Dependency {
   @scala.inline
   def apply(event: String, scope: String): Dependency = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Dependency]
   }
 }

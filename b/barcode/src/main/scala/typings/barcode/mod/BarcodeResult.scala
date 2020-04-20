@@ -20,7 +20,6 @@ object BarcodeResult {
     saveImage: (String, js.Function1[/* err */ ErrnoException, Unit]) => Unit
   ): BarcodeResult = {
     val __obj = js.Dynamic.literal(getBase64 = js.Any.fromFunction1(getBase64), getStream = js.Any.fromFunction1(getStream), saveImage = js.Any.fromFunction2(saveImage))
-  
     __obj.asInstanceOf[BarcodeResult]
   }
 }

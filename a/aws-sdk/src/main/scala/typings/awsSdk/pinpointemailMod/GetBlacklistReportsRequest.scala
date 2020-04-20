@@ -16,7 +16,6 @@ object GetBlacklistReportsRequest {
   @scala.inline
   def apply(BlacklistItemNames: BlacklistItemNames): GetBlacklistReportsRequest = {
     val __obj = js.Dynamic.literal(BlacklistItemNames = BlacklistItemNames.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBlacklistReportsRequest]
   }
 }

@@ -15,7 +15,6 @@ object FileProvider {
   @scala.inline
   def apply(getItemContent: js.Array[_] => Promise[_] with JQueryPromise[_]): FileProvider = {
     val __obj = js.Dynamic.literal(getItemContent = js.Any.fromFunction1(getItemContent))
-  
     __obj.asInstanceOf[FileProvider]
   }
 }

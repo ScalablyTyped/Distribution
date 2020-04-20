@@ -13,7 +13,6 @@ object InsertableQueryBuilder {
   @scala.inline
   def apply(ifNotExists: () => InsertableQueryBuilder, into: String => InsertableQueryBuilder): InsertableQueryBuilder = {
     val __obj = js.Dynamic.literal(ifNotExists = js.Any.fromFunction0(ifNotExists), into = js.Any.fromFunction1(into))
-  
     __obj.asInstanceOf[InsertableQueryBuilder]
   }
 }

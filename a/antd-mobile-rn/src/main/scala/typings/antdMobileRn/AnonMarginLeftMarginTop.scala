@@ -15,7 +15,6 @@ object AnonMarginLeftMarginTop {
   @scala.inline
   def apply(height: Double, marginLeft: Double, marginTop: Double, width: Double): AnonMarginLeftMarginTop = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], marginLeft = marginLeft.asInstanceOf[js.Any], marginTop = marginTop.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMarginLeftMarginTop]
   }
 }

@@ -13,7 +13,6 @@ object Config {
   @scala.inline
   def apply(column: Double, sortOrder: SortOrderType): Config = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], sortOrder = sortOrder.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Config]
   }
 }

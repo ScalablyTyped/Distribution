@@ -18,7 +18,6 @@ object WordAlternativeResults {
   @scala.inline
   def apply(alternatives: js.Array[WordAlternativeResult], end_time: Double, start_time: Double): WordAlternativeResults = {
     val __obj = js.Dynamic.literal(alternatives = alternatives.asInstanceOf[js.Any], end_time = end_time.asInstanceOf[js.Any], start_time = start_time.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WordAlternativeResults]
   }
 }

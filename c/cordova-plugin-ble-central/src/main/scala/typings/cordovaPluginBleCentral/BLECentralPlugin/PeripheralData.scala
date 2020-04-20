@@ -16,7 +16,6 @@ object PeripheralData {
   @scala.inline
   def apply(advertising: ArrayBuffer | js.Any, id: String, name: String, rssi: Double): PeripheralData = {
     val __obj = js.Dynamic.literal(advertising = advertising.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], rssi = rssi.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PeripheralData]
   }
 }

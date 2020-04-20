@@ -15,7 +15,6 @@ object AnonElement {
   @scala.inline
   def apply(element: Promise[HTMLElement], renderComplete: Promise[_]): AnonElement = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], renderComplete = renderComplete.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonElement]
   }
 }

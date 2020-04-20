@@ -19,7 +19,6 @@ object AnonDisabledStyle {
     style: SVGAttributes[js.Object]
   ): AnonDisabledStyle = {
     val __obj = js.Dynamic.literal(disabledStyle = disabledStyle.asInstanceOf[js.Any], overStyle = overStyle.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDisabledStyle]
   }
 }

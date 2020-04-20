@@ -53,7 +53,6 @@ object BlobSource {
   @scala.inline
   def apply(getAs: String => Blob, getBlob: () => Blob): BlobSource = {
     val __obj = js.Dynamic.literal(getAs = js.Any.fromFunction1(getAs), getBlob = js.Any.fromFunction0(getBlob))
-  
     __obj.asInstanceOf[BlobSource]
   }
 }

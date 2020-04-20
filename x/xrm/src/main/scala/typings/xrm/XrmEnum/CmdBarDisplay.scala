@@ -18,10 +18,8 @@ trait CmdBarDisplay extends js.Object
 
 object CmdBarDisplay {
   @scala.inline
-  def False: `false` = this.cast("false")
+  def False: `false` = "false".asInstanceOf[`false`]
   @scala.inline
-  def True: `true` = this.cast("true")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def True: `true` = "true".asInstanceOf[`true`]
 }
 

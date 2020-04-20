@@ -20,7 +20,6 @@ object CreateClientGrant {
   @scala.inline
   def apply(audience: String, client_id: String, scope: js.Array[String]): CreateClientGrant = {
     val __obj = js.Dynamic.literal(audience = audience.asInstanceOf[js.Any], client_id = client_id.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateClientGrant]
   }
 }

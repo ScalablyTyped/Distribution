@@ -30,7 +30,6 @@ object SkAnimation {
     version: () => String
   ): SkAnimation = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction0(delete), deleteAfter = js.Any.fromFunction0(deleteAfter), duration = js.Any.fromFunction0(duration), fps = js.Any.fromFunction0(fps), isAliasOf = js.Any.fromFunction1(isAliasOf), isDeleted = js.Any.fromFunction0(isDeleted), render = js.Any.fromFunction2(render), seek = js.Any.fromFunction1(seek), seekFrame = js.Any.fromFunction1(seekFrame), size = js.Any.fromFunction0(size), version = js.Any.fromFunction0(version))
-  
     __obj.asInstanceOf[SkAnimation]
   }
 }

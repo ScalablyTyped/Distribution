@@ -12,7 +12,6 @@ object Arc {
   @scala.inline
   def apply(a: js.Tuple7[Position, Position2D, Double, Double, Double, Double, Double]): Arc = {
     val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Arc]
   }
 }

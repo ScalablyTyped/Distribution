@@ -18,12 +18,10 @@ trait ShellWindowFindWindowOptions extends js.Object
 
 object ShellWindowFindWindowOptions {
   @scala.inline
-  def SWFO_COOKIEPASSED: `4` = this.cast(4)
+  def SWFO_COOKIEPASSED: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def SWFO_INCLUDEPENDING: `2` = this.cast(2)
+  def SWFO_INCLUDEPENDING: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def SWFO_NEEDDISPATCH: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SWFO_NEEDDISPATCH: `1` = 1.asInstanceOf[`1`]
 }
 

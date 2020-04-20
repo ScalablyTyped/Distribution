@@ -17,7 +17,6 @@ object LifecycleConfiguration {
   @scala.inline
   def apply(Rules: js.Array[Rule] | Iterable[Rule]): LifecycleConfiguration = {
     val __obj = js.Dynamic.literal(Rules = Rules.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LifecycleConfiguration]
   }
 }

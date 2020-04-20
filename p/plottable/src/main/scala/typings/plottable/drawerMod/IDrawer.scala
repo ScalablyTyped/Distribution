@@ -38,7 +38,6 @@ object IDrawer {
     remove: () => Unit
   ): IDrawer = {
     val __obj = js.Dynamic.literal(draw = js.Any.fromFunction2(draw), getVisualPrimitiveAtIndex = js.Any.fromFunction1(getVisualPrimitiveAtIndex), getVisualPrimitives = js.Any.fromFunction0(getVisualPrimitives), remove = js.Any.fromFunction0(remove))
-  
     __obj.asInstanceOf[IDrawer]
   }
 }

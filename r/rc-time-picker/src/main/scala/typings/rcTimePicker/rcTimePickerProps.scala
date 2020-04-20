@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait rcTimePickerProps {
   @scala.inline
-  def RcTimePickerProps: PartialTimePickerProps.type = typings.rcTimePicker.PartialTimePickerProps
+  def RcTimePickerProps: PartialTimePickerProps.type = PartialTimePickerProps
   type RcTimePickerProps = PartialTimePickerProps
 }
 

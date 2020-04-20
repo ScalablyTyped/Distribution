@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import typings.std.AbortSignal
 import typings.std.Date
 import typings.std.Object
 import typings.std.PropertyKey
@@ -43,6 +44,18 @@ trait sizeCreateAgeRendererParams extends Object {
     */
   var legendOptions: js.UndefOr[sizeCreateAgeRendererParamsLegendOptions] = js.undefined
   /**
+    * Sets a maximum age for the visualization. Even if data exists above this value, only statistics will be calculated for values between the `minValue` and `maxValue`. Added at version 4.15.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-size.html#createAgeRenderer)
+    */
+  var maxValue: js.UndefOr[Double] = js.undefined
+  /**
+    * Sets a minimum age for the visualization. Even if data exists below this value, only statistics will be calculated for values between the `minValue` and `maxValue`. Added at version 4.15.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-size.html#createAgeRenderer)
+    */
+  var minValue: js.UndefOr[Double] = js.undefined
+  /**
     * Only for polygon layers. Indicates whether the polygon outline width should vary based on view scale. When set, a valid [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance must be provided in the `view` parameter. This option is not supported for 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-size.html#createAgeRenderer)
@@ -50,6 +63,12 @@ trait sizeCreateAgeRendererParams extends Object {
     * @default false
     */
   var outlineOptimizationEnabled: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Allows for cancelable requests. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-size.html#createAgeRenderer)
+    */
+  var signal: js.UndefOr[AbortSignal] = js.undefined
   /**
     * Indicates whether symbol sizes should vary based on view scale. When set, a valid [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance must be provided in the `view` parameter. This option is not supported for 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
@@ -118,7 +137,10 @@ object sizeCreateAgeRendererParams {
     basemap: String | Basemap = null,
     defaultSymbolEnabled: js.UndefOr[Boolean] = js.undefined,
     legendOptions: sizeCreateAgeRendererParamsLegendOptions = null,
+    maxValue: Int | Double = null,
+    minValue: Int | Double = null,
     outlineOptimizationEnabled: js.UndefOr[Boolean] = js.undefined,
+    signal: AbortSignal = null,
     sizeOptimizationEnabled: js.UndefOr[Boolean] = js.undefined,
     sizeScheme: SizeScheme = null,
     statistics: SummaryStatisticsResult = null,
@@ -129,7 +151,10 @@ object sizeCreateAgeRendererParams {
     if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultSymbolEnabled)) __obj.updateDynamic("defaultSymbolEnabled")(defaultSymbolEnabled.asInstanceOf[js.Any])
     if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions.asInstanceOf[js.Any])
+    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
+    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
     if (!js.isUndefined(outlineOptimizationEnabled)) __obj.updateDynamic("outlineOptimizationEnabled")(outlineOptimizationEnabled.asInstanceOf[js.Any])
+    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
     if (!js.isUndefined(sizeOptimizationEnabled)) __obj.updateDynamic("sizeOptimizationEnabled")(sizeOptimizationEnabled.asInstanceOf[js.Any])
     if (sizeScheme != null) __obj.updateDynamic("sizeScheme")(sizeScheme.asInstanceOf[js.Any])
     if (statistics != null) __obj.updateDynamic("statistics")(statistics.asInstanceOf[js.Any])

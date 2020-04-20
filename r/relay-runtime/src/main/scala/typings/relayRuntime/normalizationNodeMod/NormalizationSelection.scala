@@ -25,7 +25,6 @@ object NormalizationSelection {
     selections: js.Array[NormalizationSelection]
   ): NormalizationSelection = {
     val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], passingValue = passingValue.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NormalizationSelection]
   }
   @scala.inline
@@ -70,7 +69,6 @@ object NormalizationSelection {
   @scala.inline
   def NormalizationClientExtension(kind: String, selections: js.Array[NormalizationSelection]): NormalizationSelection = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NormalizationSelection]
   }
   @scala.inline

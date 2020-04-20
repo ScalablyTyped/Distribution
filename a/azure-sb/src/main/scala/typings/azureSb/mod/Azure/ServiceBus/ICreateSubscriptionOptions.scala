@@ -22,7 +22,6 @@ object ICreateSubscriptionOptions {
     RequiresSession: Boolean
   ): ICreateSubscriptionOptions = {
     val __obj = js.Dynamic.literal(DefaultMessageTimeToLive = DefaultMessageTimeToLive.asInstanceOf[js.Any], EnableDeadLetteringOnFilterEvaluationExceptions = EnableDeadLetteringOnFilterEvaluationExceptions.asInstanceOf[js.Any], EnableDeadLetteringOnMessageExpiration = EnableDeadLetteringOnMessageExpiration.asInstanceOf[js.Any], LockDuration = LockDuration.asInstanceOf[js.Any], RequiresSession = RequiresSession.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICreateSubscriptionOptions]
   }
 }

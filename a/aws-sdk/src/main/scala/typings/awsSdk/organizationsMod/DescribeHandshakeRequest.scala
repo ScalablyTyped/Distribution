@@ -16,7 +16,6 @@ object DescribeHandshakeRequest {
   @scala.inline
   def apply(HandshakeId: HandshakeId): DescribeHandshakeRequest = {
     val __obj = js.Dynamic.literal(HandshakeId = HandshakeId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeHandshakeRequest]
   }
 }

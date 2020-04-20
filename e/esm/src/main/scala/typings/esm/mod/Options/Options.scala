@@ -28,7 +28,6 @@ object Options {
     wasm: Boolean
   ): Options = {
     val __obj = js.Dynamic.literal(await = await.asInstanceOf[js.Any], cjs = cjs.asInstanceOf[js.Any], force = force.asInstanceOf[js.Any], mainFields = mainFields.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], wasm = wasm.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Options]
   }
 }

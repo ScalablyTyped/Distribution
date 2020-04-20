@@ -13,7 +13,6 @@ object Matchers {
   @scala.inline
   def apply[R, T](toBeValidSchema: () => R, toMatchSchema: js.Object => R): Matchers[R, T] = {
     val __obj = js.Dynamic.literal(toBeValidSchema = js.Any.fromFunction0(toBeValidSchema), toMatchSchema = js.Any.fromFunction1(toMatchSchema))
-  
     __obj.asInstanceOf[Matchers[R, T]]
   }
 }

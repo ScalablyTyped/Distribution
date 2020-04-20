@@ -20,7 +20,6 @@ object RemoveSourceIdentifierFromSubscriptionMessage {
   @scala.inline
   def apply(SourceIdentifier: String, SubscriptionName: String): RemoveSourceIdentifierFromSubscriptionMessage = {
     val __obj = js.Dynamic.literal(SourceIdentifier = SourceIdentifier.asInstanceOf[js.Any], SubscriptionName = SubscriptionName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RemoveSourceIdentifierFromSubscriptionMessage]
   }
 }

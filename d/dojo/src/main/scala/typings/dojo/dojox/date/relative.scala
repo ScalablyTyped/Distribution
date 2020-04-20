@@ -45,7 +45,6 @@ object relative {
   @scala.inline
   def apply(format: (Date, js.Object) => Unit): relative = {
     val __obj = js.Dynamic.literal(format = js.Any.fromFunction2(format))
-  
     __obj.asInstanceOf[relative]
   }
 }

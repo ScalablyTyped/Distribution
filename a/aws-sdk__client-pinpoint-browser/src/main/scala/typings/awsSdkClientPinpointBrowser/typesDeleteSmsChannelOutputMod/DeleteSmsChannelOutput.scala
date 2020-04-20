@@ -23,7 +23,6 @@ object DeleteSmsChannelOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, SMSChannelResponse: UnmarshalledSMSChannelResponse): DeleteSmsChannelOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], SMSChannelResponse = SMSChannelResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteSmsChannelOutput]
   }
 }

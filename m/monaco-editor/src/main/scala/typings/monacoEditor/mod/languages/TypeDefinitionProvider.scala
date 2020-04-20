@@ -20,7 +20,6 @@ object TypeDefinitionProvider {
     provideTypeDefinition: (ITextModel, Position, CancellationToken) => ProviderResult[Definition | js.Array[LocationLink]]
   ): TypeDefinitionProvider = {
     val __obj = js.Dynamic.literal(provideTypeDefinition = js.Any.fromFunction3(provideTypeDefinition))
-  
     __obj.asInstanceOf[TypeDefinitionProvider]
   }
 }

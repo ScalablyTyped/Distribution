@@ -13,7 +13,6 @@ object DirectionsService {
   @scala.inline
   def apply(getDirections: DirectionsRequest => MapiRequest): DirectionsService = {
     val __obj = js.Dynamic.literal(getDirections = js.Any.fromFunction1(getDirections))
-  
     __obj.asInstanceOf[DirectionsService]
   }
 }

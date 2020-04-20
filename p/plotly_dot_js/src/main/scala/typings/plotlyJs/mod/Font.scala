@@ -25,7 +25,6 @@ object Font {
   @scala.inline
   def apply(color: Color, family: String, size: Double): Font = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], family = family.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Font]
   }
 }

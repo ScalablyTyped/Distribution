@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 
 trait nivoBarProps {
   @scala.inline
-  def ResponsiveBarProps: BarSvgProps.type = typings.nivoBar.mod.BarSvgProps
+  def ResponsiveBarProps: BarSvgProps.type = BarSvgProps
   type ResponsiveBarProps = BarSvgProps
   @scala.inline
-  def ResponsiveBarCanvasProps: BarCanvasProps.type = typings.nivoBar.mod.BarCanvasProps
+  def ResponsiveBarCanvasProps: BarCanvasProps.type = BarCanvasProps
   type ResponsiveBarCanvasProps = BarCanvasProps
 }
 

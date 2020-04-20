@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactCountdownCircleTimerProps {
   @scala.inline
-  def CountdownCircleTimerProps: Props.type = typings.reactCountdownCircleTimer.mod.Props
+  def CountdownCircleTimerProps: Props.type = Props
   type CountdownCircleTimerProps = Props
 }
 

@@ -15,16 +15,14 @@ trait FlexAlignType extends js.Object
 
 object FlexAlignType {
   @scala.inline
-  def baseline: typings.reactNative.reactNativeStrings.baseline = this.cast("baseline")
+  def baseline: typings.reactNative.reactNativeStrings.baseline = "baseline".asInstanceOf[typings.reactNative.reactNativeStrings.baseline]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.reactNative.reactNativeStrings.center = "center".asInstanceOf[typings.reactNative.reactNativeStrings.center]
   @scala.inline
-  def center: typings.reactNative.reactNativeStrings.center = this.cast("center")
+  def `flex-end`: typings.reactNative.reactNativeStrings.`flex-end` = "flex-end".asInstanceOf[typings.reactNative.reactNativeStrings.`flex-end`]
   @scala.inline
-  def `flex-end`: typings.reactNative.reactNativeStrings.`flex-end` = this.cast("flex-end")
+  def `flex-start`: typings.reactNative.reactNativeStrings.`flex-start` = "flex-start".asInstanceOf[typings.reactNative.reactNativeStrings.`flex-start`]
   @scala.inline
-  def `flex-start`: typings.reactNative.reactNativeStrings.`flex-start` = this.cast("flex-start")
-  @scala.inline
-  def stretch: typings.reactNative.reactNativeStrings.stretch = this.cast("stretch")
+  def stretch: typings.reactNative.reactNativeStrings.stretch = "stretch".asInstanceOf[typings.reactNative.reactNativeStrings.stretch]
 }
 

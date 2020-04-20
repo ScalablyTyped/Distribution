@@ -12,7 +12,6 @@ object IMediaProtectionServiceCompletion {
   @scala.inline
   def apply(complete: Boolean => Unit): IMediaProtectionServiceCompletion = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction1(complete))
-  
     __obj.asInstanceOf[IMediaProtectionServiceCompletion]
   }
 }

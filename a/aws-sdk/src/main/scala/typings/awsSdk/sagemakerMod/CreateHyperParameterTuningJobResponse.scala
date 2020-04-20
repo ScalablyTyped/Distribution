@@ -16,7 +16,6 @@ object CreateHyperParameterTuningJobResponse {
   @scala.inline
   def apply(HyperParameterTuningJobArn: HyperParameterTuningJobArn): CreateHyperParameterTuningJobResponse = {
     val __obj = js.Dynamic.literal(HyperParameterTuningJobArn = HyperParameterTuningJobArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateHyperParameterTuningJobResponse]
   }
 }

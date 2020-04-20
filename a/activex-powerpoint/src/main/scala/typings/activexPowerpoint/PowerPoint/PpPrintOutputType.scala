@@ -30,26 +30,24 @@ trait PpPrintOutputType extends js.Object
 
 object PpPrintOutputType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ppPrintOutputBuildSlides: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def ppPrintOutputBuildSlides: `7` = this.cast(7)
+  def ppPrintOutputFourSlideHandouts: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def ppPrintOutputFourSlideHandouts: `8` = this.cast(8)
+  def ppPrintOutputNineSlideHandouts: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def ppPrintOutputNineSlideHandouts: `9` = this.cast(9)
+  def ppPrintOutputNotesPages: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def ppPrintOutputNotesPages: `5` = this.cast(5)
+  def ppPrintOutputOneSlideHandouts: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def ppPrintOutputOneSlideHandouts: `10` = this.cast(10)
+  def ppPrintOutputOutline: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def ppPrintOutputOutline: `6` = this.cast(6)
+  def ppPrintOutputSixSlideHandouts: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def ppPrintOutputSixSlideHandouts: `4` = this.cast(4)
+  def ppPrintOutputSlides: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def ppPrintOutputSlides: `1` = this.cast(1)
+  def ppPrintOutputThreeSlideHandouts: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def ppPrintOutputThreeSlideHandouts: `3` = this.cast(3)
-  @scala.inline
-  def ppPrintOutputTwoSlideHandouts: `2` = this.cast(2)
+  def ppPrintOutputTwoSlideHandouts: `2` = 2.asInstanceOf[`2`]
 }
 

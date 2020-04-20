@@ -30,7 +30,6 @@ object IMenuState {
     showMenuDialog: Boolean
   ): IMenuState = {
     val __obj = js.Dynamic.literal(currentNode = currentNode.asInstanceOf[js.Any], dialogTitle = dialogTitle.asInstanceOf[js.Any], menuActions = menuActions.asInstanceOf[js.Any], showMenu = showMenu.asInstanceOf[js.Any], showMenuDialog = showMenuDialog.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMenuState]
   }
 }

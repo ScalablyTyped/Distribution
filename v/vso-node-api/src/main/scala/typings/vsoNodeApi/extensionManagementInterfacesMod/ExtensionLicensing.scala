@@ -15,7 +15,6 @@ object ExtensionLicensing {
   @scala.inline
   def apply(overrides: js.Array[LicensingOverride]): ExtensionLicensing = {
     val __obj = js.Dynamic.literal(overrides = overrides.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExtensionLicensing]
   }
 }

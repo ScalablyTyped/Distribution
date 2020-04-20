@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vscode-windows-registry"
-version := "1.0-dt-20191218Z-1f65c6"
+version := "1.0-dt-20191218Z-98b3a0"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

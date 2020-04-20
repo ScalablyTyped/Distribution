@@ -26,7 +26,6 @@ object ITableViewBroomPointSaveInfo {
   @scala.inline
   def apply(qFields: js.Array[String], qPos: IPoint, qTable: String): ITableViewBroomPointSaveInfo = {
     val __obj = js.Dynamic.literal(qFields = qFields.asInstanceOf[js.Any], qPos = qPos.asInstanceOf[js.Any], qTable = qTable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ITableViewBroomPointSaveInfo]
   }
 }

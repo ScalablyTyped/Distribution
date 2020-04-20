@@ -18,7 +18,6 @@ object IExceptionHandlerProvider {
   @scala.inline
   def apply($get: js.Any, mode: String => Unit): IExceptionHandlerProvider = {
     val __obj = js.Dynamic.literal($get = $get.asInstanceOf[js.Any], mode = js.Any.fromFunction1(mode))
-  
     __obj.asInstanceOf[IExceptionHandlerProvider]
   }
 }

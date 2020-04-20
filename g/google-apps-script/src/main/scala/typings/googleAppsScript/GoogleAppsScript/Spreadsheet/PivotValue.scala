@@ -31,7 +31,6 @@ object PivotValue {
     summarizeBy: PivotTableSummarizeFunction => PivotValue
   ): PivotValue = {
     val __obj = js.Dynamic.literal(getDisplayType = js.Any.fromFunction0(getDisplayType), getFormula = js.Any.fromFunction0(getFormula), getPivotTable = js.Any.fromFunction0(getPivotTable), getSummarizedBy = js.Any.fromFunction0(getSummarizedBy), setDisplayName = js.Any.fromFunction1(setDisplayName), setFormula = js.Any.fromFunction1(setFormula), showAs = js.Any.fromFunction1(showAs), summarizeBy = js.Any.fromFunction1(summarizeBy))
-  
     __obj.asInstanceOf[PivotValue]
   }
 }

@@ -19,7 +19,6 @@ object AnonGetBit {
     toggleBit: (Double, Double) => Double
   ): AnonGetBit = {
     val __obj = js.Dynamic.literal(getBit = js.Any.fromFunction2(getBit), setBit = js.Any.fromFunction3(setBit), toggleBit = js.Any.fromFunction2(toggleBit))
-  
     __obj.asInstanceOf[AnonGetBit]
   }
 }

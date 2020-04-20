@@ -25,18 +25,18 @@ class ListViewSearch protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FListViewSearch: IModel = js.native
-  def containerAsListViewDatabaseSource(): ListViewDatabaseSource = js.native
-  def containerAsListViewXPathSource(): ListViewXPathSource = js.native
+  def containerAsListViewDatabaseSource: ListViewDatabaseSource = js.native
+  def containerAsListViewXPathSource: ListViewXPathSource = js.native
   /**
     * The value of this property is conceptually of type paths.LegacyAttributePath.
     *
     * In version 7.11.0: deleted
     */
-  def searchPaths(): IList[String] = js.native
+  def searchPaths: IList[String] = js.native
   /**
     * In version 7.11.0: introduced
     */
-  def searchRefs(): IList[AttributeRef] = js.native
+  def searchRefs: IList[AttributeRef] = js.native
 }
 
 /* static members */

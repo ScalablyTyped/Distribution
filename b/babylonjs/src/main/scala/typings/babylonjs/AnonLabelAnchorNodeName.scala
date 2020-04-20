@@ -14,7 +14,6 @@ object AnonLabelAnchorNodeName {
   @scala.inline
   def apply(labelAnchorNodeName: String, rootNodeName: String, touchPointNodeName: String): AnonLabelAnchorNodeName = {
     val __obj = js.Dynamic.literal(labelAnchorNodeName = labelAnchorNodeName.asInstanceOf[js.Any], rootNodeName = rootNodeName.asInstanceOf[js.Any], touchPointNodeName = touchPointNodeName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLabelAnchorNodeName]
   }
 }

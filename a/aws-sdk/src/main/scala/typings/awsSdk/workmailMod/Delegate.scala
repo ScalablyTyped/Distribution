@@ -20,7 +20,6 @@ object Delegate {
   @scala.inline
   def apply(Id: String, Type: MemberType): Delegate = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Delegate]
   }
 }

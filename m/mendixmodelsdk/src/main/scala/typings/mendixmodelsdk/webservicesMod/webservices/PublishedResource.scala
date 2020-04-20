@@ -24,9 +24,9 @@ abstract class PublishedResource protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FPublishedResource: IModel = js.native
-  def containerAsPublishedODataService(): PublishedODataService = js.native
-  def containerAsVersionedService(): VersionedService = js.native
-  def dataEntity(): DataEntity = js.native
+  def containerAsPublishedODataService: PublishedODataService = js.native
+  def containerAsVersionedService: VersionedService = js.native
+  def dataEntity: DataEntity = js.native
   def dataEntity(newValue: DataEntity): js.Any = js.native
 }
 

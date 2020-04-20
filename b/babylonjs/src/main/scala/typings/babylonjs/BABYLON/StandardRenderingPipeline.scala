@@ -267,37 +267,37 @@ class StandardRenderingPipeline protected ()
     * @ignore
     * Specifies if the bloom pipeline is enabled
     */
-  def BloomEnabled(): Boolean = js.native
+  def BloomEnabled: Boolean = js.native
   def BloomEnabled(enabled: Boolean): js.Any = js.native
   /**
     * @ignore
     * Specifies if the depth of field pipeline is enabed
     */
-  def DepthOfFieldEnabled(): Boolean = js.native
+  def DepthOfFieldEnabled: Boolean = js.native
   def DepthOfFieldEnabled(enabled: Boolean): js.Any = js.native
   /**
     * @ignore
     * Specifies if the HDR pipeline is enabled
     */
-  def HDREnabled(): Boolean = js.native
+  def HDREnabled: Boolean = js.native
   def HDREnabled(enabled: Boolean): js.Any = js.native
   /**
     * @ignore
     * Specifies if the lens flare pipeline is enabed
     */
-  def LensFlareEnabled(): Boolean = js.native
+  def LensFlareEnabled: Boolean = js.native
   def LensFlareEnabled(enabled: Boolean): js.Any = js.native
   /**
     * @ignore
     * Specifies if the motion blur effect is enabled
     */
-  def MotionBlurEnabled(): Boolean = js.native
+  def MotionBlurEnabled: Boolean = js.native
   def MotionBlurEnabled(enabled: Boolean): js.Any = js.native
   /**
     * @ignore
     * Specifies if the volumetric lights scattering effect is enabled
     */
-  def VLSEnabled(): Boolean = js.native
+  def VLSEnabled: Boolean = js.native
   def VLSEnabled(enabled: Boolean): js.Any = js.native
   /**
     * Disposes of the pipeline
@@ -307,7 +307,7 @@ class StandardRenderingPipeline protected ()
   /**
     * Gets the overall exposure used by the pipeline
     */
-  def exposure(): Double = js.native
+  def exposure: Double = js.native
   /**
     * Sets the overall exposure used by the pipeline
     */
@@ -315,12 +315,12 @@ class StandardRenderingPipeline protected ()
   /**
     * Specifies if anti-aliasing is enabled
     */
-  def fxaaEnabled(): Boolean = js.native
+  def fxaaEnabled: Boolean = js.native
   def fxaaEnabled(enabled: Boolean): js.Any = js.native
   /**
     * Gets wether or not the exposure of the overall pipeline should be automatically adjusted by the HDR post-process
     */
-  def hdrAutoExposure(): Boolean = js.native
+  def hdrAutoExposure: Boolean = js.native
   /**
     * Sets wether or not the exposure of the overall pipeline should be automatically adjusted by the HDR post-process
     */
@@ -329,12 +329,12 @@ class StandardRenderingPipeline protected ()
     * Specifies the number of samples used for the motion blur effect
     * Typically in interval [16, 64]
     */
-  def motionBlurSamples(): Double = js.native
+  def motionBlurSamples: Double = js.native
   def motionBlurSamples(samples: Double): js.Any = js.native
   /**
     * Gets how much the image is blurred by the movement while using the motion blur post-process
     */
-  def motionStrength(): Double = js.native
+  def motionStrength: Double = js.native
   /**
     * Sets how much the image is blurred by the movement while using the motion blur post-process
     */
@@ -342,7 +342,7 @@ class StandardRenderingPipeline protected ()
   /**
     * Gets wether or not the motion blur post-process is object based or screen based.
     */
-  def objectBasedMotionBlur(): Boolean = js.native
+  def objectBasedMotionBlur: Boolean = js.native
   /**
     * Sets wether or not the motion blur post-process should be object based or screen based
     */
@@ -350,12 +350,12 @@ class StandardRenderingPipeline protected ()
   /**
     * Specifies MSAA sample count, setting this to 4 will provide 4x anti aliasing. (default: 1)
     */
-  def samples(): Double = js.native
+  def samples: Double = js.native
   def samples(sampleCount: Double): js.Any = js.native
   /**
     * Specifies if screen space reflections are enabled.
     */
-  def screenSpaceReflectionsEnabled(): Boolean = js.native
+  def screenSpaceReflectionsEnabled: Boolean = js.native
   def screenSpaceReflectionsEnabled(enabled: Boolean): js.Any = js.native
   /**
     * Serialize the rendering pipeline (Used when exporting)
@@ -366,7 +366,7 @@ class StandardRenderingPipeline protected ()
     * Specifies the number of steps used to calculate the volumetric lights
     * Typically in interval [50, 200]
     */
-  def volumetricLightStepsCount(): Double = js.native
+  def volumetricLightStepsCount: Double = js.native
   def volumetricLightStepsCount(count: Double): js.Any = js.native
 }
 

@@ -14,7 +14,6 @@ object Address {
   @scala.inline
   def apply(address: String, path: js.Array[Double], serializedPath: String): Address = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], serializedPath = serializedPath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Address]
   }
 }

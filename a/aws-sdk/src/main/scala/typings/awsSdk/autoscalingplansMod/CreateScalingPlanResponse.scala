@@ -16,7 +16,6 @@ object CreateScalingPlanResponse {
   @scala.inline
   def apply(ScalingPlanVersion: ScalingPlanVersion): CreateScalingPlanResponse = {
     val __obj = js.Dynamic.literal(ScalingPlanVersion = ScalingPlanVersion.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateScalingPlanResponse]
   }
 }

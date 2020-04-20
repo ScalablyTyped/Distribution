@@ -16,7 +16,6 @@ object DescribeRouteOutput {
   @scala.inline
   def apply(route: RouteData): DescribeRouteOutput = {
     val __obj = js.Dynamic.literal(route = route.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeRouteOutput]
   }
 }

@@ -13,7 +13,6 @@ object SocketBindInfo {
   @scala.inline
   def apply(socketPath: String): SocketBindInfo = {
     val __obj = js.Dynamic.literal(socketPath = socketPath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SocketBindInfo]
   }
 }

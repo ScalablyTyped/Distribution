@@ -20,7 +20,6 @@ object GetContactAttributesRequest {
   @scala.inline
   def apply(InitialContactId: ContactId, InstanceId: InstanceId): GetContactAttributesRequest = {
     val __obj = js.Dynamic.literal(InitialContactId = InitialContactId.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetContactAttributesRequest]
   }
 }

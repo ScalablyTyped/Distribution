@@ -14,7 +14,6 @@ object SendResult {
   @scala.inline
   def apply(body: String, headers: Headers, statusCode: Double): SendResult = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SendResult]
   }
 }

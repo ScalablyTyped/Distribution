@@ -13,7 +13,6 @@ object CameraControlSetting {
   @scala.inline
   def apply(GetIfAuto: () => Boolean, GetValue: () => Double): CameraControlSetting = {
     val __obj = js.Dynamic.literal(GetIfAuto = js.Any.fromFunction0(GetIfAuto), GetValue = js.Any.fromFunction0(GetValue))
-  
     __obj.asInstanceOf[CameraControlSetting]
   }
 }

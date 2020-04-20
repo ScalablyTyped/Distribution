@@ -15,7 +15,6 @@ object IMetadataCardMultiValue {
   @scala.inline
   def apply(ID: String, IsMultiValue: Boolean, State: js.Any, ValueParts: js.Any): IMetadataCardMultiValue = {
     val __obj = js.Dynamic.literal(ID = ID.asInstanceOf[js.Any], IsMultiValue = IsMultiValue.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any], ValueParts = ValueParts.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMetadataCardMultiValue]
   }
 }

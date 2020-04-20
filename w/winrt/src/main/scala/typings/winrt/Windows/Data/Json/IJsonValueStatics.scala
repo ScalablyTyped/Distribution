@@ -23,7 +23,6 @@ object IJsonValueStatics {
     tryParse: String => AnonResultSucceeded
   ): IJsonValueStatics = {
     val __obj = js.Dynamic.literal(createBooleanValue = js.Any.fromFunction1(createBooleanValue), createNumberValue = js.Any.fromFunction1(createNumberValue), createStringValue = js.Any.fromFunction1(createStringValue), parse = js.Any.fromFunction1(parse), tryParse = js.Any.fromFunction1(tryParse))
-  
     __obj.asInstanceOf[IJsonValueStatics]
   }
 }

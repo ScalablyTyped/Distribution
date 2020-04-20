@@ -16,7 +16,6 @@ object CreateFlowDefinitionResponse {
   @scala.inline
   def apply(FlowDefinitionArn: FlowDefinitionArn): CreateFlowDefinitionResponse = {
     val __obj = js.Dynamic.literal(FlowDefinitionArn = FlowDefinitionArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateFlowDefinitionResponse]
   }
 }

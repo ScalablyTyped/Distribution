@@ -16,7 +16,6 @@ object GetIdentityNotificationAttributesRequest {
   @scala.inline
   def apply(Identities: IdentityList): GetIdentityNotificationAttributesRequest = {
     val __obj = js.Dynamic.literal(Identities = Identities.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetIdentityNotificationAttributesRequest]
   }
 }

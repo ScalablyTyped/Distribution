@@ -34,7 +34,6 @@ object AnonRowCollapsed {
     rowExpanded: (IScope, rowExpandedHandler[TEntity]) => Unit
   ): AnonRowCollapsed[TEntity] = {
     val __obj = js.Dynamic.literal(rowCollapsed = js.Any.fromFunction2(rowCollapsed), rowExpanded = js.Any.fromFunction2(rowExpanded))
-  
     __obj.asInstanceOf[AnonRowCollapsed[TEntity]]
   }
 }

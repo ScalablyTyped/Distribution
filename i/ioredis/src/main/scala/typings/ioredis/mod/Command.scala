@@ -21,7 +21,6 @@ object Command {
     isCustomCommand: Boolean
   ): Command = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], getKeys = js.Any.fromFunction0(getKeys), getSlot = js.Any.fromFunction0(getSlot), isCustomCommand = isCustomCommand.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Command]
   }
 }

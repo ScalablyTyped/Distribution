@@ -14,7 +14,6 @@ object CacheDumpData {
   @scala.inline
   def apply(b: Double, key: String, s: Double): CacheDumpData = {
     val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CacheDumpData]
   }
 }

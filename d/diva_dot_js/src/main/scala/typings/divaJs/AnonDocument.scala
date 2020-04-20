@@ -14,7 +14,6 @@ object AnonDocument {
   @scala.inline
   def apply(document: Region, page: Region): AnonDocument = {
     val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDocument]
   }
 }

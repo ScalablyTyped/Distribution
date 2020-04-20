@@ -12,10 +12,8 @@ trait CameraDevice extends js.Object
 
 object CameraDevice {
   @scala.inline
-  def back: typings.baiduApp.baiduAppStrings.back = this.cast("back")
+  def back: typings.baiduApp.baiduAppStrings.back = "back".asInstanceOf[typings.baiduApp.baiduAppStrings.back]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def front: typings.baiduApp.baiduAppStrings.front = this.cast("front")
+  def front: typings.baiduApp.baiduAppStrings.front = "front".asInstanceOf[typings.baiduApp.baiduAppStrings.front]
 }
 

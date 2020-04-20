@@ -23,8 +23,8 @@ abstract class MicroflowAction protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FMicroflowAction: IModel = js.native
-  def containerAsActionActivity(): ActionActivity = js.native
-  def errorHandlingType(): ErrorHandlingType = js.native
+  def containerAsActionActivity: ActionActivity = js.native
+  def errorHandlingType: ErrorHandlingType = js.native
   def errorHandlingType(newValue: ErrorHandlingType): js.Any = js.native
 }
 

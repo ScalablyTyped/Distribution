@@ -13,7 +13,6 @@ object ViterbiLattice {
   @scala.inline
   def apply(append: ViterbiNode => Unit, appendEos: () => Unit): ViterbiLattice = {
     val __obj = js.Dynamic.literal(append = js.Any.fromFunction1(append), appendEos = js.Any.fromFunction0(appendEos))
-  
     __obj.asInstanceOf[ViterbiLattice]
   }
 }

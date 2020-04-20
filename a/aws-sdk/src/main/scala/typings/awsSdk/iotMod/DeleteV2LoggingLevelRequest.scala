@@ -20,7 +20,6 @@ object DeleteV2LoggingLevelRequest {
   @scala.inline
   def apply(targetName: LogTargetName, targetType: LogTargetType): DeleteV2LoggingLevelRequest = {
     val __obj = js.Dynamic.literal(targetName = targetName.asInstanceOf[js.Any], targetType = targetType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteV2LoggingLevelRequest]
   }
 }

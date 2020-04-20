@@ -14,7 +14,6 @@ object ISetVersionRequest {
   @scala.inline
   def apply(currentVersion: Double, desiredVersion: Double, getDeferral: () => SetVersionDeferral): ISetVersionRequest = {
     val __obj = js.Dynamic.literal(currentVersion = currentVersion.asInstanceOf[js.Any], desiredVersion = desiredVersion.asInstanceOf[js.Any], getDeferral = js.Any.fromFunction0(getDeferral))
-  
     __obj.asInstanceOf[ISetVersionRequest]
   }
 }

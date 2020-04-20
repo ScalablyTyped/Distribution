@@ -16,7 +16,6 @@ object LogoutRequest {
   @scala.inline
   def apply(accessToken: AccessTokenType): LogoutRequest = {
     val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LogoutRequest]
   }
 }

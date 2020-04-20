@@ -13,7 +13,6 @@ object AnonMaterialIndexStart {
   @scala.inline
   def apply(materialIndex: Double, start: Double): AnonMaterialIndexStart = {
     val __obj = js.Dynamic.literal(materialIndex = materialIndex.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMaterialIndexStart]
   }
 }

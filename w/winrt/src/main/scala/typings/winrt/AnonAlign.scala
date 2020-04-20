@@ -16,7 +16,6 @@ object AnonAlign {
   @scala.inline
   def apply(align: TabAlignment, leader: TabLeader, position: Double): AnonAlign = {
     val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], leader = leader.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAlign]
   }
 }

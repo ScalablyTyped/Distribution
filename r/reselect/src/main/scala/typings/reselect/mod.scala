@@ -1,5 +1,6 @@
 package typings.reselect
 
+import org.scalablytyped.runtime.TopLevel
 import typings.reselect.reselectStrings.createStructuredSelector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,8 +9,9 @@ import scala.scalajs.js.annotation._
 @JSImport("reselect", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  def createSelector[S, R, T](selectors: js.Array[Selector[S, R]], combiner: js.Function1[/* repeated */ R, T]): OutputSelector[S, T, js.Function1[/* repeated */ R, T]] = js.native
-  def createSelector[S, R1, T](selector: Selector[S, R1], combiner: js.Function1[/* res */ R1, T]): OutputSelector[S, T, js.Function1[/* res */ R1, T]] = js.native
+  def createSelector[S1, R1, T](selector1: Selector[S1, R1], combiner: js.Function1[/* res1 */ R1, T]): OutputSelector[S1, T, js.Function1[/* res1 */ R1, T]] = js.native
+  def createSelector[S, R1, T](selectors: js.Array[Selector[S, R1]], combiner: js.Function1[/* res */ R1, T]): OutputSelector[S, T, js.Function1[/* res */ R1, T]] = js.native
+  def createSelector[S1, P1, R1, T](selector1: ParametricSelector[S1, P1, R1], combiner: js.Function1[/* res1 */ R1, T]): OutputParametricSelector[S1, P1, T, js.Function1[/* res1 */ R1, T]] = js.native
   def createSelector[S, R1, R2, T](
     selector1: Selector[S, R1],
     selector2: Selector[S, R2],
@@ -19,7 +21,6 @@ object mod extends js.Object {
     selectors: js.Tuple2[Selector[S, R1], Selector[S, R2]],
     combiner: js.Function2[/* res1 */ R1, /* res2 */ R2, T]
   ): OutputSelector[S, T, js.Function2[/* res1 */ R1, /* res2 */ R2, T]] = js.native
-  def createSelector[S, P, R1, T](selector: ParametricSelector[S, P, R1], combiner: js.Function1[/* res */ R1, T]): OutputParametricSelector[S, P, T, js.Function1[/* res */ R1, T]] = js.native
   def createSelector[S, P, R1, R2, T](
     selector1: ParametricSelector[S, P, R1],
     selector2: ParametricSelector[S, P, R2],
@@ -885,11 +886,7 @@ object mod extends js.Object {
     rest: js.Any*
   ): FnCall = js.native
   @JSName("createSelector")
-  def createSelector_S1P1R1T[S1, P1, R1, T](selector1: ParametricSelector[S1, P1, R1], combiner: js.Function1[/* res1 */ R1, T]): OutputParametricSelector[S1, P1, T, js.Function1[/* res1 */ R1, T]] = js.native
-  @JSName("createSelector")
   def createSelector_S1P1R1T_OutputParametricSelector[S1, P1, R1, T](selectors: js.Array[ParametricSelector[S1, P1, R1]], combiner: js.Function1[/* res1 */ R1, T]): OutputParametricSelector[S1, P1, T, js.Function1[/* res1 */ R1, T]] = js.native
-  @JSName("createSelector")
-  def createSelector_S1R1T[S1, R1, T](selector1: Selector[S1, R1], combiner: js.Function1[/* res1 */ R1, T]): OutputSelector[S1, T, js.Function1[/* res1 */ R1, T]] = js.native
   @JSName("createSelector")
   def createSelector_S1R1T[S1, R1, T](selectors: js.Array[Selector[S1, R1]], combiner: js.Function1[/* res1 */ R1, T]): OutputSelector[S1, T, js.Function1[/* res1 */ R1, T]] = js.native
   @JSName("createSelector")
@@ -2442,33 +2439,37 @@ object mod extends js.Object {
     combiner: js.Function2[/* res1 */ R1, /* res2 */ R2, T]
   ): OutputParametricSelector[S, P, T, js.Function2[/* res1 */ R1, /* res2 */ R2, T]] = js.native
   @JSName("createSelector")
+  def createSelector_SPR1T[S, P, R1, T](selector: ParametricSelector[S, P, R1], combiner: js.Function1[/* res */ R1, T]): OutputParametricSelector[S, P, T, js.Function1[/* res */ R1, T]] = js.native
+  @JSName("createSelector")
   def createSelector_SPR1T_OutputParametricSelector[S, P, R1, T](selectors: js.Array[ParametricSelector[S, P, R1]], combiner: js.Function1[/* res */ R1, T]): OutputParametricSelector[S, P, T, js.Function1[/* res */ R1, T]] = js.native
   @JSName("createSelector")
   def createSelector_SPRT_OutputParametricSelector[S, P, R, T](selectors: js.Array[ParametricSelector[S, P, R]], combiner: js.Function1[/* repeated */ R, T]): OutputParametricSelector[S, P, T, js.Function1[/* repeated */ R, T]] = js.native
   @JSName("createSelector")
-  def createSelector_SR1T[S, R1, T](selectors: js.Array[Selector[S, R1]], combiner: js.Function1[/* res */ R1, T]): OutputSelector[S, T, js.Function1[/* res */ R1, T]] = js.native
+  def createSelector_SR1T[S, R1, T](selector: Selector[S, R1], combiner: js.Function1[/* res */ R1, T]): OutputSelector[S, T, js.Function1[/* res */ R1, T]] = js.native
+  @JSName("createSelector")
+  def createSelector_SRT[S, R, T](selectors: js.Array[Selector[S, R]], combiner: js.Function1[/* repeated */ R, T]): OutputSelector[S, T, js.Function1[/* repeated */ R, T]] = js.native
   def createStructuredSelector[S, T](
     selectors: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: reselect.reselect.Selector<S, T[K]>}
-    */ typings.reselect.reselectStrings.createStructuredSelector with T
+    */ typings.reselect.reselectStrings.createStructuredSelector with TopLevel[T]
   ): Selector[S, T] = js.native
   def createStructuredSelector[S, T](
     selectors: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: reselect.reselect.Selector<S, T[K]>}
-    */ typings.reselect.reselectStrings.createStructuredSelector with T,
+    */ typings.reselect.reselectStrings.createStructuredSelector with TopLevel[T],
     selectorCreator: FnCall
   ): Selector[S, T] = js.native
   @JSName("createStructuredSelector")
   def createStructuredSelector_SPT_ParametricSelector[S, P, T](
     selectors: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: reselect.reselect.ParametricSelector<S, P, T[K]>}
-    */ createStructuredSelector with T
+    */ createStructuredSelector with TopLevel[T]
   ): ParametricSelector[S, P, T] = js.native
   @JSName("createStructuredSelector")
   def createStructuredSelector_SPT_ParametricSelector[S, P, T](
     selectors: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: reselect.reselect.ParametricSelector<S, P, T[K]>}
-    */ createStructuredSelector with T,
+    */ createStructuredSelector with TopLevel[T],
     selectorCreator: FnCall
   ): ParametricSelector[S, P, T] = js.native
   def defaultMemoize[F /* <: js.Function */](func: F): F = js.native

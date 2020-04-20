@@ -18,7 +18,6 @@ object Persistence {
     stopAutocompaction: () => Unit
   ): Persistence = {
     val __obj = js.Dynamic.literal(compactDatafile = js.Any.fromFunction0(compactDatafile), setAutocompactionInterval = js.Any.fromFunction1(setAutocompactionInterval), stopAutocompaction = js.Any.fromFunction0(stopAutocompaction))
-  
     __obj.asInstanceOf[Persistence]
   }
 }

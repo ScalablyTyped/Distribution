@@ -17,7 +17,6 @@ object CreateConfigurationSetTrackingOptionsRequest {
   @scala.inline
   def apply(ConfigurationSetName: ConfigurationSetName, TrackingOptions: TrackingOptions): CreateConfigurationSetTrackingOptionsRequest = {
     val __obj = js.Dynamic.literal(ConfigurationSetName = ConfigurationSetName.asInstanceOf[js.Any], TrackingOptions = TrackingOptions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateConfigurationSetTrackingOptionsRequest]
   }
 }

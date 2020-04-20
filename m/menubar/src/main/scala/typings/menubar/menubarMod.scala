@@ -67,7 +67,7 @@ object menubarMod extends js.Object {
       * The Electron [App](https://electronjs.org/docs/api/app)
       * instance.
       */
-    def app(): App_ = js.native
+    def app: App_ = js.native
     /**
       * Retrieve a menubar option.
       *
@@ -105,7 +105,7 @@ object menubarMod extends js.Object {
       * The [electron-positioner](https://github.com/jenslind/electron-positioner)
       * instance.
       */
-    def positioner(): js.Any = js.native
+    def positioner: js.Any = js.native
     def setOption(key: index, value: `false`): Unit = js.native
     def setOption(
       key: windowPosition,
@@ -151,12 +151,12 @@ object menubarMod extends js.Object {
     /**
       * The Electron [Tray](https://electronjs.org/docs/api/tray) instance.
       */
-    def tray(): Tray = js.native
+    def tray: Tray = js.native
     /**
       * The Electron [BrowserWindow](https://electronjs.org/docs/api/browser-window)
       * instance, if it's present.
       */
-    def window(): js.UndefOr[BrowserWindow] = js.native
+    def window: js.UndefOr[BrowserWindow] = js.native
   }
   
 }

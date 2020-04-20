@@ -20,7 +20,6 @@ object FrequencyBandwidth {
   @scala.inline
   def apply(units: BandwidthUnits, value: Double): FrequencyBandwidth = {
     val __obj = js.Dynamic.literal(units = units.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FrequencyBandwidth]
   }
 }

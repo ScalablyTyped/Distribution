@@ -17,7 +17,6 @@ object SegmentData {
     segment: js.Array[Coordinate]
   ): SegmentData = {
     val __obj = js.Dynamic.literal(feature = feature.asInstanceOf[js.Any], segment = segment.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SegmentData]
   }
 }

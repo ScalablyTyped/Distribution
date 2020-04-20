@@ -34,7 +34,6 @@ object IFontWeightsStatics {
     thin: FontWeight
   ): IFontWeightsStatics = {
     val __obj = js.Dynamic.literal(black = black.asInstanceOf[js.Any], bold = bold.asInstanceOf[js.Any], extraBlack = extraBlack.asInstanceOf[js.Any], extraBold = extraBold.asInstanceOf[js.Any], extraLight = extraLight.asInstanceOf[js.Any], light = light.asInstanceOf[js.Any], medium = medium.asInstanceOf[js.Any], normal = normal.asInstanceOf[js.Any], semiBold = semiBold.asInstanceOf[js.Any], semiLight = semiLight.asInstanceOf[js.Any], thin = thin.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IFontWeightsStatics]
   }
 }

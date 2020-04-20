@@ -22,7 +22,7 @@ abstract class BinaryListOperation protected () extends ListOperation {
   ) = this()
   @JSName("model")
   var model_FBinaryListOperation: IModel = js.native
-  def secondListOrObjectVariableName(): String = js.native
+  def secondListOrObjectVariableName: String = js.native
   def secondListOrObjectVariableName(newValue: String): js.Any = js.native
 }
 

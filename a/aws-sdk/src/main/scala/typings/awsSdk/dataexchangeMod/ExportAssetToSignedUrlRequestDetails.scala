@@ -24,7 +24,6 @@ object ExportAssetToSignedUrlRequestDetails {
   @scala.inline
   def apply(AssetId: Id, DataSetId: Id, RevisionId: Id): ExportAssetToSignedUrlRequestDetails = {
     val __obj = js.Dynamic.literal(AssetId = AssetId.asInstanceOf[js.Any], DataSetId = DataSetId.asInstanceOf[js.Any], RevisionId = RevisionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExportAssetToSignedUrlRequestDetails]
   }
 }

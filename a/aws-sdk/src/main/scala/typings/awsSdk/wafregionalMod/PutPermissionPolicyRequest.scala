@@ -20,7 +20,6 @@ object PutPermissionPolicyRequest {
   @scala.inline
   def apply(Policy: PolicyString, ResourceArn: ResourceArn): PutPermissionPolicyRequest = {
     val __obj = js.Dynamic.literal(Policy = Policy.asInstanceOf[js.Any], ResourceArn = ResourceArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutPermissionPolicyRequest]
   }
 }

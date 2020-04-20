@@ -20,7 +20,6 @@ object FailedItemDetails {
   @scala.inline
   def apply(failureCode: FailedItemErrorCode, retryable: Bool): FailedItemDetails = {
     val __obj = js.Dynamic.literal(failureCode = failureCode.asInstanceOf[js.Any], retryable = retryable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FailedItemDetails]
   }
 }

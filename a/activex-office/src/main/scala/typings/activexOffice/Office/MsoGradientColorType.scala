@@ -20,16 +20,14 @@ trait MsoGradientColorType extends js.Object
 
 object MsoGradientColorType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoGradientColorMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def msoGradientColorMixed: `-2` = this.cast(-2)
+  def msoGradientMultiColor: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoGradientMultiColor: `4` = this.cast(4)
+  def msoGradientOneColor: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoGradientOneColor: `1` = this.cast(1)
+  def msoGradientPresetColors: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoGradientPresetColors: `3` = this.cast(3)
-  @scala.inline
-  def msoGradientTwoColors: `2` = this.cast(2)
+  def msoGradientTwoColors: `2` = 2.asInstanceOf[`2`]
 }
 

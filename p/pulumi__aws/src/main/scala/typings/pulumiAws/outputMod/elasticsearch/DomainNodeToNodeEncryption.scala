@@ -16,7 +16,6 @@ object DomainNodeToNodeEncryption {
   @scala.inline
   def apply(enabled: Boolean): DomainNodeToNodeEncryption = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DomainNodeToNodeEncryption]
   }
 }

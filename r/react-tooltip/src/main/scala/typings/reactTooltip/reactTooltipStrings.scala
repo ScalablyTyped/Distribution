@@ -3,6 +3,7 @@ package typings.reactTooltip
 import typings.reactTooltip.mod.Effect
 import typings.reactTooltip.mod.Place
 import typings.reactTooltip.mod.Type
+import typings.reactTooltip.mod._ElementEvents
 import typings.reactTooltip.mod._WindowEvents
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -55,10 +56,27 @@ object reactTooltipStrings {
   sealed trait MSPointerUp extends _WindowEvents
   
   @js.native
-  sealed trait abort extends _WindowEvents
+  sealed trait abort
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
   sealed trait afterprint extends _WindowEvents
+  
+  @js.native
+  sealed trait animationcancel extends _ElementEvents
+  
+  @js.native
+  sealed trait animationend extends _ElementEvents
+  
+  @js.native
+  sealed trait animationiteration extends _ElementEvents
+  
+  @js.native
+  sealed trait animationstart extends _ElementEvents
+  
+  @js.native
+  sealed trait auxclick extends _ElementEvents
   
   @js.native
   sealed trait beforeprint extends _WindowEvents
@@ -67,34 +85,63 @@ object reactTooltipStrings {
   sealed trait beforeunload extends _WindowEvents
   
   @js.native
-  sealed trait blur extends _WindowEvents
+  sealed trait blur
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
   sealed trait bottom extends Place
   
   @js.native
-  sealed trait canplay extends _WindowEvents
+  sealed trait cancel extends _ElementEvents
   
   @js.native
-  sealed trait canplaythrough extends _WindowEvents
+  sealed trait canplay
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
-  sealed trait change extends _WindowEvents
+  sealed trait canplaythrough
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
-  sealed trait click extends _WindowEvents
+  sealed trait change
+    extends _ElementEvents
+       with _WindowEvents
+  
+  @js.native
+  sealed trait click
+    extends _ElementEvents
+       with _WindowEvents
+  
+  @js.native
+  sealed trait close extends _ElementEvents
   
   @js.native
   sealed trait compassneedscalibration extends _WindowEvents
   
   @js.native
-  sealed trait contextmenu extends _WindowEvents
+  sealed trait contextmenu
+    extends _ElementEvents
+       with _WindowEvents
+  
+  @js.native
+  sealed trait copy extends _ElementEvents
+  
+  @js.native
+  sealed trait cuechange extends _ElementEvents
+  
+  @js.native
+  sealed trait cut extends _ElementEvents
   
   @js.native
   sealed trait dark extends Type
   
   @js.native
-  sealed trait dblclick extends _WindowEvents
+  sealed trait dblclick
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
   sealed trait devicelight extends _WindowEvents
@@ -112,45 +159,86 @@ object reactTooltipStrings {
   sealed trait div extends js.Object
   
   @js.native
-  sealed trait drag extends _WindowEvents
+  sealed trait drag
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
-  sealed trait dragend extends _WindowEvents
+  sealed trait dragend
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
-  sealed trait dragenter extends _WindowEvents
+  sealed trait dragenter
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
-  sealed trait dragleave extends _WindowEvents
+  sealed trait dragexit extends _ElementEvents
   
   @js.native
-  sealed trait dragover extends _WindowEvents
+  sealed trait dragleave
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
-  sealed trait dragstart extends _WindowEvents
+  sealed trait dragover
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
-  sealed trait drop extends _WindowEvents
+  sealed trait dragstart
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
-  sealed trait durationchange extends _WindowEvents
+  sealed trait drop
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
-  sealed trait emptied extends _WindowEvents
+  sealed trait durationchange
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
-  sealed trait ended extends _WindowEvents
+  sealed trait emptied
+    extends _ElementEvents
+       with _WindowEvents
+  
+  @js.native
+  sealed trait ended
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
   sealed trait error
     extends Type
+       with _ElementEvents
        with _WindowEvents
   
   @js.native
   sealed trait float extends Effect
   
   @js.native
-  sealed trait focus extends _WindowEvents
+  sealed trait focus
+    extends _ElementEvents
+       with _WindowEvents
+  
+  @js.native
+  sealed trait focusin extends _ElementEvents
+  
+  @js.native
+  sealed trait focusout extends _ElementEvents
+  
+  @js.native
+  sealed trait fullscreenchange extends _ElementEvents
+  
+  @js.native
+  sealed trait fullscreenerror extends _ElementEvents
+  
+  @js.native
+  sealed trait gotpointercapture extends _ElementEvents
   
   @js.native
   sealed trait hashchange extends _WindowEvents
@@ -159,19 +247,29 @@ object reactTooltipStrings {
   sealed trait info extends Type
   
   @js.native
-  sealed trait input extends _WindowEvents
+  sealed trait input
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
-  sealed trait invalid extends _WindowEvents
+  sealed trait invalid
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
-  sealed trait keydown extends _WindowEvents
+  sealed trait keydown
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
-  sealed trait keypress extends _WindowEvents
+  sealed trait keypress
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
-  sealed trait keyup extends _WindowEvents
+  sealed trait keyup
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
   sealed trait left extends Place
@@ -180,40 +278,65 @@ object reactTooltipStrings {
   sealed trait light extends Type
   
   @js.native
-  sealed trait load extends _WindowEvents
+  sealed trait load
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
-  sealed trait loadeddata extends _WindowEvents
+  sealed trait loadeddata
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
-  sealed trait loadedmetadata extends _WindowEvents
+  sealed trait loadedmetadata
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
-  sealed trait loadstart extends _WindowEvents
+  sealed trait loadstart
+    extends _ElementEvents
+       with _WindowEvents
+  
+  @js.native
+  sealed trait lostpointercapture extends _ElementEvents
   
   @js.native
   sealed trait message extends _WindowEvents
   
   @js.native
-  sealed trait mousedown extends _WindowEvents
+  sealed trait mousedown
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
-  sealed trait mouseenter extends _WindowEvents
+  sealed trait mouseenter
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
-  sealed trait mouseleave extends _WindowEvents
+  sealed trait mouseleave
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
-  sealed trait mousemove extends _WindowEvents
+  sealed trait mousemove
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
-  sealed trait mouseout extends _WindowEvents
+  sealed trait mouseout
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
-  sealed trait mouseover extends _WindowEvents
+  sealed trait mouseover
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
-  sealed trait mouseup extends _WindowEvents
+  sealed trait mouseup
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
   sealed trait mousewheel extends _WindowEvents
@@ -234,46 +357,104 @@ object reactTooltipStrings {
   sealed trait pageshow extends _WindowEvents
   
   @js.native
-  sealed trait pause extends _WindowEvents
+  sealed trait paste extends _ElementEvents
   
   @js.native
-  sealed trait play extends _WindowEvents
+  sealed trait pause
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
-  sealed trait playing extends _WindowEvents
+  sealed trait play
+    extends _ElementEvents
+       with _WindowEvents
+  
+  @js.native
+  sealed trait playing
+    extends _ElementEvents
+       with _WindowEvents
+  
+  @js.native
+  sealed trait pointercancel extends _ElementEvents
+  
+  @js.native
+  sealed trait pointerdown extends _ElementEvents
+  
+  @js.native
+  sealed trait pointerenter extends _ElementEvents
+  
+  @js.native
+  sealed trait pointerleave extends _ElementEvents
+  
+  @js.native
+  sealed trait pointermove extends _ElementEvents
+  
+  @js.native
+  sealed trait pointerout extends _ElementEvents
+  
+  @js.native
+  sealed trait pointerover extends _ElementEvents
+  
+  @js.native
+  sealed trait pointerup extends _ElementEvents
   
   @js.native
   sealed trait popstate extends _WindowEvents
   
   @js.native
-  sealed trait progress extends _WindowEvents
+  sealed trait progress
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
-  sealed trait ratechange extends _WindowEvents
+  sealed trait ratechange
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
   sealed trait readystatechange extends _WindowEvents
   
   @js.native
-  sealed trait reset extends _WindowEvents
+  sealed trait reset
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
-  sealed trait resize extends _WindowEvents
+  sealed trait resize
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
   sealed trait right extends Place
   
   @js.native
-  sealed trait scroll extends _WindowEvents
+  sealed trait scroll
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
-  sealed trait seeked extends _WindowEvents
+  sealed trait securitypolicyviolation extends _ElementEvents
   
   @js.native
-  sealed trait seeking extends _WindowEvents
+  sealed trait seeked
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
-  sealed trait select extends _WindowEvents
+  sealed trait seeking
+    extends _ElementEvents
+       with _WindowEvents
+  
+  @js.native
+  sealed trait select
+    extends _ElementEvents
+       with _WindowEvents
+  
+  @js.native
+  sealed trait selectionchange extends _ElementEvents
+  
+  @js.native
+  sealed trait selectstart extends _ElementEvents
   
   @js.native
   sealed trait solid extends Effect
@@ -282,31 +463,68 @@ object reactTooltipStrings {
   sealed trait span extends js.Object
   
   @js.native
-  sealed trait stalled extends _WindowEvents
+  sealed trait stalled
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
   sealed trait storage extends _WindowEvents
   
   @js.native
-  sealed trait submit extends _WindowEvents
+  sealed trait submit
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
   sealed trait success extends Type
   
   @js.native
-  sealed trait suspend extends _WindowEvents
+  sealed trait suspend
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
-  sealed trait timeupdate extends _WindowEvents
+  sealed trait timeupdate
+    extends _ElementEvents
+       with _WindowEvents
+  
+  @js.native
+  sealed trait toggle extends _ElementEvents
   
   @js.native
   sealed trait top extends Place
   
   @js.native
+  sealed trait touchcancel extends _ElementEvents
+  
+  @js.native
+  sealed trait touchend extends _ElementEvents
+  
+  @js.native
+  sealed trait touchmove extends _ElementEvents
+  
+  @js.native
+  sealed trait touchstart extends _ElementEvents
+  
+  @js.native
+  sealed trait transitioncancel extends _ElementEvents
+  
+  @js.native
+  sealed trait transitionend extends _ElementEvents
+  
+  @js.native
+  sealed trait transitionrun extends _ElementEvents
+  
+  @js.native
+  sealed trait transitionstart extends _ElementEvents
+  
+  @js.native
   sealed trait unload extends _WindowEvents
   
   @js.native
-  sealed trait volumechange extends _WindowEvents
+  sealed trait volumechange
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
   sealed trait vrdisplayactivate extends _WindowEvents
@@ -336,10 +554,15 @@ object reactTooltipStrings {
   sealed trait vrdisplaypresentchange extends _WindowEvents
   
   @js.native
-  sealed trait waiting extends _WindowEvents
+  sealed trait waiting
+    extends _ElementEvents
+       with _WindowEvents
   
   @js.native
   sealed trait warning extends Type
+  
+  @js.native
+  sealed trait wheel extends _ElementEvents
   
   @scala.inline
   def MSGestureChange: MSGestureChange = "MSGestureChange".asInstanceOf[MSGestureChange]
@@ -376,6 +599,16 @@ object reactTooltipStrings {
   @scala.inline
   def afterprint: afterprint = "afterprint".asInstanceOf[afterprint]
   @scala.inline
+  def animationcancel: animationcancel = "animationcancel".asInstanceOf[animationcancel]
+  @scala.inline
+  def animationend: animationend = "animationend".asInstanceOf[animationend]
+  @scala.inline
+  def animationiteration: animationiteration = "animationiteration".asInstanceOf[animationiteration]
+  @scala.inline
+  def animationstart: animationstart = "animationstart".asInstanceOf[animationstart]
+  @scala.inline
+  def auxclick: auxclick = "auxclick".asInstanceOf[auxclick]
+  @scala.inline
   def beforeprint: beforeprint = "beforeprint".asInstanceOf[beforeprint]
   @scala.inline
   def beforeunload: beforeunload = "beforeunload".asInstanceOf[beforeunload]
@@ -383,6 +616,8 @@ object reactTooltipStrings {
   def blur: blur = "blur".asInstanceOf[blur]
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
+  @scala.inline
+  def cancel: cancel = "cancel".asInstanceOf[cancel]
   @scala.inline
   def canplay: canplay = "canplay".asInstanceOf[canplay]
   @scala.inline
@@ -392,9 +627,17 @@ object reactTooltipStrings {
   @scala.inline
   def click: click = "click".asInstanceOf[click]
   @scala.inline
+  def close: close = "close".asInstanceOf[close]
+  @scala.inline
   def compassneedscalibration: compassneedscalibration = "compassneedscalibration".asInstanceOf[compassneedscalibration]
   @scala.inline
   def contextmenu: contextmenu = "contextmenu".asInstanceOf[contextmenu]
+  @scala.inline
+  def copy: copy = "copy".asInstanceOf[copy]
+  @scala.inline
+  def cuechange: cuechange = "cuechange".asInstanceOf[cuechange]
+  @scala.inline
+  def cut: cut = "cut".asInstanceOf[cut]
   @scala.inline
   def dark: dark = "dark".asInstanceOf[dark]
   @scala.inline
@@ -416,6 +659,8 @@ object reactTooltipStrings {
   @scala.inline
   def dragenter: dragenter = "dragenter".asInstanceOf[dragenter]
   @scala.inline
+  def dragexit: dragexit = "dragexit".asInstanceOf[dragexit]
+  @scala.inline
   def dragleave: dragleave = "dragleave".asInstanceOf[dragleave]
   @scala.inline
   def dragover: dragover = "dragover".asInstanceOf[dragover]
@@ -435,6 +680,16 @@ object reactTooltipStrings {
   def float: float = "float".asInstanceOf[float]
   @scala.inline
   def focus: focus = "focus".asInstanceOf[focus]
+  @scala.inline
+  def focusin: focusin = "focusin".asInstanceOf[focusin]
+  @scala.inline
+  def focusout: focusout = "focusout".asInstanceOf[focusout]
+  @scala.inline
+  def fullscreenchange: fullscreenchange = "fullscreenchange".asInstanceOf[fullscreenchange]
+  @scala.inline
+  def fullscreenerror: fullscreenerror = "fullscreenerror".asInstanceOf[fullscreenerror]
+  @scala.inline
+  def gotpointercapture: gotpointercapture = "gotpointercapture".asInstanceOf[gotpointercapture]
   @scala.inline
   def hashchange: hashchange = "hashchange".asInstanceOf[hashchange]
   @scala.inline
@@ -461,6 +716,8 @@ object reactTooltipStrings {
   def loadedmetadata: loadedmetadata = "loadedmetadata".asInstanceOf[loadedmetadata]
   @scala.inline
   def loadstart: loadstart = "loadstart".asInstanceOf[loadstart]
+  @scala.inline
+  def lostpointercapture: lostpointercapture = "lostpointercapture".asInstanceOf[lostpointercapture]
   @scala.inline
   def message: message = "message".asInstanceOf[message]
   @scala.inline
@@ -490,11 +747,29 @@ object reactTooltipStrings {
   @scala.inline
   def pageshow: pageshow = "pageshow".asInstanceOf[pageshow]
   @scala.inline
+  def paste: paste = "paste".asInstanceOf[paste]
+  @scala.inline
   def pause: pause = "pause".asInstanceOf[pause]
   @scala.inline
   def play: play = "play".asInstanceOf[play]
   @scala.inline
   def playing: playing = "playing".asInstanceOf[playing]
+  @scala.inline
+  def pointercancel: pointercancel = "pointercancel".asInstanceOf[pointercancel]
+  @scala.inline
+  def pointerdown: pointerdown = "pointerdown".asInstanceOf[pointerdown]
+  @scala.inline
+  def pointerenter: pointerenter = "pointerenter".asInstanceOf[pointerenter]
+  @scala.inline
+  def pointerleave: pointerleave = "pointerleave".asInstanceOf[pointerleave]
+  @scala.inline
+  def pointermove: pointermove = "pointermove".asInstanceOf[pointermove]
+  @scala.inline
+  def pointerout: pointerout = "pointerout".asInstanceOf[pointerout]
+  @scala.inline
+  def pointerover: pointerover = "pointerover".asInstanceOf[pointerover]
+  @scala.inline
+  def pointerup: pointerup = "pointerup".asInstanceOf[pointerup]
   @scala.inline
   def popstate: popstate = "popstate".asInstanceOf[popstate]
   @scala.inline
@@ -512,11 +787,17 @@ object reactTooltipStrings {
   @scala.inline
   def scroll: scroll = "scroll".asInstanceOf[scroll]
   @scala.inline
+  def securitypolicyviolation: securitypolicyviolation = "securitypolicyviolation".asInstanceOf[securitypolicyviolation]
+  @scala.inline
   def seeked: seeked = "seeked".asInstanceOf[seeked]
   @scala.inline
   def seeking: seeking = "seeking".asInstanceOf[seeking]
   @scala.inline
   def select: select = "select".asInstanceOf[select]
+  @scala.inline
+  def selectionchange: selectionchange = "selectionchange".asInstanceOf[selectionchange]
+  @scala.inline
+  def selectstart: selectstart = "selectstart".asInstanceOf[selectstart]
   @scala.inline
   def solid: solid = "solid".asInstanceOf[solid]
   @scala.inline
@@ -534,7 +815,25 @@ object reactTooltipStrings {
   @scala.inline
   def timeupdate: timeupdate = "timeupdate".asInstanceOf[timeupdate]
   @scala.inline
+  def toggle: toggle = "toggle".asInstanceOf[toggle]
+  @scala.inline
   def top: top = "top".asInstanceOf[top]
+  @scala.inline
+  def touchcancel: touchcancel = "touchcancel".asInstanceOf[touchcancel]
+  @scala.inline
+  def touchend: touchend = "touchend".asInstanceOf[touchend]
+  @scala.inline
+  def touchmove: touchmove = "touchmove".asInstanceOf[touchmove]
+  @scala.inline
+  def touchstart: touchstart = "touchstart".asInstanceOf[touchstart]
+  @scala.inline
+  def transitioncancel: transitioncancel = "transitioncancel".asInstanceOf[transitioncancel]
+  @scala.inline
+  def transitionend: transitionend = "transitionend".asInstanceOf[transitionend]
+  @scala.inline
+  def transitionrun: transitionrun = "transitionrun".asInstanceOf[transitionrun]
+  @scala.inline
+  def transitionstart: transitionstart = "transitionstart".asInstanceOf[transitionstart]
   @scala.inline
   def unload: unload = "unload".asInstanceOf[unload]
   @scala.inline
@@ -561,5 +860,7 @@ object reactTooltipStrings {
   def waiting: waiting = "waiting".asInstanceOf[waiting]
   @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
+  @scala.inline
+  def wheel: wheel = "wheel".asInstanceOf[wheel]
 }
 

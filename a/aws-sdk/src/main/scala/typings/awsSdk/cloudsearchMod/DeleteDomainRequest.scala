@@ -16,7 +16,6 @@ object DeleteDomainRequest {
   @scala.inline
   def apply(DomainName: DomainName): DeleteDomainRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteDomainRequest]
   }
 }

@@ -15,7 +15,6 @@ object ProductsResource {
   @scala.inline
   def apply(get: AnonProductId => Request_[ProductPurchase]): ProductsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
-  
     __obj.asInstanceOf[ProductsResource]
   }
 }

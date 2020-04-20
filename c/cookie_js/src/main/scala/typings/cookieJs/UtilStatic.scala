@@ -26,7 +26,6 @@ object UtilStatic {
     toArray: /* repeated */ js.Any => js.Array[_]
   ): UtilStatic = {
     val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode), getKeys = js.Any.fromFunction1(getKeys), isArray = js.Any.fromFunction1(isArray), isObject = js.Any.fromFunction1(isObject), retrieve = js.Any.fromFunction2(retrieve), toArray = js.Any.fromFunction1(toArray))
-  
     __obj.asInstanceOf[UtilStatic]
   }
 }

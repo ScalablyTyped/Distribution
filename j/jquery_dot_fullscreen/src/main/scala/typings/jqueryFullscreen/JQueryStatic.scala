@@ -16,7 +16,6 @@ object JQueryStatic {
   @scala.inline
   def apply(fullscreen: JQueryFullscreen): JQueryStatic = {
     val __obj = js.Dynamic.literal(fullscreen = fullscreen.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JQueryStatic]
   }
 }

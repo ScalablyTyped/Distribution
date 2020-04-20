@@ -15,12 +15,6 @@ trait AttachmentsContent
      with Content
      with contentContent {
   /**
-    * An array of [AttachmentInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html) objects used to display within the popup's content.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-AttachmentsContent.html#attachmentInfos)
-    */
-  var attachmentInfos: AttachmentInfo = js.native
-  /**
     * A string value indicating how to display the attachment.  If `list` is specified, attachments show as links.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-AttachmentsContent.html#displayType)

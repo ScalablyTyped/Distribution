@@ -27,7 +27,6 @@ object UpdateRecorder {
     updateObjectLiteral: (ObjectLiteralExpression, String) => Unit
   ): UpdateRecorder = {
     val __obj = js.Dynamic.literal(addClassDecorator = js.Any.fromFunction3(addClassDecorator), addNewImport = js.Any.fromFunction2(addNewImport), commitUpdate = js.Any.fromFunction0(commitUpdate), replaceDecorator = js.Any.fromFunction3(replaceDecorator), updateExistingImport = js.Any.fromFunction2(updateExistingImport), updateObjectLiteral = js.Any.fromFunction2(updateObjectLiteral))
-  
     __obj.asInstanceOf[UpdateRecorder]
   }
 }

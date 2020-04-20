@@ -14,7 +14,6 @@ object AnonLines {
   @scala.inline
   def apply(dur: Double, fn: (Double, Double, Double) => AnonY1, lines: Double): AnonLines = {
     val __obj = js.Dynamic.literal(dur = dur.asInstanceOf[js.Any], fn = js.Any.fromFunction3(fn), lines = lines.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLines]
   }
 }

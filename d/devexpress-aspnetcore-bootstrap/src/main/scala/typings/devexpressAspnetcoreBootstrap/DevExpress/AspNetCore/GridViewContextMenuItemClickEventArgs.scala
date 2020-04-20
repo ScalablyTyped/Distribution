@@ -24,7 +24,6 @@ object GridViewContextMenuItemClickEventArgs {
     usePostBack: Boolean
   ): GridViewContextMenuItemClickEventArgs = {
     val __obj = js.Dynamic.literal(elementIndex = elementIndex.asInstanceOf[js.Any], handled = handled.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], objectType = objectType.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], usePostBack = usePostBack.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GridViewContextMenuItemClickEventArgs]
   }
 }

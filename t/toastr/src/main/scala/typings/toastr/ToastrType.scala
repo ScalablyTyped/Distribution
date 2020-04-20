@@ -14,14 +14,12 @@ trait ToastrType extends js.Object
 
 object ToastrType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def error: typings.toastr.toastrStrings.error = "error".asInstanceOf[typings.toastr.toastrStrings.error]
   @scala.inline
-  def error: typings.toastr.toastrStrings.error = this.cast("error")
+  def info: typings.toastr.toastrStrings.info = "info".asInstanceOf[typings.toastr.toastrStrings.info]
   @scala.inline
-  def info: typings.toastr.toastrStrings.info = this.cast("info")
+  def success: typings.toastr.toastrStrings.success = "success".asInstanceOf[typings.toastr.toastrStrings.success]
   @scala.inline
-  def success: typings.toastr.toastrStrings.success = this.cast("success")
-  @scala.inline
-  def warning: typings.toastr.toastrStrings.warning = this.cast("warning")
+  def warning: typings.toastr.toastrStrings.warning = "warning".asInstanceOf[typings.toastr.toastrStrings.warning]
 }
 

@@ -12,10 +12,8 @@ trait EndOfStreamError extends js.Object
 
 object EndOfStreamError {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def decode: typings.std.stdStrings.decode = "decode".asInstanceOf[typings.std.stdStrings.decode]
   @scala.inline
-  def decode: typings.std.stdStrings.decode = this.cast("decode")
-  @scala.inline
-  def network: typings.std.stdStrings.network = this.cast("network")
+  def network: typings.std.stdStrings.network = "network".asInstanceOf[typings.std.stdStrings.network]
 }
 

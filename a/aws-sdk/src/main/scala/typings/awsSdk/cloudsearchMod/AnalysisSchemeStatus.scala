@@ -14,7 +14,6 @@ object AnalysisSchemeStatus {
   @scala.inline
   def apply(Options: AnalysisScheme, Status: OptionStatus): AnalysisSchemeStatus = {
     val __obj = js.Dynamic.literal(Options = Options.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnalysisSchemeStatus]
   }
 }

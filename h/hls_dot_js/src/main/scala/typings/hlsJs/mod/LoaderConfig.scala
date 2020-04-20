@@ -27,7 +27,6 @@ object LoaderConfig {
   @scala.inline
   def apply(maxRetry: Double, maxRetryDelay: Double, retryDelay: Double, timeout: Double): LoaderConfig = {
     val __obj = js.Dynamic.literal(maxRetry = maxRetry.asInstanceOf[js.Any], maxRetryDelay = maxRetryDelay.asInstanceOf[js.Any], retryDelay = retryDelay.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LoaderConfig]
   }
 }

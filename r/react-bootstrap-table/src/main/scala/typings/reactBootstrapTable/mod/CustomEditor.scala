@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CustomEditor[TRow /* <: js.Object */, K /* <: String */] extends js.Object {
+trait CustomEditor[TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */] extends js.Object {
   /**
   	 * Additional parameters to pass to the getElement function inside the props argument.
   	 */
@@ -26,7 +26,7 @@ trait CustomEditor[TRow /* <: js.Object */, K /* <: String */] extends js.Object
 
 object CustomEditor {
   @scala.inline
-  def apply[TRow /* <: js.Object */, K /* <: String */](
+  def apply[TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */](
     getElement: (js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: TRow[K] */ /* updatedCell */ js.Any, 
       Unit

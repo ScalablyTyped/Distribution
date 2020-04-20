@@ -13,7 +13,6 @@ object CheckOptions {
   @scala.inline
   def apply(handlers: js.Array[MissingFieldHandler], target: MutableRecordSource): CheckOptions = {
     val __obj = js.Dynamic.literal(handlers = handlers.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CheckOptions]
   }
 }

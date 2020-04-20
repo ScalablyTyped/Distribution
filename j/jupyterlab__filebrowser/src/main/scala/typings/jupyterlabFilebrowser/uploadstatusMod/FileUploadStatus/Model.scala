@@ -29,10 +29,10 @@ class Model () extends VDomModel {
     * The current file browser model.
     */
   @JSName("browserModel")
-  def browserModel_Union(): FileBrowserModel | Null = js.native
+  def browserModel_Union: FileBrowserModel | Null = js.native
   /**
     * The currently uploading items.
     */
-  def items(): js.Array[IFileUploadItem] = js.native
+  def items: js.Array[IFileUploadItem] = js.native
 }
 

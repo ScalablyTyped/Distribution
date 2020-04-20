@@ -10,6 +10,7 @@ trait ReactImageGalleryItem extends js.Object {
   var bulletClass: js.UndefOr[String] = js.undefined
   var bulletOnClick: js.UndefOr[js.Function1[/* hasItemItemIndexCurrentIndex */ AnonCurrentIndex, Unit]] = js.undefined
   var description: js.UndefOr[String] = js.undefined
+  var fullscreen: js.UndefOr[String] = js.undefined
   var original: js.UndefOr[String] = js.undefined
   var originalAlt: js.UndefOr[String] = js.undefined
   var originalClass: js.UndefOr[String] = js.undefined
@@ -31,6 +32,7 @@ object ReactImageGalleryItem {
     bulletClass: String = null,
     bulletOnClick: /* hasItemItemIndexCurrentIndex */ AnonCurrentIndex => Unit = null,
     description: String = null,
+    fullscreen: String = null,
     original: String = null,
     originalAlt: String = null,
     originalClass: String = null,
@@ -49,6 +51,7 @@ object ReactImageGalleryItem {
     if (bulletClass != null) __obj.updateDynamic("bulletClass")(bulletClass.asInstanceOf[js.Any])
     if (bulletOnClick != null) __obj.updateDynamic("bulletOnClick")(js.Any.fromFunction1(bulletOnClick))
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (fullscreen != null) __obj.updateDynamic("fullscreen")(fullscreen.asInstanceOf[js.Any])
     if (original != null) __obj.updateDynamic("original")(original.asInstanceOf[js.Any])
     if (originalAlt != null) __obj.updateDynamic("originalAlt")(originalAlt.asInstanceOf[js.Any])
     if (originalClass != null) __obj.updateDynamic("originalClass")(originalClass.asInstanceOf[js.Any])

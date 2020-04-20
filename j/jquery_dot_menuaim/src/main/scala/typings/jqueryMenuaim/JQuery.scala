@@ -16,7 +16,6 @@ object JQuery {
   @scala.inline
   def apply(menuAim: JQueryMenuAimOptions => JQuery): JQuery = {
     val __obj = js.Dynamic.literal(menuAim = js.Any.fromFunction1(menuAim))
-  
     __obj.asInstanceOf[JQuery]
   }
 }

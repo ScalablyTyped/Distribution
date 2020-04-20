@@ -20,7 +20,6 @@ object MessageCallbackInfo {
   @scala.inline
   def apply(ack: Boolean, id: Double, message: MessagePayload, time: Double): MessageCallbackInfo = {
     val __obj = js.Dynamic.literal(ack = ack.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MessageCallbackInfo]
   }
 }

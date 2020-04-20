@@ -20,7 +20,6 @@ object FetchPageRequest {
   @scala.inline
   def apply(NextPageToken: PageToken, TransactionId: TransactionId): FetchPageRequest = {
     val __obj = js.Dynamic.literal(NextPageToken = NextPageToken.asInstanceOf[js.Any], TransactionId = TransactionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FetchPageRequest]
   }
 }

@@ -12,7 +12,6 @@ object AnonButtonType {
   @scala.inline
   def apply(buttonType: String): AnonButtonType = {
     val __obj = js.Dynamic.literal(buttonType = buttonType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonButtonType]
   }
 }

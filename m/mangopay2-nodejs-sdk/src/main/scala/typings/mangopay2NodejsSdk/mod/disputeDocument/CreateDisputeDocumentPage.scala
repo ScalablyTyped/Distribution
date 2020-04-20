@@ -32,7 +32,6 @@ object CreateDisputeDocumentPage {
   @scala.inline
   def apply(File: String): CreateDisputeDocumentPage = {
     val __obj = js.Dynamic.literal(File = File.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateDisputeDocumentPage]
   }
 }

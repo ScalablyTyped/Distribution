@@ -20,7 +20,6 @@ object Result {
     refs: js.Array[Reference]
   ): Result = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], allRefs = allRefs.asInstanceOf[js.Any], mentions = mentions.asInstanceOf[js.Any], refs = refs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Result]
   }
 }

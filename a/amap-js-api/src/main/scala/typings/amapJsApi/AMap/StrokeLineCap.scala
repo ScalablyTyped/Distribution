@@ -13,12 +13,10 @@ trait StrokeLineCap extends js.Object
 
 object StrokeLineCap {
   @scala.inline
-  def butt: typings.amapJsApi.amapJsApiStrings.butt = this.cast("butt")
+  def butt: typings.amapJsApi.amapJsApiStrings.butt = "butt".asInstanceOf[typings.amapJsApi.amapJsApiStrings.butt]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def round: typings.amapJsApi.amapJsApiStrings.round = "round".asInstanceOf[typings.amapJsApi.amapJsApiStrings.round]
   @scala.inline
-  def round: typings.amapJsApi.amapJsApiStrings.round = this.cast("round")
-  @scala.inline
-  def square: typings.amapJsApi.amapJsApiStrings.square = this.cast("square")
+  def square: typings.amapJsApi.amapJsApiStrings.square = "square".asInstanceOf[typings.amapJsApi.amapJsApiStrings.square]
 }
 

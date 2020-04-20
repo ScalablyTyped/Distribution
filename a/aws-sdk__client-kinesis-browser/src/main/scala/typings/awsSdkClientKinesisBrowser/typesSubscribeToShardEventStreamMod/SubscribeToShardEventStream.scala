@@ -16,7 +16,6 @@ object SubscribeToShardEventStream {
   @scala.inline
   def apply(SubscribeToShardEvent: SubscribeToShardEvent): SubscribeToShardEventStream = {
     val __obj = js.Dynamic.literal(SubscribeToShardEvent = SubscribeToShardEvent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SubscribeToShardEventStream]
   }
 }

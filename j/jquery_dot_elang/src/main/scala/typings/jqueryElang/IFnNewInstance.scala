@@ -15,7 +15,6 @@ object IFnNewInstance {
   @scala.inline
   def apply(createInstance: (HTMLElement, js.Any, String) => JQuery_[HTMLElement]): IFnNewInstance = {
     val __obj = js.Dynamic.literal(createInstance = js.Any.fromFunction3(createInstance))
-  
     __obj.asInstanceOf[IFnNewInstance]
   }
 }

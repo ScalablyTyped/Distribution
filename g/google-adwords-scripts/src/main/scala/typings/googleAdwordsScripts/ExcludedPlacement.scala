@@ -20,7 +20,6 @@ object ExcludedPlacement {
     remove: () => Unit
   ): ExcludedPlacement = {
     val __obj = js.Dynamic.literal(getAdGroup = js.Any.fromFunction0(getAdGroup), getCampaign = js.Any.fromFunction0(getCampaign), getId = js.Any.fromFunction0(getId), getUrl = js.Any.fromFunction0(getUrl), remove = js.Any.fromFunction0(remove))
-  
     __obj.asInstanceOf[ExcludedPlacement]
   }
 }

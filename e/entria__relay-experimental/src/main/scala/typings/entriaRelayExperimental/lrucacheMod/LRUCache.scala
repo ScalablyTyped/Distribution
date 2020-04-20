@@ -35,7 +35,6 @@ object LRUCache {
     size: () => Double
   ): LRUCache[T] = {
     val __obj = js.Dynamic.literal(_capacity = _capacity.asInstanceOf[js.Any], _map = _map.asInstanceOf[js.Any], capacity = js.Any.fromFunction0(capacity), clear = js.Any.fromFunction0(clear), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), set = js.Any.fromFunction2(set), size = js.Any.fromFunction0(size))
-  
     __obj.asInstanceOf[LRUCache[T]]
   }
 }

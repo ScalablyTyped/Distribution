@@ -15,8 +15,20 @@ object vectorLayerMod extends js.Object {
       feature: typings.ol.olFeatureMod.default[typings.ol.geometryMod.default],
       squaredTolerance: Double,
       styles: js.Array[typings.ol.styleStyleMod.default],
+      builderGroup: typings.ol.builderGroupMod.default
+    ): Boolean = js.native
+    def renderFeature(
+      feature: typings.ol.olFeatureMod.default[typings.ol.geometryMod.default],
+      squaredTolerance: Double,
+      styles: js.Array[typings.ol.styleStyleMod.default],
       builderGroup: typings.ol.builderGroupMod.default,
       opt_transform: TransformFunction
+    ): Boolean = js.native
+    def renderFeature(
+      feature: typings.ol.olFeatureMod.default[typings.ol.geometryMod.default],
+      squaredTolerance: Double,
+      styles: typings.ol.styleStyleMod.default,
+      builderGroup: typings.ol.builderGroupMod.default
     ): Boolean = js.native
     def renderFeature(
       feature: typings.ol.olFeatureMod.default[typings.ol.geometryMod.default],

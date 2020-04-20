@@ -16,7 +16,6 @@ object DescribeAcceleratorRequest {
   @scala.inline
   def apply(AcceleratorArn: GenericString): DescribeAcceleratorRequest = {
     val __obj = js.Dynamic.literal(AcceleratorArn = AcceleratorArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeAcceleratorRequest]
   }
 }

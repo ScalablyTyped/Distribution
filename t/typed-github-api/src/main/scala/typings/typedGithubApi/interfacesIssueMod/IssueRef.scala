@@ -19,7 +19,6 @@ object IssueRef {
     number: Double
   ): IssueRef = {
     val __obj = js.Dynamic.literal(loadAsync = js.Any.fromFunction0(loadAsync), loadRepositoryAsync = js.Any.fromFunction0(loadRepositoryAsync), number = number.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IssueRef]
   }
 }

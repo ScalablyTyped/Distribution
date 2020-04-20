@@ -20,7 +20,6 @@ object CreateRegexMatchSetRequest {
   @scala.inline
   def apply(ChangeToken: ChangeToken, Name: ResourceName): CreateRegexMatchSetRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateRegexMatchSetRequest]
   }
 }

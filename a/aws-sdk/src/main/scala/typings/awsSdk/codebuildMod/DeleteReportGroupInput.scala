@@ -16,7 +16,6 @@ object DeleteReportGroupInput {
   @scala.inline
   def apply(arn: NonEmptyString): DeleteReportGroupInput = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteReportGroupInput]
   }
 }

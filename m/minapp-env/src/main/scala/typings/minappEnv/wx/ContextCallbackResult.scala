@@ -13,7 +13,6 @@ object ContextCallbackResult {
   @scala.inline
   def apply(context: js.Object): ContextCallbackResult = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ContextCallbackResult]
   }
 }

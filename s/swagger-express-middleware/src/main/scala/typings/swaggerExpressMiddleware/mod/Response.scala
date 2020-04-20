@@ -27,7 +27,6 @@ object Response {
   @scala.inline
   def ReferenceObject($ref: String): Response = {
     val __obj = js.Dynamic.literal($ref = $ref.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Response]
   }
 }

@@ -19,7 +19,6 @@ object AnonAutomobile {
   @scala.inline
   def apply(Automobile: String, Walking: String): AnonAutomobile = {
     val __obj = js.Dynamic.literal(Automobile = Automobile.asInstanceOf[js.Any], Walking = Walking.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAutomobile]
   }
 }

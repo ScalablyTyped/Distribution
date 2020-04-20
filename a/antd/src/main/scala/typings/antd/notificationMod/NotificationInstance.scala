@@ -22,7 +22,6 @@ object NotificationInstance {
     warning: ArgsProps => Unit
   ): NotificationInstance = {
     val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error), info = js.Any.fromFunction1(info), open = js.Any.fromFunction1(open), success = js.Any.fromFunction1(success), warning = js.Any.fromFunction1(warning))
-  
     __obj.asInstanceOf[NotificationInstance]
   }
 }

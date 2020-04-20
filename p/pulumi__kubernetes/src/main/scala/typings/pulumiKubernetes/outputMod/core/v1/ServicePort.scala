@@ -61,7 +61,6 @@ object ServicePort {
     targetPort: Double | String
   ): ServicePort = {
     val __obj = js.Dynamic.literal(appProtocol = appProtocol.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nodePort = nodePort.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], targetPort = targetPort.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ServicePort]
   }
 }

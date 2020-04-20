@@ -13,7 +13,6 @@ object TextChangeRange {
   @scala.inline
   def apply(newLength: Double, span: TextSpan): TextChangeRange = {
     val __obj = js.Dynamic.literal(newLength = newLength.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TextChangeRange]
   }
 }

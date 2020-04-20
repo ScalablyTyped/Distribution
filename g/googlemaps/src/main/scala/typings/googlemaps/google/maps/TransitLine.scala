@@ -28,7 +28,6 @@ object TransitLine {
     vehicle: TransitVehicle
   ): TransitLine = {
     val __obj = js.Dynamic.literal(agencies = agencies.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], short_name = short_name.asInstanceOf[js.Any], text_color = text_color.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], vehicle = vehicle.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TransitLine]
   }
 }

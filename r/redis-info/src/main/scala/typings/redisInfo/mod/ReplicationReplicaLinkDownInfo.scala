@@ -14,7 +14,6 @@ object ReplicationReplicaLinkDownInfo {
   @scala.inline
   def apply(master_link_down_since_seconds: String, master_link_status: DOWN): ReplicationReplicaLinkDownInfo = {
     val __obj = js.Dynamic.literal(master_link_down_since_seconds = master_link_down_since_seconds.asInstanceOf[js.Any], master_link_status = master_link_status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReplicationReplicaLinkDownInfo]
   }
 }

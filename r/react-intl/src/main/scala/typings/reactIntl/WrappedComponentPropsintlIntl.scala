@@ -14,7 +14,6 @@ object WrappedComponentPropsintlIntl {
   @scala.inline
   def apply(intl: IntlShape): WrappedComponentPropsintlIntl = {
     val __obj = js.Dynamic.literal(intl = intl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WrappedComponentPropsintlIntl]
   }
 }

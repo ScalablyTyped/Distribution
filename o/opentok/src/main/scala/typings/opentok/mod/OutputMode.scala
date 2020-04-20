@@ -12,10 +12,8 @@ trait OutputMode extends js.Object
 
 object OutputMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def composed: typings.opentok.opentokStrings.composed = "composed".asInstanceOf[typings.opentok.opentokStrings.composed]
   @scala.inline
-  def composed: typings.opentok.opentokStrings.composed = this.cast("composed")
-  @scala.inline
-  def individual: typings.opentok.opentokStrings.individual = this.cast("individual")
+  def individual: typings.opentok.opentokStrings.individual = "individual".asInstanceOf[typings.opentok.opentokStrings.individual]
 }
 

@@ -42,7 +42,6 @@ object ImportSpecifier {
   @scala.inline
   def apply(d: Double, e: Double, s: Double, se: Double, ss: Double): ImportSpecifier = {
     val __obj = js.Dynamic.literal(d = d.asInstanceOf[js.Any], e = e.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], se = se.asInstanceOf[js.Any], ss = ss.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ImportSpecifier]
   }
 }

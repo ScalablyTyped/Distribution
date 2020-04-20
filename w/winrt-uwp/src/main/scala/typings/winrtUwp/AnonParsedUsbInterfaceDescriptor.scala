@@ -14,7 +14,6 @@ object AnonParsedUsbInterfaceDescriptor {
   @scala.inline
   def apply(parsed: UsbInterfaceDescriptor, returnValue: Boolean): AnonParsedUsbInterfaceDescriptor = {
     val __obj = js.Dynamic.literal(parsed = parsed.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonParsedUsbInterfaceDescriptor]
   }
 }

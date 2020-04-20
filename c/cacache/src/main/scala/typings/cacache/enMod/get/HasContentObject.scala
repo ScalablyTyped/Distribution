@@ -14,7 +14,6 @@ object HasContentObject {
   @scala.inline
   def apply(size: Double, sri: AnonAlgorithm): HasContentObject = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], sri = sri.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HasContentObject]
   }
 }

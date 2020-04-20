@@ -20,7 +20,6 @@ object DocumentAttribute {
   @scala.inline
   def apply(Key: DocumentAttributeKey, Value: DocumentAttributeValue): DocumentAttribute = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DocumentAttribute]
   }
 }

@@ -27,7 +27,6 @@ object AnonFromAuthHeader {
     fromUrlQueryParameter: String => JwtFromRequestFunction
   ): AnonFromAuthHeader = {
     val __obj = js.Dynamic.literal(fromAuthHeader = js.Any.fromFunction0(fromAuthHeader), fromAuthHeaderAsBearerToken = js.Any.fromFunction0(fromAuthHeaderAsBearerToken), fromAuthHeaderWithScheme = js.Any.fromFunction1(fromAuthHeaderWithScheme), fromBodyField = js.Any.fromFunction1(fromBodyField), fromExtractors = js.Any.fromFunction1(fromExtractors), fromHeader = js.Any.fromFunction1(fromHeader), fromUrlQueryParameter = js.Any.fromFunction1(fromUrlQueryParameter))
-  
     __obj.asInstanceOf[AnonFromAuthHeader]
   }
 }

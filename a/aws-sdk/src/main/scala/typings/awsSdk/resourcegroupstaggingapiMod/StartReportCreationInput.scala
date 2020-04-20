@@ -16,7 +16,6 @@ object StartReportCreationInput {
   @scala.inline
   def apply(S3Bucket: S3Bucket): StartReportCreationInput = {
     val __obj = js.Dynamic.literal(S3Bucket = S3Bucket.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StartReportCreationInput]
   }
 }

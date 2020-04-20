@@ -31,7 +31,6 @@ object PageRenderCompleteEventArgs {
   @scala.inline
   def apply(pageName: String, success: Boolean): PageRenderCompleteEventArgs = {
     val __obj = js.Dynamic.literal(pageName = pageName.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PageRenderCompleteEventArgs]
   }
 }

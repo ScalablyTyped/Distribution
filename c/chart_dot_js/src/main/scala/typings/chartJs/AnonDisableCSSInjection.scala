@@ -12,7 +12,6 @@ object AnonDisableCSSInjection {
   @scala.inline
   def apply(disableCSSInjection: Boolean): AnonDisableCSSInjection = {
     val __obj = js.Dynamic.literal(disableCSSInjection = disableCSSInjection.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDisableCSSInjection]
   }
 }

@@ -25,7 +25,6 @@ object PickImplmockResponseAsync {
     ]) | `false`
   ): PickImplmockResponseAsync = {
     val __obj = js.Dynamic.literal(mockResponseAsync = mockResponseAsync.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplmockResponseAsync]
   }
 }

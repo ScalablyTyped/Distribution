@@ -1,7 +1,7 @@
 
 # Scala.js typings for graphql-relay
 
-Typings are for version 0.4
+Typings are for version 0.6
 
 ## Library description:
 A library to help construct a graphql-js server supporting react-relay.

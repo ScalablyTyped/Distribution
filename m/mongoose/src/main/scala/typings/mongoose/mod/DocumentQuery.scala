@@ -245,23 +245,27 @@ trait DocumentQuery[T, DocType /* <: Document */, QueryHelpers] extends mquery {
     */
   def findOneAndUpdate(): (DocumentQuery[DocType | Null, DocType, QueryHelpers]) with QueryHelpers = js.native
   def findOneAndUpdate(callback: js.Function2[/* err */ js.Any, /* doc */ DocType | Null, Unit]): (DocumentQuery[DocType | Null, DocType, QueryHelpers]) with QueryHelpers = js.native
-  def findOneAndUpdate(query: FilterQuery[DocType], update: js.Any): (DocumentQuery[DocType | Null, DocType, QueryHelpers]) with QueryHelpers = js.native
+  def findOneAndUpdate(query: FilterQuery[DocType], update: UpdateQuery[DocType]): (DocumentQuery[DocType | Null, DocType, QueryHelpers]) with QueryHelpers = js.native
   def findOneAndUpdate(
     query: FilterQuery[DocType],
-    update: js.Any,
+    update: UpdateQuery[DocType],
     callback: js.Function3[/* err */ js.Any, /* doc */ DocType | Null, /* res */ js.Any, Unit]
   ): (DocumentQuery[DocType | Null, DocType, QueryHelpers]) with QueryHelpers = js.native
-  def findOneAndUpdate(query: FilterQuery[DocType], update: js.Any, options: QueryFindOneAndUpdateOptions): (DocumentQuery[DocType | Null, DocType, QueryHelpers]) with QueryHelpers = js.native
+  def findOneAndUpdate(query: FilterQuery[DocType], update: UpdateQuery[DocType], options: QueryFindOneAndUpdateOptions): (DocumentQuery[DocType | Null, DocType, QueryHelpers]) with QueryHelpers = js.native
   def findOneAndUpdate(
     query: FilterQuery[DocType],
-    update: js.Any,
+    update: UpdateQuery[DocType],
     options: QueryFindOneAndUpdateOptions,
     callback: js.Function3[/* err */ js.Any, /* doc */ DocType | Null, /* res */ js.Any, Unit]
   ): (DocumentQuery[DocType | Null, DocType, QueryHelpers]) with QueryHelpers = js.native
-  def findOneAndUpdate(query: FilterQuery[DocType], update: js.Any, options: rawResulttrueQueryFindOneArrayFilters): (Query[FindAndModifyWriteOpResultObject[DocType | Null]]) with QueryHelpers = js.native
   def findOneAndUpdate(
     query: FilterQuery[DocType],
-    update: js.Any,
+    update: UpdateQuery[DocType],
+    options: rawResulttrueQueryFindOneArrayFilters
+  ): (Query[FindAndModifyWriteOpResultObject[DocType | Null]]) with QueryHelpers = js.native
+  def findOneAndUpdate(
+    query: FilterQuery[DocType],
+    update: UpdateQuery[DocType],
     options: rawResulttrueQueryFindOneArrayFilters,
     callback: js.Function3[
       /* err */ js.Any, 
@@ -270,10 +274,10 @@ trait DocumentQuery[T, DocType /* <: Document */, QueryHelpers] extends mquery {
       Unit
     ]
   ): (Query[FindAndModifyWriteOpResultObject[DocType | Null]]) with QueryHelpers = js.native
-  def findOneAndUpdate(query: FilterQuery[DocType], update: js.Any, options: rawResulttrueupserttruene): Query[FindAndModifyWriteOpResultObject[DocType]] with QueryHelpers = js.native
+  def findOneAndUpdate(query: FilterQuery[DocType], update: UpdateQuery[DocType], options: rawResulttrueupserttruene): Query[FindAndModifyWriteOpResultObject[DocType]] with QueryHelpers = js.native
   def findOneAndUpdate(
     query: FilterQuery[DocType],
-    update: js.Any,
+    update: UpdateQuery[DocType],
     options: rawResulttrueupserttruene,
     callback: js.Function3[
       /* err */ js.Any, 
@@ -282,16 +286,16 @@ trait DocumentQuery[T, DocType /* <: Document */, QueryHelpers] extends mquery {
       Unit
     ]
   ): Query[FindAndModifyWriteOpResultObject[DocType]] with QueryHelpers = js.native
-  def findOneAndUpdate(query: FilterQuery[DocType], update: js.Any, options: upserttruenewtrueQueryFin): (DocumentQuery[DocType, DocType, QueryHelpers]) with QueryHelpers = js.native
+  def findOneAndUpdate(query: FilterQuery[DocType], update: UpdateQuery[DocType], options: upserttruenewtrueQueryFin): (DocumentQuery[DocType, DocType, QueryHelpers]) with QueryHelpers = js.native
   def findOneAndUpdate(
     query: FilterQuery[DocType],
-    update: js.Any,
+    update: UpdateQuery[DocType],
     options: upserttruenewtrueQueryFin,
     callback: js.Function3[/* err */ js.Any, /* doc */ DocType, /* res */ js.Any, Unit]
   ): (DocumentQuery[DocType, DocType, QueryHelpers]) with QueryHelpers = js.native
-  def findOneAndUpdate(update: js.Any): (DocumentQuery[DocType | Null, DocType, QueryHelpers]) with QueryHelpers = js.native
+  def findOneAndUpdate(update: UpdateQuery[DocType]): (DocumentQuery[DocType | Null, DocType, QueryHelpers]) with QueryHelpers = js.native
   def findOneAndUpdate(
-    update: js.Any,
+    update: UpdateQuery[DocType],
     callback: js.Function3[/* err */ js.Any, /* doc */ DocType | Null, /* res */ js.Any, Unit]
   ): (DocumentQuery[DocType | Null, DocType, QueryHelpers]) with QueryHelpers = js.native
   /**
@@ -622,21 +626,24 @@ trait DocumentQuery[T, DocType /* <: Document */, QueryHelpers] extends mquery {
     */
   def update(): Query[Double] with QueryHelpers = js.native
   def update(callback: js.Function2[/* err */ js.Any, /* affectedRows */ Double, Unit]): Query[Double] with QueryHelpers = js.native
-  def update(criteria: FilterQuery[DocType], doc: js.Any): Query[Double] with QueryHelpers = js.native
+  def update(criteria: FilterQuery[DocType], doc: UpdateQuery[DocType]): Query[Double] with QueryHelpers = js.native
   def update(
     criteria: FilterQuery[DocType],
-    doc: js.Any,
+    doc: UpdateQuery[DocType],
     callback: js.Function2[/* err */ js.Any, /* affectedRows */ Double, Unit]
   ): Query[Double] with QueryHelpers = js.native
-  def update(criteria: FilterQuery[DocType], doc: js.Any, options: QueryUpdateOptions): Query[Double] with QueryHelpers = js.native
+  def update(criteria: FilterQuery[DocType], doc: UpdateQuery[DocType], options: QueryUpdateOptions): Query[Double] with QueryHelpers = js.native
   def update(
     criteria: FilterQuery[DocType],
-    doc: js.Any,
+    doc: UpdateQuery[DocType],
     options: QueryUpdateOptions,
     callback: js.Function2[/* err */ js.Any, /* affectedRows */ Double, Unit]
   ): Query[Double] with QueryHelpers = js.native
-  def update(doc: js.Any): Query[Double] with QueryHelpers = js.native
-  def update(doc: js.Any, callback: js.Function2[/* err */ js.Any, /* affectedRows */ Double, Unit]): Query[Double] with QueryHelpers = js.native
+  def update(doc: UpdateQuery[DocType]): Query[Double] with QueryHelpers = js.native
+  def update(
+    doc: UpdateQuery[DocType],
+    callback: js.Function2[/* err */ js.Any, /* affectedRows */ Double, Unit]
+  ): Query[Double] with QueryHelpers = js.native
   /** Specifies a path for use with chaining. */
   def where(): this.type = js.native
   def where(path: String): this.type = js.native

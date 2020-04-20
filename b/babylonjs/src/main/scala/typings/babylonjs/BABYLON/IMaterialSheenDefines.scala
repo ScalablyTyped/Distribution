@@ -23,7 +23,6 @@ object IMaterialSheenDefines {
     _areTexturesDirty: Boolean
   ): IMaterialSheenDefines = {
     val __obj = js.Dynamic.literal(SHEEN = SHEEN.asInstanceOf[js.Any], SHEEN_LINKWITHALBEDO = SHEEN_LINKWITHALBEDO.asInstanceOf[js.Any], SHEEN_TEXTURE = SHEEN_TEXTURE.asInstanceOf[js.Any], SHEEN_TEXTUREDIRECTUV = SHEEN_TEXTUREDIRECTUV.asInstanceOf[js.Any], _areTexturesDirty = _areTexturesDirty.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMaterialSheenDefines]
   }
 }

@@ -13,7 +13,6 @@ object User {
   @scala.inline
   def apply(GID: Double, UID: Double): User = {
     val __obj = js.Dynamic.literal(GID = GID.asInstanceOf[js.Any], UID = UID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[User]
   }
 }

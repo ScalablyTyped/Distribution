@@ -18,7 +18,6 @@ object zipkinJavascriptOpentracing {
     startSpan: (js.Any, /* repeated */ js.Any) => js.Any
   ): zipkinJavascriptOpentracing = {
     val __obj = js.Dynamic.literal(extract = js.Any.fromFunction2(extract), inject = js.Any.fromFunction3(inject), startSpan = js.Any.fromFunction2(startSpan))
-  
     __obj.asInstanceOf[zipkinJavascriptOpentracing]
   }
 }

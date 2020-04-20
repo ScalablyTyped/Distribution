@@ -16,7 +16,6 @@ object ChangeResourceRecordSetsResponse {
   @scala.inline
   def apply(ChangeInfo: ChangeInfo): ChangeResourceRecordSetsResponse = {
     val __obj = js.Dynamic.literal(ChangeInfo = ChangeInfo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChangeResourceRecordSetsResponse]
   }
 }

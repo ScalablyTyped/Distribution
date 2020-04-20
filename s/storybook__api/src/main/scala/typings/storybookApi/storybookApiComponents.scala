@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 
 object storybookApiComponents extends storybookApiProps {
   @scala.inline
-  def Consumer: ComponentType[ConsumerProps[SubState, Combo]] = js.constructorOf[typings.storybookApi.mod.Consumer].asInstanceOf[typings.react.mod.ComponentType[ConsumerProps[typings.storybookApi.mod.SubState, typings.storybookApi.mod.Combo]]]
+  def Consumer: ComponentType[ConsumerProps[SubState, Combo]] = js.constructorOf[typings.storybookApi.mod.Consumer].asInstanceOf[ComponentType[ConsumerProps[SubState, Combo]]]
   @scala.inline
-  def Provider: ComponentType[ProviderProps] = js.constructorOf[typings.storybookApi.mod.Provider].asInstanceOf[typings.react.mod.ComponentType[ProviderProps]]
+  def Provider: ComponentType[ProviderProps] = js.constructorOf[typings.storybookApi.mod.Provider].asInstanceOf[ComponentType[ProviderProps]]
 }
 

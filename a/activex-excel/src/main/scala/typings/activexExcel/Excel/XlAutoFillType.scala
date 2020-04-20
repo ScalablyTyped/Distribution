@@ -32,28 +32,26 @@ trait XlAutoFillType extends js.Object
 
 object XlAutoFillType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlFillCopy: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlFillCopy: `1` = this.cast(1)
+  def xlFillDays: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xlFillDays: `5` = this.cast(5)
+  def xlFillDefault: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def xlFillDefault: `0` = this.cast(0)
+  def xlFillFormats: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlFillFormats: `3` = this.cast(3)
+  def xlFillMonths: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def xlFillMonths: `7` = this.cast(7)
+  def xlFillSeries: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlFillSeries: `2` = this.cast(2)
+  def xlFillValues: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlFillValues: `4` = this.cast(4)
+  def xlFillWeekdays: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def xlFillWeekdays: `6` = this.cast(6)
+  def xlFillYears: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def xlFillYears: `8` = this.cast(8)
+  def xlGrowthTrend: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def xlGrowthTrend: `10` = this.cast(10)
-  @scala.inline
-  def xlLinearTrend: `9` = this.cast(9)
+  def xlLinearTrend: `9` = 9.asInstanceOf[`9`]
 }
 

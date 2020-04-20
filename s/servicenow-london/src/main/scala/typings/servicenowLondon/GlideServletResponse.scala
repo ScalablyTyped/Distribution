@@ -14,7 +14,6 @@ object GlideServletResponse {
   @scala.inline
   def apply(setContentType: String => Unit, setHeader: (String, String) => Unit, setStatus: Double => Unit): GlideServletResponse = {
     val __obj = js.Dynamic.literal(setContentType = js.Any.fromFunction1(setContentType), setHeader = js.Any.fromFunction2(setHeader), setStatus = js.Any.fromFunction1(setStatus))
-  
     __obj.asInstanceOf[GlideServletResponse]
   }
 }

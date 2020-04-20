@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation._
 
 /**
 		 * Use a keyboard suitable for entering names and phone numbers, with the pad keyboard layout.
+		 * @deprecated Use [Titanium.UI.KEYBOARD_TYPE_NAMEPHONE_PAD](Titanium.UI.KEYBOARD_TYPE_NAMEPHONE_PAD) instead.
 		 */
 @JSGlobal("Titanium.UI.KEYBOARD_NAMEPHONE_PAD")
 @js.native
-object KEYBOARD_NAMEPHONE_PAD extends TopLevel[Double]
+object KEYBOARD_NAMEPHONE_PAD
+  extends TopLevel[scala.Nothing]
 

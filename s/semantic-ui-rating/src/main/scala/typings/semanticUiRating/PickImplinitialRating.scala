@@ -13,7 +13,6 @@ object PickImplinitialRating {
   @scala.inline
   def apply(initialRating: Double): PickImplinitialRating = {
     val __obj = js.Dynamic.literal(initialRating = initialRating.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplinitialRating]
   }
 }

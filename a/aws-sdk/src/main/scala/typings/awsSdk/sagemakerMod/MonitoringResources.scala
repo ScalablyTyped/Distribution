@@ -16,7 +16,6 @@ object MonitoringResources {
   @scala.inline
   def apply(ClusterConfig: MonitoringClusterConfig): MonitoringResources = {
     val __obj = js.Dynamic.literal(ClusterConfig = ClusterConfig.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MonitoringResources]
   }
 }

@@ -33,7 +33,7 @@ class PluginList_ protected () extends Widget {
   /**
     * A signal emitted when a list user interaction happens.
     */
-  def changed(): ISignal[this.type, Unit] = js.native
+  def changed: ISignal[this.type, Unit] = js.native
   /**
     * Handle the DOM events for the widget.
     *
@@ -48,11 +48,11 @@ class PluginList_ protected () extends Widget {
   /**
     * The selection value of the plugin list.
     */
-  def scrollTop(): js.UndefOr[Double] = js.native
+  def scrollTop: js.UndefOr[Double] = js.native
   /**
     * The selection value of the plugin list.
     */
-  def selection(): String = js.native
+  def selection: String = js.native
   def selection(selection: String): js.Any = js.native
 }
 

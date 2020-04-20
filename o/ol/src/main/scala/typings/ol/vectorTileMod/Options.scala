@@ -15,7 +15,9 @@ trait Options extends js.Object {
   var extent: js.UndefOr[Extent] = js.undefined
   var map: js.UndefOr[typings.ol.pluggableMapMod.default] = js.undefined
   var maxResolution: js.UndefOr[Double] = js.undefined
+  var maxZoom: js.UndefOr[Double] = js.undefined
   var minResolution: js.UndefOr[Double] = js.undefined
+  var minZoom: js.UndefOr[Double] = js.undefined
   var opacity: js.UndefOr[Double] = js.undefined
   var preload: js.UndefOr[Double] = js.undefined
   var renderBuffer: js.UndefOr[Double] = js.undefined
@@ -38,7 +40,9 @@ object Options {
     extent: Extent = null,
     map: typings.ol.pluggableMapMod.default = null,
     maxResolution: Int | Double = null,
+    maxZoom: Int | Double = null,
     minResolution: Int | Double = null,
+    minZoom: Int | Double = null,
     opacity: Int | Double = null,
     preload: Int | Double = null,
     renderBuffer: Int | Double = null,
@@ -58,7 +62,9 @@ object Options {
     if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
     if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
     if (maxResolution != null) __obj.updateDynamic("maxResolution")(maxResolution.asInstanceOf[js.Any])
+    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
     if (minResolution != null) __obj.updateDynamic("minResolution")(minResolution.asInstanceOf[js.Any])
+    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (preload != null) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
     if (renderBuffer != null) __obj.updateDynamic("renderBuffer")(renderBuffer.asInstanceOf[js.Any])

@@ -17,7 +17,6 @@ object DeploymentSchema {
   @scala.inline
   def apply(id: Double, iid: Double, ref: String, sha: String, user: UserSchema): DeploymentSchema = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], iid = iid.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeploymentSchema]
   }
 }

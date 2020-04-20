@@ -12,7 +12,6 @@ object AsObject {
   @scala.inline
   def apply(eventsList: js.Array[typings.libraCore.eventsPbMod.Event.AsObject]): AsObject = {
     val __obj = js.Dynamic.literal(eventsList = eventsList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AsObject]
   }
 }

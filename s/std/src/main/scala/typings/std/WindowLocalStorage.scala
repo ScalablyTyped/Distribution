@@ -12,7 +12,6 @@ object WindowLocalStorage {
   @scala.inline
   def apply(localStorage: Storage): WindowLocalStorage = {
     val __obj = js.Dynamic.literal(localStorage = localStorage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WindowLocalStorage]
   }
 }

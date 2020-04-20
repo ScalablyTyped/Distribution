@@ -12,7 +12,6 @@ object SjclArrayBufferModes {
   @scala.inline
   def apply(ccm: SjclArrayBufferCCMMode): SjclArrayBufferModes = {
     val __obj = js.Dynamic.literal(ccm = ccm.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SjclArrayBufferModes]
   }
 }

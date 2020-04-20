@@ -17,7 +17,6 @@ object ThemeColor {
   @scala.inline
   def apply(getColorType: () => ColorType, getThemeColorType: () => ThemeColorType): ThemeColor = {
     val __obj = js.Dynamic.literal(getColorType = js.Any.fromFunction0(getColorType), getThemeColorType = js.Any.fromFunction0(getThemeColorType))
-  
     __obj.asInstanceOf[ThemeColor]
   }
 }

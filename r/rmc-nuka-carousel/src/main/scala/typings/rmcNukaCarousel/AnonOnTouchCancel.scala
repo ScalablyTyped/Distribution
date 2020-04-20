@@ -20,7 +20,6 @@ object AnonOnTouchCancel {
     onTouchStart: js.Any => Unit
   ): AnonOnTouchCancel = {
     val __obj = js.Dynamic.literal(onTouchCancel = js.Any.fromFunction1(onTouchCancel), onTouchEnd = js.Any.fromFunction1(onTouchEnd), onTouchMove = js.Any.fromFunction1(onTouchMove), onTouchStart = js.Any.fromFunction1(onTouchStart))
-  
     __obj.asInstanceOf[AnonOnTouchCancel]
   }
 }

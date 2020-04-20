@@ -12,7 +12,6 @@ object SkParagraphBuilderFactory {
   @scala.inline
   def apply(Make: (SkParagraphStyle, SkFontManager) => SkParagraphBuilder): SkParagraphBuilderFactory = {
     val __obj = js.Dynamic.literal(Make = js.Any.fromFunction2(Make))
-  
     __obj.asInstanceOf[SkParagraphBuilderFactory]
   }
 }

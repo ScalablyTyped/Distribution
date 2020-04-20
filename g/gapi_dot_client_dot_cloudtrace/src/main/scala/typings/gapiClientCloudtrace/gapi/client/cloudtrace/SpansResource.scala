@@ -15,7 +15,6 @@ object SpansResource {
   @scala.inline
   def apply(create: AnonAccesstoken => Request_[Span]): SpansResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
-  
     __obj.asInstanceOf[SpansResource]
   }
 }

@@ -33,7 +33,7 @@ object ReconnectEventOpts {
     start: Double
   ): ReconnectEventOpts = {
     val __obj = js.Dynamic.literal(attempt = attempt.asInstanceOf[js.Any], backoff = backoff.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], factor = factor.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], retries = retries.asInstanceOf[js.Any], scheduled = scheduled.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("reconnect timeout")(`reconnect timeout`.asInstanceOf[js.Any])
+    __obj.updateDynamic("reconnect timeout")((`reconnect timeout`).asInstanceOf[js.Any])
     __obj.asInstanceOf[ReconnectEventOpts]
   }
 }

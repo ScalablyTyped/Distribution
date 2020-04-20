@@ -20,7 +20,6 @@ object CreateTagsRequest {
   @scala.inline
   def apply(configurationIds: ConfigurationIdList, tags: TagSet): CreateTagsRequest = {
     val __obj = js.Dynamic.literal(configurationIds = configurationIds.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateTagsRequest]
   }
 }

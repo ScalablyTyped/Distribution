@@ -15,7 +15,6 @@ object AnonArrowStart {
   @scala.inline
   def apply(arrowStart: Point, sourceIntersection: Point, targetIntersection: Point): AnonArrowStart = {
     val __obj = js.Dynamic.literal(arrowStart = arrowStart.asInstanceOf[js.Any], sourceIntersection = sourceIntersection.asInstanceOf[js.Any], targetIntersection = targetIntersection.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonArrowStart]
   }
 }

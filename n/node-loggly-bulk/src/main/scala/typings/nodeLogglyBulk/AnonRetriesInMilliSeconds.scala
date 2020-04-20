@@ -13,7 +13,6 @@ object AnonRetriesInMilliSeconds {
   @scala.inline
   def apply(retriesInMilliSeconds: Double, size: Double): AnonRetriesInMilliSeconds = {
     val __obj = js.Dynamic.literal(retriesInMilliSeconds = retriesInMilliSeconds.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRetriesInMilliSeconds]
   }
 }

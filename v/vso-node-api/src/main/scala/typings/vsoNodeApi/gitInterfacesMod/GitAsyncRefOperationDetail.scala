@@ -42,7 +42,6 @@ object GitAsyncRefOperationDetail {
     timedout: Boolean
   ): GitAsyncRefOperationDetail = {
     val __obj = js.Dynamic.literal(conflict = conflict.asInstanceOf[js.Any], currentCommitId = currentCommitId.asInstanceOf[js.Any], failureMessage = failureMessage.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], timedout = timedout.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GitAsyncRefOperationDetail]
   }
 }

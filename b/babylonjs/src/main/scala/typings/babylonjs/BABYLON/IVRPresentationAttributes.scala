@@ -19,7 +19,6 @@ object IVRPresentationAttributes {
   @scala.inline
   def apply(foveationLevel: Double, highRefreshRate: Boolean): IVRPresentationAttributes = {
     val __obj = js.Dynamic.literal(foveationLevel = foveationLevel.asInstanceOf[js.Any], highRefreshRate = highRefreshRate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IVRPresentationAttributes]
   }
 }

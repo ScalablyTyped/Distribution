@@ -19,7 +19,6 @@ object IRenderer {
   @scala.inline
   def apply(createItemNode: (IItem, TypeMap, js.Array[String]) => HTMLLIElement): IRenderer = {
     val __obj = js.Dynamic.literal(createItemNode = js.Any.fromFunction3(createItemNode))
-  
     __obj.asInstanceOf[IRenderer]
   }
 }

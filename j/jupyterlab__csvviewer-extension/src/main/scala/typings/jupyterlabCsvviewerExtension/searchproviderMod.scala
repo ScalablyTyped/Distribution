@@ -55,7 +55,7 @@ object searchproviderMod extends js.Object {
       * Signal indicating that something in the search has changed, so the UI should update
       */
     @JSName("changed")
-    def changed_MCSVSearchProvider(): ISignal[this.type, Unit] = js.native
+    def changed_MCSVSearchProvider: ISignal[this.type, Unit] = js.native
     /**
       * Clears state of a search provider to prepare for startQuery to be called
       * in order to start a new query or refresh an existing one.

@@ -22,7 +22,6 @@ object IMeasure {
   @scala.inline
   def apply(high: IPoint, low: IPoint): IMeasure = {
     val __obj = js.Dynamic.literal(high = high.asInstanceOf[js.Any], low = low.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMeasure]
   }
 }

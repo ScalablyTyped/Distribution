@@ -13,7 +13,6 @@ object PickImplreturnScroll {
   @scala.inline
   def apply(returnScroll: Boolean): PickImplreturnScroll = {
     val __obj = js.Dynamic.literal(returnScroll = returnScroll.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplreturnScroll]
   }
 }

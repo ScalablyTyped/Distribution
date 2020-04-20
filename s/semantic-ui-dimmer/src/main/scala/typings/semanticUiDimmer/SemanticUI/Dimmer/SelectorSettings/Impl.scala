@@ -23,7 +23,6 @@ object Impl {
   @scala.inline
   def apply(content: String, dimmable: String, dimmer: String): Impl = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], dimmable = dimmable.asInstanceOf[js.Any], dimmer = dimmer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Impl]
   }
 }

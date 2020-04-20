@@ -48,12 +48,12 @@ object tabButtonMod extends js.Object {
     var tab: js.UndefOr[String] = js.native
     @JSName("componentWillLoad")
     def componentWillLoad_MTabButton(): Unit = js.native
-    /* private */ def hasIcon(): js.Any = js.native
-    /* private */ def hasLabel(): js.Any = js.native
+    /* private */ def hasIcon: js.Any = js.native
+    /* private */ def hasLabel: js.Any = js.native
     def onTabBarChanged(ev: CustomEvent[TabBarChangedEventDetail]): Unit = js.native
     @JSName("render")
     def render_MTabButton(): js.Any = js.native
-    /* private */ def tabIndex(): js.Any = js.native
+    /* private */ def tabIndex: js.Any = js.native
   }
   
 }

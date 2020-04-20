@@ -39,7 +39,6 @@ object ExtensionCategory {
     parentCategoryName: String
   ): ExtensionCategory = {
     val __obj = js.Dynamic.literal(associatedProducts = associatedProducts.asInstanceOf[js.Any], categoryId = categoryId.asInstanceOf[js.Any], categoryName = categoryName.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], languageTitles = languageTitles.asInstanceOf[js.Any], parentCategoryName = parentCategoryName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExtensionCategory]
   }
 }

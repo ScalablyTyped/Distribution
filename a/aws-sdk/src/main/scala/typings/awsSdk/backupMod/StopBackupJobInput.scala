@@ -16,7 +16,6 @@ object StopBackupJobInput {
   @scala.inline
   def apply(BackupJobId: String): StopBackupJobInput = {
     val __obj = js.Dynamic.literal(BackupJobId = BackupJobId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopBackupJobInput]
   }
 }

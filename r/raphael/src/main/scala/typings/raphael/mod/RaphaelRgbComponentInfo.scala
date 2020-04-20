@@ -19,7 +19,6 @@ object RaphaelRgbComponentInfo {
   @scala.inline
   def apply(b: Double, g: Double, hex: String, r: Double): RaphaelRgbComponentInfo = {
     val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], hex = hex.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RaphaelRgbComponentInfo]
   }
 }

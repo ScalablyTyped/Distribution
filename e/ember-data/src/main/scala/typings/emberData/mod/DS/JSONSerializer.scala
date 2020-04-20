@@ -101,22 +101,22 @@ class JSONSerializer () extends Serializer {
     * `serializeAttribute` can be used to customize how `DS.attr`
     * properties are serialized
     */
-  def serializeAttribute[K /* <: String */](snapshot: Snapshot[K], json: js.Object, key: String, attribute: js.Object): js.Any = js.native
+  def serializeAttribute[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](snapshot: Snapshot[K], json: js.Object, key: String, attribute: js.Object): js.Any = js.native
   /**
     * `serializeBelongsTo` can be used to customize how `DS.belongsTo`
     * properties are serialized.
     */
-  def serializeBelongsTo[K /* <: String */](snapshot: Snapshot[K], json: js.Object, relationship: js.Object): js.Any = js.native
+  def serializeBelongsTo[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](snapshot: Snapshot[K], json: js.Object, relationship: js.Object): js.Any = js.native
   /**
     * `serializeHasMany` can be used to customize how `DS.hasMany`
     * properties are serialized.
     */
-  def serializeHasMany[K /* <: String */](snapshot: Snapshot[K], json: js.Object, relationship: js.Object): js.Any = js.native
+  def serializeHasMany[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](snapshot: Snapshot[K], json: js.Object, relationship: js.Object): js.Any = js.native
   /**
     * serializeId can be used to customize how id is serialized
     * For example, your server may expect integer datatype of id
     */
-  def serializeId[K /* <: String */](snapshot: Snapshot[K], json: js.Object, primaryKey: String): js.Any = js.native
+  def serializeId[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](snapshot: Snapshot[K], json: js.Object, primaryKey: String): js.Any = js.native
   /**
     * You can use this method to customize how a serialized record is added to the complete
     * JSON hash to be sent to the server. By default the JSON Serializer does not namespace
@@ -125,12 +125,12 @@ class JSONSerializer () extends Serializer {
     * Otherwise you can override this method to customize how the record is added to the hash.
     * The hash property should be modified by reference.
     */
-  def serializeIntoHash[K /* <: String */](
+  def serializeIntoHash[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](
     hash: js.Object,
     typeClass: /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any,
     snapshot: Snapshot[K]
   ): js.Any = js.native
-  def serializeIntoHash[K /* <: String */](
+  def serializeIntoHash[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](
     hash: js.Object,
     typeClass: /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any,
     snapshot: Snapshot[K],
@@ -142,10 +142,10 @@ class JSONSerializer () extends Serializer {
     * `{ polymorphic: true }` is pass as the second argument to the
     * `DS.belongsTo` function.
     */
-  def serializePolymorphicType[K /* <: String */](snapshot: Snapshot[K], json: js.Object, relationship: js.Object): js.Any = js.native
+  def serializePolymorphicType[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](snapshot: Snapshot[K], json: js.Object, relationship: js.Object): js.Any = js.native
   /**
     * Check if the given hasMany relationship should be serialized
     */
-  def shouldSerializeHasMany[K /* <: String */](snapshot: Snapshot[K], key: String, relationshipType: String): Boolean = js.native
+  def shouldSerializeHasMany[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](snapshot: Snapshot[K], key: String, relationshipType: String): Boolean = js.native
 }
 

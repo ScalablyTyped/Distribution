@@ -18,7 +18,6 @@ object PlacementBuilder {
     withUrl: String => PlacementBuilder[Placement]
   ): PlacementBuilder[Placement] = {
     val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), exclude = js.Any.fromFunction0(exclude), withCpc = js.Any.fromFunction1(withCpc), withCpm = js.Any.fromFunction1(withCpm), withUrl = js.Any.fromFunction1(withUrl))
-  
     __obj.asInstanceOf[PlacementBuilder[Placement]]
   }
 }

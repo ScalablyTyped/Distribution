@@ -65,7 +65,6 @@ object mouseButtons {
     isRight: Event_ => Boolean
   ): mouseButtons = {
     val __obj = js.Dynamic.literal(LEFT = LEFT.asInstanceOf[js.Any], MIDDLE = MIDDLE.asInstanceOf[js.Any], RIGHT = RIGHT.asInstanceOf[js.Any], isButton = js.Any.fromFunction2(isButton), isLeft = js.Any.fromFunction1(isLeft), isMiddle = js.Any.fromFunction1(isMiddle), isRight = js.Any.fromFunction1(isRight))
-  
     __obj.asInstanceOf[mouseButtons]
   }
 }

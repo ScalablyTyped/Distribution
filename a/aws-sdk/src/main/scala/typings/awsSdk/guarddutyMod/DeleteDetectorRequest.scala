@@ -16,7 +16,6 @@ object DeleteDetectorRequest {
   @scala.inline
   def apply(DetectorId: DetectorId): DeleteDetectorRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteDetectorRequest]
   }
 }

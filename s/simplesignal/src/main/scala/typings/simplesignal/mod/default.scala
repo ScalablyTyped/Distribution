@@ -14,7 +14,7 @@ class default[F /* <: js.Function */] () extends SimpleSignal[F] {
   /* CompleteClass */
   override def dispatch(args: js.Any*): Unit = js.native
   /* CompleteClass */
-  override def numItems(): Double = js.native
+  override def numItems: Double = js.native
   /* CompleteClass */
   override def remove(func: F): Boolean = js.native
   /* CompleteClass */

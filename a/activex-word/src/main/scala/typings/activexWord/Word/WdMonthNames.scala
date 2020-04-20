@@ -16,12 +16,10 @@ trait WdMonthNames extends js.Object
 
 object WdMonthNames {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdMonthNamesArabic: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdMonthNamesArabic: `0` = this.cast(0)
+  def wdMonthNamesEnglish: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdMonthNamesEnglish: `1` = this.cast(1)
-  @scala.inline
-  def wdMonthNamesFrench: `2` = this.cast(2)
+  def wdMonthNamesFrench: `2` = 2.asInstanceOf[`2`]
 }
 

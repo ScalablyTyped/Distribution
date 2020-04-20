@@ -14,7 +14,6 @@ object PickImplfullTextSearch {
   @scala.inline
   def apply(fullTextSearch: Boolean | exact): PickImplfullTextSearch = {
     val __obj = js.Dynamic.literal(fullTextSearch = fullTextSearch.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplfullTextSearch]
   }
 }

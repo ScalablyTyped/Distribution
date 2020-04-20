@@ -23,6 +23,6 @@ class UrlSegmentGroup protected () extends js.Object {
   /** Whether the segment has child segments */
   def hasChildren(): Boolean = js.native
   /** Number of child segments */
-  def numberOfChildren(): Double = js.native
+  def numberOfChildren: Double = js.native
 }
 

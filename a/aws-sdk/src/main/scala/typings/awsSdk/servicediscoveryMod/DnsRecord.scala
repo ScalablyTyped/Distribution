@@ -20,7 +20,6 @@ object DnsRecord {
   @scala.inline
   def apply(TTL: RecordTTL, Type: RecordType): DnsRecord = {
     val __obj = js.Dynamic.literal(TTL = TTL.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DnsRecord]
   }
 }

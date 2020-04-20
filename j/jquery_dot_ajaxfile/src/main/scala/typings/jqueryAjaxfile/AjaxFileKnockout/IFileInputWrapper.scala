@@ -14,7 +14,6 @@ object IFileInputWrapper {
   @scala.inline
   def apply(fileSelected: () => Boolean, getElement: () => HTMLInputElement): IFileInputWrapper = {
     val __obj = js.Dynamic.literal(fileSelected = js.Any.fromFunction0(fileSelected), getElement = js.Any.fromFunction0(getElement))
-  
     __obj.asInstanceOf[IFileInputWrapper]
   }
 }

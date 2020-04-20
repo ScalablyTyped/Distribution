@@ -17,7 +17,6 @@ object TypeofextensionTypes {
   @scala.inline
   def apply(_internal_ : js.Any): TypeofextensionTypes = {
     val __obj = js.Dynamic.literal(_internal_ = _internal_.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofextensionTypes]
   }
 }

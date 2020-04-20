@@ -20,7 +20,6 @@ object AddHeaderAction {
   @scala.inline
   def apply(HeaderName: HeaderName, HeaderValue: HeaderValue): AddHeaderAction = {
     val __obj = js.Dynamic.literal(HeaderName = HeaderName.asInstanceOf[js.Any], HeaderValue = HeaderValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddHeaderAction]
   }
 }

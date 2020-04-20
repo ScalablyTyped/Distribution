@@ -7,18 +7,18 @@ import scala.scalajs.js.annotation._
 trait BatchUpdateValuesByDataFilterRequest extends js.Object {
   /**
     * The new values to apply to the spreadsheet.  If more than one range is
-    * matched by the specified DataFilter the specified values will be
-    * applied to all of those ranges.
+    * matched by the specified DataFilter the specified values are applied to
+    * all of those ranges.
     */
   var data: js.UndefOr[js.Array[DataFilterValueRange]] = js.undefined
   /**
     * Determines if the update response should include the values
     * of the cells that were updated. By default, responses
     * do not include the updated values. The `updatedData` field within
-    * each of the BatchUpdateValuesResponse.responses will contain
-    * the updated values. If the range to write was larger than than the range
-    * actually written, the response will include all values in the requested
-    * range (excluding trailing empty rows and columns).
+    * each of the BatchUpdateValuesResponse.responses contains the updated
+    * values. If the range to write was larger than the range actually written,
+    * the response includes all values in the requested range (excluding trailing
+    * empty rows and columns).
     */
   var includeValuesInResponse: js.UndefOr[Boolean] = js.undefined
   /**

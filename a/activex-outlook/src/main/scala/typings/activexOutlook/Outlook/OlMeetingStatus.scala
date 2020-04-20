@@ -20,16 +20,14 @@ trait OlMeetingStatus extends js.Object
 
 object OlMeetingStatus {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olMeeting: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olMeeting: `1` = this.cast(1)
+  def olMeetingCanceled: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def olMeetingCanceled: `5` = this.cast(5)
+  def olMeetingReceived: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def olMeetingReceived: `3` = this.cast(3)
+  def olMeetingReceivedAndCanceled: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def olMeetingReceivedAndCanceled: `7` = this.cast(7)
-  @scala.inline
-  def olNonMeeting: `0` = this.cast(0)
+  def olNonMeeting: `0` = 0.asInstanceOf[`0`]
 }
 

@@ -20,7 +20,6 @@ object AnonGraphemeLines {
     lines: js.Array[String]
   ): AnonGraphemeLines = {
     val __obj = js.Dynamic.literal(_unwrappedLines = _unwrappedLines.asInstanceOf[js.Any], graphemeLines = graphemeLines.asInstanceOf[js.Any], graphemeText = graphemeText.asInstanceOf[js.Any], lines = lines.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGraphemeLines]
   }
 }

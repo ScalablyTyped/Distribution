@@ -14,12 +14,10 @@ trait PaneBackgroundShapeValue extends js.Object
 
 object PaneBackgroundShapeValue {
   @scala.inline
-  def arc: typings.highcharts.highchartsStrings.arc = this.cast("arc")
+  def arc: typings.highcharts.highchartsStrings.arc = "arc".asInstanceOf[typings.highcharts.highchartsStrings.arc]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def circle: typings.highcharts.highchartsStrings.circle = "circle".asInstanceOf[typings.highcharts.highchartsStrings.circle]
   @scala.inline
-  def circle: typings.highcharts.highchartsStrings.circle = this.cast("circle")
-  @scala.inline
-  def solid: solid_ = this.cast("solid")
+  def solid: solid_ = "solid".asInstanceOf[solid_]
 }
 

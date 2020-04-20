@@ -21,7 +21,6 @@ object SerializedFunction {
   @scala.inline
   def apply(exportName: String, text: String): SerializedFunction = {
     val __obj = js.Dynamic.literal(exportName = exportName.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SerializedFunction]
   }
 }

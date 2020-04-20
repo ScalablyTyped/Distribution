@@ -18,7 +18,6 @@ object ConsumptionPreferences {
   @scala.inline
   def apply(consumption_preference_id: String, name: String, score: Double): ConsumptionPreferences = {
     val __obj = js.Dynamic.literal(consumption_preference_id = consumption_preference_id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConsumptionPreferences]
   }
 }

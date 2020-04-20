@@ -13,12 +13,10 @@ trait HashingScheme extends js.Object
 
 object HashingScheme {
   @scala.inline
-  def BoostHash: typings.pulsarClient.pulsarClientStrings.BoostHash = this.cast("BoostHash")
+  def BoostHash: typings.pulsarClient.pulsarClientStrings.BoostHash = "BoostHash".asInstanceOf[typings.pulsarClient.pulsarClientStrings.BoostHash]
   @scala.inline
-  def JavaStringHash: typings.pulsarClient.pulsarClientStrings.JavaStringHash = this.cast("JavaStringHash")
+  def JavaStringHash: typings.pulsarClient.pulsarClientStrings.JavaStringHash = "JavaStringHash".asInstanceOf[typings.pulsarClient.pulsarClientStrings.JavaStringHash]
   @scala.inline
-  def Murmur3_32Hash: typings.pulsarClient.pulsarClientStrings.Murmur3_32Hash = this.cast("Murmur3_32Hash")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Murmur3_32Hash: typings.pulsarClient.pulsarClientStrings.Murmur3_32Hash = "Murmur3_32Hash".asInstanceOf[typings.pulsarClient.pulsarClientStrings.Murmur3_32Hash]
 }
 

@@ -15,7 +15,6 @@ object AssociatedResource {
   @scala.inline
   def apply(list: AnonAssociation => Request_[Volumes]): AssociatedResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[AssociatedResource]
   }
 }

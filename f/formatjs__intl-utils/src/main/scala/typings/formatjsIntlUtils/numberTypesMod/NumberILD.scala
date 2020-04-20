@@ -27,7 +27,6 @@ object NumberILD {
     unitSymbols: Record[String, AnonUnitName]
   ): NumberILD = {
     val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], currencySymbols = currencySymbols.asInstanceOf[js.Any], decimal = decimal.asInstanceOf[js.Any], symbols = symbols.asInstanceOf[js.Any], unitSymbols = unitSymbols.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NumberILD]
   }
 }

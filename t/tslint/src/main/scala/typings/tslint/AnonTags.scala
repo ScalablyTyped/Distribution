@@ -13,7 +13,6 @@ object AnonTags {
   @scala.inline
   def apply(tags: AnonProperties, visibilities: AnonEnum): AnonTags = {
     val __obj = js.Dynamic.literal(tags = tags.asInstanceOf[js.Any], visibilities = visibilities.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTags]
   }
 }

@@ -13,7 +13,6 @@ object HTMLElement {
   @scala.inline
   def apply(kendoBindingTarget: BindingTarget): HTMLElement = {
     val __obj = js.Dynamic.literal(kendoBindingTarget = kendoBindingTarget.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HTMLElement]
   }
 }

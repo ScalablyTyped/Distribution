@@ -15,16 +15,14 @@ trait GuidVersions extends js.Object
 
 object GuidVersions {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def uuidv1: typings.reactNativeJoi.reactNativeJoiStrings.uuidv1 = "uuidv1".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.uuidv1]
   @scala.inline
-  def uuidv1: typings.reactNativeJoi.reactNativeJoiStrings.uuidv1 = this.cast("uuidv1")
+  def uuidv2: typings.reactNativeJoi.reactNativeJoiStrings.uuidv2 = "uuidv2".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.uuidv2]
   @scala.inline
-  def uuidv2: typings.reactNativeJoi.reactNativeJoiStrings.uuidv2 = this.cast("uuidv2")
+  def uuidv3: typings.reactNativeJoi.reactNativeJoiStrings.uuidv3 = "uuidv3".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.uuidv3]
   @scala.inline
-  def uuidv3: typings.reactNativeJoi.reactNativeJoiStrings.uuidv3 = this.cast("uuidv3")
+  def uuidv4: typings.reactNativeJoi.reactNativeJoiStrings.uuidv4 = "uuidv4".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.uuidv4]
   @scala.inline
-  def uuidv4: typings.reactNativeJoi.reactNativeJoiStrings.uuidv4 = this.cast("uuidv4")
-  @scala.inline
-  def uuidv5: typings.reactNativeJoi.reactNativeJoiStrings.uuidv5 = this.cast("uuidv5")
+  def uuidv5: typings.reactNativeJoi.reactNativeJoiStrings.uuidv5 = "uuidv5".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.uuidv5]
 }
 

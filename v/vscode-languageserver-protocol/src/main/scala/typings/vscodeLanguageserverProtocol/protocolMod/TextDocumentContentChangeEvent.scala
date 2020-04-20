@@ -21,7 +21,6 @@ object TextDocumentContentChangeEvent {
   @scala.inline
   def AnonText(text: String): TextDocumentContentChangeEvent = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TextDocumentContentChangeEvent]
   }
 }

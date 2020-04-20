@@ -13,12 +13,10 @@ trait ColumnFilter extends js.Object
 
 object ColumnFilter {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def default: typings.tablesorter.tablesorterStrings.default = "default".asInstanceOf[typings.tablesorter.tablesorterStrings.default]
   @scala.inline
-  def default: typings.tablesorter.tablesorterStrings.default = this.cast("default")
+  def `false`: typings.tablesorter.tablesorterStrings.`false` = "false".asInstanceOf[typings.tablesorter.tablesorterStrings.`false`]
   @scala.inline
-  def `false`: typings.tablesorter.tablesorterStrings.`false` = this.cast("false")
-  @scala.inline
-  def parsed: typings.tablesorter.tablesorterStrings.parsed = this.cast("parsed")
+  def parsed: typings.tablesorter.tablesorterStrings.parsed = "parsed".asInstanceOf[typings.tablesorter.tablesorterStrings.parsed]
 }
 

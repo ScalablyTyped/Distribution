@@ -24,7 +24,6 @@ object IEdgesRenderer {
   @scala.inline
   def apply(dispose: () => Unit, isEnabled: Boolean, isReady: () => Boolean, render: () => Unit): IEdgesRenderer = {
     val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), isEnabled = isEnabled.asInstanceOf[js.Any], isReady = js.Any.fromFunction0(isReady), render = js.Any.fromFunction0(render))
-  
     __obj.asInstanceOf[IEdgesRenderer]
   }
 }

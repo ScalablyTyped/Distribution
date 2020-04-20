@@ -20,16 +20,14 @@ trait XlVAlign extends js.Object
 
 object XlVAlign {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlVAlignBottom: `-4107` = -4107.asInstanceOf[`-4107`]
   @scala.inline
-  def xlVAlignBottom: `-4107` = this.cast(-4107)
+  def xlVAlignCenter: `-4108` = -4108.asInstanceOf[`-4108`]
   @scala.inline
-  def xlVAlignCenter: `-4108` = this.cast(-4108)
+  def xlVAlignDistributed: `-4117` = -4117.asInstanceOf[`-4117`]
   @scala.inline
-  def xlVAlignDistributed: `-4117` = this.cast(-4117)
+  def xlVAlignJustify: `-4130` = -4130.asInstanceOf[`-4130`]
   @scala.inline
-  def xlVAlignJustify: `-4130` = this.cast(-4130)
-  @scala.inline
-  def xlVAlignTop: `-4160` = this.cast(-4160)
+  def xlVAlignTop: `-4160` = -4160.asInstanceOf[`-4160`]
 }
 

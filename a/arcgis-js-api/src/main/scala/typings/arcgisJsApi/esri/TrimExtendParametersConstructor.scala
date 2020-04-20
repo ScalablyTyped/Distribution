@@ -9,5 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TrimExtendParametersConstructor
   extends Instantiable0[TrimExtendParameters]
-     with Instantiable1[/* properties */ TrimExtendParametersProperties, TrimExtendParameters]
+     with Instantiable1[/* properties */ TrimExtendParametersProperties, TrimExtendParameters] {
+  def fromJSON(json: js.Any): TrimExtendParameters = js.native
+}
 

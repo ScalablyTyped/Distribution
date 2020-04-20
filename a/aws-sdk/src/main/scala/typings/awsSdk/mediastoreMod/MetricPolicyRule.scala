@@ -20,7 +20,6 @@ object MetricPolicyRule {
   @scala.inline
   def apply(ObjectGroup: ObjectGroup, ObjectGroupName: ObjectGroupName): MetricPolicyRule = {
     val __obj = js.Dynamic.literal(ObjectGroup = ObjectGroup.asInstanceOf[js.Any], ObjectGroupName = ObjectGroupName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MetricPolicyRule]
   }
 }

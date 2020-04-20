@@ -1,6 +1,7 @@
 package typings.std
 
 import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +22,7 @@ Instantiable1[
       ], 
       js.Promise[js.Object]
     ] {
-  @JSName(scala.scalajs.js.Symbol.species)
+  @JSName(js.Symbol.species)
   val species: PromiseConstructor = js.native
   /**
     * Creates a Promise that is resolved with an array of results when all of the provided Promises
@@ -174,7 +175,7 @@ Instantiable1[
   def allSettled[T /* <: js.Array[_] */](values: T): js.Promise[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {-readonly [ P in keyof T ]: std.PromiseSettledResult<T[P] extends std.PromiseLike<infer U>? any : T[P]>}
-    */ typings.std.stdStrings.PromiseConstructor with js.Any
+    */ typings.std.stdStrings.PromiseConstructor with TopLevel[js.Any]
   ] = js.native
   /**
     * Creates a Promise that is resolved with an array of results when all

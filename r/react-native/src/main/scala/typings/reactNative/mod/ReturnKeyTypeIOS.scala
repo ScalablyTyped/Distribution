@@ -16,18 +16,16 @@ trait ReturnKeyTypeIOS extends js.Object
 
 object ReturnKeyTypeIOS {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def default: typings.reactNative.reactNativeStrings.default = "default".asInstanceOf[typings.reactNative.reactNativeStrings.default]
   @scala.inline
-  def default: typings.reactNative.reactNativeStrings.default = this.cast("default")
+  def `emergency-call`: typings.reactNative.reactNativeStrings.`emergency-call` = "emergency-call".asInstanceOf[typings.reactNative.reactNativeStrings.`emergency-call`]
   @scala.inline
-  def `emergency-call`: typings.reactNative.reactNativeStrings.`emergency-call` = this.cast("emergency-call")
+  def google: typings.reactNative.reactNativeStrings.google = "google".asInstanceOf[typings.reactNative.reactNativeStrings.google]
   @scala.inline
-  def google: typings.reactNative.reactNativeStrings.google = this.cast("google")
+  def join: typings.reactNative.reactNativeStrings.join = "join".asInstanceOf[typings.reactNative.reactNativeStrings.join]
   @scala.inline
-  def join: typings.reactNative.reactNativeStrings.join = this.cast("join")
+  def route: typings.reactNative.reactNativeStrings.route = "route".asInstanceOf[typings.reactNative.reactNativeStrings.route]
   @scala.inline
-  def route: typings.reactNative.reactNativeStrings.route = this.cast("route")
-  @scala.inline
-  def yahoo: typings.reactNative.reactNativeStrings.yahoo = this.cast("yahoo")
+  def yahoo: typings.reactNative.reactNativeStrings.yahoo = "yahoo".asInstanceOf[typings.reactNative.reactNativeStrings.yahoo]
 }
 

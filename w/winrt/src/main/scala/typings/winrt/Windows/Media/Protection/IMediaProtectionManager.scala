@@ -21,7 +21,6 @@ object IMediaProtectionManager {
     properties: IPropertySet
   ): IMediaProtectionManager = {
     val __obj = js.Dynamic.literal(oncomponentloadfailed = oncomponentloadfailed.asInstanceOf[js.Any], onrebootneeded = onrebootneeded.asInstanceOf[js.Any], onservicerequested = onservicerequested.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMediaProtectionManager]
   }
 }

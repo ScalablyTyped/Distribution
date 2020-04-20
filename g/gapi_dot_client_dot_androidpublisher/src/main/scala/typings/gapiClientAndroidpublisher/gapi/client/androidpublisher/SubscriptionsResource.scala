@@ -29,7 +29,6 @@ object SubscriptionsResource {
     revoke: AnonSubscriptionId => Request_[Unit]
   ): SubscriptionsResource = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel), defer = js.Any.fromFunction1(defer), get = js.Any.fromFunction1(get), refund = js.Any.fromFunction1(refund), revoke = js.Any.fromFunction1(revoke))
-  
     __obj.asInstanceOf[SubscriptionsResource]
   }
 }

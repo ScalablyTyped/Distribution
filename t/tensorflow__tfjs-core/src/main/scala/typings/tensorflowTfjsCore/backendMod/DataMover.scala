@@ -18,7 +18,6 @@ object DataMover {
   @scala.inline
   def apply(moveData: (KernelBackend, DataId) => Unit): DataMover = {
     val __obj = js.Dynamic.literal(moveData = js.Any.fromFunction2(moveData))
-  
     __obj.asInstanceOf[DataMover]
   }
 }

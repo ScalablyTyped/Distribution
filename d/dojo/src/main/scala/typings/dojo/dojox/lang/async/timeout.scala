@@ -26,7 +26,6 @@ object timeout {
   @scala.inline
   def apply(failOn: js.Any => Unit, from: js.Any => Unit): timeout = {
     val __obj = js.Dynamic.literal(failOn = js.Any.fromFunction1(failOn), from = js.Any.fromFunction1(from))
-  
     __obj.asInstanceOf[timeout]
   }
 }

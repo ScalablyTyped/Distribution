@@ -28,7 +28,6 @@ object PersistentVolumeStatus {
   @scala.inline
   def apply(message: String, phase: String, reason: String): PersistentVolumeStatus = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], phase = phase.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PersistentVolumeStatus]
   }
 }

@@ -18,22 +18,20 @@ trait LogLevel extends js.Object
 
 object LogLevel {
   @scala.inline
-  def alert: typings.server.serverStrings.alert = this.cast("alert")
+  def alert: typings.server.serverStrings.alert = "alert".asInstanceOf[typings.server.serverStrings.alert]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def critical: typings.server.serverStrings.critical = "critical".asInstanceOf[typings.server.serverStrings.critical]
   @scala.inline
-  def critical: typings.server.serverStrings.critical = this.cast("critical")
+  def debug: typings.server.serverStrings.debug = "debug".asInstanceOf[typings.server.serverStrings.debug]
   @scala.inline
-  def debug: typings.server.serverStrings.debug = this.cast("debug")
+  def emergency: typings.server.serverStrings.emergency = "emergency".asInstanceOf[typings.server.serverStrings.emergency]
   @scala.inline
-  def emergency: typings.server.serverStrings.emergency = this.cast("emergency")
+  def error: typings.server.serverStrings.error = "error".asInstanceOf[typings.server.serverStrings.error]
   @scala.inline
-  def error: typings.server.serverStrings.error = this.cast("error")
+  def info: typings.server.serverStrings.info = "info".asInstanceOf[typings.server.serverStrings.info]
   @scala.inline
-  def info: typings.server.serverStrings.info = this.cast("info")
+  def notice: typings.server.serverStrings.notice = "notice".asInstanceOf[typings.server.serverStrings.notice]
   @scala.inline
-  def notice: typings.server.serverStrings.notice = this.cast("notice")
-  @scala.inline
-  def warning: typings.server.serverStrings.warning = this.cast("warning")
+  def warning: typings.server.serverStrings.warning = "warning".asInstanceOf[typings.server.serverStrings.warning]
 }
 

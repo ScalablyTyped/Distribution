@@ -15,7 +15,6 @@ object AnonMethod {
   @scala.inline
   def apply(method: ReminderMethod, minutes: integer): AnonMethod = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], minutes = minutes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMethod]
   }
 }

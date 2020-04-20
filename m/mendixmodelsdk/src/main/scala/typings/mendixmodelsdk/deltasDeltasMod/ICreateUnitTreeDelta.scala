@@ -40,7 +40,6 @@ object ICreateUnitTreeDelta {
     unitTree: IStructureJSON
   ): ICreateUnitTreeDelta = {
     val __obj = js.Dynamic.literal(containerId = containerId.asInstanceOf[js.Any], containmentName = containmentName.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], deltaType = deltaType.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any], unitTree = unitTree.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICreateUnitTreeDelta]
   }
 }

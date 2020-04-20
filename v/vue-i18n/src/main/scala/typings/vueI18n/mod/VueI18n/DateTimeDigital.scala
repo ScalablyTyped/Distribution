@@ -12,10 +12,8 @@ trait DateTimeDigital extends js.Object
 
 object DateTimeDigital {
   @scala.inline
-  def `2-digit`: typings.vueI18n.vueI18nStrings.`2-digit` = this.cast("2-digit")
+  def `2-digit`: typings.vueI18n.vueI18nStrings.`2-digit` = "2-digit".asInstanceOf[typings.vueI18n.vueI18nStrings.`2-digit`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def numeric: typings.vueI18n.vueI18nStrings.numeric = this.cast("numeric")
+  def numeric: typings.vueI18n.vueI18nStrings.numeric = "numeric".asInstanceOf[typings.vueI18n.vueI18nStrings.numeric]
 }
 

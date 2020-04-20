@@ -20,7 +20,6 @@ object ModuleFactory {
     require: String => js.Any
   ): ModuleFactory = {
     val __obj = js.Dynamic.literal(define = js.Any.fromFunction2(define), factoryMap = factoryMap.asInstanceOf[js.Any], moduleMap = moduleMap.asInstanceOf[js.Any], require = js.Any.fromFunction1(require))
-  
     __obj.asInstanceOf[ModuleFactory]
   }
 }

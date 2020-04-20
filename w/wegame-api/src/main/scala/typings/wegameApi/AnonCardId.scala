@@ -19,7 +19,6 @@ object AnonCardId {
   @scala.inline
   def apply(cardId: String, code: String): AnonCardId = {
     val __obj = js.Dynamic.literal(cardId = cardId.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCardId]
   }
 }

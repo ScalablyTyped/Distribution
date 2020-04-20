@@ -12,7 +12,6 @@ object AnonQDiscriminator {
   @scala.inline
   def apply(qDiscriminator: String): AnonQDiscriminator = {
     val __obj = js.Dynamic.literal(qDiscriminator = qDiscriminator.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonQDiscriminator]
   }
 }

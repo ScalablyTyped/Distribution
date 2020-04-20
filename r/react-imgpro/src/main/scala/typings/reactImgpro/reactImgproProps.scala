@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactImgproProps {
   @scala.inline
-  def ReactImgproProps: ProcessImageProps.type = typings.reactImgpro.mod.ReactImgpro.ProcessImageProps
+  def ReactImgproProps: ProcessImageProps.type = ProcessImageProps
   type ReactImgproProps = ProcessImageProps
 }
 

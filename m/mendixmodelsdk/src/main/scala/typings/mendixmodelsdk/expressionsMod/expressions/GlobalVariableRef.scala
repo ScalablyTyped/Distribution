@@ -27,7 +27,7 @@ class GlobalVariableRef protected () extends VariableRef {
   ) = this()
   @JSName("model")
   var model_FGlobalVariableRef: IModel = js.native
-  def referredName(): String = js.native
+  def referredName: String = js.native
   def referredName(newValue: String): js.Any = js.native
 }
 

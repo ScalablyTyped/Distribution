@@ -14,7 +14,6 @@ object LogEventExecuteComplete {
   @scala.inline
   def apply(name: executeDotcomplete, transactionID: Double): LogEventExecuteComplete = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], transactionID = transactionID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LogEventExecuteComplete]
   }
 }

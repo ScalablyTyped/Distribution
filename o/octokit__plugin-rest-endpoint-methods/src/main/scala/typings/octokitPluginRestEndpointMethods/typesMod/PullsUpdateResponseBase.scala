@@ -22,7 +22,6 @@ object PullsUpdateResponseBase {
     user: PullsUpdateResponseBaseUser
   ): PullsUpdateResponseBase = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PullsUpdateResponseBase]
   }
 }

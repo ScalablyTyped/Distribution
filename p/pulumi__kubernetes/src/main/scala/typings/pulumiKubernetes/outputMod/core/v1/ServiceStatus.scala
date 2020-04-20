@@ -18,7 +18,6 @@ object ServiceStatus {
   @scala.inline
   def apply(loadBalancer: LoadBalancerStatus): ServiceStatus = {
     val __obj = js.Dynamic.literal(loadBalancer = loadBalancer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ServiceStatus]
   }
 }

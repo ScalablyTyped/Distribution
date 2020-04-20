@@ -14,7 +14,6 @@ object RLPEncodedTransaction {
   @scala.inline
   def apply(raw: String, tx: AnonGas): RLPEncodedTransaction = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], tx = tx.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RLPEncodedTransaction]
   }
 }

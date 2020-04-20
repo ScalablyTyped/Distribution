@@ -12,7 +12,6 @@ object AddValueOptions {
   @scala.inline
   def apply(translateToUnicode: Boolean): AddValueOptions = {
     val __obj = js.Dynamic.literal(translateToUnicode = translateToUnicode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddValueOptions]
   }
 }

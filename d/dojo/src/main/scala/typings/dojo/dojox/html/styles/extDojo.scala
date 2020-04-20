@@ -20,7 +20,6 @@ object extDojo {
   @scala.inline
   def apply(style: js.Object): extDojo = {
     val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[extDojo]
   }
 }

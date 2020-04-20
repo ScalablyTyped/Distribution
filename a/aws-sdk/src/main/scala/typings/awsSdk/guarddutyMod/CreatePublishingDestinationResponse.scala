@@ -16,7 +16,6 @@ object CreatePublishingDestinationResponse {
   @scala.inline
   def apply(DestinationId: String): CreatePublishingDestinationResponse = {
     val __obj = js.Dynamic.literal(DestinationId = DestinationId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreatePublishingDestinationResponse]
   }
 }

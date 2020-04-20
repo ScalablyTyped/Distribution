@@ -16,7 +16,6 @@ object GetCommitOutput {
   @scala.inline
   def apply(commit: Commit): GetCommitOutput = {
     val __obj = js.Dynamic.literal(commit = commit.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetCommitOutput]
   }
 }

@@ -25,7 +25,6 @@ object PickAPIonoffemitgetQueryP {
     setQueryParams: /* input */ QueryParams => Unit
   ): PickAPIonoffemitgetQueryP = {
     val __obj = js.Dynamic.literal(emit = js.Any.fromFunction2(emit), getQueryParam = js.Any.fromFunction1(getQueryParam), off = js.Any.fromFunction2(off), on = js.Any.fromFunction2(on), setQueryParams = js.Any.fromFunction1(setQueryParams))
-  
     __obj.asInstanceOf[PickAPIonoffemitgetQueryP]
   }
 }

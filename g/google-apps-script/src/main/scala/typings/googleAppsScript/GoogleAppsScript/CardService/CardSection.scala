@@ -34,7 +34,6 @@ object CardSection {
     setNumUncollapsibleWidgets: Integer => CardSection
   ): CardSection = {
     val __obj = js.Dynamic.literal(addWidget = js.Any.fromFunction1(addWidget), setCollapsible = js.Any.fromFunction1(setCollapsible), setHeader = js.Any.fromFunction1(setHeader), setNumUncollapsibleWidgets = js.Any.fromFunction1(setNumUncollapsibleWidgets))
-  
     __obj.asInstanceOf[CardSection]
   }
 }

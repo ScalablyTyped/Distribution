@@ -21,7 +21,6 @@ object FlashMath {
     pointDistance: (FlashPoint, FlashPoint) => Double
   ): FlashMath = {
     val __obj = js.Dynamic.literal(concatMatrix = js.Any.fromFunction2(concatMatrix), invertMatrix = js.Any.fromFunction1(invertMatrix), pointDistance = js.Any.fromFunction2(pointDistance))
-  
     __obj.asInstanceOf[FlashMath]
   }
 }

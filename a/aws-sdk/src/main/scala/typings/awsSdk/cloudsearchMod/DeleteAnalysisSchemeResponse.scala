@@ -16,7 +16,6 @@ object DeleteAnalysisSchemeResponse {
   @scala.inline
   def apply(AnalysisScheme: AnalysisSchemeStatus): DeleteAnalysisSchemeResponse = {
     val __obj = js.Dynamic.literal(AnalysisScheme = AnalysisScheme.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteAnalysisSchemeResponse]
   }
 }

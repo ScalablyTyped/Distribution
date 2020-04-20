@@ -20,7 +20,6 @@ object MusicTrendingFeedResponseRootObject {
     status: String
   ): MusicTrendingFeedResponseRootObject = {
     val __obj = js.Dynamic.literal(alacorn_session_id = alacorn_session_id.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], page_info = page_info.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MusicTrendingFeedResponseRootObject]
   }
 }

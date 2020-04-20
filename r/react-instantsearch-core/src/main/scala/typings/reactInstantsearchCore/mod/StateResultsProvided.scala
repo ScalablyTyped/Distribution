@@ -37,7 +37,6 @@ object StateResultsProvided {
     searchingForFacetValues: js.Any
   ): StateResultsProvided[TDoc] = {
     val __obj = js.Dynamic.literal(allSearchResults = allSearchResults.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], isSearchStalled = isSearchStalled.asInstanceOf[js.Any], searchResults = searchResults.asInstanceOf[js.Any], searchState = searchState.asInstanceOf[js.Any], searching = searching.asInstanceOf[js.Any], searchingForFacetValues = searchingForFacetValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StateResultsProvided[TDoc]]
   }
 }

@@ -15,7 +15,6 @@ object GetOptions {
   @scala.inline
   def apply(source: default | server | cache): GetOptions = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetOptions]
   }
 }

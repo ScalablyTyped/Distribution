@@ -14,7 +14,6 @@ object SpeechToTextResult {
   @scala.inline
   def apply(languageCode: String, text: js.Array[String]): SpeechToTextResult = {
     val __obj = js.Dynamic.literal(languageCode = languageCode.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SpeechToTextResult]
   }
 }

@@ -89,7 +89,6 @@ object contentHandlers {
     xml: js.Any => js.Any
   ): contentHandlers = {
     val __obj = js.Dynamic.literal(auto = js.Any.fromFunction1(auto), javascript = js.Any.fromFunction1(javascript), json = js.Any.fromFunction1(json), json_comment_filtered = js.Any.fromFunction1(json_comment_filtered), json_comment_optional = js.Any.fromFunction1(json_comment_optional), olson_zoneinfo = js.Any.fromFunction1(olson_zoneinfo), text = js.Any.fromFunction1(text), xml = js.Any.fromFunction1(xml))
-  
     __obj.asInstanceOf[contentHandlers]
   }
 }

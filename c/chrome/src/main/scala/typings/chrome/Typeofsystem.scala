@@ -47,7 +47,6 @@ object Typeofsystem {
   @scala.inline
   def apply(cpu: Typeofcpu, display: Typeofdisplay, memory: Typeofmemory, storage: TypeofstorageEjectDevice): Typeofsystem = {
     val __obj = js.Dynamic.literal(cpu = cpu.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], memory = memory.asInstanceOf[js.Any], storage = storage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Typeofsystem]
   }
 }

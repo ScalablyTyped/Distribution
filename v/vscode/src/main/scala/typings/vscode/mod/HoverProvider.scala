@@ -23,7 +23,6 @@ object HoverProvider {
   @scala.inline
   def apply(provideHover: (TextDocument, Position, CancellationToken) => ProviderResult[Hover]): HoverProvider = {
     val __obj = js.Dynamic.literal(provideHover = js.Any.fromFunction3(provideHover))
-  
     __obj.asInstanceOf[HoverProvider]
   }
 }

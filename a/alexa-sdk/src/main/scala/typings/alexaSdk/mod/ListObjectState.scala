@@ -12,10 +12,8 @@ trait ListObjectState extends js.Object
 
 object ListObjectState {
   @scala.inline
-  def active: typings.alexaSdk.alexaSdkStrings.active = this.cast("active")
+  def active: typings.alexaSdk.alexaSdkStrings.active = "active".asInstanceOf[typings.alexaSdk.alexaSdkStrings.active]
   @scala.inline
-  def archived: typings.alexaSdk.alexaSdkStrings.archived = this.cast("archived")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def archived: typings.alexaSdk.alexaSdkStrings.archived = "archived".asInstanceOf[typings.alexaSdk.alexaSdkStrings.archived]
 }
 

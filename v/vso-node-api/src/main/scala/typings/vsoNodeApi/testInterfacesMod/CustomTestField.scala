@@ -13,7 +13,6 @@ object CustomTestField {
   @scala.inline
   def apply(fieldName: String, value: js.Any): CustomTestField = {
     val __obj = js.Dynamic.literal(fieldName = fieldName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CustomTestField]
   }
 }

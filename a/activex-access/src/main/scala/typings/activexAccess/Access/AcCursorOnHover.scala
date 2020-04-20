@@ -14,10 +14,8 @@ trait AcCursorOnHover extends js.Object
 
 object AcCursorOnHover {
   @scala.inline
-  def acCursorOnHoverDefault: `0` = this.cast(0)
+  def acCursorOnHoverDefault: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def acCursorOnHoverHyperlinkHand: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def acCursorOnHoverHyperlinkHand: `1` = 1.asInstanceOf[`1`]
 }
 

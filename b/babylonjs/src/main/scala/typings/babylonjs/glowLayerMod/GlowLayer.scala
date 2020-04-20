@@ -56,7 +56,7 @@ class GlowLayer protected () extends EffectLayer {
   /**
     * Gets the kernel size of the blur.
     */
-  def blurKernelSize(): Double = js.native
+  def blurKernelSize: Double = js.native
   /**
     * Sets the kernel size of the blur.
     */
@@ -72,7 +72,7 @@ class GlowLayer protected () extends EffectLayer {
   /**
     * Gets the glow intensity.
     */
-  def intensity(): Double = js.native
+  def intensity: Double = js.native
   /**
     * Sets the glow intensity.
     */

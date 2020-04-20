@@ -12,10 +12,8 @@ trait SpeedType extends js.Object
 
 object SpeedType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fast: typings.chessboardjs.chessboardjsStrings.fast = "fast".asInstanceOf[typings.chessboardjs.chessboardjsStrings.fast]
   @scala.inline
-  def fast: typings.chessboardjs.chessboardjsStrings.fast = this.cast("fast")
-  @scala.inline
-  def slow: typings.chessboardjs.chessboardjsStrings.slow = this.cast("slow")
+  def slow: typings.chessboardjs.chessboardjsStrings.slow = "slow".asInstanceOf[typings.chessboardjs.chessboardjsStrings.slow]
 }
 

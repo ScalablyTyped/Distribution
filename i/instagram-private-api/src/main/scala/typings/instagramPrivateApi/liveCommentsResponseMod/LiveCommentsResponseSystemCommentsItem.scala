@@ -16,7 +16,6 @@ object LiveCommentsResponseSystemCommentsItem {
   @scala.inline
   def apply(created_at: Double, pk: String, text: String, user: LiveCommentsResponseUser, user_count: Double): LiveCommentsResponseSystemCommentsItem = {
     val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], user_count = user_count.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LiveCommentsResponseSystemCommentsItem]
   }
 }

@@ -25,7 +25,6 @@ object UploadVideoSegmentTransferOptions {
     waterfallId: String
   ): UploadVideoSegmentTransferOptions = {
     val __obj = js.Dynamic.literal(ruploadParams = ruploadParams.asInstanceOf[js.Any], segment = segment.asInstanceOf[js.Any], startOffset = startOffset.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any], transferId = transferId.asInstanceOf[js.Any], waterfallId = waterfallId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UploadVideoSegmentTransferOptions]
   }
 }

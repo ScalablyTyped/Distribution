@@ -13,7 +13,6 @@ object Anon32 {
   @scala.inline
   def apply(name: externalPattern): Anon32 = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Anon32]
   }
 }

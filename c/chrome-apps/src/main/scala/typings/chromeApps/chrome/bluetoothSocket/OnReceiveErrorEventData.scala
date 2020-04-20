@@ -27,7 +27,6 @@ object OnReceiveErrorEventData {
   @scala.inline
   def apply(error: OnAcceptErrorCode, errorMessage: String, socketId: integer): OnReceiveErrorEventData = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], socketId = socketId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnReceiveErrorEventData]
   }
 }

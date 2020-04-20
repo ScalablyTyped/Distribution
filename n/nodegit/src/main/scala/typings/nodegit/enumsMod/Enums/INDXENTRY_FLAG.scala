@@ -14,10 +14,8 @@ trait INDXENTRY_FLAG extends js.Object
 
 object INDXENTRY_FLAG {
   @scala.inline
-  def IDXENTRY_EXTENDED: `16384` = this.cast(16384)
+  def IDXENTRY_EXTENDED: `16384` = 16384.asInstanceOf[`16384`]
   @scala.inline
-  def IDXENTRY_VALID: `32768` = this.cast(32768)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def IDXENTRY_VALID: `32768` = 32768.asInstanceOf[`32768`]
 }
 

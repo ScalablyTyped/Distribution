@@ -13,7 +13,6 @@ object TypeofWorkLink {
   @scala.inline
   def apply(Types: TypeofWorkLink): TypeofWorkLink = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofWorkLink]
   }
 }

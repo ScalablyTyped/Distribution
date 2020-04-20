@@ -20,16 +20,14 @@ trait RecordsetTypeEnum extends js.Object
 
 object RecordsetTypeEnum {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dbOpenDynamic: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def dbOpenDynamic: `16` = this.cast(16)
+  def dbOpenDynaset: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def dbOpenDynaset: `2` = this.cast(2)
+  def dbOpenForwardOnly: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def dbOpenForwardOnly: `8` = this.cast(8)
+  def dbOpenSnapshot: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def dbOpenSnapshot: `4` = this.cast(4)
-  @scala.inline
-  def dbOpenTable: `1` = this.cast(1)
+  def dbOpenTable: `1` = 1.asInstanceOf[`1`]
 }
 

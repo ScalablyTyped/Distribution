@@ -15,7 +15,6 @@ object PixelData {
   @scala.inline
   def apply(data: Uint8Array, height: Double, width: Double): PixelData = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PixelData]
   }
 }

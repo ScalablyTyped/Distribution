@@ -14,7 +14,6 @@ object WeightedLocation {
   @scala.inline
   def apply(location: LatLng, weight: Double): WeightedLocation = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WeightedLocation]
   }
 }

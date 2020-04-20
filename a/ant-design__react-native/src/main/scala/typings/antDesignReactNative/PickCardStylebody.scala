@@ -14,7 +14,6 @@ object PickCardStylebody {
   @scala.inline
   def apply(body: ViewStyle): PickCardStylebody = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickCardStylebody]
   }
 }

@@ -14,10 +14,8 @@ trait WdDateLanguage extends js.Object
 
 object WdDateLanguage {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdDateLanguageBidi: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def wdDateLanguageBidi: `10` = this.cast(10)
-  @scala.inline
-  def wdDateLanguageLatin: `1033` = this.cast(1033)
+  def wdDateLanguageLatin: `1033` = 1033.asInstanceOf[`1033`]
 }
 

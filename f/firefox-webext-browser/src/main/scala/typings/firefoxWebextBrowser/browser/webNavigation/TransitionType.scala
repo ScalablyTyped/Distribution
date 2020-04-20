@@ -27,28 +27,26 @@ trait TransitionType extends js.Object
 
 object TransitionType {
   @scala.inline
-  def auto_bookmark: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.auto_bookmark = this.cast("auto_bookmark")
+  def auto_bookmark: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.auto_bookmark = "auto_bookmark".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.auto_bookmark]
   @scala.inline
-  def auto_subframe: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.auto_subframe = this.cast("auto_subframe")
+  def auto_subframe: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.auto_subframe = "auto_subframe".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.auto_subframe]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def form_submit: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.form_submit = "form_submit".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.form_submit]
   @scala.inline
-  def form_submit: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.form_submit = this.cast("form_submit")
+  def generated: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.generated = "generated".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.generated]
   @scala.inline
-  def generated: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.generated = this.cast("generated")
+  def keyword: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.keyword = "keyword".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.keyword]
   @scala.inline
-  def keyword: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.keyword = this.cast("keyword")
+  def keyword_generated: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.keyword_generated = "keyword_generated".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.keyword_generated]
   @scala.inline
-  def keyword_generated: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.keyword_generated = this.cast("keyword_generated")
+  def link: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.link = "link".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.link]
   @scala.inline
-  def link: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.link = this.cast("link")
+  def manual_subframe: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.manual_subframe = "manual_subframe".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.manual_subframe]
   @scala.inline
-  def manual_subframe: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.manual_subframe = this.cast("manual_subframe")
+  def reload: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.reload = "reload".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.reload]
   @scala.inline
-  def reload: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.reload = this.cast("reload")
+  def start_page: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.start_page = "start_page".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.start_page]
   @scala.inline
-  def start_page: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.start_page = this.cast("start_page")
-  @scala.inline
-  def typed: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.typed = this.cast("typed")
+  def typed: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.typed = "typed".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.typed]
 }
 

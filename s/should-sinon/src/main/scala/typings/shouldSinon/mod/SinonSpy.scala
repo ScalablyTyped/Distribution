@@ -12,7 +12,6 @@ object SinonSpy {
   @scala.inline
   def apply(should: ShouldSinonAssertion): SinonSpy = {
     val __obj = js.Dynamic.literal(should = should.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SinonSpy]
   }
 }

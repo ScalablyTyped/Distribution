@@ -19,7 +19,6 @@ object SymbolConstructor {
   @scala.inline
   def apply(useSimple: () => Unit, userSetter: () => Unit): SymbolConstructor = {
     val __obj = js.Dynamic.literal(useSimple = js.Any.fromFunction0(useSimple), userSetter = js.Any.fromFunction0(userSetter))
-  
     __obj.asInstanceOf[SymbolConstructor]
   }
 }

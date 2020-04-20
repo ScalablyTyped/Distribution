@@ -13,7 +13,6 @@ object Window {
   @scala.inline
   def apply(PrefixFree: PrefixFree, StyleFix: StyleFix): Window = {
     val __obj = js.Dynamic.literal(PrefixFree = PrefixFree.asInstanceOf[js.Any], StyleFix = StyleFix.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Window]
   }
 }

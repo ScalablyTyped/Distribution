@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait cswAasJsProps {
   @scala.inline
-  def AuthContextProviderProps: AuthContextProps.type = typings.cswAasJs.authContextProviderMod.AuthContextProps
+  def AuthContextProviderProps: AuthContextProps.type = AuthContextProps
   type AuthContextProviderProps = AuthContextProps
   @scala.inline
   def CheckLoginProps: typings.cswAasJs.checkLoginMod.CheckLoginProps.type = typings.cswAasJs.checkLoginMod.CheckLoginProps

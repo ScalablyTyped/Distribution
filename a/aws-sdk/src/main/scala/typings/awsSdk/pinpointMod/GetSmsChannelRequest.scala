@@ -16,7 +16,6 @@ object GetSmsChannelRequest {
   @scala.inline
   def apply(ApplicationId: string): GetSmsChannelRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetSmsChannelRequest]
   }
 }

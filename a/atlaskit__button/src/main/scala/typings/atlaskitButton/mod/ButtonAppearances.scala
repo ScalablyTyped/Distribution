@@ -18,22 +18,20 @@ trait ButtonAppearances extends js.Object
 
 object ButtonAppearances {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def danger: typings.atlaskitButton.atlaskitButtonStrings.danger = "danger".asInstanceOf[typings.atlaskitButton.atlaskitButtonStrings.danger]
   @scala.inline
-  def danger: typings.atlaskitButton.atlaskitButtonStrings.danger = this.cast("danger")
+  def default: typings.atlaskitButton.atlaskitButtonStrings.default = "default".asInstanceOf[typings.atlaskitButton.atlaskitButtonStrings.default]
   @scala.inline
-  def default: typings.atlaskitButton.atlaskitButtonStrings.default = this.cast("default")
+  def help: typings.atlaskitButton.atlaskitButtonStrings.help = "help".asInstanceOf[typings.atlaskitButton.atlaskitButtonStrings.help]
   @scala.inline
-  def help: typings.atlaskitButton.atlaskitButtonStrings.help = this.cast("help")
+  def link: typings.atlaskitButton.atlaskitButtonStrings.link = "link".asInstanceOf[typings.atlaskitButton.atlaskitButtonStrings.link]
   @scala.inline
-  def link: typings.atlaskitButton.atlaskitButtonStrings.link = this.cast("link")
+  def primary: typings.atlaskitButton.atlaskitButtonStrings.primary = "primary".asInstanceOf[typings.atlaskitButton.atlaskitButtonStrings.primary]
   @scala.inline
-  def primary: typings.atlaskitButton.atlaskitButtonStrings.primary = this.cast("primary")
+  def subtle: typings.atlaskitButton.atlaskitButtonStrings.subtle = "subtle".asInstanceOf[typings.atlaskitButton.atlaskitButtonStrings.subtle]
   @scala.inline
-  def subtle: typings.atlaskitButton.atlaskitButtonStrings.subtle = this.cast("subtle")
+  def `subtle-link`: typings.atlaskitButton.atlaskitButtonStrings.`subtle-link` = "subtle-link".asInstanceOf[typings.atlaskitButton.atlaskitButtonStrings.`subtle-link`]
   @scala.inline
-  def `subtle-link`: typings.atlaskitButton.atlaskitButtonStrings.`subtle-link` = this.cast("subtle-link")
-  @scala.inline
-  def warning: typings.atlaskitButton.atlaskitButtonStrings.warning = this.cast("warning")
+  def warning: typings.atlaskitButton.atlaskitButtonStrings.warning = "warning".asInstanceOf[typings.atlaskitButton.atlaskitButtonStrings.warning]
 }
 

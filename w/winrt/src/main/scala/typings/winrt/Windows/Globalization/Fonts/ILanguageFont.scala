@@ -25,7 +25,6 @@ object ILanguageFont {
     scaleFactor: Double
   ): ILanguageFont = {
     val __obj = js.Dynamic.literal(fontFamily = fontFamily.asInstanceOf[js.Any], fontStretch = fontStretch.asInstanceOf[js.Any], fontStyle = fontStyle.asInstanceOf[js.Any], fontWeight = fontWeight.asInstanceOf[js.Any], scaleFactor = scaleFactor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ILanguageFont]
   }
 }

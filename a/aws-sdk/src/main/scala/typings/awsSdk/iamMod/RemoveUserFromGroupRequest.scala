@@ -20,7 +20,6 @@ object RemoveUserFromGroupRequest {
   @scala.inline
   def apply(GroupName: groupNameType, UserName: existingUserNameType): RemoveUserFromGroupRequest = {
     val __obj = js.Dynamic.literal(GroupName = GroupName.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RemoveUserFromGroupRequest]
   }
 }

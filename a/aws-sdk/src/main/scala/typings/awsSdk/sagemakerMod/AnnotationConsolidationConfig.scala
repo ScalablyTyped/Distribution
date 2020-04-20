@@ -16,7 +16,6 @@ object AnnotationConsolidationConfig {
   @scala.inline
   def apply(AnnotationConsolidationLambdaArn: LambdaFunctionArn): AnnotationConsolidationConfig = {
     val __obj = js.Dynamic.literal(AnnotationConsolidationLambdaArn = AnnotationConsolidationLambdaArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnnotationConsolidationConfig]
   }
 }

@@ -16,7 +16,6 @@ object DeleteBucketLifecycleRequest {
   @scala.inline
   def apply(Bucket: BucketName): DeleteBucketLifecycleRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteBucketLifecycleRequest]
   }
 }

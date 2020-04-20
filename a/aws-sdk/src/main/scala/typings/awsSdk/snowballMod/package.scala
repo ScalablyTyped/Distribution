@@ -74,6 +74,7 @@ package object snowballMod {
     - typings.awsSdk.awsSdkStrings.T80
     - typings.awsSdk.awsSdkStrings.T100
     - typings.awsSdk.awsSdkStrings.T42
+    - typings.awsSdk.awsSdkStrings.T98
     - typings.awsSdk.awsSdkStrings.NoPreference
     - java.lang.String
   */
@@ -83,6 +84,7 @@ package object snowballMod {
     - typings.awsSdk.awsSdkStrings.EDGE
     - typings.awsSdk.awsSdkStrings.EDGE_C
     - typings.awsSdk.awsSdkStrings.EDGE_CG
+    - typings.awsSdk.awsSdkStrings.EDGE_S
     - java.lang.String
   */
   type SnowballType = typings.awsSdk.snowballMod._SnowballType | java.lang.String

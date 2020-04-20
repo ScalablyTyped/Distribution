@@ -14,7 +14,6 @@ object InputLocationMessageContent {
   @scala.inline
   def apply(latitude: Double, longitude: Double): InputLocationMessageContent = {
     val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InputLocationMessageContent]
   }
 }

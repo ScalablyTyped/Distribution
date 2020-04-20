@@ -7,28 +7,28 @@ import scala.scalajs.js.annotation._
 
 trait reactFormProps {
   @scala.inline
-  def FormProps: FormPropschildrenpropsFor.type = typings.reactForm.FormPropschildrenpropsFor
+  def FormProps: FormPropschildrenpropsFor.type = FormPropschildrenpropsFor
   type FormProps = FormPropschildrenpropsFor
   @scala.inline
-  def NestedFormProps: FieldProps.type = typings.reactForm.mod.FieldProps
+  def NestedFormProps: FieldProps.type = FieldProps
   type NestedFormProps = FieldProps
   @scala.inline
-  def RadioProps: FieldPropsInputHTMLAttrib.type = typings.reactForm.FieldPropsInputHTMLAttrib
+  def RadioProps: FieldPropsInputHTMLAttrib.type = FieldPropsInputHTMLAttrib
   type RadioProps = FieldPropsInputHTMLAttrib
   @scala.inline
-  def RadioGroupProps: FieldPropschildrenpropsFi.type = typings.reactForm.FieldPropschildrenpropsFi
+  def RadioGroupProps: FieldPropschildrenpropsFi.type = FieldPropschildrenpropsFi
   type RadioGroupProps = FieldPropschildrenpropsFi
   @scala.inline
   def SelectProps: typings.reactForm.mod.SelectProps.type = typings.reactForm.mod.SelectProps
   type SelectProps = typings.reactForm.mod.SelectProps
   @scala.inline
-  def StyledCheckboxProps: StyledPropsInputHTMLAttri.type = typings.reactForm.StyledPropsInputHTMLAttri
+  def StyledCheckboxProps: StyledPropsInputHTMLAttri.type = StyledPropsInputHTMLAttri
   type StyledCheckboxProps = StyledPropsInputHTMLAttri
   @scala.inline
-  def StyledRadioProps: StyledPropsInputHTMLAttriAbout.type = typings.reactForm.StyledPropsInputHTMLAttriAbout
+  def StyledRadioProps: StyledPropsInputHTMLAttriAbout.type = StyledPropsInputHTMLAttriAbout
   type StyledRadioProps = StyledPropsInputHTMLAttriAbout
   @scala.inline
-  def StyledRadioGroupProps: StyledPropschildrenpropsF.type = typings.reactForm.StyledPropschildrenpropsF
+  def StyledRadioGroupProps: StyledPropschildrenpropsF.type = StyledPropschildrenpropsF
   type StyledRadioGroupProps = StyledPropschildrenpropsF
 }
 

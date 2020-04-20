@@ -18,7 +18,6 @@ object INxLayoutErrors {
   @scala.inline
   def apply(ErrorCode: Double): INxLayoutErrors = {
     val __obj = js.Dynamic.literal(ErrorCode = ErrorCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INxLayoutErrors]
   }
 }

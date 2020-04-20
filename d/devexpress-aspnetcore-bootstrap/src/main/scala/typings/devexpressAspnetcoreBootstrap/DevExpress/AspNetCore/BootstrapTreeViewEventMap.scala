@@ -27,7 +27,6 @@ object BootstrapTreeViewEventMap {
     nodeClick: TreeViewNodeClickEventArgs
   ): BootstrapTreeViewEventMap = {
     val __obj = js.Dynamic.literal(beginCallback = beginCallback.asInstanceOf[js.Any], callbackError = callbackError.asInstanceOf[js.Any], checkedChanged = checkedChanged.asInstanceOf[js.Any], endCallback = endCallback.asInstanceOf[js.Any], expandedChanged = expandedChanged.asInstanceOf[js.Any], expandedChanging = expandedChanging.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], nodeClick = nodeClick.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BootstrapTreeViewEventMap]
   }
 }

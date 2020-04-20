@@ -12,7 +12,6 @@ object OnScaleChangeListener {
   @scala.inline
   def apply(onScaleChange: (Double, Double, Double) => Unit): OnScaleChangeListener = {
     val __obj = js.Dynamic.literal(onScaleChange = js.Any.fromFunction3(onScaleChange))
-  
     __obj.asInstanceOf[OnScaleChangeListener]
   }
 }

@@ -21,7 +21,6 @@ object UniversalActionResponseBuilder {
     setOpenLink: OpenLink => UniversalActionResponseBuilder
   ): UniversalActionResponseBuilder = {
     val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), displayAddOnCards = js.Any.fromFunction1(displayAddOnCards), setOpenLink = js.Any.fromFunction1(setOpenLink))
-  
     __obj.asInstanceOf[UniversalActionResponseBuilder]
   }
 }

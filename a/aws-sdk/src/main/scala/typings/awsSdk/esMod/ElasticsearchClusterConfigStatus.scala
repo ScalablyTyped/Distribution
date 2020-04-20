@@ -20,7 +20,6 @@ object ElasticsearchClusterConfigStatus {
   @scala.inline
   def apply(Options: ElasticsearchClusterConfig, Status: OptionStatus): ElasticsearchClusterConfigStatus = {
     val __obj = js.Dynamic.literal(Options = Options.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ElasticsearchClusterConfigStatus]
   }
 }

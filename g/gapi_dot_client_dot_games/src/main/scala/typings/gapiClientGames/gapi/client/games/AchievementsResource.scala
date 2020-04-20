@@ -39,7 +39,6 @@ object AchievementsResource {
     updateMultiple: AnonOauthtoken => Request_[AchievementUpdateMultipleResponse]
   ): AchievementsResource = {
     val __obj = js.Dynamic.literal(increment = js.Any.fromFunction1(increment), list = js.Any.fromFunction1(list), reveal = js.Any.fromFunction1(reveal), setStepsAtLeast = js.Any.fromFunction1(setStepsAtLeast), unlock = js.Any.fromFunction1(unlock), updateMultiple = js.Any.fromFunction1(updateMultiple))
-  
     __obj.asInstanceOf[AchievementsResource]
   }
 }

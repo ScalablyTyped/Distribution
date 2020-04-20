@@ -14,7 +14,6 @@ object IAllJoynAcceptSessionJoiner {
   @scala.inline
   def apply(accept: () => Unit): IAllJoynAcceptSessionJoiner = {
     val __obj = js.Dynamic.literal(accept = js.Any.fromFunction0(accept))
-  
     __obj.asInstanceOf[IAllJoynAcceptSessionJoiner]
   }
 }

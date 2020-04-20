@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lines-and-columns"
-version := "1.1.6-441056"
+version := "1.1.6-18167d"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -16,7 +16,6 @@ object Credentials {
   @scala.inline
   def apply(algorithm: sha1 | sha256, key: String, user: String): Credentials = {
     val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Credentials]
   }
 }

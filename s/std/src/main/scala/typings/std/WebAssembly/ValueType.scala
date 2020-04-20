@@ -14,14 +14,12 @@ trait ValueType extends js.Object
 
 object ValueType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def f32: typings.std.stdStrings.f32 = "f32".asInstanceOf[typings.std.stdStrings.f32]
   @scala.inline
-  def f32: typings.std.stdStrings.f32 = this.cast("f32")
+  def f64: typings.std.stdStrings.f64 = "f64".asInstanceOf[typings.std.stdStrings.f64]
   @scala.inline
-  def f64: typings.std.stdStrings.f64 = this.cast("f64")
+  def i32: typings.std.stdStrings.i32 = "i32".asInstanceOf[typings.std.stdStrings.i32]
   @scala.inline
-  def i32: typings.std.stdStrings.i32 = this.cast("i32")
-  @scala.inline
-  def i64: typings.std.stdStrings.i64 = this.cast("i64")
+  def i64: typings.std.stdStrings.i64 = "i64".asInstanceOf[typings.std.stdStrings.i64]
 }
 

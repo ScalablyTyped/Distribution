@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactResponsiveProps {
   @scala.inline
-  def ReactResponsiveProps: MediaQueryProps.type = typings.reactResponsive.mod.MediaQueryProps
+  def ReactResponsiveProps: MediaQueryProps.type = MediaQueryProps
   type ReactResponsiveProps = MediaQueryProps
 }
 

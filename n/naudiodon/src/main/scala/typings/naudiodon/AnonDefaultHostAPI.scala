@@ -14,7 +14,6 @@ object AnonDefaultHostAPI {
   @scala.inline
   def apply(HostAPIs: js.Array[HostAPI], defaultHostAPI: Double): AnonDefaultHostAPI = {
     val __obj = js.Dynamic.literal(HostAPIs = HostAPIs.asInstanceOf[js.Any], defaultHostAPI = defaultHostAPI.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDefaultHostAPI]
   }
 }

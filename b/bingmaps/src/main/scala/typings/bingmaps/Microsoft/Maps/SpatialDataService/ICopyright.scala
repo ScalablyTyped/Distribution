@@ -15,7 +15,6 @@ object ICopyright {
   @scala.inline
   def apply(CopyrightURL: String, Sources: js.Array[ICopyrightSource]): ICopyright = {
     val __obj = js.Dynamic.literal(CopyrightURL = CopyrightURL.asInstanceOf[js.Any], Sources = Sources.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICopyright]
   }
 }

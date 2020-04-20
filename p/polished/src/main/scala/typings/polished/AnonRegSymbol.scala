@@ -16,7 +16,6 @@ object AnonRegSymbol {
   @scala.inline
   def apply(infix: AnonNotation, regSymbol: BackslashAsterisk, symbol: Asterisk): AnonRegSymbol = {
     val __obj = js.Dynamic.literal(infix = infix.asInstanceOf[js.Any], regSymbol = regSymbol.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRegSymbol]
   }
 }

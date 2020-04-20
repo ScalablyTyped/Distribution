@@ -14,7 +14,6 @@ object IJsonObjectStatics {
   @scala.inline
   def apply(parse: String => JsonObject, tryParse: String => AnonSucceeded): IJsonObjectStatics = {
     val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), tryParse = js.Any.fromFunction1(tryParse))
-  
     __obj.asInstanceOf[IJsonObjectStatics]
   }
 }

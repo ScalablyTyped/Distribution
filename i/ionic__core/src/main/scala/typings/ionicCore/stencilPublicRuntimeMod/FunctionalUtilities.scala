@@ -22,7 +22,6 @@ object FunctionalUtilities {
     map: (js.Array[VNode], js.Function3[/* vnode */ ChildNode, /* index */ Double, /* array */ js.Array[ChildNode], ChildNode]) => js.Array[VNode]
   ): FunctionalUtilities = {
     val __obj = js.Dynamic.literal(forEach = js.Any.fromFunction2(forEach), map = js.Any.fromFunction2(map))
-  
     __obj.asInstanceOf[FunctionalUtilities]
   }
 }

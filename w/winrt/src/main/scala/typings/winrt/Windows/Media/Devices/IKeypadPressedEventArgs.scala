@@ -12,7 +12,6 @@ object IKeypadPressedEventArgs {
   @scala.inline
   def apply(telephonyKey: TelephonyKey): IKeypadPressedEventArgs = {
     val __obj = js.Dynamic.literal(telephonyKey = telephonyKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IKeypadPressedEventArgs]
   }
 }

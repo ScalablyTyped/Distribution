@@ -181,7 +181,7 @@ trait CommonWrapper[P, S, C] extends js.Object {
     *
     * NOTE: can only be called on a wrapper of a single node.
     */
-  def prop[K /* <: String */](key: K): /* import warning: importer.ImportType#apply Failed type conversion: P[K] */ js.Any = js.native
+  def prop[K /* <: /* keyof P */ String */](key: K): /* import warning: importer.ImportType#apply Failed type conversion: P[K] */ js.Any = js.native
   def prop[T](key: String): T = js.native
   /**
     * Returns the props hash for the current node of the wrapper.
@@ -223,8 +223,8 @@ trait CommonWrapper[P, S, C] extends js.Object {
     *
     * NOTE: can only be called on a wrapper instance that is also the root instance.
     */
-  def setProps[K /* <: String */](props: Pick[P, K]): this.type = js.native
-  def setProps[K /* <: String */](props: Pick[P, K], callback: js.Function0[Unit]): this.type = js.native
+  def setProps[K /* <: /* keyof P */ String */](props: Pick[P, K]): this.type = js.native
+  def setProps[K /* <: /* keyof P */ String */](props: Pick[P, K], callback: js.Function0[Unit]): this.type = js.native
   /**
     * A method to invoke setState() on the root component instance similar to how you might in the definition of
     * the component, and re-renders. This method is useful for testing your component in hard to achieve states,
@@ -235,8 +235,8 @@ trait CommonWrapper[P, S, C] extends js.Object {
     *
     * NOTE: can only be called on a wrapper instance that is also the root instance.
     */
-  def setState[K /* <: String */](state: Pick[S, K]): this.type = js.native
-  def setState[K /* <: String */](state: Pick[S, K], callback: js.Function0[Unit]): this.type = js.native
+  def setState[K /* <: /* keyof S */ String */](state: Pick[S, K]): this.type = js.native
+  def setState[K /* <: /* keyof S */ String */](state: Pick[S, K], callback: js.Function0[Unit]): this.type = js.native
   /**
     * Simulate events.
     * Returns itself.
@@ -267,7 +267,7 @@ trait CommonWrapper[P, S, C] extends js.Object {
     * Returns the state hash for the root node of the wrapper. Optionally pass in a prop name and it will return just that value.
     */
   def state(): S = js.native
-  def state[K /* <: String */](key: K): /* import warning: importer.ImportType#apply Failed type conversion: S[K] */ js.Any = js.native
+  def state[K /* <: /* keyof S */ String */](key: K): /* import warning: importer.ImportType#apply Failed type conversion: S[K] */ js.Any = js.native
   def state[T](key: String): T = js.native
   /**
     * Taps into the wrapper method chain. Helpful for debugging.

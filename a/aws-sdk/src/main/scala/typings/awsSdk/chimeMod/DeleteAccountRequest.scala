@@ -16,7 +16,6 @@ object DeleteAccountRequest {
   @scala.inline
   def apply(AccountId: NonEmptyString): DeleteAccountRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteAccountRequest]
   }
 }

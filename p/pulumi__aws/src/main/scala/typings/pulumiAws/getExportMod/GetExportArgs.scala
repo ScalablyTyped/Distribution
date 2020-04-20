@@ -16,7 +16,6 @@ object GetExportArgs {
   @scala.inline
   def apply(name: String): GetExportArgs = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetExportArgs]
   }
 }

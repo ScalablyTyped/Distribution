@@ -17,7 +17,6 @@ object AnonDist {
   @scala.inline
   def apply(dist: Blob, height: Double, width: Double): AnonDist = {
     val __obj = js.Dynamic.literal(dist = dist.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDist]
   }
 }

@@ -13,7 +13,6 @@ object OnScrollEventArgs {
   @scala.inline
   def apply[T /* <: SlickData */](grid: Grid[T], scrollLeft: Double, scrollTop: Double): OnScrollEventArgs[T] = {
     val __obj = js.Dynamic.literal(grid = grid.asInstanceOf[js.Any], scrollLeft = scrollLeft.asInstanceOf[js.Any], scrollTop = scrollTop.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnScrollEventArgs[T]]
   }
 }

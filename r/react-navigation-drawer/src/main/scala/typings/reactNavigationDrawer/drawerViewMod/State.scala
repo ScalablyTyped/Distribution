@@ -13,7 +13,6 @@ object State {
   @scala.inline
   def apply(drawerWidth: Double, loaded: js.Array[Double]): State = {
     val __obj = js.Dynamic.literal(drawerWidth = drawerWidth.asInstanceOf[js.Any], loaded = loaded.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[State]
   }
 }

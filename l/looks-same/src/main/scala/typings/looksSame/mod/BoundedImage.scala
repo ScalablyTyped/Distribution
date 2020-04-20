@@ -23,7 +23,6 @@ object BoundedImage {
   @scala.inline
   def apply(boundingBox: CoordBounds, source: String | Buffer): BoundedImage = {
     val __obj = js.Dynamic.literal(boundingBox = boundingBox.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BoundedImage]
   }
 }

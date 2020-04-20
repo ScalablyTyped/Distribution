@@ -20,7 +20,6 @@ object TeamsCheckManagesRepoInOrgResponse {
     source: TeamsCheckManagesRepoInOrgResponseSource
   ): TeamsCheckManagesRepoInOrgResponse = {
     val __obj = js.Dynamic.literal(organization = organization.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TeamsCheckManagesRepoInOrgResponse]
   }
 }

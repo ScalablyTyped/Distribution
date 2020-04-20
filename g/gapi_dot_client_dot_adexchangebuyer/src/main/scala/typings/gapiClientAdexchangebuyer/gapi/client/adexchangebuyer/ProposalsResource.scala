@@ -35,7 +35,6 @@ object ProposalsResource {
     update: AnonProposalId => Request_[Proposal]
   ): ProposalsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), patch = js.Any.fromFunction1(patch), search = js.Any.fromFunction1(search), setupcomplete = js.Any.fromFunction1(setupcomplete), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[ProposalsResource]
   }
 }

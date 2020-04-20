@@ -16,7 +16,6 @@ object DeleteConfigurationSetRequest {
   @scala.inline
   def apply(ConfigurationSetName: ConfigurationSetName): DeleteConfigurationSetRequest = {
     val __obj = js.Dynamic.literal(ConfigurationSetName = ConfigurationSetName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteConfigurationSetRequest]
   }
 }

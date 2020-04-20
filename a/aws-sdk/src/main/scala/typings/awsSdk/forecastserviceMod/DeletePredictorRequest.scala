@@ -16,7 +16,6 @@ object DeletePredictorRequest {
   @scala.inline
   def apply(PredictorArn: Arn): DeletePredictorRequest = {
     val __obj = js.Dynamic.literal(PredictorArn = PredictorArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeletePredictorRequest]
   }
 }

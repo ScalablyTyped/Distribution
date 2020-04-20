@@ -14,7 +14,6 @@ object ProxyResponse {
   @scala.inline
   def apply(buffered: Buffer, statusCode: Double): ProxyResponse = {
     val __obj = js.Dynamic.literal(buffered = buffered.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProxyResponse]
   }
 }

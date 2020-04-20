@@ -17,7 +17,6 @@ object ObserverStatic {
   @scala.inline
   def apply(notifyOn: IScheduler => Observer[js.Any]): ObserverStatic = {
     val __obj = js.Dynamic.literal(notifyOn = js.Any.fromFunction1(notifyOn))
-  
     __obj.asInstanceOf[ObserverStatic]
   }
 }

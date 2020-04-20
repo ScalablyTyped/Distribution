@@ -18,7 +18,6 @@ object MultiFactorCreateSettings {
   @scala.inline
   def apply(enrolledFactors: js.Array[CreateMultiFactorInfoRequest]): MultiFactorCreateSettings = {
     val __obj = js.Dynamic.literal(enrolledFactors = enrolledFactors.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MultiFactorCreateSettings]
   }
 }

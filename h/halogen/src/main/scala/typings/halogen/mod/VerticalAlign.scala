@@ -21,28 +21,26 @@ trait VerticalAlign extends js.Object
 
 object VerticalAlign {
   @scala.inline
-  def baseline: typings.halogen.halogenStrings.baseline = this.cast("baseline")
+  def baseline: typings.halogen.halogenStrings.baseline = "baseline".asInstanceOf[typings.halogen.halogenStrings.baseline]
   @scala.inline
-  def bottom: typings.halogen.halogenStrings.bottom = this.cast("bottom")
+  def bottom: typings.halogen.halogenStrings.bottom = "bottom".asInstanceOf[typings.halogen.halogenStrings.bottom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def inherit: typings.halogen.halogenStrings.inherit = "inherit".asInstanceOf[typings.halogen.halogenStrings.inherit]
   @scala.inline
-  def inherit: typings.halogen.halogenStrings.inherit = this.cast("inherit")
+  def initial: typings.halogen.halogenStrings.initial = "initial".asInstanceOf[typings.halogen.halogenStrings.initial]
   @scala.inline
-  def initial: typings.halogen.halogenStrings.initial = this.cast("initial")
+  def length: typings.halogen.halogenStrings.length = "length".asInstanceOf[typings.halogen.halogenStrings.length]
   @scala.inline
-  def length: typings.halogen.halogenStrings.length = this.cast("length")
+  def middle: typings.halogen.halogenStrings.middle = "middle".asInstanceOf[typings.halogen.halogenStrings.middle]
   @scala.inline
-  def middle: typings.halogen.halogenStrings.middle = this.cast("middle")
+  def sub: typings.halogen.halogenStrings.sub = "sub".asInstanceOf[typings.halogen.halogenStrings.sub]
   @scala.inline
-  def sub: typings.halogen.halogenStrings.sub = this.cast("sub")
+  def `super`: typings.halogen.halogenStrings.`super` = "super".asInstanceOf[typings.halogen.halogenStrings.`super`]
   @scala.inline
-  def `super`: typings.halogen.halogenStrings.`super` = this.cast("super")
+  def `text-bottom`: typings.halogen.halogenStrings.`text-bottom` = "text-bottom".asInstanceOf[typings.halogen.halogenStrings.`text-bottom`]
   @scala.inline
-  def `text-bottom`: typings.halogen.halogenStrings.`text-bottom` = this.cast("text-bottom")
+  def `text-top`: typings.halogen.halogenStrings.`text-top` = "text-top".asInstanceOf[typings.halogen.halogenStrings.`text-top`]
   @scala.inline
-  def `text-top`: typings.halogen.halogenStrings.`text-top` = this.cast("text-top")
-  @scala.inline
-  def top: typings.halogen.halogenStrings.top = this.cast("top")
+  def top: typings.halogen.halogenStrings.top = "top".asInstanceOf[typings.halogen.halogenStrings.top]
 }
 

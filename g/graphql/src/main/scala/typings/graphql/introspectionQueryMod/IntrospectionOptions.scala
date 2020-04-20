@@ -14,7 +14,6 @@ object IntrospectionOptions {
   @scala.inline
   def apply(descriptions: Boolean): IntrospectionOptions = {
     val __obj = js.Dynamic.literal(descriptions = descriptions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IntrospectionOptions]
   }
 }

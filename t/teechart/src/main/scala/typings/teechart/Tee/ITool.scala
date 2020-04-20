@@ -24,7 +24,6 @@ object ITool {
     mousemove: js.Any => Boolean
   ): ITool = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], chart = chart.asInstanceOf[js.Any], clicked = js.Any.fromFunction1(clicked), draw = js.Any.fromFunction0(draw), mousedown = js.Any.fromFunction1(mousedown), mousemove = js.Any.fromFunction1(mousemove))
-  
     __obj.asInstanceOf[ITool]
   }
 }

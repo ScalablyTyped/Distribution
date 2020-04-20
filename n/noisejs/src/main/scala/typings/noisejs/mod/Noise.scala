@@ -53,7 +53,6 @@ object Noise {
     simplex3: (Double, Double, Double) => Double
   ): Noise = {
     val __obj = js.Dynamic.literal(perlin2 = js.Any.fromFunction2(perlin2), perlin3 = js.Any.fromFunction3(perlin3), seed = js.Any.fromFunction1(seed), simplex2 = js.Any.fromFunction2(simplex2), simplex3 = js.Any.fromFunction3(simplex3))
-  
     __obj.asInstanceOf[Noise]
   }
 }

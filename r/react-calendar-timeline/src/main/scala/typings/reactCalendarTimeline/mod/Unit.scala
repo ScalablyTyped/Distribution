@@ -17,20 +17,18 @@ trait Unit extends js.Object
 
 object Unit {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def day: typings.reactCalendarTimeline.reactCalendarTimelineStrings.day = "day".asInstanceOf[typings.reactCalendarTimeline.reactCalendarTimelineStrings.day]
   @scala.inline
-  def day: typings.reactCalendarTimeline.reactCalendarTimelineStrings.day = this.cast("day")
+  def hour: typings.reactCalendarTimeline.reactCalendarTimelineStrings.hour = "hour".asInstanceOf[typings.reactCalendarTimeline.reactCalendarTimelineStrings.hour]
   @scala.inline
-  def hour: typings.reactCalendarTimeline.reactCalendarTimelineStrings.hour = this.cast("hour")
+  def minute: typings.reactCalendarTimeline.reactCalendarTimelineStrings.minute = "minute".asInstanceOf[typings.reactCalendarTimeline.reactCalendarTimelineStrings.minute]
   @scala.inline
-  def minute: typings.reactCalendarTimeline.reactCalendarTimelineStrings.minute = this.cast("minute")
+  def month: typings.reactCalendarTimeline.reactCalendarTimelineStrings.month = "month".asInstanceOf[typings.reactCalendarTimeline.reactCalendarTimelineStrings.month]
   @scala.inline
-  def month: typings.reactCalendarTimeline.reactCalendarTimelineStrings.month = this.cast("month")
+  def second: typings.reactCalendarTimeline.reactCalendarTimelineStrings.second = "second".asInstanceOf[typings.reactCalendarTimeline.reactCalendarTimelineStrings.second]
   @scala.inline
-  def second: typings.reactCalendarTimeline.reactCalendarTimelineStrings.second = this.cast("second")
+  def week: typings.reactCalendarTimeline.reactCalendarTimelineStrings.week = "week".asInstanceOf[typings.reactCalendarTimeline.reactCalendarTimelineStrings.week]
   @scala.inline
-  def week: typings.reactCalendarTimeline.reactCalendarTimelineStrings.week = this.cast("week")
-  @scala.inline
-  def year: typings.reactCalendarTimeline.reactCalendarTimelineStrings.year = this.cast("year")
+  def year: typings.reactCalendarTimeline.reactCalendarTimelineStrings.year = "year".asInstanceOf[typings.reactCalendarTimeline.reactCalendarTimelineStrings.year]
 }
 

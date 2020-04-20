@@ -29,44 +29,42 @@ trait MarkerType extends js.Object
 
 object MarkerType {
   @scala.inline
-  def bowtie: typings.bizcharts.bizchartsStrings.bowtie = this.cast("bowtie")
+  def bowtie: typings.bizcharts.bizchartsStrings.bowtie = "bowtie".asInstanceOf[typings.bizcharts.bizchartsStrings.bowtie]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def circle: typings.bizcharts.bizchartsStrings.circle = "circle".asInstanceOf[typings.bizcharts.bizchartsStrings.circle]
   @scala.inline
-  def circle: typings.bizcharts.bizchartsStrings.circle = this.cast("circle")
+  def cross: typings.bizcharts.bizchartsStrings.cross = "cross".asInstanceOf[typings.bizcharts.bizchartsStrings.cross]
   @scala.inline
-  def cross: typings.bizcharts.bizchartsStrings.cross = this.cast("cross")
+  def diamond: typings.bizcharts.bizchartsStrings.diamond = "diamond".asInstanceOf[typings.bizcharts.bizchartsStrings.diamond]
   @scala.inline
-  def diamond: typings.bizcharts.bizchartsStrings.diamond = this.cast("diamond")
+  def hexagon: typings.bizcharts.bizchartsStrings.hexagon = "hexagon".asInstanceOf[typings.bizcharts.bizchartsStrings.hexagon]
   @scala.inline
-  def hexagon: typings.bizcharts.bizchartsStrings.hexagon = this.cast("hexagon")
+  def hollowBowtie: typings.bizcharts.bizchartsStrings.hollowBowtie = "hollowBowtie".asInstanceOf[typings.bizcharts.bizchartsStrings.hollowBowtie]
   @scala.inline
-  def hollowBowtie: typings.bizcharts.bizchartsStrings.hollowBowtie = this.cast("hollowBowtie")
+  def hollowCircle: typings.bizcharts.bizchartsStrings.hollowCircle = "hollowCircle".asInstanceOf[typings.bizcharts.bizchartsStrings.hollowCircle]
   @scala.inline
-  def hollowCircle: typings.bizcharts.bizchartsStrings.hollowCircle = this.cast("hollowCircle")
+  def hollowDiamond: typings.bizcharts.bizchartsStrings.hollowDiamond = "hollowDiamond".asInstanceOf[typings.bizcharts.bizchartsStrings.hollowDiamond]
   @scala.inline
-  def hollowDiamond: typings.bizcharts.bizchartsStrings.hollowDiamond = this.cast("hollowDiamond")
+  def hollowHexagon: typings.bizcharts.bizchartsStrings.hollowHexagon = "hollowHexagon".asInstanceOf[typings.bizcharts.bizchartsStrings.hollowHexagon]
   @scala.inline
-  def hollowHexagon: typings.bizcharts.bizchartsStrings.hollowHexagon = this.cast("hollowHexagon")
+  def hollowSquare: typings.bizcharts.bizchartsStrings.hollowSquare = "hollowSquare".asInstanceOf[typings.bizcharts.bizchartsStrings.hollowSquare]
   @scala.inline
-  def hollowSquare: typings.bizcharts.bizchartsStrings.hollowSquare = this.cast("hollowSquare")
+  def hollowTriangle: typings.bizcharts.bizchartsStrings.hollowTriangle = "hollowTriangle".asInstanceOf[typings.bizcharts.bizchartsStrings.hollowTriangle]
   @scala.inline
-  def hollowTriangle: typings.bizcharts.bizchartsStrings.hollowTriangle = this.cast("hollowTriangle")
+  def `hollowTriangle-down`: typings.bizcharts.bizchartsStrings.`hollowTriangle-down` = "hollowTriangle-down".asInstanceOf[typings.bizcharts.bizchartsStrings.`hollowTriangle-down`]
   @scala.inline
-  def `hollowTriangle-down`: typings.bizcharts.bizchartsStrings.`hollowTriangle-down` = this.cast("hollowTriangle-down")
+  def hyphen: typings.bizcharts.bizchartsStrings.hyphen = "hyphen".asInstanceOf[typings.bizcharts.bizchartsStrings.hyphen]
   @scala.inline
-  def hyphen: typings.bizcharts.bizchartsStrings.hyphen = this.cast("hyphen")
+  def line: typings.bizcharts.bizchartsStrings.line = "line".asInstanceOf[typings.bizcharts.bizchartsStrings.line]
   @scala.inline
-  def line: typings.bizcharts.bizchartsStrings.line = this.cast("line")
+  def plus: typings.bizcharts.bizchartsStrings.plus = "plus".asInstanceOf[typings.bizcharts.bizchartsStrings.plus]
   @scala.inline
-  def plus: typings.bizcharts.bizchartsStrings.plus = this.cast("plus")
+  def square: typings.bizcharts.bizchartsStrings.square = "square".asInstanceOf[typings.bizcharts.bizchartsStrings.square]
   @scala.inline
-  def square: typings.bizcharts.bizchartsStrings.square = this.cast("square")
+  def tick: typings.bizcharts.bizchartsStrings.tick = "tick".asInstanceOf[typings.bizcharts.bizchartsStrings.tick]
   @scala.inline
-  def tick: typings.bizcharts.bizchartsStrings.tick = this.cast("tick")
+  def triangle: typings.bizcharts.bizchartsStrings.triangle = "triangle".asInstanceOf[typings.bizcharts.bizchartsStrings.triangle]
   @scala.inline
-  def triangle: typings.bizcharts.bizchartsStrings.triangle = this.cast("triangle")
-  @scala.inline
-  def `triangle-down`: typings.bizcharts.bizchartsStrings.`triangle-down` = this.cast("triangle-down")
+  def `triangle-down`: typings.bizcharts.bizchartsStrings.`triangle-down` = "triangle-down".asInstanceOf[typings.bizcharts.bizchartsStrings.`triangle-down`]
 }
 

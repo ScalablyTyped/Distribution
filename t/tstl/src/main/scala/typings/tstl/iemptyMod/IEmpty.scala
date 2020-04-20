@@ -15,7 +15,6 @@ object IEmpty {
   @scala.inline
   def apply(empty: () => Boolean): IEmpty = {
     val __obj = js.Dynamic.literal(empty = js.Any.fromFunction0(empty))
-  
     __obj.asInstanceOf[IEmpty]
   }
 }

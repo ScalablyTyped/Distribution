@@ -18,7 +18,6 @@ object IEquippableComponent {
   @scala.inline
   def apply(slots: js.Array[AnonAccepteditems]): IEquippableComponent = {
     val __obj = js.Dynamic.literal(slots = slots.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IEquippableComponent]
   }
 }

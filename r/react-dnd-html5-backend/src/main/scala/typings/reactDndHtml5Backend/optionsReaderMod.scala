@@ -11,8 +11,8 @@ object optionsReaderMod extends js.Object {
   class OptionsReader protected () extends js.Object {
     def this(globalContext: js.Any) = this()
     var globalContext: js.Any = js.native
-    def document(): js.Any = js.native
-    def window(): js.Any = js.native
+    def document: js.Any = js.native
+    def window: js.Any = js.native
   }
   
 }

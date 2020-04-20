@@ -24,7 +24,6 @@ object BatchGetObjectAttributes {
   @scala.inline
   def apply(AttributeNames: AttributeNameList, ObjectReference: ObjectReference, SchemaFacet: SchemaFacet): BatchGetObjectAttributes = {
     val __obj = js.Dynamic.literal(AttributeNames = AttributeNames.asInstanceOf[js.Any], ObjectReference = ObjectReference.asInstanceOf[js.Any], SchemaFacet = SchemaFacet.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchGetObjectAttributes]
   }
 }

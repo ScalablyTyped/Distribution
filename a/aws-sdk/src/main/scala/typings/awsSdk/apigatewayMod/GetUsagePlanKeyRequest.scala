@@ -20,7 +20,6 @@ object GetUsagePlanKeyRequest {
   @scala.inline
   def apply(keyId: String, usagePlanId: String): GetUsagePlanKeyRequest = {
     val __obj = js.Dynamic.literal(keyId = keyId.asInstanceOf[js.Any], usagePlanId = usagePlanId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetUsagePlanKeyRequest]
   }
 }

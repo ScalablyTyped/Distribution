@@ -16,6 +16,6 @@ class WritableStreamBuffer () extends Writable {
   def _write(chunk: js.Any, encoding: String, callback: js.Function0[Unit]): Unit = js.native
   def consume(): Buffer = js.native
   def consume(bytes: Double): Buffer = js.native
-  def size(): Double = js.native
+  def size: Double = js.native
 }
 

@@ -19,7 +19,6 @@ object IgGridAppendRowsOnDemandMethods {
   @scala.inline
   def apply(destroy: () => Unit, nextChunk: () => Unit): IgGridAppendRowsOnDemandMethods = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), nextChunk = js.Any.fromFunction0(nextChunk))
-  
     __obj.asInstanceOf[IgGridAppendRowsOnDemandMethods]
   }
 }

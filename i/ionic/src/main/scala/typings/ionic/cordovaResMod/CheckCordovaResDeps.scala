@@ -13,7 +13,6 @@ object CheckCordovaResDeps {
   @scala.inline
   def apply(config: IConfig): CheckCordovaResDeps = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CheckCordovaResDeps]
   }
 }

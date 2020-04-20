@@ -1,5 +1,6 @@
 package typings.titanium.Titanium.UI.iOS
 
+import typings.titanium.Titanium.Proxy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,9 +10,16 @@ import scala.scalajs.js.annotation._
 			 */
 @JSGlobal("Titanium.UI.iOS.SystemButton")
 @js.native
+class SystemButton () extends Proxy
+
+/**
+			 * A set of constants for creating standard iOS system buttons.
+			 */
+@JSGlobal("Titanium.UI.iOS.SystemButton")
+@js.native
 object SystemButton extends js.Object {
   /**
-  				 * Use with [Button.systemButton](Titanium.UI.Button.systemButton) to specify an **Action** button.
+  				 * Use with [Button.systemButton](Titanium.UI.Button.systemButton) to specify an **Action** button. <img src="images/systembutton/system_icons.png"/>
   				 */
   val ACTION: Double = js.native
   /**
@@ -117,41 +125,5 @@ object SystemButton extends js.Object {
   				 * Use with [Button.systemButton](Titanium.UI.Button.systemButton) to specify a **Trash** button.
   				 */
   val TRASH: Double = js.native
-  /**
-  				 * The name of the API that this proxy corresponds to.
-  				 */
-  val apiName: String = js.native
-  /**
-  				 * Indicates if the proxy will bubble an event to its parent.
-  				 */
-  var bubbleParent: Boolean = js.native
-  /**
-  				 * Adds the specified callback as an event listener for the named event.
-  				 */
-  def addEventListener(name: String, callback: js.Function1[/* param0 */ js.Any, _]): Unit = js.native
-  /**
-  				 * Applies the properties to the proxy.
-  				 */
-  def applyProperties(props: js.Any): Unit = js.native
-  /**
-  				 * Fires a synthesized event to any registered listeners.
-  				 */
-  def fireEvent(name: String, event: js.Any): Unit = js.native
-  /**
-  				 * Gets the value of the <Titanium.UI.iOS.SystemButton.apiName> property.
-  				 */
-  def getApiName(): String = js.native
-  /**
-  				 * Gets the value of the <Titanium.UI.iOS.SystemButton.bubbleParent> property.
-  				 */
-  def getBubbleParent(): Boolean = js.native
-  /**
-  				 * Removes the specified callback as an event listener for the named event.
-  				 */
-  def removeEventListener(name: String, callback: js.Function1[/* param0 */ js.Any, _]): Unit = js.native
-  /**
-  				 * Sets the value of the <Titanium.UI.iOS.SystemButton.bubbleParent> property.
-  				 */
-  def setBubbleParent(bubbleParent: Boolean): Unit = js.native
 }
 

@@ -13,12 +13,10 @@ trait transitionOutType extends js.Object
 
 object transitionOutType {
   @scala.inline
-  def bounceOut: typings.reactReduxToastr.reactReduxToastrStrings.bounceOut = this.cast("bounceOut")
+  def bounceOut: typings.reactReduxToastr.reactReduxToastrStrings.bounceOut = "bounceOut".asInstanceOf[typings.reactReduxToastr.reactReduxToastrStrings.bounceOut]
   @scala.inline
-  def bounceOutUp: typings.reactReduxToastr.reactReduxToastrStrings.bounceOutUp = this.cast("bounceOutUp")
+  def bounceOutUp: typings.reactReduxToastr.reactReduxToastrStrings.bounceOutUp = "bounceOutUp".asInstanceOf[typings.reactReduxToastr.reactReduxToastrStrings.bounceOutUp]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def fadeOut: typings.reactReduxToastr.reactReduxToastrStrings.fadeOut = this.cast("fadeOut")
+  def fadeOut: typings.reactReduxToastr.reactReduxToastrStrings.fadeOut = "fadeOut".asInstanceOf[typings.reactReduxToastr.reactReduxToastrStrings.fadeOut]
 }
 

@@ -13,7 +13,6 @@ object StartDiscovererRequest {
   @scala.inline
   def apply(DiscovererId: string): StartDiscovererRequest = {
     val __obj = js.Dynamic.literal(DiscovererId = DiscovererId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StartDiscovererRequest]
   }
 }

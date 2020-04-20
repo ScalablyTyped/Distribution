@@ -14,7 +14,6 @@ object AnonRoute {
   @scala.inline
   def apply(route: NavigationRoute[NavigationParams]): AnonRoute = {
     val __obj = js.Dynamic.literal(route = route.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRoute]
   }
 }

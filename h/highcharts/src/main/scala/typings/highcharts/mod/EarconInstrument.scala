@@ -26,7 +26,6 @@ object EarconInstrument {
     playOptions: typings.highcharts.sonificationMod.highchartsAugmentingMod.InstrumentPlayOptionsObject
   ): EarconInstrument = {
     val __obj = js.Dynamic.literal(instrument = instrument.asInstanceOf[js.Any], playOptions = playOptions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EarconInstrument]
   }
 }

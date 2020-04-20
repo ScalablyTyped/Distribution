@@ -49,7 +49,6 @@ object TopologySpreadConstraint {
   @scala.inline
   def apply(labelSelector: LabelSelector, maxSkew: Double, topologyKey: String, whenUnsatisfiable: String): TopologySpreadConstraint = {
     val __obj = js.Dynamic.literal(labelSelector = labelSelector.asInstanceOf[js.Any], maxSkew = maxSkew.asInstanceOf[js.Any], topologyKey = topologyKey.asInstanceOf[js.Any], whenUnsatisfiable = whenUnsatisfiable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TopologySpreadConstraint]
   }
 }

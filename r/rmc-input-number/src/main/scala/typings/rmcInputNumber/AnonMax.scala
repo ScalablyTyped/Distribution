@@ -26,7 +26,6 @@ object AnonMax {
     step: Double
   ): AnonMax = {
     val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], onBlur = js.Any.fromFunction0(onBlur), onChange = js.Any.fromFunction0(onChange), onFocus = js.Any.fromFunction0(onFocus), parser = js.Any.fromFunction1(parser), step = step.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMax]
   }
 }

@@ -13,7 +13,6 @@ object AnonCount {
   @scala.inline
   def apply(count: Double, logs: js.Array[String]): AnonCount = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], logs = logs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCount]
   }
 }

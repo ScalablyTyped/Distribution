@@ -22,7 +22,6 @@ object AttributeDefinition {
   @scala.inline
   def apply(AttributeName: String, AttributeType: S | N | B | String): AttributeDefinition = {
     val __obj = js.Dynamic.literal(AttributeName = AttributeName.asInstanceOf[js.Any], AttributeType = AttributeType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AttributeDefinition]
   }
 }

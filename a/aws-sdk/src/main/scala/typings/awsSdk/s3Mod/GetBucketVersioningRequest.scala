@@ -16,7 +16,6 @@ object GetBucketVersioningRequest {
   @scala.inline
   def apply(Bucket: BucketName): GetBucketVersioningRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBucketVersioningRequest]
   }
 }

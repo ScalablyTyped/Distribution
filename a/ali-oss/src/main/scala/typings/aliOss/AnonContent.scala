@@ -14,7 +14,6 @@ object AnonContent {
   @scala.inline
   def apply(content: js.Any, res: NormalSuccessResponse): AnonContent = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonContent]
   }
 }

@@ -19,7 +19,6 @@ object Quixote_ {
     createFrame: (QuixoteFrameOptions, js.Function2[/* err */ Error, /* loadedFrame */ QFrame, Unit]) => QFrame
   ): Quixote_ = {
     val __obj = js.Dynamic.literal(createFrame = js.Any.fromFunction2(createFrame))
-  
     __obj.asInstanceOf[Quixote_]
   }
 }

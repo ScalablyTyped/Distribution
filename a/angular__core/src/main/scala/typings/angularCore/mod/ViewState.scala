@@ -45,38 +45,36 @@ trait ViewState extends js.Object
 
 object ViewState {
   @scala.inline
-  def Attached: `4` = this.cast(4)
+  def Attached: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def BeforeFirstCheck: `1` = this.cast(1)
+  def BeforeFirstCheck: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def CatDetectChanges: `12` = this.cast(12)
+  def CatDetectChanges: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def CatInit: `13` = this.cast(13)
+  def CatInit: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def CheckProjectedView: `32` = this.cast(32)
+  def CheckProjectedView: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def CheckProjectedViews: `64` = this.cast(64)
+  def CheckProjectedViews: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def ChecksEnabled: `8` = this.cast(8)
+  def ChecksEnabled: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def Destroyed: `128` = this.cast(128)
+  def Destroyed: `128` = 128.asInstanceOf[`128`]
   @scala.inline
-  def FirstCheck: `2` = this.cast(2)
+  def FirstCheck: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def InitState_AfterInit: `1024` = this.cast(1024)
+  def InitState_AfterInit: `1024` = 1024.asInstanceOf[`1024`]
   @scala.inline
-  def InitState_BeforeInit: `0` = this.cast(0)
+  def InitState_BeforeInit: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def InitState_CallingAfterContentInit: `512` = this.cast(512)
+  def InitState_CallingAfterContentInit: `512` = 512.asInstanceOf[`512`]
   @scala.inline
-  def InitState_CallingAfterViewInit: `768` = this.cast(768)
+  def InitState_CallingAfterViewInit: `768` = 768.asInstanceOf[`768`]
   @scala.inline
-  def InitState_CallingOnInit: `256` = this.cast(256)
+  def InitState_CallingOnInit: `256` = 256.asInstanceOf[`256`]
   @scala.inline
-  def InitState_Mask: `1792` = this.cast(1792)
+  def InitState_Mask: `1792` = 1792.asInstanceOf[`1792`]
   @scala.inline
-  def IsProjectedView: `16` = this.cast(16)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def IsProjectedView: `16` = 16.asInstanceOf[`16`]
 }
 

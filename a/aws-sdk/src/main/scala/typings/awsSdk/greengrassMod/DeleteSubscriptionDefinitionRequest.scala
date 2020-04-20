@@ -16,7 +16,6 @@ object DeleteSubscriptionDefinitionRequest {
   @scala.inline
   def apply(SubscriptionDefinitionId: string): DeleteSubscriptionDefinitionRequest = {
     val __obj = js.Dynamic.literal(SubscriptionDefinitionId = SubscriptionDefinitionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteSubscriptionDefinitionRequest]
   }
 }

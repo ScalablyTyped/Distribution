@@ -14,14 +14,12 @@ trait AssociatedMenuGroup extends js.Object
 
 object AssociatedMenuGroup {
   @scala.inline
-  def Details: typings.microsoftSdkSoap.microsoftSdkSoapStrings.Details = this.cast("Details")
+  def Details: typings.microsoftSdkSoap.microsoftSdkSoapStrings.Details = "Details".asInstanceOf[typings.microsoftSdkSoap.microsoftSdkSoapStrings.Details]
   @scala.inline
-  def Marketing: typings.microsoftSdkSoap.microsoftSdkSoapStrings.Marketing = this.cast("Marketing")
+  def Marketing: typings.microsoftSdkSoap.microsoftSdkSoapStrings.Marketing = "Marketing".asInstanceOf[typings.microsoftSdkSoap.microsoftSdkSoapStrings.Marketing]
   @scala.inline
-  def Sales: typings.microsoftSdkSoap.microsoftSdkSoapStrings.Sales = this.cast("Sales")
+  def Sales: typings.microsoftSdkSoap.microsoftSdkSoapStrings.Sales = "Sales".asInstanceOf[typings.microsoftSdkSoap.microsoftSdkSoapStrings.Sales]
   @scala.inline
-  def Service: typings.microsoftSdkSoap.microsoftSdkSoapStrings.Service = this.cast("Service")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Service: typings.microsoftSdkSoap.microsoftSdkSoapStrings.Service = "Service".asInstanceOf[typings.microsoftSdkSoap.microsoftSdkSoapStrings.Service]
 }
 

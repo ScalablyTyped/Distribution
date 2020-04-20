@@ -16,7 +16,6 @@ object SourceLocation {
   @scala.inline
   def apply(end: Double, kind: Source, source: typings.graphql.mod.Source, start: Double): SourceLocation = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SourceLocation]
   }
 }

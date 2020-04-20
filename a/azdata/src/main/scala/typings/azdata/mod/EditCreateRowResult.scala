@@ -13,7 +13,6 @@ object EditCreateRowResult {
   @scala.inline
   def apply(defaultValues: js.Array[String], newRowId: Double): EditCreateRowResult = {
     val __obj = js.Dynamic.literal(defaultValues = defaultValues.asInstanceOf[js.Any], newRowId = newRowId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EditCreateRowResult]
   }
 }

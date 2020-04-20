@@ -17,7 +17,6 @@ object IQueryOptionsFactory {
     createCommonFolderQuery: CommonFolderQuery => QueryOptions
   ): IQueryOptionsFactory = {
     val __obj = js.Dynamic.literal(createCommonFileQuery = js.Any.fromFunction2(createCommonFileQuery), createCommonFolderQuery = js.Any.fromFunction1(createCommonFolderQuery))
-  
     __obj.asInstanceOf[IQueryOptionsFactory]
   }
 }

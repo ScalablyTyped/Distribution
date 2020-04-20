@@ -55,7 +55,6 @@ object ResourcePolicyRule {
     verbs: js.Array[String]
   ): ResourcePolicyRule = {
     val __obj = js.Dynamic.literal(apiGroups = apiGroups.asInstanceOf[js.Any], clusterScope = clusterScope.asInstanceOf[js.Any], namespaces = namespaces.asInstanceOf[js.Any], resources = resources.asInstanceOf[js.Any], verbs = verbs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResourcePolicyRule]
   }
 }

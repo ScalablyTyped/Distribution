@@ -20,16 +20,14 @@ trait WdStyleSort extends js.Object
 
 object WdStyleSort {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdStyleSortByBasedOn: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdStyleSortByBasedOn: `3` = this.cast(3)
+  def wdStyleSortByFont: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdStyleSortByFont: `2` = this.cast(2)
+  def wdStyleSortByName: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdStyleSortByName: `0` = this.cast(0)
+  def wdStyleSortByType: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdStyleSortByType: `4` = this.cast(4)
-  @scala.inline
-  def wdStyleSortRecommended: `1` = this.cast(1)
+  def wdStyleSortRecommended: `1` = 1.asInstanceOf[`1`]
 }
 

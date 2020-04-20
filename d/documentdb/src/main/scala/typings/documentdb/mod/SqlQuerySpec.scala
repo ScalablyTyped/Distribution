@@ -15,7 +15,6 @@ object SqlQuerySpec {
   @scala.inline
   def apply(parameters: js.Array[SqlParameter], query: String): SqlQuerySpec = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SqlQuerySpec]
   }
 }

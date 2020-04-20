@@ -38,7 +38,6 @@ object CreateCompilationJobRequest {
     StoppingCondition: StoppingCondition
   ): CreateCompilationJobRequest = {
     val __obj = js.Dynamic.literal(CompilationJobName = CompilationJobName.asInstanceOf[js.Any], InputConfig = InputConfig.asInstanceOf[js.Any], OutputConfig = OutputConfig.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any], StoppingCondition = StoppingCondition.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateCompilationJobRequest]
   }
 }

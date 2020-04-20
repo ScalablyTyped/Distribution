@@ -14,7 +14,6 @@ object InitSdkOptions {
   @scala.inline
   def apply(appId: String, devKey: String, isDebug: Boolean): InitSdkOptions = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], devKey = devKey.asInstanceOf[js.Any], isDebug = isDebug.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InitSdkOptions]
   }
 }

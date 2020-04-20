@@ -22,7 +22,6 @@ object HeapDiffChange {
     size_bytes: Double
   ): HeapDiffChange = {
     val __obj = js.Dynamic.literal(allocated_nodes = allocated_nodes.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], freed_nodes = freed_nodes.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], size_bytes = size_bytes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HeapDiffChange]
   }
 }

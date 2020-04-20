@@ -39,6 +39,6 @@ class ConsolePanel_ protected () extends MainAreaWidget[Panel] {
   /**
     * The session used by the panel.
     */
-  def sessionContext(): ISessionContext = js.native
+  def sessionContext: ISessionContext = js.native
 }
 

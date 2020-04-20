@@ -22,7 +22,6 @@ object SpeakerLabelsResult {
   @scala.inline
   def apply(confidence: Double, final_results: Boolean, from: Double, speaker: Double, to: Double): SpeakerLabelsResult = {
     val __obj = js.Dynamic.literal(confidence = confidence.asInstanceOf[js.Any], final_results = final_results.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], speaker = speaker.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SpeakerLabelsResult]
   }
 }

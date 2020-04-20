@@ -734,7 +734,7 @@ object activexAccessStrings {
   @scala.inline
   def GotFocus: GotFocus = "GotFocus".asInstanceOf[GotFocus]
   @scala.inline
-  def `HTML LeftparenthesisAsteriskDothtmlRightparenthesis`: `HTML LeftparenthesisAsteriskDothtmlRightparenthesis` = "HTML (*.html)".asInstanceOf[`HTML LeftparenthesisAsteriskDothtmlRightparenthesis`]
+  def `HTML LeftparenthesisAsteriskDothtmlRightparenthesis`: `HTML LeftparenthesisAsteriskDothtmlRightparenthesis` = ("HTML (*.html)").asInstanceOf[`HTML LeftparenthesisAsteriskDothtmlRightparenthesis`]
   @scala.inline
   def Headers: Headers = "Headers".asInstanceOf[Headers]
   @scala.inline
@@ -744,9 +744,9 @@ object activexAccessStrings {
   @scala.inline
   def ItemRemoved: ItemRemoved = "ItemRemoved".asInstanceOf[ItemRemoved]
   @scala.inline
-  def `Jet 2Dotx`: `Jet 2Dotx` = "Jet 2.x".asInstanceOf[`Jet 2Dotx`]
+  def `Jet 2Dotx`: `Jet 2Dotx` = ("Jet 2.x").asInstanceOf[`Jet 2Dotx`]
   @scala.inline
-  def `Jet 3Dotx`: `Jet 3Dotx` = "Jet 3.x".asInstanceOf[`Jet 3Dotx`]
+  def `Jet 3Dotx`: `Jet 3Dotx` = ("Jet 3.x").asInstanceOf[`Jet 3Dotx`]
   @scala.inline
   def KeyAscii: KeyAscii = "KeyAscii".asInstanceOf[KeyAscii]
   @scala.inline
@@ -762,21 +762,21 @@ object activexAccessStrings {
   @scala.inline
   def LostFocus: LostFocus = "LostFocus".asInstanceOf[LostFocus]
   @scala.inline
-  def `MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis`: `MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis` = "MS-DOS Text (*.txt)".asInstanceOf[`MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis`]
+  def `MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis`: `MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis` = ("MS-DOS Text (*.txt)").asInstanceOf[`MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis`]
   @scala.inline
-  def `Microsoft Access Data Access Page LeftparenthesisAsteriskDothtmSemicolon AsteriskDothtmlRightparenthesis`: `Microsoft Access Data Access Page LeftparenthesisAsteriskDothtmSemicolon AsteriskDothtmlRightparenthesis` = "Microsoft Access Data Access Page (*.htm; *.html)".asInstanceOf[`Microsoft Access Data Access Page LeftparenthesisAsteriskDothtmSemicolon AsteriskDothtmlRightparenthesis`]
+  def `Microsoft Access Data Access Page LeftparenthesisAsteriskDothtmSemicolon AsteriskDothtmlRightparenthesis`: `Microsoft Access Data Access Page LeftparenthesisAsteriskDothtmSemicolon AsteriskDothtmlRightparenthesis` = ("Microsoft Access Data Access Page (*.htm; *.html)").asInstanceOf[`Microsoft Access Data Access Page LeftparenthesisAsteriskDothtmSemicolon AsteriskDothtmlRightparenthesis`]
   @scala.inline
-  def `Microsoft Access LeftparenthesisdefaultRightparenthesis`: `Microsoft Access LeftparenthesisdefaultRightparenthesis` = "Microsoft Access (default)".asInstanceOf[`Microsoft Access LeftparenthesisdefaultRightparenthesis`]
+  def `Microsoft Access LeftparenthesisdefaultRightparenthesis`: `Microsoft Access LeftparenthesisdefaultRightparenthesis` = ("Microsoft Access (default)").asInstanceOf[`Microsoft Access LeftparenthesisdefaultRightparenthesis`]
   @scala.inline
-  def `Microsoft Active Server Pages LeftparenthesisAsteriskDotaspRightparenthesis`: `Microsoft Active Server Pages LeftparenthesisAsteriskDotaspRightparenthesis` = "Microsoft Active Server Pages (*.asp)".asInstanceOf[`Microsoft Active Server Pages LeftparenthesisAsteriskDotaspRightparenthesis`]
+  def `Microsoft Active Server Pages LeftparenthesisAsteriskDotaspRightparenthesis`: `Microsoft Active Server Pages LeftparenthesisAsteriskDotaspRightparenthesis` = ("Microsoft Active Server Pages (*.asp)").asInstanceOf[`Microsoft Active Server Pages LeftparenthesisAsteriskDotaspRightparenthesis`]
   @scala.inline
-  def `Microsoft Excel Binary Workbook LeftparenthesisAsteriskDotxlsbRightparenthesis`: `Microsoft Excel Binary Workbook LeftparenthesisAsteriskDotxlsbRightparenthesis` = "Microsoft Excel Binary Workbook (*.xlsb)".asInstanceOf[`Microsoft Excel Binary Workbook LeftparenthesisAsteriskDotxlsbRightparenthesis`]
+  def `Microsoft Excel Binary Workbook LeftparenthesisAsteriskDotxlsbRightparenthesis`: `Microsoft Excel Binary Workbook LeftparenthesisAsteriskDotxlsbRightparenthesis` = ("Microsoft Excel Binary Workbook (*.xlsb)").asInstanceOf[`Microsoft Excel Binary Workbook LeftparenthesisAsteriskDotxlsbRightparenthesis`]
   @scala.inline
-  def `Microsoft Excel LeftparenthesisAsteriskDotxlsRightparenthesis`: `Microsoft Excel LeftparenthesisAsteriskDotxlsRightparenthesis` = "Microsoft Excel (*.xls)".asInstanceOf[`Microsoft Excel LeftparenthesisAsteriskDotxlsRightparenthesis`]
+  def `Microsoft Excel LeftparenthesisAsteriskDotxlsRightparenthesis`: `Microsoft Excel LeftparenthesisAsteriskDotxlsRightparenthesis` = ("Microsoft Excel (*.xls)").asInstanceOf[`Microsoft Excel LeftparenthesisAsteriskDotxlsRightparenthesis`]
   @scala.inline
-  def `Microsoft Excel Workbook LeftparenthesisAsteriskDotxlsxRightparenthesis`: `Microsoft Excel Workbook LeftparenthesisAsteriskDotxlsxRightparenthesis` = "Microsoft Excel Workbook (*.xlsx)".asInstanceOf[`Microsoft Excel Workbook LeftparenthesisAsteriskDotxlsxRightparenthesis`]
+  def `Microsoft Excel Workbook LeftparenthesisAsteriskDotxlsxRightparenthesis`: `Microsoft Excel Workbook LeftparenthesisAsteriskDotxlsxRightparenthesis` = ("Microsoft Excel Workbook (*.xlsx)").asInstanceOf[`Microsoft Excel Workbook LeftparenthesisAsteriskDotxlsxRightparenthesis`]
   @scala.inline
-  def `Microsoft IIS LeftparenthesisAsteriskDothtxSemicolon AsteriskDotidcRightparenthesis`: `Microsoft IIS LeftparenthesisAsteriskDothtxSemicolon AsteriskDotidcRightparenthesis` = "Microsoft IIS (*.htx; *.idc)".asInstanceOf[`Microsoft IIS LeftparenthesisAsteriskDothtxSemicolon AsteriskDotidcRightparenthesis`]
+  def `Microsoft IIS LeftparenthesisAsteriskDothtxSemicolon AsteriskDotidcRightparenthesis`: `Microsoft IIS LeftparenthesisAsteriskDothtxSemicolon AsteriskDotidcRightparenthesis` = ("Microsoft IIS (*.htx; *.idc)").asInstanceOf[`Microsoft IIS LeftparenthesisAsteriskDothtxSemicolon AsteriskDotidcRightparenthesis`]
   @scala.inline
   def MouseDown: MouseDown = "MouseDown".asInstanceOf[MouseDown]
   @scala.inline
@@ -794,7 +794,7 @@ object activexAccessStrings {
   @scala.inline
   def NotInList: NotInList = "NotInList".asInstanceOf[NotInList]
   @scala.inline
-  def `ODBC Database`: `ODBC Database` = "ODBC Database".asInstanceOf[`ODBC Database`]
+  def `ODBC Database`: `ODBC Database` = ("ODBC Database").asInstanceOf[`ODBC Database`]
   @scala.inline
   def OnConnect: OnConnect = "OnConnect".asInstanceOf[OnConnect]
   @scala.inline
@@ -802,19 +802,19 @@ object activexAccessStrings {
   @scala.inline
   def Open: Open = "Open".asInstanceOf[Open]
   @scala.inline
-  def `PDF Format LeftparenthesisAsteriskDotpdfRightparenthesis`: `PDF Format LeftparenthesisAsteriskDotpdfRightparenthesis` = "PDF Format (*.pdf)".asInstanceOf[`PDF Format LeftparenthesisAsteriskDotpdfRightparenthesis`]
+  def `PDF Format LeftparenthesisAsteriskDotpdfRightparenthesis`: `PDF Format LeftparenthesisAsteriskDotpdfRightparenthesis` = ("PDF Format (*.pdf)").asInstanceOf[`PDF Format LeftparenthesisAsteriskDotpdfRightparenthesis`]
   @scala.inline
   def Page: Page = "Page".asInstanceOf[Page]
   @scala.inline
   def Paint: Paint = "Paint".asInstanceOf[Paint]
   @scala.inline
-  def `Paradox 3Dotx`: `Paradox 3Dotx` = "Paradox 3.x".asInstanceOf[`Paradox 3Dotx`]
+  def `Paradox 3Dotx`: `Paradox 3Dotx` = ("Paradox 3.x").asInstanceOf[`Paradox 3Dotx`]
   @scala.inline
-  def `Paradox 4Dotx`: `Paradox 4Dotx` = "Paradox 4.x".asInstanceOf[`Paradox 4Dotx`]
+  def `Paradox 4Dotx`: `Paradox 4Dotx` = ("Paradox 4.x").asInstanceOf[`Paradox 4Dotx`]
   @scala.inline
-  def `Paradox 5Dotx`: `Paradox 5Dotx` = "Paradox 5.x".asInstanceOf[`Paradox 5Dotx`]
+  def `Paradox 5Dotx`: `Paradox 5Dotx` = ("Paradox 5.x").asInstanceOf[`Paradox 5Dotx`]
   @scala.inline
-  def `Paradox 7Dotx`: `Paradox 7Dotx` = "Paradox 7.x".asInstanceOf[`Paradox 7Dotx`]
+  def `Paradox 7Dotx`: `Paradox 7Dotx` = ("Paradox 7.x").asInstanceOf[`Paradox 7Dotx`]
   @scala.inline
   def PivotTableChange: PivotTableChange = "PivotTableChange".asInstanceOf[PivotTableChange]
   @scala.inline
@@ -844,7 +844,7 @@ object activexAccessStrings {
   @scala.inline
   def Retreat: Retreat = "Retreat".asInstanceOf[Retreat]
   @scala.inline
-  def `Rich Text Format LeftparenthesisAsteriskDotrtfRightparenthesis`: `Rich Text Format LeftparenthesisAsteriskDotrtfRightparenthesis` = "Rich Text Format (*.rtf)".asInstanceOf[`Rich Text Format LeftparenthesisAsteriskDotrtfRightparenthesis`]
+  def `Rich Text Format LeftparenthesisAsteriskDotrtfRightparenthesis`: `Rich Text Format LeftparenthesisAsteriskDotrtfRightparenthesis` = ("Rich Text Format (*.rtf)").asInstanceOf[`Rich Text Format LeftparenthesisAsteriskDotrtfRightparenthesis`]
   @scala.inline
   def RowText: RowText = "RowText".asInstanceOf[RowText]
   @scala.inline
@@ -886,7 +886,7 @@ object activexAccessStrings {
   @scala.inline
   def Shift: Shift = "Shift".asInstanceOf[Shift]
   @scala.inline
-  def `Snapshot Format LeftparenthesisAsteriskDotsnpRightparenthesis`: `Snapshot Format LeftparenthesisAsteriskDotsnpRightparenthesis` = "Snapshot Format (*.snp)".asInstanceOf[`Snapshot Format LeftparenthesisAsteriskDotsnpRightparenthesis`]
+  def `Snapshot Format LeftparenthesisAsteriskDotsnpRightparenthesis`: `Snapshot Format LeftparenthesisAsteriskDotsnpRightparenthesis` = ("Snapshot Format (*.snp)").asInstanceOf[`Snapshot Format LeftparenthesisAsteriskDotsnpRightparenthesis`]
   @scala.inline
   def SourceCtlName: SourceCtlName = "SourceCtlName".asInstanceOf[SourceCtlName]
   @scala.inline
@@ -930,7 +930,7 @@ object activexAccessStrings {
   @scala.inline
   def X: X = "X".asInstanceOf[X]
   @scala.inline
-  def `XPS Format LeftparenthesisAsteriskDotxpsRightparenthesis`: `XPS Format LeftparenthesisAsteriskDotxpsRightparenthesis` = "XPS Format (*.xps)".asInstanceOf[`XPS Format LeftparenthesisAsteriskDotxpsRightparenthesis`]
+  def `XPS Format LeftparenthesisAsteriskDotxpsRightparenthesis`: `XPS Format LeftparenthesisAsteriskDotxpsRightparenthesis` = ("XPS Format (*.xps)").asInstanceOf[`XPS Format LeftparenthesisAsteriskDotxpsRightparenthesis`]
   @scala.inline
   def Y: Y = "Y".asInstanceOf[Y]
   @scala.inline
@@ -940,11 +940,11 @@ object activexAccessStrings {
   @scala.inline
   def chartObject: chartObject = "chartObject".asInstanceOf[chartObject]
   @scala.inline
-  def `dBase 5Dot0`: `dBase 5Dot0` = "dBase 5.0".asInstanceOf[`dBase 5Dot0`]
+  def `dBase 5Dot0`: `dBase 5Dot0` = ("dBase 5.0").asInstanceOf[`dBase 5Dot0`]
   @scala.inline
-  def `dBase III`: `dBase III` = "dBase III".asInstanceOf[`dBase III`]
+  def `dBase III`: `dBase III` = ("dBase III").asInstanceOf[`dBase III`]
   @scala.inline
-  def `dBase IV`: `dBase IV` = "dBase IV".asInstanceOf[`dBase IV`]
+  def `dBase IV`: `dBase IV` = ("dBase IV").asInstanceOf[`dBase IV`]
   @scala.inline
   def drawObject: drawObject = "drawObject".asInstanceOf[drawObject]
   @scala.inline

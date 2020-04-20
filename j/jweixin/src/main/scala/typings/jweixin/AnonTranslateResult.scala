@@ -12,7 +12,6 @@ object AnonTranslateResult {
   @scala.inline
   def apply(translateResult: String): AnonTranslateResult = {
     val __obj = js.Dynamic.literal(translateResult = translateResult.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTranslateResult]
   }
 }

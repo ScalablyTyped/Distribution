@@ -17,7 +17,6 @@ object AnonAddress {
   @scala.inline
   def apply(address: String, col: Column, row: Row, sheetName: String): AnonAddress = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], sheetName = sheetName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAddress]
   }
 }

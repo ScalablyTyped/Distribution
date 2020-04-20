@@ -23,7 +23,6 @@ object CloudloadingResource {
     updateBook: AnonAltFields => Request_[BooksCloudloadingResource]
   ): CloudloadingResource = {
     val __obj = js.Dynamic.literal(addBook = js.Any.fromFunction1(addBook), deleteBook = js.Any.fromFunction1(deleteBook), updateBook = js.Any.fromFunction1(updateBook))
-  
     __obj.asInstanceOf[CloudloadingResource]
   }
 }

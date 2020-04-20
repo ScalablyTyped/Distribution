@@ -24,7 +24,6 @@ object TabsStateProps {
     initial: String
   ): TabsStateProps = {
     val __obj = js.Dynamic.literal(absolute = absolute.asInstanceOf[js.Any], backgroundColor = backgroundColor.asInstanceOf[js.Any], bordered = bordered.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], initial = initial.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TabsStateProps]
   }
 }

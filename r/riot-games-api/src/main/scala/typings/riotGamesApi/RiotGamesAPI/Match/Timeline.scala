@@ -13,7 +13,6 @@ object Timeline {
   @scala.inline
   def apply(frameInverval: Double, frames: js.Array[Frame]): Timeline = {
     val __obj = js.Dynamic.literal(frameInverval = frameInverval.asInstanceOf[js.Any], frames = frames.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Timeline]
   }
 }

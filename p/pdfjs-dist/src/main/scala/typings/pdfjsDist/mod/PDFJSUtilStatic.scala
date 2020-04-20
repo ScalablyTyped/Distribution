@@ -20,7 +20,6 @@ object PDFJSUtilStatic {
   @scala.inline
   def apply(normalizeRect: js.Array[Double] => js.Array[Double]): PDFJSUtilStatic = {
     val __obj = js.Dynamic.literal(normalizeRect = js.Any.fromFunction1(normalizeRect))
-  
     __obj.asInstanceOf[PDFJSUtilStatic]
   }
 }

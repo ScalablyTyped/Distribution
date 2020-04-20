@@ -20,7 +20,6 @@ object OriginSslProtocols {
   @scala.inline
   def apply(Items: SslProtocolsList, Quantity: integer): OriginSslProtocols = {
     val __obj = js.Dynamic.literal(Items = Items.asInstanceOf[js.Any], Quantity = Quantity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OriginSslProtocols]
   }
 }

@@ -12,7 +12,6 @@ object RiskAnalysisResource {
   @scala.inline
   def apply(operations: OperationsResource): RiskAnalysisResource = {
     val __obj = js.Dynamic.literal(operations = operations.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RiskAnalysisResource]
   }
 }

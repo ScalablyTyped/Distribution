@@ -14,7 +14,6 @@ object AnonWithExtraArgument {
   @scala.inline
   def apply(withExtraArgument: js.Any => ThunkMiddleware[js.Object, AnyAction, js.Any]): AnonWithExtraArgument = {
     val __obj = js.Dynamic.literal(withExtraArgument = js.Any.fromFunction1(withExtraArgument))
-  
     __obj.asInstanceOf[AnonWithExtraArgument]
   }
 }

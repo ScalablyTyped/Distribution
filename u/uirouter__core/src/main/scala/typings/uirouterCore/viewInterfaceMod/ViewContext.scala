@@ -13,7 +13,6 @@ object ViewContext {
   @scala.inline
   def apply(name: String, parent: ViewContext): ViewContext = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ViewContext]
   }
 }

@@ -31,7 +31,6 @@ object NotificationArgs {
     topicArn: Input[String]
   ): NotificationArgs = {
     val __obj = js.Dynamic.literal(groupNames = groupNames.asInstanceOf[js.Any], notifications = notifications.asInstanceOf[js.Any], topicArn = topicArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NotificationArgs]
   }
 }

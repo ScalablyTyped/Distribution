@@ -33,7 +33,7 @@ trait Anchor
   def getCurrentAnchor(offsetTop: Double, bounds: Double): String = js.native
   def handleScroll(): Unit = js.native
   def handleScrollTo(link: String): Unit = js.native
-  def renderAnchor(hasGetPrefixCls: ConfigConsumerProps): Element = js.native
+  def renderAnchor(hasGetPrefixClsDirection: ConfigConsumerProps): Element = js.native
   def saveInkNode(node: HTMLSpanElement): Unit = js.native
   def setCurrentActiveLink(link: String): Unit = js.native
   def updateInk(): Unit = js.native

@@ -13,7 +13,6 @@ object AnonHistogramConstr {
   @scala.inline
   def apply(histogramConstr: HistogramConstructor): AnonHistogramConstr = {
     val __obj = js.Dynamic.literal(histogramConstr = histogramConstr.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHistogramConstr]
   }
 }

@@ -16,7 +16,6 @@ object AnonNorth {
   @scala.inline
   def apply(east: PaneState, north: PaneState, south: PaneState, west: PaneState): AnonNorth = {
     val __obj = js.Dynamic.literal(east = east.asInstanceOf[js.Any], north = north.asInstanceOf[js.Any], south = south.asInstanceOf[js.Any], west = west.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNorth]
   }
 }

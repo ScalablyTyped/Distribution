@@ -32,7 +32,6 @@ object HitcountnumberisRefinedbo {
     value: js.Array[String]
   ): HitcountnumberisRefinedbo = {
     val __obj = js.Dynamic.literal(_highlightResult = _highlightResult.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], isRefined = isRefined.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], objectID = objectID.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HitcountnumberisRefinedbo]
   }
 }

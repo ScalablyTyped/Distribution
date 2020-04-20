@@ -13,7 +13,6 @@ object DeleteGatewayInput {
   @scala.inline
   def apply(GatewayARN: GatewayARN): DeleteGatewayInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteGatewayInput]
   }
 }

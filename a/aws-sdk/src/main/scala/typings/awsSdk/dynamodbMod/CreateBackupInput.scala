@@ -20,7 +20,6 @@ object CreateBackupInput {
   @scala.inline
   def apply(BackupName: BackupName, TableName: TableName): CreateBackupInput = {
     val __obj = js.Dynamic.literal(BackupName = BackupName.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateBackupInput]
   }
 }

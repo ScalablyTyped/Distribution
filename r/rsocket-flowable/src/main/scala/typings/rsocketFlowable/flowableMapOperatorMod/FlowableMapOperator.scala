@@ -24,7 +24,6 @@ object FlowableMapOperator {
     onSubscribe: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISubscription */ js.Any => Unit
   ): FlowableMapOperator[T, R] = {
     val __obj = js.Dynamic.literal(onComplete = js.Any.fromFunction0(onComplete), onError = js.Any.fromFunction1(onError), onNext = js.Any.fromFunction1(onNext), onSubscribe = js.Any.fromFunction1(onSubscribe))
-  
     __obj.asInstanceOf[FlowableMapOperator[T, R]]
   }
 }

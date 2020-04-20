@@ -16,12 +16,10 @@ trait XlDVAlertStyle extends js.Object
 
 object XlDVAlertStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlValidAlertInformation: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlValidAlertInformation: `3` = this.cast(3)
+  def xlValidAlertStop: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlValidAlertStop: `1` = this.cast(1)
-  @scala.inline
-  def xlValidAlertWarning: `2` = this.cast(2)
+  def xlValidAlertWarning: `2` = 2.asInstanceOf[`2`]
 }
 

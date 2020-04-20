@@ -20,7 +20,6 @@ object GetHostReservationPurchasePreviewRequest {
   @scala.inline
   def apply(HostIdSet: RequestHostIdSet, OfferingId: OfferingId): GetHostReservationPurchasePreviewRequest = {
     val __obj = js.Dynamic.literal(HostIdSet = HostIdSet.asInstanceOf[js.Any], OfferingId = OfferingId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetHostReservationPurchasePreviewRequest]
   }
 }

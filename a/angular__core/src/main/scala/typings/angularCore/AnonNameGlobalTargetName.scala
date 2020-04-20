@@ -15,7 +15,6 @@ object AnonNameGlobalTargetName {
   @scala.inline
   def apply(name: GlobalTargetName, target: EventTarget): AnonNameGlobalTargetName = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNameGlobalTargetName]
   }
 }

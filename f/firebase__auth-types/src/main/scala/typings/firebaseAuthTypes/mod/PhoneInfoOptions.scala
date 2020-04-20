@@ -15,13 +15,11 @@ object PhoneInfoOptions {
   @scala.inline
   def PhoneSingleFactorInfoOptions(phoneNumber: String): PhoneInfoOptions = {
     val __obj = js.Dynamic.literal(phoneNumber = phoneNumber.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PhoneInfoOptions]
   }
   @scala.inline
   def PhoneMultiFactorEnrollInfoOptions(phoneNumber: String, session: MultiFactorSession): PhoneInfoOptions = {
     val __obj = js.Dynamic.literal(phoneNumber = phoneNumber.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PhoneInfoOptions]
   }
   @scala.inline

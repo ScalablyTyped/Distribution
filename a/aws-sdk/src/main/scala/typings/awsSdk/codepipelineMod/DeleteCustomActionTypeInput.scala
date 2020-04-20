@@ -24,7 +24,6 @@ object DeleteCustomActionTypeInput {
   @scala.inline
   def apply(category: ActionCategory, provider: ActionProvider, version: Version): DeleteCustomActionTypeInput = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteCustomActionTypeInput]
   }
 }

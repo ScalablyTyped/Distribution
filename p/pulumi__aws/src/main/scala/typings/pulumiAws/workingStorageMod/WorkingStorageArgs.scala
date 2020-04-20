@@ -21,7 +21,6 @@ object WorkingStorageArgs {
   @scala.inline
   def apply(diskId: Input[String], gatewayArn: Input[String]): WorkingStorageArgs = {
     val __obj = js.Dynamic.literal(diskId = diskId.asInstanceOf[js.Any], gatewayArn = gatewayArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WorkingStorageArgs]
   }
 }

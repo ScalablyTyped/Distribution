@@ -20,7 +20,6 @@ object GetFilterRequest {
   @scala.inline
   def apply(DetectorId: DetectorId, FilterName: String): GetFilterRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId.asInstanceOf[js.Any], FilterName = FilterName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetFilterRequest]
   }
 }

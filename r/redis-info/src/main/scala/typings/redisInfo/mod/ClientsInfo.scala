@@ -20,7 +20,6 @@ object ClientsInfo {
     connected_clients: String
   ): ClientsInfo = {
     val __obj = js.Dynamic.literal(blocked_clients = blocked_clients.asInstanceOf[js.Any], client_biggest_input_buf = client_biggest_input_buf.asInstanceOf[js.Any], client_longest_output_list = client_longest_output_list.asInstanceOf[js.Any], connected_clients = connected_clients.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClientsInfo]
   }
 }

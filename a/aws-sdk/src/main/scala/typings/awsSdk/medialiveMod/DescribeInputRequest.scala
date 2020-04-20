@@ -16,7 +16,6 @@ object DescribeInputRequest {
   @scala.inline
   def apply(InputId: string): DescribeInputRequest = {
     val __obj = js.Dynamic.literal(InputId = InputId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeInputRequest]
   }
 }

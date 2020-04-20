@@ -23,7 +23,6 @@ object ITabCloseRequestedArgs {
   @scala.inline
   def apply[T](index: Double, title: Title[T]): ITabCloseRequestedArgs[T] = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ITabCloseRequestedArgs[T]]
   }
 }

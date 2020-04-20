@@ -13,7 +13,6 @@ object DataMatcher {
   @scala.inline
   def apply(args: js.Array[String], name: String): DataMatcher = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DataMatcher]
   }
 }

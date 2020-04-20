@@ -20,7 +20,6 @@ object AnonAxes {
     defaultButton: AnonPressedNodeName
   ): AnonAxes = {
     val __obj = js.Dynamic.literal(axes = axes.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], defaultAxis = defaultAxis.asInstanceOf[js.Any], defaultButton = defaultButton.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAxes]
   }
 }

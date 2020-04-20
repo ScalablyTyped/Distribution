@@ -13,7 +13,6 @@ object AnonDataStatusCode {
   @scala.inline
   def apply(data: String, statusCode: Double): AnonDataStatusCode = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDataStatusCode]
   }
 }

@@ -13,7 +13,6 @@ object BackupMetadata {
   @scala.inline
   def apply(remainingPages: Double, totalPages: Double): BackupMetadata = {
     val __obj = js.Dynamic.literal(remainingPages = remainingPages.asInstanceOf[js.Any], totalPages = totalPages.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BackupMetadata]
   }
 }

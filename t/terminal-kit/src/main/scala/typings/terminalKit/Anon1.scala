@@ -13,7 +13,6 @@ object Anon1 {
   @scala.inline
   def apply(promise: js.Promise[GridMenuResponse]): Anon1 = {
     val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Anon1]
   }
 }

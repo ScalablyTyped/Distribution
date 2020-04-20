@@ -27,7 +27,6 @@ object TaskAgentMessage {
   @scala.inline
   def apply(body: String, iV: js.Array[Double], messageId: Double, messageType: String): TaskAgentMessage = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], iV = iV.asInstanceOf[js.Any], messageId = messageId.asInstanceOf[js.Any], messageType = messageType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TaskAgentMessage]
   }
 }

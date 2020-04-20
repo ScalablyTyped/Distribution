@@ -19,8 +19,17 @@ class Type_[A, O, I] protected ()
     /** converts a value of type A to a value of type O */
   encode: Encode[A, O]
   ) = this()
+  /**
+    * @since 1.0.0
+    */
   val _A: A = js.native
+  /**
+    * @since 1.0.0
+    */
   val _I: I = js.native
+  /**
+    * @since 1.0.0
+    */
   val _O: O = js.native
   /* CompleteClass */
   override val name: String = js.native

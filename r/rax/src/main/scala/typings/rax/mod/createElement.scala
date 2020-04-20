@@ -23,21 +23,20 @@ object createElement extends js.Object {
   def apply[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState]): RaxElement[P, String | JSXElementConstructor[_]] = js.native
   def apply[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], children: RaxNode*): RaxElement[P, String | JSXElementConstructor[_]] = js.native
   def apply[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], props: Attributes with P, children: RaxNode*): RaxElement[P, String | JSXElementConstructor[_]] = js.native
-  // Custom components
-  def apply[P /* <: js.Object */](`type`: FunctionComponent[P]): FunctionComponentElement[P] = js.native
-  def apply[P /* <: js.Object */](`type`: FunctionComponent[P], children: RaxNode*): FunctionComponentElement[P] = js.native
-  def apply[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes with P, children: RaxNode*): FunctionComponentElement[P] = js.native
+  def apply[P /* <: js.Object */](`type`: FunctionComponent[P]): RaxElement[P, String | JSXElementConstructor[_]] = js.native
+  def apply[P /* <: js.Object */](`type`: FunctionComponent[P], children: RaxNode*): RaxElement[P, String | JSXElementConstructor[_]] = js.native
+  def apply[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes with P, children: RaxNode*): RaxElement[P, String | JSXElementConstructor[_]] = js.native
   def apply[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: ClassAttributes[T] with P, children: RaxNode*): DOMElement[P, T] = js.native
-  def apply[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 114 */ js.Any): DetailedRaxHTMLElement[P, T] = js.native
-  def apply[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 114 */ js.Any,
+  def apply[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any): RaxSVGElement = js.native
+  def apply[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any,
     children: RaxNode*
-  ): DetailedRaxHTMLElement[P, T] = js.native
-  def apply[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 114 */ js.Any,
+  ): RaxSVGElement = js.native
+  def apply[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any,
     props: ClassAttributes[T] with P,
     children: RaxNode*
-  ): DetailedRaxHTMLElement[P, T] = js.native
+  ): RaxSVGElement = js.native
   def apply[P /* <: js.Object */, T /* <: Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C]): CElement[P, T] = js.native
   def apply[P /* <: js.Object */, T /* <: Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], children: RaxNode*): CElement[P, T] = js.native
   def apply[P /* <: js.Object */, T /* <: Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: ClassAttributes[T] with P, children: RaxNode*): CElement[P, T] = js.native

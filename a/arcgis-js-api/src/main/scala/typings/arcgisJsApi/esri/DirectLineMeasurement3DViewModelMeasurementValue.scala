@@ -37,7 +37,6 @@ object DirectLineMeasurement3DViewModelMeasurementValue {
     text: String
   ): DirectLineMeasurement3DViewModelMeasurementValue = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), state = state.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DirectLineMeasurement3DViewModelMeasurementValue]
   }
 }

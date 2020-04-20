@@ -16,7 +16,6 @@ object BaseDialogResult {
   @scala.inline
   def apply(error_code: String, error_message: String): BaseDialogResult = {
     val __obj = js.Dynamic.literal(error_code = error_code.asInstanceOf[js.Any], error_message = error_message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BaseDialogResult]
   }
 }

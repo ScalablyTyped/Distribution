@@ -12,7 +12,6 @@ object AsObject {
   @scala.inline
   def apply(errorCode: DynamicReferenceErrorType): AsObject = {
     val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AsObject]
   }
 }

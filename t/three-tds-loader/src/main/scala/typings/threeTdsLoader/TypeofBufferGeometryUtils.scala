@@ -20,7 +20,6 @@ object TypeofBufferGeometryUtils {
     mergeBufferGeometries: js.Array[BufferGeometry] => BufferGeometry
   ): TypeofBufferGeometryUtils = {
     val __obj = js.Dynamic.literal(computeTangents = js.Any.fromFunction1(computeTangents), mergeBufferAttributes = js.Any.fromFunction1(mergeBufferAttributes), mergeBufferGeometries = js.Any.fromFunction1(mergeBufferGeometries))
-  
     __obj.asInstanceOf[TypeofBufferGeometryUtils]
   }
 }

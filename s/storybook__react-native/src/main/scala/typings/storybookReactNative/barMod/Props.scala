@@ -13,7 +13,6 @@ object Props {
   @scala.inline
   def apply(index: Double, onPress: Double => Unit): Props = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], onPress = js.Any.fromFunction1(onPress))
-  
     __obj.asInstanceOf[Props]
   }
 }

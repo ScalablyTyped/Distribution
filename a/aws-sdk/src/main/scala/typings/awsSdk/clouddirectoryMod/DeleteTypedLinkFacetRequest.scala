@@ -20,7 +20,6 @@ object DeleteTypedLinkFacetRequest {
   @scala.inline
   def apply(Name: TypedLinkName, SchemaArn: Arn): DeleteTypedLinkFacetRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], SchemaArn = SchemaArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteTypedLinkFacetRequest]
   }
 }

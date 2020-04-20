@@ -20,7 +20,6 @@ object FollowUpPrompt {
   @scala.inline
   def apply(prompt: Prompt, rejectionStatement: Statement): FollowUpPrompt = {
     val __obj = js.Dynamic.literal(prompt = prompt.asInstanceOf[js.Any], rejectionStatement = rejectionStatement.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FollowUpPrompt]
   }
 }

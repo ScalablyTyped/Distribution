@@ -12,7 +12,6 @@ object ServiceWorkerRegistrationEventMap {
   @scala.inline
   def apply(updatefound: Event_): ServiceWorkerRegistrationEventMap = {
     val __obj = js.Dynamic.literal(updatefound = updatefound.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ServiceWorkerRegistrationEventMap]
   }
 }

@@ -13,7 +13,6 @@ object TypeofSWF {
   @scala.inline
   def apply(Types: TypeofSWF): TypeofSWF = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofSWF]
   }
 }

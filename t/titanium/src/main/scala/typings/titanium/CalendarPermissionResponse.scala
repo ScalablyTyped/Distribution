@@ -15,7 +15,7 @@ trait CalendarPermissionResponse extends js.Object {
   /**
   	 * Error message, if any returned.
   	 */
-  var error: js.UndefOr[String] = js.undefined
+  var error: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Indicates whether the request succeeded.
   	 */
@@ -24,7 +24,11 @@ trait CalendarPermissionResponse extends js.Object {
 
 object CalendarPermissionResponse {
   @scala.inline
-  def apply(code: Int | Double = null, error: String = null, success: js.UndefOr[Boolean] = js.undefined): CalendarPermissionResponse = {
+  def apply(
+    code: Int | Double = null,
+    error: java.lang.String = null,
+    success: js.UndefOr[Boolean] = js.undefined
+  ): CalendarPermissionResponse = {
     val __obj = js.Dynamic.literal()
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])

@@ -16,7 +16,6 @@ object DeleteRouteOutput {
   @scala.inline
   def apply(route: RouteData): DeleteRouteOutput = {
     val __obj = js.Dynamic.literal(route = route.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteRouteOutput]
   }
 }

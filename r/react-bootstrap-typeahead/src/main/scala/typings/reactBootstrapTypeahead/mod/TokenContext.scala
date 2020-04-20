@@ -22,7 +22,6 @@ object TokenContext {
     onKeyDown: js.Any => Unit
   ): TokenContext = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], onBlur = js.Any.fromFunction1(onBlur), onClick = js.Any.fromFunction1(onClick), onFocus = js.Any.fromFunction1(onFocus), onKeyDown = js.Any.fromFunction1(onKeyDown))
-  
     __obj.asInstanceOf[TokenContext]
   }
 }

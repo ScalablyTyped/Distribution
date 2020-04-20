@@ -26,22 +26,20 @@ trait OlDefaultSelectNamesDisplayMode extends js.Object
 
 object OlDefaultSelectNamesDisplayMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olDefaultDelegates: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def olDefaultDelegates: `6` = this.cast(6)
+  def olDefaultMail: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olDefaultMail: `1` = this.cast(1)
+  def olDefaultMeeting: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olDefaultMeeting: `2` = this.cast(2)
+  def olDefaultMembers: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def olDefaultMembers: `5` = this.cast(5)
+  def olDefaultPickRooms: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def olDefaultPickRooms: `8` = this.cast(8)
+  def olDefaultSharingRequest: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def olDefaultSharingRequest: `4` = this.cast(4)
+  def olDefaultSingleName: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def olDefaultSingleName: `7` = this.cast(7)
-  @scala.inline
-  def olDefaultTask: `3` = this.cast(3)
+  def olDefaultTask: `3` = 3.asInstanceOf[`3`]
 }
 

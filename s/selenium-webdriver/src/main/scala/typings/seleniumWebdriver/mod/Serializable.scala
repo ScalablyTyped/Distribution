@@ -21,7 +21,6 @@ object Serializable {
   @scala.inline
   def apply[T](serialize: () => T | js.Promise[T]): Serializable[T] = {
     val __obj = js.Dynamic.literal(serialize = js.Any.fromFunction0(serialize))
-  
     __obj.asInstanceOf[Serializable[T]]
   }
 }

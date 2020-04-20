@@ -13,7 +13,6 @@ object AnonFast {
   @scala.inline
   def apply(fast: Double, slow: Double): AnonFast = {
     val __obj = js.Dynamic.literal(fast = fast.asInstanceOf[js.Any], slow = slow.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFast]
   }
 }

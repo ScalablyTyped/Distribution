@@ -24,7 +24,6 @@ object NodeInsertedEventArgs {
   @scala.inline
   def apply(isUndoRedo: Boolean, newNode: CustomXmlNode): NodeInsertedEventArgs = {
     val __obj = js.Dynamic.literal(isUndoRedo = isUndoRedo.asInstanceOf[js.Any], newNode = newNode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NodeInsertedEventArgs]
   }
 }

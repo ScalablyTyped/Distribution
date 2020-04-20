@@ -20,7 +20,6 @@ object RemoveAutoScalingPolicyInput {
   @scala.inline
   def apply(ClusterId: ClusterId, InstanceGroupId: InstanceGroupId): RemoveAutoScalingPolicyInput = {
     val __obj = js.Dynamic.literal(ClusterId = ClusterId.asInstanceOf[js.Any], InstanceGroupId = InstanceGroupId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RemoveAutoScalingPolicyInput]
   }
 }

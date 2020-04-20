@@ -19,7 +19,6 @@ object IWebXRMotionControllerComponentChangesValues {
   @scala.inline
   def apply[T](current: T, previous: T): IWebXRMotionControllerComponentChangesValues[T] = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], previous = previous.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IWebXRMotionControllerComponentChangesValues[T]]
   }
 }

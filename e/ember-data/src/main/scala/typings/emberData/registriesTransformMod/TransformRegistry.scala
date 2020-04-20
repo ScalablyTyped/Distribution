@@ -16,7 +16,6 @@ object TransformRegistry {
   @scala.inline
   def apply(boolean: Boolean, date: Date, number: Double, string: String): TransformRegistry = {
     val __obj = js.Dynamic.literal(boolean = boolean.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TransformRegistry]
   }
 }

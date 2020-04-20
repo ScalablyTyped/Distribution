@@ -31,7 +31,6 @@ object File {
   @scala.inline
   def apply(fieldName: String, headers: js.Any, originalFilename: String, path: String, size: Double): File = {
     val __obj = js.Dynamic.literal(fieldName = fieldName.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], originalFilename = originalFilename.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[File]
   }
 }

@@ -24,7 +24,6 @@ object PackageId {
   @scala.inline
   def apply(name: java.lang.String, subModuleName: java.lang.String, version: java.lang.String): PackageId = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], subModuleName = subModuleName.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PackageId]
   }
 }

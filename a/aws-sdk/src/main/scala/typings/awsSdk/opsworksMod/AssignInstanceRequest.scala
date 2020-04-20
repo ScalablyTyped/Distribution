@@ -20,7 +20,6 @@ object AssignInstanceRequest {
   @scala.inline
   def apply(InstanceId: String, LayerIds: Strings): AssignInstanceRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any], LayerIds = LayerIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssignInstanceRequest]
   }
 }

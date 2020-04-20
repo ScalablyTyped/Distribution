@@ -16,7 +16,6 @@ object ListenerRuleConditionHostHeader {
   @scala.inline
   def apply(values: js.Array[String]): ListenerRuleConditionHostHeader = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListenerRuleConditionHostHeader]
   }
 }

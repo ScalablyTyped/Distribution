@@ -22,7 +22,6 @@ object SearchAutocompleteResponse {
   @scala.inline
   def apply(query: String, results: js.Array[SearchAutocompleteResult]): SearchAutocompleteResponse = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SearchAutocompleteResponse]
   }
 }

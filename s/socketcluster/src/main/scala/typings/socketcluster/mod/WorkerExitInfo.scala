@@ -15,7 +15,6 @@ object WorkerExitInfo {
   @scala.inline
   def apply(code: Double, id: Double, pid: Double, signal: String): WorkerExitInfo = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], signal = signal.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WorkerExitInfo]
   }
 }

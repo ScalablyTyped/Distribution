@@ -21,6 +21,14 @@ trait BookmarksProperties
     */
   var bookmarks: js.UndefOr[CollectionProperties[BookmarkProperties]] = js.undefined
   /**
+    * When true, the widget is visually withdrawn and cannot be interacted with.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#disabled)
+    *
+    * @default false
+    */
+  var disabled: js.UndefOr[Boolean] = js.undefined
+  /**
     * Indicates whether the widget is able to be edited. When `true`, allows bookmarks to be added, edited, reordered, or deleted from within the widget. Any edits made will only be shown locally and will not be saved.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#editingEnabled)
@@ -51,7 +59,7 @@ trait BookmarksProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#visibleElements)
     */
-  var visibleElements: js.UndefOr[VisibleElements] = js.undefined
+  var visibleElements: js.UndefOr[BookmarksVisibleElements] = js.undefined
 }
 
 object BookmarksProperties {
@@ -61,6 +69,7 @@ object BookmarksProperties {
     bookmarks: CollectionProperties[BookmarkProperties] = null,
     container: String | HTMLElement = null,
     destroyed: js.UndefOr[Boolean] = js.undefined,
+    disabled: js.UndefOr[Boolean] = js.undefined,
     editingEnabled: js.UndefOr[Boolean] = js.undefined,
     goToOverride: (/* view */ MapView | SceneView, /* goToParameters */ js.Any) => Unit = null,
     iconClass: String = null,
@@ -68,13 +77,14 @@ object BookmarksProperties {
     label: String = null,
     view: MapViewProperties = null,
     viewModel: BookmarksViewModelProperties = null,
-    visibleElements: VisibleElements = null
+    visibleElements: BookmarksVisibleElements = null
   ): BookmarksProperties = {
     val __obj = js.Dynamic.literal()
     if (bookmarkCreationOptions != null) __obj.updateDynamic("bookmarkCreationOptions")(bookmarkCreationOptions.asInstanceOf[js.Any])
     if (bookmarks != null) __obj.updateDynamic("bookmarks")(bookmarks.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (!js.isUndefined(editingEnabled)) __obj.updateDynamic("editingEnabled")(editingEnabled.asInstanceOf[js.Any])
     if (goToOverride != null) __obj.updateDynamic("goToOverride")(js.Any.fromFunction2(goToOverride))
     if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])

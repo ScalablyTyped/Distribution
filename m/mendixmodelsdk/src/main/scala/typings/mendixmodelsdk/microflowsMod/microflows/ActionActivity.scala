@@ -28,14 +28,14 @@ class ActionActivity protected () extends Activity {
   def action(): js.Any = js.native
   def action(newValue: MicroflowAction): js.Any = js.native
   @JSName("action")
-  def action_Union(): MicroflowAction | Null = js.native
-  def autoGenerateCaption(): Boolean = js.native
+  def action_Union: MicroflowAction | Null = js.native
+  def autoGenerateCaption: Boolean = js.native
   def autoGenerateCaption(newValue: Boolean): js.Any = js.native
-  def backgroundColor(): ActionActivityColor = js.native
+  def backgroundColor: ActionActivityColor = js.native
   def backgroundColor(newValue: ActionActivityColor): js.Any = js.native
-  def caption(): String = js.native
+  def caption: String = js.native
   def caption(newValue: String): js.Any = js.native
-  def documentation(): String = js.native
+  def documentation: String = js.native
   def documentation(newValue: String): js.Any = js.native
 }
 

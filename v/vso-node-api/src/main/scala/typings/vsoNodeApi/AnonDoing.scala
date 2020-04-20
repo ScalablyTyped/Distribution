@@ -14,7 +14,6 @@ object AnonDoing {
   @scala.inline
   def apply(doing: Double, done: Double, followed: Double): AnonDoing = {
     val __obj = js.Dynamic.literal(doing = doing.asInstanceOf[js.Any], done = done.asInstanceOf[js.Any], followed = followed.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDoing]
   }
 }

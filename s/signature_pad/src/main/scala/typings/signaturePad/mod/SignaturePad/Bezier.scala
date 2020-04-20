@@ -28,7 +28,6 @@ object Bezier {
     startWidth: Double
   ): Bezier = {
     val __obj = js.Dynamic.literal(_point = js.Any.fromFunction5(_point), control1 = control1.asInstanceOf[js.Any], control2 = control2.asInstanceOf[js.Any], endPoint = endPoint.asInstanceOf[js.Any], endWidth = endWidth.asInstanceOf[js.Any], length = js.Any.fromFunction0(length), startPoint = startPoint.asInstanceOf[js.Any], startWidth = startWidth.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Bezier]
   }
 }

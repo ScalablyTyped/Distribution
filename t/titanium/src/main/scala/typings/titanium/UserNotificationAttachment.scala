@@ -13,7 +13,7 @@ trait UserNotificationAttachment extends js.Object {
   /**
   	 * The identifier of this attachment.
   	 */
-  var identifier: String
+  var identifier: java.lang.String
   /**
   	 * An additional dictionary of options to provide.
   	 */
@@ -22,12 +22,12 @@ trait UserNotificationAttachment extends js.Object {
   	 * The URL to the attachment's data. If you have obtained this attachment from
   	 * the notification-center then the URL will be security-scoped.
   	 */
-  var url: String
+  var url: java.lang.String
 }
 
 object UserNotificationAttachment {
   @scala.inline
-  def apply(identifier: String, url: String, options: js.Any = null): UserNotificationAttachment = {
+  def apply(identifier: java.lang.String, url: java.lang.String, options: js.Any = null): UserNotificationAttachment = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserNotificationAttachment]

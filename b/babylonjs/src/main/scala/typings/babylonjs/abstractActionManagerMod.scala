@@ -30,11 +30,11 @@ object abstractActionManagerMod extends js.Object {
     /**
       * Does this action manager has pick triggers
       */
-    def hasPickTriggers(): Boolean = js.native
+    def hasPickTriggers: Boolean = js.native
     /**
       * Does this action manager has pointer triggers
       */
-    def hasPointerTriggers(): Boolean = js.native
+    def hasPointerTriggers: Boolean = js.native
     /**
       * Does this action manager handles actions of a given trigger
       * @param trigger defines the trigger to be tested
@@ -92,7 +92,7 @@ object abstractActionManagerMod extends js.Object {
     /**
       * Does exist one action manager with at least one pick trigger
       **/
-    def HasPickTriggers(): Boolean = js.native
+    def HasPickTriggers: Boolean = js.native
     /**
       * Does exist one action manager that handles actions of a given trigger
       * @param trigger defines the trigger to be tested
@@ -102,7 +102,7 @@ object abstractActionManagerMod extends js.Object {
     /**
       * Does exist one action manager with at least one trigger
       **/
-    def HasTriggers(): Boolean = js.native
+    def HasTriggers: Boolean = js.native
   }
   
 }

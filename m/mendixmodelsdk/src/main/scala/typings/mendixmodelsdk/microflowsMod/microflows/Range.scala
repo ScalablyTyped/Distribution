@@ -23,8 +23,8 @@ abstract class Range protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FRange: IModel = js.native
-  def containerAsDatabaseRetrieveSource(): DatabaseRetrieveSource = js.native
-  def containerAsImportMappingCall(): ImportMappingCall = js.native
+  def containerAsDatabaseRetrieveSource: DatabaseRetrieveSource = js.native
+  def containerAsImportMappingCall: ImportMappingCall = js.native
 }
 
 /* static members */

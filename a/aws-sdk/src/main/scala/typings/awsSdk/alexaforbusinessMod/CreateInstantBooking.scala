@@ -20,7 +20,6 @@ object CreateInstantBooking {
   @scala.inline
   def apply(DurationInMinutes: Minutes, Enabled: Boolean): CreateInstantBooking = {
     val __obj = js.Dynamic.literal(DurationInMinutes = DurationInMinutes.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateInstantBooking]
   }
 }

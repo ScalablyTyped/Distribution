@@ -13,7 +13,6 @@ object AnonElementStyler {
   @scala.inline
   def apply(elementStyler: Styler): AnonElementStyler = {
     val __obj = js.Dynamic.literal(elementStyler = elementStyler.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonElementStyler]
   }
 }

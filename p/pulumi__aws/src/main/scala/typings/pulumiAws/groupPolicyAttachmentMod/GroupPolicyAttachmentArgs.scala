@@ -23,7 +23,6 @@ object GroupPolicyAttachmentArgs {
   @scala.inline
   def apply(group: Input[String | Group], policyArn: Input[ARN]): GroupPolicyAttachmentArgs = {
     val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any], policyArn = policyArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GroupPolicyAttachmentArgs]
   }
 }

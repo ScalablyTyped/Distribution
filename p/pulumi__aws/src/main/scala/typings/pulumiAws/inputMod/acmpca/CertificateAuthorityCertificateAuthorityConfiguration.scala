@@ -29,7 +29,6 @@ object CertificateAuthorityCertificateAuthorityConfiguration {
     subject: Input[CertificateAuthorityCertificateAuthorityConfigurationSubject]
   ): CertificateAuthorityCertificateAuthorityConfiguration = {
     val __obj = js.Dynamic.literal(keyAlgorithm = keyAlgorithm.asInstanceOf[js.Any], signingAlgorithm = signingAlgorithm.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CertificateAuthorityCertificateAuthorityConfiguration]
   }
 }

@@ -28,7 +28,6 @@ object CacheService {
     getUserCache: () => typings.googleAppsScript.GoogleAppsScript.Cache.Cache | Null
   ): CacheService = {
     val __obj = js.Dynamic.literal(getDocumentCache = js.Any.fromFunction0(getDocumentCache), getScriptCache = js.Any.fromFunction0(getScriptCache), getUserCache = js.Any.fromFunction0(getUserCache))
-  
     __obj.asInstanceOf[CacheService]
   }
 }

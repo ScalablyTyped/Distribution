@@ -14,7 +14,6 @@ object AnonNewUrl {
   @scala.inline
   def apply(newUrl: String, parsedDestination: UrlWithParsedQuery): AnonNewUrl = {
     val __obj = js.Dynamic.literal(newUrl = newUrl.asInstanceOf[js.Any], parsedDestination = parsedDestination.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNewUrl]
   }
 }

@@ -88,7 +88,6 @@ object PodSecurityContext {
     windowsOptions: WindowsSecurityContextOptions
   ): PodSecurityContext = {
     val __obj = js.Dynamic.literal(fsGroup = fsGroup.asInstanceOf[js.Any], fsGroupChangePolicy = fsGroupChangePolicy.asInstanceOf[js.Any], runAsGroup = runAsGroup.asInstanceOf[js.Any], runAsNonRoot = runAsNonRoot.asInstanceOf[js.Any], runAsUser = runAsUser.asInstanceOf[js.Any], seLinuxOptions = seLinuxOptions.asInstanceOf[js.Any], supplementalGroups = supplementalGroups.asInstanceOf[js.Any], sysctls = sysctls.asInstanceOf[js.Any], windowsOptions = windowsOptions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PodSecurityContext]
   }
 }

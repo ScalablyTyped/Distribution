@@ -13,12 +13,10 @@ trait MediaDeviceKind extends js.Object
 
 object MediaDeviceKind {
   @scala.inline
-  def audioinput: typings.std.stdStrings.audioinput = this.cast("audioinput")
+  def audioinput: typings.std.stdStrings.audioinput = "audioinput".asInstanceOf[typings.std.stdStrings.audioinput]
   @scala.inline
-  def audiooutput: typings.std.stdStrings.audiooutput = this.cast("audiooutput")
+  def audiooutput: typings.std.stdStrings.audiooutput = "audiooutput".asInstanceOf[typings.std.stdStrings.audiooutput]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def videoinput: typings.std.stdStrings.videoinput = this.cast("videoinput")
+  def videoinput: typings.std.stdStrings.videoinput = "videoinput".asInstanceOf[typings.std.stdStrings.videoinput]
 }
 

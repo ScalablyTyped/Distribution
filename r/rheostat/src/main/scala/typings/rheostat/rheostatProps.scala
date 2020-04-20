@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait rheostatProps {
   @scala.inline
-  def RheostatProps: Props.type = typings.rheostat.mod.Props
+  def RheostatProps: Props.type = Props
   type RheostatProps = Props
 }
 

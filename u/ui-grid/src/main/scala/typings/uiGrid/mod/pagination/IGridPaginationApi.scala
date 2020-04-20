@@ -45,7 +45,6 @@ object IGridPaginationApi {
     seek: Double => Unit
   ): IGridPaginationApi = {
     val __obj = js.Dynamic.literal(getPage = js.Any.fromFunction0(getPage), getTotalPages = js.Any.fromFunction0(getTotalPages), nextPage = js.Any.fromFunction0(nextPage), on = on.asInstanceOf[js.Any], previousPage = js.Any.fromFunction0(previousPage), seek = js.Any.fromFunction1(seek))
-  
     __obj.asInstanceOf[IGridPaginationApi]
   }
 }

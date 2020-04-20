@@ -47,21 +47,21 @@ class DateTimeType protected () extends DataType {
   @JSName("model")
   var model_FDateTimeType: IModel = js.native
   @JSName("containerAsAppServiceActionParameter")
-  def containerAsAppServiceActionParameter_MDateTimeType(): AppServiceActionParameter = js.native
+  def containerAsAppServiceActionParameter_MDateTimeType: AppServiceActionParameter = js.native
   @JSName("containerAsAppServiceAction")
-  def containerAsAppServiceAction_MDateTimeType(): AppServiceAction = js.native
+  def containerAsAppServiceAction_MDateTimeType: AppServiceAction = js.native
   @JSName("containerAsConstant")
-  def containerAsConstant_MDateTimeType(): Constant = js.native
+  def containerAsConstant_MDateTimeType: Constant = js.native
   @JSName("containerAsDataSetParameter")
-  def containerAsDataSetParameter_MDateTimeType(): DataSetParameter = js.native
+  def containerAsDataSetParameter_MDateTimeType: DataSetParameter = js.native
   @JSName("containerAsDocumentTemplateParameter")
-  def containerAsDocumentTemplateParameter_MDateTimeType(): DocumentTemplateParameter = js.native
+  def containerAsDocumentTemplateParameter_MDateTimeType: DocumentTemplateParameter = js.native
   @JSName("containerAsImportMapping")
-  def containerAsImportMapping_MDateTimeType(): ImportMapping = js.native
+  def containerAsImportMapping_MDateTimeType: ImportMapping = js.native
   @JSName("containerAsMicroflowBase")
-  def containerAsMicroflowBase_MDateTimeType(): MicroflowBase = js.native
+  def containerAsMicroflowBase_MDateTimeType: MicroflowBase = js.native
   @JSName("containerAsMicroflowParameterBase")
-  def containerAsMicroflowParameterBase_MDateTimeType(): MicroflowParameterBase = js.native
+  def containerAsMicroflowParameterBase_MDateTimeType: MicroflowParameterBase = js.native
 }
 
 /* static members */

@@ -26,7 +26,6 @@ object NoSleep {
   @scala.inline
   def apply(disable: () => Unit, enable: () => Unit): NoSleep = {
     val __obj = js.Dynamic.literal(disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable))
-  
     __obj.asInstanceOf[NoSleep]
   }
 }

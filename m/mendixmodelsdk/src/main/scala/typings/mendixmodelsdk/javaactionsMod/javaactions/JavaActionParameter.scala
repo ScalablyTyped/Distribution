@@ -54,27 +54,27 @@ class JavaActionParameter protected () extends CodeActionParameter {
   @JSName("type")
   val type_FJavaActionParameter: String | Null = js.native
   @JSName("containerAsCodeAction")
-  def containerAsCodeAction_MJavaActionParameter(): CodeAction = js.native
+  def containerAsCodeAction_MJavaActionParameter: CodeAction = js.native
   @JSName("containerAsJavaAction")
-  def containerAsJavaAction_MJavaActionParameter(): JavaAction = js.native
+  def containerAsJavaAction_MJavaActionParameter: JavaAction = js.native
   /**
     * In version 6.7.0: deleted
     * In version 6.6.0: introduced
     */
-  def javaType(): Type = js.native
+  def javaType: Type = js.native
   def javaType(newValue: Type): js.Any = js.native
   /**
     * In version 7.21.0: deleted
     * In version 6.7.0: introduced
     */
-  def parameterType(): ParameterType = js.native
+  def parameterType: ParameterType = js.native
   def parameterType(newValue: ParameterType): js.Any = js.native
   /**
     * The value of this property is conceptually of type dataTypes.LegacyDataType.
     *
     * In version 6.6.0: deleted
     */
-  def `type`(): String = js.native
+  def `type`: String = js.native
   def `type`(newValue: String): js.Any = js.native
 }
 

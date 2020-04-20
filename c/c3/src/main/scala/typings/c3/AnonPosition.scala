@@ -30,7 +30,6 @@ object AnonPosition {
     text: String
   ): AnonPosition = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPosition]
   }
 }

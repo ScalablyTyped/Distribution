@@ -93,7 +93,6 @@ object AnonAddresses {
     urls: urls
   ): AnonAddresses = {
     val __obj = js.Dynamic.literal(addresses = addresses.asInstanceOf[js.Any], birthday = birthday.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], department = department.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], emails = emails.asInstanceOf[js.Any], familyName = familyName.asInstanceOf[js.Any], formatted = formatted.asInstanceOf[js.Any], givenName = givenName.asInstanceOf[js.Any], honorificPrefix = honorificPrefix.asInstanceOf[js.Any], honorificSuffix = honorificSuffix.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ims = ims.asInstanceOf[js.Any], locality = locality.asInstanceOf[js.Any], middleName = middleName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nickname = nickname.asInstanceOf[js.Any], note = note.asInstanceOf[js.Any], organizations = organizations.asInstanceOf[js.Any], phoneNumbers = phoneNumbers.asInstanceOf[js.Any], photos = photos.asInstanceOf[js.Any], postalCode = postalCode.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], streetAddress = streetAddress.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], urls = urls.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAddresses]
   }
 }

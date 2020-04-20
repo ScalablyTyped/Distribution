@@ -13,7 +13,6 @@ object AnonNotificationsButton {
   @scala.inline
   def apply(counterLabel: String, notificationsButton: String): AnonNotificationsButton = {
     val __obj = js.Dynamic.literal(counterLabel = counterLabel.asInstanceOf[js.Any], notificationsButton = notificationsButton.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNotificationsButton]
   }
 }

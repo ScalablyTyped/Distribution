@@ -13,7 +13,6 @@ object AnonInputMb {
   @scala.inline
   def apply(inputMb: Double, outputMb: Double): AnonInputMb = {
     val __obj = js.Dynamic.literal(inputMb = inputMb.asInstanceOf[js.Any], outputMb = outputMb.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonInputMb]
   }
 }

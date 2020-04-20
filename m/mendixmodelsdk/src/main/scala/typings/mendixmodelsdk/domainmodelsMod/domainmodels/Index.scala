@@ -27,9 +27,9 @@ class Index protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FIndex: IModel = js.native
-  def attributes(): IList[IndexedAttribute] = js.native
-  def containerAsEntity(): Entity = js.native
-  def dataStorageGuid(): String = js.native
+  def attributes: IList[IndexedAttribute] = js.native
+  def containerAsEntity: Entity = js.native
+  def dataStorageGuid: String = js.native
   def dataStorageGuid(newValue: String): js.Any = js.native
 }
 

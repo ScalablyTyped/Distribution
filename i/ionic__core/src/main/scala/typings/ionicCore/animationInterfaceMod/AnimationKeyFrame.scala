@@ -13,7 +13,6 @@ object AnimationKeyFrame {
   @scala.inline
   def apply(offset: Double): AnimationKeyFrame = {
     val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnimationKeyFrame]
   }
 }

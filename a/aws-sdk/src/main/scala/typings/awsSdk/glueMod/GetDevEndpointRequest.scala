@@ -16,7 +16,6 @@ object GetDevEndpointRequest {
   @scala.inline
   def apply(EndpointName: GenericString): GetDevEndpointRequest = {
     val __obj = js.Dynamic.literal(EndpointName = EndpointName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDevEndpointRequest]
   }
 }

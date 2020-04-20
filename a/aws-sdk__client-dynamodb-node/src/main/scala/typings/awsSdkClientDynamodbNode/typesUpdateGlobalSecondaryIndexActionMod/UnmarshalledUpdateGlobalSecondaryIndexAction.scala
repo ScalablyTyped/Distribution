@@ -17,7 +17,6 @@ object UnmarshalledUpdateGlobalSecondaryIndexAction {
   @scala.inline
   def apply(IndexName: String, ProvisionedThroughput: UnmarshalledProvisionedThroughput): UnmarshalledUpdateGlobalSecondaryIndexAction = {
     val __obj = js.Dynamic.literal(IndexName = IndexName.asInstanceOf[js.Any], ProvisionedThroughput = ProvisionedThroughput.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnmarshalledUpdateGlobalSecondaryIndexAction]
   }
 }

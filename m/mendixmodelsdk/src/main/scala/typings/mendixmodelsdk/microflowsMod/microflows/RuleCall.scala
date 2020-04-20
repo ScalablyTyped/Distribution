@@ -24,13 +24,13 @@ class RuleCall protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FRuleCall: IModel = js.native
-  def containerAsRuleSplitCondition(): RuleSplitCondition = js.native
-  def parameterMappings(): IList[RuleCallParameterMapping] = js.native
+  def containerAsRuleSplitCondition: RuleSplitCondition = js.native
+  def parameterMappings: IList[RuleCallParameterMapping] = js.native
   def rule(): js.Any = js.native
   def rule(newValue: IRule): js.Any = js.native
-  def ruleQualifiedName(): String | Null = js.native
+  def ruleQualifiedName: String | Null = js.native
   @JSName("rule")
-  def rule_Union(): IRule | Null = js.native
+  def rule_Union: IRule | Null = js.native
 }
 
 /* static members */

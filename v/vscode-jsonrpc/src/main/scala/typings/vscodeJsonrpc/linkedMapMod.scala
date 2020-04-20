@@ -39,7 +39,7 @@ object linkedMapMod extends js.Object {
     def set(key: K, value: V): Unit = js.native
     def set(key: K, value: V, touch: Touch): Unit = js.native
     def shift(): js.UndefOr[V] = js.native
-    def size(): Double = js.native
+    def size: Double = js.native
     def values(): js.Array[V] = js.native
   }
   

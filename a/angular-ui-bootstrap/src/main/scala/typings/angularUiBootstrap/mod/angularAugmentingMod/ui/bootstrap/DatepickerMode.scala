@@ -13,12 +13,10 @@ trait DatepickerMode extends js.Object
 
 object DatepickerMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def day: typings.angularUiBootstrap.angularUiBootstrapStrings.day = "day".asInstanceOf[typings.angularUiBootstrap.angularUiBootstrapStrings.day]
   @scala.inline
-  def day: typings.angularUiBootstrap.angularUiBootstrapStrings.day = this.cast("day")
+  def month: typings.angularUiBootstrap.angularUiBootstrapStrings.month = "month".asInstanceOf[typings.angularUiBootstrap.angularUiBootstrapStrings.month]
   @scala.inline
-  def month: typings.angularUiBootstrap.angularUiBootstrapStrings.month = this.cast("month")
-  @scala.inline
-  def year: typings.angularUiBootstrap.angularUiBootstrapStrings.year = this.cast("year")
+  def year: typings.angularUiBootstrap.angularUiBootstrapStrings.year = "year".asInstanceOf[typings.angularUiBootstrap.angularUiBootstrapStrings.year]
 }
 

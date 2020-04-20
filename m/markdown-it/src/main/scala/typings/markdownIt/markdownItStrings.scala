@@ -1,33 +1,35 @@
 package typings.markdownIt
 
+import typings.markdownIt.libMod.PresetName
+import typings.markdownIt.stateBlockMod.ParentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object markdownItStrings {
   @js.native
-  sealed trait blockquote extends js.Object
+  sealed trait blockquote extends ParentType
   
   @js.native
-  sealed trait commonmark extends js.Object
+  sealed trait commonmark extends PresetName
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait default extends PresetName
   
   @js.native
-  sealed trait list extends js.Object
+  sealed trait list extends ParentType
   
   @js.native
-  sealed trait paragraph extends js.Object
+  sealed trait paragraph extends ParentType
   
   @js.native
-  sealed trait reference extends js.Object
+  sealed trait reference extends ParentType
   
   @js.native
-  sealed trait root extends js.Object
+  sealed trait root extends ParentType
   
   @js.native
-  sealed trait zero extends js.Object
+  sealed trait zero extends PresetName
   
   @scala.inline
   def blockquote: blockquote = "blockquote".asInstanceOf[blockquote]

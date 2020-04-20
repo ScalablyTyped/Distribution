@@ -20,7 +20,6 @@ object DetachInstancesFromLoadBalancerRequest {
   @scala.inline
   def apply(instanceNames: ResourceNameList, loadBalancerName: ResourceName): DetachInstancesFromLoadBalancerRequest = {
     val __obj = js.Dynamic.literal(instanceNames = instanceNames.asInstanceOf[js.Any], loadBalancerName = loadBalancerName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DetachInstancesFromLoadBalancerRequest]
   }
 }

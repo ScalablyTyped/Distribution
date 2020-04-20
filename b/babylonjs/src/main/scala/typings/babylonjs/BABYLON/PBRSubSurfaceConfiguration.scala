@@ -138,7 +138,7 @@ class PBRSubSurfaceConfiguration protected () extends js.Object {
   /**
     * Returns true if alpha blending should be disabled.
     */
-  def disableAlphaBlending(): Boolean = js.native
+  def disableAlphaBlending: Boolean = js.native
   /**
     * Disposes the resources of the material.
     * @param forceDisposeTextures - Forces the disposal of all textures.

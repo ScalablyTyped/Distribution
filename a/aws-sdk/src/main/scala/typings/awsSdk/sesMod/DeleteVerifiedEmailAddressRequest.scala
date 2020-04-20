@@ -16,7 +16,6 @@ object DeleteVerifiedEmailAddressRequest {
   @scala.inline
   def apply(EmailAddress: Address): DeleteVerifiedEmailAddressRequest = {
     val __obj = js.Dynamic.literal(EmailAddress = EmailAddress.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteVerifiedEmailAddressRequest]
   }
 }

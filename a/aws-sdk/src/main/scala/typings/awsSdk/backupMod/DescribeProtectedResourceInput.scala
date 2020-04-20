@@ -16,7 +16,6 @@ object DescribeProtectedResourceInput {
   @scala.inline
   def apply(ResourceArn: ARN): DescribeProtectedResourceInput = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeProtectedResourceInput]
   }
 }

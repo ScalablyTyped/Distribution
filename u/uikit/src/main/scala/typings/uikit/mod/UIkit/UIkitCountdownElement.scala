@@ -13,7 +13,6 @@ object UIkitCountdownElement {
   @scala.inline
   def apply(start: () => Unit, stop: () => Unit): UIkitCountdownElement = {
     val __obj = js.Dynamic.literal(start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop))
-  
     __obj.asInstanceOf[UIkitCountdownElement]
   }
 }

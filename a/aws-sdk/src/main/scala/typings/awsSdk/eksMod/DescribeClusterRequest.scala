@@ -16,7 +16,6 @@ object DescribeClusterRequest {
   @scala.inline
   def apply(name: String): DescribeClusterRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeClusterRequest]
   }
 }

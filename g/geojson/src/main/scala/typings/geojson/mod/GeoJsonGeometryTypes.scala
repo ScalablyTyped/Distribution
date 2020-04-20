@@ -18,20 +18,18 @@ trait GeoJsonGeometryTypes extends js.Object
 
 object GeoJsonGeometryTypes {
   @scala.inline
-  def GeometryCollection: typings.geojson.geojsonStrings.GeometryCollection = this.cast("GeometryCollection")
+  def GeometryCollection: typings.geojson.geojsonStrings.GeometryCollection = "GeometryCollection".asInstanceOf[typings.geojson.geojsonStrings.GeometryCollection]
   @scala.inline
-  def LineString: typings.geojson.geojsonStrings.LineString = this.cast("LineString")
+  def LineString: typings.geojson.geojsonStrings.LineString = "LineString".asInstanceOf[typings.geojson.geojsonStrings.LineString]
   @scala.inline
-  def MultiLineString: typings.geojson.geojsonStrings.MultiLineString = this.cast("MultiLineString")
+  def MultiLineString: typings.geojson.geojsonStrings.MultiLineString = "MultiLineString".asInstanceOf[typings.geojson.geojsonStrings.MultiLineString]
   @scala.inline
-  def MultiPoint: typings.geojson.geojsonStrings.MultiPoint = this.cast("MultiPoint")
+  def MultiPoint: typings.geojson.geojsonStrings.MultiPoint = "MultiPoint".asInstanceOf[typings.geojson.geojsonStrings.MultiPoint]
   @scala.inline
-  def MultiPolygon: typings.geojson.geojsonStrings.MultiPolygon = this.cast("MultiPolygon")
+  def MultiPolygon: typings.geojson.geojsonStrings.MultiPolygon = "MultiPolygon".asInstanceOf[typings.geojson.geojsonStrings.MultiPolygon]
   @scala.inline
-  def Point: typings.geojson.geojsonStrings.Point = this.cast("Point")
+  def Point: typings.geojson.geojsonStrings.Point = "Point".asInstanceOf[typings.geojson.geojsonStrings.Point]
   @scala.inline
-  def Polygon: typings.geojson.geojsonStrings.Polygon = this.cast("Polygon")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Polygon: typings.geojson.geojsonStrings.Polygon = "Polygon".asInstanceOf[typings.geojson.geojsonStrings.Polygon]
 }
 

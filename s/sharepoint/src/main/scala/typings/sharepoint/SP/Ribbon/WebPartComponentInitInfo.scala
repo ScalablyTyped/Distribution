@@ -14,7 +14,6 @@ object WebPartComponentInitInfo {
   @scala.inline
   def apply(allowWebPartAdder: Boolean, editable: Boolean, isEditMode: Boolean): WebPartComponentInitInfo = {
     val __obj = js.Dynamic.literal(allowWebPartAdder = allowWebPartAdder.asInstanceOf[js.Any], editable = editable.asInstanceOf[js.Any], isEditMode = isEditMode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WebPartComponentInitInfo]
   }
 }

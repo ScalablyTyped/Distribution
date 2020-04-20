@@ -16,7 +16,6 @@ object WorkDoneProgressCreateParams {
   @scala.inline
   def apply(token: ProgressToken): WorkDoneProgressCreateParams = {
     val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WorkDoneProgressCreateParams]
   }
 }

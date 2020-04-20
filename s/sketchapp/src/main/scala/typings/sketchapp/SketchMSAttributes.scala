@@ -20,7 +20,6 @@ object SketchMSAttributes {
     paragraphStyle: SketchMSParagraphStyle
   ): SketchMSAttributes = {
     val __obj = js.Dynamic.literal(MSAttributedStringColorAttribute = MSAttributedStringColorAttribute.asInstanceOf[js.Any], MSAttributedStringFontAttribute = MSAttributedStringFontAttribute.asInstanceOf[js.Any], kerning = kerning.asInstanceOf[js.Any], paragraphStyle = paragraphStyle.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SketchMSAttributes]
   }
 }

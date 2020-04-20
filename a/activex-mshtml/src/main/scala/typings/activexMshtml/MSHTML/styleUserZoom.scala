@@ -18,14 +18,12 @@ trait styleUserZoom extends js.Object
 
 object styleUserZoom {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleUserZoomFixed: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleUserZoomFixed: `2` = this.cast(2)
+  def styleUserZoomNotSet: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleUserZoomNotSet: `0` = this.cast(0)
+  def styleUserZoomZoom: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleUserZoomZoom: `1` = this.cast(1)
-  @scala.inline
-  def styleUserZoom_Max: `2147483647` = this.cast(2147483647)
+  def styleUserZoom_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

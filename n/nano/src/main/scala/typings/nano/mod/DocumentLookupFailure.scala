@@ -13,7 +13,6 @@ object DocumentLookupFailure {
   @scala.inline
   def apply(error: String, key: String): DocumentLookupFailure = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DocumentLookupFailure]
   }
 }

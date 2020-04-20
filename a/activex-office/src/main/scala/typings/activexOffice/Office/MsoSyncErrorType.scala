@@ -44,40 +44,38 @@ trait MsoSyncErrorType extends js.Object
 
 object MsoSyncErrorType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoSyncErrorCouldNotCompare: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def msoSyncErrorCouldNotCompare: `13` = this.cast(13)
+  def msoSyncErrorCouldNotConnect: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoSyncErrorCouldNotConnect: `2` = this.cast(2)
+  def msoSyncErrorCouldNotOpen: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def msoSyncErrorCouldNotOpen: `11` = this.cast(11)
+  def msoSyncErrorCouldNotResolve: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def msoSyncErrorCouldNotResolve: `14` = this.cast(14)
+  def msoSyncErrorCouldNotUpdate: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def msoSyncErrorCouldNotUpdate: `12` = this.cast(12)
+  def msoSyncErrorFileInUse: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def msoSyncErrorFileInUse: `6` = this.cast(6)
+  def msoSyncErrorFileNotFound: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoSyncErrorFileNotFound: `4` = this.cast(4)
+  def msoSyncErrorFileTooLarge: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def msoSyncErrorFileTooLarge: `5` = this.cast(5)
+  def msoSyncErrorNoNetwork: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def msoSyncErrorNoNetwork: `15` = this.cast(15)
+  def msoSyncErrorNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def msoSyncErrorNone: `0` = this.cast(0)
+  def msoSyncErrorOutOfSpace: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoSyncErrorOutOfSpace: `3` = this.cast(3)
+  def msoSyncErrorUnauthorizedUser: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoSyncErrorUnauthorizedUser: `1` = this.cast(1)
+  def msoSyncErrorUnknown: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def msoSyncErrorUnknown: `16` = this.cast(16)
+  def msoSyncErrorUnknownDownload: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def msoSyncErrorUnknownDownload: `10` = this.cast(10)
+  def msoSyncErrorUnknownUpload: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def msoSyncErrorUnknownUpload: `9` = this.cast(9)
+  def msoSyncErrorVirusDownload: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def msoSyncErrorVirusDownload: `8` = this.cast(8)
-  @scala.inline
-  def msoSyncErrorVirusUpload: `7` = this.cast(7)
+  def msoSyncErrorVirusUpload: `7` = 7.asInstanceOf[`7`]
 }
 

@@ -20,7 +20,6 @@ object DecreaseStreamRetentionPeriodInput {
   @scala.inline
   def apply(RetentionPeriodHours: RetentionPeriodHours, StreamName: StreamName): DecreaseStreamRetentionPeriodInput = {
     val __obj = js.Dynamic.literal(RetentionPeriodHours = RetentionPeriodHours.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DecreaseStreamRetentionPeriodInput]
   }
 }

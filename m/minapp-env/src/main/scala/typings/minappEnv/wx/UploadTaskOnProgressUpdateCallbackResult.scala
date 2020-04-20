@@ -17,7 +17,6 @@ object UploadTaskOnProgressUpdateCallbackResult {
   @scala.inline
   def apply(progress: Double, totalBytesExpectedToSend: Double, totalBytesSent: Double): UploadTaskOnProgressUpdateCallbackResult = {
     val __obj = js.Dynamic.literal(progress = progress.asInstanceOf[js.Any], totalBytesExpectedToSend = totalBytesExpectedToSend.asInstanceOf[js.Any], totalBytesSent = totalBytesSent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UploadTaskOnProgressUpdateCallbackResult]
   }
 }

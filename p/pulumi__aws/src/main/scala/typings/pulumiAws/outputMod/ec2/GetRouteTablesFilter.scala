@@ -22,7 +22,6 @@ object GetRouteTablesFilter {
   @scala.inline
   def apply(name: String, values: js.Array[String]): GetRouteTablesFilter = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetRouteTablesFilter]
   }
 }

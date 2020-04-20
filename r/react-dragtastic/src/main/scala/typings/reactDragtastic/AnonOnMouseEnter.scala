@@ -14,7 +14,6 @@ object AnonOnMouseEnter {
   @scala.inline
   def apply(onMouseEnter: () => Unit, onMouseLeave: () => Unit, onMouseUp: () => Unit): AnonOnMouseEnter = {
     val __obj = js.Dynamic.literal(onMouseEnter = js.Any.fromFunction0(onMouseEnter), onMouseLeave = js.Any.fromFunction0(onMouseLeave), onMouseUp = js.Any.fromFunction0(onMouseUp))
-  
     __obj.asInstanceOf[AnonOnMouseEnter]
   }
 }

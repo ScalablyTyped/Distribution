@@ -13,7 +13,6 @@ object AnonEndTime {
   @scala.inline
   def apply(endTime: Double, startTime: Double): AnonEndTime = {
     val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEndTime]
   }
 }

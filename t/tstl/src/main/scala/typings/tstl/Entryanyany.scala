@@ -50,7 +50,6 @@ object Entryanyany {
     second: /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any
   ): Entryanyany = {
     val __obj = js.Dynamic.literal(equals = js.Any.fromFunction1(equals), first = first.asInstanceOf[js.Any], less = js.Any.fromFunction1(less), second = second.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Entryanyany]
   }
 }

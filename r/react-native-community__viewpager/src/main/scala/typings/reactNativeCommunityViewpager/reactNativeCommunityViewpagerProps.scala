@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeCommunityViewpagerProps {
   @scala.inline
-  def ViewpagerProps: ViewPagerAndroidProps.type = typings.reactNativeCommunityViewpager.mod.ViewPagerAndroidProps
+  def ViewpagerProps: ViewPagerAndroidProps.type = ViewPagerAndroidProps
   type ViewpagerProps = ViewPagerAndroidProps
 }
 

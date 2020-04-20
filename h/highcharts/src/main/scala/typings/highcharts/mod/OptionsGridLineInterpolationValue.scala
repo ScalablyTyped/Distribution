@@ -12,10 +12,8 @@ trait OptionsGridLineInterpolationValue extends js.Object
 
 object OptionsGridLineInterpolationValue {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def circle: typings.highcharts.highchartsStrings.circle = "circle".asInstanceOf[typings.highcharts.highchartsStrings.circle]
   @scala.inline
-  def circle: typings.highcharts.highchartsStrings.circle = this.cast("circle")
-  @scala.inline
-  def polygon: typings.highcharts.highchartsStrings.polygon = this.cast("polygon")
+  def polygon: typings.highcharts.highchartsStrings.polygon = "polygon".asInstanceOf[typings.highcharts.highchartsStrings.polygon]
 }
 

@@ -13,12 +13,10 @@ trait IdleState extends js.Object
 
 object IdleState {
   @scala.inline
-  def active: typings.chromeApps.chromeAppsStrings.active = this.cast("active")
+  def active: typings.chromeApps.chromeAppsStrings.active = "active".asInstanceOf[typings.chromeApps.chromeAppsStrings.active]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def idle: typings.chromeApps.chromeAppsStrings.idle = "idle".asInstanceOf[typings.chromeApps.chromeAppsStrings.idle]
   @scala.inline
-  def idle: typings.chromeApps.chromeAppsStrings.idle = this.cast("idle")
-  @scala.inline
-  def locked: typings.chromeApps.chromeAppsStrings.locked = this.cast("locked")
+  def locked: typings.chromeApps.chromeAppsStrings.locked = "locked".asInstanceOf[typings.chromeApps.chromeAppsStrings.locked]
 }
 

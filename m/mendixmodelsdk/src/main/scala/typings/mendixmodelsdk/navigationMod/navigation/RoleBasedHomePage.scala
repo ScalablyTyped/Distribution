@@ -25,9 +25,9 @@ class RoleBasedHomePage protected () extends HomePageBase {
   var model_FRoleBasedHomePage: IModel = js.native
   def userRole(): js.Any = js.native
   def userRole(newValue: IUserRole): js.Any = js.native
-  def userRoleQualifiedName(): String | Null = js.native
+  def userRoleQualifiedName: String | Null = js.native
   @JSName("userRole")
-  def userRole_Union(): IUserRole | Null = js.native
+  def userRole_Union: IUserRole | Null = js.native
 }
 
 /* static members */

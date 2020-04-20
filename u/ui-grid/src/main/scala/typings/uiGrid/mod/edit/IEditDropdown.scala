@@ -13,7 +13,6 @@ object IEditDropdown {
   @scala.inline
   def apply(id: Double | String, value: js.Any): IEditDropdown = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IEditDropdown]
   }
 }

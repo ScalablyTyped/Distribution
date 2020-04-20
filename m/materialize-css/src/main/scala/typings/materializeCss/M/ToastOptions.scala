@@ -51,7 +51,6 @@ object ToastOptions {
     outDuration: Double
   ): ToastOptions = {
     val __obj = js.Dynamic.literal(activationPercent = activationPercent.asInstanceOf[js.Any], classes = classes.asInstanceOf[js.Any], completeCallback = js.Any.fromFunction0(completeCallback), displayLength = displayLength.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], inDuration = inDuration.asInstanceOf[js.Any], outDuration = outDuration.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ToastOptions]
   }
 }

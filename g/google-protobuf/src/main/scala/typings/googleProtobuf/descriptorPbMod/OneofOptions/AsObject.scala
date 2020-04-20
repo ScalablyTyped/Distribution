@@ -14,7 +14,6 @@ object AsObject {
     uninterpretedOptionList: js.Array[typings.googleProtobuf.descriptorPbMod.UninterpretedOption.AsObject]
   ): AsObject = {
     val __obj = js.Dynamic.literal(uninterpretedOptionList = uninterpretedOptionList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AsObject]
   }
 }

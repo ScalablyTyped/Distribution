@@ -15,7 +15,6 @@ object AnonExtraRightPx {
   @scala.inline
   def apply(extraLeftPx: Double, extraRightPx: Double, notePx: Double, width: Double): AnonExtraRightPx = {
     val __obj = js.Dynamic.literal(extraLeftPx = extraLeftPx.asInstanceOf[js.Any], extraRightPx = extraRightPx.asInstanceOf[js.Any], notePx = notePx.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonExtraRightPx]
   }
 }

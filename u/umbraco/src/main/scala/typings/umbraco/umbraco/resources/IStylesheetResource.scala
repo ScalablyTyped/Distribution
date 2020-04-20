@@ -83,7 +83,6 @@ object IStylesheetResource {
     getRulesByName: String => IPromise[IResourcePromise]
   ): IStylesheetResource = {
     val __obj = js.Dynamic.literal(getAll = js.Any.fromFunction0(getAll), getRules = js.Any.fromFunction1(getRules), getRulesByName = js.Any.fromFunction1(getRulesByName))
-  
     __obj.asInstanceOf[IStylesheetResource]
   }
 }

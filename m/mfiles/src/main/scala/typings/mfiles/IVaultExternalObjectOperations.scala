@@ -20,7 +20,6 @@ object IVaultExternalObjectOperations {
     PromoteObject: (IObjVer, IPropertyValues, MFACLEnforcingMode, IAccessControlList) => IObjectVersionAndProperties
   ): IVaultExternalObjectOperations = {
     val __obj = js.Dynamic.literal(PromoteObject = js.Any.fromFunction4(PromoteObject))
-  
     __obj.asInstanceOf[IVaultExternalObjectOperations]
   }
 }

@@ -15,7 +15,6 @@ object Item {
   @scala.inline
   def apply(data: js.Object, destroy: () => Unit, refresh: () => Unit, save: () => Unit): Item = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), refresh = js.Any.fromFunction0(refresh), save = js.Any.fromFunction0(save))
-  
     __obj.asInstanceOf[Item]
   }
 }

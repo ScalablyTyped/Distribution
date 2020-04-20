@@ -17,7 +17,6 @@ object FollowersObject {
   @scala.inline
   def apply(href: String, total: Double): FollowersObject = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FollowersObject]
   }
 }

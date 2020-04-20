@@ -12,7 +12,6 @@ object AnonChildrenChildrenType {
   @scala.inline
   def apply[ChildrenType](children: ChildrenType): AnonChildrenChildrenType[ChildrenType] = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonChildrenChildrenType[ChildrenType]]
   }
 }

@@ -16,12 +16,10 @@ trait WdTemplateType extends js.Object
 
 object WdTemplateType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdAttachedTemplate: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdAttachedTemplate: `2` = this.cast(2)
+  def wdGlobalTemplate: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdGlobalTemplate: `1` = this.cast(1)
-  @scala.inline
-  def wdNormalTemplate: `0` = this.cast(0)
+  def wdNormalTemplate: `0` = 0.asInstanceOf[`0`]
 }
 

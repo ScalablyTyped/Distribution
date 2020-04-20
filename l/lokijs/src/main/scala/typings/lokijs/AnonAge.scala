@@ -14,7 +14,6 @@ object AnonAge {
   @scala.inline
   def apply(age: js.Any, daemon: js.Any, ttlInterval: js.Any): AnonAge = {
     val __obj = js.Dynamic.literal(age = age.asInstanceOf[js.Any], daemon = daemon.asInstanceOf[js.Any], ttlInterval = ttlInterval.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAge]
   }
 }

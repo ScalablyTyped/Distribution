@@ -12,10 +12,8 @@ trait DayLayoutAlgorithm extends js.Object
 
 object DayLayoutAlgorithm {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `no-overlap`: typings.reactBigCalendar.reactBigCalendarStrings.`no-overlap` = "no-overlap".asInstanceOf[typings.reactBigCalendar.reactBigCalendarStrings.`no-overlap`]
   @scala.inline
-  def `no-overlap`: typings.reactBigCalendar.reactBigCalendarStrings.`no-overlap` = this.cast("no-overlap")
-  @scala.inline
-  def overlap: typings.reactBigCalendar.reactBigCalendarStrings.overlap = this.cast("overlap")
+  def overlap: typings.reactBigCalendar.reactBigCalendarStrings.overlap = "overlap".asInstanceOf[typings.reactBigCalendar.reactBigCalendarStrings.overlap]
 }
 

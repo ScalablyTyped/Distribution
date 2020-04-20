@@ -49,7 +49,6 @@ object text {
     tokenize: js.Any => js.Any
   ): text = {
     val __obj = js.Dynamic.literal(getFilter = js.Any.fromFunction2(getFilter), getTag = js.Any.fromFunction2(getTag), getTemplate = js.Any.fromFunction1(getTemplate), getTemplateString = js.Any.fromFunction1(getTemplateString), tokenize = js.Any.fromFunction1(tokenize))
-  
     __obj.asInstanceOf[text]
   }
 }

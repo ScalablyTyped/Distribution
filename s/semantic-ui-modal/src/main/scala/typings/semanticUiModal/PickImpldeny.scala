@@ -13,7 +13,6 @@ object PickImpldeny {
   @scala.inline
   def apply(deny: String): PickImpldeny = {
     val __obj = js.Dynamic.literal(deny = deny.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpldeny]
   }
 }

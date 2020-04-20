@@ -24,7 +24,6 @@ object MobileapppanelsResource {
     update: AnonAlt => Request_[MobileAppPanel]
   ): MobileapppanelsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[MobileapppanelsResource]
   }
 }

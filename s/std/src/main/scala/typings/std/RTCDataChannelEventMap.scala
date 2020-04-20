@@ -22,7 +22,6 @@ object RTCDataChannelEventMap {
     open: Event_
   ): RTCDataChannelEventMap = {
     val __obj = js.Dynamic.literal(bufferedamountlow = bufferedamountlow.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RTCDataChannelEventMap]
   }
 }

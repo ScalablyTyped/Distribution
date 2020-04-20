@@ -16,7 +16,6 @@ object DeleteAppRequest {
   @scala.inline
   def apply(appId: AppId): DeleteAppRequest = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteAppRequest]
   }
 }

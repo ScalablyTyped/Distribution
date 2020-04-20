@@ -19,7 +19,6 @@ object ReposUpdateBranchProtectionParamsRequiredStatusChecks {
   @scala.inline
   def apply(contexts: js.Array[String], strict: Boolean): ReposUpdateBranchProtectionParamsRequiredStatusChecks = {
     val __obj = js.Dynamic.literal(contexts = contexts.asInstanceOf[js.Any], strict = strict.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReposUpdateBranchProtectionParamsRequiredStatusChecks]
   }
 }

@@ -21,7 +21,6 @@ object CacheCategory {
     getRegexTest: RegexRule => Boolean
   ): CacheCategory = {
     val __obj = js.Dynamic.literal(getCacheCategory = js.Any.fromFunction0(getCacheCategory), getCategory = js.Any.fromFunction0(getCategory), getCurrentUrl = js.Any.fromFunction0(getCurrentUrl), getRegexTest = js.Any.fromFunction1(getRegexTest))
-  
     __obj.asInstanceOf[CacheCategory]
   }
 }

@@ -8,9 +8,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
-  var autoPan: js.UndefOr[Boolean] = js.undefined
+  var autoPan: js.UndefOr[PanIntoViewOptions | Boolean] = js.undefined
   var autoPanAnimation: js.UndefOr[PanOptions] = js.undefined
   var autoPanMargin: js.UndefOr[Double] = js.undefined
+  var autoPanOptions: js.UndefOr[PanIntoViewOptions] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var element: js.UndefOr[HTMLElement] = js.undefined
   var id: js.UndefOr[Double | String] = js.undefined
@@ -24,9 +25,10 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    autoPan: js.UndefOr[Boolean] = js.undefined,
+    autoPan: PanIntoViewOptions | Boolean = null,
     autoPanAnimation: PanOptions = null,
     autoPanMargin: Int | Double = null,
+    autoPanOptions: PanIntoViewOptions = null,
     className: String = null,
     element: HTMLElement = null,
     id: Double | String = null,
@@ -37,9 +39,10 @@ object Options {
     stopEvent: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoPan)) __obj.updateDynamic("autoPan")(autoPan.asInstanceOf[js.Any])
+    if (autoPan != null) __obj.updateDynamic("autoPan")(autoPan.asInstanceOf[js.Any])
     if (autoPanAnimation != null) __obj.updateDynamic("autoPanAnimation")(autoPanAnimation.asInstanceOf[js.Any])
     if (autoPanMargin != null) __obj.updateDynamic("autoPanMargin")(autoPanMargin.asInstanceOf[js.Any])
+    if (autoPanOptions != null) __obj.updateDynamic("autoPanOptions")(autoPanOptions.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])

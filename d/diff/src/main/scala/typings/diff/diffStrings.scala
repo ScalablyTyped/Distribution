@@ -14,6 +14,6 @@ object diffStrings {
   @scala.inline
   def `-_`: `-_` = "-".asInstanceOf[`-_`]
   @scala.inline
-  def Space: Space = " ".asInstanceOf[Space]
+  def Space: Space = (" ").asInstanceOf[Space]
 }
 

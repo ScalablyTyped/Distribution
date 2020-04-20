@@ -11,17 +11,21 @@ trait IRbmStandaloneCard extends js.Object {
   /** RbmStandaloneCard cardContent */
   var cardContent: js.UndefOr[IRbmCardContent | Null] = js.undefined
   /** RbmStandaloneCard cardOrientation */
-  var cardOrientation: js.UndefOr[CardOrientation | String | Null] = js.undefined
+  var cardOrientation: js.UndefOr[
+    CardOrientation | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.CardOrientation * / any */ String) | Null
+  ] = js.undefined
   /** RbmStandaloneCard thumbnailImageAlignment */
-  var thumbnailImageAlignment: js.UndefOr[ThumbnailImageAlignment | String | Null] = js.undefined
+  var thumbnailImageAlignment: js.UndefOr[
+    ThumbnailImageAlignment | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.ThumbnailImageAlignment * / any */ String) | Null
+  ] = js.undefined
 }
 
 object IRbmStandaloneCard {
   @scala.inline
   def apply(
     cardContent: IRbmCardContent = null,
-    cardOrientation: CardOrientation | String = null,
-    thumbnailImageAlignment: ThumbnailImageAlignment | String = null
+    cardOrientation: CardOrientation | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.CardOrientation * / any */ String) = null,
+    thumbnailImageAlignment: ThumbnailImageAlignment | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.ThumbnailImageAlignment * / any */ String) = null
   ): IRbmStandaloneCard = {
     val __obj = js.Dynamic.literal()
     if (cardContent != null) __obj.updateDynamic("cardContent")(cardContent.asInstanceOf[js.Any])

@@ -12,7 +12,6 @@ object FirewallResource {
   @scala.inline
   def apply(ingressRules: IngressRulesResource): FirewallResource = {
     val __obj = js.Dynamic.literal(ingressRules = ingressRules.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FirewallResource]
   }
 }

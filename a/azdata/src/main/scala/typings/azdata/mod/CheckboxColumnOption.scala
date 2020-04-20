@@ -12,7 +12,6 @@ object CheckboxColumnOption {
   @scala.inline
   def apply(actionOnCheckbox: ActionOnCellCheckboxCheck): CheckboxColumnOption = {
     val __obj = js.Dynamic.literal(actionOnCheckbox = actionOnCheckbox.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CheckboxColumnOption]
   }
 }

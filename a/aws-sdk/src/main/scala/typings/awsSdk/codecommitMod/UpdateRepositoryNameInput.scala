@@ -20,7 +20,6 @@ object UpdateRepositoryNameInput {
   @scala.inline
   def apply(newName: RepositoryName, oldName: RepositoryName): UpdateRepositoryNameInput = {
     val __obj = js.Dynamic.literal(newName = newName.asInstanceOf[js.Any], oldName = oldName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateRepositoryNameInput]
   }
 }

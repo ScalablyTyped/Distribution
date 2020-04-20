@@ -20,7 +20,6 @@ object Chart {
   @scala.inline
   def apply(isChartSeriesBoosting: Chart => Boolean): Chart = {
     val __obj = js.Dynamic.literal(isChartSeriesBoosting = js.Any.fromFunction1(isChartSeriesBoosting))
-  
     __obj.asInstanceOf[Chart]
   }
 }

@@ -24,7 +24,6 @@ object UpdateContactAttributesRequest {
   @scala.inline
   def apply(Attributes: Attributes, InitialContactId: ContactId, InstanceId: InstanceId): UpdateContactAttributesRequest = {
     val __obj = js.Dynamic.literal(Attributes = Attributes.asInstanceOf[js.Any], InitialContactId = InitialContactId.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateContactAttributesRequest]
   }
 }

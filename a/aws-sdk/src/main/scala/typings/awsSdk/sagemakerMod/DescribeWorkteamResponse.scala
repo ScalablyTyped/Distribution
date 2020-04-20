@@ -16,7 +16,6 @@ object DescribeWorkteamResponse {
   @scala.inline
   def apply(Workteam: Workteam): DescribeWorkteamResponse = {
     val __obj = js.Dynamic.literal(Workteam = Workteam.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeWorkteamResponse]
   }
 }

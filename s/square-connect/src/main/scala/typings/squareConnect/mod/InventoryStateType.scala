@@ -22,30 +22,28 @@ trait InventoryStateType extends js.Object
 
 object InventoryStateType {
   @scala.inline
-  def CUSTOM: typings.squareConnect.squareConnectStrings.CUSTOM = this.cast("CUSTOM")
+  def CUSTOM: typings.squareConnect.squareConnectStrings.CUSTOM = "CUSTOM".asInstanceOf[typings.squareConnect.squareConnectStrings.CUSTOM]
   @scala.inline
-  def IN_STOCK: typings.squareConnect.squareConnectStrings.IN_STOCK = this.cast("IN_STOCK")
+  def IN_STOCK: typings.squareConnect.squareConnectStrings.IN_STOCK = "IN_STOCK".asInstanceOf[typings.squareConnect.squareConnectStrings.IN_STOCK]
   @scala.inline
-  def IN_TRANSIT_TO: typings.squareConnect.squareConnectStrings.IN_TRANSIT_TO = this.cast("IN_TRANSIT_TO")
+  def IN_TRANSIT_TO: typings.squareConnect.squareConnectStrings.IN_TRANSIT_TO = "IN_TRANSIT_TO".asInstanceOf[typings.squareConnect.squareConnectStrings.IN_TRANSIT_TO]
   @scala.inline
-  def NONE: typings.squareConnect.squareConnectStrings.NONE = this.cast("NONE")
+  def NONE: typings.squareConnect.squareConnectStrings.NONE = "NONE".asInstanceOf[typings.squareConnect.squareConnectStrings.NONE]
   @scala.inline
-  def ORDERED_FROM_VENDOR: typings.squareConnect.squareConnectStrings.ORDERED_FROM_VENDOR = this.cast("ORDERED_FROM_VENDOR")
+  def ORDERED_FROM_VENDOR: typings.squareConnect.squareConnectStrings.ORDERED_FROM_VENDOR = "ORDERED_FROM_VENDOR".asInstanceOf[typings.squareConnect.squareConnectStrings.ORDERED_FROM_VENDOR]
   @scala.inline
-  def RECEIVED_FROM_VENDOR: typings.squareConnect.squareConnectStrings.RECEIVED_FROM_VENDOR = this.cast("RECEIVED_FROM_VENDOR")
+  def RECEIVED_FROM_VENDOR: typings.squareConnect.squareConnectStrings.RECEIVED_FROM_VENDOR = "RECEIVED_FROM_VENDOR".asInstanceOf[typings.squareConnect.squareConnectStrings.RECEIVED_FROM_VENDOR]
   @scala.inline
-  def RESERVED_FOR_SALE: typings.squareConnect.squareConnectStrings.RESERVED_FOR_SALE = this.cast("RESERVED_FOR_SALE")
+  def RESERVED_FOR_SALE: typings.squareConnect.squareConnectStrings.RESERVED_FOR_SALE = "RESERVED_FOR_SALE".asInstanceOf[typings.squareConnect.squareConnectStrings.RESERVED_FOR_SALE]
   @scala.inline
-  def RETURNED_BY_CUSTOMER: typings.squareConnect.squareConnectStrings.RETURNED_BY_CUSTOMER = this.cast("RETURNED_BY_CUSTOMER")
+  def RETURNED_BY_CUSTOMER: typings.squareConnect.squareConnectStrings.RETURNED_BY_CUSTOMER = "RETURNED_BY_CUSTOMER".asInstanceOf[typings.squareConnect.squareConnectStrings.RETURNED_BY_CUSTOMER]
   @scala.inline
-  def SOLD: typings.squareConnect.squareConnectStrings.SOLD = this.cast("SOLD")
+  def SOLD: typings.squareConnect.squareConnectStrings.SOLD = "SOLD".asInstanceOf[typings.squareConnect.squareConnectStrings.SOLD]
   @scala.inline
-  def SOLD_ONLINE: typings.squareConnect.squareConnectStrings.SOLD_ONLINE = this.cast("SOLD_ONLINE")
+  def SOLD_ONLINE: typings.squareConnect.squareConnectStrings.SOLD_ONLINE = "SOLD_ONLINE".asInstanceOf[typings.squareConnect.squareConnectStrings.SOLD_ONLINE]
   @scala.inline
-  def UNLINKED_RETURN: typings.squareConnect.squareConnectStrings.UNLINKED_RETURN = this.cast("UNLINKED_RETURN")
+  def UNLINKED_RETURN: typings.squareConnect.squareConnectStrings.UNLINKED_RETURN = "UNLINKED_RETURN".asInstanceOf[typings.squareConnect.squareConnectStrings.UNLINKED_RETURN]
   @scala.inline
-  def WASTE: typings.squareConnect.squareConnectStrings.WASTE = this.cast("WASTE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def WASTE: typings.squareConnect.squareConnectStrings.WASTE = "WASTE".asInstanceOf[typings.squareConnect.squareConnectStrings.WASTE]
 }
 

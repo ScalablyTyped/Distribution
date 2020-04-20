@@ -15,7 +15,6 @@ object AnonHost {
   @scala.inline
   def apply(host: HostType, platform: PlatformType): AnonHost = {
     val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHost]
   }
 }

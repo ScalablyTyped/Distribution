@@ -14,6 +14,7 @@ object settingsServiceMod extends js.Object {
     var configTimeToLive: Double = js.native
     var dataCollectionEnabled: Boolean = js.native
     var firebaseAppInstance: FirebaseApp = js.native
+    var flTransportEndpointUrl: String = js.native
     var installationsService: FirebaseInstallations = js.native
     var instrumentationEnabled: Boolean = js.native
     var logEndPointUrl: String = js.native
@@ -22,9 +23,12 @@ object settingsServiceMod extends js.Object {
     var logTraceAfterSampling: Boolean = js.native
     var loggingEnabled: Boolean = js.native
     var networkRequestsSamplingRate: Double = js.native
+    var shouldSendToFl: Boolean = js.native
     var tracesSamplingRate: Double = js.native
+    var transportKey: String = js.native
     def getApiKey(): String = js.native
     def getAppId(): String = js.native
+    def getFlTransportFullUrl(): String = js.native
     def getProjectId(): String = js.native
   }
   

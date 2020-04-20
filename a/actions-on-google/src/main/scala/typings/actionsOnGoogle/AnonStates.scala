@@ -13,7 +13,6 @@ object AnonStates {
   @scala.inline
   def apply(states: ApiClientObjectMap[_]): AnonStates = {
     val __obj = js.Dynamic.literal(states = states.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonStates]
   }
 }

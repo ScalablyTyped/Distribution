@@ -18,7 +18,6 @@ object ReleaseDefinitionSummary {
     releases: js.Array[Release]
   ): ReleaseDefinitionSummary = {
     val __obj = js.Dynamic.literal(environments = environments.asInstanceOf[js.Any], releaseDefinition = releaseDefinition.asInstanceOf[js.Any], releases = releases.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReleaseDefinitionSummary]
   }
 }

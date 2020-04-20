@@ -129,7 +129,6 @@ object IMemberResource {
     save: (js.Object, Boolean, js.Array[_]) => IPromise[IResourcePromise]
   ): IMemberResource = {
     val __obj = js.Dynamic.literal(deleteByKey = js.Any.fromFunction1(deleteByKey), getByKey = js.Any.fromFunction1(getByKey), getListNode = js.Any.fromFunction1(getListNode), getPagedResults = js.Any.fromFunction2(getPagedResults), getScaffold = js.Any.fromFunction1(getScaffold), save = js.Any.fromFunction3(save))
-  
     __obj.asInstanceOf[IMemberResource]
   }
 }

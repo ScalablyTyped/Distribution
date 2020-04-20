@@ -13,12 +13,10 @@ trait PaymentIntentStripeProvidedCancellationReason extends js.Object
 
 object PaymentIntentStripeProvidedCancellationReason {
   @scala.inline
-  def automatic: typings.stripe.stripeStrings.automatic = this.cast("automatic")
+  def automatic: typings.stripe.stripeStrings.automatic = "automatic".asInstanceOf[typings.stripe.stripeStrings.automatic]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def failed_invoice: typings.stripe.stripeStrings.failed_invoice = "failed_invoice".asInstanceOf[typings.stripe.stripeStrings.failed_invoice]
   @scala.inline
-  def failed_invoice: typings.stripe.stripeStrings.failed_invoice = this.cast("failed_invoice")
-  @scala.inline
-  def void_invoice: typings.stripe.stripeStrings.void_invoice = this.cast("void_invoice")
+  def void_invoice: typings.stripe.stripeStrings.void_invoice = "void_invoice".asInstanceOf[typings.stripe.stripeStrings.void_invoice]
 }
 

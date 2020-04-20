@@ -14,14 +14,12 @@ trait Position extends js.Object
 
 object Position {
   @scala.inline
-  def bottom: typings.popperJs.popperJsStrings.bottom = this.cast("bottom")
+  def bottom: typings.popperJs.popperJsStrings.bottom = "bottom".asInstanceOf[typings.popperJs.popperJsStrings.bottom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def left: typings.popperJs.popperJsStrings.left = "left".asInstanceOf[typings.popperJs.popperJsStrings.left]
   @scala.inline
-  def left: typings.popperJs.popperJsStrings.left = this.cast("left")
+  def right: typings.popperJs.popperJsStrings.right = "right".asInstanceOf[typings.popperJs.popperJsStrings.right]
   @scala.inline
-  def right: typings.popperJs.popperJsStrings.right = this.cast("right")
-  @scala.inline
-  def top: typings.popperJs.popperJsStrings.top = this.cast("top")
+  def top: typings.popperJs.popperJsStrings.top = "top".asInstanceOf[typings.popperJs.popperJsStrings.top]
 }
 

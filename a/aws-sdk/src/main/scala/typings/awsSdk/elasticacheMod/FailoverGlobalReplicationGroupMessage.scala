@@ -24,7 +24,6 @@ object FailoverGlobalReplicationGroupMessage {
   @scala.inline
   def apply(GlobalReplicationGroupId: String, PrimaryRegion: String, PrimaryReplicationGroupId: String): FailoverGlobalReplicationGroupMessage = {
     val __obj = js.Dynamic.literal(GlobalReplicationGroupId = GlobalReplicationGroupId.asInstanceOf[js.Any], PrimaryRegion = PrimaryRegion.asInstanceOf[js.Any], PrimaryReplicationGroupId = PrimaryReplicationGroupId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FailoverGlobalReplicationGroupMessage]
   }
 }

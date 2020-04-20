@@ -33,7 +33,6 @@ object ITriggerType {
     Weekly: IWeeklyTrigger
   ): ITriggerType = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Daily = Daily.asInstanceOf[js.Any], MonthlyDOW = MonthlyDOW.asInstanceOf[js.Any], MonthlyDate = MonthlyDate.asInstanceOf[js.Any], SetDailyTrigger = js.Any.fromFunction1(SetDailyTrigger), SetMonthlyDOW = js.Any.fromFunction1(SetMonthlyDOW), SetMonthlyDate = js.Any.fromFunction1(SetMonthlyDate), SetWeekly = js.Any.fromFunction1(SetWeekly), Type = Type.asInstanceOf[js.Any], Weekly = Weekly.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ITriggerType]
   }
 }

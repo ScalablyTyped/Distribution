@@ -17,7 +17,6 @@ object Progress {
   @scala.inline
   def apply[T](report: T => Unit): Progress[T] = {
     val __obj = js.Dynamic.literal(report = js.Any.fromFunction1(report))
-  
     __obj.asInstanceOf[Progress[T]]
   }
 }

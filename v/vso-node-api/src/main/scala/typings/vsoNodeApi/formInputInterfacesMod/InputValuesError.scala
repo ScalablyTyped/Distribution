@@ -15,7 +15,6 @@ object InputValuesError {
   @scala.inline
   def apply(message: String): InputValuesError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InputValuesError]
   }
 }

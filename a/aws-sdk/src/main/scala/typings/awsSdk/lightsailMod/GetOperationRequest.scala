@@ -16,7 +16,6 @@ object GetOperationRequest {
   @scala.inline
   def apply(operationId: NonEmptyString): GetOperationRequest = {
     val __obj = js.Dynamic.literal(operationId = operationId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetOperationRequest]
   }
 }

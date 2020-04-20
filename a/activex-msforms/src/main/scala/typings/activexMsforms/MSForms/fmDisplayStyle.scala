@@ -24,20 +24,18 @@ trait fmDisplayStyle extends js.Object
 
 object fmDisplayStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fmDisplayStyleCheckBox: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def fmDisplayStyleCheckBox: `4` = this.cast(4)
+  def fmDisplayStyleCombo: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def fmDisplayStyleCombo: `3` = this.cast(3)
+  def fmDisplayStyleDropList: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def fmDisplayStyleDropList: `7` = this.cast(7)
+  def fmDisplayStyleList: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def fmDisplayStyleList: `2` = this.cast(2)
+  def fmDisplayStyleOptionButton: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def fmDisplayStyleOptionButton: `5` = this.cast(5)
+  def fmDisplayStyleText: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def fmDisplayStyleText: `1` = this.cast(1)
-  @scala.inline
-  def fmDisplayStyleToggle: `6` = this.cast(6)
+  def fmDisplayStyleToggle: `6` = 6.asInstanceOf[`6`]
 }
 

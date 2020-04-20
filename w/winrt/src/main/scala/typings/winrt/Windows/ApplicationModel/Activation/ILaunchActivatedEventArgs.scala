@@ -19,7 +19,6 @@ object ILaunchActivatedEventArgs {
     tileId: String
   ): ILaunchActivatedEventArgs = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], previousExecutionState = previousExecutionState.asInstanceOf[js.Any], splashScreen = splashScreen.asInstanceOf[js.Any], tileId = tileId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ILaunchActivatedEventArgs]
   }
 }

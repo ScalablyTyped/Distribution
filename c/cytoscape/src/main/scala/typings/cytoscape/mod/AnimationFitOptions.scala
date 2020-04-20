@@ -18,7 +18,6 @@ object AnimationFitOptions {
   @scala.inline
   def apply(eles: CollectionArgument | Selector, padding: Double): AnimationFitOptions = {
     val __obj = js.Dynamic.literal(eles = eles.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnimationFitOptions]
   }
 }

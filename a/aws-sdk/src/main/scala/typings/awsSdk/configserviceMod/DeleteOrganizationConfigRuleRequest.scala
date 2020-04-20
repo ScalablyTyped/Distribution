@@ -16,7 +16,6 @@ object DeleteOrganizationConfigRuleRequest {
   @scala.inline
   def apply(OrganizationConfigRuleName: OrganizationConfigRuleName): DeleteOrganizationConfigRuleRequest = {
     val __obj = js.Dynamic.literal(OrganizationConfigRuleName = OrganizationConfigRuleName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteOrganizationConfigRuleRequest]
   }
 }

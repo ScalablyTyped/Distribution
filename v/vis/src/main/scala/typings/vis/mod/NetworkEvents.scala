@@ -40,66 +40,64 @@ trait NetworkEvents extends js.Object
 
 object NetworkEvents {
   @scala.inline
-  def afterDrawing: typings.vis.visStrings.afterDrawing = this.cast("afterDrawing")
+  def afterDrawing: typings.vis.visStrings.afterDrawing = "afterDrawing".asInstanceOf[typings.vis.visStrings.afterDrawing]
   @scala.inline
-  def animationFinished: typings.vis.visStrings.animationFinished = this.cast("animationFinished")
+  def animationFinished: typings.vis.visStrings.animationFinished = "animationFinished".asInstanceOf[typings.vis.visStrings.animationFinished]
   @scala.inline
-  def beforeDrawing: typings.vis.visStrings.beforeDrawing = this.cast("beforeDrawing")
+  def beforeDrawing: typings.vis.visStrings.beforeDrawing = "beforeDrawing".asInstanceOf[typings.vis.visStrings.beforeDrawing]
   @scala.inline
-  def blurEdge: typings.vis.visStrings.blurEdge = this.cast("blurEdge")
+  def blurEdge: typings.vis.visStrings.blurEdge = "blurEdge".asInstanceOf[typings.vis.visStrings.blurEdge]
   @scala.inline
-  def blurNode: typings.vis.visStrings.blurNode = this.cast("blurNode")
+  def blurNode: typings.vis.visStrings.blurNode = "blurNode".asInstanceOf[typings.vis.visStrings.blurNode]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def click: typings.vis.visStrings.click = "click".asInstanceOf[typings.vis.visStrings.click]
   @scala.inline
-  def click: typings.vis.visStrings.click = this.cast("click")
+  def configChange: typings.vis.visStrings.configChange = "configChange".asInstanceOf[typings.vis.visStrings.configChange]
   @scala.inline
-  def configChange: typings.vis.visStrings.configChange = this.cast("configChange")
+  def deselectEdge: typings.vis.visStrings.deselectEdge = "deselectEdge".asInstanceOf[typings.vis.visStrings.deselectEdge]
   @scala.inline
-  def deselectEdge: typings.vis.visStrings.deselectEdge = this.cast("deselectEdge")
+  def deselectNode: typings.vis.visStrings.deselectNode = "deselectNode".asInstanceOf[typings.vis.visStrings.deselectNode]
   @scala.inline
-  def deselectNode: typings.vis.visStrings.deselectNode = this.cast("deselectNode")
+  def doubleClick: typings.vis.visStrings.doubleClick = "doubleClick".asInstanceOf[typings.vis.visStrings.doubleClick]
   @scala.inline
-  def doubleClick: typings.vis.visStrings.doubleClick = this.cast("doubleClick")
+  def dragEnd: typings.vis.visStrings.dragEnd = "dragEnd".asInstanceOf[typings.vis.visStrings.dragEnd]
   @scala.inline
-  def dragEnd: typings.vis.visStrings.dragEnd = this.cast("dragEnd")
+  def dragStart: typings.vis.visStrings.dragStart = "dragStart".asInstanceOf[typings.vis.visStrings.dragStart]
   @scala.inline
-  def dragStart: typings.vis.visStrings.dragStart = this.cast("dragStart")
+  def dragging: typings.vis.visStrings.dragging = "dragging".asInstanceOf[typings.vis.visStrings.dragging]
   @scala.inline
-  def dragging: typings.vis.visStrings.dragging = this.cast("dragging")
+  def hidePopup: typings.vis.visStrings.hidePopup = "hidePopup".asInstanceOf[typings.vis.visStrings.hidePopup]
   @scala.inline
-  def hidePopup: typings.vis.visStrings.hidePopup = this.cast("hidePopup")
+  def hold: typings.vis.visStrings.hold = "hold".asInstanceOf[typings.vis.visStrings.hold]
   @scala.inline
-  def hold: typings.vis.visStrings.hold = this.cast("hold")
+  def hoverEdge: typings.vis.visStrings.hoverEdge = "hoverEdge".asInstanceOf[typings.vis.visStrings.hoverEdge]
   @scala.inline
-  def hoverEdge: typings.vis.visStrings.hoverEdge = this.cast("hoverEdge")
+  def hoverNode: typings.vis.visStrings.hoverNode = "hoverNode".asInstanceOf[typings.vis.visStrings.hoverNode]
   @scala.inline
-  def hoverNode: typings.vis.visStrings.hoverNode = this.cast("hoverNode")
+  def initRedraw: typings.vis.visStrings.initRedraw = "initRedraw".asInstanceOf[typings.vis.visStrings.initRedraw]
   @scala.inline
-  def initRedraw: typings.vis.visStrings.initRedraw = this.cast("initRedraw")
+  def oncontext: typings.vis.visStrings.oncontext = "oncontext".asInstanceOf[typings.vis.visStrings.oncontext]
   @scala.inline
-  def oncontext: typings.vis.visStrings.oncontext = this.cast("oncontext")
+  def release: typings.vis.visStrings.release = "release".asInstanceOf[typings.vis.visStrings.release]
   @scala.inline
-  def release: typings.vis.visStrings.release = this.cast("release")
+  def resize: typings.vis.visStrings.resize = "resize".asInstanceOf[typings.vis.visStrings.resize]
   @scala.inline
-  def resize: typings.vis.visStrings.resize = this.cast("resize")
+  def select: typings.vis.visStrings.select = "select".asInstanceOf[typings.vis.visStrings.select]
   @scala.inline
-  def select: typings.vis.visStrings.select = this.cast("select")
+  def selectEdge: typings.vis.visStrings.selectEdge = "selectEdge".asInstanceOf[typings.vis.visStrings.selectEdge]
   @scala.inline
-  def selectEdge: typings.vis.visStrings.selectEdge = this.cast("selectEdge")
+  def selectNode: typings.vis.visStrings.selectNode = "selectNode".asInstanceOf[typings.vis.visStrings.selectNode]
   @scala.inline
-  def selectNode: typings.vis.visStrings.selectNode = this.cast("selectNode")
+  def showPopup: typings.vis.visStrings.showPopup = "showPopup".asInstanceOf[typings.vis.visStrings.showPopup]
   @scala.inline
-  def showPopup: typings.vis.visStrings.showPopup = this.cast("showPopup")
+  def stabilizationIterationsDone: typings.vis.visStrings.stabilizationIterationsDone = "stabilizationIterationsDone".asInstanceOf[typings.vis.visStrings.stabilizationIterationsDone]
   @scala.inline
-  def stabilizationIterationsDone: typings.vis.visStrings.stabilizationIterationsDone = this.cast("stabilizationIterationsDone")
+  def stabilizationProgress: typings.vis.visStrings.stabilizationProgress = "stabilizationProgress".asInstanceOf[typings.vis.visStrings.stabilizationProgress]
   @scala.inline
-  def stabilizationProgress: typings.vis.visStrings.stabilizationProgress = this.cast("stabilizationProgress")
+  def stabilized: typings.vis.visStrings.stabilized = "stabilized".asInstanceOf[typings.vis.visStrings.stabilized]
   @scala.inline
-  def stabilized: typings.vis.visStrings.stabilized = this.cast("stabilized")
+  def startStabilizing: typings.vis.visStrings.startStabilizing = "startStabilizing".asInstanceOf[typings.vis.visStrings.startStabilizing]
   @scala.inline
-  def startStabilizing: typings.vis.visStrings.startStabilizing = this.cast("startStabilizing")
-  @scala.inline
-  def zoom: typings.vis.visStrings.zoom = this.cast("zoom")
+  def zoom: typings.vis.visStrings.zoom = "zoom".asInstanceOf[typings.vis.visStrings.zoom]
 }
 

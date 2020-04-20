@@ -16,12 +16,10 @@ trait WdRevisionsMode extends js.Object
 
 object WdRevisionsMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdBalloonRevisions: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdBalloonRevisions: `0` = this.cast(0)
+  def wdInLineRevisions: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdInLineRevisions: `1` = this.cast(1)
-  @scala.inline
-  def wdMixedRevisions: `2` = this.cast(2)
+  def wdMixedRevisions: `2` = 2.asInstanceOf[`2`]
 }
 

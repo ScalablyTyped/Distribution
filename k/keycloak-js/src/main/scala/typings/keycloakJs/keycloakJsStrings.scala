@@ -68,7 +68,7 @@ object keycloakJsStrings {
   @scala.inline
   def code: code = "code".asInstanceOf[code]
   @scala.inline
-  def `code id_token token`: `code id_token token` = "code id_token token".asInstanceOf[`code id_token token`]
+  def `code id_token token`: `code id_token token` = ("code id_token token").asInstanceOf[`code id_token token`]
   @scala.inline
   def cordova: cordova = "cordova".asInstanceOf[cordova]
   @scala.inline
@@ -80,7 +80,7 @@ object keycloakJsStrings {
   @scala.inline
   def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
   @scala.inline
-  def `id_token token`: `id_token token` = "id_token token".asInstanceOf[`id_token token`]
+  def `id_token token`: `id_token token` = ("id_token token").asInstanceOf[`id_token token`]
   @scala.inline
   def `implicit`: `implicit` = "implicit".asInstanceOf[`implicit`]
   @scala.inline

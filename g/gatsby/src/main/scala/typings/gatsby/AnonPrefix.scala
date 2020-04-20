@@ -13,7 +13,6 @@ object AnonPrefix {
   @scala.inline
   def apply(prefix: String, url: String): AnonPrefix = {
     val __obj = js.Dynamic.literal(prefix = prefix.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPrefix]
   }
 }

@@ -1,6 +1,6 @@
 package typings.ionicUtilsSubprocess
 
-import typings.node.NodeJS.ProcessEnv
+import typings.node.NodeJS.Dict
 import typings.node.childProcessMod.SerializationType
 import typings.node.childProcessMod.StdioOptions
 import scala.scalajs.js
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 trait ForkOptionsPickSpawnOptio extends js.Object {
   var cwd: js.UndefOr[String] = js.undefined
   var detached: js.UndefOr[Boolean] = js.undefined
-  var env: js.UndefOr[ProcessEnv] = js.undefined
+  var env: js.UndefOr[Dict[String]] = js.undefined
   var execArgv: js.UndefOr[js.Array[String]] = js.undefined
   var execPath: js.UndefOr[String] = js.undefined
   var gid: js.UndefOr[Double] = js.undefined
@@ -31,7 +31,7 @@ object ForkOptionsPickSpawnOptio {
   def apply(
     cwd: String = null,
     detached: js.UndefOr[Boolean] = js.undefined,
-    env: ProcessEnv = null,
+    env: Dict[String] = null,
     execArgv: js.Array[String] = null,
     execPath: String = null,
     gid: Int | Double = null,

@@ -28,7 +28,6 @@ object ImagePickerIOSStatic {
     openSelectDialog: (OpenSelectDialogOptions, js.Function1[/* args */ ImagePickerResult, Unit], js.Function1[/* args */ js.Array[_], Unit]) => Unit
   ): ImagePickerIOSStatic = {
     val __obj = js.Dynamic.literal(canRecordVideos = js.Any.fromFunction1(canRecordVideos), canUseCamera = js.Any.fromFunction1(canUseCamera), openCameraDialog = js.Any.fromFunction3(openCameraDialog), openSelectDialog = js.Any.fromFunction3(openSelectDialog))
-  
     __obj.asInstanceOf[ImagePickerIOSStatic]
   }
 }

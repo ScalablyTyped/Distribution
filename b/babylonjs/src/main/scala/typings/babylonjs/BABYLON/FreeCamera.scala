@@ -61,7 +61,7 @@ class FreeCamera protected () extends TargetCamera {
     * Gets the input sensibility for a mouse input. (default is 2000.0)
     * Higher values reduce sensitivity.
     */
-  def angularSensibility(): Double = js.native
+  def angularSensibility: Double = js.native
   /**
     * Sets the input sensibility for a mouse input. (default is 2000.0)
     * Higher values reduce sensitivity.
@@ -70,27 +70,27 @@ class FreeCamera protected () extends TargetCamera {
   /**
     * Define a collision mask to limit the list of object the camera can collide with
     */
-  def collisionMask(): Double = js.native
+  def collisionMask: Double = js.native
   def collisionMask(mask: Double): js.Any = js.native
   /**
     * Gets or Set the list of keyboard keys used to control the backward move of the camera.
     */
-  def keysDown(): js.Array[Double] = js.native
+  def keysDown: js.Array[Double] = js.native
   def keysDown(value: js.Array[Double]): js.Any = js.native
   /**
     * Gets or Set the list of keyboard keys used to control the left strafe move of the camera.
     */
-  def keysLeft(): js.Array[Double] = js.native
+  def keysLeft: js.Array[Double] = js.native
   def keysLeft(value: js.Array[Double]): js.Any = js.native
   /**
     * Gets or Set the list of keyboard keys used to control the right strafe move of the camera.
     */
-  def keysRight(): js.Array[Double] = js.native
+  def keysRight: js.Array[Double] = js.native
   def keysRight(value: js.Array[Double]): js.Any = js.native
   /**
     * Gets or Set the list of keyboard keys used to control the forward move of the camera.
     */
-  def keysUp(): js.Array[Double] = js.native
+  def keysUp: js.Array[Double] = js.native
   def keysUp(value: js.Array[Double]): js.Any = js.native
   /**
     * Event raised when the camera collide with a mesh in the scene.

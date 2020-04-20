@@ -21,7 +21,6 @@ object ITitleProvider {
   @scala.inline
   def apply($get: js.Any, enabled: Boolean => Unit): ITitleProvider = {
     val __obj = js.Dynamic.literal($get = $get.asInstanceOf[js.Any], enabled = js.Any.fromFunction1(enabled))
-  
     __obj.asInstanceOf[ITitleProvider]
   }
 }

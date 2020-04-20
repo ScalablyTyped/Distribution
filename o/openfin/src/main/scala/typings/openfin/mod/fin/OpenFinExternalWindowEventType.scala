@@ -28,42 +28,40 @@ trait OpenFinExternalWindowEventType extends js.Object
 
 object OpenFinExternalWindowEventType {
   @scala.inline
-  def `begin-user-bounds-changing`: typings.openfin.openfinStrings.`begin-user-bounds-changing` = this.cast("begin-user-bounds-changing")
+  def `begin-user-bounds-changing`: typings.openfin.openfinStrings.`begin-user-bounds-changing` = "begin-user-bounds-changing".asInstanceOf[typings.openfin.openfinStrings.`begin-user-bounds-changing`]
   @scala.inline
-  def blurred: typings.openfin.openfinStrings.blurred = this.cast("blurred")
+  def blurred: typings.openfin.openfinStrings.blurred = "blurred".asInstanceOf[typings.openfin.openfinStrings.blurred]
   @scala.inline
-  def `bounds-changed`: typings.openfin.openfinStrings.`bounds-changed` = this.cast("bounds-changed")
+  def `bounds-changed`: typings.openfin.openfinStrings.`bounds-changed` = "bounds-changed".asInstanceOf[typings.openfin.openfinStrings.`bounds-changed`]
   @scala.inline
-  def `bounds-changing`: typings.openfin.openfinStrings.`bounds-changing` = this.cast("bounds-changing")
+  def `bounds-changing`: typings.openfin.openfinStrings.`bounds-changing` = "bounds-changing".asInstanceOf[typings.openfin.openfinStrings.`bounds-changing`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def closed: typings.openfin.openfinStrings.closed = "closed".asInstanceOf[typings.openfin.openfinStrings.closed]
   @scala.inline
-  def closed: typings.openfin.openfinStrings.closed = this.cast("closed")
+  def closing: typings.openfin.openfinStrings.closing = "closing".asInstanceOf[typings.openfin.openfinStrings.closing]
   @scala.inline
-  def closing: typings.openfin.openfinStrings.closing = this.cast("closing")
+  def `disabled-movement-bounds-changed`: typings.openfin.openfinStrings.`disabled-movement-bounds-changed` = "disabled-movement-bounds-changed".asInstanceOf[typings.openfin.openfinStrings.`disabled-movement-bounds-changed`]
   @scala.inline
-  def `disabled-movement-bounds-changed`: typings.openfin.openfinStrings.`disabled-movement-bounds-changed` = this.cast("disabled-movement-bounds-changed")
+  def `disabled-movement-bounds-changing`: typings.openfin.openfinStrings.`disabled-movement-bounds-changing` = "disabled-movement-bounds-changing".asInstanceOf[typings.openfin.openfinStrings.`disabled-movement-bounds-changing`]
   @scala.inline
-  def `disabled-movement-bounds-changing`: typings.openfin.openfinStrings.`disabled-movement-bounds-changing` = this.cast("disabled-movement-bounds-changing")
+  def `end-user-bounds-changing`: typings.openfin.openfinStrings.`end-user-bounds-changing` = "end-user-bounds-changing".asInstanceOf[typings.openfin.openfinStrings.`end-user-bounds-changing`]
   @scala.inline
-  def `end-user-bounds-changing`: typings.openfin.openfinStrings.`end-user-bounds-changing` = this.cast("end-user-bounds-changing")
+  def focused: typings.openfin.openfinStrings.focused = "focused".asInstanceOf[typings.openfin.openfinStrings.focused]
   @scala.inline
-  def focused: typings.openfin.openfinStrings.focused = this.cast("focused")
+  def `group-changed`: typings.openfin.openfinStrings.`group-changed` = "group-changed".asInstanceOf[typings.openfin.openfinStrings.`group-changed`]
   @scala.inline
-  def `group-changed`: typings.openfin.openfinStrings.`group-changed` = this.cast("group-changed")
+  def hidden: typings.openfin.openfinStrings.hidden = "hidden".asInstanceOf[typings.openfin.openfinStrings.hidden]
   @scala.inline
-  def hidden: typings.openfin.openfinStrings.hidden = this.cast("hidden")
+  def maximized: typings.openfin.openfinStrings.maximized = "maximized".asInstanceOf[typings.openfin.openfinStrings.maximized]
   @scala.inline
-  def maximized: typings.openfin.openfinStrings.maximized = this.cast("maximized")
+  def minimized: typings.openfin.openfinStrings.minimized = "minimized".asInstanceOf[typings.openfin.openfinStrings.minimized]
   @scala.inline
-  def minimized: typings.openfin.openfinStrings.minimized = this.cast("minimized")
+  def restored: typings.openfin.openfinStrings.restored = "restored".asInstanceOf[typings.openfin.openfinStrings.restored]
   @scala.inline
-  def restored: typings.openfin.openfinStrings.restored = this.cast("restored")
+  def shown: typings.openfin.openfinStrings.shown = "shown".asInstanceOf[typings.openfin.openfinStrings.shown]
   @scala.inline
-  def shown: typings.openfin.openfinStrings.shown = this.cast("shown")
+  def `user-movement-disabled`: typings.openfin.openfinStrings.`user-movement-disabled` = "user-movement-disabled".asInstanceOf[typings.openfin.openfinStrings.`user-movement-disabled`]
   @scala.inline
-  def `user-movement-disabled`: typings.openfin.openfinStrings.`user-movement-disabled` = this.cast("user-movement-disabled")
-  @scala.inline
-  def `user-movement-enabled`: typings.openfin.openfinStrings.`user-movement-enabled` = this.cast("user-movement-enabled")
+  def `user-movement-enabled`: typings.openfin.openfinStrings.`user-movement-enabled` = "user-movement-enabled".asInstanceOf[typings.openfin.openfinStrings.`user-movement-enabled`]
 }
 

@@ -18,7 +18,6 @@ object AnonEventEVENTREPAIR {
     objectId: String
   ): AnonEventEVENTREPAIR = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEventEVENTREPAIR]
   }
 }

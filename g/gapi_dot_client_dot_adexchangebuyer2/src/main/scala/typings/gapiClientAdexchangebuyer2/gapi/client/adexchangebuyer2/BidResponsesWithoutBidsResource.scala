@@ -18,7 +18,6 @@ object BidResponsesWithoutBidsResource {
   @scala.inline
   def apply(list: AnonFilterSetId => Request_[ListBidResponsesWithoutBidsResponse]): BidResponsesWithoutBidsResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[BidResponsesWithoutBidsResource]
   }
 }

@@ -20,12 +20,10 @@ trait NavBarDisplay extends js.Object
 
 object NavBarDisplay {
   @scala.inline
-  def Entity: entity = this.cast("entity")
+  def Entity: entity = "entity".asInstanceOf[entity]
   @scala.inline
-  def Off: off = this.cast("off")
+  def Off: off = "off".asInstanceOf[off]
   @scala.inline
-  def On: on = this.cast("on")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def On: on = "on".asInstanceOf[on]
 }
 

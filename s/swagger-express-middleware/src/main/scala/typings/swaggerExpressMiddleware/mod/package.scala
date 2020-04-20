@@ -6,7 +6,12 @@ import scala.scalajs.js.annotation._
 
 package object mod {
   type CORSSignature = js.Function0[
-    typings.express.mod.RequestHandler[typings.expressServeStaticCore.mod.ParamsDictionary]
+    typings.express.mod.RequestHandler[
+      typings.expressServeStaticCore.mod.ParamsDictionary, 
+      js.Any, 
+      js.Any, 
+      typings.expressServeStaticCore.mod.Query
+    ]
   ]
   type DefinitionsObject = org.scalablytyped.runtime.StringDictionary[typings.swaggerExpressMiddleware.mod.SchemaObject]
   type ExampleObject = org.scalablytyped.runtime.StringDictionary[js.Any]
@@ -14,13 +19,23 @@ package object mod {
   type HeadersObject = org.scalablytyped.runtime.StringDictionary[typings.swaggerExpressMiddleware.mod.HeaderObject]
   type MetadataSignature = js.Function1[
     /* router */ js.UndefOr[typings.express.mod.Application_ | typings.express.mod.Router], 
-    typings.express.mod.RequestHandler[typings.expressServeStaticCore.mod.ParamsDictionary]
+    typings.express.mod.RequestHandler[
+      typings.expressServeStaticCore.mod.ParamsDictionary, 
+      js.Any, 
+      js.Any, 
+      typings.expressServeStaticCore.mod.Query
+    ]
   ]
   type MimeTypes = js.Array[java.lang.String]
   type MockSignature = js.Function2[
     /* router */ js.UndefOr[typings.express.mod.Application_ | typings.express.mod.Router], 
     /* datastore */ js.UndefOr[js.Any], 
-    typings.express.mod.RequestHandler[typings.expressServeStaticCore.mod.ParamsDictionary]
+    typings.express.mod.RequestHandler[
+      typings.expressServeStaticCore.mod.ParamsDictionary, 
+      js.Any, 
+      js.Any, 
+      typings.expressServeStaticCore.mod.Query
+    ]
   ]
   type Parameters = js.Array[
     typings.swaggerExpressMiddleware.mod.ParameterObject | typings.swaggerExpressMiddleware.mod.ReferenceObject

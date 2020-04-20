@@ -13,7 +13,6 @@ object IAccessControlLists {
   @scala.inline
   def apply(Count: Double, Item: Double => IAccessControlList): IAccessControlLists = {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item))
-  
     __obj.asInstanceOf[IAccessControlLists]
   }
 }

@@ -20,7 +20,6 @@ object UploadSSHPublicKeyRequest {
   @scala.inline
   def apply(SSHPublicKeyBody: publicKeyMaterialType, UserName: userNameType): UploadSSHPublicKeyRequest = {
     val __obj = js.Dynamic.literal(SSHPublicKeyBody = SSHPublicKeyBody.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UploadSSHPublicKeyRequest]
   }
 }

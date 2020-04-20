@@ -30,7 +30,6 @@ object CpuInfo {
     processors: js.Array[ProcessorInfo]
   ): CpuInfo = {
     val __obj = js.Dynamic.literal(archName = archName.asInstanceOf[js.Any], features = features.asInstanceOf[js.Any], modelName = modelName.asInstanceOf[js.Any], numOfProcessors = numOfProcessors.asInstanceOf[js.Any], processors = processors.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CpuInfo]
   }
 }

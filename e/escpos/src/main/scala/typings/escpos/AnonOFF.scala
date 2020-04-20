@@ -16,7 +16,6 @@ object AnonOFF {
   @scala.inline
   def apply(OFF: InformationseparatorthreeECNull, ON: InformationseparatorthreeECStartofheading): AnonOFF = {
     val __obj = js.Dynamic.literal(OFF = OFF.asInstanceOf[js.Any], ON = ON.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOFF]
   }
 }

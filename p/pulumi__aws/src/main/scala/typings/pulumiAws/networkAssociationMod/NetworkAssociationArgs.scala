@@ -21,7 +21,6 @@ object NetworkAssociationArgs {
   @scala.inline
   def apply(clientVpnEndpointId: Input[String], subnetId: Input[String]): NetworkAssociationArgs = {
     val __obj = js.Dynamic.literal(clientVpnEndpointId = clientVpnEndpointId.asInstanceOf[js.Any], subnetId = subnetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NetworkAssociationArgs]
   }
 }

@@ -15,7 +15,6 @@ object AnonLengthSourcetype {
   @scala.inline
   def apply(length: Double, source_type: `3` | `4`): AnonLengthSourcetype = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], source_type = source_type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLengthSourcetype]
   }
 }

@@ -15,7 +15,6 @@ object ClickCounts {
   @scala.inline
   def apply(Clicks: Double, Days: js.Array[AnonClicks], Unique: Double): ClickCounts = {
     val __obj = js.Dynamic.literal(Clicks = Clicks.asInstanceOf[js.Any], Days = Days.asInstanceOf[js.Any], Unique = Unique.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClickCounts]
   }
 }

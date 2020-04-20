@@ -24,7 +24,6 @@ object AnonBindings {
     queues: AnonAssertBoolean
   ): AnonBindings = {
     val __obj = js.Dynamic.literal(bindings = bindings.asInstanceOf[js.Any], connection = connection.asInstanceOf[js.Any], connectionStrategy = connectionStrategy.asInstanceOf[js.Any], exchanges = exchanges.asInstanceOf[js.Any], publicationChannelPools = publicationChannelPools.asInstanceOf[js.Any], queues = queues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBindings]
   }
 }

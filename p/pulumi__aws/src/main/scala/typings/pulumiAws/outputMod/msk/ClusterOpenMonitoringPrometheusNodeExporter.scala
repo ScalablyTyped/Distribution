@@ -16,7 +16,6 @@ object ClusterOpenMonitoringPrometheusNodeExporter {
   @scala.inline
   def apply(enabledInBroker: Boolean): ClusterOpenMonitoringPrometheusNodeExporter = {
     val __obj = js.Dynamic.literal(enabledInBroker = enabledInBroker.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClusterOpenMonitoringPrometheusNodeExporter]
   }
 }

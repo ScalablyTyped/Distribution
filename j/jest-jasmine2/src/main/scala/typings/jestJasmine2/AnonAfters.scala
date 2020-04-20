@@ -14,7 +14,6 @@ object AnonAfters {
   @scala.inline
   def apply(afters: js.Array[QueueableFn], befores: js.Array[QueueableFn]): AnonAfters = {
     val __obj = js.Dynamic.literal(afters = afters.asInstanceOf[js.Any], befores = befores.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAfters]
   }
 }

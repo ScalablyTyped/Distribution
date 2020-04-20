@@ -16,7 +16,6 @@ object StartDataCollectionByAgentIdsRequest {
   @scala.inline
   def apply(agentIds: AgentIds): StartDataCollectionByAgentIdsRequest = {
     val __obj = js.Dynamic.literal(agentIds = agentIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StartDataCollectionByAgentIdsRequest]
   }
 }

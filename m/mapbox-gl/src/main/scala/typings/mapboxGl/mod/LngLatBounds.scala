@@ -16,8 +16,7 @@ class LngLatBounds () extends js.Object {
   /** Check if the point is within the bounding box. */
   def contains(lnglat: LngLatLike): Boolean = js.native
   /** Extend the bounds to include a given LngLat or LngLatBounds. */
-  def extend(obj: LngLat): this.type = js.native
-  def extend(obj: LngLatBounds): this.type = js.native
+  def extend(obj: LngLatBoundsLike | LngLatLike): this.type = js.native
   /** Get the point equidistant from this box's corners */
   def getCenter(): LngLat = js.native
   /** Get east edge longitude */

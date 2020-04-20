@@ -16,12 +16,10 @@ trait XlReadingOrder extends js.Object
 
 object XlReadingOrder {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlContext: `-5002` = -5002.asInstanceOf[`-5002`]
   @scala.inline
-  def xlContext: `-5002` = this.cast(-5002)
+  def xlLTR: `-5003` = -5003.asInstanceOf[`-5003`]
   @scala.inline
-  def xlLTR: `-5003` = this.cast(-5003)
-  @scala.inline
-  def xlRTL: `-5004` = this.cast(-5004)
+  def xlRTL: `-5004` = -5004.asInstanceOf[`-5004`]
 }
 

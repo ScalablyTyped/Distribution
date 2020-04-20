@@ -21,7 +21,6 @@ object AnonSetup {
   @scala.inline
   def apply[TTarget, TData](setup: (TData, String, EventHandler[TTarget, TData]) => Unit | `false`): AnonSetup[TTarget, TData] = {
     val __obj = js.Dynamic.literal(setup = js.Any.fromFunction3(setup))
-  
     __obj.asInstanceOf[AnonSetup[TTarget, TData]]
   }
 }

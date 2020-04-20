@@ -28,7 +28,6 @@ object ReelsMediaFeedResponseQuestionSticker {
     viewer_can_interact: Boolean
   ): ReelsMediaFeedResponseQuestionSticker = {
     val __obj = js.Dynamic.literal(background_color = background_color.asInstanceOf[js.Any], media_id = media_id.asInstanceOf[js.Any], profile_pic_url = profile_pic_url.asInstanceOf[js.Any], question = question.asInstanceOf[js.Any], question_id = question_id.asInstanceOf[js.Any], question_type = question_type.asInstanceOf[js.Any], text_color = text_color.asInstanceOf[js.Any], viewer_can_interact = viewer_can_interact.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReelsMediaFeedResponseQuestionSticker]
   }
 }

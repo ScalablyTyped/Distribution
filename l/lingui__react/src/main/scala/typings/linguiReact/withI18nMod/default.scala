@@ -15,11 +15,11 @@ import scala.scalajs.js.annotation._
 object default extends js.Object {
   def apply(): js.Function1[
     /* WrappedComponent */ ComponentConstructor[_], 
-    ComponentClass[Pick[_, Exclude[String, i18n | i18nHash]], ComponentState]
+    ComponentClass[Pick[_, Exclude[/* keyof any */ String, i18n | i18nHash]], ComponentState]
   ] = js.native
   def apply(options: withI18nOptions): js.Function1[
     /* WrappedComponent */ ComponentConstructor[_], 
-    ComponentClass[Pick[_, Exclude[String, i18n | i18nHash]], ComponentState]
+    ComponentClass[Pick[_, Exclude[/* keyof any */ String, i18n | i18nHash]], ComponentState]
   ] = js.native
 }
 

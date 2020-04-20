@@ -17,7 +17,6 @@ object GlobalTableReplica {
   @scala.inline
   def apply(regionName: Input[String]): GlobalTableReplica = {
     val __obj = js.Dynamic.literal(regionName = regionName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GlobalTableReplica]
   }
 }

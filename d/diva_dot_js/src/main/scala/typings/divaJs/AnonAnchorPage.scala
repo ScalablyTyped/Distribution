@@ -14,7 +14,6 @@ object AnonAnchorPage {
   @scala.inline
   def apply(anchorPage: Double, offset: Offset): AnonAnchorPage = {
     val __obj = js.Dynamic.literal(anchorPage = anchorPage.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAnchorPage]
   }
 }

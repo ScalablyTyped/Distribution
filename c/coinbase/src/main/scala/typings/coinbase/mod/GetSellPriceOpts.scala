@@ -15,7 +15,6 @@ object GetSellPriceOpts {
   @scala.inline
   def apply(currencyPair: String): GetSellPriceOpts = {
     val __obj = js.Dynamic.literal(currencyPair = currencyPair.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetSellPriceOpts]
   }
 }

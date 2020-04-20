@@ -14,7 +14,6 @@ object AnonLabel {
   @scala.inline
   def apply(label: String | Element, style: js.Any): AnonLabel = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLabel]
   }
 }

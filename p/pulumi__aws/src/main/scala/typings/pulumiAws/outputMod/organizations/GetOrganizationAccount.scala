@@ -32,7 +32,6 @@ object GetOrganizationAccount {
   @scala.inline
   def apply(arn: String, email: String, id: String, name: String, status: String): GetOrganizationAccount = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetOrganizationAccount]
   }
 }

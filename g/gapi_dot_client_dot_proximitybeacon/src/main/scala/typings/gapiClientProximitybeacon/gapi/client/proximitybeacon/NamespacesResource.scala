@@ -29,7 +29,6 @@ object NamespacesResource {
   @scala.inline
   def apply(list: AnonCallback => Request_[ListNamespacesResponse], update: AnonFields => Request_[Namespace]): NamespacesResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[NamespacesResource]
   }
 }

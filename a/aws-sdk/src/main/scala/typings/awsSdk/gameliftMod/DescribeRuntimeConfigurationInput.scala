@@ -16,7 +16,6 @@ object DescribeRuntimeConfigurationInput {
   @scala.inline
   def apply(FleetId: FleetIdOrArn): DescribeRuntimeConfigurationInput = {
     val __obj = js.Dynamic.literal(FleetId = FleetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeRuntimeConfigurationInput]
   }
 }

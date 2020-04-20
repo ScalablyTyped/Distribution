@@ -17,7 +17,9 @@ trait Options extends js.Object {
   var lonLabelStyle: js.UndefOr[typings.ol.textMod.default] = js.undefined
   var maxLines: js.UndefOr[Double] = js.undefined
   var maxResolution: js.UndefOr[Double] = js.undefined
+  var maxZoom: js.UndefOr[Double] = js.undefined
   var minResolution: js.UndefOr[Double] = js.undefined
+  var minZoom: js.UndefOr[Double] = js.undefined
   var opacity: js.UndefOr[Double] = js.undefined
   var showLabels: js.UndefOr[Boolean] = js.undefined
   var strokeStyle: js.UndefOr[typings.ol.strokeMod.default] = js.undefined
@@ -41,7 +43,9 @@ object Options {
     lonLabelStyle: typings.ol.textMod.default = null,
     maxLines: Int | Double = null,
     maxResolution: Int | Double = null,
+    maxZoom: Int | Double = null,
     minResolution: Int | Double = null,
+    minZoom: Int | Double = null,
     opacity: Int | Double = null,
     showLabels: js.UndefOr[Boolean] = js.undefined,
     strokeStyle: typings.ol.strokeMod.default = null,
@@ -62,7 +66,9 @@ object Options {
     if (lonLabelStyle != null) __obj.updateDynamic("lonLabelStyle")(lonLabelStyle.asInstanceOf[js.Any])
     if (maxLines != null) __obj.updateDynamic("maxLines")(maxLines.asInstanceOf[js.Any])
     if (maxResolution != null) __obj.updateDynamic("maxResolution")(maxResolution.asInstanceOf[js.Any])
+    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
     if (minResolution != null) __obj.updateDynamic("minResolution")(minResolution.asInstanceOf[js.Any])
+    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (!js.isUndefined(showLabels)) __obj.updateDynamic("showLabels")(showLabels.asInstanceOf[js.Any])
     if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle.asInstanceOf[js.Any])

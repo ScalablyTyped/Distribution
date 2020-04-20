@@ -14,7 +14,6 @@ object StaticData {
   @scala.inline
   def apply(plugins: js.Array[Plugin], prefixMap: Record[String, js.Array[String]]): StaticData = {
     val __obj = js.Dynamic.literal(plugins = plugins.asInstanceOf[js.Any], prefixMap = prefixMap.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StaticData]
   }
 }

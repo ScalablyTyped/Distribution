@@ -14,7 +14,7 @@ trait reactCalendarTimelineProps {
   type CursorMarkerProps = typings.reactCalendarTimeline.mod.CursorMarkerProps
   type CustomHeaderProps[Data] = typings.reactCalendarTimeline.mod.CustomHeaderProps[Data]
   @scala.inline
-  def CustomMarkerProps: MarkerProps.type = typings.reactCalendarTimeline.mod.MarkerProps
+  def CustomMarkerProps: MarkerProps.type = MarkerProps
   type CustomMarkerProps = MarkerProps
   @scala.inline
   def DateHeaderProps: typings.reactCalendarTimeline.mod.DateHeaderProps.type = typings.reactCalendarTimeline.mod.DateHeaderProps

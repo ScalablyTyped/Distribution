@@ -18,6 +18,7 @@ trait TreeProps extends js.Object {
   var expandedKeys: js.UndefOr[js.Any] = js.undefined
   var filter: js.UndefOr[Boolean] = js.undefined
   var filterBy: js.UndefOr[js.Any] = js.undefined
+  var filterLocale: js.UndefOr[String] = js.undefined
   var filterMode: js.UndefOr[String] = js.undefined
   var filterPlaceholder: js.UndefOr[String] = js.undefined
   var id: js.UndefOr[String] = js.undefined
@@ -54,6 +55,7 @@ object TreeProps {
     expandedKeys: js.Any = null,
     filter: js.UndefOr[Boolean] = js.undefined,
     filterBy: js.Any = null,
+    filterLocale: String = null,
     filterMode: String = null,
     filterPlaceholder: String = null,
     id: String = null,
@@ -87,6 +89,7 @@ object TreeProps {
     if (expandedKeys != null) __obj.updateDynamic("expandedKeys")(expandedKeys.asInstanceOf[js.Any])
     if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (filterBy != null) __obj.updateDynamic("filterBy")(filterBy.asInstanceOf[js.Any])
+    if (filterLocale != null) __obj.updateDynamic("filterLocale")(filterLocale.asInstanceOf[js.Any])
     if (filterMode != null) __obj.updateDynamic("filterMode")(filterMode.asInstanceOf[js.Any])
     if (filterPlaceholder != null) __obj.updateDynamic("filterPlaceholder")(filterPlaceholder.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])

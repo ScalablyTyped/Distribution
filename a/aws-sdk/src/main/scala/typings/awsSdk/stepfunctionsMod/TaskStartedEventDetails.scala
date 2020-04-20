@@ -20,7 +20,6 @@ object TaskStartedEventDetails {
   @scala.inline
   def apply(resource: Name, resourceType: Name): TaskStartedEventDetails = {
     val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TaskStartedEventDetails]
   }
 }

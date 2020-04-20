@@ -12,7 +12,6 @@ object QueryCancelResult {
   @scala.inline
   def apply(messages: String): QueryCancelResult = {
     val __obj = js.Dynamic.literal(messages = messages.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[QueryCancelResult]
   }
 }

@@ -15,7 +15,6 @@ object AnonIndexSubId {
   @scala.inline
   def apply(index: Double, subId: `oj-table-footer` | `oj-table-header`): AnonIndexSubId = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], subId = subId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIndexSubId]
   }
 }

@@ -15,7 +15,6 @@ object IndexOperationResponse {
   @scala.inline
   def apply(taskID: Double): IndexOperationResponse = {
     val __obj = js.Dynamic.literal(taskID = taskID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IndexOperationResponse]
   }
 }

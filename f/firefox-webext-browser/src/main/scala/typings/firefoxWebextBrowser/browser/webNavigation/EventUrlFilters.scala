@@ -13,7 +13,6 @@ object EventUrlFilters {
   @scala.inline
   def apply(url: js.Array[UrlFilter]): EventUrlFilters = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventUrlFilters]
   }
 }

@@ -21,7 +21,6 @@ object VpnGatewayRoutePropagationArgs {
   @scala.inline
   def apply(routeTableId: Input[String], vpnGatewayId: Input[String]): VpnGatewayRoutePropagationArgs = {
     val __obj = js.Dynamic.literal(routeTableId = routeTableId.asInstanceOf[js.Any], vpnGatewayId = vpnGatewayId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VpnGatewayRoutePropagationArgs]
   }
 }

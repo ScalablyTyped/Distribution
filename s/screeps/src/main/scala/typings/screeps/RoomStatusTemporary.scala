@@ -15,7 +15,6 @@ object RoomStatusTemporary {
   @scala.inline
   def apply(status: novice | respawn, timestamp: Double): RoomStatusTemporary = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RoomStatusTemporary]
   }
 }

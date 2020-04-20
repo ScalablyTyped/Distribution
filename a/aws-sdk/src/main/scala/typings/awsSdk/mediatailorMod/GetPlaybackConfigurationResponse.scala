@@ -11,6 +11,10 @@ trait GetPlaybackConfigurationResponse extends js.Object {
     */
   var AdDecisionServerUrl: js.UndefOr[string] = js.native
   /**
+    * The configuration for Avail Suppression. Ad suppression can be used to turn off ad personalization in a long manifest, or if a viewer joins mid-break.
+    */
+  var AvailSuppression: js.UndefOr[typings.awsSdk.mediatailorMod.AvailSuppression] = js.native
+  /**
     * The configuration for using a content delivery network (CDN), like Amazon CloudFront, for content and ad segment management. 
     */
   var CdnConfiguration: js.UndefOr[typings.awsSdk.mediatailorMod.CdnConfiguration] = js.native
@@ -68,6 +72,7 @@ object GetPlaybackConfigurationResponse {
   @scala.inline
   def apply(
     AdDecisionServerUrl: string = null,
+    AvailSuppression: AvailSuppression = null,
     CdnConfiguration: CdnConfiguration = null,
     DashConfiguration: DashConfiguration = null,
     HlsConfiguration: HlsConfiguration = null,
@@ -84,6 +89,7 @@ object GetPlaybackConfigurationResponse {
   ): GetPlaybackConfigurationResponse = {
     val __obj = js.Dynamic.literal()
     if (AdDecisionServerUrl != null) __obj.updateDynamic("AdDecisionServerUrl")(AdDecisionServerUrl.asInstanceOf[js.Any])
+    if (AvailSuppression != null) __obj.updateDynamic("AvailSuppression")(AvailSuppression.asInstanceOf[js.Any])
     if (CdnConfiguration != null) __obj.updateDynamic("CdnConfiguration")(CdnConfiguration.asInstanceOf[js.Any])
     if (DashConfiguration != null) __obj.updateDynamic("DashConfiguration")(DashConfiguration.asInstanceOf[js.Any])
     if (HlsConfiguration != null) __obj.updateDynamic("HlsConfiguration")(HlsConfiguration.asInstanceOf[js.Any])

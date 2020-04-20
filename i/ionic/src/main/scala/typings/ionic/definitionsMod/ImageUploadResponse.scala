@@ -16,7 +16,6 @@ object ImageUploadResponse {
   @scala.inline
   def apply(Error: String, Height: Double, Type: String, Vector: Boolean, Width: Double): ImageUploadResponse = {
     val __obj = js.Dynamic.literal(Error = Error.asInstanceOf[js.Any], Height = Height.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], Vector = Vector.asInstanceOf[js.Any], Width = Width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ImageUploadResponse]
   }
 }

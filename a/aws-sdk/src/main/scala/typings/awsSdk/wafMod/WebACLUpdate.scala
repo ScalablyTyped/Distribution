@@ -20,7 +20,6 @@ object WebACLUpdate {
   @scala.inline
   def apply(Action: ChangeAction, ActivatedRule: ActivatedRule): WebACLUpdate = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], ActivatedRule = ActivatedRule.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WebACLUpdate]
   }
 }

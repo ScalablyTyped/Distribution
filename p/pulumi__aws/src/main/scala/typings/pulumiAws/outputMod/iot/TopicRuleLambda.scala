@@ -16,7 +16,6 @@ object TopicRuleLambda {
   @scala.inline
   def apply(functionArn: String): TopicRuleLambda = {
     val __obj = js.Dynamic.literal(functionArn = functionArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TopicRuleLambda]
   }
 }

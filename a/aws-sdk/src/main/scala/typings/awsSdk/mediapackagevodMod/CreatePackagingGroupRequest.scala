@@ -16,7 +16,6 @@ object CreatePackagingGroupRequest {
   @scala.inline
   def apply(Id: string): CreatePackagingGroupRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreatePackagingGroupRequest]
   }
 }

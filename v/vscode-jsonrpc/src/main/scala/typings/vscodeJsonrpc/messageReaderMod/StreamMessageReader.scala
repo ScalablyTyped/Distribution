@@ -25,7 +25,7 @@ class StreamMessageReader protected ()
   var setPartialMessageTimer: js.Any = js.native
   /* InferMemberOverrides */
   override def dispose(): Unit = js.native
-  def partialMessageTimeout(): Double = js.native
+  def partialMessageTimeout: Double = js.native
   def partialMessageTimeout(timeout: Double): js.Any = js.native
 }
 

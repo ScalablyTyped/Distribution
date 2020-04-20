@@ -16,7 +16,6 @@ object ObjectMetadata {
   @scala.inline
   def apply(metadataType: MetadataType, metadataTypeName: String, name: String, schema: String, urn: String): ObjectMetadata = {
     val __obj = js.Dynamic.literal(metadataType = metadataType.asInstanceOf[js.Any], metadataTypeName = metadataTypeName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], urn = urn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ObjectMetadata]
   }
 }

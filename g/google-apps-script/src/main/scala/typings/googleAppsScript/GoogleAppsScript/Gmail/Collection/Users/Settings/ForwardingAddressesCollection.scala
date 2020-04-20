@@ -28,7 +28,6 @@ object ForwardingAddressesCollection {
     remove: (String, String) => Unit
   ): ForwardingAddressesCollection = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction2(create), get = js.Any.fromFunction2(get), list = js.Any.fromFunction1(list), remove = js.Any.fromFunction2(remove))
-  
     __obj.asInstanceOf[ForwardingAddressesCollection]
   }
 }

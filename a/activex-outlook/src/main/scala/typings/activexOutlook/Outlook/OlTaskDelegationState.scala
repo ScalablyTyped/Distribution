@@ -18,14 +18,12 @@ trait OlTaskDelegationState extends js.Object
 
 object OlTaskDelegationState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olTaskDelegationAccepted: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olTaskDelegationAccepted: `2` = this.cast(2)
+  def olTaskDelegationDeclined: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def olTaskDelegationDeclined: `3` = this.cast(3)
+  def olTaskDelegationUnknown: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olTaskDelegationUnknown: `1` = this.cast(1)
-  @scala.inline
-  def olTaskNotDelegated: `0` = this.cast(0)
+  def olTaskNotDelegated: `0` = 0.asInstanceOf[`0`]
 }
 

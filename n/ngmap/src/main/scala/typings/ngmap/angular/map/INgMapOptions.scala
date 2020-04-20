@@ -13,7 +13,6 @@ object INgMapOptions {
   @scala.inline
   def apply(marker: AnonAnchorPoint): INgMapOptions = {
     val __obj = js.Dynamic.literal(marker = marker.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INgMapOptions]
   }
 }

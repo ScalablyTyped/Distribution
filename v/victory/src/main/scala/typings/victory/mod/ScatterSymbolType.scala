@@ -17,20 +17,18 @@ trait ScatterSymbolType extends js.Object
 
 object ScatterSymbolType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def circle: typings.victory.victoryStrings.circle = "circle".asInstanceOf[typings.victory.victoryStrings.circle]
   @scala.inline
-  def circle: typings.victory.victoryStrings.circle = this.cast("circle")
+  def diamond: typings.victory.victoryStrings.diamond = "diamond".asInstanceOf[typings.victory.victoryStrings.diamond]
   @scala.inline
-  def diamond: typings.victory.victoryStrings.diamond = this.cast("diamond")
+  def plus: typings.victory.victoryStrings.plus = "plus".asInstanceOf[typings.victory.victoryStrings.plus]
   @scala.inline
-  def plus: typings.victory.victoryStrings.plus = this.cast("plus")
+  def square: typings.victory.victoryStrings.square = "square".asInstanceOf[typings.victory.victoryStrings.square]
   @scala.inline
-  def square: typings.victory.victoryStrings.square = this.cast("square")
+  def star: typings.victory.victoryStrings.star = "star".asInstanceOf[typings.victory.victoryStrings.star]
   @scala.inline
-  def star: typings.victory.victoryStrings.star = this.cast("star")
+  def triangleDown: typings.victory.victoryStrings.triangleDown = "triangleDown".asInstanceOf[typings.victory.victoryStrings.triangleDown]
   @scala.inline
-  def triangleDown: typings.victory.victoryStrings.triangleDown = this.cast("triangleDown")
-  @scala.inline
-  def triangleUp: typings.victory.victoryStrings.triangleUp = this.cast("triangleUp")
+  def triangleUp: typings.victory.victoryStrings.triangleUp = "triangleUp".asInstanceOf[typings.victory.victoryStrings.triangleUp]
 }
 

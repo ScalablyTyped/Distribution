@@ -120,7 +120,7 @@ object webXRSessionManagerMod extends js.Object {
       * The current reference space used in this session. This reference space can constantly change!
       * It is mainly used to offset the camera's position.
       */
-    def referenceSpace(): XRReferenceSpace = js.native
+    def referenceSpace: XRReferenceSpace = js.native
     /**
       * Set a new reference space and triggers the observable
       */

@@ -28,7 +28,6 @@ object easy64 {
   @scala.inline
   def apply(decode: String => Unit, encode: js.Array[_] => Unit): easy64 = {
     val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode))
-  
     __obj.asInstanceOf[easy64]
   }
 }

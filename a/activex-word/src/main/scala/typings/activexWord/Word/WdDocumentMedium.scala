@@ -16,12 +16,10 @@ trait WdDocumentMedium extends js.Object
 
 object WdDocumentMedium {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdDocument: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdDocument: `1` = this.cast(1)
+  def wdEmailMessage: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdEmailMessage: `0` = this.cast(0)
-  @scala.inline
-  def wdWebPage: `2` = this.cast(2)
+  def wdWebPage: `2` = 2.asInstanceOf[`2`]
 }
 

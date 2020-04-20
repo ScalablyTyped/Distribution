@@ -15,7 +15,6 @@ object OpenSettingSuccessCallbackResult {
   @scala.inline
   def apply(authSetting: AuthSetting): OpenSettingSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(authSetting = authSetting.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OpenSettingSuccessCallbackResult]
   }
 }

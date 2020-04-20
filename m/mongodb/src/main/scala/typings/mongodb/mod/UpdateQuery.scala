@@ -1,6 +1,7 @@
 package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.mongodb.AnonType
 import typings.mongodb.mongodbBooleans.`true`
 import typings.mongodb.mongodbNumbers.`-1`
@@ -17,7 +18,9 @@ trait UpdateQuery[TSchema] extends js.Object {
   var $addToSet: js.UndefOr[SetFields[TSchema]] = js.undefined
   /** https://docs.mongodb.com/manual/reference/operator/update-bitwise/ */
   @JSName("$bit")
-  var $bit: js.UndefOr[StringDictionary[typings.mongodb.mongodbStrings.UpdateQuery with js.Any]] = js.undefined
+  var $bit: js.UndefOr[
+    StringDictionary[typings.mongodb.mongodbStrings.UpdateQuery with TopLevel[js.Any]]
+  ] = js.undefined
   /** https://docs.mongodb.com/manual/reference/operator/update-field/ */
   @JSName("$currentDate")
   var $currentDate: js.UndefOr[OnlyFieldsOfType[TSchema, Date, `true` | AnonType]] = js.undefined
@@ -44,14 +47,14 @@ trait UpdateQuery[TSchema] extends js.Object {
   @JSName("$setOnInsert")
   var $setOnInsert: js.UndefOr[MatchKeysAndValues[TSchema]] = js.undefined
   @JSName("$unset")
-  var $unset: js.UndefOr[OnlyFieldsOfType[TSchema, _, _empty]] = js.undefined
+  var $unset: js.UndefOr[OnlyFieldsOfType[TSchema, _, _empty | `1` | `true`]] = js.undefined
 }
 
 object UpdateQuery {
   @scala.inline
   def apply[TSchema](
     $addToSet: SetFields[TSchema] = null,
-    $bit: StringDictionary[typings.mongodb.mongodbStrings.UpdateQuery with js.Any] = null,
+    $bit: StringDictionary[typings.mongodb.mongodbStrings.UpdateQuery with TopLevel[js.Any]] = null,
     $currentDate: OnlyFieldsOfType[TSchema, Date, `true` | AnonType] = null,
     $inc: OnlyFieldsOfType[TSchema, js.UndefOr[scala.Double], js.UndefOr[scala.Double]] = null,
     $max: MatchKeysAndValues[TSchema] = null,
@@ -64,7 +67,7 @@ object UpdateQuery {
     $rename: StringDictionary[String] = null,
     $set: MatchKeysAndValues[TSchema] = null,
     $setOnInsert: MatchKeysAndValues[TSchema] = null,
-    $unset: OnlyFieldsOfType[TSchema, _, _empty] = null
+    $unset: OnlyFieldsOfType[TSchema, _, _empty | `1` | `true`] = null
   ): UpdateQuery[TSchema] = {
     val __obj = js.Dynamic.literal()
     if ($addToSet != null) __obj.updateDynamic("$addToSet")($addToSet.asInstanceOf[js.Any])

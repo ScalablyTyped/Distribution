@@ -20,7 +20,6 @@ object BatchMeterUsageRequest {
   @scala.inline
   def apply(ProductCode: ProductCode, UsageRecords: UsageRecordList): BatchMeterUsageRequest = {
     val __obj = js.Dynamic.literal(ProductCode = ProductCode.asInstanceOf[js.Any], UsageRecords = UsageRecords.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchMeterUsageRequest]
   }
 }

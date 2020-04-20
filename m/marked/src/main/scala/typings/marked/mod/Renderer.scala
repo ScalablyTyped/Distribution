@@ -39,7 +39,13 @@ class Renderer () extends js.Object {
   def hr(): String = js.native
   def html(html: String): String = js.native
   def image(href: String, title: String, text: String): String = js.native
+  def image(href: String, title: Null, text: String): String = js.native
+  def image(href: Null, title: String, text: String): String = js.native
+  def image(href: Null, title: Null, text: String): String = js.native
   def link(href: String, title: String, text: String): String = js.native
+  def link(href: String, title: Null, text: String): String = js.native
+  def link(href: Null, title: String, text: String): String = js.native
+  def link(href: Null, title: Null, text: String): String = js.native
   def list(body: String, ordered: Boolean, start: Double): String = js.native
   def listitem(text: String): String = js.native
   def paragraph(text: String): String = js.native

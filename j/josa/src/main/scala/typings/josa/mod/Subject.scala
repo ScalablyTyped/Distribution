@@ -12,10 +12,8 @@ trait Subject extends js.Object
 
 object Subject {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def 가: typings.josa.josaStrings.가 = "\uAC00".asInstanceOf[typings.josa.josaStrings.가]
   @scala.inline
-  def 가: typings.josa.josaStrings.가 = this.cast("\uAC00")
-  @scala.inline
-  def 이: typings.josa.josaStrings.이 = this.cast("\uC774")
+  def 이: typings.josa.josaStrings.이 = "\uC774".asInstanceOf[typings.josa.josaStrings.이]
 }
 

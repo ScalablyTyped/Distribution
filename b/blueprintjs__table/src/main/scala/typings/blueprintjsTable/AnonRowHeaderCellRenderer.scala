@@ -13,7 +13,6 @@ object AnonRowHeaderCellRenderer {
   @scala.inline
   def apply(rowHeaderCellRenderer: /* rowIndex */ Double => Element): AnonRowHeaderCellRenderer = {
     val __obj = js.Dynamic.literal(rowHeaderCellRenderer = js.Any.fromFunction1(rowHeaderCellRenderer))
-  
     __obj.asInstanceOf[AnonRowHeaderCellRenderer]
   }
 }

@@ -38,34 +38,32 @@ trait FunctionCategory extends js.Object
 
 object FunctionCategory {
   @scala.inline
-  def Commands: `10` = this.cast(10)
+  def Commands: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def Customizing: `11` = this.cast(11)
+  def Customizing: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def DDEAndExternal: `13` = this.cast(13)
+  def DDEAndExternal: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def Database: `6` = this.cast(6)
+  def Database: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def DateAndTime: `2` = this.cast(2)
+  def DateAndTime: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def Financial: `1` = this.cast(1)
+  def Financial: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def Information: `9` = this.cast(9)
+  def Information: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def Logical: `8` = this.cast(8)
+  def Logical: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def LookupAndReference: `5` = this.cast(5)
+  def LookupAndReference: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def MacroControl: `12` = this.cast(12)
+  def MacroControl: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def MathAndTrig: `3` = this.cast(3)
+  def MathAndTrig: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def Statistical: `4` = this.cast(4)
+  def Statistical: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def Text: `7` = this.cast(7)
+  def Text: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def UserDefined: `14` = this.cast(14)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UserDefined: `14` = 14.asInstanceOf[`14`]
 }
 

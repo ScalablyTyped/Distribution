@@ -14,10 +14,8 @@ trait MFSoftwarePlatformType extends js.Object
 
 object MFSoftwarePlatformType {
   @scala.inline
-  def Win32: `0` = this.cast(0)
+  def Win32: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def X64: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def X64: `1` = 1.asInstanceOf[`1`]
 }
 

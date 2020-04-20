@@ -46,17 +46,17 @@ class KernelSpecManager_ () extends BaseManager {
     * A signal emitted when there is a connection failure.
     */
   @JSName("connectionFailure")
-  def connectionFailure_MKernelSpecManager_(): ISignal[this.type, Error] = js.native
+  def connectionFailure_MKernelSpecManager_ : ISignal[this.type, Error] = js.native
   /**
     * Test whether the manager is ready.
     */
   @JSName("isReady")
-  def isReady_MKernelSpecManager_(): Boolean = js.native
+  def isReady_MKernelSpecManager_ : Boolean = js.native
   /**
     * A promise that fulfills when the manager is ready.
     */
   @JSName("ready")
-  def ready_MKernelSpecManager_(): js.Promise[Unit] = js.native
+  def ready_MKernelSpecManager_ : js.Promise[Unit] = js.native
   /**
     * Force a refresh of the specs from the server.
     *
@@ -74,10 +74,10 @@ class KernelSpecManager_ () extends BaseManager {
   /**
     * Get the most recently fetched kernel specs.
     */
-  def specs(): ISpecModels | Null = js.native
+  def specs: ISpecModels | Null = js.native
   /**
     * A signal emitted when the specs change.
     */
-  def specsChanged(): ISignal[this.type, ISpecModels] = js.native
+  def specsChanged: ISignal[this.type, ISpecModels] = js.native
 }
 

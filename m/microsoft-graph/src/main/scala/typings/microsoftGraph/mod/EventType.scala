@@ -14,14 +14,12 @@ trait EventType extends js.Object
 
 object EventType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def exception: typings.microsoftGraph.microsoftGraphStrings.exception = "exception".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.exception]
   @scala.inline
-  def exception: typings.microsoftGraph.microsoftGraphStrings.exception = this.cast("exception")
+  def occurrence: typings.microsoftGraph.microsoftGraphStrings.occurrence = "occurrence".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.occurrence]
   @scala.inline
-  def occurrence: typings.microsoftGraph.microsoftGraphStrings.occurrence = this.cast("occurrence")
+  def seriesMaster: typings.microsoftGraph.microsoftGraphStrings.seriesMaster = "seriesMaster".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.seriesMaster]
   @scala.inline
-  def seriesMaster: typings.microsoftGraph.microsoftGraphStrings.seriesMaster = this.cast("seriesMaster")
-  @scala.inline
-  def singleInstance: typings.microsoftGraph.microsoftGraphStrings.singleInstance = this.cast("singleInstance")
+  def singleInstance: typings.microsoftGraph.microsoftGraphStrings.singleInstance = "singleInstance".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.singleInstance]
 }
 

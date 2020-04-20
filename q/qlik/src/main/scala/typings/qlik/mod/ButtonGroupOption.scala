@@ -14,7 +14,6 @@ object ButtonGroupOption {
   @scala.inline
   def apply(label: String, tooltip: String, value: String): ButtonGroupOption = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ButtonGroupOption]
   }
 }

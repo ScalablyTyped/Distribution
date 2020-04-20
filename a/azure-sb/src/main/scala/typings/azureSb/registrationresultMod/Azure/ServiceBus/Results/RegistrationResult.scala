@@ -16,7 +16,6 @@ object RegistrationResult {
     serialize: (String, js.Object, js.Array[String]) => String
   ): RegistrationResult = {
     val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), serialize = js.Any.fromFunction3(serialize))
-  
     __obj.asInstanceOf[RegistrationResult]
   }
 }

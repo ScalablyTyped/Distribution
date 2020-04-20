@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateImageRecipeRequest extends js.Object {
   /**
-    *  The block device mappings of the image recipe. 
+    * The block device mappings of the image recipe. 
     */
   var blockDeviceMappings: js.UndefOr[InstanceBlockDeviceMappings] = js.native
   /**
-    *  The idempotency token used to make this request idempotent. 
+    * The idempotency token used to make this request idempotent. 
     */
   var clientToken: ClientToken = js.native
   /**
-    *  The components of the image recipe. 
+    * The components of the image recipe. 
     */
   var components: ComponentConfigurationList = js.native
   /**
@@ -27,11 +27,11 @@ trait CreateImageRecipeRequest extends js.Object {
     */
   var name: ResourceName = js.native
   /**
-    *  The parent image of the image recipe. 
+    * The parent image of the image recipe. The value of the string can be the ARN of the parent image or an AMI ID. The format for the ARN follows this example: arn:aws:imagebuilder:us-west-2:aws:image/windows-server-2016-english-full-base-x86/2019.x.x. The ARN ends with /20xx.x.x, which communicates to EC2 Image Builder that you want to use the latest AMI created in 20xx (year). You can provide the specific version that you want to use, or you can use a wildcard in all of the fields. If you enter an AMI ID for the string value, you must have access to the AMI, and the AMI must be in the same Region in which you are using Image Builder. 
     */
   var parentImage: NonEmptyString = js.native
   /**
-    *  The semantic version of the image recipe. 
+    * The semantic version of the image recipe. 
     */
   var semanticVersion: VersionNumber = js.native
   /**

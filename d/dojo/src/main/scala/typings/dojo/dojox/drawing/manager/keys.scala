@@ -116,7 +116,6 @@ object keys {
     shift: Boolean
   ): keys = {
     val __obj = js.Dynamic.literal(alt = alt.asInstanceOf[js.Any], arrowIncrement = arrowIncrement.asInstanceOf[js.Any], arrowShiftIncrement = arrowShiftIncrement.asInstanceOf[js.Any], cmmd = cmmd.asInstanceOf[js.Any], ctrl = ctrl.asInstanceOf[js.Any], editMode = js.Any.fromFunction1(editMode), enable = js.Any.fromFunction1(enable), init = js.Any.fromFunction0(init), listeners = listeners.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], register = js.Any.fromFunction1(register), scanForFields = js.Any.fromFunction0(scanForFields), shift = shift.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[keys]
   }
 }

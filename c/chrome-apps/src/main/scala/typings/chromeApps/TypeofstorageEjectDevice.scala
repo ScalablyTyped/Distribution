@@ -35,9 +35,9 @@ trait TypeofstorageEjectDevice extends js.Object {
     callback: js.Function1[
       /* result */ ToStringLiteral[
         /* import warning: importer.ImportType#apply Failed type conversion: typeof EjectDeviceResultCode */ js.Any, 
-        String, 
+        /* keyof typeof EjectDeviceResultCode */ String, 
         Exclude[
-          String, 
+          /* keyof typeof EjectDeviceResultCode */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: typeof EjectDeviceResultCode[keyof typeof EjectDeviceResultCode] */ js.Any
         ]
       ], 
@@ -61,9 +61,9 @@ object TypeofstorageEjectDevice {
     ejectDevice: (String, js.Function1[
       /* result */ ToStringLiteral[
         /* import warning: importer.ImportType#apply Failed type conversion: typeof EjectDeviceResultCode */ js.Any, 
-        String, 
+        /* keyof typeof EjectDeviceResultCode */ String, 
         Exclude[
-          String, 
+          /* keyof typeof EjectDeviceResultCode */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: typeof EjectDeviceResultCode[keyof typeof EjectDeviceResultCode] */ js.Any
         ]
       ], 
@@ -75,7 +75,6 @@ object TypeofstorageEjectDevice {
     onDetached: Event[js.Function1[/* id */ String, Unit]]
   ): TypeofstorageEjectDevice = {
     val __obj = js.Dynamic.literal(EjectDeviceResultCode = EjectDeviceResultCode.asInstanceOf[js.Any], StorageUnitType = StorageUnitType.asInstanceOf[js.Any], ejectDevice = js.Any.fromFunction2(ejectDevice), getAvailableCapacity = js.Any.fromFunction2(getAvailableCapacity), getInfo = js.Any.fromFunction1(getInfo), onAttached = onAttached.asInstanceOf[js.Any], onDetached = onDetached.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofstorageEjectDevice]
   }
 }

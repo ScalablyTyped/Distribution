@@ -13,7 +13,6 @@ object State {
   @scala.inline
   def apply(pending: js.Array[String], queue: js.Array[String]): State = {
     val __obj = js.Dynamic.literal(pending = pending.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[State]
   }
 }

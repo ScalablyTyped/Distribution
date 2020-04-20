@@ -26,7 +26,6 @@ object TypeofstorageEjectDevice {
     onDetached: SystemStorageDetachedEvent
   ): TypeofstorageEjectDevice = {
     val __obj = js.Dynamic.literal(ejectDevice = js.Any.fromFunction2(ejectDevice), getAvailableCapacity = js.Any.fromFunction2(getAvailableCapacity), getInfo = js.Any.fromFunction1(getInfo), onAttached = onAttached.asInstanceOf[js.Any], onDetached = onDetached.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofstorageEjectDevice]
   }
 }

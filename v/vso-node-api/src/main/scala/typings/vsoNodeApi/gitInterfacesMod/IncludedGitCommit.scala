@@ -16,7 +16,6 @@ object IncludedGitCommit {
   @scala.inline
   def apply(commitId: String, commitTime: Date, parentCommitIds: js.Array[String], repositoryId: String): IncludedGitCommit = {
     val __obj = js.Dynamic.literal(commitId = commitId.asInstanceOf[js.Any], commitTime = commitTime.asInstanceOf[js.Any], parentCommitIds = parentCommitIds.asInstanceOf[js.Any], repositoryId = repositoryId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IncludedGitCommit]
   }
 }

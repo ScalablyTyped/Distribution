@@ -13,7 +13,6 @@ object AnonAREASELECTOR {
   @scala.inline
   def apply(AREA_SELECTOR: String, CONTENT_SELECTOR: String): AnonAREASELECTOR = {
     val __obj = js.Dynamic.literal(AREA_SELECTOR = AREA_SELECTOR.asInstanceOf[js.Any], CONTENT_SELECTOR = CONTENT_SELECTOR.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAREASELECTOR]
   }
 }

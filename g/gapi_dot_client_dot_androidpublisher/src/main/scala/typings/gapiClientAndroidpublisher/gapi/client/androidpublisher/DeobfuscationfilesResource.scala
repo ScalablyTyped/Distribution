@@ -15,7 +15,6 @@ object DeobfuscationfilesResource {
   @scala.inline
   def apply(upload: AnonDeobfuscationFileType => Request_[DeobfuscationFilesUploadResponse]): DeobfuscationfilesResource = {
     val __obj = js.Dynamic.literal(upload = js.Any.fromFunction1(upload))
-  
     __obj.asInstanceOf[DeobfuscationfilesResource]
   }
 }

@@ -278,274 +278,272 @@ trait WdBuiltinStyle extends js.Object
 
 object WdBuiltinStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdStyleBibliography: `-266` = -266.asInstanceOf[`-266`]
   @scala.inline
-  def wdStyleBibliography: `-266` = this.cast(-266)
+  def wdStyleBlockQuotation: `-85` = -85.asInstanceOf[`-85`]
   @scala.inline
-  def wdStyleBlockQuotation: `-85` = this.cast(-85)
+  def wdStyleBodyText: `-67` = -67.asInstanceOf[`-67`]
   @scala.inline
-  def wdStyleBodyText: `-67` = this.cast(-67)
+  def wdStyleBodyText2: `-81` = -81.asInstanceOf[`-81`]
   @scala.inline
-  def wdStyleBodyText2: `-81` = this.cast(-81)
+  def wdStyleBodyText3: `-82` = -82.asInstanceOf[`-82`]
   @scala.inline
-  def wdStyleBodyText3: `-82` = this.cast(-82)
+  def wdStyleBodyTextFirstIndent: `-78` = -78.asInstanceOf[`-78`]
   @scala.inline
-  def wdStyleBodyTextFirstIndent: `-78` = this.cast(-78)
+  def wdStyleBodyTextFirstIndent2: `-79` = -79.asInstanceOf[`-79`]
   @scala.inline
-  def wdStyleBodyTextFirstIndent2: `-79` = this.cast(-79)
+  def wdStyleBodyTextIndent: `-68` = -68.asInstanceOf[`-68`]
   @scala.inline
-  def wdStyleBodyTextIndent: `-68` = this.cast(-68)
+  def wdStyleBodyTextIndent2: `-83` = -83.asInstanceOf[`-83`]
   @scala.inline
-  def wdStyleBodyTextIndent2: `-83` = this.cast(-83)
+  def wdStyleBodyTextIndent3: `-84` = -84.asInstanceOf[`-84`]
   @scala.inline
-  def wdStyleBodyTextIndent3: `-84` = this.cast(-84)
+  def wdStyleBookTitle: `-265` = -265.asInstanceOf[`-265`]
   @scala.inline
-  def wdStyleBookTitle: `-265` = this.cast(-265)
+  def wdStyleCaption: `-35` = -35.asInstanceOf[`-35`]
   @scala.inline
-  def wdStyleCaption: `-35` = this.cast(-35)
+  def wdStyleClosing: `-64` = -64.asInstanceOf[`-64`]
   @scala.inline
-  def wdStyleClosing: `-64` = this.cast(-64)
+  def wdStyleCommentReference: `-40` = -40.asInstanceOf[`-40`]
   @scala.inline
-  def wdStyleCommentReference: `-40` = this.cast(-40)
+  def wdStyleCommentText: `-31` = -31.asInstanceOf[`-31`]
   @scala.inline
-  def wdStyleCommentText: `-31` = this.cast(-31)
+  def wdStyleDate: `-77` = -77.asInstanceOf[`-77`]
   @scala.inline
-  def wdStyleDate: `-77` = this.cast(-77)
+  def wdStyleDefaultParagraphFont: `-66` = -66.asInstanceOf[`-66`]
   @scala.inline
-  def wdStyleDefaultParagraphFont: `-66` = this.cast(-66)
+  def wdStyleEmphasis: `-89` = -89.asInstanceOf[`-89`]
   @scala.inline
-  def wdStyleEmphasis: `-89` = this.cast(-89)
+  def wdStyleEndnoteReference: `-43` = -43.asInstanceOf[`-43`]
   @scala.inline
-  def wdStyleEndnoteReference: `-43` = this.cast(-43)
+  def wdStyleEndnoteText: `-44` = -44.asInstanceOf[`-44`]
   @scala.inline
-  def wdStyleEndnoteText: `-44` = this.cast(-44)
+  def wdStyleEnvelopeAddress: `-37` = -37.asInstanceOf[`-37`]
   @scala.inline
-  def wdStyleEnvelopeAddress: `-37` = this.cast(-37)
+  def wdStyleEnvelopeReturn: `-38` = -38.asInstanceOf[`-38`]
   @scala.inline
-  def wdStyleEnvelopeReturn: `-38` = this.cast(-38)
+  def wdStyleFooter: `-33` = -33.asInstanceOf[`-33`]
   @scala.inline
-  def wdStyleFooter: `-33` = this.cast(-33)
+  def wdStyleFootnoteReference: `-39` = -39.asInstanceOf[`-39`]
   @scala.inline
-  def wdStyleFootnoteReference: `-39` = this.cast(-39)
+  def wdStyleFootnoteText: `-30` = -30.asInstanceOf[`-30`]
   @scala.inline
-  def wdStyleFootnoteText: `-30` = this.cast(-30)
+  def wdStyleHeader: `-32` = -32.asInstanceOf[`-32`]
   @scala.inline
-  def wdStyleHeader: `-32` = this.cast(-32)
+  def wdStyleHeading1: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def wdStyleHeading1: `-2` = this.cast(-2)
+  def wdStyleHeading2: `-3` = -3.asInstanceOf[`-3`]
   @scala.inline
-  def wdStyleHeading2: `-3` = this.cast(-3)
+  def wdStyleHeading3: `-4` = -4.asInstanceOf[`-4`]
   @scala.inline
-  def wdStyleHeading3: `-4` = this.cast(-4)
+  def wdStyleHeading4: `-5` = -5.asInstanceOf[`-5`]
   @scala.inline
-  def wdStyleHeading4: `-5` = this.cast(-5)
+  def wdStyleHeading5: `-6` = -6.asInstanceOf[`-6`]
   @scala.inline
-  def wdStyleHeading5: `-6` = this.cast(-6)
+  def wdStyleHeading6: `-7` = -7.asInstanceOf[`-7`]
   @scala.inline
-  def wdStyleHeading6: `-7` = this.cast(-7)
+  def wdStyleHeading7: `-8` = -8.asInstanceOf[`-8`]
   @scala.inline
-  def wdStyleHeading7: `-8` = this.cast(-8)
+  def wdStyleHeading8: `-9` = -9.asInstanceOf[`-9`]
   @scala.inline
-  def wdStyleHeading8: `-9` = this.cast(-9)
+  def wdStyleHeading9: `-10` = -10.asInstanceOf[`-10`]
   @scala.inline
-  def wdStyleHeading9: `-10` = this.cast(-10)
+  def wdStyleHtmlAcronym: `-96` = -96.asInstanceOf[`-96`]
   @scala.inline
-  def wdStyleHtmlAcronym: `-96` = this.cast(-96)
+  def wdStyleHtmlAddress: `-97` = -97.asInstanceOf[`-97`]
   @scala.inline
-  def wdStyleHtmlAddress: `-97` = this.cast(-97)
+  def wdStyleHtmlCite: `-98` = -98.asInstanceOf[`-98`]
   @scala.inline
-  def wdStyleHtmlCite: `-98` = this.cast(-98)
+  def wdStyleHtmlCode: `-99` = -99.asInstanceOf[`-99`]
   @scala.inline
-  def wdStyleHtmlCode: `-99` = this.cast(-99)
+  def wdStyleHtmlDfn: `-100` = -100.asInstanceOf[`-100`]
   @scala.inline
-  def wdStyleHtmlDfn: `-100` = this.cast(-100)
+  def wdStyleHtmlKbd: `-101` = -101.asInstanceOf[`-101`]
   @scala.inline
-  def wdStyleHtmlKbd: `-101` = this.cast(-101)
+  def wdStyleHtmlNormal: `-95` = -95.asInstanceOf[`-95`]
   @scala.inline
-  def wdStyleHtmlNormal: `-95` = this.cast(-95)
+  def wdStyleHtmlPre: `-102` = -102.asInstanceOf[`-102`]
   @scala.inline
-  def wdStyleHtmlPre: `-102` = this.cast(-102)
+  def wdStyleHtmlSamp: `-103` = -103.asInstanceOf[`-103`]
   @scala.inline
-  def wdStyleHtmlSamp: `-103` = this.cast(-103)
+  def wdStyleHtmlTt: `-104` = -104.asInstanceOf[`-104`]
   @scala.inline
-  def wdStyleHtmlTt: `-104` = this.cast(-104)
+  def wdStyleHtmlVar: `-105` = -105.asInstanceOf[`-105`]
   @scala.inline
-  def wdStyleHtmlVar: `-105` = this.cast(-105)
+  def wdStyleHyperlink: `-86` = -86.asInstanceOf[`-86`]
   @scala.inline
-  def wdStyleHyperlink: `-86` = this.cast(-86)
+  def wdStyleHyperlinkFollowed: `-87` = -87.asInstanceOf[`-87`]
   @scala.inline
-  def wdStyleHyperlinkFollowed: `-87` = this.cast(-87)
+  def wdStyleIndex1: `-11` = -11.asInstanceOf[`-11`]
   @scala.inline
-  def wdStyleIndex1: `-11` = this.cast(-11)
+  def wdStyleIndex2: `-12` = -12.asInstanceOf[`-12`]
   @scala.inline
-  def wdStyleIndex2: `-12` = this.cast(-12)
+  def wdStyleIndex3: `-13` = -13.asInstanceOf[`-13`]
   @scala.inline
-  def wdStyleIndex3: `-13` = this.cast(-13)
+  def wdStyleIndex4: `-14` = -14.asInstanceOf[`-14`]
   @scala.inline
-  def wdStyleIndex4: `-14` = this.cast(-14)
+  def wdStyleIndex5: `-15` = -15.asInstanceOf[`-15`]
   @scala.inline
-  def wdStyleIndex5: `-15` = this.cast(-15)
+  def wdStyleIndex6: `-16` = -16.asInstanceOf[`-16`]
   @scala.inline
-  def wdStyleIndex6: `-16` = this.cast(-16)
+  def wdStyleIndex7: `-17` = -17.asInstanceOf[`-17`]
   @scala.inline
-  def wdStyleIndex7: `-17` = this.cast(-17)
+  def wdStyleIndex8: `-18` = -18.asInstanceOf[`-18`]
   @scala.inline
-  def wdStyleIndex8: `-18` = this.cast(-18)
+  def wdStyleIndex9: `-19` = -19.asInstanceOf[`-19`]
   @scala.inline
-  def wdStyleIndex9: `-19` = this.cast(-19)
+  def wdStyleIndexHeading: `-34` = -34.asInstanceOf[`-34`]
   @scala.inline
-  def wdStyleIndexHeading: `-34` = this.cast(-34)
+  def wdStyleIntenseEmphasis: `-262` = -262.asInstanceOf[`-262`]
   @scala.inline
-  def wdStyleIntenseEmphasis: `-262` = this.cast(-262)
+  def wdStyleIntenseQuote: `-182` = -182.asInstanceOf[`-182`]
   @scala.inline
-  def wdStyleIntenseQuote: `-182` = this.cast(-182)
+  def wdStyleIntenseReference: `-264` = -264.asInstanceOf[`-264`]
   @scala.inline
-  def wdStyleIntenseReference: `-264` = this.cast(-264)
+  def wdStyleLineNumber: `-41` = -41.asInstanceOf[`-41`]
   @scala.inline
-  def wdStyleLineNumber: `-41` = this.cast(-41)
+  def wdStyleList: `-48` = -48.asInstanceOf[`-48`]
   @scala.inline
-  def wdStyleList: `-48` = this.cast(-48)
+  def wdStyleList2: `-51` = -51.asInstanceOf[`-51`]
   @scala.inline
-  def wdStyleList2: `-51` = this.cast(-51)
+  def wdStyleList3: `-52` = -52.asInstanceOf[`-52`]
   @scala.inline
-  def wdStyleList3: `-52` = this.cast(-52)
+  def wdStyleList4: `-53` = -53.asInstanceOf[`-53`]
   @scala.inline
-  def wdStyleList4: `-53` = this.cast(-53)
+  def wdStyleList5: `-54` = -54.asInstanceOf[`-54`]
   @scala.inline
-  def wdStyleList5: `-54` = this.cast(-54)
+  def wdStyleListBullet: `-49` = -49.asInstanceOf[`-49`]
   @scala.inline
-  def wdStyleListBullet: `-49` = this.cast(-49)
+  def wdStyleListBullet2: `-55` = -55.asInstanceOf[`-55`]
   @scala.inline
-  def wdStyleListBullet2: `-55` = this.cast(-55)
+  def wdStyleListBullet3: `-56` = -56.asInstanceOf[`-56`]
   @scala.inline
-  def wdStyleListBullet3: `-56` = this.cast(-56)
+  def wdStyleListBullet4: `-57` = -57.asInstanceOf[`-57`]
   @scala.inline
-  def wdStyleListBullet4: `-57` = this.cast(-57)
+  def wdStyleListBullet5: `-58` = -58.asInstanceOf[`-58`]
   @scala.inline
-  def wdStyleListBullet5: `-58` = this.cast(-58)
+  def wdStyleListContinue: `-69` = -69.asInstanceOf[`-69`]
   @scala.inline
-  def wdStyleListContinue: `-69` = this.cast(-69)
+  def wdStyleListContinue2: `-70` = -70.asInstanceOf[`-70`]
   @scala.inline
-  def wdStyleListContinue2: `-70` = this.cast(-70)
+  def wdStyleListContinue3: `-71` = -71.asInstanceOf[`-71`]
   @scala.inline
-  def wdStyleListContinue3: `-71` = this.cast(-71)
+  def wdStyleListContinue4: `-72` = -72.asInstanceOf[`-72`]
   @scala.inline
-  def wdStyleListContinue4: `-72` = this.cast(-72)
+  def wdStyleListContinue5: `-73` = -73.asInstanceOf[`-73`]
   @scala.inline
-  def wdStyleListContinue5: `-73` = this.cast(-73)
+  def wdStyleListNumber: `-50` = -50.asInstanceOf[`-50`]
   @scala.inline
-  def wdStyleListNumber: `-50` = this.cast(-50)
+  def wdStyleListNumber2: `-59` = -59.asInstanceOf[`-59`]
   @scala.inline
-  def wdStyleListNumber2: `-59` = this.cast(-59)
+  def wdStyleListNumber3: `-60` = -60.asInstanceOf[`-60`]
   @scala.inline
-  def wdStyleListNumber3: `-60` = this.cast(-60)
+  def wdStyleListNumber4: `-61` = -61.asInstanceOf[`-61`]
   @scala.inline
-  def wdStyleListNumber4: `-61` = this.cast(-61)
+  def wdStyleListNumber5: `-62` = -62.asInstanceOf[`-62`]
   @scala.inline
-  def wdStyleListNumber5: `-62` = this.cast(-62)
+  def wdStyleListParagraph: `-180` = -180.asInstanceOf[`-180`]
   @scala.inline
-  def wdStyleListParagraph: `-180` = this.cast(-180)
+  def wdStyleMacroText: `-46` = -46.asInstanceOf[`-46`]
   @scala.inline
-  def wdStyleMacroText: `-46` = this.cast(-46)
+  def wdStyleMessageHeader: `-74` = -74.asInstanceOf[`-74`]
   @scala.inline
-  def wdStyleMessageHeader: `-74` = this.cast(-74)
+  def wdStyleNavPane: `-90` = -90.asInstanceOf[`-90`]
   @scala.inline
-  def wdStyleNavPane: `-90` = this.cast(-90)
+  def wdStyleNormal: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def wdStyleNormal: `-1` = this.cast(-1)
+  def wdStyleNormalIndent: `-29` = -29.asInstanceOf[`-29`]
   @scala.inline
-  def wdStyleNormalIndent: `-29` = this.cast(-29)
+  def wdStyleNormalObject: `-158` = -158.asInstanceOf[`-158`]
   @scala.inline
-  def wdStyleNormalObject: `-158` = this.cast(-158)
+  def wdStyleNormalTable: `-106` = -106.asInstanceOf[`-106`]
   @scala.inline
-  def wdStyleNormalTable: `-106` = this.cast(-106)
+  def wdStyleNoteHeading: `-80` = -80.asInstanceOf[`-80`]
   @scala.inline
-  def wdStyleNoteHeading: `-80` = this.cast(-80)
+  def wdStylePageNumber: `-42` = -42.asInstanceOf[`-42`]
   @scala.inline
-  def wdStylePageNumber: `-42` = this.cast(-42)
+  def wdStylePlainText: `-91` = -91.asInstanceOf[`-91`]
   @scala.inline
-  def wdStylePlainText: `-91` = this.cast(-91)
+  def wdStyleQuote: `-181` = -181.asInstanceOf[`-181`]
   @scala.inline
-  def wdStyleQuote: `-181` = this.cast(-181)
+  def wdStyleSalutation: `-76` = -76.asInstanceOf[`-76`]
   @scala.inline
-  def wdStyleSalutation: `-76` = this.cast(-76)
+  def wdStyleSignature: `-65` = -65.asInstanceOf[`-65`]
   @scala.inline
-  def wdStyleSignature: `-65` = this.cast(-65)
+  def wdStyleStrong: `-88` = -88.asInstanceOf[`-88`]
   @scala.inline
-  def wdStyleStrong: `-88` = this.cast(-88)
+  def wdStyleSubtitle: `-75` = -75.asInstanceOf[`-75`]
   @scala.inline
-  def wdStyleSubtitle: `-75` = this.cast(-75)
+  def wdStyleSubtleEmphasis: `-261` = -261.asInstanceOf[`-261`]
   @scala.inline
-  def wdStyleSubtleEmphasis: `-261` = this.cast(-261)
+  def wdStyleSubtleReference: `-263` = -263.asInstanceOf[`-263`]
   @scala.inline
-  def wdStyleSubtleReference: `-263` = this.cast(-263)
+  def wdStyleTOAHeading: `-47` = -47.asInstanceOf[`-47`]
   @scala.inline
-  def wdStyleTOAHeading: `-47` = this.cast(-47)
+  def wdStyleTOC1: `-20` = -20.asInstanceOf[`-20`]
   @scala.inline
-  def wdStyleTOC1: `-20` = this.cast(-20)
+  def wdStyleTOC2: `-21` = -21.asInstanceOf[`-21`]
   @scala.inline
-  def wdStyleTOC2: `-21` = this.cast(-21)
+  def wdStyleTOC3: `-22` = -22.asInstanceOf[`-22`]
   @scala.inline
-  def wdStyleTOC3: `-22` = this.cast(-22)
+  def wdStyleTOC4: `-23` = -23.asInstanceOf[`-23`]
   @scala.inline
-  def wdStyleTOC4: `-23` = this.cast(-23)
+  def wdStyleTOC5: `-24` = -24.asInstanceOf[`-24`]
   @scala.inline
-  def wdStyleTOC5: `-24` = this.cast(-24)
+  def wdStyleTOC6: `-25` = -25.asInstanceOf[`-25`]
   @scala.inline
-  def wdStyleTOC6: `-25` = this.cast(-25)
+  def wdStyleTOC7: `-26` = -26.asInstanceOf[`-26`]
   @scala.inline
-  def wdStyleTOC7: `-26` = this.cast(-26)
+  def wdStyleTOC8: `-27` = -27.asInstanceOf[`-27`]
   @scala.inline
-  def wdStyleTOC8: `-27` = this.cast(-27)
+  def wdStyleTOC9: `-28` = -28.asInstanceOf[`-28`]
   @scala.inline
-  def wdStyleTOC9: `-28` = this.cast(-28)
+  def wdStyleTableColorfulGrid: `-172` = -172.asInstanceOf[`-172`]
   @scala.inline
-  def wdStyleTableColorfulGrid: `-172` = this.cast(-172)
+  def wdStyleTableColorfulList: `-171` = -171.asInstanceOf[`-171`]
   @scala.inline
-  def wdStyleTableColorfulList: `-171` = this.cast(-171)
+  def wdStyleTableColorfulShading: `-170` = -170.asInstanceOf[`-170`]
   @scala.inline
-  def wdStyleTableColorfulShading: `-170` = this.cast(-170)
+  def wdStyleTableDarkList: `-169` = -169.asInstanceOf[`-169`]
   @scala.inline
-  def wdStyleTableDarkList: `-169` = this.cast(-169)
+  def wdStyleTableLightGrid: `-161` = -161.asInstanceOf[`-161`]
   @scala.inline
-  def wdStyleTableLightGrid: `-161` = this.cast(-161)
+  def wdStyleTableLightGridAccent1: `-175` = -175.asInstanceOf[`-175`]
   @scala.inline
-  def wdStyleTableLightGridAccent1: `-175` = this.cast(-175)
+  def wdStyleTableLightList: `-160` = -160.asInstanceOf[`-160`]
   @scala.inline
-  def wdStyleTableLightList: `-160` = this.cast(-160)
+  def wdStyleTableLightListAccent1: `-174` = -174.asInstanceOf[`-174`]
   @scala.inline
-  def wdStyleTableLightListAccent1: `-174` = this.cast(-174)
+  def wdStyleTableLightShading: `-159` = -159.asInstanceOf[`-159`]
   @scala.inline
-  def wdStyleTableLightShading: `-159` = this.cast(-159)
+  def wdStyleTableLightShadingAccent1: `-173` = -173.asInstanceOf[`-173`]
   @scala.inline
-  def wdStyleTableLightShadingAccent1: `-173` = this.cast(-173)
+  def wdStyleTableMediumGrid1: `-166` = -166.asInstanceOf[`-166`]
   @scala.inline
-  def wdStyleTableMediumGrid1: `-166` = this.cast(-166)
+  def wdStyleTableMediumGrid2: `-167` = -167.asInstanceOf[`-167`]
   @scala.inline
-  def wdStyleTableMediumGrid2: `-167` = this.cast(-167)
+  def wdStyleTableMediumGrid3: `-168` = -168.asInstanceOf[`-168`]
   @scala.inline
-  def wdStyleTableMediumGrid3: `-168` = this.cast(-168)
+  def wdStyleTableMediumList1: `-164` = -164.asInstanceOf[`-164`]
   @scala.inline
-  def wdStyleTableMediumList1: `-164` = this.cast(-164)
+  def wdStyleTableMediumList1Accent1: `-178` = -178.asInstanceOf[`-178`]
   @scala.inline
-  def wdStyleTableMediumList1Accent1: `-178` = this.cast(-178)
+  def wdStyleTableMediumList2: `-165` = -165.asInstanceOf[`-165`]
   @scala.inline
-  def wdStyleTableMediumList2: `-165` = this.cast(-165)
+  def wdStyleTableMediumShading1: `-162` = -162.asInstanceOf[`-162`]
   @scala.inline
-  def wdStyleTableMediumShading1: `-162` = this.cast(-162)
+  def wdStyleTableMediumShading1Accent1: `-176` = -176.asInstanceOf[`-176`]
   @scala.inline
-  def wdStyleTableMediumShading1Accent1: `-176` = this.cast(-176)
+  def wdStyleTableMediumShading2: `-163` = -163.asInstanceOf[`-163`]
   @scala.inline
-  def wdStyleTableMediumShading2: `-163` = this.cast(-163)
+  def wdStyleTableMediumShading2Accent1: `-177` = -177.asInstanceOf[`-177`]
   @scala.inline
-  def wdStyleTableMediumShading2Accent1: `-177` = this.cast(-177)
+  def wdStyleTableOfAuthorities: `-45` = -45.asInstanceOf[`-45`]
   @scala.inline
-  def wdStyleTableOfAuthorities: `-45` = this.cast(-45)
+  def wdStyleTableOfFigures: `-36` = -36.asInstanceOf[`-36`]
   @scala.inline
-  def wdStyleTableOfFigures: `-36` = this.cast(-36)
+  def wdStyleTitle: `-63` = -63.asInstanceOf[`-63`]
   @scala.inline
-  def wdStyleTitle: `-63` = this.cast(-63)
-  @scala.inline
-  def wdStyleTocHeading: `-267` = this.cast(-267)
+  def wdStyleTocHeading: `-267` = -267.asInstanceOf[`-267`]
 }
 

@@ -14,14 +14,12 @@ trait VirtualPixelMethod extends js.Object
 
 object VirtualPixelMethod {
   @scala.inline
-  def Constant: typings.gm.gmStrings.Constant = this.cast("Constant")
+  def Constant: typings.gm.gmStrings.Constant = "Constant".asInstanceOf[typings.gm.gmStrings.Constant]
   @scala.inline
-  def Edge: typings.gm.gmStrings.Edge = this.cast("Edge")
+  def Edge: typings.gm.gmStrings.Edge = "Edge".asInstanceOf[typings.gm.gmStrings.Edge]
   @scala.inline
-  def Mirror: typings.gm.gmStrings.Mirror = this.cast("Mirror")
+  def Mirror: typings.gm.gmStrings.Mirror = "Mirror".asInstanceOf[typings.gm.gmStrings.Mirror]
   @scala.inline
-  def Tile: typings.gm.gmStrings.Tile = this.cast("Tile")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Tile: typings.gm.gmStrings.Tile = "Tile".asInstanceOf[typings.gm.gmStrings.Tile]
 }
 

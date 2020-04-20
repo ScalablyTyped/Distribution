@@ -13,7 +13,6 @@ object MockEnvironment {
   @scala.inline
   def apply(mock: MockFunctions, mockClear: () => Unit): MockEnvironment = {
     val __obj = js.Dynamic.literal(mock = mock.asInstanceOf[js.Any], mockClear = js.Any.fromFunction0(mockClear))
-  
     __obj.asInstanceOf[MockEnvironment]
   }
 }

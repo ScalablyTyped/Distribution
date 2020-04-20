@@ -20,7 +20,6 @@ object CreateGroupRequest {
   @scala.inline
   def apply(Name: GroupName, OrganizationId: OrganizationId): CreateGroupRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], OrganizationId = OrganizationId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateGroupRequest]
   }
 }

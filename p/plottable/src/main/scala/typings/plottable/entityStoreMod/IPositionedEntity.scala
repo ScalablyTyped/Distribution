@@ -13,7 +13,6 @@ object IPositionedEntity {
   @scala.inline
   def apply(position: Point): IPositionedEntity = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPositionedEntity]
   }
 }

@@ -13,7 +13,6 @@ object AnonDataKey {
   @scala.inline
   def apply(dataKey: String | Double | RechartsFunction): AnonDataKey = {
     val __obj = js.Dynamic.literal(dataKey = dataKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDataKey]
   }
 }

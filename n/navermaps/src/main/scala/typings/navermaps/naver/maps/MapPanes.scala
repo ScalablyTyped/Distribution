@@ -15,7 +15,6 @@ object MapPanes {
   @scala.inline
   def apply(floatPane: HTMLElement, overlayImage: HTMLElement, overlayLayer: HTMLElement): MapPanes = {
     val __obj = js.Dynamic.literal(floatPane = floatPane.asInstanceOf[js.Any], overlayImage = overlayImage.asInstanceOf[js.Any], overlayLayer = overlayLayer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MapPanes]
   }
 }

@@ -15,7 +15,6 @@ object AnonExtend {
   @scala.inline
   def apply(apply: `true`, extend: `true`): AnonExtend = {
     val __obj = js.Dynamic.literal(apply = apply.asInstanceOf[js.Any], extend = extend.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonExtend]
   }
 }

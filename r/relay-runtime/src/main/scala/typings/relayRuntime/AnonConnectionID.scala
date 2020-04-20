@@ -26,7 +26,6 @@ object AnonConnectionID {
     request: RequestDescriptor
   ): AnonConnectionID = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], connectionID = connectionID.asInstanceOf[js.Any], edgeID = edgeID.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonConnectionID]
   }
 }

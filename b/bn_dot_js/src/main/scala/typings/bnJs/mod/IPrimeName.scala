@@ -14,14 +14,12 @@ trait IPrimeName extends js.Object
 
 object IPrimeName {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def k256: typings.bnJs.bnJsStrings.k256 = "k256".asInstanceOf[typings.bnJs.bnJsStrings.k256]
   @scala.inline
-  def k256: typings.bnJs.bnJsStrings.k256 = this.cast("k256")
+  def p192: typings.bnJs.bnJsStrings.p192 = "p192".asInstanceOf[typings.bnJs.bnJsStrings.p192]
   @scala.inline
-  def p192: typings.bnJs.bnJsStrings.p192 = this.cast("p192")
+  def p224: typings.bnJs.bnJsStrings.p224 = "p224".asInstanceOf[typings.bnJs.bnJsStrings.p224]
   @scala.inline
-  def p224: typings.bnJs.bnJsStrings.p224 = this.cast("p224")
-  @scala.inline
-  def p25519: typings.bnJs.bnJsStrings.p25519 = this.cast("p25519")
+  def p25519: typings.bnJs.bnJsStrings.p25519 = "p25519".asInstanceOf[typings.bnJs.bnJsStrings.p25519]
 }
 

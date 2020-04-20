@@ -19,24 +19,22 @@ trait DataType extends js.Object
 
 object DataType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def float32: typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.float32 = "float32".asInstanceOf[typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.float32]
   @scala.inline
-  def float32: typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.float32 = this.cast("float32")
+  def float64: typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.float64 = "float64".asInstanceOf[typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.float64]
   @scala.inline
-  def float64: typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.float64 = this.cast("float64")
+  def int16: typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.int16 = "int16".asInstanceOf[typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.int16]
   @scala.inline
-  def int16: typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.int16 = this.cast("int16")
+  def int32: typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.int32 = "int32".asInstanceOf[typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.int32]
   @scala.inline
-  def int32: typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.int32 = this.cast("int32")
+  def int8: typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.int8 = "int8".asInstanceOf[typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.int8]
   @scala.inline
-  def int8: typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.int8 = this.cast("int8")
+  def uint16: typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.uint16 = "uint16".asInstanceOf[typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.uint16]
   @scala.inline
-  def uint16: typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.uint16 = this.cast("uint16")
+  def uint32: typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.uint32 = "uint32".asInstanceOf[typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.uint32]
   @scala.inline
-  def uint32: typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.uint32 = this.cast("uint32")
+  def uint8: typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.uint8 = "uint8".asInstanceOf[typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.uint8]
   @scala.inline
-  def uint8: typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.uint8 = this.cast("uint8")
-  @scala.inline
-  def uint8_clamped: typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.uint8_clamped = this.cast("uint8_clamped")
+  def uint8_clamped: typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.uint8_clamped = "uint8_clamped".asInstanceOf[typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.uint8_clamped]
 }
 

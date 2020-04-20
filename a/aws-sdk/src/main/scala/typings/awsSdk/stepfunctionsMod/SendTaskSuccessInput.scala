@@ -20,7 +20,6 @@ object SendTaskSuccessInput {
   @scala.inline
   def apply(output: SensitiveData, taskToken: TaskToken): SendTaskSuccessInput = {
     val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any], taskToken = taskToken.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SendTaskSuccessInput]
   }
 }

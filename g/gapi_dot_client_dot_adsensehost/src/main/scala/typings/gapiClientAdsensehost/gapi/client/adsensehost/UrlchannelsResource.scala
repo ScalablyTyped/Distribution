@@ -25,7 +25,6 @@ object UrlchannelsResource {
     list: AnonMaxResults => Request_[UrlChannels]
   ): UrlchannelsResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[UrlchannelsResource]
   }
 }

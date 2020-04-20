@@ -11,7 +11,7 @@ trait ProcessingS3Input extends js.Object {
     */
   var LocalPath: ProcessingLocalPath = js.native
   /**
-    * Whether to use Gzip compresion for Amazon S3 storage.
+    * Whether to use Gzip compression for Amazon S3 storage.
     */
   var S3CompressionType: js.UndefOr[ProcessingS3CompressionType] = js.native
   /**
@@ -23,7 +23,7 @@ trait ProcessingS3Input extends js.Object {
     */
   var S3DataType: ProcessingS3DataType = js.native
   /**
-    * Wether to use File or Pipe input mode. In File mode, Amazon SageMaker copies the data from the input source onto the local Amazon Elastic Block Store (Amazon EBS) volumes before starting your training algorithm. This is the most commonly used input mode. In Pipe mode, Amazon SageMaker streams input data from the source directly to your algorithm without using the EBS volume.
+    * Whether to use File or Pipe input mode. In File mode, Amazon SageMaker copies the data from the input source onto the local Amazon Elastic Block Store (Amazon EBS) volumes before starting your training algorithm. This is the most commonly used input mode. In Pipe mode, Amazon SageMaker streams input data from the source directly to your algorithm without using the EBS volume.
     */
   var S3InputMode: ProcessingS3InputMode = js.native
   /**

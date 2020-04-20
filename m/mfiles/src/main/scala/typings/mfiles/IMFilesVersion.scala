@@ -29,7 +29,6 @@ object IMFilesVersion {
     SoftwarePlatform: MFSoftwarePlatformType
   ): IMFilesVersion = {
     val __obj = js.Dynamic.literal(Build = Build.asInstanceOf[js.Any], Clone = js.Any.fromFunction0(Clone), CompareTo = js.Any.fromFunction1(CompareTo), Display = Display.asInstanceOf[js.Any], Major = Major.asInstanceOf[js.Any], Minor = Minor.asInstanceOf[js.Any], Patch = Patch.asInstanceOf[js.Any], SoftwarePlatform = SoftwarePlatform.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMFilesVersion]
   }
 }

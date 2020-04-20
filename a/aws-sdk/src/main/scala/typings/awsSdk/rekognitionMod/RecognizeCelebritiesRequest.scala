@@ -16,7 +16,6 @@ object RecognizeCelebritiesRequest {
   @scala.inline
   def apply(Image: Image): RecognizeCelebritiesRequest = {
     val __obj = js.Dynamic.literal(Image = Image.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RecognizeCelebritiesRequest]
   }
 }

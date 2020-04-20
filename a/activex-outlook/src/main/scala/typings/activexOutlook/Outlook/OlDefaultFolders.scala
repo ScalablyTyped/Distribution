@@ -50,46 +50,44 @@ trait OlDefaultFolders extends js.Object
 
 object OlDefaultFolders {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olFolderCalendar: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def olFolderCalendar: `9` = this.cast(9)
+  def olFolderConflicts: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def olFolderConflicts: `19` = this.cast(19)
+  def olFolderContacts: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def olFolderContacts: `10` = this.cast(10)
+  def olFolderDeletedItems: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def olFolderDeletedItems: `3` = this.cast(3)
+  def olFolderDrafts: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def olFolderDrafts: `16` = this.cast(16)
+  def olFolderInbox: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def olFolderInbox: `6` = this.cast(6)
+  def olFolderJournal: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def olFolderJournal: `11` = this.cast(11)
+  def olFolderJunk: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def olFolderJunk: `23` = this.cast(23)
+  def olFolderLocalFailures: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def olFolderLocalFailures: `21` = this.cast(21)
+  def olFolderManagedEmail: `29` = 29.asInstanceOf[`29`]
   @scala.inline
-  def olFolderManagedEmail: `29` = this.cast(29)
+  def olFolderNotes: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def olFolderNotes: `12` = this.cast(12)
+  def olFolderOutbox: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def olFolderOutbox: `4` = this.cast(4)
+  def olFolderRssFeeds: `25` = 25.asInstanceOf[`25`]
   @scala.inline
-  def olFolderRssFeeds: `25` = this.cast(25)
+  def olFolderSentMail: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def olFolderSentMail: `5` = this.cast(5)
+  def olFolderServerFailures: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def olFolderServerFailures: `22` = this.cast(22)
+  def olFolderSuggestedContacts: `30` = 30.asInstanceOf[`30`]
   @scala.inline
-  def olFolderSuggestedContacts: `30` = this.cast(30)
+  def olFolderSyncIssues: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def olFolderSyncIssues: `20` = this.cast(20)
+  def olFolderTasks: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def olFolderTasks: `13` = this.cast(13)
+  def olFolderToDo: `28` = 28.asInstanceOf[`28`]
   @scala.inline
-  def olFolderToDo: `28` = this.cast(28)
-  @scala.inline
-  def olPublicFoldersAllPublicFolders: `18` = this.cast(18)
+  def olPublicFoldersAllPublicFolders: `18` = 18.asInstanceOf[`18`]
 }
 

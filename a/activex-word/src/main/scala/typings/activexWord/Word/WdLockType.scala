@@ -18,14 +18,12 @@ trait WdLockType extends js.Object
 
 object WdLockType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdLockChanged: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdLockChanged: `3` = this.cast(3)
+  def wdLockEphemeral: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdLockEphemeral: `2` = this.cast(2)
+  def wdLockNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdLockNone: `0` = this.cast(0)
-  @scala.inline
-  def wdLockReservation: `1` = this.cast(1)
+  def wdLockReservation: `1` = 1.asInstanceOf[`1`]
 }
 

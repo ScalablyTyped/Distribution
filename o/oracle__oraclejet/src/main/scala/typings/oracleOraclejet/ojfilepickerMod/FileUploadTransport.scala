@@ -15,7 +15,6 @@ object FileUploadTransport {
   @scala.inline
   def apply(flush: () => Unit, queue: FileList => js.Array[ProgressItem]): FileUploadTransport = {
     val __obj = js.Dynamic.literal(flush = js.Any.fromFunction0(flush), queue = js.Any.fromFunction1(queue))
-  
     __obj.asInstanceOf[FileUploadTransport]
   }
 }

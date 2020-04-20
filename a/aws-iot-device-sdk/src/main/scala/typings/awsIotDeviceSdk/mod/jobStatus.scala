@@ -13,7 +13,6 @@ object jobStatus {
   @scala.inline
   def apply(status: String, statusDetails: statusDetails): jobStatus = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], statusDetails = statusDetails.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[jobStatus]
   }
 }

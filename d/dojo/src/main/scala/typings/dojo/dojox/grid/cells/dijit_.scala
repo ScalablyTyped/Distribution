@@ -32,7 +32,6 @@ object dijit_ {
   @scala.inline
   def apply(CheckBox: () => Unit, ComboBox: () => Unit, DateTextBox: () => Unit, Editor: () => Unit): dijit_ = {
     val __obj = js.Dynamic.literal(CheckBox = js.Any.fromFunction0(CheckBox), ComboBox = js.Any.fromFunction0(ComboBox), DateTextBox = js.Any.fromFunction0(DateTextBox), Editor = js.Any.fromFunction0(Editor))
-  
     __obj.asInstanceOf[dijit_]
   }
 }

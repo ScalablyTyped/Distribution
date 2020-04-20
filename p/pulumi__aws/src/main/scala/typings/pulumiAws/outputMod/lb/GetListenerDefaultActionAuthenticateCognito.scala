@@ -30,7 +30,6 @@ object GetListenerDefaultActionAuthenticateCognito {
     userPoolDomain: String
   ): GetListenerDefaultActionAuthenticateCognito = {
     val __obj = js.Dynamic.literal(authenticationRequestExtraParams = authenticationRequestExtraParams.asInstanceOf[js.Any], onUnauthenticatedRequest = onUnauthenticatedRequest.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], sessionCookieName = sessionCookieName.asInstanceOf[js.Any], sessionTimeout = sessionTimeout.asInstanceOf[js.Any], userPoolArn = userPoolArn.asInstanceOf[js.Any], userPoolClientId = userPoolClientId.asInstanceOf[js.Any], userPoolDomain = userPoolDomain.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetListenerDefaultActionAuthenticateCognito]
   }
 }

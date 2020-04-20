@@ -24,7 +24,6 @@ object BatchDescribeMergeConflictsError {
   @scala.inline
   def apply(exceptionName: ExceptionName, filePath: Path, message: Message): BatchDescribeMergeConflictsError = {
     val __obj = js.Dynamic.literal(exceptionName = exceptionName.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchDescribeMergeConflictsError]
   }
 }

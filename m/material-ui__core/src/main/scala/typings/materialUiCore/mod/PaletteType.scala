@@ -12,10 +12,8 @@ trait PaletteType extends js.Object
 
 object PaletteType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dark: typings.materialUiCore.materialUiCoreStrings.dark = "dark".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.dark]
   @scala.inline
-  def dark: typings.materialUiCore.materialUiCoreStrings.dark = this.cast("dark")
-  @scala.inline
-  def light: typings.materialUiCore.materialUiCoreStrings.light = this.cast("light")
+  def light: typings.materialUiCore.materialUiCoreStrings.light = "light".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.light]
 }
 

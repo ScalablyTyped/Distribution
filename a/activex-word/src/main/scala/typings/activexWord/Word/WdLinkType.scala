@@ -28,24 +28,22 @@ trait WdLinkType extends js.Object
 
 object WdLinkType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdLinkTypeChart: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def wdLinkTypeChart: `8` = this.cast(8)
+  def wdLinkTypeDDE: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdLinkTypeDDE: `6` = this.cast(6)
+  def wdLinkTypeDDEAuto: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def wdLinkTypeDDEAuto: `7` = this.cast(7)
+  def wdLinkTypeImport: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdLinkTypeImport: `5` = this.cast(5)
+  def wdLinkTypeInclude: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdLinkTypeInclude: `4` = this.cast(4)
+  def wdLinkTypeOLE: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdLinkTypeOLE: `0` = this.cast(0)
+  def wdLinkTypePicture: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdLinkTypePicture: `1` = this.cast(1)
+  def wdLinkTypeReference: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdLinkTypeReference: `3` = this.cast(3)
-  @scala.inline
-  def wdLinkTypeText: `2` = this.cast(2)
+  def wdLinkTypeText: `2` = 2.asInstanceOf[`2`]
 }
 

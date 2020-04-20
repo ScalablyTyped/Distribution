@@ -20,7 +20,6 @@ object Expression {
   @scala.inline
   def apply(raw: String, regex: RegExp): Expression = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], regex = regex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Expression]
   }
 }

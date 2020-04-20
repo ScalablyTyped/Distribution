@@ -14,7 +14,6 @@ object ActionsCancelWorkflowRunParams {
   @scala.inline
   def apply(owner: String, repo: String, run_id: Double): ActionsCancelWorkflowRunParams = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], run_id = run_id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ActionsCancelWorkflowRunParams]
   }
 }

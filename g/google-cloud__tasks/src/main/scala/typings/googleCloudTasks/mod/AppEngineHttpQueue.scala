@@ -12,7 +12,6 @@ object AppEngineHttpQueue {
   @scala.inline
   def apply(appEngineRoutingOverride: AppEngineRouting): AppEngineHttpQueue = {
     val __obj = js.Dynamic.literal(appEngineRoutingOverride = appEngineRoutingOverride.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AppEngineHttpQueue]
   }
 }

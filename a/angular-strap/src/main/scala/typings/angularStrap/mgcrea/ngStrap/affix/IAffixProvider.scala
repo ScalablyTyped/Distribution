@@ -12,7 +12,6 @@ object IAffixProvider {
   @scala.inline
   def apply(defaults: IAffixOptions): IAffixProvider = {
     val __obj = js.Dynamic.literal(defaults = defaults.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IAffixProvider]
   }
 }

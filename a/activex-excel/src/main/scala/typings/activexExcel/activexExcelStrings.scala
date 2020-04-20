@@ -518,7 +518,7 @@ object activexExcelStrings {
   @scala.inline
   def Bold: Bold = "Bold".asInstanceOf[Bold]
   @scala.inline
-  def `Bold Italic`: `Bold Italic` = "Bold Italic".asInstanceOf[`Bold Italic`]
+  def `Bold Italic`: `Bold Italic` = ("Bold Italic").asInstanceOf[`Bold Italic`]
   @scala.inline
   def Button: Button = "Button".asInstanceOf[Button]
   @scala.inline
@@ -544,7 +544,7 @@ object activexExcelStrings {
   @scala.inline
   def Everyone: Everyone = "Everyone".asInstanceOf[Everyone]
   @scala.inline
-  def `Everyone but me`: `Everyone but me` = "Everyone but me".asInstanceOf[`Everyone but me`]
+  def `Everyone but me`: `Everyone but me` = ("Everyone but me").asInstanceOf[`Everyone but me`]
   @scala.inline
   def FollowHyperlink: FollowHyperlink = "FollowHyperlink".asInstanceOf[FollowHyperlink]
   @scala.inline

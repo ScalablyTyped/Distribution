@@ -15,16 +15,14 @@ trait MenuItemContextKeys extends js.Object
 
 object MenuItemContextKeys {
   @scala.inline
-  def activeIndex: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.activeIndex = this.cast("activeIndex")
+  def activeIndex: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.activeIndex = "activeIndex".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.activeIndex]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def isOnlyResult: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.isOnlyResult = "isOnlyResult".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.isOnlyResult]
   @scala.inline
-  def isOnlyResult: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.isOnlyResult = this.cast("isOnlyResult")
+  def onActiveItemChange: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onActiveItemChange = "onActiveItemChange".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onActiveItemChange]
   @scala.inline
-  def onActiveItemChange: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onActiveItemChange = this.cast("onActiveItemChange")
+  def onInitialItemChange: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onInitialItemChange = "onInitialItemChange".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onInitialItemChange]
   @scala.inline
-  def onInitialItemChange: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onInitialItemChange = this.cast("onInitialItemChange")
-  @scala.inline
-  def onMenuItemClick: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onMenuItemClick = this.cast("onMenuItemClick")
+  def onMenuItemClick: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onMenuItemClick = "onMenuItemClick".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onMenuItemClick]
 }
 

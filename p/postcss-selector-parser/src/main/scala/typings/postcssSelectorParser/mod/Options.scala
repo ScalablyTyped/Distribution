@@ -20,7 +20,6 @@ object Options {
   @scala.inline
   def apply(lossless: Boolean, updateSelector: Boolean): Options = {
     val __obj = js.Dynamic.literal(lossless = lossless.asInstanceOf[js.Any], updateSelector = updateSelector.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Options]
   }
 }

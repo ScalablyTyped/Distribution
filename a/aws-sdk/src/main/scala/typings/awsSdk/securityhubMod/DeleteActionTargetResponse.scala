@@ -16,7 +16,6 @@ object DeleteActionTargetResponse {
   @scala.inline
   def apply(ActionTargetArn: NonEmptyString): DeleteActionTargetResponse = {
     val __obj = js.Dynamic.literal(ActionTargetArn = ActionTargetArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteActionTargetResponse]
   }
 }

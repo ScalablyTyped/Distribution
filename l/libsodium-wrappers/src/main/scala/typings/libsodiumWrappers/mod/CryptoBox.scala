@@ -14,7 +14,6 @@ object CryptoBox {
   @scala.inline
   def apply(ciphertext: Uint8Array, mac: Uint8Array): CryptoBox = {
     val __obj = js.Dynamic.literal(ciphertext = ciphertext.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CryptoBox]
   }
 }

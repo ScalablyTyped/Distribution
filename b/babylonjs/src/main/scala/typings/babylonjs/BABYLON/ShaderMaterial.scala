@@ -56,7 +56,7 @@ class ShaderMaterial protected () extends Material {
     * Gets the options used to compile the shader.
     * They can be modified to trigger a new compilation
     */
-  def options(): IShaderMaterialOptions = js.native
+  def options: IShaderMaterialOptions = js.native
   /**
     * Set a vec2 array in the shader from a number array.
     * @param name Define the name of the uniform as defined in the shader
@@ -194,7 +194,7 @@ class ShaderMaterial protected () extends Material {
     * Gets the shader path used to define the shader code
     * It can be modified to trigger a new compilation
     */
-  def shaderPath(): js.Any = js.native
+  def shaderPath: js.Any = js.native
   /**
     * Sets the shader path used to define the shader code
     * It can be modified to trigger a new compilation

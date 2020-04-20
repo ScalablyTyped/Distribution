@@ -22,7 +22,6 @@ object DesktopCapturer_ {
   @scala.inline
   def apply(getSources: SourcesOptions => js.Promise[js.Array[DesktopCapturerSource]]): DesktopCapturer_ = {
     val __obj = js.Dynamic.literal(getSources = js.Any.fromFunction1(getSources))
-  
     __obj.asInstanceOf[DesktopCapturer_]
   }
 }

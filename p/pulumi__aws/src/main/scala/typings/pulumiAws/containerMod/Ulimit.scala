@@ -15,7 +15,6 @@ object Ulimit {
   @scala.inline
   def apply(hardLimit: Double, name: UlimitName, softLimit: Double): Ulimit = {
     val __obj = js.Dynamic.literal(hardLimit = hardLimit.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], softLimit = softLimit.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Ulimit]
   }
 }

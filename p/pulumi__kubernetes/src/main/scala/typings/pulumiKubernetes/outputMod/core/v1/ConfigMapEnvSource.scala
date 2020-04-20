@@ -26,7 +26,6 @@ object ConfigMapEnvSource {
   @scala.inline
   def apply(name: String, optional: Boolean): ConfigMapEnvSource = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConfigMapEnvSource]
   }
 }

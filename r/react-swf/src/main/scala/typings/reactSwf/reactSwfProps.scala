@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactSwfProps {
   @scala.inline
-  def ReactSwfProps: Props.type = typings.reactSwf.mod.rswf.Props
+  def ReactSwfProps: Props.type = Props
   type ReactSwfProps = Props
 }
 

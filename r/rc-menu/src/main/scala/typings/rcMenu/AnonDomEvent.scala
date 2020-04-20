@@ -18,7 +18,6 @@ object AnonDomEvent {
   @scala.inline
   def apply(domEvent: (MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement], key: Key): AnonDomEvent = {
     val __obj = js.Dynamic.literal(domEvent = domEvent.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDomEvent]
   }
 }

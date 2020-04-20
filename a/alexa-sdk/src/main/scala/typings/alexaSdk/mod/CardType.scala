@@ -14,14 +14,12 @@ trait CardType extends js.Object
 
 object CardType {
   @scala.inline
-  def AskForPermissionsConsent: typings.alexaSdk.alexaSdkStrings.AskForPermissionsConsent = this.cast("AskForPermissionsConsent")
+  def AskForPermissionsConsent: typings.alexaSdk.alexaSdkStrings.AskForPermissionsConsent = "AskForPermissionsConsent".asInstanceOf[typings.alexaSdk.alexaSdkStrings.AskForPermissionsConsent]
   @scala.inline
-  def LinkAccount: typings.alexaSdk.alexaSdkStrings.LinkAccount = this.cast("LinkAccount")
+  def LinkAccount: typings.alexaSdk.alexaSdkStrings.LinkAccount = "LinkAccount".asInstanceOf[typings.alexaSdk.alexaSdkStrings.LinkAccount]
   @scala.inline
-  def Simple: typings.alexaSdk.alexaSdkStrings.Simple = this.cast("Simple")
+  def Simple: typings.alexaSdk.alexaSdkStrings.Simple = "Simple".asInstanceOf[typings.alexaSdk.alexaSdkStrings.Simple]
   @scala.inline
-  def Standard: typings.alexaSdk.alexaSdkStrings.Standard = this.cast("Standard")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Standard: typings.alexaSdk.alexaSdkStrings.Standard = "Standard".asInstanceOf[typings.alexaSdk.alexaSdkStrings.Standard]
 }
 

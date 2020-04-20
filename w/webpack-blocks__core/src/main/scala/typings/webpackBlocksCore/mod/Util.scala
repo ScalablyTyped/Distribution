@@ -21,7 +21,6 @@ object Util {
     merge: Configuration => js.Function0[Configuration]
   ): Util = {
     val __obj = js.Dynamic.literal(addLoader = js.Any.fromFunction1(addLoader), addPlugin = js.Any.fromFunction1(addPlugin), merge = js.Any.fromFunction1(merge))
-  
     __obj.asInstanceOf[Util]
   }
 }

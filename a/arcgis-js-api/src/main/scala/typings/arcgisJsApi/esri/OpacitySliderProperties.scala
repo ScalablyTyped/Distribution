@@ -22,7 +22,7 @@ trait OpacitySliderProperties extends SmartMappingSliderBaseProperties {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-OpacitySlider.html#style)
     */
-  var style: js.UndefOr[OpacitySliderStyle] = js.undefined
+  var style: js.UndefOr[OpacitySliderStyleProperties] = js.undefined
   /**
     * The view model for the OpacitySlider widget. This class contains all the logic (properties and methods) that controls this widget's behavior. See the [OpacitySliderViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-OpacitySlider-OpacitySliderViewModel.html) class to access all properties and methods on the OpacitySlider widget.
     *
@@ -46,7 +46,7 @@ object OpacitySliderProperties {
     min: Int | Double = null,
     precision: Int | Double = null,
     stops: js.Array[OpacityStopProperties] = null,
-    style: OpacitySliderStyle = null,
+    style: OpacitySliderStyleProperties = null,
     viewModel: OpacitySliderViewModelProperties = null,
     zoomOptions: SmartMappingSliderBaseZoomOptions = null
   ): OpacitySliderProperties = {

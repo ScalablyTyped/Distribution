@@ -22,7 +22,6 @@ object AnonAllowClear {
     transitionName: String
   ): AnonAllowClear = {
     val __obj = js.Dynamic.literal(allowClear = allowClear.asInstanceOf[js.Any], bordered = bordered.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], transitionName = transitionName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAllowClear]
   }
 }

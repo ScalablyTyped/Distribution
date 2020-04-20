@@ -23,7 +23,6 @@ object AnonDateSaved {
     weightSpecsBytes: Double
   ): AnonDateSaved = {
     val __obj = js.Dynamic.literal(dateSaved = dateSaved.asInstanceOf[js.Any], modelTopologyBytes = modelTopologyBytes.asInstanceOf[js.Any], modelTopologyType = modelTopologyType.asInstanceOf[js.Any], weightDataBytes = weightDataBytes.asInstanceOf[js.Any], weightSpecsBytes = weightSpecsBytes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDateSaved]
   }
 }

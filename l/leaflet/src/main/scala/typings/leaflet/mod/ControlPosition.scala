@@ -14,14 +14,12 @@ trait ControlPosition extends js.Object
 
 object ControlPosition {
   @scala.inline
-  def bottomleft: typings.leaflet.leafletStrings.bottomleft = this.cast("bottomleft")
+  def bottomleft: typings.leaflet.leafletStrings.bottomleft = "bottomleft".asInstanceOf[typings.leaflet.leafletStrings.bottomleft]
   @scala.inline
-  def bottomright: typings.leaflet.leafletStrings.bottomright = this.cast("bottomright")
+  def bottomright: typings.leaflet.leafletStrings.bottomright = "bottomright".asInstanceOf[typings.leaflet.leafletStrings.bottomright]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def topleft: typings.leaflet.leafletStrings.topleft = "topleft".asInstanceOf[typings.leaflet.leafletStrings.topleft]
   @scala.inline
-  def topleft: typings.leaflet.leafletStrings.topleft = this.cast("topleft")
-  @scala.inline
-  def topright: typings.leaflet.leafletStrings.topright = this.cast("topright")
+  def topright: typings.leaflet.leafletStrings.topright = "topright".asInstanceOf[typings.leaflet.leafletStrings.topright]
 }
 

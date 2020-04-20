@@ -13,7 +13,6 @@ object AnonHead {
   @scala.inline
   def apply(anchor: Null, head: Null): AnonHead = {
     val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHead]
   }
 }

@@ -12,7 +12,6 @@ object AnonTypecast {
   @scala.inline
   def apply(typecast: Boolean): AnonTypecast = {
     val __obj = js.Dynamic.literal(typecast = typecast.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTypecast]
   }
 }

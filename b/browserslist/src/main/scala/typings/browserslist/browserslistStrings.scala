@@ -9,6 +9,6 @@ object browserslistStrings {
   sealed trait `my stats` extends js.Object
   
   @scala.inline
-  def `my stats`: `my stats` = "my stats".asInstanceOf[`my stats`]
+  def `my stats`: `my stats` = ("my stats").asInstanceOf[`my stats`]
 }
 

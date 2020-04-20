@@ -14,7 +14,6 @@ object AnonReceived {
   @scala.inline
   def apply(received: js.Array[TransactionObject], sent: js.Array[TransactionObject]): AnonReceived = {
     val __obj = js.Dynamic.literal(received = received.asInstanceOf[js.Any], sent = sent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonReceived]
   }
 }

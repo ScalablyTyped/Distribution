@@ -12,6 +12,11 @@ trait SlicerSpec extends js.Object {
   var applyToPivotTables: js.UndefOr[Boolean] = js.undefined
   /** The background color of the slicer. */
   var backgroundColor: js.UndefOr[Color] = js.undefined
+  /**
+    * The background color of the slicer.
+    * If background_color is also set, this field takes precedence.
+    */
+  var backgroundColorStyle: js.UndefOr[ColorStyle] = js.undefined
   /** The column index in the data table on which the filter is applied to. */
   var columnIndex: js.UndefOr[Double] = js.undefined
   /** The data range of the slicer. */
@@ -34,6 +39,7 @@ object SlicerSpec {
   def apply(
     applyToPivotTables: js.UndefOr[Boolean] = js.undefined,
     backgroundColor: Color = null,
+    backgroundColorStyle: ColorStyle = null,
     columnIndex: Int | Double = null,
     dataRange: GridRange = null,
     filterCriteria: FilterCriteria = null,
@@ -44,6 +50,7 @@ object SlicerSpec {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(applyToPivotTables)) __obj.updateDynamic("applyToPivotTables")(applyToPivotTables.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (backgroundColorStyle != null) __obj.updateDynamic("backgroundColorStyle")(backgroundColorStyle.asInstanceOf[js.Any])
     if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
     if (dataRange != null) __obj.updateDynamic("dataRange")(dataRange.asInstanceOf[js.Any])
     if (filterCriteria != null) __obj.updateDynamic("filterCriteria")(filterCriteria.asInstanceOf[js.Any])

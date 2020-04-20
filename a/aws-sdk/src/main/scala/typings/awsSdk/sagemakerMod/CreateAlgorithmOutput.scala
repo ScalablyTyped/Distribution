@@ -16,7 +16,6 @@ object CreateAlgorithmOutput {
   @scala.inline
   def apply(AlgorithmArn: AlgorithmArn): CreateAlgorithmOutput = {
     val __obj = js.Dynamic.literal(AlgorithmArn = AlgorithmArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateAlgorithmOutput]
   }
 }

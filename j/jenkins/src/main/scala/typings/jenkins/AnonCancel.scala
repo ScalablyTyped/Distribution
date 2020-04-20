@@ -19,7 +19,6 @@ object AnonCancel {
     list: js.Function2[/* err */ Error, /* data */ js.Any, Unit] => Unit
   ): AnonCancel = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction2(cancel), item = js.Any.fromFunction2(item), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[AnonCancel]
   }
 }

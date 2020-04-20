@@ -28,7 +28,6 @@ object AnonEnabled {
     ]
   ): AnonEnabled = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], exclude = exclude.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnabled]
   }
 }

@@ -26,7 +26,6 @@ object PromptEventPipes {
   @scala.inline
   def apply[T](error: Observable_[FailedPromptStateData], success: Observable_[SuccessfulPromptStateData[T]]): PromptEventPipes[T] = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PromptEventPipes[T]]
   }
 }

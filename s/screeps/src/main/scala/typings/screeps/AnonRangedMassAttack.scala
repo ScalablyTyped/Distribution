@@ -14,7 +14,6 @@ object AnonRangedMassAttack {
   @scala.inline
   def apply(rangedAttack: `3`, rangedMassAttack: `3`): AnonRangedMassAttack = {
     val __obj = js.Dynamic.literal(rangedAttack = rangedAttack.asInstanceOf[js.Any], rangedMassAttack = rangedMassAttack.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRangedMassAttack]
   }
 }

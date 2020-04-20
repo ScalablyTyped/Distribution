@@ -14,7 +14,6 @@ object I2CDeviceId {
   @scala.inline
   def apply(manufacturer: Double, name: String, product: Double): I2CDeviceId = {
     val __obj = js.Dynamic.literal(manufacturer = manufacturer.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], product = product.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[I2CDeviceId]
   }
 }

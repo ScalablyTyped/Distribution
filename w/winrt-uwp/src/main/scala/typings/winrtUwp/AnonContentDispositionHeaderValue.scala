@@ -14,7 +14,6 @@ object AnonContentDispositionHeaderValue {
   @scala.inline
   def apply(contentDispositionHeaderValue: HttpContentDispositionHeaderValue, returnValue: Boolean): AnonContentDispositionHeaderValue = {
     val __obj = js.Dynamic.literal(contentDispositionHeaderValue = contentDispositionHeaderValue.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonContentDispositionHeaderValue]
   }
 }

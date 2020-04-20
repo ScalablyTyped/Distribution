@@ -26,7 +26,6 @@ object GetCredentialsResult {
     registryId: String
   ): GetCredentialsResult = {
     val __obj = js.Dynamic.literal(authorizationToken = authorizationToken.asInstanceOf[js.Any], expiresAt = expiresAt.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], proxyEndpoint = proxyEndpoint.asInstanceOf[js.Any], registryId = registryId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetCredentialsResult]
   }
 }

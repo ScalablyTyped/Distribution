@@ -19,7 +19,6 @@ object MeshbluStatic {
   @scala.inline
   def apply(createConnection: ConnectionOptions => Connection): MeshbluStatic = {
     val __obj = js.Dynamic.literal(createConnection = js.Any.fromFunction1(createConnection))
-  
     __obj.asInstanceOf[MeshbluStatic]
   }
 }

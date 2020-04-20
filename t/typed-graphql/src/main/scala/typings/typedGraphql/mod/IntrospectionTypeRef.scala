@@ -17,7 +17,6 @@ object IntrospectionTypeRef {
   @scala.inline
   def IntrospectionNamedTypeRef(kind: String, name: String): IntrospectionTypeRef = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IntrospectionTypeRef]
   }
   @scala.inline

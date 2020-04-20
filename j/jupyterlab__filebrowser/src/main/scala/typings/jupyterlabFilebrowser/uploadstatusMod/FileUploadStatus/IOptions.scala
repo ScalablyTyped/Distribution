@@ -20,7 +20,6 @@ object IOptions {
   @scala.inline
   def apply(tracker: WidgetTracker[FileBrowser]): IOptions = {
     val __obj = js.Dynamic.literal(tracker = tracker.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IOptions]
   }
 }

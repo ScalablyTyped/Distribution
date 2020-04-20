@@ -24,7 +24,6 @@ object Shape {
     startcap: BezierCap
   ): Shape = {
     val __obj = js.Dynamic.literal(back = back.asInstanceOf[js.Any], bbox = bbox.asInstanceOf[js.Any], endcap = endcap.asInstanceOf[js.Any], forward = forward.asInstanceOf[js.Any], intersections = js.Any.fromFunction1(intersections), startcap = startcap.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Shape]
   }
 }

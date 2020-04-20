@@ -37,7 +37,6 @@ object dxSankeyNode {
     title: String
   ): dxSankeyNode = {
     val __obj = js.Dynamic.literal(hideTooltip = js.Any.fromFunction0(hideTooltip), hover = js.Any.fromFunction1(hover), isHovered = js.Any.fromFunction0(isHovered), label = label.asInstanceOf[js.Any], linksIn = linksIn.asInstanceOf[js.Any], linksOut = linksOut.asInstanceOf[js.Any], showTooltip = js.Any.fromFunction0(showTooltip), title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[dxSankeyNode]
   }
 }

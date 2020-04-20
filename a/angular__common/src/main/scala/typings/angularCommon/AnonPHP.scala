@@ -14,7 +14,6 @@ object AnonPHP {
   @scala.inline
   def apply(JPY: js.Array[String], PHP: js.Array[String], USD: js.Array[String]): AnonPHP = {
     val __obj = js.Dynamic.literal(JPY = JPY.asInstanceOf[js.Any], PHP = PHP.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPHP]
   }
 }

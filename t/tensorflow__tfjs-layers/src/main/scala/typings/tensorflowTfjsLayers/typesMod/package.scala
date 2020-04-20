@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object typesMod {
   type PyJson[Keys /* <: java.lang.String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ x in Keys ]:? @tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/keras_format/types.PyJsonValue}
-    */ typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.PyJson with js.Any
+    */ typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.PyJson with org.scalablytyped.runtime.TopLevel[js.Any]
   /* Rewritten from type alias, can be one of: 
     - scala.Boolean
     - scala.Double

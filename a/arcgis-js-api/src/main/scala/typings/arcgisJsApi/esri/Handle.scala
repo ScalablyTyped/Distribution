@@ -26,7 +26,6 @@ object Handle {
     remove: () => Unit
   ): Handle = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), remove = js.Any.fromFunction0(remove))
-  
     __obj.asInstanceOf[Handle]
   }
 }

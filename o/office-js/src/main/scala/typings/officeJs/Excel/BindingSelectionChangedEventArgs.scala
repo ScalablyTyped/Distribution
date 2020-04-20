@@ -6,7 +6,11 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * Provides information about the binding that raised the SelectionChanged event.
+  * Provides information about the selection that raised the "SelectionChanged" event.
+  * 
+  * **Note**: If multiple, discontiguous cells are selected, 
+  * `Binding.onSelectionChanged` only reports row and column information for one selection.
+  * Use `Worksheet.onSelectionChanged` for multiple selected ranges.
   *
   * [Api set: ExcelApi 1.2]
   */
@@ -52,7 +56,6 @@ object BindingSelectionChangedEventArgs {
   @scala.inline
   def apply(binding: Binding, columnCount: Double, rowCount: Double, startColumn: Double, startRow: Double): BindingSelectionChangedEventArgs = {
     val __obj = js.Dynamic.literal(binding = binding.asInstanceOf[js.Any], columnCount = columnCount.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any], startColumn = startColumn.asInstanceOf[js.Any], startRow = startRow.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BindingSelectionChangedEventArgs]
   }
 }

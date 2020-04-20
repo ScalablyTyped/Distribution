@@ -33,7 +33,6 @@ object AddApplicationInputProcessingConfigurationRequest {
     InputProcessingConfiguration: InputProcessingConfiguration
   ): AddApplicationInputProcessingConfigurationRequest = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], CurrentApplicationVersionId = CurrentApplicationVersionId.asInstanceOf[js.Any], InputId = InputId.asInstanceOf[js.Any], InputProcessingConfiguration = InputProcessingConfiguration.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddApplicationInputProcessingConfigurationRequest]
   }
 }

@@ -13,7 +13,6 @@ object AnonDock {
   @scala.inline
   def apply(dock: DockPosition): AnonDock = {
     val __obj = js.Dynamic.literal(dock = dock.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDock]
   }
 }

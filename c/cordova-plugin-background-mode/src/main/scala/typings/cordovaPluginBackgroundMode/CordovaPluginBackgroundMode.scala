@@ -57,7 +57,6 @@ object CordovaPluginBackgroundMode {
     setDefaults: ICordovaPluginBackgroundModeNotificationItem => Unit
   ): CordovaPluginBackgroundMode = {
     val __obj = js.Dynamic.literal(configure = js.Any.fromFunction1(configure), disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), isActivated = js.Any.fromFunction0(isActivated), isEnabled = js.Any.fromFunction0(isEnabled), onactivate = js.Any.fromFunction0(onactivate), ondeactivate = js.Any.fromFunction0(ondeactivate), onfailure = js.Any.fromFunction1(onfailure), setDefaults = js.Any.fromFunction1(setDefaults))
-  
     __obj.asInstanceOf[CordovaPluginBackgroundMode]
   }
 }

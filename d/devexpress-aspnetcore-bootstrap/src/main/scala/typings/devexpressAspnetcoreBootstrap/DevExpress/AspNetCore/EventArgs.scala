@@ -12,7 +12,6 @@ object EventArgs {
   @scala.inline
   def apply(sender: Control): EventArgs = {
     val __obj = js.Dynamic.literal(sender = sender.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventArgs]
   }
 }

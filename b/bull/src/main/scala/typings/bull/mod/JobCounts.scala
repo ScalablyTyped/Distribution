@@ -16,7 +16,6 @@ object JobCounts {
   @scala.inline
   def apply(active: Double, completed: Double, delayed: Double, failed: Double, waiting: Double): JobCounts = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], completed = completed.asInstanceOf[js.Any], delayed = delayed.asInstanceOf[js.Any], failed = failed.asInstanceOf[js.Any], waiting = waiting.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JobCounts]
   }
 }

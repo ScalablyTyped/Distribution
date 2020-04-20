@@ -24,7 +24,6 @@ object Typeofevapi {
     set_tag: String => Double
   ): Typeofevapi = {
     val __obj = js.Dynamic.literal(async_relay = js.Any.fromFunction1(async_relay), close = js.Any.fromFunction0(close), relay = js.Any.fromFunction1(relay), relay_multicast = js.Any.fromFunction2(relay_multicast), relay_unicast = js.Any.fromFunction2(relay_unicast), set_tag = js.Any.fromFunction1(set_tag))
-  
     __obj.asInstanceOf[Typeofevapi]
   }
 }

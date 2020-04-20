@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 object gatsbyComponents extends gatsbyProps {
   @scala.inline
-  def Link[TState]: ComponentType[LinkProps[TState]] = js.constructorOf[typings.gatsby.mod.Link[TState]].asInstanceOf[typings.react.mod.ComponentType[LinkProps[TState]]]
+  def Link[TState]: ComponentType[LinkProps[TState]] = js.constructorOf[typings.gatsby.mod.Link[TState]].asInstanceOf[ComponentType[LinkProps[TState]]]
   @scala.inline
-  def PageRenderer: ComponentType[PageRendererProps] = js.constructorOf[typings.gatsby.mod.PageRenderer].asInstanceOf[typings.react.mod.ComponentType[PageRendererProps]]
+  def PageRenderer: ComponentType[PageRendererProps] = js.constructorOf[typings.gatsby.mod.PageRenderer].asInstanceOf[ComponentType[PageRendererProps]]
   @scala.inline
-  def StaticQuery[T]: ComponentType[StaticQueryProps[T]] = js.constructorOf[typings.gatsby.mod.StaticQuery[T]].asInstanceOf[typings.react.mod.ComponentType[StaticQueryProps[T]]]
+  def StaticQuery[T]: ComponentType[StaticQueryProps[T]] = js.constructorOf[typings.gatsby.mod.StaticQuery[T]].asInstanceOf[ComponentType[StaticQueryProps[T]]]
 }
 

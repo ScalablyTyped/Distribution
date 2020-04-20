@@ -27,7 +27,6 @@ object AnonIsSuccess {
   @scala.inline
   def apply(cardExt: String, cardId: String, code: String, isSuccess: Boolean): AnonIsSuccess = {
     val __obj = js.Dynamic.literal(cardExt = cardExt.asInstanceOf[js.Any], cardId = cardId.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], isSuccess = isSuccess.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsSuccess]
   }
 }

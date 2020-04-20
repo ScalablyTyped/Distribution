@@ -13,12 +13,10 @@ trait LanguageType extends js.Object
 
 object LanguageType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def es: typings.dateUtils.dateUtilsStrings.es = "es".asInstanceOf[typings.dateUtils.dateUtilsStrings.es]
   @scala.inline
-  def es: typings.dateUtils.dateUtilsStrings.es = this.cast("es")
+  def fr: typings.dateUtils.dateUtilsStrings.fr = "fr".asInstanceOf[typings.dateUtils.dateUtilsStrings.fr]
   @scala.inline
-  def fr: typings.dateUtils.dateUtilsStrings.fr = this.cast("fr")
-  @scala.inline
-  def `pt-BR`: typings.dateUtils.dateUtilsStrings.`pt-BR` = this.cast("pt-BR")
+  def `pt-BR`: typings.dateUtils.dateUtilsStrings.`pt-BR` = "pt-BR".asInstanceOf[typings.dateUtils.dateUtilsStrings.`pt-BR`]
 }
 

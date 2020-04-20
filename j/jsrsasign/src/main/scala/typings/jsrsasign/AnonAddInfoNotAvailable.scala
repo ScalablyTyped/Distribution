@@ -28,7 +28,6 @@ object AnonAddInfoNotAvailable {
     unacceptedPolicy: Double
   ): AnonAddInfoNotAvailable = {
     val __obj = js.Dynamic.literal(addInfoNotAvailable = addInfoNotAvailable.asInstanceOf[js.Any], badAlg = badAlg.asInstanceOf[js.Any], badDataFormat = badDataFormat.asInstanceOf[js.Any], badRequest = badRequest.asInstanceOf[js.Any], systemFailure = systemFailure.asInstanceOf[js.Any], timeNotAvailable = timeNotAvailable.asInstanceOf[js.Any], unacceptedExtension = unacceptedExtension.asInstanceOf[js.Any], unacceptedPolicy = unacceptedPolicy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAddInfoNotAvailable]
   }
 }

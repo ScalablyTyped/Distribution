@@ -15,7 +15,6 @@ object StopReturnType {
   @scala.inline
   def apply(profile: Profile): StopReturnType = {
     val __obj = js.Dynamic.literal(profile = profile.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopReturnType]
   }
 }

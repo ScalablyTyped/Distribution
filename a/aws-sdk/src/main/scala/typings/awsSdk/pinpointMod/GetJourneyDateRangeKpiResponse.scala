@@ -13,7 +13,6 @@ object GetJourneyDateRangeKpiResponse {
   @scala.inline
   def apply(JourneyDateRangeKpiResponse: JourneyDateRangeKpiResponse): GetJourneyDateRangeKpiResponse = {
     val __obj = js.Dynamic.literal(JourneyDateRangeKpiResponse = JourneyDateRangeKpiResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetJourneyDateRangeKpiResponse]
   }
 }

@@ -14,7 +14,6 @@ object StepFn {
   @scala.inline
   def apply(ctx: Properties, step: String): StepFn = {
     val __obj = js.Dynamic.literal(ctx = ctx.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StepFn]
   }
 }

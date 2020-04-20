@@ -12,10 +12,8 @@ trait MediaKeySessionType extends js.Object
 
 object MediaKeySessionType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `persistent-license`: typings.std.stdStrings.`persistent-license` = "persistent-license".asInstanceOf[typings.std.stdStrings.`persistent-license`]
   @scala.inline
-  def `persistent-license`: typings.std.stdStrings.`persistent-license` = this.cast("persistent-license")
-  @scala.inline
-  def temporary: typings.std.stdStrings.temporary = this.cast("temporary")
+  def temporary: typings.std.stdStrings.temporary = "temporary".asInstanceOf[typings.std.stdStrings.temporary]
 }
 

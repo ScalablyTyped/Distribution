@@ -24,7 +24,6 @@ object RunResults {
     taskId: Double
   ): RunResults = {
     val __obj = js.Dynamic.literal(capabilities = capabilities.asInstanceOf[js.Any], exitCode = exitCode.asInstanceOf[js.Any], failedCount = failedCount.asInstanceOf[js.Any], specResults = specResults.asInstanceOf[js.Any], specs = specs.asInstanceOf[js.Any], taskId = taskId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RunResults]
   }
 }

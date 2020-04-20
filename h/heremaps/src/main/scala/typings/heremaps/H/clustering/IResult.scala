@@ -40,7 +40,6 @@ object IResult {
     isCluster: () => Boolean
   ): IResult = {
     val __obj = js.Dynamic.literal(getMinZoom = js.Any.fromFunction0(getMinZoom), getPosition = js.Any.fromFunction0(getPosition), getWeight = js.Any.fromFunction0(getWeight), isCluster = js.Any.fromFunction0(isCluster))
-  
     __obj.asInstanceOf[IResult]
   }
 }

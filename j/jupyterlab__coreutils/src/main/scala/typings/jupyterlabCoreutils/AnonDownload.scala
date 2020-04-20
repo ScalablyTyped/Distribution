@@ -14,7 +14,6 @@ object AnonDownload {
   @scala.inline
   def apply(download: Boolean, format: String, path: String): AnonDownload = {
     val __obj = js.Dynamic.literal(download = download.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDownload]
   }
 }

@@ -24,7 +24,6 @@ object UpdatePrimaryEmailAddressRequest {
   @scala.inline
   def apply(Email: EmailAddress, EntityId: WorkMailIdentifier, OrganizationId: OrganizationId): UpdatePrimaryEmailAddressRequest = {
     val __obj = js.Dynamic.literal(Email = Email.asInstanceOf[js.Any], EntityId = EntityId.asInstanceOf[js.Any], OrganizationId = OrganizationId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdatePrimaryEmailAddressRequest]
   }
 }

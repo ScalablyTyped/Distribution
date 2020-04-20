@@ -35,7 +35,6 @@ object OnTypeFormattingEditProvider {
     provideOnTypeFormattingEdits: (TextDocument, Position, String, FormattingOptions, CancellationToken) => ProviderResult[js.Array[TextEdit]]
   ): OnTypeFormattingEditProvider = {
     val __obj = js.Dynamic.literal(provideOnTypeFormattingEdits = js.Any.fromFunction5(provideOnTypeFormattingEdits))
-  
     __obj.asInstanceOf[OnTypeFormattingEditProvider]
   }
 }

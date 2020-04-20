@@ -35,7 +35,6 @@ object WaveSurferUtil {
     style: (HTMLElement, StringDictionary[String]) => HTMLElement
   ): WaveSurferUtil = {
     val __obj = js.Dynamic.literal(Observer = Observer.asInstanceOf[js.Any], ajax = js.Any.fromFunction1(ajax), extend = js.Any.fromFunction2(extend), frame = js.Any.fromFunction1(frame), getId = js.Any.fromFunction0(getId), max = js.Any.fromFunction1(max), min = js.Any.fromFunction1(min), preventClick = js.Any.fromFunction0(preventClick), requestAnimationFrame = js.Any.fromFunction0(requestAnimationFrame), style = js.Any.fromFunction2(style))
-  
     __obj.asInstanceOf[WaveSurferUtil]
   }
 }

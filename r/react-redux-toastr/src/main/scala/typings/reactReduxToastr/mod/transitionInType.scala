@@ -13,12 +13,10 @@ trait transitionInType extends js.Object
 
 object transitionInType {
   @scala.inline
-  def bounceIn: typings.reactReduxToastr.reactReduxToastrStrings.bounceIn = this.cast("bounceIn")
+  def bounceIn: typings.reactReduxToastr.reactReduxToastrStrings.bounceIn = "bounceIn".asInstanceOf[typings.reactReduxToastr.reactReduxToastrStrings.bounceIn]
   @scala.inline
-  def bounceInDown: typings.reactReduxToastr.reactReduxToastrStrings.bounceInDown = this.cast("bounceInDown")
+  def bounceInDown: typings.reactReduxToastr.reactReduxToastrStrings.bounceInDown = "bounceInDown".asInstanceOf[typings.reactReduxToastr.reactReduxToastrStrings.bounceInDown]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def fadeIn: typings.reactReduxToastr.reactReduxToastrStrings.fadeIn = this.cast("fadeIn")
+  def fadeIn: typings.reactReduxToastr.reactReduxToastrStrings.fadeIn = "fadeIn".asInstanceOf[typings.reactReduxToastr.reactReduxToastrStrings.fadeIn]
 }
 

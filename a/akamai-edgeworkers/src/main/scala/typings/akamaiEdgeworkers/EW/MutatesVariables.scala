@@ -16,7 +16,6 @@ object MutatesVariables {
   @scala.inline
   def apply(setVariable: (String, String) => Unit): MutatesVariables = {
     val __obj = js.Dynamic.literal(setVariable = js.Any.fromFunction2(setVariable))
-  
     __obj.asInstanceOf[MutatesVariables]
   }
 }

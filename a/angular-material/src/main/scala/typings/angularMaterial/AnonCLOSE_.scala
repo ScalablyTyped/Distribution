@@ -12,7 +12,6 @@ object AnonCLOSE_ {
   @scala.inline
   def apply(CLOSE: String): AnonCLOSE_ = {
     val __obj = js.Dynamic.literal(CLOSE = CLOSE.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCLOSE_]
   }
 }

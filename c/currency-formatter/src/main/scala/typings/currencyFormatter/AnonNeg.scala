@@ -14,7 +14,6 @@ object AnonNeg {
   @scala.inline
   def apply(neg: String, pos: String, zero: String): AnonNeg = {
     val __obj = js.Dynamic.literal(neg = neg.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any], zero = zero.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNeg]
   }
 }

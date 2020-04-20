@@ -21,7 +21,6 @@ object LogResourcePolicyArgs {
   @scala.inline
   def apply(policyDocument: Input[String], policyName: Input[String]): LogResourcePolicyArgs = {
     val __obj = js.Dynamic.literal(policyDocument = policyDocument.asInstanceOf[js.Any], policyName = policyName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LogResourcePolicyArgs]
   }
 }

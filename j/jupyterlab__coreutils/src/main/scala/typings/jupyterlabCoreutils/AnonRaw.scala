@@ -14,7 +14,6 @@ object AnonRaw {
   @scala.inline
   def apply(raw: String, rule: RegExp): AnonRaw = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], rule = rule.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRaw]
   }
 }

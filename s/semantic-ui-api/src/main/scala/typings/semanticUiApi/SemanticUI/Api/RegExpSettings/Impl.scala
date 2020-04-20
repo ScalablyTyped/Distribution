@@ -20,7 +20,6 @@ object Impl {
   @scala.inline
   def apply(optional: RegExp, required: RegExp): Impl = {
     val __obj = js.Dynamic.literal(optional = optional.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Impl]
   }
 }

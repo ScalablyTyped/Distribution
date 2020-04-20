@@ -14,7 +14,6 @@ object AnonCancel {
   @scala.inline
   def apply(Cancel: Boolean, FolderToShare: Folder): AnonCancel = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], FolderToShare = FolderToShare.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCancel]
   }
 }

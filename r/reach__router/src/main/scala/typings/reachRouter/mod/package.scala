@@ -16,7 +16,7 @@ package object mod {
     /* props */ typings.reachRouter.mod.MatchRenderProps[TParams], 
     typings.react.mod.ReactNode
   ]
-  type Omit[T, K] = typings.std.Pick[T, typings.std.Exclude[java.lang.String, K]]
+  type Omit[T, K] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
   type RouteComponentProps[TParams] = typings.std.Partial[TParams] with typings.reachRouter.AnonDefault
   type WindowLocation = typings.std.Location_ with typings.history.mod.Location[typings.history.mod.LocationState]
 }

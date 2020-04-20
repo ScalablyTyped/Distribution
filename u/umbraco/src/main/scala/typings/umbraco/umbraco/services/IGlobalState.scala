@@ -27,7 +27,6 @@ object IGlobalState {
     touchDevice: Boolean
   ): IGlobalState = {
     val __obj = js.Dynamic.literal(isReady = isReady.asInstanceOf[js.Any], navMode = navMode.asInstanceOf[js.Any], showNavigation = showNavigation.asInstanceOf[js.Any], showTray = showTray.asInstanceOf[js.Any], stickyNavigation = stickyNavigation.asInstanceOf[js.Any], touchDevice = touchDevice.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IGlobalState]
   }
 }

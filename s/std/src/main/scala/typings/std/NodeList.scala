@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 /** NodeList objects are collections of nodes, usually returned by properties such as Node.childNodes and methods such as document.querySelectorAll(). */
 @js.native
 trait NodeList extends /* index */ NumberDictionary[Node] {
-  @JSName(scala.scalajs.js.Symbol.iterator)
+  @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[Node]] = js.native
   /**
     * Returns the number of nodes in the collection.

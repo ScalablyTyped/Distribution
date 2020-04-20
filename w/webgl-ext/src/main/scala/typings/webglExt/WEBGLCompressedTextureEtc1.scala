@@ -12,7 +12,6 @@ object WEBGLCompressedTextureEtc1 {
   @scala.inline
   def apply(COMPRESSED_RGB_ETC1_WEBGL: Double): WEBGLCompressedTextureEtc1 = {
     val __obj = js.Dynamic.literal(COMPRESSED_RGB_ETC1_WEBGL = COMPRESSED_RGB_ETC1_WEBGL.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WEBGLCompressedTextureEtc1]
   }
 }

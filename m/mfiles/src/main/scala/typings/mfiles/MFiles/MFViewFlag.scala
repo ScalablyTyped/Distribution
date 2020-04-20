@@ -14,10 +14,8 @@ trait MFViewFlag extends js.Object
 
 object MFViewFlag {
   @scala.inline
-  def Materialized: `1` = this.cast(1)
+  def Materialized: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def sNone: `0` = this.cast(0)
+  def sNone: `0` = 0.asInstanceOf[`0`]
 }
 

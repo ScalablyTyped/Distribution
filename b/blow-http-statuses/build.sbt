@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "blow-http-statuses"
-version := "0.2.4-73b9b9"
+version := "0.2.4-c290fe"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

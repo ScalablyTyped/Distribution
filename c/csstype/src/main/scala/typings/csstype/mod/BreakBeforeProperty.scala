@@ -29,44 +29,42 @@ trait BreakBeforeProperty extends js.Object
 
 object BreakBeforeProperty {
   @scala.inline
-  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = this.cast("-moz-initial")
+  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.csstype.csstypeStrings.`-moz-initial`]
   @scala.inline
-  def all: typings.csstype.csstypeStrings.all = this.cast("all")
+  def all: typings.csstype.csstypeStrings.all = "all".asInstanceOf[typings.csstype.csstypeStrings.all]
   @scala.inline
-  def always: typings.csstype.csstypeStrings.always = this.cast("always")
+  def always: typings.csstype.csstypeStrings.always = "always".asInstanceOf[typings.csstype.csstypeStrings.always]
   @scala.inline
-  def auto: typings.csstype.csstypeStrings.auto = this.cast("auto")
+  def auto: typings.csstype.csstypeStrings.auto = "auto".asInstanceOf[typings.csstype.csstypeStrings.auto]
   @scala.inline
-  def avoid: typings.csstype.csstypeStrings.avoid = this.cast("avoid")
+  def avoid: typings.csstype.csstypeStrings.avoid = "avoid".asInstanceOf[typings.csstype.csstypeStrings.avoid]
   @scala.inline
-  def `avoid-column`: typings.csstype.csstypeStrings.`avoid-column` = this.cast("avoid-column")
+  def `avoid-column`: typings.csstype.csstypeStrings.`avoid-column` = "avoid-column".asInstanceOf[typings.csstype.csstypeStrings.`avoid-column`]
   @scala.inline
-  def `avoid-page`: typings.csstype.csstypeStrings.`avoid-page` = this.cast("avoid-page")
+  def `avoid-page`: typings.csstype.csstypeStrings.`avoid-page` = "avoid-page".asInstanceOf[typings.csstype.csstypeStrings.`avoid-page`]
   @scala.inline
-  def `avoid-region`: typings.csstype.csstypeStrings.`avoid-region` = this.cast("avoid-region")
+  def `avoid-region`: typings.csstype.csstypeStrings.`avoid-region` = "avoid-region".asInstanceOf[typings.csstype.csstypeStrings.`avoid-region`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def column: typings.csstype.csstypeStrings.column = "column".asInstanceOf[typings.csstype.csstypeStrings.column]
   @scala.inline
-  def column: typings.csstype.csstypeStrings.column = this.cast("column")
+  def inherit: typings.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[typings.csstype.csstypeStrings.inherit]
   @scala.inline
-  def inherit: typings.csstype.csstypeStrings.inherit = this.cast("inherit")
+  def initial: typings.csstype.csstypeStrings.initial = "initial".asInstanceOf[typings.csstype.csstypeStrings.initial]
   @scala.inline
-  def initial: typings.csstype.csstypeStrings.initial = this.cast("initial")
+  def left: typings.csstype.csstypeStrings.left = "left".asInstanceOf[typings.csstype.csstypeStrings.left]
   @scala.inline
-  def left: typings.csstype.csstypeStrings.left = this.cast("left")
+  def page: typings.csstype.csstypeStrings.page = "page".asInstanceOf[typings.csstype.csstypeStrings.page]
   @scala.inline
-  def page: typings.csstype.csstypeStrings.page = this.cast("page")
+  def recto: typings.csstype.csstypeStrings.recto = "recto".asInstanceOf[typings.csstype.csstypeStrings.recto]
   @scala.inline
-  def recto: typings.csstype.csstypeStrings.recto = this.cast("recto")
+  def region: typings.csstype.csstypeStrings.region = "region".asInstanceOf[typings.csstype.csstypeStrings.region]
   @scala.inline
-  def region: typings.csstype.csstypeStrings.region = this.cast("region")
+  def revert: typings.csstype.csstypeStrings.revert = "revert".asInstanceOf[typings.csstype.csstypeStrings.revert]
   @scala.inline
-  def revert: typings.csstype.csstypeStrings.revert = this.cast("revert")
+  def right: typings.csstype.csstypeStrings.right = "right".asInstanceOf[typings.csstype.csstypeStrings.right]
   @scala.inline
-  def right: typings.csstype.csstypeStrings.right = this.cast("right")
+  def unset: typings.csstype.csstypeStrings.unset = "unset".asInstanceOf[typings.csstype.csstypeStrings.unset]
   @scala.inline
-  def unset: typings.csstype.csstypeStrings.unset = this.cast("unset")
-  @scala.inline
-  def verso: typings.csstype.csstypeStrings.verso = this.cast("verso")
+  def verso: typings.csstype.csstypeStrings.verso = "verso".asInstanceOf[typings.csstype.csstypeStrings.verso]
 }
 

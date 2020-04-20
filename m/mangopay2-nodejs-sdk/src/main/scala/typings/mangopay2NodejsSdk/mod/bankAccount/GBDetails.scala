@@ -30,7 +30,6 @@ object GBDetails {
   @scala.inline
   def apply(AccountNumber: String, OwnerAddress: AddressType, OwnerName: String, SortCode: String, Type: GB): GBDetails = {
     val __obj = js.Dynamic.literal(AccountNumber = AccountNumber.asInstanceOf[js.Any], OwnerAddress = OwnerAddress.asInstanceOf[js.Any], OwnerName = OwnerName.asInstanceOf[js.Any], SortCode = SortCode.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GBDetails]
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait nivoStreamProps {
   @scala.inline
-  def ResponsiveStreamProps: StreamProps.type = typings.nivoStream.mod.StreamProps
+  def ResponsiveStreamProps: StreamProps.type = StreamProps
   type ResponsiveStreamProps[T] = StreamProps[T]
   @scala.inline
   def StreamDotsItemProps: typings.nivoStream.mod.StreamDotsItemProps.type = typings.nivoStream.mod.StreamDotsItemProps

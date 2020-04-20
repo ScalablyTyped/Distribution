@@ -14,7 +14,6 @@ object ProfilerSessionEvents {
   @scala.inline
   def apply(events: js.Array[ProfilerEvent], eventsLost: Boolean, sessionId: String): ProfilerSessionEvents = {
     val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], eventsLost = eventsLost.asInstanceOf[js.Any], sessionId = sessionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProfilerSessionEvents]
   }
 }

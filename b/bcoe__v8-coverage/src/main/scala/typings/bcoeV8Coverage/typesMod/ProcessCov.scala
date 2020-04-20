@@ -12,7 +12,6 @@ object ProcessCov {
   @scala.inline
   def apply(result: js.Array[ScriptCov]): ProcessCov = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProcessCov]
   }
 }

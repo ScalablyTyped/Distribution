@@ -61,7 +61,6 @@ object AnonAgility {
     woodcutting: RankLevelXpObject
   ): AnonAgility = {
     val __obj = js.Dynamic.literal(agility = agility.asInstanceOf[js.Any], attack = attack.asInstanceOf[js.Any], construction = construction.asInstanceOf[js.Any], cooking = cooking.asInstanceOf[js.Any], crafting = crafting.asInstanceOf[js.Any], defence = defence.asInstanceOf[js.Any], farming = farming.asInstanceOf[js.Any], firemaking = firemaking.asInstanceOf[js.Any], fishing = fishing.asInstanceOf[js.Any], fletching = fletching.asInstanceOf[js.Any], herblore = herblore.asInstanceOf[js.Any], hitpoints = hitpoints.asInstanceOf[js.Any], hunter = hunter.asInstanceOf[js.Any], magic = magic.asInstanceOf[js.Any], mining = mining.asInstanceOf[js.Any], overall = overall.asInstanceOf[js.Any], prayer = prayer.asInstanceOf[js.Any], ranged = ranged.asInstanceOf[js.Any], runecraft = runecraft.asInstanceOf[js.Any], slayer = slayer.asInstanceOf[js.Any], smithing = smithing.asInstanceOf[js.Any], strength = strength.asInstanceOf[js.Any], thieving = thieving.asInstanceOf[js.Any], woodcutting = woodcutting.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAgility]
   }
 }

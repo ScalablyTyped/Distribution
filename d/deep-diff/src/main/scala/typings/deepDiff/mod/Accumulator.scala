@@ -13,7 +13,6 @@ object Accumulator {
   @scala.inline
   def apply[LHS, RHS](length: Double, push: Diff_[LHS, RHS] => Unit): Accumulator[LHS, RHS] = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], push = js.Any.fromFunction1(push))
-  
     __obj.asInstanceOf[Accumulator[LHS, RHS]]
   }
 }

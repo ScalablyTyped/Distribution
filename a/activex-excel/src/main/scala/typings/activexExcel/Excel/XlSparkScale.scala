@@ -16,12 +16,10 @@ trait XlSparkScale extends js.Object
 
 object XlSparkScale {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlSparkScaleCustom: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlSparkScaleCustom: `3` = this.cast(3)
+  def xlSparkScaleGroup: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlSparkScaleGroup: `1` = this.cast(1)
-  @scala.inline
-  def xlSparkScaleSingle: `2` = this.cast(2)
+  def xlSparkScaleSingle: `2` = 2.asInstanceOf[`2`]
 }
 

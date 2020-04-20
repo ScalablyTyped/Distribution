@@ -12,7 +12,6 @@ object AnonViewprogresss {
   @scala.inline
   def apply(view_progress_s: Double): AnonViewprogresss = {
     val __obj = js.Dynamic.literal(view_progress_s = view_progress_s.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonViewprogresss]
   }
 }

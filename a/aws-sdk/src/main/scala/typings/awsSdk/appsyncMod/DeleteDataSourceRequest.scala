@@ -20,7 +20,6 @@ object DeleteDataSourceRequest {
   @scala.inline
   def apply(apiId: String, name: ResourceName): DeleteDataSourceRequest = {
     val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteDataSourceRequest]
   }
 }

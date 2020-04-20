@@ -16,12 +16,10 @@ trait XlLinkInfo extends js.Object
 
 object XlLinkInfo {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlEditionDate: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlEditionDate: `2` = this.cast(2)
+  def xlLinkInfoStatus: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlLinkInfoStatus: `3` = this.cast(3)
-  @scala.inline
-  def xlUpdateState: `1` = this.cast(1)
+  def xlUpdateState: `1` = 1.asInstanceOf[`1`]
 }
 

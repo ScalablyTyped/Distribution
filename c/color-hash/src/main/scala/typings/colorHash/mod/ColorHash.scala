@@ -34,7 +34,6 @@ object ColorHash {
   @scala.inline
   def apply(hex: String => String, hsl: String => ColorValueArray, rgb: String => ColorValueArray): ColorHash = {
     val __obj = js.Dynamic.literal(hex = js.Any.fromFunction1(hex), hsl = js.Any.fromFunction1(hsl), rgb = js.Any.fromFunction1(rgb))
-  
     __obj.asInstanceOf[ColorHash]
   }
 }

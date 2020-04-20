@@ -32,7 +32,6 @@ object BacklogLevel {
     workItemTypes: js.Array[String]
   ): BacklogLevel = {
     val __obj = js.Dynamic.literal(categoryReferenceName = categoryReferenceName.asInstanceOf[js.Any], pluralName = pluralName.asInstanceOf[js.Any], workItemStates = workItemStates.asInstanceOf[js.Any], workItemTypes = workItemTypes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BacklogLevel]
   }
 }

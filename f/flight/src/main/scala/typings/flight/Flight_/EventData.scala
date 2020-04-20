@@ -13,7 +13,6 @@ object EventData {
   @scala.inline
   def apply(el: HTMLElement): EventData = {
     val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventData]
   }
 }

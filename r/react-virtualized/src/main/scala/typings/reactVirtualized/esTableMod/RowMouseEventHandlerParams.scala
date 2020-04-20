@@ -16,7 +16,6 @@ object RowMouseEventHandlerParams {
   @scala.inline
   def apply(event: MouseEvent[_, NativeMouseEvent], index: Double, rowData: js.Any): RowMouseEventHandlerParams = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], rowData = rowData.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RowMouseEventHandlerParams]
   }
 }

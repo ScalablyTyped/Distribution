@@ -16,7 +16,6 @@ object PutDeliveryChannelRequest {
   @scala.inline
   def apply(DeliveryChannel: DeliveryChannel): PutDeliveryChannelRequest = {
     val __obj = js.Dynamic.literal(DeliveryChannel = DeliveryChannel.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutDeliveryChannelRequest]
   }
 }

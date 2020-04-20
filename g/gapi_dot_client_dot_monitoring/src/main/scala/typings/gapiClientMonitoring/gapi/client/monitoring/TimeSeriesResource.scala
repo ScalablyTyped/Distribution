@@ -24,7 +24,6 @@ object TimeSeriesResource {
     list: AnonAggregationalignmentPeriod => Request_[ListTimeSeriesResponse]
   ): TimeSeriesResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[TimeSeriesResource]
   }
 }

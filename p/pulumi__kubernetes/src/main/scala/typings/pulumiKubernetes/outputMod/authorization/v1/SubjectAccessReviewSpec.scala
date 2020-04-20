@@ -48,7 +48,6 @@ object SubjectAccessReviewSpec {
     user: String
   ): SubjectAccessReviewSpec = {
     val __obj = js.Dynamic.literal(extra = extra.asInstanceOf[js.Any], groups = groups.asInstanceOf[js.Any], nonResourceAttributes = nonResourceAttributes.asInstanceOf[js.Any], resourceAttributes = resourceAttributes.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SubjectAccessReviewSpec]
   }
 }

@@ -172,7 +172,7 @@ object mathVectorMod extends js.Object {
     /**
       * Gets the internal data of the matrix
       */
-    def m(): DeepImmutable[Float32Array] = js.native
+    def m: DeepImmutable[Float32Array] = js.native
     /**
       * Multiply two matrices
       * @param other defines the second operand
@@ -905,7 +905,7 @@ object mathVectorMod extends js.Object {
     /**
       * Gets a boolean indicating that the vector is non uniform meaning x, y or z are not all the same
       */
-    def isNonUniform(): Boolean = js.native
+    def isNonUniform: Boolean = js.native
     /**
       * Due to float precision, scale of a mesh could be uniform but float values are off by a small fraction
       * Check if is non uniform within a certain amount of decimal places to account for this
@@ -1640,7 +1640,7 @@ object mathVectorMod extends js.Object {
     /**
       * Gets an identity matrix that must not be updated
       */
-    def IdentityReadOnly(): DeepImmutable[Matrix] = js.native
+    def IdentityReadOnly: DeepImmutable[Matrix] = js.native
     /**
       * Creates a new identity matrix and stores the result in a given matrix
       * @param result defines the target matrix
@@ -2841,7 +2841,7 @@ object mathVectorMod extends js.Object {
     /**
       * Gets a up Vector3 that must not be updated
       */
-    def UpReadOnly(): DeepImmutable[Vector3] = js.native
+    def UpReadOnly: DeepImmutable[Vector3] = js.native
     /**
       * Returns a new Vector3 set to (0.0, 0.0, 0.0)
       * @returns a new empty Vector3
@@ -2850,7 +2850,7 @@ object mathVectorMod extends js.Object {
     /**
       * Gets a zero Vector3 that must not be updated
       */
-    def ZeroReadOnly(): DeepImmutable[Vector3] = js.native
+    def ZeroReadOnly: DeepImmutable[Vector3] = js.native
     /** @hidden */
     def _UnprojectFromInvertedMatrixToRef(source: DeepImmutable[Vector3], matrix: DeepImmutable[Matrix], result: Vector3): Unit = js.native
   }

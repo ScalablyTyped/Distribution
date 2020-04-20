@@ -14,7 +14,6 @@ object EditSessionReadyParams {
   @scala.inline
   def apply(message: String, ownerUri: String, success: Boolean): EditSessionReadyParams = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], ownerUri = ownerUri.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EditSessionReadyParams]
   }
 }

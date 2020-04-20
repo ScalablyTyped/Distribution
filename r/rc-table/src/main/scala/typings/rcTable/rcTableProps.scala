@@ -27,13 +27,13 @@ trait rcTableProps {
   def HeaderProps: typings.rcTable.headerMod.HeaderProps.type = typings.rcTable.headerMod.HeaderProps
   type HeaderProps[RecordType] = typings.rcTable.headerMod.HeaderProps[RecordType]
   @scala.inline
-  def HeaderRowProps: RowProps.type = typings.rcTable.headerRowMod.RowProps
+  def HeaderRowProps: RowProps.type = RowProps
   type HeaderRowProps[RecordType] = RowProps[RecordType]
   @scala.inline
   def LibProps: typings.rcTable.tableMod.TableProps.type = typings.rcTable.tableMod.TableProps
   type LibProps[RecordType] = typings.rcTable.tableMod.TableProps[RecordType]
   @scala.inline
-  def PanelProps: TitleProps.type = typings.rcTable.panelMod.TitleProps
+  def PanelProps: TitleProps.type = TitleProps
   type PanelProps = TitleProps
   @scala.inline
   def TableProps: typings.rcTable.tableMod.TableProps.type = typings.rcTable.tableMod.TableProps

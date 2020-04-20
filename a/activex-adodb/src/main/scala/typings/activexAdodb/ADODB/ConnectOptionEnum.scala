@@ -14,10 +14,8 @@ trait ConnectOptionEnum extends js.Object
 
 object ConnectOptionEnum {
   @scala.inline
-  def adAsyncConnect: `16` = this.cast(16)
+  def adAsyncConnect: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def adConnectUnspecified: `-1` = this.cast(-1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def adConnectUnspecified: `-1` = -1.asInstanceOf[`-1`]
 }
 

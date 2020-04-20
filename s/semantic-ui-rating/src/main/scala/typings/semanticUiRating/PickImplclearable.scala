@@ -14,7 +14,6 @@ object PickImplclearable {
   @scala.inline
   def apply(clearable: auto | Boolean): PickImplclearable = {
     val __obj = js.Dynamic.literal(clearable = clearable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplclearable]
   }
 }

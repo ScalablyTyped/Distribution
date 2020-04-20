@@ -15,7 +15,6 @@ object BiosData {
   @scala.inline
   def apply(releaseDate: String, revision: String, vendor: String, version: String): BiosData = {
     val __obj = js.Dynamic.literal(releaseDate = releaseDate.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any], vendor = vendor.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BiosData]
   }
 }

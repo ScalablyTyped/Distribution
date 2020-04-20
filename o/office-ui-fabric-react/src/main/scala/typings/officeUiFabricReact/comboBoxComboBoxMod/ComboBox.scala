@@ -49,7 +49,7 @@ class ComboBox protected ()
     * @returns the id of the current focused combo item, otherwise the id of the currently selected element,
     * null otherwise
     */
-  var _getAriaActiveDescentValue: js.Any = js.native
+  var _getAriaActiveDescendantValue: js.Any = js.native
   /**
     * Get the aria autocomplete value for the Combobox
     * @returns 'inline' if auto-complete automatically dynamic, 'both' if we have a list of possible values to pick from

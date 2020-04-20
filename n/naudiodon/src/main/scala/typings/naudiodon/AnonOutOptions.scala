@@ -13,7 +13,6 @@ object AnonOutOptions {
   @scala.inline
   def apply(outOptions: AudioOptions): AnonOutOptions = {
     val __obj = js.Dynamic.literal(outOptions = outOptions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOutOptions]
   }
 }

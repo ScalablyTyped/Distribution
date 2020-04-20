@@ -19,7 +19,6 @@ object IOptions {
   @scala.inline
   def apply(commands: CommandRegistry): IOptions = {
     val __obj = js.Dynamic.literal(commands = commands.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IOptions]
   }
 }

@@ -24,7 +24,6 @@ object AuthorizeCacheSecurityGroupIngressMessage {
   @scala.inline
   def apply(CacheSecurityGroupName: String, EC2SecurityGroupName: String, EC2SecurityGroupOwnerId: String): AuthorizeCacheSecurityGroupIngressMessage = {
     val __obj = js.Dynamic.literal(CacheSecurityGroupName = CacheSecurityGroupName.asInstanceOf[js.Any], EC2SecurityGroupName = EC2SecurityGroupName.asInstanceOf[js.Any], EC2SecurityGroupOwnerId = EC2SecurityGroupOwnerId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AuthorizeCacheSecurityGroupIngressMessage]
   }
 }

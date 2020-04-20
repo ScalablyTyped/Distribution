@@ -9,12 +9,13 @@ package object libIslotsMod {
   type ExtractShorthand[TUnion] = java.lang.String | scala.Double | scala.Boolean
   type ISlotDefinition[TSlots] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ slot in keyof TSlots ]: react.react.ElementType<@uifabric/foundation.@uifabric/foundation/lib/ISlots.ExtractProps<TSlots[slot]>>}
-    */ typings.uifabricFoundation.uifabricFoundationStrings.ISlotDefinition with TSlots
-  type ISlotFactory[TProps /* <: typings.uifabricFoundation.libIslotsMod.ValidProps */, TShorthandProp /* <: typings.uifabricFoundation.libIslotsMod.ValidShorthand */] = js.Function4[
+    */ typings.uifabricFoundation.uifabricFoundationStrings.ISlotDefinition with org.scalablytyped.runtime.TopLevel[TSlots]
+  type ISlotFactory[TProps /* <: typings.uifabricFoundation.libIslotsMod.ValidProps */, TShorthandProp /* <: typings.uifabricFoundation.libIslotsMod.ValidShorthand */] = js.Function5[
     /* componentProps */ TProps with typings.uifabricFoundation.libIslotsMod.IProcessedSlotProps, 
     /* userProps */ typings.uifabricFoundation.libIslotsMod.ISlotProp[TProps, TShorthandProp], 
     /* slotOptions */ js.UndefOr[typings.uifabricFoundation.libIslotsMod.ISlotOptions[TProps]], 
     /* defaultStyles */ typings.uifabricMergeStyles.istyleMod.IStyle, 
+    /* theme */ js.UndefOr[typings.uifabricStyling.ithemeMod.ITheme], 
     typings.std.ReturnType[typings.react.mod.FunctionComponent[TProps]]
   ]
   type ISlotProp[TProps /* <: typings.uifabricFoundation.libIslotsMod.ValidProps */, TShorthandProp /* <: typings.uifabricFoundation.libIslotsMod.ValidShorthand */] = TShorthandProp | TProps
@@ -25,7 +26,7 @@ package object libIslotsMod {
   ]
   type ISlots[TSlots] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ slot in keyof TSlots ]: @uifabric/foundation.@uifabric/foundation/lib/ISlots.ISlot<@uifabric/foundation.@uifabric/foundation/lib/ISlots.ExtractProps<TSlots[slot]>>}
-    */ typings.uifabricFoundation.uifabricFoundationStrings.ISlots with TSlots
+    */ typings.uifabricFoundation.uifabricFoundationStrings.ISlots with org.scalablytyped.runtime.TopLevel[TSlots]
   type ISlottableComponentType[TProps /* <: typings.uifabricFoundation.libIslotsMod.ValidProps */, TShorthandProp /* <: typings.uifabricFoundation.libIslotsMod.ValidShorthand */] = typings.react.mod.ComponentType[TProps] with (typings.uifabricFoundation.libIslotsMod.ISlotCreator[TProps, TShorthandProp])
   type ISlottableProps[TSlots] = TSlots with typings.uifabricFoundation.AnonSlots[TSlots]
   type ISlottableReactType[TProps /* <: typings.uifabricFoundation.libIslotsMod.ValidProps */, TShorthandProp /* <: typings.uifabricFoundation.libIslotsMod.ValidShorthand */] = typings.react.mod.ElementType[TProps] with (typings.uifabricFoundation.libIslotsMod.ISlotCreator[TProps, TShorthandProp])

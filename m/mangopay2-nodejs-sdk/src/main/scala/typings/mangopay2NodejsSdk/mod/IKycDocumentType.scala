@@ -27,7 +27,6 @@ object IKycDocumentType {
     ShareholderDeclaration: SHAREHOLDER_DECLARATION
   ): IKycDocumentType = {
     val __obj = js.Dynamic.literal(AddressProof = AddressProof.asInstanceOf[js.Any], ArticlesOfAssociation = ArticlesOfAssociation.asInstanceOf[js.Any], IdentityProof = IdentityProof.asInstanceOf[js.Any], RegistrationProof = RegistrationProof.asInstanceOf[js.Any], ShareholderDeclaration = ShareholderDeclaration.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IKycDocumentType]
   }
 }

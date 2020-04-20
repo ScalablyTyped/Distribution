@@ -14,7 +14,6 @@ object ValidationError {
   @scala.inline
   def apply(attribute: String, code: String, message: String): ValidationError = {
     val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ValidationError]
   }
 }

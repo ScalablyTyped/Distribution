@@ -15,7 +15,6 @@ object TreeViewExpansionEvent {
   @scala.inline
   def apply[T](element: T): TreeViewExpansionEvent[T] = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TreeViewExpansionEvent[T]]
   }
 }

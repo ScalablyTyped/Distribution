@@ -21,7 +21,6 @@ object SnapshotScheduleAssociationArgs {
   @scala.inline
   def apply(clusterIdentifier: Input[String], scheduleIdentifier: Input[String]): SnapshotScheduleAssociationArgs = {
     val __obj = js.Dynamic.literal(clusterIdentifier = clusterIdentifier.asInstanceOf[js.Any], scheduleIdentifier = scheduleIdentifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SnapshotScheduleAssociationArgs]
   }
 }

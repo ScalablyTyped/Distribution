@@ -40,7 +40,7 @@ object Query extends js.Object {
     * @private
     */
   var validateQueryEndpoints_ : js.Any = js.native
-  def __referenceConstructor(): Instantiable2[/* repo */ Repo, /* path */ Path, typings.firebaseDatabase.queryMod.Query] = js.native
+  def __referenceConstructor: Instantiable2[/* repo */ Repo, /* path */ Path, typings.firebaseDatabase.queryMod.Query] = js.native
   def __referenceConstructor(`val`: Instantiable2[/* repo */ Repo, /* path */ Path, typings.firebaseDatabase.queryMod.Query]): js.Any = js.native
 }
 

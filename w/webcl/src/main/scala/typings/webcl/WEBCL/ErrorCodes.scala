@@ -107,104 +107,102 @@ trait ErrorCodes extends js.Object
 
 object ErrorCodes {
   @scala.inline
-  def BUILD_PROGRAM_FAILURE: `-11` = this.cast(-11)
+  def BUILD_PROGRAM_FAILURE: `-11` = -11.asInstanceOf[`-11`]
   @scala.inline
-  def COMPILER_NOT_AVAILABLE: `-3` = this.cast(-3)
+  def COMPILER_NOT_AVAILABLE: `-3` = -3.asInstanceOf[`-3`]
   @scala.inline
-  def DEVICE_NOT_AVAILABLE: `-2` = this.cast(-2)
+  def DEVICE_NOT_AVAILABLE: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def DEVICE_NOT_FOUND: `-1` = this.cast(-1)
+  def DEVICE_NOT_FOUND: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def EXEC_STATUS_ERROR_FOR_EVENTS_IN_WAIT_LIST: `-14` = this.cast(-14)
+  def EXEC_STATUS_ERROR_FOR_EVENTS_IN_WAIT_LIST: `-14` = -14.asInstanceOf[`-14`]
   @scala.inline
-  def IMAGE_FORMAT_MISMATCH: `-9` = this.cast(-9)
+  def IMAGE_FORMAT_MISMATCH: `-9` = -9.asInstanceOf[`-9`]
   @scala.inline
-  def IMAGE_FORMAT_NOT_SUPPORTED: `-10` = this.cast(-10)
+  def IMAGE_FORMAT_NOT_SUPPORTED: `-10` = -10.asInstanceOf[`-10`]
   @scala.inline
-  def INVALID_ARG_INDEX: `-49` = this.cast(-49)
+  def INVALID_ARG_INDEX: `-49` = -49.asInstanceOf[`-49`]
   @scala.inline
-  def INVALID_ARG_SIZE: `-51` = this.cast(-51)
+  def INVALID_ARG_SIZE: `-51` = -51.asInstanceOf[`-51`]
   @scala.inline
-  def INVALID_ARG_VALUE: `-50` = this.cast(-50)
+  def INVALID_ARG_VALUE: `-50` = -50.asInstanceOf[`-50`]
   @scala.inline
-  def INVALID_BINARY: `-42` = this.cast(-42)
+  def INVALID_BINARY: `-42` = -42.asInstanceOf[`-42`]
   //INVALID_GL_OBJECT                         = -60, // moved to extension
   @scala.inline
-  def INVALID_BUFFER_SIZE: `-61` = this.cast(-61)
+  def INVALID_BUFFER_SIZE: `-61` = -61.asInstanceOf[`-61`]
   @scala.inline
-  def INVALID_BUILD_OPTIONS: `-43` = this.cast(-43)
+  def INVALID_BUILD_OPTIONS: `-43` = -43.asInstanceOf[`-43`]
   @scala.inline
-  def INVALID_COMMAND_QUEUE: `-36` = this.cast(-36)
+  def INVALID_COMMAND_QUEUE: `-36` = -36.asInstanceOf[`-36`]
   @scala.inline
-  def INVALID_CONTEXT: `-34` = this.cast(-34)
+  def INVALID_CONTEXT: `-34` = -34.asInstanceOf[`-34`]
   @scala.inline
-  def INVALID_DEVICE: `-33` = this.cast(-33)
+  def INVALID_DEVICE: `-33` = -33.asInstanceOf[`-33`]
   @scala.inline
-  def INVALID_DEVICE_TYPE: `-31` = this.cast(-31)
+  def INVALID_DEVICE_TYPE: `-31` = -31.asInstanceOf[`-31`]
   @scala.inline
-  def INVALID_EVENT: `-58` = this.cast(-58)
+  def INVALID_EVENT: `-58` = -58.asInstanceOf[`-58`]
   @scala.inline
-  def INVALID_EVENT_WAIT_LIST: `-57` = this.cast(-57)
+  def INVALID_EVENT_WAIT_LIST: `-57` = -57.asInstanceOf[`-57`]
   @scala.inline
-  def INVALID_GLOBAL_OFFSET: `-56` = this.cast(-56)
+  def INVALID_GLOBAL_OFFSET: `-56` = -56.asInstanceOf[`-56`]
   //INVALID_MIP_LEVEL                         = -62, // moved to extension
   @scala.inline
-  def INVALID_GLOBAL_WORK_SIZE: `-63` = this.cast(-63)
+  def INVALID_GLOBAL_WORK_SIZE: `-63` = -63.asInstanceOf[`-63`]
   @scala.inline
-  def INVALID_HOST_PTR: `-37` = this.cast(-37)
+  def INVALID_HOST_PTR: `-37` = -37.asInstanceOf[`-37`]
   @scala.inline
-  def INVALID_IMAGE_FORMAT_DESCRIPTOR: `-39` = this.cast(-39)
+  def INVALID_IMAGE_FORMAT_DESCRIPTOR: `-39` = -39.asInstanceOf[`-39`]
   @scala.inline
-  def INVALID_IMAGE_SIZE: `-40` = this.cast(-40)
+  def INVALID_IMAGE_SIZE: `-40` = -40.asInstanceOf[`-40`]
   @scala.inline
-  def INVALID_KERNEL: `-48` = this.cast(-48)
+  def INVALID_KERNEL: `-48` = -48.asInstanceOf[`-48`]
   @scala.inline
-  def INVALID_KERNEL_ARGS: `-52` = this.cast(-52)
+  def INVALID_KERNEL_ARGS: `-52` = -52.asInstanceOf[`-52`]
   @scala.inline
-  def INVALID_KERNEL_DEFINITION: `-47` = this.cast(-47)
+  def INVALID_KERNEL_DEFINITION: `-47` = -47.asInstanceOf[`-47`]
   @scala.inline
-  def INVALID_KERNEL_NAME: `-46` = this.cast(-46)
+  def INVALID_KERNEL_NAME: `-46` = -46.asInstanceOf[`-46`]
   @scala.inline
-  def INVALID_MEM_OBJECT: `-38` = this.cast(-38)
+  def INVALID_MEM_OBJECT: `-38` = -38.asInstanceOf[`-38`]
   @scala.inline
-  def INVALID_OPERATION: `-59` = this.cast(-59)
+  def INVALID_OPERATION: `-59` = -59.asInstanceOf[`-59`]
   @scala.inline
-  def INVALID_PLATFORM: `-32` = this.cast(-32)
+  def INVALID_PLATFORM: `-32` = -32.asInstanceOf[`-32`]
   @scala.inline
-  def INVALID_PROGRAM: `-44` = this.cast(-44)
+  def INVALID_PROGRAM: `-44` = -44.asInstanceOf[`-44`]
   @scala.inline
-  def INVALID_PROGRAM_EXECUTABLE: `-45` = this.cast(-45)
+  def INVALID_PROGRAM_EXECUTABLE: `-45` = -45.asInstanceOf[`-45`]
   @scala.inline
-  def INVALID_PROPERTY: `-64` = this.cast(-64)
+  def INVALID_PROPERTY: `-64` = -64.asInstanceOf[`-64`]
   @scala.inline
-  def INVALID_QUEUE_PROPERTIES: `-35` = this.cast(-35)
+  def INVALID_QUEUE_PROPERTIES: `-35` = -35.asInstanceOf[`-35`]
   @scala.inline
-  def INVALID_SAMPLER: `-41` = this.cast(-41)
+  def INVALID_SAMPLER: `-41` = -41.asInstanceOf[`-41`]
   @scala.inline
-  def INVALID_VALUE: `-30` = this.cast(-30)
+  def INVALID_VALUE: `-30` = -30.asInstanceOf[`-30`]
   @scala.inline
-  def INVALID_WORK_DIMENSION: `-53` = this.cast(-53)
+  def INVALID_WORK_DIMENSION: `-53` = -53.asInstanceOf[`-53`]
   @scala.inline
-  def INVALID_WORK_GROUP_SIZE: `-54` = this.cast(-54)
+  def INVALID_WORK_GROUP_SIZE: `-54` = -54.asInstanceOf[`-54`]
   @scala.inline
-  def INVALID_WORK_ITEM_SIZE: `-55` = this.cast(-55)
+  def INVALID_WORK_ITEM_SIZE: `-55` = -55.asInstanceOf[`-55`]
   @scala.inline
-  def MAP_FAILURE: `-12` = this.cast(-12)
+  def MAP_FAILURE: `-12` = -12.asInstanceOf[`-12`]
   @scala.inline
-  def MEM_COPY_OVERLAP: `-8` = this.cast(-8)
+  def MEM_COPY_OVERLAP: `-8` = -8.asInstanceOf[`-8`]
   @scala.inline
-  def MEM_OBJECT_ALLOCATION_FAILURE: `-4` = this.cast(-4)
+  def MEM_OBJECT_ALLOCATION_FAILURE: `-4` = -4.asInstanceOf[`-4`]
   @scala.inline
-  def MISALIGNED_SUB_BUFFER_OFFSET: `-13` = this.cast(-13)
+  def MISALIGNED_SUB_BUFFER_OFFSET: `-13` = -13.asInstanceOf[`-13`]
   @scala.inline
-  def OUT_OF_HOST_MEMORY: `-6` = this.cast(-6)
+  def OUT_OF_HOST_MEMORY: `-6` = -6.asInstanceOf[`-6`]
   @scala.inline
-  def OUT_OF_RESOURCES: `-5` = this.cast(-5)
+  def OUT_OF_RESOURCES: `-5` = -5.asInstanceOf[`-5`]
   @scala.inline
-  def PROFILING_INFO_NOT_AVAILABLE: `-7` = this.cast(-7)
+  def PROFILING_INFO_NOT_AVAILABLE: `-7` = -7.asInstanceOf[`-7`]
   @scala.inline
-  def SUCCESS: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SUCCESS: `0` = 0.asInstanceOf[`0`]
 }
 

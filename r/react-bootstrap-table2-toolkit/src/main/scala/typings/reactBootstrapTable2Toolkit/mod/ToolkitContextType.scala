@@ -23,7 +23,6 @@ object ToolkitContextType {
     searchProps: InjectedSearchProps
   ): ToolkitContextType = {
     val __obj = js.Dynamic.literal(baseProps = baseProps.asInstanceOf[js.Any], columnToggleProps = columnToggleProps.asInstanceOf[js.Any], csvProps = csvProps.asInstanceOf[js.Any], searchProps = searchProps.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ToolkitContextType]
   }
 }

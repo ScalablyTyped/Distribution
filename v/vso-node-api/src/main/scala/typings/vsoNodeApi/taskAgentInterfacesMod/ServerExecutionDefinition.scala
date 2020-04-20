@@ -12,7 +12,6 @@ object ServerExecutionDefinition {
   @scala.inline
   def apply(events: JobEventsConfig): ServerExecutionDefinition = {
     val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ServerExecutionDefinition]
   }
 }

@@ -13,7 +13,6 @@ object IBunyanData {
   @scala.inline
   def apply(level: Double, result: String): IBunyanData = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IBunyanData]
   }
 }

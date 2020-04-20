@@ -14,7 +14,6 @@ object AnonValueBoolean {
   @scala.inline
   def apply(originalEvent: Event_, value: Boolean): AnonValueBoolean = {
     val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonValueBoolean]
   }
 }

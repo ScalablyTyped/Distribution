@@ -13,7 +13,6 @@ object PickImplsaveRemoteData {
   @scala.inline
   def apply(saveRemoteData: Boolean): PickImplsaveRemoteData = {
     val __obj = js.Dynamic.literal(saveRemoteData = saveRemoteData.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplsaveRemoteData]
   }
 }

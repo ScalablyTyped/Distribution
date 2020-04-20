@@ -14,7 +14,6 @@ object UserAgentNewRtcSessionEvent {
   @scala.inline
   def apply(originator: String, request: IncomingRequest | OutgoingRequest, session: RTCSession): UserAgentNewRtcSessionEvent = {
     val __obj = js.Dynamic.literal(originator = originator.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UserAgentNewRtcSessionEvent]
   }
 }

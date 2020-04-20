@@ -16,7 +16,6 @@ object DescribeChapCredentialsInput {
   @scala.inline
   def apply(TargetARN: TargetARN): DescribeChapCredentialsInput = {
     val __obj = js.Dynamic.literal(TargetARN = TargetARN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeChapCredentialsInput]
   }
 }

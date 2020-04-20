@@ -80,15 +80,15 @@ object nativepagesMod extends js.Object {
       ) = this()
       @JSName("model")
       var model_FBottomBarItem: IModel = js.native
-      def action(): ClientAction = js.native
+      def action: ClientAction = js.native
       def action(newValue: ClientAction): js.Any = js.native
-      def caption(): Text = js.native
+      def caption: Text = js.native
       def caption(newValue: Text): js.Any = js.native
-      def containerAsNativeNavigationProfile(): NativeNavigationProfile = js.native
+      def containerAsNativeNavigationProfile: NativeNavigationProfile = js.native
       def icon(): js.Any = js.native
       def icon(newValue: Icon): js.Any = js.native
       @JSName("icon")
-      def icon_Union(): Icon | Null = js.native
+      def icon_Union: Icon | Null = js.native
     }
     
     /**
@@ -136,15 +136,15 @@ object nativepagesMod extends js.Object {
       @JSName("model")
       var model_FNativeLayout: IModel = js.native
       @JSName("containerAsFolderBase")
-      def containerAsFolderBase_MNativeLayout(): FolderBase = js.native
+      def containerAsFolderBase_MNativeLayout: FolderBase = js.native
       def headerWidget(): js.Any = js.native
       def headerWidget(newValue: Widget): js.Any = js.native
       /**
         * In version 7.22.0: introduced
         */
       @JSName("headerWidget")
-      def headerWidget_Union(): Widget | Null = js.native
-      def widgets(): IList[Widget] = js.native
+      def headerWidget_Union: Widget | Null = js.native
+      def widgets: IList[Widget] = js.native
     }
     
     /**
@@ -165,11 +165,11 @@ object nativepagesMod extends js.Object {
       ) = this()
       @JSName("model")
       var model_FNativeLayoutCallArgument: IModel = js.native
-      def containerAsNativePage(): NativePage = js.native
-      def parameter(): ILayoutParameter = js.native
+      def containerAsNativePage: NativePage = js.native
+      def parameter: ILayoutParameter = js.native
       def parameter(newValue: ILayoutParameter): js.Any = js.native
-      def parameterQualifiedName(): String = js.native
-      def widgets(): IList[Widget] = js.native
+      def parameterQualifiedName: String = js.native
+      def widgets: IList[Widget] = js.native
     }
     
     /**
@@ -203,15 +203,15 @@ object nativepagesMod extends js.Object {
         *
         * In version 7.23.0: introduced
         */
-      def arguments(): IList[NativeLayoutCallArgument] = js.native
+      def arguments: IList[NativeLayoutCallArgument] = js.native
       @JSName("containerAsFolderBase")
-      def containerAsFolderBase_MNativePage(): FolderBase = js.native
+      def containerAsFolderBase_MNativePage: FolderBase = js.native
       /**
         * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
         */
-      def layout(): INativeLayout = js.native
+      def layout: INativeLayout = js.native
       def layout(newValue: INativeLayout): js.Any = js.native
-      def layoutQualifiedName(): String = js.native
+      def layoutQualifiedName: String = js.native
     }
     
     /**
@@ -234,12 +234,12 @@ object nativepagesMod extends js.Object {
       var model_FNativePageClientAction: IModel = js.native
       def page(): js.Any = js.native
       def page(newValue: INativePage): js.Any = js.native
-      def pageQualifiedName(): String | Null = js.native
+      def pageQualifiedName: String | Null = js.native
       /**
         * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
         */
       @JSName("page")
-      def page_Union(): INativePage | Null = js.native
+      def page_Union: INativePage | Null = js.native
     }
     
     /**

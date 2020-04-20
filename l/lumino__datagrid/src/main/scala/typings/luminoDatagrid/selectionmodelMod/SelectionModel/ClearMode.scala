@@ -16,12 +16,10 @@ trait ClearMode extends js.Object
 
 object ClearMode {
   @scala.inline
-  def all: typings.luminoDatagrid.luminoDatagridStrings.all = this.cast("all")
+  def all: typings.luminoDatagrid.luminoDatagridStrings.all = "all".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.all]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def current: typings.luminoDatagrid.luminoDatagridStrings.current = "current".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.current]
   @scala.inline
-  def current: typings.luminoDatagrid.luminoDatagridStrings.current = this.cast("current")
-  @scala.inline
-  def none: typings.luminoDatagrid.luminoDatagridStrings.none = this.cast("none")
+  def none: typings.luminoDatagrid.luminoDatagridStrings.none = "none".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.none]
 }
 

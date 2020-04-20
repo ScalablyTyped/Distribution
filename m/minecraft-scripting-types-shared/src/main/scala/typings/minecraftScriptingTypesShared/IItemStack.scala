@@ -28,7 +28,6 @@ object IItemStack {
   @scala.inline
   def apply(__identifier__ : String, __type__ : item_stack, count: Double, item: String): IItemStack = {
     val __obj = js.Dynamic.literal(__identifier__ = __identifier__.asInstanceOf[js.Any], __type__ = __type__.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IItemStack]
   }
 }

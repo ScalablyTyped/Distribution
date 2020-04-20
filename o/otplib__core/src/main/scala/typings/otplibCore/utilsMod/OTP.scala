@@ -49,7 +49,7 @@ class OTP[T /* <: OTPOptions */] () extends js.Object {
     * - The options **getter** will return all [[_options]],
     * including those set into [[_defaultOptions]].
     */
-  def options(): Partial[T] = js.native
+  def options: Partial[T] = js.native
   /**
     * - The options **setter** sets values into [[_options]].
     */

@@ -14,7 +14,6 @@ object RsaPSSSignParams {
   @scala.inline
   def apply(hash: AlgorithmIdentifier, name: String, saltLength: Double): RsaPSSSignParams = {
     val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], saltLength = saltLength.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RsaPSSSignParams]
   }
 }

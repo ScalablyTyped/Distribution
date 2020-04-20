@@ -177,10 +177,16 @@ object olStrings {
   sealed trait default extends js.Object
   
   @js.native
+  sealed trait drawabort extends js.Object
+  
+  @js.native
   sealed trait drawend extends js.Object
   
   @js.native
   sealed trait drawstart extends js.Object
+  
+  @js.native
+  sealed trait enterfullscreen extends js.Object
   
   @js.native
   sealed trait error extends js.Object
@@ -205,6 +211,9 @@ object olStrings {
   
   @js.native
   sealed trait imageloadstart extends js.Object
+  
+  @js.native
+  sealed trait leavefullscreen extends js.Object
   
   @js.native
   sealed trait modifyend extends js.Object
@@ -399,9 +408,13 @@ object olStrings {
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   @scala.inline
+  def drawabort: drawabort = "drawabort".asInstanceOf[drawabort]
+  @scala.inline
   def drawend: drawend = "drawend".asInstanceOf[drawend]
   @scala.inline
   def drawstart: drawstart = "drawstart".asInstanceOf[drawstart]
+  @scala.inline
+  def enterfullscreen: enterfullscreen = "enterfullscreen".asInstanceOf[enterfullscreen]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
@@ -418,6 +431,8 @@ object olStrings {
   def imageloaderror: imageloaderror = "imageloaderror".asInstanceOf[imageloaderror]
   @scala.inline
   def imageloadstart: imageloadstart = "imageloadstart".asInstanceOf[imageloadstart]
+  @scala.inline
+  def leavefullscreen: leavefullscreen = "leavefullscreen".asInstanceOf[leavefullscreen]
   @scala.inline
   def modifyend: modifyend = "modifyend".asInstanceOf[modifyend]
   @scala.inline

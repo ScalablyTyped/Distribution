@@ -26,21 +26,21 @@ class NavigationListItem protected () extends ActionItem {
   /**
     * In version 8.0.0: introduced
     */
-  def appearance(): Appearance = js.native
+  def appearance: Appearance = js.native
   def appearance(newValue: Appearance): js.Any = js.native
   /**
     * In version 8.0.0: deleted
     */
-  def `class`(): String = js.native
+  def `class`: String = js.native
   def `class`(newValue: String): js.Any = js.native
   def conditionalVisibilitySettings(): js.Any = js.native
   def conditionalVisibilitySettings(newValue: ConditionalVisibilitySettings): js.Any = js.native
   @JSName("conditionalVisibilitySettings")
-  def conditionalVisibilitySettings_Union(): ConditionalVisibilitySettings | Null = js.native
+  def conditionalVisibilitySettings_Union: ConditionalVisibilitySettings | Null = js.native
   /**
     * In version 8.0.0: deleted
     */
-  def style(): String = js.native
+  def style: String = js.native
   def style(newValue: String): js.Any = js.native
   def widget(): js.Any = js.native
   def widget(newValue: Widget): js.Any = js.native
@@ -48,11 +48,11 @@ class NavigationListItem protected () extends ActionItem {
     * In version 7.15.0: deleted
     */
   @JSName("widget")
-  def widget_Union(): Widget | Null = js.native
+  def widget_Union: Widget | Null = js.native
   /**
     * In version 7.15.0: introduced
     */
-  def widgets(): IList[Widget] = js.native
+  def widgets: IList[Widget] = js.native
 }
 
 /* static members */

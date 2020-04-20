@@ -20,7 +20,7 @@ class CreateIntentRequest () extends ICreateIntentRequest {
   def this(properties: ICreateIntentRequest) = this()
   /** CreateIntentRequest intentView. */
   @JSName("intentView")
-  var intentView_CreateIntentRequest: IntentView | String = js.native
+  var intentView_CreateIntentRequest: IntentView | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.IntentView * / any */ String) = js.native
   /** CreateIntentRequest languageCode. */
   @JSName("languageCode")
   var languageCode_CreateIntentRequest: String = js.native

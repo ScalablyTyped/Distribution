@@ -16,7 +16,6 @@ object TypeofPolly {
   @scala.inline
   def apply(Presigner: Instantiable0[Presigner], Types: TypeofPolly): TypeofPolly = {
     val __obj = js.Dynamic.literal(Presigner = Presigner.asInstanceOf[js.Any], Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofPolly]
   }
 }

@@ -1,10 +1,10 @@
 package typings.cypress
 
-import typings.cypress.cypressMod.Cypress.Dimensions
-import typings.cypress.cypressMod.Cypress.Padding
 import typings.cypress.cypressStrings.fullPage
 import typings.cypress.cypressStrings.runner
 import typings.cypress.cypressStrings.viewport
+import typings.cypress.mod.Cypress.Dimensions
+import typings.cypress.mod.Cypress.Padding
 import typings.std.Document_
 import scala.scalajs.js
 import scala.scalajs.js.`|`

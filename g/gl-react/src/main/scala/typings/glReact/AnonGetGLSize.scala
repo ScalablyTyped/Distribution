@@ -12,7 +12,6 @@ object AnonGetGLSize {
   @scala.inline
   def apply(getGLSize: () => js.Tuple2[Double, Double]): AnonGetGLSize = {
     val __obj = js.Dynamic.literal(getGLSize = js.Any.fromFunction0(getGLSize))
-  
     __obj.asInstanceOf[AnonGetGLSize]
   }
 }

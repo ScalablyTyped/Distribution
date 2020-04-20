@@ -21,34 +21,7 @@ abstract class CollectionBase[T /* <: Model[_] */] () extends Events[T] {
   var length: Double = js.native
   def add(models: js.Array[StringDictionary[_] | T]): Collection[T] = js.native
   def add(models: js.Array[StringDictionary[_] | T], options: CollectionAddOptions): Collection[T] = js.native
-  // lodash methods
-  def all(): Boolean = js.native
-  def all(predicate: (DictionaryIterator[T, Boolean]) | (ListIterator[T, Boolean])): Boolean = js.native
-  def all(predicate: (DictionaryIterator[T, Boolean]) | (ListIterator[T, Boolean]), thisArg: js.Any): Boolean = js.native
-  def all(predicate: String): Boolean = js.native
-  def all(predicate: String, thisArg: js.Any): Boolean = js.native
-  def all[R /* <: js.Object */](predicate: R): Boolean = js.native
-  @JSName("all")
-  def all_R_Object[R /* <: js.Object */](): Boolean = js.native
-  def any(): Boolean = js.native
-  def any(predicate: (DictionaryIterator[T, Boolean]) | (ListIterator[T, Boolean])): Boolean = js.native
-  def any(predicate: (DictionaryIterator[T, Boolean]) | (ListIterator[T, Boolean]), thisArg: js.Any): Boolean = js.native
-  def any(predicate: String): Boolean = js.native
-  def any(predicate: String, thisArg: js.Any): Boolean = js.native
-  def any[R /* <: js.Object */](predicate: R): Boolean = js.native
-  @JSName("any")
-  def any_R_Object[R /* <: js.Object */](): Boolean = js.native
   def at(index: Double): T = js.native
-  def collect(): js.Array[T] = js.native
-  def collect(predicate: (DictionaryIterator[T, Boolean]) | (ListIterator[T, Boolean])): js.Array[T] = js.native
-  def collect(predicate: (DictionaryIterator[T, Boolean]) | (ListIterator[T, Boolean]), thisArg: js.Any): js.Array[T] = js.native
-  def collect(predicate: String): js.Array[T] = js.native
-  def collect(predicate: String, thisArg: js.Any): js.Array[T] = js.native
-  def collect[R /* <: js.Object */](predicate: R): js.Array[T] = js.native
-  @JSName("collect")
-  def collect_R_Object[R /* <: js.Object */](): js.Array[T] = js.native
-  def contains(value: js.Any): Boolean = js.native
-  def contains(value: js.Any, fromIndex: Double): Boolean = js.native
   def countBy(): Dictionary[Double] = js.native
   def countBy(predicate: (DictionaryIterator[T, Boolean]) | (ListIterator[T, Boolean])): Dictionary[Double] = js.native
   def countBy(predicate: (DictionaryIterator[T, Boolean]) | (ListIterator[T, Boolean]), thisArg: js.Any): Dictionary[Double] = js.native
@@ -57,14 +30,6 @@ abstract class CollectionBase[T /* <: Model[_] */] () extends Events[T] {
   def countBy[R /* <: js.Object */](predicate: R): Dictionary[Double] = js.native
   @JSName("countBy")
   def countBy_R_Object[R /* <: js.Object */](): Dictionary[Double] = js.native
-  def detect(): T = js.native
-  def detect(predicate: (DictionaryIterator[T, Boolean]) | (ListIterator[T, Boolean])): T = js.native
-  def detect(predicate: (DictionaryIterator[T, Boolean]) | (ListIterator[T, Boolean]), thisArg: js.Any): T = js.native
-  def detect(predicate: String): T = js.native
-  def detect(predicate: String, thisArg: js.Any): T = js.native
-  def detect[R /* <: js.Object */](predicate: R): T = js.native
-  @JSName("detect")
-  def detect_R_Object[R /* <: js.Object */](): T = js.native
   def every(): Boolean = js.native
   def every(predicate: (DictionaryIterator[T, Boolean]) | (ListIterator[T, Boolean])): Boolean = js.native
   def every(predicate: (DictionaryIterator[T, Boolean]) | (ListIterator[T, Boolean]), thisArg: js.Any): Boolean = js.native
@@ -93,14 +58,6 @@ abstract class CollectionBase[T /* <: Model[_] */] () extends Events[T] {
   @JSName("find")
   def find_R_Object[R /* <: js.Object */](): T = js.native
   def first(): T = js.native
-  def foldl[R](): R = js.native
-  def foldl[R](callback: MemoIterator[T, R]): R = js.native
-  def foldl[R](callback: MemoIterator[T, R], accumulator: R): R = js.native
-  def foldl[R](callback: MemoIterator[T, R], accumulator: R, thisArg: js.Any): R = js.native
-  def foldr[R](): R = js.native
-  def foldr[R](callback: MemoIterator[T, R]): R = js.native
-  def foldr[R](callback: MemoIterator[T, R], accumulator: R): R = js.native
-  def foldr[R](callback: MemoIterator[T, R], accumulator: R, thisArg: js.Any): R = js.native
   def forEach(): T = js.native
   def forEach(callback: ObjectIterator[T, Unit]): T = js.native
   def forEach(callback: ObjectIterator[T, Unit], thisArg: js.Any): T = js.native
@@ -125,14 +82,11 @@ abstract class CollectionBase[T /* <: Model[_] */] () extends Events[T] {
   def groupBy[R /* <: js.Object */](predicate: R): Dictionary[js.Array[T]] = js.native
   @JSName("groupBy")
   def groupBy_R_Object[R /* <: js.Object */](): Dictionary[js.Array[T]] = js.native
-  def include(value: js.Any): Boolean = js.native
-  def include(value: js.Any, fromIndex: Double): Boolean = js.native
-  def inject[R](): R = js.native
-  def inject[R](callback: MemoIterator[T, R]): R = js.native
-  def inject[R](callback: MemoIterator[T, R], accumulator: R): R = js.native
-  def inject[R](callback: MemoIterator[T, R], accumulator: R, thisArg: js.Any): R = js.native
-  def invoke(methodName: String, args: js.Any*): js.Any = js.native
-  def invoke(methodName: js.Function, args: js.Any*): js.Any = js.native
+  // lodash methods
+  def includes(value: js.Any): Boolean = js.native
+  def includes(value: js.Any, fromIndex: Double): Boolean = js.native
+  def invokeMap(methodName: String, args: js.Any*): js.Any = js.native
+  def invokeMap(methodName: js.Function, args: js.Any*): js.Any = js.native
   def invokeThen(name: String, args: js.Any*): typings.bluebird.mod.^[_] = js.native
   def isEmpty(): Boolean = js.native
   def keys(): js.Array[String] = js.native
@@ -175,15 +129,6 @@ abstract class CollectionBase[T /* <: Model[_] */] () extends Events[T] {
   def remove(model: js.Array[T], options: EventOptions): js.Array[T] = js.native
   def reset(model: js.Array[_]): js.Array[T] = js.native
   def reset(model: js.Array[_], options: CollectionAddOptions): js.Array[T] = js.native
-  def rest(): js.Array[T] = js.native
-  def select(): js.Array[T] = js.native
-  def select(predicate: (DictionaryIterator[T, Boolean]) | (ListIterator[T, Boolean])): js.Array[T] = js.native
-  def select(predicate: (DictionaryIterator[T, Boolean]) | (ListIterator[T, Boolean]), thisArg: js.Any): js.Array[T] = js.native
-  def select(predicate: String): js.Array[T] = js.native
-  def select(predicate: String, thisArg: js.Any): js.Array[T] = js.native
-  def select[R /* <: js.Object */](predicate: R): js.Array[T] = js.native
-  @JSName("select")
-  def select_R_Object[R /* <: js.Object */](): js.Array[T] = js.native
   def serialize(): js.Array[_] = js.native
   def serialize(options: SerializeOptions): js.Array[_] = js.native
   def set(models: js.Array[StringDictionary[_] | T]): Collection[T] = js.native
@@ -209,6 +154,7 @@ abstract class CollectionBase[T /* <: Model[_] */] () extends Events[T] {
   def sortBy[R /* <: js.Object */](predicate: R): js.Array[T] = js.native
   @JSName("sortBy")
   def sortBy_R_Object[R /* <: js.Object */](): js.Array[T] = js.native
+  def tail(): js.Array[T] = js.native
   def toArray(): js.Array[T] = js.native
   def toJSON(): js.Array[_] = js.native
   def toJSON(options: SerializeOptions): js.Array[_] = js.native

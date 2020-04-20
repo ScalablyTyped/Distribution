@@ -15,7 +15,6 @@ object AnonRemoveParameter {
   @scala.inline
   def apply(removeParameter: js.Array[CallExpression], removeProperty: js.Array[ObjectLiteralExpression]): AnonRemoveParameter = {
     val __obj = js.Dynamic.literal(removeParameter = removeParameter.asInstanceOf[js.Any], removeProperty = removeProperty.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRemoveParameter]
   }
 }

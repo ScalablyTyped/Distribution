@@ -24,7 +24,6 @@ object PrestoParameters {
   @scala.inline
   def apply(Catalog: Catalog, Host: Host, Port: Port): PrestoParameters = {
     val __obj = js.Dynamic.literal(Catalog = Catalog.asInstanceOf[js.Any], Host = Host.asInstanceOf[js.Any], Port = Port.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PrestoParameters]
   }
 }

@@ -2,7 +2,23 @@ package typings.twitchExt
 
 import typings.twitchExt.twitchExtBooleans.`false`
 import typings.twitchExt.twitchExtBooleans.`true`
+import typings.twitchExt.twitchExtStrings.arePlayerControlsVisible
+import typings.twitchExt.twitchExtStrings.bitrate
+import typings.twitchExt.twitchExtStrings.bufferSize
+import typings.twitchExt.twitchExtStrings.displayResolution
+import typings.twitchExt.twitchExtStrings.game
+import typings.twitchExt.twitchExtStrings.hlsLatencyBroadcaster
+import typings.twitchExt.twitchExtStrings.isFullScreen
+import typings.twitchExt.twitchExtStrings.isMuted
+import typings.twitchExt.twitchExtStrings.isPaused
+import typings.twitchExt.twitchExtStrings.isTheatreMode
+import typings.twitchExt.twitchExtStrings.language
+import typings.twitchExt.twitchExtStrings.mode
+import typings.twitchExt.twitchExtStrings.playbackMode
 import typings.twitchExt.twitchExtStrings.production
+import typings.twitchExt.twitchExtStrings.theme
+import typings.twitchExt.twitchExtStrings.videoResolution
+import typings.twitchExt.twitchExtStrings.volume
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -68,7 +84,13 @@ trait TwitchExt extends js.Object {
   	 * @see https://dev.twitch.tv/docs/extensions/reference/#oncontext
   	 */
   def onContext(
-    contextCallback: js.Function2[/* context */ PartialTwitchExtContext, /* changed */ js.Array[String], Unit]
+    contextCallback: js.Function2[
+      /* context */ PartialTwitchExtContext, 
+      /* changed */ js.Array[
+        isPaused | bufferSize | isTheatreMode | isMuted | isFullScreen | hlsLatencyBroadcaster | volume | videoResolution | displayResolution | playbackMode | mode | arePlayerControlsVisible | bitrate | game | language | theme
+      ], 
+      Unit
+    ]
   ): Unit = js.native
   /**
   	 * This function binds the callback to any internal error.

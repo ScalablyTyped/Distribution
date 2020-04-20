@@ -17,7 +17,7 @@ object vector3dMod extends js.Object {
     def cross(v: Vector3d): Vector3d = js.native
     def dividedBy(x: Double): Vector3d = js.native
     def dot(v: Vector3d): Double = js.native
-    def length(): Double = js.native
+    def length: Double = js.native
     def minus(v: Vector3d): Vector3d = js.native
     def negate(): Vector3d = js.native
     def plus(v: Vector3d): Vector3d = js.native

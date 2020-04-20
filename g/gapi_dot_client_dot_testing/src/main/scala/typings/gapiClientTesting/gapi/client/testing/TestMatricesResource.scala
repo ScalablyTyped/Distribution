@@ -52,7 +52,6 @@ object TestMatricesResource {
     get: AnonAccesstoken => Request_[TestMatrix]
   ): TestMatricesResource = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel), create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get))
-  
     __obj.asInstanceOf[TestMatricesResource]
   }
 }

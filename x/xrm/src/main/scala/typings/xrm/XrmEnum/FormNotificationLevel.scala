@@ -20,12 +20,10 @@ trait FormNotificationLevel extends js.Object
 
 object FormNotificationLevel {
   @scala.inline
-  def Error: ERROR = this.cast("ERROR")
+  def Error: ERROR = "ERROR".asInstanceOf[ERROR]
   @scala.inline
-  def Info: INFO = this.cast("INFO")
+  def Info: INFO = "INFO".asInstanceOf[INFO]
   @scala.inline
-  def Warning: WARNING = this.cast("WARNING")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Warning: WARNING = "WARNING".asInstanceOf[WARNING]
 }
 

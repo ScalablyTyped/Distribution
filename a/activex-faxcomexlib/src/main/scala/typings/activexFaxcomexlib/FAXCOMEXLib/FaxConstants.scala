@@ -17,12 +17,10 @@ trait FaxConstants extends js.Object
 
 object FaxConstants {
   @scala.inline
-  def bstrGROUPNAME_ALLDEVICES: `LessthansignAll DevicesGreaterthansign` = this.cast("<All Devices>")
+  def bstrGROUPNAME_ALLDEVICES: `LessthansignAll DevicesGreaterthansign` = ("<All Devices>").asInstanceOf[`LessthansignAll DevicesGreaterthansign`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def lDEFAULT_PREFETCH_SIZE: `100` = 100.asInstanceOf[`100`]
   @scala.inline
-  def lDEFAULT_PREFETCH_SIZE: `100` = this.cast(100)
-  @scala.inline
-  def wcharREASSIGN_RECIPIENTS_DELIMITER: `59` = this.cast(59)
+  def wcharREASSIGN_RECIPIENTS_DELIMITER: `59` = 59.asInstanceOf[`59`]
 }
 

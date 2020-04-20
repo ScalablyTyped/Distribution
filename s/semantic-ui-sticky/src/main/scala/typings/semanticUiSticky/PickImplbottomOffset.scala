@@ -13,7 +13,6 @@ object PickImplbottomOffset {
   @scala.inline
   def apply(bottomOffset: Double): PickImplbottomOffset = {
     val __obj = js.Dynamic.literal(bottomOffset = bottomOffset.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplbottomOffset]
   }
 }

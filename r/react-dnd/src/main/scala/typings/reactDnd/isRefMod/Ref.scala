@@ -12,7 +12,6 @@ object Ref {
   @scala.inline
   def apply[T](current: T): Ref[T] = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Ref[T]]
   }
 }

@@ -14,7 +14,6 @@ object PutResponseData {
   @scala.inline
   def apply(Count: Double, Data: js.Array[js.Object], Total: Double): PutResponseData = {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Data = Data.asInstanceOf[js.Any], Total = Total.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutResponseData]
   }
 }

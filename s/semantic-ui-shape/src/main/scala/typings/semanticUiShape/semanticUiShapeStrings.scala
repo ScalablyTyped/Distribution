@@ -126,31 +126,31 @@ object semanticUiShapeStrings {
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
-  def `flip back`: `flip back` = "flip back".asInstanceOf[`flip back`]
+  def `flip back`: `flip back` = ("flip back").asInstanceOf[`flip back`]
   @scala.inline
-  def `flip down`: `flip down` = "flip down".asInstanceOf[`flip down`]
+  def `flip down`: `flip down` = ("flip down").asInstanceOf[`flip down`]
   @scala.inline
-  def `flip left`: `flip left` = "flip left".asInstanceOf[`flip left`]
+  def `flip left`: `flip left` = ("flip left").asInstanceOf[`flip left`]
   @scala.inline
-  def `flip over`: `flip over` = "flip over".asInstanceOf[`flip over`]
+  def `flip over`: `flip over` = ("flip over").asInstanceOf[`flip over`]
   @scala.inline
-  def `flip right`: `flip right` = "flip right".asInstanceOf[`flip right`]
+  def `flip right`: `flip right` = ("flip right").asInstanceOf[`flip right`]
   @scala.inline
-  def `flip up`: `flip up` = "flip up".asInstanceOf[`flip up`]
+  def `flip up`: `flip up` = ("flip up").asInstanceOf[`flip up`]
   @scala.inline
-  def `get transform down`: `get transform down` = "get transform down".asInstanceOf[`get transform down`]
+  def `get transform down`: `get transform down` = ("get transform down").asInstanceOf[`get transform down`]
   @scala.inline
-  def `get transform left`: `get transform left` = "get transform left".asInstanceOf[`get transform left`]
+  def `get transform left`: `get transform left` = ("get transform left").asInstanceOf[`get transform left`]
   @scala.inline
-  def `get transform right`: `get transform right` = "get transform right".asInstanceOf[`get transform right`]
+  def `get transform right`: `get transform right` = ("get transform right").asInstanceOf[`get transform right`]
   @scala.inline
-  def `get transform up`: `get transform up` = "get transform up".asInstanceOf[`get transform up`]
+  def `get transform up`: `get transform up` = ("get transform up").asInstanceOf[`get transform up`]
   @scala.inline
   def height: height = "height".asInstanceOf[height]
   @scala.inline
   def initial: initial = "initial".asInstanceOf[initial]
   @scala.inline
-  def `is animating`: `is animating` = "is animating".asInstanceOf[`is animating`]
+  def `is animating`: `is animating` = ("is animating").asInstanceOf[`is animating`]
   @scala.inline
   def name: name = "name".asInstanceOf[name]
   @scala.inline
@@ -172,11 +172,11 @@ object semanticUiShapeStrings {
   @scala.inline
   def selector: selector = "selector".asInstanceOf[selector]
   @scala.inline
-  def `set default side`: `set default side` = "set default side".asInstanceOf[`set default side`]
+  def `set default side`: `set default side` = ("set default side").asInstanceOf[`set default side`]
   @scala.inline
-  def `set next side`: `set next side` = "set next side".asInstanceOf[`set next side`]
+  def `set next side`: `set next side` = ("set next side").asInstanceOf[`set next side`]
   @scala.inline
-  def `set stage size`: `set stage size` = "set stage size".asInstanceOf[`set stage size`]
+  def `set stage size`: `set stage size` = ("set stage size").asInstanceOf[`set stage size`]
   @scala.inline
   def setting: setting = "setting".asInstanceOf[setting]
   @scala.inline

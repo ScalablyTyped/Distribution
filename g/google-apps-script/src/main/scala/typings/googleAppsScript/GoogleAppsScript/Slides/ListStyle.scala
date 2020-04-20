@@ -28,7 +28,6 @@ object ListStyle {
     removeFromList: () => ListStyle
   ): ListStyle = {
     val __obj = js.Dynamic.literal(applyListPreset = js.Any.fromFunction1(applyListPreset), getGlyph = js.Any.fromFunction0(getGlyph), getList = js.Any.fromFunction0(getList), getNestingLevel = js.Any.fromFunction0(getNestingLevel), isInList = js.Any.fromFunction0(isInList), removeFromList = js.Any.fromFunction0(removeFromList))
-  
     __obj.asInstanceOf[ListStyle]
   }
 }

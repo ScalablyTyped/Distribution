@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactJsonPrettyProps {
   @scala.inline
-  def ReactJsonPrettyProps: IProps.type = typings.reactJsonPretty.mod.IProps
+  def ReactJsonPrettyProps: IProps.type = IProps
   type ReactJsonPrettyProps = IProps
 }
 

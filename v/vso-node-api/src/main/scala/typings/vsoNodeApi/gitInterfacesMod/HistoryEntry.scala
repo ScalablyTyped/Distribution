@@ -23,7 +23,6 @@ object HistoryEntry {
   @scala.inline
   def apply[T](changeList: ChangeList[T], itemChangeType: VersionControlChangeType, serverItem: String): HistoryEntry[T] = {
     val __obj = js.Dynamic.literal(changeList = changeList.asInstanceOf[js.Any], itemChangeType = itemChangeType.asInstanceOf[js.Any], serverItem = serverItem.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HistoryEntry[T]]
   }
 }

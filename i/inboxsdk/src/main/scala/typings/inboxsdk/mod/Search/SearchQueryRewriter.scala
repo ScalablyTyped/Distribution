@@ -13,7 +13,6 @@ object SearchQueryRewriter {
   @scala.inline
   def apply(term: String, termReplacer: () => String | js.Promise[String]): SearchQueryRewriter = {
     val __obj = js.Dynamic.literal(term = term.asInstanceOf[js.Any], termReplacer = js.Any.fromFunction0(termReplacer))
-  
     __obj.asInstanceOf[SearchQueryRewriter]
   }
 }

@@ -15,7 +15,6 @@ object AnonItemMoveTo {
   @scala.inline
   def apply(Cancel: Boolean, Item: js.Any, MoveTo: Folder): AnonItemMoveTo = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Item = Item.asInstanceOf[js.Any], MoveTo = MoveTo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonItemMoveTo]
   }
 }

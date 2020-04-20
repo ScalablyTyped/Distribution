@@ -23,7 +23,6 @@ object IInputAttributes {
     ngTableSelectFilterDs: String
   ): IInputAttributes = {
     val __obj = js.Dynamic.literal($addClass = js.Any.fromFunction1($addClass), $attr = $attr.asInstanceOf[js.Any], $normalize = js.Any.fromFunction1($normalize), $observe = js.Any.fromFunction2($observe), $removeClass = js.Any.fromFunction1($removeClass), $set = js.Any.fromFunction2($set), $updateClass = js.Any.fromFunction2($updateClass), ngTableSelectFilterDs = ngTableSelectFilterDs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IInputAttributes]
   }
 }

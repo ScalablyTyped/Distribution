@@ -13,7 +13,6 @@ object IndicatorsState {
   @scala.inline
   def apply(isRtl: Boolean): IndicatorsState = {
     val __obj = js.Dynamic.literal(isRtl = isRtl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IndicatorsState]
   }
 }

@@ -13,7 +13,6 @@ object CreditCardVerificationGateway {
   @scala.inline
   def apply(search: js.Any => Readable): CreditCardVerificationGateway = {
     val __obj = js.Dynamic.literal(search = js.Any.fromFunction1(search))
-  
     __obj.asInstanceOf[CreditCardVerificationGateway]
   }
 }

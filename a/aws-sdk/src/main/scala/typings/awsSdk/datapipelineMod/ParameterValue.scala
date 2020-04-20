@@ -20,7 +20,6 @@ object ParameterValue {
   @scala.inline
   def apply(id: fieldNameString, stringValue: fieldStringValue): ParameterValue = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], stringValue = stringValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ParameterValue]
   }
 }

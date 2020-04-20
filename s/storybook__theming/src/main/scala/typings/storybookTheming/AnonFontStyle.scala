@@ -12,7 +12,6 @@ object AnonFontStyle {
   @scala.inline
   def apply(fontStyle: String): AnonFontStyle = {
     val __obj = js.Dynamic.literal(fontStyle = fontStyle.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFontStyle]
   }
 }

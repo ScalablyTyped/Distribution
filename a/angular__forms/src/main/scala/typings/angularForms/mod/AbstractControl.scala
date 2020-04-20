@@ -113,7 +113,7 @@ abstract class AbstractControl () extends js.Object {
     * @returns True if the user has changed the value of this control in the UI; compare `pristine`.
     * Programmatic changes to a control's value do not mark it dirty.
     */
-  def dirty(): Boolean = js.native
+  def dirty: Boolean = js.native
   /**
     * Disables the control. This means the control is exempt from validation checks and
     * excluded from the aggregate value of any parent. Its status is `DISABLED`.
@@ -144,7 +144,7 @@ abstract class AbstractControl () extends js.Object {
     *
     * @returns True if the control is disabled, false otherwise.
     */
-  def disabled(): Boolean = js.native
+  def disabled: Boolean = js.native
   /**
     * Enables the control. This means the control is included in validation checks and
     * the aggregate value of its parent. Its status recalculates based on its value and
@@ -174,7 +174,7 @@ abstract class AbstractControl () extends js.Object {
     * @see {@link AbstractControl.status}
     *
     */
-  def enabled(): Boolean = js.native
+  def enabled: Boolean = js.native
   def get(path: String): AbstractControl | Null = js.native
   /**
     * Retrieves a child control given the control's name or path.
@@ -265,7 +265,7 @@ abstract class AbstractControl () extends js.Object {
     * @returns True if this control has failed one or more of its validation checks,
     * false otherwise.
     */
-  def invalid(): Boolean = js.native
+  def invalid: Boolean = js.native
   /**
     * Marks the control and all its descendant controls as `touched`.
     * @see `markAsTouched()`
@@ -357,7 +357,7 @@ abstract class AbstractControl () extends js.Object {
   /**
     * The parent control.
     */
-  def parent(): FormGroup | FormArray = js.native
+  def parent: FormGroup | FormArray = js.native
   /**
     * Patches the value of the control. Abstract method (implemented in sub-classes).
     */
@@ -371,7 +371,7 @@ abstract class AbstractControl () extends js.Object {
     * @returns True if this control is in the process of conducting a validation check,
     * false otherwise.
     */
-  def pending(): Boolean = js.native
+  def pending: Boolean = js.native
   /**
     * Resets the control. Abstract method (implemented in sub-classes).
     */
@@ -381,7 +381,7 @@ abstract class AbstractControl () extends js.Object {
   /**
     * Retrieves the top-level ancestor of this control.
     */
-  def root(): AbstractControl = js.native
+  def root: AbstractControl = js.native
   def setAsyncValidators(): Unit = js.native
   def setAsyncValidators(newValidator: js.Array[AsyncValidatorFn]): Unit = js.native
   /**
@@ -447,14 +447,14 @@ abstract class AbstractControl () extends js.Object {
     * A control is `untouched` if the user has not yet triggered
     * a `blur` event on it.
     */
-  def untouched(): Boolean = js.native
+  def untouched: Boolean = js.native
   /**
     * Reports the update strategy of the `AbstractControl` (meaning
     * the event on which the control updates itself).
     * Possible values: `'change'` | `'blur'` | `'submit'`
     * Default value: `'change'`
     */
-  def updateOn(): FormHooks = js.native
+  def updateOn: FormHooks = js.native
   /**
     * Recalculates the value and validation status of the control.
     *
@@ -479,6 +479,6 @@ abstract class AbstractControl () extends js.Object {
     * @returns True if the control has passed all of its validation tests,
     * false otherwise.
     */
-  def valid(): Boolean = js.native
+  def valid: Boolean = js.native
 }
 

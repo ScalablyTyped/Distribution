@@ -12,7 +12,6 @@ object IdentityData {
   @scala.inline
   def apply(identityIds: js.Array[String]): IdentityData = {
     val __obj = js.Dynamic.literal(identityIds = identityIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IdentityData]
   }
 }

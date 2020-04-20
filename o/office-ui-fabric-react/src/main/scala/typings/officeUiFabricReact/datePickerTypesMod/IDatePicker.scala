@@ -15,7 +15,6 @@ object IDatePicker {
   @scala.inline
   def apply(focus: () => Unit, reset: () => Unit): IDatePicker = {
     val __obj = js.Dynamic.literal(focus = js.Any.fromFunction0(focus), reset = js.Any.fromFunction0(reset))
-  
     __obj.asInstanceOf[IDatePicker]
   }
 }

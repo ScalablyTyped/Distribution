@@ -14,7 +14,6 @@ object SmartHomeV1DisconnectRequest {
   @scala.inline
   def apply(inputs: js.Array[AnonIntent], requestId: String): SmartHomeV1DisconnectRequest = {
     val __obj = js.Dynamic.literal(inputs = inputs.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SmartHomeV1DisconnectRequest]
   }
 }

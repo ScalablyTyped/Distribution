@@ -16,7 +16,6 @@ object GetDashboardInput {
   @scala.inline
   def apply(DashboardName: DashboardName): GetDashboardInput = {
     val __obj = js.Dynamic.literal(DashboardName = DashboardName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDashboardInput]
   }
 }

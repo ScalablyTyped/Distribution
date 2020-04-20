@@ -55,7 +55,7 @@ trait R3Injector extends js.Object {
   /**
     * Flag indicating that this injector was previously destroyed.
     */
-  def destroyed(): Boolean = js.native
+  def destroyed: Boolean = js.native
   def get[T](token: InjectionToken[T]): T = js.native
   def get[T](token: InjectionToken[T], notFoundValue: js.Any): T = js.native
   def get[T](token: InjectionToken[T], notFoundValue: js.Any, flags: InjectFlags): T = js.native

@@ -18,7 +18,6 @@ object ReadBuildProgramHost {
     useCaseSensitiveFileNames: () => Boolean
   ): ReadBuildProgramHost = {
     val __obj = js.Dynamic.literal(getCurrentDirectory = js.Any.fromFunction0(getCurrentDirectory), readFile = js.Any.fromFunction1(readFile), useCaseSensitiveFileNames = js.Any.fromFunction0(useCaseSensitiveFileNames))
-  
     __obj.asInstanceOf[ReadBuildProgramHost]
   }
 }

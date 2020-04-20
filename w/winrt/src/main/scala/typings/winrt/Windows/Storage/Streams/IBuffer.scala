@@ -13,7 +13,6 @@ object IBuffer {
   @scala.inline
   def apply(capacity: Double, length: Double): IBuffer = {
     val __obj = js.Dynamic.literal(capacity = capacity.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IBuffer]
   }
 }

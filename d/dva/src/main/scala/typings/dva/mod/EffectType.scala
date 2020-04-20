@@ -14,14 +14,12 @@ trait EffectType extends js.Object
 
 object EffectType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def takeEvery: typings.dva.dvaStrings.takeEvery = "takeEvery".asInstanceOf[typings.dva.dvaStrings.takeEvery]
   @scala.inline
-  def takeEvery: typings.dva.dvaStrings.takeEvery = this.cast("takeEvery")
+  def takeLatest: typings.dva.dvaStrings.takeLatest = "takeLatest".asInstanceOf[typings.dva.dvaStrings.takeLatest]
   @scala.inline
-  def takeLatest: typings.dva.dvaStrings.takeLatest = this.cast("takeLatest")
+  def throttle: typings.dva.dvaStrings.throttle = "throttle".asInstanceOf[typings.dva.dvaStrings.throttle]
   @scala.inline
-  def throttle: typings.dva.dvaStrings.throttle = this.cast("throttle")
-  @scala.inline
-  def watcher: typings.dva.dvaStrings.watcher = this.cast("watcher")
+  def watcher: typings.dva.dvaStrings.watcher = "watcher".asInstanceOf[typings.dva.dvaStrings.watcher]
 }
 

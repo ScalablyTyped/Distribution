@@ -1,6 +1,6 @@
 package typings.plotlyJs.mod
 
-import typings.plotlyJs.AnonOffset
+import typings.plotlyJs.AnonFont
 import typings.plotlyJs.PartialPadding
 import typings.plotlyJs.PartialSliderStep
 import typings.plotlyJs.plotlyJsStrings.auto
@@ -39,7 +39,7 @@ trait Slider extends js.Object {
   	 * Sets the width (in px) of the border enclosing the slider.
   	 */
   var borderwidth: Double
-  var currentvalue: AnonOffset
+  var currentvalue: AnonFont
   /**
   	 * Sets the font of the slider step labels.
   	 */
@@ -113,7 +113,7 @@ object Slider {
     bgcolor: Color,
     bordercolor: Color,
     borderwidth: Double,
-    currentvalue: AnonOffset,
+    currentvalue: AnonFont,
     font: Font,
     len: Double,
     lenmode: fraction | pixels,
@@ -131,7 +131,6 @@ object Slider {
     yanchor: auto | top | middle | bottom
   ): Slider = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], activebgcolor = activebgcolor.asInstanceOf[js.Any], bgcolor = bgcolor.asInstanceOf[js.Any], bordercolor = bordercolor.asInstanceOf[js.Any], borderwidth = borderwidth.asInstanceOf[js.Any], currentvalue = currentvalue.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], len = len.asInstanceOf[js.Any], lenmode = lenmode.asInstanceOf[js.Any], minorticklen = minorticklen.asInstanceOf[js.Any], pad = pad.asInstanceOf[js.Any], steps = steps.asInstanceOf[js.Any], tickcolor = tickcolor.asInstanceOf[js.Any], ticklen = ticklen.asInstanceOf[js.Any], tickwidth = tickwidth.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], xanchor = xanchor.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], yanchor = yanchor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Slider]
   }
 }

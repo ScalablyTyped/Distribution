@@ -12,7 +12,6 @@ object OnMultiChoiceClickListener {
   @scala.inline
   def apply(onClick: (typings.androiduix.android.content.DialogInterface, Double, Boolean) => Unit): OnMultiChoiceClickListener = {
     val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction3(onClick))
-  
     __obj.asInstanceOf[OnMultiChoiceClickListener]
   }
 }

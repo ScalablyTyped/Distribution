@@ -20,7 +20,6 @@ object AssignTapePoolInput {
   @scala.inline
   def apply(PoolId: PoolId, TapeARN: TapeARN): AssignTapePoolInput = {
     val __obj = js.Dynamic.literal(PoolId = PoolId.asInstanceOf[js.Any], TapeARN = TapeARN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssignTapePoolInput]
   }
 }

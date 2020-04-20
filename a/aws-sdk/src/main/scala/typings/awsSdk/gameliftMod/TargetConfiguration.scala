@@ -16,7 +16,6 @@ object TargetConfiguration {
   @scala.inline
   def apply(TargetValue: Double): TargetConfiguration = {
     val __obj = js.Dynamic.literal(TargetValue = TargetValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TargetConfiguration]
   }
 }

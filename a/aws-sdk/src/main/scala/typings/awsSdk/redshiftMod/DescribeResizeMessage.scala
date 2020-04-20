@@ -16,7 +16,6 @@ object DescribeResizeMessage {
   @scala.inline
   def apply(ClusterIdentifier: String): DescribeResizeMessage = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeResizeMessage]
   }
 }

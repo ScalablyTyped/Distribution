@@ -20,7 +20,6 @@ object ConversationLogsRequest {
   @scala.inline
   def apply(iamRoleArn: IamRoleArn, logSettings: LogSettingsRequestList): ConversationLogsRequest = {
     val __obj = js.Dynamic.literal(iamRoleArn = iamRoleArn.asInstanceOf[js.Any], logSettings = logSettings.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConversationLogsRequest]
   }
 }

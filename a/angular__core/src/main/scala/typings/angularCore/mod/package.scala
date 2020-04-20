@@ -325,7 +325,7 @@ package object mod {
     */
   type LocalRefExtractor = js.Function2[
     /* tNode */ typings.angularCore.mod.TNodeWithLocalRefs, 
-    /* currentView */ typings.angularCore.mod.ɵangularPackagesCoreCoreBp, 
+    /* currentView */ typings.angularCore.mod.ɵangularPackagesCoreCoreBo, 
     js.Any
   ]
   type NgIterable[T] = js.Array[T] | typings.std.Iterable[T]

@@ -41,7 +41,6 @@ object NetworksResource {
     switchToCustomMode: AnonNetwork => Request_[Operation]
   ): NetworksResource = {
     val __obj = js.Dynamic.literal(addPeering = js.Any.fromFunction1(addPeering), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), removePeering = js.Any.fromFunction1(removePeering), switchToCustomMode = js.Any.fromFunction1(switchToCustomMode))
-  
     __obj.asInstanceOf[NetworksResource]
   }
 }

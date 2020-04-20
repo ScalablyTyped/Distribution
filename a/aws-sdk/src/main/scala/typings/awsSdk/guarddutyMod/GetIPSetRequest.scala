@@ -20,7 +20,6 @@ object GetIPSetRequest {
   @scala.inline
   def apply(DetectorId: DetectorId, IpSetId: String): GetIPSetRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId.asInstanceOf[js.Any], IpSetId = IpSetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetIPSetRequest]
   }
 }

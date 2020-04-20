@@ -18,25 +18,21 @@ object InjectableProvider {
   @scala.inline
   def ExistingSansProvider(useExisting: js.Any): InjectableProvider = {
     val __obj = js.Dynamic.literal(useExisting = useExisting.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InjectableProvider]
   }
   @scala.inline
   def ValueSansProvider(useValue: js.Any): InjectableProvider = {
     val __obj = js.Dynamic.literal(useValue = useValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InjectableProvider]
   }
   @scala.inline
   def ClassSansProvider(useClass: Type[_]): InjectableProvider = {
     val __obj = js.Dynamic.literal(useClass = useClass.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InjectableProvider]
   }
   @scala.inline
   def StaticClassSansProvider(deps: js.Array[_], useClass: Type[_]): InjectableProvider = {
     val __obj = js.Dynamic.literal(deps = deps.asInstanceOf[js.Any], useClass = useClass.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InjectableProvider]
   }
   @scala.inline

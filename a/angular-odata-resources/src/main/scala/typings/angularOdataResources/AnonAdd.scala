@@ -42,7 +42,6 @@ object AnonAdd {
     sub: js.Array[String]
   ): AnonAdd = {
     val __obj = js.Dynamic.literal(add = add.asInstanceOf[js.Any], and = and.asInstanceOf[js.Any], div = div.asInstanceOf[js.Any], eq = eq.asInstanceOf[js.Any], ge = ge.asInstanceOf[js.Any], gt = gt.asInstanceOf[js.Any], le = le.asInstanceOf[js.Any], lt = lt.asInstanceOf[js.Any], mod = mod.asInstanceOf[js.Any], mul = mul.asInstanceOf[js.Any], ne = ne.asInstanceOf[js.Any], not = not.asInstanceOf[js.Any], or = or.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAdd]
   }
 }

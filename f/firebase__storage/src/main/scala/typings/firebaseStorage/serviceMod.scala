@@ -21,9 +21,9 @@ object serviceMod extends js.Object {
     var authWrapper_ : AuthWrapper = js.native
     var bucket_ : js.Any = js.native
     var internals_ : js.Any = js.native
-    def INTERNAL(): ServiceInternals = js.native
-    def app(): FirebaseApp = js.native
-    def maxUploadRetryTime(): Double = js.native
+    def INTERNAL: ServiceInternals = js.native
+    def app: FirebaseApp = js.native
+    def maxUploadRetryTime: Double = js.native
     /**
       * Returns a firebaseStorage.Reference for the given path in the default
       * bucket.

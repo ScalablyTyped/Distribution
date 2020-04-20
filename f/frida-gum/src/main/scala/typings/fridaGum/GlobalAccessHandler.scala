@@ -22,7 +22,6 @@ object GlobalAccessHandler {
   @scala.inline
   def apply(enumerate: () => js.Array[String], get: String => js.Any): GlobalAccessHandler = {
     val __obj = js.Dynamic.literal(enumerate = js.Any.fromFunction0(enumerate), get = js.Any.fromFunction1(get))
-  
     __obj.asInstanceOf[GlobalAccessHandler]
   }
 }

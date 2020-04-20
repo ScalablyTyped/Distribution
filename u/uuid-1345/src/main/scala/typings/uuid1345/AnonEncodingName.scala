@@ -16,7 +16,6 @@ object AnonEncodingName {
   @scala.inline
   def apply(encoding: binary, name: String, namespace: UuidTypes): AnonEncodingName = {
     val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEncodingName]
   }
 }

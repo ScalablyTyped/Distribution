@@ -20,7 +20,6 @@ object ResultRow {
   @scala.inline
   def apply(GroupedBys: ListOfResultRowValue, Values: ListOfResultRowValue): ResultRow = {
     val __obj = js.Dynamic.literal(GroupedBys = GroupedBys.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResultRow]
   }
 }

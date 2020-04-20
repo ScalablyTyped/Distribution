@@ -57,7 +57,6 @@ object RuleWithOperations {
     scope: String
   ): RuleWithOperations = {
     val __obj = js.Dynamic.literal(apiGroups = apiGroups.asInstanceOf[js.Any], apiVersions = apiVersions.asInstanceOf[js.Any], operations = operations.asInstanceOf[js.Any], resources = resources.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RuleWithOperations]
   }
 }

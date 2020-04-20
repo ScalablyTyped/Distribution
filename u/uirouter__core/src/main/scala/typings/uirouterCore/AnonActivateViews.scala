@@ -42,7 +42,6 @@ object AnonActivateViews {
     updateUrl: js.Function
   ): AnonActivateViews = {
     val __obj = js.Dynamic.literal(activateViews = activateViews.asInstanceOf[js.Any], addCoreResolves = addCoreResolves.asInstanceOf[js.Any], eagerResolve = eagerResolve.asInstanceOf[js.Any], ignored = ignored.asInstanceOf[js.Any], invalid = invalid.asInstanceOf[js.Any], lazyLoad = lazyLoad.asInstanceOf[js.Any], lazyResolve = lazyResolve.asInstanceOf[js.Any], loadViews = loadViews.asInstanceOf[js.Any], onEnter = onEnter.asInstanceOf[js.Any], onExit = onExit.asInstanceOf[js.Any], onRetain = onRetain.asInstanceOf[js.Any], redirectTo = redirectTo.asInstanceOf[js.Any], resolveAll = resolveAll.asInstanceOf[js.Any], updateGlobals = updateGlobals.asInstanceOf[js.Any], updateUrl = updateUrl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonActivateViews]
   }
 }

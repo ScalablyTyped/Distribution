@@ -14,7 +14,6 @@ object RawNumberFormatResult {
   @scala.inline
   def apply(formattedString: String, integerDigitsCount: Double, roundedNumber: Double): RawNumberFormatResult = {
     val __obj = js.Dynamic.literal(formattedString = formattedString.asInstanceOf[js.Any], integerDigitsCount = integerDigitsCount.asInstanceOf[js.Any], roundedNumber = roundedNumber.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RawNumberFormatResult]
   }
 }

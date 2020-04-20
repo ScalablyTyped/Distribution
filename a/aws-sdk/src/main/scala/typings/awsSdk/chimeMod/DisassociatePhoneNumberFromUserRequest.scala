@@ -20,7 +20,6 @@ object DisassociatePhoneNumberFromUserRequest {
   @scala.inline
   def apply(AccountId: String, UserId: String): DisassociatePhoneNumberFromUserRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], UserId = UserId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisassociatePhoneNumberFromUserRequest]
   }
 }

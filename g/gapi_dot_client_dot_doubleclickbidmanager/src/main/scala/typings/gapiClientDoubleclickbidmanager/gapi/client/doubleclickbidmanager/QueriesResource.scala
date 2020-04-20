@@ -30,7 +30,6 @@ object QueriesResource {
     runquery: AnonFields => Request_[Unit]
   ): QueriesResource = {
     val __obj = js.Dynamic.literal(createquery = js.Any.fromFunction1(createquery), deletequery = js.Any.fromFunction1(deletequery), getquery = js.Any.fromFunction1(getquery), listqueries = js.Any.fromFunction1(listqueries), runquery = js.Any.fromFunction1(runquery))
-  
     __obj.asInstanceOf[QueriesResource]
   }
 }

@@ -24,6 +24,7 @@ trait Chart extends js.Object {
   def getDatasetMeta(index: Double): Meta = js.native
   def getElementAtEvent(e: js.Any): js.Array[js.Object] = js.native
   def getElementsAtEvent(e: js.Any): js.Array[js.Object] = js.native
+  def getElementsAtXAxis(e: js.Any): js.Array[js.Object] = js.native
   def render(): js.Object = js.native
   def render(hasDurationLazyEasing: ChartRenderProps): js.Object = js.native
   def resize(): Chart = js.native

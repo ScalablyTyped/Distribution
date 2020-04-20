@@ -14,7 +14,6 @@ object DefaultContext {
   @scala.inline
   def apply(file: File, files: js.Array[File]): DefaultContext = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DefaultContext]
   }
 }

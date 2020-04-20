@@ -18,22 +18,20 @@ trait ButtonSkin extends js.Object
 
 object ButtonSkin {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dark: typings.wixStyleReact.wixStyleReactStrings.dark = "dark".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.dark]
   @scala.inline
-  def dark: typings.wixStyleReact.wixStyleReactStrings.dark = this.cast("dark")
+  def destructive: typings.wixStyleReact.wixStyleReactStrings.destructive = "destructive".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.destructive]
   @scala.inline
-  def destructive: typings.wixStyleReact.wixStyleReactStrings.destructive = this.cast("destructive")
+  def inverted: typings.wixStyleReact.wixStyleReactStrings.inverted = "inverted".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.inverted]
   @scala.inline
-  def inverted: typings.wixStyleReact.wixStyleReactStrings.inverted = this.cast("inverted")
+  def light: typings.wixStyleReact.wixStyleReactStrings.light = "light".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.light]
   @scala.inline
-  def light: typings.wixStyleReact.wixStyleReactStrings.light = this.cast("light")
+  def premium: typings.wixStyleReact.wixStyleReactStrings.premium = "premium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.premium]
   @scala.inline
-  def premium: typings.wixStyleReact.wixStyleReactStrings.premium = this.cast("premium")
+  def `premium-light`: typings.wixStyleReact.wixStyleReactStrings.`premium-light` = "premium-light".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.`premium-light`]
   @scala.inline
-  def `premium-light`: typings.wixStyleReact.wixStyleReactStrings.`premium-light` = this.cast("premium-light")
+  def standard: typings.wixStyleReact.wixStyleReactStrings.standard = "standard".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.standard]
   @scala.inline
-  def standard: typings.wixStyleReact.wixStyleReactStrings.standard = this.cast("standard")
-  @scala.inline
-  def transparent: typings.wixStyleReact.wixStyleReactStrings.transparent = this.cast("transparent")
+  def transparent: typings.wixStyleReact.wixStyleReactStrings.transparent = "transparent".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.transparent]
 }
 

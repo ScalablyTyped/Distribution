@@ -12,7 +12,6 @@ object AnonShouldFadeIn {
   @scala.inline
   def apply(shouldFadeIn: Boolean): AnonShouldFadeIn = {
     val __obj = js.Dynamic.literal(shouldFadeIn = shouldFadeIn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonShouldFadeIn]
   }
 }

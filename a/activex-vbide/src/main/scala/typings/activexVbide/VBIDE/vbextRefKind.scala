@@ -14,10 +14,8 @@ trait vbextRefKind extends js.Object
 
 object vbextRefKind {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def vbext_rk_Project: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def vbext_rk_Project: `1` = this.cast(1)
-  @scala.inline
-  def vbext_rk_TypeLib: `0` = this.cast(0)
+  def vbext_rk_TypeLib: `0` = 0.asInstanceOf[`0`]
 }
 

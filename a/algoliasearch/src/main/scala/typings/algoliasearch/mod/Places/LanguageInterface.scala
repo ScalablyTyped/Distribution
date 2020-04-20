@@ -17,7 +17,6 @@ object LanguageInterface {
   @scala.inline
   def apply(language: String): LanguageInterface = {
     val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LanguageInterface]
   }
 }

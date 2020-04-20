@@ -10,7 +10,6 @@ object ScreenPoppedEvent {
   @scala.inline
   def apply(componentId: String): ScreenPoppedEvent = {
     val __obj = js.Dynamic.literal(componentId = componentId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScreenPoppedEvent]
   }
 }

@@ -19,24 +19,22 @@ trait Modifiers extends js.Object
 
 object Modifiers {
   @scala.inline
-  def bold: typings.chalk.chalkStrings.bold = this.cast("bold")
+  def bold: typings.chalk.chalkStrings.bold = "bold".asInstanceOf[typings.chalk.chalkStrings.bold]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dim: typings.chalk.chalkStrings.dim = "dim".asInstanceOf[typings.chalk.chalkStrings.dim]
   @scala.inline
-  def dim: typings.chalk.chalkStrings.dim = this.cast("dim")
+  def hidden: typings.chalk.chalkStrings.hidden = "hidden".asInstanceOf[typings.chalk.chalkStrings.hidden]
   @scala.inline
-  def hidden: typings.chalk.chalkStrings.hidden = this.cast("hidden")
+  def inverse: typings.chalk.chalkStrings.inverse = "inverse".asInstanceOf[typings.chalk.chalkStrings.inverse]
   @scala.inline
-  def inverse: typings.chalk.chalkStrings.inverse = this.cast("inverse")
+  def italic: typings.chalk.chalkStrings.italic = "italic".asInstanceOf[typings.chalk.chalkStrings.italic]
   @scala.inline
-  def italic: typings.chalk.chalkStrings.italic = this.cast("italic")
+  def reset: typings.chalk.chalkStrings.reset = "reset".asInstanceOf[typings.chalk.chalkStrings.reset]
   @scala.inline
-  def reset: typings.chalk.chalkStrings.reset = this.cast("reset")
+  def strikethrough: typings.chalk.chalkStrings.strikethrough = "strikethrough".asInstanceOf[typings.chalk.chalkStrings.strikethrough]
   @scala.inline
-  def strikethrough: typings.chalk.chalkStrings.strikethrough = this.cast("strikethrough")
+  def underline: typings.chalk.chalkStrings.underline = "underline".asInstanceOf[typings.chalk.chalkStrings.underline]
   @scala.inline
-  def underline: typings.chalk.chalkStrings.underline = this.cast("underline")
-  @scala.inline
-  def visible: typings.chalk.chalkStrings.visible = this.cast("visible")
+  def visible: typings.chalk.chalkStrings.visible = "visible".asInstanceOf[typings.chalk.chalkStrings.visible]
 }
 

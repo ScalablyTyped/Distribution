@@ -13,7 +13,6 @@ object IBUDDY_ADD {
   @scala.inline
   def apply(buddy: SFSBuddy): IBUDDY_ADD = {
     val __obj = js.Dynamic.literal(buddy = buddy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IBUDDY_ADD]
   }
 }

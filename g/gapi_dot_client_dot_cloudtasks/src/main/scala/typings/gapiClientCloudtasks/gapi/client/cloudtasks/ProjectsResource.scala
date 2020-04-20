@@ -12,7 +12,6 @@ object ProjectsResource {
   @scala.inline
   def apply(locations: LocationsResource): ProjectsResource = {
     val __obj = js.Dynamic.literal(locations = locations.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProjectsResource]
   }
 }

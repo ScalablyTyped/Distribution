@@ -12,7 +12,6 @@ object AnonExtensions {
   @scala.inline
   def apply(extensions: String): AnonExtensions = {
     val __obj = js.Dynamic.literal(extensions = extensions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonExtensions]
   }
 }

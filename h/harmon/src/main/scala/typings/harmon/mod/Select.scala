@@ -13,7 +13,6 @@ object Select {
   @scala.inline
   def apply(func: js.Any => js.Any, query: String): Select = {
     val __obj = js.Dynamic.literal(func = js.Any.fromFunction1(func), query = query.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Select]
   }
 }

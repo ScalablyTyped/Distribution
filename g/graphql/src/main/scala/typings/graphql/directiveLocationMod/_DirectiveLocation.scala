@@ -72,7 +72,6 @@ object _DirectiveLocation {
     VARIABLE_DEFINITION: VARIABLE_DEFINITION
   ): _DirectiveLocation = {
     val __obj = js.Dynamic.literal(ARGUMENT_DEFINITION = ARGUMENT_DEFINITION.asInstanceOf[js.Any], ENUM = ENUM.asInstanceOf[js.Any], ENUM_VALUE = ENUM_VALUE.asInstanceOf[js.Any], FIELD = FIELD.asInstanceOf[js.Any], FIELD_DEFINITION = FIELD_DEFINITION.asInstanceOf[js.Any], FRAGMENT_DEFINITION = FRAGMENT_DEFINITION.asInstanceOf[js.Any], FRAGMENT_SPREAD = FRAGMENT_SPREAD.asInstanceOf[js.Any], INLINE_FRAGMENT = INLINE_FRAGMENT.asInstanceOf[js.Any], INPUT_FIELD_DEFINITION = INPUT_FIELD_DEFINITION.asInstanceOf[js.Any], INPUT_OBJECT = INPUT_OBJECT.asInstanceOf[js.Any], INTERFACE = INTERFACE.asInstanceOf[js.Any], MUTATION = MUTATION.asInstanceOf[js.Any], OBJECT = OBJECT.asInstanceOf[js.Any], QUERY = QUERY.asInstanceOf[js.Any], SCALAR = SCALAR.asInstanceOf[js.Any], SCHEMA = SCHEMA.asInstanceOf[js.Any], SUBSCRIPTION = SUBSCRIPTION.asInstanceOf[js.Any], UNION = UNION.asInstanceOf[js.Any], VARIABLE_DEFINITION = VARIABLE_DEFINITION.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[_DirectiveLocation]
   }
 }

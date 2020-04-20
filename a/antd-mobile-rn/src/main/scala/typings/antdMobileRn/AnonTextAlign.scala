@@ -13,7 +13,6 @@ object AnonTextAlign {
   @scala.inline
   def apply(color: String, textAlign: String): AnonTextAlign = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], textAlign = textAlign.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTextAlign]
   }
 }

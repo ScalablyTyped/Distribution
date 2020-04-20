@@ -16,7 +16,6 @@ object GetIdentityMailFromDomainAttributesResponse {
   @scala.inline
   def apply(MailFromDomainAttributes: MailFromDomainAttributes): GetIdentityMailFromDomainAttributesResponse = {
     val __obj = js.Dynamic.literal(MailFromDomainAttributes = MailFromDomainAttributes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetIdentityMailFromDomainAttributesResponse]
   }
 }

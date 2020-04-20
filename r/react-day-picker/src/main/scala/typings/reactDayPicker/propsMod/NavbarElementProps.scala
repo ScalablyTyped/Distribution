@@ -1,7 +1,8 @@
 package typings.reactDayPicker.propsMod
 
 import typings.reactDayPicker.AnonNextMonth
-import typings.reactDayPicker.commonMod.ClassNames
+import typings.reactDayPicker.classNamesMod.ClassNames
+import typings.reactDayPicker.localeUtilsMod.LocaleUtils
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +15,7 @@ trait NavbarElementProps extends js.Object {
   var dir: js.UndefOr[String] = js.native
   var labels: AnonNextMonth = js.native
   var locale: String = js.native
-  var localeUtils: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LocaleUtils */ js.Any = js.native
+  var localeUtils: LocaleUtils = js.native
   var month: Date = js.native
   var nextMonth: Date = js.native
   var previousMonth: Date = js.native

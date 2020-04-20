@@ -112,7 +112,6 @@ object Attributes {
     territory: js.Any
   ): Attributes = {
     val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any], languageId = languageId.asInstanceOf[js.Any], maxLanguageId = maxLanguageId.asInstanceOf[js.Any], minLanguageId = minLanguageId.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any], territory = territory.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Attributes]
   }
 }

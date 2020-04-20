@@ -13,10 +13,8 @@ trait StateChange extends js.Object
 
 object StateChange {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def countryChange: typings.baseui.baseuiStrings.countryChange = "countryChange".asInstanceOf[typings.baseui.baseuiStrings.countryChange]
   @scala.inline
-  def countryChange: typings.baseui.baseuiStrings.countryChange = this.cast("countryChange")
-  @scala.inline
-  def textChange: typings.baseui.baseuiStrings.textChange = this.cast("textChange")
+  def textChange: typings.baseui.baseuiStrings.textChange = "textChange".asInstanceOf[typings.baseui.baseuiStrings.textChange]
 }
 

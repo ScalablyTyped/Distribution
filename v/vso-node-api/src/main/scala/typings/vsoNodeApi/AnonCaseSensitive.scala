@@ -15,7 +15,6 @@ object AnonCaseSensitive {
   @scala.inline
   def apply(caseSensitive: Double, none: Double, objectTooLarge: Double, unknown: Double): AnonCaseSensitive = {
     val __obj = js.Dynamic.literal(caseSensitive = caseSensitive.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], objectTooLarge = objectTooLarge.asInstanceOf[js.Any], unknown = unknown.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCaseSensitive]
   }
 }

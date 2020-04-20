@@ -16,7 +16,6 @@ object DescribeSolutionVersionRequest {
   @scala.inline
   def apply(solutionVersionArn: Arn): DescribeSolutionVersionRequest = {
     val __obj = js.Dynamic.literal(solutionVersionArn = solutionVersionArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeSolutionVersionRequest]
   }
 }

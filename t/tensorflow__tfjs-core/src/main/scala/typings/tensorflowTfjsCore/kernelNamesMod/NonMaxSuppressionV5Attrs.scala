@@ -15,7 +15,6 @@ object NonMaxSuppressionV5Attrs {
   @scala.inline
   def apply(iouThreshold: Double, maxOutputSize: Double, scoreThreshold: Double, softNmsSigma: Double): NonMaxSuppressionV5Attrs = {
     val __obj = js.Dynamic.literal(iouThreshold = iouThreshold.asInstanceOf[js.Any], maxOutputSize = maxOutputSize.asInstanceOf[js.Any], scoreThreshold = scoreThreshold.asInstanceOf[js.Any], softNmsSigma = softNmsSigma.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NonMaxSuppressionV5Attrs]
   }
 }

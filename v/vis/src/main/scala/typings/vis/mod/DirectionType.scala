@@ -12,10 +12,8 @@ trait DirectionType extends js.Object
 
 object DirectionType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def from: typings.vis.visStrings.from = "from".asInstanceOf[typings.vis.visStrings.from]
   @scala.inline
-  def from: typings.vis.visStrings.from = this.cast("from")
-  @scala.inline
-  def to: typings.vis.visStrings.to = this.cast("to")
+  def to: typings.vis.visStrings.to = "to".asInstanceOf[typings.vis.visStrings.to]
 }
 

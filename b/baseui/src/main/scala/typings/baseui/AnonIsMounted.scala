@@ -12,7 +12,6 @@ object AnonIsMounted {
   @scala.inline
   def apply(isMounted: Boolean): AnonIsMounted = {
     val __obj = js.Dynamic.literal(isMounted = isMounted.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsMounted]
   }
 }

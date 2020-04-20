@@ -53,7 +53,7 @@ object directionalLightMod extends js.Object {
     /**
       * Fix frustum size for the shadow generation. This is disabled if the value is 0.
       */
-    def shadowFrustumSize(): Double = js.native
+    def shadowFrustumSize: Double = js.native
     /**
       * Specifies a fix frustum size for the shadow generation.
       */
@@ -63,7 +63,7 @@ object directionalLightMod extends js.Object {
       * 0.1 by default which means that the projection window is increase by 10% from the optimal size.
       * This does not impact in fixed frustum size (shadowFrustumSize being set)
       */
-    def shadowOrthoScale(): Double = js.native
+    def shadowOrthoScale: Double = js.native
     /**
       * Sets the shadow projection scale against the optimal computed one.
       * 0.1 by default which means that the projection window is increase by 10% from the optimal size.

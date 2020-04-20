@@ -14,14 +14,12 @@ trait Phase extends js.Object
 
 object Phase {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def request: typings.hoxy.hoxyStrings.request = "request".asInstanceOf[typings.hoxy.hoxyStrings.request]
   @scala.inline
-  def request: typings.hoxy.hoxyStrings.request = this.cast("request")
+  def `request-sent`: typings.hoxy.hoxyStrings.`request-sent` = "request-sent".asInstanceOf[typings.hoxy.hoxyStrings.`request-sent`]
   @scala.inline
-  def `request-sent`: typings.hoxy.hoxyStrings.`request-sent` = this.cast("request-sent")
+  def response: typings.hoxy.hoxyStrings.response = "response".asInstanceOf[typings.hoxy.hoxyStrings.response]
   @scala.inline
-  def response: typings.hoxy.hoxyStrings.response = this.cast("response")
-  @scala.inline
-  def `response-sent`: typings.hoxy.hoxyStrings.`response-sent` = this.cast("response-sent")
+  def `response-sent`: typings.hoxy.hoxyStrings.`response-sent` = "response-sent".asInstanceOf[typings.hoxy.hoxyStrings.`response-sent`]
 }
 

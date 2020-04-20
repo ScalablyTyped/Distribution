@@ -12,7 +12,6 @@ object Chooser {
   @scala.inline
   def apply(choose: ChooserOptions => Unit): Chooser = {
     val __obj = js.Dynamic.literal(choose = js.Any.fromFunction1(choose))
-  
     __obj.asInstanceOf[Chooser]
   }
 }

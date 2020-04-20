@@ -19,16 +19,14 @@ trait CryptoName extends js.Object
 
 object CryptoName {
   @scala.inline
-  def bitcoin: typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.bitcoin = this.cast("bitcoin")
+  def bitcoin: typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.bitcoin = "bitcoin".asInstanceOf[typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.bitcoin]
   @scala.inline
-  def bitcoincash: typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.bitcoincash = this.cast("bitcoincash")
+  def bitcoincash: typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.bitcoincash = "bitcoincash".asInstanceOf[typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.bitcoincash]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ethereum: typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.ethereum = "ethereum".asInstanceOf[typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.ethereum]
   @scala.inline
-  def ethereum: typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.ethereum = this.cast("ethereum")
+  def litecoin: typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.litecoin = "litecoin".asInstanceOf[typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.litecoin]
   @scala.inline
-  def litecoin: typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.litecoin = this.cast("litecoin")
-  @scala.inline
-  def usdc: usdc_ = this.cast("usdc")
+  def usdc: usdc_ = "usdc".asInstanceOf[usdc_]
 }
 

@@ -18,7 +18,6 @@ object IGenericMeasureLayout {
   @scala.inline
   def apply(qInfo: INxInfo, qMeasure: INxLibraryMeasureDef, qMeta: INxMeta): IGenericMeasureLayout = {
     val __obj = js.Dynamic.literal(qInfo = qInfo.asInstanceOf[js.Any], qMeasure = qMeasure.asInstanceOf[js.Any], qMeta = qMeta.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IGenericMeasureLayout]
   }
 }

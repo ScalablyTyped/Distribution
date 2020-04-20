@@ -15,7 +15,6 @@ object AnonManager {
   @scala.inline
   def apply(manager: DragDropManager): AnonManager = {
     val __obj = js.Dynamic.literal(manager = manager.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonManager]
   }
 }

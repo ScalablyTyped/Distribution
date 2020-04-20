@@ -30,44 +30,42 @@ trait FillPatterns extends js.Object
 
 object FillPatterns {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def darkDown: typings.exceljs.exceljsStrings.darkDown = "darkDown".asInstanceOf[typings.exceljs.exceljsStrings.darkDown]
   @scala.inline
-  def darkDown: typings.exceljs.exceljsStrings.darkDown = this.cast("darkDown")
+  def darkGray: typings.exceljs.exceljsStrings.darkGray = "darkGray".asInstanceOf[typings.exceljs.exceljsStrings.darkGray]
   @scala.inline
-  def darkGray: typings.exceljs.exceljsStrings.darkGray = this.cast("darkGray")
+  def darkGrid: typings.exceljs.exceljsStrings.darkGrid = "darkGrid".asInstanceOf[typings.exceljs.exceljsStrings.darkGrid]
   @scala.inline
-  def darkGrid: typings.exceljs.exceljsStrings.darkGrid = this.cast("darkGrid")
+  def darkHorizontal: typings.exceljs.exceljsStrings.darkHorizontal = "darkHorizontal".asInstanceOf[typings.exceljs.exceljsStrings.darkHorizontal]
   @scala.inline
-  def darkHorizontal: typings.exceljs.exceljsStrings.darkHorizontal = this.cast("darkHorizontal")
+  def darkTrellis: typings.exceljs.exceljsStrings.darkTrellis = "darkTrellis".asInstanceOf[typings.exceljs.exceljsStrings.darkTrellis]
   @scala.inline
-  def darkTrellis: typings.exceljs.exceljsStrings.darkTrellis = this.cast("darkTrellis")
+  def darkUp: typings.exceljs.exceljsStrings.darkUp = "darkUp".asInstanceOf[typings.exceljs.exceljsStrings.darkUp]
   @scala.inline
-  def darkUp: typings.exceljs.exceljsStrings.darkUp = this.cast("darkUp")
+  def darkVertical: typings.exceljs.exceljsStrings.darkVertical = "darkVertical".asInstanceOf[typings.exceljs.exceljsStrings.darkVertical]
   @scala.inline
-  def darkVertical: typings.exceljs.exceljsStrings.darkVertical = this.cast("darkVertical")
+  def gray0625: typings.exceljs.exceljsStrings.gray0625 = "gray0625".asInstanceOf[typings.exceljs.exceljsStrings.gray0625]
   @scala.inline
-  def gray0625: typings.exceljs.exceljsStrings.gray0625 = this.cast("gray0625")
+  def gray125: typings.exceljs.exceljsStrings.gray125 = "gray125".asInstanceOf[typings.exceljs.exceljsStrings.gray125]
   @scala.inline
-  def gray125: typings.exceljs.exceljsStrings.gray125 = this.cast("gray125")
+  def lightDown: typings.exceljs.exceljsStrings.lightDown = "lightDown".asInstanceOf[typings.exceljs.exceljsStrings.lightDown]
   @scala.inline
-  def lightDown: typings.exceljs.exceljsStrings.lightDown = this.cast("lightDown")
+  def lightGray: typings.exceljs.exceljsStrings.lightGray = "lightGray".asInstanceOf[typings.exceljs.exceljsStrings.lightGray]
   @scala.inline
-  def lightGray: typings.exceljs.exceljsStrings.lightGray = this.cast("lightGray")
+  def lightGrid: typings.exceljs.exceljsStrings.lightGrid = "lightGrid".asInstanceOf[typings.exceljs.exceljsStrings.lightGrid]
   @scala.inline
-  def lightGrid: typings.exceljs.exceljsStrings.lightGrid = this.cast("lightGrid")
+  def lightHorizontal: typings.exceljs.exceljsStrings.lightHorizontal = "lightHorizontal".asInstanceOf[typings.exceljs.exceljsStrings.lightHorizontal]
   @scala.inline
-  def lightHorizontal: typings.exceljs.exceljsStrings.lightHorizontal = this.cast("lightHorizontal")
+  def lightTrellis: typings.exceljs.exceljsStrings.lightTrellis = "lightTrellis".asInstanceOf[typings.exceljs.exceljsStrings.lightTrellis]
   @scala.inline
-  def lightTrellis: typings.exceljs.exceljsStrings.lightTrellis = this.cast("lightTrellis")
+  def lightUp: typings.exceljs.exceljsStrings.lightUp = "lightUp".asInstanceOf[typings.exceljs.exceljsStrings.lightUp]
   @scala.inline
-  def lightUp: typings.exceljs.exceljsStrings.lightUp = this.cast("lightUp")
+  def lightVertical: typings.exceljs.exceljsStrings.lightVertical = "lightVertical".asInstanceOf[typings.exceljs.exceljsStrings.lightVertical]
   @scala.inline
-  def lightVertical: typings.exceljs.exceljsStrings.lightVertical = this.cast("lightVertical")
+  def mediumGray: typings.exceljs.exceljsStrings.mediumGray = "mediumGray".asInstanceOf[typings.exceljs.exceljsStrings.mediumGray]
   @scala.inline
-  def mediumGray: typings.exceljs.exceljsStrings.mediumGray = this.cast("mediumGray")
+  def none: none_ = "none".asInstanceOf[none_]
   @scala.inline
-  def none: none_ = this.cast("none")
-  @scala.inline
-  def solid: typings.exceljs.exceljsStrings.solid = this.cast("solid")
+  def solid: typings.exceljs.exceljsStrings.solid = "solid".asInstanceOf[typings.exceljs.exceljsStrings.solid]
 }
 

@@ -21,7 +21,7 @@ trait XmlDecl[Parent] extends js.Object {
     * Gets the encoding associated with this declaration.
     */
   @JSName("encoding")
-  def encoding_Union(): js.UndefOr[String] = js.native
+  def encoding_Union: js.UndefOr[String] = js.native
   def standalone(): js.Any = js.native
   /**
     * Sets the value of the standalone attribute associated with this
@@ -33,7 +33,7 @@ trait XmlDecl[Parent] extends js.Object {
     * declaration.
     */
   @JSName("standalone")
-  def standalone_Union(): js.UndefOr[String] = js.native
+  def standalone_Union: js.UndefOr[String] = js.native
   def toString(options: IStringOptions): String = js.native
   /**
     * Returns the parent of this declaration.
@@ -42,7 +42,7 @@ trait XmlDecl[Parent] extends js.Object {
   /**
     * Gets the XML version associated with this declaration.
     */
-  def version(): String = js.native
+  def version: String = js.native
   /**
     * Sets the XML version associated with this declaration.
     */

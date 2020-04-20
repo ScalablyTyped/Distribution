@@ -16,7 +16,6 @@ object DescribeFileSystemPolicyRequest {
   @scala.inline
   def apply(FileSystemId: FileSystemId): DescribeFileSystemPolicyRequest = {
     val __obj = js.Dynamic.literal(FileSystemId = FileSystemId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeFileSystemPolicyRequest]
   }
 }

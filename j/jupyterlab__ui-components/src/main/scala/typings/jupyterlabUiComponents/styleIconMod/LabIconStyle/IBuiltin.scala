@@ -44,38 +44,36 @@ trait IBuiltin extends ISheetResolvable
 
 object IBuiltin {
   @scala.inline
-  def breadCrumb: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.breadCrumb = this.cast("breadCrumb")
+  def breadCrumb: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.breadCrumb = "breadCrumb".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.breadCrumb]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def commandPaletteHeader: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.commandPaletteHeader = "commandPaletteHeader".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.commandPaletteHeader]
   @scala.inline
-  def commandPaletteHeader: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.commandPaletteHeader = this.cast("commandPaletteHeader")
+  def commandPaletteItem: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.commandPaletteItem = "commandPaletteItem".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.commandPaletteItem]
   @scala.inline
-  def commandPaletteItem: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.commandPaletteItem = this.cast("commandPaletteItem")
+  def launcherCard: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.launcherCard = "launcherCard".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.launcherCard]
   @scala.inline
-  def launcherCard: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.launcherCard = this.cast("launcherCard")
+  def launcherSection: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.launcherSection = "launcherSection".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.launcherSection]
   @scala.inline
-  def launcherSection: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.launcherSection = this.cast("launcherSection")
+  def listing: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.listing = "listing".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.listing]
   @scala.inline
-  def listing: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.listing = this.cast("listing")
+  def listingHeaderItem: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.listingHeaderItem = "listingHeaderItem".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.listingHeaderItem]
   @scala.inline
-  def listingHeaderItem: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.listingHeaderItem = this.cast("listingHeaderItem")
+  def mainAreaTab: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.mainAreaTab = "mainAreaTab".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.mainAreaTab]
   @scala.inline
-  def mainAreaTab: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.mainAreaTab = this.cast("mainAreaTab")
+  def menuItem: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.menuItem = "menuItem".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.menuItem]
   @scala.inline
-  def menuItem: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.menuItem = this.cast("menuItem")
+  def runningItem: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.runningItem = "runningItem".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.runningItem]
   @scala.inline
-  def runningItem: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.runningItem = this.cast("runningItem")
+  def select: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.select = "select".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.select]
   @scala.inline
-  def select: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.select = this.cast("select")
+  def settingsEditor: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.settingsEditor = "settingsEditor".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.settingsEditor]
   @scala.inline
-  def settingsEditor: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.settingsEditor = this.cast("settingsEditor")
+  def sideBar: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.sideBar = "sideBar".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.sideBar]
   @scala.inline
-  def sideBar: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.sideBar = this.cast("sideBar")
+  def splash: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.splash = "splash".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.splash]
   @scala.inline
-  def splash: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.splash = this.cast("splash")
+  def statusBar: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.statusBar = "statusBar".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.statusBar]
   @scala.inline
-  def statusBar: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.statusBar = this.cast("statusBar")
-  @scala.inline
-  def toolbarButton: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.toolbarButton = this.cast("toolbarButton")
+  def toolbarButton: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.toolbarButton = "toolbarButton".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.toolbarButton]
 }
 

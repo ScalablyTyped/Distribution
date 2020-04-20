@@ -44,7 +44,6 @@ object text {
     normalize: (js.Any, js.Any) => String
   ): text = {
     val __obj = js.Dynamic.literal(dynamic = dynamic.asInstanceOf[js.Any], load = js.Any.fromFunction3(load), normalize = js.Any.fromFunction2(normalize))
-  
     __obj.asInstanceOf[text]
   }
 }

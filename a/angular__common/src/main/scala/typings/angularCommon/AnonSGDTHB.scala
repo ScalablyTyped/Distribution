@@ -22,7 +22,6 @@ object AnonSGDTHB {
     USD: js.Array[String]
   ): AnonSGDTHB = {
     val __obj = js.Dynamic.literal(MYR = MYR.asInstanceOf[js.Any], SGD = SGD.asInstanceOf[js.Any], THB = THB.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSGDTHB]
   }
 }

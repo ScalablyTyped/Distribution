@@ -25,7 +25,6 @@ object TopicRuleS3 {
   @scala.inline
   def apply(bucketName: Input[String], key: Input[String], roleArn: Input[String]): TopicRuleS3 = {
     val __obj = js.Dynamic.literal(bucketName = bucketName.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TopicRuleS3]
   }
 }

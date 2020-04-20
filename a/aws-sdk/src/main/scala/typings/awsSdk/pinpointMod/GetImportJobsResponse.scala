@@ -13,7 +13,6 @@ object GetImportJobsResponse {
   @scala.inline
   def apply(ImportJobsResponse: ImportJobsResponse): GetImportJobsResponse = {
     val __obj = js.Dynamic.literal(ImportJobsResponse = ImportJobsResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetImportJobsResponse]
   }
 }

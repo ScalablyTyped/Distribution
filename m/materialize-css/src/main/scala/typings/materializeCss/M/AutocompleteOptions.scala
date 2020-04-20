@@ -39,7 +39,6 @@ object AutocompleteOptions {
     sortFunction: (String, String, String) => Double
   ): AutocompleteOptions = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], minLength = minLength.asInstanceOf[js.Any], onAutocomplete = js.Any.fromFunction1(onAutocomplete), sortFunction = js.Any.fromFunction3(sortFunction))
-  
     __obj.asInstanceOf[AutocompleteOptions]
   }
 }

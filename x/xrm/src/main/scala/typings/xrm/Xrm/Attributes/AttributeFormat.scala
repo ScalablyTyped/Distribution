@@ -29,30 +29,28 @@ trait AttributeFormat extends js.Object
 
 object AttributeFormat {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def date: typings.xrm.xrmStrings.date = "date".asInstanceOf[typings.xrm.xrmStrings.date]
   @scala.inline
-  def date: typings.xrm.xrmStrings.date = this.cast("date")
+  def datetime: typings.xrm.xrmStrings.datetime = "datetime".asInstanceOf[typings.xrm.xrmStrings.datetime]
   @scala.inline
-  def datetime: typings.xrm.xrmStrings.datetime = this.cast("datetime")
+  def duration: typings.xrm.xrmStrings.duration = "duration".asInstanceOf[typings.xrm.xrmStrings.duration]
   @scala.inline
-  def duration: typings.xrm.xrmStrings.duration = this.cast("duration")
+  def email: typings.xrm.xrmStrings.email = "email".asInstanceOf[typings.xrm.xrmStrings.email]
   @scala.inline
-  def email: typings.xrm.xrmStrings.email = this.cast("email")
+  def language: typings.xrm.xrmStrings.language = "language".asInstanceOf[typings.xrm.xrmStrings.language]
   @scala.inline
-  def language: typings.xrm.xrmStrings.language = this.cast("language")
+  def none: typings.xrm.xrmStrings.none = "none".asInstanceOf[typings.xrm.xrmStrings.none]
   @scala.inline
-  def none: typings.xrm.xrmStrings.none = this.cast("none")
+  def phone: typings.xrm.xrmStrings.phone = "phone".asInstanceOf[typings.xrm.xrmStrings.phone]
   @scala.inline
-  def phone: typings.xrm.xrmStrings.phone = this.cast("phone")
+  def text: typings.xrm.xrmStrings.text = "text".asInstanceOf[typings.xrm.xrmStrings.text]
   @scala.inline
-  def text: typings.xrm.xrmStrings.text = this.cast("text")
+  def textarea: typings.xrm.xrmStrings.textarea = "textarea".asInstanceOf[typings.xrm.xrmStrings.textarea]
   @scala.inline
-  def textarea: typings.xrm.xrmStrings.textarea = this.cast("textarea")
+  def tickersymbol: typings.xrm.xrmStrings.tickersymbol = "tickersymbol".asInstanceOf[typings.xrm.xrmStrings.tickersymbol]
   @scala.inline
-  def tickersymbol: typings.xrm.xrmStrings.tickersymbol = this.cast("tickersymbol")
+  def timezone: typings.xrm.xrmStrings.timezone = "timezone".asInstanceOf[typings.xrm.xrmStrings.timezone]
   @scala.inline
-  def timezone: typings.xrm.xrmStrings.timezone = this.cast("timezone")
-  @scala.inline
-  def url: typings.xrm.xrmStrings.url = this.cast("url")
+  def url: typings.xrm.xrmStrings.url = "url".asInstanceOf[typings.xrm.xrmStrings.url]
 }
 

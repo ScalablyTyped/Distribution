@@ -17,18 +17,16 @@ trait UndefinedViewType extends js.Object
 
 object UndefinedViewType {
   @scala.inline
-  def background: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.background = this.cast("background")
+  def background: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.background = "background".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.background]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def devtools_page: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.devtools_page = "devtools_page".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.devtools_page]
   @scala.inline
-  def devtools_page: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.devtools_page = this.cast("devtools_page")
+  def devtools_panel: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.devtools_panel = "devtools_panel".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.devtools_panel]
   @scala.inline
-  def devtools_panel: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.devtools_panel = this.cast("devtools_panel")
+  def popup: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.popup = "popup".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.popup]
   @scala.inline
-  def popup: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.popup = this.cast("popup")
+  def sidebar: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.sidebar = "sidebar".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.sidebar]
   @scala.inline
-  def sidebar: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.sidebar = this.cast("sidebar")
-  @scala.inline
-  def tab: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tab = this.cast("tab")
+  def tab: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tab = "tab".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tab]
 }
 

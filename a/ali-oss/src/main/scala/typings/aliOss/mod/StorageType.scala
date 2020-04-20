@@ -13,12 +13,10 @@ trait StorageType extends js.Object
 
 object StorageType {
   @scala.inline
-  def Archive: typings.aliOss.aliOssStrings.Archive = this.cast("Archive")
+  def Archive: typings.aliOss.aliOssStrings.Archive = "Archive".asInstanceOf[typings.aliOss.aliOssStrings.Archive]
   @scala.inline
-  def IA: typings.aliOss.aliOssStrings.IA = this.cast("IA")
+  def IA: typings.aliOss.aliOssStrings.IA = "IA".asInstanceOf[typings.aliOss.aliOssStrings.IA]
   @scala.inline
-  def Standard: typings.aliOss.aliOssStrings.Standard = this.cast("Standard")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Standard: typings.aliOss.aliOssStrings.Standard = "Standard".asInstanceOf[typings.aliOss.aliOssStrings.Standard]
 }
 

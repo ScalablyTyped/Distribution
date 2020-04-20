@@ -20,7 +20,6 @@ object DeleteUserEndpointsRequest {
   @scala.inline
   def apply(ApplicationId: string, UserId: string): DeleteUserEndpointsRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], UserId = UserId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteUserEndpointsRequest]
   }
 }

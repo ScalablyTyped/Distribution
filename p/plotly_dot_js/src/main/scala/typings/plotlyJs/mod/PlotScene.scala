@@ -14,7 +14,6 @@ object PlotScene {
   @scala.inline
   def apply(center: Point, eye: Point, up: Point): PlotScene = {
     val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], eye = eye.asInstanceOf[js.Any], up = up.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PlotScene]
   }
 }

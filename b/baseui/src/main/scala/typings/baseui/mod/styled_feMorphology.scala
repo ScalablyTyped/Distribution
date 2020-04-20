@@ -15,7 +15,17 @@ import scala.scalajs.js.annotation._
 @JSImport("baseui", "styled")
 @js.native
 object styled_feMorphology extends js.Object {
-  def apply[P /* <: js.Object */, T](component: feMorphology, styledFn: js.Function1[/* props */ AnonTheme[T] with P, StyleObject]): StyletronComponent[(Pick[ComponentProps[feMorphology], Exclude[String, AnonClassName]]) with P] = js.native
-  def apply[P /* <: js.Object */, T](component: feMorphology, styledFn: StyleObject): StyletronComponent[(Pick[ComponentProps[feMorphology], Exclude[String, AnonClassName]]) with P] = js.native
+  def apply[P /* <: js.Object */, T](component: feMorphology, styledFn: js.Function1[/* props */ AnonTheme[T] with P, StyleObject]): StyletronComponent[
+    (Pick[
+      ComponentProps[feMorphology], 
+      Exclude[/* keyof react.react.ComponentProps<'feMorphology'> */ String, AnonClassName]
+    ]) with P
+  ] = js.native
+  def apply[P /* <: js.Object */, T](component: feMorphology, styledFn: StyleObject): StyletronComponent[
+    (Pick[
+      ComponentProps[feMorphology], 
+      Exclude[/* keyof react.react.ComponentProps<'feMorphology'> */ String, AnonClassName]
+    ]) with P
+  ] = js.native
 }
 

@@ -69,7 +69,7 @@ object sparkpostStrings {
   sealed trait valid extends js.Object
   
   @scala.inline
-  def `Bounce Rule`: `Bounce Rule` = "Bounce Rule".asInstanceOf[`Bounce Rule`]
+  def `Bounce Rule`: `Bounce Rule` = ("Bounce Rule").asInstanceOf[`Bounce Rule`]
   @scala.inline
   def Canceled: Canceled = "Canceled".asInstanceOf[Canceled]
   @scala.inline
@@ -77,17 +77,17 @@ object sparkpostStrings {
   @scala.inline
   def Generating: Generating = "Generating".asInstanceOf[Generating]
   @scala.inline
-  def `List Unsubscribe`: `List Unsubscribe` = "List Unsubscribe".asInstanceOf[`List Unsubscribe`]
+  def `List Unsubscribe`: `List Unsubscribe` = ("List Unsubscribe").asInstanceOf[`List Unsubscribe`]
   @scala.inline
-  def `Manually Added`: `Manually Added` = "Manually Added".asInstanceOf[`Manually Added`]
+  def `Manually Added`: `Manually Added` = ("Manually Added").asInstanceOf[`Manually Added`]
   @scala.inline
-  def `Spam Complaint`: `Spam Complaint` = "Spam Complaint".asInstanceOf[`Spam Complaint`]
+  def `Spam Complaint`: `Spam Complaint` = ("Spam Complaint").asInstanceOf[`Spam Complaint`]
   @scala.inline
   def SparkPostError: SparkPostError = "SparkPostError".asInstanceOf[SparkPostError]
   @scala.inline
   def Success: Success = "Success".asInstanceOf[Success]
   @scala.inline
-  def `Unsubscribe Link`: `Unsubscribe Link` = "Unsubscribe Link".asInstanceOf[`Unsubscribe Link`]
+  def `Unsubscribe Link`: `Unsubscribe Link` = ("Unsubscribe Link").asInstanceOf[`Unsubscribe Link`]
   @scala.inline
   def active: active = "active".asInstanceOf[active]
   @scala.inline

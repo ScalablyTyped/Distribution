@@ -16,7 +16,6 @@ object DescribeOriginEndpointRequest {
   @scala.inline
   def apply(Id: string): DescribeOriginEndpointRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeOriginEndpointRequest]
   }
 }

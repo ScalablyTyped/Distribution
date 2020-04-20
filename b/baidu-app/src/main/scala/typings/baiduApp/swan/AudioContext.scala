@@ -31,7 +31,6 @@ object AudioContext {
   @scala.inline
   def apply(pause: () => Unit, play: () => Unit, seek: Double => Unit, setSrc: String => Unit): AudioContext = {
     val __obj = js.Dynamic.literal(pause = js.Any.fromFunction0(pause), play = js.Any.fromFunction0(play), seek = js.Any.fromFunction1(seek), setSrc = js.Any.fromFunction1(setSrc))
-  
     __obj.asInstanceOf[AudioContext]
   }
 }

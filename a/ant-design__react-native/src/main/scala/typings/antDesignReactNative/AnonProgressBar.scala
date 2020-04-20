@@ -15,7 +15,6 @@ object AnonProgressBar {
   @scala.inline
   def apply(progressBar: RegisteredStyle[ViewStyle], progressOuter: RegisteredStyle[ViewStyle]): AnonProgressBar = {
     val __obj = js.Dynamic.literal(progressBar = progressBar.asInstanceOf[js.Any], progressOuter = progressOuter.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonProgressBar]
   }
 }

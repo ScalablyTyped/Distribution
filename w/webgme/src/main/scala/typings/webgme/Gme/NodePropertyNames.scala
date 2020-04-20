@@ -13,7 +13,6 @@ object NodePropertyNames {
   @scala.inline
   def apply(Attributes: AnonName): NodePropertyNames = {
     val __obj = js.Dynamic.literal(Attributes = Attributes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NodePropertyNames]
   }
 }

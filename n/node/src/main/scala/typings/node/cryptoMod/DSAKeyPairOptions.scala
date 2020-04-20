@@ -28,7 +28,6 @@ object DSAKeyPairOptions {
     publicKeyEncoding: AnonFormatType[PubF]
   ): DSAKeyPairOptions[PubF, PrivF] = {
     val __obj = js.Dynamic.literal(divisorLength = divisorLength.asInstanceOf[js.Any], modulusLength = modulusLength.asInstanceOf[js.Any], privateKeyEncoding = privateKeyEncoding.asInstanceOf[js.Any], publicKeyEncoding = publicKeyEncoding.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DSAKeyPairOptions[PubF, PrivF]]
   }
 }

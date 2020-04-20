@@ -15,7 +15,6 @@ object AnonCompiler {
   @scala.inline
   def apply(compiler: Options, components: js.Any, transform: js.Array[_]): AnonCompiler = {
     val __obj = js.Dynamic.literal(compiler = compiler.asInstanceOf[js.Any], components = components.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCompiler]
   }
 }

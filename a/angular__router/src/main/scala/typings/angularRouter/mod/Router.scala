@@ -280,6 +280,6 @@ class Router protected () extends js.Object {
     */
   def setUpLocationChangeListener(): Unit = js.native
   /** The current URL. */
-  def url(): String = js.native
+  def url: String = js.native
 }
 

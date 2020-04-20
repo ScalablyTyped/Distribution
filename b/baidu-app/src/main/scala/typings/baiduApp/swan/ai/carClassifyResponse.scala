@@ -17,7 +17,6 @@ object carClassifyResponse {
   @scala.inline
   def apply(location_result: AnonHeight, log_id: Double, result: js.Array[AnonName]): carClassifyResponse = {
     val __obj = js.Dynamic.literal(location_result = location_result.asInstanceOf[js.Any], log_id = log_id.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[carClassifyResponse]
   }
 }

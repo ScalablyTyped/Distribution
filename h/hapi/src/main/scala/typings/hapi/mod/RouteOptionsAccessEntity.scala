@@ -13,12 +13,10 @@ trait RouteOptionsAccessEntity extends js.Object
 
 object RouteOptionsAccessEntity {
   @scala.inline
-  def any: typings.hapi.hapiStrings.any = this.cast("any")
+  def any: typings.hapi.hapiStrings.any = "any".asInstanceOf[typings.hapi.hapiStrings.any]
   @scala.inline
-  def app: typings.hapi.hapiStrings.app = this.cast("app")
+  def app: typings.hapi.hapiStrings.app = "app".asInstanceOf[typings.hapi.hapiStrings.app]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def user: typings.hapi.hapiStrings.user = this.cast("user")
+  def user: typings.hapi.hapiStrings.user = "user".asInstanceOf[typings.hapi.hapiStrings.user]
 }
 

@@ -15,7 +15,6 @@ object AssertionResult {
   @scala.inline
   def apply(failureMessages: js.Array[String], fullName: String, status: String, title: String): AssertionResult = {
     val __obj = js.Dynamic.literal(failureMessages = failureMessages.asInstanceOf[js.Any], fullName = fullName.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssertionResult]
   }
 }

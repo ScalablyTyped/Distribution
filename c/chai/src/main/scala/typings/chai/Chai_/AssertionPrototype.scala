@@ -15,7 +15,6 @@ object AssertionPrototype {
   @scala.inline
   def apply(_obj: js.Any, assert: AssertionArgs => Unit): AssertionPrototype = {
     val __obj = js.Dynamic.literal(_obj = _obj.asInstanceOf[js.Any], assert = js.Any.fromFunction1(assert))
-  
     __obj.asInstanceOf[AssertionPrototype]
   }
 }

@@ -16,7 +16,6 @@ object ValidateSecurityProfileBehaviorsRequest {
   @scala.inline
   def apply(behaviors: Behaviors): ValidateSecurityProfileBehaviorsRequest = {
     val __obj = js.Dynamic.literal(behaviors = behaviors.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ValidateSecurityProfileBehaviorsRequest]
   }
 }

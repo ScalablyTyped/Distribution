@@ -13,7 +13,6 @@ object AnonMeridiemPM {
   @scala.inline
   def apply(meridiemAM: String, meridiemPM: String): AnonMeridiemPM = {
     val __obj = js.Dynamic.literal(meridiemAM = meridiemAM.asInstanceOf[js.Any], meridiemPM = meridiemPM.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMeridiemPM]
   }
 }

@@ -18,7 +18,6 @@ object WebRequestOnErrorOccurredEvent {
     removeListener: TCallback => Unit
   ): WebRequestOnErrorOccurredEvent[TCallback] = {
     val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction2(addListener), hasListener = js.Any.fromFunction1(hasListener), removeListener = js.Any.fromFunction1(removeListener))
-  
     __obj.asInstanceOf[WebRequestOnErrorOccurredEvent[TCallback]]
   }
 }

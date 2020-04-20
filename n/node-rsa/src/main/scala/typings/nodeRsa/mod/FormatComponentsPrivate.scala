@@ -16,18 +16,16 @@ trait FormatComponentsPrivate extends js.Object
 
 object FormatComponentsPrivate {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def components: typings.nodeRsa.nodeRsaStrings.components = "components".asInstanceOf[typings.nodeRsa.nodeRsaStrings.components]
   @scala.inline
-  def components: typings.nodeRsa.nodeRsaStrings.components = this.cast("components")
+  def `components-der`: typings.nodeRsa.nodeRsaStrings.`components-der` = "components-der".asInstanceOf[typings.nodeRsa.nodeRsaStrings.`components-der`]
   @scala.inline
-  def `components-der`: typings.nodeRsa.nodeRsaStrings.`components-der` = this.cast("components-der")
+  def `components-pem`: typings.nodeRsa.nodeRsaStrings.`components-pem` = "components-pem".asInstanceOf[typings.nodeRsa.nodeRsaStrings.`components-pem`]
   @scala.inline
-  def `components-pem`: typings.nodeRsa.nodeRsaStrings.`components-pem` = this.cast("components-pem")
+  def `components-private`: typings.nodeRsa.nodeRsaStrings.`components-private` = "components-private".asInstanceOf[typings.nodeRsa.nodeRsaStrings.`components-private`]
   @scala.inline
-  def `components-private`: typings.nodeRsa.nodeRsaStrings.`components-private` = this.cast("components-private")
+  def `components-private-der`: typings.nodeRsa.nodeRsaStrings.`components-private-der` = "components-private-der".asInstanceOf[typings.nodeRsa.nodeRsaStrings.`components-private-der`]
   @scala.inline
-  def `components-private-der`: typings.nodeRsa.nodeRsaStrings.`components-private-der` = this.cast("components-private-der")
-  @scala.inline
-  def `components-private-pem`: typings.nodeRsa.nodeRsaStrings.`components-private-pem` = this.cast("components-private-pem")
+  def `components-private-pem`: typings.nodeRsa.nodeRsaStrings.`components-private-pem` = "components-private-pem".asInstanceOf[typings.nodeRsa.nodeRsaStrings.`components-private-pem`]
 }
 

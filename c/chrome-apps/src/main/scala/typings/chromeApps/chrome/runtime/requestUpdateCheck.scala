@@ -2,9 +2,12 @@ package typings.chromeApps.chrome.runtime
 
 import typings.chromeApps.AnonNOUPDATE
 import typings.chromeApps.chrome.ToStringLiteral
-import typings.chromeApps.chromeAppsStrings.no_update
-import typings.chromeApps.chromeAppsStrings.throttled
-import typings.chromeApps.chromeAppsStrings.update_available
+import typings.chromeApps.chromeAppsStrings.NO_UPDATE
+import typings.chromeApps.chromeAppsStrings.THROTTLED
+import typings.chromeApps.chromeAppsStrings.UPDATE_AVAILABLE
+import typings.chromeApps.chromeAppsStrings.no_update_
+import typings.chromeApps.chromeAppsStrings.throttled_
+import typings.chromeApps.chromeAppsStrings.update_available_
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +25,14 @@ object requestUpdateCheck extends js.Object {
     */
   def apply(
     callback: js.Function2[
-      /* status */ ToStringLiteral[AnonNOUPDATE, String, Exclude[String, throttled | no_update | update_available]], 
+      /* status */ ToStringLiteral[
+        AnonNOUPDATE, 
+        THROTTLED | NO_UPDATE | UPDATE_AVAILABLE, 
+        Exclude[
+          THROTTLED | NO_UPDATE | UPDATE_AVAILABLE, 
+          throttled_ | no_update_ | update_available_
+        ]
+      ], 
       /* details */ js.UndefOr[UpdateCheckDetails], 
       Unit
     ]

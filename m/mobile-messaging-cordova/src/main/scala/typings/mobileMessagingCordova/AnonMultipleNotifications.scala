@@ -15,7 +15,6 @@ object AnonMultipleNotifications {
   @scala.inline
   def apply(multipleNotifications: Boolean, notificationAccentColor: String, notificationIcon: String): AnonMultipleNotifications = {
     val __obj = js.Dynamic.literal(multipleNotifications = multipleNotifications.asInstanceOf[js.Any], notificationAccentColor = notificationAccentColor.asInstanceOf[js.Any], notificationIcon = notificationIcon.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMultipleNotifications]
   }
 }

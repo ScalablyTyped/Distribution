@@ -18,7 +18,6 @@ object FullKeybindingMatchEvent {
   @scala.inline
   def apply(binding: KeyBinding, keyboardEventTarget: Element, keystrokes: String): FullKeybindingMatchEvent = {
     val __obj = js.Dynamic.literal(binding = binding.asInstanceOf[js.Any], keyboardEventTarget = keyboardEventTarget.asInstanceOf[js.Any], keystrokes = keystrokes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FullKeybindingMatchEvent]
   }
 }

@@ -21,7 +21,6 @@ object XLExport {
   @scala.inline
   def apply(export: (String, ExportType) => Unit, getExportProps: () => js.Any): XLExport = {
     val __obj = js.Dynamic.literal(export = js.Any.fromFunction2(export), getExportProps = js.Any.fromFunction0(getExportProps))
-  
     __obj.asInstanceOf[XLExport]
   }
 }

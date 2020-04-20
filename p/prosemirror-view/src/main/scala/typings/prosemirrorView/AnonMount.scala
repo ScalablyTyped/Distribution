@@ -13,7 +13,6 @@ object AnonMount {
   @scala.inline
   def apply(mount: Node): AnonMount = {
     val __obj = js.Dynamic.literal(mount = mount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMount]
   }
 }

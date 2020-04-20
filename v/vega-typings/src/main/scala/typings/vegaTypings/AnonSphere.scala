@@ -14,7 +14,6 @@ object AnonSphere {
   @scala.inline
   def apply(sphere: String | SignalRef): AnonSphere = {
     val __obj = js.Dynamic.literal(sphere = sphere.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSphere]
   }
 }

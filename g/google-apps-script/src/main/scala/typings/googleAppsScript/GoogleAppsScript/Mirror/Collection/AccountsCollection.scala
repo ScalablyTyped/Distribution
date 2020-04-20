@@ -14,7 +14,6 @@ object AccountsCollection {
   @scala.inline
   def apply(insert: (Account, String, String, String) => Account): AccountsCollection = {
     val __obj = js.Dynamic.literal(insert = js.Any.fromFunction4(insert))
-  
     __obj.asInstanceOf[AccountsCollection]
   }
 }

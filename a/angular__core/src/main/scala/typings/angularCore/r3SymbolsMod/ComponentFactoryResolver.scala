@@ -25,7 +25,6 @@ object ComponentFactoryResolver {
   @scala.inline
   def apply(resolveComponentFactory: Type[js.Any] => ComponentFactory[js.Any]): ComponentFactoryResolver = {
     val __obj = js.Dynamic.literal(resolveComponentFactory = js.Any.fromFunction1(resolveComponentFactory))
-  
     __obj.asInstanceOf[ComponentFactoryResolver]
   }
 }

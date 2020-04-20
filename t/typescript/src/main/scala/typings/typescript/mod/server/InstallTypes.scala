@@ -22,7 +22,6 @@ object InstallTypes {
     typingsInstallerVersion: String
   ): InstallTypes = {
     val __obj = js.Dynamic.literal(eventId = eventId.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], packagesToInstall = packagesToInstall.asInstanceOf[js.Any], projectName = projectName.asInstanceOf[js.Any], typingsInstallerVersion = typingsInstallerVersion.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InstallTypes]
   }
 }

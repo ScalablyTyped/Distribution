@@ -25,7 +25,6 @@ object GetExportResult {
   @scala.inline
   def apply(exportingStackId: String, id: String, name: String, value: String): GetExportResult = {
     val __obj = js.Dynamic.literal(exportingStackId = exportingStackId.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetExportResult]
   }
 }

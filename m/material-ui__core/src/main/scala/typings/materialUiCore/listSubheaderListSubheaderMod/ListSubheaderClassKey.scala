@@ -16,18 +16,16 @@ trait ListSubheaderClassKey extends js.Object
 
 object ListSubheaderClassKey {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def colorInherit: typings.materialUiCore.materialUiCoreStrings.colorInherit = "colorInherit".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.colorInherit]
   @scala.inline
-  def colorInherit: typings.materialUiCore.materialUiCoreStrings.colorInherit = this.cast("colorInherit")
+  def colorPrimary: typings.materialUiCore.materialUiCoreStrings.colorPrimary = "colorPrimary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.colorPrimary]
   @scala.inline
-  def colorPrimary: typings.materialUiCore.materialUiCoreStrings.colorPrimary = this.cast("colorPrimary")
+  def gutters: typings.materialUiCore.materialUiCoreStrings.gutters = "gutters".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.gutters]
   @scala.inline
-  def gutters: typings.materialUiCore.materialUiCoreStrings.gutters = this.cast("gutters")
+  def inset: typings.materialUiCore.materialUiCoreStrings.inset = "inset".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.inset]
   @scala.inline
-  def inset: typings.materialUiCore.materialUiCoreStrings.inset = this.cast("inset")
+  def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
   @scala.inline
-  def root: typings.materialUiCore.materialUiCoreStrings.root = this.cast("root")
-  @scala.inline
-  def sticky: typings.materialUiCore.materialUiCoreStrings.sticky = this.cast("sticky")
+  def sticky: typings.materialUiCore.materialUiCoreStrings.sticky = "sticky".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.sticky]
 }
 

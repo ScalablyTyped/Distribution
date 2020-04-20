@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation._
 object modelSdkClientImplMod extends js.Object {
   @js.native
   class ModelSdkClientImpl[IT /* <: IAbstractModel */, CT /* <: AbstractModel with IT */] protected () extends js.Object {
-    def this(connectionConfig: ISdkConfig, modelConstructor: AnonInstantiable[CT]) = this()
+    def this(connectionConfig: ISdkConfig, modelConstructor: AnonInstantiable[CT, IT]) = this()
     var client: js.Any = js.native
     var connectionConfig: js.Any = js.native
     var modelConstructor: js.Any = js.native

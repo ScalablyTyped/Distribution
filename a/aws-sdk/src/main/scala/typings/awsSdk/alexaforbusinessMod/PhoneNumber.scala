@@ -20,7 +20,6 @@ object PhoneNumber {
   @scala.inline
   def apply(Number: RawPhoneNumber, Type: PhoneNumberType): PhoneNumber = {
     val __obj = js.Dynamic.literal(Number = Number.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PhoneNumber]
   }
 }

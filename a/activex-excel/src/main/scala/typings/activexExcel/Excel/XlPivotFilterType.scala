@@ -146,142 +146,140 @@ trait XlPivotFilterType extends js.Object
 
 object XlPivotFilterType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlAfter: `33` = 33.asInstanceOf[`33`]
   @scala.inline
-  def xlAfter: `33` = this.cast(33)
+  def xlAfterOrEqualTo: `34` = 34.asInstanceOf[`34`]
   @scala.inline
-  def xlAfterOrEqualTo: `34` = this.cast(34)
+  def xlAllDatesInPeriodApril: `60` = 60.asInstanceOf[`60`]
   @scala.inline
-  def xlAllDatesInPeriodApril: `60` = this.cast(60)
+  def xlAllDatesInPeriodAugust: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def xlAllDatesInPeriodAugust: `64` = this.cast(64)
+  def xlAllDatesInPeriodDecember: `68` = 68.asInstanceOf[`68`]
   @scala.inline
-  def xlAllDatesInPeriodDecember: `68` = this.cast(68)
+  def xlAllDatesInPeriodFebruary: `58` = 58.asInstanceOf[`58`]
   @scala.inline
-  def xlAllDatesInPeriodFebruary: `58` = this.cast(58)
+  def xlAllDatesInPeriodJanuary: `57` = 57.asInstanceOf[`57`]
   @scala.inline
-  def xlAllDatesInPeriodJanuary: `57` = this.cast(57)
+  def xlAllDatesInPeriodJuly: `63` = 63.asInstanceOf[`63`]
   @scala.inline
-  def xlAllDatesInPeriodJuly: `63` = this.cast(63)
+  def xlAllDatesInPeriodJune: `62` = 62.asInstanceOf[`62`]
   @scala.inline
-  def xlAllDatesInPeriodJune: `62` = this.cast(62)
+  def xlAllDatesInPeriodMarch: `59` = 59.asInstanceOf[`59`]
   @scala.inline
-  def xlAllDatesInPeriodMarch: `59` = this.cast(59)
+  def xlAllDatesInPeriodMay: `61` = 61.asInstanceOf[`61`]
   @scala.inline
-  def xlAllDatesInPeriodMay: `61` = this.cast(61)
+  def xlAllDatesInPeriodNovember: `67` = 67.asInstanceOf[`67`]
   @scala.inline
-  def xlAllDatesInPeriodNovember: `67` = this.cast(67)
+  def xlAllDatesInPeriodOctober: `66` = 66.asInstanceOf[`66`]
   @scala.inline
-  def xlAllDatesInPeriodOctober: `66` = this.cast(66)
+  def xlAllDatesInPeriodQuarter1: `53` = 53.asInstanceOf[`53`]
   @scala.inline
-  def xlAllDatesInPeriodQuarter1: `53` = this.cast(53)
+  def xlAllDatesInPeriodQuarter2: `54` = 54.asInstanceOf[`54`]
   @scala.inline
-  def xlAllDatesInPeriodQuarter2: `54` = this.cast(54)
+  def xlAllDatesInPeriodQuarter3: `55` = 55.asInstanceOf[`55`]
   @scala.inline
-  def xlAllDatesInPeriodQuarter3: `55` = this.cast(55)
+  def xlAllDatesInPeriodQuarter4: `56` = 56.asInstanceOf[`56`]
   @scala.inline
-  def xlAllDatesInPeriodQuarter4: `56` = this.cast(56)
+  def xlAllDatesInPeriodSeptember: `65` = 65.asInstanceOf[`65`]
   @scala.inline
-  def xlAllDatesInPeriodSeptember: `65` = this.cast(65)
+  def xlBefore: `31` = 31.asInstanceOf[`31`]
   @scala.inline
-  def xlBefore: `31` = this.cast(31)
+  def xlBeforeOrEqualTo: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def xlBeforeOrEqualTo: `32` = this.cast(32)
+  def xlBottomCount: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlBottomCount: `2` = this.cast(2)
+  def xlBottomPercent: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlBottomPercent: `4` = this.cast(4)
+  def xlBottomSum: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def xlBottomSum: `6` = this.cast(6)
+  def xlCaptionBeginsWith: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def xlCaptionBeginsWith: `17` = this.cast(17)
+  def xlCaptionContains: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def xlCaptionContains: `21` = this.cast(21)
+  def xlCaptionDoesNotBeginWith: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def xlCaptionDoesNotBeginWith: `18` = this.cast(18)
+  def xlCaptionDoesNotContain: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def xlCaptionDoesNotContain: `22` = this.cast(22)
+  def xlCaptionDoesNotEndWith: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def xlCaptionDoesNotEndWith: `20` = this.cast(20)
+  def xlCaptionDoesNotEqual: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def xlCaptionDoesNotEqual: `16` = this.cast(16)
+  def xlCaptionEndsWith: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def xlCaptionEndsWith: `19` = this.cast(19)
+  def xlCaptionEquals: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def xlCaptionEquals: `15` = this.cast(15)
+  def xlCaptionIsBetween: `27` = 27.asInstanceOf[`27`]
   @scala.inline
-  def xlCaptionIsBetween: `27` = this.cast(27)
+  def xlCaptionIsGreaterThan: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def xlCaptionIsGreaterThan: `23` = this.cast(23)
+  def xlCaptionIsGreaterThanOrEqualTo: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def xlCaptionIsGreaterThanOrEqualTo: `24` = this.cast(24)
+  def xlCaptionIsLessThan: `25` = 25.asInstanceOf[`25`]
   @scala.inline
-  def xlCaptionIsLessThan: `25` = this.cast(25)
+  def xlCaptionIsLessThanOrEqualTo: `26` = 26.asInstanceOf[`26`]
   @scala.inline
-  def xlCaptionIsLessThanOrEqualTo: `26` = this.cast(26)
+  def xlCaptionIsNotBetween: `28` = 28.asInstanceOf[`28`]
   @scala.inline
-  def xlCaptionIsNotBetween: `28` = this.cast(28)
+  def xlDateBetween: `35` = 35.asInstanceOf[`35`]
   @scala.inline
-  def xlDateBetween: `35` = this.cast(35)
+  def xlDateLastMonth: `45` = 45.asInstanceOf[`45`]
   @scala.inline
-  def xlDateLastMonth: `45` = this.cast(45)
+  def xlDateLastQuarter: `48` = 48.asInstanceOf[`48`]
   @scala.inline
-  def xlDateLastQuarter: `48` = this.cast(48)
+  def xlDateLastWeek: `42` = 42.asInstanceOf[`42`]
   @scala.inline
-  def xlDateLastWeek: `42` = this.cast(42)
+  def xlDateLastYear: `51` = 51.asInstanceOf[`51`]
   @scala.inline
-  def xlDateLastYear: `51` = this.cast(51)
+  def xlDateNextMonth: `43` = 43.asInstanceOf[`43`]
   @scala.inline
-  def xlDateNextMonth: `43` = this.cast(43)
+  def xlDateNextQuarter: `46` = 46.asInstanceOf[`46`]
   @scala.inline
-  def xlDateNextQuarter: `46` = this.cast(46)
+  def xlDateNextWeek: `40` = 40.asInstanceOf[`40`]
   @scala.inline
-  def xlDateNextWeek: `40` = this.cast(40)
+  def xlDateNextYear: `49` = 49.asInstanceOf[`49`]
   @scala.inline
-  def xlDateNextYear: `49` = this.cast(49)
+  def xlDateNotBetween: `36` = 36.asInstanceOf[`36`]
   @scala.inline
-  def xlDateNotBetween: `36` = this.cast(36)
+  def xlDateThisMonth: `44` = 44.asInstanceOf[`44`]
   @scala.inline
-  def xlDateThisMonth: `44` = this.cast(44)
+  def xlDateThisQuarter: `47` = 47.asInstanceOf[`47`]
   @scala.inline
-  def xlDateThisQuarter: `47` = this.cast(47)
+  def xlDateThisWeek: `41` = 41.asInstanceOf[`41`]
   @scala.inline
-  def xlDateThisWeek: `41` = this.cast(41)
+  def xlDateThisYear: `50` = 50.asInstanceOf[`50`]
   @scala.inline
-  def xlDateThisYear: `50` = this.cast(50)
+  def xlDateToday: `38` = 38.asInstanceOf[`38`]
   @scala.inline
-  def xlDateToday: `38` = this.cast(38)
+  def xlDateTomorrow: `37` = 37.asInstanceOf[`37`]
   @scala.inline
-  def xlDateTomorrow: `37` = this.cast(37)
+  def xlDateYesterday: `39` = 39.asInstanceOf[`39`]
   @scala.inline
-  def xlDateYesterday: `39` = this.cast(39)
+  def xlNotSpecificDate: `30` = 30.asInstanceOf[`30`]
   @scala.inline
-  def xlNotSpecificDate: `30` = this.cast(30)
+  def xlSpecificDate: `29` = 29.asInstanceOf[`29`]
   @scala.inline
-  def xlSpecificDate: `29` = this.cast(29)
+  def xlTopCount: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlTopCount: `1` = this.cast(1)
+  def xlTopPercent: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlTopPercent: `3` = this.cast(3)
+  def xlTopSum: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xlTopSum: `5` = this.cast(5)
+  def xlValueDoesNotEqual: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def xlValueDoesNotEqual: `8` = this.cast(8)
+  def xlValueEquals: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def xlValueEquals: `7` = this.cast(7)
+  def xlValueIsBetween: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def xlValueIsBetween: `13` = this.cast(13)
+  def xlValueIsGreaterThan: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def xlValueIsGreaterThan: `9` = this.cast(9)
+  def xlValueIsGreaterThanOrEqualTo: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def xlValueIsGreaterThanOrEqualTo: `10` = this.cast(10)
+  def xlValueIsLessThan: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def xlValueIsLessThan: `11` = this.cast(11)
+  def xlValueIsLessThanOrEqualTo: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def xlValueIsLessThanOrEqualTo: `12` = this.cast(12)
+  def xlValueIsNotBetween: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def xlValueIsNotBetween: `14` = this.cast(14)
-  @scala.inline
-  def xlYearToDate: `52` = this.cast(52)
+  def xlYearToDate: `52` = 52.asInstanceOf[`52`]
 }
 

@@ -16,7 +16,6 @@ object TemplateSourceTemplate {
   @scala.inline
   def apply(Arn: Arn): TemplateSourceTemplate = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TemplateSourceTemplate]
   }
 }

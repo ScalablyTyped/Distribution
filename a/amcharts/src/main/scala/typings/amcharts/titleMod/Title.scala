@@ -36,7 +36,6 @@ object Title {
   @scala.inline
   def apply(alpha: Double, bold: Boolean, color: String, id: String, size: Double, text: String): Title = {
     val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], bold = bold.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Title]
   }
 }

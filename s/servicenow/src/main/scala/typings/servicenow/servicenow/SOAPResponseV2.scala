@@ -28,7 +28,6 @@ object SOAPResponseV2 {
     waitForResponse: Double => Unit
   ): SOAPResponseV2 = {
     val __obj = js.Dynamic.literal(getBody = js.Any.fromFunction0(getBody), getErrorCode = js.Any.fromFunction0(getErrorCode), getErrorMessage = js.Any.fromFunction0(getErrorMessage), getHeader = js.Any.fromFunction1(getHeader), getHeaders = js.Any.fromFunction0(getHeaders), getStatusCode = js.Any.fromFunction0(getStatusCode), haveError = js.Any.fromFunction0(haveError), waitForResponse = js.Any.fromFunction1(waitForResponse))
-  
     __obj.asInstanceOf[SOAPResponseV2]
   }
 }

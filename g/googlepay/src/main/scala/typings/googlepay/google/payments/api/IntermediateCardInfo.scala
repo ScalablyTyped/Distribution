@@ -28,7 +28,6 @@ object IntermediateCardInfo {
   @scala.inline
   def apply(cardNetwork: CardNetwork): IntermediateCardInfo = {
     val __obj = js.Dynamic.literal(cardNetwork = cardNetwork.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IntermediateCardInfo]
   }
 }

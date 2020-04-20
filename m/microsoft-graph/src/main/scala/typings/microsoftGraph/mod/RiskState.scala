@@ -18,20 +18,18 @@ trait RiskState extends js.Object
 
 object RiskState {
   @scala.inline
-  def atRisk: typings.microsoftGraph.microsoftGraphStrings.atRisk = this.cast("atRisk")
+  def atRisk: typings.microsoftGraph.microsoftGraphStrings.atRisk = "atRisk".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.atRisk]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def confirmedCompromised: typings.microsoftGraph.microsoftGraphStrings.confirmedCompromised = "confirmedCompromised".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.confirmedCompromised]
   @scala.inline
-  def confirmedCompromised: typings.microsoftGraph.microsoftGraphStrings.confirmedCompromised = this.cast("confirmedCompromised")
+  def confirmedSafe: typings.microsoftGraph.microsoftGraphStrings.confirmedSafe = "confirmedSafe".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.confirmedSafe]
   @scala.inline
-  def confirmedSafe: typings.microsoftGraph.microsoftGraphStrings.confirmedSafe = this.cast("confirmedSafe")
+  def dismissed: typings.microsoftGraph.microsoftGraphStrings.dismissed = "dismissed".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.dismissed]
   @scala.inline
-  def dismissed: typings.microsoftGraph.microsoftGraphStrings.dismissed = this.cast("dismissed")
+  def none: none_ = "none".asInstanceOf[none_]
   @scala.inline
-  def none: none_ = this.cast("none")
+  def remediated: typings.microsoftGraph.microsoftGraphStrings.remediated = "remediated".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.remediated]
   @scala.inline
-  def remediated: typings.microsoftGraph.microsoftGraphStrings.remediated = this.cast("remediated")
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = this.cast("unknownFutureValue")
+  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }
 

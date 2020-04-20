@@ -15,7 +15,6 @@ object InfinityOption {
   @scala.inline
   def apply(createTombstone: () => Element, fetch: Double => Unit, render: (js.Any, Element) => Element): InfinityOption = {
     val __obj = js.Dynamic.literal(createTombstone = js.Any.fromFunction0(createTombstone), fetch = js.Any.fromFunction1(fetch), render = js.Any.fromFunction2(render))
-  
     __obj.asInstanceOf[InfinityOption]
   }
 }

@@ -23,7 +23,6 @@ object AnonAny {
   @scala.inline
   def apply(any: js.Any => Double, cm: js.Any => Double, kg: js.Any => Double): AnonAny = {
     val __obj = js.Dynamic.literal(any = js.Any.fromFunction1(any), cm = js.Any.fromFunction1(cm), kg = js.Any.fromFunction1(kg))
-  
     __obj.asInstanceOf[AnonAny]
   }
 }

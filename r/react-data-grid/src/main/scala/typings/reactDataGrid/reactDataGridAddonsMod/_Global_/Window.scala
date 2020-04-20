@@ -13,7 +13,6 @@ object Window {
   @scala.inline
   def apply(ReactDataGridPlugins: AnonData): Window = {
     val __obj = js.Dynamic.literal(ReactDataGridPlugins = ReactDataGridPlugins.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Window]
   }
 }

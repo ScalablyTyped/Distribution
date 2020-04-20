@@ -16,12 +16,10 @@ trait MsoSyncAvailableType extends js.Object
 
 object MsoSyncAvailableType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoSyncAvailableAnywhere: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoSyncAvailableAnywhere: `2` = this.cast(2)
+  def msoSyncAvailableNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def msoSyncAvailableNone: `0` = this.cast(0)
-  @scala.inline
-  def msoSyncAvailableOffline: `1` = this.cast(1)
+  def msoSyncAvailableOffline: `1` = 1.asInstanceOf[`1`]
 }
 

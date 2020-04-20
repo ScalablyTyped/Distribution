@@ -13,7 +13,6 @@ object IToastNotificationFactory {
   @scala.inline
   def apply(createToastNotification: XmlDocument => ToastNotification): IToastNotificationFactory = {
     val __obj = js.Dynamic.literal(createToastNotification = js.Any.fromFunction1(createToastNotification))
-  
     __obj.asInstanceOf[IToastNotificationFactory]
   }
 }

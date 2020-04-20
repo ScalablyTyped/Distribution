@@ -36,7 +36,6 @@ object SkFont {
     setTypeface: SkTypeface => Unit
   ): SkFont = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction0(delete), deleteAfter = js.Any.fromFunction0(deleteAfter), getScaleX = js.Any.fromFunction0(getScaleX), getSize = js.Any.fromFunction0(getSize), getSkewX = js.Any.fromFunction0(getSkewX), getTypeface = js.Any.fromFunction0(getTypeface), getWidths = js.Any.fromFunction1(getWidths), isAliasOf = js.Any.fromFunction1(isAliasOf), isDeleted = js.Any.fromFunction0(isDeleted), measureText = js.Any.fromFunction1(measureText), setScaleX = js.Any.fromFunction1(setScaleX), setSize = js.Any.fromFunction1(setSize), setSkewX = js.Any.fromFunction1(setSkewX), setTypeface = js.Any.fromFunction1(setTypeface))
-  
     __obj.asInstanceOf[SkFont]
   }
 }

@@ -40,7 +40,6 @@ object Scripto {
     run: (String, js.Array[String], js.Array[_], js.Function2[/* err */ Error, /* result */ js.Any, Unit]) => Unit
   ): Scripto = {
     val __obj = js.Dynamic.literal(eval = js.Any.fromFunction4(eval), evalSha = js.Any.fromFunction4(evalSha), load = js.Any.fromFunction1(load), loadFromDir = js.Any.fromFunction1(loadFromDir), loadFromFile = js.Any.fromFunction2(loadFromFile), run = js.Any.fromFunction4(run))
-  
     __obj.asInstanceOf[Scripto]
   }
 }

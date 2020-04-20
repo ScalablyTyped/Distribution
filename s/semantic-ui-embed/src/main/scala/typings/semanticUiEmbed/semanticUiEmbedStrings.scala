@@ -135,17 +135,17 @@ object semanticUiEmbedStrings {
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
-  def `get id`: `get id` = "get id".asInstanceOf[`get id`]
+  def `get id`: `get id` = ("get id").asInstanceOf[`get id`]
   @scala.inline
-  def `get placeholder`: `get placeholder` = "get placeholder".asInstanceOf[`get placeholder`]
+  def `get placeholder`: `get placeholder` = ("get placeholder").asInstanceOf[`get placeholder`]
   @scala.inline
-  def `get sources`: `get sources` = "get sources".asInstanceOf[`get sources`]
+  def `get sources`: `get sources` = ("get sources").asInstanceOf[`get sources`]
   @scala.inline
-  def `get type`: `get type` = "get type".asInstanceOf[`get type`]
+  def `get type`: `get type` = ("get type").asInstanceOf[`get type`]
   @scala.inline
-  def `get url`: `get url` = "get url".asInstanceOf[`get url`]
+  def `get url`: `get url` = ("get url").asInstanceOf[`get url`]
   @scala.inline
-  def `has placeholder`: `has placeholder` = "has placeholder".asInstanceOf[`has placeholder`]
+  def `has placeholder`: `has placeholder` = ("has placeholder").asInstanceOf[`has placeholder`]
   @scala.inline
   def hd: hd = "hd".asInstanceOf[hd]
   @scala.inline

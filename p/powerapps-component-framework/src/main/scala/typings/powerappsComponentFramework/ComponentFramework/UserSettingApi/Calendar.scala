@@ -41,7 +41,6 @@ object Calendar {
     twoDigitYearMax: Double
   ): Calendar = {
     val __obj = js.Dynamic.literal(algorithmType = algorithmType.asInstanceOf[js.Any], calendarType = calendarType.asInstanceOf[js.Any], maxSupportedDateTime = maxSupportedDateTime.asInstanceOf[js.Any], minSupportedDateTime = minSupportedDateTime.asInstanceOf[js.Any], twoDigitYearMax = twoDigitYearMax.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Calendar]
   }
 }

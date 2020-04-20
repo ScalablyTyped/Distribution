@@ -14,7 +14,6 @@ object ISettingsPaneStatics {
   @scala.inline
   def apply(edge: SettingsEdgeLocation, getForCurrentView: () => SettingsPane, show: () => Unit): ISettingsPaneStatics = {
     val __obj = js.Dynamic.literal(edge = edge.asInstanceOf[js.Any], getForCurrentView = js.Any.fromFunction0(getForCurrentView), show = js.Any.fromFunction0(show))
-  
     __obj.asInstanceOf[ISettingsPaneStatics]
   }
 }

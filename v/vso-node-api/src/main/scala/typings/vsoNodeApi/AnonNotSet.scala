@@ -16,7 +16,6 @@ object AnonNotSet {
   @scala.inline
   def apply(abandoned: Double, active: Double, all: Double, completed: Double, notSet: Double): AnonNotSet = {
     val __obj = js.Dynamic.literal(abandoned = abandoned.asInstanceOf[js.Any], active = active.asInstanceOf[js.Any], all = all.asInstanceOf[js.Any], completed = completed.asInstanceOf[js.Any], notSet = notSet.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNotSet]
   }
 }

@@ -17,12 +17,10 @@ trait MemFlagsBits extends js.Object
 
 object MemFlagsBits {
   @scala.inline
-  def MEM_READ_ONLY: `0x4` = this.cast(0x4)
+  def MEM_READ_ONLY: `0x4` = 0x4.asInstanceOf[`0x4`]
   @scala.inline
-  def MEM_READ_WRITE: `0x1` = this.cast(0x1)
+  def MEM_READ_WRITE: `0x1` = 0x1.asInstanceOf[`0x1`]
   @scala.inline
-  def MEM_WRITE_ONLY: `0x2` = this.cast(0x2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def MEM_WRITE_ONLY: `0x2` = 0x2.asInstanceOf[`0x2`]
 }
 

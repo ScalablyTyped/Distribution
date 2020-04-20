@@ -24,7 +24,6 @@ object UpdateTrafficPolicyCommentRequest {
   @scala.inline
   def apply(Comment: TrafficPolicyComment, Id: TrafficPolicyId, Version: TrafficPolicyVersion): UpdateTrafficPolicyCommentRequest = {
     val __obj = js.Dynamic.literal(Comment = Comment.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateTrafficPolicyCommentRequest]
   }
 }

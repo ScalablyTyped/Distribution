@@ -23,7 +23,6 @@ object UserInstance {
     isUsingGmailMaterialUI: () => Boolean
   ): UserInstance = {
     val __obj = js.Dynamic.literal(getAccountSwitcherContactList = js.Any.fromFunction0(getAccountSwitcherContactList), getEmailAddress = js.Any.fromFunction0(getEmailAddress), getLanguage = js.Any.fromFunction0(getLanguage), isConversationViewDisabled = js.Any.fromFunction0(isConversationViewDisabled), isUsingGmailMaterialUI = js.Any.fromFunction0(isUsingGmailMaterialUI))
-  
     __obj.asInstanceOf[UserInstance]
   }
 }

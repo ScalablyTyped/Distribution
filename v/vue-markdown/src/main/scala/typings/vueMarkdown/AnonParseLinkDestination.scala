@@ -14,7 +14,6 @@ object AnonParseLinkDestination {
   @scala.inline
   def apply(parseLinkDestination: js.Any, parseLinkLabel: js.Any, parseLinkTitle: js.Any): AnonParseLinkDestination = {
     val __obj = js.Dynamic.literal(parseLinkDestination = parseLinkDestination.asInstanceOf[js.Any], parseLinkLabel = parseLinkLabel.asInstanceOf[js.Any], parseLinkTitle = parseLinkTitle.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonParseLinkDestination]
   }
 }

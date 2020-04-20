@@ -15,16 +15,14 @@ trait UseCurrent extends js.Object
 
 object UseCurrent {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def day: typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerStrings.day = "day".asInstanceOf[typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerStrings.day]
   @scala.inline
-  def day: typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerStrings.day = this.cast("day")
+  def hour: typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerStrings.hour = "hour".asInstanceOf[typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerStrings.hour]
   @scala.inline
-  def hour: typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerStrings.hour = this.cast("hour")
+  def minute: typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerStrings.minute = "minute".asInstanceOf[typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerStrings.minute]
   @scala.inline
-  def minute: typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerStrings.minute = this.cast("minute")
+  def month: typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerStrings.month = "month".asInstanceOf[typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerStrings.month]
   @scala.inline
-  def month: typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerStrings.month = this.cast("month")
-  @scala.inline
-  def year: typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerStrings.year = this.cast("year")
+  def year: typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerStrings.year = "year".asInstanceOf[typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerStrings.year]
 }
 

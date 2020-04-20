@@ -19,20 +19,18 @@ trait DisallowedKeys extends js.Object
 
 object DisallowedKeys {
   @scala.inline
-  def GOOG: typings.chromeApps.chromeAppsStrings.GOOG = this.cast("GOOG")
+  def GOOG: typings.chromeApps.chromeAppsStrings.GOOG = "GOOG".asInstanceOf[typings.chromeApps.chromeAppsStrings.GOOG]
   @scala.inline
-  def GOOGDot: typings.chromeApps.chromeAppsStrings.GOOGDot = this.cast("GOOG.")
+  def GOOGDot: typings.chromeApps.chromeAppsStrings.GOOGDot = "GOOG.".asInstanceOf[typings.chromeApps.chromeAppsStrings.GOOGDot]
   @scala.inline
-  def GOOGLE: typings.chromeApps.chromeAppsStrings.GOOGLE = this.cast("GOOGLE")
+  def GOOGLE: typings.chromeApps.chromeAppsStrings.GOOGLE = "GOOGLE".asInstanceOf[typings.chromeApps.chromeAppsStrings.GOOGLE]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def collapse_key: typings.chromeApps.chromeAppsStrings.collapse_key = "collapse_key".asInstanceOf[typings.chromeApps.chromeAppsStrings.collapse_key]
   @scala.inline
-  def collapse_key: typings.chromeApps.chromeAppsStrings.collapse_key = this.cast("collapse_key")
+  def goog: goog_ = "goog".asInstanceOf[goog_]
   @scala.inline
-  def goog: goog_ = this.cast("goog")
+  def googDot: typings.chromeApps.chromeAppsStrings.googDot = "goog.".asInstanceOf[typings.chromeApps.chromeAppsStrings.googDot]
   @scala.inline
-  def googDot: typings.chromeApps.chromeAppsStrings.googDot = this.cast("goog.")
-  @scala.inline
-  def google: google_ = this.cast("google")
+  def google: google_ = "google".asInstanceOf[google_]
 }
 

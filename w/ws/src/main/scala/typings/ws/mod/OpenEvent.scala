@@ -12,7 +12,6 @@ object OpenEvent {
   @scala.inline
   def apply(target: WebSocket): OpenEvent = {
     val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OpenEvent]
   }
 }

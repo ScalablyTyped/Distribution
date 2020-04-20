@@ -15,7 +15,6 @@ object DurationConfig {
   @scala.inline
   def apply(dampingRatio: Double, duration: Double, initialVelocity: Double, mass: Double): DurationConfig = {
     val __obj = js.Dynamic.literal(dampingRatio = dampingRatio.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], initialVelocity = initialVelocity.asInstanceOf[js.Any], mass = mass.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DurationConfig]
   }
 }

@@ -60,56 +60,54 @@ trait MsoPresetGradientType extends js.Object
 
 object MsoPresetGradientType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoGradientBrass: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def msoGradientBrass: `20` = this.cast(20)
+  def msoGradientCalmWater: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def msoGradientCalmWater: `8` = this.cast(8)
+  def msoGradientChrome: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def msoGradientChrome: `21` = this.cast(21)
+  def msoGradientChromeII: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def msoGradientChromeII: `22` = this.cast(22)
+  def msoGradientDaybreak: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoGradientDaybreak: `4` = this.cast(4)
+  def msoGradientDesert: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def msoGradientDesert: `6` = this.cast(6)
+  def msoGradientEarlySunset: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoGradientEarlySunset: `1` = this.cast(1)
+  def msoGradientFire: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def msoGradientFire: `9` = this.cast(9)
+  def msoGradientFog: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def msoGradientFog: `10` = this.cast(10)
+  def msoGradientGold: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def msoGradientGold: `18` = this.cast(18)
+  def msoGradientGoldII: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def msoGradientGoldII: `19` = this.cast(19)
+  def msoGradientHorizon: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def msoGradientHorizon: `5` = this.cast(5)
+  def msoGradientLateSunset: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoGradientLateSunset: `2` = this.cast(2)
+  def msoGradientMahogany: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def msoGradientMahogany: `15` = this.cast(15)
+  def msoGradientMoss: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def msoGradientMoss: `11` = this.cast(11)
+  def msoGradientNightfall: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoGradientNightfall: `3` = this.cast(3)
+  def msoGradientOcean: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def msoGradientOcean: `7` = this.cast(7)
+  def msoGradientParchment: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def msoGradientParchment: `14` = this.cast(14)
+  def msoGradientPeacock: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def msoGradientPeacock: `12` = this.cast(12)
+  def msoGradientRainbow: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def msoGradientRainbow: `16` = this.cast(16)
+  def msoGradientRainbowII: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def msoGradientRainbowII: `17` = this.cast(17)
+  def msoGradientSapphire: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def msoGradientSapphire: `24` = this.cast(24)
+  def msoGradientSilver: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def msoGradientSilver: `23` = this.cast(23)
+  def msoGradientWheat: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def msoGradientWheat: `13` = this.cast(13)
-  @scala.inline
-  def msoPresetGradientMixed: `-2` = this.cast(-2)
+  def msoPresetGradientMixed: `-2` = -2.asInstanceOf[`-2`]
 }
 

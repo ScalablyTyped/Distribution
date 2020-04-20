@@ -22,7 +22,6 @@ object Preconditions {
   @scala.inline
   def apply(resourceVersion: String, uid: String): Preconditions = {
     val __obj = js.Dynamic.literal(resourceVersion = resourceVersion.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Preconditions]
   }
 }

@@ -19,7 +19,6 @@ object BaseNode {
   @scala.inline
   def apply(sourceIndex: Double, value: String): BaseNode = {
     val __obj = js.Dynamic.literal(sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BaseNode]
   }
 }

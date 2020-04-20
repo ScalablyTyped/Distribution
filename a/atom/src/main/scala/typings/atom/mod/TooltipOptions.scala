@@ -3,10 +3,10 @@ package typings.atom.mod
 import typings.atom.AnonHide
 import typings.atom.atomBooleans.`false`
 import typings.atom.atomStrings.auto
-import typings.atom.atomStrings.bottom
-import typings.atom.atomStrings.left
-import typings.atom.atomStrings.right
-import typings.atom.atomStrings.top
+import typings.atom.atomStrings.bottom_
+import typings.atom.atomStrings.left_
+import typings.atom.atomStrings.right_
+import typings.atom.atomStrings.top_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,7 +25,7 @@ trait TooltipOptions extends js.Object {
   /** Allow HTML in the tooltip. */
   var html: js.UndefOr[Boolean] = js.undefined
   /** How to position the tooltip. */
-  var placement: js.UndefOr[top | bottom | left | right | auto] = js.undefined
+  var placement: js.UndefOr[top_ | bottom_ | left_ | right_ | auto] = js.undefined
   /**
     *  If a selector is provided, tooltip objects will be delegated to the
     *  specified targets.
@@ -53,7 +53,7 @@ object TooltipOptions {
     container: String | HTMLElement | `false` = null,
     delay: Double | AnonHide = null,
     html: js.UndefOr[Boolean] = js.undefined,
-    placement: top | bottom | left | right | auto = null,
+    placement: top_ | bottom_ | left_ | right_ | auto = null,
     selector: String = null,
     template: String = null,
     title: String | HTMLElement | js.Function0[String] = null,

@@ -13,7 +13,6 @@ object ICoder {
   @scala.inline
   def apply(parse: String => WordArray, stringify: WordArray => String): ICoder = {
     val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), stringify = js.Any.fromFunction1(stringify))
-  
     __obj.asInstanceOf[ICoder]
   }
 }

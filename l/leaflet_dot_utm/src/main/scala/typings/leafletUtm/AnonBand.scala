@@ -16,7 +16,6 @@ object AnonBand {
   @scala.inline
   def apply(band: String, southHemi: Boolean, x: Double, y: Double, zone: Double): AnonBand = {
     val __obj = js.Dynamic.literal(band = band.asInstanceOf[js.Any], southHemi = southHemi.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], zone = zone.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBand]
   }
 }

@@ -12,7 +12,6 @@ object Typeofsipjson {
   @scala.inline
   def apply(sj_serialize: (String, String) => Double): Typeofsipjson = {
     val __obj = js.Dynamic.literal(sj_serialize = js.Any.fromFunction2(sj_serialize))
-  
     __obj.asInstanceOf[Typeofsipjson]
   }
 }

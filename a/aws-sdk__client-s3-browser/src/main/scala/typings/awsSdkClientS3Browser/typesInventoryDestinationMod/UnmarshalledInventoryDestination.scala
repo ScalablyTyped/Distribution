@@ -17,7 +17,6 @@ object UnmarshalledInventoryDestination {
   @scala.inline
   def apply(S3BucketDestination: UnmarshalledInventoryS3BucketDestination): UnmarshalledInventoryDestination = {
     val __obj = js.Dynamic.literal(S3BucketDestination = S3BucketDestination.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnmarshalledInventoryDestination]
   }
 }

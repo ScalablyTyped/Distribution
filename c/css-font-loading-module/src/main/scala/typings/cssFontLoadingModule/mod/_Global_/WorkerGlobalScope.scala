@@ -13,7 +13,6 @@ object WorkerGlobalScope {
   @scala.inline
   def apply(fonts: FontFaceSet): WorkerGlobalScope = {
     val __obj = js.Dynamic.literal(fonts = fonts.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WorkerGlobalScope]
   }
 }

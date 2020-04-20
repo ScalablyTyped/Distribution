@@ -27,7 +27,6 @@ object PipelineSchema {
     web_url: String
   ): PipelineSchema = {
     val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], web_url = web_url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PipelineSchema]
   }
 }

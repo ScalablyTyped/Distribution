@@ -30,7 +30,6 @@ object GetQueueResult {
   @scala.inline
   def apply(arn: String, id: String, name: String, tags: StringDictionary[js.Any], url: String): GetQueueResult = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetQueueResult]
   }
 }

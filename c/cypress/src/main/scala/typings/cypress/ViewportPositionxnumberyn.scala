@@ -29,7 +29,6 @@ object ViewportPositionxnumberyn {
     y: Double
   ): ViewportPositionxnumberyn = {
     val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], leftCenter = leftCenter.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], topCenter = topCenter.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ViewportPositionxnumberyn]
   }
 }

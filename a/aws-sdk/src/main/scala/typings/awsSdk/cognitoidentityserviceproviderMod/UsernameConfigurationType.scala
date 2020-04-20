@@ -16,7 +16,6 @@ object UsernameConfigurationType {
   @scala.inline
   def apply(CaseSensitive: WrappedBooleanType): UsernameConfigurationType = {
     val __obj = js.Dynamic.literal(CaseSensitive = CaseSensitive.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UsernameConfigurationType]
   }
 }

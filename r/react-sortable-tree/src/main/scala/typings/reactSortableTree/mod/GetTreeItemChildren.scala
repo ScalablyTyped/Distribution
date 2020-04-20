@@ -22,7 +22,6 @@ object GetTreeItemChildren {
     treeIndex: Double
   ): GetTreeItemChildren = {
     val __obj = js.Dynamic.literal(done = js.Any.fromFunction1(done), lowerSiblingCounts = lowerSiblingCounts.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], treeIndex = treeIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetTreeItemChildren]
   }
 }

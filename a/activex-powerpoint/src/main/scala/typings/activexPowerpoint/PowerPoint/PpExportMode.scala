@@ -18,14 +18,12 @@ trait PpExportMode extends js.Object
 
 object PpExportMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ppClipRelativeToSlide: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def ppClipRelativeToSlide: `2` = this.cast(2)
+  def ppRelativeToSlide: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def ppRelativeToSlide: `1` = this.cast(1)
+  def ppScaleToFit: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def ppScaleToFit: `3` = this.cast(3)
-  @scala.inline
-  def ppScaleXY: `4` = this.cast(4)
+  def ppScaleXY: `4` = 4.asInstanceOf[`4`]
 }
 

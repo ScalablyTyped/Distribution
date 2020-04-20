@@ -16,7 +16,6 @@ object DescribeAddressRequest {
   @scala.inline
   def apply(AddressId: AddressId): DescribeAddressRequest = {
     val __obj = js.Dynamic.literal(AddressId = AddressId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeAddressRequest]
   }
 }

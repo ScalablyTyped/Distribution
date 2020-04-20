@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait MediaList
   extends /* index */ NumberDictionary[java.lang.String] {
-  @JSName(scala.scalajs.js.Symbol.iterator)
+  @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[java.lang.String]] = js.native
   val length: Double = js.native
   var mediaText: java.lang.String = js.native

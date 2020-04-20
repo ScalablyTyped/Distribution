@@ -14,7 +14,6 @@ object AnonContainer {
   @scala.inline
   def apply(container: Container, globalResources: /* repeated */ String => js.Any): AnonContainer = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], globalResources = js.Any.fromFunction1(globalResources))
-  
     __obj.asInstanceOf[AnonContainer]
   }
 }

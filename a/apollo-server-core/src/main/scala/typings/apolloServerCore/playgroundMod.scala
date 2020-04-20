@@ -1,5 +1,6 @@
 package typings.apolloServerCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.apollographqlGraphqlPlaygroundHtml.renderPlaygroundPageMod.RenderPageOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,6 +20,6 @@ object playgroundMod extends js.Object {
   type PlaygroundConfig = RecursivePartialRenderPag | Boolean
   type RecursivePartial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? T[P] extends std.Array<infer U>? std.Array</ * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias apollo-server-core.apollo-server-core/dist/playground.RecursivePartial<U> * / object> : T[P] extends object | undefined? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias apollo-server-core.apollo-server-core/dist/playground.RecursivePartial<T[P]> * / object : T[P]}
-    */ typings.apolloServerCore.apolloServerCoreStrings.RecursivePartial with js.Any
+    */ typings.apolloServerCore.apolloServerCoreStrings.RecursivePartial with TopLevel[js.Any]
 }
 

@@ -15,7 +15,6 @@ object PutBucketAclOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): PutBucketAclOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutBucketAclOutput]
   }
 }

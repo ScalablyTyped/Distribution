@@ -12,7 +12,6 @@ object ToolbarLayout {
   @scala.inline
   def apply(orientation: Orientation): ToolbarLayout = {
     val __obj = js.Dynamic.literal(orientation = orientation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ToolbarLayout]
   }
 }

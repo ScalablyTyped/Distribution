@@ -1,5 +1,11 @@
 package typings.bandagedbdBdapi
 
+import typings.bandagedbdBdapi.mod.BdApiModule.React.Fragment
+import typings.bandagedbdBdapi.mod.BdApiModule.React.Profiler
+import typings.bandagedbdBdapi.mod.BdApiModule.React.PureComponent
+import typings.bandagedbdBdapi.mod.BdApiModule.React.StrictMode
+import typings.bandagedbdBdapi.mod.BdApiModule.React.Suspense
+import typings.bandagedbdBdapi.mod.BdApiModule.React.SuspenseList
 import typings.react.mod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -7,16 +13,16 @@ import scala.scalajs.js.annotation._
 
 object bandagedbdBdapiComponents extends bandagedbdBdapiProps {
   @scala.inline
-  def BdApiModuleReactFragment: ComponentType[BdApiModuleReactFragmentProps] = typings.bandagedbdBdapi.mod.BdApiModule.React.Fragment.asInstanceOf[typings.react.mod.ComponentType[BdApiModuleReactFragmentProps]]
+  def BdApiModuleReactFragment: ComponentType[BdApiModuleReactFragmentProps] = Fragment.asInstanceOf[ComponentType[BdApiModuleReactFragmentProps]]
   @scala.inline
-  def BdApiModuleReactProfiler: ComponentType[BdApiModuleReactProfilerProps] = typings.bandagedbdBdapi.mod.BdApiModule.React.Profiler.asInstanceOf[typings.react.mod.ComponentType[BdApiModuleReactProfilerProps]]
+  def BdApiModuleReactProfiler: ComponentType[BdApiModuleReactProfilerProps] = Profiler.asInstanceOf[ComponentType[BdApiModuleReactProfilerProps]]
   @scala.inline
-  def BdApiModuleReactPureComponent[P, S, SS]: ComponentType[P] = js.constructorOf[typings.bandagedbdBdapi.mod.BdApiModule.React.PureComponent[P, S, SS]].asInstanceOf[typings.react.mod.ComponentType[P]]
+  def BdApiModuleReactPureComponent[P, S, SS]: ComponentType[P] = (js.constructorOf[PureComponent[P, S, SS]]).asInstanceOf[ComponentType[P]]
   @scala.inline
-  def BdApiModuleReactStrictMode: ComponentType[BdApiModuleReactStrictModeProps] = typings.bandagedbdBdapi.mod.BdApiModule.React.StrictMode.asInstanceOf[typings.react.mod.ComponentType[BdApiModuleReactStrictModeProps]]
+  def BdApiModuleReactStrictMode: ComponentType[BdApiModuleReactStrictModeProps] = StrictMode.asInstanceOf[ComponentType[BdApiModuleReactStrictModeProps]]
   @scala.inline
-  def BdApiModuleReactSuspense: ComponentType[BdApiModuleReactSuspenseProps] = typings.bandagedbdBdapi.mod.BdApiModule.React.Suspense.asInstanceOf[typings.react.mod.ComponentType[BdApiModuleReactSuspenseProps]]
+  def BdApiModuleReactSuspense: ComponentType[BdApiModuleReactSuspenseProps] = Suspense.asInstanceOf[ComponentType[BdApiModuleReactSuspenseProps]]
   @scala.inline
-  def BdApiModuleReactSuspenseList: ComponentType[BdApiModuleReactSuspenseListProps] = typings.bandagedbdBdapi.mod.BdApiModule.React.SuspenseList.asInstanceOf[typings.react.mod.ComponentType[BdApiModuleReactSuspenseListProps]]
+  def BdApiModuleReactSuspenseList: ComponentType[BdApiModuleReactSuspenseListProps] = SuspenseList.asInstanceOf[ComponentType[BdApiModuleReactSuspenseListProps]]
 }
 

@@ -40,7 +40,6 @@ object Dispatcher {
     waitFor: js.Array[String] => Unit
   ): Dispatcher[TPayload] = {
     val __obj = js.Dynamic.literal(dispatch = js.Any.fromFunction1(dispatch), isDispatching = js.Any.fromFunction0(isDispatching), register = js.Any.fromFunction1(register), unregister = js.Any.fromFunction1(unregister), waitFor = js.Any.fromFunction1(waitFor))
-  
     __obj.asInstanceOf[Dispatcher[TPayload]]
   }
 }

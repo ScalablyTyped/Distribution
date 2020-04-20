@@ -38,42 +38,40 @@ trait DraftEditorCommand extends js.Object
 
 object DraftEditorCommand {
   @scala.inline
-  def backspace: typings.draftJs.draftJsStrings.backspace = this.cast("backspace")
+  def backspace: typings.draftJs.draftJsStrings.backspace = "backspace".asInstanceOf[typings.draftJs.draftJsStrings.backspace]
   @scala.inline
-  def `backspace-to-start-of-line`: typings.draftJs.draftJsStrings.`backspace-to-start-of-line` = this.cast("backspace-to-start-of-line")
+  def `backspace-to-start-of-line`: typings.draftJs.draftJsStrings.`backspace-to-start-of-line` = "backspace-to-start-of-line".asInstanceOf[typings.draftJs.draftJsStrings.`backspace-to-start-of-line`]
   @scala.inline
-  def `backspace-word`: typings.draftJs.draftJsStrings.`backspace-word` = this.cast("backspace-word")
+  def `backspace-word`: typings.draftJs.draftJsStrings.`backspace-word` = "backspace-word".asInstanceOf[typings.draftJs.draftJsStrings.`backspace-word`]
   @scala.inline
-  def bold: bold_ = this.cast("bold")
+  def bold: bold_ = "bold".asInstanceOf[bold_]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def code: code_ = "code".asInstanceOf[code_]
   @scala.inline
-  def code: code_ = this.cast("code")
+  def delete: typings.draftJs.draftJsStrings.delete = "delete".asInstanceOf[typings.draftJs.draftJsStrings.delete]
   @scala.inline
-  def delete: typings.draftJs.draftJsStrings.delete = this.cast("delete")
+  def `delete-word`: typings.draftJs.draftJsStrings.`delete-word` = "delete-word".asInstanceOf[typings.draftJs.draftJsStrings.`delete-word`]
   @scala.inline
-  def `delete-word`: typings.draftJs.draftJsStrings.`delete-word` = this.cast("delete-word")
+  def italic: italic_ = "italic".asInstanceOf[italic_]
   @scala.inline
-  def italic: italic_ = this.cast("italic")
+  def `move-selection-to-end-of-block`: typings.draftJs.draftJsStrings.`move-selection-to-end-of-block` = "move-selection-to-end-of-block".asInstanceOf[typings.draftJs.draftJsStrings.`move-selection-to-end-of-block`]
   @scala.inline
-  def `move-selection-to-end-of-block`: typings.draftJs.draftJsStrings.`move-selection-to-end-of-block` = this.cast("move-selection-to-end-of-block")
+  def `move-selection-to-start-of-block`: typings.draftJs.draftJsStrings.`move-selection-to-start-of-block` = "move-selection-to-start-of-block".asInstanceOf[typings.draftJs.draftJsStrings.`move-selection-to-start-of-block`]
   @scala.inline
-  def `move-selection-to-start-of-block`: typings.draftJs.draftJsStrings.`move-selection-to-start-of-block` = this.cast("move-selection-to-start-of-block")
+  def redo: typings.draftJs.draftJsStrings.redo = "redo".asInstanceOf[typings.draftJs.draftJsStrings.redo]
   @scala.inline
-  def redo: typings.draftJs.draftJsStrings.redo = this.cast("redo")
+  def `secondary-cut`: typings.draftJs.draftJsStrings.`secondary-cut` = "secondary-cut".asInstanceOf[typings.draftJs.draftJsStrings.`secondary-cut`]
   @scala.inline
-  def `secondary-cut`: typings.draftJs.draftJsStrings.`secondary-cut` = this.cast("secondary-cut")
+  def `secondary-paste`: typings.draftJs.draftJsStrings.`secondary-paste` = "secondary-paste".asInstanceOf[typings.draftJs.draftJsStrings.`secondary-paste`]
   @scala.inline
-  def `secondary-paste`: typings.draftJs.draftJsStrings.`secondary-paste` = this.cast("secondary-paste")
+  def `split-block`: typings.draftJs.draftJsStrings.`split-block` = "split-block".asInstanceOf[typings.draftJs.draftJsStrings.`split-block`]
   @scala.inline
-  def `split-block`: typings.draftJs.draftJsStrings.`split-block` = this.cast("split-block")
+  def strikethrough: strikethrough_ = "strikethrough".asInstanceOf[strikethrough_]
   @scala.inline
-  def strikethrough: strikethrough_ = this.cast("strikethrough")
+  def `transpose-characters`: typings.draftJs.draftJsStrings.`transpose-characters` = "transpose-characters".asInstanceOf[typings.draftJs.draftJsStrings.`transpose-characters`]
   @scala.inline
-  def `transpose-characters`: typings.draftJs.draftJsStrings.`transpose-characters` = this.cast("transpose-characters")
+  def underline: underline_ = "underline".asInstanceOf[underline_]
   @scala.inline
-  def underline: underline_ = this.cast("underline")
-  @scala.inline
-  def undo: typings.draftJs.draftJsStrings.undo = this.cast("undo")
+  def undo: typings.draftJs.draftJsStrings.undo = "undo".asInstanceOf[typings.draftJs.draftJsStrings.undo]
 }
 

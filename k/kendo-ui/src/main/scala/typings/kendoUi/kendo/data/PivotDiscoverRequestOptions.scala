@@ -12,7 +12,6 @@ object PivotDiscoverRequestOptions {
   @scala.inline
   def apply(data: PivotDiscoverRequestDataOptions): PivotDiscoverRequestOptions = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PivotDiscoverRequestOptions]
   }
 }

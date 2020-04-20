@@ -16,12 +16,10 @@ trait MFExternalDBRefreshType extends js.Object
 
 object MFExternalDBRefreshType {
   @scala.inline
-  def Full: `2` = this.cast(2)
+  def Full: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def None: `0` = this.cast(0)
+  def None: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def Quick: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Quick: `1` = 1.asInstanceOf[`1`]
 }
 

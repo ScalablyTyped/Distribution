@@ -27,6 +27,7 @@ object coordinateMod extends js.Object {
   def toStringHDMS(coordinate: Coordinate, opt_fractionDigits: Double): String = js.native
   def toStringXY(coordinate: Coordinate): String = js.native
   def toStringXY(coordinate: Coordinate, opt_fractionDigits: Double): String = js.native
+  def wrapX(coordinate: Coordinate, projection: typings.ol.projectionMod.default): Coordinate = js.native
   type Coordinate = js.Array[Double]
   type CoordinateFormat = js.Function1[/* p0 */ js.UndefOr[Coordinate], String]
 }

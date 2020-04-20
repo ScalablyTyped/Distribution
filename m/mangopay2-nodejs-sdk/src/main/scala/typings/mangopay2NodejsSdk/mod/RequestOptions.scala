@@ -26,7 +26,6 @@ object RequestOptions {
     responseConfig: AnonTimeout
   ): RequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], requestConfig = requestConfig.asInstanceOf[js.Any], responseConfig = responseConfig.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RequestOptions]
   }
 }

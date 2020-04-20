@@ -15,7 +15,6 @@ object AnonAuthorizationcode {
   @scala.inline
   def apply(amount: Double, authorization_code: String, email: String, reference: String): AnonAuthorizationcode = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], authorization_code = authorization_code.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], reference = reference.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAuthorizationcode]
   }
 }

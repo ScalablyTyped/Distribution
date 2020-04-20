@@ -28,7 +28,6 @@ object RegionalConfiguration {
     ReshardingConfiguration: ReshardingConfigurationList
   ): RegionalConfiguration = {
     val __obj = js.Dynamic.literal(ReplicationGroupId = ReplicationGroupId.asInstanceOf[js.Any], ReplicationGroupRegion = ReplicationGroupRegion.asInstanceOf[js.Any], ReshardingConfiguration = ReshardingConfiguration.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RegionalConfiguration]
   }
 }

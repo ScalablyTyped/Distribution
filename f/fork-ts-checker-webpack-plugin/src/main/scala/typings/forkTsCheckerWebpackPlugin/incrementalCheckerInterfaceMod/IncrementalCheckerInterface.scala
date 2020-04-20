@@ -22,7 +22,6 @@ object IncrementalCheckerInterface {
     nextIteration: () => Unit
   ): IncrementalCheckerInterface = {
     val __obj = js.Dynamic.literal(getEsLintIssues = js.Any.fromFunction1(getEsLintIssues), getTypeScriptIssues = js.Any.fromFunction1(getTypeScriptIssues), hasEsLinter = js.Any.fromFunction0(hasEsLinter), nextIteration = js.Any.fromFunction0(nextIteration))
-  
     __obj.asInstanceOf[IncrementalCheckerInterface]
   }
 }

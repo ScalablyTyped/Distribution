@@ -13,7 +13,7 @@ trait rebassProps {
   def ButtonProps: typings.rebass.mod.ButtonProps.type = typings.rebass.mod.ButtonProps
   type ButtonProps = typings.rebass.mod.ButtonProps
   @scala.inline
-  def CardProps: BoxKnownProps.type = typings.rebass.mod.BoxKnownProps
+  def CardProps: BoxKnownProps.type = BoxKnownProps
   type CardProps = BoxKnownProps
   @scala.inline
   def FlexProps: typings.rebass.mod.FlexProps.type = typings.rebass.mod.FlexProps

@@ -79,7 +79,6 @@ object TransporterOptions {
     userAgent: UserAgent
   ): TransporterOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], hosts = hosts.asInstanceOf[js.Any], hostsCache = hostsCache.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any], queryParameters = queryParameters.asInstanceOf[js.Any], requester = requester.asInstanceOf[js.Any], requestsCache = requestsCache.asInstanceOf[js.Any], responsesCache = responsesCache.asInstanceOf[js.Any], timeouts = timeouts.asInstanceOf[js.Any], userAgent = userAgent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TransporterOptions]
   }
 }

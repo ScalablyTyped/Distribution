@@ -14,7 +14,6 @@ object CognitoStrategyOptions {
   @scala.inline
   def apply(clientId: String, region: String, userPoolId: String): CognitoStrategyOptions = {
     val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], userPoolId = userPoolId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CognitoStrategyOptions]
   }
 }

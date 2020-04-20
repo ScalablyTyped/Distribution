@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gtin"
-version := "0.3-dt-20180526Z-7d66dd"
+version := "0.3-dt-20180526Z-e2a311"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

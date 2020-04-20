@@ -12,10 +12,8 @@ trait TextPathMethod extends js.Object
 
 object TextPathMethod {
   @scala.inline
-  def align: typings.reactNativeSvg.reactNativeSvgStrings.align = this.cast("align")
+  def align: typings.reactNativeSvg.reactNativeSvgStrings.align = "align".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.align]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def stretch: typings.reactNativeSvg.reactNativeSvgStrings.stretch = this.cast("stretch")
+  def stretch: typings.reactNativeSvg.reactNativeSvgStrings.stretch = "stretch".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.stretch]
 }
 

@@ -20,7 +20,6 @@ object EventBacklogStatus {
     unprocessedEvents: Double
   ): EventBacklogStatus = {
     val __obj = js.Dynamic.literal(maxUnprocessedEventAgeMs = maxUnprocessedEventAgeMs.asInstanceOf[js.Any], publisher = publisher.asInstanceOf[js.Any], timeSinceLastProcessedEventMs = timeSinceLastProcessedEventMs.asInstanceOf[js.Any], unprocessedEvents = unprocessedEvents.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventBacklogStatus]
   }
 }

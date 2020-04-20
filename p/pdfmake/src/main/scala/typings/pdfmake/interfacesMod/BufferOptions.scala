@@ -1,5 +1,6 @@
 package typings.pdfmake.interfacesMod
 
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,7 @@ trait BufferOptions extends js.Object {
   var bufferPages: js.UndefOr[Boolean] = js.undefined
   var fontLayoutCache: js.UndefOr[Boolean] = js.undefined
   var progressCallback: js.UndefOr[js.Function1[/* progress */ Double, Unit]] = js.undefined
-  var tableLayouts: js.UndefOr[TableLayout] = js.undefined
+  var tableLayouts: js.UndefOr[StringDictionary[CustomTableLayout]] = js.undefined
 }
 
 object BufferOptions {
@@ -19,7 +20,7 @@ object BufferOptions {
     bufferPages: js.UndefOr[Boolean] = js.undefined,
     fontLayoutCache: js.UndefOr[Boolean] = js.undefined,
     progressCallback: /* progress */ Double => Unit = null,
-    tableLayouts: TableLayout = null
+    tableLayouts: StringDictionary[CustomTableLayout] = null
   ): BufferOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoPrint)) __obj.updateDynamic("autoPrint")(autoPrint.asInstanceOf[js.Any])

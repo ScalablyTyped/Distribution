@@ -16,12 +16,10 @@ trait WdEmailHTMLFidelity extends js.Object
 
 object WdEmailHTMLFidelity {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdEmailHTMLFidelityHigh: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdEmailHTMLFidelityHigh: `3` = this.cast(3)
+  def wdEmailHTMLFidelityLow: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdEmailHTMLFidelityLow: `1` = this.cast(1)
-  @scala.inline
-  def wdEmailHTMLFidelityMedium: `2` = this.cast(2)
+  def wdEmailHTMLFidelityMedium: `2` = 2.asInstanceOf[`2`]
 }
 

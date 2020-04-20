@@ -21,7 +21,6 @@ object FirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcess
   @scala.inline
   def apply(parameterName: Input[String], parameterValue: Input[String]): FirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorParameter = {
     val __obj = js.Dynamic.literal(parameterName = parameterName.asInstanceOf[js.Any], parameterValue = parameterValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorParameter]
   }
 }

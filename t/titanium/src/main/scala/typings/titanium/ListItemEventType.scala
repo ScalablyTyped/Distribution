@@ -12,7 +12,7 @@ trait ListItemEventType extends js.Object {
   /**
   	 * The item ID bound to the list item that generated the event.
   	 */
-  var itemId: js.UndefOr[String] = js.undefined
+  var itemId: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Item index.
   	 */
@@ -30,7 +30,7 @@ trait ListItemEventType extends js.Object {
 object ListItemEventType {
   @scala.inline
   def apply(
-    itemId: String = null,
+    itemId: java.lang.String = null,
     itemIndex: Int | Double = null,
     section: ListSection = null,
     sectionIndex: Int | Double = null

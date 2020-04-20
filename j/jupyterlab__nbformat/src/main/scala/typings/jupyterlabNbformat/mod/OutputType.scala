@@ -15,16 +15,14 @@ trait OutputType extends js.Object
 
 object OutputType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def display_data: typings.jupyterlabNbformat.jupyterlabNbformatStrings.display_data = "display_data".asInstanceOf[typings.jupyterlabNbformat.jupyterlabNbformatStrings.display_data]
   @scala.inline
-  def display_data: typings.jupyterlabNbformat.jupyterlabNbformatStrings.display_data = this.cast("display_data")
+  def error: typings.jupyterlabNbformat.jupyterlabNbformatStrings.error = "error".asInstanceOf[typings.jupyterlabNbformat.jupyterlabNbformatStrings.error]
   @scala.inline
-  def error: typings.jupyterlabNbformat.jupyterlabNbformatStrings.error = this.cast("error")
+  def execute_result: typings.jupyterlabNbformat.jupyterlabNbformatStrings.execute_result = "execute_result".asInstanceOf[typings.jupyterlabNbformat.jupyterlabNbformatStrings.execute_result]
   @scala.inline
-  def execute_result: typings.jupyterlabNbformat.jupyterlabNbformatStrings.execute_result = this.cast("execute_result")
+  def stream: typings.jupyterlabNbformat.jupyterlabNbformatStrings.stream = "stream".asInstanceOf[typings.jupyterlabNbformat.jupyterlabNbformatStrings.stream]
   @scala.inline
-  def stream: typings.jupyterlabNbformat.jupyterlabNbformatStrings.stream = this.cast("stream")
-  @scala.inline
-  def update_display_data: typings.jupyterlabNbformat.jupyterlabNbformatStrings.update_display_data = this.cast("update_display_data")
+  def update_display_data: typings.jupyterlabNbformat.jupyterlabNbformatStrings.update_display_data = "update_display_data".asInstanceOf[typings.jupyterlabNbformat.jupyterlabNbformatStrings.update_display_data]
 }
 

@@ -17,7 +17,6 @@ object UpdateEndpointsBatchRequest {
   @scala.inline
   def apply(ApplicationId: string, EndpointBatchRequest: EndpointBatchRequest): UpdateEndpointsBatchRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], EndpointBatchRequest = EndpointBatchRequest.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateEndpointsBatchRequest]
   }
 }

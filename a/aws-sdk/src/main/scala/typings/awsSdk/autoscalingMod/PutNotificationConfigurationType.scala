@@ -28,7 +28,6 @@ object PutNotificationConfigurationType {
     TopicARN: ResourceName
   ): PutNotificationConfigurationType = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any], NotificationTypes = NotificationTypes.asInstanceOf[js.Any], TopicARN = TopicARN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutNotificationConfigurationType]
   }
 }

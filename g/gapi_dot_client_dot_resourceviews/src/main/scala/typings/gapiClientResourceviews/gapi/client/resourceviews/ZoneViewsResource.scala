@@ -45,7 +45,6 @@ object ZoneViewsResource {
     setService: AnonOauthtoken => Request_[Operation]
   ): ZoneViewsResource = {
     val __obj = js.Dynamic.literal(addResources = js.Any.fromFunction1(addResources), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getService = js.Any.fromFunction1(getService), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), listResources = js.Any.fromFunction1(listResources), removeResources = js.Any.fromFunction1(removeResources), setService = js.Any.fromFunction1(setService))
-  
     __obj.asInstanceOf[ZoneViewsResource]
   }
 }

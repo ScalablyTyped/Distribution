@@ -35,7 +35,6 @@ object MyconfigResource {
     updateUserSettings: AnonAltFields => Request_[Usersettings]
   ): MyconfigResource = {
     val __obj = js.Dynamic.literal(getUserSettings = js.Any.fromFunction1(getUserSettings), releaseDownloadAccess = js.Any.fromFunction1(releaseDownloadAccess), requestAccess = js.Any.fromFunction1(requestAccess), syncVolumeLicenses = js.Any.fromFunction1(syncVolumeLicenses), updateUserSettings = js.Any.fromFunction1(updateUserSettings))
-  
     __obj.asInstanceOf[MyconfigResource]
   }
 }

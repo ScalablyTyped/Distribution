@@ -41,6 +41,7 @@ object PaginationConfig {
     showLessItems: js.UndefOr[Boolean] = js.undefined,
     showQuickJumper: Boolean | AnonGoButton = null,
     showSizeChanger: js.UndefOr[Boolean] = js.undefined,
+    showTitle: js.UndefOr[Boolean] = js.undefined,
     showTotal: (/* total */ Double, /* range */ js.Tuple2[Double, Double]) => ReactNode = null,
     simple: js.UndefOr[Boolean] = js.undefined,
     size: typings.antd.antdStrings.default | small = null,
@@ -68,6 +69,7 @@ object PaginationConfig {
     if (!js.isUndefined(showLessItems)) __obj.updateDynamic("showLessItems")(showLessItems.asInstanceOf[js.Any])
     if (showQuickJumper != null) __obj.updateDynamic("showQuickJumper")(showQuickJumper.asInstanceOf[js.Any])
     if (!js.isUndefined(showSizeChanger)) __obj.updateDynamic("showSizeChanger")(showSizeChanger.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTitle)) __obj.updateDynamic("showTitle")(showTitle.asInstanceOf[js.Any])
     if (showTotal != null) __obj.updateDynamic("showTotal")(js.Any.fromFunction2(showTotal))
     if (!js.isUndefined(simple)) __obj.updateDynamic("simple")(simple.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

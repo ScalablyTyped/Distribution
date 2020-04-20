@@ -14,7 +14,6 @@ object AnonPassphrase {
   @scala.inline
   def apply(passphrase: String, pfx: String | Buffer): AnonPassphrase = {
     val __obj = js.Dynamic.literal(passphrase = passphrase.asInstanceOf[js.Any], pfx = pfx.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPassphrase]
   }
 }

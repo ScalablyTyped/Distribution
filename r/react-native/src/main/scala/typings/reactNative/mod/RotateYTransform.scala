@@ -12,7 +12,6 @@ object RotateYTransform {
   @scala.inline
   def apply(rotateY: String): RotateYTransform = {
     val __obj = js.Dynamic.literal(rotateY = rotateY.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RotateYTransform]
   }
 }

@@ -12,7 +12,6 @@ object IMath {
   @scala.inline
   def apply(seedrandom: ISeedRandom): IMath = {
     val __obj = js.Dynamic.literal(seedrandom = seedrandom.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMath]
   }
 }

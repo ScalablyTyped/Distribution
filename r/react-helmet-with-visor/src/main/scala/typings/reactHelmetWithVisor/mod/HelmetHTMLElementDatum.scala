@@ -14,7 +14,6 @@ object HelmetHTMLElementDatum {
   @scala.inline
   def apply(toComponent: () => HTMLAttributes[HTMLHtmlElement]): HelmetHTMLElementDatum = {
     val __obj = js.Dynamic.literal(toComponent = js.Any.fromFunction0(toComponent))
-  
     __obj.asInstanceOf[HelmetHTMLElementDatum]
   }
 }

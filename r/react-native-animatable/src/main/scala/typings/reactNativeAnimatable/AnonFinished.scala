@@ -12,7 +12,6 @@ object AnonFinished {
   @scala.inline
   def apply(finished: Boolean): AnonFinished = {
     val __obj = js.Dynamic.literal(finished = finished.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFinished]
   }
 }

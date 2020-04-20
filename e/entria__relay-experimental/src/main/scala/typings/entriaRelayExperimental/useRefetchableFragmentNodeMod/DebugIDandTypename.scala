@@ -13,7 +13,6 @@ object DebugIDandTypename {
   @scala.inline
   def apply(id: String, typename: String): DebugIDandTypename = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], typename = typename.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DebugIDandTypename]
   }
 }

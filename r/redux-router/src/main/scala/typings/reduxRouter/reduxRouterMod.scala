@@ -1,6 +1,7 @@
 package typings.reduxRouter
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.history.mod.History
 import typings.history.mod.Location
 import typings.history.mod.LocationState
@@ -22,6 +23,9 @@ import typings.reactRouter.mod.SwitchProps
 import typings.reactRouter.mod.WithRouterProps
 import typings.reactRouter.mod.WithRouterStatics
 import typings.reactRouter.mod.`match`
+import typings.reduxRouter.reduxRouterStrings.history
+import typings.reduxRouter.reduxRouterStrings.location
+import typings.reduxRouter.reduxRouterStrings.staticContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -65,42 +69,48 @@ object reduxRouterMod extends js.Object {
     def generatePath(pattern: String, params: StringDictionary[js.UndefOr[String | Double | Boolean]]): String = js.native
     def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
-      */ typings.reduxRouter.reduxRouterStrings.matchPath with js.Any */](pathname: String, props: String): `match`[Params] | Null = js.native
+      */ typings.reduxRouter.reduxRouterStrings.matchPath with TopLevel[js.Any] */](pathname: String, props: String): `match`[Params] | Null = js.native
     def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
-      */ typings.reduxRouter.reduxRouterStrings.matchPath with js.Any */](pathname: String, props: String, parent: `match`[Params]): `match`[Params] | Null = js.native
+      */ typings.reduxRouter.reduxRouterStrings.matchPath with TopLevel[js.Any] */](pathname: String, props: String, parent: `match`[Params]): `match`[Params] | Null = js.native
     def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
-      */ typings.reduxRouter.reduxRouterStrings.matchPath with js.Any */](pathname: String, props: js.Array[String]): `match`[Params] | Null = js.native
+      */ typings.reduxRouter.reduxRouterStrings.matchPath with TopLevel[js.Any] */](pathname: String, props: js.Array[String]): `match`[Params] | Null = js.native
     def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
-      */ typings.reduxRouter.reduxRouterStrings.matchPath with js.Any */](pathname: String, props: js.Array[String], parent: `match`[Params]): `match`[Params] | Null = js.native
+      */ typings.reduxRouter.reduxRouterStrings.matchPath with TopLevel[js.Any] */](pathname: String, props: js.Array[String], parent: `match`[Params]): `match`[Params] | Null = js.native
     def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
-      */ typings.reduxRouter.reduxRouterStrings.matchPath with js.Any */](pathname: String, props: RouteProps): `match`[Params] | Null = js.native
+      */ typings.reduxRouter.reduxRouterStrings.matchPath with TopLevel[js.Any] */](pathname: String, props: RouteProps): `match`[Params] | Null = js.native
     def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
-      */ typings.reduxRouter.reduxRouterStrings.matchPath with js.Any */](pathname: String, props: RouteProps, parent: `match`[Params]): `match`[Params] | Null = js.native
+      */ typings.reduxRouter.reduxRouterStrings.matchPath with TopLevel[js.Any] */](pathname: String, props: RouteProps, parent: `match`[Params]): `match`[Params] | Null = js.native
     def useHistory[HistoryLocationState](): History[HistoryLocationState] = js.native
     def useLocation[S](): Location[S] = js.native
     def useParams[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
-      */ typings.reduxRouter.reduxRouterStrings.useParams with js.Any */](): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+      */ typings.reduxRouter.reduxRouterStrings.useParams with TopLevel[js.Any] */](): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ p in keyof Params ]: keyof Params[p] extends undefined? string | undefined : string}
-      */ typings.reduxRouter.reduxRouterStrings.useParams with js.Any = js.native
+      */ typings.reduxRouter.reduxRouterStrings.useParams with TopLevel[js.Any] = js.native
     def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
-      */ typings.reduxRouter.reduxRouterStrings.useRouteMatch with js.Any */](): `match`[Params] = js.native
+      */ typings.reduxRouter.reduxRouterStrings.useRouteMatch with TopLevel[js.Any] */](): `match`[Params] = js.native
     def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
-      */ typings.reduxRouter.reduxRouterStrings.useRouteMatch with js.Any */](path: String): `match`[Params] | Null = js.native
+      */ typings.reduxRouter.reduxRouterStrings.useRouteMatch with TopLevel[js.Any] */](path: String): `match`[Params] | Null = js.native
     def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
-      */ typings.reduxRouter.reduxRouterStrings.useRouteMatch with js.Any */](path: js.Array[String]): `match`[Params] | Null = js.native
+      */ typings.reduxRouter.reduxRouterStrings.useRouteMatch with TopLevel[js.Any] */](path: js.Array[String]): `match`[Params] | Null = js.native
     def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
-      */ typings.reduxRouter.reduxRouterStrings.useRouteMatch with js.Any */](path: RouteProps): `match`[Params] | Null = js.native
-    def withRouter[P /* <: RouteComponentProps[_, StaticContext, LocationState] */, C /* <: ComponentType[P] */](component: C with ComponentType[P]): (ComponentClass[(Omit[P, String]) with WithRouterProps[C], ComponentState]) with WithRouterStatics[C] = js.native
+      */ typings.reduxRouter.reduxRouterStrings.useRouteMatch with TopLevel[js.Any] */](path: RouteProps): `match`[Params] | Null = js.native
+    def withRouter[P /* <: RouteComponentProps[_, StaticContext, LocationState] */, C /* <: ComponentType[P] */](component: C with ComponentType[P]): (ComponentClass[
+        (Omit[
+          P, 
+          history | location | typings.reduxRouter.reduxRouterStrings.`match` | staticContext
+        ]) with WithRouterProps[C], 
+        ComponentState
+      ]) with WithRouterStatics[C] = js.native
   }
   
 }

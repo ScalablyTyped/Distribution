@@ -12,7 +12,6 @@ object AnonOutlineWidth {
   @scala.inline
   def apply(outlineWidth: Double): AnonOutlineWidth = {
     val __obj = js.Dynamic.literal(outlineWidth = outlineWidth.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOutlineWidth]
   }
 }

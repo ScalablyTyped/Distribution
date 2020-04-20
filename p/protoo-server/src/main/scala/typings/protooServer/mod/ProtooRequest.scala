@@ -16,7 +16,6 @@ object ProtooRequest {
   @scala.inline
   def apply(data: js.Any, id: Double, method: String, request: `true`): ProtooRequest = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProtooRequest]
   }
 }

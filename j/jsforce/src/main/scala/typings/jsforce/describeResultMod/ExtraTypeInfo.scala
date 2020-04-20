@@ -17,20 +17,18 @@ trait ExtraTypeInfo extends js.Object
 
 object ExtraTypeInfo {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def externallookup: typings.jsforce.jsforceStrings.externallookup = "externallookup".asInstanceOf[typings.jsforce.jsforceStrings.externallookup]
   @scala.inline
-  def externallookup: typings.jsforce.jsforceStrings.externallookup = this.cast("externallookup")
+  def imageurl: typings.jsforce.jsforceStrings.imageurl = "imageurl".asInstanceOf[typings.jsforce.jsforceStrings.imageurl]
   @scala.inline
-  def imageurl: typings.jsforce.jsforceStrings.imageurl = this.cast("imageurl")
+  def indirectlookup: typings.jsforce.jsforceStrings.indirectlookup = "indirectlookup".asInstanceOf[typings.jsforce.jsforceStrings.indirectlookup]
   @scala.inline
-  def indirectlookup: typings.jsforce.jsforceStrings.indirectlookup = this.cast("indirectlookup")
+  def personname: typings.jsforce.jsforceStrings.personname = "personname".asInstanceOf[typings.jsforce.jsforceStrings.personname]
   @scala.inline
-  def personname: typings.jsforce.jsforceStrings.personname = this.cast("personname")
+  def plaintextarea: typings.jsforce.jsforceStrings.plaintextarea = "plaintextarea".asInstanceOf[typings.jsforce.jsforceStrings.plaintextarea]
   @scala.inline
-  def plaintextarea: typings.jsforce.jsforceStrings.plaintextarea = this.cast("plaintextarea")
+  def richtextarea: typings.jsforce.jsforceStrings.richtextarea = "richtextarea".asInstanceOf[typings.jsforce.jsforceStrings.richtextarea]
   @scala.inline
-  def richtextarea: typings.jsforce.jsforceStrings.richtextarea = this.cast("richtextarea")
-  @scala.inline
-  def switchablepersonname: typings.jsforce.jsforceStrings.switchablepersonname = this.cast("switchablepersonname")
+  def switchablepersonname: typings.jsforce.jsforceStrings.switchablepersonname = "switchablepersonname".asInstanceOf[typings.jsforce.jsforceStrings.switchablepersonname]
 }
 

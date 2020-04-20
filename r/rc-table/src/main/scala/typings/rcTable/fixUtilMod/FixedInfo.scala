@@ -25,7 +25,6 @@ object FixedInfo {
     lastFixRight: Boolean
   ): FixedInfo = {
     val __obj = js.Dynamic.literal(firstFixLeft = firstFixLeft.asInstanceOf[js.Any], firstFixRight = firstFixRight.asInstanceOf[js.Any], fixLeft = fixLeft.asInstanceOf[js.Any], fixRight = fixRight.asInstanceOf[js.Any], lastFixLeft = lastFixLeft.asInstanceOf[js.Any], lastFixRight = lastFixRight.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FixedInfo]
   }
 }

@@ -14,7 +14,6 @@ object Geometry {
   @scala.inline
   def apply(anchor: Point, origin: Point, placement: Placement): Geometry = {
     val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Geometry]
   }
 }

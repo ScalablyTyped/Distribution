@@ -18,7 +18,6 @@ object AnonExcludeIOS11 {
   @scala.inline
   def apply(excludeIOS11: Boolean, timeout: Double): AnonExcludeIOS11 = {
     val __obj = js.Dynamic.literal(excludeIOS11 = excludeIOS11.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonExcludeIOS11]
   }
 }

@@ -58,7 +58,6 @@ object SingletonBeanFactory {
     singletonObjects: js.Object
   ): SingletonBeanFactory = {
     val __obj = js.Dynamic.literal(addSingleton = js.Any.fromFunction2(addSingleton), beanFactory = beanFactory.asInstanceOf[js.Any], containsSingleton = js.Any.fromFunction1(containsSingleton), getSingleton = js.Any.fromFunction1(getSingleton), getSingletonNames = js.Any.fromFunction0(getSingletonNames), removeSingleton = js.Any.fromFunction1(removeSingleton), singletonObjects = singletonObjects.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SingletonBeanFactory]
   }
 }

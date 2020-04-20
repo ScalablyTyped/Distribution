@@ -32,7 +32,6 @@ object BalanceLineAsset {
     selling_liabilities: String
   ): BalanceLineAsset[T] = {
     val __obj = js.Dynamic.literal(asset_code = asset_code.asInstanceOf[js.Any], asset_issuer = asset_issuer.asInstanceOf[js.Any], asset_type = asset_type.asInstanceOf[js.Any], balance = balance.asInstanceOf[js.Any], buying_liabilities = buying_liabilities.asInstanceOf[js.Any], is_authorized = is_authorized.asInstanceOf[js.Any], last_modified_ledger = last_modified_ledger.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], selling_liabilities = selling_liabilities.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BalanceLineAsset[T]]
   }
 }

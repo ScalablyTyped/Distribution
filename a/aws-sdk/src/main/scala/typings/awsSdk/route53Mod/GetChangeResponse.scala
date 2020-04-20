@@ -16,7 +16,6 @@ object GetChangeResponse {
   @scala.inline
   def apply(ChangeInfo: ChangeInfo): GetChangeResponse = {
     val __obj = js.Dynamic.literal(ChangeInfo = ChangeInfo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetChangeResponse]
   }
 }

@@ -18,24 +18,22 @@ trait HTMLDlgCenter extends js.Object
 
 object HTMLDlgCenter {
   @scala.inline
-  def HTMLDlgCenter0: `0` = this.cast(0)
+  def HTMLDlgCenter0: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def HTMLDlgCenter1: `1` = this.cast(1)
+  def HTMLDlgCenter1: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def HTMLDlgCenterDesktop: `2` = this.cast(2)
+  def HTMLDlgCenterDesktop: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def HTMLDlgCenterNo: `0` = this.cast(0)
+  def HTMLDlgCenterNo: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def HTMLDlgCenterOff: `0` = this.cast(0)
+  def HTMLDlgCenterOff: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def HTMLDlgCenterOn: `1` = this.cast(1)
+  def HTMLDlgCenterOn: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def HTMLDlgCenterParent: `1` = this.cast(1)
+  def HTMLDlgCenterParent: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def HTMLDlgCenterYes: `1` = this.cast(1)
+  def HTMLDlgCenterYes: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def HTMLDlgCenter_Max: `2147483647` = this.cast(2147483647)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def HTMLDlgCenter_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

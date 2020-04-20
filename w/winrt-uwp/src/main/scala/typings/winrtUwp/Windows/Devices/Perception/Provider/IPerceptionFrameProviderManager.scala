@@ -19,7 +19,6 @@ object IPerceptionFrameProviderManager {
   @scala.inline
   def apply(close: () => Unit, getFrameProvider: PerceptionFrameProviderInfo => IPerceptionFrameProvider): IPerceptionFrameProviderManager = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), getFrameProvider = js.Any.fromFunction1(getFrameProvider))
-  
     __obj.asInstanceOf[IPerceptionFrameProviderManager]
   }
 }

@@ -16,7 +16,6 @@ object DeleteTagsType {
   @scala.inline
   def apply(Tags: Tags): DeleteTagsType = {
     val __obj = js.Dynamic.literal(Tags = Tags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteTagsType]
   }
 }

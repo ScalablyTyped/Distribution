@@ -20,7 +20,6 @@ object PriorityLevelConfigurationReference {
   @scala.inline
   def apply(name: Input[String]): PriorityLevelConfigurationReference = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PriorityLevelConfigurationReference]
   }
 }

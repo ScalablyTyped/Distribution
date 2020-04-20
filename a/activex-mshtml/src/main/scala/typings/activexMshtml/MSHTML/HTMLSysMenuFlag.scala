@@ -16,12 +16,10 @@ trait HTMLSysMenuFlag extends js.Object
 
 object HTMLSysMenuFlag {
   @scala.inline
-  def HTMLSysMenuFlagNo: `0` = this.cast(0)
+  def HTMLSysMenuFlagNo: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def HTMLSysMenuFlagYes: `524288` = this.cast(524288)
+  def HTMLSysMenuFlagYes: `524288` = 524288.asInstanceOf[`524288`]
   @scala.inline
-  def HTMLSysMenuFlag_Max: `2147483647` = this.cast(2147483647)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def HTMLSysMenuFlag_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

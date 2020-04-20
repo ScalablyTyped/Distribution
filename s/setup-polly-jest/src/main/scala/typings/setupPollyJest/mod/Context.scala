@@ -13,7 +13,6 @@ object Context {
   @scala.inline
   def apply(polly: Polly): Context = {
     val __obj = js.Dynamic.literal(polly = polly.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Context]
   }
 }

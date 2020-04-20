@@ -14,7 +14,6 @@ object PickPropsunitvalue {
   @scala.inline
   def apply(unit: js.Any, value: js.Any): PickPropsunitvalue = {
     val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickPropsunitvalue]
   }
 }

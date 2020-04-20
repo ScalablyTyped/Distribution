@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonColumns[Row] extends js.Object {
-  var columns: js.Array[String]
+  var columns: js.Array[/* keyof Row */ String]
   var onDelete: js.UndefOr[restrict | cascade | (`no action`) | (`set null`) | (`set default`)] = js.undefined
   var onUpdate: js.UndefOr[restrict | cascade | (`no action`) | (`set null`) | (`set default`)] = js.undefined
   var refColumns: js.Array[String]
@@ -20,7 +20,7 @@ trait AnonColumns[Row] extends js.Object {
 object AnonColumns {
   @scala.inline
   def apply[Row](
-    columns: js.Array[String],
+    columns: js.Array[/* keyof Row */ String],
     refColumns: js.Array[String],
     table: String,
     onDelete: restrict | cascade | (`no action`) | (`set null`) | (`set default`) = null,

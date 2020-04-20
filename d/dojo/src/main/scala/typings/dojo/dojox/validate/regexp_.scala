@@ -80,7 +80,6 @@ object regexp_ {
     us: js.Object
   ): regexp_ = {
     val __obj = js.Dynamic.literal(ca = ca.asInstanceOf[js.Any], emailAddress = js.Any.fromFunction1(emailAddress), emailAddressList = js.Any.fromFunction1(emailAddressList), host = js.Any.fromFunction1(host), ipAddress = js.Any.fromFunction1(ipAddress), numberFormat = js.Any.fromFunction1(numberFormat), url = js.Any.fromFunction1(url), us = us.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[regexp_]
   }
 }

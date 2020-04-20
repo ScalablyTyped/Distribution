@@ -20,7 +20,6 @@ object DeregisterPatchBaselineForPatchGroupRequest {
   @scala.inline
   def apply(BaselineId: BaselineId, PatchGroup: PatchGroup): DeregisterPatchBaselineForPatchGroupRequest = {
     val __obj = js.Dynamic.literal(BaselineId = BaselineId.asInstanceOf[js.Any], PatchGroup = PatchGroup.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeregisterPatchBaselineForPatchGroupRequest]
   }
 }

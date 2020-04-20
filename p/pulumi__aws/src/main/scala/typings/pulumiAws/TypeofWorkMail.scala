@@ -13,7 +13,6 @@ object TypeofWorkMail {
   @scala.inline
   def apply(Types: TypeofWorkMail): TypeofWorkMail = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofWorkMail]
   }
 }

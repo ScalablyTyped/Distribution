@@ -24,7 +24,6 @@ object Distribution {
     variance: () => Double
   ): Distribution = {
     val __obj = js.Dynamic.literal(cdf = js.Any.fromFunction1(cdf), inv = js.Any.fromFunction1(inv), mean = js.Any.fromFunction0(mean), median = js.Any.fromFunction0(median), pdf = js.Any.fromFunction1(pdf), variance = js.Any.fromFunction0(variance))
-  
     __obj.asInstanceOf[Distribution]
   }
 }

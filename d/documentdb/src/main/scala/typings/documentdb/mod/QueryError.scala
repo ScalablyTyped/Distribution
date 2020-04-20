@@ -15,7 +15,6 @@ object QueryError {
   @scala.inline
   def apply(body: String, code: Double): QueryError = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[QueryError]
   }
 }

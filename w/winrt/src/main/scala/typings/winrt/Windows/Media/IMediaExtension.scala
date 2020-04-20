@@ -13,7 +13,6 @@ object IMediaExtension {
   @scala.inline
   def apply(setProperties: IPropertySet => Unit): IMediaExtension = {
     val __obj = js.Dynamic.literal(setProperties = js.Any.fromFunction1(setProperties))
-  
     __obj.asInstanceOf[IMediaExtension]
   }
 }

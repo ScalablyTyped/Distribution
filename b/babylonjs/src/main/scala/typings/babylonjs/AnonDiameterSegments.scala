@@ -13,7 +13,6 @@ object AnonDiameterSegments {
   @scala.inline
   def apply(diameter: Double, segments: Double): AnonDiameterSegments = {
     val __obj = js.Dynamic.literal(diameter = diameter.asInstanceOf[js.Any], segments = segments.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDiameterSegments]
   }
 }

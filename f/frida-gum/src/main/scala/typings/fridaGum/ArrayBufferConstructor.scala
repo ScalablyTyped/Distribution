@@ -22,7 +22,6 @@ object ArrayBufferConstructor {
   @scala.inline
   def apply(wrap: (NativePointerValue, Double) => ArrayBuffer): ArrayBufferConstructor = {
     val __obj = js.Dynamic.literal(wrap = js.Any.fromFunction2(wrap))
-  
     __obj.asInstanceOf[ArrayBufferConstructor]
   }
 }

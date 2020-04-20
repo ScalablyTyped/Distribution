@@ -19,7 +19,6 @@ object IMaterialCompilationOptions {
   @scala.inline
   def apply(clipPlane: Boolean, useInstances: Boolean): IMaterialCompilationOptions = {
     val __obj = js.Dynamic.literal(clipPlane = clipPlane.asInstanceOf[js.Any], useInstances = useInstances.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMaterialCompilationOptions]
   }
 }

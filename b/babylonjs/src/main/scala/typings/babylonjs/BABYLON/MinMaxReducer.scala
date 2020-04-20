@@ -33,7 +33,7 @@ class MinMaxReducer protected () extends js.Object {
   /**
     * Gets the activation status of the reducer
     */
-  def activated(): Boolean = js.native
+  def activated: Boolean = js.native
   /**
     * Deactivates the reduction computation.
     */
@@ -48,7 +48,7 @@ class MinMaxReducer protected () extends js.Object {
     * Defines the refresh rate of the computation.
     * Use 0 to compute just once, 1 to compute on every frame, 2 to compute every two frames and so on...
     */
-  def refreshRate(): Double = js.native
+  def refreshRate: Double = js.native
   def refreshRate(value: Double): js.Any = js.native
   /**
     * Sets the source texture to read the values from.
@@ -72,6 +72,6 @@ class MinMaxReducer protected () extends js.Object {
   /**
     * Gets the texture used to read the values from.
     */
-  def sourceTexture(): Nullable[RenderTargetTexture] = js.native
+  def sourceTexture: Nullable[RenderTargetTexture] = js.native
 }
 

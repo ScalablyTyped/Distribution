@@ -17,20 +17,18 @@ trait QueueItemStatus extends js.Object
 
 object QueueItemStatus {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def downloaded: typings.simplecrawler.simplecrawlerStrings.downloaded = "downloaded".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.downloaded]
   @scala.inline
-  def downloaded: typings.simplecrawler.simplecrawlerStrings.downloaded = this.cast("downloaded")
+  def failed: typings.simplecrawler.simplecrawlerStrings.failed = "failed".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.failed]
   @scala.inline
-  def failed: typings.simplecrawler.simplecrawlerStrings.failed = this.cast("failed")
+  def headers: typings.simplecrawler.simplecrawlerStrings.headers = "headers".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.headers]
   @scala.inline
-  def headers: typings.simplecrawler.simplecrawlerStrings.headers = this.cast("headers")
+  def notfound: typings.simplecrawler.simplecrawlerStrings.notfound = "notfound".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.notfound]
   @scala.inline
-  def notfound: typings.simplecrawler.simplecrawlerStrings.notfound = this.cast("notfound")
+  def queued: typings.simplecrawler.simplecrawlerStrings.queued = "queued".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.queued]
   @scala.inline
-  def queued: typings.simplecrawler.simplecrawlerStrings.queued = this.cast("queued")
+  def redirected: typings.simplecrawler.simplecrawlerStrings.redirected = "redirected".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.redirected]
   @scala.inline
-  def redirected: typings.simplecrawler.simplecrawlerStrings.redirected = this.cast("redirected")
-  @scala.inline
-  def spooled: typings.simplecrawler.simplecrawlerStrings.spooled = this.cast("spooled")
+  def spooled: typings.simplecrawler.simplecrawlerStrings.spooled = "spooled".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.spooled]
 }
 

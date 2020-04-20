@@ -19,7 +19,6 @@ object MemoryRange {
   @scala.inline
   def apply(base: NativePointer, size: Double): MemoryRange = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MemoryRange]
   }
 }

@@ -22,18 +22,16 @@ trait PpSlideShowPointerType extends js.Object
 
 object PpSlideShowPointerType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ppSlideShowPointerAlwaysHidden: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def ppSlideShowPointerAlwaysHidden: `3` = this.cast(3)
+  def ppSlideShowPointerArrow: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def ppSlideShowPointerArrow: `1` = this.cast(1)
+  def ppSlideShowPointerAutoArrow: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def ppSlideShowPointerAutoArrow: `4` = this.cast(4)
+  def ppSlideShowPointerEraser: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def ppSlideShowPointerEraser: `5` = this.cast(5)
+  def ppSlideShowPointerNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def ppSlideShowPointerNone: `0` = this.cast(0)
-  @scala.inline
-  def ppSlideShowPointerPen: `2` = this.cast(2)
+  def ppSlideShowPointerPen: `2` = 2.asInstanceOf[`2`]
 }
 

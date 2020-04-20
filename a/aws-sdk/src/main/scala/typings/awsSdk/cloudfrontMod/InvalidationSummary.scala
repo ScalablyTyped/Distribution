@@ -24,7 +24,6 @@ object InvalidationSummary {
   @scala.inline
   def apply(CreateTime: timestamp, Id: String, Status: String): InvalidationSummary = {
     val __obj = js.Dynamic.literal(CreateTime = CreateTime.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InvalidationSummary]
   }
 }

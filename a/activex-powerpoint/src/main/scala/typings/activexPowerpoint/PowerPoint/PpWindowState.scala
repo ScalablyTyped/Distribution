@@ -16,12 +16,10 @@ trait PpWindowState extends js.Object
 
 object PpWindowState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ppWindowMaximized: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def ppWindowMaximized: `3` = this.cast(3)
+  def ppWindowMinimized: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def ppWindowMinimized: `2` = this.cast(2)
-  @scala.inline
-  def ppWindowNormal: `1` = this.cast(1)
+  def ppWindowNormal: `1` = 1.asInstanceOf[`1`]
 }
 

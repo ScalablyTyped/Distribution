@@ -582,6 +582,6 @@ object aliAppStrings {
   @scala.inline
   def `yyyy-MM-dd`: `yyyy-MM-dd` = "yyyy-MM-dd".asInstanceOf[`yyyy-MM-dd`]
   @scala.inline
-  def `yyyy-MM-dd HHColonmm`: `yyyy-MM-dd HHColonmm` = "yyyy-MM-dd HH:mm".asInstanceOf[`yyyy-MM-dd HHColonmm`]
+  def `yyyy-MM-dd HHColonmm`: `yyyy-MM-dd HHColonmm` = ("yyyy-MM-dd HH:mm").asInstanceOf[`yyyy-MM-dd HHColonmm`]
 }
 

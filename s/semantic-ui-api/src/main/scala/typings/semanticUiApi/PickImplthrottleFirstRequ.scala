@@ -13,7 +13,6 @@ object PickImplthrottleFirstRequ {
   @scala.inline
   def apply(throttleFirstRequest: Boolean): PickImplthrottleFirstRequ = {
     val __obj = js.Dynamic.literal(throttleFirstRequest = throttleFirstRequest.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplthrottleFirstRequ]
   }
 }

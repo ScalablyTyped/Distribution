@@ -28,7 +28,6 @@ object ApiClient {
     workspaces: WorkspacesApi
   ): ApiClient = {
     val __obj = js.Dynamic.literal(apiKeys = apiKeys.asInstanceOf[js.Any], collections = collections.asInstanceOf[js.Any], documents = documents.asInstanceOf[js.Any], integrations = integrations.asInstanceOf[js.Any], organizations = organizations.asInstanceOf[js.Any], queries = queries.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any], workspaces = workspaces.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ApiClient]
   }
 }

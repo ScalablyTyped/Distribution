@@ -19,7 +19,6 @@ object WiFi {
   @scala.inline
   def apply(BSSID: String, SSID: String, secure: Boolean, signalStrength: Double): WiFi = {
     val __obj = js.Dynamic.literal(BSSID = BSSID.asInstanceOf[js.Any], SSID = SSID.asInstanceOf[js.Any], secure = secure.asInstanceOf[js.Any], signalStrength = signalStrength.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WiFi]
   }
 }

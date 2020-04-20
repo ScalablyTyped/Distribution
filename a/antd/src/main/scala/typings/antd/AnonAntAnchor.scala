@@ -13,7 +13,6 @@ object AnonAntAnchor {
   @scala.inline
   def apply(antAnchor: Requireable[js.Object]): AnonAntAnchor = {
     val __obj = js.Dynamic.literal(antAnchor = antAnchor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAntAnchor]
   }
 }

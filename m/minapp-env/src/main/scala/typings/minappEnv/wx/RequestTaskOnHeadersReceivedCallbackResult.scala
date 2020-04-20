@@ -13,7 +13,6 @@ object RequestTaskOnHeadersReceivedCallbackResult {
   @scala.inline
   def apply(header: js.Object): RequestTaskOnHeadersReceivedCallbackResult = {
     val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RequestTaskOnHeadersReceivedCallbackResult]
   }
 }

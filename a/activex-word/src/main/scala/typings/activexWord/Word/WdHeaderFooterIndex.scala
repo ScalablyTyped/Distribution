@@ -16,12 +16,10 @@ trait WdHeaderFooterIndex extends js.Object
 
 object WdHeaderFooterIndex {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdHeaderFooterEvenPages: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdHeaderFooterEvenPages: `3` = this.cast(3)
+  def wdHeaderFooterFirstPage: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdHeaderFooterFirstPage: `2` = this.cast(2)
-  @scala.inline
-  def wdHeaderFooterPrimary: `1` = this.cast(1)
+  def wdHeaderFooterPrimary: `1` = 1.asInstanceOf[`1`]
 }
 

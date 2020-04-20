@@ -19,7 +19,6 @@ object Queue {
   @scala.inline
   def apply(name: String, queueARN: String): Queue = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], queueARN = queueARN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Queue]
   }
 }

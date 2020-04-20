@@ -14,7 +14,6 @@ object FastRateLimitOptions {
   @scala.inline
   def apply(threshold: Double, ttl: Double): FastRateLimitOptions = {
     val __obj = js.Dynamic.literal(threshold = threshold.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FastRateLimitOptions]
   }
 }

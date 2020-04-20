@@ -13,7 +13,6 @@ object DefaultProps_ {
   @scala.inline
   def apply(Prism: PrismLib, theme: PrismTheme): DefaultProps_ = {
     val __obj = js.Dynamic.literal(Prism = Prism.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DefaultProps_]
   }
 }

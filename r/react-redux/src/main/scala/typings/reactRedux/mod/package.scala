@@ -20,7 +20,10 @@ package object mod {
     /* component */ js.Any, 
     typings.reactRedux.mod.ConnectedComponent[
       js.Any, 
-      (typings.reactRedux.mod.Omit[typings.reactRedux.mod.GetProps[_], java.lang.String]) with TNeedsProps
+      (typings.reactRedux.mod.Omit[
+        typings.reactRedux.mod.GetProps[_], 
+        /* keyof react-redux.react-redux.Shared<TInjectedProps, react-redux.react-redux.GetProps<any>> */ java.lang.String
+      ]) with TNeedsProps
     ]
   ]
   type MapDispatchToProps[TDispatchProps, TOwnProps] = (typings.reactRedux.mod.MapDispatchToPropsFunction[TDispatchProps, TOwnProps]) | TDispatchProps
@@ -47,14 +50,14 @@ package object mod {
   ]
   type Matching[InjectedProps, DecorationTargetProps] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof DecorationTargetProps ]: P extends keyof InjectedProps? InjectedProps[P] extends DecorationTargetProps[P]? DecorationTargetProps[P] : InjectedProps[P] : DecorationTargetProps[P]}
-    */ typings.reactRedux.reactReduxStrings.Matching with js.Any
+    */ typings.reactRedux.reactReduxStrings.Matching with org.scalablytyped.runtime.TopLevel[js.Any]
   type MergeProps[TStateProps, TDispatchProps, TOwnProps, TMergedProps] = js.Function3[
     /* stateProps */ TStateProps, 
     /* dispatchProps */ TDispatchProps, 
     /* ownProps */ TOwnProps, 
     TMergedProps
   ]
-  type Omit[T, K /* <: java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[java.lang.String, K]]
+  type Omit[T, K /* <: /* keyof T */ java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
   type ResolveArrayThunks[TDispatchProps /* <: js.Array[_] */] = js.Array[typings.reactRedux.mod.HandleThunkActionCreator[js.Any]] | (js.Tuple2[
     typings.reactRedux.mod.HandleThunkActionCreator[js.Any], 
     typings.reactRedux.mod.HandleThunkActionCreator[js.Any]
@@ -110,7 +113,7 @@ package object mod {
   ])
   type ResolveThunks[TDispatchProps] = TDispatchProps | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ C in keyof TDispatchProps ]: react-redux.react-redux.HandleThunkActionCreator<TDispatchProps[C]>}
-    */ typings.reactRedux.reactReduxStrings.ResolveThunks with TDispatchProps)
+    */ typings.reactRedux.reactReduxStrings.ResolveThunks with org.scalablytyped.runtime.TopLevel[TDispatchProps])
   type RootStateOrAny = typings.reactRedux.mod.AnyIfEmpty[typings.reactRedux.mod.DefaultRootState]
   type Selector[S, TProps, TOwnProps] = (js.Function2[/* state */ S, /* ownProps */ TOwnProps, TProps]) | (js.Function1[/* state */ S, TProps])
   type SelectorFactory[S, TProps, TOwnProps, TFactoryOptions] = js.Function2[
@@ -120,7 +123,7 @@ package object mod {
   ]
   type Shared[InjectedProps, DecorationTargetProps] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in std.Extract<keyof InjectedProps, keyof DecorationTargetProps> ]:? InjectedProps[P] extends DecorationTargetProps[P]? DecorationTargetProps[P] : never}
-    */ typings.reactRedux.reactReduxStrings.Shared with js.Any
+    */ typings.reactRedux.reactReduxStrings.Shared with org.scalablytyped.runtime.TopLevel[js.Any]
   type TypedUseSelectorHook[TState] = js.Function2[
     /* selector */ js.Function1[/* state */ TState, js.Any], 
     /* equalityFn */ js.UndefOr[js.Function2[/* left */ js.Any, /* right */ js.Any, scala.Boolean]], 

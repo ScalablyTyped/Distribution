@@ -29,7 +29,6 @@ object Transformoptions {
     translateY: Double
   ): Transformoptions = {
     val __obj = js.Dynamic.literal(scaleX = scaleX.asInstanceOf[js.Any], scaleY = scaleY.asInstanceOf[js.Any], skewX = skewX.asInstanceOf[js.Any], skewY = skewY.asInstanceOf[js.Any], translateX = translateX.asInstanceOf[js.Any], translateY = translateY.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Transformoptions]
   }
 }

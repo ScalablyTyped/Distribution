@@ -19,7 +19,6 @@ object DexieVersionChangeEvent {
     unsubscribe: js.Function1[/* event */ IDBVersionChangeEvent, _] => Unit
   ): DexieVersionChangeEvent = {
     val __obj = js.Dynamic.literal(fire = js.Any.fromFunction1(fire), subscribe = js.Any.fromFunction1(subscribe), unsubscribe = js.Any.fromFunction1(unsubscribe))
-  
     __obj.asInstanceOf[DexieVersionChangeEvent]
   }
 }

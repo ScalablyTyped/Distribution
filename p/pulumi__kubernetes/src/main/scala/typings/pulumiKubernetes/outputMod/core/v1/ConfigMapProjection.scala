@@ -37,7 +37,6 @@ object ConfigMapProjection {
   @scala.inline
   def apply(items: js.Array[KeyToPath], name: String, optional: Boolean): ConfigMapProjection = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConfigMapProjection]
   }
 }

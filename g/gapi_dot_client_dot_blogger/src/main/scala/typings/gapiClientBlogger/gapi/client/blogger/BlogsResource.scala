@@ -25,7 +25,6 @@ object BlogsResource {
     listByUser: AnonFetchUserInfo => Request_[BlogList]
   ): BlogsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), getByUrl = js.Any.fromFunction1(getByUrl), listByUser = js.Any.fromFunction1(listByUser))
-  
     __obj.asInstanceOf[BlogsResource]
   }
 }

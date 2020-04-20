@@ -14,7 +14,6 @@ object CMapReader {
   @scala.inline
   def apply(fetch: AnonName => js.Promise[AnonCMapData]): CMapReader = {
     val __obj = js.Dynamic.literal(fetch = js.Any.fromFunction1(fetch))
-  
     __obj.asInstanceOf[CMapReader]
   }
 }

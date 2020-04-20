@@ -20,7 +20,6 @@ object PutDedicatedIpWarmupAttributesRequest {
   @scala.inline
   def apply(Ip: Ip, WarmupPercentage: Percentage100Wrapper): PutDedicatedIpWarmupAttributesRequest = {
     val __obj = js.Dynamic.literal(Ip = Ip.asInstanceOf[js.Any], WarmupPercentage = WarmupPercentage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutDedicatedIpWarmupAttributesRequest]
   }
 }

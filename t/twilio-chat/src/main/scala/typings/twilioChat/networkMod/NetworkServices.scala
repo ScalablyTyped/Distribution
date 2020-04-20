@@ -15,7 +15,6 @@ object NetworkServices {
   @scala.inline
   def apply(session: Session, transport: Transport): NetworkServices = {
     val __obj = js.Dynamic.literal(session = session.asInstanceOf[js.Any], transport = transport.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NetworkServices]
   }
 }

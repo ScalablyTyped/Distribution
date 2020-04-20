@@ -26,7 +26,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait VueConstructor[V /* <: Vue */]
   extends // ideally, the return type should just contain Props, not Record<keyof Props, any>. But TS requires to have Base constructors with the same return type.
-Instantiable0[CombinedVueInstance[V, js.Object, js.Object, js.Object, Record[String, js.Any]]]
+Instantiable0[
+      CombinedVueInstance[V, js.Object, js.Object, js.Object, Record[/* keyof object */ String, js.Any]]
+    ]
      with Instantiable1[
       (/* options */ ComponentOptions[
         V, 
@@ -36,7 +38,7 @@ Instantiable0[CombinedVueInstance[V, js.Object, js.Object, js.Object, Record[Str
         PropsDefinition[DefaultProps], 
         DefaultProps
       ]) | (/* options */ ThisTypedComponentOptionsWithArrayProps[V, js.Object, js.Object, js.Object, String]) | (/* options */ ThisTypedComponentOptionsWithRecordProps[V, js.Object, js.Object, js.Object, js.Object]), 
-      CombinedVueInstance[V, js.Object, js.Object, js.Object, Record[String, js.Any]]
+      CombinedVueInstance[V, js.Object, js.Object, js.Object, Record[/* keyof object */ String, js.Any]]
     ] {
   var config: VueConfiguration = js.native
   var version: String = js.native

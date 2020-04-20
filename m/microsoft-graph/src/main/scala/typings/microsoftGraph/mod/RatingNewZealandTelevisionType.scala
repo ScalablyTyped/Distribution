@@ -15,16 +15,14 @@ trait RatingNewZealandTelevisionType extends js.Object
 
 object RatingNewZealandTelevisionType {
   @scala.inline
-  def adults: typings.microsoftGraph.microsoftGraphStrings.adults = this.cast("adults")
+  def adults: typings.microsoftGraph.microsoftGraphStrings.adults = "adults".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.adults]
   @scala.inline
-  def allAllowed: typings.microsoftGraph.microsoftGraphStrings.allAllowed = this.cast("allAllowed")
+  def allAllowed: typings.microsoftGraph.microsoftGraphStrings.allAllowed = "allAllowed".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allAllowed]
   @scala.inline
-  def allBlocked: typings.microsoftGraph.microsoftGraphStrings.allBlocked = this.cast("allBlocked")
+  def allBlocked: typings.microsoftGraph.microsoftGraphStrings.allBlocked = "allBlocked".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allBlocked]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def general: typings.microsoftGraph.microsoftGraphStrings.general = "general".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.general]
   @scala.inline
-  def general: typings.microsoftGraph.microsoftGraphStrings.general = this.cast("general")
-  @scala.inline
-  def parentalGuidance: typings.microsoftGraph.microsoftGraphStrings.parentalGuidance = this.cast("parentalGuidance")
+  def parentalGuidance: typings.microsoftGraph.microsoftGraphStrings.parentalGuidance = "parentalGuidance".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.parentalGuidance]
 }
 

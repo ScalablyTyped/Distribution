@@ -22,7 +22,6 @@ object ClientRequest {
     transport: AnonExpectedMessages
   ): ClientRequest = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], transport = transport.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClientRequest]
   }
 }

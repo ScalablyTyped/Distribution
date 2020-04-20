@@ -14,10 +14,8 @@ trait OSActionType extends js.Object
 
 object OSActionType {
   @scala.inline
-  def ActionTake: `1` = this.cast(1)
+  def ActionTake: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def Opened: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Opened: `0` = 0.asInstanceOf[`0`]
 }
 

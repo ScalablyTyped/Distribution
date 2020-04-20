@@ -21,7 +21,6 @@ object LogsResource {
   @scala.inline
   def apply(delete: AnonFields => Request_[js.Object], list: AnonBearertoken => Request_[ListLogsResponse]): LogsResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[LogsResource]
   }
 }

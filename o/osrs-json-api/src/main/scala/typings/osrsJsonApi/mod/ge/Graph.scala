@@ -13,7 +13,6 @@ object Graph {
   @scala.inline
   def apply(average: TimestampPriceRecord, daily: TimestampPriceRecord): Graph = {
     val __obj = js.Dynamic.literal(average = average.asInstanceOf[js.Any], daily = daily.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Graph]
   }
 }

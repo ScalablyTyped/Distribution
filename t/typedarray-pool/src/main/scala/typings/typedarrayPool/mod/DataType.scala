@@ -25,36 +25,34 @@ trait DataType extends js.Object
 
 object DataType {
   @scala.inline
-  def arraybuffer: typings.typedarrayPool.typedarrayPoolStrings.arraybuffer = this.cast("arraybuffer")
+  def arraybuffer: typings.typedarrayPool.typedarrayPoolStrings.arraybuffer = "arraybuffer".asInstanceOf[typings.typedarrayPool.typedarrayPoolStrings.arraybuffer]
   @scala.inline
-  def buffer: typings.typedarrayPool.typedarrayPoolStrings.buffer = this.cast("buffer")
+  def buffer: typings.typedarrayPool.typedarrayPoolStrings.buffer = "buffer".asInstanceOf[typings.typedarrayPool.typedarrayPoolStrings.buffer]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def data: typings.typedarrayPool.typedarrayPoolStrings.data = "data".asInstanceOf[typings.typedarrayPool.typedarrayPoolStrings.data]
   @scala.inline
-  def data: typings.typedarrayPool.typedarrayPoolStrings.data = this.cast("data")
+  def dataview: typings.typedarrayPool.typedarrayPoolStrings.dataview = "dataview".asInstanceOf[typings.typedarrayPool.typedarrayPoolStrings.dataview]
   @scala.inline
-  def dataview: typings.typedarrayPool.typedarrayPoolStrings.dataview = this.cast("dataview")
+  def double: typings.typedarrayPool.typedarrayPoolStrings.double = "double".asInstanceOf[typings.typedarrayPool.typedarrayPoolStrings.double]
   @scala.inline
-  def double: typings.typedarrayPool.typedarrayPoolStrings.double = this.cast("double")
+  def float: typings.typedarrayPool.typedarrayPoolStrings.float = "float".asInstanceOf[typings.typedarrayPool.typedarrayPoolStrings.float]
   @scala.inline
-  def float: typings.typedarrayPool.typedarrayPoolStrings.float = this.cast("float")
+  def float32: typings.typedarrayPool.typedarrayPoolStrings.float32 = "float32".asInstanceOf[typings.typedarrayPool.typedarrayPoolStrings.float32]
   @scala.inline
-  def float32: typings.typedarrayPool.typedarrayPoolStrings.float32 = this.cast("float32")
+  def float64: typings.typedarrayPool.typedarrayPoolStrings.float64 = "float64".asInstanceOf[typings.typedarrayPool.typedarrayPoolStrings.float64]
   @scala.inline
-  def float64: typings.typedarrayPool.typedarrayPoolStrings.float64 = this.cast("float64")
+  def int16: typings.typedarrayPool.typedarrayPoolStrings.int16 = "int16".asInstanceOf[typings.typedarrayPool.typedarrayPoolStrings.int16]
   @scala.inline
-  def int16: typings.typedarrayPool.typedarrayPoolStrings.int16 = this.cast("int16")
+  def int32: typings.typedarrayPool.typedarrayPoolStrings.int32 = "int32".asInstanceOf[typings.typedarrayPool.typedarrayPoolStrings.int32]
   @scala.inline
-  def int32: typings.typedarrayPool.typedarrayPoolStrings.int32 = this.cast("int32")
+  def int8: typings.typedarrayPool.typedarrayPoolStrings.int8 = "int8".asInstanceOf[typings.typedarrayPool.typedarrayPoolStrings.int8]
   @scala.inline
-  def int8: typings.typedarrayPool.typedarrayPoolStrings.int8 = this.cast("int8")
+  def uint16: typings.typedarrayPool.typedarrayPoolStrings.uint16 = "uint16".asInstanceOf[typings.typedarrayPool.typedarrayPoolStrings.uint16]
   @scala.inline
-  def uint16: typings.typedarrayPool.typedarrayPoolStrings.uint16 = this.cast("uint16")
+  def uint32: typings.typedarrayPool.typedarrayPoolStrings.uint32 = "uint32".asInstanceOf[typings.typedarrayPool.typedarrayPoolStrings.uint32]
   @scala.inline
-  def uint32: typings.typedarrayPool.typedarrayPoolStrings.uint32 = this.cast("uint32")
+  def uint8: typings.typedarrayPool.typedarrayPoolStrings.uint8 = "uint8".asInstanceOf[typings.typedarrayPool.typedarrayPoolStrings.uint8]
   @scala.inline
-  def uint8: typings.typedarrayPool.typedarrayPoolStrings.uint8 = this.cast("uint8")
-  @scala.inline
-  def uint8_clamped: typings.typedarrayPool.typedarrayPoolStrings.uint8_clamped = this.cast("uint8_clamped")
+  def uint8_clamped: typings.typedarrayPool.typedarrayPoolStrings.uint8_clamped = "uint8_clamped".asInstanceOf[typings.typedarrayPool.typedarrayPoolStrings.uint8_clamped]
 }
 

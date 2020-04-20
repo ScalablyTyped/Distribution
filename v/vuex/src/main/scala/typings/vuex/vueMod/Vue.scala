@@ -14,7 +14,6 @@ object Vue {
   @scala.inline
   def apply($store: Store[_]): Vue = {
     val __obj = js.Dynamic.literal($store = $store.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Vue]
   }
 }

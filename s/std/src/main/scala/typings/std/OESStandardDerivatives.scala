@@ -13,7 +13,6 @@ object OESStandardDerivatives {
   @scala.inline
   def apply(FRAGMENT_SHADER_DERIVATIVE_HINT_OES: GLenum): OESStandardDerivatives = {
     val __obj = js.Dynamic.literal(FRAGMENT_SHADER_DERIVATIVE_HINT_OES = FRAGMENT_SHADER_DERIVATIVE_HINT_OES.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OESStandardDerivatives]
   }
 }

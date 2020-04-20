@@ -19,7 +19,6 @@ object RedirectOptions {
   @scala.inline
   def apply(path: String, target: String): RedirectOptions = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RedirectOptions]
   }
 }

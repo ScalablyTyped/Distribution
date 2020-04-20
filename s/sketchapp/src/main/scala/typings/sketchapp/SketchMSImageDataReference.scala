@@ -24,7 +24,6 @@ object SketchMSImageDataReference {
     sha1: AnonData
   ): SketchMSImageDataReference = {
     val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], _ref = _ref.asInstanceOf[js.Any], _ref_class = _ref_class.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], sha1 = sha1.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SketchMSImageDataReference]
   }
 }

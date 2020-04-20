@@ -13,7 +13,6 @@ object OnBlurProps {
   @scala.inline
   def apply(children: () => Unit, name: String): OnBlurProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction0(children), name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnBlurProps]
   }
 }

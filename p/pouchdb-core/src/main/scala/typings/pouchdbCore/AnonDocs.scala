@@ -13,7 +13,6 @@ object AnonDocs {
   @scala.inline
   def apply[Content /* <: js.Object */](docs: js.Array[AnonOk[Content] | AnonError], id: String): AnonDocs[Content] = {
     val __obj = js.Dynamic.literal(docs = docs.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDocs[Content]]
   }
 }

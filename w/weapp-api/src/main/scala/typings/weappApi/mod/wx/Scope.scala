@@ -32,24 +32,22 @@ trait Scope extends js.Object
 
 object Scope {
   @scala.inline
-  def address: typings.weappApi.weappApiStrings.address = this.cast("address")
+  def address: typings.weappApi.weappApiStrings.address = "address".asInstanceOf[typings.weappApi.weappApiStrings.address]
   @scala.inline
-  def camera: typings.weappApi.weappApiStrings.camera = this.cast("camera")
+  def camera: typings.weappApi.weappApiStrings.camera = "camera".asInstanceOf[typings.weappApi.weappApiStrings.camera]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def invoice: typings.weappApi.weappApiStrings.invoice = "invoice".asInstanceOf[typings.weappApi.weappApiStrings.invoice]
   @scala.inline
-  def invoice: typings.weappApi.weappApiStrings.invoice = this.cast("invoice")
+  def invoiceTitle: typings.weappApi.weappApiStrings.invoiceTitle = "invoiceTitle".asInstanceOf[typings.weappApi.weappApiStrings.invoiceTitle]
   @scala.inline
-  def invoiceTitle: typings.weappApi.weappApiStrings.invoiceTitle = this.cast("invoiceTitle")
+  def record: typings.weappApi.weappApiStrings.record = "record".asInstanceOf[typings.weappApi.weappApiStrings.record]
   @scala.inline
-  def record: typings.weappApi.weappApiStrings.record = this.cast("record")
+  def userInfo: typings.weappApi.weappApiStrings.userInfo = "userInfo".asInstanceOf[typings.weappApi.weappApiStrings.userInfo]
   @scala.inline
-  def userInfo: typings.weappApi.weappApiStrings.userInfo = this.cast("userInfo")
+  def userLocation: typings.weappApi.weappApiStrings.userLocation = "userLocation".asInstanceOf[typings.weappApi.weappApiStrings.userLocation]
   @scala.inline
-  def userLocation: typings.weappApi.weappApiStrings.userLocation = this.cast("userLocation")
+  def werun: typings.weappApi.weappApiStrings.werun = "werun".asInstanceOf[typings.weappApi.weappApiStrings.werun]
   @scala.inline
-  def werun: typings.weappApi.weappApiStrings.werun = this.cast("werun")
-  @scala.inline
-  def writePhotosAlbum: typings.weappApi.weappApiStrings.writePhotosAlbum = this.cast("writePhotosAlbum")
+  def writePhotosAlbum: typings.weappApi.weappApiStrings.writePhotosAlbum = "writePhotosAlbum".asInstanceOf[typings.weappApi.weappApiStrings.writePhotosAlbum]
 }
 

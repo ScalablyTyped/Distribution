@@ -16,7 +16,6 @@ object DescribeAutoMLJobRequest {
   @scala.inline
   def apply(AutoMLJobName: AutoMLJobName): DescribeAutoMLJobRequest = {
     val __obj = js.Dynamic.literal(AutoMLJobName = AutoMLJobName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeAutoMLJobRequest]
   }
 }

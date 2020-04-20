@@ -12,7 +12,6 @@ object PatternRequiredParams {
   @scala.inline
   def apply(missingPattern: String): PatternRequiredParams = {
     val __obj = js.Dynamic.literal(missingPattern = missingPattern.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PatternRequiredParams]
   }
 }

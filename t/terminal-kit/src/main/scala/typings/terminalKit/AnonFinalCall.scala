@@ -12,7 +12,6 @@ object AnonFinalCall {
   @scala.inline
   def apply(finalCall: Boolean): AnonFinalCall = {
     val __obj = js.Dynamic.literal(finalCall = finalCall.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFinalCall]
   }
 }

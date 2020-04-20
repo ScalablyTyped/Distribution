@@ -14,7 +14,6 @@ object SanitizeElementHookEvent {
   @scala.inline
   def apply(allowedTags: StringDictionary[Boolean], tagName: String): SanitizeElementHookEvent = {
     val __obj = js.Dynamic.literal(allowedTags = allowedTags.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SanitizeElementHookEvent]
   }
 }

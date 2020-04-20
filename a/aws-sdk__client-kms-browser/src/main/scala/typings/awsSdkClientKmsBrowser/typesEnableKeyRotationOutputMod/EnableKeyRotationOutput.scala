@@ -18,7 +18,6 @@ object EnableKeyRotationOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): EnableKeyRotationOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EnableKeyRotationOutput]
   }
 }

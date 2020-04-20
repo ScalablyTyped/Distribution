@@ -16,7 +16,6 @@ object AssociateSkillWithUsersRequest {
   @scala.inline
   def apply(SkillId: SkillId): AssociateSkillWithUsersRequest = {
     val __obj = js.Dynamic.literal(SkillId = SkillId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssociateSkillWithUsersRequest]
   }
 }

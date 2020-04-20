@@ -1,5 +1,6 @@
 package typings.expect.typesMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.BigInt
 import typings.std.Error
 import typings.std.Partial
@@ -221,10 +222,10 @@ trait Matchers[R] extends js.Object {
     */
   def toMatchInlineSnapshot[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof R ]: unknown}
-    */ typings.expect.expectStrings.Matchers with js.Any */](propertyMatchers: Partial[T]): R = js.native
+    */ typings.expect.expectStrings.Matchers with TopLevel[js.Any] */](propertyMatchers: Partial[T]): R = js.native
   def toMatchInlineSnapshot[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof R ]: unknown}
-    */ typings.expect.expectStrings.Matchers with js.Any */](propertyMatchers: Partial[T], snapshot: String): R = js.native
+    */ typings.expect.expectStrings.Matchers with TopLevel[js.Any] */](propertyMatchers: Partial[T], snapshot: String): R = js.native
   def toMatchObject(expected: js.Array[_]): R = js.native
   /**
     * Used to check that a JavaScript object matches a subset of the properties of an object
@@ -242,10 +243,10 @@ trait Matchers[R] extends js.Object {
     */
   def toMatchSnapshot[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof R ]: unknown}
-    */ typings.expect.expectStrings.Matchers with js.Any */](propertyMatchers: Partial[T]): R = js.native
+    */ typings.expect.expectStrings.Matchers with TopLevel[js.Any] */](propertyMatchers: Partial[T]): R = js.native
   def toMatchSnapshot[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof R ]: unknown}
-    */ typings.expect.expectStrings.Matchers with js.Any */](propertyMatchers: Partial[T], snapshotName: String): R = js.native
+    */ typings.expect.expectStrings.Matchers with TopLevel[js.Any] */](propertyMatchers: Partial[T], snapshotName: String): R = js.native
   /**
     * Ensure that a mock function has returned (as opposed to thrown) at least once.
     */

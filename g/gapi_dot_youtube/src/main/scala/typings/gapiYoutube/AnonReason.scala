@@ -23,7 +23,6 @@ object AnonReason {
   @scala.inline
   def apply(reason: String, resourceId: AnonChannelIdKind, seedResourceId: AnonKindPlaylistId): AnonReason = {
     val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any], seedResourceId = seedResourceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonReason]
   }
 }

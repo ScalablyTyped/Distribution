@@ -27,7 +27,7 @@ class PointLight protected () extends ShadowLight {
     * In case of direction provided, the shadow will not use a cube texture but simulate a spot shadow as a fallback
     */
   @JSName("direction")
-  def direction_MPointLight(): Vector3 = js.native
+  def direction_MPointLight: Vector3 = js.native
   /**
     * In case of direction provided, the shadow will not use a cube texture but simulate a spot shadow as a fallback
     */
@@ -39,7 +39,7 @@ class PointLight protected () extends ShadowLight {
     *
     * It default to 90 degrees to work nicely with the cube texture generation for point lights shadow maps.
     */
-  def shadowAngle(): Double = js.native
+  def shadowAngle: Double = js.native
   /**
     * Setter: In case of direction provided, the shadow will not use a cube texture but simulate a spot shadow as a fallback
     * This specifies what angle the shadow will use to be created.

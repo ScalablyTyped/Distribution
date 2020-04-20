@@ -3,6 +3,7 @@ package typings.ol
 import typings.ol.coordinateMod.Coordinate
 import typings.ol.cornerMod.Corner
 import typings.ol.projMod.TransformFunction
+import typings.ol.projectionMod.default
 import typings.ol.relationshipMod.Relationship
 import typings.ol.sizeMod.Size
 import scala.scalajs.js
@@ -14,6 +15,8 @@ import scala.scalajs.js.annotation._
 object extentMod extends js.Object {
   def applyTransform(extent: Extent, transformFn: TransformFunction): Extent = js.native
   def applyTransform(extent: Extent, transformFn: TransformFunction, opt_extent: Extent): Extent = js.native
+  def applyTransform(extent: Extent, transformFn: TransformFunction, opt_extent: Extent, opt_stops: Double): Extent = js.native
+  def approximatelyEquals(extent1: Extent, extent2: Extent, tolerance: Double): Boolean = js.native
   def boundingExtent(coordinates: js.Array[Coordinate]): Extent = js.native
   def buffer(extent: Extent, value: Double): Extent = js.native
   def buffer(extent: Extent, value: Double, opt_extent: Extent): Extent = js.native
@@ -68,6 +71,7 @@ object extentMod extends js.Object {
   def returnOrUpdate(extent: Extent): Extent = js.native
   def returnOrUpdate(extent: Extent, opt_extent: Extent): Extent = js.native
   def scaleFromCenter(extent: Extent, value: Double): Unit = js.native
+  def wrapX(extent: Extent, projection: default): Extent = js.native
   type Extent = js.Tuple4[Double, Double, Double, Double]
 }
 

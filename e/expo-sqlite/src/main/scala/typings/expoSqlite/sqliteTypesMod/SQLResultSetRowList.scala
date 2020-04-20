@@ -13,7 +13,6 @@ object SQLResultSetRowList {
   @scala.inline
   def apply(item: Double => js.Any, length: Double): SQLResultSetRowList = {
     val __obj = js.Dynamic.literal(item = js.Any.fromFunction1(item), length = length.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SQLResultSetRowList]
   }
 }

@@ -16,7 +16,6 @@ object DeletePipelineRequest {
   @scala.inline
   def apply(Id: Id): DeletePipelineRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeletePipelineRequest]
   }
 }

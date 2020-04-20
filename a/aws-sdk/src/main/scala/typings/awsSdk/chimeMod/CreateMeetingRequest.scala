@@ -11,6 +11,10 @@ trait CreateMeetingRequest extends js.Object {
     */
   var ClientRequestToken: typings.awsSdk.chimeMod.ClientRequestToken = js.native
   /**
+    * The external meeting ID.
+    */
+  var ExternalMeetingId: js.UndefOr[ExternalMeetingIdType] = js.native
+  /**
     * The Region in which to create the meeting. Available values: ap-northeast-1, ap-southeast-1, ap-southeast-2, ca-central-1, eu-central-1, eu-north-1, eu-west-1, eu-west-2, eu-west-3, sa-east-1, us-east-1, us-east-2, us-west-1, us-west-2.
     */
   var MediaRegion: js.UndefOr[String] = js.native
@@ -22,20 +26,28 @@ trait CreateMeetingRequest extends js.Object {
     * The configuration for resource targets to receive notifications when meeting and attendee events occur.
     */
   var NotificationsConfiguration: js.UndefOr[MeetingNotificationConfiguration] = js.native
+  /**
+    * The tag key-value pairs.
+    */
+  var Tags: js.UndefOr[MeetingTagList] = js.native
 }
 
 object CreateMeetingRequest {
   @scala.inline
   def apply(
     ClientRequestToken: ClientRequestToken,
+    ExternalMeetingId: ExternalMeetingIdType = null,
     MediaRegion: String = null,
     MeetingHostId: ExternalUserIdType = null,
-    NotificationsConfiguration: MeetingNotificationConfiguration = null
+    NotificationsConfiguration: MeetingNotificationConfiguration = null,
+    Tags: MeetingTagList = null
   ): CreateMeetingRequest = {
     val __obj = js.Dynamic.literal(ClientRequestToken = ClientRequestToken.asInstanceOf[js.Any])
+    if (ExternalMeetingId != null) __obj.updateDynamic("ExternalMeetingId")(ExternalMeetingId.asInstanceOf[js.Any])
     if (MediaRegion != null) __obj.updateDynamic("MediaRegion")(MediaRegion.asInstanceOf[js.Any])
     if (MeetingHostId != null) __obj.updateDynamic("MeetingHostId")(MeetingHostId.asInstanceOf[js.Any])
     if (NotificationsConfiguration != null) __obj.updateDynamic("NotificationsConfiguration")(NotificationsConfiguration.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateMeetingRequest]
   }
 }

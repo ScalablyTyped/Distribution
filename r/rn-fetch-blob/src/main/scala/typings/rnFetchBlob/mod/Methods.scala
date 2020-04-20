@@ -22,22 +22,20 @@ trait Methods extends js.Object
 
 object Methods {
   @scala.inline
-  def DELETE: typings.rnFetchBlob.rnFetchBlobStrings.DELETE = this.cast("DELETE")
+  def DELETE: typings.rnFetchBlob.rnFetchBlobStrings.DELETE = "DELETE".asInstanceOf[typings.rnFetchBlob.rnFetchBlobStrings.DELETE]
   @scala.inline
-  def GET: typings.rnFetchBlob.rnFetchBlobStrings.GET = this.cast("GET")
+  def GET: typings.rnFetchBlob.rnFetchBlobStrings.GET = "GET".asInstanceOf[typings.rnFetchBlob.rnFetchBlobStrings.GET]
   @scala.inline
-  def POST: typings.rnFetchBlob.rnFetchBlobStrings.POST = this.cast("POST")
+  def POST: typings.rnFetchBlob.rnFetchBlobStrings.POST = "POST".asInstanceOf[typings.rnFetchBlob.rnFetchBlobStrings.POST]
   @scala.inline
-  def PUT: typings.rnFetchBlob.rnFetchBlobStrings.PUT = this.cast("PUT")
+  def PUT: typings.rnFetchBlob.rnFetchBlobStrings.PUT = "PUT".asInstanceOf[typings.rnFetchBlob.rnFetchBlobStrings.PUT]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def delete: delete_ = "delete".asInstanceOf[delete_]
   @scala.inline
-  def delete: delete_ = this.cast("delete")
+  def get: get_ = "get".asInstanceOf[get_]
   @scala.inline
-  def get: get_ = this.cast("get")
+  def post: post_ = "post".asInstanceOf[post_]
   @scala.inline
-  def post: post_ = this.cast("post")
-  @scala.inline
-  def put: put_ = this.cast("put")
+  def put: put_ = "put".asInstanceOf[put_]
 }
 

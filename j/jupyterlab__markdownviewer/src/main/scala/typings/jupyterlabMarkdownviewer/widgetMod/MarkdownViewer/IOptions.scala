@@ -25,7 +25,6 @@ object IOptions {
   @scala.inline
   def apply(context: IContext[IModel], renderer: IRenderer): IOptions = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], renderer = renderer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IOptions]
   }
 }

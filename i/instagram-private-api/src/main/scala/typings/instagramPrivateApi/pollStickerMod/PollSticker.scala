@@ -14,7 +14,7 @@ class PollSticker () extends InstaSticker {
   var question: String = js.native
   var viewerCanVote: js.UndefOr[Boolean] = js.native
   var viewerVote: js.UndefOr[Double] = js.native
-  def tallies(): Tallies = js.native
+  def tallies: Tallies = js.native
   def tallies(value: Tallies): js.Any = js.native
 }
 

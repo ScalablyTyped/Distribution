@@ -24,7 +24,6 @@ object CommandManager {
     platform: String
   ): CommandManager = {
     val __obj = js.Dynamic.literal(addCommand = js.Any.fromFunction1(addCommand), addCommands = js.Any.fromFunction1(addCommands), byName = byName.asInstanceOf[js.Any], commands = commands.asInstanceOf[js.Any], exec = js.Any.fromFunction3(exec), platform = platform.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CommandManager]
   }
 }

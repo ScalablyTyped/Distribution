@@ -16,7 +16,6 @@ object EnableDirectoryResponse {
   @scala.inline
   def apply(DirectoryArn: Arn): EnableDirectoryResponse = {
     val __obj = js.Dynamic.literal(DirectoryArn = DirectoryArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EnableDirectoryResponse]
   }
 }

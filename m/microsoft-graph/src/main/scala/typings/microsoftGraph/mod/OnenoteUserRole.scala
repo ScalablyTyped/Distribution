@@ -14,14 +14,12 @@ trait OnenoteUserRole extends js.Object
 
 object OnenoteUserRole {
   @scala.inline
-  def Contributor: typings.microsoftGraph.microsoftGraphStrings.Contributor = this.cast("Contributor")
+  def Contributor: typings.microsoftGraph.microsoftGraphStrings.Contributor = "Contributor".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.Contributor]
   @scala.inline
-  def None: typings.microsoftGraph.microsoftGraphStrings.None = this.cast("None")
+  def None: typings.microsoftGraph.microsoftGraphStrings.None = "None".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.None]
   @scala.inline
-  def Owner: typings.microsoftGraph.microsoftGraphStrings.Owner = this.cast("Owner")
+  def Owner: typings.microsoftGraph.microsoftGraphStrings.Owner = "Owner".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.Owner]
   @scala.inline
-  def Reader: typings.microsoftGraph.microsoftGraphStrings.Reader = this.cast("Reader")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Reader: typings.microsoftGraph.microsoftGraphStrings.Reader = "Reader".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.Reader]
 }
 

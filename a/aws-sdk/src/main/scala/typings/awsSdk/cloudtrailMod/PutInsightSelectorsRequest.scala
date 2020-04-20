@@ -20,7 +20,6 @@ object PutInsightSelectorsRequest {
   @scala.inline
   def apply(InsightSelectors: InsightSelectors, TrailName: String): PutInsightSelectorsRequest = {
     val __obj = js.Dynamic.literal(InsightSelectors = InsightSelectors.asInstanceOf[js.Any], TrailName = TrailName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutInsightSelectorsRequest]
   }
 }

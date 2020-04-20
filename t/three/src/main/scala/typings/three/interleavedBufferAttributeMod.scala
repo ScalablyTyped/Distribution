@@ -21,8 +21,8 @@ object interleavedBufferAttributeMod extends js.Object {
     var normalized: Boolean = js.native
     var offset: Double = js.native
     def applyMatrix4(m: Matrix4): this.type = js.native
-    def array(): ArrayLike[Double] = js.native
-    def count(): Double = js.native
+    def array: ArrayLike[Double] = js.native
+    def count: Double = js.native
     def getW(index: Double): Double = js.native
     def getX(index: Double): Double = js.native
     def getY(index: Double): Double = js.native

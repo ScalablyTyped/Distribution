@@ -22,7 +22,6 @@ object INxListObjectExpressionDef {
   @scala.inline
   def apply(qExpr: String, qLibraryId: String): INxListObjectExpressionDef = {
     val __obj = js.Dynamic.literal(qExpr = qExpr.asInstanceOf[js.Any], qLibraryId = qLibraryId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INxListObjectExpressionDef]
   }
 }

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object blueprintjsTimezoneComponents extends blueprintjsTimezoneProps {
   @scala.inline
-  def TimezonePicker: ComponentType[TimezonePickerProps] = js.constructorOf[typings.blueprintjsTimezone.mod.TimezonePicker].asInstanceOf[typings.react.mod.ComponentType[TimezonePickerProps]]
+  def TimezonePicker: ComponentType[TimezonePickerProps] = js.constructorOf[typings.blueprintjsTimezone.mod.TimezonePicker].asInstanceOf[ComponentType[TimezonePickerProps]]
 }
 

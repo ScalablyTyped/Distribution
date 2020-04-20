@@ -20,7 +20,6 @@ object TimerFiredEventAttributes {
   @scala.inline
   def apply(startedEventId: EventId, timerId: TimerId): TimerFiredEventAttributes = {
     val __obj = js.Dynamic.literal(startedEventId = startedEventId.asInstanceOf[js.Any], timerId = timerId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TimerFiredEventAttributes]
   }
 }

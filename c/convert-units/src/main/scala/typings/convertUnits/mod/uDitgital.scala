@@ -25,26 +25,24 @@ trait uDitgital extends js.Object
 
 object uDitgital {
   @scala.inline
-  def B: typings.convertUnits.convertUnitsStrings.B = this.cast("B")
+  def B: typings.convertUnits.convertUnitsStrings.B = "B".asInstanceOf[typings.convertUnits.convertUnitsStrings.B]
   @scala.inline
-  def GB: typings.convertUnits.convertUnitsStrings.GB = this.cast("GB")
+  def GB: typings.convertUnits.convertUnitsStrings.GB = "GB".asInstanceOf[typings.convertUnits.convertUnitsStrings.GB]
   @scala.inline
-  def Gb: Gb_ = this.cast("Gb")
+  def Gb: Gb_ = "Gb".asInstanceOf[Gb_]
   @scala.inline
-  def KB: typings.convertUnits.convertUnitsStrings.KB = this.cast("KB")
+  def KB: typings.convertUnits.convertUnitsStrings.KB = "KB".asInstanceOf[typings.convertUnits.convertUnitsStrings.KB]
   @scala.inline
-  def Kb: Kb_ = this.cast("Kb")
+  def Kb: Kb_ = "Kb".asInstanceOf[Kb_]
   @scala.inline
-  def MB: typings.convertUnits.convertUnitsStrings.MB = this.cast("MB")
+  def MB: typings.convertUnits.convertUnitsStrings.MB = "MB".asInstanceOf[typings.convertUnits.convertUnitsStrings.MB]
   @scala.inline
-  def Mb: Mb_ = this.cast("Mb")
+  def Mb: Mb_ = "Mb".asInstanceOf[Mb_]
   @scala.inline
-  def TB: typings.convertUnits.convertUnitsStrings.TB = this.cast("TB")
+  def TB: typings.convertUnits.convertUnitsStrings.TB = "TB".asInstanceOf[typings.convertUnits.convertUnitsStrings.TB]
   @scala.inline
-  def Tb: Tb_ = this.cast("Tb")
+  def Tb: Tb_ = "Tb".asInstanceOf[Tb_]
   @scala.inline
-  def b: b_ = this.cast("b")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def b: b_ = "b".asInstanceOf[b_]
 }
 

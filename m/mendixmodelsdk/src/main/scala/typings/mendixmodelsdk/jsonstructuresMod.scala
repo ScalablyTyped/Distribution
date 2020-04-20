@@ -54,7 +54,7 @@ object jsonstructuresMod extends js.Object {
       ) = this()
       @JSName("model")
       var model_FJsonElement: IModel = js.native
-      def originalValue(): String = js.native
+      def originalValue: String = js.native
       def originalValue(newValue: String): js.Any = js.native
     }
     
@@ -85,12 +85,12 @@ object jsonstructuresMod extends js.Object {
       @JSName("model")
       var model_FJsonStructure: IModel = js.native
       @JSName("containerAsFolderBase")
-      def containerAsFolderBase_MJsonStructure(): FolderBase = js.native
+      def containerAsFolderBase_MJsonStructure: FolderBase = js.native
       /**
         * In version 6.6.0: introduced
         */
-      def elements(): IList[Element] = js.native
-      def jsonSnippet(): String = js.native
+      def elements: IList[Element] = js.native
+      def jsonSnippet: String = js.native
       def jsonSnippet(newValue: String): js.Any = js.native
     }
     

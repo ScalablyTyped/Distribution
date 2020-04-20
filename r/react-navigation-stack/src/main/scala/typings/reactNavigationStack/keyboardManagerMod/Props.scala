@@ -15,7 +15,6 @@ object Props {
   @scala.inline
   def apply(children: AnonOnPageChangeCancel => ReactNode, enabled: Boolean): Props = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), enabled = enabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Props]
   }
 }

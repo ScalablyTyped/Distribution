@@ -12,7 +12,6 @@ object IInputPaneStatics {
   @scala.inline
   def apply(getForCurrentView: () => InputPane): IInputPaneStatics = {
     val __obj = js.Dynamic.literal(getForCurrentView = js.Any.fromFunction0(getForCurrentView))
-  
     __obj.asInstanceOf[IInputPaneStatics]
   }
 }

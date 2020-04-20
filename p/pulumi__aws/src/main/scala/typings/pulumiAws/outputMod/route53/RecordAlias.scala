@@ -24,7 +24,6 @@ object RecordAlias {
   @scala.inline
   def apply(evaluateTargetHealth: Boolean, name: String, zoneId: String): RecordAlias = {
     val __obj = js.Dynamic.literal(evaluateTargetHealth = evaluateTargetHealth.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], zoneId = zoneId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RecordAlias]
   }
 }

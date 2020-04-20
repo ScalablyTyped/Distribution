@@ -15,7 +15,6 @@ object RowBufferInterface {
   @scala.inline
   def apply(columnData: StringDictionary[AnonCount], rowCount: Double): RowBufferInterface = {
     val __obj = js.Dynamic.literal(columnData = columnData.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RowBufferInterface]
   }
 }

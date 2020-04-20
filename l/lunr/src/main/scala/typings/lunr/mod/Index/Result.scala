@@ -27,7 +27,6 @@ object Result {
   @scala.inline
   def apply(matchData: MatchData, ref: String, score: Double): Result = {
     val __obj = js.Dynamic.literal(matchData = matchData.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Result]
   }
 }

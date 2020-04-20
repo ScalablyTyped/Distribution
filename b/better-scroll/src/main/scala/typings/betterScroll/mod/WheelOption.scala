@@ -22,7 +22,6 @@ object WheelOption {
     wheelWrapperClass: String
   ): WheelOption = {
     val __obj = js.Dynamic.literal(adjustTime = adjustTime.asInstanceOf[js.Any], rotate = rotate.asInstanceOf[js.Any], selectedIndex = selectedIndex.asInstanceOf[js.Any], wheelItemClass = wheelItemClass.asInstanceOf[js.Any], wheelWrapperClass = wheelWrapperClass.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WheelOption]
   }
 }

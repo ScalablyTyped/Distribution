@@ -23,7 +23,6 @@ object GitQueryRefsCriteria {
   @scala.inline
   def apply(commitIds: js.Array[String], refNames: js.Array[String], searchType: GitRefSearchType): GitQueryRefsCriteria = {
     val __obj = js.Dynamic.literal(commitIds = commitIds.asInstanceOf[js.Any], refNames = refNames.asInstanceOf[js.Any], searchType = searchType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GitQueryRefsCriteria]
   }
 }

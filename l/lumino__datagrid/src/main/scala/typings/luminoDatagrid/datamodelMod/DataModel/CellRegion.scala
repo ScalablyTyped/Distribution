@@ -17,14 +17,12 @@ trait CellRegion extends js.Object
 
 object CellRegion {
   @scala.inline
-  def body: typings.luminoDatagrid.luminoDatagridStrings.body = this.cast("body")
+  def body: typings.luminoDatagrid.luminoDatagridStrings.body = "body".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.body]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `column-header`: typings.luminoDatagrid.luminoDatagridStrings.`column-header` = "column-header".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.`column-header`]
   @scala.inline
-  def `column-header`: typings.luminoDatagrid.luminoDatagridStrings.`column-header` = this.cast("column-header")
+  def `corner-header`: typings.luminoDatagrid.luminoDatagridStrings.`corner-header` = "corner-header".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.`corner-header`]
   @scala.inline
-  def `corner-header`: typings.luminoDatagrid.luminoDatagridStrings.`corner-header` = this.cast("corner-header")
-  @scala.inline
-  def `row-header`: typings.luminoDatagrid.luminoDatagridStrings.`row-header` = this.cast("row-header")
+  def `row-header`: typings.luminoDatagrid.luminoDatagridStrings.`row-header` = "row-header".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.`row-header`]
 }
 

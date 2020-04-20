@@ -16,7 +16,6 @@ object GetLoggerDefinitionRequest {
   @scala.inline
   def apply(LoggerDefinitionId: string): GetLoggerDefinitionRequest = {
     val __obj = js.Dynamic.literal(LoggerDefinitionId = LoggerDefinitionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetLoggerDefinitionRequest]
   }
 }

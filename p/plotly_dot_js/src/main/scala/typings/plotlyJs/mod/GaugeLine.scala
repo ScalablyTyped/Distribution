@@ -13,7 +13,6 @@ object GaugeLine {
   @scala.inline
   def apply(color: Color, width: Double): GaugeLine = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GaugeLine]
   }
 }

@@ -34,7 +34,6 @@ object LetBinding {
     updateTarget: js.Any => Unit
   ): LetBinding = {
     val __obj = js.Dynamic.literal(bind = js.Any.fromFunction1(bind), sourceExpression = sourceExpression.asInstanceOf[js.Any], unbind = js.Any.fromFunction0(unbind), updateTarget = js.Any.fromFunction1(updateTarget))
-  
     __obj.asInstanceOf[LetBinding]
   }
 }

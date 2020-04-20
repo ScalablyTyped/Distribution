@@ -16,7 +16,6 @@ object DisassociateElasticIpRequest {
   @scala.inline
   def apply(ElasticIp: String): DisassociateElasticIpRequest = {
     val __obj = js.Dynamic.literal(ElasticIp = ElasticIp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisassociateElasticIpRequest]
   }
 }

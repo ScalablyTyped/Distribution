@@ -24,10 +24,8 @@ trait DisplayItemStatus extends js.Object
 
 object DisplayItemStatus {
   @scala.inline
-  def FINAL: typings.googlepay.googlepayStrings.FINAL = this.cast("FINAL")
+  def FINAL: typings.googlepay.googlepayStrings.FINAL = "FINAL".asInstanceOf[typings.googlepay.googlepayStrings.FINAL]
   @scala.inline
-  def PENDING: typings.googlepay.googlepayStrings.PENDING = this.cast("PENDING")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def PENDING: typings.googlepay.googlepayStrings.PENDING = "PENDING".asInstanceOf[typings.googlepay.googlepayStrings.PENDING]
 }
 

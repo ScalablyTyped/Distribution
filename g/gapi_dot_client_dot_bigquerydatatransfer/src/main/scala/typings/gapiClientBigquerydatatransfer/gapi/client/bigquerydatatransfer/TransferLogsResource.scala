@@ -15,7 +15,6 @@ object TransferLogsResource {
   @scala.inline
   def apply(list: AnonBearertoken => Request_[ListTransferLogsResponse]): TransferLogsResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[TransferLogsResource]
   }
 }

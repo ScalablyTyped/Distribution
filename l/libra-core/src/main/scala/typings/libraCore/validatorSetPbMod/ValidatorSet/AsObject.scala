@@ -14,7 +14,6 @@ object AsObject {
     validatorPublicKeysList: js.Array[typings.libraCore.validatorPublicKeysPbMod.ValidatorPublicKeys.AsObject]
   ): AsObject = {
     val __obj = js.Dynamic.literal(validatorPublicKeysList = validatorPublicKeysList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AsObject]
   }
 }

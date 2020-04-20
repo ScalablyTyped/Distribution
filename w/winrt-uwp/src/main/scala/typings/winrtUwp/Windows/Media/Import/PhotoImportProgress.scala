@@ -28,7 +28,6 @@ object PhotoImportProgress {
     totalItemsToImport: Double
   ): PhotoImportProgress = {
     val __obj = js.Dynamic.literal(bytesImported = bytesImported.asInstanceOf[js.Any], importProgress = importProgress.asInstanceOf[js.Any], itemsImported = itemsImported.asInstanceOf[js.Any], totalBytesToImport = totalBytesToImport.asInstanceOf[js.Any], totalItemsToImport = totalItemsToImport.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PhotoImportProgress]
   }
 }

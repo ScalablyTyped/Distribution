@@ -20,7 +20,6 @@ object CreateDomainEntryRequest {
   @scala.inline
   def apply(domainEntry: DomainEntry, domainName: DomainName): CreateDomainEntryRequest = {
     val __obj = js.Dynamic.literal(domainEntry = domainEntry.asInstanceOf[js.Any], domainName = domainName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateDomainEntryRequest]
   }
 }

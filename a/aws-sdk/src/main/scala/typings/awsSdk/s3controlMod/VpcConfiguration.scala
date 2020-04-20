@@ -16,7 +16,6 @@ object VpcConfiguration {
   @scala.inline
   def apply(VpcId: VpcId): VpcConfiguration = {
     val __obj = js.Dynamic.literal(VpcId = VpcId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VpcConfiguration]
   }
 }

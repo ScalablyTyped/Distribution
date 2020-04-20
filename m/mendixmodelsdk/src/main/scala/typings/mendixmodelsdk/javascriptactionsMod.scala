@@ -81,7 +81,7 @@ object javascriptactionsMod extends js.Object {
       @JSName("model")
       var model_FJavaScriptAction: IModel = js.native
       @JSName("containerAsFolderBase")
-      def containerAsFolderBase_MJavaScriptAction(): FolderBase = js.native
+      def containerAsFolderBase_MJavaScriptAction: FolderBase = js.native
     }
     
     /**
@@ -107,7 +107,7 @@ object javascriptactionsMod extends js.Object {
       @JSName("model")
       var model_FJavaScriptActionParameter: IModel = js.native
       @JSName("containerAsCodeAction")
-      def containerAsCodeAction_MJavaScriptActionParameter(): CodeAction = js.native
+      def containerAsCodeAction_MJavaScriptActionParameter: CodeAction = js.native
     }
     
     /**
@@ -131,7 +131,7 @@ object javascriptactionsMod extends js.Object {
       @JSName("model")
       var model_FNanoflowJavaScriptActionParameterType: IModel = js.native
       @JSName("containerAsCodeActionParameter")
-      def containerAsCodeActionParameter_MNanoflowJavaScriptActionParameterType(): CodeActionParameter = js.native
+      def containerAsCodeActionParameter_MNanoflowJavaScriptActionParameterType: CodeActionParameter = js.native
     }
     
     /* static members */

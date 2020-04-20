@@ -32,7 +32,6 @@ object JsonImportArgs {
   @scala.inline
   def apply(error: js.Function, nextFeature: js.Function, url: String): JsonImportArgs = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], nextFeature = nextFeature.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JsonImportArgs]
   }
 }

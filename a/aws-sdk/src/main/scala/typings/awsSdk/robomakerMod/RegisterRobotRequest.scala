@@ -20,7 +20,6 @@ object RegisterRobotRequest {
   @scala.inline
   def apply(fleet: Arn, robot: Arn): RegisterRobotRequest = {
     val __obj = js.Dynamic.literal(fleet = fleet.asInstanceOf[js.Any], robot = robot.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RegisterRobotRequest]
   }
 }

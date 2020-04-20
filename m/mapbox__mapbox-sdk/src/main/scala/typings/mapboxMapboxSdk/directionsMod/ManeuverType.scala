@@ -26,38 +26,36 @@ trait ManeuverType extends js.Object
 
 object ManeuverType {
   @scala.inline
-  def arrive: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.arrive = this.cast("arrive")
+  def arrive: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.arrive = "arrive".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.arrive]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def continue: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.continue = "continue".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.continue]
   @scala.inline
-  def continue: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.continue = this.cast("continue")
+  def depart: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.depart = "depart".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.depart]
   @scala.inline
-  def depart: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.depart = this.cast("depart")
+  def `end of road`: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`end of road` = ("end of road").asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`end of road`]
   @scala.inline
-  def `end of road`: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`end of road` = this.cast("end of road")
+  def `exit rotary`: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`exit rotary` = ("exit rotary").asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`exit rotary`]
   @scala.inline
-  def `exit rotary`: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`exit rotary` = this.cast("exit rotary")
+  def `exit roundabout`: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`exit roundabout` = ("exit roundabout").asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`exit roundabout`]
   @scala.inline
-  def `exit roundabout`: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`exit roundabout` = this.cast("exit roundabout")
+  def fork: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.fork = "fork".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.fork]
   @scala.inline
-  def fork: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.fork = this.cast("fork")
+  def merge: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.merge = "merge".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.merge]
   @scala.inline
-  def merge: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.merge = this.cast("merge")
+  def `new name`: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`new name` = ("new name").asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`new name`]
   @scala.inline
-  def `new name`: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`new name` = this.cast("new name")
+  def notification: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.notification = "notification".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.notification]
   @scala.inline
-  def notification: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.notification = this.cast("notification")
+  def `off ramp`: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`off ramp` = ("off ramp").asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`off ramp`]
   @scala.inline
-  def `off ramp`: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`off ramp` = this.cast("off ramp")
+  def `on ramp`: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`on ramp` = ("on ramp").asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`on ramp`]
   @scala.inline
-  def `on ramp`: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`on ramp` = this.cast("on ramp")
+  def rotary: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.rotary = "rotary".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.rotary]
   @scala.inline
-  def rotary: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.rotary = this.cast("rotary")
+  def roundabout: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.roundabout = "roundabout".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.roundabout]
   @scala.inline
-  def roundabout: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.roundabout = this.cast("roundabout")
+  def `roundabout turn`: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`roundabout turn` = ("roundabout turn").asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`roundabout turn`]
   @scala.inline
-  def `roundabout turn`: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`roundabout turn` = this.cast("roundabout turn")
-  @scala.inline
-  def turn: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.turn = this.cast("turn")
+  def turn: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.turn = "turn".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.turn]
 }
 

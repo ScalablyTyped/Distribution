@@ -12,7 +12,6 @@ object ReelsMediaFeedResponseStoryCtaItem {
   @scala.inline
   def apply(links: js.Array[ReelsMediaFeedResponseLinksItem]): ReelsMediaFeedResponseStoryCtaItem = {
     val __obj = js.Dynamic.literal(links = links.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReelsMediaFeedResponseStoryCtaItem]
   }
 }

@@ -12,5 +12,5 @@ package object clientMod {
   ]
   type ConfigurationDefinition[Configuration /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */, ResolvedConfiguration /* <: Configuration */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ P in keyof Configuration ]: @aws-sdk/types.@aws-sdk/types/build/client.ConfigurationPropertyDefinition<Configuration[P], ResolvedConfiguration[P], Configuration, ResolvedConfiguration>}
-    */ typings.awsSdkTypes.awsSdkTypesStrings.ConfigurationDefinition with js.Any
+    */ typings.awsSdkTypes.awsSdkTypesStrings.ConfigurationDefinition with org.scalablytyped.runtime.TopLevel[js.Any]
 }

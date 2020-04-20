@@ -16,7 +16,6 @@ object DeleteNotebookInstanceInput {
   @scala.inline
   def apply(NotebookInstanceName: NotebookInstanceName): DeleteNotebookInstanceInput = {
     val __obj = js.Dynamic.literal(NotebookInstanceName = NotebookInstanceName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteNotebookInstanceInput]
   }
 }

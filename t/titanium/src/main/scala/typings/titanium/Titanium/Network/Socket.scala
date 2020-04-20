@@ -3,13 +3,13 @@ package typings.titanium.Titanium.Network
 import typings.titanium.AcceptDict
 import typings.titanium.AcceptedCallbackArgs
 import typings.titanium.ConnectedCallbackArgs
+import typings.titanium.Dictionary
 import typings.titanium.ErrorCallbackArgs
-import typings.titanium.ReadCallbackArgs
-import typings.titanium.Titanium.Buffer
-import typings.titanium.Titanium.Proxy
+import typings.titanium.Titanium.Event
+import typings.titanium.Titanium.IOStream
+import typings.titanium.Titanium.Module
 import typings.titanium.Titanium.UI.TabGroup
 import typings.titanium.Titanium.UI.Window
-import typings.titanium.WriteCallbackArgs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,12 +19,20 @@ import scala.scalajs.js.annotation._
 		 */
 @JSGlobal("Titanium.Network.Socket")
 @js.native
+class Socket () extends Module
+
+/**
+		 * Socket module, used for creating sockets.
+		 */
+/* static members */
+@JSGlobal("Titanium.Network.Socket")
+@js.native
 object Socket extends js.Object {
   /**
   			 * TCP socket that implements the `Titanium.IOStream` interface.
   			 */
   @js.native
-  trait TCP extends Proxy {
+  class TCP () extends IOStream {
     /**
     				 * The host to connect to or listen on.
     				 */
@@ -52,11 +60,7 @@ object Socket extends js.Object {
     /**
     				 * Callback to be fired when a listener accepts a connection.
     				 */
-    def accepted(param0: AcceptedCallbackArgs): js.Any = js.native
-    /**
-    				 * Closes a socket.
-    				 */
-    def close(): Unit = js.native
+    def accepted(param0: AcceptedCallbackArgs): Unit = js.native
     /**
     				 * Attempts to connect the socket to its host/port.
     				 */
@@ -64,107 +68,90 @@ object Socket extends js.Object {
     /**
     				 * Callback to be fired when the socket enters the "connected" state.
     				 */
-    def connected(param0: ConnectedCallbackArgs): js.Any = js.native
+    def connected(param0: ConnectedCallbackArgs): Unit = js.native
     /**
     				 * Callback to be fired when the socket enters the [ERROR](Titanium.Network.Socket.ERROR) state.
     				 */
-    def error(param0: ErrorCallbackArgs): js.Any = js.native
+    def error(param0: ErrorCallbackArgs): Unit = js.native
     /**
     				 * Gets the value of the <Titanium.Network.Socket.TCP.accepted> property.
+    				 * @deprecated Access <Titanium.Network.Socket.TCP.accepted> instead.
     				 */
-    def getAccepted(): js.Function1[/* param0 */ AcceptedCallbackArgs, _] = js.native
+    def getAccepted(): js.Function1[/* param0 */ AcceptedCallbackArgs, Unit] = js.native
     /**
     				 * Gets the value of the <Titanium.Network.Socket.TCP.connected> property.
+    				 * @deprecated Access <Titanium.Network.Socket.TCP.connected> instead.
     				 */
-    def getConnected(): js.Function1[/* param0 */ ConnectedCallbackArgs, _] = js.native
+    def getConnected(): js.Function1[/* param0 */ ConnectedCallbackArgs, Unit] = js.native
     /**
     				 * Gets the value of the <Titanium.Network.Socket.TCP.error> property.
+    				 * @deprecated Access <Titanium.Network.Socket.TCP.error> instead.
     				 */
-    def getError(): js.Function1[/* param0 */ ErrorCallbackArgs, _] = js.native
+    def getError(): js.Function1[/* param0 */ ErrorCallbackArgs, Unit] = js.native
     /**
     				 * Gets the value of the <Titanium.Network.Socket.TCP.host> property.
+    				 * @deprecated Access <Titanium.Network.Socket.TCP.host> instead.
     				 */
     def getHost(): String = js.native
     /**
     				 * Gets the value of the <Titanium.Network.Socket.TCP.listenQueueSize> property.
+    				 * @deprecated Access <Titanium.Network.Socket.TCP.listenQueueSize> instead.
     				 */
     def getListenQueueSize(): Double = js.native
     /**
     				 * Gets the value of the <Titanium.Network.Socket.TCP.port> property.
+    				 * @deprecated Access <Titanium.Network.Socket.TCP.port> instead.
     				 */
     def getPort(): Double = js.native
     /**
     				 * Gets the value of the <Titanium.Network.Socket.TCP.state> property.
+    				 * @deprecated Access <Titanium.Network.Socket.TCP.state> instead.
     				 */
     def getState(): Double = js.native
     /**
     				 * Gets the value of the <Titanium.Network.Socket.TCP.timeout> property.
+    				 * @deprecated Access <Titanium.Network.Socket.TCP.timeout> instead.
     				 */
     def getTimeout(): Double = js.native
-    /**
-    				 * Indicates whether this stream is readable.
-    				 */
-    def isReadable(): Boolean = js.native
-    /**
-    				 * Indicates whether this stream is writable.
-    				 */
-    def isWritable(): Boolean = js.native
     /**
     				 * Attempts to start listening on the socket's host/port.
     				 */
     def listen(): Unit = js.native
     /**
-    				 * Reads data from this stream into a buffer.
-    				 */
-    def read(buffer: Buffer): Double = js.native
-    def read(buffer: Buffer, offset: Double): Double = js.native
-    def read(buffer: Buffer, offset: Double, length: Double): Double = js.native
-    def read(
-      buffer: Buffer,
-      offset: Double,
-      length: Double,
-      resultsCallback: js.Function1[/* param0 */ ReadCallbackArgs, _]
-    ): Double = js.native
-    /**
     				 * Sets the value of the <Titanium.Network.Socket.TCP.accepted> property.
+    				 * @deprecated Set the value using <Titanium.Network.Socket.TCP.accepted> instead.
     				 */
-    def setAccepted(accepted: js.Function1[/* param0 */ AcceptedCallbackArgs, _]): Unit = js.native
+    def setAccepted(accepted: js.Function1[/* param0 */ AcceptedCallbackArgs, Unit]): Unit = js.native
     /**
     				 * Sets the value of the <Titanium.Network.Socket.TCP.connected> property.
+    				 * @deprecated Set the value using <Titanium.Network.Socket.TCP.connected> instead.
     				 */
-    def setConnected(connected: js.Function1[/* param0 */ ConnectedCallbackArgs, _]): Unit = js.native
+    def setConnected(connected: js.Function1[/* param0 */ ConnectedCallbackArgs, Unit]): Unit = js.native
     /**
     				 * Sets the value of the <Titanium.Network.Socket.TCP.error> property.
+    				 * @deprecated Set the value using <Titanium.Network.Socket.TCP.error> instead.
     				 */
-    def setError(error: js.Function1[/* param0 */ ErrorCallbackArgs, _]): Unit = js.native
+    def setError(error: js.Function1[/* param0 */ ErrorCallbackArgs, Unit]): Unit = js.native
     /**
     				 * Sets the value of the <Titanium.Network.Socket.TCP.host> property.
+    				 * @deprecated Set the value using <Titanium.Network.Socket.TCP.host> instead.
     				 */
     def setHost(host: String): Unit = js.native
     /**
     				 * Sets the value of the <Titanium.Network.Socket.TCP.listenQueueSize> property.
+    				 * @deprecated Set the value using <Titanium.Network.Socket.TCP.listenQueueSize> instead.
     				 */
     def setListenQueueSize(listenQueueSize: Double): Unit = js.native
     /**
     				 * Sets the value of the <Titanium.Network.Socket.TCP.port> property.
+    				 * @deprecated Set the value using <Titanium.Network.Socket.TCP.port> instead.
     				 */
     def setPort(port: Double): Unit = js.native
     /**
     				 * Sets the value of the <Titanium.Network.Socket.TCP.timeout> property.
+    				 * @deprecated Set the value using <Titanium.Network.Socket.TCP.timeout> instead.
     				 */
     def setTimeout(timeout: Double): Unit = js.native
-    /**
-    				 * Writes data from a buffer to this stream.
-    				 */
-    def write(buffer: Buffer): Double = js.native
-    def write(buffer: Buffer, offset: Double): Double = js.native
-    def write(buffer: Buffer, offset: Double, length: Double): Double = js.native
-    def write(
-      buffer: Buffer,
-      offset: Double,
-      length: Double,
-      resultsCallback: js.Function1[/* param0 */ WriteCallbackArgs, _]
-    ): Double = js.native
   }
   
   /**
@@ -202,7 +189,7 @@ object Socket extends js.Object {
   /**
   			 * Adds the specified callback as an event listener for the named event.
   			 */
-  def addEventListener(name: String, callback: js.Function1[/* param0 */ js.Any, _]): Unit = js.native
+  def addEventListener(name: String, callback: js.Function1[/* param0 */ Event, Unit]): Unit = js.native
   /**
   			 * Applies the properties to the proxy.
   			 */
@@ -211,37 +198,40 @@ object Socket extends js.Object {
   			 * Returns a new TCP socket object.
   			 */
   def createTCP(): TCP = js.native
-  def createTCP(params: js.Any): TCP = js.native
+  def createTCP(params: Dictionary[TCP]): TCP = js.native
   /**
   			 * Fires a synthesized event to any registered listeners.
   			 */
+  def fireEvent(name: String): Unit = js.native
   def fireEvent(name: String, event: js.Any): Unit = js.native
   /**
   			 * Gets the value of the <Titanium.Network.Socket.apiName> property.
+  			 * @deprecated Access <Titanium.Network.Socket.apiName> instead.
   			 */
   def getApiName(): String = js.native
   /**
   			 * Gets the value of the <Titanium.Network.Socket.bubbleParent> property.
+  			 * @deprecated Access <Titanium.Network.Socket.bubbleParent> instead.
   			 */
   def getBubbleParent(): Boolean = js.native
   /**
   			 * Gets the value of the <Titanium.Network.Socket.lifecycleContainer> property.
+  			 * @deprecated Access <Titanium.Network.Socket.lifecycleContainer> instead.
   			 */
   def getLifecycleContainer(): Window | TabGroup = js.native
   /**
   			 * Removes the specified callback as an event listener for the named event.
   			 */
-  def removeEventListener(name: String, callback: js.Function1[/* param0 */ js.Any, _]): Unit = js.native
+  def removeEventListener(name: String, callback: js.Function1[/* param0 */ Event, Unit]): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Network.Socket.bubbleParent> property.
+  			 * @deprecated Set the value using <Titanium.Network.Socket.bubbleParent> instead.
   			 */
   def setBubbleParent(bubbleParent: Boolean): Unit = js.native
-  /**
-  			 * Sets the value of the <Titanium.Network.Socket.lifecycleContainer> property.
-  			 */
   def setLifecycleContainer(lifecycleContainer: TabGroup): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Network.Socket.lifecycleContainer> property.
+  			 * @deprecated Set the value using <Titanium.Network.Socket.lifecycleContainer> instead.
   			 */
   def setLifecycleContainer(lifecycleContainer: Window): Unit = js.native
 }

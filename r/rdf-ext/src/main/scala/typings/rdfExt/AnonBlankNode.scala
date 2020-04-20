@@ -40,7 +40,6 @@ object AnonBlankNode {
     defaultGraph: DefaultGraphExt
   ): AnonBlankNode = {
     val __obj = js.Dynamic.literal(BlankNode = BlankNode.asInstanceOf[js.Any], Dataset = Dataset.asInstanceOf[js.Any], Literal = Literal.asInstanceOf[js.Any], NamedNode = NamedNode.asInstanceOf[js.Any], PrefixMap = PrefixMap.asInstanceOf[js.Any], Quad = Quad.asInstanceOf[js.Any], Variable = Variable.asInstanceOf[js.Any], defaultGraph = defaultGraph.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBlankNode]
   }
 }

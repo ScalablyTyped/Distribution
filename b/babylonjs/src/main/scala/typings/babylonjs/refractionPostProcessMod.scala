@@ -149,7 +149,7 @@ object refractionPostProcessMod extends js.Object {
       * Gets or sets the refraction texture
       * Please note that you are responsible for disposing the texture if you set it manually
       */
-    def refractionTexture(): Texture = js.native
+    def refractionTexture: Texture = js.native
     def refractionTexture(value: Texture): js.Any = js.native
   }
   

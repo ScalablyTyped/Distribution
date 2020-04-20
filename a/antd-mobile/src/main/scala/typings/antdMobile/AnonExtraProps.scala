@@ -13,7 +13,6 @@ object AnonExtraProps {
   @scala.inline
   def apply(extraProps: AnonRenderBodyComponent, restProps: AnonClassName): AnonExtraProps = {
     val __obj = js.Dynamic.literal(extraProps = extraProps.asInstanceOf[js.Any], restProps = restProps.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonExtraProps]
   }
 }

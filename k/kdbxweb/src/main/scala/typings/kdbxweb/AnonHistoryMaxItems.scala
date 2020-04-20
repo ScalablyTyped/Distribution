@@ -22,7 +22,6 @@ object AnonHistoryMaxItems {
     RecycleBinName: String
   ): AnonHistoryMaxItems = {
     val __obj = js.Dynamic.literal(HistoryMaxItems = HistoryMaxItems.asInstanceOf[js.Any], HistoryMaxSize = HistoryMaxSize.asInstanceOf[js.Any], KeyEncryptionRounds = KeyEncryptionRounds.asInstanceOf[js.Any], MntncHistoryDays = MntncHistoryDays.asInstanceOf[js.Any], RecycleBinName = RecycleBinName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHistoryMaxItems]
   }
 }

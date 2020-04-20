@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeFormProps {
   @scala.inline
-  def ReactNativeFormProps: FormProps.type = typings.reactNativeForm.mod.FormProps
+  def ReactNativeFormProps: FormProps.type = FormProps
   type ReactNativeFormProps = FormProps
 }
 

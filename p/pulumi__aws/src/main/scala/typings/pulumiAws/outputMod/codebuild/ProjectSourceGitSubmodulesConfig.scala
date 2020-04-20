@@ -16,7 +16,6 @@ object ProjectSourceGitSubmodulesConfig {
   @scala.inline
   def apply(fetchSubmodules: Boolean): ProjectSourceGitSubmodulesConfig = {
     val __obj = js.Dynamic.literal(fetchSubmodules = fetchSubmodules.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProjectSourceGitSubmodulesConfig]
   }
 }

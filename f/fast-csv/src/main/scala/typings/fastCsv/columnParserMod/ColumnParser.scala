@@ -21,7 +21,6 @@ object ColumnParser {
     quotedColumnParser: typings.fastCsv.quotedColumnParserMod.default
   ): ColumnParser = {
     val __obj = js.Dynamic.literal(nonQuotedColumnParser = nonQuotedColumnParser.asInstanceOf[js.Any], parse = js.Any.fromFunction1(parse), parserOptions = parserOptions.asInstanceOf[js.Any], quotedColumnParser = quotedColumnParser.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ColumnParser]
   }
 }

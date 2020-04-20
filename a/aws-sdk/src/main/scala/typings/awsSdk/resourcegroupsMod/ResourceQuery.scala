@@ -20,7 +20,6 @@ object ResourceQuery {
   @scala.inline
   def apply(Query: Query, Type: QueryType): ResourceQuery = {
     val __obj = js.Dynamic.literal(Query = Query.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResourceQuery]
   }
 }

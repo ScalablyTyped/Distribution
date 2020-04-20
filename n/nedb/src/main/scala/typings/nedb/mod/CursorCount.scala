@@ -13,7 +13,6 @@ object CursorCount {
   @scala.inline
   def apply(exec: js.Function2[/* err */ Error, /* count */ Double, Unit] => Unit): CursorCount = {
     val __obj = js.Dynamic.literal(exec = js.Any.fromFunction1(exec))
-  
     __obj.asInstanceOf[CursorCount]
   }
 }

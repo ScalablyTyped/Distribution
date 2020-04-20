@@ -13,7 +13,6 @@ object Deprecatable {
   @scala.inline
   def apply[T](isDeprecated: String => Validator[T]): Deprecatable[T] = {
     val __obj = js.Dynamic.literal(isDeprecated = js.Any.fromFunction1(isDeprecated))
-  
     __obj.asInstanceOf[Deprecatable[T]]
   }
 }

@@ -13,7 +13,6 @@ object PickImplselectOnKeydown {
   @scala.inline
   def apply(selectOnKeydown: Boolean): PickImplselectOnKeydown = {
     val __obj = js.Dynamic.literal(selectOnKeydown = selectOnKeydown.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplselectOnKeydown]
   }
 }

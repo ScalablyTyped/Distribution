@@ -24,7 +24,6 @@ object ListUploadsResult {
     uploads: js.Array[Upload]
   ): ListUploadsResult = {
     val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], isTruncated = isTruncated.asInstanceOf[js.Any], nextKeyMarker = nextKeyMarker.asInstanceOf[js.Any], nextUploadIdMarker = nextUploadIdMarker.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any], uploads = uploads.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListUploadsResult]
   }
 }

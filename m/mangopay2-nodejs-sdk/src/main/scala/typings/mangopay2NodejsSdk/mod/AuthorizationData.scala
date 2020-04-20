@@ -14,7 +14,6 @@ object AuthorizationData {
   @scala.inline
   def apply(access_token: String, expires_in: Double, token_type: String): AuthorizationData = {
     val __obj = js.Dynamic.literal(access_token = access_token.asInstanceOf[js.Any], expires_in = expires_in.asInstanceOf[js.Any], token_type = token_type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AuthorizationData]
   }
 }

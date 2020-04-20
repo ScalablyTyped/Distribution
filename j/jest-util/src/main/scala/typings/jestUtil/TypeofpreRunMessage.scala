@@ -14,7 +14,6 @@ object TypeofpreRunMessage {
   @scala.inline
   def apply(print: WritableStream => Unit, remove: WritableStream => Unit): TypeofpreRunMessage = {
     val __obj = js.Dynamic.literal(print = js.Any.fromFunction1(print), remove = js.Any.fromFunction1(remove))
-  
     __obj.asInstanceOf[TypeofpreRunMessage]
   }
 }

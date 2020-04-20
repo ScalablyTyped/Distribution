@@ -28,13 +28,13 @@ trait Float64Array extends /* index */ NumberDictionary[Double] {
     * The offset in bytes of the array.
     */
   val byteOffset: Double = js.native
-  @JSName(scala.scalajs.js.Symbol.iterator)
+  @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[Double]] = js.native
   /**
     * The length of the array.
     */
   val length: Double = js.native
-  @JSName(scala.scalajs.js.Symbol.toStringTag)
+  @JSName(js.Symbol.toStringTag)
   val toStringTag: typings.minappEnv.minappEnvStrings.Float64Array = js.native
   /**
     * Returns the this object after copying a section of the array identified by start and end

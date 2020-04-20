@@ -14,7 +14,6 @@ object IIsCompleteReplyIncomplete {
   @scala.inline
   def apply(indent: String, status: incomplete): IIsCompleteReplyIncomplete = {
     val __obj = js.Dynamic.literal(indent = indent.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IIsCompleteReplyIncomplete]
   }
 }

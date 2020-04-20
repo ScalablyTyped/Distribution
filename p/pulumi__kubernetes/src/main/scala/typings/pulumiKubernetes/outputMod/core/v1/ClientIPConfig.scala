@@ -20,7 +20,6 @@ object ClientIPConfig {
   @scala.inline
   def apply(timeoutSeconds: Double): ClientIPConfig = {
     val __obj = js.Dynamic.literal(timeoutSeconds = timeoutSeconds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClientIPConfig]
   }
 }

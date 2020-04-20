@@ -15,7 +15,6 @@ object ParsedResult {
   @scala.inline
   def apply(browser: BrowserDetails, engine: EngineDetails, os: OSDetails, platform: PlatformDetails): ParsedResult = {
     val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any], engine = engine.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ParsedResult]
   }
 }

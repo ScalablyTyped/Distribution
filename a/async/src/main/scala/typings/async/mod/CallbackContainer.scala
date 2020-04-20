@@ -12,7 +12,6 @@ object CallbackContainer {
   @scala.inline
   def apply(callback: js.Function): CallbackContainer = {
     val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CallbackContainer]
   }
 }

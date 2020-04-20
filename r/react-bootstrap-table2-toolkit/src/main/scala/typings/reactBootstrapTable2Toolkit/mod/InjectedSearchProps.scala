@@ -14,7 +14,6 @@ object InjectedSearchProps {
   @scala.inline
   def apply(onClear: () => Unit, onSearch: String => Unit, searchText: String): InjectedSearchProps = {
     val __obj = js.Dynamic.literal(onClear = js.Any.fromFunction0(onClear), onSearch = js.Any.fromFunction1(onSearch), searchText = searchText.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InjectedSearchProps]
   }
 }

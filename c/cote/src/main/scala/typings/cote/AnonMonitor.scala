@@ -15,7 +15,6 @@ object AnonMonitor {
   @scala.inline
   def apply(monitor: Monitor, server: Server): AnonMonitor = {
     val __obj = js.Dynamic.literal(monitor = monitor.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMonitor]
   }
 }

@@ -44,7 +44,6 @@ object SelectSingle {
     setName: String => SelectSingle
   ): SelectSingle = {
     val __obj = js.Dynamic.literal(addOption = js.Any.fromFunction1(addOption), setAllowOverride = js.Any.fromFunction1(setAllowOverride), setHelpText = js.Any.fromFunction1(setHelpText), setId = js.Any.fromFunction1(setId), setIsDynamic = js.Any.fromFunction1(setIsDynamic), setName = js.Any.fromFunction1(setName))
-  
     __obj.asInstanceOf[SelectSingle]
   }
 }

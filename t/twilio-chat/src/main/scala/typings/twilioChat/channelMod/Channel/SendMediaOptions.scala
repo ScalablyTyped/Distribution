@@ -14,7 +14,6 @@ object SendMediaOptions {
   @scala.inline
   def apply(contentType: String, media: String | Buffer): SendMediaOptions = {
     val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], media = media.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SendMediaOptions]
   }
 }

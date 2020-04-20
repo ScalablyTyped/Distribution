@@ -15,7 +15,6 @@ object Impl {
   @scala.inline
   def apply(validate: String): Impl = {
     val __obj = js.Dynamic.literal(validate = validate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Impl]
   }
 }

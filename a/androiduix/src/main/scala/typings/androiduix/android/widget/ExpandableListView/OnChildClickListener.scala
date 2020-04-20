@@ -21,7 +21,6 @@ object OnChildClickListener {
     onChildClick: (typings.androiduix.android.widget.ExpandableListView, View, Double, Double, Double) => Boolean
   ): OnChildClickListener = {
     val __obj = js.Dynamic.literal(onChildClick = js.Any.fromFunction5(onChildClick))
-  
     __obj.asInstanceOf[OnChildClickListener]
   }
 }

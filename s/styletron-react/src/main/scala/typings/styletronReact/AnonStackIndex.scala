@@ -15,7 +15,6 @@ object AnonStackIndex {
   @scala.inline
   def apply(stackIndex: StackIndex, stackInfo: StackInfo): AnonStackIndex = {
     val __obj = js.Dynamic.literal(stackIndex = stackIndex.asInstanceOf[js.Any], stackInfo = stackInfo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonStackIndex]
   }
 }

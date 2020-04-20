@@ -25,7 +25,6 @@ object IMotionControllerButtonMeshMap {
   @scala.inline
   def apply(pressedMesh: AbstractMesh, unpressedMesh: AbstractMesh, valueMesh: AbstractMesh): IMotionControllerButtonMeshMap = {
     val __obj = js.Dynamic.literal(pressedMesh = pressedMesh.asInstanceOf[js.Any], unpressedMesh = unpressedMesh.asInstanceOf[js.Any], valueMesh = valueMesh.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMotionControllerButtonMeshMap]
   }
 }

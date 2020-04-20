@@ -17,20 +17,18 @@ trait RollTransformationKey extends js.Object
 
 object RollTransformationKey {
   @scala.inline
-  def add: typings.roll.rollStrings.add = this.cast("add")
+  def add: typings.roll.rollStrings.add = "add".asInstanceOf[typings.roll.rollStrings.add]
   @scala.inline
-  def `best-of`: typings.roll.rollStrings.`best-of` = this.cast("best-of")
+  def `best-of`: typings.roll.rollStrings.`best-of` = "best-of".asInstanceOf[typings.roll.rollStrings.`best-of`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def divide: typings.roll.rollStrings.divide = "divide".asInstanceOf[typings.roll.rollStrings.divide]
   @scala.inline
-  def divide: typings.roll.rollStrings.divide = this.cast("divide")
+  def multiply: typings.roll.rollStrings.multiply = "multiply".asInstanceOf[typings.roll.rollStrings.multiply]
   @scala.inline
-  def multiply: typings.roll.rollStrings.multiply = this.cast("multiply")
+  def subtract: typings.roll.rollStrings.subtract = "subtract".asInstanceOf[typings.roll.rollStrings.subtract]
   @scala.inline
-  def subtract: typings.roll.rollStrings.subtract = this.cast("subtract")
+  def sum: typings.roll.rollStrings.sum = "sum".asInstanceOf[typings.roll.rollStrings.sum]
   @scala.inline
-  def sum: typings.roll.rollStrings.sum = this.cast("sum")
-  @scala.inline
-  def `worst-of`: typings.roll.rollStrings.`worst-of` = this.cast("worst-of")
+  def `worst-of`: typings.roll.rollStrings.`worst-of` = "worst-of".asInstanceOf[typings.roll.rollStrings.`worst-of`]
 }
 

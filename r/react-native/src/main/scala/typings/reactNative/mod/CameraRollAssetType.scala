@@ -13,12 +13,10 @@ trait CameraRollAssetType extends js.Object
 
 object CameraRollAssetType {
   @scala.inline
-  def All: typings.reactNative.reactNativeStrings.All = this.cast("All")
+  def All: typings.reactNative.reactNativeStrings.All = "All".asInstanceOf[typings.reactNative.reactNativeStrings.All]
   @scala.inline
-  def Photos: typings.reactNative.reactNativeStrings.Photos = this.cast("Photos")
+  def Photos: typings.reactNative.reactNativeStrings.Photos = "Photos".asInstanceOf[typings.reactNative.reactNativeStrings.Photos]
   @scala.inline
-  def Videos: typings.reactNative.reactNativeStrings.Videos = this.cast("Videos")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Videos: typings.reactNative.reactNativeStrings.Videos = "Videos".asInstanceOf[typings.reactNative.reactNativeStrings.Videos]
 }
 

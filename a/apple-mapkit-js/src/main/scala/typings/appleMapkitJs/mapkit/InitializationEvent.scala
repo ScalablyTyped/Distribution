@@ -16,7 +16,6 @@ object InitializationEvent {
   @scala.inline
   def apply(status: Initialized | Refreshed | Unauthorized | (`Too Many Requests`)): InitializationEvent = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InitializationEvent]
   }
 }

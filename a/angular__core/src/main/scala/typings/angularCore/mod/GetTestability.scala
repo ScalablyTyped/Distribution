@@ -16,7 +16,6 @@ object GetTestability {
     findTestabilityInTree: (TestabilityRegistry, js.Any, Boolean) => Testability | Null
   ): GetTestability = {
     val __obj = js.Dynamic.literal(addToWindow = js.Any.fromFunction1(addToWindow), findTestabilityInTree = js.Any.fromFunction3(findTestabilityInTree))
-  
     __obj.asInstanceOf[GetTestability]
   }
 }

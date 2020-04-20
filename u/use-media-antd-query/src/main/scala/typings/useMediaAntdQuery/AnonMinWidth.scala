@@ -13,7 +13,6 @@ object AnonMinWidth {
   @scala.inline
   def apply(matchMedia: String, minWidth: Double): AnonMinWidth = {
     val __obj = js.Dynamic.literal(matchMedia = matchMedia.asInstanceOf[js.Any], minWidth = minWidth.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMinWidth]
   }
 }

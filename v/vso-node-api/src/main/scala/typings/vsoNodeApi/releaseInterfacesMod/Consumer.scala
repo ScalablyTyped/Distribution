@@ -13,7 +13,6 @@ object Consumer {
   @scala.inline
   def apply(consumerId: Double, consumerName: String): Consumer = {
     val __obj = js.Dynamic.literal(consumerId = consumerId.asInstanceOf[js.Any], consumerName = consumerName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Consumer]
   }
 }

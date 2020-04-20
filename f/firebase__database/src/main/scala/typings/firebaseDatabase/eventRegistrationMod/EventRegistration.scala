@@ -63,7 +63,6 @@ object EventRegistration {
     respondsTo: String => Boolean
   ): EventRegistration = {
     val __obj = js.Dynamic.literal(createCancelEvent = js.Any.fromFunction2(createCancelEvent), createEvent = js.Any.fromFunction2(createEvent), getEventRunner = js.Any.fromFunction1(getEventRunner), hasAnyCallback = js.Any.fromFunction0(hasAnyCallback), matches = js.Any.fromFunction1(matches), respondsTo = js.Any.fromFunction1(respondsTo))
-  
     __obj.asInstanceOf[EventRegistration]
   }
 }

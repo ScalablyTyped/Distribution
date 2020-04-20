@@ -16,7 +16,6 @@ object CreateEndpointConfigOutput {
   @scala.inline
   def apply(EndpointConfigArn: EndpointConfigArn): CreateEndpointConfigOutput = {
     val __obj = js.Dynamic.literal(EndpointConfigArn = EndpointConfigArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateEndpointConfigOutput]
   }
 }

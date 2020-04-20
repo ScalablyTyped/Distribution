@@ -14,7 +14,6 @@ object RoleLocalResource {
   @scala.inline
   def apply(maximumSizeInMegabytes: Double, name: String, path: String): RoleLocalResource = {
     val __obj = js.Dynamic.literal(maximumSizeInMegabytes = maximumSizeInMegabytes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RoleLocalResource]
   }
 }

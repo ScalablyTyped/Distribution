@@ -15,7 +15,6 @@ object AnonRegisteredStyleBrand {
   @scala.inline
   def apply(__registeredStyleBrand: ViewStyle | TextStyle | ImageStyle): AnonRegisteredStyleBrand = {
     val __obj = js.Dynamic.literal(__registeredStyleBrand = __registeredStyleBrand.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRegisteredStyleBrand]
   }
 }

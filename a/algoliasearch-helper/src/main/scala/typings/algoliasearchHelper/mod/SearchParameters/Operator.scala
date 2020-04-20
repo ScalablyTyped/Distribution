@@ -16,18 +16,16 @@ trait Operator extends js.Object
 
 object Operator {
   @scala.inline
-  def Equalssign: typings.algoliasearchHelper.algoliasearchHelperStrings.Equalssign = this.cast("=")
+  def Equalssign: typings.algoliasearchHelper.algoliasearchHelperStrings.Equalssign = "=".asInstanceOf[typings.algoliasearchHelper.algoliasearchHelperStrings.Equalssign]
   @scala.inline
-  def ExclamationmarkEqualssign: typings.algoliasearchHelper.algoliasearchHelperStrings.ExclamationmarkEqualssign = this.cast("!=")
+  def ExclamationmarkEqualssign: typings.algoliasearchHelper.algoliasearchHelperStrings.ExclamationmarkEqualssign = "!=".asInstanceOf[typings.algoliasearchHelper.algoliasearchHelperStrings.ExclamationmarkEqualssign]
   @scala.inline
-  def Greaterthansign: typings.algoliasearchHelper.algoliasearchHelperStrings.Greaterthansign = this.cast(">")
+  def Greaterthansign: typings.algoliasearchHelper.algoliasearchHelperStrings.Greaterthansign = ">".asInstanceOf[typings.algoliasearchHelper.algoliasearchHelperStrings.Greaterthansign]
   @scala.inline
-  def GreaterthansignEqualssign: typings.algoliasearchHelper.algoliasearchHelperStrings.GreaterthansignEqualssign = this.cast(">=")
+  def GreaterthansignEqualssign: typings.algoliasearchHelper.algoliasearchHelperStrings.GreaterthansignEqualssign = ">=".asInstanceOf[typings.algoliasearchHelper.algoliasearchHelperStrings.GreaterthansignEqualssign]
   @scala.inline
-  def Lessthansign: typings.algoliasearchHelper.algoliasearchHelperStrings.Lessthansign = this.cast("<")
+  def Lessthansign: typings.algoliasearchHelper.algoliasearchHelperStrings.Lessthansign = "<".asInstanceOf[typings.algoliasearchHelper.algoliasearchHelperStrings.Lessthansign]
   @scala.inline
-  def LessthansignEqualssign: typings.algoliasearchHelper.algoliasearchHelperStrings.LessthansignEqualssign = this.cast("<=")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def LessthansignEqualssign: typings.algoliasearchHelper.algoliasearchHelperStrings.LessthansignEqualssign = "<=".asInstanceOf[typings.algoliasearchHelper.algoliasearchHelperStrings.LessthansignEqualssign]
 }
 

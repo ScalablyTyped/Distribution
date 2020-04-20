@@ -18,14 +18,12 @@ trait XlBorderWeight extends js.Object
 
 object XlBorderWeight {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlHairline: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlHairline: `1` = this.cast(1)
+  def xlMedium: `-4138` = -4138.asInstanceOf[`-4138`]
   @scala.inline
-  def xlMedium: `-4138` = this.cast(-4138)
+  def xlThick: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlThick: `4` = this.cast(4)
-  @scala.inline
-  def xlThin: `2` = this.cast(2)
+  def xlThin: `2` = 2.asInstanceOf[`2`]
 }
 

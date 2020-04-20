@@ -22,7 +22,6 @@ object Picker {
     setVisible: Boolean => Picker
   ): Picker = {
     val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), isVisible = js.Any.fromFunction0(isVisible), setCallback = js.Any.fromFunction1(setCallback), setRelayUrl = js.Any.fromFunction1(setRelayUrl), setVisible = js.Any.fromFunction1(setVisible))
-  
     __obj.asInstanceOf[Picker]
   }
 }

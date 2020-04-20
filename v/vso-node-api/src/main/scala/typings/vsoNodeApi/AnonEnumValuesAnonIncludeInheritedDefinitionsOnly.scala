@@ -12,7 +12,6 @@ object AnonEnumValuesAnonIncludeInheritedDefinitionsOnly {
   @scala.inline
   def apply(enumValues: AnonIncludeInheritedDefinitionsOnly): AnonEnumValuesAnonIncludeInheritedDefinitionsOnly = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumValuesAnonIncludeInheritedDefinitionsOnly]
   }
 }

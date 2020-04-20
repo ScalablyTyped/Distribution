@@ -81,17 +81,17 @@ object lensRenderingPipelineMod extends js.Object {
     /**
       * Gets or sets a boolean indicating if blur noise is enabled
       */
-    def blurNoise(): Boolean = js.native
+    def blurNoise: Boolean = js.native
     def blurNoise(value: Boolean): js.Any = js.native
     /**
       * Gets or sets the chromatic aberration amount
       */
-    def chromaticAberration(): Double = js.native
+    def chromaticAberration: Double = js.native
     def chromaticAberration(value: Double): js.Any = js.native
     /**
       * Gets or sets the darken out of focus amount
       */
-    def darkenOutOfFocus(): Double = js.native
+    def darkenOutOfFocus: Double = js.native
     def darkenOutOfFocus(value: Double): js.Any = js.native
     /**
       * Sets chromatic aberration amount to 0
@@ -129,22 +129,22 @@ object lensRenderingPipelineMod extends js.Object {
     /**
       * Gets or sets the depth of field aperture
       */
-    def dofAperture(): Double = js.native
+    def dofAperture: Double = js.native
     def dofAperture(value: Double): js.Any = js.native
     /**
       * Gets or sets the depth of field distortion
       */
-    def dofDistortion(): Double = js.native
+    def dofDistortion: Double = js.native
     def dofDistortion(value: Double): js.Any = js.native
     /**
       * Gets or sets the edge blur
       */
-    def edgeBlur(): Double = js.native
+    def edgeBlur: Double = js.native
     def edgeBlur(value: Double): js.Any = js.native
     /**
       * Gets or sets the edge distortion
       */
-    def edgeDistortion(): Double = js.native
+    def edgeDistortion: Double = js.native
     def edgeDistortion(value: Double): js.Any = js.native
     /**
       * Enables noise blur
@@ -157,27 +157,27 @@ object lensRenderingPipelineMod extends js.Object {
     /**
       * Gets or sets the grain amount
       */
-    def grainAmount(): Double = js.native
+    def grainAmount: Double = js.native
     def grainAmount(value: Double): js.Any = js.native
     /**
       * Gets or sets the highlight grain amount
       */
-    def highlightsGain(): Double = js.native
+    def highlightsGain: Double = js.native
     def highlightsGain(value: Double): js.Any = js.native
     /**
       * Gets or sets the highlight threshold
       */
-    def highlightsThreshold(): Double = js.native
+    def highlightsThreshold: Double = js.native
     def highlightsThreshold(value: Double): js.Any = js.native
     /**
       * Gets or sets a boolean indicating if pentagon bokeh is enabled
       */
-    def pentagonBokeh(): Boolean = js.native
+    def pentagonBokeh: Boolean = js.native
     def pentagonBokeh(value: Boolean): js.Any = js.native
     /**
       * Gets associated scene
       */
-    def scene(): Scene = js.native
+    def scene: Scene = js.native
     /**
       * Sets the Aperture amount
       * @param amount amount of Aperture

@@ -25,7 +25,6 @@ object ScaleStatus {
   @scala.inline
   def apply(replicas: Double, selector: String): ScaleStatus = {
     val __obj = js.Dynamic.literal(replicas = replicas.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScaleStatus]
   }
 }

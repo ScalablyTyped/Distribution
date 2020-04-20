@@ -16,7 +16,6 @@ object AnonDelete {
   @scala.inline
   def apply(Delete: Boolean, Read: Boolean, RetentionPolicy: AnonDays, Version: Double, Write: Boolean): AnonDelete = {
     val __obj = js.Dynamic.literal(Delete = Delete.asInstanceOf[js.Any], Read = Read.asInstanceOf[js.Any], RetentionPolicy = RetentionPolicy.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any], Write = Write.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDelete]
   }
 }

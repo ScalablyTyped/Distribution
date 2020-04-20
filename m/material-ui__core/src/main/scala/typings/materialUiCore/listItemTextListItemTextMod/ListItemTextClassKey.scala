@@ -16,18 +16,16 @@ trait ListItemTextClassKey extends js.Object
 
 object ListItemTextClassKey {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dense: typings.materialUiCore.materialUiCoreStrings.dense = "dense".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.dense]
   @scala.inline
-  def dense: typings.materialUiCore.materialUiCoreStrings.dense = this.cast("dense")
+  def inset: typings.materialUiCore.materialUiCoreStrings.inset = "inset".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.inset]
   @scala.inline
-  def inset: typings.materialUiCore.materialUiCoreStrings.inset = this.cast("inset")
+  def primary: typings.materialUiCore.materialUiCoreStrings.primary = "primary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.primary]
   @scala.inline
-  def primary: typings.materialUiCore.materialUiCoreStrings.primary = this.cast("primary")
+  def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
   @scala.inline
-  def root: typings.materialUiCore.materialUiCoreStrings.root = this.cast("root")
+  def secondary: typings.materialUiCore.materialUiCoreStrings.secondary = "secondary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.secondary]
   @scala.inline
-  def secondary: typings.materialUiCore.materialUiCoreStrings.secondary = this.cast("secondary")
-  @scala.inline
-  def textDense: typings.materialUiCore.materialUiCoreStrings.textDense = this.cast("textDense")
+  def textDense: typings.materialUiCore.materialUiCoreStrings.textDense = "textDense".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.textDense]
 }
 

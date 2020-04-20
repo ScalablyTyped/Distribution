@@ -16,12 +16,10 @@ trait WdListLevelAlignment extends js.Object
 
 object WdListLevelAlignment {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdListLevelAlignCenter: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdListLevelAlignCenter: `1` = this.cast(1)
+  def wdListLevelAlignLeft: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdListLevelAlignLeft: `0` = this.cast(0)
-  @scala.inline
-  def wdListLevelAlignRight: `2` = this.cast(2)
+  def wdListLevelAlignRight: `2` = 2.asInstanceOf[`2`]
 }
 

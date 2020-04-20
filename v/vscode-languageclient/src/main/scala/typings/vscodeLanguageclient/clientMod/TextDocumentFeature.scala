@@ -31,7 +31,7 @@ abstract class TextDocumentFeature[PO, RO /* <: typings.vscodeLanguageserverProt
     capability: PO
   ): js.UndefOr[RO with AnonDocumentSelector] = js.native
   @JSName("messages")
-  def messages_MTextDocumentFeature(): typings.vscodeJsonrpc.messagesMod.MessageType = js.native
+  def messages_MTextDocumentFeature: typings.vscodeJsonrpc.messagesMod.MessageType = js.native
   /* protected */ def registerLanguageProvider(options: RO): js.Tuple2[typings.vscode.mod.Disposable, PR] = js.native
 }
 

@@ -74,7 +74,6 @@ class BindingScope protected () extends LocalResolver {
 @JSImport("@angular/compiler/src/render3/view/template", "BindingScope")
 @js.native
 object BindingScope extends js.Object {
-  var _ROOT_SCOPE: js.Any = js.native
-  def ROOT_SCOPE(): BindingScope = js.native
+  def createRootScope(): BindingScope = js.native
 }
 

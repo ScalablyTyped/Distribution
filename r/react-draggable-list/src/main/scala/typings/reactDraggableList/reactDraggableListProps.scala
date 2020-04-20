@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactDraggableListProps {
   @scala.inline
-  def ReactDraggableListProps: Props.type = typings.reactDraggableList.mod.Props
+  def ReactDraggableListProps: Props.type = Props
   type ReactDraggableListProps[I, C, T] = Props[I, C, T]
 }
 

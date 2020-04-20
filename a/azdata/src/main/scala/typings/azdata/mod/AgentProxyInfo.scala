@@ -26,7 +26,6 @@ object AgentProxyInfo {
     isEnabled: Boolean
   ): AgentProxyInfo = {
     val __obj = js.Dynamic.literal(accountName = accountName.asInstanceOf[js.Any], credentialId = credentialId.asInstanceOf[js.Any], credentialIdentity = credentialIdentity.asInstanceOf[js.Any], credentialName = credentialName.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AgentProxyInfo]
   }
 }

@@ -15,7 +15,6 @@ object ConnectionResult {
   @scala.inline
   def apply(connected: Boolean, connectionId: String, errorCode: Double, errorMessage: String): ConnectionResult = {
     val __obj = js.Dynamic.literal(connected = connected.asInstanceOf[js.Any], connectionId = connectionId.asInstanceOf[js.Any], errorCode = errorCode.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConnectionResult]
   }
 }

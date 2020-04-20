@@ -15,16 +15,14 @@ trait MIME_TYPE extends js.Object
 
 object MIME_TYPE {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def imageSlashbmp: typings.escpos.escposStrings.imageSlashbmp = "image/bmp".asInstanceOf[typings.escpos.escposStrings.imageSlashbmp]
   @scala.inline
-  def imageSlashbmp: typings.escpos.escposStrings.imageSlashbmp = this.cast("image/bmp")
+  def imageSlashgif: typings.escpos.escposStrings.imageSlashgif = "image/gif".asInstanceOf[typings.escpos.escposStrings.imageSlashgif]
   @scala.inline
-  def imageSlashgif: typings.escpos.escposStrings.imageSlashgif = this.cast("image/gif")
+  def imageSlashjpeg: typings.escpos.escposStrings.imageSlashjpeg = "image/jpeg".asInstanceOf[typings.escpos.escposStrings.imageSlashjpeg]
   @scala.inline
-  def imageSlashjpeg: typings.escpos.escposStrings.imageSlashjpeg = this.cast("image/jpeg")
+  def imageSlashjpg: typings.escpos.escposStrings.imageSlashjpg = "image/jpg".asInstanceOf[typings.escpos.escposStrings.imageSlashjpg]
   @scala.inline
-  def imageSlashjpg: typings.escpos.escposStrings.imageSlashjpg = this.cast("image/jpg")
-  @scala.inline
-  def imageSlashpng: typings.escpos.escposStrings.imageSlashpng = this.cast("image/png")
+  def imageSlashpng: typings.escpos.escposStrings.imageSlashpng = "image/png".asInstanceOf[typings.escpos.escposStrings.imageSlashpng]
 }
 

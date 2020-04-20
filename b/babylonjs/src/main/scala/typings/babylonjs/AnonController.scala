@@ -15,7 +15,6 @@ object AnonController {
   @scala.inline
   def apply(controller: WebVRController, mesh: AbstractMesh): AnonController = {
     val __obj = js.Dynamic.literal(controller = controller.asInstanceOf[js.Any], mesh = mesh.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonController]
   }
 }

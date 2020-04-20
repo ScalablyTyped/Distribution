@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait rcGestureProps {
   @scala.inline
-  def RcGestureProps: IGesture.type = typings.rcGesture.mod.IGesture
+  def RcGestureProps: IGesture.type = IGesture
   type RcGestureProps = IGesture
 }
 

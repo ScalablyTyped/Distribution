@@ -12,10 +12,8 @@ trait TextEncoding extends js.Object
 
 object TextEncoding {
   @scala.inline
-  def base64: typings.nodemailer.nodemailerStrings.base64 = this.cast("base64")
+  def base64: typings.nodemailer.nodemailerStrings.base64 = "base64".asInstanceOf[typings.nodemailer.nodemailerStrings.base64]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def `quoted-printable`: typings.nodemailer.nodemailerStrings.`quoted-printable` = this.cast("quoted-printable")
+  def `quoted-printable`: typings.nodemailer.nodemailerStrings.`quoted-printable` = "quoted-printable".asInstanceOf[typings.nodemailer.nodemailerStrings.`quoted-printable`]
 }
 

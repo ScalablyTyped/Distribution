@@ -18,7 +18,7 @@ trait InsertModalColumnDescription[TRow /* <: js.Object */] extends js.Object {
   	 * Flag to indicate whether this column is editable.
   	 * Comes from TableHeader.editable.
   	 */
-  var editable: Boolean | (Editable[TRow, String]) | (js.Function4[
+  var editable: Boolean | (Editable[TRow, /* keyof TRow */ String]) | (js.Function4[
     /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ /* cell */ js.Any, 
     /* row */ TRow, 
     /* rowIndex */ Double, 
@@ -29,7 +29,7 @@ trait InsertModalColumnDescription[TRow /* <: js.Object */] extends js.Object {
   	 * Field name for the column data.
   	 * Comes from TableHeader.dataField.
   	 */
-  var field: String
+  var field: /* keyof TRow */ String
   /**
   	 * Format function for the field. It is only present if there is more than one column in the table. Value is either
   	 * 'false', meaning that there is no format function present, or a wrapper function that returns the formatted string
@@ -82,14 +82,14 @@ object InsertModalColumnDescription {
   @scala.inline
   def apply[TRow /* <: js.Object */](
     customInsertEditor: (InsertModalColumnDescription[TRow], EditableAttrs, String, Boolean, /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ js.Any) => ReactElement | Boolean,
-    editable: Boolean | (Editable[TRow, String]) | (js.Function4[
+    editable: Boolean | (Editable[TRow, /* keyof TRow */ String]) | (js.Function4[
       /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ /* cell */ js.Any, 
       /* row */ TRow, 
       /* rowIndex */ Double, 
       /* columnIndex */ Double, 
       Boolean | String | EditValidatorObject
     ]),
-    field: String,
+    field: /* keyof TRow */ String,
     hiddenOnInsert: Boolean,
     keyValidator: Boolean,
     name: String | ReactElement,

@@ -43,7 +43,6 @@ object SelectionInput {
     setType: SelectionInputType => SelectionInput
   ): SelectionInput = {
     val __obj = js.Dynamic.literal(addItem = js.Any.fromFunction3(addItem), setFieldName = js.Any.fromFunction1(setFieldName), setOnChangeAction = js.Any.fromFunction1(setOnChangeAction), setTitle = js.Any.fromFunction1(setTitle), setType = js.Any.fromFunction1(setType))
-  
     __obj.asInstanceOf[SelectionInput]
   }
 }

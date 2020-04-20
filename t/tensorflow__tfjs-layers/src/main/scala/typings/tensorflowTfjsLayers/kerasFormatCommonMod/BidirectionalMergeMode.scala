@@ -14,14 +14,12 @@ trait BidirectionalMergeMode extends js.Object
 
 object BidirectionalMergeMode {
   @scala.inline
-  def ave: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ave = this.cast("ave")
+  def ave: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ave = "ave".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ave]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def concat: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.concat = "concat".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.concat]
   @scala.inline
-  def concat: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.concat = this.cast("concat")
+  def mul: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.mul = "mul".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.mul]
   @scala.inline
-  def mul: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.mul = this.cast("mul")
-  @scala.inline
-  def sum: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.sum = this.cast("sum")
+  def sum: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.sum = "sum".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.sum]
 }
 

@@ -18,7 +18,6 @@ object DropdownToggleProps {
   @scala.inline
   def apply(children: DropdownToggleRenderProps => ReactElement): DropdownToggleProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-  
     __obj.asInstanceOf[DropdownToggleProps]
   }
 }

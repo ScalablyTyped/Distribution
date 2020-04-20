@@ -22,18 +22,16 @@ trait LEVEL extends js.Object
 
 object LEVEL {
   @scala.inline
-  def APP: `5` = this.cast(5)
+  def APP: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def GLOBAL: `3` = this.cast(3)
+  def GLOBAL: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def HIGHEST_LEVEL: `-1` = this.cast(-1)
+  def HIGHEST_LEVEL: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def LOCAL: `4` = this.cast(4)
+  def LOCAL: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def SYSTEM: `1` = this.cast(1)
+  def SYSTEM: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def XDG: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def XDG: `2` = 2.asInstanceOf[`2`]
 }
 

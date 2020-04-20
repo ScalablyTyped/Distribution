@@ -18,7 +18,6 @@ object PromptStateData {
   @scala.inline
   def apply(isValid: String | Boolean): PromptStateData = {
     val __obj = js.Dynamic.literal(isValid = isValid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PromptStateData]
   }
 }

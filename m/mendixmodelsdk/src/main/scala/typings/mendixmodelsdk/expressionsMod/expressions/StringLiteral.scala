@@ -56,7 +56,7 @@ class StringLiteral protected () extends LiteralExpression {
   ) = this()
   @JSName("model")
   var model_FStringLiteral: IModel = js.native
-  def value(): String = js.native
+  def value: String = js.native
   def value(newValue: String): js.Any = js.native
 }
 

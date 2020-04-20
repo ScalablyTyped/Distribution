@@ -16,7 +16,6 @@ object CaptureOption {
   @scala.inline
   def apply(CaptureMode: CaptureMode): CaptureOption = {
     val __obj = js.Dynamic.literal(CaptureMode = CaptureMode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CaptureOption]
   }
 }

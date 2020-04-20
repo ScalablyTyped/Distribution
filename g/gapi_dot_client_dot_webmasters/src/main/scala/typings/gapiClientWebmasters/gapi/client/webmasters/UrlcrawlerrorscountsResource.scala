@@ -15,7 +15,6 @@ object UrlcrawlerrorscountsResource {
   @scala.inline
   def apply(query: AnonCategory => Request_[UrlCrawlErrorsCountsQueryResponse]): UrlcrawlerrorscountsResource = {
     val __obj = js.Dynamic.literal(query = js.Any.fromFunction1(query))
-  
     __obj.asInstanceOf[UrlcrawlerrorscountsResource]
   }
 }

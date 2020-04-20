@@ -23,7 +23,6 @@ object IAlternateStateData {
   @scala.inline
   def apply(qFieldItems: js.Array[IBookmarkFieldItem], qStateName: String): IAlternateStateData = {
     val __obj = js.Dynamic.literal(qFieldItems = qFieldItems.asInstanceOf[js.Any], qStateName = qStateName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IAlternateStateData]
   }
 }

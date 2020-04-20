@@ -14,7 +14,6 @@ object Tracing {
   @scala.inline
   def apply(start: TracingStartOptions => js.Promise[Unit], stop: () => js.Promise[Buffer]): Tracing = {
     val __obj = js.Dynamic.literal(start = js.Any.fromFunction1(start), stop = js.Any.fromFunction0(stop))
-  
     __obj.asInstanceOf[Tracing]
   }
 }

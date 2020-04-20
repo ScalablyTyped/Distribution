@@ -60,7 +60,6 @@ object ChartistEasingStatic {
     easeOutSine: IChartistEasingDefinition
   ): ChartistEasingStatic = {
     val __obj = js.Dynamic.literal(easeInBack = easeInBack.asInstanceOf[js.Any], easeInCirc = easeInCirc.asInstanceOf[js.Any], easeInCubic = easeInCubic.asInstanceOf[js.Any], easeInExpo = easeInExpo.asInstanceOf[js.Any], easeInOutBack = easeInOutBack.asInstanceOf[js.Any], easeInOutCirc = easeInOutCirc.asInstanceOf[js.Any], easeInOutCubic = easeInOutCubic.asInstanceOf[js.Any], easeInOutExpo = easeInOutExpo.asInstanceOf[js.Any], easeInOutQuad = easeInOutQuad.asInstanceOf[js.Any], easeInOutQuart = easeInOutQuart.asInstanceOf[js.Any], easeInOutQuint = easeInOutQuint.asInstanceOf[js.Any], easeInOutSine = easeInOutSine.asInstanceOf[js.Any], easeInQuad = easeInQuad.asInstanceOf[js.Any], easeInQuart = easeInQuart.asInstanceOf[js.Any], easeInQuint = easeInQuint.asInstanceOf[js.Any], easeInSine = easeInSine.asInstanceOf[js.Any], easeOutBack = easeOutBack.asInstanceOf[js.Any], easeOutCirc = easeOutCirc.asInstanceOf[js.Any], easeOutCubic = easeOutCubic.asInstanceOf[js.Any], easeOutExpo = easeOutExpo.asInstanceOf[js.Any], easeOutQuad = easeOutQuad.asInstanceOf[js.Any], easeOutQuart = easeOutQuart.asInstanceOf[js.Any], easeOutQuint = easeOutQuint.asInstanceOf[js.Any], easeOutSine = easeOutSine.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChartistEasingStatic]
   }
 }

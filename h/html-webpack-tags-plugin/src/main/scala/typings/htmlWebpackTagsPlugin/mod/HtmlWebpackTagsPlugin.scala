@@ -14,7 +14,6 @@ object HtmlWebpackTagsPlugin {
   @scala.inline
   def apply(apply: Compiler_ => Unit): HtmlWebpackTagsPlugin = {
     val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply))
-  
     __obj.asInstanceOf[HtmlWebpackTagsPlugin]
   }
 }

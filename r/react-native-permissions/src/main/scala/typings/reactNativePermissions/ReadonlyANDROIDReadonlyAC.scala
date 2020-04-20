@@ -14,7 +14,6 @@ object ReadonlyANDROIDReadonlyAC {
   @scala.inline
   def apply(ANDROID: ReadonlyACCEPTHANDOVERand, IOS: ReadonlyBLUETOOTHPERIPHER): ReadonlyANDROIDReadonlyAC = {
     val __obj = js.Dynamic.literal(ANDROID = ANDROID.asInstanceOf[js.Any], IOS = IOS.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReadonlyANDROIDReadonlyAC]
   }
 }

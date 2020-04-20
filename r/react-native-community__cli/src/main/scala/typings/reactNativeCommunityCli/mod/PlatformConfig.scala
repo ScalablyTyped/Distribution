@@ -19,7 +19,6 @@ object PlatformConfig {
     projectConfig: (String, ProjectParams) => ProjectConfig
   ): PlatformConfig[ProjectParams, DependencyParams, ProjectConfig, DependencyConfig] = {
     val __obj = js.Dynamic.literal(dependencyConfig = js.Any.fromFunction2(dependencyConfig), linkConfig = js.Any.fromFunction0(linkConfig), projectConfig = js.Any.fromFunction2(projectConfig))
-  
     __obj.asInstanceOf[PlatformConfig[ProjectParams, DependencyParams, ProjectConfig, DependencyConfig]]
   }
 }

@@ -15,7 +15,6 @@ object AnonAbort {
   @scala.inline
   def apply(abort: js.Array[_], error: js.Array[_], load: js.Array[_], progress: js.Array[_]): AnonAbort = {
     val __obj = js.Dynamic.literal(abort = abort.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], load = load.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAbort]
   }
 }

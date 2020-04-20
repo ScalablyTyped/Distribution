@@ -13,7 +13,6 @@ object MessageCountsResponse {
   @scala.inline
   def apply(channels: StringDictionary[Double]): MessageCountsResponse = {
     val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MessageCountsResponse]
   }
 }

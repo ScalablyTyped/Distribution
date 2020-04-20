@@ -16,12 +16,10 @@ trait DIFF_BINARY extends js.Object
 
 object DIFF_BINARY {
   @scala.inline
-  def DELTA: `2` = this.cast(2)
+  def DELTA: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def LITERAL: `1` = this.cast(1)
+  def LITERAL: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def NONE: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def NONE: `0` = 0.asInstanceOf[`0`]
 }
 

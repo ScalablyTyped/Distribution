@@ -132,13 +132,13 @@ object envCiStrings {
   sealed trait wercker_ extends js.Object
   
   @scala.inline
-  def `AWS CodeBuild`: `AWS CodeBuild` = "AWS CodeBuild".asInstanceOf[`AWS CodeBuild`]
+  def `AWS CodeBuild`: `AWS CodeBuild` = ("AWS CodeBuild").asInstanceOf[`AWS CodeBuild`]
   @scala.inline
   def Appveyor: Appveyor = "Appveyor".asInstanceOf[Appveyor]
   @scala.inline
   def Bamboo: Bamboo = "Bamboo".asInstanceOf[Bamboo]
   @scala.inline
-  def `Bitbucket Pipelines`: `Bitbucket Pipelines` = "Bitbucket Pipelines".asInstanceOf[`Bitbucket Pipelines`]
+  def `Bitbucket Pipelines`: `Bitbucket Pipelines` = ("Bitbucket Pipelines").asInstanceOf[`Bitbucket Pipelines`]
   @scala.inline
   def Bitrise: Bitrise = "Bitrise".asInstanceOf[Bitrise]
   @scala.inline
@@ -148,7 +148,7 @@ object envCiStrings {
   @scala.inline
   def CircleCI: CircleCI = "CircleCI".asInstanceOf[CircleCI]
   @scala.inline
-  def `Cirrus CI`: `Cirrus CI` = "Cirrus CI".asInstanceOf[`Cirrus CI`]
+  def `Cirrus CI`: `Cirrus CI` = ("Cirrus CI").asInstanceOf[`Cirrus CI`]
   @scala.inline
   def Codefresh: Codefresh = "Codefresh".asInstanceOf[Codefresh]
   @scala.inline
@@ -156,11 +156,11 @@ object envCiStrings {
   @scala.inline
   def Drone: Drone = "Drone".asInstanceOf[Drone]
   @scala.inline
-  def `GitLab CISlashCD`: `GitLab CISlashCD` = "GitLab CI/CD".asInstanceOf[`GitLab CISlashCD`]
+  def `GitLab CISlashCD`: `GitLab CISlashCD` = ("GitLab CI/CD").asInstanceOf[`GitLab CISlashCD`]
   @scala.inline
   def Jenkins: Jenkins = "Jenkins".asInstanceOf[Jenkins]
   @scala.inline
-  def `Sail CI`: `Sail CI` = "Sail CI".asInstanceOf[`Sail CI`]
+  def `Sail CI`: `Sail CI` = ("Sail CI").asInstanceOf[`Sail CI`]
   @scala.inline
   def Semaphore: Semaphore = "Semaphore".asInstanceOf[Semaphore]
   @scala.inline
@@ -168,9 +168,9 @@ object envCiStrings {
   @scala.inline
   def TeamCity: TeamCity = "TeamCity".asInstanceOf[TeamCity]
   @scala.inline
-  def `Travis CI`: `Travis CI` = "Travis CI".asInstanceOf[`Travis CI`]
+  def `Travis CI`: `Travis CI` = ("Travis CI").asInstanceOf[`Travis CI`]
   @scala.inline
-  def `Visual Studio Team Services`: `Visual Studio Team Services` = "Visual Studio Team Services".asInstanceOf[`Visual Studio Team Services`]
+  def `Visual Studio Team Services`: `Visual Studio Team Services` = ("Visual Studio Team Services").asInstanceOf[`Visual Studio Team Services`]
   @scala.inline
   def Wercker: Wercker = "Wercker".asInstanceOf[Wercker]
   @scala.inline

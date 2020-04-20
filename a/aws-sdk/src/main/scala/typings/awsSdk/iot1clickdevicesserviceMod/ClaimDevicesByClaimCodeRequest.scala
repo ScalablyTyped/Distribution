@@ -16,7 +16,6 @@ object ClaimDevicesByClaimCodeRequest {
   @scala.inline
   def apply(ClaimCode: string): ClaimDevicesByClaimCodeRequest = {
     val __obj = js.Dynamic.literal(ClaimCode = ClaimCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClaimDevicesByClaimCodeRequest]
   }
 }

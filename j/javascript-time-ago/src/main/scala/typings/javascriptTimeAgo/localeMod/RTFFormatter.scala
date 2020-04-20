@@ -23,7 +23,6 @@ object RTFFormatter {
     style: DefaultFormats
   ): RTFFormatter = {
     val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], localeMatcher = localeMatcher.asInstanceOf[js.Any], numberFormat = numberFormat.asInstanceOf[js.Any], numeric = numeric.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RTFFormatter]
   }
 }

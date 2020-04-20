@@ -20,7 +20,6 @@ object V8ToIstanbul {
     toIstanbul: () => CoverageMapData
   ): V8ToIstanbul = {
     val __obj = js.Dynamic.literal(applyCoverage = js.Any.fromFunction1(applyCoverage), load = js.Any.fromFunction0(load), toIstanbul = js.Any.fromFunction0(toIstanbul))
-  
     __obj.asInstanceOf[V8ToIstanbul]
   }
 }

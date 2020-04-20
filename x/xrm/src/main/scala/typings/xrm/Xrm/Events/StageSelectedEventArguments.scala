@@ -20,7 +20,6 @@ object StageSelectedEventArguments {
   @scala.inline
   def apply(getStage: () => Stage): StageSelectedEventArguments = {
     val __obj = js.Dynamic.literal(getStage = js.Any.fromFunction0(getStage))
-  
     __obj.asInstanceOf[StageSelectedEventArguments]
   }
 }

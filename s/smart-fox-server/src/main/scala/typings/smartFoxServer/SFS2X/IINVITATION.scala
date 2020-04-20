@@ -13,7 +13,6 @@ object IINVITATION {
   @scala.inline
   def apply(invitation: SFSInvitation): IINVITATION = {
     val __obj = js.Dynamic.literal(invitation = invitation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IINVITATION]
   }
 }

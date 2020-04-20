@@ -12,7 +12,6 @@ object CanvasGradient {
   @scala.inline
   def apply(addColorStop: (Double, String) => Unit): CanvasGradient = {
     val __obj = js.Dynamic.literal(addColorStop = js.Any.fromFunction2(addColorStop))
-  
     __obj.asInstanceOf[CanvasGradient]
   }
 }

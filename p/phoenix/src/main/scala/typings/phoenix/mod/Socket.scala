@@ -24,10 +24,10 @@ class Socket protected () extends js.Object {
   def isConnected(): Boolean = js.native
   def log(kind: String, message: String, data: js.Any): Unit = js.native
   def makeRef(): String = js.native
-  def onClose(callback: js.Function0[Unit]): Unit = js.native
-  def onError(callback: js.Function0[Unit]): Unit = js.native
-  def onMessage(callback: js.Function0[Unit]): Unit = js.native
-  def onOpen(callback: js.Function0[Unit]): Unit = js.native
+  def onClose(callback: js.Function1[/* cb */ js.Any, Unit]): Unit = js.native
+  def onError(callback: js.Function1[/* cb */ js.Any, Unit]): Unit = js.native
+  def onMessage(callback: js.Function1[/* cb */ js.Any, Unit]): Unit = js.native
+  def onOpen(callback: js.Function1[/* cb */ js.Any, Unit]): Unit = js.native
   def protocol(): String = js.native
   def push(data: js.Object): Unit = js.native
   def remove(channel: Channel): Unit = js.native

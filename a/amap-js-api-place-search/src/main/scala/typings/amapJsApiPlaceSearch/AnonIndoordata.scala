@@ -14,7 +14,6 @@ object AnonIndoordata {
   @scala.inline
   def apply(indoor_data: AnonCpid, indoor_map: `true`): AnonIndoordata = {
     val __obj = js.Dynamic.literal(indoor_data = indoor_data.asInstanceOf[js.Any], indoor_map = indoor_map.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIndoordata]
   }
 }

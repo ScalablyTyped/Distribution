@@ -16,7 +16,6 @@ object ConnectCustomKeyStoreRequest {
   @scala.inline
   def apply(CustomKeyStoreId: CustomKeyStoreIdType): ConnectCustomKeyStoreRequest = {
     val __obj = js.Dynamic.literal(CustomKeyStoreId = CustomKeyStoreId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConnectCustomKeyStoreRequest]
   }
 }

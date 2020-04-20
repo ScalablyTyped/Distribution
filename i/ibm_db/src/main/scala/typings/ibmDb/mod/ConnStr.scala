@@ -24,7 +24,6 @@ object ConnStr {
     UID: String
   ): ConnStr = {
     val __obj = js.Dynamic.literal(DATABASE = DATABASE.asInstanceOf[js.Any], HOSTNAME = HOSTNAME.asInstanceOf[js.Any], PORT = PORT.asInstanceOf[js.Any], PROTOCOL = PROTOCOL.asInstanceOf[js.Any], PWD = PWD.asInstanceOf[js.Any], UID = UID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConnStr]
   }
 }

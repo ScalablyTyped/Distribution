@@ -15,14 +15,12 @@ trait ScopeType extends js.Object
 
 object ScopeType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def default: typings.gapiCalendar.gapiCalendarStrings.default = "default".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.default]
   @scala.inline
-  def default: typings.gapiCalendar.gapiCalendarStrings.default = this.cast("default")
+  def domain: typings.gapiCalendar.gapiCalendarStrings.domain = "domain".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.domain]
   @scala.inline
-  def domain: typings.gapiCalendar.gapiCalendarStrings.domain = this.cast("domain")
+  def group: typings.gapiCalendar.gapiCalendarStrings.group = "group".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.group]
   @scala.inline
-  def group: typings.gapiCalendar.gapiCalendarStrings.group = this.cast("group")
-  @scala.inline
-  def user: typings.gapiCalendar.gapiCalendarStrings.user = this.cast("user")
+  def user: typings.gapiCalendar.gapiCalendarStrings.user = "user".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.user]
 }
 

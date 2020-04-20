@@ -37,11 +37,11 @@ class AudioSceneComponent protected () extends ISceneSerializableComponent {
     * Gets whether audio is enabled or not.
     * Please use related enable/disable method to switch state.
     */
-  def audioEnabled(): Boolean = js.native
+  def audioEnabled: Boolean = js.native
   /**
     * Gets the current audio listener position provider
     */
-  def audioListenerPositionProvider(): Nullable[js.Function0[Vector3]] = js.native
+  def audioListenerPositionProvider: Nullable[js.Function0[Vector3]] = js.native
   /**
     * Sets a custom listener position for all sounds in the scene
     * By default, this is the position of the first active camera
@@ -64,7 +64,7 @@ class AudioSceneComponent protected () extends ISceneSerializableComponent {
     * Gets whether audio is outputing to headphone or not.
     * Please use the according Switch methods to change output.
     */
-  def headphone(): Boolean = js.native
+  def headphone: Boolean = js.native
   /**
     * Rebuilds the elements related to this component in case of
     * context lost for instance.

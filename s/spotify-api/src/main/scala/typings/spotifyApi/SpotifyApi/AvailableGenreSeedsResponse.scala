@@ -18,7 +18,6 @@ object AvailableGenreSeedsResponse {
   @scala.inline
   def apply(genres: js.Array[String]): AvailableGenreSeedsResponse = {
     val __obj = js.Dynamic.literal(genres = genres.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AvailableGenreSeedsResponse]
   }
 }

@@ -20,7 +20,6 @@ object LoggingConfig {
   @scala.inline
   def apply(LogGroupName: LogGroupName, LogRoleArn: RoleArn): LoggingConfig = {
     val __obj = js.Dynamic.literal(LogGroupName = LogGroupName.asInstanceOf[js.Any], LogRoleArn = LogRoleArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LoggingConfig]
   }
 }

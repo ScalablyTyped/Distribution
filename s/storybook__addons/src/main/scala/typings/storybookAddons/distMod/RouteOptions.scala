@@ -12,7 +12,6 @@ object RouteOptions {
   @scala.inline
   def apply(storyId: String): RouteOptions = {
     val __obj = js.Dynamic.literal(storyId = storyId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RouteOptions]
   }
 }

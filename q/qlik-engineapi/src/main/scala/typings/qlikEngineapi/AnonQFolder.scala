@@ -12,7 +12,6 @@ object AnonQFolder {
   @scala.inline
   def apply(qFolder: String): AnonQFolder = {
     val __obj = js.Dynamic.literal(qFolder = qFolder.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonQFolder]
   }
 }

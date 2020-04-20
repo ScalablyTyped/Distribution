@@ -16,18 +16,16 @@ trait RTCSignalingState extends js.Object
 
 object RTCSignalingState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def closed: typings.std.stdStrings.closed = "closed".asInstanceOf[typings.std.stdStrings.closed]
   @scala.inline
-  def closed: typings.std.stdStrings.closed = this.cast("closed")
+  def `have-local-offer`: typings.std.stdStrings.`have-local-offer` = "have-local-offer".asInstanceOf[typings.std.stdStrings.`have-local-offer`]
   @scala.inline
-  def `have-local-offer`: typings.std.stdStrings.`have-local-offer` = this.cast("have-local-offer")
+  def `have-local-pranswer`: typings.std.stdStrings.`have-local-pranswer` = "have-local-pranswer".asInstanceOf[typings.std.stdStrings.`have-local-pranswer`]
   @scala.inline
-  def `have-local-pranswer`: typings.std.stdStrings.`have-local-pranswer` = this.cast("have-local-pranswer")
+  def `have-remote-offer`: typings.std.stdStrings.`have-remote-offer` = "have-remote-offer".asInstanceOf[typings.std.stdStrings.`have-remote-offer`]
   @scala.inline
-  def `have-remote-offer`: typings.std.stdStrings.`have-remote-offer` = this.cast("have-remote-offer")
+  def `have-remote-pranswer`: typings.std.stdStrings.`have-remote-pranswer` = "have-remote-pranswer".asInstanceOf[typings.std.stdStrings.`have-remote-pranswer`]
   @scala.inline
-  def `have-remote-pranswer`: typings.std.stdStrings.`have-remote-pranswer` = this.cast("have-remote-pranswer")
-  @scala.inline
-  def stable: typings.std.stdStrings.stable = this.cast("stable")
+  def stable: typings.std.stdStrings.stable = "stable".asInstanceOf[typings.std.stdStrings.stable]
 }
 

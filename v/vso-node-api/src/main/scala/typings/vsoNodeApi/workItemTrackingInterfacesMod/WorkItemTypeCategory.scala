@@ -34,7 +34,6 @@ object WorkItemTypeCategory {
     workItemTypes: js.Array[WorkItemTypeReference]
   ): WorkItemTypeCategory = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], defaultWorkItemType = defaultWorkItemType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], referenceName = referenceName.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], workItemTypes = workItemTypes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WorkItemTypeCategory]
   }
 }

@@ -342,6 +342,20 @@ object componentMod extends js.Object {
     def yAlignment(yAlignment: YAlignment): this.type = js.native
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - typings.plottable.plottableStrings.left
+    - typings.plottable.plottableStrings.right
+    - typings.plottable.plottableStrings.center
+  */
+  trait XAlignment extends js.Object
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.plottable.plottableStrings.center
+    - typings.plottable.plottableStrings.top
+    - typings.plottable.plottableStrings.bottom
+  */
+  trait YAlignment extends js.Object
+  
   /* static members */
   @js.native
   object Component extends js.Object {
@@ -365,7 +379,5 @@ object componentMod extends js.Object {
   
   type ComponentCallback = js.Function1[/* component */ Component, Unit]
   type IResizeHandler = js.Function1[/* size */ AnonWidth, Unit]
-  type XAlignment = String
-  type YAlignment = String
 }
 

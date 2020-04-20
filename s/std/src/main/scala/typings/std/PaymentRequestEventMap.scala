@@ -13,7 +13,6 @@ object PaymentRequestEventMap {
   @scala.inline
   def apply(shippingaddresschange: Event_, shippingoptionchange: Event_): PaymentRequestEventMap = {
     val __obj = js.Dynamic.literal(shippingaddresschange = shippingaddresschange.asInstanceOf[js.Any], shippingoptionchange = shippingoptionchange.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PaymentRequestEventMap]
   }
 }

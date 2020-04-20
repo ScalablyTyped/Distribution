@@ -1706,6 +1706,7 @@ class SurveyModel ()
   /* protected */ def tryGoNextPageAutomatic(name: String): Unit = js.native
   def updateChoicesFromServer(question: IQuestion, choices: js.Array[_ | ItemValue], serverResult: js.Any): js.Array[ItemValue] = js.native
   /* protected */ def updateCustomWidgets(page: PageModel): Unit = js.native
+  /* protected */ def updateElementCss(): Unit = js.native
   def updatePageCssClasses(page: IPage, cssClasses: js.Any): Unit = js.native
   def updatePageCssClasses(panel: IPanel, cssClasses: js.Any): js.Any = js.native
   def updatePanelCssClasses(panel: IPanel, cssClasses: js.Any): js.Any = js.native

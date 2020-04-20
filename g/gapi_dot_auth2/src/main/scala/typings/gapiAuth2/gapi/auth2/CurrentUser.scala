@@ -21,7 +21,6 @@ object CurrentUser {
   @scala.inline
   def apply(get: () => GoogleUser, listen: js.Function1[/* user */ GoogleUser, _] => Unit): CurrentUser = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get), listen = js.Any.fromFunction1(listen))
-  
     __obj.asInstanceOf[CurrentUser]
   }
 }

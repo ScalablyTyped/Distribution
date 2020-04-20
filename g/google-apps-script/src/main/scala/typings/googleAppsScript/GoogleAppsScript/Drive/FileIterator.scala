@@ -35,7 +35,6 @@ object FileIterator {
   @scala.inline
   def apply(getContinuationToken: () => String, hasNext: () => Boolean, next: () => File): FileIterator = {
     val __obj = js.Dynamic.literal(getContinuationToken = js.Any.fromFunction0(getContinuationToken), hasNext = js.Any.fromFunction0(hasNext), next = js.Any.fromFunction0(next))
-  
     __obj.asInstanceOf[FileIterator]
   }
 }

@@ -28,7 +28,6 @@ object AnonAfterClose {
     small: Boolean
   ): AnonAfterClose = {
     val __obj = js.Dynamic.literal(afterClose = js.Any.fromFunction0(afterClose), closable = closable.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], onChange = js.Any.fromFunction0(onChange), onClose = js.Any.fromFunction0(onClose), onLongPress = js.Any.fromFunction0(onLongPress), selected = selected.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAfterClose]
   }
 }

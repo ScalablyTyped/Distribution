@@ -20,7 +20,6 @@ object PropertyGroup {
   @scala.inline
   def apply(PropertyGroupId: Id, PropertyMap: PropertyMap): PropertyGroup = {
     val __obj = js.Dynamic.literal(PropertyGroupId = PropertyGroupId.asInstanceOf[js.Any], PropertyMap = PropertyMap.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PropertyGroup]
   }
 }

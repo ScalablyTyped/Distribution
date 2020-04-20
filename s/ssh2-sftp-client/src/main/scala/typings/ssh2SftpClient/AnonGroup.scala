@@ -14,7 +14,6 @@ object AnonGroup {
   @scala.inline
   def apply(group: String, other: String, user: String): AnonGroup = {
     val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGroup]
   }
 }

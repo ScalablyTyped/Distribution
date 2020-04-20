@@ -12,7 +12,6 @@ object Window {
   @scala.inline
   def apply(safari: Typeofsafari): Window = {
     val __obj = js.Dynamic.literal(safari = safari.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Window]
   }
 }

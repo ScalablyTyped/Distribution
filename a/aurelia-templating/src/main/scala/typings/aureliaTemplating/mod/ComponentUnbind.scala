@@ -15,7 +15,6 @@ object ComponentUnbind {
   @scala.inline
   def apply(unbind: () => Unit): ComponentUnbind = {
     val __obj = js.Dynamic.literal(unbind = js.Any.fromFunction0(unbind))
-  
     __obj.asInstanceOf[ComponentUnbind]
   }
 }

@@ -19,7 +19,6 @@ object AnonCompare {
     multiple: Double
   ): AnonCompare[RecordType] = {
     val __obj = js.Dynamic.literal(compare = js.Any.fromFunction3(compare), multiple = multiple.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCompare[RecordType]]
   }
 }

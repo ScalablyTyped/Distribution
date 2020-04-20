@@ -19,15 +19,15 @@ object fragmentOutputBlockMod extends js.Object {
     /**
       * Gets the a input component
       */
-    def a(): NodeMaterialConnectionPoint = js.native
+    def a: NodeMaterialConnectionPoint = js.native
     /**
       * Gets the rgb input component
       */
-    def rgb(): NodeMaterialConnectionPoint = js.native
+    def rgb: NodeMaterialConnectionPoint = js.native
     /**
       * Gets the rgba input component
       */
-    def rgba(): NodeMaterialConnectionPoint = js.native
+    def rgba: NodeMaterialConnectionPoint = js.native
   }
   
 }

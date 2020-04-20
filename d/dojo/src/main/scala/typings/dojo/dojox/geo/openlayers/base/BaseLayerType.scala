@@ -63,7 +63,6 @@ object BaseLayerType {
     YAHOO: String
   ): BaseLayerType = {
     val __obj = js.Dynamic.literal(ARCGIS = ARCGIS.asInstanceOf[js.Any], BING = BING.asInstanceOf[js.Any], GOOGLE = GOOGLE.asInstanceOf[js.Any], OSM = OSM.asInstanceOf[js.Any], VIRTUAL_EARTH = VIRTUAL_EARTH.asInstanceOf[js.Any], WMS = WMS.asInstanceOf[js.Any], YAHOO = YAHOO.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BaseLayerType]
   }
 }

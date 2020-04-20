@@ -73,7 +73,7 @@ abstract class ViewContainerRef () extends js.Object {
     *
     * <!-- TODO: rename to anchorElement -->
     */
-  def element(): ElementRef[_] = js.native
+  def element: ElementRef[_] = js.native
   /**
     * Retrieves a view from this container.
     * @param index The 0-based index of the view to retrieve.
@@ -90,7 +90,7 @@ abstract class ViewContainerRef () extends js.Object {
   /**
     * The [dependency injector](guide/glossary#injector) for this view container.
     */
-  def injector(): Injector = js.native
+  def injector: Injector = js.native
   /**
     * Inserts a view into this container.
     * @param viewRef The view to insert.
@@ -105,7 +105,7 @@ abstract class ViewContainerRef () extends js.Object {
     * Reports how many views are currently attached to this container.
     * @returns The number of views.
     */
-  def length(): Double = js.native
+  def length: Double = js.native
   /**
     * Moves a view to a new location in this container.
     * @param viewRef The view to move.
@@ -114,7 +114,7 @@ abstract class ViewContainerRef () extends js.Object {
     */
   def move(viewRef: ViewRef, currentIndex: Double): ViewRef = js.native
   /** @deprecated No replacement */
-  def parentInjector(): Injector = js.native
+  def parentInjector: Injector = js.native
   /**
     * Destroys a view attached to this container
     * @param index The 0-based index of the view to destroy.

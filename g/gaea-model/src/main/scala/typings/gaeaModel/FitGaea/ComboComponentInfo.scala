@@ -19,7 +19,6 @@ object ComboComponentInfo {
     name: String
   ): ComboComponentInfo = {
     val __obj = js.Dynamic.literal(childs = childs.asInstanceOf[js.Any], componentInfo = componentInfo.asInstanceOf[js.Any], mapUniqueKey = mapUniqueKey.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ComboComponentInfo]
   }
 }

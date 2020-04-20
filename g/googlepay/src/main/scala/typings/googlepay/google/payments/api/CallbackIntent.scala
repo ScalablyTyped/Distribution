@@ -52,14 +52,12 @@ trait CallbackIntent extends js.Object
 
 object CallbackIntent {
   @scala.inline
-  def PAYMENT_AUTHORIZATION: typings.googlepay.googlepayStrings.PAYMENT_AUTHORIZATION = this.cast("PAYMENT_AUTHORIZATION")
+  def PAYMENT_AUTHORIZATION: typings.googlepay.googlepayStrings.PAYMENT_AUTHORIZATION = "PAYMENT_AUTHORIZATION".asInstanceOf[typings.googlepay.googlepayStrings.PAYMENT_AUTHORIZATION]
   @scala.inline
-  def PAYMENT_METHOD: typings.googlepay.googlepayStrings.PAYMENT_METHOD = this.cast("PAYMENT_METHOD")
+  def PAYMENT_METHOD: typings.googlepay.googlepayStrings.PAYMENT_METHOD = "PAYMENT_METHOD".asInstanceOf[typings.googlepay.googlepayStrings.PAYMENT_METHOD]
   @scala.inline
-  def SHIPPING_ADDRESS: typings.googlepay.googlepayStrings.SHIPPING_ADDRESS = this.cast("SHIPPING_ADDRESS")
+  def SHIPPING_ADDRESS: typings.googlepay.googlepayStrings.SHIPPING_ADDRESS = "SHIPPING_ADDRESS".asInstanceOf[typings.googlepay.googlepayStrings.SHIPPING_ADDRESS]
   @scala.inline
-  def SHIPPING_OPTION: typings.googlepay.googlepayStrings.SHIPPING_OPTION = this.cast("SHIPPING_OPTION")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SHIPPING_OPTION: typings.googlepay.googlepayStrings.SHIPPING_OPTION = "SHIPPING_OPTION".asInstanceOf[typings.googlepay.googlepayStrings.SHIPPING_OPTION]
 }
 

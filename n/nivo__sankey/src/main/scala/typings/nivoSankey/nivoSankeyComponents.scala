@@ -10,9 +10,8 @@ import scala.scalajs.js.annotation._
 
 object nivoSankeyComponents extends nivoSankeyProps {
   @scala.inline
-  def ResponsiveSankey: ComponentType[Data with SankeyProps] = js.constructorOf[typings.nivoSankey.mod.ResponsiveSankey].asInstanceOf[typings.react.mod.ComponentType[typings.nivoSankey.mod.Data with typings.nivoSankey.mod.SankeyProps]]
+  def ResponsiveSankey: ComponentType[Data with SankeyProps] = js.constructorOf[typings.nivoSankey.mod.ResponsiveSankey].asInstanceOf[ComponentType[Data with SankeyProps]]
   @scala.inline
-  def Sankey: ComponentType[Data with SankeyProps with Dimensions] = js.constructorOf[typings.nivoSankey.mod.Sankey].asInstanceOf[typings.react.mod.ComponentType[
-  typings.nivoSankey.mod.Data with typings.nivoSankey.mod.SankeyProps with typings.nivoSankey.mod.Dimensions]]
+  def Sankey: ComponentType[Data with SankeyProps with Dimensions] = js.constructorOf[typings.nivoSankey.mod.Sankey].asInstanceOf[ComponentType[Data with SankeyProps with Dimensions]]
 }
 

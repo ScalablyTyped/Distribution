@@ -14,7 +14,6 @@ object Round {
   @scala.inline
   def apply(ceil: Double => Double, floor: Double => Double, round: Double => Double): Round = {
     val __obj = js.Dynamic.literal(ceil = js.Any.fromFunction1(ceil), floor = js.Any.fromFunction1(floor), round = js.Any.fromFunction1(round))
-  
     __obj.asInstanceOf[Round]
   }
 }

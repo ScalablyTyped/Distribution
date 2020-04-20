@@ -14,7 +14,6 @@ object Coordinate {
   @scala.inline
   def apply(canonical: CanonicalCoordinate, key: Double, wrap: Double): Coordinate = {
     val __obj = js.Dynamic.literal(canonical = canonical.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], wrap = wrap.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Coordinate]
   }
 }

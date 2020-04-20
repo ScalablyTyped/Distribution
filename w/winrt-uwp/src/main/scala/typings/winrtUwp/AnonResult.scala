@@ -14,7 +14,6 @@ object AnonResult {
   @scala.inline
   def apply(result: Matrix4x4, returnValue: Boolean): AnonResult = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonResult]
   }
 }

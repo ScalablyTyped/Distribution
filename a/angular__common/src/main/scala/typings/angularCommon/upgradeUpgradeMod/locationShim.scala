@@ -64,6 +64,7 @@ class locationShim protected () extends js.Object {
   var setBrowserUrlWithFallback: js.Any = js.native
   var stripBaseUrl: js.Any = js.native
   var updateBrowser: js.Any = js.native
+  var urlChanges: js.Any = js.native
   var urlCodec: js.Any = js.native
   /**
     * Parses the provided URL, and sets the current URL to the parsed result.
@@ -217,7 +218,8 @@ class locationShim protected () extends js.Object {
     * If the argument is a hash object containing an array of values, these values will be encoded
     * as duplicate search parameters in the URL.
     *
-    * @param {(string|Number|Array<string>|boolean)=} paramValue If `search` is a string or number, then `paramValue`
+    * @param {(string|Number|Array<string>|boolean)=} paramValue If `search` is a string or number,
+    *     then `paramValue`
     * will override only a single search property.
     *
     * If `paramValue` is an array, it will override the property of the `search` component of

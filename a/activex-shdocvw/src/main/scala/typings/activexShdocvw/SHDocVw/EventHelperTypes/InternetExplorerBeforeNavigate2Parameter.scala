@@ -26,7 +26,6 @@ object InternetExplorerBeforeNavigate2Parameter {
     pDisp: js.Any
   ): InternetExplorerBeforeNavigate2Parameter = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Flags = Flags.asInstanceOf[js.Any], Headers = Headers.asInstanceOf[js.Any], PostData = PostData.asInstanceOf[js.Any], TargetFrameName = TargetFrameName.asInstanceOf[js.Any], URL = URL.asInstanceOf[js.Any], pDisp = pDisp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InternetExplorerBeforeNavigate2Parameter]
   }
 }

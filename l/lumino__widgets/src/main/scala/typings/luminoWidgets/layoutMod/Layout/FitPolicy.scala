@@ -21,10 +21,8 @@ trait FitPolicy extends js.Object
 
 object FitPolicy {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `set-min-size`: typings.luminoWidgets.luminoWidgetsStrings.`set-min-size` = "set-min-size".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`set-min-size`]
   @scala.inline
-  def `set-min-size`: typings.luminoWidgets.luminoWidgetsStrings.`set-min-size` = this.cast("set-min-size")
-  @scala.inline
-  def `set-no-constraint`: typings.luminoWidgets.luminoWidgetsStrings.`set-no-constraint` = this.cast("set-no-constraint")
+  def `set-no-constraint`: typings.luminoWidgets.luminoWidgetsStrings.`set-no-constraint` = "set-no-constraint".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`set-no-constraint`]
 }
 

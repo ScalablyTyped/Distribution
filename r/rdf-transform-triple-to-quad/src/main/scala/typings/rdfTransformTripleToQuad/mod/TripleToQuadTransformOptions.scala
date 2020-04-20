@@ -14,7 +14,6 @@ object TripleToQuadTransformOptions {
   @scala.inline
   def apply(factory: DataFactory[Quad, Quad]): TripleToQuadTransformOptions = {
     val __obj = js.Dynamic.literal(factory = factory.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TripleToQuadTransformOptions]
   }
 }

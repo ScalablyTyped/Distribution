@@ -33,7 +33,6 @@ object AnonCopyAssets {
     unregister: (String, DependencyConfig, ProjectConfig, js.Array[DependencyConfig]) => Unit
   ): AnonCopyAssets[ProjectConfig, DependencyConfig] = {
     val __obj = js.Dynamic.literal(copyAssets = js.Any.fromFunction2(copyAssets), isInstalled = js.Any.fromFunction3(isInstalled), register = js.Any.fromFunction4(register), unlinkAssets = js.Any.fromFunction2(unlinkAssets), unregister = js.Any.fromFunction4(unregister))
-  
     __obj.asInstanceOf[AnonCopyAssets[ProjectConfig, DependencyConfig]]
   }
 }

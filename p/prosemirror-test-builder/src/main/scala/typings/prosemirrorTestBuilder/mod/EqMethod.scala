@@ -12,7 +12,6 @@ object EqMethod {
   @scala.inline
   def apply(eq: EqMethod => Boolean): EqMethod = {
     val __obj = js.Dynamic.literal(eq = js.Any.fromFunction1(eq))
-  
     __obj.asInstanceOf[EqMethod]
   }
 }

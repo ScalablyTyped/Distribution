@@ -13,7 +13,6 @@ object OnChangeProps {
   @scala.inline
   def apply(children: (js.Any, js.Any) => Unit, name: String): OnChangeProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction2(children), name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnChangeProps]
   }
 }

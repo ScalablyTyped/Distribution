@@ -50,7 +50,9 @@ trait TextSymbol
   var borderLineSize: Double = js.native
   /**
     * The [Font](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Font.html) used to style the text. This property allows the developer to set the font's family, decoration, size, style, and weight properties.  See the [Labeling guide page](https://developers.arcgis.com/javascript/latest/guide/labeling/index.html) for more information and known limitations.
-    * > **Known Limitations**  This property is not fully supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    * > **Known Limitations**
+    *   * This property is not fully supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *   * The available [Font.family](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Font.html#family) property values depend on whether you are working with a 2D [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or a 3D [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#font)
     */
@@ -76,7 +78,7 @@ trait TextSymbol
     * Adjusts the horizontal alignment of the text in multi-lines.
     * > **Known Limitations**
     *   * This property is not currently supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-    *   * This property only applies when TextSymbol is not used for labelling purposes. The `horizontalAlignment` for labels is inferred from the [labelPlacement](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#labelPlacement) value.
+    *   * This property only applies when TextSymbol is not used for labeling purposes. The `horizontalAlignment` for labels is inferred from the [labelPlacement](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#labelPlacement) value.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#horizontalAlignment)
     *
@@ -92,6 +94,28 @@ trait TextSymbol
     */
   var kerning: Boolean = js.native
   /**
+    * The height of the space between each line of text. Only applies to multiline text.  This property can be considered as a multiplier of the default value of 1.0 (e.g. a value of 2.0 will be two times the height of the default height). The range of possible values is: 0.1 - 4.0. If a value of 0 is specified, the default value of 1.0 will be used.
+    * > **Known Limitations**
+    *   * This property is currently not supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *   * The default value is subject to change in future releases.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#lineHeight)
+    *
+    * @default 1.0
+    */
+  var lineHeight: Double = js.native
+  /**
+    * The maximum length in points for each line of text. This value may be autocast with a string expressing size in points or pixels (e.g. `72px`).  The default value is 192 points. The range of possible values is: 32px - 512px.  If text extends farther than the `lineWidth` value, then the line will break at the whitespace before the text that extends past the limit if possible, and a new line will be created.
+    * > **Known Limitations**
+    *   * This property is currently not supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *   * The default value is subject to change in future releases.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#lineWidth)
+    *
+    * @default 192
+    */
+  var lineWidth: Double = js.native
+  /**
     * Determines whether every character in the text string is rotated.
     * > **Known Limitations**  This property is currently not supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
@@ -101,8 +125,8 @@ trait TextSymbol
     */
   var rotated: Boolean = js.native
   /**
-    * The text string to display in the view. Long text strings will be split into multiple lines. The maximum length of each line is equal to this formula: (512 * [font.size](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Font.html#size)) / 24. To manually create a new line, use the `\n` escape character.
-    * > **Known Limitations**  This property only applies when TextSymbol is used to define the symbol property of a [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html), and not for labelling purposes.
+    * The text string to display in the view. Long text strings will be split into multiple lines. The length of the line is controlled by the [lineWidth](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#lineWidth) property. To manually create a new line, use the `\n` escape character.
+    * > **Known Limitations**  This property only applies when TextSymbol is used to define the symbol property of a [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html), and not for labeling purposes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#text)
     */

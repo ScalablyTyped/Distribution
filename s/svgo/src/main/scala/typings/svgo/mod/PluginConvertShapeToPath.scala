@@ -12,7 +12,6 @@ object PluginConvertShapeToPath {
   @scala.inline
   def apply(convertShapeToPath: Boolean | js.Object): PluginConvertShapeToPath = {
     val __obj = js.Dynamic.literal(convertShapeToPath = convertShapeToPath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PluginConvertShapeToPath]
   }
 }

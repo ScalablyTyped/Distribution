@@ -14,14 +14,12 @@ trait LoggerLevel extends js.Object
 
 object LoggerLevel {
   @scala.inline
-  def DEBUG: typings.ionicCliFramework.ionicCliFrameworkStrings.DEBUG = this.cast("DEBUG")
+  def DEBUG: typings.ionicCliFramework.ionicCliFrameworkStrings.DEBUG = "DEBUG".asInstanceOf[typings.ionicCliFramework.ionicCliFrameworkStrings.DEBUG]
   @scala.inline
-  def ERROR: typings.ionicCliFramework.ionicCliFrameworkStrings.ERROR = this.cast("ERROR")
+  def ERROR: typings.ionicCliFramework.ionicCliFrameworkStrings.ERROR = "ERROR".asInstanceOf[typings.ionicCliFramework.ionicCliFrameworkStrings.ERROR]
   @scala.inline
-  def INFO: typings.ionicCliFramework.ionicCliFrameworkStrings.INFO = this.cast("INFO")
+  def INFO: typings.ionicCliFramework.ionicCliFrameworkStrings.INFO = "INFO".asInstanceOf[typings.ionicCliFramework.ionicCliFrameworkStrings.INFO]
   @scala.inline
-  def WARN: typings.ionicCliFramework.ionicCliFrameworkStrings.WARN = this.cast("WARN")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def WARN: typings.ionicCliFramework.ionicCliFrameworkStrings.WARN = "WARN".asInstanceOf[typings.ionicCliFramework.ionicCliFrameworkStrings.WARN]
 }
 

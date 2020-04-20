@@ -44,7 +44,6 @@ object GraphQLResolveInfomergeIn {
     variableValues: StringDictionary[js.Any]
   ): GraphQLResolveInfomergeIn = {
     val __obj = js.Dynamic.literal(fieldName = fieldName.asInstanceOf[js.Any], fieldNodes = fieldNodes.asInstanceOf[js.Any], fragments = fragments.asInstanceOf[js.Any], mergeInfo = mergeInfo.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], parentType = parentType.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any], rootValue = rootValue.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], variableValues = variableValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GraphQLResolveInfomergeIn]
   }
 }

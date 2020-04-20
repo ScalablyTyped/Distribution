@@ -16,7 +16,6 @@ object ManipulationDelta {
   @scala.inline
   def apply(expansion: Double, rotation: Double, scale: Double, translation: Point): ManipulationDelta = {
     val __obj = js.Dynamic.literal(expansion = expansion.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], translation = translation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ManipulationDelta]
   }
 }

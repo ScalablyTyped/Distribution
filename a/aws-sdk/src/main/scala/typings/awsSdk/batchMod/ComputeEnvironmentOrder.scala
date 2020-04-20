@@ -20,7 +20,6 @@ object ComputeEnvironmentOrder {
   @scala.inline
   def apply(computeEnvironment: String, order: Integer): ComputeEnvironmentOrder = {
     val __obj = js.Dynamic.literal(computeEnvironment = computeEnvironment.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ComputeEnvironmentOrder]
   }
 }

@@ -23,7 +23,6 @@ object AuditSinkSpec {
   @scala.inline
   def apply(policy: Input[Policy], webhook: Input[Webhook]): AuditSinkSpec = {
     val __obj = js.Dynamic.literal(policy = policy.asInstanceOf[js.Any], webhook = webhook.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AuditSinkSpec]
   }
 }

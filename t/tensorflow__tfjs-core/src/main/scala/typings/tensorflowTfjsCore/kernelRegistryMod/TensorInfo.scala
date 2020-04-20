@@ -15,7 +15,6 @@ object TensorInfo {
   @scala.inline
   def apply(dataId: DataId, dtype: DataType, shape: js.Array[Double]): TensorInfo = {
     val __obj = js.Dynamic.literal(dataId = dataId.asInstanceOf[js.Any], dtype = dtype.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TensorInfo]
   }
 }

@@ -23,7 +23,6 @@ object SignatureHelp {
   @scala.inline
   def apply(activeParameter: Double, activeSignature: Double, signatures: js.Array[SignatureInformation]): SignatureHelp = {
     val __obj = js.Dynamic.literal(activeParameter = activeParameter.asInstanceOf[js.Any], activeSignature = activeSignature.asInstanceOf[js.Any], signatures = signatures.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SignatureHelp]
   }
 }

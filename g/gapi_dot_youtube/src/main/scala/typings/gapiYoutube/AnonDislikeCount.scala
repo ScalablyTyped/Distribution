@@ -37,7 +37,6 @@ object AnonDislikeCount {
     viewCount: Double
   ): AnonDislikeCount = {
     val __obj = js.Dynamic.literal(commentCount = commentCount.asInstanceOf[js.Any], dislikeCount = dislikeCount.asInstanceOf[js.Any], favoriteCount = favoriteCount.asInstanceOf[js.Any], likeCount = likeCount.asInstanceOf[js.Any], viewCount = viewCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDislikeCount]
   }
 }

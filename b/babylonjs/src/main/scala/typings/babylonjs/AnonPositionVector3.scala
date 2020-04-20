@@ -13,7 +13,6 @@ object AnonPositionVector3 {
   @scala.inline
   def apply(position: Vector3): AnonPositionVector3 = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPositionVector3]
   }
 }

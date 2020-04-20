@@ -13,7 +13,6 @@ object ICalculation {
   @scala.inline
   def apply(calculate: js.Function, fields: js.Array[String]): ICalculation = {
     val __obj = js.Dynamic.literal(calculate = calculate.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICalculation]
   }
 }

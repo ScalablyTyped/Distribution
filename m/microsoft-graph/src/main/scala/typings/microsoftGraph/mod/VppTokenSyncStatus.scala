@@ -17,14 +17,12 @@ trait VppTokenSyncStatus extends js.Object
 
 object VppTokenSyncStatus {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def completed: completed_ = "completed".asInstanceOf[completed_]
   @scala.inline
-  def completed: completed_ = this.cast("completed")
+  def failed: failed_ = "failed".asInstanceOf[failed_]
   @scala.inline
-  def failed: failed_ = this.cast("failed")
+  def inProgress: typings.microsoftGraph.microsoftGraphStrings.inProgress = "inProgress".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.inProgress]
   @scala.inline
-  def inProgress: typings.microsoftGraph.microsoftGraphStrings.inProgress = this.cast("inProgress")
-  @scala.inline
-  def none: none_ = this.cast("none")
+  def none: none_ = "none".asInstanceOf[none_]
 }
 

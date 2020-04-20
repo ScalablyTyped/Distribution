@@ -16,7 +16,6 @@ object InventorySchedule {
   @scala.inline
   def apply(Frequency: InventoryFrequency): InventorySchedule = {
     val __obj = js.Dynamic.literal(Frequency = Frequency.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InventorySchedule]
   }
 }

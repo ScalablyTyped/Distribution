@@ -32,7 +32,7 @@ class RuleParameter protected () extends MicroflowParameterBase {
   @JSName("model")
   var model_FRuleParameter: IModel = js.native
   @JSName("containerAsRule")
-  def containerAsRule_MRuleParameter(): Rule = js.native
+  def containerAsRule_MRuleParameter: Rule = js.native
 }
 
 /* static members */

@@ -23,7 +23,6 @@ object IonBackdrop {
   @scala.inline
   def apply(stopPropagation: Boolean, tappable: Boolean, visible: Boolean): IonBackdrop = {
     val __obj = js.Dynamic.literal(stopPropagation = stopPropagation.asInstanceOf[js.Any], tappable = tappable.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IonBackdrop]
   }
 }

@@ -16,7 +16,6 @@ object DeleteDeploymentConfigInput {
   @scala.inline
   def apply(deploymentConfigName: DeploymentConfigName): DeleteDeploymentConfigInput = {
     val __obj = js.Dynamic.literal(deploymentConfigName = deploymentConfigName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteDeploymentConfigInput]
   }
 }

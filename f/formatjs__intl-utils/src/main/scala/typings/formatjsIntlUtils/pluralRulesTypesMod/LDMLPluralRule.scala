@@ -16,18 +16,16 @@ trait LDMLPluralRule extends js.Object
 
 object LDMLPluralRule {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def few: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.few = "few".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.few]
   @scala.inline
-  def few: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.few = this.cast("few")
+  def many: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.many = "many".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.many]
   @scala.inline
-  def many: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.many = this.cast("many")
+  def one: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.one = "one".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.one]
   @scala.inline
-  def one: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.one = this.cast("one")
+  def other: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.other = "other".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.other]
   @scala.inline
-  def other: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.other = this.cast("other")
+  def two: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.two = "two".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.two]
   @scala.inline
-  def two: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.two = this.cast("two")
-  @scala.inline
-  def zero: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.zero = this.cast("zero")
+  def zero: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.zero = "zero".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.zero]
 }
 

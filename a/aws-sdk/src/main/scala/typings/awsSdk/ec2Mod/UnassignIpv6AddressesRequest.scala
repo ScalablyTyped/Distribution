@@ -20,7 +20,6 @@ object UnassignIpv6AddressesRequest {
   @scala.inline
   def apply(Ipv6Addresses: Ipv6AddressList, NetworkInterfaceId: NetworkInterfaceId): UnassignIpv6AddressesRequest = {
     val __obj = js.Dynamic.literal(Ipv6Addresses = Ipv6Addresses.asInstanceOf[js.Any], NetworkInterfaceId = NetworkInterfaceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnassignIpv6AddressesRequest]
   }
 }

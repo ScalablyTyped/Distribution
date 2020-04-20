@@ -27,19 +27,19 @@ object mediaMod extends js.Object {
     var config: js.Any = js.native
     var network: js.Any = js.native
     var state: js.Any = js.native
-    def contentType(): String = js.native
-    def dateCreated(): Date = js.native
-    def dateUpdated(): Date = js.native
-    def fileName(): String = js.native
+    def contentType: String = js.native
+    def dateCreated: Date = js.native
+    def dateUpdated: Date = js.native
+    def fileName: String = js.native
     /**
       * Returns direct content URL to uploaded binary
       * @public
       * @returns {Promise<string>}
       */
     def getContentUrl(): js.Promise[String] = js.native
-    def serviceSid(): String = js.native
-    def sid(): String = js.native
-    def size(): Double = js.native
+    def serviceSid: String = js.native
+    def sid: String = js.native
+    def size: Double = js.native
   }
   
 }

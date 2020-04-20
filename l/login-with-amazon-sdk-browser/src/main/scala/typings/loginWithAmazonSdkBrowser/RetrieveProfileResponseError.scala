@@ -24,7 +24,6 @@ object RetrieveProfileResponseError {
   @scala.inline
   def apply(error: String, success: `false`): RetrieveProfileResponseError = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RetrieveProfileResponseError]
   }
 }

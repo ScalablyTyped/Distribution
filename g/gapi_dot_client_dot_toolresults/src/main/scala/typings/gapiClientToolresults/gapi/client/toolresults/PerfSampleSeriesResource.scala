@@ -43,7 +43,6 @@ object PerfSampleSeriesResource {
     samples: SamplesResource
   ): PerfSampleSeriesResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), samples = samples.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PerfSampleSeriesResource]
   }
 }

@@ -6,18 +6,25 @@ import typings.chromeApps.AnonPERMISSIONSINCREASE
 import typings.chromeApps.chrome.ToStringLiteral
 import typings.chromeApps.chrome.runtime.Permission
 import typings.chromeApps.chromeAppsBooleans.`true`
+import typings.chromeApps.chromeAppsStrings.ADMIN
+import typings.chromeApps.chromeAppsStrings.DEVELOPMENT
+import typings.chromeApps.chromeAppsStrings.NORMAL
 import typings.chromeApps.chromeAppsStrings.OPEN_AS_PINNED_TAB
 import typings.chromeApps.chromeAppsStrings.OPEN_AS_REGULAR_TAB
 import typings.chromeApps.chromeAppsStrings.OPEN_AS_WINDOW
 import typings.chromeApps.chromeAppsStrings.OPEN_FULL_SCREEN
-import typings.chromeApps.chromeAppsStrings.admin
-import typings.chromeApps.chromeAppsStrings.development
-import typings.chromeApps.chromeAppsStrings.normal
+import typings.chromeApps.chromeAppsStrings.OTHER
+import typings.chromeApps.chromeAppsStrings.PERMISSIONS_INCREASE
+import typings.chromeApps.chromeAppsStrings.SIDELOAD
+import typings.chromeApps.chromeAppsStrings.UNKNOWN
+import typings.chromeApps.chromeAppsStrings.admin_
+import typings.chromeApps.chromeAppsStrings.development_
+import typings.chromeApps.chromeAppsStrings.normal_
 import typings.chromeApps.chromeAppsStrings.other_
 import typings.chromeApps.chromeAppsStrings.packaged_app
-import typings.chromeApps.chromeAppsStrings.permissions_increase
-import typings.chromeApps.chromeAppsStrings.sideload
-import typings.chromeApps.chromeAppsStrings.unknown_
+import typings.chromeApps.chromeAppsStrings.permissions_increase_
+import typings.chromeApps.chromeAppsStrings.sideload_
+import typings.chromeApps.chromeAppsStrings.unknown__
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -37,9 +44,9 @@ trait ExtensionInfo extends js.Object {
     js.Array[
       ToStringLiteral[
         AnonOPENASPINNEDTAB, 
-        String, 
+        OPEN_AS_REGULAR_TAB | OPEN_AS_PINNED_TAB | OPEN_AS_WINDOW | OPEN_FULL_SCREEN, 
         Exclude[
-          String, 
+          OPEN_AS_REGULAR_TAB | OPEN_AS_PINNED_TAB | OPEN_AS_WINDOW | OPEN_FULL_SCREEN, 
           OPEN_AS_REGULAR_TAB | OPEN_AS_PINNED_TAB | OPEN_AS_WINDOW | OPEN_FULL_SCREEN
         ]
       ]
@@ -55,7 +62,11 @@ trait ExtensionInfo extends js.Object {
     * @see enum ExtensionDisabledReason
     */
   var disabledReason: js.UndefOr[
-    ToStringLiteral[AnonPERMISSIONSINCREASE, String, Exclude[String, unknown_ | permissions_increase]]
+    ToStringLiteral[
+      AnonPERMISSIONSINCREASE, 
+      UNKNOWN | PERMISSIONS_INCREASE, 
+      Exclude[UNKNOWN | PERMISSIONS_INCREASE, unknown__ | permissions_increase_]
+    ]
   ] = js.undefined
   /** Whether it is currently enabled or disabled. */
   var enabled: Boolean
@@ -83,7 +94,14 @@ trait ExtensionInfo extends js.Object {
     * How the app was installed.
     * @since Chrome 22.
     */
-  var installType: ToStringLiteral[AnonADMIN, String, Exclude[String, other_ | normal | development | admin | sideload]]
+  var installType: ToStringLiteral[
+    AnonADMIN, 
+    ADMIN | DEVELOPMENT | NORMAL | SIDELOAD | OTHER, 
+    Exclude[
+      ADMIN | DEVELOPMENT | NORMAL | SIDELOAD | OTHER, 
+      other_ | normal_ | development_ | admin_ | sideload_
+    ]
+  ]
   /**
     * True if this is an app, which it will be till this is removed.
     * @deprecated since Chrome 33. Please use management.ExtensionInfo.type.
@@ -96,9 +114,9 @@ trait ExtensionInfo extends js.Object {
   var launchType: js.UndefOr[
     ToStringLiteral[
       AnonOPENASPINNEDTAB, 
-      String, 
+      OPEN_AS_REGULAR_TAB | OPEN_AS_PINNED_TAB | OPEN_AS_WINDOW | OPEN_FULL_SCREEN, 
       Exclude[
-        String, 
+        OPEN_AS_REGULAR_TAB | OPEN_AS_PINNED_TAB | OPEN_AS_WINDOW | OPEN_FULL_SCREEN, 
         OPEN_AS_REGULAR_TAB | OPEN_AS_PINNED_TAB | OPEN_AS_WINDOW | OPEN_FULL_SCREEN
       ]
     ]
@@ -146,7 +164,14 @@ object ExtensionInfo {
     enabled: Boolean,
     hostPermissions: js.Array[String],
     id: String,
-    installType: ToStringLiteral[AnonADMIN, String, Exclude[String, other_ | normal | development | admin | sideload]],
+    installType: ToStringLiteral[
+      AnonADMIN, 
+      ADMIN | DEVELOPMENT | NORMAL | SIDELOAD | OTHER, 
+      Exclude[
+        ADMIN | DEVELOPMENT | NORMAL | SIDELOAD | OTHER, 
+        other_ | normal_ | development_ | admin_ | sideload_
+      ]
+    ],
     mayDisable: Boolean,
     name: String,
     offlineEnabled: Boolean,
@@ -159,22 +184,26 @@ object ExtensionInfo {
     availableLaunchTypes: js.Array[
       ToStringLiteral[
         AnonOPENASPINNEDTAB, 
-        String, 
+        OPEN_AS_REGULAR_TAB | OPEN_AS_PINNED_TAB | OPEN_AS_WINDOW | OPEN_FULL_SCREEN, 
         Exclude[
-          String, 
+          OPEN_AS_REGULAR_TAB | OPEN_AS_PINNED_TAB | OPEN_AS_WINDOW | OPEN_FULL_SCREEN, 
           OPEN_AS_REGULAR_TAB | OPEN_AS_PINNED_TAB | OPEN_AS_WINDOW | OPEN_FULL_SCREEN
         ]
       ]
     ] = null,
-    disabledReason: ToStringLiteral[AnonPERMISSIONSINCREASE, String, Exclude[String, unknown_ | permissions_increase]] = null,
+    disabledReason: ToStringLiteral[
+      AnonPERMISSIONSINCREASE, 
+      UNKNOWN | PERMISSIONS_INCREASE, 
+      Exclude[UNKNOWN | PERMISSIONS_INCREASE, unknown__ | permissions_increase_]
+    ] = null,
     homepageUrl: String = null,
     icons: js.Array[IconInfo] = null,
     isApp: `true` = null,
     launchType: ToStringLiteral[
       AnonOPENASPINNEDTAB, 
-      String, 
+      OPEN_AS_REGULAR_TAB | OPEN_AS_PINNED_TAB | OPEN_AS_WINDOW | OPEN_FULL_SCREEN, 
       Exclude[
-        String, 
+        OPEN_AS_REGULAR_TAB | OPEN_AS_PINNED_TAB | OPEN_AS_WINDOW | OPEN_FULL_SCREEN, 
         OPEN_AS_REGULAR_TAB | OPEN_AS_PINNED_TAB | OPEN_AS_WINDOW | OPEN_FULL_SCREEN
       ]
     ] = null,

@@ -17,13 +17,11 @@ object ResponseMessage {
   @scala.inline
   def Error[T](payload: AnonError, success: `false`): ResponseMessage[T] = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResponseMessage[T]]
   }
   @scala.inline
   def Success[T](id: Double, payload: T, success: `true`): ResponseMessage[T] = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResponseMessage[T]]
   }
 }

@@ -12,7 +12,6 @@ object AnonMinRanking {
   @scala.inline
   def apply(minRanking: Double): AnonMinRanking = {
     val __obj = js.Dynamic.literal(minRanking = minRanking.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMinRanking]
   }
 }

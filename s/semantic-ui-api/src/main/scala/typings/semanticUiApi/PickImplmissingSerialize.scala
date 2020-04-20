@@ -13,7 +13,6 @@ object PickImplmissingSerialize {
   @scala.inline
   def apply(missingSerialize: String): PickImplmissingSerialize = {
     val __obj = js.Dynamic.literal(missingSerialize = missingSerialize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplmissingSerialize]
   }
 }

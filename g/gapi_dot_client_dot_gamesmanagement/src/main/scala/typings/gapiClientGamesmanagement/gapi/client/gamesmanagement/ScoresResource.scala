@@ -42,7 +42,6 @@ object ScoresResource {
     resetMultipleForAllPlayers: AnonAlt => Request_[Unit]
   ): ScoresResource = {
     val __obj = js.Dynamic.literal(reset = js.Any.fromFunction1(reset), resetAll = js.Any.fromFunction1(resetAll), resetAllForAllPlayers = js.Any.fromFunction1(resetAllForAllPlayers), resetForAllPlayers = js.Any.fromFunction1(resetForAllPlayers), resetMultipleForAllPlayers = js.Any.fromFunction1(resetMultipleForAllPlayers))
-  
     __obj.asInstanceOf[ScoresResource]
   }
 }

@@ -16,18 +16,16 @@ trait FulfillmentStateType extends js.Object
 
 object FulfillmentStateType {
   @scala.inline
-  def CANCELED: typings.squareConnect.squareConnectStrings.CANCELED = this.cast("CANCELED")
+  def CANCELED: typings.squareConnect.squareConnectStrings.CANCELED = "CANCELED".asInstanceOf[typings.squareConnect.squareConnectStrings.CANCELED]
   @scala.inline
-  def COMPLETED: typings.squareConnect.squareConnectStrings.COMPLETED = this.cast("COMPLETED")
+  def COMPLETED: typings.squareConnect.squareConnectStrings.COMPLETED = "COMPLETED".asInstanceOf[typings.squareConnect.squareConnectStrings.COMPLETED]
   @scala.inline
-  def FAILED: typings.squareConnect.squareConnectStrings.FAILED = this.cast("FAILED")
+  def FAILED: typings.squareConnect.squareConnectStrings.FAILED = "FAILED".asInstanceOf[typings.squareConnect.squareConnectStrings.FAILED]
   @scala.inline
-  def PREPARED: typings.squareConnect.squareConnectStrings.PREPARED = this.cast("PREPARED")
+  def PREPARED: typings.squareConnect.squareConnectStrings.PREPARED = "PREPARED".asInstanceOf[typings.squareConnect.squareConnectStrings.PREPARED]
   @scala.inline
-  def PROPOSED: typings.squareConnect.squareConnectStrings.PROPOSED = this.cast("PROPOSED")
+  def PROPOSED: typings.squareConnect.squareConnectStrings.PROPOSED = "PROPOSED".asInstanceOf[typings.squareConnect.squareConnectStrings.PROPOSED]
   @scala.inline
-  def RESERVED: typings.squareConnect.squareConnectStrings.RESERVED = this.cast("RESERVED")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def RESERVED: typings.squareConnect.squareConnectStrings.RESERVED = "RESERVED".asInstanceOf[typings.squareConnect.squareConnectStrings.RESERVED]
 }
 

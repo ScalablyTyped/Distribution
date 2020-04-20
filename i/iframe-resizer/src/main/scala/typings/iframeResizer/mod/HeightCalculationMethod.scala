@@ -19,24 +19,22 @@ trait HeightCalculationMethod extends js.Object
 
 object HeightCalculationMethod {
   @scala.inline
-  def bodyOffset: typings.iframeResizer.iframeResizerStrings.bodyOffset = this.cast("bodyOffset")
+  def bodyOffset: typings.iframeResizer.iframeResizerStrings.bodyOffset = "bodyOffset".asInstanceOf[typings.iframeResizer.iframeResizerStrings.bodyOffset]
   @scala.inline
-  def bodyScroll: typings.iframeResizer.iframeResizerStrings.bodyScroll = this.cast("bodyScroll")
+  def bodyScroll: typings.iframeResizer.iframeResizerStrings.bodyScroll = "bodyScroll".asInstanceOf[typings.iframeResizer.iframeResizerStrings.bodyScroll]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def documentElementOffset: typings.iframeResizer.iframeResizerStrings.documentElementOffset = "documentElementOffset".asInstanceOf[typings.iframeResizer.iframeResizerStrings.documentElementOffset]
   @scala.inline
-  def documentElementOffset: typings.iframeResizer.iframeResizerStrings.documentElementOffset = this.cast("documentElementOffset")
+  def documentElementScroll: typings.iframeResizer.iframeResizerStrings.documentElementScroll = "documentElementScroll".asInstanceOf[typings.iframeResizer.iframeResizerStrings.documentElementScroll]
   @scala.inline
-  def documentElementScroll: typings.iframeResizer.iframeResizerStrings.documentElementScroll = this.cast("documentElementScroll")
+  def grow: typings.iframeResizer.iframeResizerStrings.grow = "grow".asInstanceOf[typings.iframeResizer.iframeResizerStrings.grow]
   @scala.inline
-  def grow: typings.iframeResizer.iframeResizerStrings.grow = this.cast("grow")
+  def lowestElement: typings.iframeResizer.iframeResizerStrings.lowestElement = "lowestElement".asInstanceOf[typings.iframeResizer.iframeResizerStrings.lowestElement]
   @scala.inline
-  def lowestElement: typings.iframeResizer.iframeResizerStrings.lowestElement = this.cast("lowestElement")
+  def max: typings.iframeResizer.iframeResizerStrings.max = "max".asInstanceOf[typings.iframeResizer.iframeResizerStrings.max]
   @scala.inline
-  def max: typings.iframeResizer.iframeResizerStrings.max = this.cast("max")
+  def min: typings.iframeResizer.iframeResizerStrings.min = "min".asInstanceOf[typings.iframeResizer.iframeResizerStrings.min]
   @scala.inline
-  def min: typings.iframeResizer.iframeResizerStrings.min = this.cast("min")
-  @scala.inline
-  def taggedElement: typings.iframeResizer.iframeResizerStrings.taggedElement = this.cast("taggedElement")
+  def taggedElement: typings.iframeResizer.iframeResizerStrings.taggedElement = "taggedElement".asInstanceOf[typings.iframeResizer.iframeResizerStrings.taggedElement]
 }
 

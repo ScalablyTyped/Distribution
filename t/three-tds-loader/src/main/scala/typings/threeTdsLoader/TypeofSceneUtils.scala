@@ -22,7 +22,6 @@ object TypeofSceneUtils {
     detach: (Object3D, Object3D, Scene) => Unit
   ): TypeofSceneUtils = {
     val __obj = js.Dynamic.literal(attach = js.Any.fromFunction3(attach), createMultiMaterialObject = js.Any.fromFunction2(createMultiMaterialObject), detach = js.Any.fromFunction3(detach))
-  
     __obj.asInstanceOf[TypeofSceneUtils]
   }
 }

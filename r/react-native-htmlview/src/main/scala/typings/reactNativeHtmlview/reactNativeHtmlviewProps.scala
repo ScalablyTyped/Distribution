@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeHtmlviewProps {
   @scala.inline
-  def ReactNativeHtmlviewProps: HTMLViewProps.type = typings.reactNativeHtmlview.mod.HTMLViewProps
+  def ReactNativeHtmlviewProps: HTMLViewProps.type = HTMLViewProps
   type ReactNativeHtmlviewProps = HTMLViewProps
 }
 

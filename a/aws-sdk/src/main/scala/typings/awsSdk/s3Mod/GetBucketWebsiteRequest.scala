@@ -16,7 +16,6 @@ object GetBucketWebsiteRequest {
   @scala.inline
   def apply(Bucket: BucketName): GetBucketWebsiteRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBucketWebsiteRequest]
   }
 }

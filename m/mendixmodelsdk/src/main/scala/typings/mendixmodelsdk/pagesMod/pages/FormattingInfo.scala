@@ -25,22 +25,22 @@ class FormattingInfo protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FFormattingInfo: IModel = js.native
-  def containerAsClientTemplateParameter(): ClientTemplateParameter = js.native
-  def containerAsDataGridColumn(): DataGridColumn = js.native
-  def containerAsDatePicker(): DatePicker = js.native
-  def containerAsDynamicLabel(): DynamicLabel = js.native
-  def containerAsGridColumn(): GridColumn = js.native
-  def containerAsReferenceSelector(): ReferenceSelector = js.native
-  def containerAsTextBox(): TextBox = js.native
-  def customDateFormat(): String = js.native
+  def containerAsClientTemplateParameter: ClientTemplateParameter = js.native
+  def containerAsDataGridColumn: DataGridColumn = js.native
+  def containerAsDatePicker: DatePicker = js.native
+  def containerAsDynamicLabel: DynamicLabel = js.native
+  def containerAsGridColumn: GridColumn = js.native
+  def containerAsReferenceSelector: ReferenceSelector = js.native
+  def containerAsTextBox: TextBox = js.native
+  def customDateFormat: String = js.native
   def customDateFormat(newValue: String): js.Any = js.native
-  def dateFormat(): DateFormat = js.native
+  def dateFormat: DateFormat = js.native
   def dateFormat(newValue: DateFormat): js.Any = js.native
-  def decimalPrecision(): Double = js.native
+  def decimalPrecision: Double = js.native
   def decimalPrecision(newValue: Double): js.Any = js.native
-  def enumFormat(): EnumFormat = js.native
+  def enumFormat: EnumFormat = js.native
   def enumFormat(newValue: EnumFormat): js.Any = js.native
-  def groupDigits(): Boolean = js.native
+  def groupDigits: Boolean = js.native
   def groupDigits(newValue: Boolean): js.Any = js.native
 }
 

@@ -13,7 +13,6 @@ object FileSystemManagerGetFileInfoSuccessCallbackResult {
   @scala.inline
   def apply(size: Double): FileSystemManagerGetFileInfoSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FileSystemManagerGetFileInfoSuccessCallbackResult]
   }
 }

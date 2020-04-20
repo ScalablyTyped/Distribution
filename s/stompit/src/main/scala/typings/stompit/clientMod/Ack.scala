@@ -13,12 +13,10 @@ trait Ack extends js.Object
 
 object Ack {
   @scala.inline
-  def auto: typings.stompit.stompitStrings.auto = this.cast("auto")
+  def auto: typings.stompit.stompitStrings.auto = "auto".asInstanceOf[typings.stompit.stompitStrings.auto]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def client: typings.stompit.stompitStrings.client = "client".asInstanceOf[typings.stompit.stompitStrings.client]
   @scala.inline
-  def client: typings.stompit.stompitStrings.client = this.cast("client")
-  @scala.inline
-  def `client-individual`: typings.stompit.stompitStrings.`client-individual` = this.cast("client-individual")
+  def `client-individual`: typings.stompit.stompitStrings.`client-individual` = "client-individual".asInstanceOf[typings.stompit.stompitStrings.`client-individual`]
 }
 

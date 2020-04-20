@@ -13,7 +13,6 @@ object SceneLegendItem {
   @scala.inline
   def apply(datum: AnonIndex): SceneLegendItem = {
     val __obj = js.Dynamic.literal(datum = datum.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SceneLegendItem]
   }
 }

@@ -12,7 +12,6 @@ object IGetActivationFactory {
   @scala.inline
   def apply(getActivationFactory: String => js.Any): IGetActivationFactory = {
     val __obj = js.Dynamic.literal(getActivationFactory = js.Any.fromFunction1(getActivationFactory))
-  
     __obj.asInstanceOf[IGetActivationFactory]
   }
 }

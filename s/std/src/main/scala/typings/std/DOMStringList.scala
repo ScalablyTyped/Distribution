@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DOMStringList
   extends /* index */ NumberDictionary[java.lang.String] {
-  @JSName(scala.scalajs.js.Symbol.iterator)
+  @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[java.lang.String]] = js.native
   /**
     * Returns the number of strings in strings.

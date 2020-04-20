@@ -28,7 +28,6 @@ object SqlInjectionMatchSetSqlInjectionMatchTuple {
     textTransformation: Input[String]
   ): SqlInjectionMatchSetSqlInjectionMatchTuple = {
     val __obj = js.Dynamic.literal(fieldToMatch = fieldToMatch.asInstanceOf[js.Any], textTransformation = textTransformation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SqlInjectionMatchSetSqlInjectionMatchTuple]
   }
 }

@@ -28,24 +28,22 @@ trait MsoFileDialogView extends js.Object
 
 object MsoFileDialogView {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoFileDialogViewDetails: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoFileDialogViewDetails: `2` = this.cast(2)
+  def msoFileDialogViewLargeIcons: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def msoFileDialogViewLargeIcons: `6` = this.cast(6)
+  def msoFileDialogViewList: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoFileDialogViewList: `1` = this.cast(1)
+  def msoFileDialogViewPreview: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoFileDialogViewPreview: `4` = this.cast(4)
+  def msoFileDialogViewProperties: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoFileDialogViewProperties: `3` = this.cast(3)
+  def msoFileDialogViewSmallIcons: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def msoFileDialogViewSmallIcons: `7` = this.cast(7)
+  def msoFileDialogViewThumbnail: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def msoFileDialogViewThumbnail: `5` = this.cast(5)
+  def msoFileDialogViewTiles: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def msoFileDialogViewTiles: `9` = this.cast(9)
-  @scala.inline
-  def msoFileDialogViewWebView: `8` = this.cast(8)
+  def msoFileDialogViewWebView: `8` = 8.asInstanceOf[`8`]
 }
 

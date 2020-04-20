@@ -15,14 +15,12 @@ trait ConnectionDirection extends js.Object
 
 object ConnectionDirection {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def inbound: typings.microsoftGraph.microsoftGraphStrings.inbound = "inbound".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.inbound]
   @scala.inline
-  def inbound: typings.microsoftGraph.microsoftGraphStrings.inbound = this.cast("inbound")
+  def outbound: typings.microsoftGraph.microsoftGraphStrings.outbound = "outbound".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.outbound]
   @scala.inline
-  def outbound: typings.microsoftGraph.microsoftGraphStrings.outbound = this.cast("outbound")
+  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = this.cast("unknownFutureValue")
+  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }
 

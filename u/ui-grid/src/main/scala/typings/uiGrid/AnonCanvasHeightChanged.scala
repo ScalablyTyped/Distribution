@@ -85,7 +85,6 @@ object AnonCanvasHeightChanged {
     sortChanged: (IScope, sortChangedHandler[TEntity]) => Unit
   ): AnonCanvasHeightChanged[TEntity] = {
     val __obj = js.Dynamic.literal(canvasHeightChanged = js.Any.fromFunction2(canvasHeightChanged), columnVisibilityChanged = js.Any.fromFunction2(columnVisibilityChanged), filterChanged = js.Any.fromFunction2(filterChanged), rowsRendered = js.Any.fromFunction2(rowsRendered), rowsVisibleChanged = js.Any.fromFunction2(rowsVisibleChanged), scrollBegin = js.Any.fromFunction2(scrollBegin), scrollEnd = js.Any.fromFunction2(scrollEnd), sortChanged = js.Any.fromFunction2(sortChanged))
-  
     __obj.asInstanceOf[AnonCanvasHeightChanged[TEntity]]
   }
 }

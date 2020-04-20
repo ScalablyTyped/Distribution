@@ -12,7 +12,6 @@ object PipeOptions {
   @scala.inline
   def apply(end: Boolean): PipeOptions = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PipeOptions]
   }
 }

@@ -41,62 +41,60 @@ trait TransitionTimingFunction extends js.Object
 
 object TransitionTimingFunction {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `cubic-bezier`: typings.cytoscape.cytoscapeStrings.`cubic-bezier` = "cubic-bezier".asInstanceOf[typings.cytoscape.cytoscapeStrings.`cubic-bezier`]
   @scala.inline
-  def `cubic-bezier`: typings.cytoscape.cytoscapeStrings.`cubic-bezier` = this.cast("cubic-bezier")
+  def ease: typings.cytoscape.cytoscapeStrings.ease = "ease".asInstanceOf[typings.cytoscape.cytoscapeStrings.ease]
   @scala.inline
-  def ease: typings.cytoscape.cytoscapeStrings.ease = this.cast("ease")
+  def `ease-in`: typings.cytoscape.cytoscapeStrings.`ease-in` = "ease-in".asInstanceOf[typings.cytoscape.cytoscapeStrings.`ease-in`]
   @scala.inline
-  def `ease-in`: typings.cytoscape.cytoscapeStrings.`ease-in` = this.cast("ease-in")
+  def `ease-in-circ`: typings.cytoscape.cytoscapeStrings.`ease-in-circ` = "ease-in-circ".asInstanceOf[typings.cytoscape.cytoscapeStrings.`ease-in-circ`]
   @scala.inline
-  def `ease-in-circ`: typings.cytoscape.cytoscapeStrings.`ease-in-circ` = this.cast("ease-in-circ")
+  def `ease-in-cubic`: typings.cytoscape.cytoscapeStrings.`ease-in-cubic` = "ease-in-cubic".asInstanceOf[typings.cytoscape.cytoscapeStrings.`ease-in-cubic`]
   @scala.inline
-  def `ease-in-cubic`: typings.cytoscape.cytoscapeStrings.`ease-in-cubic` = this.cast("ease-in-cubic")
+  def `ease-in-expo`: typings.cytoscape.cytoscapeStrings.`ease-in-expo` = "ease-in-expo".asInstanceOf[typings.cytoscape.cytoscapeStrings.`ease-in-expo`]
   @scala.inline
-  def `ease-in-expo`: typings.cytoscape.cytoscapeStrings.`ease-in-expo` = this.cast("ease-in-expo")
+  def `ease-in-out`: typings.cytoscape.cytoscapeStrings.`ease-in-out` = "ease-in-out".asInstanceOf[typings.cytoscape.cytoscapeStrings.`ease-in-out`]
   @scala.inline
-  def `ease-in-out`: typings.cytoscape.cytoscapeStrings.`ease-in-out` = this.cast("ease-in-out")
+  def `ease-in-out-circ`: typings.cytoscape.cytoscapeStrings.`ease-in-out-circ` = "ease-in-out-circ".asInstanceOf[typings.cytoscape.cytoscapeStrings.`ease-in-out-circ`]
   @scala.inline
-  def `ease-in-out-circ`: typings.cytoscape.cytoscapeStrings.`ease-in-out-circ` = this.cast("ease-in-out-circ")
+  def `ease-in-out-cubic`: typings.cytoscape.cytoscapeStrings.`ease-in-out-cubic` = "ease-in-out-cubic".asInstanceOf[typings.cytoscape.cytoscapeStrings.`ease-in-out-cubic`]
   @scala.inline
-  def `ease-in-out-cubic`: typings.cytoscape.cytoscapeStrings.`ease-in-out-cubic` = this.cast("ease-in-out-cubic")
+  def `ease-in-out-expo`: typings.cytoscape.cytoscapeStrings.`ease-in-out-expo` = "ease-in-out-expo".asInstanceOf[typings.cytoscape.cytoscapeStrings.`ease-in-out-expo`]
   @scala.inline
-  def `ease-in-out-expo`: typings.cytoscape.cytoscapeStrings.`ease-in-out-expo` = this.cast("ease-in-out-expo")
+  def `ease-in-out-quad`: typings.cytoscape.cytoscapeStrings.`ease-in-out-quad` = "ease-in-out-quad".asInstanceOf[typings.cytoscape.cytoscapeStrings.`ease-in-out-quad`]
   @scala.inline
-  def `ease-in-out-quad`: typings.cytoscape.cytoscapeStrings.`ease-in-out-quad` = this.cast("ease-in-out-quad")
+  def `ease-in-out-quart`: typings.cytoscape.cytoscapeStrings.`ease-in-out-quart` = "ease-in-out-quart".asInstanceOf[typings.cytoscape.cytoscapeStrings.`ease-in-out-quart`]
   @scala.inline
-  def `ease-in-out-quart`: typings.cytoscape.cytoscapeStrings.`ease-in-out-quart` = this.cast("ease-in-out-quart")
+  def `ease-in-out-quint`: typings.cytoscape.cytoscapeStrings.`ease-in-out-quint` = "ease-in-out-quint".asInstanceOf[typings.cytoscape.cytoscapeStrings.`ease-in-out-quint`]
   @scala.inline
-  def `ease-in-out-quint`: typings.cytoscape.cytoscapeStrings.`ease-in-out-quint` = this.cast("ease-in-out-quint")
+  def `ease-in-out-sine`: typings.cytoscape.cytoscapeStrings.`ease-in-out-sine` = "ease-in-out-sine".asInstanceOf[typings.cytoscape.cytoscapeStrings.`ease-in-out-sine`]
   @scala.inline
-  def `ease-in-out-sine`: typings.cytoscape.cytoscapeStrings.`ease-in-out-sine` = this.cast("ease-in-out-sine")
+  def `ease-in-quad`: typings.cytoscape.cytoscapeStrings.`ease-in-quad` = "ease-in-quad".asInstanceOf[typings.cytoscape.cytoscapeStrings.`ease-in-quad`]
   @scala.inline
-  def `ease-in-quad`: typings.cytoscape.cytoscapeStrings.`ease-in-quad` = this.cast("ease-in-quad")
+  def `ease-in-quart`: typings.cytoscape.cytoscapeStrings.`ease-in-quart` = "ease-in-quart".asInstanceOf[typings.cytoscape.cytoscapeStrings.`ease-in-quart`]
   @scala.inline
-  def `ease-in-quart`: typings.cytoscape.cytoscapeStrings.`ease-in-quart` = this.cast("ease-in-quart")
+  def `ease-in-quint`: typings.cytoscape.cytoscapeStrings.`ease-in-quint` = "ease-in-quint".asInstanceOf[typings.cytoscape.cytoscapeStrings.`ease-in-quint`]
   @scala.inline
-  def `ease-in-quint`: typings.cytoscape.cytoscapeStrings.`ease-in-quint` = this.cast("ease-in-quint")
+  def `ease-in-sine`: typings.cytoscape.cytoscapeStrings.`ease-in-sine` = "ease-in-sine".asInstanceOf[typings.cytoscape.cytoscapeStrings.`ease-in-sine`]
   @scala.inline
-  def `ease-in-sine`: typings.cytoscape.cytoscapeStrings.`ease-in-sine` = this.cast("ease-in-sine")
+  def `ease-out`: typings.cytoscape.cytoscapeStrings.`ease-out` = "ease-out".asInstanceOf[typings.cytoscape.cytoscapeStrings.`ease-out`]
   @scala.inline
-  def `ease-out`: typings.cytoscape.cytoscapeStrings.`ease-out` = this.cast("ease-out")
+  def `ease-out-circ`: typings.cytoscape.cytoscapeStrings.`ease-out-circ` = "ease-out-circ".asInstanceOf[typings.cytoscape.cytoscapeStrings.`ease-out-circ`]
   @scala.inline
-  def `ease-out-circ`: typings.cytoscape.cytoscapeStrings.`ease-out-circ` = this.cast("ease-out-circ")
+  def `ease-out-cubic`: typings.cytoscape.cytoscapeStrings.`ease-out-cubic` = "ease-out-cubic".asInstanceOf[typings.cytoscape.cytoscapeStrings.`ease-out-cubic`]
   @scala.inline
-  def `ease-out-cubic`: typings.cytoscape.cytoscapeStrings.`ease-out-cubic` = this.cast("ease-out-cubic")
+  def `ease-out-expo`: typings.cytoscape.cytoscapeStrings.`ease-out-expo` = "ease-out-expo".asInstanceOf[typings.cytoscape.cytoscapeStrings.`ease-out-expo`]
   @scala.inline
-  def `ease-out-expo`: typings.cytoscape.cytoscapeStrings.`ease-out-expo` = this.cast("ease-out-expo")
+  def `ease-out-quad`: typings.cytoscape.cytoscapeStrings.`ease-out-quad` = "ease-out-quad".asInstanceOf[typings.cytoscape.cytoscapeStrings.`ease-out-quad`]
   @scala.inline
-  def `ease-out-quad`: typings.cytoscape.cytoscapeStrings.`ease-out-quad` = this.cast("ease-out-quad")
+  def `ease-out-quart`: typings.cytoscape.cytoscapeStrings.`ease-out-quart` = "ease-out-quart".asInstanceOf[typings.cytoscape.cytoscapeStrings.`ease-out-quart`]
   @scala.inline
-  def `ease-out-quart`: typings.cytoscape.cytoscapeStrings.`ease-out-quart` = this.cast("ease-out-quart")
+  def `ease-out-quint`: typings.cytoscape.cytoscapeStrings.`ease-out-quint` = "ease-out-quint".asInstanceOf[typings.cytoscape.cytoscapeStrings.`ease-out-quint`]
   @scala.inline
-  def `ease-out-quint`: typings.cytoscape.cytoscapeStrings.`ease-out-quint` = this.cast("ease-out-quint")
+  def `ease-out-sine`: typings.cytoscape.cytoscapeStrings.`ease-out-sine` = "ease-out-sine".asInstanceOf[typings.cytoscape.cytoscapeStrings.`ease-out-sine`]
   @scala.inline
-  def `ease-out-sine`: typings.cytoscape.cytoscapeStrings.`ease-out-sine` = this.cast("ease-out-sine")
+  def linear: typings.cytoscape.cytoscapeStrings.linear = "linear".asInstanceOf[typings.cytoscape.cytoscapeStrings.linear]
   @scala.inline
-  def linear: typings.cytoscape.cytoscapeStrings.linear = this.cast("linear")
-  @scala.inline
-  def spring: typings.cytoscape.cytoscapeStrings.spring = this.cast("spring")
+  def spring: typings.cytoscape.cytoscapeStrings.spring = "spring".asInstanceOf[typings.cytoscape.cytoscapeStrings.spring]
 }
 

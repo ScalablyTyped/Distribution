@@ -32,7 +32,6 @@ object PropertiesService {
     getUserProperties: () => typings.googleAppsScript.GoogleAppsScript.Properties.Properties
   ): PropertiesService = {
     val __obj = js.Dynamic.literal(getDocumentProperties = js.Any.fromFunction0(getDocumentProperties), getScriptProperties = js.Any.fromFunction0(getScriptProperties), getUserProperties = js.Any.fromFunction0(getUserProperties))
-  
     __obj.asInstanceOf[PropertiesService]
   }
 }

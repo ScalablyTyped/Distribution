@@ -32,7 +32,6 @@ object AcquisitionOptions {
     target: String
   ): AcquisitionOptions = {
     val __obj = js.Dynamic.literal(defaultOperation = defaultOperation.asInstanceOf[js.Any], itemId = itemId.asInstanceOf[js.Any], operations = operations.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AcquisitionOptions]
   }
 }

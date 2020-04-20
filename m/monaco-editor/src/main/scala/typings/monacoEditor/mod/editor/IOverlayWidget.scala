@@ -29,7 +29,6 @@ object IOverlayWidget {
     getPosition: () => IOverlayWidgetPosition | Null
   ): IOverlayWidget = {
     val __obj = js.Dynamic.literal(getDomNode = js.Any.fromFunction0(getDomNode), getId = js.Any.fromFunction0(getId), getPosition = js.Any.fromFunction0(getPosition))
-  
     __obj.asInstanceOf[IOverlayWidget]
   }
 }

@@ -12,7 +12,6 @@ object ActivityDeleteThreadSubscriptionParams {
   @scala.inline
   def apply(thread_id: Double): ActivityDeleteThreadSubscriptionParams = {
     val __obj = js.Dynamic.literal(thread_id = thread_id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ActivityDeleteThreadSubscriptionParams]
   }
 }

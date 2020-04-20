@@ -20,7 +20,6 @@ object AddTagsRequest {
   @scala.inline
   def apply(ARN: ARN, TagList: TagList): AddTagsRequest = {
     val __obj = js.Dynamic.literal(ARN = ARN.asInstanceOf[js.Any], TagList = TagList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddTagsRequest]
   }
 }

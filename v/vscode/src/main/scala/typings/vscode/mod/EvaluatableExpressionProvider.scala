@@ -25,7 +25,6 @@ object EvaluatableExpressionProvider {
     provideEvaluatableExpression: (TextDocument, Position, CancellationToken) => ProviderResult[EvaluatableExpression]
   ): EvaluatableExpressionProvider = {
     val __obj = js.Dynamic.literal(provideEvaluatableExpression = js.Any.fromFunction3(provideEvaluatableExpression))
-  
     __obj.asInstanceOf[EvaluatableExpressionProvider]
   }
 }

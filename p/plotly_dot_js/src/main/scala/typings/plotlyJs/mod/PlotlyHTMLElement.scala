@@ -19,6 +19,7 @@ import typings.plotlyJs.plotlyJsStrings.plotly_legendclick
 import typings.plotlyJs.plotlyJsStrings.plotly_legenddoubleclick
 import typings.plotlyJs.plotlyJsStrings.plotly_redraw
 import typings.plotlyJs.plotlyJsStrings.plotly_relayout
+import typings.plotlyJs.plotlyJsStrings.plotly_relayouting
 import typings.plotlyJs.plotlyJsStrings.plotly_restyle
 import typings.plotlyJs.plotlyJsStrings.plotly_selected
 import typings.plotlyJs.plotlyJsStrings.plotly_selecting
@@ -57,6 +58,8 @@ trait PlotlyHTMLElement extends HTMLElement {
   def on_plotlylegenddoubleclick(event: plotly_legenddoubleclick, callback: js.Function1[/* event */ LegendClickEvent, Boolean]): Unit = js.native
   @JSName("on")
   def on_plotlyrelayout(event: plotly_relayout, callback: js.Function1[/* event */ PlotRelayoutEvent, Unit]): Unit = js.native
+  @JSName("on")
+  def on_plotlyrelayouting(event: plotly_relayouting, callback: js.Function1[/* event */ PlotRelayoutEvent, Unit]): Unit = js.native
   @JSName("on")
   def on_plotlyrestyle(event: plotly_restyle, callback: js.Function1[/* data */ PlotRestyleEvent, Unit]): Unit = js.native
   @JSName("on")

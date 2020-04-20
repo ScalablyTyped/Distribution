@@ -15,14 +15,12 @@ trait PhysicalAddressType extends js.Object
 
 object PhysicalAddressType {
   @scala.inline
-  def business: typings.microsoftGraph.microsoftGraphStrings.business = this.cast("business")
+  def business: typings.microsoftGraph.microsoftGraphStrings.business = "business".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.business]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def home: typings.microsoftGraph.microsoftGraphStrings.home = "home".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.home]
   @scala.inline
-  def home: typings.microsoftGraph.microsoftGraphStrings.home = this.cast("home")
+  def other: typings.microsoftGraph.microsoftGraphStrings.other = "other".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.other]
   @scala.inline
-  def other: typings.microsoftGraph.microsoftGraphStrings.other = this.cast("other")
-  @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
+  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
 }
 

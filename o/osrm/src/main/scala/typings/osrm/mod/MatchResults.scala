@@ -13,7 +13,6 @@ object MatchResults {
   @scala.inline
   def apply(matchings: js.Array[MatchRoute], tracepoints: js.Array[MatchWaypoint]): MatchResults = {
     val __obj = js.Dynamic.literal(matchings = matchings.asInstanceOf[js.Any], tracepoints = tracepoints.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MatchResults]
   }
 }

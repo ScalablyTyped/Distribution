@@ -20,7 +20,6 @@ object DeregisterEventTopicRequest {
   @scala.inline
   def apply(DirectoryId: DirectoryId, TopicName: TopicName): DeregisterEventTopicRequest = {
     val __obj = js.Dynamic.literal(DirectoryId = DirectoryId.asInstanceOf[js.Any], TopicName = TopicName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeregisterEventTopicRequest]
   }
 }

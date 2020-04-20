@@ -13,7 +13,6 @@ object UseExpandedState {
   @scala.inline
   def apply[D /* <: js.Object */](expanded: Record[IdType[D], Boolean]): UseExpandedState[D] = {
     val __obj = js.Dynamic.literal(expanded = expanded.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UseExpandedState[D]]
   }
 }

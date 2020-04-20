@@ -13,7 +13,6 @@ object AnonNoise {
   @scala.inline
   def apply(noise: Double): AnonNoise = {
     val __obj = js.Dynamic.literal(noise = noise.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNoise]
   }
 }

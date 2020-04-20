@@ -16,7 +16,6 @@ object StopJobResult {
   @scala.inline
   def apply(jobSummary: JobSummary): StopJobResult = {
     val __obj = js.Dynamic.literal(jobSummary = jobSummary.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopJobResult]
   }
 }

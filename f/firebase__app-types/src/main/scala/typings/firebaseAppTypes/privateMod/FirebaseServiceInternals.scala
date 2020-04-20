@@ -16,7 +16,6 @@ object FirebaseServiceInternals {
   @scala.inline
   def apply(delete: () => js.Promise[Unit]): FirebaseServiceInternals = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction0(delete))
-  
     __obj.asInstanceOf[FirebaseServiceInternals]
   }
 }

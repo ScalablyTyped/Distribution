@@ -15,7 +15,6 @@ object WebTokensResource {
   @scala.inline
   def apply(create: AnonKey => Request_[WebToken]): WebTokensResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
-  
     __obj.asInstanceOf[WebTokensResource]
   }
 }

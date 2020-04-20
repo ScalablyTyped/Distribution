@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@catho/quantum" : "4.3.2"
+      "@catho/quantum" : "4.3.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@catho/quantum" : "4.3.2"
+      "@catho/quantum" : "4.3.4"
     }
   ],
   "compile-devDependencies" : [

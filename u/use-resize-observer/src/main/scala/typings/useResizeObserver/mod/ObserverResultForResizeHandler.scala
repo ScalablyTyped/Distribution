@@ -13,7 +13,6 @@ object ObserverResultForResizeHandler {
   @scala.inline
   def apply[TElement](ref: RefObject[TElement]): ObserverResultForResizeHandler[TElement] = {
     val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ObserverResultForResizeHandler[TElement]]
   }
 }

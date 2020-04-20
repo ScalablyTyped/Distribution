@@ -14,7 +14,6 @@ object ProgressEvent {
   @scala.inline
   def apply(data: AnonTotalBytesExpectedToWrite, uuid: String): ProgressEvent = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProgressEvent]
   }
 }

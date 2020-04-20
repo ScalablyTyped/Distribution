@@ -14,10 +14,8 @@ trait MsoFilterConjunction extends js.Object
 
 object MsoFilterConjunction {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoFilterConjunctionAnd: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def msoFilterConjunctionAnd: `0` = this.cast(0)
-  @scala.inline
-  def msoFilterConjunctionOr: `1` = this.cast(1)
+  def msoFilterConjunctionOr: `1` = 1.asInstanceOf[`1`]
 }
 

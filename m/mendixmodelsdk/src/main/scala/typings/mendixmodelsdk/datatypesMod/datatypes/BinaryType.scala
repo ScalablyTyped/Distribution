@@ -47,21 +47,21 @@ class BinaryType protected () extends DataType {
   @JSName("model")
   var model_FBinaryType: IModel = js.native
   @JSName("containerAsAppServiceActionParameter")
-  def containerAsAppServiceActionParameter_MBinaryType(): AppServiceActionParameter = js.native
+  def containerAsAppServiceActionParameter_MBinaryType: AppServiceActionParameter = js.native
   @JSName("containerAsAppServiceAction")
-  def containerAsAppServiceAction_MBinaryType(): AppServiceAction = js.native
+  def containerAsAppServiceAction_MBinaryType: AppServiceAction = js.native
   @JSName("containerAsConstant")
-  def containerAsConstant_MBinaryType(): Constant = js.native
+  def containerAsConstant_MBinaryType: Constant = js.native
   @JSName("containerAsDataSetParameter")
-  def containerAsDataSetParameter_MBinaryType(): DataSetParameter = js.native
+  def containerAsDataSetParameter_MBinaryType: DataSetParameter = js.native
   @JSName("containerAsDocumentTemplateParameter")
-  def containerAsDocumentTemplateParameter_MBinaryType(): DocumentTemplateParameter = js.native
+  def containerAsDocumentTemplateParameter_MBinaryType: DocumentTemplateParameter = js.native
   @JSName("containerAsImportMapping")
-  def containerAsImportMapping_MBinaryType(): ImportMapping = js.native
+  def containerAsImportMapping_MBinaryType: ImportMapping = js.native
   @JSName("containerAsMicroflowBase")
-  def containerAsMicroflowBase_MBinaryType(): MicroflowBase = js.native
+  def containerAsMicroflowBase_MBinaryType: MicroflowBase = js.native
   @JSName("containerAsMicroflowParameterBase")
-  def containerAsMicroflowParameterBase_MBinaryType(): MicroflowParameterBase = js.native
+  def containerAsMicroflowParameterBase_MBinaryType: MicroflowParameterBase = js.native
 }
 
 /* static members */

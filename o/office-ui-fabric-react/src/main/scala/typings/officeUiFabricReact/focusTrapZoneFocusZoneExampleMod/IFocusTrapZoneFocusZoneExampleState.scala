@@ -12,7 +12,6 @@ object IFocusTrapZoneFocusZoneExampleState {
   @scala.inline
   def apply(useTrapZone: Boolean): IFocusTrapZoneFocusZoneExampleState = {
     val __obj = js.Dynamic.literal(useTrapZone = useTrapZone.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IFocusTrapZoneFocusZoneExampleState]
   }
 }

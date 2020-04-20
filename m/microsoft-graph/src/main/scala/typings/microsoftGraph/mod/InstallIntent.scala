@@ -14,14 +14,12 @@ trait InstallIntent extends js.Object
 
 object InstallIntent {
   @scala.inline
-  def available: typings.microsoftGraph.microsoftGraphStrings.available = this.cast("available")
+  def available: typings.microsoftGraph.microsoftGraphStrings.available = "available".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.available]
   @scala.inline
-  def availableWithoutEnrollment: typings.microsoftGraph.microsoftGraphStrings.availableWithoutEnrollment = this.cast("availableWithoutEnrollment")
+  def availableWithoutEnrollment: typings.microsoftGraph.microsoftGraphStrings.availableWithoutEnrollment = "availableWithoutEnrollment".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.availableWithoutEnrollment]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def required: typings.microsoftGraph.microsoftGraphStrings.required = "required".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.required]
   @scala.inline
-  def required: typings.microsoftGraph.microsoftGraphStrings.required = this.cast("required")
-  @scala.inline
-  def uninstall: typings.microsoftGraph.microsoftGraphStrings.uninstall = this.cast("uninstall")
+  def uninstall: typings.microsoftGraph.microsoftGraphStrings.uninstall = "uninstall".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.uninstall]
 }
 

@@ -21,7 +21,6 @@ object IImpersonation {
     Password: String
   ): IImpersonation = {
     val __obj = js.Dynamic.literal(Account = Account.asInstanceOf[js.Any], Clone = js.Any.fromFunction0(Clone), ImpersonationType = ImpersonationType.asInstanceOf[js.Any], Password = Password.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IImpersonation]
   }
 }

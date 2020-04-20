@@ -16,7 +16,6 @@ object AnonManifest {
   @scala.inline
   def apply(isAvailable: `true`, manifest: Manifest): AnonManifest = {
     val __obj = js.Dynamic.literal(isAvailable = isAvailable.asInstanceOf[js.Any], manifest = manifest.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonManifest]
   }
 }

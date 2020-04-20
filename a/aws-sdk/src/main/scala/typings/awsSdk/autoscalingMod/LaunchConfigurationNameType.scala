@@ -16,7 +16,6 @@ object LaunchConfigurationNameType {
   @scala.inline
   def apply(LaunchConfigurationName: ResourceName): LaunchConfigurationNameType = {
     val __obj = js.Dynamic.literal(LaunchConfigurationName = LaunchConfigurationName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LaunchConfigurationNameType]
   }
 }

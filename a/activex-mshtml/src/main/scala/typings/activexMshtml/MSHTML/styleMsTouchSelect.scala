@@ -18,14 +18,12 @@ trait styleMsTouchSelect extends js.Object
 
 object styleMsTouchSelect {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleMsTouchSelectGrippers: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleMsTouchSelectGrippers: `0` = this.cast(0)
+  def styleMsTouchSelectNone: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleMsTouchSelectNone: `1` = this.cast(1)
+  def styleMsTouchSelectNotSet: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleMsTouchSelectNotSet: `2` = this.cast(2)
-  @scala.inline
-  def styleMsTouchSelect_Max: `2147483647` = this.cast(2147483647)
+  def styleMsTouchSelect_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

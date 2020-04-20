@@ -12,7 +12,6 @@ object AnonSchema {
   @scala.inline
   def apply(schema: js.Object): AnonSchema = {
     val __obj = js.Dynamic.literal(schema = schema.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSchema]
   }
 }

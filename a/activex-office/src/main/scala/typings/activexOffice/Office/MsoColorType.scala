@@ -22,18 +22,16 @@ trait MsoColorType extends js.Object
 
 object MsoColorType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoColorTypeCMS: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoColorTypeCMS: `4` = this.cast(4)
+  def msoColorTypeCMYK: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoColorTypeCMYK: `3` = this.cast(3)
+  def msoColorTypeInk: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def msoColorTypeInk: `5` = this.cast(5)
+  def msoColorTypeMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def msoColorTypeMixed: `-2` = this.cast(-2)
+  def msoColorTypeRGB: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoColorTypeRGB: `1` = this.cast(1)
-  @scala.inline
-  def msoColorTypeScheme: `2` = this.cast(2)
+  def msoColorTypeScheme: `2` = 2.asInstanceOf[`2`]
 }
 

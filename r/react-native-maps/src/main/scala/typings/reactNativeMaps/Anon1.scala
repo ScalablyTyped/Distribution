@@ -13,7 +13,6 @@ object Anon1 {
   @scala.inline
   def apply(action: `callout-inside-press`): Anon1 = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Anon1]
   }
 }

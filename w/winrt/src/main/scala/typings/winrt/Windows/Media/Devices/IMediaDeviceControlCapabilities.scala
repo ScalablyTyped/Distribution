@@ -24,7 +24,6 @@ object IMediaDeviceControlCapabilities {
     supported: Boolean
   ): IMediaDeviceControlCapabilities = {
     val __obj = js.Dynamic.literal(autoModeSupported = autoModeSupported.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any], supported = supported.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMediaDeviceControlCapabilities]
   }
 }

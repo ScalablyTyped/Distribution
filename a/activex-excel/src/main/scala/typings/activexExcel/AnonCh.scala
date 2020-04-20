@@ -15,7 +15,6 @@ object AnonCh {
   @scala.inline
   def apply(Ch: Chart, Wb: Workbook): AnonCh = {
     val __obj = js.Dynamic.literal(Ch = Ch.asInstanceOf[js.Any], Wb = Wb.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCh]
   }
 }

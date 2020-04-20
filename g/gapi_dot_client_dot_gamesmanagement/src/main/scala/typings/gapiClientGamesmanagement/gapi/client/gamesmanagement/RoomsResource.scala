@@ -23,7 +23,6 @@ object RoomsResource {
   @scala.inline
   def apply(reset: AnonAlt => Request_[Unit], resetForAllPlayers: AnonAlt => Request_[Unit]): RoomsResource = {
     val __obj = js.Dynamic.literal(reset = js.Any.fromFunction1(reset), resetForAllPlayers = js.Any.fromFunction1(resetForAllPlayers))
-  
     __obj.asInstanceOf[RoomsResource]
   }
 }

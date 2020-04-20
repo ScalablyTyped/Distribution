@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ember", "getWithDefault")
 @js.native
 object getWithDefault extends js.Object {
-  def apply[T, K /* <: java.lang.String */](
+  def apply[T, K /* <: /* keyof T */ java.lang.String */](
     obj: T,
     key: K,
     defaultValue: UnwrapComputedPropertyGetter[

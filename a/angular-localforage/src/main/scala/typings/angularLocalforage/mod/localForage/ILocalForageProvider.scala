@@ -13,7 +13,6 @@ object ILocalForageProvider {
   @scala.inline
   def apply(config: LocalForageConfig => Unit, setNotify: (Boolean, Boolean) => Unit): ILocalForageProvider = {
     val __obj = js.Dynamic.literal(config = js.Any.fromFunction1(config), setNotify = js.Any.fromFunction2(setNotify))
-  
     __obj.asInstanceOf[ILocalForageProvider]
   }
 }

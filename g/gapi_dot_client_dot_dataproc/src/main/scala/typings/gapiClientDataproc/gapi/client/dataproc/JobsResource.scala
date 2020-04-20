@@ -35,7 +35,6 @@ object JobsResource {
     submit: AnonAccesstoken => Request_[Job]
   ): JobsResource = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), submit = js.Any.fromFunction1(submit))
-  
     __obj.asInstanceOf[JobsResource]
   }
 }

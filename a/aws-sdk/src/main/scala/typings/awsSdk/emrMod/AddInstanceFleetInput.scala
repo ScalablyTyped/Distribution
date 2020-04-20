@@ -20,7 +20,6 @@ object AddInstanceFleetInput {
   @scala.inline
   def apply(ClusterId: XmlStringMaxLen256, InstanceFleet: InstanceFleetConfig): AddInstanceFleetInput = {
     val __obj = js.Dynamic.literal(ClusterId = ClusterId.asInstanceOf[js.Any], InstanceFleet = InstanceFleet.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddInstanceFleetInput]
   }
 }

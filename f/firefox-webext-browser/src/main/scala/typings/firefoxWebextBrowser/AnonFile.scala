@@ -14,7 +14,6 @@ object AnonFile {
   @scala.inline
   def apply(file: ExtensionURL): AnonFile = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFile]
   }
 }

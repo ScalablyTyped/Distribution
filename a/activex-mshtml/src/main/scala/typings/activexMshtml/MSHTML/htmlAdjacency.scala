@@ -20,16 +20,14 @@ trait htmlAdjacency extends js.Object
 
 object htmlAdjacency {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def htmlAdjacencyAfterBegin: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def htmlAdjacencyAfterBegin: `2` = this.cast(2)
+  def htmlAdjacencyAfterEnd: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def htmlAdjacencyAfterEnd: `4` = this.cast(4)
+  def htmlAdjacencyBeforeBegin: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def htmlAdjacencyBeforeBegin: `1` = this.cast(1)
+  def htmlAdjacencyBeforeEnd: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def htmlAdjacencyBeforeEnd: `3` = this.cast(3)
-  @scala.inline
-  def htmlAdjacency_Max: `2147483647` = this.cast(2147483647)
+  def htmlAdjacency_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

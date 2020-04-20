@@ -26,9 +26,9 @@ class OfflineSchemaFetchInstruction protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FOfflineSchemaFetchInstruction: IModel = js.native
-  def tableName(): String = js.native
+  def tableName: String = js.native
   def tableName(newValue: String): js.Any = js.native
-  def xPath(): String = js.native
+  def xPath: String = js.native
   def xPath(newValue: String): js.Any = js.native
 }
 

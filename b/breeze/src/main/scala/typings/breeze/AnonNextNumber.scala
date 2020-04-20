@@ -14,7 +14,6 @@ object AnonNextNumber {
   @scala.inline
   def apply(nextNumber: Double, nextNumberIncrement: Double, stringPrefix: String): AnonNextNumber = {
     val __obj = js.Dynamic.literal(nextNumber = nextNumber.asInstanceOf[js.Any], nextNumberIncrement = nextNumberIncrement.asInstanceOf[js.Any], stringPrefix = stringPrefix.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNextNumber]
   }
 }

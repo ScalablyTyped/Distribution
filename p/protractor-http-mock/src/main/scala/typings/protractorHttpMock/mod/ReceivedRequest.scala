@@ -17,7 +17,6 @@ object ReceivedRequest {
   @scala.inline
   def apply(method: Method, url: String): ReceivedRequest = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReceivedRequest]
   }
 }

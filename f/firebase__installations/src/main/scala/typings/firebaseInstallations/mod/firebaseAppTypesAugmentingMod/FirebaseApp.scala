@@ -13,7 +13,6 @@ object FirebaseApp {
   @scala.inline
   def apply(installations: () => FirebaseInstallations): FirebaseApp = {
     val __obj = js.Dynamic.literal(installations = js.Any.fromFunction0(installations))
-  
     __obj.asInstanceOf[FirebaseApp]
   }
 }

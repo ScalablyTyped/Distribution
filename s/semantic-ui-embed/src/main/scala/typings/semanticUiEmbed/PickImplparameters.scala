@@ -15,7 +15,6 @@ object PickImplparameters {
   @scala.inline
   def apply(parameters: `false` | ParametersSettings): PickImplparameters = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplparameters]
   }
 }

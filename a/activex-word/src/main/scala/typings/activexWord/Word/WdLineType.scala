@@ -14,10 +14,8 @@ trait WdLineType extends js.Object
 
 object WdLineType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdTableRow: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdTableRow: `1` = this.cast(1)
-  @scala.inline
-  def wdTextLine: `0` = this.cast(0)
+  def wdTextLine: `0` = 0.asInstanceOf[`0`]
 }
 

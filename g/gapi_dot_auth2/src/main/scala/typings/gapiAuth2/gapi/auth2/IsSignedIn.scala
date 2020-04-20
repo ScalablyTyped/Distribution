@@ -19,7 +19,6 @@ object IsSignedIn {
   @scala.inline
   def apply(get: () => Boolean, listen: js.Function1[/* signedIn */ Boolean, _] => Unit): IsSignedIn = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get), listen = js.Any.fromFunction1(listen))
-  
     __obj.asInstanceOf[IsSignedIn]
   }
 }

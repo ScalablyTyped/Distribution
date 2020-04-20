@@ -17,7 +17,6 @@ object Request {
   @scala.inline
   def apply(progress: () => Progress): Request = {
     val __obj = js.Dynamic.literal(progress = js.Any.fromFunction0(progress))
-  
     __obj.asInstanceOf[Request]
   }
 }

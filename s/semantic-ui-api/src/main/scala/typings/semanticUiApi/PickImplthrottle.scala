@@ -13,7 +13,6 @@ object PickImplthrottle {
   @scala.inline
   def apply(throttle: Double): PickImplthrottle = {
     val __obj = js.Dynamic.literal(throttle = throttle.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplthrottle]
   }
 }

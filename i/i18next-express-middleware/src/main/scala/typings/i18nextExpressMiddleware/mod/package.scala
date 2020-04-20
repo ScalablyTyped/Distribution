@@ -8,7 +8,12 @@ package object mod {
   type App = typings.express.mod.Application_ | typings.express.mod.Router
   type I18next = typings.i18next.mod.i18n
   type IgnoreRoutesFunction = js.Function4[
-    /* req */ typings.express.mod.Request_[typings.expressServeStaticCore.mod.ParamsDictionary], 
+    /* req */ typings.express.mod.Request_[
+      typings.expressServeStaticCore.mod.ParamsDictionary, 
+      js.Any, 
+      js.Any, 
+      typings.expressServeStaticCore.mod.Query
+    ], 
     /* res */ typings.express.mod.Response_[js.Any], 
     /* options */ typings.i18nextExpressMiddleware.mod.HandleOptions, 
     /* i18next */ typings.i18nextExpressMiddleware.mod.I18next, 

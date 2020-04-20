@@ -36,7 +36,6 @@ object ProductsResource {
     list: AnonIncludeInvalidInsertedItems => Request_[ProductsListResponse]
   ): ProductsResource = {
     val __obj = js.Dynamic.literal(custombatch = js.Any.fromFunction1(custombatch), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[ProductsResource]
   }
 }

@@ -14,14 +14,12 @@ trait SsmlVoiceGender extends js.Object
 
 object SsmlVoiceGender {
   @scala.inline
-  def FEMALE: typings.googleCloudTextToSpeech.googleCloudTextToSpeechStrings.FEMALE = this.cast("FEMALE")
+  def FEMALE: typings.googleCloudTextToSpeech.googleCloudTextToSpeechStrings.FEMALE = "FEMALE".asInstanceOf[typings.googleCloudTextToSpeech.googleCloudTextToSpeechStrings.FEMALE]
   @scala.inline
-  def MALE: typings.googleCloudTextToSpeech.googleCloudTextToSpeechStrings.MALE = this.cast("MALE")
+  def MALE: typings.googleCloudTextToSpeech.googleCloudTextToSpeechStrings.MALE = "MALE".asInstanceOf[typings.googleCloudTextToSpeech.googleCloudTextToSpeechStrings.MALE]
   @scala.inline
-  def NEUTRAL: typings.googleCloudTextToSpeech.googleCloudTextToSpeechStrings.NEUTRAL = this.cast("NEUTRAL")
+  def NEUTRAL: typings.googleCloudTextToSpeech.googleCloudTextToSpeechStrings.NEUTRAL = "NEUTRAL".asInstanceOf[typings.googleCloudTextToSpeech.googleCloudTextToSpeechStrings.NEUTRAL]
   @scala.inline
-  def SSML_VOICE_GENDER_UNSPECIFIED: typings.googleCloudTextToSpeech.googleCloudTextToSpeechStrings.SSML_VOICE_GENDER_UNSPECIFIED = this.cast("SSML_VOICE_GENDER_UNSPECIFIED")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SSML_VOICE_GENDER_UNSPECIFIED: typings.googleCloudTextToSpeech.googleCloudTextToSpeechStrings.SSML_VOICE_GENDER_UNSPECIFIED = "SSML_VOICE_GENDER_UNSPECIFIED".asInstanceOf[typings.googleCloudTextToSpeech.googleCloudTextToSpeechStrings.SSML_VOICE_GENDER_UNSPECIFIED]
 }
 

@@ -20,7 +20,6 @@ object DescribeDeviceRequest {
   @scala.inline
   def apply(DeviceId: Id, FleetArn: FleetArn): DescribeDeviceRequest = {
     val __obj = js.Dynamic.literal(DeviceId = DeviceId.asInstanceOf[js.Any], FleetArn = FleetArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeDeviceRequest]
   }
 }

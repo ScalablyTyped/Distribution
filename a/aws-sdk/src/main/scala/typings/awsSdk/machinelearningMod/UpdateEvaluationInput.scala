@@ -20,7 +20,6 @@ object UpdateEvaluationInput {
   @scala.inline
   def apply(EvaluationId: EntityId, EvaluationName: EntityName): UpdateEvaluationInput = {
     val __obj = js.Dynamic.literal(EvaluationId = EvaluationId.asInstanceOf[js.Any], EvaluationName = EvaluationName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateEvaluationInput]
   }
 }

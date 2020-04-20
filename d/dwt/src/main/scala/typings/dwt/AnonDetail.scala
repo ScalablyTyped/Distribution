@@ -13,7 +13,6 @@ object AnonDetail {
   @scala.inline
   def apply(Detail: js.Array[LicenseDetailItem], Domain: String): AnonDetail = {
     val __obj = js.Dynamic.literal(Detail = Detail.asInstanceOf[js.Any], Domain = Domain.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDetail]
   }
 }

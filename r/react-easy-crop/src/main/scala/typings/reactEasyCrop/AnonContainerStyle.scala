@@ -15,7 +15,6 @@ object AnonContainerStyle {
   @scala.inline
   def apply(containerStyle: CSSProperties, cropAreaStyle: CSSProperties, imageStyle: CSSProperties): AnonContainerStyle = {
     val __obj = js.Dynamic.literal(containerStyle = containerStyle.asInstanceOf[js.Any], cropAreaStyle = cropAreaStyle.asInstanceOf[js.Any], imageStyle = imageStyle.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonContainerStyle]
   }
 }

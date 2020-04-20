@@ -27,7 +27,6 @@ object IFolderListingColumn {
     Width: Double
   ): IFolderListingColumn = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Flags = Flags.asInstanceOf[js.Any], ID = ID.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Position = Position.asInstanceOf[js.Any], Visible = Visible.asInstanceOf[js.Any], Width = Width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IFolderListingColumn]
   }
 }

@@ -13,7 +13,6 @@ object SynthesizeSpeechResponse {
   @scala.inline
   def apply(audioContent: Buffer): SynthesizeSpeechResponse = {
     val __obj = js.Dynamic.literal(audioContent = audioContent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SynthesizeSpeechResponse]
   }
 }

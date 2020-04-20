@@ -23,7 +23,6 @@ object MDCIconButtonToggleAdapter {
     setAttr: (String, String) => Unit
   ): MDCIconButtonToggleAdapter = {
     val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), hasClass = js.Any.fromFunction1(hasClass), notifyChange = js.Any.fromFunction1(notifyChange), removeClass = js.Any.fromFunction1(removeClass), setAttr = js.Any.fromFunction2(setAttr))
-  
     __obj.asInstanceOf[MDCIconButtonToggleAdapter]
   }
 }

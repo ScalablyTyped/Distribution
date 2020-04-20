@@ -14,7 +14,6 @@ object BinaryInforamtion {
   @scala.inline
   def apply(ref: String, value: ProtectedValue | ArrayBuffer): BinaryInforamtion = {
     val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BinaryInforamtion]
   }
 }

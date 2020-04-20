@@ -21,7 +21,6 @@ object FrameObject {
   @scala.inline
   def apply(texture: Texture, time: Double): FrameObject = {
     val __obj = js.Dynamic.literal(texture = texture.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FrameObject]
   }
 }

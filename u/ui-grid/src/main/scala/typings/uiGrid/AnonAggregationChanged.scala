@@ -29,7 +29,6 @@ object AnonAggregationChanged {
     groupingChanged: (IScope, groupingChangedHandler[TEntity]) => Unit
   ): AnonAggregationChanged[TEntity] = {
     val __obj = js.Dynamic.literal(aggregationChanged = js.Any.fromFunction2(aggregationChanged), groupingChanged = js.Any.fromFunction2(groupingChanged))
-  
     __obj.asInstanceOf[AnonAggregationChanged[TEntity]]
   }
 }

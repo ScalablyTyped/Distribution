@@ -3,9 +3,9 @@ package typings.vscodeLanguageclient.semanticTokensProposedMod
 import typings.vscode.mod.CancellationToken
 import typings.vscode.mod.ProviderResult
 import typings.vscode.mod.Range
+import typings.vscode.mod.SemanticTokens
+import typings.vscode.mod.SemanticTokensEdits
 import typings.vscode.mod.TextDocument
-import typings.vscodeLanguageclient.semanticTokensProposedMod.vscodeAugmentingMod.SemanticTokens
-import typings.vscodeLanguageclient.semanticTokensProposedMod.vscodeAugmentingMod.SemanticTokensEdits
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

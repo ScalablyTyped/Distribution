@@ -17,7 +17,6 @@ object SetLocalConsolePasswordInput {
   @scala.inline
   def apply(GatewayARN: GatewayARN, LocalConsolePassword: LocalConsolePassword): SetLocalConsolePasswordInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN.asInstanceOf[js.Any], LocalConsolePassword = LocalConsolePassword.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetLocalConsolePasswordInput]
   }
 }

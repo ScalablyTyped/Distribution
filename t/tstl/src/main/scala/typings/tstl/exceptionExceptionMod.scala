@@ -24,7 +24,7 @@ object exceptionExceptionMod extends js.Object {
       * The error name.
       */
     @JSName("name")
-    def name_MException(): String = js.native
+    def name_MException: String = js.native
     /**
       * Native function for `JSON.stringify()`.
       *

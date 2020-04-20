@@ -24,7 +24,6 @@ object MouseEvent {
     webkitMovementY: Double
   ): MouseEvent = {
     val __obj = js.Dynamic.literal(mozMovementX = mozMovementX.asInstanceOf[js.Any], mozMovementY = mozMovementY.asInstanceOf[js.Any], msMovementX = msMovementX.asInstanceOf[js.Any], msMovementY = msMovementY.asInstanceOf[js.Any], webkitMovementX = webkitMovementX.asInstanceOf[js.Any], webkitMovementY = webkitMovementY.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MouseEvent]
   }
 }

@@ -13,7 +13,6 @@ object ImageTabACTL {
   @scala.inline
   def apply(num_frames: Double, num_plays: Double): ImageTabACTL = {
     val __obj = js.Dynamic.literal(num_frames = num_frames.asInstanceOf[js.Any], num_plays = num_plays.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ImageTabACTL]
   }
 }

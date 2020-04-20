@@ -22,7 +22,6 @@ object TextEditorComponent {
     screenPositionForPixelPosition: PixelPosition => Point
   ): TextEditorComponent = {
     val __obj = js.Dynamic.literal(pixelPositionForMouseEvent = js.Any.fromFunction1(pixelPositionForMouseEvent), pixelPositionForScreenPosition = js.Any.fromFunction1(pixelPositionForScreenPosition), screenPositionForMouseEvent = js.Any.fromFunction1(screenPositionForMouseEvent), screenPositionForPixelPosition = js.Any.fromFunction1(screenPositionForPixelPosition))
-  
     __obj.asInstanceOf[TextEditorComponent]
   }
 }

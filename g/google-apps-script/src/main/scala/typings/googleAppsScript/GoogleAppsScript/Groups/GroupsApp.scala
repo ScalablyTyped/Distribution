@@ -27,7 +27,6 @@ object GroupsApp {
     getGroups: () => js.Array[Group]
   ): GroupsApp = {
     val __obj = js.Dynamic.literal(Role = Role.asInstanceOf[js.Any], getGroupByEmail = js.Any.fromFunction1(getGroupByEmail), getGroups = js.Any.fromFunction0(getGroups))
-  
     __obj.asInstanceOf[GroupsApp]
   }
 }

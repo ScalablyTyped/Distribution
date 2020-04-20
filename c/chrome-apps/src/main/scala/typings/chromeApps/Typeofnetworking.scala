@@ -41,7 +41,6 @@ object Typeofnetworking {
   @scala.inline
   def apply(config: Typeofconfig, onc: Typeofonc): Typeofnetworking = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], onc = onc.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Typeofnetworking]
   }
 }

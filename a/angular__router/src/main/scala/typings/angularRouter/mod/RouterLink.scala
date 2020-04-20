@@ -29,6 +29,6 @@ class RouterLink protected () extends js.Object {
   def preserveQueryParams(value: Boolean): js.Any = js.native
   def routerLink(commands: String): js.Any = js.native
   def routerLink(commands: js.Array[_]): js.Any = js.native
-  def urlTree(): UrlTree = js.native
+  def urlTree: UrlTree = js.native
 }
 

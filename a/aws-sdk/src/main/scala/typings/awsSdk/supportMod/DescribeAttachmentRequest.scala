@@ -16,7 +16,6 @@ object DescribeAttachmentRequest {
   @scala.inline
   def apply(attachmentId: AttachmentId): DescribeAttachmentRequest = {
     val __obj = js.Dynamic.literal(attachmentId = attachmentId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeAttachmentRequest]
   }
 }

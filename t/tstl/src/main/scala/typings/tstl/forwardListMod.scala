@@ -65,7 +65,7 @@ object forwardListMod extends js.Object {
     /**
       * @inheritDoc
       */
-    @JSName(scala.scalajs.js.Symbol.iterator)
+    @JSName(js.Symbol.iterator)
     var iterator_ForwardList: js.Function0[IterableIterator[T]] = js.native
     var ptr_ : js.Any = js.native
     var size_ : js.Any = js.native
@@ -226,7 +226,7 @@ object forwardListMod extends js.Object {
         * @inheritDoc
         */
       @JSName("value")
-      def value_MIterator(): T = js.native
+      def value_MIterator: T = js.native
       /**
         * @inheritDoc
         */

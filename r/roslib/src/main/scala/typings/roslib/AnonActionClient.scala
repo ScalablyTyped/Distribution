@@ -14,7 +14,6 @@ object AnonActionClient {
   @scala.inline
   def apply(actionClient: ActionClient, goalMessage: js.Any): AnonActionClient = {
     val __obj = js.Dynamic.literal(actionClient = actionClient.asInstanceOf[js.Any], goalMessage = goalMessage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonActionClient]
   }
 }

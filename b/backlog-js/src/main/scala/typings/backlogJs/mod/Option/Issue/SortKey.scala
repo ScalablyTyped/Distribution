@@ -29,44 +29,42 @@ trait SortKey extends js.Object
 
 object SortKey {
   @scala.inline
-  def actualHours: typings.backlogJs.backlogJsStrings.actualHours = this.cast("actualHours")
+  def actualHours: typings.backlogJs.backlogJsStrings.actualHours = "actualHours".asInstanceOf[typings.backlogJs.backlogJsStrings.actualHours]
   @scala.inline
-  def assignee: typings.backlogJs.backlogJsStrings.assignee = this.cast("assignee")
+  def assignee: typings.backlogJs.backlogJsStrings.assignee = "assignee".asInstanceOf[typings.backlogJs.backlogJsStrings.assignee]
   @scala.inline
-  def attachment: typings.backlogJs.backlogJsStrings.attachment = this.cast("attachment")
+  def attachment: typings.backlogJs.backlogJsStrings.attachment = "attachment".asInstanceOf[typings.backlogJs.backlogJsStrings.attachment]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def category: typings.backlogJs.backlogJsStrings.category = "category".asInstanceOf[typings.backlogJs.backlogJsStrings.category]
   @scala.inline
-  def category: typings.backlogJs.backlogJsStrings.category = this.cast("category")
+  def childIssue: typings.backlogJs.backlogJsStrings.childIssue = "childIssue".asInstanceOf[typings.backlogJs.backlogJsStrings.childIssue]
   @scala.inline
-  def childIssue: typings.backlogJs.backlogJsStrings.childIssue = this.cast("childIssue")
+  def created: typings.backlogJs.backlogJsStrings.created = "created".asInstanceOf[typings.backlogJs.backlogJsStrings.created]
   @scala.inline
-  def created: typings.backlogJs.backlogJsStrings.created = this.cast("created")
+  def createdUser: typings.backlogJs.backlogJsStrings.createdUser = "createdUser".asInstanceOf[typings.backlogJs.backlogJsStrings.createdUser]
   @scala.inline
-  def createdUser: typings.backlogJs.backlogJsStrings.createdUser = this.cast("createdUser")
+  def dueDate: typings.backlogJs.backlogJsStrings.dueDate = "dueDate".asInstanceOf[typings.backlogJs.backlogJsStrings.dueDate]
   @scala.inline
-  def dueDate: typings.backlogJs.backlogJsStrings.dueDate = this.cast("dueDate")
+  def estimatedHours: typings.backlogJs.backlogJsStrings.estimatedHours = "estimatedHours".asInstanceOf[typings.backlogJs.backlogJsStrings.estimatedHours]
   @scala.inline
-  def estimatedHours: typings.backlogJs.backlogJsStrings.estimatedHours = this.cast("estimatedHours")
+  def issueType: typings.backlogJs.backlogJsStrings.issueType = "issueType".asInstanceOf[typings.backlogJs.backlogJsStrings.issueType]
   @scala.inline
-  def issueType: typings.backlogJs.backlogJsStrings.issueType = this.cast("issueType")
+  def milestone: typings.backlogJs.backlogJsStrings.milestone = "milestone".asInstanceOf[typings.backlogJs.backlogJsStrings.milestone]
   @scala.inline
-  def milestone: typings.backlogJs.backlogJsStrings.milestone = this.cast("milestone")
+  def priority: typings.backlogJs.backlogJsStrings.priority = "priority".asInstanceOf[typings.backlogJs.backlogJsStrings.priority]
   @scala.inline
-  def priority: typings.backlogJs.backlogJsStrings.priority = this.cast("priority")
+  def sharedFile: typings.backlogJs.backlogJsStrings.sharedFile = "sharedFile".asInstanceOf[typings.backlogJs.backlogJsStrings.sharedFile]
   @scala.inline
-  def sharedFile: typings.backlogJs.backlogJsStrings.sharedFile = this.cast("sharedFile")
+  def startDate: typings.backlogJs.backlogJsStrings.startDate = "startDate".asInstanceOf[typings.backlogJs.backlogJsStrings.startDate]
   @scala.inline
-  def startDate: typings.backlogJs.backlogJsStrings.startDate = this.cast("startDate")
+  def status: typings.backlogJs.backlogJsStrings.status = "status".asInstanceOf[typings.backlogJs.backlogJsStrings.status]
   @scala.inline
-  def status: typings.backlogJs.backlogJsStrings.status = this.cast("status")
+  def summary: typings.backlogJs.backlogJsStrings.summary = "summary".asInstanceOf[typings.backlogJs.backlogJsStrings.summary]
   @scala.inline
-  def summary: typings.backlogJs.backlogJsStrings.summary = this.cast("summary")
+  def updated: typings.backlogJs.backlogJsStrings.updated = "updated".asInstanceOf[typings.backlogJs.backlogJsStrings.updated]
   @scala.inline
-  def updated: typings.backlogJs.backlogJsStrings.updated = this.cast("updated")
+  def updatedUser: typings.backlogJs.backlogJsStrings.updatedUser = "updatedUser".asInstanceOf[typings.backlogJs.backlogJsStrings.updatedUser]
   @scala.inline
-  def updatedUser: typings.backlogJs.backlogJsStrings.updatedUser = this.cast("updatedUser")
-  @scala.inline
-  def version: typings.backlogJs.backlogJsStrings.version = this.cast("version")
+  def version: typings.backlogJs.backlogJsStrings.version = "version".asInstanceOf[typings.backlogJs.backlogJsStrings.version]
 }
 

@@ -16,7 +16,6 @@ object DeleteSecurityConfigurationRequest {
   @scala.inline
   def apply(Name: NameString): DeleteSecurityConfigurationRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteSecurityConfigurationRequest]
   }
 }

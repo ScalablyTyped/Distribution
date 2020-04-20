@@ -13,7 +13,6 @@ object Values {
   @scala.inline
   def apply[T](define: Schema_[_] => Unit): Values[T] = {
     val __obj = js.Dynamic.literal(define = js.Any.fromFunction1(define))
-  
     __obj.asInstanceOf[Values[T]]
   }
 }

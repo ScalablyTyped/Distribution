@@ -15,7 +15,17 @@ import scala.scalajs.js.annotation._
 @JSImport("baseui", "styled")
 @js.native
 object styled_feColorMatrix extends js.Object {
-  def apply[P /* <: js.Object */, T](component: feColorMatrix, styledFn: js.Function1[/* props */ AnonTheme[T] with P, StyleObject]): StyletronComponent[(Pick[ComponentProps[feColorMatrix], Exclude[String, AnonClassName]]) with P] = js.native
-  def apply[P /* <: js.Object */, T](component: feColorMatrix, styledFn: StyleObject): StyletronComponent[(Pick[ComponentProps[feColorMatrix], Exclude[String, AnonClassName]]) with P] = js.native
+  def apply[P /* <: js.Object */, T](component: feColorMatrix, styledFn: js.Function1[/* props */ AnonTheme[T] with P, StyleObject]): StyletronComponent[
+    (Pick[
+      ComponentProps[feColorMatrix], 
+      Exclude[/* keyof react.react.ComponentProps<'feColorMatrix'> */ String, AnonClassName]
+    ]) with P
+  ] = js.native
+  def apply[P /* <: js.Object */, T](component: feColorMatrix, styledFn: StyleObject): StyletronComponent[
+    (Pick[
+      ComponentProps[feColorMatrix], 
+      Exclude[/* keyof react.react.ComponentProps<'feColorMatrix'> */ String, AnonClassName]
+    ]) with P
+  ] = js.native
 }
 

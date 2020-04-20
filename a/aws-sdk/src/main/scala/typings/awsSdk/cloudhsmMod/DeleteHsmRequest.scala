@@ -16,7 +16,6 @@ object DeleteHsmRequest {
   @scala.inline
   def apply(HsmArn: HsmArn): DeleteHsmRequest = {
     val __obj = js.Dynamic.literal(HsmArn = HsmArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteHsmRequest]
   }
 }

@@ -13,7 +13,6 @@ object TypeofEC2InstanceConnect {
   @scala.inline
   def apply(Types: TypeofEC2InstanceConnect): TypeofEC2InstanceConnect = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofEC2InstanceConnect]
   }
 }

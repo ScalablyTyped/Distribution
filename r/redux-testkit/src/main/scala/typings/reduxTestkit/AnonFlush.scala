@@ -13,7 +13,6 @@ object AnonFlush {
   @scala.inline
   def apply(flush: () => Unit, reset: () => Unit): AnonFlush = {
     val __obj = js.Dynamic.literal(flush = js.Any.fromFunction0(flush), reset = js.Any.fromFunction0(reset))
-  
     __obj.asInstanceOf[AnonFlush]
   }
 }

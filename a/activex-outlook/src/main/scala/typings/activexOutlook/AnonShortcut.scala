@@ -17,7 +17,6 @@ object AnonShortcut {
     Shortcut: OutlookBarShortcut
   ): AnonShortcut = {
     val __obj = js.Dynamic.literal(CommandBar = CommandBar.asInstanceOf[js.Any], Shortcut = Shortcut.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonShortcut]
   }
 }

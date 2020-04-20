@@ -12,7 +12,6 @@ object IUniform {
   @scala.inline
   def apply(value: js.Any): IUniform = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IUniform]
   }
 }

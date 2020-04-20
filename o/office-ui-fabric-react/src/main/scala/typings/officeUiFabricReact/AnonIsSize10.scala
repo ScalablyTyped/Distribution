@@ -36,7 +36,6 @@ object AnonIsSize10 {
     isSize8: Boolean
   ): AnonIsSize10 = {
     val __obj = js.Dynamic.literal(isSize10 = isSize10.asInstanceOf[js.Any], isSize100 = isSize100.asInstanceOf[js.Any], isSize120 = isSize120.asInstanceOf[js.Any], isSize16 = isSize16.asInstanceOf[js.Any], isSize24 = isSize24.asInstanceOf[js.Any], isSize28 = isSize28.asInstanceOf[js.Any], isSize32 = isSize32.asInstanceOf[js.Any], isSize40 = isSize40.asInstanceOf[js.Any], isSize48 = isSize48.asInstanceOf[js.Any], isSize56 = isSize56.asInstanceOf[js.Any], isSize72 = isSize72.asInstanceOf[js.Any], isSize8 = isSize8.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsSize10]
   }
 }

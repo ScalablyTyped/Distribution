@@ -21,7 +21,6 @@ object LogServiceArgs {
   @scala.inline
   def apply(directoryId: Input[String], logGroupName: Input[String]): LogServiceArgs = {
     val __obj = js.Dynamic.literal(directoryId = directoryId.asInstanceOf[js.Any], logGroupName = logGroupName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LogServiceArgs]
   }
 }

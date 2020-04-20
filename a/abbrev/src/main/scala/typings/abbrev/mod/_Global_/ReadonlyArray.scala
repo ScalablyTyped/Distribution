@@ -13,7 +13,6 @@ object ReadonlyArray {
   @scala.inline
   def apply[T](abbrev: () => StringDictionary[String]): ReadonlyArray[T] = {
     val __obj = js.Dynamic.literal(abbrev = js.Any.fromFunction0(abbrev))
-  
     __obj.asInstanceOf[ReadonlyArray[T]]
   }
 }

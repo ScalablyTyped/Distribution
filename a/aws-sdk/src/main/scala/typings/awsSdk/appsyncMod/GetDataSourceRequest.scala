@@ -20,7 +20,6 @@ object GetDataSourceRequest {
   @scala.inline
   def apply(apiId: String, name: ResourceName): GetDataSourceRequest = {
     val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDataSourceRequest]
   }
 }

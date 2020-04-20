@@ -21,8 +21,8 @@ object configurationMod extends js.Object {
   /* static members */
   @js.native
   object Configuration extends js.Object {
-    def backoffConfigDefault(): js.Any = js.native
-    def retryWhenThrottledDefault(): Boolean = js.native
+    def backoffConfigDefault: js.Any = js.native
+    def retryWhenThrottledDefault: Boolean = js.native
   }
   
 }

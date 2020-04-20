@@ -37,32 +37,30 @@ trait ChannelOrder extends js.Object
 
 object ChannelOrder {
   @scala.inline
-  def A: `0x10B1` = this.cast(0x10B1)
+  def A: `0x10B1` = 0x10B1.asInstanceOf[`0x10B1`]
   @scala.inline
-  def ARGB: `0x10B7` = this.cast(0x10B7)
+  def ARGB: `0x10B7` = 0x10B7.asInstanceOf[`0x10B7`]
   @scala.inline
-  def BGRA: `0x10B6` = this.cast(0x10B6)
+  def BGRA: `0x10B6` = 0x10B6.asInstanceOf[`0x10B6`]
   @scala.inline
-  def INTENSITY: `0x10B8` = this.cast(0x10B8)
+  def INTENSITY: `0x10B8` = 0x10B8.asInstanceOf[`0x10B8`]
   @scala.inline
-  def LUMINANCE: `0x10B9` = this.cast(0x10B9)
+  def LUMINANCE: `0x10B9` = 0x10B9.asInstanceOf[`0x10B9`]
   @scala.inline
-  def R: `0x10B0` = this.cast(0x10B0)
+  def R: `0x10B0` = 0x10B0.asInstanceOf[`0x10B0`]
   @scala.inline
-  def RA: `0x10B3` = this.cast(0x10B3)
+  def RA: `0x10B3` = 0x10B3.asInstanceOf[`0x10B3`]
   @scala.inline
-  def RG: `0x10B2` = this.cast(0x10B2)
+  def RG: `0x10B2` = 0x10B2.asInstanceOf[`0x10B2`]
   @scala.inline
-  def RGB: `0x10B4` = this.cast(0x10B4)
+  def RGB: `0x10B4` = 0x10B4.asInstanceOf[`0x10B4`]
   @scala.inline
-  def RGBA: `0x10B5` = this.cast(0x10B5)
+  def RGBA: `0x10B5` = 0x10B5.asInstanceOf[`0x10B5`]
   @scala.inline
-  def RGBx: `0x10BC` = this.cast(0x10BC)
+  def RGBx: `0x10BC` = 0x10BC.asInstanceOf[`0x10BC`]
   @scala.inline
-  def RGx: `0x10BB` = this.cast(0x10BB)
+  def RGx: `0x10BB` = 0x10BB.asInstanceOf[`0x10BB`]
   @scala.inline
-  def Rx: `0x10BA` = this.cast(0x10BA)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Rx: `0x10BA` = 0x10BA.asInstanceOf[`0x10BA`]
 }
 

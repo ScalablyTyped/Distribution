@@ -14,14 +14,12 @@ trait MentionConfig extends js.Object
 
 object MentionConfig {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `false`: typings.autolinker.autolinkerBooleans.`false` = false.asInstanceOf[typings.autolinker.autolinkerBooleans.`false`]
   @scala.inline
-  def `false`: typings.autolinker.autolinkerBooleans.`false` = this.cast(false)
+  def instagram: typings.autolinker.autolinkerStrings.instagram = "instagram".asInstanceOf[typings.autolinker.autolinkerStrings.instagram]
   @scala.inline
-  def instagram: typings.autolinker.autolinkerStrings.instagram = this.cast("instagram")
+  def soundcloud: typings.autolinker.autolinkerStrings.soundcloud = "soundcloud".asInstanceOf[typings.autolinker.autolinkerStrings.soundcloud]
   @scala.inline
-  def soundcloud: typings.autolinker.autolinkerStrings.soundcloud = this.cast("soundcloud")
-  @scala.inline
-  def twitter: typings.autolinker.autolinkerStrings.twitter = this.cast("twitter")
+  def twitter: typings.autolinker.autolinkerStrings.twitter = "twitter".asInstanceOf[typings.autolinker.autolinkerStrings.twitter]
 }
 

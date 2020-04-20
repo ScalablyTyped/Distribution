@@ -18,7 +18,6 @@ object User {
   @scala.inline
   def apply(read: () => js.Promise[Response]): User = {
     val __obj = js.Dynamic.literal(read = js.Any.fromFunction0(read))
-  
     __obj.asInstanceOf[User]
   }
 }

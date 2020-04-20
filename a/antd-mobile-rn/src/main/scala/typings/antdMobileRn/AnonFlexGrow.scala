@@ -22,7 +22,6 @@ object AnonFlexGrow {
     paddingLeft: Double
   ): AnonFlexGrow = {
     val __obj = js.Dynamic.literal(alignItems = alignItems.asInstanceOf[js.Any], backgroundColor = backgroundColor.asInstanceOf[js.Any], flexDirection = flexDirection.asInstanceOf[js.Any], flexGrow = flexGrow.asInstanceOf[js.Any], paddingLeft = paddingLeft.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFlexGrow]
   }
 }

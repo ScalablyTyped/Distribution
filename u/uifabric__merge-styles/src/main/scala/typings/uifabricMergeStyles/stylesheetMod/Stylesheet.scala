@@ -1,5 +1,6 @@
 package typings.uifabricMergeStyles.stylesheetMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.uifabricMergeStyles.istyleMod.IStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -44,6 +45,10 @@ class Stylesheet () extends js.Object {
     */
   def getClassName(): String = js.native
   def getClassName(displayName: String): String = js.native
+  /**
+    * Gets all classnames cache with the stylesheet.
+    */
+  def getClassNameCache(): StringDictionary[String] = js.native
   /**
     * Gets all rules registered with the stylesheet; only valid when
     * using InsertionMode.none.

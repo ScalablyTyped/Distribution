@@ -24,7 +24,6 @@ object StreamingLoggingConfig {
   @scala.inline
   def apply(Bucket: String, Enabled: Boolean, Prefix: String): StreamingLoggingConfig = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any], Prefix = Prefix.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StreamingLoggingConfig]
   }
 }

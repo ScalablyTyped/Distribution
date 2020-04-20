@@ -19,7 +19,6 @@ object INotify {
   @scala.inline
   def apply(close: () => Unit, message: String): INotify = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), message = message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INotify]
   }
 }

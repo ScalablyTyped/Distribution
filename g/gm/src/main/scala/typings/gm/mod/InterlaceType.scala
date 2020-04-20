@@ -14,14 +14,12 @@ trait InterlaceType extends js.Object
 
 object InterlaceType {
   @scala.inline
-  def Line: typings.gm.gmStrings.Line = this.cast("Line")
+  def Line: typings.gm.gmStrings.Line = "Line".asInstanceOf[typings.gm.gmStrings.Line]
   @scala.inline
-  def None: typings.gm.gmStrings.None = this.cast("None")
+  def None: typings.gm.gmStrings.None = "None".asInstanceOf[typings.gm.gmStrings.None]
   @scala.inline
-  def Partition: typings.gm.gmStrings.Partition = this.cast("Partition")
+  def Partition: typings.gm.gmStrings.Partition = "Partition".asInstanceOf[typings.gm.gmStrings.Partition]
   @scala.inline
-  def Plane: typings.gm.gmStrings.Plane = this.cast("Plane")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Plane: typings.gm.gmStrings.Plane = "Plane".asInstanceOf[typings.gm.gmStrings.Plane]
 }
 

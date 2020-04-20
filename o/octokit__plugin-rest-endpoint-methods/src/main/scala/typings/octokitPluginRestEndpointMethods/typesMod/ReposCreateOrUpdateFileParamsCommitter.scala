@@ -19,7 +19,6 @@ object ReposCreateOrUpdateFileParamsCommitter {
   @scala.inline
   def apply(email: String, name: String): ReposCreateOrUpdateFileParamsCommitter = {
     val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReposCreateOrUpdateFileParamsCommitter]
   }
 }

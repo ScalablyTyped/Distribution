@@ -15,7 +15,6 @@ object AnonCoordinate {
   @scala.inline
   def apply(annotation: Annotation, coordinate: Coordinate): AnonCoordinate = {
     val __obj = js.Dynamic.literal(annotation = annotation.asInstanceOf[js.Any], coordinate = coordinate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCoordinate]
   }
 }

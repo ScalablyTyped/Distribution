@@ -55,7 +55,6 @@ object TypeofcontextualIdentitie {
     update: (String, AnonIcon) => js.Promise[ContextualIdentity]
   ): TypeofcontextualIdentitie = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get), onCreated = onCreated.asInstanceOf[js.Any], onRemoved = onRemoved.asInstanceOf[js.Any], onUpdated = onUpdated.asInstanceOf[js.Any], query = js.Any.fromFunction1(query), remove = js.Any.fromFunction1(remove), update = js.Any.fromFunction2(update))
-  
     __obj.asInstanceOf[TypeofcontextualIdentitie]
   }
 }

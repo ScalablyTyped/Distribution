@@ -13,7 +13,6 @@ object DeploymentMachine {
   @scala.inline
   def apply(agent: TaskAgentReference, tags: js.Array[String]): DeploymentMachine = {
     val __obj = js.Dynamic.literal(agent = agent.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeploymentMachine]
   }
 }

@@ -13,7 +13,6 @@ object SignedPostPolicyV4Output {
   @scala.inline
   def apply(fields: PolicyFields, url: String): SignedPostPolicyV4Output = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SignedPostPolicyV4Output]
   }
 }

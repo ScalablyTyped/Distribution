@@ -14,7 +14,6 @@ object AnonCircleOfConfusion {
   @scala.inline
   def apply(blurSteps: js.Array[PostProcess], circleOfConfusion: PostProcess): AnonCircleOfConfusion = {
     val __obj = js.Dynamic.literal(blurSteps = blurSteps.asInstanceOf[js.Any], circleOfConfusion = circleOfConfusion.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCircleOfConfusion]
   }
 }

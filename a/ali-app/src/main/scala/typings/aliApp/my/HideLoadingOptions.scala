@@ -15,7 +15,6 @@ object HideLoadingOptions {
   @scala.inline
   def apply(page: js.Any): HideLoadingOptions = {
     val __obj = js.Dynamic.literal(page = page.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HideLoadingOptions]
   }
 }

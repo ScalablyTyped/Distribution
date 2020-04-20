@@ -14,7 +14,6 @@ object AnonAzimuth {
   @scala.inline
   def apply(azimuth: Double, pitch: Double, roll: Double): AnonAzimuth = {
     val __obj = js.Dynamic.literal(azimuth = azimuth.asInstanceOf[js.Any], pitch = pitch.asInstanceOf[js.Any], roll = roll.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAzimuth]
   }
 }

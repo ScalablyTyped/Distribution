@@ -14,7 +14,6 @@ object DecodeResult {
   @scala.inline
   def apply(content: js.Any, createdAt: Double, duration: Double): DecodeResult = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DecodeResult]
   }
 }

@@ -20,7 +20,6 @@ object RevokeFlowEntitlementRequest {
   @scala.inline
   def apply(EntitlementArn: string, FlowArn: string): RevokeFlowEntitlementRequest = {
     val __obj = js.Dynamic.literal(EntitlementArn = EntitlementArn.asInstanceOf[js.Any], FlowArn = FlowArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RevokeFlowEntitlementRequest]
   }
 }

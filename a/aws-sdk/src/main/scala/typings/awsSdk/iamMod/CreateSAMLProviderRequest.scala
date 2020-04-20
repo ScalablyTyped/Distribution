@@ -20,7 +20,6 @@ object CreateSAMLProviderRequest {
   @scala.inline
   def apply(Name: SAMLProviderNameType, SAMLMetadataDocument: SAMLMetadataDocumentType): CreateSAMLProviderRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], SAMLMetadataDocument = SAMLMetadataDocument.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateSAMLProviderRequest]
   }
 }

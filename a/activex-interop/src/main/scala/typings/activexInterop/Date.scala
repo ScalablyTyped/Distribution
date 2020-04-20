@@ -12,7 +12,6 @@ object Date {
   @scala.inline
   def apply(getVarDate: () => VarDate): Date = {
     val __obj = js.Dynamic.literal(getVarDate = js.Any.fromFunction0(getVarDate))
-  
     __obj.asInstanceOf[Date]
   }
 }

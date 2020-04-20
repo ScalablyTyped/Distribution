@@ -18,7 +18,6 @@ object PhononNotifComponent {
     show: () => PhononNotifComponent
   ): PhononNotifComponent = {
     val __obj = js.Dynamic.literal(hide = js.Any.fromFunction0(hide), setColor = js.Any.fromFunction1(setColor), show = js.Any.fromFunction0(show))
-  
     __obj.asInstanceOf[PhononNotifComponent]
   }
 }

@@ -17,18 +17,21 @@ class AuthenticationClient protected () extends js.Object {
   var users: js.UndefOr[UsersManager[AppMetadata, UserMetadata]] = js.native
   def changePassword(data: ResetPasswordOptions): js.Promise[_] = js.native
   def changePassword(data: ResetPasswordOptions, cb: js.Function2[/* err */ Error, /* message */ String, Unit]): Unit = js.native
-  def clientCredentialsGrant(options: ClientCredentialsGrantOptions): js.Promise[_] = js.native
+  def clientCredentialsGrant(options: ClientCredentialsGrantOptions): js.Promise[TokenResponse] = js.native
   def clientCredentialsGrant(
     options: ClientCredentialsGrantOptions,
-    cb: js.Function2[/* err */ Error, /* response */ js.Any, Unit]
+    cb: js.Function2[/* err */ Error, /* response */ TokenResponse, Unit]
   ): Unit = js.native
   def getClientInfo(): ClientInfo = js.native
   def getDelegationToken(data: DelegationTokenOptions): js.Promise[_] = js.native
   def getDelegationToken(data: DelegationTokenOptions, cb: js.Function2[/* err */ Error, /* message */ String, Unit]): Unit = js.native
   def getProfile(accessToken: String): js.Promise[_] = js.native
   def getProfile(accessToken: String, cb: js.Function2[/* err */ Error, /* message */ String, Unit]): Unit = js.native
-  def passwordGrant(options: PasswordGrantOptions): js.Promise[_] = js.native
-  def passwordGrant(options: PasswordGrantOptions, cb: js.Function2[/* err */ Error, /* response */ js.Any, Unit]): Unit = js.native
+  def passwordGrant(options: PasswordGrantOptions): js.Promise[TokenResponse] = js.native
+  def passwordGrant(
+    options: PasswordGrantOptions,
+    cb: js.Function2[/* err */ Error, /* response */ TokenResponse, Unit]
+  ): Unit = js.native
   def requestChangePasswordEmail(data: ResetPasswordEmailOptions): js.Promise[_] = js.native
   def requestChangePasswordEmail(data: ResetPasswordEmailOptions, cb: js.Function2[/* err */ Error, /* message */ String, Unit]): Unit = js.native
   def requestEmailCode(data: RequestEmailOptions): js.Promise[_] = js.native

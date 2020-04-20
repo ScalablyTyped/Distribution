@@ -24,7 +24,6 @@ object IEasClientDeviceInformation {
     systemSku: String
   ): IEasClientDeviceInformation = {
     val __obj = js.Dynamic.literal(friendlyName = friendlyName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], operatingSystem = operatingSystem.asInstanceOf[js.Any], systemManufacturer = systemManufacturer.asInstanceOf[js.Any], systemProductName = systemProductName.asInstanceOf[js.Any], systemSku = systemSku.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IEasClientDeviceInformation]
   }
 }

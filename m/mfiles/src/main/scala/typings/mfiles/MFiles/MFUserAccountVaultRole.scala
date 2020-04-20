@@ -44,40 +44,38 @@ trait MFUserAccountVaultRole extends js.Object
 
 object MFUserAccountVaultRole {
   @scala.inline
-  def ChangeMetadataStructure: `256` = this.cast(256)
+  def ChangeMetadataStructure: `256` = 256.asInstanceOf[`256`]
   @scala.inline
-  def ChangeObjectSecurity: `128` = this.cast(128)
+  def ChangeObjectSecurity: `128` = 128.asInstanceOf[`128`]
   @scala.inline
-  def CreateObjects: `4` = this.cast(4)
+  def CreateObjects: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def DefaultRoles: `3078` = this.cast(3078)
+  def DefaultRoles: `3078` = 3078.asInstanceOf[`3078`]
   @scala.inline
-  def DefineTemplates: `4096` = this.cast(4096)
+  def DefineTemplates: `4096` = 4096.asInstanceOf[`4096`]
   @scala.inline
-  def DestroyObjects: `32` = this.cast(32)
+  def DestroyObjects: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def ForceUndoCheckout: `64` = this.cast(64)
+  def ForceUndoCheckout: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def FullControl: `1` = this.cast(1)
+  def FullControl: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def InternalUser: `1024` = this.cast(1024)
+  def InternalUser: `1024` = 1024.asInstanceOf[`1024`]
   @scala.inline
-  def LogIn: `2` = this.cast(2)
+  def LogIn: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def ManageCommonViews: `8192` = this.cast(8192)
+  def ManageCommonViews: `8192` = 8192.asInstanceOf[`8192`]
   @scala.inline
-  def ManageTraditionalFolders: `2048` = this.cast(2048)
+  def ManageTraditionalFolders: `2048` = 2048.asInstanceOf[`2048`]
   @scala.inline
-  def ManageUserAccounts: `512` = this.cast(512)
+  def ManageUserAccounts: `512` = 512.asInstanceOf[`512`]
   @scala.inline
-  def ManageWorkflows: `16384` = this.cast(16384)
+  def ManageWorkflows: `16384` = 16384.asInstanceOf[`16384`]
   @scala.inline
-  def None: `0` = this.cast(0)
+  def None: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def SeeAllObjects: `8` = this.cast(8)
+  def SeeAllObjects: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def UndeleteObjects: `16` = this.cast(16)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UndeleteObjects: `16` = 16.asInstanceOf[`16`]
 }
 

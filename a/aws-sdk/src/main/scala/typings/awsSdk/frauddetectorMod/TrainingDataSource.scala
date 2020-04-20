@@ -20,7 +20,6 @@ object TrainingDataSource {
   @scala.inline
   def apply(dataAccessRoleArn: iamRoleArn, dataLocation: s3BucketLocation): TrainingDataSource = {
     val __obj = js.Dynamic.literal(dataAccessRoleArn = dataAccessRoleArn.asInstanceOf[js.Any], dataLocation = dataLocation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TrainingDataSource]
   }
 }

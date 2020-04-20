@@ -32,7 +32,6 @@ object TextureConfig {
     textureTypeHalfFloat: Double
   ): TextureConfig = {
     val __obj = js.Dynamic.literal(defaultNumChannels = defaultNumChannels.asInstanceOf[js.Any], downloadTextureFormat = downloadTextureFormat.asInstanceOf[js.Any], downloadUnpackNumChannels = downloadUnpackNumChannels.asInstanceOf[js.Any], internalFormatFloat = internalFormatFloat.asInstanceOf[js.Any], internalFormatHalfFloat = internalFormatHalfFloat.asInstanceOf[js.Any], internalFormatPackedFloat = internalFormatPackedFloat.asInstanceOf[js.Any], internalFormatPackedHalfFloat = internalFormatPackedHalfFloat.asInstanceOf[js.Any], textureFormatFloat = textureFormatFloat.asInstanceOf[js.Any], textureTypeFloat = textureTypeFloat.asInstanceOf[js.Any], textureTypeHalfFloat = textureTypeHalfFloat.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TextureConfig]
   }
 }

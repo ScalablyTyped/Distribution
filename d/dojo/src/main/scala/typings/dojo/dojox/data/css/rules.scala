@@ -23,7 +23,6 @@ object rules {
   @scala.inline
   def apply(forEach: (js.Any, js.Any, js.Any) => Unit): rules = {
     val __obj = js.Dynamic.literal(forEach = js.Any.fromFunction3(forEach))
-  
     __obj.asInstanceOf[rules]
   }
 }

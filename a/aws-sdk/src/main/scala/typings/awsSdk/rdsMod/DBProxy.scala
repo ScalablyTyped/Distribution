@@ -31,7 +31,7 @@ trait DBProxy extends js.Object {
     */
   var Endpoint: js.UndefOr[String] = js.native
   /**
-    * Currently, this value is always MYSQL. The engine family applies to both RDS MySQL and Aurora MySQL.
+    * The engine family applies to MySQL and PostgreSQL for both RDS and Aurora.
     */
   var EngineFamily: js.UndefOr[String] = js.native
   /**

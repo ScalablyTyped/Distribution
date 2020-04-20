@@ -38,34 +38,32 @@ trait XlSmartTagControlType extends js.Object
 
 object XlSmartTagControlType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlSmartTagControlActiveX: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def xlSmartTagControlActiveX: `13` = this.cast(13)
+  def xlSmartTagControlButton: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def xlSmartTagControlButton: `6` = this.cast(6)
+  def xlSmartTagControlCheckbox: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def xlSmartTagControlCheckbox: `9` = this.cast(9)
+  def xlSmartTagControlCombo: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def xlSmartTagControlCombo: `12` = this.cast(12)
+  def xlSmartTagControlHelp: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlSmartTagControlHelp: `3` = this.cast(3)
+  def xlSmartTagControlHelpURL: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlSmartTagControlHelpURL: `4` = this.cast(4)
+  def xlSmartTagControlImage: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def xlSmartTagControlImage: `8` = this.cast(8)
+  def xlSmartTagControlLabel: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def xlSmartTagControlLabel: `7` = this.cast(7)
+  def xlSmartTagControlLink: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlSmartTagControlLink: `2` = this.cast(2)
+  def xlSmartTagControlListbox: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def xlSmartTagControlListbox: `11` = this.cast(11)
+  def xlSmartTagControlRadioGroup: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def xlSmartTagControlRadioGroup: `14` = this.cast(14)
+  def xlSmartTagControlSeparator: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xlSmartTagControlSeparator: `5` = this.cast(5)
+  def xlSmartTagControlSmartTag: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlSmartTagControlSmartTag: `1` = this.cast(1)
-  @scala.inline
-  def xlSmartTagControlTextbox: `10` = this.cast(10)
+  def xlSmartTagControlTextbox: `10` = 10.asInstanceOf[`10`]
 }
 

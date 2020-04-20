@@ -15,7 +15,6 @@ object FileDeleteEvent {
   @scala.inline
   def apply(files: js.Array[Uri]): FileDeleteEvent = {
     val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FileDeleteEvent]
   }
 }

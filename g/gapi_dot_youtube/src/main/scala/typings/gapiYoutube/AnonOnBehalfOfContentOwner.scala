@@ -19,7 +19,6 @@ object AnonOnBehalfOfContentOwner {
   @scala.inline
   def apply(RequestBody: String, onBehalfOfContentOwner: String): AnonOnBehalfOfContentOwner = {
     val __obj = js.Dynamic.literal(RequestBody = RequestBody.asInstanceOf[js.Any], onBehalfOfContentOwner = onBehalfOfContentOwner.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOnBehalfOfContentOwner]
   }
 }

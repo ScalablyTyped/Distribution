@@ -154,7 +154,7 @@ object reachRouterStrings {
   @scala.inline
   def additions: additions = "additions".asInstanceOf[additions]
   @scala.inline
-  def `additions text`: `additions text` = "additions text".asInstanceOf[`additions text`]
+  def `additions text`: `additions text` = ("additions text").asInstanceOf[`additions text`]
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   @scala.inline

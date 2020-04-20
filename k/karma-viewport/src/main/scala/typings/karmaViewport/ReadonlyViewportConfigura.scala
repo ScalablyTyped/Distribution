@@ -15,7 +15,6 @@ object ReadonlyViewportConfigura {
   @scala.inline
   def apply(breakpoints: js.Array[ViewportBreakpoint], context: String): ReadonlyViewportConfigura = {
     val __obj = js.Dynamic.literal(breakpoints = breakpoints.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReadonlyViewportConfigura]
   }
 }

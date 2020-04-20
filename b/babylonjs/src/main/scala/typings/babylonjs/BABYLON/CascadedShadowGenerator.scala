@@ -73,7 +73,7 @@ class CascadedShadowGenerator protected () extends ShadowGenerator {
     * It can greatly enhance the shadow quality, at the expense of more GPU works.
     * When using this option, you should increase the value of the lambda parameter, and even set it to 1 for best results.
     */
-  def autoCalcDepthBounds(): Boolean = js.native
+  def autoCalcDepthBounds: Boolean = js.native
   def autoCalcDepthBounds(value: Boolean): js.Any = js.native
   /**
     * Defines the refresh rate of the min/max computation used when autoCalcDepthBounds is set to true
@@ -81,19 +81,19 @@ class CascadedShadowGenerator protected () extends ShadowGenerator {
     * Note that if you provided your own depth renderer through a call to setDepthRenderer, you are responsible
     * for setting the refresh rate on the renderer yourself!
     */
-  def autoCalcDepthBoundsRefreshRate(): Double = js.native
+  def autoCalcDepthBoundsRefreshRate: Double = js.native
   def autoCalcDepthBoundsRefreshRate(value: Double): js.Any = js.native
   /**
     * Gets or sets the percentage of blending between two cascades (value between 0. and 1.).
     * It defaults to 0.1 (10% blending).
     */
-  def cascadeBlendPercentage(): Double = js.native
+  def cascadeBlendPercentage: Double = js.native
   def cascadeBlendPercentage(value: Double): js.Any = js.native
   /**
     * Gets or sets the debug flag.
     * When enabled, the cascades are materialized by different colors on the screen.
     */
-  def debug(): Boolean = js.native
+  def debug: Boolean = js.native
   def debug(dbg: Boolean): js.Any = js.native
   /**
     * Gets or sets the depth clamping value.
@@ -103,14 +103,14 @@ class CascadedShadowGenerator protected () extends ShadowGenerator {
     *
     * Note that this property is incompatible with PCSS filtering, so it won't be used in that case.
     */
-  def depthClamp(): Boolean = js.native
+  def depthClamp: Boolean = js.native
   def depthClamp(value: Boolean): js.Any = js.native
   /**
     * Enables or disables the shadow casters bounding info computation.
     * If your shadow casters don't move, you can disable this feature.
     * If it is enabled, the bounding box computation is done every frame.
     */
-  def freezeShadowCastersBoundingInfo(): Boolean = js.native
+  def freezeShadowCastersBoundingInfo: Boolean = js.native
   def freezeShadowCastersBoundingInfo(freeze: Boolean): js.Any = js.native
   /**
     * Gets a cascade maximum extents
@@ -148,16 +148,16 @@ class CascadedShadowGenerator protected () extends ShadowGenerator {
     * It's a value between 0. and 1.: If 0, the split is a uniform split of the frustum, if 1 it is a logarithmic split.
     * For all values in-between, it's a linear combination of the uniform and logarithm split algorithm.
     */
-  def lambda(): Double = js.native
+  def lambda: Double = js.native
   def lambda(value: Double): js.Any = js.native
   /** Gets the maximal distance used in the cascade break computation */
-  def maxDistance(): Double = js.native
+  def maxDistance: Double = js.native
   /** Gets the minimal distance used in the cascade break computation */
-  def minDistance(): Double = js.native
+  def minDistance: Double = js.native
   /**
     * Gets or set the number of cascades used by the CSM.
     */
-  def numCascades(): Double = js.native
+  def numCascades: Double = js.native
   def numCascades(value: Double): js.Any = js.native
   /**
     * Sets the depth renderer to use when autoCalcDepthBounds is enabled.
@@ -183,13 +183,13 @@ class CascadedShadowGenerator protected () extends ShadowGenerator {
     * If you provide your own shadow casters bounding info, first enable freezeShadowCastersBoundingInfo
     * so that the system won't overwrite the bounds you provide
     */
-  def shadowCastersBoundingInfo(): BoundingInfo = js.native
+  def shadowCastersBoundingInfo: BoundingInfo = js.native
   def shadowCastersBoundingInfo(boundingInfo: BoundingInfo): js.Any = js.native
   /**
     * Gets the shadow max z distance. It's the limit beyond which shadows are not displayed.
     * It defaults to camera.maxZ
     */
-  def shadowMaxZ(): Double = js.native
+  def shadowMaxZ: Double = js.native
   /**
     * Sets the shadow max z distance.
     */

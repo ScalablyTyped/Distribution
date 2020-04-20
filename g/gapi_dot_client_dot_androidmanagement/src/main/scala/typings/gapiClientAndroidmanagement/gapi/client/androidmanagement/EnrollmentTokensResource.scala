@@ -18,7 +18,6 @@ object EnrollmentTokensResource {
   @scala.inline
   def apply(create: AnonKey => Request_[EnrollmentToken], delete: AnonAlt => Request_[js.Object]): EnrollmentTokensResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete))
-  
     __obj.asInstanceOf[EnrollmentTokensResource]
   }
 }

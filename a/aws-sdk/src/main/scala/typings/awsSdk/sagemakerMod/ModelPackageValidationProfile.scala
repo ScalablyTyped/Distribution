@@ -20,7 +20,6 @@ object ModelPackageValidationProfile {
   @scala.inline
   def apply(ProfileName: EntityName, TransformJobDefinition: TransformJobDefinition): ModelPackageValidationProfile = {
     val __obj = js.Dynamic.literal(ProfileName = ProfileName.asInstanceOf[js.Any], TransformJobDefinition = TransformJobDefinition.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ModelPackageValidationProfile]
   }
 }

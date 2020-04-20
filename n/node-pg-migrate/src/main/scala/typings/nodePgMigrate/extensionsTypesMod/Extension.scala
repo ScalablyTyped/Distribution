@@ -55,96 +55,94 @@ trait Extension extends js.Object
 
 object Extension {
   @scala.inline
-  def adminpack: typings.nodePgMigrate.nodePgMigrateStrings.adminpack = this.cast("adminpack")
+  def adminpack: typings.nodePgMigrate.nodePgMigrateStrings.adminpack = "adminpack".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.adminpack]
   @scala.inline
-  def amcheck: typings.nodePgMigrate.nodePgMigrateStrings.amcheck = this.cast("amcheck")
+  def amcheck: typings.nodePgMigrate.nodePgMigrateStrings.amcheck = "amcheck".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.amcheck]
   @scala.inline
-  def auth_delay: typings.nodePgMigrate.nodePgMigrateStrings.auth_delay = this.cast("auth_delay")
+  def auth_delay: typings.nodePgMigrate.nodePgMigrateStrings.auth_delay = "auth_delay".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.auth_delay]
   @scala.inline
-  def auto_explain: typings.nodePgMigrate.nodePgMigrateStrings.auto_explain = this.cast("auto_explain")
+  def auto_explain: typings.nodePgMigrate.nodePgMigrateStrings.auto_explain = "auto_explain".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.auto_explain]
   @scala.inline
-  def bloom: typings.nodePgMigrate.nodePgMigrateStrings.bloom = this.cast("bloom")
+  def bloom: typings.nodePgMigrate.nodePgMigrateStrings.bloom = "bloom".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.bloom]
   @scala.inline
-  def btree_gin: typings.nodePgMigrate.nodePgMigrateStrings.btree_gin = this.cast("btree_gin")
+  def btree_gin: typings.nodePgMigrate.nodePgMigrateStrings.btree_gin = "btree_gin".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.btree_gin]
   @scala.inline
-  def btree_gist: typings.nodePgMigrate.nodePgMigrateStrings.btree_gist = this.cast("btree_gist")
+  def btree_gist: typings.nodePgMigrate.nodePgMigrateStrings.btree_gist = "btree_gist".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.btree_gist]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def citext: typings.nodePgMigrate.nodePgMigrateStrings.citext = "citext".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.citext]
   @scala.inline
-  def citext: typings.nodePgMigrate.nodePgMigrateStrings.citext = this.cast("citext")
+  def cube: typings.nodePgMigrate.nodePgMigrateStrings.cube = "cube".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.cube]
   @scala.inline
-  def cube: typings.nodePgMigrate.nodePgMigrateStrings.cube = this.cast("cube")
+  def dblink: typings.nodePgMigrate.nodePgMigrateStrings.dblink = "dblink".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.dblink]
   @scala.inline
-  def dblink: typings.nodePgMigrate.nodePgMigrateStrings.dblink = this.cast("dblink")
+  def dict_int: typings.nodePgMigrate.nodePgMigrateStrings.dict_int = "dict_int".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.dict_int]
   @scala.inline
-  def dict_int: typings.nodePgMigrate.nodePgMigrateStrings.dict_int = this.cast("dict_int")
+  def dict_xsyn: typings.nodePgMigrate.nodePgMigrateStrings.dict_xsyn = "dict_xsyn".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.dict_xsyn]
   @scala.inline
-  def dict_xsyn: typings.nodePgMigrate.nodePgMigrateStrings.dict_xsyn = this.cast("dict_xsyn")
+  def earthdistance: typings.nodePgMigrate.nodePgMigrateStrings.earthdistance = "earthdistance".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.earthdistance]
   @scala.inline
-  def earthdistance: typings.nodePgMigrate.nodePgMigrateStrings.earthdistance = this.cast("earthdistance")
+  def file_fdw: typings.nodePgMigrate.nodePgMigrateStrings.file_fdw = "file_fdw".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.file_fdw]
   @scala.inline
-  def file_fdw: typings.nodePgMigrate.nodePgMigrateStrings.file_fdw = this.cast("file_fdw")
+  def fuzzystrmatch: typings.nodePgMigrate.nodePgMigrateStrings.fuzzystrmatch = "fuzzystrmatch".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.fuzzystrmatch]
   @scala.inline
-  def fuzzystrmatch: typings.nodePgMigrate.nodePgMigrateStrings.fuzzystrmatch = this.cast("fuzzystrmatch")
+  def hstore: typings.nodePgMigrate.nodePgMigrateStrings.hstore = "hstore".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.hstore]
   @scala.inline
-  def hstore: typings.nodePgMigrate.nodePgMigrateStrings.hstore = this.cast("hstore")
+  def intagg: typings.nodePgMigrate.nodePgMigrateStrings.intagg = "intagg".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.intagg]
   @scala.inline
-  def intagg: typings.nodePgMigrate.nodePgMigrateStrings.intagg = this.cast("intagg")
+  def intarray: typings.nodePgMigrate.nodePgMigrateStrings.intarray = "intarray".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.intarray]
   @scala.inline
-  def intarray: typings.nodePgMigrate.nodePgMigrateStrings.intarray = this.cast("intarray")
+  def isn: typings.nodePgMigrate.nodePgMigrateStrings.isn = "isn".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.isn]
   @scala.inline
-  def isn: typings.nodePgMigrate.nodePgMigrateStrings.isn = this.cast("isn")
+  def lo: typings.nodePgMigrate.nodePgMigrateStrings.lo = "lo".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.lo]
   @scala.inline
-  def lo: typings.nodePgMigrate.nodePgMigrateStrings.lo = this.cast("lo")
+  def ltree: typings.nodePgMigrate.nodePgMigrateStrings.ltree = "ltree".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.ltree]
   @scala.inline
-  def ltree: typings.nodePgMigrate.nodePgMigrateStrings.ltree = this.cast("ltree")
+  def pageinspect: typings.nodePgMigrate.nodePgMigrateStrings.pageinspect = "pageinspect".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.pageinspect]
   @scala.inline
-  def pageinspect: typings.nodePgMigrate.nodePgMigrateStrings.pageinspect = this.cast("pageinspect")
+  def passwordcheck: typings.nodePgMigrate.nodePgMigrateStrings.passwordcheck = "passwordcheck".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.passwordcheck]
   @scala.inline
-  def passwordcheck: typings.nodePgMigrate.nodePgMigrateStrings.passwordcheck = this.cast("passwordcheck")
+  def pg_buffercache: typings.nodePgMigrate.nodePgMigrateStrings.pg_buffercache = "pg_buffercache".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.pg_buffercache]
   @scala.inline
-  def pg_buffercache: typings.nodePgMigrate.nodePgMigrateStrings.pg_buffercache = this.cast("pg_buffercache")
+  def pg_freespacemap: typings.nodePgMigrate.nodePgMigrateStrings.pg_freespacemap = "pg_freespacemap".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.pg_freespacemap]
   @scala.inline
-  def pg_freespacemap: typings.nodePgMigrate.nodePgMigrateStrings.pg_freespacemap = this.cast("pg_freespacemap")
+  def pg_prewarm: typings.nodePgMigrate.nodePgMigrateStrings.pg_prewarm = "pg_prewarm".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.pg_prewarm]
   @scala.inline
-  def pg_prewarm: typings.nodePgMigrate.nodePgMigrateStrings.pg_prewarm = this.cast("pg_prewarm")
+  def pg_stat_statements: typings.nodePgMigrate.nodePgMigrateStrings.pg_stat_statements = "pg_stat_statements".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.pg_stat_statements]
   @scala.inline
-  def pg_stat_statements: typings.nodePgMigrate.nodePgMigrateStrings.pg_stat_statements = this.cast("pg_stat_statements")
+  def pg_trgm: typings.nodePgMigrate.nodePgMigrateStrings.pg_trgm = "pg_trgm".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.pg_trgm]
   @scala.inline
-  def pg_trgm: typings.nodePgMigrate.nodePgMigrateStrings.pg_trgm = this.cast("pg_trgm")
+  def pg_visibility: typings.nodePgMigrate.nodePgMigrateStrings.pg_visibility = "pg_visibility".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.pg_visibility]
   @scala.inline
-  def pg_visibility: typings.nodePgMigrate.nodePgMigrateStrings.pg_visibility = this.cast("pg_visibility")
+  def pgcrypto: typings.nodePgMigrate.nodePgMigrateStrings.pgcrypto = "pgcrypto".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.pgcrypto]
   @scala.inline
-  def pgcrypto: typings.nodePgMigrate.nodePgMigrateStrings.pgcrypto = this.cast("pgcrypto")
+  def pgrowlocks: typings.nodePgMigrate.nodePgMigrateStrings.pgrowlocks = "pgrowlocks".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.pgrowlocks]
   @scala.inline
-  def pgrowlocks: typings.nodePgMigrate.nodePgMigrateStrings.pgrowlocks = this.cast("pgrowlocks")
+  def pgstattuple: typings.nodePgMigrate.nodePgMigrateStrings.pgstattuple = "pgstattuple".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.pgstattuple]
   @scala.inline
-  def pgstattuple: typings.nodePgMigrate.nodePgMigrateStrings.pgstattuple = this.cast("pgstattuple")
+  def postgres_fdw: typings.nodePgMigrate.nodePgMigrateStrings.postgres_fdw = "postgres_fdw".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.postgres_fdw]
   @scala.inline
-  def postgres_fdw: typings.nodePgMigrate.nodePgMigrateStrings.postgres_fdw = this.cast("postgres_fdw")
+  def seg: typings.nodePgMigrate.nodePgMigrateStrings.seg = "seg".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.seg]
   @scala.inline
-  def seg: typings.nodePgMigrate.nodePgMigrateStrings.seg = this.cast("seg")
+  def sepgsql: typings.nodePgMigrate.nodePgMigrateStrings.sepgsql = "sepgsql".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.sepgsql]
   @scala.inline
-  def sepgsql: typings.nodePgMigrate.nodePgMigrateStrings.sepgsql = this.cast("sepgsql")
+  def spi: typings.nodePgMigrate.nodePgMigrateStrings.spi = "spi".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.spi]
   @scala.inline
-  def spi: typings.nodePgMigrate.nodePgMigrateStrings.spi = this.cast("spi")
+  def sslinfo: typings.nodePgMigrate.nodePgMigrateStrings.sslinfo = "sslinfo".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.sslinfo]
   @scala.inline
-  def sslinfo: typings.nodePgMigrate.nodePgMigrateStrings.sslinfo = this.cast("sslinfo")
+  def tablefunc: typings.nodePgMigrate.nodePgMigrateStrings.tablefunc = "tablefunc".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.tablefunc]
   @scala.inline
-  def tablefunc: typings.nodePgMigrate.nodePgMigrateStrings.tablefunc = this.cast("tablefunc")
+  def tcn: typings.nodePgMigrate.nodePgMigrateStrings.tcn = "tcn".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.tcn]
   @scala.inline
-  def tcn: typings.nodePgMigrate.nodePgMigrateStrings.tcn = this.cast("tcn")
+  def test_decoding: typings.nodePgMigrate.nodePgMigrateStrings.test_decoding = "test_decoding".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.test_decoding]
   @scala.inline
-  def test_decoding: typings.nodePgMigrate.nodePgMigrateStrings.test_decoding = this.cast("test_decoding")
+  def tsm_system_rows: typings.nodePgMigrate.nodePgMigrateStrings.tsm_system_rows = "tsm_system_rows".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.tsm_system_rows]
   @scala.inline
-  def tsm_system_rows: typings.nodePgMigrate.nodePgMigrateStrings.tsm_system_rows = this.cast("tsm_system_rows")
+  def tsm_system_time: typings.nodePgMigrate.nodePgMigrateStrings.tsm_system_time = "tsm_system_time".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.tsm_system_time]
   @scala.inline
-  def tsm_system_time: typings.nodePgMigrate.nodePgMigrateStrings.tsm_system_time = this.cast("tsm_system_time")
+  def unaccent: typings.nodePgMigrate.nodePgMigrateStrings.unaccent = "unaccent".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.unaccent]
   @scala.inline
-  def unaccent: typings.nodePgMigrate.nodePgMigrateStrings.unaccent = this.cast("unaccent")
+  def `uuid-ossp`: typings.nodePgMigrate.nodePgMigrateStrings.`uuid-ossp` = "uuid-ossp".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.`uuid-ossp`]
   @scala.inline
-  def `uuid-ossp`: typings.nodePgMigrate.nodePgMigrateStrings.`uuid-ossp` = this.cast("uuid-ossp")
-  @scala.inline
-  def xml2: typings.nodePgMigrate.nodePgMigrateStrings.xml2 = this.cast("xml2")
+  def xml2: typings.nodePgMigrate.nodePgMigrateStrings.xml2 = "xml2".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.xml2]
 }
 

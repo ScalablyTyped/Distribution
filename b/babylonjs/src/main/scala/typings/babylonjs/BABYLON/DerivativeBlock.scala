@@ -15,14 +15,14 @@ class DerivativeBlock protected () extends NodeMaterialBlock {
   /**
     * Gets the derivative output on x
     */
-  def dx(): NodeMaterialConnectionPoint = js.native
+  def dx: NodeMaterialConnectionPoint = js.native
   /**
     * Gets the derivative output on y
     */
-  def dy(): NodeMaterialConnectionPoint = js.native
+  def dy: NodeMaterialConnectionPoint = js.native
   /**
     * Gets the input component
     */
-  def input(): NodeMaterialConnectionPoint = js.native
+  def input: NodeMaterialConnectionPoint = js.native
 }
 

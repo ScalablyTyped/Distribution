@@ -14,7 +14,6 @@ object AnonGRD {
   @scala.inline
   def apply(GRD: js.Array[String], JPY: js.Array[String], THB: js.Array[String]): AnonGRD = {
     val __obj = js.Dynamic.literal(GRD = GRD.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any], THB = THB.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGRD]
   }
 }

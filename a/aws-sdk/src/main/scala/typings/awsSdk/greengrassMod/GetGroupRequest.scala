@@ -16,7 +16,6 @@ object GetGroupRequest {
   @scala.inline
   def apply(GroupId: string): GetGroupRequest = {
     val __obj = js.Dynamic.literal(GroupId = GroupId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetGroupRequest]
   }
 }

@@ -24,7 +24,6 @@ object ModelSummary {
   @scala.inline
   def apply(CreationTime: Timestamp, ModelArn: ModelArn, ModelName: ModelName): ModelSummary = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime.asInstanceOf[js.Any], ModelArn = ModelArn.asInstanceOf[js.Any], ModelName = ModelName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ModelSummary]
   }
 }

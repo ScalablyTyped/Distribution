@@ -18,22 +18,20 @@ trait ScreenOrientationLockType extends js.Object
 
 object ScreenOrientationLockType {
   @scala.inline
-  def any: typings.w3cScreenOrientation.w3cScreenOrientationStrings.any = this.cast("any")
+  def any: typings.w3cScreenOrientation.w3cScreenOrientationStrings.any = "any".asInstanceOf[typings.w3cScreenOrientation.w3cScreenOrientationStrings.any]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def landscape: typings.w3cScreenOrientation.w3cScreenOrientationStrings.landscape = "landscape".asInstanceOf[typings.w3cScreenOrientation.w3cScreenOrientationStrings.landscape]
   @scala.inline
-  def landscape: typings.w3cScreenOrientation.w3cScreenOrientationStrings.landscape = this.cast("landscape")
+  def `landscape-primary`: typings.w3cScreenOrientation.w3cScreenOrientationStrings.`landscape-primary` = "landscape-primary".asInstanceOf[typings.w3cScreenOrientation.w3cScreenOrientationStrings.`landscape-primary`]
   @scala.inline
-  def `landscape-primary`: typings.w3cScreenOrientation.w3cScreenOrientationStrings.`landscape-primary` = this.cast("landscape-primary")
+  def `landscape-secondary`: typings.w3cScreenOrientation.w3cScreenOrientationStrings.`landscape-secondary` = "landscape-secondary".asInstanceOf[typings.w3cScreenOrientation.w3cScreenOrientationStrings.`landscape-secondary`]
   @scala.inline
-  def `landscape-secondary`: typings.w3cScreenOrientation.w3cScreenOrientationStrings.`landscape-secondary` = this.cast("landscape-secondary")
+  def natural: typings.w3cScreenOrientation.w3cScreenOrientationStrings.natural = "natural".asInstanceOf[typings.w3cScreenOrientation.w3cScreenOrientationStrings.natural]
   @scala.inline
-  def natural: typings.w3cScreenOrientation.w3cScreenOrientationStrings.natural = this.cast("natural")
+  def portrait: typings.w3cScreenOrientation.w3cScreenOrientationStrings.portrait = "portrait".asInstanceOf[typings.w3cScreenOrientation.w3cScreenOrientationStrings.portrait]
   @scala.inline
-  def portrait: typings.w3cScreenOrientation.w3cScreenOrientationStrings.portrait = this.cast("portrait")
+  def `portrait-primary`: typings.w3cScreenOrientation.w3cScreenOrientationStrings.`portrait-primary` = "portrait-primary".asInstanceOf[typings.w3cScreenOrientation.w3cScreenOrientationStrings.`portrait-primary`]
   @scala.inline
-  def `portrait-primary`: typings.w3cScreenOrientation.w3cScreenOrientationStrings.`portrait-primary` = this.cast("portrait-primary")
-  @scala.inline
-  def `portrait-secondary`: typings.w3cScreenOrientation.w3cScreenOrientationStrings.`portrait-secondary` = this.cast("portrait-secondary")
+  def `portrait-secondary`: typings.w3cScreenOrientation.w3cScreenOrientationStrings.`portrait-secondary` = "portrait-secondary".asInstanceOf[typings.w3cScreenOrientation.w3cScreenOrientationStrings.`portrait-secondary`]
 }
 

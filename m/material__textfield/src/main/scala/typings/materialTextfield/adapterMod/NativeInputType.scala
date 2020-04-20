@@ -16,7 +16,6 @@ object NativeInputType {
   @scala.inline
   def apply(badInput: Boolean, disabled: Boolean, validity: AnonBadInput, value: String): NativeInputType = {
     val __obj = js.Dynamic.literal(badInput = badInput.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], validity = validity.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NativeInputType]
   }
 }

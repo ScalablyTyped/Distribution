@@ -12,7 +12,6 @@ object CompileFactoryMetadata {
   @scala.inline
   def apply(diDeps: js.Array[CompileDiDependencyMetadata], reference: js.Any): CompileFactoryMetadata = {
     val __obj = js.Dynamic.literal(diDeps = diDeps.asInstanceOf[js.Any], reference = reference.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CompileFactoryMetadata]
   }
 }

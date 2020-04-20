@@ -13,7 +13,6 @@ object Window {
   @scala.inline
   def apply(Plaid: AnonCreate): Window = {
     val __obj = js.Dynamic.literal(Plaid = Plaid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Window]
   }
 }

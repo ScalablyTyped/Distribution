@@ -15,7 +15,6 @@ object ImagePosition {
   @scala.inline
   def apply(ext: AnonHeight, tl: AnonCol): ImagePosition = {
     val __obj = js.Dynamic.literal(ext = ext.asInstanceOf[js.Any], tl = tl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ImagePosition]
   }
 }

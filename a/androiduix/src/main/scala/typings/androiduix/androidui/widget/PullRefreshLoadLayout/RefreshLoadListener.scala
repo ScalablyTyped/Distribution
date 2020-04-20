@@ -16,7 +16,6 @@ object RefreshLoadListener {
     onRefresh: typings.androiduix.androidui.widget.PullRefreshLoadLayout => Unit
   ): RefreshLoadListener = {
     val __obj = js.Dynamic.literal(onLoadMore = js.Any.fromFunction1(onLoadMore), onRefresh = js.Any.fromFunction1(onRefresh))
-  
     __obj.asInstanceOf[RefreshLoadListener]
   }
 }

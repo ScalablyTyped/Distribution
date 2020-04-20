@@ -15,7 +15,6 @@ object ListRenderItemInfo {
   @scala.inline
   def apply[ItemT](index: Double, item: ItemT, separators: AnonHighlight): ListRenderItemInfo[ItemT] = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], separators = separators.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListRenderItemInfo[ItemT]]
   }
 }

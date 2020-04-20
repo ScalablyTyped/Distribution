@@ -16,7 +16,6 @@ object DescribeLabelingJobRequest {
   @scala.inline
   def apply(LabelingJobName: LabelingJobName): DescribeLabelingJobRequest = {
     val __obj = js.Dynamic.literal(LabelingJobName = LabelingJobName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeLabelingJobRequest]
   }
 }

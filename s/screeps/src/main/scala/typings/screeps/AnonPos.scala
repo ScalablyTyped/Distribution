@@ -12,7 +12,6 @@ object AnonPos {
   @scala.inline
   def apply(pos: RoomPosition): AnonPos = {
     val __obj = js.Dynamic.literal(pos = pos.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPos]
   }
 }

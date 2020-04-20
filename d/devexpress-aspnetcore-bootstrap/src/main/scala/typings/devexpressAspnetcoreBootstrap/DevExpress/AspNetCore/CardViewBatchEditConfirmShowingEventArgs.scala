@@ -12,7 +12,6 @@ object CardViewBatchEditConfirmShowingEventArgs {
   @scala.inline
   def apply(cancel: Boolean, requestTriggerID: String, sender: Control): CardViewBatchEditConfirmShowingEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], requestTriggerID = requestTriggerID.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CardViewBatchEditConfirmShowingEventArgs]
   }
 }

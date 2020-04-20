@@ -14,7 +14,6 @@ object ResultSetRowList {
   @scala.inline
   def apply(item: Double => js.Any, length: Double, raw: () => js.Array[_]): ResultSetRowList = {
     val __obj = js.Dynamic.literal(item = js.Any.fromFunction1(item), length = length.asInstanceOf[js.Any], raw = js.Any.fromFunction0(raw))
-  
     __obj.asInstanceOf[ResultSetRowList]
   }
 }

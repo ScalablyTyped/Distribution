@@ -16,7 +16,6 @@ object DisableDomainTransferLockRequest {
   @scala.inline
   def apply(DomainName: DomainName): DisableDomainTransferLockRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisableDomainTransferLockRequest]
   }
 }

@@ -12,7 +12,6 @@ object MiniSignalBinding {
   @scala.inline
   def apply(detach: () => Boolean): MiniSignalBinding = {
     val __obj = js.Dynamic.literal(detach = js.Any.fromFunction0(detach))
-  
     __obj.asInstanceOf[MiniSignalBinding]
   }
 }

@@ -17,7 +17,6 @@ object AnonOpen {
   @scala.inline
   def apply(item: ReactInstance, key: Key, open: Boolean, trigger: String): AnonOpen = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], trigger = trigger.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOpen]
   }
 }

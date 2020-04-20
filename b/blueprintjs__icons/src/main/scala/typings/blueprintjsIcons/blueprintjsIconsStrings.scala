@@ -2875,6 +2875,9 @@ object blueprintjsIconsStrings {
   sealed trait video extends IconName
   
   @js.native
+  sealed trait virus extends IconName
+  
+  @js.native
   sealed trait `volume-down` extends IconName
   
   @js.native
@@ -2949,7 +2952,7 @@ object blueprintjsIconsStrings {
   @scala.inline
   def Downarrowhead: Downarrowhead = "\u2304".asInstanceOf[Downarrowhead]
   @scala.inline
-  def `Downwardsarrow `: `Downwardsarrow ` = "\u2193 ".asInstanceOf[`Downwardsarrow `]
+  def `Downwardsarrow `: `Downwardsarrow ` = ("\u2193 ").asInstanceOf[`Downwardsarrow `]
   @scala.inline
   def Ejectsymbol: Ejectsymbol = "\u23CF".asInstanceOf[Ejectsymbol]
   @scala.inline
@@ -2961,7 +2964,7 @@ object blueprintjsIconsStrings {
   @scala.inline
   def Leftpointinganglebracket: Leftpointinganglebracket = "\u2329".asInstanceOf[Leftpointinganglebracket]
   @scala.inline
-  def `Leftrightarrow `: `Leftrightarrow ` = "\u2194 ".asInstanceOf[`Leftrightarrow `]
+  def `Leftrightarrow `: `Leftrightarrow ` = ("\u2194 ").asInstanceOf[`Leftrightarrow `]
   @scala.inline
   def Leftwardsarrow: Leftwardsarrow = "\u2190".asInstanceOf[Leftwardsarrow]
   @scala.inline
@@ -3885,9 +3888,9 @@ object blueprintjsIconsStrings {
   @scala.inline
   def Uparrowhead: Uparrowhead = "\u2303".asInstanceOf[Uparrowhead]
   @scala.inline
-  def `Updownarrow `: `Updownarrow ` = "\u2195 ".asInstanceOf[`Updownarrow `]
+  def `Updownarrow `: `Updownarrow ` = ("\u2195 ").asInstanceOf[`Updownarrow `]
   @scala.inline
-  def `Upwardsarrow `: `Upwardsarrow ` = "\u2191 ".asInstanceOf[`Upwardsarrow `]
+  def `Upwardsarrow `: `Upwardsarrow ` = ("\u2191 ").asInstanceOf[`Upwardsarrow `]
   @scala.inline
   def Whitestar: Whitestar = "\u2606".asInstanceOf[Whitestar]
   @scala.inline
@@ -4834,6 +4837,8 @@ object blueprintjsIconsStrings {
   def `vertical-distribution`: `vertical-distribution` = "vertical-distribution".asInstanceOf[`vertical-distribution`]
   @scala.inline
   def video: video = "video".asInstanceOf[video]
+  @scala.inline
+  def virus: virus = "virus".asInstanceOf[virus]
   @scala.inline
   def `volume-down`: `volume-down` = "volume-down".asInstanceOf[`volume-down`]
   @scala.inline

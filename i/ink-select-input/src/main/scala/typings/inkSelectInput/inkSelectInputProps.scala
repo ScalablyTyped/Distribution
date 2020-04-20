@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait inkSelectInputProps {
   @scala.inline
-  def InkSelectInputProps: SelectInputProps.type = typings.inkSelectInput.mod.SelectInputProps
+  def InkSelectInputProps: SelectInputProps.type = SelectInputProps
   type InkSelectInputProps[T /* <: ItemOfSelectInput */] = SelectInputProps[T]
 }
 

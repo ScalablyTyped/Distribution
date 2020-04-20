@@ -12,7 +12,6 @@ object OnDismissListener {
   @scala.inline
   def apply(onDismiss: typings.androiduix.android.content.DialogInterface => Unit): OnDismissListener = {
     val __obj = js.Dynamic.literal(onDismiss = js.Any.fromFunction1(onDismiss))
-  
     __obj.asInstanceOf[OnDismissListener]
   }
 }

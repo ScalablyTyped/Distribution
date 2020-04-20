@@ -65,12 +65,12 @@ class OutputModel protected () extends IOutputModel {
     * A signal emitted when the output model changes.
     */
   @JSName("changed")
-  def changed_MOutputModel(): ISignal[this.type, Unit] = js.native
+  def changed_MOutputModel: ISignal[this.type, Unit] = js.native
   /**
     * The data associated with the model.
     */
   @JSName("data")
-  def data_MOutputModel(): ReadonlyPartialJSONObject = js.native
+  def data_MOutputModel: ReadonlyPartialJSONObject = js.native
   /**
     * Dispose of the resources used by the output model.
     */
@@ -80,7 +80,7 @@ class OutputModel protected () extends IOutputModel {
     * The metadata associated with the model.
     */
   @JSName("metadata")
-  def metadata_MOutputModel(): ReadonlyPartialJSONObject = js.native
+  def metadata_MOutputModel: ReadonlyPartialJSONObject = js.native
   /**
     * Set the data associated with the model.
     *

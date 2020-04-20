@@ -14,7 +14,6 @@ object AnonCallback {
   @scala.inline
   def apply(callback: (PhysicsImpostor, PhysicsImpostor) => Unit, otherImpostors: js.Array[PhysicsImpostor]): AnonCallback = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction2(callback), otherImpostors = otherImpostors.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCallback]
   }
 }

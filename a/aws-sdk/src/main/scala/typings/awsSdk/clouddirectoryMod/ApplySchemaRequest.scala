@@ -20,7 +20,6 @@ object ApplySchemaRequest {
   @scala.inline
   def apply(DirectoryArn: Arn, PublishedSchemaArn: Arn): ApplySchemaRequest = {
     val __obj = js.Dynamic.literal(DirectoryArn = DirectoryArn.asInstanceOf[js.Any], PublishedSchemaArn = PublishedSchemaArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ApplySchemaRequest]
   }
 }

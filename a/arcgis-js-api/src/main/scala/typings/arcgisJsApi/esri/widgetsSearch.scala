@@ -75,6 +75,14 @@ trait widgetsSearch
     */
   val defaultSources: Collection[LayerSearchSource | LocatorSearchSource] = js.native
   /**
+    * When true, the widget is visually withdrawn and cannot be interacted with.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#disabled)
+    *
+    * @default false
+    */
+  var disabled: Boolean = js.native
+  /**
     * The widget's default CSS icon class.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#iconClass)

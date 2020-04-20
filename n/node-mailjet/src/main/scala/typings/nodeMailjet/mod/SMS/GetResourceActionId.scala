@@ -12,7 +12,6 @@ object GetResourceActionId {
   @scala.inline
   def apply(request: () => js.Promise[ExportResponse]): GetResourceActionId = {
     val __obj = js.Dynamic.literal(request = js.Any.fromFunction0(request))
-  
     __obj.asInstanceOf[GetResourceActionId]
   }
 }

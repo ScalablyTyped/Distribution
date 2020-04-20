@@ -45,7 +45,6 @@ object TimePickerAndroidStatic {
     timeSetAction: timeSetAction
   ): TimePickerAndroidStatic = {
     val __obj = js.Dynamic.literal(dismissedAction = dismissedAction.asInstanceOf[js.Any], open = js.Any.fromFunction1(open), timeSetAction = timeSetAction.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TimePickerAndroidStatic]
   }
 }

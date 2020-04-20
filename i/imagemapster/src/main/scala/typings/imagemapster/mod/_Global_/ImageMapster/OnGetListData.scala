@@ -24,7 +24,6 @@ object OnGetListData {
   @scala.inline
   def apply(area: js.Array[_], key: String, options: AreaRenderingOptions, value: String): OnGetListData = {
     val __obj = js.Dynamic.literal(area = area.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnGetListData]
   }
 }

@@ -100,7 +100,7 @@ class ParseAST protected () extends js.Object {
   /**
     * Returns the absolute offset of the start of the current token.
     */
-  def currentAbsoluteOffset(): Double = js.native
+  def currentAbsoluteOffset: Double = js.native
   def error(message: String): Unit = js.native
   def error(message: String, index: Double): Unit = js.native
   def expectCharacter(code: Double): Unit = js.native
@@ -112,8 +112,8 @@ class ParseAST protected () extends js.Object {
     * and returns the string along with its absolute source span.
     */
   def expectTemplateBindingKey(): TemplateBindingIdentifier = js.native
-  def inputIndex(): Double = js.native
-  def next(): Token = js.native
+  def inputIndex: Double = js.native
+  def next: Token = js.native
   def parseAccessMemberOrMethodCall(receiver: AST): AST = js.native
   def parseAccessMemberOrMethodCall(receiver: AST, isSafe: Boolean): AST = js.native
   def parseAdditive(): AST = js.native

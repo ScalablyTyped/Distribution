@@ -33,7 +33,6 @@ object BaseResult {
   @scala.inline
   def apply(bounds: AnonHeight, id: Double, memoryUsage: Double, owner: BaseOwner, title: String): BaseResult = {
     val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], memoryUsage = memoryUsage.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BaseResult]
   }
 }

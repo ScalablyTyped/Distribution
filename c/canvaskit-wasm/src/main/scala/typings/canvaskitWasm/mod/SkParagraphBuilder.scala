@@ -24,7 +24,6 @@ object SkParagraphBuilder {
     pushStyle: SkTextStyle => Unit
   ): SkParagraphBuilder = {
     val __obj = js.Dynamic.literal(addText = js.Any.fromFunction1(addText), build = js.Any.fromFunction0(build), delete = js.Any.fromFunction0(delete), deleteAfter = js.Any.fromFunction0(deleteAfter), isAliasOf = js.Any.fromFunction1(isAliasOf), isDeleted = js.Any.fromFunction0(isDeleted), pop = js.Any.fromFunction0(pop), pushStyle = js.Any.fromFunction1(pushStyle))
-  
     __obj.asInstanceOf[SkParagraphBuilder]
   }
 }

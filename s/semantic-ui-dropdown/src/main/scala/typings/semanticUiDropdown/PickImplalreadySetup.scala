@@ -13,7 +13,6 @@ object PickImplalreadySetup {
   @scala.inline
   def apply(alreadySetup: String): PickImplalreadySetup = {
     val __obj = js.Dynamic.literal(alreadySetup = alreadySetup.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplalreadySetup]
   }
 }

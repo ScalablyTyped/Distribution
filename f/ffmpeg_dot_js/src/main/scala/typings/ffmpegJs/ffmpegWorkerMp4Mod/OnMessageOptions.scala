@@ -12,7 +12,6 @@ object OnMessageOptions {
   @scala.inline
   def apply(data: Data): OnMessageOptions = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnMessageOptions]
   }
 }

@@ -16,7 +16,6 @@ object AnonAudio {
   @scala.inline
   def apply(audio: js.Array[OPUS], video: js.Array[VP8 | H264]): AnonAudio = {
     val __obj = js.Dynamic.literal(audio = audio.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAudio]
   }
 }

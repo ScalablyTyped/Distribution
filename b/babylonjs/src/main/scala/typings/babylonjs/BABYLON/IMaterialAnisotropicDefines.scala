@@ -24,7 +24,6 @@ object IMaterialAnisotropicDefines {
     _needUVs: Boolean
   ): IMaterialAnisotropicDefines = {
     val __obj = js.Dynamic.literal(ANISOTROPIC = ANISOTROPIC.asInstanceOf[js.Any], ANISOTROPIC_TEXTURE = ANISOTROPIC_TEXTURE.asInstanceOf[js.Any], ANISOTROPIC_TEXTUREDIRECTUV = ANISOTROPIC_TEXTUREDIRECTUV.asInstanceOf[js.Any], MAINUV1 = MAINUV1.asInstanceOf[js.Any], _areTexturesDirty = _areTexturesDirty.asInstanceOf[js.Any], _needUVs = _needUVs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMaterialAnisotropicDefines]
   }
 }

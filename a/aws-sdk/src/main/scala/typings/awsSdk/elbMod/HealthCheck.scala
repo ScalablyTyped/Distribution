@@ -38,7 +38,6 @@ object HealthCheck {
     UnhealthyThreshold: UnhealthyThreshold
   ): HealthCheck = {
     val __obj = js.Dynamic.literal(HealthyThreshold = HealthyThreshold.asInstanceOf[js.Any], Interval = Interval.asInstanceOf[js.Any], Target = Target.asInstanceOf[js.Any], Timeout = Timeout.asInstanceOf[js.Any], UnhealthyThreshold = UnhealthyThreshold.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HealthCheck]
   }
 }

@@ -13,7 +13,6 @@ object AnonPvw {
   @scala.inline
   def apply(Pvw: ProtectedViewWindow): AnonPvw = {
     val __obj = js.Dynamic.literal(Pvw = Pvw.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPvw]
   }
 }

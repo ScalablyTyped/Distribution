@@ -20,7 +20,6 @@ object DeleteGroupPolicyRequest {
   @scala.inline
   def apply(GroupName: groupNameType, PolicyName: policyNameType): DeleteGroupPolicyRequest = {
     val __obj = js.Dynamic.literal(GroupName = GroupName.asInstanceOf[js.Any], PolicyName = PolicyName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteGroupPolicyRequest]
   }
 }

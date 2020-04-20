@@ -30,7 +30,6 @@ object CellExpandEvent {
   @scala.inline
   def apply[T](expandArgs: js.Any, idx: Double, rowData: T, rowIdx: Double): CellExpandEvent[T] = {
     val __obj = js.Dynamic.literal(expandArgs = expandArgs.asInstanceOf[js.Any], idx = idx.asInstanceOf[js.Any], rowData = rowData.asInstanceOf[js.Any], rowIdx = rowIdx.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CellExpandEvent[T]]
   }
 }

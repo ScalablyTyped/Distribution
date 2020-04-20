@@ -30,7 +30,6 @@ object Typeofmsrp {
     set_dst: (String, String) => Double
   ): Typeofmsrp = {
     val __obj = js.Dynamic.literal(cmap_lookup = js.Any.fromFunction0(cmap_lookup), cmap_save = js.Any.fromFunction0(cmap_save), is_reply = js.Any.fromFunction0(is_reply), is_request = js.Any.fromFunction0(is_request), relay = js.Any.fromFunction0(relay), relay_flags = js.Any.fromFunction1(relay_flags), reply = js.Any.fromFunction3(reply), reply_flags = js.Any.fromFunction1(reply_flags), set_dst = js.Any.fromFunction2(set_dst))
-  
     __obj.asInstanceOf[Typeofmsrp]
   }
 }

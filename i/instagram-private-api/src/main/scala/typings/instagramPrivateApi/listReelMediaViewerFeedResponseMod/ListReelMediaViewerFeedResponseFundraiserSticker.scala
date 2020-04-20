@@ -34,7 +34,6 @@ object ListReelMediaViewerFeedResponseFundraiserSticker {
     user: ListReelMediaViewerFeedResponseUser
   ): ListReelMediaViewerFeedResponseFundraiserSticker = {
     val __obj = js.Dynamic.literal(button_text_color = button_text_color.asInstanceOf[js.Any], consumption_sheet_config = consumption_sheet_config.asInstanceOf[js.Any], end_background_color = end_background_color.asInstanceOf[js.Any], original_subtitle_height = original_subtitle_height.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any], source_name = source_name.asInstanceOf[js.Any], start_background_color = start_background_color.asInstanceOf[js.Any], subtitle_color = subtitle_color.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], title_color = title_color.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListReelMediaViewerFeedResponseFundraiserSticker]
   }
 }

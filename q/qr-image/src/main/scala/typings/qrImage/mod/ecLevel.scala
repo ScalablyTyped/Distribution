@@ -14,14 +14,12 @@ trait ecLevel extends js.Object
 
 object ecLevel {
   @scala.inline
-  def H: typings.qrImage.qrImageStrings.H = this.cast("H")
+  def H: typings.qrImage.qrImageStrings.H = "H".asInstanceOf[typings.qrImage.qrImageStrings.H]
   @scala.inline
-  def L: typings.qrImage.qrImageStrings.L = this.cast("L")
+  def L: typings.qrImage.qrImageStrings.L = "L".asInstanceOf[typings.qrImage.qrImageStrings.L]
   @scala.inline
-  def M: typings.qrImage.qrImageStrings.M = this.cast("M")
+  def M: typings.qrImage.qrImageStrings.M = "M".asInstanceOf[typings.qrImage.qrImageStrings.M]
   @scala.inline
-  def Q: typings.qrImage.qrImageStrings.Q = this.cast("Q")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Q: typings.qrImage.qrImageStrings.Q = "Q".asInstanceOf[typings.qrImage.qrImageStrings.Q]
 }
 

@@ -37,7 +37,6 @@ object DataSourcesResource {
     list: AnonAlt => Request_[ListDataSourcesResponse]
   ): DataSourcesResource = {
     val __obj = js.Dynamic.literal(checkValidCreds = js.Any.fromFunction1(checkValidCreds), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[DataSourcesResource]
   }
 }

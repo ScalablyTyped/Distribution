@@ -13,7 +13,6 @@ object AnonDismissedVersionNotification {
   @scala.inline
   def apply(dismissedVersionNotification: String, versions: AnonCurrent): AnonDismissedVersionNotification = {
     val __obj = js.Dynamic.literal(dismissedVersionNotification = dismissedVersionNotification.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDismissedVersionNotification]
   }
 }

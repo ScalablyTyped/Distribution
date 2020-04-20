@@ -14,7 +14,6 @@ object ICellRenderer {
   @scala.inline
   def apply(refresh: js.Any => Boolean): ICellRenderer = {
     val __obj = js.Dynamic.literal(refresh = js.Any.fromFunction1(refresh))
-  
     __obj.asInstanceOf[ICellRenderer]
   }
 }

@@ -23,7 +23,6 @@ object HyperParameterTuningJobWarmStartConfig {
     WarmStartType: HyperParameterTuningJobWarmStartType
   ): HyperParameterTuningJobWarmStartConfig = {
     val __obj = js.Dynamic.literal(ParentHyperParameterTuningJobs = ParentHyperParameterTuningJobs.asInstanceOf[js.Any], WarmStartType = WarmStartType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HyperParameterTuningJobWarmStartConfig]
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "geoip-lite"
-version := "1.1.6-dt-20200402Z-44f8fc"
+version := "1.1.6-dt-20200402Z-a6ed71"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

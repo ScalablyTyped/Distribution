@@ -13,12 +13,10 @@ trait MergeStrategy extends js.Object
 
 object MergeStrategy {
   @scala.inline
-  def append: typings.webpackMerge.webpackMergeStrings.append = this.cast("append")
+  def append: typings.webpackMerge.webpackMergeStrings.append = "append".asInstanceOf[typings.webpackMerge.webpackMergeStrings.append]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def prepend: typings.webpackMerge.webpackMergeStrings.prepend = "prepend".asInstanceOf[typings.webpackMerge.webpackMergeStrings.prepend]
   @scala.inline
-  def prepend: typings.webpackMerge.webpackMergeStrings.prepend = this.cast("prepend")
-  @scala.inline
-  def replace: typings.webpackMerge.webpackMergeStrings.replace = this.cast("replace")
+  def replace: typings.webpackMerge.webpackMergeStrings.replace = "replace".asInstanceOf[typings.webpackMerge.webpackMergeStrings.replace]
 }
 

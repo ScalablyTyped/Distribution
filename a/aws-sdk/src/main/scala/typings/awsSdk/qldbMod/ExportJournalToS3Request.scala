@@ -38,7 +38,6 @@ object ExportJournalToS3Request {
     S3ExportConfiguration: S3ExportConfiguration
   ): ExportJournalToS3Request = {
     val __obj = js.Dynamic.literal(ExclusiveEndTime = ExclusiveEndTime.asInstanceOf[js.Any], InclusiveStartTime = InclusiveStartTime.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any], S3ExportConfiguration = S3ExportConfiguration.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExportJournalToS3Request]
   }
 }

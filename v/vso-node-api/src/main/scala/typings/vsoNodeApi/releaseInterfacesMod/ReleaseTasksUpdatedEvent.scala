@@ -24,7 +24,6 @@ object ReleaseTasksUpdatedEvent {
     tasks: js.Array[ReleaseTask]
   ): ReleaseTasksUpdatedEvent = {
     val __obj = js.Dynamic.literal(environmentId = environmentId.asInstanceOf[js.Any], job = job.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], releaseDeployPhaseId = releaseDeployPhaseId.asInstanceOf[js.Any], releaseId = releaseId.asInstanceOf[js.Any], releaseStepId = releaseStepId.asInstanceOf[js.Any], tasks = tasks.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReleaseTasksUpdatedEvent]
   }
 }

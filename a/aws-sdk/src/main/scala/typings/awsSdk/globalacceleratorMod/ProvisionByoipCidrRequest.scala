@@ -20,7 +20,6 @@ object ProvisionByoipCidrRequest {
   @scala.inline
   def apply(Cidr: GenericString, CidrAuthorizationContext: CidrAuthorizationContext): ProvisionByoipCidrRequest = {
     val __obj = js.Dynamic.literal(Cidr = Cidr.asInstanceOf[js.Any], CidrAuthorizationContext = CidrAuthorizationContext.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProvisionByoipCidrRequest]
   }
 }

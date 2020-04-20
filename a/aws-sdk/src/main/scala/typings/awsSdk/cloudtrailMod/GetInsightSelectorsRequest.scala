@@ -16,7 +16,6 @@ object GetInsightSelectorsRequest {
   @scala.inline
   def apply(TrailName: String): GetInsightSelectorsRequest = {
     val __obj = js.Dynamic.literal(TrailName = TrailName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetInsightSelectorsRequest]
   }
 }

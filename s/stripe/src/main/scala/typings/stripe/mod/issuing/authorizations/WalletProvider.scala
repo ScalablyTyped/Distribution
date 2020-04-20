@@ -13,12 +13,10 @@ trait WalletProvider extends js.Object
 
 object WalletProvider {
   @scala.inline
-  def apple_pay: typings.stripe.stripeStrings.apple_pay = this.cast("apple_pay")
+  def apple_pay: typings.stripe.stripeStrings.apple_pay = "apple_pay".asInstanceOf[typings.stripe.stripeStrings.apple_pay]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def google_pay: typings.stripe.stripeStrings.google_pay = "google_pay".asInstanceOf[typings.stripe.stripeStrings.google_pay]
   @scala.inline
-  def google_pay: typings.stripe.stripeStrings.google_pay = this.cast("google_pay")
-  @scala.inline
-  def samsung_pay: typings.stripe.stripeStrings.samsung_pay = this.cast("samsung_pay")
+  def samsung_pay: typings.stripe.stripeStrings.samsung_pay = "samsung_pay".asInstanceOf[typings.stripe.stripeStrings.samsung_pay]
 }
 

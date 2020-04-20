@@ -13,7 +13,6 @@ object Currencies {
   @scala.inline
   def apply(data: js.Array[AnonMinsize]): Currencies = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Currencies]
   }
 }

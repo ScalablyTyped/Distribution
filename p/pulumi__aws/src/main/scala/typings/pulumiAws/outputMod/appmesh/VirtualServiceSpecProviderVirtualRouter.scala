@@ -16,7 +16,6 @@ object VirtualServiceSpecProviderVirtualRouter {
   @scala.inline
   def apply(virtualRouterName: String): VirtualServiceSpecProviderVirtualRouter = {
     val __obj = js.Dynamic.literal(virtualRouterName = virtualRouterName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VirtualServiceSpecProviderVirtualRouter]
   }
 }

@@ -15,7 +15,6 @@ object AnonNode {
   @scala.inline
   def apply(index: Double, node: BookmarkTreeNode, parentId: String): AnonNode = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], parentId = parentId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNode]
   }
 }

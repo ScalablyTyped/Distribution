@@ -33,7 +33,6 @@ object GetApplicationResult {
     name: String
   ): GetApplicationResult = {
     val __obj = js.Dynamic.literal(appversionLifecycle = appversionLifecycle.asInstanceOf[js.Any], arn = arn.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetApplicationResult]
   }
 }

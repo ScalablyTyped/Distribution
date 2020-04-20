@@ -47,80 +47,78 @@ trait SwiperEvent extends js.Object
 
 object SwiperEvent {
   @scala.inline
-  def autoplay: typings.swiper.swiperStrings.autoplay = this.cast("autoplay")
+  def autoplay: typings.swiper.swiperStrings.autoplay = "autoplay".asInstanceOf[typings.swiper.swiperStrings.autoplay]
   @scala.inline
-  def autoplayStart: typings.swiper.swiperStrings.autoplayStart = this.cast("autoplayStart")
+  def autoplayStart: typings.swiper.swiperStrings.autoplayStart = "autoplayStart".asInstanceOf[typings.swiper.swiperStrings.autoplayStart]
   @scala.inline
-  def autoplayStop: typings.swiper.swiperStrings.autoplayStop = this.cast("autoplayStop")
+  def autoplayStop: typings.swiper.swiperStrings.autoplayStop = "autoplayStop".asInstanceOf[typings.swiper.swiperStrings.autoplayStop]
   @scala.inline
-  def beforeDestroy: typings.swiper.swiperStrings.beforeDestroy = this.cast("beforeDestroy")
+  def beforeDestroy: typings.swiper.swiperStrings.beforeDestroy = "beforeDestroy".asInstanceOf[typings.swiper.swiperStrings.beforeDestroy]
   @scala.inline
-  def beforeLoopFix: typings.swiper.swiperStrings.beforeLoopFix = this.cast("beforeLoopFix")
+  def beforeLoopFix: typings.swiper.swiperStrings.beforeLoopFix = "beforeLoopFix".asInstanceOf[typings.swiper.swiperStrings.beforeLoopFix]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def click: typings.swiper.swiperStrings.click = "click".asInstanceOf[typings.swiper.swiperStrings.click]
   @scala.inline
-  def click: typings.swiper.swiperStrings.click = this.cast("click")
+  def doubleTap: typings.swiper.swiperStrings.doubleTap = "doubleTap".asInstanceOf[typings.swiper.swiperStrings.doubleTap]
   @scala.inline
-  def doubleTap: typings.swiper.swiperStrings.doubleTap = this.cast("doubleTap")
+  def fromEdge: typings.swiper.swiperStrings.fromEdge = "fromEdge".asInstanceOf[typings.swiper.swiperStrings.fromEdge]
   @scala.inline
-  def fromEdge: typings.swiper.swiperStrings.fromEdge = this.cast("fromEdge")
+  def imagesReady: typings.swiper.swiperStrings.imagesReady = "imagesReady".asInstanceOf[typings.swiper.swiperStrings.imagesReady]
   @scala.inline
-  def imagesReady: typings.swiper.swiperStrings.imagesReady = this.cast("imagesReady")
+  def init: typings.swiper.swiperStrings.init = "init".asInstanceOf[typings.swiper.swiperStrings.init]
   @scala.inline
-  def init: typings.swiper.swiperStrings.init = this.cast("init")
+  def lazyImageLoad: typings.swiper.swiperStrings.lazyImageLoad = "lazyImageLoad".asInstanceOf[typings.swiper.swiperStrings.lazyImageLoad]
   @scala.inline
-  def lazyImageLoad: typings.swiper.swiperStrings.lazyImageLoad = this.cast("lazyImageLoad")
+  def lazyImageReady: typings.swiper.swiperStrings.lazyImageReady = "lazyImageReady".asInstanceOf[typings.swiper.swiperStrings.lazyImageReady]
   @scala.inline
-  def lazyImageReady: typings.swiper.swiperStrings.lazyImageReady = this.cast("lazyImageReady")
+  def loopFix: typings.swiper.swiperStrings.loopFix = "loopFix".asInstanceOf[typings.swiper.swiperStrings.loopFix]
   @scala.inline
-  def loopFix: typings.swiper.swiperStrings.loopFix = this.cast("loopFix")
+  def observerUpdate: typings.swiper.swiperStrings.observerUpdate = "observerUpdate".asInstanceOf[typings.swiper.swiperStrings.observerUpdate]
   @scala.inline
-  def observerUpdate: typings.swiper.swiperStrings.observerUpdate = this.cast("observerUpdate")
+  def paginationRender: typings.swiper.swiperStrings.paginationRender = "paginationRender".asInstanceOf[typings.swiper.swiperStrings.paginationRender]
   @scala.inline
-  def paginationRender: typings.swiper.swiperStrings.paginationRender = this.cast("paginationRender")
+  def paginationUpdate: typings.swiper.swiperStrings.paginationUpdate = "paginationUpdate".asInstanceOf[typings.swiper.swiperStrings.paginationUpdate]
   @scala.inline
-  def paginationUpdate: typings.swiper.swiperStrings.paginationUpdate = this.cast("paginationUpdate")
+  def progress: typings.swiper.swiperStrings.progress = "progress".asInstanceOf[typings.swiper.swiperStrings.progress]
   @scala.inline
-  def progress: typings.swiper.swiperStrings.progress = this.cast("progress")
+  def reachBeginning: typings.swiper.swiperStrings.reachBeginning = "reachBeginning".asInstanceOf[typings.swiper.swiperStrings.reachBeginning]
   @scala.inline
-  def reachBeginning: typings.swiper.swiperStrings.reachBeginning = this.cast("reachBeginning")
+  def reachEnd: typings.swiper.swiperStrings.reachEnd = "reachEnd".asInstanceOf[typings.swiper.swiperStrings.reachEnd]
   @scala.inline
-  def reachEnd: typings.swiper.swiperStrings.reachEnd = this.cast("reachEnd")
+  def resize: typings.swiper.swiperStrings.resize = "resize".asInstanceOf[typings.swiper.swiperStrings.resize]
   @scala.inline
-  def resize: typings.swiper.swiperStrings.resize = this.cast("resize")
+  def setTransition: typings.swiper.swiperStrings.setTransition = "setTransition".asInstanceOf[typings.swiper.swiperStrings.setTransition]
   @scala.inline
-  def setTransition: typings.swiper.swiperStrings.setTransition = this.cast("setTransition")
+  def setTranslate: typings.swiper.swiperStrings.setTranslate = "setTranslate".asInstanceOf[typings.swiper.swiperStrings.setTranslate]
   @scala.inline
-  def setTranslate: typings.swiper.swiperStrings.setTranslate = this.cast("setTranslate")
+  def slideChange: typings.swiper.swiperStrings.slideChange = "slideChange".asInstanceOf[typings.swiper.swiperStrings.slideChange]
   @scala.inline
-  def slideChange: typings.swiper.swiperStrings.slideChange = this.cast("slideChange")
+  def slideChangeTransitionEnd: typings.swiper.swiperStrings.slideChangeTransitionEnd = "slideChangeTransitionEnd".asInstanceOf[typings.swiper.swiperStrings.slideChangeTransitionEnd]
   @scala.inline
-  def slideChangeTransitionEnd: typings.swiper.swiperStrings.slideChangeTransitionEnd = this.cast("slideChangeTransitionEnd")
+  def slideChangeTransitionStart: typings.swiper.swiperStrings.slideChangeTransitionStart = "slideChangeTransitionStart".asInstanceOf[typings.swiper.swiperStrings.slideChangeTransitionStart]
   @scala.inline
-  def slideChangeTransitionStart: typings.swiper.swiperStrings.slideChangeTransitionStart = this.cast("slideChangeTransitionStart")
+  def slideNextTransitionEnd: typings.swiper.swiperStrings.slideNextTransitionEnd = "slideNextTransitionEnd".asInstanceOf[typings.swiper.swiperStrings.slideNextTransitionEnd]
   @scala.inline
-  def slideNextTransitionEnd: typings.swiper.swiperStrings.slideNextTransitionEnd = this.cast("slideNextTransitionEnd")
+  def slideNextTransitionStart: typings.swiper.swiperStrings.slideNextTransitionStart = "slideNextTransitionStart".asInstanceOf[typings.swiper.swiperStrings.slideNextTransitionStart]
   @scala.inline
-  def slideNextTransitionStart: typings.swiper.swiperStrings.slideNextTransitionStart = this.cast("slideNextTransitionStart")
+  def slidePrevTransitionEnd: typings.swiper.swiperStrings.slidePrevTransitionEnd = "slidePrevTransitionEnd".asInstanceOf[typings.swiper.swiperStrings.slidePrevTransitionEnd]
   @scala.inline
-  def slidePrevTransitionEnd: typings.swiper.swiperStrings.slidePrevTransitionEnd = this.cast("slidePrevTransitionEnd")
+  def slidePrevTransitionStart: typings.swiper.swiperStrings.slidePrevTransitionStart = "slidePrevTransitionStart".asInstanceOf[typings.swiper.swiperStrings.slidePrevTransitionStart]
   @scala.inline
-  def slidePrevTransitionStart: typings.swiper.swiperStrings.slidePrevTransitionStart = this.cast("slidePrevTransitionStart")
+  def sliderMove: typings.swiper.swiperStrings.sliderMove = "sliderMove".asInstanceOf[typings.swiper.swiperStrings.sliderMove]
   @scala.inline
-  def sliderMove: typings.swiper.swiperStrings.sliderMove = this.cast("sliderMove")
+  def tap: typings.swiper.swiperStrings.tap = "tap".asInstanceOf[typings.swiper.swiperStrings.tap]
   @scala.inline
-  def tap: typings.swiper.swiperStrings.tap = this.cast("tap")
+  def touchEnd: typings.swiper.swiperStrings.touchEnd = "touchEnd".asInstanceOf[typings.swiper.swiperStrings.touchEnd]
   @scala.inline
-  def touchEnd: typings.swiper.swiperStrings.touchEnd = this.cast("touchEnd")
+  def touchMove: typings.swiper.swiperStrings.touchMove = "touchMove".asInstanceOf[typings.swiper.swiperStrings.touchMove]
   @scala.inline
-  def touchMove: typings.swiper.swiperStrings.touchMove = this.cast("touchMove")
+  def touchMoveOpposite: typings.swiper.swiperStrings.touchMoveOpposite = "touchMoveOpposite".asInstanceOf[typings.swiper.swiperStrings.touchMoveOpposite]
   @scala.inline
-  def touchMoveOpposite: typings.swiper.swiperStrings.touchMoveOpposite = this.cast("touchMoveOpposite")
+  def touchStart: typings.swiper.swiperStrings.touchStart = "touchStart".asInstanceOf[typings.swiper.swiperStrings.touchStart]
   @scala.inline
-  def touchStart: typings.swiper.swiperStrings.touchStart = this.cast("touchStart")
+  def transitionEnd: typings.swiper.swiperStrings.transitionEnd = "transitionEnd".asInstanceOf[typings.swiper.swiperStrings.transitionEnd]
   @scala.inline
-  def transitionEnd: typings.swiper.swiperStrings.transitionEnd = this.cast("transitionEnd")
-  @scala.inline
-  def transitionStart: typings.swiper.swiperStrings.transitionStart = this.cast("transitionStart")
+  def transitionStart: typings.swiper.swiperStrings.transitionStart = "transitionStart".asInstanceOf[typings.swiper.swiperStrings.transitionStart]
 }
 

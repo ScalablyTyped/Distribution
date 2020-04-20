@@ -14,7 +14,6 @@ object AnonChildren {
   @scala.inline
   def apply[T /* <: js.Array[_] */](children: T => js.Any): AnonChildren[T] = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-  
     __obj.asInstanceOf[AnonChildren[T]]
   }
 }

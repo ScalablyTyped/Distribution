@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("tablesorter/Omit", JSImport.Namespace)
 @js.native
 object omitMod extends js.Object {
-  type Omit[T, K /* <: String */] = Pick[T, Exclude[String, K]]
+  type Omit[T, K /* <: /* keyof T */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
 }
 

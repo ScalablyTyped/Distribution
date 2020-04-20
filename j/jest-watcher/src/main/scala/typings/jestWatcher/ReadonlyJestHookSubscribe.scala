@@ -22,7 +22,6 @@ object ReadonlyJestHookSubscribe {
     shouldRunTestSuite: ShouldRunTestSuite => Unit
   ): ReadonlyJestHookSubscribe = {
     val __obj = js.Dynamic.literal(onFileChange = js.Any.fromFunction1(onFileChange), onTestRunComplete = js.Any.fromFunction1(onTestRunComplete), shouldRunTestSuite = js.Any.fromFunction1(shouldRunTestSuite))
-  
     __obj.asInstanceOf[ReadonlyJestHookSubscribe]
   }
 }

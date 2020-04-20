@@ -13,7 +13,6 @@ object PickImplelementSize {
   @scala.inline
   def apply(elementSize: String): PickImplelementSize = {
     val __obj = js.Dynamic.literal(elementSize = elementSize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplelementSize]
   }
 }

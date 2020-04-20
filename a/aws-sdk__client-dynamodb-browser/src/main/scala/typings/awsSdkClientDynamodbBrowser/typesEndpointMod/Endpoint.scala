@@ -19,7 +19,6 @@ object Endpoint {
   @scala.inline
   def apply(Address: String, CachePeriodInMinutes: Double): Endpoint = {
     val __obj = js.Dynamic.literal(Address = Address.asInstanceOf[js.Any], CachePeriodInMinutes = CachePeriodInMinutes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Endpoint]
   }
 }

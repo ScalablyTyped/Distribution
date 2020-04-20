@@ -29,24 +29,22 @@ trait FileAttribute extends js.Object
 
 object FileAttribute {
   @scala.inline
-  def Alias: `1024` = this.cast(1024)
+  def Alias: `1024` = 1024.asInstanceOf[`1024`]
   @scala.inline
-  def Archive: `32` = this.cast(32)
+  def Archive: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def Compressed: `2048` = this.cast(2048)
+  def Compressed: `2048` = 2048.asInstanceOf[`2048`]
   @scala.inline
-  def Directory: `16` = this.cast(16)
+  def Directory: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def Hidden: `2` = this.cast(2)
+  def Hidden: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def Normal: `0` = this.cast(0)
+  def Normal: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def ReadOnly: `1` = this.cast(1)
+  def ReadOnly: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def System: `4` = this.cast(4)
+  def System: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def Volume: `8` = this.cast(8)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Volume: `8` = 8.asInstanceOf[`8`]
 }
 

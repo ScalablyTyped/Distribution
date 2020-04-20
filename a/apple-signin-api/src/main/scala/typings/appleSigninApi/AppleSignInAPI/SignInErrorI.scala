@@ -13,7 +13,6 @@ object SignInErrorI {
   @scala.inline
   def apply(error: String): SignInErrorI = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SignInErrorI]
   }
 }

@@ -14,14 +14,12 @@ trait AudioCodec extends js.Object
 
 object AudioCodec {
   @scala.inline
-  def PCMA: typings.twilioVideo.twilioVideoStrings.PCMA = this.cast("PCMA")
+  def PCMA: typings.twilioVideo.twilioVideoStrings.PCMA = "PCMA".asInstanceOf[typings.twilioVideo.twilioVideoStrings.PCMA]
   @scala.inline
-  def PCMU: typings.twilioVideo.twilioVideoStrings.PCMU = this.cast("PCMU")
+  def PCMU: typings.twilioVideo.twilioVideoStrings.PCMU = "PCMU".asInstanceOf[typings.twilioVideo.twilioVideoStrings.PCMU]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def isac: typings.twilioVideo.twilioVideoStrings.isac = "isac".asInstanceOf[typings.twilioVideo.twilioVideoStrings.isac]
   @scala.inline
-  def isac: typings.twilioVideo.twilioVideoStrings.isac = this.cast("isac")
-  @scala.inline
-  def opus: typings.twilioVideo.twilioVideoStrings.opus = this.cast("opus")
+  def opus: typings.twilioVideo.twilioVideoStrings.opus = "opus".asInstanceOf[typings.twilioVideo.twilioVideoStrings.opus]
 }
 

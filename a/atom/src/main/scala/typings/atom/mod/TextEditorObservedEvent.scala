@@ -14,7 +14,6 @@ object TextEditorObservedEvent {
   @scala.inline
   def apply(index: Double, pane: Pane, textEditor: TextEditor): TextEditorObservedEvent = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], pane = pane.asInstanceOf[js.Any], textEditor = textEditor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TextEditorObservedEvent]
   }
 }

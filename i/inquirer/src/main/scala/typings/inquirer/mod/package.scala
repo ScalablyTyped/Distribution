@@ -72,7 +72,10 @@ package object mod {
     * @template T
     * The type of the keys to suggest.
     */
-  type KeyUnion[T] = typings.inquirer.mod.LiteralUnion[typings.std.Extract[java.lang.String, java.lang.String], java.lang.String]
+  type KeyUnion[T] = typings.inquirer.mod.LiteralUnion[
+    typings.std.Extract[/* keyof T */ java.lang.String, java.lang.String], 
+    java.lang.String
+  ]
   /**
     * Provides options for a question for the `ListPrompt`.
     *

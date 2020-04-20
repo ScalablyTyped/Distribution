@@ -17,7 +17,6 @@ object DeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute {
   @scala.inline
   def apply(listenerArns: Input[js.Array[Input[String]]]): DeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute = {
     val __obj = js.Dynamic.literal(listenerArns = listenerArns.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute]
   }
 }

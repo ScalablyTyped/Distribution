@@ -34,7 +34,6 @@ object ServerList {
     virtualserver_uptime: Double
   ): ServerList = {
     val __obj = js.Dynamic.literal(virtualserver_autostart = virtualserver_autostart.asInstanceOf[js.Any], virtualserver_clientsonline = virtualserver_clientsonline.asInstanceOf[js.Any], virtualserver_id = virtualserver_id.asInstanceOf[js.Any], virtualserver_machine_id = virtualserver_machine_id.asInstanceOf[js.Any], virtualserver_maxclients = virtualserver_maxclients.asInstanceOf[js.Any], virtualserver_name = virtualserver_name.asInstanceOf[js.Any], virtualserver_port = virtualserver_port.asInstanceOf[js.Any], virtualserver_queryclientsonline = virtualserver_queryclientsonline.asInstanceOf[js.Any], virtualserver_status = virtualserver_status.asInstanceOf[js.Any], virtualserver_unique_identifier = virtualserver_unique_identifier.asInstanceOf[js.Any], virtualserver_uptime = virtualserver_uptime.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ServerList]
   }
 }

@@ -13,7 +13,6 @@ object AnonDst {
   @scala.inline
   def apply(dst: () => Unit, src: () => Unit): AnonDst = {
     val __obj = js.Dynamic.literal(dst = js.Any.fromFunction0(dst), src = js.Any.fromFunction0(src))
-  
     __obj.asInstanceOf[AnonDst]
   }
 }

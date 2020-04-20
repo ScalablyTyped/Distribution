@@ -22,7 +22,6 @@ object GetVpcFilter {
   @scala.inline
   def apply(name: String, values: js.Array[String]): GetVpcFilter = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetVpcFilter]
   }
 }

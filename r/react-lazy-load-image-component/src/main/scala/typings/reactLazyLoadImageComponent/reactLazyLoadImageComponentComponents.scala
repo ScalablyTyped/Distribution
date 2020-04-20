@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 object reactLazyLoadImageComponentComponents extends reactLazyLoadImageComponentProps {
   @scala.inline
-  def LazyLoadComponent: ComponentType[LazyLoadComponentProps] = typings.reactLazyLoadImageComponent.mod.LazyLoadComponent.asInstanceOf[typings.react.mod.ComponentType[LazyLoadComponentProps]]
+  def LazyLoadComponent: ComponentType[LazyLoadComponentProps] = typings.reactLazyLoadImageComponent.mod.LazyLoadComponent.asInstanceOf[ComponentType[LazyLoadComponentProps]]
   @scala.inline
-  def LazyLoadImage: ComponentType[LazyLoadImageProps] = typings.reactLazyLoadImageComponent.mod.LazyLoadImage.asInstanceOf[typings.react.mod.ComponentType[LazyLoadImageProps]]
+  def LazyLoadImage: ComponentType[LazyLoadImageProps] = typings.reactLazyLoadImageComponent.mod.LazyLoadImage.asInstanceOf[ComponentType[LazyLoadImageProps]]
 }
 

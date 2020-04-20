@@ -13,7 +13,6 @@ object LaunchConfig {
   @scala.inline
   def apply(executablePath: String, ignoreHTTPSErrors: Boolean): LaunchConfig = {
     val __obj = js.Dynamic.literal(executablePath = executablePath.asInstanceOf[js.Any], ignoreHTTPSErrors = ignoreHTTPSErrors.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LaunchConfig]
   }
 }

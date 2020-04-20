@@ -23,7 +23,6 @@ object AnonGestureEnabled {
     shadowEnabled: Boolean
   ): AnonGestureEnabled = {
     val __obj = js.Dynamic.literal(gestureEnabled = gestureEnabled.asInstanceOf[js.Any], gestureVelocityImpact = gestureVelocityImpact.asInstanceOf[js.Any], overlay = js.Any.fromFunction1(overlay), overlayEnabled = overlayEnabled.asInstanceOf[js.Any], shadowEnabled = shadowEnabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGestureEnabled]
   }
 }

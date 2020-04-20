@@ -16,7 +16,6 @@ object DeprecateSystemTemplateRequest {
   @scala.inline
   def apply(id: Urn): DeprecateSystemTemplateRequest = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeprecateSystemTemplateRequest]
   }
 }

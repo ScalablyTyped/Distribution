@@ -13,7 +13,6 @@ object AnonPEventDocEventObject {
   @scala.inline
   def apply(pEvent: DocEventObject): AnonPEventDocEventObject = {
     val __obj = js.Dynamic.literal(pEvent = pEvent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPEventDocEventObject]
   }
 }

@@ -14,10 +14,8 @@ trait fmZOrder extends js.Object
 
 object fmZOrder {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fmZOrderBack: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def fmZOrderBack: `1` = this.cast(1)
-  @scala.inline
-  def fmZOrderFront: `0` = this.cast(0)
+  def fmZOrderFront: `0` = 0.asInstanceOf[`0`]
 }
 

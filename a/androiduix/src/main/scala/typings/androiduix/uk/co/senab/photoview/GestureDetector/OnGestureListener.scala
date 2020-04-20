@@ -18,7 +18,6 @@ object OnGestureListener {
     onScale: (Double, Double, Double) => Unit
   ): OnGestureListener = {
     val __obj = js.Dynamic.literal(onDrag = js.Any.fromFunction2(onDrag), onFling = js.Any.fromFunction4(onFling), onScale = js.Any.fromFunction3(onScale))
-  
     __obj.asInstanceOf[OnGestureListener]
   }
 }

@@ -15,16 +15,14 @@ trait statusType extends js.Object
 
 object statusType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def errored: typings.stripeV3.stripeV3Strings.errored = "errored".asInstanceOf[typings.stripeV3.stripeV3Strings.errored]
   @scala.inline
-  def errored: typings.stripeV3.stripeV3Strings.errored = this.cast("errored")
+  def `new`: typings.stripeV3.stripeV3Strings.`new` = "new".asInstanceOf[typings.stripeV3.stripeV3Strings.`new`]
   @scala.inline
-  def `new`: typings.stripeV3.stripeV3Strings.`new` = this.cast("new")
+  def validated: typings.stripeV3.stripeV3Strings.validated = "validated".asInstanceOf[typings.stripeV3.stripeV3Strings.validated]
   @scala.inline
-  def validated: typings.stripeV3.stripeV3Strings.validated = this.cast("validated")
+  def verification_failed: typings.stripeV3.stripeV3Strings.verification_failed = "verification_failed".asInstanceOf[typings.stripeV3.stripeV3Strings.verification_failed]
   @scala.inline
-  def verification_failed: typings.stripeV3.stripeV3Strings.verification_failed = this.cast("verification_failed")
-  @scala.inline
-  def verified: typings.stripeV3.stripeV3Strings.verified = this.cast("verified")
+  def verified: typings.stripeV3.stripeV3Strings.verified = "verified".asInstanceOf[typings.stripeV3.stripeV3Strings.verified]
 }
 

@@ -31,7 +31,6 @@ object AnonForm {
     string: (js.Any, js.Any, String, AposObject, js.Any, js.Function0[_]) => Unit
   ): AnonForm = {
     val __obj = js.Dynamic.literal(form = js.Any.fromFunction6(form), string = js.Any.fromFunction6(string))
-  
     __obj.asInstanceOf[AnonForm]
   }
 }

@@ -15,7 +15,6 @@ object GrouplicenseusersResource {
   @scala.inline
   def apply(list: AnonGroupLicenseId => Request_[GroupLicenseUsersListResponse]): GrouplicenseusersResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[GrouplicenseusersResource]
   }
 }

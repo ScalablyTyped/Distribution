@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactTruncateProps {
   @scala.inline
-  def ReactTruncateProps: TruncateProps.type = typings.reactTruncate.mod.TruncateProps
+  def ReactTruncateProps: TruncateProps.type = TruncateProps
   type ReactTruncateProps = TruncateProps
 }
 

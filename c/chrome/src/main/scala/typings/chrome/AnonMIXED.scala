@@ -17,7 +17,6 @@ object AnonMIXED {
   @scala.inline
   def apply(MIXED: mixed, NORMAL: normal, OFF: off): AnonMIXED = {
     val __obj = js.Dynamic.literal(MIXED = MIXED.asInstanceOf[js.Any], NORMAL = NORMAL.asInstanceOf[js.Any], OFF = OFF.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMIXED]
   }
 }

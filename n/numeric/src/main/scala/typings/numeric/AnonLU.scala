@@ -15,7 +15,6 @@ object AnonLU {
   @scala.inline
   def apply(LU: Matrix, P: Vector): AnonLU = {
     val __obj = js.Dynamic.literal(LU = LU.asInstanceOf[js.Any], P = P.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLU]
   }
 }

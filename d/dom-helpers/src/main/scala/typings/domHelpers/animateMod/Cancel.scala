@@ -12,7 +12,6 @@ object Cancel {
   @scala.inline
   def apply(cancel: () => Unit): Cancel = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel))
-  
     __obj.asInstanceOf[Cancel]
   }
 }

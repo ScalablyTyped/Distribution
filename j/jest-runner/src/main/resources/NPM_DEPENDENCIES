@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jest-runner" : "25.2.7"
+      "jest-runner" : "25.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "jest-runner" : "25.2.7"
+      "jest-runner" : "25.3.0"
     }
   ],
   "compile-devDependencies" : [

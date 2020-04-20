@@ -13,7 +13,6 @@ object AnonFindByElement {
   @scala.inline
   def apply(findByElement: HTMLElement => js.UndefOr[WaypointContext]): AnonFindByElement = {
     val __obj = js.Dynamic.literal(findByElement = js.Any.fromFunction1(findByElement))
-  
     __obj.asInstanceOf[AnonFindByElement]
   }
 }

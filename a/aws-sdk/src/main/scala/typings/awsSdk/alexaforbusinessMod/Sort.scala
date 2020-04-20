@@ -20,7 +20,6 @@ object Sort {
   @scala.inline
   def apply(Key: SortKey, Value: SortValue): Sort = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Sort]
   }
 }

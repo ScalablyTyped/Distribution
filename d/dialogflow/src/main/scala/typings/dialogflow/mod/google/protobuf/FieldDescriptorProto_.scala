@@ -27,7 +27,7 @@ class FieldDescriptorProto_ () extends IFieldDescriptorProto {
   var jsonName_FieldDescriptorProto_ : String = js.native
   /** FieldDescriptorProto label. */
   @JSName("label")
-  var label_FieldDescriptorProto_ : Label | String = js.native
+  var label_FieldDescriptorProto_ : Label | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.FieldDescriptorProto.Label * / any */ String) = js.native
   /** FieldDescriptorProto name. */
   @JSName("name")
   var name_FieldDescriptorProto_ : String = js.native
@@ -42,7 +42,7 @@ class FieldDescriptorProto_ () extends IFieldDescriptorProto {
   var typeName_FieldDescriptorProto_ : String = js.native
   /** FieldDescriptorProto type. */
   @JSName("type")
-  var type_FieldDescriptorProto_ : Type | String = js.native
+  var type_FieldDescriptorProto_ : Type | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.FieldDescriptorProto.Type * / any */ String) = js.native
   /**
     * Converts this FieldDescriptorProto to JSON.
     * @returns JSON object

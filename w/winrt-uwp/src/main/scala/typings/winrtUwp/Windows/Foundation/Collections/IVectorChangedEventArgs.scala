@@ -16,7 +16,6 @@ object IVectorChangedEventArgs {
   @scala.inline
   def apply(collectionChange: CollectionChange, index: Double): IVectorChangedEventArgs = {
     val __obj = js.Dynamic.literal(collectionChange = collectionChange.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IVectorChangedEventArgs]
   }
 }

@@ -15,7 +15,6 @@ object PointInTimeRecoverySpecification {
   @scala.inline
   def apply(PointInTimeRecoveryEnabled: Boolean): PointInTimeRecoverySpecification = {
     val __obj = js.Dynamic.literal(PointInTimeRecoveryEnabled = PointInTimeRecoveryEnabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PointInTimeRecoverySpecification]
   }
 }

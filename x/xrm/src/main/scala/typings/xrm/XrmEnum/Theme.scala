@@ -18,12 +18,10 @@ trait Theme extends js.Object
 
 object Theme {
   @scala.inline
-  def Default: default = this.cast("default")
+  def Default: default = "default".asInstanceOf[default]
   @scala.inline
-  def Office12Blue: typings.xrm.xrmStrings.Office12Blue = this.cast("Office12Blue")
+  def Office12Blue: typings.xrm.xrmStrings.Office12Blue = "Office12Blue".asInstanceOf[typings.xrm.xrmStrings.Office12Blue]
   @scala.inline
-  def Office14Silver: typings.xrm.xrmStrings.Office14Silver = this.cast("Office14Silver")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Office14Silver: typings.xrm.xrmStrings.Office14Silver = "Office14Silver".asInstanceOf[typings.xrm.xrmStrings.Office14Silver]
 }
 

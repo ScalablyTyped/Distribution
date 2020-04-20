@@ -13,7 +13,6 @@ object TypeofFirehose {
   @scala.inline
   def apply(Types: TypeofFirehose): TypeofFirehose = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofFirehose]
   }
 }

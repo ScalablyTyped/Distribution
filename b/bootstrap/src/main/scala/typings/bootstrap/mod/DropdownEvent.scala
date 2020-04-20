@@ -14,14 +14,12 @@ trait DropdownEvent extends js.Object
 
 object DropdownEvent {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def hiddenDotbsDotdropdown: typings.bootstrap.bootstrapStrings.hiddenDotbsDotdropdown = "hidden.bs.dropdown".asInstanceOf[typings.bootstrap.bootstrapStrings.hiddenDotbsDotdropdown]
   @scala.inline
-  def hiddenDotbsDotdropdown: typings.bootstrap.bootstrapStrings.hiddenDotbsDotdropdown = this.cast("hidden.bs.dropdown")
+  def hideDotbsDotdropdown: typings.bootstrap.bootstrapStrings.hideDotbsDotdropdown = "hide.bs.dropdown".asInstanceOf[typings.bootstrap.bootstrapStrings.hideDotbsDotdropdown]
   @scala.inline
-  def hideDotbsDotdropdown: typings.bootstrap.bootstrapStrings.hideDotbsDotdropdown = this.cast("hide.bs.dropdown")
+  def showDotbsDotdropdown: typings.bootstrap.bootstrapStrings.showDotbsDotdropdown = "show.bs.dropdown".asInstanceOf[typings.bootstrap.bootstrapStrings.showDotbsDotdropdown]
   @scala.inline
-  def showDotbsDotdropdown: typings.bootstrap.bootstrapStrings.showDotbsDotdropdown = this.cast("show.bs.dropdown")
-  @scala.inline
-  def shownDotbsDotdropdown: typings.bootstrap.bootstrapStrings.shownDotbsDotdropdown = this.cast("shown.bs.dropdown")
+  def shownDotbsDotdropdown: typings.bootstrap.bootstrapStrings.shownDotbsDotdropdown = "shown.bs.dropdown".asInstanceOf[typings.bootstrap.bootstrapStrings.shownDotbsDotdropdown]
 }
 

@@ -11,16 +11,16 @@ trait reactBootstrapTableProps {
   def BootstrapTableProps: typings.reactBootstrapTable.mod.BootstrapTableProps.type = typings.reactBootstrapTable.mod.BootstrapTableProps
   type BootstrapTableProps = typings.reactBootstrapTable.mod.BootstrapTableProps
   @scala.inline
-  def ClearSearchButtonProps: ButtonProps.type = typings.reactBootstrapTable.mod.ButtonProps
+  def ClearSearchButtonProps: ButtonProps.type = ButtonProps
   type ClearSearchButtonProps = ButtonProps
   @scala.inline
-  def DeleteButtonProps: ButtonProps.type = typings.reactBootstrapTable.mod.ButtonProps
+  def DeleteButtonProps: ButtonProps.type = ButtonProps
   type DeleteButtonProps = ButtonProps
   @scala.inline
-  def ExportCSVButtonProps: ButtonProps.type = typings.reactBootstrapTable.mod.ButtonProps
+  def ExportCSVButtonProps: ButtonProps.type = ButtonProps
   type ExportCSVButtonProps = ButtonProps
   @scala.inline
-  def InsertButtonProps: ButtonProps.type = typings.reactBootstrapTable.mod.ButtonProps
+  def InsertButtonProps: ButtonProps.type = ButtonProps
   type InsertButtonProps = ButtonProps
   @scala.inline
   def InsertModalFooterProps: typings.reactBootstrapTable.mod.InsertModalFooterProps.type = typings.reactBootstrapTable.mod.InsertModalFooterProps
@@ -32,7 +32,7 @@ trait reactBootstrapTableProps {
   def SearchFieldProps: typings.reactBootstrapTable.mod.SearchFieldProps.type = typings.reactBootstrapTable.mod.SearchFieldProps
   type SearchFieldProps = typings.reactBootstrapTable.mod.SearchFieldProps
   @scala.inline
-  def ShowSelectedOnlyButtonProps: ShowSelectedButtonProps.type = typings.reactBootstrapTable.mod.ShowSelectedButtonProps
+  def ShowSelectedOnlyButtonProps: ShowSelectedButtonProps.type = ShowSelectedButtonProps
   type ShowSelectedOnlyButtonProps = ShowSelectedButtonProps
   @scala.inline
   def SizePerPageDropDownProps: typings.reactBootstrapTable.mod.SizePerPageDropDownProps.type = typings.reactBootstrapTable.mod.SizePerPageDropDownProps

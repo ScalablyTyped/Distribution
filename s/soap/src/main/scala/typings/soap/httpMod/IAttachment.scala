@@ -16,7 +16,6 @@ object IAttachment {
   @scala.inline
   def apply(body: ReadableStream, contentId: String, mimetype: String, name: String): IAttachment = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], contentId = contentId.asInstanceOf[js.Any], mimetype = mimetype.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IAttachment]
   }
 }

@@ -19,7 +19,6 @@ object AnonButton {
   @scala.inline
   def apply(Button: OlMouseButton, Shift: OlShiftState, X: OLE_XPOS_CONTAINER, Y: OLE_YPOS_CONTAINER): AnonButton = {
     val __obj = js.Dynamic.literal(Button = Button.asInstanceOf[js.Any], Shift = Shift.asInstanceOf[js.Any], X = X.asInstanceOf[js.Any], Y = Y.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonButton]
   }
 }

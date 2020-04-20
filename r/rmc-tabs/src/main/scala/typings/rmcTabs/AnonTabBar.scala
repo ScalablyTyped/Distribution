@@ -13,7 +13,6 @@ object AnonTabBar {
   @scala.inline
   def apply(TabBar: AnonActiveTextColor, Tabs: AnonBottomTabBarSplitLine): AnonTabBar = {
     val __obj = js.Dynamic.literal(TabBar = TabBar.asInstanceOf[js.Any], Tabs = Tabs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTabBar]
   }
 }

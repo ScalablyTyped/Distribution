@@ -15,7 +15,6 @@ object CertificateInfo {
   @scala.inline
   def apply(caCert: String, caKey: String, domains: js.Array[String], validityDays: Double): CertificateInfo = {
     val __obj = js.Dynamic.literal(caCert = caCert.asInstanceOf[js.Any], caKey = caKey.asInstanceOf[js.Any], domains = domains.asInstanceOf[js.Any], validityDays = validityDays.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CertificateInfo]
   }
 }

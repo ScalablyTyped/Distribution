@@ -12,10 +12,8 @@ trait Position extends js.Object
 
 object Position {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def left: typings.reactLeafletSidebarv2.reactLeafletSidebarv2Strings.left = "left".asInstanceOf[typings.reactLeafletSidebarv2.reactLeafletSidebarv2Strings.left]
   @scala.inline
-  def left: typings.reactLeafletSidebarv2.reactLeafletSidebarv2Strings.left = this.cast("left")
-  @scala.inline
-  def right: typings.reactLeafletSidebarv2.reactLeafletSidebarv2Strings.right = this.cast("right")
+  def right: typings.reactLeafletSidebarv2.reactLeafletSidebarv2Strings.right = "right".asInstanceOf[typings.reactLeafletSidebarv2.reactLeafletSidebarv2Strings.right]
 }
 

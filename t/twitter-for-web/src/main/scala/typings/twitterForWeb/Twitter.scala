@@ -26,7 +26,6 @@ object Twitter {
     widgets: TwitterWidgets
   ): Twitter = {
     val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], ready = js.Any.fromFunction1(ready), widgets = widgets.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Twitter]
   }
 }

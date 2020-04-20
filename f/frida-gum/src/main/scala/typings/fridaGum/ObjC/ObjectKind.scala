@@ -16,12 +16,10 @@ trait ObjectKind extends js.Object
 
 object ObjectKind {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `class`: typings.fridaGum.fridaGumStrings.`class` = "class".asInstanceOf[typings.fridaGum.fridaGumStrings.`class`]
   @scala.inline
-  def `class`: typings.fridaGum.fridaGumStrings.`class` = this.cast("class")
+  def instance: typings.fridaGum.fridaGumStrings.instance = "instance".asInstanceOf[typings.fridaGum.fridaGumStrings.instance]
   @scala.inline
-  def instance: typings.fridaGum.fridaGumStrings.instance = this.cast("instance")
-  @scala.inline
-  def `meta-class`: typings.fridaGum.fridaGumStrings.`meta-class` = this.cast("meta-class")
+  def `meta-class`: typings.fridaGum.fridaGumStrings.`meta-class` = "meta-class".asInstanceOf[typings.fridaGum.fridaGumStrings.`meta-class`]
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactBetterPasswordProps {
   @scala.inline
-  def ReactBetterPasswordProps: PasswordProps.type = typings.reactBetterPassword.mod.PasswordProps
+  def ReactBetterPasswordProps: PasswordProps.type = PasswordProps
   type ReactBetterPasswordProps = PasswordProps
 }
 

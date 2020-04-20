@@ -14,10 +14,8 @@ trait XlDeleteShiftDirection extends js.Object
 
 object XlDeleteShiftDirection {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlShiftToLeft: `-4159` = -4159.asInstanceOf[`-4159`]
   @scala.inline
-  def xlShiftToLeft: `-4159` = this.cast(-4159)
-  @scala.inline
-  def xlShiftUp: `-4162` = this.cast(-4162)
+  def xlShiftUp: `-4162` = -4162.asInstanceOf[`-4162`]
 }
 

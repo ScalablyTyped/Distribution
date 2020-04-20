@@ -14,7 +14,6 @@ object IBound {
   @scala.inline
   def apply(max: AnonX, min: AnonX): IBound = {
     val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IBound]
   }
 }

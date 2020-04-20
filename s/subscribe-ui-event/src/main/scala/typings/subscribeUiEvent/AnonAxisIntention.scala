@@ -19,7 +19,6 @@ object AnonAxisIntention {
   @scala.inline
   def apply(axisIntention: x | y | _empty, deltaX: Double, deltaY: Double, startX: Double, startY: Double): AnonAxisIntention = {
     val __obj = js.Dynamic.literal(axisIntention = axisIntention.asInstanceOf[js.Any], deltaX = deltaX.asInstanceOf[js.Any], deltaY = deltaY.asInstanceOf[js.Any], startX = startX.asInstanceOf[js.Any], startY = startY.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAxisIntention]
   }
 }

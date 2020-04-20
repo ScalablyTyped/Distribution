@@ -18,14 +18,12 @@ trait XlReferenceType extends js.Object
 
 object XlReferenceType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlAbsRowRelColumn: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlAbsRowRelColumn: `2` = this.cast(2)
+  def xlAbsolute: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlAbsolute: `1` = this.cast(1)
+  def xlRelRowAbsColumn: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlRelRowAbsColumn: `3` = this.cast(3)
-  @scala.inline
-  def xlRelative: `4` = this.cast(4)
+  def xlRelative: `4` = 4.asInstanceOf[`4`]
 }
 

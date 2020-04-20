@@ -20,7 +20,6 @@ object GroupFilter {
   @scala.inline
   def apply(Name: GroupFilterName, Values: GroupFilterValues): GroupFilter = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GroupFilter]
   }
 }

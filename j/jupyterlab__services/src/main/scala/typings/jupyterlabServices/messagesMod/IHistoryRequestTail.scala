@@ -16,7 +16,6 @@ object IHistoryRequestTail {
   @scala.inline
   def apply(hist_access_type: tail, n: Double, output: Boolean, raw: Boolean): IHistoryRequestTail = {
     val __obj = js.Dynamic.literal(hist_access_type = hist_access_type.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IHistoryRequestTail]
   }
 }

@@ -13,7 +13,6 @@ object AnonIncludeRemoteServices {
   @scala.inline
   def apply(includeRemoteServices: Double, none: Double): AnonIncludeRemoteServices = {
     val __obj = js.Dynamic.literal(includeRemoteServices = includeRemoteServices.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIncludeRemoteServices]
   }
 }

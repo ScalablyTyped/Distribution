@@ -20,7 +20,6 @@ object INamedACLAdmin {
     SemanticAliases: ISemanticAliases
   ): INamedACLAdmin = {
     val __obj = js.Dynamic.literal(AccessControlListForNamedACL = AccessControlListForNamedACL.asInstanceOf[js.Any], Clone = js.Any.fromFunction0(Clone), NamedACL = NamedACL.asInstanceOf[js.Any], SemanticAliases = SemanticAliases.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INamedACLAdmin]
   }
 }

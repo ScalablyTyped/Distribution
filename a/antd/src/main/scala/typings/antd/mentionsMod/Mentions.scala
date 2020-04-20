@@ -24,7 +24,7 @@ trait Mentions
   def getFilterOption(): js.Any = js.native
   def getNotFoundContent(renderEmpty: RenderEmptyHandler): js.UndefOr[js.Object | Null] = js.native
   def getOptions(): js.UndefOr[js.Object | Null] = js.native
-  def renderMentions(hasGetPrefixClsRenderEmpty: ConfigConsumerProps): Element = js.native
+  def renderMentions(hasGetPrefixClsRenderEmptyDirection: ConfigConsumerProps): Element = js.native
   def saveMentions(node: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof RcMentions */ js.Any): Unit = js.native
 }
 

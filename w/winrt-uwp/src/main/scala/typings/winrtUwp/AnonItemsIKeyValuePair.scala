@@ -14,7 +14,6 @@ object AnonItemsIKeyValuePair {
   @scala.inline
   def apply(items: IKeyValuePair[_, _], returnValue: Double): AnonItemsIKeyValuePair = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonItemsIKeyValuePair]
   }
 }

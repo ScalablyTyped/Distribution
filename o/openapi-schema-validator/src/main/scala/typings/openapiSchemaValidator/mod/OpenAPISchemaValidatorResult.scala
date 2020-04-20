@@ -13,7 +13,6 @@ object OpenAPISchemaValidatorResult {
   @scala.inline
   def apply(errors: js.Array[ErrorObject]): OpenAPISchemaValidatorResult = {
     val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OpenAPISchemaValidatorResult]
   }
 }

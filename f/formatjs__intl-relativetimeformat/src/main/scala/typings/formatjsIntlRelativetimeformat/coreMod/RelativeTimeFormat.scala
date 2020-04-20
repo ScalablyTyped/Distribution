@@ -19,7 +19,6 @@ object RelativeTimeFormat {
     resolvedOptions: () => ResolvedIntlRelativeTimeFormatOptions
   ): RelativeTimeFormat = {
     val __obj = js.Dynamic.literal(format = js.Any.fromFunction2(format), formatToParts = js.Any.fromFunction2(formatToParts), resolvedOptions = js.Any.fromFunction0(resolvedOptions))
-  
     __obj.asInstanceOf[RelativeTimeFormat]
   }
 }

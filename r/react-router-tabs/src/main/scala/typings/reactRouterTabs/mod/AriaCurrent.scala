@@ -16,18 +16,16 @@ trait AriaCurrent extends js.Object
 
 object AriaCurrent {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def date: typings.reactRouterTabs.reactRouterTabsStrings.date = "date".asInstanceOf[typings.reactRouterTabs.reactRouterTabsStrings.date]
   @scala.inline
-  def date: typings.reactRouterTabs.reactRouterTabsStrings.date = this.cast("date")
+  def location: typings.reactRouterTabs.reactRouterTabsStrings.location = "location".asInstanceOf[typings.reactRouterTabs.reactRouterTabsStrings.location]
   @scala.inline
-  def location: typings.reactRouterTabs.reactRouterTabsStrings.location = this.cast("location")
+  def page: typings.reactRouterTabs.reactRouterTabsStrings.page = "page".asInstanceOf[typings.reactRouterTabs.reactRouterTabsStrings.page]
   @scala.inline
-  def page: typings.reactRouterTabs.reactRouterTabsStrings.page = this.cast("page")
+  def step: typings.reactRouterTabs.reactRouterTabsStrings.step = "step".asInstanceOf[typings.reactRouterTabs.reactRouterTabsStrings.step]
   @scala.inline
-  def step: typings.reactRouterTabs.reactRouterTabsStrings.step = this.cast("step")
+  def time: typings.reactRouterTabs.reactRouterTabsStrings.time = "time".asInstanceOf[typings.reactRouterTabs.reactRouterTabsStrings.time]
   @scala.inline
-  def time: typings.reactRouterTabs.reactRouterTabsStrings.time = this.cast("time")
-  @scala.inline
-  def `true`: typings.reactRouterTabs.reactRouterTabsStrings.`true` = this.cast("true")
+  def `true`: typings.reactRouterTabs.reactRouterTabsStrings.`true` = "true".asInstanceOf[typings.reactRouterTabs.reactRouterTabsStrings.`true`]
 }
 

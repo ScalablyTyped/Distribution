@@ -12,7 +12,6 @@ object ReactionMixin {
   @scala.inline
   def apply(reactions: js.Array[Reaction]): ReactionMixin = {
     val __obj = js.Dynamic.literal(reactions = reactions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReactionMixin]
   }
 }

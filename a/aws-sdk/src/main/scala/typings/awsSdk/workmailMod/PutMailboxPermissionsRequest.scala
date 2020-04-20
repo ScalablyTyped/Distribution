@@ -33,7 +33,6 @@ object PutMailboxPermissionsRequest {
     PermissionValues: PermissionValues
   ): PutMailboxPermissionsRequest = {
     val __obj = js.Dynamic.literal(EntityId = EntityId.asInstanceOf[js.Any], GranteeId = GranteeId.asInstanceOf[js.Any], OrganizationId = OrganizationId.asInstanceOf[js.Any], PermissionValues = PermissionValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutMailboxPermissionsRequest]
   }
 }

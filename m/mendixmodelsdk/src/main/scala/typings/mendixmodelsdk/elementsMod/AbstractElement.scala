@@ -44,7 +44,7 @@ abstract class AbstractElement protected ()
     *  - if false, a load is required to access these properties.
     */
   @JSName("isLoaded")
-  def isLoaded_MAbstractElement(): Boolean = js.native
+  def isLoaded_MAbstractElement: Boolean = js.native
   def load(): js.Promise[this.type] = js.native
   /**
     * Transforms a IElement interface into a Element class, loading the containing unit if necessary.

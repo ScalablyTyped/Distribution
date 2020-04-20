@@ -19,7 +19,6 @@ object TypeofShapeUtils {
     triangulateShape: (js.Array[Vec2], js.Array[js.Array[Vec2]]) => js.Array[js.Array[Double]]
   ): TypeofShapeUtils = {
     val __obj = js.Dynamic.literal(area = js.Any.fromFunction1(area), isClockWise = js.Any.fromFunction1(isClockWise), triangulateShape = js.Any.fromFunction2(triangulateShape))
-  
     __obj.asInstanceOf[TypeofShapeUtils]
   }
 }

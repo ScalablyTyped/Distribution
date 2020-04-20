@@ -19,7 +19,6 @@ object IBitmapProperties {
     setPropertiesAsync: IIterable[IKeyValuePair[String, BitmapTypedValue]] => IAsyncAction
   ): IBitmapProperties = {
     val __obj = js.Dynamic.literal(getPropertiesAsync = js.Any.fromFunction1(getPropertiesAsync), setPropertiesAsync = js.Any.fromFunction1(setPropertiesAsync))
-  
     __obj.asInstanceOf[IBitmapProperties]
   }
 }

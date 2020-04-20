@@ -17,7 +17,6 @@ object AnonBody {
   @scala.inline
   def apply(body: js.Object, headers: js.Object, method: String, oauth: Boolean, query: js.Object, url: String): AnonBody = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], oauth = oauth.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBody]
   }
 }

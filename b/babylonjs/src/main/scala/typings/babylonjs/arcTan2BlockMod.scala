@@ -19,15 +19,15 @@ object arcTan2BlockMod extends js.Object {
     /**
       * Gets the output component
       */
-    def output(): NodeMaterialConnectionPoint = js.native
+    def output: NodeMaterialConnectionPoint = js.native
     /**
       * Gets the x operand input component
       */
-    def x(): NodeMaterialConnectionPoint = js.native
+    def x: NodeMaterialConnectionPoint = js.native
     /**
       * Gets the y operand input component
       */
-    def y(): NodeMaterialConnectionPoint = js.native
+    def y: NodeMaterialConnectionPoint = js.native
   }
   
 }

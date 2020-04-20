@@ -16,12 +16,10 @@ trait OlInspectorClose extends js.Object
 
 object OlInspectorClose {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olDiscard: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olDiscard: `1` = this.cast(1)
+  def olPromptForSave: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olPromptForSave: `2` = this.cast(2)
-  @scala.inline
-  def olSave: `0` = this.cast(0)
+  def olSave: `0` = 0.asInstanceOf[`0`]
 }
 

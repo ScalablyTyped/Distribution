@@ -16,12 +16,10 @@ trait WdFindWrap extends js.Object
 
 object WdFindWrap {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdFindAsk: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdFindAsk: `2` = this.cast(2)
+  def wdFindContinue: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdFindContinue: `1` = this.cast(1)
-  @scala.inline
-  def wdFindStop: `0` = this.cast(0)
+  def wdFindStop: `0` = 0.asInstanceOf[`0`]
 }
 

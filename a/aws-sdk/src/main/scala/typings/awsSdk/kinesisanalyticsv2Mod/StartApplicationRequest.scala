@@ -20,7 +20,6 @@ object StartApplicationRequest {
   @scala.inline
   def apply(ApplicationName: ApplicationName, RunConfiguration: RunConfiguration): StartApplicationRequest = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], RunConfiguration = RunConfiguration.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StartApplicationRequest]
   }
 }

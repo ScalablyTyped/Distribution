@@ -32,7 +32,6 @@ object ConnectContext {
     stream: js.Any
   ): ConnectContext = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], agent = agent.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], req = req.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConnectContext]
   }
 }

@@ -16,7 +16,6 @@ object MessageType {
   @scala.inline
   def apply(context: MessageContextType, message: String, sequence: Double, time: Double, version: String): MessageType = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], sequence = sequence.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MessageType]
   }
 }

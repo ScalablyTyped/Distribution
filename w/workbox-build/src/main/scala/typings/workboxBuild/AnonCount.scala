@@ -15,7 +15,6 @@ object AnonCount {
   @scala.inline
   def apply(count: Double, filePaths: js.Array[String], size: Double, warnings: js.Array[String]): AnonCount = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], filePaths = filePaths.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], warnings = warnings.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCount]
   }
 }

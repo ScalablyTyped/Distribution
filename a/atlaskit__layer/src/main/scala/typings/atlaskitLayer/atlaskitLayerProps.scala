@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait atlaskitLayerProps {
   @scala.inline
-  def LayerProps: Props.type = typings.atlaskitLayer.mod.Props
+  def LayerProps: Props.type = Props
   type LayerProps = Props
 }
 

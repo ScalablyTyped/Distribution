@@ -15,7 +15,6 @@ object DynamicComponentGetViewStrategy {
   @scala.inline
   def apply(getViewStrategy: () => String | ViewStrategy_): DynamicComponentGetViewStrategy = {
     val __obj = js.Dynamic.literal(getViewStrategy = js.Any.fromFunction0(getViewStrategy))
-  
     __obj.asInstanceOf[DynamicComponentGetViewStrategy]
   }
 }

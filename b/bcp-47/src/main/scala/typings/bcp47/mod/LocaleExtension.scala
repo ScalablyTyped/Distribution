@@ -13,7 +13,6 @@ object LocaleExtension {
   @scala.inline
   def apply(extensions: js.Array[String], singleton: String): LocaleExtension = {
     val __obj = js.Dynamic.literal(extensions = extensions.asInstanceOf[js.Any], singleton = singleton.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LocaleExtension]
   }
 }

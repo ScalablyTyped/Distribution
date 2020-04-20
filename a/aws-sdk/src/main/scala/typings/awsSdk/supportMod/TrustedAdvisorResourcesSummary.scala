@@ -33,7 +33,6 @@ object TrustedAdvisorResourcesSummary {
     resourcesSuppressed: Long
   ): TrustedAdvisorResourcesSummary = {
     val __obj = js.Dynamic.literal(resourcesFlagged = resourcesFlagged.asInstanceOf[js.Any], resourcesIgnored = resourcesIgnored.asInstanceOf[js.Any], resourcesProcessed = resourcesProcessed.asInstanceOf[js.Any], resourcesSuppressed = resourcesSuppressed.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TrustedAdvisorResourcesSummary]
   }
 }

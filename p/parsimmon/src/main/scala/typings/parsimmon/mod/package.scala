@@ -19,9 +19,9 @@ package object mod {
   type SuccessFunctionType[U] = js.Function2[/* index */ scala.Double, /* result */ U, typings.parsimmon.mod.Reply[U]]
   type TypedLanguage[TLanguageSpec] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof TLanguageSpec ]: parsimmon.parsimmon.Parser<TLanguageSpec[P]>}
-    */ typings.parsimmon.parsimmonStrings.TypedLanguage with TLanguageSpec
+    */ typings.parsimmon.parsimmonStrings.TypedLanguage with org.scalablytyped.runtime.TopLevel[TLanguageSpec]
   type TypedRule[TLanguageSpec] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof TLanguageSpec ]: (r : parsimmon.parsimmon.TypedLanguage<TLanguageSpec>): parsimmon.parsimmon.Parser<TLanguageSpec[P]>}
-    */ typings.parsimmon.parsimmonStrings.TypedRule with TLanguageSpec
+    */ typings.parsimmon.parsimmonStrings.TypedRule with org.scalablytyped.runtime.TopLevel[TLanguageSpec]
   type UnParser[T] = js.Any
 }

@@ -20,7 +20,6 @@ object DkimSigningAttributes {
   @scala.inline
   def apply(DomainSigningPrivateKey: PrivateKey, DomainSigningSelector: Selector): DkimSigningAttributes = {
     val __obj = js.Dynamic.literal(DomainSigningPrivateKey = DomainSigningPrivateKey.asInstanceOf[js.Any], DomainSigningSelector = DomainSigningSelector.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DkimSigningAttributes]
   }
 }

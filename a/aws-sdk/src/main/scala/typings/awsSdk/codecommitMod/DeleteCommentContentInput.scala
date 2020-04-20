@@ -16,7 +16,6 @@ object DeleteCommentContentInput {
   @scala.inline
   def apply(commentId: CommentId): DeleteCommentContentInput = {
     val __obj = js.Dynamic.literal(commentId = commentId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteCommentContentInput]
   }
 }

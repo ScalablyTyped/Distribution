@@ -10,13 +10,11 @@ object _Field {
   @scala.inline
   def SignalRef(signal: String): _Field = {
     val __obj = js.Dynamic.literal(signal = signal.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[_Field]
   }
   @scala.inline
   def DatumFieldRef(datum: Field): _Field = {
     val __obj = js.Dynamic.literal(datum = datum.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[_Field]
   }
   @scala.inline

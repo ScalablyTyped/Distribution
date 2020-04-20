@@ -17,20 +17,18 @@ trait LogLevel extends js.Object
 
 object LogLevel {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def debug: typings.natsHemera.natsHemeraStrings.debug = "debug".asInstanceOf[typings.natsHemera.natsHemeraStrings.debug]
   @scala.inline
-  def debug: typings.natsHemera.natsHemeraStrings.debug = this.cast("debug")
+  def error: typings.natsHemera.natsHemeraStrings.error = "error".asInstanceOf[typings.natsHemera.natsHemeraStrings.error]
   @scala.inline
-  def error: typings.natsHemera.natsHemeraStrings.error = this.cast("error")
+  def fatal: typings.natsHemera.natsHemeraStrings.fatal = "fatal".asInstanceOf[typings.natsHemera.natsHemeraStrings.fatal]
   @scala.inline
-  def fatal: typings.natsHemera.natsHemeraStrings.fatal = this.cast("fatal")
+  def info: typings.natsHemera.natsHemeraStrings.info = "info".asInstanceOf[typings.natsHemera.natsHemeraStrings.info]
   @scala.inline
-  def info: typings.natsHemera.natsHemeraStrings.info = this.cast("info")
+  def silent: typings.natsHemera.natsHemeraStrings.silent = "silent".asInstanceOf[typings.natsHemera.natsHemeraStrings.silent]
   @scala.inline
-  def silent: typings.natsHemera.natsHemeraStrings.silent = this.cast("silent")
+  def trace: typings.natsHemera.natsHemeraStrings.trace = "trace".asInstanceOf[typings.natsHemera.natsHemeraStrings.trace]
   @scala.inline
-  def trace: typings.natsHemera.natsHemeraStrings.trace = this.cast("trace")
-  @scala.inline
-  def warn: typings.natsHemera.natsHemeraStrings.warn = this.cast("warn")
+  def warn: typings.natsHemera.natsHemeraStrings.warn = "warn".asInstanceOf[typings.natsHemera.natsHemeraStrings.warn]
 }
 

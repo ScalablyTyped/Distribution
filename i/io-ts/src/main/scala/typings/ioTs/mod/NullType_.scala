@@ -9,6 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class NullType_ ()
   extends Type_[Null, Null, js.Any] {
+  /**
+    * @since 1.0.0
+    */
   val _tag: NullType = js.native
 }
 

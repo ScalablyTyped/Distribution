@@ -15,7 +15,6 @@ object WorkbookProperties {
   @scala.inline
   def apply(date1904: Boolean): WorkbookProperties = {
     val __obj = js.Dynamic.literal(date1904 = date1904.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WorkbookProperties]
   }
 }

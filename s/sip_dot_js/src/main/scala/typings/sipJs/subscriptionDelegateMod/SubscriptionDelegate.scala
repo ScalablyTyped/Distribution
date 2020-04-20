@@ -17,7 +17,6 @@ object SubscriptionDelegate {
   @scala.inline
   def apply(onNotify: Notification => Unit): SubscriptionDelegate = {
     val __obj = js.Dynamic.literal(onNotify = js.Any.fromFunction1(onNotify))
-  
     __obj.asInstanceOf[SubscriptionDelegate]
   }
 }

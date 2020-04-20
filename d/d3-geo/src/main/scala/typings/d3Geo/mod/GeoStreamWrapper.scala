@@ -19,7 +19,6 @@ object GeoStreamWrapper {
   @scala.inline
   def apply(stream: GeoStream_ => GeoStream_): GeoStreamWrapper = {
     val __obj = js.Dynamic.literal(stream = js.Any.fromFunction1(stream))
-  
     __obj.asInstanceOf[GeoStreamWrapper]
   }
 }

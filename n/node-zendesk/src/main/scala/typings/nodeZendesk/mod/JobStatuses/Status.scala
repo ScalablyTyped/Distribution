@@ -15,16 +15,14 @@ trait Status extends js.Object
 
 object Status {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def completed: typings.nodeZendesk.nodeZendeskStrings.completed = "completed".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.completed]
   @scala.inline
-  def completed: typings.nodeZendesk.nodeZendeskStrings.completed = this.cast("completed")
+  def failed: typings.nodeZendesk.nodeZendeskStrings.failed = "failed".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.failed]
   @scala.inline
-  def failed: typings.nodeZendesk.nodeZendeskStrings.failed = this.cast("failed")
+  def killed: typings.nodeZendesk.nodeZendeskStrings.killed = "killed".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.killed]
   @scala.inline
-  def killed: typings.nodeZendesk.nodeZendeskStrings.killed = this.cast("killed")
+  def queued: typings.nodeZendesk.nodeZendeskStrings.queued = "queued".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.queued]
   @scala.inline
-  def queued: typings.nodeZendesk.nodeZendeskStrings.queued = this.cast("queued")
-  @scala.inline
-  def working: typings.nodeZendesk.nodeZendeskStrings.working = this.cast("working")
+  def working: typings.nodeZendesk.nodeZendeskStrings.working = "working".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.working]
 }
 

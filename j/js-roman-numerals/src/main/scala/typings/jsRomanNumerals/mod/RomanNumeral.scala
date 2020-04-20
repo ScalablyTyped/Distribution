@@ -12,7 +12,6 @@ object RomanNumeral {
   @scala.inline
   def apply(toInt: () => Double): RomanNumeral = {
     val __obj = js.Dynamic.literal(toInt = js.Any.fromFunction0(toInt))
-  
     __obj.asInstanceOf[RomanNumeral]
   }
 }

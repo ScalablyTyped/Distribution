@@ -21,7 +21,6 @@ object Scope {
   @scala.inline
   def apply(bindingContext: js.Any, overrideContext: OverrideContext): Scope = {
     val __obj = js.Dynamic.literal(bindingContext = bindingContext.asInstanceOf[js.Any], overrideContext = overrideContext.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Scope]
   }
 }

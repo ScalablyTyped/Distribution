@@ -14,7 +14,6 @@ object AnonPages {
   @scala.inline
   def apply(pages: js.Array[String], window: PageConfig): AnonPages = {
     val __obj = js.Dynamic.literal(pages = pages.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPages]
   }
 }

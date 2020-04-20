@@ -15,7 +15,6 @@ object KnockoutObservableFunctions {
   @scala.inline
   def apply[T](toObservableWithReplyLatest: () => Observable[T], toSubject: () => ISubject[T]): KnockoutObservableFunctions[T] = {
     val __obj = js.Dynamic.literal(toObservableWithReplyLatest = js.Any.fromFunction0(toObservableWithReplyLatest), toSubject = js.Any.fromFunction0(toSubject))
-  
     __obj.asInstanceOf[KnockoutObservableFunctions[T]]
   }
 }

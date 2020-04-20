@@ -23,7 +23,6 @@ object ParsedHostBindings {
     specialAttributes: AnonClassAttr
   ): ParsedHostBindings = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], listeners = listeners.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], specialAttributes = specialAttributes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ParsedHostBindings]
   }
 }

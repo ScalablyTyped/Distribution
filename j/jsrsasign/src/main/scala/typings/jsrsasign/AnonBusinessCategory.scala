@@ -48,7 +48,6 @@ object AnonBusinessCategory {
     serialNumber: String
   ): AnonBusinessCategory = {
     val __obj = js.Dynamic.literal(C = C.asInstanceOf[js.Any], CN = CN.asInstanceOf[js.Any], DC = DC.asInstanceOf[js.Any], DN = DN.asInstanceOf[js.Any], E = E.asInstanceOf[js.Any], L = L.asInstanceOf[js.Any], O = O.asInstanceOf[js.Any], OU = OU.asInstanceOf[js.Any], SN = SN.asInstanceOf[js.Any], ST = ST.asInstanceOf[js.Any], STREET = STREET.asInstanceOf[js.Any], UID = UID.asInstanceOf[js.Any], businessCategory = businessCategory.asInstanceOf[js.Any], jurisdictionOfIncorporationC = jurisdictionOfIncorporationC.asInstanceOf[js.Any], jurisdictionOfIncorporationL = jurisdictionOfIncorporationL.asInstanceOf[js.Any], jurisdictionOfIncorporationSP = jurisdictionOfIncorporationSP.asInstanceOf[js.Any], postalCode = postalCode.asInstanceOf[js.Any], serialNumber = serialNumber.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBusinessCategory]
   }
 }

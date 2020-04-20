@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object codeguruprofilerMod {
+  type ActionGroup = typings.awsSdk.awsSdkStrings.agentPermissions | java.lang.String
   type AgentProfile = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.codeguruprofilerMod.Blob | java.lang.String
   type AggregatedProfile = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.codeguruprofilerMod.Blob | java.lang.String
   /* Rewritten from type alias, can be one of: 
@@ -29,11 +30,14 @@ package object codeguruprofilerMod {
   type OrderBy = typings.awsSdk.codeguruprofilerMod._OrderBy | java.lang.String
   type PaginationToken = java.lang.String
   type Period = java.lang.String
+  type Principal = java.lang.String
+  type Principals = js.Array[typings.awsSdk.codeguruprofilerMod.Principal]
   type ProfileTimes = js.Array[typings.awsSdk.codeguruprofilerMod.ProfileTime]
   type ProfilingGroupArn = java.lang.String
   type ProfilingGroupDescriptions = js.Array[typings.awsSdk.codeguruprofilerMod.ProfilingGroupDescription]
   type ProfilingGroupName = java.lang.String
   type ProfilingGroupNames = js.Array[typings.awsSdk.codeguruprofilerMod.ProfilingGroupName]
+  type RevisionId = java.lang.String
   type String = java.lang.String
   type Timestamp = typings.std.Date
   /* Rewritten from type alias, can be one of: 

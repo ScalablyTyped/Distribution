@@ -12,7 +12,6 @@ object Inject {
   @scala.inline
   def apply(token: js.Any): Inject = {
     val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Inject]
   }
 }

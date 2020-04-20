@@ -14,7 +14,6 @@ object HeadingData {
   @scala.inline
   def apply(accuracy: Double, magHeading: Double, trueHeading: Double): HeadingData = {
     val __obj = js.Dynamic.literal(accuracy = accuracy.asInstanceOf[js.Any], magHeading = magHeading.asInstanceOf[js.Any], trueHeading = trueHeading.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HeadingData]
   }
 }

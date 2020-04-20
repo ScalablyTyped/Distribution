@@ -13,7 +13,6 @@ object FilterResult {
   @scala.inline
   def apply(message: String, test: String): FilterResult = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FilterResult]
   }
 }

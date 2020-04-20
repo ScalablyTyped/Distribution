@@ -19,7 +19,6 @@ object UiCanGetVisibleElement {
   @scala.inline
   def apply(getVisible: () => Boolean): UiCanGetVisibleElement = {
     val __obj = js.Dynamic.literal(getVisible = js.Any.fromFunction0(getVisible))
-  
     __obj.asInstanceOf[UiCanGetVisibleElement]
   }
 }

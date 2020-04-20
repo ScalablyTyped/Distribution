@@ -14,14 +14,12 @@ trait USBRecipient extends js.Object
 
 object USBRecipient {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def device: typings.w3cWebUsb.w3cWebUsbStrings.device = "device".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.device]
   @scala.inline
-  def device: typings.w3cWebUsb.w3cWebUsbStrings.device = this.cast("device")
+  def endpoint: typings.w3cWebUsb.w3cWebUsbStrings.endpoint = "endpoint".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.endpoint]
   @scala.inline
-  def endpoint: typings.w3cWebUsb.w3cWebUsbStrings.endpoint = this.cast("endpoint")
+  def interface: typings.w3cWebUsb.w3cWebUsbStrings.interface = "interface".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.interface]
   @scala.inline
-  def interface: typings.w3cWebUsb.w3cWebUsbStrings.interface = this.cast("interface")
-  @scala.inline
-  def other: typings.w3cWebUsb.w3cWebUsbStrings.other = this.cast("other")
+  def other: typings.w3cWebUsb.w3cWebUsbStrings.other = "other".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.other]
 }
 

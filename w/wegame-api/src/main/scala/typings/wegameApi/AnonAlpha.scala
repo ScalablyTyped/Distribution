@@ -23,7 +23,6 @@ object AnonAlpha {
   @scala.inline
   def apply(alpha: Double, beta: Double, gamma: Double): AnonAlpha = {
     val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], beta = beta.asInstanceOf[js.Any], gamma = gamma.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAlpha]
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactHolderProps {
   @scala.inline
-  def ReactHolderProps: ReactHolderProp.type = typings.reactHolder.mod.ReactHolderProp
+  def ReactHolderProps: ReactHolderProp.type = ReactHolderProp
   type ReactHolderProps = ReactHolderProp
 }
 

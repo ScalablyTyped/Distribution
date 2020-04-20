@@ -16,12 +16,10 @@ trait XlPriority extends js.Object
 
 object XlPriority {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlPriorityHigh: `-4127` = -4127.asInstanceOf[`-4127`]
   @scala.inline
-  def xlPriorityHigh: `-4127` = this.cast(-4127)
+  def xlPriorityLow: `-4134` = -4134.asInstanceOf[`-4134`]
   @scala.inline
-  def xlPriorityLow: `-4134` = this.cast(-4134)
-  @scala.inline
-  def xlPriorityNormal: `-4143` = this.cast(-4143)
+  def xlPriorityNormal: `-4143` = -4143.asInstanceOf[`-4143`]
 }
 

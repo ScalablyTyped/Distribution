@@ -27,7 +27,6 @@ object ExecutionInfo {
     usedNodes: Set[String]
   ): ExecutionInfo = {
     val __obj = js.Dynamic.literal(dynamicNode = dynamicNode.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], missingInputs = missingInputs.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], syncInputs = syncInputs.asInstanceOf[js.Any], usedNodes = usedNodes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExecutionInfo]
   }
 }

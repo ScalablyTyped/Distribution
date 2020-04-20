@@ -13,7 +13,6 @@ object RunnerOptionClient {
   @scala.inline
   def apply(dbClient: ClientBase): RunnerOptionClient = {
     val __obj = js.Dynamic.literal(dbClient = dbClient.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RunnerOptionClient]
   }
 }

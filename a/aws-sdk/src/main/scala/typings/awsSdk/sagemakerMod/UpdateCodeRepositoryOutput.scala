@@ -16,7 +16,6 @@ object UpdateCodeRepositoryOutput {
   @scala.inline
   def apply(CodeRepositoryArn: CodeRepositoryArn): UpdateCodeRepositoryOutput = {
     val __obj = js.Dynamic.literal(CodeRepositoryArn = CodeRepositoryArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateCodeRepositoryOutput]
   }
 }

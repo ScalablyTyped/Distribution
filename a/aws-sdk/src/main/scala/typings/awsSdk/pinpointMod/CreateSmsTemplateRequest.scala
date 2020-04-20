@@ -17,7 +17,6 @@ object CreateSmsTemplateRequest {
   @scala.inline
   def apply(SMSTemplateRequest: SMSTemplateRequest, TemplateName: string): CreateSmsTemplateRequest = {
     val __obj = js.Dynamic.literal(SMSTemplateRequest = SMSTemplateRequest.asInstanceOf[js.Any], TemplateName = TemplateName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateSmsTemplateRequest]
   }
 }

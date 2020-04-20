@@ -20,7 +20,6 @@ object AnonFirstParent {
     simplifiedHistory: Double
   ): AnonFirstParent = {
     val __obj = js.Dynamic.literal(firstParent = firstParent.asInstanceOf[js.Any], fullHistory = fullHistory.asInstanceOf[js.Any], fullHistorySimplifyMerges = fullHistorySimplifyMerges.asInstanceOf[js.Any], simplifiedHistory = simplifiedHistory.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFirstParent]
   }
 }

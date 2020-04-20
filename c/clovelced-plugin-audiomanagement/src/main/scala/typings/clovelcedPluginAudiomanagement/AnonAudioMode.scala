@@ -14,7 +14,6 @@ object AnonAudioMode {
   @scala.inline
   def apply(audioMode: AudioMode, label: String): AnonAudioMode = {
     val __obj = js.Dynamic.literal(audioMode = audioMode.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAudioMode]
   }
 }

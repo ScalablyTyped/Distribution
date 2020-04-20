@@ -46,7 +46,6 @@ object ServicesResource {
     search: AnonBearertoken => Request_[SearchServicesResponse]
   ): ServicesResource = {
     val __obj = js.Dynamic.literal(disable = js.Any.fromFunction1(disable), enable = js.Any.fromFunction1(enable), list = js.Any.fromFunction1(list), search = js.Any.fromFunction1(search))
-  
     __obj.asInstanceOf[ServicesResource]
   }
 }

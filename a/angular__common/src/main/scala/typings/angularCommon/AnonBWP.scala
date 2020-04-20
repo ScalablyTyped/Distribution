@@ -34,7 +34,6 @@ object AnonBWP {
     ZMW: js.Array[scala.Nothing]
   ): AnonBWP = {
     val __obj = js.Dynamic.literal(BDT = BDT.asInstanceOf[js.Any], BWP = BWP.asInstanceOf[js.Any], HKD = HKD.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any], KRW = KRW.asInstanceOf[js.Any], THB = THB.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any], XXX = XXX.asInstanceOf[js.Any], ZAR = ZAR.asInstanceOf[js.Any], ZMW = ZMW.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBWP]
   }
 }

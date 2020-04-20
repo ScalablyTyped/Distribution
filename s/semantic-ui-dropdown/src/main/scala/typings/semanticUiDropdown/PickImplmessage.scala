@@ -14,7 +14,6 @@ object PickImplmessage {
   @scala.inline
   def apply(message: MessageSettings): PickImplmessage = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplmessage]
   }
 }

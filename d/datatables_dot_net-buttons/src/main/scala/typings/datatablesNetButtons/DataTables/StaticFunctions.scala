@@ -12,7 +12,6 @@ object StaticFunctions {
   @scala.inline
   def apply(Buttons: ButtonStaticFunctions): StaticFunctions = {
     val __obj = js.Dynamic.literal(Buttons = Buttons.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StaticFunctions]
   }
 }

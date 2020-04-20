@@ -26,22 +26,20 @@ trait MsoButtonStyle extends js.Object
 
 object MsoButtonStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoButtonAutomatic: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def msoButtonAutomatic: `0` = this.cast(0)
+  def msoButtonCaption: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoButtonCaption: `2` = this.cast(2)
+  def msoButtonIcon: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoButtonIcon: `1` = this.cast(1)
+  def msoButtonIconAndCaption: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoButtonIconAndCaption: `3` = this.cast(3)
+  def msoButtonIconAndCaptionBelow: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def msoButtonIconAndCaptionBelow: `11` = this.cast(11)
+  def msoButtonIconAndWrapCaption: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def msoButtonIconAndWrapCaption: `7` = this.cast(7)
+  def msoButtonIconAndWrapCaptionBelow: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def msoButtonIconAndWrapCaptionBelow: `15` = this.cast(15)
-  @scala.inline
-  def msoButtonWrapCaption: `14` = this.cast(14)
+  def msoButtonWrapCaption: `14` = 14.asInstanceOf[`14`]
 }
 

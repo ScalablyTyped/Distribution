@@ -27,7 +27,6 @@ object RollingUpdateDaemonSet {
   @scala.inline
   def apply(maxUnavailable: Double | String): RollingUpdateDaemonSet = {
     val __obj = js.Dynamic.literal(maxUnavailable = maxUnavailable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RollingUpdateDaemonSet]
   }
 }

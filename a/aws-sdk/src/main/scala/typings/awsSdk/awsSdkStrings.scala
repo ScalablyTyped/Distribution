@@ -746,6 +746,8 @@ import typings.awsSdk.ecsMod._ContainerCondition
 import typings.awsSdk.ecsMod._ContainerInstanceStatus
 import typings.awsSdk.ecsMod._DeploymentControllerType
 import typings.awsSdk.ecsMod._DesiredStatus
+import typings.awsSdk.ecsMod._EFSAuthorizationConfigIAM
+import typings.awsSdk.ecsMod._EFSTransitEncryption
 import typings.awsSdk.ecsMod._FirelensConfigurationType
 import typings.awsSdk.ecsMod._IpcMode
 import typings.awsSdk.ecsMod._LogDriver
@@ -885,6 +887,7 @@ import typings.awsSdk.frauddetectorMod._ModelEndpointStatus
 import typings.awsSdk.frauddetectorMod._ModelInputDataFormat
 import typings.awsSdk.frauddetectorMod._ModelOutputDataFormat
 import typings.awsSdk.frauddetectorMod._ModelVersionStatus
+import typings.awsSdk.frauddetectorMod._RuleExecutionMode
 import typings.awsSdk.fsxMod._BackupLifecycle
 import typings.awsSdk.fsxMod._DataRepositoryTaskFilterName
 import typings.awsSdk.fsxMod._DataRepositoryTaskLifecycle
@@ -1066,6 +1069,7 @@ import typings.awsSdk.ioteventsMod._DetectorModelVersionStatus
 import typings.awsSdk.ioteventsMod._EvaluationMethod
 import typings.awsSdk.ioteventsMod._InputStatus
 import typings.awsSdk.ioteventsMod._LoggingLevel
+import typings.awsSdk.ioteventsMod._PayloadType
 import typings.awsSdk.iotjobsdataplaneMod._JobExecutionStatus
 import typings.awsSdk.iotsecuretunnelingMod._TunnelStatus
 import typings.awsSdk.iotthingsgraphMod._DeploymentTarget
@@ -1640,6 +1644,7 @@ import typings.awsSdk.mediastoreMod._ContainerStatus
 import typings.awsSdk.mediastoreMod._MethodName
 import typings.awsSdk.mediastoredataMod._ItemType
 import typings.awsSdk.mediastoredataMod._UploadAvailability
+import typings.awsSdk.mediatailorMod._Mode
 import typings.awsSdk.mediatailorMod._OriginManifestType
 import typings.awsSdk.migrationhubMod._ApplicationStatus
 import typings.awsSdk.migrationhubMod._ResourceAttributeType
@@ -1709,7 +1714,6 @@ import typings.awsSdk.pinpointMod._FilterType
 import typings.awsSdk.pinpointMod._Format
 import typings.awsSdk.pinpointMod._Frequency
 import typings.awsSdk.pinpointMod._Include
-import typings.awsSdk.pinpointMod._Mode
 import typings.awsSdk.pinpointMod._Operator
 import typings.awsSdk.pinpointMod._RecencyType
 import typings.awsSdk.pinpointMod._SegmentType
@@ -1763,7 +1767,10 @@ import typings.awsSdk.ramMod._ResourceStatus
 import typings.awsSdk.rdsMod._ActivityStreamMode
 import typings.awsSdk.rdsMod._ActivityStreamStatus
 import typings.awsSdk.rdsMod._DBProxyStatus
+import typings.awsSdk.rdsMod._EngineFamily
 import typings.awsSdk.rdsMod._IAMAuthMode
+import typings.awsSdk.rdsMod._TargetHealthReason
+import typings.awsSdk.rdsMod._TargetState
 import typings.awsSdk.rdsdataserviceMod._DecimalReturnType
 import typings.awsSdk.rdsdataserviceMod._TypeHint
 import typings.awsSdk.redshiftMod._NodeConfigurationOptionsFilterName
@@ -3920,6 +3927,9 @@ object awsSdkStrings {
        with typings.awsSdk.documentClientMod.DocumentClient._Select
   
   @js.native
+  sealed trait ALL_MATCHED extends _RuleExecutionMode
+  
+  @js.native
   sealed trait ALL_NEW
     extends _ReturnValue
        with typings.awsSdk.documentClientMod.DocumentClient._ReturnValue
@@ -4562,6 +4572,9 @@ object awsSdkStrings {
   sealed trait AUTHORIZER_FAILURE extends _GatewayResponseType
   
   @js.native
+  sealed trait AUTH_FAILURE extends _TargetHealthReason
+  
+  @js.native
   sealed trait AUTO
     extends _AfdSignaling
        with typings.awsSdk.medialiveMod._AfdSignaling
@@ -4677,6 +4690,7 @@ object awsSdkStrings {
        with _ServerCatalogStatus
        with _SiteState
        with typings.awsSdk.servicecatalogMod._Status
+       with _TargetState
        with _TargetWorkspaceState
        with _TaskStatus
        with _TransitGatewayRegistrationState
@@ -5854,6 +5868,9 @@ object awsSdkStrings {
   
   @js.native
   sealed trait BEGIN_WITH extends _ComplianceQueryOperatorType
+  
+  @js.native
+  sealed trait BEHIND_LIVE_EDGE extends _Mode
   
   @js.native
   sealed trait BEL extends _LanguageCode
@@ -7278,6 +7295,9 @@ object awsSdkStrings {
   
   @js.native
   sealed trait CONNECTION_CREDENTIALS extends _ConnectionType
+  
+  @js.native
+  sealed trait CONNECTION_FAILED extends _TargetHealthReason
   
   @js.native
   sealed trait CONNECTION_FAILURE extends _IngestionErrorType
@@ -8963,7 +8983,7 @@ object awsSdkStrings {
   sealed trait DELIVERY
     extends typings.awsSdk.pinpointemailMod._EventType
        with typings.awsSdk.sesv2Mod._EventType
-       with _Mode
+       with typings.awsSdk.pinpointMod._Mode
   
   @js.native
   sealed trait DELTA_LAUNCH_FAILED extends _AppLaunchStatus
@@ -9275,6 +9295,8 @@ object awsSdkStrings {
        with _DirectoryState
        with _DomainConfigurationStatus
        with _DropFrameTimecode
+       with _EFSAuthorizationConfigIAM
+       with _EFSTransitEncryption
        with _Eac3AtmosDialogueIntelligence
        with _Eac3AtmosSurroundExMode
        with _Eac3DcFilter
@@ -10371,6 +10393,9 @@ object awsSdkStrings {
   sealed trait EDGE_CG extends _SnowballType
   
   @js.native
+  sealed trait EDGE_S extends _SnowballType
+  
+  @js.native
   sealed trait EDIT extends _IngestionRequestType
   
   @js.native
@@ -10532,6 +10557,8 @@ object awsSdkStrings {
        with _DirectoryState
        with _DomainConfigurationStatus
        with _DropFrameTimecode
+       with _EFSAuthorizationConfigIAM
+       with _EFSTransitEncryption
        with _Eac3AtmosDialogueIntelligence
        with _Eac3AtmosSurroundExMode
        with _Eac3DcFilter
@@ -11692,7 +11719,8 @@ object awsSdkStrings {
        with _Eac3DynamicRangeCompressionRf
   
   @js.native
-  sealed trait FILTER extends _Mode
+  sealed trait FILTER
+    extends typings.awsSdk.pinpointMod._Mode
   
   @js.native
   sealed trait FIN extends _LanguageCode
@@ -11725,6 +11753,9 @@ object awsSdkStrings {
   
   @js.native
   sealed trait FIRST extends _RangeMode
+  
+  @js.native
+  sealed trait FIRST_MATCHED extends _RuleExecutionMode
   
   @js.native
   sealed trait FIXED
@@ -15056,6 +15087,7 @@ object awsSdkStrings {
        with _MessageFormat
        with _OutputFormat
        with _OutputType
+       with _PayloadType
        with _RecordFormatType
        with typings.awsSdk.kinesisanalyticsv2Mod._RecordFormatType
        with _TypeDefinitionFormat
@@ -16954,7 +16986,9 @@ object awsSdkStrings {
   sealed trait MYA extends _LanguageCode
   
   @js.native
-  sealed trait MYSQL extends _DataSourceType
+  sealed trait MYSQL
+    extends _DataSourceType
+       with _EngineFamily
   
   @js.native
   sealed trait MZ
@@ -18191,6 +18225,7 @@ object awsSdkStrings {
        with typings.awsSdk.datasyncMod._LogLevel
        with _LogLevel
        with typings.awsSdk.apigatewayv2Mod._LoggingLevel
+       with _Mode
        with _Mpeg2AdaptiveQuantization
        with _ObjectLockLegalHoldStatus
        with _S3ObjectLockLegalHoldStatus
@@ -19053,6 +19088,9 @@ object awsSdkStrings {
   sealed trait PENDING_PROVISIONING extends _ByoipCidrState
   
   @js.native
+  sealed trait PENDING_PROXY_CAPACITY extends _TargetHealthReason
+  
+  @js.native
   sealed trait PENDING_TRAINING extends _AnomalyDetectorStateValue
   
   @js.native
@@ -19275,7 +19313,9 @@ object awsSdkStrings {
   sealed trait POSTCODE extends _GeoSpatialDataRole
   
   @js.native
-  sealed trait POSTGRESQL extends _DataSourceType
+  sealed trait POSTGRESQL
+    extends _DataSourceType
+       with _EngineFamily
   
   @js.native
   sealed trait POSTPASS extends _ContactStatus
@@ -20448,6 +20488,7 @@ object awsSdkStrings {
   @js.native
   sealed trait REGISTERING
     extends _ContainerInstanceStatus
+       with _TargetState
        with _WorkspaceDirectoryState
   
   @js.native
@@ -23087,6 +23128,7 @@ object awsSdkStrings {
        with _DynamoKeyType
        with _FacetAttributeType
        with _InputColumnDataType
+       with _PayloadType
   
   @js.native
   sealed trait STRINGEQUALS extends js.Object
@@ -23863,6 +23905,7 @@ object awsSdkStrings {
        with _StageExecutionStatus
        with _TrainingJobStatus
        with _TransformJobStatus
+       with _TrialComponentPrimaryStatus
        with _UserImportJobStatusType
   
   @js.native
@@ -23883,6 +23926,7 @@ object awsSdkStrings {
        with _StageExecutionStatus
        with _TrainingJobStatus
        with _TransformJobStatus
+       with _TrialComponentPrimaryStatus
        with _UserImportJobStatusType
   
   @js.native
@@ -24026,6 +24070,9 @@ object awsSdkStrings {
   
   @js.native
   sealed trait T80 extends _SnowballCapacity
+  
+  @js.native
+  sealed trait T98 extends _SnowballCapacity
   
   @js.native
   sealed trait TABLE
@@ -24287,6 +24334,9 @@ object awsSdkStrings {
     extends typings.awsSdk.wafv2Mod._CountryCode
        with _GeoMatchConstraintValue
        with typings.awsSdk.wafregionalMod._GeoMatchConstraintValue
+  
+  @js.native
+  sealed trait TFLITE extends _Framework
   
   @js.native
   sealed trait TFRecord extends _SplitType
@@ -25160,6 +25210,7 @@ object awsSdkStrings {
        with typings.awsSdk.cloudformationMod._ExecutionStatus
        with _LayerAvailability
        with _ResourceStatus
+       with _TargetState
        with _TaskStatus
   
   @js.native
@@ -25285,7 +25336,9 @@ object awsSdkStrings {
   sealed trait UNMETERED extends _BillingMethod
   
   @js.native
-  sealed trait UNREACHABLE extends _TargetStatus
+  sealed trait UNREACHABLE
+    extends _TargetHealthReason
+       with _TargetStatus
   
   @js.native
   sealed trait UNRESOLVABLE_HOST extends _IngestionErrorType
@@ -26872,6 +26925,9 @@ object awsSdkStrings {
   
   @js.native
   sealed trait aes256_ extends _Algorithm
+  
+  @js.native
+  sealed trait agentPermissions extends js.Object
   
   @js.native
   sealed trait aisage extends _TargetDevice
@@ -30747,6 +30803,21 @@ object awsSdkStrings {
        with _ProductionVariantInstanceType
   
   @js.native
+  sealed trait mlDotc5nDot18xlarge extends _TrainingInstanceType
+  
+  @js.native
+  sealed trait mlDotc5nDot2xlarge extends _TrainingInstanceType
+  
+  @js.native
+  sealed trait mlDotc5nDot4xlarge extends _TrainingInstanceType
+  
+  @js.native
+  sealed trait mlDotc5nDot9xlarge extends _TrainingInstanceType
+  
+  @js.native
+  sealed trait mlDotc5nDotxlarge extends _TrainingInstanceType
+  
+  @js.native
   sealed trait mlDoteia1Dotlarge
     extends _NotebookInstanceAcceleratorType
        with _ProductionVariantAcceleratorType
@@ -32206,6 +32277,9 @@ object awsSdkStrings {
   sealed trait reachability extends js.Object
   
   @js.native
+  sealed trait reactivating extends _DBProxyStatus
+  
+  @js.native
   sealed trait `read-only`
     extends _MemberPermissions
        with _Permissions
@@ -32957,6 +33031,12 @@ object awsSdkStrings {
   
   @js.native
   sealed trait `supported-platforms` extends _AccountAttributeName
+  
+  @js.native
+  sealed trait suspended__ extends _DBProxyStatus
+  
+  @js.native
+  sealed trait suspending extends _DBProxyStatus
   
   @js.native
   sealed trait `sv-SE`
@@ -34543,6 +34623,8 @@ object awsSdkStrings {
   @scala.inline
   def ALL_ATTRIBUTES: ALL_ATTRIBUTES = "ALL_ATTRIBUTES".asInstanceOf[ALL_ATTRIBUTES]
   @scala.inline
+  def ALL_MATCHED: ALL_MATCHED = "ALL_MATCHED".asInstanceOf[ALL_MATCHED]
+  @scala.inline
   def ALL_NEW: ALL_NEW = "ALL_NEW".asInstanceOf[ALL_NEW]
   @scala.inline
   def ALL_OLD: ALL_OLD = "ALL_OLD".asInstanceOf[ALL_OLD]
@@ -34854,6 +34936,8 @@ object awsSdkStrings {
   def AUTHORIZER_CONFIGURATION_ERROR: AUTHORIZER_CONFIGURATION_ERROR = "AUTHORIZER_CONFIGURATION_ERROR".asInstanceOf[AUTHORIZER_CONFIGURATION_ERROR]
   @scala.inline
   def AUTHORIZER_FAILURE: AUTHORIZER_FAILURE = "AUTHORIZER_FAILURE".asInstanceOf[AUTHORIZER_FAILURE]
+  @scala.inline
+  def AUTH_FAILURE: AUTH_FAILURE = "AUTH_FAILURE".asInstanceOf[AUTH_FAILURE]
   @scala.inline
   def AUTO: AUTO = "AUTO".asInstanceOf[AUTO]
   @scala.inline
@@ -35265,7 +35349,7 @@ object awsSdkStrings {
   @scala.inline
   def Algorithm: Algorithm = "Algorithm".asInstanceOf[Algorithm]
   @scala.inline
-  def `All Upfront`: `All Upfront` = "All Upfront".asInstanceOf[`All Upfront`]
+  def `All Upfront`: `All Upfront` = ("All Upfront").asInstanceOf[`All Upfront`]
   @scala.inline
   def AllAtOnce: AllAtOnce = "AllAtOnce".asInstanceOf[AllAtOnce]
   @scala.inline
@@ -35341,9 +35425,9 @@ object awsSdkStrings {
   @scala.inline
   def AsgInstanceLaunchFailures: AsgInstanceLaunchFailures = "AsgInstanceLaunchFailures".asInstanceOf[AsgInstanceLaunchFailures]
   @scala.inline
-  def `Asset size in GB`: `Asset size in GB` = "Asset size in GB".asInstanceOf[`Asset size in GB`]
+  def `Asset size in GB`: `Asset size in GB` = ("Asset size in GB").asInstanceOf[`Asset size in GB`]
   @scala.inline
-  def `Assets per revision`: `Assets per revision` = "Assets per revision".asInstanceOf[`Assets per revision`]
+  def `Assets per revision`: `Assets per revision` = ("Assets per revision").asInstanceOf[`Assets per revision`]
   @scala.inline
   def Assignable: Assignable = "Assignable".asInstanceOf[Assignable]
   @scala.inline
@@ -35419,7 +35503,7 @@ object awsSdkStrings {
   @scala.inline
   def Automation_ : Automation_ = "Automation".asInstanceOf[Automation_]
   @scala.inline
-  def `Availability Zone`: `Availability Zone` = "Availability Zone".asInstanceOf[`Availability Zone`]
+  def `Availability Zone`: `Availability Zone` = ("Availability Zone").asInstanceOf[`Availability Zone`]
   @scala.inline
   def AvailabilityZone: AvailabilityZone = "AvailabilityZone".asInstanceOf[AvailabilityZone]
   @scala.inline
@@ -35498,6 +35582,8 @@ object awsSdkStrings {
   def BEGINS_WITH: BEGINS_WITH = "BEGINS_WITH".asInstanceOf[BEGINS_WITH]
   @scala.inline
   def BEGIN_WITH: BEGIN_WITH = "BEGIN_WITH".asInstanceOf[BEGIN_WITH]
+  @scala.inline
+  def BEHIND_LIVE_EDGE: BEHIND_LIVE_EDGE = "BEHIND_LIVE_EDGE".asInstanceOf[BEHIND_LIVE_EDGE]
   @scala.inline
   def BEL: BEL = "BEL".asInstanceOf[BEL]
   @scala.inline
@@ -36124,6 +36210,8 @@ object awsSdkStrings {
   def CONNECTION_ACK: CONNECTION_ACK = "CONNECTION_ACK".asInstanceOf[CONNECTION_ACK]
   @scala.inline
   def CONNECTION_CREDENTIALS: CONNECTION_CREDENTIALS = "CONNECTION_CREDENTIALS".asInstanceOf[CONNECTION_CREDENTIALS]
+  @scala.inline
+  def CONNECTION_FAILED: CONNECTION_FAILED = "CONNECTION_FAILED".asInstanceOf[CONNECTION_FAILED]
   @scala.inline
   def CONNECTION_FAILURE: CONNECTION_FAILURE = "CONNECTION_FAILURE".asInstanceOf[CONNECTION_FAILURE]
   @scala.inline
@@ -37437,6 +37525,8 @@ object awsSdkStrings {
   @scala.inline
   def EDGE_CG: EDGE_CG = "EDGE_CG".asInstanceOf[EDGE_CG]
   @scala.inline
+  def EDGE_S: EDGE_S = "EDGE_S".asInstanceOf[EDGE_S]
+  @scala.inline
   def EDIT: EDIT = "EDIT".asInstanceOf[EDIT]
   @scala.inline
   def EE: EE = "EE".asInstanceOf[EE]
@@ -37956,6 +38046,8 @@ object awsSdkStrings {
   def FIRE_EYE: FIRE_EYE = "FIRE_EYE".asInstanceOf[FIRE_EYE]
   @scala.inline
   def FIRST: FIRST = "FIRST".asInstanceOf[FIRST]
+  @scala.inline
+  def FIRST_MATCHED: FIRST_MATCHED = "FIRST_MATCHED".asInstanceOf[FIRST_MATCHED]
   @scala.inline
   def FIXED: FIXED = "FIXED".asInstanceOf[FIXED]
   @scala.inline
@@ -38751,7 +38843,7 @@ object awsSdkStrings {
   @scala.inline
   def Healthy_ : Healthy_ = "Healthy".asInstanceOf[Healthy_]
   @scala.inline
-  def `Heavy Utilization`: `Heavy Utilization` = "Heavy Utilization".asInstanceOf[`Heavy Utilization`]
+  def `Heavy Utilization`: `Heavy Utilization` = ("Heavy Utilization").asInstanceOf[`Heavy Utilization`]
   @scala.inline
   def High_ : High_ = "High".asInstanceOf[High_]
   @scala.inline
@@ -39913,7 +40005,7 @@ object awsSdkStrings {
   @scala.inline
   def LessThanThreshold: LessThanThreshold = "LessThanThreshold".asInstanceOf[LessThanThreshold]
   @scala.inline
-  def `Light Utilization`: `Light Utilization` = "Light Utilization".asInstanceOf[`Light Utilization`]
+  def `Light Utilization`: `Light Utilization` = ("Light Utilization").asInstanceOf[`Light Utilization`]
   @scala.inline
   def LimitExceeded: LimitExceeded = "LimitExceeded".asInstanceOf[LimitExceeded]
   @scala.inline
@@ -39923,15 +40015,15 @@ object awsSdkStrings {
   @scala.inline
   def Linear_ : Linear_ = "Linear".asInstanceOf[Linear_]
   @scala.inline
-  def `Linux with SQL Server Enterprise`: `Linux with SQL Server Enterprise` = "Linux with SQL Server Enterprise".asInstanceOf[`Linux with SQL Server Enterprise`]
+  def `Linux with SQL Server Enterprise`: `Linux with SQL Server Enterprise` = ("Linux with SQL Server Enterprise").asInstanceOf[`Linux with SQL Server Enterprise`]
   @scala.inline
-  def `Linux with SQL Server Standard`: `Linux with SQL Server Standard` = "Linux with SQL Server Standard".asInstanceOf[`Linux with SQL Server Standard`]
+  def `Linux with SQL Server Standard`: `Linux with SQL Server Standard` = ("Linux with SQL Server Standard").asInstanceOf[`Linux with SQL Server Standard`]
   @scala.inline
-  def `Linux with SQL Server Web`: `Linux with SQL Server Web` = "Linux with SQL Server Web".asInstanceOf[`Linux with SQL Server Web`]
+  def `Linux with SQL Server Web`: `Linux with SQL Server Web` = ("Linux with SQL Server Web").asInstanceOf[`Linux with SQL Server Web`]
   @scala.inline
   def LinuxSlashUNIX: LinuxSlashUNIX = "Linux/UNIX".asInstanceOf[LinuxSlashUNIX]
   @scala.inline
-  def `LinuxSlashUNIX LeftparenthesisAmazon VPCRightparenthesis`: `LinuxSlashUNIX LeftparenthesisAmazon VPCRightparenthesis` = "Linux/UNIX (Amazon VPC)".asInstanceOf[`LinuxSlashUNIX LeftparenthesisAmazon VPCRightparenthesis`]
+  def `LinuxSlashUNIX LeftparenthesisAmazon VPCRightparenthesis`: `LinuxSlashUNIX LeftparenthesisAmazon VPCRightparenthesis` = ("Linux/UNIX (Amazon VPC)").asInstanceOf[`LinuxSlashUNIX LeftparenthesisAmazon VPCRightparenthesis`]
   @scala.inline
   def Linux_ : Linux_ = "Linux".asInstanceOf[Linux_]
   @scala.inline
@@ -40405,7 +40497,7 @@ object awsSdkStrings {
   @scala.inline
   def Maximum_ : Maximum_ = "Maximum".asInstanceOf[Maximum_]
   @scala.inline
-  def `Medium Utilization`: `Medium Utilization` = "Medium Utilization".asInstanceOf[`Medium Utilization`]
+  def `Medium Utilization`: `Medium Utilization` = ("Medium Utilization").asInstanceOf[`Medium Utilization`]
   @scala.inline
   def Medium_ : Medium_ = "Medium".asInstanceOf[Medium_]
   @scala.inline
@@ -40769,7 +40861,7 @@ object awsSdkStrings {
   @scala.inline
   def Nicole: Nicole = "Nicole".asInstanceOf[Nicole]
   @scala.inline
-  def `No Upfront`: `No Upfront` = "No Upfront".asInstanceOf[`No Upfront`]
+  def `No Upfront`: `No Upfront` = ("No Upfront").asInstanceOf[`No Upfront`]
   @scala.inline
   def NoContainer: NoContainer = "NoContainer".asInstanceOf[NoContainer]
   @scala.inline
@@ -41047,9 +41139,9 @@ object awsSdkStrings {
   @scala.inline
   def Ok_ : Ok_ = "Ok".asInstanceOf[Ok_]
   @scala.inline
-  def `One-WayColon Incoming`: `One-WayColon Incoming` = "One-Way: Incoming".asInstanceOf[`One-WayColon Incoming`]
+  def `One-WayColon Incoming`: `One-WayColon Incoming` = ("One-Way: Incoming").asInstanceOf[`One-WayColon Incoming`]
   @scala.inline
-  def `One-WayColon Outgoing`: `One-WayColon Outgoing` = "One-Way: Outgoing".asInstanceOf[`One-WayColon Outgoing`]
+  def `One-WayColon Outgoing`: `One-WayColon Outgoing` = ("One-Way: Outgoing").asInstanceOf[`One-WayColon Outgoing`]
   @scala.inline
   def OneDay: OneDay = "OneDay".asInstanceOf[OneDay]
   @scala.inline
@@ -41260,6 +41352,8 @@ object awsSdkStrings {
   def PENDING_NEXT_RUN: PENDING_NEXT_RUN = "PENDING_NEXT_RUN".asInstanceOf[PENDING_NEXT_RUN]
   @scala.inline
   def PENDING_PROVISIONING: PENDING_PROVISIONING = "PENDING_PROVISIONING".asInstanceOf[PENDING_PROVISIONING]
+  @scala.inline
+  def PENDING_PROXY_CAPACITY: PENDING_PROXY_CAPACITY = "PENDING_PROXY_CAPACITY".asInstanceOf[PENDING_PROXY_CAPACITY]
   @scala.inline
   def PENDING_TRAINING: PENDING_TRAINING = "PENDING_TRAINING".asInstanceOf[PENDING_TRAINING]
   @scala.inline
@@ -41589,7 +41683,7 @@ object awsSdkStrings {
   @scala.inline
   def Parquet: Parquet = "Parquet".asInstanceOf[Parquet]
   @scala.inline
-  def `Partial Upfront`: `Partial Upfront` = "Partial Upfront".asInstanceOf[`Partial Upfront`]
+  def `Partial Upfront`: `Partial Upfront` = ("Partial Upfront").asInstanceOf[`Partial Upfront`]
   @scala.inline
   def PartialData: PartialData = "PartialData".asInstanceOf[PartialData]
   @scala.inline
@@ -42339,7 +42433,7 @@ object awsSdkStrings {
   @scala.inline
   def RecordMarkerFailed: RecordMarkerFailed = "RecordMarkerFailed".asInstanceOf[RecordMarkerFailed]
   @scala.inline
-  def `Red Hat Enterprise Linux`: `Red Hat Enterprise Linux` = "Red Hat Enterprise Linux".asInstanceOf[`Red Hat Enterprise Linux`]
+  def `Red Hat Enterprise Linux`: `Red Hat Enterprise Linux` = ("Red Hat Enterprise Linux").asInstanceOf[`Red Hat Enterprise Linux`]
   @scala.inline
   def Red_ : Red_ = "Red".asInstanceOf[Red_]
   @scala.inline
@@ -43321,7 +43415,7 @@ object awsSdkStrings {
   @scala.inline
   def SUSE: SUSE = "SUSE".asInstanceOf[SUSE]
   @scala.inline
-  def `SUSE Linux`: `SUSE Linux` = "SUSE Linux".asInstanceOf[`SUSE Linux`]
+  def `SUSE Linux`: `SUSE Linux` = ("SUSE Linux").asInstanceOf[`SUSE Linux`]
   @scala.inline
   def SUSPENDED: SUSPENDED = "SUSPENDED".asInstanceOf[SUSPENDED]
   @scala.inline
@@ -43659,6 +43753,8 @@ object awsSdkStrings {
   @scala.inline
   def T80: T80 = "T80".asInstanceOf[T80]
   @scala.inline
+  def T98: T98 = "T98".asInstanceOf[T98]
+  @scala.inline
   def TABLE: TABLE = "TABLE".asInstanceOf[TABLE]
   @scala.inline
   def TABLES: TABLES = "TABLES".asInstanceOf[TABLES]
@@ -43782,6 +43878,8 @@ object awsSdkStrings {
   def TEXT_WITH_HIGHLIGHTS_VALUE: TEXT_WITH_HIGHLIGHTS_VALUE = "TEXT_WITH_HIGHLIGHTS_VALUE".asInstanceOf[TEXT_WITH_HIGHLIGHTS_VALUE]
   @scala.inline
   def TF: TF = "TF".asInstanceOf[TF]
+  @scala.inline
+  def TFLITE: TFLITE = "TFLITE".asInstanceOf[TFLITE]
   @scala.inline
   def TFRecord: TFRecord = "TFRecord".asInstanceOf[TFRecord]
   @scala.inline
@@ -44153,7 +44251,7 @@ object awsSdkStrings {
   @scala.inline
   def Topic: Topic = "Topic".asInstanceOf[Topic]
   @scala.inline
-  def `Topic not found`: `Topic not found` = "Topic not found".asInstanceOf[`Topic not found`]
+  def `Topic not found`: `Topic not found` = ("Topic not found").asInstanceOf[`Topic not found`]
   @scala.inline
   def TraceId: TraceId = "TraceId".asInstanceOf[TraceId]
   @scala.inline
@@ -44853,15 +44951,15 @@ object awsSdkStrings {
   @scala.inline
   def Weekly_ : Weekly_ = "Weekly".asInstanceOf[Weekly_]
   @scala.inline
-  def `Windows LeftparenthesisAmazon VPCRightparenthesis`: `Windows LeftparenthesisAmazon VPCRightparenthesis` = "Windows (Amazon VPC)".asInstanceOf[`Windows LeftparenthesisAmazon VPCRightparenthesis`]
+  def `Windows LeftparenthesisAmazon VPCRightparenthesis`: `Windows LeftparenthesisAmazon VPCRightparenthesis` = ("Windows (Amazon VPC)").asInstanceOf[`Windows LeftparenthesisAmazon VPCRightparenthesis`]
   @scala.inline
-  def `Windows with SQL Server`: `Windows with SQL Server` = "Windows with SQL Server".asInstanceOf[`Windows with SQL Server`]
+  def `Windows with SQL Server`: `Windows with SQL Server` = ("Windows with SQL Server").asInstanceOf[`Windows with SQL Server`]
   @scala.inline
-  def `Windows with SQL Server Enterprise`: `Windows with SQL Server Enterprise` = "Windows with SQL Server Enterprise".asInstanceOf[`Windows with SQL Server Enterprise`]
+  def `Windows with SQL Server Enterprise`: `Windows with SQL Server Enterprise` = ("Windows with SQL Server Enterprise").asInstanceOf[`Windows with SQL Server Enterprise`]
   @scala.inline
-  def `Windows with SQL Server Standard`: `Windows with SQL Server Standard` = "Windows with SQL Server Standard".asInstanceOf[`Windows with SQL Server Standard`]
+  def `Windows with SQL Server Standard`: `Windows with SQL Server Standard` = ("Windows with SQL Server Standard").asInstanceOf[`Windows with SQL Server Standard`]
   @scala.inline
-  def `Windows with SQL Server Web`: `Windows with SQL Server Web` = "Windows with SQL Server Web".asInstanceOf[`Windows with SQL Server Web`]
+  def `Windows with SQL Server Web`: `Windows with SQL Server Web` = ("Windows with SQL Server Web").asInstanceOf[`Windows with SQL Server Web`]
   @scala.inline
   def Windows_ : Windows_ = "Windows".asInstanceOf[Windows_]
   @scala.inline
@@ -45010,6 +45108,8 @@ object awsSdkStrings {
   def aes192: aes192 = "aes192".asInstanceOf[aes192]
   @scala.inline
   def aes256_ : aes256_ = "aes256".asInstanceOf[aes256_]
+  @scala.inline
+  def agentPermissions: agentPermissions = "agentPermissions".asInstanceOf[agentPermissions]
   @scala.inline
   def aisage: aisage = "aisage".asInstanceOf[aisage]
   @scala.inline
@@ -46805,6 +46905,16 @@ object awsSdkStrings {
   @scala.inline
   def mlDotc5dDotxlarge: mlDotc5dDotxlarge = "ml.c5d.xlarge".asInstanceOf[mlDotc5dDotxlarge]
   @scala.inline
+  def mlDotc5nDot18xlarge: mlDotc5nDot18xlarge = "ml.c5n.18xlarge".asInstanceOf[mlDotc5nDot18xlarge]
+  @scala.inline
+  def mlDotc5nDot2xlarge: mlDotc5nDot2xlarge = "ml.c5n.2xlarge".asInstanceOf[mlDotc5nDot2xlarge]
+  @scala.inline
+  def mlDotc5nDot4xlarge: mlDotc5nDot4xlarge = "ml.c5n.4xlarge".asInstanceOf[mlDotc5nDot4xlarge]
+  @scala.inline
+  def mlDotc5nDot9xlarge: mlDotc5nDot9xlarge = "ml.c5n.9xlarge".asInstanceOf[mlDotc5nDot9xlarge]
+  @scala.inline
+  def mlDotc5nDotxlarge: mlDotc5nDotxlarge = "ml.c5n.xlarge".asInstanceOf[mlDotc5nDotxlarge]
+  @scala.inline
   def mlDoteia1Dotlarge: mlDoteia1Dotlarge = "ml.eia1.large".asInstanceOf[mlDoteia1Dotlarge]
   @scala.inline
   def mlDoteia1Dotmedium: mlDoteia1Dotmedium = "ml.eia1.medium".asInstanceOf[mlDoteia1Dotmedium]
@@ -47485,6 +47595,8 @@ object awsSdkStrings {
   @scala.inline
   def reachability: reachability = "reachability".asInstanceOf[reachability]
   @scala.inline
+  def reactivating: reactivating = "reactivating".asInstanceOf[reactivating]
+  @scala.inline
   def `read-only`: `read-only` = "read-only".asInstanceOf[`read-only`]
   @scala.inline
   def `read-write`: `read-write` = "read-write".asInstanceOf[`read-write`]
@@ -47896,6 +48008,10 @@ object awsSdkStrings {
   def supported: supported = "supported".asInstanceOf[supported]
   @scala.inline
   def `supported-platforms`: `supported-platforms` = "supported-platforms".asInstanceOf[`supported-platforms`]
+  @scala.inline
+  def suspended__ : suspended__ = "suspended".asInstanceOf[suspended__]
+  @scala.inline
+  def suspending: suspending = "suspending".asInstanceOf[suspending]
   @scala.inline
   def `sv-SE`: `sv-SE` = "sv-SE".asInstanceOf[`sv-SE`]
   @scala.inline

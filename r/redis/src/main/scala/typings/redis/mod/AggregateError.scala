@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("redis", "AggregateError")
 @js.native
-class AggregateError () extends RedisError
+class AggregateError () extends AbortError
 

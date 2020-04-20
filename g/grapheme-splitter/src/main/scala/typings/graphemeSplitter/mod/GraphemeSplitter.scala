@@ -22,7 +22,6 @@ object GraphemeSplitter {
     splitGraphemes: String => js.Array[String]
   ): GraphemeSplitter = {
     val __obj = js.Dynamic.literal(countGraphemes = js.Any.fromFunction1(countGraphemes), iterateGraphemes = js.Any.fromFunction1(iterateGraphemes), splitGraphemes = js.Any.fromFunction1(splitGraphemes))
-  
     __obj.asInstanceOf[GraphemeSplitter]
   }
 }

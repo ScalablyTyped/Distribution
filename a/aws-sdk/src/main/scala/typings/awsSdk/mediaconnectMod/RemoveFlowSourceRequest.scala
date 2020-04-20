@@ -20,7 +20,6 @@ object RemoveFlowSourceRequest {
   @scala.inline
   def apply(FlowArn: string, SourceArn: string): RemoveFlowSourceRequest = {
     val __obj = js.Dynamic.literal(FlowArn = FlowArn.asInstanceOf[js.Any], SourceArn = SourceArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RemoveFlowSourceRequest]
   }
 }

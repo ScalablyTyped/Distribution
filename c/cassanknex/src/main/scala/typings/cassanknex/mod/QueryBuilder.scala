@@ -29,7 +29,6 @@ object QueryBuilder {
     stream: StreamParams => js.UndefOr[scala.Nothing]
   ): QueryBuilder = {
     val __obj = js.Dynamic.literal(bindings = js.Any.fromFunction0(bindings), cql = js.Any.fromFunction0(cql), eachRow = js.Any.fromFunction2(eachRow), exec = js.Any.fromFunction1(exec), stream = js.Any.fromFunction1(stream))
-  
     __obj.asInstanceOf[QueryBuilder]
   }
 }

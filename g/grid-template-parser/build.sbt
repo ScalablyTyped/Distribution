@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "grid-template-parser"
-version := "0.3-dt-20190701Z-059715"
+version := "0.3-dt-20190701Z-4ce8a3"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

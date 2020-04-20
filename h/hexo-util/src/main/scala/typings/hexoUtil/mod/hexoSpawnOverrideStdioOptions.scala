@@ -1,7 +1,7 @@
 package typings.hexoUtil.mod
 
 import typings.node.BufferEncoding
-import typings.node.NodeJS.ProcessEnv
+import typings.node.NodeJS.Dict
 import typings.node.childProcessMod.SerializationType
 import typings.node.childProcessMod.StdioOptions
 import scala.scalajs.js
@@ -21,7 +21,7 @@ object hexoSpawnOverrideStdioOptions {
     cwd: String = null,
     detached: js.UndefOr[Boolean] = js.undefined,
     encoding: BufferEncoding = null,
-    env: ProcessEnv = null,
+    env: Dict[String] = null,
     gid: Int | Double = null,
     serialization: SerializationType = null,
     shell: Boolean | String = null,

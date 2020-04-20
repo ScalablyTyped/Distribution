@@ -29,7 +29,6 @@ object ActiveXObject {
     set: (Vector[js.Any], Item, js.Array[Double], js.Any) => Unit
   ): ActiveXObject = {
     val __obj = js.Dynamic.literal(on = js.Any.fromFunction4(on), set = js.Any.fromFunction4(set))
-  
     __obj.asInstanceOf[ActiveXObject]
   }
 }

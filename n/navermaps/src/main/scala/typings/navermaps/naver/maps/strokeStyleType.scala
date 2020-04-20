@@ -21,28 +21,26 @@ trait strokeStyleType extends js.Object
 
 object strokeStyleType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dash: typings.navermaps.navermapsStrings.dash = "dash".asInstanceOf[typings.navermaps.navermapsStrings.dash]
   @scala.inline
-  def dash: typings.navermaps.navermapsStrings.dash = this.cast("dash")
+  def dashdot: typings.navermaps.navermapsStrings.dashdot = "dashdot".asInstanceOf[typings.navermaps.navermapsStrings.dashdot]
   @scala.inline
-  def dashdot: typings.navermaps.navermapsStrings.dashdot = this.cast("dashdot")
+  def dot: typings.navermaps.navermapsStrings.dot = "dot".asInstanceOf[typings.navermaps.navermapsStrings.dot]
   @scala.inline
-  def dot: typings.navermaps.navermapsStrings.dot = this.cast("dot")
+  def longdash: typings.navermaps.navermapsStrings.longdash = "longdash".asInstanceOf[typings.navermaps.navermapsStrings.longdash]
   @scala.inline
-  def longdash: typings.navermaps.navermapsStrings.longdash = this.cast("longdash")
+  def longdashdot: typings.navermaps.navermapsStrings.longdashdot = "longdashdot".asInstanceOf[typings.navermaps.navermapsStrings.longdashdot]
   @scala.inline
-  def longdashdot: typings.navermaps.navermapsStrings.longdashdot = this.cast("longdashdot")
+  def longdashdotdot: typings.navermaps.navermapsStrings.longdashdotdot = "longdashdotdot".asInstanceOf[typings.navermaps.navermapsStrings.longdashdotdot]
   @scala.inline
-  def longdashdotdot: typings.navermaps.navermapsStrings.longdashdotdot = this.cast("longdashdotdot")
+  def shortdash: typings.navermaps.navermapsStrings.shortdash = "shortdash".asInstanceOf[typings.navermaps.navermapsStrings.shortdash]
   @scala.inline
-  def shortdash: typings.navermaps.navermapsStrings.shortdash = this.cast("shortdash")
+  def shortdashdot: typings.navermaps.navermapsStrings.shortdashdot = "shortdashdot".asInstanceOf[typings.navermaps.navermapsStrings.shortdashdot]
   @scala.inline
-  def shortdashdot: typings.navermaps.navermapsStrings.shortdashdot = this.cast("shortdashdot")
+  def shortdashdotdot: typings.navermaps.navermapsStrings.shortdashdotdot = "shortdashdotdot".asInstanceOf[typings.navermaps.navermapsStrings.shortdashdotdot]
   @scala.inline
-  def shortdashdotdot: typings.navermaps.navermapsStrings.shortdashdotdot = this.cast("shortdashdotdot")
+  def shortdot: typings.navermaps.navermapsStrings.shortdot = "shortdot".asInstanceOf[typings.navermaps.navermapsStrings.shortdot]
   @scala.inline
-  def shortdot: typings.navermaps.navermapsStrings.shortdot = this.cast("shortdot")
-  @scala.inline
-  def solid: typings.navermaps.navermapsStrings.solid = this.cast("solid")
+  def solid: typings.navermaps.navermapsStrings.solid = "solid".asInstanceOf[typings.navermaps.navermapsStrings.solid]
 }
 

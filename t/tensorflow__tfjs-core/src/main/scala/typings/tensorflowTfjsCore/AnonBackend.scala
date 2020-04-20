@@ -28,7 +28,6 @@ object AnonBackend {
     shape: js.Array[Double]
   ): AnonBackend = {
     val __obj = js.Dynamic.literal(backend = backend.asInstanceOf[js.Any], bytes = bytes.asInstanceOf[js.Any], dtype = dtype.asInstanceOf[js.Any], refCount = refCount.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBackend]
   }
 }

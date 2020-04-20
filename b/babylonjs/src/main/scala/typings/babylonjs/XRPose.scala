@@ -13,7 +13,6 @@ object XRPose {
   @scala.inline
   def apply(emulatedPosition: Boolean, transform: XRRigidTransform): XRPose = {
     val __obj = js.Dynamic.literal(emulatedPosition = emulatedPosition.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[XRPose]
   }
 }

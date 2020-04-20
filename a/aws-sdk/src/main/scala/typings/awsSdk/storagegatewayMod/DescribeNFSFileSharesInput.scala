@@ -16,7 +16,6 @@ object DescribeNFSFileSharesInput {
   @scala.inline
   def apply(FileShareARNList: FileShareARNList): DescribeNFSFileSharesInput = {
     val __obj = js.Dynamic.literal(FileShareARNList = FileShareARNList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeNFSFileSharesInput]
   }
 }

@@ -38,7 +38,6 @@ object Typeoftimeout {
     stop: Double
   ): Typeoftimeout = {
     val __obj = js.Dynamic.literal(editTracksInfo = editTracksInfo.asInstanceOf[js.Any], getStatus = getStatus.asInstanceOf[js.Any], load = load.asInstanceOf[js.Any], pause = pause.asInstanceOf[js.Any], play = play.asInstanceOf[js.Any], queueInsert = queueInsert.asInstanceOf[js.Any], queueLoad = queueLoad.asInstanceOf[js.Any], queueRemove = queueRemove.asInstanceOf[js.Any], queueReorder = queueReorder.asInstanceOf[js.Any], queueUpdate = queueUpdate.asInstanceOf[js.Any], seek = seek.asInstanceOf[js.Any], setVolume = setVolume.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Typeoftimeout]
   }
 }

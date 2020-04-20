@@ -15,7 +15,6 @@ object Lock {
   @scala.inline
   def apply(mode: exclusive | shared, name: String): Lock = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Lock]
   }
 }

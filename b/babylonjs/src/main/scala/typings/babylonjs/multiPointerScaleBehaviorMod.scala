@@ -45,7 +45,7 @@ object multiPointerScaleBehaviorMod extends js.Object {
       *  The name of the behavior
       */
     @JSName("name")
-    def name_MMultiPointerScaleBehavior(): String = js.native
+    def name_MMultiPointerScaleBehavior: String = js.native
   }
   
 }

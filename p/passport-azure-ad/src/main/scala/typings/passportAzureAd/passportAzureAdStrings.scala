@@ -50,7 +50,7 @@ object passportAzureAdStrings {
   @scala.inline
   def code: code = "code".asInstanceOf[code]
   @scala.inline
-  def `code id_token`: `code id_token` = "code id_token".asInstanceOf[`code id_token`]
+  def `code id_token`: `code id_token` = ("code id_token").asInstanceOf[`code id_token`]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
@@ -58,7 +58,7 @@ object passportAzureAdStrings {
   @scala.inline
   def id_token: id_token = "id_token".asInstanceOf[id_token]
   @scala.inline
-  def `id_token code`: `id_token code` = "id_token code".asInstanceOf[`id_token code`]
+  def `id_token code`: `id_token code` = ("id_token code").asInstanceOf[`id_token code`]
   @scala.inline
   def info: info = "info".asInstanceOf[info]
   @scala.inline

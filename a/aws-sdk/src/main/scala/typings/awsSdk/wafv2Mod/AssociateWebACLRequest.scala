@@ -20,7 +20,6 @@ object AssociateWebACLRequest {
   @scala.inline
   def apply(ResourceArn: ResourceArn, WebACLArn: ResourceArn): AssociateWebACLRequest = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any], WebACLArn = WebACLArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssociateWebACLRequest]
   }
 }

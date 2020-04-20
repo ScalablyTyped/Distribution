@@ -19,7 +19,6 @@ object TypeScriptPatchConfig {
   @scala.inline
   def apply(skipGetSyntacticDiagnostics: Boolean): TypeScriptPatchConfig = {
     val __obj = js.Dynamic.literal(skipGetSyntacticDiagnostics = skipGetSyntacticDiagnostics.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeScriptPatchConfig]
   }
 }

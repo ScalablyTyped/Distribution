@@ -24,7 +24,6 @@ object XmlParser {
     parseString: (String, js.Function2[/* err */ Null | js.Array[Error], /* xmlNode */ Node, Unit]) => Boolean
   ): XmlParser = {
     val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], parseString = js.Any.fromFunction2(parseString))
-  
     __obj.asInstanceOf[XmlParser]
   }
 }

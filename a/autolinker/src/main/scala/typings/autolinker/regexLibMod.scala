@@ -20,6 +20,7 @@ object regexLibMod extends js.Object {
   val emojiStr: String = js.native
   val letterRe: RegExp = js.native
   val marksStr: String = js.native
+  val nonDigitRe: RegExp = js.native
   val quoteRe: RegExp = js.native
   val whitespaceRe: RegExp = js.native
   def getDomainNameStr(group: Double): String = js.native

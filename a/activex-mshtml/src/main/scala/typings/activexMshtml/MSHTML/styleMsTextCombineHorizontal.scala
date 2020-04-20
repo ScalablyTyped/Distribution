@@ -20,16 +20,14 @@ trait styleMsTextCombineHorizontal extends js.Object
 
 object styleMsTextCombineHorizontal {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleMsTextCombineHorizontalAll: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleMsTextCombineHorizontalAll: `1` = this.cast(1)
+  def styleMsTextCombineHorizontalDigits: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleMsTextCombineHorizontalDigits: `2` = this.cast(2)
+  def styleMsTextCombineHorizontalNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleMsTextCombineHorizontalNone: `0` = this.cast(0)
+  def styleMsTextCombineHorizontalNotSet: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def styleMsTextCombineHorizontalNotSet: `3` = this.cast(3)
-  @scala.inline
-  def styleMsTextCombineHorizontal_Max: `2147483647` = this.cast(2147483647)
+  def styleMsTextCombineHorizontal_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

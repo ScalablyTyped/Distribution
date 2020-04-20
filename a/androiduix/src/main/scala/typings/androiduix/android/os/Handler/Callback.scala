@@ -13,7 +13,6 @@ object Callback {
   @scala.inline
   def apply(handleMessage: Message => Boolean): Callback = {
     val __obj = js.Dynamic.literal(handleMessage = js.Any.fromFunction1(handleMessage))
-  
     __obj.asInstanceOf[Callback]
   }
 }

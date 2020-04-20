@@ -12,10 +12,8 @@ trait CSSPositionType extends js.Object
 
 object CSSPositionType {
   @scala.inline
-  def absolute: typings.atlaskitLayer.atlaskitLayerStrings.absolute = this.cast("absolute")
+  def absolute: typings.atlaskitLayer.atlaskitLayerStrings.absolute = "absolute".asInstanceOf[typings.atlaskitLayer.atlaskitLayerStrings.absolute]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def fixed: typings.atlaskitLayer.atlaskitLayerStrings.fixed = this.cast("fixed")
+  def fixed: typings.atlaskitLayer.atlaskitLayerStrings.fixed = "fixed".asInstanceOf[typings.atlaskitLayer.atlaskitLayerStrings.fixed]
 }
 

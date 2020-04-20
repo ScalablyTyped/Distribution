@@ -20,7 +20,6 @@ object CidrAuthorizationContext {
   @scala.inline
   def apply(Message: String, Signature: String): CidrAuthorizationContext = {
     val __obj = js.Dynamic.literal(Message = Message.asInstanceOf[js.Any], Signature = Signature.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CidrAuthorizationContext]
   }
 }

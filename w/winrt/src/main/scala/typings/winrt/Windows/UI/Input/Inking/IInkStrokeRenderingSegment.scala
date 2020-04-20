@@ -27,7 +27,6 @@ object IInkStrokeRenderingSegment {
     twist: Double
   ): IInkStrokeRenderingSegment = {
     val __obj = js.Dynamic.literal(bezierControlPoint1 = bezierControlPoint1.asInstanceOf[js.Any], bezierControlPoint2 = bezierControlPoint2.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], pressure = pressure.asInstanceOf[js.Any], tiltX = tiltX.asInstanceOf[js.Any], tiltY = tiltY.asInstanceOf[js.Any], twist = twist.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IInkStrokeRenderingSegment]
   }
 }

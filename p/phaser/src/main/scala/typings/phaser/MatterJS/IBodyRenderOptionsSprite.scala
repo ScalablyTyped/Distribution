@@ -27,7 +27,6 @@ object IBodyRenderOptionsSprite {
   @scala.inline
   def apply(xOffset: Double, yOffset: Double): IBodyRenderOptionsSprite = {
     val __obj = js.Dynamic.literal(xOffset = xOffset.asInstanceOf[js.Any], yOffset = yOffset.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IBodyRenderOptionsSprite]
   }
 }

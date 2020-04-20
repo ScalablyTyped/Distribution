@@ -11,11 +11,11 @@ trait DescribeHumanLoopResponse extends js.Object {
     */
   var CreationTime: Timestamp = js.native
   /**
-    * A failure code denoting a specific type of failure.
+    * A failure code that identifies the type of failure.
     */
   var FailureCode: js.UndefOr[String] = js.native
   /**
-    * The reason why a human loop has failed. The failure reason is returned when the human loop status is Failed.
+    * The reason why a human loop failed. The failure reason is returned when the status of the human loop is Failed.
     */
   var FailureReason: js.UndefOr[String] = js.native
   /**
@@ -27,15 +27,15 @@ trait DescribeHumanLoopResponse extends js.Object {
     */
   var HumanLoopArn: typings.awsSdk.augmentedairuntimeMod.HumanLoopArn = js.native
   /**
-    * The name of the human loop.
+    * The name of the human loop. The name must be lowercase, unique within the Region in your account, and can have up to 63 characters. Valid characters: a-z, 0-9, and - (hyphen).
     */
   var HumanLoopName: typings.awsSdk.augmentedairuntimeMod.HumanLoopName = js.native
   /**
-    * An object containing information about the output of the human loop.
+    * An object that contains information about the output of the human loop.
     */
   var HumanLoopOutput: js.UndefOr[typings.awsSdk.augmentedairuntimeMod.HumanLoopOutput] = js.native
   /**
-    * The status of the human loop. Valid values:
+    * The status of the human loop. 
     */
   var HumanLoopStatus: typings.awsSdk.augmentedairuntimeMod.HumanLoopStatus = js.native
 }

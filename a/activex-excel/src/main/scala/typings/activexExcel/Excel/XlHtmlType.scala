@@ -18,14 +18,12 @@ trait XlHtmlType extends js.Object
 
 object XlHtmlType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlHtmlCalc: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlHtmlCalc: `1` = this.cast(1)
+  def xlHtmlChart: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlHtmlChart: `3` = this.cast(3)
+  def xlHtmlList: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlHtmlList: `2` = this.cast(2)
-  @scala.inline
-  def xlHtmlStatic: `0` = this.cast(0)
+  def xlHtmlStatic: `0` = 0.asInstanceOf[`0`]
 }
 

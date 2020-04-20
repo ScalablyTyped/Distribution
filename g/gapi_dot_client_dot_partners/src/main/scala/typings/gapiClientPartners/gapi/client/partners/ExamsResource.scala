@@ -15,7 +15,6 @@ object ExamsResource {
   @scala.inline
   def apply(getToken: AnonExamType => Request_[ExamToken]): ExamsResource = {
     val __obj = js.Dynamic.literal(getToken = js.Any.fromFunction1(getToken))
-  
     __obj.asInstanceOf[ExamsResource]
   }
 }

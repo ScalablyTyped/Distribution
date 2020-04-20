@@ -40,14 +40,12 @@ trait PaymentsErrorStatusCode extends js.Object
 
 object PaymentsErrorStatusCode {
   @scala.inline
-  def BUYER_ACCOUNT_ERROR: typings.googlepay.googlepayStrings.BUYER_ACCOUNT_ERROR = this.cast("BUYER_ACCOUNT_ERROR")
+  def BUYER_ACCOUNT_ERROR: typings.googlepay.googlepayStrings.BUYER_ACCOUNT_ERROR = "BUYER_ACCOUNT_ERROR".asInstanceOf[typings.googlepay.googlepayStrings.BUYER_ACCOUNT_ERROR]
   @scala.inline
-  def DEVELOPER_ERROR: typings.googlepay.googlepayStrings.DEVELOPER_ERROR = this.cast("DEVELOPER_ERROR")
+  def DEVELOPER_ERROR: typings.googlepay.googlepayStrings.DEVELOPER_ERROR = "DEVELOPER_ERROR".asInstanceOf[typings.googlepay.googlepayStrings.DEVELOPER_ERROR]
   @scala.inline
-  def INTERNAL_ERROR: typings.googlepay.googlepayStrings.INTERNAL_ERROR = this.cast("INTERNAL_ERROR")
+  def INTERNAL_ERROR: typings.googlepay.googlepayStrings.INTERNAL_ERROR = "INTERNAL_ERROR".asInstanceOf[typings.googlepay.googlepayStrings.INTERNAL_ERROR]
   @scala.inline
-  def MERCHANT_ACCOUNT_ERROR: typings.googlepay.googlepayStrings.MERCHANT_ACCOUNT_ERROR = this.cast("MERCHANT_ACCOUNT_ERROR")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def MERCHANT_ACCOUNT_ERROR: typings.googlepay.googlepayStrings.MERCHANT_ACCOUNT_ERROR = "MERCHANT_ACCOUNT_ERROR".asInstanceOf[typings.googlepay.googlepayStrings.MERCHANT_ACCOUNT_ERROR]
 }
 

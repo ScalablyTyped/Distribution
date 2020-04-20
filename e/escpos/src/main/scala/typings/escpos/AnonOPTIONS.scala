@@ -14,7 +14,6 @@ object AnonOPTIONS {
   @scala.inline
   def apply(CMD: InformationseparatorthreeLeftparenthesiskEndoftextNull1E, OPTIONS: AnonH): AnonOPTIONS = {
     val __obj = js.Dynamic.literal(CMD = CMD.asInstanceOf[js.Any], OPTIONS = OPTIONS.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOPTIONS]
   }
 }

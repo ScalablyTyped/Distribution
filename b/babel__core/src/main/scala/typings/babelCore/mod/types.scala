@@ -1847,7 +1847,7 @@ object types extends js.Object {
   def emptyStatement(): EmptyStatement_ = js.native
   def emptyTypeAnnotation(): EmptyTypeAnnotation_ = js.native
   def ensureBlock(node: Extract[typings.babelTypes.mod.Node, AnonBody]): BlockStatement_ = js.native
-  def ensureBlock[K /* <: String */](
+  def ensureBlock[K /* <: /* keyof std.Extract<@babel/types.@babel/types.Node, @babel/types.AnonBody> */ String */](
     node: Extract[typings.babelTypes.mod.Node, Record[K, BlockStatement_ | Statement | Expression]],
     key: K
   ): BlockStatement_ = js.native
@@ -4541,12 +4541,12 @@ object types extends js.Object {
   def updateExpression(operator: `--`, argument: Expression, prefix: Boolean): UpdateExpression_ = js.native
   def v8IntrinsicIdentifier(name: String): V8IntrinsicIdentifier_ = js.native
   def validate(n: typings.babelTypes.mod.Node, key: String, value: js.Any): Unit = js.native
-  def validate[T /* <: typings.babelTypes.mod.Node */, K /* <: String */](
+  def validate[T /* <: typings.babelTypes.mod.Node */, K /* <: /* keyof T */ String */](
     n: js.UndefOr[typings.babelTypes.mod.Node],
     key: K,
     value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ): Unit = js.native
-  def validate[T /* <: typings.babelTypes.mod.Node */, K /* <: String */](
+  def validate[T /* <: typings.babelTypes.mod.Node */, K /* <: /* keyof T */ String */](
     n: Null,
     key: K,
     value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any

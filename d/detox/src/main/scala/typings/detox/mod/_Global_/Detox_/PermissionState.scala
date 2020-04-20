@@ -13,12 +13,10 @@ trait PermissionState extends js.Object
 
 object PermissionState {
   @scala.inline
-  def NO: typings.detox.detoxStrings.NO = this.cast("NO")
+  def NO: typings.detox.detoxStrings.NO = "NO".asInstanceOf[typings.detox.detoxStrings.NO]
   @scala.inline
-  def YES: typings.detox.detoxStrings.YES = this.cast("YES")
+  def YES: typings.detox.detoxStrings.YES = "YES".asInstanceOf[typings.detox.detoxStrings.YES]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def unset: typings.detox.detoxStrings.unset = this.cast("unset")
+  def unset: typings.detox.detoxStrings.unset = "unset".asInstanceOf[typings.detox.detoxStrings.unset]
 }
 

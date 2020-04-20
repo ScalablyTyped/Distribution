@@ -15,7 +15,6 @@ object IExpressionResult {
   @scala.inline
   def apply(qBadFieldNames: js.Array[INxRange]): IExpressionResult = {
     val __obj = js.Dynamic.literal(qBadFieldNames = qBadFieldNames.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IExpressionResult]
   }
 }

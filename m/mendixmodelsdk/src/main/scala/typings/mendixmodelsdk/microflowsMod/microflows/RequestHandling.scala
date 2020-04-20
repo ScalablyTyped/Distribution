@@ -23,9 +23,9 @@ abstract class RequestHandling protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FRequestHandling: IModel = js.native
-  def containerAsExportXmlAction(): ExportXmlAction = js.native
-  def containerAsRestCallAction(): RestCallAction = js.native
-  def containerAsWebServiceCallAction(): WebServiceCallAction = js.native
+  def containerAsExportXmlAction: ExportXmlAction = js.native
+  def containerAsRestCallAction: RestCallAction = js.native
+  def containerAsWebServiceCallAction: WebServiceCallAction = js.native
 }
 
 /* static members */

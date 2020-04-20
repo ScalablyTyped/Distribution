@@ -14,7 +14,6 @@ object levelLoadedData {
   @scala.inline
   def apply(details: LevelDetails, levelId: Double, stats: Stats): levelLoadedData = {
     val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], levelId = levelId.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[levelLoadedData]
   }
 }

@@ -13,12 +13,10 @@ trait CardStatus extends js.Object
 
 object CardStatus {
   @scala.inline
-  def CREATED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CREATED = this.cast("CREATED")
+  def CREATED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CREATED = "CREATED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CREATED]
   @scala.inline
-  def ERROR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ERROR = this.cast("ERROR")
+  def ERROR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ERROR = "ERROR".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ERROR]
   @scala.inline
-  def VALIDATED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VALIDATED = this.cast("VALIDATED")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def VALIDATED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VALIDATED = "VALIDATED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VALIDATED]
 }
 

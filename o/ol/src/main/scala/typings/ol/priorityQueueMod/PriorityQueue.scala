@@ -28,7 +28,6 @@ object PriorityQueue {
     reprioritize: () => Unit
   ): PriorityQueue[T] = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), dequeue = js.Any.fromFunction0(dequeue), enqueue = js.Any.fromFunction1(enqueue), getCount = js.Any.fromFunction0(getCount), isEmpty = js.Any.fromFunction0(isEmpty), isKeyQueued = js.Any.fromFunction1(isKeyQueued), isQueued = js.Any.fromFunction1(isQueued), reprioritize = js.Any.fromFunction0(reprioritize))
-  
     __obj.asInstanceOf[PriorityQueue[T]]
   }
 }

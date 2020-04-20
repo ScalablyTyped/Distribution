@@ -22,7 +22,6 @@ object ConversionsCollection {
     batchupdate: (ConversionsBatchUpdateRequest, String) => ConversionsBatchUpdateResponse
   ): ConversionsCollection = {
     val __obj = js.Dynamic.literal(batchinsert = js.Any.fromFunction2(batchinsert), batchupdate = js.Any.fromFunction2(batchupdate))
-  
     __obj.asInstanceOf[ConversionsCollection]
   }
 }

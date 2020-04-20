@@ -19,7 +19,6 @@ object HierarchyLink {
   @scala.inline
   def apply[Datum](source: HierarchyNode[Datum], target: HierarchyNode[Datum]): HierarchyLink[Datum] = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HierarchyLink[Datum]]
   }
 }

@@ -27,7 +27,6 @@ object WorkspaceFolder {
   @scala.inline
   def apply(index: Double, name: String, uri: Uri): WorkspaceFolder = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WorkspaceFolder]
   }
 }

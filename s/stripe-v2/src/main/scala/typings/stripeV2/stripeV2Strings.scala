@@ -78,9 +78,9 @@ object stripeV2Strings {
   sealed trait unknown_ extends StripeCardDataFunding
   
   @scala.inline
-  def `American Express`: `American Express` = "American Express".asInstanceOf[`American Express`]
+  def `American Express`: `American Express` = ("American Express").asInstanceOf[`American Express`]
   @scala.inline
-  def `Diners Club`: `Diners Club` = "Diners Club".asInstanceOf[`Diners Club`]
+  def `Diners Club`: `Diners Club` = ("Diners Club").asInstanceOf[`Diners Club`]
   @scala.inline
   def Discover: Discover = "Discover".asInstanceOf[Discover]
   @scala.inline

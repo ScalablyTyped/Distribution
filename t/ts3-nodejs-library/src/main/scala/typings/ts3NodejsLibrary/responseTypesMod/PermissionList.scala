@@ -14,7 +14,6 @@ object PermissionList {
   @scala.inline
   def apply(permdesc: String, permid: Double, permname: String): PermissionList = {
     val __obj = js.Dynamic.literal(permdesc = permdesc.asInstanceOf[js.Any], permid = permid.asInstanceOf[js.Any], permname = permname.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PermissionList]
   }
 }

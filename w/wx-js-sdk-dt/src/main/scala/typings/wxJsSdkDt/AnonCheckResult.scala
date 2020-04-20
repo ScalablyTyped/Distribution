@@ -14,7 +14,6 @@ object AnonCheckResult {
   @scala.inline
   def apply(checkResult: StringDictionary[Boolean], errMsg: AnonMsg): AnonCheckResult = {
     val __obj = js.Dynamic.literal(checkResult = checkResult.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCheckResult]
   }
 }

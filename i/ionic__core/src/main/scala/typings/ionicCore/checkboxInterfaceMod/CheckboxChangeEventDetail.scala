@@ -13,7 +13,6 @@ object CheckboxChangeEventDetail {
   @scala.inline
   def apply(checked: Boolean, value: js.Any): CheckboxChangeEventDetail = {
     val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CheckboxChangeEventDetail]
   }
 }

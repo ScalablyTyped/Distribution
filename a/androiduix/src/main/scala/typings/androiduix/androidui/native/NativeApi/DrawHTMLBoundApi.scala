@@ -16,7 +16,6 @@ object DrawHTMLBoundApi {
     showDrawHTMLBound: (Double, Double, Double, Double, Double) => Unit
   ): DrawHTMLBoundApi = {
     val __obj = js.Dynamic.literal(hideDrawHTMLBound = js.Any.fromFunction1(hideDrawHTMLBound), showDrawHTMLBound = js.Any.fromFunction5(showDrawHTMLBound))
-  
     __obj.asInstanceOf[DrawHTMLBoundApi]
   }
 }

@@ -13,7 +13,6 @@ object WxSaveFileSuccessCallbackResult {
   @scala.inline
   def apply(savedFilePath: Double): WxSaveFileSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(savedFilePath = savedFilePath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WxSaveFileSuccessCallbackResult]
   }
 }

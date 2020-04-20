@@ -12,7 +12,6 @@ object AnonTraceName {
   @scala.inline
   def apply(traceName: String): AnonTraceName = {
     val __obj = js.Dynamic.literal(traceName = traceName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTraceName]
   }
 }

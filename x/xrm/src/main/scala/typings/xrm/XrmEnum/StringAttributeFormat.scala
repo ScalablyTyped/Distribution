@@ -26,18 +26,16 @@ trait StringAttributeFormat extends js.Object
 
 object StringAttributeFormat {
   @scala.inline
-  def Email: email = this.cast("email")
+  def Email: email = "email".asInstanceOf[email]
   @scala.inline
-  def Phone: phone = this.cast("phone")
+  def Phone: phone = "phone".asInstanceOf[phone]
   @scala.inline
-  def Text: text = this.cast("text")
+  def Text: text = "text".asInstanceOf[text]
   @scala.inline
-  def TextArea: textarea = this.cast("textarea")
+  def TextArea: textarea = "textarea".asInstanceOf[textarea]
   @scala.inline
-  def TickerSymbol: tickersymbol = this.cast("tickersymbol")
+  def TickerSymbol: tickersymbol = "tickersymbol".asInstanceOf[tickersymbol]
   @scala.inline
-  def URL: url = this.cast("url")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def URL: url = "url".asInstanceOf[url]
 }
 

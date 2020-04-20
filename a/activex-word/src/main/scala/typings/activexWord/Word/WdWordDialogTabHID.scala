@@ -14,10 +14,8 @@ trait WdWordDialogTabHID extends js.Object
 
 object WdWordDialogTabHID {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdDialogFilePageSetupTabPaperSize: `150001` = 150001.asInstanceOf[`150001`]
   @scala.inline
-  def wdDialogFilePageSetupTabPaperSize: `150001` = this.cast(150001)
-  @scala.inline
-  def wdDialogFilePageSetupTabPaperSource: `150002` = this.cast(150002)
+  def wdDialogFilePageSetupTabPaperSource: `150002` = 150002.asInstanceOf[`150002`]
 }
 

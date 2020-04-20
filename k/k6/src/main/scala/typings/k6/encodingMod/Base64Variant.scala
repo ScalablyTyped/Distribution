@@ -14,14 +14,12 @@ trait Base64Variant extends js.Object
 
 object Base64Variant {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def rawstd: typings.k6.k6Strings.rawstd = "rawstd".asInstanceOf[typings.k6.k6Strings.rawstd]
   @scala.inline
-  def rawstd: typings.k6.k6Strings.rawstd = this.cast("rawstd")
+  def rawurl: typings.k6.k6Strings.rawurl = "rawurl".asInstanceOf[typings.k6.k6Strings.rawurl]
   @scala.inline
-  def rawurl: typings.k6.k6Strings.rawurl = this.cast("rawurl")
+  def std: typings.k6.k6Strings.std = "std".asInstanceOf[typings.k6.k6Strings.std]
   @scala.inline
-  def std: typings.k6.k6Strings.std = this.cast("std")
-  @scala.inline
-  def url: typings.k6.k6Strings.url = this.cast("url")
+  def url: typings.k6.k6Strings.url = "url".asInstanceOf[typings.k6.k6Strings.url]
 }
 

@@ -30,7 +30,6 @@ object NodePluginSchema {
     buildUnionType: ComposeUnionTypeConfig[_, _] => GatsbyGraphQLUnionType
   ): NodePluginSchema = {
     val __obj = js.Dynamic.literal(buildEnumType = js.Any.fromFunction1(buildEnumType), buildInputObjectType = js.Any.fromFunction1(buildInputObjectType), buildInterfaceType = js.Any.fromFunction1(buildInterfaceType), buildObjectType = js.Any.fromFunction1(buildObjectType), buildScalarType = js.Any.fromFunction1(buildScalarType), buildUnionType = js.Any.fromFunction1(buildUnionType))
-  
     __obj.asInstanceOf[NodePluginSchema]
   }
 }

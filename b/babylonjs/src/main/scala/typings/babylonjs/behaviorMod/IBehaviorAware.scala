@@ -34,7 +34,6 @@ object IBehaviorAware {
     removeBehavior: Behavior[T] => T
   ): IBehaviorAware[T] = {
     val __obj = js.Dynamic.literal(addBehavior = js.Any.fromFunction1(addBehavior), getBehaviorByName = js.Any.fromFunction1(getBehaviorByName), removeBehavior = js.Any.fromFunction1(removeBehavior))
-  
     __obj.asInstanceOf[IBehaviorAware[T]]
   }
 }

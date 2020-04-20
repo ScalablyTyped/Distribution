@@ -20,7 +20,6 @@ object AssociateHostedConnectionRequest {
   @scala.inline
   def apply(connectionId: ConnectionId, parentConnectionId: ConnectionId): AssociateHostedConnectionRequest = {
     val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any], parentConnectionId = parentConnectionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssociateHostedConnectionRequest]
   }
 }

@@ -24,7 +24,6 @@ object CognitoMemberDefinition {
   @scala.inline
   def apply(ClientId: CognitoClientId, UserGroup: CognitoUserGroup, UserPool: CognitoUserPool): CognitoMemberDefinition = {
     val __obj = js.Dynamic.literal(ClientId = ClientId.asInstanceOf[js.Any], UserGroup = UserGroup.asInstanceOf[js.Any], UserPool = UserPool.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CognitoMemberDefinition]
   }
 }

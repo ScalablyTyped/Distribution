@@ -1,27 +1,28 @@
 package typings.useMediaAntdQuery
 
+import typings.useMediaAntdQuery.mod.MediaQueryKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object useMediaAntdQueryStrings {
   @js.native
-  sealed trait lg extends js.Object
+  sealed trait lg extends MediaQueryKey
   
   @js.native
-  sealed trait md extends js.Object
+  sealed trait md extends MediaQueryKey
   
   @js.native
-  sealed trait sm extends js.Object
+  sealed trait sm extends MediaQueryKey
   
   @js.native
-  sealed trait xl extends js.Object
+  sealed trait xl extends MediaQueryKey
   
   @js.native
-  sealed trait xs extends js.Object
+  sealed trait xs extends MediaQueryKey
   
   @js.native
-  sealed trait xxl extends js.Object
+  sealed trait xxl extends MediaQueryKey
   
   @scala.inline
   def lg: lg = "lg".asInstanceOf[lg]

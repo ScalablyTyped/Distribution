@@ -13,7 +13,6 @@ object AnonBin {
   @scala.inline
   def apply(bin: String, critical: Boolean): AnonBin = {
     val __obj = js.Dynamic.literal(bin = bin.asInstanceOf[js.Any], critical = critical.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBin]
   }
 }

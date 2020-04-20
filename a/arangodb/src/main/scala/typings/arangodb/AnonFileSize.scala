@@ -13,7 +13,6 @@ object AnonFileSize {
   @scala.inline
   def apply(count: Double, fileSize: Double): AnonFileSize = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], fileSize = fileSize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFileSize]
   }
 }

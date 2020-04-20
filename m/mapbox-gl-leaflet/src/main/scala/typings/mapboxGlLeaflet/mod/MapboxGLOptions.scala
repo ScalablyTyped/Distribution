@@ -13,7 +13,6 @@ object MapboxGLOptions {
   @scala.inline
   def apply(accessToken: String, style: String): MapboxGLOptions = {
     val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MapboxGLOptions]
   }
 }

@@ -12,7 +12,6 @@ object Formatter {
   @scala.inline
   def apply(format: Double => String): Formatter = {
     val __obj = js.Dynamic.literal(format = js.Any.fromFunction1(format))
-  
     __obj.asInstanceOf[Formatter]
   }
 }

@@ -13,7 +13,6 @@ object SendSimpleMessageParams {
   @scala.inline
   def apply(roomId: String, text: String): SendSimpleMessageParams = {
     val __obj = js.Dynamic.literal(roomId = roomId.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SendSimpleMessageParams]
   }
 }

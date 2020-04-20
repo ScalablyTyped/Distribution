@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeZssRichTextEditorProps {
   @scala.inline
-  def RichTextEditorProps: PartialRichTextEditorProp.type = typings.reactNativeZssRichTextEditor.PartialRichTextEditorProp
+  def RichTextEditorProps: PartialRichTextEditorProp.type = PartialRichTextEditorProp
   type RichTextEditorProps = PartialRichTextEditorProp
   @scala.inline
-  def RichTextToolbarProps: PartialRichTextToolbarPro.type = typings.reactNativeZssRichTextEditor.PartialRichTextToolbarPro
+  def RichTextToolbarProps: PartialRichTextToolbarPro.type = PartialRichTextToolbarPro
   type RichTextToolbarProps = PartialRichTextToolbarPro
 }
 

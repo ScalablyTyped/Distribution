@@ -20,7 +20,6 @@ object PutLifecyclePolicyInput {
   @scala.inline
   def apply(ContainerName: ContainerName, LifecyclePolicy: LifecyclePolicy): PutLifecyclePolicyInput = {
     val __obj = js.Dynamic.literal(ContainerName = ContainerName.asInstanceOf[js.Any], LifecyclePolicy = LifecyclePolicy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutLifecyclePolicyInput]
   }
 }

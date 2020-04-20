@@ -13,7 +13,6 @@ object IMixinStatic {
   @scala.inline
   def apply(extend: js.Any => Unit, includeInto: js.Any => Unit): IMixinStatic = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), includeInto = js.Any.fromFunction1(includeInto))
-  
     __obj.asInstanceOf[IMixinStatic]
   }
 }

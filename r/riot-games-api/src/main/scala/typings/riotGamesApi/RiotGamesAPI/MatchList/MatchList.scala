@@ -15,7 +15,6 @@ object MatchList {
   @scala.inline
   def apply(endIndex: Double, matches: js.Array[MatchReference], startIndex: Double, totalGames: Double): MatchList = {
     val __obj = js.Dynamic.literal(endIndex = endIndex.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any], startIndex = startIndex.asInstanceOf[js.Any], totalGames = totalGames.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MatchList]
   }
 }

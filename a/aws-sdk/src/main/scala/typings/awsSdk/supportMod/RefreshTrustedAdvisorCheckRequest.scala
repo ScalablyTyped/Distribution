@@ -16,7 +16,6 @@ object RefreshTrustedAdvisorCheckRequest {
   @scala.inline
   def apply(checkId: String): RefreshTrustedAdvisorCheckRequest = {
     val __obj = js.Dynamic.literal(checkId = checkId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RefreshTrustedAdvisorCheckRequest]
   }
 }

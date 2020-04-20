@@ -17,7 +17,6 @@ object RouteSpecHttpRouteAction {
   @scala.inline
   def apply(weightedTargets: js.Array[RouteSpecHttpRouteActionWeightedTarget]): RouteSpecHttpRouteAction = {
     val __obj = js.Dynamic.literal(weightedTargets = weightedTargets.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RouteSpecHttpRouteAction]
   }
 }

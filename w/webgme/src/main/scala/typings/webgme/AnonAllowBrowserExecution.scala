@@ -45,7 +45,6 @@ object AnonAllowBrowserExecution {
     serverResultTimeout: Double
   ): AnonAllowBrowserExecution = {
     val __obj = js.Dynamic.literal(allowBrowserExecution = allowBrowserExecution.asInstanceOf[js.Any], allowServerExecution = allowServerExecution.asInstanceOf[js.Any], basePaths = basePaths.asInstanceOf[js.Any], displayAll = displayAll.asInstanceOf[js.Any], serverResultTimeout = serverResultTimeout.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAllowBrowserExecution]
   }
 }

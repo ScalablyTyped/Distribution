@@ -16,7 +16,6 @@ object DescribeCampaignRequest {
   @scala.inline
   def apply(campaignArn: Arn): DescribeCampaignRequest = {
     val __obj = js.Dynamic.literal(campaignArn = campaignArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeCampaignRequest]
   }
 }

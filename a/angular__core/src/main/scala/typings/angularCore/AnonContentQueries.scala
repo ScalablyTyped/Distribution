@@ -1,5 +1,6 @@
 package typings.angularCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.angularCore.mod.ContentQueriesFunction
 import typings.angularCore.mod.DirectiveDefFeature
 import typings.angularCore.mod.HostBindingsFunction
@@ -33,8 +34,8 @@ trait AnonContentQueries[T] extends js.Object {
     * Assign static attribute values to a host element.
     *
     * This property will assign static attribute values as well as class and style
-    * values to a host element. Since attribute values can consist of different types of values, the
-    * `hostAttrs` array must include the values in the following format:
+    * values to a host element. Since attribute values can consist of different types of values,
+    * the `hostAttrs` array must include the values in the following format:
     *
     * attrs = [
     *   // static attributes (like `title`, `name`, `id`...)
@@ -117,7 +118,7 @@ trait AnonContentQueries[T] extends js.Object {
   var inputs: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? string | [string, string] | undefined}
-    */ typings.angularCore.angularCoreStrings.AnonContentQueries with js.Any
+    */ typings.angularCore.angularCoreStrings.AnonContentQueries with TopLevel[js.Any]
   ] = js.undefined
   /**
     * A map of output names.
@@ -132,7 +133,7 @@ trait AnonContentQueries[T] extends js.Object {
   var outputs: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P_1 in keyof T ]:? string | undefined}
-    */ typings.angularCore.angularCoreStrings.AnonContentQueries with js.Any
+    */ typings.angularCore.angularCoreStrings.AnonContentQueries with TopLevel[js.Any]
   ] = js.undefined
   /** The selectors that will be used to match nodes to this directive. */
   var selectors: js.UndefOr[ɵCssSelectorList] = js.undefined
@@ -159,10 +160,10 @@ object AnonContentQueries {
     hostVars: Int | Double = null,
     inputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? string | [string, string] | undefined}
-    */ typings.angularCore.angularCoreStrings.AnonContentQueries with js.Any = null,
+    */ typings.angularCore.angularCoreStrings.AnonContentQueries with TopLevel[js.Any] = null,
     outputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P_1 in keyof T ]:? string | undefined}
-    */ typings.angularCore.angularCoreStrings.AnonContentQueries with js.Any = null,
+    */ typings.angularCore.angularCoreStrings.AnonContentQueries with TopLevel[js.Any] = null,
     selectors: ɵCssSelectorList = null,
     viewQuery: (/* rf */ ɵRenderFlags, T) => Unit = null
   ): AnonContentQueries[T] = {

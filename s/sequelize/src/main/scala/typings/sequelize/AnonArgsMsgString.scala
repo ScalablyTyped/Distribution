@@ -13,7 +13,6 @@ object AnonArgsMsgString {
   @scala.inline
   def apply(args: js.Array[String] | String, msg: String): AnonArgsMsgString = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonArgsMsgString]
   }
 }

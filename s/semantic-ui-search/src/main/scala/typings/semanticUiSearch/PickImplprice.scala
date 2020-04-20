@@ -13,7 +13,6 @@ object PickImplprice {
   @scala.inline
   def apply(price: String): PickImplprice = {
     val __obj = js.Dynamic.literal(price = price.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplprice]
   }
 }

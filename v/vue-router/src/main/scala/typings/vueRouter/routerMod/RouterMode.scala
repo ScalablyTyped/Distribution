@@ -13,12 +13,10 @@ trait RouterMode extends js.Object
 
 object RouterMode {
   @scala.inline
-  def `abstract`: typings.vueRouter.vueRouterStrings.`abstract` = this.cast("abstract")
+  def `abstract`: typings.vueRouter.vueRouterStrings.`abstract` = "abstract".asInstanceOf[typings.vueRouter.vueRouterStrings.`abstract`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def hash: typings.vueRouter.vueRouterStrings.hash = "hash".asInstanceOf[typings.vueRouter.vueRouterStrings.hash]
   @scala.inline
-  def hash: typings.vueRouter.vueRouterStrings.hash = this.cast("hash")
-  @scala.inline
-  def history: typings.vueRouter.vueRouterStrings.history = this.cast("history")
+  def history: typings.vueRouter.vueRouterStrings.history = "history".asInstanceOf[typings.vueRouter.vueRouterStrings.history]
 }
 

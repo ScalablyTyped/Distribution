@@ -16,12 +16,10 @@ trait styleFlex extends js.Object
 
 object styleFlex {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleFlexNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleFlexNone: `0` = this.cast(0)
+  def styleFlexNotSet: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleFlexNotSet: `1` = this.cast(1)
-  @scala.inline
-  def styleFlex_Max: `2147483647` = this.cast(2147483647)
+  def styleFlex_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

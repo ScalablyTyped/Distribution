@@ -12,7 +12,6 @@ object OnClickListener {
   @scala.inline
   def apply(onClick: (typings.androiduix.android.content.DialogInterface, Double) => Unit): OnClickListener = {
     val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction2(onClick))
-  
     __obj.asInstanceOf[OnClickListener]
   }
 }

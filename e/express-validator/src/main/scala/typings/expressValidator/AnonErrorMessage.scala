@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AnonErrorMessage[K /* <: String */] extends ValidatorSchemaOptions[K] {
+trait AnonErrorMessage[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 70 */ js.Any */] extends ValidatorSchemaOptions[K] {
   var errorMessage: js.UndefOr[DynamicMessageCreator | js.Any] = js.undefined
   var negated: js.UndefOr[Boolean] = js.undefined
   var options: js.UndefOr[
@@ -19,7 +19,7 @@ trait AnonErrorMessage[K /* <: String */] extends ValidatorSchemaOptions[K] {
 
 object AnonErrorMessage {
   @scala.inline
-  def apply[K /* <: String */](
+  def apply[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 70 */ js.Any */](
     errorMessage: DynamicMessageCreator | js.Any = null,
     negated: js.UndefOr[Boolean] = js.undefined,
     options: (Parameters[

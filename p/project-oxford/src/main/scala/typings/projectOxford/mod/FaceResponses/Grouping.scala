@@ -13,7 +13,6 @@ object Grouping {
   @scala.inline
   def apply(groups: js.Array[String], messyGroup: js.Array[String]): Grouping = {
     val __obj = js.Dynamic.literal(groups = groups.asInstanceOf[js.Any], messyGroup = messyGroup.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Grouping]
   }
 }

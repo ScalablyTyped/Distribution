@@ -20,7 +20,6 @@ object Container {
   @scala.inline
   def apply(ContainerId: String, Height: String | Double, Width: String | Double): Container = {
     val __obj = js.Dynamic.literal(ContainerId = ContainerId.asInstanceOf[js.Any], Height = Height.asInstanceOf[js.Any], Width = Width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Container]
   }
 }

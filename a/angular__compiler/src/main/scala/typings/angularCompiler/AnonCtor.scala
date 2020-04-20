@@ -14,7 +14,6 @@ object AnonCtor {
   @scala.inline
   def apply(ctor: js.Any, filePath: String, name: String): AnonCtor = {
     val __obj = js.Dynamic.literal(ctor = ctor.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCtor]
   }
 }

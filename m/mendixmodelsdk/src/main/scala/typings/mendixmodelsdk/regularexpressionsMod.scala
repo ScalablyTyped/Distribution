@@ -55,8 +55,8 @@ object regularexpressionsMod extends js.Object {
       @JSName("model")
       var model_FRegularExpression: IModel = js.native
       @JSName("containerAsFolderBase")
-      def containerAsFolderBase_MRegularExpression(): FolderBase = js.native
-      def regEx(): String = js.native
+      def containerAsFolderBase_MRegularExpression: FolderBase = js.native
+      def regEx: String = js.native
       def regEx(newValue: String): js.Any = js.native
     }
     

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "random-obj-key"
-version := "2.0.1-af46c4"
+version := "2.0.1-3092ea"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

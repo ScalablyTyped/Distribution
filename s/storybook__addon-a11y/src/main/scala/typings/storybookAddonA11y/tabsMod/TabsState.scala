@@ -12,7 +12,6 @@ object TabsState {
   @scala.inline
   def apply(active: Double): TabsState = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TabsState]
   }
 }

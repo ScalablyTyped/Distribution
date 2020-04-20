@@ -13,7 +13,6 @@ object OnCheckForUpdateCallbackResult {
   @scala.inline
   def apply(hasUpdate: Boolean): OnCheckForUpdateCallbackResult = {
     val __obj = js.Dynamic.literal(hasUpdate = hasUpdate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnCheckForUpdateCallbackResult]
   }
 }

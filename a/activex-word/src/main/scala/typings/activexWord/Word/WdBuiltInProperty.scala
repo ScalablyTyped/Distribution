@@ -70,66 +70,64 @@ trait WdBuiltInProperty extends js.Object
 
 object WdBuiltInProperty {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdPropertyAppName: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def wdPropertyAppName: `9` = this.cast(9)
+  def wdPropertyAuthor: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdPropertyAuthor: `3` = this.cast(3)
+  def wdPropertyBytes: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def wdPropertyBytes: `22` = this.cast(22)
+  def wdPropertyCategory: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def wdPropertyCategory: `18` = this.cast(18)
+  def wdPropertyCharacters: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def wdPropertyCharacters: `16` = this.cast(16)
+  def wdPropertyCharsWSpaces: `30` = 30.asInstanceOf[`30`]
   @scala.inline
-  def wdPropertyCharsWSpaces: `30` = this.cast(30)
+  def wdPropertyComments: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdPropertyComments: `5` = this.cast(5)
+  def wdPropertyCompany: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def wdPropertyCompany: `21` = this.cast(21)
+  def wdPropertyFormat: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def wdPropertyFormat: `19` = this.cast(19)
+  def wdPropertyHiddenSlides: `27` = 27.asInstanceOf[`27`]
   @scala.inline
-  def wdPropertyHiddenSlides: `27` = this.cast(27)
+  def wdPropertyHyperlinkBase: `29` = 29.asInstanceOf[`29`]
   @scala.inline
-  def wdPropertyHyperlinkBase: `29` = this.cast(29)
+  def wdPropertyKeywords: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdPropertyKeywords: `4` = this.cast(4)
+  def wdPropertyLastAuthor: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def wdPropertyLastAuthor: `7` = this.cast(7)
+  def wdPropertyLines: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def wdPropertyLines: `23` = this.cast(23)
+  def wdPropertyMMClips: `28` = 28.asInstanceOf[`28`]
   @scala.inline
-  def wdPropertyMMClips: `28` = this.cast(28)
+  def wdPropertyManager: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def wdPropertyManager: `20` = this.cast(20)
+  def wdPropertyNotes: `26` = 26.asInstanceOf[`26`]
   @scala.inline
-  def wdPropertyNotes: `26` = this.cast(26)
+  def wdPropertyPages: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def wdPropertyPages: `14` = this.cast(14)
+  def wdPropertyParas: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def wdPropertyParas: `24` = this.cast(24)
+  def wdPropertyRevision: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def wdPropertyRevision: `8` = this.cast(8)
+  def wdPropertySecurity: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def wdPropertySecurity: `17` = this.cast(17)
+  def wdPropertySlides: `25` = 25.asInstanceOf[`25`]
   @scala.inline
-  def wdPropertySlides: `25` = this.cast(25)
+  def wdPropertySubject: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdPropertySubject: `2` = this.cast(2)
+  def wdPropertyTemplate: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdPropertyTemplate: `6` = this.cast(6)
+  def wdPropertyTimeCreated: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def wdPropertyTimeCreated: `11` = this.cast(11)
+  def wdPropertyTimeLastPrinted: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def wdPropertyTimeLastPrinted: `10` = this.cast(10)
+  def wdPropertyTimeLastSaved: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def wdPropertyTimeLastSaved: `12` = this.cast(12)
+  def wdPropertyTitle: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdPropertyTitle: `1` = this.cast(1)
+  def wdPropertyVBATotalEdit: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def wdPropertyVBATotalEdit: `13` = this.cast(13)
-  @scala.inline
-  def wdPropertyWords: `15` = this.cast(15)
+  def wdPropertyWords: `15` = 15.asInstanceOf[`15`]
 }
 

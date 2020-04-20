@@ -13,7 +13,6 @@ object SubstringDistanceResult {
   @scala.inline
   def apply(distance: Double, substring: String): SubstringDistanceResult = {
     val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], substring = substring.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SubstringDistanceResult]
   }
 }

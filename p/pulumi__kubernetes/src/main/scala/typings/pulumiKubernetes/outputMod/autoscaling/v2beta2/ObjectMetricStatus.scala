@@ -24,7 +24,6 @@ object ObjectMetricStatus {
   @scala.inline
   def apply(current: MetricValueStatus, describedObject: CrossVersionObjectReference, metric: MetricIdentifier): ObjectMetricStatus = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], describedObject = describedObject.asInstanceOf[js.Any], metric = metric.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ObjectMetricStatus]
   }
 }

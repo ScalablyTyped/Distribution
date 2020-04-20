@@ -13,7 +13,6 @@ object SankeyDataLink {
   @scala.inline
   def apply(source: String | Double, target: String | Double): SankeyDataLink = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SankeyDataLink]
   }
 }

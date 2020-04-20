@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait dayzedProps {
   @scala.inline
-  def DayzedProps: Props.type = typings.dayzed.mod.Props
+  def DayzedProps: Props.type = Props
   type DayzedProps = Props
 }
 

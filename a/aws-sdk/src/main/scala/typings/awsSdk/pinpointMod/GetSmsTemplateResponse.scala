@@ -13,7 +13,6 @@ object GetSmsTemplateResponse {
   @scala.inline
   def apply(SMSTemplateResponse: SMSTemplateResponse): GetSmsTemplateResponse = {
     val __obj = js.Dynamic.literal(SMSTemplateResponse = SMSTemplateResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetSmsTemplateResponse]
   }
 }

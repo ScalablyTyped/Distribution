@@ -27,7 +27,6 @@ object AnonAp {
     of: js.Any => Observable[js.Any, scala.Nothing]
   ): AnonAp = {
     val __obj = js.Dynamic.literal(ap = js.Any.fromFunction2(ap), bimap = js.Any.fromFunction3(bimap), chain = js.Any.fromFunction2(chain), concat = js.Any.fromFunction2(concat), empty = js.Any.fromFunction0(empty), map = js.Any.fromFunction2(map), of = js.Any.fromFunction1(of))
-  
     __obj.asInstanceOf[AnonAp]
   }
 }

@@ -21,7 +21,6 @@ object Mount {
   @scala.inline
   def apply[Value](datastore: Datastore[Value], prefix: Key): Mount[Value] = {
     val __obj = js.Dynamic.literal(datastore = datastore.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Mount[Value]]
   }
 }

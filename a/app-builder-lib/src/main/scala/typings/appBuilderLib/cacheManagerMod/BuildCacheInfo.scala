@@ -12,7 +12,6 @@ object BuildCacheInfo {
   @scala.inline
   def apply(executableDigest: String): BuildCacheInfo = {
     val __obj = js.Dynamic.literal(executableDigest = executableDigest.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BuildCacheInfo]
   }
 }

@@ -32,7 +32,6 @@ object AnonAppid {
     template_id: String
   ): AnonAppid = {
     val __obj = js.Dynamic.literal(app_id = app_id.asInstanceOf[js.Any], auth_code = auth_code.asInstanceOf[js.Any], out_string = out_string.asInstanceOf[js.Any], request_id = request_id.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], template_id = template_id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAppid]
   }
 }

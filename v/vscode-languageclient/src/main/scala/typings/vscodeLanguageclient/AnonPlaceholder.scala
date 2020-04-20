@@ -14,7 +14,6 @@ object AnonPlaceholder {
   @scala.inline
   def apply(placeholder: String, range: Range): AnonPlaceholder = {
     val __obj = js.Dynamic.literal(placeholder = placeholder.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPlaceholder]
   }
 }

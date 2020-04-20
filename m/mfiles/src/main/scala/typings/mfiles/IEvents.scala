@@ -15,7 +15,6 @@ object IEvents {
   @scala.inline
   def apply(Register: (Event, js.Function) => Double, Unregister: Double => Unit): IEvents = {
     val __obj = js.Dynamic.literal(Register = js.Any.fromFunction2(Register), Unregister = js.Any.fromFunction1(Unregister))
-  
     __obj.asInstanceOf[IEvents]
   }
 }

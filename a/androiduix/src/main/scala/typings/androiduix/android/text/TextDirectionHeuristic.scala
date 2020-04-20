@@ -12,7 +12,6 @@ object TextDirectionHeuristic {
   @scala.inline
   def apply(isRtl: (String, Double, Double) => Boolean): TextDirectionHeuristic = {
     val __obj = js.Dynamic.literal(isRtl = js.Any.fromFunction3(isRtl))
-  
     __obj.asInstanceOf[TextDirectionHeuristic]
   }
 }

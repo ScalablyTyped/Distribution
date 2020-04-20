@@ -23,7 +23,6 @@ object BuildArtifact {
   @scala.inline
   def apply(id: Double, name: String, resource: ArtifactResource): BuildArtifact = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BuildArtifact]
   }
 }

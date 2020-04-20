@@ -39,24 +39,24 @@ abstract class MemberRef protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FMemberRef: IModel = js.native
-  def containerAsAttributeWidget(): AttributeWidget = js.native
-  def containerAsClientTemplateParameter(): ClientTemplateParameter = js.native
-  def containerAsDataGridColumn(): DataGridColumn = js.native
-  def containerAsDocumentTemplatesGridSortItem(): GridSortItem = js.native
-  def containerAsGridColumn(): GridColumn = js.native
-  def containerAsListViewSearch(): ListViewSearch = js.native
-  def containerAsMemberWidget(): MemberWidget = js.native
-  def containerAsPagesGridSortItem(): typings.mendixmodelsdk.pagesMod.pages.GridSortItem = js.native
-  def containerAsRangeSearchField(): RangeSearchField = js.native
-  def containerAsSingleSearchField(): SingleSearchField = js.native
-  def containerAsSortItem(): SortItem = js.native
-  def containerAsStaticOrDynamicString(): StaticOrDynamicString = js.native
-  def containerAsVariableRefExpression(): VariableRefExpression = js.native
-  def containerAsWidgetValue(): WidgetValue = js.native
+  def containerAsAttributeWidget: AttributeWidget = js.native
+  def containerAsClientTemplateParameter: ClientTemplateParameter = js.native
+  def containerAsDataGridColumn: DataGridColumn = js.native
+  def containerAsDocumentTemplatesGridSortItem: GridSortItem = js.native
+  def containerAsGridColumn: GridColumn = js.native
+  def containerAsListViewSearch: ListViewSearch = js.native
+  def containerAsMemberWidget: MemberWidget = js.native
+  def containerAsPagesGridSortItem: typings.mendixmodelsdk.pagesMod.pages.GridSortItem = js.native
+  def containerAsRangeSearchField: RangeSearchField = js.native
+  def containerAsSingleSearchField: SingleSearchField = js.native
+  def containerAsSortItem: SortItem = js.native
+  def containerAsStaticOrDynamicString: StaticOrDynamicString = js.native
+  def containerAsVariableRefExpression: VariableRefExpression = js.native
+  def containerAsWidgetValue: WidgetValue = js.native
   def entityRef(): js.Any = js.native
   def entityRef(newValue: IndirectEntityRef): js.Any = js.native
   @JSName("entityRef")
-  def entityRef_Union(): IndirectEntityRef | Null = js.native
+  def entityRef_Union: IndirectEntityRef | Null = js.native
 }
 
 /* static members */

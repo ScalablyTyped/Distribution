@@ -12,7 +12,6 @@ object ResolutionStatus {
   @scala.inline
   def apply(code: String): ResolutionStatus = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResolutionStatus]
   }
 }

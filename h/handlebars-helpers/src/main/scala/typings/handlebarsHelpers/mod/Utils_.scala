@@ -39,7 +39,6 @@ object Utils_ {
     contains: (js.Array[js.Any], js.Any, Double) => Boolean
   ): Utils_ = {
     val __obj = js.Dynamic.literal(changecase = js.Any.fromFunction2(changecase), chop = js.Any.fromFunction1(chop), contains = js.Any.fromFunction3(contains))
-  
     __obj.asInstanceOf[Utils_]
   }
 }

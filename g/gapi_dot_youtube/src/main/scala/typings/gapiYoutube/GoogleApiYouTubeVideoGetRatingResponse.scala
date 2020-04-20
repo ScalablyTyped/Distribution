@@ -23,7 +23,6 @@ object GoogleApiYouTubeVideoGetRatingResponse {
   @scala.inline
   def apply(etag: String, items: js.Array[AnonRatingVideoId], kind: String): GoogleApiYouTubeVideoGetRatingResponse = {
     val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GoogleApiYouTubeVideoGetRatingResponse]
   }
 }

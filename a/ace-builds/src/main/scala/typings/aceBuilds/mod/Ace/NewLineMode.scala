@@ -13,12 +13,10 @@ trait NewLineMode extends js.Object
 
 object NewLineMode {
   @scala.inline
-  def auto: typings.aceBuilds.aceBuildsStrings.auto = this.cast("auto")
+  def auto: typings.aceBuilds.aceBuildsStrings.auto = "auto".asInstanceOf[typings.aceBuilds.aceBuildsStrings.auto]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def unix: typings.aceBuilds.aceBuildsStrings.unix = "unix".asInstanceOf[typings.aceBuilds.aceBuildsStrings.unix]
   @scala.inline
-  def unix: typings.aceBuilds.aceBuildsStrings.unix = this.cast("unix")
-  @scala.inline
-  def windows: typings.aceBuilds.aceBuildsStrings.windows = this.cast("windows")
+  def windows: typings.aceBuilds.aceBuildsStrings.windows = "windows".asInstanceOf[typings.aceBuilds.aceBuildsStrings.windows]
 }
 

@@ -14,7 +14,6 @@ object AnonDropReorder {
   @scala.inline
   def apply[K, D](drag: AnonRows[K, D], drop: AnonColumns, reorder: Anon18): AnonDropReorder[K, D] = {
     val __obj = js.Dynamic.literal(drag = drag.asInstanceOf[js.Any], drop = drop.asInstanceOf[js.Any], reorder = reorder.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDropReorder[K, D]]
   }
 }

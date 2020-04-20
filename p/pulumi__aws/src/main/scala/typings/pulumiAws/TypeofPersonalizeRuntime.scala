@@ -13,7 +13,6 @@ object TypeofPersonalizeRuntime {
   @scala.inline
   def apply(Types: TypeofPersonalizeRuntime): TypeofPersonalizeRuntime = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofPersonalizeRuntime]
   }
 }

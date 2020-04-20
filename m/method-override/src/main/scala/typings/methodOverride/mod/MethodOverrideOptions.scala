@@ -12,7 +12,6 @@ object MethodOverrideOptions {
   @scala.inline
   def apply(methods: js.Array[String]): MethodOverrideOptions = {
     val __obj = js.Dynamic.literal(methods = methods.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MethodOverrideOptions]
   }
 }

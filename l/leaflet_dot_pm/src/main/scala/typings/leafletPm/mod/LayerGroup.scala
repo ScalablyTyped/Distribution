@@ -12,7 +12,6 @@ object LayerGroup {
   @scala.inline
   def apply(pm: typings.leafletPm.mod.PM.Edit.LayerGroup): LayerGroup = {
     val __obj = js.Dynamic.literal(pm = pm.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LayerGroup]
   }
 }

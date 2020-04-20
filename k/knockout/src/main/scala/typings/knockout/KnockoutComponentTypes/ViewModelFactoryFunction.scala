@@ -12,7 +12,6 @@ object ViewModelFactoryFunction {
   @scala.inline
   def apply(createViewModel: (js.Any, ComponentInfo) => js.Any): ViewModelFactoryFunction = {
     val __obj = js.Dynamic.literal(createViewModel = js.Any.fromFunction2(createViewModel))
-  
     __obj.asInstanceOf[ViewModelFactoryFunction]
   }
 }

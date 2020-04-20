@@ -16,7 +16,6 @@ object CreateThreatIntelSetResponse {
   @scala.inline
   def apply(ThreatIntelSetId: String): CreateThreatIntelSetResponse = {
     val __obj = js.Dynamic.literal(ThreatIntelSetId = ThreatIntelSetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateThreatIntelSetResponse]
   }
 }

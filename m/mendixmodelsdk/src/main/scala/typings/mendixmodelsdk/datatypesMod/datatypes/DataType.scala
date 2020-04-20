@@ -72,22 +72,22 @@ abstract class DataType protected () extends Element {
   val containerAsMicroflowParameterBase_FDataType: IMicroflowParameterBase = js.native
   @JSName("model")
   var model_FDataType: IModel = js.native
-  def containerAsAppServiceAction(): AppServiceAction = js.native
-  def containerAsAppServiceActionParameter(): AppServiceActionParameter = js.native
-  def containerAsConstant(): Constant = js.native
-  def containerAsCreateVariableAction(): CreateVariableAction = js.native
-  def containerAsDataSetColumn(): DataSetColumn = js.native
-  def containerAsDataSetParameter(): DataSetParameter = js.native
-  def containerAsDocumentTemplateParameter(): DocumentTemplateParameter = js.native
-  def containerAsImportMapping(): ImportMapping = js.native
-  def containerAsMicroflowBase(): MicroflowBase = js.native
-  def containerAsMicroflowParameterBase(): MicroflowParameterBase = js.native
-  def containerAsMicroflowParameterObject(): MicroflowParameterObject = js.native
-  def containerAsPublishedOperation(): PublishedOperation = js.native
-  def containerAsPublishedParameter(): PublishedParameter = js.native
-  def containerAsRestOperationParameter(): RestOperationParameter = js.native
-  def containerAsResultHandling(): ResultHandling = js.native
-  def containerAsValueMappingElement(): ValueMappingElement = js.native
+  def containerAsAppServiceAction: AppServiceAction = js.native
+  def containerAsAppServiceActionParameter: AppServiceActionParameter = js.native
+  def containerAsConstant: Constant = js.native
+  def containerAsCreateVariableAction: CreateVariableAction = js.native
+  def containerAsDataSetColumn: DataSetColumn = js.native
+  def containerAsDataSetParameter: DataSetParameter = js.native
+  def containerAsDocumentTemplateParameter: DocumentTemplateParameter = js.native
+  def containerAsImportMapping: ImportMapping = js.native
+  def containerAsMicroflowBase: MicroflowBase = js.native
+  def containerAsMicroflowParameterBase: MicroflowParameterBase = js.native
+  def containerAsMicroflowParameterObject: MicroflowParameterObject = js.native
+  def containerAsPublishedOperation: PublishedOperation = js.native
+  def containerAsPublishedParameter: PublishedParameter = js.native
+  def containerAsRestOperationParameter: RestOperationParameter = js.native
+  def containerAsResultHandling: ResultHandling = js.native
+  def containerAsValueMappingElement: ValueMappingElement = js.native
 }
 
 /* static members */

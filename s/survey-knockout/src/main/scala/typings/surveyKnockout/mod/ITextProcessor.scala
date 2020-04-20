@@ -13,7 +13,6 @@ object ITextProcessor {
   @scala.inline
   def apply(processText: (String, Boolean) => String, processTextEx: (String, Boolean, Boolean) => js.Any): ITextProcessor = {
     val __obj = js.Dynamic.literal(processText = js.Any.fromFunction2(processText), processTextEx = js.Any.fromFunction3(processTextEx))
-  
     __obj.asInstanceOf[ITextProcessor]
   }
 }

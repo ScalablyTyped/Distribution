@@ -12,7 +12,6 @@ object AnonLevels {
   @scala.inline
   def apply(levels: js.Array[AnonTranscodedPixels]): AnonLevels = {
     val __obj = js.Dynamic.literal(levels = levels.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLevels]
   }
 }

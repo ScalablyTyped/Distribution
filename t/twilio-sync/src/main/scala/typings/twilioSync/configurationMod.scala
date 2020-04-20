@@ -13,15 +13,15 @@ object configurationMod extends js.Object {
     */
   class Configuration () extends js.Object {
     def this(options: js.Any) = this()
-    val backoffConfig: js.Any = js.native
-    val documentsUri: String = js.native
-    val insightsUri: String = js.native
-    val listsUri: String = js.native
-    val mapsUri: String = js.native
-    val sessionStorageEnabled: Boolean = js.native
     var settings: js.Any = js.native
-    val streamsUri: String = js.native
-    val subscriptionsUri: String = js.native
+    def backoffConfig: js.Any = js.native
+    def documentsUri: String = js.native
+    def insightsUri: String = js.native
+    def listsUri: String = js.native
+    def mapsUri: String = js.native
+    def sessionStorageEnabled: Boolean = js.native
+    def streamsUri: String = js.native
+    def subscriptionsUri: String = js.native
   }
   
 }

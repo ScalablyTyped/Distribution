@@ -20,7 +20,6 @@ object PutVoiceConnectorLoggingConfigurationRequest {
   @scala.inline
   def apply(LoggingConfiguration: LoggingConfiguration, VoiceConnectorId: NonEmptyString): PutVoiceConnectorLoggingConfigurationRequest = {
     val __obj = js.Dynamic.literal(LoggingConfiguration = LoggingConfiguration.asInstanceOf[js.Any], VoiceConnectorId = VoiceConnectorId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutVoiceConnectorLoggingConfigurationRequest]
   }
 }

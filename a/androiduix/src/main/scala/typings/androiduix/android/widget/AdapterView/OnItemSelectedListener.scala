@@ -17,7 +17,6 @@ object OnItemSelectedListener {
     onNothingSelected: typings.androiduix.android.widget.AdapterView[_] => Unit
   ): OnItemSelectedListener = {
     val __obj = js.Dynamic.literal(onItemSelected = js.Any.fromFunction4(onItemSelected), onNothingSelected = js.Any.fromFunction1(onNothingSelected))
-  
     __obj.asInstanceOf[OnItemSelectedListener]
   }
 }

@@ -18,7 +18,6 @@ object AnonConfiguration {
   @scala.inline
   def apply(configuration: LocationConfig, dispose: UIRouter => Unit, name: String, service: LocationServices): AnonConfiguration = {
     val __obj = js.Dynamic.literal(configuration = configuration.asInstanceOf[js.Any], dispose = js.Any.fromFunction1(dispose), name = name.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonConfiguration]
   }
 }

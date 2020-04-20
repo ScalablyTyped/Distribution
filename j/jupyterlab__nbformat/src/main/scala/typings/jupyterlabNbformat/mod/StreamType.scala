@@ -12,10 +12,8 @@ trait StreamType extends js.Object
 
 object StreamType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def stderr: typings.jupyterlabNbformat.jupyterlabNbformatStrings.stderr = "stderr".asInstanceOf[typings.jupyterlabNbformat.jupyterlabNbformatStrings.stderr]
   @scala.inline
-  def stderr: typings.jupyterlabNbformat.jupyterlabNbformatStrings.stderr = this.cast("stderr")
-  @scala.inline
-  def stdout: typings.jupyterlabNbformat.jupyterlabNbformatStrings.stdout = this.cast("stdout")
+  def stdout: typings.jupyterlabNbformat.jupyterlabNbformatStrings.stdout = "stdout".asInstanceOf[typings.jupyterlabNbformat.jupyterlabNbformatStrings.stdout]
 }
 

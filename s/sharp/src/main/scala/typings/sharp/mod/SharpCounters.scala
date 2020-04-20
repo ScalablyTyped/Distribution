@@ -15,7 +15,6 @@ object SharpCounters {
   @scala.inline
   def apply(process: Double, queue: Double): SharpCounters = {
     val __obj = js.Dynamic.literal(process = process.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SharpCounters]
   }
 }

@@ -20,16 +20,14 @@ trait AcWebBrowserState extends js.Object
 
 object AcWebBrowserState {
   @scala.inline
-  def acComplete: `4` = this.cast(4)
+  def acComplete: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def acInteractive: `3` = this.cast(3)
+  def acInteractive: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def acLoaded: `2` = this.cast(2)
+  def acLoaded: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def acLoading: `1` = this.cast(1)
+  def acLoading: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def acUnintialized: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def acUnintialized: `0` = 0.asInstanceOf[`0`]
 }
 

@@ -33,7 +33,6 @@ object AnonAlignItems {
     top: `0`
   ): AnonAlignItems = {
     val __obj = js.Dynamic.literal(alignItems = alignItems.asInstanceOf[js.Any], bottom = bottom.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], overflow = overflow.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAlignItems]
   }
 }

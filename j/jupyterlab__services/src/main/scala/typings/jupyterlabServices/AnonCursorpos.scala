@@ -16,7 +16,6 @@ object AnonCursorpos {
   @scala.inline
   def apply(code: String, cursor_pos: Double, detail_level: `0` | `1`): AnonCursorpos = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], cursor_pos = cursor_pos.asInstanceOf[js.Any], detail_level = detail_level.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCursorpos]
   }
 }

@@ -14,14 +14,12 @@ trait PointStateValue extends js.Object
 
 object PointStateValue {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def hover: typings.highcharts.highchartsStrings.hover = "hover".asInstanceOf[typings.highcharts.highchartsStrings.hover]
   @scala.inline
-  def hover: typings.highcharts.highchartsStrings.hover = this.cast("hover")
+  def inactive: typings.highcharts.highchartsStrings.inactive = "inactive".asInstanceOf[typings.highcharts.highchartsStrings.inactive]
   @scala.inline
-  def inactive: typings.highcharts.highchartsStrings.inactive = this.cast("inactive")
+  def normal: typings.highcharts.highchartsStrings.normal = "normal".asInstanceOf[typings.highcharts.highchartsStrings.normal]
   @scala.inline
-  def normal: typings.highcharts.highchartsStrings.normal = this.cast("normal")
-  @scala.inline
-  def select: typings.highcharts.highchartsStrings.select = this.cast("select")
+  def select: typings.highcharts.highchartsStrings.select = "select".asInstanceOf[typings.highcharts.highchartsStrings.select]
 }
 

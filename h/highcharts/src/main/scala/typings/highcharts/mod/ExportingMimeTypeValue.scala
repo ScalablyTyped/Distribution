@@ -14,14 +14,12 @@ trait ExportingMimeTypeValue extends js.Object
 
 object ExportingMimeTypeValue {
   @scala.inline
-  def applicationSlashpdf: typings.highcharts.highchartsStrings.applicationSlashpdf = this.cast("application/pdf")
+  def applicationSlashpdf: typings.highcharts.highchartsStrings.applicationSlashpdf = "application/pdf".asInstanceOf[typings.highcharts.highchartsStrings.applicationSlashpdf]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def imageSlashjpeg: typings.highcharts.highchartsStrings.imageSlashjpeg = "image/jpeg".asInstanceOf[typings.highcharts.highchartsStrings.imageSlashjpeg]
   @scala.inline
-  def imageSlashjpeg: typings.highcharts.highchartsStrings.imageSlashjpeg = this.cast("image/jpeg")
+  def imageSlashpng: typings.highcharts.highchartsStrings.imageSlashpng = "image/png".asInstanceOf[typings.highcharts.highchartsStrings.imageSlashpng]
   @scala.inline
-  def imageSlashpng: typings.highcharts.highchartsStrings.imageSlashpng = this.cast("image/png")
-  @scala.inline
-  def imageSlashsvgPlussignxml: typings.highcharts.highchartsStrings.imageSlashsvgPlussignxml = this.cast("image/svg+xml")
+  def imageSlashsvgPlussignxml: typings.highcharts.highchartsStrings.imageSlashsvgPlussignxml = "image/svg+xml".asInstanceOf[typings.highcharts.highchartsStrings.imageSlashsvgPlussignxml]
 }
 

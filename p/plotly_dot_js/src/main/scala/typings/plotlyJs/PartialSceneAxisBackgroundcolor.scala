@@ -92,7 +92,7 @@ trait PartialSceneAxisBackgroundcolor extends js.Object {
   var ticktext: js.UndefOr[js.Array[String]] = js.undefined
   var tickvals: js.UndefOr[js.Array[_]] = js.undefined
   var tickwidth: js.UndefOr[Double] = js.undefined
-  var title: js.UndefOr[String | PartialDataTitleFont] = js.undefined
+  var title: js.UndefOr[String | PartialDataTitle] = js.undefined
   var titlefont: js.UndefOr[PartialFont] = js.undefined
   var `type`: js.UndefOr[AxisType] = js.undefined
   var visible: js.UndefOr[Boolean] = js.undefined
@@ -147,7 +147,7 @@ object PartialSceneAxisBackgroundcolor {
     ticktext: js.Array[String] = null,
     tickvals: js.Array[_] = null,
     tickwidth: Int | Double = null,
-    title: String | PartialDataTitleFont = null,
+    title: String | PartialDataTitle = null,
     titlefont: PartialFont = null,
     `type`: AxisType = null,
     visible: js.UndefOr[Boolean] = js.undefined,

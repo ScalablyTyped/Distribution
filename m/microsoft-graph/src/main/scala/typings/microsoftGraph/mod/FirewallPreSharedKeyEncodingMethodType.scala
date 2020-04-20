@@ -14,12 +14,10 @@ trait FirewallPreSharedKeyEncodingMethodType extends js.Object
 
 object FirewallPreSharedKeyEncodingMethodType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def deviceDefault: typings.microsoftGraph.microsoftGraphStrings.deviceDefault = "deviceDefault".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deviceDefault]
   @scala.inline
-  def deviceDefault: typings.microsoftGraph.microsoftGraphStrings.deviceDefault = this.cast("deviceDefault")
+  def none: none_ = "none".asInstanceOf[none_]
   @scala.inline
-  def none: none_ = this.cast("none")
-  @scala.inline
-  def utF8: typings.microsoftGraph.microsoftGraphStrings.utF8 = this.cast("utF8")
+  def utF8: typings.microsoftGraph.microsoftGraphStrings.utF8 = "utF8".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.utF8]
 }
 

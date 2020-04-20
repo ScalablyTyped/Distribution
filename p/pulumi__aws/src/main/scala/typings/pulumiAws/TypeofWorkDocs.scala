@@ -13,7 +13,6 @@ object TypeofWorkDocs {
   @scala.inline
   def apply(Types: TypeofWorkDocs): TypeofWorkDocs = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofWorkDocs]
   }
 }

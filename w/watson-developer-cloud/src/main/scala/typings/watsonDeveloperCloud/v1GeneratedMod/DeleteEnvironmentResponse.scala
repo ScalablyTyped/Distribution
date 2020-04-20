@@ -16,7 +16,6 @@ object DeleteEnvironmentResponse {
   @scala.inline
   def apply(environment_id: String, status: String): DeleteEnvironmentResponse = {
     val __obj = js.Dynamic.literal(environment_id = environment_id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteEnvironmentResponse]
   }
 }

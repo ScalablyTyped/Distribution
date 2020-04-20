@@ -36,7 +36,6 @@ object HttpConnector {
     ]) => Unit
   ): HttpConnector = {
     val __obj = js.Dynamic.literal(createAgent = js.Any.fromFunction1(createAgent), makeAgentConfig = js.Any.fromFunction1(makeAgentConfig), makeReqParams = js.Any.fromFunction1(makeReqParams), request = js.Any.fromFunction2(request))
-  
     __obj.asInstanceOf[HttpConnector]
   }
 }

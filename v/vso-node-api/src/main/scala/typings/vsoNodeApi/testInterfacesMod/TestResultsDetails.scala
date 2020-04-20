@@ -13,7 +13,6 @@ object TestResultsDetails {
   @scala.inline
   def apply(groupByField: String, resultsForGroup: js.Array[TestResultsDetailsForGroup]): TestResultsDetails = {
     val __obj = js.Dynamic.literal(groupByField = groupByField.asInstanceOf[js.Any], resultsForGroup = resultsForGroup.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TestResultsDetails]
   }
 }

@@ -1,6 +1,7 @@
 package typings.iobroker
 
 import typings.iobroker.mod._Global_.ioBroker.StateQuality
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,8 +23,10 @@ trait Stateidstring extends js.Object {
   var q: js.UndefOr[StateQuality] = js.undefined
   /** Unix timestamp. Default: current time */
   var ts: Double
+  /** The user who set this value */
+  var user: js.UndefOr[String] = js.undefined
   /** The value of the state. */
-  var `val`: js.Any
+  var `val`: String | Double | Boolean | js.Array[_] | (Record[String, _]) | Null
 }
 
 object Stateidstring {
@@ -33,18 +36,20 @@ object Stateidstring {
     from: String,
     lc: Double,
     ts: Double,
-    `val`: js.Any,
     c: String = null,
     expire: Int | Double = null,
     id: String = null,
-    q: StateQuality = null
+    q: StateQuality = null,
+    user: String = null,
+    `val`: String | Double | Boolean | js.Array[_] | (Record[String, _]) = null
   ): Stateidstring = {
     val __obj = js.Dynamic.literal(ack = ack.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], lc = lc.asInstanceOf[js.Any], ts = ts.asInstanceOf[js.Any])
-    __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
     if (c != null) __obj.updateDynamic("c")(c.asInstanceOf[js.Any])
     if (expire != null) __obj.updateDynamic("expire")(expire.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
+    if (`val` != null) __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Stateidstring]
   }
 }

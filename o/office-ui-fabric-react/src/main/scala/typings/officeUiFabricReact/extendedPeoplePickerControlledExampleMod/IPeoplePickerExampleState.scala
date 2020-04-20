@@ -24,7 +24,6 @@ object IPeoplePickerExampleState {
     suggestionItems: js.Array[IPersonaProps]
   ): IPeoplePickerExampleState = {
     val __obj = js.Dynamic.literal(currentlySelectedItems = currentlySelectedItems.asInstanceOf[js.Any], mostRecentlyUsed = mostRecentlyUsed.asInstanceOf[js.Any], peopleList = peopleList.asInstanceOf[js.Any], searchMoreAvailable = searchMoreAvailable.asInstanceOf[js.Any], suggestionItems = suggestionItems.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPeoplePickerExampleState]
   }
 }

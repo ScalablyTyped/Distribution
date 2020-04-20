@@ -23,7 +23,6 @@ object TextHelper {
   @scala.inline
   def apply(decodePayload: js.Any => String, encodePayload: (String, String, String) => js.Array[Double]): TextHelper = {
     val __obj = js.Dynamic.literal(decodePayload = js.Any.fromFunction1(decodePayload), encodePayload = js.Any.fromFunction3(encodePayload))
-  
     __obj.asInstanceOf[TextHelper]
   }
 }

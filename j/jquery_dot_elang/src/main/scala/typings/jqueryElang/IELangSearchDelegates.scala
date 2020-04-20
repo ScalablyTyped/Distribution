@@ -24,7 +24,6 @@ object IELangSearchDelegates {
     selectHandler: js.Function
   ): IELangSearchDelegates = {
     val __obj = js.Dynamic.literal(langDirectionClickHandler = langDirectionClickHandler.asInstanceOf[js.Any], langDirectionHandler = langDirectionHandler.asInstanceOf[js.Any], searchClickHandler = searchClickHandler.asInstanceOf[js.Any], searchHandler = searchHandler.asInstanceOf[js.Any], selectCallback = selectCallback.asInstanceOf[js.Any], selectHandler = selectHandler.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IELangSearchDelegates]
   }
 }

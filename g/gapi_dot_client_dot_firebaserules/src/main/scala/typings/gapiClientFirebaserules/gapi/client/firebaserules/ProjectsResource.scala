@@ -44,7 +44,6 @@ object ProjectsResource {
     test: AnonAccesstoken => Request_[TestRulesetResponse]
   ): ProjectsResource = {
     val __obj = js.Dynamic.literal(releases = releases.asInstanceOf[js.Any], rulesets = rulesets.asInstanceOf[js.Any], test = js.Any.fromFunction1(test))
-  
     __obj.asInstanceOf[ProjectsResource]
   }
 }

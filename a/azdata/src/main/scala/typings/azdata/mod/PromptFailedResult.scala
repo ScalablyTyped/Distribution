@@ -15,7 +15,6 @@ object PromptFailedResult {
   @scala.inline
   def apply(canceled: Boolean): PromptFailedResult = {
     val __obj = js.Dynamic.literal(canceled = canceled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PromptFailedResult]
   }
 }

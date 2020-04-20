@@ -16,7 +16,6 @@ object IncomingMessage {
   @scala.inline
   def apply(from: ClientState, message: String): IncomingMessage = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IncomingMessage]
   }
 }

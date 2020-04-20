@@ -26,7 +26,6 @@ object SoaRecord {
     serial: Double
   ): SoaRecord = {
     val __obj = js.Dynamic.literal(expire = expire.asInstanceOf[js.Any], hostmaster = hostmaster.asInstanceOf[js.Any], minttl = minttl.asInstanceOf[js.Any], nsname = nsname.asInstanceOf[js.Any], refresh = refresh.asInstanceOf[js.Any], retry = retry.asInstanceOf[js.Any], serial = serial.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SoaRecord]
   }
 }

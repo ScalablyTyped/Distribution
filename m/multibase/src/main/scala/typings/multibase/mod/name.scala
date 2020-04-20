@@ -26,38 +26,36 @@ trait name extends js.Object
 
 object name {
   @scala.inline
-  def base1: typings.multibase.multibaseStrings.base1 = this.cast("base1")
+  def base1: typings.multibase.multibaseStrings.base1 = "base1".asInstanceOf[typings.multibase.multibaseStrings.base1]
   @scala.inline
-  def base10: typings.multibase.multibaseStrings.base10 = this.cast("base10")
+  def base10: typings.multibase.multibaseStrings.base10 = "base10".asInstanceOf[typings.multibase.multibaseStrings.base10]
   @scala.inline
-  def base16: typings.multibase.multibaseStrings.base16 = this.cast("base16")
+  def base16: typings.multibase.multibaseStrings.base16 = "base16".asInstanceOf[typings.multibase.multibaseStrings.base16]
   @scala.inline
-  def base2: typings.multibase.multibaseStrings.base2 = this.cast("base2")
+  def base2: typings.multibase.multibaseStrings.base2 = "base2".asInstanceOf[typings.multibase.multibaseStrings.base2]
   @scala.inline
-  def base32: typings.multibase.multibaseStrings.base32 = this.cast("base32")
+  def base32: typings.multibase.multibaseStrings.base32 = "base32".asInstanceOf[typings.multibase.multibaseStrings.base32]
   @scala.inline
-  def base32hex: typings.multibase.multibaseStrings.base32hex = this.cast("base32hex")
+  def base32hex: typings.multibase.multibaseStrings.base32hex = "base32hex".asInstanceOf[typings.multibase.multibaseStrings.base32hex]
   @scala.inline
-  def base32hexpad: typings.multibase.multibaseStrings.base32hexpad = this.cast("base32hexpad")
+  def base32hexpad: typings.multibase.multibaseStrings.base32hexpad = "base32hexpad".asInstanceOf[typings.multibase.multibaseStrings.base32hexpad]
   @scala.inline
-  def base32pad: typings.multibase.multibaseStrings.base32pad = this.cast("base32pad")
+  def base32pad: typings.multibase.multibaseStrings.base32pad = "base32pad".asInstanceOf[typings.multibase.multibaseStrings.base32pad]
   @scala.inline
-  def base32z: typings.multibase.multibaseStrings.base32z = this.cast("base32z")
+  def base32z: typings.multibase.multibaseStrings.base32z = "base32z".asInstanceOf[typings.multibase.multibaseStrings.base32z]
   @scala.inline
-  def base58btc: typings.multibase.multibaseStrings.base58btc = this.cast("base58btc")
+  def base58btc: typings.multibase.multibaseStrings.base58btc = "base58btc".asInstanceOf[typings.multibase.multibaseStrings.base58btc]
   @scala.inline
-  def base58flickr: typings.multibase.multibaseStrings.base58flickr = this.cast("base58flickr")
+  def base58flickr: typings.multibase.multibaseStrings.base58flickr = "base58flickr".asInstanceOf[typings.multibase.multibaseStrings.base58flickr]
   @scala.inline
-  def base64: typings.multibase.multibaseStrings.base64 = this.cast("base64")
+  def base64: typings.multibase.multibaseStrings.base64 = "base64".asInstanceOf[typings.multibase.multibaseStrings.base64]
   @scala.inline
-  def base64pad: typings.multibase.multibaseStrings.base64pad = this.cast("base64pad")
+  def base64pad: typings.multibase.multibaseStrings.base64pad = "base64pad".asInstanceOf[typings.multibase.multibaseStrings.base64pad]
   @scala.inline
-  def base64url: typings.multibase.multibaseStrings.base64url = this.cast("base64url")
+  def base64url: typings.multibase.multibaseStrings.base64url = "base64url".asInstanceOf[typings.multibase.multibaseStrings.base64url]
   @scala.inline
-  def base64urlpad: typings.multibase.multibaseStrings.base64urlpad = this.cast("base64urlpad")
+  def base64urlpad: typings.multibase.multibaseStrings.base64urlpad = "base64urlpad".asInstanceOf[typings.multibase.multibaseStrings.base64urlpad]
   @scala.inline
-  def base8: typings.multibase.multibaseStrings.base8 = this.cast("base8")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def base8: typings.multibase.multibaseStrings.base8 = "base8".asInstanceOf[typings.multibase.multibaseStrings.base8]
 }
 

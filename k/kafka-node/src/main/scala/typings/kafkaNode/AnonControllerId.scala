@@ -12,7 +12,6 @@ object AnonControllerId {
   @scala.inline
   def apply(controllerId: Double): AnonControllerId = {
     val __obj = js.Dynamic.literal(controllerId = controllerId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonControllerId]
   }
 }

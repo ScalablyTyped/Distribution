@@ -15,7 +15,6 @@ object RouteNodeState {
   @scala.inline
   def apply(meta: RouteNodeStateMeta, name: String, params: Record[String, _]): RouteNodeState = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RouteNodeState]
   }
 }

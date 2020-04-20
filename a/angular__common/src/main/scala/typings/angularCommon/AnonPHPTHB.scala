@@ -14,7 +14,6 @@ object AnonPHPTHB {
   @scala.inline
   def apply(PHP: js.Array[String], THB: js.Array[String], TWD: js.Array[String]): AnonPHPTHB = {
     val __obj = js.Dynamic.literal(PHP = PHP.asInstanceOf[js.Any], THB = THB.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPHPTHB]
   }
 }

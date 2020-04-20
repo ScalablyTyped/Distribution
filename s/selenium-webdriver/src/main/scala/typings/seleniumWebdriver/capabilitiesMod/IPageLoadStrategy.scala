@@ -26,7 +26,6 @@ object IPageLoadStrategy {
   @scala.inline
   def apply(EAGER: String, NONE: String, NORMAL: String): IPageLoadStrategy = {
     val __obj = js.Dynamic.literal(EAGER = EAGER.asInstanceOf[js.Any], NONE = NONE.asInstanceOf[js.Any], NORMAL = NORMAL.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPageLoadStrategy]
   }
 }

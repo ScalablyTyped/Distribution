@@ -32,7 +32,6 @@ object BingProviderResultRaw {
     point: BingProviderResultPoint
   ): BingProviderResultRaw = {
     val __obj = js.Dynamic.literal(__type = __type.asInstanceOf[js.Any], address = address.asInstanceOf[js.Any], bbox = bbox.asInstanceOf[js.Any], confidence = confidence.asInstanceOf[js.Any], entityType = entityType.asInstanceOf[js.Any], geocodePoints = geocodePoints.asInstanceOf[js.Any], matchCodes = matchCodes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BingProviderResultRaw]
   }
 }

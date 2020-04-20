@@ -73,6 +73,7 @@ class Interpreter[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: E
   var machine: StateMachine[TContext, TStateSchema, TEvent, TTypestate] = js.native
   var options: ReadonlyInterpreterOption = js.native
   var parent: js.UndefOr[Interpreter[_, _, EventObject, _]] = js.native
+  var removeChild: js.Any = js.native
   var scheduler: js.Any = js.native
   var sendListeners: js.Any = js.native
   var sendTo: js.Any = js.native
@@ -100,11 +101,11 @@ class Interpreter[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: E
   /**
     * Alias for Interpreter.prototype.start
     */
-  def init(): Interpreter[TContext, TStateSchema, TEvent, _] = js.native
-  def init(initialState: String): Interpreter[TContext, TStateSchema, TEvent, _] = js.native
-  def init(initialState: State[TContext, TEvent, _, _]): Interpreter[TContext, TStateSchema, TEvent, _] = js.native
-  def init(initialState: StateValueMap): Interpreter[TContext, TStateSchema, TEvent, _] = js.native
-  def initialState(): State[TContext, TEvent, _, _] = js.native
+  def init(): Interpreter[TContext, TStateSchema, TEvent, TTypestate] = js.native
+  def init(initialState: String): Interpreter[TContext, TStateSchema, TEvent, TTypestate] = js.native
+  def init(initialState: State[TContext, TEvent, _, _]): Interpreter[TContext, TStateSchema, TEvent, TTypestate] = js.native
+  def init(initialState: StateValueMap): Interpreter[TContext, TStateSchema, TEvent, TTypestate] = js.native
+  def initialState: State[TContext, TEvent, _, _] = js.native
   /**
     * Returns the next state given the interpreter's current state and the event.
     *
@@ -173,11 +174,11 @@ class Interpreter[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: E
     * Starts the interpreter from the given state, or the initial state.
     * @param initialState The state to start the statechart from
     */
-  def start(): Interpreter[TContext, TStateSchema, TEvent, _] = js.native
-  def start(initialState: State[TContext, TEvent, _, _]): Interpreter[TContext, TStateSchema, TEvent, _] = js.native
-  def start(initialState: StateValue): Interpreter[TContext, TStateSchema, TEvent, _] = js.native
+  def start(): Interpreter[TContext, TStateSchema, TEvent, TTypestate] = js.native
+  def start(initialState: State[TContext, TEvent, _, _]): Interpreter[TContext, TStateSchema, TEvent, TTypestate] = js.native
+  def start(initialState: StateValue): Interpreter[TContext, TStateSchema, TEvent, TTypestate] = js.native
   @JSName("state")
-  def state_MInterpreter(): State[TContext, TEvent, _, _] = js.native
+  def state_MInterpreter: State[TContext, TEvent, _, TTypestate] = js.native
   /**
     * Stops the interpreter and unsubscribe all listeners.
     *

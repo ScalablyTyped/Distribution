@@ -20,7 +20,6 @@ object AutoScalingPolicy {
   @scala.inline
   def apply(Constraints: ScalingConstraints, Rules: ScalingRuleList): AutoScalingPolicy = {
     val __obj = js.Dynamic.literal(Constraints = Constraints.asInstanceOf[js.Any], Rules = Rules.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AutoScalingPolicy]
   }
 }

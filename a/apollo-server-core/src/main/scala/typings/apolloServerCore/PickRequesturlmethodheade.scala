@@ -16,7 +16,6 @@ object PickRequesturlmethodheade {
   @scala.inline
   def apply(headers: Headers, method: String, url: String): PickRequesturlmethodheade = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickRequesturlmethodheade]
   }
 }

@@ -13,7 +13,6 @@ object AnonDamage {
   @scala.inline
   def apply(damage: `0.7`): AnonDamage = {
     val __obj = js.Dynamic.literal(damage = damage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDamage]
   }
 }

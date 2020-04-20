@@ -52,7 +52,7 @@ class Xbox360Pad protected () extends Gamepad {
   /**
     * Gets the value of the `A` button
     */
-  def buttonA(): Double = js.native
+  def buttonA: Double = js.native
   /**
     * Sets the value of the `A` button
     */
@@ -60,7 +60,7 @@ class Xbox360Pad protected () extends Gamepad {
   /**
     * Gets the value of the `B` button
     */
-  def buttonB(): Double = js.native
+  def buttonB: Double = js.native
   /**
     * Sets the value of the `B` button
     */
@@ -68,7 +68,7 @@ class Xbox360Pad protected () extends Gamepad {
   /**
     * Gets the value of the `Back` button
     */
-  def buttonBack(): Double = js.native
+  def buttonBack: Double = js.native
   /**
     * Sets the value of the `Back` button
     */
@@ -76,7 +76,7 @@ class Xbox360Pad protected () extends Gamepad {
   /**
     * Gets the value of the `Left` button
     */
-  def buttonLB(): Double = js.native
+  def buttonLB: Double = js.native
   /**
     * Sets the value of the `Left` button
     */
@@ -84,7 +84,7 @@ class Xbox360Pad protected () extends Gamepad {
   /**
     * Gets the value of the Left joystick
     */
-  def buttonLeftStick(): Double = js.native
+  def buttonLeftStick: Double = js.native
   /**
     * Sets the value of the Left joystick
     */
@@ -92,7 +92,7 @@ class Xbox360Pad protected () extends Gamepad {
   /**
     * Gets the value of the `Right` button
     */
-  def buttonRB(): Double = js.native
+  def buttonRB: Double = js.native
   /**
     * Sets the value of the `Right` button
     */
@@ -100,7 +100,7 @@ class Xbox360Pad protected () extends Gamepad {
   /**
     * Gets the value of the Right joystick
     */
-  def buttonRightStick(): Double = js.native
+  def buttonRightStick: Double = js.native
   /**
     * Sets the value of the Right joystick
     */
@@ -108,7 +108,7 @@ class Xbox360Pad protected () extends Gamepad {
   /**
     * Gets the value of the `Start` button
     */
-  def buttonStart(): Double = js.native
+  def buttonStart: Double = js.native
   /**
     * Sets the value of the `Start` button
     */
@@ -116,7 +116,7 @@ class Xbox360Pad protected () extends Gamepad {
   /**
     * Gets the value of the `X` button
     */
-  def buttonX(): Double = js.native
+  def buttonX: Double = js.native
   /**
     * Sets the value of the `X` button
     */
@@ -124,7 +124,7 @@ class Xbox360Pad protected () extends Gamepad {
   /**
     * Gets the value of the `Y` button
     */
-  def buttonY(): Double = js.native
+  def buttonY: Double = js.native
   /**
     * Sets the value of the `Y` button
     */
@@ -132,7 +132,7 @@ class Xbox360Pad protected () extends Gamepad {
   /**
     * Gets the value of D-pad down
     */
-  def dPadDown(): Double = js.native
+  def dPadDown: Double = js.native
   /**
     * Sets the value of D-pad down
     */
@@ -140,7 +140,7 @@ class Xbox360Pad protected () extends Gamepad {
   /**
     * Gets the value of D-pad left
     */
-  def dPadLeft(): Double = js.native
+  def dPadLeft: Double = js.native
   /**
     * Sets the value of D-pad left
     */
@@ -148,7 +148,7 @@ class Xbox360Pad protected () extends Gamepad {
   /**
     * Gets the value of D-pad right
     */
-  def dPadRight(): Double = js.native
+  def dPadRight: Double = js.native
   /**
     * Sets the value of D-pad right
     */
@@ -156,7 +156,7 @@ class Xbox360Pad protected () extends Gamepad {
   /**
     * Gets the value of D-pad up
     */
-  def dPadUp(): Double = js.native
+  def dPadUp: Double = js.native
   /**
     * Sets the value of D-pad up
     */
@@ -164,7 +164,7 @@ class Xbox360Pad protected () extends Gamepad {
   /**
     * Gets the left trigger value
     */
-  def leftTrigger(): Double = js.native
+  def leftTrigger: Double = js.native
   /**
     * Sets the left trigger value
     */
@@ -202,7 +202,7 @@ class Xbox360Pad protected () extends Gamepad {
   /**
     * Gets the right trigger value
     */
-  def rightTrigger(): Double = js.native
+  def rightTrigger: Double = js.native
   /**
     * Sets the right trigger value
     */

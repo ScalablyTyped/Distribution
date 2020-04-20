@@ -13,7 +13,6 @@ object Api {
   @scala.inline
   def apply(select: AnonStyle): Api = {
     val __obj = js.Dynamic.literal(select = select.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Api]
   }
 }

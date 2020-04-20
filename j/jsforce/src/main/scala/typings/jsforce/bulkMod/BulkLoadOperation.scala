@@ -15,16 +15,14 @@ trait BulkLoadOperation extends js.Object
 
 object BulkLoadOperation {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def delete: typings.jsforce.jsforceStrings.delete = "delete".asInstanceOf[typings.jsforce.jsforceStrings.delete]
   @scala.inline
-  def delete: typings.jsforce.jsforceStrings.delete = this.cast("delete")
+  def hardDelete: typings.jsforce.jsforceStrings.hardDelete = "hardDelete".asInstanceOf[typings.jsforce.jsforceStrings.hardDelete]
   @scala.inline
-  def hardDelete: typings.jsforce.jsforceStrings.hardDelete = this.cast("hardDelete")
+  def insert: typings.jsforce.jsforceStrings.insert = "insert".asInstanceOf[typings.jsforce.jsforceStrings.insert]
   @scala.inline
-  def insert: typings.jsforce.jsforceStrings.insert = this.cast("insert")
+  def update: typings.jsforce.jsforceStrings.update = "update".asInstanceOf[typings.jsforce.jsforceStrings.update]
   @scala.inline
-  def update: typings.jsforce.jsforceStrings.update = this.cast("update")
-  @scala.inline
-  def upsert: typings.jsforce.jsforceStrings.upsert = this.cast("upsert")
+  def upsert: typings.jsforce.jsforceStrings.upsert = "upsert".asInstanceOf[typings.jsforce.jsforceStrings.upsert]
 }
 

@@ -45,7 +45,6 @@ object RelationshipSchemes {
     secondarySchemes: js.Array[RelationshipScheme]
   ): RelationshipSchemes = {
     val __obj = js.Dynamic.literal(basemapId = basemapId.asInstanceOf[js.Any], basemapTheme = basemapTheme.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), primaryScheme = primaryScheme.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), secondarySchemes = secondarySchemes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RelationshipSchemes]
   }
 }

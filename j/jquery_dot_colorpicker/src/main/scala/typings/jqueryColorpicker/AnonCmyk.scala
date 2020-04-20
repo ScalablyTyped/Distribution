@@ -21,7 +21,6 @@ object AnonCmyk {
   @scala.inline
   def apply(cmyk: CMYK, hsl: HSL, hsv: HSV, lab: LAB, rgb: RGB): AnonCmyk = {
     val __obj = js.Dynamic.literal(cmyk = cmyk.asInstanceOf[js.Any], hsl = hsl.asInstanceOf[js.Any], hsv = hsv.asInstanceOf[js.Any], lab = lab.asInstanceOf[js.Any], rgb = rgb.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCmyk]
   }
 }

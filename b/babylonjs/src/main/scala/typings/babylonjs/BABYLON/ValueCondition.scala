@@ -89,18 +89,18 @@ object ValueCondition extends js.Object {
   /**
     * Returns the number for IsDifferent
     */
-  def IsDifferent(): Double = js.native
+  def IsDifferent: Double = js.native
   /**
     * returns the number for IsEqual
     */
-  def IsEqual(): Double = js.native
+  def IsEqual: Double = js.native
   /**
     * Returns the number for IsGreater
     */
-  def IsGreater(): Double = js.native
+  def IsGreater: Double = js.native
   /**
     * Returns the number for IsLesser
     */
-  def IsLesser(): Double = js.native
+  def IsLesser: Double = js.native
 }
 

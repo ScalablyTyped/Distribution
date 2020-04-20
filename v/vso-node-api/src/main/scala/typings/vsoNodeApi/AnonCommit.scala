@@ -14,7 +14,6 @@ object AnonCommit {
   @scala.inline
   def apply(commit: Double, lastMergeCommit: Double, notSet: Double): AnonCommit = {
     val __obj = js.Dynamic.literal(commit = commit.asInstanceOf[js.Any], lastMergeCommit = lastMergeCommit.asInstanceOf[js.Any], notSet = notSet.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCommit]
   }
 }

@@ -17,7 +17,6 @@ object AnonNumber {
   @scala.inline
   def apply(boolean: Double, guid: Double, none: Double, number: Double, string: Double, uri: Double): AnonNumber = {
     val __obj = js.Dynamic.literal(boolean = boolean.asInstanceOf[js.Any], guid = guid.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNumber]
   }
 }

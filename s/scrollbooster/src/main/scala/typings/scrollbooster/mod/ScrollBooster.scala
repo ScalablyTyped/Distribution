@@ -25,7 +25,6 @@ object ScrollBooster {
     updateOptions: PartialScrollBoosterOptio => Unit
   ): ScrollBooster = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), getState = js.Any.fromFunction0(getState), scrollTo = js.Any.fromFunction1(scrollTo), setPosition = js.Any.fromFunction1(setPosition), updateMetrics = js.Any.fromFunction0(updateMetrics), updateOptions = js.Any.fromFunction1(updateOptions))
-  
     __obj.asInstanceOf[ScrollBooster]
   }
 }

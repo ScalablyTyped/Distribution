@@ -34,7 +34,6 @@ object capability {
   @scala.inline
   def apply(keywords: js.Array[_], validate: (String, js.Array[_], js.Object) => Unit): capability = {
     val __obj = js.Dynamic.literal(keywords = keywords.asInstanceOf[js.Any], validate = js.Any.fromFunction3(validate))
-  
     __obj.asInstanceOf[capability]
   }
 }

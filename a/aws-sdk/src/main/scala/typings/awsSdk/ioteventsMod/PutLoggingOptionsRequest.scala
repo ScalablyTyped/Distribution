@@ -16,7 +16,6 @@ object PutLoggingOptionsRequest {
   @scala.inline
   def apply(loggingOptions: LoggingOptions): PutLoggingOptionsRequest = {
     val __obj = js.Dynamic.literal(loggingOptions = loggingOptions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutLoggingOptionsRequest]
   }
 }

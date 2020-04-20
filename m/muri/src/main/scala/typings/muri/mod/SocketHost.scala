@@ -12,7 +12,6 @@ object SocketHost {
   @scala.inline
   def apply(ipc: String): SocketHost = {
     val __obj = js.Dynamic.literal(ipc = ipc.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SocketHost]
   }
 }

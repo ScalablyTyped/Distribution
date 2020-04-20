@@ -14,7 +14,6 @@ object StorySliderVotersFeedResponseResponseVotersItem {
   @scala.inline
   def apply(ts: Double, user: StorySliderVotersFeedResponseResponseUser, vote: Double): StorySliderVotersFeedResponseResponseVotersItem = {
     val __obj = js.Dynamic.literal(ts = ts.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], vote = vote.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StorySliderVotersFeedResponseResponseVotersItem]
   }
 }

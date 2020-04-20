@@ -17,7 +17,6 @@ object ListenerRuleConditionHttpRequestMethod {
   @scala.inline
   def apply(values: Input[js.Array[Input[String]]]): ListenerRuleConditionHttpRequestMethod = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListenerRuleConditionHttpRequestMethod]
   }
 }

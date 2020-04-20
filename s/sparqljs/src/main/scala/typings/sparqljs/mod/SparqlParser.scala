@@ -12,7 +12,6 @@ object SparqlParser {
   @scala.inline
   def apply(parse: String => SparqlQuery): SparqlParser = {
     val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse))
-  
     __obj.asInstanceOf[SparqlParser]
   }
 }

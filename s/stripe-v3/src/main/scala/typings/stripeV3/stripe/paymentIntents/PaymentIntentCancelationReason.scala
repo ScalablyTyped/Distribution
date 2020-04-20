@@ -17,20 +17,18 @@ trait PaymentIntentCancelationReason extends js.Object
 
 object PaymentIntentCancelationReason {
   @scala.inline
-  def abandoned: typings.stripeV3.stripeV3Strings.abandoned = this.cast("abandoned")
+  def abandoned: typings.stripeV3.stripeV3Strings.abandoned = "abandoned".asInstanceOf[typings.stripeV3.stripeV3Strings.abandoned]
   @scala.inline
-  def automatic: typings.stripeV3.stripeV3Strings.automatic = this.cast("automatic")
+  def automatic: typings.stripeV3.stripeV3Strings.automatic = "automatic".asInstanceOf[typings.stripeV3.stripeV3Strings.automatic]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def duplicate: typings.stripeV3.stripeV3Strings.duplicate = "duplicate".asInstanceOf[typings.stripeV3.stripeV3Strings.duplicate]
   @scala.inline
-  def duplicate: typings.stripeV3.stripeV3Strings.duplicate = this.cast("duplicate")
+  def failed_invoice: typings.stripeV3.stripeV3Strings.failed_invoice = "failed_invoice".asInstanceOf[typings.stripeV3.stripeV3Strings.failed_invoice]
   @scala.inline
-  def failed_invoice: typings.stripeV3.stripeV3Strings.failed_invoice = this.cast("failed_invoice")
+  def fraudulent: typings.stripeV3.stripeV3Strings.fraudulent = "fraudulent".asInstanceOf[typings.stripeV3.stripeV3Strings.fraudulent]
   @scala.inline
-  def fraudulent: typings.stripeV3.stripeV3Strings.fraudulent = this.cast("fraudulent")
+  def requested_by_customer: typings.stripeV3.stripeV3Strings.requested_by_customer = "requested_by_customer".asInstanceOf[typings.stripeV3.stripeV3Strings.requested_by_customer]
   @scala.inline
-  def requested_by_customer: typings.stripeV3.stripeV3Strings.requested_by_customer = this.cast("requested_by_customer")
-  @scala.inline
-  def void_invoice: typings.stripeV3.stripeV3Strings.void_invoice = this.cast("void_invoice")
+  def void_invoice: typings.stripeV3.stripeV3Strings.void_invoice = "void_invoice".asInstanceOf[typings.stripeV3.stripeV3Strings.void_invoice]
 }
 

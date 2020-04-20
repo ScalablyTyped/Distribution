@@ -13,7 +13,6 @@ object NumberOptions {
   @scala.inline
   def apply(decimal: String, thousands: String): NumberOptions = {
     val __obj = js.Dynamic.literal(decimal = decimal.asInstanceOf[js.Any], thousands = thousands.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NumberOptions]
   }
 }

@@ -20,26 +20,24 @@ trait FormattingFilter extends js.Object
 
 object FormattingFilter {
   @scala.inline
-  def Colonalias: typings.pgPromise.pgPromiseStrings.Colonalias = this.cast(":alias")
+  def Colonalias: typings.pgPromise.pgPromiseStrings.Colonalias = ":alias".asInstanceOf[typings.pgPromise.pgPromiseStrings.Colonalias]
   @scala.inline
-  def Coloncsv: typings.pgPromise.pgPromiseStrings.Coloncsv = this.cast(":csv")
+  def Coloncsv: typings.pgPromise.pgPromiseStrings.Coloncsv = ":csv".asInstanceOf[typings.pgPromise.pgPromiseStrings.Coloncsv]
   @scala.inline
-  def Colonjson: typings.pgPromise.pgPromiseStrings.Colonjson = this.cast(":json")
+  def Colonjson: typings.pgPromise.pgPromiseStrings.Colonjson = ":json".asInstanceOf[typings.pgPromise.pgPromiseStrings.Colonjson]
   @scala.inline
-  def Colonlist: typings.pgPromise.pgPromiseStrings.Colonlist = this.cast(":list")
+  def Colonlist: typings.pgPromise.pgPromiseStrings.Colonlist = ":list".asInstanceOf[typings.pgPromise.pgPromiseStrings.Colonlist]
   @scala.inline
-  def Colonname: typings.pgPromise.pgPromiseStrings.Colonname = this.cast(":name")
+  def Colonname: typings.pgPromise.pgPromiseStrings.Colonname = ":name".asInstanceOf[typings.pgPromise.pgPromiseStrings.Colonname]
   @scala.inline
-  def Colonraw: typings.pgPromise.pgPromiseStrings.Colonraw = this.cast(":raw")
+  def Colonraw: typings.pgPromise.pgPromiseStrings.Colonraw = ":raw".asInstanceOf[typings.pgPromise.pgPromiseStrings.Colonraw]
   @scala.inline
-  def Colonvalue: typings.pgPromise.pgPromiseStrings.Colonvalue = this.cast(":value")
+  def Colonvalue: typings.pgPromise.pgPromiseStrings.Colonvalue = ":value".asInstanceOf[typings.pgPromise.pgPromiseStrings.Colonvalue]
   @scala.inline
-  def Numbersign: typings.pgPromise.pgPromiseStrings.Numbersign = this.cast("#")
+  def Numbersign: typings.pgPromise.pgPromiseStrings.Numbersign = "#".asInstanceOf[typings.pgPromise.pgPromiseStrings.Numbersign]
   @scala.inline
-  def Tilde: typings.pgPromise.pgPromiseStrings.Tilde = this.cast("~")
+  def Tilde: typings.pgPromise.pgPromiseStrings.Tilde = "~".asInstanceOf[typings.pgPromise.pgPromiseStrings.Tilde]
   @scala.inline
-  def ^ : typings.pgPromise.pgPromiseStrings.^ = this.cast("^")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ^ : typings.pgPromise.pgPromiseStrings.^ = "^".asInstanceOf[typings.pgPromise.pgPromiseStrings.^]
 }
 

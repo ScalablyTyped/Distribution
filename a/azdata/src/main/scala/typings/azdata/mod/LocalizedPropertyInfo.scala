@@ -20,7 +20,6 @@ object LocalizedPropertyInfo {
     propertyValueDisplayName: String
   ): LocalizedPropertyInfo = {
     val __obj = js.Dynamic.literal(propertyDisplayName = propertyDisplayName.asInstanceOf[js.Any], propertyName = propertyName.asInstanceOf[js.Any], propertyValue = propertyValue.asInstanceOf[js.Any], propertyValueDisplayName = propertyValueDisplayName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LocalizedPropertyInfo]
   }
 }

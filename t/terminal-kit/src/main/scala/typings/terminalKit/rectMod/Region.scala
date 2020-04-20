@@ -15,7 +15,6 @@ object Region {
   @scala.inline
   def apply(xmax: Double, xmin: Double, ymax: Double, ymin: Double): Region = {
     val __obj = js.Dynamic.literal(xmax = xmax.asInstanceOf[js.Any], xmin = xmin.asInstanceOf[js.Any], ymax = ymax.asInstanceOf[js.Any], ymin = ymin.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Region]
   }
 }

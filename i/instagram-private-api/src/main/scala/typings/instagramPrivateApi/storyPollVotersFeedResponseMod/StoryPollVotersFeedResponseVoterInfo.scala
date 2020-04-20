@@ -22,7 +22,6 @@ object StoryPollVotersFeedResponseVoterInfo {
     voters: js.Array[StoryPollVotersFeedResponseVotersItem]
   ): StoryPollVotersFeedResponseVoterInfo = {
     val __obj = js.Dynamic.literal(latest_poll_vote_time = latest_poll_vote_time.asInstanceOf[js.Any], max_id = max_id.asInstanceOf[js.Any], more_available = more_available.asInstanceOf[js.Any], poll_id = poll_id.asInstanceOf[js.Any], voters = voters.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StoryPollVotersFeedResponseVoterInfo]
   }
 }

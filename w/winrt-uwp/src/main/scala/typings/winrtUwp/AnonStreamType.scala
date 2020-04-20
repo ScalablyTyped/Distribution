@@ -14,7 +14,6 @@ object AnonStreamType {
   @scala.inline
   def apply(returnValue: Double, streamType: NDMediaStreamType): AnonStreamType = {
     val __obj = js.Dynamic.literal(returnValue = returnValue.asInstanceOf[js.Any], streamType = streamType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonStreamType]
   }
 }

@@ -16,7 +16,6 @@ object Bounds {
   @scala.inline
   def apply(ne: Coords, nw: Coords, se: Coords, sw: Coords): Bounds = {
     val __obj = js.Dynamic.literal(ne = ne.asInstanceOf[js.Any], nw = nw.asInstanceOf[js.Any], se = se.asInstanceOf[js.Any], sw = sw.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Bounds]
   }
 }

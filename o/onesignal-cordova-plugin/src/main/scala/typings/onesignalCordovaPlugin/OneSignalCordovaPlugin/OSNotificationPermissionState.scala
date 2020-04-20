@@ -17,10 +17,8 @@ trait OSNotificationPermissionState extends js.Object
 
 object OSNotificationPermissionState {
   @scala.inline
-  def Authorized: `1` = this.cast(1)
+  def Authorized: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def Denied: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Denied: `2` = 2.asInstanceOf[`2`]
 }
 

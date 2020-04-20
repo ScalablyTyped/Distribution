@@ -21,7 +21,6 @@ object IntercomStatic {
   @scala.inline
   def apply(destroy: () => Unit, getInstance: () => Intercom): IntercomStatic = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), getInstance = js.Any.fromFunction0(getInstance))
-  
     __obj.asInstanceOf[IntercomStatic]
   }
 }

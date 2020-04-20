@@ -13,7 +13,6 @@ object CartoDBLayerInfo {
   @scala.inline
   def apply(cdn_url: js.Any, layergroupid: String): CartoDBLayerInfo = {
     val __obj = js.Dynamic.literal(cdn_url = cdn_url.asInstanceOf[js.Any], layergroupid = layergroupid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CartoDBLayerInfo]
   }
 }

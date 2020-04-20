@@ -19,7 +19,6 @@ object TokensCollection {
   @scala.inline
   def apply(get: (String, String) => Token, list: String => Tokens, remove: (String, String) => Unit): TokensCollection = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get), list = js.Any.fromFunction1(list), remove = js.Any.fromFunction2(remove))
-  
     __obj.asInstanceOf[TokensCollection]
   }
 }

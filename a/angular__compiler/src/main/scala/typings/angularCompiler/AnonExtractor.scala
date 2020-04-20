@@ -15,7 +15,6 @@ object AnonExtractor {
   @scala.inline
   def apply(extractor: Extractor, staticReflector: StaticReflector): AnonExtractor = {
     val __obj = js.Dynamic.literal(extractor = extractor.asInstanceOf[js.Any], staticReflector = staticReflector.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonExtractor]
   }
 }

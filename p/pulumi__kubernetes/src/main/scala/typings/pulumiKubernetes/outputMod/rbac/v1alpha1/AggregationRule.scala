@@ -21,7 +21,6 @@ object AggregationRule {
   @scala.inline
   def apply(clusterRoleSelectors: js.Array[LabelSelector]): AggregationRule = {
     val __obj = js.Dynamic.literal(clusterRoleSelectors = clusterRoleSelectors.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AggregationRule]
   }
 }

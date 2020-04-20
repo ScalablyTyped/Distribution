@@ -15,7 +15,6 @@ object PickImplheight {
   @scala.inline
   def apply(height: next | initial | Double): PickImplheight = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplheight]
   }
 }

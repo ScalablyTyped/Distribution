@@ -19,7 +19,6 @@ object GetCertificateStatusResult {
   @scala.inline
   def apply(isForCertificate: Boolean, status: Double): GetCertificateStatusResult = {
     val __obj = js.Dynamic.literal(isForCertificate = isForCertificate.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetCertificateStatusResult]
   }
 }

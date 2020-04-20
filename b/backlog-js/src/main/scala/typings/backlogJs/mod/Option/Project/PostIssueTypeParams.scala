@@ -13,7 +13,6 @@ object PostIssueTypeParams {
   @scala.inline
   def apply(color: IssueTypeColor, name: String): PostIssueTypeParams = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PostIssueTypeParams]
   }
 }

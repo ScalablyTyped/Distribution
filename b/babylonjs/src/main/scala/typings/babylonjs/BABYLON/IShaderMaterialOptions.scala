@@ -47,7 +47,6 @@ object IShaderMaterialOptions {
     uniforms: js.Array[String]
   ): IShaderMaterialOptions = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], defines = defines.asInstanceOf[js.Any], needAlphaBlending = needAlphaBlending.asInstanceOf[js.Any], needAlphaTesting = needAlphaTesting.asInstanceOf[js.Any], samplers = samplers.asInstanceOf[js.Any], uniformBuffers = uniformBuffers.asInstanceOf[js.Any], uniforms = uniforms.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IShaderMaterialOptions]
   }
 }

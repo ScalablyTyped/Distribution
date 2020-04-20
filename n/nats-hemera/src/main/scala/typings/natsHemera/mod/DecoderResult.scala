@@ -14,7 +14,6 @@ object DecoderResult {
   @scala.inline
   def apply(error: Error, value: js.Object): DecoderResult = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DecoderResult]
   }
 }

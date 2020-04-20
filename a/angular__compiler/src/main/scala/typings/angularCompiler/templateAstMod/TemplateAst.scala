@@ -20,7 +20,6 @@ object TemplateAst {
   @scala.inline
   def apply(sourceSpan: ParseSourceSpan, visit: (TemplateAstVisitor, js.Any) => js.Any): TemplateAst = {
     val __obj = js.Dynamic.literal(sourceSpan = sourceSpan.asInstanceOf[js.Any], visit = js.Any.fromFunction2(visit))
-  
     __obj.asInstanceOf[TemplateAst]
   }
 }

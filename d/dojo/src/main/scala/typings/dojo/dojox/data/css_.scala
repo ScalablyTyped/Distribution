@@ -40,7 +40,6 @@ object css_ {
     rules: js.Object
   ): css_ = {
     val __obj = js.Dynamic.literal(determineContext = js.Any.fromFunction1(determineContext), findStyleSheet = js.Any.fromFunction1(findStyleSheet), findStyleSheets = js.Any.fromFunction1(findStyleSheets), rules = rules.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[css_]
   }
 }

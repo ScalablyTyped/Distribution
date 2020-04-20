@@ -13,12 +13,10 @@ trait RequestUpdateCheckStatus extends js.Object
 
 object RequestUpdateCheckStatus {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def no_update: typings.chrome.chromeStrings.no_update = "no_update".asInstanceOf[typings.chrome.chromeStrings.no_update]
   @scala.inline
-  def no_update: typings.chrome.chromeStrings.no_update = this.cast("no_update")
+  def throttled: typings.chrome.chromeStrings.throttled = "throttled".asInstanceOf[typings.chrome.chromeStrings.throttled]
   @scala.inline
-  def throttled: typings.chrome.chromeStrings.throttled = this.cast("throttled")
-  @scala.inline
-  def update_available: typings.chrome.chromeStrings.update_available = this.cast("update_available")
+  def update_available: typings.chrome.chromeStrings.update_available = "update_available".asInstanceOf[typings.chrome.chromeStrings.update_available]
 }
 

@@ -19,7 +19,6 @@ object ServiceEventHandlers {
     onserviceremoved: Event_ => js.Any
   ): ServiceEventHandlers = {
     val __obj = js.Dynamic.literal(onserviceadded = js.Any.fromFunction1(onserviceadded), onservicechanged = js.Any.fromFunction1(onservicechanged), onserviceremoved = js.Any.fromFunction1(onserviceremoved))
-  
     __obj.asInstanceOf[ServiceEventHandlers]
   }
 }

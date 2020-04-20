@@ -16,12 +16,10 @@ trait ReorderGroupState extends js.Object
 
 object ReorderGroupState {
   @scala.inline
-  def Active: `1` = this.cast(1)
+  def Active: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def Complete: `2` = this.cast(2)
+  def Complete: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def Idle: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Idle: `0` = 0.asInstanceOf[`0`]
 }
 

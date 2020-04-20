@@ -12,7 +12,6 @@ object IPushNotificationTriggerFactory {
   @scala.inline
   def apply(create: String => PushNotificationTrigger): IPushNotificationTriggerFactory = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
-  
     __obj.asInstanceOf[IPushNotificationTriggerFactory]
   }
 }

@@ -34,7 +34,6 @@ object DocumentColorProvider {
     provideDocumentColors: (TextDocument, CancellationToken) => ProviderResult[js.Array[ColorInformation]]
   ): DocumentColorProvider = {
     val __obj = js.Dynamic.literal(provideColorPresentations = js.Any.fromFunction3(provideColorPresentations), provideDocumentColors = js.Any.fromFunction2(provideDocumentColors))
-  
     __obj.asInstanceOf[DocumentColorProvider]
   }
 }

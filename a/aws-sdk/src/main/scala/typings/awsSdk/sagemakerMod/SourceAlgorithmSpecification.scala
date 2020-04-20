@@ -16,7 +16,6 @@ object SourceAlgorithmSpecification {
   @scala.inline
   def apply(SourceAlgorithms: SourceAlgorithmList): SourceAlgorithmSpecification = {
     val __obj = js.Dynamic.literal(SourceAlgorithms = SourceAlgorithms.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SourceAlgorithmSpecification]
   }
 }

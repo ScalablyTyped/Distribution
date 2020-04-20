@@ -22,7 +22,6 @@ object IToasterEventRegistry {
     unsubscribeToNewToastEvent: IToastEventListener => Unit
   ): IToasterEventRegistry = {
     val __obj = js.Dynamic.literal(setup = js.Any.fromFunction0(setup), subscribeToClearToastsEvent = js.Any.fromFunction1(subscribeToClearToastsEvent), subscribeToNewToastEvent = js.Any.fromFunction1(subscribeToNewToastEvent), unsubscribeToClearToastsEvent = js.Any.fromFunction1(unsubscribeToClearToastsEvent), unsubscribeToNewToastEvent = js.Any.fromFunction1(unsubscribeToNewToastEvent))
-  
     __obj.asInstanceOf[IToasterEventRegistry]
   }
 }

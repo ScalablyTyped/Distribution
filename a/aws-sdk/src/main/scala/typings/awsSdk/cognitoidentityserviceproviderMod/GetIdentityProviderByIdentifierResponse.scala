@@ -16,7 +16,6 @@ object GetIdentityProviderByIdentifierResponse {
   @scala.inline
   def apply(IdentityProvider: IdentityProviderType): GetIdentityProviderByIdentifierResponse = {
     val __obj = js.Dynamic.literal(IdentityProvider = IdentityProvider.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetIdentityProviderByIdentifierResponse]
   }
 }

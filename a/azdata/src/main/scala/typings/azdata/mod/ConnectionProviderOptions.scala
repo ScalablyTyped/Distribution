@@ -12,7 +12,6 @@ object ConnectionProviderOptions {
   @scala.inline
   def apply(options: js.Array[ConnectionOption]): ConnectionProviderOptions = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConnectionProviderOptions]
   }
 }

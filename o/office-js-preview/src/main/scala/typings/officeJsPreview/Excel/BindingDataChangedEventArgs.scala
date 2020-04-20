@@ -24,7 +24,6 @@ object BindingDataChangedEventArgs {
   @scala.inline
   def apply(binding: Binding): BindingDataChangedEventArgs = {
     val __obj = js.Dynamic.literal(binding = binding.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BindingDataChangedEventArgs]
   }
 }

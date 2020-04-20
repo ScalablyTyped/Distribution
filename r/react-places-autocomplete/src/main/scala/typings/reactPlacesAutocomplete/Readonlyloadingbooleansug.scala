@@ -26,7 +26,6 @@ object Readonlyloadingbooleansug {
     suggestions: js.Array[Suggestion]
   ): Readonlyloadingbooleansug = {
     val __obj = js.Dynamic.literal(getInputProps = js.Any.fromFunction1(getInputProps), getSuggestionItemProps = js.Any.fromFunction2(getSuggestionItemProps), loading = loading.asInstanceOf[js.Any], suggestions = suggestions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Readonlyloadingbooleansug]
   }
 }

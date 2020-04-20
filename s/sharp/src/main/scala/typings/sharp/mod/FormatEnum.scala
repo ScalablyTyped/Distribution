@@ -42,7 +42,6 @@ object FormatEnum {
     webp: AvailableFormatInfo
   ): FormatEnum = {
     val __obj = js.Dynamic.literal(dz = dz.asInstanceOf[js.Any], fits = fits.asInstanceOf[js.Any], gif = gif.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], jpeg = jpeg.asInstanceOf[js.Any], magick = magick.asInstanceOf[js.Any], openslide = openslide.asInstanceOf[js.Any], pdf = pdf.asInstanceOf[js.Any], png = png.asInstanceOf[js.Any], ppm = ppm.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], svg = svg.asInstanceOf[js.Any], tiff = tiff.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any], webp = webp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FormatEnum]
   }
 }

@@ -12,7 +12,6 @@ object AnonSessionStorage {
   @scala.inline
   def apply(sessionStorage: Boolean): AnonSessionStorage = {
     val __obj = js.Dynamic.literal(sessionStorage = sessionStorage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSessionStorage]
   }
 }

@@ -13,7 +13,6 @@ object UpdateEndpointResponse {
   @scala.inline
   def apply(MessageBody: MessageBody): UpdateEndpointResponse = {
     val __obj = js.Dynamic.literal(MessageBody = MessageBody.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateEndpointResponse]
   }
 }

@@ -27,7 +27,7 @@ trait StackSet extends js.Object {
     */
   var ExecutionRoleName: js.UndefOr[typings.awsSdk.cloudformationMod.ExecutionRoleName] = js.native
   /**
-    * [Service-managed permissions] The organization root ID or organizational unit (OUs) IDs to which stacks in your stack set have been deployed.
+    * Reserved for internal use. No data returned.
     */
   var OrganizationalUnitIds: js.UndefOr[OrganizationalUnitIdList] = js.native
   /**

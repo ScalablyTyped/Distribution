@@ -18,14 +18,12 @@ trait fmDropButtonStyle extends js.Object
 
 object fmDropButtonStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fmDropButtonStyleArrow: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def fmDropButtonStyleArrow: `1` = this.cast(1)
+  def fmDropButtonStyleEllipsis: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def fmDropButtonStyleEllipsis: `2` = this.cast(2)
+  def fmDropButtonStylePlain: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def fmDropButtonStylePlain: `0` = this.cast(0)
-  @scala.inline
-  def fmDropButtonStyleReduce: `3` = this.cast(3)
+  def fmDropButtonStyleReduce: `3` = 3.asInstanceOf[`3`]
 }
 

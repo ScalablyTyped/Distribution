@@ -1,6 +1,7 @@
 package typings.getenv.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,6 +22,6 @@ object multi extends js.Object {
     */
   def apply[S /* <: StringDictionary[String | ParseWithFallback | ParseWithEachType] */](spec: S): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof S ]: S[P][2] extends getenv.getenv.ParseTypes? getenv.getenv.ParseMappings[S[P][2]] : string}
-    */ typings.getenv.getenvStrings.multi with js.Any = js.native
+    */ typings.getenv.getenvStrings.multi with TopLevel[js.Any] = js.native
 }
 

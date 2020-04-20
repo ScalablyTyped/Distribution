@@ -13,7 +13,6 @@ object RefSize {
   @scala.inline
   def apply(height: Double, width: Double): RefSize = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RefSize]
   }
 }

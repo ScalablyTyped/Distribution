@@ -16,16 +16,14 @@ trait AccessRole extends js.Object
 
 object AccessRole {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def freeBusyReader: typings.gapiCalendar.gapiCalendarStrings.freeBusyReader = "freeBusyReader".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.freeBusyReader]
   @scala.inline
-  def freeBusyReader: typings.gapiCalendar.gapiCalendarStrings.freeBusyReader = this.cast("freeBusyReader")
+  def none: typings.gapiCalendar.gapiCalendarStrings.none = "none".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.none]
   @scala.inline
-  def none: typings.gapiCalendar.gapiCalendarStrings.none = this.cast("none")
+  def owner: typings.gapiCalendar.gapiCalendarStrings.owner = "owner".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.owner]
   @scala.inline
-  def owner: typings.gapiCalendar.gapiCalendarStrings.owner = this.cast("owner")
+  def reader: typings.gapiCalendar.gapiCalendarStrings.reader = "reader".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.reader]
   @scala.inline
-  def reader: typings.gapiCalendar.gapiCalendarStrings.reader = this.cast("reader")
-  @scala.inline
-  def writer: typings.gapiCalendar.gapiCalendarStrings.writer = this.cast("writer")
+  def writer: typings.gapiCalendar.gapiCalendarStrings.writer = "writer".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.writer]
 }
 

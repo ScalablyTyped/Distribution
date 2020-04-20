@@ -12,7 +12,6 @@ object AnonExact {
   @scala.inline
   def apply(exact: Boolean): AnonExact = {
     val __obj = js.Dynamic.literal(exact = exact.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonExact]
   }
 }

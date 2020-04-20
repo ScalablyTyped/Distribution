@@ -16,7 +16,6 @@ object DeleteConnectorDefinitionRequest {
   @scala.inline
   def apply(ConnectorDefinitionId: string): DeleteConnectorDefinitionRequest = {
     val __obj = js.Dynamic.literal(ConnectorDefinitionId = ConnectorDefinitionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteConnectorDefinitionRequest]
   }
 }

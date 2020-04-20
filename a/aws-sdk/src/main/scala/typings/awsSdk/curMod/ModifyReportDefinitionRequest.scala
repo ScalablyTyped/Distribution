@@ -14,7 +14,6 @@ object ModifyReportDefinitionRequest {
   @scala.inline
   def apply(ReportDefinition: ReportDefinition, ReportName: ReportName): ModifyReportDefinitionRequest = {
     val __obj = js.Dynamic.literal(ReportDefinition = ReportDefinition.asInstanceOf[js.Any], ReportName = ReportName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ModifyReportDefinitionRequest]
   }
 }

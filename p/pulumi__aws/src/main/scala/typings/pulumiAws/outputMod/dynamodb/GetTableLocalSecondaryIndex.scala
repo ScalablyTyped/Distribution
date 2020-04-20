@@ -19,7 +19,6 @@ object GetTableLocalSecondaryIndex {
   @scala.inline
   def apply(name: String, nonKeyAttributes: js.Array[String], projectionType: String, rangeKey: String): GetTableLocalSecondaryIndex = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], nonKeyAttributes = nonKeyAttributes.asInstanceOf[js.Any], projectionType = projectionType.asInstanceOf[js.Any], rangeKey = rangeKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetTableLocalSecondaryIndex]
   }
 }

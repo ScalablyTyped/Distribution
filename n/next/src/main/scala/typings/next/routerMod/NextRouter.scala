@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 trait NextRouter extends js.Object {
   var asPath: String
   var back: js.Function0[Unit]
+  var basePath: String
   var beforePopState: js.Function1[/* cb */ BeforePopStateCallback, Unit]
   var events: MittEmitter
   var isFallback: Boolean
@@ -42,6 +43,7 @@ object NextRouter {
   def apply(
     asPath: String,
     back: () => Unit,
+    basePath: String,
     beforePopState: /* cb */ BeforePopStateCallback => Unit,
     events: MittEmitter,
     isFallback: Boolean,
@@ -53,8 +55,7 @@ object NextRouter {
     replace: (/* url */ Url, /* as */ js.UndefOr[Url], /* options */ js.UndefOr[js.Object]) => js.Promise[Boolean],
     route: String
   ): NextRouter = {
-    val __obj = js.Dynamic.literal(asPath = asPath.asInstanceOf[js.Any], back = js.Any.fromFunction0(back), beforePopState = js.Any.fromFunction1(beforePopState), events = events.asInstanceOf[js.Any], isFallback = isFallback.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], prefetch = js.Any.fromFunction3(prefetch), push = js.Any.fromFunction3(push), query = query.asInstanceOf[js.Any], reload = js.Any.fromFunction0(reload), replace = js.Any.fromFunction3(replace), route = route.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal(asPath = asPath.asInstanceOf[js.Any], back = js.Any.fromFunction0(back), basePath = basePath.asInstanceOf[js.Any], beforePopState = js.Any.fromFunction1(beforePopState), events = events.asInstanceOf[js.Any], isFallback = isFallback.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], prefetch = js.Any.fromFunction3(prefetch), push = js.Any.fromFunction3(push), query = query.asInstanceOf[js.Any], reload = js.Any.fromFunction0(reload), replace = js.Any.fromFunction3(replace), route = route.asInstanceOf[js.Any])
     __obj.asInstanceOf[NextRouter]
   }
 }

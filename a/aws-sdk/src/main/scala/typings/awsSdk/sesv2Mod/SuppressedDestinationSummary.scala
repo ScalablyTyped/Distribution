@@ -24,7 +24,6 @@ object SuppressedDestinationSummary {
   @scala.inline
   def apply(EmailAddress: EmailAddress, LastUpdateTime: Timestamp, Reason: SuppressionListReason): SuppressedDestinationSummary = {
     val __obj = js.Dynamic.literal(EmailAddress = EmailAddress.asInstanceOf[js.Any], LastUpdateTime = LastUpdateTime.asInstanceOf[js.Any], Reason = Reason.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SuppressedDestinationSummary]
   }
 }

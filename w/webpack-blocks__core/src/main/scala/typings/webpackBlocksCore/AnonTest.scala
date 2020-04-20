@@ -13,7 +13,6 @@ object AnonTest {
   @scala.inline
   def apply(test: RegExp | js.Array[RegExp]): AnonTest = {
     val __obj = js.Dynamic.literal(test = test.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTest]
   }
 }

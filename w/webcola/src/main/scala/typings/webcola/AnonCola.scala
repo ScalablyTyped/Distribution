@@ -14,7 +14,6 @@ object AnonCola {
   @scala.inline
   def apply(cola: Layout, powerGraph: js.Any): AnonCola = {
     val __obj = js.Dynamic.literal(cola = cola.asInstanceOf[js.Any], powerGraph = powerGraph.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCola]
   }
 }

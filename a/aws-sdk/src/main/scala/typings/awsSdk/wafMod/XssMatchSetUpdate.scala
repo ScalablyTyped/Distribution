@@ -20,7 +20,6 @@ object XssMatchSetUpdate {
   @scala.inline
   def apply(Action: ChangeAction, XssMatchTuple: XssMatchTuple): XssMatchSetUpdate = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], XssMatchTuple = XssMatchTuple.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[XssMatchSetUpdate]
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "uifabric__react-hooks"
-version := "7.1.1-10ccc2"
+version := "7.1.6-5fdca1"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

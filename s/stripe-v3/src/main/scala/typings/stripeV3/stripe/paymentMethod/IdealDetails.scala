@@ -32,7 +32,6 @@ object IdealDetails {
     verified_name: String
   ): IdealDetails = {
     val __obj = js.Dynamic.literal(bank = bank.asInstanceOf[js.Any], bic = bic.asInstanceOf[js.Any], iban_last4 = iban_last4.asInstanceOf[js.Any], verified_name = verified_name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IdealDetails]
   }
 }

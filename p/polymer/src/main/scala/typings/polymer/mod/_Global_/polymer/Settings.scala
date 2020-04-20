@@ -34,7 +34,6 @@ object Settings {
     wantShadow: Boolean
   ): Settings = {
     val __obj = js.Dynamic.literal(hasNativeCSSProperties = hasNativeCSSProperties.asInstanceOf[js.Any], hasNativeImports = hasNativeImports.asInstanceOf[js.Any], hasShadow = hasShadow.asInstanceOf[js.Any], nativeShadow = nativeShadow.asInstanceOf[js.Any], useNativeCSSProperties = useNativeCSSProperties.asInstanceOf[js.Any], useNativeCustomElements = useNativeCustomElements.asInstanceOf[js.Any], useNativeImports = useNativeImports.asInstanceOf[js.Any], useNativeShadow = useNativeShadow.asInstanceOf[js.Any], usePolyfillProto = usePolyfillProto.asInstanceOf[js.Any], useShadow = useShadow.asInstanceOf[js.Any], wantShadow = wantShadow.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Settings]
   }
 }

@@ -16,7 +16,6 @@ object IonPickerColumn {
   @scala.inline
   def apply(col: PickerColumn): IonPickerColumn = {
     val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IonPickerColumn]
   }
 }

@@ -19,7 +19,6 @@ object INxRangeSelectInfo {
   @scala.inline
   def apply(qMeasureIx: Double, qRange: IRange): INxRangeSelectInfo = {
     val __obj = js.Dynamic.literal(qMeasureIx = qMeasureIx.asInstanceOf[js.Any], qRange = qRange.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INxRangeSelectInfo]
   }
 }

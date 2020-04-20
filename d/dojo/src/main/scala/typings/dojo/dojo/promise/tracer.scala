@@ -28,7 +28,6 @@ object tracer {
   @scala.inline
   def apply(on: (String, js.Function) => Unit): tracer = {
     val __obj = js.Dynamic.literal(on = js.Any.fromFunction2(on))
-  
     __obj.asInstanceOf[tracer]
   }
 }

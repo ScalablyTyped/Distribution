@@ -20,7 +20,6 @@ object DeleteUserProfileRequest {
   @scala.inline
   def apply(DomainId: DomainId, UserProfileName: UserProfileName): DeleteUserProfileRequest = {
     val __obj = js.Dynamic.literal(DomainId = DomainId.asInstanceOf[js.Any], UserProfileName = UserProfileName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteUserProfileRequest]
   }
 }

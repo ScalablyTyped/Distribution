@@ -30,7 +30,6 @@ object RecordHTTPMethodAPIOperat {
     TRACE: APIOperationDefinition
   ): RecordHTTPMethodAPIOperat = {
     val __obj = js.Dynamic.literal(DELETE = DELETE.asInstanceOf[js.Any], GET = GET.asInstanceOf[js.Any], HEAD = HEAD.asInstanceOf[js.Any], OPTIONS = OPTIONS.asInstanceOf[js.Any], PATCH = PATCH.asInstanceOf[js.Any], POST = POST.asInstanceOf[js.Any], PUT = PUT.asInstanceOf[js.Any], TRACE = TRACE.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RecordHTTPMethodAPIOperat]
   }
 }

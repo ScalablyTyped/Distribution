@@ -15,7 +15,6 @@ object BranchRef {
   @scala.inline
   def apply(loadAsync: () => js.Promise[Branch | Null], name: String, repository: RepositoryRef): BranchRef = {
     val __obj = js.Dynamic.literal(loadAsync = js.Any.fromFunction0(loadAsync), name = name.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BranchRef]
   }
 }

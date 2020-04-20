@@ -18,7 +18,6 @@ object AlbumSearchResponse {
   @scala.inline
   def apply(albums: PagingObject[AlbumObjectSimplified]): AlbumSearchResponse = {
     val __obj = js.Dynamic.literal(albums = albums.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AlbumSearchResponse]
   }
 }

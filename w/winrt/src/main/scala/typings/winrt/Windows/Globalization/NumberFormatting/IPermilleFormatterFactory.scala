@@ -13,7 +13,6 @@ object IPermilleFormatterFactory {
   @scala.inline
   def apply(createPermilleFormatter: (IIterable[String], String) => PermilleFormatter): IPermilleFormatterFactory = {
     val __obj = js.Dynamic.literal(createPermilleFormatter = js.Any.fromFunction2(createPermilleFormatter))
-  
     __obj.asInstanceOf[IPermilleFormatterFactory]
   }
 }

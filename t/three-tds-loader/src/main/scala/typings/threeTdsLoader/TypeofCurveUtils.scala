@@ -20,7 +20,6 @@ object TypeofCurveUtils {
     tangentSpline: (Double, Double, Double, Double, Double) => Double
   ): TypeofCurveUtils = {
     val __obj = js.Dynamic.literal(interpolate = js.Any.fromFunction5(interpolate), tangentCubicBezier = js.Any.fromFunction5(tangentCubicBezier), tangentQuadraticBezier = js.Any.fromFunction4(tangentQuadraticBezier), tangentSpline = js.Any.fromFunction5(tangentSpline))
-  
     __obj.asInstanceOf[TypeofCurveUtils]
   }
 }

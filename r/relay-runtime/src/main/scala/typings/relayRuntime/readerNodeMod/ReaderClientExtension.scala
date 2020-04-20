@@ -14,7 +14,6 @@ object ReaderClientExtension {
   @scala.inline
   def apply(kind: String, selections: js.Array[ReaderSelection]): ReaderClientExtension = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReaderClientExtension]
   }
 }

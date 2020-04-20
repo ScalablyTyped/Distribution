@@ -14,7 +14,6 @@ object OnMouseEnterData {
   @scala.inline
   def apply(event: Event_, node: InternalTreeNode): OnMouseEnterData = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnMouseEnterData]
   }
 }

@@ -34,7 +34,6 @@ object AdInstance {
   @scala.inline
   def apply(getPlacementID: () => String, loadAsync: () => js.Promise[Unit], showAsync: () => js.Promise[Unit]): AdInstance = {
     val __obj = js.Dynamic.literal(getPlacementID = js.Any.fromFunction0(getPlacementID), loadAsync = js.Any.fromFunction0(loadAsync), showAsync = js.Any.fromFunction0(showAsync))
-  
     __obj.asInstanceOf[AdInstance]
   }
 }

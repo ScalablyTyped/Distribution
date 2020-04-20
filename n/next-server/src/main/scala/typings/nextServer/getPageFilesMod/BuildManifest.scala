@@ -14,7 +14,6 @@ object BuildManifest {
   @scala.inline
   def apply(devFiles: js.Array[String], pages: StringDictionary[js.Array[String]]): BuildManifest = {
     val __obj = js.Dynamic.literal(devFiles = devFiles.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BuildManifest]
   }
 }

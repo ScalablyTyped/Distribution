@@ -20,7 +20,6 @@ object HttpParameterCodec {
     encodeValue: String => String
   ): HttpParameterCodec = {
     val __obj = js.Dynamic.literal(decodeKey = js.Any.fromFunction1(decodeKey), decodeValue = js.Any.fromFunction1(decodeValue), encodeKey = js.Any.fromFunction1(encodeKey), encodeValue = js.Any.fromFunction1(encodeValue))
-  
     __obj.asInstanceOf[HttpParameterCodec]
   }
 }

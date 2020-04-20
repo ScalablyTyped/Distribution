@@ -14,12 +14,10 @@ trait RunAt extends js.Object
 
 object RunAt {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def document_end: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.document_end = "document_end".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.document_end]
   @scala.inline
-  def document_end: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.document_end = this.cast("document_end")
+  def document_idle: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.document_idle = "document_idle".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.document_idle]
   @scala.inline
-  def document_idle: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.document_idle = this.cast("document_idle")
-  @scala.inline
-  def document_start: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.document_start = this.cast("document_start")
+  def document_start: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.document_start = "document_start".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.document_start]
 }
 

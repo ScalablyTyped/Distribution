@@ -21,7 +21,7 @@ trait MeshComponentProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshComponent.html#material)
     */
-  var material: js.UndefOr[MeshMaterialProperties] = js.undefined
+  var material: js.UndefOr[MeshMaterialProperties | MeshMaterialMetallicRoughnessProperties] = js.undefined
   /**
     * Specifies the type of normals used for lighting. This determines whether the object has a smooth or an angular appearance. The following shading types are supported:
     *
@@ -41,7 +41,7 @@ object MeshComponentProperties {
   @scala.inline
   def apply(
     faces: Uint32Array | js.Array[Double] | Uint16Array = null,
-    material: MeshMaterialProperties = null,
+    material: MeshMaterialProperties | MeshMaterialMetallicRoughnessProperties = null,
     shading: source | flat | smooth = null
   ): MeshComponentProperties = {
     val __obj = js.Dynamic.literal()

@@ -15,7 +15,6 @@ object FetchInfo {
   @scala.inline
   def apply(dataTotalSize: Double): FetchInfo = {
     val __obj = js.Dynamic.literal(dataTotalSize = dataTotalSize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FetchInfo]
   }
 }

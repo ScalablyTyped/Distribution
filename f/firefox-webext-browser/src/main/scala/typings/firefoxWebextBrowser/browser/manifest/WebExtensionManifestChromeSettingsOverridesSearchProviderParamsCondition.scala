@@ -13,10 +13,8 @@ trait WebExtensionManifestChromeSettingsOverridesSearchProviderParamsCondition e
 
 object WebExtensionManifestChromeSettingsOverridesSearchProviderParamsCondition {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def pref: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.pref = "pref".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.pref]
   @scala.inline
-  def pref: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.pref = this.cast("pref")
-  @scala.inline
-  def purpose: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.purpose = this.cast("purpose")
+  def purpose: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.purpose = "purpose".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.purpose]
 }
 

@@ -15,7 +15,6 @@ object DictionaryResource {
   @scala.inline
   def apply(listOfflineMetadata: AnonCpksver => Request_[Metadata]): DictionaryResource = {
     val __obj = js.Dynamic.literal(listOfflineMetadata = js.Any.fromFunction1(listOfflineMetadata))
-  
     __obj.asInstanceOf[DictionaryResource]
   }
 }

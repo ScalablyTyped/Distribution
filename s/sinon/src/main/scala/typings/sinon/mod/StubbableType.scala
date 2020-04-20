@@ -22,7 +22,7 @@ trait StubbableType[TType] extends js.Object {
     * A constructor function can control which objects are recognized as its instances by
     * 'instanceof' by overriding this method.
     */
-  @JSName(scala.scalajs.js.Symbol.hasInstance)
+  @JSName(js.Symbol.hasInstance)
   var hasInstance: js.Function1[/* value */ js.Any, Boolean] = js.native
   val length: Double = js.native
   /**

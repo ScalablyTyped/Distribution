@@ -13,7 +13,6 @@ object PickImplbeginsWith {
   @scala.inline
   def apply(beginsWith: String): PickImplbeginsWith = {
     val __obj = js.Dynamic.literal(beginsWith = beginsWith.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplbeginsWith]
   }
 }

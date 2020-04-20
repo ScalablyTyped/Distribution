@@ -12,7 +12,6 @@ object IWwwFormUrlDecoderRuntimeClassFactory {
   @scala.inline
   def apply(createWwwFormUrlDecoder: String => WwwFormUrlDecoder): IWwwFormUrlDecoderRuntimeClassFactory = {
     val __obj = js.Dynamic.literal(createWwwFormUrlDecoder = js.Any.fromFunction1(createWwwFormUrlDecoder))
-  
     __obj.asInstanceOf[IWwwFormUrlDecoderRuntimeClassFactory]
   }
 }

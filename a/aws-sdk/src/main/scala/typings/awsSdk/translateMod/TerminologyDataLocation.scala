@@ -20,7 +20,6 @@ object TerminologyDataLocation {
   @scala.inline
   def apply(Location: String, RepositoryType: String): TerminologyDataLocation = {
     val __obj = js.Dynamic.literal(Location = Location.asInstanceOf[js.Any], RepositoryType = RepositoryType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TerminologyDataLocation]
   }
 }

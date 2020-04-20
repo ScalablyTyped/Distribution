@@ -16,7 +16,6 @@ object DescribeDBSnapshotAttributesMessage {
   @scala.inline
   def apply(DBSnapshotIdentifier: String): DescribeDBSnapshotAttributesMessage = {
     val __obj = js.Dynamic.literal(DBSnapshotIdentifier = DBSnapshotIdentifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeDBSnapshotAttributesMessage]
   }
 }

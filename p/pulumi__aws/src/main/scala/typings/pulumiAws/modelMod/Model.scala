@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@pulumi/aws/apigateway/model", "Model")
+@JSImport("@pulumi/aws/apigatewayv2/model", "Model")
 @js.native
 class Model protected () extends CustomResource {
   /**
@@ -22,29 +22,29 @@ class Model protected () extends CustomResource {
   def this(name: String, args: ModelArgs) = this()
   def this(name: String, args: ModelArgs, opts: CustomResourceOptions) = this()
   /**
-    * The content type of the model
+    * The API identifier.
+    */
+  val apiId: Output_[String] = js.native
+  /**
+    * The content-type for the model, for example, `application/json`.
     */
   val contentType: Output_[String] = js.native
   /**
-    * The description of the model
+    * The description of the model.
     */
   val description: Output_[js.UndefOr[String]] = js.native
   /**
-    * The name of the model
+    * The name of the model. Must be alphanumeric.
     */
   val name: Output_[String] = js.native
   /**
-    * The ID of the associated REST API
+    * The schema for the model. This should be a [JSON schema draft 4](https://tools.ietf.org/html/draft-zyp-json-schema-04) model.
     */
-  val restApi: Output_[String] = js.native
-  /**
-    * The schema of the model in a JSON form
-    */
-  val schema: Output_[js.UndefOr[String]] = js.native
+  val schema: Output_[String] = js.native
 }
 
 /* static members */
-@JSImport("@pulumi/aws/apigateway/model", "Model")
+@JSImport("@pulumi/aws/apigatewayv2/model", "Model")
 @js.native
 object Model extends js.Object {
   /**
@@ -62,6 +62,6 @@ object Model extends js.Object {
     * Returns true if the given object is an instance of Model.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
-  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/model.Model */ Boolean = js.native
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/model.Model */ Boolean = js.native
 }
 

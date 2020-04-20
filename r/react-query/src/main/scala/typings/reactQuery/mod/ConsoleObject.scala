@@ -18,7 +18,6 @@ object ConsoleObject {
     warn: /* repeated */ js.Any => Unit
   ): ConsoleObject = {
     val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error), log = js.Any.fromFunction1(log), warn = js.Any.fromFunction1(warn))
-  
     __obj.asInstanceOf[ConsoleObject]
   }
 }

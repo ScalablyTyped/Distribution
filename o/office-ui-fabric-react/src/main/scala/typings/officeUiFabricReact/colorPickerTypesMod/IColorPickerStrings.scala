@@ -69,6 +69,15 @@ trait IColorPickerStrings extends js.Object {
     * @defaultvalue `'Saturation {0} brightness {1}'`
     */
   var svAriaValueFormat: js.UndefOr[String] = js.undefined
+  /**
+    * Label for the transparency text field.
+    * @defaultvalue Transparency
+    */
+  var transparency: js.UndefOr[String] = js.undefined
+  /**
+    * Customized aria-label for the transparency slider.
+    */
+  var transparencyAriaLabel: js.UndefOr[String] = js.undefined
 }
 
 object IColorPickerStrings {
@@ -85,7 +94,9 @@ object IColorPickerStrings {
     rootAriaLabelFormat: String = null,
     svAriaDescription: String = null,
     svAriaLabel: String = null,
-    svAriaValueFormat: String = null
+    svAriaValueFormat: String = null,
+    transparency: String = null,
+    transparencyAriaLabel: String = null
   ): IColorPickerStrings = {
     val __obj = js.Dynamic.literal()
     if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
@@ -100,6 +111,8 @@ object IColorPickerStrings {
     if (svAriaDescription != null) __obj.updateDynamic("svAriaDescription")(svAriaDescription.asInstanceOf[js.Any])
     if (svAriaLabel != null) __obj.updateDynamic("svAriaLabel")(svAriaLabel.asInstanceOf[js.Any])
     if (svAriaValueFormat != null) __obj.updateDynamic("svAriaValueFormat")(svAriaValueFormat.asInstanceOf[js.Any])
+    if (transparency != null) __obj.updateDynamic("transparency")(transparency.asInstanceOf[js.Any])
+    if (transparencyAriaLabel != null) __obj.updateDynamic("transparencyAriaLabel")(transparencyAriaLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColorPickerStrings]
   }
 }

@@ -23,7 +23,6 @@ object HeaderNameOptions {
   @scala.inline
   def apply(remaining: String, reset: String, total: String): HeaderNameOptions = {
     val __obj = js.Dynamic.literal(remaining = remaining.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HeaderNameOptions]
   }
 }

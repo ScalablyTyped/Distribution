@@ -43,7 +43,6 @@ object TextOutput {
     setMimeType: MimeType => TextOutput
   ): TextOutput = {
     val __obj = js.Dynamic.literal(append = js.Any.fromFunction1(append), clear = js.Any.fromFunction0(clear), downloadAsFile = js.Any.fromFunction1(downloadAsFile), getContent = js.Any.fromFunction0(getContent), getFileName = js.Any.fromFunction0(getFileName), getMimeType = js.Any.fromFunction0(getMimeType), setContent = js.Any.fromFunction1(setContent), setMimeType = js.Any.fromFunction1(setMimeType))
-  
     __obj.asInstanceOf[TextOutput]
   }
 }

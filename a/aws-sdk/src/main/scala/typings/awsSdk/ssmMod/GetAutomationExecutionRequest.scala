@@ -16,7 +16,6 @@ object GetAutomationExecutionRequest {
   @scala.inline
   def apply(AutomationExecutionId: AutomationExecutionId): GetAutomationExecutionRequest = {
     val __obj = js.Dynamic.literal(AutomationExecutionId = AutomationExecutionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetAutomationExecutionRequest]
   }
 }

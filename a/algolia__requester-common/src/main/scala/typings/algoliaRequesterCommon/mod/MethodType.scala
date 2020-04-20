@@ -14,14 +14,12 @@ trait MethodType extends js.Object
 
 object MethodType {
   @scala.inline
-  def DELETE: typings.algoliaRequesterCommon.algoliaRequesterCommonStrings.DELETE = this.cast("DELETE")
+  def DELETE: typings.algoliaRequesterCommon.algoliaRequesterCommonStrings.DELETE = "DELETE".asInstanceOf[typings.algoliaRequesterCommon.algoliaRequesterCommonStrings.DELETE]
   @scala.inline
-  def GET: typings.algoliaRequesterCommon.algoliaRequesterCommonStrings.GET = this.cast("GET")
+  def GET: typings.algoliaRequesterCommon.algoliaRequesterCommonStrings.GET = "GET".asInstanceOf[typings.algoliaRequesterCommon.algoliaRequesterCommonStrings.GET]
   @scala.inline
-  def POST: typings.algoliaRequesterCommon.algoliaRequesterCommonStrings.POST = this.cast("POST")
+  def POST: typings.algoliaRequesterCommon.algoliaRequesterCommonStrings.POST = "POST".asInstanceOf[typings.algoliaRequesterCommon.algoliaRequesterCommonStrings.POST]
   @scala.inline
-  def PUT: typings.algoliaRequesterCommon.algoliaRequesterCommonStrings.PUT = this.cast("PUT")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def PUT: typings.algoliaRequesterCommon.algoliaRequesterCommonStrings.PUT = "PUT".asInstanceOf[typings.algoliaRequesterCommon.algoliaRequesterCommonStrings.PUT]
 }
 

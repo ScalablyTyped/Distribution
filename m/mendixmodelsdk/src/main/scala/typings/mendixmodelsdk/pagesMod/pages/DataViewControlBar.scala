@@ -30,7 +30,7 @@ class DataViewControlBar protected () extends ControlBar {
   def closeButton(): js.Any = js.native
   def closeButton(newValue: ControlBarItem): js.Any = js.native
   @JSName("closeButton")
-  def closeButton_Union(): ControlBarItem | Null = js.native
+  def closeButton_Union: ControlBarItem | Null = js.native
 }
 
 /* static members */

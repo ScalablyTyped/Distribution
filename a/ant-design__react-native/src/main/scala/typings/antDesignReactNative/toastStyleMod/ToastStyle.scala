@@ -30,7 +30,6 @@ object ToastStyle {
     textToast: ViewStyle
   ): ToastStyle = {
     val __obj = js.Dynamic.literal(centering = centering.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], iconToast = iconToast.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], innerContainer = innerContainer.asInstanceOf[js.Any], innerWrap = innerWrap.asInstanceOf[js.Any], textToast = textToast.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ToastStyle]
   }
 }

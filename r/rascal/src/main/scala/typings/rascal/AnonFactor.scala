@@ -15,7 +15,6 @@ object AnonFactor {
   @scala.inline
   def apply(factor: Double, max: Double, min: Double, strategy: String): AnonFactor = {
     val __obj = js.Dynamic.literal(factor = factor.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], strategy = strategy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFactor]
   }
 }

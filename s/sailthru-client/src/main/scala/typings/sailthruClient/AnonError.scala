@@ -14,7 +14,6 @@ object AnonError {
   @scala.inline
   def apply(error: String, errormsg: String, statusCode: String): AnonError = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errormsg = errormsg.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonError]
   }
 }

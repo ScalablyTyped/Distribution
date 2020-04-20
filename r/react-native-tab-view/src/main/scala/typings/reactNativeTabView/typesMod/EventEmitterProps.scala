@@ -16,7 +16,6 @@ object EventEmitterProps {
   @scala.inline
   def apply(addListener: (enter, Listener) => Unit, removeListener: (enter, Listener) => Unit): EventEmitterProps = {
     val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction2(addListener), removeListener = js.Any.fromFunction2(removeListener))
-  
     __obj.asInstanceOf[EventEmitterProps]
   }
 }

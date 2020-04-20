@@ -16,7 +16,6 @@ object ReposListBranchesResponseItemProtection {
     required_status_checks: ReposListBranchesResponseItemProtectionRequiredStatusChecks
   ): ReposListBranchesResponseItemProtection = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], required_status_checks = required_status_checks.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReposListBranchesResponseItemProtection]
   }
 }

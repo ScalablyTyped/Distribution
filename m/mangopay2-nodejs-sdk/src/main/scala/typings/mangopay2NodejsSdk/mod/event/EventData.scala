@@ -24,7 +24,6 @@ object EventData {
   @scala.inline
   def apply(Date: Timestamp, EventType: EventType, ResourceId: String): EventData = {
     val __obj = js.Dynamic.literal(Date = Date.asInstanceOf[js.Any], EventType = EventType.asInstanceOf[js.Any], ResourceId = ResourceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventData]
   }
 }

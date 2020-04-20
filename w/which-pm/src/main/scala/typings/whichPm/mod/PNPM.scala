@@ -14,7 +14,6 @@ object PNPM {
   @scala.inline
   def apply(name: pnpm, version: String): PNPM = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PNPM]
   }
 }

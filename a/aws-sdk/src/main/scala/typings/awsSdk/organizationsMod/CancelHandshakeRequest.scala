@@ -16,7 +16,6 @@ object CancelHandshakeRequest {
   @scala.inline
   def apply(HandshakeId: HandshakeId): CancelHandshakeRequest = {
     val __obj = js.Dynamic.literal(HandshakeId = HandshakeId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CancelHandshakeRequest]
   }
 }

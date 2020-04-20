@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DescribeHumanLoopRequest extends js.Object {
   /**
-    * The unique name of the human loop.
+    * The name of the human loop that you want information about.
     */
   var HumanLoopName: typings.awsSdk.augmentedairuntimeMod.HumanLoopName = js.native
 }
@@ -16,7 +16,6 @@ object DescribeHumanLoopRequest {
   @scala.inline
   def apply(HumanLoopName: HumanLoopName): DescribeHumanLoopRequest = {
     val __obj = js.Dynamic.literal(HumanLoopName = HumanLoopName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeHumanLoopRequest]
   }
 }

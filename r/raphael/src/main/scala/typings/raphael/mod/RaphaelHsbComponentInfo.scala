@@ -23,7 +23,6 @@ object RaphaelHsbComponentInfo {
   @scala.inline
   def apply(b: Double, h: Double, s: Double): RaphaelHsbComponentInfo = {
     val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RaphaelHsbComponentInfo]
   }
 }

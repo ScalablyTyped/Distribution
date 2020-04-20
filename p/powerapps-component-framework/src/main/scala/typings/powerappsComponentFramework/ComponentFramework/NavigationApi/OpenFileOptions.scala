@@ -22,7 +22,6 @@ object OpenFileOptions {
   @scala.inline
   def apply(openMode: OpenFileMode): OpenFileOptions = {
     val __obj = js.Dynamic.literal(openMode = openMode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OpenFileOptions]
   }
 }

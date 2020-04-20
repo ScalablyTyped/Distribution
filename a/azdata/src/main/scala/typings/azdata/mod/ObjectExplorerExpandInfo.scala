@@ -15,7 +15,6 @@ object ObjectExplorerExpandInfo {
   @scala.inline
   def apply(errorMessage: String, nodePath: String, nodes: js.Array[NodeInfo], sessionId: String): ObjectExplorerExpandInfo = {
     val __obj = js.Dynamic.literal(errorMessage = errorMessage.asInstanceOf[js.Any], nodePath = nodePath.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], sessionId = sessionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ObjectExplorerExpandInfo]
   }
 }

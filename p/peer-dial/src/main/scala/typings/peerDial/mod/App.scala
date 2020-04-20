@@ -16,7 +16,6 @@ object App {
   @scala.inline
   def apply(allowStop: Boolean, launch: String => Unit, name: String, pid: String, state: String): App = {
     val __obj = js.Dynamic.literal(allowStop = allowStop.asInstanceOf[js.Any], launch = js.Any.fromFunction1(launch), name = name.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[App]
   }
 }

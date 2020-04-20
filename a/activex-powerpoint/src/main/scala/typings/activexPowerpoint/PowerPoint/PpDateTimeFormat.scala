@@ -40,36 +40,34 @@ trait PpDateTimeFormat extends js.Object
 
 object PpDateTimeFormat {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ppDateTimeFigureOut: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def ppDateTimeFigureOut: `14` = this.cast(14)
+  def ppDateTimeFormatMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def ppDateTimeFormatMixed: `-2` = this.cast(-2)
+  def ppDateTimeHmm: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def ppDateTimeHmm: `10` = this.cast(10)
+  def ppDateTimeHmmss: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def ppDateTimeHmmss: `11` = this.cast(11)
+  def ppDateTimeMMMMdyyyy: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def ppDateTimeMMMMdyyyy: `4` = this.cast(4)
+  def ppDateTimeMMMMyy: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def ppDateTimeMMMMyy: `6` = this.cast(6)
+  def ppDateTimeMMddyyHmm: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def ppDateTimeMMddyyHmm: `8` = this.cast(8)
+  def ppDateTimeMMddyyhmmAMPM: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def ppDateTimeMMddyyhmmAMPM: `9` = this.cast(9)
+  def ppDateTimeMMyy: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def ppDateTimeMMyy: `7` = this.cast(7)
+  def ppDateTimeMdyy: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def ppDateTimeMdyy: `1` = this.cast(1)
+  def ppDateTimedMMMMyyyy: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def ppDateTimedMMMMyyyy: `3` = this.cast(3)
+  def ppDateTimedMMMyy: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def ppDateTimedMMMyy: `5` = this.cast(5)
+  def ppDateTimeddddMMMMddyyyy: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def ppDateTimeddddMMMMddyyyy: `2` = this.cast(2)
+  def ppDateTimehmmAMPM: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def ppDateTimehmmAMPM: `12` = this.cast(12)
-  @scala.inline
-  def ppDateTimehmmssAMPM: `13` = this.cast(13)
+  def ppDateTimehmmssAMPM: `13` = 13.asInstanceOf[`13`]
 }
 

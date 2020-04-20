@@ -14,7 +14,6 @@ object PickImplpath {
   @scala.inline
   def apply(path: `false` | String): PickImplpath = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplpath]
   }
 }

@@ -60,7 +60,6 @@ object IJob {
     resume: () => Unit
   ): IJob = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), completed = completed.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], pause = js.Any.fromFunction0(pause), priority = priority.asInstanceOf[js.Any], resume = js.Any.fromFunction0(resume))
-  
     __obj.asInstanceOf[IJob]
   }
 }

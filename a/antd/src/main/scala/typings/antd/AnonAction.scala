@@ -13,7 +13,6 @@ object AnonAction {
   @scala.inline
   def apply(action: String, visibilityToggle: Boolean): AnonAction = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], visibilityToggle = visibilityToggle.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAction]
   }
 }

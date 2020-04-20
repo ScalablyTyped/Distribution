@@ -18,7 +18,6 @@ object SpanWatcher {
     onSpanRemoved: (Spannable, js.Any, Double, Double) => Unit
   ): SpanWatcher = {
     val __obj = js.Dynamic.literal(onSpanAdded = js.Any.fromFunction4(onSpanAdded), onSpanChanged = js.Any.fromFunction6(onSpanChanged), onSpanRemoved = js.Any.fromFunction4(onSpanRemoved))
-  
     __obj.asInstanceOf[SpanWatcher]
   }
 }

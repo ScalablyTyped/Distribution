@@ -13,7 +13,6 @@ object AnonCacheRequests {
   @scala.inline
   def apply(cacheRequests: Boolean, uniquifyIDs: Boolean): AnonCacheRequests = {
     val __obj = js.Dynamic.literal(cacheRequests = cacheRequests.asInstanceOf[js.Any], uniquifyIDs = uniquifyIDs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCacheRequests]
   }
 }

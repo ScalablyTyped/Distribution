@@ -21,7 +21,6 @@ object SignatureHelpCharacterTypedReason {
   @scala.inline
   def apply(kind: characterTyped, triggerCharacter: SignatureHelpTriggerCharacter): SignatureHelpCharacterTypedReason = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], triggerCharacter = triggerCharacter.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SignatureHelpCharacterTypedReason]
   }
 }

@@ -15,7 +15,6 @@ object RaphaelFontGlyph {
   @scala.inline
   def apply(d: String, w: Double): RaphaelFontGlyph = {
     val __obj = js.Dynamic.literal(d = d.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RaphaelFontGlyph]
   }
 }

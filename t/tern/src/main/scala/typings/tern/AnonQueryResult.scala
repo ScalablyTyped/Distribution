@@ -15,7 +15,6 @@ object AnonQueryResult {
   @scala.inline
   def apply(query: TypeQuery, result: TypeQueryResult): AnonQueryResult = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonQueryResult]
   }
 }

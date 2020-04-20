@@ -20,7 +20,6 @@ object ILevel {
   @scala.inline
   def apply(__type__ : level, level_id: Double): ILevel = {
     val __obj = js.Dynamic.literal(__type__ = __type__.asInstanceOf[js.Any], level_id = level_id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ILevel]
   }
 }

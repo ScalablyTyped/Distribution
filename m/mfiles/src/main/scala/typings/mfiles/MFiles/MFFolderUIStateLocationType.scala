@@ -42,38 +42,36 @@ trait MFFolderUIStateLocationType extends js.Object
 
 object MFFolderUIStateLocationType {
   @scala.inline
-  def ClearLocalCacheUI: `12` = this.cast(12)
+  def ClearLocalCacheUI: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def CollectionMembersUI: `10` = this.cast(10)
+  def CollectionMembersUI: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def HistoryUI: `8` = this.cast(8)
+  def HistoryUI: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def LocalTemporaryItemsContainer: `15` = this.cast(15)
+  def LocalTemporaryItemsContainer: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def ObjectFilesContainer: `5` = this.cast(5)
+  def ObjectFilesContainer: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def ObjectsContainer: `4` = this.cast(4)
+  def ObjectsContainer: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def PropertyFoldersContainer: `3` = this.cast(3)
+  def PropertyFoldersContainer: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def RelationshipsUIAllTab: `14` = this.cast(14)
+  def RelationshipsUIAllTab: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def RelationshipsUIFromTab: `9` = this.cast(9)
+  def RelationshipsUIFromTab: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def RelationshipsUIToTab: `13` = this.cast(13)
+  def RelationshipsUIToTab: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def RootFolder: `1` = this.cast(1)
+  def RootFolder: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def SearchResultsContainer: `7` = this.cast(7)
+  def SearchResultsContainer: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def SubobjectsUI: `11` = this.cast(11)
+  def SubobjectsUI: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def TraditionalFolder: `6` = this.cast(6)
+  def TraditionalFolder: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def Unknown: `0` = this.cast(0)
+  def Unknown: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def ViewFoldersContainer: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ViewFoldersContainer: `2` = 2.asInstanceOf[`2`]
 }
 

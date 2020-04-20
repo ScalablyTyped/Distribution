@@ -25,6 +25,7 @@ object mod extends js.Object {
   @js.native
   class Counter protected () extends js.Object {
     def this(initialValue: Double) = this()
+    def this(initialValue: ByteSource) = this()
     def increment(): Unit = js.native
     def setBytes(bytes: ByteSource): Unit = js.native
     def setValue(value: Double): Unit = js.native

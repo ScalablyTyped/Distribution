@@ -42,7 +42,6 @@ object ISpriteJSONSprite {
     trimmed: Boolean
   ): ISpriteJSONSprite = {
     val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any], rotated = rotated.asInstanceOf[js.Any], sourceSize = sourceSize.asInstanceOf[js.Any], spriteSourceSize = spriteSourceSize.asInstanceOf[js.Any], trimmed = trimmed.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISpriteJSONSprite]
   }
 }

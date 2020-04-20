@@ -29,7 +29,6 @@ object AnonHeaders {
   @scala.inline
   def apply(bytes: Double, headers: OutgoingHttpHeaders, raw: ServerResponse, status: Double): AnonHeaders = {
     val __obj = js.Dynamic.literal(bytes = bytes.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHeaders]
   }
 }

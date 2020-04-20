@@ -20,7 +20,6 @@ object UnassignPrivateIpAddressesRequest {
   @scala.inline
   def apply(NetworkInterfaceId: NetworkInterfaceId, PrivateIpAddresses: PrivateIpAddressStringList): UnassignPrivateIpAddressesRequest = {
     val __obj = js.Dynamic.literal(NetworkInterfaceId = NetworkInterfaceId.asInstanceOf[js.Any], PrivateIpAddresses = PrivateIpAddresses.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnassignPrivateIpAddressesRequest]
   }
 }

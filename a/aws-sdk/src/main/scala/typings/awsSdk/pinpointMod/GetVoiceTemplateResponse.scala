@@ -13,7 +13,6 @@ object GetVoiceTemplateResponse {
   @scala.inline
   def apply(VoiceTemplateResponse: VoiceTemplateResponse): GetVoiceTemplateResponse = {
     val __obj = js.Dynamic.literal(VoiceTemplateResponse = VoiceTemplateResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetVoiceTemplateResponse]
   }
 }

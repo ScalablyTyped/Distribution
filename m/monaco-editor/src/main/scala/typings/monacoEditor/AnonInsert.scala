@@ -14,7 +14,6 @@ object AnonInsert {
   @scala.inline
   def apply(insert: IRange, replace: IRange): AnonInsert = {
     val __obj = js.Dynamic.literal(insert = insert.asInstanceOf[js.Any], replace = replace.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonInsert]
   }
 }

@@ -15,16 +15,14 @@ trait URLParamsEncodingType extends js.Object
 
 object URLParamsEncodingType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def default: typings.pathParser.pathParserStrings.default = "default".asInstanceOf[typings.pathParser.pathParserStrings.default]
   @scala.inline
-  def default: typings.pathParser.pathParserStrings.default = this.cast("default")
+  def legacy: typings.pathParser.pathParserStrings.legacy = "legacy".asInstanceOf[typings.pathParser.pathParserStrings.legacy]
   @scala.inline
-  def legacy: typings.pathParser.pathParserStrings.legacy = this.cast("legacy")
+  def none: typings.pathParser.pathParserStrings.none = "none".asInstanceOf[typings.pathParser.pathParserStrings.none]
   @scala.inline
-  def none: typings.pathParser.pathParserStrings.none = this.cast("none")
+  def uri: typings.pathParser.pathParserStrings.uri = "uri".asInstanceOf[typings.pathParser.pathParserStrings.uri]
   @scala.inline
-  def uri: typings.pathParser.pathParserStrings.uri = this.cast("uri")
-  @scala.inline
-  def uriComponent: typings.pathParser.pathParserStrings.uriComponent = this.cast("uriComponent")
+  def uriComponent: typings.pathParser.pathParserStrings.uriComponent = "uriComponent".asInstanceOf[typings.pathParser.pathParserStrings.uriComponent]
 }
 

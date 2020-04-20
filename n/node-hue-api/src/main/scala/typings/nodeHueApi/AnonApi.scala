@@ -13,7 +13,6 @@ object AnonApi {
   @scala.inline
   def apply(api: String, software: String): AnonApi = {
     val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], software = software.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonApi]
   }
 }

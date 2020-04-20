@@ -13,7 +13,6 @@ object ExtensionTermManifest {
   @scala.inline
   def apply(mapped: AnonFrom): ExtensionTermManifest = {
     val __obj = js.Dynamic.literal(mapped = mapped.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExtensionTermManifest]
   }
 }

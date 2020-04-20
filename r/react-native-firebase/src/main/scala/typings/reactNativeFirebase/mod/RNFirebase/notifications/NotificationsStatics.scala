@@ -15,7 +15,6 @@ object NotificationsStatics {
   @scala.inline
   def apply(Android: AnonAction, Notification: Instantiable0[Notification]): NotificationsStatics = {
     val __obj = js.Dynamic.literal(Android = Android.asInstanceOf[js.Any], Notification = Notification.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NotificationsStatics]
   }
 }

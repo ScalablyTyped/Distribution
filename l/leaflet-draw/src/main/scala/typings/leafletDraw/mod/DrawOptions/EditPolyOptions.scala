@@ -41,7 +41,6 @@ object EditPolyOptions {
     remove: js.Any
   ): EditPolyOptions = {
     val __obj = js.Dynamic.literal(allowIntersection = allowIntersection.asInstanceOf[js.Any], edit = edit.asInstanceOf[js.Any], featureGroup = featureGroup.asInstanceOf[js.Any], poly = poly.asInstanceOf[js.Any], remove = remove.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EditPolyOptions]
   }
 }

@@ -28,7 +28,6 @@ object ProductInformationFilter {
     ProductInformationFilterValue: StringList
   ): ProductInformationFilter = {
     val __obj = js.Dynamic.literal(ProductInformationFilterComparator = ProductInformationFilterComparator.asInstanceOf[js.Any], ProductInformationFilterName = ProductInformationFilterName.asInstanceOf[js.Any], ProductInformationFilterValue = ProductInformationFilterValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProductInformationFilter]
   }
 }

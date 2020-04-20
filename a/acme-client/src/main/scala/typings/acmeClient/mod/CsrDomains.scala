@@ -13,7 +13,6 @@ object CsrDomains {
   @scala.inline
   def apply(altNames: js.Array[String], commonName: String): CsrDomains = {
     val __obj = js.Dynamic.literal(altNames = altNames.asInstanceOf[js.Any], commonName = commonName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CsrDomains]
   }
 }

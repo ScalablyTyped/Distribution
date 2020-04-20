@@ -14,14 +14,12 @@ trait TravelRestriction extends js.Object
 
 object TravelRestriction {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ferries: typings.googleMaps.googleMapsStrings.ferries = "ferries".asInstanceOf[typings.googleMaps.googleMapsStrings.ferries]
   @scala.inline
-  def ferries: typings.googleMaps.googleMapsStrings.ferries = this.cast("ferries")
+  def highways: typings.googleMaps.googleMapsStrings.highways = "highways".asInstanceOf[typings.googleMaps.googleMapsStrings.highways]
   @scala.inline
-  def highways: typings.googleMaps.googleMapsStrings.highways = this.cast("highways")
+  def indoor: typings.googleMaps.googleMapsStrings.indoor = "indoor".asInstanceOf[typings.googleMaps.googleMapsStrings.indoor]
   @scala.inline
-  def indoor: typings.googleMaps.googleMapsStrings.indoor = this.cast("indoor")
-  @scala.inline
-  def tolls: typings.googleMaps.googleMapsStrings.tolls = this.cast("tolls")
+  def tolls: typings.googleMaps.googleMapsStrings.tolls = "tolls".asInstanceOf[typings.googleMaps.googleMapsStrings.tolls]
 }
 

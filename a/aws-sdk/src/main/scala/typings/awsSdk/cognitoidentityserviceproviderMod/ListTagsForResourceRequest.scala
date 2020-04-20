@@ -16,7 +16,6 @@ object ListTagsForResourceRequest {
   @scala.inline
   def apply(ResourceArn: ArnType): ListTagsForResourceRequest = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListTagsForResourceRequest]
   }
 }

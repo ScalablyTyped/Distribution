@@ -48,7 +48,6 @@ object Webhook {
     webhookUrl: WebhookUrl
   ): Webhook = {
     val __obj = js.Dynamic.literal(branchName = branchName.asInstanceOf[js.Any], createTime = createTime.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], updateTime = updateTime.asInstanceOf[js.Any], webhookArn = webhookArn.asInstanceOf[js.Any], webhookId = webhookId.asInstanceOf[js.Any], webhookUrl = webhookUrl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Webhook]
   }
 }

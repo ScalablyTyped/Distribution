@@ -19,7 +19,6 @@ object AnonAppBadge {
   @scala.inline
   def apply(appBadge: Double, badge: Double): AnonAppBadge = {
     val __obj = js.Dynamic.literal(appBadge = appBadge.asInstanceOf[js.Any], badge = badge.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAppBadge]
   }
 }

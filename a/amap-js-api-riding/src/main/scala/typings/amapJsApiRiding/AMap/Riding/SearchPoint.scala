@@ -13,7 +13,6 @@ object SearchPoint {
   @scala.inline
   def apply(keyword: String): SearchPoint = {
     val __obj = js.Dynamic.literal(keyword = keyword.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SearchPoint]
   }
 }

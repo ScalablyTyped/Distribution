@@ -21,7 +21,6 @@ object ToolBarProps {
   @scala.inline
   def apply(components: ButtonGroupPropssearchPan, event: AnonCloseInsertModal): ToolBarProps = {
     val __obj = js.Dynamic.literal(components = components.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ToolBarProps]
   }
 }

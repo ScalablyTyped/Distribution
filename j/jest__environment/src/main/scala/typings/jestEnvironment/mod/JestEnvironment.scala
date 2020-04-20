@@ -21,7 +21,7 @@ class JestEnvironment protected () extends js.Object {
   var fakeTimersLolex: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LolexFakeTimers */ js.Any) | Null = js.native
   var getVmContext: js.UndefOr[js.Function0[Context | Null]] = js.native
   var global: Global = js.native
-  var handleTestEvent: js.UndefOr[js.Function2[/* event */ Event, /* state */ State, Unit]] = js.native
+  var handleTestEvent: js.UndefOr[js.Function2[/* event */ Event, /* state */ State, Unit | js.Promise[Unit]]] = js.native
   var moduleMocker: ModuleMocker | Null = js.native
   /**
     * @deprecated implement getVmContext instead

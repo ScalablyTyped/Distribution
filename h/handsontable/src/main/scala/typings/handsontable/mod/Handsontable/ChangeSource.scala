@@ -37,54 +37,52 @@ trait ChangeSource extends js.Object
 
 object ChangeSource {
   @scala.inline
-  def AutofillDotfill: typings.handsontable.handsontableStrings.AutofillDotfill = this.cast("Autofill.fill")
+  def AutofillDotfill: typings.handsontable.handsontableStrings.AutofillDotfill = "Autofill.fill".asInstanceOf[typings.handsontable.handsontableStrings.AutofillDotfill]
   @scala.inline
-  def ColumnSummaryDotreset: typings.handsontable.handsontableStrings.ColumnSummaryDotreset = this.cast("ColumnSummary.reset")
+  def ColumnSummaryDotreset: typings.handsontable.handsontableStrings.ColumnSummaryDotreset = "ColumnSummary.reset".asInstanceOf[typings.handsontable.handsontableStrings.ColumnSummaryDotreset]
   @scala.inline
-  def ColumnSummaryDotset: typings.handsontable.handsontableStrings.ColumnSummaryDotset = this.cast("ColumnSummary.set")
+  def ColumnSummaryDotset: typings.handsontable.handsontableStrings.ColumnSummaryDotset = "ColumnSummary.set".asInstanceOf[typings.handsontable.handsontableStrings.ColumnSummaryDotset]
   @scala.inline
-  def ContextMenuDotclearColumns: typings.handsontable.handsontableStrings.ContextMenuDotclearColumns = this.cast("ContextMenu.clearColumns")
+  def ContextMenuDotclearColumns: typings.handsontable.handsontableStrings.ContextMenuDotclearColumns = "ContextMenu.clearColumns".asInstanceOf[typings.handsontable.handsontableStrings.ContextMenuDotclearColumns]
   @scala.inline
-  def ContextMenuDotcolumnLeft: typings.handsontable.handsontableStrings.ContextMenuDotcolumnLeft = this.cast("ContextMenu.columnLeft")
+  def ContextMenuDotcolumnLeft: typings.handsontable.handsontableStrings.ContextMenuDotcolumnLeft = "ContextMenu.columnLeft".asInstanceOf[typings.handsontable.handsontableStrings.ContextMenuDotcolumnLeft]
   @scala.inline
-  def ContextMenuDotcolumnRight: typings.handsontable.handsontableStrings.ContextMenuDotcolumnRight = this.cast("ContextMenu.columnRight")
+  def ContextMenuDotcolumnRight: typings.handsontable.handsontableStrings.ContextMenuDotcolumnRight = "ContextMenu.columnRight".asInstanceOf[typings.handsontable.handsontableStrings.ContextMenuDotcolumnRight]
   @scala.inline
-  def ContextMenuDotremoveColumn: typings.handsontable.handsontableStrings.ContextMenuDotremoveColumn = this.cast("ContextMenu.removeColumn")
+  def ContextMenuDotremoveColumn: typings.handsontable.handsontableStrings.ContextMenuDotremoveColumn = "ContextMenu.removeColumn".asInstanceOf[typings.handsontable.handsontableStrings.ContextMenuDotremoveColumn]
   @scala.inline
-  def ContextMenuDotremoveRow: typings.handsontable.handsontableStrings.ContextMenuDotremoveRow = this.cast("ContextMenu.removeRow")
+  def ContextMenuDotremoveRow: typings.handsontable.handsontableStrings.ContextMenuDotremoveRow = "ContextMenu.removeRow".asInstanceOf[typings.handsontable.handsontableStrings.ContextMenuDotremoveRow]
   @scala.inline
-  def ContextMenuDotrowAbove: typings.handsontable.handsontableStrings.ContextMenuDotrowAbove = this.cast("ContextMenu.rowAbove")
+  def ContextMenuDotrowAbove: typings.handsontable.handsontableStrings.ContextMenuDotrowAbove = "ContextMenu.rowAbove".asInstanceOf[typings.handsontable.handsontableStrings.ContextMenuDotrowAbove]
   @scala.inline
-  def ContextMenuDotrowBelow: typings.handsontable.handsontableStrings.ContextMenuDotrowBelow = this.cast("ContextMenu.rowBelow")
+  def ContextMenuDotrowBelow: typings.handsontable.handsontableStrings.ContextMenuDotrowBelow = "ContextMenu.rowBelow".asInstanceOf[typings.handsontable.handsontableStrings.ContextMenuDotrowBelow]
   @scala.inline
-  def CopyPasteDotpaste: typings.handsontable.handsontableStrings.CopyPasteDotpaste = this.cast("CopyPaste.paste")
+  def CopyPasteDotpaste: typings.handsontable.handsontableStrings.CopyPasteDotpaste = "CopyPaste.paste".asInstanceOf[typings.handsontable.handsontableStrings.CopyPasteDotpaste]
   @scala.inline
-  def GantChartDotloadData: typings.handsontable.handsontableStrings.GantChartDotloadData = this.cast("GantChart.loadData")
+  def GantChartDotloadData: typings.handsontable.handsontableStrings.GantChartDotloadData = "GantChart.loadData".asInstanceOf[typings.handsontable.handsontableStrings.GantChartDotloadData]
   @scala.inline
-  def ObserveChangesDotchange: typings.handsontable.handsontableStrings.ObserveChangesDotchange = this.cast("ObserveChanges.change")
+  def ObserveChangesDotchange: typings.handsontable.handsontableStrings.ObserveChangesDotchange = "ObserveChanges.change".asInstanceOf[typings.handsontable.handsontableStrings.ObserveChangesDotchange]
   @scala.inline
-  def UndoRedoDotredo: typings.handsontable.handsontableStrings.UndoRedoDotredo = this.cast("UndoRedo.redo")
+  def UndoRedoDotredo: typings.handsontable.handsontableStrings.UndoRedoDotredo = "UndoRedo.redo".asInstanceOf[typings.handsontable.handsontableStrings.UndoRedoDotredo]
   @scala.inline
-  def UndoRedoDotundo: typings.handsontable.handsontableStrings.UndoRedoDotundo = this.cast("UndoRedo.undo")
+  def UndoRedoDotundo: typings.handsontable.handsontableStrings.UndoRedoDotundo = "UndoRedo.undo".asInstanceOf[typings.handsontable.handsontableStrings.UndoRedoDotundo]
   @scala.inline
-  def auto: typings.handsontable.handsontableStrings.auto = this.cast("auto")
+  def auto: typings.handsontable.handsontableStrings.auto = "auto".asInstanceOf[typings.handsontable.handsontableStrings.auto]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dateValidate: typings.handsontable.handsontableStrings.dateValidate = "dateValidate".asInstanceOf[typings.handsontable.handsontableStrings.dateValidate]
   @scala.inline
-  def dateValidate: typings.handsontable.handsontableStrings.dateValidate = this.cast("dateValidate")
+  def edit: typings.handsontable.handsontableStrings.edit = "edit".asInstanceOf[typings.handsontable.handsontableStrings.edit]
   @scala.inline
-  def edit: typings.handsontable.handsontableStrings.edit = this.cast("edit")
+  def loadData: typings.handsontable.handsontableStrings.loadData = "loadData".asInstanceOf[typings.handsontable.handsontableStrings.loadData]
   @scala.inline
-  def loadData: typings.handsontable.handsontableStrings.loadData = this.cast("loadData")
+  def populateFromArray: typings.handsontable.handsontableStrings.populateFromArray = "populateFromArray".asInstanceOf[typings.handsontable.handsontableStrings.populateFromArray]
   @scala.inline
-  def populateFromArray: typings.handsontable.handsontableStrings.populateFromArray = this.cast("populateFromArray")
+  def spliceCol: typings.handsontable.handsontableStrings.spliceCol = "spliceCol".asInstanceOf[typings.handsontable.handsontableStrings.spliceCol]
   @scala.inline
-  def spliceCol: typings.handsontable.handsontableStrings.spliceCol = this.cast("spliceCol")
+  def spliceRow: typings.handsontable.handsontableStrings.spliceRow = "spliceRow".asInstanceOf[typings.handsontable.handsontableStrings.spliceRow]
   @scala.inline
-  def spliceRow: typings.handsontable.handsontableStrings.spliceRow = this.cast("spliceRow")
+  def timeValidate: typings.handsontable.handsontableStrings.timeValidate = "timeValidate".asInstanceOf[typings.handsontable.handsontableStrings.timeValidate]
   @scala.inline
-  def timeValidate: typings.handsontable.handsontableStrings.timeValidate = this.cast("timeValidate")
-  @scala.inline
-  def validateCells: typings.handsontable.handsontableStrings.validateCells = this.cast("validateCells")
+  def validateCells: typings.handsontable.handsontableStrings.validateCells = "validateCells".asInstanceOf[typings.handsontable.handsontableStrings.validateCells]
 }
 

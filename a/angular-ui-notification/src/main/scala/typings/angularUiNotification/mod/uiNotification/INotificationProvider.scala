@@ -12,7 +12,6 @@ object INotificationProvider {
   @scala.inline
   def apply(setOptions: IGlobalMessageOptions => Unit): INotificationProvider = {
     val __obj = js.Dynamic.literal(setOptions = js.Any.fromFunction1(setOptions))
-  
     __obj.asInstanceOf[INotificationProvider]
   }
 }

@@ -16,7 +16,6 @@ object DeleteMatchmakingRuleSetInput {
   @scala.inline
   def apply(Name: MatchmakingRuleSetName): DeleteMatchmakingRuleSetInput = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteMatchmakingRuleSetInput]
   }
 }

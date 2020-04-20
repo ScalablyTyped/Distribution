@@ -16,12 +16,10 @@ trait ListingEmptinessState extends js.Object
 
 object ListingEmptinessState {
   @scala.inline
-  def Empty: `3` = this.cast(3)
+  def Empty: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def NotEmpty: `2` = this.cast(2)
+  def NotEmpty: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def NotYetKnown: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def NotYetKnown: `1` = 1.asInstanceOf[`1`]
 }
 

@@ -13,7 +13,6 @@ object ScaleMultiDataRef {
   @scala.inline
   def apply(fields: js.Array[(js.Array[String | Double | Boolean]) | ScaleDataRef | SignalRef]): ScaleMultiDataRef = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScaleMultiDataRef]
   }
 }

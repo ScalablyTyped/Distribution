@@ -22,7 +22,6 @@ object AnonBBDETB {
     USD: js.Array[String]
   ): AnonBBDETB = {
     val __obj = js.Dynamic.literal(BBD = BBD.asInstanceOf[js.Any], ETB = ETB.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any], SOS = SOS.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBBDETB]
   }
 }

@@ -18,7 +18,6 @@ object DbJsStatic {
     open: OpenOptions => js.Promise[Server]
   ): DbJsStatic = {
     val __obj = js.Dynamic.literal(cmp = js.Any.fromFunction2(cmp), delete = js.Any.fromFunction1(delete), open = js.Any.fromFunction1(open))
-  
     __obj.asInstanceOf[DbJsStatic]
   }
 }

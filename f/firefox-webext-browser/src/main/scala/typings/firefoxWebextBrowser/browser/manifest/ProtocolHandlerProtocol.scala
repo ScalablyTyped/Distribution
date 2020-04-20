@@ -35,56 +35,54 @@ trait ProtocolHandlerProtocol extends js.Object
 
 object ProtocolHandlerProtocol {
   @scala.inline
-  def bitcoin: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.bitcoin = this.cast("bitcoin")
+  def bitcoin: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.bitcoin = "bitcoin".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.bitcoin]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dat: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.dat = "dat".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.dat]
   @scala.inline
-  def dat: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.dat = this.cast("dat")
+  def dweb: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.dweb = "dweb".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.dweb]
   @scala.inline
-  def dweb: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.dweb = this.cast("dweb")
+  def geo: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.geo = "geo".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.geo]
   @scala.inline
-  def geo: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.geo = this.cast("geo")
+  def gopher: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.gopher = "gopher".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.gopher]
   @scala.inline
-  def gopher: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.gopher = this.cast("gopher")
+  def im: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.im = "im".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.im]
   @scala.inline
-  def im: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.im = this.cast("im")
+  def ipfs: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.ipfs = "ipfs".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.ipfs]
   @scala.inline
-  def ipfs: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.ipfs = this.cast("ipfs")
+  def ipns: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.ipns = "ipns".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.ipns]
   @scala.inline
-  def ipns: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.ipns = this.cast("ipns")
+  def irc: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.irc = "irc".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.irc]
   @scala.inline
-  def irc: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.irc = this.cast("irc")
+  def ircs: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.ircs = "ircs".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.ircs]
   @scala.inline
-  def ircs: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.ircs = this.cast("ircs")
+  def magnet: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.magnet = "magnet".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.magnet]
   @scala.inline
-  def magnet: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.magnet = this.cast("magnet")
+  def mailto: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mailto = "mailto".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mailto]
   @scala.inline
-  def mailto: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mailto = this.cast("mailto")
+  def mms: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mms = "mms".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mms]
   @scala.inline
-  def mms: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mms = this.cast("mms")
+  def news: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.news = "news".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.news]
   @scala.inline
-  def news: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.news = this.cast("news")
+  def nntp: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.nntp = "nntp".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.nntp]
   @scala.inline
-  def nntp: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.nntp = this.cast("nntp")
+  def sip: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.sip = "sip".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.sip]
   @scala.inline
-  def sip: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.sip = this.cast("sip")
+  def sms: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.sms = "sms".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.sms]
   @scala.inline
-  def sms: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.sms = this.cast("sms")
+  def smsto: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.smsto = "smsto".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.smsto]
   @scala.inline
-  def smsto: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.smsto = this.cast("smsto")
+  def ssb: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.ssb = "ssb".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.ssb]
   @scala.inline
-  def ssb: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.ssb = this.cast("ssb")
+  def ssh: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.ssh = "ssh".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.ssh]
   @scala.inline
-  def ssh: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.ssh = this.cast("ssh")
+  def tel: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tel = "tel".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tel]
   @scala.inline
-  def tel: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tel = this.cast("tel")
+  def urn: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.urn = "urn".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.urn]
   @scala.inline
-  def urn: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.urn = this.cast("urn")
+  def webcal: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.webcal = "webcal".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.webcal]
   @scala.inline
-  def webcal: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.webcal = this.cast("webcal")
+  def wtai: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.wtai = "wtai".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.wtai]
   @scala.inline
-  def wtai: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.wtai = this.cast("wtai")
-  @scala.inline
-  def xmpp: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.xmpp = this.cast("xmpp")
+  def xmpp: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.xmpp = "xmpp".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.xmpp]
 }
 

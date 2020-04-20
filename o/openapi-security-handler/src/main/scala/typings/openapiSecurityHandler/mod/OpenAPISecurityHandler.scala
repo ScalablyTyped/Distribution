@@ -14,7 +14,6 @@ object OpenAPISecurityHandler {
   @scala.inline
   def apply(handle: js.Any => js.Promise[Unit], operationSecurity: js.Any, securitySets: js.Any): OpenAPISecurityHandler = {
     val __obj = js.Dynamic.literal(handle = js.Any.fromFunction1(handle), operationSecurity = operationSecurity.asInstanceOf[js.Any], securitySets = securitySets.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OpenAPISecurityHandler]
   }
 }

@@ -12,7 +12,6 @@ object KinesisStreamEvent {
   @scala.inline
   def apply(Records: js.Array[KinesisStreamRecord]): KinesisStreamEvent = {
     val __obj = js.Dynamic.literal(Records = Records.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KinesisStreamEvent]
   }
 }

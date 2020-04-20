@@ -16,7 +16,6 @@ object AxiosCancelOptions {
   @scala.inline
   def apply(debug: Boolean): AxiosCancelOptions = {
     val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AxiosCancelOptions]
   }
 }

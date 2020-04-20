@@ -15,7 +15,6 @@ object TaskInfoObject {
   @scala.inline
   def apply(bytesWritten: Double, id: String, percent: Double, totalBytes: Double): TaskInfoObject = {
     val __obj = js.Dynamic.literal(bytesWritten = bytesWritten.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any], totalBytes = totalBytes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TaskInfoObject]
   }
 }

@@ -34,7 +34,6 @@ object ServiceAccountTokenProjection {
   @scala.inline
   def apply(audience: String, expirationSeconds: Double, path: String): ServiceAccountTokenProjection = {
     val __obj = js.Dynamic.literal(audience = audience.asInstanceOf[js.Any], expirationSeconds = expirationSeconds.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ServiceAccountTokenProjection]
   }
 }

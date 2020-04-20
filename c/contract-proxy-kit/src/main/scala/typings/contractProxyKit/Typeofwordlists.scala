@@ -27,7 +27,6 @@ object Typeofwordlists {
     zh_tw: Wordlist
   ): Typeofwordlists = {
     val __obj = js.Dynamic.literal(en = en.asInstanceOf[js.Any], it = it.asInstanceOf[js.Any], ja = ja.asInstanceOf[js.Any], ko = ko.asInstanceOf[js.Any], zh = zh.asInstanceOf[js.Any], zh_cn = zh_cn.asInstanceOf[js.Any], zh_tw = zh_tw.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Typeofwordlists]
   }
 }

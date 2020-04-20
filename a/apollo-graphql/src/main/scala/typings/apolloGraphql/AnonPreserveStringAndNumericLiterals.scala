@@ -12,7 +12,6 @@ object AnonPreserveStringAndNumericLiterals {
   @scala.inline
   def apply(preserveStringAndNumericLiterals: Boolean): AnonPreserveStringAndNumericLiterals = {
     val __obj = js.Dynamic.literal(preserveStringAndNumericLiterals = preserveStringAndNumericLiterals.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPreserveStringAndNumericLiterals]
   }
 }

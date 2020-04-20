@@ -14,7 +14,6 @@ object AnonPhone {
   @scala.inline
   def apply(device: js.Any, phone: js.Any, tablet: js.Any): AnonPhone = {
     val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], tablet = tablet.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPhone]
   }
 }

@@ -1,7 +1,7 @@
 package typings.plotlyJs.mod
 
-import typings.plotlyJs.PartialAnnotationsArrowcolor
-import typings.plotlyJs.PartialCameraCenter
+import typings.plotlyJs.PartialAnnotationsAlign
+import typings.plotlyJs.PartialCamera
 import typings.plotlyJs.PartialDomain
 import typings.plotlyJs.PartialPoint
 import typings.plotlyJs.PartialSceneAxisBackgroundcolor
@@ -20,11 +20,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Scene extends js.Object {
-  var annotations: PartialAnnotationsArrowcolor | js.Array[PartialAnnotationsArrowcolor]
+  var annotations: PartialAnnotationsAlign | js.Array[PartialAnnotationsAlign]
   var aspectmode: auto | cube | data | manual
   var aspectratio: PartialPoint
   var bgcolor: String
-  var camera: PartialCameraCenter
+  var camera: PartialCamera
   var captureevents: Boolean
   var domain: PartialDomain
   var dragmode: orbit | turntable | zoom | pan | `false`
@@ -37,11 +37,11 @@ trait Scene extends js.Object {
 object Scene {
   @scala.inline
   def apply(
-    annotations: PartialAnnotationsArrowcolor | js.Array[PartialAnnotationsArrowcolor],
+    annotations: PartialAnnotationsAlign | js.Array[PartialAnnotationsAlign],
     aspectmode: auto | cube | data | manual,
     aspectratio: PartialPoint,
     bgcolor: String,
-    camera: PartialCameraCenter,
+    camera: PartialCamera,
     captureevents: Boolean,
     domain: PartialDomain,
     dragmode: orbit | turntable | zoom | pan | `false`,
@@ -51,7 +51,6 @@ object Scene {
     zaxis: PartialSceneAxisBackgroundcolor
   ): Scene = {
     val __obj = js.Dynamic.literal(annotations = annotations.asInstanceOf[js.Any], aspectmode = aspectmode.asInstanceOf[js.Any], aspectratio = aspectratio.asInstanceOf[js.Any], bgcolor = bgcolor.asInstanceOf[js.Any], camera = camera.asInstanceOf[js.Any], captureevents = captureevents.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], dragmode = dragmode.asInstanceOf[js.Any], hovermode = hovermode.asInstanceOf[js.Any], xaxis = xaxis.asInstanceOf[js.Any], yaxis = yaxis.asInstanceOf[js.Any], zaxis = zaxis.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Scene]
   }
 }

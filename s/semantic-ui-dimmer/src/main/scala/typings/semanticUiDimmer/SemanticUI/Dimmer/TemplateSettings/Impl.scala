@@ -13,7 +13,6 @@ object Impl {
   @scala.inline
   def apply(dimmer: () => JQuery): Impl = {
     val __obj = js.Dynamic.literal(dimmer = js.Any.fromFunction0(dimmer))
-  
     __obj.asInstanceOf[Impl]
   }
 }

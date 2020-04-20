@@ -30,7 +30,6 @@ object FixedHeaderProps {
     stickyOffsets: StickyOffsets
   ): FixedHeaderProps[RecordType] = {
     val __obj = js.Dynamic.literal(colWidths = colWidths.asInstanceOf[js.Any], columCount = columCount.asInstanceOf[js.Any], columns = columns.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], flattenColumns = flattenColumns.asInstanceOf[js.Any], onHeaderRow = js.Any.fromFunction2(onHeaderRow), stickyOffsets = stickyOffsets.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FixedHeaderProps[RecordType]]
   }
 }

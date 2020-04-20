@@ -16,7 +16,6 @@ object DeregisterElasticIpRequest {
   @scala.inline
   def apply(ElasticIp: String): DeregisterElasticIpRequest = {
     val __obj = js.Dynamic.literal(ElasticIp = ElasticIp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeregisterElasticIpRequest]
   }
 }

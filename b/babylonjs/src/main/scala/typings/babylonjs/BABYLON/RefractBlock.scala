@@ -15,18 +15,18 @@ class RefractBlock protected () extends NodeMaterialBlock {
   /**
     * Gets the incident component
     */
-  def incident(): NodeMaterialConnectionPoint = js.native
+  def incident: NodeMaterialConnectionPoint = js.native
   /**
     * Gets the index of refraction component
     */
-  def ior(): NodeMaterialConnectionPoint = js.native
+  def ior: NodeMaterialConnectionPoint = js.native
   /**
     * Gets the normal component
     */
-  def normal(): NodeMaterialConnectionPoint = js.native
+  def normal: NodeMaterialConnectionPoint = js.native
   /**
     * Gets the output component
     */
-  def output(): NodeMaterialConnectionPoint = js.native
+  def output: NodeMaterialConnectionPoint = js.native
 }
 

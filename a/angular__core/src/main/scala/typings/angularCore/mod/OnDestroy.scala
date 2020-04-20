@@ -16,7 +16,6 @@ object OnDestroy {
   @scala.inline
   def apply(ngOnDestroy: () => Unit): OnDestroy = {
     val __obj = js.Dynamic.literal(ngOnDestroy = js.Any.fromFunction0(ngOnDestroy))
-  
     __obj.asInstanceOf[OnDestroy]
   }
 }

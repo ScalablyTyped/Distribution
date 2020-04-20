@@ -16,7 +16,6 @@ object DeletePresetRequest {
   @scala.inline
   def apply(Id: Id): DeletePresetRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeletePresetRequest]
   }
 }

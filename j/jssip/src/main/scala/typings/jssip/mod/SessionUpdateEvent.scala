@@ -14,7 +14,6 @@ object SessionUpdateEvent {
   @scala.inline
   def apply(callback: () => Unit, reject: SessionRejectOptions => Unit, request: IncomingRequest): SessionUpdateEvent = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction0(callback), reject = js.Any.fromFunction1(reject), request = request.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SessionUpdateEvent]
   }
 }

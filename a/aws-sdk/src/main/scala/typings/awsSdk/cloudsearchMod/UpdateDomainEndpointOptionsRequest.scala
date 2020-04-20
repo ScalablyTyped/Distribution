@@ -20,7 +20,6 @@ object UpdateDomainEndpointOptionsRequest {
   @scala.inline
   def apply(DomainEndpointOptions: DomainEndpointOptions, DomainName: DomainName): UpdateDomainEndpointOptionsRequest = {
     val __obj = js.Dynamic.literal(DomainEndpointOptions = DomainEndpointOptions.asInstanceOf[js.Any], DomainName = DomainName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateDomainEndpointOptionsRequest]
   }
 }

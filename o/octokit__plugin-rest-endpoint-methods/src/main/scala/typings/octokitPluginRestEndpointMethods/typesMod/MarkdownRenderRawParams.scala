@@ -12,7 +12,6 @@ object MarkdownRenderRawParams {
   @scala.inline
   def apply(data: String): MarkdownRenderRawParams = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MarkdownRenderRawParams]
   }
 }

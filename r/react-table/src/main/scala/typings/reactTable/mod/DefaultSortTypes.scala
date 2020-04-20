@@ -13,12 +13,10 @@ trait DefaultSortTypes extends js.Object
 
 object DefaultSortTypes {
   @scala.inline
-  def alphanumeric: typings.reactTable.reactTableStrings.alphanumeric = this.cast("alphanumeric")
+  def alphanumeric: typings.reactTable.reactTableStrings.alphanumeric = "alphanumeric".asInstanceOf[typings.reactTable.reactTableStrings.alphanumeric]
   @scala.inline
-  def basic: typings.reactTable.reactTableStrings.basic = this.cast("basic")
+  def basic: typings.reactTable.reactTableStrings.basic = "basic".asInstanceOf[typings.reactTable.reactTableStrings.basic]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def datetime: typings.reactTable.reactTableStrings.datetime = this.cast("datetime")
+  def datetime: typings.reactTable.reactTableStrings.datetime = "datetime".asInstanceOf[typings.reactTable.reactTableStrings.datetime]
 }
 

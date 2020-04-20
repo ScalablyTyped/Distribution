@@ -18,22 +18,20 @@ trait BuiltinHelperName extends js.Object
 
 object BuiltinHelperName {
   @scala.inline
-  def blockHelperMissing: typings.handlebars.handlebarsStrings.blockHelperMissing = this.cast("blockHelperMissing")
+  def blockHelperMissing: typings.handlebars.handlebarsStrings.blockHelperMissing = "blockHelperMissing".asInstanceOf[typings.handlebars.handlebarsStrings.blockHelperMissing]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def each: typings.handlebars.handlebarsStrings.each = "each".asInstanceOf[typings.handlebars.handlebarsStrings.each]
   @scala.inline
-  def each: typings.handlebars.handlebarsStrings.each = this.cast("each")
+  def helperMissing: typings.handlebars.handlebarsStrings.helperMissing = "helperMissing".asInstanceOf[typings.handlebars.handlebarsStrings.helperMissing]
   @scala.inline
-  def helperMissing: typings.handlebars.handlebarsStrings.helperMissing = this.cast("helperMissing")
+  def `if`: typings.handlebars.handlebarsStrings.`if` = "if".asInstanceOf[typings.handlebars.handlebarsStrings.`if`]
   @scala.inline
-  def `if`: typings.handlebars.handlebarsStrings.`if` = this.cast("if")
+  def log: typings.handlebars.handlebarsStrings.log = "log".asInstanceOf[typings.handlebars.handlebarsStrings.log]
   @scala.inline
-  def log: typings.handlebars.handlebarsStrings.log = this.cast("log")
+  def lookup: typings.handlebars.handlebarsStrings.lookup = "lookup".asInstanceOf[typings.handlebars.handlebarsStrings.lookup]
   @scala.inline
-  def lookup: typings.handlebars.handlebarsStrings.lookup = this.cast("lookup")
+  def unless: typings.handlebars.handlebarsStrings.unless = "unless".asInstanceOf[typings.handlebars.handlebarsStrings.unless]
   @scala.inline
-  def unless: typings.handlebars.handlebarsStrings.unless = this.cast("unless")
-  @scala.inline
-  def `with`: typings.handlebars.handlebarsStrings.`with` = this.cast("with")
+  def `with`: typings.handlebars.handlebarsStrings.`with` = "with".asInstanceOf[typings.handlebars.handlebarsStrings.`with`]
 }
 

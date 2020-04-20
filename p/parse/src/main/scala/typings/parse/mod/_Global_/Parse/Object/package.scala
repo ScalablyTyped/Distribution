@@ -21,5 +21,5 @@ package object Object {
   ]) | T | typings.parse.mod._Global_.Parse.Object.ToJSON[T] | java.lang.String
   type ToJSON[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: parse.parse._Global_.Parse.Object.Encode<T[K]>}
-    */ typings.parse.parseStrings.ToJSON with T
+    */ typings.parse.parseStrings.ToJSON with org.scalablytyped.runtime.TopLevel[T]
 }

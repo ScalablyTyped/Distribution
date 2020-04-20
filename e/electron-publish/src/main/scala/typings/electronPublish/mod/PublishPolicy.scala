@@ -14,14 +14,12 @@ trait PublishPolicy extends js.Object
 
 object PublishPolicy {
   @scala.inline
-  def always: typings.electronPublish.electronPublishStrings.always = this.cast("always")
+  def always: typings.electronPublish.electronPublishStrings.always = "always".asInstanceOf[typings.electronPublish.electronPublishStrings.always]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def never: typings.electronPublish.electronPublishStrings.never = "never".asInstanceOf[typings.electronPublish.electronPublishStrings.never]
   @scala.inline
-  def never: typings.electronPublish.electronPublishStrings.never = this.cast("never")
+  def onTag: typings.electronPublish.electronPublishStrings.onTag = "onTag".asInstanceOf[typings.electronPublish.electronPublishStrings.onTag]
   @scala.inline
-  def onTag: typings.electronPublish.electronPublishStrings.onTag = this.cast("onTag")
-  @scala.inline
-  def onTagOrDraft: typings.electronPublish.electronPublishStrings.onTagOrDraft = this.cast("onTagOrDraft")
+  def onTagOrDraft: typings.electronPublish.electronPublishStrings.onTagOrDraft = "onTagOrDraft".asInstanceOf[typings.electronPublish.electronPublishStrings.onTagOrDraft]
 }
 

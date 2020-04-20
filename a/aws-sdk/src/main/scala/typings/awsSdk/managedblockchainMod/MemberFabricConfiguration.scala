@@ -20,7 +20,6 @@ object MemberFabricConfiguration {
   @scala.inline
   def apply(AdminPassword: PasswordString, AdminUsername: UsernameString): MemberFabricConfiguration = {
     val __obj = js.Dynamic.literal(AdminPassword = AdminPassword.asInstanceOf[js.Any], AdminUsername = AdminUsername.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MemberFabricConfiguration]
   }
 }

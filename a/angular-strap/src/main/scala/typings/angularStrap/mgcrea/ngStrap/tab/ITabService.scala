@@ -13,7 +13,6 @@ object ITabService {
   @scala.inline
   def apply(controller: js.Any, defaults: ITabOptions): ITabService = {
     val __obj = js.Dynamic.literal(controller = controller.asInstanceOf[js.Any], defaults = defaults.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ITabService]
   }
 }

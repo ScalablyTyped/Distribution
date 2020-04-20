@@ -14,7 +14,6 @@ object AnonItemsIPlayReadyDomain {
   @scala.inline
   def apply(items: IPlayReadyDomain, returnValue: Double): AnonItemsIPlayReadyDomain = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonItemsIPlayReadyDomain]
   }
 }

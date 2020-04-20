@@ -28,7 +28,7 @@ abstract class EntityWidget protected () extends Widget {
     *
     * In version 7.11.0: deleted
     */
-  def entityPath(): String = js.native
+  def entityPath: String = js.native
   def entityPath(newValue: String): js.Any = js.native
   def entityRef(): js.Any = js.native
   def entityRef(newValue: EntityRef): js.Any = js.native
@@ -36,7 +36,7 @@ abstract class EntityWidget protected () extends Widget {
     * In version 7.11.0: introduced
     */
   @JSName("entityRef")
-  def entityRef_Union(): EntityRef | Null = js.native
+  def entityRef_Union: EntityRef | Null = js.native
 }
 
 /* static members */

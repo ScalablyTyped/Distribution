@@ -27,7 +27,6 @@ object InfoControl_ {
     removeInfo: String => js.Any
   ): InfoControl_ = {
     val __obj = js.Dynamic.literal(addInfo = js.Any.fromFunction1(addInfo), onAdd = js.Any.fromFunction1(onAdd), onRemove = js.Any.fromFunction1(onRemove), removeInfo = js.Any.fromFunction1(removeInfo))
-  
     __obj.asInstanceOf[InfoControl_]
   }
 }

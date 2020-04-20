@@ -19,7 +19,6 @@ object IExtensionModule {
   @scala.inline
   def apply(default: IExtension | js.Array[IExtension]): IExtensionModule = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IExtensionModule]
   }
 }

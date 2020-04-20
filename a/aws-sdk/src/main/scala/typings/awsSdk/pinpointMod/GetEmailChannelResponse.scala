@@ -13,7 +13,6 @@ object GetEmailChannelResponse {
   @scala.inline
   def apply(EmailChannelResponse: EmailChannelResponse): GetEmailChannelResponse = {
     val __obj = js.Dynamic.literal(EmailChannelResponse = EmailChannelResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetEmailChannelResponse]
   }
 }

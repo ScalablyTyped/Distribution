@@ -14,7 +14,6 @@ object IdentifiedLanguages {
   @scala.inline
   def apply(languages: js.Array[IdentifiedLanguage]): IdentifiedLanguages = {
     val __obj = js.Dynamic.literal(languages = languages.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IdentifiedLanguages]
   }
 }

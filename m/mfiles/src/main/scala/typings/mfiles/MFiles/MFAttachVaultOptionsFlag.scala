@@ -24,20 +24,18 @@ trait MFAttachVaultOptionsFlag extends js.Object
 
 object MFAttachVaultOptionsFlag {
   @scala.inline
-  def EventHandlers: `32` = this.cast(32)
+  def EventHandlers: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def ExportImportJobs: `8` = this.cast(8)
+  def ExportImportJobs: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def ExportedDataSets: `4` = this.cast(4)
+  def ExportedDataSets: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def ExternalObjectTypes: `1` = this.cast(1)
+  def ExternalObjectTypes: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def ExternalSources: `2` = this.cast(2)
+  def ExternalSources: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def ExternalUserGroups: `16` = this.cast(16)
+  def ExternalUserGroups: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def None: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def None: `0` = 0.asInstanceOf[`0`]
 }
 

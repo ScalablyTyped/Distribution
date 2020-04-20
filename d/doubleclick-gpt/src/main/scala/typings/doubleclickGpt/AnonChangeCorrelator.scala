@@ -12,7 +12,6 @@ object AnonChangeCorrelator {
   @scala.inline
   def apply(changeCorrelator: Boolean): AnonChangeCorrelator = {
     val __obj = js.Dynamic.literal(changeCorrelator = changeCorrelator.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonChangeCorrelator]
   }
 }

@@ -12,10 +12,8 @@ trait AlertEvent extends js.Object
 
 object AlertEvent {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def closeDotbsDotalert: typings.bootstrap.bootstrapStrings.closeDotbsDotalert = "close.bs.alert".asInstanceOf[typings.bootstrap.bootstrapStrings.closeDotbsDotalert]
   @scala.inline
-  def closeDotbsDotalert: typings.bootstrap.bootstrapStrings.closeDotbsDotalert = this.cast("close.bs.alert")
-  @scala.inline
-  def closedDotbsDotalert: typings.bootstrap.bootstrapStrings.closedDotbsDotalert = this.cast("closed.bs.alert")
+  def closedDotbsDotalert: typings.bootstrap.bootstrapStrings.closedDotbsDotalert = "closed.bs.alert".asInstanceOf[typings.bootstrap.bootstrapStrings.closedDotbsDotalert]
 }
 

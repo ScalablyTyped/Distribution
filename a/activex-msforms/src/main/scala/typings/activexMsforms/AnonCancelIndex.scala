@@ -14,7 +14,6 @@ object AnonCancelIndex {
   @scala.inline
   def apply(Cancel: ReturnBoolean, Index: Double): AnonCancelIndex = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Index = Index.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCancelIndex]
   }
 }

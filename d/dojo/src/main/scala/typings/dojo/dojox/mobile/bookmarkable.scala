@@ -68,7 +68,6 @@ object bookmarkable {
     transitionInfo: js.Array[_]
   ): bookmarkable = {
     val __obj = js.Dynamic.literal(addTransitionInfo = js.Any.fromFunction3(addTransitionInfo), findTransitionViews = js.Any.fromFunction1(findTransitionViews), getTransitionInfo = js.Any.fromFunction2(getTransitionInfo), handleFragIds = js.Any.fromFunction1(handleFragIds), setFragIds = js.Any.fromFunction1(setFragIds), transitionInfo = transitionInfo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[bookmarkable]
   }
 }

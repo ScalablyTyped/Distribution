@@ -16,7 +16,6 @@ object TcpRoute {
   @scala.inline
   def apply(action: TcpRouteAction): TcpRoute = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TcpRoute]
   }
 }

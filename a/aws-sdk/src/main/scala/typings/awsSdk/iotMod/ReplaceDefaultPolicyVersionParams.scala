@@ -16,7 +16,6 @@ object ReplaceDefaultPolicyVersionParams {
   @scala.inline
   def apply(templateName: PolicyTemplateName): ReplaceDefaultPolicyVersionParams = {
     val __obj = js.Dynamic.literal(templateName = templateName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReplaceDefaultPolicyVersionParams]
   }
 }

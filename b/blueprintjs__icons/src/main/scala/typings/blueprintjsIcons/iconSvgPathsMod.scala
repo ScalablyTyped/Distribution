@@ -482,6 +482,7 @@ object iconSvgPathsMod extends js.Object {
     var `vertical-bar-chart-desc`: js.Array[String] = js.native
     var `vertical-distribution`: js.Array[String] = js.native
     var video: js.Array[String] = js.native
+    var virus: js.Array[String] = js.native
     var `volume-down`: js.Array[String] = js.native
     var `volume-off`: js.Array[String] = js.native
     var `volume-up`: js.Array[String] = js.native
@@ -973,6 +974,7 @@ object iconSvgPathsMod extends js.Object {
     var `vertical-bar-chart-desc`: js.Array[String] = js.native
     var `vertical-distribution`: js.Array[String] = js.native
     var video: js.Array[String] = js.native
+    var virus: js.Array[String] = js.native
     var `volume-down`: js.Array[String] = js.native
     var `volume-off`: js.Array[String] = js.native
     var `volume-up`: js.Array[String] = js.native

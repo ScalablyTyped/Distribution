@@ -78,6 +78,12 @@ trait BasemapLayerListProperties extends WidgetProperties {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#viewModel)
     */
   var viewModel: js.UndefOr[BasemapLayerListViewModelProperties] = js.undefined
+  /**
+    * The visible elements that are displayed within the widget. This property provides the ability to turn individual elements of the widget's display on/off.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#visibleElements)
+    */
+  var visibleElements: js.UndefOr[VisibleElements] = js.undefined
 }
 
 object BasemapLayerListProperties {
@@ -97,7 +103,8 @@ object BasemapLayerListProperties {
     referenceListItemCreatedFunction: js.Function = null,
     statusIndicatorsVisible: js.UndefOr[Boolean] = js.undefined,
     view: MapViewProperties | SceneViewProperties = null,
-    viewModel: BasemapLayerListViewModelProperties = null
+    viewModel: BasemapLayerListViewModelProperties = null,
+    visibleElements: VisibleElements = null
   ): BasemapLayerListProperties = {
     val __obj = js.Dynamic.literal()
     if (baseItems != null) __obj.updateDynamic("baseItems")(baseItems.asInstanceOf[js.Any])
@@ -115,6 +122,7 @@ object BasemapLayerListProperties {
     if (!js.isUndefined(statusIndicatorsVisible)) __obj.updateDynamic("statusIndicatorsVisible")(statusIndicatorsVisible.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel.asInstanceOf[js.Any])
+    if (visibleElements != null) __obj.updateDynamic("visibleElements")(visibleElements.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasemapLayerListProperties]
   }
 }

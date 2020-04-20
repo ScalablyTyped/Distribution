@@ -31,7 +31,6 @@ object IUtilArray {
     min: (js.Array[_], String) => js.Any
   ): IUtilArray = {
     val __obj = js.Dynamic.literal(invoke = js.Any.fromFunction2(invoke), max = js.Any.fromFunction2(max), min = js.Any.fromFunction2(min))
-  
     __obj.asInstanceOf[IUtilArray]
   }
 }

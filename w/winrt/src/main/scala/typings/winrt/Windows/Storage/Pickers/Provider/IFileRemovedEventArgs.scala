@@ -12,7 +12,6 @@ object IFileRemovedEventArgs {
   @scala.inline
   def apply(id: String): IFileRemovedEventArgs = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IFileRemovedEventArgs]
   }
 }

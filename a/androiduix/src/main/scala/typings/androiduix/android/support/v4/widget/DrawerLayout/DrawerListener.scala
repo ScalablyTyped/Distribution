@@ -21,7 +21,6 @@ object DrawerListener {
     onDrawerStateChanged: Double => Unit
   ): DrawerListener = {
     val __obj = js.Dynamic.literal(onDrawerClosed = js.Any.fromFunction1(onDrawerClosed), onDrawerOpened = js.Any.fromFunction1(onDrawerOpened), onDrawerSlide = js.Any.fromFunction2(onDrawerSlide), onDrawerStateChanged = js.Any.fromFunction1(onDrawerStateChanged))
-  
     __obj.asInstanceOf[DrawerListener]
   }
 }

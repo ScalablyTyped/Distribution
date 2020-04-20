@@ -14,10 +14,8 @@ trait XlSummaryReportType extends js.Object
 
 object XlSummaryReportType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlStandardSummary: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlStandardSummary: `1` = this.cast(1)
-  @scala.inline
-  def xlSummaryPivotTable: `-4148` = this.cast(-4148)
+  def xlSummaryPivotTable: `-4148` = -4148.asInstanceOf[`-4148`]
 }
 

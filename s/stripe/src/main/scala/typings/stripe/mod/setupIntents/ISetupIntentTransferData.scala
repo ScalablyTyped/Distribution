@@ -18,7 +18,6 @@ object ISetupIntentTransferData {
   @scala.inline
   def apply(destination: String | IBankAccount | ICardHash | IAccountCreationOptions): ISetupIntentTransferData = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISetupIntentTransferData]
   }
 }

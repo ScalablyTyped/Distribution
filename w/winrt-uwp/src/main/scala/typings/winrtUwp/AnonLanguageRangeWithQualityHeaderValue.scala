@@ -14,7 +14,6 @@ object AnonLanguageRangeWithQualityHeaderValue {
   @scala.inline
   def apply(languageRangeWithQualityHeaderValue: HttpLanguageRangeWithQualityHeaderValue, returnValue: Boolean): AnonLanguageRangeWithQualityHeaderValue = {
     val __obj = js.Dynamic.literal(languageRangeWithQualityHeaderValue = languageRangeWithQualityHeaderValue.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLanguageRangeWithQualityHeaderValue]
   }
 }

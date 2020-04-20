@@ -13,12 +13,10 @@ trait SyntaxFeatureOption extends js.Object
 
 object SyntaxFeatureOption {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def check: typings.styleSearch.styleSearchStrings.check = "check".asInstanceOf[typings.styleSearch.styleSearchStrings.check]
   @scala.inline
-  def check: typings.styleSearch.styleSearchStrings.check = this.cast("check")
+  def only: typings.styleSearch.styleSearchStrings.only = "only".asInstanceOf[typings.styleSearch.styleSearchStrings.only]
   @scala.inline
-  def only: typings.styleSearch.styleSearchStrings.only = this.cast("only")
-  @scala.inline
-  def skip: typings.styleSearch.styleSearchStrings.skip = this.cast("skip")
+  def skip: typings.styleSearch.styleSearchStrings.skip = "skip".asInstanceOf[typings.styleSearch.styleSearchStrings.skip]
 }
 

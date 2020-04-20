@@ -20,7 +20,6 @@ class InstantQuery protected () extends EventEmitter {
   val network: js.Any = js.native
   var queryExpression: js.Any = js.native
   var queryUri: js.Any = js.native
-  val `type`: String = js.native
   /**
     * @returns {LiveQuery#ItemsSnapshot} A snapshot of items matching current query expression.
     * @public
@@ -43,6 +42,7 @@ class InstantQuery protected () extends EventEmitter {
     * @public
     */
   def subscribe(): js.Promise[LiveQuery] = js.native
+  def `type`: String = js.native
   /**
     * Set new index name
     * @param {String} indexName New index name to set
@@ -56,6 +56,6 @@ class InstantQuery protected () extends EventEmitter {
 @JSImport("twilio-sync/lib/livequery", "InstantQuery")
 @js.native
 object InstantQuery extends js.Object {
-  val `type`: String = js.native
+  def `type`: String = js.native
 }
 

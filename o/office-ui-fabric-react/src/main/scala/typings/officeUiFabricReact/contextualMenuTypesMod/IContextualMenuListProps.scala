@@ -23,7 +23,6 @@ object IContextualMenuListProps {
     totalItemCount: Double
   ): IContextualMenuListProps = {
     val __obj = js.Dynamic.literal(defaultMenuItemRenderer = js.Any.fromFunction1(defaultMenuItemRenderer), hasCheckmarks = hasCheckmarks.asInstanceOf[js.Any], hasIcons = hasIcons.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], totalItemCount = totalItemCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IContextualMenuListProps]
   }
 }

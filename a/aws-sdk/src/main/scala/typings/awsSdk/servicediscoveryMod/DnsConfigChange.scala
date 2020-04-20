@@ -16,7 +16,6 @@ object DnsConfigChange {
   @scala.inline
   def apply(DnsRecords: DnsRecordList): DnsConfigChange = {
     val __obj = js.Dynamic.literal(DnsRecords = DnsRecords.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DnsConfigChange]
   }
 }

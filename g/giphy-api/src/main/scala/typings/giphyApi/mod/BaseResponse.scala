@@ -15,7 +15,6 @@ object BaseResponse {
   @scala.inline
   def apply(meta: AnonMsg, pagination: AnonCount): BaseResponse = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], pagination = pagination.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BaseResponse]
   }
 }

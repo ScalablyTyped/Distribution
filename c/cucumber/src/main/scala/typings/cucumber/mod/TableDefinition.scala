@@ -1,6 +1,7 @@
 package typings.cucumber.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +11,7 @@ trait TableDefinition[Type] extends js.Object {
   def hashes(): js.Array[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ columnName in keyof Type ]: string}
-    */ typings.cucumber.cucumberStrings.TableDefinition with js.Any
+    */ typings.cucumber.cucumberStrings.TableDefinition with TopLevel[js.Any]
   ]
   /** Returns the table as a 2-D array. */
   def raw(): js.Array[js.Array[String]]
@@ -26,14 +27,13 @@ object TableDefinition {
     hashes: () => js.Array[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ columnName in keyof Type ]: string}
-    */ typings.cucumber.cucumberStrings.TableDefinition with js.Any
+    */ typings.cucumber.cucumberStrings.TableDefinition with TopLevel[js.Any]
     ],
     raw: () => js.Array[js.Array[String]],
     rows: () => js.Array[js.Array[String]],
     rowsHash: () => StringDictionary[String]
   ): TableDefinition[Type] = {
     val __obj = js.Dynamic.literal(hashes = js.Any.fromFunction0(hashes), raw = js.Any.fromFunction0(raw), rows = js.Any.fromFunction0(rows), rowsHash = js.Any.fromFunction0(rowsHash))
-  
     __obj.asInstanceOf[TableDefinition[Type]]
   }
 }

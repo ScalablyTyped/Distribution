@@ -16,18 +16,16 @@ trait LogLevel extends js.Object
 
 object LogLevel {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def debug: typings.elasticApmNode.elasticApmNodeStrings.debug = "debug".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.debug]
   @scala.inline
-  def debug: typings.elasticApmNode.elasticApmNodeStrings.debug = this.cast("debug")
+  def error: typings.elasticApmNode.elasticApmNodeStrings.error = "error".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.error]
   @scala.inline
-  def error: typings.elasticApmNode.elasticApmNodeStrings.error = this.cast("error")
+  def fatal: typings.elasticApmNode.elasticApmNodeStrings.fatal = "fatal".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.fatal]
   @scala.inline
-  def fatal: typings.elasticApmNode.elasticApmNodeStrings.fatal = this.cast("fatal")
+  def info: typings.elasticApmNode.elasticApmNodeStrings.info = "info".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.info]
   @scala.inline
-  def info: typings.elasticApmNode.elasticApmNodeStrings.info = this.cast("info")
+  def trace: typings.elasticApmNode.elasticApmNodeStrings.trace = "trace".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.trace]
   @scala.inline
-  def trace: typings.elasticApmNode.elasticApmNodeStrings.trace = this.cast("trace")
-  @scala.inline
-  def warn: typings.elasticApmNode.elasticApmNodeStrings.warn = this.cast("warn")
+  def warn: typings.elasticApmNode.elasticApmNodeStrings.warn = "warn".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.warn]
 }
 

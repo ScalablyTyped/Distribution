@@ -13,7 +13,6 @@ object DeleteApnsSandboxChannelResponse {
   @scala.inline
   def apply(APNSSandboxChannelResponse: APNSSandboxChannelResponse): DeleteApnsSandboxChannelResponse = {
     val __obj = js.Dynamic.literal(APNSSandboxChannelResponse = APNSSandboxChannelResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteApnsSandboxChannelResponse]
   }
 }

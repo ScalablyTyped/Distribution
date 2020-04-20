@@ -16,10 +16,8 @@ trait DraftDragType extends js.Object
 
 object DraftDragType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def external: typings.draftJs.draftJsStrings.external = "external".asInstanceOf[typings.draftJs.draftJsStrings.external]
   @scala.inline
-  def external: typings.draftJs.draftJsStrings.external = this.cast("external")
-  @scala.inline
-  def internal: typings.draftJs.draftJsStrings.internal = this.cast("internal")
+  def internal: typings.draftJs.draftJsStrings.internal = "internal".asInstanceOf[typings.draftJs.draftJsStrings.internal]
 }
 

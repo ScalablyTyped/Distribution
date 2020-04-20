@@ -14,10 +14,8 @@ trait WdXMLValidationStatus extends js.Object
 
 object WdXMLValidationStatus {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdXMLValidationStatusCustom: `-1072898048` = -1072898048.asInstanceOf[`-1072898048`]
   @scala.inline
-  def wdXMLValidationStatusCustom: `-1072898048` = this.cast(-1072898048)
-  @scala.inline
-  def wdXMLValidationStatusOK: `0` = this.cast(0)
+  def wdXMLValidationStatusOK: `0` = 0.asInstanceOf[`0`]
 }
 

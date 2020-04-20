@@ -35,7 +35,6 @@ object Impl {
   @scala.inline
   def apply(name: String, remoteValues: String, value: String, values: String): Impl = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], remoteValues = remoteValues.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Impl]
   }
 }

@@ -11,12 +11,12 @@ trait RowActionType extends js.Object {
   /**
   	 * The background color of the row action.
   	 */
-  var color: js.UndefOr[String] = js.undefined
+  var color: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * The [identifier](RowActionType. identifier) of the row action. Only included in the event
   	 * if previously defined. Available in Titanium 6.0.0 and later.
   	 */
-  var identifier: js.UndefOr[String] = js.undefined
+  var identifier: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * The style of the row action.
   	 */
@@ -24,12 +24,17 @@ trait RowActionType extends js.Object {
   /**
   	 * The title of the row action.
   	 */
-  var title: String
+  var title: java.lang.String
 }
 
 object RowActionType {
   @scala.inline
-  def apply(style: Double, title: String, color: String = null, identifier: String = null): RowActionType = {
+  def apply(
+    style: Double,
+    title: java.lang.String,
+    color: java.lang.String = null,
+    identifier: java.lang.String = null
+  ): RowActionType = {
     val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])

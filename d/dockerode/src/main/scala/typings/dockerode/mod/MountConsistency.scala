@@ -14,14 +14,12 @@ trait MountConsistency extends js.Object
 
 object MountConsistency {
   @scala.inline
-  def cached: typings.dockerode.dockerodeStrings.cached = this.cast("cached")
+  def cached: typings.dockerode.dockerodeStrings.cached = "cached".asInstanceOf[typings.dockerode.dockerodeStrings.cached]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def consistent: typings.dockerode.dockerodeStrings.consistent = "consistent".asInstanceOf[typings.dockerode.dockerodeStrings.consistent]
   @scala.inline
-  def consistent: typings.dockerode.dockerodeStrings.consistent = this.cast("consistent")
+  def default: typings.dockerode.dockerodeStrings.default = "default".asInstanceOf[typings.dockerode.dockerodeStrings.default]
   @scala.inline
-  def default: typings.dockerode.dockerodeStrings.default = this.cast("default")
-  @scala.inline
-  def delegated: typings.dockerode.dockerodeStrings.delegated = this.cast("delegated")
+  def delegated: typings.dockerode.dockerodeStrings.delegated = "delegated".asInstanceOf[typings.dockerode.dockerodeStrings.delegated]
 }
 

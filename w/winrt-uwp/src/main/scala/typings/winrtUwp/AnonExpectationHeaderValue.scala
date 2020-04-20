@@ -14,7 +14,6 @@ object AnonExpectationHeaderValue {
   @scala.inline
   def apply(expectationHeaderValue: HttpExpectationHeaderValue, returnValue: Boolean): AnonExpectationHeaderValue = {
     val __obj = js.Dynamic.literal(expectationHeaderValue = expectationHeaderValue.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonExpectationHeaderValue]
   }
 }

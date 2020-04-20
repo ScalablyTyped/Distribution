@@ -19,7 +19,6 @@ object AnonDEFAULT {
   @scala.inline
   def apply(CMD: InformationseparatorthreeLeftparenthesiskEndoftextNull1C, DEFAULT: `3`, MAX: `16`, MIN: `1`): AnonDEFAULT = {
     val __obj = js.Dynamic.literal(CMD = CMD.asInstanceOf[js.Any], DEFAULT = DEFAULT.asInstanceOf[js.Any], MAX = MAX.asInstanceOf[js.Any], MIN = MIN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDEFAULT]
   }
 }

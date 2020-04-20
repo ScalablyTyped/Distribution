@@ -14,7 +14,6 @@ object PickImplkeys {
   @scala.inline
   def apply(keys: KeySettings): PickImplkeys = {
     val __obj = js.Dynamic.literal(keys = keys.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplkeys]
   }
 }

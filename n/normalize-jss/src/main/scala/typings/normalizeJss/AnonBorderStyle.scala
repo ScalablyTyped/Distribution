@@ -13,7 +13,6 @@ object AnonBorderStyle {
   @scala.inline
   def apply(borderStyle: String, padding: Double): AnonBorderStyle = {
     val __obj = js.Dynamic.literal(borderStyle = borderStyle.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBorderStyle]
   }
 }

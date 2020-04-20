@@ -27,7 +27,6 @@ object TimelineWall {
     setLabel: String => Unit
   ): TimelineWall = {
     val __obj = js.Dynamic.literal(getControlType = js.Any.fromFunction0(getControlType), getLabel = js.Any.fromFunction0(getLabel), getName = js.Any.fromFunction0(getName), getParent = js.Any.fromFunction0(getParent), getVisible = js.Any.fromFunction0(getVisible), refresh = js.Any.fromFunction0(refresh), setLabel = js.Any.fromFunction1(setLabel))
-  
     __obj.asInstanceOf[TimelineWall]
   }
 }

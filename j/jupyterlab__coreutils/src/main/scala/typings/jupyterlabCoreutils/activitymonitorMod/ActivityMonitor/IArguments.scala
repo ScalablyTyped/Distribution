@@ -23,7 +23,6 @@ object IArguments {
   @scala.inline
   def apply[Sender, Args](args: Args, sender: Sender): IArguments[Sender, Args] = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IArguments[Sender, Args]]
   }
 }

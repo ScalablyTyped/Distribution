@@ -12,7 +12,6 @@ object XmlValue {
   @scala.inline
   def apply(value: String): XmlValue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[XmlValue]
   }
 }

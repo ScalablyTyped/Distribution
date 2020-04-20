@@ -34,7 +34,7 @@ object integrationsEnterpriseMod extends js.Object {
     var updateNPMRC: js.Any = js.native
     var validatePK: js.Any = js.native
     @JSName("config")
-    def config_MIntegration(): EnterpriseIntegrationConfig = js.native
+    def config_MIntegration: EnterpriseIntegrationConfig = js.native
   }
   
 }

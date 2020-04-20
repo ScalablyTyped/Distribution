@@ -13,7 +13,6 @@ object TypeofappPython {
   @scala.inline
   def apply(exec: String => Double, exec_p1: (String, String) => Double): TypeofappPython = {
     val __obj = js.Dynamic.literal(exec = js.Any.fromFunction1(exec), exec_p1 = js.Any.fromFunction2(exec_p1))
-  
     __obj.asInstanceOf[TypeofappPython]
   }
 }

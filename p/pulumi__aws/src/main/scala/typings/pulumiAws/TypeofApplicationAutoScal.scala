@@ -13,7 +13,6 @@ object TypeofApplicationAutoScal {
   @scala.inline
   def apply(Types: TypeofApplicationAutoScal): TypeofApplicationAutoScal = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofApplicationAutoScal]
   }
 }

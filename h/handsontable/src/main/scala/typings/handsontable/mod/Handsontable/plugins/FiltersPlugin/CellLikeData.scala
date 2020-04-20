@@ -14,7 +14,6 @@ object CellLikeData {
   @scala.inline
   def apply(meta: AnonCol, value: String): CellLikeData = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CellLikeData]
   }
 }

@@ -21,7 +21,6 @@ object Token {
     getValue: () => js.Any
   ): Token = {
     val __obj = js.Dynamic.literal(compare = js.Any.fromFunction1(compare), equals = js.Any.fromFunction1(equals), getType = js.Any.fromFunction0(getType), getValue = js.Any.fromFunction0(getValue))
-  
     __obj.asInstanceOf[Token]
   }
 }

@@ -14,7 +14,6 @@ object AnalyzedFilesInfo {
   @scala.inline
   def apply(changedFiles: js.Array[String], notChangedFiles: js.Array[String], notFoundFiles: js.Array[String]): AnalyzedFilesInfo = {
     val __obj = js.Dynamic.literal(changedFiles = changedFiles.asInstanceOf[js.Any], notChangedFiles = notChangedFiles.asInstanceOf[js.Any], notFoundFiles = notFoundFiles.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnalyzedFilesInfo]
   }
 }

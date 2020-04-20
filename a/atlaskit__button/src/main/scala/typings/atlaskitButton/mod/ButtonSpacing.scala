@@ -13,12 +13,10 @@ trait ButtonSpacing extends js.Object
 
 object ButtonSpacing {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def compact: typings.atlaskitButton.atlaskitButtonStrings.compact = "compact".asInstanceOf[typings.atlaskitButton.atlaskitButtonStrings.compact]
   @scala.inline
-  def compact: typings.atlaskitButton.atlaskitButtonStrings.compact = this.cast("compact")
+  def default: typings.atlaskitButton.atlaskitButtonStrings.default = "default".asInstanceOf[typings.atlaskitButton.atlaskitButtonStrings.default]
   @scala.inline
-  def default: typings.atlaskitButton.atlaskitButtonStrings.default = this.cast("default")
-  @scala.inline
-  def none: typings.atlaskitButton.atlaskitButtonStrings.none = this.cast("none")
+  def none: typings.atlaskitButton.atlaskitButtonStrings.none = "none".asInstanceOf[typings.atlaskitButton.atlaskitButtonStrings.none]
 }
 

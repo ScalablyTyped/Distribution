@@ -20,7 +20,6 @@ object SessionFilter {
   @scala.inline
   def apply(key: SessionFilterKey, value: SessionFilterValue): SessionFilter = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SessionFilter]
   }
 }

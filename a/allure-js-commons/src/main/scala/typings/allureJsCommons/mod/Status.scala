@@ -15,16 +15,14 @@ trait Status extends js.Object
 
 object Status {
   @scala.inline
-  def broken: typings.allureJsCommons.allureJsCommonsStrings.broken = this.cast("broken")
+  def broken: typings.allureJsCommons.allureJsCommonsStrings.broken = "broken".asInstanceOf[typings.allureJsCommons.allureJsCommonsStrings.broken]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def failed: typings.allureJsCommons.allureJsCommonsStrings.failed = "failed".asInstanceOf[typings.allureJsCommons.allureJsCommonsStrings.failed]
   @scala.inline
-  def failed: typings.allureJsCommons.allureJsCommonsStrings.failed = this.cast("failed")
+  def passed: typings.allureJsCommons.allureJsCommonsStrings.passed = "passed".asInstanceOf[typings.allureJsCommons.allureJsCommonsStrings.passed]
   @scala.inline
-  def passed: typings.allureJsCommons.allureJsCommonsStrings.passed = this.cast("passed")
+  def pending: typings.allureJsCommons.allureJsCommonsStrings.pending = "pending".asInstanceOf[typings.allureJsCommons.allureJsCommonsStrings.pending]
   @scala.inline
-  def pending: typings.allureJsCommons.allureJsCommonsStrings.pending = this.cast("pending")
-  @scala.inline
-  def skipped: typings.allureJsCommons.allureJsCommonsStrings.skipped = this.cast("skipped")
+  def skipped: typings.allureJsCommons.allureJsCommonsStrings.skipped = "skipped".asInstanceOf[typings.allureJsCommons.allureJsCommonsStrings.skipped]
 }
 

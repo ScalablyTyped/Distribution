@@ -15,7 +15,6 @@ object AnonBehaviors {
   @scala.inline
   def apply(behaviors: Double, layout: Double, none: Double, states: Double): AnonBehaviors = {
     val __obj = js.Dynamic.literal(behaviors = behaviors.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], states = states.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBehaviors]
   }
 }

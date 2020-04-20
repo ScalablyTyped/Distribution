@@ -16,7 +16,6 @@ object GetBundleRootStorage {
   @scala.inline
   def apply(capacity: String): GetBundleRootStorage = {
     val __obj = js.Dynamic.literal(capacity = capacity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBundleRootStorage]
   }
 }

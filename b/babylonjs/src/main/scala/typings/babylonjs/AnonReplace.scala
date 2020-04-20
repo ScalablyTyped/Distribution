@@ -14,7 +14,6 @@ object AnonReplace {
   @scala.inline
   def apply(replace: String, search: RegExp): AnonReplace = {
     val __obj = js.Dynamic.literal(replace = replace.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonReplace]
   }
 }

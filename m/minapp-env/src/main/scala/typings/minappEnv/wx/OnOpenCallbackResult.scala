@@ -15,7 +15,6 @@ object OnOpenCallbackResult {
   @scala.inline
   def apply(header: js.Object): OnOpenCallbackResult = {
     val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnOpenCallbackResult]
   }
 }

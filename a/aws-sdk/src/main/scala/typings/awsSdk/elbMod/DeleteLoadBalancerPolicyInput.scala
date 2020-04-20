@@ -20,7 +20,6 @@ object DeleteLoadBalancerPolicyInput {
   @scala.inline
   def apply(LoadBalancerName: AccessPointName, PolicyName: PolicyName): DeleteLoadBalancerPolicyInput = {
     val __obj = js.Dynamic.literal(LoadBalancerName = LoadBalancerName.asInstanceOf[js.Any], PolicyName = PolicyName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteLoadBalancerPolicyInput]
   }
 }

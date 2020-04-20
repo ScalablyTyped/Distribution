@@ -14,7 +14,6 @@ object AsObject {
   @scala.inline
   def apply(bitmap: String, nonDefaultSiblingsList: js.Array[Uint8Array | String]): AsObject = {
     val __obj = js.Dynamic.literal(bitmap = bitmap.asInstanceOf[js.Any], nonDefaultSiblingsList = nonDefaultSiblingsList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AsObject]
   }
 }

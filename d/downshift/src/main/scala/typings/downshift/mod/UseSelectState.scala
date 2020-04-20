@@ -15,7 +15,6 @@ object UseSelectState {
   @scala.inline
   def apply[Item](highlightedIndex: Double, isOpen: Boolean, keySoFar: String, selectedItem: Item): UseSelectState[Item] = {
     val __obj = js.Dynamic.literal(highlightedIndex = highlightedIndex.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], keySoFar = keySoFar.asInstanceOf[js.Any], selectedItem = selectedItem.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UseSelectState[Item]]
   }
 }

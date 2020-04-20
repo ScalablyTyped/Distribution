@@ -20,7 +20,6 @@ object UpdateParameterGroupRequest {
   @scala.inline
   def apply(ParameterGroupName: String, ParameterNameValues: ParameterNameValueList): UpdateParameterGroupRequest = {
     val __obj = js.Dynamic.literal(ParameterGroupName = ParameterGroupName.asInstanceOf[js.Any], ParameterNameValues = ParameterNameValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateParameterGroupRequest]
   }
 }

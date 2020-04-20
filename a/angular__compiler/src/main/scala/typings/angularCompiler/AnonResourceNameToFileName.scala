@@ -12,7 +12,6 @@ object AnonResourceNameToFileName {
   @scala.inline
   def apply(resourceNameToFileName: (String, String) => String | Null): AnonResourceNameToFileName = {
     val __obj = js.Dynamic.literal(resourceNameToFileName = js.Any.fromFunction2(resourceNameToFileName))
-  
     __obj.asInstanceOf[AnonResourceNameToFileName]
   }
 }

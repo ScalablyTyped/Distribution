@@ -24,7 +24,6 @@ object IgEditorFilterMethods {
     validator: () => Unit
   ): IgEditorFilterMethods = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), exitEditMode = js.Any.fromFunction0(exitEditMode), hasInvalidMessage = js.Any.fromFunction0(hasInvalidMessage), remove = js.Any.fromFunction0(remove), setFocus = js.Any.fromFunction2(setFocus), validator = js.Any.fromFunction0(validator))
-  
     __obj.asInstanceOf[IgEditorFilterMethods]
   }
 }

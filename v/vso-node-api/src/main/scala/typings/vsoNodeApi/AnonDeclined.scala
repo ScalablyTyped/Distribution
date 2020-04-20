@@ -24,7 +24,6 @@ object AnonDeclined {
     unspecified: Double
   ): AnonDeclined = {
     val __obj = js.Dynamic.literal(completed = completed.asInstanceOf[js.Any], declined = declined.asInstanceOf[js.Any], inProgress = inProgress.asInstanceOf[js.Any], notStarted = notStarted.asInstanceOf[js.Any], paused = paused.asInstanceOf[js.Any], unspecified = unspecified.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDeclined]
   }
 }

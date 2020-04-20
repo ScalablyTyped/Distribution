@@ -55,7 +55,6 @@ object FileWriterSync {
     write: Blob => Unit
   ): FileWriterSync = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], seek = js.Any.fromFunction1(seek), truncate = js.Any.fromFunction1(truncate), write = js.Any.fromFunction1(write))
-  
     __obj.asInstanceOf[FileWriterSync]
   }
 }

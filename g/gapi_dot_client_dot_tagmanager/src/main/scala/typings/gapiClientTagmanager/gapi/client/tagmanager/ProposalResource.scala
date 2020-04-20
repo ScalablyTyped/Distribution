@@ -18,7 +18,6 @@ object ProposalResource {
   @scala.inline
   def apply(create: AnonAlt => Request_[WorkspaceProposal], delete: AnonFields => Request_[Unit]): ProposalResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete))
-  
     __obj.asInstanceOf[ProposalResource]
   }
 }

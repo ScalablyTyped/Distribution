@@ -16,7 +16,6 @@ object ListThingPrincipalsRequest {
   @scala.inline
   def apply(thingName: ThingName): ListThingPrincipalsRequest = {
     val __obj = js.Dynamic.literal(thingName = thingName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListThingPrincipalsRequest]
   }
 }

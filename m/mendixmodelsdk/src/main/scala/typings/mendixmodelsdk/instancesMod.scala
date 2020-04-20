@@ -32,7 +32,7 @@ object instancesMod extends js.Object {
     var qualifiedTsTypeName: String = js.native
     var versionInfo: LifeCycle = js.native
     def checkEnumVersion(metaModelVersion: Version, includeWarnings: Boolean): Unit = js.native
-    def name(): String = js.native
+    def name: String = js.native
     def qualifiedTsLiteralName(): String = js.native
   }
   

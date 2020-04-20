@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "which-pm-runs"
-version := "1.0-dt-20190801Z-68c04c"
+version := "1.0-dt-20190801Z-ab2bfe"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

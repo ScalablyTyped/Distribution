@@ -16,7 +16,6 @@ object StopStreamProcessorRequest {
   @scala.inline
   def apply(Name: StreamProcessorName): StopStreamProcessorRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopStreamProcessorRequest]
   }
 }

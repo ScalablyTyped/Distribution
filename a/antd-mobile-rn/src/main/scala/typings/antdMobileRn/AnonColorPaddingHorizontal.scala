@@ -14,7 +14,6 @@ object AnonColorPaddingHorizontal {
   @scala.inline
   def apply(color: String, paddingHorizontal: Double, textAlign: String): AnonColorPaddingHorizontal = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], paddingHorizontal = paddingHorizontal.asInstanceOf[js.Any], textAlign = textAlign.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonColorPaddingHorizontal]
   }
 }

@@ -16,7 +16,6 @@ object GetMetricPolicyOutput {
   @scala.inline
   def apply(MetricPolicy: MetricPolicy): GetMetricPolicyOutput = {
     val __obj = js.Dynamic.literal(MetricPolicy = MetricPolicy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetMetricPolicyOutput]
   }
 }

@@ -2,10 +2,15 @@ package typings.chromeApps.chrome.displaySource
 
 import typings.chromeApps.AnonCAPABILITIESNEGOTIATIONERROR
 import typings.chromeApps.chrome.ToStringLiteral
-import typings.chromeApps.chromeAppsStrings.capabilities_negotiation_error
-import typings.chromeApps.chromeAppsStrings.connection_error
-import typings.chromeApps.chromeAppsStrings.media_pipeline_error
-import typings.chromeApps.chromeAppsStrings.timeout_error
+import typings.chromeApps.chromeAppsStrings.CAPABILITIES_NEGOTIATION_ERROR
+import typings.chromeApps.chromeAppsStrings.CONNECTION_ERROR
+import typings.chromeApps.chromeAppsStrings.MEDIA_PIPELINE_ERROR
+import typings.chromeApps.chromeAppsStrings.TIMEOUT_ERROR
+import typings.chromeApps.chromeAppsStrings.UNKNOWN_ERROR
+import typings.chromeApps.chromeAppsStrings.capabilities_negotiation_error_
+import typings.chromeApps.chromeAppsStrings.connection_error_
+import typings.chromeApps.chromeAppsStrings.media_pipeline_error_
+import typings.chromeApps.chromeAppsStrings.timeout_error_
 import typings.chromeApps.chromeAppsStrings.unknown_error_
 import typings.std.Exclude
 import scala.scalajs.js
@@ -17,10 +22,10 @@ trait ErrorInfo extends js.Object {
   /** @see ErrorType */
   var `type`: ToStringLiteral[
     AnonCAPABILITIESNEGOTIATIONERROR, 
-    String, 
+    CONNECTION_ERROR | CAPABILITIES_NEGOTIATION_ERROR | MEDIA_PIPELINE_ERROR | TIMEOUT_ERROR | UNKNOWN_ERROR, 
     Exclude[
-      String, 
-      unknown_error_ | media_pipeline_error | connection_error | capabilities_negotiation_error | timeout_error
+      CONNECTION_ERROR | CAPABILITIES_NEGOTIATION_ERROR | MEDIA_PIPELINE_ERROR | TIMEOUT_ERROR | UNKNOWN_ERROR, 
+      unknown_error_ | media_pipeline_error_ | connection_error_ | capabilities_negotiation_error_ | timeout_error_
     ]
   ]
 }
@@ -30,10 +35,10 @@ object ErrorInfo {
   def apply(
     `type`: ToStringLiteral[
       AnonCAPABILITIESNEGOTIATIONERROR, 
-      String, 
+      CONNECTION_ERROR | CAPABILITIES_NEGOTIATION_ERROR | MEDIA_PIPELINE_ERROR | TIMEOUT_ERROR | UNKNOWN_ERROR, 
       Exclude[
-        String, 
-        unknown_error_ | media_pipeline_error | connection_error | capabilities_negotiation_error | timeout_error
+        CONNECTION_ERROR | CAPABILITIES_NEGOTIATION_ERROR | MEDIA_PIPELINE_ERROR | TIMEOUT_ERROR | UNKNOWN_ERROR, 
+        unknown_error_ | media_pipeline_error_ | connection_error_ | capabilities_negotiation_error_ | timeout_error_
       ]
     ],
     description: String = null

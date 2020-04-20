@@ -65,7 +65,6 @@ object IWebElementFinders {
     findElements: Locator => js.Promise[js.Array[WebElement]]
   ): IWebElementFinders = {
     val __obj = js.Dynamic.literal(findElement = js.Any.fromFunction1(findElement), findElements = js.Any.fromFunction1(findElements))
-  
     __obj.asInstanceOf[IWebElementFinders]
   }
 }

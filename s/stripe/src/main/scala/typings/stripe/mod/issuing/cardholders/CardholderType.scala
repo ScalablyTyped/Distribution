@@ -12,10 +12,8 @@ trait CardholderType extends js.Object
 
 object CardholderType {
   @scala.inline
-  def business_entity: typings.stripe.stripeStrings.business_entity = this.cast("business_entity")
+  def business_entity: typings.stripe.stripeStrings.business_entity = "business_entity".asInstanceOf[typings.stripe.stripeStrings.business_entity]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def individual: typings.stripe.stripeStrings.individual = this.cast("individual")
+  def individual: typings.stripe.stripeStrings.individual = "individual".asInstanceOf[typings.stripe.stripeStrings.individual]
 }
 

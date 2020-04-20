@@ -247,7 +247,7 @@ object Color3 extends js.Object {
   /**
     * Gets a Color3 value containing a black color that must not be updated
     */
-  def BlackReadOnly(): DeepImmutable[Color3] = js.native
+  def BlackReadOnly: DeepImmutable[Color3] = js.native
   /**
     * Returns a Color3 value containing a blue color
     * @returns a new Color3 object

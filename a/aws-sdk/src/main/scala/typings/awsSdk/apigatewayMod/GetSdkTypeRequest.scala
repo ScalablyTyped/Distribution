@@ -16,7 +16,6 @@ object GetSdkTypeRequest {
   @scala.inline
   def apply(id: String): GetSdkTypeRequest = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetSdkTypeRequest]
   }
 }

@@ -15,7 +15,6 @@ object BuildTrigger {
   @scala.inline
   def apply(triggerType: DefinitionTriggerType): BuildTrigger = {
     val __obj = js.Dynamic.literal(triggerType = triggerType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BuildTrigger]
   }
 }

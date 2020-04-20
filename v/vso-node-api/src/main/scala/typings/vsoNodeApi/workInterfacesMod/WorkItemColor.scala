@@ -14,7 +14,6 @@ object WorkItemColor {
   @scala.inline
   def apply(icon: String, primaryColor: String, workItemTypeName: String): WorkItemColor = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], primaryColor = primaryColor.asInstanceOf[js.Any], workItemTypeName = workItemTypeName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WorkItemColor]
   }
 }

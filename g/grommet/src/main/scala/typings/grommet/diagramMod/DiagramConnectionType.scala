@@ -13,12 +13,10 @@ trait DiagramConnectionType extends js.Object
 
 object DiagramConnectionType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def curved: typings.grommet.grommetStrings.curved = "curved".asInstanceOf[typings.grommet.grommetStrings.curved]
   @scala.inline
-  def curved: typings.grommet.grommetStrings.curved = this.cast("curved")
+  def direct: typings.grommet.grommetStrings.direct = "direct".asInstanceOf[typings.grommet.grommetStrings.direct]
   @scala.inline
-  def direct: typings.grommet.grommetStrings.direct = this.cast("direct")
-  @scala.inline
-  def rectilinear: typings.grommet.grommetStrings.rectilinear = this.cast("rectilinear")
+  def rectilinear: typings.grommet.grommetStrings.rectilinear = "rectilinear".asInstanceOf[typings.grommet.grommetStrings.rectilinear]
 }
 

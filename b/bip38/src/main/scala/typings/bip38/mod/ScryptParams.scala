@@ -14,7 +14,6 @@ object ScryptParams {
   @scala.inline
   def apply(N: Double, p: Double, r: Double): ScryptParams = {
     val __obj = js.Dynamic.literal(N = N.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScryptParams]
   }
 }

@@ -16,7 +16,6 @@ object GetHeapObjectIdParameterType {
   @scala.inline
   def apply(objectId: RemoteObjectId): GetHeapObjectIdParameterType = {
     val __obj = js.Dynamic.literal(objectId = objectId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetHeapObjectIdParameterType]
   }
 }

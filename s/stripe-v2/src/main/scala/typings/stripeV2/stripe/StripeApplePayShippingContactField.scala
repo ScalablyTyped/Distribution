@@ -14,14 +14,12 @@ trait StripeApplePayShippingContactField extends js.Object
 
 object StripeApplePayShippingContactField {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def email: typings.stripeV2.stripeV2Strings.email = "email".asInstanceOf[typings.stripeV2.stripeV2Strings.email]
   @scala.inline
-  def email: typings.stripeV2.stripeV2Strings.email = this.cast("email")
+  def name: typings.stripeV2.stripeV2Strings.name = "name".asInstanceOf[typings.stripeV2.stripeV2Strings.name]
   @scala.inline
-  def name: typings.stripeV2.stripeV2Strings.name = this.cast("name")
+  def phone: typings.stripeV2.stripeV2Strings.phone = "phone".asInstanceOf[typings.stripeV2.stripeV2Strings.phone]
   @scala.inline
-  def phone: typings.stripeV2.stripeV2Strings.phone = this.cast("phone")
-  @scala.inline
-  def postalAddress: typings.stripeV2.stripeV2Strings.postalAddress = this.cast("postalAddress")
+  def postalAddress: typings.stripeV2.stripeV2Strings.postalAddress = "postalAddress".asInstanceOf[typings.stripeV2.stripeV2Strings.postalAddress]
 }
 

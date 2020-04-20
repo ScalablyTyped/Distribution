@@ -22,7 +22,6 @@ object Token {
     token_type: String
   ): Token = {
     val __obj = js.Dynamic.literal(access_token = access_token.asInstanceOf[js.Any], expires_at = expires_at.asInstanceOf[js.Any], expires_in = expires_in.asInstanceOf[js.Any], refresh_token = refresh_token.asInstanceOf[js.Any], token_type = token_type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Token]
   }
 }

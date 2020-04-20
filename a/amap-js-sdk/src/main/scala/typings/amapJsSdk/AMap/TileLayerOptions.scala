@@ -30,7 +30,6 @@ object TileLayerOptions {
     zooms: js.Array[Double]
   ): TileLayerOptions = {
     val __obj = js.Dynamic.literal(detectRetina = detectRetina.asInstanceOf[js.Any], errorUrl = errorUrl.asInstanceOf[js.Any], getTileUrl = js.Any.fromFunction3(getTileUrl), map = map.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], tileSize = tileSize.asInstanceOf[js.Any], tileUrl = tileUrl.asInstanceOf[js.Any], zIndex = zIndex.asInstanceOf[js.Any], zooms = zooms.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TileLayerOptions]
   }
 }

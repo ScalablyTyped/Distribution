@@ -37,7 +37,6 @@ object SearchUserIDsResponse {
     updatedAt: Double
   ): SearchUserIDsResponse = {
     val __obj = js.Dynamic.literal(hits = hits.asInstanceOf[js.Any], hitsPerPage = hitsPerPage.asInstanceOf[js.Any], nbHits = nbHits.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], updatedAt = updatedAt.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SearchUserIDsResponse]
   }
 }

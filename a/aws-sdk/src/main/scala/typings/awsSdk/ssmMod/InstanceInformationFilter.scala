@@ -20,7 +20,6 @@ object InstanceInformationFilter {
   @scala.inline
   def apply(key: InstanceInformationFilterKey, valueSet: InstanceInformationFilterValueSet): InstanceInformationFilter = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], valueSet = valueSet.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InstanceInformationFilter]
   }
 }

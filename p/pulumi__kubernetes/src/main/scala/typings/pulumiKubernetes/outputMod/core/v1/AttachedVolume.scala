@@ -22,7 +22,6 @@ object AttachedVolume {
   @scala.inline
   def apply(devicePath: String, name: String): AttachedVolume = {
     val __obj = js.Dynamic.literal(devicePath = devicePath.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AttachedVolume]
   }
 }

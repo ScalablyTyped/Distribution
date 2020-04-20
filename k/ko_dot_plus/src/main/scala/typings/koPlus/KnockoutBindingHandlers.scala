@@ -23,7 +23,6 @@ object KnockoutBindingHandlers {
     sortBy: KnockoutBindingHandler[_, _, _]
   ): KnockoutBindingHandlers = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], loadingWhen = loadingWhen.asInstanceOf[js.Any], sortBy = sortBy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KnockoutBindingHandlers]
   }
 }

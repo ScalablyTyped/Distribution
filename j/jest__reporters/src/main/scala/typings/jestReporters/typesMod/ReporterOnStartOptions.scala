@@ -13,7 +13,6 @@ object ReporterOnStartOptions {
   @scala.inline
   def apply(estimatedTime: Double, showStatus: Boolean): ReporterOnStartOptions = {
     val __obj = js.Dynamic.literal(estimatedTime = estimatedTime.asInstanceOf[js.Any], showStatus = showStatus.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReporterOnStartOptions]
   }
 }

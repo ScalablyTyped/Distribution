@@ -22,7 +22,6 @@ object SearchFirstResult {
   @scala.inline
   def apply(found: NodeCollection, path: CollectionArgument): SearchFirstResult = {
     val __obj = js.Dynamic.literal(found = found.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SearchFirstResult]
   }
 }

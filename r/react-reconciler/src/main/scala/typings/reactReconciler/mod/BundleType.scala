@@ -14,10 +14,8 @@ trait BundleType extends js.Object
 
 object BundleType {
   @scala.inline
-  def `0`: typings.reactReconciler.reactReconcilerNumbers.`0` = this.cast(0)
+  def `0`: typings.reactReconciler.reactReconcilerNumbers.`0` = 0.asInstanceOf[typings.reactReconciler.reactReconcilerNumbers.`0`]
   @scala.inline
-  def `1`: typings.reactReconciler.reactReconcilerNumbers.`1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `1`: typings.reactReconciler.reactReconcilerNumbers.`1` = 1.asInstanceOf[typings.reactReconciler.reactReconcilerNumbers.`1`]
 }
 

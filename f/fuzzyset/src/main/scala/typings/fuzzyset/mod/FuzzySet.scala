@@ -22,7 +22,6 @@ object FuzzySet {
     values: () => js.Array[String]
   ): FuzzySet = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), get = js.Any.fromFunction1(get), isEmpty = js.Any.fromFunction0(isEmpty), length = js.Any.fromFunction0(length), values = js.Any.fromFunction0(values))
-  
     __obj.asInstanceOf[FuzzySet]
   }
 }

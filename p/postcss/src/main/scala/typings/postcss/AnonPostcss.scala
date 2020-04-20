@@ -15,7 +15,6 @@ object AnonPostcss {
   @scala.inline
   def apply(postcss: TransformCallback | Processor): AnonPostcss = {
     val __obj = js.Dynamic.literal(postcss = postcss.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPostcss]
   }
 }

@@ -14,7 +14,6 @@ object AnonIsReorderable {
   @scala.inline
   def apply(isReorderable: Boolean, isResizable: Boolean, loading: Boolean): AnonIsReorderable = {
     val __obj = js.Dynamic.literal(isReorderable = isReorderable.asInstanceOf[js.Any], isResizable = isResizable.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsReorderable]
   }
 }

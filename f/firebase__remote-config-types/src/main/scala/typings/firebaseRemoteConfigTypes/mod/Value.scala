@@ -35,7 +35,6 @@ object Value {
     getSource: () => ValueSource
   ): Value = {
     val __obj = js.Dynamic.literal(asBoolean = js.Any.fromFunction0(asBoolean), asNumber = js.Any.fromFunction0(asNumber), asString = js.Any.fromFunction0(asString), getSource = js.Any.fromFunction0(getSource))
-  
     __obj.asInstanceOf[Value]
   }
 }

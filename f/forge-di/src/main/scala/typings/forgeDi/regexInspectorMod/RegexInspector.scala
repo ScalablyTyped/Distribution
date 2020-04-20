@@ -19,7 +19,6 @@ object RegexInspector {
     getParameterNames: js.Any
   ): RegexInspector = {
     val __obj = js.Dynamic.literal(findConstructor = js.Any.fromFunction1(findConstructor), getDependencies = js.Any.fromFunction1(getDependencies), getParameterNames = getParameterNames.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RegexInspector]
   }
 }

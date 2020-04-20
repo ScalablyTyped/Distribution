@@ -14,7 +14,6 @@ object AnonSel {
   @scala.inline
   def apply(Cancel: Boolean, Sel: Selection): AnonSel = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Sel = Sel.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSel]
   }
 }

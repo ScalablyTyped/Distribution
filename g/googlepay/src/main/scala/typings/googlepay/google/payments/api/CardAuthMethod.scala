@@ -49,10 +49,8 @@ trait CardAuthMethod extends js.Object
 
 object CardAuthMethod {
   @scala.inline
-  def CRYPTOGRAM_3DS: typings.googlepay.googlepayStrings.CRYPTOGRAM_3DS = this.cast("CRYPTOGRAM_3DS")
+  def CRYPTOGRAM_3DS: typings.googlepay.googlepayStrings.CRYPTOGRAM_3DS = "CRYPTOGRAM_3DS".asInstanceOf[typings.googlepay.googlepayStrings.CRYPTOGRAM_3DS]
   @scala.inline
-  def PAN_ONLY: typings.googlepay.googlepayStrings.PAN_ONLY = this.cast("PAN_ONLY")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def PAN_ONLY: typings.googlepay.googlepayStrings.PAN_ONLY = "PAN_ONLY".asInstanceOf[typings.googlepay.googlepayStrings.PAN_ONLY]
 }
 

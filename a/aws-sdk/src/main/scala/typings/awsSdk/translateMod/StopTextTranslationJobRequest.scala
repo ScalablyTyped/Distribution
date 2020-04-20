@@ -16,7 +16,6 @@ object StopTextTranslationJobRequest {
   @scala.inline
   def apply(JobId: JobId): StopTextTranslationJobRequest = {
     val __obj = js.Dynamic.literal(JobId = JobId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopTextTranslationJobRequest]
   }
 }

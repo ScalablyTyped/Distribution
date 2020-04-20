@@ -13,7 +13,6 @@ object AnonCrossorigin {
   @scala.inline
   def apply(crossorigin: String, integrity: String): AnonCrossorigin = {
     val __obj = js.Dynamic.literal(crossorigin = crossorigin.asInstanceOf[js.Any], integrity = integrity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCrossorigin]
   }
 }

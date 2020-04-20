@@ -20,7 +20,6 @@ object GetBasePathMappingRequest {
   @scala.inline
   def apply(basePath: String, domainName: String): GetBasePathMappingRequest = {
     val __obj = js.Dynamic.literal(basePath = basePath.asInstanceOf[js.Any], domainName = domainName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBasePathMappingRequest]
   }
 }

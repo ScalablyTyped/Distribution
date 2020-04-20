@@ -14,7 +14,6 @@ object DeleteSchemaRequest {
   @scala.inline
   def apply(RegistryName: string, SchemaName: string): DeleteSchemaRequest = {
     val __obj = js.Dynamic.literal(RegistryName = RegistryName.asInstanceOf[js.Any], SchemaName = SchemaName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteSchemaRequest]
   }
 }

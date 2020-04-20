@@ -12,7 +12,6 @@ object AuthenticatedMessage {
   @scala.inline
   def apply(credentials: Credentials): AuthenticatedMessage = {
     val __obj = js.Dynamic.literal(credentials = credentials.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AuthenticatedMessage]
   }
 }

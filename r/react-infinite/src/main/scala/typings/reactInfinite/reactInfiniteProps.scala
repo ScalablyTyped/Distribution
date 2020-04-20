@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactInfiniteProps {
   @scala.inline
-  def ReactInfiniteProps: InfiniteProps.type = typings.reactInfinite.mod.InfiniteProps
+  def ReactInfiniteProps: InfiniteProps.type = InfiniteProps
   type ReactInfiniteProps = InfiniteProps
 }
 

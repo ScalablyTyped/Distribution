@@ -17,7 +17,6 @@ object DomainNameEndpointConfiguration {
   @scala.inline
   def apply(types: Input[String]): DomainNameEndpointConfiguration = {
     val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DomainNameEndpointConfiguration]
   }
 }

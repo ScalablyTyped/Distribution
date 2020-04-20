@@ -16,7 +16,6 @@ object RecordLatencyRoutingPolicy {
   @scala.inline
   def apply(region: String): RecordLatencyRoutingPolicy = {
     val __obj = js.Dynamic.literal(region = region.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RecordLatencyRoutingPolicy]
   }
 }

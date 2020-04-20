@@ -15,14 +15,14 @@ class SocketIOEmitter () extends js.Object {
   var prefix: String = js.native
   var redis: RedisClient = js.native
   // TypeScript Version: 3.6
-  def broadcast(): this.type = js.native
+  def broadcast: this.type = js.native
   def emit(data: js.Any*): this.type = js.native
   def in(room: String): this.type = js.native
   // TypeScript Version: 3.6
-  def json(): this.type = js.native
+  def json: this.type = js.native
   def of(nsp: String): SocketIOEmitter = js.native
   def to(room: String): this.type = js.native
   // TypeScript Version: 3.6
-  def volatile(): this.type = js.native
+  def volatile: this.type = js.native
 }
 

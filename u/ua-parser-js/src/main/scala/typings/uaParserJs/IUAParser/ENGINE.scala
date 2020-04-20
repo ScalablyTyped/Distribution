@@ -13,7 +13,6 @@ object ENGINE {
   @scala.inline
   def apply(NAME: String, VERSION: String): ENGINE = {
     val __obj = js.Dynamic.literal(NAME = NAME.asInstanceOf[js.Any], VERSION = VERSION.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ENGINE]
   }
 }

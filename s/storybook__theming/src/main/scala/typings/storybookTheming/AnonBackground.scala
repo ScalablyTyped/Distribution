@@ -14,7 +14,6 @@ object AnonBackground {
   @scala.inline
   def apply(background: AnonApp, color: AnonAncillary, typography: AnonFonts): AnonBackground = {
     val __obj = js.Dynamic.literal(background = background.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], typography = typography.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBackground]
   }
 }

@@ -1,9 +1,5 @@
 package typings.atom
 
-import typings.atom.atomStrings.`tab alwaysComma enter when suggestion explicitly selected`
-import typings.atom.atomStrings.`tab and enter`
-import typings.atom.atomStrings.enter
-import typings.atom.atomStrings.tab
 import typings.atom.mod.ScopeDescriptor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,17 +7,13 @@ import scala.scalajs.js.annotation._
 
 trait Anon18 extends js.Object {
   var scopeDescriptor: ScopeDescriptor
-  var value: tab | enter | (`tab and enter`) | (`tab alwaysComma enter when suggestion explicitly selected`)
+  var value: String | Double
 }
 
 object Anon18 {
   @scala.inline
-  def apply(
-    scopeDescriptor: ScopeDescriptor,
-    value: tab | enter | (`tab and enter`) | (`tab alwaysComma enter when suggestion explicitly selected`)
-  ): Anon18 = {
+  def apply(scopeDescriptor: ScopeDescriptor, value: String | Double): Anon18 = {
     val __obj = js.Dynamic.literal(scopeDescriptor = scopeDescriptor.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Anon18]
   }
 }

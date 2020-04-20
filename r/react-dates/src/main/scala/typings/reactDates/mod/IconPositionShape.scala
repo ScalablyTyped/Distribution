@@ -13,10 +13,8 @@ trait IconPositionShape extends js.Object
 
 object IconPositionShape {
   @scala.inline
-  def after: typings.reactDates.reactDatesStrings.after = this.cast("after")
+  def after: typings.reactDates.reactDatesStrings.after = "after".asInstanceOf[typings.reactDates.reactDatesStrings.after]
   @scala.inline
-  def before: typings.reactDates.reactDatesStrings.before = this.cast("before")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def before: typings.reactDates.reactDatesStrings.before = "before".asInstanceOf[typings.reactDates.reactDatesStrings.before]
 }
 

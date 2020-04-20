@@ -20,7 +20,6 @@ object SqliMatchStatement {
   @scala.inline
   def apply(FieldToMatch: FieldToMatch, TextTransformations: TextTransformations): SqliMatchStatement = {
     val __obj = js.Dynamic.literal(FieldToMatch = FieldToMatch.asInstanceOf[js.Any], TextTransformations = TextTransformations.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SqliMatchStatement]
   }
 }

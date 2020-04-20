@@ -13,7 +13,7 @@ trait reactNativeMaterialMenuProps {
   def MenuItemProps: typings.reactNativeMaterialMenu.mod.MenuItemProps.type = typings.reactNativeMaterialMenu.mod.MenuItemProps
   type MenuItemProps = typings.reactNativeMaterialMenu.mod.MenuItemProps
   @scala.inline
-  def ReactNativeMaterialMenuProps: MenuProps.type = typings.reactNativeMaterialMenu.mod.MenuProps
+  def ReactNativeMaterialMenuProps: MenuProps.type = MenuProps
   type ReactNativeMaterialMenuProps = MenuProps
 }
 

@@ -20,7 +20,6 @@ object Destroyable {
   @scala.inline
   def apply(destroy: () => ReadonlyPromisevoid): Destroyable = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy))
-  
     __obj.asInstanceOf[Destroyable]
   }
 }

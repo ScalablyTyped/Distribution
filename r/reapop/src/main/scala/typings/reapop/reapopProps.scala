@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reapopProps {
   @scala.inline
-  def ReapopProps: NotificationSystemProps.type = typings.reapop.mod.NotificationSystemProps
+  def ReapopProps: NotificationSystemProps.type = NotificationSystemProps
   type ReapopProps = NotificationSystemProps
 }
 

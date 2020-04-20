@@ -27,7 +27,6 @@ object CloudFormationCustomResourceDeleteEvent {
     StackId: String
   ): CloudFormationCustomResourceDeleteEvent = {
     val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId.asInstanceOf[js.Any], PhysicalResourceId = PhysicalResourceId.asInstanceOf[js.Any], RequestId = RequestId.asInstanceOf[js.Any], RequestType = RequestType.asInstanceOf[js.Any], ResourceProperties = ResourceProperties.asInstanceOf[js.Any], ResourceType = ResourceType.asInstanceOf[js.Any], ResponseURL = ResponseURL.asInstanceOf[js.Any], ServiceToken = ServiceToken.asInstanceOf[js.Any], StackId = StackId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CloudFormationCustomResourceDeleteEvent]
   }
 }

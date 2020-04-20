@@ -16,14 +16,12 @@ trait SortOrder extends js.Object
 
 object SortOrder {
   @scala.inline
-  def ASC: typings.bookshelf.bookshelfStrings.ASC = this.cast("ASC")
+  def ASC: typings.bookshelf.bookshelfStrings.ASC = "ASC".asInstanceOf[typings.bookshelf.bookshelfStrings.ASC]
   @scala.inline
-  def DESC: typings.bookshelf.bookshelfStrings.DESC = this.cast("DESC")
+  def DESC: typings.bookshelf.bookshelfStrings.DESC = "DESC".asInstanceOf[typings.bookshelf.bookshelfStrings.DESC]
   @scala.inline
-  def asc: asc_ = this.cast("asc")
+  def asc: asc_ = "asc".asInstanceOf[asc_]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def desc: desc_ = this.cast("desc")
+  def desc: desc_ = "desc".asInstanceOf[desc_]
 }
 

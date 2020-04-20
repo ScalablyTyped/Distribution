@@ -12,7 +12,6 @@ object Subscribable {
   @scala.inline
   def apply[T](subscribe: Observer[T] => Subscription): Subscribable[T] = {
     val __obj = js.Dynamic.literal(subscribe = js.Any.fromFunction1(subscribe))
-  
     __obj.asInstanceOf[Subscribable[T]]
   }
 }

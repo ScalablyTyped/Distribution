@@ -109,6 +109,9 @@ trait primereactProps {
   def InputMaskProps: typings.primereact.inputMaskMod.InputMaskProps.type = typings.primereact.inputMaskMod.InputMaskProps
   type InputMaskProps = typings.primereact.inputMaskMod.InputMaskProps
   @scala.inline
+  def InputNumberProps: typings.primereact.inputNumberMod.InputNumberProps.type = typings.primereact.inputNumberMod.InputNumberProps
+  type InputNumberProps = typings.primereact.inputNumberMod.InputNumberProps
+  @scala.inline
   def InputSwitchProps: typings.primereact.inputSwitchMod.InputSwitchProps.type = typings.primereact.inputSwitchMod.InputSwitchProps
   type InputSwitchProps = typings.primereact.inputSwitchMod.InputSwitchProps
   @scala.inline

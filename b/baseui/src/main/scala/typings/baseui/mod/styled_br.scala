@@ -15,7 +15,17 @@ import scala.scalajs.js.annotation._
 @JSImport("baseui", "styled")
 @js.native
 object styled_br extends js.Object {
-  def apply[P /* <: js.Object */, T](component: br_, styledFn: js.Function1[/* props */ AnonTheme[T] with P, StyleObject]): StyletronComponent[(Pick[ComponentProps[br_], Exclude[String, AnonClassName]]) with P] = js.native
-  def apply[P /* <: js.Object */, T](component: br_, styledFn: StyleObject): StyletronComponent[(Pick[ComponentProps[br_], Exclude[String, AnonClassName]]) with P] = js.native
+  def apply[P /* <: js.Object */, T](component: br_, styledFn: js.Function1[/* props */ AnonTheme[T] with P, StyleObject]): StyletronComponent[
+    (Pick[
+      ComponentProps[br_], 
+      Exclude[/* keyof react.react.ComponentProps<'br'> */ String, AnonClassName]
+    ]) with P
+  ] = js.native
+  def apply[P /* <: js.Object */, T](component: br_, styledFn: StyleObject): StyletronComponent[
+    (Pick[
+      ComponentProps[br_], 
+      Exclude[/* keyof react.react.ComponentProps<'br'> */ String, AnonClassName]
+    ]) with P
+  ] = js.native
 }
 

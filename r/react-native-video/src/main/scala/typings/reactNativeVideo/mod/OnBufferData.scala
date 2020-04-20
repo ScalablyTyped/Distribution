@@ -12,7 +12,6 @@ object OnBufferData {
   @scala.inline
   def apply(isBuffering: Boolean): OnBufferData = {
     val __obj = js.Dynamic.literal(isBuffering = isBuffering.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnBufferData]
   }
 }

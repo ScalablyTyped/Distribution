@@ -20,7 +20,6 @@ object AddButtonProps {
     onClick: typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent] => Unit
   ): AddButtonProps = {
     val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick))
-  
     __obj.asInstanceOf[AddButtonProps]
   }
 }

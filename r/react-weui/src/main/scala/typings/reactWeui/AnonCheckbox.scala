@@ -13,7 +13,6 @@ object AnonCheckbox {
   @scala.inline
   def apply(checkbox: Boolean, radio: Boolean): AnonCheckbox = {
     val __obj = js.Dynamic.literal(checkbox = checkbox.asInstanceOf[js.Any], radio = radio.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCheckbox]
   }
 }

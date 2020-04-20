@@ -47,24 +47,24 @@ abstract class EntityType protected () extends DataType {
   @JSName("model")
   var model_FEntityType: IModel = js.native
   @JSName("containerAsAppServiceActionParameter")
-  def containerAsAppServiceActionParameter_MEntityType(): AppServiceActionParameter = js.native
+  def containerAsAppServiceActionParameter_MEntityType: AppServiceActionParameter = js.native
   @JSName("containerAsAppServiceAction")
-  def containerAsAppServiceAction_MEntityType(): AppServiceAction = js.native
+  def containerAsAppServiceAction_MEntityType: AppServiceAction = js.native
   @JSName("containerAsConstant")
-  def containerAsConstant_MEntityType(): Constant = js.native
+  def containerAsConstant_MEntityType: Constant = js.native
   @JSName("containerAsDataSetParameter")
-  def containerAsDataSetParameter_MEntityType(): DataSetParameter = js.native
+  def containerAsDataSetParameter_MEntityType: DataSetParameter = js.native
   @JSName("containerAsDocumentTemplateParameter")
-  def containerAsDocumentTemplateParameter_MEntityType(): DocumentTemplateParameter = js.native
+  def containerAsDocumentTemplateParameter_MEntityType: DocumentTemplateParameter = js.native
   @JSName("containerAsImportMapping")
-  def containerAsImportMapping_MEntityType(): ImportMapping = js.native
+  def containerAsImportMapping_MEntityType: ImportMapping = js.native
   @JSName("containerAsMicroflowBase")
-  def containerAsMicroflowBase_MEntityType(): MicroflowBase = js.native
+  def containerAsMicroflowBase_MEntityType: MicroflowBase = js.native
   @JSName("containerAsMicroflowParameterBase")
-  def containerAsMicroflowParameterBase_MEntityType(): MicroflowParameterBase = js.native
-  def entity(): IEntity = js.native
+  def containerAsMicroflowParameterBase_MEntityType: MicroflowParameterBase = js.native
+  def entity: IEntity = js.native
   def entity(newValue: IEntity): js.Any = js.native
-  def entityQualifiedName(): String = js.native
+  def entityQualifiedName: String = js.native
 }
 
 /* static members */

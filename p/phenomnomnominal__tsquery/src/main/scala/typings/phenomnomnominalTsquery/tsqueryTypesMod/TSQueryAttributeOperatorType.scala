@@ -13,12 +13,10 @@ trait TSQueryAttributeOperatorType extends js.Object
 
 object TSQueryAttributeOperatorType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def literal: typings.phenomnomnominalTsquery.phenomnomnominalTsqueryStrings.literal = "literal".asInstanceOf[typings.phenomnomnominalTsquery.phenomnomnominalTsqueryStrings.literal]
   @scala.inline
-  def literal: typings.phenomnomnominalTsquery.phenomnomnominalTsqueryStrings.literal = this.cast("literal")
+  def regexp: typings.phenomnomnominalTsquery.phenomnomnominalTsqueryStrings.regexp = "regexp".asInstanceOf[typings.phenomnomnominalTsquery.phenomnomnominalTsqueryStrings.regexp]
   @scala.inline
-  def regexp: typings.phenomnomnominalTsquery.phenomnomnominalTsqueryStrings.regexp = this.cast("regexp")
-  @scala.inline
-  def `type`: typings.phenomnomnominalTsquery.phenomnomnominalTsqueryStrings.`type` = this.cast("type")
+  def `type`: typings.phenomnomnominalTsquery.phenomnomnominalTsqueryStrings.`type` = "type".asInstanceOf[typings.phenomnomnominalTsquery.phenomnomnominalTsqueryStrings.`type`]
 }
 

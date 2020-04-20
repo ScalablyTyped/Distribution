@@ -22,13 +22,11 @@ object Segment {
   @scala.inline
   def WalkSegment(distance: Double, instruction: String, time: Double, transit: WalkDetails, transit_mode: WALK): Segment = {
     val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], instruction = instruction.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], transit = transit.asInstanceOf[js.Any], transit_mode = transit_mode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Segment]
   }
   @scala.inline
   def TaxiSegment(distance: Double, instruction: String, time: Double, transit: TaxiDetails, transit_mode: TAXI): Segment = {
     val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], instruction = instruction.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], transit = transit.asInstanceOf[js.Any], transit_mode = transit_mode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Segment]
   }
   @scala.inline
@@ -40,7 +38,6 @@ object Segment {
     transit_mode: SUBWAY | METRO_RAIL | BUS
   ): Segment = {
     val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], instruction = instruction.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], transit = transit.asInstanceOf[js.Any], transit_mode = transit_mode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Segment]
   }
   @scala.inline
@@ -52,7 +49,6 @@ object Segment {
     transit_mode: RAILWAY
   ): Segment = {
     val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], instruction = instruction.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], transit = transit.asInstanceOf[js.Any], transit_mode = transit_mode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Segment]
   }
 }

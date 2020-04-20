@@ -18,8 +18,11 @@ trait Action extends js.Object {
     **/
   var id: (ToStringLiteral[
     AnonOFFLINENOTNECESSARY, 
-    String, 
-    Exclude[String, SAVE_FOR_OFFLINE | OFFLINE_NOT_NECESSARY | SHARE]
+    SAVE_FOR_OFFLINE | OFFLINE_NOT_NECESSARY | SHARE, 
+    Exclude[
+      SAVE_FOR_OFFLINE | OFFLINE_NOT_NECESSARY | SHARE, 
+      SAVE_FOR_OFFLINE | OFFLINE_NOT_NECESSARY | SHARE
+    ]
   ]) | String
   /** The title of the action. It may be ignored for common actions.  */
   var title: js.UndefOr[String] = js.undefined
@@ -30,8 +33,11 @@ object Action {
   def apply(
     id: (ToStringLiteral[
       AnonOFFLINENOTNECESSARY, 
-      String, 
-      Exclude[String, SAVE_FOR_OFFLINE | OFFLINE_NOT_NECESSARY | SHARE]
+      SAVE_FOR_OFFLINE | OFFLINE_NOT_NECESSARY | SHARE, 
+      Exclude[
+        SAVE_FOR_OFFLINE | OFFLINE_NOT_NECESSARY | SHARE, 
+        SAVE_FOR_OFFLINE | OFFLINE_NOT_NECESSARY | SHARE
+      ]
     ]) | String,
     title: String = null
   ): Action = {

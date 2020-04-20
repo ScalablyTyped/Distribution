@@ -15,7 +15,6 @@ object CreativeAssetsResource {
   @scala.inline
   def apply(insert: AnonPrettyPrint => Request_[CreativeAssetMetadata]): CreativeAssetsResource = {
     val __obj = js.Dynamic.literal(insert = js.Any.fromFunction1(insert))
-  
     __obj.asInstanceOf[CreativeAssetsResource]
   }
 }

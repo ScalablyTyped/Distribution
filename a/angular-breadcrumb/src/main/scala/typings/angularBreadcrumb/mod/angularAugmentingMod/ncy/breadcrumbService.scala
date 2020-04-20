@@ -20,7 +20,6 @@ object breadcrumbService {
   @scala.inline
   def apply(getLastStep: () => IState, getStatesChain: () => js.Array[IState]): breadcrumbService = {
     val __obj = js.Dynamic.literal(getLastStep = js.Any.fromFunction0(getLastStep), getStatesChain = js.Any.fromFunction0(getStatesChain))
-  
     __obj.asInstanceOf[breadcrumbService]
   }
 }

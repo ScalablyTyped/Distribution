@@ -13,12 +13,10 @@ trait GoogleActionsV2NewSurfaceValueStatus extends js.Object
 
 object GoogleActionsV2NewSurfaceValueStatus {
   @scala.inline
-  def CANCELLED: typings.actionsOnGoogle.actionsOnGoogleStrings.CANCELLED = this.cast("CANCELLED")
+  def CANCELLED: typings.actionsOnGoogle.actionsOnGoogleStrings.CANCELLED = "CANCELLED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CANCELLED]
   @scala.inline
-  def NEW_SURFACE_STATUS_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.NEW_SURFACE_STATUS_UNSPECIFIED = this.cast("NEW_SURFACE_STATUS_UNSPECIFIED")
+  def NEW_SURFACE_STATUS_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.NEW_SURFACE_STATUS_UNSPECIFIED = "NEW_SURFACE_STATUS_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.NEW_SURFACE_STATUS_UNSPECIFIED]
   @scala.inline
-  def OK: typings.actionsOnGoogle.actionsOnGoogleStrings.OK = this.cast("OK")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def OK: typings.actionsOnGoogle.actionsOnGoogleStrings.OK = "OK".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.OK]
 }
 

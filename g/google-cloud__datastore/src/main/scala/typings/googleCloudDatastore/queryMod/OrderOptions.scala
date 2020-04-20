@@ -12,7 +12,6 @@ object OrderOptions {
   @scala.inline
   def apply(descending: Boolean): OrderOptions = {
     val __obj = js.Dynamic.literal(descending = descending.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OrderOptions]
   }
 }

@@ -14,7 +14,6 @@ object View {
   @scala.inline
   def apply(bind: () => Unit, build: () => Unit, unbind: () => Unit): View = {
     val __obj = js.Dynamic.literal(bind = js.Any.fromFunction0(bind), build = js.Any.fromFunction0(build), unbind = js.Any.fromFunction0(unbind))
-  
     __obj.asInstanceOf[View]
   }
 }

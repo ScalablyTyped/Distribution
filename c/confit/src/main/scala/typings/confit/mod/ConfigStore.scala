@@ -14,7 +14,6 @@ object ConfigStore {
   @scala.inline
   def apply(get: String => js.Any, set: (String, js.Any) => js.Any, use: js.Object => Unit): ConfigStore = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), set = js.Any.fromFunction2(set), use = js.Any.fromFunction1(use))
-  
     __obj.asInstanceOf[ConfigStore]
   }
 }

@@ -20,7 +20,6 @@ object DisassociateResolverRuleRequest {
   @scala.inline
   def apply(ResolverRuleId: ResourceId, VPCId: ResourceId): DisassociateResolverRuleRequest = {
     val __obj = js.Dynamic.literal(ResolverRuleId = ResolverRuleId.asInstanceOf[js.Any], VPCId = VPCId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisassociateResolverRuleRequest]
   }
 }

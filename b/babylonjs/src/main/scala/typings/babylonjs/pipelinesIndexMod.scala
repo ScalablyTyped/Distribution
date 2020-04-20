@@ -133,7 +133,7 @@ object pipelinesIndexMod extends js.Object {
     /**
       *  Support test.
       */
-    def IsSupported(): Boolean = js.native
+    def IsSupported: Boolean = js.native
     /**
       * Parse the serialized pipeline
       * @param source Source pipeline.

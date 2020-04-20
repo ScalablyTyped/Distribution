@@ -14,7 +14,6 @@ object AnonFullSession {
   @scala.inline
   def apply(full: Boolean, session: ClientSession): AnonFullSession = {
     val __obj = js.Dynamic.literal(full = full.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFullSession]
   }
 }

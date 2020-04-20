@@ -17,7 +17,6 @@ object devicesArrayBluetoothDevi {
   @scala.inline
   def apply(devices: js.Array[BluetoothDevice], errMsg: ok | String): devicesArrayBluetoothDevi = {
     val __obj = js.Dynamic.literal(devices = devices.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[devicesArrayBluetoothDevi]
   }
 }

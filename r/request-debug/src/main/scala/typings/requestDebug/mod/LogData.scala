@@ -28,7 +28,6 @@ object LogData {
   @scala.inline
   def RedirectData(debugId: Double, headers: Headers, statusCode: Double, uri: String): LogData = {
     val __obj = js.Dynamic.literal(debugId = debugId.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LogData]
   }
 }

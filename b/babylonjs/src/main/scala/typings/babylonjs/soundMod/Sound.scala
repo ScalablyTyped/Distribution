@@ -153,7 +153,7 @@ class Sound protected () extends js.Object {
   /**
     * Gets or sets the inner angle for the directional cone.
     */
-  def directionalConeInnerAngle(): Double = js.native
+  def directionalConeInnerAngle: Double = js.native
   /**
     * Gets or sets the inner angle for the directional cone.
     */
@@ -161,7 +161,7 @@ class Sound protected () extends js.Object {
   /**
     * Gets or sets the outer angle for the directional cone.
     */
-  def directionalConeOuterAngle(): Double = js.native
+  def directionalConeOuterAngle: Double = js.native
   /**
     * Gets or sets the outer angle for the directional cone.
     */

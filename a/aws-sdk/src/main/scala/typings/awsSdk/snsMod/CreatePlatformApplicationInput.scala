@@ -24,7 +24,6 @@ object CreatePlatformApplicationInput {
   @scala.inline
   def apply(Attributes: MapStringToString, Name: String, Platform: String): CreatePlatformApplicationInput = {
     val __obj = js.Dynamic.literal(Attributes = Attributes.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Platform = Platform.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreatePlatformApplicationInput]
   }
 }

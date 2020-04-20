@@ -15,7 +15,6 @@ object ListApiKeysResponse {
   @scala.inline
   def apply(keys: js.Array[GetApiKeyResponse]): ListApiKeysResponse = {
     val __obj = js.Dynamic.literal(keys = keys.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListApiKeysResponse]
   }
 }

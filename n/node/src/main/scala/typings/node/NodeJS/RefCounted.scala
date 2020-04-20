@@ -13,7 +13,6 @@ object RefCounted {
   @scala.inline
   def apply(ref: () => RefCounted, unref: () => RefCounted): RefCounted = {
     val __obj = js.Dynamic.literal(ref = js.Any.fromFunction0(ref), unref = js.Any.fromFunction0(unref))
-  
     __obj.asInstanceOf[RefCounted]
   }
 }

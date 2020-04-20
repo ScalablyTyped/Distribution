@@ -18,22 +18,20 @@ trait FlexWrapProperty extends js.Object
 
 object FlexWrapProperty {
   @scala.inline
-  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = this.cast("-moz-initial")
+  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.csstype.csstypeStrings.`-moz-initial`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def inherit: typings.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[typings.csstype.csstypeStrings.inherit]
   @scala.inline
-  def inherit: typings.csstype.csstypeStrings.inherit = this.cast("inherit")
+  def initial: typings.csstype.csstypeStrings.initial = "initial".asInstanceOf[typings.csstype.csstypeStrings.initial]
   @scala.inline
-  def initial: typings.csstype.csstypeStrings.initial = this.cast("initial")
+  def nowrap: typings.csstype.csstypeStrings.nowrap = "nowrap".asInstanceOf[typings.csstype.csstypeStrings.nowrap]
   @scala.inline
-  def nowrap: typings.csstype.csstypeStrings.nowrap = this.cast("nowrap")
+  def revert: typings.csstype.csstypeStrings.revert = "revert".asInstanceOf[typings.csstype.csstypeStrings.revert]
   @scala.inline
-  def revert: typings.csstype.csstypeStrings.revert = this.cast("revert")
+  def unset: typings.csstype.csstypeStrings.unset = "unset".asInstanceOf[typings.csstype.csstypeStrings.unset]
   @scala.inline
-  def unset: typings.csstype.csstypeStrings.unset = this.cast("unset")
+  def wrap: typings.csstype.csstypeStrings.wrap = "wrap".asInstanceOf[typings.csstype.csstypeStrings.wrap]
   @scala.inline
-  def wrap: typings.csstype.csstypeStrings.wrap = this.cast("wrap")
-  @scala.inline
-  def `wrap-reverse`: typings.csstype.csstypeStrings.`wrap-reverse` = this.cast("wrap-reverse")
+  def `wrap-reverse`: typings.csstype.csstypeStrings.`wrap-reverse` = "wrap-reverse".asInstanceOf[typings.csstype.csstypeStrings.`wrap-reverse`]
 }
 

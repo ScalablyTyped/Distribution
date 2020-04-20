@@ -1,9 +1,9 @@
 package typings.reactDayPicker.propsMod
 
 import typings.react.mod.FocusEvent
-import typings.reactDayPicker.commonMod.DayModifiers
-import typings.reactDayPicker.commonMod.InputClassNames
-import typings.reactDayPicker.dayPickerInputMod.DayPickerInput
+import typings.reactDayPicker.classNamesMod.InputClassNames
+import typings.reactDayPicker.dayPickerInputMod.default
+import typings.reactDayPicker.modifiersMod.DayModifiers
 import typings.std.Date
 import typings.std.HTMLDivElement
 import scala.scalajs.js
@@ -13,7 +13,6 @@ import scala.scalajs.js.annotation._
 trait DayPickerInputProps extends js.Object {
   var classNames: js.UndefOr[InputClassNames] = js.undefined
   var clickUnselectsDay: js.UndefOr[Boolean] = js.undefined
-  // Not sure React.ComponentClass<any> is the right type for _propTypes2.default.any
   var component: js.UndefOr[js.Any] = js.undefined
   var dayPickerProps: js.UndefOr[DayPickerProps] = js.undefined
   var format: js.UndefOr[String | js.Array[String]] = js.undefined
@@ -25,12 +24,7 @@ trait DayPickerInputProps extends js.Object {
   var onChange: js.UndefOr[js.Function1[/* e */ FocusEvent[HTMLDivElement], Unit]] = js.undefined
   var onClick: js.UndefOr[js.Function1[/* e */ FocusEvent[HTMLDivElement], Unit]] = js.undefined
   var onDayChange: js.UndefOr[
-    js.Function3[
-      /* day */ Date, 
-      /* DayModifiers */ DayModifiers, 
-      /* dayPickerInput */ DayPickerInput, 
-      Unit
-    ]
+    js.Function3[/* day */ Date, /* DayModifiers */ DayModifiers, /* dayPickerInput */ default, Unit]
   ] = js.undefined
   var onDayPickerHide: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onDayPickerShow: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -42,6 +36,7 @@ trait DayPickerInputProps extends js.Object {
   ] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var showOverlay: js.UndefOr[Boolean] = js.undefined
+  var style: js.UndefOr[js.Object] = js.undefined
   var value: js.UndefOr[String | Date] = js.undefined
 }
 
@@ -60,7 +55,7 @@ object DayPickerInputProps {
     onBlur: /* e */ FocusEvent[HTMLDivElement] => Unit = null,
     onChange: /* e */ FocusEvent[HTMLDivElement] => Unit = null,
     onClick: /* e */ FocusEvent[HTMLDivElement] => Unit = null,
-    onDayChange: (/* day */ Date, /* DayModifiers */ DayModifiers, /* dayPickerInput */ DayPickerInput) => Unit = null,
+    onDayChange: (/* day */ Date, /* DayModifiers */ DayModifiers, /* dayPickerInput */ default) => Unit = null,
     onDayPickerHide: () => Unit = null,
     onDayPickerShow: () => Unit = null,
     onFocus: /* e */ FocusEvent[HTMLDivElement] => Unit = null,
@@ -69,6 +64,7 @@ object DayPickerInputProps {
     parseDate: (/* str */ String, /* format */ String, /* locale */ String) => Date | Unit = null,
     placeholder: String = null,
     showOverlay: js.UndefOr[Boolean] = js.undefined,
+    style: js.Object = null,
     value: String | Date = null
   ): DayPickerInputProps = {
     val __obj = js.Dynamic.literal()
@@ -93,6 +89,7 @@ object DayPickerInputProps {
     if (parseDate != null) __obj.updateDynamic("parseDate")(js.Any.fromFunction3(parseDate))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (!js.isUndefined(showOverlay)) __obj.updateDynamic("showOverlay")(showOverlay.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DayPickerInputProps]
   }

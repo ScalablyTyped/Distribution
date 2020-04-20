@@ -13,7 +13,6 @@ object BaseLine {
   @scala.inline
   def apply(fontSize: String, lineHeight: String): BaseLine = {
     val __obj = js.Dynamic.literal(fontSize = fontSize.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BaseLine]
   }
 }

@@ -12,7 +12,6 @@ object AnonEscapedIdentifier {
   @scala.inline
   def apply(__escapedIdentifier: Unit): AnonEscapedIdentifier = {
     val __obj = js.Dynamic.literal(__escapedIdentifier = __escapedIdentifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEscapedIdentifier]
   }
 }

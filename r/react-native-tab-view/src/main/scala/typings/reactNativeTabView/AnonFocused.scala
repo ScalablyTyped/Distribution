@@ -15,7 +15,6 @@ object AnonFocused {
   @scala.inline
   def apply[T /* <: Route */](color: String, focused: Boolean, route: T): AnonFocused[T] = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], focused = focused.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFocused[T]]
   }
 }

@@ -34,7 +34,6 @@ object TeamSettingsIteration {
     url: String
   ): TeamSettingsIteration = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], attributes = attributes.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TeamSettingsIteration]
   }
 }

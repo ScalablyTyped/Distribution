@@ -16,7 +16,6 @@ object ServerEdit {
   @scala.inline
   def apply(invoker: TeamSpeakClient, modified: PartialQueryResponseTypes, reasonid: Double): ServerEdit = {
     val __obj = js.Dynamic.literal(invoker = invoker.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any], reasonid = reasonid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ServerEdit]
   }
 }

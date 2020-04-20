@@ -48,82 +48,80 @@ trait ICSSDisplayRule extends js.Object
 
 object ICSSDisplayRule {
   @scala.inline
-  def block: typings.uifabricMergeStyles.uifabricMergeStylesStrings.block = this.cast("block")
+  def block: typings.uifabricMergeStyles.uifabricMergeStylesStrings.block = "block".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.block]
   @scala.inline
-  def `block flow`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`block flow` = this.cast("block flow")
+  def `block flow`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`block flow` = ("block flow").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`block flow`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def contents: typings.uifabricMergeStyles.uifabricMergeStylesStrings.contents = "contents".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.contents]
   @scala.inline
-  def contents: typings.uifabricMergeStyles.uifabricMergeStylesStrings.contents = this.cast("contents")
+  def flex: typings.uifabricMergeStyles.uifabricMergeStylesStrings.flex = "flex".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.flex]
   @scala.inline
-  def flex: typings.uifabricMergeStyles.uifabricMergeStylesStrings.flex = this.cast("flex")
+  def `flex run-in`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`flex run-in` = ("flex run-in").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`flex run-in`]
   @scala.inline
-  def `flex run-in`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`flex run-in` = this.cast("flex run-in")
+  def flow: typings.uifabricMergeStyles.uifabricMergeStylesStrings.flow = "flow".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.flow]
   @scala.inline
-  def flow: typings.uifabricMergeStyles.uifabricMergeStylesStrings.flow = this.cast("flow")
+  def `flow list-item block`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`flow list-item block` = ("flow list-item block").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`flow list-item block`]
   @scala.inline
-  def `flow list-item block`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`flow list-item block` = this.cast("flow list-item block")
+  def `flow-root`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`flow-root` = "flow-root".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`flow-root`]
   @scala.inline
-  def `flow-root`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`flow-root` = this.cast("flow-root")
+  def grid: typings.uifabricMergeStyles.uifabricMergeStylesStrings.grid = "grid".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.grid]
   @scala.inline
-  def grid: typings.uifabricMergeStyles.uifabricMergeStylesStrings.grid = this.cast("grid")
+  def `inline`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline` = "inline".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline`]
   @scala.inline
-  def `inline`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline` = this.cast("inline")
+  def `inline table`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline table` = ("inline table").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline table`]
   @scala.inline
-  def `inline table`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline table` = this.cast("inline table")
+  def `inline-block`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline-block` = "inline-block".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline-block`]
   @scala.inline
-  def `inline-block`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline-block` = this.cast("inline-block")
+  def `inline-flex`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline-flex` = "inline-flex".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline-flex`]
   @scala.inline
-  def `inline-flex`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline-flex` = this.cast("inline-flex")
+  def `inline-grid`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline-grid` = "inline-grid".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline-grid`]
   @scala.inline
-  def `inline-grid`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline-grid` = this.cast("inline-grid")
+  def `inline-table`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline-table` = "inline-table".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline-table`]
   @scala.inline
-  def `inline-table`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline-table` = this.cast("inline-table")
+  def `list-item`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item` = "list-item".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item`]
   @scala.inline
-  def `list-item`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item` = this.cast("list-item")
+  def `list-item block`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item block` = ("list-item block").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item block`]
   @scala.inline
-  def `list-item block`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item block` = this.cast("list-item block")
+  def `list-item block flow`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item block flow` = ("list-item block flow").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item block flow`]
   @scala.inline
-  def `list-item block flow`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item block flow` = this.cast("list-item block flow")
+  def `list-item block flow-root`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item block flow-root` = ("list-item block flow-root").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item block flow-root`]
   @scala.inline
-  def `list-item block flow-root`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item block flow-root` = this.cast("list-item block flow-root")
+  def `list-item flow`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item flow` = ("list-item flow").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item flow`]
   @scala.inline
-  def `list-item flow`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item flow` = this.cast("list-item flow")
+  def `list-item flow-root`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item flow-root` = ("list-item flow-root").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item flow-root`]
   @scala.inline
-  def `list-item flow-root`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item flow-root` = this.cast("list-item flow-root")
+  def `list-item inline`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item inline` = ("list-item inline").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item inline`]
   @scala.inline
-  def `list-item inline`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item inline` = this.cast("list-item inline")
+  def none: typings.uifabricMergeStyles.uifabricMergeStylesStrings.none = "none".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.none]
   @scala.inline
-  def none: typings.uifabricMergeStyles.uifabricMergeStylesStrings.none = this.cast("none")
+  def ruby: typings.uifabricMergeStyles.uifabricMergeStylesStrings.ruby = "ruby".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.ruby]
   @scala.inline
-  def ruby: typings.uifabricMergeStyles.uifabricMergeStylesStrings.ruby = this.cast("ruby")
+  def `ruby-base`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`ruby-base` = "ruby-base".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`ruby-base`]
   @scala.inline
-  def `ruby-base`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`ruby-base` = this.cast("ruby-base")
+  def `ruby-base-container`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`ruby-base-container` = "ruby-base-container".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`ruby-base-container`]
   @scala.inline
-  def `ruby-base-container`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`ruby-base-container` = this.cast("ruby-base-container")
+  def `ruby-text`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`ruby-text` = "ruby-text".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`ruby-text`]
   @scala.inline
-  def `ruby-text`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`ruby-text` = this.cast("ruby-text")
+  def `ruby-text-container`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`ruby-text-container` = "ruby-text-container".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`ruby-text-container`]
   @scala.inline
-  def `ruby-text-container`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`ruby-text-container` = this.cast("ruby-text-container")
+  def `run-in`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`run-in` = "run-in".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`run-in`]
   @scala.inline
-  def `run-in`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`run-in` = this.cast("run-in")
+  def table: typings.uifabricMergeStyles.uifabricMergeStylesStrings.table = "table".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.table]
   @scala.inline
-  def table: typings.uifabricMergeStyles.uifabricMergeStylesStrings.table = this.cast("table")
+  def `table-caption`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-caption` = "table-caption".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-caption`]
   @scala.inline
-  def `table-caption`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-caption` = this.cast("table-caption")
+  def `table-cell`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-cell` = "table-cell".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-cell`]
   @scala.inline
-  def `table-cell`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-cell` = this.cast("table-cell")
+  def `table-column`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-column` = "table-column".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-column`]
   @scala.inline
-  def `table-column`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-column` = this.cast("table-column")
+  def `table-column-group`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-column-group` = "table-column-group".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-column-group`]
   @scala.inline
-  def `table-column-group`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-column-group` = this.cast("table-column-group")
+  def `table-footer-group`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-footer-group` = "table-footer-group".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-footer-group`]
   @scala.inline
-  def `table-footer-group`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-footer-group` = this.cast("table-footer-group")
+  def `table-header-group`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-header-group` = "table-header-group".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-header-group`]
   @scala.inline
-  def `table-header-group`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-header-group` = this.cast("table-header-group")
+  def `table-row`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-row` = "table-row".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-row`]
   @scala.inline
-  def `table-row`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-row` = this.cast("table-row")
-  @scala.inline
-  def `table-row-group`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-row-group` = this.cast("table-row-group")
+  def `table-row-group`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-row-group` = "table-row-group".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-row-group`]
 }
 

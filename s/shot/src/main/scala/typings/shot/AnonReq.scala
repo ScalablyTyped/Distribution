@@ -17,7 +17,6 @@ object AnonReq {
   @scala.inline
   def apply(req: SimulatedRequestObject, res: SimulatedResponseObject): AnonReq = {
     val __obj = js.Dynamic.literal(req = req.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonReq]
   }
 }

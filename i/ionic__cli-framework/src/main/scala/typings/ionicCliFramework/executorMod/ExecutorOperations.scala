@@ -12,7 +12,6 @@ object ExecutorOperations {
   @scala.inline
   def apply(RPC: String): ExecutorOperations = {
     val __obj = js.Dynamic.literal(RPC = RPC.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExecutorOperations]
   }
 }

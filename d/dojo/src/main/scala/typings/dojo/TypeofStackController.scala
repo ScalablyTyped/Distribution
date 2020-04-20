@@ -34,7 +34,6 @@ object TypeofStackController {
     ]
   ): TypeofStackController = {
     val __obj = js.Dynamic.literal(StackButton = StackButton.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofStackController]
   }
 }

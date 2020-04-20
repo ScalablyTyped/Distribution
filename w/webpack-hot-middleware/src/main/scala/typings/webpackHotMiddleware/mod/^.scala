@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(compiler: ICompiler): NextHandleFunction with EventStream = js.native
-  def apply(compiler: ICompiler, options: Options): NextHandleFunction with EventStream = js.native
+  def apply(compiler: ICompiler, options: MiddlewareOptions): NextHandleFunction with EventStream = js.native
 }
 

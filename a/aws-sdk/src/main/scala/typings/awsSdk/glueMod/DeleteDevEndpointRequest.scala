@@ -16,7 +16,6 @@ object DeleteDevEndpointRequest {
   @scala.inline
   def apply(EndpointName: GenericString): DeleteDevEndpointRequest = {
     val __obj = js.Dynamic.literal(EndpointName = EndpointName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteDevEndpointRequest]
   }
 }

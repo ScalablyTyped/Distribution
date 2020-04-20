@@ -12,7 +12,6 @@ object IInitializeWithCoreWindow {
   @scala.inline
   def apply(initialize: CoreWindow => Unit): IInitializeWithCoreWindow = {
     val __obj = js.Dynamic.literal(initialize = js.Any.fromFunction1(initialize))
-  
     __obj.asInstanceOf[IInitializeWithCoreWindow]
   }
 }

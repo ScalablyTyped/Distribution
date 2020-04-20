@@ -14,13 +14,13 @@ trait GeoJSONLayerCapabilitiesQueryRelated extends Object {
     */
   var supportsCount: Boolean
   /**
-    * Indicates if the related features or records returned in the query response can be ordered by one or more fields. Requires ArcGIS Server service 10.3 or greater.
+    * Indicates if the related features or records returned in the query response can be ordered by one or more fields.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#capabilities)
     */
   var supportsOrderBy: Boolean
   /**
-    * Indicates if the query response supports pagination for related features or records. Requires ArcGIS Server service 10.3 or greater.
+    * Indicates if the query response supports pagination for related features or records.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#capabilities)
     */
@@ -38,7 +38,6 @@ object GeoJSONLayerCapabilitiesQueryRelated {
     supportsPagination: Boolean
   ): GeoJSONLayerCapabilitiesQueryRelated = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsCount = supportsCount.asInstanceOf[js.Any], supportsOrderBy = supportsOrderBy.asInstanceOf[js.Any], supportsPagination = supportsPagination.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GeoJSONLayerCapabilitiesQueryRelated]
   }
 }

@@ -20,7 +20,6 @@ object UsagePlanApiStage {
   @scala.inline
   def apply(apiId: String, stage: String): UsagePlanApiStage = {
     val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any], stage = stage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UsagePlanApiStage]
   }
 }

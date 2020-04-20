@@ -14,7 +14,6 @@ object AnonLemma {
   @scala.inline
   def apply(lemma: `true`, normal: `true`): AnonLemma = {
     val __obj = js.Dynamic.literal(lemma = lemma.asInstanceOf[js.Any], normal = normal.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLemma]
   }
 }

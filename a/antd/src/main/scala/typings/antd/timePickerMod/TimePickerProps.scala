@@ -158,6 +158,7 @@ trait TimePickerProps extends js.Object {
   var open: js.UndefOr[Boolean] = js.undefined
   var pickerRef: js.UndefOr[MutableRefObject[PickerRefConfig]] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
+  var popupClassName: js.UndefOr[String] = js.undefined
   var popupStyle: js.UndefOr[CSSProperties] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
   var renderExtraFooter: js.UndefOr[js.Function1[/* mode */ PanelMode, ReactNode]] = js.undefined
@@ -271,6 +272,7 @@ object TimePickerProps {
     open: js.UndefOr[Boolean] = js.undefined,
     pickerRef: MutableRefObject[PickerRefConfig] = null,
     placeholder: String = null,
+    popupClassName: String = null,
     popupStyle: CSSProperties = null,
     prefixCls: String = null,
     renderExtraFooter: /* mode */ PanelMode => ReactNode = null,
@@ -381,6 +383,7 @@ object TimePickerProps {
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
     if (pickerRef != null) __obj.updateDynamic("pickerRef")(pickerRef.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (popupClassName != null) __obj.updateDynamic("popupClassName")(popupClassName.asInstanceOf[js.Any])
     if (popupStyle != null) __obj.updateDynamic("popupStyle")(popupStyle.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (renderExtraFooter != null) __obj.updateDynamic("renderExtraFooter")(js.Any.fromFunction1(renderExtraFooter))

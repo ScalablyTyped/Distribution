@@ -16,7 +16,6 @@ object AnonKind {
   @scala.inline
   def apply(kind: V8Coverage, result: SingleV8Coverage): AnonKind = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonKind]
   }
 }

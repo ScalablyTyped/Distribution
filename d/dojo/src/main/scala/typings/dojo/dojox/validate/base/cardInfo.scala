@@ -74,7 +74,6 @@ object cardInfo {
     vi: String
   ): cardInfo = {
     val __obj = js.Dynamic.literal(ax = ax.asInstanceOf[js.Any], bl = bl.asInstanceOf[js.Any], dc = dc.asInstanceOf[js.Any], di = di.asInstanceOf[js.Any], ec = ec.asInstanceOf[js.Any], er = er.asInstanceOf[js.Any], jcb = jcb.asInstanceOf[js.Any], mc = mc.asInstanceOf[js.Any], vi = vi.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[cardInfo]
   }
 }

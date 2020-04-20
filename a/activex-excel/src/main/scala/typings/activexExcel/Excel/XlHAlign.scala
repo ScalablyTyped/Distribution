@@ -26,22 +26,20 @@ trait XlHAlign extends js.Object
 
 object XlHAlign {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlHAlignCenter: `-4108` = -4108.asInstanceOf[`-4108`]
   @scala.inline
-  def xlHAlignCenter: `-4108` = this.cast(-4108)
+  def xlHAlignCenterAcrossSelection: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def xlHAlignCenterAcrossSelection: `7` = this.cast(7)
+  def xlHAlignDistributed: `-4117` = -4117.asInstanceOf[`-4117`]
   @scala.inline
-  def xlHAlignDistributed: `-4117` = this.cast(-4117)
+  def xlHAlignFill: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xlHAlignFill: `5` = this.cast(5)
+  def xlHAlignGeneral: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlHAlignGeneral: `1` = this.cast(1)
+  def xlHAlignJustify: `-4130` = -4130.asInstanceOf[`-4130`]
   @scala.inline
-  def xlHAlignJustify: `-4130` = this.cast(-4130)
+  def xlHAlignLeft: `-4131` = -4131.asInstanceOf[`-4131`]
   @scala.inline
-  def xlHAlignLeft: `-4131` = this.cast(-4131)
-  @scala.inline
-  def xlHAlignRight: `-4152` = this.cast(-4152)
+  def xlHAlignRight: `-4152` = -4152.asInstanceOf[`-4152`]
 }
 

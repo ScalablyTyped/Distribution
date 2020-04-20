@@ -52,7 +52,6 @@ object CustomResourceDefinitionNames {
     singular: String
   ): CustomResourceDefinitionNames = {
     val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], listKind = listKind.asInstanceOf[js.Any], plural = plural.asInstanceOf[js.Any], shortNames = shortNames.asInstanceOf[js.Any], singular = singular.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CustomResourceDefinitionNames]
   }
 }

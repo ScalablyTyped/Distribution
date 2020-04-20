@@ -13,7 +13,6 @@ object AnonTransporter {
   @scala.inline
   def apply(transporter: Transporter): AnonTransporter = {
     val __obj = js.Dynamic.literal(transporter = transporter.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTransporter]
   }
 }

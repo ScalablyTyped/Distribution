@@ -18,22 +18,20 @@ trait DataValidationOperator extends js.Object
 
 object DataValidationOperator {
   @scala.inline
-  def between: typings.exceljs.exceljsStrings.between = this.cast("between")
+  def between: typings.exceljs.exceljsStrings.between = "between".asInstanceOf[typings.exceljs.exceljsStrings.between]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def equal: typings.exceljs.exceljsStrings.equal = "equal".asInstanceOf[typings.exceljs.exceljsStrings.equal]
   @scala.inline
-  def equal: typings.exceljs.exceljsStrings.equal = this.cast("equal")
+  def greaterThan: typings.exceljs.exceljsStrings.greaterThan = "greaterThan".asInstanceOf[typings.exceljs.exceljsStrings.greaterThan]
   @scala.inline
-  def greaterThan: typings.exceljs.exceljsStrings.greaterThan = this.cast("greaterThan")
+  def greaterThanOrEqual: typings.exceljs.exceljsStrings.greaterThanOrEqual = "greaterThanOrEqual".asInstanceOf[typings.exceljs.exceljsStrings.greaterThanOrEqual]
   @scala.inline
-  def greaterThanOrEqual: typings.exceljs.exceljsStrings.greaterThanOrEqual = this.cast("greaterThanOrEqual")
+  def lessThan: typings.exceljs.exceljsStrings.lessThan = "lessThan".asInstanceOf[typings.exceljs.exceljsStrings.lessThan]
   @scala.inline
-  def lessThan: typings.exceljs.exceljsStrings.lessThan = this.cast("lessThan")
+  def lessThanOrEqual: typings.exceljs.exceljsStrings.lessThanOrEqual = "lessThanOrEqual".asInstanceOf[typings.exceljs.exceljsStrings.lessThanOrEqual]
   @scala.inline
-  def lessThanOrEqual: typings.exceljs.exceljsStrings.lessThanOrEqual = this.cast("lessThanOrEqual")
+  def notBetween: typings.exceljs.exceljsStrings.notBetween = "notBetween".asInstanceOf[typings.exceljs.exceljsStrings.notBetween]
   @scala.inline
-  def notBetween: typings.exceljs.exceljsStrings.notBetween = this.cast("notBetween")
-  @scala.inline
-  def notEqual: typings.exceljs.exceljsStrings.notEqual = this.cast("notEqual")
+  def notEqual: typings.exceljs.exceljsStrings.notEqual = "notEqual".asInstanceOf[typings.exceljs.exceljsStrings.notEqual]
 }
 

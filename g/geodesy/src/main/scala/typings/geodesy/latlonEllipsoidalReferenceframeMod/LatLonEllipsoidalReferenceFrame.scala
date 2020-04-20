@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 trait LatLonEllipsoidalReferenceFrame
   extends typings.geodesy.latlonEllipsoidalMod.default {
   def convertReferenceFrame(toReferenceFrame: ReferenceFrame): LatLonEllipsoidalReferenceFrame = js.native
-  def epoch(): Double = js.native
-  def referenceFrame(): ReferenceFrame = js.native
+  def epoch: Double = js.native
+  def referenceFrame: ReferenceFrame = js.native
   def toString(format: Format): String = js.native
   def toString(format: Format, dp: Dp): String = js.native
   def toString(format: Format, dp: Dp, dpHeight: Double): String = js.native

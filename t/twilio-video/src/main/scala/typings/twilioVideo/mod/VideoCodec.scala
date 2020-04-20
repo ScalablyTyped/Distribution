@@ -13,12 +13,10 @@ trait VideoCodec extends js.Object
 
 object VideoCodec {
   @scala.inline
-  def H264: typings.twilioVideo.twilioVideoStrings.H264 = this.cast("H264")
+  def H264: typings.twilioVideo.twilioVideoStrings.H264 = "H264".asInstanceOf[typings.twilioVideo.twilioVideoStrings.H264]
   @scala.inline
-  def VP8: typings.twilioVideo.twilioVideoStrings.VP8 = this.cast("VP8")
+  def VP8: typings.twilioVideo.twilioVideoStrings.VP8 = "VP8".asInstanceOf[typings.twilioVideo.twilioVideoStrings.VP8]
   @scala.inline
-  def VP9: typings.twilioVideo.twilioVideoStrings.VP9 = this.cast("VP9")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def VP9: typings.twilioVideo.twilioVideoStrings.VP9 = "VP9".asInstanceOf[typings.twilioVideo.twilioVideoStrings.VP9]
 }
 

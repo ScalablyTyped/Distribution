@@ -13,7 +13,6 @@ object AnonTextAlignString {
   @scala.inline
   def apply(fontSize: Double, textAlign: String): AnonTextAlignString = {
     val __obj = js.Dynamic.literal(fontSize = fontSize.asInstanceOf[js.Any], textAlign = textAlign.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTextAlignString]
   }
 }

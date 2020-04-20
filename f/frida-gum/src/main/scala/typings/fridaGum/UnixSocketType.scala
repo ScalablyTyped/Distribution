@@ -14,14 +14,12 @@ trait UnixSocketType extends js.Object
 
 object UnixSocketType {
   @scala.inline
-  def `abstract`: typings.fridaGum.fridaGumStrings.`abstract` = this.cast("abstract")
+  def `abstract`: typings.fridaGum.fridaGumStrings.`abstract` = "abstract".asInstanceOf[typings.fridaGum.fridaGumStrings.`abstract`]
   @scala.inline
-  def `abstract-padded`: typings.fridaGum.fridaGumStrings.`abstract-padded` = this.cast("abstract-padded")
+  def `abstract-padded`: typings.fridaGum.fridaGumStrings.`abstract-padded` = "abstract-padded".asInstanceOf[typings.fridaGum.fridaGumStrings.`abstract-padded`]
   @scala.inline
-  def anonymous: typings.fridaGum.fridaGumStrings.anonymous = this.cast("anonymous")
+  def anonymous: typings.fridaGum.fridaGumStrings.anonymous = "anonymous".asInstanceOf[typings.fridaGum.fridaGumStrings.anonymous]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def path: typings.fridaGum.fridaGumStrings.path = this.cast("path")
+  def path: typings.fridaGum.fridaGumStrings.path = "path".asInstanceOf[typings.fridaGum.fridaGumStrings.path]
 }
 

@@ -28,7 +28,6 @@ object SetInstanceProtectionQuery {
     ProtectedFromScaleIn: ProtectedFromScaleIn
   ): SetInstanceProtectionQuery = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any], InstanceIds = InstanceIds.asInstanceOf[js.Any], ProtectedFromScaleIn = ProtectedFromScaleIn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetInstanceProtectionQuery]
   }
 }

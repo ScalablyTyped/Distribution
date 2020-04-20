@@ -15,7 +15,6 @@ object JobPromise {
   @scala.inline
   def apply(cancel: () => Unit): JobPromise = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel))
-  
     __obj.asInstanceOf[JobPromise]
   }
 }

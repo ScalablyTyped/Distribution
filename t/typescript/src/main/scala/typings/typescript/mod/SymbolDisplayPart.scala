@@ -13,7 +13,6 @@ object SymbolDisplayPart {
   @scala.inline
   def apply(kind: java.lang.String, text: java.lang.String): SymbolDisplayPart = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SymbolDisplayPart]
   }
 }

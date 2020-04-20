@@ -24,7 +24,6 @@ object Cleave {
     setRawValue: String => Unit
   ): Cleave = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), getFormattedValue = js.Any.fromFunction0(getFormattedValue), getISOFormatDate = js.Any.fromFunction0(getISOFormatDate), getRawValue = js.Any.fromFunction0(getRawValue), setPhoneRegionCode = js.Any.fromFunction1(setPhoneRegionCode), setRawValue = js.Any.fromFunction1(setRawValue))
-  
     __obj.asInstanceOf[Cleave]
   }
 }

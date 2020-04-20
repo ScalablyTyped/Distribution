@@ -20,7 +20,6 @@ object DeregisterTransitGatewayRequest {
   @scala.inline
   def apply(GlobalNetworkId: String, TransitGatewayArn: String): DeregisterTransitGatewayRequest = {
     val __obj = js.Dynamic.literal(GlobalNetworkId = GlobalNetworkId.asInstanceOf[js.Any], TransitGatewayArn = TransitGatewayArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeregisterTransitGatewayRequest]
   }
 }

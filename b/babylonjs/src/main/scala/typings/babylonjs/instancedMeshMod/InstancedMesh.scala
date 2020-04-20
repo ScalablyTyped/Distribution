@@ -30,7 +30,7 @@ class InstancedMesh protected () extends AbstractMesh {
     * Rendering ground id of the source mesh
     */
   @JSName("renderingGroupId")
-  def renderingGroupId_MInstancedMesh(): Double = js.native
+  def renderingGroupId_MInstancedMesh: Double = js.native
   @JSName("renderingGroupId")
   def renderingGroupId_MInstancedMesh(value: Double): js.Any = js.native
   /**
@@ -44,6 +44,6 @@ class InstancedMesh protected () extends AbstractMesh {
   /**
     * The source mesh of the instance
     */
-  def sourceMesh(): Mesh = js.native
+  def sourceMesh: Mesh = js.native
 }
 

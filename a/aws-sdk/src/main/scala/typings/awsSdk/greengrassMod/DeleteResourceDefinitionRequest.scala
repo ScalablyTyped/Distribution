@@ -16,7 +16,6 @@ object DeleteResourceDefinitionRequest {
   @scala.inline
   def apply(ResourceDefinitionId: string): DeleteResourceDefinitionRequest = {
     val __obj = js.Dynamic.literal(ResourceDefinitionId = ResourceDefinitionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteResourceDefinitionRequest]
   }
 }

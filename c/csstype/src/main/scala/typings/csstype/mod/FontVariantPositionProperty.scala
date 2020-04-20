@@ -18,22 +18,20 @@ trait FontVariantPositionProperty extends js.Object
 
 object FontVariantPositionProperty {
   @scala.inline
-  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = this.cast("-moz-initial")
+  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.csstype.csstypeStrings.`-moz-initial`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def inherit: typings.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[typings.csstype.csstypeStrings.inherit]
   @scala.inline
-  def inherit: typings.csstype.csstypeStrings.inherit = this.cast("inherit")
+  def initial: typings.csstype.csstypeStrings.initial = "initial".asInstanceOf[typings.csstype.csstypeStrings.initial]
   @scala.inline
-  def initial: typings.csstype.csstypeStrings.initial = this.cast("initial")
+  def normal: typings.csstype.csstypeStrings.normal = "normal".asInstanceOf[typings.csstype.csstypeStrings.normal]
   @scala.inline
-  def normal: typings.csstype.csstypeStrings.normal = this.cast("normal")
+  def revert: typings.csstype.csstypeStrings.revert = "revert".asInstanceOf[typings.csstype.csstypeStrings.revert]
   @scala.inline
-  def revert: typings.csstype.csstypeStrings.revert = this.cast("revert")
+  def sub: typings.csstype.csstypeStrings.sub = "sub".asInstanceOf[typings.csstype.csstypeStrings.sub]
   @scala.inline
-  def sub: typings.csstype.csstypeStrings.sub = this.cast("sub")
+  def `super`: typings.csstype.csstypeStrings.`super` = "super".asInstanceOf[typings.csstype.csstypeStrings.`super`]
   @scala.inline
-  def `super`: typings.csstype.csstypeStrings.`super` = this.cast("super")
-  @scala.inline
-  def unset: typings.csstype.csstypeStrings.unset = this.cast("unset")
+  def unset: typings.csstype.csstypeStrings.unset = "unset".asInstanceOf[typings.csstype.csstypeStrings.unset]
 }
 

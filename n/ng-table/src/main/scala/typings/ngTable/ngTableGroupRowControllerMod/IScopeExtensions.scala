@@ -16,7 +16,6 @@ object IScopeExtensions {
   @scala.inline
   def apply[T]($selGroup: IGroupingFunc[_] | String, $selGroupTitle: String): IScopeExtensions[T] = {
     val __obj = js.Dynamic.literal($selGroup = $selGroup.asInstanceOf[js.Any], $selGroupTitle = $selGroupTitle.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IScopeExtensions[T]]
   }
 }

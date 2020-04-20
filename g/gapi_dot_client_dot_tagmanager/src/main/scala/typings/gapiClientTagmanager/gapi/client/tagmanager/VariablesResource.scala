@@ -35,7 +35,6 @@ object VariablesResource {
     update: AnonFingerprint => Request_[Variable]
   ): VariablesResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), revert = js.Any.fromFunction1(revert), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[VariablesResource]
   }
 }

@@ -54,7 +54,7 @@ class Resultset[E /* <: js.Object */] protected () extends js.Object {
     * @param properties - array of property names or subarray of [propertyname, isdesc] used evaluate sort order
     * @returns Reference to this resultset, sorted, for future chain operations.
     */
-  def compoundsort(properties: js.Array[js.Tuple2[String, Boolean]]): this.type = js.native
+  def compoundsort(properties: js.Array[js.Tuple2[/* keyof E */ String, Boolean]]): this.type = js.native
   /**
     * copy() - To support reuse of resultset in branched query situations.
     *
@@ -367,9 +367,9 @@ class Resultset[E /* <: js.Object */] protected () extends js.Object {
     * @param [options.useJavascriptSorting] - whether results are sorted via basic javascript sort.
     * @returns Reference to this resultset, sorted, for future chain operations.
     */
-  def simplesort(propname: String): this.type = js.native
-  def simplesort(propname: String, options: Boolean): this.type = js.native
-  def simplesort(propname: String, options: PartialSimplesortOptions): this.type = js.native
+  def simplesort(propname: /* keyof E */ String): this.type = js.native
+  def simplesort(propname: /* keyof E */ String, options: Boolean): this.type = js.native
+  def simplesort(propname: /* keyof E */ String, options: PartialSimplesortOptions): this.type = js.native
   /**
     * User supplied compare function is provided two documents to compare. (chainable)
     * @example

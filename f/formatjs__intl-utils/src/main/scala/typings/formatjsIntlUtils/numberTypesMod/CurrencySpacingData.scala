@@ -13,7 +13,6 @@ object CurrencySpacingData {
   @scala.inline
   def apply(afterInsertBetween: String, beforeInsertBetween: String): CurrencySpacingData = {
     val __obj = js.Dynamic.literal(afterInsertBetween = afterInsertBetween.asInstanceOf[js.Any], beforeInsertBetween = beforeInsertBetween.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CurrencySpacingData]
   }
 }

@@ -13,7 +13,6 @@ object ChangeEmitter {
   @scala.inline
   def apply(emit: /* repeated */ js.Any => Unit, listen: Listener => Unlisten): ChangeEmitter = {
     val __obj = js.Dynamic.literal(emit = js.Any.fromFunction1(emit), listen = js.Any.fromFunction1(listen))
-  
     __obj.asInstanceOf[ChangeEmitter]
   }
 }

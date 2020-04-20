@@ -24,7 +24,6 @@ object Typeofcnxcc {
     update_max_time: (String, Double) => Double
   ): Typeofcnxcc = {
     val __obj = js.Dynamic.literal(get_channel_count = js.Any.fromFunction2(get_channel_count), set_max_channels = js.Any.fromFunction2(set_max_channels), set_max_credit = js.Any.fromFunction5(set_max_credit), set_max_time = js.Any.fromFunction2(set_max_time), terminate_all = js.Any.fromFunction1(terminate_all), update_max_time = js.Any.fromFunction2(update_max_time))
-  
     __obj.asInstanceOf[Typeofcnxcc]
   }
 }

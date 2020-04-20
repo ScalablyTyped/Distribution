@@ -26,7 +26,6 @@ object JobTemplateSpec {
   @scala.inline
   def apply(metadata: ObjectMeta, spec: JobSpec): JobTemplateSpec = {
     val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JobTemplateSpec]
   }
 }

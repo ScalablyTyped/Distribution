@@ -32,28 +32,26 @@ trait ValidQuality extends js.Object
 
 object ValidQuality {
   @scala.inline
-  def `0Dot0`: `0.0` = this.cast(0.0)
+  def `0Dot0`: `0.0` = 0.0.asInstanceOf[`0.0`]
   @scala.inline
-  def `0Dot1`: `0.1` = this.cast(0.1)
+  def `0Dot1`: `0.1` = 0.1.asInstanceOf[`0.1`]
   @scala.inline
-  def `0Dot2`: `0.2` = this.cast(0.2)
+  def `0Dot2`: `0.2` = 0.2.asInstanceOf[`0.2`]
   @scala.inline
-  def `0Dot3`: `0.3` = this.cast(0.3)
+  def `0Dot3`: `0.3` = 0.3.asInstanceOf[`0.3`]
   @scala.inline
-  def `0Dot4`: `0.4` = this.cast(0.4)
+  def `0Dot4`: `0.4` = 0.4.asInstanceOf[`0.4`]
   @scala.inline
-  def `0Dot5`: `0.5` = this.cast(0.5)
+  def `0Dot5`: `0.5` = 0.5.asInstanceOf[`0.5`]
   @scala.inline
-  def `0Dot6`: `0.6` = this.cast(0.6)
+  def `0Dot6`: `0.6` = 0.6.asInstanceOf[`0.6`]
   @scala.inline
-  def `0Dot7`: `0.7` = this.cast(0.7)
+  def `0Dot7`: `0.7` = 0.7.asInstanceOf[`0.7`]
   @scala.inline
-  def `0Dot8`: `0.8` = this.cast(0.8)
+  def `0Dot8`: `0.8` = 0.8.asInstanceOf[`0.8`]
   @scala.inline
-  def `0Dot9`: `0.9` = this.cast(0.9)
+  def `0Dot9`: `0.9` = 0.9.asInstanceOf[`0.9`]
   @scala.inline
-  def `1Dot0`: `1.0` = this.cast(1.0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `1Dot0`: `1.0` = 1.0.asInstanceOf[`1.0`]
 }
 

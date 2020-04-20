@@ -23,7 +23,6 @@ object PluginRegistered {
   @scala.inline
   def apply(name: String, options: js.Object, version: String): PluginRegistered = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PluginRegistered]
   }
 }

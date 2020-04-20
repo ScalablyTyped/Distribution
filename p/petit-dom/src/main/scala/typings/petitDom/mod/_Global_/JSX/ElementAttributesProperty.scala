@@ -13,7 +13,6 @@ object ElementAttributesProperty {
   @scala.inline
   def apply(props: PropsElement): ElementAttributesProperty = {
     val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ElementAttributesProperty]
   }
 }

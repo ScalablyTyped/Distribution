@@ -13,7 +13,6 @@ object AnonGlSurface {
   @scala.inline
   def apply(glParent: js.Any, glSurface: js.Any): AnonGlSurface = {
     val __obj = js.Dynamic.literal(glParent = glParent.asInstanceOf[js.Any], glSurface = glSurface.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGlSurface]
   }
 }

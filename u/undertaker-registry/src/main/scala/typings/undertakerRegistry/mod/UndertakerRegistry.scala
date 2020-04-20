@@ -46,7 +46,6 @@ object UndertakerRegistry {
     tasks: () => StringDictionary[js.Function1[/* repeated */ js.Any, _]]
   ): UndertakerRegistry = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), init = js.Any.fromFunction1(init), set = js.Any.fromFunction2(set), tasks = js.Any.fromFunction0(tasks))
-  
     __obj.asInstanceOf[UndertakerRegistry]
   }
 }

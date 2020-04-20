@@ -15,13 +15,11 @@ object Sources {
   @scala.inline
   def AnonSource(source: String): Sources = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Sources]
   }
   @scala.inline
   def AnonOriginalSource(originalSource: String, source: String, sourceMap: AnonSourcemap): Sources = {
     val __obj = js.Dynamic.literal(originalSource = originalSource.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], sourceMap = sourceMap.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Sources]
   }
 }

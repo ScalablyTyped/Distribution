@@ -22,28 +22,26 @@ trait RaphaelDashArrayType extends js.Object
 
 object RaphaelDashArrayType {
   @scala.inline
-  def `- `: typings.raphael.raphaelStrings.`- ` = this.cast("- ")
+  def `- `: typings.raphael.raphaelStrings.`- ` = ("- ").asInstanceOf[typings.raphael.raphaelStrings.`- `]
   @scala.inline
-  def `- Dot`: typings.raphael.raphaelStrings.`- Dot` = this.cast("- .")
+  def `- Dot`: typings.raphael.raphaelStrings.`- Dot` = ("- .").asInstanceOf[typings.raphael.raphaelStrings.`- Dot`]
   @scala.inline
-  def `--`: typings.raphael.raphaelStrings.`--` = this.cast("--")
+  def `--`: typings.raphael.raphaelStrings.`--` = "--".asInstanceOf[typings.raphael.raphaelStrings.`--`]
   @scala.inline
-  def `--Dot`: typings.raphael.raphaelStrings.`--Dot` = this.cast("--.")
+  def `--Dot`: typings.raphael.raphaelStrings.`--Dot` = "--.".asInstanceOf[typings.raphael.raphaelStrings.`--Dot`]
   @scala.inline
-  def `--DotDot`: typings.raphael.raphaelStrings.`--DotDot` = this.cast("--..")
+  def `--DotDot`: typings.raphael.raphaelStrings.`--DotDot` = "--..".asInstanceOf[typings.raphael.raphaelStrings.`--DotDot`]
   @scala.inline
-  def `-Dot`: typings.raphael.raphaelStrings.`-Dot` = this.cast("-.")
+  def `-Dot`: typings.raphael.raphaelStrings.`-Dot` = "-.".asInstanceOf[typings.raphael.raphaelStrings.`-Dot`]
   @scala.inline
-  def `-DotDot`: typings.raphael.raphaelStrings.`-DotDot` = this.cast("-..")
+  def `-DotDot`: typings.raphael.raphaelStrings.`-DotDot` = "-..".asInstanceOf[typings.raphael.raphaelStrings.`-DotDot`]
   @scala.inline
-  def Dot: typings.raphael.raphaelStrings.Dot = this.cast(".")
+  def Dot: typings.raphael.raphaelStrings.Dot = ".".asInstanceOf[typings.raphael.raphaelStrings.Dot]
   @scala.inline
-  def `Dot `: typings.raphael.raphaelStrings.`Dot ` = this.cast(". ")
+  def `Dot `: typings.raphael.raphaelStrings.`Dot ` = (". ").asInstanceOf[typings.raphael.raphaelStrings.`Dot `]
   @scala.inline
-  def _dash: `-_` = this.cast("-")
+  def _dash: `-_` = "-".asInstanceOf[`-_`]
   @scala.inline
-  def _empty: typings.raphael.raphaelStrings._empty = this.cast("")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def _empty: typings.raphael.raphaelStrings._empty = "".asInstanceOf[typings.raphael.raphaelStrings._empty]
 }
 

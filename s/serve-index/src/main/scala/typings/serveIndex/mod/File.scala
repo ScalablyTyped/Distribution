@@ -14,7 +14,6 @@ object File {
   @scala.inline
   def apply(name: String, stat: Stats): File = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], stat = stat.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[File]
   }
 }

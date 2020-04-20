@@ -1,9 +1,21 @@
 package typings.atom.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.atom.atomStrings.Bottom
+import typings.atom.atomStrings.Left
+import typings.atom.atomStrings.Right
 import typings.atom.atomStrings.Subsequence
 import typings.atom.atomStrings.Symbol
+import typings.atom.atomStrings.Top
 import typings.atom.atomStrings.Word
+import typings.atom.atomStrings.`12px`
+import typings.atom.atomStrings.`14px`
+import typings.atom.atomStrings.`16px`
+import typings.atom.atomStrings.`18px`
+import typings.atom.atomStrings.`21px`
+import typings.atom.atomStrings.`24px`
+import typings.atom.atomStrings.`28px`
+import typings.atom.atomStrings.`32px`
 import typings.atom.atomStrings.`tab alwaysComma enter when suggestion explicitly selected`
 import typings.atom.atomStrings.`tab and enter`
 import typings.atom.atomStrings.always
@@ -433,6 +445,21 @@ trait ConfigValues
     */
   @JSName("status-bar.selectionCountFormat")
   var `status-barDotselectionCountFormat`: String
+  /** Fit the tool-bar to the window's full-width. - default: true */
+  @JSName("tool-bar.fullWidth")
+  var `tool-barDotfullWidth`: Boolean
+  /** Icon size. - default: "24px" */
+  @JSName("tool-bar.iconSize")
+  var `tool-barDoticonSize`: `12px` | `14px` | `16px` | `18px` | `21px` | `24px` | `28px` | `32px`
+  /** Position of tool-bar. - default: "Top"  */
+  @JSName("tool-bar.position")
+  var `tool-barDotposition`: Top | Right | Bottom | Left
+  /** On MacOS, show seven first tool-bar buttons in the TouchBar. - default: true */
+  @JSName("tool-bar.useTouchBar")
+  var `tool-barDotuseTouchBar`: String
+  /** Make tool-bar visible. - default: true */
+  @JSName("tool-bar.visible")
+  var `tool-barDotvisible`: Boolean
 }
 
 object ConfigValues {
@@ -518,6 +545,11 @@ object ConfigValues {
     `status-barDotfullWidth`: Boolean,
     `status-barDotisVisible`: Boolean,
     `status-barDotselectionCountFormat`: String,
+    `tool-barDotfullWidth`: Boolean,
+    `tool-barDoticonSize`: `12px` | `14px` | `16px` | `18px` | `21px` | `24px` | `28px` | `32px`,
+    `tool-barDotposition`: Top | Right | Bottom | Left,
+    `tool-barDotuseTouchBar`: String,
+    `tool-barDotvisible`: Boolean,
     StringDictionary: // tslint:disable-next-line:no-any
   /* key */ StringDictionary[js.Any] = null,
     editorDotcommentEnd: String = null,
@@ -607,6 +639,11 @@ object ConfigValues {
     __obj.updateDynamic("status-bar.fullWidth")(`status-barDotfullWidth`.asInstanceOf[js.Any])
     __obj.updateDynamic("status-bar.isVisible")(`status-barDotisVisible`.asInstanceOf[js.Any])
     __obj.updateDynamic("status-bar.selectionCountFormat")(`status-barDotselectionCountFormat`.asInstanceOf[js.Any])
+    __obj.updateDynamic("tool-bar.fullWidth")(`tool-barDotfullWidth`.asInstanceOf[js.Any])
+    __obj.updateDynamic("tool-bar.iconSize")(`tool-barDoticonSize`.asInstanceOf[js.Any])
+    __obj.updateDynamic("tool-bar.position")(`tool-barDotposition`.asInstanceOf[js.Any])
+    __obj.updateDynamic("tool-bar.useTouchBar")(`tool-barDotuseTouchBar`.asInstanceOf[js.Any])
+    __obj.updateDynamic("tool-bar.visible")(`tool-barDotvisible`.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (editorDotcommentEnd != null) __obj.updateDynamic("editor.commentEnd")(editorDotcommentEnd.asInstanceOf[js.Any])
     if (editorDotcommentStart != null) __obj.updateDynamic("editor.commentStart")(editorDotcommentStart.asInstanceOf[js.Any])

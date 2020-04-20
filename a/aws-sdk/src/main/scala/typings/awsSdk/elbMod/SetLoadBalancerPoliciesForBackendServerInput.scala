@@ -24,7 +24,6 @@ object SetLoadBalancerPoliciesForBackendServerInput {
   @scala.inline
   def apply(InstancePort: EndPointPort, LoadBalancerName: AccessPointName, PolicyNames: PolicyNames): SetLoadBalancerPoliciesForBackendServerInput = {
     val __obj = js.Dynamic.literal(InstancePort = InstancePort.asInstanceOf[js.Any], LoadBalancerName = LoadBalancerName.asInstanceOf[js.Any], PolicyNames = PolicyNames.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetLoadBalancerPoliciesForBackendServerInput]
   }
 }

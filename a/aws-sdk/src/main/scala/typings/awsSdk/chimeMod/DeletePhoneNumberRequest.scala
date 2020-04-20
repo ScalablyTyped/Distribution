@@ -16,7 +16,6 @@ object DeletePhoneNumberRequest {
   @scala.inline
   def apply(PhoneNumberId: String): DeletePhoneNumberRequest = {
     val __obj = js.Dynamic.literal(PhoneNumberId = PhoneNumberId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeletePhoneNumberRequest]
   }
 }

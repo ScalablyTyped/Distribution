@@ -31,7 +31,6 @@ object InvitationsResource {
     list: AnonAlt => Request_[ListClientUserInvitationsResponse]
   ): InvitationsResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[InvitationsResource]
   }
 }

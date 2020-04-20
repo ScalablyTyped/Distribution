@@ -8,295 +8,252 @@ import scala.scalajs.js.annotation._
 /**
 		 * The 3D Matrix is an object for holding values for a 3D affine transform.
 		 */
-trait Matrix3D extends Proxy {
+@JSGlobal("Titanium.UI.Matrix3D")
+@js.native
+class Matrix3D () extends Proxy {
   /**
   			 * The entry at position [1,1] in the matrix.
   			 */
-  var m11: Double
+  var m11: Double = js.native
   /**
   			 * The entry at position [1,2] in the matrix.
   			 */
-  var m12: Double
+  var m12: Double = js.native
   /**
   			 * The entry at position [1,3] in the matrix.
   			 */
-  var m13: Double
+  var m13: Double = js.native
   /**
   			 * The entry at position [1,4] in the matrix.
   			 */
-  var m14: Double
+  var m14: Double = js.native
   /**
   			 * The entry at position [2,1] in the matrix.
   			 */
-  var m21: Double
+  var m21: Double = js.native
   /**
   			 * The entry at position [2,2] in the matrix.
   			 */
-  var m22: Double
+  var m22: Double = js.native
   /**
   			 * The entry at position [2,3] in the matrix.
   			 */
-  var m23: Double
+  var m23: Double = js.native
   /**
   			 * The entry at position [2,4] in the matrix.
   			 */
-  var m24: Double
+  var m24: Double = js.native
   /**
   			 * The entry at position [3,1] in the matrix.
   			 */
-  var m31: Double
+  var m31: Double = js.native
   /**
   			 * The entry at position [3,2] in the matrix.
   			 */
-  var m32: Double
+  var m32: Double = js.native
   /**
   			 * The entry at position [3,3] in the matrix.
   			 */
-  var m33: Double
+  var m33: Double = js.native
   /**
   			 * The entry at position [3,4] in the matrix.
   			 */
-  var m34: Double
+  var m34: Double = js.native
   /**
   			 * The entry at position [4,1] in the matrix.
   			 */
-  var m41: Double
+  var m41: Double = js.native
   /**
   			 * The entry at position [4,2] in the matrix.
   			 */
-  var m42: Double
+  var m42: Double = js.native
   /**
   			 * The entry at position [4,3] in the matrix.
   			 */
-  var m43: Double
+  var m43: Double = js.native
   /**
   			 * The entry at position [4,4] in the matrix.
   			 */
-  var m44: Double
+  var m44: Double = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.3DMatrix.m11> property.
+  			 * Gets the value of the <Titanium.UI.Matrix3D.m11> property.
+  			 * @deprecated Access <Titanium.UI.Matrix3D.m11> instead.
   			 */
-  def getM11(): Double
+  def getM11(): Double = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.3DMatrix.m12> property.
+  			 * Gets the value of the <Titanium.UI.Matrix3D.m12> property.
+  			 * @deprecated Access <Titanium.UI.Matrix3D.m12> instead.
   			 */
-  def getM12(): Double
+  def getM12(): Double = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.3DMatrix.m13> property.
+  			 * Gets the value of the <Titanium.UI.Matrix3D.m13> property.
+  			 * @deprecated Access <Titanium.UI.Matrix3D.m13> instead.
   			 */
-  def getM13(): Double
+  def getM13(): Double = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.3DMatrix.m14> property.
+  			 * Gets the value of the <Titanium.UI.Matrix3D.m14> property.
+  			 * @deprecated Access <Titanium.UI.Matrix3D.m14> instead.
   			 */
-  def getM14(): Double
+  def getM14(): Double = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.3DMatrix.m21> property.
+  			 * Gets the value of the <Titanium.UI.Matrix3D.m21> property.
+  			 * @deprecated Access <Titanium.UI.Matrix3D.m21> instead.
   			 */
-  def getM21(): Double
+  def getM21(): Double = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.3DMatrix.m22> property.
+  			 * Gets the value of the <Titanium.UI.Matrix3D.m22> property.
+  			 * @deprecated Access <Titanium.UI.Matrix3D.m22> instead.
   			 */
-  def getM22(): Double
+  def getM22(): Double = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.3DMatrix.m23> property.
+  			 * Gets the value of the <Titanium.UI.Matrix3D.m23> property.
+  			 * @deprecated Access <Titanium.UI.Matrix3D.m23> instead.
   			 */
-  def getM23(): Double
+  def getM23(): Double = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.3DMatrix.m24> property.
+  			 * Gets the value of the <Titanium.UI.Matrix3D.m24> property.
+  			 * @deprecated Access <Titanium.UI.Matrix3D.m24> instead.
   			 */
-  def getM24(): Double
+  def getM24(): Double = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.3DMatrix.m31> property.
+  			 * Gets the value of the <Titanium.UI.Matrix3D.m31> property.
+  			 * @deprecated Access <Titanium.UI.Matrix3D.m31> instead.
   			 */
-  def getM31(): Double
+  def getM31(): Double = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.3DMatrix.m32> property.
+  			 * Gets the value of the <Titanium.UI.Matrix3D.m32> property.
+  			 * @deprecated Access <Titanium.UI.Matrix3D.m32> instead.
   			 */
-  def getM32(): Double
+  def getM32(): Double = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.3DMatrix.m33> property.
+  			 * Gets the value of the <Titanium.UI.Matrix3D.m33> property.
+  			 * @deprecated Access <Titanium.UI.Matrix3D.m33> instead.
   			 */
-  def getM33(): Double
+  def getM33(): Double = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.3DMatrix.m34> property.
+  			 * Gets the value of the <Titanium.UI.Matrix3D.m34> property.
+  			 * @deprecated Access <Titanium.UI.Matrix3D.m34> instead.
   			 */
-  def getM34(): Double
+  def getM34(): Double = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.3DMatrix.m41> property.
+  			 * Gets the value of the <Titanium.UI.Matrix3D.m41> property.
+  			 * @deprecated Access <Titanium.UI.Matrix3D.m41> instead.
   			 */
-  def getM41(): Double
+  def getM41(): Double = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.3DMatrix.m42> property.
+  			 * Gets the value of the <Titanium.UI.Matrix3D.m42> property.
+  			 * @deprecated Access <Titanium.UI.Matrix3D.m42> instead.
   			 */
-  def getM42(): Double
+  def getM42(): Double = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.3DMatrix.m43> property.
+  			 * Gets the value of the <Titanium.UI.Matrix3D.m43> property.
+  			 * @deprecated Access <Titanium.UI.Matrix3D.m43> instead.
   			 */
-  def getM43(): Double
+  def getM43(): Double = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.3DMatrix.m44> property.
+  			 * Gets the value of the <Titanium.UI.Matrix3D.m44> property.
+  			 * @deprecated Access <Titanium.UI.Matrix3D.m44> instead.
   			 */
-  def getM44(): Double
+  def getM44(): Double = js.native
   /**
   			 * Returns a matrix constructed by inverting this matrix.
   			 */
-  def invert(): Matrix3D
+  def invert(): Matrix3D = js.native
   /**
   			 * Returns a matrix constructed by combining two existing matrix.
   			 */
-  def multiply(t2: Matrix3D): Matrix3D
+  def multiply(t2: Matrix3D): Matrix3D = js.native
   /**
   			 * Returns a matrix constructed by rotating this matrix.
   			 */
-  def rotate(angle: Double, x: Double, y: Double, z: Double): Matrix3D
+  def rotate(angle: Double, x: Double, y: Double, z: Double): Matrix3D = js.native
   /**
   			 * Returns a matrix constructed by scaling this matrix.
   			 */
-  def scale(sx: Double, sy: Double, sz: Double): Matrix3D
+  def scale(sx: Double, sy: Double, sz: Double): Matrix3D = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.3DMatrix.m11> property.
+  			 * Sets the value of the <Titanium.UI.Matrix3D.m11> property.
+  			 * @deprecated Set the value using <Titanium.UI.Matrix3D.m11> instead.
   			 */
-  def setM11(m11: Double): Unit
+  def setM11(m11: Double): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.3DMatrix.m12> property.
+  			 * Sets the value of the <Titanium.UI.Matrix3D.m12> property.
+  			 * @deprecated Set the value using <Titanium.UI.Matrix3D.m12> instead.
   			 */
-  def setM12(m12: Double): Unit
+  def setM12(m12: Double): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.3DMatrix.m13> property.
+  			 * Sets the value of the <Titanium.UI.Matrix3D.m13> property.
+  			 * @deprecated Set the value using <Titanium.UI.Matrix3D.m13> instead.
   			 */
-  def setM13(m13: Double): Unit
+  def setM13(m13: Double): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.3DMatrix.m14> property.
+  			 * Sets the value of the <Titanium.UI.Matrix3D.m14> property.
+  			 * @deprecated Set the value using <Titanium.UI.Matrix3D.m14> instead.
   			 */
-  def setM14(m14: Double): Unit
+  def setM14(m14: Double): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.3DMatrix.m21> property.
+  			 * Sets the value of the <Titanium.UI.Matrix3D.m21> property.
+  			 * @deprecated Set the value using <Titanium.UI.Matrix3D.m21> instead.
   			 */
-  def setM21(m21: Double): Unit
+  def setM21(m21: Double): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.3DMatrix.m22> property.
+  			 * Sets the value of the <Titanium.UI.Matrix3D.m22> property.
+  			 * @deprecated Set the value using <Titanium.UI.Matrix3D.m22> instead.
   			 */
-  def setM22(m22: Double): Unit
+  def setM22(m22: Double): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.3DMatrix.m23> property.
+  			 * Sets the value of the <Titanium.UI.Matrix3D.m23> property.
+  			 * @deprecated Set the value using <Titanium.UI.Matrix3D.m23> instead.
   			 */
-  def setM23(m23: Double): Unit
+  def setM23(m23: Double): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.3DMatrix.m24> property.
+  			 * Sets the value of the <Titanium.UI.Matrix3D.m24> property.
+  			 * @deprecated Set the value using <Titanium.UI.Matrix3D.m24> instead.
   			 */
-  def setM24(m24: Double): Unit
+  def setM24(m24: Double): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.3DMatrix.m31> property.
+  			 * Sets the value of the <Titanium.UI.Matrix3D.m31> property.
+  			 * @deprecated Set the value using <Titanium.UI.Matrix3D.m31> instead.
   			 */
-  def setM31(m31: Double): Unit
+  def setM31(m31: Double): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.3DMatrix.m32> property.
+  			 * Sets the value of the <Titanium.UI.Matrix3D.m32> property.
+  			 * @deprecated Set the value using <Titanium.UI.Matrix3D.m32> instead.
   			 */
-  def setM32(m32: Double): Unit
+  def setM32(m32: Double): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.3DMatrix.m33> property.
+  			 * Sets the value of the <Titanium.UI.Matrix3D.m33> property.
+  			 * @deprecated Set the value using <Titanium.UI.Matrix3D.m33> instead.
   			 */
-  def setM33(m33: Double): Unit
+  def setM33(m33: Double): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.3DMatrix.m34> property.
+  			 * Sets the value of the <Titanium.UI.Matrix3D.m34> property.
+  			 * @deprecated Set the value using <Titanium.UI.Matrix3D.m34> instead.
   			 */
-  def setM34(m34: Double): Unit
+  def setM34(m34: Double): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.3DMatrix.m41> property.
+  			 * Sets the value of the <Titanium.UI.Matrix3D.m41> property.
+  			 * @deprecated Set the value using <Titanium.UI.Matrix3D.m41> instead.
   			 */
-  def setM41(m41: Double): Unit
+  def setM41(m41: Double): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.3DMatrix.m42> property.
+  			 * Sets the value of the <Titanium.UI.Matrix3D.m42> property.
+  			 * @deprecated Set the value using <Titanium.UI.Matrix3D.m42> instead.
   			 */
-  def setM42(m42: Double): Unit
+  def setM42(m42: Double): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.3DMatrix.m43> property.
+  			 * Sets the value of the <Titanium.UI.Matrix3D.m43> property.
+  			 * @deprecated Set the value using <Titanium.UI.Matrix3D.m43> instead.
   			 */
-  def setM43(m43: Double): Unit
+  def setM43(m43: Double): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.3DMatrix.m44> property.
+  			 * Sets the value of the <Titanium.UI.Matrix3D.m44> property.
+  			 * @deprecated Set the value using <Titanium.UI.Matrix3D.m44> instead.
   			 */
-  def setM44(m44: Double): Unit
+  def setM44(m44: Double): Unit = js.native
   /**
   			 * Returns a matrix constructed by translating an existing matrix.
   			 */
-  def translate(tx: Double, ty: Double, tz: Double): Matrix3D
-}
-
-object Matrix3D {
-  @scala.inline
-  def apply(
-    addEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    apiName: String,
-    applyProperties: js.Any => Unit,
-    bubbleParent: Boolean,
-    fireEvent: (String, js.Any) => Unit,
-    getApiName: () => String,
-    getBubbleParent: () => Boolean,
-    getM11: () => Double,
-    getM12: () => Double,
-    getM13: () => Double,
-    getM14: () => Double,
-    getM21: () => Double,
-    getM22: () => Double,
-    getM23: () => Double,
-    getM24: () => Double,
-    getM31: () => Double,
-    getM32: () => Double,
-    getM33: () => Double,
-    getM34: () => Double,
-    getM41: () => Double,
-    getM42: () => Double,
-    getM43: () => Double,
-    getM44: () => Double,
-    invert: () => Matrix3D,
-    m11: Double,
-    m12: Double,
-    m13: Double,
-    m14: Double,
-    m21: Double,
-    m22: Double,
-    m23: Double,
-    m24: Double,
-    m31: Double,
-    m32: Double,
-    m33: Double,
-    m34: Double,
-    m41: Double,
-    m42: Double,
-    m43: Double,
-    m44: Double,
-    multiply: Matrix3D => Matrix3D,
-    removeEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    rotate: (Double, Double, Double, Double) => Matrix3D,
-    scale: (Double, Double, Double) => Matrix3D,
-    setBubbleParent: Boolean => Unit,
-    setM11: Double => Unit,
-    setM12: Double => Unit,
-    setM13: Double => Unit,
-    setM14: Double => Unit,
-    setM21: Double => Unit,
-    setM22: Double => Unit,
-    setM23: Double => Unit,
-    setM24: Double => Unit,
-    setM31: Double => Unit,
-    setM32: Double => Unit,
-    setM33: Double => Unit,
-    setM34: Double => Unit,
-    setM41: Double => Unit,
-    setM42: Double => Unit,
-    setM43: Double => Unit,
-    setM44: Double => Unit,
-    translate: (Double, Double, Double) => Matrix3D,
-    getLifecycleContainer: () => Window | TabGroup = null,
-    lifecycleContainer: Window | TabGroup = null,
-    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ Window, Unit]) with (js.Function1[/* lifecycleContainer */ TabGroup, Unit]) = null
-  ): Matrix3D = {
-    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName.asInstanceOf[js.Any], applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent.asInstanceOf[js.Any], fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getM11 = js.Any.fromFunction0(getM11), getM12 = js.Any.fromFunction0(getM12), getM13 = js.Any.fromFunction0(getM13), getM14 = js.Any.fromFunction0(getM14), getM21 = js.Any.fromFunction0(getM21), getM22 = js.Any.fromFunction0(getM22), getM23 = js.Any.fromFunction0(getM23), getM24 = js.Any.fromFunction0(getM24), getM31 = js.Any.fromFunction0(getM31), getM32 = js.Any.fromFunction0(getM32), getM33 = js.Any.fromFunction0(getM33), getM34 = js.Any.fromFunction0(getM34), getM41 = js.Any.fromFunction0(getM41), getM42 = js.Any.fromFunction0(getM42), getM43 = js.Any.fromFunction0(getM43), getM44 = js.Any.fromFunction0(getM44), invert = js.Any.fromFunction0(invert), m11 = m11.asInstanceOf[js.Any], m12 = m12.asInstanceOf[js.Any], m13 = m13.asInstanceOf[js.Any], m14 = m14.asInstanceOf[js.Any], m21 = m21.asInstanceOf[js.Any], m22 = m22.asInstanceOf[js.Any], m23 = m23.asInstanceOf[js.Any], m24 = m24.asInstanceOf[js.Any], m31 = m31.asInstanceOf[js.Any], m32 = m32.asInstanceOf[js.Any], m33 = m33.asInstanceOf[js.Any], m34 = m34.asInstanceOf[js.Any], m41 = m41.asInstanceOf[js.Any], m42 = m42.asInstanceOf[js.Any], m43 = m43.asInstanceOf[js.Any], m44 = m44.asInstanceOf[js.Any], multiply = js.Any.fromFunction1(multiply), removeEventListener = js.Any.fromFunction2(removeEventListener), rotate = js.Any.fromFunction4(rotate), scale = js.Any.fromFunction3(scale), setBubbleParent = js.Any.fromFunction1(setBubbleParent), setM11 = js.Any.fromFunction1(setM11), setM12 = js.Any.fromFunction1(setM12), setM13 = js.Any.fromFunction1(setM13), setM14 = js.Any.fromFunction1(setM14), setM21 = js.Any.fromFunction1(setM21), setM22 = js.Any.fromFunction1(setM22), setM23 = js.Any.fromFunction1(setM23), setM24 = js.Any.fromFunction1(setM24), setM31 = js.Any.fromFunction1(setM31), setM32 = js.Any.fromFunction1(setM32), setM33 = js.Any.fromFunction1(setM33), setM34 = js.Any.fromFunction1(setM34), setM41 = js.Any.fromFunction1(setM41), setM42 = js.Any.fromFunction1(setM42), setM43 = js.Any.fromFunction1(setM43), setM44 = js.Any.fromFunction1(setM44), translate = js.Any.fromFunction3(translate))
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
-    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
-    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Matrix3D]
-  }
+  def translate(tx: Double, ty: Double, tz: Double): Matrix3D = js.native
 }
 

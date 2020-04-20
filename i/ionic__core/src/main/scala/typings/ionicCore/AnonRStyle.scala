@@ -13,7 +13,6 @@ object AnonRStyle {
   @scala.inline
   def apply(r: Double, style: AnonLeft): AnonRStyle = {
     val __obj = js.Dynamic.literal(r = r.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRStyle]
   }
 }

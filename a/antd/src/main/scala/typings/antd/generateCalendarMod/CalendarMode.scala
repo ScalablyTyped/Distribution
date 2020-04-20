@@ -12,10 +12,8 @@ trait CalendarMode extends js.Object
 
 object CalendarMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def month: typings.antd.antdStrings.month = "month".asInstanceOf[typings.antd.antdStrings.month]
   @scala.inline
-  def month: typings.antd.antdStrings.month = this.cast("month")
-  @scala.inline
-  def year: typings.antd.antdStrings.year = this.cast("year")
+  def year: typings.antd.antdStrings.year = "year".asInstanceOf[typings.antd.antdStrings.year]
 }
 

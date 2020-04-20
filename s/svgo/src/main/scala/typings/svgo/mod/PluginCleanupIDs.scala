@@ -12,7 +12,6 @@ object PluginCleanupIDs {
   @scala.inline
   def apply(cleanupIDs: Boolean | js.Object): PluginCleanupIDs = {
     val __obj = js.Dynamic.literal(cleanupIDs = cleanupIDs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PluginCleanupIDs]
   }
 }

@@ -12,7 +12,6 @@ object AnonAnimatedBoolean {
   @scala.inline
   def apply(animated: Boolean): AnonAnimatedBoolean = {
     val __obj = js.Dynamic.literal(animated = animated.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAnimatedBoolean]
   }
 }

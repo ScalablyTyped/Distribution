@@ -13,12 +13,10 @@ trait AnonymityLevel extends js.Object
 
 object AnonymityLevel {
   @scala.inline
-  def anonymous: typings.proxyVerifier.proxyVerifierStrings.anonymous = this.cast("anonymous")
+  def anonymous: typings.proxyVerifier.proxyVerifierStrings.anonymous = "anonymous".asInstanceOf[typings.proxyVerifier.proxyVerifierStrings.anonymous]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def elite: typings.proxyVerifier.proxyVerifierStrings.elite = "elite".asInstanceOf[typings.proxyVerifier.proxyVerifierStrings.elite]
   @scala.inline
-  def elite: typings.proxyVerifier.proxyVerifierStrings.elite = this.cast("elite")
-  @scala.inline
-  def transparent: typings.proxyVerifier.proxyVerifierStrings.transparent = this.cast("transparent")
+  def transparent: typings.proxyVerifier.proxyVerifierStrings.transparent = "transparent".asInstanceOf[typings.proxyVerifier.proxyVerifierStrings.transparent]
 }
 

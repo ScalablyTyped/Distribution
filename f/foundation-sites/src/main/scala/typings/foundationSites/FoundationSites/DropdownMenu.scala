@@ -13,7 +13,6 @@ object DropdownMenu {
   @scala.inline
   def apply(destroy: () => Unit): DropdownMenu = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy))
-  
     __obj.asInstanceOf[DropdownMenu]
   }
 }

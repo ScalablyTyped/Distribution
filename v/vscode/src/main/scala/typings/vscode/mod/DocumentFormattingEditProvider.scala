@@ -23,7 +23,6 @@ object DocumentFormattingEditProvider {
     provideDocumentFormattingEdits: (TextDocument, FormattingOptions, CancellationToken) => ProviderResult[js.Array[TextEdit]]
   ): DocumentFormattingEditProvider = {
     val __obj = js.Dynamic.literal(provideDocumentFormattingEdits = js.Any.fromFunction3(provideDocumentFormattingEdits))
-  
     __obj.asInstanceOf[DocumentFormattingEditProvider]
   }
 }

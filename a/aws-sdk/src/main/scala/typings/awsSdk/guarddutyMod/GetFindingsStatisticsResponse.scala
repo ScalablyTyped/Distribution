@@ -16,7 +16,6 @@ object GetFindingsStatisticsResponse {
   @scala.inline
   def apply(FindingStatistics: FindingStatistics): GetFindingsStatisticsResponse = {
     val __obj = js.Dynamic.literal(FindingStatistics = FindingStatistics.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetFindingsStatisticsResponse]
   }
 }

@@ -22,7 +22,6 @@ object FileSystemSync {
   @scala.inline
   def apply(name: String, root: DirectoryEntrySync): FileSystemSync = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FileSystemSync]
   }
 }

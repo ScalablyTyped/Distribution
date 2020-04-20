@@ -24,12 +24,12 @@ object mod extends js.Object {
   def isPresent(obj: js.Any): Boolean = js.native
   def tryInvoke(obj: js.Object, methodName: String): js.UndefOr[scala.Nothing] = js.native
   def tryInvoke(obj: js.Object, methodName: String, args: js.Array[_]): js.UndefOr[scala.Nothing] = js.native
-  def tryInvoke[FNAME /* <: String */, T /* <: js.Object */](obj: T, methodName: FNAME): js.UndefOr[
+  def tryInvoke[FNAME /* <: /* keyof T */ String */, T /* <: js.Object */](obj: T, methodName: FNAME): js.UndefOr[
     ReturnType[
       /* import warning: importer.ImportType#apply Failed type conversion: T[FNAME] */ js.Any
     ]
   ] = js.native
-  def tryInvoke[FNAME /* <: String */, T /* <: js.Object */](
+  def tryInvoke[FNAME /* <: /* keyof T */ String */, T /* <: js.Object */](
     obj: T,
     methodName: FNAME,
     args: FunctionArgs[

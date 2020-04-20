@@ -27,7 +27,6 @@ object SelectionRangeProvider {
     provideSelectionRanges: (TextDocument, js.Array[Position], CancellationToken) => ProviderResult[js.Array[SelectionRange]]
   ): SelectionRangeProvider = {
     val __obj = js.Dynamic.literal(provideSelectionRanges = js.Any.fromFunction3(provideSelectionRanges))
-  
     __obj.asInstanceOf[SelectionRangeProvider]
   }
 }

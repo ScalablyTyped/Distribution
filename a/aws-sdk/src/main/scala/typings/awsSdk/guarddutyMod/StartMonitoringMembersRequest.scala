@@ -20,7 +20,6 @@ object StartMonitoringMembersRequest {
   @scala.inline
   def apply(AccountIds: AccountIds, DetectorId: DetectorId): StartMonitoringMembersRequest = {
     val __obj = js.Dynamic.literal(AccountIds = AccountIds.asInstanceOf[js.Any], DetectorId = DetectorId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StartMonitoringMembersRequest]
   }
 }

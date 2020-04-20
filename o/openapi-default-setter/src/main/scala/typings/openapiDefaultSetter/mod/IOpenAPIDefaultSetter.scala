@@ -13,7 +13,6 @@ object IOpenAPIDefaultSetter {
   @scala.inline
   def apply(handle: Request => Unit): IOpenAPIDefaultSetter = {
     val __obj = js.Dynamic.literal(handle = js.Any.fromFunction1(handle))
-  
     __obj.asInstanceOf[IOpenAPIDefaultSetter]
   }
 }

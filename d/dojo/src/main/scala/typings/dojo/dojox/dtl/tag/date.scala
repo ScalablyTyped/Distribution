@@ -28,7 +28,6 @@ object date {
   @scala.inline
   def apply(NowNode: (js.Any, js.Any) => Unit, now: (js.Any, js.Any) => Unit): date = {
     val __obj = js.Dynamic.literal(NowNode = js.Any.fromFunction2(NowNode), now = js.Any.fromFunction2(now))
-  
     __obj.asInstanceOf[date]
   }
 }

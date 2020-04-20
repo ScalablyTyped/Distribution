@@ -20,7 +20,6 @@ object ByteMatchSetSummary {
   @scala.inline
   def apply(ByteMatchSetId: ResourceId, Name: ResourceName): ByteMatchSetSummary = {
     val __obj = js.Dynamic.literal(ByteMatchSetId = ByteMatchSetId.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ByteMatchSetSummary]
   }
 }

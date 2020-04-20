@@ -16,7 +16,6 @@ object Messages {
   @scala.inline
   def apply(Errors: listOfString): Messages = {
     val __obj = js.Dynamic.literal(Errors = Errors.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Messages]
   }
 }

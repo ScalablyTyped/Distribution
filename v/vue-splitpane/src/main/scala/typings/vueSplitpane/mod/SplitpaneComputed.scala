@@ -13,7 +13,6 @@ object SplitpaneComputed {
   @scala.inline
   def apply(cursor: () => String, userSelect: () => String): SplitpaneComputed = {
     val __obj = js.Dynamic.literal(cursor = js.Any.fromFunction0(cursor), userSelect = js.Any.fromFunction0(userSelect))
-  
     __obj.asInstanceOf[SplitpaneComputed]
   }
 }

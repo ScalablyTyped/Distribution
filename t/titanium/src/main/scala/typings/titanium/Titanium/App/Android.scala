@@ -1,9 +1,11 @@
 package typings.titanium.Titanium.App
 
 import typings.titanium.Titanium.Android.Intent
-import typings.titanium.Titanium.Proxy
+import typings.titanium.Titanium.Event
+import typings.titanium.Titanium.Module
 import typings.titanium.Titanium.UI.TabGroup
 import typings.titanium.Titanium.UI.Window
+import typings.titanium.titaniumStrings.shortcutitemclick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,11 +15,16 @@ import scala.scalajs.js.annotation._
 		 */
 @JSGlobal("Titanium.App.Android")
 @js.native
+class Android () extends Module
+
+/* static members */
+@JSGlobal("Titanium.App.Android")
+@js.native
 object Android extends js.Object {
   /**
   			 * The `R` namespace for application resources.
   			 */
-  val R: typings.titanium.Titanium.App.Android.R = js.native
+  val R: typings.titanium.Titanium.Android.R = js.native
   /**
   			 * The name of the API that this proxy corresponds to.
   			 */
@@ -45,7 +52,15 @@ object Android extends js.Object {
   /**
   			 * Adds the specified callback as an event listener for the named event.
   			 */
-  def addEventListener(name: String, callback: js.Function1[/* param0 */ js.Any, _]): Unit = js.native
+  def addEventListener(name: String, callback: js.Function1[/* param0 */ Event, Unit]): Unit = js.native
+  /**
+  			 * Adds the specified callback as an event listener for the named event.
+  			 */
+  @JSName("addEventListener")
+  def addEventListener_shortcutitemclick(
+    name: shortcutitemclick,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ AndroidShortcutitemclickEvent, Unit]
+  ): Unit = js.native
   /**
   			 * Applies the properties to the proxy.
   			 */
@@ -53,50 +68,67 @@ object Android extends js.Object {
   /**
   			 * Fires a synthesized event to any registered listeners.
   			 */
+  def fireEvent(name: String): Unit = js.native
   def fireEvent(name: String, event: js.Any): Unit = js.native
   /**
+  			 * Fires a synthesized event to any registered listeners.
+  			 */
+  @JSName("fireEvent")
+  def fireEvent_shortcutitemclick(name: shortcutitemclick): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_shortcutitemclick(name: shortcutitemclick, event: AndroidShortcutitemclickEvent): Unit = js.native
+  /**
   			 * Gets the value of the <Titanium.App.Android.apiName> property.
+  			 * @deprecated Access <Titanium.App.Android.apiName> instead.
   			 */
   def getApiName(): String = js.native
   /**
   			 * Gets the value of the <Titanium.App.Android.appVersionCode> property.
+  			 * @deprecated Access <Titanium.App.Android.appVersionCode> instead.
   			 */
   def getAppVersionCode(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.App.Android.appVersionName> property.
+  			 * @deprecated Access <Titanium.App.Android.appVersionName> instead.
   			 */
   def getAppVersionName(): String = js.native
   /**
   			 * Gets the value of the <Titanium.App.Android.bubbleParent> property.
+  			 * @deprecated Access <Titanium.App.Android.bubbleParent> instead.
   			 */
   def getBubbleParent(): Boolean = js.native
   /**
   			 * Gets the value of the <Titanium.App.Android.launchIntent> property.
+  			 * @deprecated Access <Titanium.App.Android.launchIntent> instead.
   			 */
   def getLaunchIntent(): Intent = js.native
   /**
   			 * Gets the value of the <Titanium.App.Android.lifecycleContainer> property.
+  			 * @deprecated Access <Titanium.App.Android.lifecycleContainer> instead.
   			 */
   def getLifecycleContainer(): Window | TabGroup = js.native
   /**
   			 * Removes the specified callback as an event listener for the named event.
   			 */
-  def removeEventListener(name: String, callback: js.Function1[/* param0 */ js.Any, _]): Unit = js.native
+  def removeEventListener(name: String, callback: js.Function1[/* param0 */ Event, Unit]): Unit = js.native
+  /**
+  			 * Removes the specified callback as an event listener for the named event.
+  			 */
+  @JSName("removeEventListener")
+  def removeEventListener_shortcutitemclick(
+    name: shortcutitemclick,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ AndroidShortcutitemclickEvent, Unit]
+  ): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.App.Android.bubbleParent> property.
+  			 * @deprecated Set the value using <Titanium.App.Android.bubbleParent> instead.
   			 */
   def setBubbleParent(bubbleParent: Boolean): Unit = js.native
-  /**
-  			 * Sets the value of the <Titanium.App.Android.lifecycleContainer> property.
-  			 */
   def setLifecycleContainer(lifecycleContainer: TabGroup): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.App.Android.lifecycleContainer> property.
+  			 * @deprecated Set the value using <Titanium.App.Android.lifecycleContainer> instead.
   			 */
   def setLifecycleContainer(lifecycleContainer: Window): Unit = js.native
-  /**
-  			 * The Titanium binding of the native Android `R` class, giving access to application resources.
-  			 */
-  type R = Proxy
 }
 

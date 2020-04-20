@@ -18,7 +18,6 @@ object AnonNonEmpty {
     nonEmpty: /* import warning: importer.ImportType#apply Failed type conversion: Count['length'] */ js.Any
   ): AnonNonEmpty[NotFound, Tuple, Type, Count] = {
     val __obj = js.Dynamic.literal(empty = empty.asInstanceOf[js.Any], infinite = infinite.asInstanceOf[js.Any], nonEmpty = nonEmpty.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNonEmpty[NotFound, Tuple, Type, Count]]
   }
 }

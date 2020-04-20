@@ -42,7 +42,6 @@ object ReportsResource {
     update: AnonFieldsKey => Request_[Report]
   ): ReportsResource = {
     val __obj = js.Dynamic.literal(compatibleFields = compatibleFields.asInstanceOf[js.Any], delete = js.Any.fromFunction1(delete), files = files.asInstanceOf[js.Any], get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), run = js.Any.fromFunction1(run), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[ReportsResource]
   }
 }

@@ -14,7 +14,6 @@ object ChannelsCollection {
   @scala.inline
   def apply(stop: Channel => Unit): ChannelsCollection = {
     val __obj = js.Dynamic.literal(stop = js.Any.fromFunction1(stop))
-  
     __obj.asInstanceOf[ChannelsCollection]
   }
 }

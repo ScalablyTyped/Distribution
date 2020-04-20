@@ -27,19 +27,19 @@ class EventHandler protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FEventHandler: IModel = js.native
-  def containerAsEntity(): Entity = js.native
-  def event(): EventType = js.native
+  def containerAsEntity: Entity = js.native
+  def event: EventType = js.native
   def event(newValue: EventType): js.Any = js.native
   def microflow(): js.Any = js.native
   def microflow(newValue: IMicroflow): js.Any = js.native
-  def microflowQualifiedName(): String | Null = js.native
+  def microflowQualifiedName: String | Null = js.native
   @JSName("microflow")
-  def microflow_Union(): IMicroflow | Null = js.native
-  def moment(): ActionMoment = js.native
+  def microflow_Union: IMicroflow | Null = js.native
+  def moment: ActionMoment = js.native
   def moment(newValue: ActionMoment): js.Any = js.native
-  def passEventObject(): Boolean = js.native
+  def passEventObject: Boolean = js.native
   def passEventObject(newValue: Boolean): js.Any = js.native
-  def raiseErrorOnFalse(): Boolean = js.native
+  def raiseErrorOnFalse: Boolean = js.native
   def raiseErrorOnFalse(newValue: Boolean): js.Any = js.native
 }
 

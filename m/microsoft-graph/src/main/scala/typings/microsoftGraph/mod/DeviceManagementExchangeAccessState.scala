@@ -17,16 +17,14 @@ trait DeviceManagementExchangeAccessState extends js.Object
 
 object DeviceManagementExchangeAccessState {
   @scala.inline
-  def allowed: typings.microsoftGraph.microsoftGraphStrings.allowed = this.cast("allowed")
+  def allowed: typings.microsoftGraph.microsoftGraphStrings.allowed = "allowed".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allowed]
   @scala.inline
-  def blocked: typings.microsoftGraph.microsoftGraphStrings.blocked = this.cast("blocked")
+  def blocked: typings.microsoftGraph.microsoftGraphStrings.blocked = "blocked".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blocked]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def none: none_ = "none".asInstanceOf[none_]
   @scala.inline
-  def none: none_ = this.cast("none")
+  def quarantined: typings.microsoftGraph.microsoftGraphStrings.quarantined = "quarantined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.quarantined]
   @scala.inline
-  def quarantined: typings.microsoftGraph.microsoftGraphStrings.quarantined = this.cast("quarantined")
-  @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
+  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
 }
 

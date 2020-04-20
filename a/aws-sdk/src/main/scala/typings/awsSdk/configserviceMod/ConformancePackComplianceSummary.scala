@@ -23,7 +23,6 @@ object ConformancePackComplianceSummary {
     ConformancePackName: ConformancePackName
   ): ConformancePackComplianceSummary = {
     val __obj = js.Dynamic.literal(ConformancePackComplianceStatus = ConformancePackComplianceStatus.asInstanceOf[js.Any], ConformancePackName = ConformancePackName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConformancePackComplianceSummary]
   }
 }

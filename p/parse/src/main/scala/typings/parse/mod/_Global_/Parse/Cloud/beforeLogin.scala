@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object beforeLogin extends js.Object {
   def apply(): Unit = js.native
-  def apply(func: js.Function1[/* request */ TriggerRequest, _]): Unit = js.native
+  def apply(func: js.Function1[/* request */ TriggerRequest, js.Thenable[Unit] | Unit]): Unit = js.native
 }
 

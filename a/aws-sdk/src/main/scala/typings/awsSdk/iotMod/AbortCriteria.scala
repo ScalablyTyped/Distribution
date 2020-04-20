@@ -33,7 +33,6 @@ object AbortCriteria {
     thresholdPercentage: AbortThresholdPercentage
   ): AbortCriteria = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], failureType = failureType.asInstanceOf[js.Any], minNumberOfExecutedThings = minNumberOfExecutedThings.asInstanceOf[js.Any], thresholdPercentage = thresholdPercentage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AbortCriteria]
   }
 }

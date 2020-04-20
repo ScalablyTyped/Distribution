@@ -13,7 +13,6 @@ object Projection {
   @scala.inline
   def apply(lngLatToPoint: Point => Pixel, pointToLngLat: Pixel => Point): Projection = {
     val __obj = js.Dynamic.literal(lngLatToPoint = js.Any.fromFunction1(lngLatToPoint), pointToLngLat = js.Any.fromFunction1(pointToLngLat))
-  
     __obj.asInstanceOf[Projection]
   }
 }

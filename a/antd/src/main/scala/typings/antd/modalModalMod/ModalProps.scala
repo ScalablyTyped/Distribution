@@ -1,8 +1,8 @@
 package typings.antd.modalModalMod
 
 import typings.antd.antdBooleans.`false`
+import typings.antd.buttonButtonMod.ButtonProps
 import typings.antd.buttonButtonMod.ButtonType
-import typings.antd.buttonButtonMod.NativeButtonProps
 import typings.react.mod.CSSProperties
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 trait ModalProps extends js.Object {
   var afterClose: js.UndefOr[js.Function0[Unit]] = js.undefined
   var bodyStyle: js.UndefOr[CSSProperties] = js.undefined
-  var cancelButtonProps: js.UndefOr[NativeButtonProps] = js.undefined
+  var cancelButtonProps: js.UndefOr[ButtonProps] = js.undefined
   /** 取消按钮文字 */
   var cancelText: js.UndefOr[ReactNode] = js.undefined
   /** 垂直居中 */
@@ -38,7 +38,7 @@ trait ModalProps extends js.Object {
   var maskClosable: js.UndefOr[Boolean] = js.undefined
   var maskStyle: js.UndefOr[CSSProperties] = js.undefined
   var maskTransitionName: js.UndefOr[String] = js.undefined
-  var okButtonProps: js.UndefOr[NativeButtonProps] = js.undefined
+  var okButtonProps: js.UndefOr[ButtonProps] = js.undefined
   /** 确认按钮文字 */
   var okText: js.UndefOr[ReactNode] = js.undefined
   /** 确认按钮类型 */
@@ -66,7 +66,7 @@ object ModalProps {
   def apply(
     afterClose: () => Unit = null,
     bodyStyle: CSSProperties = null,
-    cancelButtonProps: NativeButtonProps = null,
+    cancelButtonProps: ButtonProps = null,
     cancelText: ReactNode = null,
     centered: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
@@ -82,7 +82,7 @@ object ModalProps {
     maskClosable: js.UndefOr[Boolean] = js.undefined,
     maskStyle: CSSProperties = null,
     maskTransitionName: String = null,
-    okButtonProps: NativeButtonProps = null,
+    okButtonProps: ButtonProps = null,
     okText: ReactNode = null,
     okType: ButtonType = null,
     onCancel: /* e */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit = null,

@@ -1,5 +1,6 @@
 package typings.yup.mod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Exclude
 import typings.yup.yupBooleans.`false`
 import typings.yup.yupBooleans.`true`
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation._
 trait ObjectSchema[T /* <: js.UndefOr[js.Object | Null] */] extends Schema[T] {
   var fields: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in keyof T ]: yup.yup.Schema<T[k]>}
-    */ typings.yup.yupStrings.ObjectSchema with T = js.native
+    */ typings.yup.yupStrings.ObjectSchema with TopLevel[T] = js.native
   def camelCase(): ObjectSchema[T] = js.native
   def concat[U /* <: js.Object */](schema: ObjectSchema[U]): ObjectSchema[T with U] = js.native
   def constantCase(): ObjectSchema[T] = js.native
@@ -31,6 +32,7 @@ trait ObjectSchema[T /* <: js.UndefOr[js.Object | Null] */] extends Schema[T] {
   def required(message: TestOptionsMessage[js.Object, _]): ObjectSchema[Exclude[T, js.UndefOr[scala.Nothing]]] = js.native
   def shape[U /* <: js.Object */](fields: ObjectSchemaDefinition[U]): ObjectSchema[Shape[T, U]] = js.native
   def shape[U /* <: js.Object */](fields: ObjectSchemaDefinition[U], noSortEdges: js.Array[js.Tuple2[String, String]]): ObjectSchema[Shape[T, U]] = js.native
+  def snakeCase(): ObjectSchema[T] = js.native
   def transformKeys(callback: js.Function1[/* key */ js.Any, _]): Unit = js.native
 }
 

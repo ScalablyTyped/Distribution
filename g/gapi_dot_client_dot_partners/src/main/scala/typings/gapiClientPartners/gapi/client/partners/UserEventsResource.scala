@@ -15,7 +15,6 @@ object UserEventsResource {
   @scala.inline
   def apply(log: AnonAlt => Request_[LogUserEventResponse]): UserEventsResource = {
     val __obj = js.Dynamic.literal(log = js.Any.fromFunction1(log))
-  
     __obj.asInstanceOf[UserEventsResource]
   }
 }

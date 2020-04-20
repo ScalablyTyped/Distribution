@@ -46,20 +46,20 @@ abstract class NavigationProfileBase protected ()
     */
   /* CompleteClass */
   override val qualifiedName: String | Null = js.native
-  def containerAsNavigationDocument(): NavigationDocument = js.native
+  def containerAsNavigationDocument: NavigationDocument = js.native
   /**
     * In version 7.2.0: introduced
     */
-  def name(): String = js.native
+  def name: String = js.native
   def name(newValue: String): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 7.22.0: introduced
     */
-  def offlineEntityConfigs(): IList[OfflineEntityConfig] | Null = js.native
+  def offlineEntityConfigs: IList[OfflineEntityConfig] | Null = js.native
   @JSName("qualifiedName")
-  def qualifiedName_MNavigationProfileBase(): String | Null = js.native
+  def qualifiedName_MNavigationProfileBase: String | Null = js.native
 }
 
 /* static members */

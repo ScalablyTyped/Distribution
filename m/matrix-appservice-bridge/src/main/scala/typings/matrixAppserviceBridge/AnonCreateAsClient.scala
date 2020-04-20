@@ -14,7 +14,6 @@ object AnonCreateAsClient {
   @scala.inline
   def apply(createAsClient: Boolean, options: CreateRoomOptions): AnonCreateAsClient = {
     val __obj = js.Dynamic.literal(createAsClient = createAsClient.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCreateAsClient]
   }
 }

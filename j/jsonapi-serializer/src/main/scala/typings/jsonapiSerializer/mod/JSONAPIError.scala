@@ -12,7 +12,6 @@ object JSONAPIError {
   @scala.inline
   def apply(errors: js.Array[_]): JSONAPIError = {
     val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JSONAPIError]
   }
 }

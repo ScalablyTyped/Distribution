@@ -16,7 +16,6 @@ object DeleteNetworkProfileRequest {
   @scala.inline
   def apply(NetworkProfileArn: Arn): DeleteNetworkProfileRequest = {
     val __obj = js.Dynamic.literal(NetworkProfileArn = NetworkProfileArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteNetworkProfileRequest]
   }
 }

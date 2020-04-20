@@ -16,7 +16,6 @@ object VirtualNodeServiceProvider {
   @scala.inline
   def apply(virtualNodeName: ResourceName): VirtualNodeServiceProvider = {
     val __obj = js.Dynamic.literal(virtualNodeName = virtualNodeName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VirtualNodeServiceProvider]
   }
 }

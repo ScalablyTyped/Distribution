@@ -13,7 +13,6 @@ object BasicAuthenticatorRequest {
   @scala.inline
   def apply(auth: AnonPassword): BasicAuthenticatorRequest = {
     val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BasicAuthenticatorRequest]
   }
 }

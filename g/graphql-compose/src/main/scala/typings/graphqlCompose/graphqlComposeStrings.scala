@@ -58,7 +58,7 @@ object graphqlComposeStrings {
   @scala.inline
   def NON_NULL: NON_NULL = "NON_NULL".asInstanceOf[NON_NULL]
   @scala.inline
-  def `No longer supported`: `No longer supported` = "No longer supported".asInstanceOf[`No longer supported`]
+  def `No longer supported`: `No longer supported` = ("No longer supported").asInstanceOf[`No longer supported`]
   @scala.inline
   def OBJECT: OBJECT = "OBJECT".asInstanceOf[OBJECT]
   @scala.inline

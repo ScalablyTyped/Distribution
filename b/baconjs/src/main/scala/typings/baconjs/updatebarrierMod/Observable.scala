@@ -13,7 +13,6 @@ object Observable {
   @scala.inline
   def apply(id: Double, internalDeps: () => js.Array[Observable]): Observable = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], internalDeps = js.Any.fromFunction0(internalDeps))
-  
     __obj.asInstanceOf[Observable]
   }
 }

@@ -16,7 +16,6 @@ object GetImportRequest {
   @scala.inline
   def apply(importId: String): GetImportRequest = {
     val __obj = js.Dynamic.literal(importId = importId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetImportRequest]
   }
 }

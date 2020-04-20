@@ -38,7 +38,6 @@ object PlacementDescription {
     updatedDate: Time
   ): PlacementDescription = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], createdDate = createdDate.asInstanceOf[js.Any], placementName = placementName.asInstanceOf[js.Any], projectName = projectName.asInstanceOf[js.Any], updatedDate = updatedDate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PlacementDescription]
   }
 }

@@ -16,7 +16,6 @@ object BatchDeleteBuildsInput {
   @scala.inline
   def apply(ids: BuildIds): BatchDeleteBuildsInput = {
     val __obj = js.Dynamic.literal(ids = ids.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchDeleteBuildsInput]
   }
 }

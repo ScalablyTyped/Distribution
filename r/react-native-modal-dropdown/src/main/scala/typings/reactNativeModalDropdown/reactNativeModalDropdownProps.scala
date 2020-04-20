@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeModalDropdownProps {
   @scala.inline
-  def ReactNativeModalDropdownProps: ModalDropdownProps.type = typings.reactNativeModalDropdown.mod.RNModalDropdown.ModalDropdownProps
+  def ReactNativeModalDropdownProps: ModalDropdownProps.type = ModalDropdownProps
   type ReactNativeModalDropdownProps = ModalDropdownProps
 }
 

@@ -13,12 +13,10 @@ trait TextSize extends js.Object
 
 object TextSize {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def medium: typings.wixStyleReact.wixStyleReactStrings.medium = "medium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.medium]
   @scala.inline
-  def medium: typings.wixStyleReact.wixStyleReactStrings.medium = this.cast("medium")
+  def small: typings.wixStyleReact.wixStyleReactStrings.small = "small".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.small]
   @scala.inline
-  def small: typings.wixStyleReact.wixStyleReactStrings.small = this.cast("small")
-  @scala.inline
-  def tiny: typings.wixStyleReact.wixStyleReactStrings.tiny = this.cast("tiny")
+  def tiny: typings.wixStyleReact.wixStyleReactStrings.tiny = "tiny".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.tiny]
 }
 

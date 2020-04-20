@@ -16,7 +16,6 @@ object InferICD10CMRequest {
   @scala.inline
   def apply(Text: OntologyLinkingBoundedLengthString): InferICD10CMRequest = {
     val __obj = js.Dynamic.literal(Text = Text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InferICD10CMRequest]
   }
 }

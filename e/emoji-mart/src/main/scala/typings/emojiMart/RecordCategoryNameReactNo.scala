@@ -36,7 +36,6 @@ object RecordCategoryNameReactNo {
     symbols: () => ReactNode
   ): RecordCategoryNameReactNo = {
     val __obj = js.Dynamic.literal(activity = js.Any.fromFunction0(activity), custom = js.Any.fromFunction0(custom), flags = js.Any.fromFunction0(flags), foods = js.Any.fromFunction0(foods), nature = js.Any.fromFunction0(nature), objects = js.Any.fromFunction0(objects), people = js.Any.fromFunction0(people), places = js.Any.fromFunction0(places), recent = js.Any.fromFunction0(recent), search = js.Any.fromFunction0(search), symbols = js.Any.fromFunction0(symbols))
-  
     __obj.asInstanceOf[RecordCategoryNameReactNo]
   }
 }

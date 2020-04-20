@@ -24,7 +24,6 @@ object IgLoadingMethods {
     show: js.Object => Unit
   ): IgLoadingMethods = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), hide = js.Any.fromFunction0(hide), indicator = js.Any.fromFunction0(indicator), indicatorElement = js.Any.fromFunction0(indicatorElement), refreshPos = js.Any.fromFunction0(refreshPos), show = js.Any.fromFunction1(show))
-  
     __obj.asInstanceOf[IgLoadingMethods]
   }
 }

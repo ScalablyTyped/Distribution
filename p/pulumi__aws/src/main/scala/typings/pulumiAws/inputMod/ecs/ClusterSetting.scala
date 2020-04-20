@@ -18,7 +18,6 @@ object ClusterSetting {
   @scala.inline
   def apply(name: Input[String], value: Input[String]): ClusterSetting = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClusterSetting]
   }
 }

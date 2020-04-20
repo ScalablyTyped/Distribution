@@ -31,7 +31,6 @@ object ICookieStoreService {
   @scala.inline
   def apply(get: String => js.Any, put: (String, js.Any) => Unit, remove: String => Unit): ICookieStoreService = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), put = js.Any.fromFunction2(put), remove = js.Any.fromFunction1(remove))
-  
     __obj.asInstanceOf[ICookieStoreService]
   }
 }

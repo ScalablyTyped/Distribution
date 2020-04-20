@@ -23,7 +23,6 @@ object CurveGeneratorLineOnly {
   @scala.inline
   def apply(lineEnd: () => Unit, lineStart: () => Unit, point: (Double, Double) => Unit): CurveGeneratorLineOnly = {
     val __obj = js.Dynamic.literal(lineEnd = js.Any.fromFunction0(lineEnd), lineStart = js.Any.fromFunction0(lineStart), point = js.Any.fromFunction2(point))
-  
     __obj.asInstanceOf[CurveGeneratorLineOnly]
   }
 }

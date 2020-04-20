@@ -200,7 +200,7 @@ object webRequestMod extends js.Object {
       * Gets or sets a function to be called when loading progress changes
       */
     @JSName("onprogress")
-    def onprogress_Union(): (js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[EventTarget], _]) | Null = js.native
+    def onprogress_Union: (js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[EventTarget], _]) | Null = js.native
     /**
       * Sets the request method, request URL
       * @param method defines the method to use (GET, POST, etc..)
@@ -210,7 +210,7 @@ object webRequestMod extends js.Object {
     /**
       * Returns client's state
       */
-    def readyState(): Double = js.native
+    def readyState: Double = js.native
     @JSName("removeEventListener")
     def removeEventListener_abort(
       `type`: abort,
@@ -351,21 +351,21 @@ object webRequestMod extends js.Object {
     /**
       * Returns client's response
       */
-    def response(): js.Any = js.native
+    def response: js.Any = js.native
     /**
       * Returns client's response as text
       */
-    def responseText(): String = js.native
+    def responseText: String = js.native
     /**
       * Gets or sets the expected response type
       */
-    def responseType(): XMLHttpRequestResponseType = js.native
+    def responseType: XMLHttpRequestResponseType = js.native
     def responseType(value: XMLHttpRequestResponseType): js.Any = js.native
     /**
       * Returns client's response url
       */
     @JSName("responseURL")
-    def responseURL_MWebRequest(): String = js.native
+    def responseURL_MWebRequest: String = js.native
     /**
       * Initiates the request. The optional argument provides the request body. The argument is ignored if request method is GET or HEAD
       * @param body defines an optional request body
@@ -383,12 +383,12 @@ object webRequestMod extends js.Object {
       * Returns client's status as a text
       */
     @JSName("statusText")
-    def statusText_MWebRequest(): String = js.native
+    def statusText_MWebRequest: String = js.native
     /**
       * Returns client's status
       */
     @JSName("status")
-    def status_MWebRequest(): Double = js.native
+    def status_MWebRequest: Double = js.native
   }
   
   /* static members */

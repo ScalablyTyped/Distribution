@@ -14,7 +14,7 @@ trait BuildingFilterBlock extends Object {
     */
   var filterExpression: String
   /**
-    * This object contains information about the filter mode of the filter block. This property can generally be omitted, since only `solid` filter blocks are rendered in the JS API.
+    * This object contains information about the filter mode of the filter block.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#BuildingFilterBlock)
     */

@@ -15,7 +15,6 @@ object TokenResponse {
   @scala.inline
   def apply(authToken: String, body: js.Object, refreshToken: String, response: js.Object): TokenResponse = {
     val __obj = js.Dynamic.literal(authToken = authToken.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], refreshToken = refreshToken.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TokenResponse]
   }
 }

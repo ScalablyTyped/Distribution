@@ -14,7 +14,6 @@ object PrismTheme {
   @scala.inline
   def apply(plain: PrismThemeEntry, styles: js.Array[AnonLanguages]): PrismTheme = {
     val __obj = js.Dynamic.literal(plain = plain.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PrismTheme]
   }
 }

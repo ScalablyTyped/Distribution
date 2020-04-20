@@ -13,7 +13,6 @@ object UpdateScalingParametersResponse {
   @scala.inline
   def apply(ScalingParameters: ScalingParametersStatus): UpdateScalingParametersResponse = {
     val __obj = js.Dynamic.literal(ScalingParameters = ScalingParameters.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateScalingParametersResponse]
   }
 }

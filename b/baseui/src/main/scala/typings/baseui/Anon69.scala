@@ -21,7 +21,6 @@ object Anon69 {
     label: `French Polynesia LeftparenthesisPolynésie françaiseRightparenthesis`
   ): Anon69 = {
     val __obj = js.Dynamic.literal(dialCode = dialCode.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Anon69]
   }
 }

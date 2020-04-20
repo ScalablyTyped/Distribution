@@ -19,11 +19,11 @@ trait XmlProcInst[Parent] extends js.Object {
     * Gets the content of this processing instruction.
     */
   @JSName("content")
-  def content_Union(): js.UndefOr[String] = js.native
+  def content_Union: js.UndefOr[String] = js.native
   /**
     * Gets the target of this processing instruction.
     */
-  def target(): String = js.native
+  def target: String = js.native
   /**
     * Sets the content of this processing instruction.
     */

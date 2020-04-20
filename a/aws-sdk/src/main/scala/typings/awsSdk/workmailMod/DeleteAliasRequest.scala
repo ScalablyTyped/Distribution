@@ -24,7 +24,6 @@ object DeleteAliasRequest {
   @scala.inline
   def apply(Alias: EmailAddress, EntityId: WorkMailIdentifier, OrganizationId: OrganizationId): DeleteAliasRequest = {
     val __obj = js.Dynamic.literal(Alias = Alias.asInstanceOf[js.Any], EntityId = EntityId.asInstanceOf[js.Any], OrganizationId = OrganizationId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteAliasRequest]
   }
 }

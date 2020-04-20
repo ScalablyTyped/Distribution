@@ -15,7 +15,6 @@ object AnonTransparencyChar {
   @scala.inline
   def apply(attr: Double | Attributes, transparencyChar: String, transparencyType: Double): AnonTransparencyChar = {
     val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], transparencyChar = transparencyChar.asInstanceOf[js.Any], transparencyType = transparencyType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTransparencyChar]
   }
 }

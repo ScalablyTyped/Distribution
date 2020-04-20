@@ -37,58 +37,56 @@ trait CategoryColor extends js.Object
 
 object CategoryColor {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def none: none_ = "none".asInstanceOf[none_]
   @scala.inline
-  def none: none_ = this.cast("none")
+  def preset0: typings.microsoftGraph.microsoftGraphStrings.preset0 = "preset0".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.preset0]
   @scala.inline
-  def preset0: typings.microsoftGraph.microsoftGraphStrings.preset0 = this.cast("preset0")
+  def preset1: typings.microsoftGraph.microsoftGraphStrings.preset1 = "preset1".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.preset1]
   @scala.inline
-  def preset1: typings.microsoftGraph.microsoftGraphStrings.preset1 = this.cast("preset1")
+  def preset10: typings.microsoftGraph.microsoftGraphStrings.preset10 = "preset10".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.preset10]
   @scala.inline
-  def preset10: typings.microsoftGraph.microsoftGraphStrings.preset10 = this.cast("preset10")
+  def preset11: typings.microsoftGraph.microsoftGraphStrings.preset11 = "preset11".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.preset11]
   @scala.inline
-  def preset11: typings.microsoftGraph.microsoftGraphStrings.preset11 = this.cast("preset11")
+  def preset12: typings.microsoftGraph.microsoftGraphStrings.preset12 = "preset12".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.preset12]
   @scala.inline
-  def preset12: typings.microsoftGraph.microsoftGraphStrings.preset12 = this.cast("preset12")
+  def preset13: typings.microsoftGraph.microsoftGraphStrings.preset13 = "preset13".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.preset13]
   @scala.inline
-  def preset13: typings.microsoftGraph.microsoftGraphStrings.preset13 = this.cast("preset13")
+  def preset14: typings.microsoftGraph.microsoftGraphStrings.preset14 = "preset14".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.preset14]
   @scala.inline
-  def preset14: typings.microsoftGraph.microsoftGraphStrings.preset14 = this.cast("preset14")
+  def preset15: typings.microsoftGraph.microsoftGraphStrings.preset15 = "preset15".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.preset15]
   @scala.inline
-  def preset15: typings.microsoftGraph.microsoftGraphStrings.preset15 = this.cast("preset15")
+  def preset16: typings.microsoftGraph.microsoftGraphStrings.preset16 = "preset16".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.preset16]
   @scala.inline
-  def preset16: typings.microsoftGraph.microsoftGraphStrings.preset16 = this.cast("preset16")
+  def preset17: typings.microsoftGraph.microsoftGraphStrings.preset17 = "preset17".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.preset17]
   @scala.inline
-  def preset17: typings.microsoftGraph.microsoftGraphStrings.preset17 = this.cast("preset17")
+  def preset18: typings.microsoftGraph.microsoftGraphStrings.preset18 = "preset18".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.preset18]
   @scala.inline
-  def preset18: typings.microsoftGraph.microsoftGraphStrings.preset18 = this.cast("preset18")
+  def preset19: typings.microsoftGraph.microsoftGraphStrings.preset19 = "preset19".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.preset19]
   @scala.inline
-  def preset19: typings.microsoftGraph.microsoftGraphStrings.preset19 = this.cast("preset19")
+  def preset2: typings.microsoftGraph.microsoftGraphStrings.preset2 = "preset2".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.preset2]
   @scala.inline
-  def preset2: typings.microsoftGraph.microsoftGraphStrings.preset2 = this.cast("preset2")
+  def preset20: typings.microsoftGraph.microsoftGraphStrings.preset20 = "preset20".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.preset20]
   @scala.inline
-  def preset20: typings.microsoftGraph.microsoftGraphStrings.preset20 = this.cast("preset20")
+  def preset21: typings.microsoftGraph.microsoftGraphStrings.preset21 = "preset21".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.preset21]
   @scala.inline
-  def preset21: typings.microsoftGraph.microsoftGraphStrings.preset21 = this.cast("preset21")
+  def preset22: typings.microsoftGraph.microsoftGraphStrings.preset22 = "preset22".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.preset22]
   @scala.inline
-  def preset22: typings.microsoftGraph.microsoftGraphStrings.preset22 = this.cast("preset22")
+  def preset23: typings.microsoftGraph.microsoftGraphStrings.preset23 = "preset23".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.preset23]
   @scala.inline
-  def preset23: typings.microsoftGraph.microsoftGraphStrings.preset23 = this.cast("preset23")
+  def preset24: typings.microsoftGraph.microsoftGraphStrings.preset24 = "preset24".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.preset24]
   @scala.inline
-  def preset24: typings.microsoftGraph.microsoftGraphStrings.preset24 = this.cast("preset24")
+  def preset3: typings.microsoftGraph.microsoftGraphStrings.preset3 = "preset3".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.preset3]
   @scala.inline
-  def preset3: typings.microsoftGraph.microsoftGraphStrings.preset3 = this.cast("preset3")
+  def preset4: typings.microsoftGraph.microsoftGraphStrings.preset4 = "preset4".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.preset4]
   @scala.inline
-  def preset4: typings.microsoftGraph.microsoftGraphStrings.preset4 = this.cast("preset4")
+  def preset5: typings.microsoftGraph.microsoftGraphStrings.preset5 = "preset5".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.preset5]
   @scala.inline
-  def preset5: typings.microsoftGraph.microsoftGraphStrings.preset5 = this.cast("preset5")
+  def preset6: typings.microsoftGraph.microsoftGraphStrings.preset6 = "preset6".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.preset6]
   @scala.inline
-  def preset6: typings.microsoftGraph.microsoftGraphStrings.preset6 = this.cast("preset6")
+  def preset7: typings.microsoftGraph.microsoftGraphStrings.preset7 = "preset7".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.preset7]
   @scala.inline
-  def preset7: typings.microsoftGraph.microsoftGraphStrings.preset7 = this.cast("preset7")
+  def preset8: typings.microsoftGraph.microsoftGraphStrings.preset8 = "preset8".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.preset8]
   @scala.inline
-  def preset8: typings.microsoftGraph.microsoftGraphStrings.preset8 = this.cast("preset8")
-  @scala.inline
-  def preset9: typings.microsoftGraph.microsoftGraphStrings.preset9 = this.cast("preset9")
+  def preset9: typings.microsoftGraph.microsoftGraphStrings.preset9 = "preset9".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.preset9]
 }
 

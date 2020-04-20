@@ -12,7 +12,6 @@ object IJsonErrorStatics {
   @scala.inline
   def apply(getStatus: Double => JsonErrorStatus): IJsonErrorStatics = {
     val __obj = js.Dynamic.literal(getStatus = js.Any.fromFunction1(getStatus))
-  
     __obj.asInstanceOf[IJsonErrorStatics]
   }
 }

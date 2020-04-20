@@ -12,7 +12,6 @@ object NgAnalyzeModulesHost {
   @scala.inline
   def apply(isSourceFile: String => Boolean): NgAnalyzeModulesHost = {
     val __obj = js.Dynamic.literal(isSourceFile = js.Any.fromFunction1(isSourceFile))
-  
     __obj.asInstanceOf[NgAnalyzeModulesHost]
   }
 }

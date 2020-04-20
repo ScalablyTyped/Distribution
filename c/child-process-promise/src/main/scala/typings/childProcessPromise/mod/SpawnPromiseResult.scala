@@ -13,7 +13,6 @@ object SpawnPromiseResult {
   @scala.inline
   def apply(childProcess: ChildProcess, code: Double, stderr: String, stdout: String): SpawnPromiseResult = {
     val __obj = js.Dynamic.literal(childProcess = childProcess.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], stderr = stderr.asInstanceOf[js.Any], stdout = stdout.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SpawnPromiseResult]
   }
 }

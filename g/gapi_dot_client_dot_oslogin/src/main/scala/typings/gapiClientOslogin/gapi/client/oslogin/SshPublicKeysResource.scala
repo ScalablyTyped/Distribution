@@ -27,7 +27,6 @@ object SshPublicKeysResource {
     patch: AnonAlt => Request_[SshPublicKey]
   ): SshPublicKeysResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), patch = js.Any.fromFunction1(patch))
-  
     __obj.asInstanceOf[SshPublicKeysResource]
   }
 }

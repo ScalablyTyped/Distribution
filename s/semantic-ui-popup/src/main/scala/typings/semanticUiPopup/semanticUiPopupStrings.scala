@@ -225,15 +225,15 @@ object semanticUiPopupStrings {
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
-  def `bind clickaway`: `bind clickaway` = "bind clickaway".asInstanceOf[`bind clickaway`]
+  def `bind clickaway`: `bind clickaway` = ("bind clickaway").asInstanceOf[`bind clickaway`]
   @scala.inline
-  def `bind close on scroll`: `bind close on scroll` = "bind close on scroll".asInstanceOf[`bind close on scroll`]
+  def `bind close on scroll`: `bind close on scroll` = ("bind close on scroll").asInstanceOf[`bind close on scroll`]
   @scala.inline
-  def `bind touch close`: `bind touch close` = "bind touch close".asInstanceOf[`bind touch close`]
+  def `bind touch close`: `bind touch close` = ("bind touch close").asInstanceOf[`bind touch close`]
   @scala.inline
   def boundary: boundary = "boundary".asInstanceOf[boundary]
   @scala.inline
-  def `change content`: `change content` = "change content".asInstanceOf[`change content`]
+  def `change content`: `change content` = ("change content").asInstanceOf[`change content`]
   @scala.inline
   def className: className = "className".asInstanceOf[className]
   @scala.inline
@@ -263,11 +263,11 @@ object semanticUiPopupStrings {
   @scala.inline
   def focus: focus = "focus".asInstanceOf[focus]
   @scala.inline
-  def `get popup`: `get popup` = "get popup".asInstanceOf[`get popup`]
+  def `get popup`: `get popup` = ("get popup").asInstanceOf[`get popup`]
   @scala.inline
   def hide: hide = "hide".asInstanceOf[hide]
   @scala.inline
-  def `hide all`: `hide all` = "hide all".asInstanceOf[`hide all`]
+  def `hide all`: `hide all` = ("hide all").asInstanceOf[`hide all`]
   @scala.inline
   def hideOnScroll: hideOnScroll = "hideOnScroll".asInstanceOf[hideOnScroll]
   @scala.inline
@@ -279,9 +279,9 @@ object semanticUiPopupStrings {
   @scala.inline
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   @scala.inline
-  def `is hidden`: `is hidden` = "is hidden".asInstanceOf[`is hidden`]
+  def `is hidden`: `is hidden` = ("is hidden").asInstanceOf[`is hidden`]
   @scala.inline
-  def `is visible`: `is visible` = "is visible".asInstanceOf[`is visible`]
+  def `is visible`: `is visible` = ("is visible").asInstanceOf[`is visible`]
   @scala.inline
   def jitter: jitter = "jitter".asInstanceOf[jitter]
   @scala.inline
@@ -331,7 +331,7 @@ object semanticUiPopupStrings {
   @scala.inline
   def preserve: preserve = "preserve".asInstanceOf[preserve]
   @scala.inline
-  def `remove popup`: `remove popup` = "remove popup".asInstanceOf[`remove popup`]
+  def `remove popup`: `remove popup` = ("remove popup").asInstanceOf[`remove popup`]
   @scala.inline
   def reposition: reposition = "reposition".asInstanceOf[reposition]
   @scala.inline
@@ -339,7 +339,7 @@ object semanticUiPopupStrings {
   @scala.inline
   def selector: selector = "selector".asInstanceOf[selector]
   @scala.inline
-  def `set position`: `set position` = "set position".asInstanceOf[`set position`]
+  def `set position`: `set position` = ("set position").asInstanceOf[`set position`]
   @scala.inline
   def setFluidWidth: setFluidWidth = "setFluidWidth".asInstanceOf[setFluidWidth]
   @scala.inline

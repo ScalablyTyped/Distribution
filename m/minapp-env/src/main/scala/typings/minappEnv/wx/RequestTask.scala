@@ -35,7 +35,6 @@ object RequestTask {
     onHeadersReceived: RequestTaskOnHeadersReceivedCallback => Unit
   ): RequestTask = {
     val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), offHeadersReceived = js.Any.fromFunction1(offHeadersReceived), onHeadersReceived = js.Any.fromFunction1(onHeadersReceived))
-  
     __obj.asInstanceOf[RequestTask]
   }
 }

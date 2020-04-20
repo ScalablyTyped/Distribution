@@ -13,7 +13,6 @@ object IXsltProcessorFactory {
   @scala.inline
   def apply(createInstance: XmlDocument => XsltProcessor): IXsltProcessorFactory = {
     val __obj = js.Dynamic.literal(createInstance = js.Any.fromFunction1(createInstance))
-  
     __obj.asInstanceOf[IXsltProcessorFactory]
   }
 }

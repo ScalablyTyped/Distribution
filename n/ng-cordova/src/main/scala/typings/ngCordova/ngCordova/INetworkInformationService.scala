@@ -22,7 +22,6 @@ object INetworkInformationService {
     isOnline: () => Boolean
   ): INetworkInformationService = {
     val __obj = js.Dynamic.literal(clearOfflineWatch = js.Any.fromFunction0(clearOfflineWatch), clearOnlineWatch = js.Any.fromFunction0(clearOnlineWatch), getNetwork = js.Any.fromFunction0(getNetwork), isOffline = js.Any.fromFunction0(isOffline), isOnline = js.Any.fromFunction0(isOnline))
-  
     __obj.asInstanceOf[INetworkInformationService]
   }
 }

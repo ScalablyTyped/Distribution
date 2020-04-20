@@ -13,7 +13,6 @@ object CreateSegmentResponse {
   @scala.inline
   def apply(SegmentResponse: SegmentResponse): CreateSegmentResponse = {
     val __obj = js.Dynamic.literal(SegmentResponse = SegmentResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateSegmentResponse]
   }
 }

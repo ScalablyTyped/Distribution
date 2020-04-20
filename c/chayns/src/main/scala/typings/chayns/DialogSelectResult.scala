@@ -14,7 +14,6 @@ object DialogSelectResult {
   @scala.inline
   def apply(buttonType: buttonType, selection: js.Array[DialogSelectResultItem]): DialogSelectResult = {
     val __obj = js.Dynamic.literal(buttonType = buttonType.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DialogSelectResult]
   }
 }

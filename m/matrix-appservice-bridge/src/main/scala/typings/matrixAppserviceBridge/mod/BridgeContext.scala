@@ -17,7 +17,6 @@ object BridgeContext {
   @scala.inline
   def apply(rooms: AnonRemotes, senders: AnonMatrix, targets: AnonRemote): BridgeContext = {
     val __obj = js.Dynamic.literal(rooms = rooms.asInstanceOf[js.Any], senders = senders.asInstanceOf[js.Any], targets = targets.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BridgeContext]
   }
 }

@@ -14,7 +14,6 @@ object PickImplcomputer {
   @scala.inline
   def apply(computer: ComputerSettings): PickImplcomputer = {
     val __obj = js.Dynamic.literal(computer = computer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplcomputer]
   }
 }

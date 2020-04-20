@@ -23,7 +23,6 @@ object INgMapProvider {
   @scala.inline
   def apply(setDefaultOptions: INgMapOptions => Unit): INgMapProvider = {
     val __obj = js.Dynamic.literal(setDefaultOptions = js.Any.fromFunction1(setDefaultOptions))
-  
     __obj.asInstanceOf[INgMapProvider]
   }
 }

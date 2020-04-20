@@ -90,7 +90,7 @@ object filesInputMod extends js.Object {
     /**
       * List of files ready to be loaded
       */
-    def FilesToLoad(): StringDictionary[File] = js.native
+    def FilesToLoad: StringDictionary[File] = js.native
   }
   
 }

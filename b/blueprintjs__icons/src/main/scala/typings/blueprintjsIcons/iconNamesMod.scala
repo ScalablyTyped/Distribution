@@ -483,6 +483,7 @@ import typings.blueprintjsIcons.blueprintjsIconsStrings.upload
 import typings.blueprintjsIcons.blueprintjsIconsStrings.user
 import typings.blueprintjsIcons.blueprintjsIconsStrings.variable
 import typings.blueprintjsIcons.blueprintjsIconsStrings.video
+import typings.blueprintjsIcons.blueprintjsIconsStrings.virus
 import typings.blueprintjsIcons.blueprintjsIconsStrings.walk
 import typings.blueprintjsIcons.blueprintjsIconsStrings.widget
 import typings.blueprintjsIcons.blueprintjsIconsStrings.wrench
@@ -965,6 +966,7 @@ object iconNamesMod extends js.Object {
   val VERTICAL_BAR_CHART_DESC: `vertical-bar-chart-desc` = js.native
   val VERTICAL_DISTRIBUTION: `vertical-distribution` = js.native
   val VIDEO: video = js.native
+  val VIRUS: virus = js.native
   val VOLUME_DOWN: `volume-down` = js.native
   val VOLUME_OFF: `volume-off` = js.native
   val VOLUME_UP: `volume-up` = js.native

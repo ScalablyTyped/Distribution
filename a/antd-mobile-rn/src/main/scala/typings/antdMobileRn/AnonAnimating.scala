@@ -24,7 +24,6 @@ object AnonAnimating {
     toast: Boolean
   ): AnonAnimating = {
     val __obj = js.Dynamic.literal(animating = animating.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], toast = toast.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAnimating]
   }
 }

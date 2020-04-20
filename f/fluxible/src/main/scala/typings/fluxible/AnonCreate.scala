@@ -65,7 +65,6 @@ object AnonCreate {
     update: (String, js.Any, js.Any, js.Function2[/* error */ Error, /* data */ js.Any, Unit]) => Unit
   ): AnonCreate = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction4(create), delete = js.Any.fromFunction3(delete), read = js.Any.fromFunction3(read), update = js.Any.fromFunction4(update))
-  
     __obj.asInstanceOf[AnonCreate]
   }
 }

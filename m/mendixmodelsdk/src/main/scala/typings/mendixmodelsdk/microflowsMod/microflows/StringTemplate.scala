@@ -22,7 +22,7 @@ class StringTemplate protected () extends Template {
   ) = this()
   @JSName("model")
   var model_FStringTemplate: IModel = js.native
-  def text(): String = js.native
+  def text: String = js.native
   def text(newValue: String): js.Any = js.native
 }
 

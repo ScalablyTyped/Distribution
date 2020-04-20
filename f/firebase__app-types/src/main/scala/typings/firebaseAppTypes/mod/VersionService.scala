@@ -13,7 +13,6 @@ object VersionService {
   @scala.inline
   def apply(library: String, version: String): VersionService = {
     val __obj = js.Dynamic.literal(library = library.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VersionService]
   }
 }

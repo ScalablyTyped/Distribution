@@ -14,7 +14,6 @@ object AnonAdd {
   @scala.inline
   def apply(add: Double, delete: Double, update: Double): AnonAdd = {
     val __obj = js.Dynamic.literal(add = add.asInstanceOf[js.Any], delete = delete.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAdd]
   }
 }

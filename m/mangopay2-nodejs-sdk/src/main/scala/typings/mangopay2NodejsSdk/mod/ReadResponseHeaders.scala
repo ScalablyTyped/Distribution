@@ -14,7 +14,6 @@ object ReadResponseHeaders {
   @scala.inline
   def apply(resolveWithFullResponse: `true`): ReadResponseHeaders = {
     val __obj = js.Dynamic.literal(resolveWithFullResponse = resolveWithFullResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReadResponseHeaders]
   }
 }

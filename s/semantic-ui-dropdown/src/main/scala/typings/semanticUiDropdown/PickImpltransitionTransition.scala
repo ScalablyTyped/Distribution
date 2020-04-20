@@ -13,7 +13,6 @@ object PickImpltransitionTransition {
   @scala.inline
   def apply(transition: String): PickImpltransitionTransition = {
     val __obj = js.Dynamic.literal(transition = transition.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpltransitionTransition]
   }
 }

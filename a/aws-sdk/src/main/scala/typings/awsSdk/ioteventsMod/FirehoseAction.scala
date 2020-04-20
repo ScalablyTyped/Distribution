@@ -11,6 +11,10 @@ trait FirehoseAction extends js.Object {
     */
   var deliveryStreamName: DeliveryStreamName = js.native
   /**
+    * You can configure the action payload when you send a message to an Amazon Kinesis Data Firehose delivery stream.
+    */
+  var payload: js.UndefOr[Payload] = js.native
+  /**
     * A character separator that is used to separate records written to the Kinesis Data Firehose delivery stream. Valid values are: '\n' (newline), '\t' (tab), '\r\n' (Windows newline), ',' (comma).
     */
   var separator: js.UndefOr[FirehoseSeparator] = js.native
@@ -18,8 +22,13 @@ trait FirehoseAction extends js.Object {
 
 object FirehoseAction {
   @scala.inline
-  def apply(deliveryStreamName: DeliveryStreamName, separator: FirehoseSeparator = null): FirehoseAction = {
+  def apply(
+    deliveryStreamName: DeliveryStreamName,
+    payload: Payload = null,
+    separator: FirehoseSeparator = null
+  ): FirehoseAction = {
     val __obj = js.Dynamic.literal(deliveryStreamName = deliveryStreamName.asInstanceOf[js.Any])
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirehoseAction]
   }

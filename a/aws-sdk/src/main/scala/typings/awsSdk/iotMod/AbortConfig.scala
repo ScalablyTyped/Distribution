@@ -16,7 +16,6 @@ object AbortConfig {
   @scala.inline
   def apply(criteriaList: AbortCriteriaList): AbortConfig = {
     val __obj = js.Dynamic.literal(criteriaList = criteriaList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AbortConfig]
   }
 }

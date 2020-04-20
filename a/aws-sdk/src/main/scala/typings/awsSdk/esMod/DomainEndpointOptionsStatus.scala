@@ -20,7 +20,6 @@ object DomainEndpointOptionsStatus {
   @scala.inline
   def apply(Options: DomainEndpointOptions, Status: OptionStatus): DomainEndpointOptionsStatus = {
     val __obj = js.Dynamic.literal(Options = Options.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DomainEndpointOptionsStatus]
   }
 }

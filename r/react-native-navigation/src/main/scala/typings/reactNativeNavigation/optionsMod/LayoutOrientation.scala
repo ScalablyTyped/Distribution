@@ -12,10 +12,8 @@ trait LayoutOrientation extends js.Object
 
 object LayoutOrientation {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def landscape: typings.reactNativeNavigation.reactNativeNavigationStrings.landscape = "landscape".asInstanceOf[typings.reactNativeNavigation.reactNativeNavigationStrings.landscape]
   @scala.inline
-  def landscape: typings.reactNativeNavigation.reactNativeNavigationStrings.landscape = this.cast("landscape")
-  @scala.inline
-  def portrait: typings.reactNativeNavigation.reactNativeNavigationStrings.portrait = this.cast("portrait")
+  def portrait: typings.reactNativeNavigation.reactNativeNavigationStrings.portrait = "portrait".asInstanceOf[typings.reactNativeNavigation.reactNativeNavigationStrings.portrait]
 }
 

@@ -14,14 +14,14 @@ object astPathMod extends js.Object {
     var path: js.Any = js.native
     var position: Double = js.native
     def childOf(node: T): js.UndefOr[T] = js.native
-    def empty(): Boolean = js.native
-    def first[N /* <: T */](ctor: AnonInstantiable[N]): js.UndefOr[N] = js.native
-    def head(): js.UndefOr[T] = js.native
+    def empty: Boolean = js.native
+    def first[N /* <: T */](ctor: AnonInstantiable[N, T]): js.UndefOr[N] = js.native
+    def head: js.UndefOr[T] = js.native
     def parentOf(): js.UndefOr[T] = js.native
     def parentOf(node: T): js.UndefOr[T] = js.native
     def pop(): T = js.native
     def push(node: T): Unit = js.native
-    def tail(): js.UndefOr[T] = js.native
+    def tail: js.UndefOr[T] = js.native
   }
   
 }

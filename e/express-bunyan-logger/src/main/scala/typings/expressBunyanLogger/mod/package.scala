@@ -7,7 +7,12 @@ import scala.scalajs.js.annotation._
 package object mod {
   type FormatFunction = js.Function1[/* meta */ js.Any, java.lang.String]
   type IncludesFunction = js.Function2[
-    /* req */ typings.express.mod.Request_[typings.expressServeStaticCore.mod.ParamsDictionary], 
+    /* req */ typings.express.mod.Request_[
+      typings.expressServeStaticCore.mod.ParamsDictionary, 
+      js.Any, 
+      js.Any, 
+      typings.expressServeStaticCore.mod.Query
+    ], 
     /* res */ typings.express.mod.Response_[js.Any], 
     js.Any
   ]
@@ -18,7 +23,12 @@ package object mod {
     java.lang.String
   ]
   type RequestIdGenFunction = js.Function1[
-    /* req */ typings.express.mod.Request_[typings.expressServeStaticCore.mod.ParamsDictionary], 
+    /* req */ typings.express.mod.Request_[
+      typings.expressServeStaticCore.mod.ParamsDictionary, 
+      js.Any, 
+      js.Any, 
+      typings.expressServeStaticCore.mod.Query
+    ], 
     java.lang.String
   ]
 }

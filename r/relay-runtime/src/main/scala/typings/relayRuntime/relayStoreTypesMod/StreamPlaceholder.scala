@@ -28,7 +28,6 @@ object StreamPlaceholder {
     variables: Variables
   ): StreamPlaceholder = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], parentID = parentID.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StreamPlaceholder]
   }
 }

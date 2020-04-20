@@ -60,6 +60,7 @@ trait ValuesResource extends js.Object {
     * Returns one or more ranges of values from a spreadsheet.
     * The caller must specify the spreadsheet ID and one or more ranges.
     */
+  def batchGet(): Request_[BatchGetValuesResponse] = js.native
   def batchGet(request: AnonDateTimeRenderOption): Request_[BatchGetValuesResponse] = js.native
   def batchGetByDataFilter(request: AnonCallback, body: BatchGetValuesByDataFilterRequest): Request_[BatchGetValuesByDataFilterResponse] = js.native
   /**
@@ -97,6 +98,7 @@ trait ValuesResource extends js.Object {
     * Returns a range of values from a spreadsheet.
     * The caller must specify the spreadsheet ID and a range.
     */
+  def get(): Request_[ValueRange] = js.native
   def get(request: AnonMajorDimension): Request_[ValueRange] = js.native
   /**
     * Sets values in a range of a spreadsheet.

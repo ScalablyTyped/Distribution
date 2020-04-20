@@ -13,7 +13,6 @@ object AnonDependencyList {
   @scala.inline
   def apply(dependencyList: String, importList: String): AnonDependencyList = {
     val __obj = js.Dynamic.literal(dependencyList = dependencyList.asInstanceOf[js.Any], importList = importList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDependencyList]
   }
 }

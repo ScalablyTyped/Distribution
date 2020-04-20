@@ -14,10 +14,8 @@ trait WdIndexSortBy extends js.Object
 
 object WdIndexSortBy {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdIndexSortByStroke: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdIndexSortByStroke: `0` = this.cast(0)
-  @scala.inline
-  def wdIndexSortBySyllable: `1` = this.cast(1)
+  def wdIndexSortBySyllable: `1` = 1.asInstanceOf[`1`]
 }
 

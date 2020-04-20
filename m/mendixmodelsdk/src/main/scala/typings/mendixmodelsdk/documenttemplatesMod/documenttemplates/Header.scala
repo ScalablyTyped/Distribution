@@ -25,7 +25,7 @@ class Header protected () extends DropZone {
   ) = this()
   @JSName("model")
   var model_FHeader: IModel = js.native
-  def topMargin(): Double = js.native
+  def topMargin: Double = js.native
   def topMargin(newValue: Double): js.Any = js.native
 }
 

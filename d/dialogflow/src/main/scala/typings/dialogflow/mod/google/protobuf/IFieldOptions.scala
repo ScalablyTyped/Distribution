@@ -17,11 +17,15 @@ trait IFieldOptions extends js.Object {
   @JSName(".google.api.resourceReference")
   var DotgoogleDotapiDotresourceReference: js.UndefOr[IResourceReference | Null] = js.undefined
   /** FieldOptions ctype */
-  var ctype: js.UndefOr[CType | String | Null] = js.undefined
+  var ctype: js.UndefOr[
+    CType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.FieldOptions.CType * / any */ String) | Null
+  ] = js.undefined
   /** FieldOptions deprecated */
   var deprecated: js.UndefOr[Boolean | Null] = js.undefined
   /** FieldOptions jstype */
-  var jstype: js.UndefOr[JSType | String | Null] = js.undefined
+  var jstype: js.UndefOr[
+    JSType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.FieldOptions.JSType * / any */ String) | Null
+  ] = js.undefined
   /** FieldOptions lazy */
   var `lazy`: js.UndefOr[Boolean | Null] = js.undefined
   /** FieldOptions packed */
@@ -37,9 +41,9 @@ object IFieldOptions {
   def apply(
     DotgoogleDotapiDotfieldBehavior: js.Array[FieldBehavior] = null,
     DotgoogleDotapiDotresourceReference: IResourceReference = null,
-    ctype: CType | String = null,
+    ctype: CType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.FieldOptions.CType * / any */ String) = null,
     deprecated: js.UndefOr[Boolean] = js.undefined,
-    jstype: JSType | String = null,
+    jstype: JSType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.FieldOptions.JSType * / any */ String) = null,
     `lazy`: js.UndefOr[Boolean] = js.undefined,
     packed: js.UndefOr[Boolean] = js.undefined,
     uninterpretedOption: js.Array[IUninterpretedOption] = null,

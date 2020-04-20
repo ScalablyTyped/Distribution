@@ -14,7 +14,6 @@ object AnonNode {
   @scala.inline
   def apply(node: js.Any, originalEvent: Event_): AnonNode = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNode]
   }
 }

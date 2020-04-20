@@ -196,7 +196,6 @@ object config {
     useDeferredInstrumentation: Boolean
   ): config = {
     val __obj = js.Dynamic.literal(addOnLoad = addOnLoad.asInstanceOf[js.Any], afterOnLoad = afterOnLoad.asInstanceOf[js.Any], baseUrl = baseUrl.asInstanceOf[js.Any], callback = callback.asInstanceOf[js.Any], debugContainerId = debugContainerId.asInstanceOf[js.Any], debugHeight = debugHeight.asInstanceOf[js.Any], defaultDuration = defaultDuration.asInstanceOf[js.Any], deferredInstrumentation = deferredInstrumentation.asInstanceOf[js.Any], deps = deps.asInstanceOf[js.Any], dojoBlankHtmlUrl = dojoBlankHtmlUrl.asInstanceOf[js.Any], extraLocale = extraLocale.asInstanceOf[js.Any], ioPublish = ioPublish.asInstanceOf[js.Any], isDebug = isDebug.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], modulePaths = modulePaths.asInstanceOf[js.Any], parseOnLoad = parseOnLoad.asInstanceOf[js.Any], require = require.asInstanceOf[js.Any], transparentColor = transparentColor.asInstanceOf[js.Any], urchin = urchin.asInstanceOf[js.Any], useCustomLogger = useCustomLogger.asInstanceOf[js.Any], useDeferredInstrumentation = useDeferredInstrumentation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[config]
   }
 }

@@ -14,7 +14,6 @@ object AnonAnchor {
   @scala.inline
   def apply(anchor: Position, head: Position): AnonAnchor = {
     val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAnchor]
   }
 }

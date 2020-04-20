@@ -12,7 +12,6 @@ object Static {
   @scala.inline
   def apply(Tail: TailConstructor): Static = {
     val __obj = js.Dynamic.literal(Tail = Tail.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Static]
   }
 }

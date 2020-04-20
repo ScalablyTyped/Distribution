@@ -16,7 +16,6 @@ object Converter {
     convertPDFList: js.Array[String] => js.Promise[js.Array[ConvertedFile]]
   ): Converter = {
     val __obj = js.Dynamic.literal(convertPDF = js.Any.fromFunction1(convertPDF), convertPDFList = js.Any.fromFunction1(convertPDFList))
-  
     __obj.asInstanceOf[Converter]
   }
 }

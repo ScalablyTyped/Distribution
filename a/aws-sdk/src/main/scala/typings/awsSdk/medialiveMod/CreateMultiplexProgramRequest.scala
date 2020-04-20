@@ -34,7 +34,6 @@ object CreateMultiplexProgramRequest {
     RequestId: string
   ): CreateMultiplexProgramRequest = {
     val __obj = js.Dynamic.literal(MultiplexId = MultiplexId.asInstanceOf[js.Any], MultiplexProgramSettings = MultiplexProgramSettings.asInstanceOf[js.Any], ProgramName = ProgramName.asInstanceOf[js.Any], RequestId = RequestId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateMultiplexProgramRequest]
   }
 }

@@ -19,7 +19,6 @@ object FirebaseConfig {
   @scala.inline
   def apply(auth: String, url: String): FirebaseConfig = {
     val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FirebaseConfig]
   }
 }

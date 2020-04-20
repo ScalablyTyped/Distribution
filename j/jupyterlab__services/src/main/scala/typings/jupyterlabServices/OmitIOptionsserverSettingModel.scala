@@ -14,7 +14,6 @@ object OmitIOptionsserverSettingModel {
   @scala.inline
   def apply(model: IModel): OmitIOptionsserverSettingModel = {
     val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OmitIOptionsserverSettingModel]
   }
 }

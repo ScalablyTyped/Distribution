@@ -16,7 +16,6 @@ object AnonGlobals {
   @scala.inline
   def apply(globals: StringDictionary[js.Any]): AnonGlobals = {
     val __obj = js.Dynamic.literal(globals = globals.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGlobals]
   }
 }

@@ -21,7 +21,6 @@ object DirectoryVpcSettings {
   @scala.inline
   def apply(subnetIds: Input[js.Array[Input[String]]], vpcId: Input[String]): DirectoryVpcSettings = {
     val __obj = js.Dynamic.literal(subnetIds = subnetIds.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DirectoryVpcSettings]
   }
 }

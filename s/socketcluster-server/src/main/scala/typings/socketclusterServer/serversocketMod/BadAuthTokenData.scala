@@ -14,7 +14,6 @@ object BadAuthTokenData {
   @scala.inline
   def apply(authError: Error, signedAuthToken: String): BadAuthTokenData = {
     val __obj = js.Dynamic.literal(authError = authError.asInstanceOf[js.Any], signedAuthToken = signedAuthToken.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BadAuthTokenData]
   }
 }

@@ -12,7 +12,6 @@ object CredentialsDirConfig {
   @scala.inline
   def apply(credentialsDir: String): CredentialsDirConfig = {
     val __obj = js.Dynamic.literal(credentialsDir = credentialsDir.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CredentialsDirConfig]
   }
 }

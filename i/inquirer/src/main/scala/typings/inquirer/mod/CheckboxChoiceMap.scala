@@ -24,7 +24,6 @@ object CheckboxChoiceMap {
     SeparatorOptions: SeparatorOptions
   ): CheckboxChoiceMap[T] = {
     val __obj = js.Dynamic.literal(CheckboxChoiceOptions = CheckboxChoiceOptions.asInstanceOf[js.Any], Choice = Choice.asInstanceOf[js.Any], ChoiceOptions = ChoiceOptions.asInstanceOf[js.Any], Separator = Separator.asInstanceOf[js.Any], SeparatorOptions = SeparatorOptions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CheckboxChoiceMap[T]]
   }
 }

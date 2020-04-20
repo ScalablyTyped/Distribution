@@ -13,7 +13,6 @@ object PickImplsetSize {
   @scala.inline
   def apply(setSize: Boolean): PickImplsetSize = {
     val __obj = js.Dynamic.literal(setSize = setSize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplsetSize]
   }
 }

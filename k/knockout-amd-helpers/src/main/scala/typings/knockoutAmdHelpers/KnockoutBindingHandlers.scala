@@ -12,7 +12,6 @@ object KnockoutBindingHandlers {
   @scala.inline
   def apply(module: KnockoutAMDModule): KnockoutBindingHandlers = {
     val __obj = js.Dynamic.literal(module = module.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KnockoutBindingHandlers]
   }
 }

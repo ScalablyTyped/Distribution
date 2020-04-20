@@ -14,7 +14,6 @@ object ContextItem {
   @scala.inline
   def apply(run: (Context, js.Any, Meta) => js.Promise[Unit]): ContextItem = {
     val __obj = js.Dynamic.literal(run = js.Any.fromFunction3(run))
-  
     __obj.asInstanceOf[ContextItem]
   }
 }

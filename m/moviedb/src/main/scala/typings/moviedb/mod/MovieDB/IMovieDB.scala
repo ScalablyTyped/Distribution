@@ -18,7 +18,6 @@ object IMovieDB {
     searchMovie: (SearchOptions, js.Function2[/* err */ js.Any, /* movies */ SearchResults, Unit]) => Unit
   ): IMovieDB = {
     val __obj = js.Dynamic.literal(movieImages = js.Any.fromFunction2(movieImages), movieInfo = js.Any.fromFunction2(movieInfo), searchMovie = js.Any.fromFunction2(searchMovie))
-  
     __obj.asInstanceOf[IMovieDB]
   }
 }

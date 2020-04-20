@@ -22,7 +22,6 @@ object NotebookProvider {
     standardKernels: js.Array[IStandardKernel]
   ): NotebookProvider = {
     val __obj = js.Dynamic.literal(getNotebookManager = js.Any.fromFunction1(getNotebookManager), handleNotebookClosed = js.Any.fromFunction1(handleNotebookClosed), providerId = providerId.asInstanceOf[js.Any], standardKernels = standardKernels.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NotebookProvider]
   }
 }

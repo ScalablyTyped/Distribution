@@ -28,7 +28,6 @@ object IRestorer_ {
   @scala.inline
   def apply[T /* <: IRestorable[U, _] */, U /* <: IObservableDisposable */, V](restore: (T, IOptions[U]) => js.Promise[V], restored: js.Promise[V]): IRestorer_[T, U, V] = {
     val __obj = js.Dynamic.literal(restore = js.Any.fromFunction2(restore), restored = restored.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IRestorer_[T, U, V]]
   }
 }

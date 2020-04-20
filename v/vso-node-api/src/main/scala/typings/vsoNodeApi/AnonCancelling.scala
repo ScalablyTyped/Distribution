@@ -26,7 +26,6 @@ object AnonCancelling {
     postponed: Double
   ): AnonCancelling = {
     val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], cancelling = cancelling.asInstanceOf[js.Any], completed = completed.asInstanceOf[js.Any], inProgress = inProgress.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], notStarted = notStarted.asInstanceOf[js.Any], postponed = postponed.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCancelling]
   }
 }

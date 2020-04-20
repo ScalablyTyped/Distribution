@@ -12,7 +12,6 @@ object AnonValidate {
   @scala.inline
   def apply(validate: js.Object): AnonValidate = {
     val __obj = js.Dynamic.literal(validate = validate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonValidate]
   }
 }

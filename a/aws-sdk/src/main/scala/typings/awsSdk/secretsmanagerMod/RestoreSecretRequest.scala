@@ -16,7 +16,6 @@ object RestoreSecretRequest {
   @scala.inline
   def apply(SecretId: SecretIdType): RestoreSecretRequest = {
     val __obj = js.Dynamic.literal(SecretId = SecretId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RestoreSecretRequest]
   }
 }

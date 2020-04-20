@@ -20,7 +20,7 @@ abstract class ShadowLight () extends IShadowLight {
     * Also use as the light direction on spot and directional lights.
     */
   @JSName("direction")
-  def direction_MShadowLight(): Vector3 = js.native
+  def direction_MShadowLight: Vector3 = js.native
   /**
     * In 2d mode (needCube being false), sets the direction used to cast the shadow.
     * Also use as the light direction on spot and directional lights.
@@ -37,7 +37,7 @@ abstract class ShadowLight () extends IShadowLight {
     * point and spot lights.
     */
   @JSName("position")
-  def position_MShadowLight(): Vector3 = js.native
+  def position_MShadowLight: Vector3 = js.native
   /**
     * Sets the position the shadow will be casted from. Also use as the light position for both
     * point and spot lights.
@@ -54,7 +54,7 @@ abstract class ShadowLight () extends IShadowLight {
     * Sets the shadow projection clipping maximum z value.
     */
   @JSName("shadowMaxZ")
-  def shadowMaxZ_MShadowLight(): Double = js.native
+  def shadowMaxZ_MShadowLight: Double = js.native
   /**
     * Gets the shadow projection clipping maximum z value.
     */
@@ -64,7 +64,7 @@ abstract class ShadowLight () extends IShadowLight {
     * Gets the shadow projection clipping minimum z value.
     */
   @JSName("shadowMinZ")
-  def shadowMinZ_MShadowLight(): Double = js.native
+  def shadowMinZ_MShadowLight: Double = js.native
   /**
     * Sets the shadow projection clipping minimum z value.
     */

@@ -22,6 +22,6 @@ trait SinonStubStatic extends js.Object {
     * An exception is thrown if the property is not already a function.
     * The original function can be restored by calling object.method.restore(); (or stub.restore();).
     */
-  def apply[T](obj: T, method: String): SinonStub = js.native
+  def apply[T](obj: T, method: /* keyof T */ String): SinonStub = js.native
 }
 

@@ -28,7 +28,6 @@ object AnonAfter {
     push: js.Any
   ): AnonAfter = {
     val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], at = at.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any], disable = disable.asInstanceOf[js.Any], enable = enable.asInstanceOf[js.Any], enableOnly = enableOnly.asInstanceOf[js.Any], getRules = getRules.asInstanceOf[js.Any], push = push.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAfter]
   }
 }

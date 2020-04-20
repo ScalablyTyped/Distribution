@@ -20,7 +20,6 @@ object DeleteScalingPlanRequest {
   @scala.inline
   def apply(ScalingPlanName: ScalingPlanName, ScalingPlanVersion: ScalingPlanVersion): DeleteScalingPlanRequest = {
     val __obj = js.Dynamic.literal(ScalingPlanName = ScalingPlanName.asInstanceOf[js.Any], ScalingPlanVersion = ScalingPlanVersion.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteScalingPlanRequest]
   }
 }

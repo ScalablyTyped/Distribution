@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait rcSwitchProps {
   @scala.inline
-  def RcSwitchProps: Props.type = typings.rcSwitch.mod.Props
+  def RcSwitchProps: Props.type = Props
   type RcSwitchProps = Props
 }
 

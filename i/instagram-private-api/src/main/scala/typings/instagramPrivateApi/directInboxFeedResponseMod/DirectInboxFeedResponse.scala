@@ -24,7 +24,6 @@ object DirectInboxFeedResponse {
     status: String
   ): DirectInboxFeedResponse = {
     val __obj = js.Dynamic.literal(inbox = inbox.asInstanceOf[js.Any], most_recent_inviter = most_recent_inviter.asInstanceOf[js.Any], pending_requests_total = pending_requests_total.asInstanceOf[js.Any], seq_id = seq_id.asInstanceOf[js.Any], snapshot_at_ms = snapshot_at_ms.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DirectInboxFeedResponse]
   }
 }

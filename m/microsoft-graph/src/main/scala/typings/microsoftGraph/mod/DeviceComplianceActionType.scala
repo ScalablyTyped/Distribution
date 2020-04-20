@@ -17,20 +17,18 @@ trait DeviceComplianceActionType extends js.Object
 
 object DeviceComplianceActionType {
   @scala.inline
-  def block: typings.microsoftGraph.microsoftGraphStrings.block = this.cast("block")
+  def block: typings.microsoftGraph.microsoftGraphStrings.block = "block".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.block]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def noAction: typings.microsoftGraph.microsoftGraphStrings.noAction = "noAction".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.noAction]
   @scala.inline
-  def noAction: typings.microsoftGraph.microsoftGraphStrings.noAction = this.cast("noAction")
+  def notification: typings.microsoftGraph.microsoftGraphStrings.notification = "notification".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notification]
   @scala.inline
-  def notification: typings.microsoftGraph.microsoftGraphStrings.notification = this.cast("notification")
+  def pushNotification: typings.microsoftGraph.microsoftGraphStrings.pushNotification = "pushNotification".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.pushNotification]
   @scala.inline
-  def pushNotification: typings.microsoftGraph.microsoftGraphStrings.pushNotification = this.cast("pushNotification")
+  def removeResourceAccessProfiles: typings.microsoftGraph.microsoftGraphStrings.removeResourceAccessProfiles = "removeResourceAccessProfiles".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.removeResourceAccessProfiles]
   @scala.inline
-  def removeResourceAccessProfiles: typings.microsoftGraph.microsoftGraphStrings.removeResourceAccessProfiles = this.cast("removeResourceAccessProfiles")
+  def retire: typings.microsoftGraph.microsoftGraphStrings.retire = "retire".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.retire]
   @scala.inline
-  def retire: typings.microsoftGraph.microsoftGraphStrings.retire = this.cast("retire")
-  @scala.inline
-  def wipe: typings.microsoftGraph.microsoftGraphStrings.wipe = this.cast("wipe")
+  def wipe: typings.microsoftGraph.microsoftGraphStrings.wipe = "wipe".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.wipe]
 }
 

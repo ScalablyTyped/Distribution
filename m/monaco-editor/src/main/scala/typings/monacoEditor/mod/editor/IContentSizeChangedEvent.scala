@@ -20,7 +20,6 @@ object IContentSizeChangedEvent {
     contentWidthChanged: Boolean
   ): IContentSizeChangedEvent = {
     val __obj = js.Dynamic.literal(contentHeight = contentHeight.asInstanceOf[js.Any], contentHeightChanged = contentHeightChanged.asInstanceOf[js.Any], contentWidth = contentWidth.asInstanceOf[js.Any], contentWidthChanged = contentWidthChanged.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IContentSizeChangedEvent]
   }
 }

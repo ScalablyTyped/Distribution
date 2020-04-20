@@ -14,7 +14,6 @@ object WebServerOptions {
   @scala.inline
   def apply[TProcessor, THandler](services: StringDictionary[AnonHandler[TProcessor, THandler]]): WebServerOptions[TProcessor, THandler] = {
     val __obj = js.Dynamic.literal(services = services.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WebServerOptions[TProcessor, THandler]]
   }
 }

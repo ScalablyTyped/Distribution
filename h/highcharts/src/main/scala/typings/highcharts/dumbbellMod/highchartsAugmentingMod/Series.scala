@@ -24,7 +24,6 @@ object Series {
   @scala.inline
   def apply(markerAttribs: () => SVGAttributes): Series = {
     val __obj = js.Dynamic.literal(markerAttribs = js.Any.fromFunction0(markerAttribs))
-  
     __obj.asInstanceOf[Series]
   }
 }

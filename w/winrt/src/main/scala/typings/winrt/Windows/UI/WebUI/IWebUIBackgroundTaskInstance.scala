@@ -12,7 +12,6 @@ object IWebUIBackgroundTaskInstance {
   @scala.inline
   def apply(succeeded: Boolean): IWebUIBackgroundTaskInstance = {
     val __obj = js.Dynamic.literal(succeeded = succeeded.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IWebUIBackgroundTaskInstance]
   }
 }

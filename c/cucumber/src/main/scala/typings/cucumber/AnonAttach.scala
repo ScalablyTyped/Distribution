@@ -14,7 +14,6 @@ object AnonAttach {
   @scala.inline
   def apply(attach: js.Function, parameters: StringDictionary[js.Any]): AnonAttach = {
     val __obj = js.Dynamic.literal(attach = attach.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAttach]
   }
 }

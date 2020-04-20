@@ -12,7 +12,6 @@ object ICONNECTION_LOST {
   @scala.inline
   def apply(reason: String): ICONNECTION_LOST = {
     val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICONNECTION_LOST]
   }
 }

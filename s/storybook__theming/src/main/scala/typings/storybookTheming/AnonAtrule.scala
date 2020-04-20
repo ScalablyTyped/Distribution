@@ -116,7 +116,7 @@ object AnonAtrule {
     __obj.updateDynamic("&.comment")(AmpersandDotcomment.asInstanceOf[js.Any])
     __obj.updateDynamic("&.constant")(AmpersandDotconstant.asInstanceOf[js.Any])
     __obj.updateDynamic("&.deleted")(AmpersandDotdeleted.asInstanceOf[js.Any])
-    __obj.updateDynamic("&.directive.tag .tag")(`AmpersandDotdirectiveDottag Dottag`.asInstanceOf[js.Any])
+    __obj.updateDynamic("&.directive.tag .tag")((`AmpersandDotdirectiveDottag Dottag`).asInstanceOf[js.Any])
     __obj.updateDynamic("&.doctype")(AmpersandDotdoctype.asInstanceOf[js.Any])
     __obj.updateDynamic("&.entity")(AmpersandDotentity.asInstanceOf[js.Any])
     __obj.updateDynamic("&.function")(AmpersandDotfunction.asInstanceOf[js.Any])

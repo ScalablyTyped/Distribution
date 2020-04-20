@@ -62,7 +62,6 @@ object SelectArgs {
     r2: Double
   ): SelectArgs = {
     val __obj = js.Dynamic.literal(c1 = c1.asInstanceOf[js.Any], c2 = c2.asInstanceOf[js.Any], clear = clear.asInstanceOf[js.Any], cursorColumn = cursorColumn.asInstanceOf[js.Any], cursorRow = cursorRow.asInstanceOf[js.Any], r1 = r1.asInstanceOf[js.Any], r2 = r2.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SelectArgs]
   }
 }

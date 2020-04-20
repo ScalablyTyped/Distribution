@@ -306,302 +306,300 @@ trait OlObjectClass extends js.Object
 
 object OlObjectClass {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olAccount: `105` = 105.asInstanceOf[`105`]
   @scala.inline
-  def olAccount: `105` = this.cast(105)
+  def olAccountRuleCondition: `135` = 135.asInstanceOf[`135`]
   @scala.inline
-  def olAccountRuleCondition: `135` = this.cast(135)
+  def olAccounts: `106` = 106.asInstanceOf[`106`]
   @scala.inline
-  def olAccounts: `106` = this.cast(106)
+  def olAction: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def olAction: `32` = this.cast(32)
+  def olActions: `33` = 33.asInstanceOf[`33`]
   @scala.inline
-  def olActions: `33` = this.cast(33)
+  def olAddressEntries: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def olAddressEntries: `21` = this.cast(21)
+  def olAddressEntry: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def olAddressEntry: `8` = this.cast(8)
+  def olAddressList: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def olAddressList: `7` = this.cast(7)
+  def olAddressLists: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def olAddressLists: `20` = this.cast(20)
+  def olAddressRuleCondition: `170` = 170.asInstanceOf[`170`]
   @scala.inline
-  def olAddressRuleCondition: `170` = this.cast(170)
+  def olApplication: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def olApplication: `0` = this.cast(0)
+  def olAppointment: `26` = 26.asInstanceOf[`26`]
   @scala.inline
-  def olAppointment: `26` = this.cast(26)
+  def olAssignToCategoryRuleAction: `122` = 122.asInstanceOf[`122`]
   @scala.inline
-  def olAssignToCategoryRuleAction: `122` = this.cast(122)
+  def olAttachment: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def olAttachment: `5` = this.cast(5)
+  def olAttachmentSelection: `169` = 169.asInstanceOf[`169`]
   @scala.inline
-  def olAttachmentSelection: `169` = this.cast(169)
+  def olAttachments: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def olAttachments: `18` = this.cast(18)
+  def olAutoFormatRule: `147` = 147.asInstanceOf[`147`]
   @scala.inline
-  def olAutoFormatRule: `147` = this.cast(147)
+  def olAutoFormatRules: `148` = 148.asInstanceOf[`148`]
   @scala.inline
-  def olAutoFormatRules: `148` = this.cast(148)
+  def olCalendarModule: `159` = 159.asInstanceOf[`159`]
   @scala.inline
-  def olCalendarModule: `159` = this.cast(159)
+  def olCalendarSharing: `151` = 151.asInstanceOf[`151`]
   @scala.inline
-  def olCalendarSharing: `151` = this.cast(151)
+  def olCategories: `153` = 153.asInstanceOf[`153`]
   @scala.inline
-  def olCategories: `153` = this.cast(153)
+  def olCategory: `152` = 152.asInstanceOf[`152`]
   @scala.inline
-  def olCategory: `152` = this.cast(152)
+  def olCategoryRuleCondition: `130` = 130.asInstanceOf[`130`]
   @scala.inline
-  def olCategoryRuleCondition: `130` = this.cast(130)
+  def olClassBusinessCardView: `168` = 168.asInstanceOf[`168`]
   @scala.inline
-  def olClassBusinessCardView: `168` = this.cast(168)
+  def olClassCalendarView: `139` = 139.asInstanceOf[`139`]
   @scala.inline
-  def olClassCalendarView: `139` = this.cast(139)
+  def olClassCardView: `138` = 138.asInstanceOf[`138`]
   @scala.inline
-  def olClassCardView: `138` = this.cast(138)
+  def olClassIconView: `137` = 137.asInstanceOf[`137`]
   @scala.inline
-  def olClassIconView: `137` = this.cast(137)
+  def olClassNavigationPane: `155` = 155.asInstanceOf[`155`]
   @scala.inline
-  def olClassNavigationPane: `155` = this.cast(155)
+  def olClassTableView: `136` = 136.asInstanceOf[`136`]
   @scala.inline
-  def olClassTableView: `136` = this.cast(136)
+  def olClassTimeLineView: `140` = 140.asInstanceOf[`140`]
   @scala.inline
-  def olClassTimeLineView: `140` = this.cast(140)
+  def olClassTimeZone: `174` = 174.asInstanceOf[`174`]
   @scala.inline
-  def olClassTimeZone: `174` = this.cast(174)
+  def olClassTimeZones: `175` = 175.asInstanceOf[`175`]
   @scala.inline
-  def olClassTimeZones: `175` = this.cast(175)
+  def olColumn: `154` = 154.asInstanceOf[`154`]
   @scala.inline
-  def olColumn: `154` = this.cast(154)
+  def olColumnFormat: `149` = 149.asInstanceOf[`149`]
   @scala.inline
-  def olColumnFormat: `149` = this.cast(149)
+  def olColumns: `150` = 150.asInstanceOf[`150`]
   @scala.inline
-  def olColumns: `150` = this.cast(150)
+  def olConflict: `102` = 102.asInstanceOf[`102`]
   @scala.inline
-  def olConflict: `102` = this.cast(102)
+  def olConflicts: `103` = 103.asInstanceOf[`103`]
   @scala.inline
-  def olConflicts: `103` = this.cast(103)
+  def olContact: `40` = 40.asInstanceOf[`40`]
   @scala.inline
-  def olContact: `40` = this.cast(40)
+  def olContactsModule: `160` = 160.asInstanceOf[`160`]
   @scala.inline
-  def olContactsModule: `160` = this.cast(160)
+  def olConversation: `178` = 178.asInstanceOf[`178`]
   @scala.inline
-  def olConversation: `178` = this.cast(178)
+  def olConversationHeader: `182` = 182.asInstanceOf[`182`]
   @scala.inline
-  def olConversationHeader: `182` = this.cast(182)
+  def olDistributionList: `69` = 69.asInstanceOf[`69`]
   @scala.inline
-  def olDistributionList: `69` = this.cast(69)
+  def olDocument: `41` = 41.asInstanceOf[`41`]
   @scala.inline
-  def olDocument: `41` = this.cast(41)
+  def olException: `30` = 30.asInstanceOf[`30`]
   @scala.inline
-  def olException: `30` = this.cast(30)
+  def olExceptions: `29` = 29.asInstanceOf[`29`]
   @scala.inline
-  def olExceptions: `29` = this.cast(29)
+  def olExchangeDistributionList: `111` = 111.asInstanceOf[`111`]
   @scala.inline
-  def olExchangeDistributionList: `111` = this.cast(111)
+  def olExchangeUser: `110` = 110.asInstanceOf[`110`]
   @scala.inline
-  def olExchangeUser: `110` = this.cast(110)
+  def olExplorer: `34` = 34.asInstanceOf[`34`]
   @scala.inline
-  def olExplorer: `34` = this.cast(34)
+  def olExplorers: `60` = 60.asInstanceOf[`60`]
   @scala.inline
-  def olExplorers: `60` = this.cast(60)
+  def olFolder: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olFolder: `2` = this.cast(2)
+  def olFolders: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def olFolders: `15` = this.cast(15)
+  def olFormDescription: `37` = 37.asInstanceOf[`37`]
   @scala.inline
-  def olFormDescription: `37` = this.cast(37)
+  def olFormNameRuleCondition: `131` = 131.asInstanceOf[`131`]
   @scala.inline
-  def olFormNameRuleCondition: `131` = this.cast(131)
+  def olFormRegion: `129` = 129.asInstanceOf[`129`]
   @scala.inline
-  def olFormRegion: `129` = this.cast(129)
+  def olFromRssFeedRuleCondition: `173` = 173.asInstanceOf[`173`]
   @scala.inline
-  def olFromRssFeedRuleCondition: `173` = this.cast(173)
+  def olFromRuleCondition: `132` = 132.asInstanceOf[`132`]
   @scala.inline
-  def olFromRuleCondition: `132` = this.cast(132)
+  def olImportanceRuleCondition: `128` = 128.asInstanceOf[`128`]
   @scala.inline
-  def olImportanceRuleCondition: `128` = this.cast(128)
+  def olInspector: `35` = 35.asInstanceOf[`35`]
   @scala.inline
-  def olInspector: `35` = this.cast(35)
+  def olInspectors: `61` = 61.asInstanceOf[`61`]
   @scala.inline
-  def olInspectors: `61` = this.cast(61)
+  def olItemProperties: `98` = 98.asInstanceOf[`98`]
   @scala.inline
-  def olItemProperties: `98` = this.cast(98)
+  def olItemProperty: `99` = 99.asInstanceOf[`99`]
   @scala.inline
-  def olItemProperty: `99` = this.cast(99)
+  def olItems: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def olItems: `16` = this.cast(16)
+  def olJournal: `42` = 42.asInstanceOf[`42`]
   @scala.inline
-  def olJournal: `42` = this.cast(42)
+  def olJournalModule: `162` = 162.asInstanceOf[`162`]
   @scala.inline
-  def olJournalModule: `162` = this.cast(162)
+  def olLink: `75` = 75.asInstanceOf[`75`]
   @scala.inline
-  def olLink: `75` = this.cast(75)
+  def olLinks: `76` = 76.asInstanceOf[`76`]
   @scala.inline
-  def olLinks: `76` = this.cast(76)
+  def olMail: `43` = 43.asInstanceOf[`43`]
   @scala.inline
-  def olMail: `43` = this.cast(43)
+  def olMailModule: `158` = 158.asInstanceOf[`158`]
   @scala.inline
-  def olMailModule: `158` = this.cast(158)
+  def olMarkAsTaskRuleAction: `124` = 124.asInstanceOf[`124`]
   @scala.inline
-  def olMarkAsTaskRuleAction: `124` = this.cast(124)
+  def olMeetingCancellation: `54` = 54.asInstanceOf[`54`]
   @scala.inline
-  def olMeetingCancellation: `54` = this.cast(54)
+  def olMeetingForwardNotification: `181` = 181.asInstanceOf[`181`]
   @scala.inline
-  def olMeetingForwardNotification: `181` = this.cast(181)
+  def olMeetingRequest: `53` = 53.asInstanceOf[`53`]
   @scala.inline
-  def olMeetingRequest: `53` = this.cast(53)
+  def olMeetingResponseNegative: `55` = 55.asInstanceOf[`55`]
   @scala.inline
-  def olMeetingResponseNegative: `55` = this.cast(55)
+  def olMeetingResponsePositive: `56` = 56.asInstanceOf[`56`]
   @scala.inline
-  def olMeetingResponsePositive: `56` = this.cast(56)
+  def olMeetingResponseTentative: `57` = 57.asInstanceOf[`57`]
   @scala.inline
-  def olMeetingResponseTentative: `57` = this.cast(57)
+  def olMobile: `176` = 176.asInstanceOf[`176`]
   @scala.inline
-  def olMobile: `176` = this.cast(176)
+  def olMoveOrCopyRuleAction: `118` = 118.asInstanceOf[`118`]
   @scala.inline
-  def olMoveOrCopyRuleAction: `118` = this.cast(118)
+  def olNamespace: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olNamespace: `1` = this.cast(1)
+  def olNavigationFolder: `167` = 167.asInstanceOf[`167`]
   @scala.inline
-  def olNavigationFolder: `167` = this.cast(167)
+  def olNavigationFolders: `166` = 166.asInstanceOf[`166`]
   @scala.inline
-  def olNavigationFolders: `166` = this.cast(166)
+  def olNavigationGroup: `165` = 165.asInstanceOf[`165`]
   @scala.inline
-  def olNavigationGroup: `165` = this.cast(165)
+  def olNavigationGroups: `164` = 164.asInstanceOf[`164`]
   @scala.inline
-  def olNavigationGroups: `164` = this.cast(164)
+  def olNavigationModule: `157` = 157.asInstanceOf[`157`]
   @scala.inline
-  def olNavigationModule: `157` = this.cast(157)
+  def olNavigationModules: `156` = 156.asInstanceOf[`156`]
   @scala.inline
-  def olNavigationModules: `156` = this.cast(156)
+  def olNewItemAlertRuleAction: `125` = 125.asInstanceOf[`125`]
   @scala.inline
-  def olNewItemAlertRuleAction: `125` = this.cast(125)
+  def olNote: `44` = 44.asInstanceOf[`44`]
   @scala.inline
-  def olNote: `44` = this.cast(44)
+  def olNotesModule: `163` = 163.asInstanceOf[`163`]
   @scala.inline
-  def olNotesModule: `163` = this.cast(163)
+  def olOrderField: `144` = 144.asInstanceOf[`144`]
   @scala.inline
-  def olOrderField: `144` = this.cast(144)
+  def olOrderFields: `145` = 145.asInstanceOf[`145`]
   @scala.inline
-  def olOrderFields: `145` = this.cast(145)
+  def olOutlookBarGroup: `66` = 66.asInstanceOf[`66`]
   @scala.inline
-  def olOutlookBarGroup: `66` = this.cast(66)
+  def olOutlookBarGroups: `65` = 65.asInstanceOf[`65`]
   @scala.inline
-  def olOutlookBarGroups: `65` = this.cast(65)
+  def olOutlookBarPane: `63` = 63.asInstanceOf[`63`]
   @scala.inline
-  def olOutlookBarPane: `63` = this.cast(63)
+  def olOutlookBarShortcut: `68` = 68.asInstanceOf[`68`]
   @scala.inline
-  def olOutlookBarShortcut: `68` = this.cast(68)
+  def olOutlookBarShortcuts: `67` = 67.asInstanceOf[`67`]
   @scala.inline
-  def olOutlookBarShortcuts: `67` = this.cast(67)
+  def olOutlookBarStorage: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def olOutlookBarStorage: `64` = this.cast(64)
+  def olOutspace: `180` = 180.asInstanceOf[`180`]
   @scala.inline
-  def olOutspace: `180` = this.cast(180)
+  def olPages: `36` = 36.asInstanceOf[`36`]
   @scala.inline
-  def olPages: `36` = this.cast(36)
+  def olPanes: `62` = 62.asInstanceOf[`62`]
   @scala.inline
-  def olPanes: `62` = this.cast(62)
+  def olPlaySoundRuleAction: `123` = 123.asInstanceOf[`123`]
   @scala.inline
-  def olPlaySoundRuleAction: `123` = this.cast(123)
+  def olPost: `45` = 45.asInstanceOf[`45`]
   @scala.inline
-  def olPost: `45` = this.cast(45)
+  def olPropertyAccessor: `112` = 112.asInstanceOf[`112`]
   @scala.inline
-  def olPropertyAccessor: `112` = this.cast(112)
+  def olPropertyPageSite: `70` = 70.asInstanceOf[`70`]
   @scala.inline
-  def olPropertyPageSite: `70` = this.cast(70)
+  def olPropertyPages: `71` = 71.asInstanceOf[`71`]
   @scala.inline
-  def olPropertyPages: `71` = this.cast(71)
+  def olRecipient: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def olRecipient: `4` = this.cast(4)
+  def olRecipients: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def olRecipients: `17` = this.cast(17)
+  def olRecurrencePattern: `28` = 28.asInstanceOf[`28`]
   @scala.inline
-  def olRecurrencePattern: `28` = this.cast(28)
+  def olReminder: `101` = 101.asInstanceOf[`101`]
   @scala.inline
-  def olReminder: `101` = this.cast(101)
+  def olReminders: `100` = 100.asInstanceOf[`100`]
   @scala.inline
-  def olReminders: `100` = this.cast(100)
+  def olRemote: `47` = 47.asInstanceOf[`47`]
   @scala.inline
-  def olRemote: `47` = this.cast(47)
+  def olReport: `46` = 46.asInstanceOf[`46`]
   @scala.inline
-  def olReport: `46` = this.cast(46)
+  def olResults: `78` = 78.asInstanceOf[`78`]
   @scala.inline
-  def olResults: `78` = this.cast(78)
+  def olRow: `121` = 121.asInstanceOf[`121`]
   @scala.inline
-  def olRow: `121` = this.cast(121)
+  def olRule: `115` = 115.asInstanceOf[`115`]
   @scala.inline
-  def olRule: `115` = this.cast(115)
+  def olRuleAction: `117` = 117.asInstanceOf[`117`]
   @scala.inline
-  def olRuleAction: `117` = this.cast(117)
+  def olRuleActions: `116` = 116.asInstanceOf[`116`]
   @scala.inline
-  def olRuleActions: `116` = this.cast(116)
+  def olRuleCondition: `127` = 127.asInstanceOf[`127`]
   @scala.inline
-  def olRuleCondition: `127` = this.cast(127)
+  def olRuleConditions: `126` = 126.asInstanceOf[`126`]
   @scala.inline
-  def olRuleConditions: `126` = this.cast(126)
+  def olRules: `114` = 114.asInstanceOf[`114`]
   @scala.inline
-  def olRules: `114` = this.cast(114)
+  def olSearch: `77` = 77.asInstanceOf[`77`]
   @scala.inline
-  def olSearch: `77` = this.cast(77)
+  def olSelectNamesDialog: `109` = 109.asInstanceOf[`109`]
   @scala.inline
-  def olSelectNamesDialog: `109` = this.cast(109)
+  def olSelection: `74` = 74.asInstanceOf[`74`]
   @scala.inline
-  def olSelection: `74` = this.cast(74)
+  def olSendRuleAction: `119` = 119.asInstanceOf[`119`]
   @scala.inline
-  def olSendRuleAction: `119` = this.cast(119)
+  def olSenderInAddressListRuleCondition: `133` = 133.asInstanceOf[`133`]
   @scala.inline
-  def olSenderInAddressListRuleCondition: `133` = this.cast(133)
+  def olSharing: `104` = 104.asInstanceOf[`104`]
   @scala.inline
-  def olSharing: `104` = this.cast(104)
+  def olSimpleItems: `179` = 179.asInstanceOf[`179`]
   @scala.inline
-  def olSimpleItems: `179` = this.cast(179)
+  def olSolutionsModule: `177` = 177.asInstanceOf[`177`]
   @scala.inline
-  def olSolutionsModule: `177` = this.cast(177)
+  def olStorageItem: `113` = 113.asInstanceOf[`113`]
   @scala.inline
-  def olStorageItem: `113` = this.cast(113)
+  def olStore: `107` = 107.asInstanceOf[`107`]
   @scala.inline
-  def olStore: `107` = this.cast(107)
+  def olStores: `108` = 108.asInstanceOf[`108`]
   @scala.inline
-  def olStores: `108` = this.cast(108)
+  def olSyncObject: `72` = 72.asInstanceOf[`72`]
   @scala.inline
-  def olSyncObject: `72` = this.cast(72)
+  def olSyncObjects: `73` = 73.asInstanceOf[`73`]
   @scala.inline
-  def olSyncObjects: `73` = this.cast(73)
+  def olTable: `120` = 120.asInstanceOf[`120`]
   @scala.inline
-  def olTable: `120` = this.cast(120)
+  def olTask: `48` = 48.asInstanceOf[`48`]
   @scala.inline
-  def olTask: `48` = this.cast(48)
+  def olTaskRequest: `49` = 49.asInstanceOf[`49`]
   @scala.inline
-  def olTaskRequest: `49` = this.cast(49)
+  def olTaskRequestAccept: `51` = 51.asInstanceOf[`51`]
   @scala.inline
-  def olTaskRequestAccept: `51` = this.cast(51)
+  def olTaskRequestDecline: `52` = 52.asInstanceOf[`52`]
   @scala.inline
-  def olTaskRequestDecline: `52` = this.cast(52)
+  def olTaskRequestUpdate: `50` = 50.asInstanceOf[`50`]
   @scala.inline
-  def olTaskRequestUpdate: `50` = this.cast(50)
+  def olTasksModule: `161` = 161.asInstanceOf[`161`]
   @scala.inline
-  def olTasksModule: `161` = this.cast(161)
+  def olTextRuleCondition: `134` = 134.asInstanceOf[`134`]
   @scala.inline
-  def olTextRuleCondition: `134` = this.cast(134)
+  def olUserDefinedProperties: `172` = 172.asInstanceOf[`172`]
   @scala.inline
-  def olUserDefinedProperties: `172` = this.cast(172)
+  def olUserDefinedProperty: `171` = 171.asInstanceOf[`171`]
   @scala.inline
-  def olUserDefinedProperty: `171` = this.cast(171)
+  def olUserProperties: `38` = 38.asInstanceOf[`38`]
   @scala.inline
-  def olUserProperties: `38` = this.cast(38)
+  def olUserProperty: `39` = 39.asInstanceOf[`39`]
   @scala.inline
-  def olUserProperty: `39` = this.cast(39)
+  def olView: `80` = 80.asInstanceOf[`80`]
   @scala.inline
-  def olView: `80` = this.cast(80)
+  def olViewField: `142` = 142.asInstanceOf[`142`]
   @scala.inline
-  def olViewField: `142` = this.cast(142)
+  def olViewFields: `141` = 141.asInstanceOf[`141`]
   @scala.inline
-  def olViewFields: `141` = this.cast(141)
+  def olViewFont: `146` = 146.asInstanceOf[`146`]
   @scala.inline
-  def olViewFont: `146` = this.cast(146)
-  @scala.inline
-  def olViews: `79` = this.cast(79)
+  def olViews: `79` = 79.asInstanceOf[`79`]
 }
 

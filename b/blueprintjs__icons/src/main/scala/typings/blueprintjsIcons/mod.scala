@@ -967,6 +967,7 @@ import typings.blueprintjsIcons.blueprintjsIconsStrings.upload
 import typings.blueprintjsIcons.blueprintjsIconsStrings.user
 import typings.blueprintjsIcons.blueprintjsIconsStrings.variable
 import typings.blueprintjsIcons.blueprintjsIconsStrings.video
+import typings.blueprintjsIcons.blueprintjsIconsStrings.virus
 import typings.blueprintjsIcons.blueprintjsIconsStrings.walk
 import typings.blueprintjsIcons.blueprintjsIconsStrings.widget
 import typings.blueprintjsIcons.blueprintjsIconsStrings.wrench
@@ -1943,6 +1944,7 @@ object mod extends js.Object {
     val VERTICAL_BAR_CHART_DESC: `vertical-bar-chart-desc` = js.native
     val VERTICAL_DISTRIBUTION: `vertical-distribution` = js.native
     val VIDEO: video = js.native
+    val VIRUS: virus = js.native
     val VOLUME_DOWN: `volume-down` = js.native
     val VOLUME_OFF: `volume-off` = js.native
     val VOLUME_UP: `volume-up` = js.native
@@ -2434,6 +2436,7 @@ object mod extends js.Object {
     var `vertical-bar-chart-desc`: js.Array[String] = js.native
     var `vertical-distribution`: js.Array[String] = js.native
     var video: js.Array[String] = js.native
+    var virus: js.Array[String] = js.native
     var `volume-down`: js.Array[String] = js.native
     var `volume-off`: js.Array[String] = js.native
     var `volume-up`: js.Array[String] = js.native
@@ -2925,6 +2928,7 @@ object mod extends js.Object {
     var `vertical-bar-chart-desc`: js.Array[String] = js.native
     var `vertical-distribution`: js.Array[String] = js.native
     var video: js.Array[String] = js.native
+    var virus: js.Array[String] = js.native
     var `volume-down`: js.Array[String] = js.native
     var `volume-off`: js.Array[String] = js.native
     var `volume-up`: js.Array[String] = js.native

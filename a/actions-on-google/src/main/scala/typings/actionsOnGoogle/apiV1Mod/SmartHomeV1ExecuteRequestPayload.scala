@@ -12,7 +12,6 @@ object SmartHomeV1ExecuteRequestPayload {
   @scala.inline
   def apply(commands: js.Array[SmartHomeV1ExecuteRequestCommands]): SmartHomeV1ExecuteRequestPayload = {
     val __obj = js.Dynamic.literal(commands = commands.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SmartHomeV1ExecuteRequestPayload]
   }
 }

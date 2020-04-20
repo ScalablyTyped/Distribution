@@ -16,7 +16,6 @@ object DeleteImageBuilderRequest {
   @scala.inline
   def apply(Name: Name): DeleteImageBuilderRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteImageBuilderRequest]
   }
 }

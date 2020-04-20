@@ -20,7 +20,6 @@ object GetCommitInput {
   @scala.inline
   def apply(commitId: ObjectId, repositoryName: RepositoryName): GetCommitInput = {
     val __obj = js.Dynamic.literal(commitId = commitId.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetCommitInput]
   }
 }

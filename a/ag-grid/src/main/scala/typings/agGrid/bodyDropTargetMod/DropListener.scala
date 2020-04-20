@@ -23,7 +23,6 @@ object DropListener {
     onDragging: DraggingEvent => Unit
   ): DropListener = {
     val __obj = js.Dynamic.literal(getIconName = js.Any.fromFunction0(getIconName), onDragEnter = js.Any.fromFunction1(onDragEnter), onDragLeave = js.Any.fromFunction1(onDragLeave), onDragStop = js.Any.fromFunction1(onDragStop), onDragging = js.Any.fromFunction1(onDragging))
-  
     __obj.asInstanceOf[DropListener]
   }
 }

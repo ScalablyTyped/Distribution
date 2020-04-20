@@ -27,7 +27,6 @@ object ISession {
     tokenLogin: String => js.Promise[Unit]
   ): ISession = {
     val __obj = js.Dynamic.literal(getUser = js.Any.fromFunction0(getUser), getUserToken = js.Any.fromFunction0(getUserToken), isLoggedIn = js.Any.fromFunction0(isLoggedIn), login = js.Any.fromFunction2(login), logout = js.Any.fromFunction0(logout), ssoLogin = js.Any.fromFunction1(ssoLogin), tokenLogin = js.Any.fromFunction1(tokenLogin))
-  
     __obj.asInstanceOf[ISession]
   }
 }

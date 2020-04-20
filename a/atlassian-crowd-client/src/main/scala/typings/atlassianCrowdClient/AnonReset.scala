@@ -13,7 +13,6 @@ object AnonReset {
   @scala.inline
   def apply(reset: String => js.Promise[Unit], set: (String, String) => js.Promise[Unit]): AnonReset = {
     val __obj = js.Dynamic.literal(reset = js.Any.fromFunction1(reset), set = js.Any.fromFunction2(set))
-  
     __obj.asInstanceOf[AnonReset]
   }
 }

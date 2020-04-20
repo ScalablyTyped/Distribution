@@ -29,7 +29,6 @@ object IdentityPoolRoleAttachmentRoleMappingMappingRule {
   @scala.inline
   def apply(claim: Input[String], matchType: Input[String], roleArn: Input[String], value: Input[String]): IdentityPoolRoleAttachmentRoleMappingMappingRule = {
     val __obj = js.Dynamic.literal(claim = claim.asInstanceOf[js.Any], matchType = matchType.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IdentityPoolRoleAttachmentRoleMappingMappingRule]
   }
 }

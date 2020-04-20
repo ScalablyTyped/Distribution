@@ -13,7 +13,6 @@ object InsightsServicePostResponseReach {
   @scala.inline
   def apply(follow_status: InsightsServicePostResponseFollowStatus, value: Double): InsightsServicePostResponseReach = {
     val __obj = js.Dynamic.literal(follow_status = follow_status.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InsightsServicePostResponseReach]
   }
 }

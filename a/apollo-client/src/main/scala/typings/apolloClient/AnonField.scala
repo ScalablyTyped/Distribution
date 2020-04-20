@@ -15,7 +15,6 @@ object AnonField {
   @scala.inline
   def apply(field: FieldNode, fragmentMap: FragmentMap): AnonField = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], fragmentMap = fragmentMap.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonField]
   }
 }

@@ -22,18 +22,16 @@ trait XlAboveBelow extends js.Object
 
 object XlAboveBelow {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlAboveAverage: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def xlAboveAverage: `0` = this.cast(0)
+  def xlAboveStdDev: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlAboveStdDev: `4` = this.cast(4)
+  def xlBelowAverage: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlBelowAverage: `1` = this.cast(1)
+  def xlBelowStdDev: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xlBelowStdDev: `5` = this.cast(5)
+  def xlEqualAboveAverage: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlEqualAboveAverage: `2` = this.cast(2)
-  @scala.inline
-  def xlEqualBelowAverage: `3` = this.cast(3)
+  def xlEqualBelowAverage: `3` = 3.asInstanceOf[`3`]
 }
 

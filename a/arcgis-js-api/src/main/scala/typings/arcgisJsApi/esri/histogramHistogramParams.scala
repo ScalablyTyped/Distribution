@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import typings.std.AbortSignal
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -66,6 +67,12 @@ trait histogramHistogramParams extends Object {
     */
   var numBins: js.UndefOr[Double] = js.undefined
   /**
+    * Allows for cancelable requests. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-histogram.html#histogram)
+    */
+  var signal: js.UndefOr[AbortSignal] = js.undefined
+  /**
     * A SQL expression evaluating to a number.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-histogram.html#histogram)
@@ -111,6 +118,7 @@ object histogramHistogramParams {
     minValue: Int | Double = null,
     normalizationField: String = null,
     numBins: Int | Double = null,
+    signal: AbortSignal = null,
     sqlExpression: String = null,
     sqlWhere: String = null,
     standardDeviationInterval: Int | Double = null,
@@ -125,6 +133,7 @@ object histogramHistogramParams {
     if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
     if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField.asInstanceOf[js.Any])
     if (numBins != null) __obj.updateDynamic("numBins")(numBins.asInstanceOf[js.Any])
+    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
     if (sqlExpression != null) __obj.updateDynamic("sqlExpression")(sqlExpression.asInstanceOf[js.Any])
     if (sqlWhere != null) __obj.updateDynamic("sqlWhere")(sqlWhere.asInstanceOf[js.Any])
     if (standardDeviationInterval != null) __obj.updateDynamic("standardDeviationInterval")(standardDeviationInterval.asInstanceOf[js.Any])

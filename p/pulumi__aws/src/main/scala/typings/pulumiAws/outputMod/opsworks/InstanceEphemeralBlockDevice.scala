@@ -14,7 +14,6 @@ object InstanceEphemeralBlockDevice {
   @scala.inline
   def apply(deviceName: String, virtualName: String): InstanceEphemeralBlockDevice = {
     val __obj = js.Dynamic.literal(deviceName = deviceName.asInstanceOf[js.Any], virtualName = virtualName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InstanceEphemeralBlockDevice]
   }
 }

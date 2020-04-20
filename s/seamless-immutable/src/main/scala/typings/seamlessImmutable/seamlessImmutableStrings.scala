@@ -17,10 +17,22 @@ object seamlessImmutableStrings {
   sealed trait ImmutableObjectMixin extends js.Object
   
   @js.native
+  sealed trait concat extends js.Object
+  
+  @js.native
   sealed trait copyWithin extends AdditionalMutatingArrayMethods
   
   @js.native
   sealed trait fill extends AdditionalMutatingArrayMethods
+  
+  @js.native
+  sealed trait filter extends js.Object
+  
+  @js.native
+  sealed trait forEach extends js.Object
+  
+  @js.native
+  sealed trait map extends js.Object
   
   @js.native
   sealed trait merge extends js.Object
@@ -30,6 +42,12 @@ object seamlessImmutableStrings {
   
   @js.native
   sealed trait push extends js.Object
+  
+  @js.native
+  sealed trait reduce extends js.Object
+  
+  @js.native
+  sealed trait reduceRight extends js.Object
   
   @js.native
   sealed trait replace extends js.Object
@@ -86,6 +104,9 @@ object seamlessImmutableStrings {
   sealed trait shift extends js.Object
   
   @js.native
+  sealed trait slice extends js.Object
+  
+  @js.native
   sealed trait sort extends js.Object
   
   @js.native
@@ -101,15 +122,27 @@ object seamlessImmutableStrings {
   @scala.inline
   def ImmutableObjectMixin: ImmutableObjectMixin = "ImmutableObjectMixin".asInstanceOf[ImmutableObjectMixin]
   @scala.inline
+  def concat: concat = "concat".asInstanceOf[concat]
+  @scala.inline
   def copyWithin: copyWithin = "copyWithin".asInstanceOf[copyWithin]
   @scala.inline
   def fill: fill = "fill".asInstanceOf[fill]
+  @scala.inline
+  def filter: filter = "filter".asInstanceOf[filter]
+  @scala.inline
+  def forEach: forEach = "forEach".asInstanceOf[forEach]
+  @scala.inline
+  def map: map = "map".asInstanceOf[map]
   @scala.inline
   def merge: merge = "merge".asInstanceOf[merge]
   @scala.inline
   def pop: pop = "pop".asInstanceOf[pop]
   @scala.inline
   def push: push = "push".asInstanceOf[push]
+  @scala.inline
+  def reduce: reduce = "reduce".asInstanceOf[reduce]
+  @scala.inline
+  def reduceRight: reduceRight = "reduceRight".asInstanceOf[reduceRight]
   @scala.inline
   def replace: replace = "replace".asInstanceOf[replace]
   @scala.inline
@@ -146,6 +179,8 @@ object seamlessImmutableStrings {
   def setUTCSeconds: setUTCSeconds = "setUTCSeconds".asInstanceOf[setUTCSeconds]
   @scala.inline
   def shift: shift = "shift".asInstanceOf[shift]
+  @scala.inline
+  def slice: slice = "slice".asInstanceOf[slice]
   @scala.inline
   def sort: sort = "sort".asInstanceOf[sort]
   @scala.inline

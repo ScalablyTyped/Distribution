@@ -38,7 +38,6 @@ object AnonEnergy {
     level: js.Tuple5[`0`, `2`, `7`, `14`, `22`]
   ): AnonEnergy = {
     val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], cooldown = cooldown.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], effect = effect.asInstanceOf[js.Any], energy = energy.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnergy]
   }
 }

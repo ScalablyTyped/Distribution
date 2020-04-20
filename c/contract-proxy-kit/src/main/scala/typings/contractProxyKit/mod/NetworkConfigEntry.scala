@@ -20,7 +20,6 @@ object NetworkConfigEntry {
     proxyFactoryAddress: String
   ): NetworkConfigEntry = {
     val __obj = js.Dynamic.literal(fallbackHandlerAddress = fallbackHandlerAddress.asInstanceOf[js.Any], masterCopyAddress = masterCopyAddress.asInstanceOf[js.Any], multiSendAddress = multiSendAddress.asInstanceOf[js.Any], proxyFactoryAddress = proxyFactoryAddress.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NetworkConfigEntry]
   }
 }

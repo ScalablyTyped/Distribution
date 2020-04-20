@@ -15,7 +15,6 @@ object AnonMargin {
   @scala.inline
   def apply(margin: auto, maxHeight: `100Percentsign`): AnonMargin = {
     val __obj = js.Dynamic.literal(margin = margin.asInstanceOf[js.Any], maxHeight = maxHeight.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMargin]
   }
 }

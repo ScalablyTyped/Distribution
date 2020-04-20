@@ -26,7 +26,6 @@ object ICommand {
   @scala.inline
   def apply(canExecute: Boolean, execute: () => js.Any, isExecuting: Boolean): ICommand = {
     val __obj = js.Dynamic.literal(canExecute = canExecute.asInstanceOf[js.Any], execute = js.Any.fromFunction0(execute), isExecuting = isExecuting.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICommand]
   }
 }

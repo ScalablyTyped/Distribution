@@ -25,7 +25,6 @@ object AnonParticleoffsettowardsinteractor {
   @scala.inline
   def apply(particle_offset_towards_interactor: Boolean, particle_type: String, particle_y_offset: Double): AnonParticleoffsettowardsinteractor = {
     val __obj = js.Dynamic.literal(particle_offset_towards_interactor = particle_offset_towards_interactor.asInstanceOf[js.Any], particle_type = particle_type.asInstanceOf[js.Any], particle_y_offset = particle_y_offset.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonParticleoffsettowardsinteractor]
   }
 }

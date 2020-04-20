@@ -13,7 +13,6 @@ object IClientPrinter {
   @scala.inline
   def apply(Id: js.Any, serialize: () => js.Any): IClientPrinter = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], serialize = js.Any.fromFunction0(serialize))
-  
     __obj.asInstanceOf[IClientPrinter]
   }
 }

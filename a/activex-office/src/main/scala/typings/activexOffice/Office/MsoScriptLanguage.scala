@@ -18,14 +18,12 @@ trait MsoScriptLanguage extends js.Object
 
 object MsoScriptLanguage {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoScriptLanguageASP: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoScriptLanguageASP: `3` = this.cast(3)
+  def msoScriptLanguageJava: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoScriptLanguageJava: `1` = this.cast(1)
+  def msoScriptLanguageOther: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoScriptLanguageOther: `4` = this.cast(4)
-  @scala.inline
-  def msoScriptLanguageVisualBasic: `2` = this.cast(2)
+  def msoScriptLanguageVisualBasic: `2` = 2.asInstanceOf[`2`]
 }
 

@@ -362,376 +362,374 @@ trait BuiltinCommand extends js.Object
 
 object BuiltinCommand {
   @scala.inline
-  def ALL: `268435455` = this.cast(268435455)
+  def ALL: `268435455` = 268435455.asInstanceOf[`268435455`]
   @scala.inline
-  def AboutMFiles: `162` = this.cast(162)
+  def AboutMFiles: `162` = 162.asInstanceOf[`162`]
   @scala.inline
-  def AddCollectionMember: `95` = this.cast(95)
+  def AddCollectionMember: `95` = 95.asInstanceOf[`95`]
   @scala.inline
-  def AddDashboardToViewLocBottom: `69` = this.cast(69)
+  def AddDashboardToViewLocBottom: `69` = 69.asInstanceOf[`69`]
   @scala.inline
-  def AddDashboardToViewLocMain: `67` = this.cast(67)
+  def AddDashboardToViewLocMain: `67` = 67.asInstanceOf[`67`]
   @scala.inline
-  def AddDashboardToViewLocRight: `68` = this.cast(68)
+  def AddDashboardToViewLocRight: `68` = 68.asInstanceOf[`68`]
   @scala.inline
-  def AddDocumentFromScanner: `43` = this.cast(43)
+  def AddDocumentFromScanner: `43` = 43.asInstanceOf[`43`]
   @scala.inline
-  def AddFileFromScanner: `44` = this.cast(44)
+  def AddFileFromScanner: `44` = 44.asInstanceOf[`44`]
   @scala.inline
-  def AddGroupingLevel: `116` = this.cast(116)
+  def AddGroupingLevel: `116` = 116.asInstanceOf[`116`]
   @scala.inline
-  def AddRelationship: `98` = this.cast(98)
+  def AddRelationship: `98` = 98.asInstanceOf[`98`]
   @scala.inline
-  def AddReportToViewLocBottom: `69` = this.cast(69)
+  def AddReportToViewLocBottom: `69` = 69.asInstanceOf[`69`]
   @scala.inline
-  def AddReportToViewLocMain: `67` = this.cast(67)
+  def AddReportToViewLocMain: `67` = 67.asInstanceOf[`67`]
   @scala.inline
-  def AddReportToViewLocRight: `68` = this.cast(68)
+  def AddReportToViewLocRight: `68` = 68.asInstanceOf[`68`]
   @scala.inline
-  def AddShortcutToTaskPane: `66` = this.cast(66)
+  def AddShortcutToTaskPane: `66` = 66.asInstanceOf[`66`]
   @scala.inline
-  def AddToFavorites: `62` = this.cast(62)
+  def AddToFavorites: `62` = 62.asInstanceOf[`62`]
   @scala.inline
-  def Applications: `136` = this.cast(136)
+  def Applications: `136` = 136.asInstanceOf[`136`]
   @scala.inline
-  def ApproveAssignment: `165` = this.cast(165)
+  def ApproveAssignment: `165` = 165.asInstanceOf[`165`]
   @scala.inline
-  def BeginCoauthoring: `130` = this.cast(130)
+  def BeginCoauthoring: `130` = 130.asInstanceOf[`130`]
   @scala.inline
-  def BottomPane_Minimized: `152` = this.cast(152)
+  def BottomPane_Minimized: `152` = 152.asInstanceOf[`152`]
   @scala.inline
-  def BottomPane_Normal: `151` = this.cast(151)
+  def BottomPane_Normal: `151` = 151.asInstanceOf[`151`]
   @scala.inline
-  def BottomPane_Off: `153` = this.cast(153)
+  def BottomPane_Off: `153` = 153.asInstanceOf[`153`]
   @scala.inline
-  def BrowseInThisWindow: `120` = this.cast(120)
+  def BrowseInThisWindow: `120` = 120.asInstanceOf[`120`]
   @scala.inline
-  def ChangeLanguage: `42` = this.cast(42)
+  def ChangeLanguage: `42` = 42.asInstanceOf[`42`]
   @scala.inline
-  def ChangePassword: `41` = this.cast(41)
+  def ChangePassword: `41` = 41.asInstanceOf[`41`]
   @scala.inline
-  def ChangeState: `26` = this.cast(26)
+  def ChangeState: `26` = 26.asInstanceOf[`26`]
   @scala.inline
-  def ChangeStateAdmin: `167` = this.cast(167)
+  def ChangeStateAdmin: `167` = 167.asInstanceOf[`167`]
   @scala.inline
-  def ChangeViewMode: `106` = this.cast(106)
+  def ChangeViewMode: `106` = 106.asInstanceOf[`106`]
   @scala.inline
-  def CheckIn: `11` = this.cast(11)
+  def CheckIn: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def CheckInWithComments: `12` = this.cast(12)
+  def CheckInWithComments: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def CheckOut: `10` = this.cast(10)
+  def CheckOut: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def CheckOutForCoauthoring: `129` = this.cast(129)
+  def CheckOutForCoauthoring: `129` = 129.asInstanceOf[`129`]
   @scala.inline
-  def ChooseColumns: `83` = this.cast(83)
+  def ChooseColumns: `83` = 83.asInstanceOf[`83`]
   @scala.inline
-  def CleanView: `58` = this.cast(58)
+  def CleanView: `58` = 58.asInstanceOf[`58`]
   @scala.inline
-  def ClearArchiveMarker: `29` = this.cast(29)
+  def ClearArchiveMarker: `29` = 29.asInstanceOf[`29`]
   @scala.inline
-  def ClearLocalCache: `40` = this.cast(40)
+  def ClearLocalCache: `40` = 40.asInstanceOf[`40`]
   @scala.inline
-  def ClientSettings: `37` = this.cast(37)
+  def ClientSettings: `37` = 37.asInstanceOf[`37`]
   @scala.inline
-  def CompleteAssignment: `25` = this.cast(25)
+  def CompleteAssignment: `25` = 25.asInstanceOf[`25`]
   @scala.inline
-  def ConvertToDocument: `6` = this.cast(6)
+  def ConvertToDocument: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def ConvertToDocumentFiles: `7` = this.cast(7)
+  def ConvertToDocumentFiles: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def ConvertToMultiFilePDF: `82` = this.cast(82)
+  def ConvertToMultiFilePDF: `82` = 82.asInstanceOf[`82`]
   @scala.inline
-  def ConvertToOneMultiFileDocument: `32` = this.cast(32)
+  def ConvertToOneMultiFileDocument: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def ConvertToSearchablePDF: `46` = this.cast(46)
+  def ConvertToSearchablePDF: `46` = 46.asInstanceOf[`46`]
   @scala.inline
-  def ConvertToSingleFileDocument: `31` = this.cast(31)
+  def ConvertToSingleFileDocument: `31` = 31.asInstanceOf[`31`]
   @scala.inline
-  def ConvertToSingleFilePDF: `81` = this.cast(81)
+  def ConvertToSingleFilePDF: `81` = 81.asInstanceOf[`81`]
   @scala.inline
-  def Copy: `73` = this.cast(73)
+  def Copy: `73` = 73.asInstanceOf[`73`]
   @scala.inline
-  def CreateOrGetShortcut: `64` = this.cast(64)
+  def CreateOrGetShortcut: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def CreateShortcut: `65` = this.cast(65)
+  def CreateShortcut: `65` = 65.asInstanceOf[`65`]
   @scala.inline
-  def CurrentGroupingLevel: `117` = this.cast(117)
+  def CurrentGroupingLevel: `117` = 117.asInstanceOf[`117`]
   @scala.inline
-  def CustomizePropertyFolder: `144` = this.cast(144)
+  def CustomizePropertyFolder: `144` = 144.asInstanceOf[`144`]
   @scala.inline
-  def Cut: `74` = this.cast(74)
+  def Cut: `74` = 74.asInstanceOf[`74`]
   @scala.inline
-  def Delete: `76` = this.cast(76)
+  def Delete: `76` = 76.asInstanceOf[`76`]
   @scala.inline
-  def DeleteAll: `90` = this.cast(90)
+  def DeleteAll: `90` = 90.asInstanceOf[`90`]
   @scala.inline
-  def Destroy: `91` = this.cast(91)
+  def Destroy: `91` = 91.asInstanceOf[`91`]
   @scala.inline
-  def DiscardFileModifications: `171` = this.cast(171)
+  def DiscardFileModifications: `171` = 171.asInstanceOf[`171`]
   @scala.inline
-  def EditCollectionMembership: `96` = this.cast(96)
+  def EditCollectionMembership: `96` = 96.asInstanceOf[`96`]
   @scala.inline
-  def EditOneAnnotation: `159` = this.cast(159)
+  def EditOneAnnotation: `159` = 159.asInstanceOf[`159`]
   @scala.inline
-  def EditRelationship: `99` = this.cast(99)
+  def EditRelationship: `99` = 99.asInstanceOf[`99`]
   @scala.inline
-  def EndCoauthoring: `131` = this.cast(131)
+  def EndCoauthoring: `131` = 131.asInstanceOf[`131`]
   @scala.inline
-  def ExportObjects: `79` = this.cast(79)
+  def ExportObjects: `79` = 79.asInstanceOf[`79`]
   @scala.inline
-  def ExportSearchBarConditions: `80` = this.cast(80)
+  def ExportSearchBarConditions: `80` = 80.asInstanceOf[`80`]
   @scala.inline
-  def FIRST: `1` = this.cast(1)
+  def FIRST: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def GoOffline: `35` = this.cast(35)
+  def GoOffline: `35` = 35.asInstanceOf[`35`]
   @scala.inline
-  def GoOnline: `34` = this.cast(34)
+  def GoOnline: `34` = 34.asInstanceOf[`34`]
   @scala.inline
-  def GoToCustomView: `124` = this.cast(124)
+  def GoToCustomView: `124` = 124.asInstanceOf[`124`]
   @scala.inline
-  def GroupBy: `121` = this.cast(121)
+  def GroupBy: `121` = 121.asInstanceOf[`121`]
   @scala.inline
-  def GroupFoldersBy: `122` = this.cast(122)
+  def GroupFoldersBy: `122` = 122.asInstanceOf[`122`]
   @scala.inline
-  def GroupFoldersByFirstLetters: `115` = this.cast(115)
+  def GroupFoldersByFirstLetters: `115` = 115.asInstanceOf[`115`]
   @scala.inline
-  def GroupObjectsByFirstLetters: `114` = this.cast(114)
+  def GroupObjectsByFirstLetters: `114` = 114.asInstanceOf[`114`]
   @scala.inline
-  def GroupObjectsByObjectType: `54` = this.cast(54)
+  def GroupObjectsByObjectType: `54` = 54.asInstanceOf[`54`]
   @scala.inline
-  def GroupViewsAndFolders: `55` = this.cast(55)
+  def GroupViewsAndFolders: `55` = 55.asInstanceOf[`55`]
   @scala.inline
-  def HideAllVisualAnnotations: `158` = this.cast(158)
+  def HideAllVisualAnnotations: `158` = 158.asInstanceOf[`158`]
   @scala.inline
-  def HideOrShowEmptyFolders: `119` = this.cast(119)
+  def HideOrShowEmptyFolders: `119` = 119.asInstanceOf[`119`]
   @scala.inline
-  def HideView: `56` = this.cast(56)
+  def HideView: `56` = 56.asInstanceOf[`56`]
   @scala.inline
-  def HitHighlighting: `128` = this.cast(128)
+  def HitHighlighting: `128` = 128.asInstanceOf[`128`]
   @scala.inline
-  def ImportFilesAndFolders: `8` = this.cast(8)
+  def ImportFilesAndFolders: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def InvertSelection: `86` = this.cast(86)
+  def InvertSelection: `86` = 86.asInstanceOf[`86`]
   @scala.inline
-  def LAST: `174` = this.cast(174)
+  def LAST: `174` = 174.asInstanceOf[`174`]
   @scala.inline
-  def LabelThisVersion: `93` = this.cast(93)
+  def LabelThisVersion: `93` = 93.asInstanceOf[`93`]
   @scala.inline
-  def LogOut: `36` = this.cast(36)
+  def LogOut: `36` = 36.asInstanceOf[`36`]
   @scala.inline
-  def MFilesGuidedTour: `142` = this.cast(142)
+  def MFilesGuidedTour: `142` = 142.asInstanceOf[`142`]
   @scala.inline
-  def MFilesHelp: `141` = this.cast(141)
+  def MFilesHelp: `141` = 141.asInstanceOf[`141`]
   @scala.inline
-  def MakeCopy: `9` = this.cast(9)
+  def MakeCopy: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def MarkApproved: `163` = this.cast(163)
+  def MarkApproved: `163` = 163.asInstanceOf[`163`]
   @scala.inline
-  def MarkComplete: `123` = this.cast(123)
+  def MarkComplete: `123` = 123.asInstanceOf[`123`]
   @scala.inline
-  def MarkFolderForOfflineAvailability: `15` = this.cast(15)
+  def MarkFolderForOfflineAvailability: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def MarkForArchiving: `28` = this.cast(28)
+  def MarkForArchiving: `28` = 28.asInstanceOf[`28`]
   @scala.inline
-  def MarkForOfflineAvailability: `16` = this.cast(16)
+  def MarkForOfflineAvailability: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def MarkRejected: `164` = this.cast(164)
+  def MarkRejected: `164` = 164.asInstanceOf[`164`]
   @scala.inline
-  def ModifyVersionDetails: `92` = this.cast(92)
+  def ModifyVersionDetails: `92` = 92.asInstanceOf[`92`]
   @scala.inline
-  def NavigationPane_Off: `155` = this.cast(155)
+  def NavigationPane_Off: `155` = 155.asInstanceOf[`155`]
   @scala.inline
-  def NavigationPane_On: `154` = this.cast(154)
+  def NavigationPane_On: `154` = 154.asInstanceOf[`154`]
   @scala.inline
-  def NewAnnotation: `161` = this.cast(161)
+  def NewAnnotation: `161` = 161.asInstanceOf[`161`]
   @scala.inline
-  def NewAssignment: `23` = this.cast(23)
+  def NewAssignment: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def NewObject: `87` = this.cast(87)
+  def NewObject: `87` = 87.asInstanceOf[`87`]
   @scala.inline
-  def NewOfflineFilter: `3` = this.cast(3)
+  def NewOfflineFilter: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def NewPropertyFolder: `5` = this.cast(5)
+  def NewPropertyFolder: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def NewSubobject: `94` = this.cast(94)
+  def NewSubobject: `94` = 94.asInstanceOf[`94`]
   @scala.inline
-  def NewTraditionalFolder: `4` = this.cast(4)
+  def NewTraditionalFolder: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def NewView: `2` = this.cast(2)
+  def NewView: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def NewWindow: `78` = this.cast(78)
+  def NewWindow: `78` = 78.asInstanceOf[`78`]
   @scala.inline
-  def NotificationSettings: `39` = this.cast(39)
+  def NotificationSettings: `39` = 39.asInstanceOf[`39`]
   @scala.inline
-  def Paste: `75` = this.cast(75)
+  def Paste: `75` = 75.asInstanceOf[`75`]
   @scala.inline
-  def PasteAsMultiFileDocument: `84` = this.cast(84)
+  def PasteAsMultiFileDocument: `84` = 84.asInstanceOf[`84`]
   @scala.inline
-  def Properties: `14` = this.cast(14)
+  def Properties: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def Refresh: `88` = this.cast(88)
+  def Refresh: `88` = 88.asInstanceOf[`88`]
   @scala.inline
-  def RejectAssignment: `166` = this.cast(166)
+  def RejectAssignment: `166` = 166.asInstanceOf[`166`]
   @scala.inline
-  def RemoveCollectionMembership: `97` = this.cast(97)
+  def RemoveCollectionMembership: `97` = 97.asInstanceOf[`97`]
   @scala.inline
-  def RemoveCurrentGroupingLevel: `118` = this.cast(118)
+  def RemoveCurrentGroupingLevel: `118` = 118.asInstanceOf[`118`]
   @scala.inline
-  def RemoveDashboardFromViewLocBottom: `72` = this.cast(72)
+  def RemoveDashboardFromViewLocBottom: `72` = 72.asInstanceOf[`72`]
   @scala.inline
-  def RemoveDashboardFromViewLocMain: `70` = this.cast(70)
+  def RemoveDashboardFromViewLocMain: `70` = 70.asInstanceOf[`70`]
   @scala.inline
-  def RemoveDashboardFromViewLocRight: `71` = this.cast(71)
+  def RemoveDashboardFromViewLocRight: `71` = 71.asInstanceOf[`71`]
   @scala.inline
-  def RemoveFromFavorites: `63` = this.cast(63)
+  def RemoveFromFavorites: `63` = 63.asInstanceOf[`63`]
   @scala.inline
-  def RemoveOfflineAvailability: `17` = this.cast(17)
+  def RemoveOfflineAvailability: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def RemoveRelationship: `100` = this.cast(100)
+  def RemoveRelationship: `100` = 100.asInstanceOf[`100`]
   @scala.inline
-  def RemoveReportFromViewLocBottom: `72` = this.cast(72)
+  def RemoveReportFromViewLocBottom: `72` = 72.asInstanceOf[`72`]
   @scala.inline
-  def RemoveReportFromViewLocMain: `70` = this.cast(70)
+  def RemoveReportFromViewLocMain: `70` = 70.asInstanceOf[`70`]
   @scala.inline
-  def RemoveReportFromViewLocRight: `71` = this.cast(71)
+  def RemoveReportFromViewLocRight: `71` = 71.asInstanceOf[`71`]
   @scala.inline
-  def Rename: `77` = this.cast(77)
+  def Rename: `77` = 77.asInstanceOf[`77`]
   @scala.inline
-  def ReplaceWithFile: `33` = this.cast(33)
+  def ReplaceWithFile: `33` = 33.asInstanceOf[`33`]
   @scala.inline
-  def ReplaceWithFileFromScanner: `45` = this.cast(45)
+  def ReplaceWithFileFromScanner: `45` = 45.asInstanceOf[`45`]
   @scala.inline
-  def ResetUISettingsToDefaults: `60` = this.cast(60)
+  def ResetUISettingsToDefaults: `60` = 60.asInstanceOf[`60`]
   @scala.inline
-  def ResolveConflictDiscardThis: `135` = this.cast(135)
+  def ResolveConflictDiscardThis: `135` = 135.asInstanceOf[`135`]
   @scala.inline
-  def ResolveConflictKeepThis: `134` = this.cast(134)
+  def ResolveConflictKeepThis: `134` = 134.asInstanceOf[`134`]
   @scala.inline
-  def RightPane_Minimized: `149` = this.cast(149)
+  def RightPane_Minimized: `149` = 149.asInstanceOf[`149`]
   @scala.inline
-  def RightPane_Normal: `148` = this.cast(148)
+  def RightPane_Normal: `148` = 148.asInstanceOf[`148`]
   @scala.inline
-  def RightPane_Off: `150` = this.cast(150)
+  def RightPane_Off: `150` = 150.asInstanceOf[`150`]
   @scala.inline
-  def RollBack: `89` = this.cast(89)
+  def RollBack: `89` = 89.asInstanceOf[`89`]
   @scala.inline
-  def SaveAnnotation: `160` = this.cast(160)
+  def SaveAnnotation: `160` = 160.asInstanceOf[`160`]
   @scala.inline
-  def SaveAsCommonUISettings: `61` = this.cast(61)
+  def SaveAsCommonUISettings: `61` = 61.asInstanceOf[`61`]
   @scala.inline
-  def SaveAsPDF: `50` = this.cast(50)
+  def SaveAsPDF: `50` = 50.asInstanceOf[`50`]
   @scala.inline
-  def SelectAll: `85` = this.cast(85)
+  def SelectAll: `85` = 85.asInstanceOf[`85`]
   @scala.inline
-  def SendCoauthoringLink: `133` = this.cast(133)
+  def SendCoauthoringLink: `133` = 133.asInstanceOf[`133`]
   @scala.inline
-  def SendCopyByEmail: `48` = this.cast(48)
+  def SendCopyByEmail: `48` = 48.asInstanceOf[`48`]
   @scala.inline
-  def SendLinkByEmail: `47` = this.cast(47)
+  def SendLinkByEmail: `47` = 47.asInstanceOf[`47`]
   @scala.inline
-  def SendPDFByEmail: `49` = this.cast(49)
+  def SendPDFByEmail: `49` = 49.asInstanceOf[`49`]
   @scala.inline
-  def ServerAdmin: `38` = this.cast(38)
+  def ServerAdmin: `38` = 38.asInstanceOf[`38`]
   @scala.inline
-  def SharePublicLink: `168` = this.cast(168)
+  def SharePublicLink: `168` = 168.asInstanceOf[`168`]
   @scala.inline
-  def ShareViaSkyDrive: `137` = this.cast(137)
+  def ShareViaSkyDrive: `137` = 137.asInstanceOf[`137`]
   @scala.inline
-  def ShareViaSkyDriveAsPDF: `138` = this.cast(138)
+  def ShareViaSkyDriveAsPDF: `138` = 138.asInstanceOf[`138`]
   @scala.inline
-  def SharedByMe: `169` = this.cast(169)
+  def SharedByMe: `169` = 169.asInstanceOf[`169`]
   @scala.inline
-  def ShowAllVisualAnnotations: `157` = this.cast(157)
+  def ShowAllVisualAnnotations: `157` = 157.asInstanceOf[`157`]
   @scala.inline
-  def ShowAssignments: `24` = this.cast(24)
+  def ShowAssignments: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def ShowBottomPane: `52` = this.cast(52)
+  def ShowBottomPane: `52` = 52.asInstanceOf[`52`]
   @scala.inline
-  def ShowCollectionMembers: `20` = this.cast(20)
+  def ShowCollectionMembers: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def ShowComments: `22` = this.cast(22)
+  def ShowComments: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def ShowHistory: `18` = this.cast(18)
+  def ShowHistory: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def ShowMetadataInBottomPane: `140` = this.cast(140)
+  def ShowMetadataInBottomPane: `140` = 140.asInstanceOf[`140`]
   @scala.inline
-  def ShowMetadataInRightPane: `139` = this.cast(139)
+  def ShowMetadataInRightPane: `139` = 139.asInstanceOf[`139`]
   @scala.inline
-  def ShowNavigationPane: `143` = this.cast(143)
+  def ShowNavigationPane: `143` = 143.asInstanceOf[`143`]
   @scala.inline
-  def ShowOriginalObject: `132` = this.cast(132)
+  def ShowOriginalObject: `132` = 132.asInstanceOf[`132`]
   @scala.inline
-  def ShowPreviewPane: `53` = this.cast(53)
+  def ShowPreviewPane: `53` = 53.asInstanceOf[`53`]
   @scala.inline
-  def ShowPropertiesPane: `52` = this.cast(52)
+  def ShowPropertiesPane: `52` = 52.asInstanceOf[`52`]
   @scala.inline
-  def ShowRelationships: `19` = this.cast(19)
+  def ShowRelationships: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def ShowRightPane: `53` = this.cast(53)
+  def ShowRightPane: `53` = 53.asInstanceOf[`53`]
   @scala.inline
-  def ShowSearchRefinementOptions: `173` = this.cast(173)
+  def ShowSearchRefinementOptions: `173` = 173.asInstanceOf[`173`]
   @scala.inline
-  def ShowSearchResultsFromMultipleVaults: `172` = this.cast(172)
+  def ShowSearchResultsFromMultipleVaults: `172` = 172.asInstanceOf[`172`]
   @scala.inline
-  def ShowVisualAnnotations: `156` = this.cast(156)
+  def ShowVisualAnnotations: `156` = 156.asInstanceOf[`156`]
   @scala.inline
-  def SubMenu_Archiving: `109` = this.cast(109)
+  def SubMenu_Archiving: `109` = 109.asInstanceOf[`109`]
   @scala.inline
-  def SubMenu_BrowseRelatedObjects: `108` = this.cast(108)
+  def SubMenu_BrowseRelatedObjects: `108` = 108.asInstanceOf[`108`]
   @scala.inline
-  def SubMenu_Dashboards: `113` = this.cast(113)
+  def SubMenu_Dashboards: `113` = 113.asInstanceOf[`113`]
   @scala.inline
-  def SubMenu_DisplayMode: `105` = this.cast(105)
+  def SubMenu_DisplayMode: `105` = 105.asInstanceOf[`105`]
   @scala.inline
-  def SubMenu_NewFile: `102` = this.cast(102)
+  def SubMenu_NewFile: `102` = 102.asInstanceOf[`102`]
   @scala.inline
-  def SubMenu_NewObject: `101` = this.cast(101)
+  def SubMenu_NewObject: `101` = 101.asInstanceOf[`101`]
   @scala.inline
-  def SubMenu_OfflineAvailability: `107` = this.cast(107)
+  def SubMenu_OfflineAvailability: `107` = 107.asInstanceOf[`107`]
   @scala.inline
-  def SubMenu_RefreshExtObjects: `112` = this.cast(112)
+  def SubMenu_RefreshExtObjects: `112` = 112.asInstanceOf[`112`]
   @scala.inline
-  def SubMenu_Reports: `113` = this.cast(113)
+  def SubMenu_Reports: `113` = 113.asInstanceOf[`113`]
   @scala.inline
-  def SubMenu_ScanningAndOCR: `111` = this.cast(111)
+  def SubMenu_ScanningAndOCR: `111` = 111.asInstanceOf[`111`]
   @scala.inline
-  def SubMenu_Send: `104` = this.cast(104)
+  def SubMenu_Send: `104` = 104.asInstanceOf[`104`]
   @scala.inline
-  def SubMenu_WindowsCommands: `103` = this.cast(103)
+  def SubMenu_WindowsCommands: `103` = 103.asInstanceOf[`103`]
   @scala.inline
-  def SubMenu_Workflow: `110` = this.cast(110)
+  def SubMenu_Workflow: `110` = 110.asInstanceOf[`110`]
   @scala.inline
-  def Submenu_DocumentX: `127` = this.cast(127)
+  def Submenu_DocumentX: `127` = 127.asInstanceOf[`127`]
   @scala.inline
-  def Submenu_VaultX: `125` = this.cast(125)
+  def Submenu_VaultX: `125` = 125.asInstanceOf[`125`]
   @scala.inline
-  def Submenu_ViewX: `126` = this.cast(126)
+  def Submenu_ViewX: `126` = 126.asInstanceOf[`126`]
   @scala.inline
-  def SubstituteUsers: `51` = this.cast(51)
+  def SubstituteUsers: `51` = 51.asInstanceOf[`51`]
   @scala.inline
-  def UncustomizePropertyFolder: `145` = this.cast(145)
+  def UncustomizePropertyFolder: `145` = 145.asInstanceOf[`145`]
   @scala.inline
-  def Undefined: `0` = this.cast(0)
+  def Undefined: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def Undelete: `30` = this.cast(30)
+  def Undelete: `30` = 30.asInstanceOf[`30`]
   @scala.inline
-  def UndoCheckOut: `13` = this.cast(13)
+  def UndoCheckOut: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def UnhideView: `57` = this.cast(57)
+  def UnhideView: `57` = 57.asInstanceOf[`57`]
   @scala.inline
-  def UnhideViews: `59` = this.cast(59)
+  def UnhideViews: `59` = 59.asInstanceOf[`59`]
   @scala.inline
-  def UploadFiles: `170` = this.cast(170)
+  def UploadFiles: `170` = 170.asInstanceOf[`170`]
   @scala.inline
-  def UseCompactLayout: `147` = this.cast(147)
+  def UseCompactLayout: `147` = 147.asInstanceOf[`147`]
   @scala.inline
-  def UseNormalLayout: `146` = this.cast(146)
+  def UseNormalLayout: `146` = 146.asInstanceOf[`146`]
   @scala.inline
-  def ViewEditSubobjects: `21` = this.cast(21)
+  def ViewEditSubobjects: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def Workflow: `27` = this.cast(27)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Workflow: `27` = 27.asInstanceOf[`27`]
 }
 

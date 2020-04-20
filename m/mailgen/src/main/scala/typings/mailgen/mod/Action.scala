@@ -13,7 +13,6 @@ object Action {
   @scala.inline
   def apply(button: Button, instructions: String): Action = {
     val __obj = js.Dynamic.literal(button = button.asInstanceOf[js.Any], instructions = instructions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Action]
   }
 }

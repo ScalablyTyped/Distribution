@@ -15,16 +15,14 @@ trait GeolocationErrorReason extends js.Object
 
 object GeolocationErrorReason {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dailyLimitExceeded: typings.googleMaps.googleMapsStrings.dailyLimitExceeded = "dailyLimitExceeded".asInstanceOf[typings.googleMaps.googleMapsStrings.dailyLimitExceeded]
   @scala.inline
-  def dailyLimitExceeded: typings.googleMaps.googleMapsStrings.dailyLimitExceeded = this.cast("dailyLimitExceeded")
+  def keyInvalid: typings.googleMaps.googleMapsStrings.keyInvalid = "keyInvalid".asInstanceOf[typings.googleMaps.googleMapsStrings.keyInvalid]
   @scala.inline
-  def keyInvalid: typings.googleMaps.googleMapsStrings.keyInvalid = this.cast("keyInvalid")
+  def notFound: typings.googleMaps.googleMapsStrings.notFound = "notFound".asInstanceOf[typings.googleMaps.googleMapsStrings.notFound]
   @scala.inline
-  def notFound: typings.googleMaps.googleMapsStrings.notFound = this.cast("notFound")
+  def parseError: typings.googleMaps.googleMapsStrings.parseError = "parseError".asInstanceOf[typings.googleMaps.googleMapsStrings.parseError]
   @scala.inline
-  def parseError: typings.googleMaps.googleMapsStrings.parseError = this.cast("parseError")
-  @scala.inline
-  def userRateLimitExceeded: typings.googleMaps.googleMapsStrings.userRateLimitExceeded = this.cast("userRateLimitExceeded")
+  def userRateLimitExceeded: typings.googleMaps.googleMapsStrings.userRateLimitExceeded = "userRateLimitExceeded".asInstanceOf[typings.googleMaps.googleMapsStrings.userRateLimitExceeded]
 }
 

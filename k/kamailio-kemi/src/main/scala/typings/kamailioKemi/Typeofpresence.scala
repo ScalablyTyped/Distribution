@@ -30,7 +30,6 @@ object Typeofpresence {
     pres_update_watchers: (String, String) => Double
   ): Typeofpresence = {
     val __obj = js.Dynamic.literal(handle_publish = js.Any.fromFunction0(handle_publish), handle_publish_uri = js.Any.fromFunction1(handle_publish_uri), handle_subscribe = js.Any.fromFunction0(handle_subscribe), handle_subscribe_uri = js.Any.fromFunction1(handle_subscribe_uri), pres_auth_status = js.Any.fromFunction2(pres_auth_status), pres_has_subscribers = js.Any.fromFunction2(pres_has_subscribers), pres_refresh_watchers = js.Any.fromFunction3(pres_refresh_watchers), pres_refresh_watchers_file = js.Any.fromFunction5(pres_refresh_watchers_file), pres_update_watchers = js.Any.fromFunction2(pres_update_watchers))
-  
     __obj.asInstanceOf[Typeofpresence]
   }
 }

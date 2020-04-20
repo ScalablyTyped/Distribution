@@ -20,7 +20,6 @@ object IXmlNodeSelector {
     selectSingleNodeNS: (String, js.Any) => IXmlNode
   ): IXmlNodeSelector = {
     val __obj = js.Dynamic.literal(selectNodes = js.Any.fromFunction1(selectNodes), selectNodesNS = js.Any.fromFunction2(selectNodesNS), selectSingleNode = js.Any.fromFunction1(selectSingleNode), selectSingleNodeNS = js.Any.fromFunction2(selectSingleNodeNS))
-  
     __obj.asInstanceOf[IXmlNodeSelector]
   }
 }

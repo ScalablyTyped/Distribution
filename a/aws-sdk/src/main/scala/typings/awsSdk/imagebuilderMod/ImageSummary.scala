@@ -19,6 +19,10 @@ trait ImageSummary extends js.Object {
     */
   var name: js.UndefOr[ResourceName] = js.native
   /**
+    * The operating system version of the instance. For example, Amazon Linux 2, Ubuntu 18, or Microsoft Windows Server 2019. 
+    */
+  var osVersion: js.UndefOr[OsVersion] = js.native
+  /**
     * The output resources produced when creating this image.
     */
   var outputResources: js.UndefOr[OutputResources] = js.native
@@ -50,6 +54,7 @@ object ImageSummary {
     arn: ImageBuilderArn = null,
     dateCreated: DateTime = null,
     name: ResourceName = null,
+    osVersion: OsVersion = null,
     outputResources: OutputResources = null,
     owner: NonEmptyString = null,
     platform: Platform = null,
@@ -61,6 +66,7 @@ object ImageSummary {
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (dateCreated != null) __obj.updateDynamic("dateCreated")(dateCreated.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (osVersion != null) __obj.updateDynamic("osVersion")(osVersion.asInstanceOf[js.Any])
     if (outputResources != null) __obj.updateDynamic("outputResources")(outputResources.asInstanceOf[js.Any])
     if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])

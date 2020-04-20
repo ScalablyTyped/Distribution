@@ -18,7 +18,6 @@ object IndexedImpl {
   @scala.inline
   def apply(DOMException: DOMException, IDBKeyRange: IDBKeyRange, indexedDB: IDBFactory): IndexedImpl = {
     val __obj = js.Dynamic.literal(DOMException = DOMException.asInstanceOf[js.Any], IDBKeyRange = IDBKeyRange.asInstanceOf[js.Any], indexedDB = indexedDB.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IndexedImpl]
   }
 }

@@ -20,7 +20,6 @@ object RemoveRoleFromDBClusterMessage {
   @scala.inline
   def apply(DBClusterIdentifier: String, RoleArn: String): RemoveRoleFromDBClusterMessage = {
     val __obj = js.Dynamic.literal(DBClusterIdentifier = DBClusterIdentifier.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RemoveRoleFromDBClusterMessage]
   }
 }

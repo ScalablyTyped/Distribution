@@ -13,7 +13,6 @@ object CameraDidChangeTrackingStateEvent {
   @scala.inline
   def apply(trackingState: TrackingState, trackingStateReason: TrackingStateReason): CameraDidChangeTrackingStateEvent = {
     val __obj = js.Dynamic.literal(trackingState = trackingState.asInstanceOf[js.Any], trackingStateReason = trackingStateReason.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CameraDidChangeTrackingStateEvent]
   }
 }

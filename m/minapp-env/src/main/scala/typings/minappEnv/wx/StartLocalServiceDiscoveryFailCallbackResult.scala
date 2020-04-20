@@ -17,7 +17,6 @@ object StartLocalServiceDiscoveryFailCallbackResult {
   @scala.inline
   def apply(errMsg: String): StartLocalServiceDiscoveryFailCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StartLocalServiceDiscoveryFailCallbackResult]
   }
 }

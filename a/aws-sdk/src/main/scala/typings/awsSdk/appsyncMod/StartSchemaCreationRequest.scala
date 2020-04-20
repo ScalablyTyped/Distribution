@@ -20,7 +20,6 @@ object StartSchemaCreationRequest {
   @scala.inline
   def apply(apiId: String, definition: _Blob): StartSchemaCreationRequest = {
     val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any], definition = definition.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StartSchemaCreationRequest]
   }
 }

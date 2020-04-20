@@ -15,7 +15,6 @@ object AnonNEffect {
   @scala.inline
   def apply(Wn: SlideShowWindow, nEffect: Effect): AnonNEffect = {
     val __obj = js.Dynamic.literal(Wn = Wn.asInstanceOf[js.Any], nEffect = nEffect.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNEffect]
   }
 }

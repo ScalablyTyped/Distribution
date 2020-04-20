@@ -14,14 +14,12 @@ trait AlertType extends js.Object
 
 object AlertType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def error: typings.reactElemental.reactElementalStrings.error = "error".asInstanceOf[typings.reactElemental.reactElementalStrings.error]
   @scala.inline
-  def error: typings.reactElemental.reactElementalStrings.error = this.cast("error")
+  def info: typings.reactElemental.reactElementalStrings.info = "info".asInstanceOf[typings.reactElemental.reactElementalStrings.info]
   @scala.inline
-  def info: typings.reactElemental.reactElementalStrings.info = this.cast("info")
+  def success: typings.reactElemental.reactElementalStrings.success = "success".asInstanceOf[typings.reactElemental.reactElementalStrings.success]
   @scala.inline
-  def success: typings.reactElemental.reactElementalStrings.success = this.cast("success")
-  @scala.inline
-  def warn: typings.reactElemental.reactElementalStrings.warn = this.cast("warn")
+  def warn: typings.reactElemental.reactElementalStrings.warn = "warn".asInstanceOf[typings.reactElemental.reactElementalStrings.warn]
 }
 

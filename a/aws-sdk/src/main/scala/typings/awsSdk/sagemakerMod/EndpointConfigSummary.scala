@@ -28,7 +28,6 @@ object EndpointConfigSummary {
     EndpointConfigName: EndpointConfigName
   ): EndpointConfigSummary = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime.asInstanceOf[js.Any], EndpointConfigArn = EndpointConfigArn.asInstanceOf[js.Any], EndpointConfigName = EndpointConfigName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EndpointConfigSummary]
   }
 }

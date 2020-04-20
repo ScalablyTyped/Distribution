@@ -1287,7 +1287,6 @@ trait materialUiIconsProps {
   type DeckRoundedProps = SvgIconProps
   type DeckSharpProps = SvgIconProps
   type DeckTwoToneProps = SvgIconProps
-  type DefaultProps = SvgIconProps
   type DehazeProps = SvgIconProps
   type DehazeOutlinedProps = SvgIconProps
   type DehazeRoundedProps = SvgIconProps
@@ -3506,5 +3505,6 @@ trait materialUiIconsProps {
   type PermIdentityRoundedProps = SvgIconProps
   type PermIdentitySharpProps = SvgIconProps
   type PermIdentityTwoToneProps = SvgIconProps
+  type PermMediaProps = SvgIconProps
 }
 

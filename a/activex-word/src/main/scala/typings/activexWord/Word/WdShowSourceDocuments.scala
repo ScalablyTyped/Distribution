@@ -18,14 +18,12 @@ trait WdShowSourceDocuments extends js.Object
 
 object WdShowSourceDocuments {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdShowSourceDocumentsBoth: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdShowSourceDocumentsBoth: `3` = this.cast(3)
+  def wdShowSourceDocumentsNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdShowSourceDocumentsNone: `0` = this.cast(0)
+  def wdShowSourceDocumentsOriginal: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdShowSourceDocumentsOriginal: `1` = this.cast(1)
-  @scala.inline
-  def wdShowSourceDocumentsRevised: `2` = this.cast(2)
+  def wdShowSourceDocumentsRevised: `2` = 2.asInstanceOf[`2`]
 }
 

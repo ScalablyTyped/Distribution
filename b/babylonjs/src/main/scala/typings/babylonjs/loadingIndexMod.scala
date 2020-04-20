@@ -198,12 +198,12 @@ object loadingIndexMod extends js.Object {
     /**
       * Gets or set a boolean indicating if matrix weights must be cleaned upon loading
       */
-    def CleanBoneMatrixWeights(): Boolean = js.native
+    def CleanBoneMatrixWeights: Boolean = js.native
     def CleanBoneMatrixWeights(value: Boolean): js.Any = js.native
     /**
       * Gets or sets a boolean indicating if entire scene must be loaded even if scene contains incremental data
       */
-    def ForceFullSceneLoadingForIncremental(): Boolean = js.native
+    def ForceFullSceneLoadingForIncremental: Boolean = js.native
     def ForceFullSceneLoadingForIncremental(value: Boolean): js.Any = js.native
     /**
       * Gets a plugin that can load the given extension
@@ -505,13 +505,13 @@ object loadingIndexMod extends js.Object {
     /**
       * Gets or sets a boolean indicating if loading screen must be displayed while loading a scene
       */
-    def ShowLoadingScreen(): Boolean = js.native
+    def ShowLoadingScreen: Boolean = js.native
     def ShowLoadingScreen(value: Boolean): js.Any = js.native
     /**
       * Defines the current logging level (while loading the scene)
       * @ignorenaming
       */
-    def loggingLevel(): Double = js.native
+    def loggingLevel: Double = js.native
     def loggingLevel(value: Double): js.Any = js.native
   }
   
@@ -537,23 +537,23 @@ object loadingIndexMod extends js.Object {
     /**
       * Gets or set a boolean indicating if matrix weights must be cleaned upon loading
       */
-    def CleanBoneMatrixWeights(): Boolean = js.native
+    def CleanBoneMatrixWeights: Boolean = js.native
     def CleanBoneMatrixWeights(value: Boolean): js.Any = js.native
     /**
       * Gets or sets a boolean indicating if entire scene must be loaded even if scene contains incremental data
       */
-    def ForceFullSceneLoadingForIncremental(): Boolean = js.native
+    def ForceFullSceneLoadingForIncremental: Boolean = js.native
     def ForceFullSceneLoadingForIncremental(value: Boolean): js.Any = js.native
     /**
       * Gets or sets a boolean indicating if loading screen must be displayed while loading a scene
       */
-    def ShowLoadingScreen(): Boolean = js.native
+    def ShowLoadingScreen: Boolean = js.native
     def ShowLoadingScreen(value: Boolean): js.Any = js.native
     /**
       * Defines the current logging level (while loading the scene)
       * @ignorenaming
       */
-    def loggingLevel(): Double = js.native
+    def loggingLevel: Double = js.native
     def loggingLevel(value: Double): js.Any = js.native
   }
   

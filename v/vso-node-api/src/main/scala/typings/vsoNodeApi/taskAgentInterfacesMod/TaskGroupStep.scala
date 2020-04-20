@@ -27,7 +27,6 @@ object TaskGroupStep {
     timeoutInMinutes: Double
   ): TaskGroupStep = {
     val __obj = js.Dynamic.literal(alwaysRun = alwaysRun.asInstanceOf[js.Any], continueOnError = continueOnError.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], task = task.asInstanceOf[js.Any], timeoutInMinutes = timeoutInMinutes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TaskGroupStep]
   }
 }

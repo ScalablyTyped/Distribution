@@ -26,6 +26,6 @@ abstract class TemplateRef[C] () extends js.Object {
     * data-binding and injection context from the original location.
     *
     */
-  def elementRef(): ElementRef[_] = js.native
+  def elementRef: ElementRef[_] = js.native
 }
 

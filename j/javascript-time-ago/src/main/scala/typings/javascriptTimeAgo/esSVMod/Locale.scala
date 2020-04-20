@@ -20,7 +20,6 @@ object Locale {
   @scala.inline
   def apply(locale: `es-SV`, long: Duration, quantify: Double => one | two | few | other): Locale = {
     val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], long = long.asInstanceOf[js.Any], quantify = js.Any.fromFunction1(quantify))
-  
     __obj.asInstanceOf[Locale]
   }
 }

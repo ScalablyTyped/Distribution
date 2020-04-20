@@ -32,7 +32,6 @@ object PodsMetricSource {
   @scala.inline
   def apply(metricName: String, selector: LabelSelector, targetAverageValue: String): PodsMetricSource = {
     val __obj = js.Dynamic.literal(metricName = metricName.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], targetAverageValue = targetAverageValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PodsMetricSource]
   }
 }

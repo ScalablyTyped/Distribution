@@ -15,7 +15,6 @@ object AnonOverflowPaddingTop {
   @scala.inline
   def apply(borderRadius: Double, overflow: String, paddingTop: Double, width: Double): AnonOverflowPaddingTop = {
     val __obj = js.Dynamic.literal(borderRadius = borderRadius.asInstanceOf[js.Any], overflow = overflow.asInstanceOf[js.Any], paddingTop = paddingTop.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOverflowPaddingTop]
   }
 }

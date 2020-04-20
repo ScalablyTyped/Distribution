@@ -13,7 +13,6 @@ object AnonCert {
   @scala.inline
   def apply(cert: String, hasis: Boolean): AnonCert = {
     val __obj = js.Dynamic.literal(cert = cert.asInstanceOf[js.Any], hasis = hasis.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCert]
   }
 }

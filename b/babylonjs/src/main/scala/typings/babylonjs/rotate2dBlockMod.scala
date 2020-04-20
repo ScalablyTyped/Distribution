@@ -19,15 +19,15 @@ object rotate2dBlockMod extends js.Object {
     /**
       * Gets the input angle
       */
-    def angle(): NodeMaterialConnectionPoint = js.native
+    def angle: NodeMaterialConnectionPoint = js.native
     /**
       * Gets the input vector
       */
-    def input(): NodeMaterialConnectionPoint = js.native
+    def input: NodeMaterialConnectionPoint = js.native
     /**
       * Gets the output component
       */
-    def output(): NodeMaterialConnectionPoint = js.native
+    def output: NodeMaterialConnectionPoint = js.native
   }
   
 }

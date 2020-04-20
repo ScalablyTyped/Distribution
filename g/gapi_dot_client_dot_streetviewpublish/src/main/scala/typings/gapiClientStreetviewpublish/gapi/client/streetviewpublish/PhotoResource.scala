@@ -111,7 +111,6 @@ object PhotoResource {
     update: AnonCallback => Request_[Photo]
   ): PhotoResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), startUpload = js.Any.fromFunction1(startUpload), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[PhotoResource]
   }
 }

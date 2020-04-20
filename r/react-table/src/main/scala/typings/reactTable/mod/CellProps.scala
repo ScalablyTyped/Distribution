@@ -7,12 +7,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined react-table.react-table.TableInstance<D> & {  column  :react-table.react-table.ColumnInstance<D>,   row  :react-table.react-table.Row<D>,   cell  :react-table.react-table.Cell<D>} */
+/* Inlined react-table.react-table.TableInstance<D> & {  column  :react-table.react-table.ColumnInstance<D>,   row  :react-table.react-table.Row<D>,   cell  :react-table.react-table.Cell<D, V>,   value  :react-table.react-table.CellValue<V>} */
 @js.native
-trait CellProps[D /* <: js.Object */] extends js.Object {
+trait CellProps[D /* <: js.Object */, V] extends js.Object {
   var allColumns: js.Array[ColumnInstance[D]] = js.native
   var allColumnsHidden: Boolean = js.native
-  var cell: Cell[D] = js.native
+  var cell: Cell[D, V] = js.native
   var column: ColumnInstance[D] = js.native
   var columns: js.Array[ColumnInstance[D]] = js.native
   var data: js.Array[D] = js.native
@@ -32,10 +32,13 @@ trait CellProps[D /* <: js.Object */] extends js.Object {
   var getSubRows: js.UndefOr[js.Function2[/* originalRow */ D, /* relativeIndex */ Double, js.Array[D]]] = js.native
   var headerGroups: js.Array[HeaderGroup[D]] = js.native
   var headers: js.Array[ColumnInstance[D]] = js.native
-  var initialRowStateKey: js.UndefOr[IdType[D]] = js.native
   var initialState: js.UndefOr[Partial[TableState[D]]] = js.native
   var plugins: js.Array[PluginHook[D]] = js.native
-  var reducer: js.UndefOr[
+  var row: Row[D] = js.native
+  var rows: js.Array[Row[D]] = js.native
+  var rowsById: Record[String, Row[D]] = js.native
+  var state: TableState[D] = js.native
+  var stateReducer: js.UndefOr[
     js.Function3[
       /* newState */ TableState[D], 
       /* action */ ActionType, 
@@ -43,10 +46,6 @@ trait CellProps[D /* <: js.Object */] extends js.Object {
       TableState[D]
     ]
   ] = js.native
-  var row: Row[D] = js.native
-  var rows: js.Array[Row[D]] = js.native
-  var rowsById: Record[String, Row[D]] = js.native
-  var state: TableState[D] = js.native
   var totalColumnsWidth: Double = js.native
   var useControlledState: js.UndefOr[
     js.Function2[
@@ -55,6 +54,7 @@ trait CellProps[D /* <: js.Object */] extends js.Object {
       TableState[D]
     ]
   ] = js.native
+  var value: CellValue[V] = js.native
   var visibleColumns: js.Array[ColumnInstance[D]] = js.native
   def getHooks(): Hooks[D] = js.native
   def getTableBodyProps(): TableBodyProps = js.native

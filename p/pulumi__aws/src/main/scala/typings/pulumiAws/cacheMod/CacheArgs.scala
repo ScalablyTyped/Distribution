@@ -21,7 +21,6 @@ object CacheArgs {
   @scala.inline
   def apply(diskId: Input[String], gatewayArn: Input[String]): CacheArgs = {
     val __obj = js.Dynamic.literal(diskId = diskId.asInstanceOf[js.Any], gatewayArn = gatewayArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CacheArgs]
   }
 }

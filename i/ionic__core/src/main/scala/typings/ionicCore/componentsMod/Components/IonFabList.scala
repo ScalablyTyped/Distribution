@@ -23,7 +23,6 @@ object IonFabList {
   @scala.inline
   def apply(activated: Boolean, side: start | end | top | bottom): IonFabList = {
     val __obj = js.Dynamic.literal(activated = activated.asInstanceOf[js.Any], side = side.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IonFabList]
   }
 }

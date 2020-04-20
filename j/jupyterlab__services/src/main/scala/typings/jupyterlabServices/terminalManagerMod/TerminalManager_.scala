@@ -44,13 +44,13 @@ class TerminalManager_ () extends BaseManager {
     */
   @JSName("runningChanged")
   var runningChanged_FTerminalManager_ : ISignal[IManager, js.Array[IModel]] = js.native
-  /* private */ def _models(): js.Any = js.native
+  /* private */ def _models: js.Any = js.native
   def connectTo(options: OmitIOptionsserverSettingModel): ITerminalConnection = js.native
   /**
     * A signal emitted when there is a connection failure.
     */
   @JSName("connectionFailure")
-  def connectionFailure_MTerminalManager_(): ISignal[this.type, Error] = js.native
+  def connectionFailure_MTerminalManager_ : ISignal[this.type, Error] = js.native
   /**
     * Whether the terminal service is available.
     */
@@ -59,12 +59,12 @@ class TerminalManager_ () extends BaseManager {
     * Test whether the manager is ready.
     */
   @JSName("isReady")
-  def isReady_MTerminalManager_(): Boolean = js.native
+  def isReady_MTerminalManager_ : Boolean = js.native
   /**
     * A promise that fulfills when the manager is ready.
     */
   @JSName("ready")
-  def ready_MTerminalManager_(): js.Promise[Unit] = js.native
+  def ready_MTerminalManager_ : js.Promise[Unit] = js.native
   /**
     * Force a refresh of the running terminals.
     *
@@ -102,7 +102,7 @@ class TerminalManager_ () extends BaseManager {
   /**
     * A signal emitted when the running terminals change.
     */
-  def runningChanged(): ISignal[this.type, js.Array[IModel]] = js.native
+  def runningChanged: ISignal[this.type, js.Array[IModel]] = js.native
   /**
     * Shut down a terminal session by name.
     */

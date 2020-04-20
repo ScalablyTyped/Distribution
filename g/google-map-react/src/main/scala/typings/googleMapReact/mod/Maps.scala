@@ -60,7 +60,6 @@ object Maps {
     ZoomControlStyle: js.Any
   ): Maps = {
     val __obj = js.Dynamic.literal(Animation = Animation.asInstanceOf[js.Any], ControlPosition = ControlPosition.asInstanceOf[js.Any], DirectionsStatus = DirectionsStatus.asInstanceOf[js.Any], DirectionsTravelMode = DirectionsTravelMode.asInstanceOf[js.Any], DirectionsUnitSystem = DirectionsUnitSystem.asInstanceOf[js.Any], DistanceMatrixElementStatus = DistanceMatrixElementStatus.asInstanceOf[js.Any], DistanceMatrixStatus = DistanceMatrixStatus.asInstanceOf[js.Any], ElevationStatus = ElevationStatus.asInstanceOf[js.Any], GeocoderLocationType = GeocoderLocationType.asInstanceOf[js.Any], GeocoderStatus = GeocoderStatus.asInstanceOf[js.Any], KmlLayerStats = KmlLayerStats.asInstanceOf[js.Any], MapTypeControlStyle = MapTypeControlStyle.asInstanceOf[js.Any], MapTypeId = MapTypeId.asInstanceOf[js.Any], MaxZoomStatus = MaxZoomStatus.asInstanceOf[js.Any], NavigationControlStyle = NavigationControlStyle.asInstanceOf[js.Any], ScaleControlStyle = ScaleControlStyle.asInstanceOf[js.Any], StreetViewStatus = StreetViewStatus.asInstanceOf[js.Any], StrokePosition = StrokePosition.asInstanceOf[js.Any], SymbolPath = SymbolPath.asInstanceOf[js.Any], TransitMode = TransitMode.asInstanceOf[js.Any], TransitRoutePreference = TransitRoutePreference.asInstanceOf[js.Any], TravelMode = TravelMode.asInstanceOf[js.Any], UnitSystem = UnitSystem.asInstanceOf[js.Any], ZoomControlStyle = ZoomControlStyle.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Maps]
   }
 }

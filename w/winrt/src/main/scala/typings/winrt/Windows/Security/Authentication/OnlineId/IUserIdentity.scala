@@ -29,7 +29,6 @@ object IUserIdentity {
     tickets: IVectorView[OnlineIdServiceTicket]
   ): IUserIdentity = {
     val __obj = js.Dynamic.literal(firstName = firstName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isBetaAccount = isBetaAccount.asInstanceOf[js.Any], isConfirmedPC = isConfirmedPC.asInstanceOf[js.Any], lastName = lastName.asInstanceOf[js.Any], safeCustomerId = safeCustomerId.asInstanceOf[js.Any], signInName = signInName.asInstanceOf[js.Any], tickets = tickets.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IUserIdentity]
   }
 }

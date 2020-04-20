@@ -15,14 +15,12 @@ trait CalendarInfoPositionShape extends js.Object
 
 object CalendarInfoPositionShape {
   @scala.inline
-  def after: typings.reactDates.reactDatesStrings.after = this.cast("after")
+  def after: typings.reactDates.reactDatesStrings.after = "after".asInstanceOf[typings.reactDates.reactDatesStrings.after]
   @scala.inline
-  def before: typings.reactDates.reactDatesStrings.before = this.cast("before")
+  def before: typings.reactDates.reactDatesStrings.before = "before".asInstanceOf[typings.reactDates.reactDatesStrings.before]
   @scala.inline
-  def bottom: typings.reactDates.reactDatesStrings.bottom = this.cast("bottom")
+  def bottom: typings.reactDates.reactDatesStrings.bottom = "bottom".asInstanceOf[typings.reactDates.reactDatesStrings.bottom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def top: typings.reactDates.reactDatesStrings.top = this.cast("top")
+  def top: typings.reactDates.reactDatesStrings.top = "top".asInstanceOf[typings.reactDates.reactDatesStrings.top]
 }
 

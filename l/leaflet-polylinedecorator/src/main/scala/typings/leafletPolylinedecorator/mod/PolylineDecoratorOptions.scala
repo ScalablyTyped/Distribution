@@ -12,7 +12,6 @@ object PolylineDecoratorOptions {
   @scala.inline
   def apply(patterns: js.Array[Pattern]): PolylineDecoratorOptions = {
     val __obj = js.Dynamic.literal(patterns = patterns.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PolylineDecoratorOptions]
   }
 }

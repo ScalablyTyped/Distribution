@@ -27,7 +27,6 @@ object SitemapsResource {
     submit: AnonFeedpath => Request_[Unit]
   ): SitemapsResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), submit = js.Any.fromFunction1(submit))
-  
     __obj.asInstanceOf[SitemapsResource]
   }
 }

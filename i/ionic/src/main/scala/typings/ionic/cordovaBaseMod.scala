@@ -17,7 +17,7 @@ object cordovaBaseMod extends js.Object {
     /* protected */ def checkCordova(runinfo: CommandInstanceInfo): js.Promise[Unit] = js.native
     /* protected */ def checkForPlatformInstallation(platform: String): js.Promise[Unit] = js.native
     /* protected */ def checkForPlatformInstallation(platform: String, hasPromptToInstallPromptToInstallRefusalMsg: AnonPromptToInstall): js.Promise[Unit] = js.native
-    /* protected */ def integration(): RequiredProjectIntegratio = js.native
+    /* protected */ def integration: RequiredProjectIntegratio = js.native
     /* protected */ def preRunChecks(runinfo: CommandInstanceInfo): js.Promise[Unit] = js.native
     /* protected */ def runCordova(argList: js.Array[String]): js.Promise[Unit] = js.native
     /* protected */ def runCordova(argList: js.Array[String], hasFatalOnNotFoundTruncateErrorOutputOptions: IShellRunOptions): js.Promise[Unit] = js.native

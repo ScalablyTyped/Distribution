@@ -24,7 +24,6 @@ object AnonEntity {
     scene: Scene
   ): AnonEntity = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], geometryOptions = geometryOptions.asInstanceOf[js.Any], geometryPropertyName = geometryPropertyName.asInstanceOf[js.Any], observedPropertyNames = observedPropertyNames.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEntity]
   }
 }

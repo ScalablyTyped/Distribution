@@ -26,7 +26,6 @@ object FieldDef {
     tableID: Double
   ): FieldDef = {
     val __obj = js.Dynamic.literal(columnID = columnID.asInstanceOf[js.Any], dataTypeID = dataTypeID.asInstanceOf[js.Any], dataTypeModifier = dataTypeModifier.asInstanceOf[js.Any], dataTypeSize = dataTypeSize.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], tableID = tableID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FieldDef]
   }
 }

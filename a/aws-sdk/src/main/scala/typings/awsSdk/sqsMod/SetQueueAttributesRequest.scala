@@ -20,7 +20,6 @@ object SetQueueAttributesRequest {
   @scala.inline
   def apply(Attributes: QueueAttributeMap, QueueUrl: String): SetQueueAttributesRequest = {
     val __obj = js.Dynamic.literal(Attributes = Attributes.asInstanceOf[js.Any], QueueUrl = QueueUrl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetQueueAttributesRequest]
   }
 }

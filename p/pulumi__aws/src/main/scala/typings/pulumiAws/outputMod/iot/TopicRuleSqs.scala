@@ -24,7 +24,6 @@ object TopicRuleSqs {
   @scala.inline
   def apply(queueUrl: String, roleArn: String, useBase64: Boolean): TopicRuleSqs = {
     val __obj = js.Dynamic.literal(queueUrl = queueUrl.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], useBase64 = useBase64.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TopicRuleSqs]
   }
 }

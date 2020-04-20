@@ -12,7 +12,6 @@ object Events {
   @scala.inline
   def apply(abort: js.Any): Events = {
     val __obj = js.Dynamic.literal(abort = abort.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Events]
   }
 }

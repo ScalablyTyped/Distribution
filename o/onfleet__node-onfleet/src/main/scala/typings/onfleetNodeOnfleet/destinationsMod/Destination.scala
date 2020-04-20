@@ -16,7 +16,6 @@ object Destination {
     get: String => js.Promise[OnfleetDestination]
   ): Destination = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get))
-  
     __obj.asInstanceOf[Destination]
   }
 }

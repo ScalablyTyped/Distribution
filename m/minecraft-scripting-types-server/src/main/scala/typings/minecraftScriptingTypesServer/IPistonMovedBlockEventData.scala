@@ -27,7 +27,6 @@ object IPistonMovedBlockEventData {
   @scala.inline
   def apply(block_position: VectorXYZ, piston_action: String, piston_position: VectorXYZ): IPistonMovedBlockEventData = {
     val __obj = js.Dynamic.literal(block_position = block_position.asInstanceOf[js.Any], piston_action = piston_action.asInstanceOf[js.Any], piston_position = piston_position.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPistonMovedBlockEventData]
   }
 }

@@ -14,7 +14,6 @@ object IPointerDeviceStatics {
   @scala.inline
   def apply(getPointerDevice: Double => PointerDevice, getPointerDevices: () => IVectorView[PointerDevice]): IPointerDeviceStatics = {
     val __obj = js.Dynamic.literal(getPointerDevice = js.Any.fromFunction1(getPointerDevice), getPointerDevices = js.Any.fromFunction0(getPointerDevices))
-  
     __obj.asInstanceOf[IPointerDeviceStatics]
   }
 }

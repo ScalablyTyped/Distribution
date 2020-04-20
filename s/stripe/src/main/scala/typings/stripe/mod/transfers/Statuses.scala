@@ -15,16 +15,14 @@ trait Statuses extends js.Object
 
 object Statuses {
   @scala.inline
-  def canceled: typings.stripe.stripeStrings.canceled = this.cast("canceled")
+  def canceled: typings.stripe.stripeStrings.canceled = "canceled".asInstanceOf[typings.stripe.stripeStrings.canceled]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def failed: typings.stripe.stripeStrings.failed = "failed".asInstanceOf[typings.stripe.stripeStrings.failed]
   @scala.inline
-  def failed: typings.stripe.stripeStrings.failed = this.cast("failed")
+  def in_transit: typings.stripe.stripeStrings.in_transit = "in_transit".asInstanceOf[typings.stripe.stripeStrings.in_transit]
   @scala.inline
-  def in_transit: typings.stripe.stripeStrings.in_transit = this.cast("in_transit")
+  def paid: typings.stripe.stripeStrings.paid = "paid".asInstanceOf[typings.stripe.stripeStrings.paid]
   @scala.inline
-  def paid: typings.stripe.stripeStrings.paid = this.cast("paid")
-  @scala.inline
-  def pending: typings.stripe.stripeStrings.pending = this.cast("pending")
+  def pending: typings.stripe.stripeStrings.pending = "pending".asInstanceOf[typings.stripe.stripeStrings.pending]
 }
 

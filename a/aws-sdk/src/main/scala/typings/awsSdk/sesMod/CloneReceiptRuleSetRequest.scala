@@ -20,7 +20,6 @@ object CloneReceiptRuleSetRequest {
   @scala.inline
   def apply(OriginalRuleSetName: ReceiptRuleSetName, RuleSetName: ReceiptRuleSetName): CloneReceiptRuleSetRequest = {
     val __obj = js.Dynamic.literal(OriginalRuleSetName = OriginalRuleSetName.asInstanceOf[js.Any], RuleSetName = RuleSetName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CloneReceiptRuleSetRequest]
   }
 }

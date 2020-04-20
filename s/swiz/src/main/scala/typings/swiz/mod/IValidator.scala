@@ -14,7 +14,6 @@ object IValidator {
   @scala.inline
   def apply(func: (js.Any, js.Any, js.Function) => Unit, help: String, name: String): IValidator = {
     val __obj = js.Dynamic.literal(func = js.Any.fromFunction3(func), help = help.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IValidator]
   }
 }

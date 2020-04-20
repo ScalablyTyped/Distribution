@@ -12,7 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait UploadProps extends js.Object {
+trait UploadProps[T] extends js.Object {
   var accept: js.UndefOr[String] = js.undefined
   var action: js.UndefOr[String | (js.Function1[/* file */ RcFile, String | js.Thenable[String]])] = js.undefined
   var beforeUpload: js.UndefOr[
@@ -20,14 +20,14 @@ trait UploadProps extends js.Object {
   ] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var customRequest: js.UndefOr[js.Function1[/* options */ RcCustomRequestOptions, Unit]] = js.undefined
-  var data: js.UndefOr[js.Object | (js.Function1[/* file */ UploadFile[_], js.Object])] = js.undefined
-  var defaultFileList: js.UndefOr[js.Array[UploadFile[_]]] = js.undefined
+  var data: js.UndefOr[js.Object | (js.Function1[/* file */ UploadFile[T], js.Object])] = js.undefined
+  var defaultFileList: js.UndefOr[js.Array[UploadFile[T]]] = js.undefined
   var directory: js.UndefOr[Boolean] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
-  var fileList: js.UndefOr[js.Array[UploadFile[_]]] = js.undefined
+  var fileList: js.UndefOr[js.Array[UploadFile[T]]] = js.undefined
   var headers: js.UndefOr[HttpRequestHeader] = js.undefined
   var iconRender: js.UndefOr[
-    js.Function2[/* file */ UploadFile[_], /* listType */ js.UndefOr[UploadListType], ReactNode]
+    js.Function2[/* file */ UploadFile[T], /* listType */ js.UndefOr[UploadListType], ReactNode]
   ] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var listType: js.UndefOr[UploadListType] = js.undefined
@@ -36,10 +36,10 @@ trait UploadProps extends js.Object {
   var multiple: js.UndefOr[Boolean] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* info */ UploadChangeParam[UploadFile[_]], Unit]] = js.undefined
-  var onDownload: js.UndefOr[js.Function1[/* file */ UploadFile[_], Unit]] = js.undefined
-  var onPreview: js.UndefOr[js.Function1[/* file */ UploadFile[_], Unit]] = js.undefined
+  var onDownload: js.UndefOr[js.Function1[/* file */ UploadFile[T], Unit]] = js.undefined
+  var onPreview: js.UndefOr[js.Function1[/* file */ UploadFile[T], Unit]] = js.undefined
   var onRemove: js.UndefOr[
-    js.Function1[/* file */ UploadFile[_], Unit | Boolean | (js.Promise[Unit | Boolean])]
+    js.Function1[/* file */ UploadFile[T], Unit | Boolean | (js.Promise[Unit | Boolean])]
   ] = js.undefined
   var openFileDialogOnClick: js.UndefOr[Boolean] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
@@ -54,19 +54,19 @@ trait UploadProps extends js.Object {
 
 object UploadProps {
   @scala.inline
-  def apply(
+  def apply[T](
     accept: String = null,
     action: String | (js.Function1[/* file */ RcFile, String | js.Thenable[String]]) = null,
     beforeUpload: (/* file */ RcFile, /* FileList */ js.Array[RcFile]) => Boolean | js.Thenable[Unit] = null,
     className: String = null,
     customRequest: /* options */ RcCustomRequestOptions => Unit = null,
-    data: js.Object | (js.Function1[/* file */ UploadFile[_], js.Object]) = null,
-    defaultFileList: js.Array[UploadFile[_]] = null,
+    data: js.Object | (js.Function1[/* file */ UploadFile[T], js.Object]) = null,
+    defaultFileList: js.Array[UploadFile[T]] = null,
     directory: js.UndefOr[Boolean] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    fileList: js.Array[UploadFile[_]] = null,
+    fileList: js.Array[UploadFile[T]] = null,
     headers: HttpRequestHeader = null,
-    iconRender: (/* file */ UploadFile[_], /* listType */ js.UndefOr[UploadListType]) => ReactNode = null,
+    iconRender: (/* file */ UploadFile[T], /* listType */ js.UndefOr[UploadListType]) => ReactNode = null,
     id: String = null,
     listType: UploadListType = null,
     locale: UploadLocale = null,
@@ -74,9 +74,9 @@ object UploadProps {
     multiple: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     onChange: /* info */ UploadChangeParam[UploadFile[_]] => Unit = null,
-    onDownload: /* file */ UploadFile[_] => Unit = null,
-    onPreview: /* file */ UploadFile[_] => Unit = null,
-    onRemove: /* file */ UploadFile[_] => Unit | Boolean | (js.Promise[Unit | Boolean]) = null,
+    onDownload: /* file */ UploadFile[T] => Unit = null,
+    onPreview: /* file */ UploadFile[T] => Unit = null,
+    onRemove: /* file */ UploadFile[T] => Unit | Boolean | (js.Promise[Unit | Boolean]) = null,
     openFileDialogOnClick: js.UndefOr[Boolean] = js.undefined,
     prefixCls: String = null,
     previewFile: /* file */ File | Blob => js.Thenable[String] = null,
@@ -86,7 +86,7 @@ object UploadProps {
     transformFile: /* file */ RcFile => String | Blob | File | (js.Thenable[String | Blob | File]) = null,
     `type`: UploadType = null,
     withCredentials: js.UndefOr[Boolean] = js.undefined
-  ): UploadProps = {
+  ): UploadProps[T] = {
     val __obj = js.Dynamic.literal()
     if (accept != null) __obj.updateDynamic("accept")(accept.asInstanceOf[js.Any])
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
@@ -119,7 +119,7 @@ object UploadProps {
     if (transformFile != null) __obj.updateDynamic("transformFile")(js.Any.fromFunction1(transformFile))
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.asInstanceOf[js.Any])
-    __obj.asInstanceOf[UploadProps]
+    __obj.asInstanceOf[UploadProps[T]]
   }
 }
 

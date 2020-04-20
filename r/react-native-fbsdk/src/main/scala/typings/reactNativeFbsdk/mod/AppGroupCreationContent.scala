@@ -23,7 +23,6 @@ object AppGroupCreationContent {
   @scala.inline
   def apply(description: String, name: String, privacy: AppGroupPrivacy): AppGroupCreationContent = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], privacy = privacy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AppGroupCreationContent]
   }
 }

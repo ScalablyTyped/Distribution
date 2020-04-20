@@ -65,7 +65,6 @@ object LdapClient {
     unbind: () => js.Promise[_]
   ): LdapClient = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), bind = js.Any.fromFunction2(bind), del = js.Any.fromFunction1(del), destroy = js.Any.fromFunction0(destroy), modify = js.Any.fromFunction2(modify), modifyDN = js.Any.fromFunction2(modifyDN), search = js.Any.fromFunction2(search), unbind = js.Any.fromFunction0(unbind))
-  
     __obj.asInstanceOf[LdapClient]
   }
 }

@@ -19,22 +19,20 @@ trait FileHashType extends js.Object
 
 object FileHashType {
   @scala.inline
-  def authenticodeHash256: typings.microsoftGraph.microsoftGraphStrings.authenticodeHash256 = this.cast("authenticodeHash256")
+  def authenticodeHash256: typings.microsoftGraph.microsoftGraphStrings.authenticodeHash256 = "authenticodeHash256".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.authenticodeHash256]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ctph: typings.microsoftGraph.microsoftGraphStrings.ctph = "ctph".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.ctph]
   @scala.inline
-  def ctph: typings.microsoftGraph.microsoftGraphStrings.ctph = this.cast("ctph")
+  def lsHash: typings.microsoftGraph.microsoftGraphStrings.lsHash = "lsHash".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.lsHash]
   @scala.inline
-  def lsHash: typings.microsoftGraph.microsoftGraphStrings.lsHash = this.cast("lsHash")
+  def md5: typings.microsoftGraph.microsoftGraphStrings.md5 = "md5".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.md5]
   @scala.inline
-  def md5: typings.microsoftGraph.microsoftGraphStrings.md5 = this.cast("md5")
+  def sha1: typings.microsoftGraph.microsoftGraphStrings.sha1 = "sha1".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sha1]
   @scala.inline
-  def sha1: typings.microsoftGraph.microsoftGraphStrings.sha1 = this.cast("sha1")
+  def sha256: typings.microsoftGraph.microsoftGraphStrings.sha256 = "sha256".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sha256]
   @scala.inline
-  def sha256: typings.microsoftGraph.microsoftGraphStrings.sha256 = this.cast("sha256")
+  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = this.cast("unknownFutureValue")
+  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }
 

@@ -11,7 +11,7 @@ object tileCacheMod extends js.Object {
   @js.native
   trait TileCache
     extends typings.ol.lrucacheMod.default[js.Any] {
-    def expireCache(usedTiles: StringDictionary[typings.ol.tileRangeMod.default]): Unit = js.native
+    def expireCache(usedTiles: StringDictionary[Boolean]): Unit = js.native
     def pruneExceptNewestZ(): Unit = js.native
   }
   

@@ -14,14 +14,12 @@ trait EnvironmentType extends js.Object
 
 object EnvironmentType {
   @scala.inline
-  def NODE: typings.emscripten.emscriptenStrings.NODE = this.cast("NODE")
+  def NODE: typings.emscripten.emscriptenStrings.NODE = "NODE".asInstanceOf[typings.emscripten.emscriptenStrings.NODE]
   @scala.inline
-  def SHELL: typings.emscripten.emscriptenStrings.SHELL = this.cast("SHELL")
+  def SHELL: typings.emscripten.emscriptenStrings.SHELL = "SHELL".asInstanceOf[typings.emscripten.emscriptenStrings.SHELL]
   @scala.inline
-  def WEB: typings.emscripten.emscriptenStrings.WEB = this.cast("WEB")
+  def WEB: typings.emscripten.emscriptenStrings.WEB = "WEB".asInstanceOf[typings.emscripten.emscriptenStrings.WEB]
   @scala.inline
-  def WORKER: typings.emscripten.emscriptenStrings.WORKER = this.cast("WORKER")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def WORKER: typings.emscripten.emscriptenStrings.WORKER = "WORKER".asInstanceOf[typings.emscripten.emscriptenStrings.WORKER]
 }
 

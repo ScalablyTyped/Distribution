@@ -40,7 +40,6 @@ object AnonAndroidStudio {
     webStorm: Double
   ): AnonAndroidStudio = {
     val __obj = js.Dynamic.literal(androidStudio = androidStudio.asInstanceOf[js.Any], appCode = appCode.asInstanceOf[js.Any], cLion = cLion.asInstanceOf[js.Any], dataGrip = dataGrip.asInstanceOf[js.Any], eclipse = eclipse.asInstanceOf[js.Any], intelliJ = intelliJ.asInstanceOf[js.Any], mPS = mPS.asInstanceOf[js.Any], phpStorm = phpStorm.asInstanceOf[js.Any], pyCharm = pyCharm.asInstanceOf[js.Any], rubyMine = rubyMine.asInstanceOf[js.Any], tower = tower.asInstanceOf[js.Any], unknown = unknown.asInstanceOf[js.Any], visualStudio = visualStudio.asInstanceOf[js.Any], webStorm = webStorm.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAndroidStudio]
   }
 }

@@ -12,7 +12,6 @@ object ConsolaReporter {
   @scala.inline
   def apply(log: (ConsolaLogObject, ConsolaReporterArgs) => Unit): ConsolaReporter = {
     val __obj = js.Dynamic.literal(log = js.Any.fromFunction2(log))
-  
     __obj.asInstanceOf[ConsolaReporter]
   }
 }

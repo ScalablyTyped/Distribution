@@ -13,7 +13,6 @@ object JestHookExposedFS {
   @scala.inline
   def apply(projects: js.Array[AnonConfig]): JestHookExposedFS = {
     val __obj = js.Dynamic.literal(projects = projects.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JestHookExposedFS]
   }
 }

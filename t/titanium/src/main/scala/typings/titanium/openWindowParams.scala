@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
   */
 trait openWindowParams extends js.Object {
   /**
-  	 * Animation resource to run on the activity (heavyweight window) being opened.
+  	 * Animation resource to run on the activity being opened.
   	 */
   var activityEnterAnimation: js.UndefOr[Double] = js.undefined
   /**
-  	 * Animation resource to run on the activity that is being put in background as a heavyweight window is being opened above it.
+  	 * Animation resource to run on the activity that is being put in background as a window is being opened above it.
   	 */
   var activityExitAnimation: js.UndefOr[Double] = js.undefined
   /**
@@ -23,7 +23,11 @@ trait openWindowParams extends js.Object {
   /**
   	 * Window's bottom position, in platform-specific units.
   	 */
-  var bottom: js.UndefOr[Double | String] = js.undefined
+  var bottom: js.UndefOr[Double | java.lang.String] = js.undefined
+  /**
+  	 * Indicates whether the window enforces modal behaviour.
+  	 */
+  var forceModal: js.UndefOr[Boolean] = js.undefined
   /**
   	 * Determines if the window is fullscreen.
   	 */
@@ -31,11 +35,11 @@ trait openWindowParams extends js.Object {
   /**
   	 * Window's height, in platform-specific units.
   	 */
-  var height: js.UndefOr[Double | String] = js.undefined
+  var height: js.UndefOr[Double | java.lang.String] = js.undefined
   /**
   	 * Window's left position, in platform-specific units.
   	 */
-  var left: js.UndefOr[Double | String] = js.undefined
+  var left: js.UndefOr[Double | java.lang.String] = js.undefined
   /**
   	 * Determines whether to open the window modal in front of other windows.
   	 */
@@ -55,11 +59,11 @@ trait openWindowParams extends js.Object {
   /**
   	 * Window's right position, in platform-specific units.
   	 */
-  var right: js.UndefOr[Double | String] = js.undefined
+  var right: js.UndefOr[Double | java.lang.String] = js.undefined
   /**
   	 * Window's top position, in platform-specific units.
   	 */
-  var top: js.UndefOr[Double | String] = js.undefined
+  var top: js.UndefOr[Double | java.lang.String] = js.undefined
   /**
   	 * Transition style of this non-modal window.
   	 */
@@ -67,7 +71,7 @@ trait openWindowParams extends js.Object {
   /**
   	 * Window's width, in platform-specific units.
   	 */
-  var width: js.UndefOr[Double | String] = js.undefined
+  var width: js.UndefOr[Double | java.lang.String] = js.undefined
 }
 
 object openWindowParams {
@@ -76,24 +80,26 @@ object openWindowParams {
     activityEnterAnimation: Int | Double = null,
     activityExitAnimation: Int | Double = null,
     animated: js.UndefOr[Boolean] = js.undefined,
-    bottom: Double | String = null,
+    bottom: Double | java.lang.String = null,
+    forceModal: js.UndefOr[Boolean] = js.undefined,
     fullscreen: js.UndefOr[Boolean] = js.undefined,
-    height: Double | String = null,
-    left: Double | String = null,
+    height: Double | java.lang.String = null,
+    left: Double | java.lang.String = null,
     modal: js.UndefOr[Boolean] = js.undefined,
     modalStyle: Int | Double = null,
     modalTransitionStyle: Int | Double = null,
     navBarHidden: js.UndefOr[Boolean] = js.undefined,
-    right: Double | String = null,
-    top: Double | String = null,
+    right: Double | java.lang.String = null,
+    top: Double | java.lang.String = null,
     transition: Int | Double = null,
-    width: Double | String = null
+    width: Double | java.lang.String = null
   ): openWindowParams = {
     val __obj = js.Dynamic.literal()
     if (activityEnterAnimation != null) __obj.updateDynamic("activityEnterAnimation")(activityEnterAnimation.asInstanceOf[js.Any])
     if (activityExitAnimation != null) __obj.updateDynamic("activityExitAnimation")(activityExitAnimation.asInstanceOf[js.Any])
     if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
     if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceModal)) __obj.updateDynamic("forceModal")(forceModal.asInstanceOf[js.Any])
     if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])

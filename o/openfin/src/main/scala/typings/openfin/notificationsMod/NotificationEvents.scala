@@ -32,7 +32,6 @@ object NotificationEvents {
     show: RuntimeEvent[notification, show]
   ): NotificationEvents = {
     val __obj = js.Dynamic.literal(click = click.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], listenerRemoved = listenerRemoved.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], newListener = newListener.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NotificationEvents]
   }
 }

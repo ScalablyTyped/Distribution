@@ -12,7 +12,6 @@ object AnonEnumValuesAnonIncludeEmailAddress {
   @scala.inline
   def apply(enumValues: AnonIncludeEmailAddress): AnonEnumValuesAnonIncludeEmailAddress = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumValuesAnonIncludeEmailAddress]
   }
 }

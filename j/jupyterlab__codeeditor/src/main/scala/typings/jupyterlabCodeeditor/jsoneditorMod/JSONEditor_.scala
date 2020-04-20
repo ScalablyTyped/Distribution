@@ -86,13 +86,13 @@ class JSONEditor_ protected () extends Widget {
   /**
     * Get whether the editor is dirty.
     */
-  def isDirty(): Boolean = js.native
+  def isDirty: Boolean = js.native
   def source(): js.Any = js.native
   def source(value: IObservableJSON): js.Any = js.native
   /**
     * The observable source.
     */
   @JSName("source")
-  def source_Union(): IObservableJSON | Null = js.native
+  def source_Union: IObservableJSON | Null = js.native
 }
 

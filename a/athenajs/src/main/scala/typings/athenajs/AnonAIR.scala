@@ -17,7 +17,6 @@ object AnonAIR {
   @scala.inline
   def apply(AIR: `1`, LADDER: `3`, WALL: `2`): AnonAIR = {
     val __obj = js.Dynamic.literal(AIR = AIR.asInstanceOf[js.Any], LADDER = LADDER.asInstanceOf[js.Any], WALL = WALL.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAIR]
   }
 }

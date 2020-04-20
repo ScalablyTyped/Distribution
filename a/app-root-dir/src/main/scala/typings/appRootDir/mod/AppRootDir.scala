@@ -20,7 +20,6 @@ object AppRootDir {
   @scala.inline
   def apply(get: () => String, set: String => Unit): AppRootDir = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get), set = js.Any.fromFunction1(set))
-  
     __obj.asInstanceOf[AppRootDir]
   }
 }

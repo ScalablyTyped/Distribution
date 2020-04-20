@@ -13,7 +13,6 @@ object AnonFlexDirectionMarginTop {
   @scala.inline
   def apply(flexDirection: String, marginTop: Double): AnonFlexDirectionMarginTop = {
     val __obj = js.Dynamic.literal(flexDirection = flexDirection.asInstanceOf[js.Any], marginTop = marginTop.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFlexDirectionMarginTop]
   }
 }

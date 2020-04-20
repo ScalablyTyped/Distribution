@@ -56,98 +56,96 @@ trait Requires extends js.Object
 
 object Requires {
   @scala.inline
-  def ReactDOM: typings.consolidate.consolidateStrings.ReactDOM = this.cast("ReactDOM")
+  def ReactDOM: typings.consolidate.consolidateStrings.ReactDOM = "ReactDOM".asInstanceOf[typings.consolidate.consolidateStrings.ReactDOM]
   @scala.inline
-  def `arc-templates`: typings.consolidate.consolidateStrings.`arc-templates` = this.cast("arc-templates")
+  def `arc-templates`: typings.consolidate.consolidateStrings.`arc-templates` = "arc-templates".asInstanceOf[typings.consolidate.consolidateStrings.`arc-templates`]
   @scala.inline
-  def atpl: typings.consolidate.consolidateStrings.atpl = this.cast("atpl")
+  def atpl: typings.consolidate.consolidateStrings.atpl = "atpl".asInstanceOf[typings.consolidate.consolidateStrings.atpl]
   @scala.inline
-  def babel: typings.consolidate.consolidateStrings.babel = this.cast("babel")
+  def babel: typings.consolidate.consolidateStrings.babel = "babel".asInstanceOf[typings.consolidate.consolidateStrings.babel]
   @scala.inline
-  def bracket: typings.consolidate.consolidateStrings.bracket = this.cast("bracket")
+  def bracket: typings.consolidate.consolidateStrings.bracket = "bracket".asInstanceOf[typings.consolidate.consolidateStrings.bracket]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dot: typings.consolidate.consolidateStrings.dot = "dot".asInstanceOf[typings.consolidate.consolidateStrings.dot]
   @scala.inline
-  def dot: typings.consolidate.consolidateStrings.dot = this.cast("dot")
+  def dust: typings.consolidate.consolidateStrings.dust = "dust".asInstanceOf[typings.consolidate.consolidateStrings.dust]
   @scala.inline
-  def dust: typings.consolidate.consolidateStrings.dust = this.cast("dust")
+  def eco: typings.consolidate.consolidateStrings.eco = "eco".asInstanceOf[typings.consolidate.consolidateStrings.eco]
   @scala.inline
-  def eco: typings.consolidate.consolidateStrings.eco = this.cast("eco")
+  def ect: typings.consolidate.consolidateStrings.ect = "ect".asInstanceOf[typings.consolidate.consolidateStrings.ect]
   @scala.inline
-  def ect: typings.consolidate.consolidateStrings.ect = this.cast("ect")
+  def ejs: typings.consolidate.consolidateStrings.ejs = "ejs".asInstanceOf[typings.consolidate.consolidateStrings.ejs]
   @scala.inline
-  def ejs: typings.consolidate.consolidateStrings.ejs = this.cast("ejs")
+  def extend: typings.consolidate.consolidateStrings.extend = "extend".asInstanceOf[typings.consolidate.consolidateStrings.extend]
   @scala.inline
-  def extend: typings.consolidate.consolidateStrings.extend = this.cast("extend")
+  def haml: typings.consolidate.consolidateStrings.haml = "haml".asInstanceOf[typings.consolidate.consolidateStrings.haml]
   @scala.inline
-  def haml: typings.consolidate.consolidateStrings.haml = this.cast("haml")
+  def `haml-coffee`: typings.consolidate.consolidateStrings.`haml-coffee` = "haml-coffee".asInstanceOf[typings.consolidate.consolidateStrings.`haml-coffee`]
   @scala.inline
-  def `haml-coffee`: typings.consolidate.consolidateStrings.`haml-coffee` = this.cast("haml-coffee")
+  def hamlet: typings.consolidate.consolidateStrings.hamlet = "hamlet".asInstanceOf[typings.consolidate.consolidateStrings.hamlet]
   @scala.inline
-  def hamlet: typings.consolidate.consolidateStrings.hamlet = this.cast("hamlet")
+  def handlebars: typings.consolidate.consolidateStrings.handlebars = "handlebars".asInstanceOf[typings.consolidate.consolidateStrings.handlebars]
   @scala.inline
-  def handlebars: typings.consolidate.consolidateStrings.handlebars = this.cast("handlebars")
+  def hogan: typings.consolidate.consolidateStrings.hogan = "hogan".asInstanceOf[typings.consolidate.consolidateStrings.hogan]
   @scala.inline
-  def hogan: typings.consolidate.consolidateStrings.hogan = this.cast("hogan")
+  def htmling: typings.consolidate.consolidateStrings.htmling = "htmling".asInstanceOf[typings.consolidate.consolidateStrings.htmling]
   @scala.inline
-  def htmling: typings.consolidate.consolidateStrings.htmling = this.cast("htmling")
+  def jade: typings.consolidate.consolidateStrings.jade = "jade".asInstanceOf[typings.consolidate.consolidateStrings.jade]
   @scala.inline
-  def jade: typings.consolidate.consolidateStrings.jade = this.cast("jade")
+  def jazz: typings.consolidate.consolidateStrings.jazz = "jazz".asInstanceOf[typings.consolidate.consolidateStrings.jazz]
   @scala.inline
-  def jazz: typings.consolidate.consolidateStrings.jazz = this.cast("jazz")
+  def jqtpl: typings.consolidate.consolidateStrings.jqtpl = "jqtpl".asInstanceOf[typings.consolidate.consolidateStrings.jqtpl]
   @scala.inline
-  def jqtpl: typings.consolidate.consolidateStrings.jqtpl = this.cast("jqtpl")
+  def just: typings.consolidate.consolidateStrings.just = "just".asInstanceOf[typings.consolidate.consolidateStrings.just]
   @scala.inline
-  def just: typings.consolidate.consolidateStrings.just = this.cast("just")
+  def liquid: typings.consolidate.consolidateStrings.liquid = "liquid".asInstanceOf[typings.consolidate.consolidateStrings.liquid]
   @scala.inline
-  def liquid: typings.consolidate.consolidateStrings.liquid = this.cast("liquid")
+  def liquor: typings.consolidate.consolidateStrings.liquor = "liquor".asInstanceOf[typings.consolidate.consolidateStrings.liquor]
   @scala.inline
-  def liquor: typings.consolidate.consolidateStrings.liquor = this.cast("liquor")
+  def lodash: typings.consolidate.consolidateStrings.lodash = "lodash".asInstanceOf[typings.consolidate.consolidateStrings.lodash]
   @scala.inline
-  def lodash: typings.consolidate.consolidateStrings.lodash = this.cast("lodash")
+  def marko: typings.consolidate.consolidateStrings.marko = "marko".asInstanceOf[typings.consolidate.consolidateStrings.marko]
   @scala.inline
-  def marko: typings.consolidate.consolidateStrings.marko = this.cast("marko")
+  def mote: typings.consolidate.consolidateStrings.mote = "mote".asInstanceOf[typings.consolidate.consolidateStrings.mote]
   @scala.inline
-  def mote: typings.consolidate.consolidateStrings.mote = this.cast("mote")
+  def mustache: typings.consolidate.consolidateStrings.mustache = "mustache".asInstanceOf[typings.consolidate.consolidateStrings.mustache]
   @scala.inline
-  def mustache: typings.consolidate.consolidateStrings.mustache = this.cast("mustache")
+  def nunjucks: typings.consolidate.consolidateStrings.nunjucks = "nunjucks".asInstanceOf[typings.consolidate.consolidateStrings.nunjucks]
   @scala.inline
-  def nunjucks: typings.consolidate.consolidateStrings.nunjucks = this.cast("nunjucks")
+  def plates: typings.consolidate.consolidateStrings.plates = "plates".asInstanceOf[typings.consolidate.consolidateStrings.plates]
   @scala.inline
-  def plates: typings.consolidate.consolidateStrings.plates = this.cast("plates")
+  def pug: typings.consolidate.consolidateStrings.pug = "pug".asInstanceOf[typings.consolidate.consolidateStrings.pug]
   @scala.inline
-  def pug: typings.consolidate.consolidateStrings.pug = this.cast("pug")
+  def qejs: typings.consolidate.consolidateStrings.qejs = "qejs".asInstanceOf[typings.consolidate.consolidateStrings.qejs]
   @scala.inline
-  def qejs: typings.consolidate.consolidateStrings.qejs = this.cast("qejs")
+  def ractive: typings.consolidate.consolidateStrings.ractive = "ractive".asInstanceOf[typings.consolidate.consolidateStrings.ractive]
   @scala.inline
-  def ractive: typings.consolidate.consolidateStrings.ractive = this.cast("ractive")
+  def razor: typings.consolidate.consolidateStrings.razor = "razor".asInstanceOf[typings.consolidate.consolidateStrings.razor]
   @scala.inline
-  def razor: typings.consolidate.consolidateStrings.razor = this.cast("razor")
+  def react: typings.consolidate.consolidateStrings.react = "react".asInstanceOf[typings.consolidate.consolidateStrings.react]
   @scala.inline
-  def react: typings.consolidate.consolidateStrings.react = this.cast("react")
+  def slm: typings.consolidate.consolidateStrings.slm = "slm".asInstanceOf[typings.consolidate.consolidateStrings.slm]
   @scala.inline
-  def slm: typings.consolidate.consolidateStrings.slm = this.cast("slm")
+  def squirrelly: typings.consolidate.consolidateStrings.squirrelly = "squirrelly".asInstanceOf[typings.consolidate.consolidateStrings.squirrelly]
   @scala.inline
-  def squirrelly: typings.consolidate.consolidateStrings.squirrelly = this.cast("squirrelly")
+  def swig: typings.consolidate.consolidateStrings.swig = "swig".asInstanceOf[typings.consolidate.consolidateStrings.swig]
   @scala.inline
-  def swig: typings.consolidate.consolidateStrings.swig = this.cast("swig")
+  def teacup: typings.consolidate.consolidateStrings.teacup = "teacup".asInstanceOf[typings.consolidate.consolidateStrings.teacup]
   @scala.inline
-  def teacup: typings.consolidate.consolidateStrings.teacup = this.cast("teacup")
+  def templayed: typings.consolidate.consolidateStrings.templayed = "templayed".asInstanceOf[typings.consolidate.consolidateStrings.templayed]
   @scala.inline
-  def templayed: typings.consolidate.consolidateStrings.templayed = this.cast("templayed")
+  def toffee: typings.consolidate.consolidateStrings.toffee = "toffee".asInstanceOf[typings.consolidate.consolidateStrings.toffee]
   @scala.inline
-  def toffee: typings.consolidate.consolidateStrings.toffee = this.cast("toffee")
+  def twig: typings.consolidate.consolidateStrings.twig = "twig".asInstanceOf[typings.consolidate.consolidateStrings.twig]
   @scala.inline
-  def twig: typings.consolidate.consolidateStrings.twig = this.cast("twig")
+  def underscore: typings.consolidate.consolidateStrings.underscore = "underscore".asInstanceOf[typings.consolidate.consolidateStrings.underscore]
   @scala.inline
-  def underscore: typings.consolidate.consolidateStrings.underscore = this.cast("underscore")
+  def vash: typings.consolidate.consolidateStrings.vash = "vash".asInstanceOf[typings.consolidate.consolidateStrings.vash]
   @scala.inline
-  def vash: typings.consolidate.consolidateStrings.vash = this.cast("vash")
+  def velocityjs: typings.consolidate.consolidateStrings.velocityjs = "velocityjs".asInstanceOf[typings.consolidate.consolidateStrings.velocityjs]
   @scala.inline
-  def velocityjs: typings.consolidate.consolidateStrings.velocityjs = this.cast("velocityjs")
+  def walrus: typings.consolidate.consolidateStrings.walrus = "walrus".asInstanceOf[typings.consolidate.consolidateStrings.walrus]
   @scala.inline
-  def walrus: typings.consolidate.consolidateStrings.walrus = this.cast("walrus")
-  @scala.inline
-  def whiskers: typings.consolidate.consolidateStrings.whiskers = this.cast("whiskers")
+  def whiskers: typings.consolidate.consolidateStrings.whiskers = "whiskers".asInstanceOf[typings.consolidate.consolidateStrings.whiskers]
 }
 

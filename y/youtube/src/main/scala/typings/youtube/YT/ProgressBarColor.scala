@@ -12,10 +12,8 @@ trait ProgressBarColor extends js.Object
 
 object ProgressBarColor {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def red: typings.youtube.youtubeStrings.red = "red".asInstanceOf[typings.youtube.youtubeStrings.red]
   @scala.inline
-  def red: typings.youtube.youtubeStrings.red = this.cast("red")
-  @scala.inline
-  def white: typings.youtube.youtubeStrings.white = this.cast("white")
+  def white: typings.youtube.youtubeStrings.white = "white".asInstanceOf[typings.youtube.youtubeStrings.white]
 }
 

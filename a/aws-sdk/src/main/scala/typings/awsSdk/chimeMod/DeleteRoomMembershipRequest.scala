@@ -24,7 +24,6 @@ object DeleteRoomMembershipRequest {
   @scala.inline
   def apply(AccountId: NonEmptyString, MemberId: NonEmptyString, RoomId: NonEmptyString): DeleteRoomMembershipRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], MemberId = MemberId.asInstanceOf[js.Any], RoomId = RoomId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteRoomMembershipRequest]
   }
 }

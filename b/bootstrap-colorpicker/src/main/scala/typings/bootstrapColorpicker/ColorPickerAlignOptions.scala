@@ -12,10 +12,8 @@ trait ColorPickerAlignOptions extends js.Object
 
 object ColorPickerAlignOptions {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def left: typings.bootstrapColorpicker.bootstrapColorpickerStrings.left = "left".asInstanceOf[typings.bootstrapColorpicker.bootstrapColorpickerStrings.left]
   @scala.inline
-  def left: typings.bootstrapColorpicker.bootstrapColorpickerStrings.left = this.cast("left")
-  @scala.inline
-  def right: typings.bootstrapColorpicker.bootstrapColorpickerStrings.right = this.cast("right")
+  def right: typings.bootstrapColorpicker.bootstrapColorpickerStrings.right = "right".asInstanceOf[typings.bootstrapColorpicker.bootstrapColorpickerStrings.right]
 }
 

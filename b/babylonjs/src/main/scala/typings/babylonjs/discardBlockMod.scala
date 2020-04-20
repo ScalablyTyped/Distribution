@@ -19,11 +19,11 @@ object discardBlockMod extends js.Object {
     /**
       * Gets the cutoff input component
       */
-    def cutoff(): NodeMaterialConnectionPoint = js.native
+    def cutoff: NodeMaterialConnectionPoint = js.native
     /**
       * Gets the color input component
       */
-    def value(): NodeMaterialConnectionPoint = js.native
+    def value: NodeMaterialConnectionPoint = js.native
   }
   
 }

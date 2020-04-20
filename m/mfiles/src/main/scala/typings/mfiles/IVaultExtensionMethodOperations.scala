@@ -16,7 +16,6 @@ object IVaultExtensionMethodOperations {
     ExecuteVaultExtensionMethod: (String, String) => String
   ): IVaultExtensionMethodOperations = {
     val __obj = js.Dynamic.literal(DoesActiveVaultExtensionMethodExist = js.Any.fromFunction1(DoesActiveVaultExtensionMethodExist), ExecuteVaultExtensionMethod = js.Any.fromFunction2(ExecuteVaultExtensionMethod))
-  
     __obj.asInstanceOf[IVaultExtensionMethodOperations]
   }
 }

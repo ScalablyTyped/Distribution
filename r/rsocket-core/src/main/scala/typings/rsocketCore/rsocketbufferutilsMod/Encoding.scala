@@ -14,14 +14,12 @@ trait Encoding extends js.Object
 
 object Encoding {
   @scala.inline
-  def ascii: typings.rsocketCore.rsocketCoreStrings.ascii = this.cast("ascii")
+  def ascii: typings.rsocketCore.rsocketCoreStrings.ascii = "ascii".asInstanceOf[typings.rsocketCore.rsocketCoreStrings.ascii]
   @scala.inline
-  def base64: typings.rsocketCore.rsocketCoreStrings.base64 = this.cast("base64")
+  def base64: typings.rsocketCore.rsocketCoreStrings.base64 = "base64".asInstanceOf[typings.rsocketCore.rsocketCoreStrings.base64]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def hex: typings.rsocketCore.rsocketCoreStrings.hex = "hex".asInstanceOf[typings.rsocketCore.rsocketCoreStrings.hex]
   @scala.inline
-  def hex: typings.rsocketCore.rsocketCoreStrings.hex = this.cast("hex")
-  @scala.inline
-  def utf8: typings.rsocketCore.rsocketCoreStrings.utf8 = this.cast("utf8")
+  def utf8: typings.rsocketCore.rsocketCoreStrings.utf8 = "utf8".asInstanceOf[typings.rsocketCore.rsocketCoreStrings.utf8]
 }
 

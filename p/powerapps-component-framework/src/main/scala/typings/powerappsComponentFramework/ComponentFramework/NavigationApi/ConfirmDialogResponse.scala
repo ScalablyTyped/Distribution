@@ -18,7 +18,6 @@ object ConfirmDialogResponse {
   @scala.inline
   def apply(confirmed: Boolean): ConfirmDialogResponse = {
     val __obj = js.Dynamic.literal(confirmed = confirmed.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConfirmDialogResponse]
   }
 }

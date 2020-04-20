@@ -27,6 +27,10 @@ trait JobTemplate extends js.Object {
     */
   var Description: js.UndefOr[string] = js.native
   /**
+    * Optional list of hop destinations.
+    */
+  var HopDestinations: js.UndefOr[listOfHopDestination] = js.native
+  /**
     * The timestamp in epoch seconds when the Job template was last updated.
     */
   var LastUpdated: js.UndefOr[timestampUnix] = js.native
@@ -66,6 +70,7 @@ object JobTemplate {
     Category: string = null,
     CreatedAt: timestampUnix = null,
     Description: string = null,
+    HopDestinations: listOfHopDestination = null,
     LastUpdated: timestampUnix = null,
     Priority: Int | Double = null,
     Queue: string = null,
@@ -78,6 +83,7 @@ object JobTemplate {
     if (Category != null) __obj.updateDynamic("Category")(Category.asInstanceOf[js.Any])
     if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (HopDestinations != null) __obj.updateDynamic("HopDestinations")(HopDestinations.asInstanceOf[js.Any])
     if (LastUpdated != null) __obj.updateDynamic("LastUpdated")(LastUpdated.asInstanceOf[js.Any])
     if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
     if (Queue != null) __obj.updateDynamic("Queue")(Queue.asInstanceOf[js.Any])

@@ -43,7 +43,6 @@ object CreateCustomVerificationEmailTemplateRequest {
     TemplateSubject: Subject
   ): CreateCustomVerificationEmailTemplateRequest = {
     val __obj = js.Dynamic.literal(FailureRedirectionURL = FailureRedirectionURL.asInstanceOf[js.Any], FromEmailAddress = FromEmailAddress.asInstanceOf[js.Any], SuccessRedirectionURL = SuccessRedirectionURL.asInstanceOf[js.Any], TemplateContent = TemplateContent.asInstanceOf[js.Any], TemplateName = TemplateName.asInstanceOf[js.Any], TemplateSubject = TemplateSubject.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateCustomVerificationEmailTemplateRequest]
   }
 }

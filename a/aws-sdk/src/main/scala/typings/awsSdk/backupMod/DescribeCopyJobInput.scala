@@ -16,7 +16,6 @@ object DescribeCopyJobInput {
   @scala.inline
   def apply(CopyJobId: String): DescribeCopyJobInput = {
     val __obj = js.Dynamic.literal(CopyJobId = CopyJobId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeCopyJobInput]
   }
 }

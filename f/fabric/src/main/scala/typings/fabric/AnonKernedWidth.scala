@@ -13,7 +13,6 @@ object AnonKernedWidth {
   @scala.inline
   def apply(kernedWidth: Double, width: Double): AnonKernedWidth = {
     val __obj = js.Dynamic.literal(kernedWidth = kernedWidth.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonKernedWidth]
   }
 }

@@ -42,7 +42,7 @@ object referenceMod extends js.Object {
       */
     def child(pathString: String): Reference = js.native
     def child(pathString: Path): Reference = js.native
-    def database(): Database = js.native
+    def database: Database = js.native
     /** @return {!Database} */
     def databaseProp(): Database = js.native
     /** @return {?string} */
@@ -51,12 +51,12 @@ object referenceMod extends js.Object {
     def getParent(): Reference | Null = js.native
     /** @return {!Reference} */
     def getRoot(): Reference = js.native
-    def key(): String | Null = js.native
+    def key: String | Null = js.native
     /**
       * @return {!OnDisconnect}
       */
     def onDisconnect(): OnDisconnect = js.native
-    def parent(): Reference | Null = js.native
+    def parent: Reference | Null = js.native
     /**
       * @param {*=} value
       * @param {function(?Error)=} onComplete
@@ -71,7 +71,7 @@ object referenceMod extends js.Object {
       */
     def remove(): js.Promise[_] = js.native
     def remove(onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[_] = js.native
-    def root(): Reference = js.native
+    def root: Reference = js.native
     /**
       * @param {*} newVal
       * @param {function(?Error)=} onComplete

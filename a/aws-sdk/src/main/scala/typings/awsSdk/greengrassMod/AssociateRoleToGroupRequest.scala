@@ -20,7 +20,6 @@ object AssociateRoleToGroupRequest {
   @scala.inline
   def apply(GroupId: string, RoleArn: string): AssociateRoleToGroupRequest = {
     val __obj = js.Dynamic.literal(GroupId = GroupId.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssociateRoleToGroupRequest]
   }
 }

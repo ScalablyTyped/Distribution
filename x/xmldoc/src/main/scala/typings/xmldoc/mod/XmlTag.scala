@@ -13,7 +13,6 @@ object XmlTag {
   @scala.inline
   def apply(attributes: XmlAttributes, name: String): XmlTag = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[XmlTag]
   }
 }

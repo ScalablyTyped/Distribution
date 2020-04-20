@@ -12,7 +12,6 @@ object AnonStartEditing {
   @scala.inline
   def apply(startEditing: (Double, Double) => Unit): AnonStartEditing = {
     val __obj = js.Dynamic.literal(startEditing = js.Any.fromFunction2(startEditing))
-  
     __obj.asInstanceOf[AnonStartEditing]
   }
 }

@@ -13,7 +13,6 @@ object TemplateElement {
   @scala.inline
   def apply(element: String | Node): TemplateElement = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TemplateElement]
   }
 }

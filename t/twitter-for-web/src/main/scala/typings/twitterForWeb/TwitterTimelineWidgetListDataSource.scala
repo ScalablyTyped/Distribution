@@ -15,13 +15,11 @@ object TwitterTimelineWidgetListDataSource {
   @scala.inline
   def AnonOwnerScreenName(ownerScreenName: String, slug: String, sourceType: list): TwitterTimelineWidgetListDataSource = {
     val __obj = js.Dynamic.literal(ownerScreenName = ownerScreenName.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TwitterTimelineWidgetListDataSource]
   }
   @scala.inline
   def AnonId(id: String, sourceType: list): TwitterTimelineWidgetListDataSource = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TwitterTimelineWidgetListDataSource]
   }
 }

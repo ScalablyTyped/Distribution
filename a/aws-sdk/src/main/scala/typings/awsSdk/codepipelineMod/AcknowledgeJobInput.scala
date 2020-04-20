@@ -20,7 +20,6 @@ object AcknowledgeJobInput {
   @scala.inline
   def apply(jobId: JobId, nonce: Nonce): AcknowledgeJobInput = {
     val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AcknowledgeJobInput]
   }
 }

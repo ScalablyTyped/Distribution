@@ -13,7 +13,6 @@ object TypeofQuickSight {
   @scala.inline
   def apply(Types: TypeofQuickSight): TypeofQuickSight = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofQuickSight]
   }
 }

@@ -126,7 +126,7 @@ class PoseEnabledController protected ()
   /**
     * The mesh that is attached to the controller
     */
-  def mesh(): Nullable[AbstractMesh] = js.native
+  def mesh: Nullable[AbstractMesh] = js.native
   /**
     * Updates the poseControlled values based on the input device pose.
     * @param poseData the pose data to update the object with

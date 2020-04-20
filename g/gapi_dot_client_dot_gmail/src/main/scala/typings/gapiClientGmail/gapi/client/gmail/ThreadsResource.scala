@@ -34,7 +34,6 @@ object ThreadsResource {
     untrash: AnonFields => Request_[Thread]
   ): ThreadsResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), modify = js.Any.fromFunction1(modify), trash = js.Any.fromFunction1(trash), untrash = js.Any.fromFunction1(untrash))
-  
     __obj.asInstanceOf[ThreadsResource]
   }
 }

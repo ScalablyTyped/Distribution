@@ -1,5 +1,6 @@
 package typings.officeUiFabricReact.stackTypesMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.officeUiFabricReact.officeUiFabricReactStrings.inherit
 import typings.officeUiFabricReact.officeUiFabricReactStrings.initial
 import typings.officeUiFabricReact.officeUiFabricReactStrings.unset
@@ -337,7 +338,7 @@ object IStackProps {
     slot: String = null,
     slots: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof TSlots ]:? @uifabric/foundation.@uifabric/foundation/lib/ISlots.ISlotOptions<@uifabric/foundation.@uifabric/foundation/lib/ISlots.ExtractProps<TSlots[key]>>}
-    */ typings.uifabricFoundation.uifabricFoundationStrings.AnonSlots with IStackSlots = null,
+    */ typings.uifabricFoundation.uifabricFoundationStrings.AnonSlots with TopLevel[IStackSlots] = null,
     spellCheck: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
     styles: IStylesFunctionOrObject[IStackProps, IStackTokens, IStackStyles] = null,

@@ -20,7 +20,6 @@ object DisassociateCustomerGatewayRequest {
   @scala.inline
   def apply(CustomerGatewayArn: String, GlobalNetworkId: String): DisassociateCustomerGatewayRequest = {
     val __obj = js.Dynamic.literal(CustomerGatewayArn = CustomerGatewayArn.asInstanceOf[js.Any], GlobalNetworkId = GlobalNetworkId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisassociateCustomerGatewayRequest]
   }
 }

@@ -14,12 +14,10 @@ trait AppListType extends js.Object
 
 object AppListType {
   @scala.inline
-  def appsInListCompliant: typings.microsoftGraph.microsoftGraphStrings.appsInListCompliant = this.cast("appsInListCompliant")
+  def appsInListCompliant: typings.microsoftGraph.microsoftGraphStrings.appsInListCompliant = "appsInListCompliant".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.appsInListCompliant]
   @scala.inline
-  def appsNotInListCompliant: typings.microsoftGraph.microsoftGraphStrings.appsNotInListCompliant = this.cast("appsNotInListCompliant")
+  def appsNotInListCompliant: typings.microsoftGraph.microsoftGraphStrings.appsNotInListCompliant = "appsNotInListCompliant".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.appsNotInListCompliant]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def none: none_ = this.cast("none")
+  def none: none_ = "none".asInstanceOf[none_]
 }
 

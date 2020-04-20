@@ -13,7 +13,6 @@ object TopLevelPackageLocator {
   @scala.inline
   def apply(name: Null, reference: Null): TopLevelPackageLocator = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], reference = reference.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TopLevelPackageLocator]
   }
 }

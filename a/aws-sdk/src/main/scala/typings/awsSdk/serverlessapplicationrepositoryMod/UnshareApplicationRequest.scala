@@ -20,7 +20,6 @@ object UnshareApplicationRequest {
   @scala.inline
   def apply(ApplicationId: string, OrganizationId: string): UnshareApplicationRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], OrganizationId = OrganizationId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnshareApplicationRequest]
   }
 }

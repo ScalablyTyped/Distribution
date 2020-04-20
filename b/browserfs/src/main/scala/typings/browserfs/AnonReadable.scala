@@ -14,7 +14,6 @@ object AnonReadable {
   @scala.inline
   def apply(readable: FileSystem, writable: FileSystem): AnonReadable = {
     val __obj = js.Dynamic.literal(readable = readable.asInstanceOf[js.Any], writable = writable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonReadable]
   }
 }

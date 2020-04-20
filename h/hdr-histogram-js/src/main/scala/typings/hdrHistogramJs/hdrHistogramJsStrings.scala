@@ -15,7 +15,7 @@ object hdrHistogramJsStrings {
   sealed trait sparse_array extends js.Object
   
   @scala.inline
-  def `NO TAG`: `NO TAG` = "NO TAG".asInstanceOf[`NO TAG`]
+  def `NO TAG`: `NO TAG` = ("NO TAG").asInstanceOf[`NO TAG`]
   @scala.inline
   def packed: packed = "packed".asInstanceOf[packed]
   @scala.inline

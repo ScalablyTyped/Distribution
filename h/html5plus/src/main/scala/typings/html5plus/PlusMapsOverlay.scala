@@ -42,7 +42,6 @@ object PlusMapsOverlay {
   @scala.inline
   def apply(hide: () => Unit, isVisible: () => Boolean, show: () => Unit): PlusMapsOverlay = {
     val __obj = js.Dynamic.literal(hide = js.Any.fromFunction0(hide), isVisible = js.Any.fromFunction0(isVisible), show = js.Any.fromFunction0(show))
-  
     __obj.asInstanceOf[PlusMapsOverlay]
   }
 }

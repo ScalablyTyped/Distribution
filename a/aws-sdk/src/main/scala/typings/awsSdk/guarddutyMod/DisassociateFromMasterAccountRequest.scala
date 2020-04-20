@@ -16,7 +16,6 @@ object DisassociateFromMasterAccountRequest {
   @scala.inline
   def apply(DetectorId: DetectorId): DisassociateFromMasterAccountRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisassociateFromMasterAccountRequest]
   }
 }

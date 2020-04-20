@@ -36,7 +36,6 @@ object ReposAddProtectedBranchTeamRestrictionsResponseItem {
     url: String
   ): ReposAddProtectedBranchTeamRestrictionsResponseItem = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], members_url = members_url.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], permission = permission.asInstanceOf[js.Any], privacy = privacy.asInstanceOf[js.Any], repositories_url = repositories_url.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReposAddProtectedBranchTeamRestrictionsResponseItem]
   }
 }

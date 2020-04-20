@@ -16,12 +16,10 @@ trait XdConfirmButtons extends js.Object
 
 object XdConfirmButtons {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xdOKCancel: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xdOKCancel: `1` = this.cast(1)
+  def xdYesNo: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xdYesNo: `4` = this.cast(4)
-  @scala.inline
-  def xdYesNoCancel: `3` = this.cast(3)
+  def xdYesNoCancel: `3` = 3.asInstanceOf[`3`]
 }
 

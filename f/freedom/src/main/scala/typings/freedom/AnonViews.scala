@@ -13,7 +13,6 @@ object AnonViews {
   @scala.inline
   def apply(views: StringDictionary[js.Object]): AnonViews = {
     val __obj = js.Dynamic.literal(views = views.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonViews]
   }
 }

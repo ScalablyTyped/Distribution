@@ -12,7 +12,6 @@ object PatternParams {
   @scala.inline
   def apply(pattern: String): PatternParams = {
     val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PatternParams]
   }
 }

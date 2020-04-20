@@ -16,7 +16,6 @@ object LiveChatBansCollection {
   @scala.inline
   def apply(insert: (LiveChatBan, String) => LiveChatBan, remove: String => Unit): LiveChatBansCollection = {
     val __obj = js.Dynamic.literal(insert = js.Any.fromFunction2(insert), remove = js.Any.fromFunction1(remove))
-  
     __obj.asInstanceOf[LiveChatBansCollection]
   }
 }

@@ -12,7 +12,6 @@ object SignalResponse {
   @scala.inline
   def apply(timetoken: Double): SignalResponse = {
     val __obj = js.Dynamic.literal(timetoken = timetoken.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SignalResponse]
   }
 }

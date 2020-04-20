@@ -13,7 +13,6 @@ object CreateIndexOptions {
   @scala.inline
   def apply(index: AnonDdoc): CreateIndexOptions = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateIndexOptions]
   }
 }

@@ -12,7 +12,6 @@ object AnonFlexibleExpansionRatio {
   @scala.inline
   def apply(flexibleExpansionRatio: Double): AnonFlexibleExpansionRatio = {
     val __obj = js.Dynamic.literal(flexibleExpansionRatio = flexibleExpansionRatio.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFlexibleExpansionRatio]
   }
 }

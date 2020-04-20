@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactNativeAwesomeCardIoComponents extends reactNativeAwesomeCardIoProps {
   @scala.inline
-  def CardIOView: ComponentType[CardIOViewProps] = js.constructorOf[typings.reactNativeAwesomeCardIo.mod.CardIOView].asInstanceOf[typings.react.mod.ComponentType[CardIOViewProps]]
+  def CardIOView: ComponentType[CardIOViewProps] = js.constructorOf[typings.reactNativeAwesomeCardIo.mod.CardIOView].asInstanceOf[ComponentType[CardIOViewProps]]
 }
 

@@ -18,7 +18,6 @@ object ITunesParameters {
     setProviderToken: String => DynamicLink
   ): ITunesParameters = {
     val __obj = js.Dynamic.literal(setAffiliateToken = js.Any.fromFunction1(setAffiliateToken), setCampaignToken = js.Any.fromFunction1(setCampaignToken), setProviderToken = js.Any.fromFunction1(setProviderToken))
-  
     __obj.asInstanceOf[ITunesParameters]
   }
 }

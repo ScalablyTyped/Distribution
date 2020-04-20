@@ -20,7 +20,6 @@ object CacheRules {
     default: String
   ): CacheRules = {
     val __obj = js.Dynamic.literal(cacheAlways = cacheAlways.asInstanceOf[js.Any], cacheMaxAge = cacheMaxAge.asInstanceOf[js.Any], cacheNever = cacheNever.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CacheRules]
   }
 }

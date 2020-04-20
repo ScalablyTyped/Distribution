@@ -16,7 +16,6 @@ object AssociateAdminAccountRequest {
   @scala.inline
   def apply(AdminAccount: AWSAccountId): AssociateAdminAccountRequest = {
     val __obj = js.Dynamic.literal(AdminAccount = AdminAccount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssociateAdminAccountRequest]
   }
 }

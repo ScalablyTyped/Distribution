@@ -17,7 +17,6 @@ object NfsLocationOnPremConfig {
   @scala.inline
   def apply(agentArns: Input[js.Array[Input[String]]]): NfsLocationOnPremConfig = {
     val __obj = js.Dynamic.literal(agentArns = agentArns.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NfsLocationOnPremConfig]
   }
 }

@@ -15,16 +15,14 @@ trait IssuingCardStatus extends js.Object
 
 object IssuingCardStatus {
   @scala.inline
-  def active: typings.stripe.stripeStrings.active = this.cast("active")
+  def active: typings.stripe.stripeStrings.active = "active".asInstanceOf[typings.stripe.stripeStrings.active]
   @scala.inline
-  def canceled: typings.stripe.stripeStrings.canceled = this.cast("canceled")
+  def canceled: typings.stripe.stripeStrings.canceled = "canceled".asInstanceOf[typings.stripe.stripeStrings.canceled]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def inactive: typings.stripe.stripeStrings.inactive = "inactive".asInstanceOf[typings.stripe.stripeStrings.inactive]
   @scala.inline
-  def inactive: typings.stripe.stripeStrings.inactive = this.cast("inactive")
+  def lost: typings.stripe.stripeStrings.lost = "lost".asInstanceOf[typings.stripe.stripeStrings.lost]
   @scala.inline
-  def lost: typings.stripe.stripeStrings.lost = this.cast("lost")
-  @scala.inline
-  def stolen: typings.stripe.stripeStrings.stolen = this.cast("stolen")
+  def stolen: typings.stripe.stripeStrings.stolen = "stolen".asInstanceOf[typings.stripe.stripeStrings.stolen]
 }
 

@@ -21,6 +21,6 @@ object mod extends js.Object {
     * This method normalizes a modelName into the format Ember Data uses
     * internally.
     */
-  def normalizeModelName[K /* <: String */](modelName: K): String = js.native
+  def normalizeModelName[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K): String = js.native
 }
 

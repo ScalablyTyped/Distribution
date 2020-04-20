@@ -21,7 +21,6 @@ object Router {
     getStateForActionOriginal: (js.Object, Nullable[TState]) => Nullable[TState]
   ): Router[TState] = {
     val __obj = js.Dynamic.literal(getActionForPathAndParams = js.Any.fromFunction1(getActionForPathAndParams), getPathAndParamsForState = js.Any.fromFunction1(getPathAndParamsForState), getStateForAction = js.Any.fromFunction2(getStateForAction), getStateForActionOriginal = js.Any.fromFunction2(getStateForActionOriginal))
-  
     __obj.asInstanceOf[Router[TState]]
   }
 }

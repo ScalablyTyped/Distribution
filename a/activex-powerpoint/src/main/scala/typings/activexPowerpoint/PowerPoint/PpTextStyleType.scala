@@ -16,12 +16,10 @@ trait PpTextStyleType extends js.Object
 
 object PpTextStyleType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ppBodyStyle: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def ppBodyStyle: `3` = this.cast(3)
+  def ppDefaultStyle: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def ppDefaultStyle: `1` = this.cast(1)
-  @scala.inline
-  def ppTitleStyle: `2` = this.cast(2)
+  def ppTitleStyle: `2` = 2.asInstanceOf[`2`]
 }
 

@@ -68,64 +68,62 @@ trait WdNoteNumberStyle extends js.Object
 
 object WdNoteNumberStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdNoteNumberStyleArabic: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdNoteNumberStyleArabic: `0` = this.cast(0)
+  def wdNoteNumberStyleArabicFullWidth: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def wdNoteNumberStyleArabicFullWidth: `14` = this.cast(14)
+  def wdNoteNumberStyleArabicLetter1: `46` = 46.asInstanceOf[`46`]
   @scala.inline
-  def wdNoteNumberStyleArabicLetter1: `46` = this.cast(46)
+  def wdNoteNumberStyleArabicLetter2: `48` = 48.asInstanceOf[`48`]
   @scala.inline
-  def wdNoteNumberStyleArabicLetter2: `48` = this.cast(48)
+  def wdNoteNumberStyleHanjaRead: `41` = 41.asInstanceOf[`41`]
   @scala.inline
-  def wdNoteNumberStyleHanjaRead: `41` = this.cast(41)
+  def wdNoteNumberStyleHanjaReadDigit: `42` = 42.asInstanceOf[`42`]
   @scala.inline
-  def wdNoteNumberStyleHanjaReadDigit: `42` = this.cast(42)
+  def wdNoteNumberStyleHebrewLetter1: `45` = 45.asInstanceOf[`45`]
   @scala.inline
-  def wdNoteNumberStyleHebrewLetter1: `45` = this.cast(45)
+  def wdNoteNumberStyleHebrewLetter2: `47` = 47.asInstanceOf[`47`]
   @scala.inline
-  def wdNoteNumberStyleHebrewLetter2: `47` = this.cast(47)
+  def wdNoteNumberStyleHindiArabic: `51` = 51.asInstanceOf[`51`]
   @scala.inline
-  def wdNoteNumberStyleHindiArabic: `51` = this.cast(51)
+  def wdNoteNumberStyleHindiCardinalText: `52` = 52.asInstanceOf[`52`]
   @scala.inline
-  def wdNoteNumberStyleHindiCardinalText: `52` = this.cast(52)
+  def wdNoteNumberStyleHindiLetter1: `49` = 49.asInstanceOf[`49`]
   @scala.inline
-  def wdNoteNumberStyleHindiLetter1: `49` = this.cast(49)
+  def wdNoteNumberStyleHindiLetter2: `50` = 50.asInstanceOf[`50`]
   @scala.inline
-  def wdNoteNumberStyleHindiLetter2: `50` = this.cast(50)
+  def wdNoteNumberStyleKanji: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def wdNoteNumberStyleKanji: `10` = this.cast(10)
+  def wdNoteNumberStyleKanjiDigit: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def wdNoteNumberStyleKanjiDigit: `11` = this.cast(11)
+  def wdNoteNumberStyleKanjiTraditional: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def wdNoteNumberStyleKanjiTraditional: `16` = this.cast(16)
+  def wdNoteNumberStyleLowercaseLetter: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdNoteNumberStyleLowercaseLetter: `4` = this.cast(4)
+  def wdNoteNumberStyleLowercaseRoman: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdNoteNumberStyleLowercaseRoman: `2` = this.cast(2)
+  def wdNoteNumberStyleNumberInCircle: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def wdNoteNumberStyleNumberInCircle: `18` = this.cast(18)
+  def wdNoteNumberStyleSimpChinNum1: `37` = 37.asInstanceOf[`37`]
   @scala.inline
-  def wdNoteNumberStyleSimpChinNum1: `37` = this.cast(37)
+  def wdNoteNumberStyleSimpChinNum2: `38` = 38.asInstanceOf[`38`]
   @scala.inline
-  def wdNoteNumberStyleSimpChinNum2: `38` = this.cast(38)
+  def wdNoteNumberStyleSymbol: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def wdNoteNumberStyleSymbol: `9` = this.cast(9)
+  def wdNoteNumberStyleThaiArabic: `54` = 54.asInstanceOf[`54`]
   @scala.inline
-  def wdNoteNumberStyleThaiArabic: `54` = this.cast(54)
+  def wdNoteNumberStyleThaiCardinalText: `55` = 55.asInstanceOf[`55`]
   @scala.inline
-  def wdNoteNumberStyleThaiCardinalText: `55` = this.cast(55)
+  def wdNoteNumberStyleThaiLetter: `53` = 53.asInstanceOf[`53`]
   @scala.inline
-  def wdNoteNumberStyleThaiLetter: `53` = this.cast(53)
+  def wdNoteNumberStyleTradChinNum1: `33` = 33.asInstanceOf[`33`]
   @scala.inline
-  def wdNoteNumberStyleTradChinNum1: `33` = this.cast(33)
+  def wdNoteNumberStyleTradChinNum2: `34` = 34.asInstanceOf[`34`]
   @scala.inline
-  def wdNoteNumberStyleTradChinNum2: `34` = this.cast(34)
+  def wdNoteNumberStyleUppercaseLetter: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdNoteNumberStyleUppercaseLetter: `3` = this.cast(3)
+  def wdNoteNumberStyleUppercaseRoman: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdNoteNumberStyleUppercaseRoman: `1` = this.cast(1)
-  @scala.inline
-  def wdNoteNumberStyleVietCardinalText: `56` = this.cast(56)
+  def wdNoteNumberStyleVietCardinalText: `56` = 56.asInstanceOf[`56`]
 }
 

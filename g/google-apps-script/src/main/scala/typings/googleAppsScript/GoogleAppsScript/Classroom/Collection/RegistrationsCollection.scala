@@ -42,7 +42,6 @@ object RegistrationsCollection {
   @scala.inline
   def apply(create: Registration => Registration, remove: String => Unit): RegistrationsCollection = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), remove = js.Any.fromFunction1(remove))
-  
     __obj.asInstanceOf[RegistrationsCollection]
   }
 }

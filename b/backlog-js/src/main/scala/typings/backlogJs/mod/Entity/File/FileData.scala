@@ -16,7 +16,6 @@ object FileData {
   @scala.inline
   def NodeFileData(body: PassThrough, filename: String, url: String): FileData = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FileData]
   }
   @scala.inline

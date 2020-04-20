@@ -28,7 +28,6 @@ object SkTextStyle {
     foregroundColor: SkColor
   ): SkTextStyle = {
     val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], decoration = decoration.asInstanceOf[js.Any], decorationThickness = decorationThickness.asInstanceOf[js.Any], fontFamilies = fontFamilies.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontStyle = fontStyle.asInstanceOf[js.Any], foregroundColor = foregroundColor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SkTextStyle]
   }
 }

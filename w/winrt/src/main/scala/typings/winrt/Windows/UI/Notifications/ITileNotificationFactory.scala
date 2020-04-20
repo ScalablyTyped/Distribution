@@ -13,7 +13,6 @@ object ITileNotificationFactory {
   @scala.inline
   def apply(createTileNotification: XmlDocument => TileNotification): ITileNotificationFactory = {
     val __obj = js.Dynamic.literal(createTileNotification = js.Any.fromFunction1(createTileNotification))
-  
     __obj.asInstanceOf[ITileNotificationFactory]
   }
 }

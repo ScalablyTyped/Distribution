@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeSwiperProps {
   @scala.inline
-  def ReactNativeSwiperProps: SwiperProperties.type = typings.reactNativeSwiper.mod.SwiperProperties
+  def ReactNativeSwiperProps: SwiperProperties.type = SwiperProperties
   type ReactNativeSwiperProps = SwiperProperties
 }
 

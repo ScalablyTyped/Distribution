@@ -19,6 +19,10 @@ trait UpdateJobTemplateRequest extends js.Object {
     */
   var Description: js.UndefOr[string] = js.native
   /**
+    * Optional list of hop destinations.
+    */
+  var HopDestinations: js.UndefOr[listOfHopDestination] = js.native
+  /**
     * The name of the job template you are modifying
     */
   var Name: string = js.native
@@ -47,6 +51,7 @@ object UpdateJobTemplateRequest {
     AccelerationSettings: AccelerationSettings = null,
     Category: string = null,
     Description: string = null,
+    HopDestinations: listOfHopDestination = null,
     Priority: Int | Double = null,
     Queue: string = null,
     Settings: JobTemplateSettings = null,
@@ -56,6 +61,7 @@ object UpdateJobTemplateRequest {
     if (AccelerationSettings != null) __obj.updateDynamic("AccelerationSettings")(AccelerationSettings.asInstanceOf[js.Any])
     if (Category != null) __obj.updateDynamic("Category")(Category.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (HopDestinations != null) __obj.updateDynamic("HopDestinations")(HopDestinations.asInstanceOf[js.Any])
     if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
     if (Queue != null) __obj.updateDynamic("Queue")(Queue.asInstanceOf[js.Any])
     if (Settings != null) __obj.updateDynamic("Settings")(Settings.asInstanceOf[js.Any])

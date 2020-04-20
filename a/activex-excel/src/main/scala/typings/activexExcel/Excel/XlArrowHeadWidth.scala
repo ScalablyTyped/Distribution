@@ -16,12 +16,10 @@ trait XlArrowHeadWidth extends js.Object
 
 object XlArrowHeadWidth {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlArrowHeadWidthMedium: `-4138` = -4138.asInstanceOf[`-4138`]
   @scala.inline
-  def xlArrowHeadWidthMedium: `-4138` = this.cast(-4138)
+  def xlArrowHeadWidthNarrow: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlArrowHeadWidthNarrow: `1` = this.cast(1)
-  @scala.inline
-  def xlArrowHeadWidthWide: `3` = this.cast(3)
+  def xlArrowHeadWidthWide: `3` = 3.asInstanceOf[`3`]
 }
 

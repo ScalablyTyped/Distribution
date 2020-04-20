@@ -13,7 +13,6 @@ object AnonCascader {
   @scala.inline
   def apply(cascader: Element): AnonCascader = {
     val __obj = js.Dynamic.literal(cascader = cascader.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCascader]
   }
 }

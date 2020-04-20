@@ -31,7 +31,6 @@ object Modules {
     Shh: Instantiable2[/* provider */ provider, /* net */ Socket, Shh]
   ): Modules = {
     val __obj = js.Dynamic.literal(Bzz = Bzz.asInstanceOf[js.Any], Eth = Eth.asInstanceOf[js.Any], Net = Net.asInstanceOf[js.Any], Personal = Personal.asInstanceOf[js.Any], Shh = Shh.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Modules]
   }
 }

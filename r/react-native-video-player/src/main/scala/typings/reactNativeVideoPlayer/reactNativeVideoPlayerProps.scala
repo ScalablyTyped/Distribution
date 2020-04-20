@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeVideoPlayerProps {
   @scala.inline
-  def ReactNativeVideoPlayerProps: VideoPlayerProps.type = typings.reactNativeVideoPlayer.mod.VideoPlayerProps
+  def ReactNativeVideoPlayerProps: VideoPlayerProps.type = VideoPlayerProps
   type ReactNativeVideoPlayerProps = VideoPlayerProps
 }
 

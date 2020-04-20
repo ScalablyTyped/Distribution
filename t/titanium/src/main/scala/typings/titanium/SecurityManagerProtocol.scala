@@ -35,7 +35,6 @@ object SecurityManagerProtocol {
     willHandleURL: js.Any => Boolean
   ): SecurityManagerProtocol = {
     val __obj = js.Dynamic.literal(connectionDelegateForUrl = js.Any.fromFunction1(connectionDelegateForUrl), getKeyManagers = js.Any.fromFunction1(getKeyManagers), getTrustManagers = js.Any.fromFunction1(getTrustManagers), willHandleURL = js.Any.fromFunction1(willHandleURL))
-  
     __obj.asInstanceOf[SecurityManagerProtocol]
   }
 }

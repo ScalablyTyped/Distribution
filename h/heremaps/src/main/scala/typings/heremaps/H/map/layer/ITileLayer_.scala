@@ -48,7 +48,6 @@ object ITileLayer_ {
     requestTiles: (Rect, Double, Boolean, Point) => Response
   ): ITileLayer_ = {
     val __obj = js.Dynamic.literal(cancelTile = js.Any.fromFunction3(cancelTile), requestTile = js.Any.fromFunction4(requestTile), requestTiles = js.Any.fromFunction4(requestTiles))
-  
     __obj.asInstanceOf[ITileLayer_]
   }
 }

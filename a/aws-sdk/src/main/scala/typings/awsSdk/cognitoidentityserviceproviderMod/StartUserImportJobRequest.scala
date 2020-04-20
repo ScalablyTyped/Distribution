@@ -20,7 +20,6 @@ object StartUserImportJobRequest {
   @scala.inline
   def apply(JobId: UserImportJobIdType, UserPoolId: UserPoolIdType): StartUserImportJobRequest = {
     val __obj = js.Dynamic.literal(JobId = JobId.asInstanceOf[js.Any], UserPoolId = UserPoolId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StartUserImportJobRequest]
   }
 }

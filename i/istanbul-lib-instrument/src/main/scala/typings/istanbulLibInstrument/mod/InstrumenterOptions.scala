@@ -28,7 +28,6 @@ object InstrumenterOptions {
     sourceMapUrlCallback: (String, String) => Unit
   ): InstrumenterOptions = {
     val __obj = js.Dynamic.literal(autoWrap = autoWrap.asInstanceOf[js.Any], compact = compact.asInstanceOf[js.Any], coverageVariable = coverageVariable.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], esModules = esModules.asInstanceOf[js.Any], preserveComments = preserveComments.asInstanceOf[js.Any], produceSourceMap = produceSourceMap.asInstanceOf[js.Any], sourceMapUrlCallback = js.Any.fromFunction2(sourceMapUrlCallback))
-  
     __obj.asInstanceOf[InstrumenterOptions]
   }
 }

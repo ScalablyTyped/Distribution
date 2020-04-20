@@ -52,7 +52,6 @@ object HeaderFooter {
     oddHeader: String
   ): HeaderFooter = {
     val __obj = js.Dynamic.literal(differentFirst = differentFirst.asInstanceOf[js.Any], differentOddEven = differentOddEven.asInstanceOf[js.Any], evenFooter = evenFooter.asInstanceOf[js.Any], evenHeader = evenHeader.asInstanceOf[js.Any], firstFooter = firstFooter.asInstanceOf[js.Any], firstHeader = firstHeader.asInstanceOf[js.Any], oddFooter = oddFooter.asInstanceOf[js.Any], oddHeader = oddHeader.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HeaderFooter]
   }
 }

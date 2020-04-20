@@ -13,12 +13,10 @@ trait RequestMode extends js.Object
 
 object RequestMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cors: typings.nodeFetch.nodeFetchStrings.cors = "cors".asInstanceOf[typings.nodeFetch.nodeFetchStrings.cors]
   @scala.inline
-  def cors: typings.nodeFetch.nodeFetchStrings.cors = this.cast("cors")
+  def `no-cors`: typings.nodeFetch.nodeFetchStrings.`no-cors` = "no-cors".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`no-cors`]
   @scala.inline
-  def `no-cors`: typings.nodeFetch.nodeFetchStrings.`no-cors` = this.cast("no-cors")
-  @scala.inline
-  def `same-origin`: typings.nodeFetch.nodeFetchStrings.`same-origin` = this.cast("same-origin")
+  def `same-origin`: typings.nodeFetch.nodeFetchStrings.`same-origin` = "same-origin".asInstanceOf[typings.nodeFetch.nodeFetchStrings.`same-origin`]
 }
 

@@ -152,7 +152,7 @@ package object std {
   /**
     * Construct a type with the properties of T except for those in type K.
     */
-  type Omit[T, K /* <: java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[java.lang.String, K]]
+  type Omit[T, K /* <: /* keyof any */ java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
   /**
     * Removes the 'this' parameter from a function type.
     */
@@ -183,7 +183,7 @@ package object std {
     */
   type Partial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? T[P]}
-    */ typings.std.stdStrings.Partial with T
+    */ typings.std.stdStrings.Partial with org.scalablytyped.runtime.TopLevel[T]
   type PaymentRequestUpdateEventInit = typings.std.EventInit
   type PerformanceEntryList = js.Array[typings.std.PerformanceEntry]
   /** PerformanceMark is an abstract interface for PerformanceEntry objects with an entryType of "mark". Entries of this type are created by calling performance.mark() to add a named DOMHighResTimeStamp (the mark) to the browser's performance timeline. */
@@ -198,9 +198,9 @@ package object std {
   /**
     * From T, pick a set of properties whose keys are in the union K
     */
-  type Pick[T, K /* <: java.lang.String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  type Pick[T, K /* <: /* keyof T */ java.lang.String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in K ]: T[P]}
-    */ typings.std.stdStrings.Pick with T
+    */ typings.std.stdStrings.Pick with org.scalablytyped.runtime.TopLevel[T]
   type PositionCallback = js.Function1[/* position */ typings.std.Position, scala.Unit]
   type PositionErrorCallback = js.Function1[/* positionError */ typings.std.PositionError, scala.Unit]
   type PromiseConstructorLike = org.scalablytyped.runtime.Instantiable1[
@@ -236,11 +236,11 @@ package object std {
     */
   type Readonly[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ P in keyof T ]: T[P]}
-    */ typings.std.stdStrings.Readonly with T
+    */ typings.std.stdStrings.Readonly with org.scalablytyped.runtime.TopLevel[T]
   /**
     * Construct a type with a set of properties K of type T
     */
-  type Record[K /* <: java.lang.String */, T] = org.scalablytyped.runtime.StringDictionary[T]
+  type Record[K /* <: /* keyof any */ java.lang.String */, T] = org.scalablytyped.runtime.StringDictionary[T]
   type ReferenceError = typings.std.Error
   type RequestInfo = typings.std.Request | java.lang.String
   /**
@@ -248,7 +248,7 @@ package object std {
     */
   type Required[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: -? T[P]}
-    */ typings.std.stdStrings.Required with T
+    */ typings.std.stdStrings.Required with org.scalablytyped.runtime.TopLevel[T]
   /**
     * Obtain the return type of a function type
     */

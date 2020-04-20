@@ -41,7 +41,6 @@ object EndpointSubset {
     ports: js.Array[EndpointPort]
   ): EndpointSubset = {
     val __obj = js.Dynamic.literal(addresses = addresses.asInstanceOf[js.Any], notReadyAddresses = notReadyAddresses.asInstanceOf[js.Any], ports = ports.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EndpointSubset]
   }
 }

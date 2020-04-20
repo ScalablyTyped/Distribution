@@ -27,7 +27,6 @@ object IncrementalDataPlaceholder {
     typeName: String
   ): IncrementalDataPlaceholder = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], typeName = typeName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IncrementalDataPlaceholder]
   }
   @scala.inline
@@ -40,7 +39,6 @@ object IncrementalDataPlaceholder {
     variables: Variables
   ): IncrementalDataPlaceholder = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], parentID = parentID.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IncrementalDataPlaceholder]
   }
 }

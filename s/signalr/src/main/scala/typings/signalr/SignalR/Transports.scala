@@ -20,7 +20,6 @@ object Transports {
     webSockets: Transport
   ): Transports = {
     val __obj = js.Dynamic.literal(foreverFrame = foreverFrame.asInstanceOf[js.Any], longPolling = longPolling.asInstanceOf[js.Any], serverSentEvents = serverSentEvents.asInstanceOf[js.Any], webSockets = webSockets.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Transports]
   }
 }

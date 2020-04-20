@@ -48,11 +48,11 @@ object enumerationsMod extends js.Object {
       ) = this()
       @JSName("model")
       var model_FCondition: IModel = js.native
-      def attributeValue(): String = js.native
+      def attributeValue: String = js.native
       def attributeValue(newValue: String): js.Any = js.native
-      def containerAsConditionSettings(): ConditionSettings = js.native
-      def containerAsConditionalSettings(): ConditionalSettings = js.native
-      def editableVisible(): Boolean = js.native
+      def containerAsConditionSettings: ConditionSettings = js.native
+      def containerAsConditionalSettings: ConditionalSettings = js.native
+      def editableVisible: Boolean = js.native
       def editableVisible(newValue: Boolean): js.Any = js.native
     }
     
@@ -81,8 +81,8 @@ object enumerationsMod extends js.Object {
       @JSName("values")
       val values_FEnumeration: IList[IEnumerationValue] = js.native
       @JSName("containerAsFolderBase")
-      def containerAsFolderBase_MEnumeration(): FolderBase = js.native
-      def values(): IList[EnumerationValue] = js.native
+      def containerAsFolderBase_MEnumeration: FolderBase = js.native
+      def values: IList[EnumerationValue] = js.native
     }
     
     /**
@@ -118,18 +118,18 @@ object enumerationsMod extends js.Object {
         */
       /* CompleteClass */
       override val qualifiedName: String | Null = js.native
-      def caption(): Text = js.native
+      def caption: Text = js.native
       def caption(newValue: Text): js.Any = js.native
-      def containerAsEnumeration(): Enumeration = js.native
+      def containerAsEnumeration: Enumeration = js.native
       def image(): js.Any = js.native
       def image(newValue: IImage): js.Any = js.native
-      def imageQualifiedName(): String | Null = js.native
+      def imageQualifiedName: String | Null = js.native
       @JSName("image")
-      def image_Union(): IImage | Null = js.native
-      def name(): String = js.native
+      def image_Union: IImage | Null = js.native
+      def name: String = js.native
       def name(newValue: String): js.Any = js.native
       @JSName("qualifiedName")
-      def qualifiedName_MEnumerationValue(): String | Null = js.native
+      def qualifiedName_MEnumerationValue: String | Null = js.native
     }
     
     /**

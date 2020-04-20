@@ -20,7 +20,6 @@ object MetricDefinition {
   @scala.inline
   def apply(Name: MetricName, Regex: MetricRegex): MetricDefinition = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Regex = Regex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MetricDefinition]
   }
 }

@@ -18,14 +18,12 @@ trait OlBodyFormat extends js.Object
 
 object OlBodyFormat {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olFormatHTML: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olFormatHTML: `2` = this.cast(2)
+  def olFormatPlain: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olFormatPlain: `1` = this.cast(1)
+  def olFormatRichText: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def olFormatRichText: `3` = this.cast(3)
-  @scala.inline
-  def olFormatUnspecified: `0` = this.cast(0)
+  def olFormatUnspecified: `0` = 0.asInstanceOf[`0`]
 }
 

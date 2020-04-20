@@ -17,7 +17,6 @@ object EventSourceMappingDestinationConfigOnFailure {
   @scala.inline
   def apply(destinationArn: Input[String]): EventSourceMappingDestinationConfigOnFailure = {
     val __obj = js.Dynamic.literal(destinationArn = destinationArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventSourceMappingDestinationConfigOnFailure]
   }
 }

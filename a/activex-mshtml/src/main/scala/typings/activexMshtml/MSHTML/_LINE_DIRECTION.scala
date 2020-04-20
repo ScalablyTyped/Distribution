@@ -16,12 +16,10 @@ trait _LINE_DIRECTION extends js.Object
 
 object _LINE_DIRECTION {
   @scala.inline
-  def LINE_DIRECTION_LeftToRight: `2` = this.cast(2)
+  def LINE_DIRECTION_LeftToRight: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def LINE_DIRECTION_Max: `2147483647` = this.cast(2147483647)
+  def LINE_DIRECTION_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
   @scala.inline
-  def LINE_DIRECTION_RightToLeft: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def LINE_DIRECTION_RightToLeft: `1` = 1.asInstanceOf[`1`]
 }
 

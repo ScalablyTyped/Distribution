@@ -16,7 +16,6 @@ object ITextFieldSubComponentStyles {
   @scala.inline
   def apply(label: IStyleFunctionOrObject[_, _]): ITextFieldSubComponentStyles = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ITextFieldSubComponentStyles]
   }
 }

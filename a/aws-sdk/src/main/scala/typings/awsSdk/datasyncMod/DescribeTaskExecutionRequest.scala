@@ -16,7 +16,6 @@ object DescribeTaskExecutionRequest {
   @scala.inline
   def apply(TaskExecutionArn: TaskExecutionArn): DescribeTaskExecutionRequest = {
     val __obj = js.Dynamic.literal(TaskExecutionArn = TaskExecutionArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeTaskExecutionRequest]
   }
 }

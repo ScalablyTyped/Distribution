@@ -13,7 +13,6 @@ object OnVolumeChangeParam {
   @scala.inline
   def apply(muted: Boolean, volume: Double): OnVolumeChangeParam = {
     val __obj = js.Dynamic.literal(muted = muted.asInstanceOf[js.Any], volume = volume.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnVolumeChangeParam]
   }
 }

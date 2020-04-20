@@ -25,7 +25,6 @@ object ICursorStateComputerData {
     getTrackedSelection: String => Selection
   ): ICursorStateComputerData = {
     val __obj = js.Dynamic.literal(getInverseEditOperations = js.Any.fromFunction0(getInverseEditOperations), getTrackedSelection = js.Any.fromFunction1(getTrackedSelection))
-  
     __obj.asInstanceOf[ICursorStateComputerData]
   }
 }

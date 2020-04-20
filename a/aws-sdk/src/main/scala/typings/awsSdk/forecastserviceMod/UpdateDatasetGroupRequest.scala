@@ -20,7 +20,6 @@ object UpdateDatasetGroupRequest {
   @scala.inline
   def apply(DatasetArns: ArnList, DatasetGroupArn: Arn): UpdateDatasetGroupRequest = {
     val __obj = js.Dynamic.literal(DatasetArns = DatasetArns.asInstanceOf[js.Any], DatasetGroupArn = DatasetGroupArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateDatasetGroupRequest]
   }
 }

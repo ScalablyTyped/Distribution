@@ -80,6 +80,8 @@ class Tabulator_ protected () extends js.Object {
   def addRow(data: js.Object): js.Promise[RowComponent] = js.native
   def addRow(data: js.Object, addToTop: Boolean): js.Promise[RowComponent] = js.native
   def addRow(data: js.Object, addToTop: Boolean, positionTarget: RowLookup): js.Promise[RowComponent] = js.native
+  /** Prevent actions from riggering an update of the Virtual DOM: */
+  def blockRedraw(): Unit = js.native
   /** You can remove all data from the table using clearData */
   def clearData(): Unit = js.native
   /** To remove all filters from the table, use the clearFilter function. */
@@ -351,6 +353,8 @@ class Tabulator_ protected () extends js.Object {
   def replaceData(data: js.Array[js.Object]): js.Promise[Unit] = js.native
   def replaceData(data: js.Array[js.Object], params: js.Any): js.Promise[Unit] = js.native
   def replaceData(data: js.Array[js.Object], params: js.Any, config: js.Any): js.Promise[Unit] = js.native
+  /** This will restore automatic table redrawing and trigger an appropriate redraw if one was needed as a result of any actions that happened while the redraw was blocked. */
+  def restoreRedraw(): Unit = js.native
   /** If you want to trigger an animated scroll to a column then you can use the scrollToColumn function. The first argument should be any of the standard column component look up options for the column you want to scroll to.
     The second argument is optional, and is used to set the position of the column, it should be a string with a value of either left, middle or right, if omitted it will be set to the value of the scrollToColumnPosition option which has a default value of left.
     The third argument is optional, and is a boolean used to set if the table should scroll if the column is already visible, true to scroll, false to not, if omitted it will be set to the value of the scrollToColumnIfVisible option, which defaults to true
@@ -450,6 +454,7 @@ class Tabulator_ protected () extends js.Object {
   def setHeaderFilterFocus(column: ColumnLookup): Unit = js.native
   /** You can programatically set the header filter value of a column by calling the setHeaderFilterValue function, This function takes any of the standard column component look up options as its first parameter, with the value for the header filter as the second option */
   def setHeaderFilterValue(column: ColumnLookup, value: String): Unit = js.native
+  def setHeight(height: String): Unit = js.native
   /** If you want to manually change the height of the table at any time, you can use the setHeight function, which will also redraw the virtual DOM if necessary. */
   def setHeight(height: Double): Unit = js.native
   /** You can also set the language at any point after the table has loaded using the setLocale function, which takes the same range of values as the locale setup option mentioned above. */

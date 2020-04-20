@@ -12,7 +12,6 @@ object Exp {
   @scala.inline
   def apply(complete: js.Any => js.Any): Exp = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction1(complete))
-  
     __obj.asInstanceOf[Exp]
   }
 }

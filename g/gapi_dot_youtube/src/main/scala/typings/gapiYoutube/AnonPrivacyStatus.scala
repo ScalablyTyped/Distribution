@@ -15,7 +15,6 @@ object AnonPrivacyStatus {
   @scala.inline
   def apply(privacyStatus: String): AnonPrivacyStatus = {
     val __obj = js.Dynamic.literal(privacyStatus = privacyStatus.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPrivacyStatus]
   }
 }

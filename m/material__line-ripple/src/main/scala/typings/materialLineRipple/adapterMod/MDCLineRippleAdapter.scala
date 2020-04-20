@@ -40,7 +40,6 @@ object MDCLineRippleAdapter {
     setStyle: (String, String) => Unit
   ): MDCLineRippleAdapter = {
     val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), deregisterEventHandler = js.Any.fromFunction2(deregisterEventHandler), hasClass = js.Any.fromFunction1(hasClass), registerEventHandler = js.Any.fromFunction2(registerEventHandler), removeClass = js.Any.fromFunction1(removeClass), setStyle = js.Any.fromFunction2(setStyle))
-  
     __obj.asInstanceOf[MDCLineRippleAdapter]
   }
 }

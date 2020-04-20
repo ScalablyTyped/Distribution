@@ -22,18 +22,16 @@ trait MsoSignatureSubset extends js.Object
 
 object MsoSignatureSubset {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoSignatureSubsetAll: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def msoSignatureSubsetAll: `5` = this.cast(5)
+  def msoSignatureSubsetSignatureLines: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoSignatureSubsetSignatureLines: `2` = this.cast(2)
+  def msoSignatureSubsetSignatureLinesSigned: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoSignatureSubsetSignatureLinesSigned: `3` = this.cast(3)
+  def msoSignatureSubsetSignatureLinesUnsigned: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoSignatureSubsetSignatureLinesUnsigned: `4` = this.cast(4)
+  def msoSignatureSubsetSignaturesAllSigs: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def msoSignatureSubsetSignaturesAllSigs: `0` = this.cast(0)
-  @scala.inline
-  def msoSignatureSubsetSignaturesNonVisible: `1` = this.cast(1)
+  def msoSignatureSubsetSignaturesNonVisible: `1` = 1.asInstanceOf[`1`]
 }
 

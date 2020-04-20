@@ -19,7 +19,6 @@ object IRejectReason {
   @scala.inline
   def apply(reason: fraud | terms_of_service | other): IRejectReason = {
     val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IRejectReason]
   }
 }

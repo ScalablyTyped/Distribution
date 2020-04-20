@@ -72,68 +72,66 @@ trait styleDisplay extends js.Object
 
 object styleDisplay {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleDisplayBlock: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleDisplayBlock: `1` = this.cast(1)
+  def styleDisplayFlex: `26` = 26.asInstanceOf[`26`]
   @scala.inline
-  def styleDisplayFlex: `26` = this.cast(26)
+  def styleDisplayInline: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleDisplayInline: `2` = this.cast(2)
+  def styleDisplayInlineBlock: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def styleDisplayInlineBlock: `7` = this.cast(7)
+  def styleDisplayInlineFlex: `27` = 27.asInstanceOf[`27`]
   @scala.inline
-  def styleDisplayInlineFlex: `27` = this.cast(27)
+  def styleDisplayInlineTable: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def styleDisplayInlineTable: `9` = this.cast(9)
+  def styleDisplayListItem: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def styleDisplayListItem: `3` = this.cast(3)
+  def styleDisplayMsFlexbox: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def styleDisplayMsFlexbox: `22` = this.cast(22)
+  def styleDisplayMsGrid: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def styleDisplayMsGrid: `24` = this.cast(24)
+  def styleDisplayMsInlineFlexbox: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def styleDisplayMsInlineFlexbox: `23` = this.cast(23)
+  def styleDisplayMsInlineGrid: `25` = 25.asInstanceOf[`25`]
   @scala.inline
-  def styleDisplayMsInlineGrid: `25` = this.cast(25)
+  def styleDisplayNone: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def styleDisplayNone: `4` = this.cast(4)
+  def styleDisplayNotSet: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleDisplayNotSet: `0` = this.cast(0)
+  def styleDisplayRuby: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def styleDisplayRuby: `17` = this.cast(17)
+  def styleDisplayRubyBase: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def styleDisplayRubyBase: `18` = this.cast(18)
+  def styleDisplayRubyBaseContainer: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def styleDisplayRubyBaseContainer: `20` = this.cast(20)
+  def styleDisplayRubyText: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def styleDisplayRubyText: `19` = this.cast(19)
+  def styleDisplayRubyTextContainer: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def styleDisplayRubyTextContainer: `21` = this.cast(21)
+  def styleDisplayRunIn: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def styleDisplayRunIn: `16` = this.cast(16)
+  def styleDisplayTable: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def styleDisplayTable: `8` = this.cast(8)
+  def styleDisplayTableCaption: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def styleDisplayTableCaption: `15` = this.cast(15)
+  def styleDisplayTableCell: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def styleDisplayTableCell: `14` = this.cast(14)
+  def styleDisplayTableColumn: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def styleDisplayTableColumn: `12` = this.cast(12)
+  def styleDisplayTableColumnGroup: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def styleDisplayTableColumnGroup: `13` = this.cast(13)
+  def styleDisplayTableFooterGroup: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def styleDisplayTableFooterGroup: `6` = this.cast(6)
+  def styleDisplayTableHeaderGroup: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def styleDisplayTableHeaderGroup: `5` = this.cast(5)
+  def styleDisplayTableRow: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def styleDisplayTableRow: `10` = this.cast(10)
+  def styleDisplayTableRowGroup: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def styleDisplayTableRowGroup: `11` = this.cast(11)
+  def styleDisplayWebkitBox: `28` = 28.asInstanceOf[`28`]
   @scala.inline
-  def styleDisplayWebkitBox: `28` = this.cast(28)
+  def styleDisplayWebkitInlineBox: `29` = 29.asInstanceOf[`29`]
   @scala.inline
-  def styleDisplayWebkitInlineBox: `29` = this.cast(29)
-  @scala.inline
-  def styleDisplay_Max: `2147483647` = this.cast(2147483647)
+  def styleDisplay_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

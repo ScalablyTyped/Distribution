@@ -1,5 +1,6 @@
 package typings.emberData.mod.DS
 
+import org.scalablytyped.runtime.TopLevel
 import typings.emberData.Anon0
 import typings.emberData.AnonId
 import typings.emberData.AnonIds
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("ember-data", "DS.Snapshot")
 @js.native
-class Snapshot[K /* <: String */] () extends js.Object {
+class Snapshot[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */] () extends js.Object {
   /**
     * The id of the snapshot's underlying record
     */
@@ -45,16 +46,20 @@ class Snapshot[K /* <: String */] () extends js.Object {
     */
   def attributes(): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ L in keyof ember-data.ember-data/types/registries/model.ModelRegistry[K] ]: ember-data.ember-data/types/registries/model.ModelRegistry[K][L]}
-    */ typings.emberData.emberDataStrings.Snapshot with ModelRegistry = js.native
+    */ typings.emberData.emberDataStrings.Snapshot with TopLevel[ModelRegistry] = js.native
   /**
     * Returns the current value of a belongsTo relationship.
     */
   def belongsTo[L /* <: RelationshipsFor[
     /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
-  ] */](keyName: L): js.UndefOr[Snapshot[String] | Null] = js.native
+  ] */](keyName: L): js.UndefOr[
+    (Snapshot[/* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String]) | Null
+  ] = js.native
   def belongsTo[L /* <: RelationshipsFor[
     /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
-  ] */](keyName: L, options: js.Object): js.UndefOr[Snapshot[String] | Null] = js.native
+  ] */](keyName: L, options: js.Object): js.UndefOr[
+    (Snapshot[/* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String]) | Null
+  ] = js.native
   def belongsTo[L /* <: RelationshipsFor[
     /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
   ] */](keyName: L, options: AnonId): js.UndefOr[String | Null] = js.native
@@ -64,7 +69,7 @@ class Snapshot[K /* <: String */] () extends js.Object {
   def changedAttributes(): Partial[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ L in keyof ember-data.ember-data/types/registries/model.ModelRegistry[K] ]: ember-data.ember-data/types/registries/model.ModelRegistry[K][L]}
-    */ typings.emberData.emberDataStrings.Snapshot with ModelRegistry
+    */ typings.emberData.emberDataStrings.Snapshot with TopLevel[ModelRegistry]
   ] = js.native
   /**
     * Iterates through all the attributes of the model, calling the passed
@@ -89,13 +94,21 @@ class Snapshot[K /* <: String */] () extends js.Object {
     */
   def hasMany[L /* <: RelationshipsFor[
     /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
-  ] */](keyName: L): js.UndefOr[js.Array[Snapshot[String]]] = js.native
+  ] */](keyName: L): js.UndefOr[
+    js.Array[
+      Snapshot[/* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String]
+    ]
+  ] = js.native
   def hasMany[L /* <: RelationshipsFor[
     /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
   ] */](keyName: L, options: Anon0): js.UndefOr[js.Array[String]] = js.native
   def hasMany[L /* <: RelationshipsFor[
     /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
-  ] */](keyName: L, options: AnonIds): js.UndefOr[js.Array[Snapshot[String]]] = js.native
+  ] */](keyName: L, options: AnonIds): js.UndefOr[
+    js.Array[
+      Snapshot[/* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String]
+    ]
+  ] = js.native
   /**
     * Serializes the snapshot using the serializer for the model.
     */

@@ -20,7 +20,6 @@ object IPropertyValuesWithIconClues {
     PropertyValues: IPropertyValues
   ): IPropertyValuesWithIconClues = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), IconClues = IconClues.asInstanceOf[js.Any], ObjVer = ObjVer.asInstanceOf[js.Any], PropertyValues = PropertyValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPropertyValuesWithIconClues]
   }
 }

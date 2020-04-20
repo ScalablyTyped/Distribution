@@ -13,7 +13,6 @@ object PhoneNumberValidateRequest {
   @scala.inline
   def apply(NumberValidateRequest: NumberValidateRequest): PhoneNumberValidateRequest = {
     val __obj = js.Dynamic.literal(NumberValidateRequest = NumberValidateRequest.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PhoneNumberValidateRequest]
   }
 }

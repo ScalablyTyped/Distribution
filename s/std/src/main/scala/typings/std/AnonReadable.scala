@@ -13,7 +13,6 @@ object AnonReadable {
   @scala.inline
   def apply[R, T](readable: ReadableStream[T], writable: WritableStream[R]): AnonReadable[R, T] = {
     val __obj = js.Dynamic.literal(readable = readable.asInstanceOf[js.Any], writable = writable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonReadable[R, T]]
   }
 }

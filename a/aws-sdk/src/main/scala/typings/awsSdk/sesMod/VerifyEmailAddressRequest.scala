@@ -16,7 +16,6 @@ object VerifyEmailAddressRequest {
   @scala.inline
   def apply(EmailAddress: Address): VerifyEmailAddressRequest = {
     val __obj = js.Dynamic.literal(EmailAddress = EmailAddress.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VerifyEmailAddressRequest]
   }
 }

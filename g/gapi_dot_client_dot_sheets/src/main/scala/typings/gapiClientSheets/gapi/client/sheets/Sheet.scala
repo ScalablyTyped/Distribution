@@ -20,6 +20,7 @@ trait Sheet extends js.Object {
   var conditionalFormats: js.UndefOr[js.Array[ConditionalFormatRule]] = js.undefined
   /**
     * Data in the grid, if this is a grid sheet.
+    *
     * The number of GridData objects returned is dependent on the number of
     * ranges requested on this sheet. For example, if this is representing
     * `Sheet1`, and the spreadsheet was requested with ranges

@@ -1,6 +1,7 @@
 package typings.tensorflowTfjsCore.engineMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.tensorflowTfjsCore.AnonFactory
 import typings.tensorflowTfjsCore.AnonGrads
 import typings.tensorflowTfjsCore.backendMod.DataMover
@@ -185,7 +186,7 @@ class Engine protected ()
       /* saved */ js.Array[Tensor[Rank]], 
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof I ]: (): I[P]}
-    */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine with I
+    */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine with TopLevel[I]
     ]
   ): T = js.native
   def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
@@ -196,7 +197,7 @@ class Engine protected ()
       /* saved */ js.Array[Tensor[Rank]], 
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof I ]: (): I[P]}
-    */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine with I
+    */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine with TopLevel[I]
     ],
     kernelName: String
   ): T = js.native
@@ -208,7 +209,7 @@ class Engine protected ()
       /* saved */ js.Array[Tensor[Rank]], 
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof I ]: (): I[P]}
-    */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine with I
+    */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine with TopLevel[I]
     ],
     kernelName: String,
     attrs: NamedAttrMap
@@ -221,7 +222,7 @@ class Engine protected ()
       /* saved */ js.Array[Tensor[Rank]], 
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof I ]: (): I[P]}
-    */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine with I
+    */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine with TopLevel[I]
     ],
     kernelName: String,
     attrs: NamedAttrMap,
@@ -235,7 +236,7 @@ class Engine protected ()
       /* saved */ js.Array[Tensor[Rank]], 
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof I ]: (): I[P]}
-    */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine with I
+    */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine with TopLevel[I]
     ],
     kernelName: String,
     attrs: NamedAttrMap,

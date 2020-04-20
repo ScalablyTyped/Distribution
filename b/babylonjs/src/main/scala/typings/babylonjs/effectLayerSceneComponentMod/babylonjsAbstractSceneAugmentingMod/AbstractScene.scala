@@ -33,7 +33,6 @@ object AbstractScene {
     removeEffectLayer: EffectLayer => Double
   ): AbstractScene = {
     val __obj = js.Dynamic.literal(addEffectLayer = js.Any.fromFunction1(addEffectLayer), effectLayers = effectLayers.asInstanceOf[js.Any], removeEffectLayer = js.Any.fromFunction1(removeEffectLayer))
-  
     __obj.asInstanceOf[AbstractScene]
   }
 }

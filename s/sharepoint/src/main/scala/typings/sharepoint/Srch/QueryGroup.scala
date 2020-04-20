@@ -20,7 +20,6 @@ object QueryGroup {
     searchBoxes: js.Array[Refinement]
   ): QueryGroup = {
     val __obj = js.Dynamic.literal(dataProvider = dataProvider.asInstanceOf[js.Any], displays = displays.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], searchBoxes = searchBoxes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[QueryGroup]
   }
 }

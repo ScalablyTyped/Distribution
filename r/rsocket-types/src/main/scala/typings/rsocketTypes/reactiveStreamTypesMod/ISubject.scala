@@ -15,7 +15,6 @@ object ISubject {
   @scala.inline
   def apply[T](onComplete: () => Unit, onError: Error => Unit, onNext: T => Unit): ISubject[T] = {
     val __obj = js.Dynamic.literal(onComplete = js.Any.fromFunction0(onComplete), onError = js.Any.fromFunction1(onError), onNext = js.Any.fromFunction1(onNext))
-  
     __obj.asInstanceOf[ISubject[T]]
   }
 }

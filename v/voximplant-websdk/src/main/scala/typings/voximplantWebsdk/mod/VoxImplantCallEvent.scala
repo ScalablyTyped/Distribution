@@ -33,25 +33,21 @@ object VoxImplantCallEvent {
   @scala.inline
   def MessageReceived(call: Call, text: String): VoxImplantCallEvent = {
     val __obj = js.Dynamic.literal(call = call.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VoxImplantCallEvent]
   }
   @scala.inline
   def TransferComplete(call: Call): VoxImplantCallEvent = {
     val __obj = js.Dynamic.literal(call = call.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VoxImplantCallEvent]
   }
   @scala.inline
   def ProgressToneStart(call: Call): VoxImplantCallEvent = {
     val __obj = js.Dynamic.literal(call = call.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VoxImplantCallEvent]
   }
   @scala.inline
   def ProgressToneStop(call: Call): VoxImplantCallEvent = {
     val __obj = js.Dynamic.literal(call = call.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VoxImplantCallEvent]
   }
   @scala.inline
@@ -63,7 +59,6 @@ object VoxImplantCallEvent {
   @scala.inline
   def TransferFailed(call: Call): VoxImplantCallEvent = {
     val __obj = js.Dynamic.literal(call = call.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VoxImplantCallEvent]
   }
   @scala.inline

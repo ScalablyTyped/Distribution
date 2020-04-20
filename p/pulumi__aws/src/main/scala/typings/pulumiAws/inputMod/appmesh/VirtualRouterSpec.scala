@@ -18,7 +18,6 @@ object VirtualRouterSpec {
   @scala.inline
   def apply(listener: Input[VirtualRouterSpecListener]): VirtualRouterSpec = {
     val __obj = js.Dynamic.literal(listener = listener.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VirtualRouterSpec]
   }
 }

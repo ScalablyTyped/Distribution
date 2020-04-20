@@ -6,43 +6,43 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypedEventEmitter[T] extends js.Object {
-  def addListener[K /* <: String */](
+  def addListener[K /* <: /* keyof T */ String */](
     event: K,
     listener: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ): this.type = js.native
-  def emit[K /* <: String */](event: K, args: js.Any*): Boolean = js.native
-  def eventNames(): js.Array[String] = js.native
+  def emit[K /* <: /* keyof T */ String */](event: K, args: js.Any*): Boolean = js.native
+  def eventNames(): js.Array[/* keyof T */ String] = js.native
   def getMaxListeners(): Double = js.native
-  def listenerCount(`type`: String): Double = js.native
-  def listeners[K /* <: String */](event: K): js.Array[
+  def listenerCount(`type`: /* keyof T */ String): Double = js.native
+  def listeners[K /* <: /* keyof T */ String */](event: K): js.Array[
     /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ] = js.native
-  def off[K /* <: String */](
+  def off[K /* <: /* keyof T */ String */](
     event: K,
     listener: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ): this.type = js.native
-  def on[K /* <: String */](
+  def on[K /* <: /* keyof T */ String */](
     event: K,
     listener: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ): this.type = js.native
-  def once[K /* <: String */](
+  def once[K /* <: /* keyof T */ String */](
     event: K,
     listener: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ): this.type = js.native
-  def prependListener[K /* <: String */](
+  def prependListener[K /* <: /* keyof T */ String */](
     event: K,
     listener: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ): this.type = js.native
-  def prependOnceListener[K /* <: String */](
+  def prependOnceListener[K /* <: /* keyof T */ String */](
     event: K,
     listener: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ): this.type = js.native
-  def rawListeners[K /* <: String */](event: K): js.Array[
+  def rawListeners[K /* <: /* keyof T */ String */](event: K): js.Array[
     /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ] = js.native
-  def removeAllListeners[K /* <: String */](): this.type = js.native
-  def removeAllListeners[K /* <: String */](event: K): this.type = js.native
-  def removeListener[K /* <: String */](
+  def removeAllListeners[K /* <: /* keyof T */ String */](): this.type = js.native
+  def removeAllListeners[K /* <: /* keyof T */ String */](event: K): this.type = js.native
+  def removeListener[K /* <: /* keyof T */ String */](
     event: K,
     listener: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ): this.type = js.native

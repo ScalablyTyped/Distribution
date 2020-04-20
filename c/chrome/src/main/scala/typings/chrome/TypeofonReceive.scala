@@ -13,7 +13,6 @@ object TypeofonReceive {
   @scala.inline
   def apply(addListener: js.Function1[/* info */ OnReceiveInfo, Unit] => Unit): TypeofonReceive = {
     val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction1(addListener))
-  
     __obj.asInstanceOf[TypeofonReceive]
   }
 }

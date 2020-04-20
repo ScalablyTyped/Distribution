@@ -43,7 +43,7 @@ trait Connection extends EventEmitter {
     boundPort: Double,
     remoteAddr: String,
     remotePort: Double,
-    callback: js.Function2[/* err */ js.UndefOr[Error], /* channel */ js.UndefOr[ServerChannel], Unit]
+    callback: js.Function2[/* err */ js.UndefOr[Error], /* channel */ ServerChannel, Unit]
   ): Boolean = js.native
   def on(event: String, listener: js.Function): this.type = js.native
   def on(event: js.Symbol, listener: js.Function): this.type = js.native
@@ -173,7 +173,7 @@ trait Connection extends EventEmitter {
   def x11(
     originAddr: String,
     originPort: Double,
-    callback: js.Function2[/* err */ js.UndefOr[Error], /* channel */ js.UndefOr[ServerChannel], Unit]
+    callback: js.Function2[/* err */ js.UndefOr[Error], /* channel */ ServerChannel, Unit]
   ): Boolean = js.native
 }
 

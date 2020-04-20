@@ -26,7 +26,6 @@ object WriteFileRequestedEventOptions {
     requestId: integer
   ): WriteFileRequestedEventOptions = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], fileSystemId = fileSystemId.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], openRequestId = openRequestId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WriteFileRequestedEventOptions]
   }
 }

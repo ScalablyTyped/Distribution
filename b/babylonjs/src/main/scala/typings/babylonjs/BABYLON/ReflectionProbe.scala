@@ -50,7 +50,7 @@ class ReflectionProbe protected () extends js.Object {
     */
   def attachToMesh(mesh: Nullable[AbstractMesh]): Unit = js.native
   /** Gets the internal CubeTexture used to render to */
-  def cubeTexture(): RenderTargetTexture = js.native
+  def cubeTexture: RenderTargetTexture = js.native
   /**
     * Clean all associated resources
     */
@@ -66,12 +66,12 @@ class ReflectionProbe protected () extends js.Object {
     */
   def getScene(): Scene = js.native
   /** Gets or sets the refresh rate to use (on every frame by default) */
-  def refreshRate(): Double = js.native
+  def refreshRate: Double = js.native
   def refreshRate(value: Double): js.Any = js.native
   /** Gets the list of meshes to render */
-  def renderList(): Nullable[js.Array[AbstractMesh]] = js.native
+  def renderList: Nullable[js.Array[AbstractMesh]] = js.native
   /** Gets or sets the number of samples to use for multi-sampling (0 by default). Required WebGL2 */
-  def samples(): Double = js.native
+  def samples: Double = js.native
   def samples(value: Double): js.Any = js.native
   /**
     * Serialize the reflection probe to a JSON representation we can easily use in the resepective Parse function.

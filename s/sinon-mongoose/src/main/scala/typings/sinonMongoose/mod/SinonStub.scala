@@ -15,7 +15,6 @@ object SinonStub {
   @scala.inline
   def apply(chain: String => SinonStub): SinonStub = {
     val __obj = js.Dynamic.literal(chain = js.Any.fromFunction1(chain))
-  
     __obj.asInstanceOf[SinonStub]
   }
 }

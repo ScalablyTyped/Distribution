@@ -16,7 +16,6 @@ object MetadataReader {
     getPropertiesMetadata: js.Function => MetadataMap
   ): MetadataReader = {
     val __obj = js.Dynamic.literal(getConstructorMetadata = js.Any.fromFunction1(getConstructorMetadata), getPropertiesMetadata = js.Any.fromFunction1(getPropertiesMetadata))
-  
     __obj.asInstanceOf[MetadataReader]
   }
 }

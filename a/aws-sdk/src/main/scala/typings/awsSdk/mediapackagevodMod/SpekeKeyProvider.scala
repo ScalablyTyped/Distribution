@@ -25,7 +25,6 @@ object SpekeKeyProvider {
   @scala.inline
   def apply(RoleArn: string, SystemIds: listOfString, Url: string): SpekeKeyProvider = {
     val __obj = js.Dynamic.literal(RoleArn = RoleArn.asInstanceOf[js.Any], SystemIds = SystemIds.asInstanceOf[js.Any], Url = Url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SpekeKeyProvider]
   }
 }

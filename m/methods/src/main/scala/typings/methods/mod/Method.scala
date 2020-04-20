@@ -111,140 +111,138 @@ trait Method extends js.Object
 
 object Method {
   @scala.inline
-  def ACL: typings.methods.methodsStrings.ACL = this.cast("ACL")
+  def ACL: typings.methods.methodsStrings.ACL = "ACL".asInstanceOf[typings.methods.methodsStrings.ACL]
   @scala.inline
-  def BIND: typings.methods.methodsStrings.BIND = this.cast("BIND")
+  def BIND: typings.methods.methodsStrings.BIND = "BIND".asInstanceOf[typings.methods.methodsStrings.BIND]
   @scala.inline
-  def CHECKOUT: typings.methods.methodsStrings.CHECKOUT = this.cast("CHECKOUT")
+  def CHECKOUT: typings.methods.methodsStrings.CHECKOUT = "CHECKOUT".asInstanceOf[typings.methods.methodsStrings.CHECKOUT]
   @scala.inline
-  def CONNECT: typings.methods.methodsStrings.CONNECT = this.cast("CONNECT")
+  def CONNECT: typings.methods.methodsStrings.CONNECT = "CONNECT".asInstanceOf[typings.methods.methodsStrings.CONNECT]
   @scala.inline
-  def COPY: typings.methods.methodsStrings.COPY = this.cast("COPY")
+  def COPY: typings.methods.methodsStrings.COPY = "COPY".asInstanceOf[typings.methods.methodsStrings.COPY]
   @scala.inline
-  def DELETE: typings.methods.methodsStrings.DELETE = this.cast("DELETE")
+  def DELETE: typings.methods.methodsStrings.DELETE = "DELETE".asInstanceOf[typings.methods.methodsStrings.DELETE]
   @scala.inline
-  def GET: typings.methods.methodsStrings.GET = this.cast("GET")
+  def GET: typings.methods.methodsStrings.GET = "GET".asInstanceOf[typings.methods.methodsStrings.GET]
   @scala.inline
-  def HEAD: typings.methods.methodsStrings.HEAD = this.cast("HEAD")
+  def HEAD: typings.methods.methodsStrings.HEAD = "HEAD".asInstanceOf[typings.methods.methodsStrings.HEAD]
   @scala.inline
-  def LINK: typings.methods.methodsStrings.LINK = this.cast("LINK")
+  def LINK: typings.methods.methodsStrings.LINK = "LINK".asInstanceOf[typings.methods.methodsStrings.LINK]
   @scala.inline
-  def LOCK: typings.methods.methodsStrings.LOCK = this.cast("LOCK")
+  def LOCK: typings.methods.methodsStrings.LOCK = "LOCK".asInstanceOf[typings.methods.methodsStrings.LOCK]
   @scala.inline
-  def `M-SEARCH`: typings.methods.methodsStrings.`M-SEARCH` = this.cast("M-SEARCH")
+  def `M-SEARCH`: typings.methods.methodsStrings.`M-SEARCH` = "M-SEARCH".asInstanceOf[typings.methods.methodsStrings.`M-SEARCH`]
   @scala.inline
-  def MERGE: typings.methods.methodsStrings.MERGE = this.cast("MERGE")
+  def MERGE: typings.methods.methodsStrings.MERGE = "MERGE".asInstanceOf[typings.methods.methodsStrings.MERGE]
   @scala.inline
-  def MKACTIVITY: typings.methods.methodsStrings.MKACTIVITY = this.cast("MKACTIVITY")
+  def MKACTIVITY: typings.methods.methodsStrings.MKACTIVITY = "MKACTIVITY".asInstanceOf[typings.methods.methodsStrings.MKACTIVITY]
   @scala.inline
-  def MKCALENDAR: typings.methods.methodsStrings.MKCALENDAR = this.cast("MKCALENDAR")
+  def MKCALENDAR: typings.methods.methodsStrings.MKCALENDAR = "MKCALENDAR".asInstanceOf[typings.methods.methodsStrings.MKCALENDAR]
   @scala.inline
-  def MKCOL: typings.methods.methodsStrings.MKCOL = this.cast("MKCOL")
+  def MKCOL: typings.methods.methodsStrings.MKCOL = "MKCOL".asInstanceOf[typings.methods.methodsStrings.MKCOL]
   @scala.inline
-  def MOVE: typings.methods.methodsStrings.MOVE = this.cast("MOVE")
+  def MOVE: typings.methods.methodsStrings.MOVE = "MOVE".asInstanceOf[typings.methods.methodsStrings.MOVE]
   @scala.inline
-  def NOTIFY: typings.methods.methodsStrings.NOTIFY = this.cast("NOTIFY")
+  def NOTIFY: typings.methods.methodsStrings.NOTIFY = "NOTIFY".asInstanceOf[typings.methods.methodsStrings.NOTIFY]
   @scala.inline
-  def OPTIONS: typings.methods.methodsStrings.OPTIONS = this.cast("OPTIONS")
+  def OPTIONS: typings.methods.methodsStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.methods.methodsStrings.OPTIONS]
   @scala.inline
-  def PATCH: typings.methods.methodsStrings.PATCH = this.cast("PATCH")
+  def PATCH: typings.methods.methodsStrings.PATCH = "PATCH".asInstanceOf[typings.methods.methodsStrings.PATCH]
   @scala.inline
-  def POST: typings.methods.methodsStrings.POST = this.cast("POST")
+  def POST: typings.methods.methodsStrings.POST = "POST".asInstanceOf[typings.methods.methodsStrings.POST]
   @scala.inline
-  def PROPFIND: typings.methods.methodsStrings.PROPFIND = this.cast("PROPFIND")
+  def PROPFIND: typings.methods.methodsStrings.PROPFIND = "PROPFIND".asInstanceOf[typings.methods.methodsStrings.PROPFIND]
   @scala.inline
-  def PROPPATCH: typings.methods.methodsStrings.PROPPATCH = this.cast("PROPPATCH")
+  def PROPPATCH: typings.methods.methodsStrings.PROPPATCH = "PROPPATCH".asInstanceOf[typings.methods.methodsStrings.PROPPATCH]
   @scala.inline
-  def PURGE: typings.methods.methodsStrings.PURGE = this.cast("PURGE")
+  def PURGE: typings.methods.methodsStrings.PURGE = "PURGE".asInstanceOf[typings.methods.methodsStrings.PURGE]
   @scala.inline
-  def PUT: typings.methods.methodsStrings.PUT = this.cast("PUT")
+  def PUT: typings.methods.methodsStrings.PUT = "PUT".asInstanceOf[typings.methods.methodsStrings.PUT]
   @scala.inline
-  def REBIND: typings.methods.methodsStrings.REBIND = this.cast("REBIND")
+  def REBIND: typings.methods.methodsStrings.REBIND = "REBIND".asInstanceOf[typings.methods.methodsStrings.REBIND]
   @scala.inline
-  def REPORT: typings.methods.methodsStrings.REPORT = this.cast("REPORT")
+  def REPORT: typings.methods.methodsStrings.REPORT = "REPORT".asInstanceOf[typings.methods.methodsStrings.REPORT]
   @scala.inline
-  def SEARCH: typings.methods.methodsStrings.SEARCH = this.cast("SEARCH")
+  def SEARCH: typings.methods.methodsStrings.SEARCH = "SEARCH".asInstanceOf[typings.methods.methodsStrings.SEARCH]
   @scala.inline
-  def SOURCE: typings.methods.methodsStrings.SOURCE = this.cast("SOURCE")
+  def SOURCE: typings.methods.methodsStrings.SOURCE = "SOURCE".asInstanceOf[typings.methods.methodsStrings.SOURCE]
   @scala.inline
-  def SUBSCRIBE: typings.methods.methodsStrings.SUBSCRIBE = this.cast("SUBSCRIBE")
+  def SUBSCRIBE: typings.methods.methodsStrings.SUBSCRIBE = "SUBSCRIBE".asInstanceOf[typings.methods.methodsStrings.SUBSCRIBE]
   @scala.inline
-  def TRACE: typings.methods.methodsStrings.TRACE = this.cast("TRACE")
+  def TRACE: typings.methods.methodsStrings.TRACE = "TRACE".asInstanceOf[typings.methods.methodsStrings.TRACE]
   @scala.inline
-  def UNBIND: typings.methods.methodsStrings.UNBIND = this.cast("UNBIND")
+  def UNBIND: typings.methods.methodsStrings.UNBIND = "UNBIND".asInstanceOf[typings.methods.methodsStrings.UNBIND]
   @scala.inline
-  def UNLINK: typings.methods.methodsStrings.UNLINK = this.cast("UNLINK")
+  def UNLINK: typings.methods.methodsStrings.UNLINK = "UNLINK".asInstanceOf[typings.methods.methodsStrings.UNLINK]
   @scala.inline
-  def UNLOCK: typings.methods.methodsStrings.UNLOCK = this.cast("UNLOCK")
+  def UNLOCK: typings.methods.methodsStrings.UNLOCK = "UNLOCK".asInstanceOf[typings.methods.methodsStrings.UNLOCK]
   @scala.inline
-  def UNSUBSCRIBE: typings.methods.methodsStrings.UNSUBSCRIBE = this.cast("UNSUBSCRIBE")
+  def UNSUBSCRIBE: typings.methods.methodsStrings.UNSUBSCRIBE = "UNSUBSCRIBE".asInstanceOf[typings.methods.methodsStrings.UNSUBSCRIBE]
   @scala.inline
-  def acl: acl_ = this.cast("acl")
+  def acl: acl_ = "acl".asInstanceOf[acl_]
   @scala.inline
-  def bind: bind_ = this.cast("bind")
+  def bind: bind_ = "bind".asInstanceOf[bind_]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def checkout: checkout_ = "checkout".asInstanceOf[checkout_]
   @scala.inline
-  def checkout: checkout_ = this.cast("checkout")
+  def connect: connect_ = "connect".asInstanceOf[connect_]
   @scala.inline
-  def connect: connect_ = this.cast("connect")
+  def copy: copy_ = "copy".asInstanceOf[copy_]
   @scala.inline
-  def copy: copy_ = this.cast("copy")
+  def delete: delete_ = "delete".asInstanceOf[delete_]
   @scala.inline
-  def delete: delete_ = this.cast("delete")
+  def get: get_ = "get".asInstanceOf[get_]
   @scala.inline
-  def get: get_ = this.cast("get")
+  def head: head_ = "head".asInstanceOf[head_]
   @scala.inline
-  def head: head_ = this.cast("head")
+  def link: link_ = "link".asInstanceOf[link_]
   @scala.inline
-  def link: link_ = this.cast("link")
+  def lock: lock_ = "lock".asInstanceOf[lock_]
   @scala.inline
-  def lock: lock_ = this.cast("lock")
+  def `m-search`: `m-search_` = "m-search".asInstanceOf[`m-search_`]
   @scala.inline
-  def `m-search`: `m-search_` = this.cast("m-search")
+  def merge: merge_ = "merge".asInstanceOf[merge_]
   @scala.inline
-  def merge: merge_ = this.cast("merge")
+  def mkactivity: mkactivity_ = "mkactivity".asInstanceOf[mkactivity_]
   @scala.inline
-  def mkactivity: mkactivity_ = this.cast("mkactivity")
+  def mkcalendar: mkcalendar_ = "mkcalendar".asInstanceOf[mkcalendar_]
   @scala.inline
-  def mkcalendar: mkcalendar_ = this.cast("mkcalendar")
+  def mkcol: mkcol_ = "mkcol".asInstanceOf[mkcol_]
   @scala.inline
-  def mkcol: mkcol_ = this.cast("mkcol")
+  def move: move_ = "move".asInstanceOf[move_]
   @scala.inline
-  def move: move_ = this.cast("move")
+  def options: options_ = "options".asInstanceOf[options_]
   @scala.inline
-  def options: options_ = this.cast("options")
+  def patch: patch_ = "patch".asInstanceOf[patch_]
   @scala.inline
-  def patch: patch_ = this.cast("patch")
+  def post: post_ = "post".asInstanceOf[post_]
   @scala.inline
-  def post: post_ = this.cast("post")
+  def propfind: propfind_ = "propfind".asInstanceOf[propfind_]
   @scala.inline
-  def propfind: propfind_ = this.cast("propfind")
+  def proppatch: proppatch_ = "proppatch".asInstanceOf[proppatch_]
   @scala.inline
-  def proppatch: proppatch_ = this.cast("proppatch")
+  def purge: purge_ = "purge".asInstanceOf[purge_]
   @scala.inline
-  def purge: purge_ = this.cast("purge")
+  def put: put_ = "put".asInstanceOf[put_]
   @scala.inline
-  def put: put_ = this.cast("put")
+  def rebind: rebind_ = "rebind".asInstanceOf[rebind_]
   @scala.inline
-  def rebind: rebind_ = this.cast("rebind")
+  def report: report_ = "report".asInstanceOf[report_]
   @scala.inline
-  def report: report_ = this.cast("report")
+  def search: search_ = "search".asInstanceOf[search_]
   @scala.inline
-  def search: search_ = this.cast("search")
+  def source: source_ = "source".asInstanceOf[source_]
   @scala.inline
-  def source: source_ = this.cast("source")
+  def subscribe: subscribe_ = "subscribe".asInstanceOf[subscribe_]
   @scala.inline
-  def subscribe: subscribe_ = this.cast("subscribe")
+  def trace: trace_ = "trace".asInstanceOf[trace_]
   @scala.inline
-  def trace: trace_ = this.cast("trace")
+  def unbind: unbind_ = "unbind".asInstanceOf[unbind_]
   @scala.inline
-  def unbind: unbind_ = this.cast("unbind")
+  def unlink: unlink_ = "unlink".asInstanceOf[unlink_]
   @scala.inline
-  def unlink: unlink_ = this.cast("unlink")
+  def unlock: unlock_ = "unlock".asInstanceOf[unlock_]
   @scala.inline
-  def unlock: unlock_ = this.cast("unlock")
-  @scala.inline
-  def unsubscribe: unsubscribe_ = this.cast("unsubscribe")
+  def unsubscribe: unsubscribe_ = "unsubscribe".asInstanceOf[unsubscribe_]
 }
 

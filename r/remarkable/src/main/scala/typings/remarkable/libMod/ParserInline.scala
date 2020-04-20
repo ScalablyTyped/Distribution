@@ -20,7 +20,6 @@ object ParserInline {
     validateLink: String => Boolean
   ): ParserInline = {
     val __obj = js.Dynamic.literal(parse = js.Any.fromFunction4(parse), skipToken = js.Any.fromFunction1(skipToken), tokenize = js.Any.fromFunction1(tokenize), validateLink = js.Any.fromFunction1(validateLink))
-  
     __obj.asInstanceOf[ParserInline]
   }
 }

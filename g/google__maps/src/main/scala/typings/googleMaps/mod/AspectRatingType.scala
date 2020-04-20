@@ -18,22 +18,20 @@ trait AspectRatingType extends js.Object
 
 object AspectRatingType {
   @scala.inline
-  def appeal: typings.googleMaps.googleMapsStrings.appeal = this.cast("appeal")
+  def appeal: typings.googleMaps.googleMapsStrings.appeal = "appeal".asInstanceOf[typings.googleMaps.googleMapsStrings.appeal]
   @scala.inline
-  def atmosphere: typings.googleMaps.googleMapsStrings.atmosphere = this.cast("atmosphere")
+  def atmosphere: typings.googleMaps.googleMapsStrings.atmosphere = "atmosphere".asInstanceOf[typings.googleMaps.googleMapsStrings.atmosphere]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def decor: typings.googleMaps.googleMapsStrings.decor = "decor".asInstanceOf[typings.googleMaps.googleMapsStrings.decor]
   @scala.inline
-  def decor: typings.googleMaps.googleMapsStrings.decor = this.cast("decor")
+  def facilities: typings.googleMaps.googleMapsStrings.facilities = "facilities".asInstanceOf[typings.googleMaps.googleMapsStrings.facilities]
   @scala.inline
-  def facilities: typings.googleMaps.googleMapsStrings.facilities = this.cast("facilities")
+  def food: typings.googleMaps.googleMapsStrings.food = "food".asInstanceOf[typings.googleMaps.googleMapsStrings.food]
   @scala.inline
-  def food: typings.googleMaps.googleMapsStrings.food = this.cast("food")
+  def overall: typings.googleMaps.googleMapsStrings.overall = "overall".asInstanceOf[typings.googleMaps.googleMapsStrings.overall]
   @scala.inline
-  def overall: typings.googleMaps.googleMapsStrings.overall = this.cast("overall")
+  def quality: typings.googleMaps.googleMapsStrings.quality = "quality".asInstanceOf[typings.googleMaps.googleMapsStrings.quality]
   @scala.inline
-  def quality: typings.googleMaps.googleMapsStrings.quality = this.cast("quality")
-  @scala.inline
-  def service: typings.googleMaps.googleMapsStrings.service = this.cast("service")
+  def service: typings.googleMaps.googleMapsStrings.service = "service".asInstanceOf[typings.googleMaps.googleMapsStrings.service]
 }
 

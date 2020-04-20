@@ -22,7 +22,6 @@ object EditorFindOptions {
     seedSearchStringFromSelection: Boolean
   ): EditorFindOptions = {
     val __obj = js.Dynamic.literal(addExtraSpaceOnTop = addExtraSpaceOnTop.asInstanceOf[js.Any], autoFindInSelection = autoFindInSelection.asInstanceOf[js.Any], seedSearchStringFromSelection = seedSearchStringFromSelection.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EditorFindOptions]
   }
 }

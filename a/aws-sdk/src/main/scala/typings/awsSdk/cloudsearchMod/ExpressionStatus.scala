@@ -17,7 +17,6 @@ object ExpressionStatus {
   @scala.inline
   def apply(Options: Expression, Status: OptionStatus): ExpressionStatus = {
     val __obj = js.Dynamic.literal(Options = Options.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExpressionStatus]
   }
 }

@@ -12,7 +12,6 @@ object RuleSet {
   @scala.inline
   def apply(rules: js.Array[TransformationRule]): RuleSet = {
     val __obj = js.Dynamic.literal(rules = rules.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RuleSet]
   }
 }

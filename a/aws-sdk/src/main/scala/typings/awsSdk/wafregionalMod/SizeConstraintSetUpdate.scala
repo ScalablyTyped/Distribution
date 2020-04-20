@@ -20,7 +20,6 @@ object SizeConstraintSetUpdate {
   @scala.inline
   def apply(Action: ChangeAction, SizeConstraint: SizeConstraint): SizeConstraintSetUpdate = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], SizeConstraint = SizeConstraint.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SizeConstraintSetUpdate]
   }
 }

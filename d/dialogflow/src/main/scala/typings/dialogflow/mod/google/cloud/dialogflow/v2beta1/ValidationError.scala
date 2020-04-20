@@ -28,7 +28,7 @@ class ValidationError () extends IValidationError {
   var errorMessage_ValidationError: String = js.native
   /** ValidationError severity. */
   @JSName("severity")
-  var severity_ValidationError: Severity | String = js.native
+  var severity_ValidationError: Severity | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.ValidationError.Severity * / any */ String) = js.native
   /**
     * Converts this ValidationError to JSON.
     * @returns JSON object

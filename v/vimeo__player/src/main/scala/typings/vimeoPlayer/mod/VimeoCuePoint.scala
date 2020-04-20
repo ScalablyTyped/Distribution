@@ -14,7 +14,6 @@ object VimeoCuePoint {
   @scala.inline
   def apply(data: VimeoCuePointData, id: String, time: Double): VimeoCuePoint = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VimeoCuePoint]
   }
 }

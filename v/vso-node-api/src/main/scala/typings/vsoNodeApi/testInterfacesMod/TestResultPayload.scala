@@ -14,7 +14,6 @@ object TestResultPayload {
   @scala.inline
   def apply(comment: String, name: String, stream: String): TestResultPayload = {
     val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TestResultPayload]
   }
 }

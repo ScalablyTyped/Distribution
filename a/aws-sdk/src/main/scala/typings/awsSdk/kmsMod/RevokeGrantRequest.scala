@@ -20,7 +20,6 @@ object RevokeGrantRequest {
   @scala.inline
   def apply(GrantId: GrantIdType, KeyId: KeyIdType): RevokeGrantRequest = {
     val __obj = js.Dynamic.literal(GrantId = GrantId.asInstanceOf[js.Any], KeyId = KeyId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RevokeGrantRequest]
   }
 }

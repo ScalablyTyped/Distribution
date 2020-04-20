@@ -12,7 +12,6 @@ object SetVersionByQueryParamOptions {
   @scala.inline
   def apply(removeQueryParam: Boolean): SetVersionByQueryParamOptions = {
     val __obj = js.Dynamic.literal(removeQueryParam = removeQueryParam.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetVersionByQueryParamOptions]
   }
 }

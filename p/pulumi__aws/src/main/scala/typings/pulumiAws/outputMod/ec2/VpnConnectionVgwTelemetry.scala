@@ -23,7 +23,6 @@ object VpnConnectionVgwTelemetry {
     statusMessage: String
   ): VpnConnectionVgwTelemetry = {
     val __obj = js.Dynamic.literal(acceptedRouteCount = acceptedRouteCount.asInstanceOf[js.Any], lastStatusChange = lastStatusChange.asInstanceOf[js.Any], outsideIpAddress = outsideIpAddress.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusMessage = statusMessage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VpnConnectionVgwTelemetry]
   }
 }

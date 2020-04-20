@@ -14,10 +14,8 @@ trait OutputType extends js.Object
 
 object OutputType {
   @scala.inline
-  def DirectiveOutput: `1` = this.cast(1)
+  def DirectiveOutput: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def ElementOutput: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ElementOutput: `0` = 0.asInstanceOf[`0`]
 }
 

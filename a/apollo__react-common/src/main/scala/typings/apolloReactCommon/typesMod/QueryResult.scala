@@ -28,10 +28,10 @@ object QueryResult {
     called: Boolean,
     client: default[_],
     fetchMore: (js.Function1[
-      /* fetchMoreOptions */ (FetchMoreQueryOptions[TVariables, String]) with (FetchMoreOptions[TData, TVariables]), 
+      /* fetchMoreOptions */ (FetchMoreQueryOptions[TVariables, /* keyof TVariables */ String]) with (FetchMoreOptions[TData, TVariables]), 
       js.Promise[ApolloQueryResult[TData]]
     ]) with (js.Function1[
-      /* fetchMoreOptions */ AnonQuery with (FetchMoreQueryOptions[_, String]) with (FetchMoreOptions[_, _]), 
+      /* fetchMoreOptions */ AnonQuery with (FetchMoreQueryOptions[_, /* keyof any */ String]) with (FetchMoreOptions[_, _]), 
       js.Promise[ApolloQueryResult[_]]
     ]),
     loading: Boolean,

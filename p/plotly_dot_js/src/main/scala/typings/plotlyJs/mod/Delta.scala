@@ -29,7 +29,6 @@ object Delta {
     valueformat: String
   ): Delta = {
     val __obj = js.Dynamic.literal(decreasing = decreasing.asInstanceOf[js.Any], increasing = increasing.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], reference = reference.asInstanceOf[js.Any], relative = relative.asInstanceOf[js.Any], valueformat = valueformat.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Delta]
   }
 }

@@ -16,7 +16,6 @@ object CreateDistributionWithTagsRequest {
   @scala.inline
   def apply(DistributionConfigWithTags: DistributionConfigWithTags): CreateDistributionWithTagsRequest = {
     val __obj = js.Dynamic.literal(DistributionConfigWithTags = DistributionConfigWithTags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateDistributionWithTagsRequest]
   }
 }

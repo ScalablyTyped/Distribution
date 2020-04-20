@@ -23,7 +23,6 @@ object AnonBeakWidth {
     setInitialFocus: Boolean
   ): AnonBeakWidth = {
     val __obj = js.Dynamic.literal(beakWidth = beakWidth.asInstanceOf[js.Any], directionalHint = directionalHint.asInstanceOf[js.Any], doNotLayer = doNotLayer.asInstanceOf[js.Any], gapSpace = gapSpace.asInstanceOf[js.Any], setInitialFocus = setInitialFocus.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBeakWidth]
   }
 }

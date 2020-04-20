@@ -33,7 +33,6 @@ object Typeoferrors {
     QueryResultError: Instantiable0[QueryResultError]
   ): Typeoferrors = {
     val __obj = js.Dynamic.literal(ParameterizedQueryError = ParameterizedQueryError.asInstanceOf[js.Any], PreparedStatementError = PreparedStatementError.asInstanceOf[js.Any], QueryFileError = QueryFileError.asInstanceOf[js.Any], QueryResultError = QueryResultError.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Typeoferrors]
   }
 }

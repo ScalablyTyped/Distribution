@@ -26,7 +26,6 @@ object SpeechSynthesisUtteranceEventMap {
     start: SpeechSynthesisEvent
   ): SpeechSynthesisUtteranceEventMap = {
     val __obj = js.Dynamic.literal(boundary = boundary.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], pause = pause.asInstanceOf[js.Any], resume = resume.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SpeechSynthesisUtteranceEventMap]
   }
 }

@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PutImagePolicyResponse extends js.Object {
   /**
-    *  The Amazon Resource Name (ARN) of the image that this policy was applied to. 
+    * The Amazon Resource Name (ARN) of the image that this policy was applied to. 
     */
   var imageArn: js.UndefOr[ImageBuildVersionArn] = js.native
   /**
-    *  The request ID that uniquely identifies this request. 
+    * The request ID that uniquely identifies this request. 
     */
   var requestId: js.UndefOr[NonEmptyString] = js.native
 }

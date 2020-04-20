@@ -16,7 +16,6 @@ object ElementPosition {
   @scala.inline
   def apply(fits: Boolean, height: Double, offset: JQueryCoordinates, width: Double): ElementPosition = {
     val __obj = js.Dynamic.literal(fits = fits.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ElementPosition]
   }
 }

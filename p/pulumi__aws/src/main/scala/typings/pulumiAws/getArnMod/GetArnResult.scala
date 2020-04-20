@@ -47,7 +47,6 @@ object GetArnResult {
     service: String
   ): GetArnResult = {
     val __obj = js.Dynamic.literal(account = account.asInstanceOf[js.Any], arn = arn.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], partition = partition.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetArnResult]
   }
 }

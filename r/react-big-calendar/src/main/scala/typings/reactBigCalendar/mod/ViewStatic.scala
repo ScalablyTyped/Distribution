@@ -14,7 +14,6 @@ object ViewStatic {
   @scala.inline
   def apply(navigate: (Date, NavigateAction, js.Any) => Date, title: (Date, TitleOptions) => String): ViewStatic = {
     val __obj = js.Dynamic.literal(navigate = js.Any.fromFunction3(navigate), title = js.Any.fromFunction2(title))
-  
     __obj.asInstanceOf[ViewStatic]
   }
 }

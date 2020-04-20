@@ -20,7 +20,6 @@ object AttachPolicyRequest {
   @scala.inline
   def apply(policyName: PolicyName, target: PolicyTarget): AttachPolicyRequest = {
     val __obj = js.Dynamic.literal(policyName = policyName.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AttachPolicyRequest]
   }
 }

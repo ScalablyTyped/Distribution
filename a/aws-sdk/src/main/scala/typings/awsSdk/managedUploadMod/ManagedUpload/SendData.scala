@@ -28,7 +28,6 @@ object SendData {
   @scala.inline
   def apply(Bucket: String, ETag: String, Key: String, Location: String): SendData = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], ETag = ETag.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any], Location = Location.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SendData]
   }
 }

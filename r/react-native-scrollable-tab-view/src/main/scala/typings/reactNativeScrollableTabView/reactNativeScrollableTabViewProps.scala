@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeScrollableTabViewProps {
   @scala.inline
-  def DefaultTabBarProps: TabBarPropsDefaultTabBarP.type = typings.reactNativeScrollableTabView.TabBarPropsDefaultTabBarP
+  def DefaultTabBarProps: TabBarPropsDefaultTabBarP.type = TabBarPropsDefaultTabBarP
   type DefaultTabBarProps = TabBarPropsDefaultTabBarP
   @scala.inline
-  def ReactNativeScrollableTabViewProps: ScrollableTabViewProperties.type = typings.reactNativeScrollableTabView.mod.ScrollableTabViewProperties
+  def ReactNativeScrollableTabViewProps: ScrollableTabViewProperties.type = ScrollableTabViewProperties
   type ReactNativeScrollableTabViewProps = ScrollableTabViewProperties
   @scala.inline
-  def ScrollableTabBarProps: TabBarPropsScrollableTabB.type = typings.reactNativeScrollableTabView.TabBarPropsScrollableTabB
+  def ScrollableTabBarProps: TabBarPropsScrollableTabB.type = TabBarPropsScrollableTabB
   type ScrollableTabBarProps = TabBarPropsScrollableTabB
 }
 

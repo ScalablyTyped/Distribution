@@ -15,7 +15,6 @@ object EmulateOptions {
   @scala.inline
   def apply(userAgent: String, viewport: Viewport): EmulateOptions = {
     val __obj = js.Dynamic.literal(userAgent = userAgent.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EmulateOptions]
   }
 }

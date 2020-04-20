@@ -24,7 +24,6 @@ object BarExtendedDatum {
     value: Double
   ): BarExtendedDatum = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], indexValue = indexValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BarExtendedDatum]
   }
 }

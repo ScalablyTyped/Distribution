@@ -15,7 +15,6 @@ object AnonRos {
   @scala.inline
   def apply(name: String, ros: Ros, serviceType: String): AnonRos = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], ros = ros.asInstanceOf[js.Any], serviceType = serviceType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRos]
   }
 }

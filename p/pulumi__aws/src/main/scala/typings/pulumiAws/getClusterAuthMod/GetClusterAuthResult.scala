@@ -21,7 +21,6 @@ object GetClusterAuthResult {
   @scala.inline
   def apply(id: String, name: String, token: String): GetClusterAuthResult = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetClusterAuthResult]
   }
 }

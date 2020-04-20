@@ -19,7 +19,6 @@ object AnonHref {
   @scala.inline
   def apply(href: String, location: Location, normalizedTo: Location, resolved: Route, route: Route): AnonHref = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], normalizedTo = normalizedTo.asInstanceOf[js.Any], resolved = resolved.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHref]
   }
 }

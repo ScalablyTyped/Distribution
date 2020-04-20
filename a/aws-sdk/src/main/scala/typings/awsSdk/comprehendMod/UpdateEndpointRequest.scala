@@ -20,7 +20,6 @@ object UpdateEndpointRequest {
   @scala.inline
   def apply(DesiredInferenceUnits: InferenceUnitsInteger, EndpointArn: ComprehendEndpointArn): UpdateEndpointRequest = {
     val __obj = js.Dynamic.literal(DesiredInferenceUnits = DesiredInferenceUnits.asInstanceOf[js.Any], EndpointArn = EndpointArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateEndpointRequest]
   }
 }

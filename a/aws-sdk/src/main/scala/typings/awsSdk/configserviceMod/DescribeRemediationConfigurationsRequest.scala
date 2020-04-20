@@ -16,7 +16,6 @@ object DescribeRemediationConfigurationsRequest {
   @scala.inline
   def apply(ConfigRuleNames: ConfigRuleNames): DescribeRemediationConfigurationsRequest = {
     val __obj = js.Dynamic.literal(ConfigRuleNames = ConfigRuleNames.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeRemediationConfigurationsRequest]
   }
 }

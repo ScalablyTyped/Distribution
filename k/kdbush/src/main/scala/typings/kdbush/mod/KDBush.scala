@@ -24,7 +24,6 @@ object KDBush {
     within: (Double, Double, Double) => js.Array[Double]
   ): KDBush[T] = {
     val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any], ids = ids.asInstanceOf[js.Any], nodeSize = nodeSize.asInstanceOf[js.Any], points = points.asInstanceOf[js.Any], range = js.Any.fromFunction4(range), within = js.Any.fromFunction3(within))
-  
     __obj.asInstanceOf[KDBush[T]]
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNavigationDrawerProps {
   @scala.inline
-  def DrawerProps: Props.type = typings.reactNavigationDrawer.drawerMod.Props
+  def DrawerProps: Props.type = Props
   type DrawerProps = Props
   @scala.inline
   def DrawerItemsProps: typings.reactNavigationDrawer.typesMod.DrawerNavigatorItemsProps.type = typings.reactNavigationDrawer.typesMod.DrawerNavigatorItemsProps

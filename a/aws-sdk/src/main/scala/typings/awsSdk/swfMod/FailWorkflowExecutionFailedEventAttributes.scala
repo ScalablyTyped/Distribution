@@ -20,7 +20,6 @@ object FailWorkflowExecutionFailedEventAttributes {
   @scala.inline
   def apply(cause: FailWorkflowExecutionFailedCause, decisionTaskCompletedEventId: EventId): FailWorkflowExecutionFailedEventAttributes = {
     val __obj = js.Dynamic.literal(cause = cause.asInstanceOf[js.Any], decisionTaskCompletedEventId = decisionTaskCompletedEventId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FailWorkflowExecutionFailedEventAttributes]
   }
 }

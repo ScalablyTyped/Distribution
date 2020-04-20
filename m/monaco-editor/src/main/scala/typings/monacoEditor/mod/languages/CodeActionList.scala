@@ -13,7 +13,6 @@ object CodeActionList {
   @scala.inline
   def apply(actions: js.Array[CodeAction], dispose: () => Unit): CodeActionList = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose))
-  
     __obj.asInstanceOf[CodeActionList]
   }
 }

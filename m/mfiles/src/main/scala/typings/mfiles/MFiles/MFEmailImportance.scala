@@ -16,12 +16,10 @@ trait MFEmailImportance extends js.Object
 
 object MFEmailImportance {
   @scala.inline
-  def High: `2` = this.cast(2)
+  def High: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def Low: `0` = this.cast(0)
+  def Low: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def Normal: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Normal: `1` = 1.asInstanceOf[`1`]
 }
 

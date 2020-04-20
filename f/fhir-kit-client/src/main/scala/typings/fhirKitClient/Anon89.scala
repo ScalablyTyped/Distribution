@@ -1,6 +1,6 @@
 package typings.fhirKitClient
 
-import typings.fhirKitClient.fhirKitClientStrings.VisionPrescription
+import typings.fhirKitClient.fhirKitClientStrings.StructureDefinition
 import typings.request.mod.Headers
 import typings.request.mod.Options
 import scala.scalajs.js
@@ -11,20 +11,13 @@ trait Anon89 extends js.Object {
   var headers: js.UndefOr[Headers] = js.undefined
   var id: String
   var options: js.UndefOr[Options] = js.undefined
-  var resourceType: VisionPrescription
-  var version: String
+  var resourceType: StructureDefinition
 }
 
 object Anon89 {
   @scala.inline
-  def apply(
-    id: String,
-    resourceType: VisionPrescription,
-    version: String,
-    headers: Headers = null,
-    options: Options = null
-  ): Anon89 = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+  def apply(id: String, resourceType: StructureDefinition, headers: Headers = null, options: Options = null): Anon89 = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon89]

@@ -82,7 +82,6 @@ object IGenericVariable {
     setStringValue: String => js.Promise[Unit]
   ): IGenericVariable = {
     val __obj = js.Dynamic.literal(applyPatches = js.Any.fromFunction1(applyPatches), getInfo = js.Any.fromFunction0(getInfo), getLayout = js.Any.fromFunction0(getLayout), getProperties = js.Any.fromFunction0(getProperties), setDualValue = js.Any.fromFunction2(setDualValue), setNumValue = js.Any.fromFunction1(setNumValue), setProperties = js.Any.fromFunction1(setProperties), setStringValue = js.Any.fromFunction1(setStringValue))
-  
     __obj.asInstanceOf[IGenericVariable]
   }
 }

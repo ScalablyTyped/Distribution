@@ -20,7 +20,6 @@ object ListTagsForStreamOutput {
   @scala.inline
   def apply(HasMoreTags: BooleanObject, Tags: TagList): ListTagsForStreamOutput = {
     val __obj = js.Dynamic.literal(HasMoreTags = HasMoreTags.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListTagsForStreamOutput]
   }
 }

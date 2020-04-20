@@ -13,12 +13,10 @@ trait Location extends js.Object
 
 object Location {
   @scala.inline
-  def Documents: typings.reactNativeSqliteStorage.reactNativeSqliteStorageStrings.Documents = this.cast("Documents")
+  def Documents: typings.reactNativeSqliteStorage.reactNativeSqliteStorageStrings.Documents = "Documents".asInstanceOf[typings.reactNativeSqliteStorage.reactNativeSqliteStorageStrings.Documents]
   @scala.inline
-  def Library: typings.reactNativeSqliteStorage.reactNativeSqliteStorageStrings.Library = this.cast("Library")
+  def Library: typings.reactNativeSqliteStorage.reactNativeSqliteStorageStrings.Library = "Library".asInstanceOf[typings.reactNativeSqliteStorage.reactNativeSqliteStorageStrings.Library]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def default: typings.reactNativeSqliteStorage.reactNativeSqliteStorageStrings.default = this.cast("default")
+  def default: typings.reactNativeSqliteStorage.reactNativeSqliteStorageStrings.default = "default".asInstanceOf[typings.reactNativeSqliteStorage.reactNativeSqliteStorageStrings.default]
 }
 

@@ -2,6 +2,7 @@ package typings.pulumiAws.providerMod
 
 import typings.pulumiAws.inputMod.ProviderAssumeRole
 import typings.pulumiAws.inputMod.ProviderEndpoint
+import typings.pulumiAws.inputMod.ProviderIgnoreTags
 import typings.pulumiAws.regionMod.Region
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
@@ -20,13 +21,9 @@ trait ProviderArgs extends js.Object {
   val endpoints: js.UndefOr[Input[js.Array[Input[ProviderEndpoint]]]] = js.native
   val forbiddenAccountIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
-    * Resource tag key prefixes to ignore across all resources.
+    * Configuration block with settings to ignore resource tags across all resources.
     */
-  val ignoreTagPrefixes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
-  /**
-    * Resource tag keys to ignore across all resources.
-    */
-  val ignoreTags: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  val ignoreTags: js.UndefOr[Input[ProviderIgnoreTags]] = js.native
   /**
     * Explicitly allow the provider to perform "insecure" SSL requests. If omitted,default value is `false`
     */
@@ -92,8 +89,7 @@ object ProviderArgs {
     assumeRole: Input[ProviderAssumeRole] = null,
     endpoints: Input[js.Array[Input[ProviderEndpoint]]] = null,
     forbiddenAccountIds: Input[js.Array[Input[String]]] = null,
-    ignoreTagPrefixes: Input[js.Array[Input[String]]] = null,
-    ignoreTags: Input[js.Array[Input[String]]] = null,
+    ignoreTags: Input[ProviderIgnoreTags] = null,
     insecure: Input[Boolean] = null,
     maxRetries: Input[Double] = null,
     profile: Input[String] = null,
@@ -114,7 +110,6 @@ object ProviderArgs {
     if (assumeRole != null) __obj.updateDynamic("assumeRole")(assumeRole.asInstanceOf[js.Any])
     if (endpoints != null) __obj.updateDynamic("endpoints")(endpoints.asInstanceOf[js.Any])
     if (forbiddenAccountIds != null) __obj.updateDynamic("forbiddenAccountIds")(forbiddenAccountIds.asInstanceOf[js.Any])
-    if (ignoreTagPrefixes != null) __obj.updateDynamic("ignoreTagPrefixes")(ignoreTagPrefixes.asInstanceOf[js.Any])
     if (ignoreTags != null) __obj.updateDynamic("ignoreTags")(ignoreTags.asInstanceOf[js.Any])
     if (insecure != null) __obj.updateDynamic("insecure")(insecure.asInstanceOf[js.Any])
     if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])

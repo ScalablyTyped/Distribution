@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait nextServerProps {
   @scala.inline
-  def HeadProps: AnonChildren.type = typings.nextServer.AnonChildren
+  def HeadProps: AnonChildren.type = AnonChildren
   type HeadProps = AnonChildren
 }
 

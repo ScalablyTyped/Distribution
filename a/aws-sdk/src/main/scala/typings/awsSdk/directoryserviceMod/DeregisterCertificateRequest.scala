@@ -20,7 +20,6 @@ object DeregisterCertificateRequest {
   @scala.inline
   def apply(CertificateId: CertificateId, DirectoryId: DirectoryId): DeregisterCertificateRequest = {
     val __obj = js.Dynamic.literal(CertificateId = CertificateId.asInstanceOf[js.Any], DirectoryId = DirectoryId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeregisterCertificateRequest]
   }
 }

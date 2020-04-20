@@ -12,7 +12,6 @@ object TableResult {
   @scala.inline
   def apply(TableName: String): TableResult = {
     val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TableResult]
   }
 }

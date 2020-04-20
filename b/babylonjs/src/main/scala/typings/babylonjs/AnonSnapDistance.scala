@@ -12,7 +12,6 @@ object AnonSnapDistance {
   @scala.inline
   def apply(snapDistance: Double): AnonSnapDistance = {
     val __obj = js.Dynamic.literal(snapDistance = snapDistance.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSnapDistance]
   }
 }

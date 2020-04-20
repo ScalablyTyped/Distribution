@@ -44,6 +44,6 @@ object carbonIconHelpersStrings {
   @scala.inline
   def `true`: `true` = "true".asInstanceOf[`true`]
   @scala.inline
-  def `xMidYMid meet`: `xMidYMid meet` = "xMidYMid meet".asInstanceOf[`xMidYMid meet`]
+  def `xMidYMid meet`: `xMidYMid meet` = ("xMidYMid meet").asInstanceOf[`xMidYMid meet`]
 }
 

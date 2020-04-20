@@ -53,6 +53,7 @@ trait Multipoint
     *
     */
   def removePoint(index: Double): Point = js.native
+  def setPoint(index: Double, point: js.Array[Double]): Multipoint = js.native
   /**
     * Updates the point at the specified index.
     *

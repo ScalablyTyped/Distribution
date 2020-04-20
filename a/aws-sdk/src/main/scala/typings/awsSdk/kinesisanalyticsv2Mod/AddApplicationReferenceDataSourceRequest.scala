@@ -28,7 +28,6 @@ object AddApplicationReferenceDataSourceRequest {
     ReferenceDataSource: ReferenceDataSource
   ): AddApplicationReferenceDataSourceRequest = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], CurrentApplicationVersionId = CurrentApplicationVersionId.asInstanceOf[js.Any], ReferenceDataSource = ReferenceDataSource.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddApplicationReferenceDataSourceRequest]
   }
 }

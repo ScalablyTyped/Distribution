@@ -55,9 +55,9 @@ object HashRingOptions {
     `vnode count`: Double
   ): HashRingOptions = {
     val __obj = js.Dynamic.literal(compatibility = compatibility.asInstanceOf[js.Any], replicas = replicas.asInstanceOf[js.Any])
-    __obj.updateDynamic("default port")(`default port`.asInstanceOf[js.Any])
-    __obj.updateDynamic("max cache size")(`max cache size`.asInstanceOf[js.Any])
-    __obj.updateDynamic("vnode count")(`vnode count`.asInstanceOf[js.Any])
+    __obj.updateDynamic("default port")((`default port`).asInstanceOf[js.Any])
+    __obj.updateDynamic("max cache size")((`max cache size`).asInstanceOf[js.Any])
+    __obj.updateDynamic("vnode count")((`vnode count`).asInstanceOf[js.Any])
     __obj.asInstanceOf[HashRingOptions]
   }
 }

@@ -14,7 +14,6 @@ object IGoogleAnalyticsSettings {
   @scala.inline
   def apply(setDispatchInterval: js.Any => Unit, setDryRun: js.Any => Unit, setOptOut: js.Any => Unit): IGoogleAnalyticsSettings = {
     val __obj = js.Dynamic.literal(setDispatchInterval = js.Any.fromFunction1(setDispatchInterval), setDryRun = js.Any.fromFunction1(setDryRun), setOptOut = js.Any.fromFunction1(setOptOut))
-  
     __obj.asInstanceOf[IGoogleAnalyticsSettings]
   }
 }

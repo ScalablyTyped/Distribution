@@ -28,7 +28,6 @@ object KinesisStreamRecord {
     kinesis: KinesisStreamRecordPayload
   ): KinesisStreamRecord = {
     val __obj = js.Dynamic.literal(awsRegion = awsRegion.asInstanceOf[js.Any], eventID = eventID.asInstanceOf[js.Any], eventName = eventName.asInstanceOf[js.Any], eventSource = eventSource.asInstanceOf[js.Any], eventSourceARN = eventSourceARN.asInstanceOf[js.Any], eventVersion = eventVersion.asInstanceOf[js.Any], invokeIdentityArn = invokeIdentityArn.asInstanceOf[js.Any], kinesis = kinesis.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KinesisStreamRecord]
   }
 }

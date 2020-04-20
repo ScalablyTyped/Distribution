@@ -13,7 +13,6 @@ object Response {
   @scala.inline
   def apply(error: String | Double, message: String): Response = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Response]
   }
 }

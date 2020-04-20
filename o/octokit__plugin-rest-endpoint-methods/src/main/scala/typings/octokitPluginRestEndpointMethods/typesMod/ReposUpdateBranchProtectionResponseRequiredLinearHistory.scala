@@ -12,7 +12,6 @@ object ReposUpdateBranchProtectionResponseRequiredLinearHistory {
   @scala.inline
   def apply(enabled: Boolean): ReposUpdateBranchProtectionResponseRequiredLinearHistory = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReposUpdateBranchProtectionResponseRequiredLinearHistory]
   }
 }

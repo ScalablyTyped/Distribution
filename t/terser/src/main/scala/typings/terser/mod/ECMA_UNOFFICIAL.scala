@@ -10,19 +10,23 @@ import scala.scalajs.js.annotation._
   - typings.terser.terserNumbers.`7`
   - typings.terser.terserNumbers.`8`
   - typings.terser.terserNumbers.`9`
+  - typings.terser.terserNumbers.`10`
+  - typings.terser.terserNumbers.`11`
 */
 trait ECMA_UNOFFICIAL extends js.Object
 
 object ECMA_UNOFFICIAL {
   @scala.inline
-  def `6`: typings.terser.terserNumbers.`6` = this.cast(6)
+  def `10`: typings.terser.terserNumbers.`10` = 10.asInstanceOf[typings.terser.terserNumbers.`10`]
   @scala.inline
-  def `7`: typings.terser.terserNumbers.`7` = this.cast(7)
+  def `11`: typings.terser.terserNumbers.`11` = 11.asInstanceOf[typings.terser.terserNumbers.`11`]
   @scala.inline
-  def `8`: typings.terser.terserNumbers.`8` = this.cast(8)
+  def `6`: typings.terser.terserNumbers.`6` = 6.asInstanceOf[typings.terser.terserNumbers.`6`]
   @scala.inline
-  def `9`: typings.terser.terserNumbers.`9` = this.cast(9)
+  def `7`: typings.terser.terserNumbers.`7` = 7.asInstanceOf[typings.terser.terserNumbers.`7`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `8`: typings.terser.terserNumbers.`8` = 8.asInstanceOf[typings.terser.terserNumbers.`8`]
+  @scala.inline
+  def `9`: typings.terser.terserNumbers.`9` = 9.asInstanceOf[typings.terser.terserNumbers.`9`]
 }
 

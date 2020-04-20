@@ -14,10 +14,8 @@ trait MFAssignmentType extends js.Object
 
 object MFAssignmentType {
   @scala.inline
-  def Approval: `1` = this.cast(1)
+  def Approval: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def Task: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Task: `0` = 0.asInstanceOf[`0`]
 }
 

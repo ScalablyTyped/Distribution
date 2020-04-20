@@ -18,7 +18,6 @@ object Module {
   @scala.inline
   def apply(utils: FirebaseModuleWithStatics): Module = {
     val __obj = js.Dynamic.literal(utils = utils.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Module]
   }
 }

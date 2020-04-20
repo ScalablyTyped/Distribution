@@ -16,12 +16,10 @@ trait WdDisableFeaturesIntroducedAfter extends js.Object
 
 object WdDisableFeaturesIntroducedAfter {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wd70: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wd70: `0` = this.cast(0)
+  def wd70FE: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wd70FE: `1` = this.cast(1)
-  @scala.inline
-  def wd80: `2` = this.cast(2)
+  def wd80: `2` = 2.asInstanceOf[`2`]
 }
 

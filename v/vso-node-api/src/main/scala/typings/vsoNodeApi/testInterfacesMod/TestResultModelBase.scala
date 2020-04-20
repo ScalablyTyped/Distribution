@@ -25,7 +25,6 @@ object TestResultModelBase {
     startedDate: Date
   ): TestResultModelBase = {
     val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], completedDate = completedDate.asInstanceOf[js.Any], durationInMs = durationInMs.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], outcome = outcome.asInstanceOf[js.Any], startedDate = startedDate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TestResultModelBase]
   }
 }

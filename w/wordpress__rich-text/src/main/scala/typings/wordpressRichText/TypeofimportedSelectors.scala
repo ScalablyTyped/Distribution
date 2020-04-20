@@ -23,7 +23,6 @@ object TypeofimportedSelectors {
     getFormatTypes: () => js.Array[NamedFormatConfiguration]
   ): TypeofimportedSelectors = {
     val __obj = js.Dynamic.literal(getFormatType = js.Any.fromFunction1(getFormatType), getFormatTypeForBareElement = js.Any.fromFunction1(getFormatTypeForBareElement), getFormatTypeForClassName = js.Any.fromFunction1(getFormatTypeForClassName), getFormatTypes = js.Any.fromFunction0(getFormatTypes))
-  
     __obj.asInstanceOf[TypeofimportedSelectors]
   }
 }

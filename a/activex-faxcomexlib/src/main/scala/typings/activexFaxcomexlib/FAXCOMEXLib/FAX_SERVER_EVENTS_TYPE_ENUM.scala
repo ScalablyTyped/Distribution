@@ -33,28 +33,26 @@ trait FAX_SERVER_EVENTS_TYPE_ENUM extends js.Object
 
 object FAX_SERVER_EVENTS_TYPE_ENUM {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fsetACTIVITY: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def fsetACTIVITY: `8` = this.cast(8)
+  def fsetCONFIG: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def fsetCONFIG: `4` = this.cast(4)
+  def fsetDEVICE_STATUS: `256` = 256.asInstanceOf[`256`]
   @scala.inline
-  def fsetDEVICE_STATUS: `256` = this.cast(256)
+  def fsetFXSSVC_ENDED: `128` = 128.asInstanceOf[`128`]
   @scala.inline
-  def fsetFXSSVC_ENDED: `128` = this.cast(128)
+  def fsetINCOMING_CALL: `512` = 512.asInstanceOf[`512`]
   @scala.inline
-  def fsetINCOMING_CALL: `512` = this.cast(512)
+  def fsetIN_ARCHIVE: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def fsetIN_ARCHIVE: `32` = this.cast(32)
+  def fsetIN_QUEUE: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def fsetIN_QUEUE: `1` = this.cast(1)
+  def fsetNONE: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def fsetNONE: `0` = this.cast(0)
+  def fsetOUT_ARCHIVE: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def fsetOUT_ARCHIVE: `64` = this.cast(64)
+  def fsetOUT_QUEUE: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def fsetOUT_QUEUE: `2` = this.cast(2)
-  @scala.inline
-  def fsetQUEUE_STATE: `16` = this.cast(16)
+  def fsetQUEUE_STATE: `16` = 16.asInstanceOf[`16`]
 }
 

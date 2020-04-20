@@ -21,7 +21,6 @@ object CallHierarchyIncomingCall {
   @scala.inline
   def apply(from: CallHierarchyItem, fromRanges: js.Array[Range]): CallHierarchyIncomingCall = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], fromRanges = fromRanges.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CallHierarchyIncomingCall]
   }
 }

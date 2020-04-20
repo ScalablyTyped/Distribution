@@ -20,7 +20,6 @@ object TaskExecution {
   @scala.inline
   def apply(execTask: TaskReference, platformInstructions: StringDictionary[StringDictionary[String]]): TaskExecution = {
     val __obj = js.Dynamic.literal(execTask = execTask.asInstanceOf[js.Any], platformInstructions = platformInstructions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TaskExecution]
   }
 }

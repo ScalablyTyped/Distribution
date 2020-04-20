@@ -12,10 +12,8 @@ trait JobFormat extends js.Object
 
 object JobFormat {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def csv: typings.auth0.auth0Strings.csv = "csv".asInstanceOf[typings.auth0.auth0Strings.csv]
   @scala.inline
-  def csv: typings.auth0.auth0Strings.csv = this.cast("csv")
-  @scala.inline
-  def json: typings.auth0.auth0Strings.json = this.cast("json")
+  def json: typings.auth0.auth0Strings.json = "json".asInstanceOf[typings.auth0.auth0Strings.json]
 }
 

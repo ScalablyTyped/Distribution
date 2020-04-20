@@ -14,7 +14,6 @@ object DateFilterValue {
   @scala.inline
   def apply(comparator: FilterComparator, date: Date | String): DateFilterValue = {
     val __obj = js.Dynamic.literal(comparator = comparator.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DateFilterValue]
   }
 }

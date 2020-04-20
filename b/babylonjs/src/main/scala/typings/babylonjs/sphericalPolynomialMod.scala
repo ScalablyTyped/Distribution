@@ -143,7 +143,7 @@ object sphericalPolynomialMod extends js.Object {
     /**
       * The spherical harmonics used to create the polynomials.
       */
-    def preScaledHarmonics(): SphericalHarmonics = js.native
+    def preScaledHarmonics: SphericalHarmonics = js.native
     /**
       * Scales the spherical polynomial by the given amount
       * @param scale the amount to scale

@@ -20,7 +20,6 @@ object Job {
   @scala.inline
   def apply(steps: Steps, summary: JobSummary): Job = {
     val __obj = js.Dynamic.literal(steps = steps.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Job]
   }
 }

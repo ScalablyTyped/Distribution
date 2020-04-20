@@ -16,7 +16,6 @@ object VirtualNodeStatus {
   @scala.inline
   def apply(status: VirtualNodeStatusCode): VirtualNodeStatus = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VirtualNodeStatus]
   }
 }

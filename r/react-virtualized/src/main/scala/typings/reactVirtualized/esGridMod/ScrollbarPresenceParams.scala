@@ -14,7 +14,6 @@ object ScrollbarPresenceParams {
   @scala.inline
   def apply(horizontal: Boolean, size: Double, vertical: Boolean): ScrollbarPresenceParams = {
     val __obj = js.Dynamic.literal(horizontal = horizontal.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScrollbarPresenceParams]
   }
 }

@@ -17,20 +17,18 @@ trait RatingGermanyMoviesType extends js.Object
 
 object RatingGermanyMoviesType {
   @scala.inline
-  def adults: typings.microsoftGraph.microsoftGraphStrings.adults = this.cast("adults")
+  def adults: typings.microsoftGraph.microsoftGraphStrings.adults = "adults".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.adults]
   @scala.inline
-  def agesAbove12: typings.microsoftGraph.microsoftGraphStrings.agesAbove12 = this.cast("agesAbove12")
+  def agesAbove12: typings.microsoftGraph.microsoftGraphStrings.agesAbove12 = "agesAbove12".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.agesAbove12]
   @scala.inline
-  def agesAbove16: typings.microsoftGraph.microsoftGraphStrings.agesAbove16 = this.cast("agesAbove16")
+  def agesAbove16: typings.microsoftGraph.microsoftGraphStrings.agesAbove16 = "agesAbove16".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.agesAbove16]
   @scala.inline
-  def agesAbove6: typings.microsoftGraph.microsoftGraphStrings.agesAbove6 = this.cast("agesAbove6")
+  def agesAbove6: typings.microsoftGraph.microsoftGraphStrings.agesAbove6 = "agesAbove6".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.agesAbove6]
   @scala.inline
-  def allAllowed: typings.microsoftGraph.microsoftGraphStrings.allAllowed = this.cast("allAllowed")
+  def allAllowed: typings.microsoftGraph.microsoftGraphStrings.allAllowed = "allAllowed".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allAllowed]
   @scala.inline
-  def allBlocked: typings.microsoftGraph.microsoftGraphStrings.allBlocked = this.cast("allBlocked")
+  def allBlocked: typings.microsoftGraph.microsoftGraphStrings.allBlocked = "allBlocked".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allBlocked]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def general: typings.microsoftGraph.microsoftGraphStrings.general = this.cast("general")
+  def general: typings.microsoftGraph.microsoftGraphStrings.general = "general".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.general]
 }
 

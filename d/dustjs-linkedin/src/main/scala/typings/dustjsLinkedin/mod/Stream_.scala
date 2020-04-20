@@ -24,7 +24,6 @@ object Stream_ {
     pipe: Stream_ => Stream_
   ): Stream_ = {
     val __obj = js.Dynamic.literal(emit = js.Any.fromFunction2(emit), flush = js.Any.fromFunction0(flush), on = js.Any.fromFunction2(on), pipe = js.Any.fromFunction1(pipe))
-  
     __obj.asInstanceOf[Stream_]
   }
 }

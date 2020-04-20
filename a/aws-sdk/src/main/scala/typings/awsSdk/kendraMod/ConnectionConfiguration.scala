@@ -38,7 +38,6 @@ object ConnectionConfiguration {
     TableName: TableName
   ): ConnectionConfiguration = {
     val __obj = js.Dynamic.literal(DatabaseHost = DatabaseHost.asInstanceOf[js.Any], DatabaseName = DatabaseName.asInstanceOf[js.Any], DatabasePort = DatabasePort.asInstanceOf[js.Any], SecretArn = SecretArn.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConnectionConfiguration]
   }
 }

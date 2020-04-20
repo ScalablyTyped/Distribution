@@ -21,7 +21,6 @@ object AssociationArgs {
   @scala.inline
   def apply(licenseConfigurationArn: Input[String], resourceArn: Input[String]): AssociationArgs = {
     val __obj = js.Dynamic.literal(licenseConfigurationArn = licenseConfigurationArn.asInstanceOf[js.Any], resourceArn = resourceArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssociationArgs]
   }
 }

@@ -15,7 +15,6 @@ object AnonGroupIndividual {
   @scala.inline
   def apply(groupIndividual: Boolean, nonce: String, reserved: Boolean, universalLocal: Boolean): AnonGroupIndividual = {
     val __obj = js.Dynamic.literal(groupIndividual = groupIndividual.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], reserved = reserved.asInstanceOf[js.Any], universalLocal = universalLocal.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGroupIndividual]
   }
 }

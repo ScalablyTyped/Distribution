@@ -14,7 +14,6 @@ object ReadOnlyRecordSourceProxy {
   @scala.inline
   def apply(get: DataID => js.UndefOr[ReadOnlyRecordProxy | Null], getRoot: () => ReadOnlyRecordProxy): ReadOnlyRecordSourceProxy = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), getRoot = js.Any.fromFunction0(getRoot))
-  
     __obj.asInstanceOf[ReadOnlyRecordSourceProxy]
   }
 }

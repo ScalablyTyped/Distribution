@@ -16,7 +16,6 @@ object PublishFailData {
   @scala.inline
   def apply(channel: String, error: Error, poolIndex: Double, targetURI: String): PublishFailData = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], poolIndex = poolIndex.asInstanceOf[js.Any], targetURI = targetURI.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PublishFailData]
   }
 }

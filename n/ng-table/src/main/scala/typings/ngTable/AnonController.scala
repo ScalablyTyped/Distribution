@@ -24,7 +24,6 @@ object AnonController {
     templateUrl: js.Any
   ): AnonController = {
     val __obj = js.Dynamic.literal(controller = controller.asInstanceOf[js.Any], controllerAs = controllerAs.asInstanceOf[js.Any], replace = replace.asInstanceOf[js.Any], restrict = restrict.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], templateUrl = templateUrl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonController]
   }
 }

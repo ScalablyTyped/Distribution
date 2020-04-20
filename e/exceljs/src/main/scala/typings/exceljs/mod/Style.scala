@@ -28,7 +28,6 @@ object Style {
     protection: PartialProtection
   ): Style = {
     val __obj = js.Dynamic.literal(alignment = alignment.asInstanceOf[js.Any], border = border.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], numFmt = numFmt.asInstanceOf[js.Any], protection = protection.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Style]
   }
 }

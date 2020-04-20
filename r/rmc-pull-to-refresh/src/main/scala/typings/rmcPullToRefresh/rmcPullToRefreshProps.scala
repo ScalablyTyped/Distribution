@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait rmcPullToRefreshProps {
   @scala.inline
-  def LibProps: PropsType.type = typings.rmcPullToRefresh.propsTypeMod.PropsType
+  def LibProps: PropsType.type = PropsType
   type LibProps = PropsType
   @scala.inline
-  def PullToRefreshProps: PropsType.type = typings.rmcPullToRefresh.propsTypeMod.PropsType
+  def PullToRefreshProps: PropsType.type = PropsType
   type PullToRefreshProps = PropsType
 }
 

@@ -125,7 +125,6 @@ object back {
     init: () => Unit
   ): back = {
     val __obj = js.Dynamic.literal(addToHistory = js.Any.fromFunction1(addToHistory), getHash = js.Any.fromFunction0(getHash), goBack = js.Any.fromFunction0(goBack), goForward = js.Any.fromFunction0(goForward), init = js.Any.fromFunction0(init))
-  
     __obj.asInstanceOf[back]
   }
 }

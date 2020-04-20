@@ -64,60 +64,58 @@ trait MsoAnimFilterEffectSubtype extends js.Object
 
 object MsoAnimFilterEffectSubtype {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoAnimFilterEffectSubtypeAcross: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def msoAnimFilterEffectSubtypeAcross: `9` = this.cast(9)
+  def msoAnimFilterEffectSubtypeDown: `25` = 25.asInstanceOf[`25`]
   @scala.inline
-  def msoAnimFilterEffectSubtypeDown: `25` = this.cast(25)
+  def msoAnimFilterEffectSubtypeDownLeft: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def msoAnimFilterEffectSubtypeDownLeft: `14` = this.cast(14)
+  def msoAnimFilterEffectSubtypeDownRight: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def msoAnimFilterEffectSubtypeDownRight: `16` = this.cast(16)
+  def msoAnimFilterEffectSubtypeFromBottom: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def msoAnimFilterEffectSubtypeFromBottom: `13` = this.cast(13)
+  def msoAnimFilterEffectSubtypeFromLeft: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def msoAnimFilterEffectSubtypeFromLeft: `10` = this.cast(10)
+  def msoAnimFilterEffectSubtypeFromRight: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def msoAnimFilterEffectSubtypeFromRight: `11` = this.cast(11)
+  def msoAnimFilterEffectSubtypeFromTop: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def msoAnimFilterEffectSubtypeFromTop: `12` = this.cast(12)
+  def msoAnimFilterEffectSubtypeHorizontal: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def msoAnimFilterEffectSubtypeHorizontal: `5` = this.cast(5)
+  def msoAnimFilterEffectSubtypeIn: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def msoAnimFilterEffectSubtypeIn: `7` = this.cast(7)
+  def msoAnimFilterEffectSubtypeInHorizontal: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoAnimFilterEffectSubtypeInHorizontal: `3` = this.cast(3)
+  def msoAnimFilterEffectSubtypeInVertical: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoAnimFilterEffectSubtypeInVertical: `1` = this.cast(1)
+  def msoAnimFilterEffectSubtypeLeft: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def msoAnimFilterEffectSubtypeLeft: `23` = this.cast(23)
+  def msoAnimFilterEffectSubtypeNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def msoAnimFilterEffectSubtypeNone: `0` = this.cast(0)
+  def msoAnimFilterEffectSubtypeOut: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def msoAnimFilterEffectSubtypeOut: `8` = this.cast(8)
+  def msoAnimFilterEffectSubtypeOutHorizontal: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoAnimFilterEffectSubtypeOutHorizontal: `4` = this.cast(4)
+  def msoAnimFilterEffectSubtypeOutVertical: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoAnimFilterEffectSubtypeOutVertical: `2` = this.cast(2)
+  def msoAnimFilterEffectSubtypeRight: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def msoAnimFilterEffectSubtypeRight: `24` = this.cast(24)
+  def msoAnimFilterEffectSubtypeSpokes1: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def msoAnimFilterEffectSubtypeSpokes1: `18` = this.cast(18)
+  def msoAnimFilterEffectSubtypeSpokes2: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def msoAnimFilterEffectSubtypeSpokes2: `19` = this.cast(19)
+  def msoAnimFilterEffectSubtypeSpokes3: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def msoAnimFilterEffectSubtypeSpokes3: `20` = this.cast(20)
+  def msoAnimFilterEffectSubtypeSpokes4: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def msoAnimFilterEffectSubtypeSpokes4: `21` = this.cast(21)
+  def msoAnimFilterEffectSubtypeSpokes8: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def msoAnimFilterEffectSubtypeSpokes8: `22` = this.cast(22)
+  def msoAnimFilterEffectSubtypeUp: `26` = 26.asInstanceOf[`26`]
   @scala.inline
-  def msoAnimFilterEffectSubtypeUp: `26` = this.cast(26)
+  def msoAnimFilterEffectSubtypeUpLeft: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def msoAnimFilterEffectSubtypeUpLeft: `15` = this.cast(15)
+  def msoAnimFilterEffectSubtypeUpRight: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def msoAnimFilterEffectSubtypeUpRight: `17` = this.cast(17)
-  @scala.inline
-  def msoAnimFilterEffectSubtypeVertical: `6` = this.cast(6)
+  def msoAnimFilterEffectSubtypeVertical: `6` = 6.asInstanceOf[`6`]
 }
 

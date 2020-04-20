@@ -19,7 +19,6 @@ object SnackbarOrigin {
   @scala.inline
   def apply(horizontal: left | center | right, vertical: top | bottom): SnackbarOrigin = {
     val __obj = js.Dynamic.literal(horizontal = horizontal.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SnackbarOrigin]
   }
 }

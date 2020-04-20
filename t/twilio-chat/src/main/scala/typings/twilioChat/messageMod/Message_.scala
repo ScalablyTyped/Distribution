@@ -40,27 +40,27 @@ class Message_ protected () extends EventEmitter {
   var services: js.Any = js.native
   var state: js.Any = js.native
   def _update(data: js.Any): Unit = js.native
-  def attributes(): js.Object = js.native
-  def author(): String = js.native
-  def body(): String = js.native
-  def dateUpdated(): Date = js.native
+  def attributes: js.Object = js.native
+  def author: String = js.native
+  def body: String = js.native
+  def dateUpdated: Date = js.native
   /**
     * Get Member who is author of the Message
     * @returns {Promise<Member>}
     */
   def getMember(): js.Promise[Member] = js.native
-  def index(): Double = js.native
-  def lastUpdatedBy(): String = js.native
-  def media(): Media = js.native
-  def memberSid(): String = js.native
+  def index: Double = js.native
+  def lastUpdatedBy: String = js.native
+  def media: Media = js.native
+  def memberSid: String = js.native
   /**
     * Remove the Message.
     * @returns {Promise<Message|SessionError>}
     */
   def remove(): js.Promise[Message | SessionError] = js.native
-  def sid(): String = js.native
-  def timestamp(): Date = js.native
-  def `type`(): Type = js.native
+  def sid: String = js.native
+  def timestamp: Date = js.native
+  def `type`: Type = js.native
   /**
     * Edit message attributes.
     * @param {Object} attributes new attributes for Message.

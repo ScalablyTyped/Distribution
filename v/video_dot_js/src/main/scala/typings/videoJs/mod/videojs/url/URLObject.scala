@@ -47,7 +47,6 @@ object URLObject {
     search: String
   ): URLObject = {
     val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[URLObject]
   }
 }

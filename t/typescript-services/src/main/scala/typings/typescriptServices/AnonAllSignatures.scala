@@ -14,7 +14,6 @@ object AnonAllSignatures {
   @scala.inline
   def apply(allSignatures: js.Array[PullSignatureSymbol], signature: PullSignatureSymbol): AnonAllSignatures = {
     val __obj = js.Dynamic.literal(allSignatures = allSignatures.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAllSignatures]
   }
 }

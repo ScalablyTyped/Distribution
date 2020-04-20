@@ -58,7 +58,6 @@ object URLSearchParams {
     values: () => IterableIterator[String]
   ): URLSearchParams = {
     val __obj = js.Dynamic.literal(append = js.Any.fromFunction2(append), delete = js.Any.fromFunction1(delete), entries = js.Any.fromFunction0(entries), get = js.Any.fromFunction1(get), getAll = js.Any.fromFunction1(getAll), has = js.Any.fromFunction1(has), keys = js.Any.fromFunction0(keys), set = js.Any.fromFunction2(set), values = js.Any.fromFunction0(values))
-  
     __obj.asInstanceOf[URLSearchParams]
   }
 }

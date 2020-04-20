@@ -14,7 +14,6 @@ object ISurveyImpl {
   @scala.inline
   def apply(geSurveyData: () => ISurveyData, getSurvey: () => ISurvey, getTextProcessor: () => ITextProcessor): ISurveyImpl = {
     val __obj = js.Dynamic.literal(geSurveyData = js.Any.fromFunction0(geSurveyData), getSurvey = js.Any.fromFunction0(getSurvey), getTextProcessor = js.Any.fromFunction0(getTextProcessor))
-  
     __obj.asInstanceOf[ISurveyImpl]
   }
 }

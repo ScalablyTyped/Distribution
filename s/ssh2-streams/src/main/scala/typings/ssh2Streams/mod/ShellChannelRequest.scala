@@ -15,7 +15,6 @@ object ShellChannelRequest {
   @scala.inline
   def apply(recipient: Double, request: shell, wantReply: Boolean): ShellChannelRequest = {
     val __obj = js.Dynamic.literal(recipient = recipient.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], wantReply = wantReply.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ShellChannelRequest]
   }
 }

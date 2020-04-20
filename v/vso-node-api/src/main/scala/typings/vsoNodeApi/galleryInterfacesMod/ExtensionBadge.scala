@@ -14,7 +14,6 @@ object ExtensionBadge {
   @scala.inline
   def apply(description: String, imgUri: String, link: String): ExtensionBadge = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], imgUri = imgUri.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExtensionBadge]
   }
 }

@@ -33,7 +33,6 @@ object ListTrafficPolicyVersionsResponse {
     TrafficPolicyVersionMarker: TrafficPolicyVersionMarker
   ): ListTrafficPolicyVersionsResponse = {
     val __obj = js.Dynamic.literal(IsTruncated = IsTruncated.asInstanceOf[js.Any], MaxItems = MaxItems.asInstanceOf[js.Any], TrafficPolicies = TrafficPolicies.asInstanceOf[js.Any], TrafficPolicyVersionMarker = TrafficPolicyVersionMarker.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListTrafficPolicyVersionsResponse]
   }
 }

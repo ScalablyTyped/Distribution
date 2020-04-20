@@ -12,7 +12,6 @@ object InnerHTML {
   @scala.inline
   def apply(innerHTML: java.lang.String): InnerHTML = {
     val __obj = js.Dynamic.literal(innerHTML = innerHTML.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InnerHTML]
   }
 }

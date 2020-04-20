@@ -43,7 +43,6 @@ object GetUserResult {
     userName: String
   ): GetUserResult = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], permissionsBoundary = permissionsBoundary.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any], userName = userName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetUserResult]
   }
 }

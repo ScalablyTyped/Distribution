@@ -47,7 +47,6 @@ object TestScheduler {
     scheduleTests: (js.Array[Test], typings.jestCore.testWatcherMod.default) => js.Promise[AggregatedResult]
   ): TestScheduler = {
     val __obj = js.Dynamic.literal(_addCustomReporters = _addCustomReporters.asInstanceOf[js.Any], _bailIfNeeded = _bailIfNeeded.asInstanceOf[js.Any], _context = _context.asInstanceOf[js.Any], _dispatcher = _dispatcher.asInstanceOf[js.Any], _getReporterProps = _getReporterProps.asInstanceOf[js.Any], _globalConfig = _globalConfig.asInstanceOf[js.Any], _options = _options.asInstanceOf[js.Any], _partitionTests = _partitionTests.asInstanceOf[js.Any], _setupDefaultReporters = _setupDefaultReporters.asInstanceOf[js.Any], _setupReporters = _setupReporters.asInstanceOf[js.Any], _shouldAddDefaultReporters = _shouldAddDefaultReporters.asInstanceOf[js.Any], addReporter = js.Any.fromFunction1(addReporter), removeReporter = js.Any.fromFunction1(removeReporter), scheduleTests = js.Any.fromFunction2(scheduleTests))
-  
     __obj.asInstanceOf[TestScheduler]
   }
 }

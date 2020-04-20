@@ -34,7 +34,6 @@ object ISmsTextMessage {
     toBinaryMessages: SmsDataFormat => IVectorView[ISmsBinaryMessage]
   ): ISmsTextMessage = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], messageClass = messageClass.asInstanceOf[js.Any], partCount = partCount.asInstanceOf[js.Any], partNumber = partNumber.asInstanceOf[js.Any], partReferenceId = partReferenceId.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any], toBinaryMessages = js.Any.fromFunction1(toBinaryMessages))
-  
     __obj.asInstanceOf[ISmsTextMessage]
   }
 }

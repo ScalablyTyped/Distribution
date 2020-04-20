@@ -17,18 +17,16 @@ trait NoiseType extends js.Object
 
 object NoiseType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def gaussian: gaussian_ = "gaussian".asInstanceOf[gaussian_]
   @scala.inline
-  def gaussian: gaussian_ = this.cast("gaussian")
+  def impulse: typings.gm.gmStrings.impulse = "impulse".asInstanceOf[typings.gm.gmStrings.impulse]
   @scala.inline
-  def impulse: typings.gm.gmStrings.impulse = this.cast("impulse")
+  def laplacian: typings.gm.gmStrings.laplacian = "laplacian".asInstanceOf[typings.gm.gmStrings.laplacian]
   @scala.inline
-  def laplacian: typings.gm.gmStrings.laplacian = this.cast("laplacian")
+  def multiplicative: typings.gm.gmStrings.multiplicative = "multiplicative".asInstanceOf[typings.gm.gmStrings.multiplicative]
   @scala.inline
-  def multiplicative: typings.gm.gmStrings.multiplicative = this.cast("multiplicative")
+  def poisson: typings.gm.gmStrings.poisson = "poisson".asInstanceOf[typings.gm.gmStrings.poisson]
   @scala.inline
-  def poisson: typings.gm.gmStrings.poisson = this.cast("poisson")
-  @scala.inline
-  def uniform: typings.gm.gmStrings.uniform = this.cast("uniform")
+  def uniform: typings.gm.gmStrings.uniform = "uniform".asInstanceOf[typings.gm.gmStrings.uniform]
 }
 

@@ -16,12 +16,10 @@ trait WdSaveOptions extends js.Object
 
 object WdSaveOptions {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdDoNotSaveChanges: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdDoNotSaveChanges: `0` = this.cast(0)
+  def wdPromptToSaveChanges: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def wdPromptToSaveChanges: `-2` = this.cast(-2)
-  @scala.inline
-  def wdSaveChanges: `-1` = this.cast(-1)
+  def wdSaveChanges: `-1` = -1.asInstanceOf[`-1`]
 }
 

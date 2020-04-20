@@ -20,7 +20,6 @@ object TagHeaderFlags {
     unsynchronisation: Boolean
   ): TagHeaderFlags = {
     val __obj = js.Dynamic.literal(experimental_indicator = experimental_indicator.asInstanceOf[js.Any], extended_header = extended_header.asInstanceOf[js.Any], footer_present = footer_present.asInstanceOf[js.Any], unsynchronisation = unsynchronisation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TagHeaderFlags]
   }
 }

@@ -25,7 +25,6 @@ object Linking {
     getLinkedEntities: () => js.Array[LinkEntityExposedExpression]
   ): Linking = {
     val __obj = js.Dynamic.literal(addLinkedEntity = js.Any.fromFunction1(addLinkedEntity), getLinkedEntities = js.Any.fromFunction0(getLinkedEntities))
-  
     __obj.asInstanceOf[Linking]
   }
 }

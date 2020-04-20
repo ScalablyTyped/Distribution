@@ -12,7 +12,6 @@ object IDataWriterFactory {
   @scala.inline
   def apply(createDataWriter: IOutputStream => DataWriter): IDataWriterFactory = {
     val __obj = js.Dynamic.literal(createDataWriter = js.Any.fromFunction1(createDataWriter))
-  
     __obj.asInstanceOf[IDataWriterFactory]
   }
 }

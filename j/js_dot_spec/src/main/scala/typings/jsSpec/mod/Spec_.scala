@@ -38,7 +38,6 @@ object Spec_ {
     options: js.Object
   ): Spec_ = {
     val __obj = js.Dynamic.literal(conform = js.Any.fromFunction1(conform), explain = js.Any.fromFunction3(explain), name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Spec_]
   }
 }

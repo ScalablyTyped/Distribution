@@ -26,7 +26,6 @@ object SkAnimatedImage {
     width: () => Double
   ): SkAnimatedImage = {
     val __obj = js.Dynamic.literal(decodeNextFrame = js.Any.fromFunction0(decodeNextFrame), delete = js.Any.fromFunction0(delete), deleteAfter = js.Any.fromFunction0(deleteAfter), getFrameCount = js.Any.fromFunction0(getFrameCount), getRepetitionCount = js.Any.fromFunction0(getRepetitionCount), height = js.Any.fromFunction0(height), isAliasOf = js.Any.fromFunction1(isAliasOf), isDeleted = js.Any.fromFunction0(isDeleted), width = js.Any.fromFunction0(width))
-  
     __obj.asInstanceOf[SkAnimatedImage]
   }
 }

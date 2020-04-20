@@ -13,7 +13,6 @@ object PickImpldefaultValue {
   @scala.inline
   def apply(defaultValue: String): PickImpldefaultValue = {
     val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpldefaultValue]
   }
 }

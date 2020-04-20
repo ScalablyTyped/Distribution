@@ -13,7 +13,6 @@ object AnonIndoormap {
   @scala.inline
   def apply(indoor_map: `false`): AnonIndoormap = {
     val __obj = js.Dynamic.literal(indoor_map = indoor_map.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIndoormap]
   }
 }

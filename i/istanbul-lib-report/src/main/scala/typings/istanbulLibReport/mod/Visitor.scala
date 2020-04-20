@@ -22,7 +22,6 @@ object Visitor {
     onSummaryEnd: (N, js.Any) => Unit
   ): Visitor[N] = {
     val __obj = js.Dynamic.literal(onDetail = js.Any.fromFunction2(onDetail), onEnd = js.Any.fromFunction2(onEnd), onStart = js.Any.fromFunction2(onStart), onSummary = js.Any.fromFunction2(onSummary), onSummaryEnd = js.Any.fromFunction2(onSummaryEnd))
-  
     __obj.asInstanceOf[Visitor[N]]
   }
 }

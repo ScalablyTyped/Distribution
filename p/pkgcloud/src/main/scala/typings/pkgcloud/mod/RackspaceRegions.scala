@@ -16,18 +16,16 @@ trait RackspaceRegions extends js.Object
 
 object RackspaceRegions {
   @scala.inline
-  def DFW: typings.pkgcloud.pkgcloudStrings.DFW = this.cast("DFW")
+  def DFW: typings.pkgcloud.pkgcloudStrings.DFW = "DFW".asInstanceOf[typings.pkgcloud.pkgcloudStrings.DFW]
   @scala.inline
-  def HKG: typings.pkgcloud.pkgcloudStrings.HKG = this.cast("HKG")
+  def HKG: typings.pkgcloud.pkgcloudStrings.HKG = "HKG".asInstanceOf[typings.pkgcloud.pkgcloudStrings.HKG]
   @scala.inline
-  def IAD: typings.pkgcloud.pkgcloudStrings.IAD = this.cast("IAD")
+  def IAD: typings.pkgcloud.pkgcloudStrings.IAD = "IAD".asInstanceOf[typings.pkgcloud.pkgcloudStrings.IAD]
   @scala.inline
-  def LON: typings.pkgcloud.pkgcloudStrings.LON = this.cast("LON")
+  def LON: typings.pkgcloud.pkgcloudStrings.LON = "LON".asInstanceOf[typings.pkgcloud.pkgcloudStrings.LON]
   @scala.inline
-  def ORD: typings.pkgcloud.pkgcloudStrings.ORD = this.cast("ORD")
+  def ORD: typings.pkgcloud.pkgcloudStrings.ORD = "ORD".asInstanceOf[typings.pkgcloud.pkgcloudStrings.ORD]
   @scala.inline
-  def SYD: typings.pkgcloud.pkgcloudStrings.SYD = this.cast("SYD")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SYD: typings.pkgcloud.pkgcloudStrings.SYD = "SYD".asInstanceOf[typings.pkgcloud.pkgcloudStrings.SYD]
 }
 

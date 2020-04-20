@@ -17,7 +17,6 @@ object ITabItemTapOption {
   @scala.inline
   def apply(index: String, pagePath: String, text: String): ITabItemTapOption = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], pagePath = pagePath.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ITabItemTapOption]
   }
 }

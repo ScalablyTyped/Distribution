@@ -13,12 +13,10 @@ trait MessageRoutingModes extends js.Object
 
 object MessageRoutingModes {
   @scala.inline
-  def CustomPartition: typings.pulsarClient.pulsarClientStrings.CustomPartition = this.cast("CustomPartition")
+  def CustomPartition: typings.pulsarClient.pulsarClientStrings.CustomPartition = "CustomPartition".asInstanceOf[typings.pulsarClient.pulsarClientStrings.CustomPartition]
   @scala.inline
-  def RoundRobinPartition: typings.pulsarClient.pulsarClientStrings.RoundRobinPartition = this.cast("RoundRobinPartition")
+  def RoundRobinPartition: typings.pulsarClient.pulsarClientStrings.RoundRobinPartition = "RoundRobinPartition".asInstanceOf[typings.pulsarClient.pulsarClientStrings.RoundRobinPartition]
   @scala.inline
-  def SinglePartition: typings.pulsarClient.pulsarClientStrings.SinglePartition = this.cast("SinglePartition")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SinglePartition: typings.pulsarClient.pulsarClientStrings.SinglePartition = "SinglePartition".asInstanceOf[typings.pulsarClient.pulsarClientStrings.SinglePartition]
 }
 

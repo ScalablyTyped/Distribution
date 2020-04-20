@@ -12,7 +12,6 @@ object ReposGetBranchProtectionResponseAllowDeletions {
   @scala.inline
   def apply(enabled: Boolean): ReposGetBranchProtectionResponseAllowDeletions = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReposGetBranchProtectionResponseAllowDeletions]
   }
 }

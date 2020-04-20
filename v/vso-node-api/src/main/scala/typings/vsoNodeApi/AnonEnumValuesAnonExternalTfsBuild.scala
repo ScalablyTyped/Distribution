@@ -12,7 +12,6 @@ object AnonEnumValuesAnonExternalTfsBuild {
   @scala.inline
   def apply(enumValues: AnonExternalTfsBuild): AnonEnumValuesAnonExternalTfsBuild = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumValuesAnonExternalTfsBuild]
   }
 }

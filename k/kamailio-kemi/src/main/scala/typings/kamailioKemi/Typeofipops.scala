@@ -50,7 +50,6 @@ object Typeofipops {
     srv_query: (String, String) => Double
   ): Typeofipops = {
     val __obj = js.Dynamic.literal(compare_ips = js.Any.fromFunction2(compare_ips), compare_pure_ips = js.Any.fromFunction2(compare_pure_ips), detailed_ip_type = js.Any.fromFunction2(detailed_ip_type), detailed_ipv4_type = js.Any.fromFunction2(detailed_ipv4_type), detailed_ipv6_type = js.Any.fromFunction2(detailed_ipv6_type), dns_int_match_ip = js.Any.fromFunction2(dns_int_match_ip), dns_query = js.Any.fromFunction2(dns_query), dns_sys_match_ip = js.Any.fromFunction2(dns_sys_match_ip), ip_is_in_subnet = js.Any.fromFunction2(ip_is_in_subnet), ip_type = js.Any.fromFunction1(ip_type), is_in_subnet = js.Any.fromFunction2(is_in_subnet), is_ip = js.Any.fromFunction1(is_ip), is_ip4 = js.Any.fromFunction1(is_ip4), is_ip6 = js.Any.fromFunction1(is_ip6), is_ip6_reference = js.Any.fromFunction1(is_ip6_reference), is_ip_rfc1918 = js.Any.fromFunction1(is_ip_rfc1918), is_pure_ip = js.Any.fromFunction1(is_pure_ip), naptr_query = js.Any.fromFunction2(naptr_query), srv_query = js.Any.fromFunction2(srv_query))
-  
     __obj.asInstanceOf[Typeofipops]
   }
 }

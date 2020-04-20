@@ -24,7 +24,6 @@ object AnonAlpha {
     stencil: Boolean
   ): AnonAlpha = {
     val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], antialias = antialias.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], premultipliedAlpha = premultipliedAlpha.asInstanceOf[js.Any], preserveDrawingBuffer = preserveDrawingBuffer.asInstanceOf[js.Any], stencil = stencil.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAlpha]
   }
 }

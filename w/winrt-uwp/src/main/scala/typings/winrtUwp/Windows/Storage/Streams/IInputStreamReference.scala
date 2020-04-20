@@ -18,7 +18,6 @@ object IInputStreamReference {
   @scala.inline
   def apply(openSequentialReadAsync: () => IPromiseWithIAsyncOperation[IInputStream]): IInputStreamReference = {
     val __obj = js.Dynamic.literal(openSequentialReadAsync = js.Any.fromFunction0(openSequentialReadAsync))
-  
     __obj.asInstanceOf[IInputStreamReference]
   }
 }

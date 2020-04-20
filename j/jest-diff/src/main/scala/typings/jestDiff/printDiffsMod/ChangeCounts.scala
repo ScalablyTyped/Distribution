@@ -13,7 +13,6 @@ object ChangeCounts {
   @scala.inline
   def apply(a: Double, b: Double): ChangeCounts = {
     val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChangeCounts]
   }
 }

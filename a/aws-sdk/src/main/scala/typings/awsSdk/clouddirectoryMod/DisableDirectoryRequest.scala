@@ -16,7 +16,6 @@ object DisableDirectoryRequest {
   @scala.inline
   def apply(DirectoryArn: Arn): DisableDirectoryRequest = {
     val __obj = js.Dynamic.literal(DirectoryArn = DirectoryArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisableDirectoryRequest]
   }
 }

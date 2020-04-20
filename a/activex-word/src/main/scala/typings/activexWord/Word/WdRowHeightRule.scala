@@ -16,12 +16,10 @@ trait WdRowHeightRule extends js.Object
 
 object WdRowHeightRule {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdRowHeightAtLeast: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdRowHeightAtLeast: `1` = this.cast(1)
+  def wdRowHeightAuto: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdRowHeightAuto: `0` = this.cast(0)
-  @scala.inline
-  def wdRowHeightExactly: `2` = this.cast(2)
+  def wdRowHeightExactly: `2` = 2.asInstanceOf[`2`]
 }
 

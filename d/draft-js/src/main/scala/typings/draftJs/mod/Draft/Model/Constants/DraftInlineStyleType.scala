@@ -18,16 +18,14 @@ trait DraftInlineStyleType extends js.Object
 
 object DraftInlineStyleType {
   @scala.inline
-  def BOLD: typings.draftJs.draftJsStrings.BOLD = this.cast("BOLD")
+  def BOLD: typings.draftJs.draftJsStrings.BOLD = "BOLD".asInstanceOf[typings.draftJs.draftJsStrings.BOLD]
   @scala.inline
-  def CODE: typings.draftJs.draftJsStrings.CODE = this.cast("CODE")
+  def CODE: typings.draftJs.draftJsStrings.CODE = "CODE".asInstanceOf[typings.draftJs.draftJsStrings.CODE]
   @scala.inline
-  def ITALIC: typings.draftJs.draftJsStrings.ITALIC = this.cast("ITALIC")
+  def ITALIC: typings.draftJs.draftJsStrings.ITALIC = "ITALIC".asInstanceOf[typings.draftJs.draftJsStrings.ITALIC]
   @scala.inline
-  def STRIKETHROUGH: typings.draftJs.draftJsStrings.STRIKETHROUGH = this.cast("STRIKETHROUGH")
+  def STRIKETHROUGH: typings.draftJs.draftJsStrings.STRIKETHROUGH = "STRIKETHROUGH".asInstanceOf[typings.draftJs.draftJsStrings.STRIKETHROUGH]
   @scala.inline
-  def UNDERLINE: typings.draftJs.draftJsStrings.UNDERLINE = this.cast("UNDERLINE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UNDERLINE: typings.draftJs.draftJsStrings.UNDERLINE = "UNDERLINE".asInstanceOf[typings.draftJs.draftJsStrings.UNDERLINE]
 }
 

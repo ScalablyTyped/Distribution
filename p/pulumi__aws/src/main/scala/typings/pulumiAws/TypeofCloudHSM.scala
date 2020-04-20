@@ -13,7 +13,6 @@ object TypeofCloudHSM {
   @scala.inline
   def apply(Types: TypeofCloudHSM): TypeofCloudHSM = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofCloudHSM]
   }
 }

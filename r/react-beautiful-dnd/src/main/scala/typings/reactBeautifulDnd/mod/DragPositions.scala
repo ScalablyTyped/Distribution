@@ -13,7 +13,6 @@ object DragPositions {
   @scala.inline
   def apply(client: ClientPositions, page: PagePositions): DragPositions = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DragPositions]
   }
 }

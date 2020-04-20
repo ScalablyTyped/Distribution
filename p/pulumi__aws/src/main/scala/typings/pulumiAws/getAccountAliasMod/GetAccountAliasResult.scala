@@ -20,7 +20,6 @@ object GetAccountAliasResult {
   @scala.inline
   def apply(accountAlias: String, id: String): GetAccountAliasResult = {
     val __obj = js.Dynamic.literal(accountAlias = accountAlias.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetAccountAliasResult]
   }
 }

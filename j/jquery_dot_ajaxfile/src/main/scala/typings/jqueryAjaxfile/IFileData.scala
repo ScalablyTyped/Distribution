@@ -14,7 +14,6 @@ object IFileData {
   @scala.inline
   def apply(element: HTMLInputElement, name: String): IFileData = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IFileData]
   }
 }

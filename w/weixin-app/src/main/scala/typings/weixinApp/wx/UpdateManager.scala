@@ -33,7 +33,6 @@ object UpdateManager {
     onUpdateReady: js.Function0[Unit] => Unit
   ): UpdateManager = {
     val __obj = js.Dynamic.literal(applyUpdate = js.Any.fromFunction0(applyUpdate), onCheckForUpdate = js.Any.fromFunction1(onCheckForUpdate), onUpdateFailed = js.Any.fromFunction1(onUpdateFailed), onUpdateReady = js.Any.fromFunction1(onUpdateReady))
-  
     __obj.asInstanceOf[UpdateManager]
   }
 }

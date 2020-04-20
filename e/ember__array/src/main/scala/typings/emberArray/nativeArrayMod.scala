@@ -36,7 +36,7 @@ object nativeArrayMod extends js.Object {
        with Copyable
        with /* n */ NumberDictionary[T] {
     /** Iterator */
-    @JSName(scala.scalajs.js.Symbol.iterator)
+    @JSName(js.Symbol.iterator)
     var iterator: js.Function0[IterableIterator[T]] = js.native
     /**
       * __Required.__ You must implement this method to apply this mixin.
@@ -47,7 +47,7 @@ object nativeArrayMod extends js.Object {
       * Returns an object whose properties have the value 'true'
       * when they will be absent when used in a 'with' statement.
       */
-    @JSName(scala.scalajs.js.Symbol.unscopables)
+    @JSName(js.Symbol.unscopables)
     var unscopables: js.Function0[AnonCopyWithin] = js.native
     /**
       * Combines two or more arrays.

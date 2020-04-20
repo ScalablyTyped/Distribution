@@ -20,7 +20,6 @@ object TransferFailed {
   @scala.inline
   def apply(call: Call): TransferFailed = {
     val __obj = js.Dynamic.literal(call = call.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TransferFailed]
   }
 }

@@ -14,7 +14,6 @@ object IServiceProvider {
   @scala.inline
   def apply($get: js.Any): IServiceProvider = {
     val __obj = js.Dynamic.literal($get = $get.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IServiceProvider]
   }
 }

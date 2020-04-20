@@ -18,7 +18,6 @@ object TextParagraph {
   @scala.inline
   def apply(setText: String => TextParagraph): TextParagraph = {
     val __obj = js.Dynamic.literal(setText = js.Any.fromFunction1(setText))
-  
     __obj.asInstanceOf[TextParagraph]
   }
 }

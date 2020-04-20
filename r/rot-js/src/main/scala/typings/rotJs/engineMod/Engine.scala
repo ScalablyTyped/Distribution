@@ -31,7 +31,6 @@ object Engine {
     unlock: () => Engine
   ): Engine = {
     val __obj = js.Dynamic.literal(_lock = _lock.asInstanceOf[js.Any], _scheduler = _scheduler.asInstanceOf[js.Any], lock = js.Any.fromFunction0(lock), start = js.Any.fromFunction0(start), unlock = js.Any.fromFunction0(unlock))
-  
     __obj.asInstanceOf[Engine]
   }
 }

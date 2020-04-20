@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactScrollRotateComponents extends reactScrollRotateProps {
   @scala.inline
-  def ScrollRotate: ComponentType[ScrollRotateProps] = js.constructorOf[typings.reactScrollRotate.mod.ScrollRotate].asInstanceOf[typings.react.mod.ComponentType[ScrollRotateProps]]
+  def ScrollRotate: ComponentType[ScrollRotateProps] = js.constructorOf[typings.reactScrollRotate.mod.ScrollRotate].asInstanceOf[ComponentType[ScrollRotateProps]]
 }
 

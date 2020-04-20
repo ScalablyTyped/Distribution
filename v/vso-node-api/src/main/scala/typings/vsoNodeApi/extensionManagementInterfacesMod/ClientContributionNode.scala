@@ -23,7 +23,6 @@ object ClientContributionNode {
   @scala.inline
   def apply(children: js.Array[String], contribution: ClientContribution, parents: js.Array[String]): ClientContributionNode = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], contribution = contribution.asInstanceOf[js.Any], parents = parents.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClientContributionNode]
   }
 }

@@ -14,7 +14,6 @@ object ServerCreate {
   @scala.inline
   def apply(server: TeamSpeakServer, token: String): ServerCreate = {
     val __obj = js.Dynamic.literal(server = server.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ServerCreate]
   }
 }

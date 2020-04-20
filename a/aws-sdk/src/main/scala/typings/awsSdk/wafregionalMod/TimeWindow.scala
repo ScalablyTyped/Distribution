@@ -20,7 +20,6 @@ object TimeWindow {
   @scala.inline
   def apply(EndTime: Timestamp, StartTime: Timestamp): TimeWindow = {
     val __obj = js.Dynamic.literal(EndTime = EndTime.asInstanceOf[js.Any], StartTime = StartTime.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TimeWindow]
   }
 }

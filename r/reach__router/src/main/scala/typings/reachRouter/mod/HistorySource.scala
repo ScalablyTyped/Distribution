@@ -22,7 +22,6 @@ object HistorySource {
     removeEventListener: (String, js.Function1[/* event */ Event_, Unit]) => Unit
   ): HistorySource = {
     val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), history = history.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], removeEventListener = js.Any.fromFunction2(removeEventListener))
-  
     __obj.asInstanceOf[HistorySource]
   }
 }

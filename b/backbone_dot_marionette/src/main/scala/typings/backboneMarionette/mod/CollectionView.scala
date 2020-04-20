@@ -18,7 +18,7 @@ class CollectionView[TModel /* <: Model */, TView /* <: View[TModel] */, TCollec
   /**
     * Specify a child view to use.
     */
-  var childView: (js.Function1[/* model */ TModel, AnonInstantiable[TView]]) | AnonInstantiable[TView] = js.native
+  var childView: (js.Function1[/* model */ TModel, AnonInstantiable[TView, TModel]]) | (AnonInstantiable[TView, TModel]) = js.native
   /**
     * Customize the event prefix for events that are forwarded through the
     * collection view.
@@ -88,7 +88,11 @@ class CollectionView[TModel /* <: Model */, TView /* <: View[TModel] */, TCollec
     * The buildChildView is responsible for taking the ChildView class and
     * instantiating it with the appropriate data.
     */
-  def buildChildView(child: TModel, childViewClass: AnonInstantiable[TView], childViewOptions: ViewOptions[TModel]): Unit = js.native
+  def buildChildView(
+    child: TModel,
+    childViewClass: AnonInstantiable[TView, TModel],
+    childViewOptions: ViewOptions[TModel]
+  ): Unit = js.native
   /**
     * Automatically destroys this Collection's children and cleans up
     * listeners.

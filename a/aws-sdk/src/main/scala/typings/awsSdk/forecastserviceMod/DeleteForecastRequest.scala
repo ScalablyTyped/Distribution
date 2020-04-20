@@ -16,7 +16,6 @@ object DeleteForecastRequest {
   @scala.inline
   def apply(ForecastArn: Arn): DeleteForecastRequest = {
     val __obj = js.Dynamic.literal(ForecastArn = ForecastArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteForecastRequest]
   }
 }

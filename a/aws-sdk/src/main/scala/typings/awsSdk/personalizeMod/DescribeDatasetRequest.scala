@@ -16,7 +16,6 @@ object DescribeDatasetRequest {
   @scala.inline
   def apply(datasetArn: Arn): DescribeDatasetRequest = {
     val __obj = js.Dynamic.literal(datasetArn = datasetArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeDatasetRequest]
   }
 }

@@ -14,7 +14,6 @@ object AnonHot {
   @scala.inline
   def apply(hot: Boolean, pageviews: Double, unreviewed_annotations: Double): AnonHot = {
     val __obj = js.Dynamic.literal(hot = hot.asInstanceOf[js.Any], pageviews = pageviews.asInstanceOf[js.Any], unreviewed_annotations = unreviewed_annotations.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHot]
   }
 }

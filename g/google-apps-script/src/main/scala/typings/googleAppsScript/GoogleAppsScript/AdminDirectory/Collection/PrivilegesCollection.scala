@@ -14,7 +14,6 @@ object PrivilegesCollection {
   @scala.inline
   def apply(list: String => Privileges): PrivilegesCollection = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[PrivilegesCollection]
   }
 }

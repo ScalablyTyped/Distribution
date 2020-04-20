@@ -16,7 +16,6 @@ object DeleteServerRequest {
   @scala.inline
   def apply(ServerId: ServerId): DeleteServerRequest = {
     val __obj = js.Dynamic.literal(ServerId = ServerId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteServerRequest]
   }
 }

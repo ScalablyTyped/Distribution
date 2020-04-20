@@ -20,7 +20,6 @@ object WorkflowExecution {
   @scala.inline
   def apply(runId: WorkflowRunId, workflowId: WorkflowId): WorkflowExecution = {
     val __obj = js.Dynamic.literal(runId = runId.asInstanceOf[js.Any], workflowId = workflowId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WorkflowExecution]
   }
 }

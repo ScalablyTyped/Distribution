@@ -25,7 +25,6 @@ object RedrivePolicy {
   @scala.inline
   def apply(deadLetterTargetArn: ARN, maxReceiveCount: Double): RedrivePolicy = {
     val __obj = js.Dynamic.literal(deadLetterTargetArn = deadLetterTargetArn.asInstanceOf[js.Any], maxReceiveCount = maxReceiveCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RedrivePolicy]
   }
 }

@@ -13,7 +13,6 @@ object RecipientWithAddress {
   @scala.inline
   def apply(address: Address | String): RecipientWithAddress = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RecipientWithAddress]
   }
 }

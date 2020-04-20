@@ -44,12 +44,12 @@ class BuildingBlock protected () extends TemplateFormBase {
   @JSName("platform")
   val platform_FBuildingBlock: SnippetType = js.native
   @JSName("containerAsFolderBase")
-  def containerAsFolderBase_MBuildingBlock(): FolderBase = js.native
+  def containerAsFolderBase_MBuildingBlock: FolderBase = js.native
   /**
     * In version 8.4.0: added public
     * In version 8.3.0: introduced
     */
-  def platform(): SnippetType = js.native
+  def platform: SnippetType = js.native
   def platform(newValue: SnippetType): js.Any = js.native
   def widget(): js.Any = js.native
   def widget(newValue: Widget): js.Any = js.native
@@ -57,11 +57,11 @@ class BuildingBlock protected () extends TemplateFormBase {
     * In version 7.15.0: deleted
     */
   @JSName("widget")
-  def widget_Union(): Widget | Null = js.native
+  def widget_Union: Widget | Null = js.native
   /**
     * In version 7.15.0: introduced
     */
-  def widgets(): IList[Widget] = js.native
+  def widgets: IList[Widget] = js.native
 }
 
 /* static members */

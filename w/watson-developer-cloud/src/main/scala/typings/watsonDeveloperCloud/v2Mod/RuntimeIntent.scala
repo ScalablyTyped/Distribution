@@ -16,7 +16,6 @@ object RuntimeIntent {
   @scala.inline
   def apply(confidence: Double, intent: String): RuntimeIntent = {
     val __obj = js.Dynamic.literal(confidence = confidence.asInstanceOf[js.Any], intent = intent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RuntimeIntent]
   }
 }

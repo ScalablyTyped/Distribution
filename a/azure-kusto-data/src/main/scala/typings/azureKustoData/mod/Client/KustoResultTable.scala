@@ -25,7 +25,6 @@ object KustoResultTable {
     toJson: () => js.Any
   ): KustoResultTable[T] = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], rows = js.Any.fromFunction0(rows), toJson = js.Any.fromFunction0(toJson))
-  
     __obj.asInstanceOf[KustoResultTable[T]]
   }
 }

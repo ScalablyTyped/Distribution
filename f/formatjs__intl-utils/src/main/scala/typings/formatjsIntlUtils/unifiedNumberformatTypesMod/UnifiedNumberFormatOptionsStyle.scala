@@ -14,14 +14,12 @@ trait UnifiedNumberFormatOptionsStyle extends js.Object
 
 object UnifiedNumberFormatOptionsStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def currency: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.currency = "currency".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.currency]
   @scala.inline
-  def currency: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.currency = this.cast("currency")
+  def decimal: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.decimal = "decimal".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.decimal]
   @scala.inline
-  def decimal: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.decimal = this.cast("decimal")
+  def percent: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.percent = "percent".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.percent]
   @scala.inline
-  def percent: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.percent = this.cast("percent")
-  @scala.inline
-  def unit: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.unit = this.cast("unit")
+  def unit: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.unit = "unit".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.unit]
 }
 

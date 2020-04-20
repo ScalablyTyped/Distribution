@@ -24,20 +24,18 @@ trait AcSendObjectType extends js.Object
 
 object AcSendObjectType {
   @scala.inline
-  def acSendDataAccessPage: `6` = this.cast(6)
+  def acSendDataAccessPage: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def acSendForm: `2` = this.cast(2)
+  def acSendForm: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def acSendModule: `5` = this.cast(5)
+  def acSendModule: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def acSendNoObject: `-1` = this.cast(-1)
+  def acSendNoObject: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def acSendQuery: `1` = this.cast(1)
+  def acSendQuery: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def acSendReport: `3` = this.cast(3)
+  def acSendReport: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def acSendTable: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def acSendTable: `0` = 0.asInstanceOf[`0`]
 }
 

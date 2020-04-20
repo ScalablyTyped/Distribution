@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait tinySliderReactProps {
   @scala.inline
-  def TinySliderReactProps: TinySliderProps.type = typings.tinySliderReact.mod.TinySliderProps
+  def TinySliderReactProps: TinySliderProps.type = TinySliderProps
   type TinySliderReactProps = TinySliderProps
 }
 

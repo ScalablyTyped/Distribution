@@ -23,7 +23,6 @@ object ReviewSummary {
   @scala.inline
   def apply(averageRating: Double, ratingCount: Double, ratingSplit: js.Array[RatingCountPerRating]): ReviewSummary = {
     val __obj = js.Dynamic.literal(averageRating = averageRating.asInstanceOf[js.Any], ratingCount = ratingCount.asInstanceOf[js.Any], ratingSplit = ratingSplit.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReviewSummary]
   }
 }

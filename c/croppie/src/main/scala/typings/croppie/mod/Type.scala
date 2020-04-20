@@ -15,16 +15,14 @@ trait Type extends js.Object
 
 object Type {
   @scala.inline
-  def base64: typings.croppie.croppieStrings.base64 = this.cast("base64")
+  def base64: typings.croppie.croppieStrings.base64 = "base64".asInstanceOf[typings.croppie.croppieStrings.base64]
   @scala.inline
-  def blob: typings.croppie.croppieStrings.blob = this.cast("blob")
+  def blob: typings.croppie.croppieStrings.blob = "blob".asInstanceOf[typings.croppie.croppieStrings.blob]
   @scala.inline
-  def canvas: typings.croppie.croppieStrings.canvas = this.cast("canvas")
+  def canvas: typings.croppie.croppieStrings.canvas = "canvas".asInstanceOf[typings.croppie.croppieStrings.canvas]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def html: typings.croppie.croppieStrings.html = "html".asInstanceOf[typings.croppie.croppieStrings.html]
   @scala.inline
-  def html: typings.croppie.croppieStrings.html = this.cast("html")
-  @scala.inline
-  def rawcanvas: typings.croppie.croppieStrings.rawcanvas = this.cast("rawcanvas")
+  def rawcanvas: typings.croppie.croppieStrings.rawcanvas = "rawcanvas".asInstanceOf[typings.croppie.croppieStrings.rawcanvas]
 }
 

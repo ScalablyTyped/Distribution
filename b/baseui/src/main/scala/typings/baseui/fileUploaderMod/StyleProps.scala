@@ -30,7 +30,6 @@ object StyleProps {
     $isFocused: Boolean
   ): StyleProps = {
     val __obj = js.Dynamic.literal($afterFileDrop = $afterFileDrop.asInstanceOf[js.Any], $isDisabled = $isDisabled.asInstanceOf[js.Any], $isDragAccept = $isDragAccept.asInstanceOf[js.Any], $isDragActive = $isDragActive.asInstanceOf[js.Any], $isDragReject = $isDragReject.asInstanceOf[js.Any], $isFocused = $isFocused.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StyleProps]
   }
 }

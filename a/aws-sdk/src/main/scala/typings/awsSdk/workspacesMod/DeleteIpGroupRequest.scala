@@ -16,7 +16,6 @@ object DeleteIpGroupRequest {
   @scala.inline
   def apply(GroupId: IpGroupId): DeleteIpGroupRequest = {
     val __obj = js.Dynamic.literal(GroupId = GroupId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteIpGroupRequest]
   }
 }

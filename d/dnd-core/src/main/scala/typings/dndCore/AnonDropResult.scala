@@ -27,7 +27,6 @@ object AnonDropResult {
     targetIds: js.Array[String]
   ): AnonDropResult = {
     val __obj = js.Dynamic.literal(dropResult = dropResult.asInstanceOf[js.Any], isSourcePublic = isSourcePublic.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemType = itemType.asInstanceOf[js.Any], sourceId = sourceId.asInstanceOf[js.Any], targetId = targetId.asInstanceOf[js.Any], targetIds = targetIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDropResult]
   }
 }

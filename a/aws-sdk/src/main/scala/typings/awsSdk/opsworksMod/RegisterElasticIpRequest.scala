@@ -20,7 +20,6 @@ object RegisterElasticIpRequest {
   @scala.inline
   def apply(ElasticIp: String, StackId: String): RegisterElasticIpRequest = {
     val __obj = js.Dynamic.literal(ElasticIp = ElasticIp.asInstanceOf[js.Any], StackId = StackId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RegisterElasticIpRequest]
   }
 }

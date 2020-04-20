@@ -26,7 +26,6 @@ object IIDs {
     RemoveAll: Double => Double
   ): IIDs = {
     val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Clone = js.Any.fromFunction0(Clone), Count = Count.asInstanceOf[js.Any], IndexOf = js.Any.fromFunction1(IndexOf), Item = js.Any.fromFunction1(Item), Remove = js.Any.fromFunction1(Remove), RemoveAll = js.Any.fromFunction1(RemoveAll))
-  
     __obj.asInstanceOf[IIDs]
   }
 }

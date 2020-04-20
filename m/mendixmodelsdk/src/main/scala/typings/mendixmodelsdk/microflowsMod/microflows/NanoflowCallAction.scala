@@ -25,11 +25,11 @@ class NanoflowCallAction protected () extends MicroflowAction {
   ) = this()
   @JSName("model")
   var model_FNanoflowCallAction: IModel = js.native
-  def nanoflowCall(): NanoflowCall = js.native
+  def nanoflowCall: NanoflowCall = js.native
   def nanoflowCall(newValue: NanoflowCall): js.Any = js.native
-  def outputVariableName(): String = js.native
+  def outputVariableName: String = js.native
   def outputVariableName(newValue: String): js.Any = js.native
-  def useReturnVariable(): Boolean = js.native
+  def useReturnVariable: Boolean = js.native
   def useReturnVariable(newValue: Boolean): js.Any = js.native
 }
 

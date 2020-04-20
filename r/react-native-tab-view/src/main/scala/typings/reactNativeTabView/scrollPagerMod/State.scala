@@ -13,7 +13,6 @@ object State {
   @scala.inline
   def apply(initialOffset: AnonX): State = {
     val __obj = js.Dynamic.literal(initialOffset = initialOffset.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[State]
   }
 }

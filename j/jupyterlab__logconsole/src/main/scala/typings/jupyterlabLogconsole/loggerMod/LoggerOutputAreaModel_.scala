@@ -27,7 +27,7 @@ class LoggerOutputAreaModel_ protected () extends OutputAreaModel {
   /**
     * Maximum number of outputs to store in the model.
     */
-  def maxLength(): Double = js.native
+  def maxLength: Double = js.native
   def maxLength(value: Double): js.Any = js.native
   /**
     * Whether an output should combine with the previous output.

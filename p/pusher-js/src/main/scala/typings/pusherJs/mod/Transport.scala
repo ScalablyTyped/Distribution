@@ -15,16 +15,14 @@ trait Transport extends js.Object
 
 object Transport {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def sockjs: typings.pusherJs.pusherJsStrings.sockjs = "sockjs".asInstanceOf[typings.pusherJs.pusherJsStrings.sockjs]
   @scala.inline
-  def sockjs: typings.pusherJs.pusherJsStrings.sockjs = this.cast("sockjs")
+  def ws: typings.pusherJs.pusherJsStrings.ws = "ws".asInstanceOf[typings.pusherJs.pusherJsStrings.ws]
   @scala.inline
-  def ws: typings.pusherJs.pusherJsStrings.ws = this.cast("ws")
+  def wss: typings.pusherJs.pusherJsStrings.wss = "wss".asInstanceOf[typings.pusherJs.pusherJsStrings.wss]
   @scala.inline
-  def wss: typings.pusherJs.pusherJsStrings.wss = this.cast("wss")
+  def xhr_polling: typings.pusherJs.pusherJsStrings.xhr_polling = "xhr_polling".asInstanceOf[typings.pusherJs.pusherJsStrings.xhr_polling]
   @scala.inline
-  def xhr_polling: typings.pusherJs.pusherJsStrings.xhr_polling = this.cast("xhr_polling")
-  @scala.inline
-  def xhr_streaming: typings.pusherJs.pusherJsStrings.xhr_streaming = this.cast("xhr_streaming")
+  def xhr_streaming: typings.pusherJs.pusherJsStrings.xhr_streaming = "xhr_streaming".asInstanceOf[typings.pusherJs.pusherJsStrings.xhr_streaming]
 }
 

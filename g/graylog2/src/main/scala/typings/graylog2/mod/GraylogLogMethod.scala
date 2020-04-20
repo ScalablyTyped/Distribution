@@ -20,26 +20,24 @@ trait GraylogLogMethod extends js.Object
 
 object GraylogLogMethod {
   @scala.inline
-  def alert: typings.graylog2.graylog2Strings.alert = this.cast("alert")
+  def alert: typings.graylog2.graylog2Strings.alert = "alert".asInstanceOf[typings.graylog2.graylog2Strings.alert]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def critical: typings.graylog2.graylog2Strings.critical = "critical".asInstanceOf[typings.graylog2.graylog2Strings.critical]
   @scala.inline
-  def critical: typings.graylog2.graylog2Strings.critical = this.cast("critical")
+  def debug: typings.graylog2.graylog2Strings.debug = "debug".asInstanceOf[typings.graylog2.graylog2Strings.debug]
   @scala.inline
-  def debug: typings.graylog2.graylog2Strings.debug = this.cast("debug")
+  def emergency: typings.graylog2.graylog2Strings.emergency = "emergency".asInstanceOf[typings.graylog2.graylog2Strings.emergency]
   @scala.inline
-  def emergency: typings.graylog2.graylog2Strings.emergency = this.cast("emergency")
+  def error: typings.graylog2.graylog2Strings.error = "error".asInstanceOf[typings.graylog2.graylog2Strings.error]
   @scala.inline
-  def error: typings.graylog2.graylog2Strings.error = this.cast("error")
+  def info: typings.graylog2.graylog2Strings.info = "info".asInstanceOf[typings.graylog2.graylog2Strings.info]
   @scala.inline
-  def info: typings.graylog2.graylog2Strings.info = this.cast("info")
+  def log: typings.graylog2.graylog2Strings.log = "log".asInstanceOf[typings.graylog2.graylog2Strings.log]
   @scala.inline
-  def log: typings.graylog2.graylog2Strings.log = this.cast("log")
+  def notice: typings.graylog2.graylog2Strings.notice = "notice".asInstanceOf[typings.graylog2.graylog2Strings.notice]
   @scala.inline
-  def notice: typings.graylog2.graylog2Strings.notice = this.cast("notice")
+  def warn: typings.graylog2.graylog2Strings.warn = "warn".asInstanceOf[typings.graylog2.graylog2Strings.warn]
   @scala.inline
-  def warn: typings.graylog2.graylog2Strings.warn = this.cast("warn")
-  @scala.inline
-  def warning: typings.graylog2.graylog2Strings.warning = this.cast("warning")
+  def warning: typings.graylog2.graylog2Strings.warning = "warning".asInstanceOf[typings.graylog2.graylog2Strings.warning]
 }
 

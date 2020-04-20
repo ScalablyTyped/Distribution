@@ -16,7 +16,6 @@ object CancelReservedInstancesListingRequest {
   @scala.inline
   def apply(ReservedInstancesListingId: ReservedInstancesListingId): CancelReservedInstancesListingRequest = {
     val __obj = js.Dynamic.literal(ReservedInstancesListingId = ReservedInstancesListingId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CancelReservedInstancesListingRequest]
   }
 }

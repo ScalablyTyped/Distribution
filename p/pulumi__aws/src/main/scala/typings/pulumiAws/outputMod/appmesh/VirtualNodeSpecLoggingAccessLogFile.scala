@@ -16,7 +16,6 @@ object VirtualNodeSpecLoggingAccessLogFile {
   @scala.inline
   def apply(path: String): VirtualNodeSpecLoggingAccessLogFile = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VirtualNodeSpecLoggingAccessLogFile]
   }
 }

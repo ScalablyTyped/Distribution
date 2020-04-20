@@ -16,18 +16,16 @@ trait AccessibilityActionName extends js.Object
 
 object AccessibilityActionName {
   @scala.inline
-  def activate: typings.reactNative.reactNativeStrings.activate = this.cast("activate")
+  def activate: typings.reactNative.reactNativeStrings.activate = "activate".asInstanceOf[typings.reactNative.reactNativeStrings.activate]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def decrement: typings.reactNative.reactNativeStrings.decrement = "decrement".asInstanceOf[typings.reactNative.reactNativeStrings.decrement]
   @scala.inline
-  def decrement: typings.reactNative.reactNativeStrings.decrement = this.cast("decrement")
+  def escape: typings.reactNative.reactNativeStrings.escape = "escape".asInstanceOf[typings.reactNative.reactNativeStrings.escape]
   @scala.inline
-  def escape: typings.reactNative.reactNativeStrings.escape = this.cast("escape")
+  def increment: typings.reactNative.reactNativeStrings.increment = "increment".asInstanceOf[typings.reactNative.reactNativeStrings.increment]
   @scala.inline
-  def increment: typings.reactNative.reactNativeStrings.increment = this.cast("increment")
+  def longpress: typings.reactNative.reactNativeStrings.longpress = "longpress".asInstanceOf[typings.reactNative.reactNativeStrings.longpress]
   @scala.inline
-  def longpress: typings.reactNative.reactNativeStrings.longpress = this.cast("longpress")
-  @scala.inline
-  def magicTap: typings.reactNative.reactNativeStrings.magicTap = this.cast("magicTap")
+  def magicTap: typings.reactNative.reactNativeStrings.magicTap = "magicTap".asInstanceOf[typings.reactNative.reactNativeStrings.magicTap]
 }
 

@@ -34,30 +34,28 @@ trait mediaType extends js.Object
 
 object mediaType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def mediaTypeAll: `511` = 511.asInstanceOf[`511`]
   @scala.inline
-  def mediaTypeAll: `511` = this.cast(511)
+  def mediaTypeAural: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def mediaTypeAural: `1` = this.cast(1)
+  def mediaTypeBraille: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def mediaTypeBraille: `2` = this.cast(2)
+  def mediaTypeEmbossed: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def mediaTypeEmbossed: `4` = this.cast(4)
+  def mediaTypeHandheld: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def mediaTypeHandheld: `8` = this.cast(8)
+  def mediaTypeNotSet: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def mediaTypeNotSet: `0` = this.cast(0)
+  def mediaTypePrint: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def mediaTypePrint: `16` = this.cast(16)
+  def mediaTypeProjection: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def mediaTypeProjection: `32` = this.cast(32)
+  def mediaTypeScreen: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def mediaTypeScreen: `64` = this.cast(64)
+  def mediaTypeTty: `128` = 128.asInstanceOf[`128`]
   @scala.inline
-  def mediaTypeTty: `128` = this.cast(128)
+  def mediaTypeTv: `256` = 256.asInstanceOf[`256`]
   @scala.inline
-  def mediaTypeTv: `256` = this.cast(256)
-  @scala.inline
-  def mediaType_Max: `2147483647` = this.cast(2147483647)
+  def mediaType_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

@@ -25,7 +25,6 @@ object IPropertyType {
     ID: String
   ): IPropertyType = {
     val __obj = js.Dynamic.literal(BeginValidateNormalizeConvert = js.Any.fromFunction6(BeginValidateNormalizeConvert), ID = ID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPropertyType]
   }
 }

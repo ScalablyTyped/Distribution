@@ -17,7 +17,6 @@ object StepperConstants {
   @scala.inline
   def apply(DIRECTION: AnonCCW, RUNSTATE: AnonACCEL, TYPE: AnonDRIVER): StepperConstants = {
     val __obj = js.Dynamic.literal(DIRECTION = DIRECTION.asInstanceOf[js.Any], RUNSTATE = RUNSTATE.asInstanceOf[js.Any], TYPE = TYPE.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StepperConstants]
   }
 }

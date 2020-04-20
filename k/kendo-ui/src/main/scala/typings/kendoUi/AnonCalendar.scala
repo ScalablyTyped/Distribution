@@ -15,7 +15,6 @@ object AnonCalendar {
   @scala.inline
   def apply(calendar: Anon, calendars: AnonStandard, name: String, numberFormat: AnonCurrency): AnonCalendar = {
     val __obj = js.Dynamic.literal(calendar = calendar.asInstanceOf[js.Any], calendars = calendars.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], numberFormat = numberFormat.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCalendar]
   }
 }

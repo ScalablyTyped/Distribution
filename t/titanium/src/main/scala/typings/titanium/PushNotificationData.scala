@@ -14,7 +14,6 @@ trait PushNotificationData extends js.Object {
   var data: js.UndefOr[js.Any] = js.undefined
   /**
   	 * Boolean indicating if notification was received while app was in background.
-  	 * This property became available in Titanium Mobile 3.1.0 for iOS.
   	 */
   var inBackground: js.UndefOr[Boolean] = js.undefined
 }

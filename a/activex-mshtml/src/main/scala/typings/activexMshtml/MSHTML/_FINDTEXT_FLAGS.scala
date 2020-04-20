@@ -28,24 +28,22 @@ trait _FINDTEXT_FLAGS extends js.Object
 
 object _FINDTEXT_FLAGS {
   @scala.inline
-  def FINDTEXT_BACKWARDS: `1` = this.cast(1)
+  def FINDTEXT_BACKWARDS: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def FINDTEXT_FLAGS_Max: `2147483647` = this.cast(2147483647)
+  def FINDTEXT_FLAGS_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
   @scala.inline
-  def FINDTEXT_MATCHALEFHAMZA: `-2147483648` = this.cast(-2147483648)
+  def FINDTEXT_MATCHALEFHAMZA: `-2147483648` = -2147483648.asInstanceOf[`-2147483648`]
   @scala.inline
-  def FINDTEXT_MATCHCASE: `4` = this.cast(4)
+  def FINDTEXT_MATCHCASE: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def FINDTEXT_MATCHDIAC: `536870912` = this.cast(536870912)
+  def FINDTEXT_MATCHDIAC: `536870912` = 536870912.asInstanceOf[`536870912`]
   @scala.inline
-  def FINDTEXT_MATCHKASHIDA: `1073741824` = this.cast(1073741824)
+  def FINDTEXT_MATCHKASHIDA: `1073741824` = 1073741824.asInstanceOf[`1073741824`]
   @scala.inline
-  def FINDTEXT_MATCHREPEATEDWHITESPACE: `262144` = this.cast(262144)
+  def FINDTEXT_MATCHREPEATEDWHITESPACE: `262144` = 262144.asInstanceOf[`262144`]
   @scala.inline
-  def FINDTEXT_RAW: `131072` = this.cast(131072)
+  def FINDTEXT_RAW: `131072` = 131072.asInstanceOf[`131072`]
   @scala.inline
-  def FINDTEXT_WHOLEWORD: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def FINDTEXT_WHOLEWORD: `2` = 2.asInstanceOf[`2`]
 }
 

@@ -12,7 +12,6 @@ object PluginCleanupNumericValues {
   @scala.inline
   def apply(cleanupNumericValues: Boolean | js.Object): PluginCleanupNumericValues = {
     val __obj = js.Dynamic.literal(cleanupNumericValues = cleanupNumericValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PluginCleanupNumericValues]
   }
 }

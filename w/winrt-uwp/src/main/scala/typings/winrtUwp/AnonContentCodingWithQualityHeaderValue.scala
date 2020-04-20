@@ -14,7 +14,6 @@ object AnonContentCodingWithQualityHeaderValue {
   @scala.inline
   def apply(contentCodingWithQualityHeaderValue: HttpContentCodingWithQualityHeaderValue, returnValue: Boolean): AnonContentCodingWithQualityHeaderValue = {
     val __obj = js.Dynamic.literal(contentCodingWithQualityHeaderValue = contentCodingWithQualityHeaderValue.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonContentCodingWithQualityHeaderValue]
   }
 }

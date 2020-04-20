@@ -28,7 +28,6 @@ object Stream {
     writeLine: String => Unit
   ): Stream = {
     val __obj = js.Dynamic.literal(atEnd = js.Any.fromFunction0(atEnd), close = js.Any.fromFunction0(close), flush = js.Any.fromFunction0(flush), read = js.Any.fromFunction0(read), readLine = js.Any.fromFunction0(readLine), seek = js.Any.fromFunction1(seek), write = js.Any.fromFunction1(write), writeLine = js.Any.fromFunction1(writeLine))
-  
     __obj.asInstanceOf[Stream]
   }
 }

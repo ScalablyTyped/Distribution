@@ -27,7 +27,6 @@ object IEditorConfig {
   @scala.inline
   def apply(code: PartialIConfig, markdown: PartialIConfig, raw: PartialIConfig): IEditorConfig = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], markdown = markdown.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IEditorConfig]
   }
 }

@@ -15,7 +15,6 @@ object TextDocumentProviderFeature {
   @scala.inline
   def apply[T](getProvider: typings.vscode.mod.TextDocument => T): TextDocumentProviderFeature[T] = {
     val __obj = js.Dynamic.literal(getProvider = js.Any.fromFunction1(getProvider))
-  
     __obj.asInstanceOf[TextDocumentProviderFeature[T]]
   }
 }

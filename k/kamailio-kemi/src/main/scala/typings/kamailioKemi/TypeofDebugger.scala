@@ -13,7 +13,6 @@ object TypeofDebugger {
   @scala.inline
   def apply(dbg_pv_dump: () => Double, dbg_pv_dump_ex: (Double, Double) => Double): TypeofDebugger = {
     val __obj = js.Dynamic.literal(dbg_pv_dump = js.Any.fromFunction0(dbg_pv_dump), dbg_pv_dump_ex = js.Any.fromFunction2(dbg_pv_dump_ex))
-  
     __obj.asInstanceOf[TypeofDebugger]
   }
 }

@@ -24,7 +24,7 @@ object ActiveIndexFlag {
     * Flag which signifies that the `LContainer` does not have any inline embedded views.
     */
   @scala.inline
-  def DYNAMIC_EMBEDDED_VIEWS_ONLY: `-1` = this.cast(-1)
+  def DYNAMIC_EMBEDDED_VIEWS_ONLY: `-1` = -1.asInstanceOf[`-1`]
   /**
     * Flag to signify that this `LContainer` may have transplanted views which need to be change
     * detected. (see: `LView[DECLARATION_COMPONENT_VIEW])`.
@@ -34,19 +34,17 @@ object ActiveIndexFlag {
     * that the `MOVED_VIEWS` are transplanted and on-push.
     */
   @scala.inline
-  def HAS_TRANSPLANTED_VIEWS: `1` = this.cast(1)
+  def HAS_TRANSPLANTED_VIEWS: `1` = 1.asInstanceOf[`1`]
   /**
     * When incrementing the active index for inline embedded views, the amount to increment to leave
     * space for other flags.
     */
   @scala.inline
-  def INCREMENT: `2` = this.cast(2)
+  def INCREMENT: `2` = 2.asInstanceOf[`2`]
   /**
     * Number of bits to shift inline embedded views counter to make space for other flags.
     */
   @scala.inline
-  def SHIFT: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SHIFT: `1` = 1.asInstanceOf[`1`]
 }
 

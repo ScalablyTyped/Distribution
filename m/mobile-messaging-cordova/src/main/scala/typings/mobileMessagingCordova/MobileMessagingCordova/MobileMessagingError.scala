@@ -13,7 +13,6 @@ object MobileMessagingError {
   @scala.inline
   def apply(code: String, message: String): MobileMessagingError = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MobileMessagingError]
   }
 }

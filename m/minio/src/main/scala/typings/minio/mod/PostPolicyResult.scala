@@ -14,7 +14,6 @@ object PostPolicyResult {
   @scala.inline
   def apply(formData: StringDictionary[js.Any], postURL: String): PostPolicyResult = {
     val __obj = js.Dynamic.literal(formData = formData.asInstanceOf[js.Any], postURL = postURL.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PostPolicyResult]
   }
 }

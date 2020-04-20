@@ -13,7 +13,6 @@ object GridOptimisticPersistence {
   @scala.inline
   def apply(localStorage: js.Array[String], sessionStorage: js.Array[String]): GridOptimisticPersistence = {
     val __obj = js.Dynamic.literal(localStorage = localStorage.asInstanceOf[js.Any], sessionStorage = sessionStorage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GridOptimisticPersistence]
   }
 }

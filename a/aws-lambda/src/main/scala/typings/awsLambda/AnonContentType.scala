@@ -20,7 +20,6 @@ object AnonContentType {
     version: Double
   ): AnonContentType = {
     val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], genericAttachments = genericAttachments.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonContentType]
   }
 }

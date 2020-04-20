@@ -29,7 +29,6 @@ object Typeofeslint {
     SourceCode: TypeofSourceCode
   ): Typeofeslint = {
     val __obj = js.Dynamic.literal(AST = AST.asInstanceOf[js.Any], CLIEngine = CLIEngine.asInstanceOf[js.Any], Linter = Linter.asInstanceOf[js.Any], Rule = Rule.asInstanceOf[js.Any], RuleTester = RuleTester.asInstanceOf[js.Any], Scope = Scope.asInstanceOf[js.Any], SourceCode = SourceCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Typeofeslint]
   }
 }

@@ -12,7 +12,6 @@ object AttachmentCardClickEvent {
   @scala.inline
   def apply(getDownloadURL: () => js.Promise[String]): AttachmentCardClickEvent = {
     val __obj = js.Dynamic.literal(getDownloadURL = js.Any.fromFunction0(getDownloadURL))
-  
     __obj.asInstanceOf[AttachmentCardClickEvent]
   }
 }

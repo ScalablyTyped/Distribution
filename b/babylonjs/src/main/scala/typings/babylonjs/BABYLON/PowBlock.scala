@@ -15,14 +15,14 @@ class PowBlock protected () extends NodeMaterialBlock {
   /**
     * Gets the output component
     */
-  def output(): NodeMaterialConnectionPoint = js.native
+  def output: NodeMaterialConnectionPoint = js.native
   /**
     * Gets the power operand input component
     */
-  def power(): NodeMaterialConnectionPoint = js.native
+  def power: NodeMaterialConnectionPoint = js.native
   /**
     * Gets the value operand input component
     */
-  def value(): NodeMaterialConnectionPoint = js.native
+  def value: NodeMaterialConnectionPoint = js.native
 }
 

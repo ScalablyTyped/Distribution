@@ -17,7 +17,6 @@ object CreateVoiceTemplateRequest {
   @scala.inline
   def apply(TemplateName: string, VoiceTemplateRequest: VoiceTemplateRequest): CreateVoiceTemplateRequest = {
     val __obj = js.Dynamic.literal(TemplateName = TemplateName.asInstanceOf[js.Any], VoiceTemplateRequest = VoiceTemplateRequest.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateVoiceTemplateRequest]
   }
 }

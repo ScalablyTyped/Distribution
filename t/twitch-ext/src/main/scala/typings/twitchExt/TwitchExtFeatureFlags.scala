@@ -16,7 +16,6 @@ object TwitchExtFeatureFlags {
   @scala.inline
   def apply(isChatEnabled: Boolean): TwitchExtFeatureFlags = {
     val __obj = js.Dynamic.literal(isChatEnabled = isChatEnabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TwitchExtFeatureFlags]
   }
 }

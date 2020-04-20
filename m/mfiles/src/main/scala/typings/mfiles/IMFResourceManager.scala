@@ -18,7 +18,6 @@ object IMFResourceManager {
     LoadResourceString: (Double, Double) => String
   ): IMFResourceManager = {
     val __obj = js.Dynamic.literal(GetLocaleSpecificDateFormat = js.Any.fromFunction0(GetLocaleSpecificDateFormat), GetUICultures = js.Any.fromFunction0(GetUICultures), LoadResourceString = js.Any.fromFunction2(LoadResourceString))
-  
     __obj.asInstanceOf[IMFResourceManager]
   }
 }

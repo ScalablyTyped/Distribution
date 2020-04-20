@@ -14,7 +14,6 @@ object IConfig {
   @scala.inline
   def apply(get: String => js.Any, has: String => Boolean, util: IUtil): IConfig = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), util = util.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IConfig]
   }
 }

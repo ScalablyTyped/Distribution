@@ -15,7 +15,6 @@ object AnonPipes {
   @scala.inline
   def apply(pipes: js.Array[CompilePipeSummary], template: js.Array[TemplateAst]): AnonPipes = {
     val __obj = js.Dynamic.literal(pipes = pipes.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPipes]
   }
 }

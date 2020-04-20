@@ -52,7 +52,7 @@ object caniuseLiteStrings {
   @scala.inline
   def a: a = "a".asInstanceOf[a]
   @scala.inline
-  def `a x`: `a x` = "a x".asInstanceOf[`a x`]
+  def `a x`: `a x` = ("a x").asInstanceOf[`a x`]
   @scala.inline
   def cr: cr = "cr".asInstanceOf[cr]
   @scala.inline
@@ -76,6 +76,6 @@ object caniuseLiteStrings {
   @scala.inline
   def y: y = "y".asInstanceOf[y]
   @scala.inline
-  def `y x`: `y x` = "y x".asInstanceOf[`y x`]
+  def `y x`: `y x` = ("y x").asInstanceOf[`y x`]
 }
 

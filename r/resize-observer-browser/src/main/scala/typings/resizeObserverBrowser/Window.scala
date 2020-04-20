@@ -16,7 +16,6 @@ object Window {
   @scala.inline
   def apply(ResizeObserver: Instantiable1[/* callback */ ResizeObserverCallback, ResizeObserver]): Window = {
     val __obj = js.Dynamic.literal(ResizeObserver = ResizeObserver.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Window]
   }
 }

@@ -80,7 +80,6 @@ object BaseLayerViewGL2DTile {
     world: Double
   ): BaseLayerViewGL2DTile = {
     val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], coords = coords.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), resolution = resolution.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], world = world.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BaseLayerViewGL2DTile]
   }
 }

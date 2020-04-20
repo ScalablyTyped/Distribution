@@ -17,20 +17,18 @@ trait PaymentIntentStatus extends js.Object
 
 object PaymentIntentStatus {
   @scala.inline
-  def canceled: typings.stripeV3.stripeV3Strings.canceled = this.cast("canceled")
+  def canceled: typings.stripeV3.stripeV3Strings.canceled = "canceled".asInstanceOf[typings.stripeV3.stripeV3Strings.canceled]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def processing: typings.stripeV3.stripeV3Strings.processing = "processing".asInstanceOf[typings.stripeV3.stripeV3Strings.processing]
   @scala.inline
-  def processing: typings.stripeV3.stripeV3Strings.processing = this.cast("processing")
+  def requires_action: typings.stripeV3.stripeV3Strings.requires_action = "requires_action".asInstanceOf[typings.stripeV3.stripeV3Strings.requires_action]
   @scala.inline
-  def requires_action: typings.stripeV3.stripeV3Strings.requires_action = this.cast("requires_action")
+  def requires_capture: typings.stripeV3.stripeV3Strings.requires_capture = "requires_capture".asInstanceOf[typings.stripeV3.stripeV3Strings.requires_capture]
   @scala.inline
-  def requires_capture: typings.stripeV3.stripeV3Strings.requires_capture = this.cast("requires_capture")
+  def requires_confirmation: typings.stripeV3.stripeV3Strings.requires_confirmation = "requires_confirmation".asInstanceOf[typings.stripeV3.stripeV3Strings.requires_confirmation]
   @scala.inline
-  def requires_confirmation: typings.stripeV3.stripeV3Strings.requires_confirmation = this.cast("requires_confirmation")
+  def requires_payment_method: typings.stripeV3.stripeV3Strings.requires_payment_method = "requires_payment_method".asInstanceOf[typings.stripeV3.stripeV3Strings.requires_payment_method]
   @scala.inline
-  def requires_payment_method: typings.stripeV3.stripeV3Strings.requires_payment_method = this.cast("requires_payment_method")
-  @scala.inline
-  def succeeded: typings.stripeV3.stripeV3Strings.succeeded = this.cast("succeeded")
+  def succeeded: typings.stripeV3.stripeV3Strings.succeeded = "succeeded".asInstanceOf[typings.stripeV3.stripeV3Strings.succeeded]
 }
 

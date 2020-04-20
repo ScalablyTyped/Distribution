@@ -20,7 +20,6 @@ object StopContactRequest {
   @scala.inline
   def apply(ContactId: ContactId, InstanceId: InstanceId): StopContactRequest = {
     val __obj = js.Dynamic.literal(ContactId = ContactId.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopContactRequest]
   }
 }

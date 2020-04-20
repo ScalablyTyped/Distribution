@@ -16,12 +16,10 @@ trait RecordTypeEnum extends js.Object
 
 object RecordTypeEnum {
   @scala.inline
-  def adCollectionRecord: `1` = this.cast(1)
+  def adCollectionRecord: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def adSimpleRecord: `0` = this.cast(0)
+  def adSimpleRecord: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def adStructDoc: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def adStructDoc: `2` = 2.asInstanceOf[`2`]
 }
 

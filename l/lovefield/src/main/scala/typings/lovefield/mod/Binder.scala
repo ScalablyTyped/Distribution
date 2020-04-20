@@ -12,7 +12,6 @@ object Binder {
   @scala.inline
   def apply(getIndex: () => Double): Binder = {
     val __obj = js.Dynamic.literal(getIndex = js.Any.fromFunction0(getIndex))
-  
     __obj.asInstanceOf[Binder]
   }
 }

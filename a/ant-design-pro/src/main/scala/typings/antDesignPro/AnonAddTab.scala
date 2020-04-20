@@ -13,7 +13,6 @@ object AnonAddTab {
   @scala.inline
   def apply(addTab: js.Any => Unit, removeTab: js.Any => Unit): AnonAddTab = {
     val __obj = js.Dynamic.literal(addTab = js.Any.fromFunction1(addTab), removeTab = js.Any.fromFunction1(removeTab))
-  
     __obj.asInstanceOf[AnonAddTab]
   }
 }

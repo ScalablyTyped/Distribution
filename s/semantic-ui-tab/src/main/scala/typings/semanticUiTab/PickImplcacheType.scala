@@ -16,7 +16,6 @@ object PickImplcacheType {
   @scala.inline
   def apply(cacheType: response | DOM | html): PickImplcacheType = {
     val __obj = js.Dynamic.literal(cacheType = cacheType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplcacheType]
   }
 }

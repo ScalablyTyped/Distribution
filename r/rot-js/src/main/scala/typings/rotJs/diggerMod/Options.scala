@@ -22,7 +22,6 @@ object Options {
     timeLimit: Double
   ): Options = {
     val __obj = js.Dynamic.literal(corridorLength = corridorLength.asInstanceOf[js.Any], dugPercentage = dugPercentage.asInstanceOf[js.Any], roomHeight = roomHeight.asInstanceOf[js.Any], roomWidth = roomWidth.asInstanceOf[js.Any], timeLimit = timeLimit.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Options]
   }
 }

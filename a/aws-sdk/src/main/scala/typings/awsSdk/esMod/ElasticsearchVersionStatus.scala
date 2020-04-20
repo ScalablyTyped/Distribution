@@ -20,7 +20,6 @@ object ElasticsearchVersionStatus {
   @scala.inline
   def apply(Options: ElasticsearchVersionString, Status: OptionStatus): ElasticsearchVersionStatus = {
     val __obj = js.Dynamic.literal(Options = Options.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ElasticsearchVersionStatus]
   }
 }

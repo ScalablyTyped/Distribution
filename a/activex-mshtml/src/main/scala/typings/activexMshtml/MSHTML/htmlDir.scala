@@ -18,14 +18,12 @@ trait htmlDir extends js.Object
 
 object htmlDir {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def htmlDirLeftToRight: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def htmlDirLeftToRight: `1` = this.cast(1)
+  def htmlDirNotSet: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def htmlDirNotSet: `0` = this.cast(0)
+  def htmlDirRightToLeft: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def htmlDirRightToLeft: `2` = this.cast(2)
-  @scala.inline
-  def htmlDir_Max: `2147483647` = this.cast(2147483647)
+  def htmlDir_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

@@ -20,7 +20,6 @@ object DeleteAuthorizerRequest {
   @scala.inline
   def apply(authorizerId: String, restApiId: String): DeleteAuthorizerRequest = {
     val __obj = js.Dynamic.literal(authorizerId = authorizerId.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteAuthorizerRequest]
   }
 }

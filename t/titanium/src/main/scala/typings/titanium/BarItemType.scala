@@ -13,7 +13,7 @@ trait BarItemType extends js.Object {
   /**
   	 * A succint label associated with the bar item for the device's accessibility service.
   	 */
-  var accessibilityLabel: js.UndefOr[String] = js.undefined
+  var accessibilityLabel: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Whether the button is enabled initially.
   	 */
@@ -21,11 +21,11 @@ trait BarItemType extends js.Object {
   /**
   	 * Button icon. If specified, takes precedence over `title`.
   	 */
-  var image: js.UndefOr[String | Blob | File] = js.undefined
+  var image: js.UndefOr[java.lang.String | Blob | File] = js.undefined
   /**
   	 * Button title, used if no `image` is specified.
   	 */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Width for this button.
   	 */
@@ -35,10 +35,10 @@ trait BarItemType extends js.Object {
 object BarItemType {
   @scala.inline
   def apply(
-    accessibilityLabel: String = null,
+    accessibilityLabel: java.lang.String = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
-    image: String | Blob | File = null,
-    title: String = null,
+    image: java.lang.String | Blob | File = null,
+    title: java.lang.String = null,
     width: Int | Double = null
   ): BarItemType = {
     val __obj = js.Dynamic.literal()

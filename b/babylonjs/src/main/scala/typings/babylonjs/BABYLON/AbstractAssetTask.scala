@@ -33,11 +33,11 @@ abstract class AbstractAssetTask protected () extends js.Object {
   /**
     * Gets the current error object (if task is in error)
     */
-  def errorObject(): AnonException = js.native
+  def errorObject: AnonException = js.native
   /**
     * Get if the task is completed
     */
-  def isCompleted(): Boolean = js.native
+  def isCompleted: Boolean = js.native
   /**
     * Callback called when the task is not successful
     */
@@ -78,6 +78,6 @@ abstract class AbstractAssetTask protected () extends js.Object {
   /**
     * Gets the current state of the task
     */
-  def taskState(): AssetTaskState = js.native
+  def taskState: AssetTaskState = js.native
 }
 

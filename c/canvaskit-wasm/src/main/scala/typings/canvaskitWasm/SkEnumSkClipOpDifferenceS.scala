@@ -16,7 +16,6 @@ object SkEnumSkClipOpDifferenceS {
   @scala.inline
   def apply(Difference: SkClipOp, Intersect: SkClipOp, values: js.Array[SkClipOp]): SkEnumSkClipOpDifferenceS = {
     val __obj = js.Dynamic.literal(Difference = Difference.asInstanceOf[js.Any], Intersect = Intersect.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SkEnumSkClipOpDifferenceS]
   }
 }

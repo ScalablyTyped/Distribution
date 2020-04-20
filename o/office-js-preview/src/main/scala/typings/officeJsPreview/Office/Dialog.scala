@@ -51,7 +51,6 @@ object Dialog {
     sendMessage: String => Unit
   ): Dialog = {
     val __obj = js.Dynamic.literal(addEventHandler = js.Any.fromFunction2(addEventHandler), close = js.Any.fromFunction0(close), messageChild = js.Any.fromFunction1(messageChild), sendMessage = js.Any.fromFunction1(sendMessage))
-  
     __obj.asInstanceOf[Dialog]
   }
 }

@@ -13,7 +13,6 @@ object StopDiscovererRequest {
   @scala.inline
   def apply(DiscovererId: string): StopDiscovererRequest = {
     val __obj = js.Dynamic.literal(DiscovererId = DiscovererId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopDiscovererRequest]
   }
 }

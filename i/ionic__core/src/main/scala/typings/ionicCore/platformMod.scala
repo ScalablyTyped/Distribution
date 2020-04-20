@@ -29,6 +29,24 @@ object platformMod extends js.Object {
     def apply(win: Window_, plt: Platforms): Boolean = js.native
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - typings.ionicCore.ionicCoreStrings.ipad
+    - typings.ionicCore.ionicCoreStrings.iphone
+    - typings.ionicCore.ionicCoreStrings.ios
+    - typings.ionicCore.ionicCoreStrings.android
+    - typings.ionicCore.ionicCoreStrings.phablet
+    - typings.ionicCore.ionicCoreStrings.tablet
+    - typings.ionicCore.ionicCoreStrings.cordova
+    - typings.ionicCore.ionicCoreStrings.capacitor
+    - typings.ionicCore.ionicCoreStrings.electron
+    - typings.ionicCore.ionicCoreStrings.pwa
+    - typings.ionicCore.ionicCoreStrings.mobile
+    - typings.ionicCore.ionicCoreStrings.mobileweb
+    - typings.ionicCore.ionicCoreStrings.desktop
+    - typings.ionicCore.ionicCoreStrings.hybrid
+  */
+  trait Platforms extends js.Object
+  
   val isPlatform: IsPlatformSignature = js.native
   def getPlatforms(win: js.Any): js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
@@ -40,6 +58,5 @@ object platformMod extends js.Object {
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
   ] = js.native
   def testUserAgent(win: Window_, expr: RegExp): Boolean = js.native
-  type Platforms = String
 }
 

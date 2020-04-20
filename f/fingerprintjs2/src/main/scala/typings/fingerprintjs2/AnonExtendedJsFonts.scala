@@ -20,7 +20,6 @@ object AnonExtendedJsFonts {
     userDefinedFonts: js.Array[String]
   ): AnonExtendedJsFonts = {
     val __obj = js.Dynamic.literal(extendedJsFonts = extendedJsFonts.asInstanceOf[js.Any], swfContainerId = swfContainerId.asInstanceOf[js.Any], swfPath = swfPath.asInstanceOf[js.Any], userDefinedFonts = userDefinedFonts.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonExtendedJsFonts]
   }
 }

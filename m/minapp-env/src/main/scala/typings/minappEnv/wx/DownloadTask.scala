@@ -51,7 +51,6 @@ object DownloadTask {
     onProgressUpdate: DownloadTaskOnProgressUpdateCallback => Unit
   ): DownloadTask = {
     val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), offHeadersReceived = js.Any.fromFunction1(offHeadersReceived), offProgressUpdate = js.Any.fromFunction1(offProgressUpdate), onHeadersReceived = js.Any.fromFunction1(onHeadersReceived), onProgressUpdate = js.Any.fromFunction1(onProgressUpdate))
-  
     __obj.asInstanceOf[DownloadTask]
   }
 }

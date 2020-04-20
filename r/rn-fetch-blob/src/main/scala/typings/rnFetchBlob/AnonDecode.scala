@@ -13,7 +13,6 @@ object AnonDecode {
   @scala.inline
   def apply(decode: String => String, encode: String => String): AnonDecode = {
     val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode))
-  
     __obj.asInstanceOf[AnonDecode]
   }
 }

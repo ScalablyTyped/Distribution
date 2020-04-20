@@ -16,7 +16,6 @@ object GetStackPolicyInput {
   @scala.inline
   def apply(StackName: StackName): GetStackPolicyInput = {
     val __obj = js.Dynamic.literal(StackName = StackName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetStackPolicyInput]
   }
 }

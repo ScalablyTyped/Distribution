@@ -16,7 +16,6 @@ object AnonDirective {
   @scala.inline
   def apply[DirectiveT /* <: DirectiveMeta */](directive: DirectiveT, node: Element | Template): AnonDirective[DirectiveT] = {
     val __obj = js.Dynamic.literal(directive = directive.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDirective[DirectiveT]]
   }
 }

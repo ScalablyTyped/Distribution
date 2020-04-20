@@ -24,7 +24,6 @@ object AnonContentExtras {
   @scala.inline
   def apply(content: String, extras: Extra, messageID: String): AnonContentExtras = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], extras = extras.asInstanceOf[js.Any], messageID = messageID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonContentExtras]
   }
 }

@@ -15,7 +15,6 @@ object ReleaseObjectParameterType {
   @scala.inline
   def apply(objectId: RemoteObjectId): ReleaseObjectParameterType = {
     val __obj = js.Dynamic.literal(objectId = objectId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReleaseObjectParameterType]
   }
 }

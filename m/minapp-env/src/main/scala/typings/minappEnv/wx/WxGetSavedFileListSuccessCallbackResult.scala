@@ -13,7 +13,6 @@ object WxGetSavedFileListSuccessCallbackResult {
   @scala.inline
   def apply(fileList: WxGetSavedFileListSuccessCallbackResultFileItem): WxGetSavedFileListSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(fileList = fileList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WxGetSavedFileListSuccessCallbackResult]
   }
 }

@@ -22,7 +22,6 @@ object date {
   @scala.inline
   def apply(DateFormat: String => Unit): date = {
     val __obj = js.Dynamic.literal(DateFormat = js.Any.fromFunction1(DateFormat))
-  
     __obj.asInstanceOf[date]
   }
 }

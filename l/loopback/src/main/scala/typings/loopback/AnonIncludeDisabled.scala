@@ -12,7 +12,6 @@ object AnonIncludeDisabled {
   @scala.inline
   def apply(includeDisabled: Boolean): AnonIncludeDisabled = {
     val __obj = js.Dynamic.literal(includeDisabled = includeDisabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIncludeDisabled]
   }
 }

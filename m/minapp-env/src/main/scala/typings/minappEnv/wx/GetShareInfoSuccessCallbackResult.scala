@@ -17,7 +17,6 @@ object GetShareInfoSuccessCallbackResult {
   @scala.inline
   def apply(encryptedData: String, errMsg: String, iv: String): GetShareInfoSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(encryptedData = encryptedData.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any], iv = iv.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetShareInfoSuccessCallbackResult]
   }
 }

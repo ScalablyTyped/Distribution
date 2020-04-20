@@ -28,7 +28,6 @@ object Utils {
     windowSize: () => Size
   ): Utils = {
     val __obj = js.Dynamic.literal(defaultColor = js.Any.fromFunction0(defaultColor), getColor = js.Any.fromFunction1(getColor), state = js.Any.fromFunction0(state), symbolMap = symbolMap.asInstanceOf[js.Any], windowResize = js.Any.fromFunction1(windowResize), windowSize = js.Any.fromFunction0(windowSize))
-  
     __obj.asInstanceOf[Utils]
   }
 }

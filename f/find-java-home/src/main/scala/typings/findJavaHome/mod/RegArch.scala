@@ -12,10 +12,8 @@ trait RegArch extends js.Object
 
 object RegArch {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def x64: typings.findJavaHome.findJavaHomeStrings.x64 = "x64".asInstanceOf[typings.findJavaHome.findJavaHomeStrings.x64]
   @scala.inline
-  def x64: typings.findJavaHome.findJavaHomeStrings.x64 = this.cast("x64")
-  @scala.inline
-  def x86: typings.findJavaHome.findJavaHomeStrings.x86 = this.cast("x86")
+  def x86: typings.findJavaHome.findJavaHomeStrings.x86 = "x86".asInstanceOf[typings.findJavaHome.findJavaHomeStrings.x86]
 }
 

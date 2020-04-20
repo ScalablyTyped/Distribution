@@ -31,31 +31,55 @@ trait TreeProps extends js.Object {
   /** 是否支持选中 */
   var checkable: js.UndefOr[Boolean] = js.undefined
   /** （受控）选中复选框的树节点 */
-  var checkedKeys: js.UndefOr[js.Array[String] | AnonChecked] = js.undefined
+  var checkedKeys: js.UndefOr[
+    (js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ _
+    ]) | AnonChecked
+  ] = js.undefined
   var children: js.UndefOr[ReactNode] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   /** 默认选中复选框的树节点 */
-  var defaultCheckedKeys: js.UndefOr[js.Array[String]] = js.undefined
+  var defaultCheckedKeys: js.UndefOr[
+    js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ _
+    ]
+  ] = js.undefined
   /** 默认展开所有树节点 */
   var defaultExpandAll: js.UndefOr[Boolean] = js.undefined
   /** 默认展开对应树节点 */
   var defaultExpandParent: js.UndefOr[Boolean] = js.undefined
   /** 默认展开指定的树节点 */
-  var defaultExpandedKeys: js.UndefOr[js.Array[String]] = js.undefined
+  var defaultExpandedKeys: js.UndefOr[
+    js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ _
+    ]
+  ] = js.undefined
   /** 默认选中的树节点 */
-  var defaultSelectedKeys: js.UndefOr[js.Array[String]] = js.undefined
+  var defaultSelectedKeys: js.UndefOr[
+    js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ _
+    ]
+  ] = js.undefined
   /** 是否禁用树 */
   var disabled: js.UndefOr[Boolean] = js.undefined
   /** 设置节点可拖拽（IE>8） */
   var draggable: js.UndefOr[Boolean] = js.undefined
   /** （受控）展开指定的树节点 */
-  var expandedKeys: js.UndefOr[js.Array[String]] = js.undefined
+  var expandedKeys: js.UndefOr[
+    js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ _
+    ]
+  ] = js.undefined
   /** 点击树节点触发 */
   var filterAntTreeNode: js.UndefOr[js.Function1[/* node */ AntTreeNode, Boolean]] = js.undefined
   var filterTreeNode: js.UndefOr[js.Function1[/* node */ InternalTreeNode, Boolean]] = js.undefined
   var icon: js.UndefOr[(js.Function1[/* nodeProps */ AntdTreeNodeAttribute, ReactNode]) | ReactNode] = js.undefined
   var loadData: js.UndefOr[js.Function1[/* node */ InternalTreeNode, js.Promise[_]]] = js.undefined
-  var loadedKeys: js.UndefOr[js.Array[String]] = js.undefined
+  var loadedKeys: js.UndefOr[
+    js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ _
+    ]
+  ] = js.undefined
   /** 是否支持多选 */
   var multiple: js.UndefOr[Boolean] = js.undefined
   var onCheck: js.UndefOr[js.Function2[/* checkedKeys */ js.Array[String], /* e */ CheckData, Unit]] = js.undefined
@@ -73,7 +97,11 @@ trait TreeProps extends js.Object {
   var prefixCls: js.UndefOr[String] = js.undefined
   var selectable: js.UndefOr[Boolean] = js.undefined
   /** （受控）设置选中的树节点 */
-  var selectedKeys: js.UndefOr[js.Array[String]] = js.undefined
+  var selectedKeys: js.UndefOr[
+    js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ _
+    ]
+  ] = js.undefined
   var showIcon: js.UndefOr[Boolean] = js.undefined
   var showLine: js.UndefOr[Boolean] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
@@ -87,22 +115,34 @@ object TreeProps {
     blockNode: js.UndefOr[Boolean] = js.undefined,
     checkStrictly: js.UndefOr[Boolean] = js.undefined,
     checkable: js.UndefOr[Boolean] = js.undefined,
-    checkedKeys: js.Array[String] | AnonChecked = null,
+    checkedKeys: (js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ _
+    ]) | AnonChecked = null,
     children: ReactNode = null,
     className: String = null,
-    defaultCheckedKeys: js.Array[String] = null,
+    defaultCheckedKeys: js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ _
+    ] = null,
     defaultExpandAll: js.UndefOr[Boolean] = js.undefined,
     defaultExpandParent: js.UndefOr[Boolean] = js.undefined,
-    defaultExpandedKeys: js.Array[String] = null,
-    defaultSelectedKeys: js.Array[String] = null,
+    defaultExpandedKeys: js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ _
+    ] = null,
+    defaultSelectedKeys: js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ _
+    ] = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     draggable: js.UndefOr[Boolean] = js.undefined,
-    expandedKeys: js.Array[String] = null,
+    expandedKeys: js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ _
+    ] = null,
     filterAntTreeNode: /* node */ AntTreeNode => Boolean = null,
     filterTreeNode: /* node */ InternalTreeNode => Boolean = null,
     icon: (js.Function1[/* nodeProps */ AntdTreeNodeAttribute, ReactNode]) | ReactNode = null,
     loadData: /* node */ InternalTreeNode => js.Promise[_] = null,
-    loadedKeys: js.Array[String] = null,
+    loadedKeys: js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ _
+    ] = null,
     multiple: js.UndefOr[Boolean] = js.undefined,
     onCheck: (/* checkedKeys */ js.Array[String], /* e */ CheckData) => Unit = null,
     onDragEnd: /* props */ OnDragEndData => Unit = null,
@@ -118,7 +158,9 @@ object TreeProps {
     onSelect: (/* selectedKeys */ js.Array[String], /* e */ SelectData) => Unit = null,
     prefixCls: String = null,
     selectable: js.UndefOr[Boolean] = js.undefined,
-    selectedKeys: js.Array[String] = null,
+    selectedKeys: js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ _
+    ] = null,
     showIcon: js.UndefOr[Boolean] = js.undefined,
     showLine: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,

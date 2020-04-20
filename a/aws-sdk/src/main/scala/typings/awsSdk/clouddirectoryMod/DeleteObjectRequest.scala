@@ -20,7 +20,6 @@ object DeleteObjectRequest {
   @scala.inline
   def apply(DirectoryArn: Arn, ObjectReference: ObjectReference): DeleteObjectRequest = {
     val __obj = js.Dynamic.literal(DirectoryArn = DirectoryArn.asInstanceOf[js.Any], ObjectReference = ObjectReference.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteObjectRequest]
   }
 }

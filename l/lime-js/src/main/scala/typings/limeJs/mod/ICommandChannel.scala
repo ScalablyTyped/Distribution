@@ -13,7 +13,6 @@ object ICommandChannel {
   @scala.inline
   def apply(onCommand: Command => js.Any, sendCommand: Command => Unit): ICommandChannel = {
     val __obj = js.Dynamic.literal(onCommand = js.Any.fromFunction1(onCommand), sendCommand = js.Any.fromFunction1(sendCommand))
-  
     __obj.asInstanceOf[ICommandChannel]
   }
 }

@@ -16,16 +16,14 @@ trait DiagnosticDataSubmissionMode extends js.Object
 
 object DiagnosticDataSubmissionMode {
   @scala.inline
-  def basic: typings.microsoftGraph.microsoftGraphStrings.basic = this.cast("basic")
+  def basic: typings.microsoftGraph.microsoftGraphStrings.basic = "basic".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.basic]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def enhanced: typings.microsoftGraph.microsoftGraphStrings.enhanced = "enhanced".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.enhanced]
   @scala.inline
-  def enhanced: typings.microsoftGraph.microsoftGraphStrings.enhanced = this.cast("enhanced")
+  def full: typings.microsoftGraph.microsoftGraphStrings.full = "full".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.full]
   @scala.inline
-  def full: typings.microsoftGraph.microsoftGraphStrings.full = this.cast("full")
+  def none: none_ = "none".asInstanceOf[none_]
   @scala.inline
-  def none: none_ = this.cast("none")
-  @scala.inline
-  def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = this.cast("userDefined")
+  def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userDefined]
 }
 

@@ -13,12 +13,10 @@ trait TextDecoration extends js.Object
 
 object TextDecoration {
   @scala.inline
-  def NONE: typings.figma.figmaStrings.NONE = this.cast("NONE")
+  def NONE: typings.figma.figmaStrings.NONE = "NONE".asInstanceOf[typings.figma.figmaStrings.NONE]
   @scala.inline
-  def STRIKETHROUGH: typings.figma.figmaStrings.STRIKETHROUGH = this.cast("STRIKETHROUGH")
+  def STRIKETHROUGH: typings.figma.figmaStrings.STRIKETHROUGH = "STRIKETHROUGH".asInstanceOf[typings.figma.figmaStrings.STRIKETHROUGH]
   @scala.inline
-  def UNDERLINE: typings.figma.figmaStrings.UNDERLINE = this.cast("UNDERLINE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UNDERLINE: typings.figma.figmaStrings.UNDERLINE = "UNDERLINE".asInstanceOf[typings.figma.figmaStrings.UNDERLINE]
 }
 

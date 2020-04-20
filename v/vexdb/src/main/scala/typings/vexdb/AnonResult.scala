@@ -16,7 +16,6 @@ object AnonResult {
   @scala.inline
   def apply[T](result: js.Array[T], size: Double, status: `0` | `1`): AnonResult[T] = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonResult[T]]
   }
 }

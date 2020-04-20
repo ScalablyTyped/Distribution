@@ -16,7 +16,6 @@ object AnonActionName {
   @scala.inline
   def apply(actionName: String, ros: Ros, serverName: String, timeout: Double): AnonActionName = {
     val __obj = js.Dynamic.literal(actionName = actionName.asInstanceOf[js.Any], ros = ros.asInstanceOf[js.Any], serverName = serverName.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonActionName]
   }
 }

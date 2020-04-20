@@ -22,7 +22,6 @@ object IDoReloadExResult {
   @scala.inline
   def apply(qScriptLogFile: String, qSuccess: Boolean): IDoReloadExResult = {
     val __obj = js.Dynamic.literal(qScriptLogFile = qScriptLogFile.asInstanceOf[js.Any], qSuccess = qSuccess.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDoReloadExResult]
   }
 }

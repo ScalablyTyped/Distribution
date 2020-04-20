@@ -12,7 +12,6 @@ object SafariExtensionGlobalPage {
   @scala.inline
   def apply(contentWindow: Window): SafariExtensionGlobalPage = {
     val __obj = js.Dynamic.literal(contentWindow = contentWindow.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SafariExtensionGlobalPage]
   }
 }

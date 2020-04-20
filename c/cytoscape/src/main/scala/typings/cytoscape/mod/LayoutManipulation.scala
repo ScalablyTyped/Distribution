@@ -28,7 +28,6 @@ object LayoutManipulation {
   @scala.inline
   def apply(run: () => LayoutManipulation, start: () => LayoutManipulation, stop: () => LayoutManipulation): LayoutManipulation = {
     val __obj = js.Dynamic.literal(run = js.Any.fromFunction0(run), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop))
-  
     __obj.asInstanceOf[LayoutManipulation]
   }
 }

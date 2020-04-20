@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 trait TextTrackList
   extends EventTarget
      with /* index */ NumberDictionary[TextTrack] {
-  @JSName(scala.scalajs.js.Symbol.iterator)
+  @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[TextTrack]] = js.native
   val length: Double = js.native
   var onaddtrack: (js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _]) | Null = js.native

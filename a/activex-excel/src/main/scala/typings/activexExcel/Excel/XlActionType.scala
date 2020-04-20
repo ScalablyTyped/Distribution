@@ -18,14 +18,12 @@ trait XlActionType extends js.Object
 
 object XlActionType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlActionTypeDrillthrough: `256` = 256.asInstanceOf[`256`]
   @scala.inline
-  def xlActionTypeDrillthrough: `256` = this.cast(256)
+  def xlActionTypeReport: `128` = 128.asInstanceOf[`128`]
   @scala.inline
-  def xlActionTypeReport: `128` = this.cast(128)
+  def xlActionTypeRowset: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def xlActionTypeRowset: `16` = this.cast(16)
-  @scala.inline
-  def xlActionTypeUrl: `1` = this.cast(1)
+  def xlActionTypeUrl: `1` = 1.asInstanceOf[`1`]
 }
 

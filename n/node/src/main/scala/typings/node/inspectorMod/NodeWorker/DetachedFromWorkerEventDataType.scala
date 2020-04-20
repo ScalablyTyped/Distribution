@@ -15,7 +15,6 @@ object DetachedFromWorkerEventDataType {
   @scala.inline
   def apply(sessionId: SessionID): DetachedFromWorkerEventDataType = {
     val __obj = js.Dynamic.literal(sessionId = sessionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DetachedFromWorkerEventDataType]
   }
 }

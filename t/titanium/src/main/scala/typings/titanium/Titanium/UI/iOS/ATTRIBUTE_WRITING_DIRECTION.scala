@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation._
 
 /**
 			 * Use with <Attribute.type> to control the direction of the text.
+			 * @deprecated Use the [Titanium.UI.ATTRIBUTE_WRITING_DIRECTION](Titanium.UI.ATTRIBUTE_WRITING_DIRECTION) constant instead (without the iOS namespace).
 			 */
 @JSGlobal("Titanium.UI.iOS.ATTRIBUTE_WRITING_DIRECTION")
 @js.native
-object ATTRIBUTE_WRITING_DIRECTION extends TopLevel[Double]
+object ATTRIBUTE_WRITING_DIRECTION
+  extends TopLevel[scala.Nothing]
 

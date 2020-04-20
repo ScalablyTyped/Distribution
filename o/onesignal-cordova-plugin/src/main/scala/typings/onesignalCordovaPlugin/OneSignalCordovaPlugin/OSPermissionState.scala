@@ -20,7 +20,6 @@ object OSPermissionState {
     status: OSNotificationPermission
   ): OSPermissionState = {
     val __obj = js.Dynamic.literal(hasPrompted = hasPrompted.asInstanceOf[js.Any], provisional = provisional.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OSPermissionState]
   }
 }

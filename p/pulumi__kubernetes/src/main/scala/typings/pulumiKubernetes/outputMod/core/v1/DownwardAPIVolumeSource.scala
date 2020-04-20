@@ -26,7 +26,6 @@ object DownwardAPIVolumeSource {
   @scala.inline
   def apply(defaultMode: Double, items: js.Array[DownwardAPIVolumeFile]): DownwardAPIVolumeSource = {
     val __obj = js.Dynamic.literal(defaultMode = defaultMode.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DownwardAPIVolumeSource]
   }
 }

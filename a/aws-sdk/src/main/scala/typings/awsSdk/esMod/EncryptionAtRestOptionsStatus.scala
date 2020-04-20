@@ -20,7 +20,6 @@ object EncryptionAtRestOptionsStatus {
   @scala.inline
   def apply(Options: EncryptionAtRestOptions, Status: OptionStatus): EncryptionAtRestOptionsStatus = {
     val __obj = js.Dynamic.literal(Options = Options.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EncryptionAtRestOptionsStatus]
   }
 }

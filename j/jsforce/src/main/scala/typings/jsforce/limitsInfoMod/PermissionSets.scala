@@ -12,7 +12,6 @@ object PermissionSets {
   @scala.inline
   def apply(CreateCustom: Limit, Max: Double, Remaining: Double): PermissionSets = {
     val __obj = js.Dynamic.literal(CreateCustom = CreateCustom.asInstanceOf[js.Any], Max = Max.asInstanceOf[js.Any], Remaining = Remaining.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PermissionSets]
   }
 }

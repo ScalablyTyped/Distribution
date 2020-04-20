@@ -37,12 +37,12 @@ class ParameterizedEntityType protected () extends EntityType {
   @JSName("typeParameter")
   val typeParameter_FParameterizedEntityType: ITypeParameter = js.native
   @JSName("containerAsBasicParameterType")
-  def containerAsBasicParameterType_MParameterizedEntityType(): BasicParameterType = js.native
+  def containerAsBasicParameterType_MParameterizedEntityType: BasicParameterType = js.native
   @JSName("containerAsCodeAction")
-  def containerAsCodeAction_MParameterizedEntityType(): CodeAction = js.native
+  def containerAsCodeAction_MParameterizedEntityType: CodeAction = js.native
   @JSName("containerAsListType")
-  def containerAsListType_MParameterizedEntityType(): ListType = js.native
-  def typeParameter(): TypeParameter = js.native
+  def containerAsListType_MParameterizedEntityType: ListType = js.native
+  def typeParameter: TypeParameter = js.native
   def typeParameter(newValue: TypeParameter): js.Any = js.native
 }
 

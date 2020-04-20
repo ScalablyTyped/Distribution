@@ -44,12 +44,12 @@ object backButtonMod extends js.Object {
     var text: js.UndefOr[String | Null] = js.native
     /* CompleteClass */
     override var `type`: submit | reset | button = js.native
-    def backButtonIcon(): js.Any = js.native
-    def backButtonText(): js.Any = js.native
-    def hasIconOnly(): Boolean = js.native
+    def backButtonIcon: js.Any = js.native
+    def backButtonText: js.Any = js.native
+    def hasIconOnly: Boolean = js.native
     @JSName("render")
     def render_MBackButton(): js.Any = js.native
-    def rippleType(): bounded | unbounded = js.native
+    def rippleType: bounded | unbounded = js.native
   }
   
 }

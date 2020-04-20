@@ -16,7 +16,6 @@ object ListTagsForCertificateRequest {
   @scala.inline
   def apply(CertificateArn: Arn): ListTagsForCertificateRequest = {
     val __obj = js.Dynamic.literal(CertificateArn = CertificateArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListTagsForCertificateRequest]
   }
 }

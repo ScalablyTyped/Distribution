@@ -12,10 +12,8 @@ trait RangeOperations extends js.Object
 
 object RangeOperations {
   @scala.inline
-  def append: typings.relayRuntime.relayRuntimeStrings.append = this.cast("append")
+  def append: typings.relayRuntime.relayRuntimeStrings.append = "append".asInstanceOf[typings.relayRuntime.relayRuntimeStrings.append]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def prepend: typings.relayRuntime.relayRuntimeStrings.prepend = this.cast("prepend")
+  def prepend: typings.relayRuntime.relayRuntimeStrings.prepend = "prepend".asInstanceOf[typings.relayRuntime.relayRuntimeStrings.prepend]
 }
 

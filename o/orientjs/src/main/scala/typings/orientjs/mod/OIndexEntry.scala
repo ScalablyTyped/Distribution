@@ -13,7 +13,6 @@ object OIndexEntry {
   @scala.inline
   def apply(key: String, value: String | ORID): OIndexEntry = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OIndexEntry]
   }
 }

@@ -27,10 +27,19 @@ object reactRouterStrings {
   sealed trait RouterChildContext extends js.Object
   
   @js.native
+  sealed trait history extends js.Object
+  
+  @js.native
+  sealed trait location extends js.Object
+  
+  @js.native
   sealed trait `match` extends js.Object
   
   @js.native
   sealed trait matchPath extends js.Object
+  
+  @js.native
+  sealed trait staticContext extends js.Object
   
   @js.native
   sealed trait useParams extends js.Object
@@ -53,9 +62,15 @@ object reactRouterStrings {
   @scala.inline
   def RouterChildContext: RouterChildContext = "RouterChildContext".asInstanceOf[RouterChildContext]
   @scala.inline
+  def history: history = "history".asInstanceOf[history]
+  @scala.inline
+  def location: location = "location".asInstanceOf[location]
+  @scala.inline
   def `match`: `match` = "match".asInstanceOf[`match`]
   @scala.inline
   def matchPath: matchPath = "matchPath".asInstanceOf[matchPath]
+  @scala.inline
+  def staticContext: staticContext = "staticContext".asInstanceOf[staticContext]
   @scala.inline
   def useParams: useParams = "useParams".asInstanceOf[useParams]
   @scala.inline

@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import typings.std.AbortSignal
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -66,6 +67,12 @@ trait heatmapCreateRendererParams extends Object {
     */
   var minRatio: js.UndefOr[Double] = js.undefined
   /**
+    * Allows for cancelable requests. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-heatmap.html#createRenderer)
+    */
+  var signal: js.UndefOr[AbortSignal] = js.undefined
+  /**
     * A statistics object generated from the [heatmapStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-heatmapStatistics.html) function. If statistics for the field have already been generated, then pass the object here to avoid making a second statistics query to the server.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-heatmap.html#createRenderer)
@@ -94,6 +101,7 @@ object heatmapCreateRendererParams {
     heatmapScheme: HeatmapScheme = null,
     maxRatio: Int | Double = null,
     minRatio: Int | Double = null,
+    signal: AbortSignal = null,
     statistics: HeatmapStatisticsResult = null
   ): heatmapCreateRendererParams = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), view = view.asInstanceOf[js.Any])
@@ -104,6 +112,7 @@ object heatmapCreateRendererParams {
     if (heatmapScheme != null) __obj.updateDynamic("heatmapScheme")(heatmapScheme.asInstanceOf[js.Any])
     if (maxRatio != null) __obj.updateDynamic("maxRatio")(maxRatio.asInstanceOf[js.Any])
     if (minRatio != null) __obj.updateDynamic("minRatio")(minRatio.asInstanceOf[js.Any])
+    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
     if (statistics != null) __obj.updateDynamic("statistics")(statistics.asInstanceOf[js.Any])
     __obj.asInstanceOf[heatmapCreateRendererParams]
   }

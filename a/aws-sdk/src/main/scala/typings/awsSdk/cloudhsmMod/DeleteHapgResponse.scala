@@ -16,7 +16,6 @@ object DeleteHapgResponse {
   @scala.inline
   def apply(Status: String): DeleteHapgResponse = {
     val __obj = js.Dynamic.literal(Status = Status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteHapgResponse]
   }
 }

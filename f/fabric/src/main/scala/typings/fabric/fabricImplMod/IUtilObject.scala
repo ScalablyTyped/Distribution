@@ -22,7 +22,6 @@ object IUtilObject {
   @scala.inline
   def apply(clone: js.Any => js.Any, extend: (js.Any, js.Any) => js.Any): IUtilObject = {
     val __obj = js.Dynamic.literal(clone = js.Any.fromFunction1(clone), extend = js.Any.fromFunction2(extend))
-  
     __obj.asInstanceOf[IUtilObject]
   }
 }

@@ -24,7 +24,6 @@ object PathModel {
     pattern: String
   ): PathModel = {
     val __obj = js.Dynamic.literal(_httpMethods = _httpMethods.asInstanceOf[js.Any], _methodName = _methodName.asInstanceOf[js.Any], _pattern = _pattern.asInstanceOf[js.Any], httpMethods = httpMethods.asInstanceOf[js.Any], methodName = methodName.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PathModel]
   }
 }

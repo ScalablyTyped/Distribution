@@ -16,16 +16,14 @@ trait RecipientScopeType extends js.Object
 
 object RecipientScopeType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def external: typings.microsoftGraph.microsoftGraphStrings.external = "external".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.external]
   @scala.inline
-  def external: typings.microsoftGraph.microsoftGraphStrings.external = this.cast("external")
+  def externalNonPartner: typings.microsoftGraph.microsoftGraphStrings.externalNonPartner = "externalNonPartner".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.externalNonPartner]
   @scala.inline
-  def externalNonPartner: typings.microsoftGraph.microsoftGraphStrings.externalNonPartner = this.cast("externalNonPartner")
+  def externalPartner: typings.microsoftGraph.microsoftGraphStrings.externalPartner = "externalPartner".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.externalPartner]
   @scala.inline
-  def externalPartner: typings.microsoftGraph.microsoftGraphStrings.externalPartner = this.cast("externalPartner")
+  def internal: typings.microsoftGraph.microsoftGraphStrings.internal = "internal".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.internal]
   @scala.inline
-  def internal: typings.microsoftGraph.microsoftGraphStrings.internal = this.cast("internal")
-  @scala.inline
-  def none: none_ = this.cast("none")
+  def none: none_ = "none".asInstanceOf[none_]
 }
 

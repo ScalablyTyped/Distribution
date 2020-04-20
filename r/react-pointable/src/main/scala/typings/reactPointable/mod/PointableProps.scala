@@ -244,7 +244,9 @@ import scala.scalajs.js.annotation._
   var surfaceScale: js.UndefOr[Double | String] = js.undefined
   var systemLanguage: js.UndefOr[Double | String] = js.undefined
   var tableValues: js.UndefOr[Double | String] = js.undefined
-  var tagName: js.UndefOr[String] = js.undefined
+  var tagName: js.UndefOr[
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 173 */ js.Any
+  ] = js.undefined
   var target: js.UndefOr[String] = js.undefined
   var targetX: js.UndefOr[Double | String] = js.undefined
   var targetY: js.UndefOr[Double | String] = js.undefined
@@ -504,7 +506,7 @@ object PointableProps {
     surfaceScale: Double | String = null,
     systemLanguage: Double | String = null,
     tableValues: Double | String = null,
-    tagName: String = null,
+    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 173 */ js.Any = null,
     target: String = null,
     targetX: Double | String = null,
     targetY: Double | String = null,

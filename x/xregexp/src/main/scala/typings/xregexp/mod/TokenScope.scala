@@ -16,10 +16,8 @@ trait TokenScope extends js.Object
 
 object TokenScope {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `class`: typings.xregexp.xregexpStrings.`class` = "class".asInstanceOf[typings.xregexp.xregexpStrings.`class`]
   @scala.inline
-  def `class`: typings.xregexp.xregexpStrings.`class` = this.cast("class")
-  @scala.inline
-  def default: typings.xregexp.xregexpStrings.default = this.cast("default")
+  def default: typings.xregexp.xregexpStrings.default = "default".asInstanceOf[typings.xregexp.xregexpStrings.default]
 }
 

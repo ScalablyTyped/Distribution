@@ -13,7 +13,6 @@ object Api {
   @scala.inline
   def apply(colReorder: AnonMove): Api = {
     val __obj = js.Dynamic.literal(colReorder = colReorder.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Api]
   }
 }

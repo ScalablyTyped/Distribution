@@ -19,10 +19,22 @@ object styled_feComponentTransfer extends js.Object {
     component: feComponentTransfer,
     styledFn: js.Function1[/* props */ AnonTheme[T] with P, StyleObject]
   ): StyletronComponent[
-    (Pick[ComponentProps[feComponentTransfer], Exclude[String, AnonClassName]]) with P
+    (Pick[
+      ComponentProps[feComponentTransfer], 
+      Exclude[
+        /* keyof react.react.ComponentProps<'feComponentTransfer'> */ String, 
+        AnonClassName
+      ]
+    ]) with P
   ] = js.native
   def apply[P /* <: js.Object */, T](component: feComponentTransfer, styledFn: StyleObject): StyletronComponent[
-    (Pick[ComponentProps[feComponentTransfer], Exclude[String, AnonClassName]]) with P
+    (Pick[
+      ComponentProps[feComponentTransfer], 
+      Exclude[
+        /* keyof react.react.ComponentProps<'feComponentTransfer'> */ String, 
+        AnonClassName
+      ]
+    ]) with P
   ] = js.native
 }
 

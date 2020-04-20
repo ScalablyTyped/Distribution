@@ -13,7 +13,6 @@ object AzureSpnOperationStatus {
   @scala.inline
   def apply(state: String, statusMessage: String): AzureSpnOperationStatus = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any], statusMessage = statusMessage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AzureSpnOperationStatus]
   }
 }

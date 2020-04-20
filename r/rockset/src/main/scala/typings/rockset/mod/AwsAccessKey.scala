@@ -15,7 +15,6 @@ object AwsAccessKey {
   @scala.inline
   def apply(aws_access_key_id: String, aws_secret_access_key: String): AwsAccessKey = {
     val __obj = js.Dynamic.literal(aws_access_key_id = aws_access_key_id.asInstanceOf[js.Any], aws_secret_access_key = aws_secret_access_key.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AwsAccessKey]
   }
 }

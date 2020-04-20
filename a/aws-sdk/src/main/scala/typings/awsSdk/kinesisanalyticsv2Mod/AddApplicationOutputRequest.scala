@@ -28,7 +28,6 @@ object AddApplicationOutputRequest {
     Output: Output
   ): AddApplicationOutputRequest = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], CurrentApplicationVersionId = CurrentApplicationVersionId.asInstanceOf[js.Any], Output = Output.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddApplicationOutputRequest]
   }
 }

@@ -15,7 +15,6 @@ object IndexDocument {
   @scala.inline
   def apply(Suffix: String): IndexDocument = {
     val __obj = js.Dynamic.literal(Suffix = Suffix.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IndexDocument]
   }
 }

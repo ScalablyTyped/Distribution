@@ -60,7 +60,6 @@ object NightwatchSeleniumOptions {
     start_session: Boolean
   ): NightwatchSeleniumOptions = {
     val __obj = js.Dynamic.literal(cli_args = cli_args.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], log_path = log_path.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], server_path = server_path.asInstanceOf[js.Any], start_process = start_process.asInstanceOf[js.Any], start_session = start_session.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NightwatchSeleniumOptions]
   }
 }

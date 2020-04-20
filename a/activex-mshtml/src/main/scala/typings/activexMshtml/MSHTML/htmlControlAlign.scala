@@ -34,30 +34,28 @@ trait htmlControlAlign extends js.Object
 
 object htmlControlAlign {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def htmlControlAlignAbsBottom: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def htmlControlAlignAbsBottom: `7` = this.cast(7)
+  def htmlControlAlignAbsMiddle: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def htmlControlAlignAbsMiddle: `5` = this.cast(5)
+  def htmlControlAlignBaseline: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def htmlControlAlignBaseline: `6` = this.cast(6)
+  def htmlControlAlignBottom: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def htmlControlAlignBottom: `8` = this.cast(8)
+  def htmlControlAlignCenter: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def htmlControlAlignCenter: `2` = this.cast(2)
+  def htmlControlAlignLeft: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def htmlControlAlignLeft: `1` = this.cast(1)
+  def htmlControlAlignMiddle: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def htmlControlAlignMiddle: `9` = this.cast(9)
+  def htmlControlAlignNotSet: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def htmlControlAlignNotSet: `0` = this.cast(0)
+  def htmlControlAlignRight: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def htmlControlAlignRight: `3` = this.cast(3)
+  def htmlControlAlignTextTop: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def htmlControlAlignTextTop: `4` = this.cast(4)
+  def htmlControlAlignTop: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def htmlControlAlignTop: `10` = this.cast(10)
-  @scala.inline
-  def htmlControlAlign_Max: `2147483647` = this.cast(2147483647)
+  def htmlControlAlign_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

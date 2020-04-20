@@ -18,7 +18,9 @@ trait AntTreeNodeProps
   var expanded: js.UndefOr[Boolean] = js.undefined
   var icon: js.UndefOr[(js.Function1[/* treeNode */ AntdTreeNodeAttribute, ReactNode]) | ReactNode] = js.undefined
   var isLeaf: js.UndefOr[Boolean] = js.undefined
-  var key: js.UndefOr[String] = js.undefined
+  var key: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ js.Any
+  ] = js.undefined
   var loading: js.UndefOr[Boolean] = js.undefined
   var selectable: js.UndefOr[Boolean] = js.undefined
   var selected: js.UndefOr[Boolean] = js.undefined
@@ -39,7 +41,7 @@ object AntTreeNodeProps {
     expanded: js.UndefOr[Boolean] = js.undefined,
     icon: (js.Function1[/* treeNode */ AntdTreeNodeAttribute, ReactNode]) | ReactNode = null,
     isLeaf: js.UndefOr[Boolean] = js.undefined,
-    key: String = null,
+    key: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ js.Any = null,
     loading: js.UndefOr[Boolean] = js.undefined,
     selectable: js.UndefOr[Boolean] = js.undefined,
     selected: js.UndefOr[Boolean] = js.undefined,

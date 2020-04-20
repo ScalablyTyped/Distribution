@@ -19,24 +19,22 @@ trait StubbyMethod extends js.Object
 
 object StubbyMethod {
   @scala.inline
-  def CONNECT: typings.stubby.stubbyStrings.CONNECT = this.cast("CONNECT")
+  def CONNECT: typings.stubby.stubbyStrings.CONNECT = "CONNECT".asInstanceOf[typings.stubby.stubbyStrings.CONNECT]
   @scala.inline
-  def DELETE: typings.stubby.stubbyStrings.DELETE = this.cast("DELETE")
+  def DELETE: typings.stubby.stubbyStrings.DELETE = "DELETE".asInstanceOf[typings.stubby.stubbyStrings.DELETE]
   @scala.inline
-  def GET: typings.stubby.stubbyStrings.GET = this.cast("GET")
+  def GET: typings.stubby.stubbyStrings.GET = "GET".asInstanceOf[typings.stubby.stubbyStrings.GET]
   @scala.inline
-  def HEAD: typings.stubby.stubbyStrings.HEAD = this.cast("HEAD")
+  def HEAD: typings.stubby.stubbyStrings.HEAD = "HEAD".asInstanceOf[typings.stubby.stubbyStrings.HEAD]
   @scala.inline
-  def OPTIONS: typings.stubby.stubbyStrings.OPTIONS = this.cast("OPTIONS")
+  def OPTIONS: typings.stubby.stubbyStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.stubby.stubbyStrings.OPTIONS]
   @scala.inline
-  def PATCH: typings.stubby.stubbyStrings.PATCH = this.cast("PATCH")
+  def PATCH: typings.stubby.stubbyStrings.PATCH = "PATCH".asInstanceOf[typings.stubby.stubbyStrings.PATCH]
   @scala.inline
-  def POST: typings.stubby.stubbyStrings.POST = this.cast("POST")
+  def POST: typings.stubby.stubbyStrings.POST = "POST".asInstanceOf[typings.stubby.stubbyStrings.POST]
   @scala.inline
-  def PUT: typings.stubby.stubbyStrings.PUT = this.cast("PUT")
+  def PUT: typings.stubby.stubbyStrings.PUT = "PUT".asInstanceOf[typings.stubby.stubbyStrings.PUT]
   @scala.inline
-  def TRACE: typings.stubby.stubbyStrings.TRACE = this.cast("TRACE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def TRACE: typings.stubby.stubbyStrings.TRACE = "TRACE".asInstanceOf[typings.stubby.stubbyStrings.TRACE]
 }
 

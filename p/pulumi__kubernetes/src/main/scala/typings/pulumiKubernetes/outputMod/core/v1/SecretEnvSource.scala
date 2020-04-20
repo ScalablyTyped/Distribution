@@ -26,7 +26,6 @@ object SecretEnvSource {
   @scala.inline
   def apply(name: String, optional: Boolean): SecretEnvSource = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SecretEnvSource]
   }
 }

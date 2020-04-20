@@ -26,7 +26,6 @@ object AnonAvailable {
     oof: String
   ): AnonAvailable = {
     val __obj = js.Dynamic.literal(available = available.asInstanceOf[js.Any], away = away.asInstanceOf[js.Any], background = background.asInstanceOf[js.Any], busy = busy.asInstanceOf[js.Any], dnd = dnd.asInstanceOf[js.Any], offline = offline.asInstanceOf[js.Any], oof = oof.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAvailable]
   }
 }

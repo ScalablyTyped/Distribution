@@ -31,7 +31,6 @@ object ContainerState {
     waiting: ContainerStateWaiting
   ): ContainerState = {
     val __obj = js.Dynamic.literal(running = running.asInstanceOf[js.Any], terminated = terminated.asInstanceOf[js.Any], waiting = waiting.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ContainerState]
   }
 }

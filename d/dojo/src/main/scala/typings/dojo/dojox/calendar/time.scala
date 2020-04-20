@@ -83,7 +83,6 @@ object time {
     newDate: (js.Object, js.Object) => js.Any
   ): time = {
     val __obj = js.Dynamic.literal(floor = js.Any.fromFunction5(floor), floorToDay = js.Any.fromFunction3(floorToDay), floorToMonth = js.Any.fromFunction3(floorToMonth), floorToWeek = js.Any.fromFunction5(floorToWeek), isStartOfDay = js.Any.fromFunction3(isStartOfDay), isToday = js.Any.fromFunction2(isToday), newDate = js.Any.fromFunction2(newDate))
-  
     __obj.asInstanceOf[time]
   }
 }

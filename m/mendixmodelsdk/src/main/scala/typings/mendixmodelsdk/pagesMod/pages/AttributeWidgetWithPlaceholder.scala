@@ -23,7 +23,7 @@ abstract class AttributeWidgetWithPlaceholder protected () extends AttributeWidg
   ) = this()
   @JSName("model")
   var model_FAttributeWidgetWithPlaceholder: IModel = js.native
-  def placeholder(): Text = js.native
+  def placeholder: Text = js.native
   def placeholder(newValue: Text): js.Any = js.native
 }
 

@@ -14,7 +14,6 @@ object DataHelperMixin {
   @scala.inline
   def apply(getDataSource: () => DataSource): DataHelperMixin = {
     val __obj = js.Dynamic.literal(getDataSource = js.Any.fromFunction0(getDataSource))
-  
     __obj.asInstanceOf[DataHelperMixin]
   }
 }

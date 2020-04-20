@@ -19,7 +19,6 @@ object Typeofx {
   @scala.inline
   def apply(drop: () => Unit, exit: () => Unit, modf: (String, /* repeated */ String) => Double): Typeofx = {
     val __obj = js.Dynamic.literal(drop = js.Any.fromFunction0(drop), exit = js.Any.fromFunction0(exit), modf = js.Any.fromFunction2(modf))
-  
     __obj.asInstanceOf[Typeofx]
   }
 }

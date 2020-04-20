@@ -13,7 +13,6 @@ object CodeLensList {
   @scala.inline
   def apply(dispose: () => Unit, lenses: js.Array[CodeLens]): CodeLensList = {
     val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), lenses = lenses.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CodeLensList]
   }
 }

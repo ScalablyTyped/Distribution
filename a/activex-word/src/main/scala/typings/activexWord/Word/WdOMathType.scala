@@ -14,10 +14,8 @@ trait WdOMathType extends js.Object
 
 object WdOMathType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdOMathDisplay: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdOMathDisplay: `0` = this.cast(0)
-  @scala.inline
-  def wdOMathInline: `1` = this.cast(1)
+  def wdOMathInline: `1` = 1.asInstanceOf[`1`]
 }
 

@@ -12,7 +12,6 @@ object AnonIndentSize {
   @scala.inline
   def apply(indentSize: Double): AnonIndentSize = {
     val __obj = js.Dynamic.literal(indentSize = indentSize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIndentSize]
   }
 }

@@ -12,10 +12,8 @@ trait ResponseType extends js.Object
 
 object ResponseType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `id_token token`: typings.reactAdal.reactAdalStrings.`id_token token` = ("id_token token").asInstanceOf[typings.reactAdal.reactAdalStrings.`id_token token`]
   @scala.inline
-  def `id_token token`: typings.reactAdal.reactAdalStrings.`id_token token` = this.cast("id_token token")
-  @scala.inline
-  def token: typings.reactAdal.reactAdalStrings.token = this.cast("token")
+  def token: typings.reactAdal.reactAdalStrings.token = "token".asInstanceOf[typings.reactAdal.reactAdalStrings.token]
 }
 

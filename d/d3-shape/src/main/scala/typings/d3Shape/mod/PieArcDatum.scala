@@ -39,7 +39,6 @@ object PieArcDatum {
   @scala.inline
   def apply[T](data: T, endAngle: Double, index: Double, padAngle: Double, startAngle: Double, value: Double): PieArcDatum[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], endAngle = endAngle.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], padAngle = padAngle.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PieArcDatum[T]]
   }
 }

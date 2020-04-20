@@ -84,80 +84,78 @@ trait PpSlideLayout extends js.Object
 
 object PpSlideLayout {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ppLayoutBlank: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def ppLayoutBlank: `12` = this.cast(12)
+  def ppLayoutChart: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def ppLayoutChart: `8` = this.cast(8)
+  def ppLayoutChartAndText: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def ppLayoutChartAndText: `6` = this.cast(6)
+  def ppLayoutClipArtAndVerticalText: `26` = 26.asInstanceOf[`26`]
   @scala.inline
-  def ppLayoutClipArtAndVerticalText: `26` = this.cast(26)
+  def ppLayoutClipartAndText: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def ppLayoutClipartAndText: `10` = this.cast(10)
+  def ppLayoutComparison: `34` = 34.asInstanceOf[`34`]
   @scala.inline
-  def ppLayoutComparison: `34` = this.cast(34)
+  def ppLayoutContentWithCaption: `35` = 35.asInstanceOf[`35`]
   @scala.inline
-  def ppLayoutContentWithCaption: `35` = this.cast(35)
+  def ppLayoutCustom: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def ppLayoutCustom: `32` = this.cast(32)
+  def ppLayoutFourObjects: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def ppLayoutFourObjects: `24` = this.cast(24)
+  def ppLayoutLargeObject: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def ppLayoutLargeObject: `15` = this.cast(15)
+  def ppLayoutMediaClipAndText: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def ppLayoutMediaClipAndText: `18` = this.cast(18)
+  def ppLayoutMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def ppLayoutMixed: `-2` = this.cast(-2)
+  def ppLayoutObject: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def ppLayoutObject: `16` = this.cast(16)
+  def ppLayoutObjectAndText: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def ppLayoutObjectAndText: `14` = this.cast(14)
+  def ppLayoutObjectAndTwoObjects: `30` = 30.asInstanceOf[`30`]
   @scala.inline
-  def ppLayoutObjectAndTwoObjects: `30` = this.cast(30)
+  def ppLayoutObjectOverText: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def ppLayoutObjectOverText: `19` = this.cast(19)
+  def ppLayoutOrgchart: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def ppLayoutOrgchart: `7` = this.cast(7)
+  def ppLayoutPictureWithCaption: `36` = 36.asInstanceOf[`36`]
   @scala.inline
-  def ppLayoutPictureWithCaption: `36` = this.cast(36)
+  def ppLayoutSectionHeader: `33` = 33.asInstanceOf[`33`]
   @scala.inline
-  def ppLayoutSectionHeader: `33` = this.cast(33)
+  def ppLayoutTable: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def ppLayoutTable: `4` = this.cast(4)
+  def ppLayoutText: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def ppLayoutText: `2` = this.cast(2)
+  def ppLayoutTextAndChart: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def ppLayoutTextAndChart: `5` = this.cast(5)
+  def ppLayoutTextAndClipart: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def ppLayoutTextAndClipart: `9` = this.cast(9)
+  def ppLayoutTextAndMediaClip: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def ppLayoutTextAndMediaClip: `17` = this.cast(17)
+  def ppLayoutTextAndObject: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def ppLayoutTextAndObject: `13` = this.cast(13)
+  def ppLayoutTextAndTwoObjects: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def ppLayoutTextAndTwoObjects: `21` = this.cast(21)
+  def ppLayoutTextOverObject: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def ppLayoutTextOverObject: `20` = this.cast(20)
+  def ppLayoutTitle: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def ppLayoutTitle: `1` = this.cast(1)
+  def ppLayoutTitleOnly: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def ppLayoutTitleOnly: `11` = this.cast(11)
+  def ppLayoutTwoColumnText: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def ppLayoutTwoColumnText: `3` = this.cast(3)
+  def ppLayoutTwoObjects: `29` = 29.asInstanceOf[`29`]
   @scala.inline
-  def ppLayoutTwoObjects: `29` = this.cast(29)
+  def ppLayoutTwoObjectsAndObject: `31` = 31.asInstanceOf[`31`]
   @scala.inline
-  def ppLayoutTwoObjectsAndObject: `31` = this.cast(31)
+  def ppLayoutTwoObjectsAndText: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def ppLayoutTwoObjectsAndText: `22` = this.cast(22)
+  def ppLayoutTwoObjectsOverText: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def ppLayoutTwoObjectsOverText: `23` = this.cast(23)
+  def ppLayoutVerticalText: `25` = 25.asInstanceOf[`25`]
   @scala.inline
-  def ppLayoutVerticalText: `25` = this.cast(25)
+  def ppLayoutVerticalTitleAndText: `27` = 27.asInstanceOf[`27`]
   @scala.inline
-  def ppLayoutVerticalTitleAndText: `27` = this.cast(27)
-  @scala.inline
-  def ppLayoutVerticalTitleAndTextOverChart: `28` = this.cast(28)
+  def ppLayoutVerticalTitleAndTextOverChart: `28` = 28.asInstanceOf[`28`]
 }
 

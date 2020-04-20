@@ -38,34 +38,32 @@ trait PpActionType extends js.Object
 
 object PpActionType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ppActionEndShow: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def ppActionEndShow: `6` = this.cast(6)
+  def ppActionFirstSlide: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def ppActionFirstSlide: `3` = this.cast(3)
+  def ppActionHyperlink: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def ppActionHyperlink: `7` = this.cast(7)
+  def ppActionLastSlide: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def ppActionLastSlide: `4` = this.cast(4)
+  def ppActionLastSlideViewed: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def ppActionLastSlideViewed: `5` = this.cast(5)
+  def ppActionMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def ppActionMixed: `-2` = this.cast(-2)
+  def ppActionNamedSlideShow: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def ppActionNamedSlideShow: `10` = this.cast(10)
+  def ppActionNextSlide: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def ppActionNextSlide: `1` = this.cast(1)
+  def ppActionNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def ppActionNone: `0` = this.cast(0)
+  def ppActionOLEVerb: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def ppActionOLEVerb: `11` = this.cast(11)
+  def ppActionPlay: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def ppActionPlay: `12` = this.cast(12)
+  def ppActionPreviousSlide: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def ppActionPreviousSlide: `2` = this.cast(2)
+  def ppActionRunMacro: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def ppActionRunMacro: `8` = this.cast(8)
-  @scala.inline
-  def ppActionRunProgram: `9` = this.cast(9)
+  def ppActionRunProgram: `9` = 9.asInstanceOf[`9`]
 }
 

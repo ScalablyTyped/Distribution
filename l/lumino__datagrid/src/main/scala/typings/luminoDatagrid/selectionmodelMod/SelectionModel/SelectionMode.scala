@@ -16,12 +16,10 @@ trait SelectionMode extends js.Object
 
 object SelectionMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cell: typings.luminoDatagrid.luminoDatagridStrings.cell = "cell".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.cell]
   @scala.inline
-  def cell: typings.luminoDatagrid.luminoDatagridStrings.cell = this.cast("cell")
+  def column: typings.luminoDatagrid.luminoDatagridStrings.column = "column".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.column]
   @scala.inline
-  def column: typings.luminoDatagrid.luminoDatagridStrings.column = this.cast("column")
-  @scala.inline
-  def row: typings.luminoDatagrid.luminoDatagridStrings.row = this.cast("row")
+  def row: typings.luminoDatagrid.luminoDatagridStrings.row = "row".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.row]
 }
 

@@ -14,7 +14,6 @@ object DynogelsGlobalOptions {
   @scala.inline
   def apply($dynogels: AnonPollingInterval): DynogelsGlobalOptions = {
     val __obj = js.Dynamic.literal($dynogels = $dynogels.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DynogelsGlobalOptions]
   }
 }

@@ -19,7 +19,6 @@ object Chart {
   @scala.inline
   def apply(getAs: String => Blob, getBlob: () => Blob, getOptions: () => ChartOptions): Chart = {
     val __obj = js.Dynamic.literal(getAs = js.Any.fromFunction1(getAs), getBlob = js.Any.fromFunction0(getBlob), getOptions = js.Any.fromFunction0(getOptions))
-  
     __obj.asInstanceOf[Chart]
   }
 }

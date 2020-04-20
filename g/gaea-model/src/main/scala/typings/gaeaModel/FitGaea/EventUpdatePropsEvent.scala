@@ -15,7 +15,6 @@ object EventUpdatePropsEvent {
   @scala.inline
   def apply(props: ComponentProps): EventUpdatePropsEvent = {
     val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventUpdatePropsEvent]
   }
 }

@@ -25,7 +25,6 @@ object Typeoftypescript {
     typescriptVersion: String
   ): Typeoftypescript = {
     val __obj = js.Dynamic.literal(getJavaScriptWorker = js.Any.fromFunction0(getJavaScriptWorker), getTypeScriptWorker = js.Any.fromFunction0(getTypeScriptWorker), javascriptDefaults = javascriptDefaults.asInstanceOf[js.Any], typescriptDefaults = typescriptDefaults.asInstanceOf[js.Any], typescriptVersion = typescriptVersion.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Typeoftypescript]
   }
 }

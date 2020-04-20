@@ -15,7 +15,6 @@ object AgentOptions {
   @scala.inline
   def apply(keepAlive: Boolean, keepAliveMsecs: Double, maxFreeSockets: Double, maxSockets: Double): AgentOptions = {
     val __obj = js.Dynamic.literal(keepAlive = keepAlive.asInstanceOf[js.Any], keepAliveMsecs = keepAliveMsecs.asInstanceOf[js.Any], maxFreeSockets = maxFreeSockets.asInstanceOf[js.Any], maxSockets = maxSockets.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AgentOptions]
   }
 }

@@ -12,7 +12,6 @@ object Options {
   @scala.inline
   def apply(encoding: String): Options = {
     val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Options]
   }
 }

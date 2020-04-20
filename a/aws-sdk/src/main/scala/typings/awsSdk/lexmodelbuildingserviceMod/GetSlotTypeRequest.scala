@@ -20,7 +20,6 @@ object GetSlotTypeRequest {
   @scala.inline
   def apply(name: SlotTypeName, version: Version): GetSlotTypeRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetSlotTypeRequest]
   }
 }

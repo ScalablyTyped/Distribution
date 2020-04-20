@@ -32,7 +32,6 @@ object AnonCode {
     s3: Double
   ): AnonCode = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], l1 = l1.asInstanceOf[js.Any], l2 = l2.asInstanceOf[js.Any], l3 = l3.asInstanceOf[js.Any], m1 = m1.asInstanceOf[js.Any], m2 = m2.asInstanceOf[js.Any], m3 = m3.asInstanceOf[js.Any], s1 = s1.asInstanceOf[js.Any], s2 = s2.asInstanceOf[js.Any], s3 = s3.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCode]
   }
 }

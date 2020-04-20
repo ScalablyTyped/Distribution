@@ -16,7 +16,6 @@ object DeleteCacheParameterGroupMessage {
   @scala.inline
   def apply(CacheParameterGroupName: String): DeleteCacheParameterGroupMessage = {
     val __obj = js.Dynamic.literal(CacheParameterGroupName = CacheParameterGroupName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteCacheParameterGroupMessage]
   }
 }

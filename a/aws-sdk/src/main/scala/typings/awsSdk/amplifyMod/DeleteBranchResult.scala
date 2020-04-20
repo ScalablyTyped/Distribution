@@ -16,7 +16,6 @@ object DeleteBranchResult {
   @scala.inline
   def apply(branch: Branch): DeleteBranchResult = {
     val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteBranchResult]
   }
 }

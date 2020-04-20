@@ -8,30 +8,18 @@ import scala.scalajs.js.annotation._
   * Simple object returned in the callback from the
   * [reverseGeocoder](Titanium.Geolocation.reverseGeocoder) method.
   */
-trait ReverseGeocodeResponse extends js.Object {
-  /**
-  	 * Error code. Returns 0 if `success` is `true`.
-  	 */
-  var code: js.UndefOr[Double] = js.undefined
-  /**
-  	 * Error message, if any returned.
-  	 */
-  var error: js.UndefOr[String] = js.undefined
+trait ReverseGeocodeResponse extends ErrorResponse {
   /**
   	 * An array of reverse-geocoded addresses matching the requested location.
   	 */
   var places: js.UndefOr[js.Array[GeocodedAddress]] = js.undefined
-  /**
-  	 * Indicates if the operation succeeded.
-  	 */
-  var success: js.UndefOr[Boolean] = js.undefined
 }
 
 object ReverseGeocodeResponse {
   @scala.inline
   def apply(
     code: Int | Double = null,
-    error: String = null,
+    error: java.lang.String = null,
     places: js.Array[GeocodedAddress] = null,
     success: js.UndefOr[Boolean] = js.undefined
   ): ReverseGeocodeResponse = {

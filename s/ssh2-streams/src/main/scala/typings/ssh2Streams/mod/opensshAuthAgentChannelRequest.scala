@@ -14,7 +14,6 @@ object opensshAuthAgentChannelRequest {
   @scala.inline
   def apply(recipient: Double, request: `auth-agent-req@opensshDotcom`): opensshAuthAgentChannelRequest = {
     val __obj = js.Dynamic.literal(recipient = recipient.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[opensshAuthAgentChannelRequest]
   }
 }

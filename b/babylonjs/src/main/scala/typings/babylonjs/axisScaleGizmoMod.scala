@@ -55,7 +55,7 @@ object axisScaleGizmoMod extends js.Object {
       * If the scaling operation should be done on all axis (default: false)
       */
     var uniformScaling: Boolean = js.native
-    def isEnabled(): Boolean = js.native
+    def isEnabled: Boolean = js.native
     /**
       * If the gizmo is enabled
       */

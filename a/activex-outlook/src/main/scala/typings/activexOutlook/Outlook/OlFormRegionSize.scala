@@ -14,10 +14,8 @@ trait OlFormRegionSize extends js.Object
 
 object OlFormRegionSize {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olFormRegionTypeAdjoining: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olFormRegionTypeAdjoining: `1` = this.cast(1)
-  @scala.inline
-  def olFormRegionTypeSeparate: `0` = this.cast(0)
+  def olFormRegionTypeSeparate: `0` = 0.asInstanceOf[`0`]
 }
 

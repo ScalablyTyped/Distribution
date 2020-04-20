@@ -13,12 +13,10 @@ trait DurationTemplate extends js.Object
 
 object DurationTemplate {
   @scala.inline
-  def HM: typings.momentDurationFormat.momentDurationFormatStrings.HM = this.cast("HM")
+  def HM: typings.momentDurationFormat.momentDurationFormatStrings.HM = "HM".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.HM]
   @scala.inline
-  def HMS: typings.momentDurationFormat.momentDurationFormatStrings.HMS = this.cast("HMS")
+  def HMS: typings.momentDurationFormat.momentDurationFormatStrings.HMS = "HMS".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.HMS]
   @scala.inline
-  def MS: typings.momentDurationFormat.momentDurationFormatStrings.MS = this.cast("MS")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def MS: typings.momentDurationFormat.momentDurationFormatStrings.MS = "MS".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.MS]
 }
 

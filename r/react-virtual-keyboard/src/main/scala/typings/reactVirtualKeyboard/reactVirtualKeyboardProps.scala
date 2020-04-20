@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactVirtualKeyboardProps {
   @scala.inline
-  def ReactVirtualKeyboardProps: KeyboardProps.type = typings.reactVirtualKeyboard.mod.KeyboardProps
+  def ReactVirtualKeyboardProps: KeyboardProps.type = KeyboardProps
   type ReactVirtualKeyboardProps = KeyboardProps
 }
 

@@ -14,10 +14,8 @@ trait MFOnlineTransitionResultFlags extends js.Object
 
 object MFOnlineTransitionResultFlags {
   @scala.inline
-  def None: `0` = this.cast(0)
+  def None: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def StatusChanged: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def StatusChanged: `1` = 1.asInstanceOf[`1`]
 }
 

@@ -37,7 +37,6 @@ object PersistentVolumeClaimStatus {
     phase: String
   ): PersistentVolumeClaimStatus = {
     val __obj = js.Dynamic.literal(accessModes = accessModes.asInstanceOf[js.Any], capacity = capacity.asInstanceOf[js.Any], conditions = conditions.asInstanceOf[js.Any], phase = phase.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PersistentVolumeClaimStatus]
   }
 }

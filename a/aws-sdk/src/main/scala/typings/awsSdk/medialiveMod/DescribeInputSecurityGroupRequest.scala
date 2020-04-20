@@ -16,7 +16,6 @@ object DescribeInputSecurityGroupRequest {
   @scala.inline
   def apply(InputSecurityGroupId: string): DescribeInputSecurityGroupRequest = {
     val __obj = js.Dynamic.literal(InputSecurityGroupId = InputSecurityGroupId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeInputSecurityGroupRequest]
   }
 }

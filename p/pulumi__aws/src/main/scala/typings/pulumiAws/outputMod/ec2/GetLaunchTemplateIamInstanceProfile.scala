@@ -20,7 +20,6 @@ object GetLaunchTemplateIamInstanceProfile {
   @scala.inline
   def apply(arn: String, name: String): GetLaunchTemplateIamInstanceProfile = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetLaunchTemplateIamInstanceProfile]
   }
 }

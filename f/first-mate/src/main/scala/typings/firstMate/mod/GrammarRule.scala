@@ -16,7 +16,6 @@ object GrammarRule {
   @scala.inline
   def apply(contentScopeName: String, rule: js.Object, scopeName: String): GrammarRule = {
     val __obj = js.Dynamic.literal(contentScopeName = contentScopeName.asInstanceOf[js.Any], rule = rule.asInstanceOf[js.Any], scopeName = scopeName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GrammarRule]
   }
 }

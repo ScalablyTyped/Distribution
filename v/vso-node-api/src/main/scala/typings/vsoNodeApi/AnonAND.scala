@@ -14,7 +14,6 @@ object AnonAND {
   @scala.inline
   def apply(aND: Double, nONE: Double, oR: Double): AnonAND = {
     val __obj = js.Dynamic.literal(aND = aND.asInstanceOf[js.Any], nONE = nONE.asInstanceOf[js.Any], oR = oR.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAND]
   }
 }

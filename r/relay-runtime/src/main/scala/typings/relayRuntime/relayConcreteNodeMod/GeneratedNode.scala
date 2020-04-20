@@ -29,7 +29,6 @@ object GeneratedNode {
     params: RequestParameters
   ): GeneratedNode = {
     val __obj = js.Dynamic.literal(fragment = fragment.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GeneratedNode]
   }
   @scala.inline
@@ -49,7 +48,6 @@ object GeneratedNode {
   @scala.inline
   def ReaderInlineDataFragment(kind: InlineDataFragment, name: String): GeneratedNode = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GeneratedNode]
   }
   @scala.inline

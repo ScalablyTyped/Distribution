@@ -12,7 +12,6 @@ object FloatingLabel {
   @scala.inline
   def apply(refresh: () => Unit): FloatingLabel = {
     val __obj = js.Dynamic.literal(refresh = js.Any.fromFunction0(refresh))
-  
     __obj.asInstanceOf[FloatingLabel]
   }
 }

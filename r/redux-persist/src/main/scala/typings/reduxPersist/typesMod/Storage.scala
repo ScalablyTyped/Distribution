@@ -18,7 +18,6 @@ object Storage {
     setItem: (String, js.Any, /* repeated */ js.Any) => js.Any
   ): Storage = {
     val __obj = js.Dynamic.literal(getItem = js.Any.fromFunction2(getItem), removeItem = js.Any.fromFunction2(removeItem), setItem = js.Any.fromFunction3(setItem))
-  
     __obj.asInstanceOf[Storage]
   }
 }

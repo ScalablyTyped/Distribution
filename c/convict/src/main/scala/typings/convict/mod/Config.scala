@@ -12,22 +12,22 @@ trait Config[T] extends js.Object {
     */
   def default(): T | (/* import warning: importer.ImportType#apply Failed type conversion: T[string] */ js.Any) = js.native
   def default(name: String): T | (/* import warning: importer.ImportType#apply Failed type conversion: T[string] */ js.Any) = js.native
-  def default[K /* <: String */](name: K): /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = js.native
+  def default[K /* <: /* keyof T */ String */](name: K): /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = js.native
   @JSName("default")
-  def default_K_StringK2_AnyK3_Any[K /* <: String */, K2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K] */ js.Any */, K3 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K][K2] */ js.Any */](name: K): /* import warning: importer.ImportType#apply Failed type conversion: T[K][K2][K3] */ js.Any = js.native
+  def default_K_StringK2_AnyK3_Any[K /* <: /* keyof T */ String */, K2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K] */ js.Any */, K3 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K][K2] */ js.Any */](name: K): /* import warning: importer.ImportType#apply Failed type conversion: T[K][K2][K3] */ js.Any = js.native
   @JSName("default")
-  def default_K_StringK2_AnyK3_AnyK4_Any_Any[K /* <: String */, K2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K] */ js.Any */, K3 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K][K2] */ js.Any */, K4 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K][K2][K3] */ js.Any */](name: String): /* import warning: importer.ImportType#apply Failed type conversion: T[K][K2][K3][K4] */ js.Any = js.native
+  def default_K_StringK2_AnyK3_AnyK4_Any_Any[K /* <: /* keyof T */ String */, K2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K] */ js.Any */, K3 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K][K2] */ js.Any */, K4 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K][K2][K3] */ js.Any */](name: String): /* import warning: importer.ImportType#apply Failed type conversion: T[K][K2][K3][K4] */ js.Any = js.native
   @JSName("default")
-  def default_K_StringK2_Any_Any[K /* <: String */, K2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K] */ js.Any */](name: String): /* import warning: importer.ImportType#apply Failed type conversion: T[K][K2] */ js.Any = js.native
+  def default_K_StringK2_Any_Any[K /* <: /* keyof T */ String */, K2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K] */ js.Any */](name: String): /* import warning: importer.ImportType#apply Failed type conversion: T[K][K2] */ js.Any = js.native
   @JSName("default")
-  def default_K_String_Any[K /* <: String */](): /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = js.native
+  def default_K_String_Any[K /* <: /* keyof T */ String */](): /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = js.native
   /**
     * @returns the current value of the name property. name can use dot
     * notation to reference nested values
     */
   def get(): (/* import warning: importer.ImportType#apply Failed type conversion: T[string] */ js.Any) | T = js.native
   def get(name: String): (/* import warning: importer.ImportType#apply Failed type conversion: T[string] */ js.Any) | T = js.native
-  def get[K /* <: String */, K2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K] */ js.Any */, K3 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K][K2] */ js.Any */](name: K): /* import warning: importer.ImportType#apply Failed type conversion: T[K][K2][K3] */ js.Any = js.native
+  def get[K /* <: /* keyof T */ String */, K2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K] */ js.Any */, K3 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K][K2] */ js.Any */](name: K): /* import warning: importer.ImportType#apply Failed type conversion: T[K][K2][K3] */ js.Any = js.native
   /**
     * Exports all the properties (that is the keys and their current values) as a {JSON} {Object}
     * @returns A {JSON} compliant {Object}
@@ -44,18 +44,18 @@ trait Config[T] extends js.Object {
     */
   def getSchemaString(): String = js.native
   @JSName("get")
-  def get_K_StringK2_AnyK3_AnyK4_Any_Any[K /* <: String */, K2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K] */ js.Any */, K3 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K][K2] */ js.Any */, K4 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K][K2][K3] */ js.Any */](name: String): /* import warning: importer.ImportType#apply Failed type conversion: T[K][K2][K3][K4] */ js.Any = js.native
+  def get_K_StringK2_AnyK3_AnyK4_Any_Any[K /* <: /* keyof T */ String */, K2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K] */ js.Any */, K3 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K][K2] */ js.Any */, K4 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K][K2][K3] */ js.Any */](name: String): /* import warning: importer.ImportType#apply Failed type conversion: T[K][K2][K3][K4] */ js.Any = js.native
   @JSName("get")
-  def get_K_StringK2_Any_Any[K /* <: String */, K2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K] */ js.Any */](name: String): /* import warning: importer.ImportType#apply Failed type conversion: T[K][K2] */ js.Any = js.native
+  def get_K_StringK2_Any_Any[K /* <: /* keyof T */ String */, K2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K] */ js.Any */](name: String): /* import warning: importer.ImportType#apply Failed type conversion: T[K][K2] */ js.Any = js.native
   /**
     * @returns true if the property name is defined, or false otherwise
     */
   def has(name: String): Boolean = js.native
-  def has[K /* <: String */, K2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K] */ js.Any */, K3 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K][K2] */ js.Any */](name: K): Boolean = js.native
+  def has[K /* <: /* keyof T */ String */, K2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K] */ js.Any */, K3 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K][K2] */ js.Any */](name: K): Boolean = js.native
   @JSName("has")
-  def has_K_StringK2_Any[K /* <: String */, K2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K] */ js.Any */](name: String): Boolean = js.native
+  def has_K_StringK2_Any[K /* <: /* keyof T */ String */, K2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K] */ js.Any */](name: String): Boolean = js.native
   @JSName("has")
-  def has_K_StringK2_AnyK3_AnyK4_Any[K /* <: String */, K2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K] */ js.Any */, K3 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K][K2] */ js.Any */, K4 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K][K2][K3] */ js.Any */](name: String): Boolean = js.native
+  def has_K_StringK2_AnyK3_AnyK4_Any[K /* <: /* keyof T */ String */, K2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K] */ js.Any */, K3 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K][K2] */ js.Any */, K4 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K][K2][K3] */ js.Any */](name: String): Boolean = js.native
   /**
     * Loads and merges a JavaScript object into config
     */
@@ -74,17 +74,17 @@ trait Config[T] extends js.Object {
     name: String,
     value: /* import warning: importer.ImportType#apply Failed type conversion: T[string] */ js.Any
   ): Config[T] = js.native
-  def set[K /* <: String */, K2 /* <: (/* import warning: importer.ImportType#apply Failed type conversion: keyof T[K] */ js.Any) | String */](
+  def set[K /* <: /* keyof T */ String */, K2 /* <: (/* import warning: importer.ImportType#apply Failed type conversion: keyof T[K] */ js.Any) | String */](
     name: K,
     value: /* import warning: importer.ImportType#apply Failed type conversion: T[K][K2] */ js.Any
   ): Config[T] = js.native
   @JSName("set")
-  def set_K_StringK2_AnyK3_AnyK4_UnionAnyString[K /* <: String */, K2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K] */ js.Any */, K3 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K][K2] */ js.Any */, K4 /* <: (/* import warning: importer.ImportType#apply Failed type conversion: keyof T[K][K2][K3] */ js.Any) | String */](
+  def set_K_StringK2_AnyK3_AnyK4_UnionAnyString[K /* <: /* keyof T */ String */, K2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K] */ js.Any */, K3 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K][K2] */ js.Any */, K4 /* <: (/* import warning: importer.ImportType#apply Failed type conversion: keyof T[K][K2][K3] */ js.Any) | String */](
     name: K,
     value: /* import warning: importer.ImportType#apply Failed type conversion: T[K][K2][K3][K4] */ js.Any
   ): Config[T] = js.native
   @JSName("set")
-  def set_K_StringK2_AnyK3_UnionAnyString[K /* <: String */, K2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K] */ js.Any */, K3 /* <: (/* import warning: importer.ImportType#apply Failed type conversion: keyof T[K][K2] */ js.Any) | String */](
+  def set_K_StringK2_AnyK3_UnionAnyString[K /* <: /* keyof T */ String */, K2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K] */ js.Any */, K3 /* <: (/* import warning: importer.ImportType#apply Failed type conversion: keyof T[K][K2] */ js.Any) | String */](
     name: K,
     value: /* import warning: importer.ImportType#apply Failed type conversion: T[K][K2][K3] */ js.Any
   ): Config[T] = js.native

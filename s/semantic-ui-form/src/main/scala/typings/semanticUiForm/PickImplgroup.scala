@@ -13,7 +13,6 @@ object PickImplgroup {
   @scala.inline
   def apply(group: String): PickImplgroup = {
     val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplgroup]
   }
 }

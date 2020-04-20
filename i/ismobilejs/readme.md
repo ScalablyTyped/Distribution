@@ -1,7 +1,7 @@
 
 # Scala.js typings for ismobilejs
 
-Typings are for version 1.0.3
+Typings are for version 1.1.1
 
 ## Library description:
 A simple JS library that detects mobile devices.

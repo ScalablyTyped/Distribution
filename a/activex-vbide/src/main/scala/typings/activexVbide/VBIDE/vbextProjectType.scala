@@ -14,10 +14,8 @@ trait vbextProjectType extends js.Object
 
 object vbextProjectType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def vbext_pt_HostProject: `100` = 100.asInstanceOf[`100`]
   @scala.inline
-  def vbext_pt_HostProject: `100` = this.cast(100)
-  @scala.inline
-  def vbext_pt_StandAlone: `101` = this.cast(101)
+  def vbext_pt_StandAlone: `101` = 101.asInstanceOf[`101`]
 }
 

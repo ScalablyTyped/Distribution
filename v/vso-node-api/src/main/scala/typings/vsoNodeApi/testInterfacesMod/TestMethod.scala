@@ -13,7 +13,6 @@ object TestMethod {
   @scala.inline
   def apply(container: String, name: String): TestMethod = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TestMethod]
   }
 }

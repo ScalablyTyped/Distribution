@@ -24,7 +24,6 @@ object AnonAdminResponseForReview {
     updateReview: Double
   ): AnonAdminResponseForReview = {
     val __obj = js.Dynamic.literal(adminResponseForReview = adminResponseForReview.asInstanceOf[js.Any], deleteAdminReply = deleteAdminReply.asInstanceOf[js.Any], deletePublisherReply = deletePublisherReply.asInstanceOf[js.Any], flagReview = flagReview.asInstanceOf[js.Any], replyToReview = replyToReview.asInstanceOf[js.Any], updateReview = updateReview.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAdminResponseForReview]
   }
 }

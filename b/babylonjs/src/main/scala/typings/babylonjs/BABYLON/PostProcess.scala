@@ -213,7 +213,7 @@ class PostProcess protected () extends js.Object {
   /**
     * The aspect ratio of the output texture.
     */
-  def aspectRatio(): Double = js.native
+  def aspectRatio: Double = js.native
   /**
     * Disposes the post process.
     * @param camera The camera to dispose the post process on.
@@ -249,7 +249,7 @@ class PostProcess protected () extends js.Object {
     * The input texture for this post process and the output texture of the previous post process. When added to a pipeline the previous post process will
     * render it's output into this texture and this texture will be used as textureSampler in the fragment shader of this post process.
     */
-  def inputTexture(): InternalTexture = js.native
+  def inputTexture: InternalTexture = js.native
   def inputTexture(value: InternalTexture): js.Any = js.native
   /**
     * Get a value indicating if the post-process is ready to be used
@@ -264,7 +264,7 @@ class PostProcess protected () extends js.Object {
   /**
     * If the post process is supported.
     */
-  def isSupported(): Boolean = js.native
+  def isSupported: Boolean = js.native
   /** invalidate frameBuffer to hint the postprocess to create a depth buffer */
   def markTextureDirty(): Unit = js.native
   /**
@@ -290,7 +290,7 @@ class PostProcess protected () extends js.Object {
   /**
     * Number of sample textures (default: 1)
     */
-  def samples(): Double = js.native
+  def samples: Double = js.native
   def samples(n: Double): js.Any = js.native
   /**
     * To avoid multiple redundant textures for multiple post process, the output the output texture for this post process can be shared with another.
@@ -302,7 +302,7 @@ class PostProcess protected () extends js.Object {
     * Gets the texel size of the postprocess.
     * See https://en.wikipedia.org/wiki/Texel_(graphics)
     */
-  def texelSize(): Vector2 = js.native
+  def texelSize: Vector2 = js.native
   /**
     * Updates the effect with the current post process compile time values and recompiles the shader.
     * @param defines Define statements that should be added at the beginning of the shader. (default: null)

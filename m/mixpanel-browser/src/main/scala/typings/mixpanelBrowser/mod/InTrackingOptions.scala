@@ -23,7 +23,6 @@ object InTrackingOptions {
     track_event_properties: Dict
   ): InTrackingOptions = {
     val __obj = js.Dynamic.literal(cookie_expiration = cookie_expiration.asInstanceOf[js.Any], cookie_prefix = cookie_prefix.asInstanceOf[js.Any], cross_subdomain_cookie = cross_subdomain_cookie.asInstanceOf[js.Any], persistence_type = persistence_type.asInstanceOf[js.Any], secure_cookie = secure_cookie.asInstanceOf[js.Any], track = js.Any.fromFunction0(track), track_event_name = track_event_name.asInstanceOf[js.Any], track_event_properties = track_event_properties.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InTrackingOptions]
   }
 }

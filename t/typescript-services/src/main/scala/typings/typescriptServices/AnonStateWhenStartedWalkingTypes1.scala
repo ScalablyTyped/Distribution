@@ -17,7 +17,6 @@ object AnonStateWhenStartedWalkingTypes1 {
     stateWhenStartedWalkingTypes2: EnclosingTypeWalkerState
   ): AnonStateWhenStartedWalkingTypes1 = {
     val __obj = js.Dynamic.literal(stateWhenStartedWalkingTypes1 = stateWhenStartedWalkingTypes1.asInstanceOf[js.Any], stateWhenStartedWalkingTypes2 = stateWhenStartedWalkingTypes2.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonStateWhenStartedWalkingTypes1]
   }
 }

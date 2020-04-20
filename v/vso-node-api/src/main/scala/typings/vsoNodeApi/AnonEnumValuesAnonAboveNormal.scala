@@ -12,7 +12,6 @@ object AnonEnumValuesAnonAboveNormal {
   @scala.inline
   def apply(enumValues: AnonAboveNormal): AnonEnumValuesAnonAboveNormal = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumValuesAnonAboveNormal]
   }
 }

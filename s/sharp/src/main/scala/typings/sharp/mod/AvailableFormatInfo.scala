@@ -15,7 +15,6 @@ object AvailableFormatInfo {
   @scala.inline
   def apply(id: String, input: AnonBuffer, output: AnonBuffer): AvailableFormatInfo = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AvailableFormatInfo]
   }
 }

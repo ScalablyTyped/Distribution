@@ -13,7 +13,6 @@ object LongPressGestureHandlerGestureEvent {
   @scala.inline
   def apply(nativeEvent: GestureHandlerGestureEventNativeEvent with LongPressGestureHandlerEventExtra): LongPressGestureHandlerGestureEvent = {
     val __obj = js.Dynamic.literal(nativeEvent = nativeEvent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LongPressGestureHandlerGestureEvent]
   }
 }

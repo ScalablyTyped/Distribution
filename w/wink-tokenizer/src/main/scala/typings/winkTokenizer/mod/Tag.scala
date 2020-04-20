@@ -25,36 +25,34 @@ trait Tag extends js.Object
 
 object Tag {
   @scala.inline
-  def alien: typings.winkTokenizer.winkTokenizerStrings.alien = this.cast("alien")
+  def alien: typings.winkTokenizer.winkTokenizerStrings.alien = "alien".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.alien]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def currency: typings.winkTokenizer.winkTokenizerStrings.currency = "currency".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.currency]
   @scala.inline
-  def currency: typings.winkTokenizer.winkTokenizerStrings.currency = this.cast("currency")
+  def email: typings.winkTokenizer.winkTokenizerStrings.email = "email".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.email]
   @scala.inline
-  def email: typings.winkTokenizer.winkTokenizerStrings.email = this.cast("email")
+  def emoji: typings.winkTokenizer.winkTokenizerStrings.emoji = "emoji".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.emoji]
   @scala.inline
-  def emoji: typings.winkTokenizer.winkTokenizerStrings.emoji = this.cast("emoji")
+  def emoticon: typings.winkTokenizer.winkTokenizerStrings.emoticon = "emoticon".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.emoticon]
   @scala.inline
-  def emoticon: typings.winkTokenizer.winkTokenizerStrings.emoticon = this.cast("emoticon")
+  def hashtag: typings.winkTokenizer.winkTokenizerStrings.hashtag = "hashtag".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.hashtag]
   @scala.inline
-  def hashtag: typings.winkTokenizer.winkTokenizerStrings.hashtag = this.cast("hashtag")
+  def mention: typings.winkTokenizer.winkTokenizerStrings.mention = "mention".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.mention]
   @scala.inline
-  def mention: typings.winkTokenizer.winkTokenizerStrings.mention = this.cast("mention")
+  def number: typings.winkTokenizer.winkTokenizerStrings.number = "number".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.number]
   @scala.inline
-  def number: typings.winkTokenizer.winkTokenizerStrings.number = this.cast("number")
+  def ordinal: typings.winkTokenizer.winkTokenizerStrings.ordinal = "ordinal".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.ordinal]
   @scala.inline
-  def ordinal: typings.winkTokenizer.winkTokenizerStrings.ordinal = this.cast("ordinal")
+  def punctuation: typings.winkTokenizer.winkTokenizerStrings.punctuation = "punctuation".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.punctuation]
   @scala.inline
-  def punctuation: typings.winkTokenizer.winkTokenizerStrings.punctuation = this.cast("punctuation")
+  def quoted_phrase: typings.winkTokenizer.winkTokenizerStrings.quoted_phrase = "quoted_phrase".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.quoted_phrase]
   @scala.inline
-  def quoted_phrase: typings.winkTokenizer.winkTokenizerStrings.quoted_phrase = this.cast("quoted_phrase")
+  def symbol: typings.winkTokenizer.winkTokenizerStrings.symbol = "symbol".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.symbol]
   @scala.inline
-  def symbol: typings.winkTokenizer.winkTokenizerStrings.symbol = this.cast("symbol")
+  def time: typings.winkTokenizer.winkTokenizerStrings.time = "time".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.time]
   @scala.inline
-  def time: typings.winkTokenizer.winkTokenizerStrings.time = this.cast("time")
+  def url: typings.winkTokenizer.winkTokenizerStrings.url = "url".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.url]
   @scala.inline
-  def url: typings.winkTokenizer.winkTokenizerStrings.url = this.cast("url")
-  @scala.inline
-  def word: typings.winkTokenizer.winkTokenizerStrings.word = this.cast("word")
+  def word: typings.winkTokenizer.winkTokenizerStrings.word = "word".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.word]
 }
 

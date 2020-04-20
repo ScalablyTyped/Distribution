@@ -27,7 +27,6 @@ object RecordSource {
     toJSON: () => StringDictionary[Record]
   ): RecordSource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), getRecordIDs = js.Any.fromFunction0(getRecordIDs), getStatus = js.Any.fromFunction1(getStatus), has = js.Any.fromFunction1(has), size = js.Any.fromFunction0(size), toJSON = js.Any.fromFunction0(toJSON))
-  
     __obj.asInstanceOf[RecordSource]
   }
 }

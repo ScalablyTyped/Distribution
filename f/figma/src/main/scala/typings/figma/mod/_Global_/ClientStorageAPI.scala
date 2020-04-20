@@ -13,7 +13,6 @@ object ClientStorageAPI {
   @scala.inline
   def apply(getAsync: String => js.Promise[_], setAsync: (String, js.Any) => js.Promise[Unit]): ClientStorageAPI = {
     val __obj = js.Dynamic.literal(getAsync = js.Any.fromFunction1(getAsync), setAsync = js.Any.fromFunction2(setAsync))
-  
     __obj.asInstanceOf[ClientStorageAPI]
   }
 }

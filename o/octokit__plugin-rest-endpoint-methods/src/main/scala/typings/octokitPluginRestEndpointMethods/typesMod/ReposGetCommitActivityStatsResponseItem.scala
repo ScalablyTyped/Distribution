@@ -14,7 +14,6 @@ object ReposGetCommitActivityStatsResponseItem {
   @scala.inline
   def apply(days: js.Array[Double], total: Double, week: Double): ReposGetCommitActivityStatsResponseItem = {
     val __obj = js.Dynamic.literal(days = days.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], week = week.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReposGetCommitActivityStatsResponseItem]
   }
 }

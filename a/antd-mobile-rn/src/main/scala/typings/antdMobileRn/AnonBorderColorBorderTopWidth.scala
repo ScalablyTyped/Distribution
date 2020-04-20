@@ -15,7 +15,6 @@ object AnonBorderColorBorderTopWidth {
   @scala.inline
   def apply(borderColor: String, borderTopWidth: Double, flexGrow: Double, paddingVertical: Double): AnonBorderColorBorderTopWidth = {
     val __obj = js.Dynamic.literal(borderColor = borderColor.asInstanceOf[js.Any], borderTopWidth = borderTopWidth.asInstanceOf[js.Any], flexGrow = flexGrow.asInstanceOf[js.Any], paddingVertical = paddingVertical.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBorderColorBorderTopWidth]
   }
 }

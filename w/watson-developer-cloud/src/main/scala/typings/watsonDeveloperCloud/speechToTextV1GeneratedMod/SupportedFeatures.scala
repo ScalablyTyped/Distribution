@@ -16,7 +16,6 @@ object SupportedFeatures {
   @scala.inline
   def apply(custom_language_model: Boolean, speaker_labels: Boolean): SupportedFeatures = {
     val __obj = js.Dynamic.literal(custom_language_model = custom_language_model.asInstanceOf[js.Any], speaker_labels = speaker_labels.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SupportedFeatures]
   }
 }

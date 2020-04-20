@@ -12,7 +12,6 @@ object OptimisticUpdateFunction {
   @scala.inline
   def apply(storeUpdater: RecordSourceProxy => Unit): OptimisticUpdateFunction = {
     val __obj = js.Dynamic.literal(storeUpdater = js.Any.fromFunction1(storeUpdater))
-  
     __obj.asInstanceOf[OptimisticUpdateFunction]
   }
 }

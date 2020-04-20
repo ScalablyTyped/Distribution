@@ -15,7 +15,6 @@ object Store {
   @scala.inline
   def apply(dispatch: js.Function, getState: js.Function, replaceReducer: js.Function, subscribe: js.Function): Store = {
     val __obj = js.Dynamic.literal(dispatch = dispatch.asInstanceOf[js.Any], getState = getState.asInstanceOf[js.Any], replaceReducer = replaceReducer.asInstanceOf[js.Any], subscribe = subscribe.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Store]
   }
 }

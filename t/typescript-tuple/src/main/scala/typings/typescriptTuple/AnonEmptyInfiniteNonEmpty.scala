@@ -14,7 +14,6 @@ object AnonEmptyInfiniteNonEmpty {
   @scala.inline
   def apply[Holder /* <: js.Array[_] */, Tuple /* <: js.Array[_] */](empty: Holder, infinite: js.Any, nonEmpty: js.Any): AnonEmptyInfiniteNonEmpty[Holder, Tuple] = {
     val __obj = js.Dynamic.literal(empty = empty.asInstanceOf[js.Any], infinite = infinite.asInstanceOf[js.Any], nonEmpty = nonEmpty.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEmptyInfiniteNonEmpty[Holder, Tuple]]
   }
 }

@@ -26,7 +26,6 @@ object GetApnsVoipSandboxChannelOutput {
     APNSVoipSandboxChannelResponse: UnmarshalledAPNSVoipSandboxChannelResponse
   ): GetApnsVoipSandboxChannelOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], APNSVoipSandboxChannelResponse = APNSVoipSandboxChannelResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetApnsVoipSandboxChannelOutput]
   }
 }

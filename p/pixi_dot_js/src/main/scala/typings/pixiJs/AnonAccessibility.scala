@@ -24,7 +24,6 @@ object AnonAccessibility {
     prepare: Prepare
   ): AnonAccessibility = {
     val __obj = js.Dynamic.literal(accessibility = accessibility.asInstanceOf[js.Any], extract = extract.asInstanceOf[js.Any], interaction = interaction.asInstanceOf[js.Any], prepare = prepare.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAccessibility]
   }
 }

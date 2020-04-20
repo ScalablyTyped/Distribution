@@ -16,7 +16,6 @@ object DeleteLicenseConfigurationRequest {
   @scala.inline
   def apply(LicenseConfigurationArn: String): DeleteLicenseConfigurationRequest = {
     val __obj = js.Dynamic.literal(LicenseConfigurationArn = LicenseConfigurationArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteLicenseConfigurationRequest]
   }
 }

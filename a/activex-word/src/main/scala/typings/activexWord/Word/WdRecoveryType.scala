@@ -46,42 +46,40 @@ trait WdRecoveryType extends js.Object
 
 object WdRecoveryType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdChart: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def wdChart: `14` = this.cast(14)
+  def wdChartLinked: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def wdChartLinked: `15` = this.cast(15)
+  def wdChartPicture: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def wdChartPicture: `13` = this.cast(13)
+  def wdFormatOriginalFormatting: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def wdFormatOriginalFormatting: `16` = this.cast(16)
+  def wdFormatPlainText: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def wdFormatPlainText: `22` = this.cast(22)
+  def wdFormatSurroundingFormattingWithEmphasis: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def wdFormatSurroundingFormattingWithEmphasis: `20` = this.cast(20)
+  def wdListCombineWithExistingList: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def wdListCombineWithExistingList: `24` = this.cast(24)
+  def wdListContinueNumbering: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def wdListContinueNumbering: `7` = this.cast(7)
+  def wdListDontMerge: `25` = 25.asInstanceOf[`25`]
   @scala.inline
-  def wdListDontMerge: `25` = this.cast(25)
+  def wdListRestartNumbering: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def wdListRestartNumbering: `8` = this.cast(8)
+  def wdPasteDefault: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdPasteDefault: `0` = this.cast(0)
+  def wdSingleCellTable: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdSingleCellTable: `6` = this.cast(6)
+  def wdSingleCellText: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdSingleCellText: `5` = this.cast(5)
+  def wdTableAppendTable: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def wdTableAppendTable: `10` = this.cast(10)
+  def wdTableInsertAsRows: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def wdTableInsertAsRows: `11` = this.cast(11)
+  def wdTableOriginalFormatting: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def wdTableOriginalFormatting: `12` = this.cast(12)
+  def wdTableOverwriteCells: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def wdTableOverwriteCells: `23` = this.cast(23)
-  @scala.inline
-  def wdUseDestinationStylesRecovery: `19` = this.cast(19)
+  def wdUseDestinationStylesRecovery: `19` = 19.asInstanceOf[`19`]
 }
 

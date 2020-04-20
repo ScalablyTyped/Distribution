@@ -16,7 +16,6 @@ object ISearchIndex {
     search: (js.Array[String], js.Array[js.Object]) => js.Array[js.Object]
   ): ISearchIndex = {
     val __obj = js.Dynamic.literal(indexDocument = js.Any.fromFunction3(indexDocument), search = js.Any.fromFunction2(search))
-  
     __obj.asInstanceOf[ISearchIndex]
   }
 }

@@ -18,7 +18,6 @@ object Post {
   @scala.inline
   def apply[TResponse](request: AnonPath, response: AnonData[TResponse]): Post[TResponse] = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Post[TResponse]]
   }
 }

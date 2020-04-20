@@ -13,12 +13,10 @@ trait ShowDiffOptions extends js.Object
 
 object ShowDiffOptions {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `inline`: typings.karmaMochaReporter.karmaMochaReporterStrings.`inline` = "inline".asInstanceOf[typings.karmaMochaReporter.karmaMochaReporterStrings.`inline`]
   @scala.inline
-  def `inline`: typings.karmaMochaReporter.karmaMochaReporterStrings.`inline` = this.cast("inline")
+  def `true`: typings.karmaMochaReporter.karmaMochaReporterBooleans.`true` = true.asInstanceOf[typings.karmaMochaReporter.karmaMochaReporterBooleans.`true`]
   @scala.inline
-  def `true`: typings.karmaMochaReporter.karmaMochaReporterBooleans.`true` = this.cast(true)
-  @scala.inline
-  def unified: typings.karmaMochaReporter.karmaMochaReporterStrings.unified = this.cast("unified")
+  def unified: typings.karmaMochaReporter.karmaMochaReporterStrings.unified = "unified".asInstanceOf[typings.karmaMochaReporter.karmaMochaReporterStrings.unified]
 }
 

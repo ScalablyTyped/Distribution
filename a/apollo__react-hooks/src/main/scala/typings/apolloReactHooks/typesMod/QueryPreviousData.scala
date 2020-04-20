@@ -2,7 +2,7 @@ package typings.apolloReactHooks.typesMod
 
 import typings.apolloClient.mod.ApolloClient
 import typings.apolloClient.mod.ApolloError
-import typings.apolloClient.typesMod.ApolloQueryResult
+import typings.apolloReactCommon.typesMod.QueryResult
 import typings.graphql.astMod.DocumentNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ trait QueryPreviousData[TData, TVariables] extends js.Object {
   var observableQueryOptions: js.UndefOr[js.Object] = js.undefined
   var options: js.UndefOr[QueryOptions[TData, TVariables]] = js.undefined
   var query: js.UndefOr[DocumentNode] = js.undefined
-  var result: js.UndefOr[ApolloQueryResult[TData] | Null] = js.undefined
+  var result: js.UndefOr[(QueryResult[TData, TVariables]) | Null] = js.undefined
 }
 
 object QueryPreviousData {
@@ -27,7 +27,7 @@ object QueryPreviousData {
     observableQueryOptions: js.Object = null,
     options: QueryOptions[TData, TVariables] = null,
     query: DocumentNode = null,
-    result: ApolloQueryResult[TData] = null
+    result: QueryResult[TData, TVariables] = null
   ): QueryPreviousData[TData, TVariables] = {
     val __obj = js.Dynamic.literal()
     if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])

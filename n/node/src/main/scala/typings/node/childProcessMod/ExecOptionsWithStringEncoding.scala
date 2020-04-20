@@ -1,7 +1,7 @@
 package typings.node.childProcessMod
 
 import typings.node.BufferEncoding
-import typings.node.NodeJS.ProcessEnv
+import typings.node.NodeJS.Dict
 import typings.node.NodeJS.Signals
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ object ExecOptionsWithStringEncoding {
   def apply(
     encoding: BufferEncoding,
     cwd: String = null,
-    env: ProcessEnv = null,
+    env: Dict[String] = null,
     gid: Int | Double = null,
     killSignal: Signals | Double = null,
     maxBuffer: Int | Double = null,

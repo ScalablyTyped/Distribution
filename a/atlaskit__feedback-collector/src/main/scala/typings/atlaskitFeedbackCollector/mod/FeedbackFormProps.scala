@@ -15,7 +15,6 @@ object FeedbackFormProps {
   @scala.inline
   def apply(onClose: () => Unit, onSubmit: FormFields => Unit): FeedbackFormProps = {
     val __obj = js.Dynamic.literal(onClose = js.Any.fromFunction0(onClose), onSubmit = js.Any.fromFunction1(onSubmit))
-  
     __obj.asInstanceOf[FeedbackFormProps]
   }
 }

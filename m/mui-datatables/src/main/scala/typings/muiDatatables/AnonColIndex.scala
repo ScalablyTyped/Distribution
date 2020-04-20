@@ -23,7 +23,6 @@ object AnonColIndex {
     rowIndex: Double
   ): AnonColIndex = {
     val __obj = js.Dynamic.literal(colIndex = colIndex.asInstanceOf[js.Any], dataIndex = dataIndex.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], rowIndex = rowIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonColIndex]
   }
 }

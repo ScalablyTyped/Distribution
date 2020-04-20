@@ -16,12 +16,10 @@ trait XlRangeValueDataType extends js.Object
 
 object XlRangeValueDataType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlRangeValueDefault: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def xlRangeValueDefault: `10` = this.cast(10)
+  def xlRangeValueMSPersistXML: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def xlRangeValueMSPersistXML: `12` = this.cast(12)
-  @scala.inline
-  def xlRangeValueXMLSpreadsheet: `11` = this.cast(11)
+  def xlRangeValueXMLSpreadsheet: `11` = 11.asInstanceOf[`11`]
 }
 

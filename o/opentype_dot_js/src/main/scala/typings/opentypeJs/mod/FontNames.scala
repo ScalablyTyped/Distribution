@@ -40,7 +40,6 @@ object FontNames {
     version: LocalizedName
   ): FontNames = {
     val __obj = js.Dynamic.literal(copyright = copyright.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], designer = designer.asInstanceOf[js.Any], designerURL = designerURL.asInstanceOf[js.Any], fontFamily = fontFamily.asInstanceOf[js.Any], fontSubfamily = fontSubfamily.asInstanceOf[js.Any], fullName = fullName.asInstanceOf[js.Any], license = license.asInstanceOf[js.Any], licenseURL = licenseURL.asInstanceOf[js.Any], manufacturer = manufacturer.asInstanceOf[js.Any], manufacturerURL = manufacturerURL.asInstanceOf[js.Any], postScriptName = postScriptName.asInstanceOf[js.Any], trademark = trademark.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FontNames]
   }
 }

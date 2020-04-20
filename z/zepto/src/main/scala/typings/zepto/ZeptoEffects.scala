@@ -20,7 +20,6 @@ object ZeptoEffects {
   @scala.inline
   def apply(off: Boolean, speeds: ZeptoEffectsSpeeds): ZeptoEffects = {
     val __obj = js.Dynamic.literal(off = off.asInstanceOf[js.Any], speeds = speeds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ZeptoEffects]
   }
 }

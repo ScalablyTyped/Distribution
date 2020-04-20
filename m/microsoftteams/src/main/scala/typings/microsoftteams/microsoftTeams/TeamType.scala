@@ -20,16 +20,14 @@ trait TeamType extends js.Object
 
 object TeamType {
   @scala.inline
-  def Class: `2` = this.cast(2)
+  def Class: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def Edu: `1` = this.cast(1)
+  def Edu: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def Plc: `3` = this.cast(3)
+  def Plc: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def Staff: `4` = this.cast(4)
+  def Staff: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def Standard: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Standard: `0` = 0.asInstanceOf[`0`]
 }
 

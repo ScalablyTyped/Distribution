@@ -20,7 +20,6 @@ object CategoricalParameterRange {
   @scala.inline
   def apply(Name: ParameterKey, Values: ParameterValues): CategoricalParameterRange = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CategoricalParameterRange]
   }
 }

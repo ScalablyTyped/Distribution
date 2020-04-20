@@ -205,6 +205,9 @@ object reactIntlStrings {
   sealed trait ins extends js.Object
   
   @js.native
+  sealed trait intl extends js.Object
+  
+  @js.native
   sealed trait kbd extends js.Object
   
   @js.native
@@ -452,7 +455,7 @@ object reactIntlStrings {
   @scala.inline
   def bdo: bdo = "bdo".asInstanceOf[bdo]
   @scala.inline
-  def `best fit`: `best fit` = "best fit".asInstanceOf[`best fit`]
+  def `best fit`: `best fit` = ("best fit").asInstanceOf[`best fit`]
   @scala.inline
   def big: big = "big".asInstanceOf[big]
   @scala.inline
@@ -559,6 +562,8 @@ object reactIntlStrings {
   def input: input = "input".asInstanceOf[input]
   @scala.inline
   def ins: ins = "ins".asInstanceOf[ins]
+  @scala.inline
+  def intl: intl = "intl".asInstanceOf[intl]
   @scala.inline
   def kbd: kbd = "kbd".asInstanceOf[kbd]
   @scala.inline

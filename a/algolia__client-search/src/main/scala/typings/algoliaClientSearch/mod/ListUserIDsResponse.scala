@@ -15,7 +15,6 @@ object ListUserIDsResponse {
   @scala.inline
   def apply(userIDs: js.Array[UserIDResponse]): ListUserIDsResponse = {
     val __obj = js.Dynamic.literal(userIDs = userIDs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListUserIDsResponse]
   }
 }

@@ -15,7 +15,6 @@ object IRouterConfig {
   @scala.inline
   def apply(server: server): IRouterConfig = {
     val __obj = js.Dynamic.literal(server = server.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IRouterConfig]
   }
 }

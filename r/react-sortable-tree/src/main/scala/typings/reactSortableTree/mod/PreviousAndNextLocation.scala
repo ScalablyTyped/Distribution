@@ -20,7 +20,6 @@ object PreviousAndNextLocation {
     prevTreeIndex: Double
   ): PreviousAndNextLocation = {
     val __obj = js.Dynamic.literal(nextPath = nextPath.asInstanceOf[js.Any], nextTreeIndex = nextTreeIndex.asInstanceOf[js.Any], prevPath = prevPath.asInstanceOf[js.Any], prevTreeIndex = prevTreeIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PreviousAndNextLocation]
   }
 }

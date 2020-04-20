@@ -19,7 +19,7 @@ trait Selection_[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, 
     *
     * @param type A string representing the tag name.
     */
-  def append[K /* <: String */](`type`: K): Selection_[
+  def append[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */](`type`: K): Selection_[
     /* import warning: importer.ImportType#apply Failed type conversion: d3-selection.ElementTagNameMap[K] */ js.Any, 
     Datum, 
     PElement, 
@@ -377,19 +377,19 @@ trait Selection_[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, 
     *     the current index (i), and the current group (nodes), with this as the current DOM element (nodes[i]). This function should return the child element
     *     before which the element should be inserted.
     */
-  def insert[K /* <: String */](`type`: K): Selection_[
+  def insert[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */](`type`: K): Selection_[
     /* import warning: importer.ImportType#apply Failed type conversion: d3-selection.ElementTagNameMap[K] */ js.Any, 
     Datum, 
     PElement, 
     PDatum
   ] = js.native
-  def insert[K /* <: String */](`type`: K, before: String): Selection_[
+  def insert[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */](`type`: K, before: String): Selection_[
     /* import warning: importer.ImportType#apply Failed type conversion: d3-selection.ElementTagNameMap[K] */ js.Any, 
     Datum, 
     PElement, 
     PDatum
   ] = js.native
-  def insert[K /* <: String */](`type`: K, before: ValueFn[GElement, Datum, BaseType]): Selection_[
+  def insert[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */](`type`: K, before: ValueFn[GElement, Datum, BaseType]): Selection_[
     /* import warning: importer.ImportType#apply Failed type conversion: d3-selection.ElementTagNameMap[K] */ js.Any, 
     Datum, 
     PElement, 
@@ -431,13 +431,13 @@ trait Selection_[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, 
     *
     * The "matching" logic is determined by the key function passed to `selection.data`.
     */
-  def join[K /* <: String */, OldDatum](enter: K): Selection_[
+  def join[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */, OldDatum](enter: K): Selection_[
     GElement | (/* import warning: importer.ImportType#apply Failed type conversion: d3-selection.ElementTagNameMap[K] */ js.Any), 
     Datum, 
     PElement, 
     PDatum
   ] = js.native
-  def join[K /* <: String */, OldDatum](
+  def join[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */, OldDatum](
     enter: K,
     update: js.Function1[
       /* elem */ Selection_[GElement, Datum, PElement, PDatum], 
@@ -449,7 +449,7 @@ trait Selection_[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, 
     PElement, 
     PDatum
   ] = js.native
-  def join[K /* <: String */, OldDatum](
+  def join[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */, OldDatum](
     enter: K,
     update: js.Function1[
       /* elem */ Selection_[GElement, Datum, PElement, PDatum], 

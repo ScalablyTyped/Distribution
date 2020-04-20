@@ -12,7 +12,6 @@ object AnonProcessNewMacroTasksSynchronously {
   @scala.inline
   def apply(processNewMacroTasksSynchronously: Boolean): AnonProcessNewMacroTasksSynchronously = {
     val __obj = js.Dynamic.literal(processNewMacroTasksSynchronously = processNewMacroTasksSynchronously.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonProcessNewMacroTasksSynchronously]
   }
 }

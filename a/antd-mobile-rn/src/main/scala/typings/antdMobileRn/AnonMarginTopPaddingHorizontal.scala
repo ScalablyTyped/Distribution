@@ -13,7 +13,6 @@ object AnonMarginTopPaddingHorizontal {
   @scala.inline
   def apply(marginTop: Double, paddingHorizontal: Double): AnonMarginTopPaddingHorizontal = {
     val __obj = js.Dynamic.literal(marginTop = marginTop.asInstanceOf[js.Any], paddingHorizontal = paddingHorizontal.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMarginTopPaddingHorizontal]
   }
 }

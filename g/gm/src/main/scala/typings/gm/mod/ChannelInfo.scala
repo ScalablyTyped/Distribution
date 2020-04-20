@@ -14,7 +14,6 @@ object ChannelInfo {
   @scala.inline
   def apply[T](Blue: T, Green: T, Red: T): ChannelInfo[T] = {
     val __obj = js.Dynamic.literal(Blue = Blue.asInstanceOf[js.Any], Green = Green.asInstanceOf[js.Any], Red = Red.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChannelInfo[T]]
   }
 }

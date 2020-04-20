@@ -13,7 +13,6 @@ object Api {
   @scala.inline
   def apply(keys: AnonDisable): Api = {
     val __obj = js.Dynamic.literal(keys = keys.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Api]
   }
 }

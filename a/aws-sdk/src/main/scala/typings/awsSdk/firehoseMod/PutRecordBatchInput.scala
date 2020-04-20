@@ -20,7 +20,6 @@ object PutRecordBatchInput {
   @scala.inline
   def apply(DeliveryStreamName: DeliveryStreamName, Records: PutRecordBatchRequestEntryList): PutRecordBatchInput = {
     val __obj = js.Dynamic.literal(DeliveryStreamName = DeliveryStreamName.asInstanceOf[js.Any], Records = Records.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutRecordBatchInput]
   }
 }

@@ -10,7 +10,6 @@ object _OrdinalColorsInstruction {
   @scala.inline
   def DatumColorInstruction[D](datum: String): _OrdinalColorsInstruction[D] = {
     val __obj = js.Dynamic.literal(datum = datum.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[_OrdinalColorsInstruction[D]]
   }
   @scala.inline

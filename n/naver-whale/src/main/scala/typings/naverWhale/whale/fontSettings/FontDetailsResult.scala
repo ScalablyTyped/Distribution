@@ -15,7 +15,6 @@ object FontDetailsResult {
   @scala.inline
   def apply(fontId: String, levelOfControl: String): FontDetailsResult = {
     val __obj = js.Dynamic.literal(fontId = fontId.asInstanceOf[js.Any], levelOfControl = levelOfControl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FontDetailsResult]
   }
 }

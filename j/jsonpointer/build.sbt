@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsonpointer"
-version := "4.0-dt-20190822Z-70cb74"
+version := "4.0-dt-20190822Z-3bf016"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

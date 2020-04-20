@@ -16,7 +16,6 @@ object AnalyticsApplicationInputsProcessingConfiguration {
   @scala.inline
   def apply(lambda: AnalyticsApplicationInputsProcessingConfigurationLambda): AnalyticsApplicationInputsProcessingConfiguration = {
     val __obj = js.Dynamic.literal(lambda = lambda.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnalyticsApplicationInputsProcessingConfiguration]
   }
 }

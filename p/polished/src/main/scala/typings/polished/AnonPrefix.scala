@@ -17,7 +17,6 @@ object AnonPrefix {
   @scala.inline
   def apply(infix: AnonRightToLeft, prefix: AnonArgCountF, regSymbol: BackslashPlussign, symbol: Plussign): AnonPrefix = {
     val __obj = js.Dynamic.literal(infix = infix.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], regSymbol = regSymbol.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPrefix]
   }
 }

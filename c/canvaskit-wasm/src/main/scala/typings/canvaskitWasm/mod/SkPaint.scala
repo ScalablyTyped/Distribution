@@ -60,7 +60,6 @@ object SkPaint {
     setStyle: SkPaintStyle => Unit
   ): SkPaint = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction0(delete), deleteAfter = js.Any.fromFunction0(deleteAfter), getBlendMode = js.Any.fromFunction0(getBlendMode), getColor = js.Any.fromFunction0(getColor), getFilterQuality = js.Any.fromFunction0(getFilterQuality), getStrokeCap = js.Any.fromFunction0(getStrokeCap), getStrokeJoin = js.Any.fromFunction0(getStrokeJoin), getStrokeMiter = js.Any.fromFunction0(getStrokeMiter), getStrokeWidth = js.Any.fromFunction0(getStrokeWidth), isAliasOf = js.Any.fromFunction1(isAliasOf), isDeleted = js.Any.fromFunction0(isDeleted), setAntiAlias = js.Any.fromFunction1(setAntiAlias), setBlendMode = js.Any.fromFunction1(setBlendMode), setColor = js.Any.fromFunction1(setColor), setColorFilter = js.Any.fromFunction1(setColorFilter), setColorf = js.Any.fromFunction4(setColorf), setFilterQuality = js.Any.fromFunction1(setFilterQuality), setImageFilter = js.Any.fromFunction1(setImageFilter), setMaskFilter = js.Any.fromFunction1(setMaskFilter), setPathEffect = js.Any.fromFunction1(setPathEffect), setShader = js.Any.fromFunction1(setShader), setStrokeCap = js.Any.fromFunction1(setStrokeCap), setStrokeJoin = js.Any.fromFunction1(setStrokeJoin), setStrokeMiter = js.Any.fromFunction1(setStrokeMiter), setStrokeWidth = js.Any.fromFunction1(setStrokeWidth), setStyle = js.Any.fromFunction1(setStyle))
-  
     __obj.asInstanceOf[SkPaint]
   }
 }

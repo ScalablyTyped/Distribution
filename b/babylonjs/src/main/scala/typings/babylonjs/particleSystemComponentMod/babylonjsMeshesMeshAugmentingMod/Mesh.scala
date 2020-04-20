@@ -25,7 +25,6 @@ object Mesh {
     getHierarchyEmittedParticleSystems: () => js.Array[IParticleSystem]
   ): Mesh = {
     val __obj = js.Dynamic.literal(getEmittedParticleSystems = js.Any.fromFunction0(getEmittedParticleSystems), getHierarchyEmittedParticleSystems = js.Any.fromFunction0(getHierarchyEmittedParticleSystems))
-  
     __obj.asInstanceOf[Mesh]
   }
 }

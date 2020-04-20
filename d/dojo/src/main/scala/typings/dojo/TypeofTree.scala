@@ -34,7 +34,6 @@ object TypeofTree {
     ]
   ): TypeofTree = {
     val __obj = js.Dynamic.literal(_TreeNode = _TreeNode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofTree]
   }
 }

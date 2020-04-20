@@ -100,7 +100,6 @@ object AnonITL {
     ZMW: js.Array[js.UndefOr[String]]
   ): AnonITL = {
     val __obj = js.Dynamic.literal(ARS = ARS.asInstanceOf[js.Any], AUD = AUD.asInstanceOf[js.Any], BEF = BEF.asInstanceOf[js.Any], BMD = BMD.asInstanceOf[js.Any], BND = BND.asInstanceOf[js.Any], BZD = BZD.asInstanceOf[js.Any], CAD = CAD.asInstanceOf[js.Any], CLP = CLP.asInstanceOf[js.Any], CNY = CNY.asInstanceOf[js.Any], COP = COP.asInstanceOf[js.Any], CYP = CYP.asInstanceOf[js.Any], EGP = EGP.asInstanceOf[js.Any], FJD = FJD.asInstanceOf[js.Any], FKP = FKP.asInstanceOf[js.Any], GBP = GBP.asInstanceOf[js.Any], GIP = GIP.asInstanceOf[js.Any], HKD = HKD.asInstanceOf[js.Any], IEP = IEP.asInstanceOf[js.Any], ILP = ILP.asInstanceOf[js.Any], ITL = ITL.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any], KMF = KMF.asInstanceOf[js.Any], LBP = LBP.asInstanceOf[js.Any], LUF = LUF.asInstanceOf[js.Any], MTP = MTP.asInstanceOf[js.Any], MXN = MXN.asInstanceOf[js.Any], NAD = NAD.asInstanceOf[js.Any], NIO = NIO.asInstanceOf[js.Any], NZD = NZD.asInstanceOf[js.Any], RHD = RHD.asInstanceOf[js.Any], RON = RON.asInstanceOf[js.Any], RWF = RWF.asInstanceOf[js.Any], SBD = SBD.asInstanceOf[js.Any], SGD = SGD.asInstanceOf[js.Any], SRD = SRD.asInstanceOf[js.Any], TOP = TOP.asInstanceOf[js.Any], TTD = TTD.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any], UYU = UYU.asInstanceOf[js.Any], WST = WST.asInstanceOf[js.Any], XCD = XCD.asInstanceOf[js.Any], XPF = XPF.asInstanceOf[js.Any], ZMW = ZMW.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonITL]
   }
 }

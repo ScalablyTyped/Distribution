@@ -24,7 +24,6 @@ object GetConfigRequest {
   @scala.inline
   def apply(ClientArn: ClientArn, ClientVersion: ClientVersion, HapgList: HapgList): GetConfigRequest = {
     val __obj = js.Dynamic.literal(ClientArn = ClientArn.asInstanceOf[js.Any], ClientVersion = ClientVersion.asInstanceOf[js.Any], HapgList = HapgList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetConfigRequest]
   }
 }

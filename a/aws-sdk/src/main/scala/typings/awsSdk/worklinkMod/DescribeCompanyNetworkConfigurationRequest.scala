@@ -16,7 +16,6 @@ object DescribeCompanyNetworkConfigurationRequest {
   @scala.inline
   def apply(FleetArn: FleetArn): DescribeCompanyNetworkConfigurationRequest = {
     val __obj = js.Dynamic.literal(FleetArn = FleetArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeCompanyNetworkConfigurationRequest]
   }
 }

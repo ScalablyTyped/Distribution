@@ -20,7 +20,6 @@ object AccountLimit {
   @scala.inline
   def apply(Type: AccountLimitType, Value: LimitValue): AccountLimit = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AccountLimit]
   }
 }

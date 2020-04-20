@@ -12,7 +12,6 @@ object AddCollectionResult {
   @scala.inline
   def apply(_id: String | Double): AddCollectionResult = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddCollectionResult]
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeKeyboardSpacerProps {
   @scala.inline
-  def ReactNativeKeyboardSpacerProps: KeyboardSpacerProps.type = typings.reactNativeKeyboardSpacer.mod.KeyboardSpacerProps
+  def ReactNativeKeyboardSpacerProps: KeyboardSpacerProps.type = KeyboardSpacerProps
   type ReactNativeKeyboardSpacerProps = KeyboardSpacerProps
 }
 

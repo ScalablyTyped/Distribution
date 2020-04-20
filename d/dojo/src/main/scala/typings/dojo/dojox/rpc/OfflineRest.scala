@@ -53,7 +53,6 @@ object OfflineRest {
     turnOffAutoSync: () => Unit
   ): OfflineRest = {
     val __obj = js.Dynamic.literal(addStore = js.Any.fromFunction2(addStore), downloadChanges = js.Any.fromFunction0(downloadChanges), sendChanges = js.Any.fromFunction0(sendChanges), stores = stores.asInstanceOf[js.Any], sync = js.Any.fromFunction0(sync), turnOffAutoSync = js.Any.fromFunction0(turnOffAutoSync))
-  
     __obj.asInstanceOf[OfflineRest]
   }
 }

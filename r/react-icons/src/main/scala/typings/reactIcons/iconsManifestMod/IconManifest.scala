@@ -16,7 +16,6 @@ object IconManifest {
   @scala.inline
   def apply(id: String, license: String, licenseUrl: String, name: String, projectUrl: String): IconManifest = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], license = license.asInstanceOf[js.Any], licenseUrl = licenseUrl.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], projectUrl = projectUrl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IconManifest]
   }
 }

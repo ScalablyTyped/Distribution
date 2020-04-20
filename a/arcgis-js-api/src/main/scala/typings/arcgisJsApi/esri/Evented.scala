@@ -1,13 +1,13 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.IHandle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@JSGlobal("__esri.Evented")
 @js.native
-trait Evented extends js.Object {
+class Evented () extends js.Object {
   /**
     * Emits an event on the instance. This method should only be used when creating subclasses of this class.
     *
@@ -40,8 +40,4 @@ trait Evented extends js.Object {
   def on(`type`: String, listener: EventHandler): IHandle = js.native
   def on(`type`: js.Array[String], listener: EventHandler): IHandle = js.native
 }
-
-@JSGlobal("__esri.Evented")
-@js.native
-object Evented extends TopLevel[EventedConstructor]
 

@@ -21,7 +21,6 @@ object UserAgent {
   @scala.inline
   def apply(add: UserAgentOptions => UserAgent, value: String): UserAgent = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UserAgent]
   }
 }

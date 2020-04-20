@@ -20,7 +20,6 @@ object ExtensionStatisticUpdate {
     statistic: ExtensionStatistic
   ): ExtensionStatisticUpdate = {
     val __obj = js.Dynamic.literal(extensionName = extensionName.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], publisherName = publisherName.asInstanceOf[js.Any], statistic = statistic.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExtensionStatisticUpdate]
   }
 }

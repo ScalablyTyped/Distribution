@@ -16,7 +16,6 @@ object DeleteStackSetInput {
   @scala.inline
   def apply(StackSetName: StackSetName): DeleteStackSetInput = {
     val __obj = js.Dynamic.literal(StackSetName = StackSetName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteStackSetInput]
   }
 }

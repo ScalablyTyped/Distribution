@@ -24,7 +24,6 @@ object Mutex {
     unlock: () => Unit
   ): Mutex = {
     val __obj = js.Dynamic.literal(_locked = _locked.asInstanceOf[js.Any], _waiters = _waiters.asInstanceOf[js.Any], isLocked = js.Any.fromFunction0(isLocked), lock = js.Any.fromFunction1(lock), tryLock = js.Any.fromFunction0(tryLock), unlock = js.Any.fromFunction0(unlock))
-  
     __obj.asInstanceOf[Mutex]
   }
 }

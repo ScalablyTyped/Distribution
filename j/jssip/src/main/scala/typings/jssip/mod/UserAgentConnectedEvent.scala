@@ -12,7 +12,6 @@ object UserAgentConnectedEvent {
   @scala.inline
   def apply(socket: Socket): UserAgentConnectedEvent = {
     val __obj = js.Dynamic.literal(socket = socket.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UserAgentConnectedEvent]
   }
 }

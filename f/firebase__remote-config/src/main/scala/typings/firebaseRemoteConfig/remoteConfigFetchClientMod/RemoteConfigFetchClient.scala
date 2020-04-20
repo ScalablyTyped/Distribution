@@ -15,7 +15,6 @@ object RemoteConfigFetchClient {
   @scala.inline
   def apply(fetch: FetchRequest => js.Promise[FetchResponse]): RemoteConfigFetchClient = {
     val __obj = js.Dynamic.literal(fetch = js.Any.fromFunction1(fetch))
-  
     __obj.asInstanceOf[RemoteConfigFetchClient]
   }
 }

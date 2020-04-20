@@ -13,7 +13,6 @@ object Recase {
   @scala.inline
   def apply(camelCopy: js.Any => js.Any, snakeCopy: js.Any => js.Any): Recase = {
     val __obj = js.Dynamic.literal(camelCopy = js.Any.fromFunction1(camelCopy), snakeCopy = js.Any.fromFunction1(snakeCopy))
-  
     __obj.asInstanceOf[Recase]
   }
 }

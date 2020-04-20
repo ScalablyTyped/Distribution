@@ -16,7 +16,6 @@ object OutputFileUriValue {
   @scala.inline
   def apply(fileName: OutputFileName): OutputFileUriValue = {
     val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OutputFileUriValue]
   }
 }

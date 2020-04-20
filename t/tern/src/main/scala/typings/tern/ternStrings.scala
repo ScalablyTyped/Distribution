@@ -9,7 +9,16 @@ object ternStrings {
   sealed trait Array extends js.Object
   
   @js.native
+  sealed trait afterLoad extends js.Object
+  
+  @js.native
+  sealed trait beforeLoad extends js.Object
+  
+  @js.native
   sealed trait bool extends js.Object
+  
+  @js.native
+  sealed trait completion extends js.Object
   
   @js.native
   sealed trait completions extends js.Object
@@ -42,6 +51,18 @@ object ternStrings {
   sealed trait part extends js.Object
   
   @js.native
+  sealed trait postInfer extends js.Object
+  
+  @js.native
+  sealed trait postParse extends js.Object
+  
+  @js.native
+  sealed trait preInfer extends js.Object
+  
+  @js.native
+  sealed trait preParse extends js.Object
+  
+  @js.native
   sealed trait properties extends js.Object
   
   @js.native
@@ -51,15 +72,27 @@ object ternStrings {
   sealed trait rename extends js.Object
   
   @js.native
+  sealed trait reset extends js.Object
+  
+  @js.native
   sealed trait string extends js.Object
   
   @js.native
   sealed trait `type` extends js.Object
   
+  @js.native
+  sealed trait typeAt extends js.Object
+  
   @scala.inline
   def Array: Array = "Array".asInstanceOf[Array]
   @scala.inline
+  def afterLoad: afterLoad = "afterLoad".asInstanceOf[afterLoad]
+  @scala.inline
+  def beforeLoad: beforeLoad = "beforeLoad".asInstanceOf[beforeLoad]
+  @scala.inline
   def bool: bool = "bool".asInstanceOf[bool]
+  @scala.inline
+  def completion: completion = "completion".asInstanceOf[completion]
   @scala.inline
   def completions: completions = "completions".asInstanceOf[completions]
   @scala.inline
@@ -81,14 +114,26 @@ object ternStrings {
   @scala.inline
   def part: part = "part".asInstanceOf[part]
   @scala.inline
+  def postInfer: postInfer = "postInfer".asInstanceOf[postInfer]
+  @scala.inline
+  def postParse: postParse = "postParse".asInstanceOf[postParse]
+  @scala.inline
+  def preInfer: preInfer = "preInfer".asInstanceOf[preInfer]
+  @scala.inline
+  def preParse: preParse = "preParse".asInstanceOf[preParse]
+  @scala.inline
   def properties: properties = "properties".asInstanceOf[properties]
   @scala.inline
   def refs: refs = "refs".asInstanceOf[refs]
   @scala.inline
   def rename: rename = "rename".asInstanceOf[rename]
   @scala.inline
+  def reset: reset = "reset".asInstanceOf[reset]
+  @scala.inline
   def string: string = "string".asInstanceOf[string]
   @scala.inline
   def `type`: `type` = "type".asInstanceOf[`type`]
+  @scala.inline
+  def typeAt: typeAt = "typeAt".asInstanceOf[typeAt]
 }
 

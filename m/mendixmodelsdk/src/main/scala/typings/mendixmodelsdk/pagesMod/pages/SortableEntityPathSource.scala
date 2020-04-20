@@ -22,7 +22,7 @@ abstract class SortableEntityPathSource protected () extends EntityPathSource {
   ) = this()
   @JSName("model")
   var model_FSortableEntityPathSource: IModel = js.native
-  def sortBar(): GridSortBar = js.native
+  def sortBar: GridSortBar = js.native
   def sortBar(newValue: GridSortBar): js.Any = js.native
 }
 

@@ -13,7 +13,6 @@ object IAppAvailabilityService {
   @scala.inline
   def apply(check: String => IPromise[_]): IAppAvailabilityService = {
     val __obj = js.Dynamic.literal(check = js.Any.fromFunction1(check))
-  
     __obj.asInstanceOf[IAppAvailabilityService]
   }
 }

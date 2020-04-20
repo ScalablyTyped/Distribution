@@ -13,7 +13,6 @@ object AxiosStatic {
   @scala.inline
   def apply(cancel: String => Unit, cancelAll: () => Unit): AxiosStatic = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel), cancelAll = js.Any.fromFunction0(cancelAll))
-  
     __obj.asInstanceOf[AxiosStatic]
   }
 }

@@ -40,7 +40,9 @@ trait IMessage extends js.Object {
   /** Message payload */
   var payload: js.UndefOr[IStruct | Null] = js.undefined
   /** Message platform */
-  var platform: js.UndefOr[Platform | String | Null] = js.undefined
+  var platform: js.UndefOr[
+    Platform | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Intent.Message.Platform * / any */ String) | Null
+  ] = js.undefined
   /** Message quickReplies */
   var quickReplies: js.UndefOr[IQuickReplies | Null] = js.undefined
   /** Message simpleResponses */
@@ -65,7 +67,7 @@ object IMessage {
     listSelect: IListSelect = null,
     mediaContent: IMediaContent = null,
     payload: IStruct = null,
-    platform: Platform | String = null,
+    platform: Platform | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Intent.Message.Platform * / any */ String) = null,
     quickReplies: IQuickReplies = null,
     simpleResponses: ISimpleResponses = null,
     suggestions: ISuggestions = null,

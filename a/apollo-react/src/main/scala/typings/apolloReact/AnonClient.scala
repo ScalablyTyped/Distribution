@@ -14,7 +14,6 @@ object AnonClient {
   @scala.inline
   def apply(client: Validator[_], store: Validator[_]): AnonClient = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonClient]
   }
 }

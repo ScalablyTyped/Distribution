@@ -108,7 +108,7 @@ object requestsMod extends js.Object {
     pageToken: Null,
     maxResults: Double
   ): RequestInfo[ListResult] = js.native
-  def listHandler(authWrapper: AuthWrapper): js.Function2[/* p1 */ XhrIo, /* p2 */ String, ListResult] = js.native
+  def listHandler(authWrapper: AuthWrapper, bucket: String): js.Function2[/* p1 */ XhrIo, /* p2 */ String, ListResult] = js.native
   @JSName("metadataForUpload_")
   def metadataForUpload(location: Location, blob: FbsBlob): Metadata = js.native
   @JSName("metadataForUpload_")

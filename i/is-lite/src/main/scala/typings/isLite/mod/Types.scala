@@ -47,50 +47,48 @@ trait Types extends js.Object
 
 object Types {
   @scala.inline
-  def array: Array = this.cast("Array")
+  def array: Array = "Array".asInstanceOf[Array]
   @scala.inline
-  def asyncFunction: AsyncFunction = this.cast("AsyncFunction")
+  def asyncFunction: AsyncFunction = "AsyncFunction".asInstanceOf[AsyncFunction]
   @scala.inline
-  def bigint: typings.isLite.isLiteStrings.bigint = this.cast("bigint")
+  def bigint: typings.isLite.isLiteStrings.bigint = "bigint".asInstanceOf[typings.isLite.isLiteStrings.bigint]
   @scala.inline
-  def boolean: typings.isLite.isLiteStrings.boolean = this.cast("boolean")
+  def boolean: typings.isLite.isLiteStrings.boolean = "boolean".asInstanceOf[typings.isLite.isLiteStrings.boolean]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def date: Date = "Date".asInstanceOf[Date]
   @scala.inline
-  def date: Date = this.cast("Date")
+  def error: Error = "Error".asInstanceOf[Error]
   @scala.inline
-  def error: Error = this.cast("Error")
+  def function: Function = "Function".asInstanceOf[Function]
   @scala.inline
-  def function: Function = this.cast("Function")
+  def generator: Generator = "Generator".asInstanceOf[Generator]
   @scala.inline
-  def generator: Generator = this.cast("Generator")
+  def generatorFunction: GeneratorFunction = "GeneratorFunction".asInstanceOf[GeneratorFunction]
   @scala.inline
-  def generatorFunction: GeneratorFunction = this.cast("GeneratorFunction")
+  def iterable: Iterable = "Iterable".asInstanceOf[Iterable]
   @scala.inline
-  def iterable: Iterable = this.cast("Iterable")
+  def map: Map = "Map".asInstanceOf[Map]
   @scala.inline
-  def map: Map = this.cast("Map")
+  def `null`: typings.isLite.isLiteStrings.`null` = "null".asInstanceOf[typings.isLite.isLiteStrings.`null`]
   @scala.inline
-  def `null`: typings.isLite.isLiteStrings.`null` = this.cast("null")
+  def number: typings.isLite.isLiteStrings.number = "number".asInstanceOf[typings.isLite.isLiteStrings.number]
   @scala.inline
-  def number: typings.isLite.isLiteStrings.number = this.cast("number")
+  def `object`: Object = "Object".asInstanceOf[Object]
   @scala.inline
-  def `object`: Object = this.cast("Object")
+  def promise: Promise = "Promise".asInstanceOf[Promise]
   @scala.inline
-  def promise: Promise = this.cast("Promise")
+  def regExp: RegExp = "RegExp".asInstanceOf[RegExp]
   @scala.inline
-  def regExp: RegExp = this.cast("RegExp")
+  def set: Set = "Set".asInstanceOf[Set]
   @scala.inline
-  def set: Set = this.cast("Set")
+  def string: typings.isLite.isLiteStrings.string = "string".asInstanceOf[typings.isLite.isLiteStrings.string]
   @scala.inline
-  def string: typings.isLite.isLiteStrings.string = this.cast("string")
+  def symbol: typings.isLite.isLiteStrings.symbol = "symbol".asInstanceOf[typings.isLite.isLiteStrings.symbol]
   @scala.inline
-  def symbol: typings.isLite.isLiteStrings.symbol = this.cast("symbol")
+  def undefined: typings.isLite.isLiteStrings.undefined = "undefined".asInstanceOf[typings.isLite.isLiteStrings.undefined]
   @scala.inline
-  def undefined: typings.isLite.isLiteStrings.undefined = this.cast("undefined")
+  def weakMap: WeakMap = "WeakMap".asInstanceOf[WeakMap]
   @scala.inline
-  def weakMap: WeakMap = this.cast("WeakMap")
-  @scala.inline
-  def weakSet: WeakSet = this.cast("WeakSet")
+  def weakSet: WeakSet = "WeakSet".asInstanceOf[WeakSet]
 }
 

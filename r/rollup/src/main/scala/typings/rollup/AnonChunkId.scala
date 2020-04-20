@@ -14,7 +14,6 @@ object AnonChunkId {
   @scala.inline
   def apply(chunkId: String, format: String, moduleId: String): AnonChunkId = {
     val __obj = js.Dynamic.literal(chunkId = chunkId.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], moduleId = moduleId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonChunkId]
   }
 }

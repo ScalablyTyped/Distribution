@@ -15,7 +15,6 @@ object ListClustersResponse {
   @scala.inline
   def apply(clusters: js.Array[Cluster]): ListClustersResponse = {
     val __obj = js.Dynamic.literal(clusters = clusters.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListClustersResponse]
   }
 }

@@ -16,7 +16,6 @@ object DescribeLoadBalancerAttributesInput {
   @scala.inline
   def apply(LoadBalancerName: AccessPointName): DescribeLoadBalancerAttributesInput = {
     val __obj = js.Dynamic.literal(LoadBalancerName = LoadBalancerName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeLoadBalancerAttributesInput]
   }
 }

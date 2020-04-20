@@ -16,7 +16,6 @@ object DescribeThingRegistrationTaskRequest {
   @scala.inline
   def apply(taskId: TaskId): DescribeThingRegistrationTaskRequest = {
     val __obj = js.Dynamic.literal(taskId = taskId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeThingRegistrationTaskRequest]
   }
 }

@@ -16,7 +16,6 @@ object AjvError {
   @scala.inline
   def apply(message: String, name: String, params: js.Any, property: String, stack: String): AjvError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AjvError]
   }
 }

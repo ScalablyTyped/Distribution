@@ -16,7 +16,6 @@ object DescribeBuildInput {
   @scala.inline
   def apply(BuildId: BuildIdOrArn): DescribeBuildInput = {
     val __obj = js.Dynamic.literal(BuildId = BuildId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeBuildInput]
   }
 }

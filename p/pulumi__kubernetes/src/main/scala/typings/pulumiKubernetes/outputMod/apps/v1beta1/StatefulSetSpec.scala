@@ -80,7 +80,6 @@ object StatefulSetSpec {
     volumeClaimTemplates: js.Array[PersistentVolumeClaim]
   ): StatefulSetSpec = {
     val __obj = js.Dynamic.literal(podManagementPolicy = podManagementPolicy.asInstanceOf[js.Any], replicas = replicas.asInstanceOf[js.Any], revisionHistoryLimit = revisionHistoryLimit.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], updateStrategy = updateStrategy.asInstanceOf[js.Any], volumeClaimTemplates = volumeClaimTemplates.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StatefulSetSpec]
   }
 }

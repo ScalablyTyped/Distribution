@@ -48,7 +48,6 @@ object CustomerConnectorInfo {
     unknownConnectors: Integer
   ): CustomerConnectorInfo = {
     val __obj = js.Dynamic.literal(activeConnectors = activeConnectors.asInstanceOf[js.Any], blackListedConnectors = blackListedConnectors.asInstanceOf[js.Any], healthyConnectors = healthyConnectors.asInstanceOf[js.Any], shutdownConnectors = shutdownConnectors.asInstanceOf[js.Any], totalConnectors = totalConnectors.asInstanceOf[js.Any], unhealthyConnectors = unhealthyConnectors.asInstanceOf[js.Any], unknownConnectors = unknownConnectors.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CustomerConnectorInfo]
   }
 }

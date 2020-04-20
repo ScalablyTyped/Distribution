@@ -23,7 +23,6 @@ object EventMap {
     error: Event_[error, AnonInfo]
   ): EventMap = {
     val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventMap]
   }
 }

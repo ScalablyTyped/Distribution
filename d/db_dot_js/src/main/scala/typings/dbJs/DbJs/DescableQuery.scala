@@ -12,7 +12,6 @@ object DescableQuery {
   @scala.inline
   def apply[T](desc: () => DescQuery[T]): DescableQuery[T] = {
     val __obj = js.Dynamic.literal(desc = js.Any.fromFunction0(desc))
-  
     __obj.asInstanceOf[DescableQuery[T]]
   }
 }

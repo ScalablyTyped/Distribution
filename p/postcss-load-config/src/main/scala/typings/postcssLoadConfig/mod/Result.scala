@@ -15,7 +15,6 @@ object Result {
   @scala.inline
   def apply(file: String, options: ProcessOptions, plugins: js.Array[ResultPlugin]): Result = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Result]
   }
 }

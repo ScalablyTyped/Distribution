@@ -18,22 +18,20 @@ trait InteractionPointerEvents extends js.Object
 
 object InteractionPointerEvents {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def pointercancel: typings.pixiJs.pixiJsStrings.pointercancel = "pointercancel".asInstanceOf[typings.pixiJs.pixiJsStrings.pointercancel]
   @scala.inline
-  def pointercancel: typings.pixiJs.pixiJsStrings.pointercancel = this.cast("pointercancel")
+  def pointerdown: typings.pixiJs.pixiJsStrings.pointerdown = "pointerdown".asInstanceOf[typings.pixiJs.pixiJsStrings.pointerdown]
   @scala.inline
-  def pointerdown: typings.pixiJs.pixiJsStrings.pointerdown = this.cast("pointerdown")
+  def pointermove: typings.pixiJs.pixiJsStrings.pointermove = "pointermove".asInstanceOf[typings.pixiJs.pixiJsStrings.pointermove]
   @scala.inline
-  def pointermove: typings.pixiJs.pixiJsStrings.pointermove = this.cast("pointermove")
+  def pointerout: typings.pixiJs.pixiJsStrings.pointerout = "pointerout".asInstanceOf[typings.pixiJs.pixiJsStrings.pointerout]
   @scala.inline
-  def pointerout: typings.pixiJs.pixiJsStrings.pointerout = this.cast("pointerout")
+  def pointerover: typings.pixiJs.pixiJsStrings.pointerover = "pointerover".asInstanceOf[typings.pixiJs.pixiJsStrings.pointerover]
   @scala.inline
-  def pointerover: typings.pixiJs.pixiJsStrings.pointerover = this.cast("pointerover")
+  def pointertap: typings.pixiJs.pixiJsStrings.pointertap = "pointertap".asInstanceOf[typings.pixiJs.pixiJsStrings.pointertap]
   @scala.inline
-  def pointertap: typings.pixiJs.pixiJsStrings.pointertap = this.cast("pointertap")
+  def pointerup: typings.pixiJs.pixiJsStrings.pointerup = "pointerup".asInstanceOf[typings.pixiJs.pixiJsStrings.pointerup]
   @scala.inline
-  def pointerup: typings.pixiJs.pixiJsStrings.pointerup = this.cast("pointerup")
-  @scala.inline
-  def pointerupoutside: typings.pixiJs.pixiJsStrings.pointerupoutside = this.cast("pointerupoutside")
+  def pointerupoutside: typings.pixiJs.pixiJsStrings.pointerupoutside = "pointerupoutside".asInstanceOf[typings.pixiJs.pixiJsStrings.pointerupoutside]
 }
 

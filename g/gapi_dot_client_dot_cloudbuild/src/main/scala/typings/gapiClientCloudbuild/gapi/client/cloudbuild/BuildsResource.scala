@@ -44,7 +44,6 @@ object BuildsResource {
     list: AnonFields => Request_[ListBuildsResponse]
   ): BuildsResource = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel), create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[BuildsResource]
   }
 }

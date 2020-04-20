@@ -16,7 +16,6 @@ object UserPoolSoftwareTokenMfaConfiguration {
   @scala.inline
   def apply(enabled: Boolean): UserPoolSoftwareTokenMfaConfiguration = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UserPoolSoftwareTokenMfaConfiguration]
   }
 }

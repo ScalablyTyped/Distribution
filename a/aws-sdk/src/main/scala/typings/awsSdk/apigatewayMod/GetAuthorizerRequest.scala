@@ -20,7 +20,6 @@ object GetAuthorizerRequest {
   @scala.inline
   def apply(authorizerId: String, restApiId: String): GetAuthorizerRequest = {
     val __obj = js.Dynamic.literal(authorizerId = authorizerId.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetAuthorizerRequest]
   }
 }

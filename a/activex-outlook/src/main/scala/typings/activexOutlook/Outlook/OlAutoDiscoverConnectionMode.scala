@@ -18,14 +18,12 @@ trait OlAutoDiscoverConnectionMode extends js.Object
 
 object OlAutoDiscoverConnectionMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olAutoDiscoverConnectionExternal: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olAutoDiscoverConnectionExternal: `1` = this.cast(1)
+  def olAutoDiscoverConnectionInternal: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olAutoDiscoverConnectionInternal: `2` = this.cast(2)
+  def olAutoDiscoverConnectionInternalDomain: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def olAutoDiscoverConnectionInternalDomain: `3` = this.cast(3)
-  @scala.inline
-  def olAutoDiscoverConnectionUnknown: `0` = this.cast(0)
+  def olAutoDiscoverConnectionUnknown: `0` = 0.asInstanceOf[`0`]
 }
 

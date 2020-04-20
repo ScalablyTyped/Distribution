@@ -12,10 +12,8 @@ trait SignatureAlgorithmType extends js.Object
 
 object SignatureAlgorithmType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `rsa-sha1`: typings.samlp.samlpStrings.`rsa-sha1` = "rsa-sha1".asInstanceOf[typings.samlp.samlpStrings.`rsa-sha1`]
   @scala.inline
-  def `rsa-sha1`: typings.samlp.samlpStrings.`rsa-sha1` = this.cast("rsa-sha1")
-  @scala.inline
-  def `rsa-sha256`: typings.samlp.samlpStrings.`rsa-sha256` = this.cast("rsa-sha256")
+  def `rsa-sha256`: typings.samlp.samlpStrings.`rsa-sha256` = "rsa-sha256".asInstanceOf[typings.samlp.samlpStrings.`rsa-sha256`]
 }
 

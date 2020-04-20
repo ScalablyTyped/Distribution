@@ -32,7 +32,6 @@ object ActionsGetWorkflowResponse {
     url: String
   ): ActionsGetWorkflowResponse = {
     val __obj = js.Dynamic.literal(badge_url = badge_url.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ActionsGetWorkflowResponse]
   }
 }

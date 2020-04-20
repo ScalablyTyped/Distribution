@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   * relationship.
   */
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: parser.TsParser#tsDeclClass functionCall class extends from : Ember.Object.extend(Ember.MutableArray as object, Ember.Evented) * / any */ @JSImport("ember-data", "DS.ManyArray")
+- Dropped / * import warning: parser.TsParser#tsDeclClass functionCall class extends from : Ember.Object.extend(Ember.MutableArray as {}, Ember.Evented) * / any */ @JSImport("ember-data", "DS.ManyArray")
 @js.native
 class ManyArray[T] () extends MutableArray[T] {
   /**

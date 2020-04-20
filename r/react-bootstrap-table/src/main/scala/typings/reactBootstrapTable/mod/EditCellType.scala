@@ -14,14 +14,12 @@ trait EditCellType extends js.Object
 
 object EditCellType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def checkbox: typings.reactBootstrapTable.reactBootstrapTableStrings.checkbox = "checkbox".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.checkbox]
   @scala.inline
-  def checkbox: typings.reactBootstrapTable.reactBootstrapTableStrings.checkbox = this.cast("checkbox")
+  def datetime: typings.reactBootstrapTable.reactBootstrapTableStrings.datetime = "datetime".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.datetime]
   @scala.inline
-  def datetime: typings.reactBootstrapTable.reactBootstrapTableStrings.datetime = this.cast("datetime")
+  def select: typings.reactBootstrapTable.reactBootstrapTableStrings.select = "select".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.select]
   @scala.inline
-  def select: typings.reactBootstrapTable.reactBootstrapTableStrings.select = this.cast("select")
-  @scala.inline
-  def textarea: typings.reactBootstrapTable.reactBootstrapTableStrings.textarea = this.cast("textarea")
+  def textarea: typings.reactBootstrapTable.reactBootstrapTableStrings.textarea = "textarea".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.textarea]
 }
 

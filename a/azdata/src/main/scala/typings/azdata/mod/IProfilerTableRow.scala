@@ -16,7 +16,6 @@ object IProfilerTableRow {
   @scala.inline
   def apply(EventClass: String): IProfilerTableRow = {
     val __obj = js.Dynamic.literal(EventClass = EventClass.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IProfilerTableRow]
   }
 }

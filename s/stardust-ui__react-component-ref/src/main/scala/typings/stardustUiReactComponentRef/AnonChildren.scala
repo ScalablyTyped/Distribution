@@ -16,7 +16,6 @@ object AnonChildren {
   @scala.inline
   def apply(children: Validator[ReactElementLike], innerRef: Validator[Ref[_]]): AnonChildren = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], innerRef = innerRef.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonChildren]
   }
 }

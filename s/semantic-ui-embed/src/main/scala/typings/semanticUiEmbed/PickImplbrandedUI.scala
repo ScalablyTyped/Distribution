@@ -13,7 +13,6 @@ object PickImplbrandedUI {
   @scala.inline
   def apply(brandedUI: Boolean): PickImplbrandedUI = {
     val __obj = js.Dynamic.literal(brandedUI = brandedUI.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplbrandedUI]
   }
 }

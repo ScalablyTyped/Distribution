@@ -19,7 +19,6 @@ object TabControlTabCancelEventArgs {
     tab: BootstrapTab
   ): TabControlTabCancelEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any], reloadContentOnCallback = reloadContentOnCallback.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], tab = tab.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TabControlTabCancelEventArgs]
   }
 }

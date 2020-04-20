@@ -24,7 +24,6 @@ object IPickerStyle {
     title: TextStyle
   ): IPickerStyle = {
     val __obj = js.Dynamic.literal(actionText = actionText.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], headerItem = headerItem.asInstanceOf[js.Any], modal = modal.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPickerStyle]
   }
 }

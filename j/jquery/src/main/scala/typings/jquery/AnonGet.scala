@@ -18,7 +18,6 @@ object AnonGet {
   @scala.inline
   def apply[TElement](get: Tween[TElement] => js.Any): AnonGet[TElement] = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
-  
     __obj.asInstanceOf[AnonGet[TElement]]
   }
 }

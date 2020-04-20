@@ -20,7 +20,6 @@ object PutJobFailureResultInput {
   @scala.inline
   def apply(failureDetails: FailureDetails, jobId: JobId): PutJobFailureResultInput = {
     val __obj = js.Dynamic.literal(failureDetails = failureDetails.asInstanceOf[js.Any], jobId = jobId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutJobFailureResultInput]
   }
 }

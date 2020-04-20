@@ -30,7 +30,7 @@ package object BABYLON {
   type DeepImmutable[T] = typings.babylonjs.BABYLON.DeepImmutableObject[T] | typings.babylonjs.BABYLON.DeepImmutableArray[js.Any] | T
   type DeepImmutableObject[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ K in keyof T ]: babylonjs.BABYLON.DeepImmutable<T[K]>}
-    */ typings.babylonjs.babylonjsStrings.DeepImmutableObject with T
+    */ typings.babylonjs.babylonjsStrings.DeepImmutableObject with org.scalablytyped.runtime.TopLevel[T]
   type EvaluateSubMeshStageAction = js.Function2[
     /* mesh */ typings.babylonjs.BABYLON.AbstractMesh, 
     /* subMesh */ typings.babylonjs.BABYLON.SubMesh, 

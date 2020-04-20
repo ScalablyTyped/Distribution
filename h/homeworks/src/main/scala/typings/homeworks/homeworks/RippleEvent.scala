@@ -16,7 +16,6 @@ object RippleEvent {
   @scala.inline
   def apply(x: Double, y: Double): RippleEvent = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RippleEvent]
   }
 }

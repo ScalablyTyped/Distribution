@@ -19,7 +19,6 @@ object IOptions {
   @scala.inline
   def apply(sessionContext: ISessionContext): IOptions = {
     val __obj = js.Dynamic.literal(sessionContext = sessionContext.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IOptions]
   }
 }

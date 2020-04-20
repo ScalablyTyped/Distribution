@@ -24,13 +24,13 @@ abstract class Template protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FTemplate: IModel = js.native
-  def arguments(): IList[TemplateArgument] = js.native
-  def containerAsCustomRequestHandling(): CustomRequestHandling = js.native
-  def containerAsHttpConfiguration(): HttpConfiguration = js.native
-  def containerAsLogMessageAction(): LogMessageAction = js.native
-  def containerAsShowMessageAction(): ShowMessageAction = js.native
-  def containerAsStringTemplateParameterValue(): StringTemplateParameterValue = js.native
-  def containerAsValidationFeedbackAction(): ValidationFeedbackAction = js.native
+  def arguments: IList[TemplateArgument] = js.native
+  def containerAsCustomRequestHandling: CustomRequestHandling = js.native
+  def containerAsHttpConfiguration: HttpConfiguration = js.native
+  def containerAsLogMessageAction: LogMessageAction = js.native
+  def containerAsShowMessageAction: ShowMessageAction = js.native
+  def containerAsStringTemplateParameterValue: StringTemplateParameterValue = js.native
+  def containerAsValidationFeedbackAction: ValidationFeedbackAction = js.native
 }
 
 /* static members */

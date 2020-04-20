@@ -15,7 +15,6 @@ object FromPartitionOptions {
   @scala.inline
   def apply(cache: Boolean): FromPartitionOptions = {
     val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FromPartitionOptions]
   }
 }

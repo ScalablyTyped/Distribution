@@ -13,7 +13,6 @@ object AnonDecoratedComponent {
   @scala.inline
   def apply[C /* <: ComponentType[_] */](DecoratedComponent: C): AnonDecoratedComponent[C] = {
     val __obj = js.Dynamic.literal(DecoratedComponent = DecoratedComponent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDecoratedComponent[C]]
   }
 }

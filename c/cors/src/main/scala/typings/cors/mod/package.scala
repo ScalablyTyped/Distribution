@@ -6,7 +6,12 @@ import scala.scalajs.js.annotation._
 
 package object mod {
   type CorsOptionsDelegate = js.Function2[
-    /* req */ typings.express.mod.Request_[typings.expressServeStaticCore.mod.ParamsDictionary], 
+    /* req */ typings.express.mod.Request_[
+      typings.expressServeStaticCore.mod.ParamsDictionary, 
+      js.Any, 
+      js.Any, 
+      typings.expressServeStaticCore.mod.Query
+    ], 
     /* callback */ js.Function2[
       /* err */ typings.std.Error | scala.Null, 
       /* options */ js.UndefOr[typings.cors.mod.CorsOptions], 

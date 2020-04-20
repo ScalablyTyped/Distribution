@@ -36,7 +36,6 @@ object EntryPoint {
     root: js.Any
   ): EntryPoint[TEntryPointParams, TEntryPointComponent] = {
     val __obj = js.Dynamic.literal(getPreloadProps = js.Any.fromFunction1(getPreloadProps), root = root.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EntryPoint[TEntryPointParams, TEntryPointComponent]]
   }
 }

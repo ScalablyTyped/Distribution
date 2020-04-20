@@ -23,7 +23,6 @@ object MockFunctionState {
     results: js.Array[MockFunctionResult]
   ): MockFunctionState[T, Y] = {
     val __obj = js.Dynamic.literal(calls = calls.asInstanceOf[js.Any], instances = instances.asInstanceOf[js.Any], invocationCallOrder = invocationCallOrder.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MockFunctionState[T, Y]]
   }
 }

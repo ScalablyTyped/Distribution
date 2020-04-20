@@ -14,7 +14,6 @@ object AnonPostDispatch {
   @scala.inline
   def apply[TTarget](postDispatch: typings.jquery.JQuery_.Event => Unit): AnonPostDispatch[TTarget] = {
     val __obj = js.Dynamic.literal(postDispatch = js.Any.fromFunction1(postDispatch))
-  
     __obj.asInstanceOf[AnonPostDispatch[TTarget]]
   }
 }

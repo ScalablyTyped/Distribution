@@ -13,12 +13,10 @@ trait FsSymlinkType extends js.Object
 
 object FsSymlinkType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dir: typings.fsExtra.fsExtraStrings.dir = "dir".asInstanceOf[typings.fsExtra.fsExtraStrings.dir]
   @scala.inline
-  def dir: typings.fsExtra.fsExtraStrings.dir = this.cast("dir")
+  def file: typings.fsExtra.fsExtraStrings.file = "file".asInstanceOf[typings.fsExtra.fsExtraStrings.file]
   @scala.inline
-  def file: typings.fsExtra.fsExtraStrings.file = this.cast("file")
-  @scala.inline
-  def junction: typings.fsExtra.fsExtraStrings.junction = this.cast("junction")
+  def junction: typings.fsExtra.fsExtraStrings.junction = "junction".asInstanceOf[typings.fsExtra.fsExtraStrings.junction]
 }
 

@@ -13,7 +13,6 @@ object SharedStepModel {
   @scala.inline
   def apply(id: Double, revision: Double): SharedStepModel = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SharedStepModel]
   }
 }

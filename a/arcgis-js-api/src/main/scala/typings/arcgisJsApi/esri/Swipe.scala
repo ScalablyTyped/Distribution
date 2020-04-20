@@ -79,7 +79,7 @@ trait Swipe extends Widget_ {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#visibleElements)
     */
-  var visibleElements: SwipeVisibleElements = js.native
+  var visibleElements: widgetsSwipeVisibleElements = js.native
 }
 
 @JSGlobal("__esri.Swipe")

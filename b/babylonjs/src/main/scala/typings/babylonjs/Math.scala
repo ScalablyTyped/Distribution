@@ -13,7 +13,6 @@ object Math {
   @scala.inline
   def apply(fround: Double => Double, imul: (Double, Double) => Double): Math = {
     val __obj = js.Dynamic.literal(fround = js.Any.fromFunction1(fround), imul = js.Any.fromFunction2(imul))
-  
     __obj.asInstanceOf[Math]
   }
 }

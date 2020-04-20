@@ -16,7 +16,6 @@ object servicesArrayserviceIdstr {
   @scala.inline
   def apply(errMsg: ok | String, services: js.Array[AnonIsPrimary]): servicesArrayserviceIdstr = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], services = services.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[servicesArrayserviceIdstr]
   }
 }

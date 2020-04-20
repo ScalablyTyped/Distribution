@@ -34,7 +34,7 @@ class PublishedAppService protected () extends PublishedServiceBase {
   @JSName("model")
   var model_FPublishedAppService: IModel = js.native
   @JSName("containerAsFolderBase")
-  def containerAsFolderBase_MPublishedAppService(): FolderBase = js.native
+  def containerAsFolderBase_MPublishedAppService: FolderBase = js.native
 }
 
 /* static members */

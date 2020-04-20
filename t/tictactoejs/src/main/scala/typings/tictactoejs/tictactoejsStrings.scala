@@ -24,6 +24,6 @@ object tictactoejsStrings {
   @scala.inline
   def draw: draw = "draw".asInstanceOf[draw]
   @scala.inline
-  def `in progress`: `in progress` = "in progress".asInstanceOf[`in progress`]
+  def `in progress`: `in progress` = ("in progress").asInstanceOf[`in progress`]
 }
 

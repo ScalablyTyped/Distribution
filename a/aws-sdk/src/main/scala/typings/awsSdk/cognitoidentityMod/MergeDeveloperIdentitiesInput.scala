@@ -33,7 +33,6 @@ object MergeDeveloperIdentitiesInput {
     SourceUserIdentifier: DeveloperUserIdentifier
   ): MergeDeveloperIdentitiesInput = {
     val __obj = js.Dynamic.literal(DestinationUserIdentifier = DestinationUserIdentifier.asInstanceOf[js.Any], DeveloperProviderName = DeveloperProviderName.asInstanceOf[js.Any], IdentityPoolId = IdentityPoolId.asInstanceOf[js.Any], SourceUserIdentifier = SourceUserIdentifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MergeDeveloperIdentitiesInput]
   }
 }

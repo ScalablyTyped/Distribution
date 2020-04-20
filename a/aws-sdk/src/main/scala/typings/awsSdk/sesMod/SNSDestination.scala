@@ -16,7 +16,6 @@ object SNSDestination {
   @scala.inline
   def apply(TopicARN: AmazonResourceName): SNSDestination = {
     val __obj = js.Dynamic.literal(TopicARN = TopicARN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SNSDestination]
   }
 }

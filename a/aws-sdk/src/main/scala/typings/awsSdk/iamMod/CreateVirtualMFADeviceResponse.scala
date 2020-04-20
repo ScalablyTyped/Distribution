@@ -16,7 +16,6 @@ object CreateVirtualMFADeviceResponse {
   @scala.inline
   def apply(VirtualMFADevice: VirtualMFADevice): CreateVirtualMFADeviceResponse = {
     val __obj = js.Dynamic.literal(VirtualMFADevice = VirtualMFADevice.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateVirtualMFADeviceResponse]
   }
 }

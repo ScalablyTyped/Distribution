@@ -13,7 +13,6 @@ object RenameOption {
   @scala.inline
   def apply(from: String, to: String): RenameOption = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RenameOption]
   }
 }

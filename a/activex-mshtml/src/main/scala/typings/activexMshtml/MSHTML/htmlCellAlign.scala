@@ -20,18 +20,16 @@ trait htmlCellAlign extends js.Object
 
 object htmlCellAlign {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def htmlCellAlignCenter: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def htmlCellAlignCenter: `2` = this.cast(2)
+  def htmlCellAlignLeft: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def htmlCellAlignLeft: `1` = this.cast(1)
+  def htmlCellAlignMiddle: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def htmlCellAlignMiddle: `2` = this.cast(2)
+  def htmlCellAlignNotSet: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def htmlCellAlignNotSet: `0` = this.cast(0)
+  def htmlCellAlignRight: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def htmlCellAlignRight: `3` = this.cast(3)
-  @scala.inline
-  def htmlCellAlign_Max: `2147483647` = this.cast(2147483647)
+  def htmlCellAlign_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

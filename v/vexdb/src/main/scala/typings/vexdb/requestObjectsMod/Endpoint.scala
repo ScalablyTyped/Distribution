@@ -17,20 +17,18 @@ trait Endpoint extends js.Object
 
 object Endpoint {
   @scala.inline
-  def awards: typings.vexdb.vexdbStrings.awards = this.cast("awards")
+  def awards: typings.vexdb.vexdbStrings.awards = "awards".asInstanceOf[typings.vexdb.vexdbStrings.awards]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def events: typings.vexdb.vexdbStrings.events = "events".asInstanceOf[typings.vexdb.vexdbStrings.events]
   @scala.inline
-  def events: typings.vexdb.vexdbStrings.events = this.cast("events")
+  def matches: typings.vexdb.vexdbStrings.matches = "matches".asInstanceOf[typings.vexdb.vexdbStrings.matches]
   @scala.inline
-  def matches: typings.vexdb.vexdbStrings.matches = this.cast("matches")
+  def rankings: typings.vexdb.vexdbStrings.rankings = "rankings".asInstanceOf[typings.vexdb.vexdbStrings.rankings]
   @scala.inline
-  def rankings: typings.vexdb.vexdbStrings.rankings = this.cast("rankings")
+  def season_rankings: typings.vexdb.vexdbStrings.season_rankings = "season_rankings".asInstanceOf[typings.vexdb.vexdbStrings.season_rankings]
   @scala.inline
-  def season_rankings: typings.vexdb.vexdbStrings.season_rankings = this.cast("season_rankings")
+  def skills: typings.vexdb.vexdbStrings.skills = "skills".asInstanceOf[typings.vexdb.vexdbStrings.skills]
   @scala.inline
-  def skills: typings.vexdb.vexdbStrings.skills = this.cast("skills")
-  @scala.inline
-  def teams: typings.vexdb.vexdbStrings.teams = this.cast("teams")
+  def teams: typings.vexdb.vexdbStrings.teams = "teams".asInstanceOf[typings.vexdb.vexdbStrings.teams]
 }
 

@@ -32,7 +32,6 @@ object Cache_ {
     set: (String, TemplateFunction) => Unit
   ): Cache_ = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), reset = js.Any.fromFunction0(reset), set = js.Any.fromFunction2(set))
-  
     __obj.asInstanceOf[Cache_]
   }
 }

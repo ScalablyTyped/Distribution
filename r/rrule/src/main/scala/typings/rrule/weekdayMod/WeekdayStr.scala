@@ -18,20 +18,18 @@ trait WeekdayStr extends _ByWeekday
 
 object WeekdayStr {
   @scala.inline
-  def FR: typings.rrule.rruleStrings.FR = this.cast("FR")
+  def FR: typings.rrule.rruleStrings.FR = "FR".asInstanceOf[typings.rrule.rruleStrings.FR]
   @scala.inline
-  def MO: typings.rrule.rruleStrings.MO = this.cast("MO")
+  def MO: typings.rrule.rruleStrings.MO = "MO".asInstanceOf[typings.rrule.rruleStrings.MO]
   @scala.inline
-  def SA: typings.rrule.rruleStrings.SA = this.cast("SA")
+  def SA: typings.rrule.rruleStrings.SA = "SA".asInstanceOf[typings.rrule.rruleStrings.SA]
   @scala.inline
-  def SU: typings.rrule.rruleStrings.SU = this.cast("SU")
+  def SU: typings.rrule.rruleStrings.SU = "SU".asInstanceOf[typings.rrule.rruleStrings.SU]
   @scala.inline
-  def TH: typings.rrule.rruleStrings.TH = this.cast("TH")
+  def TH: typings.rrule.rruleStrings.TH = "TH".asInstanceOf[typings.rrule.rruleStrings.TH]
   @scala.inline
-  def TU: typings.rrule.rruleStrings.TU = this.cast("TU")
+  def TU: typings.rrule.rruleStrings.TU = "TU".asInstanceOf[typings.rrule.rruleStrings.TU]
   @scala.inline
-  def WE: typings.rrule.rruleStrings.WE = this.cast("WE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def WE: typings.rrule.rruleStrings.WE = "WE".asInstanceOf[typings.rrule.rruleStrings.WE]
 }
 

@@ -13,7 +13,6 @@ object ModSkip {
   @scala.inline
   def apply(m: String, mi: Double): ModSkip = {
     val __obj = js.Dynamic.literal(m = m.asInstanceOf[js.Any], mi = mi.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ModSkip]
   }
 }

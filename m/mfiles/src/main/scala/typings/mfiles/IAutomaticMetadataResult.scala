@@ -13,7 +13,6 @@ object IAutomaticMetadataResult {
   @scala.inline
   def apply(Clone: () => IAutomaticMetadataResult, PropertyValueSuggestions: IPropertyValueSuggestions): IAutomaticMetadataResult = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), PropertyValueSuggestions = PropertyValueSuggestions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IAutomaticMetadataResult]
   }
 }

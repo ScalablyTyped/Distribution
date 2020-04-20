@@ -295,9 +295,9 @@ object appBuilderLibStrings {
   sealed trait zip extends MacOsTargetName
   
   @scala.inline
-  def `3rd Party Mac Developer Application`: `3rd Party Mac Developer Application` = "3rd Party Mac Developer Application".asInstanceOf[`3rd Party Mac Developer Application`]
+  def `3rd Party Mac Developer Application`: `3rd Party Mac Developer Application` = ("3rd Party Mac Developer Application").asInstanceOf[`3rd Party Mac Developer Application`]
   @scala.inline
-  def `3rd Party Mac Developer Installer`: `3rd Party Mac Developer Installer` = "3rd Party Mac Developer Installer".asInstanceOf[`3rd Party Mac Developer Installer`]
+  def `3rd Party Mac Developer Installer`: `3rd Party Mac Developer Installer` = ("3rd Party Mac Developer Installer").asInstanceOf[`3rd Party Mac Developer Installer`]
   @scala.inline
   def `7z`: `7z` = "7z".asInstanceOf[`7z`]
   @scala.inline
@@ -309,9 +309,9 @@ object appBuilderLibStrings {
   @scala.inline
   def Deflate: Deflate = "Deflate".asInstanceOf[Deflate]
   @scala.inline
-  def `Developer ID Application`: `Developer ID Application` = "Developer ID Application".asInstanceOf[`Developer ID Application`]
+  def `Developer ID Application`: `Developer ID Application` = ("Developer ID Application").asInstanceOf[`Developer ID Application`]
   @scala.inline
-  def `Developer ID Installer`: `Developer ID Installer` = "Developer ID Installer".asInstanceOf[`Developer ID Installer`]
+  def `Developer ID Installer`: `Developer ID Installer` = ("Developer ID Installer").asInstanceOf[`Developer ID Installer`]
   @scala.inline
   def Dotblockmap: Dotblockmap = ".blockmap".asInstanceOf[Dotblockmap]
   @scala.inline
@@ -319,11 +319,11 @@ object appBuilderLibStrings {
   @scala.inline
   def LZMA: LZMA = "LZMA".asInstanceOf[LZMA]
   @scala.inline
-  def `Mac Developer`: `Mac Developer` = "Mac Developer".asInstanceOf[`Mac Developer`]
+  def `Mac Developer`: `Mac Developer` = ("Mac Developer").asInstanceOf[`Mac Developer`]
   @scala.inline
   def None: None = "None".asInstanceOf[None]
   @scala.inline
-  def `Please specify author ApostropheemailApostrophe in the application packageDotjsonLinefeedLinefeedSee httpsColonSlashSlashdocsDotnpmjsDotcomSlashfilesSlashpackageDotjsonNumbersignpeople-fields-author-contributorsLinefeedLinefeedIt is required to set Linux Dotdeb package maintainerDot Or you can set maintainer in the custom linux optionsDotLinefeedLeftparenthesissee httpsColonSlashSlashwwwDotelectronDotbuildSlashconfigurationSlashlinuxRightparenthesisDotLinefeed`: `Please specify author ApostropheemailApostrophe in the application packageDotjsonLinefeedLinefeedSee httpsColonSlashSlashdocsDotnpmjsDotcomSlashfilesSlashpackageDotjsonNumbersignpeople-fields-author-contributorsLinefeedLinefeedIt is required to set Linux Dotdeb package maintainerDot Or you can set maintainer in the custom linux optionsDotLinefeedLeftparenthesissee httpsColonSlashSlashwwwDotelectronDotbuildSlashconfigurationSlashlinuxRightparenthesisDotLinefeed` = "Please specify author 'email' in the application package.json\n\nSee https://docs.npmjs.com/files/package.json#people-fields-author-contributors\n\nIt is required to set Linux .deb package maintainer. Or you can set maintainer in the custom linux options.\n(see https://www.electron.build/configuration/linux).\n".asInstanceOf[`Please specify author ApostropheemailApostrophe in the application packageDotjsonLinefeedLinefeedSee httpsColonSlashSlashdocsDotnpmjsDotcomSlashfilesSlashpackageDotjsonNumbersignpeople-fields-author-contributorsLinefeedLinefeedIt is required to set Linux Dotdeb package maintainerDot Or you can set maintainer in the custom linux optionsDotLinefeedLeftparenthesissee httpsColonSlashSlashwwwDotelectronDotbuildSlashconfigurationSlashlinuxRightparenthesisDotLinefeed`]
+  def `Please specify author ApostropheemailApostrophe in the application packageDotjsonLinefeedLinefeedSee httpsColonSlashSlashdocsDotnpmjsDotcomSlashfilesSlashpackageDotjsonNumbersignpeople-fields-author-contributorsLinefeedLinefeedIt is required to set Linux Dotdeb package maintainerDot Or you can set maintainer in the custom linux optionsDotLinefeedLeftparenthesissee httpsColonSlashSlashwwwDotelectronDotbuildSlashconfigurationSlashlinuxRightparenthesisDotLinefeed`: `Please specify author ApostropheemailApostrophe in the application packageDotjsonLinefeedLinefeedSee httpsColonSlashSlashdocsDotnpmjsDotcomSlashfilesSlashpackageDotjsonNumbersignpeople-fields-author-contributorsLinefeedLinefeedIt is required to set Linux Dotdeb package maintainerDot Or you can set maintainer in the custom linux optionsDotLinefeedLeftparenthesissee httpsColonSlashSlashwwwDotelectronDotbuildSlashconfigurationSlashlinuxRightparenthesisDotLinefeed` = ("Please specify author 'email' in the application package.json\n\nSee https://docs.npmjs.com/files/package.json#people-fields-author-contributors\n\nIt is required to set Linux .deb package maintainer. Or you can set maintainer in the custom linux options.\n(see https://www.electron.build/configuration/linux).\n").asInstanceOf[`Please specify author ApostropheemailApostrophe in the application packageDotjsonLinefeedLinefeedSee httpsColonSlashSlashdocsDotnpmjsDotcomSlashfilesSlashpackageDotjsonNumbersignpeople-fields-author-contributorsLinefeedLinefeedIt is required to set Linux Dotdeb package maintainerDot Or you can set maintainer in the custom linux optionsDotLinefeedLeftparenthesissee httpsColonSlashSlashwwwDotelectronDotbuildSlashconfigurationSlashlinuxRightparenthesisDotLinefeed`]
   @scala.inline
   def S3: S3 = "S3".asInstanceOf[S3]
   @scala.inline

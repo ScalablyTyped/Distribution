@@ -48,7 +48,6 @@ object JQueryFingerOptions {
     preventDefault: Boolean
   ): JQueryFingerOptions = {
     val __obj = js.Dynamic.literal(doubleTapInterval = doubleTapInterval.asInstanceOf[js.Any], flickDuration = flickDuration.asInstanceOf[js.Any], motionThreshhold = motionThreshhold.asInstanceOf[js.Any], pressDuration = pressDuration.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JQueryFingerOptions]
   }
 }

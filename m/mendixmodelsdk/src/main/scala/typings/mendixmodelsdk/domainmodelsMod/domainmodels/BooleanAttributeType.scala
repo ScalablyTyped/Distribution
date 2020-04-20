@@ -28,7 +28,7 @@ class BooleanAttributeType protected () extends AttributeType {
   @JSName("model")
   var model_FBooleanAttributeType: IModel = js.native
   @JSName("containerAsAttribute")
-  def containerAsAttribute_MBooleanAttributeType(): Attribute = js.native
+  def containerAsAttribute_MBooleanAttributeType: Attribute = js.native
 }
 
 /* static members */

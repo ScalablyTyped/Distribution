@@ -95,7 +95,6 @@ object IntrinsicSxElements {
     ul: (DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement]) with SxProps
   ): IntrinsicSxElements = {
     val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], blockquote = blockquote.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], delete = delete.asInstanceOf[js.Any], div = div.asInstanceOf[js.Any], em = em.asInstanceOf[js.Any], h1 = h1.asInstanceOf[js.Any], h2 = h2.asInstanceOf[js.Any], h3 = h3.asInstanceOf[js.Any], h4 = h4.asInstanceOf[js.Any], h5 = h5.asInstanceOf[js.Any], h6 = h6.asInstanceOf[js.Any], hr = hr.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], inlineCode = inlineCode.asInstanceOf[js.Any], li = li.asInstanceOf[js.Any], ol = ol.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], pre = pre.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], strong = strong.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], td = td.asInstanceOf[js.Any], th = th.asInstanceOf[js.Any], thematicBreak = thematicBreak.asInstanceOf[js.Any], tr = tr.asInstanceOf[js.Any], ul = ul.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IntrinsicSxElements]
   }
 }

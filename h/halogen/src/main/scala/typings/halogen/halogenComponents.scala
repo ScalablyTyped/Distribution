@@ -1,5 +1,21 @@
 package typings.halogen
 
+import typings.halogen.mod.BeatLoaderCls
+import typings.halogen.mod.BounceLoaderCls
+import typings.halogen.mod.ClipLoaderCls
+import typings.halogen.mod.DotLoaderCls
+import typings.halogen.mod.FadeLoaderCls
+import typings.halogen.mod.GridLoaderCls
+import typings.halogen.mod.MoonLoaderCls
+import typings.halogen.mod.PacmanLoaderCls
+import typings.halogen.mod.PulseLoaderCls
+import typings.halogen.mod.RingLoaderCls
+import typings.halogen.mod.RiseLoaderCls
+import typings.halogen.mod.RotateLoaderCls
+import typings.halogen.mod.ScaleLoaderCls
+import typings.halogen.mod.SkewLoaderCls
+import typings.halogen.mod.SquareLoaderCls
+import typings.halogen.mod.SyncLoaderCls
 import typings.react.mod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -7,36 +23,36 @@ import scala.scalajs.js.annotation._
 
 object halogenComponents extends halogenProps {
   @scala.inline
-  def BeatLoader: ComponentType[BeatLoaderProps[String]] = js.constructorOf[typings.halogen.mod.BeatLoaderCls].asInstanceOf[typings.react.mod.ComponentType[BeatLoaderProps[java.lang.String]]]
+  def BeatLoader: ComponentType[BeatLoaderProps[String]] = js.constructorOf[BeatLoaderCls].asInstanceOf[ComponentType[BeatLoaderProps[String]]]
   @scala.inline
-  def BounceLoader: ComponentType[BounceLoaderProps] = js.constructorOf[typings.halogen.mod.BounceLoaderCls].asInstanceOf[typings.react.mod.ComponentType[BounceLoaderProps]]
+  def BounceLoader: ComponentType[BounceLoaderProps] = js.constructorOf[BounceLoaderCls].asInstanceOf[ComponentType[BounceLoaderProps]]
   @scala.inline
-  def ClipLoader: ComponentType[ClipLoaderProps] = js.constructorOf[typings.halogen.mod.ClipLoaderCls].asInstanceOf[typings.react.mod.ComponentType[ClipLoaderProps]]
+  def ClipLoader: ComponentType[ClipLoaderProps] = js.constructorOf[ClipLoaderCls].asInstanceOf[ComponentType[ClipLoaderProps]]
   @scala.inline
-  def DotLoader: ComponentType[DotLoaderProps] = js.constructorOf[typings.halogen.mod.DotLoaderCls].asInstanceOf[typings.react.mod.ComponentType[DotLoaderProps]]
+  def DotLoader: ComponentType[DotLoaderProps] = js.constructorOf[DotLoaderCls].asInstanceOf[ComponentType[DotLoaderProps]]
   @scala.inline
-  def FadeLoader: ComponentType[FadeLoaderProps] = js.constructorOf[typings.halogen.mod.FadeLoaderCls].asInstanceOf[typings.react.mod.ComponentType[FadeLoaderProps]]
+  def FadeLoader: ComponentType[FadeLoaderProps] = js.constructorOf[FadeLoaderCls].asInstanceOf[ComponentType[FadeLoaderProps]]
   @scala.inline
-  def GridLoader: ComponentType[GridLoaderProps[String]] = js.constructorOf[typings.halogen.mod.GridLoaderCls].asInstanceOf[typings.react.mod.ComponentType[GridLoaderProps[java.lang.String]]]
+  def GridLoader: ComponentType[GridLoaderProps[String]] = js.constructorOf[GridLoaderCls].asInstanceOf[ComponentType[GridLoaderProps[String]]]
   @scala.inline
-  def MoonLoader: ComponentType[MoonLoaderProps] = js.constructorOf[typings.halogen.mod.MoonLoaderCls].asInstanceOf[typings.react.mod.ComponentType[MoonLoaderProps]]
+  def MoonLoader: ComponentType[MoonLoaderProps] = js.constructorOf[MoonLoaderCls].asInstanceOf[ComponentType[MoonLoaderProps]]
   @scala.inline
-  def PacmanLoader: ComponentType[PacmanLoaderProps[Double]] = js.constructorOf[typings.halogen.mod.PacmanLoaderCls].asInstanceOf[typings.react.mod.ComponentType[PacmanLoaderProps[scala.Double]]]
+  def PacmanLoader: ComponentType[PacmanLoaderProps[Double]] = js.constructorOf[PacmanLoaderCls].asInstanceOf[ComponentType[PacmanLoaderProps[Double]]]
   @scala.inline
-  def PulseLoader: ComponentType[PulseLoaderProps[String]] = js.constructorOf[typings.halogen.mod.PulseLoaderCls].asInstanceOf[typings.react.mod.ComponentType[PulseLoaderProps[java.lang.String]]]
+  def PulseLoader: ComponentType[PulseLoaderProps[String]] = js.constructorOf[PulseLoaderCls].asInstanceOf[ComponentType[PulseLoaderProps[String]]]
   @scala.inline
-  def RingLoader: ComponentType[RingLoaderProps] = js.constructorOf[typings.halogen.mod.RingLoaderCls].asInstanceOf[typings.react.mod.ComponentType[RingLoaderProps]]
+  def RingLoader: ComponentType[RingLoaderProps] = js.constructorOf[RingLoaderCls].asInstanceOf[ComponentType[RingLoaderProps]]
   @scala.inline
-  def RiseLoader: ComponentType[RiseLoaderProps[String]] = js.constructorOf[typings.halogen.mod.RiseLoaderCls].asInstanceOf[typings.react.mod.ComponentType[RiseLoaderProps[java.lang.String]]]
+  def RiseLoader: ComponentType[RiseLoaderProps[String]] = js.constructorOf[RiseLoaderCls].asInstanceOf[ComponentType[RiseLoaderProps[String]]]
   @scala.inline
-  def RotateLoader: ComponentType[RotateLoaderProps[String]] = js.constructorOf[typings.halogen.mod.RotateLoaderCls].asInstanceOf[typings.react.mod.ComponentType[RotateLoaderProps[java.lang.String]]]
+  def RotateLoader: ComponentType[RotateLoaderProps[String]] = js.constructorOf[RotateLoaderCls].asInstanceOf[ComponentType[RotateLoaderProps[String]]]
   @scala.inline
-  def ScaleLoader: ComponentType[ScaleLoaderProps] = js.constructorOf[typings.halogen.mod.ScaleLoaderCls].asInstanceOf[typings.react.mod.ComponentType[ScaleLoaderProps]]
+  def ScaleLoader: ComponentType[ScaleLoaderProps] = js.constructorOf[ScaleLoaderCls].asInstanceOf[ComponentType[ScaleLoaderProps]]
   @scala.inline
-  def SkewLoader: ComponentType[SkewLoaderProps] = js.constructorOf[typings.halogen.mod.SkewLoaderCls].asInstanceOf[typings.react.mod.ComponentType[SkewLoaderProps]]
+  def SkewLoader: ComponentType[SkewLoaderProps] = js.constructorOf[SkewLoaderCls].asInstanceOf[ComponentType[SkewLoaderProps]]
   @scala.inline
-  def SquareLoader: ComponentType[SquareLoaderProps] = js.constructorOf[typings.halogen.mod.SquareLoaderCls].asInstanceOf[typings.react.mod.ComponentType[SquareLoaderProps]]
+  def SquareLoader: ComponentType[SquareLoaderProps] = js.constructorOf[SquareLoaderCls].asInstanceOf[ComponentType[SquareLoaderProps]]
   @scala.inline
-  def SyncLoader: ComponentType[SyncLoaderProps[String]] = js.constructorOf[typings.halogen.mod.SyncLoaderCls].asInstanceOf[typings.react.mod.ComponentType[SyncLoaderProps[java.lang.String]]]
+  def SyncLoader: ComponentType[SyncLoaderProps[String]] = js.constructorOf[SyncLoaderCls].asInstanceOf[ComponentType[SyncLoaderProps[String]]]
 }
 

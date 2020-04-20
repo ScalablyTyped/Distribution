@@ -16,7 +16,6 @@ object HumanLoopOutput {
   @scala.inline
   def apply(OutputS3Uri: String): HumanLoopOutput = {
     val __obj = js.Dynamic.literal(OutputS3Uri = OutputS3Uri.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HumanLoopOutput]
   }
 }

@@ -17,7 +17,6 @@ object AnonSelection {
     Selection: Selection
   ): AnonSelection = {
     val __obj = js.Dynamic.literal(CommandBar = CommandBar.asInstanceOf[js.Any], Selection = Selection.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSelection]
   }
 }

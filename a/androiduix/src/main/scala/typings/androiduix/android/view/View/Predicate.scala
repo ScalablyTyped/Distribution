@@ -13,7 +13,6 @@ object Predicate {
   @scala.inline
   def apply[T](apply: T => Boolean): Predicate[T] = {
     val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply))
-  
     __obj.asInstanceOf[Predicate[T]]
   }
 }

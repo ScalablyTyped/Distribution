@@ -40,7 +40,6 @@ object ChildWidgetProperties {
   @scala.inline
   def apply(colspan: Double, label: String, spanLabel: Boolean, title: String): ChildWidgetProperties = {
     val __obj = js.Dynamic.literal(colspan = colspan.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], spanLabel = spanLabel.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChildWidgetProperties]
   }
 }

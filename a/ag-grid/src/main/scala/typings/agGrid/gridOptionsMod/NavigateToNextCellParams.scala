@@ -17,7 +17,6 @@ object NavigateToNextCellParams {
   @scala.inline
   def apply(event: KeyboardEvent, key: Double, nextCellDef: GridCellDef, previousCellDef: GridCellDef): NavigateToNextCellParams = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], nextCellDef = nextCellDef.asInstanceOf[js.Any], previousCellDef = previousCellDef.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NavigateToNextCellParams]
   }
 }

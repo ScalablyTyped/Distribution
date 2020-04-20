@@ -15,7 +15,6 @@ object DayFormatterInput {
   @scala.inline
   def apply(date: Double, fullYear: Double, month: Double): DayFormatterInput = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], fullYear = fullYear.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DayFormatterInput]
   }
 }

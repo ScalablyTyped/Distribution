@@ -16,7 +16,6 @@ object DataProviderContext {
   @scala.inline
   def apply(properties: StringDictionary[js.Any]): DataProviderContext = {
     val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DataProviderContext]
   }
 }

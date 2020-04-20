@@ -23,7 +23,6 @@ object TransformationRule {
     predicate: Predicate
   ): TransformationRule = {
     val __obj = js.Dynamic.literal(apply = js.Any.fromFunction2(apply), literal = literal.asInstanceOf[js.Any], new_category = new_category.asInstanceOf[js.Any], old_category = old_category.asInstanceOf[js.Any], predicate = predicate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TransformationRule]
   }
 }

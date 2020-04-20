@@ -44,7 +44,6 @@ class Client protected () extends EventEmitter {
   var _getLiveQuery: js.Any = js.native
   var _getMap: js.Any = js.native
   var _getStream: js.Any = js.native
-  val connectionState: ConnectionState = js.native
   /**
     * Returns promise which resolves when library is correctly initialized
     * Or throws if initialization is impossible
@@ -58,6 +57,7 @@ class Client protected () extends EventEmitter {
   var removeFromCacheAndSession: js.Any = js.native
   val services: js.Any = js.native
   var storeRootInSessionCache: js.Any = js.native
+  def connectionState: ConnectionState = js.native
   /**
     * Read or create a Sync Document.
     * @param {String | Client#OpenOptions} [arg] One of:
@@ -227,6 +227,6 @@ object Client extends js.Object {
     * @type String
     * @readonly
     */
-  val version: js.Any = js.native
+  def version: js.Any = js.native
 }
 

@@ -13,7 +13,6 @@ object fragLoadProgressData {
   @scala.inline
   def apply(frag: Fragment, stats: Stats): fragLoadProgressData = {
     val __obj = js.Dynamic.literal(frag = frag.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[fragLoadProgressData]
   }
 }

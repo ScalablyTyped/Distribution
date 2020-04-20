@@ -15,7 +15,6 @@ object MemeMetadata {
   @scala.inline
   def apply(bg_image: String, bottom_text: String, meme_name: String, top_text: String): MemeMetadata = {
     val __obj = js.Dynamic.literal(bg_image = bg_image.asInstanceOf[js.Any], bottom_text = bottom_text.asInstanceOf[js.Any], meme_name = meme_name.asInstanceOf[js.Any], top_text = top_text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MemeMetadata]
   }
 }

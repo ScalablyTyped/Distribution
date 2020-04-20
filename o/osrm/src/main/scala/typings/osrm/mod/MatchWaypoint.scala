@@ -28,7 +28,6 @@ object MatchWaypoint {
     waypoint_index: js.Array[Double]
   ): MatchWaypoint = {
     val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], hint = hint.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], matchings_index = matchings_index.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], waypoint_index = waypoint_index.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MatchWaypoint]
   }
 }

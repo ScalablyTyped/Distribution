@@ -20,7 +20,6 @@ object MenuState {
     switchingModeFromInline: Boolean
   ): MenuState = {
     val __obj = js.Dynamic.literal(inlineOpenKeys = inlineOpenKeys.asInstanceOf[js.Any], openKeys = openKeys.asInstanceOf[js.Any], prevProps = prevProps.asInstanceOf[js.Any], switchingModeFromInline = switchingModeFromInline.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MenuState]
   }
 }

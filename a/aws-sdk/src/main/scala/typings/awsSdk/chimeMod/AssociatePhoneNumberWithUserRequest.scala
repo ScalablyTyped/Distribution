@@ -24,7 +24,6 @@ object AssociatePhoneNumberWithUserRequest {
   @scala.inline
   def apply(AccountId: String, E164PhoneNumber: E164PhoneNumber, UserId: String): AssociatePhoneNumberWithUserRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], E164PhoneNumber = E164PhoneNumber.asInstanceOf[js.Any], UserId = UserId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssociatePhoneNumberWithUserRequest]
   }
 }

@@ -20,7 +20,6 @@ object LoadableComponent {
   @scala.inline
   def apply(preload: () => Unit): LoadableComponent = {
     val __obj = js.Dynamic.literal(preload = js.Any.fromFunction0(preload))
-  
     __obj.asInstanceOf[LoadableComponent]
   }
 }

@@ -25,7 +25,6 @@ object AddStoryArgs {
     storyFn: /* p */ js.UndefOr[StoryContext] => _
   ): AddStoryArgs = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], storyFn = js.Any.fromFunction1(storyFn))
-  
     __obj.asInstanceOf[AddStoryArgs]
   }
 }

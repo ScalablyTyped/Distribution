@@ -12,7 +12,6 @@ object FieldState {
   @scala.inline
   def apply(resetCount: Double): FieldState = {
     val __obj = js.Dynamic.literal(resetCount = resetCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FieldState]
   }
 }

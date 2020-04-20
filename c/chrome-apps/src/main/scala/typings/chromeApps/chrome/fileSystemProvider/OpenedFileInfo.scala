@@ -17,7 +17,7 @@ trait OpenedFileInfo extends js.Object {
     * Whether the file was opened for reading or writing.
     * @see OpenFileMode
     */
-  var mode: ToStringLiteral[AnonREAD, String, Exclude[String, READ | WRITE]]
+  var mode: ToStringLiteral[AnonREAD, READ | WRITE, Exclude[READ | WRITE, READ | WRITE]]
   /** A request ID to be be used by consecutive read/write and close requests. */
   var openRequestId: integer
 }
@@ -26,11 +26,10 @@ object OpenedFileInfo {
   @scala.inline
   def apply(
     filePath: String,
-    mode: ToStringLiteral[AnonREAD, String, Exclude[String, READ | WRITE]],
+    mode: ToStringLiteral[AnonREAD, READ | WRITE, Exclude[READ | WRITE, READ | WRITE]],
     openRequestId: integer
   ): OpenedFileInfo = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], openRequestId = openRequestId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OpenedFileInfo]
   }
 }

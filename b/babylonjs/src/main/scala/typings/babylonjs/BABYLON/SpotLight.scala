@@ -51,7 +51,7 @@ class SpotLight protected () extends ShadowLight {
   /**
     * Gets the cone angle of the spot light in Radians.
     */
-  def angle(): Double = js.native
+  def angle: Double = js.native
   /**
     * Sets the cone angle of the spot light in Radians.
     */
@@ -61,7 +61,7 @@ class SpotLight protected () extends ShadowLight {
     * the directional falloff will start before cutting at angle which could be seen
     * as outer angle.
     */
-  def innerAngle(): Double = js.native
+  def innerAngle: Double = js.native
   /**
     * Only used in gltf falloff mode, this defines the angle where
     * the directional falloff will start before cutting at angle which could be seen
@@ -71,7 +71,7 @@ class SpotLight protected () extends ShadowLight {
   /**
     * Gets the projection texture of the light.
     */
-  def projectionTexture(): Nullable[BaseTexture] = js.native
+  def projectionTexture: Nullable[BaseTexture] = js.native
   /**
     * Sets the projection texture of the light.
     */
@@ -79,7 +79,7 @@ class SpotLight protected () extends ShadowLight {
   /**
     * Gets the far clip of the Spotlight for texture projection.
     */
-  def projectionTextureLightFar(): Double = js.native
+  def projectionTextureLightFar: Double = js.native
   /**
     * Sets the far clip of the Spotlight for texture projection.
     */
@@ -87,7 +87,7 @@ class SpotLight protected () extends ShadowLight {
   /**
     * Gets the near clip of the Spotlight for texture projection.
     */
-  def projectionTextureLightNear(): Double = js.native
+  def projectionTextureLightNear: Double = js.native
   /**
     * Sets the near clip of the Spotlight for texture projection.
     */
@@ -95,11 +95,11 @@ class SpotLight protected () extends ShadowLight {
   /**
     * Allows reading the projecton texture
     */
-  def projectionTextureMatrix(): Matrix = js.native
+  def projectionTextureMatrix: Matrix = js.native
   /**
     * Gets the Up vector of the Spotlight for texture projection.
     */
-  def projectionTextureUpDirection(): Vector3 = js.native
+  def projectionTextureUpDirection: Vector3 = js.native
   /**
     * Sets the Up vector of the Spotlight for texture projection.
     */
@@ -107,7 +107,7 @@ class SpotLight protected () extends ShadowLight {
   /**
     * Allows scaling the angle of the light for shadow generation only.
     */
-  def shadowAngleScale(): Double = js.native
+  def shadowAngleScale: Double = js.native
   /**
     * Allows scaling the angle of the light for shadow generation only.
     */

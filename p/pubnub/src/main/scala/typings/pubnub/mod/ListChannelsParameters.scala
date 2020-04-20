@@ -12,7 +12,6 @@ object ListChannelsParameters {
   @scala.inline
   def apply(channelGroup: String): ListChannelsParameters = {
     val __obj = js.Dynamic.literal(channelGroup = channelGroup.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListChannelsParameters]
   }
 }

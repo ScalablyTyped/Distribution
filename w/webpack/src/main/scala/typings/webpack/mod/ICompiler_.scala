@@ -15,7 +15,6 @@ object ICompiler_ {
   @scala.inline
   def apply(run: Handler => Unit, watch: (typings.webpack.mod.ICompiler.WatchOptions, Handler) => Watching): ICompiler_ = {
     val __obj = js.Dynamic.literal(run = js.Any.fromFunction1(run), watch = js.Any.fromFunction2(watch))
-  
     __obj.asInstanceOf[ICompiler_]
   }
 }

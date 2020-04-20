@@ -39,7 +39,6 @@ object register {
   @scala.inline
   def apply(filters: (String, js.Object) => Unit, tags: (String, js.Object) => Unit): register = {
     val __obj = js.Dynamic.literal(filters = js.Any.fromFunction2(filters), tags = js.Any.fromFunction2(tags))
-  
     __obj.asInstanceOf[register]
   }
 }

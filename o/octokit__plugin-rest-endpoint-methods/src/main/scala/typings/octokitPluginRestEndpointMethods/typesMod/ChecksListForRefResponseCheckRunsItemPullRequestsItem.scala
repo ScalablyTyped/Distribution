@@ -22,7 +22,6 @@ object ChecksListForRefResponseCheckRunsItemPullRequestsItem {
     url: String
   ): ChecksListForRefResponseCheckRunsItemPullRequestsItem = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChecksListForRefResponseCheckRunsItemPullRequestsItem]
   }
 }

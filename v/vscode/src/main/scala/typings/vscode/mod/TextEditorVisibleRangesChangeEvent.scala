@@ -19,7 +19,6 @@ object TextEditorVisibleRangesChangeEvent {
   @scala.inline
   def apply(textEditor: TextEditor, visibleRanges: js.Array[Range]): TextEditorVisibleRangesChangeEvent = {
     val __obj = js.Dynamic.literal(textEditor = textEditor.asInstanceOf[js.Any], visibleRanges = visibleRanges.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TextEditorVisibleRangesChangeEvent]
   }
 }

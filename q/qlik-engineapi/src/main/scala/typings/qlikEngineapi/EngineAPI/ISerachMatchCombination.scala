@@ -22,7 +22,6 @@ object ISerachMatchCombination {
   @scala.inline
   def apply(qFieldMatches: js.Array[ISerachFieldMatch], qId: Double): ISerachMatchCombination = {
     val __obj = js.Dynamic.literal(qFieldMatches = qFieldMatches.asInstanceOf[js.Any], qId = qId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISerachMatchCombination]
   }
 }

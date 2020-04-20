@@ -40,7 +40,6 @@ object IProperties {
     viewType: installed | searchResult
   ): IProperties = {
     val __obj = js.Dynamic.literal(entry = entry.asInstanceOf[js.Any], listMode = listMode.asInstanceOf[js.Any], performAction = js.Any.fromFunction2(performAction), viewType = viewType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IProperties]
   }
 }

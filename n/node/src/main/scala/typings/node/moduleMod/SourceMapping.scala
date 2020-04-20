@@ -22,7 +22,6 @@ object SourceMapping {
     originalSource: String
   ): SourceMapping = {
     val __obj = js.Dynamic.literal(generatedColumn = generatedColumn.asInstanceOf[js.Any], generatedLine = generatedLine.asInstanceOf[js.Any], originalColumn = originalColumn.asInstanceOf[js.Any], originalLine = originalLine.asInstanceOf[js.Any], originalSource = originalSource.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SourceMapping]
   }
 }

@@ -31,7 +31,6 @@ object TessellatedMesh {
     vertices: js.Array[MeshVertex]
   ): TessellatedMesh = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), indices = indices.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), vertices = vertices.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TessellatedMesh]
   }
 }

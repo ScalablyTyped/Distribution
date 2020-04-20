@@ -15,7 +15,6 @@ object FirstFrameParam {
   @scala.inline
   def apply(loadTime: Double, viewable: `0` | `1`): FirstFrameParam = {
     val __obj = js.Dynamic.literal(loadTime = loadTime.asInstanceOf[js.Any], viewable = viewable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FirstFrameParam]
   }
 }

@@ -12,7 +12,6 @@ object NodeEventTarget {
   @scala.inline
   def apply(addListener: (String, js.Function1[/* e */ js.Any, _]) => Unit): NodeEventTarget = {
     val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction2(addListener))
-  
     __obj.asInstanceOf[NodeEventTarget]
   }
 }

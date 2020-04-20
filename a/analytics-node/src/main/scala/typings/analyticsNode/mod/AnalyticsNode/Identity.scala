@@ -14,7 +14,6 @@ object Identity {
   @scala.inline
   def AnonUserId(userId: String | Double): Identity = {
     val __obj = js.Dynamic.literal(userId = userId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Identity]
   }
   @scala.inline

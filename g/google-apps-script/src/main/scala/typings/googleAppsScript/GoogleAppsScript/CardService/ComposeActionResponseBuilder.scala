@@ -22,7 +22,6 @@ object ComposeActionResponseBuilder {
   @scala.inline
   def apply(build: () => ComposeActionResponse, setGmailDraft: GmailDraft => ComposeActionResponseBuilder): ComposeActionResponseBuilder = {
     val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), setGmailDraft = js.Any.fromFunction1(setGmailDraft))
-  
     __obj.asInstanceOf[ComposeActionResponseBuilder]
   }
 }

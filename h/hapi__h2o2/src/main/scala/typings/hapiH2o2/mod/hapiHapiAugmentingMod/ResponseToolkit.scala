@@ -17,7 +17,6 @@ object ResponseToolkit {
   @scala.inline
   def apply(proxy: ProxyHandlerOptions => js.Promise[ResponseObject]): ResponseToolkit = {
     val __obj = js.Dynamic.literal(proxy = js.Any.fromFunction1(proxy))
-  
     __obj.asInstanceOf[ResponseToolkit]
   }
 }

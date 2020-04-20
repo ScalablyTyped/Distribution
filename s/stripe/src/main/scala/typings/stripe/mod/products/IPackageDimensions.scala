@@ -31,7 +31,6 @@ object IPackageDimensions {
   @scala.inline
   def apply(height: Double, length: Double, weight: Double, width: Double): IPackageDimensions = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPackageDimensions]
   }
 }

@@ -12,7 +12,6 @@ object UUIDOptions {
   @scala.inline
   def apply(noDashes: Boolean): UUIDOptions = {
     val __obj = js.Dynamic.literal(noDashes = noDashes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UUIDOptions]
   }
 }

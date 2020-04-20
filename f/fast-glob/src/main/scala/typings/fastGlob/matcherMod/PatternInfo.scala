@@ -24,7 +24,6 @@ object PatternInfo {
     segments: js.Array[PatternSegment]
   ): PatternInfo = {
     val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], sections = sections.asInstanceOf[js.Any], segments = segments.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PatternInfo]
   }
 }

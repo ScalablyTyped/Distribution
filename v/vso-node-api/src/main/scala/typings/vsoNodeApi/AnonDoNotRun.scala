@@ -13,7 +13,6 @@ object AnonDoNotRun {
   @scala.inline
   def apply(doNotRun: Double, none: Double): AnonDoNotRun = {
     val __obj = js.Dynamic.literal(doNotRun = doNotRun.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDoNotRun]
   }
 }

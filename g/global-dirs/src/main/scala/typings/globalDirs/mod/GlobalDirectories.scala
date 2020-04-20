@@ -26,7 +26,6 @@ object GlobalDirectories {
   @scala.inline
   def apply(binaries: String, packages: String, prefix: String): GlobalDirectories = {
     val __obj = js.Dynamic.literal(binaries = binaries.asInstanceOf[js.Any], packages = packages.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GlobalDirectories]
   }
 }

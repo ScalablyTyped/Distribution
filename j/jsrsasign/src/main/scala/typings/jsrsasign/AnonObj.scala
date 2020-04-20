@@ -16,7 +16,6 @@ object AnonObj {
   @scala.inline
   def apply(hex: String, obj: RSAKey | DSA | ECDSA): AnonObj = {
     val __obj = js.Dynamic.literal(hex = hex.asInstanceOf[js.Any], obj = obj.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonObj]
   }
 }

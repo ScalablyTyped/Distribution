@@ -15,7 +15,6 @@ object DispatchArg {
   @scala.inline
   def apply[T](source: Observable[T], subscriber: Subscriber[T]): DispatchArg[T] = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], subscriber = subscriber.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DispatchArg[T]]
   }
 }

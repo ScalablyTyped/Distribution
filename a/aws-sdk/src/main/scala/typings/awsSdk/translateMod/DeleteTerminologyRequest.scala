@@ -16,7 +16,6 @@ object DeleteTerminologyRequest {
   @scala.inline
   def apply(Name: ResourceName): DeleteTerminologyRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteTerminologyRequest]
   }
 }

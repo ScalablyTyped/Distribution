@@ -12,7 +12,6 @@ object DateTime {
   @scala.inline
   def apply(universalTime: Double): DateTime = {
     val __obj = js.Dynamic.literal(universalTime = universalTime.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DateTime]
   }
 }

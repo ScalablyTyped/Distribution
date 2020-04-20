@@ -14,12 +14,10 @@ trait RecurrentLayerClassName extends js.Object
 
 object RecurrentLayerClassName {
   @scala.inline
-  def GRU: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GRU = this.cast("GRU")
+  def GRU: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GRU = "GRU".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GRU]
   @scala.inline
-  def LSTM: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.LSTM = this.cast("LSTM")
+  def LSTM: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.LSTM = "LSTM".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.LSTM]
   @scala.inline
-  def SimpleRNN: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.SimpleRNN = this.cast("SimpleRNN")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SimpleRNN: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.SimpleRNN = "SimpleRNN".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.SimpleRNN]
 }
 

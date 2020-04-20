@@ -19,24 +19,22 @@ trait Platform extends js.Object
 
 object Platform {
   @scala.inline
-  def aix: typings.nodeOsUtils.nodeOsUtilsStrings.aix = this.cast("aix")
+  def aix: typings.nodeOsUtils.nodeOsUtilsStrings.aix = "aix".asInstanceOf[typings.nodeOsUtils.nodeOsUtilsStrings.aix]
   @scala.inline
-  def android: typings.nodeOsUtils.nodeOsUtilsStrings.android = this.cast("android")
+  def android: typings.nodeOsUtils.nodeOsUtilsStrings.android = "android".asInstanceOf[typings.nodeOsUtils.nodeOsUtilsStrings.android]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cygwin: typings.nodeOsUtils.nodeOsUtilsStrings.cygwin = "cygwin".asInstanceOf[typings.nodeOsUtils.nodeOsUtilsStrings.cygwin]
   @scala.inline
-  def cygwin: typings.nodeOsUtils.nodeOsUtilsStrings.cygwin = this.cast("cygwin")
+  def darwin: typings.nodeOsUtils.nodeOsUtilsStrings.darwin = "darwin".asInstanceOf[typings.nodeOsUtils.nodeOsUtilsStrings.darwin]
   @scala.inline
-  def darwin: typings.nodeOsUtils.nodeOsUtilsStrings.darwin = this.cast("darwin")
+  def freebsd: typings.nodeOsUtils.nodeOsUtilsStrings.freebsd = "freebsd".asInstanceOf[typings.nodeOsUtils.nodeOsUtilsStrings.freebsd]
   @scala.inline
-  def freebsd: typings.nodeOsUtils.nodeOsUtilsStrings.freebsd = this.cast("freebsd")
+  def linux: typings.nodeOsUtils.nodeOsUtilsStrings.linux = "linux".asInstanceOf[typings.nodeOsUtils.nodeOsUtilsStrings.linux]
   @scala.inline
-  def linux: typings.nodeOsUtils.nodeOsUtilsStrings.linux = this.cast("linux")
+  def openbsd: typings.nodeOsUtils.nodeOsUtilsStrings.openbsd = "openbsd".asInstanceOf[typings.nodeOsUtils.nodeOsUtilsStrings.openbsd]
   @scala.inline
-  def openbsd: typings.nodeOsUtils.nodeOsUtilsStrings.openbsd = this.cast("openbsd")
+  def sunos: typings.nodeOsUtils.nodeOsUtilsStrings.sunos = "sunos".asInstanceOf[typings.nodeOsUtils.nodeOsUtilsStrings.sunos]
   @scala.inline
-  def sunos: typings.nodeOsUtils.nodeOsUtilsStrings.sunos = this.cast("sunos")
-  @scala.inline
-  def win32: typings.nodeOsUtils.nodeOsUtilsStrings.win32 = this.cast("win32")
+  def win32: typings.nodeOsUtils.nodeOsUtilsStrings.win32 = "win32".asInstanceOf[typings.nodeOsUtils.nodeOsUtilsStrings.win32]
 }
 

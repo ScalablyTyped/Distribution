@@ -33,7 +33,6 @@ object StartThingRegistrationTaskRequest {
     templateBody: TemplateBody
   ): StartThingRegistrationTaskRequest = {
     val __obj = js.Dynamic.literal(inputFileBucket = inputFileBucket.asInstanceOf[js.Any], inputFileKey = inputFileKey.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], templateBody = templateBody.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StartThingRegistrationTaskRequest]
   }
 }

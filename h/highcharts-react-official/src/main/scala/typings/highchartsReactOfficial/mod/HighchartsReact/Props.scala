@@ -38,7 +38,9 @@ trait Props
   /**
     * Reference to the chart factory (Default: chart)
     */
-  var constructorType: js.UndefOr[String] = js.undefined
+  var constructorType: js.UndefOr[
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 78 */ js.Any
+  ] = js.undefined
   /**
     * Properties of the chart container
     */
@@ -78,7 +80,7 @@ object Props {
   /* key */ StringDictionary[js.Any] = null,
     allowChartUpdate: js.UndefOr[Boolean] = js.undefined,
     callback: /* chart */ Chart_ => Unit = null,
-    constructorType: String = null,
+    constructorType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 78 */ js.Any = null,
     containerProps: StringDictionary[js.Any] = null,
     highcharts: TypeofHighcharts = null,
     immutable: js.UndefOr[Boolean] = js.undefined,

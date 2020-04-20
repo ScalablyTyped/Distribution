@@ -14,7 +14,6 @@ object AnonFailure {
   @scala.inline
   def apply(failure: Double, success: Double, total: Double): AnonFailure = {
     val __obj = js.Dynamic.literal(failure = failure.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFailure]
   }
 }

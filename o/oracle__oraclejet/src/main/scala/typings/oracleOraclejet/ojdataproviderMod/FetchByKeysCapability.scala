@@ -14,7 +14,6 @@ object FetchByKeysCapability {
   @scala.inline
   def apply[D](implementation: iteration | lookup): FetchByKeysCapability[D] = {
     val __obj = js.Dynamic.literal(implementation = implementation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FetchByKeysCapability[D]]
   }
 }

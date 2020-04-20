@@ -24,7 +24,6 @@ object DeleteApplicationOutputRequest {
   @scala.inline
   def apply(ApplicationName: ApplicationName, CurrentApplicationVersionId: ApplicationVersionId, OutputId: Id): DeleteApplicationOutputRequest = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], CurrentApplicationVersionId = CurrentApplicationVersionId.asInstanceOf[js.Any], OutputId = OutputId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteApplicationOutputRequest]
   }
 }

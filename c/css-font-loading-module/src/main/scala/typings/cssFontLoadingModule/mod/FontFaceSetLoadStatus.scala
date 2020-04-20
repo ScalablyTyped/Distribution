@@ -12,10 +12,8 @@ trait FontFaceSetLoadStatus extends js.Object
 
 object FontFaceSetLoadStatus {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def loaded: typings.cssFontLoadingModule.cssFontLoadingModuleStrings.loaded = "loaded".asInstanceOf[typings.cssFontLoadingModule.cssFontLoadingModuleStrings.loaded]
   @scala.inline
-  def loaded: typings.cssFontLoadingModule.cssFontLoadingModuleStrings.loaded = this.cast("loaded")
-  @scala.inline
-  def loading: typings.cssFontLoadingModule.cssFontLoadingModuleStrings.loading = this.cast("loading")
+  def loading: typings.cssFontLoadingModule.cssFontLoadingModuleStrings.loading = "loading".asInstanceOf[typings.cssFontLoadingModule.cssFontLoadingModuleStrings.loading]
 }
 

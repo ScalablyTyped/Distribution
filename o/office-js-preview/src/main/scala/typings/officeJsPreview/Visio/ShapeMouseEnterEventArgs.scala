@@ -31,7 +31,6 @@ object ShapeMouseEnterEventArgs {
   @scala.inline
   def apply(pageName: String, shapeName: String): ShapeMouseEnterEventArgs = {
     val __obj = js.Dynamic.literal(pageName = pageName.asInstanceOf[js.Any], shapeName = shapeName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ShapeMouseEnterEventArgs]
   }
 }

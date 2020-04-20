@@ -12,7 +12,6 @@ object I18nextProvider {
   @scala.inline
   def apply(options: js.Any): I18nextProvider = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[I18nextProvider]
   }
 }

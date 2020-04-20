@@ -15,7 +15,6 @@ object AnonLOCAL {
   @scala.inline
   def apply(LOCAL: Persistence, NONE: Persistence, SESSION: Persistence): AnonLOCAL = {
     val __obj = js.Dynamic.literal(LOCAL = LOCAL.asInstanceOf[js.Any], NONE = NONE.asInstanceOf[js.Any], SESSION = SESSION.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLOCAL]
   }
 }

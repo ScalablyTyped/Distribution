@@ -21,7 +21,6 @@ object ChooseVideoSuccessCallbackResult {
   @scala.inline
   def apply(duration: Double, height: Double, size: Double, tempFilePath: String, width: Double): ChooseVideoSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], tempFilePath = tempFilePath.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChooseVideoSuccessCallbackResult]
   }
 }

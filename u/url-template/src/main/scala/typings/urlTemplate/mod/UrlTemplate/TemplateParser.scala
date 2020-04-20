@@ -12,7 +12,6 @@ object TemplateParser {
   @scala.inline
   def apply(parse: String => Template): TemplateParser = {
     val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse))
-  
     __obj.asInstanceOf[TemplateParser]
   }
 }

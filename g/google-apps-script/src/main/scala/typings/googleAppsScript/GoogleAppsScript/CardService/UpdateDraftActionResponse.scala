@@ -48,7 +48,6 @@ object UpdateDraftActionResponse {
   @scala.inline
   def apply(printJson: () => String): UpdateDraftActionResponse = {
     val __obj = js.Dynamic.literal(printJson = js.Any.fromFunction0(printJson))
-  
     __obj.asInstanceOf[UpdateDraftActionResponse]
   }
 }

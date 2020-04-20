@@ -71,7 +71,7 @@ class AnimationGroup protected () extends IDisposable {
   /**
     * returning the list of animatables controlled by this animation group.
     */
-  def animatables(): js.Array[Animatable] = js.native
+  def animatables: js.Array[Animatable] = js.native
   /**
     * Clone the current animation group and returns a copy
     * @param newName defines the name of the new group
@@ -88,7 +88,7 @@ class AnimationGroup protected () extends IDisposable {
   /**
     * Gets the first frame
     */
-  def from(): Double = js.native
+  def from: Double = js.native
   /**
     * Returns the string "AnimationGroup"
     * @returns "AnimationGroup"
@@ -103,15 +103,15 @@ class AnimationGroup protected () extends IDisposable {
   /**
     * Gets a value indicating that the current group is playing
     */
-  def isPlaying(): Boolean = js.native
+  def isPlaying: Boolean = js.native
   /**
     * Define if the animations are started
     */
-  def isStarted(): Boolean = js.native
+  def isStarted: Boolean = js.native
   /**
     * Gets or sets if all animations should loop or not
     */
-  def loopAnimation(): Boolean = js.native
+  def loopAnimation: Boolean = js.native
   def loopAnimation(value: Boolean): js.Any = js.native
   /**
     * This function will normalize every animation in the group to make sure they all go from beginFrame to endFrame
@@ -161,7 +161,7 @@ class AnimationGroup protected () extends IDisposable {
   /**
     * Gets or sets the speed ratio to use for all animations
     */
-  def speedRatio(): Double = js.native
+  def speedRatio: Double = js.native
   /**
     * Gets or sets the speed ratio to use for all animations
     */
@@ -194,11 +194,11 @@ class AnimationGroup protected () extends IDisposable {
   /**
     * Gets the targeted animations for this animation group
     */
-  def targetedAnimations(): js.Array[TargetedAnimation] = js.native
+  def targetedAnimations: js.Array[TargetedAnimation] = js.native
   /**
     * Gets the last frame
     */
-  def to(): Double = js.native
+  def to: Double = js.native
   def toString(fullDetails: Boolean): String = js.native
 }
 

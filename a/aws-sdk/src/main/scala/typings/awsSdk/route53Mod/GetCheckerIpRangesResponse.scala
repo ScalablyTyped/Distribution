@@ -16,7 +16,6 @@ object GetCheckerIpRangesResponse {
   @scala.inline
   def apply(CheckerIpRanges: CheckerIpRanges): GetCheckerIpRangesResponse = {
     val __obj = js.Dynamic.literal(CheckerIpRanges = CheckerIpRanges.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetCheckerIpRangesResponse]
   }
 }

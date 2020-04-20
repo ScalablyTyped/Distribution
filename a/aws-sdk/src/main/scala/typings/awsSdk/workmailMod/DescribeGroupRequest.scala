@@ -20,7 +20,6 @@ object DescribeGroupRequest {
   @scala.inline
   def apply(GroupId: WorkMailIdentifier, OrganizationId: OrganizationId): DescribeGroupRequest = {
     val __obj = js.Dynamic.literal(GroupId = GroupId.asInstanceOf[js.Any], OrganizationId = OrganizationId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeGroupRequest]
   }
 }

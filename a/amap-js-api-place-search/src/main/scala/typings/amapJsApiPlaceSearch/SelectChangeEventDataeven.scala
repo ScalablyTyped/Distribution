@@ -50,7 +50,6 @@ object SelectChangeEventDataeven {
     marker: Marker[_]
   ): SelectChangeEventDataeven = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], infoWindow = infoWindow.asInstanceOf[js.Any], infoWindowContentDom = infoWindowContentDom.asInstanceOf[js.Any], listElement = listElement.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SelectChangeEventDataeven]
   }
 }

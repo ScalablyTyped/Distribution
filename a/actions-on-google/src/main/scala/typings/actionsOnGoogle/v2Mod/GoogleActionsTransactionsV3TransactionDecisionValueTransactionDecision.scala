@@ -16,18 +16,16 @@ trait GoogleActionsTransactionsV3TransactionDecisionValueTransactionDecision ext
 
 object GoogleActionsTransactionsV3TransactionDecisionValueTransactionDecision {
   @scala.inline
-  def CART_CHANGE_REQUESTED: typings.actionsOnGoogle.actionsOnGoogleStrings.CART_CHANGE_REQUESTED = this.cast("CART_CHANGE_REQUESTED")
+  def CART_CHANGE_REQUESTED: typings.actionsOnGoogle.actionsOnGoogleStrings.CART_CHANGE_REQUESTED = "CART_CHANGE_REQUESTED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CART_CHANGE_REQUESTED]
   @scala.inline
-  def DELIVERY_ADDRESS_UPDATED: typings.actionsOnGoogle.actionsOnGoogleStrings.DELIVERY_ADDRESS_UPDATED = this.cast("DELIVERY_ADDRESS_UPDATED")
+  def DELIVERY_ADDRESS_UPDATED: typings.actionsOnGoogle.actionsOnGoogleStrings.DELIVERY_ADDRESS_UPDATED = "DELIVERY_ADDRESS_UPDATED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.DELIVERY_ADDRESS_UPDATED]
   @scala.inline
-  def ORDER_ACCEPTED: typings.actionsOnGoogle.actionsOnGoogleStrings.ORDER_ACCEPTED = this.cast("ORDER_ACCEPTED")
+  def ORDER_ACCEPTED: typings.actionsOnGoogle.actionsOnGoogleStrings.ORDER_ACCEPTED = "ORDER_ACCEPTED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.ORDER_ACCEPTED]
   @scala.inline
-  def ORDER_REJECTED: typings.actionsOnGoogle.actionsOnGoogleStrings.ORDER_REJECTED = this.cast("ORDER_REJECTED")
+  def ORDER_REJECTED: typings.actionsOnGoogle.actionsOnGoogleStrings.ORDER_REJECTED = "ORDER_REJECTED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.ORDER_REJECTED]
   @scala.inline
-  def TRANSACTION_DECISION_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.TRANSACTION_DECISION_UNSPECIFIED = this.cast("TRANSACTION_DECISION_UNSPECIFIED")
+  def TRANSACTION_DECISION_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.TRANSACTION_DECISION_UNSPECIFIED = "TRANSACTION_DECISION_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.TRANSACTION_DECISION_UNSPECIFIED]
   @scala.inline
-  def USER_CANNOT_TRANSACT: typings.actionsOnGoogle.actionsOnGoogleStrings.USER_CANNOT_TRANSACT = this.cast("USER_CANNOT_TRANSACT")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def USER_CANNOT_TRANSACT: typings.actionsOnGoogle.actionsOnGoogleStrings.USER_CANNOT_TRANSACT = "USER_CANNOT_TRANSACT".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.USER_CANNOT_TRANSACT]
 }
 

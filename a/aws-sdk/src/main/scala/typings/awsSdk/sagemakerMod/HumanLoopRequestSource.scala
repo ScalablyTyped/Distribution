@@ -16,7 +16,6 @@ object HumanLoopRequestSource {
   @scala.inline
   def apply(AwsManagedHumanLoopRequestSource: AwsManagedHumanLoopRequestSource): HumanLoopRequestSource = {
     val __obj = js.Dynamic.literal(AwsManagedHumanLoopRequestSource = AwsManagedHumanLoopRequestSource.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HumanLoopRequestSource]
   }
 }

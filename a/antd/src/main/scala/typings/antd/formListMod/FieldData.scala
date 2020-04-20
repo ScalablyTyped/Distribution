@@ -14,7 +14,6 @@ object FieldData {
   @scala.inline
   def apply(fieldKey: Double, key: Double, name: Double): FieldData = {
     val __obj = js.Dynamic.literal(fieldKey = fieldKey.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FieldData]
   }
 }

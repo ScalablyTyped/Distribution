@@ -22,7 +22,6 @@ object DragDropManager {
     getRegistry: () => HandlerRegistry
   ): DragDropManager = {
     val __obj = js.Dynamic.literal(dispatch = js.Any.fromFunction1(dispatch), getActions = js.Any.fromFunction0(getActions), getBackend = js.Any.fromFunction0(getBackend), getMonitor = js.Any.fromFunction0(getMonitor), getRegistry = js.Any.fromFunction0(getRegistry))
-  
     __obj.asInstanceOf[DragDropManager]
   }
 }

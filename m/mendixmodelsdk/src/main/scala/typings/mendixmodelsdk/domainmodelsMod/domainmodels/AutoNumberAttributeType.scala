@@ -30,7 +30,7 @@ class AutoNumberAttributeType protected () extends IntegerAttributeTypeBase {
   @JSName("model")
   var model_FAutoNumberAttributeType: IModel = js.native
   @JSName("containerAsAttribute")
-  def containerAsAttribute_MAutoNumberAttributeType(): Attribute = js.native
+  def containerAsAttribute_MAutoNumberAttributeType: Attribute = js.native
 }
 
 /* static members */

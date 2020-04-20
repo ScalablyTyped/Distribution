@@ -16,7 +16,6 @@ object DescribeExecutionInput {
   @scala.inline
   def apply(executionArn: Arn): DescribeExecutionInput = {
     val __obj = js.Dynamic.literal(executionArn = executionArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeExecutionInput]
   }
 }

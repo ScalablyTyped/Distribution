@@ -18,14 +18,12 @@ trait WdTableFieldSeparator extends js.Object
 
 object WdTableFieldSeparator {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdSeparateByCommas: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdSeparateByCommas: `2` = this.cast(2)
+  def wdSeparateByDefaultListSeparator: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdSeparateByDefaultListSeparator: `3` = this.cast(3)
+  def wdSeparateByParagraphs: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdSeparateByParagraphs: `0` = this.cast(0)
-  @scala.inline
-  def wdSeparateByTabs: `1` = this.cast(1)
+  def wdSeparateByTabs: `1` = 1.asInstanceOf[`1`]
 }
 

@@ -15,7 +15,6 @@ object IOAuthDeauthorizationResponse {
   @scala.inline
   def apply(stripe_user_id: String): IOAuthDeauthorizationResponse = {
     val __obj = js.Dynamic.literal(stripe_user_id = stripe_user_id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IOAuthDeauthorizationResponse]
   }
 }

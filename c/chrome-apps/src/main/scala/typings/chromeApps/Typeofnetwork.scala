@@ -16,7 +16,6 @@ object Typeofnetwork {
     getNetworkInterfaces: js.Function1[/* networkInterfaces */ js.Array[NetworkInterface], Unit] => Unit
   ): Typeofnetwork = {
     val __obj = js.Dynamic.literal(getNetworkInterfaces = js.Any.fromFunction1(getNetworkInterfaces))
-  
     __obj.asInstanceOf[Typeofnetwork]
   }
 }

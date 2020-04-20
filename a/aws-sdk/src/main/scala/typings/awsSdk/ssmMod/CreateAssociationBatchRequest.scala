@@ -16,7 +16,6 @@ object CreateAssociationBatchRequest {
   @scala.inline
   def apply(Entries: CreateAssociationBatchRequestEntries): CreateAssociationBatchRequest = {
     val __obj = js.Dynamic.literal(Entries = Entries.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateAssociationBatchRequest]
   }
 }

@@ -27,7 +27,6 @@ object DefaultMapPanes {
     tooltipPane: HTMLElement
   ): DefaultMapPanes = {
     val __obj = js.Dynamic.literal(mapPane = mapPane.asInstanceOf[js.Any], markerPane = markerPane.asInstanceOf[js.Any], overlayPane = overlayPane.asInstanceOf[js.Any], popupPane = popupPane.asInstanceOf[js.Any], shadowPane = shadowPane.asInstanceOf[js.Any], tilePane = tilePane.asInstanceOf[js.Any], tooltipPane = tooltipPane.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DefaultMapPanes]
   }
 }

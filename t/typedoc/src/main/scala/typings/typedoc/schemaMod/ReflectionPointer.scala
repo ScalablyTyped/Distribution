@@ -14,7 +14,6 @@ object ReflectionPointer {
   @scala.inline
   def apply(id: ModelToObject[Double] | Double): ReflectionPointer = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReflectionPointer]
   }
 }

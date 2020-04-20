@@ -36,7 +36,7 @@ object declarationsMod extends js.Object {
   trait DecoratedClass
     extends // ideally, the return type should just contain Props, not Record<keyof Props, any>. But TS requires to have Base constructors with the same return type.
   Instantiable0[
-          CombinedVueInstance[Vue, js.Object, js.Object, js.Object, Record[String, js.Any]]
+          CombinedVueInstance[Vue, js.Object, js.Object, js.Object, Record[/* keyof object */ String, js.Any]]
         ]
        with Instantiable1[
           (/* args (repeated) */ js.Any) | (/* options */ ComponentOptions[
@@ -47,7 +47,7 @@ object declarationsMod extends js.Object {
             PropsDefinition[DefaultProps], 
             DefaultProps
           ]) | (/* options */ ThisTypedComponentOptionsWithArrayProps[Vue, js.Object, js.Object, js.Object, String]) | (/* options */ ThisTypedComponentOptionsWithRecordProps[Vue, js.Object, js.Object, js.Object, js.Object]), 
-          (CombinedVueInstance[Vue, js.Object, js.Object, js.Object, Record[String, js.Any]]) | Vue
+          (CombinedVueInstance[Vue, js.Object, js.Object, js.Object, Record[/* keyof object */ String, js.Any]]) | Vue
         ] {
     var __decorators__ : js.UndefOr[
         js.Array[
@@ -161,7 +161,7 @@ object declarationsMod extends js.Object {
   trait VueClass[V]
     extends // ideally, the return type should just contain Props, not Record<keyof Props, any>. But TS requires to have Base constructors with the same return type.
   Instantiable0[
-          CombinedVueInstance[Vue, js.Object, js.Object, js.Object, Record[String, js.Any]]
+          CombinedVueInstance[Vue, js.Object, js.Object, js.Object, Record[/* keyof object */ String, js.Any]]
         ]
        with Instantiable1[
           (/* args (repeated) */ js.Any) | (/* options */ ComponentOptions[
@@ -172,7 +172,7 @@ object declarationsMod extends js.Object {
             PropsDefinition[DefaultProps], 
             DefaultProps
           ]) | (/* options */ ThisTypedComponentOptionsWithArrayProps[Vue, js.Object, js.Object, js.Object, String]) | (/* options */ ThisTypedComponentOptionsWithRecordProps[Vue, js.Object, js.Object, js.Object, js.Object]), 
-          (V with Vue) | (CombinedVueInstance[Vue, js.Object, js.Object, js.Object, Record[String, js.Any]])
+          (V with Vue) | (CombinedVueInstance[Vue, js.Object, js.Object, js.Object, Record[/* keyof object */ String, js.Any]])
         ] {
     var config: VueConfiguration = js.native
     var version: String = js.native

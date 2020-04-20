@@ -32,7 +32,6 @@ object AnonLocation {
     viewMode: story | info | settings
   ): AnonLocation = {
     val __obj = js.Dynamic.literal(customQueryParams = customQueryParams.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], selectedPanel = selectedPanel.asInstanceOf[js.Any], storyId = storyId.asInstanceOf[js.Any], viewMode = viewMode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLocation]
   }
 }

@@ -13,14 +13,24 @@ trait DeleteKeyPairRequest extends js.Object {
   /**
     * The name of the key pair.
     */
-  var KeyName: KeyPairName = js.native
+  var KeyName: js.UndefOr[KeyPairName] = js.native
+  /**
+    * The ID of the key pair.
+    */
+  var KeyPairId: js.UndefOr[typings.awsSdk.ec2Mod.KeyPairId] = js.native
 }
 
 object DeleteKeyPairRequest {
   @scala.inline
-  def apply(KeyName: KeyPairName, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DeleteKeyPairRequest = {
-    val __obj = js.Dynamic.literal(KeyName = KeyName.asInstanceOf[js.Any])
+  def apply(
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    KeyName: KeyPairName = null,
+    KeyPairId: KeyPairId = null
+  ): DeleteKeyPairRequest = {
+    val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (KeyName != null) __obj.updateDynamic("KeyName")(KeyName.asInstanceOf[js.Any])
+    if (KeyPairId != null) __obj.updateDynamic("KeyPairId")(KeyPairId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteKeyPairRequest]
   }
 }

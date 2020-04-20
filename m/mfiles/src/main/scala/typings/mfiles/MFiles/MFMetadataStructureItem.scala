@@ -42,38 +42,36 @@ trait MFMetadataStructureItem extends js.Object
 
 object MFMetadataStructureItem {
   @scala.inline
-  def All: `10000` = this.cast(10000)
+  def All: `10000` = 10000.asInstanceOf[`10000`]
   @scala.inline
-  def Class: `3` = this.cast(3)
+  def Class: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def ClassGroup: `9` = this.cast(9)
+  def ClassGroup: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def NamedACL: `6` = this.cast(6)
+  def NamedACL: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def None: `0` = this.cast(0)
+  def None: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def ObjectType: `1` = this.cast(1)
+  def ObjectType: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def PropertyDef: `2` = this.cast(2)
+  def PropertyDef: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def State: `5` = this.cast(5)
+  def State: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def StateTransition: `16` = this.cast(16)
+  def StateTransition: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def User: `7` = this.cast(7)
+  def User: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def UserGroup: `8` = this.cast(8)
+  def UserGroup: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def ValueList: `14` = this.cast(14)
+  def ValueList: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def ValueListItem: `13` = this.cast(13)
+  def ValueListItem: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def VaultEventHandler: `15` = this.cast(15)
+  def VaultEventHandler: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def ViewDef: `10` = this.cast(10)
+  def ViewDef: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def Workflow: `4` = this.cast(4)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Workflow: `4` = 4.asInstanceOf[`4`]
 }
 

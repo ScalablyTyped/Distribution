@@ -12,7 +12,6 @@ object StoriesInsightsFeedResponseBusinessManager {
   @scala.inline
   def apply(stories_unit: StoriesInsightsFeedResponseStoriesUnit): StoriesInsightsFeedResponseBusinessManager = {
     val __obj = js.Dynamic.literal(stories_unit = stories_unit.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StoriesInsightsFeedResponseBusinessManager]
   }
 }

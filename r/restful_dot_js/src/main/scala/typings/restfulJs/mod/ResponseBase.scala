@@ -14,7 +14,6 @@ object ResponseBase {
   @scala.inline
   def apply(config: () => js.Any, headers: () => Headers, status: () => Double): ResponseBase = {
     val __obj = js.Dynamic.literal(config = js.Any.fromFunction0(config), headers = js.Any.fromFunction0(headers), status = js.Any.fromFunction0(status))
-  
     __obj.asInstanceOf[ResponseBase]
   }
 }

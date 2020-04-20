@@ -30,7 +30,7 @@ object fresnelParametersMod extends js.Object {
     /**
       * Define if the fresnel effect is enable or not.
       */
-    def isEnabled(): Boolean = js.native
+    def isEnabled: Boolean = js.native
     def isEnabled(value: Boolean): js.Any = js.native
     /**
       * Serializes the current fresnel parameters to a JSON representation.

@@ -24,7 +24,6 @@ object DynamicDictionaries {
     unknown_dictionary: UnknownDictionary
   ): DynamicDictionaries = {
     val __obj = js.Dynamic.literal(connection_costs = connection_costs.asInstanceOf[js.Any], loadTrie = js.Any.fromFunction2(loadTrie), token_info_dictionary = token_info_dictionary.asInstanceOf[js.Any], trie = trie.asInstanceOf[js.Any], unknown_dictionary = unknown_dictionary.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DynamicDictionaries]
   }
 }

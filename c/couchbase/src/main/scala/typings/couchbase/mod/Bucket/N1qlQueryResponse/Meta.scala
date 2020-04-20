@@ -18,7 +18,6 @@ object Meta {
   @scala.inline
   def apply(requestID: Double): Meta = {
     val __obj = js.Dynamic.literal(requestID = requestID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Meta]
   }
 }

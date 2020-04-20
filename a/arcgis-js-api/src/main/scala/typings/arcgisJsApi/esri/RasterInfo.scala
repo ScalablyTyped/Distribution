@@ -64,6 +64,12 @@ trait RasterInfo extends JSONSupport {
     */
   var extent: Extent
   /**
+    * Raster height (row count) in pixels.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#height)
+    */
+  var height: Double
+  /**
     * Raster histograms return basic name-value pairs for number of bins, min and max bounding values, counts of pixels in each bin.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#histograms)
@@ -82,11 +88,17 @@ trait RasterInfo extends JSONSupport {
     */
   var multidimensionalInfo: js.Any
   /**
+    * The pixel value representing no available information. Can be a number (same value for all bands) or array (specific value for each band).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#noDataValue)
+    */
+  var noDataValue: Double | js.Array[Double]
+  /**
     * Raster pixel size. Specifies the pixel size being identified on the x and y axis. Defaults to the base resolution of the dataset when not specified.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#pixelSize)
     */
-  var pixelSize: Point
+  var pixelSize: RasterInfoPixelSize
   /**
     * Pixel type for the raster data source.
     *
@@ -118,6 +130,12 @@ trait RasterInfo extends JSONSupport {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#statistics)
     */
   var statistics: js.Array[RasterInfoStatistics]
+  /**
+    * Raster width (column count) in pixels.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#width)
+    */
+  var width: Double
 }
 
 @JSGlobal("__esri.RasterInfo")

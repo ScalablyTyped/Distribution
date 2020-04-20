@@ -20,7 +20,6 @@ object UnprocessedAccount {
   @scala.inline
   def apply(AccountId: AccountId, Result: String): UnprocessedAccount = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], Result = Result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnprocessedAccount]
   }
 }

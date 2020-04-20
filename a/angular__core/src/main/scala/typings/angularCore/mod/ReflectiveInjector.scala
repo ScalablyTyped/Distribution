@@ -66,7 +66,7 @@ abstract class ReflectiveInjector () extends Injector {
     * <!-- TODO: Add a link to the section of the user guide talking about hierarchical injection.
     * -->
     */
-  def parent(): Injector | Null = js.native
+  def parent: Injector | Null = js.native
   /**
     * Resolves an array of providers and creates a child injector from those providers.
     *

@@ -53,7 +53,6 @@ object ConditionalPresetCriteriaRule {
     criterion: ConditionalFormatPresetCriterion | Invalid | Blanks | NonBlanks | Errors | NonErrors | Yesterday | Today | Tomorrow | LastSevenDays | LastWeek | ThisWeek | NextWeek | LastMonth | ThisMonth | NextMonth | AboveAverage | BelowAverage | EqualOrAboveAverage | EqualOrBelowAverage | OneStdDevAboveAverage | OneStdDevBelowAverage | TwoStdDevAboveAverage | TwoStdDevBelowAverage | ThreeStdDevAboveAverage | ThreeStdDevBelowAverage | UniqueValues | DuplicateValues
   ): ConditionalPresetCriteriaRule = {
     val __obj = js.Dynamic.literal(criterion = criterion.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConditionalPresetCriteriaRule]
   }
 }

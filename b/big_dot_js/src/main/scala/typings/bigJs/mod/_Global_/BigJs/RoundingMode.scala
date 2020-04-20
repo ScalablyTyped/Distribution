@@ -22,25 +22,23 @@ object RoundingMode {
     * I.e. truncate, no rounding.
     */
   @scala.inline
-  def RoundDown: `0` = this.cast(0)
+  def RoundDown: `0` = 0.asInstanceOf[`0`]
   /**
     * Rounds towards nearest neighbour.
     * If equidistant, rounds towards even neighbour.
     */
   @scala.inline
-  def RoundHalfEven: `2` = this.cast(2)
+  def RoundHalfEven: `2` = 2.asInstanceOf[`2`]
   /**
     * Rounds towards nearest neighbour.
     * If equidistant, rounds away from zero.
     */
   @scala.inline
-  def RoundHalfUp: `1` = this.cast(1)
+  def RoundHalfUp: `1` = 1.asInstanceOf[`1`]
   /**
     * Rounds away from zero.
     */
   @scala.inline
-  def RoundUp: `3` = this.cast(3)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def RoundUp: `3` = 3.asInstanceOf[`3`]
 }
 

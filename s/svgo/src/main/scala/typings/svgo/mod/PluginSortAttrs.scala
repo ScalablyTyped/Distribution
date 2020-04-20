@@ -12,7 +12,6 @@ object PluginSortAttrs {
   @scala.inline
   def apply(sortAttrs: Boolean | js.Object): PluginSortAttrs = {
     val __obj = js.Dynamic.literal(sortAttrs = sortAttrs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PluginSortAttrs]
   }
 }

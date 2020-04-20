@@ -15,7 +15,6 @@ object AnonREAD {
   @scala.inline
   def apply(READ: READ, WRITE: WRITE): AnonREAD = {
     val __obj = js.Dynamic.literal(READ = READ.asInstanceOf[js.Any], WRITE = WRITE.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonREAD]
   }
 }

@@ -108,7 +108,6 @@ object lists {
     unordered_list: js.Any => js.Any
   ): lists = {
     val __obj = js.Dynamic.literal(dictsort = js.Any.fromFunction2(dictsort), dictsortreversed = js.Any.fromFunction2(dictsortreversed), first = js.Any.fromFunction1(first), join = js.Any.fromFunction2(join), length = js.Any.fromFunction1(length), length_is = js.Any.fromFunction2(length_is), random = js.Any.fromFunction1(random), slice = js.Any.fromFunction2(slice), unordered_list = js.Any.fromFunction1(unordered_list))
-  
     __obj.asInstanceOf[lists]
   }
 }

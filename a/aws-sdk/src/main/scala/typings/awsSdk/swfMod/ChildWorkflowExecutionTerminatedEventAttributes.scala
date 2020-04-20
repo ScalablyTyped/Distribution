@@ -33,7 +33,6 @@ object ChildWorkflowExecutionTerminatedEventAttributes {
     workflowType: WorkflowType
   ): ChildWorkflowExecutionTerminatedEventAttributes = {
     val __obj = js.Dynamic.literal(initiatedEventId = initiatedEventId.asInstanceOf[js.Any], startedEventId = startedEventId.asInstanceOf[js.Any], workflowExecution = workflowExecution.asInstanceOf[js.Any], workflowType = workflowType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChildWorkflowExecutionTerminatedEventAttributes]
   }
 }

@@ -20,7 +20,6 @@ object SendOptions {
   @scala.inline
   def apply(key: String, messages: js.Object, topic: String): SendOptions = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SendOptions]
   }
 }

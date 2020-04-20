@@ -17,20 +17,18 @@ trait ColorPickerEvents extends js.Object
 
 object ColorPickerEvents {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def changeColor: typings.bootstrapColorpicker.bootstrapColorpickerStrings.changeColor = "changeColor".asInstanceOf[typings.bootstrapColorpicker.bootstrapColorpickerStrings.changeColor]
   @scala.inline
-  def changeColor: typings.bootstrapColorpicker.bootstrapColorpickerStrings.changeColor = this.cast("changeColor")
+  def create: typings.bootstrapColorpicker.bootstrapColorpickerStrings.create = "create".asInstanceOf[typings.bootstrapColorpicker.bootstrapColorpickerStrings.create]
   @scala.inline
-  def create: typings.bootstrapColorpicker.bootstrapColorpickerStrings.create = this.cast("create")
+  def destroy: typings.bootstrapColorpicker.bootstrapColorpickerStrings.destroy = "destroy".asInstanceOf[typings.bootstrapColorpicker.bootstrapColorpickerStrings.destroy]
   @scala.inline
-  def destroy: typings.bootstrapColorpicker.bootstrapColorpickerStrings.destroy = this.cast("destroy")
+  def disable: typings.bootstrapColorpicker.bootstrapColorpickerStrings.disable = "disable".asInstanceOf[typings.bootstrapColorpicker.bootstrapColorpickerStrings.disable]
   @scala.inline
-  def disable: typings.bootstrapColorpicker.bootstrapColorpickerStrings.disable = this.cast("disable")
+  def enable: typings.bootstrapColorpicker.bootstrapColorpickerStrings.enable = "enable".asInstanceOf[typings.bootstrapColorpicker.bootstrapColorpickerStrings.enable]
   @scala.inline
-  def enable: typings.bootstrapColorpicker.bootstrapColorpickerStrings.enable = this.cast("enable")
+  def hidePicker: typings.bootstrapColorpicker.bootstrapColorpickerStrings.hidePicker = "hidePicker".asInstanceOf[typings.bootstrapColorpicker.bootstrapColorpickerStrings.hidePicker]
   @scala.inline
-  def hidePicker: typings.bootstrapColorpicker.bootstrapColorpickerStrings.hidePicker = this.cast("hidePicker")
-  @scala.inline
-  def showPicker: typings.bootstrapColorpicker.bootstrapColorpickerStrings.showPicker = this.cast("showPicker")
+  def showPicker: typings.bootstrapColorpicker.bootstrapColorpickerStrings.showPicker = "showPicker".asInstanceOf[typings.bootstrapColorpicker.bootstrapColorpickerStrings.showPicker]
 }
 

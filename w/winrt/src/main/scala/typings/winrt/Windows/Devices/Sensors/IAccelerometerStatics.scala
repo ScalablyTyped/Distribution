@@ -12,7 +12,6 @@ object IAccelerometerStatics {
   @scala.inline
   def apply(getDefault: () => Accelerometer): IAccelerometerStatics = {
     val __obj = js.Dynamic.literal(getDefault = js.Any.fromFunction0(getDefault))
-  
     __obj.asInstanceOf[IAccelerometerStatics]
   }
 }

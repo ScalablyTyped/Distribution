@@ -14,7 +14,6 @@ object AnonDerived {
   @scala.inline
   def apply(custom: Double, derived: Double, system: Double): AnonDerived = {
     val __obj = js.Dynamic.literal(custom = custom.asInstanceOf[js.Any], derived = derived.asInstanceOf[js.Any], system = system.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDerived]
   }
 }

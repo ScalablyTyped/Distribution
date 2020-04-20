@@ -13,7 +13,6 @@ object CordovaPluginsFileOpener2Result {
   @scala.inline
   def apply(message: String, status: Double): CordovaPluginsFileOpener2Result = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CordovaPluginsFileOpener2Result]
   }
 }

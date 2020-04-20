@@ -20,7 +20,6 @@ object AlgorithmValidationSpecification {
   @scala.inline
   def apply(ValidationProfiles: AlgorithmValidationProfiles, ValidationRole: RoleArn): AlgorithmValidationSpecification = {
     val __obj = js.Dynamic.literal(ValidationProfiles = ValidationProfiles.asInstanceOf[js.Any], ValidationRole = ValidationRole.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AlgorithmValidationSpecification]
   }
 }

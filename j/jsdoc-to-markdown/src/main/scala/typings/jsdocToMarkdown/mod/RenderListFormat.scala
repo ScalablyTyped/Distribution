@@ -12,10 +12,8 @@ trait RenderListFormat extends js.Object
 
 object RenderListFormat {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def list: typings.jsdocToMarkdown.jsdocToMarkdownStrings.list = "list".asInstanceOf[typings.jsdocToMarkdown.jsdocToMarkdownStrings.list]
   @scala.inline
-  def list: typings.jsdocToMarkdown.jsdocToMarkdownStrings.list = this.cast("list")
-  @scala.inline
-  def table: typings.jsdocToMarkdown.jsdocToMarkdownStrings.table = this.cast("table")
+  def table: typings.jsdocToMarkdown.jsdocToMarkdownStrings.table = "table".asInstanceOf[typings.jsdocToMarkdown.jsdocToMarkdownStrings.table]
 }
 

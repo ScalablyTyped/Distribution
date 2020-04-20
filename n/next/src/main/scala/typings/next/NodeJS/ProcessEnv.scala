@@ -15,7 +15,6 @@ object ProcessEnv {
   @scala.inline
   def apply(NODE_ENV: development | production | test): ProcessEnv = {
     val __obj = js.Dynamic.literal(NODE_ENV = NODE_ENV.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProcessEnv]
   }
 }

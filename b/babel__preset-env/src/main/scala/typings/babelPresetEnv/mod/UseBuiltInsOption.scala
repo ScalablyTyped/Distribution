@@ -13,12 +13,10 @@ trait UseBuiltInsOption extends js.Object
 
 object UseBuiltInsOption {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def entry: typings.babelPresetEnv.babelPresetEnvStrings.entry = "entry".asInstanceOf[typings.babelPresetEnv.babelPresetEnvStrings.entry]
   @scala.inline
-  def entry: typings.babelPresetEnv.babelPresetEnvStrings.entry = this.cast("entry")
+  def `false`: typings.babelPresetEnv.babelPresetEnvBooleans.`false` = false.asInstanceOf[typings.babelPresetEnv.babelPresetEnvBooleans.`false`]
   @scala.inline
-  def `false`: typings.babelPresetEnv.babelPresetEnvBooleans.`false` = this.cast(false)
-  @scala.inline
-  def usage: typings.babelPresetEnv.babelPresetEnvStrings.usage = this.cast("usage")
+  def usage: typings.babelPresetEnv.babelPresetEnvStrings.usage = "usage".asInstanceOf[typings.babelPresetEnv.babelPresetEnvStrings.usage]
 }
 

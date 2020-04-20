@@ -13,7 +13,6 @@ object Discriminator {
   @scala.inline
   def apply(property: String, subTypes: js.Array[JsonSubType]): Discriminator = {
     val __obj = js.Dynamic.literal(property = property.asInstanceOf[js.Any], subTypes = subTypes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Discriminator]
   }
 }

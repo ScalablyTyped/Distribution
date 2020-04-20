@@ -20,7 +20,6 @@ object DistributionConfigWithTags {
   @scala.inline
   def apply(DistributionConfig: DistributionConfig, Tags: Tags): DistributionConfigWithTags = {
     val __obj = js.Dynamic.literal(DistributionConfig = DistributionConfig.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DistributionConfigWithTags]
   }
 }

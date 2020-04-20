@@ -20,7 +20,6 @@ object Return {
   @scala.inline
   def apply(data: js.Any, layout: String | js.Array[String], path: String): Return = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Return]
   }
 }

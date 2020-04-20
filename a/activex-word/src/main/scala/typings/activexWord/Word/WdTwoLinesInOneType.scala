@@ -22,18 +22,16 @@ trait WdTwoLinesInOneType extends js.Object
 
 object WdTwoLinesInOneType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdTwoLinesInOneAngleBrackets: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdTwoLinesInOneAngleBrackets: `4` = this.cast(4)
+  def wdTwoLinesInOneCurlyBrackets: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdTwoLinesInOneCurlyBrackets: `5` = this.cast(5)
+  def wdTwoLinesInOneNoBrackets: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdTwoLinesInOneNoBrackets: `1` = this.cast(1)
+  def wdTwoLinesInOneNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdTwoLinesInOneNone: `0` = this.cast(0)
+  def wdTwoLinesInOneParentheses: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdTwoLinesInOneParentheses: `2` = this.cast(2)
-  @scala.inline
-  def wdTwoLinesInOneSquareBrackets: `3` = this.cast(3)
+  def wdTwoLinesInOneSquareBrackets: `3` = 3.asInstanceOf[`3`]
 }
 

@@ -13,7 +13,6 @@ object SignatureHelpResult {
   @scala.inline
   def apply(dispose: () => Unit, value: SignatureHelp): SignatureHelpResult = {
     val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SignatureHelpResult]
   }
 }

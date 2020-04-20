@@ -14,7 +14,6 @@ object AnonRTRIM {
   @scala.inline
   def apply(LOWER: Column[String] => Column[String], RTRIM: Column[String] => Column[String]): AnonRTRIM = {
     val __obj = js.Dynamic.literal(LOWER = js.Any.fromFunction1(LOWER), RTRIM = js.Any.fromFunction1(RTRIM))
-  
     __obj.asInstanceOf[AnonRTRIM]
   }
 }

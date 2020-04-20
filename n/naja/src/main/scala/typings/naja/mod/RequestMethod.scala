@@ -15,16 +15,14 @@ trait RequestMethod extends js.Object
 
 object RequestMethod {
   @scala.inline
-  def DELETE: typings.naja.najaStrings.DELETE = this.cast("DELETE")
+  def DELETE: typings.naja.najaStrings.DELETE = "DELETE".asInstanceOf[typings.naja.najaStrings.DELETE]
   @scala.inline
-  def GET: typings.naja.najaStrings.GET = this.cast("GET")
+  def GET: typings.naja.najaStrings.GET = "GET".asInstanceOf[typings.naja.najaStrings.GET]
   @scala.inline
-  def PATCH: typings.naja.najaStrings.PATCH = this.cast("PATCH")
+  def PATCH: typings.naja.najaStrings.PATCH = "PATCH".asInstanceOf[typings.naja.najaStrings.PATCH]
   @scala.inline
-  def POST: typings.naja.najaStrings.POST = this.cast("POST")
+  def POST: typings.naja.najaStrings.POST = "POST".asInstanceOf[typings.naja.najaStrings.POST]
   @scala.inline
-  def PUT: typings.naja.najaStrings.PUT = this.cast("PUT")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def PUT: typings.naja.najaStrings.PUT = "PUT".asInstanceOf[typings.naja.najaStrings.PUT]
 }
 

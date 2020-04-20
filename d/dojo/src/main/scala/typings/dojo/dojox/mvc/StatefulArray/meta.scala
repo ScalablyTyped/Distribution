@@ -20,7 +20,6 @@ object meta {
   @scala.inline
   def apply(bases: js.Array[_]): meta = {
     val __obj = js.Dynamic.literal(bases = bases.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[meta]
   }
 }

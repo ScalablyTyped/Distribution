@@ -15,16 +15,14 @@ trait ProxyTypes extends js.Object
 
 object ProxyTypes {
   @scala.inline
-  def autodetect: typings.webdriver.webdriverStrings.autodetect = this.cast("autodetect")
+  def autodetect: typings.webdriver.webdriverStrings.autodetect = "autodetect".asInstanceOf[typings.webdriver.webdriverStrings.autodetect]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def manual: typings.webdriver.webdriverStrings.manual = "manual".asInstanceOf[typings.webdriver.webdriverStrings.manual]
   @scala.inline
-  def manual: typings.webdriver.webdriverStrings.manual = this.cast("manual")
+  def noproxy: typings.webdriver.webdriverStrings.noproxy = "noproxy".asInstanceOf[typings.webdriver.webdriverStrings.noproxy]
   @scala.inline
-  def noproxy: typings.webdriver.webdriverStrings.noproxy = this.cast("noproxy")
+  def pac: typings.webdriver.webdriverStrings.pac = "pac".asInstanceOf[typings.webdriver.webdriverStrings.pac]
   @scala.inline
-  def pac: typings.webdriver.webdriverStrings.pac = this.cast("pac")
-  @scala.inline
-  def system: typings.webdriver.webdriverStrings.system = this.cast("system")
+  def system: typings.webdriver.webdriverStrings.system = "system".asInstanceOf[typings.webdriver.webdriverStrings.system]
 }
 

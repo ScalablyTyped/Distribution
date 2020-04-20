@@ -6,6 +6,10 @@ import typings.ember.mod.default.Map
 import typings.emberData.AnonAdapterOptions
 import typings.emberData.AnonIncludeId
 import typings.emberData.TypeofModel
+import typings.emberData.emberDataStrings.boolean
+import typings.emberData.emberDataStrings.date
+import typings.emberData.emberDataStrings.number
+import typings.emberData.emberDataStrings.string
 import typings.emberData.mod.AttributeMeta
 import typings.emberData.mod.ChangedAttributes
 import typings.emberData.mod.ModelKeys
@@ -244,7 +248,7 @@ object Model extends js.Object {
     * Represents the model's class name as a string. This can be used to look up the model's class name through
     * `DS.Store`'s modelFor method.
     */
-  var modelName: String = js.native
+  var modelName: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String = js.native
   /**
     * An array of types directly related to a model. Each type will be
     * included once, regardless of the number of relationships it has with
@@ -308,18 +312,28 @@ object Model extends js.Object {
     * the passed function on each attribute. Note the callback will not be
     * called for any attributes that do not have an transformation type.
     */
-  def eachTransformedAttribute[Class /* <: TypeofModel */](callback: js.Function2[/* name */ ModelKeys[InstanceType[Class]], /* type */ String, Unit]): Unit = js.native
   def eachTransformedAttribute[Class /* <: TypeofModel */](
-    callback: js.Function2[/* name */ ModelKeys[InstanceType[Class]], /* type */ String, Unit],
+    callback: js.Function2[
+      /* name */ ModelKeys[InstanceType[Class]], 
+      /* type */ string | boolean | number | date, 
+      Unit
+    ]
+  ): Unit = js.native
+  def eachTransformedAttribute[Class /* <: TypeofModel */](
+    callback: js.Function2[
+      /* name */ ModelKeys[InstanceType[Class]], 
+      /* type */ string | boolean | number | date, 
+      Unit
+    ],
     binding: js.Any
   ): Unit = js.native
   /**
     * Find the relationship which is the inverse of the one asked for.
     */
-  def inverseFor[K /* <: String */](name: K, store: Store): js.Object = js.native
+  def inverseFor[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](name: K, store: Store): js.Object = js.native
   /**
     * For a given relationship name, returns the model type of the relationship.
     */
-  def typeForRelationship[K /* <: String */](name: K, store: Store): /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any = js.native
+  def typeForRelationship[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](name: K, store: Store): /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any = js.native
 }
 

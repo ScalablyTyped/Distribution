@@ -22,7 +22,6 @@ object RemarketingListSharesCollection {
     update: (RemarketingListShare, String) => RemarketingListShare
   ): RemarketingListSharesCollection = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get), patch = js.Any.fromFunction3(patch), update = js.Any.fromFunction2(update))
-  
     __obj.asInstanceOf[RemarketingListSharesCollection]
   }
 }

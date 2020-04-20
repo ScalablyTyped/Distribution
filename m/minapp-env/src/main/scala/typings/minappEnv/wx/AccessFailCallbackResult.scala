@@ -16,7 +16,6 @@ object AccessFailCallbackResult {
   @scala.inline
   def apply(errMsg: String): AccessFailCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AccessFailCallbackResult]
   }
 }

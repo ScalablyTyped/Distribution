@@ -13,7 +13,6 @@ object TypeofCodeStarconnections {
   @scala.inline
   def apply(Types: TypeofCodeStarconnections): TypeofCodeStarconnections = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofCodeStarconnections]
   }
 }

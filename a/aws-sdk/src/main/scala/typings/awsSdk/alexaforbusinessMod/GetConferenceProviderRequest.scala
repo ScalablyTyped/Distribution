@@ -16,7 +16,6 @@ object GetConferenceProviderRequest {
   @scala.inline
   def apply(ConferenceProviderArn: Arn): GetConferenceProviderRequest = {
     val __obj = js.Dynamic.literal(ConferenceProviderArn = ConferenceProviderArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetConferenceProviderRequest]
   }
 }

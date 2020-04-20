@@ -13,12 +13,10 @@ trait GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtensionPurchaseLocati
 
 object GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtensionPurchaseLocationType {
   @scala.inline
-  def INSTORE_PURCHASE: typings.actionsOnGoogle.actionsOnGoogleStrings.INSTORE_PURCHASE = this.cast("INSTORE_PURCHASE")
+  def INSTORE_PURCHASE: typings.actionsOnGoogle.actionsOnGoogleStrings.INSTORE_PURCHASE = "INSTORE_PURCHASE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.INSTORE_PURCHASE]
   @scala.inline
-  def ONLINE_PURCHASE: typings.actionsOnGoogle.actionsOnGoogleStrings.ONLINE_PURCHASE = this.cast("ONLINE_PURCHASE")
+  def ONLINE_PURCHASE: typings.actionsOnGoogle.actionsOnGoogleStrings.ONLINE_PURCHASE = "ONLINE_PURCHASE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.ONLINE_PURCHASE]
   @scala.inline
-  def UNSPECIFIED_LOCATION: typings.actionsOnGoogle.actionsOnGoogleStrings.UNSPECIFIED_LOCATION = this.cast("UNSPECIFIED_LOCATION")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UNSPECIFIED_LOCATION: typings.actionsOnGoogle.actionsOnGoogleStrings.UNSPECIFIED_LOCATION = "UNSPECIFIED_LOCATION".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.UNSPECIFIED_LOCATION]
 }
 

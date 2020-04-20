@@ -24,7 +24,6 @@ object AnonBaseTime {
     travelTime: Double
   ): AnonBaseTime = {
     val __obj = js.Dynamic.literal(baseTime = baseTime.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], trafficTime = trafficTime.asInstanceOf[js.Any], travelTime = travelTime.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBaseTime]
   }
 }

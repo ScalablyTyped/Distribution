@@ -12,10 +12,8 @@ trait GoogleActionsV2UiElementsOpenUrlActionUrlTypeHint extends js.Object
 
 object GoogleActionsV2UiElementsOpenUrlActionUrlTypeHint {
   @scala.inline
-  def AMP_CONTENT: typings.actionsOnGoogle.actionsOnGoogleStrings.AMP_CONTENT = this.cast("AMP_CONTENT")
+  def AMP_CONTENT: typings.actionsOnGoogle.actionsOnGoogleStrings.AMP_CONTENT = "AMP_CONTENT".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.AMP_CONTENT]
   @scala.inline
-  def URL_TYPE_HINT_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.URL_TYPE_HINT_UNSPECIFIED = this.cast("URL_TYPE_HINT_UNSPECIFIED")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def URL_TYPE_HINT_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.URL_TYPE_HINT_UNSPECIFIED = "URL_TYPE_HINT_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.URL_TYPE_HINT_UNSPECIFIED]
 }
 

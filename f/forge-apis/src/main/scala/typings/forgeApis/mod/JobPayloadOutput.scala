@@ -12,7 +12,6 @@ object JobPayloadOutput {
   @scala.inline
   def apply(formats: js.Array[JobPayloadItem]): JobPayloadOutput = {
     val __obj = js.Dynamic.literal(formats = formats.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JobPayloadOutput]
   }
 }

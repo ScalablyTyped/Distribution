@@ -15,7 +15,6 @@ object Impl {
   @scala.inline
   def apply(determineTitle: js.Array[_] => String): Impl = {
     val __obj = js.Dynamic.literal(determineTitle = js.Any.fromFunction1(determineTitle))
-  
     __obj.asInstanceOf[Impl]
   }
 }

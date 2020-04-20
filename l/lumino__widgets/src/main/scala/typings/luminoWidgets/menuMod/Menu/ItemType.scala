@@ -16,12 +16,10 @@ trait ItemType extends js.Object
 
 object ItemType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def command: typings.luminoWidgets.luminoWidgetsStrings.command = "command".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.command]
   @scala.inline
-  def command: typings.luminoWidgets.luminoWidgetsStrings.command = this.cast("command")
+  def separator: typings.luminoWidgets.luminoWidgetsStrings.separator = "separator".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.separator]
   @scala.inline
-  def separator: typings.luminoWidgets.luminoWidgetsStrings.separator = this.cast("separator")
-  @scala.inline
-  def submenu: typings.luminoWidgets.luminoWidgetsStrings.submenu = this.cast("submenu")
+  def submenu: typings.luminoWidgets.luminoWidgetsStrings.submenu = "submenu".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.submenu]
 }
 

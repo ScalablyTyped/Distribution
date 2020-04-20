@@ -23,7 +23,6 @@ object FancyBoxFullScreen {
     toggle: HTMLElement => Unit
   ): FancyBoxFullScreen = {
     val __obj = js.Dynamic.literal(enabled = js.Any.fromFunction0(enabled), exit = js.Any.fromFunction0(exit), isFullscreen = js.Any.fromFunction0(isFullscreen), request = js.Any.fromFunction1(request), toggle = js.Any.fromFunction1(toggle))
-  
     __obj.asInstanceOf[FancyBoxFullScreen]
   }
 }

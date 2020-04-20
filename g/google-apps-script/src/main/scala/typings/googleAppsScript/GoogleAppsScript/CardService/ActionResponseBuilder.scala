@@ -25,7 +25,6 @@ object ActionResponseBuilder {
     setStateChanged: Boolean => ActionResponseBuilder
   ): ActionResponseBuilder = {
     val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), setNavigation = js.Any.fromFunction1(setNavigation), setNotification = js.Any.fromFunction1(setNotification), setOpenLink = js.Any.fromFunction1(setOpenLink), setStateChanged = js.Any.fromFunction1(setStateChanged))
-  
     __obj.asInstanceOf[ActionResponseBuilder]
   }
 }

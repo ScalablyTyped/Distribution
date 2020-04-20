@@ -19,16 +19,14 @@ trait TransitMode extends js.Object
 
 object TransitMode {
   @scala.inline
-  def bus: bus_ = this.cast("bus")
+  def bus: bus_ = "bus".asInstanceOf[bus_]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def rail: rail_ = "rail".asInstanceOf[rail_]
   @scala.inline
-  def rail: rail_ = this.cast("rail")
+  def subway: subway_ = "subway".asInstanceOf[subway_]
   @scala.inline
-  def subway: subway_ = this.cast("subway")
+  def train: typings.googleMaps.googleMapsStrings.train = "train".asInstanceOf[typings.googleMaps.googleMapsStrings.train]
   @scala.inline
-  def train: typings.googleMaps.googleMapsStrings.train = this.cast("train")
-  @scala.inline
-  def tram: tram_ = this.cast("tram")
+  def tram: tram_ = "tram".asInstanceOf[tram_]
 }
 

@@ -24,7 +24,6 @@ object UnlinkIdentityInput {
   @scala.inline
   def apply(IdentityId: IdentityId, Logins: LoginsMap, LoginsToRemove: LoginsList): UnlinkIdentityInput = {
     val __obj = js.Dynamic.literal(IdentityId = IdentityId.asInstanceOf[js.Any], Logins = Logins.asInstanceOf[js.Any], LoginsToRemove = LoginsToRemove.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnlinkIdentityInput]
   }
 }

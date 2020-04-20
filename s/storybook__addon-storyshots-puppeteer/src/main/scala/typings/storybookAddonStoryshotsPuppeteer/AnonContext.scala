@@ -14,7 +14,6 @@ object AnonContext {
   @scala.inline
   def apply(context: Context, image: String): AnonContext = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonContext]
   }
 }

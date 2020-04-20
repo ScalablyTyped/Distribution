@@ -23,7 +23,6 @@ object IDefaults {
     selfClosing: js.Array[String]
   ): IDefaults = {
     val __obj = js.Dynamic.literal(allowedAttributes = allowedAttributes.asInstanceOf[js.Any], allowedSchemes = allowedSchemes.asInstanceOf[js.Any], allowedSchemesByTag = allowedSchemesByTag.asInstanceOf[js.Any], allowedTags = allowedTags.asInstanceOf[js.Any], selfClosing = selfClosing.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDefaults]
   }
 }

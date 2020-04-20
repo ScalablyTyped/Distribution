@@ -16,7 +16,6 @@ object PurchaseProvisionedCapacityInput {
   @scala.inline
   def apply(accountId: String): PurchaseProvisionedCapacityInput = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PurchaseProvisionedCapacityInput]
   }
 }

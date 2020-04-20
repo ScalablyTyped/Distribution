@@ -18,7 +18,6 @@ object IssuesAddLabelsParams {
   @scala.inline
   def apply(issue_number: Double, labels: js.Array[String], owner: String, repo: String): IssuesAddLabelsParams = {
     val __obj = js.Dynamic.literal(issue_number = issue_number.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IssuesAddLabelsParams]
   }
 }

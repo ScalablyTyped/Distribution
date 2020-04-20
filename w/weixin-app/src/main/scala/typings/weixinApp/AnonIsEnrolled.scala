@@ -14,7 +14,6 @@ object AnonIsEnrolled {
   @scala.inline
   def apply(errMsg: String, isEnrolled: Boolean): AnonIsEnrolled = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], isEnrolled = isEnrolled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsEnrolled]
   }
 }

@@ -1,7 +1,7 @@
 package typings.chromeApps.chrome.system.display
 
 import typings.chromeApps.chromeAppsStrings.mixed
-import typings.chromeApps.chromeAppsStrings.normal
+import typings.chromeApps.chromeAppsStrings.normal_
 import typings.chromeApps.chromeAppsStrings.off
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,12 +17,12 @@ trait MirrorModeInfo extends js.Object {
     * **mixed**
     * The specified source display will be mirrored to the provided destination displays. All other connected displays will be extended.
     */
-  var mode: js.UndefOr[off | normal | mixed] = js.undefined
+  var mode: js.UndefOr[off | normal_ | mixed] = js.undefined
 }
 
 object MirrorModeInfo {
   @scala.inline
-  def apply(mode: off | normal | mixed = null): MirrorModeInfo = {
+  def apply(mode: off | normal_ | mixed = null): MirrorModeInfo = {
     val __obj = js.Dynamic.literal()
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[MirrorModeInfo]

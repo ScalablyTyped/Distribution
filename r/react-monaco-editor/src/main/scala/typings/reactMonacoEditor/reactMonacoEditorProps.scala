@@ -10,7 +10,7 @@ trait reactMonacoEditorProps {
   def MonacoDiffEditorProps: typings.reactMonacoEditor.mod.MonacoDiffEditorProps.type = typings.reactMonacoEditor.mod.MonacoDiffEditorProps
   type MonacoDiffEditorProps = typings.reactMonacoEditor.mod.MonacoDiffEditorProps
   @scala.inline
-  def ReactMonacoEditorProps: MonacoEditorProps.type = typings.reactMonacoEditor.mod.MonacoEditorProps
+  def ReactMonacoEditorProps: MonacoEditorProps.type = MonacoEditorProps
   type ReactMonacoEditorProps = MonacoEditorProps
 }
 

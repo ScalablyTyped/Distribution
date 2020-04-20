@@ -20,9 +20,10 @@ package object mod {
   ]) with typings.algoliaClientCommon.AnonHeaders
   type CreateClient[TClient, TOptions] = js.Function1[
     /* options */ TOptions with (typings.algoliaClientCommon.AnonMethods[
-      org.scalablytyped.runtime.StringDictionary[js.Function1[/* base */ TClient, js.Function1[/* args */ _, _]]]
+      org.scalablytyped.runtime.StringDictionary[js.Function1[/* base */ TClient, js.Function1[/* args */ _, _]]], 
+      TClient
     ]), 
-    TClient with typings.algoliaClientCommon.algoliaClientCommonStrings.CreateClient with js.Any
+    TClient with typings.algoliaClientCommon.algoliaClientCommonStrings.CreateClient with org.scalablytyped.runtime.TopLevel[js.Any]
   ]
   type Wait[TResponse] = js.Function2[
     /* response */ TResponse, 

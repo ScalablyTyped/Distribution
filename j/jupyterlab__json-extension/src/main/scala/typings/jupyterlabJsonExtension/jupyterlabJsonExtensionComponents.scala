@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object jupyterlabJsonExtensionComponents extends jupyterlabJsonExtensionProps {
   @scala.inline
-  def Component: ComponentType[ComponentProps] = js.constructorOf[typings.jupyterlabJsonExtension.componentMod.Component].asInstanceOf[typings.react.mod.ComponentType[ComponentProps]]
+  def Component: ComponentType[ComponentProps] = js.constructorOf[typings.jupyterlabJsonExtension.componentMod.Component].asInstanceOf[ComponentType[ComponentProps]]
 }
 

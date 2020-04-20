@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactRangesliderProps {
   @scala.inline
-  def ReactRangesliderProps: SliderProps.type = typings.reactRangeslider.mod.SliderProps
+  def ReactRangesliderProps: SliderProps.type = SliderProps
   type ReactRangesliderProps = SliderProps
 }
 

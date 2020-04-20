@@ -23,7 +23,6 @@ object IBgiframe {
     s: ISettings
   ): IBgiframe = {
     val __obj = js.Dynamic.literal(createIframe = js.Any.fromFunction0(createIframe), fire = js.Any.fromFunction1(fire), getIframe = js.Any.fromFunction1(getIframe), prop = js.Any.fromFunction1(prop), s = s.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IBgiframe]
   }
 }

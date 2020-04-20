@@ -21,7 +21,6 @@ object ClassifierXmlClassifier {
   @scala.inline
   def apply(classification: Input[String], rowTag: Input[String]): ClassifierXmlClassifier = {
     val __obj = js.Dynamic.literal(classification = classification.asInstanceOf[js.Any], rowTag = rowTag.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClassifierXmlClassifier]
   }
 }

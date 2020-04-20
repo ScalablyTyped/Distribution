@@ -20,7 +20,6 @@ object ThrottledSaveDrainOptions {
     started: Double
   ): ThrottledSaveDrainOptions = {
     val __obj = js.Dynamic.literal(recursiveWait = recursiveWait.asInstanceOf[js.Any], recursiveWaitLimit = recursiveWaitLimit.asInstanceOf[js.Any], recursiveWaitLimitDuration = recursiveWaitLimitDuration.asInstanceOf[js.Any], started = started.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ThrottledSaveDrainOptions]
   }
 }

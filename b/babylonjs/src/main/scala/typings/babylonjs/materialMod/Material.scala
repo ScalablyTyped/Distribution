@@ -252,7 +252,7 @@ class Material protected () extends IAnimatable {
   /**
     * Gets the alpha value of the material
     */
-  def alpha(): Double = js.native
+  def alpha: Double = js.native
   /**
     * Sets the alpha value of the material
     */
@@ -260,7 +260,7 @@ class Material protected () extends IAnimatable {
   /**
     * Gets the value of the alpha mode
     */
-  def alphaMode(): Double = js.native
+  def alphaMode: Double = js.native
   /**
     * Sets the value of the alpha mode.
     *
@@ -283,7 +283,7 @@ class Material protected () extends IAnimatable {
   /**
     * Gets the back-face culling state
     */
-  def backFaceCulling(): Boolean = js.native
+  def backFaceCulling: Boolean = js.native
   /**
     * Sets the back-face culling state
     */
@@ -342,7 +342,7 @@ class Material protected () extends IAnimatable {
   /**
     * Gets the material fill mode
     */
-  def fillMode(): Double = js.native
+  def fillMode: Double = js.native
   /**
     * Sets the material fill mode
     */
@@ -350,7 +350,7 @@ class Material protected () extends IAnimatable {
   /**
     * Gets the value of the fog enabled state
     */
-  def fogEnabled(): Boolean = js.native
+  def fogEnabled: Boolean = js.native
   /**
     * Sets the state for enabling fog
     */
@@ -420,7 +420,7 @@ class Material protected () extends IAnimatable {
   /**
     * Gets a boolean indicating that current material needs to register RTT
     */
-  def hasRenderTargetTextures(): Boolean = js.native
+  def hasRenderTargetTextures: Boolean = js.native
   /**
     * Specifies if the material uses a texture
     * @param texture defines the texture to check against the material
@@ -430,7 +430,7 @@ class Material protected () extends IAnimatable {
   /**
     * Specifies if updates for the material been locked
     */
-  def isFrozen(): Boolean = js.native
+  def isFrozen: Boolean = js.native
   /**
     * Specifies if the material is ready to be used
     * @param mesh defines the mesh to check
@@ -477,7 +477,7 @@ class Material protected () extends IAnimatable {
   /**
     * Gets the depth pre-pass value
     */
-  def needDepthPrePass(): Boolean = js.native
+  def needDepthPrePass: Boolean = js.native
   /**
     * Sets the need depth pre-pass value
     */
@@ -489,7 +489,7 @@ class Material protected () extends IAnimatable {
   /**
     * An event triggered when the material is bound
     */
-  def onBindObservable(): Observable[AbstractMesh] = js.native
+  def onBindObservable: Observable[AbstractMesh] = js.native
   /**
     * Called during a dispose event
     */
@@ -497,11 +497,11 @@ class Material protected () extends IAnimatable {
   /**
     * An event triggered when the material is unbound
     */
-  def onUnBindObservable(): Observable[Material] = js.native
+  def onUnBindObservable: Observable[Material] = js.native
   /**
     * Gets the value specifying if point clouds are enabled
     */
-  def pointsCloud(): Boolean = js.native
+  def pointsCloud: Boolean = js.native
   /**
     * Sets the state of point cloud mode
     */
@@ -523,7 +523,7 @@ class Material protected () extends IAnimatable {
   /**
     * Gets a value specifying if wireframe mode is enabled
     */
-  def wireframe(): Boolean = js.native
+  def wireframe: Boolean = js.native
   /**
     * Sets the state of wireframe mode
     */

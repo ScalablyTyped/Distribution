@@ -13,7 +13,6 @@ object PrimaryService {
   @scala.inline
   def apply(characteristics: js.Array[Characteristic], uuid: String): PrimaryService = {
     val __obj = js.Dynamic.literal(characteristics = characteristics.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PrimaryService]
   }
 }

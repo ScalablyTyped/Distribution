@@ -153,7 +153,7 @@ object semanticUiCheckboxStrings {
   sealed trait verbose extends js.Object
   
   @scala.inline
-  def `attach events`: `attach events` = "attach events".asInstanceOf[`attach events`]
+  def `attach events`: `attach events` = ("attach events").asInstanceOf[`attach events`]
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
@@ -165,9 +165,9 @@ object semanticUiCheckboxStrings {
   @scala.inline
   def beforeUnchecked: beforeUnchecked = "beforeUnchecked".asInstanceOf[beforeUnchecked]
   @scala.inline
-  def `can change`: `can change` = "can change".asInstanceOf[`can change`]
+  def `can change`: `can change` = ("can change").asInstanceOf[`can change`]
   @scala.inline
-  def `can uncheck`: `can uncheck` = "can uncheck".asInstanceOf[`can uncheck`]
+  def `can uncheck`: `can uncheck` = ("can uncheck").asInstanceOf[`can uncheck`]
   @scala.inline
   def check: check = "check".asInstanceOf[check]
   @scala.inline
@@ -187,11 +187,11 @@ object semanticUiCheckboxStrings {
   @scala.inline
   def indeterminate: indeterminate = "indeterminate".asInstanceOf[indeterminate]
   @scala.inline
-  def `is checked`: `is checked` = "is checked".asInstanceOf[`is checked`]
+  def `is checked`: `is checked` = ("is checked").asInstanceOf[`is checked`]
   @scala.inline
-  def `is radio`: `is radio` = "is radio".asInstanceOf[`is radio`]
+  def `is radio`: `is radio` = ("is radio").asInstanceOf[`is radio`]
   @scala.inline
-  def `is unchecked`: `is unchecked` = "is unchecked".asInstanceOf[`is unchecked`]
+  def `is unchecked`: `is unchecked` = ("is unchecked").asInstanceOf[`is unchecked`]
   @scala.inline
   def name: name = "name".asInstanceOf[name]
   @scala.inline
@@ -219,27 +219,27 @@ object semanticUiCheckboxStrings {
   @scala.inline
   def selector: selector = "selector".asInstanceOf[selector]
   @scala.inline
-  def `set checked`: `set checked` = "set checked".asInstanceOf[`set checked`]
+  def `set checked`: `set checked` = ("set checked").asInstanceOf[`set checked`]
   @scala.inline
-  def `set determinate`: `set determinate` = "set determinate".asInstanceOf[`set determinate`]
+  def `set determinate`: `set determinate` = ("set determinate").asInstanceOf[`set determinate`]
   @scala.inline
-  def `set disabled`: `set disabled` = "set disabled".asInstanceOf[`set disabled`]
+  def `set disabled`: `set disabled` = ("set disabled").asInstanceOf[`set disabled`]
   @scala.inline
-  def `set enabled`: `set enabled` = "set enabled".asInstanceOf[`set enabled`]
+  def `set enabled`: `set enabled` = ("set enabled").asInstanceOf[`set enabled`]
   @scala.inline
-  def `set indeterminate`: `set indeterminate` = "set indeterminate".asInstanceOf[`set indeterminate`]
+  def `set indeterminate`: `set indeterminate` = ("set indeterminate").asInstanceOf[`set indeterminate`]
   @scala.inline
-  def `set unchecked`: `set unchecked` = "set unchecked".asInstanceOf[`set unchecked`]
+  def `set unchecked`: `set unchecked` = ("set unchecked").asInstanceOf[`set unchecked`]
   @scala.inline
   def setting: setting = "setting".asInstanceOf[setting]
   @scala.inline
-  def `should allow check`: `should allow check` = "should allow check".asInstanceOf[`should allow check`]
+  def `should allow check`: `should allow check` = ("should allow check").asInstanceOf[`should allow check`]
   @scala.inline
-  def `should allow determinate`: `should allow determinate` = "should allow determinate".asInstanceOf[`should allow determinate`]
+  def `should allow determinate`: `should allow determinate` = ("should allow determinate").asInstanceOf[`should allow determinate`]
   @scala.inline
-  def `should allow indeterminate`: `should allow indeterminate` = "should allow indeterminate".asInstanceOf[`should allow indeterminate`]
+  def `should allow indeterminate`: `should allow indeterminate` = ("should allow indeterminate").asInstanceOf[`should allow indeterminate`]
   @scala.inline
-  def `should allow uncheck`: `should allow uncheck` = "should allow uncheck".asInstanceOf[`should allow uncheck`]
+  def `should allow uncheck`: `should allow uncheck` = ("should allow uncheck").asInstanceOf[`should allow uncheck`]
   @scala.inline
   def silent: silent = "silent".asInstanceOf[silent]
   @scala.inline

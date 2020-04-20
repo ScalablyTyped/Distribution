@@ -16,7 +16,6 @@ object GetAccuracyMetricsRequest {
   @scala.inline
   def apply(PredictorArn: Arn): GetAccuracyMetricsRequest = {
     val __obj = js.Dynamic.literal(PredictorArn = PredictorArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetAccuracyMetricsRequest]
   }
 }

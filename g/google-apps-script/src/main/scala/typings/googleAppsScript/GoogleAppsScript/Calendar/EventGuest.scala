@@ -26,7 +26,6 @@ object EventGuest {
     getStatus: () => String
   ): EventGuest = {
     val __obj = js.Dynamic.literal(getAdditionalGuests = js.Any.fromFunction0(getAdditionalGuests), getEmail = js.Any.fromFunction0(getEmail), getGuestStatus = js.Any.fromFunction0(getGuestStatus), getName = js.Any.fromFunction0(getName), getStatus = js.Any.fromFunction0(getStatus))
-  
     __obj.asInstanceOf[EventGuest]
   }
 }

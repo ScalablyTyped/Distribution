@@ -20,7 +20,6 @@ object DeregisterFromWorkMailRequest {
   @scala.inline
   def apply(EntityId: WorkMailIdentifier, OrganizationId: OrganizationId): DeregisterFromWorkMailRequest = {
     val __obj = js.Dynamic.literal(EntityId = EntityId.asInstanceOf[js.Any], OrganizationId = OrganizationId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeregisterFromWorkMailRequest]
   }
 }

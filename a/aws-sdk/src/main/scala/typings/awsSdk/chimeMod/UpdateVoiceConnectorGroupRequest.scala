@@ -28,7 +28,6 @@ object UpdateVoiceConnectorGroupRequest {
     VoiceConnectorItems: VoiceConnectorItemList
   ): UpdateVoiceConnectorGroupRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], VoiceConnectorGroupId = VoiceConnectorGroupId.asInstanceOf[js.Any], VoiceConnectorItems = VoiceConnectorItems.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateVoiceConnectorGroupRequest]
   }
 }

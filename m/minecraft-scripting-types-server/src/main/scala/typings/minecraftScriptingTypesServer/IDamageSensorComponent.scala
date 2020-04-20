@@ -28,7 +28,6 @@ object IDamageSensorComponent {
   @scala.inline
   def apply(cause: String, deals_damage: Boolean, on_damage: js.Array[MinecraftTrigger]): IDamageSensorComponent = {
     val __obj = js.Dynamic.literal(cause = cause.asInstanceOf[js.Any], deals_damage = deals_damage.asInstanceOf[js.Any], on_damage = on_damage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDamageSensorComponent]
   }
 }

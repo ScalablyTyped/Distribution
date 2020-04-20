@@ -13,7 +13,6 @@ object IGroupHeaderState {
   @scala.inline
   def apply(isCollapsed: Boolean, isLoadingVisible: Boolean): IGroupHeaderState = {
     val __obj = js.Dynamic.literal(isCollapsed = isCollapsed.asInstanceOf[js.Any], isLoadingVisible = isLoadingVisible.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IGroupHeaderState]
   }
 }

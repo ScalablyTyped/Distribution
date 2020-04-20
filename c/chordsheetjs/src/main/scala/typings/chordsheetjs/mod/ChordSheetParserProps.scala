@@ -12,7 +12,6 @@ object ChordSheetParserProps {
   @scala.inline
   def apply(preserveWhitespace: Boolean): ChordSheetParserProps = {
     val __obj = js.Dynamic.literal(preserveWhitespace = preserveWhitespace.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChordSheetParserProps]
   }
 }

@@ -17,7 +17,6 @@ object StandardsSubscriptionArgs {
   @scala.inline
   def apply(standardsArn: Input[String]): StandardsSubscriptionArgs = {
     val __obj = js.Dynamic.literal(standardsArn = standardsArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StandardsSubscriptionArgs]
   }
 }

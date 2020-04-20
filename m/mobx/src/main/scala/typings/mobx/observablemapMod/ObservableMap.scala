@@ -31,7 +31,7 @@ class ObservableMap[K, V] ()
   @JSName("enhancer")
   var enhancer_Original: IEnhancer[V] = js.native
   var name: String = js.native
-  @JSName(scala.scalajs.js.Symbol.toStringTag)
+  @JSName(js.Symbol.toStringTag)
   var toStringTag_ObservableMap: typings.mobx.mobxStrings.Map = js.native
   def enhancer(newValue: V, oldValue: V, name: String): V = js.native
   def enhancer(newValue: V, oldValue: js.UndefOr[scala.Nothing], name: String): V = js.native

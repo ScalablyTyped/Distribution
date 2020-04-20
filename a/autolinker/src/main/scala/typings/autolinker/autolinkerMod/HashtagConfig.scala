@@ -14,14 +14,12 @@ trait HashtagConfig extends js.Object
 
 object HashtagConfig {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def facebook: typings.autolinker.autolinkerStrings.facebook = "facebook".asInstanceOf[typings.autolinker.autolinkerStrings.facebook]
   @scala.inline
-  def facebook: typings.autolinker.autolinkerStrings.facebook = this.cast("facebook")
+  def `false`: typings.autolinker.autolinkerBooleans.`false` = false.asInstanceOf[typings.autolinker.autolinkerBooleans.`false`]
   @scala.inline
-  def `false`: typings.autolinker.autolinkerBooleans.`false` = this.cast(false)
+  def instagram: typings.autolinker.autolinkerStrings.instagram = "instagram".asInstanceOf[typings.autolinker.autolinkerStrings.instagram]
   @scala.inline
-  def instagram: typings.autolinker.autolinkerStrings.instagram = this.cast("instagram")
-  @scala.inline
-  def twitter: typings.autolinker.autolinkerStrings.twitter = this.cast("twitter")
+  def twitter: typings.autolinker.autolinkerStrings.twitter = "twitter".asInstanceOf[typings.autolinker.autolinkerStrings.twitter]
 }
 

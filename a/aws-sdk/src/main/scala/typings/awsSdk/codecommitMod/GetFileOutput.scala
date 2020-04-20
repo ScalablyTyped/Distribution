@@ -43,7 +43,6 @@ object GetFileOutput {
     fileSize: ObjectSize
   ): GetFileOutput = {
     val __obj = js.Dynamic.literal(blobId = blobId.asInstanceOf[js.Any], commitId = commitId.asInstanceOf[js.Any], fileContent = fileContent.asInstanceOf[js.Any], fileMode = fileMode.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], fileSize = fileSize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetFileOutput]
   }
 }

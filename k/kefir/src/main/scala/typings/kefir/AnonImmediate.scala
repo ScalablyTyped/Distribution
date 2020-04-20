@@ -12,7 +12,6 @@ object AnonImmediate {
   @scala.inline
   def apply(immediate: Boolean): AnonImmediate = {
     val __obj = js.Dynamic.literal(immediate = immediate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonImmediate]
   }
 }

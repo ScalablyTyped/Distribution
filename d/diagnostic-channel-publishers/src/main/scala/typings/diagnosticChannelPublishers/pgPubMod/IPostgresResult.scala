@@ -13,7 +13,6 @@ object IPostgresResult {
   @scala.inline
   def apply(command: String, rowCount: Double): IPostgresResult = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPostgresResult]
   }
 }

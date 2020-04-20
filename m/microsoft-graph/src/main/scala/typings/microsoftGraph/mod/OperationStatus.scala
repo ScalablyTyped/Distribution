@@ -14,14 +14,12 @@ trait OperationStatus extends js.Object
 
 object OperationStatus {
   @scala.inline
-  def Completed: typings.microsoftGraph.microsoftGraphStrings.Completed = this.cast("Completed")
+  def Completed: typings.microsoftGraph.microsoftGraphStrings.Completed = "Completed".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.Completed]
   @scala.inline
-  def Failed: typings.microsoftGraph.microsoftGraphStrings.Failed = this.cast("Failed")
+  def Failed: typings.microsoftGraph.microsoftGraphStrings.Failed = "Failed".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.Failed]
   @scala.inline
-  def NotStarted: typings.microsoftGraph.microsoftGraphStrings.NotStarted = this.cast("NotStarted")
+  def NotStarted: typings.microsoftGraph.microsoftGraphStrings.NotStarted = "NotStarted".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.NotStarted]
   @scala.inline
-  def Running: typings.microsoftGraph.microsoftGraphStrings.Running = this.cast("Running")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Running: typings.microsoftGraph.microsoftGraphStrings.Running = "Running".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.Running]
 }
 

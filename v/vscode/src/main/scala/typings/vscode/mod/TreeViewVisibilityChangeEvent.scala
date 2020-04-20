@@ -15,7 +15,6 @@ object TreeViewVisibilityChangeEvent {
   @scala.inline
   def apply(visible: Boolean): TreeViewVisibilityChangeEvent = {
     val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TreeViewVisibilityChangeEvent]
   }
 }

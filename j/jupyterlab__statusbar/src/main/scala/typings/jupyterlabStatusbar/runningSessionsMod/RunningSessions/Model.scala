@@ -16,12 +16,12 @@ class Model () extends VDomModel {
   /**
     * The number of active kernel sessions.
     */
-  def sessions(): Double = js.native
+  def sessions: Double = js.native
   def sessions(sessions: Double): js.Any = js.native
   /**
     * The number of active terminal sessions.
     */
-  def terminals(): Double = js.native
+  def terminals: Double = js.native
   def terminals(terminals: Double): js.Any = js.native
 }
 

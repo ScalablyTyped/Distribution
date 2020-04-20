@@ -14,7 +14,6 @@ object A11YPanelErrorState {
   @scala.inline
   def apply(error: js.Any, status: error): A11YPanelErrorState = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[A11YPanelErrorState]
   }
 }

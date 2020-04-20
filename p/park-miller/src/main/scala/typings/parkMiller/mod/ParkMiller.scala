@@ -22,7 +22,6 @@ object ParkMiller {
     integerInRange: (Double, Double) => Double
   ): ParkMiller = {
     val __obj = js.Dynamic.literal(boolean = js.Any.fromFunction0(boolean), float = js.Any.fromFunction0(float), floatInRange = js.Any.fromFunction2(floatInRange), integer = js.Any.fromFunction0(integer), integerInRange = js.Any.fromFunction2(integerInRange))
-  
     __obj.asInstanceOf[ParkMiller]
   }
 }

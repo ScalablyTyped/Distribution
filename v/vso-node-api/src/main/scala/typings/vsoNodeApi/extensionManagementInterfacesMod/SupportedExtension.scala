@@ -23,7 +23,6 @@ object SupportedExtension {
   @scala.inline
   def apply(extension: String, publisher: String, version: String): SupportedExtension = {
     val __obj = js.Dynamic.literal(extension = extension.asInstanceOf[js.Any], publisher = publisher.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SupportedExtension]
   }
 }

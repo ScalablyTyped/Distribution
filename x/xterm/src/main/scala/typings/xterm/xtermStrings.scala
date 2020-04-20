@@ -42,6 +42,9 @@ object xtermStrings {
   sealed trait alt extends js.Object
   
   @js.native
+  sealed trait alternate extends js.Object
+  
+  @js.native
   sealed trait bar extends js.Object
   
   @js.native
@@ -198,6 +201,8 @@ object xtermStrings {
   def allowTransparency: allowTransparency = "allowTransparency".asInstanceOf[allowTransparency]
   @scala.inline
   def alt: alt = "alt".asInstanceOf[alt]
+  @scala.inline
+  def alternate: alternate = "alternate".asInstanceOf[alternate]
   @scala.inline
   def bar: bar = "bar".asInstanceOf[bar]
   @scala.inline

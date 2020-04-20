@@ -1,7 +1,7 @@
 
 # Scala.js typings for apollo__react-ssr
 
-Typings are for version 3.1.4
+Typings are for version 3.1.5
 
 ## Library description:
 React Apollo server-side rendering utilities

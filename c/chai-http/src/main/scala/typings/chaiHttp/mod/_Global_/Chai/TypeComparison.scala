@@ -12,7 +12,6 @@ object TypeComparison {
   @scala.inline
   def apply(ip: Assertion): TypeComparison = {
     val __obj = js.Dynamic.literal(ip = ip.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeComparison]
   }
 }

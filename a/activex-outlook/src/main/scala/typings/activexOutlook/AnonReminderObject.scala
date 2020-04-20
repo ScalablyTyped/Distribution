@@ -13,7 +13,6 @@ object AnonReminderObject {
   @scala.inline
   def apply(ReminderObject: Reminder): AnonReminderObject = {
     val __obj = js.Dynamic.literal(ReminderObject = ReminderObject.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonReminderObject]
   }
 }

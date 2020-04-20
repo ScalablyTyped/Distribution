@@ -16,7 +16,6 @@ object DetailedResult {
   @scala.inline
   def apply(commits: js.Array[DetailedCommit], detailed: `true`): DetailedResult = {
     val __obj = js.Dynamic.literal(commits = commits.asInstanceOf[js.Any], detailed = detailed.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DetailedResult]
   }
 }

@@ -14,14 +14,12 @@ trait RTCDataChannelState extends js.Object
 
 object RTCDataChannelState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def closed: typings.std.stdStrings.closed = "closed".asInstanceOf[typings.std.stdStrings.closed]
   @scala.inline
-  def closed: typings.std.stdStrings.closed = this.cast("closed")
+  def closing: typings.std.stdStrings.closing = "closing".asInstanceOf[typings.std.stdStrings.closing]
   @scala.inline
-  def closing: typings.std.stdStrings.closing = this.cast("closing")
+  def connecting: typings.std.stdStrings.connecting = "connecting".asInstanceOf[typings.std.stdStrings.connecting]
   @scala.inline
-  def connecting: typings.std.stdStrings.connecting = this.cast("connecting")
-  @scala.inline
-  def open: typings.std.stdStrings.open = this.cast("open")
+  def open: typings.std.stdStrings.open = "open".asInstanceOf[typings.std.stdStrings.open]
 }
 

@@ -48,7 +48,6 @@ object AnonContentLeft {
     titleRequired: String
   ): AnonContentLeft = {
     val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], contentLeft = contentLeft.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], descriptionUnderInput = descriptionUnderInput.asInstanceOf[js.Any], flowRoot = flowRoot.asInstanceOf[js.Any], formGroup = formGroup.asInstanceOf[js.Any], hasError = hasError.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], headerLeft = headerLeft.asInstanceOf[js.Any], indent = indent.asInstanceOf[js.Any], mainRoot = mainRoot.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], requiredText = requiredText.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], titleLeftRoot = titleLeftRoot.asInstanceOf[js.Any], titleRequired = titleRequired.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonContentLeft]
   }
 }

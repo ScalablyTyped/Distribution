@@ -20,7 +20,6 @@ object AccountTakeoverActionType {
   @scala.inline
   def apply(EventAction: AccountTakeoverEventActionType, Notify: AccountTakeoverActionNotifyType): AccountTakeoverActionType = {
     val __obj = js.Dynamic.literal(EventAction = EventAction.asInstanceOf[js.Any], Notify = Notify.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AccountTakeoverActionType]
   }
 }

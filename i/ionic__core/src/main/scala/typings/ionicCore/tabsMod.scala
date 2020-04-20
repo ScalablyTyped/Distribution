@@ -61,7 +61,7 @@ object tabsMod extends js.Object {
     def select(tab: HTMLIonTabElement): js.Promise[Boolean] = js.native
     /** @internal */
     def setRouteId(id: String): js.Promise[RouteWrite] = js.native
-    /* private */ def tabs(): js.Any = js.native
+    /* private */ def tabs: js.Any = js.native
   }
   
 }

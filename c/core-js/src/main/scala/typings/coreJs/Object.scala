@@ -13,7 +13,6 @@ object Object {
   @scala.inline
   def apply(getOwnPropertyDescriptors: js.Any => PropertyDescriptorMap): Object = {
     val __obj = js.Dynamic.literal(getOwnPropertyDescriptors = js.Any.fromFunction1(getOwnPropertyDescriptors))
-  
     __obj.asInstanceOf[Object]
   }
 }

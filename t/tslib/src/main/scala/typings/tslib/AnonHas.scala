@@ -13,7 +13,6 @@ object AnonHas {
   @scala.inline
   def apply[T /* <: js.Object */, V](has: T => Boolean, set: (T, V) => js.Any): AnonHas[T, V] = {
     val __obj = js.Dynamic.literal(has = js.Any.fromFunction1(has), set = js.Any.fromFunction2(set))
-  
     __obj.asInstanceOf[AnonHas[T, V]]
   }
 }

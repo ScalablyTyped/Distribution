@@ -12,7 +12,6 @@ object AnonIncludedirectories {
   @scala.inline
   def apply(include_directories: Boolean): AnonIncludedirectories = {
     val __obj = js.Dynamic.literal(include_directories = include_directories.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIncludedirectories]
   }
 }

@@ -16,7 +16,6 @@ object RegisterStreamConsumerOutput {
   @scala.inline
   def apply(Consumer: Consumer): RegisterStreamConsumerOutput = {
     val __obj = js.Dynamic.literal(Consumer = Consumer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RegisterStreamConsumerOutput]
   }
 }

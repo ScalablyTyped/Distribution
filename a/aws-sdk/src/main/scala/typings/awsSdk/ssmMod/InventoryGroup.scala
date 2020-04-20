@@ -20,7 +20,6 @@ object InventoryGroup {
   @scala.inline
   def apply(Filters: InventoryFilterList, Name: InventoryGroupName): InventoryGroup = {
     val __obj = js.Dynamic.literal(Filters = Filters.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InventoryGroup]
   }
 }

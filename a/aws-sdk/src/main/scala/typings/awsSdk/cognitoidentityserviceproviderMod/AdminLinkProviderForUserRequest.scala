@@ -28,7 +28,6 @@ object AdminLinkProviderForUserRequest {
     UserPoolId: StringType
   ): AdminLinkProviderForUserRequest = {
     val __obj = js.Dynamic.literal(DestinationUser = DestinationUser.asInstanceOf[js.Any], SourceUser = SourceUser.asInstanceOf[js.Any], UserPoolId = UserPoolId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AdminLinkProviderForUserRequest]
   }
 }

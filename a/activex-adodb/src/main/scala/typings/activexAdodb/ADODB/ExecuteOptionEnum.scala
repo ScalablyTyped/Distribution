@@ -24,20 +24,18 @@ trait ExecuteOptionEnum extends js.Object
 
 object ExecuteOptionEnum {
   @scala.inline
-  def adAsyncExecute: `16` = this.cast(16)
+  def adAsyncExecute: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def adAsyncFetch: `32` = this.cast(32)
+  def adAsyncFetch: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def adAsyncFetchNonBlocking: `64` = this.cast(64)
+  def adAsyncFetchNonBlocking: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def adExecuteNoRecords: `128` = this.cast(128)
+  def adExecuteNoRecords: `128` = 128.asInstanceOf[`128`]
   @scala.inline
-  def adExecuteRecord: `2048` = this.cast(2048)
+  def adExecuteRecord: `2048` = 2048.asInstanceOf[`2048`]
   @scala.inline
-  def adExecuteStream: `1024` = this.cast(1024)
+  def adExecuteStream: `1024` = 1024.asInstanceOf[`1024`]
   @scala.inline
-  def adOptionUnspecified: `-1` = this.cast(-1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def adOptionUnspecified: `-1` = -1.asInstanceOf[`-1`]
 }
 

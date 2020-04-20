@@ -14,7 +14,6 @@ object Rejected {
   @scala.inline
   def apply[T](reason: T, state: rejected): Rejected[T] = {
     val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Rejected[T]]
   }
 }

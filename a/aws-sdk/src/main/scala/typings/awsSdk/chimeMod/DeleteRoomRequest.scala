@@ -20,7 +20,6 @@ object DeleteRoomRequest {
   @scala.inline
   def apply(AccountId: NonEmptyString, RoomId: NonEmptyString): DeleteRoomRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], RoomId = RoomId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteRoomRequest]
   }
 }

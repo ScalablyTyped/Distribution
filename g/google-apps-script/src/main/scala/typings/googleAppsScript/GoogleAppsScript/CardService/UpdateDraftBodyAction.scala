@@ -19,7 +19,6 @@ object UpdateDraftBodyAction {
     setUpdateType: UpdateDraftBodyType => UpdateDraftBodyAction
   ): UpdateDraftBodyAction = {
     val __obj = js.Dynamic.literal(addUpdateContent = js.Any.fromFunction2(addUpdateContent), setUpdateType = js.Any.fromFunction1(setUpdateType))
-  
     __obj.asInstanceOf[UpdateDraftBodyAction]
   }
 }

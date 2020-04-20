@@ -13,7 +13,6 @@ object DescribeRegistryRequest {
   @scala.inline
   def apply(RegistryName: string): DescribeRegistryRequest = {
     val __obj = js.Dynamic.literal(RegistryName = RegistryName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeRegistryRequest]
   }
 }

@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation._
 trait IterableChanges[V] extends js.Object {
   /** Iterate over all added items. */
   def forEachAddedItem(fn: js.Function1[/* record */ IterableChangeRecord[V], Unit]): Unit
-  /** Iterate over all items which had their identity (as computed by the `TrackByFunction`)
-    * changed. */
+  /**
+    * Iterate over all items which had their identity (as computed by the `TrackByFunction`)
+    * changed.
+    */
   def forEachIdentityChange(fn: js.Function1[/* record */ IterableChangeRecord[V], Unit]): Unit
   /**
     * Iterate over all changes. `IterableChangeRecord` will contain information about changes
@@ -67,7 +69,6 @@ object IterableChanges {
     forEachRemovedItem: js.Function1[/* record */ IterableChangeRecord[V], Unit] => Unit
   ): IterableChanges[V] = {
     val __obj = js.Dynamic.literal(forEachAddedItem = js.Any.fromFunction1(forEachAddedItem), forEachIdentityChange = js.Any.fromFunction1(forEachIdentityChange), forEachItem = js.Any.fromFunction1(forEachItem), forEachMovedItem = js.Any.fromFunction1(forEachMovedItem), forEachOperation = js.Any.fromFunction1(forEachOperation), forEachPreviousItem = js.Any.fromFunction1(forEachPreviousItem), forEachRemovedItem = js.Any.fromFunction1(forEachRemovedItem))
-  
     __obj.asInstanceOf[IterableChanges[V]]
   }
 }

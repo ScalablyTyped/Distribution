@@ -15,7 +15,6 @@ object SentMessageInfo {
   @scala.inline
   def apply(envelope: Envelope, messageId: String, response: String): SentMessageInfo = {
     val __obj = js.Dynamic.literal(envelope = envelope.asInstanceOf[js.Any], messageId = messageId.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SentMessageInfo]
   }
 }

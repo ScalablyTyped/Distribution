@@ -28,7 +28,6 @@ object AnonRESIZEBEZIER {
     RESIZE_NEAREST_NEIGHBOR: nearestNeighbor
   ): AnonRESIZEBEZIER = {
     val __obj = js.Dynamic.literal(RESIZE_BEZIER = RESIZE_BEZIER.asInstanceOf[js.Any], RESIZE_BICUBIC = RESIZE_BICUBIC.asInstanceOf[js.Any], RESIZE_BILINEAR = RESIZE_BILINEAR.asInstanceOf[js.Any], RESIZE_HERMITE = RESIZE_HERMITE.asInstanceOf[js.Any], RESIZE_NEAREST_NEIGHBOR = RESIZE_NEAREST_NEIGHBOR.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRESIZEBEZIER]
   }
 }

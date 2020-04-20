@@ -14,7 +14,6 @@ object FacebookConfig {
   @scala.inline
   def apply(appId: String, playerId: String, version: String): FacebookConfig = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], playerId = playerId.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FacebookConfig]
   }
 }

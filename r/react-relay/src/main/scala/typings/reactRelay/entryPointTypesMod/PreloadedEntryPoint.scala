@@ -25,7 +25,6 @@ object PreloadedEntryPoint {
     queries: LibraryManagedAttributes[TEntryPointComponent, queries]
   ): PreloadedEntryPoint[TEntryPointComponent] = {
     val __obj = js.Dynamic.literal(entryPoints = entryPoints.asInstanceOf[js.Any], extraProps = extraProps.asInstanceOf[js.Any], getComponent = js.Any.fromFunction0(getComponent), queries = queries.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PreloadedEntryPoint[TEntryPointComponent]]
   }
 }

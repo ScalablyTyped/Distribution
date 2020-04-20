@@ -14,7 +14,6 @@ object SnapshotMetadata {
   @scala.inline
   def apply(fromCache: Boolean, hasPendingWrites: Boolean, isEqual: SnapshotMetadata => Boolean): SnapshotMetadata = {
     val __obj = js.Dynamic.literal(fromCache = fromCache.asInstanceOf[js.Any], hasPendingWrites = hasPendingWrites.asInstanceOf[js.Any], isEqual = js.Any.fromFunction1(isEqual))
-  
     __obj.asInstanceOf[SnapshotMetadata]
   }
 }

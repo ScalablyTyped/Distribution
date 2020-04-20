@@ -16,7 +16,7 @@ object mod extends js.Object {
     @JSName("clone")
     var clone_FHttpHeaders: js.Any = js.native
     var originalHeaders: js.Any = js.native
-    @JSName(scala.scalajs.js.Symbol.toStringTag)
+    @JSName(js.Symbol.toStringTag)
     var toStringTag_HttpHeaders: Map = js.native
   }
   

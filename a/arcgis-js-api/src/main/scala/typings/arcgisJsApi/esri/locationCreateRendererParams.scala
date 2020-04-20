@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import typings.std.AbortSignal
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -31,6 +32,14 @@ trait locationCreateRendererParams extends Object {
     */
   var colorMixMode: js.UndefOr[String] = js.undefined
   /**
+    * Indicates whether to add edges to the output renderer. This setting only applies to mesh SceneLayers.  **Possible Values:** solid | none
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-location.html#createRenderer)
+    *
+    * @default none
+    */
+  var edgesType: js.UndefOr[String] = js.undefined
+  /**
     * The layer for which the visualization is generated.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-location.html#createRenderer)
@@ -50,6 +59,12 @@ trait locationCreateRendererParams extends Object {
     * @default false
     */
   var outlineOptimizationEnabled: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Allows for cancelable requests. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-location.html#createRenderer)
+    */
+  var signal: js.UndefOr[AbortSignal] = js.undefined
   /**
     * For point and polyline layers only. Indicates whether symbol sizes should vary based on view scale. When set, a valid [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance must be provided in the `view` parameter. This option is not supported for 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
@@ -90,8 +105,10 @@ object locationCreateRendererParams {
     propertyIsEnumerable: PropertyKey => Boolean,
     basemap: String | Basemap = null,
     colorMixMode: String = null,
+    edgesType: String = null,
     locationScheme: LocationScheme = null,
     outlineOptimizationEnabled: js.UndefOr[Boolean] = js.undefined,
+    signal: AbortSignal = null,
     sizeOptimizationEnabled: js.UndefOr[Boolean] = js.undefined,
     symbolType: String = null,
     view: View = null
@@ -99,8 +116,10 @@ object locationCreateRendererParams {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
     if (colorMixMode != null) __obj.updateDynamic("colorMixMode")(colorMixMode.asInstanceOf[js.Any])
+    if (edgesType != null) __obj.updateDynamic("edgesType")(edgesType.asInstanceOf[js.Any])
     if (locationScheme != null) __obj.updateDynamic("locationScheme")(locationScheme.asInstanceOf[js.Any])
     if (!js.isUndefined(outlineOptimizationEnabled)) __obj.updateDynamic("outlineOptimizationEnabled")(outlineOptimizationEnabled.asInstanceOf[js.Any])
+    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
     if (!js.isUndefined(sizeOptimizationEnabled)) __obj.updateDynamic("sizeOptimizationEnabled")(sizeOptimizationEnabled.asInstanceOf[js.Any])
     if (symbolType != null) __obj.updateDynamic("symbolType")(symbolType.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])

@@ -13,7 +13,6 @@ object ReposGetCollaboratorPermissionLevelResponse {
   @scala.inline
   def apply(permission: String, user: ReposGetCollaboratorPermissionLevelResponseUser): ReposGetCollaboratorPermissionLevelResponse = {
     val __obj = js.Dynamic.literal(permission = permission.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReposGetCollaboratorPermissionLevelResponse]
   }
 }

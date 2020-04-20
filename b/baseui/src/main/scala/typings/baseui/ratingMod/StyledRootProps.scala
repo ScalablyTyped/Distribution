@@ -15,7 +15,6 @@ object StyledRootProps {
     $theme: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Theme */ js.Any
   ): StyledRootProps = {
     val __obj = js.Dynamic.literal($theme = $theme.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StyledRootProps]
   }
 }

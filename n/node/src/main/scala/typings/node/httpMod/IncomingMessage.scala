@@ -1,6 +1,6 @@
 package typings.node.httpMod
 
-import org.scalablytyped.runtime.StringDictionary
+import typings.node.NodeJS.Dict
 import typings.node.netMod.Socket
 import typings.node.streamMod.Readable
 import scala.scalajs.js
@@ -36,7 +36,7 @@ class IncomingMessage protected () extends Readable {
     * Only valid for response obtained from http.ClientRequest.
     */
   var statusMessage: js.UndefOr[String] = js.native
-  var trailers: StringDictionary[js.UndefOr[String]] = js.native
+  var trailers: Dict[String] = js.native
   /**
     * Only valid for request obtained from http.Server.
     */

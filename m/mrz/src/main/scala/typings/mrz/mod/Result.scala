@@ -43,7 +43,6 @@ object Result {
     valid: Boolean
   ): Result = {
     val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Result]
   }
 }

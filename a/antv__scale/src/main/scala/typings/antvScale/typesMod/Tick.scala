@@ -17,7 +17,6 @@ object Tick {
   @scala.inline
   def apply(text: String, tickValue: String | Double, value: Double): Tick = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], tickValue = tickValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Tick]
   }
 }

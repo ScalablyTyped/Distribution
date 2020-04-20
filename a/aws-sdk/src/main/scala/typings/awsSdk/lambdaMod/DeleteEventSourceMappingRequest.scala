@@ -16,7 +16,6 @@ object DeleteEventSourceMappingRequest {
   @scala.inline
   def apply(UUID: String): DeleteEventSourceMappingRequest = {
     val __obj = js.Dynamic.literal(UUID = UUID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteEventSourceMappingRequest]
   }
 }

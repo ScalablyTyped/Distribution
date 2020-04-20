@@ -20,7 +20,6 @@ object PoolStateType {
     waitingClientCount: Double
   ): PoolStateType = {
     val __obj = js.Dynamic.literal(activeConnectionCount = activeConnectionCount.asInstanceOf[js.Any], ended = ended.asInstanceOf[js.Any], idleConnectionCount = idleConnectionCount.asInstanceOf[js.Any], waitingClientCount = waitingClientCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PoolStateType]
   }
 }

@@ -13,7 +13,6 @@ object AnonScaleConversion {
   @scala.inline
   def apply(scaleConversion: Double, svgUnitType: String): AnonScaleConversion = {
     val __obj = js.Dynamic.literal(scaleConversion = scaleConversion.asInstanceOf[js.Any], svgUnitType = svgUnitType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonScaleConversion]
   }
 }

@@ -13,12 +13,10 @@ trait ColorCodes extends js.Object
 
 object ColorCodes {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def green: typings.socketcluster.socketclusterStrings.green = "green".asInstanceOf[typings.socketcluster.socketclusterStrings.green]
   @scala.inline
-  def green: typings.socketcluster.socketclusterStrings.green = this.cast("green")
+  def red: typings.socketcluster.socketclusterStrings.red = "red".asInstanceOf[typings.socketcluster.socketclusterStrings.red]
   @scala.inline
-  def red: typings.socketcluster.socketclusterStrings.red = this.cast("red")
-  @scala.inline
-  def yellow: typings.socketcluster.socketclusterStrings.yellow = this.cast("yellow")
+  def yellow: typings.socketcluster.socketclusterStrings.yellow = "yellow".asInstanceOf[typings.socketcluster.socketclusterStrings.yellow]
 }
 

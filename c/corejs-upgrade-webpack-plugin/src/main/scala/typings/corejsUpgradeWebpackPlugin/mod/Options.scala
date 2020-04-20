@@ -13,7 +13,6 @@ object Options {
   @scala.inline
   def apply(resolveFrom: String | `false`): Options = {
     val __obj = js.Dynamic.literal(resolveFrom = resolveFrom.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Options]
   }
 }

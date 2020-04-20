@@ -13,7 +13,6 @@ object PickImplpageDimmer {
   @scala.inline
   def apply(pageDimmer: String): PickImplpageDimmer = {
     val __obj = js.Dynamic.literal(pageDimmer = pageDimmer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplpageDimmer]
   }
 }

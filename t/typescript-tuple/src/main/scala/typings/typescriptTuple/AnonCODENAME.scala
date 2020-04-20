@@ -15,7 +15,6 @@ object AnonCODENAME {
   @scala.inline
   def apply(CODENAME: InfiniteTuple, ERROR: `Cannot reverse an infinite tuple`): AnonCODENAME = {
     val __obj = js.Dynamic.literal(CODENAME = CODENAME.asInstanceOf[js.Any], ERROR = ERROR.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCODENAME]
   }
 }

@@ -7,27 +7,16 @@ import scala.scalajs.js.annotation._
 /**
   * Properties passed to a yql callback to report a success or failure.
   */
-trait YQLResponse extends js.Object {
-  /**
-  	 * Error code. Returns 0 if `success` is `true`.
-  	 */
-  var code: js.UndefOr[Double] = js.undefined
+trait YQLResponse extends ErrorResponse {
   /**
   	 * The data payload received from the YQL.
   	 */
   var data: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Error message, if any returned.
-  	 */
-  var error: js.UndefOr[String] = js.undefined
-  /**
   	 * Error message, if any returned. Use `error` instead
+  	 * @deprecated
   	 */
-  var message: js.UndefOr[String] = js.undefined
-  /**
-  	 * Indicates if the operation succeeded.
-  	 */
-  var success: js.UndefOr[Boolean] = js.undefined
+  var message: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object YQLResponse {
@@ -35,8 +24,8 @@ object YQLResponse {
   def apply(
     code: Int | Double = null,
     data: js.Any = null,
-    error: String = null,
-    message: String = null,
+    error: java.lang.String = null,
+    message: java.lang.String = null,
     success: js.UndefOr[Boolean] = js.undefined
   ): YQLResponse = {
     val __obj = js.Dynamic.literal()

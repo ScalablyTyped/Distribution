@@ -20,7 +20,6 @@ object IFileRequest {
   @scala.inline
   def apply(abort: () => Unit, onCompleteObservable: Observable[IFileRequest]): IFileRequest = {
     val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), onCompleteObservable = onCompleteObservable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IFileRequest]
   }
 }

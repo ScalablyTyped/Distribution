@@ -7,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashPathOr1x2[TObject, TKey /* <: String */] extends js.Object {
+trait LodashPathOr1x2[TObject, TKey /* <: /* keyof TObject */ String */] extends js.Object {
   def apply(defaultValue: __): LodashPathOr1x6[TObject, TKey] = js.native
   def apply(defaultValue: __, `object`: TObject): LodashPathOr1x6[TObject, TKey] = js.native
   def apply[TDefault](defaultValue: TDefault): (Exclude[

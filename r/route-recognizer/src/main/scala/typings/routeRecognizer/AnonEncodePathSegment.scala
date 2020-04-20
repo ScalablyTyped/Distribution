@@ -18,7 +18,6 @@ object AnonEncodePathSegment {
     normalizeSegment: String => String
   ): AnonEncodePathSegment = {
     val __obj = js.Dynamic.literal(encodePathSegment = js.Any.fromFunction1(encodePathSegment), normalizePath = js.Any.fromFunction1(normalizePath), normalizeSegment = js.Any.fromFunction1(normalizeSegment))
-  
     __obj.asInstanceOf[AnonEncodePathSegment]
   }
 }

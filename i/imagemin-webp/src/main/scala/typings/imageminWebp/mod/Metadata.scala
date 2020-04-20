@@ -15,16 +15,14 @@ trait Metadata extends js.Object
 
 object Metadata {
   @scala.inline
-  def all: typings.imageminWebp.imageminWebpStrings.all = this.cast("all")
+  def all: typings.imageminWebp.imageminWebpStrings.all = "all".asInstanceOf[typings.imageminWebp.imageminWebpStrings.all]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def exif: typings.imageminWebp.imageminWebpStrings.exif = "exif".asInstanceOf[typings.imageminWebp.imageminWebpStrings.exif]
   @scala.inline
-  def exif: typings.imageminWebp.imageminWebpStrings.exif = this.cast("exif")
+  def icc: typings.imageminWebp.imageminWebpStrings.icc = "icc".asInstanceOf[typings.imageminWebp.imageminWebpStrings.icc]
   @scala.inline
-  def icc: typings.imageminWebp.imageminWebpStrings.icc = this.cast("icc")
+  def none: typings.imageminWebp.imageminWebpStrings.none = "none".asInstanceOf[typings.imageminWebp.imageminWebpStrings.none]
   @scala.inline
-  def none: typings.imageminWebp.imageminWebpStrings.none = this.cast("none")
-  @scala.inline
-  def xmp: typings.imageminWebp.imageminWebpStrings.xmp = this.cast("xmp")
+  def xmp: typings.imageminWebp.imageminWebpStrings.xmp = "xmp".asInstanceOf[typings.imageminWebp.imageminWebpStrings.xmp]
 }
 

@@ -13,7 +13,6 @@ object TStructLike {
   @scala.inline
   def apply(read: TProtocol => Unit, write: TProtocol => Unit): TStructLike = {
     val __obj = js.Dynamic.literal(read = js.Any.fromFunction1(read), write = js.Any.fromFunction1(write))
-  
     __obj.asInstanceOf[TStructLike]
   }
 }

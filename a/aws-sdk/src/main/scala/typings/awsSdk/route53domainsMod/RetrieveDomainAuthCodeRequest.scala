@@ -16,7 +16,6 @@ object RetrieveDomainAuthCodeRequest {
   @scala.inline
   def apply(DomainName: DomainName): RetrieveDomainAuthCodeRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RetrieveDomainAuthCodeRequest]
   }
 }

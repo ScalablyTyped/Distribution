@@ -12,7 +12,6 @@ object AnonWidth {
   @scala.inline
   def apply(width: Double): AnonWidth = {
     val __obj = js.Dynamic.literal(width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonWidth]
   }
 }

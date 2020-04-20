@@ -24,7 +24,6 @@ object DetachObjectRequest {
   @scala.inline
   def apply(DirectoryArn: Arn, LinkName: LinkName, ParentReference: ObjectReference): DetachObjectRequest = {
     val __obj = js.Dynamic.literal(DirectoryArn = DirectoryArn.asInstanceOf[js.Any], LinkName = LinkName.asInstanceOf[js.Any], ParentReference = ParentReference.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DetachObjectRequest]
   }
 }

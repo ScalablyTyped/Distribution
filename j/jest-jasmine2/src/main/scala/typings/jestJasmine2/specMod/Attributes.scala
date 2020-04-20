@@ -39,7 +39,6 @@ object Attributes {
     userContext: () => js.Any
   ): Attributes = {
     val __obj = js.Dynamic.literal(beforeAndAfterFns = js.Any.fromFunction0(beforeAndAfterFns), description = description.asInstanceOf[js.Any], getSpecName = js.Any.fromFunction1(getSpecName), getTestPath = js.Any.fromFunction0(getTestPath), id = id.asInstanceOf[js.Any], onStart = js.Any.fromFunction1(onStart), queueRunnerFactory = js.Any.fromFunction1(queueRunnerFactory), queueableFn = queueableFn.asInstanceOf[js.Any], resultCallback = js.Any.fromFunction1(resultCallback), throwOnExpectationFailure = throwOnExpectationFailure.asInstanceOf[js.Any], userContext = js.Any.fromFunction0(userContext))
-  
     __obj.asInstanceOf[Attributes]
   }
 }

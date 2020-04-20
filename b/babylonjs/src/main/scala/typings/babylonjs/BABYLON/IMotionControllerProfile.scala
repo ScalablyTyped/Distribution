@@ -24,7 +24,6 @@ object IMotionControllerProfile {
   @scala.inline
   def apply(fallbackProfileIds: js.Array[String], layouts: IMotionControllerLayoutMap, profileId: String): IMotionControllerProfile = {
     val __obj = js.Dynamic.literal(fallbackProfileIds = fallbackProfileIds.asInstanceOf[js.Any], layouts = layouts.asInstanceOf[js.Any], profileId = profileId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMotionControllerProfile]
   }
 }

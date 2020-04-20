@@ -16,7 +16,6 @@ object DeleteNotificationRuleRequest {
   @scala.inline
   def apply(Arn: NotificationRuleArn): DeleteNotificationRuleRequest = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteNotificationRuleRequest]
   }
 }

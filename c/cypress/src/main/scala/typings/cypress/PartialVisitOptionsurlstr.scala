@@ -1,10 +1,10 @@
 package typings.cypress
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.cypress.cypressMod.Cypress.Auth
-import typings.cypress.cypressMod.Cypress.RequestBody
 import typings.cypress.cypressStrings.GET
 import typings.cypress.cypressStrings.POST
+import typings.cypress.mod.Cypress.Auth
+import typings.cypress.mod.Cypress.RequestBody
 import typings.std.Window_
 import scala.scalajs.js
 import scala.scalajs.js.`|`

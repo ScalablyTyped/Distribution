@@ -20,7 +20,6 @@ object ScheduledActionFilter {
   @scala.inline
   def apply(Name: ScheduledActionFilterName, Values: ValueStringList): ScheduledActionFilter = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScheduledActionFilter]
   }
 }

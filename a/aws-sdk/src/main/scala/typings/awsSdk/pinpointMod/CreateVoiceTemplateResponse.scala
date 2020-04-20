@@ -13,7 +13,6 @@ object CreateVoiceTemplateResponse {
   @scala.inline
   def apply(CreateTemplateMessageBody: CreateTemplateMessageBody): CreateVoiceTemplateResponse = {
     val __obj = js.Dynamic.literal(CreateTemplateMessageBody = CreateTemplateMessageBody.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateVoiceTemplateResponse]
   }
 }

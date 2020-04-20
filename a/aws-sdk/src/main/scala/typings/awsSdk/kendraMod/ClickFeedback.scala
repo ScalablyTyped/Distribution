@@ -20,7 +20,6 @@ object ClickFeedback {
   @scala.inline
   def apply(ClickTime: Timestamp, ResultId: ResultId): ClickFeedback = {
     val __obj = js.Dynamic.literal(ClickTime = ClickTime.asInstanceOf[js.Any], ResultId = ResultId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClickFeedback]
   }
 }

@@ -12,7 +12,6 @@ object KeyInfoProvider {
   @scala.inline
   def apply(getKeyInfo: (String, String) => String): KeyInfoProvider = {
     val __obj = js.Dynamic.literal(getKeyInfo = js.Any.fromFunction2(getKeyInfo))
-  
     __obj.asInstanceOf[KeyInfoProvider]
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactHamburgerMenuProps {
   @scala.inline
-  def ReactHamburgerMenuProps: HamburgerMenuProps.type = typings.reactHamburgerMenu.mod.HamburgerMenuProps
+  def ReactHamburgerMenuProps: HamburgerMenuProps.type = HamburgerMenuProps
   type ReactHamburgerMenuProps = HamburgerMenuProps
 }
 

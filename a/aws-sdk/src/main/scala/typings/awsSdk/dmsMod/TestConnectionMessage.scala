@@ -20,7 +20,6 @@ object TestConnectionMessage {
   @scala.inline
   def apply(EndpointArn: String, ReplicationInstanceArn: String): TestConnectionMessage = {
     val __obj = js.Dynamic.literal(EndpointArn = EndpointArn.asInstanceOf[js.Any], ReplicationInstanceArn = ReplicationInstanceArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TestConnectionMessage]
   }
 }

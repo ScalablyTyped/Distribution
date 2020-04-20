@@ -28,7 +28,6 @@ object DeleteFileOutput {
   @scala.inline
   def apply(blobId: ObjectId, commitId: ObjectId, filePath: Path, treeId: ObjectId): DeleteFileOutput = {
     val __obj = js.Dynamic.literal(blobId = blobId.asInstanceOf[js.Any], commitId = commitId.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], treeId = treeId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteFileOutput]
   }
 }

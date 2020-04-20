@@ -18,22 +18,20 @@ trait ActivityType extends js.Object
 
 object ActivityType {
   @scala.inline
-  def IN_VEHICLE: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.IN_VEHICLE = this.cast("IN_VEHICLE")
+  def IN_VEHICLE: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.IN_VEHICLE = "IN_VEHICLE".asInstanceOf[typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.IN_VEHICLE]
   @scala.inline
-  def ON_BICYCLE: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.ON_BICYCLE = this.cast("ON_BICYCLE")
+  def ON_BICYCLE: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.ON_BICYCLE = "ON_BICYCLE".asInstanceOf[typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.ON_BICYCLE]
   @scala.inline
-  def ON_FOOT: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.ON_FOOT = this.cast("ON_FOOT")
+  def ON_FOOT: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.ON_FOOT = "ON_FOOT".asInstanceOf[typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.ON_FOOT]
   @scala.inline
-  def RUNNING: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.RUNNING = this.cast("RUNNING")
+  def RUNNING: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.RUNNING = "RUNNING".asInstanceOf[typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.RUNNING]
   @scala.inline
-  def STILL: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.STILL = this.cast("STILL")
+  def STILL: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.STILL = "STILL".asInstanceOf[typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.STILL]
   @scala.inline
-  def TILTING: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.TILTING = this.cast("TILTING")
+  def TILTING: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.TILTING = "TILTING".asInstanceOf[typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.TILTING]
   @scala.inline
-  def UNKNOWN: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.UNKNOWN = this.cast("UNKNOWN")
+  def UNKNOWN: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.UNKNOWN]
   @scala.inline
-  def WALKING: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.WALKING = this.cast("WALKING")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def WALKING: typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.WALKING = "WALKING".asInstanceOf[typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.WALKING]
 }
 

@@ -10,12 +10,12 @@ object paginatorMod extends js.Object {
   @js.native
   class Paginator[Item] protected () extends js.Object {
     def this(items: js.Any, source: js.Any, prevToken: String, nextToken: String) = this()
-    val hasNextPage: Boolean = js.native
-    val hasPrevPage: Boolean = js.native
     val items: js.Array[Item] = js.native
     var nextToken: js.Any = js.native
     var prevToken: js.Any = js.native
     var source: js.Any = js.native
+    def hasNextPage: Boolean = js.native
+    def hasPrevPage: Boolean = js.native
     /**
       * Request next page.
       * Does not modify existing object.

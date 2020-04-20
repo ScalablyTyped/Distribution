@@ -14,14 +14,12 @@ trait CalendarType extends js.Object
 
 object CalendarType {
   @scala.inline
-  def Arabic: typings.reactCalendar.reactCalendarStrings.Arabic = this.cast("Arabic")
+  def Arabic: typings.reactCalendar.reactCalendarStrings.Arabic = "Arabic".asInstanceOf[typings.reactCalendar.reactCalendarStrings.Arabic]
   @scala.inline
-  def Hebrew: typings.reactCalendar.reactCalendarStrings.Hebrew = this.cast("Hebrew")
+  def Hebrew: typings.reactCalendar.reactCalendarStrings.Hebrew = "Hebrew".asInstanceOf[typings.reactCalendar.reactCalendarStrings.Hebrew]
   @scala.inline
-  def `ISO 8601`: typings.reactCalendar.reactCalendarStrings.`ISO 8601` = this.cast("ISO 8601")
+  def `ISO 8601`: typings.reactCalendar.reactCalendarStrings.`ISO 8601` = ("ISO 8601").asInstanceOf[typings.reactCalendar.reactCalendarStrings.`ISO 8601`]
   @scala.inline
-  def US: typings.reactCalendar.reactCalendarStrings.US = this.cast("US")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def US: typings.reactCalendar.reactCalendarStrings.US = "US".asInstanceOf[typings.reactCalendar.reactCalendarStrings.US]
 }
 

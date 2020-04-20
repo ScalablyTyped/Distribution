@@ -13,7 +13,6 @@ object DeleteEventStreamResponse {
   @scala.inline
   def apply(EventStream: EventStream): DeleteEventStreamResponse = {
     val __obj = js.Dynamic.literal(EventStream = EventStream.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteEventStreamResponse]
   }
 }

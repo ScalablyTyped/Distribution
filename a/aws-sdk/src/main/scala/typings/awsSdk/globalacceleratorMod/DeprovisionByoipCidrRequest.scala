@@ -16,7 +16,6 @@ object DeprovisionByoipCidrRequest {
   @scala.inline
   def apply(Cidr: GenericString): DeprovisionByoipCidrRequest = {
     val __obj = js.Dynamic.literal(Cidr = Cidr.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeprovisionByoipCidrRequest]
   }
 }

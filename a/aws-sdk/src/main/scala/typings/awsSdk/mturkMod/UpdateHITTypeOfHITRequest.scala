@@ -20,7 +20,6 @@ object UpdateHITTypeOfHITRequest {
   @scala.inline
   def apply(HITId: EntityId, HITTypeId: EntityId): UpdateHITTypeOfHITRequest = {
     val __obj = js.Dynamic.literal(HITId = HITId.asInstanceOf[js.Any], HITTypeId = HITTypeId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateHITTypeOfHITRequest]
   }
 }

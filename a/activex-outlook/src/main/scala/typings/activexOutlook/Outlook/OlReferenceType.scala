@@ -14,10 +14,8 @@ trait OlReferenceType extends js.Object
 
 object OlReferenceType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olStrong: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olStrong: `1` = this.cast(1)
-  @scala.inline
-  def olWeak: `0` = this.cast(0)
+  def olWeak: `0` = 0.asInstanceOf[`0`]
 }
 

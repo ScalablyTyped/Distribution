@@ -80,7 +80,7 @@ class Size protected () extends ISize {
   /**
     * The surface of the Size : width * height (float).
     */
-  def surface(): Double = js.native
+  def surface: Double = js.native
 }
 
 /* static members */

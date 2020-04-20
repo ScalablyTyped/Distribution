@@ -14,10 +14,8 @@ trait WdRevisionsBalloonMargin extends js.Object
 
 object WdRevisionsBalloonMargin {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdLeftMargin: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdLeftMargin: `0` = this.cast(0)
-  @scala.inline
-  def wdRightMargin: `1` = this.cast(1)
+  def wdRightMargin: `1` = 1.asInstanceOf[`1`]
 }
 

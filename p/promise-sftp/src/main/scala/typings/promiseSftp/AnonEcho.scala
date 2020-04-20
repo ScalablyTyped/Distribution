@@ -15,7 +15,6 @@ object AnonEcho {
   @scala.inline
   def apply(echo: Boolean, prompt: String): AnonEcho = {
     val __obj = js.Dynamic.literal(echo = echo.asInstanceOf[js.Any], prompt = prompt.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEcho]
   }
 }

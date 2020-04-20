@@ -19,7 +19,6 @@ object ErrorsStats {
     topservererror: Record[String, Double]
   ): ErrorsStats = {
     val __obj = js.Dynamic.literal(statuscode = statuscode.asInstanceOf[js.Any], topnotfound = topnotfound.asInstanceOf[js.Any], topservererror = topservererror.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ErrorsStats]
   }
 }

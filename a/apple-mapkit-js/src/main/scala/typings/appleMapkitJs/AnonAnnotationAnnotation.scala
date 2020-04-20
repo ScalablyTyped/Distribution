@@ -13,7 +13,6 @@ object AnonAnnotationAnnotation {
   @scala.inline
   def apply(annotation: Annotation): AnonAnnotationAnnotation = {
     val __obj = js.Dynamic.literal(annotation = annotation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAnnotationAnnotation]
   }
 }

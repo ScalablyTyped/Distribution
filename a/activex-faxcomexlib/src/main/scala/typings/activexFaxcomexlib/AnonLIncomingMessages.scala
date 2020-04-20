@@ -23,7 +23,6 @@ object AnonLIncomingMessages {
     pFaxServer: FaxServer
   ): AnonLIncomingMessages = {
     val __obj = js.Dynamic.literal(lIncomingMessages = lIncomingMessages.asInstanceOf[js.Any], lOutgoingMessages = lOutgoingMessages.asInstanceOf[js.Any], lQueuedMessages = lQueuedMessages.asInstanceOf[js.Any], lRoutingMessages = lRoutingMessages.asInstanceOf[js.Any], pFaxServer = pFaxServer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLIncomingMessages]
   }
 }

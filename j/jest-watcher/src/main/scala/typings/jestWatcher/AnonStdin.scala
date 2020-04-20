@@ -15,7 +15,6 @@ object AnonStdin {
   @scala.inline
   def apply(stdin: ReadStream, stdout: WriteStream): AnonStdin = {
     val __obj = js.Dynamic.literal(stdin = stdin.asInstanceOf[js.Any], stdout = stdout.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonStdin]
   }
 }

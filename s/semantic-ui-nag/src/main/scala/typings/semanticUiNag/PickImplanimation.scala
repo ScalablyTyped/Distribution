@@ -14,7 +14,6 @@ object PickImplanimation {
   @scala.inline
   def apply(animation: AnimationSettings): PickImplanimation = {
     val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplanimation]
   }
 }

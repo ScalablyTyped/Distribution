@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 
 trait nivoScatterplotProps {
   @scala.inline
-  def ResponsiveScatterPlotProps: ScatterPlotSvgProps.type = typings.nivoScatterplot.mod.ScatterPlotSvgProps
+  def ResponsiveScatterPlotProps: ScatterPlotSvgProps.type = ScatterPlotSvgProps
   type ResponsiveScatterPlotProps = ScatterPlotSvgProps
   @scala.inline
-  def ResponsiveScatterPlotCanvasProps: ScatterPlotCanvasProps.type = typings.nivoScatterplot.mod.ScatterPlotCanvasProps
+  def ResponsiveScatterPlotCanvasProps: ScatterPlotCanvasProps.type = ScatterPlotCanvasProps
   type ResponsiveScatterPlotCanvasProps = ScatterPlotCanvasProps
 }
 

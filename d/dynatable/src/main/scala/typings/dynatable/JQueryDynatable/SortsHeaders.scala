@@ -104,7 +104,6 @@ object SortsHeaders {
     toggleSort: (Event_, JQuery, Column) => Unit
   ): SortsHeaders = {
     val __obj = js.Dynamic.literal(appendArrowDown = js.Any.fromFunction1(appendArrowDown), appendArrowUp = js.Any.fromFunction1(appendArrowUp), attach = js.Any.fromFunction0(attach), attachOne = js.Any.fromFunction1(attachOne), create = js.Any.fromFunction1(create), init = js.Any.fromFunction0(init), initOnLoad = js.Any.fromFunction0(initOnLoad), removeAll = js.Any.fromFunction0(removeAll), removeAllArrows = js.Any.fromFunction0(removeAllArrows), removeArrow = js.Any.fromFunction1(removeArrow), removeOne = js.Any.fromFunction1(removeOne), sortedByColumn = js.Any.fromFunction2(sortedByColumn), sortedByColumnValue = js.Any.fromFunction1(sortedByColumnValue), toggleSort = js.Any.fromFunction3(toggleSort))
-  
     __obj.asInstanceOf[SortsHeaders]
   }
 }

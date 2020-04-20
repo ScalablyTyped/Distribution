@@ -27,7 +27,6 @@ object WebApiProjectCollectionRef {
   @scala.inline
   def apply(collectionUrl: String, id: String, name: String, url: String): WebApiProjectCollectionRef = {
     val __obj = js.Dynamic.literal(collectionUrl = collectionUrl.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WebApiProjectCollectionRef]
   }
 }

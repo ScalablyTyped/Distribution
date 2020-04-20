@@ -13,7 +13,6 @@ object PickImplpageUp {
   @scala.inline
   def apply(pageUp: Double): PickImplpageUp = {
     val __obj = js.Dynamic.literal(pageUp = pageUp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplpageUp]
   }
 }

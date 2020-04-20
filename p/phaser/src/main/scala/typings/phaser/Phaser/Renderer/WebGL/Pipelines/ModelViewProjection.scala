@@ -172,7 +172,6 @@ object ModelViewProjection {
     viewTranslate: (Double, Double, Double) => ModelViewProjection
   ): ModelViewProjection = {
     val __obj = js.Dynamic.literal(modelIdentity = js.Any.fromFunction0(modelIdentity), modelMatrix = modelMatrix.asInstanceOf[js.Any], modelMatrixDirty = modelMatrixDirty.asInstanceOf[js.Any], modelRotateX = js.Any.fromFunction1(modelRotateX), modelRotateY = js.Any.fromFunction1(modelRotateY), modelRotateZ = js.Any.fromFunction1(modelRotateZ), modelScale = js.Any.fromFunction3(modelScale), modelTranslate = js.Any.fromFunction3(modelTranslate), mvpInit = js.Any.fromFunction0(mvpInit), mvpUpdate = js.Any.fromFunction0(mvpUpdate), projIdentity = js.Any.fromFunction0(projIdentity), projOrtho = js.Any.fromFunction6(projOrtho), projPersp = js.Any.fromFunction4(projPersp), projectionMatrix = projectionMatrix.asInstanceOf[js.Any], projectionMatrixDirty = projectionMatrixDirty.asInstanceOf[js.Any], viewIdentity = js.Any.fromFunction0(viewIdentity), viewLoad = js.Any.fromFunction1(viewLoad), viewLoad2D = js.Any.fromFunction1(viewLoad2D), viewMatrix = viewMatrix.asInstanceOf[js.Any], viewMatrixDirty = viewMatrixDirty.asInstanceOf[js.Any], viewRotateX = js.Any.fromFunction1(viewRotateX), viewRotateY = js.Any.fromFunction1(viewRotateY), viewRotateZ = js.Any.fromFunction1(viewRotateZ), viewScale = js.Any.fromFunction3(viewScale), viewTranslate = js.Any.fromFunction3(viewTranslate))
-  
     __obj.asInstanceOf[ModelViewProjection]
   }
 }

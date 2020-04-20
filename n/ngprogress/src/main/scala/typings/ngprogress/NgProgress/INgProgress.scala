@@ -28,7 +28,6 @@ object INgProgress {
     stop: () => Unit
   ): INgProgress = {
     val __obj = js.Dynamic.literal(color = js.Any.fromFunction1(color), complete = js.Any.fromFunction0(complete), height = js.Any.fromFunction1(height), reset = js.Any.fromFunction0(reset), set = js.Any.fromFunction1(set), start = js.Any.fromFunction0(start), status = js.Any.fromFunction0(status), stop = js.Any.fromFunction0(stop))
-  
     __obj.asInstanceOf[INgProgress]
   }
 }

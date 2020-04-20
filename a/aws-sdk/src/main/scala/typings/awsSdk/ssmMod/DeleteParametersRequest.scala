@@ -16,7 +16,6 @@ object DeleteParametersRequest {
   @scala.inline
   def apply(Names: ParameterNameList): DeleteParametersRequest = {
     val __obj = js.Dynamic.literal(Names = Names.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteParametersRequest]
   }
 }

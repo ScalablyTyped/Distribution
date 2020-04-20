@@ -62,110 +62,108 @@ trait PostalCodeLocale extends js.Object
 
 object PostalCodeLocale {
   @scala.inline
-  def AD: typings.expressValidator.expressValidatorStrings.AD = this.cast("AD")
+  def AD: typings.expressValidator.expressValidatorStrings.AD = "AD".asInstanceOf[typings.expressValidator.expressValidatorStrings.AD]
   @scala.inline
-  def AT: typings.expressValidator.expressValidatorStrings.AT = this.cast("AT")
+  def AT: typings.expressValidator.expressValidatorStrings.AT = "AT".asInstanceOf[typings.expressValidator.expressValidatorStrings.AT]
   @scala.inline
-  def AU: typings.expressValidator.expressValidatorStrings.AU = this.cast("AU")
+  def AU: typings.expressValidator.expressValidatorStrings.AU = "AU".asInstanceOf[typings.expressValidator.expressValidatorStrings.AU]
   @scala.inline
-  def BE: typings.expressValidator.expressValidatorStrings.BE = this.cast("BE")
+  def BE: typings.expressValidator.expressValidatorStrings.BE = "BE".asInstanceOf[typings.expressValidator.expressValidatorStrings.BE]
   @scala.inline
-  def BG: typings.expressValidator.expressValidatorStrings.BG = this.cast("BG")
+  def BG: typings.expressValidator.expressValidatorStrings.BG = "BG".asInstanceOf[typings.expressValidator.expressValidatorStrings.BG]
   @scala.inline
-  def BR: typings.expressValidator.expressValidatorStrings.BR = this.cast("BR")
+  def BR: typings.expressValidator.expressValidatorStrings.BR = "BR".asInstanceOf[typings.expressValidator.expressValidatorStrings.BR]
   @scala.inline
-  def CA: typings.expressValidator.expressValidatorStrings.CA = this.cast("CA")
+  def CA: typings.expressValidator.expressValidatorStrings.CA = "CA".asInstanceOf[typings.expressValidator.expressValidatorStrings.CA]
   @scala.inline
-  def CH: typings.expressValidator.expressValidatorStrings.CH = this.cast("CH")
+  def CH: typings.expressValidator.expressValidatorStrings.CH = "CH".asInstanceOf[typings.expressValidator.expressValidatorStrings.CH]
   @scala.inline
-  def CZ: typings.expressValidator.expressValidatorStrings.CZ = this.cast("CZ")
+  def CZ: typings.expressValidator.expressValidatorStrings.CZ = "CZ".asInstanceOf[typings.expressValidator.expressValidatorStrings.CZ]
   @scala.inline
-  def DE: typings.expressValidator.expressValidatorStrings.DE = this.cast("DE")
+  def DE: typings.expressValidator.expressValidatorStrings.DE = "DE".asInstanceOf[typings.expressValidator.expressValidatorStrings.DE]
   @scala.inline
-  def DK: typings.expressValidator.expressValidatorStrings.DK = this.cast("DK")
+  def DK: typings.expressValidator.expressValidatorStrings.DK = "DK".asInstanceOf[typings.expressValidator.expressValidatorStrings.DK]
   @scala.inline
-  def DZ: typings.expressValidator.expressValidatorStrings.DZ = this.cast("DZ")
+  def DZ: typings.expressValidator.expressValidatorStrings.DZ = "DZ".asInstanceOf[typings.expressValidator.expressValidatorStrings.DZ]
   @scala.inline
-  def EE: typings.expressValidator.expressValidatorStrings.EE = this.cast("EE")
+  def EE: typings.expressValidator.expressValidatorStrings.EE = "EE".asInstanceOf[typings.expressValidator.expressValidatorStrings.EE]
   @scala.inline
-  def ES: typings.expressValidator.expressValidatorStrings.ES = this.cast("ES")
+  def ES: typings.expressValidator.expressValidatorStrings.ES = "ES".asInstanceOf[typings.expressValidator.expressValidatorStrings.ES]
   @scala.inline
-  def FI: typings.expressValidator.expressValidatorStrings.FI = this.cast("FI")
+  def FI: typings.expressValidator.expressValidatorStrings.FI = "FI".asInstanceOf[typings.expressValidator.expressValidatorStrings.FI]
   @scala.inline
-  def FR: typings.expressValidator.expressValidatorStrings.FR = this.cast("FR")
+  def FR: typings.expressValidator.expressValidatorStrings.FR = "FR".asInstanceOf[typings.expressValidator.expressValidatorStrings.FR]
   @scala.inline
-  def GB: typings.expressValidator.expressValidatorStrings.GB = this.cast("GB")
+  def GB: typings.expressValidator.expressValidatorStrings.GB = "GB".asInstanceOf[typings.expressValidator.expressValidatorStrings.GB]
   @scala.inline
-  def GR: typings.expressValidator.expressValidatorStrings.GR = this.cast("GR")
+  def GR: typings.expressValidator.expressValidatorStrings.GR = "GR".asInstanceOf[typings.expressValidator.expressValidatorStrings.GR]
   @scala.inline
-  def HR: typings.expressValidator.expressValidatorStrings.HR = this.cast("HR")
+  def HR: typings.expressValidator.expressValidatorStrings.HR = "HR".asInstanceOf[typings.expressValidator.expressValidatorStrings.HR]
   @scala.inline
-  def HU: typings.expressValidator.expressValidatorStrings.HU = this.cast("HU")
+  def HU: typings.expressValidator.expressValidatorStrings.HU = "HU".asInstanceOf[typings.expressValidator.expressValidatorStrings.HU]
   @scala.inline
-  def ID: typings.expressValidator.expressValidatorStrings.ID = this.cast("ID")
+  def ID: typings.expressValidator.expressValidatorStrings.ID = "ID".asInstanceOf[typings.expressValidator.expressValidatorStrings.ID]
   @scala.inline
-  def IL: typings.expressValidator.expressValidatorStrings.IL = this.cast("IL")
+  def IL: typings.expressValidator.expressValidatorStrings.IL = "IL".asInstanceOf[typings.expressValidator.expressValidatorStrings.IL]
   @scala.inline
-  def IN: typings.expressValidator.expressValidatorStrings.IN = this.cast("IN")
+  def IN: typings.expressValidator.expressValidatorStrings.IN = "IN".asInstanceOf[typings.expressValidator.expressValidatorStrings.IN]
   @scala.inline
-  def IR: typings.expressValidator.expressValidatorStrings.IR = this.cast("IR")
+  def IR: typings.expressValidator.expressValidatorStrings.IR = "IR".asInstanceOf[typings.expressValidator.expressValidatorStrings.IR]
   @scala.inline
-  def IS: typings.expressValidator.expressValidatorStrings.IS = this.cast("IS")
+  def IS: typings.expressValidator.expressValidatorStrings.IS = "IS".asInstanceOf[typings.expressValidator.expressValidatorStrings.IS]
   @scala.inline
-  def IT: typings.expressValidator.expressValidatorStrings.IT = this.cast("IT")
+  def IT: typings.expressValidator.expressValidatorStrings.IT = "IT".asInstanceOf[typings.expressValidator.expressValidatorStrings.IT]
   @scala.inline
-  def JP: typings.expressValidator.expressValidatorStrings.JP = this.cast("JP")
+  def JP: typings.expressValidator.expressValidatorStrings.JP = "JP".asInstanceOf[typings.expressValidator.expressValidatorStrings.JP]
   @scala.inline
-  def KE: typings.expressValidator.expressValidatorStrings.KE = this.cast("KE")
+  def KE: typings.expressValidator.expressValidatorStrings.KE = "KE".asInstanceOf[typings.expressValidator.expressValidatorStrings.KE]
   @scala.inline
-  def LI: typings.expressValidator.expressValidatorStrings.LI = this.cast("LI")
+  def LI: typings.expressValidator.expressValidatorStrings.LI = "LI".asInstanceOf[typings.expressValidator.expressValidatorStrings.LI]
   @scala.inline
-  def LT: typings.expressValidator.expressValidatorStrings.LT = this.cast("LT")
+  def LT: typings.expressValidator.expressValidatorStrings.LT = "LT".asInstanceOf[typings.expressValidator.expressValidatorStrings.LT]
   @scala.inline
-  def LU: typings.expressValidator.expressValidatorStrings.LU = this.cast("LU")
+  def LU: typings.expressValidator.expressValidatorStrings.LU = "LU".asInstanceOf[typings.expressValidator.expressValidatorStrings.LU]
   @scala.inline
-  def LV: typings.expressValidator.expressValidatorStrings.LV = this.cast("LV")
+  def LV: typings.expressValidator.expressValidatorStrings.LV = "LV".asInstanceOf[typings.expressValidator.expressValidatorStrings.LV]
   @scala.inline
-  def MT: typings.expressValidator.expressValidatorStrings.MT = this.cast("MT")
+  def MT: typings.expressValidator.expressValidatorStrings.MT = "MT".asInstanceOf[typings.expressValidator.expressValidatorStrings.MT]
   @scala.inline
-  def MX: typings.expressValidator.expressValidatorStrings.MX = this.cast("MX")
+  def MX: typings.expressValidator.expressValidatorStrings.MX = "MX".asInstanceOf[typings.expressValidator.expressValidatorStrings.MX]
   @scala.inline
-  def NL: typings.expressValidator.expressValidatorStrings.NL = this.cast("NL")
+  def NL: typings.expressValidator.expressValidatorStrings.NL = "NL".asInstanceOf[typings.expressValidator.expressValidatorStrings.NL]
   @scala.inline
-  def NO: typings.expressValidator.expressValidatorStrings.NO = this.cast("NO")
+  def NO: typings.expressValidator.expressValidatorStrings.NO = "NO".asInstanceOf[typings.expressValidator.expressValidatorStrings.NO]
   @scala.inline
-  def NZ: typings.expressValidator.expressValidatorStrings.NZ = this.cast("NZ")
+  def NZ: typings.expressValidator.expressValidatorStrings.NZ = "NZ".asInstanceOf[typings.expressValidator.expressValidatorStrings.NZ]
   @scala.inline
-  def PL: typings.expressValidator.expressValidatorStrings.PL = this.cast("PL")
+  def PL: typings.expressValidator.expressValidatorStrings.PL = "PL".asInstanceOf[typings.expressValidator.expressValidatorStrings.PL]
   @scala.inline
-  def PR: typings.expressValidator.expressValidatorStrings.PR = this.cast("PR")
+  def PR: typings.expressValidator.expressValidatorStrings.PR = "PR".asInstanceOf[typings.expressValidator.expressValidatorStrings.PR]
   @scala.inline
-  def PT: typings.expressValidator.expressValidatorStrings.PT = this.cast("PT")
+  def PT: typings.expressValidator.expressValidatorStrings.PT = "PT".asInstanceOf[typings.expressValidator.expressValidatorStrings.PT]
   @scala.inline
-  def RO: typings.expressValidator.expressValidatorStrings.RO = this.cast("RO")
+  def RO: typings.expressValidator.expressValidatorStrings.RO = "RO".asInstanceOf[typings.expressValidator.expressValidatorStrings.RO]
   @scala.inline
-  def RU: typings.expressValidator.expressValidatorStrings.RU = this.cast("RU")
+  def RU: typings.expressValidator.expressValidatorStrings.RU = "RU".asInstanceOf[typings.expressValidator.expressValidatorStrings.RU]
   @scala.inline
-  def SA: typings.expressValidator.expressValidatorStrings.SA = this.cast("SA")
+  def SA: typings.expressValidator.expressValidatorStrings.SA = "SA".asInstanceOf[typings.expressValidator.expressValidatorStrings.SA]
   @scala.inline
-  def SE: typings.expressValidator.expressValidatorStrings.SE = this.cast("SE")
+  def SE: typings.expressValidator.expressValidatorStrings.SE = "SE".asInstanceOf[typings.expressValidator.expressValidatorStrings.SE]
   @scala.inline
-  def SI: typings.expressValidator.expressValidatorStrings.SI = this.cast("SI")
+  def SI: typings.expressValidator.expressValidatorStrings.SI = "SI".asInstanceOf[typings.expressValidator.expressValidatorStrings.SI]
   @scala.inline
-  def TN: typings.expressValidator.expressValidatorStrings.TN = this.cast("TN")
+  def TN: typings.expressValidator.expressValidatorStrings.TN = "TN".asInstanceOf[typings.expressValidator.expressValidatorStrings.TN]
   @scala.inline
-  def TW: typings.expressValidator.expressValidatorStrings.TW = this.cast("TW")
+  def TW: typings.expressValidator.expressValidatorStrings.TW = "TW".asInstanceOf[typings.expressValidator.expressValidatorStrings.TW]
   @scala.inline
-  def UA: typings.expressValidator.expressValidatorStrings.UA = this.cast("UA")
+  def UA: typings.expressValidator.expressValidatorStrings.UA = "UA".asInstanceOf[typings.expressValidator.expressValidatorStrings.UA]
   @scala.inline
-  def US: typings.expressValidator.expressValidatorStrings.US = this.cast("US")
+  def US: typings.expressValidator.expressValidatorStrings.US = "US".asInstanceOf[typings.expressValidator.expressValidatorStrings.US]
   @scala.inline
-  def ZA: typings.expressValidator.expressValidatorStrings.ZA = this.cast("ZA")
+  def ZA: typings.expressValidator.expressValidatorStrings.ZA = "ZA".asInstanceOf[typings.expressValidator.expressValidatorStrings.ZA]
   @scala.inline
-  def ZM: typings.expressValidator.expressValidatorStrings.ZM = this.cast("ZM")
+  def ZM: typings.expressValidator.expressValidatorStrings.ZM = "ZM".asInstanceOf[typings.expressValidator.expressValidatorStrings.ZM]
   @scala.inline
-  def any: typings.expressValidator.expressValidatorStrings.any = this.cast("any")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def any: typings.expressValidator.expressValidatorStrings.any = "any".asInstanceOf[typings.expressValidator.expressValidatorStrings.any]
 }
 

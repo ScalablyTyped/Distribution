@@ -13,12 +13,10 @@ trait PageLoadingStrategy extends js.Object
 
 object PageLoadingStrategy {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def eager: typings.webdriver.webdriverStrings.eager = "eager".asInstanceOf[typings.webdriver.webdriverStrings.eager]
   @scala.inline
-  def eager: typings.webdriver.webdriverStrings.eager = this.cast("eager")
+  def none: typings.webdriver.webdriverStrings.none = "none".asInstanceOf[typings.webdriver.webdriverStrings.none]
   @scala.inline
-  def none: typings.webdriver.webdriverStrings.none = this.cast("none")
-  @scala.inline
-  def normal: typings.webdriver.webdriverStrings.normal = this.cast("normal")
+  def normal: typings.webdriver.webdriverStrings.normal = "normal".asInstanceOf[typings.webdriver.webdriverStrings.normal]
 }
 

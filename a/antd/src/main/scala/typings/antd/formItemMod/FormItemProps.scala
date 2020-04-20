@@ -1,6 +1,8 @@
 package typings.antd.formItemMod
 
 import typings.antd.antdBooleans.`false`
+import typings.antd.formItemInputMod.FormItemInputProps
+import typings.antd.formItemLabelMod.FormItemLabelProps
 import typings.antd.gridColMod.ColProps
 import typings.antd.interfaceMod.FormLabelAlign
 import typings.rcFieldForm.fieldMod.ShouldUpdate
@@ -16,43 +18,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined parent antd.antd/lib/form/FormItemLabel.FormItemLabelProps */
-/* Inlined parent antd.antd/lib/form/FormItemInput.FormItemInputProps */
-/* Inlined parent std.Omit<antd.antd/lib/form/FormItem.RcFieldProps, 'children'> */
-trait FormItemProps extends js.Object {
+trait FormItemProps
+  extends FormItemLabelProps
+     with FormItemInputProps
+     with RcFieldProps {
   var children: ChildrenType
   var className: js.UndefOr[String] = js.undefined
-  var colon: js.UndefOr[Boolean] = js.undefined
-  var dependencies: js.UndefOr[js.Array[NamePath]] = js.undefined
-  var extra: js.UndefOr[ReactNode] = js.undefined
   /** Auto passed by List render props. User should not use this. */
   var fieldKey: js.UndefOr[Double] = js.undefined
-  var getValueFromEvent: js.UndefOr[js.Function1[/* args */ EventArgs, StoreValue]] = js.undefined
   var hasFeedback: js.UndefOr[Boolean] = js.undefined
-  var help: js.UndefOr[ReactNode] = js.undefined
-  var htmlFor: js.UndefOr[String] = js.undefined
   var id: js.UndefOr[String] = js.undefined
-  var label: js.UndefOr[ReactNode] = js.undefined
-  var labelAlign: js.UndefOr[FormLabelAlign] = js.undefined
-  var labelCol: js.UndefOr[ColProps] = js.undefined
-  var messageVariables: js.UndefOr[Record[String, String]] = js.undefined
-  var name: js.UndefOr[NamePath] = js.undefined
   var noStyle: js.UndefOr[Boolean] = js.undefined
-  var normalize: js.UndefOr[
-    js.Function3[/* value */ StoreValue, /* prevValue */ StoreValue, /* allValues */ Store, StoreValue]
-  ] = js.undefined
-  var onReset: js.UndefOr[js.Function0[Unit]] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
   var required: js.UndefOr[Boolean] = js.undefined
-  var rules: js.UndefOr[js.Array[Rule]] = js.undefined
-  var shouldUpdate: js.UndefOr[ShouldUpdate] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
-  var trigger: js.UndefOr[String] = js.undefined
-  var validateFirst: js.UndefOr[Boolean] = js.undefined
   var validateStatus: js.UndefOr[ValidateStatus] = js.undefined
-  var validateTrigger: js.UndefOr[String | js.Array[String] | `false`] = js.undefined
-  var valuePropName: js.UndefOr[String] = js.undefined
-  var wrapperCol: js.UndefOr[ColProps] = js.undefined
 }
 
 object FormItemProps {

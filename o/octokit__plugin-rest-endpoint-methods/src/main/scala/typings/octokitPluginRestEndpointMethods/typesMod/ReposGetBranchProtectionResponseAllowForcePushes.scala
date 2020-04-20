@@ -12,7 +12,6 @@ object ReposGetBranchProtectionResponseAllowForcePushes {
   @scala.inline
   def apply(enabled: Boolean): ReposGetBranchProtectionResponseAllowForcePushes = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReposGetBranchProtectionResponseAllowForcePushes]
   }
 }

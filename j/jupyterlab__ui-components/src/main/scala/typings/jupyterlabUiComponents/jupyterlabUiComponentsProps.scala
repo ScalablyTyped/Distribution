@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait jupyterlabUiComponentsProps {
   @scala.inline
-  def HTMLSelectProps: IHTMLSelectProps.type = typings.jupyterlabUiComponents.htmlselectMod.IHTMLSelectProps
+  def HTMLSelectProps: IHTMLSelectProps.type = IHTMLSelectProps
   type HTMLSelectProps = IHTMLSelectProps
 }
 

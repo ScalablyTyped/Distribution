@@ -18,22 +18,20 @@ trait ResourceType extends js.Object
 
 object ResourceType {
   @scala.inline
-  def Glyphs: typings.mapboxGl.mapboxGlStrings.Glyphs = this.cast("Glyphs")
+  def Glyphs: typings.mapboxGl.mapboxGlStrings.Glyphs = "Glyphs".asInstanceOf[typings.mapboxGl.mapboxGlStrings.Glyphs]
   @scala.inline
-  def Image: typings.mapboxGl.mapboxGlStrings.Image = this.cast("Image")
+  def Image: typings.mapboxGl.mapboxGlStrings.Image = "Image".asInstanceOf[typings.mapboxGl.mapboxGlStrings.Image]
   @scala.inline
-  def Source: typings.mapboxGl.mapboxGlStrings.Source = this.cast("Source")
+  def Source: typings.mapboxGl.mapboxGlStrings.Source = "Source".asInstanceOf[typings.mapboxGl.mapboxGlStrings.Source]
   @scala.inline
-  def SpriteImage: typings.mapboxGl.mapboxGlStrings.SpriteImage = this.cast("SpriteImage")
+  def SpriteImage: typings.mapboxGl.mapboxGlStrings.SpriteImage = "SpriteImage".asInstanceOf[typings.mapboxGl.mapboxGlStrings.SpriteImage]
   @scala.inline
-  def SpriteJSON: typings.mapboxGl.mapboxGlStrings.SpriteJSON = this.cast("SpriteJSON")
+  def SpriteJSON: typings.mapboxGl.mapboxGlStrings.SpriteJSON = "SpriteJSON".asInstanceOf[typings.mapboxGl.mapboxGlStrings.SpriteJSON]
   @scala.inline
-  def Style: typings.mapboxGl.mapboxGlStrings.Style = this.cast("Style")
+  def Style: typings.mapboxGl.mapboxGlStrings.Style = "Style".asInstanceOf[typings.mapboxGl.mapboxGlStrings.Style]
   @scala.inline
-  def Tile: typings.mapboxGl.mapboxGlStrings.Tile = this.cast("Tile")
+  def Tile: typings.mapboxGl.mapboxGlStrings.Tile = "Tile".asInstanceOf[typings.mapboxGl.mapboxGlStrings.Tile]
   @scala.inline
-  def Unknown: typings.mapboxGl.mapboxGlStrings.Unknown = this.cast("Unknown")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Unknown: typings.mapboxGl.mapboxGlStrings.Unknown = "Unknown".asInstanceOf[typings.mapboxGl.mapboxGlStrings.Unknown]
 }
 

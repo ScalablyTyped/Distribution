@@ -16,7 +16,6 @@ object AnonStateChangeRequired {
   @scala.inline
   def apply(acceptableStates: js.Tuple2[ENDED, PLAYING], stateChangeRequired: `false`): AnonStateChangeRequired = {
     val __obj = js.Dynamic.literal(acceptableStates = acceptableStates.asInstanceOf[js.Any], stateChangeRequired = stateChangeRequired.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonStateChangeRequired]
   }
 }

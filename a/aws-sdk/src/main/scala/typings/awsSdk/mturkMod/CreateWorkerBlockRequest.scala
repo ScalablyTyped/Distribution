@@ -20,7 +20,6 @@ object CreateWorkerBlockRequest {
   @scala.inline
   def apply(Reason: String, WorkerId: CustomerId): CreateWorkerBlockRequest = {
     val __obj = js.Dynamic.literal(Reason = Reason.asInstanceOf[js.Any], WorkerId = WorkerId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateWorkerBlockRequest]
   }
 }

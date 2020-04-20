@@ -16,7 +16,6 @@ object JasmineSpecReporter {
   @scala.inline
   def apply(specDone: () => Unit, specStarted: () => Unit, suiteDone: () => Unit, suiteStarted: () => Unit): JasmineSpecReporter = {
     val __obj = js.Dynamic.literal(specDone = js.Any.fromFunction0(specDone), specStarted = js.Any.fromFunction0(specStarted), suiteDone = js.Any.fromFunction0(suiteDone), suiteStarted = js.Any.fromFunction0(suiteStarted))
-  
     __obj.asInstanceOf[JasmineSpecReporter]
   }
 }

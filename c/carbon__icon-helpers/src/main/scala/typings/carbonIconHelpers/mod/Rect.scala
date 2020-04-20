@@ -15,7 +15,6 @@ object Rect {
   @scala.inline
   def apply(attrs: AnonHeight, elem: rect): Rect = {
     val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], elem = elem.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Rect]
   }
 }

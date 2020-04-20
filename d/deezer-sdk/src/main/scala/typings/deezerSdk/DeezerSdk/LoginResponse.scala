@@ -20,7 +20,6 @@ object LoginResponse {
   @scala.inline
   def apply(authResponse: AnonAccessToken_, status: connected | not_authorized, userID: String): LoginResponse = {
     val __obj = js.Dynamic.literal(authResponse = authResponse.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], userID = userID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LoginResponse]
   }
 }

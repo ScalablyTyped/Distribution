@@ -22,16 +22,14 @@ trait OfflineFolderStatus extends js.Object
 
 object OfflineFolderStatus {
   @scala.inline
-  def OFS_DIRTYCACHE: `3` = this.cast(3)
+  def OFS_DIRTYCACHE: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def OFS_INACTIVE: `-1` = this.cast(-1)
+  def OFS_INACTIVE: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def OFS_OFFLINE: `1` = this.cast(1)
+  def OFS_OFFLINE: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def OFS_ONLINE: `0` = this.cast(0)
+  def OFS_ONLINE: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def OFS_SERVERBACK: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def OFS_SERVERBACK: `2` = 2.asInstanceOf[`2`]
 }
 

@@ -14,7 +14,6 @@ object AnonGet {
   @scala.inline
   def apply(get: Sortable => js.Array[String], set: Sortable => Unit): AnonGet = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), set = js.Any.fromFunction1(set))
-  
     __obj.asInstanceOf[AnonGet]
   }
 }

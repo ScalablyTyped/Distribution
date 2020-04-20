@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 object reactLiveComponents extends reactLiveProps {
   @scala.inline
-  def Editor: ComponentType[EditorProps] = js.constructorOf[typings.reactLive.mod.Editor].asInstanceOf[typings.react.mod.ComponentType[EditorProps]]
+  def Editor: ComponentType[EditorProps] = js.constructorOf[typings.reactLive.mod.Editor].asInstanceOf[ComponentType[EditorProps]]
   @scala.inline
-  def LiveEditor: ComponentType[LiveEditorProps] = js.constructorOf[typings.reactLive.mod.LiveEditor].asInstanceOf[typings.react.mod.ComponentType[LiveEditorProps]]
+  def LiveEditor: ComponentType[LiveEditorProps] = js.constructorOf[typings.reactLive.mod.LiveEditor].asInstanceOf[ComponentType[LiveEditorProps]]
   @scala.inline
-  def LiveError: ComponentType[LiveErrorProps] = js.constructorOf[typings.reactLive.mod.LiveError].asInstanceOf[typings.react.mod.ComponentType[LiveErrorProps]]
+  def LiveError: ComponentType[LiveErrorProps] = js.constructorOf[typings.reactLive.mod.LiveError].asInstanceOf[ComponentType[LiveErrorProps]]
   @scala.inline
-  def LivePreview: ComponentType[LivePreviewProps] = js.constructorOf[typings.reactLive.mod.LivePreview].asInstanceOf[typings.react.mod.ComponentType[LivePreviewProps]]
+  def LivePreview: ComponentType[LivePreviewProps] = js.constructorOf[typings.reactLive.mod.LivePreview].asInstanceOf[ComponentType[LivePreviewProps]]
   @scala.inline
-  def LiveProvider: ComponentType[LiveProviderProps] = js.constructorOf[typings.reactLive.mod.LiveProvider].asInstanceOf[typings.react.mod.ComponentType[LiveProviderProps]]
+  def LiveProvider: ComponentType[LiveProviderProps] = js.constructorOf[typings.reactLive.mod.LiveProvider].asInstanceOf[ComponentType[LiveProviderProps]]
 }
 

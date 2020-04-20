@@ -16,18 +16,16 @@ trait arch extends js.Object
 
 object arch {
   @scala.inline
-  def all: typings.electronPackager.electronPackagerStrings.all = this.cast("all")
+  def all: typings.electronPackager.electronPackagerStrings.all = "all".asInstanceOf[typings.electronPackager.electronPackagerStrings.all]
   @scala.inline
-  def arm64: typings.electronPackager.electronPackagerStrings.arm64 = this.cast("arm64")
+  def arm64: typings.electronPackager.electronPackagerStrings.arm64 = "arm64".asInstanceOf[typings.electronPackager.electronPackagerStrings.arm64]
   @scala.inline
-  def armv7l: typings.electronPackager.electronPackagerStrings.armv7l = this.cast("armv7l")
+  def armv7l: typings.electronPackager.electronPackagerStrings.armv7l = "armv7l".asInstanceOf[typings.electronPackager.electronPackagerStrings.armv7l]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ia32: typings.electronPackager.electronPackagerStrings.ia32 = "ia32".asInstanceOf[typings.electronPackager.electronPackagerStrings.ia32]
   @scala.inline
-  def ia32: typings.electronPackager.electronPackagerStrings.ia32 = this.cast("ia32")
+  def mips64el: typings.electronPackager.electronPackagerStrings.mips64el = "mips64el".asInstanceOf[typings.electronPackager.electronPackagerStrings.mips64el]
   @scala.inline
-  def mips64el: typings.electronPackager.electronPackagerStrings.mips64el = this.cast("mips64el")
-  @scala.inline
-  def x64: typings.electronPackager.electronPackagerStrings.x64 = this.cast("x64")
+  def x64: typings.electronPackager.electronPackagerStrings.x64 = "x64".asInstanceOf[typings.electronPackager.electronPackagerStrings.x64]
 }
 

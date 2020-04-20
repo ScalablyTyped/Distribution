@@ -20,7 +20,6 @@ object PutDashboardInput {
   @scala.inline
   def apply(DashboardBody: DashboardBody, DashboardName: DashboardName): PutDashboardInput = {
     val __obj = js.Dynamic.literal(DashboardBody = DashboardBody.asInstanceOf[js.Any], DashboardName = DashboardName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutDashboardInput]
   }
 }

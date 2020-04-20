@@ -16,7 +16,6 @@ object DescribeCertificateAuthorityRequest {
   @scala.inline
   def apply(CertificateAuthorityArn: Arn): DescribeCertificateAuthorityRequest = {
     val __obj = js.Dynamic.literal(CertificateAuthorityArn = CertificateAuthorityArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeCertificateAuthorityRequest]
   }
 }

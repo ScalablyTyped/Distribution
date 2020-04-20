@@ -13,7 +13,6 @@ object PickImpldifferent {
   @scala.inline
   def apply(different: String): PickImpldifferent = {
     val __obj = js.Dynamic.literal(different = different.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpldifferent]
   }
 }

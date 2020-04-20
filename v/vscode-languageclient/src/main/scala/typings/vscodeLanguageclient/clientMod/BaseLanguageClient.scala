@@ -121,11 +121,11 @@ abstract class BaseLanguageClient protected () extends js.Object {
   var resolveConnection: js.Any = js.native
   var setDiagnostics: js.Any = js.native
   var showNotificationMessage: js.Any = js.native
-  def clientOptions(): LanguageClientOptions = js.native
-  def code2ProtocolConverter(): Converter = js.native
+  def clientOptions: LanguageClientOptions = js.native
+  def code2ProtocolConverter: Converter = js.native
   def createDefaultErrorHandler(): ErrorHandler = js.native
   /* protected */ def createMessageTransports(encoding: String): js.Promise[MessageTransports] = js.native
-  def diagnostics(): js.UndefOr[DiagnosticCollection] = js.native
+  def diagnostics: js.UndefOr[DiagnosticCollection] = js.native
   def error(message: String): Unit = js.native
   def error(message: String, data: js.Any): Unit = js.native
   def error(message: String, data: js.Any, showNotification: Boolean): Unit = js.native
@@ -190,11 +190,11 @@ abstract class BaseLanguageClient protected () extends js.Object {
   def info(message: String): Unit = js.native
   def info(message: String, data: js.Any): Unit = js.native
   def info(message: String, data: js.Any, showNotification: Boolean): Unit = js.native
-  def initializeResult(): js.UndefOr[InitializeResult[_]] = js.native
+  def initializeResult: js.UndefOr[InitializeResult[_]] = js.native
   def logFailedRequest(`type`: typings.vscodeJsonrpc.messagesMod.MessageType, error: js.Any): Unit = js.native
   def needsStart(): Boolean = js.native
   def needsStop(): Boolean = js.native
-  def onDidChangeState(): typings.vscodeJsonrpc.eventsMod.Event[StateChangeEvent] = js.native
+  def onDidChangeState: typings.vscodeJsonrpc.eventsMod.Event[StateChangeEvent] = js.native
   def onNotification(method: String, handler: GenericNotificationHandler): Unit = js.native
   def onNotification[RO](
     `type`: typings.vscodeLanguageserverProtocol.mod.NotificationType0[RO],
@@ -224,9 +224,9 @@ abstract class BaseLanguageClient protected () extends js.Object {
     `type`: typings.vscodeLanguageserverProtocol.mod.RequestType[P, R, E, RO],
     handler: RequestHandler[P, R, E]
   ): Unit = js.native
-  def onTelemetry(): typings.vscodeJsonrpc.eventsMod.Event[_] = js.native
-  def outputChannel(): OutputChannel = js.native
-  def protocol2CodeConverter(): typings.vscodeLanguageclient.protocolConverterMod.Converter = js.native
+  def onTelemetry: typings.vscodeJsonrpc.eventsMod.Event[_] = js.native
+  def outputChannel: OutputChannel = js.native
+  def protocol2CodeConverter: typings.vscodeLanguageclient.protocolConverterMod.Converter = js.native
   /* protected */ def registerBuiltinFeatures(): Unit = js.native
   def registerFeature(feature: DynamicFeature[_]): Unit = js.native
   def registerFeature(feature: StaticFeature): Unit = js.native
@@ -254,11 +254,11 @@ abstract class BaseLanguageClient protected () extends js.Object {
     token: typings.vscode.mod.CancellationToken
   ): js.Promise[R] = js.native
   def start(): typings.vscode.mod.Disposable = js.native
-  /* private */ def state(): js.Any = js.native
+  /* private */ def state: js.Any = js.native
   /* private */ def state(value: js.Any): js.Any = js.native
   def stop(): js.Promise[Unit] = js.native
   def trace(value: typings.vscodeJsonrpc.mod.Trace): js.Any = js.native
-  def traceOutputChannel(): OutputChannel = js.native
+  def traceOutputChannel: OutputChannel = js.native
   def warn(message: String): Unit = js.native
   def warn(message: String, data: js.Any): Unit = js.native
   def warn(message: String, data: js.Any, showNotification: Boolean): Unit = js.native

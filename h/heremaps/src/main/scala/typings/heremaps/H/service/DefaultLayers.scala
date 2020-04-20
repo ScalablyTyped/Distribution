@@ -18,7 +18,6 @@ object DefaultLayers {
   @scala.inline
   def apply(raster: AnonSatellite, vector: AnonNormal): DefaultLayers = {
     val __obj = js.Dynamic.literal(raster = raster.asInstanceOf[js.Any], vector = vector.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DefaultLayers]
   }
 }

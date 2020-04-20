@@ -2,13 +2,13 @@ package typings.blueprintjsDatetime.dateRangePickerMod
 
 import typings.blueprintjsCore.boundaryMod.Boundary
 import typings.blueprintjsCore.propsMod.IProps
+import typings.blueprintjsDatetime.AnonFormatDate
 import typings.blueprintjsDatetime.datePickerCoreMod.IDatePickerBaseProps
 import typings.blueprintjsDatetime.datePickerCoreMod.IDatePickerModifiers
 import typings.blueprintjsDatetime.dateUtilsMod.DateRange
 import typings.blueprintjsDatetime.shortcutsMod.IDateRangeShortcut
 import typings.blueprintjsDatetime.timePickerMod.ITimePickerProps
 import typings.blueprintjsDatetime.timePickerMod.TimePrecision
-import typings.reactDayPicker.propsMod.DayPickerProps
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -45,7 +45,9 @@ trait IDateRangePickerProps
     * `canChangeMonth`, `captionElement`, `numberOfMonths`, `fromMonth` (use
     * `minDate`), `month` (use `initialMonth`), `toMonth` (use `maxDate`).
     */
-  var dayPickerProps: js.UndefOr[DayPickerProps] = js.undefined
+  var dayPickerProps: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DayPickerProps */ js.Any
+  ] = js.undefined
   /**
     * Initial `DateRange` the calendar will display as selected.
     * This should not be set if `value` is set.
@@ -107,11 +109,11 @@ object IDateRangePickerProps {
     boundaryToModify: Boundary = null,
     className: String = null,
     contiguousCalendarMonths: js.UndefOr[Boolean] = js.undefined,
-    dayPickerProps: DayPickerProps = null,
+    dayPickerProps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DayPickerProps */ js.Any = null,
     defaultValue: DateRange = null,
     initialMonth: Date = null,
     locale: String = null,
-    localeUtils: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LocaleUtils */ js.Any = null,
+    localeUtils: AnonFormatDate = null,
     maxDate: Date = null,
     minDate: Date = null,
     modifiers: IDatePickerModifiers = null,

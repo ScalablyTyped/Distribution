@@ -12,7 +12,6 @@ object AnonMismatchString {
   @scala.inline
   def apply(mismatch: String): AnonMismatchString = {
     val __obj = js.Dynamic.literal(mismatch = mismatch.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMismatchString]
   }
 }

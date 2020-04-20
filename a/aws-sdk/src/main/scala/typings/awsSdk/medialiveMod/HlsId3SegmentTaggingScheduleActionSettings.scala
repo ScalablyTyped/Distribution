@@ -16,7 +16,6 @@ object HlsId3SegmentTaggingScheduleActionSettings {
   @scala.inline
   def apply(Tag: string): HlsId3SegmentTaggingScheduleActionSettings = {
     val __obj = js.Dynamic.literal(Tag = Tag.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HlsId3SegmentTaggingScheduleActionSettings]
   }
 }

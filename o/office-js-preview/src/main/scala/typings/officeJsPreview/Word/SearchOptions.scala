@@ -14,6 +14,8 @@ import scala.scalajs.js.annotation._
 /**
   *
   * Specifies the options to be included in a search operation.
+  * 
+  * To learn more about how to use search options in the Word JavaScript APIs, read {@link https://docs.microsoft.com/office/dev/add-ins/word/search-option-guidance | Use search options to find text in your Word add-in}.
   *
   * [Api set: WordApi 1.1]
   */

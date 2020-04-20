@@ -13,7 +13,6 @@ object JobEvent {
   @scala.inline
   def apply(jobId: String, name: String): JobEvent = {
     val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JobEvent]
   }
 }

@@ -16,7 +16,6 @@ object PickImplon {
   @scala.inline
   def apply(on: submit | blur | change): PickImplon = {
     val __obj = js.Dynamic.literal(on = on.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplon]
   }
 }

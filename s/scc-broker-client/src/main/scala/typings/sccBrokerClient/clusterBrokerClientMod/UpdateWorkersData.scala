@@ -13,7 +13,6 @@ object UpdateWorkersData {
   @scala.inline
   def apply(sourceWorkerURI: String, workerURIs: String): UpdateWorkersData = {
     val __obj = js.Dynamic.literal(sourceWorkerURI = sourceWorkerURI.asInstanceOf[js.Any], workerURIs = workerURIs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateWorkersData]
   }
 }

@@ -27,7 +27,6 @@ object IFileSavePickerUI {
     trySetFileName: String => SetFileNameResult
   ): IFileSavePickerUI = {
     val __obj = js.Dynamic.literal(allowedFileTypes = allowedFileTypes.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], onfilenamechanged = onfilenamechanged.asInstanceOf[js.Any], ontargetfilerequested = ontargetfilerequested.asInstanceOf[js.Any], settingsIdentifier = settingsIdentifier.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], trySetFileName = js.Any.fromFunction1(trySetFileName))
-  
     __obj.asInstanceOf[IFileSavePickerUI]
   }
 }

@@ -15,7 +15,6 @@ object AnonColumn {
   @scala.inline
   def apply(column: IColumn, index: Double, onMeasureDone: Double => Unit): AnonColumn = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], onMeasureDone = js.Any.fromFunction1(onMeasureDone))
-  
     __obj.asInstanceOf[AnonColumn]
   }
 }

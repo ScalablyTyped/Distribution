@@ -19,7 +19,6 @@ object ExtensionIdentifier {
   @scala.inline
   def apply(extensionName: String, publisherName: String): ExtensionIdentifier = {
     val __obj = js.Dynamic.literal(extensionName = extensionName.asInstanceOf[js.Any], publisherName = publisherName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExtensionIdentifier]
   }
 }

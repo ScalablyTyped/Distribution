@@ -20,7 +20,6 @@ object GetAliasRequest {
   @scala.inline
   def apply(FunctionName: FunctionName, Name: Alias): GetAliasRequest = {
     val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetAliasRequest]
   }
 }

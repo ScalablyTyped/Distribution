@@ -14,7 +14,6 @@ object ComponentSelector {
   @scala.inline
   def apply(__emotion_styles: js.Any): ComponentSelector = {
     val __obj = js.Dynamic.literal(__emotion_styles = __emotion_styles.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ComponentSelector]
   }
 }

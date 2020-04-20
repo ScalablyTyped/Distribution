@@ -27,10 +27,10 @@ class TableRow protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FTableRow: IModel = js.native
-  def cells(): IList[TableCell] = js.native
-  def conditionSettings(): ConditionSettings = js.native
+  def cells: IList[TableCell] = js.native
+  def conditionSettings: ConditionSettings = js.native
   def conditionSettings(newValue: ConditionSettings): js.Any = js.native
-  def containerAsTable(): Table = js.native
+  def containerAsTable: Table = js.native
 }
 
 /* static members */

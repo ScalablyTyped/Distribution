@@ -15,11 +15,11 @@ trait ComponentRef[C] extends js.Object {
   /**
     * The change detector for this component instance.
     */
-  def changeDetectorRef(): ChangeDetectorRef
+  def changeDetectorRef: ChangeDetectorRef
   /**
     * The type of this component (as created by a `ComponentFactory` class).
     */
-  def componentType(): Type[_]
+  def componentType: Type[_]
   /**
     * Destroys the component instance and all of the data structures associated with it.
     */
@@ -28,19 +28,19 @@ trait ComponentRef[C] extends js.Object {
     * The [host view](guide/glossary#view-tree) defined by the template
     * for this component instance.
     */
-  def hostView(): ViewRef
+  def hostView: ViewRef
   /**
     * The [dependency injector](guide/glossary#injector) for this component instance.
     */
-  def injector(): Injector
+  def injector: Injector
   /**
     * This component instance.
     */
-  def instance(): C
+  def instance: C
   /**
     * The host or anchor [element](guide/glossary#element) for this component instance.
     */
-  def location(): ElementRef[_]
+  def location: ElementRef[_]
   /**
     * A lifecycle hook that provides additional developer-defined cleanup
     * functionality for the component.
@@ -63,7 +63,6 @@ object ComponentRef {
     onDestroy: js.Function => Unit
   ): ComponentRef[C] = {
     val __obj = js.Dynamic.literal(changeDetectorRef = js.Any.fromFunction0(changeDetectorRef), componentType = js.Any.fromFunction0(componentType), destroy = js.Any.fromFunction0(destroy), hostView = js.Any.fromFunction0(hostView), injector = js.Any.fromFunction0(injector), instance = js.Any.fromFunction0(instance), location = js.Any.fromFunction0(location), onDestroy = js.Any.fromFunction1(onDestroy))
-  
     __obj.asInstanceOf[ComponentRef[C]]
   }
 }

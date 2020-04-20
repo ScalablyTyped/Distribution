@@ -35,7 +35,6 @@ object VirtualServiceData {
     virtualServiceName: ServiceName
   ): VirtualServiceData = {
     val __obj = js.Dynamic.literal(meshName = meshName.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], virtualServiceName = virtualServiceName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VirtualServiceData]
   }
 }

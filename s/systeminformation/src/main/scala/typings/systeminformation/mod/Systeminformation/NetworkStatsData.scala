@@ -34,7 +34,6 @@ object NetworkStatsData {
     tx_sec: Double
   ): NetworkStatsData = {
     val __obj = js.Dynamic.literal(iface = iface.asInstanceOf[js.Any], ms = ms.asInstanceOf[js.Any], operstate = operstate.asInstanceOf[js.Any], rx_bytes = rx_bytes.asInstanceOf[js.Any], rx_dropped = rx_dropped.asInstanceOf[js.Any], rx_errors = rx_errors.asInstanceOf[js.Any], rx_sec = rx_sec.asInstanceOf[js.Any], tx_bytes = tx_bytes.asInstanceOf[js.Any], tx_dropped = tx_dropped.asInstanceOf[js.Any], tx_errors = tx_errors.asInstanceOf[js.Any], tx_sec = tx_sec.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NetworkStatsData]
   }
 }

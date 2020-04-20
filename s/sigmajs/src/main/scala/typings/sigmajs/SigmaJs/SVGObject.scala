@@ -14,7 +14,6 @@ object SVGObject {
   @scala.inline
   def apply[T](create: (T, /* repeated */ js.Any) => Element, update: (T, /* repeated */ js.Any) => Unit): SVGObject[T] = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction2(create), update = js.Any.fromFunction2(update))
-  
     __obj.asInstanceOf[SVGObject[T]]
   }
 }

@@ -10,6 +10,7 @@ trait MapViewClickEvent extends js.Object {
   var buttons: js.Any
   var mapPoint: Point
   var native: js.Any
+  var screenPoint: js.Any
   var stopPropagation: js.Function
   var timestamp: Double
   var `type`: click
@@ -24,13 +25,14 @@ object MapViewClickEvent {
     buttons: js.Any,
     mapPoint: Point,
     native: js.Any,
+    screenPoint: js.Any,
     stopPropagation: js.Function,
     timestamp: Double,
     `type`: click,
     x: Double,
     y: Double
   ): MapViewClickEvent = {
-    val __obj = js.Dynamic.literal(button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], mapPoint = mapPoint.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any], stopPropagation = stopPropagation.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], mapPoint = mapPoint.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any], screenPoint = screenPoint.asInstanceOf[js.Any], stopPropagation = stopPropagation.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapViewClickEvent]
   }

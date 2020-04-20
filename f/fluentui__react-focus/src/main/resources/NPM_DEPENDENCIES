@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@fluentui/react-focus" : "7.1.12"
+      "@fluentui/react-focus" : "7.4.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@fluentui/react-focus" : "7.1.12"
+      "@fluentui/react-focus" : "7.4.2"
     }
   ],
   "compile-devDependencies" : [

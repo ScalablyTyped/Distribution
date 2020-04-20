@@ -16,7 +16,6 @@ object GetDedicatedIpRequest {
   @scala.inline
   def apply(Ip: Ip): GetDedicatedIpRequest = {
     val __obj = js.Dynamic.literal(Ip = Ip.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDedicatedIpRequest]
   }
 }

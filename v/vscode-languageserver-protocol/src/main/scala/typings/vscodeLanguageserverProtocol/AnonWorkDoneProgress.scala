@@ -12,7 +12,6 @@ object AnonWorkDoneProgress {
   @scala.inline
   def apply(workDoneProgress: Boolean): AnonWorkDoneProgress = {
     val __obj = js.Dynamic.literal(workDoneProgress = workDoneProgress.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonWorkDoneProgress]
   }
 }

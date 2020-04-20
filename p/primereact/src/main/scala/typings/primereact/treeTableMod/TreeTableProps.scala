@@ -22,6 +22,7 @@ trait TreeTableProps extends js.Object {
   var defaultSortOrder: js.UndefOr[Double] = js.undefined
   var emptyMessage: js.UndefOr[String] = js.undefined
   var expandedKeys: js.UndefOr[js.Any] = js.undefined
+  var filterLocale: js.UndefOr[String] = js.undefined
   var filterMode: js.UndefOr[String] = js.undefined
   var filters: js.UndefOr[js.Object] = js.undefined
   var first: js.UndefOr[Double] = js.undefined
@@ -93,6 +94,7 @@ object TreeTableProps {
     defaultSortOrder: Int | Double = null,
     emptyMessage: String = null,
     expandedKeys: js.Any = null,
+    filterLocale: String = null,
     filterMode: String = null,
     filters: js.Object = null,
     first: Int | Double = null,
@@ -161,6 +163,7 @@ object TreeTableProps {
     if (defaultSortOrder != null) __obj.updateDynamic("defaultSortOrder")(defaultSortOrder.asInstanceOf[js.Any])
     if (emptyMessage != null) __obj.updateDynamic("emptyMessage")(emptyMessage.asInstanceOf[js.Any])
     if (expandedKeys != null) __obj.updateDynamic("expandedKeys")(expandedKeys.asInstanceOf[js.Any])
+    if (filterLocale != null) __obj.updateDynamic("filterLocale")(filterLocale.asInstanceOf[js.Any])
     if (filterMode != null) __obj.updateDynamic("filterMode")(filterMode.asInstanceOf[js.Any])
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     if (first != null) __obj.updateDynamic("first")(first.asInstanceOf[js.Any])

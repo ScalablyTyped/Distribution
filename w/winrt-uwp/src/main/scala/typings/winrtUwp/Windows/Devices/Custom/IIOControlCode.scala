@@ -28,7 +28,6 @@ object IIOControlCode {
     function: Double
   ): IIOControlCode = {
     val __obj = js.Dynamic.literal(accessMode = accessMode.asInstanceOf[js.Any], bufferingMethod = bufferingMethod.asInstanceOf[js.Any], controlCode = controlCode.asInstanceOf[js.Any], deviceType = deviceType.asInstanceOf[js.Any], function = function.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IIOControlCode]
   }
 }

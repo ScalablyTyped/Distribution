@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "popmotion-pose"
-version := "3.4.11-86bf13"
+version := "3.4.11-8f513b"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "framesync" % "4.0.4-e92a0d",
-  "org.scalablytyped" %%% "popmotion" % "8.7.1-748b09",
+  "org.scalablytyped" %%% "framesync" % "4.0.4-140f2e",
+  "org.scalablytyped" %%% "popmotion" % "8.7.1-3871b3",
   "org.scalablytyped" %%% "popmotion__easing" % "1.0.2-77add4",
-  "org.scalablytyped" %%% "popmotion__popcorn" % "0.4.4-25b3a7",
-  "org.scalablytyped" %%% "pose-core" % "2.1.1-6a47c2",
-  "org.scalablytyped" %%% "std" % "3.8-a0108c",
-  "org.scalablytyped" %%% "style-value-types" % "3.1.7-ba2c92",
-  "org.scalablytyped" %%% "stylefire" % "7.0.2-87a891")
+  "org.scalablytyped" %%% "popmotion__popcorn" % "0.4.4-7861a3",
+  "org.scalablytyped" %%% "pose-core" % "2.1.1-831324",
+  "org.scalablytyped" %%% "std" % "3.8-9b2470",
+  "org.scalablytyped" %%% "style-value-types" % "3.1.7-3df265",
+  "org.scalablytyped" %%% "stylefire" % "7.0.2-365b15")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

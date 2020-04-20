@@ -37,7 +37,6 @@ object AudioInfo {
     tags: AnonDictkey
   ): AudioInfo = {
     val __obj = js.Dynamic.literal(bit_rate = bit_rate.asInstanceOf[js.Any], channels = channels.asInstanceOf[js.Any], codec_name = codec_name.asInstanceOf[js.Any], codec_type = codec_type.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], nb_frames = nb_frames.asInstanceOf[js.Any], r_frame_rate = r_frame_rate.asInstanceOf[js.Any], sample_fmt = sample_fmt.asInstanceOf[js.Any], sample_rate = sample_rate.asInstanceOf[js.Any], start_time = start_time.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AudioInfo]
   }
 }

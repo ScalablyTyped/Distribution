@@ -12,10 +12,8 @@ trait ScrollDirection extends js.Object
 
 object ScrollDirection {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def horizontal: typings.reactVirtualized.reactVirtualizedStrings.horizontal = "horizontal".asInstanceOf[typings.reactVirtualized.reactVirtualizedStrings.horizontal]
   @scala.inline
-  def horizontal: typings.reactVirtualized.reactVirtualizedStrings.horizontal = this.cast("horizontal")
-  @scala.inline
-  def vertical: typings.reactVirtualized.reactVirtualizedStrings.vertical = this.cast("vertical")
+  def vertical: typings.reactVirtualized.reactVirtualizedStrings.vertical = "vertical".asInstanceOf[typings.reactVirtualized.reactVirtualizedStrings.vertical]
 }
 

@@ -15,7 +15,6 @@ object Bewit {
   @scala.inline
   def apply(exp: String, ext: String, id: String, mac: String): Bewit = {
     val __obj = js.Dynamic.literal(exp = exp.asInstanceOf[js.Any], ext = ext.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Bewit]
   }
 }

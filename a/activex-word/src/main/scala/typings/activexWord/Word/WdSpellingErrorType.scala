@@ -16,12 +16,10 @@ trait WdSpellingErrorType extends js.Object
 
 object WdSpellingErrorType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdSpellingCapitalization: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdSpellingCapitalization: `2` = this.cast(2)
+  def wdSpellingCorrect: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdSpellingCorrect: `0` = this.cast(0)
-  @scala.inline
-  def wdSpellingNotInDictionary: `1` = this.cast(1)
+  def wdSpellingNotInDictionary: `1` = 1.asInstanceOf[`1`]
 }
 

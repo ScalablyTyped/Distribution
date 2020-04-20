@@ -16,7 +16,6 @@ object CreateRoleResponse {
   @scala.inline
   def apply(Role: Role): CreateRoleResponse = {
     val __obj = js.Dynamic.literal(Role = Role.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateRoleResponse]
   }
 }

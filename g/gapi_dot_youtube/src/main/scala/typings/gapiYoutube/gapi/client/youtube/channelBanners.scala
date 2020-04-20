@@ -18,7 +18,6 @@ object channelBanners {
   @scala.inline
   def apply(insert: AnonOnBehalfOfContentOwner => HttpRequest[GoogleApiYouTubeChannelBannerResource]): channelBanners = {
     val __obj = js.Dynamic.literal(insert = js.Any.fromFunction1(insert))
-  
     __obj.asInstanceOf[channelBanners]
   }
 }

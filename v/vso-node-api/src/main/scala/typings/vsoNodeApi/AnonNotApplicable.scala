@@ -24,7 +24,6 @@ object AnonNotApplicable {
     succeeded: Double
   ): AnonNotApplicable = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], failed = failed.asInstanceOf[js.Any], notApplicable = notApplicable.asInstanceOf[js.Any], notSet = notSet.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], succeeded = succeeded.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNotApplicable]
   }
 }

@@ -13,7 +13,6 @@ object ResizeContextProps {
   @scala.inline
   def apply(onColumnResize: (Key, Double) => Unit): ResizeContextProps = {
     val __obj = js.Dynamic.literal(onColumnResize = js.Any.fromFunction2(onColumnResize))
-  
     __obj.asInstanceOf[ResizeContextProps]
   }
 }

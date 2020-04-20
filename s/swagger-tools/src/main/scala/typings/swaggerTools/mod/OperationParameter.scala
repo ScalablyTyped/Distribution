@@ -13,7 +13,6 @@ object OperationParameter {
   @scala.inline
   def apply(path: js.Array[String], schema: SwaggerParameterSchema): OperationParameter = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OperationParameter]
   }
 }

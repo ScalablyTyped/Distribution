@@ -15,7 +15,6 @@ object AnonSortColumn {
   @scala.inline
   def apply[T /* <: js.Object */](sortColumn: ColumnDescription[T, _], sortOrder: SortOrder): AnonSortColumn[T] = {
     val __obj = js.Dynamic.literal(sortColumn = sortColumn.asInstanceOf[js.Any], sortOrder = sortOrder.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSortColumn[T]]
   }
 }

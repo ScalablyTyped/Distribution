@@ -29,28 +29,26 @@ trait FormType extends js.Object
 
 object FormType {
   @scala.inline
-  def BulkEdit: `6` = this.cast(6)
+  def BulkEdit: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def Create: `1` = this.cast(1)
+  def Create: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def Disabled: `4` = this.cast(4)
+  def Disabled: `4` = 4.asInstanceOf[`4`]
   /**
     * @deprecated QuickCreate has been deprecated
     */
   @scala.inline
-  def QuickCreate: `5` = this.cast(5)
+  def QuickCreate: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def ReadOnly: `3` = this.cast(3)
+  def ReadOnly: `3` = 3.asInstanceOf[`3`]
   /**
     * @deprecated ReadOptimized has been deprecated.
     */
   @scala.inline
-  def ReadOptimized: `11` = this.cast(11)
+  def ReadOptimized: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def Undefined: `0` = this.cast(0)
+  def Undefined: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def Update: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Update: `2` = 2.asInstanceOf[`2`]
 }
 

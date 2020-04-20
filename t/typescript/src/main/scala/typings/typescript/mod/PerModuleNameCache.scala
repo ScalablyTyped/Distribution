@@ -16,7 +16,6 @@ object PerModuleNameCache {
     set: (java.lang.String, ResolvedModuleWithFailedLookupLocations) => Unit
   ): PerModuleNameCache = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), set = js.Any.fromFunction2(set))
-  
     __obj.asInstanceOf[PerModuleNameCache]
   }
 }

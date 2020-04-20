@@ -29,7 +29,6 @@ object BaseInterface {
   @scala.inline
   def apply(detectedInterface: bdd | tdd | qunit, run: () => Unit): BaseInterface = {
     val __obj = js.Dynamic.literal(detectedInterface = detectedInterface.asInstanceOf[js.Any], run = js.Any.fromFunction0(run))
-  
     __obj.asInstanceOf[BaseInterface]
   }
 }

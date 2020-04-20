@@ -14,7 +14,7 @@ object deferredMod extends js.Object {
     var _resolve: js.Any = js.native
     var current: T = js.native
     def fail(e: js.Any): Unit = js.native
-    def promise(): js.Promise[T] = js.native
+    def promise: js.Promise[T] = js.native
     def set(value: T): Unit = js.native
     def update(value: T): Unit = js.native
   }

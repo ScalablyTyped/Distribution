@@ -22,7 +22,6 @@ object Subtitle {
   @scala.inline
   def apply(lang: String, url: String): Subtitle = {
     val __obj = js.Dynamic.literal(lang = lang.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Subtitle]
   }
 }

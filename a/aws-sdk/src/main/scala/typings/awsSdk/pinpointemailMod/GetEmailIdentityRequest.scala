@@ -16,7 +16,6 @@ object GetEmailIdentityRequest {
   @scala.inline
   def apply(EmailIdentity: Identity): GetEmailIdentityRequest = {
     val __obj = js.Dynamic.literal(EmailIdentity = EmailIdentity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetEmailIdentityRequest]
   }
 }

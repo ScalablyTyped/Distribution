@@ -20,16 +20,14 @@ trait MsoAnimAfterEffect extends js.Object
 
 object MsoAnimAfterEffect {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoAnimAfterEffectDim: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoAnimAfterEffectDim: `1` = this.cast(1)
+  def msoAnimAfterEffectHide: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoAnimAfterEffectHide: `2` = this.cast(2)
+  def msoAnimAfterEffectHideOnNextClick: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoAnimAfterEffectHideOnNextClick: `3` = this.cast(3)
+  def msoAnimAfterEffectMixed: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def msoAnimAfterEffectMixed: `-1` = this.cast(-1)
-  @scala.inline
-  def msoAnimAfterEffectNone: `0` = this.cast(0)
+  def msoAnimAfterEffectNone: `0` = 0.asInstanceOf[`0`]
 }
 

@@ -63,7 +63,6 @@ object AsyncResult {
   @scala.inline
   def apply[T](asyncContext: js.Any, diagnostics: js.Any, error: Error, status: AsyncResultStatus, value: T): AsyncResult[T] = {
     val __obj = js.Dynamic.literal(asyncContext = asyncContext.asInstanceOf[js.Any], diagnostics = diagnostics.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AsyncResult[T]]
   }
 }

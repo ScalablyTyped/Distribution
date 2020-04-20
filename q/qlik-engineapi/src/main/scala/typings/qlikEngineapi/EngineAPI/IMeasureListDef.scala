@@ -16,7 +16,6 @@ object IMeasureListDef {
   @scala.inline
   def apply(qType: measure): IMeasureListDef = {
     val __obj = js.Dynamic.literal(qType = qType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMeasureListDef]
   }
 }

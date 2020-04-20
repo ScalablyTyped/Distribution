@@ -44,7 +44,6 @@ object ConfigMapVolumeSource {
   @scala.inline
   def apply(defaultMode: Double, items: js.Array[KeyToPath], name: String, optional: Boolean): ConfigMapVolumeSource = {
     val __obj = js.Dynamic.literal(defaultMode = defaultMode.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConfigMapVolumeSource]
   }
 }

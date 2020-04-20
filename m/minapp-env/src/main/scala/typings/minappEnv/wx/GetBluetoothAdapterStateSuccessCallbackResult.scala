@@ -15,7 +15,6 @@ object GetBluetoothAdapterStateSuccessCallbackResult {
   @scala.inline
   def apply(available: Boolean, discovering: Boolean): GetBluetoothAdapterStateSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(available = available.asInstanceOf[js.Any], discovering = discovering.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBluetoothAdapterStateSuccessCallbackResult]
   }
 }

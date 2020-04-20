@@ -23,7 +23,7 @@ abstract class DataSetSource protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FDataSetSource: IModel = js.native
-  def containerAsDataSet(): DataSet = js.native
+  def containerAsDataSet: DataSet = js.native
 }
 
 /* static members */

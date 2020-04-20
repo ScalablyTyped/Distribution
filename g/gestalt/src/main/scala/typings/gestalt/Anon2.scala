@@ -17,7 +17,6 @@ object Anon2 {
   @scala.inline
   def apply(event: SyntheticEvent[KeyboardEvent[HTMLInputElement], Event_], value: String): Anon2 = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Anon2]
   }
 }

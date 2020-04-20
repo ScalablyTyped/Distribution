@@ -141,7 +141,7 @@ class ServiceManager_ () extends IManager {
     * A signal emitted when there is a connection failure with the kernel.
     */
   @JSName("connectionFailure")
-  def connectionFailure_MServiceManager_(): ISignal[this.type, Error] = js.native
+  def connectionFailure_MServiceManager_ : ISignal[this.type, Error] = js.native
   /**
     * Dispose of the resources held by the object.
     *
@@ -159,16 +159,16 @@ class ServiceManager_ () extends IManager {
     * Test whether the service manager is disposed.
     */
   @JSName("isDisposed")
-  def isDisposed_MServiceManager_(): Boolean = js.native
+  def isDisposed_MServiceManager_ : Boolean = js.native
   /**
     * Test whether the manager is ready.
     */
   @JSName("isReady")
-  def isReady_MServiceManager_(): Boolean = js.native
+  def isReady_MServiceManager_ : Boolean = js.native
   /**
     * A promise that fulfills when the manager is ready.
     */
   @JSName("ready")
-  def ready_MServiceManager_(): js.Promise[Unit] = js.native
+  def ready_MServiceManager_ : js.Promise[Unit] = js.native
 }
 

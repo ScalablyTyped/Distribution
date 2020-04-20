@@ -14,14 +14,12 @@ trait DirectionsProfile extends js.Object
 
 object DirectionsProfile {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cycling: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.cycling = "cycling".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.cycling]
   @scala.inline
-  def cycling: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.cycling = this.cast("cycling")
+  def driving: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.driving = "driving".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.driving]
   @scala.inline
-  def driving: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.driving = this.cast("driving")
+  def `driving-traffic`: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`driving-traffic` = "driving-traffic".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`driving-traffic`]
   @scala.inline
-  def `driving-traffic`: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`driving-traffic` = this.cast("driving-traffic")
-  @scala.inline
-  def walking: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.walking = this.cast("walking")
+  def walking: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.walking = "walking".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.walking]
 }
 

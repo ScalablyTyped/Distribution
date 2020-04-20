@@ -12,7 +12,6 @@ object AnonBucketKey {
   @scala.inline
   def apply(__bucketKey: js.Any): AnonBucketKey = {
     val __obj = js.Dynamic.literal(__bucketKey = __bucketKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBucketKey]
   }
 }

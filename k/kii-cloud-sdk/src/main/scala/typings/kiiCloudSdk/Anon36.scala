@@ -13,7 +13,6 @@ object Anon36 {
   @scala.inline
   def apply(failure: String => js.Any, success: () => js.Any): Anon36 = {
     val __obj = js.Dynamic.literal(failure = js.Any.fromFunction1(failure), success = js.Any.fromFunction0(success))
-  
     __obj.asInstanceOf[Anon36]
   }
 }

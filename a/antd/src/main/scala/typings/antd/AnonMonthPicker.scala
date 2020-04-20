@@ -76,7 +76,6 @@ object AnonMonthPicker {
     ]
   ): AnonMonthPicker[DateType] = {
     val __obj = js.Dynamic.literal(MonthPicker = MonthPicker.asInstanceOf[js.Any], RangePicker = RangePicker.asInstanceOf[js.Any], TimePicker = TimePicker.asInstanceOf[js.Any], WeekPicker = WeekPicker.asInstanceOf[js.Any], YearPicker = YearPicker.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMonthPicker[DateType]]
   }
 }

@@ -22,7 +22,6 @@ object TypeofhttpClient {
     query_post_hdrs: (String, String, String, String) => Double
   ): TypeofhttpClient = {
     val __obj = js.Dynamic.literal(curl_connect = js.Any.fromFunction3(curl_connect), curl_connect_post = js.Any.fromFunction5(curl_connect_post), query = js.Any.fromFunction2(query), query_post = js.Any.fromFunction3(query_post), query_post_hdrs = js.Any.fromFunction4(query_post_hdrs))
-  
     __obj.asInstanceOf[TypeofhttpClient]
   }
 }

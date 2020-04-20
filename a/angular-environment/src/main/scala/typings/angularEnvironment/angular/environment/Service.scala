@@ -29,7 +29,6 @@ object Service {
   @scala.inline
   def apply(get: () => String, is: String => Boolean, read: String => js.Any, set: String => Unit): Service = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get), is = js.Any.fromFunction1(is), read = js.Any.fromFunction1(read), set = js.Any.fromFunction1(set))
-  
     __obj.asInstanceOf[Service]
   }
 }

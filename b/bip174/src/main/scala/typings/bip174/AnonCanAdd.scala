@@ -24,7 +24,6 @@ object AnonCanAdd {
     expected: String
   ): AnonCanAdd = {
     val __obj = js.Dynamic.literal(canAdd = js.Any.fromFunction2(canAdd), check = js.Any.fromFunction1(check), decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode), expected = expected.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCanAdd]
   }
 }

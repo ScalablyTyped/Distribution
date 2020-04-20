@@ -22,18 +22,16 @@ trait styleMsOverflowStyle extends js.Object
 
 object styleMsOverflowStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleMsOverflowStyleAuto: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleMsOverflowStyleAuto: `1` = this.cast(1)
+  def styleMsOverflowStyleMsAutoHidingScrollbar: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def styleMsOverflowStyleMsAutoHidingScrollbar: `4` = this.cast(4)
+  def styleMsOverflowStyleNone: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleMsOverflowStyleNone: `2` = this.cast(2)
+  def styleMsOverflowStyleNotSet: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleMsOverflowStyleNotSet: `0` = this.cast(0)
+  def styleMsOverflowStyleScrollbar: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def styleMsOverflowStyleScrollbar: `3` = this.cast(3)
-  @scala.inline
-  def styleMsOverflowStyle_Max: `2147483647` = this.cast(2147483647)
+  def styleMsOverflowStyle_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

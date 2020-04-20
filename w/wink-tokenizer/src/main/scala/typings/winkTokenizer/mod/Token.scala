@@ -13,7 +13,6 @@ object Token {
   @scala.inline
   def apply(tag: Tag, value: String): Token = {
     val __obj = js.Dynamic.literal(tag = tag.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Token]
   }
 }

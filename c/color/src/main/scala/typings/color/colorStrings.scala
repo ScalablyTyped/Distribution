@@ -21,6 +21,9 @@ object colorStrings {
   sealed trait ansi256 extends js.Object
   
   @js.native
+  sealed trait apple extends js.Object
+  
+  @js.native
   sealed trait b16 extends js.Object
   
   @js.native
@@ -40,6 +43,9 @@ object colorStrings {
   
   @js.native
   sealed trait h extends js.Object
+  
+  @js.native
+  sealed trait hcg extends js.Object
   
   @js.native
   sealed trait hex extends js.Object
@@ -82,6 +88,8 @@ object colorStrings {
   @scala.inline
   def ansi256: ansi256 = "ansi256".asInstanceOf[ansi256]
   @scala.inline
+  def apple: apple = "apple".asInstanceOf[apple]
+  @scala.inline
   def b16: b16 = "b16".asInstanceOf[b16]
   @scala.inline
   def c: c = "c".asInstanceOf[c]
@@ -95,6 +103,8 @@ object colorStrings {
   def gray: gray = "gray".asInstanceOf[gray]
   @scala.inline
   def h: h = "h".asInstanceOf[h]
+  @scala.inline
+  def hcg: hcg = "hcg".asInstanceOf[hcg]
   @scala.inline
   def hex: hex = "hex".asInstanceOf[hex]
   @scala.inline

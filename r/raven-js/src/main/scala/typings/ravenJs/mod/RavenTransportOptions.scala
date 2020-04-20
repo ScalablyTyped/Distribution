@@ -24,7 +24,6 @@ object RavenTransportOptions {
     url: String
   ): RavenTransportOptions = {
     val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], onError = js.Any.fromFunction1(onError), onSuccess = js.Any.fromFunction0(onSuccess), url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RavenTransportOptions]
   }
 }

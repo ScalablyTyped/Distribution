@@ -34,7 +34,6 @@ object IDelimiterInfo {
   @scala.inline
   def apply(qIsMultiple: Boolean, qName: String, qNumber: Double, qScriptCode: String): IDelimiterInfo = {
     val __obj = js.Dynamic.literal(qIsMultiple = qIsMultiple.asInstanceOf[js.Any], qName = qName.asInstanceOf[js.Any], qNumber = qNumber.asInstanceOf[js.Any], qScriptCode = qScriptCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDelimiterInfo]
   }
 }

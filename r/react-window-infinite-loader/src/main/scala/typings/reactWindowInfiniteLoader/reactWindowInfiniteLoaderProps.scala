@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactWindowInfiniteLoaderProps {
   @scala.inline
-  def ReactWindowInfiniteLoaderProps: InfiniteLoaderProps.type = typings.reactWindowInfiniteLoader.mod.InfiniteLoaderProps
+  def ReactWindowInfiniteLoaderProps: InfiniteLoaderProps.type = InfiniteLoaderProps
   type ReactWindowInfiniteLoaderProps = InfiniteLoaderProps
 }
 

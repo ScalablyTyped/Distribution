@@ -19,7 +19,7 @@ object serializationComponentsMod extends js.Object {
   abstract class SerializerComponent[T] protected () extends js.Object {
     def this(owner: Serializer) = this()
     var owner: Serializer = js.native
-    def priority(): Double = js.native
+    def priority: Double = js.native
     def serializeGroup(instance: js.Any): Boolean = js.native
     def supports(item: js.Any): Boolean = js.native
     def toObject(item: T): Partial[ModelToObject[T]] = js.native

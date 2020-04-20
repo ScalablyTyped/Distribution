@@ -13,7 +13,6 @@ object AnonExceptCacheKey {
   @scala.inline
   def apply(exceptCacheKey: GraphQLCacheKey): AnonExceptCacheKey = {
     val __obj = js.Dynamic.literal(exceptCacheKey = exceptCacheKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonExceptCacheKey]
   }
 }

@@ -30,7 +30,6 @@ object StageChangeEventArguments {
   @scala.inline
   def apply(getDirection: () => StageChangeDirection, getStage: () => Stage, preventDefault: () => Unit): StageChangeEventArguments = {
     val __obj = js.Dynamic.literal(getDirection = js.Any.fromFunction0(getDirection), getStage = js.Any.fromFunction0(getStage), preventDefault = js.Any.fromFunction0(preventDefault))
-  
     __obj.asInstanceOf[StageChangeEventArguments]
   }
 }

@@ -16,12 +16,10 @@ trait RECURSE extends js.Object
 
 object RECURSE {
   @scala.inline
-  def NO: `0` = this.cast(0)
+  def NO: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def ONDEMAND: `2` = this.cast(2)
+  def ONDEMAND: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def YES: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def YES: `1` = 1.asInstanceOf[`1`]
 }
 

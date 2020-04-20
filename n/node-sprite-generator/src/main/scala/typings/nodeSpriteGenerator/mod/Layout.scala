@@ -15,7 +15,6 @@ object Layout {
   @scala.inline
   def apply(height: Double, images: js.Array[xnumberynumberImage], width: Double): Layout = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Layout]
   }
 }

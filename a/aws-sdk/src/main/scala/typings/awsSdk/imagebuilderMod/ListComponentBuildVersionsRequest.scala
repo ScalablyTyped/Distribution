@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListComponentBuildVersionsRequest extends js.Object {
   /**
-    *  The component version Amazon Resource Name (ARN) whose versions you want to list. 
+    * The component version Amazon Resource Name (ARN) whose versions you want to list. 
     */
   var componentVersionArn: ComponentVersionArn = js.native
   /**
-    *  The maximum items to return in a request. 
+    * The maximum items to return in a request. 
     */
   var maxResults: js.UndefOr[RestrictedInteger] = js.native
   /**
-    *  A token to specify where to start paginating. This is the NextToken from a previously truncated response. 
+    * A token to specify where to start paginating. This is the NextToken from a previously truncated response. 
     */
   var nextToken: js.UndefOr[NonEmptyString] = js.native
 }

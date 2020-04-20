@@ -15,7 +15,6 @@ object BaseTransition {
   @scala.inline
   def apply(in: Boolean, onExited: () => Unit): BaseTransition = {
     val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any], onExited = js.Any.fromFunction0(onExited))
-  
     __obj.asInstanceOf[BaseTransition]
   }
 }

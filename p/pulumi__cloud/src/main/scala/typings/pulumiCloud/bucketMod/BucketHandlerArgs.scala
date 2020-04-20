@@ -23,7 +23,6 @@ object BucketHandlerArgs {
   @scala.inline
   def apply(eventTime: String, key: String, size: Double): BucketHandlerArgs = {
     val __obj = js.Dynamic.literal(eventTime = eventTime.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BucketHandlerArgs]
   }
 }

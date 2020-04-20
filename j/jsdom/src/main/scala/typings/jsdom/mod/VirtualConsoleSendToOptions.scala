@@ -12,7 +12,6 @@ object VirtualConsoleSendToOptions {
   @scala.inline
   def apply(omitJSDOMErrors: Boolean): VirtualConsoleSendToOptions = {
     val __obj = js.Dynamic.literal(omitJSDOMErrors = omitJSDOMErrors.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VirtualConsoleSendToOptions]
   }
 }

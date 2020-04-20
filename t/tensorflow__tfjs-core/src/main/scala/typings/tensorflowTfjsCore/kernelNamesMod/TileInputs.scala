@@ -13,7 +13,6 @@ object TileInputs {
   @scala.inline
   def apply(x: js.Any): TileInputs = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TileInputs]
   }
 }

@@ -14,7 +14,6 @@ object BufferCacheEntry {
   @scala.inline
   def apply(buffer: typings.ol.bufferMod.default, webGlBuffer: WebGLBuffer): BufferCacheEntry = {
     val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], webGlBuffer = webGlBuffer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BufferCacheEntry]
   }
 }

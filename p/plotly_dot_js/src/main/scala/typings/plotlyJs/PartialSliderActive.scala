@@ -2,8 +2,6 @@ package typings.plotlyJs
 
 import typings.plotlyJs.mod.Color
 import typings.plotlyJs.mod.Font
-import typings.plotlyJs.mod.Padding
-import typings.plotlyJs.mod.SliderStep
 import typings.plotlyJs.mod.Transition
 import typings.plotlyJs.plotlyJsStrings.auto
 import typings.plotlyJs.plotlyJsStrings.bottom
@@ -14,7 +12,6 @@ import typings.plotlyJs.plotlyJsStrings.middle
 import typings.plotlyJs.plotlyJsStrings.pixels
 import typings.plotlyJs.plotlyJsStrings.right
 import typings.plotlyJs.plotlyJsStrings.top
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,13 +23,13 @@ trait PartialSliderActive extends js.Object {
   var bgcolor: js.UndefOr[Color] = js.undefined
   var bordercolor: js.UndefOr[Color] = js.undefined
   var borderwidth: js.UndefOr[Double] = js.undefined
-  var currentvalue: js.UndefOr[AnonFont] = js.undefined
+  var currentvalue: js.UndefOr[AnonOffset] = js.undefined
   var font: js.UndefOr[Font] = js.undefined
   var len: js.UndefOr[Double] = js.undefined
   var lenmode: js.UndefOr[fraction | pixels] = js.undefined
   var minorticklen: js.UndefOr[Double] = js.undefined
-  var pad: js.UndefOr[Partial[Padding]] = js.undefined
-  var steps: js.UndefOr[js.Array[Partial[SliderStep]]] = js.undefined
+  var pad: js.UndefOr[PartialPadding] = js.undefined
+  var steps: js.UndefOr[js.Array[PartialSliderStep]] = js.undefined
   var tickcolor: js.UndefOr[Color] = js.undefined
   var ticklen: js.UndefOr[Double] = js.undefined
   var tickwidth: js.UndefOr[Double] = js.undefined
@@ -52,13 +49,13 @@ object PartialSliderActive {
     bgcolor: Color = null,
     bordercolor: Color = null,
     borderwidth: Int | Double = null,
-    currentvalue: AnonFont = null,
+    currentvalue: AnonOffset = null,
     font: Font = null,
     len: Int | Double = null,
     lenmode: fraction | pixels = null,
     minorticklen: Int | Double = null,
-    pad: Partial[Padding] = null,
-    steps: js.Array[Partial[SliderStep]] = null,
+    pad: PartialPadding = null,
+    steps: js.Array[PartialSliderStep] = null,
     tickcolor: Color = null,
     ticklen: Int | Double = null,
     tickwidth: Int | Double = null,

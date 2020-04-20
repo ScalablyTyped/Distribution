@@ -13,7 +13,6 @@ object Middleware {
   @scala.inline
   def apply(runner: Runner): Middleware = {
     val __obj = js.Dynamic.literal(runner = runner.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Middleware]
   }
 }

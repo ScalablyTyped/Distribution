@@ -12,7 +12,6 @@ object AuthProvider {
   @scala.inline
   def apply(newAuthenticator: (String, String) => Authenticator): AuthProvider = {
     val __obj = js.Dynamic.literal(newAuthenticator = js.Any.fromFunction2(newAuthenticator))
-  
     __obj.asInstanceOf[AuthProvider]
   }
 }

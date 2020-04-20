@@ -14,7 +14,6 @@ object AnonTables {
   @scala.inline
   def apply(tables: SubscriptionTables): AnonTables = {
     val __obj = js.Dynamic.literal(tables = tables.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTables]
   }
 }

@@ -20,7 +20,6 @@ object GetIntegrationRequest {
   @scala.inline
   def apply(ApiId: string, IntegrationId: string): GetIntegrationRequest = {
     val __obj = js.Dynamic.literal(ApiId = ApiId.asInstanceOf[js.Any], IntegrationId = IntegrationId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetIntegrationRequest]
   }
 }

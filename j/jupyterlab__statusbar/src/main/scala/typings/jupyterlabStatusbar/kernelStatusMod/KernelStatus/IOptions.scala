@@ -19,7 +19,6 @@ object IOptions {
   @scala.inline
   def apply(onClick: () => Unit): IOptions = {
     val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction0(onClick))
-  
     __obj.asInstanceOf[IOptions]
   }
 }

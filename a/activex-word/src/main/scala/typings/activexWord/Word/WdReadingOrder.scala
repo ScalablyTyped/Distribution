@@ -14,10 +14,8 @@ trait WdReadingOrder extends js.Object
 
 object WdReadingOrder {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdReadingOrderLtr: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdReadingOrderLtr: `1` = this.cast(1)
-  @scala.inline
-  def wdReadingOrderRtl: `0` = this.cast(0)
+  def wdReadingOrderRtl: `0` = 0.asInstanceOf[`0`]
 }
 

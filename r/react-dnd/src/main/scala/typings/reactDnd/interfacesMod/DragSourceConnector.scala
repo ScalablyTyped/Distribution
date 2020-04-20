@@ -32,7 +32,6 @@ object DragSourceConnector {
   @scala.inline
   def apply(dragPreview: () => ConnectDragPreview, dragSource: () => ConnectDragSource): DragSourceConnector = {
     val __obj = js.Dynamic.literal(dragPreview = js.Any.fromFunction0(dragPreview), dragSource = js.Any.fromFunction0(dragSource))
-  
     __obj.asInstanceOf[DragSourceConnector]
   }
 }

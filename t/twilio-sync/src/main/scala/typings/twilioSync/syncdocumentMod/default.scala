@@ -28,6 +28,6 @@ class default protected () extends SyncDocument {
 @JSImport("twilio-sync/lib/syncdocument", JSImport.Default)
 @js.native
 object default extends js.Object {
-  val `type`: String = js.native
+  def `type`: String = js.native
 }
 

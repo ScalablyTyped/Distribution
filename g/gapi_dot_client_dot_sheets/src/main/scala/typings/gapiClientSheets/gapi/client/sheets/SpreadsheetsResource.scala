@@ -65,6 +65,7 @@ trait SpreadsheetsResource extends js.Object {
     * return only the portions of the spreadsheet that intersect the requested
     * ranges. Ranges are specified using A1 notation.
     */
+  def get(): Request_[Spreadsheet] = js.native
   def get(request: AnonIncludeGridData): Request_[Spreadsheet] = js.native
   /**
     * Returns the spreadsheet at the given ID.

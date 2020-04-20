@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait jupyterlabJsonExtensionProps {
   @scala.inline
-  def ComponentProps: IProps.type = typings.jupyterlabJsonExtension.componentMod.IProps
+  def ComponentProps: IProps.type = IProps
   type ComponentProps = IProps
 }
 

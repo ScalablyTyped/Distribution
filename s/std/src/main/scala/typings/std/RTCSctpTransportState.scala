@@ -13,12 +13,10 @@ trait RTCSctpTransportState extends js.Object
 
 object RTCSctpTransportState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def closed: typings.std.stdStrings.closed = "closed".asInstanceOf[typings.std.stdStrings.closed]
   @scala.inline
-  def closed: typings.std.stdStrings.closed = this.cast("closed")
+  def connected: typings.std.stdStrings.connected = "connected".asInstanceOf[typings.std.stdStrings.connected]
   @scala.inline
-  def connected: typings.std.stdStrings.connected = this.cast("connected")
-  @scala.inline
-  def connecting: typings.std.stdStrings.connecting = this.cast("connecting")
+  def connecting: typings.std.stdStrings.connecting = "connecting".asInstanceOf[typings.std.stdStrings.connecting]
 }
 

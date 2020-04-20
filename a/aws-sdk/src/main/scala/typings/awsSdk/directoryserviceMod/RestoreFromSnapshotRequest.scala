@@ -16,7 +16,6 @@ object RestoreFromSnapshotRequest {
   @scala.inline
   def apply(SnapshotId: SnapshotId): RestoreFromSnapshotRequest = {
     val __obj = js.Dynamic.literal(SnapshotId = SnapshotId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RestoreFromSnapshotRequest]
   }
 }

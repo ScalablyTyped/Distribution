@@ -20,7 +20,6 @@ object DeleteBackendEnvironmentRequest {
   @scala.inline
   def apply(appId: AppId, environmentName: EnvironmentName): DeleteBackendEnvironmentRequest = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], environmentName = environmentName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteBackendEnvironmentRequest]
   }
 }

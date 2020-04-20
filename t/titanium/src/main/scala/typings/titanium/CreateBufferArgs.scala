@@ -19,11 +19,11 @@ trait CreateBufferArgs extends js.Object {
   /**
   	 * The type of data encoding to use with `value`.
   	 */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * An initial value which will be encoded and placed in the buffer. If value is a Number, type must also be set. (this is simply a convenient way of calling <Titanium.Codec.encodeString> or <Titanium.Codec.encodeNumber> and placing the encoded value in the returned buffer.)
   	 */
-  var value: js.UndefOr[String | Double] = js.undefined
+  var value: js.UndefOr[java.lang.String | Double] = js.undefined
 }
 
 object CreateBufferArgs {
@@ -31,8 +31,8 @@ object CreateBufferArgs {
   def apply(
     byteOrder: Int | Double = null,
     length: Int | Double = null,
-    `type`: String = null,
-    value: String | Double = null
+    `type`: java.lang.String = null,
+    value: java.lang.String | Double = null
   ): CreateBufferArgs = {
     val __obj = js.Dynamic.literal()
     if (byteOrder != null) __obj.updateDynamic("byteOrder")(byteOrder.asInstanceOf[js.Any])

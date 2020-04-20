@@ -15,7 +15,6 @@ object ComponentState {
   @scala.inline
   def apply(childPanGestureHandlerRefs: js.Array[RefObject[PanGestureHandler]], enabled: Boolean): ComponentState = {
     val __obj = js.Dynamic.literal(childPanGestureHandlerRefs = childPanGestureHandlerRefs.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ComponentState]
   }
 }

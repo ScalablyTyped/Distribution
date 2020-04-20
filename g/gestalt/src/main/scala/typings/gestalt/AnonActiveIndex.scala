@@ -18,7 +18,6 @@ object AnonActiveIndex {
   @scala.inline
   def apply(activeIndex: Double, event: SyntheticEvent[MouseEvent[Element, NativeMouseEvent], Event_]): AnonActiveIndex = {
     val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonActiveIndex]
   }
 }

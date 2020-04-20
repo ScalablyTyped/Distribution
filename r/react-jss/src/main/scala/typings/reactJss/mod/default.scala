@@ -15,13 +15,13 @@ object default extends js.Object {
   def apply[ClassNames /* <: String | Double | js.Symbol */, S /* <: Styles[ClassNames] | (js.Function1[/* theme */ js.Any, Styles[ClassNames]]) */](styles: S): js.Function1[
     /* comp */ ComponentType[AnonClasses[S, ClassNames]], 
     ComponentType[
-      (Omit[AnonClasses[S, ClassNames], classes]) with (AnonClassesPartial[AnonClasses[S, ClassNames]])
+      (Omit[AnonClasses[S, ClassNames], classes]) with (AnonClassesPartial[AnonClasses[S, ClassNames], S, ClassNames])
     ]
   ] = js.native
   def apply[ClassNames /* <: String | Double | js.Symbol */, S /* <: Styles[ClassNames] | (js.Function1[/* theme */ js.Any, Styles[ClassNames]]) */](styles: S, options: WithStylesOptions): js.Function1[
     /* comp */ ComponentType[AnonClasses[S, ClassNames]], 
     ComponentType[
-      (Omit[AnonClasses[S, ClassNames], classes]) with (AnonClassesPartial[AnonClasses[S, ClassNames]])
+      (Omit[AnonClasses[S, ClassNames], classes]) with (AnonClassesPartial[AnonClasses[S, ClassNames], S, ClassNames])
     ]
   ] = js.native
 }

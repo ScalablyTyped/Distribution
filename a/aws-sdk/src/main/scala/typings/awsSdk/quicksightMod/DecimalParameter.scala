@@ -20,7 +20,6 @@ object DecimalParameter {
   @scala.inline
   def apply(Name: NonEmptyString, Values: DoubleList): DecimalParameter = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DecimalParameter]
   }
 }

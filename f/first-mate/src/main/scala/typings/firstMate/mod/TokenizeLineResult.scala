@@ -37,7 +37,6 @@ object TokenizeLineResult {
     tokens: js.Array[GrammarToken]
   ): TokenizeLineResult = {
     val __obj = js.Dynamic.literal(line = line.asInstanceOf[js.Any], ruleStack = ruleStack.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TokenizeLineResult]
   }
 }

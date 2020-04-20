@@ -30,46 +30,44 @@ trait MangoOperator extends js.Object
 
 object MangoOperator {
   @scala.inline
-  def $all: typings.nano.nanoStrings.$all = this.cast("$all")
+  def $all: typings.nano.nanoStrings.$all = "$all".asInstanceOf[typings.nano.nanoStrings.$all]
   @scala.inline
-  def $allMatch: typings.nano.nanoStrings.$allMatch = this.cast("$allMatch")
+  def $allMatch: typings.nano.nanoStrings.$allMatch = "$allMatch".asInstanceOf[typings.nano.nanoStrings.$allMatch]
   @scala.inline
-  def $and: typings.nano.nanoStrings.$and = this.cast("$and")
+  def $and: typings.nano.nanoStrings.$and = "$and".asInstanceOf[typings.nano.nanoStrings.$and]
   @scala.inline
-  def $elemMatch: typings.nano.nanoStrings.$elemMatch = this.cast("$elemMatch")
+  def $elemMatch: typings.nano.nanoStrings.$elemMatch = "$elemMatch".asInstanceOf[typings.nano.nanoStrings.$elemMatch]
   @scala.inline
-  def $eq: typings.nano.nanoStrings.$eq = this.cast("$eq")
+  def $eq: typings.nano.nanoStrings.$eq = "$eq".asInstanceOf[typings.nano.nanoStrings.$eq]
   @scala.inline
-  def $exists: typings.nano.nanoStrings.$exists = this.cast("$exists")
+  def $exists: typings.nano.nanoStrings.$exists = "$exists".asInstanceOf[typings.nano.nanoStrings.$exists]
   @scala.inline
-  def $gt: typings.nano.nanoStrings.$gt = this.cast("$gt")
+  def $gt: typings.nano.nanoStrings.$gt = "$gt".asInstanceOf[typings.nano.nanoStrings.$gt]
   @scala.inline
-  def $gte: typings.nano.nanoStrings.$gte = this.cast("$gte")
+  def $gte: typings.nano.nanoStrings.$gte = "$gte".asInstanceOf[typings.nano.nanoStrings.$gte]
   @scala.inline
-  def $in: typings.nano.nanoStrings.$in = this.cast("$in")
+  def $in: typings.nano.nanoStrings.$in = "$in".asInstanceOf[typings.nano.nanoStrings.$in]
   @scala.inline
-  def $lt: typings.nano.nanoStrings.$lt = this.cast("$lt")
+  def $lt: typings.nano.nanoStrings.$lt = "$lt".asInstanceOf[typings.nano.nanoStrings.$lt]
   @scala.inline
-  def $lte: typings.nano.nanoStrings.$lte = this.cast("$lte")
+  def $lte: typings.nano.nanoStrings.$lte = "$lte".asInstanceOf[typings.nano.nanoStrings.$lte]
   @scala.inline
-  def $mod: typings.nano.nanoStrings.$mod = this.cast("$mod")
+  def $mod: typings.nano.nanoStrings.$mod = "$mod".asInstanceOf[typings.nano.nanoStrings.$mod]
   @scala.inline
-  def $ne: typings.nano.nanoStrings.$ne = this.cast("$ne")
+  def $ne: typings.nano.nanoStrings.$ne = "$ne".asInstanceOf[typings.nano.nanoStrings.$ne]
   @scala.inline
-  def $nin: typings.nano.nanoStrings.$nin = this.cast("$nin")
+  def $nin: typings.nano.nanoStrings.$nin = "$nin".asInstanceOf[typings.nano.nanoStrings.$nin]
   @scala.inline
-  def $nor: typings.nano.nanoStrings.$nor = this.cast("$nor")
+  def $nor: typings.nano.nanoStrings.$nor = "$nor".asInstanceOf[typings.nano.nanoStrings.$nor]
   @scala.inline
-  def $not: typings.nano.nanoStrings.$not = this.cast("$not")
+  def $not: typings.nano.nanoStrings.$not = "$not".asInstanceOf[typings.nano.nanoStrings.$not]
   @scala.inline
-  def $or: typings.nano.nanoStrings.$or = this.cast("$or")
+  def $or: typings.nano.nanoStrings.$or = "$or".asInstanceOf[typings.nano.nanoStrings.$or]
   @scala.inline
-  def $regex: typings.nano.nanoStrings.$regex = this.cast("$regex")
+  def $regex: typings.nano.nanoStrings.$regex = "$regex".asInstanceOf[typings.nano.nanoStrings.$regex]
   @scala.inline
-  def $size: typings.nano.nanoStrings.$size = this.cast("$size")
+  def $size: typings.nano.nanoStrings.$size = "$size".asInstanceOf[typings.nano.nanoStrings.$size]
   @scala.inline
-  def $type: typings.nano.nanoStrings.$type = this.cast("$type")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def $type: typings.nano.nanoStrings.$type = "$type".asInstanceOf[typings.nano.nanoStrings.$type]
 }
 

@@ -14,7 +14,6 @@ object TinderPhotoProcessedFile {
   @scala.inline
   def apply(height: Double, url: String, width: Double): TinderPhotoProcessedFile = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TinderPhotoProcessedFile]
   }
 }

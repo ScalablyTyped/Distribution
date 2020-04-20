@@ -27,7 +27,6 @@ object WorkItemTypeUpdateModel {
   @scala.inline
   def apply(color: String, description: String, icon: String, isDisabled: Boolean): WorkItemTypeUpdateModel = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], isDisabled = isDisabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WorkItemTypeUpdateModel]
   }
 }

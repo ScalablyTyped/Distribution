@@ -17,7 +17,6 @@ object RequestOptions {
   @scala.inline
   def apply[T](form: T, json: `true`, method: POST, uri: String): RequestOptions[T] = {
     val __obj = js.Dynamic.literal(form = form.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RequestOptions[T]]
   }
 }

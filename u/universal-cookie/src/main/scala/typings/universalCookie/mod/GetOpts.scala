@@ -15,7 +15,6 @@ object GetOpts {
   @scala.inline
   def apply(doNotParse: Boolean): GetOpts = {
     val __obj = js.Dynamic.literal(doNotParse = doNotParse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetOpts]
   }
 }

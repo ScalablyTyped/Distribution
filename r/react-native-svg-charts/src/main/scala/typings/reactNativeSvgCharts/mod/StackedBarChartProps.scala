@@ -22,7 +22,7 @@ trait StackedBarChartProps[T] extends ChartProps[T] {
   var extra: js.UndefOr[js.Function0[js.Object]] = js.undefined
   var extras: js.UndefOr[js.Array[_]] = js.undefined
   var horizontal: js.UndefOr[Boolean] = js.undefined
-  var keys: js.Array[String]
+  var keys: js.Array[/* keyof T */ String]
   var offset: js.UndefOr[OffsetFunction] = js.undefined
   var order: js.UndefOr[OrderFunction] = js.undefined
   var renderGradient: js.UndefOr[
@@ -42,7 +42,7 @@ object StackedBarChartProps {
   def apply[T](
     colors: js.Array[String],
     data: js.Array[T],
-    keys: js.Array[String],
+    keys: js.Array[/* keyof T */ String],
     animate: js.UndefOr[Boolean] = js.undefined,
     animationDuration: Int | Double = null,
     contentInset: AnonBottom = null,

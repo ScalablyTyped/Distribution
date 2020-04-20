@@ -16,7 +16,6 @@ object ExpireSessionRequest {
   @scala.inline
   def apply(SessionId: String): ExpireSessionRequest = {
     val __obj = js.Dynamic.literal(SessionId = SessionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExpireSessionRequest]
   }
 }

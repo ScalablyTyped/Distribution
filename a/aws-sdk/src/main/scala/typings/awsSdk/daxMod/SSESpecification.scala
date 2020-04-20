@@ -16,7 +16,6 @@ object SSESpecification {
   @scala.inline
   def apply(Enabled: SSEEnabled): SSESpecification = {
     val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SSESpecification]
   }
 }

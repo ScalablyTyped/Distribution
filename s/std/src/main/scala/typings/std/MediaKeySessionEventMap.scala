@@ -13,7 +13,6 @@ object MediaKeySessionEventMap {
   @scala.inline
   def apply(keystatuseschange: Event_, message: MediaKeyMessageEvent): MediaKeySessionEventMap = {
     val __obj = js.Dynamic.literal(keystatuseschange = keystatuseschange.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MediaKeySessionEventMap]
   }
 }

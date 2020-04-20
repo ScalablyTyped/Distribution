@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation._
 
 /**
 		 * Video playback is seeking forward.
+		 * @deprecated This constant has been removed on iOS by using the official Apple AVPlayer that does not expose this functionality so far.
 		 */
 @JSGlobal("Titanium.Media.VIDEO_PLAYBACK_STATE_SEEKING_FORWARD")
 @js.native
-object VIDEO_PLAYBACK_STATE_SEEKING_FORWARD extends TopLevel[Double]
+object VIDEO_PLAYBACK_STATE_SEEKING_FORWARD
+  extends TopLevel[scala.Nothing]
 

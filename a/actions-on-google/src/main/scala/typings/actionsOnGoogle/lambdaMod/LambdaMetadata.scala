@@ -17,7 +17,6 @@ object LambdaMetadata {
   @scala.inline
   def apply(context: Context, event: JsonObject): LambdaMetadata = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LambdaMetadata]
   }
 }

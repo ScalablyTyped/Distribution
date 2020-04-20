@@ -18,7 +18,6 @@ object IVaultAutomaticMetadataOperations {
     GetAutomaticMetadataForTemporaryFiles: IIDs => IAutomaticMetadataResult
   ): IVaultAutomaticMetadataOperations = {
     val __obj = js.Dynamic.literal(GetAutomaticMetadataForObject = js.Any.fromFunction1(GetAutomaticMetadataForObject), GetAutomaticMetadataForTemporaryFile = js.Any.fromFunction1(GetAutomaticMetadataForTemporaryFile), GetAutomaticMetadataForTemporaryFiles = js.Any.fromFunction1(GetAutomaticMetadataForTemporaryFiles))
-  
     __obj.asInstanceOf[IVaultAutomaticMetadataOperations]
   }
 }

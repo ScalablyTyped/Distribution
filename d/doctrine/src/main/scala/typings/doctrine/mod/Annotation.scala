@@ -17,7 +17,6 @@ object Annotation {
   @scala.inline
   def apply(description: String, tags: js.Array[Tag]): Annotation = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Annotation]
   }
 }

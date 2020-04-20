@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 
 trait reactVegaProps {
   @scala.inline
-  def ReactVegaProps: VegaPropsWithSpec.type = typings.reactVega.mod.VegaPropsWithSpec
+  def ReactVegaProps: VegaPropsWithSpec.type = VegaPropsWithSpec
   type ReactVegaProps = VegaPropsWithSpec
   @scala.inline
-  def VegaWithSpecProps: VegaPropsWithoutSpec.type = typings.reactVega.mod.VegaPropsWithoutSpec
+  def VegaWithSpecProps: VegaPropsWithoutSpec.type = VegaPropsWithoutSpec
   type VegaWithSpecProps = VegaPropsWithoutSpec
 }
 

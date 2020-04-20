@@ -15,7 +15,6 @@ object AddOnGateway {
   @scala.inline
   def apply(all: () => js.Promise[js.Array[AddOn]]): AddOnGateway = {
     val __obj = js.Dynamic.literal(all = js.Any.fromFunction0(all))
-  
     __obj.asInstanceOf[AddOnGateway]
   }
 }

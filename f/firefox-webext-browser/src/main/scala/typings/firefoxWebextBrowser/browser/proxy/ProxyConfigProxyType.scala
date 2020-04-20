@@ -16,16 +16,14 @@ trait ProxyConfigProxyType extends js.Object
 
 object ProxyConfigProxyType {
   @scala.inline
-  def autoConfig: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.autoConfig = this.cast("autoConfig")
+  def autoConfig: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.autoConfig = "autoConfig".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.autoConfig]
   @scala.inline
-  def autoDetect: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.autoDetect = this.cast("autoDetect")
+  def autoDetect: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.autoDetect = "autoDetect".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.autoDetect]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def manual: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.manual = "manual".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.manual]
   @scala.inline
-  def manual: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.manual = this.cast("manual")
+  def none: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.none = "none".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.none]
   @scala.inline
-  def none: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.none = this.cast("none")
-  @scala.inline
-  def system: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.system = this.cast("system")
+  def system: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.system = "system".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.system]
 }
 

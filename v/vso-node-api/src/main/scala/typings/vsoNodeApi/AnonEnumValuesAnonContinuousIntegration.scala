@@ -12,7 +12,6 @@ object AnonEnumValuesAnonContinuousIntegration {
   @scala.inline
   def apply(enumValues: AnonContinuousIntegration): AnonEnumValuesAnonContinuousIntegration = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumValuesAnonContinuousIntegration]
   }
 }

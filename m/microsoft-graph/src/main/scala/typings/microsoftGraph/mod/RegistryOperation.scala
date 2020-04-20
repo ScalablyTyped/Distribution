@@ -17,16 +17,14 @@ trait RegistryOperation extends js.Object
 
 object RegistryOperation {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def create: typings.microsoftGraph.microsoftGraphStrings.create = "create".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.create]
   @scala.inline
-  def create: typings.microsoftGraph.microsoftGraphStrings.create = this.cast("create")
+  def delete: delete_ = "delete".asInstanceOf[delete_]
   @scala.inline
-  def delete: delete_ = this.cast("delete")
+  def modify: typings.microsoftGraph.microsoftGraphStrings.modify = "modify".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.modify]
   @scala.inline
-  def modify: typings.microsoftGraph.microsoftGraphStrings.modify = this.cast("modify")
+  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = this.cast("unknownFutureValue")
+  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }
 

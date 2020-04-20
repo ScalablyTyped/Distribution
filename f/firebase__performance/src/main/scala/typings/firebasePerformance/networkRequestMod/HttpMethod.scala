@@ -30,26 +30,24 @@ trait HttpMethod extends js.Object
 
 object HttpMethod {
   @scala.inline
-  def CONNECT: `9` = this.cast(9)
+  def CONNECT: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def DELETE: `4` = this.cast(4)
+  def DELETE: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def GET: `1` = this.cast(1)
+  def GET: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def HEAD: `5` = this.cast(5)
+  def HEAD: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def HTTP_METHOD_UNKNOWN: `0` = this.cast(0)
+  def HTTP_METHOD_UNKNOWN: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def OPTIONS: `7` = this.cast(7)
+  def OPTIONS: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def PATCH: `6` = this.cast(6)
+  def PATCH: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def POST: `3` = this.cast(3)
+  def POST: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def PUT: `2` = this.cast(2)
+  def PUT: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def TRACE: `8` = this.cast(8)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def TRACE: `8` = 8.asInstanceOf[`8`]
 }
 

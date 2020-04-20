@@ -13,7 +13,6 @@ object extractorExecOpts {
   @scala.inline
   def apply(exec: StringDictionary[String]): extractorExecOpts = {
     val __obj = js.Dynamic.literal(exec = exec.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[extractorExecOpts]
   }
 }

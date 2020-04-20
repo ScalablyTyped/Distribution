@@ -20,7 +20,6 @@ object SwipeableConfig {
     onSwipeUp: (Double, Double, js.Function0[Unit]) => Unit
   ): SwipeableConfig = {
     val __obj = js.Dynamic.literal(onSwipeDown = js.Any.fromFunction3(onSwipeDown), onSwipeLeft = js.Any.fromFunction3(onSwipeLeft), onSwipeRight = js.Any.fromFunction3(onSwipeRight), onSwipeUp = js.Any.fromFunction3(onSwipeUp))
-  
     __obj.asInstanceOf[SwipeableConfig]
   }
 }

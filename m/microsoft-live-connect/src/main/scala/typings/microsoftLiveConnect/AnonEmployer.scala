@@ -12,7 +12,6 @@ object AnonEmployer {
   @scala.inline
   def apply(employer: AnonName): AnonEmployer = {
     val __obj = js.Dynamic.literal(employer = employer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEmployer]
   }
 }

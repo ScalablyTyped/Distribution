@@ -15,7 +15,6 @@ object AnonLibrary {
   @scala.inline
   def apply(library: vega | `vega-lite`, version: String): AnonLibrary = {
     val __obj = js.Dynamic.literal(library = library.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLibrary]
   }
 }

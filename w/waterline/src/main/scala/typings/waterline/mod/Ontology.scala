@@ -12,7 +12,6 @@ object Ontology {
   @scala.inline
   def apply(collections: js.Any): Ontology = {
     val __obj = js.Dynamic.literal(collections = collections.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Ontology]
   }
 }

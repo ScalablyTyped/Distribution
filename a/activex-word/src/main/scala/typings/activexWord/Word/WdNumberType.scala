@@ -16,12 +16,10 @@ trait WdNumberType extends js.Object
 
 object WdNumberType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdNumberAllNumbers: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdNumberAllNumbers: `3` = this.cast(3)
+  def wdNumberListNum: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdNumberListNum: `2` = this.cast(2)
-  @scala.inline
-  def wdNumberParagraph: `1` = this.cast(1)
+  def wdNumberParagraph: `1` = 1.asInstanceOf[`1`]
 }
 

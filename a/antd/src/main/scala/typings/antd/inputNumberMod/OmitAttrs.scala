@@ -13,12 +13,10 @@ trait OmitAttrs extends js.Object
 
 object OmitAttrs {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def defaultValue: typings.antd.antdStrings.defaultValue = "defaultValue".asInstanceOf[typings.antd.antdStrings.defaultValue]
   @scala.inline
-  def defaultValue: typings.antd.antdStrings.defaultValue = this.cast("defaultValue")
+  def onChange: typings.antd.antdStrings.onChange = "onChange".asInstanceOf[typings.antd.antdStrings.onChange]
   @scala.inline
-  def onChange: typings.antd.antdStrings.onChange = this.cast("onChange")
-  @scala.inline
-  def size: typings.antd.antdStrings.size = this.cast("size")
+  def size: typings.antd.antdStrings.size = "size".asInstanceOf[typings.antd.antdStrings.size]
 }
 

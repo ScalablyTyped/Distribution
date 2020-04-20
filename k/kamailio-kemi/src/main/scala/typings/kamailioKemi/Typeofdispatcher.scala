@@ -56,7 +56,6 @@ object Typeofdispatcher {
     ds_set_dst: () => Double
   ): Typeofdispatcher = {
     val __obj = js.Dynamic.literal(ds_is_from_list = js.Any.fromFunction1(ds_is_from_list), ds_is_from_list_mode = js.Any.fromFunction2(ds_is_from_list_mode), ds_is_from_list_uri = js.Any.fromFunction3(ds_is_from_list_uri), ds_is_from_lists = js.Any.fromFunction0(ds_is_from_lists), ds_list_exists = js.Any.fromFunction1(ds_list_exists), ds_load_unset = js.Any.fromFunction0(ds_load_unset), ds_load_update = js.Any.fromFunction0(ds_load_update), ds_mark_dst = js.Any.fromFunction0(ds_mark_dst), ds_mark_dst_state = js.Any.fromFunction1(ds_mark_dst_state), ds_next_domain = js.Any.fromFunction0(ds_next_domain), ds_next_dst = js.Any.fromFunction0(ds_next_dst), ds_reload = js.Any.fromFunction0(ds_reload), ds_select = js.Any.fromFunction2(ds_select), ds_select_domain = js.Any.fromFunction2(ds_select_domain), ds_select_domain_limit = js.Any.fromFunction3(ds_select_domain_limit), ds_select_dst = js.Any.fromFunction2(ds_select_dst), ds_select_dst_limit = js.Any.fromFunction3(ds_select_dst_limit), ds_select_limit = js.Any.fromFunction3(ds_select_limit), ds_select_routes = js.Any.fromFunction2(ds_select_routes), ds_select_routes_limit = js.Any.fromFunction3(ds_select_routes_limit), ds_set_domain = js.Any.fromFunction0(ds_set_domain), ds_set_dst = js.Any.fromFunction0(ds_set_dst))
-  
     __obj.asInstanceOf[Typeofdispatcher]
   }
 }

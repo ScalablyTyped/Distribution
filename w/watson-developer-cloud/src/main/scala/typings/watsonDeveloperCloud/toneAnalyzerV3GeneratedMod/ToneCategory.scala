@@ -18,7 +18,6 @@ object ToneCategory {
   @scala.inline
   def apply(category_id: String, category_name: String, tones: js.Array[ToneScore]): ToneCategory = {
     val __obj = js.Dynamic.literal(category_id = category_id.asInstanceOf[js.Any], category_name = category_name.asInstanceOf[js.Any], tones = tones.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ToneCategory]
   }
 }

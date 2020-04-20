@@ -14,14 +14,12 @@ trait Focus extends js.Object
 
 object Focus {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `false`: typings.reactInteractive.reactInteractiveBooleans.`false` = false.asInstanceOf[typings.reactInteractive.reactInteractiveBooleans.`false`]
   @scala.inline
-  def `false`: typings.reactInteractive.reactInteractiveBooleans.`false` = this.cast(false)
+  def mouse: typings.reactInteractive.reactInteractiveStrings.mouse = "mouse".asInstanceOf[typings.reactInteractive.reactInteractiveStrings.mouse]
   @scala.inline
-  def mouse: typings.reactInteractive.reactInteractiveStrings.mouse = this.cast("mouse")
+  def tab: typings.reactInteractive.reactInteractiveStrings.tab = "tab".asInstanceOf[typings.reactInteractive.reactInteractiveStrings.tab]
   @scala.inline
-  def tab: typings.reactInteractive.reactInteractiveStrings.tab = this.cast("tab")
-  @scala.inline
-  def touch: typings.reactInteractive.reactInteractiveStrings.touch = this.cast("touch")
+  def touch: typings.reactInteractive.reactInteractiveStrings.touch = "touch".asInstanceOf[typings.reactInteractive.reactInteractiveStrings.touch]
 }
 

@@ -15,7 +15,6 @@ object SessionDeps {
   @scala.inline
   def apply(client: IClient, config: IConfig): SessionDeps = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SessionDeps]
   }
 }

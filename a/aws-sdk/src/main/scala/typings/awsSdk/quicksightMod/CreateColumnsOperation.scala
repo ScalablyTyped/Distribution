@@ -16,7 +16,6 @@ object CreateColumnsOperation {
   @scala.inline
   def apply(Columns: CalculatedColumnList): CreateColumnsOperation = {
     val __obj = js.Dynamic.literal(Columns = Columns.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateColumnsOperation]
   }
 }

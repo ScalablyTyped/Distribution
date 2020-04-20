@@ -73,7 +73,7 @@ class ContentFactory ()
     */
   /* InferMemberOverrides */
   @JSName("editorFactory")
-  override def editorFactory_MContentFactory_(): Factory = js.native
+  override def editorFactory_MContentFactory_ : Factory = js.native
 }
 
 /**

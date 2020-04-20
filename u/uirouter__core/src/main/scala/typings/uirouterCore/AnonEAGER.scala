@@ -13,7 +13,6 @@ object AnonEAGER {
   @scala.inline
   def apply(EAGER: String, LAZY: String): AnonEAGER = {
     val __obj = js.Dynamic.literal(EAGER = EAGER.asInstanceOf[js.Any], LAZY = LAZY.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEAGER]
   }
 }

@@ -15,7 +15,6 @@ object NotificationResource {
   @scala.inline
   def apply(get: AnonNotificationid => Request_[Notification]): NotificationResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
-  
     __obj.asInstanceOf[NotificationResource]
   }
 }

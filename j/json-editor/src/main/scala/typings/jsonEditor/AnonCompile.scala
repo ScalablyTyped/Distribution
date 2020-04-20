@@ -12,7 +12,6 @@ object AnonCompile {
   @scala.inline
   def apply(compile: String => js.Function1[/* vars */ js.Any, String]): AnonCompile = {
     val __obj = js.Dynamic.literal(compile = js.Any.fromFunction1(compile))
-  
     __obj.asInstanceOf[AnonCompile]
   }
 }

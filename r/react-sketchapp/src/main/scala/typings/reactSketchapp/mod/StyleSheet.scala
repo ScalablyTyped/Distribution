@@ -1,6 +1,7 @@
 package typings.reactSketchapp.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.reactSketchapp.AnonStyle
 import typings.reactSketchapp.reactSketchappNumbers.`1`
 import scala.scalajs.js
@@ -17,7 +18,7 @@ object StyleSheet extends js.Object {
     */
   def create[T /* <: StringDictionary[Style | TextStyle] */](t: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: react-sketchapp.react-sketchapp.StyleReference}
-    */ typings.reactSketchapp.reactSketchappStrings.StyleSheet with js.Any = js.native
+    */ typings.reactSketchapp.reactSketchappStrings.StyleSheet with TopLevel[js.Any] = js.native
   def flatten(): Style | TextStyle = js.native
   /**
     * Flatten an array of style objects into one aggregated object, or look up the definition for a

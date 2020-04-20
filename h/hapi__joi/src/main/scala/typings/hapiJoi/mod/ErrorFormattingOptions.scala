@@ -26,7 +26,7 @@ trait ErrorFormattingOptions extends js.Object {
     * Note that references to the value are usually not what you want as they move around the value structure relative to where the error happens.
     * Instead, either use the global context, or the absolute value (e.g. `Joi.ref('/variable')`)
     */
-  var language: js.UndefOr[String] = js.undefined
+  var language: js.UndefOr[/* keyof @hapi/joi.@hapi/joi.LanguageMessages */ String] = js.undefined
   /**
     * when false, skips rendering error templates. Useful when error messages are generated elsewhere to save processing time.
     *
@@ -53,7 +53,7 @@ object ErrorFormattingOptions {
   def apply(
     escapeHtml: js.UndefOr[Boolean] = js.undefined,
     label: path | key | `false` = null,
-    language: String = null,
+    language: /* keyof @hapi/joi.@hapi/joi.LanguageMessages */ String = null,
     render: js.UndefOr[Boolean] = js.undefined,
     stack: js.UndefOr[Boolean] = js.undefined,
     wrapArrays: js.UndefOr[Boolean] = js.undefined

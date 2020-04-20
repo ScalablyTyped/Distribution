@@ -15,7 +15,6 @@ object Identifiable {
   @scala.inline
   def apply(id: String): Identifiable = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Identifiable]
   }
 }

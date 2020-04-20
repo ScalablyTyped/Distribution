@@ -20,7 +20,6 @@ object ICreateNotificationHubOptions {
     wns: Dictionary[String]
   ): ICreateNotificationHubOptions = {
     val __obj = js.Dynamic.literal(apns = apns.asInstanceOf[js.Any], gcm = gcm.asInstanceOf[js.Any], mpns = mpns.asInstanceOf[js.Any], wns = wns.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICreateNotificationHubOptions]
   }
 }

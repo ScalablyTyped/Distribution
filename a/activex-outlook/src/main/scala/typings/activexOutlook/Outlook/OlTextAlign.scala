@@ -16,12 +16,10 @@ trait OlTextAlign extends js.Object
 
 object OlTextAlign {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olTextAlignCenter: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olTextAlignCenter: `2` = this.cast(2)
+  def olTextAlignLeft: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olTextAlignLeft: `1` = this.cast(1)
-  @scala.inline
-  def olTextAlignRight: `3` = this.cast(3)
+  def olTextAlignRight: `3` = 3.asInstanceOf[`3`]
 }
 

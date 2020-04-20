@@ -14,7 +14,6 @@ object PickImplreverse {
   @scala.inline
   def apply(reverse: auto | Boolean): PickImplreverse = {
     val __obj = js.Dynamic.literal(reverse = reverse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplreverse]
   }
 }

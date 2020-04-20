@@ -18,7 +18,6 @@ object EventChannel_ {
     take: js.Function1[/* message */ T | END, Unit] => Unit
   ): EventChannel_[T] = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), flush = js.Any.fromFunction1(flush), take = js.Any.fromFunction1(take))
-  
     __obj.asInstanceOf[EventChannel_[T]]
   }
 }

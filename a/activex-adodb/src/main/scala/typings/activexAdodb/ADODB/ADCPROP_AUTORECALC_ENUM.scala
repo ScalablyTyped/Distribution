@@ -14,10 +14,8 @@ trait ADCPROP_AUTORECALC_ENUM extends js.Object
 
 object ADCPROP_AUTORECALC_ENUM {
   @scala.inline
-  def adRecalcAlways: `1` = this.cast(1)
+  def adRecalcAlways: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def adRecalcUpFront: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def adRecalcUpFront: `0` = 0.asInstanceOf[`0`]
 }
 

@@ -29,7 +29,6 @@ object ColorBuilder {
     setThemeColor: ThemeColorType => ColorBuilder
   ): ColorBuilder = {
     val __obj = js.Dynamic.literal(asRgbColor = js.Any.fromFunction0(asRgbColor), asThemeColor = js.Any.fromFunction0(asThemeColor), build = js.Any.fromFunction0(build), getColorType = js.Any.fromFunction0(getColorType), setRgbColor = js.Any.fromFunction1(setRgbColor), setThemeColor = js.Any.fromFunction1(setThemeColor))
-  
     __obj.asInstanceOf[ColorBuilder]
   }
 }

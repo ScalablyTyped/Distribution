@@ -16,7 +16,6 @@ object DeleteResolverRuleRequest {
   @scala.inline
   def apply(ResolverRuleId: ResourceId): DeleteResolverRuleRequest = {
     val __obj = js.Dynamic.literal(ResolverRuleId = ResolverRuleId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteResolverRuleRequest]
   }
 }

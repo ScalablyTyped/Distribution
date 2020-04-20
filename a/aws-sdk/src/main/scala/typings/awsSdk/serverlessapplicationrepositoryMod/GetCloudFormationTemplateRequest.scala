@@ -20,7 +20,6 @@ object GetCloudFormationTemplateRequest {
   @scala.inline
   def apply(ApplicationId: string, TemplateId: string): GetCloudFormationTemplateRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], TemplateId = TemplateId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetCloudFormationTemplateRequest]
   }
 }

@@ -24,7 +24,6 @@ object RosterReceived {
   @scala.inline
   def apply(id: String, roster: js.Array[RosterItem]): RosterReceived = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], roster = roster.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RosterReceived]
   }
 }

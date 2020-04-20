@@ -14,7 +14,6 @@ object GetTempFileURLResult {
   @scala.inline
   def apply(errMsg: String, fileList: Array[GetTempFileURLResultItem]): GetTempFileURLResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], fileList = fileList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetTempFileURLResult]
   }
 }

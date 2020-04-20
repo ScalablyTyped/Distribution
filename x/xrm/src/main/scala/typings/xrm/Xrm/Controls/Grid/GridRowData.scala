@@ -21,7 +21,6 @@ object GridRowData {
   @scala.inline
   def apply(getEntity: () => GridEntity): GridRowData = {
     val __obj = js.Dynamic.literal(getEntity = js.Any.fromFunction0(getEntity))
-  
     __obj.asInstanceOf[GridRowData]
   }
 }

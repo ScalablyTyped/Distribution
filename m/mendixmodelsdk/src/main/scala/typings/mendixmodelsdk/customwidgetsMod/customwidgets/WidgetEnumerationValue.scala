@@ -23,10 +23,10 @@ class WidgetEnumerationValue protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FWidgetEnumerationValue: IModel = js.native
-  def caption(): String = js.native
+  def caption: String = js.native
   def caption(newValue: String): js.Any = js.native
-  def containerAsWidgetValueType(): WidgetValueType = js.native
-  def key(): String = js.native
+  def containerAsWidgetValueType: WidgetValueType = js.native
+  def key: String = js.native
   def key(newValue: String): js.Any = js.native
 }
 

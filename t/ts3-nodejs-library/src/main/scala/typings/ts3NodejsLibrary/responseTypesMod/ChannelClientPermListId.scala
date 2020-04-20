@@ -24,7 +24,6 @@ object ChannelClientPermListId {
     permvalue: Double
   ): ChannelClientPermListId = {
     val __obj = js.Dynamic.literal(cid = cid.asInstanceOf[js.Any], cldbid = cldbid.asInstanceOf[js.Any], permid = permid.asInstanceOf[js.Any], permnegated = permnegated.asInstanceOf[js.Any], permskip = permskip.asInstanceOf[js.Any], permvalue = permvalue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChannelClientPermListId]
   }
 }

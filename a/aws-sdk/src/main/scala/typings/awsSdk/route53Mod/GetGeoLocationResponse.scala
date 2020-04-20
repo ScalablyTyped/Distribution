@@ -16,7 +16,6 @@ object GetGeoLocationResponse {
   @scala.inline
   def apply(GeoLocationDetails: GeoLocationDetails): GetGeoLocationResponse = {
     val __obj = js.Dynamic.literal(GeoLocationDetails = GeoLocationDetails.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetGeoLocationResponse]
   }
 }

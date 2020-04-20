@@ -17,7 +17,6 @@ object AnonKey {
   @scala.inline
   def apply(domEvent: MouseEvent[HTMLElement, NativeMouseEvent], key: Key): AnonKey = {
     val __obj = js.Dynamic.literal(domEvent = domEvent.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonKey]
   }
 }

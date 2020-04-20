@@ -15,7 +15,6 @@ object PickArrayTypeKnobvaluesep {
   @scala.inline
   def apply(separator: String, value: ArrayTypeKnobValue): PickArrayTypeKnobvaluesep = {
     val __obj = js.Dynamic.literal(separator = separator.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickArrayTypeKnobvaluesep]
   }
 }

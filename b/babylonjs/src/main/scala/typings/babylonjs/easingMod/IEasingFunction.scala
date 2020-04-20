@@ -20,7 +20,6 @@ object IEasingFunction {
   @scala.inline
   def apply(ease: Double => Double): IEasingFunction = {
     val __obj = js.Dynamic.literal(ease = js.Any.fromFunction1(ease))
-  
     __obj.asInstanceOf[IEasingFunction]
   }
 }

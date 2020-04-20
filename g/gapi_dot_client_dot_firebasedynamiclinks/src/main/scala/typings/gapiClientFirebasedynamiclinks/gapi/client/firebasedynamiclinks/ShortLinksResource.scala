@@ -25,7 +25,6 @@ object ShortLinksResource {
   @scala.inline
   def apply(create: AnonAccesstoken => Request_[CreateShortDynamicLinkResponse]): ShortLinksResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
-  
     __obj.asInstanceOf[ShortLinksResource]
   }
 }

@@ -16,7 +16,6 @@ object ConfirmConnectionRequest {
   @scala.inline
   def apply(connectionId: ConnectionId): ConfirmConnectionRequest = {
     val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConfirmConnectionRequest]
   }
 }

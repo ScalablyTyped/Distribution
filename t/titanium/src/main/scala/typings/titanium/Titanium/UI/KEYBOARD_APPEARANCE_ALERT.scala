@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation._
 
 /**
 		 * Use a keyboard appearance suitable for entering text on an alert.
+		 * @deprecated
 		 */
 @JSGlobal("Titanium.UI.KEYBOARD_APPEARANCE_ALERT")
 @js.native
-object KEYBOARD_APPEARANCE_ALERT extends TopLevel[Double]
+object KEYBOARD_APPEARANCE_ALERT
+  extends TopLevel[scala.Nothing]
 

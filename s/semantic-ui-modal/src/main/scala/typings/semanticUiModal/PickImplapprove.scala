@@ -13,7 +13,6 @@ object PickImplapprove {
   @scala.inline
   def apply(approve: String): PickImplapprove = {
     val __obj = js.Dynamic.literal(approve = approve.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplapprove]
   }
 }

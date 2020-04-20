@@ -13,7 +13,6 @@ object TypeofLakeFormation {
   @scala.inline
   def apply(Types: TypeofLakeFormation): TypeofLakeFormation = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofLakeFormation]
   }
 }

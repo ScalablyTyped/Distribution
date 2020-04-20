@@ -25,7 +25,6 @@ object ILockable {
   @scala.inline
   def apply(lock: () => js.Promise[Unit], try_lock: () => js.Promise[Boolean], unlock: () => js.Promise[Unit]): ILockable = {
     val __obj = js.Dynamic.literal(lock = js.Any.fromFunction0(lock), try_lock = js.Any.fromFunction0(try_lock), unlock = js.Any.fromFunction0(unlock))
-  
     __obj.asInstanceOf[ILockable]
   }
 }

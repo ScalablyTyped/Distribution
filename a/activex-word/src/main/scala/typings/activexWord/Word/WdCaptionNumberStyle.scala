@@ -74,70 +74,68 @@ trait WdCaptionNumberStyle extends js.Object
 
 object WdCaptionNumberStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdCaptionNumberStyleArabic: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdCaptionNumberStyleArabic: `0` = this.cast(0)
+  def wdCaptionNumberStyleArabicFullWidth: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def wdCaptionNumberStyleArabicFullWidth: `14` = this.cast(14)
+  def wdCaptionNumberStyleArabicLetter1: `46` = 46.asInstanceOf[`46`]
   @scala.inline
-  def wdCaptionNumberStyleArabicLetter1: `46` = this.cast(46)
+  def wdCaptionNumberStyleArabicLetter2: `48` = 48.asInstanceOf[`48`]
   @scala.inline
-  def wdCaptionNumberStyleArabicLetter2: `48` = this.cast(48)
+  def wdCaptionNumberStyleChosung: `25` = 25.asInstanceOf[`25`]
   @scala.inline
-  def wdCaptionNumberStyleChosung: `25` = this.cast(25)
+  def wdCaptionNumberStyleGanada: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def wdCaptionNumberStyleGanada: `24` = this.cast(24)
+  def wdCaptionNumberStyleHanjaRead: `41` = 41.asInstanceOf[`41`]
   @scala.inline
-  def wdCaptionNumberStyleHanjaRead: `41` = this.cast(41)
+  def wdCaptionNumberStyleHanjaReadDigit: `42` = 42.asInstanceOf[`42`]
   @scala.inline
-  def wdCaptionNumberStyleHanjaReadDigit: `42` = this.cast(42)
+  def wdCaptionNumberStyleHebrewLetter1: `45` = 45.asInstanceOf[`45`]
   @scala.inline
-  def wdCaptionNumberStyleHebrewLetter1: `45` = this.cast(45)
+  def wdCaptionNumberStyleHebrewLetter2: `47` = 47.asInstanceOf[`47`]
   @scala.inline
-  def wdCaptionNumberStyleHebrewLetter2: `47` = this.cast(47)
+  def wdCaptionNumberStyleHindiArabic: `51` = 51.asInstanceOf[`51`]
   @scala.inline
-  def wdCaptionNumberStyleHindiArabic: `51` = this.cast(51)
+  def wdCaptionNumberStyleHindiCardinalText: `52` = 52.asInstanceOf[`52`]
   @scala.inline
-  def wdCaptionNumberStyleHindiCardinalText: `52` = this.cast(52)
+  def wdCaptionNumberStyleHindiLetter1: `49` = 49.asInstanceOf[`49`]
   @scala.inline
-  def wdCaptionNumberStyleHindiLetter1: `49` = this.cast(49)
+  def wdCaptionNumberStyleHindiLetter2: `50` = 50.asInstanceOf[`50`]
   @scala.inline
-  def wdCaptionNumberStyleHindiLetter2: `50` = this.cast(50)
+  def wdCaptionNumberStyleKanji: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def wdCaptionNumberStyleKanji: `10` = this.cast(10)
+  def wdCaptionNumberStyleKanjiDigit: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def wdCaptionNumberStyleKanjiDigit: `11` = this.cast(11)
+  def wdCaptionNumberStyleKanjiTraditional: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def wdCaptionNumberStyleKanjiTraditional: `16` = this.cast(16)
+  def wdCaptionNumberStyleLowercaseLetter: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdCaptionNumberStyleLowercaseLetter: `4` = this.cast(4)
+  def wdCaptionNumberStyleLowercaseRoman: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdCaptionNumberStyleLowercaseRoman: `2` = this.cast(2)
+  def wdCaptionNumberStyleNumberInCircle: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def wdCaptionNumberStyleNumberInCircle: `18` = this.cast(18)
+  def wdCaptionNumberStyleSimpChinNum2: `38` = 38.asInstanceOf[`38`]
   @scala.inline
-  def wdCaptionNumberStyleSimpChinNum2: `38` = this.cast(38)
+  def wdCaptionNumberStyleSimpChinNum3: `39` = 39.asInstanceOf[`39`]
   @scala.inline
-  def wdCaptionNumberStyleSimpChinNum3: `39` = this.cast(39)
+  def wdCaptionNumberStyleThaiArabic: `54` = 54.asInstanceOf[`54`]
   @scala.inline
-  def wdCaptionNumberStyleThaiArabic: `54` = this.cast(54)
+  def wdCaptionNumberStyleThaiCardinalText: `55` = 55.asInstanceOf[`55`]
   @scala.inline
-  def wdCaptionNumberStyleThaiCardinalText: `55` = this.cast(55)
+  def wdCaptionNumberStyleThaiLetter: `53` = 53.asInstanceOf[`53`]
   @scala.inline
-  def wdCaptionNumberStyleThaiLetter: `53` = this.cast(53)
+  def wdCaptionNumberStyleTradChinNum2: `34` = 34.asInstanceOf[`34`]
   @scala.inline
-  def wdCaptionNumberStyleTradChinNum2: `34` = this.cast(34)
+  def wdCaptionNumberStyleTradChinNum3: `35` = 35.asInstanceOf[`35`]
   @scala.inline
-  def wdCaptionNumberStyleTradChinNum3: `35` = this.cast(35)
+  def wdCaptionNumberStyleUppercaseLetter: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdCaptionNumberStyleUppercaseLetter: `3` = this.cast(3)
+  def wdCaptionNumberStyleUppercaseRoman: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdCaptionNumberStyleUppercaseRoman: `1` = this.cast(1)
+  def wdCaptionNumberStyleVietCardinalText: `56` = 56.asInstanceOf[`56`]
   @scala.inline
-  def wdCaptionNumberStyleVietCardinalText: `56` = this.cast(56)
+  def wdCaptionNumberStyleZodiac1: `30` = 30.asInstanceOf[`30`]
   @scala.inline
-  def wdCaptionNumberStyleZodiac1: `30` = this.cast(30)
-  @scala.inline
-  def wdCaptionNumberStyleZodiac2: `31` = this.cast(31)
+  def wdCaptionNumberStyleZodiac2: `31` = 31.asInstanceOf[`31`]
 }
 

@@ -29,7 +29,6 @@ object CoveragebucketsResource {
   @scala.inline
   def apply(list: AnonEnd => Request_[ListCoverageBucketsResponse]): CoveragebucketsResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[CoveragebucketsResource]
   }
 }

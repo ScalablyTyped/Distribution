@@ -16,14 +16,12 @@ trait StyleType extends js.Object
 
 object StyleType {
   @scala.inline
-  def EFFECT: typings.figma.figmaStrings.EFFECT = this.cast("EFFECT")
+  def EFFECT: typings.figma.figmaStrings.EFFECT = "EFFECT".asInstanceOf[typings.figma.figmaStrings.EFFECT]
   @scala.inline
-  def GRID: typings.figma.figmaStrings.GRID = this.cast("GRID")
+  def GRID: typings.figma.figmaStrings.GRID = "GRID".asInstanceOf[typings.figma.figmaStrings.GRID]
   @scala.inline
-  def PAINT: typings.figma.figmaStrings.PAINT = this.cast("PAINT")
+  def PAINT: typings.figma.figmaStrings.PAINT = "PAINT".asInstanceOf[typings.figma.figmaStrings.PAINT]
   @scala.inline
-  def TEXT: typings.figma.figmaStrings.TEXT = this.cast("TEXT")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def TEXT: typings.figma.figmaStrings.TEXT = "TEXT".asInstanceOf[typings.figma.figmaStrings.TEXT]
 }
 

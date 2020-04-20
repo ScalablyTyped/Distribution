@@ -12,7 +12,6 @@ object PluginRemoveElementsByAttr {
   @scala.inline
   def apply(removeElementsByAttr: Boolean | js.Object): PluginRemoveElementsByAttr = {
     val __obj = js.Dynamic.literal(removeElementsByAttr = removeElementsByAttr.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PluginRemoveElementsByAttr]
   }
 }

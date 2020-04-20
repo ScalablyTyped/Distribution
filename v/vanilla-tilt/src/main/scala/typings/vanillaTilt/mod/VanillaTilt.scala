@@ -37,7 +37,6 @@ object VanillaTilt {
     reset: () => Unit
   ): VanillaTilt = {
     val __obj = js.Dynamic.literal(addEventListeners = js.Any.fromFunction0(addEventListeners), destroy = js.Any.fromFunction0(destroy), getValues = js.Any.fromFunction0(getValues), removeEventListener = js.Any.fromFunction0(removeEventListener), reset = js.Any.fromFunction0(reset))
-  
     __obj.asInstanceOf[VanillaTilt]
   }
 }

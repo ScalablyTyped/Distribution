@@ -13,12 +13,10 @@ trait PaneResizeDirection extends js.Object
 
 object PaneResizeDirection {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def x: typings.reactSortablePane.reactSortablePaneStrings.x = "x".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.x]
   @scala.inline
-  def x: typings.reactSortablePane.reactSortablePaneStrings.x = this.cast("x")
+  def xy: typings.reactSortablePane.reactSortablePaneStrings.xy = "xy".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.xy]
   @scala.inline
-  def xy: typings.reactSortablePane.reactSortablePaneStrings.xy = this.cast("xy")
-  @scala.inline
-  def y: typings.reactSortablePane.reactSortablePaneStrings.y = this.cast("y")
+  def y: typings.reactSortablePane.reactSortablePaneStrings.y = "y".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.y]
 }
 

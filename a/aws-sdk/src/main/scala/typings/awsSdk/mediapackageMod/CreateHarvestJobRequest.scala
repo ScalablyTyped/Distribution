@@ -37,7 +37,6 @@ object CreateHarvestJobRequest {
     StartTime: string
   ): CreateHarvestJobRequest = {
     val __obj = js.Dynamic.literal(EndTime = EndTime.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], OriginEndpointId = OriginEndpointId.asInstanceOf[js.Any], S3Destination = S3Destination.asInstanceOf[js.Any], StartTime = StartTime.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateHarvestJobRequest]
   }
 }

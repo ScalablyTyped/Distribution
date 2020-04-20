@@ -22,7 +22,6 @@ object AnonAccentColor {
     isBWImg: Boolean
   ): AnonAccentColor = {
     val __obj = js.Dynamic.literal(accentColor = accentColor.asInstanceOf[js.Any], dominantColorBackground = dominantColorBackground.asInstanceOf[js.Any], dominantColorForeground = dominantColorForeground.asInstanceOf[js.Any], dominantColors = dominantColors.asInstanceOf[js.Any], isBWImg = isBWImg.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAccentColor]
   }
 }

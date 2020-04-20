@@ -21,16 +21,14 @@ trait DeviceTypeBits extends js.Object
 
 object DeviceTypeBits {
   @scala.inline
-  def DEVICE_TYPE_ACCELERATOR: `0x8` = this.cast(0x8)
+  def DEVICE_TYPE_ACCELERATOR: `0x8` = 0x8.asInstanceOf[`0x8`]
   @scala.inline
-  def DEVICE_TYPE_ALL: _0xFFFFFFFF = this.cast(0xFFFFFFFF)
+  def DEVICE_TYPE_ALL: _0xFFFFFFFF = 4294967295.0.asInstanceOf[_0xFFFFFFFF]
   @scala.inline
-  def DEVICE_TYPE_CPU: `0x2` = this.cast(0x2)
+  def DEVICE_TYPE_CPU: `0x2` = 0x2.asInstanceOf[`0x2`]
   @scala.inline
-  def DEVICE_TYPE_DEFAULT: `0x1` = this.cast(0x1)
+  def DEVICE_TYPE_DEFAULT: `0x1` = 0x1.asInstanceOf[`0x1`]
   @scala.inline
-  def DEVICE_TYPE_GPU: `0x4` = this.cast(0x4)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def DEVICE_TYPE_GPU: `0x4` = 0x4.asInstanceOf[`0x4`]
 }
 

@@ -16,12 +16,10 @@ trait AcDisplayAs extends js.Object
 
 object AcDisplayAs {
   @scala.inline
-  def acDisplayAsIcon: `1` = this.cast(1)
+  def acDisplayAsIcon: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def acDisplayAsImageIcon: `0` = this.cast(0)
+  def acDisplayAsImageIcon: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def acDisplayAsPaperclip: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def acDisplayAsPaperclip: `2` = 2.asInstanceOf[`2`]
 }
 

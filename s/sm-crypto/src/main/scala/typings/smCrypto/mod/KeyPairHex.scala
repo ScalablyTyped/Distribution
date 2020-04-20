@@ -13,7 +13,6 @@ object KeyPairHex {
   @scala.inline
   def apply(privateKey: String, publicKey: String): KeyPairHex = {
     val __obj = js.Dynamic.literal(privateKey = privateKey.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KeyPairHex]
   }
 }

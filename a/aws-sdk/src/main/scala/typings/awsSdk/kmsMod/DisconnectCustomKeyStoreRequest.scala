@@ -16,7 +16,6 @@ object DisconnectCustomKeyStoreRequest {
   @scala.inline
   def apply(CustomKeyStoreId: CustomKeyStoreIdType): DisconnectCustomKeyStoreRequest = {
     val __obj = js.Dynamic.literal(CustomKeyStoreId = CustomKeyStoreId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisconnectCustomKeyStoreRequest]
   }
 }

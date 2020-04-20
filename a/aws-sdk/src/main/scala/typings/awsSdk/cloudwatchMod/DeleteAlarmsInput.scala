@@ -16,7 +16,6 @@ object DeleteAlarmsInput {
   @scala.inline
   def apply(AlarmNames: AlarmNames): DeleteAlarmsInput = {
     val __obj = js.Dynamic.literal(AlarmNames = AlarmNames.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteAlarmsInput]
   }
 }

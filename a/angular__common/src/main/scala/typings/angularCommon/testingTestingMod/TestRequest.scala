@@ -20,7 +20,7 @@ class TestRequest protected () extends js.Object {
   /**
     * Whether the request was cancelled after it was sent.
     */
-  def cancelled(): Boolean = js.native
+  def cancelled: Boolean = js.native
   /**
     * Resolve the request by returning an `ErrorEvent` (e.g. simulating a network failure).
     */

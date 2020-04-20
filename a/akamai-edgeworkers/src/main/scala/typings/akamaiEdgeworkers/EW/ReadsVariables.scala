@@ -15,7 +15,6 @@ object ReadsVariables {
   @scala.inline
   def apply(getVariable: String => js.UndefOr[String]): ReadsVariables = {
     val __obj = js.Dynamic.literal(getVariable = js.Any.fromFunction1(getVariable))
-  
     __obj.asInstanceOf[ReadsVariables]
   }
 }

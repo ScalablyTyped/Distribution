@@ -19,24 +19,22 @@ trait Color extends js.Object
 
 object Color {
   @scala.inline
-  def black: typings.ora.oraStrings.black = this.cast("black")
+  def black: typings.ora.oraStrings.black = "black".asInstanceOf[typings.ora.oraStrings.black]
   @scala.inline
-  def blue: typings.ora.oraStrings.blue = this.cast("blue")
+  def blue: typings.ora.oraStrings.blue = "blue".asInstanceOf[typings.ora.oraStrings.blue]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cyan: typings.ora.oraStrings.cyan = "cyan".asInstanceOf[typings.ora.oraStrings.cyan]
   @scala.inline
-  def cyan: typings.ora.oraStrings.cyan = this.cast("cyan")
+  def gray: typings.ora.oraStrings.gray = "gray".asInstanceOf[typings.ora.oraStrings.gray]
   @scala.inline
-  def gray: typings.ora.oraStrings.gray = this.cast("gray")
+  def green: typings.ora.oraStrings.green = "green".asInstanceOf[typings.ora.oraStrings.green]
   @scala.inline
-  def green: typings.ora.oraStrings.green = this.cast("green")
+  def magenta: typings.ora.oraStrings.magenta = "magenta".asInstanceOf[typings.ora.oraStrings.magenta]
   @scala.inline
-  def magenta: typings.ora.oraStrings.magenta = this.cast("magenta")
+  def red: typings.ora.oraStrings.red = "red".asInstanceOf[typings.ora.oraStrings.red]
   @scala.inline
-  def red: typings.ora.oraStrings.red = this.cast("red")
+  def white: typings.ora.oraStrings.white = "white".asInstanceOf[typings.ora.oraStrings.white]
   @scala.inline
-  def white: typings.ora.oraStrings.white = this.cast("white")
-  @scala.inline
-  def yellow: typings.ora.oraStrings.yellow = this.cast("yellow")
+  def yellow: typings.ora.oraStrings.yellow = "yellow".asInstanceOf[typings.ora.oraStrings.yellow]
 }
 

@@ -30,7 +30,6 @@ object StatusBar {
     getRightTiles: () => js.Array[Tile]
   ): StatusBar = {
     val __obj = js.Dynamic.literal(addLeftTile = js.Any.fromFunction1(addLeftTile), addRightTile = js.Any.fromFunction1(addRightTile), getLeftTiles = js.Any.fromFunction0(getLeftTiles), getRightTiles = js.Any.fromFunction0(getRightTiles))
-  
     __obj.asInstanceOf[StatusBar]
   }
 }

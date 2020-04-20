@@ -14,7 +14,6 @@ object ShortcodeAttrs {
   @scala.inline
   def apply(named: Record[String, js.UndefOr[String]], numeric: js.Array[String]): ShortcodeAttrs = {
     val __obj = js.Dynamic.literal(named = named.asInstanceOf[js.Any], numeric = numeric.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ShortcodeAttrs]
   }
 }

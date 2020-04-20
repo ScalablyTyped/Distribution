@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Specifies the text style for the <Font> Object.
+		 * The font used for first level hierarchical headings.
 		 */
 @JSGlobal("Titanium.UI.TEXT_STYLE_TITLE1")
 @js.native

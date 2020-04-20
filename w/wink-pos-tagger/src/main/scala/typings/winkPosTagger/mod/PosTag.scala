@@ -18,22 +18,20 @@ trait PosTag extends js.Object
 
 object PosTag {
   @scala.inline
-  def DT: typings.winkPosTagger.winkPosTaggerStrings.DT = this.cast("DT")
+  def DT: typings.winkPosTagger.winkPosTaggerStrings.DT = "DT".asInstanceOf[typings.winkPosTagger.winkPosTaggerStrings.DT]
   @scala.inline
-  def Dot: typings.winkPosTagger.winkPosTaggerStrings.Dot = this.cast(".")
+  def Dot: typings.winkPosTagger.winkPosTaggerStrings.Dot = ".".asInstanceOf[typings.winkPosTagger.winkPosTaggerStrings.Dot]
   @scala.inline
-  def IN: typings.winkPosTagger.winkPosTaggerStrings.IN = this.cast("IN")
+  def IN: typings.winkPosTagger.winkPosTaggerStrings.IN = "IN".asInstanceOf[typings.winkPosTagger.winkPosTaggerStrings.IN]
   @scala.inline
-  def JJ: typings.winkPosTagger.winkPosTaggerStrings.JJ = this.cast("JJ")
+  def JJ: typings.winkPosTagger.winkPosTaggerStrings.JJ = "JJ".asInstanceOf[typings.winkPosTagger.winkPosTaggerStrings.JJ]
   @scala.inline
-  def NN: typings.winkPosTagger.winkPosTaggerStrings.NN = this.cast("NN")
+  def NN: typings.winkPosTagger.winkPosTaggerStrings.NN = "NN".asInstanceOf[typings.winkPosTagger.winkPosTaggerStrings.NN]
   @scala.inline
-  def PRP: typings.winkPosTagger.winkPosTaggerStrings.PRP = this.cast("PRP")
+  def PRP: typings.winkPosTagger.winkPosTaggerStrings.PRP = "PRP".asInstanceOf[typings.winkPosTagger.winkPosTaggerStrings.PRP]
   @scala.inline
-  def VBD: typings.winkPosTagger.winkPosTaggerStrings.VBD = this.cast("VBD")
+  def VBD: typings.winkPosTagger.winkPosTaggerStrings.VBD = "VBD".asInstanceOf[typings.winkPosTagger.winkPosTaggerStrings.VBD]
   @scala.inline
-  def VBG: typings.winkPosTagger.winkPosTaggerStrings.VBG = this.cast("VBG")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def VBG: typings.winkPosTagger.winkPosTaggerStrings.VBG = "VBG".asInstanceOf[typings.winkPosTagger.winkPosTaggerStrings.VBG]
 }
 

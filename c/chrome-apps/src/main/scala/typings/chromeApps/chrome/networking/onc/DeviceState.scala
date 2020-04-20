@@ -1,5 +1,6 @@
 package typings.chromeApps.chrome.networking.onc
 
+import typings.chromeApps.chromeAppsStrings.Disabled_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation._
 /* The current state of the device. */
 /* Rewritten from type alias, can be one of: 
   - typings.chromeApps.chromeAppsStrings.Uninitialized
-  - typings.chromeApps.chromeAppsStrings.Disabled
+  - typings.chromeApps.chromeAppsStrings.Disabled_
   - typings.chromeApps.chromeAppsStrings.Enabling
   - typings.chromeApps.chromeAppsStrings.Enabled
   - typings.chromeApps.chromeAppsStrings.Prohibited
@@ -16,16 +17,14 @@ trait DeviceState extends js.Object
 
 object DeviceState {
   @scala.inline
-  def Disabled: typings.chromeApps.chromeAppsStrings.Disabled = this.cast("Disabled")
+  def Disabled: Disabled_ = "Disabled".asInstanceOf[Disabled_]
   @scala.inline
-  def Enabled: typings.chromeApps.chromeAppsStrings.Enabled = this.cast("Enabled")
+  def Enabled: typings.chromeApps.chromeAppsStrings.Enabled = "Enabled".asInstanceOf[typings.chromeApps.chromeAppsStrings.Enabled]
   @scala.inline
-  def Enabling: typings.chromeApps.chromeAppsStrings.Enabling = this.cast("Enabling")
+  def Enabling: typings.chromeApps.chromeAppsStrings.Enabling = "Enabling".asInstanceOf[typings.chromeApps.chromeAppsStrings.Enabling]
   @scala.inline
-  def Prohibited: typings.chromeApps.chromeAppsStrings.Prohibited = this.cast("Prohibited")
+  def Prohibited: typings.chromeApps.chromeAppsStrings.Prohibited = "Prohibited".asInstanceOf[typings.chromeApps.chromeAppsStrings.Prohibited]
   @scala.inline
-  def Uninitialized: typings.chromeApps.chromeAppsStrings.Uninitialized = this.cast("Uninitialized")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Uninitialized: typings.chromeApps.chromeAppsStrings.Uninitialized = "Uninitialized".asInstanceOf[typings.chromeApps.chromeAppsStrings.Uninitialized]
 }
 

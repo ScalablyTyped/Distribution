@@ -38,8 +38,8 @@ object segmentButtonMod extends js.Object {
     def connectedCallback_MSegmentButton(): Unit = js.native
     @JSName("disconnectedCallback")
     def disconnectedCallback_MSegmentButton(): Unit = js.native
-    /* private */ def hasIcon(): js.Any = js.native
-    /* private */ def hasLabel(): js.Any = js.native
+    /* private */ def hasIcon: js.Any = js.native
+    /* private */ def hasLabel: js.Any = js.native
     @JSName("render")
     def render_MSegmentButton(): js.Any = js.native
   }

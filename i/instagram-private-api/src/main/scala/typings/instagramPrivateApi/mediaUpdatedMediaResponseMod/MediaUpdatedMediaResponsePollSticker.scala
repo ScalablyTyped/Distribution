@@ -30,7 +30,6 @@ object MediaUpdatedMediaResponsePollSticker {
     viewer_vote: Double
   ): MediaUpdatedMediaResponsePollSticker = {
     val __obj = js.Dynamic.literal(finished = finished.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], is_shared_result = is_shared_result.asInstanceOf[js.Any], poll_id = poll_id.asInstanceOf[js.Any], promotion_tallies = promotion_tallies.asInstanceOf[js.Any], question = question.asInstanceOf[js.Any], tallies = tallies.asInstanceOf[js.Any], viewer_can_vote = viewer_can_vote.asInstanceOf[js.Any], viewer_vote = viewer_vote.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MediaUpdatedMediaResponsePollSticker]
   }
 }

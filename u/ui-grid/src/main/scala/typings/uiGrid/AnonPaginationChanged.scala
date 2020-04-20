@@ -19,7 +19,6 @@ object AnonPaginationChanged {
   @scala.inline
   def apply(paginationChanged: (IScope, paginationChangedHandler) => Unit): AnonPaginationChanged = {
     val __obj = js.Dynamic.literal(paginationChanged = js.Any.fromFunction2(paginationChanged))
-  
     __obj.asInstanceOf[AnonPaginationChanged]
   }
 }

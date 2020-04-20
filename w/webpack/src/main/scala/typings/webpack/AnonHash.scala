@@ -13,7 +13,6 @@ object AnonHash {
   @scala.inline
   def apply(hash: js.Any, id: js.Any): AnonHash = {
     val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHash]
   }
 }

@@ -12,10 +12,8 @@ trait ButtonRelativeToValue extends js.Object
 
 object ButtonRelativeToValue {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def plotBox: typings.highcharts.highchartsStrings.plotBox = "plotBox".asInstanceOf[typings.highcharts.highchartsStrings.plotBox]
   @scala.inline
-  def plotBox: typings.highcharts.highchartsStrings.plotBox = this.cast("plotBox")
-  @scala.inline
-  def spacingBox: typings.highcharts.highchartsStrings.spacingBox = this.cast("spacingBox")
+  def spacingBox: typings.highcharts.highchartsStrings.spacingBox = "spacingBox".asInstanceOf[typings.highcharts.highchartsStrings.spacingBox]
 }
 

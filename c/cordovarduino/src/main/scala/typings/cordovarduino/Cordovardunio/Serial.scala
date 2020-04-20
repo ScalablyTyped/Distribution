@@ -62,7 +62,6 @@ object Serial {
     write: (String, js.Function, js.Function) => Unit
   ): Serial = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction2(close), open = js.Any.fromFunction3(open), read = js.Any.fromFunction2(read), registerReadCallback = js.Any.fromFunction2(registerReadCallback), requestPermission = js.Any.fromFunction2(requestPermission), write = js.Any.fromFunction3(write))
-  
     __obj.asInstanceOf[Serial]
   }
 }

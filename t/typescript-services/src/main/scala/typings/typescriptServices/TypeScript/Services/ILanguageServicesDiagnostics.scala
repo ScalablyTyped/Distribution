@@ -12,7 +12,6 @@ object ILanguageServicesDiagnostics {
   @scala.inline
   def apply(log: String => Unit): ILanguageServicesDiagnostics = {
     val __obj = js.Dynamic.literal(log = js.Any.fromFunction1(log))
-  
     __obj.asInstanceOf[ILanguageServicesDiagnostics]
   }
 }

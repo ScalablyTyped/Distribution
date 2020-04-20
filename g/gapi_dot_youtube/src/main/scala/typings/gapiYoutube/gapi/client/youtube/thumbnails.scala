@@ -19,7 +19,6 @@ object thumbnails {
   @scala.inline
   def apply(set: AnonVideoId => HttpRequest[GoogleApiYouTubePageInfo[GoogleApiYouTubeThumbnailResource]]): thumbnails = {
     val __obj = js.Dynamic.literal(set = js.Any.fromFunction1(set))
-  
     __obj.asInstanceOf[thumbnails]
   }
 }

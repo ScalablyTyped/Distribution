@@ -15,7 +15,6 @@ object McfResource {
   @scala.inline
   def apply(get: AnonEnddate => Request_[McfData]): McfResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
-  
     __obj.asInstanceOf[McfResource]
   }
 }

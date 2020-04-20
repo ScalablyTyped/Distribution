@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait nteractTransformVdomProps {
   @scala.inline
-  def TransformVdomProps: PartialProps.type = typings.nteractTransformVdom.PartialProps
+  def TransformVdomProps: PartialProps.type = PartialProps
   type TransformVdomProps = PartialProps
 }
 

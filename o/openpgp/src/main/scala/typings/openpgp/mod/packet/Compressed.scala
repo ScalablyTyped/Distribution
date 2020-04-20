@@ -18,7 +18,6 @@ import scala.scalajs.js.annotation._
 class Compressed () extends js.Object {
   /**
     * Compression algorithm
-    * @type {compression}
     */
   var algorithm: js.Any = js.native
   /**

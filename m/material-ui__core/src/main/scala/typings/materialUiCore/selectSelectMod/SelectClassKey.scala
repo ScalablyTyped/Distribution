@@ -17,20 +17,18 @@ trait SelectClassKey extends js.Object
 
 object SelectClassKey {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def disabled: typings.materialUiCore.materialUiCoreStrings.disabled = "disabled".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.disabled]
   @scala.inline
-  def disabled: typings.materialUiCore.materialUiCoreStrings.disabled = this.cast("disabled")
+  def filled: typings.materialUiCore.materialUiCoreStrings.filled = "filled".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.filled]
   @scala.inline
-  def filled: typings.materialUiCore.materialUiCoreStrings.filled = this.cast("filled")
+  def icon: typings.materialUiCore.materialUiCoreStrings.icon = "icon".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.icon]
   @scala.inline
-  def icon: typings.materialUiCore.materialUiCoreStrings.icon = this.cast("icon")
+  def outlined: typings.materialUiCore.materialUiCoreStrings.outlined = "outlined".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.outlined]
   @scala.inline
-  def outlined: typings.materialUiCore.materialUiCoreStrings.outlined = this.cast("outlined")
+  def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
   @scala.inline
-  def root: typings.materialUiCore.materialUiCoreStrings.root = this.cast("root")
+  def select: typings.materialUiCore.materialUiCoreStrings.select = "select".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.select]
   @scala.inline
-  def select: typings.materialUiCore.materialUiCoreStrings.select = this.cast("select")
-  @scala.inline
-  def selectMenu: typings.materialUiCore.materialUiCoreStrings.selectMenu = this.cast("selectMenu")
+  def selectMenu: typings.materialUiCore.materialUiCoreStrings.selectMenu = "selectMenu".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.selectMenu]
 }
 

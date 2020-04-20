@@ -31,7 +31,6 @@ object SelectionChangedEventArgs {
   @scala.inline
   def apply(pageName: String, shapeNames: js.Array[String]): SelectionChangedEventArgs = {
     val __obj = js.Dynamic.literal(pageName = pageName.asInstanceOf[js.Any], shapeNames = shapeNames.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SelectionChangedEventArgs]
   }
 }

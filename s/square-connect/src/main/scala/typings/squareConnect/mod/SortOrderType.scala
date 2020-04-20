@@ -12,10 +12,8 @@ trait SortOrderType extends js.Object
 
 object SortOrderType {
   @scala.inline
-  def ASC: typings.squareConnect.squareConnectStrings.ASC = this.cast("ASC")
+  def ASC: typings.squareConnect.squareConnectStrings.ASC = "ASC".asInstanceOf[typings.squareConnect.squareConnectStrings.ASC]
   @scala.inline
-  def DESC: typings.squareConnect.squareConnectStrings.DESC = this.cast("DESC")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def DESC: typings.squareConnect.squareConnectStrings.DESC = "DESC".asInstanceOf[typings.squareConnect.squareConnectStrings.DESC]
 }
 

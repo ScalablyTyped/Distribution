@@ -13,12 +13,10 @@ trait ConnectionStatus extends js.Object
 
 object ConnectionStatus {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def connected: typings.jupyterlabServices.jupyterlabServicesStrings.connected = "connected".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.connected]
   @scala.inline
-  def connected: typings.jupyterlabServices.jupyterlabServicesStrings.connected = this.cast("connected")
+  def connecting: typings.jupyterlabServices.jupyterlabServicesStrings.connecting = "connecting".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.connecting]
   @scala.inline
-  def connecting: typings.jupyterlabServices.jupyterlabServicesStrings.connecting = this.cast("connecting")
-  @scala.inline
-  def disconnected: typings.jupyterlabServices.jupyterlabServicesStrings.disconnected = this.cast("disconnected")
+  def disconnected: typings.jupyterlabServices.jupyterlabServicesStrings.disconnected = "disconnected".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.disconnected]
 }
 

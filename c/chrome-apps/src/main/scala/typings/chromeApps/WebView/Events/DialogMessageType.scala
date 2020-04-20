@@ -16,12 +16,10 @@ trait DialogMessageType extends js.Object
 
 object DialogMessageType {
   @scala.inline
-  def alert: typings.chromeApps.chromeAppsStrings.alert = this.cast("alert")
+  def alert: typings.chromeApps.chromeAppsStrings.alert = "alert".asInstanceOf[typings.chromeApps.chromeAppsStrings.alert]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def confirm: typings.chromeApps.chromeAppsStrings.confirm = "confirm".asInstanceOf[typings.chromeApps.chromeAppsStrings.confirm]
   @scala.inline
-  def confirm: typings.chromeApps.chromeAppsStrings.confirm = this.cast("confirm")
-  @scala.inline
-  def prompt: typings.chromeApps.chromeAppsStrings.prompt = this.cast("prompt")
+  def prompt: typings.chromeApps.chromeAppsStrings.prompt = "prompt".asInstanceOf[typings.chromeApps.chromeAppsStrings.prompt]
 }
 

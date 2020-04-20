@@ -38,34 +38,32 @@ trait WdHelpType extends js.Object
 
 object WdHelpType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdHelp: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdHelp: `0` = this.cast(0)
+  def wdHelpAbout: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdHelpAbout: `1` = this.cast(1)
+  def wdHelpActiveWindow: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdHelpActiveWindow: `2` = this.cast(2)
+  def wdHelpContents: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdHelpContents: `3` = this.cast(3)
+  def wdHelpExamplesAndDemos: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdHelpExamplesAndDemos: `4` = this.cast(4)
+  def wdHelpHWP: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def wdHelpHWP: `13` = this.cast(13)
+  def wdHelpIchitaro: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def wdHelpIchitaro: `11` = this.cast(11)
+  def wdHelpIndex: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdHelpIndex: `5` = this.cast(5)
+  def wdHelpKeyboard: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdHelpKeyboard: `6` = this.cast(6)
+  def wdHelpPE2: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def wdHelpPE2: `12` = this.cast(12)
+  def wdHelpPSSHelp: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def wdHelpPSSHelp: `7` = this.cast(7)
+  def wdHelpQuickPreview: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def wdHelpQuickPreview: `8` = this.cast(8)
+  def wdHelpSearch: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def wdHelpSearch: `9` = this.cast(9)
-  @scala.inline
-  def wdHelpUsingHelp: `10` = this.cast(10)
+  def wdHelpUsingHelp: `10` = 10.asInstanceOf[`10`]
 }
 

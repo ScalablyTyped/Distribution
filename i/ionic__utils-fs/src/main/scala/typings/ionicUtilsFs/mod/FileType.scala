@@ -14,10 +14,8 @@ trait FileType extends js.Object
 
 object FileType {
   @scala.inline
-  def DIRECTORY: directory = this.cast("directory")
+  def DIRECTORY: directory = "directory".asInstanceOf[directory]
   @scala.inline
-  def FILE: file = this.cast("file")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def FILE: file = "file".asInstanceOf[file]
 }
 

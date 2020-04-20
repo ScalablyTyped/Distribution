@@ -19,24 +19,22 @@ trait RTCStatsType extends js.Object
 
 object RTCStatsType {
   @scala.inline
-  def candidatepair: typings.std.stdStrings.candidatepair = this.cast("candidatepair")
+  def candidatepair: typings.std.stdStrings.candidatepair = "candidatepair".asInstanceOf[typings.std.stdStrings.candidatepair]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def datachannel: typings.std.stdStrings.datachannel = "datachannel".asInstanceOf[typings.std.stdStrings.datachannel]
   @scala.inline
-  def datachannel: typings.std.stdStrings.datachannel = this.cast("datachannel")
+  def inboundrtp: typings.std.stdStrings.inboundrtp = "inboundrtp".asInstanceOf[typings.std.stdStrings.inboundrtp]
   @scala.inline
-  def inboundrtp: typings.std.stdStrings.inboundrtp = this.cast("inboundrtp")
+  def localcandidate: typings.std.stdStrings.localcandidate = "localcandidate".asInstanceOf[typings.std.stdStrings.localcandidate]
   @scala.inline
-  def localcandidate: typings.std.stdStrings.localcandidate = this.cast("localcandidate")
+  def outboundrtp: typings.std.stdStrings.outboundrtp = "outboundrtp".asInstanceOf[typings.std.stdStrings.outboundrtp]
   @scala.inline
-  def outboundrtp: typings.std.stdStrings.outboundrtp = this.cast("outboundrtp")
+  def remotecandidate: typings.std.stdStrings.remotecandidate = "remotecandidate".asInstanceOf[typings.std.stdStrings.remotecandidate]
   @scala.inline
-  def remotecandidate: typings.std.stdStrings.remotecandidate = this.cast("remotecandidate")
+  def session: typings.std.stdStrings.session = "session".asInstanceOf[typings.std.stdStrings.session]
   @scala.inline
-  def session: typings.std.stdStrings.session = this.cast("session")
+  def track: typings.std.stdStrings.track = "track".asInstanceOf[typings.std.stdStrings.track]
   @scala.inline
-  def track: typings.std.stdStrings.track = this.cast("track")
-  @scala.inline
-  def transport: typings.std.stdStrings.transport = this.cast("transport")
+  def transport: typings.std.stdStrings.transport = "transport".asInstanceOf[typings.std.stdStrings.transport]
 }
 

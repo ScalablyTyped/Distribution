@@ -13,7 +13,6 @@ object RulesProps {
   @scala.inline
   def apply(rules: js.Array[CheckResult]): RulesProps = {
     val __obj = js.Dynamic.literal(rules = rules.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RulesProps]
   }
 }

@@ -13,10 +13,8 @@ trait NpmClient extends js.Object
 
 object NpmClient {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def npm: typings.ionic.ionicStrings.npm = "npm".asInstanceOf[typings.ionic.ionicStrings.npm]
   @scala.inline
-  def npm: typings.ionic.ionicStrings.npm = this.cast("npm")
-  @scala.inline
-  def yarn: yarn_ = this.cast("yarn")
+  def yarn: yarn_ = "yarn".asInstanceOf[yarn_]
 }
 

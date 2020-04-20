@@ -12,13 +12,10 @@ import scala.scalajs.js.annotation._
 
 object hedronComponents extends hedronProps {
   @scala.inline
-  def Bounds: ComponentType[BoundsProps with HTMLProps[HTMLElement]] = js.constructorOf[typings.hedron.mod.Bounds].asInstanceOf[typings.react.mod.ComponentType[
-  typings.hedron.mod.BoundsProps with typings.react.mod.HTMLProps[typings.std.HTMLElement]]]
+  def Bounds: ComponentType[BoundsProps with HTMLProps[HTMLElement]] = js.constructorOf[typings.hedron.mod.Bounds].asInstanceOf[ComponentType[BoundsProps with HTMLProps[HTMLElement]]]
   @scala.inline
-  def Box: ComponentType[BoxProps with HTMLProps[HTMLElement]] = js.constructorOf[typings.hedron.mod.Box].asInstanceOf[typings.react.mod.ComponentType[
-  typings.hedron.mod.BoxProps with typings.react.mod.HTMLProps[typings.std.HTMLElement]]]
+  def Box: ComponentType[BoxProps with HTMLProps[HTMLElement]] = js.constructorOf[typings.hedron.mod.Box].asInstanceOf[ComponentType[BoxProps with HTMLProps[HTMLElement]]]
   @scala.inline
-  def Provider: ComponentType[ProviderProps with HTMLProps[HTMLElement]] = js.constructorOf[typings.hedron.mod.Provider].asInstanceOf[typings.react.mod.ComponentType[
-  typings.hedron.mod.ProviderProps with typings.react.mod.HTMLProps[typings.std.HTMLElement]]]
+  def Provider: ComponentType[ProviderProps with HTMLProps[HTMLElement]] = js.constructorOf[typings.hedron.mod.Provider].asInstanceOf[ComponentType[ProviderProps with HTMLProps[HTMLElement]]]
 }
 

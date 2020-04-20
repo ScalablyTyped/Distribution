@@ -24,7 +24,6 @@ object S3ReferenceDataSource {
   @scala.inline
   def apply(BucketARN: BucketARN, FileKey: FileKey, ReferenceRoleARN: RoleARN): S3ReferenceDataSource = {
     val __obj = js.Dynamic.literal(BucketARN = BucketARN.asInstanceOf[js.Any], FileKey = FileKey.asInstanceOf[js.Any], ReferenceRoleARN = ReferenceRoleARN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[S3ReferenceDataSource]
   }
 }

@@ -13,7 +13,6 @@ object AnonGet {
   @scala.inline
   def apply[T /* <: js.Object */, V](get: T => js.UndefOr[V], has: T => Boolean): AnonGet[T, V] = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has))
-  
     __obj.asInstanceOf[AnonGet[T, V]]
   }
 }

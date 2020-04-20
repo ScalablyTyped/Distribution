@@ -20,7 +20,6 @@ object AbortVaultLockInput {
   @scala.inline
   def apply(accountId: String, vaultName: String): AbortVaultLockInput = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], vaultName = vaultName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AbortVaultLockInput]
   }
 }

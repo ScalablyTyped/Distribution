@@ -27,7 +27,6 @@ object IEffectFallbacks {
   @scala.inline
   def apply(hasMoreFallbacks: Boolean, reduce: (String, Effect) => String, unBindMesh: () => Unit): IEffectFallbacks = {
     val __obj = js.Dynamic.literal(hasMoreFallbacks = hasMoreFallbacks.asInstanceOf[js.Any], reduce = js.Any.fromFunction2(reduce), unBindMesh = js.Any.fromFunction0(unBindMesh))
-  
     __obj.asInstanceOf[IEffectFallbacks]
   }
 }

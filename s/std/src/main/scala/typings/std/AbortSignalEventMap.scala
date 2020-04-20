@@ -12,7 +12,6 @@ object AbortSignalEventMap {
   @scala.inline
   def apply(abort: Event_): AbortSignalEventMap = {
     val __obj = js.Dynamic.literal(abort = abort.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AbortSignalEventMap]
   }
 }

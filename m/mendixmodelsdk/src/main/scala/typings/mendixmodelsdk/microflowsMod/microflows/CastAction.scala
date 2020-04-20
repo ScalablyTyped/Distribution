@@ -25,7 +25,7 @@ class CastAction protected () extends MicroflowAction {
   ) = this()
   @JSName("model")
   var model_FCastAction: IModel = js.native
-  def outputVariableName(): String = js.native
+  def outputVariableName: String = js.native
   def outputVariableName(newValue: String): js.Any = js.native
 }
 

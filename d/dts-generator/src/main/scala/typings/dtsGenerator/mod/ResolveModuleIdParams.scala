@@ -13,7 +13,6 @@ object ResolveModuleIdParams {
   @scala.inline
   def apply(currentModuleId: String): ResolveModuleIdParams = {
     val __obj = js.Dynamic.literal(currentModuleId = currentModuleId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResolveModuleIdParams]
   }
 }

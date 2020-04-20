@@ -15,7 +15,6 @@ object AnonCascade {
   @scala.inline
   def apply(cascade: Boolean, cols: Double, onChange: () => Unit, value: js.Array[scala.Nothing]): AnonCascade = {
     val __obj = js.Dynamic.literal(cascade = cascade.asInstanceOf[js.Any], cols = cols.asInstanceOf[js.Any], onChange = js.Any.fromFunction0(onChange), value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCascade]
   }
 }

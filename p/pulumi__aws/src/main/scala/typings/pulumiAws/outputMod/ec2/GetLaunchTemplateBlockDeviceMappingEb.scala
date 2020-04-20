@@ -27,7 +27,6 @@ object GetLaunchTemplateBlockDeviceMappingEb {
     volumeType: String
   ): GetLaunchTemplateBlockDeviceMappingEb = {
     val __obj = js.Dynamic.literal(deleteOnTermination = deleteOnTermination.asInstanceOf[js.Any], encrypted = encrypted.asInstanceOf[js.Any], iops = iops.asInstanceOf[js.Any], kmsKeyId = kmsKeyId.asInstanceOf[js.Any], snapshotId = snapshotId.asInstanceOf[js.Any], volumeSize = volumeSize.asInstanceOf[js.Any], volumeType = volumeType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetLaunchTemplateBlockDeviceMappingEb]
   }
 }

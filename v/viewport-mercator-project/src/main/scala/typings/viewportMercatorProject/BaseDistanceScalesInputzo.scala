@@ -16,7 +16,6 @@ object BaseDistanceScalesInputzo {
   @scala.inline
   def apply(latitude: Double, longitude: Double, zoom: Double): BaseDistanceScalesInputzo = {
     val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BaseDistanceScalesInputzo]
   }
 }

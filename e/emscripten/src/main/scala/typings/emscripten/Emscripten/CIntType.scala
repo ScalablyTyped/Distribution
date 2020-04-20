@@ -14,14 +14,12 @@ trait CIntType extends js.Object
 
 object CIntType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def i16: typings.emscripten.emscriptenStrings.i16 = "i16".asInstanceOf[typings.emscripten.emscriptenStrings.i16]
   @scala.inline
-  def i16: typings.emscripten.emscriptenStrings.i16 = this.cast("i16")
+  def i32: typings.emscripten.emscriptenStrings.i32 = "i32".asInstanceOf[typings.emscripten.emscriptenStrings.i32]
   @scala.inline
-  def i32: typings.emscripten.emscriptenStrings.i32 = this.cast("i32")
+  def i64: typings.emscripten.emscriptenStrings.i64 = "i64".asInstanceOf[typings.emscripten.emscriptenStrings.i64]
   @scala.inline
-  def i64: typings.emscripten.emscriptenStrings.i64 = this.cast("i64")
-  @scala.inline
-  def i8: typings.emscripten.emscriptenStrings.i8 = this.cast("i8")
+  def i8: typings.emscripten.emscriptenStrings.i8 = "i8".asInstanceOf[typings.emscripten.emscriptenStrings.i8]
 }
 

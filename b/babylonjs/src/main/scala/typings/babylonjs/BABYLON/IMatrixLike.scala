@@ -14,7 +14,6 @@ object IMatrixLike {
   @scala.inline
   def apply(toArray: () => DeepImmutable[Float32Array], updateFlag: int): IMatrixLike = {
     val __obj = js.Dynamic.literal(toArray = js.Any.fromFunction0(toArray), updateFlag = updateFlag.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMatrixLike]
   }
 }

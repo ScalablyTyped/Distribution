@@ -12,7 +12,6 @@ object ISettingsPaneCommandsRequestedEventArgs {
   @scala.inline
   def apply(request: SettingsPaneCommandsRequest): ISettingsPaneCommandsRequestedEventArgs = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISettingsPaneCommandsRequestedEventArgs]
   }
 }

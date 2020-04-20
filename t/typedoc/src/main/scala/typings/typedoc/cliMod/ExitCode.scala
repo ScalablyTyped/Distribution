@@ -20,16 +20,14 @@ trait ExitCode extends js.Object
 
 object ExitCode {
   @scala.inline
-  def CompileError: `4` = this.cast(4)
+  def CompileError: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def NoInputFiles: `2` = this.cast(2)
+  def NoInputFiles: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def NoOutput: `3` = this.cast(3)
+  def NoOutput: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def OptionError: `1` = this.cast(1)
+  def OptionError: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def OutputError: `5` = this.cast(5)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def OutputError: `5` = 5.asInstanceOf[`5`]
 }
 

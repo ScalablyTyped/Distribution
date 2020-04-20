@@ -13,7 +13,6 @@ object AnonButton {
   @scala.inline
   def apply(button: HTMLElement => Unit): AnonButton = {
     val __obj = js.Dynamic.literal(button = js.Any.fromFunction1(button))
-  
     __obj.asInstanceOf[AnonButton]
   }
 }

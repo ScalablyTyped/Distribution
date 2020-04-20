@@ -34,19 +34,16 @@ object ChannelRequest {
   @scala.inline
   def SubsystemChannelRequest(recipient: Double, request: subsystem, subsystem: String, wantReply: Boolean): ChannelRequest = {
     val __obj = js.Dynamic.literal(recipient = recipient.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], subsystem = subsystem.asInstanceOf[js.Any], wantReply = wantReply.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChannelRequest]
   }
   @scala.inline
   def ExecChannelRequest(command: String, recipient: Double, request: exec, wantReply: Boolean): ChannelRequest = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], wantReply = wantReply.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChannelRequest]
   }
   @scala.inline
   def FlowControlChannelRequest(clientControl: Boolean, recipient: Double, request: `xon-xoff`): ChannelRequest = {
     val __obj = js.Dynamic.literal(clientControl = clientControl.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChannelRequest]
   }
   @scala.inline
@@ -66,13 +63,11 @@ object ChannelRequest {
     wantReply: Boolean
   ): ChannelRequest = {
     val __obj = js.Dynamic.literal(cookie = cookie.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], screen = screen.asInstanceOf[js.Any], single = single.asInstanceOf[js.Any], wantReply = wantReply.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChannelRequest]
   }
   @scala.inline
   def ExitStatusChannelRequest(code: Double, recipient: Double, request: `exit-status`): ChannelRequest = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChannelRequest]
   }
   @scala.inline
@@ -85,25 +80,21 @@ object ChannelRequest {
     width: Double
   ): ChannelRequest = {
     val __obj = js.Dynamic.literal(cols = cols.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChannelRequest]
   }
   @scala.inline
   def ExitSignalChannelRequest(coredump: Boolean, description: String, recipient: Double, request: `exit-signal`, signal: String): ChannelRequest = {
     val __obj = js.Dynamic.literal(coredump = coredump.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], signal = signal.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChannelRequest]
   }
   @scala.inline
   def ShellChannelRequest(recipient: Double, request: shell, wantReply: Boolean): ChannelRequest = {
     val __obj = js.Dynamic.literal(recipient = recipient.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], wantReply = wantReply.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChannelRequest]
   }
   @scala.inline
   def SignalChannelRequest(recipient: Double, request: signal, signal: String): ChannelRequest = {
     val __obj = js.Dynamic.literal(recipient = recipient.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], signal = signal.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChannelRequest]
   }
   @scala.inline
@@ -119,7 +110,6 @@ object ChannelRequest {
     width: Double
   ): ChannelRequest = {
     val __obj = js.Dynamic.literal(cols = cols.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], modes = modes.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any], term = term.asInstanceOf[js.Any], wantReply = wantReply.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChannelRequest]
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for electron__get
 
-Typings are for version 1.9.0
+Typings are for version 1.10.0
 
 ## Library description:
 Utility for downloading artifacts from different versions of Electron

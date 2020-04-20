@@ -20,16 +20,14 @@ trait OlPane extends js.Object
 
 object OlPane {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olFolderList: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olFolderList: `2` = this.cast(2)
+  def olNavigationPane: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def olNavigationPane: `4` = this.cast(4)
+  def olOutlookBar: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olOutlookBar: `1` = this.cast(1)
+  def olPreview: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def olPreview: `3` = this.cast(3)
-  @scala.inline
-  def olToDoBar: `5` = this.cast(5)
+  def olToDoBar: `5` = 5.asInstanceOf[`5`]
 }
 

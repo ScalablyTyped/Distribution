@@ -18,7 +18,6 @@ object VerificationCodesCollection {
   @scala.inline
   def apply(generate: String => Unit, invalidate: String => Unit, list: String => VerificationCodes): VerificationCodesCollection = {
     val __obj = js.Dynamic.literal(generate = js.Any.fromFunction1(generate), invalidate = js.Any.fromFunction1(invalidate), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[VerificationCodesCollection]
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactLifecycleComponentProps {
   @scala.inline
-  def LifecycleComponentProps: Props.type = typings.reactLifecycleComponent.mod.Props
+  def LifecycleComponentProps: Props.type = Props
   type LifecycleComponentProps[P, S] = Props[P, S]
 }
 

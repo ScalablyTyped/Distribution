@@ -1,7 +1,7 @@
 package typings.cypress
 
-import typings.cypress.cypressMod.Cypress.HttpMethod
-import typings.cypress.cypressMod.Cypress.RouteOptions
+import typings.cypress.mod.Cypress.HttpMethod
+import typings.cypress.mod.Cypress.RouteOptions
 import typings.std.Request
 import scala.scalajs.js
 import scala.scalajs.js.`|`

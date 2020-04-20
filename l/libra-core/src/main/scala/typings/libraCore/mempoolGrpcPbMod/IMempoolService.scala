@@ -21,7 +21,6 @@ object IMempoolService {
     healthCheck: IMempoolServiceIHealthCheck
   ): IMempoolService = {
     val __obj = js.Dynamic.literal(addTransactionWithValidation = addTransactionWithValidation.asInstanceOf[js.Any], commitTransactions = commitTransactions.asInstanceOf[js.Any], getBlock = getBlock.asInstanceOf[js.Any], healthCheck = healthCheck.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMempoolService]
   }
 }

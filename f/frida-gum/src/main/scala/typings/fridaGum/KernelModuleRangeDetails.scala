@@ -27,7 +27,6 @@ object KernelModuleRangeDetails {
   @scala.inline
   def apply(base: UInt64_, name: String, protection: PageProtection, size: Double): KernelModuleRangeDetails = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], protection = protection.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KernelModuleRangeDetails]
   }
 }

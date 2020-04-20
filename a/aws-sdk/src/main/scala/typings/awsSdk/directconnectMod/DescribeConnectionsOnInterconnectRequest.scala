@@ -16,7 +16,6 @@ object DescribeConnectionsOnInterconnectRequest {
   @scala.inline
   def apply(interconnectId: InterconnectId): DescribeConnectionsOnInterconnectRequest = {
     val __obj = js.Dynamic.literal(interconnectId = interconnectId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeConnectionsOnInterconnectRequest]
   }
 }

@@ -22,7 +22,6 @@ object SSLVerifyObject {
     serverPort: Double
   ): SSLVerifyObject = {
     val __obj = js.Dynamic.literal(acceptedByOpenSSL = acceptedByOpenSSL.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], pemCertificate = pemCertificate.asInstanceOf[js.Any], serverAddress = serverAddress.asInstanceOf[js.Any], serverPort = serverPort.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SSLVerifyObject]
   }
 }

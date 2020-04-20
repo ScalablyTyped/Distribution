@@ -15,7 +15,6 @@ object ITerminalAddon {
   @scala.inline
   def apply(activate: Terminal => Unit, dispose: () => Unit): ITerminalAddon = {
     val __obj = js.Dynamic.literal(activate = js.Any.fromFunction1(activate), dispose = js.Any.fromFunction0(dispose))
-  
     __obj.asInstanceOf[ITerminalAddon]
   }
 }

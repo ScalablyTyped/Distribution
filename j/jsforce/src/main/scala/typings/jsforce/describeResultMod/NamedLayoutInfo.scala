@@ -14,7 +14,6 @@ object NamedLayoutInfo {
   @scala.inline
   def apply(name: String, urls: Record[String, String]): NamedLayoutInfo = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], urls = urls.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NamedLayoutInfo]
   }
 }

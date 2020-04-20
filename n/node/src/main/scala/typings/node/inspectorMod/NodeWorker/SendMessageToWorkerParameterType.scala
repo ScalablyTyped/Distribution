@@ -16,7 +16,6 @@ object SendMessageToWorkerParameterType {
   @scala.inline
   def apply(message: String, sessionId: SessionID): SendMessageToWorkerParameterType = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], sessionId = sessionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SendMessageToWorkerParameterType]
   }
 }

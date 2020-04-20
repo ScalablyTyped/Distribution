@@ -19,16 +19,6 @@ object config extends js.Object {
           ]) = this()
   }
   
-  @js.native
-  class PromiseCls[T] protected ()
-    extends typings.rx.mod.config.PromiseCls[T] {
-    def this(resolver: js.Function2[
-            /* resolvePromise */ js.Function1[/* value */ T, Unit], 
-            /* rejectPromise */ js.Function1[/* reason */ js.Any, Unit], 
-            Unit
-          ]) = this()
-  }
-  
   /**
     * Configuration option to determine whether to use native events only
     */

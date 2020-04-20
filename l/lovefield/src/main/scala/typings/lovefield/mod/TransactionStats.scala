@@ -22,7 +22,6 @@ object TransactionStats {
     updatedRowCount: () => Double
   ): TransactionStats = {
     val __obj = js.Dynamic.literal(changedTableCount = js.Any.fromFunction0(changedTableCount), deletedRowCount = js.Any.fromFunction0(deletedRowCount), insertedRowCount = js.Any.fromFunction0(insertedRowCount), success = js.Any.fromFunction0(success), updatedRowCount = js.Any.fromFunction0(updatedRowCount))
-  
     __obj.asInstanceOf[TransactionStats]
   }
 }

@@ -23,8 +23,8 @@ class MsdVersion protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FMsdVersion: IModel = js.native
-  def containerAsMsd(): Msd = js.native
-  def version(): Double = js.native
+  def containerAsMsd: Msd = js.native
+  def version: Double = js.native
   def version(newValue: Double): js.Any = js.native
 }
 

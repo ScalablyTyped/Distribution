@@ -23,7 +23,6 @@ object ComponentPropsBase {
   @scala.inline
   def apply(onBlur: () => Unit, onFocus: () => Unit, tabIndex: TabIndex): ComponentPropsBase = {
     val __obj = js.Dynamic.literal(onBlur = js.Any.fromFunction0(onBlur), onFocus = js.Any.fromFunction0(onFocus), tabIndex = tabIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ComponentPropsBase]
   }
 }

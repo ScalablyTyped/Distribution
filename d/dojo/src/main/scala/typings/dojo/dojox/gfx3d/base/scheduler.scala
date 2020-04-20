@@ -48,7 +48,6 @@ object scheduler {
     zOrder: (js.Any, js.Any) => js.Any
   ): scheduler = {
     val __obj = js.Dynamic.literal(BinarySearchTree = js.Any.fromFunction0(BinarySearchTree), bsp = js.Any.fromFunction2(bsp), order = js.Any.fromFunction1(order), outline = js.Any.fromFunction1(outline), zOrder = js.Any.fromFunction2(zOrder))
-  
     __obj.asInstanceOf[scheduler]
   }
 }

@@ -39,7 +39,6 @@ object KeyValueChanges {
     forEachRemovedItem: js.Function1[/* r */ KeyValueChangeRecord[K, V], Unit] => Unit
   ): KeyValueChanges[K, V] = {
     val __obj = js.Dynamic.literal(forEachAddedItem = js.Any.fromFunction1(forEachAddedItem), forEachChangedItem = js.Any.fromFunction1(forEachChangedItem), forEachItem = js.Any.fromFunction1(forEachItem), forEachPreviousItem = js.Any.fromFunction1(forEachPreviousItem), forEachRemovedItem = js.Any.fromFunction1(forEachRemovedItem))
-  
     __obj.asInstanceOf[KeyValueChanges[K, V]]
   }
 }

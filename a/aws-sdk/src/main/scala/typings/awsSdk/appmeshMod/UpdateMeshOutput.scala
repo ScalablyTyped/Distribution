@@ -13,7 +13,6 @@ object UpdateMeshOutput {
   @scala.inline
   def apply(mesh: MeshData): UpdateMeshOutput = {
     val __obj = js.Dynamic.literal(mesh = mesh.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateMeshOutput]
   }
 }

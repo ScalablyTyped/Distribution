@@ -28,19 +28,19 @@ object oculusTouchControllerMod extends js.Object {
     /**
       * Fired when the A button on this controller is modified
       */
-    def onAButtonStateChangedObservable(): Observable[ExtendedGamepadButton] = js.native
+    def onAButtonStateChangedObservable: Observable[ExtendedGamepadButton] = js.native
     /**
       * Fired when the B button on this controller is modified
       */
-    def onBButtonStateChangedObservable(): Observable[ExtendedGamepadButton] = js.native
+    def onBButtonStateChangedObservable: Observable[ExtendedGamepadButton] = js.native
     /**
       * Fired when the X button on this controller is modified
       */
-    def onXButtonStateChangedObservable(): Observable[ExtendedGamepadButton] = js.native
+    def onXButtonStateChangedObservable: Observable[ExtendedGamepadButton] = js.native
     /**
       * Fired when the Y button on this controller is modified
       */
-    def onYButtonStateChangedObservable(): Observable[ExtendedGamepadButton] = js.native
+    def onYButtonStateChangedObservable: Observable[ExtendedGamepadButton] = js.native
   }
   
   /* static members */

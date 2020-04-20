@@ -18,14 +18,12 @@ trait OlAttachmentType extends js.Object
 
 object OlAttachmentType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olByReference: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def olByReference: `4` = this.cast(4)
+  def olByValue: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olByValue: `1` = this.cast(1)
+  def olEmbeddeditem: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def olEmbeddeditem: `5` = this.cast(5)
-  @scala.inline
-  def olOLE: `6` = this.cast(6)
+  def olOLE: `6` = 6.asInstanceOf[`6`]
 }
 

@@ -16,7 +16,6 @@ object DeleteReusableDelegationSetRequest {
   @scala.inline
   def apply(Id: ResourceId): DeleteReusableDelegationSetRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteReusableDelegationSetRequest]
   }
 }

@@ -13,7 +13,6 @@ object Anon0 {
   @scala.inline
   def apply(session: ClientSession): Anon0 = {
     val __obj = js.Dynamic.literal(session = session.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Anon0]
   }
 }

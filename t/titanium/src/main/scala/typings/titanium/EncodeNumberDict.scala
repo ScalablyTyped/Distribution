@@ -28,7 +28,7 @@ trait EncodeNumberDict extends js.Object {
   /**
   	 * Encoding type to use.
   	 */
-  var `type`: String
+  var `type`: java.lang.String
 }
 
 object EncodeNumberDict {
@@ -36,7 +36,7 @@ object EncodeNumberDict {
   def apply(
     dest: Buffer,
     source: Double,
-    `type`: String,
+    `type`: java.lang.String,
     byteOrder: Int | Double = null,
     position: Int | Double = null
   ): EncodeNumberDict = {

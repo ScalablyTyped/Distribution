@@ -20,7 +20,6 @@ object RegisterEndPointsInput {
   @scala.inline
   def apply(Instances: Instances, LoadBalancerName: AccessPointName): RegisterEndPointsInput = {
     val __obj = js.Dynamic.literal(Instances = Instances.asInstanceOf[js.Any], LoadBalancerName = LoadBalancerName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RegisterEndPointsInput]
   }
 }

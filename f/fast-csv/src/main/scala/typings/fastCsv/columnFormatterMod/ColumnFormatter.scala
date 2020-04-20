@@ -12,7 +12,6 @@ object ColumnFormatter {
   @scala.inline
   def apply(format: String => String): ColumnFormatter = {
     val __obj = js.Dynamic.literal(format = js.Any.fromFunction1(format))
-  
     __obj.asInstanceOf[ColumnFormatter]
   }
 }

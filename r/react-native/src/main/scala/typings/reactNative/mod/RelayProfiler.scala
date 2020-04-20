@@ -19,7 +19,6 @@ object RelayProfiler {
     attachProfileHandler: (String, js.Function2[/* name */ String, /* state */ js.UndefOr[js.Any], js.Function0[Unit]]) => Unit
   ): RelayProfiler = {
     val __obj = js.Dynamic.literal(attachAggregateHandler = js.Any.fromFunction2(attachAggregateHandler), attachProfileHandler = js.Any.fromFunction2(attachProfileHandler))
-  
     __obj.asInstanceOf[RelayProfiler]
   }
 }

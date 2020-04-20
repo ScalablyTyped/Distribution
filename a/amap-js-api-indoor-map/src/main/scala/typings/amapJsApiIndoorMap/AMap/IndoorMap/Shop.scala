@@ -43,7 +43,6 @@ object Shop {
     poiId: String
   ): Shop = {
     val __obj = js.Dynamic.literal(building_id = building_id.asInstanceOf[js.Any], category = category.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lnglat = lnglat.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], poiId = poiId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Shop]
   }
 }

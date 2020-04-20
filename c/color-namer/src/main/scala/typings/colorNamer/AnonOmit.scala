@@ -13,7 +13,6 @@ object AnonOmit {
   @scala.inline
   def apply[T /* <: Palette */](omit: js.Array[T]): AnonOmit[T] = {
     val __obj = js.Dynamic.literal(omit = omit.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOmit[T]]
   }
 }

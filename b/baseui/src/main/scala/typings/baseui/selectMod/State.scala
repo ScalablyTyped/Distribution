@@ -12,7 +12,6 @@ object State {
   @scala.inline
   def apply(value: Value): State = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[State]
   }
 }

@@ -12,7 +12,6 @@ object AddHeapSnapshotChunkEventDataType {
   @scala.inline
   def apply(chunk: String): AddHeapSnapshotChunkEventDataType = {
     val __obj = js.Dynamic.literal(chunk = chunk.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddHeapSnapshotChunkEventDataType]
   }
 }

@@ -24,7 +24,6 @@ object PutDestinationRequest {
   @scala.inline
   def apply(destinationName: DestinationName, roleArn: RoleArn, targetArn: TargetArn): PutDestinationRequest = {
     val __obj = js.Dynamic.literal(destinationName = destinationName.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], targetArn = targetArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutDestinationRequest]
   }
 }

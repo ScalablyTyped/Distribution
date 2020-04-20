@@ -13,7 +13,6 @@ object StatusResponse {
   @scala.inline
   def apply(authResponse: AuthResponse, status: LoginStatus): StatusResponse = {
     val __obj = js.Dynamic.literal(authResponse = authResponse.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StatusResponse]
   }
 }

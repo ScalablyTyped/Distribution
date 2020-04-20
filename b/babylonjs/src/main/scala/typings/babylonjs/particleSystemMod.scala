@@ -373,7 +373,7 @@ object particleSystemMod extends js.Object {
     /**
       * Gets the current list of active particles
       */
-    def particles(): js.Array[Particle] = js.native
+    def particles: js.Array[Particle] = js.native
     /**
       * Rebuilds the particle system.
       */
@@ -515,7 +515,7 @@ object particleSystemMod extends js.Object {
     /** Gets or sets a boolean indicating that ramp gradients must be used
       * @see http://doc.babylonjs.com/babylon101/particles#ramp-gradients
       */
-    def useRampGradients(): Boolean = js.native
+    def useRampGradients: Boolean = js.native
     def useRampGradients(value: Boolean): js.Any = js.native
   }
   

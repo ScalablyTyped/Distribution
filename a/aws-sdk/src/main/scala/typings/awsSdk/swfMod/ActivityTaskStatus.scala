@@ -16,7 +16,6 @@ object ActivityTaskStatus {
   @scala.inline
   def apply(cancelRequested: Canceled): ActivityTaskStatus = {
     val __obj = js.Dynamic.literal(cancelRequested = cancelRequested.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ActivityTaskStatus]
   }
 }

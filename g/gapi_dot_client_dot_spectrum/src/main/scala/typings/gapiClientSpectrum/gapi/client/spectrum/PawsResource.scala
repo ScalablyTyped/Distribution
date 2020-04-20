@@ -41,7 +41,6 @@ object PawsResource {
     verifyDevice: AnonAlt => Request_[PawsVerifyDeviceResponse]
   ): PawsResource = {
     val __obj = js.Dynamic.literal(getSpectrum = js.Any.fromFunction1(getSpectrum), getSpectrumBatch = js.Any.fromFunction1(getSpectrumBatch), init = js.Any.fromFunction1(init), notifySpectrumUse = js.Any.fromFunction1(notifySpectrumUse), register = js.Any.fromFunction1(register), verifyDevice = js.Any.fromFunction1(verifyDevice))
-  
     __obj.asInstanceOf[PawsResource]
   }
 }

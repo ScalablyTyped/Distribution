@@ -34,7 +34,6 @@ object ToastAndroidStatic {
     showWithGravity: (String, Double, Double) => Unit
   ): ToastAndroidStatic = {
     val __obj = js.Dynamic.literal(BOTTOM = BOTTOM.asInstanceOf[js.Any], CENTER = CENTER.asInstanceOf[js.Any], LONG = LONG.asInstanceOf[js.Any], SHORT = SHORT.asInstanceOf[js.Any], TOP = TOP.asInstanceOf[js.Any], show = js.Any.fromFunction2(show), showWithGravity = js.Any.fromFunction3(showWithGravity))
-  
     __obj.asInstanceOf[ToastAndroidStatic]
   }
 }

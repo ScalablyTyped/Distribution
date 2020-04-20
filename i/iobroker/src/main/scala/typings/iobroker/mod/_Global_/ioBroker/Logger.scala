@@ -30,7 +30,6 @@ object Logger {
     warn: String => Unit
   ): Logger = {
     val __obj = js.Dynamic.literal(debug = js.Any.fromFunction1(debug), error = js.Any.fromFunction1(error), info = js.Any.fromFunction1(info), level = level.asInstanceOf[js.Any], silly = js.Any.fromFunction1(silly), warn = js.Any.fromFunction1(warn))
-  
     __obj.asInstanceOf[Logger]
   }
 }

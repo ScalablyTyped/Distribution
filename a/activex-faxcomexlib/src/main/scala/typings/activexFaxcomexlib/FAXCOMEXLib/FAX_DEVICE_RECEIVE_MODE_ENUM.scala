@@ -17,12 +17,10 @@ trait FAX_DEVICE_RECEIVE_MODE_ENUM extends js.Object
 
 object FAX_DEVICE_RECEIVE_MODE_ENUM {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fdrmAUTO_ANSWER: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def fdrmAUTO_ANSWER: `1` = this.cast(1)
+  def fdrmMANUAL_ANSWER: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def fdrmMANUAL_ANSWER: `2` = this.cast(2)
-  @scala.inline
-  def fdrmNO_ANSWER: `0` = this.cast(0)
+  def fdrmNO_ANSWER: `0` = 0.asInstanceOf[`0`]
 }
 

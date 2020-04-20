@@ -16,7 +16,6 @@ object StorageCapacityInfo {
   @scala.inline
   def apply(availableCapacity: integer, id: String): StorageCapacityInfo = {
     val __obj = js.Dynamic.literal(availableCapacity = availableCapacity.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StorageCapacityInfo]
   }
 }

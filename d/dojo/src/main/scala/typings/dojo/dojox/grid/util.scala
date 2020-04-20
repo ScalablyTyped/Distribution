@@ -103,7 +103,6 @@ object util {
     setStyleHeightPx: (js.Any, js.Any) => Unit
   ): util = {
     val __obj = js.Dynamic.literal(arrayCompare = js.Any.fromFunction2(arrayCompare), arrayInsert = js.Any.fromFunction3(arrayInsert), arrayRemove = js.Any.fromFunction2(arrayRemove), arraySwap = js.Any.fromFunction3(arraySwap), fire = js.Any.fromFunction3(fire), funnelEvents = js.Any.fromFunction4(funnelEvents), gridViewTag = gridViewTag.asInstanceOf[js.Any], keyEvents = keyEvents.asInstanceOf[js.Any], mouseEvents = mouseEvents.asInstanceOf[js.Any], na = na.asInstanceOf[js.Any], removeNode = js.Any.fromFunction1(removeNode), rowIndexTag = rowIndexTag.asInstanceOf[js.Any], setStyleHeightPx = js.Any.fromFunction2(setStyleHeightPx))
-  
     __obj.asInstanceOf[util]
   }
 }

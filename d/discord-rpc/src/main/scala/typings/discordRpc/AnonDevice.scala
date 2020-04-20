@@ -13,7 +13,6 @@ object AnonDevice {
   @scala.inline
   def apply(device: String, volume: Double): AnonDevice = {
     val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any], volume = volume.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDevice]
   }
 }

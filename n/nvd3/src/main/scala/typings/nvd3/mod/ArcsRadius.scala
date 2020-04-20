@@ -13,7 +13,6 @@ object ArcsRadius {
   @scala.inline
   def apply(inner: Double, outer: Double): ArcsRadius = {
     val __obj = js.Dynamic.literal(inner = inner.asInstanceOf[js.Any], outer = outer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ArcsRadius]
   }
 }

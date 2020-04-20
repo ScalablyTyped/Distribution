@@ -27,7 +27,6 @@ object MDCProgressIndicator {
   @scala.inline
   def apply(close: () => Unit, determinate: Boolean, open: () => Unit, progress: Double): MDCProgressIndicator = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), determinate = determinate.asInstanceOf[js.Any], open = js.Any.fromFunction0(open), progress = progress.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MDCProgressIndicator]
   }
 }

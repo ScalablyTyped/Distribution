@@ -19,7 +19,6 @@ object Publisher {
   @scala.inline
   def apply(name: String, serviceOwnerId: String): Publisher = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], serviceOwnerId = serviceOwnerId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Publisher]
   }
 }

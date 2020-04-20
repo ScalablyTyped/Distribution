@@ -41,7 +41,6 @@ object DataSourceSpecBuilder {
     setParameterFromCell: (String, String) => DataSourceSpecBuilder
   ): DataSourceSpecBuilder = {
     val __obj = js.Dynamic.literal(asBigQuery = js.Any.fromFunction0(asBigQuery), build = js.Any.fromFunction0(build), copy = js.Any.fromFunction0(copy), getParameters = js.Any.fromFunction0(getParameters), getType = js.Any.fromFunction0(getType), removeAllParameters = js.Any.fromFunction0(removeAllParameters), removeParameter = js.Any.fromFunction1(removeParameter), setParameterFromCell = js.Any.fromFunction2(setParameterFromCell))
-  
     __obj.asInstanceOf[DataSourceSpecBuilder]
   }
 }

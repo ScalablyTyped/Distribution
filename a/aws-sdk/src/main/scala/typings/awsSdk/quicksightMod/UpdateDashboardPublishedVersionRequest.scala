@@ -24,7 +24,6 @@ object UpdateDashboardPublishedVersionRequest {
   @scala.inline
   def apply(AwsAccountId: AwsAccountId, DashboardId: RestrictiveResourceId, VersionNumber: VersionNumber): UpdateDashboardPublishedVersionRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], DashboardId = DashboardId.asInstanceOf[js.Any], VersionNumber = VersionNumber.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateDashboardPublishedVersionRequest]
   }
 }

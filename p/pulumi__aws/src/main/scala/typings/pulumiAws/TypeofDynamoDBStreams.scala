@@ -13,7 +13,6 @@ object TypeofDynamoDBStreams {
   @scala.inline
   def apply(Types: TypeofDynamoDBStreams): TypeofDynamoDBStreams = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofDynamoDBStreams]
   }
 }

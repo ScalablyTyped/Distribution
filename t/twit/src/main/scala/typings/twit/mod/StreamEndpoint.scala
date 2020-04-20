@@ -15,16 +15,14 @@ trait StreamEndpoint extends js.Object
 
 object StreamEndpoint {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def site: typings.twit.twitStrings.site = "site".asInstanceOf[typings.twit.twitStrings.site]
   @scala.inline
-  def site: typings.twit.twitStrings.site = this.cast("site")
+  def statusesSlashfilter: typings.twit.twitStrings.statusesSlashfilter = "statuses/filter".asInstanceOf[typings.twit.twitStrings.statusesSlashfilter]
   @scala.inline
-  def statusesSlashfilter: typings.twit.twitStrings.statusesSlashfilter = this.cast("statuses/filter")
+  def statusesSlashfirehose: typings.twit.twitStrings.statusesSlashfirehose = "statuses/firehose".asInstanceOf[typings.twit.twitStrings.statusesSlashfirehose]
   @scala.inline
-  def statusesSlashfirehose: typings.twit.twitStrings.statusesSlashfirehose = this.cast("statuses/firehose")
+  def statusesSlashsample: typings.twit.twitStrings.statusesSlashsample = "statuses/sample".asInstanceOf[typings.twit.twitStrings.statusesSlashsample]
   @scala.inline
-  def statusesSlashsample: typings.twit.twitStrings.statusesSlashsample = this.cast("statuses/sample")
-  @scala.inline
-  def user: typings.twit.twitStrings.user = this.cast("user")
+  def user: typings.twit.twitStrings.user = "user".asInstanceOf[typings.twit.twitStrings.user]
 }
 

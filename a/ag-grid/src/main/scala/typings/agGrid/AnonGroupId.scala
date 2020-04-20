@@ -13,7 +13,6 @@ object AnonGroupId {
   @scala.inline
   def apply(groupId: String, open: Boolean): AnonGroupId = {
     val __obj = js.Dynamic.literal(groupId = groupId.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGroupId]
   }
 }

@@ -14,10 +14,8 @@ trait XlCopyPictureFormat extends js.Object
 
 object XlCopyPictureFormat {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlBitmap: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlBitmap: `2` = this.cast(2)
-  @scala.inline
-  def xlPicture: `-4147` = this.cast(-4147)
+  def xlPicture: `-4147` = -4147.asInstanceOf[`-4147`]
 }
 

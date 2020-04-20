@@ -15,7 +15,6 @@ object AnonComponent {
   @scala.inline
   def apply[T /* <: js.Function */](action: T, component: ISceneComponent, index: Double): AnonComponent[T] = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], component = component.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonComponent[T]]
   }
 }

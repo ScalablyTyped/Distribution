@@ -12,7 +12,6 @@ object PluginRemoveEditorsNSData {
   @scala.inline
   def apply(removeEditorsNSData: Boolean | js.Object): PluginRemoveEditorsNSData = {
     val __obj = js.Dynamic.literal(removeEditorsNSData = removeEditorsNSData.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PluginRemoveEditorsNSData]
   }
 }

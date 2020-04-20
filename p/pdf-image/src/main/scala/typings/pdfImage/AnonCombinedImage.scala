@@ -12,7 +12,6 @@ object AnonCombinedImage {
   @scala.inline
   def apply[CombinedImage /* <: Boolean */](combinedImage: CombinedImage): AnonCombinedImage[CombinedImage] = {
     val __obj = js.Dynamic.literal(combinedImage = combinedImage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCombinedImage[CombinedImage]]
   }
 }

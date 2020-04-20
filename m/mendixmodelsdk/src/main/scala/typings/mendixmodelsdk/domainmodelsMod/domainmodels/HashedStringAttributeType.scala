@@ -28,7 +28,7 @@ class HashedStringAttributeType protected () extends AttributeType {
   @JSName("model")
   var model_FHashedStringAttributeType: IModel = js.native
   @JSName("containerAsAttribute")
-  def containerAsAttribute_MHashedStringAttributeType(): Attribute = js.native
+  def containerAsAttribute_MHashedStringAttributeType: Attribute = js.native
 }
 
 /* static members */

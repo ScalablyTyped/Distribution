@@ -17,7 +17,6 @@ object AnonExtra {
   @scala.inline
   def apply(dismissText: String, extra: String, okText: String): AnonExtra = {
     val __obj = js.Dynamic.literal(dismissText = dismissText.asInstanceOf[js.Any], extra = extra.asInstanceOf[js.Any], okText = okText.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonExtra]
   }
 }

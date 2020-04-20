@@ -20,16 +20,14 @@ trait WdSelectionFlags extends js.Object
 
 object WdSelectionFlags {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdSelActive: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def wdSelActive: `8` = this.cast(8)
+  def wdSelAtEOL: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdSelAtEOL: `2` = this.cast(2)
+  def wdSelOvertype: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdSelOvertype: `4` = this.cast(4)
+  def wdSelReplace: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def wdSelReplace: `16` = this.cast(16)
-  @scala.inline
-  def wdSelStartActive: `1` = this.cast(1)
+  def wdSelStartActive: `1` = 1.asInstanceOf[`1`]
 }
 

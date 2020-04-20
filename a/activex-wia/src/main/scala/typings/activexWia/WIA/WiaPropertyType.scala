@@ -88,80 +88,78 @@ trait WiaPropertyType extends js.Object
 
 object WiaPropertyType {
   @scala.inline
-  def BooleanPropertyType: `1` = this.cast(1)
+  def BooleanPropertyType: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def BytePropertyType: `2` = this.cast(2)
+  def BytePropertyType: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def ClassIDPropertyType: `15` = this.cast(15)
+  def ClassIDPropertyType: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def CurrencyPropertyType: `12` = this.cast(12)
+  def CurrencyPropertyType: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def DatePropertyType: `13` = this.cast(13)
+  def DatePropertyType: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def DoublePropertyType: `11` = this.cast(11)
+  def DoublePropertyType: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def ErrorCodePropertyType: `7` = this.cast(7)
+  def ErrorCodePropertyType: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def FileTimePropertyType: `14` = this.cast(14)
+  def FileTimePropertyType: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def HandlePropertyType: `18` = this.cast(18)
+  def HandlePropertyType: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def IntegerPropertyType: `3` = this.cast(3)
+  def IntegerPropertyType: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def LargeIntegerPropertyType: `8` = this.cast(8)
+  def LargeIntegerPropertyType: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def LongPropertyType: `5` = this.cast(5)
+  def LongPropertyType: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def ObjectPropertyType: `17` = this.cast(17)
+  def ObjectPropertyType: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def SinglePropertyType: `10` = this.cast(10)
+  def SinglePropertyType: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def StringPropertyType: `16` = this.cast(16)
+  def StringPropertyType: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def UnsignedIntegerPropertyType: `4` = this.cast(4)
+  def UnsignedIntegerPropertyType: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def UnsignedLargeIntegerPropertyType: `9` = this.cast(9)
+  def UnsignedLargeIntegerPropertyType: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def UnsignedLongPropertyType: `6` = this.cast(6)
+  def UnsignedLongPropertyType: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def UnsupportedPropertyType: `0` = this.cast(0)
+  def UnsupportedPropertyType: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def VariantPropertyType: `19` = this.cast(19)
+  def VariantPropertyType: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def VectorOfBooleansPropertyType: `101` = this.cast(101)
+  def VectorOfBooleansPropertyType: `101` = 101.asInstanceOf[`101`]
   @scala.inline
-  def VectorOfBytesPropertyType: `102` = this.cast(102)
+  def VectorOfBytesPropertyType: `102` = 102.asInstanceOf[`102`]
   @scala.inline
-  def VectorOfClassIDsPropertyType: `115` = this.cast(115)
+  def VectorOfClassIDsPropertyType: `115` = 115.asInstanceOf[`115`]
   @scala.inline
-  def VectorOfCurrenciesPropertyType: `112` = this.cast(112)
+  def VectorOfCurrenciesPropertyType: `112` = 112.asInstanceOf[`112`]
   @scala.inline
-  def VectorOfDatesPropertyType: `113` = this.cast(113)
+  def VectorOfDatesPropertyType: `113` = 113.asInstanceOf[`113`]
   @scala.inline
-  def VectorOfDoublesPropertyType: `111` = this.cast(111)
+  def VectorOfDoublesPropertyType: `111` = 111.asInstanceOf[`111`]
   @scala.inline
-  def VectorOfErrorCodesPropertyType: `107` = this.cast(107)
+  def VectorOfErrorCodesPropertyType: `107` = 107.asInstanceOf[`107`]
   @scala.inline
-  def VectorOfFileTimesPropertyType: `114` = this.cast(114)
+  def VectorOfFileTimesPropertyType: `114` = 114.asInstanceOf[`114`]
   @scala.inline
-  def VectorOfIntegersPropertyType: `103` = this.cast(103)
+  def VectorOfIntegersPropertyType: `103` = 103.asInstanceOf[`103`]
   @scala.inline
-  def VectorOfLargeIntegersPropertyType: `108` = this.cast(108)
+  def VectorOfLargeIntegersPropertyType: `108` = 108.asInstanceOf[`108`]
   @scala.inline
-  def VectorOfLongsPropertyType: `105` = this.cast(105)
+  def VectorOfLongsPropertyType: `105` = 105.asInstanceOf[`105`]
   @scala.inline
-  def VectorOfSinglesPropertyType: `110` = this.cast(110)
+  def VectorOfSinglesPropertyType: `110` = 110.asInstanceOf[`110`]
   @scala.inline
-  def VectorOfStringsPropertyType: `116` = this.cast(116)
+  def VectorOfStringsPropertyType: `116` = 116.asInstanceOf[`116`]
   @scala.inline
-  def VectorOfUnsignedIntegersPropertyType: `104` = this.cast(104)
+  def VectorOfUnsignedIntegersPropertyType: `104` = 104.asInstanceOf[`104`]
   @scala.inline
-  def VectorOfUnsignedLargeIntegersPropertyType: `109` = this.cast(109)
+  def VectorOfUnsignedLargeIntegersPropertyType: `109` = 109.asInstanceOf[`109`]
   @scala.inline
-  def VectorOfUnsignedLongsPropertyType: `106` = this.cast(106)
+  def VectorOfUnsignedLongsPropertyType: `106` = 106.asInstanceOf[`106`]
   @scala.inline
-  def VectorOfVariantsPropertyType: `119` = this.cast(119)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def VectorOfVariantsPropertyType: `119` = 119.asInstanceOf[`119`]
 }
 

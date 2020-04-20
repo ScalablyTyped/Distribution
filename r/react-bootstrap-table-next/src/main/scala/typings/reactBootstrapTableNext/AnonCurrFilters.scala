@@ -12,7 +12,6 @@ object AnonCurrFilters {
   @scala.inline
   def apply(currFilters: js.Any): AnonCurrFilters = {
     val __obj = js.Dynamic.literal(currFilters = currFilters.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCurrFilters]
   }
 }

@@ -24,7 +24,6 @@ object map {
   @scala.inline
   def apply(html: String, json: String): map = {
     val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[map]
   }
 }

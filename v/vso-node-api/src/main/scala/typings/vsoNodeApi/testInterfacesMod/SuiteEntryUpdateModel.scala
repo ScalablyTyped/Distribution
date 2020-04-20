@@ -23,7 +23,6 @@ object SuiteEntryUpdateModel {
   @scala.inline
   def apply(childSuiteId: Double, sequenceNumber: Double, testCaseId: Double): SuiteEntryUpdateModel = {
     val __obj = js.Dynamic.literal(childSuiteId = childSuiteId.asInstanceOf[js.Any], sequenceNumber = sequenceNumber.asInstanceOf[js.Any], testCaseId = testCaseId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SuiteEntryUpdateModel]
   }
 }

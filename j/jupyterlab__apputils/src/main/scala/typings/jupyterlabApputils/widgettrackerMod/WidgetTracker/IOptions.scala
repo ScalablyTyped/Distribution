@@ -18,7 +18,6 @@ object IOptions {
   @scala.inline
   def apply(namespace: String): IOptions = {
     val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IOptions]
   }
 }

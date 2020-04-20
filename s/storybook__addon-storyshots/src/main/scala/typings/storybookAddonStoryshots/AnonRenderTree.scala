@@ -22,7 +22,6 @@ object AnonRenderTree {
     story: js.Any
   ): AnonRenderTree = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], renderTree = js.Any.fromFunction3(renderTree), stories2snapsConverter = stories2snapsConverter.asInstanceOf[js.Any], story = story.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRenderTree]
   }
 }

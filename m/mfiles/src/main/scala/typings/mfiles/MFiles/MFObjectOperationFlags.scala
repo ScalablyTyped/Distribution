@@ -26,22 +26,20 @@ trait MFObjectOperationFlags extends js.Object
 
 object MFObjectOperationFlags {
   @scala.inline
-  def ChangeACLInAllVersions: `32` = this.cast(32)
+  def ChangeACLInAllVersions: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def DisallowNameChange: `4` = this.cast(4)
+  def DisallowNameChange: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def None: `0` = this.cast(0)
+  def None: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def RequireChangeSecurityAccess: `8` = this.cast(8)
+  def RequireChangeSecurityAccess: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def RequireEditAccess: `2` = this.cast(2)
+  def RequireEditAccess: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def RequireFullAccess: `16` = this.cast(16)
+  def RequireFullAccess: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def RequireReadAccess: `1` = this.cast(1)
+  def RequireReadAccess: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def RequireSomeAccess: `64` = this.cast(64)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def RequireSomeAccess: `64` = 64.asInstanceOf[`64`]
 }
 

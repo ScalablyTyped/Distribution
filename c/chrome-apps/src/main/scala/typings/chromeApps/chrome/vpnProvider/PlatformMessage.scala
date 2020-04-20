@@ -1,13 +1,13 @@
 package typings.chromeApps.chrome.vpnProvider
 
-import typings.chromeApps.chromeAppsStrings.connected_
-import typings.chromeApps.chromeAppsStrings.disconnected_
-import typings.chromeApps.chromeAppsStrings.error
+import typings.chromeApps.chromeAppsStrings.connected__
+import typings.chromeApps.chromeAppsStrings.disconnected__
+import typings.chromeApps.chromeAppsStrings.error_
 import typings.chromeApps.chromeAppsStrings.linkChanged
 import typings.chromeApps.chromeAppsStrings.linkDown
 import typings.chromeApps.chromeAppsStrings.linkUp
-import typings.chromeApps.chromeAppsStrings.resume
-import typings.chromeApps.chromeAppsStrings.suspend
+import typings.chromeApps.chromeAppsStrings.resume_
+import typings.chromeApps.chromeAppsStrings.suspend_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,13 +38,13 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.vpnProvider.PlatformMessage")
 @js.native
 object PlatformMessage extends js.Object {
-  var CONNECTED: connected_ = js.native
-  var DISCONNECTED: disconnected_ = js.native
-  var ERROR: error = js.native
+  var CONNECTED: connected__ = js.native
+  var DISCONNECTED: disconnected__ = js.native
+  var ERROR: error_ = js.native
   var LINK_CHANGED: linkChanged = js.native
   var LINK_DOWN: linkDown = js.native
   var LINK_UP: linkUp = js.native
-  var RESUME: resume = js.native
-  var SUSPEND: suspend = js.native
+  var RESUME: resume_ = js.native
+  var SUSPEND: suspend_ = js.native
 }
 

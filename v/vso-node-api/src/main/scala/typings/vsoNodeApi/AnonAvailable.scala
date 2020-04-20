@@ -14,7 +14,6 @@ object AnonAvailable {
   @scala.inline
   def apply(available: Double, offline: Double, unavailable: Double): AnonAvailable = {
     val __obj = js.Dynamic.literal(available = available.asInstanceOf[js.Any], offline = offline.asInstanceOf[js.Any], unavailable = unavailable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAvailable]
   }
 }

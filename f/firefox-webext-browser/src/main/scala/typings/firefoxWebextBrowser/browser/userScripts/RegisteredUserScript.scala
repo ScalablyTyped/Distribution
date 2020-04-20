@@ -14,7 +14,6 @@ object RegisteredUserScript {
   @scala.inline
   def apply(unregister: () => js.Promise[_]): RegisteredUserScript = {
     val __obj = js.Dynamic.literal(unregister = js.Any.fromFunction0(unregister))
-  
     __obj.asInstanceOf[RegisteredUserScript]
   }
 }

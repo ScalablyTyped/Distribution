@@ -27,6 +27,7 @@ import typings.apollographqlApolloTools.buildServiceDefinitionMod.GraphQLSchemaM
 import typings.cors.mod.CorsOptions
 import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.graphql.astMod.DocumentNode
 import typings.graphql.definitionMod.GraphQLFieldResolver
 import typings.graphql.definitionMod.GraphQLResolveInfo
@@ -43,7 +44,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined apollo-server-express.apollo-server-express.ApolloServerExpressConfig & {  cors ? :apollo-server-express.apollo-server-express.CorsOptions | boolean, onHealthCheck ? (req : express.express.Request<express-serve-static-core.express-serve-static-core.ParamsDictionary>): std.Promise<any>} */
+/* Inlined apollo-server-express.apollo-server-express.ApolloServerExpressConfig & {  cors ? :apollo-server-express.apollo-server-express.CorsOptions | boolean, onHealthCheck ? (req : express.express.Request<express-serve-static-core.express-serve-static-core.ParamsDictionary, any, any, express-serve-static-core.express-serve-static-core.Query>): std.Promise<any>} */
 trait ApolloServerExpressConfig extends js.Object {
   var cache: js.UndefOr[KeyValueCache[String]] = js.undefined
   var cacheControl: js.UndefOr[CacheControlExtensionOptions | Boolean] = js.undefined
@@ -70,7 +71,7 @@ trait ApolloServerExpressConfig extends js.Object {
   var mockEntireSchema: js.UndefOr[Boolean] = js.undefined
   var mocks: js.UndefOr[Boolean | IMocks] = js.undefined
   var modules: js.UndefOr[js.Array[GraphQLSchemaModule]] = js.undefined
-  var onHealthCheck: js.UndefOr[js.Function1[/* req */ Request_[ParamsDictionary], js.Promise[_]]] = js.undefined
+  var onHealthCheck: js.UndefOr[js.Function1[/* req */ Request_[ParamsDictionary, _, _, Query], js.Promise[_]]] = js.undefined
   var parseOptions: js.UndefOr[GraphQLParseOptions] = js.undefined
   var persistedQueries: js.UndefOr[PersistedQueryOptions | `false`] = js.undefined
   var playground: js.UndefOr[PlaygroundConfig] = js.undefined
@@ -108,7 +109,7 @@ object ApolloServerExpressConfig {
     mockEntireSchema: js.UndefOr[Boolean] = js.undefined,
     mocks: Boolean | IMocks = null,
     modules: js.Array[GraphQLSchemaModule] = null,
-    onHealthCheck: /* req */ Request_[ParamsDictionary] => js.Promise[_] = null,
+    onHealthCheck: /* req */ Request_[ParamsDictionary, _, _, Query] => js.Promise[_] = null,
     parseOptions: GraphQLParseOptions = null,
     persistedQueries: PersistedQueryOptions | `false` = null,
     playground: PlaygroundConfig = null,

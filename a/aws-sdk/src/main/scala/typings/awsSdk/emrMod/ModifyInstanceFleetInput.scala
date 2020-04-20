@@ -20,7 +20,6 @@ object ModifyInstanceFleetInput {
   @scala.inline
   def apply(ClusterId: ClusterId, InstanceFleet: InstanceFleetModifyConfig): ModifyInstanceFleetInput = {
     val __obj = js.Dynamic.literal(ClusterId = ClusterId.asInstanceOf[js.Any], InstanceFleet = InstanceFleet.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ModifyInstanceFleetInput]
   }
 }

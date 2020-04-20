@@ -28,7 +28,6 @@ object StringFilterBuilder {
     setRealtimeTrigger: Boolean => StringFilterBuilder
   ): StringFilterBuilder = {
     val __obj = js.Dynamic.literal(setCaseSensitive = js.Any.fromFunction1(setCaseSensitive), setMatchType = js.Any.fromFunction1(setMatchType), setRealtimeTrigger = js.Any.fromFunction1(setRealtimeTrigger))
-  
     __obj.asInstanceOf[StringFilterBuilder]
   }
 }

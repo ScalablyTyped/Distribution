@@ -24,7 +24,6 @@ object AnonANCHOR {
     ROOT: String
   ): AnonANCHOR = {
     val __obj = js.Dynamic.literal(ANCHOR = ANCHOR.asInstanceOf[js.Any], ANIMATING_CLOSED = ANIMATING_CLOSED.asInstanceOf[js.Any], ANIMATING_OPEN = ANIMATING_OPEN.asInstanceOf[js.Any], FIXED = FIXED.asInstanceOf[js.Any], OPEN = OPEN.asInstanceOf[js.Any], ROOT = ROOT.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonANCHOR]
   }
 }

@@ -12,7 +12,6 @@ object AudioScheduledSourceNodeEventMap {
   @scala.inline
   def apply(ended: Event_): AudioScheduledSourceNodeEventMap = {
     val __obj = js.Dynamic.literal(ended = ended.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AudioScheduledSourceNodeEventMap]
   }
 }

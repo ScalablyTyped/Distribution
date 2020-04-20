@@ -47,7 +47,7 @@ class NgForOf[T, U /* <: NgIterable[T] */] protected () extends DoCheck {
     * @see [template reference variable](guide/template-syntax#template-reference-variables--var-)
     */
   def ngForTemplate(value: TemplateRef[NgForOfContext[T, U]]): js.Any = js.native
-  def ngForTrackBy(): TrackByFunction[T] = js.native
+  def ngForTrackBy: TrackByFunction[T] = js.native
   /**
     * A function that defines how to track changes for items in the iterable.
     *

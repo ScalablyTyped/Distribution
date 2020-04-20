@@ -15,7 +15,6 @@ object AnonCloseReason {
   @scala.inline
   def apply(Cancel: Boolean, CloseReason: Double, PvWindow: ProtectedViewWindow): AnonCloseReason = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], CloseReason = CloseReason.asInstanceOf[js.Any], PvWindow = PvWindow.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCloseReason]
   }
 }

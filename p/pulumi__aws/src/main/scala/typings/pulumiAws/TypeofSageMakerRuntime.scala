@@ -13,7 +13,6 @@ object TypeofSageMakerRuntime {
   @scala.inline
   def apply(Types: TypeofSageMakerRuntime): TypeofSageMakerRuntime = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofSageMakerRuntime]
   }
 }

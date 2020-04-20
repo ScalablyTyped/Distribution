@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation._
 
 /**
 			 * Use with [MaskedImage.mode](Titanium.UI.MaskedImage.mode) to specify a blend mode.
+			 * @deprecated Use [Titanium.UI.BLEND_MODE_SOURCE_ATOP](Titanium.UI.BLEND_MODE_SOURCE_ATOP) instead.
 			 */
 @JSGlobal("Titanium.UI.iOS.BLEND_MODE_SOURCE_ATOP")
 @js.native
-object BLEND_MODE_SOURCE_ATOP extends TopLevel[Double]
+object BLEND_MODE_SOURCE_ATOP
+  extends TopLevel[scala.Nothing]
 

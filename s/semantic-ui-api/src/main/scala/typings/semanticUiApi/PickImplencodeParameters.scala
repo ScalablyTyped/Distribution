@@ -13,7 +13,6 @@ object PickImplencodeParameters {
   @scala.inline
   def apply(encodeParameters: Boolean): PickImplencodeParameters = {
     val __obj = js.Dynamic.literal(encodeParameters = encodeParameters.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplencodeParameters]
   }
 }

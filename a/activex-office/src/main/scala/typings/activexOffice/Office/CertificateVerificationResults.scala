@@ -26,22 +26,20 @@ trait CertificateVerificationResults extends js.Object
 
 object CertificateVerificationResults {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def certverresError: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def certverresError: `0` = this.cast(0)
+  def certverresExpired: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def certverresExpired: `5` = this.cast(5)
+  def certverresInvalid: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def certverresInvalid: `4` = this.cast(4)
+  def certverresRevoked: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def certverresRevoked: `6` = this.cast(6)
+  def certverresUntrusted: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def certverresUntrusted: `7` = this.cast(7)
+  def certverresUnverified: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def certverresUnverified: `2` = this.cast(2)
+  def certverresValid: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def certverresValid: `3` = this.cast(3)
-  @scala.inline
-  def certverresVerifying: `1` = this.cast(1)
+  def certverresVerifying: `1` = 1.asInstanceOf[`1`]
 }
 

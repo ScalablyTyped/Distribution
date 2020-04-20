@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "japan-postal-code"
-version := "0.2-dt-20200228Z-e8f420"
+version := "0.2-dt-20200228Z-4b9774"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

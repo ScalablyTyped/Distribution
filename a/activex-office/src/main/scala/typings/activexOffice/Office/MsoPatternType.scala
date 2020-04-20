@@ -120,116 +120,114 @@ trait MsoPatternType extends js.Object
 
 object MsoPatternType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoPattern10Percent: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoPattern10Percent: `2` = this.cast(2)
+  def msoPattern20Percent: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoPattern20Percent: `3` = this.cast(3)
+  def msoPattern25Percent: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoPattern25Percent: `4` = this.cast(4)
+  def msoPattern30Percent: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def msoPattern30Percent: `5` = this.cast(5)
+  def msoPattern40Percent: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def msoPattern40Percent: `6` = this.cast(6)
+  def msoPattern50Percent: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def msoPattern50Percent: `7` = this.cast(7)
+  def msoPattern5Percent: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoPattern5Percent: `1` = this.cast(1)
+  def msoPattern60Percent: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def msoPattern60Percent: `8` = this.cast(8)
+  def msoPattern70Percent: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def msoPattern70Percent: `9` = this.cast(9)
+  def msoPattern75Percent: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def msoPattern75Percent: `10` = this.cast(10)
+  def msoPattern80Percent: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def msoPattern80Percent: `11` = this.cast(11)
+  def msoPattern90Percent: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def msoPattern90Percent: `12` = this.cast(12)
+  def msoPatternCross: `51` = 51.asInstanceOf[`51`]
   @scala.inline
-  def msoPatternCross: `51` = this.cast(51)
+  def msoPatternDarkDownwardDiagonal: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def msoPatternDarkDownwardDiagonal: `15` = this.cast(15)
+  def msoPatternDarkHorizontal: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def msoPatternDarkHorizontal: `13` = this.cast(13)
+  def msoPatternDarkUpwardDiagonal: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def msoPatternDarkUpwardDiagonal: `16` = this.cast(16)
+  def msoPatternDarkVertical: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def msoPatternDarkVertical: `14` = this.cast(14)
+  def msoPatternDashedDownwardDiagonal: `28` = 28.asInstanceOf[`28`]
   @scala.inline
-  def msoPatternDashedDownwardDiagonal: `28` = this.cast(28)
+  def msoPatternDashedHorizontal: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def msoPatternDashedHorizontal: `32` = this.cast(32)
+  def msoPatternDashedUpwardDiagonal: `27` = 27.asInstanceOf[`27`]
   @scala.inline
-  def msoPatternDashedUpwardDiagonal: `27` = this.cast(27)
+  def msoPatternDashedVertical: `31` = 31.asInstanceOf[`31`]
   @scala.inline
-  def msoPatternDashedVertical: `31` = this.cast(31)
+  def msoPatternDiagonalBrick: `40` = 40.asInstanceOf[`40`]
   @scala.inline
-  def msoPatternDiagonalBrick: `40` = this.cast(40)
+  def msoPatternDiagonalCross: `54` = 54.asInstanceOf[`54`]
   @scala.inline
-  def msoPatternDiagonalCross: `54` = this.cast(54)
+  def msoPatternDivot: `46` = 46.asInstanceOf[`46`]
   @scala.inline
-  def msoPatternDivot: `46` = this.cast(46)
+  def msoPatternDottedDiamond: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def msoPatternDottedDiamond: `24` = this.cast(24)
+  def msoPatternDottedGrid: `45` = 45.asInstanceOf[`45`]
   @scala.inline
-  def msoPatternDottedGrid: `45` = this.cast(45)
+  def msoPatternDownwardDiagonal: `52` = 52.asInstanceOf[`52`]
   @scala.inline
-  def msoPatternDownwardDiagonal: `52` = this.cast(52)
+  def msoPatternHorizontal: `49` = 49.asInstanceOf[`49`]
   @scala.inline
-  def msoPatternHorizontal: `49` = this.cast(49)
+  def msoPatternHorizontalBrick: `35` = 35.asInstanceOf[`35`]
   @scala.inline
-  def msoPatternHorizontalBrick: `35` = this.cast(35)
+  def msoPatternLargeCheckerBoard: `36` = 36.asInstanceOf[`36`]
   @scala.inline
-  def msoPatternLargeCheckerBoard: `36` = this.cast(36)
+  def msoPatternLargeConfetti: `33` = 33.asInstanceOf[`33`]
   @scala.inline
-  def msoPatternLargeConfetti: `33` = this.cast(33)
+  def msoPatternLargeGrid: `34` = 34.asInstanceOf[`34`]
   @scala.inline
-  def msoPatternLargeGrid: `34` = this.cast(34)
+  def msoPatternLightDownwardDiagonal: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def msoPatternLightDownwardDiagonal: `21` = this.cast(21)
+  def msoPatternLightHorizontal: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def msoPatternLightHorizontal: `19` = this.cast(19)
+  def msoPatternLightUpwardDiagonal: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def msoPatternLightUpwardDiagonal: `22` = this.cast(22)
+  def msoPatternLightVertical: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def msoPatternLightVertical: `20` = this.cast(20)
+  def msoPatternMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def msoPatternMixed: `-2` = this.cast(-2)
+  def msoPatternNarrowHorizontal: `30` = 30.asInstanceOf[`30`]
   @scala.inline
-  def msoPatternNarrowHorizontal: `30` = this.cast(30)
+  def msoPatternNarrowVertical: `29` = 29.asInstanceOf[`29`]
   @scala.inline
-  def msoPatternNarrowVertical: `29` = this.cast(29)
+  def msoPatternOutlinedDiamond: `41` = 41.asInstanceOf[`41`]
   @scala.inline
-  def msoPatternOutlinedDiamond: `41` = this.cast(41)
+  def msoPatternPlaid: `42` = 42.asInstanceOf[`42`]
   @scala.inline
-  def msoPatternPlaid: `42` = this.cast(42)
+  def msoPatternShingle: `47` = 47.asInstanceOf[`47`]
   @scala.inline
-  def msoPatternShingle: `47` = this.cast(47)
+  def msoPatternSmallCheckerBoard: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def msoPatternSmallCheckerBoard: `17` = this.cast(17)
+  def msoPatternSmallConfetti: `37` = 37.asInstanceOf[`37`]
   @scala.inline
-  def msoPatternSmallConfetti: `37` = this.cast(37)
+  def msoPatternSmallGrid: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def msoPatternSmallGrid: `23` = this.cast(23)
+  def msoPatternSolidDiamond: `39` = 39.asInstanceOf[`39`]
   @scala.inline
-  def msoPatternSolidDiamond: `39` = this.cast(39)
+  def msoPatternSphere: `43` = 43.asInstanceOf[`43`]
   @scala.inline
-  def msoPatternSphere: `43` = this.cast(43)
+  def msoPatternTrellis: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def msoPatternTrellis: `18` = this.cast(18)
+  def msoPatternUpwardDiagonal: `53` = 53.asInstanceOf[`53`]
   @scala.inline
-  def msoPatternUpwardDiagonal: `53` = this.cast(53)
+  def msoPatternVertical: `50` = 50.asInstanceOf[`50`]
   @scala.inline
-  def msoPatternVertical: `50` = this.cast(50)
+  def msoPatternWave: `48` = 48.asInstanceOf[`48`]
   @scala.inline
-  def msoPatternWave: `48` = this.cast(48)
+  def msoPatternWeave: `44` = 44.asInstanceOf[`44`]
   @scala.inline
-  def msoPatternWeave: `44` = this.cast(44)
+  def msoPatternWideDownwardDiagonal: `25` = 25.asInstanceOf[`25`]
   @scala.inline
-  def msoPatternWideDownwardDiagonal: `25` = this.cast(25)
+  def msoPatternWideUpwardDiagonal: `26` = 26.asInstanceOf[`26`]
   @scala.inline
-  def msoPatternWideUpwardDiagonal: `26` = this.cast(26)
-  @scala.inline
-  def msoPatternZigZag: `38` = this.cast(38)
+  def msoPatternZigZag: `38` = 38.asInstanceOf[`38`]
 }
 

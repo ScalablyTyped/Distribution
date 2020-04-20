@@ -13,7 +13,6 @@ object AnonPersist {
   @scala.inline
   def apply(_persist: PersistState): AnonPersist = {
     val __obj = js.Dynamic.literal(_persist = _persist.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPersist]
   }
 }

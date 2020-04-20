@@ -18,14 +18,12 @@ trait XlArrangeStyle extends js.Object
 
 object XlArrangeStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlArrangeStyleCascade: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def xlArrangeStyleCascade: `7` = this.cast(7)
+  def xlArrangeStyleHorizontal: `-4128` = -4128.asInstanceOf[`-4128`]
   @scala.inline
-  def xlArrangeStyleHorizontal: `-4128` = this.cast(-4128)
+  def xlArrangeStyleTiled: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlArrangeStyleTiled: `1` = this.cast(1)
-  @scala.inline
-  def xlArrangeStyleVertical: `-4166` = this.cast(-4166)
+  def xlArrangeStyleVertical: `-4166` = -4166.asInstanceOf[`-4166`]
 }
 

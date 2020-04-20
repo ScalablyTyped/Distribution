@@ -13,7 +13,6 @@ object Window {
   @scala.inline
   def apply(axe: TypeofAxe): Window = {
     val __obj = js.Dynamic.literal(axe = axe.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Window]
   }
 }

@@ -124,11 +124,11 @@ object svgPathParserStrings {
   @scala.inline
   def curveto: curveto = "curveto".asInstanceOf[curveto]
   @scala.inline
-  def `elliptical arc`: `elliptical arc` = "elliptical arc".asInstanceOf[`elliptical arc`]
+  def `elliptical arc`: `elliptical arc` = ("elliptical arc").asInstanceOf[`elliptical arc`]
   @scala.inline
   def h_ : h_ = "h".asInstanceOf[h_]
   @scala.inline
-  def `horizontal lineto`: `horizontal lineto` = "horizontal lineto".asInstanceOf[`horizontal lineto`]
+  def `horizontal lineto`: `horizontal lineto` = ("horizontal lineto").asInstanceOf[`horizontal lineto`]
   @scala.inline
   def l_ : l_ = "l".asInstanceOf[l_]
   @scala.inline
@@ -140,19 +140,19 @@ object svgPathParserStrings {
   @scala.inline
   def q_ : q_ = "q".asInstanceOf[q_]
   @scala.inline
-  def `quadratic curveto`: `quadratic curveto` = "quadratic curveto".asInstanceOf[`quadratic curveto`]
+  def `quadratic curveto`: `quadratic curveto` = ("quadratic curveto").asInstanceOf[`quadratic curveto`]
   @scala.inline
   def s_ : s_ = "s".asInstanceOf[s_]
   @scala.inline
-  def `smooth curveto`: `smooth curveto` = "smooth curveto".asInstanceOf[`smooth curveto`]
+  def `smooth curveto`: `smooth curveto` = ("smooth curveto").asInstanceOf[`smooth curveto`]
   @scala.inline
-  def `smooth quadratic curveto`: `smooth quadratic curveto` = "smooth quadratic curveto".asInstanceOf[`smooth quadratic curveto`]
+  def `smooth quadratic curveto`: `smooth quadratic curveto` = ("smooth quadratic curveto").asInstanceOf[`smooth quadratic curveto`]
   @scala.inline
   def t_ : t_ = "t".asInstanceOf[t_]
   @scala.inline
   def v_ : v_ = "v".asInstanceOf[v_]
   @scala.inline
-  def `vertical lineto`: `vertical lineto` = "vertical lineto".asInstanceOf[`vertical lineto`]
+  def `vertical lineto`: `vertical lineto` = ("vertical lineto").asInstanceOf[`vertical lineto`]
   @scala.inline
   def z_ : z_ = "z".asInstanceOf[z_]
 }

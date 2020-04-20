@@ -22,7 +22,6 @@ object RetryConfig {
     minBackoff: String
   ): RetryConfig = {
     val __obj = js.Dynamic.literal(maxAttempts = maxAttempts.asInstanceOf[js.Any], maxBackoff = maxBackoff.asInstanceOf[js.Any], maxDoublings = maxDoublings.asInstanceOf[js.Any], maxRetryDuration = maxRetryDuration.asInstanceOf[js.Any], minBackoff = minBackoff.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RetryConfig]
   }
 }

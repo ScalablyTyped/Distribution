@@ -33,7 +33,6 @@ object ISearchGroupOptions {
   @scala.inline
   def apply(qCount: Double, qGroupType: js.Any, qOffset: Double): ISearchGroupOptions = {
     val __obj = js.Dynamic.literal(qCount = qCount.asInstanceOf[js.Any], qGroupType = qGroupType.asInstanceOf[js.Any], qOffset = qOffset.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISearchGroupOptions]
   }
 }

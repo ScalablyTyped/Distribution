@@ -30,7 +30,6 @@ object IDashboardResource {
   @scala.inline
   def apply(getDashboard: String => IPromise[IResourcePromise]): IDashboardResource = {
     val __obj = js.Dynamic.literal(getDashboard = js.Any.fromFunction1(getDashboard))
-  
     __obj.asInstanceOf[IDashboardResource]
   }
 }

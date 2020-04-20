@@ -15,7 +15,6 @@ object InstallOptions {
   @scala.inline
   def apply(completer: String, name: String): InstallOptions = {
     val __obj = js.Dynamic.literal(completer = completer.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InstallOptions]
   }
 }

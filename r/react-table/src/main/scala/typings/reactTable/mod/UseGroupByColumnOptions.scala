@@ -4,9 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Partial<{  aggregate  :react-table.react-table.Aggregator<D>,   Aggregated  :react-table.react-table.Renderer<react-table.react-table.CellProps<D>>,   disableGroupBy  :boolean,   defaultCanGroupBy  :boolean,   groupByBoundary  :boolean}> */
+/* Inlined std.Partial<{  aggregate  :react-table.react-table.Aggregator<D>,   Aggregated  :react-table.react-table.Renderer<react-table.react-table.CellProps<D, any>>,   disableGroupBy  :boolean,   defaultCanGroupBy  :boolean,   groupByBoundary  :boolean}> */
 trait UseGroupByColumnOptions[D /* <: js.Object */] extends js.Object {
-  var Aggregated: js.UndefOr[Renderer[CellProps[D]]] = js.undefined
+  var Aggregated: js.UndefOr[Renderer[CellProps[D, _]]] = js.undefined
   var aggregate: js.UndefOr[Aggregator[D]] = js.undefined
   var defaultCanGroupBy: js.UndefOr[Boolean] = js.undefined
   var disableGroupBy: js.UndefOr[Boolean] = js.undefined
@@ -16,7 +16,7 @@ trait UseGroupByColumnOptions[D /* <: js.Object */] extends js.Object {
 object UseGroupByColumnOptions {
   @scala.inline
   def apply[D /* <: js.Object */](
-    Aggregated: Renderer[CellProps[D]] = null,
+    Aggregated: Renderer[CellProps[D, _]] = null,
     aggregate: Aggregator[D] = null,
     defaultCanGroupBy: js.UndefOr[Boolean] = js.undefined,
     disableGroupBy: js.UndefOr[Boolean] = js.undefined,

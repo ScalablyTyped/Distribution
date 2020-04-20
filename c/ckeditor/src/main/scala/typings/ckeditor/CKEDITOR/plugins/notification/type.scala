@@ -14,14 +14,12 @@ trait `type` extends js.Object
 
 object `type` {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def info: typings.ckeditor.ckeditorStrings.info = "info".asInstanceOf[typings.ckeditor.ckeditorStrings.info]
   @scala.inline
-  def info: typings.ckeditor.ckeditorStrings.info = this.cast("info")
+  def progress: typings.ckeditor.ckeditorStrings.progress = "progress".asInstanceOf[typings.ckeditor.ckeditorStrings.progress]
   @scala.inline
-  def progress: typings.ckeditor.ckeditorStrings.progress = this.cast("progress")
+  def success: typings.ckeditor.ckeditorStrings.success = "success".asInstanceOf[typings.ckeditor.ckeditorStrings.success]
   @scala.inline
-  def success: typings.ckeditor.ckeditorStrings.success = this.cast("success")
-  @scala.inline
-  def warning: typings.ckeditor.ckeditorStrings.warning = this.cast("warning")
+  def warning: typings.ckeditor.ckeditorStrings.warning = "warning".asInstanceOf[typings.ckeditor.ckeditorStrings.warning]
 }
 

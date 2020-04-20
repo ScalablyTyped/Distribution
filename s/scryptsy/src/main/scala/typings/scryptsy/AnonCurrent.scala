@@ -14,7 +14,6 @@ object AnonCurrent {
   @scala.inline
   def apply(current: Double, percent: Double, total: Double): AnonCurrent = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCurrent]
   }
 }

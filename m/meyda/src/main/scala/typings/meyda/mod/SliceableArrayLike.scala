@@ -13,7 +13,6 @@ object SliceableArrayLike {
   @scala.inline
   def apply[T](length: Double, slice: (Double, Double) => SliceableArrayLike[T]): SliceableArrayLike[T] = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], slice = js.Any.fromFunction2(slice))
-  
     __obj.asInstanceOf[SliceableArrayLike[T]]
   }
 }

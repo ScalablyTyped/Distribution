@@ -22,7 +22,6 @@ object OpenAPIRequestCoercer {
     coerceQuery: js.Any
   ): OpenAPIRequestCoercer = {
     val __obj = js.Dynamic.literal(coerce = js.Any.fromFunction1(coerce), coerceFormData = coerceFormData.asInstanceOf[js.Any], coerceHeaders = coerceHeaders.asInstanceOf[js.Any], coerceParams = coerceParams.asInstanceOf[js.Any], coerceQuery = coerceQuery.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OpenAPIRequestCoercer]
   }
 }

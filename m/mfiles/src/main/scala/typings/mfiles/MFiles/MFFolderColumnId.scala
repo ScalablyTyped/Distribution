@@ -58,54 +58,52 @@ trait MFFolderColumnId extends js.Object
 
 object MFFolderColumnId {
   @scala.inline
-  def CheckOutAt: `-6` = this.cast(-6)
+  def CheckOutAt: `-6` = -6.asInstanceOf[`-6`]
   @scala.inline
-  def CheckoutTo: `-5` = this.cast(-5)
+  def CheckoutTo: `-5` = -5.asInstanceOf[`-5`]
   @scala.inline
-  def DateCreated: `-13` = this.cast(-13)
+  def DateCreated: `-13` = -13.asInstanceOf[`-13`]
   @scala.inline
-  def DateModified: `-14` = this.cast(-14)
+  def DateModified: `-14` = -14.asInstanceOf[`-14`]
   @scala.inline
-  def ExportedFile: `-1000000` = this.cast(-1000000)
+  def ExportedFile: `-1000000` = -1000000.asInstanceOf[`-1000000`]
   @scala.inline
-  def HasAssignments: `-22` = this.cast(-22)
+  def HasAssignments: `-22` = -22.asInstanceOf[`-22`]
   @scala.inline
-  def HasRelationships: `-17` = this.cast(-17)
+  def HasRelationships: `-17` = -17.asInstanceOf[`-17`]
   @scala.inline
-  def IdSegment: `-1000001` = this.cast(-1000001)
+  def IdSegment: `-1000001` = -1000001.asInstanceOf[`-1000001`]
   @scala.inline
-  def Location: `-11` = this.cast(-11)
+  def Location: `-11` = -11.asInstanceOf[`-11`]
   @scala.inline
-  def Name: `-1` = this.cast(-1)
+  def Name: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def ObjectDispId: `-7` = this.cast(-7)
+  def ObjectDispId: `-7` = -7.asInstanceOf[`-7`]
   @scala.inline
-  def ObjectPermissions: `-20` = this.cast(-20)
+  def ObjectPermissions: `-20` = -20.asInstanceOf[`-20`]
   @scala.inline
-  def ObjectType: `-19` = this.cast(-19)
+  def ObjectType: `-19` = -19.asInstanceOf[`-19`]
   @scala.inline
-  def ObjectVersion: `-8` = this.cast(-8)
+  def ObjectVersion: `-8` = -8.asInstanceOf[`-8`]
   @scala.inline
-  def RelLocation: `-12` = this.cast(-12)
+  def RelLocation: `-12` = -12.asInstanceOf[`-12`]
   @scala.inline
-  def RelationshipDesc: `-16` = this.cast(-16)
+  def RelationshipDesc: `-16` = -16.asInstanceOf[`-16`]
   @scala.inline
-  def RelationshipTargetVer: `-18` = this.cast(-18)
+  def RelationshipTargetVer: `-18` = -18.asInstanceOf[`-18`]
   @scala.inline
-  def Score: `-15` = this.cast(-15)
+  def Score: `-15` = -15.asInstanceOf[`-15`]
   @scala.inline
-  def ShLastModifiedBy: `-10` = this.cast(-10)
+  def ShLastModifiedBy: `-10` = -10.asInstanceOf[`-10`]
   @scala.inline
-  def ShStatusChanged: `-9` = this.cast(-9)
+  def ShStatusChanged: `-9` = -9.asInstanceOf[`-9`]
   @scala.inline
-  def Size: `-3` = this.cast(-3)
+  def Size: `-3` = -3.asInstanceOf[`-3`]
   @scala.inline
-  def Status: `-4` = this.cast(-4)
+  def Status: `-4` = -4.asInstanceOf[`-4`]
   @scala.inline
-  def Type: `-2` = this.cast(-2)
+  def Type: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def TypeEx: `-21` = this.cast(-21)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def TypeEx: `-21` = -21.asInstanceOf[`-21`]
 }
 

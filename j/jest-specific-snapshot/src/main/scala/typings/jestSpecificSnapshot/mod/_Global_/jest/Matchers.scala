@@ -12,7 +12,6 @@ object Matchers {
   @scala.inline
   def apply[R, T](toMatchSpecificSnapshot: String => R): Matchers[R, T] = {
     val __obj = js.Dynamic.literal(toMatchSpecificSnapshot = js.Any.fromFunction1(toMatchSpecificSnapshot))
-  
     __obj.asInstanceOf[Matchers[R, T]]
   }
 }

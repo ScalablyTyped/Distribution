@@ -24,7 +24,6 @@ object INxSimpleValue {
   @scala.inline
   def apply(qNum: Double, qText: String): INxSimpleValue = {
     val __obj = js.Dynamic.literal(qNum = qNum.asInstanceOf[js.Any], qText = qText.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INxSimpleValue]
   }
 }

@@ -16,7 +16,6 @@ object DescribeForecastExportJobRequest {
   @scala.inline
   def apply(ForecastExportJobArn: Arn): DescribeForecastExportJobRequest = {
     val __obj = js.Dynamic.literal(ForecastExportJobArn = ForecastExportJobArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeForecastExportJobRequest]
   }
 }

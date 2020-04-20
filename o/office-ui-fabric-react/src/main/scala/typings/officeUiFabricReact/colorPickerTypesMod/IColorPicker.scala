@@ -14,7 +14,6 @@ object IColorPicker {
   @scala.inline
   def apply(color: IColor): IColorPicker = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IColorPicker]
   }
 }

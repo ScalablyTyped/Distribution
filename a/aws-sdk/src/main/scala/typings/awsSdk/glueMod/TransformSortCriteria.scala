@@ -20,7 +20,6 @@ object TransformSortCriteria {
   @scala.inline
   def apply(Column: TransformSortColumnType, SortDirection: SortDirectionType): TransformSortCriteria = {
     val __obj = js.Dynamic.literal(Column = Column.asInstanceOf[js.Any], SortDirection = SortDirection.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TransformSortCriteria]
   }
 }

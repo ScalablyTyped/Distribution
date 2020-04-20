@@ -21,6 +21,9 @@ object ActionTypes extends js.Object {
   sealed trait Cancel extends ActionTypes
   
   @js.native
+  sealed trait Choose extends ActionTypes
+  
+  @js.native
   sealed trait DoneInvoke extends ActionTypes
   
   @js.native
@@ -78,6 +81,9 @@ object ActionTypes extends js.Object {
   
   /* "xstate.cancel" */ @js.native
   object Cancel extends TopLevel[Cancel with String]
+  
+  /* "xstate.choose" */ @js.native
+  object Choose extends TopLevel[Choose with String]
   
   /* "done.invoke" */ @js.native
   object DoneInvoke extends TopLevel[DoneInvoke with String]

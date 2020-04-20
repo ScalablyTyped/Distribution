@@ -14,7 +14,6 @@ object AnonCounter {
   @scala.inline
   def apply(counter: Double, result: ArrayBuffer): AnonCounter = {
     val __obj = js.Dynamic.literal(counter = counter.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCounter]
   }
 }

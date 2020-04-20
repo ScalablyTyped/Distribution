@@ -14,7 +14,6 @@ object LogInfoPlugin {
   @scala.inline
   def apply(apply: typings.enhancedResolve.resolverMod.^ => Unit, source: String): LogInfoPlugin = {
     val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), source = source.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LogInfoPlugin]
   }
 }

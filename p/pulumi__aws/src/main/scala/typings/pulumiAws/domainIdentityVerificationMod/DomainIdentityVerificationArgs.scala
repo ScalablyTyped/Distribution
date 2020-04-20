@@ -17,7 +17,6 @@ object DomainIdentityVerificationArgs {
   @scala.inline
   def apply(domain: Input[String]): DomainIdentityVerificationArgs = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DomainIdentityVerificationArgs]
   }
 }

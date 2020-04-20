@@ -9,8 +9,6 @@ import typings.antd.carouselMod.CarouselEffect
 import typings.antd.carouselMod.DotPosition
 import typings.antd.cascaderMod.CascaderExpandTrigger
 import typings.antd.collapseCollapseMod.ExpandIconPosition
-import typings.antd.colorsMod.PresetColorType
-import typings.antd.colorsMod.PresetStatusColorType
 import typings.antd.directoryTreeMod.ExpandAction
 import typings.antd.drawerMod.placementType
 import typings.antd.dropdownButtonMod.DropdownButtonType
@@ -36,6 +34,7 @@ import typings.antd.progressProgressMod.ProgressType
 import typings.antd.radioInterfaceMod.RadioGroupButtonStyle
 import typings.antd.responsiveObserveMod.Breakpoint
 import typings.antd.resultMod.ExceptionStatusType
+import typings.antd.resultMod.ResultStatusType
 import typings.antd.siderMod.CollapseType
 import typings.antd.siderMod.SiderTheme
 import typings.antd.sizeContextMod._SizeType
@@ -157,7 +156,7 @@ object antdStrings {
   sealed trait `404` extends ExceptionStatusType
   
   @js.native
-  sealed trait `4Dot1Dot1` extends js.Object
+  sealed trait `4Dot1Dot4` extends js.Object
   
   @js.native
   sealed trait `500` extends ExceptionStatusType
@@ -439,7 +438,7 @@ object antdStrings {
   sealed trait `block-start` extends js.Object
   
   @js.native
-  sealed trait blue extends PresetColorType
+  sealed trait blue extends js.Object
   
   @js.native
   sealed trait bold extends js.Object
@@ -639,7 +638,7 @@ object antdStrings {
   sealed trait crispEdges extends js.Object
   
   @js.native
-  sealed trait cyan extends PresetColorType
+  sealed trait cyan extends js.Object
   
   @js.native
   sealed trait danger
@@ -669,6 +668,9 @@ object antdStrings {
   sealed trait dateRender extends js.Object
   
   @js.native
+  sealed trait `datetime-local` extends js.Object
+  
+  @js.native
   sealed trait decimal extends js.Object
   
   @js.native
@@ -676,7 +678,6 @@ object antdStrings {
     extends ButtonType
        with CardSize
        with ListSize
-       with PresetStatusColorType
        with ProgressSize
        with SpinSize
        with SwitchSize
@@ -778,7 +779,7 @@ object antdStrings {
   sealed trait error
     extends IconType
        with NoticeType
-       with PresetStatusColorType
+       with ResultStatusType
        with UploadFileStatus
        with ValidateStatus
   
@@ -802,6 +803,9 @@ object antdStrings {
   
   @js.native
   sealed trait `false` extends js.Object
+  
+  @js.native
+  sealed trait file extends js.Object
   
   @js.native
   sealed trait fill extends js.Object
@@ -831,7 +835,7 @@ object antdStrings {
   sealed trait `full-width` extends js.Object
   
   @js.native
-  sealed trait geekblue extends PresetColorType
+  sealed trait geekblue extends js.Object
   
   @js.native
   sealed trait generateConfig extends js.Object
@@ -848,13 +852,13 @@ object antdStrings {
        with DropdownButtonType
   
   @js.native
-  sealed trait gold extends PresetColorType
+  sealed trait gold extends js.Object
   
   @js.native
   sealed trait grammar extends js.Object
   
   @js.native
-  sealed trait green extends PresetColorType
+  sealed trait green extends js.Object
   
   @js.native
   sealed trait grid extends js.Object
@@ -935,12 +939,16 @@ object antdStrings {
   sealed trait ignore extends js.Object
   
   @js.native
+  sealed trait image extends js.Object
+  
+  @js.native
   sealed trait inactive extends js.Object
   
   @js.native
   sealed trait info
     extends IconType
        with NoticeType
+       with ResultStatusType
   
   @js.native
   sealed trait inherit extends js.Object
@@ -1046,7 +1054,7 @@ object antdStrings {
   sealed trait lighter extends js.Object
   
   @js.native
-  sealed trait lime extends PresetColorType
+  sealed trait lime extends js.Object
   
   @js.native
   sealed trait line
@@ -1096,7 +1104,7 @@ object antdStrings {
   sealed trait luminosity extends js.Object
   
   @js.native
-  sealed trait magenta extends PresetColorType
+  sealed trait magenta extends js.Object
   
   @js.native
   sealed trait main extends js.Object
@@ -1371,7 +1379,7 @@ object antdStrings {
   sealed trait optimizeSpeed extends js.Object
   
   @js.native
-  sealed trait orange extends PresetColorType
+  sealed trait orange extends js.Object
   
   @js.native
   sealed trait other extends js.Object
@@ -1404,6 +1412,9 @@ object antdStrings {
   sealed trait part extends js.Object
   
   @js.native
+  sealed trait password extends js.Object
+  
+  @js.native
   sealed trait `petite-caps` extends js.Object
   
   @js.native
@@ -1419,7 +1430,7 @@ object antdStrings {
   sealed trait `picture-card` extends UploadListType
   
   @js.native
-  sealed trait pink extends PresetColorType
+  sealed trait pink extends js.Object
   
   @js.native
   sealed trait pixelated extends js.Object
@@ -1472,7 +1483,7 @@ object antdStrings {
   sealed trait process extends js.Object
   
   @js.native
-  sealed trait processing extends PresetStatusColorType
+  sealed trait processing extends js.Object
   
   @js.native
   sealed trait `progress-bar` extends js.Object
@@ -1496,7 +1507,7 @@ object antdStrings {
   sealed trait proximity extends js.Object
   
   @js.native
-  sealed trait purple extends PresetColorType
+  sealed trait purple extends js.Object
   
   @js.native
   sealed trait `push-button` extends js.Object
@@ -1538,7 +1549,7 @@ object antdStrings {
   sealed trait recto extends js.Object
   
   @js.native
-  sealed trait red extends PresetColorType
+  sealed trait red extends js.Object
   
   @js.native
   sealed trait region extends js.Object
@@ -1892,7 +1903,7 @@ object antdStrings {
   sealed trait success
     extends IconType
        with NoticeType
-       with PresetStatusColorType
+       with ResultStatusType
        with UploadFileStatus
        with ValidateStatus
   
@@ -2120,7 +2131,7 @@ object antdStrings {
   sealed trait visibleStroke extends js.Object
   
   @js.native
-  sealed trait volcano extends PresetColorType
+  sealed trait volcano extends js.Object
   
   @js.native
   sealed trait wait extends js.Object
@@ -2130,11 +2141,14 @@ object antdStrings {
     extends BaseType
        with IconType
        with NoticeType
-       with PresetStatusColorType
+       with ResultStatusType
        with ValidateStatus
   
   @js.native
   sealed trait wavy extends js.Object
+  
+  @js.native
+  sealed trait week extends js.Object
   
   @js.native
   sealed trait wrap extends js.Object
@@ -2164,7 +2178,7 @@ object antdStrings {
   sealed trait year extends CalendarMode
   
   @js.native
-  sealed trait yellow extends PresetColorType
+  sealed trait yellow extends js.Object
   
   @js.native
   sealed trait yes extends js.Object
@@ -2239,7 +2253,7 @@ object antdStrings {
   @scala.inline
   def `404`: `404` = "404".asInstanceOf[`404`]
   @scala.inline
-  def `4Dot1Dot1`: `4Dot1Dot1` = "4.1.1".asInstanceOf[`4Dot1Dot1`]
+  def `4Dot1Dot4`: `4Dot1Dot4` = "4.1.4".asInstanceOf[`4Dot1Dot4`]
   @scala.inline
   def `500`: `500` = "500".asInstanceOf[`500`]
   @scala.inline
@@ -2263,7 +2277,7 @@ object antdStrings {
   @scala.inline
   def additions: additions = "additions".asInstanceOf[additions]
   @scala.inline
-  def `additions text`: `additions text` = "additions text".asInstanceOf[`additions text`]
+  def `additions text`: `additions text` = ("additions text").asInstanceOf[`additions text`]
   @scala.inline
   def after: after = "after".asInstanceOf[after]
   @scala.inline
@@ -2561,6 +2575,8 @@ object antdStrings {
   @scala.inline
   def dateRender: dateRender = "dateRender".asInstanceOf[dateRender]
   @scala.inline
+  def `datetime-local`: `datetime-local` = "datetime-local".asInstanceOf[`datetime-local`]
+  @scala.inline
   def decimal: decimal = "decimal".asInstanceOf[decimal]
   @scala.inline
   def default: default = "default".asInstanceOf[default]
@@ -2642,6 +2658,8 @@ object antdStrings {
   def fade: fade = "fade".asInstanceOf[fade]
   @scala.inline
   def `false`: `false` = "false".asInstanceOf[`false`]
+  @scala.inline
+  def file: file = "file".asInstanceOf[file]
   @scala.inline
   def fill: fill = "fill".asInstanceOf[fill]
   @scala.inline
@@ -2726,6 +2744,8 @@ object antdStrings {
   def ideographic: ideographic = "ideographic".asInstanceOf[ideographic]
   @scala.inline
   def ignore: ignore = "ignore".asInstanceOf[ignore]
+  @scala.inline
+  def image: image = "image".asInstanceOf[image]
   @scala.inline
   def inactive: inactive = "inactive".asInstanceOf[inactive]
   @scala.inline
@@ -3024,6 +3044,8 @@ object antdStrings {
   def painted: painted = "painted".asInstanceOf[painted]
   @scala.inline
   def part: part = "part".asInstanceOf[part]
+  @scala.inline
+  def password: password = "password".asInstanceOf[password]
   @scala.inline
   def `petite-caps`: `petite-caps` = "petite-caps".asInstanceOf[`petite-caps`]
   @scala.inline
@@ -3480,6 +3502,8 @@ object antdStrings {
   def warning: warning = "warning".asInstanceOf[warning]
   @scala.inline
   def wavy: wavy = "wavy".asInstanceOf[wavy]
+  @scala.inline
+  def week: week = "week".asInstanceOf[week]
   @scala.inline
   def wrap: wrap = "wrap".asInstanceOf[wrap]
   @scala.inline

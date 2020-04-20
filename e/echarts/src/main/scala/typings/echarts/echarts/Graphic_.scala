@@ -36,7 +36,6 @@ object Graphic_ {
     clipRectByRect: (ERectangle, ERectangle) => ERectangle
   ): Graphic_ = {
     val __obj = js.Dynamic.literal(LinearGradient = LinearGradient.asInstanceOf[js.Any], clipPointsByRect = js.Any.fromFunction2(clipPointsByRect), clipRectByRect = js.Any.fromFunction2(clipRectByRect))
-  
     __obj.asInstanceOf[Graphic_]
   }
 }

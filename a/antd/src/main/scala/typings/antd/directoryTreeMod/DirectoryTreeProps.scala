@@ -35,23 +35,35 @@ object DirectoryTreeProps {
     blockNode: js.UndefOr[Boolean] = js.undefined,
     checkStrictly: js.UndefOr[Boolean] = js.undefined,
     checkable: js.UndefOr[Boolean] = js.undefined,
-    checkedKeys: js.Array[String] | AnonChecked = null,
+    checkedKeys: (js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ _
+    ]) | AnonChecked = null,
     children: ReactNode = null,
     className: String = null,
-    defaultCheckedKeys: js.Array[String] = null,
+    defaultCheckedKeys: js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ _
+    ] = null,
     defaultExpandAll: js.UndefOr[Boolean] = js.undefined,
     defaultExpandParent: js.UndefOr[Boolean] = js.undefined,
-    defaultExpandedKeys: js.Array[String] = null,
-    defaultSelectedKeys: js.Array[String] = null,
+    defaultExpandedKeys: js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ _
+    ] = null,
+    defaultSelectedKeys: js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ _
+    ] = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     draggable: js.UndefOr[Boolean] = js.undefined,
     expandAction: ExpandAction = null,
-    expandedKeys: js.Array[String] = null,
+    expandedKeys: js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ _
+    ] = null,
     filterAntTreeNode: /* node */ AntTreeNode => Boolean = null,
     filterTreeNode: /* node */ InternalTreeNode => Boolean = null,
     icon: (js.Function1[/* nodeProps */ AntdTreeNodeAttribute, ReactNode]) | ReactNode = null,
     loadData: /* node */ InternalTreeNode => js.Promise[_] = null,
-    loadedKeys: js.Array[String] = null,
+    loadedKeys: js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ _
+    ] = null,
     multiple: js.UndefOr[Boolean] = js.undefined,
     onCheck: (/* checkedKeys */ js.Array[String], /* e */ CheckData) => Unit = null,
     onDragEnd: /* props */ OnDragEndData => Unit = null,
@@ -67,7 +79,9 @@ object DirectoryTreeProps {
     onSelect: (/* selectedKeys */ js.Array[String], /* e */ SelectData) => Unit = null,
     prefixCls: String = null,
     selectable: js.UndefOr[Boolean] = js.undefined,
-    selectedKeys: js.Array[String] = null,
+    selectedKeys: js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ _
+    ] = null,
     showIcon: js.UndefOr[Boolean] = js.undefined,
     showLine: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,

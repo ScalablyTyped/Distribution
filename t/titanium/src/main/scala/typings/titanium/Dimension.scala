@@ -5,23 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * A simple object consisting of the position and size measurements.
+  * A simple object consisting of the position and size measurements. Effectively combines <Size> and <Point> but ensures numeric x/y values.
   */
-trait Dimension extends js.Object {
+trait Dimension extends Size {
   /**
-  	 * The height measurement.
-  	 */
-  var height: js.UndefOr[Double] = js.undefined
-  /**
-  	 * The width measurement.
-  	 */
-  var width: js.UndefOr[Double] = js.undefined
-  /**
-  	 * The x-axis coordinate of the position.
+  	 * The x-axis coordinate of the position. When returned by <Titanium.UI.View.rect> the position is relative to it's parent.
   	 */
   var x: js.UndefOr[Double] = js.undefined
   /**
-  	 * The y-axis coordinate of the position.
+  	 * The y-axis coordinate of the position. When returned by <Titanium.UI.View.rect> the position is relative to it's parent.
   	 */
   var y: js.UndefOr[Double] = js.undefined
 }

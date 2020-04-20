@@ -33,7 +33,6 @@ object ICursorPositionChangedEvent {
     source: String
   ): ICursorPositionChangedEvent = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], secondaryPositions = secondaryPositions.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICursorPositionChangedEvent]
   }
 }

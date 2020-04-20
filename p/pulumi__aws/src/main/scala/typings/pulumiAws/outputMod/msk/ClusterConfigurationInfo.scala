@@ -20,7 +20,6 @@ object ClusterConfigurationInfo {
   @scala.inline
   def apply(arn: String, revision: Double): ClusterConfigurationInfo = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClusterConfigurationInfo]
   }
 }

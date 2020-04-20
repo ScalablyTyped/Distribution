@@ -26,7 +26,6 @@ object UpdateWriteOpResult {
     upsertedId: AnonId
   ): UpdateWriteOpResult = {
     val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], matchedCount = matchedCount.asInstanceOf[js.Any], modifiedCount = modifiedCount.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], upsertedCount = upsertedCount.asInstanceOf[js.Any], upsertedId = upsertedId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateWriteOpResult]
   }
 }

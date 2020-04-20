@@ -15,11 +15,11 @@ abstract class BaseConfig[T /* <: js.Object */] protected () extends js.Object {
   var _setFile: js.Any = js.native
   val p: String = js.native
   val pathPrefix: js.Array[String] = js.native
-  def c(): T = js.native
+  def c: T = js.native
   def c(value: T): js.Any = js.native
-  def file(): js.Any = js.native
-  def get[P /* <: String */](property: P): /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any = js.native
-  def get[P /* <: String */](
+  def file: js.Any = js.native
+  def get[P /* <: /* keyof T */ String */](property: P): /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any = js.native
+  def get[P /* <: /* keyof T */ String */](
     property: P,
     defaultValue: NonNullable[
       /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any
@@ -28,10 +28,10 @@ abstract class BaseConfig[T /* <: js.Object */] protected () extends js.Object {
     /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any
   ] = js.native
   def provideDefaults(c: Partial[T]): T = js.native
-  def set[P /* <: String */](
+  def set[P /* <: /* keyof T */ String */](
     property: P,
     value: /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any
   ): Unit = js.native
-  def unset[P /* <: String */](property: P): Unit = js.native
+  def unset[P /* <: /* keyof T */ String */](property: P): Unit = js.native
 }
 

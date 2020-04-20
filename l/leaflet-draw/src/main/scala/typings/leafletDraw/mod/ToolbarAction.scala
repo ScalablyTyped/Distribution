@@ -15,7 +15,6 @@ object ToolbarAction {
   @scala.inline
   def apply(callback: () => Unit, context: js.Object, text: String, title: String): ToolbarAction = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction0(callback), context = context.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ToolbarAction]
   }
 }

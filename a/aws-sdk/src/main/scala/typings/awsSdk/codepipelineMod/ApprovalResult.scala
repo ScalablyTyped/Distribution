@@ -20,7 +20,6 @@ object ApprovalResult {
   @scala.inline
   def apply(status: ApprovalStatus, summary: ApprovalSummary): ApprovalResult = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ApprovalResult]
   }
 }

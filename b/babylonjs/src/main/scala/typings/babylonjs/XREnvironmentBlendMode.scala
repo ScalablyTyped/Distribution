@@ -13,12 +13,10 @@ trait XREnvironmentBlendMode extends js.Object
 
 object XREnvironmentBlendMode {
   @scala.inline
-  def additive: typings.babylonjs.babylonjsStrings.additive = this.cast("additive")
+  def additive: typings.babylonjs.babylonjsStrings.additive = "additive".asInstanceOf[typings.babylonjs.babylonjsStrings.additive]
   @scala.inline
-  def `alpha-blend`: typings.babylonjs.babylonjsStrings.`alpha-blend` = this.cast("alpha-blend")
+  def `alpha-blend`: typings.babylonjs.babylonjsStrings.`alpha-blend` = "alpha-blend".asInstanceOf[typings.babylonjs.babylonjsStrings.`alpha-blend`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def opaque: typings.babylonjs.babylonjsStrings.opaque = this.cast("opaque")
+  def opaque: typings.babylonjs.babylonjsStrings.opaque = "opaque".asInstanceOf[typings.babylonjs.babylonjsStrings.opaque]
 }
 

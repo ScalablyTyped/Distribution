@@ -14,7 +14,6 @@ object Anon0 {
   @scala.inline
   def apply[T /* <: GeoTransformPrototype */](stream: GeoStream_ => T with GeoStream_): Anon0[T] = {
     val __obj = js.Dynamic.literal(stream = js.Any.fromFunction1(stream))
-  
     __obj.asInstanceOf[Anon0[T]]
   }
 }

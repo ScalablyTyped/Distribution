@@ -15,7 +15,6 @@ object Cordova {
   @scala.inline
   def apply(file: AnonApplicationDirectory): Cordova = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Cordova]
   }
 }

@@ -20,7 +20,6 @@ object ResetPersonalPINRequest {
   @scala.inline
   def apply(AccountId: NonEmptyString, UserId: NonEmptyString): ResetPersonalPINRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], UserId = UserId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResetPersonalPINRequest]
   }
 }

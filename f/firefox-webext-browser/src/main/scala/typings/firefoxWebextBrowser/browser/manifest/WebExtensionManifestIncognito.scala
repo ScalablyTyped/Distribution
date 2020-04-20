@@ -12,10 +12,8 @@ trait WebExtensionManifestIncognito extends js.Object
 
 object WebExtensionManifestIncognito {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def not_allowed: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.not_allowed = "not_allowed".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.not_allowed]
   @scala.inline
-  def not_allowed: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.not_allowed = this.cast("not_allowed")
-  @scala.inline
-  def spanning: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.spanning = this.cast("spanning")
+  def spanning: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.spanning = "spanning".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.spanning]
 }
 

@@ -18,7 +18,6 @@ object UnmarshalledStorageClassAnalysisDataExport {
   @scala.inline
   def apply(Destination: UnmarshalledAnalyticsExportDestination, OutputSchemaVersion: V_1 | String): UnmarshalledStorageClassAnalysisDataExport = {
     val __obj = js.Dynamic.literal(Destination = Destination.asInstanceOf[js.Any], OutputSchemaVersion = OutputSchemaVersion.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnmarshalledStorageClassAnalysisDataExport]
   }
 }

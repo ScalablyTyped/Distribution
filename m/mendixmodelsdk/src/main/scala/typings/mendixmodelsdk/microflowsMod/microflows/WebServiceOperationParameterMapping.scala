@@ -30,20 +30,20 @@ abstract class WebServiceOperationParameterMapping protected () extends Element 
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
-  def argument(): String = js.native
+  def argument: String = js.native
   def argument(newValue: String): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 7.9.0: introduced
     */
-  def argumentModel(): Expression = js.native
+  def argumentModel: Expression = js.native
   def argumentModel(newValue: Expression): js.Any = js.native
-  def containerAsAdvancedRequestHandling(): AdvancedRequestHandling = js.native
-  def containerAsSimpleRequestHandling(): SimpleRequestHandling = js.native
-  def isChecked(): Boolean = js.native
+  def containerAsAdvancedRequestHandling: AdvancedRequestHandling = js.native
+  def containerAsSimpleRequestHandling: SimpleRequestHandling = js.native
+  def isChecked: Boolean = js.native
   def isChecked(newValue: Boolean): js.Any = js.native
-  def parameterName(): String = js.native
+  def parameterName: String = js.native
   def parameterName(newValue: String): js.Any = js.native
 }
 

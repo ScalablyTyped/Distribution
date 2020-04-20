@@ -147,7 +147,7 @@ object nodeMod extends js.Object {
     /**
       * Gets or sets the animation properties override
       */
-    def animationPropertiesOverride(): Nullable[AnimationPropertiesOverride] = js.native
+    def animationPropertiesOverride: Nullable[AnimationPropertiesOverride] = js.native
     def animationPropertiesOverride(value: Nullable[AnimationPropertiesOverride]): js.Any = js.native
     /**
       * Will start the animation sequence
@@ -165,7 +165,7 @@ object nodeMod extends js.Object {
       * Gets the list of attached behaviors
       * @see http://doc.babylonjs.com/features/behaviour
       */
-    def behaviors(): js.Array[Behavior[Node]] = js.native
+    def behaviors: js.Array[Behavior[Node]] = js.native
     /**
       * Computes the world matrix of the node
       * @param force defines if the cache version should be invalidated forcing the world matrix to be created from scratch
@@ -198,7 +198,7 @@ object nodeMod extends js.Object {
     /**
       * Gets or sets a boolean used to define if the node must be serialized
       */
-    def doNotSerialize(): Boolean = js.native
+    def doNotSerialize: Boolean = js.native
     def doNotSerialize(value: Boolean): js.Any = js.native
     /**
       * Get an animation by name
@@ -318,7 +318,7 @@ object nodeMod extends js.Object {
       * Sets a callback that will be raised when the node will be disposed
       */
     def onDispose(callback: js.Function0[Unit]): js.Any = js.native
-    def parent(): Nullable[Node] = js.native
+    def parent: Nullable[Node] = js.native
     /**
       * Gets or sets the parent of the node (without keeping the current position in the scene)
       * @see https://doc.babylonjs.com/how_to/parenting
@@ -348,7 +348,7 @@ object nodeMod extends js.Object {
       * Returns directly the latest state of the mesh World matrix.
       * A Matrix is returned.
       */
-    def worldMatrixFromCache(): Matrix = js.native
+    def worldMatrixFromCache: Matrix = js.native
   }
   
   /* static members */

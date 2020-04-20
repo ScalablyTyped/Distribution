@@ -16,18 +16,16 @@ trait UpdateReason extends js.Object
 
 object UpdateReason {
   @scala.inline
-  def attributes: typings.twilioChat.twilioChatStrings.attributes = this.cast("attributes")
+  def attributes: typings.twilioChat.twilioChatStrings.attributes = "attributes".asInstanceOf[typings.twilioChat.twilioChatStrings.attributes]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dateCreated: typings.twilioChat.twilioChatStrings.dateCreated = "dateCreated".asInstanceOf[typings.twilioChat.twilioChatStrings.dateCreated]
   @scala.inline
-  def dateCreated: typings.twilioChat.twilioChatStrings.dateCreated = this.cast("dateCreated")
+  def dateUpdated: typings.twilioChat.twilioChatStrings.dateUpdated = "dateUpdated".asInstanceOf[typings.twilioChat.twilioChatStrings.dateUpdated]
   @scala.inline
-  def dateUpdated: typings.twilioChat.twilioChatStrings.dateUpdated = this.cast("dateUpdated")
+  def lastConsumedMessageIndex: typings.twilioChat.twilioChatStrings.lastConsumedMessageIndex = "lastConsumedMessageIndex".asInstanceOf[typings.twilioChat.twilioChatStrings.lastConsumedMessageIndex]
   @scala.inline
-  def lastConsumedMessageIndex: typings.twilioChat.twilioChatStrings.lastConsumedMessageIndex = this.cast("lastConsumedMessageIndex")
+  def lastConsumptionTimestamp: typings.twilioChat.twilioChatStrings.lastConsumptionTimestamp = "lastConsumptionTimestamp".asInstanceOf[typings.twilioChat.twilioChatStrings.lastConsumptionTimestamp]
   @scala.inline
-  def lastConsumptionTimestamp: typings.twilioChat.twilioChatStrings.lastConsumptionTimestamp = this.cast("lastConsumptionTimestamp")
-  @scala.inline
-  def roleSid: typings.twilioChat.twilioChatStrings.roleSid = this.cast("roleSid")
+  def roleSid: typings.twilioChat.twilioChatStrings.roleSid = "roleSid".asInstanceOf[typings.twilioChat.twilioChatStrings.roleSid]
 }
 

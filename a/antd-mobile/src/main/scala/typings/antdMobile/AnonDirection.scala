@@ -16,7 +16,6 @@ object AnonDirection {
   @scala.inline
   def apply(current: Double, direction: String, iconPrefix: String, labelPlacement: String, prefixCls: String): AnonDirection = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], iconPrefix = iconPrefix.asInstanceOf[js.Any], labelPlacement = labelPlacement.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDirection]
   }
 }

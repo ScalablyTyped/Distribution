@@ -26,7 +26,6 @@ object AnonInvalidPath {
     unknownMergeType: Double
   ): AnonInvalidPath = {
     val __obj = js.Dynamic.literal(invalidPath = invalidPath.asInstanceOf[js.Any], mergeContentNotFound = mergeContentNotFound.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], otherError = otherError.asInstanceOf[js.Any], pathInUse = pathInUse.asInstanceOf[js.Any], unknownAction = unknownAction.asInstanceOf[js.Any], unknownMergeType = unknownMergeType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonInvalidPath]
   }
 }

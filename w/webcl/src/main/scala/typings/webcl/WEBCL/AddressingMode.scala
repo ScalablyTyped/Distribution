@@ -19,15 +19,13 @@ trait AddressingMode extends js.Object
 
 object AddressingMode {
   @scala.inline
-  def ADDRESS_CLAMP: `0x1132` = this.cast(0x1132)
+  def ADDRESS_CLAMP: `0x1132` = 0x1132.asInstanceOf[`0x1132`]
   //ADDRESS_NONE                              = 0x1130, // disallowed
   @scala.inline
-  def ADDRESS_CLAMP_TO_EDGE: `0x1131` = this.cast(0x1131)
+  def ADDRESS_CLAMP_TO_EDGE: `0x1131` = 0x1131.asInstanceOf[`0x1131`]
   @scala.inline
-  def ADDRESS_MIRRORED_REPEAT: `0x1134` = this.cast(0x1134)
+  def ADDRESS_MIRRORED_REPEAT: `0x1134` = 0x1134.asInstanceOf[`0x1134`]
   @scala.inline
-  def ADDRESS_REPEAT: `0x1133` = this.cast(0x1133)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ADDRESS_REPEAT: `0x1133` = 0x1133.asInstanceOf[`0x1133`]
 }
 

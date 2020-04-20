@@ -30,7 +30,6 @@ object GetContextMenuItemsParams {
     value: js.Any
   ): GetContextMenuItemsParams = {
     val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], columnApi = columnApi.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], defaultItems = defaultItems.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetContextMenuItemsParams]
   }
 }

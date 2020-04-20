@@ -16,12 +16,10 @@ trait RunAt extends js.Object
 
 object RunAt {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def document_end: typings.chromeApps.chromeAppsStrings.document_end = "document_end".asInstanceOf[typings.chromeApps.chromeAppsStrings.document_end]
   @scala.inline
-  def document_end: typings.chromeApps.chromeAppsStrings.document_end = this.cast("document_end")
+  def document_idle: typings.chromeApps.chromeAppsStrings.document_idle = "document_idle".asInstanceOf[typings.chromeApps.chromeAppsStrings.document_idle]
   @scala.inline
-  def document_idle: typings.chromeApps.chromeAppsStrings.document_idle = this.cast("document_idle")
-  @scala.inline
-  def document_start: typings.chromeApps.chromeAppsStrings.document_start = this.cast("document_start")
+  def document_start: typings.chromeApps.chromeAppsStrings.document_start = "document_start".asInstanceOf[typings.chromeApps.chromeAppsStrings.document_start]
 }
 

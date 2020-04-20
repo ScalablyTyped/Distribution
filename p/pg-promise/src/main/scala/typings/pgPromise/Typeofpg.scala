@@ -23,7 +23,6 @@ object Typeofpg {
     types: ITypes
   ): Typeofpg = {
     val __obj = js.Dynamic.literal(Client = Client.asInstanceOf[js.Any], defaults = defaults.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Typeofpg]
   }
 }

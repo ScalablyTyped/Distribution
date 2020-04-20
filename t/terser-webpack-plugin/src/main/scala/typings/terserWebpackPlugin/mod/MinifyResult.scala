@@ -16,7 +16,6 @@ object MinifyResult {
   @scala.inline
   def apply(code: js.Any, error: js.Any, extractedComments: js.Any, map: js.Any, warnings: js.Any): MinifyResult = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], extractedComments = extractedComments.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], warnings = warnings.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MinifyResult]
   }
 }

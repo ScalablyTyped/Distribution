@@ -14,7 +14,6 @@ object AnonThemeThemeOfStyles {
   @scala.inline
   def apply[StylesType /* <: ClassKeyInferable[_, _] */](theme: ThemeOfStyles[StylesType]): AnonThemeThemeOfStyles[StylesType] = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonThemeThemeOfStyles[StylesType]]
   }
 }

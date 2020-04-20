@@ -39,7 +39,6 @@ object ReferencesetsResource {
     search: AnonAccesstoken => Request_[SearchReferenceSetsResponse]
   ): ReferencesetsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), search = js.Any.fromFunction1(search))
-  
     __obj.asInstanceOf[ReferencesetsResource]
   }
 }

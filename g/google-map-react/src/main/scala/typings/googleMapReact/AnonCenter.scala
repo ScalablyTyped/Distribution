@@ -15,7 +15,6 @@ object AnonCenter {
   @scala.inline
   def apply(center: AnonMetersPerLatDegree, newBounds: Bounds, zoom: Double): AnonCenter = {
     val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], newBounds = newBounds.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCenter]
   }
 }

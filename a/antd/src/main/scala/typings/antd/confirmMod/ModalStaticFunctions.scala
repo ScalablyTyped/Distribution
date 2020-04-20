@@ -26,7 +26,6 @@ object ModalStaticFunctions {
     warning: /* props */ ModalFuncProps => AnonDestroy
   ): ModalStaticFunctions = {
     val __obj = js.Dynamic.literal(confirm = js.Any.fromFunction1(confirm), error = js.Any.fromFunction1(error), info = js.Any.fromFunction1(info), success = js.Any.fromFunction1(success), warn = js.Any.fromFunction1(warn), warning = js.Any.fromFunction1(warning))
-  
     __obj.asInstanceOf[ModalStaticFunctions]
   }
 }

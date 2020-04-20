@@ -14,7 +14,7 @@ object ɵangularPackagesCoreCoreH extends js.Object {
       ElementRef[js.Any]
     ],
     tNode: TNode,
-    view: ɵangularPackagesCoreCoreBp
+    view: ɵangularPackagesCoreCoreBo
   ): ElementRef[_] = js.native
 }
 

@@ -16,7 +16,6 @@ object GetCognitoEventsRequest {
   @scala.inline
   def apply(IdentityPoolId: IdentityPoolId): GetCognitoEventsRequest = {
     val __obj = js.Dynamic.literal(IdentityPoolId = IdentityPoolId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetCognitoEventsRequest]
   }
 }

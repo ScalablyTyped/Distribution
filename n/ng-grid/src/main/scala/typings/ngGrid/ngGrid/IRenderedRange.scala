@@ -13,7 +13,6 @@ object IRenderedRange {
   @scala.inline
   def apply(bottomRow: Double, topRow: Double): IRenderedRange = {
     val __obj = js.Dynamic.literal(bottomRow = bottomRow.asInstanceOf[js.Any], topRow = topRow.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IRenderedRange]
   }
 }

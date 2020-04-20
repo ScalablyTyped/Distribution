@@ -28,7 +28,6 @@ object QuizFeedback {
   @scala.inline
   def apply(getLinkUrls: () => js.Array[String], getText: () => String): QuizFeedback = {
     val __obj = js.Dynamic.literal(getLinkUrls = js.Any.fromFunction0(getLinkUrls), getText = js.Any.fromFunction0(getText))
-  
     __obj.asInstanceOf[QuizFeedback]
   }
 }

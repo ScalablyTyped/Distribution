@@ -16,7 +16,6 @@ object DescribeEndpointRequest {
   @scala.inline
   def apply(EndpointArn: ComprehendEndpointArn): DescribeEndpointRequest = {
     val __obj = js.Dynamic.literal(EndpointArn = EndpointArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeEndpointRequest]
   }
 }

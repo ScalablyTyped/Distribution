@@ -16,7 +16,6 @@ object CreateGroupResponse {
   @scala.inline
   def apply(Group: Group): CreateGroupResponse = {
     val __obj = js.Dynamic.literal(Group = Group.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateGroupResponse]
   }
 }

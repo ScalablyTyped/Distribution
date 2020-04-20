@@ -20,7 +20,6 @@ object RemoveTagsFromCertificateRequest {
   @scala.inline
   def apply(CertificateArn: Arn, Tags: TagList): RemoveTagsFromCertificateRequest = {
     val __obj = js.Dynamic.literal(CertificateArn = CertificateArn.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RemoveTagsFromCertificateRequest]
   }
 }

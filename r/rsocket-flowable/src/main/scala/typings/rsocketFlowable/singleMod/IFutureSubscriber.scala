@@ -15,7 +15,6 @@ object IFutureSubscriber {
   @scala.inline
   def apply[T](onComplete: T => Unit, onError: Error => Unit, onSubscribe: CancelCallback => Unit): IFutureSubscriber[T] = {
     val __obj = js.Dynamic.literal(onComplete = js.Any.fromFunction1(onComplete), onError = js.Any.fromFunction1(onError), onSubscribe = js.Any.fromFunction1(onSubscribe))
-  
     __obj.asInstanceOf[IFutureSubscriber[T]]
   }
 }

@@ -15,7 +15,6 @@ object MultiVarsReadResult {
   @scala.inline
   def apply(Data: Buffer, Result: Double): MultiVarsReadResult = {
     val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], Result = Result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MultiVarsReadResult]
   }
 }

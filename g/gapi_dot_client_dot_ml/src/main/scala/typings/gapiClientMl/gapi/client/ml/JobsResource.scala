@@ -53,7 +53,6 @@ object JobsResource {
     testIamPermissions: AnonBearertoken => Request_[GoogleIamV1TestIamPermissionsResponse]
   ): JobsResource = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel), create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get), getIamPolicy = js.Any.fromFunction1(getIamPolicy), list = js.Any.fromFunction1(list), setIamPolicy = js.Any.fromFunction1(setIamPolicy), testIamPermissions = js.Any.fromFunction1(testIamPermissions))
-  
     __obj.asInstanceOf[JobsResource]
   }
 }

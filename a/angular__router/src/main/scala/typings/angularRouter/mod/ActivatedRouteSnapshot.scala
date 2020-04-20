@@ -25,16 +25,16 @@ class ActivatedRouteSnapshot () extends js.Object {
   /** The URL segments matched by this route */
   var url: js.Array[UrlSegment] = js.native
   /** The children of this route in the router state tree */
-  def children(): js.Array[ActivatedRouteSnapshot] = js.native
+  def children: js.Array[ActivatedRouteSnapshot] = js.native
   /** The first child of this route in the router state tree */
-  def firstChild(): ActivatedRouteSnapshot | Null = js.native
-  def paramMap(): ParamMap = js.native
+  def firstChild: ActivatedRouteSnapshot | Null = js.native
+  def paramMap: ParamMap = js.native
   /** The parent of this route in the router state tree */
-  def parent(): ActivatedRouteSnapshot | Null = js.native
+  def parent: ActivatedRouteSnapshot | Null = js.native
   /** The path from the root of the router state tree to this route */
-  def pathFromRoot(): js.Array[ActivatedRouteSnapshot] = js.native
-  def queryParamMap(): ParamMap = js.native
+  def pathFromRoot: js.Array[ActivatedRouteSnapshot] = js.native
+  def queryParamMap: ParamMap = js.native
   /** The root of the router state */
-  def root(): ActivatedRouteSnapshot = js.native
+  def root: ActivatedRouteSnapshot = js.native
 }
 

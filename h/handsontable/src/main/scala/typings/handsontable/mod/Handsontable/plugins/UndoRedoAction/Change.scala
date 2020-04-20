@@ -15,7 +15,6 @@ object Change {
   @scala.inline
   def apply(actionType: change, changes: js.Array[CellChange]): Change = {
     val __obj = js.Dynamic.literal(actionType = actionType.asInstanceOf[js.Any], changes = changes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Change]
   }
 }

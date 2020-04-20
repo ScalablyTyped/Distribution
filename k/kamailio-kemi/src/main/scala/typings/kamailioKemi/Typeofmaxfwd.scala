@@ -13,7 +13,6 @@ object Typeofmaxfwd {
   @scala.inline
   def apply(is_maxfwd_lt: Double => Double, process_maxfwd: Double => Double): Typeofmaxfwd = {
     val __obj = js.Dynamic.literal(is_maxfwd_lt = js.Any.fromFunction1(is_maxfwd_lt), process_maxfwd = js.Any.fromFunction1(process_maxfwd))
-  
     __obj.asInstanceOf[Typeofmaxfwd]
   }
 }

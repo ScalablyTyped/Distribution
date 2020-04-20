@@ -13,7 +13,6 @@ object ScrollToOptions {
   @scala.inline
   def apply(callback: () => Unit, easing: Double => Double): ScrollToOptions = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction0(callback), easing = js.Any.fromFunction1(easing))
-  
     __obj.asInstanceOf[ScrollToOptions]
   }
 }

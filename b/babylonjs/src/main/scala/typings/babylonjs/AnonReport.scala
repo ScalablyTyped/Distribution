@@ -14,7 +14,6 @@ object AnonReport {
   @scala.inline
   def apply(report: String, skinned: Boolean, valid: Boolean): AnonReport = {
     val __obj = js.Dynamic.literal(report = report.asInstanceOf[js.Any], skinned = skinned.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonReport]
   }
 }

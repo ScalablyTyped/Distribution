@@ -12,7 +12,6 @@ object Set {
   @scala.inline
   def apply[T](toJSON: () => js.Any): Set[T] = {
     val __obj = js.Dynamic.literal(toJSON = js.Any.fromFunction0(toJSON))
-  
     __obj.asInstanceOf[Set[T]]
   }
 }

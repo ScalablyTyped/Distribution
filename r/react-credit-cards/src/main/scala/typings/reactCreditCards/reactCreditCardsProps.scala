@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactCreditCardsProps {
   @scala.inline
-  def ReactCreditCardsProps: ReactCreditCardProps.type = typings.reactCreditCards.mod.ReactCreditCardProps
+  def ReactCreditCardsProps: ReactCreditCardProps.type = ReactCreditCardProps
   type ReactCreditCardsProps = ReactCreditCardProps
 }
 

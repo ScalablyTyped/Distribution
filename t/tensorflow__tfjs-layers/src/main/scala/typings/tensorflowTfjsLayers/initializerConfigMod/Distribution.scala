@@ -14,12 +14,10 @@ trait Distribution extends js.Object
 
 object Distribution {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def normal: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.normal = "normal".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.normal]
   @scala.inline
-  def normal: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.normal = this.cast("normal")
+  def truncatedNormal: truncatedNormal_ = "truncatedNormal".asInstanceOf[truncatedNormal_]
   @scala.inline
-  def truncatedNormal: truncatedNormal_ = this.cast("truncatedNormal")
-  @scala.inline
-  def uniform: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.uniform = this.cast("uniform")
+  def uniform: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.uniform = "uniform".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.uniform]
 }
 

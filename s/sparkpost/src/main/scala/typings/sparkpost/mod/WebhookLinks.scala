@@ -13,7 +13,6 @@ object WebhookLinks {
   @scala.inline
   def apply(links: js.Array[AnonHref]): WebhookLinks = {
     val __obj = js.Dynamic.literal(links = links.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WebhookLinks]
   }
 }

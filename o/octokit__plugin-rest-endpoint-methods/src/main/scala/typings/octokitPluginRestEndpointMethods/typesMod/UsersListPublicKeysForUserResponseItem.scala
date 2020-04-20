@@ -13,7 +13,6 @@ object UsersListPublicKeysForUserResponseItem {
   @scala.inline
   def apply(id: Double, key: String): UsersListPublicKeysForUserResponseItem = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UsersListPublicKeysForUserResponseItem]
   }
 }

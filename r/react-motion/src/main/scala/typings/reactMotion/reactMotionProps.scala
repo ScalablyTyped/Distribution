@@ -11,7 +11,7 @@ trait reactMotionProps {
   type MotionProps = typings.reactMotion.mod.MotionProps
   type StaggeredMotionProps = typings.reactMotion.mod.StaggeredMotionProps
   @scala.inline
-  def TransitionMotionProps: TransitionProps.type = typings.reactMotion.mod.TransitionProps
+  def TransitionMotionProps: TransitionProps.type = TransitionProps
   type TransitionMotionProps = TransitionProps
 }
 

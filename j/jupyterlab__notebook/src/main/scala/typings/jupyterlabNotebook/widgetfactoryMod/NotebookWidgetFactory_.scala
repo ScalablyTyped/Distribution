@@ -37,12 +37,12 @@ class NotebookWidgetFactory_ protected () extends ABCWidgetFactory[NotebookPanel
   /**
     * A configuration object for cell editor settings.
     */
-  def editorConfig(): IEditorConfig = js.native
+  def editorConfig: IEditorConfig = js.native
   def editorConfig(value: IEditorConfig): js.Any = js.native
   /**
     * A configuration object for notebook settings.
     */
-  def notebookConfig(): INotebookConfig = js.native
+  def notebookConfig: INotebookConfig = js.native
   def notebookConfig(value: INotebookConfig): js.Any = js.native
 }
 

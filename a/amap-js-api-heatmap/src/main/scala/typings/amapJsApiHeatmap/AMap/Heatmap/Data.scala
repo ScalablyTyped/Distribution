@@ -23,7 +23,6 @@ object Data {
   @scala.inline
   def apply(count: Double, lat: Double, lng: Double): Data = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], lat = lat.asInstanceOf[js.Any], lng = lng.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Data]
   }
 }

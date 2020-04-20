@@ -13,7 +13,6 @@ object AnonR {
   @scala.inline
   def apply(r: Double, style: AnonAnimationdelay): AnonR = {
     val __obj = js.Dynamic.literal(r = r.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonR]
   }
 }

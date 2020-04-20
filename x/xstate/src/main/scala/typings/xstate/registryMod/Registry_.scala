@@ -22,7 +22,6 @@ object Registry_ {
     register: (String, Actor[_, AnyEventObject]) => String
   ): Registry_ = {
     val __obj = js.Dynamic.literal(bookId = js.Any.fromFunction0(bookId), free = js.Any.fromFunction1(free), get = js.Any.fromFunction1(get), register = js.Any.fromFunction2(register))
-  
     __obj.asInstanceOf[Registry_]
   }
 }

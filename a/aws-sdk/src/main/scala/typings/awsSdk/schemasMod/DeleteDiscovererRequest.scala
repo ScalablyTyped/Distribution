@@ -13,7 +13,6 @@ object DeleteDiscovererRequest {
   @scala.inline
   def apply(DiscovererId: string): DeleteDiscovererRequest = {
     val __obj = js.Dynamic.literal(DiscovererId = DiscovererId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteDiscovererRequest]
   }
 }

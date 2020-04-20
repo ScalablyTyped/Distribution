@@ -19,7 +19,6 @@ object GetTextTranslations {
     translations: StringDictionary[StringDictionary[GetTextTranslation]]
   ): GetTextTranslations = {
     val __obj = js.Dynamic.literal(charset = charset.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetTextTranslations]
   }
 }

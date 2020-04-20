@@ -20,7 +20,6 @@ object Filters {
     TwoDimensionalFilter: js.Array[Double] => Filter
   ): Filters = {
     val __obj = js.Dynamic.literal(HierarchyFilter = js.Any.fromFunction1(HierarchyFilter), RangedFilter = js.Any.fromFunction2(RangedFilter), RangedTwoDimensionalFilter = js.Any.fromFunction1(RangedTwoDimensionalFilter), TwoDimensionalFilter = js.Any.fromFunction1(TwoDimensionalFilter))
-  
     __obj.asInstanceOf[Filters]
   }
 }

@@ -41,7 +41,7 @@ class PhysicsJoint protected () extends js.Object {
   /**
     * Gets the physics joint
     */
-  def physicsJoint(): js.Any = js.native
+  def physicsJoint: js.Any = js.native
   /**
     * Sets the physics joint
     */

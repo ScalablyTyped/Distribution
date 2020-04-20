@@ -12,7 +12,6 @@ object AnonProtocols {
   @scala.inline
   def apply(protocols: AnonSimple): AnonProtocols = {
     val __obj = js.Dynamic.literal(protocols = protocols.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonProtocols]
   }
 }

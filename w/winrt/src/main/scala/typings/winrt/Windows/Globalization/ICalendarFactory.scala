@@ -17,7 +17,6 @@ object ICalendarFactory {
     createCalendarDefaultCalendarAndClock: IIterable[String] => Calendar
   ): ICalendarFactory = {
     val __obj = js.Dynamic.literal(createCalendar = js.Any.fromFunction3(createCalendar), createCalendarDefaultCalendarAndClock = js.Any.fromFunction1(createCalendarDefaultCalendarAndClock))
-  
     __obj.asInstanceOf[ICalendarFactory]
   }
 }

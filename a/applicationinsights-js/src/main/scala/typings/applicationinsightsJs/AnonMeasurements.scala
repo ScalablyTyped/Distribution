@@ -16,7 +16,6 @@ object AnonMeasurements {
   @scala.inline
   def apply(measurements: FieldType, name: FieldType, properties: FieldType, ver: FieldType): AnonMeasurements = {
     val __obj = js.Dynamic.literal(measurements = measurements.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], ver = ver.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMeasurements]
   }
 }

@@ -13,7 +13,6 @@ object AnonDisabled {
   @scala.inline
   def apply(disabled: Boolean, resetOnQuery: Boolean): AnonDisabled = {
     val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], resetOnQuery = resetOnQuery.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDisabled]
   }
 }

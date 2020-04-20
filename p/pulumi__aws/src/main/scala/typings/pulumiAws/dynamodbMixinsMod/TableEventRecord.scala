@@ -32,7 +32,6 @@ object TableEventRecord {
     userIdentity: AnonPrincipalId
   ): TableEventRecord = {
     val __obj = js.Dynamic.literal(awsRegion = awsRegion.asInstanceOf[js.Any], dynamodb = dynamodb.asInstanceOf[js.Any], eventID = eventID.asInstanceOf[js.Any], eventName = eventName.asInstanceOf[js.Any], eventSource = eventSource.asInstanceOf[js.Any], eventVersion = eventVersion.asInstanceOf[js.Any], userIdentity = userIdentity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TableEventRecord]
   }
 }

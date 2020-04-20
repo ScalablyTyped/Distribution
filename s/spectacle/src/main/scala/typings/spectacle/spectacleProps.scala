@@ -13,13 +13,13 @@ trait spectacleProps {
   def AppearProps: typings.spectacle.mod.AppearProps.type = typings.spectacle.mod.AppearProps
   type AppearProps = typings.spectacle.mod.AppearProps
   @scala.inline
-  def BlockQuoteProps: BaseProps.type = typings.spectacle.mod.BaseProps
+  def BlockQuoteProps: BaseProps.type = BaseProps
   type BlockQuoteProps = BaseProps
   @scala.inline
-  def CiteProps: BaseProps.type = typings.spectacle.mod.BaseProps
+  def CiteProps: BaseProps.type = BaseProps
   type CiteProps = BaseProps
   @scala.inline
-  def CodeProps: BaseProps.type = typings.spectacle.mod.BaseProps
+  def CodeProps: BaseProps.type = BaseProps
   type CodeProps = BaseProps
   @scala.inline
   def CodePaneProps: typings.spectacle.mod.CodePaneProps.type = typings.spectacle.mod.CodePaneProps
@@ -61,10 +61,10 @@ trait spectacleProps {
   def MarkdownProps: typings.spectacle.mod.MarkdownProps.type = typings.spectacle.mod.MarkdownProps
   type MarkdownProps = typings.spectacle.mod.MarkdownProps
   @scala.inline
-  def NotesProps: BaseProps.type = typings.spectacle.mod.BaseProps
+  def NotesProps: BaseProps.type = BaseProps
   type NotesProps = BaseProps
   @scala.inline
-  def QuoteProps: BaseProps.type = typings.spectacle.mod.BaseProps
+  def QuoteProps: BaseProps.type = BaseProps
   type QuoteProps = BaseProps
   @scala.inline
   def SProps: typings.spectacle.mod.SProps.type = typings.spectacle.mod.SProps
@@ -73,25 +73,25 @@ trait spectacleProps {
   def SlideProps: typings.spectacle.mod.SlideProps.type = typings.spectacle.mod.SlideProps
   type SlideProps = typings.spectacle.mod.SlideProps
   @scala.inline
-  def SlideSetProps: BaseProps.type = typings.spectacle.mod.BaseProps
+  def SlideSetProps: BaseProps.type = BaseProps
   type SlideSetProps = BaseProps
   @scala.inline
-  def TableProps: BaseProps.type = typings.spectacle.mod.BaseProps
+  def TableProps: BaseProps.type = BaseProps
   type TableProps = BaseProps
   @scala.inline
-  def TableBodyProps: BaseProps.type = typings.spectacle.mod.BaseProps
+  def TableBodyProps: BaseProps.type = BaseProps
   type TableBodyProps = BaseProps
   @scala.inline
-  def TableHeaderProps: BaseProps.type = typings.spectacle.mod.BaseProps
+  def TableHeaderProps: BaseProps.type = BaseProps
   type TableHeaderProps = BaseProps
   @scala.inline
-  def TableHeaderItemProps: BaseProps.type = typings.spectacle.mod.BaseProps
+  def TableHeaderItemProps: BaseProps.type = BaseProps
   type TableHeaderItemProps = BaseProps
   @scala.inline
-  def TableItemProps: BaseProps.type = typings.spectacle.mod.BaseProps
+  def TableItemProps: BaseProps.type = BaseProps
   type TableItemProps = BaseProps
   @scala.inline
-  def TableRowProps: BaseProps.type = typings.spectacle.mod.BaseProps
+  def TableRowProps: BaseProps.type = BaseProps
   type TableRowProps = BaseProps
   @scala.inline
   def TextProps: typings.spectacle.mod.TextProps.type = typings.spectacle.mod.TextProps

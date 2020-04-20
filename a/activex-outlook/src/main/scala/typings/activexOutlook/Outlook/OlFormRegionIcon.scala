@@ -34,30 +34,28 @@ trait OlFormRegionIcon extends js.Object
 
 object OlFormRegionIcon {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olFormRegionIconDefault: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olFormRegionIconDefault: `1` = this.cast(1)
+  def olFormRegionIconEncrypted: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def olFormRegionIconEncrypted: `9` = this.cast(9)
+  def olFormRegionIconForwarded: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def olFormRegionIconForwarded: `5` = this.cast(5)
+  def olFormRegionIconPage: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def olFormRegionIconPage: `11` = this.cast(11)
+  def olFormRegionIconRead: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def olFormRegionIconRead: `3` = this.cast(3)
+  def olFormRegionIconRecurring: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def olFormRegionIconRecurring: `12` = this.cast(12)
+  def olFormRegionIconReplied: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def olFormRegionIconReplied: `4` = this.cast(4)
+  def olFormRegionIconSigned: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def olFormRegionIconSigned: `8` = this.cast(8)
+  def olFormRegionIconSubmitted: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def olFormRegionIconSubmitted: `7` = this.cast(7)
+  def olFormRegionIconUnread: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olFormRegionIconUnread: `2` = this.cast(2)
+  def olFormRegionIconUnsent: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def olFormRegionIconUnsent: `6` = this.cast(6)
-  @scala.inline
-  def olFormRegionIconWindow: `10` = this.cast(10)
+  def olFormRegionIconWindow: `10` = 10.asInstanceOf[`10`]
 }
 

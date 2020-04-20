@@ -19,7 +19,6 @@ object IQDownloadInfo {
   @scala.inline
   def apply(qFileSize: Double, qUrl: String): IQDownloadInfo = {
     val __obj = js.Dynamic.literal(qFileSize = qFileSize.asInstanceOf[js.Any], qUrl = qUrl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IQDownloadInfo]
   }
 }

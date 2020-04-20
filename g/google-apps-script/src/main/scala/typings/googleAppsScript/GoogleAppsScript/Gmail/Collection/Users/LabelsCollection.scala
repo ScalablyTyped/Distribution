@@ -32,7 +32,6 @@ object LabelsCollection {
     update: (Label, String, String) => Label
   ): LabelsCollection = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction2(create), get = js.Any.fromFunction2(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction3(patch), remove = js.Any.fromFunction2(remove), update = js.Any.fromFunction3(update))
-  
     __obj.asInstanceOf[LabelsCollection]
   }
 }

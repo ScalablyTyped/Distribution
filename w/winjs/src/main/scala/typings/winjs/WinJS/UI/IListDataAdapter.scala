@@ -174,7 +174,6 @@ object IListDataAdapter {
     setNotificationHandler: IListDataNotificationHandler[T] => Unit
   ): IListDataAdapter[T] = {
     val __obj = js.Dynamic.literal(change = js.Any.fromFunction3(change), compareByIdentity = compareByIdentity.asInstanceOf[js.Any], getCount = js.Any.fromFunction0(getCount), insertAfter = js.Any.fromFunction4(insertAfter), insertAtEnd = js.Any.fromFunction2(insertAtEnd), insertAtStart = js.Any.fromFunction2(insertAtStart), insertBefore = js.Any.fromFunction4(insertBefore), itemSignature = js.Any.fromFunction1(itemSignature), itemsFromDescription = js.Any.fromFunction3(itemsFromDescription), itemsFromEnd = js.Any.fromFunction1(itemsFromEnd), itemsFromIndex = js.Any.fromFunction3(itemsFromIndex), itemsFromKey = js.Any.fromFunction3(itemsFromKey), itemsFromStart = js.Any.fromFunction1(itemsFromStart), moveAfter = js.Any.fromFunction4(moveAfter), moveBefore = js.Any.fromFunction4(moveBefore), moveToEnd = js.Any.fromFunction2(moveToEnd), moveToStart = js.Any.fromFunction2(moveToStart), remove = js.Any.fromFunction3(remove), setNotificationHandler = js.Any.fromFunction1(setNotificationHandler))
-  
     __obj.asInstanceOf[IListDataAdapter[T]]
   }
 }

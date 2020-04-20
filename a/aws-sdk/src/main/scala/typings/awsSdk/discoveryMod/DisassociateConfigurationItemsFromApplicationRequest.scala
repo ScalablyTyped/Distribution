@@ -20,7 +20,6 @@ object DisassociateConfigurationItemsFromApplicationRequest {
   @scala.inline
   def apply(applicationConfigurationId: ApplicationId, configurationIds: ConfigurationIdList): DisassociateConfigurationItemsFromApplicationRequest = {
     val __obj = js.Dynamic.literal(applicationConfigurationId = applicationConfigurationId.asInstanceOf[js.Any], configurationIds = configurationIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisassociateConfigurationItemsFromApplicationRequest]
   }
 }

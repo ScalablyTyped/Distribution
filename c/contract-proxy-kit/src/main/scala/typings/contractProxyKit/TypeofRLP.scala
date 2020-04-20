@@ -14,7 +14,6 @@ object TypeofRLP {
   @scala.inline
   def apply(decode: Arrayish => js.Any, encode: js.Any => String): TypeofRLP = {
     val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode))
-  
     __obj.asInstanceOf[TypeofRLP]
   }
 }

@@ -22,7 +22,6 @@ object AnonCVE {
     USD: js.Array[String]
   ): AnonCVE = {
     val __obj = js.Dynamic.literal(AUD = AUD.asInstanceOf[js.Any], CVE = CVE.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any], THB = THB.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCVE]
   }
 }

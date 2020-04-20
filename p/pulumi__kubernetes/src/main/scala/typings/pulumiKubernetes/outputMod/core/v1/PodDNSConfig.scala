@@ -31,7 +31,6 @@ object PodDNSConfig {
   @scala.inline
   def apply(nameservers: js.Array[String], options: js.Array[PodDNSConfigOption], searches: js.Array[String]): PodDNSConfig = {
     val __obj = js.Dynamic.literal(nameservers = nameservers.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], searches = searches.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PodDNSConfig]
   }
 }

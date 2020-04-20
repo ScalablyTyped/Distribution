@@ -12,7 +12,6 @@ object OClusterConfig {
   @scala.inline
   def apply(selectionStrategy: OCluster => OServerNode): OClusterConfig = {
     val __obj = js.Dynamic.literal(selectionStrategy = js.Any.fromFunction1(selectionStrategy))
-  
     __obj.asInstanceOf[OClusterConfig]
   }
 }

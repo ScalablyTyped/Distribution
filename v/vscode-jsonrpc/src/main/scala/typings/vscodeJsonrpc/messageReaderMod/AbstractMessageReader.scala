@@ -17,8 +17,8 @@ abstract class AbstractMessageReader () extends js.Object {
   /* protected */ def fireClose(): Unit = js.native
   /* protected */ def fireError(error: js.Any): Unit = js.native
   /* protected */ def firePartialMessage(info: PartialMessageInfo): Unit = js.native
-  def onClose(): Event[Unit] = js.native
-  def onError(): Event[Error] = js.native
-  def onPartialMessage(): Event[PartialMessageInfo] = js.native
+  def onClose: Event[Unit] = js.native
+  def onError: Event[Error] = js.native
+  def onPartialMessage: Event[PartialMessageInfo] = js.native
 }
 

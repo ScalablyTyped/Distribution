@@ -13,7 +13,6 @@ object DebugStatic {
   @scala.inline
   def apply(events: AnonLogAll): DebugStatic = {
     val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DebugStatic]
   }
 }

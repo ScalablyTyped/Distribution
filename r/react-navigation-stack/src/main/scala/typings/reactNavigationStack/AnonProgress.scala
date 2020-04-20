@@ -16,7 +16,6 @@ object AnonProgress {
   @scala.inline
   def apply(progress: AnimatedInterpolation): AnonProgress = {
     val __obj = js.Dynamic.literal(progress = progress.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonProgress]
   }
 }

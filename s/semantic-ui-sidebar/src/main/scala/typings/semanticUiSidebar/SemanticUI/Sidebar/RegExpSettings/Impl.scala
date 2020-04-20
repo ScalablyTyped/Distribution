@@ -20,7 +20,6 @@ object Impl {
   @scala.inline
   def apply(ios: RegExp, mobile: RegExp): Impl = {
     val __obj = js.Dynamic.literal(ios = ios.asInstanceOf[js.Any], mobile = mobile.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Impl]
   }
 }

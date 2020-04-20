@@ -26,7 +26,6 @@ object RawHttpResponse {
     throwForStatus: () => Unit
   ): RawHttpResponse = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], getHeader = js.Any.fromFunction1(getHeader), headers = headers.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], throwForStatus = js.Any.fromFunction0(throwForStatus))
-  
     __obj.asInstanceOf[RawHttpResponse]
   }
 }

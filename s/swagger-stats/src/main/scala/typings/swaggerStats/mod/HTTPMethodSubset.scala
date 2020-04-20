@@ -14,14 +14,12 @@ trait HTTPMethodSubset extends js.Object
 
 object HTTPMethodSubset {
   @scala.inline
-  def DELETE: typings.swaggerStats.swaggerStatsStrings.DELETE = this.cast("DELETE")
+  def DELETE: typings.swaggerStats.swaggerStatsStrings.DELETE = "DELETE".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.DELETE]
   @scala.inline
-  def GET: typings.swaggerStats.swaggerStatsStrings.GET = this.cast("GET")
+  def GET: typings.swaggerStats.swaggerStatsStrings.GET = "GET".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.GET]
   @scala.inline
-  def POST: typings.swaggerStats.swaggerStatsStrings.POST = this.cast("POST")
+  def POST: typings.swaggerStats.swaggerStatsStrings.POST = "POST".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.POST]
   @scala.inline
-  def PUT: typings.swaggerStats.swaggerStatsStrings.PUT = this.cast("PUT")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def PUT: typings.swaggerStats.swaggerStatsStrings.PUT = "PUT".asInstanceOf[typings.swaggerStats.swaggerStatsStrings.PUT]
 }
 

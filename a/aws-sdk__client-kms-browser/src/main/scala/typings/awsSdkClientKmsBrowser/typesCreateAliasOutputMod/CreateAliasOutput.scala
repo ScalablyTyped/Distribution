@@ -18,7 +18,6 @@ object CreateAliasOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): CreateAliasOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateAliasOutput]
   }
 }

@@ -15,7 +15,6 @@ object AnonLevel {
   @scala.inline
   def apply(level: TransactionLockLevel, of: Model[_, _, _]): AnonLevel = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], of = of.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLevel]
   }
 }

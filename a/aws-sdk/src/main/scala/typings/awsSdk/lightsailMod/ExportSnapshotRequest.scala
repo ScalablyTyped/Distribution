@@ -16,7 +16,6 @@ object ExportSnapshotRequest {
   @scala.inline
   def apply(sourceSnapshotName: ResourceName): ExportSnapshotRequest = {
     val __obj = js.Dynamic.literal(sourceSnapshotName = sourceSnapshotName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExportSnapshotRequest]
   }
 }

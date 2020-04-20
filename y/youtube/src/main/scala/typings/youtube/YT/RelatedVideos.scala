@@ -17,13 +17,11 @@ object RelatedVideos {
   		 * Hide related videos after playback is complete.
   		 */
   @scala.inline
-  def Hide: `0` = this.cast(0)
+  def Hide: `0` = 0.asInstanceOf[`0`]
   /**
   		 * Show related videos after playback is complete.
   		 */
   @scala.inline
-  def Show: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Show: `1` = 1.asInstanceOf[`1`]
 }
 

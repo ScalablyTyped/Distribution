@@ -16,7 +16,6 @@ object DeleteClassifierRequest {
   @scala.inline
   def apply(Name: NameString): DeleteClassifierRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteClassifierRequest]
   }
 }

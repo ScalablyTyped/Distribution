@@ -26,7 +26,6 @@ object typeset {
   @scala.inline
   def apply(convertHTML: js.Any => js.Any, convertLaTeX: js.Any => js.Any): typeset = {
     val __obj = js.Dynamic.literal(convertHTML = js.Any.fromFunction1(convertHTML), convertLaTeX = js.Any.fromFunction1(convertLaTeX))
-  
     __obj.asInstanceOf[typeset]
   }
 }

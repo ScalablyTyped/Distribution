@@ -21,7 +21,6 @@ object RepresentativesResource {
     representativeInfoByDivision: AnonKey => Request_[RepresentativeInfoData]
   ): RepresentativesResource = {
     val __obj = js.Dynamic.literal(representativeInfoByAddress = js.Any.fromFunction1(representativeInfoByAddress), representativeInfoByDivision = js.Any.fromFunction1(representativeInfoByDivision))
-  
     __obj.asInstanceOf[RepresentativesResource]
   }
 }

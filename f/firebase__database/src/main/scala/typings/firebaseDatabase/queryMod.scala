@@ -213,7 +213,7 @@ object queryMod extends js.Object {
       * @return {!Object}
       */
     def queryObject(): js.Object = js.native
-    def ref(): Reference = js.native
+    def ref: Reference = js.native
     /**
       * @param {number|string|boolean|null} value
       * @param {?string=} name
@@ -254,7 +254,7 @@ object queryMod extends js.Object {
       * @private
       */
     var validateQueryEndpoints_ : js.Any = js.native
-    def __referenceConstructor(): Instantiable2[/* repo */ Repo, /* path */ Path, Query] = js.native
+    def __referenceConstructor: Instantiable2[/* repo */ Repo, /* path */ Path, Query] = js.native
     def __referenceConstructor(`val`: Instantiable2[/* repo */ Repo, /* path */ Path, Query]): js.Any = js.native
   }
   

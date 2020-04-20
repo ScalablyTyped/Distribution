@@ -16,7 +16,6 @@ object BatchDetectDominantLanguageRequest {
   @scala.inline
   def apply(TextList: StringList): BatchDetectDominantLanguageRequest = {
     val __obj = js.Dynamic.literal(TextList = TextList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchDetectDominantLanguageRequest]
   }
 }

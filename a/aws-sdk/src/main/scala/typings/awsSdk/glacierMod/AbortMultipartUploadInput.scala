@@ -24,7 +24,6 @@ object AbortMultipartUploadInput {
   @scala.inline
   def apply(accountId: String, uploadId: String, vaultName: String): AbortMultipartUploadInput = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], uploadId = uploadId.asInstanceOf[js.Any], vaultName = vaultName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AbortMultipartUploadInput]
   }
 }

@@ -14,7 +14,6 @@ object RTCSctpTransport {
   @scala.inline
   def apply(maxMessageSize: Double, transport: RTCDtlsTransport): RTCSctpTransport = {
     val __obj = js.Dynamic.literal(maxMessageSize = maxMessageSize.asInstanceOf[js.Any], transport = transport.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RTCSctpTransport]
   }
 }

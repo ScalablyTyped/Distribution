@@ -25,7 +25,6 @@ object MediaRecorderEventMap {
     stop: Event_
   ): MediaRecorderEventMap = {
     val __obj = js.Dynamic.literal(dataavailable = dataavailable.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], pause = pause.asInstanceOf[js.Any], resume = resume.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MediaRecorderEventMap]
   }
 }

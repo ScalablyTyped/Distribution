@@ -13,7 +13,6 @@ object Either {
   @scala.inline
   def apply[A, B](constructor: Anon0): Either[A, B] = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Either[A, B]]
   }
 }

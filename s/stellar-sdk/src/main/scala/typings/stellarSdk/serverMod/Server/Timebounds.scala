@@ -13,7 +13,6 @@ object Timebounds {
   @scala.inline
   def apply(maxTime: Double, minTime: Double): Timebounds = {
     val __obj = js.Dynamic.literal(maxTime = maxTime.asInstanceOf[js.Any], minTime = minTime.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Timebounds]
   }
 }

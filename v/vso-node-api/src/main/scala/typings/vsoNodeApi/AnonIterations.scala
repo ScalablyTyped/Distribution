@@ -14,7 +14,6 @@ object AnonIterations {
   @scala.inline
   def apply(iterations: Double, none: Double, workItems: Double): AnonIterations = {
     val __obj = js.Dynamic.literal(iterations = iterations.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], workItems = workItems.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIterations]
   }
 }

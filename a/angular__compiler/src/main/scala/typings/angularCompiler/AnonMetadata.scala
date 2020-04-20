@@ -21,7 +21,6 @@ object AnonMetadata {
     summary: CompileTypeSummary
   ): AnonMetadata = {
     val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMetadata]
   }
 }

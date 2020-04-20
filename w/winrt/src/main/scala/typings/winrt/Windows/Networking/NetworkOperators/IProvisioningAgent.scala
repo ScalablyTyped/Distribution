@@ -17,7 +17,6 @@ object IProvisioningAgent {
     provisionFromXmlDocumentAsync: String => IAsyncOperation[ProvisionFromXmlDocumentResults]
   ): IProvisioningAgent = {
     val __obj = js.Dynamic.literal(getProvisionedProfile = js.Any.fromFunction2(getProvisionedProfile), provisionFromXmlDocumentAsync = js.Any.fromFunction1(provisionFromXmlDocumentAsync))
-  
     __obj.asInstanceOf[IProvisioningAgent]
   }
 }

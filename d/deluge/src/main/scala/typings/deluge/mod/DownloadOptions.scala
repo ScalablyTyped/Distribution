@@ -30,7 +30,6 @@ object DownloadOptions {
     prioritize_first_last_pieces: Boolean
   ): DownloadOptions = {
     val __obj = js.Dynamic.literal(add_paused = add_paused.asInstanceOf[js.Any], compact_allocation = compact_allocation.asInstanceOf[js.Any], download_location = download_location.asInstanceOf[js.Any], file_priorities = file_priorities.asInstanceOf[js.Any], max_connections = max_connections.asInstanceOf[js.Any], max_download_speed = max_download_speed.asInstanceOf[js.Any], max_upload_slots = max_upload_slots.asInstanceOf[js.Any], max_upload_speed = max_upload_speed.asInstanceOf[js.Any], prioritize_first_last_pieces = prioritize_first_last_pieces.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DownloadOptions]
   }
 }

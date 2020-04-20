@@ -30,7 +30,6 @@ object ReleaseDefinitionEnvironmentTemplate {
     name: String
   ): ReleaseDefinitionEnvironmentTemplate = {
     val __obj = js.Dynamic.literal(canDelete = canDelete.asInstanceOf[js.Any], category = category.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], environment = environment.asInstanceOf[js.Any], iconTaskId = iconTaskId.asInstanceOf[js.Any], iconUri = iconUri.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isDeleted = isDeleted.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReleaseDefinitionEnvironmentTemplate]
   }
 }

@@ -14,7 +14,6 @@ object AnonCircles {
   @scala.inline
   def apply(circles: Double, dur: Double, fn: (Double, Double, Double) => AnonR): AnonCircles = {
     val __obj = js.Dynamic.literal(circles = circles.asInstanceOf[js.Any], dur = dur.asInstanceOf[js.Any], fn = js.Any.fromFunction3(fn))
-  
     __obj.asInstanceOf[AnonCircles]
   }
 }

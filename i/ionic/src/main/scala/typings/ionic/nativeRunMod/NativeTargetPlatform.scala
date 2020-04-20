@@ -13,7 +13,6 @@ object NativeTargetPlatform {
   @scala.inline
   def apply(devices: js.Array[NativeDeviceTarget], virtualDevices: js.Array[NativeVirtualDeviceTarget]): NativeTargetPlatform = {
     val __obj = js.Dynamic.literal(devices = devices.asInstanceOf[js.Any], virtualDevices = virtualDevices.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NativeTargetPlatform]
   }
 }

@@ -22,7 +22,6 @@ object ILocalContentSuggestionSettings {
     propertiesToMatch: IVector[String]
   ): ILocalContentSuggestionSettings = {
     val __obj = js.Dynamic.literal(aqsFilter = aqsFilter.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], locations = locations.asInstanceOf[js.Any], propertiesToMatch = propertiesToMatch.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ILocalContentSuggestionSettings]
   }
 }

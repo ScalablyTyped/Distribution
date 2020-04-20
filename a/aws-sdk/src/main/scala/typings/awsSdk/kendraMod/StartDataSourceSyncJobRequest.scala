@@ -20,7 +20,6 @@ object StartDataSourceSyncJobRequest {
   @scala.inline
   def apply(Id: DataSourceId, IndexId: IndexId): StartDataSourceSyncJobRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], IndexId = IndexId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StartDataSourceSyncJobRequest]
   }
 }

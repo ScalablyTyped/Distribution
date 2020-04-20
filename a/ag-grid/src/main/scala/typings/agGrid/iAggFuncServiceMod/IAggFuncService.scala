@@ -23,7 +23,6 @@ object IAggFuncService {
     getDefaultAggFunc: Column => String
   ): IAggFuncService = {
     val __obj = js.Dynamic.literal(addAggFunc = js.Any.fromFunction2(addAggFunc), addAggFuncs = js.Any.fromFunction1(addAggFuncs), clear = js.Any.fromFunction0(clear), getDefaultAggFunc = js.Any.fromFunction1(getDefaultAggFunc))
-  
     __obj.asInstanceOf[IAggFuncService]
   }
 }

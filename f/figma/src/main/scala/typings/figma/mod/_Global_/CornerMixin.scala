@@ -13,7 +13,6 @@ object CornerMixin {
   @scala.inline
   def apply(cornerRadius: Double | js.Symbol, cornerSmoothing: Double): CornerMixin = {
     val __obj = js.Dynamic.literal(cornerRadius = cornerRadius.asInstanceOf[js.Any], cornerSmoothing = cornerSmoothing.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CornerMixin]
   }
 }

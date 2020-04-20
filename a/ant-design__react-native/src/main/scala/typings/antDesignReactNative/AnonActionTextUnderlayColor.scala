@@ -21,7 +21,6 @@ object AnonActionTextUnderlayColor {
     triggerType: String
   ): AnonActionTextUnderlayColor = {
     val __obj = js.Dynamic.literal(WrapComponent = WrapComponent.asInstanceOf[js.Any], actionTextActiveOpacity = actionTextActiveOpacity.asInstanceOf[js.Any], actionTextUnderlayColor = actionTextUnderlayColor.asInstanceOf[js.Any], triggerType = triggerType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonActionTextUnderlayColor]
   }
 }

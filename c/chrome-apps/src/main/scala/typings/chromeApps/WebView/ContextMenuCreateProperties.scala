@@ -3,10 +3,14 @@ package typings.chromeApps.WebView
 import typings.chromeApps.AnonCHECKBOX
 import typings.chromeApps.chrome.ToStringLiteral
 import typings.chromeApps.chrome.integer
-import typings.chromeApps.chromeAppsStrings.checkbox
-import typings.chromeApps.chromeAppsStrings.normal
-import typings.chromeApps.chromeAppsStrings.radio
-import typings.chromeApps.chromeAppsStrings.separator
+import typings.chromeApps.chromeAppsStrings.CHECKBOX
+import typings.chromeApps.chromeAppsStrings.NORMAL
+import typings.chromeApps.chromeAppsStrings.RADIO
+import typings.chromeApps.chromeAppsStrings.SEPARATOR
+import typings.chromeApps.chromeAppsStrings.checkbox_
+import typings.chromeApps.chromeAppsStrings.normal_
+import typings.chromeApps.chromeAppsStrings.radio_
+import typings.chromeApps.chromeAppsStrings.separator_
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -59,7 +63,11 @@ trait ContextMenuCreateProperties extends js.Object {
     * The type of menu item. Defaults to 'normal' if not specified.
     */
   var `type`: js.UndefOr[
-    ToStringLiteral[AnonCHECKBOX, String, Exclude[String, normal | checkbox | radio | separator]]
+    ToStringLiteral[
+      AnonCHECKBOX, 
+      NORMAL | CHECKBOX | RADIO | SEPARATOR, 
+      Exclude[NORMAL | CHECKBOX | RADIO | SEPARATOR, normal_ | checkbox_ | radio_ | separator_]
+    ]
   ] = js.undefined
 }
 
@@ -75,7 +83,11 @@ object ContextMenuCreateProperties {
     parentId: integer | String = null,
     targetUrlPatterns: js.Array[_] = null,
     title: String = null,
-    `type`: ToStringLiteral[AnonCHECKBOX, String, Exclude[String, normal | checkbox | radio | separator]] = null
+    `type`: ToStringLiteral[
+      AnonCHECKBOX, 
+      NORMAL | CHECKBOX | RADIO | SEPARATOR, 
+      Exclude[NORMAL | CHECKBOX | RADIO | SEPARATOR, normal_ | checkbox_ | radio_ | separator_]
+    ] = null
   ): ContextMenuCreateProperties = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])

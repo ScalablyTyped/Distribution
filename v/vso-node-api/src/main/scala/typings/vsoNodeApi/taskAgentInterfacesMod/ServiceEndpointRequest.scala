@@ -18,7 +18,6 @@ object ServiceEndpointRequest {
     serviceEndpointDetails: ServiceEndpointDetails
   ): ServiceEndpointRequest = {
     val __obj = js.Dynamic.literal(dataSourceDetails = dataSourceDetails.asInstanceOf[js.Any], resultTransformationDetails = resultTransformationDetails.asInstanceOf[js.Any], serviceEndpointDetails = serviceEndpointDetails.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ServiceEndpointRequest]
   }
 }

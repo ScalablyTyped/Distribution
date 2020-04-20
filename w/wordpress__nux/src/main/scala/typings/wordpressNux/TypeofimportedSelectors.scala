@@ -19,7 +19,6 @@ object TypeofimportedSelectors {
     isTipVisible: String => Boolean
   ): TypeofimportedSelectors = {
     val __obj = js.Dynamic.literal(areTipsEnabled = js.Any.fromFunction0(areTipsEnabled), getAssociatedGuide = js.Any.fromFunction1(getAssociatedGuide), isTipVisible = js.Any.fromFunction1(isTipVisible))
-  
     __obj.asInstanceOf[TypeofimportedSelectors]
   }
 }

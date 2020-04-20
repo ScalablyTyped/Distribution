@@ -25,7 +25,6 @@ object Sensor {
   @scala.inline
   def apply(isSensor: () => Boolean, setSensor: Boolean => GameObject): Sensor = {
     val __obj = js.Dynamic.literal(isSensor = js.Any.fromFunction0(isSensor), setSensor = js.Any.fromFunction1(setSensor))
-  
     __obj.asInstanceOf[Sensor]
   }
 }

@@ -16,12 +16,10 @@ trait XlWindowState extends js.Object
 
 object XlWindowState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlMaximized: `-4137` = -4137.asInstanceOf[`-4137`]
   @scala.inline
-  def xlMaximized: `-4137` = this.cast(-4137)
+  def xlMinimized: `-4140` = -4140.asInstanceOf[`-4140`]
   @scala.inline
-  def xlMinimized: `-4140` = this.cast(-4140)
-  @scala.inline
-  def xlNormal: `-4143` = this.cast(-4143)
+  def xlNormal: `-4143` = -4143.asInstanceOf[`-4143`]
 }
 

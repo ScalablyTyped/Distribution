@@ -1,6 +1,10 @@
 package typings.emberData.mod
 
 import typings.emberData.emberDataBooleans.`true`
+import typings.emberData.emberDataStrings.boolean
+import typings.emberData.emberDataStrings.date
+import typings.emberData.emberDataStrings.number
+import typings.emberData.emberDataStrings.string
 import typings.emberData.mod.DS.Model
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +15,7 @@ trait AttributeMeta[Model /* <: Model */] extends js.Object {
   var name: AttributesFor[Model]
   var options: js.Object
   var parentType: Model
-  var `type`: String
+  var `type`: string | boolean | number | date
 }
 
 object AttributeMeta {
@@ -21,7 +25,7 @@ object AttributeMeta {
     name: AttributesFor[Model],
     options: js.Object,
     parentType: Model,
-    `type`: String
+    `type`: string | boolean | number | date
   ): AttributeMeta[Model] = {
     val __obj = js.Dynamic.literal(isAttribute = isAttribute.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], parentType = parentType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

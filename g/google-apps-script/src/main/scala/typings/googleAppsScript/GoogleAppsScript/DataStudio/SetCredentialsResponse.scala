@@ -29,7 +29,6 @@ object SetCredentialsResponse {
   @scala.inline
   def apply(build: () => js.Any, printJson: () => String, setIsValid: Boolean => SetCredentialsResponse): SetCredentialsResponse = {
     val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), printJson = js.Any.fromFunction0(printJson), setIsValid = js.Any.fromFunction1(setIsValid))
-  
     __obj.asInstanceOf[SetCredentialsResponse]
   }
 }

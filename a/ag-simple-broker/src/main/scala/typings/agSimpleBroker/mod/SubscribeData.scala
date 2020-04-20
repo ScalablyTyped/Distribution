@@ -12,7 +12,6 @@ object SubscribeData {
   @scala.inline
   def apply(channel: String): SubscribeData = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SubscribeData]
   }
 }

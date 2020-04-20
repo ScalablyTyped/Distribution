@@ -13,7 +13,6 @@ object UpdateGatewaySoftwareNowInput {
   @scala.inline
   def apply(GatewayARN: GatewayARN): UpdateGatewaySoftwareNowInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateGatewaySoftwareNowInput]
   }
 }

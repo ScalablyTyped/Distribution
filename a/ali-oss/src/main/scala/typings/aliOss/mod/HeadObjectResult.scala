@@ -15,7 +15,6 @@ object HeadObjectResult {
   @scala.inline
   def apply(meta: UserMeta, res: NormalSuccessResponse, status: Double): HeadObjectResult = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HeadObjectResult]
   }
 }

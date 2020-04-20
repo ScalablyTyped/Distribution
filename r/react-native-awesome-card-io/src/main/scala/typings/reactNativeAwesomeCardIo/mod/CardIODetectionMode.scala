@@ -13,12 +13,10 @@ trait CardIODetectionMode extends js.Object
 
 object CardIODetectionMode {
   @scala.inline
-  def AUTOMATIC: typings.reactNativeAwesomeCardIo.reactNativeAwesomeCardIoStrings.AUTOMATIC = this.cast("AUTOMATIC")
+  def AUTOMATIC: typings.reactNativeAwesomeCardIo.reactNativeAwesomeCardIoStrings.AUTOMATIC = "AUTOMATIC".asInstanceOf[typings.reactNativeAwesomeCardIo.reactNativeAwesomeCardIoStrings.AUTOMATIC]
   @scala.inline
-  def IMAGE: typings.reactNativeAwesomeCardIo.reactNativeAwesomeCardIoStrings.IMAGE = this.cast("IMAGE")
+  def IMAGE: typings.reactNativeAwesomeCardIo.reactNativeAwesomeCardIoStrings.IMAGE = "IMAGE".asInstanceOf[typings.reactNativeAwesomeCardIo.reactNativeAwesomeCardIoStrings.IMAGE]
   @scala.inline
-  def IMAGE_AND_NUMBER: typings.reactNativeAwesomeCardIo.reactNativeAwesomeCardIoStrings.IMAGE_AND_NUMBER = this.cast("IMAGE_AND_NUMBER")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def IMAGE_AND_NUMBER: typings.reactNativeAwesomeCardIo.reactNativeAwesomeCardIoStrings.IMAGE_AND_NUMBER = "IMAGE_AND_NUMBER".asInstanceOf[typings.reactNativeAwesomeCardIo.reactNativeAwesomeCardIoStrings.IMAGE_AND_NUMBER]
 }
 

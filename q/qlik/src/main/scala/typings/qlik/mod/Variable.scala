@@ -13,7 +13,6 @@ object Variable {
   @scala.inline
   def apply(qContent: AnonQIsNum): Variable = {
     val __obj = js.Dynamic.literal(qContent = qContent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Variable]
   }
 }

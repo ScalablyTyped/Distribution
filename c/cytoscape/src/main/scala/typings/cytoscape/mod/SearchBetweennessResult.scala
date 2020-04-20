@@ -23,7 +23,6 @@ object SearchBetweennessResult {
     betweennessNormalized: NodeSingular => Double
   ): SearchBetweennessResult = {
     val __obj = js.Dynamic.literal(betweenness = js.Any.fromFunction1(betweenness), betweennessNormalised = js.Any.fromFunction1(betweennessNormalised), betweennessNormalized = js.Any.fromFunction1(betweennessNormalized))
-  
     __obj.asInstanceOf[SearchBetweennessResult]
   }
 }

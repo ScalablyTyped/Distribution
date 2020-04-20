@@ -151,7 +151,7 @@ object textureMod extends js.Object {
     /**
       * Gets a boolean indicating if the texture needs to be inverted on the y axis during loading
       */
-    def invertY(): Boolean = js.native
+    def invertY: Boolean = js.native
     /**
       * Is the texture preventing material to render while loading.
       * If false, a default texture will be used instead of the loading one during the preparation step.
@@ -160,7 +160,7 @@ object textureMod extends js.Object {
     /**
       * Get the current sampling mode associated with the texture.
       */
-    def samplingMode(): Double = js.native
+    def samplingMode: Double = js.native
     /**
       * Update the url (and optional buffer) of this texture if url was null during construction.
       * @param url the url of the texture

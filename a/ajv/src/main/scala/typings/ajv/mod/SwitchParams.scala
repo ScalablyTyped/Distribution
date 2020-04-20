@@ -12,7 +12,6 @@ object SwitchParams {
   @scala.inline
   def apply(caseIndex: Double): SwitchParams = {
     val __obj = js.Dynamic.literal(caseIndex = caseIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SwitchParams]
   }
 }

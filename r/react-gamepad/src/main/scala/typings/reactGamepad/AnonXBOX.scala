@@ -13,7 +13,6 @@ object AnonXBOX {
   @scala.inline
   def apply(XBOX: Layout): AnonXBOX = {
     val __obj = js.Dynamic.literal(XBOX = XBOX.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonXBOX]
   }
 }

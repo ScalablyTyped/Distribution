@@ -42,7 +42,6 @@ object AnonCloseInsertModal {
     showOnlyToogle: () => Unit
   ): AnonCloseInsertModal = {
     val __obj = js.Dynamic.literal(closeInsertModal = js.Any.fromFunction0(closeInsertModal), dropRow = js.Any.fromFunction0(dropRow), exportCSV = js.Any.fromFunction0(exportCSV), openInsertModal = js.Any.fromFunction0(openInsertModal), search = js.Any.fromFunction0(search), showOnlyToogle = js.Any.fromFunction0(showOnlyToogle))
-  
     __obj.asInstanceOf[AnonCloseInsertModal]
   }
 }

@@ -16,7 +16,6 @@ object DescribeSchemaRequest {
   @scala.inline
   def apply(schemaArn: Arn): DescribeSchemaRequest = {
     val __obj = js.Dynamic.literal(schemaArn = schemaArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeSchemaRequest]
   }
 }

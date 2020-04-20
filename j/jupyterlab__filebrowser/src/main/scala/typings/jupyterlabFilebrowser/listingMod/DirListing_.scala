@@ -153,7 +153,7 @@ class DirListing_ protected () extends Widget {
     *
     * Modifying this node directly can lead to undefined behavior.
     */
-  def contentNode(): HTMLElement = js.native
+  def contentNode: HTMLElement = js.native
   /**
     * Copy the selected items.
     */
@@ -197,7 +197,7 @@ class DirListing_ protected () extends Widget {
     *
     * Modifying this node directly can lead to undefined behavior.
     */
-  def headerNode(): HTMLElement = js.native
+  def headerNode: HTMLElement = js.native
   /**
     * Get whether an item is selected by name.
     *
@@ -209,7 +209,7 @@ class DirListing_ protected () extends Widget {
   /**
     * Get the model used by the listing.
     */
-  def model(): FileBrowserModel = js.native
+  def model: FileBrowserModel = js.native
   /**
     * Find a model given a click.
     *
@@ -221,7 +221,7 @@ class DirListing_ protected () extends Widget {
   /**
     * A signal fired when an item is opened.
     */
-  def onItemOpened(): ISignal[DirListing, IModel] = js.native
+  def onItemOpened: ISignal[DirListing, IModel] = js.native
   def onResize(msg: ResizeMessage): Unit = js.native
   /**
     * Paste the items from the clipboard.
@@ -238,7 +238,7 @@ class DirListing_ protected () extends Widget {
   /**
     * The renderer instance used by the directory listing.
     */
-  def renderer(): IRenderer = js.native
+  def renderer: IRenderer = js.native
   /**
     * Select the first item that starts with prefix being typed.
     */
@@ -284,7 +284,7 @@ class DirListing_ protected () extends Widget {
   /**
     * The current sort state.
     */
-  def sortState(): ISortState = js.native
+  def sortState: ISortState = js.native
   /**
     * Create an iterator over the listing's sorted items.
     *

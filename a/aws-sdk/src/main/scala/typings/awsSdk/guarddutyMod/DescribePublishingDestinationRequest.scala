@@ -20,7 +20,6 @@ object DescribePublishingDestinationRequest {
   @scala.inline
   def apply(DestinationId: String, DetectorId: DetectorId): DescribePublishingDestinationRequest = {
     val __obj = js.Dynamic.literal(DestinationId = DestinationId.asInstanceOf[js.Any], DetectorId = DetectorId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribePublishingDestinationRequest]
   }
 }

@@ -12,7 +12,6 @@ object AnonConfigure {
   @scala.inline
   def apply(configure: AnonHitsPerPage): AnonConfigure = {
     val __obj = js.Dynamic.literal(configure = configure.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonConfigure]
   }
 }

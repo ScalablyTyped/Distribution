@@ -24,7 +24,6 @@ object StateReturnModel {
     time: Double
   ): StateReturnModel = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StateReturnModel]
   }
 }

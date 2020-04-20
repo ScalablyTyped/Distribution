@@ -43,7 +43,6 @@ object IStorageQueryResultBase {
     getItemCountAsync: () => IPromiseWithIAsyncOperation[Double]
   ): IStorageQueryResultBase = {
     val __obj = js.Dynamic.literal(applyNewQueryOptions = js.Any.fromFunction1(applyNewQueryOptions), findStartIndexAsync = js.Any.fromFunction1(findStartIndexAsync), folder = folder.asInstanceOf[js.Any], getCurrentQueryOptions = js.Any.fromFunction0(getCurrentQueryOptions), getItemCountAsync = js.Any.fromFunction0(getItemCountAsync))
-  
     __obj.asInstanceOf[IStorageQueryResultBase]
   }
 }

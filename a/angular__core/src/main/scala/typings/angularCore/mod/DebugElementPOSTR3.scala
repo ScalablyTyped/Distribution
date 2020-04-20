@@ -26,12 +26,12 @@ import scala.scalajs.js.annotation._
   val properties_FDebugElementPOSTR3: StringDictionary[js.Any]
   @JSName("styles")
   val styles_FDebugElementPOSTR3: StringDictionary[String | Null]
-  def attributes(): StringDictionary[String | Null]
-  def childNodes(): js.Array[DebugNode]
-  def children(): js.Array[DebugElement]
-  def classes(): StringDictionary[Boolean]
-  def name(): String
-  def nativeElement(): Element | Null
+  def attributes: StringDictionary[String | Null]
+  def childNodes: js.Array[DebugNode]
+  def children: js.Array[DebugElement]
+  def classes: StringDictionary[Boolean]
+  def name: String
+  def nativeElement: Element | Null
   /**
     *  Gets a map of property names to property values for an element.
     *
@@ -44,11 +44,11 @@ import scala.scalajs.js.annotation._
     *  - input property bindings (e.g. `[myCustomInput]="value"`)
     *  - attribute bindings (e.g. `[attr.role]="menu"`)
     */
-  def properties(): StringDictionary[js.Any]
+  def properties: StringDictionary[js.Any]
   def query(predicate: Predicate[DebugElement]): DebugElement
   def queryAll(predicate: Predicate[DebugElement]): js.Array[DebugElement]
   def queryAllNodes(predicate: Predicate[DebugNode]): js.Array[DebugNode]
-  def styles(): StringDictionary[String | Null]
+  def styles: StringDictionary[String | Null]
   def triggerEventHandler(eventName: String, eventObj: js.Any): Unit
 }
 
@@ -77,7 +77,6 @@ object DebugElementPOSTR3 {
     triggerEventHandler: (String, js.Any) => Unit
   ): DebugElementPOSTR3 = {
     val __obj = js.Dynamic.literal(attributes = js.Any.fromFunction0(attributes), childNodes = js.Any.fromFunction0(childNodes), children = js.Any.fromFunction0(children), classes = js.Any.fromFunction0(classes), componentInstance = js.Any.fromFunction0(componentInstance), context = js.Any.fromFunction0(context), injector = js.Any.fromFunction0(injector), listeners = js.Any.fromFunction0(listeners), name = js.Any.fromFunction0(name), nativeElement = js.Any.fromFunction0(nativeElement), nativeNode = nativeNode.asInstanceOf[js.Any], parent = js.Any.fromFunction0(parent), properties = js.Any.fromFunction0(properties), providerTokens = js.Any.fromFunction0(providerTokens), query = js.Any.fromFunction1(query), queryAll = js.Any.fromFunction1(queryAll), queryAllNodes = js.Any.fromFunction1(queryAllNodes), references = js.Any.fromFunction0(references), styles = js.Any.fromFunction0(styles), triggerEventHandler = js.Any.fromFunction2(triggerEventHandler))
-  
     __obj.asInstanceOf[DebugElementPOSTR3]
   }
 }

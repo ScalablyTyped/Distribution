@@ -21,7 +21,6 @@ object InviteAccepterArgs {
   @scala.inline
   def apply(detectorId: Input[String], masterAccountId: Input[String]): InviteAccepterArgs = {
     val __obj = js.Dynamic.literal(detectorId = detectorId.asInstanceOf[js.Any], masterAccountId = masterAccountId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InviteAccepterArgs]
   }
 }

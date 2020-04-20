@@ -50,86 +50,84 @@ trait AnimationEasing extends js.Object
 
 object AnimationEasing {
   @scala.inline
-  def back: typings.victory.victoryStrings.back = this.cast("back")
+  def back: typings.victory.victoryStrings.back = "back".asInstanceOf[typings.victory.victoryStrings.back]
   @scala.inline
-  def backIn: typings.victory.victoryStrings.backIn = this.cast("backIn")
+  def backIn: typings.victory.victoryStrings.backIn = "backIn".asInstanceOf[typings.victory.victoryStrings.backIn]
   @scala.inline
-  def backInOut: typings.victory.victoryStrings.backInOut = this.cast("backInOut")
+  def backInOut: typings.victory.victoryStrings.backInOut = "backInOut".asInstanceOf[typings.victory.victoryStrings.backInOut]
   @scala.inline
-  def backOut: typings.victory.victoryStrings.backOut = this.cast("backOut")
+  def backOut: typings.victory.victoryStrings.backOut = "backOut".asInstanceOf[typings.victory.victoryStrings.backOut]
   @scala.inline
-  def bounce: typings.victory.victoryStrings.bounce = this.cast("bounce")
+  def bounce: typings.victory.victoryStrings.bounce = "bounce".asInstanceOf[typings.victory.victoryStrings.bounce]
   @scala.inline
-  def bounceIn: typings.victory.victoryStrings.bounceIn = this.cast("bounceIn")
+  def bounceIn: typings.victory.victoryStrings.bounceIn = "bounceIn".asInstanceOf[typings.victory.victoryStrings.bounceIn]
   @scala.inline
-  def bounceInOut: typings.victory.victoryStrings.bounceInOut = this.cast("bounceInOut")
+  def bounceInOut: typings.victory.victoryStrings.bounceInOut = "bounceInOut".asInstanceOf[typings.victory.victoryStrings.bounceInOut]
   @scala.inline
-  def bounceOut: typings.victory.victoryStrings.bounceOut = this.cast("bounceOut")
+  def bounceOut: typings.victory.victoryStrings.bounceOut = "bounceOut".asInstanceOf[typings.victory.victoryStrings.bounceOut]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def circle: typings.victory.victoryStrings.circle = "circle".asInstanceOf[typings.victory.victoryStrings.circle]
   @scala.inline
-  def circle: typings.victory.victoryStrings.circle = this.cast("circle")
+  def circleIn: typings.victory.victoryStrings.circleIn = "circleIn".asInstanceOf[typings.victory.victoryStrings.circleIn]
   @scala.inline
-  def circleIn: typings.victory.victoryStrings.circleIn = this.cast("circleIn")
+  def circleInOut: typings.victory.victoryStrings.circleInOut = "circleInOut".asInstanceOf[typings.victory.victoryStrings.circleInOut]
   @scala.inline
-  def circleInOut: typings.victory.victoryStrings.circleInOut = this.cast("circleInOut")
+  def circleOut: typings.victory.victoryStrings.circleOut = "circleOut".asInstanceOf[typings.victory.victoryStrings.circleOut]
   @scala.inline
-  def circleOut: typings.victory.victoryStrings.circleOut = this.cast("circleOut")
+  def cubic: typings.victory.victoryStrings.cubic = "cubic".asInstanceOf[typings.victory.victoryStrings.cubic]
   @scala.inline
-  def cubic: typings.victory.victoryStrings.cubic = this.cast("cubic")
+  def cubicIn: typings.victory.victoryStrings.cubicIn = "cubicIn".asInstanceOf[typings.victory.victoryStrings.cubicIn]
   @scala.inline
-  def cubicIn: typings.victory.victoryStrings.cubicIn = this.cast("cubicIn")
+  def cubicInOut: typings.victory.victoryStrings.cubicInOut = "cubicInOut".asInstanceOf[typings.victory.victoryStrings.cubicInOut]
   @scala.inline
-  def cubicInOut: typings.victory.victoryStrings.cubicInOut = this.cast("cubicInOut")
+  def cubicOut: typings.victory.victoryStrings.cubicOut = "cubicOut".asInstanceOf[typings.victory.victoryStrings.cubicOut]
   @scala.inline
-  def cubicOut: typings.victory.victoryStrings.cubicOut = this.cast("cubicOut")
+  def elastic: typings.victory.victoryStrings.elastic = "elastic".asInstanceOf[typings.victory.victoryStrings.elastic]
   @scala.inline
-  def elastic: typings.victory.victoryStrings.elastic = this.cast("elastic")
+  def elasticIn: typings.victory.victoryStrings.elasticIn = "elasticIn".asInstanceOf[typings.victory.victoryStrings.elasticIn]
   @scala.inline
-  def elasticIn: typings.victory.victoryStrings.elasticIn = this.cast("elasticIn")
+  def elasticInOut: typings.victory.victoryStrings.elasticInOut = "elasticInOut".asInstanceOf[typings.victory.victoryStrings.elasticInOut]
   @scala.inline
-  def elasticInOut: typings.victory.victoryStrings.elasticInOut = this.cast("elasticInOut")
+  def elasticOut: typings.victory.victoryStrings.elasticOut = "elasticOut".asInstanceOf[typings.victory.victoryStrings.elasticOut]
   @scala.inline
-  def elasticOut: typings.victory.victoryStrings.elasticOut = this.cast("elasticOut")
+  def exp: typings.victory.victoryStrings.exp = "exp".asInstanceOf[typings.victory.victoryStrings.exp]
   @scala.inline
-  def exp: typings.victory.victoryStrings.exp = this.cast("exp")
+  def expIn: typings.victory.victoryStrings.expIn = "expIn".asInstanceOf[typings.victory.victoryStrings.expIn]
   @scala.inline
-  def expIn: typings.victory.victoryStrings.expIn = this.cast("expIn")
+  def expInOut: typings.victory.victoryStrings.expInOut = "expInOut".asInstanceOf[typings.victory.victoryStrings.expInOut]
   @scala.inline
-  def expInOut: typings.victory.victoryStrings.expInOut = this.cast("expInOut")
+  def expOut: typings.victory.victoryStrings.expOut = "expOut".asInstanceOf[typings.victory.victoryStrings.expOut]
   @scala.inline
-  def expOut: typings.victory.victoryStrings.expOut = this.cast("expOut")
+  def linear: typings.victory.victoryStrings.linear = "linear".asInstanceOf[typings.victory.victoryStrings.linear]
   @scala.inline
-  def linear: typings.victory.victoryStrings.linear = this.cast("linear")
+  def linearIn: typings.victory.victoryStrings.linearIn = "linearIn".asInstanceOf[typings.victory.victoryStrings.linearIn]
   @scala.inline
-  def linearIn: typings.victory.victoryStrings.linearIn = this.cast("linearIn")
+  def linearInOut: typings.victory.victoryStrings.linearInOut = "linearInOut".asInstanceOf[typings.victory.victoryStrings.linearInOut]
   @scala.inline
-  def linearInOut: typings.victory.victoryStrings.linearInOut = this.cast("linearInOut")
+  def linearOut: typings.victory.victoryStrings.linearOut = "linearOut".asInstanceOf[typings.victory.victoryStrings.linearOut]
   @scala.inline
-  def linearOut: typings.victory.victoryStrings.linearOut = this.cast("linearOut")
+  def poly: typings.victory.victoryStrings.poly = "poly".asInstanceOf[typings.victory.victoryStrings.poly]
   @scala.inline
-  def poly: typings.victory.victoryStrings.poly = this.cast("poly")
+  def polyIn: typings.victory.victoryStrings.polyIn = "polyIn".asInstanceOf[typings.victory.victoryStrings.polyIn]
   @scala.inline
-  def polyIn: typings.victory.victoryStrings.polyIn = this.cast("polyIn")
+  def polyInOut: typings.victory.victoryStrings.polyInOut = "polyInOut".asInstanceOf[typings.victory.victoryStrings.polyInOut]
   @scala.inline
-  def polyInOut: typings.victory.victoryStrings.polyInOut = this.cast("polyInOut")
+  def polyOut: typings.victory.victoryStrings.polyOut = "polyOut".asInstanceOf[typings.victory.victoryStrings.polyOut]
   @scala.inline
-  def polyOut: typings.victory.victoryStrings.polyOut = this.cast("polyOut")
+  def quad: typings.victory.victoryStrings.quad = "quad".asInstanceOf[typings.victory.victoryStrings.quad]
   @scala.inline
-  def quad: typings.victory.victoryStrings.quad = this.cast("quad")
+  def quadIn: typings.victory.victoryStrings.quadIn = "quadIn".asInstanceOf[typings.victory.victoryStrings.quadIn]
   @scala.inline
-  def quadIn: typings.victory.victoryStrings.quadIn = this.cast("quadIn")
+  def quadInOut: typings.victory.victoryStrings.quadInOut = "quadInOut".asInstanceOf[typings.victory.victoryStrings.quadInOut]
   @scala.inline
-  def quadInOut: typings.victory.victoryStrings.quadInOut = this.cast("quadInOut")
+  def quadOut: typings.victory.victoryStrings.quadOut = "quadOut".asInstanceOf[typings.victory.victoryStrings.quadOut]
   @scala.inline
-  def quadOut: typings.victory.victoryStrings.quadOut = this.cast("quadOut")
+  def sin: typings.victory.victoryStrings.sin = "sin".asInstanceOf[typings.victory.victoryStrings.sin]
   @scala.inline
-  def sin: typings.victory.victoryStrings.sin = this.cast("sin")
+  def sinIn: typings.victory.victoryStrings.sinIn = "sinIn".asInstanceOf[typings.victory.victoryStrings.sinIn]
   @scala.inline
-  def sinIn: typings.victory.victoryStrings.sinIn = this.cast("sinIn")
+  def sinInOut: typings.victory.victoryStrings.sinInOut = "sinInOut".asInstanceOf[typings.victory.victoryStrings.sinInOut]
   @scala.inline
-  def sinInOut: typings.victory.victoryStrings.sinInOut = this.cast("sinInOut")
-  @scala.inline
-  def sinOut: typings.victory.victoryStrings.sinOut = this.cast("sinOut")
+  def sinOut: typings.victory.victoryStrings.sinOut = "sinOut".asInstanceOf[typings.victory.victoryStrings.sinOut]
 }
 

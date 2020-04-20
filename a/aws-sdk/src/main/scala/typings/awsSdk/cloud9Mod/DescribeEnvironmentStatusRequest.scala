@@ -16,7 +16,6 @@ object DescribeEnvironmentStatusRequest {
   @scala.inline
   def apply(environmentId: EnvironmentId): DescribeEnvironmentStatusRequest = {
     val __obj = js.Dynamic.literal(environmentId = environmentId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeEnvironmentStatusRequest]
   }
 }

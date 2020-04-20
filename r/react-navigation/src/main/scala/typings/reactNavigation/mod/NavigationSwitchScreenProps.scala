@@ -18,7 +18,6 @@ object NavigationSwitchScreenProps {
     theme: SupportedThemes
   ): NavigationSwitchScreenProps[Params, ScreenProps] = {
     val __obj = js.Dynamic.literal(navigation = navigation.asInstanceOf[js.Any], screenProps = screenProps.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NavigationSwitchScreenProps[Params, ScreenProps]]
   }
 }

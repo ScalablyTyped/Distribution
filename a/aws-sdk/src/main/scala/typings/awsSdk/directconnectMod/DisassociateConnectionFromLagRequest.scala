@@ -20,7 +20,6 @@ object DisassociateConnectionFromLagRequest {
   @scala.inline
   def apply(connectionId: ConnectionId, lagId: LagId): DisassociateConnectionFromLagRequest = {
     val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any], lagId = lagId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisassociateConnectionFromLagRequest]
   }
 }

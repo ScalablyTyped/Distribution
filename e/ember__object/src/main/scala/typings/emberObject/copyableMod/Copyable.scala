@@ -25,7 +25,6 @@ object Copyable {
   @scala.inline
   def apply(copy: Boolean => Copyable, frozenCopy: () => Copyable): Copyable = {
     val __obj = js.Dynamic.literal(copy = js.Any.fromFunction1(copy), frozenCopy = js.Any.fromFunction0(frozenCopy))
-  
     __obj.asInstanceOf[Copyable]
   }
 }

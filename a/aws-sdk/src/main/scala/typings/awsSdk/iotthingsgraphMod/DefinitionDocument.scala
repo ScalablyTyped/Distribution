@@ -20,7 +20,6 @@ object DefinitionDocument {
   @scala.inline
   def apply(language: DefinitionLanguage, text: DefinitionText): DefinitionDocument = {
     val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DefinitionDocument]
   }
 }

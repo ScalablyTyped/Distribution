@@ -13,7 +13,6 @@ object Options {
   @scala.inline
   def apply(clientId: String, domain: String): Options = {
     val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Options]
   }
 }

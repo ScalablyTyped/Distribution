@@ -23,7 +23,6 @@ object IFrameworkView {
     uninitialize: () => Unit
   ): IFrameworkView = {
     val __obj = js.Dynamic.literal(initialize = js.Any.fromFunction1(initialize), load = js.Any.fromFunction1(load), run = js.Any.fromFunction0(run), setWindow = js.Any.fromFunction1(setWindow), uninitialize = js.Any.fromFunction0(uninitialize))
-  
     __obj.asInstanceOf[IFrameworkView]
   }
 }

@@ -20,16 +20,14 @@ trait STATS_FORMAT extends js.Object
 
 object STATS_FORMAT {
   @scala.inline
-  def STATS_FULL: `1` = this.cast(1)
+  def STATS_FULL: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def STATS_INCLUDE_SUMMARY: `8` = this.cast(8)
+  def STATS_INCLUDE_SUMMARY: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def STATS_NONE: `0` = this.cast(0)
+  def STATS_NONE: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def STATS_NUMBER: `4` = this.cast(4)
+  def STATS_NUMBER: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def STATS_SHORT: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def STATS_SHORT: `2` = 2.asInstanceOf[`2`]
 }
 

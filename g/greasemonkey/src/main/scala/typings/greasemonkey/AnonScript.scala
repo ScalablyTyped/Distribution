@@ -26,7 +26,6 @@ object AnonScript {
   @scala.inline
   def apply(script: ScriptInfo, scriptHandler: String, scriptMetaStr: String, version: String): AnonScript = {
     val __obj = js.Dynamic.literal(script = script.asInstanceOf[js.Any], scriptHandler = scriptHandler.asInstanceOf[js.Any], scriptMetaStr = scriptMetaStr.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonScript]
   }
 }

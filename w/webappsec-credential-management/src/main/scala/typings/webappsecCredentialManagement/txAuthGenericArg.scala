@@ -16,7 +16,6 @@ object txAuthGenericArg {
   @scala.inline
   def apply(content: ArrayBuffer, contentType: String): txAuthGenericArg = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[txAuthGenericArg]
   }
 }

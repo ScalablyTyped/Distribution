@@ -17,18 +17,16 @@ trait WebDriverLogTypes extends js.Object
 
 object WebDriverLogTypes {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def debug: typings.webdriver.webdriverStrings.debug = "debug".asInstanceOf[typings.webdriver.webdriverStrings.debug]
   @scala.inline
-  def debug: typings.webdriver.webdriverStrings.debug = this.cast("debug")
+  def error: typings.webdriver.webdriverStrings.error = "error".asInstanceOf[typings.webdriver.webdriverStrings.error]
   @scala.inline
-  def error: typings.webdriver.webdriverStrings.error = this.cast("error")
+  def info: info_ = "info".asInstanceOf[info_]
   @scala.inline
-  def info: info_ = this.cast("info")
+  def silent: typings.webdriver.webdriverStrings.silent = "silent".asInstanceOf[typings.webdriver.webdriverStrings.silent]
   @scala.inline
-  def silent: typings.webdriver.webdriverStrings.silent = this.cast("silent")
+  def trace: typings.webdriver.webdriverStrings.trace = "trace".asInstanceOf[typings.webdriver.webdriverStrings.trace]
   @scala.inline
-  def trace: typings.webdriver.webdriverStrings.trace = this.cast("trace")
-  @scala.inline
-  def warn: typings.webdriver.webdriverStrings.warn = this.cast("warn")
+  def warn: typings.webdriver.webdriverStrings.warn = "warn".asInstanceOf[typings.webdriver.webdriverStrings.warn]
 }
 

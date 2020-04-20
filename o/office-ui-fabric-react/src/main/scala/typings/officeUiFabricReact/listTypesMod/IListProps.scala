@@ -22,6 +22,7 @@ import typings.react.mod.TouchEvent
 import typings.react.mod.TransitionEvent
 import typings.react.mod.UIEvent
 import typings.react.mod.WheelEvent
+import typings.react.mod._Global_.JSX.Element
 import typings.react.reactStrings.`additions text`
 import typings.react.reactStrings.`inline`
 import typings.react.reactStrings.additions
@@ -163,13 +164,18 @@ trait IListProps[T] extends HTMLAttributes[List[T] | HTMLDivElement] {
     * Called when the List will render a page.
     * Override this to control how cells are rendered within a page.
     */
-  var onRenderPage: js.UndefOr[
-    js.Function2[
-      /* pageProps */ IPageProps[T], 
-      /* defaultRender */ js.UndefOr[IRenderFunction[IPageProps[T]]], 
-      ReactNode
-    ]
-  ] = js.undefined
+  var onRenderPage: js.UndefOr[IRenderFunction[IPageProps[T]]] = js.undefined
+  /**
+    * Render override for the element at the root of the `List`.
+    * Use this to apply some final attributes or structure to the content
+    * each time the list is updated with new active pages or items.
+    */
+  var onRenderRoot: js.UndefOr[IRenderFunction[IListOnRenderRootProps[T]]] = js.undefined
+  /**
+    * Render override for the element representing the surface of the `List`.
+    * Use this to alter the structure of the rendered content if necessary on each update.
+    */
+  var onRenderSurface: js.UndefOr[IRenderFunction[IListOnRenderSurfaceProps[T]]] = js.undefined
   /**
     * Optional callback to determine whether the list should be rendered in full, or virtualized.
     * Virtualization will add and remove pages of items as the user scrolls them into the visible range.
@@ -356,7 +362,11 @@ object IListProps {
     onProgress: SyntheticEvent[List[T] | HTMLDivElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[List[T] | HTMLDivElement, Event_] => Unit = null,
     onRenderCell: (/* item */ js.UndefOr[T], /* index */ js.UndefOr[Double], /* isScrolling */ js.UndefOr[Boolean]) => ReactNode = null,
-    onRenderPage: (/* pageProps */ IPageProps[T], /* defaultRender */ js.UndefOr[IRenderFunction[IPageProps[T]]]) => ReactNode = null,
+    onRenderPage: (/* props */ js.UndefOr[IPageProps[T]], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPageProps[T]], Element | Null]]) => Element | Null = null,
+    onRenderRoot: (/* props */ js.UndefOr[IListOnRenderRootProps[T]], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IListOnRenderRootProps[T]], Element | Null]]) => Element | Null = null,
+    onRenderSurface: (/* props */ js.UndefOr[IListOnRenderSurfaceProps[T]], /* defaultRender */ js.UndefOr[
+      js.Function1[/* props */ js.UndefOr[IListOnRenderSurfaceProps[T]], Element | Null]
+    ]) => Element | Null = null,
     onReset: FormEvent[List[T] | HTMLDivElement] => Unit = null,
     onScroll: UIEvent[List[T] | HTMLDivElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[List[T] | HTMLDivElement, Event_] => Unit = null,
@@ -552,6 +562,8 @@ object IListProps {
     if (onRateChange != null) __obj.updateDynamic("onRateChange")(js.Any.fromFunction1(onRateChange))
     if (onRenderCell != null) __obj.updateDynamic("onRenderCell")(js.Any.fromFunction3(onRenderCell))
     if (onRenderPage != null) __obj.updateDynamic("onRenderPage")(js.Any.fromFunction2(onRenderPage))
+    if (onRenderRoot != null) __obj.updateDynamic("onRenderRoot")(js.Any.fromFunction2(onRenderRoot))
+    if (onRenderSurface != null) __obj.updateDynamic("onRenderSurface")(js.Any.fromFunction2(onRenderSurface))
     if (onReset != null) __obj.updateDynamic("onReset")(js.Any.fromFunction1(onReset))
     if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
     if (onSeeked != null) __obj.updateDynamic("onSeeked")(js.Any.fromFunction1(onSeeked))

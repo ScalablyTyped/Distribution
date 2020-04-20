@@ -20,7 +20,6 @@ object Quixote {
     createFrame: (QuixoteFrameOptions, js.Function2[/* err */ Error, /* loadedFrame */ QFrame, Unit]) => QFrame
   ): Quixote = {
     val __obj = js.Dynamic.literal(createFrame = js.Any.fromFunction2(createFrame))
-  
     __obj.asInstanceOf[Quixote]
   }
 }

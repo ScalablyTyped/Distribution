@@ -17,14 +17,12 @@ trait ApplePayErrorCode extends js.Object
 
 object ApplePayErrorCode {
   @scala.inline
-  def addressUnserviceable: typings.applepayjs.applepayjsStrings.addressUnserviceable = this.cast("addressUnserviceable")
+  def addressUnserviceable: typings.applepayjs.applepayjsStrings.addressUnserviceable = "addressUnserviceable".asInstanceOf[typings.applepayjs.applepayjsStrings.addressUnserviceable]
   @scala.inline
-  def billingContactInvalid: typings.applepayjs.applepayjsStrings.billingContactInvalid = this.cast("billingContactInvalid")
+  def billingContactInvalid: typings.applepayjs.applepayjsStrings.billingContactInvalid = "billingContactInvalid".asInstanceOf[typings.applepayjs.applepayjsStrings.billingContactInvalid]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def shippingContactInvalid: typings.applepayjs.applepayjsStrings.shippingContactInvalid = "shippingContactInvalid".asInstanceOf[typings.applepayjs.applepayjsStrings.shippingContactInvalid]
   @scala.inline
-  def shippingContactInvalid: typings.applepayjs.applepayjsStrings.shippingContactInvalid = this.cast("shippingContactInvalid")
-  @scala.inline
-  def unknown: typings.applepayjs.applepayjsStrings.unknown = this.cast("unknown")
+  def unknown: typings.applepayjs.applepayjsStrings.unknown = "unknown".asInstanceOf[typings.applepayjs.applepayjsStrings.unknown]
 }
 

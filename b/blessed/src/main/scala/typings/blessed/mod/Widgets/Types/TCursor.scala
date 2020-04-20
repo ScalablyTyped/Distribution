@@ -30,7 +30,6 @@ object TCursor {
   @scala.inline
   def apply(artificial: Boolean, blink: Boolean, color: String, shape: block | underline | line): TCursor = {
     val __obj = js.Dynamic.literal(artificial = artificial.asInstanceOf[js.Any], blink = blink.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TCursor]
   }
 }

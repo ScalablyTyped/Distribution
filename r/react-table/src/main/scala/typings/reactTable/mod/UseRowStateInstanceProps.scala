@@ -16,7 +16,6 @@ object UseRowStateInstanceProps {
     setRowState: (js.Array[String], UseRowUpdater[_]) => Unit
   ): UseRowStateInstanceProps[D] = {
     val __obj = js.Dynamic.literal(setCellState = js.Any.fromFunction3(setCellState), setRowState = js.Any.fromFunction2(setRowState))
-  
     __obj.asInstanceOf[UseRowStateInstanceProps[D]]
   }
 }

@@ -15,8 +15,8 @@ abstract class AbstractMessageType protected () extends MessageType {
   /* CompleteClass */
   override val numberOfParams: Double = js.native
   @JSName("method")
-  def method_MAbstractMessageType(): String = js.native
+  def method_MAbstractMessageType: String = js.native
   @JSName("numberOfParams")
-  def numberOfParams_MAbstractMessageType(): Double = js.native
+  def numberOfParams_MAbstractMessageType: Double = js.native
 }
 

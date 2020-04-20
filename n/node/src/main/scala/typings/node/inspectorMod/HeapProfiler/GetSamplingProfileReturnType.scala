@@ -15,7 +15,6 @@ object GetSamplingProfileReturnType {
   @scala.inline
   def apply(profile: SamplingHeapProfile): GetSamplingProfileReturnType = {
     val __obj = js.Dynamic.literal(profile = profile.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetSamplingProfileReturnType]
   }
 }

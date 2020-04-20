@@ -14,7 +14,6 @@ object ReposUpdateHookResponseLastResponse {
   @scala.inline
   def apply(code: Null, message: Null, status: String): ReposUpdateHookResponseLastResponse = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReposUpdateHookResponseLastResponse]
   }
 }

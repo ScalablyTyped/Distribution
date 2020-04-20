@@ -16,18 +16,16 @@ trait PaperFormat extends js.Object
 
 object PaperFormat {
   @scala.inline
-  def A3: typings.markdownPdf.markdownPdfStrings.A3 = this.cast("A3")
+  def A3: typings.markdownPdf.markdownPdfStrings.A3 = "A3".asInstanceOf[typings.markdownPdf.markdownPdfStrings.A3]
   @scala.inline
-  def A4: typings.markdownPdf.markdownPdfStrings.A4 = this.cast("A4")
+  def A4: typings.markdownPdf.markdownPdfStrings.A4 = "A4".asInstanceOf[typings.markdownPdf.markdownPdfStrings.A4]
   @scala.inline
-  def A5: typings.markdownPdf.markdownPdfStrings.A5 = this.cast("A5")
+  def A5: typings.markdownPdf.markdownPdfStrings.A5 = "A5".asInstanceOf[typings.markdownPdf.markdownPdfStrings.A5]
   @scala.inline
-  def Legal: typings.markdownPdf.markdownPdfStrings.Legal = this.cast("Legal")
+  def Legal: typings.markdownPdf.markdownPdfStrings.Legal = "Legal".asInstanceOf[typings.markdownPdf.markdownPdfStrings.Legal]
   @scala.inline
-  def Letter: typings.markdownPdf.markdownPdfStrings.Letter = this.cast("Letter")
+  def Letter: typings.markdownPdf.markdownPdfStrings.Letter = "Letter".asInstanceOf[typings.markdownPdf.markdownPdfStrings.Letter]
   @scala.inline
-  def Tabloid: typings.markdownPdf.markdownPdfStrings.Tabloid = this.cast("Tabloid")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Tabloid: typings.markdownPdf.markdownPdfStrings.Tabloid = "Tabloid".asInstanceOf[typings.markdownPdf.markdownPdfStrings.Tabloid]
 }
 

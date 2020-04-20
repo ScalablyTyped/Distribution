@@ -21,7 +21,6 @@ object Options {
   @scala.inline
   def apply(log: Boolean | LoggingCallback): Options = {
     val __obj = js.Dynamic.literal(log = log.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Options]
   }
 }

@@ -12,7 +12,6 @@ object AnonEnumValuesAnonAlreadyUpToDate {
   @scala.inline
   def apply(enumValues: AnonAlreadyUpToDate): AnonEnumValuesAnonAlreadyUpToDate = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumValuesAnonAlreadyUpToDate]
   }
 }

@@ -15,7 +15,6 @@ object ParentRequest {
   @scala.inline
   def apply(parent: String): ParentRequest = {
     val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ParentRequest]
   }
 }

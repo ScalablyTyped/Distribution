@@ -15,7 +15,7 @@ trait MessageReply extends js.Object {
   /**
   	 * Error message, if any returned.
   	 */
-  var error: js.UndefOr[String] = js.undefined
+  var error: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Reply message from watchapp.
   	 */
@@ -30,7 +30,7 @@ object MessageReply {
   @scala.inline
   def apply(
     code: Int | Double = null,
-    error: String = null,
+    error: java.lang.String = null,
     message: js.Any = null,
     success: js.UndefOr[Boolean] = js.undefined
   ): MessageReply = {

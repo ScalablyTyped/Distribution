@@ -226,7 +226,7 @@ object enumerableMod extends js.Object {
       * implements it. This method corresponds to the implementation in
       * Prototype 1.6.
       */
-    def invoke(methodName: String, args: js.Any*): js.Array[_] = js.native
+    def invoke(methodName: /* keyof T */ String, args: js.Any*): js.Array[_] = js.native
     /**
       * Returns `true` if the passed property resolves to the value of the second
       * argument for any item in the enumerable. This method is often simpler/faster

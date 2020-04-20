@@ -16,12 +16,10 @@ trait MsoBalloonType extends js.Object
 
 object MsoBalloonType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoBalloonTypeBullets: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoBalloonTypeBullets: `1` = this.cast(1)
+  def msoBalloonTypeButtons: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def msoBalloonTypeButtons: `0` = this.cast(0)
-  @scala.inline
-  def msoBalloonTypeNumbers: `2` = this.cast(2)
+  def msoBalloonTypeNumbers: `2` = 2.asInstanceOf[`2`]
 }
 

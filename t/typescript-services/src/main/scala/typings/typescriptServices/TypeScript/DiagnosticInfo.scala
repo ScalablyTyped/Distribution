@@ -14,7 +14,6 @@ object DiagnosticInfo {
   @scala.inline
   def apply(category: DiagnosticCategory, code: Double, message: String): DiagnosticInfo = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DiagnosticInfo]
   }
 }

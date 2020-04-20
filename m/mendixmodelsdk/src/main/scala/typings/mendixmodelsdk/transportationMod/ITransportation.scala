@@ -31,7 +31,6 @@ object ITransportation {
     retryableRequest: (IRequestOptions, IResponseCallback[js.Any], IErrorCallback) => Unit
   ): ITransportation = {
     val __obj = js.Dynamic.literal(request = js.Any.fromFunction3(request), requestFileDownload = js.Any.fromFunction3(requestFileDownload), requestMultipartBinaryFileUpload = js.Any.fromFunction3(requestMultipartBinaryFileUpload), retryableRequest = js.Any.fromFunction3(retryableRequest))
-  
     __obj.asInstanceOf[ITransportation]
   }
 }

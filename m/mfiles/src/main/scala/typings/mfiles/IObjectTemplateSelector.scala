@@ -26,7 +26,6 @@ object IObjectTemplateSelector {
     SelectItem: String => Unit
   ): IObjectTemplateSelector = {
     val __obj = js.Dynamic.literal(ClassSelector = ClassSelector.asInstanceOf[js.Any], Events = Events.asInstanceOf[js.Any], GetObjectTypeIconURL = js.Any.fromFunction0(GetObjectTypeIconURL), GetObjectTypeId = js.Any.fromFunction0(GetObjectTypeId), GetObjectTypeName = js.Any.fromFunction0(GetObjectTypeName), GetTemplateItems = js.Any.fromFunction0(GetTemplateItems), SelectItem = js.Any.fromFunction1(SelectItem))
-  
     __obj.asInstanceOf[IObjectTemplateSelector]
   }
 }

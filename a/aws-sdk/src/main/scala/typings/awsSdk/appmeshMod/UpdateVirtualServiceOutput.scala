@@ -16,7 +16,6 @@ object UpdateVirtualServiceOutput {
   @scala.inline
   def apply(virtualService: VirtualServiceData): UpdateVirtualServiceOutput = {
     val __obj = js.Dynamic.literal(virtualService = virtualService.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateVirtualServiceOutput]
   }
 }

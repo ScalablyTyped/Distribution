@@ -23,6 +23,7 @@ trait `type` extends js.Object {
     * @param params.density The number of points per inch in the view.
     * @param params.typeScheme In authoring apps, the user may select a pre-defined type scheme. Pass the scheme object to this property to avoid getting one based on the `basemap`.
     * @param params.statistics A statistics object generated from the [uniqueValues](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-uniqueValues.html) function. If statistics for the field have already been generated, then pass the object here to avoid making a second statistics query to the server.
+    * @param params.signal Allows for cancelable requests. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
     *
     */
   def createPCClassRenderer(params: typeCreatePCClassRendererParams): js.Promise[PCClassRendererResult]
@@ -72,6 +73,8 @@ trait `type` extends js.Object {
     * replace | Removes the geometry/texture color and applies the symbol `color`.
     * multiply | Multiplies geometry/texture color value with the symbol `color` value. The result is a darker color. Multiplying with white keeps the geometry color the same.
     * @param params.returnAllCodedValues Indicates that all domain codes should be returned if the given field has domain values.
+    * @param params.edgesType Indicates whether to add edges to the output renderer. This setting only applies to mesh SceneLayers.  **Possible Values:** solid | none
+    * @param params.signal Allows for cancelable requests. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
     *
     */
   def createRenderer(params: typeCreateRendererParams): js.Promise[typeRendererResult]

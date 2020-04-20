@@ -16,7 +16,6 @@ object GetTopicArgs {
   @scala.inline
   def apply(name: String): GetTopicArgs = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetTopicArgs]
   }
 }

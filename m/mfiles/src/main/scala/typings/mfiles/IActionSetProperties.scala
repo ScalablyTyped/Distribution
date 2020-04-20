@@ -13,7 +13,6 @@ object IActionSetProperties {
   @scala.inline
   def apply(Clone: () => IActionSetProperties, Properties: IDefaultProperties): IActionSetProperties = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Properties = Properties.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IActionSetProperties]
   }
 }

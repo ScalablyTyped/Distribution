@@ -20,7 +20,6 @@ object GetDetectorVersionRequest {
   @scala.inline
   def apply(detectorId: identifier, detectorVersionId: nonEmptyString): GetDetectorVersionRequest = {
     val __obj = js.Dynamic.literal(detectorId = detectorId.asInstanceOf[js.Any], detectorVersionId = detectorVersionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDetectorVersionRequest]
   }
 }

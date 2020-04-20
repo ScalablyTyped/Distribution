@@ -12,7 +12,6 @@ object StyledProps {
   @scala.inline
   def apply(className: String): StyledProps = {
     val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StyledProps]
   }
 }

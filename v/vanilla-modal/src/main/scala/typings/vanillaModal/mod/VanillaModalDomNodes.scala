@@ -16,7 +16,6 @@ object VanillaModalDomNodes {
   @scala.inline
   def apply(modal: HTMLElement, modalContent: HTMLElement, modalInner: HTMLElement, page: HTMLElement): VanillaModalDomNodes = {
     val __obj = js.Dynamic.literal(modal = modal.asInstanceOf[js.Any], modalContent = modalContent.asInstanceOf[js.Any], modalInner = modalInner.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VanillaModalDomNodes]
   }
 }

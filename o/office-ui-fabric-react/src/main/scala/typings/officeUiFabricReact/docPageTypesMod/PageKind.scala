@@ -12,10 +12,8 @@ trait PageKind extends js.Object
 
 object PageKind {
   @scala.inline
-  def Components: typings.officeUiFabricReact.officeUiFabricReactStrings.Components = this.cast("Components")
+  def Components: typings.officeUiFabricReact.officeUiFabricReactStrings.Components = "Components".asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactStrings.Components]
   @scala.inline
-  def References: typings.officeUiFabricReact.officeUiFabricReactStrings.References = this.cast("References")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def References: typings.officeUiFabricReact.officeUiFabricReactStrings.References = "References".asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactStrings.References]
 }
 

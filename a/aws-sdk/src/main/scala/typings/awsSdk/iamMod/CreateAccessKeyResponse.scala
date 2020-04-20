@@ -16,7 +16,6 @@ object CreateAccessKeyResponse {
   @scala.inline
   def apply(AccessKey: AccessKey): CreateAccessKeyResponse = {
     val __obj = js.Dynamic.literal(AccessKey = AccessKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateAccessKeyResponse]
   }
 }

@@ -13,12 +13,10 @@ trait XRVisibilityState extends js.Object
 
 object XRVisibilityState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def hidden: typings.babylonjs.babylonjsStrings.hidden = "hidden".asInstanceOf[typings.babylonjs.babylonjsStrings.hidden]
   @scala.inline
-  def hidden: typings.babylonjs.babylonjsStrings.hidden = this.cast("hidden")
+  def visible: typings.babylonjs.babylonjsStrings.visible = "visible".asInstanceOf[typings.babylonjs.babylonjsStrings.visible]
   @scala.inline
-  def visible: typings.babylonjs.babylonjsStrings.visible = this.cast("visible")
-  @scala.inline
-  def `visible-blurred`: typings.babylonjs.babylonjsStrings.`visible-blurred` = this.cast("visible-blurred")
+  def `visible-blurred`: typings.babylonjs.babylonjsStrings.`visible-blurred` = "visible-blurred".asInstanceOf[typings.babylonjs.babylonjsStrings.`visible-blurred`]
 }
 

@@ -25,7 +25,6 @@ object GenericStackedDatum {
     value: Double
   ): GenericStackedDatum[D] = {
     val __obj = js.Dynamic.literal(axisValue = axisValue.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], originalDataset = originalDataset.asInstanceOf[js.Any], originalDatum = originalDatum.asInstanceOf[js.Any], originalIndex = originalIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GenericStackedDatum[D]]
   }
 }

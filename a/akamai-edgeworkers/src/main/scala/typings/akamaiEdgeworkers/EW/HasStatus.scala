@@ -15,7 +15,6 @@ object HasStatus {
   @scala.inline
   def apply(status: Double): HasStatus = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HasStatus]
   }
 }

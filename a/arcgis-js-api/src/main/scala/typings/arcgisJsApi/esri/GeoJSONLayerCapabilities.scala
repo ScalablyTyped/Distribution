@@ -52,7 +52,6 @@ object GeoJSONLayerCapabilities {
     queryRelated: GeoJSONLayerCapabilitiesQueryRelated
   ): GeoJSONLayerCapabilities = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], editing = editing.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), operations = operations.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), query = query.asInstanceOf[js.Any], queryRelated = queryRelated.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GeoJSONLayerCapabilities]
   }
 }

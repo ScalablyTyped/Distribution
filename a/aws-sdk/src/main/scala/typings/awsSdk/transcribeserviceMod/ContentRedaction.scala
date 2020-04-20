@@ -20,7 +20,6 @@ object ContentRedaction {
   @scala.inline
   def apply(RedactionOutput: RedactionOutput, RedactionType: RedactionType): ContentRedaction = {
     val __obj = js.Dynamic.literal(RedactionOutput = RedactionOutput.asInstanceOf[js.Any], RedactionType = RedactionType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ContentRedaction]
   }
 }

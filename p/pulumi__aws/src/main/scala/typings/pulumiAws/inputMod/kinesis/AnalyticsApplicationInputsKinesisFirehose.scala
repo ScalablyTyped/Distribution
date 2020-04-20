@@ -21,7 +21,6 @@ object AnalyticsApplicationInputsKinesisFirehose {
   @scala.inline
   def apply(resourceArn: Input[String], roleArn: Input[String]): AnalyticsApplicationInputsKinesisFirehose = {
     val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnalyticsApplicationInputsKinesisFirehose]
   }
 }

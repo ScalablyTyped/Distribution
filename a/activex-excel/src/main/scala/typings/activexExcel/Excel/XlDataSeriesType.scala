@@ -18,14 +18,12 @@ trait XlDataSeriesType extends js.Object
 
 object XlDataSeriesType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlAutoFill: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlAutoFill: `4` = this.cast(4)
+  def xlChronological: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlChronological: `3` = this.cast(3)
+  def xlDataSeriesLinear: `-4132` = -4132.asInstanceOf[`-4132`]
   @scala.inline
-  def xlDataSeriesLinear: `-4132` = this.cast(-4132)
-  @scala.inline
-  def xlGrowth: `2` = this.cast(2)
+  def xlGrowth: `2` = 2.asInstanceOf[`2`]
 }
 

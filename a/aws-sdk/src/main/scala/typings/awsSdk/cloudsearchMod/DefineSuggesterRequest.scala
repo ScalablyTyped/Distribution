@@ -14,7 +14,6 @@ object DefineSuggesterRequest {
   @scala.inline
   def apply(DomainName: DomainName, Suggester: Suggester): DefineSuggesterRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any], Suggester = Suggester.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DefineSuggesterRequest]
   }
 }

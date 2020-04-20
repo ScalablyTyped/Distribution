@@ -16,7 +16,6 @@ object GetOnPremisesInstanceInput {
   @scala.inline
   def apply(instanceName: InstanceName): GetOnPremisesInstanceInput = {
     val __obj = js.Dynamic.literal(instanceName = instanceName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetOnPremisesInstanceInput]
   }
 }

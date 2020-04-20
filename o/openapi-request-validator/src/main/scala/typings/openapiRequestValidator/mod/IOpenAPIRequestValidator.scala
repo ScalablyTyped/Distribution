@@ -13,7 +13,6 @@ object IOpenAPIRequestValidator {
   @scala.inline
   def apply(validateRequest: Request => js.Any): IOpenAPIRequestValidator = {
     val __obj = js.Dynamic.literal(validateRequest = js.Any.fromFunction1(validateRequest))
-  
     __obj.asInstanceOf[IOpenAPIRequestValidator]
   }
 }

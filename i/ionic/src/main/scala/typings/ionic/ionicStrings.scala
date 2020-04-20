@@ -385,7 +385,7 @@ object ionicStrings {
   @scala.inline
   def `@ionicSlashapp-scripts`: `@ionicSlashapp-scripts` = "@ionic/app-scripts".asInstanceOf[`@ionicSlashapp-scripts`]
   @scala.inline
-  def `Angular CLI`: `Angular CLI` = "Angular CLI".asInstanceOf[`Angular CLI`]
+  def `Angular CLI`: `Angular CLI` = ("Angular CLI").asInstanceOf[`Angular CLI`]
   @scala.inline
   def BASE_DIRECTORY_NOT_FOUND: BASE_DIRECTORY_NOT_FOUND = "BASE_DIRECTORY_NOT_FOUND".asInstanceOf[BASE_DIRECTORY_NOT_FOUND]
   @scala.inline
@@ -409,9 +409,9 @@ object ionicStrings {
   @scala.inline
   def INVALID_BOWER_JSON: INVALID_BOWER_JSON = "INVALID_BOWER_JSON".asInstanceOf[INVALID_BOWER_JSON]
   @scala.inline
-  def `Ionic App Scripts`: `Ionic App Scripts` = "Ionic App Scripts".asInstanceOf[`Ionic App Scripts`]
+  def `Ionic App Scripts`: `Ionic App Scripts` = ("Ionic App Scripts").asInstanceOf[`Ionic App Scripts`]
   @scala.inline
-  def `Ionic Enterprise Edition provides premier native solutionsComma UIComma Ampersand support for companies building cross-platform appsDot`: `Ionic Enterprise Edition provides premier native solutionsComma UIComma Ampersand support for companies building cross-platform appsDot` = "Ionic Enterprise Edition provides premier native solutions, UI, & support for companies building cross-platform apps.".asInstanceOf[`Ionic Enterprise Edition provides premier native solutionsComma UIComma Ampersand support for companies building cross-platform appsDot`]
+  def `Ionic Enterprise Edition provides premier native solutionsComma UIComma Ampersand support for companies building cross-platform appsDot`: `Ionic Enterprise Edition provides premier native solutionsComma UIComma Ampersand support for companies building cross-platform appsDot` = ("Ionic Enterprise Edition provides premier native solutions, UI, & support for companies building cross-platform apps.").asInstanceOf[`Ionic Enterprise Edition provides premier native solutionsComma UIComma Ampersand support for companies building cross-platform appsDot`]
   @scala.inline
   def LOCAL_CLI_NOT_FOUND: LOCAL_CLI_NOT_FOUND = "LOCAL_CLI_NOT_FOUND".asInstanceOf[LOCAL_CLI_NOT_FOUND]
   @scala.inline
@@ -425,7 +425,7 @@ object ionicStrings {
   @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
   @scala.inline
-  def `React Scripts`: `React Scripts` = "React Scripts".asInstanceOf[`React Scripts`]
+  def `React Scripts`: `React Scripts` = ("React Scripts").asInstanceOf[`React Scripts`]
   @scala.inline
   def SSH_INVALID_PRIVKEY: SSH_INVALID_PRIVKEY = "SSH_INVALID_PRIVKEY".asInstanceOf[SSH_INVALID_PRIVKEY]
   @scala.inline
@@ -433,9 +433,9 @@ object ionicStrings {
   @scala.inline
   def SSH_MISSING_PRIVKEY: SSH_MISSING_PRIVKEY = "SSH_MISSING_PRIVKEY".asInstanceOf[SSH_MISSING_PRIVKEY]
   @scala.inline
-  def `Target native iOS and Android with Apache Cordova`: `Target native iOS and Android with Apache Cordova` = "Target native iOS and Android with Apache Cordova".asInstanceOf[`Target native iOS and Android with Apache Cordova`]
+  def `Target native iOS and Android with Apache Cordova`: `Target native iOS and Android with Apache Cordova` = ("Target native iOS and Android with Apache Cordova").asInstanceOf[`Target native iOS and Android with Apache Cordova`]
   @scala.inline
-  def `Target native iOS and Android with CapacitorComma IonicApostrophes new native layer`: `Target native iOS and Android with CapacitorComma IonicApostrophes new native layer` = "Target native iOS and Android with Capacitor, Ionic's new native layer".asInstanceOf[`Target native iOS and Android with CapacitorComma IonicApostrophes new native layer`]
+  def `Target native iOS and Android with CapacitorComma IonicApostrophes new native layer`: `Target native iOS and Android with CapacitorComma IonicApostrophes new native layer` = ("Target native iOS and Android with Capacitor, Ionic's new native layer").asInstanceOf[`Target native iOS and Android with CapacitorComma IonicApostrophes new native layer`]
   @scala.inline
   def UNKNOWN_CONTENT_TYPE: UNKNOWN_CONTENT_TYPE = "UNKNOWN_CONTENT_TYPE".asInstanceOf[UNKNOWN_CONTENT_TYPE]
   @scala.inline
@@ -559,7 +559,7 @@ object ionicStrings {
   @scala.inline
   def npm: npm = "npm".asInstanceOf[npm]
   @scala.inline
-  def `npm CLI`: `npm CLI` = "npm CLI".asInstanceOf[`npm CLI`]
+  def `npm CLI`: `npm CLI` = ("npm CLI").asInstanceOf[`npm CLI`]
   @scala.inline
   def `npm-installed-locally`: `npm-installed-locally` = "npm-installed-locally".asInstanceOf[`npm-installed-locally`]
   @scala.inline

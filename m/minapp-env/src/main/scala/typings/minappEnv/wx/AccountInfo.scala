@@ -16,7 +16,6 @@ object AccountInfo {
   @scala.inline
   def apply(miniProgram: MiniProgram, plugin: Plugin): AccountInfo = {
     val __obj = js.Dynamic.literal(miniProgram = miniProgram.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AccountInfo]
   }
 }

@@ -14,14 +14,12 @@ trait AlertType extends js.Object
 
 object AlertType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def default: typings.reactNative.reactNativeStrings.default = "default".asInstanceOf[typings.reactNative.reactNativeStrings.default]
   @scala.inline
-  def default: typings.reactNative.reactNativeStrings.default = this.cast("default")
+  def `login-password`: typings.reactNative.reactNativeStrings.`login-password` = "login-password".asInstanceOf[typings.reactNative.reactNativeStrings.`login-password`]
   @scala.inline
-  def `login-password`: typings.reactNative.reactNativeStrings.`login-password` = this.cast("login-password")
+  def `plain-text`: typings.reactNative.reactNativeStrings.`plain-text` = "plain-text".asInstanceOf[typings.reactNative.reactNativeStrings.`plain-text`]
   @scala.inline
-  def `plain-text`: typings.reactNative.reactNativeStrings.`plain-text` = this.cast("plain-text")
-  @scala.inline
-  def `secure-text`: typings.reactNative.reactNativeStrings.`secure-text` = this.cast("secure-text")
+  def `secure-text`: typings.reactNative.reactNativeStrings.`secure-text` = "secure-text".asInstanceOf[typings.reactNative.reactNativeStrings.`secure-text`]
 }
 

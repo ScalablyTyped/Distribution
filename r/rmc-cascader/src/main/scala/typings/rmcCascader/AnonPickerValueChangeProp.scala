@@ -13,7 +13,6 @@ object AnonPickerValueChangeProp {
   @scala.inline
   def apply(pickerValueChangeProp: String, pickerValueProp: String): AnonPickerValueChangeProp = {
     val __obj = js.Dynamic.literal(pickerValueChangeProp = pickerValueChangeProp.asInstanceOf[js.Any], pickerValueProp = pickerValueProp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPickerValueChangeProp]
   }
 }

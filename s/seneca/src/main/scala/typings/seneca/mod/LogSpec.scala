@@ -17,20 +17,18 @@ trait LogSpec extends js.Object
 
 object LogSpec {
   @scala.inline
-  def all: typings.seneca.senecaStrings.all = this.cast("all")
+  def all: typings.seneca.senecaStrings.all = "all".asInstanceOf[typings.seneca.senecaStrings.all]
   @scala.inline
-  def any: typings.seneca.senecaStrings.any = this.cast("any")
+  def any: typings.seneca.senecaStrings.any = "any".asInstanceOf[typings.seneca.senecaStrings.any]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def print: typings.seneca.senecaStrings.print = "print".asInstanceOf[typings.seneca.senecaStrings.print]
   @scala.inline
-  def print: typings.seneca.senecaStrings.print = this.cast("print")
+  def quiet: typings.seneca.senecaStrings.quiet = "quiet".asInstanceOf[typings.seneca.senecaStrings.quiet]
   @scala.inline
-  def quiet: typings.seneca.senecaStrings.quiet = this.cast("quiet")
+  def silent: typings.seneca.senecaStrings.silent = "silent".asInstanceOf[typings.seneca.senecaStrings.silent]
   @scala.inline
-  def silent: typings.seneca.senecaStrings.silent = this.cast("silent")
+  def standard: typings.seneca.senecaStrings.standard = "standard".asInstanceOf[typings.seneca.senecaStrings.standard]
   @scala.inline
-  def standard: typings.seneca.senecaStrings.standard = this.cast("standard")
-  @scala.inline
-  def test: typings.seneca.senecaStrings.test = this.cast("test")
+  def test: typings.seneca.senecaStrings.test = "test".asInstanceOf[typings.seneca.senecaStrings.test]
 }
 

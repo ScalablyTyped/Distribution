@@ -20,7 +20,7 @@ object workingCopyEventReceiverMod extends js.Object {
     var eventSource: ^  | Null = js.native
     var workingCopyDataEventEmitter: js.Any = js.native
     var workingCopyId: js.Any = js.native
-    def isRunning(): Boolean = js.native
+    def isRunning: Boolean = js.native
     def onBuildResultEvent(callback: js.Function1[/* buildResultEvent */ IBuildResultEvent, Unit]): Unit = js.native
     def onWorkingCopyDataEvent(callback: js.Function1[/* workingCopyDataEvent */ IWorkingCopyDataEvent, Unit]): Unit = js.native
     def start(): Unit = js.native

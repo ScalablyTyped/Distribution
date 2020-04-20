@@ -13,7 +13,6 @@ object ServerInfo {
   @scala.inline
   def apply(redis_version: String, versions: js.Array[Double]): ServerInfo = {
     val __obj = js.Dynamic.literal(redis_version = redis_version.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ServerInfo]
   }
 }

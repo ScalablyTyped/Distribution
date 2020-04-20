@@ -1,6 +1,7 @@
 package typings.stellarSdk.horizonApiMod.Horizon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.stellarBase.mod.AssetType
 import typings.stellarSdk.stellarSdkStrings.data
 import typings.stellarSdk.stellarSdkStrings.effects
@@ -31,7 +32,7 @@ object AccountResponse {
   def apply(
     _links: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in T | 'self' ]: stellar-sdk.stellar-sdk/lib/horizon_api.Horizon.ResponseLink}
-    */ typings.stellarSdk.stellarSdkStrings.BaseResponse with js.Any,
+    */ typings.stellarSdk.stellarSdkStrings.BaseResponse with TopLevel[js.Any],
     account_id: String,
     balances: js.Array[BalanceLine[AssetType]],
     data: StringDictionary[String],
@@ -44,7 +45,6 @@ object AccountResponse {
     thresholds: AccountThresholds
   ): AccountResponse = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], account_id = account_id.asInstanceOf[js.Any], balances = balances.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], paging_token = paging_token.asInstanceOf[js.Any], sequence = sequence.asInstanceOf[js.Any], signers = signers.asInstanceOf[js.Any], subentry_count = subentry_count.asInstanceOf[js.Any], thresholds = thresholds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AccountResponse]
   }
 }

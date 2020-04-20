@@ -26,7 +26,6 @@ object AnonPhiStart {
     widthSegments: Double
   ): AnonPhiStart = {
     val __obj = js.Dynamic.literal(heightSegments = heightSegments.asInstanceOf[js.Any], phiLength = phiLength.asInstanceOf[js.Any], phiStart = phiStart.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], thetaLength = thetaLength.asInstanceOf[js.Any], thetaStart = thetaStart.asInstanceOf[js.Any], widthSegments = widthSegments.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPhiStart]
   }
 }

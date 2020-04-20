@@ -16,7 +16,6 @@ object DeleteDomainConfigurationRequest {
   @scala.inline
   def apply(domainConfigurationName: DomainConfigurationName): DeleteDomainConfigurationRequest = {
     val __obj = js.Dynamic.literal(domainConfigurationName = domainConfigurationName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteDomainConfigurationRequest]
   }
 }

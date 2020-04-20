@@ -22,7 +22,6 @@ object CustomGallery {
     tags: js.Array[String]
   ): CustomGallery = {
     val __obj = js.Dynamic.literal(account_url = account_url.asInstanceOf[js.Any], item_count = item_count.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CustomGallery]
   }
 }

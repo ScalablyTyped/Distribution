@@ -14,7 +14,6 @@ object Database {
   @scala.inline
   def apply[Content /* <: js.Object */](liveFind: RequestDef[Content] => LiveFeed[Content]): Database[Content] = {
     val __obj = js.Dynamic.literal(liveFind = js.Any.fromFunction1(liveFind))
-  
     __obj.asInstanceOf[Database[Content]]
   }
 }

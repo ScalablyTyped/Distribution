@@ -3,6 +3,7 @@ package typings.std
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -90,13 +91,13 @@ trait ObjectConstructor
     * Prevents the modification of existing property attributes and values, and prevents the addition of new properties.
     * @param o Object on which to lock the attributes.
     */
-  def freeze[T /* <: js.Function */](f: T): T = js.native
+  def freeze[T](o: T): T = js.native
   /**
     * Prevents the modification of existing property attributes and values, and prevents the addition of new properties.
     * @param o Object on which to lock the attributes.
     */
   @JSName("freeze")
-  def freeze_T[T](o: T): T = js.native
+  def freeze_T_Function[T /* <: js.Function */](f: T): T = js.native
   /**
     * Returns an object created by key-value entries for properties and methods
     * @param entries An iterable object that contains key-value entries for properties and methods.
@@ -109,7 +110,7 @@ trait ObjectConstructor
   @JSName("fromEntries")
   def fromEntries_T_Intersection[T](entries: Iterable[js.Tuple2[PropertyKey, T]]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in std.PropertyKey ]: T}
-    */ typings.std.stdStrings.ObjectConstructor with js.Any = js.native
+    */ typings.std.stdStrings.ObjectConstructor with TopLevel[js.Any] = js.native
   /**
     * Gets the own property descriptor of the specified object.
     * An own property descriptor is one that is defined directly on the object and is not inherited from the object's prototype.
@@ -121,7 +122,7 @@ trait ObjectConstructor
     * Returns an object containing all own property descriptors of an object
     * @param o Object that contains the properties and methods. This can be an object that you created or an existing Document Object Model (DOM) object.
     */
-  def getOwnPropertyDescriptors[T](o: T): typings.std.stdStrings.ObjectConstructor with T with StringDictionary[PropertyDescriptor] = js.native
+  def getOwnPropertyDescriptors[T](o: T): typings.std.stdStrings.ObjectConstructor with TopLevel[T] with StringDictionary[PropertyDescriptor] = js.native
   /**
     * Returns the names of the own properties of an object. The own properties of an object are those that are defined directly
     * on that object, and are not inherited from the object's prototype. The properties of an object include both fields (objects) and functions.

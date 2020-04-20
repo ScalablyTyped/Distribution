@@ -12,7 +12,6 @@ object StripeCheckoutStatic {
   @scala.inline
   def apply(configure: StripeCheckoutOptions => StripeCheckoutHandler): StripeCheckoutStatic = {
     val __obj = js.Dynamic.literal(configure = js.Any.fromFunction1(configure))
-  
     __obj.asInstanceOf[StripeCheckoutStatic]
   }
 }

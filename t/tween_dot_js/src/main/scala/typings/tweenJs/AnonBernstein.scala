@@ -20,7 +20,6 @@ object AnonBernstein {
     Linear: (Double, Double, Double) => Double
   ): AnonBernstein = {
     val __obj = js.Dynamic.literal(Bernstein = js.Any.fromFunction2(Bernstein), CatmullRom = js.Any.fromFunction5(CatmullRom), Factorial = js.Any.fromFunction1(Factorial), Linear = js.Any.fromFunction3(Linear))
-  
     __obj.asInstanceOf[AnonBernstein]
   }
 }

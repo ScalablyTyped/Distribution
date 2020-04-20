@@ -13,7 +13,6 @@ object SnapToRoadsResponse {
   @scala.inline
   def apply(snappedPoints: js.Array[SnappedPoint]): SnapToRoadsResponse = {
     val __obj = js.Dynamic.literal(snappedPoints = snappedPoints.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SnapToRoadsResponse]
   }
 }

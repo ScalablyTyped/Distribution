@@ -16,7 +16,6 @@ object StartMonitoringScheduleRequest {
   @scala.inline
   def apply(MonitoringScheduleName: MonitoringScheduleName): StartMonitoringScheduleRequest = {
     val __obj = js.Dynamic.literal(MonitoringScheduleName = MonitoringScheduleName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StartMonitoringScheduleRequest]
   }
 }

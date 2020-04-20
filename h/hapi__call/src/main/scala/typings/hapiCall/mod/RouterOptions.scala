@@ -12,7 +12,6 @@ object RouterOptions {
   @scala.inline
   def apply(isCaseSensitive: Boolean): RouterOptions = {
     val __obj = js.Dynamic.literal(isCaseSensitive = isCaseSensitive.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RouterOptions]
   }
 }

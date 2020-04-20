@@ -20,7 +20,6 @@ object ChainableBase {
     test: String => SugarDefaultChainable[Boolean]
   ): ChainableBase[RawValue] = {
     val __obj = js.Dynamic.literal(exec = js.Any.fromFunction1(exec), raw = raw.asInstanceOf[js.Any], test = js.Any.fromFunction1(test))
-  
     __obj.asInstanceOf[ChainableBase[RawValue]]
   }
 }

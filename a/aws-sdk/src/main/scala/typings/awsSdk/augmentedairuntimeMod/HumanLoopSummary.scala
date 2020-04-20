@@ -11,11 +11,11 @@ trait HumanLoopSummary extends js.Object {
     */
   var CreationTime: js.UndefOr[Timestamp] = js.native
   /**
-    * The reason why the human loop failed. A failure reason is returned only when the status of the human loop is Failed.
+    * The reason why the human loop failed. A failure reason is returned when the status of the human loop is Failed.
     */
   var FailureReason: js.UndefOr[typings.awsSdk.augmentedairuntimeMod.FailureReason] = js.native
   /**
-    * The Amazon Resource Name (ARN) of the flow definition.
+    * The Amazon Resource Name (ARN) of the flow definition used to configure the human loop.
     */
   var FlowDefinitionArn: js.UndefOr[typings.awsSdk.augmentedairuntimeMod.FlowDefinitionArn] = js.native
   /**
@@ -23,7 +23,7 @@ trait HumanLoopSummary extends js.Object {
     */
   var HumanLoopName: js.UndefOr[typings.awsSdk.augmentedairuntimeMod.HumanLoopName] = js.native
   /**
-    * The status of the human loop. Valid values:
+    * The status of the human loop. 
     */
   var HumanLoopStatus: js.UndefOr[typings.awsSdk.augmentedairuntimeMod.HumanLoopStatus] = js.native
 }

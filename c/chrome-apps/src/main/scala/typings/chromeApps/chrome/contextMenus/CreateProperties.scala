@@ -4,22 +4,38 @@ import typings.chromeApps.AnonALL
 import typings.chromeApps.AnonCHECKBOX
 import typings.chromeApps.chrome.ToStringLiteral
 import typings.chromeApps.chrome.integer
-import typings.chromeApps.chromeAppsStrings.all_
-import typings.chromeApps.chromeAppsStrings.audio
-import typings.chromeApps.chromeAppsStrings.browser_action
-import typings.chromeApps.chromeAppsStrings.checkbox
-import typings.chromeApps.chromeAppsStrings.editable
-import typings.chromeApps.chromeAppsStrings.frame
-import typings.chromeApps.chromeAppsStrings.image
-import typings.chromeApps.chromeAppsStrings.launcher
-import typings.chromeApps.chromeAppsStrings.link
-import typings.chromeApps.chromeAppsStrings.normal
-import typings.chromeApps.chromeAppsStrings.page
-import typings.chromeApps.chromeAppsStrings.page_action
-import typings.chromeApps.chromeAppsStrings.radio
-import typings.chromeApps.chromeAppsStrings.selection
-import typings.chromeApps.chromeAppsStrings.separator
-import typings.chromeApps.chromeAppsStrings.video
+import typings.chromeApps.chromeAppsStrings.ALL
+import typings.chromeApps.chromeAppsStrings.AUDIO
+import typings.chromeApps.chromeAppsStrings.BROWSER_ACTION
+import typings.chromeApps.chromeAppsStrings.CHECKBOX
+import typings.chromeApps.chromeAppsStrings.EDITABLE
+import typings.chromeApps.chromeAppsStrings.FRAME
+import typings.chromeApps.chromeAppsStrings.IMAGE
+import typings.chromeApps.chromeAppsStrings.LAUNCHER
+import typings.chromeApps.chromeAppsStrings.LINK
+import typings.chromeApps.chromeAppsStrings.NORMAL
+import typings.chromeApps.chromeAppsStrings.PAGE
+import typings.chromeApps.chromeAppsStrings.PAGE_ACTION
+import typings.chromeApps.chromeAppsStrings.RADIO
+import typings.chromeApps.chromeAppsStrings.SELECTION
+import typings.chromeApps.chromeAppsStrings.SEPARATOR
+import typings.chromeApps.chromeAppsStrings.VIDEO
+import typings.chromeApps.chromeAppsStrings.all__
+import typings.chromeApps.chromeAppsStrings.audio_
+import typings.chromeApps.chromeAppsStrings.browser_action_
+import typings.chromeApps.chromeAppsStrings.checkbox_
+import typings.chromeApps.chromeAppsStrings.editable_
+import typings.chromeApps.chromeAppsStrings.frame_
+import typings.chromeApps.chromeAppsStrings.image_
+import typings.chromeApps.chromeAppsStrings.launcher_
+import typings.chromeApps.chromeAppsStrings.link_
+import typings.chromeApps.chromeAppsStrings.normal_
+import typings.chromeApps.chromeAppsStrings.page_
+import typings.chromeApps.chromeAppsStrings.page_action_
+import typings.chromeApps.chromeAppsStrings.radio_
+import typings.chromeApps.chromeAppsStrings.selection_
+import typings.chromeApps.chromeAppsStrings.separator_
+import typings.chromeApps.chromeAppsStrings.video_
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -42,10 +58,10 @@ trait CreateProperties extends js.Object {
     js.Array[
       ToStringLiteral[
         AnonALL, 
-        String, 
+        ALL | PAGE | FRAME | SELECTION | LINK | EDITABLE | IMAGE | VIDEO | AUDIO | LAUNCHER | BROWSER_ACTION | PAGE_ACTION, 
         Exclude[
-          String, 
-          browser_action | selection | video | launcher | image | editable | page_action | page | audio | frame | all_ | link
+          ALL | PAGE | FRAME | SELECTION | LINK | EDITABLE | IMAGE | VIDEO | AUDIO | LAUNCHER | BROWSER_ACTION | PAGE_ACTION, 
+          browser_action_ | selection_ | video_ | launcher_ | image_ | editable_ | page_action_ | page_ | audio_ | frame_ | all__ | link_
         ]
       ]
     ]
@@ -98,7 +114,11 @@ trait CreateProperties extends js.Object {
     * @see ItemType
     */
   var `type`: js.UndefOr[
-    ToStringLiteral[AnonCHECKBOX, String, Exclude[String, normal | checkbox | radio | separator]]
+    ToStringLiteral[
+      AnonCHECKBOX, 
+      NORMAL | CHECKBOX | RADIO | SEPARATOR, 
+      Exclude[NORMAL | CHECKBOX | RADIO | SEPARATOR, normal_ | checkbox_ | radio_ | separator_]
+    ]
   ] = js.undefined
   /**
     * Whether the item is visible in the menu.
@@ -114,10 +134,10 @@ object CreateProperties {
     contexts: js.Array[
       ToStringLiteral[
         AnonALL, 
-        String, 
+        ALL | PAGE | FRAME | SELECTION | LINK | EDITABLE | IMAGE | VIDEO | AUDIO | LAUNCHER | BROWSER_ACTION | PAGE_ACTION, 
         Exclude[
-          String, 
-          browser_action | selection | video | launcher | image | editable | page_action | page | audio | frame | all_ | link
+          ALL | PAGE | FRAME | SELECTION | LINK | EDITABLE | IMAGE | VIDEO | AUDIO | LAUNCHER | BROWSER_ACTION | PAGE_ACTION, 
+          browser_action_ | selection_ | video_ | launcher_ | image_ | editable_ | page_action_ | page_ | audio_ | frame_ | all__ | link_
         ]
       ]
     ] = null,
@@ -128,7 +148,11 @@ object CreateProperties {
     parentId: integer | String = null,
     targetUrlPatterns: js.Array[String] = null,
     title: String = null,
-    `type`: ToStringLiteral[AnonCHECKBOX, String, Exclude[String, normal | checkbox | radio | separator]] = null,
+    `type`: ToStringLiteral[
+      AnonCHECKBOX, 
+      NORMAL | CHECKBOX | RADIO | SEPARATOR, 
+      Exclude[NORMAL | CHECKBOX | RADIO | SEPARATOR, normal_ | checkbox_ | radio_ | separator_]
+    ] = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): CreateProperties = {
     val __obj = js.Dynamic.literal()

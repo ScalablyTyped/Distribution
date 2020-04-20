@@ -16,7 +16,6 @@ object DeleteKeyPairRequest {
   @scala.inline
   def apply(keyPairName: ResourceName): DeleteKeyPairRequest = {
     val __obj = js.Dynamic.literal(keyPairName = keyPairName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteKeyPairRequest]
   }
 }

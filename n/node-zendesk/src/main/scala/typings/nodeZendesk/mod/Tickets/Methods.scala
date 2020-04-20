@@ -78,7 +78,6 @@ object Methods {
     updateMany: (UpdateManyPayload, ZendeskCallback[_, _]) => typings.nodeZendesk.mod.JobStatuses.ResponsePayload
   ): Methods = {
     val __obj = js.Dynamic.literal(addTags = js.Any.fromFunction3(addTags), create = js.Any.fromFunction2(create), createMany = js.Any.fromFunction2(createMany), delete = js.Any.fromFunction2(delete), deleteMany = js.Any.fromFunction2(deleteMany), export = js.Any.fromFunction2(export), exportAudit = js.Any.fromFunction2(exportAudit), exportSample = js.Any.fromFunction2(exportSample), getComments = js.Any.fromFunction2(getComments), incremental = js.Any.fromFunction2(incremental), incrementalInclude = js.Any.fromFunction3(incrementalInclude), incrementalSample = js.Any.fromFunction2(incrementalSample), list = js.Any.fromFunction1(list), listAssigned = js.Any.fromFunction2(listAssigned), listByOrganization = js.Any.fromFunction2(listByOrganization), listByUserCCD = js.Any.fromFunction2(listByUserCCD), listByUserRequested = js.Any.fromFunction2(listByUserRequested), listCollaborators = js.Any.fromFunction2(listCollaborators), listIncidents = js.Any.fromFunction2(listIncidents), listMetrics = js.Any.fromFunction2(listMetrics), listRecent = js.Any.fromFunction1(listRecent), listWithFilter = js.Any.fromFunction3(listWithFilter), merge = js.Any.fromFunction3(merge), show = js.Any.fromFunction2(show), showMany = js.Any.fromFunction2(showMany), update = js.Any.fromFunction3(update), updateMany = js.Any.fromFunction2(updateMany))
-  
     __obj.asInstanceOf[Methods]
   }
 }

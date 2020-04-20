@@ -12,7 +12,6 @@ object AnonMaskValue {
   @scala.inline
   def apply(maskValue: Double): AnonMaskValue = {
     val __obj = js.Dynamic.literal(maskValue = maskValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMaskValue]
   }
 }

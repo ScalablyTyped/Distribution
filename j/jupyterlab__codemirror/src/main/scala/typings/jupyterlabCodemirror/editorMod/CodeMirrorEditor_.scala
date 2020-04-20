@@ -190,7 +190,7 @@ class CodeMirrorEditor_ protected () extends IEditor {
     * The widget of a character in the editor in pixels.
     */
   @JSName("charWidth")
-  def charWidth_MCodeMirrorEditor_(): Double = js.native
+  def charWidth_MCodeMirrorEditor_ : Double = js.native
   def cursorCoords(where: Boolean): AnonBottom = js.native
   @JSName("cursorCoords")
   def cursorCoords_local(where: Boolean, mode: local): AnonBottom = js.native
@@ -214,11 +214,11 @@ class CodeMirrorEditor_ protected () extends IEditor {
   /**
     * Get the codemirror doc wrapped by the widget.
     */
-  def doc(): Doc = js.native
+  def doc: Doc = js.native
   /**
     * Get the codemirror editor wrapped by the editor.
     */
-  def editor(): Editor = js.native
+  def editor: Editor = js.native
   /**
     * Execute a codemirror command on the editor.
     *
@@ -333,23 +333,23 @@ class CodeMirrorEditor_ protected () extends IEditor {
     * Tests whether the editor is disposed.
     */
   @JSName("isDisposed")
-  def isDisposed_MCodeMirrorEditor_(): Boolean = js.native
+  def isDisposed_MCodeMirrorEditor_ : Boolean = js.native
   def lastLine(): Double = js.native
   /**
     * Get the number of lines in the editor.
     */
   @JSName("lineCount")
-  def lineCount_MCodeMirrorEditor_(): Double = js.native
+  def lineCount_MCodeMirrorEditor_ : Double = js.native
   /**
     * The height of a line in the editor in pixels.
     */
   @JSName("lineHeight")
-  def lineHeight_MCodeMirrorEditor_(): Double = js.native
+  def lineHeight_MCodeMirrorEditor_ : Double = js.native
   /**
     * Returns a model for this editor.
     */
   @JSName("model")
-  def model_MCodeMirrorEditor_(): IModel = js.native
+  def model_MCodeMirrorEditor_ : IModel = js.native
   /**
     * Handle keydown events from the editor.
     */
@@ -369,7 +369,7 @@ class CodeMirrorEditor_ protected () extends IEditor {
     * The selection style of this editor.
     */
   @JSName("selectionStyle")
-  def selectionStyle_MCodeMirrorEditor_(): ISelectionStyle = js.native
+  def selectionStyle_MCodeMirrorEditor_ : ISelectionStyle = js.native
   @JSName("selectionStyle")
   def selectionStyle_MCodeMirrorEditor_(value: ISelectionStyle): js.Any = js.native
   /**
@@ -488,12 +488,12 @@ class CodeMirrorEditor_ protected () extends IEditor {
     */
   /* CompleteClass */
   override def setSelections(selections: js.Array[IRange]): Unit = js.native
-  def state(): js.Any = js.native
+  def state: js.Any = js.native
   /**
     * The uuid of this editor;
     */
   @JSName("uuid")
-  def uuid_MCodeMirrorEditor_(): String = js.native
+  def uuid_MCodeMirrorEditor_ : String = js.native
   @JSName("uuid")
   def uuid_MCodeMirrorEditor_(value: String): js.Any = js.native
 }

@@ -27,7 +27,6 @@ object Lookup {
     traverse: js.Function2[/* key */ ServiceIdentifier[_], /* value */ js.Array[T], Unit] => Unit
   ): Lookup[T] = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), get = js.Any.fromFunction1(get), getMap = js.Any.fromFunction0(getMap), hasKey = js.Any.fromFunction1(hasKey), remove = js.Any.fromFunction1(remove), removeByCondition = js.Any.fromFunction1(removeByCondition), traverse = js.Any.fromFunction1(traverse))
-  
     __obj.asInstanceOf[Lookup[T]]
   }
 }

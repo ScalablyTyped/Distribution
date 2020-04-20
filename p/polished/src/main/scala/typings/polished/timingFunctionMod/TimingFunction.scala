@@ -34,54 +34,52 @@ trait TimingFunction extends js.Object
 
 object TimingFunction {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def easeInBack: typings.polished.polishedStrings.easeInBack = "easeInBack".asInstanceOf[typings.polished.polishedStrings.easeInBack]
   @scala.inline
-  def easeInBack: typings.polished.polishedStrings.easeInBack = this.cast("easeInBack")
+  def easeInCirc: typings.polished.polishedStrings.easeInCirc = "easeInCirc".asInstanceOf[typings.polished.polishedStrings.easeInCirc]
   @scala.inline
-  def easeInCirc: typings.polished.polishedStrings.easeInCirc = this.cast("easeInCirc")
+  def easeInCubic: typings.polished.polishedStrings.easeInCubic = "easeInCubic".asInstanceOf[typings.polished.polishedStrings.easeInCubic]
   @scala.inline
-  def easeInCubic: typings.polished.polishedStrings.easeInCubic = this.cast("easeInCubic")
+  def easeInExpo: typings.polished.polishedStrings.easeInExpo = "easeInExpo".asInstanceOf[typings.polished.polishedStrings.easeInExpo]
   @scala.inline
-  def easeInExpo: typings.polished.polishedStrings.easeInExpo = this.cast("easeInExpo")
+  def easeInOutBack: typings.polished.polishedStrings.easeInOutBack = "easeInOutBack".asInstanceOf[typings.polished.polishedStrings.easeInOutBack]
   @scala.inline
-  def easeInOutBack: typings.polished.polishedStrings.easeInOutBack = this.cast("easeInOutBack")
+  def easeInOutCirc: typings.polished.polishedStrings.easeInOutCirc = "easeInOutCirc".asInstanceOf[typings.polished.polishedStrings.easeInOutCirc]
   @scala.inline
-  def easeInOutCirc: typings.polished.polishedStrings.easeInOutCirc = this.cast("easeInOutCirc")
+  def easeInOutCubic: typings.polished.polishedStrings.easeInOutCubic = "easeInOutCubic".asInstanceOf[typings.polished.polishedStrings.easeInOutCubic]
   @scala.inline
-  def easeInOutCubic: typings.polished.polishedStrings.easeInOutCubic = this.cast("easeInOutCubic")
+  def easeInOutExpo: typings.polished.polishedStrings.easeInOutExpo = "easeInOutExpo".asInstanceOf[typings.polished.polishedStrings.easeInOutExpo]
   @scala.inline
-  def easeInOutExpo: typings.polished.polishedStrings.easeInOutExpo = this.cast("easeInOutExpo")
+  def easeInOutQuad: typings.polished.polishedStrings.easeInOutQuad = "easeInOutQuad".asInstanceOf[typings.polished.polishedStrings.easeInOutQuad]
   @scala.inline
-  def easeInOutQuad: typings.polished.polishedStrings.easeInOutQuad = this.cast("easeInOutQuad")
+  def easeInOutQuart: typings.polished.polishedStrings.easeInOutQuart = "easeInOutQuart".asInstanceOf[typings.polished.polishedStrings.easeInOutQuart]
   @scala.inline
-  def easeInOutQuart: typings.polished.polishedStrings.easeInOutQuart = this.cast("easeInOutQuart")
+  def easeInOutQuint: typings.polished.polishedStrings.easeInOutQuint = "easeInOutQuint".asInstanceOf[typings.polished.polishedStrings.easeInOutQuint]
   @scala.inline
-  def easeInOutQuint: typings.polished.polishedStrings.easeInOutQuint = this.cast("easeInOutQuint")
+  def easeInOutSine: typings.polished.polishedStrings.easeInOutSine = "easeInOutSine".asInstanceOf[typings.polished.polishedStrings.easeInOutSine]
   @scala.inline
-  def easeInOutSine: typings.polished.polishedStrings.easeInOutSine = this.cast("easeInOutSine")
+  def easeInQuad: typings.polished.polishedStrings.easeInQuad = "easeInQuad".asInstanceOf[typings.polished.polishedStrings.easeInQuad]
   @scala.inline
-  def easeInQuad: typings.polished.polishedStrings.easeInQuad = this.cast("easeInQuad")
+  def easeInQuart: typings.polished.polishedStrings.easeInQuart = "easeInQuart".asInstanceOf[typings.polished.polishedStrings.easeInQuart]
   @scala.inline
-  def easeInQuart: typings.polished.polishedStrings.easeInQuart = this.cast("easeInQuart")
+  def easeInQuint: typings.polished.polishedStrings.easeInQuint = "easeInQuint".asInstanceOf[typings.polished.polishedStrings.easeInQuint]
   @scala.inline
-  def easeInQuint: typings.polished.polishedStrings.easeInQuint = this.cast("easeInQuint")
+  def easeInSine: typings.polished.polishedStrings.easeInSine = "easeInSine".asInstanceOf[typings.polished.polishedStrings.easeInSine]
   @scala.inline
-  def easeInSine: typings.polished.polishedStrings.easeInSine = this.cast("easeInSine")
+  def easeOutBack: typings.polished.polishedStrings.easeOutBack = "easeOutBack".asInstanceOf[typings.polished.polishedStrings.easeOutBack]
   @scala.inline
-  def easeOutBack: typings.polished.polishedStrings.easeOutBack = this.cast("easeOutBack")
+  def easeOutCirc: typings.polished.polishedStrings.easeOutCirc = "easeOutCirc".asInstanceOf[typings.polished.polishedStrings.easeOutCirc]
   @scala.inline
-  def easeOutCirc: typings.polished.polishedStrings.easeOutCirc = this.cast("easeOutCirc")
+  def easeOutCubic: typings.polished.polishedStrings.easeOutCubic = "easeOutCubic".asInstanceOf[typings.polished.polishedStrings.easeOutCubic]
   @scala.inline
-  def easeOutCubic: typings.polished.polishedStrings.easeOutCubic = this.cast("easeOutCubic")
+  def easeOutExpo: typings.polished.polishedStrings.easeOutExpo = "easeOutExpo".asInstanceOf[typings.polished.polishedStrings.easeOutExpo]
   @scala.inline
-  def easeOutExpo: typings.polished.polishedStrings.easeOutExpo = this.cast("easeOutExpo")
+  def easeOutQuad: typings.polished.polishedStrings.easeOutQuad = "easeOutQuad".asInstanceOf[typings.polished.polishedStrings.easeOutQuad]
   @scala.inline
-  def easeOutQuad: typings.polished.polishedStrings.easeOutQuad = this.cast("easeOutQuad")
+  def easeOutQuart: typings.polished.polishedStrings.easeOutQuart = "easeOutQuart".asInstanceOf[typings.polished.polishedStrings.easeOutQuart]
   @scala.inline
-  def easeOutQuart: typings.polished.polishedStrings.easeOutQuart = this.cast("easeOutQuart")
+  def easeOutQuint: typings.polished.polishedStrings.easeOutQuint = "easeOutQuint".asInstanceOf[typings.polished.polishedStrings.easeOutQuint]
   @scala.inline
-  def easeOutQuint: typings.polished.polishedStrings.easeOutQuint = this.cast("easeOutQuint")
-  @scala.inline
-  def easeOutSine: typings.polished.polishedStrings.easeOutSine = this.cast("easeOutSine")
+  def easeOutSine: typings.polished.polishedStrings.easeOutSine = "easeOutSine".asInstanceOf[typings.polished.polishedStrings.easeOutSine]
 }
 

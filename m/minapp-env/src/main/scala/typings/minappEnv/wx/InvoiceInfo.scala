@@ -18,7 +18,6 @@ object InvoiceInfo {
   @scala.inline
   def apply(cardId: String, encryptCode: String, publisherAppId: String): InvoiceInfo = {
     val __obj = js.Dynamic.literal(cardId = cardId.asInstanceOf[js.Any], encryptCode = encryptCode.asInstanceOf[js.Any], publisherAppId = publisherAppId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InvoiceInfo]
   }
 }

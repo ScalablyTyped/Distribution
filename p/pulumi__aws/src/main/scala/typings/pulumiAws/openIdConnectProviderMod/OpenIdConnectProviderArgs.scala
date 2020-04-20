@@ -29,7 +29,6 @@ object OpenIdConnectProviderArgs {
     url: Input[String]
   ): OpenIdConnectProviderArgs = {
     val __obj = js.Dynamic.literal(clientIdLists = clientIdLists.asInstanceOf[js.Any], thumbprintLists = thumbprintLists.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OpenIdConnectProviderArgs]
   }
 }

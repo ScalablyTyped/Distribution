@@ -24,7 +24,6 @@ object Theming {
     withTheme: /* comp */ ComponentType[AnonTheme[Theme]] => ComponentType[AnonTheme[Theme] with AnonThemeNonNullable[Theme]]
   ): Theming[Theme] = {
     val __obj = js.Dynamic.literal(ThemeProvider = ThemeProvider.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], useTheme = js.Any.fromFunction0(useTheme), withTheme = js.Any.fromFunction1(withTheme))
-  
     __obj.asInstanceOf[Theming[Theme]]
   }
 }

@@ -39,7 +39,6 @@ object ActionResponse {
   @scala.inline
   def apply(printJson: () => String): ActionResponse = {
     val __obj = js.Dynamic.literal(printJson = js.Any.fromFunction0(printJson))
-  
     __obj.asInstanceOf[ActionResponse]
   }
 }

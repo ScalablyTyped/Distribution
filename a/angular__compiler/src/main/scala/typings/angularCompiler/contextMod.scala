@@ -65,9 +65,9 @@ object contextMod extends js.Object {
       */
     def forkChildContext(index: Double, templateIndex: Double, meta: I18nMeta): I18nContext = js.native
     def getSerializedPlaceholders(): Map[String, js.Array[_]] = js.native
-    def icus(): js.Any = js.native
-    def isResolved(): Boolean = js.native
-    def isRoot(): Boolean = js.native
+    def icus: js.Any = js.native
+    def isResolved: Boolean = js.native
+    def isRoot: Boolean = js.native
     /**
       * Reconciles child context into parent one once the end of the i18n block is reached (i18nEnd).
       *

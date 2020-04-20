@@ -32,28 +32,26 @@ trait WdSeekView extends js.Object
 
 object WdSeekView {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdSeekCurrentPageFooter: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def wdSeekCurrentPageFooter: `10` = this.cast(10)
+  def wdSeekCurrentPageHeader: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def wdSeekCurrentPageHeader: `9` = this.cast(9)
+  def wdSeekEndnotes: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def wdSeekEndnotes: `8` = this.cast(8)
+  def wdSeekEvenPagesFooter: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdSeekEvenPagesFooter: `6` = this.cast(6)
+  def wdSeekEvenPagesHeader: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdSeekEvenPagesHeader: `3` = this.cast(3)
+  def wdSeekFirstPageFooter: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdSeekFirstPageFooter: `5` = this.cast(5)
+  def wdSeekFirstPageHeader: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdSeekFirstPageHeader: `2` = this.cast(2)
+  def wdSeekFootnotes: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def wdSeekFootnotes: `7` = this.cast(7)
+  def wdSeekMainDocument: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdSeekMainDocument: `0` = this.cast(0)
+  def wdSeekPrimaryFooter: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdSeekPrimaryFooter: `4` = this.cast(4)
-  @scala.inline
-  def wdSeekPrimaryHeader: `1` = this.cast(1)
+  def wdSeekPrimaryHeader: `1` = 1.asInstanceOf[`1`]
 }
 

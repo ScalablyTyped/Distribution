@@ -24,7 +24,6 @@ object area {
     remove: typings.ckeditor.CKEDITOR.plugins.notification => Unit
   ): area = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), editor = editor.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], notifications = notifications.asInstanceOf[js.Any], remove = js.Any.fromFunction1(remove))
-  
     __obj.asInstanceOf[area]
   }
 }

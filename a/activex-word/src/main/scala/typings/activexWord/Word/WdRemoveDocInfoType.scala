@@ -40,36 +40,34 @@ trait WdRemoveDocInfoType extends js.Object
 
 object WdRemoveDocInfoType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdRDIAll: `99` = 99.asInstanceOf[`99`]
   @scala.inline
-  def wdRDIAll: `99` = this.cast(99)
+  def wdRDIComments: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdRDIComments: `1` = this.cast(1)
+  def wdRDIContentType: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def wdRDIContentType: `16` = this.cast(16)
+  def wdRDIDocumentManagementPolicy: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def wdRDIDocumentManagementPolicy: `15` = this.cast(15)
+  def wdRDIDocumentProperties: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def wdRDIDocumentProperties: `8` = this.cast(8)
+  def wdRDIDocumentServerProperties: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def wdRDIDocumentServerProperties: `14` = this.cast(14)
+  def wdRDIDocumentWorkspace: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def wdRDIDocumentWorkspace: `10` = this.cast(10)
+  def wdRDIEmailHeader: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdRDIEmailHeader: `5` = this.cast(5)
+  def wdRDIInkAnnotations: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def wdRDIInkAnnotations: `11` = this.cast(11)
+  def wdRDIRemovePersonalInformation: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdRDIRemovePersonalInformation: `4` = this.cast(4)
+  def wdRDIRevisions: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdRDIRevisions: `2` = this.cast(2)
+  def wdRDIRoutingSlip: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdRDIRoutingSlip: `6` = this.cast(6)
+  def wdRDISendForReview: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def wdRDISendForReview: `7` = this.cast(7)
+  def wdRDITemplate: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def wdRDITemplate: `9` = this.cast(9)
-  @scala.inline
-  def wdRDIVersions: `3` = this.cast(3)
+  def wdRDIVersions: `3` = 3.asInstanceOf[`3`]
 }
 

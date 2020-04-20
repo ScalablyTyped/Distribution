@@ -17,7 +17,6 @@ object WebCLBuffer {
     release: () => Unit
   ): WebCLBuffer = {
     val __obj = js.Dynamic.literal(createSubBuffer = js.Any.fromFunction3(createSubBuffer), getInfo = js.Any.fromFunction1(getInfo), release = js.Any.fromFunction0(release))
-  
     __obj.asInstanceOf[WebCLBuffer]
   }
 }

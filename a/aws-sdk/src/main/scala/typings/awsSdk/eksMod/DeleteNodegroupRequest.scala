@@ -20,7 +20,6 @@ object DeleteNodegroupRequest {
   @scala.inline
   def apply(clusterName: String, nodegroupName: String): DeleteNodegroupRequest = {
     val __obj = js.Dynamic.literal(clusterName = clusterName.asInstanceOf[js.Any], nodegroupName = nodegroupName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteNodegroupRequest]
   }
 }

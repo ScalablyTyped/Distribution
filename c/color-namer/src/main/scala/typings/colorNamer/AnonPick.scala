@@ -13,7 +13,6 @@ object AnonPick {
   @scala.inline
   def apply[T /* <: Palette */](pick: js.Array[T]): AnonPick[T] = {
     val __obj = js.Dynamic.literal(pick = pick.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPick[T]]
   }
 }

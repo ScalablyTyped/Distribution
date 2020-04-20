@@ -14,7 +14,6 @@ object HtmlWriter {
   @scala.inline
   def apply(getHtml: DocumentFragment => String): HtmlWriter = {
     val __obj = js.Dynamic.literal(getHtml = js.Any.fromFunction1(getHtml))
-  
     __obj.asInstanceOf[HtmlWriter]
   }
 }

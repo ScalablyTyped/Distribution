@@ -13,7 +13,6 @@ object ActionLoggerState {
   @scala.inline
   def apply(actions: js.Array[ActionDisplay]): ActionLoggerState = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ActionLoggerState]
   }
 }

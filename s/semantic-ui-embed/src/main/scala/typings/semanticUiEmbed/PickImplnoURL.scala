@@ -13,7 +13,6 @@ object PickImplnoURL {
   @scala.inline
   def apply(noURL: String): PickImplnoURL = {
     val __obj = js.Dynamic.literal(noURL = noURL.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplnoURL]
   }
 }

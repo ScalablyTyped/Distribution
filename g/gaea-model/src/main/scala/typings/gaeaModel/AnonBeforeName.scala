@@ -15,7 +15,6 @@ object AnonBeforeName {
   @scala.inline
   def apply(beforeName: String, beforeProps: ComponentProps): AnonBeforeName = {
     val __obj = js.Dynamic.literal(beforeName = beforeName.asInstanceOf[js.Any], beforeProps = beforeProps.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBeforeName]
   }
 }

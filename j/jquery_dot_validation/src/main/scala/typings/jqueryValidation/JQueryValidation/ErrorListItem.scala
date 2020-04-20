@@ -14,7 +14,6 @@ object ErrorListItem {
   @scala.inline
   def apply(element: HTMLElement, message: String): ErrorListItem = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ErrorListItem]
   }
 }

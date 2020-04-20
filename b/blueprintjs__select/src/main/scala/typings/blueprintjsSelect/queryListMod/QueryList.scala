@@ -32,12 +32,12 @@ class QueryList[T] protected ()
     * @param startIndex item to start iteration
     */
   var getNextActiveItem: js.Any = js.native
+  var handleInputQueryChange: js.Any = js.native
   var handleItemCreate: js.Any = js.native
   var handleItemSelect: js.Any = js.native
   var handleKeyDown: js.Any = js.native
   var handleKeyUp: js.Any = js.native
   var handlePaste: js.Any = js.native
-  var handleQueryChange: js.Any = js.native
   var isCreateItemRendered: js.Any = js.native
   var itemsParentRef: js.UndefOr[js.Any] = js.native
   var refHandlers: js.Any = js.native

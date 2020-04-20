@@ -13,7 +13,6 @@ object PushCommand {
   @scala.inline
   def apply($push: js.Array[_]): PushCommand = {
     val __obj = js.Dynamic.literal($push = $push.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PushCommand]
   }
 }

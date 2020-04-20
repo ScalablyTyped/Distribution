@@ -12,7 +12,6 @@ object ReactionsDeleteParams {
   @scala.inline
   def apply(reaction_id: Double): ReactionsDeleteParams = {
     val __obj = js.Dynamic.literal(reaction_id = reaction_id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReactionsDeleteParams]
   }
 }

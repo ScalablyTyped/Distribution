@@ -13,7 +13,6 @@ object AnonAddressICardholderBillingAddress {
   @scala.inline
   def apply(address: ICardholderBillingAddress): AnonAddressICardholderBillingAddress = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAddressICardholderBillingAddress]
   }
 }

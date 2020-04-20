@@ -23,8 +23,8 @@ abstract class ListOperation protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FListOperation: IModel = js.native
-  def containerAsListOperationAction(): ListOperationAction = js.native
-  def listVariableName(): String = js.native
+  def containerAsListOperationAction: ListOperationAction = js.native
+  def listVariableName: String = js.native
   def listVariableName(newValue: String): js.Any = js.native
 }
 

@@ -25,7 +25,6 @@ object AnonDefineGlobals {
   @scala.inline
   def apply(defineGlobals: js.Object => Unit, export: js.Any => js.Any, global: js.Any, metadata: js.Any): AnonDefineGlobals = {
     val __obj = js.Dynamic.literal(defineGlobals = js.Any.fromFunction1(defineGlobals), export = js.Any.fromFunction1(export), global = global.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDefineGlobals]
   }
 }

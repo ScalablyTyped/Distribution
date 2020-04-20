@@ -12,10 +12,8 @@ trait BorderAlignment extends js.Object
 
 object BorderAlignment {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.chartJs.chartJsStrings.center = "center".asInstanceOf[typings.chartJs.chartJsStrings.center]
   @scala.inline
-  def center: typings.chartJs.chartJsStrings.center = this.cast("center")
-  @scala.inline
-  def inner: typings.chartJs.chartJsStrings.inner = this.cast("inner")
+  def inner: typings.chartJs.chartJsStrings.inner = "inner".asInstanceOf[typings.chartJs.chartJsStrings.inner]
 }
 

@@ -14,7 +14,6 @@ object AnonTo {
   @scala.inline
   def apply(from: js.Any => js.Any, to: (js.Any, CustomHelpers[_]) => js.Any): AnonTo = {
     val __obj = js.Dynamic.literal(from = js.Any.fromFunction1(from), to = js.Any.fromFunction2(to))
-  
     __obj.asInstanceOf[AnonTo]
   }
 }

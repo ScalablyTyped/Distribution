@@ -20,7 +20,6 @@ object RemoveTagsInput {
   @scala.inline
   def apply(pipelineId: id, tagKeys: stringList): RemoveTagsInput = {
     val __obj = js.Dynamic.literal(pipelineId = pipelineId.asInstanceOf[js.Any], tagKeys = tagKeys.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RemoveTagsInput]
   }
 }

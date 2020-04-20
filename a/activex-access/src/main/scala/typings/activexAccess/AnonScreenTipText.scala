@@ -13,7 +13,6 @@ object AnonScreenTipText {
   @scala.inline
   def apply(ScreenTipText: js.Any, SourceObject: js.Any): AnonScreenTipText = {
     val __obj = js.Dynamic.literal(ScreenTipText = ScreenTipText.asInstanceOf[js.Any], SourceObject = SourceObject.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonScreenTipText]
   }
 }

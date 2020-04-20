@@ -79,6 +79,9 @@ object reactNativeFbsdkStrings {
   sealed trait `explicitly-only` extends AppEventsFlushBehavior
   
   @js.native
+  sealed trait f extends js.Object
+  
+  @js.native
   sealed trait feed
     extends ShareDialogMode
        with ShareDialogModeAndroid
@@ -97,6 +100,9 @@ object reactNativeFbsdkStrings {
   
   @js.native
   sealed trait link extends js.Object
+  
+  @js.native
+  sealed trait m extends js.Object
   
   @js.native
   sealed trait manage_pages extends _Permissions
@@ -319,6 +325,8 @@ object reactNativeFbsdkStrings {
   @scala.inline
   def `explicitly-only`: `explicitly-only` = "explicitly-only".asInstanceOf[`explicitly-only`]
   @scala.inline
+  def f: f = "f".asInstanceOf[f]
+  @scala.inline
   def feed: feed = "feed".asInstanceOf[feed]
   @scala.inline
   def force_display: force_display = "force_display".asInstanceOf[force_display]
@@ -330,6 +338,8 @@ object reactNativeFbsdkStrings {
   def left: left = "left".asInstanceOf[left]
   @scala.inline
   def link: link = "link".asInstanceOf[link]
+  @scala.inline
+  def m: m = "m".asInstanceOf[m]
   @scala.inline
   def manage_pages: manage_pages = "manage_pages".asInstanceOf[manage_pages]
   @scala.inline

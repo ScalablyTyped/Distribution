@@ -14,10 +14,8 @@ trait MsoSyncVersionType extends js.Object
 
 object MsoSyncVersionType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoSyncVersionLastViewed: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def msoSyncVersionLastViewed: `0` = this.cast(0)
-  @scala.inline
-  def msoSyncVersionServer: `1` = this.cast(1)
+  def msoSyncVersionServer: `1` = 1.asInstanceOf[`1`]
 }
 

@@ -20,7 +20,6 @@ object ModuleElementAnimation {
     prepareAnimation: AnonIsInitial => js.Object
   ): ModuleElementAnimation = {
     val __obj = js.Dynamic.literal(animate = js.Any.fromFunction1(animate), canAnimate = js.Any.fromFunction1(canAnimate), prepareAnimation = js.Any.fromFunction1(prepareAnimation))
-  
     __obj.asInstanceOf[ModuleElementAnimation]
   }
 }

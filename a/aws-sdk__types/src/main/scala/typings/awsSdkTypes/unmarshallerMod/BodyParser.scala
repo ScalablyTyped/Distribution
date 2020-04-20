@@ -21,7 +21,6 @@ object BodyParser {
   @scala.inline
   def apply[SerializedType](parse: (Member, SerializedType) => js.Any): BodyParser[SerializedType] = {
     val __obj = js.Dynamic.literal(parse = js.Any.fromFunction2(parse))
-  
     __obj.asInstanceOf[BodyParser[SerializedType]]
   }
 }

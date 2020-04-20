@@ -26,7 +26,6 @@ object ITrackProps {
     style: CSSProperties
   ): ITrackProps = {
     val __obj = js.Dynamic.literal(onMouseDown = js.Any.fromFunction1(onMouseDown), onTouchStart = js.Any.fromFunction1(onTouchStart), ref = ref.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ITrackProps]
   }
 }

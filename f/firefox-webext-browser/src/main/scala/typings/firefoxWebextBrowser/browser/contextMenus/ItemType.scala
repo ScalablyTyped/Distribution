@@ -15,14 +15,12 @@ trait ItemType extends js.Object
 
 object ItemType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def checkbox: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.checkbox = "checkbox".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.checkbox]
   @scala.inline
-  def checkbox: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.checkbox = this.cast("checkbox")
+  def normal: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal = "normal".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal]
   @scala.inline
-  def normal: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal = this.cast("normal")
+  def radio: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.radio = "radio".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.radio]
   @scala.inline
-  def radio: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.radio = this.cast("radio")
-  @scala.inline
-  def separator: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.separator = this.cast("separator")
+  def separator: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.separator = "separator".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.separator]
 }
 

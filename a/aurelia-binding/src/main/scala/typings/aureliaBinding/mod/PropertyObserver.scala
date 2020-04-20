@@ -15,7 +15,6 @@ object PropertyObserver {
   @scala.inline
   def apply(subscribe: js.Function2[/* newValue */ js.Any, /* oldValue */ js.Any, Unit] => Disposable): PropertyObserver = {
     val __obj = js.Dynamic.literal(subscribe = js.Any.fromFunction1(subscribe))
-  
     __obj.asInstanceOf[PropertyObserver]
   }
 }

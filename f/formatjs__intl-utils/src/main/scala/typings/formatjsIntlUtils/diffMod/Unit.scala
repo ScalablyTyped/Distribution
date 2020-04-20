@@ -18,22 +18,20 @@ trait Unit extends js.Object
 
 object Unit {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def day: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.day = "day".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.day]
   @scala.inline
-  def day: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.day = this.cast("day")
+  def hour: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.hour = "hour".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.hour]
   @scala.inline
-  def hour: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.hour = this.cast("hour")
+  def minute: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.minute = "minute".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.minute]
   @scala.inline
-  def minute: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.minute = this.cast("minute")
+  def month: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.month = "month".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.month]
   @scala.inline
-  def month: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.month = this.cast("month")
+  def quarter: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.quarter = "quarter".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.quarter]
   @scala.inline
-  def quarter: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.quarter = this.cast("quarter")
+  def second: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.second = "second".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.second]
   @scala.inline
-  def second: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.second = this.cast("second")
+  def week: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.week = "week".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.week]
   @scala.inline
-  def week: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.week = this.cast("week")
-  @scala.inline
-  def year: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.year = this.cast("year")
+  def year: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.year = "year".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.year]
 }
 

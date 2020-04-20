@@ -24,7 +24,6 @@ object AnonAuthenticated {
   @scala.inline
   def apply(authenticated: Boolean, succeeded: Boolean, version: String): AnonAuthenticated = {
     val __obj = js.Dynamic.literal(authenticated = authenticated.asInstanceOf[js.Any], succeeded = succeeded.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAuthenticated]
   }
 }

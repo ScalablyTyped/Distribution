@@ -20,7 +20,6 @@ object DeleteBasePathMappingRequest {
   @scala.inline
   def apply(basePath: String, domainName: String): DeleteBasePathMappingRequest = {
     val __obj = js.Dynamic.literal(basePath = basePath.asInstanceOf[js.Any], domainName = domainName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteBasePathMappingRequest]
   }
 }

@@ -24,7 +24,6 @@ object ReposRetrieveCommunityProfileMetricsResponseFiles {
     readme: ReposRetrieveCommunityProfileMetricsResponseFilesReadme
   ): ReposRetrieveCommunityProfileMetricsResponseFiles = {
     val __obj = js.Dynamic.literal(code_of_conduct = code_of_conduct.asInstanceOf[js.Any], contributing = contributing.asInstanceOf[js.Any], issue_template = issue_template.asInstanceOf[js.Any], license = license.asInstanceOf[js.Any], pull_request_template = pull_request_template.asInstanceOf[js.Any], readme = readme.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReposRetrieveCommunityProfileMetricsResponseFiles]
   }
 }

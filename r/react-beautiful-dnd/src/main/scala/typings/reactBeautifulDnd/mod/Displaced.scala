@@ -13,7 +13,6 @@ object Displaced {
   @scala.inline
   def apply(backwards: DisplacementGroups, forwards: DisplacementGroups): Displaced = {
     val __obj = js.Dynamic.literal(backwards = backwards.asInstanceOf[js.Any], forwards = forwards.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Displaced]
   }
 }

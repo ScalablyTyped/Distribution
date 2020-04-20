@@ -91,7 +91,6 @@ object Storage_ {
     setItems: StringDictionary[String] => js.Promise[Unit]
   ): Storage_ = {
     val __obj = js.Dynamic.literal(getItem = js.Any.fromFunction1(getItem), getItems = js.Any.fromFunction1(getItems), getKeys = js.Any.fromFunction0(getKeys), removeItem = js.Any.fromFunction1(removeItem), removeItems = js.Any.fromFunction1(removeItems), setItem = js.Any.fromFunction2(setItem), setItems = js.Any.fromFunction1(setItems))
-  
     __obj.asInstanceOf[Storage_]
   }
 }

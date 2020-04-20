@@ -23,7 +23,6 @@ object MultiFactorSettings {
   @scala.inline
   def apply(enrolledFactors: js.Array[MultiFactorInfo], toJSON: () => js.Object): MultiFactorSettings = {
     val __obj = js.Dynamic.literal(enrolledFactors = enrolledFactors.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
-  
     __obj.asInstanceOf[MultiFactorSettings]
   }
 }

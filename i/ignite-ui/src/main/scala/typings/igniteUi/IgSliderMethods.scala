@@ -15,7 +15,6 @@ object IgSliderMethods {
   @scala.inline
   def apply(clearBookmarks: () => Unit, destroy: () => Unit, value: js.Object => Unit, widget: () => Unit): IgSliderMethods = {
     val __obj = js.Dynamic.literal(clearBookmarks = js.Any.fromFunction0(clearBookmarks), destroy = js.Any.fromFunction0(destroy), value = js.Any.fromFunction1(value), widget = js.Any.fromFunction0(widget))
-  
     __obj.asInstanceOf[IgSliderMethods]
   }
 }

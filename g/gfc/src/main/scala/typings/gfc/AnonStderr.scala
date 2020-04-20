@@ -14,7 +14,6 @@ object AnonStderr {
   @scala.inline
   def apply(stderr: String | Buffer, stdout: String | Buffer): AnonStderr = {
     val __obj = js.Dynamic.literal(stderr = stderr.asInstanceOf[js.Any], stdout = stdout.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonStderr]
   }
 }

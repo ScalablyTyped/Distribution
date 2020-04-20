@@ -7,6 +7,22 @@ import scala.scalajs.js.annotation._
 
 trait PrintProperties extends WidgetProperties {
   /**
+    * Specify the print output file format(s) that the user can select based on the options available from the print service. This property can take a string value or an array of string values.  When this value is "all" (default value), all the print service formats are available to be used. When an array of string values is used, only those values that match the options available from the print service will be used. If none of the input string values match those available from the print service, `allowedFormats` will fallback to default behavior.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print.html#allowedFormats)
+    *
+    * @default "all"
+    */
+  var allowedFormats: js.UndefOr[String | js.Array[String]] = js.undefined
+  /**
+    * Specify the print output layout(s) that the user can select based on the options available from the print service. This property can take a string value or an array of string values.  When this value is "all" (default value), all the print service layouts are available to be used. When an array of string values is used, only those values that match the options available from the print service will be used. If none of the input string values match those available from the print service, `allowedLayouts` will fallback to default behavior.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print.html#allowedLayouts)
+    *
+    * @default "all"
+    */
+  var allowedLayouts: js.UndefOr[String | js.Array[String]] = js.undefined
+  /**
     * The widget's default CSS icon class.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print.html#iconClass)
@@ -41,6 +57,8 @@ trait PrintProperties extends WidgetProperties {
 object PrintProperties {
   @scala.inline
   def apply(
+    allowedFormats: String | js.Array[String] = null,
+    allowedLayouts: String | js.Array[String] = null,
     container: String | HTMLElement = null,
     destroyed: js.UndefOr[Boolean] = js.undefined,
     iconClass: String = null,
@@ -52,6 +70,8 @@ object PrintProperties {
     viewModel: PrintViewModelProperties = null
   ): PrintProperties = {
     val __obj = js.Dynamic.literal()
+    if (allowedFormats != null) __obj.updateDynamic("allowedFormats")(allowedFormats.asInstanceOf[js.Any])
+    if (allowedLayouts != null) __obj.updateDynamic("allowedLayouts")(allowedLayouts.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.asInstanceOf[js.Any])
     if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])

@@ -13,7 +13,6 @@ object AnonCli {
   @scala.inline
   def apply(cli: String, local: String): AnonCli = {
     val __obj = js.Dynamic.literal(cli = cli.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCli]
   }
 }

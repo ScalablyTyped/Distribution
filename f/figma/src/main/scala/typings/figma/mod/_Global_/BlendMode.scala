@@ -29,44 +29,42 @@ trait BlendMode extends js.Object
 
 object BlendMode {
   @scala.inline
-  def COLOR: typings.figma.figmaStrings.COLOR = this.cast("COLOR")
+  def COLOR: typings.figma.figmaStrings.COLOR = "COLOR".asInstanceOf[typings.figma.figmaStrings.COLOR]
   @scala.inline
-  def COLOR_BURN: typings.figma.figmaStrings.COLOR_BURN = this.cast("COLOR_BURN")
+  def COLOR_BURN: typings.figma.figmaStrings.COLOR_BURN = "COLOR_BURN".asInstanceOf[typings.figma.figmaStrings.COLOR_BURN]
   @scala.inline
-  def COLOR_DODGE: typings.figma.figmaStrings.COLOR_DODGE = this.cast("COLOR_DODGE")
+  def COLOR_DODGE: typings.figma.figmaStrings.COLOR_DODGE = "COLOR_DODGE".asInstanceOf[typings.figma.figmaStrings.COLOR_DODGE]
   @scala.inline
-  def DARKEN: typings.figma.figmaStrings.DARKEN = this.cast("DARKEN")
+  def DARKEN: typings.figma.figmaStrings.DARKEN = "DARKEN".asInstanceOf[typings.figma.figmaStrings.DARKEN]
   @scala.inline
-  def DIFFERENCE: typings.figma.figmaStrings.DIFFERENCE = this.cast("DIFFERENCE")
+  def DIFFERENCE: typings.figma.figmaStrings.DIFFERENCE = "DIFFERENCE".asInstanceOf[typings.figma.figmaStrings.DIFFERENCE]
   @scala.inline
-  def EXCLUSION: typings.figma.figmaStrings.EXCLUSION = this.cast("EXCLUSION")
+  def EXCLUSION: typings.figma.figmaStrings.EXCLUSION = "EXCLUSION".asInstanceOf[typings.figma.figmaStrings.EXCLUSION]
   @scala.inline
-  def HARD_LIGHT: typings.figma.figmaStrings.HARD_LIGHT = this.cast("HARD_LIGHT")
+  def HARD_LIGHT: typings.figma.figmaStrings.HARD_LIGHT = "HARD_LIGHT".asInstanceOf[typings.figma.figmaStrings.HARD_LIGHT]
   @scala.inline
-  def HUE: typings.figma.figmaStrings.HUE = this.cast("HUE")
+  def HUE: typings.figma.figmaStrings.HUE = "HUE".asInstanceOf[typings.figma.figmaStrings.HUE]
   @scala.inline
-  def LIGHTEN: typings.figma.figmaStrings.LIGHTEN = this.cast("LIGHTEN")
+  def LIGHTEN: typings.figma.figmaStrings.LIGHTEN = "LIGHTEN".asInstanceOf[typings.figma.figmaStrings.LIGHTEN]
   @scala.inline
-  def LINEAR_BURN: typings.figma.figmaStrings.LINEAR_BURN = this.cast("LINEAR_BURN")
+  def LINEAR_BURN: typings.figma.figmaStrings.LINEAR_BURN = "LINEAR_BURN".asInstanceOf[typings.figma.figmaStrings.LINEAR_BURN]
   @scala.inline
-  def LINEAR_DODGE: typings.figma.figmaStrings.LINEAR_DODGE = this.cast("LINEAR_DODGE")
+  def LINEAR_DODGE: typings.figma.figmaStrings.LINEAR_DODGE = "LINEAR_DODGE".asInstanceOf[typings.figma.figmaStrings.LINEAR_DODGE]
   @scala.inline
-  def LUMINOSITY: typings.figma.figmaStrings.LUMINOSITY = this.cast("LUMINOSITY")
+  def LUMINOSITY: typings.figma.figmaStrings.LUMINOSITY = "LUMINOSITY".asInstanceOf[typings.figma.figmaStrings.LUMINOSITY]
   @scala.inline
-  def MULTIPLY: typings.figma.figmaStrings.MULTIPLY = this.cast("MULTIPLY")
+  def MULTIPLY: typings.figma.figmaStrings.MULTIPLY = "MULTIPLY".asInstanceOf[typings.figma.figmaStrings.MULTIPLY]
   @scala.inline
-  def NORMAL: typings.figma.figmaStrings.NORMAL = this.cast("NORMAL")
+  def NORMAL: typings.figma.figmaStrings.NORMAL = "NORMAL".asInstanceOf[typings.figma.figmaStrings.NORMAL]
   @scala.inline
-  def OVERLAY: typings.figma.figmaStrings.OVERLAY = this.cast("OVERLAY")
+  def OVERLAY: typings.figma.figmaStrings.OVERLAY = "OVERLAY".asInstanceOf[typings.figma.figmaStrings.OVERLAY]
   @scala.inline
-  def PASS_THROUGH: typings.figma.figmaStrings.PASS_THROUGH = this.cast("PASS_THROUGH")
+  def PASS_THROUGH: typings.figma.figmaStrings.PASS_THROUGH = "PASS_THROUGH".asInstanceOf[typings.figma.figmaStrings.PASS_THROUGH]
   @scala.inline
-  def SATURATION: typings.figma.figmaStrings.SATURATION = this.cast("SATURATION")
+  def SATURATION: typings.figma.figmaStrings.SATURATION = "SATURATION".asInstanceOf[typings.figma.figmaStrings.SATURATION]
   @scala.inline
-  def SCREEN: typings.figma.figmaStrings.SCREEN = this.cast("SCREEN")
+  def SCREEN: typings.figma.figmaStrings.SCREEN = "SCREEN".asInstanceOf[typings.figma.figmaStrings.SCREEN]
   @scala.inline
-  def SOFT_LIGHT: typings.figma.figmaStrings.SOFT_LIGHT = this.cast("SOFT_LIGHT")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SOFT_LIGHT: typings.figma.figmaStrings.SOFT_LIGHT = "SOFT_LIGHT".asInstanceOf[typings.figma.figmaStrings.SOFT_LIGHT]
 }
 

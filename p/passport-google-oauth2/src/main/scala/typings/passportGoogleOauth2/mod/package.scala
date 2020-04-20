@@ -19,7 +19,12 @@ package object mod {
     scala.Unit
   ]
   type VerifyFunctionWithRequest = js.Function5[
-    /* req */ typings.express.mod.Request_[typings.expressServeStaticCore.mod.ParamsDictionary], 
+    /* req */ typings.express.mod.Request_[
+      typings.expressServeStaticCore.mod.ParamsDictionary, 
+      js.Any, 
+      js.Any, 
+      typings.expressServeStaticCore.mod.Query
+    ], 
     /* accessToken */ java.lang.String, 
     /* refreshToken */ java.lang.String, 
     /* profile */ js.Any, 
@@ -27,7 +32,12 @@ package object mod {
     scala.Unit
   ]
   type VerifyFunctionWithRequestAndParams = js.Function6[
-    /* req */ typings.express.mod.Request_[typings.expressServeStaticCore.mod.ParamsDictionary], 
+    /* req */ typings.express.mod.Request_[
+      typings.expressServeStaticCore.mod.ParamsDictionary, 
+      js.Any, 
+      js.Any, 
+      typings.expressServeStaticCore.mod.Query
+    ], 
     /* accessToken */ java.lang.String, 
     /* refreshToken */ java.lang.String, 
     /* params */ typings.passportGoogleOauth2.AnonAccesstoken, 

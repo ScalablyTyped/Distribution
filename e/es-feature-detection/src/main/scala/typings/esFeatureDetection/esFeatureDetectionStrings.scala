@@ -312,23 +312,23 @@ object esFeatureDetectionStrings {
   @scala.inline
   def ArrayDotprototypeDotkeys: ArrayDotprototypeDotkeys = "Array.prototype.keys".asInstanceOf[ArrayDotprototypeDotkeys]
   @scala.inline
-  def `Arrow function`: `Arrow function` = "Arrow function".asInstanceOf[`Arrow function`]
+  def `Arrow function`: `Arrow function` = ("Arrow function").asInstanceOf[`Arrow function`]
   @scala.inline
   def Atomics: Atomics = "Atomics".asInstanceOf[Atomics]
   @scala.inline
-  def `Binary literals`: `Binary literals` = "Binary literals".asInstanceOf[`Binary literals`]
+  def `Binary literals`: `Binary literals` = ("Binary literals").asInstanceOf[`Binary literals`]
   @scala.inline
-  def `Block level function declaration`: `Block level function declaration` = "Block level function declaration".asInstanceOf[`Block level function declaration`]
+  def `Block level function declaration`: `Block level function declaration` = ("Block level function declaration").asInstanceOf[`Block level function declaration`]
   @scala.inline
-  def `Computed property`: `Computed property` = "Computed property".asInstanceOf[`Computed property`]
+  def `Computed property`: `Computed property` = ("Computed property").asInstanceOf[`Computed property`]
   @scala.inline
-  def `Default parameters`: `Default parameters` = "Default parameters".asInstanceOf[`Default parameters`]
+  def `Default parameters`: `Default parameters` = ("Default parameters").asInstanceOf[`Default parameters`]
   @scala.inline
   def Destructuring: Destructuring = "Destructuring".asInstanceOf[Destructuring]
   @scala.inline
-  def `Exponentiation operator`: `Exponentiation operator` = "Exponentiation operator".asInstanceOf[`Exponentiation operator`]
+  def `Exponentiation operator`: `Exponentiation operator` = ("Exponentiation operator").asInstanceOf[`Exponentiation operator`]
   @scala.inline
-  def `Generator function`: `Generator function` = "Generator function".asInstanceOf[`Generator function`]
+  def `Generator function`: `Generator function` = ("Generator function").asInstanceOf[`Generator function`]
   @scala.inline
   def Map: Map = "Map".asInstanceOf[Map]
   @scala.inline
@@ -398,7 +398,7 @@ object esFeatureDetectionStrings {
   @scala.inline
   def ObjectDotvalues: ObjectDotvalues = "Object.values".asInstanceOf[ObjectDotvalues]
   @scala.inline
-  def `Octal literals`: `Octal literals` = "Octal literals".asInstanceOf[`Octal literals`]
+  def `Octal literals`: `Octal literals` = ("Octal literals").asInstanceOf[`Octal literals`]
   @scala.inline
   def Promise: Promise = "Promise".asInstanceOf[Promise]
   @scala.inline
@@ -410,21 +410,21 @@ object esFeatureDetectionStrings {
   @scala.inline
   def RegExpDotprototypeDotunicode: RegExpDotprototypeDotunicode = "RegExp.prototype.unicode".asInstanceOf[RegExpDotprototypeDotunicode]
   @scala.inline
-  def `Rest destructuring`: `Rest destructuring` = "Rest destructuring".asInstanceOf[`Rest destructuring`]
+  def `Rest destructuring`: `Rest destructuring` = ("Rest destructuring").asInstanceOf[`Rest destructuring`]
   @scala.inline
-  def `Rest parameters`: `Rest parameters` = "Rest parameters".asInstanceOf[`Rest parameters`]
+  def `Rest parameters`: `Rest parameters` = ("Rest parameters").asInstanceOf[`Rest parameters`]
   @scala.inline
   def Set: Set = "Set".asInstanceOf[Set]
   @scala.inline
   def SharedArrayBuffer: SharedArrayBuffer = "SharedArrayBuffer".asInstanceOf[SharedArrayBuffer]
   @scala.inline
-  def `Shorthand method`: `Shorthand method` = "Shorthand method".asInstanceOf[`Shorthand method`]
+  def `Shorthand method`: `Shorthand method` = ("Shorthand method").asInstanceOf[`Shorthand method`]
   @scala.inline
-  def `Shorthand property`: `Shorthand property` = "Shorthand property".asInstanceOf[`Shorthand property`]
+  def `Shorthand property`: `Shorthand property` = ("Shorthand property").asInstanceOf[`Shorthand property`]
   @scala.inline
-  def `Spread Array`: `Spread Array` = "Spread Array".asInstanceOf[`Spread Array`]
+  def `Spread Array`: `Spread Array` = ("Spread Array").asInstanceOf[`Spread Array`]
   @scala.inline
-  def `Spread Function call`: `Spread Function call` = "Spread Function call".asInstanceOf[`Spread Function call`]
+  def `Spread Function call`: `Spread Function call` = ("Spread Function call").asInstanceOf[`Spread Function call`]
   @scala.inline
   def StringDotfromCodePoint: StringDotfromCodePoint = "String.fromCodePoint".asInstanceOf[StringDotfromCodePoint]
   @scala.inline
@@ -448,9 +448,9 @@ object esFeatureDetectionStrings {
   @scala.inline
   def Symbol: Symbol = "Symbol".asInstanceOf[Symbol]
   @scala.inline
-  def `Template Strings`: `Template Strings` = "Template Strings".asInstanceOf[`Template Strings`]
+  def `Template Strings`: `Template Strings` = ("Template Strings").asInstanceOf[`Template Strings`]
   @scala.inline
-  def `Trailing parameter commas`: `Trailing parameter commas` = "Trailing parameter commas".asInstanceOf[`Trailing parameter commas`]
+  def `Trailing parameter commas`: `Trailing parameter commas` = ("Trailing parameter commas").asInstanceOf[`Trailing parameter commas`]
   @scala.inline
   def TypedArrayDotprototypeDotincludes: TypedArrayDotprototypeDotincludes = "TypedArray.prototype.includes".asInstanceOf[TypedArrayDotprototypeDotincludes]
   @scala.inline

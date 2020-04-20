@@ -20,7 +20,6 @@ object TerminologyData {
   @scala.inline
   def apply(File: TerminologyFile, Format: TerminologyDataFormat): TerminologyData = {
     val __obj = js.Dynamic.literal(File = File.asInstanceOf[js.Any], Format = Format.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TerminologyData]
   }
 }

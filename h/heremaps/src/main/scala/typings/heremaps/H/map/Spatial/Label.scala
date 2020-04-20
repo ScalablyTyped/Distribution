@@ -28,7 +28,6 @@ object Label {
   @scala.inline
   def apply(angle: Double, color: String, font: String, size: Double, text: String, x: Double, y: Double): Label = {
     val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Label]
   }
 }

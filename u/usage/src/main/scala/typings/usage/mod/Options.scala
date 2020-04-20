@@ -12,7 +12,6 @@ object Options {
   @scala.inline
   def apply(keepHistory: Boolean): Options = {
     val __obj = js.Dynamic.literal(keepHistory = keepHistory.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Options]
   }
 }

@@ -18,7 +18,6 @@ object IActionSetPermissions {
     Permissions: IAccessControlList
   ): IActionSetPermissions = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), DiscardsAutomaticPermissions = DiscardsAutomaticPermissions.asInstanceOf[js.Any], Permissions = Permissions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IActionSetPermissions]
   }
 }

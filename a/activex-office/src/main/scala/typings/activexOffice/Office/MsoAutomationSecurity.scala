@@ -16,12 +16,10 @@ trait MsoAutomationSecurity extends js.Object
 
 object MsoAutomationSecurity {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoAutomationSecurityByUI: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoAutomationSecurityByUI: `2` = this.cast(2)
+  def msoAutomationSecurityForceDisable: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoAutomationSecurityForceDisable: `3` = this.cast(3)
-  @scala.inline
-  def msoAutomationSecurityLow: `1` = this.cast(1)
+  def msoAutomationSecurityLow: `1` = 1.asInstanceOf[`1`]
 }
 

@@ -13,7 +13,6 @@ object Connection {
   @scala.inline
   def apply(roster: StropheRosterPlugin): Connection = {
     val __obj = js.Dynamic.literal(roster = roster.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Connection]
   }
 }

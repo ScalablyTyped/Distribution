@@ -41,6 +41,11 @@ trait SheetProperties extends js.Object {
   var sheetType: js.UndefOr[String] = js.undefined
   /** The color of the tab in the UI. */
   var tabColor: js.UndefOr[Color] = js.undefined
+  /**
+    * The color of the tab in the UI.
+    * If tab_color is also set, this field takes precedence.
+    */
+  var tabColorStyle: js.UndefOr[ColorStyle] = js.undefined
   /** The name of the sheet. */
   var title: js.UndefOr[String] = js.undefined
 }
@@ -55,6 +60,7 @@ object SheetProperties {
     sheetId: Int | Double = null,
     sheetType: String = null,
     tabColor: Color = null,
+    tabColorStyle: ColorStyle = null,
     title: String = null
   ): SheetProperties = {
     val __obj = js.Dynamic.literal()
@@ -65,6 +71,7 @@ object SheetProperties {
     if (sheetId != null) __obj.updateDynamic("sheetId")(sheetId.asInstanceOf[js.Any])
     if (sheetType != null) __obj.updateDynamic("sheetType")(sheetType.asInstanceOf[js.Any])
     if (tabColor != null) __obj.updateDynamic("tabColor")(tabColor.asInstanceOf[js.Any])
+    if (tabColorStyle != null) __obj.updateDynamic("tabColorStyle")(tabColorStyle.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SheetProperties]
   }

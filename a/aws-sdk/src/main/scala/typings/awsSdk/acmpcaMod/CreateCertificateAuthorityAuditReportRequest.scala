@@ -28,7 +28,6 @@ object CreateCertificateAuthorityAuditReportRequest {
     S3BucketName: String
   ): CreateCertificateAuthorityAuditReportRequest = {
     val __obj = js.Dynamic.literal(AuditReportResponseFormat = AuditReportResponseFormat.asInstanceOf[js.Any], CertificateAuthorityArn = CertificateAuthorityArn.asInstanceOf[js.Any], S3BucketName = S3BucketName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateCertificateAuthorityAuditReportRequest]
   }
 }

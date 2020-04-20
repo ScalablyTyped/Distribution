@@ -13,7 +13,6 @@ object AnonCreated {
   @scala.inline
   def apply(created: Double, pendingUpload: Double): AnonCreated = {
     val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], pendingUpload = pendingUpload.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCreated]
   }
 }

@@ -64,7 +64,6 @@ object GetStreamResult {
     tags: StringDictionary[js.Any]
   ): GetStreamResult = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], closedShards = closedShards.asInstanceOf[js.Any], creationTimestamp = creationTimestamp.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], openShards = openShards.asInstanceOf[js.Any], retentionPeriod = retentionPeriod.asInstanceOf[js.Any], shardLevelMetrics = shardLevelMetrics.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetStreamResult]
   }
 }

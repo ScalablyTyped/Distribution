@@ -35,7 +35,6 @@ object OptionMetadata {
     Value: Double
   ): OptionMetadata = {
     val __obj = js.Dynamic.literal(Color = Color.asInstanceOf[js.Any], Description = Description.asInstanceOf[js.Any], ExternalValue = ExternalValue.asInstanceOf[js.Any], HasChanged = HasChanged.asInstanceOf[js.Any], IsManaged = IsManaged.asInstanceOf[js.Any], Label = Label.asInstanceOf[js.Any], MetadataId = MetadataId.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any], TransitionData = TransitionData.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OptionMetadata]
   }
 }

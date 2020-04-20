@@ -7,46 +7,46 @@ import scala.scalajs.js.annotation._
 
 trait mjmlReactProps {
   @scala.inline
-  def MjmlAllProps: AnonDictkey.type = typings.mjmlReact.AnonDictkey
+  def MjmlAllProps: AnonDictkey.type = AnonDictkey
   type MjmlAllProps = AnonDictkey
   @scala.inline
-  def MjmlAttributesProps: RequiredChildrenProps.type = typings.mjmlReact.mod.RequiredChildrenProps
+  def MjmlAttributesProps: RequiredChildrenProps.type = RequiredChildrenProps
   type MjmlAttributesProps = RequiredChildrenProps
   @scala.inline
   def MjmlBreakpointProps: typings.mjmlReact.mod.MjmlBreakpointProps.type = typings.mjmlReact.mod.MjmlBreakpointProps
   type MjmlBreakpointProps = typings.mjmlReact.mod.MjmlBreakpointProps
   @scala.inline
-  def MjmlClassProps: AnonName.type = typings.mjmlReact.AnonName
+  def MjmlClassProps: AnonName.type = AnonName
   type MjmlClassProps = AnonName
   @scala.inline
-  def MjmlCommentProps: AnonChildren.type = typings.mjmlReact.AnonChildren
+  def MjmlCommentProps: AnonChildren.type = AnonChildren
   type MjmlCommentProps = AnonChildren
   @scala.inline
-  def MjmlConditionalCommentProps: AnonCondition.type = typings.mjmlReact.AnonCondition
+  def MjmlConditionalCommentProps: AnonCondition.type = AnonCondition
   type MjmlConditionalCommentProps = AnonCondition
   @scala.inline
   def MjmlFontProps: typings.mjmlReact.mod.MjmlFontProps.type = typings.mjmlReact.mod.MjmlFontProps
   type MjmlFontProps = typings.mjmlReact.mod.MjmlFontProps
   @scala.inline
-  def MjmlHeadProps: RequiredChildrenProps.type = typings.mjmlReact.mod.RequiredChildrenProps
+  def MjmlHeadProps: RequiredChildrenProps.type = RequiredChildrenProps
   type MjmlHeadProps = RequiredChildrenProps
   @scala.inline
-  def MjmlPreviewProps: AnonChildren.type = typings.mjmlReact.AnonChildren
+  def MjmlPreviewProps: AnonChildren.type = AnonChildren
   type MjmlPreviewProps = AnonChildren
   @scala.inline
-  def MjmlRawProps: RequiredChildrenProps.type = typings.mjmlReact.mod.RequiredChildrenProps
+  def MjmlRawProps: RequiredChildrenProps.type = RequiredChildrenProps
   type MjmlRawProps = RequiredChildrenProps
   @scala.inline
-  def MjmlStyleProps: AnonInline.type = typings.mjmlReact.AnonInline
+  def MjmlStyleProps: AnonInline.type = AnonInline
   type MjmlStyleProps = AnonInline
   @scala.inline
-  def MjmlTitleProps: AnonChildren.type = typings.mjmlReact.AnonChildren
+  def MjmlTitleProps: AnonChildren.type = AnonChildren
   type MjmlTitleProps = AnonChildren
   @scala.inline
-  def MjmlTrackingPixelProps: AnonSrc.type = typings.mjmlReact.AnonSrc
+  def MjmlTrackingPixelProps: AnonSrc.type = AnonSrc
   type MjmlTrackingPixelProps = AnonSrc
   @scala.inline
-  def MjmlYahooStyleProps: AnonChildren.type = typings.mjmlReact.AnonChildren
+  def MjmlYahooStyleProps: AnonChildren.type = AnonChildren
   type MjmlYahooStyleProps = AnonChildren
 }
 

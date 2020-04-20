@@ -35,7 +35,7 @@ trait AnonIncludeValuesInResponse extends js.Object {
   var quotaUser: js.UndefOr[String] = js.undefined
   /**
     * The A1 notation of a range to search for a logical table of data.
-    * Values will be appended after the last row of the table.
+    * Values are appended after the last row of the table.
     */
   var range: String
   /** Request body */

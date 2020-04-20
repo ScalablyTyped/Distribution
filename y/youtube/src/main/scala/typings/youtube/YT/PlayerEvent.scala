@@ -15,7 +15,6 @@ object PlayerEvent {
   @scala.inline
   def apply(target: Player): PlayerEvent = {
     val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PlayerEvent]
   }
 }

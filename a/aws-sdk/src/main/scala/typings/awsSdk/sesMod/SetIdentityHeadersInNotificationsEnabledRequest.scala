@@ -24,7 +24,6 @@ object SetIdentityHeadersInNotificationsEnabledRequest {
   @scala.inline
   def apply(Enabled: Enabled, Identity: Identity, NotificationType: NotificationType): SetIdentityHeadersInNotificationsEnabledRequest = {
     val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any], Identity = Identity.asInstanceOf[js.Any], NotificationType = NotificationType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetIdentityHeadersInNotificationsEnabledRequest]
   }
 }

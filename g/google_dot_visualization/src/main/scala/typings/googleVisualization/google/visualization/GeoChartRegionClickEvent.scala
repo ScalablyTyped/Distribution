@@ -12,7 +12,6 @@ object GeoChartRegionClickEvent {
   @scala.inline
   def apply(region: String): GeoChartRegionClickEvent = {
     val __obj = js.Dynamic.literal(region = region.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GeoChartRegionClickEvent]
   }
 }

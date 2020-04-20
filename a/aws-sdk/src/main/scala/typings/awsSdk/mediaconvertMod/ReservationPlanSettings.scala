@@ -24,7 +24,6 @@ object ReservationPlanSettings {
   @scala.inline
   def apply(Commitment: Commitment, RenewalType: RenewalType, ReservedSlots: integer): ReservationPlanSettings = {
     val __obj = js.Dynamic.literal(Commitment = Commitment.asInstanceOf[js.Any], RenewalType = RenewalType.asInstanceOf[js.Any], ReservedSlots = ReservedSlots.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReservationPlanSettings]
   }
 }

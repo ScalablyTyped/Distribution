@@ -20,7 +20,6 @@ object DatastoreActivity {
   @scala.inline
   def apply(datastoreName: DatastoreName, name: ActivityName): DatastoreActivity = {
     val __obj = js.Dynamic.literal(datastoreName = datastoreName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DatastoreActivity]
   }
 }

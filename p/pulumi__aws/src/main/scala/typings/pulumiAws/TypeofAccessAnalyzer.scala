@@ -13,7 +13,6 @@ object TypeofAccessAnalyzer {
   @scala.inline
   def apply(Types: TypeofAccessAnalyzer): TypeofAccessAnalyzer = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofAccessAnalyzer]
   }
 }

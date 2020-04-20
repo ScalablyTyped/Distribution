@@ -12,7 +12,6 @@ object AnonPkcs12 {
   @scala.inline
   def apply(pkcs12: js.Any): AnonPkcs12 = {
     val __obj = js.Dynamic.literal(pkcs12 = pkcs12.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPkcs12]
   }
 }

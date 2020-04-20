@@ -20,7 +20,6 @@ object InlineArchiveRule {
   @scala.inline
   def apply(filter: FilterCriteriaMap, ruleName: Name): InlineArchiveRule = {
     val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], ruleName = ruleName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InlineArchiveRule]
   }
 }

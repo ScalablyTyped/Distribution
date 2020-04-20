@@ -25,7 +25,6 @@ object OutputFileSystem {
     writeFile: (String, js.Any, js.Function1[/* err */ js.UndefOr[Error | Null], Unit]) => Unit
   ): OutputFileSystem = {
     val __obj = js.Dynamic.literal(join = js.Any.fromFunction1(join), mkdir = js.Any.fromFunction2(mkdir), mkdirp = js.Any.fromFunction2(mkdirp), rmdir = js.Any.fromFunction2(rmdir), unlink = js.Any.fromFunction2(unlink), writeFile = js.Any.fromFunction3(writeFile))
-  
     __obj.asInstanceOf[OutputFileSystem]
   }
 }

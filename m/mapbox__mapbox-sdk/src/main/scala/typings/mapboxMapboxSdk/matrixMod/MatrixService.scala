@@ -17,7 +17,6 @@ object MatrixService {
   @scala.inline
   def apply(getMatrix: MatrixRequest => MapiRequest): MatrixService = {
     val __obj = js.Dynamic.literal(getMatrix = js.Any.fromFunction1(getMatrix))
-  
     __obj.asInstanceOf[MatrixService]
   }
 }

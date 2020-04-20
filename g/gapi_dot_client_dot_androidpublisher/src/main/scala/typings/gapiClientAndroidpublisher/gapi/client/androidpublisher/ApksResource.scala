@@ -24,7 +24,6 @@ object ApksResource {
     upload: AnonEditId => Request_[Apk]
   ): ApksResource = {
     val __obj = js.Dynamic.literal(addexternallyhosted = js.Any.fromFunction1(addexternallyhosted), list = js.Any.fromFunction1(list), upload = js.Any.fromFunction1(upload))
-  
     __obj.asInstanceOf[ApksResource]
   }
 }

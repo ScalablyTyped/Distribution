@@ -13,7 +13,6 @@ object RemoveAttributesResponse {
   @scala.inline
   def apply(AttributesResource: AttributesResource): RemoveAttributesResponse = {
     val __obj = js.Dynamic.literal(AttributesResource = AttributesResource.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RemoveAttributesResponse]
   }
 }

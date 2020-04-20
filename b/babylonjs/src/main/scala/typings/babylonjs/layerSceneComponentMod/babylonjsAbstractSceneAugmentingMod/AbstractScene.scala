@@ -16,7 +16,6 @@ object AbstractScene {
   @scala.inline
   def apply(layers: js.Array[Layer]): AbstractScene = {
     val __obj = js.Dynamic.literal(layers = layers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AbstractScene]
   }
 }

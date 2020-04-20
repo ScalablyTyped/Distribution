@@ -20,7 +20,6 @@ object GetApiMappingRequest {
   @scala.inline
   def apply(ApiMappingId: string, DomainName: string): GetApiMappingRequest = {
     val __obj = js.Dynamic.literal(ApiMappingId = ApiMappingId.asInstanceOf[js.Any], DomainName = DomainName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetApiMappingRequest]
   }
 }

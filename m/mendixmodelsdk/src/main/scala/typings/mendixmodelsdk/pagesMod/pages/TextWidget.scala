@@ -22,7 +22,7 @@ abstract class TextWidget protected () extends AttributeWidgetWithPlaceholder {
   ) = this()
   @JSName("model")
   var model_FTextWidget: IModel = js.native
-  def maxLengthCode(): Double = js.native
+  def maxLengthCode: Double = js.native
   def maxLengthCode(newValue: Double): js.Any = js.native
 }
 

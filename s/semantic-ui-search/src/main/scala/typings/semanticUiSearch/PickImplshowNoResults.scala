@@ -13,7 +13,6 @@ object PickImplshowNoResults {
   @scala.inline
   def apply(showNoResults: Boolean): PickImplshowNoResults = {
     val __obj = js.Dynamic.literal(showNoResults = showNoResults.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplshowNoResults]
   }
 }

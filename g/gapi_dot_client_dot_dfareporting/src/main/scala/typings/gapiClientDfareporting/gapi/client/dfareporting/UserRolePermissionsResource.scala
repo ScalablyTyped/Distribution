@@ -21,7 +21,6 @@ object UserRolePermissionsResource {
     list: AnonAltFields => Request_[UserRolePermissionsListResponse]
   ): UserRolePermissionsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[UserRolePermissionsResource]
   }
 }

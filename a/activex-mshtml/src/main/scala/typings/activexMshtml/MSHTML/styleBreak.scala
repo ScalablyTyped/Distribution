@@ -32,28 +32,26 @@ trait styleBreak extends js.Object
 
 object styleBreak {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleBreakAlways: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleBreakAlways: `2` = this.cast(2)
+  def styleBreakAuto: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleBreakAuto: `1` = this.cast(1)
+  def styleBreakAvoid: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def styleBreakAvoid: `3` = this.cast(3)
+  def styleBreakAvoidColumn: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def styleBreakAvoidColumn: `9` = this.cast(9)
+  def styleBreakAvoidPage: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def styleBreakAvoidPage: `8` = this.cast(8)
+  def styleBreakColumn: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def styleBreakColumn: `7` = this.cast(7)
+  def styleBreakLeft: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def styleBreakLeft: `4` = this.cast(4)
+  def styleBreakNotSet: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleBreakNotSet: `0` = this.cast(0)
+  def styleBreakPage: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def styleBreakPage: `6` = this.cast(6)
+  def styleBreakRight: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def styleBreakRight: `5` = this.cast(5)
-  @scala.inline
-  def styleBreak_Max: `2147483647` = this.cast(2147483647)
+  def styleBreak_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

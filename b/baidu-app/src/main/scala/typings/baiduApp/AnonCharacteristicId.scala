@@ -24,7 +24,6 @@ object AnonCharacteristicId {
   @scala.inline
   def apply(characteristicId: String, serviceId: String, value: ArrayBuffer): AnonCharacteristicId = {
     val __obj = js.Dynamic.literal(characteristicId = characteristicId.asInstanceOf[js.Any], serviceId = serviceId.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCharacteristicId]
   }
 }

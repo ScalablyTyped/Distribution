@@ -14,7 +14,6 @@ object IPrintManagerStatic {
   @scala.inline
   def apply(getForCurrentView: () => PrintManager, showPrintUIAsync: () => IAsyncOperation[Boolean]): IPrintManagerStatic = {
     val __obj = js.Dynamic.literal(getForCurrentView = js.Any.fromFunction0(getForCurrentView), showPrintUIAsync = js.Any.fromFunction0(showPrintUIAsync))
-  
     __obj.asInstanceOf[IPrintManagerStatic]
   }
 }

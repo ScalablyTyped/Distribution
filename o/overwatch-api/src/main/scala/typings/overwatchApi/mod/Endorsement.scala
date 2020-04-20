@@ -13,7 +13,6 @@ object Endorsement {
   @scala.inline
   def apply(rate: Double, value: Double): Endorsement = {
     val __obj = js.Dynamic.literal(rate = rate.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Endorsement]
   }
 }

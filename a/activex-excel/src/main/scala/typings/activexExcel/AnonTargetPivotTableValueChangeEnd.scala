@@ -15,7 +15,6 @@ object AnonTargetPivotTableValueChangeEnd {
   @scala.inline
   def apply(TargetPivotTable: PivotTable, ValueChangeEnd: Double, ValueChangeStart: Double): AnonTargetPivotTableValueChangeEnd = {
     val __obj = js.Dynamic.literal(TargetPivotTable = TargetPivotTable.asInstanceOf[js.Any], ValueChangeEnd = ValueChangeEnd.asInstanceOf[js.Any], ValueChangeStart = ValueChangeStart.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTargetPivotTableValueChangeEnd]
   }
 }

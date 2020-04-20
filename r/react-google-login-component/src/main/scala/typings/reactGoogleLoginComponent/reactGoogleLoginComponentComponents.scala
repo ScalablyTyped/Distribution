@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactGoogleLoginComponentComponents extends reactGoogleLoginComponentProps {
   @scala.inline
-  def GoogleLogin: ComponentType[GoogleLoginProps] = js.constructorOf[typings.reactGoogleLoginComponent.mod.GoogleLogin].asInstanceOf[typings.react.mod.ComponentType[GoogleLoginProps]]
+  def GoogleLogin: ComponentType[GoogleLoginProps] = js.constructorOf[typings.reactGoogleLoginComponent.mod.GoogleLogin].asInstanceOf[ComponentType[GoogleLoginProps]]
 }
 

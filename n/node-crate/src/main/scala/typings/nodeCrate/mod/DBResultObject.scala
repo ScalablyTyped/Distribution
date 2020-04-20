@@ -22,7 +22,6 @@ object DBResultObject {
     rows: js.Array[js.Array[js.Object]]
   ): DBResultObject = {
     val __obj = js.Dynamic.literal(cols = cols.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any], rowcount = rowcount.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DBResultObject]
   }
 }

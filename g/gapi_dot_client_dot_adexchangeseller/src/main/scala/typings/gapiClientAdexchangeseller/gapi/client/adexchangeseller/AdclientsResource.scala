@@ -15,7 +15,6 @@ object AdclientsResource {
   @scala.inline
   def apply(list: AnonAccountId => Request_[AdClients]): AdclientsResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[AdclientsResource]
   }
 }

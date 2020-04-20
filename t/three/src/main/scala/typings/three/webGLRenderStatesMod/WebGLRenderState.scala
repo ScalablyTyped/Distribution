@@ -25,7 +25,6 @@ object WebGLRenderState {
     state: AnonLights
   ): WebGLRenderState = {
     val __obj = js.Dynamic.literal(init = js.Any.fromFunction0(init), pushLight = js.Any.fromFunction1(pushLight), pushShadow = js.Any.fromFunction1(pushShadow), setupLights = js.Any.fromFunction1(setupLights), state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WebGLRenderState]
   }
 }

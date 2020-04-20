@@ -16,12 +16,10 @@ trait HTMLCaptionFlag extends js.Object
 
 object HTMLCaptionFlag {
   @scala.inline
-  def HTMLCaptionFlagNo: `0` = this.cast(0)
+  def HTMLCaptionFlagNo: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def HTMLCaptionFlagYes: `12582912` = this.cast(12582912)
+  def HTMLCaptionFlagYes: `12582912` = 12582912.asInstanceOf[`12582912`]
   @scala.inline
-  def HTMLCaptionFlag_Max: `2147483647` = this.cast(2147483647)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def HTMLCaptionFlag_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

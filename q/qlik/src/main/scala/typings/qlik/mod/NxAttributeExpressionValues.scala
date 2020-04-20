@@ -12,7 +12,6 @@ object NxAttributeExpressionValues {
   @scala.inline
   def apply(qValues: js.Array[NxSimpleValue]): NxAttributeExpressionValues = {
     val __obj = js.Dynamic.literal(qValues = qValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NxAttributeExpressionValues]
   }
 }

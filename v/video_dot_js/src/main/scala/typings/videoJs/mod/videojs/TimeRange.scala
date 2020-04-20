@@ -37,7 +37,6 @@ object TimeRange {
   @scala.inline
   def apply(end: Double => Double, length: Double, start: Double => Double): TimeRange = {
     val __obj = js.Dynamic.literal(end = js.Any.fromFunction1(end), length = length.asInstanceOf[js.Any], start = js.Any.fromFunction1(start))
-  
     __obj.asInstanceOf[TimeRange]
   }
 }

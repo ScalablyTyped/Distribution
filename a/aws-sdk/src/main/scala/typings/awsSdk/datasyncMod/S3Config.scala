@@ -16,7 +16,6 @@ object S3Config {
   @scala.inline
   def apply(BucketAccessRoleArn: IamRoleArn): S3Config = {
     val __obj = js.Dynamic.literal(BucketAccessRoleArn = BucketAccessRoleArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[S3Config]
   }
 }

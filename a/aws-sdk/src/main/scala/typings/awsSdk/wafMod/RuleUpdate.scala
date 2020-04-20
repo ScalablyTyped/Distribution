@@ -20,7 +20,6 @@ object RuleUpdate {
   @scala.inline
   def apply(Action: ChangeAction, Predicate: Predicate): RuleUpdate = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], Predicate = Predicate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RuleUpdate]
   }
 }

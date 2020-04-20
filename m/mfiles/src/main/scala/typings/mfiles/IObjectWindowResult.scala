@@ -27,7 +27,6 @@ object IObjectWindowResult {
     Visible: Boolean
   ): IObjectWindowResult = {
     val __obj = js.Dynamic.literal(AccessControlList = AccessControlList.asInstanceOf[js.Any], ObjVer = ObjVer.asInstanceOf[js.Any], Properties = Properties.asInstanceOf[js.Any], Result = Result.asInstanceOf[js.Any], SelectedFileClass = SelectedFileClass.asInstanceOf[js.Any], UseAsDefaults = UseAsDefaults.asInstanceOf[js.Any], Visible = Visible.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IObjectWindowResult]
   }
 }

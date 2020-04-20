@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactLazyloadProps {
   @scala.inline
-  def ReactLazyloadProps: LazyLoadProps.type = typings.reactLazyload.mod.LazyLoadProps
+  def ReactLazyloadProps: LazyLoadProps.type = LazyLoadProps
   type ReactLazyloadProps = LazyLoadProps
 }
 

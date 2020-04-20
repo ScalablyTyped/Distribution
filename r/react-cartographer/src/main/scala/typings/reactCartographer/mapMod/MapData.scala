@@ -13,7 +13,6 @@ object MapData {
   @scala.inline
   def apply(locationLink: js.Any, locationText: String): MapData = {
     val __obj = js.Dynamic.literal(locationLink = locationLink.asInstanceOf[js.Any], locationText = locationText.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MapData]
   }
 }

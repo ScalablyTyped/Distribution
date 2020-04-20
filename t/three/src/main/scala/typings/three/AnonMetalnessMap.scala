@@ -13,7 +13,6 @@ object AnonMetalnessMap {
   @scala.inline
   def apply(metalnessMap: IUniform): AnonMetalnessMap = {
     val __obj = js.Dynamic.literal(metalnessMap = metalnessMap.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMetalnessMap]
   }
 }

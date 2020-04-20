@@ -17,7 +17,6 @@ object RequestCookie {
   @scala.inline
   def apply(name: String, replace: Boolean, value: String): RequestCookie = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], replace = replace.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RequestCookie]
   }
 }

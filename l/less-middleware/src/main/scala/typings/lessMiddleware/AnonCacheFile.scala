@@ -2,6 +2,7 @@ package typings.lessMiddleware
 
 import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,7 +56,7 @@ trait AnonCacheFile extends js.Object {
     js.Function4[
       /* pathname */ String, 
       /* css */ String, 
-      /* req */ Request_[ParamsDictionary], 
+      /* req */ Request_[ParamsDictionary, _, _, Query], 
       /* next */ js.Function, 
       Unit
     ]
@@ -74,7 +75,7 @@ object AnonCacheFile {
     postprocess: AnonCss = null,
     preprocess: AnonImportPaths = null,
     render: AnonCompress = null,
-    storeCss: (/* pathname */ String, /* css */ String, /* req */ Request_[ParamsDictionary], /* next */ js.Function) => Unit = null
+    storeCss: (/* pathname */ String, /* css */ String, /* req */ Request_[ParamsDictionary, _, _, Query], /* next */ js.Function) => Unit = null
   ): AnonCacheFile = {
     val __obj = js.Dynamic.literal()
     if (cacheFile != null) __obj.updateDynamic("cacheFile")(cacheFile.asInstanceOf[js.Any])

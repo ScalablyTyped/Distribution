@@ -20,7 +20,6 @@ object ThumbnailsResource {
   @scala.inline
   def apply(list: AnonOauthtoken => Request_[ListStepThumbnailsResponse]): ThumbnailsResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[ThumbnailsResource]
   }
 }

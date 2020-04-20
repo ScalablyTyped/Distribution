@@ -16,7 +16,6 @@ object AppsListInstallationReposForAuthenticatedUserResponse {
     total_count: Double
   ): AppsListInstallationReposForAuthenticatedUserResponse = {
     val __obj = js.Dynamic.literal(repositories = repositories.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AppsListInstallationReposForAuthenticatedUserResponse]
   }
 }

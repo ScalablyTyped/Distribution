@@ -18,7 +18,6 @@ object NodeExporter {
   @scala.inline
   def apply(EnabledInBroker: boolean): NodeExporter = {
     val __obj = js.Dynamic.literal(EnabledInBroker = EnabledInBroker.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NodeExporter]
   }
 }

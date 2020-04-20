@@ -15,7 +15,6 @@ object AnonCerts {
   @scala.inline
   def apply(certs: js.Array[String], content: StringParam, signerInfos: js.Array[AnonHashAlg]): AnonCerts = {
     val __obj = js.Dynamic.literal(certs = certs.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], signerInfos = signerInfos.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCerts]
   }
 }

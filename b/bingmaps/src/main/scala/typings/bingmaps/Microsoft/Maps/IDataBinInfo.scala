@@ -15,7 +15,6 @@ object IDataBinInfo {
   @scala.inline
   def apply(containedPushpins: js.Array[Pushpin], metrics: IDataBinMetrics): IDataBinInfo = {
     val __obj = js.Dynamic.literal(containedPushpins = containedPushpins.asInstanceOf[js.Any], metrics = metrics.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDataBinInfo]
   }
 }

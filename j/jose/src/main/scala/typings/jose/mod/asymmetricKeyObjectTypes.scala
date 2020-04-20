@@ -12,10 +12,8 @@ trait asymmetricKeyObjectTypes extends js.Object
 
 object asymmetricKeyObjectTypes {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `private`: typings.jose.joseStrings.`private` = "private".asInstanceOf[typings.jose.joseStrings.`private`]
   @scala.inline
-  def `private`: typings.jose.joseStrings.`private` = this.cast("private")
-  @scala.inline
-  def public: typings.jose.joseStrings.public = this.cast("public")
+  def public: typings.jose.joseStrings.public = "public".asInstanceOf[typings.jose.joseStrings.public]
 }
 

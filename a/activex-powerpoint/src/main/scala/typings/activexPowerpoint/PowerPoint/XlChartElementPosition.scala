@@ -14,10 +14,8 @@ trait XlChartElementPosition extends js.Object
 
 object XlChartElementPosition {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlChartElementPositionAutomatic: `-4105` = -4105.asInstanceOf[`-4105`]
   @scala.inline
-  def xlChartElementPositionAutomatic: `-4105` = this.cast(-4105)
-  @scala.inline
-  def xlChartElementPositionCustom: `-4114` = this.cast(-4114)
+  def xlChartElementPositionCustom: `-4114` = -4114.asInstanceOf[`-4114`]
 }
 

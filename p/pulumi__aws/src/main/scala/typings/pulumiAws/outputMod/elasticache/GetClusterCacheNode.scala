@@ -23,7 +23,6 @@ object GetClusterCacheNode {
   @scala.inline
   def apply(address: String, availabilityZone: String, id: String, port: Double): GetClusterCacheNode = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], availabilityZone = availabilityZone.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetClusterCacheNode]
   }
 }

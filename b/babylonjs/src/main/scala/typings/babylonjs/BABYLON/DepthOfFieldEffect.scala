@@ -59,17 +59,17 @@ class DepthOfFieldEffect protected () extends PostProcessRenderEffect {
     * @param camera The camera to dispose the effect on.
     */
   def disposeEffects(camera: Camera): Unit = js.native
-  def fStop(): Double = js.native
+  def fStop: Double = js.native
   /**
     * F-Stop of the effect's camera. The diameter of the resulting aperture can be computed by lensSize/fStop. (default: 1.4)
     */
   def fStop(value: Double): js.Any = js.native
-  def focalLength(): Double = js.native
+  def focalLength: Double = js.native
   /**
     * The focal the length of the camera used in the effect in scene units/1000 (eg. millimeter)
     */
   def focalLength(value: Double): js.Any = js.native
-  def focusDistance(): Double = js.native
+  def focusDistance: Double = js.native
   /**
     * Distance away from the camera to focus on in scene units/1000 (eg. millimeter). (default: 2000)
     */
@@ -79,7 +79,7 @@ class DepthOfFieldEffect protected () extends PostProcessRenderEffect {
     * @returns "DepthOfFieldEffect"
     */
   def getClassName(): String = js.native
-  def lensSize(): Double = js.native
+  def lensSize: Double = js.native
   /**
     * Max lens size in scene units/1000 (eg. millimeter). Standard cameras are 50mm. (default: 50) The diamater of the resulting aperture can be computed by lensSize/fStop.
     */

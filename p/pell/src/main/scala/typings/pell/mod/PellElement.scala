@@ -13,7 +13,6 @@ object PellElement {
   @scala.inline
   def apply(content: HTMLDivElement): PellElement = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PellElement]
   }
 }

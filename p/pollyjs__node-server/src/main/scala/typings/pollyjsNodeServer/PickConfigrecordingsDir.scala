@@ -13,7 +13,6 @@ object PickConfigrecordingsDir {
   @scala.inline
   def apply(recordingsDir: String): PickConfigrecordingsDir = {
     val __obj = js.Dynamic.literal(recordingsDir = recordingsDir.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickConfigrecordingsDir]
   }
 }

@@ -14,7 +14,6 @@ object PickImplselector {
   @scala.inline
   def apply(selector: SelectorSettings): PickImplselector = {
     val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplselector]
   }
 }

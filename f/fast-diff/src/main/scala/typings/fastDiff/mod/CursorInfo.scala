@@ -14,7 +14,6 @@ object CursorInfo {
   @scala.inline
   def apply(newRange: AnonIndex, oldRange: AnonIndex): CursorInfo = {
     val __obj = js.Dynamic.literal(newRange = newRange.asInstanceOf[js.Any], oldRange = oldRange.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CursorInfo]
   }
 }

@@ -33,7 +33,6 @@ object PutMetricFilterRequest {
     metricTransformations: MetricTransformations
   ): PutMetricFilterRequest = {
     val __obj = js.Dynamic.literal(filterName = filterName.asInstanceOf[js.Any], filterPattern = filterPattern.asInstanceOf[js.Any], logGroupName = logGroupName.asInstanceOf[js.Any], metricTransformations = metricTransformations.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutMetricFilterRequest]
   }
 }

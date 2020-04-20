@@ -13,12 +13,10 @@ trait NavigatorType extends js.Object
 
 object NavigatorType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `react-navigationSlashDRAWER`: typings.reactNavigation.reactNavigationStrings.`react-navigationSlashDRAWER` = "react-navigation/DRAWER".asInstanceOf[typings.reactNavigation.reactNavigationStrings.`react-navigationSlashDRAWER`]
   @scala.inline
-  def `react-navigationSlashDRAWER`: typings.reactNavigation.reactNavigationStrings.`react-navigationSlashDRAWER` = this.cast("react-navigation/DRAWER")
+  def `react-navigationSlashSTACK`: typings.reactNavigation.reactNavigationStrings.`react-navigationSlashSTACK` = "react-navigation/STACK".asInstanceOf[typings.reactNavigation.reactNavigationStrings.`react-navigationSlashSTACK`]
   @scala.inline
-  def `react-navigationSlashSTACK`: typings.reactNavigation.reactNavigationStrings.`react-navigationSlashSTACK` = this.cast("react-navigation/STACK")
-  @scala.inline
-  def `react-navigationSlashTABS`: typings.reactNavigation.reactNavigationStrings.`react-navigationSlashTABS` = this.cast("react-navigation/TABS")
+  def `react-navigationSlashTABS`: typings.reactNavigation.reactNavigationStrings.`react-navigationSlashTABS` = "react-navigation/TABS".asInstanceOf[typings.reactNavigation.reactNavigationStrings.`react-navigationSlashTABS`]
 }
 

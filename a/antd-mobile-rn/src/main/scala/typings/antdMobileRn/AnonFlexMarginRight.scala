@@ -15,7 +15,6 @@ object AnonFlexMarginRight {
   @scala.inline
   def apply(flex: Double, marginRight: Double, overflow: String, width: Double): AnonFlexMarginRight = {
     val __obj = js.Dynamic.literal(flex = flex.asInstanceOf[js.Any], marginRight = marginRight.asInstanceOf[js.Any], overflow = overflow.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFlexMarginRight]
   }
 }

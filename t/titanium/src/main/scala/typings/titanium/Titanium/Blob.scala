@@ -1,5 +1,6 @@
 package typings.titanium.Titanium
 
+import typings.titanium.Dimension
 import typings.titanium.Titanium.Filesystem.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,8 +9,9 @@ import scala.scalajs.js.annotation._
 /**
 	 * A container for binary data.
 	 */
+@JSGlobal("Titanium.Blob")
 @js.native
-trait Blob extends Proxy {
+class Blob () extends Proxy {
   /**
   		 * File object represented by this blob, or `null` if this blob is not
   		 * associated with a file.
@@ -50,34 +52,42 @@ trait Blob extends Proxy {
   def append(blob: Blob): Unit = js.native
   /**
   		 * Gets the value of the <Titanium.Blob.file> property.
+  		 * @deprecated Access <Titanium.Blob.file> instead.
   		 */
   def getFile(): File = js.native
   /**
   		 * Gets the value of the <Titanium.Blob.height> property.
+  		 * @deprecated Access <Titanium.Blob.height> instead.
   		 */
   def getHeight(): Double = js.native
   /**
   		 * Gets the value of the <Titanium.Blob.length> property.
+  		 * @deprecated Access <Titanium.Blob.length> instead.
   		 */
   def getLength(): Double = js.native
   /**
   		 * Gets the value of the <Titanium.Blob.mimeType> property.
+  		 * @deprecated Access <Titanium.Blob.mimeType> instead.
   		 */
   def getMimeType(): String = js.native
   /**
   		 * Gets the value of the <Titanium.Blob.nativePath> property.
+  		 * @deprecated Access <Titanium.Blob.nativePath> instead.
   		 */
   def getNativePath(): String = js.native
   /**
   		 * Gets the value of the <Titanium.Blob.size> property.
+  		 * @deprecated Access <Titanium.Blob.size> instead.
   		 */
   def getSize(): Double = js.native
   /**
   		 * Gets the value of the <Titanium.Blob.text> property.
+  		 * @deprecated Access <Titanium.Blob.text> instead.
   		 */
   def getText(): String = js.native
   /**
   		 * Gets the value of the <Titanium.Blob.width> property.
+  		 * @deprecated Access <Titanium.Blob.width> instead.
   		 */
   def getWidth(): Double = js.native
   /**
@@ -87,7 +97,7 @@ trait Blob extends Proxy {
   /**
   		 * Creates a new blob by cropping the underlying image to the specified dimensions.
   		 */
-  def imageAsCropped(options: js.Any): Blob = js.native
+  def imageAsCropped(options: Dimension): Blob = js.native
   /**
   		 * Creates a new blob by resizing and scaling the underlying image to the specified dimensions.
   		 */

@@ -15,16 +15,14 @@ trait AxisTypeValue extends js.Object
 
 object AxisTypeValue {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def category: typings.highcharts.highchartsStrings.category = "category".asInstanceOf[typings.highcharts.highchartsStrings.category]
   @scala.inline
-  def category: typings.highcharts.highchartsStrings.category = this.cast("category")
+  def datetime: typings.highcharts.highchartsStrings.datetime = "datetime".asInstanceOf[typings.highcharts.highchartsStrings.datetime]
   @scala.inline
-  def datetime: typings.highcharts.highchartsStrings.datetime = this.cast("datetime")
+  def linear: typings.highcharts.highchartsStrings.linear = "linear".asInstanceOf[typings.highcharts.highchartsStrings.linear]
   @scala.inline
-  def linear: typings.highcharts.highchartsStrings.linear = this.cast("linear")
+  def logarithmic: typings.highcharts.highchartsStrings.logarithmic = "logarithmic".asInstanceOf[typings.highcharts.highchartsStrings.logarithmic]
   @scala.inline
-  def logarithmic: typings.highcharts.highchartsStrings.logarithmic = this.cast("logarithmic")
-  @scala.inline
-  def treegrid: typings.highcharts.highchartsStrings.treegrid = this.cast("treegrid")
+  def treegrid: typings.highcharts.highchartsStrings.treegrid = "treegrid".asInstanceOf[typings.highcharts.highchartsStrings.treegrid]
 }
 

@@ -23,7 +23,6 @@ object IRule {
     isEnabled: () => Boolean
   ): IRule = {
     val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), applyWithWalker = js.Any.fromFunction1(applyWithWalker), getOptions = js.Any.fromFunction0(getOptions), isEnabled = js.Any.fromFunction0(isEnabled))
-  
     __obj.asInstanceOf[IRule]
   }
 }

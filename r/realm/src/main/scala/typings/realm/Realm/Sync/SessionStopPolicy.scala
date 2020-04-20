@@ -16,12 +16,10 @@ trait SessionStopPolicy extends js.Object
 
 object SessionStopPolicy {
   @scala.inline
-  def AfterUpload: `after-upload` = this.cast("after-upload")
+  def AfterUpload: `after-upload` = "after-upload".asInstanceOf[`after-upload`]
   @scala.inline
-  def Immediately: immediately = this.cast("immediately")
+  def Immediately: immediately = "immediately".asInstanceOf[immediately]
   @scala.inline
-  def Never: never = this.cast("never")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Never: never = "never".asInstanceOf[never]
 }
 

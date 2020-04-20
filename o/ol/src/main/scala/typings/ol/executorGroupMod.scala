@@ -1,6 +1,7 @@
 package typings.ol
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.ol.builderTypeMod.BuilderType
 import typings.ol.canvasMod.DeclutterGroup
 import typings.ol.coordinateMod.Coordinate
@@ -60,14 +61,14 @@ object executorGroupMod extends js.Object {
       resolution: Double,
       pixelRatio: Double,
       overlaps: Boolean,
-      allInstructions: StringDictionary[typings.ol.olStrings.default with js.Any]
+      allInstructions: StringDictionary[typings.ol.olStrings.default with TopLevel[js.Any]]
     ) = this()
     def this(
       maxExtent: Extent,
       resolution: Double,
       pixelRatio: Double,
       overlaps: Boolean,
-      allInstructions: StringDictionary[typings.ol.olStrings.default with js.Any],
+      allInstructions: StringDictionary[typings.ol.olStrings.default with TopLevel[js.Any]],
       opt_renderBuffer: Double
     ) = this()
   }

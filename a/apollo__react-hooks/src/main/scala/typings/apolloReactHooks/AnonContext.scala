@@ -23,7 +23,6 @@ object AnonContext {
     setResult: MutationResult[TData] => js.Any
   ): AnonContext[TData, TVariables] = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], setResult = js.Any.fromFunction1(setResult))
-  
     __obj.asInstanceOf[AnonContext[TData, TVariables]]
   }
 }

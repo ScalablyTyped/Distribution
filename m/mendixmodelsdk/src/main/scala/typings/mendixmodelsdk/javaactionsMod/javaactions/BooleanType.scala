@@ -33,11 +33,11 @@ class BooleanType protected () extends PrimitiveType {
   @JSName("model")
   var model_FBooleanType: IModel = js.native
   @JSName("containerAsBasicParameterType")
-  def containerAsBasicParameterType_MBooleanType(): BasicParameterType = js.native
+  def containerAsBasicParameterType_MBooleanType: BasicParameterType = js.native
   @JSName("containerAsJavaActionParameter")
-  def containerAsJavaActionParameter_MBooleanType(): JavaActionParameter = js.native
+  def containerAsJavaActionParameter_MBooleanType: JavaActionParameter = js.native
   @JSName("containerAsJavaAction")
-  def containerAsJavaAction_MBooleanType(): JavaAction = js.native
+  def containerAsJavaAction_MBooleanType: JavaAction = js.native
 }
 
 /* static members */

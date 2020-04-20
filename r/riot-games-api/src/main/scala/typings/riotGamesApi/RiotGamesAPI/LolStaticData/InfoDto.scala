@@ -15,7 +15,6 @@ object InfoDto {
   @scala.inline
   def apply(attack: Double, defense: Double, difficulty: Double, magic: Double): InfoDto = {
     val __obj = js.Dynamic.literal(attack = attack.asInstanceOf[js.Any], defense = defense.asInstanceOf[js.Any], difficulty = difficulty.asInstanceOf[js.Any], magic = magic.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InfoDto]
   }
 }

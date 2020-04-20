@@ -16,7 +16,6 @@ object CreateRealtimeEndpointInput {
   @scala.inline
   def apply(MLModelId: EntityId): CreateRealtimeEndpointInput = {
     val __obj = js.Dynamic.literal(MLModelId = MLModelId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateRealtimeEndpointInput]
   }
 }

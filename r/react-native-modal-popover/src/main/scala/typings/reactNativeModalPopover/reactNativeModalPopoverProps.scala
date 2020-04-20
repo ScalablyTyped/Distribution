@@ -10,7 +10,7 @@ trait reactNativeModalPopoverProps {
   def PopoverProps: typings.reactNativeModalPopover.popoverMod.PopoverProps.type = typings.reactNativeModalPopover.popoverMod.PopoverProps
   type PopoverProps = typings.reactNativeModalPopover.popoverMod.PopoverProps
   @scala.inline
-  def PopoverControllerProps: Props.type = typings.reactNativeModalPopover.popoverControllerMod.Props
+  def PopoverControllerProps: Props.type = Props
   type PopoverControllerProps = Props
   @scala.inline
   def PopoverTouchableProps: typings.reactNativeModalPopover.popoverTouchableMod.Props.type = typings.reactNativeModalPopover.popoverTouchableMod.Props

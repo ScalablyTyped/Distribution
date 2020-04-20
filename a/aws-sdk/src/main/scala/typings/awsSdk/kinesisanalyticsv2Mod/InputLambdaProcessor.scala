@@ -16,7 +16,6 @@ object InputLambdaProcessor {
   @scala.inline
   def apply(ResourceARN: ResourceARN): InputLambdaProcessor = {
     val __obj = js.Dynamic.literal(ResourceARN = ResourceARN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InputLambdaProcessor]
   }
 }

@@ -14,7 +14,6 @@ object AsObject {
     annotationList: js.Array[typings.googleProtobuf.descriptorPbMod.GeneratedCodeInfo.Annotation.AsObject]
   ): AsObject = {
     val __obj = js.Dynamic.literal(annotationList = annotationList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AsObject]
   }
 }

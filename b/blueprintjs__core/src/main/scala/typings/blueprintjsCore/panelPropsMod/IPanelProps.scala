@@ -23,7 +23,6 @@ object IPanelProps {
   @scala.inline
   def apply(closePanel: () => Unit, openPanel: IPanel[js.Any] => Unit): IPanelProps = {
     val __obj = js.Dynamic.literal(closePanel = js.Any.fromFunction0(closePanel), openPanel = js.Any.fromFunction1(openPanel))
-  
     __obj.asInstanceOf[IPanelProps]
   }
 }

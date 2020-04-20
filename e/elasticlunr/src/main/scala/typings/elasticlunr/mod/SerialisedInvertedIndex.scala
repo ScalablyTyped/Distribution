@@ -12,7 +12,6 @@ object SerialisedInvertedIndex {
   @scala.inline
   def apply(root: InvertedIndexNode): SerialisedInvertedIndex = {
     val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SerialisedInvertedIndex]
   }
 }

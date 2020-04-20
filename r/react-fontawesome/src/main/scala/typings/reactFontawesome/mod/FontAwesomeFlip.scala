@@ -12,10 +12,8 @@ trait FontAwesomeFlip extends js.Object
 
 object FontAwesomeFlip {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def horizontal: typings.reactFontawesome.reactFontawesomeStrings.horizontal = "horizontal".asInstanceOf[typings.reactFontawesome.reactFontawesomeStrings.horizontal]
   @scala.inline
-  def horizontal: typings.reactFontawesome.reactFontawesomeStrings.horizontal = this.cast("horizontal")
-  @scala.inline
-  def vertical: typings.reactFontawesome.reactFontawesomeStrings.vertical = this.cast("vertical")
+  def vertical: typings.reactFontawesome.reactFontawesomeStrings.vertical = "vertical".asInstanceOf[typings.reactFontawesome.reactFontawesomeStrings.vertical]
 }
 

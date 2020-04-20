@@ -171,7 +171,6 @@ object KnockoutBindingHandlers {
     visibleWhenValid: KnockoutBindingHandler[_, _, _]
   ): KnockoutBindingHandlers = {
     val __obj = js.Dynamic.literal(disabledWhenNotValid = disabledWhenNotValid.asInstanceOf[js.Any], disabledWhenTouchedAndNotValid = disabledWhenTouchedAndNotValid.asInstanceOf[js.Any], enabledWhenApplicable = enabledWhenApplicable.asInstanceOf[js.Any], formattedText = formattedText.asInstanceOf[js.Any], validatedChecked = validatedChecked.asInstanceOf[js.Any], validatedSelectedOptions = validatedSelectedOptions.asInstanceOf[js.Any], validatedValue = validatedValue.asInstanceOf[js.Any], validationCss = validationCss.asInstanceOf[js.Any], validationMessage = validationMessage.asInstanceOf[js.Any], validationMessageText = validationMessageText.asInstanceOf[js.Any], validationName = validationName.asInstanceOf[js.Any], visibleWhenApplicable = visibleWhenApplicable.asInstanceOf[js.Any], visibleWhenFocused = visibleWhenFocused.asInstanceOf[js.Any], visibleWhenInvalid = visibleWhenInvalid.asInstanceOf[js.Any], visibleWhenSummaryNotEmpty = visibleWhenSummaryNotEmpty.asInstanceOf[js.Any], visibleWhenTouched = visibleWhenTouched.asInstanceOf[js.Any], visibleWhenUntouched = visibleWhenUntouched.asInstanceOf[js.Any], visibleWhenValid = visibleWhenValid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KnockoutBindingHandlers]
   }
 }

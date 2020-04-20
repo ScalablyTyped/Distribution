@@ -18,14 +18,12 @@ trait svgStitchtype extends js.Object
 
 object svgStitchtype {
   @scala.inline
-  def SVG_STITCHTYPE_NOSTITCH: `2` = this.cast(2)
+  def SVG_STITCHTYPE_NOSTITCH: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def SVG_STITCHTYPE_STITCH: `1` = this.cast(1)
+  def SVG_STITCHTYPE_STITCH: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def SVG_STITCHTYPE_UNKNOWN: `0` = this.cast(0)
+  def SVG_STITCHTYPE_UNKNOWN: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def svgStitchtype_Max: `2147483647` = this.cast(2147483647)
+  def svgStitchtype_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

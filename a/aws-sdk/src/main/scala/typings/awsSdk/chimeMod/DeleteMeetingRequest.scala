@@ -16,7 +16,6 @@ object DeleteMeetingRequest {
   @scala.inline
   def apply(MeetingId: GuidString): DeleteMeetingRequest = {
     val __obj = js.Dynamic.literal(MeetingId = MeetingId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteMeetingRequest]
   }
 }

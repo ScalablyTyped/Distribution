@@ -13,12 +13,10 @@ trait OnInputEnteredDisposition extends js.Object
 
 object OnInputEnteredDisposition {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def currentTab: typings.chrome.chromeStrings.currentTab = "currentTab".asInstanceOf[typings.chrome.chromeStrings.currentTab]
   @scala.inline
-  def currentTab: typings.chrome.chromeStrings.currentTab = this.cast("currentTab")
+  def newBackgroundTab: typings.chrome.chromeStrings.newBackgroundTab = "newBackgroundTab".asInstanceOf[typings.chrome.chromeStrings.newBackgroundTab]
   @scala.inline
-  def newBackgroundTab: typings.chrome.chromeStrings.newBackgroundTab = this.cast("newBackgroundTab")
-  @scala.inline
-  def newForegroundTab: typings.chrome.chromeStrings.newForegroundTab = this.cast("newForegroundTab")
+  def newForegroundTab: typings.chrome.chromeStrings.newForegroundTab = "newForegroundTab".asInstanceOf[typings.chrome.chromeStrings.newForegroundTab]
 }
 

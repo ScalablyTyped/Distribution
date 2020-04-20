@@ -19,22 +19,20 @@ trait LogLevel extends js.Object
 
 object LogLevel {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def critical: typings.ravenJs.ravenJsStrings.critical = "critical".asInstanceOf[typings.ravenJs.ravenJsStrings.critical]
   @scala.inline
-  def critical: typings.ravenJs.ravenJsStrings.critical = this.cast("critical")
+  def debug: typings.ravenJs.ravenJsStrings.debug = "debug".asInstanceOf[typings.ravenJs.ravenJsStrings.debug]
   @scala.inline
-  def debug: typings.ravenJs.ravenJsStrings.debug = this.cast("debug")
+  def error: typings.ravenJs.ravenJsStrings.error = "error".asInstanceOf[typings.ravenJs.ravenJsStrings.error]
   @scala.inline
-  def error: typings.ravenJs.ravenJsStrings.error = this.cast("error")
+  def fatal: typings.ravenJs.ravenJsStrings.fatal = "fatal".asInstanceOf[typings.ravenJs.ravenJsStrings.fatal]
   @scala.inline
-  def fatal: typings.ravenJs.ravenJsStrings.fatal = this.cast("fatal")
+  def info: typings.ravenJs.ravenJsStrings.info = "info".asInstanceOf[typings.ravenJs.ravenJsStrings.info]
   @scala.inline
-  def info: typings.ravenJs.ravenJsStrings.info = this.cast("info")
+  def log: typings.ravenJs.ravenJsStrings.log = "log".asInstanceOf[typings.ravenJs.ravenJsStrings.log]
   @scala.inline
-  def log: typings.ravenJs.ravenJsStrings.log = this.cast("log")
+  def warn: typings.ravenJs.ravenJsStrings.warn = "warn".asInstanceOf[typings.ravenJs.ravenJsStrings.warn]
   @scala.inline
-  def warn: typings.ravenJs.ravenJsStrings.warn = this.cast("warn")
-  @scala.inline
-  def warning: typings.ravenJs.ravenJsStrings.warning = this.cast("warning")
+  def warning: typings.ravenJs.ravenJsStrings.warning = "warning".asInstanceOf[typings.ravenJs.ravenJsStrings.warning]
 }
 

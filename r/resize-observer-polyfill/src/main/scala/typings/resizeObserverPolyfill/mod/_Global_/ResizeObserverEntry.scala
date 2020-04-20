@@ -15,7 +15,6 @@ object ResizeObserverEntry {
   @scala.inline
   def apply(contentRect: DOMRectReadOnly, target: Element): ResizeObserverEntry = {
     val __obj = js.Dynamic.literal(contentRect = contentRect.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResizeObserverEntry]
   }
 }

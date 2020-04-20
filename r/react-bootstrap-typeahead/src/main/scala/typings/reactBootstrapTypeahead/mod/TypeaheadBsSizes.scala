@@ -14,14 +14,12 @@ trait TypeaheadBsSizes extends js.Object
 
 object TypeaheadBsSizes {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def large: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.large = "large".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.large]
   @scala.inline
-  def large: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.large = this.cast("large")
+  def lg: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.lg = "lg".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.lg]
   @scala.inline
-  def lg: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.lg = this.cast("lg")
+  def sm: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.sm = "sm".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.sm]
   @scala.inline
-  def sm: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.sm = this.cast("sm")
-  @scala.inline
-  def small: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.small = this.cast("small")
+  def small: typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.small = "small".asInstanceOf[typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.small]
 }
 

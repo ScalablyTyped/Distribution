@@ -18,7 +18,6 @@ object CircuitFactory_ {
     resetCache: () => Unit
   ): CircuitFactory_ = {
     val __obj = js.Dynamic.literal(getCache = js.Any.fromFunction0(getCache), getOrCreate = js.Any.fromFunction1(getOrCreate), resetCache = js.Any.fromFunction0(resetCache))
-  
     __obj.asInstanceOf[CircuitFactory_]
   }
 }

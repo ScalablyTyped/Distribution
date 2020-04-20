@@ -13,7 +13,6 @@ object AnonObjectTypeGraphQLInputObjectType {
   @scala.inline
   def apply(objectType: GraphQLInputObjectType): AnonObjectTypeGraphQLInputObjectType = {
     val __obj = js.Dynamic.literal(objectType = objectType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonObjectTypeGraphQLInputObjectType]
   }
 }

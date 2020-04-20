@@ -15,7 +15,6 @@ object SubscriptionsServices {
   @scala.inline
   def apply(config: Configuration, network: Network): SubscriptionsServices = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], network = network.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SubscriptionsServices]
   }
 }

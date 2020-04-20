@@ -12,7 +12,6 @@ object PullsCreateResponseLinksCommits {
   @scala.inline
   def apply(href: String): PullsCreateResponseLinksCommits = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PullsCreateResponseLinksCommits]
   }
 }

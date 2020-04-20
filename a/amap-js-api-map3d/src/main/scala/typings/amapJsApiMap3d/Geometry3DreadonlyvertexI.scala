@@ -25,7 +25,6 @@ object Geometry3DreadonlyvertexI {
     vertices: js.Array[Double]
   ): Geometry3DreadonlyvertexI = {
     val __obj = js.Dynamic.literal(directions = directions.asInstanceOf[js.Any], textureIndices = textureIndices.asInstanceOf[js.Any], vertexColors = vertexColors.asInstanceOf[js.Any], vertexIndices = vertexIndices.asInstanceOf[js.Any], vertexUVs = vertexUVs.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Geometry3DreadonlyvertexI]
   }
 }

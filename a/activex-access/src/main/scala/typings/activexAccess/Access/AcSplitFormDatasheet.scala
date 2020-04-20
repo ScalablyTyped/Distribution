@@ -14,10 +14,8 @@ trait AcSplitFormDatasheet extends js.Object
 
 object AcSplitFormDatasheet {
   @scala.inline
-  def acDatasheetAllowEdits: `0` = this.cast(0)
+  def acDatasheetAllowEdits: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def acDatasheetReadOnly: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def acDatasheetReadOnly: `1` = 1.asInstanceOf[`1`]
 }
 

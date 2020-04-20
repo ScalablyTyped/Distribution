@@ -20,7 +20,6 @@ object AnonDebug {
     warn: /* repeated */ js.Any => Unit
   ): AnonDebug = {
     val __obj = js.Dynamic.literal(debug = js.Any.fromFunction1(debug), error = js.Any.fromFunction1(error), info = js.Any.fromFunction1(info), warn = js.Any.fromFunction1(warn))
-  
     __obj.asInstanceOf[AnonDebug]
   }
 }

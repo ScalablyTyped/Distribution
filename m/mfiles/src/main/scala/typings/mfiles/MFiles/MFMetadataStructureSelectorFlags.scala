@@ -20,16 +20,14 @@ trait MFMetadataStructureSelectorFlags extends js.Object
 
 object MFMetadataStructureSelectorFlags {
   @scala.inline
-  def IncludeExistingDependencies: `8` = this.cast(8)
+  def IncludeExistingDependencies: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def IncludeNewDependencies: `4` = this.cast(4)
+  def IncludeNewDependencies: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def None: `0` = this.cast(0)
+  def None: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def SelectExisting: `2` = this.cast(2)
+  def SelectExisting: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def SelectNew: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SelectNew: `1` = 1.asInstanceOf[`1`]
 }
 

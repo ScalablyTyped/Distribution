@@ -14,9 +14,14 @@ object withLocalization extends js.Object {
   def apply(component: ComponentClass[Matching[InjectedProps, GetProps[_]], ComponentState]): ComponentType[
     Omit[
       GetProps[ComponentClass[Matching[InjectedProps, GetProps[_]], ComponentState]], 
-      String
+      /* keyof fluent-react.fluent-react.Shared<fluent-react.fluent-react.InjectedProps, fluent-react.fluent-react.GetProps<react.react.ComponentClass<fluent-react.fluent-react.Matching<fluent-react.fluent-react.InjectedProps, fluent-react.fluent-react.GetProps<any>>, react.react.ComponentState>>> */ String
     ]
   ] = js.native
-  def apply(component: FunctionComponent[Matching[InjectedProps, GetProps[_]]]): ComponentType[Omit[GetProps[FunctionComponent[Matching[InjectedProps, GetProps[_]]]], String]] = js.native
+  def apply(component: FunctionComponent[Matching[InjectedProps, GetProps[_]]]): ComponentType[
+    Omit[
+      GetProps[FunctionComponent[Matching[InjectedProps, GetProps[_]]]], 
+      /* keyof fluent-react.fluent-react.Shared<fluent-react.fluent-react.InjectedProps, fluent-react.fluent-react.GetProps<react.react.FunctionComponent<fluent-react.fluent-react.Matching<fluent-react.fluent-react.InjectedProps, fluent-react.fluent-react.GetProps<any>>>>> */ String
+    ]
+  ] = js.native
 }
 

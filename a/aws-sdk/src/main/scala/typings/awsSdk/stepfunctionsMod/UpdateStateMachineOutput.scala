@@ -16,7 +16,6 @@ object UpdateStateMachineOutput {
   @scala.inline
   def apply(updateDate: Timestamp): UpdateStateMachineOutput = {
     val __obj = js.Dynamic.literal(updateDate = updateDate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateStateMachineOutput]
   }
 }

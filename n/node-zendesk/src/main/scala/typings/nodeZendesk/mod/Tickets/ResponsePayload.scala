@@ -13,7 +13,6 @@ object ResponsePayload {
   @scala.inline
   def apply(audit: Audit, ticket: ResponseModel): ResponsePayload = {
     val __obj = js.Dynamic.literal(audit = audit.asInstanceOf[js.Any], ticket = ticket.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResponsePayload]
   }
 }

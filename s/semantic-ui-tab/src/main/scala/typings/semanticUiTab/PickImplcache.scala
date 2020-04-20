@@ -13,7 +13,6 @@ object PickImplcache {
   @scala.inline
   def apply(cache: Boolean): PickImplcache = {
     val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplcache]
   }
 }

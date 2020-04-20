@@ -22,7 +22,6 @@ object AnonChart {
   @scala.inline
   def apply(chart: Chart_, container: RefObject[HTMLDivElement]): AnonChart = {
     val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonChart]
   }
 }

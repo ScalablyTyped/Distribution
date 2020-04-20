@@ -7,7 +7,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IColorPickerState extends js.Object {
+  /** Most recently selected color */
   var color: IColor
+  /** Color component currently being edited via a text field (if intermediate value is invalid) */
   var editingColor: js.UndefOr[AnonComponent] = js.undefined
 }
 

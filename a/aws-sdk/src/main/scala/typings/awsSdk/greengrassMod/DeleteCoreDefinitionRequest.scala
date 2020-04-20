@@ -16,7 +16,6 @@ object DeleteCoreDefinitionRequest {
   @scala.inline
   def apply(CoreDefinitionId: string): DeleteCoreDefinitionRequest = {
     val __obj = js.Dynamic.literal(CoreDefinitionId = CoreDefinitionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteCoreDefinitionRequest]
   }
 }

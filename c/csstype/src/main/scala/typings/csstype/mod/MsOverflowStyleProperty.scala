@@ -20,24 +20,22 @@ trait MsOverflowStyleProperty extends js.Object
 
 object MsOverflowStyleProperty {
   @scala.inline
-  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = this.cast("-moz-initial")
+  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.csstype.csstypeStrings.`-moz-initial`]
   @scala.inline
-  def `-ms-autohiding-scrollbar`: typings.csstype.csstypeStrings.`-ms-autohiding-scrollbar` = this.cast("-ms-autohiding-scrollbar")
+  def `-ms-autohiding-scrollbar`: typings.csstype.csstypeStrings.`-ms-autohiding-scrollbar` = "-ms-autohiding-scrollbar".asInstanceOf[typings.csstype.csstypeStrings.`-ms-autohiding-scrollbar`]
   @scala.inline
-  def auto: typings.csstype.csstypeStrings.auto = this.cast("auto")
+  def auto: typings.csstype.csstypeStrings.auto = "auto".asInstanceOf[typings.csstype.csstypeStrings.auto]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def inherit: typings.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[typings.csstype.csstypeStrings.inherit]
   @scala.inline
-  def inherit: typings.csstype.csstypeStrings.inherit = this.cast("inherit")
+  def initial: typings.csstype.csstypeStrings.initial = "initial".asInstanceOf[typings.csstype.csstypeStrings.initial]
   @scala.inline
-  def initial: typings.csstype.csstypeStrings.initial = this.cast("initial")
+  def none: typings.csstype.csstypeStrings.none = "none".asInstanceOf[typings.csstype.csstypeStrings.none]
   @scala.inline
-  def none: typings.csstype.csstypeStrings.none = this.cast("none")
+  def revert: typings.csstype.csstypeStrings.revert = "revert".asInstanceOf[typings.csstype.csstypeStrings.revert]
   @scala.inline
-  def revert: typings.csstype.csstypeStrings.revert = this.cast("revert")
+  def scrollbar: scrollbar_ = "scrollbar".asInstanceOf[scrollbar_]
   @scala.inline
-  def scrollbar: scrollbar_ = this.cast("scrollbar")
-  @scala.inline
-  def unset: typings.csstype.csstypeStrings.unset = this.cast("unset")
+  def unset: typings.csstype.csstypeStrings.unset = "unset".asInstanceOf[typings.csstype.csstypeStrings.unset]
 }
 

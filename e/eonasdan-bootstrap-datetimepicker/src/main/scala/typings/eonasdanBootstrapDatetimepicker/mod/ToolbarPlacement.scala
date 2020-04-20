@@ -13,12 +13,10 @@ trait ToolbarPlacement extends js.Object
 
 object ToolbarPlacement {
   @scala.inline
-  def bottom: typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerStrings.bottom = this.cast("bottom")
+  def bottom: typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerStrings.bottom = "bottom".asInstanceOf[typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerStrings.bottom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def default: typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerStrings.default = "default".asInstanceOf[typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerStrings.default]
   @scala.inline
-  def default: typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerStrings.default = this.cast("default")
-  @scala.inline
-  def top: typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerStrings.top = this.cast("top")
+  def top: typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerStrings.top = "top".asInstanceOf[typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerStrings.top]
 }
 

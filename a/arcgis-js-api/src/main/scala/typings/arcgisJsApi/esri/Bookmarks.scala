@@ -24,6 +24,14 @@ trait Bookmarks
     */
   var bookmarks: Collection[Bookmark] = js.native
   /**
+    * When true, the widget is visually withdrawn and cannot be interacted with.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#disabled)
+    *
+    * @default false
+    */
+  var disabled: Boolean = js.native
+  /**
     * Indicates whether the widget is able to be edited. When `true`, allows bookmarks to be added, edited, reordered, or deleted from within the widget. Any edits made will only be shown locally and will not be saved.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#editingEnabled)
@@ -54,7 +62,7 @@ trait Bookmarks
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#visibleElements)
     */
-  var visibleElements: VisibleElements = js.native
+  var visibleElements: BookmarksVisibleElements = js.native
   /**
     * Zoom to a specific bookmark.
     *

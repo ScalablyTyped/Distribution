@@ -22,7 +22,6 @@ object CreateStyledOptions {
     wrapper: /* fc */ FC[js.Any] => ComponentType[js.Any]
   ): CreateStyledOptions = {
     val __obj = js.Dynamic.literal(driver = js.Any.fromFunction2(driver), getInitialStyle = js.Any.fromFunction0(getInitialStyle), wrapper = js.Any.fromFunction1(wrapper))
-  
     __obj.asInstanceOf[CreateStyledOptions]
   }
 }

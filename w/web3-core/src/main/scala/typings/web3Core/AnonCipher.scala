@@ -24,7 +24,6 @@ object AnonCipher {
     mac: String
   ): AnonCipher = {
     val __obj = js.Dynamic.literal(cipher = cipher.asInstanceOf[js.Any], cipherparams = cipherparams.asInstanceOf[js.Any], ciphertext = ciphertext.asInstanceOf[js.Any], kdf = kdf.asInstanceOf[js.Any], kdfparams = kdfparams.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCipher]
   }
 }

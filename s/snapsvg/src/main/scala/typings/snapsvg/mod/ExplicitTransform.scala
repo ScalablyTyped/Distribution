@@ -26,7 +26,6 @@ object ExplicitTransform {
     shear: Double
   ): ExplicitTransform = {
     val __obj = js.Dynamic.literal(dx = dx.asInstanceOf[js.Any], dy = dy.asInstanceOf[js.Any], isSimple = isSimple.asInstanceOf[js.Any], rotate = rotate.asInstanceOf[js.Any], scalex = scalex.asInstanceOf[js.Any], scaley = scaley.asInstanceOf[js.Any], shear = shear.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExplicitTransform]
   }
 }

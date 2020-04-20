@@ -15,16 +15,14 @@ trait MotionControllerComponentType extends js.Object
 
 object MotionControllerComponentType {
   @scala.inline
-  def button: typings.babylonjs.babylonjsStrings.button = this.cast("button")
+  def button: typings.babylonjs.babylonjsStrings.button = "button".asInstanceOf[typings.babylonjs.babylonjsStrings.button]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def squeeze: typings.babylonjs.babylonjsStrings.squeeze = "squeeze".asInstanceOf[typings.babylonjs.babylonjsStrings.squeeze]
   @scala.inline
-  def squeeze: typings.babylonjs.babylonjsStrings.squeeze = this.cast("squeeze")
+  def thumbstick: typings.babylonjs.babylonjsStrings.thumbstick = "thumbstick".asInstanceOf[typings.babylonjs.babylonjsStrings.thumbstick]
   @scala.inline
-  def thumbstick: typings.babylonjs.babylonjsStrings.thumbstick = this.cast("thumbstick")
+  def touchpad: typings.babylonjs.babylonjsStrings.touchpad = "touchpad".asInstanceOf[typings.babylonjs.babylonjsStrings.touchpad]
   @scala.inline
-  def touchpad: typings.babylonjs.babylonjsStrings.touchpad = this.cast("touchpad")
-  @scala.inline
-  def trigger: typings.babylonjs.babylonjsStrings.trigger = this.cast("trigger")
+  def trigger: typings.babylonjs.babylonjsStrings.trigger = "trigger".asInstanceOf[typings.babylonjs.babylonjsStrings.trigger]
 }
 

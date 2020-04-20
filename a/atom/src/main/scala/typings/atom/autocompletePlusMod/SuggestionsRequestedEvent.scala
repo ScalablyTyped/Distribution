@@ -30,7 +30,6 @@ object SuggestionsRequestedEvent {
     scopeDescriptor: ScopeDescriptor
   ): SuggestionsRequestedEvent = {
     val __obj = js.Dynamic.literal(activatedManually = activatedManually.asInstanceOf[js.Any], bufferPosition = bufferPosition.asInstanceOf[js.Any], editor = editor.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], scopeDescriptor = scopeDescriptor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SuggestionsRequestedEvent]
   }
 }

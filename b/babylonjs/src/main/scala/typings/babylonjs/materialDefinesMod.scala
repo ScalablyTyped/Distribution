@@ -46,7 +46,7 @@ object materialDefinesMod extends js.Object {
     /**
       * Specifies if the material needs to be re-calculated
       */
-    def isDirty(): Boolean = js.native
+    def isDirty: Boolean = js.native
     /**
       * Specifies if two material defines are equal
       * @param other - A material define instance to compare to

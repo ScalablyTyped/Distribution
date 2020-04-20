@@ -13,7 +13,6 @@ object Library_ {
   @scala.inline
   def apply(add: /* repeated */ IconDefinitionOrPack => Unit, reset: () => Unit): Library_ = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), reset = js.Any.fromFunction0(reset))
-  
     __obj.asInstanceOf[Library_]
   }
 }

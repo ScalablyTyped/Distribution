@@ -13,7 +13,6 @@ object BoxKeyPair {
   @scala.inline
   def apply(boxPk: BoxPublicKey, boxSk: BoxSecretKey): BoxKeyPair = {
     val __obj = js.Dynamic.literal(boxPk = boxPk.asInstanceOf[js.Any], boxSk = boxSk.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BoxKeyPair]
   }
 }

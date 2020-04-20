@@ -35,7 +35,7 @@ package object mod {
   type ServerWriteableStream[RequestType] = typings.grpc.mod.ServerWritableStream[RequestType]
   type ServiceDefinition[ImplementationType] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ I in keyof ImplementationType ]: grpc.grpc.MethodDefinition<any, any>}
-    */ typings.grpc.grpcStrings.ServiceDefinition with js.Any
+    */ typings.grpc.grpcStrings.ServiceDefinition with org.scalablytyped.runtime.TopLevel[js.Any]
   type StatusListener = js.Function2[/* status */ typings.grpc.mod.StatusObject, /* next */ js.Function, scala.Unit]
   type UntypedServiceImplementation = org.scalablytyped.runtime.StringDictionary[typings.grpc.mod.handleCall[js.Any, js.Any]]
   /**

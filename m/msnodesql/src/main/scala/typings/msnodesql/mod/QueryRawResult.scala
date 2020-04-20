@@ -13,7 +13,6 @@ object QueryRawResult {
   @scala.inline
   def apply(meta: js.Array[QueryRawColumn], rows: js.Array[js.Array[_]]): QueryRawResult = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[QueryRawResult]
   }
 }

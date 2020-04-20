@@ -22,7 +22,6 @@ object INDRegistrationCompletedEventArgs {
     transmitterProperties: INDTransmitterProperties
   ): INDRegistrationCompletedEventArgs = {
     val __obj = js.Dynamic.literal(responseCustomData = responseCustomData.asInstanceOf[js.Any], transmitterCertificateAccepted = transmitterCertificateAccepted.asInstanceOf[js.Any], transmitterProperties = transmitterProperties.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INDRegistrationCompletedEventArgs]
   }
 }

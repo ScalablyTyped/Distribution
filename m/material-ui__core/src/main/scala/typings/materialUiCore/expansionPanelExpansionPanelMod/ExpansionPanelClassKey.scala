@@ -14,14 +14,12 @@ trait ExpansionPanelClassKey extends js.Object
 
 object ExpansionPanelClassKey {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def disabled: typings.materialUiCore.materialUiCoreStrings.disabled = "disabled".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.disabled]
   @scala.inline
-  def disabled: typings.materialUiCore.materialUiCoreStrings.disabled = this.cast("disabled")
+  def expanded: typings.materialUiCore.materialUiCoreStrings.expanded = "expanded".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.expanded]
   @scala.inline
-  def expanded: typings.materialUiCore.materialUiCoreStrings.expanded = this.cast("expanded")
+  def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
   @scala.inline
-  def root: typings.materialUiCore.materialUiCoreStrings.root = this.cast("root")
-  @scala.inline
-  def rounded: typings.materialUiCore.materialUiCoreStrings.rounded = this.cast("rounded")
+  def rounded: typings.materialUiCore.materialUiCoreStrings.rounded = "rounded".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.rounded]
 }
 

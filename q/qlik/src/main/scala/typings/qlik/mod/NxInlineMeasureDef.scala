@@ -13,7 +13,6 @@ object NxInlineMeasureDef {
   @scala.inline
   def apply(qcx: Double, qcy: Double): NxInlineMeasureDef = {
     val __obj = js.Dynamic.literal(qcx = qcx.asInstanceOf[js.Any], qcy = qcy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NxInlineMeasureDef]
   }
 }

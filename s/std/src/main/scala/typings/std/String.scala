@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 trait String
   extends /* index */ NumberDictionary[java.lang.String] {
   /** Iterator */
-  @JSName(scala.scalajs.js.Symbol.iterator)
+  @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[java.lang.String]] = js.native
   /** Returns the length of a String object. */
   val length: Double = js.native

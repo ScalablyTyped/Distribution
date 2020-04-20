@@ -108,7 +108,6 @@ object OptionsLB {
     normalization: String | Boolean | js.Any
   ): OptionsLB = {
     val __obj = js.Dynamic.literal(appConfigRootDir = appConfigRootDir.asInstanceOf[js.Any], appRootDir = appRootDir.asInstanceOf[js.Any], bootDirs = bootDirs.asInstanceOf[js.Any], bootScripts = bootScripts.asInstanceOf[js.Any], componentRootDir = componentRootDir.asInstanceOf[js.Any], components = components.asInstanceOf[js.Any], dataSources = dataSources.asInstanceOf[js.Any], dsRootDir = dsRootDir.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], middleware = middleware.asInstanceOf[js.Any], middlewareRootDir = middlewareRootDir.asInstanceOf[js.Any], mixinDirs = mixinDirs.asInstanceOf[js.Any], mixinSources = mixinSources.asInstanceOf[js.Any], modelDefinitions = modelDefinitions.asInstanceOf[js.Any], modelSources = modelSources.asInstanceOf[js.Any], models = models.asInstanceOf[js.Any], modelsRootDir = modelsRootDir.asInstanceOf[js.Any], normalization = normalization.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OptionsLB]
   }
 }

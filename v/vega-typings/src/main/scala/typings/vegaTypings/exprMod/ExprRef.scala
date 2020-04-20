@@ -16,7 +16,6 @@ object ExprRef {
   @scala.inline
   def apply(expr: Expr): ExprRef = {
     val __obj = js.Dynamic.literal(expr = expr.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExprRef]
   }
 }

@@ -23,7 +23,6 @@ object QuotedColumnParser {
     parserOptions: js.Any
   ): QuotedColumnParser = {
     val __obj = js.Dynamic.literal(checkForMalformedColumn = checkForMalformedColumn.asInstanceOf[js.Any], columnFormatter = columnFormatter.asInstanceOf[js.Any], gatherDataBetweenQuotes = gatherDataBetweenQuotes.asInstanceOf[js.Any], parse = js.Any.fromFunction1(parse), parserOptions = parserOptions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[QuotedColumnParser]
   }
 }

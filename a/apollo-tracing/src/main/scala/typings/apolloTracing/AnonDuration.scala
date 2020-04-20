@@ -24,7 +24,6 @@ object AnonDuration {
     startOffset: Double
   ): AnonDuration = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], fieldName = fieldName.asInstanceOf[js.Any], parentType = parentType.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any], startOffset = startOffset.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDuration]
   }
 }

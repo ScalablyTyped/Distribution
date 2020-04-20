@@ -13,7 +13,6 @@ object AnonCardinal {
   @scala.inline
   def apply(cardinal: js.Array[String], ordinal: js.Array[String]): AnonCardinal = {
     val __obj = js.Dynamic.literal(cardinal = cardinal.asInstanceOf[js.Any], ordinal = ordinal.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCardinal]
   }
 }

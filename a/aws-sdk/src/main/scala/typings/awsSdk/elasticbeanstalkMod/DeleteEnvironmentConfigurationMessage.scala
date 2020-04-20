@@ -20,7 +20,6 @@ object DeleteEnvironmentConfigurationMessage {
   @scala.inline
   def apply(ApplicationName: ApplicationName, EnvironmentName: EnvironmentName): DeleteEnvironmentConfigurationMessage = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], EnvironmentName = EnvironmentName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteEnvironmentConfigurationMessage]
   }
 }

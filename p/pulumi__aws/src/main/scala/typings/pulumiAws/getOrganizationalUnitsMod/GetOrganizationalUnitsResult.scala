@@ -22,7 +22,6 @@ object GetOrganizationalUnitsResult {
   @scala.inline
   def apply(childrens: js.Array[GetOrganizationalUnitsChildren], id: String, parentId: String): GetOrganizationalUnitsResult = {
     val __obj = js.Dynamic.literal(childrens = childrens.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], parentId = parentId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetOrganizationalUnitsResult]
   }
 }

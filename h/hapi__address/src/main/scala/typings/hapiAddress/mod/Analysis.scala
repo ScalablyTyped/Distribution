@@ -19,7 +19,6 @@ object Analysis {
   @scala.inline
   def apply(code: String, error: String): Analysis = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Analysis]
   }
 }

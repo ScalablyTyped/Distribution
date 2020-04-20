@@ -13,7 +13,6 @@ object OneHotInputs {
   @scala.inline
   def apply(indices: js.Any): OneHotInputs = {
     val __obj = js.Dynamic.literal(indices = indices.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OneHotInputs]
   }
 }

@@ -12,7 +12,6 @@ object KnockoutUtils {
   @scala.inline
   def apply(wrapAccessor: js.Any => js.Function): KnockoutUtils = {
     val __obj = js.Dynamic.literal(wrapAccessor = js.Any.fromFunction1(wrapAccessor))
-  
     __obj.asInstanceOf[KnockoutUtils]
   }
 }

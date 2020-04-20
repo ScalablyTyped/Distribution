@@ -12,7 +12,6 @@ object InsightsServicePostResponseRootObject {
   @scala.inline
   def apply(data: InsightsServicePostResponseData): InsightsServicePostResponseRootObject = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InsightsServicePostResponseRootObject]
   }
 }

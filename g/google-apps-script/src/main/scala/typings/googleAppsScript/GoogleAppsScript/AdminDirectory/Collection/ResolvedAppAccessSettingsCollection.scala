@@ -17,7 +17,6 @@ object ResolvedAppAccessSettingsCollection {
   @scala.inline
   def apply(GetSettings: () => AppAccessCollections, ListTrustedApps: () => TrustedApps): ResolvedAppAccessSettingsCollection = {
     val __obj = js.Dynamic.literal(GetSettings = js.Any.fromFunction0(GetSettings), ListTrustedApps = js.Any.fromFunction0(ListTrustedApps))
-  
     __obj.asInstanceOf[ResolvedAppAccessSettingsCollection]
   }
 }

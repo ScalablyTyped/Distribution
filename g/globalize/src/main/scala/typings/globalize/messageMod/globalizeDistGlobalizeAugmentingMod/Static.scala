@@ -17,7 +17,6 @@ object Static {
   @scala.inline
   def apply(loadMessages: js.Object => Unit): Static = {
     val __obj = js.Dynamic.literal(loadMessages = js.Any.fromFunction1(loadMessages))
-  
     __obj.asInstanceOf[Static]
   }
 }

@@ -20,7 +20,6 @@ object DeleteChapCredentialsInput {
   @scala.inline
   def apply(InitiatorName: IqnName, TargetARN: TargetARN): DeleteChapCredentialsInput = {
     val __obj = js.Dynamic.literal(InitiatorName = InitiatorName.asInstanceOf[js.Any], TargetARN = TargetARN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteChapCredentialsInput]
   }
 }

@@ -141,11 +141,11 @@ object socksclientMod extends js.Object {
     def once_error(event: error, listener: js.Function1[/* err */ SocksClientError, Unit]): this.type = js.native
     @JSName("once")
     def once_established(event: established, listener: js.Function1[/* info */ SocksClientEstablishedEvent, Unit]): this.type = js.native
-    def socksClientOptions(): SocksClientOptions = js.native
+    def socksClientOptions: SocksClientOptions = js.native
     /**
       * Gets the SocksClient internal state.
       */
-    /* private */ def state(): js.Any = js.native
+    /* private */ def state: js.Any = js.native
     /**
       * Internal state setter. If the SocksClient is in an error state, it cannot be changed to a non error state.
       */

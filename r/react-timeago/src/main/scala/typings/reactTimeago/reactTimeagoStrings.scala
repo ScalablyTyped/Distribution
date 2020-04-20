@@ -39,7 +39,7 @@ object reactTimeagoStrings {
   @scala.inline
   def day: day = "day".asInstanceOf[day]
   @scala.inline
-  def `from now`: `from now` = "from now".asInstanceOf[`from now`]
+  def `from now`: `from now` = ("from now").asInstanceOf[`from now`]
   @scala.inline
   def hour: hour = "hour".asInstanceOf[hour]
   @scala.inline

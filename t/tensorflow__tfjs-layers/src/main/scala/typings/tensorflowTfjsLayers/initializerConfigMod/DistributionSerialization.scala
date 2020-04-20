@@ -13,12 +13,10 @@ trait DistributionSerialization extends js.Object
 
 object DistributionSerialization {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def normal: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.normal = "normal".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.normal]
   @scala.inline
-  def normal: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.normal = this.cast("normal")
+  def truncated_normal: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.truncated_normal = "truncated_normal".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.truncated_normal]
   @scala.inline
-  def truncated_normal: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.truncated_normal = this.cast("truncated_normal")
-  @scala.inline
-  def uniform: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.uniform = this.cast("uniform")
+  def uniform: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.uniform = "uniform".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.uniform]
 }
 

@@ -13,7 +13,6 @@ object CollectionChain {
   @scala.inline
   def apply[T](write: () => ArrayLike[T] with js.Promise[ArrayLike[T]]): CollectionChain[T] = {
     val __obj = js.Dynamic.literal(write = js.Any.fromFunction0(write))
-  
     __obj.asInstanceOf[CollectionChain[T]]
   }
 }

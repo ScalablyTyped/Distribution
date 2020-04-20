@@ -13,12 +13,10 @@ trait HexBase64Latin1Encoding extends js.Object
 
 object HexBase64Latin1Encoding {
   @scala.inline
-  def base64: typings.node.nodeStrings.base64 = this.cast("base64")
+  def base64: typings.node.nodeStrings.base64 = "base64".asInstanceOf[typings.node.nodeStrings.base64]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def hex: typings.node.nodeStrings.hex = "hex".asInstanceOf[typings.node.nodeStrings.hex]
   @scala.inline
-  def hex: typings.node.nodeStrings.hex = this.cast("hex")
-  @scala.inline
-  def latin1: typings.node.nodeStrings.latin1 = this.cast("latin1")
+  def latin1: typings.node.nodeStrings.latin1 = "latin1".asInstanceOf[typings.node.nodeStrings.latin1]
 }
 

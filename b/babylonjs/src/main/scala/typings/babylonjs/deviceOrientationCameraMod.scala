@@ -28,7 +28,7 @@ object deviceOrientationCameraMod extends js.Object {
     /**
       * Gets or sets a boolean indicating that pointer input must be disabled on first orientation sensor update (Default: true)
       */
-    def disablePointerInputWhenUsingDeviceOrientation(): Boolean = js.native
+    def disablePointerInputWhenUsingDeviceOrientation: Boolean = js.native
     def disablePointerInputWhenUsingDeviceOrientation(value: Boolean): js.Any = js.native
     /**
       * Enabled turning on the y axis when the orientation sensor is active

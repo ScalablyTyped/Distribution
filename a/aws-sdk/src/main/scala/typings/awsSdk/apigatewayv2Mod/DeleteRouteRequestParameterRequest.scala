@@ -24,7 +24,6 @@ object DeleteRouteRequestParameterRequest {
   @scala.inline
   def apply(ApiId: string, RequestParameterKey: string, RouteId: string): DeleteRouteRequestParameterRequest = {
     val __obj = js.Dynamic.literal(ApiId = ApiId.asInstanceOf[js.Any], RequestParameterKey = RequestParameterKey.asInstanceOf[js.Any], RouteId = RouteId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteRouteRequestParameterRequest]
   }
 }

@@ -20,7 +20,6 @@ object CreatePhoneNumberOrderRequest {
   @scala.inline
   def apply(E164PhoneNumbers: E164PhoneNumberList, ProductType: PhoneNumberProductType): CreatePhoneNumberOrderRequest = {
     val __obj = js.Dynamic.literal(E164PhoneNumbers = E164PhoneNumbers.asInstanceOf[js.Any], ProductType = ProductType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreatePhoneNumberOrderRequest]
   }
 }

@@ -26,7 +26,6 @@ object Typeofdmq {
     t_replicate_mode: Double => Double
   ): Typeofdmq = {
     val __obj = js.Dynamic.literal(bcast_message = js.Any.fromFunction3(bcast_message), handle_message = js.Any.fromFunction0(handle_message), handle_message_rc = js.Any.fromFunction1(handle_message_rc), is_from_node = js.Any.fromFunction0(is_from_node), send_message = js.Any.fromFunction4(send_message), t_replicate = js.Any.fromFunction0(t_replicate), t_replicate_mode = js.Any.fromFunction1(t_replicate_mode))
-  
     __obj.asInstanceOf[Typeofdmq]
   }
 }

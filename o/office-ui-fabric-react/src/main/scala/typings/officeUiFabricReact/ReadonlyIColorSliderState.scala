@@ -13,7 +13,6 @@ object ReadonlyIColorSliderState {
   @scala.inline
   def apply(currentValue: Double): ReadonlyIColorSliderState = {
     val __obj = js.Dynamic.literal(currentValue = currentValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReadonlyIColorSliderState]
   }
 }

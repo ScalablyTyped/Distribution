@@ -25,36 +25,34 @@ trait UnicodeBidiProperty extends js.Object
 
 object UnicodeBidiProperty {
   @scala.inline
-  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = this.cast("-moz-initial")
+  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.csstype.csstypeStrings.`-moz-initial`]
   @scala.inline
-  def `-moz-isolate`: typings.csstype.csstypeStrings.`-moz-isolate` = this.cast("-moz-isolate")
+  def `-moz-isolate`: typings.csstype.csstypeStrings.`-moz-isolate` = "-moz-isolate".asInstanceOf[typings.csstype.csstypeStrings.`-moz-isolate`]
   @scala.inline
-  def `-moz-isolate-override`: typings.csstype.csstypeStrings.`-moz-isolate-override` = this.cast("-moz-isolate-override")
+  def `-moz-isolate-override`: typings.csstype.csstypeStrings.`-moz-isolate-override` = "-moz-isolate-override".asInstanceOf[typings.csstype.csstypeStrings.`-moz-isolate-override`]
   @scala.inline
-  def `-moz-plaintext`: typings.csstype.csstypeStrings.`-moz-plaintext` = this.cast("-moz-plaintext")
+  def `-moz-plaintext`: typings.csstype.csstypeStrings.`-moz-plaintext` = "-moz-plaintext".asInstanceOf[typings.csstype.csstypeStrings.`-moz-plaintext`]
   @scala.inline
-  def `-webkit-isolate`: typings.csstype.csstypeStrings.`-webkit-isolate` = this.cast("-webkit-isolate")
+  def `-webkit-isolate`: typings.csstype.csstypeStrings.`-webkit-isolate` = "-webkit-isolate".asInstanceOf[typings.csstype.csstypeStrings.`-webkit-isolate`]
   @scala.inline
-  def `bidi-override`: typings.csstype.csstypeStrings.`bidi-override` = this.cast("bidi-override")
+  def `bidi-override`: typings.csstype.csstypeStrings.`bidi-override` = "bidi-override".asInstanceOf[typings.csstype.csstypeStrings.`bidi-override`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def embed: typings.csstype.csstypeStrings.embed = "embed".asInstanceOf[typings.csstype.csstypeStrings.embed]
   @scala.inline
-  def embed: typings.csstype.csstypeStrings.embed = this.cast("embed")
+  def inherit: typings.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[typings.csstype.csstypeStrings.inherit]
   @scala.inline
-  def inherit: typings.csstype.csstypeStrings.inherit = this.cast("inherit")
+  def initial: typings.csstype.csstypeStrings.initial = "initial".asInstanceOf[typings.csstype.csstypeStrings.initial]
   @scala.inline
-  def initial: typings.csstype.csstypeStrings.initial = this.cast("initial")
+  def isolate: typings.csstype.csstypeStrings.isolate = "isolate".asInstanceOf[typings.csstype.csstypeStrings.isolate]
   @scala.inline
-  def isolate: typings.csstype.csstypeStrings.isolate = this.cast("isolate")
+  def `isolate-override`: typings.csstype.csstypeStrings.`isolate-override` = "isolate-override".asInstanceOf[typings.csstype.csstypeStrings.`isolate-override`]
   @scala.inline
-  def `isolate-override`: typings.csstype.csstypeStrings.`isolate-override` = this.cast("isolate-override")
+  def normal: typings.csstype.csstypeStrings.normal = "normal".asInstanceOf[typings.csstype.csstypeStrings.normal]
   @scala.inline
-  def normal: typings.csstype.csstypeStrings.normal = this.cast("normal")
+  def plaintext: typings.csstype.csstypeStrings.plaintext = "plaintext".asInstanceOf[typings.csstype.csstypeStrings.plaintext]
   @scala.inline
-  def plaintext: typings.csstype.csstypeStrings.plaintext = this.cast("plaintext")
+  def revert: typings.csstype.csstypeStrings.revert = "revert".asInstanceOf[typings.csstype.csstypeStrings.revert]
   @scala.inline
-  def revert: typings.csstype.csstypeStrings.revert = this.cast("revert")
-  @scala.inline
-  def unset: typings.csstype.csstypeStrings.unset = this.cast("unset")
+  def unset: typings.csstype.csstypeStrings.unset = "unset".asInstanceOf[typings.csstype.csstypeStrings.unset]
 }
 

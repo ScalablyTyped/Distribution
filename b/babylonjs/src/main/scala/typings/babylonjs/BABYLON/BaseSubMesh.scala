@@ -14,11 +14,11 @@ class BaseSubMesh () extends js.Object {
   /**
     * Gets associated effect
     */
-  def effect(): Nullable[Effect] = js.native
+  def effect: Nullable[Effect] = js.native
   /**
     * Gets material defines used by the effect associated to the sub mesh
     */
-  def materialDefines(): Nullable[MaterialDefines] = js.native
+  def materialDefines: Nullable[MaterialDefines] = js.native
   /**
     * Sets material defines used by the effect associated to the sub mesh
     */

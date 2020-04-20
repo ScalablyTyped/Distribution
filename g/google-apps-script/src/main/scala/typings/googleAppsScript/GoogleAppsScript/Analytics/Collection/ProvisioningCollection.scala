@@ -21,7 +21,6 @@ object ProvisioningCollection {
     createAccountTree: AccountTreeRequest => AccountTreeResponse
   ): ProvisioningCollection = {
     val __obj = js.Dynamic.literal(createAccountTicket = js.Any.fromFunction1(createAccountTicket), createAccountTree = js.Any.fromFunction1(createAccountTree))
-  
     __obj.asInstanceOf[ProvisioningCollection]
   }
 }

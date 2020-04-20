@@ -15,7 +15,6 @@ object Impl {
   @scala.inline
   def apply(popup: String): Impl = {
     val __obj = js.Dynamic.literal(popup = popup.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Impl]
   }
 }

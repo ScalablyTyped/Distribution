@@ -13,12 +13,10 @@ trait EventType extends js.Object
 
 object EventType {
   @scala.inline
-  def add: typings.elasticlunr.elasticlunrStrings.add = this.cast("add")
+  def add: typings.elasticlunr.elasticlunrStrings.add = "add".asInstanceOf[typings.elasticlunr.elasticlunrStrings.add]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def remove: typings.elasticlunr.elasticlunrStrings.remove = "remove".asInstanceOf[typings.elasticlunr.elasticlunrStrings.remove]
   @scala.inline
-  def remove: typings.elasticlunr.elasticlunrStrings.remove = this.cast("remove")
-  @scala.inline
-  def update: typings.elasticlunr.elasticlunrStrings.update = this.cast("update")
+  def update: typings.elasticlunr.elasticlunrStrings.update = "update".asInstanceOf[typings.elasticlunr.elasticlunrStrings.update]
 }
 

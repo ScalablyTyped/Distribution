@@ -22,7 +22,6 @@ object SubscriptionModel {
     subscriptionName: String
   ): SubscriptionModel = {
     val __obj = js.Dynamic.literal(inputFormatter = inputFormatter.asInstanceOf[js.Any], outputFormatter = js.Any.fromFunction0(outputFormatter), params = params.asInstanceOf[js.Any], subscriptionHandler = js.Any.fromFunction0(subscriptionHandler), subscriptionName = subscriptionName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SubscriptionModel]
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeSignatureCaptureProps {
   @scala.inline
-  def ReactNativeSignatureCaptureProps: SignatureCaptureProps.type = typings.reactNativeSignatureCapture.mod.SignatureCaptureProps
+  def ReactNativeSignatureCaptureProps: SignatureCaptureProps.type = SignatureCaptureProps
   type ReactNativeSignatureCaptureProps = SignatureCaptureProps
 }
 

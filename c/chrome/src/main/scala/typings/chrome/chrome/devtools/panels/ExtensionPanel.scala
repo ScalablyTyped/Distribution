@@ -29,7 +29,6 @@ object ExtensionPanel {
     onShown: PanelShownEvent
   ): ExtensionPanel = {
     val __obj = js.Dynamic.literal(createStatusBarButton = js.Any.fromFunction3(createStatusBarButton), onHidden = onHidden.asInstanceOf[js.Any], onSearch = onSearch.asInstanceOf[js.Any], onShown = onShown.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExtensionPanel]
   }
 }

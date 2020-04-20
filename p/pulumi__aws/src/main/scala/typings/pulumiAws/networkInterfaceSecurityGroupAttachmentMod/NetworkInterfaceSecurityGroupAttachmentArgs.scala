@@ -21,7 +21,6 @@ object NetworkInterfaceSecurityGroupAttachmentArgs {
   @scala.inline
   def apply(networkInterfaceId: Input[String], securityGroupId: Input[String]): NetworkInterfaceSecurityGroupAttachmentArgs = {
     val __obj = js.Dynamic.literal(networkInterfaceId = networkInterfaceId.asInstanceOf[js.Any], securityGroupId = securityGroupId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NetworkInterfaceSecurityGroupAttachmentArgs]
   }
 }

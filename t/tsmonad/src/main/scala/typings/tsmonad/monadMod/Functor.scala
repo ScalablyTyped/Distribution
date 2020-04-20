@@ -18,7 +18,6 @@ object Functor {
     map: js.Function1[/* t */ T, js.Any] => Functor[js.Any]
   ): Functor[T] = {
     val __obj = js.Dynamic.literal(fmap = js.Any.fromFunction1(fmap), lift = js.Any.fromFunction1(lift), map = js.Any.fromFunction1(map))
-  
     __obj.asInstanceOf[Functor[T]]
   }
 }

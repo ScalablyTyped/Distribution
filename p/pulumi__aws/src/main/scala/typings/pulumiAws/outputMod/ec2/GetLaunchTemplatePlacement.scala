@@ -25,7 +25,6 @@ object GetLaunchTemplatePlacement {
     tenancy: String
   ): GetLaunchTemplatePlacement = {
     val __obj = js.Dynamic.literal(affinity = affinity.asInstanceOf[js.Any], availabilityZone = availabilityZone.asInstanceOf[js.Any], groupName = groupName.asInstanceOf[js.Any], hostId = hostId.asInstanceOf[js.Any], spreadDomain = spreadDomain.asInstanceOf[js.Any], tenancy = tenancy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetLaunchTemplatePlacement]
   }
 }

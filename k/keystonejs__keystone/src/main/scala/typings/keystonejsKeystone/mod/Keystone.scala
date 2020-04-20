@@ -1,5 +1,6 @@
 package typings.keystonejsKeystone.mod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.keystonejsKeystone.AnonApps
 import typings.keystonejsKeystone.AnonConfig
 import scala.scalajs.js
@@ -16,7 +17,7 @@ class Keystone[ListNames /* <: String */] protected () extends js.Object {
   def createItems[ItemType](
     items: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in ListNames ]: std.Array<ItemType>}
-    */ typings.keystonejsKeystone.keystonejsKeystoneStrings.Keystone with js.Any
+    */ typings.keystonejsKeystone.keystonejsKeystoneStrings.Keystone with TopLevel[js.Any]
   ): js.Promise[Unit] = js.native
    // TODO
   def createList(name: String, schema: ListSchema[String]): Unit = js.native

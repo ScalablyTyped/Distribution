@@ -23,7 +23,6 @@ object IUpdatePropertyValueDelta {
     unitId: String
   ): IUpdatePropertyValueDelta = {
     val __obj = js.Dynamic.literal(deltaType = deltaType.asInstanceOf[js.Any], elementId = elementId.asInstanceOf[js.Any], mutator = mutator.asInstanceOf[js.Any], propertyName = propertyName.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IUpdatePropertyValueDelta]
   }
 }

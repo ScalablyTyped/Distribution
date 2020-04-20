@@ -15,16 +15,14 @@ trait LogLevel extends js.Object
 
 object LogLevel {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def debug: typings.twilioVideo.twilioVideoStrings.debug = "debug".asInstanceOf[typings.twilioVideo.twilioVideoStrings.debug]
   @scala.inline
-  def debug: typings.twilioVideo.twilioVideoStrings.debug = this.cast("debug")
+  def error: typings.twilioVideo.twilioVideoStrings.error = "error".asInstanceOf[typings.twilioVideo.twilioVideoStrings.error]
   @scala.inline
-  def error: typings.twilioVideo.twilioVideoStrings.error = this.cast("error")
+  def info: typings.twilioVideo.twilioVideoStrings.info = "info".asInstanceOf[typings.twilioVideo.twilioVideoStrings.info]
   @scala.inline
-  def info: typings.twilioVideo.twilioVideoStrings.info = this.cast("info")
+  def off: typings.twilioVideo.twilioVideoStrings.off = "off".asInstanceOf[typings.twilioVideo.twilioVideoStrings.off]
   @scala.inline
-  def off: typings.twilioVideo.twilioVideoStrings.off = this.cast("off")
-  @scala.inline
-  def warn: typings.twilioVideo.twilioVideoStrings.warn = this.cast("warn")
+  def warn: typings.twilioVideo.twilioVideoStrings.warn = "warn".asInstanceOf[typings.twilioVideo.twilioVideoStrings.warn]
 }
 

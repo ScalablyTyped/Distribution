@@ -12,7 +12,6 @@ object AnonDispatchExt {
   @scala.inline
   def apply[Ext](dispatch: Ext): AnonDispatchExt[Ext] = {
     val __obj = js.Dynamic.literal(dispatch = dispatch.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDispatchExt[Ext]]
   }
 }

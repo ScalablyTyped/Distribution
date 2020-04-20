@@ -13,7 +13,6 @@ object AnonGradientMap {
   @scala.inline
   def apply(gradientMap: IUniform): AnonGradientMap = {
     val __obj = js.Dynamic.literal(gradientMap = gradientMap.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGradientMap]
   }
 }

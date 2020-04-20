@@ -14,14 +14,12 @@ trait ExitKey extends js.Object
 
 object ExitKey {
   @scala.inline
-  def `1`: typings.screeps.screepsStrings.`1` = this.cast("1")
+  def `1`: typings.screeps.screepsStrings.`1` = "1".asInstanceOf[typings.screeps.screepsStrings.`1`]
   @scala.inline
-  def `3`: typings.screeps.screepsStrings.`3` = this.cast("3")
+  def `3`: typings.screeps.screepsStrings.`3` = "3".asInstanceOf[typings.screeps.screepsStrings.`3`]
   @scala.inline
-  def `5`: typings.screeps.screepsStrings.`5` = this.cast("5")
+  def `5`: typings.screeps.screepsStrings.`5` = "5".asInstanceOf[typings.screeps.screepsStrings.`5`]
   @scala.inline
-  def `7`: typings.screeps.screepsStrings.`7` = this.cast("7")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `7`: typings.screeps.screepsStrings.`7` = "7".asInstanceOf[typings.screeps.screepsStrings.`7`]
 }
 

@@ -20,7 +20,6 @@ object AnonParentScope {
     slots: js.Array[SlotBindingData]
   ): AnonParentScope = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], parentScope = parentScope.asInstanceOf[js.Any], slots = slots.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonParentScope]
   }
 }

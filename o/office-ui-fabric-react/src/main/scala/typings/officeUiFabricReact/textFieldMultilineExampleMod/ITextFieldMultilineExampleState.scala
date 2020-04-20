@@ -12,7 +12,6 @@ object ITextFieldMultilineExampleState {
   @scala.inline
   def apply(multiline: Boolean): ITextFieldMultilineExampleState = {
     val __obj = js.Dynamic.literal(multiline = multiline.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ITextFieldMultilineExampleState]
   }
 }

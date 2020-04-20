@@ -14,7 +14,6 @@ object AnonPushTimeDays {
   @scala.inline
   def apply(pushTimeDays: js.Array[Double], pushTimeEndHour: Double, pushTimeStartHour: Double): AnonPushTimeDays = {
     val __obj = js.Dynamic.literal(pushTimeDays = pushTimeDays.asInstanceOf[js.Any], pushTimeEndHour = pushTimeEndHour.asInstanceOf[js.Any], pushTimeStartHour = pushTimeStartHour.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPushTimeDays]
   }
 }

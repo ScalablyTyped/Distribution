@@ -16,7 +16,6 @@ object GetConnectionStatusRequest {
   @scala.inline
   def apply(Target: SessionTarget): GetConnectionStatusRequest = {
     val __obj = js.Dynamic.literal(Target = Target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetConnectionStatusRequest]
   }
 }

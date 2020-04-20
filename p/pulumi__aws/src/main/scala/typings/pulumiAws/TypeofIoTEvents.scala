@@ -13,7 +13,6 @@ object TypeofIoTEvents {
   @scala.inline
   def apply(Types: TypeofIoTEvents): TypeofIoTEvents = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofIoTEvents]
   }
 }

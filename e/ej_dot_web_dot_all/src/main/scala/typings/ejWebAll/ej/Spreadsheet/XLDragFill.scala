@@ -34,7 +34,6 @@ object XLDragFill {
     positionAutoFillElement: Boolean => Unit
   ): XLDragFill = {
     val __obj = js.Dynamic.literal(autoFill = js.Any.fromFunction1(autoFill), hideAutoFillElement = js.Any.fromFunction0(hideAutoFillElement), hideAutoFillOptions = js.Any.fromFunction0(hideAutoFillOptions), positionAutoFillElement = js.Any.fromFunction1(positionAutoFillElement))
-  
     __obj.asInstanceOf[XLDragFill]
   }
 }

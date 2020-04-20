@@ -18,7 +18,6 @@ object BootStrapLoader {
   @scala.inline
   def apply(load: js.Array[String] => Unit): BootStrapLoader = {
     val __obj = js.Dynamic.literal(load = js.Any.fromFunction1(load))
-  
     __obj.asInstanceOf[BootStrapLoader]
   }
 }

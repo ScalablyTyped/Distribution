@@ -16,7 +16,6 @@ object GetDirectoryRequest {
   @scala.inline
   def apply(DirectoryArn: DirectoryArn): GetDirectoryRequest = {
     val __obj = js.Dynamic.literal(DirectoryArn = DirectoryArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDirectoryRequest]
   }
 }

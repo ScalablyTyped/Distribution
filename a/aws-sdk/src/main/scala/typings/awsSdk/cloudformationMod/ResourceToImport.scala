@@ -28,7 +28,6 @@ object ResourceToImport {
     ResourceType: ResourceType
   ): ResourceToImport = {
     val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId.asInstanceOf[js.Any], ResourceIdentifier = ResourceIdentifier.asInstanceOf[js.Any], ResourceType = ResourceType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResourceToImport]
   }
 }

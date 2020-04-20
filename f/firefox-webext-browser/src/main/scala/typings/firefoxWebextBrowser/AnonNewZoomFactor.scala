@@ -16,7 +16,6 @@ object AnonNewZoomFactor {
   @scala.inline
   def apply(newZoomFactor: Double, oldZoomFactor: Double, tabId: Double, zoomSettings: ZoomSettings): AnonNewZoomFactor = {
     val __obj = js.Dynamic.literal(newZoomFactor = newZoomFactor.asInstanceOf[js.Any], oldZoomFactor = oldZoomFactor.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any], zoomSettings = zoomSettings.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNewZoomFactor]
   }
 }

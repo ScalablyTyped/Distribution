@@ -12,7 +12,6 @@ object Observable {
   @scala.inline
   def apply[T](subscribe: ObserverOrNext[T] => Subscription): Observable[T] = {
     val __obj = js.Dynamic.literal(subscribe = js.Any.fromFunction1(subscribe))
-  
     __obj.asInstanceOf[Observable[T]]
   }
 }

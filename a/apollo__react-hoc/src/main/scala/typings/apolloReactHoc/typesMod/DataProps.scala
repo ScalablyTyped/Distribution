@@ -12,7 +12,6 @@ object DataProps {
   @scala.inline
   def apply[TData, TGraphQLVariables](data: DataValue[TData, TGraphQLVariables]): DataProps[TData, TGraphQLVariables] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DataProps[TData, TGraphQLVariables]]
   }
 }

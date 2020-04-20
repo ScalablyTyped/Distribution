@@ -26,7 +26,6 @@ object IValidationMessages {
     ]
   ): IValidationMessages = {
     val __obj = js.Dynamic.literal(addStringMessage = js.Any.fromFunction2(addStringMessage), addTemplateOptionValueMessage = js.Any.fromFunction5(addTemplateOptionValueMessage), messages = messages.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IValidationMessages]
   }
 }

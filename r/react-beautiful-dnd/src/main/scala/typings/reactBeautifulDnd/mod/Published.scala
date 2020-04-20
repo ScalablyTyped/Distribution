@@ -18,7 +18,6 @@ object Published {
     removals: js.Array[DraggableId]
   ): Published = {
     val __obj = js.Dynamic.literal(additions = additions.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any], removals = removals.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Published]
   }
 }

@@ -15,7 +15,6 @@ object TextDecoderOptions {
   @scala.inline
   def apply(fatal: Boolean): TextDecoderOptions = {
     val __obj = js.Dynamic.literal(fatal = fatal.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TextDecoderOptions]
   }
 }

@@ -12,7 +12,6 @@ object GanttEnterprise {
   @scala.inline
   def apply(getGanttInstance: () => GanttStatic): GanttEnterprise = {
     val __obj = js.Dynamic.literal(getGanttInstance = js.Any.fromFunction0(getGanttInstance))
-  
     __obj.asInstanceOf[GanttEnterprise]
   }
 }

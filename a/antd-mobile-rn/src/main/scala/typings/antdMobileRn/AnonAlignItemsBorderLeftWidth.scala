@@ -26,7 +26,6 @@ object AnonAlignItemsBorderLeftWidth {
     paddingVertical: Double
   ): AnonAlignItemsBorderLeftWidth = {
     val __obj = js.Dynamic.literal(alignItems = alignItems.asInstanceOf[js.Any], borderLeftWidth = borderLeftWidth.asInstanceOf[js.Any], borderRightWidth = borderRightWidth.asInstanceOf[js.Any], borderStyle = borderStyle.asInstanceOf[js.Any], flex = flex.asInstanceOf[js.Any], justifyContent = justifyContent.asInstanceOf[js.Any], paddingVertical = paddingVertical.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAlignItemsBorderLeftWidth]
   }
 }

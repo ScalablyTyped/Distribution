@@ -17,7 +17,6 @@ object PathWatcher {
     onDidChange: js.Function1[/* change */ WatchedFilePathChangedEvent, Unit] => Disposable
   ): PathWatcher = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), onDidChange = js.Any.fromFunction1(onDidChange))
-  
     __obj.asInstanceOf[PathWatcher]
   }
 }

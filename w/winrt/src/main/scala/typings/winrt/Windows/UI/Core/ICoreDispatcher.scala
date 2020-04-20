@@ -22,7 +22,6 @@ object ICoreDispatcher {
     runIdleAsync: IdleDispatchedHandler => IAsyncAction
   ): ICoreDispatcher = {
     val __obj = js.Dynamic.literal(hasThreadAccess = hasThreadAccess.asInstanceOf[js.Any], onacceleratorkeyactivated = onacceleratorkeyactivated.asInstanceOf[js.Any], processEvents = js.Any.fromFunction1(processEvents), runAsync = js.Any.fromFunction2(runAsync), runIdleAsync = js.Any.fromFunction1(runIdleAsync))
-  
     __obj.asInstanceOf[ICoreDispatcher]
   }
 }

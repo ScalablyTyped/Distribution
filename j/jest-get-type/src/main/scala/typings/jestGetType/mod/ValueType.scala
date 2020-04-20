@@ -24,34 +24,32 @@ trait ValueType extends js.Object
 
 object ValueType {
   @scala.inline
-  def array: typings.jestGetType.jestGetTypeStrings.array = this.cast("array")
+  def array: typings.jestGetType.jestGetTypeStrings.array = "array".asInstanceOf[typings.jestGetType.jestGetTypeStrings.array]
   @scala.inline
-  def bigint: typings.jestGetType.jestGetTypeStrings.bigint = this.cast("bigint")
+  def bigint: typings.jestGetType.jestGetTypeStrings.bigint = "bigint".asInstanceOf[typings.jestGetType.jestGetTypeStrings.bigint]
   @scala.inline
-  def boolean: typings.jestGetType.jestGetTypeStrings.boolean = this.cast("boolean")
+  def boolean: typings.jestGetType.jestGetTypeStrings.boolean = "boolean".asInstanceOf[typings.jestGetType.jestGetTypeStrings.boolean]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def date: typings.jestGetType.jestGetTypeStrings.date = "date".asInstanceOf[typings.jestGetType.jestGetTypeStrings.date]
   @scala.inline
-  def date: typings.jestGetType.jestGetTypeStrings.date = this.cast("date")
+  def function: typings.jestGetType.jestGetTypeStrings.function = "function".asInstanceOf[typings.jestGetType.jestGetTypeStrings.function]
   @scala.inline
-  def function: typings.jestGetType.jestGetTypeStrings.function = this.cast("function")
+  def map: typings.jestGetType.jestGetTypeStrings.map = "map".asInstanceOf[typings.jestGetType.jestGetTypeStrings.map]
   @scala.inline
-  def map: typings.jestGetType.jestGetTypeStrings.map = this.cast("map")
+  def `null`: typings.jestGetType.jestGetTypeStrings.`null` = "null".asInstanceOf[typings.jestGetType.jestGetTypeStrings.`null`]
   @scala.inline
-  def `null`: typings.jestGetType.jestGetTypeStrings.`null` = this.cast("null")
+  def number: typings.jestGetType.jestGetTypeStrings.number = "number".asInstanceOf[typings.jestGetType.jestGetTypeStrings.number]
   @scala.inline
-  def number: typings.jestGetType.jestGetTypeStrings.number = this.cast("number")
+  def `object`: typings.jestGetType.jestGetTypeStrings.`object` = "object".asInstanceOf[typings.jestGetType.jestGetTypeStrings.`object`]
   @scala.inline
-  def `object`: typings.jestGetType.jestGetTypeStrings.`object` = this.cast("object")
+  def regexp: typings.jestGetType.jestGetTypeStrings.regexp = "regexp".asInstanceOf[typings.jestGetType.jestGetTypeStrings.regexp]
   @scala.inline
-  def regexp: typings.jestGetType.jestGetTypeStrings.regexp = this.cast("regexp")
+  def set: typings.jestGetType.jestGetTypeStrings.set = "set".asInstanceOf[typings.jestGetType.jestGetTypeStrings.set]
   @scala.inline
-  def set: typings.jestGetType.jestGetTypeStrings.set = this.cast("set")
+  def string: typings.jestGetType.jestGetTypeStrings.string = "string".asInstanceOf[typings.jestGetType.jestGetTypeStrings.string]
   @scala.inline
-  def string: typings.jestGetType.jestGetTypeStrings.string = this.cast("string")
+  def symbol: typings.jestGetType.jestGetTypeStrings.symbol = "symbol".asInstanceOf[typings.jestGetType.jestGetTypeStrings.symbol]
   @scala.inline
-  def symbol: typings.jestGetType.jestGetTypeStrings.symbol = this.cast("symbol")
-  @scala.inline
-  def undefined: typings.jestGetType.jestGetTypeStrings.undefined = this.cast("undefined")
+  def undefined: typings.jestGetType.jestGetTypeStrings.undefined = "undefined".asInstanceOf[typings.jestGetType.jestGetTypeStrings.undefined]
 }
 

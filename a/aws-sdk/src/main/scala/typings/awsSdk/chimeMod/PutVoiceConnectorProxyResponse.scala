@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait PutVoiceConnectorProxyResponse extends js.Object {
+  /**
+    * The proxy configuration details.
+    */
   var Proxy: js.UndefOr[typings.awsSdk.chimeMod.Proxy] = js.native
 }
 

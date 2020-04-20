@@ -13,7 +13,6 @@ object AnonSelectionEnd {
   @scala.inline
   def apply(selectionEnd: Double, selectionStart: Double): AnonSelectionEnd = {
     val __obj = js.Dynamic.literal(selectionEnd = selectionEnd.asInstanceOf[js.Any], selectionStart = selectionStart.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSelectionEnd]
   }
 }

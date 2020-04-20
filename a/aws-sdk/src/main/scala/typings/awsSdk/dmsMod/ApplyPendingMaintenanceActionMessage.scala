@@ -24,7 +24,6 @@ object ApplyPendingMaintenanceActionMessage {
   @scala.inline
   def apply(ApplyAction: String, OptInType: String, ReplicationInstanceArn: String): ApplyPendingMaintenanceActionMessage = {
     val __obj = js.Dynamic.literal(ApplyAction = ApplyAction.asInstanceOf[js.Any], OptInType = OptInType.asInstanceOf[js.Any], ReplicationInstanceArn = ReplicationInstanceArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ApplyPendingMaintenanceActionMessage]
   }
 }

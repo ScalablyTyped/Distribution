@@ -23,7 +23,6 @@ object KernelModuleDetails {
   @scala.inline
   def apply(base: UInt64_, name: String, size: Double): KernelModuleDetails = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KernelModuleDetails]
   }
 }

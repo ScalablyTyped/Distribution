@@ -13,7 +13,6 @@ object SessionUnmuteEvent {
   @scala.inline
   def apply(audio: Boolean, video: Boolean): SessionUnmuteEvent = {
     val __obj = js.Dynamic.literal(audio = audio.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SessionUnmuteEvent]
   }
 }

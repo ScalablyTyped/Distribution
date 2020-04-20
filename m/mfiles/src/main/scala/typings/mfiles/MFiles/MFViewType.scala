@@ -14,10 +14,8 @@ trait MFViewType extends js.Object
 
 object MFViewType {
   @scala.inline
-  def FilterOnly: `1` = this.cast(1)
+  def FilterOnly: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def Normal: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Normal: `0` = 0.asInstanceOf[`0`]
 }
 

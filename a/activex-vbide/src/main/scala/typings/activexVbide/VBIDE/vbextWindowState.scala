@@ -16,12 +16,10 @@ trait vbextWindowState extends js.Object
 
 object vbextWindowState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def vbext_ws_Maximize: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def vbext_ws_Maximize: `2` = this.cast(2)
+  def vbext_ws_Minimize: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def vbext_ws_Minimize: `1` = this.cast(1)
-  @scala.inline
-  def vbext_ws_Normal: `0` = this.cast(0)
+  def vbext_ws_Normal: `0` = 0.asInstanceOf[`0`]
 }
 

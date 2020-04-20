@@ -40,7 +40,6 @@ object TrustedAdvisorCheckResult {
     timestamp: String
   ): TrustedAdvisorCheckResult = {
     val __obj = js.Dynamic.literal(categorySpecificSummary = categorySpecificSummary.asInstanceOf[js.Any], checkId = checkId.asInstanceOf[js.Any], flaggedResources = flaggedResources.asInstanceOf[js.Any], resourcesSummary = resourcesSummary.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TrustedAdvisorCheckResult]
   }
 }

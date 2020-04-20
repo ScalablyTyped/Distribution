@@ -20,26 +20,24 @@ trait PhoneType extends js.Object
 
 object PhoneType {
   @scala.inline
-  def assistant: typings.microsoftGraph.microsoftGraphStrings.assistant = this.cast("assistant")
+  def assistant: typings.microsoftGraph.microsoftGraphStrings.assistant = "assistant".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.assistant]
   @scala.inline
-  def business: typings.microsoftGraph.microsoftGraphStrings.business = this.cast("business")
+  def business: typings.microsoftGraph.microsoftGraphStrings.business = "business".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.business]
   @scala.inline
-  def businessFax: typings.microsoftGraph.microsoftGraphStrings.businessFax = this.cast("businessFax")
+  def businessFax: typings.microsoftGraph.microsoftGraphStrings.businessFax = "businessFax".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.businessFax]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def home: typings.microsoftGraph.microsoftGraphStrings.home = "home".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.home]
   @scala.inline
-  def home: typings.microsoftGraph.microsoftGraphStrings.home = this.cast("home")
+  def homeFax: typings.microsoftGraph.microsoftGraphStrings.homeFax = "homeFax".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.homeFax]
   @scala.inline
-  def homeFax: typings.microsoftGraph.microsoftGraphStrings.homeFax = this.cast("homeFax")
+  def mobile: typings.microsoftGraph.microsoftGraphStrings.mobile = "mobile".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.mobile]
   @scala.inline
-  def mobile: typings.microsoftGraph.microsoftGraphStrings.mobile = this.cast("mobile")
+  def other: typings.microsoftGraph.microsoftGraphStrings.other = "other".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.other]
   @scala.inline
-  def other: typings.microsoftGraph.microsoftGraphStrings.other = this.cast("other")
+  def otherFax: typings.microsoftGraph.microsoftGraphStrings.otherFax = "otherFax".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.otherFax]
   @scala.inline
-  def otherFax: typings.microsoftGraph.microsoftGraphStrings.otherFax = this.cast("otherFax")
+  def pager: typings.microsoftGraph.microsoftGraphStrings.pager = "pager".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.pager]
   @scala.inline
-  def pager: typings.microsoftGraph.microsoftGraphStrings.pager = this.cast("pager")
-  @scala.inline
-  def radio: typings.microsoftGraph.microsoftGraphStrings.radio = this.cast("radio")
+  def radio: typings.microsoftGraph.microsoftGraphStrings.radio = "radio".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.radio]
 }
 

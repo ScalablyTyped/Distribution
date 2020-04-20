@@ -16,18 +16,16 @@ trait Level extends js.Object
 
 object Level {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def debug: typings.pino.pinoStrings.debug = "debug".asInstanceOf[typings.pino.pinoStrings.debug]
   @scala.inline
-  def debug: typings.pino.pinoStrings.debug = this.cast("debug")
+  def error: typings.pino.pinoStrings.error = "error".asInstanceOf[typings.pino.pinoStrings.error]
   @scala.inline
-  def error: typings.pino.pinoStrings.error = this.cast("error")
+  def fatal: typings.pino.pinoStrings.fatal = "fatal".asInstanceOf[typings.pino.pinoStrings.fatal]
   @scala.inline
-  def fatal: typings.pino.pinoStrings.fatal = this.cast("fatal")
+  def info: typings.pino.pinoStrings.info = "info".asInstanceOf[typings.pino.pinoStrings.info]
   @scala.inline
-  def info: typings.pino.pinoStrings.info = this.cast("info")
+  def trace: typings.pino.pinoStrings.trace = "trace".asInstanceOf[typings.pino.pinoStrings.trace]
   @scala.inline
-  def trace: typings.pino.pinoStrings.trace = this.cast("trace")
-  @scala.inline
-  def warn: typings.pino.pinoStrings.warn = this.cast("warn")
+  def warn: typings.pino.pinoStrings.warn = "warn".asInstanceOf[typings.pino.pinoStrings.warn]
 }
 

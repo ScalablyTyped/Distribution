@@ -34,7 +34,6 @@ object ReplyContext {
     request: ClientRequest
   ): ReplyContext = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], agent = agent.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], reply = reply.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReplyContext]
   }
 }

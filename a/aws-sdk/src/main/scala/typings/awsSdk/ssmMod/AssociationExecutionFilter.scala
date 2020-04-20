@@ -28,7 +28,6 @@ object AssociationExecutionFilter {
     Value: AssociationExecutionFilterValue
   ): AssociationExecutionFilter = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssociationExecutionFilter]
   }
 }

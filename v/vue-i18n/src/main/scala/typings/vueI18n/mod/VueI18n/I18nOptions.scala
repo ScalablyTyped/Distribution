@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 // tslint:disable-next-line:interface-name
 trait I18nOptions extends js.Object {
   var dateTimeFormats: js.UndefOr[DateTimeFormats] = js.undefined
-  var fallbackLocale: js.UndefOr[Locale] = js.undefined
+  var fallbackLocale: js.UndefOr[FallbackLocale] = js.undefined
   var fallbackRoot: js.UndefOr[Boolean] = js.undefined
   var formatFallbackMessages: js.UndefOr[Boolean] = js.undefined
   var formatter: js.UndefOr[Formatter] = js.undefined
@@ -32,7 +32,7 @@ object I18nOptions {
   @scala.inline
   def apply(
     dateTimeFormats: DateTimeFormats = null,
-    fallbackLocale: Locale = null,
+    fallbackLocale: FallbackLocale = null,
     fallbackRoot: js.UndefOr[Boolean] = js.undefined,
     formatFallbackMessages: js.UndefOr[Boolean] = js.undefined,
     formatter: Formatter = null,
@@ -42,7 +42,7 @@ object I18nOptions {
     modifiers: Modifiers = null,
     numberFormats: NumberFormats = null,
     pluralizationRules: PluralizationRulesMap = null,
-    postTranslation: /* str */ String => String = null,
+    postTranslation: (/* str */ String, /* key */ js.UndefOr[String]) => String = null,
     preserveDirectiveContent: js.UndefOr[Boolean] = js.undefined,
     sharedMessages: LocaleMessages = null,
     silentFallbackWarn: Boolean | RegExp = null,
@@ -62,7 +62,7 @@ object I18nOptions {
     if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])
     if (numberFormats != null) __obj.updateDynamic("numberFormats")(numberFormats.asInstanceOf[js.Any])
     if (pluralizationRules != null) __obj.updateDynamic("pluralizationRules")(pluralizationRules.asInstanceOf[js.Any])
-    if (postTranslation != null) __obj.updateDynamic("postTranslation")(js.Any.fromFunction1(postTranslation))
+    if (postTranslation != null) __obj.updateDynamic("postTranslation")(js.Any.fromFunction2(postTranslation))
     if (!js.isUndefined(preserveDirectiveContent)) __obj.updateDynamic("preserveDirectiveContent")(preserveDirectiveContent.asInstanceOf[js.Any])
     if (sharedMessages != null) __obj.updateDynamic("sharedMessages")(sharedMessages.asInstanceOf[js.Any])
     if (silentFallbackWarn != null) __obj.updateDynamic("silentFallbackWarn")(silentFallbackWarn.asInstanceOf[js.Any])

@@ -13,7 +13,6 @@ object StickyOffsets {
   @scala.inline
   def apply(left: js.Array[Double], right: js.Array[Double]): StickyOffsets = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StickyOffsets]
   }
 }

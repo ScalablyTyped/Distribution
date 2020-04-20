@@ -25,7 +25,6 @@ object IOptions {
     ruleSeverity: RuleSeverity
   ): IOptions = {
     val __obj = js.Dynamic.literal(disabledIntervals = disabledIntervals.asInstanceOf[js.Any], ruleArguments = ruleArguments.asInstanceOf[js.Any], ruleName = ruleName.asInstanceOf[js.Any], ruleSeverity = ruleSeverity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IOptions]
   }
 }

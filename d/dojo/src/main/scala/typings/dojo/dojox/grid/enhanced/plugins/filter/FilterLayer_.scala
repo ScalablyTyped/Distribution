@@ -38,7 +38,6 @@ object FilterLayer_ {
     wrap: (js.Any, js.Any, StoreLayer, js.Any) => js.Any
   ): FilterLayer_ = {
     val __obj = js.Dynamic.literal(ClientSideFilterLayer = js.Any.fromFunction0(ClientSideFilterLayer), ServerSideFilterLayer = js.Any.fromFunction0(ServerSideFilterLayer), wrap = js.Any.fromFunction4(wrap))
-  
     __obj.asInstanceOf[FilterLayer_]
   }
 }

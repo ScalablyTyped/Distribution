@@ -14,14 +14,12 @@ trait ImportExportKind extends js.Object
 
 object ImportExportKind {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def function: typings.std.stdStrings.function = "function".asInstanceOf[typings.std.stdStrings.function]
   @scala.inline
-  def function: typings.std.stdStrings.function = this.cast("function")
+  def global: typings.std.stdStrings.global = "global".asInstanceOf[typings.std.stdStrings.global]
   @scala.inline
-  def global: typings.std.stdStrings.global = this.cast("global")
+  def memory: typings.std.stdStrings.memory = "memory".asInstanceOf[typings.std.stdStrings.memory]
   @scala.inline
-  def memory: typings.std.stdStrings.memory = this.cast("memory")
-  @scala.inline
-  def table: typings.std.stdStrings.table = this.cast("table")
+  def table: typings.std.stdStrings.table = "table".asInstanceOf[typings.std.stdStrings.table]
 }
 

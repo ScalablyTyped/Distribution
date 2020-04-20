@@ -13,7 +13,6 @@ object layout {
   @scala.inline
   def apply(fromEn: String => String, toEn: String => String): layout = {
     val __obj = js.Dynamic.literal(fromEn = js.Any.fromFunction1(fromEn), toEn = js.Any.fromFunction1(toEn))
-  
     __obj.asInstanceOf[layout]
   }
 }

@@ -20,7 +20,6 @@ object XssMatchStatement {
   @scala.inline
   def apply(FieldToMatch: FieldToMatch, TextTransformations: TextTransformations): XssMatchStatement = {
     val __obj = js.Dynamic.literal(FieldToMatch = FieldToMatch.asInstanceOf[js.Any], TextTransformations = TextTransformations.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[XssMatchStatement]
   }
 }

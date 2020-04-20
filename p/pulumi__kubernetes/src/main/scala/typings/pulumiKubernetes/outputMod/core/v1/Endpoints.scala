@@ -59,7 +59,6 @@ object Endpoints {
     subsets: js.Array[EndpointSubset]
   ): Endpoints = {
     val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], subsets = subsets.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Endpoints]
   }
 }

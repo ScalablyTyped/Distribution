@@ -14,7 +14,6 @@ object ICoreWindowFlyoutFactory {
   @scala.inline
   def apply(create: Point => CoreWindowFlyout, createWithTitle: (Point, String) => CoreWindowFlyout): ICoreWindowFlyoutFactory = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), createWithTitle = js.Any.fromFunction2(createWithTitle))
-  
     __obj.asInstanceOf[ICoreWindowFlyoutFactory]
   }
 }

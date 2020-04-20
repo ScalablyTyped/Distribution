@@ -14,7 +14,6 @@ object IFromJson {
   @scala.inline
   def apply(customFromJson: js.Any => Boolean, fromJson: js.Any => Unit): IFromJson = {
     val __obj = js.Dynamic.literal(customFromJson = js.Any.fromFunction1(customFromJson), fromJson = js.Any.fromFunction1(fromJson))
-  
     __obj.asInstanceOf[IFromJson]
   }
 }

@@ -20,7 +20,6 @@ object GetResourceDefinitionVersionRequest {
   @scala.inline
   def apply(ResourceDefinitionId: string, ResourceDefinitionVersionId: string): GetResourceDefinitionVersionRequest = {
     val __obj = js.Dynamic.literal(ResourceDefinitionId = ResourceDefinitionId.asInstanceOf[js.Any], ResourceDefinitionVersionId = ResourceDefinitionVersionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetResourceDefinitionVersionRequest]
   }
 }

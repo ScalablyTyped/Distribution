@@ -24,7 +24,6 @@ object StopJobRequest {
   @scala.inline
   def apply(appId: AppId, branchName: BranchName, jobId: JobId): StopJobRequest = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], branchName = branchName.asInstanceOf[js.Any], jobId = jobId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopJobRequest]
   }
 }

@@ -24,7 +24,6 @@ object AnonAbbreviation {
     verb: () => String
   ): AnonAbbreviation = {
     val __obj = js.Dynamic.literal(abbreviation = js.Any.fromFunction0(abbreviation), adjective = js.Any.fromFunction0(adjective), ingverb = js.Any.fromFunction0(ingverb), noun = js.Any.fromFunction0(noun), phrase = js.Any.fromFunction0(phrase), verb = js.Any.fromFunction0(verb))
-  
     __obj.asInstanceOf[AnonAbbreviation]
   }
 }

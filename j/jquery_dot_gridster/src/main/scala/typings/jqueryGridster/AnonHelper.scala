@@ -12,7 +12,6 @@ object AnonHelper {
   @scala.inline
   def apply(helper: JQuery): AnonHelper = {
     val __obj = js.Dynamic.literal(helper = helper.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHelper]
   }
 }

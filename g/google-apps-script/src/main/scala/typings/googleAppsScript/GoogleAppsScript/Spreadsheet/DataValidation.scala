@@ -37,7 +37,6 @@ object DataValidation {
     getHelpText: () => String
   ): DataValidation = {
     val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), getAllowInvalid = js.Any.fromFunction0(getAllowInvalid), getCriteriaType = js.Any.fromFunction0(getCriteriaType), getCriteriaValues = js.Any.fromFunction0(getCriteriaValues), getHelpText = js.Any.fromFunction0(getHelpText))
-  
     __obj.asInstanceOf[DataValidation]
   }
 }

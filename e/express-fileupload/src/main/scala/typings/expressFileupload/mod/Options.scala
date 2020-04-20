@@ -3,6 +3,7 @@ package typings.expressFileupload.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.express.mod.RequestHandler
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -30,7 +31,7 @@ trait Options
   /**
     * User defined limit handler which will be invoked if the file is bigger than configured limits.
     */
-  var limitHandler: js.UndefOr[Boolean | RequestHandler[ParamsDictionary]] = js.undefined
+  var limitHandler: js.UndefOr[Boolean | (RequestHandler[ParamsDictionary, _, _, Query])] = js.undefined
   /**
     * By default, `req.body` and `req.files`
     * are flattened like this: `{'name': 'John', 'hobbies[0]': 'Cinema', 'hobbies[1]': 'Bike'}`
@@ -87,7 +88,7 @@ object Options {
     abortOnLimit: js.UndefOr[Boolean] = js.undefined,
     createParentPath: js.UndefOr[Boolean] = js.undefined,
     debug: js.UndefOr[Boolean] = js.undefined,
-    limitHandler: Boolean | RequestHandler[ParamsDictionary] = null,
+    limitHandler: Boolean | (RequestHandler[ParamsDictionary, _, _, Query]) = null,
     parseNested: js.UndefOr[Boolean] = js.undefined,
     preserveExtension: Boolean | Double = null,
     responseOnLimit: String = null,

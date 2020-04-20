@@ -26,7 +26,6 @@ object Implementation {
     sendTo: (ArrayBuffer, String, Double, js.Function1[/* bytesWritten */ Double, Unit]) => Unit
   ): Implementation = {
     val __obj = js.Dynamic.literal(bind = js.Any.fromFunction3(bind), destroy = js.Any.fromFunction1(destroy), getInfo = js.Any.fromFunction1(getInfo), sendTo = js.Any.fromFunction4(sendTo))
-  
     __obj.asInstanceOf[Implementation]
   }
 }

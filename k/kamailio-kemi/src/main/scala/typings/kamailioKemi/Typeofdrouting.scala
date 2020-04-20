@@ -30,7 +30,6 @@ object Typeofdrouting {
     use_next_gw: () => Double
   ): Typeofdrouting = {
     val __obj = js.Dynamic.literal(do_routing = js.Any.fromFunction1(do_routing), do_routing_furi = js.Any.fromFunction0(do_routing_furi), goes_to_gw = js.Any.fromFunction0(goes_to_gw), goes_to_gw_type = js.Any.fromFunction1(goes_to_gw_type), is_from_gw = js.Any.fromFunction0(is_from_gw), is_from_gw_type = js.Any.fromFunction1(is_from_gw_type), is_from_gw_type_flags = js.Any.fromFunction2(is_from_gw_type_flags), next_routing = js.Any.fromFunction0(next_routing), use_next_gw = js.Any.fromFunction0(use_next_gw))
-  
     __obj.asInstanceOf[Typeofdrouting]
   }
 }

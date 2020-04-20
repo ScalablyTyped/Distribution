@@ -33,7 +33,6 @@ object AnonProperties {
     value: ArrayBuffer
   ): AnonProperties = {
     val __obj = js.Dynamic.literal(characteristicId = characteristicId.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], serviceId = serviceId.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonProperties]
   }
 }

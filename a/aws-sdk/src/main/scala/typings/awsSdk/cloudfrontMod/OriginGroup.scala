@@ -24,7 +24,6 @@ object OriginGroup {
   @scala.inline
   def apply(FailoverCriteria: OriginGroupFailoverCriteria, Id: String, Members: OriginGroupMembers): OriginGroup = {
     val __obj = js.Dynamic.literal(FailoverCriteria = FailoverCriteria.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Members = Members.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OriginGroup]
   }
 }

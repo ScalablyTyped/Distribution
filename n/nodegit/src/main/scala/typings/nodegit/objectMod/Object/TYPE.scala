@@ -30,26 +30,24 @@ trait TYPE extends js.Object
 
 object TYPE {
   @scala.inline
-  def ANY: `-2` = this.cast(-2)
+  def ANY: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def BAD: `-1` = this.cast(-1)
+  def BAD: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def BLOB: `3` = this.cast(3)
+  def BLOB: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def COMMIT: `1` = this.cast(1)
+  def COMMIT: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def EXT1: `0` = this.cast(0)
+  def EXT1: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def EXT2: `5` = this.cast(5)
+  def EXT2: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def OFS_DELTA: `6` = this.cast(6)
+  def OFS_DELTA: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def REF_DELTA: `7` = this.cast(7)
+  def REF_DELTA: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def TAG: `4` = this.cast(4)
+  def TAG: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def TREE: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def TREE: `2` = 2.asInstanceOf[`2`]
 }
 

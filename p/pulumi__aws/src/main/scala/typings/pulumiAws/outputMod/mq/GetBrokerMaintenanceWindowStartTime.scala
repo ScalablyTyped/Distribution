@@ -15,7 +15,6 @@ object GetBrokerMaintenanceWindowStartTime {
   @scala.inline
   def apply(dayOfWeek: String, timeOfDay: String, timeZone: String): GetBrokerMaintenanceWindowStartTime = {
     val __obj = js.Dynamic.literal(dayOfWeek = dayOfWeek.asInstanceOf[js.Any], timeOfDay = timeOfDay.asInstanceOf[js.Any], timeZone = timeZone.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBrokerMaintenanceWindowStartTime]
   }
 }

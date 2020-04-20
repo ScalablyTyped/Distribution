@@ -16,7 +16,6 @@ object DeleteAssessmentTemplateRequest {
   @scala.inline
   def apply(assessmentTemplateArn: Arn): DeleteAssessmentTemplateRequest = {
     val __obj = js.Dynamic.literal(assessmentTemplateArn = assessmentTemplateArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteAssessmentTemplateRequest]
   }
 }

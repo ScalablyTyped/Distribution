@@ -13,7 +13,6 @@ object SqlNative {
   @scala.inline
   def apply(bindings: js.Array[Value], sql: String): SqlNative = {
     val __obj = js.Dynamic.literal(bindings = bindings.asInstanceOf[js.Any], sql = sql.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SqlNative]
   }
 }

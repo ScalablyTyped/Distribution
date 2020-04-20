@@ -23,7 +23,6 @@ object ViewModel {
     propertyChanged: PropertyChangedContext => Unit
   ): ViewModel = {
     val __obj = js.Dynamic.literal(activated = js.Any.fromFunction1(activated), bindingsApplied = js.Any.fromFunction1(bindingsApplied), connected = js.Any.fromFunction1(connected), disconnected = js.Any.fromFunction1(disconnected), propertyChanged = js.Any.fromFunction1(propertyChanged))
-  
     __obj.asInstanceOf[ViewModel]
   }
 }

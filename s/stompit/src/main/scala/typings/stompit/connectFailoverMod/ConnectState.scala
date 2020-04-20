@@ -14,7 +14,6 @@ object ConnectState {
   @scala.inline
   def apply(failedConnects: Double, serverProperties: Server): ConnectState = {
     val __obj = js.Dynamic.literal(failedConnects = failedConnects.asInstanceOf[js.Any], serverProperties = serverProperties.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConnectState]
   }
 }

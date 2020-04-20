@@ -14,7 +14,6 @@ object AnonAccessTokenHttpMethod {
   @scala.inline
   def apply(accessTokenHttpMethod: String, followRedirects: Boolean, requestTokenHttpMethod: String): AnonAccessTokenHttpMethod = {
     val __obj = js.Dynamic.literal(accessTokenHttpMethod = accessTokenHttpMethod.asInstanceOf[js.Any], followRedirects = followRedirects.asInstanceOf[js.Any], requestTokenHttpMethod = requestTokenHttpMethod.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAccessTokenHttpMethod]
   }
 }

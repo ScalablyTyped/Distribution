@@ -19,7 +19,6 @@ object TypeofFilterType {
   @scala.inline
   def apply(Application: js.Any, Control: js.Any): TypeofFilterType = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Control = Control.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofFilterType]
   }
 }

@@ -42,7 +42,6 @@ object AWSElasticBlockStoreVolumeSource {
   @scala.inline
   def apply(fsType: String, partition: Double, readOnly: Boolean, volumeID: String): AWSElasticBlockStoreVolumeSource = {
     val __obj = js.Dynamic.literal(fsType = fsType.asInstanceOf[js.Any], partition = partition.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], volumeID = volumeID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AWSElasticBlockStoreVolumeSource]
   }
 }

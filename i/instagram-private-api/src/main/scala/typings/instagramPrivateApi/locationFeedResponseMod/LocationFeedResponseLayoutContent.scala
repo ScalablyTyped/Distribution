@@ -12,7 +12,6 @@ object LocationFeedResponseLayoutContent {
   @scala.inline
   def apply(medias: js.Array[LocationFeedResponseMediasItem]): LocationFeedResponseLayoutContent = {
     val __obj = js.Dynamic.literal(medias = medias.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LocationFeedResponseLayoutContent]
   }
 }

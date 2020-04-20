@@ -24,7 +24,6 @@ object AnonCategory {
     version: Double
   ): AnonCategory = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCategory]
   }
 }

@@ -20,7 +20,6 @@ object IOutputStream {
     writeAsync: IBuffer => IAsyncOperationWithProgress[Double, Double]
   ): IOutputStream = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), flushAsync = js.Any.fromFunction0(flushAsync), writeAsync = js.Any.fromFunction1(writeAsync))
-  
     __obj.asInstanceOf[IOutputStream]
   }
 }

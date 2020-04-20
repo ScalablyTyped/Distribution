@@ -18,7 +18,6 @@ object NodeSingularLayout {
   @scala.inline
   def apply(layoutDimensions: LayoutDimensionOptions => AnonX): NodeSingularLayout = {
     val __obj = js.Dynamic.literal(layoutDimensions = js.Any.fromFunction1(layoutDimensions))
-  
     __obj.asInstanceOf[NodeSingularLayout]
   }
 }

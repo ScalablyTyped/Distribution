@@ -13,7 +13,6 @@ object BinaryNode {
   @scala.inline
   def apply(and: BinaryNode => BinaryNode, or: BinaryNode => BinaryNode): BinaryNode = {
     val __obj = js.Dynamic.literal(and = js.Any.fromFunction1(and), or = js.Any.fromFunction1(or))
-  
     __obj.asInstanceOf[BinaryNode]
   }
 }

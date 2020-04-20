@@ -20,7 +20,6 @@ object UploadDocumentsRequest {
   @scala.inline
   def apply(contentType: ContentType, documents: _Blob): UploadDocumentsRequest = {
     val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], documents = documents.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UploadDocumentsRequest]
   }
 }

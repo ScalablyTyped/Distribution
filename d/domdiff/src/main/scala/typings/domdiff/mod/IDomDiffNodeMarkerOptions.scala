@@ -19,7 +19,6 @@ object IDomDiffNodeMarkerOptions {
   @scala.inline
   def apply[T](before: T): IDomDiffNodeMarkerOptions[T] = {
     val __obj = js.Dynamic.literal(before = before.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDomDiffNodeMarkerOptions[T]]
   }
 }

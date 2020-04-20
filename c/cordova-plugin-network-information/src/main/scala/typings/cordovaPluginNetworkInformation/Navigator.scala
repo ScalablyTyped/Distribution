@@ -19,7 +19,6 @@ object Navigator {
   @scala.inline
   def apply(connection: Connection, network: AnonConnection): Navigator = {
     val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], network = network.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Navigator]
   }
 }

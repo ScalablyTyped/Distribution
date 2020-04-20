@@ -16,7 +16,6 @@ object DemodulationConfig {
   @scala.inline
   def apply(unvalidatedJSON: JsonString): DemodulationConfig = {
     val __obj = js.Dynamic.literal(unvalidatedJSON = unvalidatedJSON.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DemodulationConfig]
   }
 }

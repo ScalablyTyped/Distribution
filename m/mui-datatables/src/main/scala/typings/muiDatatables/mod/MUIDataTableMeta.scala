@@ -24,7 +24,6 @@ object MUIDataTableMeta {
     tableState: MUIDataTableState
   ): MUIDataTableMeta = {
     val __obj = js.Dynamic.literal(columnData = columnData.asInstanceOf[js.Any], columnIndex = columnIndex.asInstanceOf[js.Any], rowData = rowData.asInstanceOf[js.Any], rowIndex = rowIndex.asInstanceOf[js.Any], tableData = tableData.asInstanceOf[js.Any], tableState = tableState.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MUIDataTableMeta]
   }
 }

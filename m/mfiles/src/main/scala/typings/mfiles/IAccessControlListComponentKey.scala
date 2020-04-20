@@ -19,7 +19,6 @@ object IAccessControlListComponentKey {
     PropertyDefID: MFBuiltInPropertyDef | Double
   ): IAccessControlListComponentKey = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), ItemID = ItemID.asInstanceOf[js.Any], PropertyDefID = PropertyDefID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IAccessControlListComponentKey]
   }
 }

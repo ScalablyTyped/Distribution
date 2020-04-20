@@ -24,7 +24,6 @@ object KeyBinding {
     setKeyboardHandler: KeyboardHandler => Unit
   ): KeyBinding = {
     val __obj = js.Dynamic.literal(addKeyboardHandler = js.Any.fromFunction2(addKeyboardHandler), getKeyboardHandler = js.Any.fromFunction0(getKeyboardHandler), getStatusText = js.Any.fromFunction0(getStatusText), removeKeyboardHandler = js.Any.fromFunction1(removeKeyboardHandler), setDefaultHandler = js.Any.fromFunction1(setDefaultHandler), setKeyboardHandler = js.Any.fromFunction1(setKeyboardHandler))
-  
     __obj.asInstanceOf[KeyBinding]
   }
 }

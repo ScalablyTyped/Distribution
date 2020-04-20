@@ -1,6 +1,7 @@
 package typings.prosemirrorModel.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,11 +22,11 @@ class Schema[N /* <: String */, M /* <: String */] protected () extends js.Objec
   /**
     * A map from mark names to mark type objects.
     */
-  var marks: typings.prosemirrorModel.prosemirrorModelStrings.Schema with js.Any with (StringDictionary[MarkType[Schema[N, M]]]) = js.native
+  var marks: typings.prosemirrorModel.prosemirrorModelStrings.Schema with TopLevel[js.Any] with (StringDictionary[MarkType[Schema[N, M]]]) = js.native
   /**
     * An object mapping the schema's node names to node type objects.
     */
-  var nodes: typings.prosemirrorModel.prosemirrorModelStrings.Schema with js.Any with (StringDictionary[NodeType[Schema[N, M]]]) = js.native
+  var nodes: typings.prosemirrorModel.prosemirrorModelStrings.Schema with TopLevel[js.Any] with (StringDictionary[NodeType[Schema[N, M]]]) = js.native
   /**
     * The [spec](#model.SchemaSpec) on which the schema is based,
     * with the added guarantee that its `nodes` and `marks`

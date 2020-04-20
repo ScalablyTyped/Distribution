@@ -33,7 +33,6 @@ object CreateTemplateAliasRequest {
     TemplateVersionNumber: VersionNumber
   ): CreateTemplateAliasRequest = {
     val __obj = js.Dynamic.literal(AliasName = AliasName.asInstanceOf[js.Any], AwsAccountId = AwsAccountId.asInstanceOf[js.Any], TemplateId = TemplateId.asInstanceOf[js.Any], TemplateVersionNumber = TemplateVersionNumber.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateTemplateAliasRequest]
   }
 }

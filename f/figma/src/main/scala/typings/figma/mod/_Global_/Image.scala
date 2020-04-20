@@ -16,7 +16,6 @@ object Image {
   @scala.inline
   def apply(getBytesAsync: () => js.Promise[Uint8Array], hash: String): Image = {
     val __obj = js.Dynamic.literal(getBytesAsync = js.Any.fromFunction0(getBytesAsync), hash = hash.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Image]
   }
 }

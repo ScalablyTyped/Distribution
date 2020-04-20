@@ -13,7 +13,6 @@ object DropRowContext {
   @scala.inline
   def apply(rowIndex: Double): DropRowContext = {
     val __obj = js.Dynamic.literal(rowIndex = rowIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DropRowContext]
   }
 }

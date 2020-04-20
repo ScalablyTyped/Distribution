@@ -28,7 +28,6 @@ object ListReelMediaViewerFeedResponseConsumptionSheetConfig {
     you_donated_message: Null
   ): ListReelMediaViewerFeedResponseConsumptionSheetConfig = {
     val __obj = js.Dynamic.literal(can_viewer_donate = can_viewer_donate.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], donation_amount_config = donation_amount_config.asInstanceOf[js.Any], donation_disabled_message = donation_disabled_message.asInstanceOf[js.Any], donation_url = donation_url.asInstanceOf[js.Any], has_viewer_donated = has_viewer_donated.asInstanceOf[js.Any], privacy_disclaimer = privacy_disclaimer.asInstanceOf[js.Any], you_donated_message = you_donated_message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListReelMediaViewerFeedResponseConsumptionSheetConfig]
   }
 }

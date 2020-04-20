@@ -14,7 +14,6 @@ object OnBeaconUpdateCallbackResult {
   @scala.inline
   def apply(beacons: Array[IBeaconInfo]): OnBeaconUpdateCallbackResult = {
     val __obj = js.Dynamic.literal(beacons = beacons.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnBeaconUpdateCallbackResult]
   }
 }

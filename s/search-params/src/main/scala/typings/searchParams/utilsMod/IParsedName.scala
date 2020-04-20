@@ -13,7 +13,6 @@ object IParsedName {
   @scala.inline
   def apply(hasBrackets: Boolean, name: String): IParsedName = {
     val __obj = js.Dynamic.literal(hasBrackets = hasBrackets.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IParsedName]
   }
 }

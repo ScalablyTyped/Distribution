@@ -38,34 +38,32 @@ trait vbextWindowType extends js.Object
 
 object vbextWindowType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def vbext_wt_Browser: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def vbext_wt_Browser: `2` = this.cast(2)
+  def vbext_wt_CodeWindow: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def vbext_wt_CodeWindow: `0` = this.cast(0)
+  def vbext_wt_Designer: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def vbext_wt_Designer: `1` = this.cast(1)
+  def vbext_wt_Find: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def vbext_wt_Find: `8` = this.cast(8)
+  def vbext_wt_FindReplace: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def vbext_wt_FindReplace: `9` = this.cast(9)
+  def vbext_wt_Immediate: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def vbext_wt_Immediate: `5` = this.cast(5)
+  def vbext_wt_LinkedWindowFrame: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def vbext_wt_LinkedWindowFrame: `11` = this.cast(11)
+  def vbext_wt_Locals: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def vbext_wt_Locals: `4` = this.cast(4)
+  def vbext_wt_MainWindow: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def vbext_wt_MainWindow: `12` = this.cast(12)
+  def vbext_wt_ProjectWindow: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def vbext_wt_ProjectWindow: `6` = this.cast(6)
+  def vbext_wt_PropertyWindow: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def vbext_wt_PropertyWindow: `7` = this.cast(7)
+  def vbext_wt_ToolWindow: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def vbext_wt_ToolWindow: `15` = this.cast(15)
+  def vbext_wt_Toolbox: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def vbext_wt_Toolbox: `10` = this.cast(10)
-  @scala.inline
-  def vbext_wt_Watch: `3` = this.cast(3)
+  def vbext_wt_Watch: `3` = 3.asInstanceOf[`3`]
 }
 

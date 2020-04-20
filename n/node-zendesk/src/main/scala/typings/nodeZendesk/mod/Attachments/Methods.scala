@@ -19,7 +19,6 @@ object Methods {
     upload: (PathLike, AnonFilename, ZendeskCallback[_, _]) => Unit
   ): Methods = {
     val __obj = js.Dynamic.literal(request = js.Any.fromFunction4(request), upload = js.Any.fromFunction3(upload))
-  
     __obj.asInstanceOf[Methods]
   }
 }

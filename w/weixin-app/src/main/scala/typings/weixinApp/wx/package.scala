@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object wx {
   type AccelerometerChangeCallback = js.Function1[/* res */ typings.weixinApp.wx.AccelerometerData, scala.Unit]
   type AccelerometerOptions = typings.weixinApp.wx.BaseOptions[js.Any, js.Any]
-  type ArrayPropsDefinition[T] = js.Array[java.lang.String]
+  type ArrayPropsDefinition[T] = js.Array[/* keyof T */ java.lang.String]
   type ArrayType[T /* <: js.Array[_] */] = js.Any
   type BuiltInEvent[T /* <: typings.weixinApp.wx.EventType */, Detail] = typings.weixinApp.wx.BaseEvent[T, Detail]
   type CheckSessionOption = typings.weixinApp.wx.BaseOptions[js.Any, js.Any]
@@ -50,7 +50,7 @@ package object wx {
   type PropsDefinition[T] = typings.weixinApp.wx.ArrayPropsDefinition[T] | typings.weixinApp.wx.RecordPropsDefinition[T]
   type RecordPropsDefinition[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: weixin-app.wx.PropValidator<T[K]>}
-    */ typings.weixinApp.weixinAppStrings.RecordPropsDefinition with T
+    */ typings.weixinApp.weixinAppStrings.RecordPropsDefinition with org.scalablytyped.runtime.TopLevel[T]
   type RemoveSavedFileOptions = typings.weixinApp.wx.GetSavedFileInfoOptions
   // #endregion
   // #region 网络API列表

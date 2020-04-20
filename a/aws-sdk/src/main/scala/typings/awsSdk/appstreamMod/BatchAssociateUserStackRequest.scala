@@ -16,7 +16,6 @@ object BatchAssociateUserStackRequest {
   @scala.inline
   def apply(UserStackAssociations: UserStackAssociationList): BatchAssociateUserStackRequest = {
     val __obj = js.Dynamic.literal(UserStackAssociations = UserStackAssociations.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchAssociateUserStackRequest]
   }
 }

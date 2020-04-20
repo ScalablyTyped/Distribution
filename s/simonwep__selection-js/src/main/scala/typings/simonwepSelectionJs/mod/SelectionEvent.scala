@@ -26,7 +26,6 @@ object SelectionEvent {
     selected: js.Array[Element]
   ): SelectionEvent = {
     val __obj = js.Dynamic.literal(area = area.asInstanceOf[js.Any], changed = changed.asInstanceOf[js.Any], inst = inst.asInstanceOf[js.Any], oe = oe.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SelectionEvent]
   }
 }

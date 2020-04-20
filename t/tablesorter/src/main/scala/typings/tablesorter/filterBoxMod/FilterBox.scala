@@ -14,14 +14,12 @@ trait FilterBox extends js.Object
 
 object FilterBox {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def from: typings.tablesorter.tablesorterStrings.from = "from".asInstanceOf[typings.tablesorter.tablesorterStrings.from]
   @scala.inline
-  def from: typings.tablesorter.tablesorterStrings.from = this.cast("from")
+  def search: typings.tablesorter.tablesorterStrings.search = "search".asInstanceOf[typings.tablesorter.tablesorterStrings.search]
   @scala.inline
-  def search: typings.tablesorter.tablesorterStrings.search = this.cast("search")
+  def select: typings.tablesorter.tablesorterStrings.select = "select".asInstanceOf[typings.tablesorter.tablesorterStrings.select]
   @scala.inline
-  def select: typings.tablesorter.tablesorterStrings.select = this.cast("select")
-  @scala.inline
-  def to: typings.tablesorter.tablesorterStrings.to = this.cast("to")
+  def to: typings.tablesorter.tablesorterStrings.to = "to".asInstanceOf[typings.tablesorter.tablesorterStrings.to]
 }
 

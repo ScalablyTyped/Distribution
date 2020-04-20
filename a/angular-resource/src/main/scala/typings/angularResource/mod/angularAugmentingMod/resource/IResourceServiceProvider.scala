@@ -14,7 +14,6 @@ object IResourceServiceProvider {
   @scala.inline
   def apply($get: js.Any, defaults: IResourceOptions): IResourceServiceProvider = {
     val __obj = js.Dynamic.literal($get = $get.asInstanceOf[js.Any], defaults = defaults.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IResourceServiceProvider]
   }
 }

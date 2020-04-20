@@ -19,7 +19,6 @@ object ConsequencePromote {
   @scala.inline
   def apply(objectID: String, position: Double): ConsequencePromote = {
     val __obj = js.Dynamic.literal(objectID = objectID.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConsequencePromote]
   }
 }

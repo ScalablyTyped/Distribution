@@ -12,10 +12,8 @@ trait SharedPCAllowedAccountType extends js.Object
 
 object SharedPCAllowedAccountType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def domain: typings.microsoftGraph.microsoftGraphStrings.domain = "domain".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.domain]
   @scala.inline
-  def domain: typings.microsoftGraph.microsoftGraphStrings.domain = this.cast("domain")
-  @scala.inline
-  def guest: typings.microsoftGraph.microsoftGraphStrings.guest = this.cast("guest")
+  def guest: typings.microsoftGraph.microsoftGraphStrings.guest = "guest".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.guest]
 }
 

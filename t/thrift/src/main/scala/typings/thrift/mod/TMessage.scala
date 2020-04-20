@@ -15,7 +15,6 @@ object TMessage {
   @scala.inline
   def apply(fname: String, mtype: MessageType, rseqid: Double): TMessage = {
     val __obj = js.Dynamic.literal(fname = fname.asInstanceOf[js.Any], mtype = mtype.asInstanceOf[js.Any], rseqid = rseqid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TMessage]
   }
 }

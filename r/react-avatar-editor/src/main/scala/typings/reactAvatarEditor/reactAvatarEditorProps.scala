@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactAvatarEditorProps {
   @scala.inline
-  def ReactAvatarEditorProps: AvatarEditorProps.type = typings.reactAvatarEditor.mod.AvatarEditorProps
+  def ReactAvatarEditorProps: AvatarEditorProps.type = AvatarEditorProps
   type ReactAvatarEditorProps = AvatarEditorProps
 }
 

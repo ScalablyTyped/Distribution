@@ -17,7 +17,6 @@ object MembersServices {
   @scala.inline
   def apply(session: Session, syncClient: SyncClient, users: Users): MembersServices = {
     val __obj = js.Dynamic.literal(session = session.asInstanceOf[js.Any], syncClient = syncClient.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MembersServices]
   }
 }

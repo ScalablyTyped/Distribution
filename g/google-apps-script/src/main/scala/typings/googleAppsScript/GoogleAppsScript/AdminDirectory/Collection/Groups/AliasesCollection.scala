@@ -19,7 +19,6 @@ object AliasesCollection {
   @scala.inline
   def apply(insert: (Alias, String) => Alias, list: String => Aliases, remove: (String, String) => Unit): AliasesCollection = {
     val __obj = js.Dynamic.literal(insert = js.Any.fromFunction2(insert), list = js.Any.fromFunction1(list), remove = js.Any.fromFunction2(remove))
-  
     __obj.asInstanceOf[AliasesCollection]
   }
 }

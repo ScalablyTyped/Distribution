@@ -12,10 +12,8 @@ trait WindingRule extends js.Object
 
 object WindingRule {
   @scala.inline
-  def EVENODD: typings.figma.figmaStrings.EVENODD = this.cast("EVENODD")
+  def EVENODD: typings.figma.figmaStrings.EVENODD = "EVENODD".asInstanceOf[typings.figma.figmaStrings.EVENODD]
   @scala.inline
-  def NONZERO: typings.figma.figmaStrings.NONZERO = this.cast("NONZERO")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def NONZERO: typings.figma.figmaStrings.NONZERO = "NONZERO".asInstanceOf[typings.figma.figmaStrings.NONZERO]
 }
 

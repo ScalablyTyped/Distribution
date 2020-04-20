@@ -38,7 +38,7 @@ object observablesetMod extends js.Object {
     var dehanceValue: js.Any = js.native
     var dehancer: js.Any = js.native
     var name: String = js.native
-    @JSName(scala.scalajs.js.Symbol.toStringTag)
+    @JSName(js.Symbol.toStringTag)
     var toStringTag_ObservableSet: typings.mobx.mobxStrings.Set = js.native
     def delete(value: js.Any): Boolean = js.native
     def enhancer(newV: js.Any): js.Any = js.native

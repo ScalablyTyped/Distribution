@@ -19,6 +19,10 @@ trait Image extends js.Object {
     */
   var distributionConfiguration: js.UndefOr[DistributionConfiguration] = js.native
   /**
+    *  Collects additional information about the image being created, including the operating system (OS) version and package list. This information is used to enhance the overall experience of using EC2 Image Builder. Enabled by default. 
+    */
+  var enhancedImageMetadataEnabled: js.UndefOr[NullableBoolean] = js.native
+  /**
     * The image recipe used when creating the image.
     */
   var imageRecipe: js.UndefOr[ImageRecipe] = js.native
@@ -27,13 +31,17 @@ trait Image extends js.Object {
     */
   var imageTestsConfiguration: js.UndefOr[ImageTestsConfiguration] = js.native
   /**
-    *  The infrastructure used when creating this image.
+    * The infrastructure used when creating this image.
     */
   var infrastructureConfiguration: js.UndefOr[InfrastructureConfiguration] = js.native
   /**
     * The name of the image.
     */
   var name: js.UndefOr[ResourceName] = js.native
+  /**
+    * The operating system version of the instance. For example, Amazon Linux 2, Ubuntu 18, or Microsoft Windows Server 2019. 
+    */
+  var osVersion: js.UndefOr[OsVersion] = js.native
   /**
     * The output resources produced when creating this image.
     */
@@ -70,10 +78,12 @@ object Image {
     arn: ImageBuilderArn = null,
     dateCreated: DateTime = null,
     distributionConfiguration: DistributionConfiguration = null,
+    enhancedImageMetadataEnabled: js.UndefOr[Boolean] = js.undefined,
     imageRecipe: ImageRecipe = null,
     imageTestsConfiguration: ImageTestsConfiguration = null,
     infrastructureConfiguration: InfrastructureConfiguration = null,
     name: ResourceName = null,
+    osVersion: OsVersion = null,
     outputResources: OutputResources = null,
     platform: Platform = null,
     sourcePipelineArn: Arn = null,
@@ -86,10 +96,12 @@ object Image {
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (dateCreated != null) __obj.updateDynamic("dateCreated")(dateCreated.asInstanceOf[js.Any])
     if (distributionConfiguration != null) __obj.updateDynamic("distributionConfiguration")(distributionConfiguration.asInstanceOf[js.Any])
+    if (!js.isUndefined(enhancedImageMetadataEnabled)) __obj.updateDynamic("enhancedImageMetadataEnabled")(enhancedImageMetadataEnabled.asInstanceOf[js.Any])
     if (imageRecipe != null) __obj.updateDynamic("imageRecipe")(imageRecipe.asInstanceOf[js.Any])
     if (imageTestsConfiguration != null) __obj.updateDynamic("imageTestsConfiguration")(imageTestsConfiguration.asInstanceOf[js.Any])
     if (infrastructureConfiguration != null) __obj.updateDynamic("infrastructureConfiguration")(infrastructureConfiguration.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (osVersion != null) __obj.updateDynamic("osVersion")(osVersion.asInstanceOf[js.Any])
     if (outputResources != null) __obj.updateDynamic("outputResources")(outputResources.asInstanceOf[js.Any])
     if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
     if (sourcePipelineArn != null) __obj.updateDynamic("sourcePipelineArn")(sourcePipelineArn.asInstanceOf[js.Any])

@@ -15,16 +15,14 @@ trait SchemaType extends js.Object
 
 object SchemaType {
   @scala.inline
-  def array: typings.googleapisCommon.googleapisCommonStrings.array = this.cast("array")
+  def array: typings.googleapisCommon.googleapisCommonStrings.array = "array".asInstanceOf[typings.googleapisCommon.googleapisCommonStrings.array]
   @scala.inline
-  def boolean: typings.googleapisCommon.googleapisCommonStrings.boolean = this.cast("boolean")
+  def boolean: typings.googleapisCommon.googleapisCommonStrings.boolean = "boolean".asInstanceOf[typings.googleapisCommon.googleapisCommonStrings.boolean]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def integer: typings.googleapisCommon.googleapisCommonStrings.integer = "integer".asInstanceOf[typings.googleapisCommon.googleapisCommonStrings.integer]
   @scala.inline
-  def integer: typings.googleapisCommon.googleapisCommonStrings.integer = this.cast("integer")
+  def `object`: typings.googleapisCommon.googleapisCommonStrings.`object` = "object".asInstanceOf[typings.googleapisCommon.googleapisCommonStrings.`object`]
   @scala.inline
-  def `object`: typings.googleapisCommon.googleapisCommonStrings.`object` = this.cast("object")
-  @scala.inline
-  def string: typings.googleapisCommon.googleapisCommonStrings.string = this.cast("string")
+  def string: typings.googleapisCommon.googleapisCommonStrings.string = "string".asInstanceOf[typings.googleapisCommon.googleapisCommonStrings.string]
 }
 

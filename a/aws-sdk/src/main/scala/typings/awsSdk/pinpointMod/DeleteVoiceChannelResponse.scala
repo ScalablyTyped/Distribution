@@ -13,7 +13,6 @@ object DeleteVoiceChannelResponse {
   @scala.inline
   def apply(VoiceChannelResponse: VoiceChannelResponse): DeleteVoiceChannelResponse = {
     val __obj = js.Dynamic.literal(VoiceChannelResponse = VoiceChannelResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteVoiceChannelResponse]
   }
 }

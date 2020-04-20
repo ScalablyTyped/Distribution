@@ -20,7 +20,6 @@ object ListStreamsOutput {
   @scala.inline
   def apply(HasMoreStreams: BooleanObject, StreamNames: StreamNameList): ListStreamsOutput = {
     val __obj = js.Dynamic.literal(HasMoreStreams = HasMoreStreams.asInstanceOf[js.Any], StreamNames = StreamNames.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListStreamsOutput]
   }
 }

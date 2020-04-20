@@ -19,7 +19,6 @@ object FileTypeResult {
   @scala.inline
   def apply(ext: FileExtension, mime: MimeType): FileTypeResult = {
     val __obj = js.Dynamic.literal(ext = ext.asInstanceOf[js.Any], mime = mime.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FileTypeResult]
   }
 }

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LodashPath1x1[TObject, TKey /* <: String */] extends js.Object {
+trait LodashPath1x1[TObject, TKey /* <: /* keyof TObject */ String */] extends js.Object {
   def apply(): js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any
   ] = js.native

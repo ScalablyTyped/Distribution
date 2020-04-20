@@ -14,7 +14,6 @@ object CustomButtonDescriptor {
   @scala.inline
   def apply(iconUrl: String, onClick: AttachmentCardClickEvent => Unit, tooltip: String): CustomButtonDescriptor = {
     val __obj = js.Dynamic.literal(iconUrl = iconUrl.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick), tooltip = tooltip.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CustomButtonDescriptor]
   }
 }

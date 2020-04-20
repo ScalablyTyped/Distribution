@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation._
 trait Queue[TElement] extends /* n */ NumberDictionary[QueueFunction[TElement]] {
   var `0`: String = js.native
   /** Iterator */
-  @JSName(scala.scalajs.js.Symbol.iterator)
+  @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[QueueFunction[TElement]]] = js.native
   /**
     * Gets or sets the length of the array. This is a number one higher than the highest element defined in an array.
@@ -34,7 +34,7 @@ trait Queue[TElement] extends /* n */ NumberDictionary[QueueFunction[TElement]] 
     * Returns an object whose properties have the value 'true'
     * when they will be absent when used in a 'with' statement.
     */
-  @JSName(scala.scalajs.js.Symbol.unscopables)
+  @JSName(js.Symbol.unscopables)
   var unscopables: js.Function0[AnonCopyWithin] = js.native
   /**
     * Combines two or more arrays.

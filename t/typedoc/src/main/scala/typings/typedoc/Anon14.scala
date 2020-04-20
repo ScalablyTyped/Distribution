@@ -13,7 +13,6 @@ object Anon14 {
   @scala.inline
   def apply(name: excludeProtected): Anon14 = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Anon14]
   }
 }

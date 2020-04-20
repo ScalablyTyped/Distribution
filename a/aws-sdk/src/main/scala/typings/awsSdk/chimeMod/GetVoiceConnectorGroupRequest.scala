@@ -16,7 +16,6 @@ object GetVoiceConnectorGroupRequest {
   @scala.inline
   def apply(VoiceConnectorGroupId: NonEmptyString): GetVoiceConnectorGroupRequest = {
     val __obj = js.Dynamic.literal(VoiceConnectorGroupId = VoiceConnectorGroupId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetVoiceConnectorGroupRequest]
   }
 }

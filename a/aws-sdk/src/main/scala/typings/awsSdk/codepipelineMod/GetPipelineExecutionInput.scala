@@ -20,7 +20,6 @@ object GetPipelineExecutionInput {
   @scala.inline
   def apply(pipelineExecutionId: PipelineExecutionId, pipelineName: PipelineName): GetPipelineExecutionInput = {
     val __obj = js.Dynamic.literal(pipelineExecutionId = pipelineExecutionId.asInstanceOf[js.Any], pipelineName = pipelineName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetPipelineExecutionInput]
   }
 }

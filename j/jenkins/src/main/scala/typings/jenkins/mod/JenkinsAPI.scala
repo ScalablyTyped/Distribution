@@ -30,7 +30,6 @@ object JenkinsAPI {
     view: AnonAdd
   ): JenkinsAPI = {
     val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], info = js.Any.fromFunction1(info), job = job.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JenkinsAPI]
   }
 }

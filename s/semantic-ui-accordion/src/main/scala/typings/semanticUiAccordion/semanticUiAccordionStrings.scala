@@ -99,7 +99,7 @@ object semanticUiAccordionStrings {
   @scala.inline
   def close: close = "close".asInstanceOf[close]
   @scala.inline
-  def `close others`: `close others` = "close others".asInstanceOf[`close others`]
+  def `close others`: `close others` = ("close others").asInstanceOf[`close others`]
   @scala.inline
   def closeNested: closeNested = "closeNested".asInstanceOf[closeNested]
   @scala.inline

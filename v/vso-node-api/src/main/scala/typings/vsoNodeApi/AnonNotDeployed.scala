@@ -26,7 +26,6 @@ object AnonNotDeployed {
     undefined: Double
   ): AnonNotDeployed = {
     val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], failed = failed.asInstanceOf[js.Any], inProgress = inProgress.asInstanceOf[js.Any], notDeployed = notDeployed.asInstanceOf[js.Any], partiallySucceeded = partiallySucceeded.asInstanceOf[js.Any], succeeded = succeeded.asInstanceOf[js.Any], undefined = undefined.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNotDeployed]
   }
 }

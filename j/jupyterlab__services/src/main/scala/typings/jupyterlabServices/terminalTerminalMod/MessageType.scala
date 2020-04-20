@@ -14,14 +14,12 @@ trait MessageType extends js.Object
 
 object MessageType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def disconnect: typings.jupyterlabServices.jupyterlabServicesStrings.disconnect = "disconnect".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.disconnect]
   @scala.inline
-  def disconnect: typings.jupyterlabServices.jupyterlabServicesStrings.disconnect = this.cast("disconnect")
+  def set_size: typings.jupyterlabServices.jupyterlabServicesStrings.set_size = "set_size".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.set_size]
   @scala.inline
-  def set_size: typings.jupyterlabServices.jupyterlabServicesStrings.set_size = this.cast("set_size")
+  def stdin: typings.jupyterlabServices.jupyterlabServicesStrings.stdin = "stdin".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.stdin]
   @scala.inline
-  def stdin: typings.jupyterlabServices.jupyterlabServicesStrings.stdin = this.cast("stdin")
-  @scala.inline
-  def stdout: typings.jupyterlabServices.jupyterlabServicesStrings.stdout = this.cast("stdout")
+  def stdout: typings.jupyterlabServices.jupyterlabServicesStrings.stdout = "stdout".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.stdout]
 }
 

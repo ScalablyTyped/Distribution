@@ -15,7 +15,6 @@ object Loader {
   @scala.inline
   def apply(load: StoryshotsOptions => AnonFramework, test: StoryshotsOptions => Boolean): Loader = {
     val __obj = js.Dynamic.literal(load = js.Any.fromFunction1(load), test = js.Any.fromFunction1(test))
-  
     __obj.asInstanceOf[Loader]
   }
 }

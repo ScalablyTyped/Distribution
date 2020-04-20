@@ -14,7 +14,6 @@ object AnonVolumes {
   @scala.inline
   def apply(Volumes: js.Array[VolumeInspectInfo], Warnings: js.Array[String]): AnonVolumes = {
     val __obj = js.Dynamic.literal(Volumes = Volumes.asInstanceOf[js.Any], Warnings = Warnings.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonVolumes]
   }
 }

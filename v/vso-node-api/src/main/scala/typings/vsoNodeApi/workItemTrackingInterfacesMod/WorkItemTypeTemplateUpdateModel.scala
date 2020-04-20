@@ -32,7 +32,6 @@ object WorkItemTypeTemplateUpdateModel {
     templateType: TemplateType
   ): WorkItemTypeTemplateUpdateModel = {
     val __obj = js.Dynamic.literal(actionType = actionType.asInstanceOf[js.Any], methodology = methodology.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], templateType = templateType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WorkItemTypeTemplateUpdateModel]
   }
 }

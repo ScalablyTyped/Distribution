@@ -21,7 +21,6 @@ object AnonConstants {
     inputs: Tensor[Rank] | SymbolicTensor
   ): AnonConstants = {
     val __obj = js.Dynamic.literal(constants = constants.asInstanceOf[js.Any], initialState = initialState.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonConstants]
   }
 }

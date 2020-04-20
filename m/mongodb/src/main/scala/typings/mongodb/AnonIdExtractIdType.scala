@@ -14,7 +14,6 @@ object AnonIdExtractIdType {
   @scala.inline
   def apply[TSchema /* <: StringDictionary[js.Any] */](_id: ExtractIdType[TSchema]): AnonIdExtractIdType[TSchema] = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIdExtractIdType[TSchema]]
   }
 }

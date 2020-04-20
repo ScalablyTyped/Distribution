@@ -22,7 +22,6 @@ object ModelConfig {
     output_layers: js.Array[TensorKeyArray]
   ): ModelConfig = {
     val __obj = js.Dynamic.literal(input_layers = input_layers.asInstanceOf[js.Any], layers = layers.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], output_layers = output_layers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ModelConfig]
   }
 }

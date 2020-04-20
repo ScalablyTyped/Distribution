@@ -27,7 +27,6 @@ object AnonEndAt {
   @scala.inline
   def apply(endAt: String, note: String, startAt: String, videoId: String): AnonEndAt = {
     val __obj = js.Dynamic.literal(endAt = endAt.asInstanceOf[js.Any], note = note.asInstanceOf[js.Any], startAt = startAt.asInstanceOf[js.Any], videoId = videoId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEndAt]
   }
 }

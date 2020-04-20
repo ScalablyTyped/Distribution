@@ -13,12 +13,10 @@ trait Margin extends js.Object
 
 object Margin {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dense: typings.materialUiCore.materialUiCoreStrings.dense = "dense".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.dense]
   @scala.inline
-  def dense: typings.materialUiCore.materialUiCoreStrings.dense = this.cast("dense")
+  def none: typings.materialUiCore.materialUiCoreStrings.none = "none".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.none]
   @scala.inline
-  def none: typings.materialUiCore.materialUiCoreStrings.none = this.cast("none")
-  @scala.inline
-  def normal: typings.materialUiCore.materialUiCoreStrings.normal = this.cast("normal")
+  def normal: typings.materialUiCore.materialUiCoreStrings.normal = "normal".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.normal]
 }
 

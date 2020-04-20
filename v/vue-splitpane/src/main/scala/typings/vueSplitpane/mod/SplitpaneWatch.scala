@@ -12,7 +12,6 @@ object SplitpaneWatch {
   @scala.inline
   def apply(defaultPercent: js.Any => Unit): SplitpaneWatch = {
     val __obj = js.Dynamic.literal(defaultPercent = js.Any.fromFunction1(defaultPercent))
-  
     __obj.asInstanceOf[SplitpaneWatch]
   }
 }

@@ -546,8 +546,8 @@ object internalObservableMod extends js.Object {
     def distinctUntilChanged[T](): js.Any = js.native
     def distinctUntilChanged[T](compare: js.Function2[/* x */ T, /* y */ T, Boolean]): js.Any = js.native
     def distinctUntilChanged[T, K](compare: js.Function2[/* x */ K, /* y */ K, Boolean], keySelector: js.Function1[/* x */ T, K]): js.Any = js.native
-    def distinctUntilKeyChanged[T](key: String): js.Any = js.native
-    def distinctUntilKeyChanged[T, K /* <: String */](
+    def distinctUntilKeyChanged[T](key: /* keyof T */ String): js.Any = js.native
+    def distinctUntilKeyChanged[T, K /* <: /* keyof T */ String */](
       key: K,
       compare: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ /* x */ js.Any, 

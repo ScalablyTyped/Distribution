@@ -12,7 +12,6 @@ object ConfigFile {
   @scala.inline
   def apply(configFile: String): ConfigFile = {
     val __obj = js.Dynamic.literal(configFile = configFile.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConfigFile]
   }
 }

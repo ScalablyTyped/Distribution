@@ -13,7 +13,6 @@ object TypeofMarketplaceCommerce {
   @scala.inline
   def apply(Types: TypeofMarketplaceCommerce): TypeofMarketplaceCommerce = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofMarketplaceCommerce]
   }
 }

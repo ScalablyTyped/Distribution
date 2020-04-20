@@ -36,8 +36,8 @@ abstract class PlatformPackager[DC /* <: PlatformSpecificBuildOptions */] protec
   val platform: Platform = js.native
   val platformSpecificBuildOptions: DC = js.native
   var sanityCheckPackage: js.Any = js.native
-  def buildResourcesDir(): String = js.native
-  def compression(): CompressionLevel = js.native
+  def buildResourcesDir: String = js.native
+  def compression: CompressionLevel = js.native
   /* protected */ def computeAppOutDir(outDir: String, arch: Arch): String = js.native
   def computeSafeArtifactName(suggestedName: String, ext: String): String | Null = js.native
   def computeSafeArtifactName(suggestedName: String, ext: String, arch: Null, skipArchIfX64: Boolean): String | Null = js.native
@@ -51,15 +51,15 @@ abstract class PlatformPackager[DC /* <: PlatformSpecificBuildOptions */] protec
   def computeSafeArtifactName(suggestedName: Null, ext: String, arch: Arch): String | Null = js.native
   def computeSafeArtifactName(suggestedName: Null, ext: String, arch: Arch, skipArchIfX64: Boolean): String | Null = js.native
   def computeSafeArtifactName(suggestedName: Null, ext: String, arch: Arch, skipArchIfX64: Boolean, safePattern: String): String | Null = js.native
-  def config(): Configuration = js.native
+  def config: Configuration = js.native
   def createGetFileMatchersOptions(outDir: String, arch: Arch, customBuildOptions: PlatformSpecificBuildOptions): GetFileMatchersOptions = js.native
   def createTargets(
     targets: js.Array[String],
     mapper: js.Function2[/* name */ String, /* factory */ js.Function1[/* outDir */ String, Target], Unit]
   ): Unit = js.native
   /* protected */ def createTransformerForExtraFiles(packContext: AfterPackContext): FileTransformer | Null = js.native
-  def debugLogger(): DebugLogger = js.native
-  def defaultTarget(): js.Array[String] = js.native
+  def debugLogger: DebugLogger = js.native
+  def defaultTarget: js.Array[String] = js.native
   def dispatchArtifactCreated(file: String): js.Promise[Unit] = js.native
   def dispatchArtifactCreated(file: String, target: Null, arch: Null, safeArtifactName: String): js.Promise[Unit] = js.native
   def dispatchArtifactCreated(file: String, target: Null, arch: Arch): js.Promise[Unit] = js.native
@@ -143,8 +143,8 @@ abstract class PlatformPackager[DC /* <: PlatformSpecificBuildOptions */] protec
   def expandMacro(pattern: String, arch: String, extra: js.Any, isProductNameSanitized: Boolean): String = js.native
   def expandMacro(pattern: String, arch: Null, extra: js.Any): String = js.native
   def expandMacro(pattern: String, arch: Null, extra: js.Any, isProductNameSanitized: Boolean): String = js.native
-  def fileAssociations(): js.Array[FileAssociation] = js.native
-  def forceCodeSigning(): Boolean = js.native
+  def fileAssociations: js.Array[FileAssociation] = js.native
+  def forceCodeSigning: Boolean = js.native
   def generateName2(ext: String, classifier: js.UndefOr[scala.Nothing], deployment: Boolean): String = js.native
   def generateName2(ext: String, classifier: String, deployment: Boolean): String = js.native
   def generateName2(ext: String, classifier: Null, deployment: Boolean): String = js.native
@@ -166,11 +166,11 @@ abstract class PlatformPackager[DC /* <: PlatformSpecificBuildOptions */] protec
   def getTempFile(suffix: String): js.Promise[String] = js.native
   def pack(outDir: String, arch: Arch, targets: js.Array[Target], taskManager: AsyncTaskManager): js.Promise[_] = js.native
   /* protected */ def packageInDistributableFormat(appOutDir: String, arch: Arch, targets: js.Array[Target], taskManager: AsyncTaskManager): Unit = js.native
-  def packagerOptions(): PackagerOptions = js.native
+  def packagerOptions: PackagerOptions = js.native
   /* protected */ def prepareAppInfo(appInfo: AppInfo): AppInfo = js.native
-  def projectDir(): String = js.native
+  def projectDir: String = js.native
   def resolveIcon(sources: js.Array[String], fallbackSources: js.Array[String], outputFormat: IconFormat): js.Promise[js.Array[IconInfo]] = js.native
-  def resourceList(): js.Promise[js.Array[String]] = js.native
+  def resourceList: js.Promise[js.Array[String]] = js.native
   /* protected */ def signApp(packContext: AfterPackContext, isAsar: Boolean): js.Promise[_] = js.native
 }
 

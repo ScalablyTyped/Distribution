@@ -16,7 +16,6 @@ object AclInsertParameters {
   @scala.inline
   def apply(calendarId: String, role: AccessRole, scope: AnonValue): AclInsertParameters = {
     val __obj = js.Dynamic.literal(calendarId = calendarId.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AclInsertParameters]
   }
 }

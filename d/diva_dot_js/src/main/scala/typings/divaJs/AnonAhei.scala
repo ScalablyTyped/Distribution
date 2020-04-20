@@ -28,7 +28,6 @@ object AnonAhei {
     t_wid: Double
   ): AnonAhei = {
     val __obj = js.Dynamic.literal(a_hei = a_hei.asInstanceOf[js.Any], a_wid = a_wid.asInstanceOf[js.Any], max_h = max_h.asInstanceOf[js.Any], max_ratio = max_ratio.asInstanceOf[js.Any], max_w = max_w.asInstanceOf[js.Any], min_ratio = min_ratio.asInstanceOf[js.Any], t_hei = t_hei.asInstanceOf[js.Any], t_wid = t_wid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAhei]
   }
 }

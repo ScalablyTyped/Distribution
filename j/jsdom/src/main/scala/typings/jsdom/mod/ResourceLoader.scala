@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ResourceLoader () extends js.Object {
   def this(obj: ResourceLoaderConstructorOptions) = this()
-  def fetch(url: String, options: FetchOptions): js.Promise[Buffer] = js.native
+  def fetch(url: String, options: FetchOptions): js.Promise[Buffer] | Null = js.native
 }
 

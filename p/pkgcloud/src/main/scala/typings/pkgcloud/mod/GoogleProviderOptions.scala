@@ -15,7 +15,6 @@ object GoogleProviderOptions {
   @scala.inline
   def apply(keyFilename: String, projectId: String, provider: google): GoogleProviderOptions = {
     val __obj = js.Dynamic.literal(keyFilename = keyFilename.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GoogleProviderOptions]
   }
 }

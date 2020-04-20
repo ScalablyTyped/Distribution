@@ -13,7 +13,6 @@ object TypeofAmplify {
   @scala.inline
   def apply(Types: TypeofAmplify): TypeofAmplify = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofAmplify]
   }
 }

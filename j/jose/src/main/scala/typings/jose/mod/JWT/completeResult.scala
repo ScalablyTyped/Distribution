@@ -15,7 +15,6 @@ object completeResult {
   @scala.inline
   def apply[T](header: js.Object, key: T, payload: js.Object, signature: String): completeResult[T] = {
     val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[completeResult[T]]
   }
 }

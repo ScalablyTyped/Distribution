@@ -12,7 +12,6 @@ object PropertyNamesParams {
   @scala.inline
   def apply(propertyName: String): PropertyNamesParams = {
     val __obj = js.Dynamic.literal(propertyName = propertyName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PropertyNamesParams]
   }
 }

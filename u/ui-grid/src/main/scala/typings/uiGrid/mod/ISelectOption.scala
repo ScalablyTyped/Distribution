@@ -13,7 +13,6 @@ object ISelectOption {
   @scala.inline
   def apply(label: String, value: Double | String): ISelectOption = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISelectOption]
   }
 }

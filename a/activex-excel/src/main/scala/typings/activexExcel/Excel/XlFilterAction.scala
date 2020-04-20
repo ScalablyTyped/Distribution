@@ -14,10 +14,8 @@ trait XlFilterAction extends js.Object
 
 object XlFilterAction {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlFilterCopy: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlFilterCopy: `2` = this.cast(2)
-  @scala.inline
-  def xlFilterInPlace: `1` = this.cast(1)
+  def xlFilterInPlace: `1` = 1.asInstanceOf[`1`]
 }
 

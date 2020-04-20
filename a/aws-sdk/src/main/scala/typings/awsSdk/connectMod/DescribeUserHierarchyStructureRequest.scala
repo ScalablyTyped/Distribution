@@ -16,7 +16,6 @@ object DescribeUserHierarchyStructureRequest {
   @scala.inline
   def apply(InstanceId: InstanceId): DescribeUserHierarchyStructureRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeUserHierarchyStructureRequest]
   }
 }

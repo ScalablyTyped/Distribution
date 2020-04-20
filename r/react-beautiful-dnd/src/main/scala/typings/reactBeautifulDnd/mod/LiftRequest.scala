@@ -13,7 +13,6 @@ object LiftRequest {
   @scala.inline
   def apply(draggableId: DraggableId, scrollOptions: ScrollOptions): LiftRequest = {
     val __obj = js.Dynamic.literal(draggableId = draggableId.asInstanceOf[js.Any], scrollOptions = scrollOptions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LiftRequest]
   }
 }

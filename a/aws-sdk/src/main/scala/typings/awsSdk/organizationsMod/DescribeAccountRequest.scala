@@ -16,7 +16,6 @@ object DescribeAccountRequest {
   @scala.inline
   def apply(AccountId: AccountId): DescribeAccountRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeAccountRequest]
   }
 }

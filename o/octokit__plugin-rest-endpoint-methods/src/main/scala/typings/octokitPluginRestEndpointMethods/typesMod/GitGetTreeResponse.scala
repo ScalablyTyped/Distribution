@@ -15,7 +15,6 @@ object GitGetTreeResponse {
   @scala.inline
   def apply(sha: String, tree: js.Array[GitGetTreeResponseTreeItem], truncated: Boolean, url: String): GitGetTreeResponse = {
     val __obj = js.Dynamic.literal(sha = sha.asInstanceOf[js.Any], tree = tree.asInstanceOf[js.Any], truncated = truncated.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GitGetTreeResponse]
   }
 }

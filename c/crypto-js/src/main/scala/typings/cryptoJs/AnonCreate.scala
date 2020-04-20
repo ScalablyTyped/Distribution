@@ -14,7 +14,6 @@ object AnonCreate {
   @scala.inline
   def apply(create: js.Any => LibWordArray, random: Double => LibWordArray): AnonCreate = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), random = js.Any.fromFunction1(random))
-  
     __obj.asInstanceOf[AnonCreate]
   }
 }

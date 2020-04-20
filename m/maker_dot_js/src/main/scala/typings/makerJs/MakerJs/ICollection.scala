@@ -16,7 +16,6 @@ object ICollection {
   @scala.inline
   def apply[K, T](items: js.Array[T], key: K): ICollection[K, T] = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICollection[K, T]]
   }
 }

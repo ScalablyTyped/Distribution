@@ -16,7 +16,6 @@ object GetBuiltinIntentRequest {
   @scala.inline
   def apply(signature: BuiltinIntentSignature): GetBuiltinIntentRequest = {
     val __obj = js.Dynamic.literal(signature = signature.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBuiltinIntentRequest]
   }
 }

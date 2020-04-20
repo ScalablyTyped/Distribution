@@ -16,12 +16,10 @@ trait HTMLDlgBorder extends js.Object
 
 object HTMLDlgBorder {
   @scala.inline
-  def HTMLDlgBorderThick: `262144` = this.cast(262144)
+  def HTMLDlgBorderThick: `262144` = 262144.asInstanceOf[`262144`]
   @scala.inline
-  def HTMLDlgBorderThin: `0` = this.cast(0)
+  def HTMLDlgBorderThin: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def HTMLDlgBorder_Max: `2147483647` = this.cast(2147483647)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def HTMLDlgBorder_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

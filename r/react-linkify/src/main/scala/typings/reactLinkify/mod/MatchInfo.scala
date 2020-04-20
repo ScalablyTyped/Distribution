@@ -31,7 +31,6 @@ object MatchInfo {
   @scala.inline
   def apply(index: Double, lastIndex: Double, schema: String, text: String, url: String): MatchInfo = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], lastIndex = lastIndex.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MatchInfo]
   }
 }

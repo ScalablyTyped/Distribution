@@ -20,7 +20,6 @@ object CreateInvalidationRequest {
   @scala.inline
   def apply(DistributionId: String, InvalidationBatch: InvalidationBatch): CreateInvalidationRequest = {
     val __obj = js.Dynamic.literal(DistributionId = DistributionId.asInstanceOf[js.Any], InvalidationBatch = InvalidationBatch.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateInvalidationRequest]
   }
 }

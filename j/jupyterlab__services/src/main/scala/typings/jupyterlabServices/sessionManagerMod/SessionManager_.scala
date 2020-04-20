@@ -59,7 +59,7 @@ class SessionManager_ protected () extends BaseManager {
     * A signal emitted when there is a connection failure.
     */
   @JSName("connectionFailure")
-  def connectionFailure_MSessionManager_(): ISignal[this.type, Error] = js.native
+  def connectionFailure_MSessionManager_ : ISignal[this.type, Error] = js.native
   /**
     * Find a session by id.
     */
@@ -86,12 +86,12 @@ class SessionManager_ protected () extends BaseManager {
     * Test whether the manager is ready.
     */
   @JSName("isReady")
-  def isReady_MSessionManager_(): Boolean = js.native
+  def isReady_MSessionManager_ : Boolean = js.native
   /**
     * A promise that fulfills when the manager is ready.
     */
   @JSName("ready")
-  def ready_MSessionManager_(): js.Promise[Unit] = js.native
+  def ready_MSessionManager_ : js.Promise[Unit] = js.native
   /**
     * Force a refresh of the running sessions.
     *
@@ -129,7 +129,7 @@ class SessionManager_ protected () extends BaseManager {
   /**
     * A signal emitted when the running sessions change.
     */
-  def runningChanged(): ISignal[this.type, js.Array[IModel]] = js.native
+  def runningChanged: ISignal[this.type, js.Array[IModel]] = js.native
   /**
     * Shut down a session by id.
     */

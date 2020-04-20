@@ -10,5 +10,5 @@ package object mod {
   type RouteHandler = (js.Function2[/* params */ typings.navigo.mod.Params, /* query */ java.lang.String, scala.Unit]) | typings.navigo.AnonAs
   type State = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in navigo.navigo.Keys ]: any}
-    */ typings.navigo.navigoStrings.State with js.Any
+    */ typings.navigo.navigoStrings.State with org.scalablytyped.runtime.TopLevel[js.Any]
 }

@@ -36,7 +36,6 @@ object Typeofhdr {
     remove: String => Double
   ): Typeofhdr = {
     val __obj = js.Dynamic.literal(append = js.Any.fromFunction1(append), append_after = js.Any.fromFunction2(append_after), append_to_reply = js.Any.fromFunction1(append_to_reply), insert = js.Any.fromFunction1(insert), insert_before = js.Any.fromFunction2(insert_before), is_present = js.Any.fromFunction1(is_present), remove = js.Any.fromFunction1(remove))
-  
     __obj.asInstanceOf[Typeofhdr]
   }
 }

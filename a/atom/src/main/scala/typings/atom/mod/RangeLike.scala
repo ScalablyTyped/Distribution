@@ -15,7 +15,6 @@ object RangeLike {
   @scala.inline
   def apply(end: PointLike, start: PointLike): RangeLike = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RangeLike]
   }
 }

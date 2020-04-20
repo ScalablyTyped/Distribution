@@ -12,7 +12,6 @@ object NavigationParameters {
   @scala.inline
   def apply(setForcedRedirectEnabled: Boolean => DynamicLink): NavigationParameters = {
     val __obj = js.Dynamic.literal(setForcedRedirectEnabled = js.Any.fromFunction1(setForcedRedirectEnabled))
-  
     __obj.asInstanceOf[NavigationParameters]
   }
 }

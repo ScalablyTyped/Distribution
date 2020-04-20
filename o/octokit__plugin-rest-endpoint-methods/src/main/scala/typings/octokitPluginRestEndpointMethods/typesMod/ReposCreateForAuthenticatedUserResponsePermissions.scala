@@ -14,7 +14,6 @@ object ReposCreateForAuthenticatedUserResponsePermissions {
   @scala.inline
   def apply(admin: Boolean, pull: Boolean, push: Boolean): ReposCreateForAuthenticatedUserResponsePermissions = {
     val __obj = js.Dynamic.literal(admin = admin.asInstanceOf[js.Any], pull = pull.asInstanceOf[js.Any], push = push.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReposCreateForAuthenticatedUserResponsePermissions]
   }
 }

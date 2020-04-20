@@ -23,7 +23,6 @@ object AnonFramework {
     storybook: ClientApi
   ): AnonFramework = {
     val __obj = js.Dynamic.literal(framework = framework.asInstanceOf[js.Any], renderShallowTree = renderShallowTree.asInstanceOf[js.Any], renderTree = js.Any.fromFunction3(renderTree), storybook = storybook.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFramework]
   }
 }

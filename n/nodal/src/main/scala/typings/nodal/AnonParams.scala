@@ -13,7 +13,6 @@ object AnonParams {
   @scala.inline
   def apply(params: js.Any, sql: js.Any): AnonParams = {
     val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], sql = sql.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonParams]
   }
 }

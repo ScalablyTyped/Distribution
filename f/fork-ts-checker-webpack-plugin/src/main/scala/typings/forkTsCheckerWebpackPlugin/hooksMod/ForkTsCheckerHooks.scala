@@ -19,24 +19,22 @@ trait ForkTsCheckerHooks extends js.Object
 
 object ForkTsCheckerHooks {
   @scala.inline
-  def cancel: typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.cancel = this.cast("cancel")
+  def cancel: typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.cancel = "cancel".asInstanceOf[typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.cancel]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def done: typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.done = "done".asInstanceOf[typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.done]
   @scala.inline
-  def done: typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.done = this.cast("done")
+  def emit: typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.emit = "emit".asInstanceOf[typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.emit]
   @scala.inline
-  def emit: typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.emit = this.cast("emit")
+  def receive: typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.receive = "receive".asInstanceOf[typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.receive]
   @scala.inline
-  def receive: typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.receive = this.cast("receive")
+  def serviceBeforeStart: typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.serviceBeforeStart = "serviceBeforeStart".asInstanceOf[typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.serviceBeforeStart]
   @scala.inline
-  def serviceBeforeStart: typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.serviceBeforeStart = this.cast("serviceBeforeStart")
+  def serviceOutOfMemory: typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.serviceOutOfMemory = "serviceOutOfMemory".asInstanceOf[typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.serviceOutOfMemory]
   @scala.inline
-  def serviceOutOfMemory: typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.serviceOutOfMemory = this.cast("serviceOutOfMemory")
+  def serviceStart: typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.serviceStart = "serviceStart".asInstanceOf[typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.serviceStart]
   @scala.inline
-  def serviceStart: typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.serviceStart = this.cast("serviceStart")
+  def serviceStartError: typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.serviceStartError = "serviceStartError".asInstanceOf[typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.serviceStartError]
   @scala.inline
-  def serviceStartError: typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.serviceStartError = this.cast("serviceStartError")
-  @scala.inline
-  def waiting: typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.waiting = this.cast("waiting")
+  def waiting: typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.waiting = "waiting".asInstanceOf[typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.waiting]
 }
 

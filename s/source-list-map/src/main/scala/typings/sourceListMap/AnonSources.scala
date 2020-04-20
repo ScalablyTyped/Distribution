@@ -20,7 +20,6 @@ object AnonSources {
     sourcesContent: js.Array[String]
   ): AnonSources = {
     val __obj = js.Dynamic.literal(mappings = mappings.asInstanceOf[js.Any], sources = sources.asInstanceOf[js.Any], sourcesContent = sourcesContent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSources]
   }
 }

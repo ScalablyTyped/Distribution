@@ -32,7 +32,6 @@ object AnonAnimated {
     transparent: Boolean
   ): AnonAnimated = {
     val __obj = js.Dynamic.literal(animated = animated.asInstanceOf[js.Any], animationType = animationType.asInstanceOf[js.Any], closable = closable.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], onShow = js.Any.fromFunction0(onShow), operation = operation.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], transparent = transparent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAnimated]
   }
 }

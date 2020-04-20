@@ -26,7 +26,7 @@ object byNameReferencePropertyMod extends js.Object {
     @JSName("parent")
     var parent_ByNameReferenceListProperty: AbstractElement = js.native
     def qualifiedNames(): js.Array[String] = js.native
-    def targetType(): String = js.native
+    def targetType: String = js.native
     def updateWithRawValue(value: js.Array[String]): Unit = js.native
   }
   
@@ -51,7 +51,7 @@ object byNameReferencePropertyMod extends js.Object {
     def qualifiedName(): String | Null = js.native
     def set(): Unit = js.native
     def set(newValue: T): Unit = js.native
-    def targetType(): String = js.native
+    def targetType: String = js.native
     def updateWithRawValue(value: String): Unit = js.native
   }
   

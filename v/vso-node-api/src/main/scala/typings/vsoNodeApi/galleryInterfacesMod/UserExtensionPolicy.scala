@@ -23,7 +23,6 @@ object UserExtensionPolicy {
   @scala.inline
   def apply(displayName: String, permissions: ExtensionPolicy, userId: String): UserExtensionPolicy = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UserExtensionPolicy]
   }
 }

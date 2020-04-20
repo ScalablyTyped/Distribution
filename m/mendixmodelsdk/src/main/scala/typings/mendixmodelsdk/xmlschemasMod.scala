@@ -62,7 +62,7 @@ object xmlschemasMod extends js.Object {
       @JSName("model")
       var model_FMxSchema: IModel = js.native
       @JSName("containerAsFolderBase")
-      def containerAsFolderBase_MMxSchema(): FolderBase = js.native
+      def containerAsFolderBase_MMxSchema: FolderBase = js.native
     }
     
     /**
@@ -109,9 +109,9 @@ object xmlschemasMod extends js.Object {
       @JSName("model")
       var model_FXmlSchema: IModel = js.native
       @JSName("containerAsFolderBase")
-      def containerAsFolderBase_MXmlSchema(): FolderBase = js.native
-      def entries(): IList[XmlSchemaEntry] = js.native
-      def filePath(): String = js.native
+      def containerAsFolderBase_MXmlSchema: FolderBase = js.native
+      def entries: IList[XmlSchemaEntry] = js.native
+      def filePath: String = js.native
       def filePath(newValue: String): js.Any = js.native
     }
     
@@ -128,17 +128,17 @@ object xmlschemasMod extends js.Object {
       ) = this()
       @JSName("model")
       var model_FXmlSchemaEntry: IModel = js.native
-      def containerAsWsdlDescription(): WsdlDescription = js.native
-      def containerAsXmlSchema(): XmlSchema = js.native
-      def contents(): String = js.native
+      def containerAsWsdlDescription: WsdlDescription = js.native
+      def containerAsXmlSchema: XmlSchema = js.native
+      def contents: String = js.native
       def contents(newValue: String): js.Any = js.native
-      def localizedContentsFormat(): String = js.native
+      def localizedContentsFormat: String = js.native
       def localizedContentsFormat(newValue: String): js.Any = js.native
-      def localizedLocationFormat(): String = js.native
+      def localizedLocationFormat: String = js.native
       def localizedLocationFormat(newValue: String): js.Any = js.native
-      def location(): String = js.native
+      def location: String = js.native
       def location(newValue: String): js.Any = js.native
-      def targetNamespace(): String = js.native
+      def targetNamespace: String = js.native
       def targetNamespace(newValue: String): js.Any = js.native
     }
     

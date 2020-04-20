@@ -20,7 +20,6 @@ object UntagResourceInput {
   @scala.inline
   def apply(ResourceARN: ResourceARN, TagKeyList: TagKeyList): UntagResourceInput = {
     val __obj = js.Dynamic.literal(ResourceARN = ResourceARN.asInstanceOf[js.Any], TagKeyList = TagKeyList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UntagResourceInput]
   }
 }

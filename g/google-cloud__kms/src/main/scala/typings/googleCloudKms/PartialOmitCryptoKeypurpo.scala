@@ -15,14 +15,14 @@ trait PartialOmitCryptoKeypurpo extends js.Object {
   var name: js.UndefOr[String] = js.undefined
   var nextRotationTime: js.UndefOr[AsObject] = js.undefined
   var primary: js.UndefOr[CryptoKeyVersion] = js.undefined
-  var purpose: String
+  var purpose: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CryptoKeyPurpose * / any */ String
   var versionTemplate: js.UndefOr[CryptoKeyVersionTemplate] = js.undefined
 }
 
 object PartialOmitCryptoKeypurpo {
   @scala.inline
   def apply(
-    purpose: String,
+    purpose: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CryptoKeyPurpose * / any */ String,
     createTime: AsObject = null,
     labels: StringDictionary[String] = null,
     name: String = null,

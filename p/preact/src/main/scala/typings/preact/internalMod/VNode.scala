@@ -22,6 +22,7 @@ trait VNode[P]
   	 * The last dom child of a Fragment, or components that return a Fragment
   	 */
   var _nextDom: PreactElement | Text | Null
+  var _original: js.UndefOr[VNode[js.Object] | Null] = js.undefined
   var _parent: VNode[js.Object] | Null
   var constructor: js.UndefOr[scala.Nothing] = js.undefined
 }
@@ -37,6 +38,7 @@ object VNode {
     _depth: Int | Double = null,
     _dom: PreactElement | Text = null,
     _nextDom: PreactElement | Text = null,
+    _original: VNode[js.Object] = null,
     _parent: VNode[js.Object] = null,
     constructor: js.UndefOr[scala.Nothing] = js.undefined,
     endTime: Int | Double = null,
@@ -50,6 +52,7 @@ object VNode {
     if (_depth != null) __obj.updateDynamic("_depth")(_depth.asInstanceOf[js.Any])
     if (_dom != null) __obj.updateDynamic("_dom")(_dom.asInstanceOf[js.Any])
     if (_nextDom != null) __obj.updateDynamic("_nextDom")(_nextDom.asInstanceOf[js.Any])
+    if (_original != null) __obj.updateDynamic("_original")(_original.asInstanceOf[js.Any])
     if (_parent != null) __obj.updateDynamic("_parent")(_parent.asInstanceOf[js.Any])
     if (!js.isUndefined(constructor)) __obj.updateDynamic("constructor")(constructor.asInstanceOf[js.Any])
     if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])

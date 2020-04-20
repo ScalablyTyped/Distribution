@@ -22,7 +22,6 @@ object Typeofpipelimit {
     pl_drop_retry: Double => Double
   ): Typeofpipelimit = {
     val __obj = js.Dynamic.literal(pl_check = js.Any.fromFunction1(pl_check), pl_check_limit = js.Any.fromFunction3(pl_check_limit), pl_drop = js.Any.fromFunction0(pl_drop), pl_drop_range = js.Any.fromFunction2(pl_drop_range), pl_drop_retry = js.Any.fromFunction1(pl_drop_retry))
-  
     __obj.asInstanceOf[Typeofpipelimit]
   }
 }

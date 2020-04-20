@@ -16,7 +16,6 @@ object TrackingOptions {
   @scala.inline
   def apply(CustomRedirectDomain: CustomRedirectDomain): TrackingOptions = {
     val __obj = js.Dynamic.literal(CustomRedirectDomain = CustomRedirectDomain.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TrackingOptions]
   }
 }

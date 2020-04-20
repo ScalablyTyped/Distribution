@@ -34,30 +34,28 @@ trait OlCategoryShortcutKey extends js.Object
 
 object OlCategoryShortcutKey {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olCategoryShortcutKeyCtrlF10: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def olCategoryShortcutKeyCtrlF10: `9` = this.cast(9)
+  def olCategoryShortcutKeyCtrlF11: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def olCategoryShortcutKeyCtrlF11: `10` = this.cast(10)
+  def olCategoryShortcutKeyCtrlF12: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def olCategoryShortcutKeyCtrlF12: `11` = this.cast(11)
+  def olCategoryShortcutKeyCtrlF2: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olCategoryShortcutKeyCtrlF2: `1` = this.cast(1)
+  def olCategoryShortcutKeyCtrlF3: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olCategoryShortcutKeyCtrlF3: `2` = this.cast(2)
+  def olCategoryShortcutKeyCtrlF4: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def olCategoryShortcutKeyCtrlF4: `3` = this.cast(3)
+  def olCategoryShortcutKeyCtrlF5: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def olCategoryShortcutKeyCtrlF5: `4` = this.cast(4)
+  def olCategoryShortcutKeyCtrlF6: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def olCategoryShortcutKeyCtrlF6: `5` = this.cast(5)
+  def olCategoryShortcutKeyCtrlF7: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def olCategoryShortcutKeyCtrlF7: `6` = this.cast(6)
+  def olCategoryShortcutKeyCtrlF8: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def olCategoryShortcutKeyCtrlF8: `7` = this.cast(7)
+  def olCategoryShortcutKeyCtrlF9: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def olCategoryShortcutKeyCtrlF9: `8` = this.cast(8)
-  @scala.inline
-  def olCategoryShortcutKeyNone: `0` = this.cast(0)
+  def olCategoryShortcutKeyNone: `0` = 0.asInstanceOf[`0`]
 }
 

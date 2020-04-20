@@ -21,7 +21,7 @@ class Router_ protected () extends IRouter {
     * Returns the parsed current URL of the application.
     */
   @JSName("current")
-  def current_MRouter_(): ILocation = js.native
+  def current_MRouter_ : ILocation = js.native
   /**
     * Route a specific path to an action.
     *
@@ -34,6 +34,6 @@ class Router_ protected () extends IRouter {
     * A signal emitted when the router routes a route.
     */
   @JSName("routed")
-  def routed_MRouter_(): ISignal[this.type, ILocation] = js.native
+  def routed_MRouter_ : ISignal[this.type, ILocation] = js.native
 }
 

@@ -15,7 +15,6 @@ object CacheControlFormat {
   @scala.inline
   def apply(hints: js.Array[pathArraystringnumberCach], version: `1`): CacheControlFormat = {
     val __obj = js.Dynamic.literal(hints = hints.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CacheControlFormat]
   }
 }

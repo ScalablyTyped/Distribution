@@ -15,7 +15,6 @@ object OrgsListInstallationsResponseInstallationsItemPermissions {
   @scala.inline
   def apply(deployments: String, metadata: String, pull_requests: String, statuses: String): OrgsListInstallationsResponseInstallationsItemPermissions = {
     val __obj = js.Dynamic.literal(deployments = deployments.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], pull_requests = pull_requests.asInstanceOf[js.Any], statuses = statuses.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OrgsListInstallationsResponseInstallationsItemPermissions]
   }
 }

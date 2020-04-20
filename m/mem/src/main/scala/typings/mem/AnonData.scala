@@ -13,7 +13,6 @@ object AnonData {
   @scala.inline
   def apply[ReturnType](data: ReturnType, maxAge: Double): AnonData[ReturnType] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], maxAge = maxAge.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonData[ReturnType]]
   }
 }

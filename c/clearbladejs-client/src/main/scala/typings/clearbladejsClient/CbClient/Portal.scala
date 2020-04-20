@@ -26,7 +26,6 @@ object Portal {
     user: APIUser
   ): Portal = {
     val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], fetch = js.Any.fromFunction1(fetch), name = name.asInstanceOf[js.Any], systemKey = systemKey.asInstanceOf[js.Any], systemSecret = systemSecret.asInstanceOf[js.Any], update = js.Any.fromFunction2(update), user = user.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Portal]
   }
 }

@@ -20,7 +20,6 @@ object AddInstanceGroupsInput {
   @scala.inline
   def apply(InstanceGroups: InstanceGroupConfigList, JobFlowId: XmlStringMaxLen256): AddInstanceGroupsInput = {
     val __obj = js.Dynamic.literal(InstanceGroups = InstanceGroups.asInstanceOf[js.Any], JobFlowId = JobFlowId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddInstanceGroupsInput]
   }
 }

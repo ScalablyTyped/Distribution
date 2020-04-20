@@ -30,7 +30,6 @@ object VM_ {
   @scala.inline
   def apply(getEnv: () => Env, perform: js.Function0[Unit] => Unit, tryGetEnv: () => Env | Null): VM_ = {
     val __obj = js.Dynamic.literal(getEnv = js.Any.fromFunction0(getEnv), perform = js.Any.fromFunction1(perform), tryGetEnv = js.Any.fromFunction0(tryGetEnv))
-  
     __obj.asInstanceOf[VM_]
   }
 }

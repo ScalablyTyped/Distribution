@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 
 trait rmcCalendarProps {
   @scala.inline
-  def AnimateWrapperProps: PropsType.type = typings.rmcCalendar.animateWrapperMod.PropsType
+  def AnimateWrapperProps: PropsType.type = PropsType
   type AnimateWrapperProps = PropsType
   @scala.inline
   def CalendarProps: typings.rmcCalendar.calendarPropsMod.PropsType.type = typings.rmcCalendar.calendarPropsMod.PropsType
   type CalendarProps = typings.rmcCalendar.calendarPropsMod.PropsType
   @scala.inline
-  def ConfirmPanelProps: ConfirmPanelPropsType.type = typings.rmcCalendar.confirmPanelMod.ConfirmPanelPropsType
+  def ConfirmPanelProps: ConfirmPanelPropsType.type = ConfirmPanelPropsType
   type ConfirmPanelProps = ConfirmPanelPropsType
   @scala.inline
   def DatePickerProps: typings.rmcCalendar.datePickerPropsMod.PropsType.type = typings.rmcCalendar.datePickerPropsMod.PropsType

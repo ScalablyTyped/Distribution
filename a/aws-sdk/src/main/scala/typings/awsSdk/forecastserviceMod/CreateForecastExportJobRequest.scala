@@ -24,7 +24,6 @@ object CreateForecastExportJobRequest {
   @scala.inline
   def apply(Destination: DataDestination, ForecastArn: Arn, ForecastExportJobName: Name): CreateForecastExportJobRequest = {
     val __obj = js.Dynamic.literal(Destination = Destination.asInstanceOf[js.Any], ForecastArn = ForecastArn.asInstanceOf[js.Any], ForecastExportJobName = ForecastExportJobName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateForecastExportJobRequest]
   }
 }

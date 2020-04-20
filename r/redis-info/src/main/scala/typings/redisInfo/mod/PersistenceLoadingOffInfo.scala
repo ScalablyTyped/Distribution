@@ -13,7 +13,6 @@ object PersistenceLoadingOffInfo {
   @scala.inline
   def apply(loading: OFF): PersistenceLoadingOffInfo = {
     val __obj = js.Dynamic.literal(loading = loading.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PersistenceLoadingOffInfo]
   }
 }

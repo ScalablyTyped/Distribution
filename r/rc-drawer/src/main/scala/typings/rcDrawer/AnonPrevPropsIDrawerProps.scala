@@ -13,7 +13,6 @@ object AnonPrevPropsIDrawerProps {
   @scala.inline
   def apply(prevProps: IDrawerProps): AnonPrevPropsIDrawerProps = {
     val __obj = js.Dynamic.literal(prevProps = prevProps.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPrevPropsIDrawerProps]
   }
 }

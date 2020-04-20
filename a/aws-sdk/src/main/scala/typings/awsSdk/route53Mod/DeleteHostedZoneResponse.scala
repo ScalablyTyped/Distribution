@@ -16,7 +16,6 @@ object DeleteHostedZoneResponse {
   @scala.inline
   def apply(ChangeInfo: ChangeInfo): DeleteHostedZoneResponse = {
     val __obj = js.Dynamic.literal(ChangeInfo = ChangeInfo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteHostedZoneResponse]
   }
 }

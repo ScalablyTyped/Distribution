@@ -20,7 +20,6 @@ object TemplateSourceAnalysis {
   @scala.inline
   def apply(Arn: Arn, DataSetReferences: DataSetReferenceList): TemplateSourceAnalysis = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], DataSetReferences = DataSetReferences.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TemplateSourceAnalysis]
   }
 }

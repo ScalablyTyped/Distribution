@@ -45,7 +45,6 @@ object primitive {
     getTransformerFromPlot: js.Object => js.Function
   ): primitive = {
     val __obj = js.Dynamic.literal(buildScaler = js.Any.fromFunction4(buildScaler), buildTicks = js.Any.fromFunction2(buildTicks), getTransformerFromModel = js.Any.fromFunction1(getTransformerFromModel), getTransformerFromPlot = js.Any.fromFunction1(getTransformerFromPlot))
-  
     __obj.asInstanceOf[primitive]
   }
 }

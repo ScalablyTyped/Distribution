@@ -15,7 +15,6 @@ object TypesResource {
   @scala.inline
   def apply(list: AnonFilter => Request_[TypesListResponse]): TypesResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[TypesResource]
   }
 }

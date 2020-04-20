@@ -30,7 +30,6 @@ object AnonTMT {
     XXX: js.Array[String]
   ): AnonTMT = {
     val __obj = js.Dynamic.literal(BYN = BYN.asInstanceOf[js.Any], GEL = GEL.asInstanceOf[js.Any], RON = RON.asInstanceOf[js.Any], RUB = RUB.asInstanceOf[js.Any], THB = THB.asInstanceOf[js.Any], TMT = TMT.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any], UAH = UAH.asInstanceOf[js.Any], XXX = XXX.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTMT]
   }
 }

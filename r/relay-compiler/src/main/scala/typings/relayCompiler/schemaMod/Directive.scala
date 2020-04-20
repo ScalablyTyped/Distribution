@@ -22,7 +22,6 @@ object Directive {
     name: String
   ): Directive = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], isClient = isClient.asInstanceOf[js.Any], locations = locations.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Directive]
   }
 }

@@ -13,7 +13,6 @@ object EncryptResult {
   @scala.inline
   def apply(sessionKey: AnonAeadAlgorithm): EncryptResult = {
     val __obj = js.Dynamic.literal(sessionKey = sessionKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EncryptResult]
   }
 }

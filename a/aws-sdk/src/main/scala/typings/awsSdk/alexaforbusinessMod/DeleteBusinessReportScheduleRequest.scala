@@ -16,7 +16,6 @@ object DeleteBusinessReportScheduleRequest {
   @scala.inline
   def apply(ScheduleArn: Arn): DeleteBusinessReportScheduleRequest = {
     val __obj = js.Dynamic.literal(ScheduleArn = ScheduleArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteBusinessReportScheduleRequest]
   }
 }

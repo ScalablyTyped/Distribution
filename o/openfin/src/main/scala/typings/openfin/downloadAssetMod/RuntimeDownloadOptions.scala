@@ -12,7 +12,6 @@ object RuntimeDownloadOptions {
   @scala.inline
   def apply(version: String): RuntimeDownloadOptions = {
     val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RuntimeDownloadOptions]
   }
 }

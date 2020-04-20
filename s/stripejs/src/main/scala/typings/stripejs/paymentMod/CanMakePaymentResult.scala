@@ -17,7 +17,6 @@ object CanMakePaymentResult {
   @scala.inline
   def apply(applePay: Boolean): CanMakePaymentResult = {
     val __obj = js.Dynamic.literal(applePay = applePay.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CanMakePaymentResult]
   }
 }

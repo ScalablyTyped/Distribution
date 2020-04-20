@@ -28,7 +28,6 @@ object HelmetTags {
     styleTags: js.Array[HTMLStyleElement]
   ): HelmetTags = {
     val __obj = js.Dynamic.literal(baseTag = baseTag.asInstanceOf[js.Any], linkTags = linkTags.asInstanceOf[js.Any], metaTags = metaTags.asInstanceOf[js.Any], noscriptTags = noscriptTags.asInstanceOf[js.Any], scriptTags = scriptTags.asInstanceOf[js.Any], styleTags = styleTags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HelmetTags]
   }
 }

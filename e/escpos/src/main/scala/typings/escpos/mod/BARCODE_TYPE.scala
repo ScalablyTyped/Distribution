@@ -19,24 +19,22 @@ trait BARCODE_TYPE extends js.Object
 
 object BARCODE_TYPE {
   @scala.inline
-  def CODE128: typings.escpos.escposStrings.CODE128 = this.cast("CODE128")
+  def CODE128: typings.escpos.escposStrings.CODE128 = "CODE128".asInstanceOf[typings.escpos.escposStrings.CODE128]
   @scala.inline
-  def CODE39: typings.escpos.escposStrings.CODE39 = this.cast("CODE39")
+  def CODE39: typings.escpos.escposStrings.CODE39 = "CODE39".asInstanceOf[typings.escpos.escposStrings.CODE39]
   @scala.inline
-  def CODE93: typings.escpos.escposStrings.CODE93 = this.cast("CODE93")
+  def CODE93: typings.escpos.escposStrings.CODE93 = "CODE93".asInstanceOf[typings.escpos.escposStrings.CODE93]
   @scala.inline
-  def EAN13: typings.escpos.escposStrings.EAN13 = this.cast("EAN13")
+  def EAN13: typings.escpos.escposStrings.EAN13 = "EAN13".asInstanceOf[typings.escpos.escposStrings.EAN13]
   @scala.inline
-  def EAN8: typings.escpos.escposStrings.EAN8 = this.cast("EAN8")
+  def EAN8: typings.escpos.escposStrings.EAN8 = "EAN8".asInstanceOf[typings.escpos.escposStrings.EAN8]
   @scala.inline
-  def ITF: typings.escpos.escposStrings.ITF = this.cast("ITF")
+  def ITF: typings.escpos.escposStrings.ITF = "ITF".asInstanceOf[typings.escpos.escposStrings.ITF]
   @scala.inline
-  def NW7: typings.escpos.escposStrings.NW7 = this.cast("NW7")
+  def NW7: typings.escpos.escposStrings.NW7 = "NW7".asInstanceOf[typings.escpos.escposStrings.NW7]
   @scala.inline
-  def UPC_A: typings.escpos.escposStrings.UPC_A = this.cast("UPC_A")
+  def UPC_A: typings.escpos.escposStrings.UPC_A = "UPC_A".asInstanceOf[typings.escpos.escposStrings.UPC_A]
   @scala.inline
-  def UPC_E: typings.escpos.escposStrings.UPC_E = this.cast("UPC_E")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UPC_E: typings.escpos.escposStrings.UPC_E = "UPC_E".asInstanceOf[typings.escpos.escposStrings.UPC_E]
 }
 

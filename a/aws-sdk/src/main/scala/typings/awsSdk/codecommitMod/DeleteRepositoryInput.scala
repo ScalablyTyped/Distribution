@@ -16,7 +16,6 @@ object DeleteRepositoryInput {
   @scala.inline
   def apply(repositoryName: RepositoryName): DeleteRepositoryInput = {
     val __obj = js.Dynamic.literal(repositoryName = repositoryName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteRepositoryInput]
   }
 }

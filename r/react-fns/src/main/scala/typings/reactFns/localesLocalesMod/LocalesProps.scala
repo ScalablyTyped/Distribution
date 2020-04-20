@@ -12,7 +12,6 @@ object LocalesProps {
   @scala.inline
   def apply(locale: String): LocalesProps = {
     val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LocalesProps]
   }
 }

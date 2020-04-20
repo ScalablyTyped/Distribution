@@ -13,12 +13,10 @@ trait RecordState extends js.Object
 
 object RecordState {
   @scala.inline
-  def EXISTENT: typings.relayRuntime.relayRuntimeStrings.EXISTENT = this.cast("EXISTENT")
+  def EXISTENT: typings.relayRuntime.relayRuntimeStrings.EXISTENT = "EXISTENT".asInstanceOf[typings.relayRuntime.relayRuntimeStrings.EXISTENT]
   @scala.inline
-  def NONEXISTENT: typings.relayRuntime.relayRuntimeStrings.NONEXISTENT = this.cast("NONEXISTENT")
+  def NONEXISTENT: typings.relayRuntime.relayRuntimeStrings.NONEXISTENT = "NONEXISTENT".asInstanceOf[typings.relayRuntime.relayRuntimeStrings.NONEXISTENT]
   @scala.inline
-  def UNKNOWN: typings.relayRuntime.relayRuntimeStrings.UNKNOWN = this.cast("UNKNOWN")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UNKNOWN: typings.relayRuntime.relayRuntimeStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.relayRuntime.relayRuntimeStrings.UNKNOWN]
 }
 

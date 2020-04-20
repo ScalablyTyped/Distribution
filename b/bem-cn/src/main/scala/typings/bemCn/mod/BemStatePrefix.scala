@@ -12,10 +12,8 @@ trait BemStatePrefix extends js.Object
 
 object BemStatePrefix {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `has-`: typings.bemCn.bemCnStrings.`has-` = "has-".asInstanceOf[typings.bemCn.bemCnStrings.`has-`]
   @scala.inline
-  def `has-`: typings.bemCn.bemCnStrings.`has-` = this.cast("has-")
-  @scala.inline
-  def `is-`: typings.bemCn.bemCnStrings.`is-` = this.cast("is-")
+  def `is-`: typings.bemCn.bemCnStrings.`is-` = "is-".asInstanceOf[typings.bemCn.bemCnStrings.`is-`]
 }
 

@@ -16,18 +16,16 @@ trait BusType extends js.Object
 
 object BusType {
   @scala.inline
-  def ATA: typings.drivelist.drivelistStrings.ATA = this.cast("ATA")
+  def ATA: typings.drivelist.drivelistStrings.ATA = "ATA".asInstanceOf[typings.drivelist.drivelistStrings.ATA]
   @scala.inline
-  def IDE: typings.drivelist.drivelistStrings.IDE = this.cast("IDE")
+  def IDE: typings.drivelist.drivelistStrings.IDE = "IDE".asInstanceOf[typings.drivelist.drivelistStrings.IDE]
   @scala.inline
-  def PCI: typings.drivelist.drivelistStrings.PCI = this.cast("PCI")
+  def PCI: typings.drivelist.drivelistStrings.PCI = "PCI".asInstanceOf[typings.drivelist.drivelistStrings.PCI]
   @scala.inline
-  def SATA: typings.drivelist.drivelistStrings.SATA = this.cast("SATA")
+  def SATA: typings.drivelist.drivelistStrings.SATA = "SATA".asInstanceOf[typings.drivelist.drivelistStrings.SATA]
   @scala.inline
-  def SCSI: typings.drivelist.drivelistStrings.SCSI = this.cast("SCSI")
+  def SCSI: typings.drivelist.drivelistStrings.SCSI = "SCSI".asInstanceOf[typings.drivelist.drivelistStrings.SCSI]
   @scala.inline
-  def UNKNOWN: typings.drivelist.drivelistStrings.UNKNOWN = this.cast("UNKNOWN")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UNKNOWN: typings.drivelist.drivelistStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.drivelist.drivelistStrings.UNKNOWN]
 }
 

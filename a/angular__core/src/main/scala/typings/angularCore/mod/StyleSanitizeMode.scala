@@ -32,14 +32,12 @@ trait StyleSanitizeMode extends js.Object
 object StyleSanitizeMode {
   /** Skip checking the property; just sanitize the value */
   @scala.inline
-  def SanitizeOnly: `2` = this.cast(2)
+  def SanitizeOnly: `2` = 2.asInstanceOf[`2`]
   /** Check the property and (if true) then sanitize the value */
   @scala.inline
-  def ValidateAndSanitize: `3` = this.cast(3)
+  def ValidateAndSanitize: `3` = 3.asInstanceOf[`3`]
   /** Just check to see if the property is required to be sanitized or not */
   @scala.inline
-  def ValidateProperty: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ValidateProperty: `1` = 1.asInstanceOf[`1`]
 }
 

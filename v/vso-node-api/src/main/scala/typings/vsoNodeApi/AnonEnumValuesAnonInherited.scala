@@ -12,7 +12,6 @@ object AnonEnumValuesAnonInherited {
   @scala.inline
   def apply(enumValues: AnonInherited): AnonEnumValuesAnonInherited = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumValuesAnonInherited]
   }
 }

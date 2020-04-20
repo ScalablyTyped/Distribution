@@ -14,7 +14,6 @@ object AnonEsSpecCompliant {
   @scala.inline
   def apply(esSpecCompliant: Boolean, multiline: String, singleline: String): AnonEsSpecCompliant = {
     val __obj = js.Dynamic.literal(esSpecCompliant = esSpecCompliant.asInstanceOf[js.Any], multiline = multiline.asInstanceOf[js.Any], singleline = singleline.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEsSpecCompliant]
   }
 }

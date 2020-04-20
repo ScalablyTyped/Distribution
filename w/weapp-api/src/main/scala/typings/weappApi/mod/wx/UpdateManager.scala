@@ -32,7 +32,6 @@ object UpdateManager {
     onUpdateReady: NoneParamCallback => Unit
   ): UpdateManager = {
     val __obj = js.Dynamic.literal(applyUpdate = js.Any.fromFunction1(applyUpdate), onCheckForUpdate = js.Any.fromFunction0(onCheckForUpdate), onUpdateFailed = js.Any.fromFunction1(onUpdateFailed), onUpdateReady = js.Any.fromFunction1(onUpdateReady))
-  
     __obj.asInstanceOf[UpdateManager]
   }
 }

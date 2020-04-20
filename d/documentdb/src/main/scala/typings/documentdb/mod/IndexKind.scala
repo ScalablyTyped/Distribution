@@ -13,12 +13,10 @@ trait IndexKind extends js.Object
 
 object IndexKind {
   @scala.inline
-  def Hash: typings.documentdb.documentdbStrings.Hash = this.cast("Hash")
+  def Hash: typings.documentdb.documentdbStrings.Hash = "Hash".asInstanceOf[typings.documentdb.documentdbStrings.Hash]
   @scala.inline
-  def Range: typings.documentdb.documentdbStrings.Range = this.cast("Range")
+  def Range: typings.documentdb.documentdbStrings.Range = "Range".asInstanceOf[typings.documentdb.documentdbStrings.Range]
   @scala.inline
-  def Spatial: typings.documentdb.documentdbStrings.Spatial = this.cast("Spatial")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Spatial: typings.documentdb.documentdbStrings.Spatial = "Spatial".asInstanceOf[typings.documentdb.documentdbStrings.Spatial]
 }
 

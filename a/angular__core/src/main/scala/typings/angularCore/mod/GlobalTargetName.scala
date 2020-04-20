@@ -14,12 +14,10 @@ trait GlobalTargetName extends js.Object
 
 object GlobalTargetName {
   @scala.inline
-  def body: typings.angularCore.angularCoreStrings.body = this.cast("body")
+  def body: typings.angularCore.angularCoreStrings.body = "body".asInstanceOf[typings.angularCore.angularCoreStrings.body]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def document: document_ = "document".asInstanceOf[document_]
   @scala.inline
-  def document: document_ = this.cast("document")
-  @scala.inline
-  def window: typings.angularCore.angularCoreStrings.window = this.cast("window")
+  def window: typings.angularCore.angularCoreStrings.window = "window".asInstanceOf[typings.angularCore.angularCoreStrings.window]
 }
 

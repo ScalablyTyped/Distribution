@@ -15,7 +15,6 @@ object Runtime {
   @scala.inline
   def apply(hosts: js.Array[Host], options: js.Any, target: String, task: String): Runtime = {
     val __obj = js.Dynamic.literal(hosts = hosts.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], task = task.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Runtime]
   }
 }

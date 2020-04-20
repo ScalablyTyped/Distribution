@@ -17,7 +17,6 @@ object AnonErrorDetails {
   @scala.inline
   def apply(errorDetails: String, isBrowserSupported: Boolean, isFrameworkInstalled: Boolean): AnonErrorDetails = {
     val __obj = js.Dynamic.literal(errorDetails = errorDetails.asInstanceOf[js.Any], isBrowserSupported = isBrowserSupported.asInstanceOf[js.Any], isFrameworkInstalled = isFrameworkInstalled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonErrorDetails]
   }
 }

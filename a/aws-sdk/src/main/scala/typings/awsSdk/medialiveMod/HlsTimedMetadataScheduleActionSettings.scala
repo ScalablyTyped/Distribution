@@ -16,7 +16,6 @@ object HlsTimedMetadataScheduleActionSettings {
   @scala.inline
   def apply(Id3: string): HlsTimedMetadataScheduleActionSettings = {
     val __obj = js.Dynamic.literal(Id3 = Id3.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HlsTimedMetadataScheduleActionSettings]
   }
 }

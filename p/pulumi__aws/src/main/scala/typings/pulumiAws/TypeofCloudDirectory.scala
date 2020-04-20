@@ -13,7 +13,6 @@ object TypeofCloudDirectory {
   @scala.inline
   def apply(Types: TypeofCloudDirectory): TypeofCloudDirectory = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofCloudDirectory]
   }
 }

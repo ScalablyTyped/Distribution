@@ -21,28 +21,26 @@ trait FontStretch extends js.Object
 
 object FontStretch {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def condensed: typings.reactNativeSvg.reactNativeSvgStrings.condensed = "condensed".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.condensed]
   @scala.inline
-  def condensed: typings.reactNativeSvg.reactNativeSvgStrings.condensed = this.cast("condensed")
+  def expanded: typings.reactNativeSvg.reactNativeSvgStrings.expanded = "expanded".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.expanded]
   @scala.inline
-  def expanded: typings.reactNativeSvg.reactNativeSvgStrings.expanded = this.cast("expanded")
+  def `extra-condensed`: typings.reactNativeSvg.reactNativeSvgStrings.`extra-condensed` = "extra-condensed".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.`extra-condensed`]
   @scala.inline
-  def `extra-condensed`: typings.reactNativeSvg.reactNativeSvgStrings.`extra-condensed` = this.cast("extra-condensed")
+  def `extra-expanded`: typings.reactNativeSvg.reactNativeSvgStrings.`extra-expanded` = "extra-expanded".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.`extra-expanded`]
   @scala.inline
-  def `extra-expanded`: typings.reactNativeSvg.reactNativeSvgStrings.`extra-expanded` = this.cast("extra-expanded")
+  def narrower: typings.reactNativeSvg.reactNativeSvgStrings.narrower = "narrower".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.narrower]
   @scala.inline
-  def narrower: typings.reactNativeSvg.reactNativeSvgStrings.narrower = this.cast("narrower")
+  def normal: typings.reactNativeSvg.reactNativeSvgStrings.normal = "normal".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.normal]
   @scala.inline
-  def normal: typings.reactNativeSvg.reactNativeSvgStrings.normal = this.cast("normal")
+  def `semi-condensed`: typings.reactNativeSvg.reactNativeSvgStrings.`semi-condensed` = "semi-condensed".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.`semi-condensed`]
   @scala.inline
-  def `semi-condensed`: typings.reactNativeSvg.reactNativeSvgStrings.`semi-condensed` = this.cast("semi-condensed")
+  def `semi-expanded`: typings.reactNativeSvg.reactNativeSvgStrings.`semi-expanded` = "semi-expanded".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.`semi-expanded`]
   @scala.inline
-  def `semi-expanded`: typings.reactNativeSvg.reactNativeSvgStrings.`semi-expanded` = this.cast("semi-expanded")
+  def `ultra-condensed`: typings.reactNativeSvg.reactNativeSvgStrings.`ultra-condensed` = "ultra-condensed".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.`ultra-condensed`]
   @scala.inline
-  def `ultra-condensed`: typings.reactNativeSvg.reactNativeSvgStrings.`ultra-condensed` = this.cast("ultra-condensed")
+  def `ultra-expanded`: typings.reactNativeSvg.reactNativeSvgStrings.`ultra-expanded` = "ultra-expanded".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.`ultra-expanded`]
   @scala.inline
-  def `ultra-expanded`: typings.reactNativeSvg.reactNativeSvgStrings.`ultra-expanded` = this.cast("ultra-expanded")
-  @scala.inline
-  def wider: typings.reactNativeSvg.reactNativeSvgStrings.wider = this.cast("wider")
+  def wider: typings.reactNativeSvg.reactNativeSvgStrings.wider = "wider".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.wider]
 }
 

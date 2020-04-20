@@ -21,28 +21,26 @@ trait TYPE extends js.Object
 
 object TYPE {
   @scala.inline
-  def Array: typings.parse.parseStrings.Array = this.cast("Array")
+  def Array: typings.parse.parseStrings.Array = "Array".asInstanceOf[typings.parse.parseStrings.Array]
   @scala.inline
-  def Boolean: typings.parse.parseStrings.Boolean = this.cast("Boolean")
+  def Boolean: typings.parse.parseStrings.Boolean = "Boolean".asInstanceOf[typings.parse.parseStrings.Boolean]
   @scala.inline
-  def Date: typings.parse.parseStrings.Date = this.cast("Date")
+  def Date: typings.parse.parseStrings.Date = "Date".asInstanceOf[typings.parse.parseStrings.Date]
   @scala.inline
-  def File: typings.parse.parseStrings.File = this.cast("File")
+  def File: typings.parse.parseStrings.File = "File".asInstanceOf[typings.parse.parseStrings.File]
   @scala.inline
-  def GeoPoint: typings.parse.parseStrings.GeoPoint = this.cast("GeoPoint")
+  def GeoPoint: typings.parse.parseStrings.GeoPoint = "GeoPoint".asInstanceOf[typings.parse.parseStrings.GeoPoint]
   @scala.inline
-  def Number: typings.parse.parseStrings.Number = this.cast("Number")
+  def Number: typings.parse.parseStrings.Number = "Number".asInstanceOf[typings.parse.parseStrings.Number]
   @scala.inline
-  def Object: typings.parse.parseStrings.Object = this.cast("Object")
+  def Object: typings.parse.parseStrings.Object = "Object".asInstanceOf[typings.parse.parseStrings.Object]
   @scala.inline
-  def Pointer: typings.parse.parseStrings.Pointer = this.cast("Pointer")
+  def Pointer: typings.parse.parseStrings.Pointer = "Pointer".asInstanceOf[typings.parse.parseStrings.Pointer]
   @scala.inline
-  def Polygon: typings.parse.parseStrings.Polygon = this.cast("Polygon")
+  def Polygon: typings.parse.parseStrings.Polygon = "Polygon".asInstanceOf[typings.parse.parseStrings.Polygon]
   @scala.inline
-  def Relation: typings.parse.parseStrings.Relation = this.cast("Relation")
+  def Relation: typings.parse.parseStrings.Relation = "Relation".asInstanceOf[typings.parse.parseStrings.Relation]
   @scala.inline
-  def String: typings.parse.parseStrings.String = this.cast("String")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def String: typings.parse.parseStrings.String = "String".asInstanceOf[typings.parse.parseStrings.String]
 }
 

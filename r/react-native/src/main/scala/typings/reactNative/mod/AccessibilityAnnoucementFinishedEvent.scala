@@ -13,7 +13,6 @@ object AccessibilityAnnoucementFinishedEvent {
   @scala.inline
   def apply(announcement: String, success: Boolean): AccessibilityAnnoucementFinishedEvent = {
     val __obj = js.Dynamic.literal(announcement = announcement.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AccessibilityAnnoucementFinishedEvent]
   }
 }

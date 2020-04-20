@@ -12,7 +12,6 @@ object AnonMissed {
   @scala.inline
   def apply(Missed: String): AnonMissed = {
     val __obj = js.Dynamic.literal(Missed = Missed.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMissed]
   }
 }

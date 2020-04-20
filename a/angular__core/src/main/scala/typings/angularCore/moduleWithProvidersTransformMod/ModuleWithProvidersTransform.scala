@@ -27,8 +27,10 @@ class ModuleWithProvidersTransform protected () extends js.Object {
     * cannot be resolved, add a TODO to alert the user.
     */
   var _getTypeOfResolvedValue: js.Any = js.native
-  /** Determine the generic type of a suspected ModuleWithProviders return type and add it
-    * explicitly */
+  /**
+    * Determine the generic type of a suspected ModuleWithProviders return type and add it
+    * explicitly
+    */
   var _migrateStaticNgModuleMethod: js.Any = js.native
   var _updateNode: js.Any = js.native
   /**

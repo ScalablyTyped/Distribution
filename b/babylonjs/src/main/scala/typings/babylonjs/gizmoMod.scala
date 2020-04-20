@@ -59,7 +59,7 @@ object gizmoMod extends js.Object {
       * Mesh that the gizmo will be attached to. (eg. on a drag gizmo the mesh that will be dragged)
       * * When set, interactions will be enabled
       */
-    def attachedMesh(): Nullable[AbstractMesh] = js.native
+    def attachedMesh: Nullable[AbstractMesh] = js.native
     def attachedMesh(value: Nullable[AbstractMesh]): js.Any = js.native
     /**
       * Releases all held resources

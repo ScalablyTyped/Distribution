@@ -22,18 +22,16 @@ trait MsoVerticalAnchor extends js.Object
 
 object MsoVerticalAnchor {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoAnchorBottom: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoAnchorBottom: `4` = this.cast(4)
+  def msoAnchorBottomBaseLine: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def msoAnchorBottomBaseLine: `5` = this.cast(5)
+  def msoAnchorMiddle: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoAnchorMiddle: `3` = this.cast(3)
+  def msoAnchorTop: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoAnchorTop: `1` = this.cast(1)
+  def msoAnchorTopBaseline: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoAnchorTopBaseline: `2` = this.cast(2)
-  @scala.inline
-  def msoVerticalAnchorMixed: `-2` = this.cast(-2)
+  def msoVerticalAnchorMixed: `-2` = -2.asInstanceOf[`-2`]
 }
 

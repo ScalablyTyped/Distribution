@@ -18,8 +18,8 @@ class ColorRectangleBase protected ()
      with IColorRectangle {
   def this(props: IColorRectangleProps) = this()
   var _descriptionId: js.Any = js.native
-  var _disableEvents: js.Any = js.native
-  var _events: js.Any = js.native
+  var _disposables: js.Any = js.native
+  var _disposeListeners: js.Any = js.native
   var _isAdjustingSaturation: js.Any = js.native
   var _onKeyDown: js.Any = js.native
   var _onMouseDown: js.Any = js.native

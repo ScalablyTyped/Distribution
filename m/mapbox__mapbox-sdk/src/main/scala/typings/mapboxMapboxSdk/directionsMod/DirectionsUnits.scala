@@ -12,10 +12,8 @@ trait DirectionsUnits extends js.Object
 
 object DirectionsUnits {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def imperial: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.imperial = "imperial".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.imperial]
   @scala.inline
-  def imperial: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.imperial = this.cast("imperial")
-  @scala.inline
-  def metric: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.metric = this.cast("metric")
+  def metric: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.metric = "metric".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.metric]
 }
 

@@ -42,7 +42,6 @@ object AnonAddAdd {
     renameRename: Double
   ): AnonAddAdd = {
     val __obj = js.Dynamic.literal(addAdd = addAdd.asInstanceOf[js.Any], addRename = addRename.asInstanceOf[js.Any], deleteEdit = deleteEdit.asInstanceOf[js.Any], deleteRename = deleteRename.asInstanceOf[js.Any], directoryChild = directoryChild.asInstanceOf[js.Any], directoryFile = directoryFile.asInstanceOf[js.Any], editDelete = editDelete.asInstanceOf[js.Any], editEdit = editEdit.asInstanceOf[js.Any], fileDirectory = fileDirectory.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], rename1to2 = rename1to2.asInstanceOf[js.Any], rename2to1 = rename2to1.asInstanceOf[js.Any], renameAdd = renameAdd.asInstanceOf[js.Any], renameDelete = renameDelete.asInstanceOf[js.Any], renameRename = renameRename.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAddAdd]
   }
 }

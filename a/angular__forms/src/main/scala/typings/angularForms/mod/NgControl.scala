@@ -23,14 +23,14 @@ abstract class NgControl () extends AbstractControlDirective {
     *
     * @throws An exception that this method is not implemented
     */
-  def asyncValidator(): AsyncValidatorFn | Null = js.native
+  def asyncValidator: AsyncValidatorFn | Null = js.native
   /**
     * @description
     * The registered synchronous validator function for the control
     *
     * @throws An exception that this method is not implemented
     */
-  def validator(): ValidatorFn | Null = js.native
+  def validator: ValidatorFn | Null = js.native
   /**
     * @description
     * The callback method to update the model from the view when requested

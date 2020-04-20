@@ -12,7 +12,6 @@ object IDataManager {
   @scala.inline
   def apply(events: IEventManager, get: (String, js.Object) => js.Object): IDataManager = {
     val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], get = js.Any.fromFunction2(get))
-  
     __obj.asInstanceOf[IDataManager]
   }
 }

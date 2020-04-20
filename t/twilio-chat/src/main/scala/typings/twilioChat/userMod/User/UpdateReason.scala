@@ -14,14 +14,12 @@ trait UpdateReason extends js.Object
 
 object UpdateReason {
   @scala.inline
-  def attributes: typings.twilioChat.twilioChatStrings.attributes = this.cast("attributes")
+  def attributes: typings.twilioChat.twilioChatStrings.attributes = "attributes".asInstanceOf[typings.twilioChat.twilioChatStrings.attributes]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def friendlyName: typings.twilioChat.twilioChatStrings.friendlyName = "friendlyName".asInstanceOf[typings.twilioChat.twilioChatStrings.friendlyName]
   @scala.inline
-  def friendlyName: typings.twilioChat.twilioChatStrings.friendlyName = this.cast("friendlyName")
+  def notifiable: typings.twilioChat.twilioChatStrings.notifiable = "notifiable".asInstanceOf[typings.twilioChat.twilioChatStrings.notifiable]
   @scala.inline
-  def notifiable: typings.twilioChat.twilioChatStrings.notifiable = this.cast("notifiable")
-  @scala.inline
-  def online: typings.twilioChat.twilioChatStrings.online = this.cast("online")
+  def online: typings.twilioChat.twilioChatStrings.online = "online".asInstanceOf[typings.twilioChat.twilioChatStrings.online]
 }
 

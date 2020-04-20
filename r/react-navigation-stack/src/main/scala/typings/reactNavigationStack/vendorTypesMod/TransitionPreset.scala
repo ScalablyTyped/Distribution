@@ -33,7 +33,6 @@ object TransitionPreset {
     transitionSpec: AnonClose
   ): TransitionPreset = {
     val __obj = js.Dynamic.literal(cardStyleInterpolator = js.Any.fromFunction1(cardStyleInterpolator), gestureDirection = gestureDirection.asInstanceOf[js.Any], headerStyleInterpolator = js.Any.fromFunction1(headerStyleInterpolator), transitionSpec = transitionSpec.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TransitionPreset]
   }
 }

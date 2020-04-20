@@ -19,7 +19,6 @@ object ConnectionFailed {
   @scala.inline
   def apply(message: String): ConnectionFailed = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConnectionFailed]
   }
 }

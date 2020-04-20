@@ -13,7 +13,6 @@ object UpateCollectionResult {
   @scala.inline
   def apply(stats: AnonUpdated): UpateCollectionResult = {
     val __obj = js.Dynamic.literal(stats = stats.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpateCollectionResult]
   }
 }

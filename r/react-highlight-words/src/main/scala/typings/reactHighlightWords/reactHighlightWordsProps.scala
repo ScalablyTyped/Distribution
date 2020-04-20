@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactHighlightWordsProps {
   @scala.inline
-  def ReactHighlightWordsProps: HighlighterProps.type = typings.reactHighlightWords.mod.HighlighterProps
+  def ReactHighlightWordsProps: HighlighterProps.type = HighlighterProps
   type ReactHighlightWordsProps = HighlighterProps
 }
 

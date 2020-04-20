@@ -21,7 +21,6 @@ object TabControlTabClickEventArgs {
     tab: BootstrapTab
   ): TabControlTabClickEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], htmlElement = htmlElement.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any], reloadContentOnCallback = reloadContentOnCallback.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], tab = tab.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TabControlTabClickEventArgs]
   }
 }

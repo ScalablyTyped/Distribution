@@ -37,7 +37,6 @@ object AnonEditorSuggestions {
     tagSuggestions: js.Array[AnonCategoryRestricts]
   ): AnonEditorSuggestions = {
     val __obj = js.Dynamic.literal(editorSuggestions = editorSuggestions.asInstanceOf[js.Any], processingErrors = processingErrors.asInstanceOf[js.Any], processingHints = processingHints.asInstanceOf[js.Any], processingWarnings = processingWarnings.asInstanceOf[js.Any], tagSuggestions = tagSuggestions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEditorSuggestions]
   }
 }

@@ -23,7 +23,7 @@ abstract class SelectorSource protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FSelectorSource: IModel = js.native
-  def containerAsAssociationWidget(): AssociationWidget = js.native
+  def containerAsAssociationWidget: AssociationWidget = js.native
 }
 
 /* static members */

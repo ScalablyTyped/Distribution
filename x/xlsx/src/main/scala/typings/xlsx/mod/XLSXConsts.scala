@@ -21,7 +21,6 @@ object XLSXConsts {
   @scala.inline
   def apply(SHEET_HIDDEN: `1`, SHEET_VERYHIDDEN: `2`, SHEET_VISIBLE: `0`): XLSXConsts = {
     val __obj = js.Dynamic.literal(SHEET_HIDDEN = SHEET_HIDDEN.asInstanceOf[js.Any], SHEET_VERYHIDDEN = SHEET_VERYHIDDEN.asInstanceOf[js.Any], SHEET_VISIBLE = SHEET_VISIBLE.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[XLSXConsts]
   }
 }

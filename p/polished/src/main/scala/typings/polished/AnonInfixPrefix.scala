@@ -16,7 +16,6 @@ object AnonInfixPrefix {
   @scala.inline
   def apply(infix: AnonFNotation, prefix: AnonNotationPrecedence, regSymbol: `-_`, symbol: `-_`): AnonInfixPrefix = {
     val __obj = js.Dynamic.literal(infix = infix.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], regSymbol = regSymbol.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonInfixPrefix]
   }
 }

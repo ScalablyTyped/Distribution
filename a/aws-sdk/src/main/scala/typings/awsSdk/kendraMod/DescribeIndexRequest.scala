@@ -16,7 +16,6 @@ object DescribeIndexRequest {
   @scala.inline
   def apply(Id: IndexId): DescribeIndexRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeIndexRequest]
   }
 }

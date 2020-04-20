@@ -35,7 +35,7 @@ class StringDictionary[T] () extends js.Object {
   /**
     * Gets the current count
     */
-  def count(): Double = js.native
+  def count: Double = js.native
   /**
     * Execute a callback on every occurrence of the dictionary until it returns a valid TRes object.
     * If the callback returns null or undefined the method will iterate to the next key/value pair

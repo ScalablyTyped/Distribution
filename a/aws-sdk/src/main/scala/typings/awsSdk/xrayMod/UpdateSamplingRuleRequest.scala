@@ -16,7 +16,6 @@ object UpdateSamplingRuleRequest {
   @scala.inline
   def apply(SamplingRuleUpdate: SamplingRuleUpdate): UpdateSamplingRuleRequest = {
     val __obj = js.Dynamic.literal(SamplingRuleUpdate = SamplingRuleUpdate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateSamplingRuleRequest]
   }
 }

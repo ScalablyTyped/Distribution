@@ -22,18 +22,16 @@ trait OlContextMenu extends js.Object
 
 object OlContextMenu {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olAttachmentContextMenu: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def olAttachmentContextMenu: `3` = this.cast(3)
+  def olFolderContextMenu: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olFolderContextMenu: `2` = this.cast(2)
+  def olItemContextMenu: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def olItemContextMenu: `0` = this.cast(0)
+  def olShortcutContextMenu: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def olShortcutContextMenu: `5` = this.cast(5)
+  def olStoreContextMenu: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def olStoreContextMenu: `4` = this.cast(4)
-  @scala.inline
-  def olViewContextMenu: `1` = this.cast(1)
+  def olViewContextMenu: `1` = 1.asInstanceOf[`1`]
 }
 

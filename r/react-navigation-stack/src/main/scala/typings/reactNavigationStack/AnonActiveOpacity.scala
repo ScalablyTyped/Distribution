@@ -13,7 +13,6 @@ object AnonActiveOpacity {
   @scala.inline
   def apply(activeOpacity: Double, borderless: Boolean): AnonActiveOpacity = {
     val __obj = js.Dynamic.literal(activeOpacity = activeOpacity.asInstanceOf[js.Any], borderless = borderless.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonActiveOpacity]
   }
 }

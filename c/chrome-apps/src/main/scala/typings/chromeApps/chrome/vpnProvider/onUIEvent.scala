@@ -4,6 +4,8 @@ import org.scalablytyped.runtime.TopLevel
 import typings.chromeApps.AnonSHOWADDDIALOG
 import typings.chromeApps.chrome.ToStringLiteral
 import typings.chromeApps.chrome.events.Event
+import typings.chromeApps.chromeAppsStrings.SHOW_ADD_DIALOG
+import typings.chromeApps.chromeAppsStrings.SHOW_CONFIGURE_DIALOG
 import typings.chromeApps.chromeAppsStrings.showAddDialog
 import typings.chromeApps.chromeAppsStrings.showConfigureDialog
 import typings.std.Exclude
@@ -21,7 +23,11 @@ object onUIEvent
   extends TopLevel[
       Event[
         js.Function2[
-          /* event */ ToStringLiteral[AnonSHOWADDDIALOG, String, Exclude[String, showAddDialog | showConfigureDialog]], 
+          /* event */ ToStringLiteral[
+            AnonSHOWADDDIALOG, 
+            SHOW_ADD_DIALOG | SHOW_CONFIGURE_DIALOG, 
+            Exclude[SHOW_ADD_DIALOG | SHOW_CONFIGURE_DIALOG, showAddDialog | showConfigureDialog]
+          ], 
           /* id */ js.UndefOr[String], 
           Unit
         ]

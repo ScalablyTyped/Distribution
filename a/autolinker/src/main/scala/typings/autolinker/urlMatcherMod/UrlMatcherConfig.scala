@@ -22,7 +22,6 @@ object UrlMatcherConfig {
     tagBuilder: AnchorTagBuilder
   ): UrlMatcherConfig = {
     val __obj = js.Dynamic.literal(decodePercentEncoding = decodePercentEncoding.asInstanceOf[js.Any], stripPrefix = stripPrefix.asInstanceOf[js.Any], stripTrailingSlash = stripTrailingSlash.asInstanceOf[js.Any], tagBuilder = tagBuilder.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UrlMatcherConfig]
   }
 }

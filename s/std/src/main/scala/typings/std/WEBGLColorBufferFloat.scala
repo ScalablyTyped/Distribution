@@ -18,7 +18,6 @@ object WEBGLColorBufferFloat {
     UNSIGNED_NORMALIZED_EXT: GLenum
   ): WEBGLColorBufferFloat = {
     val __obj = js.Dynamic.literal(FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT = FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT.asInstanceOf[js.Any], RGBA32F_EXT = RGBA32F_EXT.asInstanceOf[js.Any], UNSIGNED_NORMALIZED_EXT = UNSIGNED_NORMALIZED_EXT.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WEBGLColorBufferFloat]
   }
 }

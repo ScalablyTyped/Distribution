@@ -13,7 +13,6 @@ object Snapshot {
   @scala.inline
   def apply(windows: js.Array[WindowOption]): Snapshot = {
     val __obj = js.Dynamic.literal(windows = windows.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Snapshot]
   }
 }

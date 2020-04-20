@@ -23,7 +23,6 @@ object CompaniesResource {
     list: AnonCompanyName => Request_[ListCompaniesResponse]
   ): CompaniesResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), leads = leads.asInstanceOf[js.Any], list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[CompaniesResource]
   }
 }

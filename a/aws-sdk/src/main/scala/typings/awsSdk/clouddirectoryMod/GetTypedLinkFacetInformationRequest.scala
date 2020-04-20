@@ -20,7 +20,6 @@ object GetTypedLinkFacetInformationRequest {
   @scala.inline
   def apply(Name: TypedLinkName, SchemaArn: Arn): GetTypedLinkFacetInformationRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], SchemaArn = SchemaArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetTypedLinkFacetInformationRequest]
   }
 }

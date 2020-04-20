@@ -14,10 +14,8 @@ trait MsoFileValidationMode extends js.Object
 
 object MsoFileValidationMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoFileValidationDefault: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def msoFileValidationDefault: `0` = this.cast(0)
-  @scala.inline
-  def msoFileValidationSkip: `1` = this.cast(1)
+  def msoFileValidationSkip: `1` = 1.asInstanceOf[`1`]
 }
 

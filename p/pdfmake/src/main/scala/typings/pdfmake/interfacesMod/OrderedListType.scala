@@ -15,16 +15,14 @@ trait OrderedListType extends js.Object
 
 object OrderedListType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `lower-alpha`: typings.pdfmake.pdfmakeStrings.`lower-alpha` = "lower-alpha".asInstanceOf[typings.pdfmake.pdfmakeStrings.`lower-alpha`]
   @scala.inline
-  def `lower-alpha`: typings.pdfmake.pdfmakeStrings.`lower-alpha` = this.cast("lower-alpha")
+  def `lower-roman`: typings.pdfmake.pdfmakeStrings.`lower-roman` = "lower-roman".asInstanceOf[typings.pdfmake.pdfmakeStrings.`lower-roman`]
   @scala.inline
-  def `lower-roman`: typings.pdfmake.pdfmakeStrings.`lower-roman` = this.cast("lower-roman")
+  def none: typings.pdfmake.pdfmakeStrings.none = "none".asInstanceOf[typings.pdfmake.pdfmakeStrings.none]
   @scala.inline
-  def none: typings.pdfmake.pdfmakeStrings.none = this.cast("none")
+  def `upper-alpha`: typings.pdfmake.pdfmakeStrings.`upper-alpha` = "upper-alpha".asInstanceOf[typings.pdfmake.pdfmakeStrings.`upper-alpha`]
   @scala.inline
-  def `upper-alpha`: typings.pdfmake.pdfmakeStrings.`upper-alpha` = this.cast("upper-alpha")
-  @scala.inline
-  def `upper-roman`: typings.pdfmake.pdfmakeStrings.`upper-roman` = this.cast("upper-roman")
+  def `upper-roman`: typings.pdfmake.pdfmakeStrings.`upper-roman` = "upper-roman".asInstanceOf[typings.pdfmake.pdfmakeStrings.`upper-roman`]
 }
 

@@ -51,26 +51,26 @@ class PositionGizmo () extends Gizmo {
     * Internal gizmo used for interactions on the xy plane
     */
   var zPlaneGizmo: PlaneDragGizmo = js.native
-  def planarGizmoEnabled(): Boolean = js.native
+  def planarGizmoEnabled: Boolean = js.native
   /**
     * If the planar drag gizmo is enabled
     * setting this will enable/disable XY, XZ and YZ planes regardless of individual gizmo settings.
     */
   def planarGizmoEnabled(value: Boolean): js.Any = js.native
   @JSName("scaleRatio")
-  def scaleRatio_MPositionGizmo(): Double = js.native
+  def scaleRatio_MPositionGizmo: Double = js.native
   /**
     * Ratio for the scale of the gizmo (Default: 1)
     */
   @JSName("scaleRatio")
   def scaleRatio_MPositionGizmo(value: Double): js.Any = js.native
-  def snapDistance(): Double = js.native
+  def snapDistance: Double = js.native
   /**
     * Drag distance in babylon units that the gizmo will snap to when dragged (Default: 0)
     */
   def snapDistance(value: Double): js.Any = js.native
   @JSName("updateGizmoRotationToMatchAttachedMesh")
-  def updateGizmoRotationToMatchAttachedMesh_MPositionGizmo(): Boolean = js.native
+  def updateGizmoRotationToMatchAttachedMesh_MPositionGizmo: Boolean = js.native
   @JSName("updateGizmoRotationToMatchAttachedMesh")
   def updateGizmoRotationToMatchAttachedMesh_MPositionGizmo(value: Boolean): js.Any = js.native
 }

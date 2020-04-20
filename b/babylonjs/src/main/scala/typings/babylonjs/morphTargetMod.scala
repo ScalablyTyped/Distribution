@@ -62,7 +62,7 @@ object morphTargetMod extends js.Object {
     /**
       * Gets or sets the animation properties override
       */
-    def animationPropertiesOverride(): Nullable[AnimationPropertiesOverride] = js.native
+    def animationPropertiesOverride: Nullable[AnimationPropertiesOverride] = js.native
     def animationPropertiesOverride(value: Nullable[AnimationPropertiesOverride]): js.Any = js.native
     /**
       * Returns the string "MorphTarget"
@@ -92,23 +92,23 @@ object morphTargetMod extends js.Object {
     /**
       * Gets a boolean defining if the target contains normal data
       */
-    def hasNormals(): Boolean = js.native
+    def hasNormals: Boolean = js.native
     /**
       * Gets a boolean defining if the target contains position data
       */
-    def hasPositions(): Boolean = js.native
+    def hasPositions: Boolean = js.native
     /**
       * Gets a boolean defining if the target contains tangent data
       */
-    def hasTangents(): Boolean = js.native
+    def hasTangents: Boolean = js.native
     /**
       * Gets a boolean defining if the target contains texture coordinates data
       */
-    def hasUVs(): Boolean = js.native
+    def hasUVs: Boolean = js.native
     /**
       * Gets or sets the influence of this target (ie. its weight in the overall morphing)
       */
-    def influence(): Double = js.native
+    def influence: Double = js.native
     def influence(influence: Double): js.Any = js.native
     /**
       * Serializes the current target into a Serialization object
@@ -138,7 +138,7 @@ object morphTargetMod extends js.Object {
     /**
       * Gets the unique ID of this manager
       */
-    def uniqueId(): Double = js.native
+    def uniqueId: Double = js.native
   }
   
   /* static members */

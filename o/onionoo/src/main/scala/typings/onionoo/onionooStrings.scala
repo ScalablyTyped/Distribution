@@ -55,7 +55,7 @@ object onionooStrings {
   @scala.inline
   def experimental: experimental = "experimental".asInstanceOf[experimental]
   @scala.inline
-  def `new in series`: `new in series` = "new in series".asInstanceOf[`new in series`]
+  def `new in series`: `new in series` = ("new in series").asInstanceOf[`new in series`]
   @scala.inline
   def obsolete: obsolete = "obsolete".asInstanceOf[obsolete]
   @scala.inline

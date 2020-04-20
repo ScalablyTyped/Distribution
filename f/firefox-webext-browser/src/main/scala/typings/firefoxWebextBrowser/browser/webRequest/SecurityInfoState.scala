@@ -14,14 +14,12 @@ trait SecurityInfoState extends js.Object
 
 object SecurityInfoState {
   @scala.inline
-  def broken: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.broken = this.cast("broken")
+  def broken: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.broken = "broken".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.broken]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def insecure: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.insecure = "insecure".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.insecure]
   @scala.inline
-  def insecure: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.insecure = this.cast("insecure")
+  def secure: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.secure = "secure".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.secure]
   @scala.inline
-  def secure: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.secure = this.cast("secure")
-  @scala.inline
-  def weak: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.weak = this.cast("weak")
+  def weak: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.weak = "weak".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.weak]
 }
 

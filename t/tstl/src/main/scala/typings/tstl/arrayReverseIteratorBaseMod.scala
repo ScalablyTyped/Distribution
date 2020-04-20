@@ -41,7 +41,7 @@ object arrayReverseIteratorBaseMod extends js.Object {
       * @inheritDoc
       */
     @JSName("value")
-    def value_MArrayReverseIteratorBase(): T = js.native
+    def value_MArrayReverseIteratorBase: T = js.native
     /**
       * @inheritDoc
       */

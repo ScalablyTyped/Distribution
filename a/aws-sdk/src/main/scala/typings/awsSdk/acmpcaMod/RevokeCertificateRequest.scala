@@ -24,7 +24,6 @@ object RevokeCertificateRequest {
   @scala.inline
   def apply(CertificateAuthorityArn: Arn, CertificateSerial: String128, RevocationReason: RevocationReason): RevokeCertificateRequest = {
     val __obj = js.Dynamic.literal(CertificateAuthorityArn = CertificateAuthorityArn.asInstanceOf[js.Any], CertificateSerial = CertificateSerial.asInstanceOf[js.Any], RevocationReason = RevocationReason.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RevokeCertificateRequest]
   }
 }

@@ -13,7 +13,6 @@ object AnonProjection {
   @scala.inline
   def apply(projection: Matrix): AnonProjection = {
     val __obj = js.Dynamic.literal(projection = projection.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonProjection]
   }
 }

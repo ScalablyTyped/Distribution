@@ -13,7 +13,6 @@ object AnonBindingKey {
   @scala.inline
   def apply(bindingKey: String, destinationType: String): AnonBindingKey = {
     val __obj = js.Dynamic.literal(bindingKey = bindingKey.asInstanceOf[js.Any], destinationType = destinationType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBindingKey]
   }
 }

@@ -29,7 +29,6 @@ object ContentWindow {
   @scala.inline
   def apply(postMessage: (js.Any, String) => Unit): ContentWindow = {
     val __obj = js.Dynamic.literal(postMessage = js.Any.fromFunction2(postMessage))
-  
     __obj.asInstanceOf[ContentWindow]
   }
 }

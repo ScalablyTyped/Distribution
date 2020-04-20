@@ -15,7 +15,6 @@ object FileIconOptions {
   @scala.inline
   def apply(size: small | normal | large): FileIconOptions = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FileIconOptions]
   }
 }

@@ -14,14 +14,12 @@ trait DefenderScanType extends js.Object
 
 object DefenderScanType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def disabled: typings.microsoftGraph.microsoftGraphStrings.disabled = "disabled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.disabled]
   @scala.inline
-  def disabled: typings.microsoftGraph.microsoftGraphStrings.disabled = this.cast("disabled")
+  def full: typings.microsoftGraph.microsoftGraphStrings.full = "full".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.full]
   @scala.inline
-  def full: typings.microsoftGraph.microsoftGraphStrings.full = this.cast("full")
+  def quick: typings.microsoftGraph.microsoftGraphStrings.quick = "quick".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.quick]
   @scala.inline
-  def quick: typings.microsoftGraph.microsoftGraphStrings.quick = this.cast("quick")
-  @scala.inline
-  def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = this.cast("userDefined")
+  def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userDefined]
 }
 

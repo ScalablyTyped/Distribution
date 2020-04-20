@@ -16,7 +16,6 @@ object QueueResponse {
     headers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Dictionary<string> */ js.Any
   ): QueueResponse = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[QueueResponse]
   }
 }

@@ -26,7 +26,6 @@ object IEventDispatcher {
     removeEventListener: (Type, Listener[T, SourceT, IteratorT, ReverseT]) => Unit
   ): IEventDispatcher[T, SourceT, IteratorT, ReverseT] = {
     val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), dispatchEvent = js.Any.fromFunction1(dispatchEvent), hasEventListener = js.Any.fromFunction1(hasEventListener), removeEventListener = js.Any.fromFunction2(removeEventListener))
-  
     __obj.asInstanceOf[IEventDispatcher[T, SourceT, IteratorT, ReverseT]]
   }
 }

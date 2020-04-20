@@ -16,7 +16,6 @@ object CreateProvisioningClaimRequest {
   @scala.inline
   def apply(templateName: TemplateName): CreateProvisioningClaimRequest = {
     val __obj = js.Dynamic.literal(templateName = templateName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateProvisioningClaimRequest]
   }
 }

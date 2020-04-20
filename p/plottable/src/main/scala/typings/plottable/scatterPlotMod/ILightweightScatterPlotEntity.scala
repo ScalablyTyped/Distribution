@@ -27,7 +27,6 @@ object ILightweightScatterPlotEntity {
     validDatumIndex: Double
   ): ILightweightScatterPlotEntity = {
     val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], dataset = dataset.asInstanceOf[js.Any], datasetIndex = datasetIndex.asInstanceOf[js.Any], datum = datum.asInstanceOf[js.Any], diameter = diameter.asInstanceOf[js.Any], drawer = drawer.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], validDatumIndex = validDatumIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ILightweightScatterPlotEntity]
   }
 }

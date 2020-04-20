@@ -12,7 +12,6 @@ object SecurityInfoData {
   @scala.inline
   def apply(AVSResult: AVSResult): SecurityInfoData = {
     val __obj = js.Dynamic.literal(AVSResult = AVSResult.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SecurityInfoData]
   }
 }

@@ -19,7 +19,6 @@ object CardImage {
   @scala.inline
   def apply(largeImageUrl: String, smallImageUrl: String): CardImage = {
     val __obj = js.Dynamic.literal(largeImageUrl = largeImageUrl.asInstanceOf[js.Any], smallImageUrl = smallImageUrl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CardImage]
   }
 }

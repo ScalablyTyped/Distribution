@@ -17,18 +17,16 @@ trait FreeBusyStatus extends js.Object
 
 object FreeBusyStatus {
   @scala.inline
-  def busy: typings.microsoftGraph.microsoftGraphStrings.busy = this.cast("busy")
+  def busy: typings.microsoftGraph.microsoftGraphStrings.busy = "busy".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.busy]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def free: typings.microsoftGraph.microsoftGraphStrings.free = "free".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.free]
   @scala.inline
-  def free: typings.microsoftGraph.microsoftGraphStrings.free = this.cast("free")
+  def oof: typings.microsoftGraph.microsoftGraphStrings.oof = "oof".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.oof]
   @scala.inline
-  def oof: typings.microsoftGraph.microsoftGraphStrings.oof = this.cast("oof")
+  def tentative: typings.microsoftGraph.microsoftGraphStrings.tentative = "tentative".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.tentative]
   @scala.inline
-  def tentative: typings.microsoftGraph.microsoftGraphStrings.tentative = this.cast("tentative")
+  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
-  @scala.inline
-  def workingElsewhere: typings.microsoftGraph.microsoftGraphStrings.workingElsewhere = this.cast("workingElsewhere")
+  def workingElsewhere: typings.microsoftGraph.microsoftGraphStrings.workingElsewhere = "workingElsewhere".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.workingElsewhere]
 }
 

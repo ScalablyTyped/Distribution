@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactTableFilterProps {
   @scala.inline
-  def TableFilterProps: TabfilterProps.type = typings.reactTableFilter.mod.TabfilterProps
+  def TableFilterProps: TabfilterProps.type = TabfilterProps
   type TableFilterProps = TabfilterProps
 }
 

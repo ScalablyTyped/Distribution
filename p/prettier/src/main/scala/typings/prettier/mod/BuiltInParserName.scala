@@ -29,44 +29,42 @@ trait BuiltInParserName extends js.Object
 
 object BuiltInParserName {
   @scala.inline
-  def angular: typings.prettier.prettierStrings.angular = this.cast("angular")
+  def angular: typings.prettier.prettierStrings.angular = "angular".asInstanceOf[typings.prettier.prettierStrings.angular]
   @scala.inline
-  def babel: typings.prettier.prettierStrings.babel = this.cast("babel")
+  def babel: typings.prettier.prettierStrings.babel = "babel".asInstanceOf[typings.prettier.prettierStrings.babel]
   @scala.inline
-  def `babel-flow`: typings.prettier.prettierStrings.`babel-flow` = this.cast("babel-flow")
+  def `babel-flow`: typings.prettier.prettierStrings.`babel-flow` = "babel-flow".asInstanceOf[typings.prettier.prettierStrings.`babel-flow`]
   @scala.inline
-  def `babel-ts`: typings.prettier.prettierStrings.`babel-ts` = this.cast("babel-ts")
+  def `babel-ts`: typings.prettier.prettierStrings.`babel-ts` = "babel-ts".asInstanceOf[typings.prettier.prettierStrings.`babel-ts`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def css: typings.prettier.prettierStrings.css = "css".asInstanceOf[typings.prettier.prettierStrings.css]
   @scala.inline
-  def css: typings.prettier.prettierStrings.css = this.cast("css")
+  def flow: typings.prettier.prettierStrings.flow = "flow".asInstanceOf[typings.prettier.prettierStrings.flow]
   @scala.inline
-  def flow: typings.prettier.prettierStrings.flow = this.cast("flow")
+  def graphql: typings.prettier.prettierStrings.graphql = "graphql".asInstanceOf[typings.prettier.prettierStrings.graphql]
   @scala.inline
-  def graphql: typings.prettier.prettierStrings.graphql = this.cast("graphql")
+  def html: typings.prettier.prettierStrings.html = "html".asInstanceOf[typings.prettier.prettierStrings.html]
   @scala.inline
-  def html: typings.prettier.prettierStrings.html = this.cast("html")
+  def json: typings.prettier.prettierStrings.json = "json".asInstanceOf[typings.prettier.prettierStrings.json]
   @scala.inline
-  def json: typings.prettier.prettierStrings.json = this.cast("json")
+  def `json-stringify`: typings.prettier.prettierStrings.`json-stringify` = "json-stringify".asInstanceOf[typings.prettier.prettierStrings.`json-stringify`]
   @scala.inline
-  def `json-stringify`: typings.prettier.prettierStrings.`json-stringify` = this.cast("json-stringify")
+  def json5: typings.prettier.prettierStrings.json5 = "json5".asInstanceOf[typings.prettier.prettierStrings.json5]
   @scala.inline
-  def json5: typings.prettier.prettierStrings.json5 = this.cast("json5")
+  def less: typings.prettier.prettierStrings.less = "less".asInstanceOf[typings.prettier.prettierStrings.less]
   @scala.inline
-  def less: typings.prettier.prettierStrings.less = this.cast("less")
+  def lwc: typings.prettier.prettierStrings.lwc = "lwc".asInstanceOf[typings.prettier.prettierStrings.lwc]
   @scala.inline
-  def lwc: typings.prettier.prettierStrings.lwc = this.cast("lwc")
+  def markdown: typings.prettier.prettierStrings.markdown = "markdown".asInstanceOf[typings.prettier.prettierStrings.markdown]
   @scala.inline
-  def markdown: typings.prettier.prettierStrings.markdown = this.cast("markdown")
+  def mdx: typings.prettier.prettierStrings.mdx = "mdx".asInstanceOf[typings.prettier.prettierStrings.mdx]
   @scala.inline
-  def mdx: typings.prettier.prettierStrings.mdx = this.cast("mdx")
+  def scss: typings.prettier.prettierStrings.scss = "scss".asInstanceOf[typings.prettier.prettierStrings.scss]
   @scala.inline
-  def scss: typings.prettier.prettierStrings.scss = this.cast("scss")
+  def typescript: typings.prettier.prettierStrings.typescript = "typescript".asInstanceOf[typings.prettier.prettierStrings.typescript]
   @scala.inline
-  def typescript: typings.prettier.prettierStrings.typescript = this.cast("typescript")
+  def vue: typings.prettier.prettierStrings.vue = "vue".asInstanceOf[typings.prettier.prettierStrings.vue]
   @scala.inline
-  def vue: typings.prettier.prettierStrings.vue = this.cast("vue")
-  @scala.inline
-  def yaml: typings.prettier.prettierStrings.yaml = this.cast("yaml")
+  def yaml: typings.prettier.prettierStrings.yaml = "yaml".asInstanceOf[typings.prettier.prettierStrings.yaml]
 }
 

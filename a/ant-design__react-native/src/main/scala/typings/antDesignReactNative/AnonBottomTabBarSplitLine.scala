@@ -20,7 +20,6 @@ object AnonBottomTabBarSplitLine {
     topTabBarSplitLine: RegisteredStyle[ViewStyle]
   ): AnonBottomTabBarSplitLine = {
     val __obj = js.Dynamic.literal(bottomTabBarSplitLine = bottomTabBarSplitLine.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], topTabBarSplitLine = topTabBarSplitLine.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBottomTabBarSplitLine]
   }
 }

@@ -18,7 +18,7 @@ class Body () extends js.Object {
   var size: Double = js.native
   var timeout: Double = js.native
   def arrayBuffer(): js.Promise[ArrayBuffer] = js.native
-  def blob(): js.Promise[Buffer] = js.native
+  def blob(): js.Promise[Blob] = js.native
   def buffer(): js.Promise[Buffer] = js.native
   def json(): js.Promise[_] = js.native
   def text(): js.Promise[String] = js.native

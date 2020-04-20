@@ -16,7 +16,6 @@ object RawMessage {
   @scala.inline
   def apply(Data: RawMessageData): RawMessage = {
     val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RawMessage]
   }
 }

@@ -23,7 +23,6 @@ object RecipientEncryptedKey {
     toSchema: () => js.Any
   ): RecipientEncryptedKey = {
     val __obj = js.Dynamic.literal(encryptedKey = encryptedKey.asInstanceOf[js.Any], fromSchema = js.Any.fromFunction1(fromSchema), rid = rid.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
-  
     __obj.asInstanceOf[RecipientEncryptedKey]
   }
 }

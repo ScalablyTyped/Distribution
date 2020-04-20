@@ -13,10 +13,8 @@ trait OpenDirectionShape extends js.Object
 
 object OpenDirectionShape {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def down: typings.reactDates.reactDatesStrings.down = "down".asInstanceOf[typings.reactDates.reactDatesStrings.down]
   @scala.inline
-  def down: typings.reactDates.reactDatesStrings.down = this.cast("down")
-  @scala.inline
-  def up: typings.reactDates.reactDatesStrings.up = this.cast("up")
+  def up: typings.reactDates.reactDatesStrings.up = "up".asInstanceOf[typings.reactDates.reactDatesStrings.up]
 }
 

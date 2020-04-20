@@ -14,7 +14,6 @@ object ORawExpression {
   @scala.inline
   def apply(as: String => ORawExpression, db: ODB, value: String): ORawExpression = {
     val __obj = js.Dynamic.literal(as = js.Any.fromFunction1(as), db = db.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ORawExpression]
   }
 }

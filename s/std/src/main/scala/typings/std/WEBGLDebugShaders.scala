@@ -12,7 +12,6 @@ object WEBGLDebugShaders {
   @scala.inline
   def apply(getTranslatedShaderSource: WebGLShader => java.lang.String): WEBGLDebugShaders = {
     val __obj = js.Dynamic.literal(getTranslatedShaderSource = js.Any.fromFunction1(getTranslatedShaderSource))
-  
     __obj.asInstanceOf[WEBGLDebugShaders]
   }
 }

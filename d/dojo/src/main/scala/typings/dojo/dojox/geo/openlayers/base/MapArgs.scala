@@ -45,7 +45,6 @@ object MapArgs {
   @scala.inline
   def apply(baseLayerName: String, baseLayerOptions: String, baseLayerType: String, baseLayerUrl: String): MapArgs = {
     val __obj = js.Dynamic.literal(baseLayerName = baseLayerName.asInstanceOf[js.Any], baseLayerOptions = baseLayerOptions.asInstanceOf[js.Any], baseLayerType = baseLayerType.asInstanceOf[js.Any], baseLayerUrl = baseLayerUrl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MapArgs]
   }
 }

@@ -12,7 +12,6 @@ object OnWindowResizeCallbackResult {
   @scala.inline
   def apply(size: Size): OnWindowResizeCallbackResult = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnWindowResizeCallbackResult]
   }
 }

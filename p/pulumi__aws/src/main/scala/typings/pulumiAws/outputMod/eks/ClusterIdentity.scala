@@ -16,7 +16,6 @@ object ClusterIdentity {
   @scala.inline
   def apply(oidcs: js.Array[ClusterIdentityOidc]): ClusterIdentity = {
     val __obj = js.Dynamic.literal(oidcs = oidcs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClusterIdentity]
   }
 }

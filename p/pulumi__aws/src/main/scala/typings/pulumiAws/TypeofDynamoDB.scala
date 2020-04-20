@@ -17,7 +17,6 @@ object TypeofDynamoDB {
   @scala.inline
   def apply(Converter: TypeofConverter, DocumentClient: Instantiable0[DocumentClient], Types: TypeofDynamoDB): TypeofDynamoDB = {
     val __obj = js.Dynamic.literal(Converter = Converter.asInstanceOf[js.Any], DocumentClient = DocumentClient.asInstanceOf[js.Any], Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofDynamoDB]
   }
 }

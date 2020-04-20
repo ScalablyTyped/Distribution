@@ -13,7 +13,6 @@ object OriginDetails {
   @scala.inline
   def apply(ProductId: string): OriginDetails = {
     val __obj = js.Dynamic.literal(ProductId = ProductId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OriginDetails]
   }
 }

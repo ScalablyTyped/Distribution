@@ -12,16 +12,16 @@ import scala.scalajs.js.annotation._
 
 trait nivoGeoProps {
   @scala.inline
-  def ResponsiveChoroplethProps: ChoroplethCommonProps.type = typings.nivoGeo.mod.ChoroplethCommonProps
+  def ResponsiveChoroplethProps: ChoroplethCommonProps.type = ChoroplethCommonProps
   type ResponsiveChoroplethProps = ChoroplethProps
   @scala.inline
-  def ResponsiveChoroplethCanvasProps: ChoroplethCanvasProps.type = typings.nivoGeo.mod.ChoroplethCanvasProps
+  def ResponsiveChoroplethCanvasProps: ChoroplethCanvasProps.type = ChoroplethCanvasProps
   type ResponsiveChoroplethCanvasProps = ChoroplethCanvasProps
   @scala.inline
-  def ResponsiveGeoMapProps: GeoMapCommonProps.type = typings.nivoGeo.mod.GeoMapCommonProps
+  def ResponsiveGeoMapProps: GeoMapCommonProps.type = GeoMapCommonProps
   type ResponsiveGeoMapProps = GeoMapProps
   @scala.inline
-  def ResponsiveGeoMapCanvasProps: GeoMapCanvasProps.type = typings.nivoGeo.mod.GeoMapCanvasProps
+  def ResponsiveGeoMapCanvasProps: GeoMapCanvasProps.type = GeoMapCanvasProps
   type ResponsiveGeoMapCanvasProps = GeoMapCanvasProps
 }
 

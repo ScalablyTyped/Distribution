@@ -15,7 +15,6 @@ object IBUDDY_LIST_INIT {
   @scala.inline
   def apply(buddyList: js.Array[SFSBuddy], myVariables: js.Array[SFSBuddyVariable]): IBUDDY_LIST_INIT = {
     val __obj = js.Dynamic.literal(buddyList = buddyList.asInstanceOf[js.Any], myVariables = myVariables.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IBUDDY_LIST_INIT]
   }
 }

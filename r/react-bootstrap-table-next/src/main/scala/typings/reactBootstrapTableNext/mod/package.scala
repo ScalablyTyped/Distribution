@@ -22,7 +22,7 @@ package object mod {
     /* formatExtraData */ E, 
     typings.react.mod._Global_.JSX.Element | java.lang.String | scala.Boolean | typings.react.mod.ReactText
   ]
-  type ColumnSortFunc[T, E /* <: java.lang.String */] = js.Function6[
+  type ColumnSortFunc[T, E /* <: /* keyof T */ java.lang.String */] = js.Function6[
     /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ /* a */ js.Any, 
     /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ /* b */ js.Any, 
     /* order */ typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.asc | typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.desc, 

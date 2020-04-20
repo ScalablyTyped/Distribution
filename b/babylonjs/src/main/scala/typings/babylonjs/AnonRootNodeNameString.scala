@@ -12,7 +12,6 @@ object AnonRootNodeNameString {
   @scala.inline
   def apply(rootNodeName: String): AnonRootNodeNameString = {
     val __obj = js.Dynamic.literal(rootNodeName = rootNodeName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRootNodeNameString]
   }
 }

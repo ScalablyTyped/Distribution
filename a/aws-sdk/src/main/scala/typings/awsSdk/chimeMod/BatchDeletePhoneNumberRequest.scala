@@ -16,7 +16,6 @@ object BatchDeletePhoneNumberRequest {
   @scala.inline
   def apply(PhoneNumberIds: NonEmptyStringList): BatchDeletePhoneNumberRequest = {
     val __obj = js.Dynamic.literal(PhoneNumberIds = PhoneNumberIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchDeletePhoneNumberRequest]
   }
 }

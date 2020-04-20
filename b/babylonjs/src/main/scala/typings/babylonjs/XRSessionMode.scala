@@ -13,12 +13,10 @@ trait XRSessionMode extends js.Object
 
 object XRSessionMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `immersive-ar`: typings.babylonjs.babylonjsStrings.`immersive-ar` = "immersive-ar".asInstanceOf[typings.babylonjs.babylonjsStrings.`immersive-ar`]
   @scala.inline
-  def `immersive-ar`: typings.babylonjs.babylonjsStrings.`immersive-ar` = this.cast("immersive-ar")
+  def `immersive-vr`: typings.babylonjs.babylonjsStrings.`immersive-vr` = "immersive-vr".asInstanceOf[typings.babylonjs.babylonjsStrings.`immersive-vr`]
   @scala.inline
-  def `immersive-vr`: typings.babylonjs.babylonjsStrings.`immersive-vr` = this.cast("immersive-vr")
-  @scala.inline
-  def `inline`: typings.babylonjs.babylonjsStrings.`inline` = this.cast("inline")
+  def `inline`: typings.babylonjs.babylonjsStrings.`inline` = "inline".asInstanceOf[typings.babylonjs.babylonjsStrings.`inline`]
 }
 

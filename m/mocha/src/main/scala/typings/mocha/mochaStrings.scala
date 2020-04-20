@@ -244,7 +244,7 @@ object mochaStrings {
   @scala.inline
   def hook: hook = "hook".asInstanceOf[hook]
   @scala.inline
-  def `hook end`: `hook end` = "hook end".asInstanceOf[`hook end`]
+  def `hook end`: `hook end` = ("hook end").asInstanceOf[`hook end`]
   @scala.inline
   def html_ : html_ = "html".asInstanceOf[html_]
   @scala.inline
@@ -294,7 +294,7 @@ object mochaStrings {
   @scala.inline
   def suite: suite = "suite".asInstanceOf[suite]
   @scala.inline
-  def `suite end`: `suite end` = "suite end".asInstanceOf[`suite end`]
+  def `suite end`: `suite end` = ("suite end").asInstanceOf[`suite end`]
   @scala.inline
   def tap_ : tap_ = "tap".asInstanceOf[tap_]
   @scala.inline
@@ -302,7 +302,7 @@ object mochaStrings {
   @scala.inline
   def test: test = "test".asInstanceOf[test]
   @scala.inline
-  def `test end`: `test end` = "test end".asInstanceOf[`test end`]
+  def `test end`: `test end` = ("test end").asInstanceOf[`test end`]
   @scala.inline
   def waiting: waiting = "waiting".asInstanceOf[waiting]
   @scala.inline

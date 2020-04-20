@@ -42,7 +42,6 @@ object ProcessModel {
     typeId: String
   ): ProcessModel = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], projects = projects.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], referenceName = referenceName.asInstanceOf[js.Any], typeId = typeId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProcessModel]
   }
 }

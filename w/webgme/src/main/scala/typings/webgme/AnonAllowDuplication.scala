@@ -33,7 +33,6 @@ object AnonAllowDuplication {
   @scala.inline
   def apply(allowDuplication: Boolean, basePaths: js.Array[String], defaultProject: String, enable: Boolean): AnonAllowDuplication = {
     val __obj = js.Dynamic.literal(allowDuplication = allowDuplication.asInstanceOf[js.Any], basePaths = basePaths.asInstanceOf[js.Any], defaultProject = defaultProject.asInstanceOf[js.Any], enable = enable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAllowDuplication]
   }
 }

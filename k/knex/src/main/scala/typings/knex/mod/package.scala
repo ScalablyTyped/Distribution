@@ -20,6 +20,7 @@ package object mod {
   type AliasDict = typings.knex.mod.Dict[java.lang.String]
   type AlterColumnBuilder = typings.knex.mod.ColumnBuilder
   type AlterTableBuilder = typings.knex.mod.TableBuilder
+  type AnyOrUnknownToOther[T1, T2] = T1 | T2
   type AnyToUnknown[T] = T | js.Any
   type ArrayIfAlready[T1, T2] = T2 | js.Array[T2]
   // If T is an array, get the type of member, else fall back to never
@@ -33,6 +34,9 @@ package object mod {
   type Client = js.Function
   type ColumnDescriptor[TRecord, TResult] = java.lang.String | typings.knex.mod.Raw[js.Any] | (typings.knex.mod.QueryBuilder[TRecord, TResult]) | typings.knex.mod.Dict[java.lang.String]
   type ConnectionConfigProvider = typings.knex.mod.SyncConnectionConfigProvider | typings.knex.mod.AsyncConnectionConfigProvider
+  type DbColumn[TColumn] = typings.knex.mod.MaybeRawColumn[TColumn]
+  type DbRecord[TRecord] = typings.knex.mod.SafePartial[typings.knex.mod.MaybeRawRecord[TRecord]]
+  type DbRecordArr[TRecord] = typings.knex.mod.MaybeArray[typings.knex.mod.DbRecord[TRecord]]
   // Convenience alias and associated companion namespace for working
   // with DeferredSelection having TSingle=true.
   //
@@ -52,7 +56,7 @@ package object mod {
   type Distinct[TRecord /* <: js.Object */, TResult] = typings.knex.mod.ColumnNameQueryBuilder[TRecord, TResult]
   // If T can't be assigned to TBase fallback to an alternate type TAlt
   type IncompatibleToAlt[T, TBase, TAlt] = TAlt | T
-  type InferrableColumnDescriptor[TRecord /* <: js.Object */] = java.lang.String | (typings.knex.mod.Ref[js.Any, js.Any]) | typings.knex.mod.Dict[java.lang.String]
+  type InferrableColumnDescriptor[TRecord /* <: js.Object */] = (/* keyof TRecord */ java.lang.String) | (typings.knex.mod.Ref[js.Any, js.Any]) | (typings.knex.mod.Dict[/* keyof TRecord */ java.lang.String])
   type IntersectAliases[AliasUT] = typings.knex.mod.UnionToIntersection[
     typings.knex.mod.IncompatibleToAlt[js.Any, typings.knex.mod.Dict[js.Any], js.Object]
   ]
@@ -70,12 +74,15 @@ package object mod {
   type Lookup[TRegistry /* <: js.Object */, TKey /* <: java.lang.String */, TDefault] = TDefault | (/* import warning: importer.ImportType#apply Failed type conversion: TRegistry[TKey] */ js.Any)
   // Retain the association of original keys with aliased keys at type level
   // to facilitates type-safe aliasing for object syntax
-  type MappedAliasType[TBase, TAliasMapping] = js.Object with typings.knex.knexStrings.MappedAliasType with js.Any
+  type MappedAliasType[TBase, TAliasMapping] = js.Object with typings.knex.knexStrings.MappedAliasType with org.scalablytyped.runtime.TopLevel[js.Any]
   type MaybeArray[T] = T | js.Array[T]
-  type MaybeROArray[T] = T | js.Array[T]
+  type MaybeRawColumn[TColumn] = TColumn | typings.knex.mod.Raw[TColumn]
+  type MaybeRawRecord[TRecord] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof TRecord ]: knex.knex.MaybeRawColumn<TRecord[K]>}
+    */ typings.knex.knexStrings.MaybeRawRecord with org.scalablytyped.runtime.TopLevel[TRecord]
   // Boxing is necessary to prevent distribution of conditional types:
   // https://lorefnon.tech/2019/05/02/using-boxing-to-prevent-distribution-of-conditional-types/
-  type PartialOrAny[TBase, TKeys] = (typings.knex.mod.SafePick[TBase, TKeys with java.lang.String]) | js.Object
+  type PartialOrAny[TBase, TKeys] = (typings.knex.mod.SafePick[TBase, TKeys with (/* keyof TBase */ java.lang.String)]) | js.Object
   //
   // QueryBuilder
   //
@@ -98,7 +105,7 @@ package object mod {
       java.lang.String, 
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in string ]: string}
-    */ typings.knex.knexStrings.RefBuilder with js.Any
+    */ typings.knex.knexStrings.RefBuilder with org.scalablytyped.runtime.TopLevel[js.Any]
     ]
   ]
   // If we have more categories of deferred selection in future,
@@ -109,8 +116,8 @@ package object mod {
   //
   // This is primarily to prevent type incompatibilities where target can be unknown.
   // While unknown can be assigned to any, Partial<unknown> can't be.
-  type SafePartial[T] = typings.std.Partial[T]
-  type SafePick[T, K /* <: java.lang.String */] = typings.std.Pick[T, K]
+  type SafePartial[T] = typings.std.Partial[typings.knex.mod.AnyOrUnknownToOther[T, js.Object]]
+  type SafePick[T, K /* <: /* keyof T */ java.lang.String */] = typings.std.Pick[T, K]
   /* Rewritten from type alias, can be one of: 
     - typings.knex.mod.ConnectionConfig
     - typings.knex.mod.MariaSqlConnectionConfig

@@ -22,7 +22,6 @@ object IMediaDeviceController {
     setMediaStreamPropertiesAsync: (MediaStreamType, IMediaEncodingProperties) => IAsyncAction
   ): IMediaDeviceController = {
     val __obj = js.Dynamic.literal(getAvailableMediaStreamProperties = js.Any.fromFunction1(getAvailableMediaStreamProperties), getMediaStreamProperties = js.Any.fromFunction1(getMediaStreamProperties), setMediaStreamPropertiesAsync = js.Any.fromFunction2(setMediaStreamPropertiesAsync))
-  
     __obj.asInstanceOf[IMediaDeviceController]
   }
 }

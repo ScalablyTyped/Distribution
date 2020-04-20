@@ -13,7 +13,6 @@ object PickImplprecision {
   @scala.inline
   def apply(precision: Double): PickImplprecision = {
     val __obj = js.Dynamic.literal(precision = precision.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplprecision]
   }
 }

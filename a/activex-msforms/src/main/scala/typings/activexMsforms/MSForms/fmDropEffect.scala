@@ -18,14 +18,12 @@ trait fmDropEffect extends js.Object
 
 object fmDropEffect {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fmDropEffectCopy: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def fmDropEffectCopy: `1` = this.cast(1)
+  def fmDropEffectCopyOrMove: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def fmDropEffectCopyOrMove: `3` = this.cast(3)
+  def fmDropEffectMove: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def fmDropEffectMove: `2` = this.cast(2)
-  @scala.inline
-  def fmDropEffectNone: `0` = this.cast(0)
+  def fmDropEffectNone: `0` = 0.asInstanceOf[`0`]
 }
 

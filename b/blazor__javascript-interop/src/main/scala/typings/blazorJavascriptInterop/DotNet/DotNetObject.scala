@@ -34,7 +34,6 @@ object DotNetObject {
     invokeMethodAsync: (String, /* repeated */ js.Any) => js.Promise[js.Any]
   ): DotNetObject = {
     val __obj = js.Dynamic.literal(invokeMethod = js.Any.fromFunction2(invokeMethod), invokeMethodAsync = js.Any.fromFunction2(invokeMethodAsync))
-  
     __obj.asInstanceOf[DotNetObject]
   }
 }

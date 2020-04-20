@@ -35,6 +35,13 @@ trait InspectOptions extends js.Object {
     */
   var getters: js.UndefOr[get | set | Boolean] = js.undefined
   var maxArrayLength: js.UndefOr[Double | Null] = js.undefined
+  /**
+    * Specifies the maximum number of characters to
+    * include when formatting. Set to `null` or `Infinity` to show all elements.
+    * Set to `0` or negative to show no characters.
+    * @default Infinity
+    */
+  var maxStringLength: js.UndefOr[Double | Null] = js.undefined
   var showHidden: js.UndefOr[Boolean] = js.undefined
   var showProxy: js.UndefOr[Boolean] = js.undefined
   var sorted: js.UndefOr[Boolean | (js.Function2[/* a */ String, /* b */ String, Double])] = js.undefined
@@ -50,6 +57,7 @@ object InspectOptions {
     depth: Int | Double = null,
     getters: get | set | Boolean = null,
     maxArrayLength: Int | Double = null,
+    maxStringLength: Int | Double = null,
     showHidden: js.UndefOr[Boolean] = js.undefined,
     showProxy: js.UndefOr[Boolean] = js.undefined,
     sorted: Boolean | (js.Function2[/* a */ String, /* b */ String, Double]) = null
@@ -62,6 +70,7 @@ object InspectOptions {
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (getters != null) __obj.updateDynamic("getters")(getters.asInstanceOf[js.Any])
     if (maxArrayLength != null) __obj.updateDynamic("maxArrayLength")(maxArrayLength.asInstanceOf[js.Any])
+    if (maxStringLength != null) __obj.updateDynamic("maxStringLength")(maxStringLength.asInstanceOf[js.Any])
     if (!js.isUndefined(showHidden)) __obj.updateDynamic("showHidden")(showHidden.asInstanceOf[js.Any])
     if (!js.isUndefined(showProxy)) __obj.updateDynamic("showProxy")(showProxy.asInstanceOf[js.Any])
     if (sorted != null) __obj.updateDynamic("sorted")(sorted.asInstanceOf[js.Any])

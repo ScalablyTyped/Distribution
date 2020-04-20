@@ -24,7 +24,6 @@ object FilterSettings {
     reset: () => Unit
   ): FilterSettings = {
     val __obj = js.Dynamic.literal(CapturedFilter = CapturedFilter.asInstanceOf[js.Any], DefaultFilters = DefaultFilters.asInstanceOf[js.Any], Filters = Filters.asInstanceOf[js.Any], fullReset = js.Any.fromFunction0(fullReset), isSet = js.Any.fromFunction0(isSet), loadFromJson = js.Any.fromFunction1(loadFromJson), reset = js.Any.fromFunction0(reset))
-  
     __obj.asInstanceOf[FilterSettings]
   }
 }

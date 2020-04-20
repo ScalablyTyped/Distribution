@@ -16,12 +16,10 @@ trait WdPreferredWidthType extends js.Object
 
 object WdPreferredWidthType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdPreferredWidthAuto: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdPreferredWidthAuto: `1` = this.cast(1)
+  def wdPreferredWidthPercent: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdPreferredWidthPercent: `2` = this.cast(2)
-  @scala.inline
-  def wdPreferredWidthPoints: `3` = this.cast(3)
+  def wdPreferredWidthPoints: `3` = 3.asInstanceOf[`3`]
 }
 

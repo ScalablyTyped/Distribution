@@ -16,7 +16,6 @@ object DescribeRepositoryAssociationRequest {
   @scala.inline
   def apply(AssociationArn: Arn): DescribeRepositoryAssociationRequest = {
     val __obj = js.Dynamic.literal(AssociationArn = AssociationArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeRepositoryAssociationRequest]
   }
 }

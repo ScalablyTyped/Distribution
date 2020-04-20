@@ -14,7 +14,6 @@ object AnonSize {
   @scala.inline
   def apply(size: () => js.Promise[Double], stream: Readable): AnonSize = {
     val __obj = js.Dynamic.literal(size = js.Any.fromFunction0(size), stream = stream.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSize]
   }
 }

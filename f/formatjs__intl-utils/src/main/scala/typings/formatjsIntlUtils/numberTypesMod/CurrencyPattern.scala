@@ -20,7 +20,6 @@ object CurrencyPattern {
     symbol: CurrencySignPattern
   ): CurrencyPattern = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], narrowSymbol = narrowSymbol.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CurrencyPattern]
   }
 }

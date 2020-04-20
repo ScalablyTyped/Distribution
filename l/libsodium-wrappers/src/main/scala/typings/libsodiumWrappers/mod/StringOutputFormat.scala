@@ -13,12 +13,10 @@ trait StringOutputFormat extends js.Object
 
 object StringOutputFormat {
   @scala.inline
-  def base64: typings.libsodiumWrappers.libsodiumWrappersStrings.base64 = this.cast("base64")
+  def base64: typings.libsodiumWrappers.libsodiumWrappersStrings.base64 = "base64".asInstanceOf[typings.libsodiumWrappers.libsodiumWrappersStrings.base64]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def hex: typings.libsodiumWrappers.libsodiumWrappersStrings.hex = "hex".asInstanceOf[typings.libsodiumWrappers.libsodiumWrappersStrings.hex]
   @scala.inline
-  def hex: typings.libsodiumWrappers.libsodiumWrappersStrings.hex = this.cast("hex")
-  @scala.inline
-  def text: typings.libsodiumWrappers.libsodiumWrappersStrings.text = this.cast("text")
+  def text: typings.libsodiumWrappers.libsodiumWrappersStrings.text = "text".asInstanceOf[typings.libsodiumWrappers.libsodiumWrappersStrings.text]
 }
 

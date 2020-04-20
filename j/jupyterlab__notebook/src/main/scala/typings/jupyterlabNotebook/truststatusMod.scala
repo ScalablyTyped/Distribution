@@ -51,22 +51,22 @@ object truststatusMod extends js.Object {
       /**
         * Whether the active cell is trusted.
         */
-      def activeCellTrusted(): Boolean = js.native
+      def activeCellTrusted: Boolean = js.native
       def notebook(): js.Any = js.native
       def notebook(model: Notebook): js.Any = js.native
       /**
         * The current notebook for the model.
         */
       @JSName("notebook")
-      def notebook_Union(): Notebook | Null = js.native
+      def notebook_Union: Notebook | Null = js.native
       /**
         * The total number of cells in the current notebook.
         */
-      def totalCells(): Double = js.native
+      def totalCells: Double = js.native
       /**
         * The number of trusted cells in the current notebook.
         */
-      def trustedCells(): Double = js.native
+      def trustedCells: Double = js.native
     }
     
   }

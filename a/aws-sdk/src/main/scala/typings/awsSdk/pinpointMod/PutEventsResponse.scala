@@ -13,7 +13,6 @@ object PutEventsResponse {
   @scala.inline
   def apply(EventsResponse: EventsResponse): PutEventsResponse = {
     val __obj = js.Dynamic.literal(EventsResponse = EventsResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutEventsResponse]
   }
 }

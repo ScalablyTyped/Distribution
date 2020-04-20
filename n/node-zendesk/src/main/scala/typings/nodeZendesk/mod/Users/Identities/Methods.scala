@@ -35,7 +35,6 @@ object Methods {
     verify: (ZendeskID, ZendeskID, ZendeskCallback[_, _]) => ResponsePayload
   ): Methods = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction3(create), delete = js.Any.fromFunction3(delete), list = js.Any.fromFunction2(list), makePrimary = js.Any.fromFunction3(makePrimary), requestVerification = js.Any.fromFunction3(requestVerification), show = js.Any.fromFunction3(show), update = js.Any.fromFunction4(update), verify = js.Any.fromFunction3(verify))
-  
     __obj.asInstanceOf[Methods]
   }
 }

@@ -26,7 +26,6 @@ object Anon3 {
     ]
   ): Anon3 = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Anon3]
   }
 }

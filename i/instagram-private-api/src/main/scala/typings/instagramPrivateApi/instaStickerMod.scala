@@ -16,11 +16,11 @@ object instaStickerMod extends js.Object {
     var x: Double = js.native
     var y: Double = js.native
     var z: Double = js.native
-    def additionalConfigureProperties(): js.Any = js.native
+    def additionalConfigureProperties: js.Any = js.native
     def bottom(): this.type = js.native
     def center(): this.type = js.native
-    def id(): String = js.native
-    def key(): String = js.native
+    def id: String = js.native
+    def key: String = js.native
     def left(): this.type = js.native
     def moveBackwards(): this.type = js.native
     def moveBackwards(layers: Double): this.type = js.native

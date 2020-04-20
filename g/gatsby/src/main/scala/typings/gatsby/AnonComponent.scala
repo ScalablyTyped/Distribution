@@ -19,7 +19,6 @@ object AnonComponent {
     page: AnonComponentChunkName
   ): AnonComponent[DataType, PageContextType] = {
     val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonComponent[DataType, PageContextType]]
   }
 }

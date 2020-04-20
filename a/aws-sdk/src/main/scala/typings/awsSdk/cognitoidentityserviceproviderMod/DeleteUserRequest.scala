@@ -16,7 +16,6 @@ object DeleteUserRequest {
   @scala.inline
   def apply(AccessToken: TokenModelType): DeleteUserRequest = {
     val __obj = js.Dynamic.literal(AccessToken = AccessToken.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteUserRequest]
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactTetherProps {
   @scala.inline
-  def ReactTetherProps: TetherComponentProps.type = typings.reactTether.mod.ReactTether.TetherComponentProps
+  def ReactTetherProps: TetherComponentProps.type = TetherComponentProps
   type ReactTetherProps = TetherComponentProps
 }
 

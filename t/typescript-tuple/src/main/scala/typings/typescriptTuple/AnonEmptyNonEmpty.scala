@@ -16,7 +16,6 @@ object AnonEmptyNonEmpty {
     nonEmpty: /* import warning: importer.ImportType#apply Failed type conversion: typescript-tuple.typescript-tuple/lib/utils.SortTwoTuple<Shortest, any, [Shortest, any]>[0] */ js.Any
   ): AnonEmptyNonEmpty[Shortest, TupleSet] = {
     val __obj = js.Dynamic.literal(empty = empty.asInstanceOf[js.Any], nonEmpty = nonEmpty.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEmptyNonEmpty[Shortest, TupleSet]]
   }
 }

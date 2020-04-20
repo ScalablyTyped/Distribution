@@ -24,7 +24,6 @@ object TimerCanceledEventAttributes {
   @scala.inline
   def apply(decisionTaskCompletedEventId: EventId, startedEventId: EventId, timerId: TimerId): TimerCanceledEventAttributes = {
     val __obj = js.Dynamic.literal(decisionTaskCompletedEventId = decisionTaskCompletedEventId.asInstanceOf[js.Any], startedEventId = startedEventId.asInstanceOf[js.Any], timerId = timerId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TimerCanceledEventAttributes]
   }
 }

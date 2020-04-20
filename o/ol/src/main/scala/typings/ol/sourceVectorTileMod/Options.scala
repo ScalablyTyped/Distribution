@@ -19,6 +19,7 @@ trait Options extends js.Object {
   var cacheSize: js.UndefOr[Double] = js.undefined
   var extent: js.UndefOr[Extent] = js.undefined
   var format: js.UndefOr[typings.ol.featureMod.default] = js.undefined
+  var maxResolution: js.UndefOr[Double] = js.undefined
   var maxZoom: js.UndefOr[Double] = js.undefined
   var minZoom: js.UndefOr[Double] = js.undefined
   var overlaps: js.UndefOr[Boolean] = js.undefined
@@ -44,6 +45,7 @@ object Options {
     cacheSize: Int | Double = null,
     extent: Extent = null,
     format: typings.ol.featureMod.default = null,
+    maxResolution: Int | Double = null,
     maxZoom: Int | Double = null,
     minZoom: Int | Double = null,
     overlaps: js.UndefOr[Boolean] = js.undefined,
@@ -66,6 +68,7 @@ object Options {
     if (cacheSize != null) __obj.updateDynamic("cacheSize")(cacheSize.asInstanceOf[js.Any])
     if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (maxResolution != null) __obj.updateDynamic("maxResolution")(maxResolution.asInstanceOf[js.Any])
     if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
     if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
     if (!js.isUndefined(overlaps)) __obj.updateDynamic("overlaps")(overlaps.asInstanceOf[js.Any])

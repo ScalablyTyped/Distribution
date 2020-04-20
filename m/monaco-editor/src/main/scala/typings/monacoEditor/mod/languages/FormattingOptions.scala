@@ -19,7 +19,6 @@ object FormattingOptions {
   @scala.inline
   def apply(insertSpaces: Boolean, tabSize: Double): FormattingOptions = {
     val __obj = js.Dynamic.literal(insertSpaces = insertSpaces.asInstanceOf[js.Any], tabSize = tabSize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FormattingOptions]
   }
 }

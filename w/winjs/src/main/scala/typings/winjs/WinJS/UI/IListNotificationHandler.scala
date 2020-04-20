@@ -77,7 +77,6 @@ object IListNotificationHandler {
     removed: (String, Boolean) => Unit
   ): IListNotificationHandler[T] = {
     val __obj = js.Dynamic.literal(beginNotifications = js.Any.fromFunction0(beginNotifications), changed = js.Any.fromFunction2(changed), countChanged = js.Any.fromFunction2(countChanged), endNotifications = js.Any.fromFunction0(endNotifications), indexChanged = js.Any.fromFunction3(indexChanged), inserted = js.Any.fromFunction3(inserted), itemAvailable = js.Any.fromFunction1(itemAvailable), moved = js.Any.fromFunction3(moved), removed = js.Any.fromFunction2(removed))
-  
     __obj.asInstanceOf[IListNotificationHandler[T]]
   }
 }

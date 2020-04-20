@@ -16,7 +16,6 @@ object AssociateServiceRoleToAccountRequest {
   @scala.inline
   def apply(RoleArn: string): AssociateServiceRoleToAccountRequest = {
     val __obj = js.Dynamic.literal(RoleArn = RoleArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssociateServiceRoleToAccountRequest]
   }
 }

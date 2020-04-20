@@ -16,7 +16,6 @@ object GetBucketArgs {
   @scala.inline
   def apply(bucket: String): GetBucketArgs = {
     val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBucketArgs]
   }
 }

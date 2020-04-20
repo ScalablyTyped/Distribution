@@ -30,7 +30,6 @@ object OnfleetOrganization {
     timezone: String
   ): OnfleetOrganization = {
     val __obj = js.Dynamic.literal(country = country.asInstanceOf[js.Any], delegatees = delegatees.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], timeCreated = timeCreated.asInstanceOf[js.Any], timeLastModified = timeLastModified.asInstanceOf[js.Any], timezone = timezone.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnfleetOrganization]
   }
 }

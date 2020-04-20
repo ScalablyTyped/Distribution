@@ -38,7 +38,6 @@ object EndpointSummary {
     LastModifiedTime: Timestamp
   ): EndpointSummary = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime.asInstanceOf[js.Any], EndpointArn = EndpointArn.asInstanceOf[js.Any], EndpointName = EndpointName.asInstanceOf[js.Any], EndpointStatus = EndpointStatus.asInstanceOf[js.Any], LastModifiedTime = LastModifiedTime.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EndpointSummary]
   }
 }

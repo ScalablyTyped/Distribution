@@ -16,7 +16,6 @@ object GetIdentityPoolConfigurationRequest {
   @scala.inline
   def apply(IdentityPoolId: IdentityPoolId): GetIdentityPoolConfigurationRequest = {
     val __obj = js.Dynamic.literal(IdentityPoolId = IdentityPoolId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetIdentityPoolConfigurationRequest]
   }
 }

@@ -13,7 +13,6 @@ object FallbackRule {
   @scala.inline
   def apply(fallback: `true`): FallbackRule = {
     val __obj = js.Dynamic.literal(fallback = fallback.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FallbackRule]
   }
 }

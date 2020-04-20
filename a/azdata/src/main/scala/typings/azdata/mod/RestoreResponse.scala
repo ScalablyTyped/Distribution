@@ -14,7 +14,6 @@ object RestoreResponse {
   @scala.inline
   def apply(errorMessage: String, result: Boolean, taskId: String): RestoreResponse = {
     val __obj = js.Dynamic.literal(errorMessage = errorMessage.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], taskId = taskId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RestoreResponse]
   }
 }

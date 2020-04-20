@@ -44,40 +44,38 @@ trait WdStoryType extends js.Object
 
 object WdStoryType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdCommentsStory: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdCommentsStory: `4` = this.cast(4)
+  def wdEndnoteContinuationNoticeStory: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def wdEndnoteContinuationNoticeStory: `17` = this.cast(17)
+  def wdEndnoteContinuationSeparatorStory: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def wdEndnoteContinuationSeparatorStory: `16` = this.cast(16)
+  def wdEndnoteSeparatorStory: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def wdEndnoteSeparatorStory: `15` = this.cast(15)
+  def wdEndnotesStory: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdEndnotesStory: `3` = this.cast(3)
+  def wdEvenPagesFooterStory: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def wdEvenPagesFooterStory: `8` = this.cast(8)
+  def wdEvenPagesHeaderStory: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdEvenPagesHeaderStory: `6` = this.cast(6)
+  def wdFirstPageFooterStory: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def wdFirstPageFooterStory: `11` = this.cast(11)
+  def wdFirstPageHeaderStory: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def wdFirstPageHeaderStory: `10` = this.cast(10)
+  def wdFootnoteContinuationNoticeStory: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def wdFootnoteContinuationNoticeStory: `14` = this.cast(14)
+  def wdFootnoteContinuationSeparatorStory: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def wdFootnoteContinuationSeparatorStory: `13` = this.cast(13)
+  def wdFootnoteSeparatorStory: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def wdFootnoteSeparatorStory: `12` = this.cast(12)
+  def wdFootnotesStory: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdFootnotesStory: `2` = this.cast(2)
+  def wdMainTextStory: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdMainTextStory: `1` = this.cast(1)
+  def wdPrimaryFooterStory: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def wdPrimaryFooterStory: `9` = this.cast(9)
+  def wdPrimaryHeaderStory: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def wdPrimaryHeaderStory: `7` = this.cast(7)
-  @scala.inline
-  def wdTextFrameStory: `5` = this.cast(5)
+  def wdTextFrameStory: `5` = 5.asInstanceOf[`5`]
 }
 

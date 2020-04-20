@@ -18,7 +18,6 @@ object CustomchannelsResource {
   @scala.inline
   def apply(get: AnonAdClientId => Request_[CustomChannel], list: AnonFields => Request_[CustomChannels]): CustomchannelsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[CustomchannelsResource]
   }
 }

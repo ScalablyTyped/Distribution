@@ -20,7 +20,6 @@ object Simplex {
     get: (Double, Double) => Double
   ): Simplex = {
     val __obj = js.Dynamic.literal(_gradients = _gradients.asInstanceOf[js.Any], _indexes = _indexes.asInstanceOf[js.Any], _perms = _perms.asInstanceOf[js.Any], get = js.Any.fromFunction2(get))
-  
     __obj.asInstanceOf[Simplex]
   }
 }

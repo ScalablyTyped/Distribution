@@ -18,7 +18,6 @@ object GroupsCollection {
   @scala.inline
   def apply(get: String => Groups, patch: (Groups, String) => Groups, update: (Groups, String) => Groups): GroupsCollection = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), patch = js.Any.fromFunction2(patch), update = js.Any.fromFunction2(update))
-  
     __obj.asInstanceOf[GroupsCollection]
   }
 }

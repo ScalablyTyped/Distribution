@@ -16,7 +16,6 @@ object MathZoom {
   @scala.inline
   def apply(styles: js.Any): MathZoom = {
     val __obj = js.Dynamic.literal(styles = styles.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MathZoom]
   }
 }

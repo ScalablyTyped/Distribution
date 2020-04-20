@@ -15,7 +15,6 @@ object HeapStatsUpdateEventDataType {
   @scala.inline
   def apply(statsUpdate: js.Array[Double]): HeapStatsUpdateEventDataType = {
     val __obj = js.Dynamic.literal(statsUpdate = statsUpdate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HeapStatsUpdateEventDataType]
   }
 }

@@ -19,24 +19,22 @@ trait LineLayerType extends js.Object
 
 object LineLayerType {
   @scala.inline
-  def areas: typings.nivoLine.nivoLineStrings.areas = this.cast("areas")
+  def areas: typings.nivoLine.nivoLineStrings.areas = "areas".asInstanceOf[typings.nivoLine.nivoLineStrings.areas]
   @scala.inline
-  def axes: typings.nivoLine.nivoLineStrings.axes = this.cast("axes")
+  def axes: typings.nivoLine.nivoLineStrings.axes = "axes".asInstanceOf[typings.nivoLine.nivoLineStrings.axes]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def grid: typings.nivoLine.nivoLineStrings.grid = "grid".asInstanceOf[typings.nivoLine.nivoLineStrings.grid]
   @scala.inline
-  def grid: typings.nivoLine.nivoLineStrings.grid = this.cast("grid")
+  def legends: typings.nivoLine.nivoLineStrings.legends = "legends".asInstanceOf[typings.nivoLine.nivoLineStrings.legends]
   @scala.inline
-  def legends: typings.nivoLine.nivoLineStrings.legends = this.cast("legends")
+  def lines: typings.nivoLine.nivoLineStrings.lines = "lines".asInstanceOf[typings.nivoLine.nivoLineStrings.lines]
   @scala.inline
-  def lines: typings.nivoLine.nivoLineStrings.lines = this.cast("lines")
+  def markers: typings.nivoLine.nivoLineStrings.markers = "markers".asInstanceOf[typings.nivoLine.nivoLineStrings.markers]
   @scala.inline
-  def markers: typings.nivoLine.nivoLineStrings.markers = this.cast("markers")
+  def mesh: typings.nivoLine.nivoLineStrings.mesh = "mesh".asInstanceOf[typings.nivoLine.nivoLineStrings.mesh]
   @scala.inline
-  def mesh: typings.nivoLine.nivoLineStrings.mesh = this.cast("mesh")
+  def points: typings.nivoLine.nivoLineStrings.points = "points".asInstanceOf[typings.nivoLine.nivoLineStrings.points]
   @scala.inline
-  def points: typings.nivoLine.nivoLineStrings.points = this.cast("points")
-  @scala.inline
-  def slices: typings.nivoLine.nivoLineStrings.slices = this.cast("slices")
+  def slices: typings.nivoLine.nivoLineStrings.slices = "slices".asInstanceOf[typings.nivoLine.nivoLineStrings.slices]
 }
 

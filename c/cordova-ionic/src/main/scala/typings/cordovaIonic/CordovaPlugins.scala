@@ -13,7 +13,6 @@ object CordovaPlugins {
   @scala.inline
   def apply(Keyboard: Keyboard): CordovaPlugins = {
     val __obj = js.Dynamic.literal(Keyboard = Keyboard.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CordovaPlugins]
   }
 }

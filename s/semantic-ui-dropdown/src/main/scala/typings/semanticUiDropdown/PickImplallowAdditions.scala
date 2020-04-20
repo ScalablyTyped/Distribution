@@ -13,7 +13,6 @@ object PickImplallowAdditions {
   @scala.inline
   def apply(allowAdditions: Boolean): PickImplallowAdditions = {
     val __obj = js.Dynamic.literal(allowAdditions = allowAdditions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplallowAdditions]
   }
 }

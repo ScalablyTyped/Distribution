@@ -34,7 +34,6 @@ object PlanMetadata {
     userPermissions: PlanUserPermissions
   ): PlanMetadata = {
     val __obj = js.Dynamic.literal(createdByIdentity = createdByIdentity.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], modifiedDate = modifiedDate.asInstanceOf[js.Any], userPermissions = userPermissions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PlanMetadata]
   }
 }

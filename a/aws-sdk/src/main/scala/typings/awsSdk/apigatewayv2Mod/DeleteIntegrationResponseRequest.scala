@@ -24,7 +24,6 @@ object DeleteIntegrationResponseRequest {
   @scala.inline
   def apply(ApiId: string, IntegrationId: string, IntegrationResponseId: string): DeleteIntegrationResponseRequest = {
     val __obj = js.Dynamic.literal(ApiId = ApiId.asInstanceOf[js.Any], IntegrationId = IntegrationId.asInstanceOf[js.Any], IntegrationResponseId = IntegrationResponseId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteIntegrationResponseRequest]
   }
 }

@@ -9,19 +9,11 @@ import scala.scalajs.js.annotation._
 /**
   * A media object from the camera or photo gallery.
   */
-trait CameraMediaItemType extends js.Object {
+trait CameraMediaItemType extends SuccessResponse {
   /**
-  	 * Error code. Returns 0.
+  	 * Simple object defining the user's selected crop rectangle, or `null` if the user has not edited the photo. `width`/`height` values are assumed to be in pixels.
   	 */
-  var code: js.UndefOr[Double] = js.undefined
-  /**
-  	 * Simple object defining the user's selected crop rectangle, or `null` if the user has not edited the photo.
-  	 */
-  var cropRect: js.UndefOr[CropRectType] = js.undefined
-  /**
-  	 * Error message, if any returned.
-  	 */
-  var error: js.UndefOr[String] = js.undefined
+  var cropRect: js.UndefOr[Dimension] = js.undefined
   /**
   	 * The live photo object, as a <Titanium.UI.iOS.LivePhoto> and
   	 * `undefined` if no live photo is selected.
@@ -34,27 +26,23 @@ trait CameraMediaItemType extends js.Object {
   /**
   	 * The type of media, either `MEDIA_TYPE_PHOTO`, `MEDIA_TYPE_LIVEPHOTO` or `MEDIA_TYPE_VIDEO` defined in <Titanium.Media>.
   	 */
-  var mediaType: js.UndefOr[String] = js.undefined
+  var mediaType: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * Simple object defining the preview image size.
+  	 * Simple object defining the preview image size. This will be undefined when custom camera overlay is not used. Values are assumed to be in pixels.
   	 */
-  var previewRect: js.UndefOr[PreviewRectType] = js.undefined
-  /**
-  	 * Indicates if the operation succeeded. Returns `true`.
-  	 */
-  var success: js.UndefOr[Boolean] = js.undefined
+  var previewRect: js.UndefOr[Size] = js.undefined
 }
 
 object CameraMediaItemType {
   @scala.inline
   def apply(
     code: Int | Double = null,
-    cropRect: CropRectType = null,
-    error: String = null,
+    cropRect: Dimension = null,
+    error: java.lang.String = null,
     livePhoto: LivePhoto = null,
     media: Blob = null,
-    mediaType: String = null,
-    previewRect: PreviewRectType = null,
+    mediaType: java.lang.String = null,
+    previewRect: Size = null,
     success: js.UndefOr[Boolean] = js.undefined
   ): CameraMediaItemType = {
     val __obj = js.Dynamic.literal()

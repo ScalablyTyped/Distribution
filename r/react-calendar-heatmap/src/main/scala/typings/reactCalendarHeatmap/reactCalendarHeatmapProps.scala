@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactCalendarHeatmapProps {
   @scala.inline
-  def ReactCalendarHeatmapProps: Props.type = typings.reactCalendarHeatmap.mod.Props
+  def ReactCalendarHeatmapProps: Props.type = Props
   type ReactCalendarHeatmapProps = Props
 }
 

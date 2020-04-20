@@ -13,7 +13,6 @@ object Anon28 {
   @scala.inline
   def apply(name: hideGenerator): Anon28 = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Anon28]
   }
 }

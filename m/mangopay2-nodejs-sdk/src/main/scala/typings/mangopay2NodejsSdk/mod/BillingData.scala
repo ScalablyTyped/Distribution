@@ -14,7 +14,6 @@ object BillingData {
   @scala.inline
   def apply(Address: Address | AddressData | String): BillingData = {
     val __obj = js.Dynamic.literal(Address = Address.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BillingData]
   }
 }

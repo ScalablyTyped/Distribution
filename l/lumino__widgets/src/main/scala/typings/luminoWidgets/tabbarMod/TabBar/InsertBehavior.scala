@@ -16,12 +16,10 @@ trait InsertBehavior extends js.Object
 
 object InsertBehavior {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def none: typings.luminoWidgets.luminoWidgetsStrings.none = "none".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.none]
   @scala.inline
-  def none: typings.luminoWidgets.luminoWidgetsStrings.none = this.cast("none")
+  def `select-tab`: typings.luminoWidgets.luminoWidgetsStrings.`select-tab` = "select-tab".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`select-tab`]
   @scala.inline
-  def `select-tab`: typings.luminoWidgets.luminoWidgetsStrings.`select-tab` = this.cast("select-tab")
-  @scala.inline
-  def `select-tab-if-needed`: typings.luminoWidgets.luminoWidgetsStrings.`select-tab-if-needed` = this.cast("select-tab-if-needed")
+  def `select-tab-if-needed`: typings.luminoWidgets.luminoWidgetsStrings.`select-tab-if-needed` = "select-tab-if-needed".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`select-tab-if-needed`]
 }
 

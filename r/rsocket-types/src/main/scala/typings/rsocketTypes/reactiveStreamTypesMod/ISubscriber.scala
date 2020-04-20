@@ -21,7 +21,6 @@ object ISubscriber {
     onSubscribe: ISubscription => Unit
   ): ISubscriber[T] = {
     val __obj = js.Dynamic.literal(onComplete = js.Any.fromFunction0(onComplete), onError = js.Any.fromFunction1(onError), onNext = js.Any.fromFunction1(onNext), onSubscribe = js.Any.fromFunction1(onSubscribe))
-  
     __obj.asInstanceOf[ISubscriber[T]]
   }
 }

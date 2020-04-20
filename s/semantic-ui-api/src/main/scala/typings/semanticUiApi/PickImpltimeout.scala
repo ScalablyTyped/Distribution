@@ -13,7 +13,6 @@ object PickImpltimeout {
   @scala.inline
   def apply(timeout: String): PickImpltimeout = {
     val __obj = js.Dynamic.literal(timeout = timeout.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpltimeout]
   }
 }

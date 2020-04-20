@@ -18,14 +18,12 @@ trait svgUnitTypes extends js.Object
 
 object svgUnitTypes {
   @scala.inline
-  def SVG_UNITTYPE_OBJECTBOUNDINGBOX: `2` = this.cast(2)
+  def SVG_UNITTYPE_OBJECTBOUNDINGBOX: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def SVG_UNITTYPE_UNKNOWN: `0` = this.cast(0)
+  def SVG_UNITTYPE_UNKNOWN: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def SVG_UNITTYPE_USERSPACEONUSE: `1` = this.cast(1)
+  def SVG_UNITTYPE_USERSPACEONUSE: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def svgUnitTypes_Max: `2147483647` = this.cast(2147483647)
+  def svgUnitTypes_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

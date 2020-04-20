@@ -28,7 +28,6 @@ object AutoMLCandidateStep {
     CandidateStepType: CandidateStepType
   ): AutoMLCandidateStep = {
     val __obj = js.Dynamic.literal(CandidateStepArn = CandidateStepArn.asInstanceOf[js.Any], CandidateStepName = CandidateStepName.asInstanceOf[js.Any], CandidateStepType = CandidateStepType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AutoMLCandidateStep]
   }
 }

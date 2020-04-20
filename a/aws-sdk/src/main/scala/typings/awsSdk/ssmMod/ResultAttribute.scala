@@ -16,7 +16,6 @@ object ResultAttribute {
   @scala.inline
   def apply(TypeName: InventoryItemTypeName): ResultAttribute = {
     val __obj = js.Dynamic.literal(TypeName = TypeName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResultAttribute]
   }
 }

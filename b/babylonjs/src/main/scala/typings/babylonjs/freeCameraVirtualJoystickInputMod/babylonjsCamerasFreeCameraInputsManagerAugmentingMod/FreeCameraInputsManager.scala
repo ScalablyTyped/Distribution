@@ -16,7 +16,6 @@ object FreeCameraInputsManager {
   @scala.inline
   def apply(addVirtualJoystick: () => FreeCameraInputsManager): FreeCameraInputsManager = {
     val __obj = js.Dynamic.literal(addVirtualJoystick = js.Any.fromFunction0(addVirtualJoystick))
-  
     __obj.asInstanceOf[FreeCameraInputsManager]
   }
 }

@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation._
 
 object reachComboboxComponents extends reachComboboxProps {
   @scala.inline
-  def Combobox: ComponentType[ComboboxProps] = typings.reachCombobox.mod.Combobox.asInstanceOf[typings.react.mod.ComponentType[ComboboxProps]]
+  def Combobox: ComponentType[ComboboxProps] = typings.reachCombobox.mod.Combobox.asInstanceOf[ComponentType[ComboboxProps]]
   @scala.inline
-  def ComboboxInput: ComponentType[ComboboxInputProps] = typings.reachCombobox.mod.ComboboxInput.asInstanceOf[typings.react.mod.ComponentType[ComboboxInputProps]]
+  def ComboboxInput: ComponentType[ComboboxInputProps] = typings.reachCombobox.mod.ComboboxInput.asInstanceOf[ComponentType[ComboboxInputProps]]
   @scala.inline
-  def ComboboxList: ComponentType[ComboboxListProps] = typings.reachCombobox.mod.ComboboxList.asInstanceOf[typings.react.mod.ComponentType[ComboboxListProps]]
+  def ComboboxList: ComponentType[ComboboxListProps] = typings.reachCombobox.mod.ComboboxList.asInstanceOf[ComponentType[ComboboxListProps]]
   @scala.inline
-  def ComboboxOption: ComponentType[ComboboxOptionProps] = typings.reachCombobox.mod.ComboboxOption.asInstanceOf[typings.react.mod.ComponentType[ComboboxOptionProps]]
+  def ComboboxOption: ComponentType[ComboboxOptionProps] = typings.reachCombobox.mod.ComboboxOption.asInstanceOf[ComponentType[ComboboxOptionProps]]
   @scala.inline
-  def ComboboxOptionText: ComponentType[js.Object] = typings.reachCombobox.mod.ComboboxOptionText.asInstanceOf[typings.react.mod.ComponentType[js.Object]]
+  def ComboboxOptionText: ComponentType[js.Object] = typings.reachCombobox.mod.ComboboxOptionText.asInstanceOf[ComponentType[js.Object]]
   @scala.inline
-  def ComboboxPopover: ComponentType[ComboboxPopoverProps] = typings.reachCombobox.mod.ComboboxPopover.asInstanceOf[typings.react.mod.ComponentType[ComboboxPopoverProps]]
+  def ComboboxPopover: ComponentType[ComboboxPopoverProps] = typings.reachCombobox.mod.ComboboxPopover.asInstanceOf[ComponentType[ComboboxPopoverProps]]
 }
 

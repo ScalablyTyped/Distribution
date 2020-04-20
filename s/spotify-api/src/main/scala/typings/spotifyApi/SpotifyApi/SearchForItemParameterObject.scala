@@ -11,38 +11,64 @@ import scala.scalajs.js.annotation._
   * Object for search parameters for searching for tracks, playlists, artists or albums.
   * See: [Search for an item](https://developer.spotify.com/web-api/search-item/)
   *
-  * q and type are not optional in the API, however they are marked as optional here, since various libraries
-  * implement them as function call parameters instead. This could be changed.
-  *
-  * @param q Required. The search query's keywords (and optional field filters and operators).
-  * @param type Required. A comma-separated list of item types to search across. Valid types are: album, artist, playlist, and track.
-  * @param market Optional. An ISO 3166-1 alpha-2 country code or the string from_token
-  * @param limit Optional. The maximum number of results to return. Default: 20. Minimum: 1. Maximum: 50.
-  * @param offset Optional. The index of the first result to return. Default: 0 (i.e., the first result). Maximum offset: 100.000. Use with limit to get the next page of search results.
+  * `q` and `type` are required in the API. Previous versions of the type declarations marked them
+  * as optional in order for external libraries to "implement them as function call parameters instead".
+  * Now, the type declaration shall mark them as required. If necessary, one can consider this to be a
+  * "breaking change". In that case, one can use TypeScript's built-in utility type `Omit<T, K>`.
+  * For example, one can remove the `q` and `type` by annotating the type
+  * as `Omit<SpotifyApi.SearchForItemParameterObject, "q" | "type">`.
   */
 trait SearchForItemParameterObject extends js.Object {
+  /**
+    * Possible values: `audio`.
+    * If `include_external=audio` is specified, the response will include any relevant audio content that is hosted externally.
+    * By default external content is filtered out from responses.
+    */
+  var include_external: js.UndefOr[String] = js.undefined
+  /**
+    * The maximum number of results to return.
+    * Default: `20`. Minimum: `1`. Maximum: `50`.
+    */
   var limit: js.UndefOr[Double] = js.undefined
+  /**
+    * An [ISO 3166-1 alpha-2 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) or the string `from_token`.
+    * If a country code is specified, only artists, albums, and tracks with content that is playable in that market is returned.
+    */
   var market: js.UndefOr[String] = js.undefined
+  /**
+    * The index of the first result to return.
+    * Default: `0` (first result). Maximum offset (including limit): `2,000`.
+    * Use with limit to get the next page of search results.
+    */
   var offset: js.UndefOr[Double] = js.undefined
-  var q: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
+  /**
+    * The search query's keywords (and optional field filters and operators).
+    */
+  var q: String
+  /**
+    * A comma-separated list of item types to search across. Valid types are: `album`, `artist`, `playlist`, and `track`.
+    * Search results include hits from all the specified item types.
+    * For example: `q=name:abacab&type=album,track` returns both albums and tracks with `“abacab”` included in their name.
+    */
+  var `type`: String
 }
 
 object SearchForItemParameterObject {
   @scala.inline
   def apply(
+    q: String,
+    `type`: String,
+    include_external: String = null,
     limit: Int | Double = null,
     market: String = null,
-    offset: Int | Double = null,
-    q: String = null,
-    `type`: String = null
+    offset: Int | Double = null
   ): SearchForItemParameterObject = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(q = q.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (include_external != null) __obj.updateDynamic("include_external")(include_external.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (market != null) __obj.updateDynamic("market")(market.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchForItemParameterObject]
   }
 }

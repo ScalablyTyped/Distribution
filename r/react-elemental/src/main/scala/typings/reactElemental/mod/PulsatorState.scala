@@ -12,7 +12,6 @@ object PulsatorState {
   @scala.inline
   def apply(color: js.Any): PulsatorState = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PulsatorState]
   }
 }

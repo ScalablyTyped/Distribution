@@ -14,14 +14,12 @@ trait Direction extends js.Object
 
 object Direction {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def down: typings.reactstrap.reactstrapStrings.down = "down".asInstanceOf[typings.reactstrap.reactstrapStrings.down]
   @scala.inline
-  def down: typings.reactstrap.reactstrapStrings.down = this.cast("down")
+  def left: typings.reactstrap.reactstrapStrings.left = "left".asInstanceOf[typings.reactstrap.reactstrapStrings.left]
   @scala.inline
-  def left: typings.reactstrap.reactstrapStrings.left = this.cast("left")
+  def right: typings.reactstrap.reactstrapStrings.right = "right".asInstanceOf[typings.reactstrap.reactstrapStrings.right]
   @scala.inline
-  def right: typings.reactstrap.reactstrapStrings.right = this.cast("right")
-  @scala.inline
-  def up: typings.reactstrap.reactstrapStrings.up = this.cast("up")
+  def up: typings.reactstrap.reactstrapStrings.up = "up".asInstanceOf[typings.reactstrap.reactstrapStrings.up]
 }
 

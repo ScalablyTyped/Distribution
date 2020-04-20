@@ -19,7 +19,6 @@ object DebugAdapterTrackerFactory {
   @scala.inline
   def apply(createDebugAdapterTracker: DebugSession => ProviderResult[DebugAdapterTracker]): DebugAdapterTrackerFactory = {
     val __obj = js.Dynamic.literal(createDebugAdapterTracker = js.Any.fromFunction1(createDebugAdapterTracker))
-  
     __obj.asInstanceOf[DebugAdapterTrackerFactory]
   }
 }

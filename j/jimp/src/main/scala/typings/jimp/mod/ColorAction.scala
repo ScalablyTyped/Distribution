@@ -14,7 +14,6 @@ object ColorAction {
   @scala.inline
   def apply(apply: ColorActionName, params: js.Any): ColorAction = {
     val __obj = js.Dynamic.literal(apply = apply.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ColorAction]
   }
 }

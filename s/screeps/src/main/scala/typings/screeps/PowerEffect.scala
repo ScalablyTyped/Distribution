@@ -30,7 +30,6 @@ object PowerEffect {
   @scala.inline
   def apply(effect: PowerConstant, level: Double, power: PowerConstant, ticksRemaining: Double): PowerEffect = {
     val __obj = js.Dynamic.literal(effect = effect.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], power = power.asInstanceOf[js.Any], ticksRemaining = ticksRemaining.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PowerEffect]
   }
 }

@@ -20,7 +20,6 @@ object GetContainerDefinitionArgs {
   @scala.inline
   def apply(containerName: String, taskDefinition: String): GetContainerDefinitionArgs = {
     val __obj = js.Dynamic.literal(containerName = containerName.asInstanceOf[js.Any], taskDefinition = taskDefinition.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetContainerDefinitionArgs]
   }
 }

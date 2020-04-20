@@ -20,7 +20,6 @@ object DragSource {
     isDragging: (DragDropMonitor, Identifier) => Boolean
   ): DragSource = {
     val __obj = js.Dynamic.literal(beginDrag = js.Any.fromFunction2(beginDrag), canDrag = js.Any.fromFunction2(canDrag), endDrag = js.Any.fromFunction2(endDrag), isDragging = js.Any.fromFunction2(isDragging))
-  
     __obj.asInstanceOf[DragSource]
   }
 }

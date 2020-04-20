@@ -24,7 +24,6 @@ object TransactionDescription {
     value: BigNumber
   ): TransactionDescription = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], decode = js.Any.fromFunction1(decode), name = name.asInstanceOf[js.Any], sighash = sighash.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TransactionDescription]
   }
 }

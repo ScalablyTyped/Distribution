@@ -45,7 +45,6 @@ object ITrucatedFormateMeasureByApproximateOptions {
     numBufferLines: Double
   ): ITrucatedFormateMeasureByApproximateOptions = {
     val __obj = js.Dynamic.literal(approximateCharWidth = approximateCharWidth.asInstanceOf[js.Any], approximateLineHeight = approximateLineHeight.asInstanceOf[js.Any], cellHorizontalPadding = cellHorizontalPadding.asInstanceOf[js.Any], numBufferLines = numBufferLines.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ITrucatedFormateMeasureByApproximateOptions]
   }
 }

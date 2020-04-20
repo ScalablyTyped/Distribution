@@ -13,7 +13,6 @@ object AnonPlatforms {
   @scala.inline
   def apply(platforms: js.Array[String], providesModuleNodeModules: js.Array[String]): AnonPlatforms = {
     val __obj = js.Dynamic.literal(platforms = platforms.asInstanceOf[js.Any], providesModuleNodeModules = providesModuleNodeModules.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPlatforms]
   }
 }

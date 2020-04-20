@@ -18,7 +18,6 @@ object TypeofPropertyBindingComposite {
   @scala.inline
   def apply(Composite: Instantiable2[/* targetGroup */ js.Any, /* path */ js.Any, Composite]): TypeofPropertyBindingComposite = {
     val __obj = js.Dynamic.literal(Composite = Composite.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofPropertyBindingComposite]
   }
 }

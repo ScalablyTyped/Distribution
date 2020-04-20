@@ -20,7 +20,6 @@ object DeleteFaqRequest {
   @scala.inline
   def apply(Id: FaqId, IndexId: IndexId): DeleteFaqRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], IndexId = IndexId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteFaqRequest]
   }
 }

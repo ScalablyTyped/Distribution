@@ -2,7 +2,9 @@ package typings.reactIntl
 
 import typings.intlMessageformat.mod.PrimitiveType
 import typings.react.mod.ComponentType
+import typings.reactIntl.htmlMessageMod.default
 import typings.reactIntl.mod.FormatNumberOptions
+import typings.reactIntl.mod.FormattedPlural.WrappedComponent
 import typings.reactIntl.typesMod.IntlShape
 import typings.std.Record
 import scala.scalajs.js
@@ -11,48 +13,42 @@ import scala.scalajs.js.annotation._
 
 object reactIntlComponents extends reactIntlProps {
   @scala.inline
-  def FormattedDate: ComponentType[FormattedDateProps] = typings.reactIntl.mod.FormattedDate.asInstanceOf[typings.react.mod.ComponentType[FormattedDateProps]]
+  def FormattedDate: ComponentType[FormattedDateProps] = typings.reactIntl.mod.FormattedDate.asInstanceOf[ComponentType[FormattedDateProps]]
   @scala.inline
-  def FormattedDateParts: ComponentType[FormattedDatePartsProps] = typings.reactIntl.mod.FormattedDateParts.asInstanceOf[typings.react.mod.ComponentType[FormattedDatePartsProps]]
+  def FormattedDateParts: ComponentType[FormattedDatePartsProps] = typings.reactIntl.mod.FormattedDateParts.asInstanceOf[ComponentType[FormattedDatePartsProps]]
   @scala.inline
-  def FormattedDisplayName: ComponentType[FormattedDisplayNameProps] = typings.reactIntl.mod.FormattedDisplayName.asInstanceOf[typings.react.mod.ComponentType[FormattedDisplayNameProps]]
+  def FormattedDisplayName: ComponentType[FormattedDisplayNameProps] = typings.reactIntl.mod.FormattedDisplayName.asInstanceOf[ComponentType[FormattedDisplayNameProps]]
   @scala.inline
-  def FormattedHTMLMessage: ComponentType[FormattedHTMLMessageProps[Record[String, PrimitiveType]]] = js.constructorOf[typings.reactIntl.mod.FormattedHTMLMessage].asInstanceOf[typings.react.mod.ComponentType[
-  FormattedHTMLMessageProps[
-    typings.std.Record[java.lang.String, typings.intlMessageformat.mod.PrimitiveType]
-  ]]]
+  def FormattedHTMLMessage: ComponentType[FormattedHTMLMessageProps[Record[String, PrimitiveType]]] = js.constructorOf[typings.reactIntl.mod.FormattedHTMLMessage].asInstanceOf[ComponentType[FormattedHTMLMessageProps[Record[String, PrimitiveType]]]]
   @scala.inline
-  def FormattedList: ComponentType[FormattedListProps] = typings.reactIntl.mod.FormattedList.asInstanceOf[typings.react.mod.ComponentType[FormattedListProps]]
+  def FormattedList: ComponentType[FormattedListProps] = typings.reactIntl.mod.FormattedList.asInstanceOf[ComponentType[FormattedListProps]]
   @scala.inline
-  def FormattedMessage[V /* <: Record[String, js.Any] */]: ComponentType[FormattedMessageProps[V]] = js.constructorOf[typings.reactIntl.mod.FormattedMessage[V]].asInstanceOf[typings.react.mod.ComponentType[FormattedMessageProps[V]]]
+  def FormattedMessage[V /* <: Record[String, js.Any] */]: ComponentType[FormattedMessageProps[V]] = js.constructorOf[typings.reactIntl.mod.FormattedMessage[V]].asInstanceOf[ComponentType[FormattedMessageProps[V]]]
   @scala.inline
-  def FormattedNumber: ComponentType[FormattedNumberProps] = typings.reactIntl.mod.FormattedNumber.asInstanceOf[typings.react.mod.ComponentType[FormattedNumberProps]]
+  def FormattedNumber: ComponentType[FormattedNumberProps] = typings.reactIntl.mod.FormattedNumber.asInstanceOf[ComponentType[FormattedNumberProps]]
   @scala.inline
-  def FormattedNumberParts: ComponentType[FormatNumberOptions with Anon3] = typings.reactIntl.mod.FormattedNumberParts.asInstanceOf[typings.react.mod.ComponentType[typings.reactIntl.mod.FormatNumberOptions with typings.reactIntl.Anon3]]
+  def FormattedNumberParts: ComponentType[FormatNumberOptions with Anon3] = typings.reactIntl.mod.FormattedNumberParts.asInstanceOf[ComponentType[FormatNumberOptions with Anon3]]
   @scala.inline
-  def FormattedPluralWrappedComponent: ComponentType[FormattedPluralWrappedComponentProps] = typings.reactIntl.mod.FormattedPlural.WrappedComponent.asInstanceOf[typings.react.mod.ComponentType[FormattedPluralWrappedComponentProps]]
+  def FormattedPluralWrappedComponent: ComponentType[FormattedPluralWrappedComponentProps] = WrappedComponent.asInstanceOf[ComponentType[FormattedPluralWrappedComponentProps]]
   @scala.inline
-  def FormattedRelativeTime: ComponentType[FormattedRelativeTimeProps] = js.constructorOf[typings.reactIntl.mod.FormattedRelativeTime].asInstanceOf[typings.react.mod.ComponentType[FormattedRelativeTimeProps]]
+  def FormattedRelativeTime: ComponentType[FormattedRelativeTimeProps] = js.constructorOf[typings.reactIntl.mod.FormattedRelativeTime].asInstanceOf[ComponentType[FormattedRelativeTimeProps]]
   @scala.inline
-  def FormattedTime: ComponentType[FormattedTimeProps] = typings.reactIntl.mod.FormattedTime.asInstanceOf[typings.react.mod.ComponentType[FormattedTimeProps]]
+  def FormattedTime: ComponentType[FormattedTimeProps] = typings.reactIntl.mod.FormattedTime.asInstanceOf[ComponentType[FormattedTimeProps]]
   @scala.inline
-  def FormattedTimeParts: ComponentType[FormattedTimePartsProps] = typings.reactIntl.mod.FormattedTimeParts.asInstanceOf[typings.react.mod.ComponentType[FormattedTimePartsProps]]
+  def FormattedTimeParts: ComponentType[FormattedTimePartsProps] = typings.reactIntl.mod.FormattedTimeParts.asInstanceOf[ComponentType[FormattedTimePartsProps]]
   @scala.inline
-  def HtmlMessage: ComponentType[HtmlMessageProps[Record[String, PrimitiveType]]] = js.constructorOf[typings.reactIntl.htmlMessageMod.default].asInstanceOf[typings.react.mod.ComponentType[
-  HtmlMessageProps[
-    typings.std.Record[java.lang.String, typings.intlMessageformat.mod.PrimitiveType]
-  ]]]
+  def HtmlMessage: ComponentType[HtmlMessageProps[Record[String, PrimitiveType]]] = js.constructorOf[default].asInstanceOf[ComponentType[HtmlMessageProps[Record[String, PrimitiveType]]]]
   @scala.inline
-  def IntlProvider: ComponentType[IntlProviderProps] = js.constructorOf[typings.reactIntl.mod.IntlProvider].asInstanceOf[typings.react.mod.ComponentType[IntlProviderProps]]
+  def IntlProvider: ComponentType[IntlProviderProps] = js.constructorOf[typings.reactIntl.mod.IntlProvider].asInstanceOf[ComponentType[IntlProviderProps]]
   @scala.inline
-  def Message[V /* <: Record[String, js.Any] */]: ComponentType[MessageProps[V]] = js.constructorOf[typings.reactIntl.messageMod.default[V]].asInstanceOf[typings.react.mod.ComponentType[MessageProps[V]]]
+  def Message[V /* <: Record[String, js.Any] */]: ComponentType[MessageProps[V]] = js.constructorOf[typings.reactIntl.messageMod.default[V]].asInstanceOf[ComponentType[MessageProps[V]]]
   @scala.inline
-  def PluralWrappedComponent: ComponentType[PluralWrappedComponentProps] = typings.reactIntl.pluralMod.default.WrappedComponent.asInstanceOf[typings.react.mod.ComponentType[PluralWrappedComponentProps]]
+  def PluralWrappedComponent: ComponentType[PluralWrappedComponentProps] = typings.reactIntl.pluralMod.default.WrappedComponent.asInstanceOf[ComponentType[PluralWrappedComponentProps]]
   @scala.inline
-  def Provider: ComponentType[ProviderProps[IntlShape]] = typings.reactIntl.injectIntlMod.Provider.asInstanceOf[typings.react.mod.ComponentType[ProviderProps[typings.reactIntl.typesMod.IntlShape]]]
+  def Provider: ComponentType[ProviderProps[IntlShape]] = typings.reactIntl.injectIntlMod.Provider.asInstanceOf[ComponentType[ProviderProps[IntlShape]]]
   @scala.inline
-  def RawIntlProvider: ComponentType[RawIntlProviderProps[typings.reactIntl.mod.IntlShape]] = typings.reactIntl.mod.RawIntlProvider.asInstanceOf[typings.react.mod.ComponentType[RawIntlProviderProps[typings.reactIntl.mod.IntlShape]]]
+  def RawIntlProvider: ComponentType[RawIntlProviderProps[typings.reactIntl.mod.IntlShape]] = typings.reactIntl.mod.RawIntlProvider.asInstanceOf[ComponentType[RawIntlProviderProps[typings.reactIntl.mod.IntlShape]]]
   @scala.inline
-  def Relative: ComponentType[RelativeProps] = js.constructorOf[typings.reactIntl.relativeMod.default].asInstanceOf[typings.react.mod.ComponentType[RelativeProps]]
+  def Relative: ComponentType[RelativeProps] = js.constructorOf[typings.reactIntl.relativeMod.default].asInstanceOf[ComponentType[RelativeProps]]
 }
 

@@ -13,7 +13,6 @@ object IDateStructStaticReturns {
   @scala.inline
   def apply(H: Double, YYYYMMDD: Double): IDateStructStaticReturns = {
     val __obj = js.Dynamic.literal(H = H.asInstanceOf[js.Any], YYYYMMDD = YYYYMMDD.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDateStructStaticReturns]
   }
 }

@@ -22,7 +22,6 @@ object RoomTerrain {
   @scala.inline
   def apply(get: (Double, Double) => `0` | TERRAIN_MASK_WALL | TERRAIN_MASK_SWAMP): RoomTerrain = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get))
-  
     __obj.asInstanceOf[RoomTerrain]
   }
 }

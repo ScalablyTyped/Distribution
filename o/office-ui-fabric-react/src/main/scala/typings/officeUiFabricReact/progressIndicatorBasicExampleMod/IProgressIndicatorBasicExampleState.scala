@@ -12,7 +12,6 @@ object IProgressIndicatorBasicExampleState {
   @scala.inline
   def apply(percentComplete: Double): IProgressIndicatorBasicExampleState = {
     val __obj = js.Dynamic.literal(percentComplete = percentComplete.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IProgressIndicatorBasicExampleState]
   }
 }

@@ -22,30 +22,28 @@ trait badges extends js.Object
 
 object badges {
   @scala.inline
-  def activity: typings.azureSb.azureSbStrings.activity = this.cast("activity")
+  def activity: typings.azureSb.azureSbStrings.activity = "activity".asInstanceOf[typings.azureSb.azureSbStrings.activity]
   @scala.inline
-  def alert: typings.azureSb.azureSbStrings.alert = this.cast("alert")
+  def alert: typings.azureSb.azureSbStrings.alert = "alert".asInstanceOf[typings.azureSb.azureSbStrings.alert]
   @scala.inline
-  def attention: typings.azureSb.azureSbStrings.attention = this.cast("attention")
+  def attention: typings.azureSb.azureSbStrings.attention = "attention".asInstanceOf[typings.azureSb.azureSbStrings.attention]
   @scala.inline
-  def available: typings.azureSb.azureSbStrings.available = this.cast("available")
+  def available: typings.azureSb.azureSbStrings.available = "available".asInstanceOf[typings.azureSb.azureSbStrings.available]
   @scala.inline
-  def away: typings.azureSb.azureSbStrings.away = this.cast("away")
+  def away: typings.azureSb.azureSbStrings.away = "away".asInstanceOf[typings.azureSb.azureSbStrings.away]
   @scala.inline
-  def busy: typings.azureSb.azureSbStrings.busy = this.cast("busy")
+  def busy: typings.azureSb.azureSbStrings.busy = "busy".asInstanceOf[typings.azureSb.azureSbStrings.busy]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def error: typings.azureSb.azureSbStrings.error = "error".asInstanceOf[typings.azureSb.azureSbStrings.error]
   @scala.inline
-  def error: typings.azureSb.azureSbStrings.error = this.cast("error")
+  def newMessage: typings.azureSb.azureSbStrings.newMessage = "newMessage".asInstanceOf[typings.azureSb.azureSbStrings.newMessage]
   @scala.inline
-  def newMessage: typings.azureSb.azureSbStrings.newMessage = this.cast("newMessage")
+  def none: typings.azureSb.azureSbStrings.none = "none".asInstanceOf[typings.azureSb.azureSbStrings.none]
   @scala.inline
-  def none: typings.azureSb.azureSbStrings.none = this.cast("none")
+  def paused: typings.azureSb.azureSbStrings.paused = "paused".asInstanceOf[typings.azureSb.azureSbStrings.paused]
   @scala.inline
-  def paused: typings.azureSb.azureSbStrings.paused = this.cast("paused")
+  def playing: typings.azureSb.azureSbStrings.playing = "playing".asInstanceOf[typings.azureSb.azureSbStrings.playing]
   @scala.inline
-  def playing: typings.azureSb.azureSbStrings.playing = this.cast("playing")
-  @scala.inline
-  def unavailable: typings.azureSb.azureSbStrings.unavailable = this.cast("unavailable")
+  def unavailable: typings.azureSb.azureSbStrings.unavailable = "unavailable".asInstanceOf[typings.azureSb.azureSbStrings.unavailable]
 }
 

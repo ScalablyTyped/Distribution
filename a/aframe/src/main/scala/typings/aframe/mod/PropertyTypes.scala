@@ -25,36 +25,34 @@ trait PropertyTypes extends js.Object
 
 object PropertyTypes {
   @scala.inline
-  def array: typings.aframe.aframeStrings.array = this.cast("array")
+  def array: typings.aframe.aframeStrings.array = "array".asInstanceOf[typings.aframe.aframeStrings.array]
   @scala.inline
-  def asset: typings.aframe.aframeStrings.asset = this.cast("asset")
+  def asset: typings.aframe.aframeStrings.asset = "asset".asInstanceOf[typings.aframe.aframeStrings.asset]
   @scala.inline
-  def audio: typings.aframe.aframeStrings.audio = this.cast("audio")
+  def audio: typings.aframe.aframeStrings.audio = "audio".asInstanceOf[typings.aframe.aframeStrings.audio]
   @scala.inline
-  def boolean: typings.aframe.aframeStrings.boolean = this.cast("boolean")
+  def boolean: typings.aframe.aframeStrings.boolean = "boolean".asInstanceOf[typings.aframe.aframeStrings.boolean]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def color: typings.aframe.aframeStrings.color = "color".asInstanceOf[typings.aframe.aframeStrings.color]
   @scala.inline
-  def color: typings.aframe.aframeStrings.color = this.cast("color")
+  def int: typings.aframe.aframeStrings.int = "int".asInstanceOf[typings.aframe.aframeStrings.int]
   @scala.inline
-  def int: typings.aframe.aframeStrings.int = this.cast("int")
+  def map: typings.aframe.aframeStrings.map = "map".asInstanceOf[typings.aframe.aframeStrings.map]
   @scala.inline
-  def map: typings.aframe.aframeStrings.map = this.cast("map")
+  def model: typings.aframe.aframeStrings.model = "model".asInstanceOf[typings.aframe.aframeStrings.model]
   @scala.inline
-  def model: typings.aframe.aframeStrings.model = this.cast("model")
+  def number: typings.aframe.aframeStrings.number = "number".asInstanceOf[typings.aframe.aframeStrings.number]
   @scala.inline
-  def number: typings.aframe.aframeStrings.number = this.cast("number")
+  def selector: typings.aframe.aframeStrings.selector = "selector".asInstanceOf[typings.aframe.aframeStrings.selector]
   @scala.inline
-  def selector: typings.aframe.aframeStrings.selector = this.cast("selector")
+  def selectorAll: typings.aframe.aframeStrings.selectorAll = "selectorAll".asInstanceOf[typings.aframe.aframeStrings.selectorAll]
   @scala.inline
-  def selectorAll: typings.aframe.aframeStrings.selectorAll = this.cast("selectorAll")
+  def string: typings.aframe.aframeStrings.string = "string".asInstanceOf[typings.aframe.aframeStrings.string]
   @scala.inline
-  def string: typings.aframe.aframeStrings.string = this.cast("string")
+  def vec2: typings.aframe.aframeStrings.vec2 = "vec2".asInstanceOf[typings.aframe.aframeStrings.vec2]
   @scala.inline
-  def vec2: typings.aframe.aframeStrings.vec2 = this.cast("vec2")
+  def vec3: typings.aframe.aframeStrings.vec3 = "vec3".asInstanceOf[typings.aframe.aframeStrings.vec3]
   @scala.inline
-  def vec3: typings.aframe.aframeStrings.vec3 = this.cast("vec3")
-  @scala.inline
-  def vec4: typings.aframe.aframeStrings.vec4 = this.cast("vec4")
+  def vec4: typings.aframe.aframeStrings.vec4 = "vec4".asInstanceOf[typings.aframe.aframeStrings.vec4]
 }
 

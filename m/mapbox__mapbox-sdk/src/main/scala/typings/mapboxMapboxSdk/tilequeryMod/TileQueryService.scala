@@ -17,7 +17,6 @@ object TileQueryService {
   @scala.inline
   def apply(listFeatures: TileQueryRequest => MapiRequest): TileQueryService = {
     val __obj = js.Dynamic.literal(listFeatures = js.Any.fromFunction1(listFeatures))
-  
     __obj.asInstanceOf[TileQueryService]
   }
 }

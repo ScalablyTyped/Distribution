@@ -30,7 +30,6 @@ object Receiver {
   @scala.inline
   def apply(address: String, amount_charged: Double, amount_received: Double, amount_returned: Double): Receiver = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], amount_charged = amount_charged.asInstanceOf[js.Any], amount_received = amount_received.asInstanceOf[js.Any], amount_returned = amount_returned.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Receiver]
   }
 }

@@ -12,7 +12,6 @@ object AnonPercent {
   @scala.inline
   def apply(percent: Double): AnonPercent = {
     val __obj = js.Dynamic.literal(percent = percent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPercent]
   }
 }

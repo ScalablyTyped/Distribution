@@ -15,7 +15,6 @@ object IRequestSuccessResult {
   @scala.inline
   def apply(data: AnyObject | String | ArrayBuffer, header: AnyObject, statusCode: Double): IRequestSuccessResult = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IRequestSuccessResult]
   }
 }

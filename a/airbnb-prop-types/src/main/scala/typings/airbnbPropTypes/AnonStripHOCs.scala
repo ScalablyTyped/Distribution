@@ -12,7 +12,6 @@ object AnonStripHOCs {
   @scala.inline
   def apply(stripHOCs: js.Array[String]): AnonStripHOCs = {
     val __obj = js.Dynamic.literal(stripHOCs = stripHOCs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonStripHOCs]
   }
 }

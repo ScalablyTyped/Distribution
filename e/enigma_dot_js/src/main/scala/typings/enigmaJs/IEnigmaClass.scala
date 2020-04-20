@@ -22,7 +22,6 @@ object IEnigmaClass {
   @scala.inline
   def apply(create: IConfig => ISession): IEnigmaClass = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
-  
     __obj.asInstanceOf[IEnigmaClass]
   }
 }

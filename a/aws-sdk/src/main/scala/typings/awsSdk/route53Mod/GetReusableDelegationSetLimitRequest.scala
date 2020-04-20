@@ -20,7 +20,6 @@ object GetReusableDelegationSetLimitRequest {
   @scala.inline
   def apply(DelegationSetId: ResourceId, Type: ReusableDelegationSetLimitType): GetReusableDelegationSetLimitRequest = {
     val __obj = js.Dynamic.literal(DelegationSetId = DelegationSetId.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetReusableDelegationSetLimitRequest]
   }
 }

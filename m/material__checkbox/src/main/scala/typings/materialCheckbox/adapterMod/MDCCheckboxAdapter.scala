@@ -36,7 +36,6 @@ object MDCCheckboxAdapter {
     setNativeControlAttr: (String, String) => Unit
   ): MDCCheckboxAdapter = {
     val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), deregisterAnimationEndHandler = js.Any.fromFunction1(deregisterAnimationEndHandler), deregisterChangeHandler = js.Any.fromFunction1(deregisterChangeHandler), forceLayout = js.Any.fromFunction0(forceLayout), getNativeControl = js.Any.fromFunction0(getNativeControl), isAttachedToDOM = js.Any.fromFunction0(isAttachedToDOM), registerAnimationEndHandler = js.Any.fromFunction1(registerAnimationEndHandler), registerChangeHandler = js.Any.fromFunction1(registerChangeHandler), removeClass = js.Any.fromFunction1(removeClass), removeNativeControlAttr = js.Any.fromFunction1(removeNativeControlAttr), setNativeControlAttr = js.Any.fromFunction2(setNativeControlAttr))
-  
     __obj.asInstanceOf[MDCCheckboxAdapter]
   }
 }

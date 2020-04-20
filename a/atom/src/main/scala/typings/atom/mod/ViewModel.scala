@@ -12,7 +12,6 @@ object ViewModel {
   @scala.inline
   def apply(getTitle: () => String): ViewModel = {
     val __obj = js.Dynamic.literal(getTitle = js.Any.fromFunction0(getTitle))
-  
     __obj.asInstanceOf[ViewModel]
   }
 }

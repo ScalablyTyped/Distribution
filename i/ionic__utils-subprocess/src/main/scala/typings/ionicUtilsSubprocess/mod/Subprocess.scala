@@ -22,7 +22,7 @@ class Subprocess protected () extends js.Object {
   def bashifyArg(arg: String): String = js.native
   def combinedOutput(): js.Promise[String] = js.native
   def maskArg(arg: String): String = js.native
-  def options(): ReadonlySpawnOptions = js.native
+  def options: ReadonlySpawnOptions = js.native
   def output(): js.Promise[String] = js.native
   def run(): PromisevoidpChildProcess = js.native
   def spawn(): ChildProcess = js.native

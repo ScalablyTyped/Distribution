@@ -15,7 +15,6 @@ object IAriaService {
   @scala.inline
   def apply(config: IAriaAttribute => Boolean): IAriaService = {
     val __obj = js.Dynamic.literal(config = js.Any.fromFunction1(config))
-  
     __obj.asInstanceOf[IAriaService]
   }
 }

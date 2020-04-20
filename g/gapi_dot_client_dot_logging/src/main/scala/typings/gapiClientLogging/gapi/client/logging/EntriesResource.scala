@@ -23,7 +23,6 @@ object EntriesResource {
     write: AnonPrettyPrint => Request_[js.Object]
   ): EntriesResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list), write = js.Any.fromFunction1(write))
-  
     __obj.asInstanceOf[EntriesResource]
   }
 }

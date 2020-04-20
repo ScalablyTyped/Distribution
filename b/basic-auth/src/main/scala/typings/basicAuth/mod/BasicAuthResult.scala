@@ -13,7 +13,6 @@ object BasicAuthResult {
   @scala.inline
   def apply(name: String, pass: String): BasicAuthResult = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], pass = pass.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BasicAuthResult]
   }
 }

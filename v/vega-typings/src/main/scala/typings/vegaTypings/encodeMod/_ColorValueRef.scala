@@ -10,7 +10,6 @@ object _ColorValueRef {
   @scala.inline
   def Anon0(value: LinearGradient | RadialGradient): _ColorValueRef = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[_ColorValueRef]
   }
   @scala.inline
@@ -29,7 +28,6 @@ object _ColorValueRef {
   @scala.inline
   def AnonColor(color: ColorRGB | ColorHSL | ColorLAB | ColorHCL): _ColorValueRef = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[_ColorValueRef]
   }
 }

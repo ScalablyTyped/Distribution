@@ -16,7 +16,6 @@ object DescribeAuthorizerRequest {
   @scala.inline
   def apply(authorizerName: AuthorizerName): DescribeAuthorizerRequest = {
     val __obj = js.Dynamic.literal(authorizerName = authorizerName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeAuthorizerRequest]
   }
 }

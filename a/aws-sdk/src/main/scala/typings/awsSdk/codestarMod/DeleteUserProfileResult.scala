@@ -16,7 +16,6 @@ object DeleteUserProfileResult {
   @scala.inline
   def apply(userArn: UserArn): DeleteUserProfileResult = {
     val __obj = js.Dynamic.literal(userArn = userArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteUserProfileResult]
   }
 }

@@ -63,7 +63,6 @@ object Typeofurlbar {
     openViewOnFocus: Setting
   ): Typeofurlbar = {
     val __obj = js.Dynamic.literal(contextualTip = contextualTip.asInstanceOf[js.Any], engagementTelemetry = engagementTelemetry.asInstanceOf[js.Any], onBehaviorRequested = onBehaviorRequested.asInstanceOf[js.Any], onQueryCanceled = onQueryCanceled.asInstanceOf[js.Any], onResultsRequested = onResultsRequested.asInstanceOf[js.Any], openViewOnFocus = openViewOnFocus.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Typeofurlbar]
   }
 }

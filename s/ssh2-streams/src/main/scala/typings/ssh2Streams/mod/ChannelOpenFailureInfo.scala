@@ -15,7 +15,6 @@ object ChannelOpenFailureInfo {
   @scala.inline
   def apply(description: String, reason: String, reasonCode: Double, recipient: Double): ChannelOpenFailureInfo = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], reasonCode = reasonCode.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChannelOpenFailureInfo]
   }
 }

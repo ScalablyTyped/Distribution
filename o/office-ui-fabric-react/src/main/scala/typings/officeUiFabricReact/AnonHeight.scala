@@ -15,7 +15,6 @@ object AnonHeight {
   @scala.inline
   def apply(height: Double, imageFit: ImageFit, width: Double): AnonHeight = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], imageFit = imageFit.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHeight]
   }
 }

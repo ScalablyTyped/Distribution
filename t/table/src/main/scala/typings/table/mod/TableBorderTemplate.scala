@@ -14,14 +14,12 @@ trait TableBorderTemplate extends js.Object
 
 object TableBorderTemplate {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def honeywell: typings.table.tableStrings.honeywell = "honeywell".asInstanceOf[typings.table.tableStrings.honeywell]
   @scala.inline
-  def honeywell: typings.table.tableStrings.honeywell = this.cast("honeywell")
+  def norc: typings.table.tableStrings.norc = "norc".asInstanceOf[typings.table.tableStrings.norc]
   @scala.inline
-  def norc: typings.table.tableStrings.norc = this.cast("norc")
+  def ramac: typings.table.tableStrings.ramac = "ramac".asInstanceOf[typings.table.tableStrings.ramac]
   @scala.inline
-  def ramac: typings.table.tableStrings.ramac = this.cast("ramac")
-  @scala.inline
-  def void: typings.table.tableStrings.void = this.cast("void")
+  def void: typings.table.tableStrings.void = "void".asInstanceOf[typings.table.tableStrings.void]
 }
 

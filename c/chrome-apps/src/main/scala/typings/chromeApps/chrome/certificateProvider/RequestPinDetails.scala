@@ -31,15 +31,18 @@ trait RequestPinDetails extends js.Object {
   var errorType: js.UndefOr[
     ToStringLiteral[
       AnonINVALIDPIN, 
-      String, 
-      Exclude[String, INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR]
+      INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR, 
+      Exclude[
+        INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR, 
+        INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR
+      ]
     ]
   ] = js.undefined
   /**
     * The type of code requested. Default is PIN.
     * @see PinRequestType
     */
-  var requestType: js.UndefOr[ToStringLiteral[AnonPIN, String, Exclude[String, PIN | PUK]]] = js.undefined
+  var requestType: js.UndefOr[ToStringLiteral[AnonPIN, PIN | PUK, Exclude[PIN | PUK, PIN | PUK]]] = js.undefined
   /**
     * The ID given by Chrome in SignRequest.
     */
@@ -53,10 +56,13 @@ object RequestPinDetails {
     attemptsLeft: Int | Double = null,
     errorType: ToStringLiteral[
       AnonINVALIDPIN, 
-      String, 
-      Exclude[String, INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR]
+      INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR, 
+      Exclude[
+        INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR, 
+        INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR
+      ]
     ] = null,
-    requestType: ToStringLiteral[AnonPIN, String, Exclude[String, PIN | PUK]] = null
+    requestType: ToStringLiteral[AnonPIN, PIN | PUK, Exclude[PIN | PUK, PIN | PUK]] = null
   ): RequestPinDetails = {
     val __obj = js.Dynamic.literal(signRequestId = signRequestId.asInstanceOf[js.Any])
     if (attemptsLeft != null) __obj.updateDynamic("attemptsLeft")(attemptsLeft.asInstanceOf[js.Any])

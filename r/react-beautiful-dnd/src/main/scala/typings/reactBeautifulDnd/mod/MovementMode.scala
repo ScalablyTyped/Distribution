@@ -12,10 +12,8 @@ trait MovementMode extends js.Object
 
 object MovementMode {
   @scala.inline
-  def FLUID: typings.reactBeautifulDnd.reactBeautifulDndStrings.FLUID = this.cast("FLUID")
+  def FLUID: typings.reactBeautifulDnd.reactBeautifulDndStrings.FLUID = "FLUID".asInstanceOf[typings.reactBeautifulDnd.reactBeautifulDndStrings.FLUID]
   @scala.inline
-  def SNAP: typings.reactBeautifulDnd.reactBeautifulDndStrings.SNAP = this.cast("SNAP")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SNAP: typings.reactBeautifulDnd.reactBeautifulDndStrings.SNAP = "SNAP".asInstanceOf[typings.reactBeautifulDnd.reactBeautifulDndStrings.SNAP]
 }
 

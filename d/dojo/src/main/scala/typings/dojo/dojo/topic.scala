@@ -33,7 +33,6 @@ object topic {
   @scala.inline
   def apply(publish: (String, js.Object) => js.Any, subscribe: (String, js.Function) => js.Any): topic = {
     val __obj = js.Dynamic.literal(publish = js.Any.fromFunction2(publish), subscribe = js.Any.fromFunction2(subscribe))
-  
     __obj.asInstanceOf[topic]
   }
 }

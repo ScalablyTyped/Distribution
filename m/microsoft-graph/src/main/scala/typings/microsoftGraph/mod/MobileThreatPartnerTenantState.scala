@@ -14,14 +14,12 @@ trait MobileThreatPartnerTenantState extends js.Object
 
 object MobileThreatPartnerTenantState {
   @scala.inline
-  def available: typings.microsoftGraph.microsoftGraphStrings.available = this.cast("available")
+  def available: typings.microsoftGraph.microsoftGraphStrings.available = "available".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.available]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def enabled: typings.microsoftGraph.microsoftGraphStrings.enabled = "enabled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.enabled]
   @scala.inline
-  def enabled: typings.microsoftGraph.microsoftGraphStrings.enabled = this.cast("enabled")
+  def unavailable: typings.microsoftGraph.microsoftGraphStrings.unavailable = "unavailable".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unavailable]
   @scala.inline
-  def unavailable: typings.microsoftGraph.microsoftGraphStrings.unavailable = this.cast("unavailable")
-  @scala.inline
-  def unresponsive: typings.microsoftGraph.microsoftGraphStrings.unresponsive = this.cast("unresponsive")
+  def unresponsive: typings.microsoftGraph.microsoftGraphStrings.unresponsive = "unresponsive".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unresponsive]
 }
 

@@ -22,7 +22,6 @@ object AnonMarginLeft {
     paddingVertical: Double
   ): AnonMarginLeft = {
     val __obj = js.Dynamic.literal(alignItems = alignItems.asInstanceOf[js.Any], flexDirection = flexDirection.asInstanceOf[js.Any], marginLeft = marginLeft.asInstanceOf[js.Any], paddingRight = paddingRight.asInstanceOf[js.Any], paddingVertical = paddingVertical.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMarginLeft]
   }
 }

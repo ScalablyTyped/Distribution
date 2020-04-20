@@ -21,7 +21,6 @@ object ICachedFileUpdaterStatics {
     setUpdateInformation: (IStorageFile, String, ReadActivationMode, WriteActivationMode, CachedFileOptions) => Unit
   ): ICachedFileUpdaterStatics = {
     val __obj = js.Dynamic.literal(setUpdateInformation = js.Any.fromFunction5(setUpdateInformation))
-  
     __obj.asInstanceOf[ICachedFileUpdaterStatics]
   }
 }

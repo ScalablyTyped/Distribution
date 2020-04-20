@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("type-fest/source/except", JSImport.Namespace)
 @js.native
 object exceptMod extends js.Object {
-  type Except[ObjectType, KeysType /* <: String */] = Pick[ObjectType, Exclude[String, KeysType]]
+  type Except[ObjectType, KeysType /* <: /* keyof ObjectType */ String */] = Pick[ObjectType, Exclude[/* keyof ObjectType */ String, KeysType]]
 }
 

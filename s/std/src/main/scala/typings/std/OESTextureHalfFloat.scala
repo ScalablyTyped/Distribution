@@ -13,7 +13,6 @@ object OESTextureHalfFloat {
   @scala.inline
   def apply(HALF_FLOAT_OES: GLenum): OESTextureHalfFloat = {
     val __obj = js.Dynamic.literal(HALF_FLOAT_OES = HALF_FLOAT_OES.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OESTextureHalfFloat]
   }
 }

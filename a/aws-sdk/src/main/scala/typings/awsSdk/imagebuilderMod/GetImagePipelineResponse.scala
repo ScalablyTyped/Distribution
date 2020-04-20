@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetImagePipelineResponse extends js.Object {
   /**
-    *  The image pipeline object. 
+    * The image pipeline object. 
     */
   var imagePipeline: js.UndefOr[ImagePipeline] = js.native
   /**
-    *  The request ID that uniquely identifies this request. 
+    * The request ID that uniquely identifies this request. 
     */
   var requestId: js.UndefOr[NonEmptyString] = js.native
 }

@@ -48,7 +48,7 @@ trait Extent
     */
   val width: Double = js.native
   /**
-    * The bottom-right X-coordinate of an extent envelope.
+    * The maximum X-coordinate of an extent envelope.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#xmax)
     *
@@ -56,7 +56,7 @@ trait Extent
     */
   var xmax: Double = js.native
   /**
-    * The top-left X-coordinate of an extent envelope.
+    * The minimum X-coordinate of an extent envelope.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#xmin)
     *
@@ -64,7 +64,7 @@ trait Extent
     */
   var xmin: Double = js.native
   /**
-    * The top-right Y-coordinate of an extent envelope.
+    * The maximum Y-coordinate of an extent envelope.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#ymax)
     *
@@ -72,7 +72,7 @@ trait Extent
     */
   var ymax: Double = js.native
   /**
-    * The bottom-left Y-coordinate of an extent envelope.
+    * The minimum Y-coordinate of an extent envelope.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#ymin)
     *

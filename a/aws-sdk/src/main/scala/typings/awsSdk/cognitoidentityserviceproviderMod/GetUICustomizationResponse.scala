@@ -16,7 +16,6 @@ object GetUICustomizationResponse {
   @scala.inline
   def apply(UICustomization: UICustomizationType): GetUICustomizationResponse = {
     val __obj = js.Dynamic.literal(UICustomization = UICustomization.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetUICustomizationResponse]
   }
 }

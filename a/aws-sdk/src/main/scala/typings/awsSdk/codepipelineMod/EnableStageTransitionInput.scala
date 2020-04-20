@@ -24,7 +24,6 @@ object EnableStageTransitionInput {
   @scala.inline
   def apply(pipelineName: PipelineName, stageName: StageName, transitionType: StageTransitionType): EnableStageTransitionInput = {
     val __obj = js.Dynamic.literal(pipelineName = pipelineName.asInstanceOf[js.Any], stageName = stageName.asInstanceOf[js.Any], transitionType = transitionType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EnableStageTransitionInput]
   }
 }

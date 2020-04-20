@@ -23,7 +23,6 @@ object AnonDisabled {
     target: () => Window_
   ): AnonDisabled = {
     val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], monitorBufferTime = monitorBufferTime.asInstanceOf[js.Any], monitorWindowResize = monitorWindowResize.asInstanceOf[js.Any], onAlign = js.Any.fromFunction0(onAlign), target = js.Any.fromFunction0(target))
-  
     __obj.asInstanceOf[AnonDisabled]
   }
 }

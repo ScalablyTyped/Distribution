@@ -19,7 +19,6 @@ object AnonConnected {
   @scala.inline
   def apply(connected: Boolean, deviceId: String): AnonConnected = {
     val __obj = js.Dynamic.literal(connected = connected.asInstanceOf[js.Any], deviceId = deviceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonConnected]
   }
 }

@@ -79,144 +79,142 @@ trait ASTNodeTypeString extends js.Object
 
 object ASTNodeTypeString {
   @scala.inline
-  def ArrayTypeName: typings.solidityParserAntlr.solidityParserAntlrStrings.ArrayTypeName = this.cast("ArrayTypeName")
+  def ArrayTypeName: typings.solidityParserAntlr.solidityParserAntlrStrings.ArrayTypeName = "ArrayTypeName".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.ArrayTypeName]
   @scala.inline
-  def AssemblyAssignment: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyAssignment = this.cast("AssemblyAssignment")
+  def AssemblyAssignment: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyAssignment = "AssemblyAssignment".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyAssignment]
   @scala.inline
-  def AssemblyBlock: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyBlock = this.cast("AssemblyBlock")
+  def AssemblyBlock: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyBlock = "AssemblyBlock".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyBlock]
   @scala.inline
-  def AssemblyCall: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyCall = this.cast("AssemblyCall")
+  def AssemblyCall: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyCall = "AssemblyCall".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyCall]
   @scala.inline
-  def AssemblyCase: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyCase = this.cast("AssemblyCase")
+  def AssemblyCase: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyCase = "AssemblyCase".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyCase]
   @scala.inline
-  def AssemblyFor: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyFor = this.cast("AssemblyFor")
+  def AssemblyFor: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyFor = "AssemblyFor".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyFor]
   @scala.inline
-  def AssemblyFunctionDefinition: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyFunctionDefinition = this.cast("AssemblyFunctionDefinition")
+  def AssemblyFunctionDefinition: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyFunctionDefinition = "AssemblyFunctionDefinition".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyFunctionDefinition]
   @scala.inline
-  def AssemblyFunctionReturns: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyFunctionReturns = this.cast("AssemblyFunctionReturns")
+  def AssemblyFunctionReturns: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyFunctionReturns = "AssemblyFunctionReturns".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyFunctionReturns]
   @scala.inline
-  def AssemblyIf: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyIf = this.cast("AssemblyIf")
+  def AssemblyIf: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyIf = "AssemblyIf".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyIf]
   @scala.inline
-  def AssemblyItem: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyItem = this.cast("AssemblyItem")
+  def AssemblyItem: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyItem = "AssemblyItem".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyItem]
   @scala.inline
-  def AssemblyLiteral: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyLiteral = this.cast("AssemblyLiteral")
+  def AssemblyLiteral: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyLiteral = "AssemblyLiteral".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyLiteral]
   @scala.inline
-  def AssemblyLocalDefinition: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyLocalDefinition = this.cast("AssemblyLocalDefinition")
+  def AssemblyLocalDefinition: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyLocalDefinition = "AssemblyLocalDefinition".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyLocalDefinition]
   @scala.inline
-  def AssemblyStackAssignment: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyStackAssignment = this.cast("AssemblyStackAssignment")
+  def AssemblyStackAssignment: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyStackAssignment = "AssemblyStackAssignment".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyStackAssignment]
   @scala.inline
-  def AssemblySwitch: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblySwitch = this.cast("AssemblySwitch")
+  def AssemblySwitch: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblySwitch = "AssemblySwitch".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblySwitch]
   @scala.inline
-  def BinaryOperation: typings.solidityParserAntlr.solidityParserAntlrStrings.BinaryOperation = this.cast("BinaryOperation")
+  def BinaryOperation: typings.solidityParserAntlr.solidityParserAntlrStrings.BinaryOperation = "BinaryOperation".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.BinaryOperation]
   @scala.inline
-  def Block: typings.solidityParserAntlr.solidityParserAntlrStrings.Block = this.cast("Block")
+  def Block: typings.solidityParserAntlr.solidityParserAntlrStrings.Block = "Block".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.Block]
   @scala.inline
-  def BooleanLiteral: typings.solidityParserAntlr.solidityParserAntlrStrings.BooleanLiteral = this.cast("BooleanLiteral")
+  def BooleanLiteral: typings.solidityParserAntlr.solidityParserAntlrStrings.BooleanLiteral = "BooleanLiteral".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.BooleanLiteral]
   @scala.inline
-  def Break: typings.solidityParserAntlr.solidityParserAntlrStrings.Break = this.cast("Break")
+  def Break: typings.solidityParserAntlr.solidityParserAntlrStrings.Break = "Break".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.Break]
   @scala.inline
-  def BreakStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.BreakStatement = this.cast("BreakStatement")
+  def BreakStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.BreakStatement = "BreakStatement".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.BreakStatement]
   @scala.inline
-  def Conditional: typings.solidityParserAntlr.solidityParserAntlrStrings.Conditional = this.cast("Conditional")
+  def Conditional: typings.solidityParserAntlr.solidityParserAntlrStrings.Conditional = "Conditional".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.Conditional]
   @scala.inline
-  def Continue: typings.solidityParserAntlr.solidityParserAntlrStrings.Continue = this.cast("Continue")
+  def Continue: typings.solidityParserAntlr.solidityParserAntlrStrings.Continue = "Continue".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.Continue]
   @scala.inline
-  def ContinueStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.ContinueStatement = this.cast("ContinueStatement")
+  def ContinueStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.ContinueStatement = "ContinueStatement".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.ContinueStatement]
   @scala.inline
-  def ContractDefinition: typings.solidityParserAntlr.solidityParserAntlrStrings.ContractDefinition = this.cast("ContractDefinition")
+  def ContractDefinition: typings.solidityParserAntlr.solidityParserAntlrStrings.ContractDefinition = "ContractDefinition".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.ContractDefinition]
   @scala.inline
-  def DecimalNumber: typings.solidityParserAntlr.solidityParserAntlrStrings.DecimalNumber = this.cast("DecimalNumber")
+  def DecimalNumber: typings.solidityParserAntlr.solidityParserAntlrStrings.DecimalNumber = "DecimalNumber".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.DecimalNumber]
   @scala.inline
-  def DoWhileStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.DoWhileStatement = this.cast("DoWhileStatement")
+  def DoWhileStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.DoWhileStatement = "DoWhileStatement".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.DoWhileStatement]
   @scala.inline
-  def ElementaryTypeName: typings.solidityParserAntlr.solidityParserAntlrStrings.ElementaryTypeName = this.cast("ElementaryTypeName")
+  def ElementaryTypeName: typings.solidityParserAntlr.solidityParserAntlrStrings.ElementaryTypeName = "ElementaryTypeName".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.ElementaryTypeName]
   @scala.inline
-  def ElementaryTypeNameExpression: typings.solidityParserAntlr.solidityParserAntlrStrings.ElementaryTypeNameExpression = this.cast("ElementaryTypeNameExpression")
+  def ElementaryTypeNameExpression: typings.solidityParserAntlr.solidityParserAntlrStrings.ElementaryTypeNameExpression = "ElementaryTypeNameExpression".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.ElementaryTypeNameExpression]
   @scala.inline
-  def EmitStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.EmitStatement = this.cast("EmitStatement")
+  def EmitStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.EmitStatement = "EmitStatement".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.EmitStatement]
   @scala.inline
-  def EnumDefinition: typings.solidityParserAntlr.solidityParserAntlrStrings.EnumDefinition = this.cast("EnumDefinition")
+  def EnumDefinition: typings.solidityParserAntlr.solidityParserAntlrStrings.EnumDefinition = "EnumDefinition".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.EnumDefinition]
   @scala.inline
-  def EnumValue: typings.solidityParserAntlr.solidityParserAntlrStrings.EnumValue = this.cast("EnumValue")
+  def EnumValue: typings.solidityParserAntlr.solidityParserAntlrStrings.EnumValue = "EnumValue".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.EnumValue]
   @scala.inline
-  def EventDefinition: typings.solidityParserAntlr.solidityParserAntlrStrings.EventDefinition = this.cast("EventDefinition")
+  def EventDefinition: typings.solidityParserAntlr.solidityParserAntlrStrings.EventDefinition = "EventDefinition".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.EventDefinition]
   @scala.inline
-  def ExpressionStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.ExpressionStatement = this.cast("ExpressionStatement")
+  def ExpressionStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.ExpressionStatement = "ExpressionStatement".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.ExpressionStatement]
   @scala.inline
-  def ForStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.ForStatement = this.cast("ForStatement")
+  def ForStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.ForStatement = "ForStatement".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.ForStatement]
   @scala.inline
-  def FunctionCall: typings.solidityParserAntlr.solidityParserAntlrStrings.FunctionCall = this.cast("FunctionCall")
+  def FunctionCall: typings.solidityParserAntlr.solidityParserAntlrStrings.FunctionCall = "FunctionCall".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.FunctionCall]
   @scala.inline
-  def FunctionDefinition: typings.solidityParserAntlr.solidityParserAntlrStrings.FunctionDefinition = this.cast("FunctionDefinition")
+  def FunctionDefinition: typings.solidityParserAntlr.solidityParserAntlrStrings.FunctionDefinition = "FunctionDefinition".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.FunctionDefinition]
   @scala.inline
-  def FunctionTypeName: typings.solidityParserAntlr.solidityParserAntlrStrings.FunctionTypeName = this.cast("FunctionTypeName")
+  def FunctionTypeName: typings.solidityParserAntlr.solidityParserAntlrStrings.FunctionTypeName = "FunctionTypeName".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.FunctionTypeName]
   @scala.inline
-  def HexLiteral: typings.solidityParserAntlr.solidityParserAntlrStrings.HexLiteral = this.cast("HexLiteral")
+  def HexLiteral: typings.solidityParserAntlr.solidityParserAntlrStrings.HexLiteral = "HexLiteral".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.HexLiteral]
   @scala.inline
-  def HexNumber: typings.solidityParserAntlr.solidityParserAntlrStrings.HexNumber = this.cast("HexNumber")
+  def HexNumber: typings.solidityParserAntlr.solidityParserAntlrStrings.HexNumber = "HexNumber".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.HexNumber]
   @scala.inline
-  def Identifier: typings.solidityParserAntlr.solidityParserAntlrStrings.Identifier = this.cast("Identifier")
+  def Identifier: typings.solidityParserAntlr.solidityParserAntlrStrings.Identifier = "Identifier".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.Identifier]
   @scala.inline
-  def IdentifierList: typings.solidityParserAntlr.solidityParserAntlrStrings.IdentifierList = this.cast("IdentifierList")
+  def IdentifierList: typings.solidityParserAntlr.solidityParserAntlrStrings.IdentifierList = "IdentifierList".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.IdentifierList]
   @scala.inline
-  def IfStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.IfStatement = this.cast("IfStatement")
+  def IfStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.IfStatement = "IfStatement".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.IfStatement]
   @scala.inline
-  def ImportDirective: typings.solidityParserAntlr.solidityParserAntlrStrings.ImportDirective = this.cast("ImportDirective")
+  def ImportDirective: typings.solidityParserAntlr.solidityParserAntlrStrings.ImportDirective = "ImportDirective".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.ImportDirective]
   @scala.inline
-  def IndexAccess: typings.solidityParserAntlr.solidityParserAntlrStrings.IndexAccess = this.cast("IndexAccess")
+  def IndexAccess: typings.solidityParserAntlr.solidityParserAntlrStrings.IndexAccess = "IndexAccess".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.IndexAccess]
   @scala.inline
-  def InheritanceSpecifier: typings.solidityParserAntlr.solidityParserAntlrStrings.InheritanceSpecifier = this.cast("InheritanceSpecifier")
+  def InheritanceSpecifier: typings.solidityParserAntlr.solidityParserAntlrStrings.InheritanceSpecifier = "InheritanceSpecifier".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.InheritanceSpecifier]
   @scala.inline
-  def InlineAssemblyStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.InlineAssemblyStatement = this.cast("InlineAssemblyStatement")
+  def InlineAssemblyStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.InlineAssemblyStatement = "InlineAssemblyStatement".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.InlineAssemblyStatement]
   @scala.inline
-  def LabelDefinition: typings.solidityParserAntlr.solidityParserAntlrStrings.LabelDefinition = this.cast("LabelDefinition")
+  def LabelDefinition: typings.solidityParserAntlr.solidityParserAntlrStrings.LabelDefinition = "LabelDefinition".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.LabelDefinition]
   @scala.inline
-  def Mapping: typings.solidityParserAntlr.solidityParserAntlrStrings.Mapping = this.cast("Mapping")
+  def Mapping: typings.solidityParserAntlr.solidityParserAntlrStrings.Mapping = "Mapping".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.Mapping]
   @scala.inline
-  def MemberAccess: typings.solidityParserAntlr.solidityParserAntlrStrings.MemberAccess = this.cast("MemberAccess")
+  def MemberAccess: typings.solidityParserAntlr.solidityParserAntlrStrings.MemberAccess = "MemberAccess".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.MemberAccess]
   @scala.inline
-  def ModifierDefinition: typings.solidityParserAntlr.solidityParserAntlrStrings.ModifierDefinition = this.cast("ModifierDefinition")
+  def ModifierDefinition: typings.solidityParserAntlr.solidityParserAntlrStrings.ModifierDefinition = "ModifierDefinition".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.ModifierDefinition]
   @scala.inline
-  def ModifierInvocation: typings.solidityParserAntlr.solidityParserAntlrStrings.ModifierInvocation = this.cast("ModifierInvocation")
+  def ModifierInvocation: typings.solidityParserAntlr.solidityParserAntlrStrings.ModifierInvocation = "ModifierInvocation".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.ModifierInvocation]
   @scala.inline
-  def NumberLiteral: typings.solidityParserAntlr.solidityParserAntlrStrings.NumberLiteral = this.cast("NumberLiteral")
+  def NumberLiteral: typings.solidityParserAntlr.solidityParserAntlrStrings.NumberLiteral = "NumberLiteral".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.NumberLiteral]
   @scala.inline
-  def PragmaDirective: typings.solidityParserAntlr.solidityParserAntlrStrings.PragmaDirective = this.cast("PragmaDirective")
+  def PragmaDirective: typings.solidityParserAntlr.solidityParserAntlrStrings.PragmaDirective = "PragmaDirective".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.PragmaDirective]
   @scala.inline
-  def PragmaName: typings.solidityParserAntlr.solidityParserAntlrStrings.PragmaName = this.cast("PragmaName")
+  def PragmaName: typings.solidityParserAntlr.solidityParserAntlrStrings.PragmaName = "PragmaName".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.PragmaName]
   @scala.inline
-  def PragmaValue: typings.solidityParserAntlr.solidityParserAntlrStrings.PragmaValue = this.cast("PragmaValue")
+  def PragmaValue: typings.solidityParserAntlr.solidityParserAntlrStrings.PragmaValue = "PragmaValue".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.PragmaValue]
   @scala.inline
-  def ReturnStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.ReturnStatement = this.cast("ReturnStatement")
+  def ReturnStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.ReturnStatement = "ReturnStatement".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.ReturnStatement]
   @scala.inline
-  def SourceUnit: typings.solidityParserAntlr.solidityParserAntlrStrings.SourceUnit = this.cast("SourceUnit")
+  def SourceUnit: typings.solidityParserAntlr.solidityParserAntlrStrings.SourceUnit = "SourceUnit".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.SourceUnit]
   @scala.inline
-  def StateMutability: typings.solidityParserAntlr.solidityParserAntlrStrings.StateMutability = this.cast("StateMutability")
+  def StateMutability: typings.solidityParserAntlr.solidityParserAntlrStrings.StateMutability = "StateMutability".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.StateMutability]
   @scala.inline
-  def StateVariableDeclaration: typings.solidityParserAntlr.solidityParserAntlrStrings.StateVariableDeclaration = this.cast("StateVariableDeclaration")
+  def StateVariableDeclaration: typings.solidityParserAntlr.solidityParserAntlrStrings.StateVariableDeclaration = "StateVariableDeclaration".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.StateVariableDeclaration]
   @scala.inline
-  def StorageLocation: typings.solidityParserAntlr.solidityParserAntlrStrings.StorageLocation = this.cast("StorageLocation")
+  def StorageLocation: typings.solidityParserAntlr.solidityParserAntlrStrings.StorageLocation = "StorageLocation".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.StorageLocation]
   @scala.inline
-  def StringLiteral: typings.solidityParserAntlr.solidityParserAntlrStrings.StringLiteral = this.cast("StringLiteral")
+  def StringLiteral: typings.solidityParserAntlr.solidityParserAntlrStrings.StringLiteral = "StringLiteral".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.StringLiteral]
   @scala.inline
-  def StructDefinition: typings.solidityParserAntlr.solidityParserAntlrStrings.StructDefinition = this.cast("StructDefinition")
+  def StructDefinition: typings.solidityParserAntlr.solidityParserAntlrStrings.StructDefinition = "StructDefinition".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.StructDefinition]
   @scala.inline
-  def SubAssembly: typings.solidityParserAntlr.solidityParserAntlrStrings.SubAssembly = this.cast("SubAssembly")
+  def SubAssembly: typings.solidityParserAntlr.solidityParserAntlrStrings.SubAssembly = "SubAssembly".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.SubAssembly]
   @scala.inline
-  def ThrowStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.ThrowStatement = this.cast("ThrowStatement")
+  def ThrowStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.ThrowStatement = "ThrowStatement".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.ThrowStatement]
   @scala.inline
-  def TupleExpression: typings.solidityParserAntlr.solidityParserAntlrStrings.TupleExpression = this.cast("TupleExpression")
+  def TupleExpression: typings.solidityParserAntlr.solidityParserAntlrStrings.TupleExpression = "TupleExpression".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.TupleExpression]
   @scala.inline
-  def UserDefinedTypeName: typings.solidityParserAntlr.solidityParserAntlrStrings.UserDefinedTypeName = this.cast("UserDefinedTypeName")
+  def UserDefinedTypeName: typings.solidityParserAntlr.solidityParserAntlrStrings.UserDefinedTypeName = "UserDefinedTypeName".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.UserDefinedTypeName]
   @scala.inline
-  def UsingForDeclaration: typings.solidityParserAntlr.solidityParserAntlrStrings.UsingForDeclaration = this.cast("UsingForDeclaration")
+  def UsingForDeclaration: typings.solidityParserAntlr.solidityParserAntlrStrings.UsingForDeclaration = "UsingForDeclaration".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.UsingForDeclaration]
   @scala.inline
-  def VariableDeclaration: typings.solidityParserAntlr.solidityParserAntlrStrings.VariableDeclaration = this.cast("VariableDeclaration")
+  def VariableDeclaration: typings.solidityParserAntlr.solidityParserAntlrStrings.VariableDeclaration = "VariableDeclaration".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.VariableDeclaration]
   @scala.inline
-  def VariableDeclarationStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.VariableDeclarationStatement = this.cast("VariableDeclarationStatement")
+  def VariableDeclarationStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.VariableDeclarationStatement = "VariableDeclarationStatement".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.VariableDeclarationStatement]
   @scala.inline
-  def WhileStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.WhileStatement = this.cast("WhileStatement")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def WhileStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.WhileStatement = "WhileStatement".asInstanceOf[typings.solidityParserAntlr.solidityParserAntlrStrings.WhileStatement]
 }
 

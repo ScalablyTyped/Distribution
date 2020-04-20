@@ -16,7 +16,6 @@ object InviteAction {
   @scala.inline
   def apply(Principal: PrincipalString): InviteAction = {
     val __obj = js.Dynamic.literal(Principal = Principal.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InviteAction]
   }
 }

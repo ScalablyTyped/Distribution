@@ -78,7 +78,7 @@ trait SwipeProperties extends WidgetProperties {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#visibleElements)
     */
-  var visibleElements: js.UndefOr[SwipeVisibleElements] = js.undefined
+  var visibleElements: js.UndefOr[widgetsSwipeVisibleElements] = js.undefined
 }
 
 object SwipeProperties {
@@ -97,7 +97,7 @@ object SwipeProperties {
     trailingLayers: CollectionProperties[LayerProperties] = null,
     view: MapViewProperties = null,
     viewModel: SwipeViewModelProperties = null,
-    visibleElements: SwipeVisibleElements = null
+    visibleElements: widgetsSwipeVisibleElements = null
   ): SwipeProperties = {
     val __obj = js.Dynamic.literal()
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])

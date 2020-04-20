@@ -32,7 +32,6 @@ object Screenshot {
     propertyIsEnumerable: PropertyKey => Boolean
   ): Screenshot = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], dataUrl = dataUrl.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-  
     __obj.asInstanceOf[Screenshot]
   }
 }

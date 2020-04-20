@@ -13,7 +13,6 @@ object StoreData {
   @scala.inline
   def apply(store: default): StoreData = {
     val __obj = js.Dynamic.literal(store = store.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StoreData]
   }
 }

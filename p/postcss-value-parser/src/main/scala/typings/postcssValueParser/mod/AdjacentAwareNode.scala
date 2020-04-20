@@ -19,7 +19,6 @@ object AdjacentAwareNode {
   @scala.inline
   def apply(after: String, before: String): AdjacentAwareNode = {
     val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AdjacentAwareNode]
   }
 }

@@ -14,7 +14,6 @@ object Registry {
   @scala.inline
   def apply(lookup: String => Promise_[MIMEConverter], register: (String, MIMEConverter) => Unit): Registry = {
     val __obj = js.Dynamic.literal(lookup = js.Any.fromFunction1(lookup), register = js.Any.fromFunction2(register))
-  
     __obj.asInstanceOf[Registry]
   }
 }

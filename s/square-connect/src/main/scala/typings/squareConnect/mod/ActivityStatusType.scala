@@ -12,10 +12,8 @@ trait ActivityStatusType extends js.Object
 
 object ActivityStatusType {
   @scala.inline
-  def ACTIVE: typings.squareConnect.squareConnectStrings.ACTIVE = this.cast("ACTIVE")
+  def ACTIVE: typings.squareConnect.squareConnectStrings.ACTIVE = "ACTIVE".asInstanceOf[typings.squareConnect.squareConnectStrings.ACTIVE]
   @scala.inline
-  def INACTIVE: typings.squareConnect.squareConnectStrings.INACTIVE = this.cast("INACTIVE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def INACTIVE: typings.squareConnect.squareConnectStrings.INACTIVE = "INACTIVE".asInstanceOf[typings.squareConnect.squareConnectStrings.INACTIVE]
 }
 

@@ -18,22 +18,20 @@ trait AutoHideBehavior extends js.Object
 
 object AutoHideBehavior {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def l: typings.overlayscrollbars.overlayscrollbarsStrings.l = "l".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.l]
   @scala.inline
-  def l: typings.overlayscrollbars.overlayscrollbarsStrings.l = this.cast("l")
+  def leave: typings.overlayscrollbars.overlayscrollbarsStrings.leave = "leave".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.leave]
   @scala.inline
-  def leave: typings.overlayscrollbars.overlayscrollbarsStrings.leave = this.cast("leave")
+  def m: typings.overlayscrollbars.overlayscrollbarsStrings.m = "m".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.m]
   @scala.inline
-  def m: typings.overlayscrollbars.overlayscrollbarsStrings.m = this.cast("m")
+  def move: typings.overlayscrollbars.overlayscrollbarsStrings.move = "move".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.move]
   @scala.inline
-  def move: typings.overlayscrollbars.overlayscrollbarsStrings.move = this.cast("move")
+  def n: typings.overlayscrollbars.overlayscrollbarsStrings.n = "n".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.n]
   @scala.inline
-  def n: typings.overlayscrollbars.overlayscrollbarsStrings.n = this.cast("n")
+  def never: typings.overlayscrollbars.overlayscrollbarsStrings.never = "never".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.never]
   @scala.inline
-  def never: typings.overlayscrollbars.overlayscrollbarsStrings.never = this.cast("never")
+  def s: typings.overlayscrollbars.overlayscrollbarsStrings.s = "s".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.s]
   @scala.inline
-  def s: typings.overlayscrollbars.overlayscrollbarsStrings.s = this.cast("s")
-  @scala.inline
-  def scroll: typings.overlayscrollbars.overlayscrollbarsStrings.scroll = this.cast("scroll")
+  def scroll: typings.overlayscrollbars.overlayscrollbarsStrings.scroll = "scroll".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.scroll]
 }
 

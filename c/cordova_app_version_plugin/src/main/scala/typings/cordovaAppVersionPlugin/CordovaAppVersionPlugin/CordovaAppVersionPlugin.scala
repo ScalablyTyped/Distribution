@@ -16,7 +16,6 @@ object CordovaAppVersionPlugin {
   @scala.inline
   def apply(getAppVersion: () => String): CordovaAppVersionPlugin = {
     val __obj = js.Dynamic.literal(getAppVersion = js.Any.fromFunction0(getAppVersion))
-  
     __obj.asInstanceOf[CordovaAppVersionPlugin]
   }
 }

@@ -32,7 +32,7 @@ class EffectFallbacks () extends IEffectFallbacks {
     * Checks to see if more fallbacks are still availible.
     */
   @JSName("hasMoreFallbacks")
-  def hasMoreFallbacks_MEffectFallbacks(): Boolean = js.native
+  def hasMoreFallbacks_MEffectFallbacks: Boolean = js.native
   /**
     * Removes the defines that should be removed when falling back.
     * @param currentDefines defines the current define statements for the shader.

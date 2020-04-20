@@ -23,7 +23,7 @@ object latlonEllipsoidalDatumMod extends js.Object {
   trait CartesianDatum
     extends typings.geodesy.latlonEllipsoidalMod.Cartesian {
     def convertDatum(toDatum: Datum): CartesianDatum = js.native
-    def datum(): Datum = js.native
+    def datum: Datum = js.native
     def datum(datum: Datum): js.Any = js.native
     def toLatLon(): LatLonEllipsoidalDatum = js.native
   }
@@ -55,7 +55,7 @@ object latlonEllipsoidalDatumMod extends js.Object {
     def fromLocale(str: String): String = js.native
     def parse(dms: String): Double = js.native
     def parse(dms: Double): Double = js.native
-    def separator(): String = js.native
+    def separator: String = js.native
     def separator(char: String): js.Any = js.native
     def toBrng(deg: Double): String = js.native
     def toBrng(deg: Double, format: Format): String = js.native
@@ -77,8 +77,8 @@ object latlonEllipsoidalDatumMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    def datums(): Datums = js.native
-    def ellipsoids(): Ellipsoids = js.native
+    def datums: Datums = js.native
+    def ellipsoids: Ellipsoids = js.native
     def parse(lat: String): LatLonEllipsoidalDatum = js.native
     def parse(lat: String, lon: Double): LatLonEllipsoidalDatum = js.native
     def parse(lat: String, lon: Double, height: Double): LatLonEllipsoidalDatum = js.native

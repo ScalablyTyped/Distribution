@@ -13,7 +13,6 @@ object DeleteMultifactorParams {
   @scala.inline
   def apply(id: String, provider: DeleteDeleteMultifactorParamsProvider): DeleteMultifactorParams = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteMultifactorParams]
   }
 }

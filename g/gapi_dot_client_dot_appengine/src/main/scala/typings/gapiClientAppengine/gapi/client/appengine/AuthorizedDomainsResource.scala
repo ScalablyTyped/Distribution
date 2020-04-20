@@ -15,7 +15,6 @@ object AuthorizedDomainsResource {
   @scala.inline
   def apply(list: AnonCallback => Request_[ListAuthorizedDomainsResponse]): AuthorizedDomainsResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[AuthorizedDomainsResource]
   }
 }

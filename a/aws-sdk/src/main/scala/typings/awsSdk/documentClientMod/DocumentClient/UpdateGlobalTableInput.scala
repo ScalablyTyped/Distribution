@@ -20,7 +20,6 @@ object UpdateGlobalTableInput {
   @scala.inline
   def apply(GlobalTableName: TableName, ReplicaUpdates: ReplicaUpdateList): UpdateGlobalTableInput = {
     val __obj = js.Dynamic.literal(GlobalTableName = GlobalTableName.asInstanceOf[js.Any], ReplicaUpdates = ReplicaUpdates.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateGlobalTableInput]
   }
 }

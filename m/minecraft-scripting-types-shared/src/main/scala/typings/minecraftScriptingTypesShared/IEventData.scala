@@ -21,7 +21,6 @@ object IEventData {
   @scala.inline
   def apply[T](__identifier__ : String, __type__ : event_data, data: T): IEventData[T] = {
     val __obj = js.Dynamic.literal(__identifier__ = __identifier__.asInstanceOf[js.Any], __type__ = __type__.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IEventData[T]]
   }
 }

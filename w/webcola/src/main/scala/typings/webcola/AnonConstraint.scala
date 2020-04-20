@@ -16,7 +16,6 @@ object AnonConstraint {
   @scala.inline
   def apply(constraint: Constraint, lb: Block, rb: Block): AnonConstraint = {
     val __obj = js.Dynamic.literal(constraint = constraint.asInstanceOf[js.Any], lb = lb.asInstanceOf[js.Any], rb = rb.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonConstraint]
   }
 }

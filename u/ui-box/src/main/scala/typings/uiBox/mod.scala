@@ -26,7 +26,7 @@ object mod extends js.Object {
   def clearStyles(): Unit = js.native
   def extractStyles(): AnonCache = js.native
   def splitBoxProps[P /* <: EnhancerProps */](props: P): SplitBoxProps[P] = js.native
-  def splitProps[P /* <: Dictionary[_] */, K /* <: String */](props: P, keys: js.Array[K]): SplitProps[P, K] = js.native
+  def splitProps[P /* <: Dictionary[_] */, K /* <: /* keyof P */ String */](props: P, keys: js.Array[K]): SplitProps[P, K] = js.native
   @js.native
   object background extends js.Object {
     val propAliases: PropAliases = js.native

@@ -15,7 +15,6 @@ object BrowsersResource {
   @scala.inline
   def apply(list: AnonKey => Request_[BrowsersListResponse]): BrowsersResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[BrowsersResource]
   }
 }

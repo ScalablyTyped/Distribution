@@ -14,10 +14,8 @@ trait PpFixedFormatIntent extends js.Object
 
 object PpFixedFormatIntent {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ppFixedFormatIntentPrint: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def ppFixedFormatIntentPrint: `2` = this.cast(2)
-  @scala.inline
-  def ppFixedFormatIntentScreen: `1` = this.cast(1)
+  def ppFixedFormatIntentScreen: `1` = 1.asInstanceOf[`1`]
 }
 

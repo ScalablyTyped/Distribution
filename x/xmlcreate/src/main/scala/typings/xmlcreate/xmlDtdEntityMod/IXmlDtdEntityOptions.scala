@@ -15,7 +15,6 @@ object IXmlDtdEntityOptions {
   @scala.inline
   def apply(charData: String): IXmlDtdEntityOptions = {
     val __obj = js.Dynamic.literal(charData = charData.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IXmlDtdEntityOptions]
   }
 }

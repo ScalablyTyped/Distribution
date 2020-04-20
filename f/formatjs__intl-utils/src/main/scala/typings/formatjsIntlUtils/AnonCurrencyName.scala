@@ -15,7 +15,6 @@ object AnonCurrencyName {
   @scala.inline
   def apply(currencyName: LDMLPluralRuleMap[String], currencyNarrowSymbol: String, currencySymbol: String): AnonCurrencyName = {
     val __obj = js.Dynamic.literal(currencyName = currencyName.asInstanceOf[js.Any], currencyNarrowSymbol = currencyNarrowSymbol.asInstanceOf[js.Any], currencySymbol = currencySymbol.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCurrencyName]
   }
 }

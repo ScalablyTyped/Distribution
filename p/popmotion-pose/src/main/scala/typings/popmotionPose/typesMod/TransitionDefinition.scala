@@ -4,8 +4,19 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.popmotion.keyframesTypesMod.Values
 import typings.popmotionEasing.mod.Easing
 import typings.popmotionPose.popmotionPoseBooleans.`false`
+import typings.popmotionPose.popmotionPoseStrings.anticipate
+import typings.popmotionPose.popmotionPoseStrings.backIn
+import typings.popmotionPose.popmotionPoseStrings.backInOut
+import typings.popmotionPose.popmotionPoseStrings.backOut
+import typings.popmotionPose.popmotionPoseStrings.circIn
+import typings.popmotionPose.popmotionPoseStrings.circInOut
+import typings.popmotionPose.popmotionPoseStrings.circOut
 import typings.popmotionPose.popmotionPoseStrings.decay
+import typings.popmotionPose.popmotionPoseStrings.easeIn
+import typings.popmotionPose.popmotionPoseStrings.easeInOut
+import typings.popmotionPose.popmotionPoseStrings.easeOut
 import typings.popmotionPose.popmotionPoseStrings.keyframes
+import typings.popmotionPose.popmotionPoseStrings.linear
 import typings.popmotionPose.popmotionPoseStrings.physics
 import typings.popmotionPose.popmotionPoseStrings.spring
 import typings.popmotionPose.popmotionPoseStrings.tween
@@ -123,7 +134,7 @@ object TransitionDefinition {
     `type`: tween,
     delay: Int | Double = null,
     duration: Int | Double = null,
-    ease: Easing | js.Array[Easing] | StringDictionary[Easing] | String | CubicBezierArgs = null,
+    ease: Easing | js.Array[Easing] | StringDictionary[Easing] | linear | easeIn | easeOut | easeInOut | circIn | circOut | circInOut | backIn | backOut | backInOut | anticipate | CubicBezierArgs = null,
     elapsed: Int | Double = null,
     flip: Int | Double = null,
     flipCount: Int | Double = null,

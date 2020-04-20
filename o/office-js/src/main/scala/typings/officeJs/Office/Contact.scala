@@ -54,7 +54,6 @@ object Contact {
     urls: js.Array[String]
   ): Contact = {
     val __obj = js.Dynamic.literal(addresses = addresses.asInstanceOf[js.Any], businessName = businessName.asInstanceOf[js.Any], emailAddresses = emailAddresses.asInstanceOf[js.Any], personName = personName.asInstanceOf[js.Any], phoneNumbers = phoneNumbers.asInstanceOf[js.Any], urls = urls.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Contact]
   }
 }

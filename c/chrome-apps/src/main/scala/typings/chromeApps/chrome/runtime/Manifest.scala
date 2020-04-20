@@ -27,7 +27,8 @@ import typings.chromeApps.chrome.ToStringLiteral
 import typings.chromeApps.chromeAppsBooleans.`false`
 import typings.chromeApps.chromeAppsBooleans.`true`
 import typings.chromeApps.chromeAppsNumbers.`2`
-import typings.chromeApps.chromeAppsStrings.new_note
+import typings.chromeApps.chromeAppsStrings.NEW_NOTE
+import typings.chromeApps.chromeAppsStrings.new_note_
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -49,7 +50,7 @@ object Manifest {
     manifest_version: `2`,
     name: String,
     version: String,
-    action_handlers: js.Array[ToStringLiteral[AnonNEWNOTE, String, Exclude[String, new_note]]] = null,
+    action_handlers: js.Array[ToStringLiteral[AnonNEWNOTE, NEW_NOTE, Exclude[NEW_NOTE, new_note_]]] = null,
     author: AnonEmail | js.Any = null,
     automation: AutomationOptions | Boolean = null,
     bluetooth: AnonLowenergy = null,
@@ -136,7 +137,7 @@ object Manifest {
     manifest_version: `2`,
     name: String,
     version: String,
-    action_handlers: js.Array[ToStringLiteral[AnonNEWNOTE, String, Exclude[String, new_note]]] = null,
+    action_handlers: js.Array[ToStringLiteral[AnonNEWNOTE, NEW_NOTE, Exclude[NEW_NOTE, new_note_]]] = null,
     author: AnonEmail | js.Any = null,
     automation: AutomationOptions | Boolean = null,
     bluetooth: AnonLowenergy = null,
@@ -219,7 +220,7 @@ object Manifest {
     manifest_version: `2`,
     name: String,
     version: String,
-    action_handlers: js.Array[ToStringLiteral[AnonNEWNOTE, String, Exclude[String, new_note]]] = null,
+    action_handlers: js.Array[ToStringLiteral[AnonNEWNOTE, NEW_NOTE, Exclude[NEW_NOTE, new_note_]]] = null,
     author: AnonEmail | js.Any = null,
     automation: AutomationOptions | Boolean = null,
     bluetooth: AnonLowenergy = null,

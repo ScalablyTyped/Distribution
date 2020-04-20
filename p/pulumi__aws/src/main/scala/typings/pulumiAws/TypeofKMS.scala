@@ -13,7 +13,6 @@ object TypeofKMS {
   @scala.inline
   def apply(Types: TypeofKMS): TypeofKMS = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofKMS]
   }
 }

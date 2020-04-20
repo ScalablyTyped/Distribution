@@ -24,7 +24,6 @@ object IMarker {
   @scala.inline
   def apply(dispose: () => Unit, id: Double, isDisposed: Boolean, line: Double): IMarker = {
     val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), id = id.asInstanceOf[js.Any], isDisposed = isDisposed.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMarker]
   }
 }

@@ -31,7 +31,6 @@ object charting {
   @scala.inline
   def apply(hideTooltip: Shape => Unit, showTooltip: (String, Shape, js.Array[String]) => Unit): charting = {
     val __obj = js.Dynamic.literal(hideTooltip = js.Any.fromFunction1(hideTooltip), showTooltip = js.Any.fromFunction3(showTooltip))
-  
     __obj.asInstanceOf[charting]
   }
 }

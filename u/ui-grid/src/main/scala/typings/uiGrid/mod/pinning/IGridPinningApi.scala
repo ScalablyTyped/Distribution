@@ -27,7 +27,6 @@ object IGridPinningApi {
   @scala.inline
   def apply[TEntity](columnPin: (IScope, columnPinHandler) => Unit, pinColumn: (IGridColumnOf[TEntity], String) => Unit): IGridPinningApi[TEntity] = {
     val __obj = js.Dynamic.literal(columnPin = js.Any.fromFunction2(columnPin), pinColumn = js.Any.fromFunction2(pinColumn))
-  
     __obj.asInstanceOf[IGridPinningApi[TEntity]]
   }
 }

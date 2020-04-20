@@ -14,14 +14,12 @@ trait IfOverflowType extends js.Object
 
 object IfOverflowType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def discard: typings.recharts.rechartsStrings.discard = "discard".asInstanceOf[typings.recharts.rechartsStrings.discard]
   @scala.inline
-  def discard: typings.recharts.rechartsStrings.discard = this.cast("discard")
+  def extendDomain: typings.recharts.rechartsStrings.extendDomain = "extendDomain".asInstanceOf[typings.recharts.rechartsStrings.extendDomain]
   @scala.inline
-  def extendDomain: typings.recharts.rechartsStrings.extendDomain = this.cast("extendDomain")
+  def hidden: typings.recharts.rechartsStrings.hidden = "hidden".asInstanceOf[typings.recharts.rechartsStrings.hidden]
   @scala.inline
-  def hidden: typings.recharts.rechartsStrings.hidden = this.cast("hidden")
-  @scala.inline
-  def visible: typings.recharts.rechartsStrings.visible = this.cast("visible")
+  def visible: typings.recharts.rechartsStrings.visible = "visible".asInstanceOf[typings.recharts.rechartsStrings.visible]
 }
 

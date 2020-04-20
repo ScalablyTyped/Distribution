@@ -23,7 +23,6 @@ object MockjsRandomColor {
   @scala.inline
   def apply(color: () => S, hex: () => S, hsl: () => S, rgb: () => S, rgba: () => S): MockjsRandomColor = {
     val __obj = js.Dynamic.literal(color = js.Any.fromFunction0(color), hex = js.Any.fromFunction0(hex), hsl = js.Any.fromFunction0(hsl), rgb = js.Any.fromFunction0(rgb), rgba = js.Any.fromFunction0(rgba))
-  
     __obj.asInstanceOf[MockjsRandomColor]
   }
 }

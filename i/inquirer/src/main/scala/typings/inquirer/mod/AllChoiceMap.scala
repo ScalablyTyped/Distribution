@@ -26,7 +26,6 @@ object AllChoiceMap {
     ListChoiceMap: ChoiceOptions[T] | typings.inquirer.separatorMod.^  | ListChoiceOptions[T] | SeparatorOptions | typings.inquirer.choiceMod.^[T]
   ): AllChoiceMap[T] = {
     val __obj = js.Dynamic.literal(BaseChoiceMap = BaseChoiceMap.asInstanceOf[js.Any], CheckboxChoiceMap = CheckboxChoiceMap.asInstanceOf[js.Any], ExpandChoiceMap = ExpandChoiceMap.asInstanceOf[js.Any], ListChoiceMap = ListChoiceMap.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AllChoiceMap[T]]
   }
 }

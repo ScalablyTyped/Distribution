@@ -22,7 +22,6 @@ object AnonLeg {
     waypoint: js.Array[AnonLabel]
   ): AnonLeg = {
     val __obj = js.Dynamic.literal(leg = leg.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], waypoint = waypoint.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLeg]
   }
 }

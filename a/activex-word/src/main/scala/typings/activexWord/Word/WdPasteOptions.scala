@@ -18,14 +18,12 @@ trait WdPasteOptions extends js.Object
 
 object WdPasteOptions {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdKeepSourceFormatting: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdKeepSourceFormatting: `0` = this.cast(0)
+  def wdKeepTextOnly: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdKeepTextOnly: `2` = this.cast(2)
+  def wdMatchDestinationFormatting: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdMatchDestinationFormatting: `1` = this.cast(1)
-  @scala.inline
-  def wdUseDestinationStyles: `3` = this.cast(3)
+  def wdUseDestinationStyles: `3` = 3.asInstanceOf[`3`]
 }
 

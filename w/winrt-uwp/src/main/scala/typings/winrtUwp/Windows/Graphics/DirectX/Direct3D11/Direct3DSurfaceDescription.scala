@@ -26,7 +26,6 @@ object Direct3DSurfaceDescription {
     width: Double
   ): Direct3DSurfaceDescription = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], multisampleDescription = multisampleDescription.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Direct3DSurfaceDescription]
   }
 }

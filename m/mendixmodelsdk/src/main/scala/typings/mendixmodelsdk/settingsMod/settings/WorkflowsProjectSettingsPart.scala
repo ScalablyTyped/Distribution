@@ -27,7 +27,7 @@ class WorkflowsProjectSettingsPart protected () extends ProjectSettingsPart {
   ) = this()
   @JSName("model")
   var model_FWorkflowsProjectSettingsPart: IModel = js.native
-  def enabled(): Boolean = js.native
+  def enabled: Boolean = js.native
   def enabled(newValue: Boolean): js.Any = js.native
 }
 

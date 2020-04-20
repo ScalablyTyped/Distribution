@@ -65,7 +65,6 @@ object Request {
     rawHeaders: js.Array[String]
   ): Request = {
     val __obj = js.Dynamic.literal(baseUrl = baseUrl.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], rawHeaders = rawHeaders.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Request]
   }
 }

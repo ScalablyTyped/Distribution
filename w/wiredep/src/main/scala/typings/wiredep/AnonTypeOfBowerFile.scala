@@ -16,7 +16,6 @@ object AnonTypeOfBowerFile {
   @scala.inline
   def apply(typeOfBowerFile: RegExp): AnonTypeOfBowerFile = {
     val __obj = js.Dynamic.literal(typeOfBowerFile = typeOfBowerFile.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTypeOfBowerFile]
   }
 }

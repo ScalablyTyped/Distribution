@@ -16,12 +16,10 @@ trait OlFormRegionMode extends js.Object
 
 object OlFormRegionMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olFormRegionCompose: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olFormRegionCompose: `1` = this.cast(1)
+  def olFormRegionPreview: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olFormRegionPreview: `2` = this.cast(2)
-  @scala.inline
-  def olFormRegionRead: `0` = this.cast(0)
+  def olFormRegionRead: `0` = 0.asInstanceOf[`0`]
 }
 

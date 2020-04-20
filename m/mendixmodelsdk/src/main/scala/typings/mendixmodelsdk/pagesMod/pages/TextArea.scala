@@ -30,11 +30,11 @@ class TextArea protected () extends TextWidget {
   ) = this()
   @JSName("model")
   var model_FTextArea: IModel = js.native
-  def counterMessage(): Text = js.native
+  def counterMessage: Text = js.native
   def counterMessage(newValue: Text): js.Any = js.native
-  def numberOfLines(): Double = js.native
+  def numberOfLines: Double = js.native
   def numberOfLines(newValue: Double): js.Any = js.native
-  def textTooLongMessage(): Text = js.native
+  def textTooLongMessage: Text = js.native
   def textTooLongMessage(newValue: Text): js.Any = js.native
 }
 

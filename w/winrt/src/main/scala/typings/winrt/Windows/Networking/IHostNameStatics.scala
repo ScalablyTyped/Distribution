@@ -12,7 +12,6 @@ object IHostNameStatics {
   @scala.inline
   def apply(compare: (String, String) => Double): IHostNameStatics = {
     val __obj = js.Dynamic.literal(compare = js.Any.fromFunction2(compare))
-  
     __obj.asInstanceOf[IHostNameStatics]
   }
 }

@@ -22,7 +22,6 @@ object BucketPolicyArgs {
   @scala.inline
   def apply(bucket: Input[String], policy: Input[String | PolicyDocument]): BucketPolicyArgs = {
     val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], policy = policy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BucketPolicyArgs]
   }
 }

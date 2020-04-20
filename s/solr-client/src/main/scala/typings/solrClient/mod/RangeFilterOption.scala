@@ -15,7 +15,6 @@ object RangeFilterOption {
   @scala.inline
   def apply(end: String | Double | Date, field: String, start: String | Double | Date): RangeFilterOption = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RangeFilterOption]
   }
 }

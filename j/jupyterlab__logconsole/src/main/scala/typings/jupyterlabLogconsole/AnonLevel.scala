@@ -20,7 +20,6 @@ object AnonLevel {
   @scala.inline
   def apply(level: FullLogLevel, timestamp: Double): AnonLevel = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLevel]
   }
 }

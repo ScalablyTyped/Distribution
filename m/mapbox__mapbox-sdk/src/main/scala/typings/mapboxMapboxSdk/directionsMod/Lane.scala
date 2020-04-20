@@ -20,7 +20,6 @@ object Lane {
   @scala.inline
   def apply(indications: js.Array[String], valid: Boolean): Lane = {
     val __obj = js.Dynamic.literal(indications = indications.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Lane]
   }
 }

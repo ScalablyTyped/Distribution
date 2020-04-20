@@ -28,7 +28,6 @@ object EventItem {
     objectId: String
   ): EventItem = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventItem]
   }
   @scala.inline
@@ -38,7 +37,6 @@ object EventItem {
     objectId: String
   ): EventItem = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventItem]
   }
   @scala.inline
@@ -48,7 +46,6 @@ object EventItem {
     objectId: String
   ): EventItem = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventItem]
   }
   @scala.inline
@@ -58,7 +55,6 @@ object EventItem {
     objectId: String
   ): EventItem = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventItem]
   }
   @scala.inline
@@ -68,7 +64,6 @@ object EventItem {
     objectId: String
   ): EventItem = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventItem]
   }
   @scala.inline
@@ -78,7 +73,6 @@ object EventItem {
     objectId: String
   ): EventItem = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventItem]
   }
   @scala.inline
@@ -88,7 +82,6 @@ object EventItem {
     objectId: String
   ): EventItem = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventItem]
   }
   @scala.inline
@@ -98,7 +91,6 @@ object EventItem {
     objectId: String
   ): EventItem = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventItem]
   }
   @scala.inline
@@ -108,7 +100,6 @@ object EventItem {
     objectId: String
   ): EventItem = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventItem]
   }
   @scala.inline
@@ -118,7 +109,6 @@ object EventItem {
     objectId: String
   ): EventItem = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventItem]
   }
   @scala.inline
@@ -128,7 +118,6 @@ object EventItem {
     objectId: String
   ): EventItem = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventItem]
   }
   @scala.inline
@@ -138,7 +127,6 @@ object EventItem {
     objectId: String
   ): EventItem = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventItem]
   }
 }

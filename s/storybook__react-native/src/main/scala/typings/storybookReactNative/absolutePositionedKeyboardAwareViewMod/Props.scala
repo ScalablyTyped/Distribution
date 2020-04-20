@@ -15,7 +15,6 @@ object Props {
   @scala.inline
   def apply(onLayout: PreviewDimens => Unit, previewHeight: Double, previewWidth: Double): Props = {
     val __obj = js.Dynamic.literal(onLayout = js.Any.fromFunction1(onLayout), previewHeight = previewHeight.asInstanceOf[js.Any], previewWidth = previewWidth.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Props]
   }
 }

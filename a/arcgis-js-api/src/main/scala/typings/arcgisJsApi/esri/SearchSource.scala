@@ -102,6 +102,7 @@ trait SearchSource extends JSONSupport {
   var resultGraphicEnabled: Boolean = js.native
   /**
     * The symbol used to display the result.
+    * > **Known Limitations**  This property only applies when the layer/locator/source is not part of the map.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#resultSymbol)
     */

@@ -13,7 +13,6 @@ object GetOutpostInput {
   @scala.inline
   def apply(OutpostId: OutpostId): GetOutpostInput = {
     val __obj = js.Dynamic.literal(OutpostId = OutpostId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetOutpostInput]
   }
 }

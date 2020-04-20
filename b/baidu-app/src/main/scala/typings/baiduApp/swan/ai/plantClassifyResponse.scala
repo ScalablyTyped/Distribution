@@ -15,7 +15,6 @@ object plantClassifyResponse {
   @scala.inline
   def apply(log_id: Double, result: js.Array[AnonScore]): plantClassifyResponse = {
     val __obj = js.Dynamic.literal(log_id = log_id.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[plantClassifyResponse]
   }
 }

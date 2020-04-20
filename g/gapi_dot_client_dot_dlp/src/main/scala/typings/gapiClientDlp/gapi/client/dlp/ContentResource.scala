@@ -32,7 +32,6 @@ object ContentResource {
     redact: AnonAccesstoken => Request_[GooglePrivacyDlpV2beta1RedactContentResponse]
   ): ContentResource = {
     val __obj = js.Dynamic.literal(deidentify = js.Any.fromFunction1(deidentify), inspect = js.Any.fromFunction1(inspect), redact = js.Any.fromFunction1(redact))
-  
     __obj.asInstanceOf[ContentResource]
   }
 }

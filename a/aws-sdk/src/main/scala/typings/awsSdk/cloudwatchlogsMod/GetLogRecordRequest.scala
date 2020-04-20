@@ -16,7 +16,6 @@ object GetLogRecordRequest {
   @scala.inline
   def apply(logRecordPointer: LogRecordPointer): GetLogRecordRequest = {
     val __obj = js.Dynamic.literal(logRecordPointer = logRecordPointer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetLogRecordRequest]
   }
 }

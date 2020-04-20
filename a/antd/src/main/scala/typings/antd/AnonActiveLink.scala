@@ -12,7 +12,6 @@ object AnonActiveLink {
   @scala.inline
   def apply(activeLink: Null): AnonActiveLink = {
     val __obj = js.Dynamic.literal(activeLink = activeLink.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonActiveLink]
   }
 }

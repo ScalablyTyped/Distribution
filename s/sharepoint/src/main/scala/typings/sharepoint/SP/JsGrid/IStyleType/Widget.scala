@@ -13,7 +13,6 @@ object Widget {
   @scala.inline
   def apply(backgroundColor: js.Any, borderColor: js.Any): Widget = {
     val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], borderColor = borderColor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Widget]
   }
 }

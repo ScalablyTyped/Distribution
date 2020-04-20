@@ -12,7 +12,6 @@ object AnonToken {
   @scala.inline
   def apply(token: js.Any): AnonToken = {
     val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonToken]
   }
 }

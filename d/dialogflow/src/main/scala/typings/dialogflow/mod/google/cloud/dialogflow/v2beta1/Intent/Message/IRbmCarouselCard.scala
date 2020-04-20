@@ -10,12 +10,17 @@ trait IRbmCarouselCard extends js.Object {
   /** RbmCarouselCard cardContents */
   var cardContents: js.UndefOr[js.Array[IRbmCardContent] | Null] = js.undefined
   /** RbmCarouselCard cardWidth */
-  var cardWidth: js.UndefOr[CardWidth | String | Null] = js.undefined
+  var cardWidth: js.UndefOr[
+    CardWidth | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard.CardWidth * / any */ String) | Null
+  ] = js.undefined
 }
 
 object IRbmCarouselCard {
   @scala.inline
-  def apply(cardContents: js.Array[IRbmCardContent] = null, cardWidth: CardWidth | String = null): IRbmCarouselCard = {
+  def apply(
+    cardContents: js.Array[IRbmCardContent] = null,
+    cardWidth: CardWidth | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.Message.RbmCarouselCard.CardWidth * / any */ String) = null
+  ): IRbmCarouselCard = {
     val __obj = js.Dynamic.literal()
     if (cardContents != null) __obj.updateDynamic("cardContents")(cardContents.asInstanceOf[js.Any])
     if (cardWidth != null) __obj.updateDynamic("cardWidth")(cardWidth.asInstanceOf[js.Any])

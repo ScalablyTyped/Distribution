@@ -24,7 +24,6 @@ object DebugConsole {
   @scala.inline
   def apply(append: String => Unit, appendLine: String => Unit): DebugConsole = {
     val __obj = js.Dynamic.literal(append = js.Any.fromFunction1(append), appendLine = js.Any.fromFunction1(appendLine))
-  
     __obj.asInstanceOf[DebugConsole]
   }
 }

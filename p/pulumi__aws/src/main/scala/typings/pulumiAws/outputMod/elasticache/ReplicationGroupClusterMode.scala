@@ -20,7 +20,6 @@ object ReplicationGroupClusterMode {
   @scala.inline
   def apply(numNodeGroups: Double, replicasPerNodeGroup: Double): ReplicationGroupClusterMode = {
     val __obj = js.Dynamic.literal(numNodeGroups = numNodeGroups.asInstanceOf[js.Any], replicasPerNodeGroup = replicasPerNodeGroup.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReplicationGroupClusterMode]
   }
 }

@@ -21,7 +21,6 @@ object IBitmapCodecInformation {
     mimeTypes: IVectorView[String]
   ): IBitmapCodecInformation = {
     val __obj = js.Dynamic.literal(codecId = codecId.asInstanceOf[js.Any], fileExtensions = fileExtensions.asInstanceOf[js.Any], friendlyName = friendlyName.asInstanceOf[js.Any], mimeTypes = mimeTypes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IBitmapCodecInformation]
   }
 }

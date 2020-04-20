@@ -18,7 +18,6 @@ object IMediaMarker {
   @scala.inline
   def apply(mediaMarkerType: String, text: String, time: Double): IMediaMarker = {
     val __obj = js.Dynamic.literal(mediaMarkerType = mediaMarkerType.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMediaMarker]
   }
 }

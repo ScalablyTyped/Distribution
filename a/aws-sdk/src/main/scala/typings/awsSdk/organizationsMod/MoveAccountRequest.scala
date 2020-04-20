@@ -24,7 +24,6 @@ object MoveAccountRequest {
   @scala.inline
   def apply(AccountId: AccountId, DestinationParentId: ParentId, SourceParentId: ParentId): MoveAccountRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], DestinationParentId = DestinationParentId.asInstanceOf[js.Any], SourceParentId = SourceParentId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MoveAccountRequest]
   }
 }

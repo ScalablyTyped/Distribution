@@ -16,7 +16,6 @@ object DisassociateDRTLogBucketRequest {
   @scala.inline
   def apply(LogBucket: LogBucket): DisassociateDRTLogBucketRequest = {
     val __obj = js.Dynamic.literal(LogBucket = LogBucket.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisassociateDRTLogBucketRequest]
   }
 }

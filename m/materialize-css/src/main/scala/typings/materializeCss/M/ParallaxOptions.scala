@@ -16,7 +16,6 @@ object ParallaxOptions {
   @scala.inline
   def apply(responsiveThreshold: Double): ParallaxOptions = {
     val __obj = js.Dynamic.literal(responsiveThreshold = responsiveThreshold.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ParallaxOptions]
   }
 }

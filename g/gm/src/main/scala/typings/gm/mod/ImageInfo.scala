@@ -83,12 +83,12 @@ object ImageInfo {
     Resolution: String = null
   ): ImageInfo = {
     val __obj = js.Dynamic.literal(Class = Class.asInstanceOf[js.Any], Compose = Compose.asInstanceOf[js.Any], Compression = Compression.asInstanceOf[js.Any], Depth = Depth.asInstanceOf[js.Any], Dispose = Dispose.asInstanceOf[js.Any], Filesize = Filesize.asInstanceOf[js.Any], Format = Format.asInstanceOf[js.Any], Geometry = Geometry.asInstanceOf[js.Any], Interlace = Interlace.asInstanceOf[js.Any], Iterations = Iterations.asInstanceOf[js.Any], Orientation = Orientation.asInstanceOf[js.Any], Signature = Signature.asInstanceOf[js.Any], Software = Software.asInstanceOf[js.Any], Tainted = Tainted.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-    __obj.updateDynamic("Background Color")(`Background Color`.asInstanceOf[js.Any])
-    __obj.updateDynamic("Border Color")(`Border Color`.asInstanceOf[js.Any])
-    __obj.updateDynamic("Channel Depths")(`Channel Depths`.asInstanceOf[js.Any])
-    __obj.updateDynamic("Channel Statistics")(`Channel Statistics`.asInstanceOf[js.Any])
-    __obj.updateDynamic("Matte Color")(`Matte Color`.asInstanceOf[js.Any])
-    __obj.updateDynamic("Page geometry")(`Page geometry`.asInstanceOf[js.Any])
+    __obj.updateDynamic("Background Color")((`Background Color`).asInstanceOf[js.Any])
+    __obj.updateDynamic("Border Color")((`Border Color`).asInstanceOf[js.Any])
+    __obj.updateDynamic("Channel Depths")((`Channel Depths`).asInstanceOf[js.Any])
+    __obj.updateDynamic("Channel Statistics")((`Channel Statistics`).asInstanceOf[js.Any])
+    __obj.updateDynamic("Matte Color")((`Matte Color`).asInstanceOf[js.Any])
+    __obj.updateDynamic("Page geometry")((`Page geometry`).asInstanceOf[js.Any])
     if (`JPEG-Colorspace` != null) __obj.updateDynamic("JPEG-Colorspace")(`JPEG-Colorspace`.asInstanceOf[js.Any])
     if (`JPEG-Colorspace-Name` != null) __obj.updateDynamic("JPEG-Colorspace-Name")(`JPEG-Colorspace-Name`.asInstanceOf[js.Any])
     if (`JPEG-Quality` != null) __obj.updateDynamic("JPEG-Quality")(`JPEG-Quality`.asInstanceOf[js.Any])

@@ -58,54 +58,52 @@ trait WdCountry extends js.Object
 
 object WdCountry {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdArgentina: `54` = 54.asInstanceOf[`54`]
   @scala.inline
-  def wdArgentina: `54` = this.cast(54)
+  def wdBrazil: `55` = 55.asInstanceOf[`55`]
   @scala.inline
-  def wdBrazil: `55` = this.cast(55)
+  def wdCanada: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdCanada: `2` = this.cast(2)
+  def wdChile: `56` = 56.asInstanceOf[`56`]
   @scala.inline
-  def wdChile: `56` = this.cast(56)
+  def wdChina: `86` = 86.asInstanceOf[`86`]
   @scala.inline
-  def wdChina: `86` = this.cast(86)
+  def wdDenmark: `45` = 45.asInstanceOf[`45`]
   @scala.inline
-  def wdDenmark: `45` = this.cast(45)
+  def wdFinland: `358` = 358.asInstanceOf[`358`]
   @scala.inline
-  def wdFinland: `358` = this.cast(358)
+  def wdFrance: `33` = 33.asInstanceOf[`33`]
   @scala.inline
-  def wdFrance: `33` = this.cast(33)
+  def wdGermany: `49` = 49.asInstanceOf[`49`]
   @scala.inline
-  def wdGermany: `49` = this.cast(49)
+  def wdIceland: `354` = 354.asInstanceOf[`354`]
   @scala.inline
-  def wdIceland: `354` = this.cast(354)
+  def wdItaly: `39` = 39.asInstanceOf[`39`]
   @scala.inline
-  def wdItaly: `39` = this.cast(39)
+  def wdJapan: `81` = 81.asInstanceOf[`81`]
   @scala.inline
-  def wdJapan: `81` = this.cast(81)
+  def wdKorea: `82` = 82.asInstanceOf[`82`]
   @scala.inline
-  def wdKorea: `82` = this.cast(82)
+  def wdLatinAmerica: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdLatinAmerica: `3` = this.cast(3)
+  def wdMexico: `52` = 52.asInstanceOf[`52`]
   @scala.inline
-  def wdMexico: `52` = this.cast(52)
+  def wdNetherlands: `31` = 31.asInstanceOf[`31`]
   @scala.inline
-  def wdNetherlands: `31` = this.cast(31)
+  def wdNorway: `47` = 47.asInstanceOf[`47`]
   @scala.inline
-  def wdNorway: `47` = this.cast(47)
+  def wdPeru: `51` = 51.asInstanceOf[`51`]
   @scala.inline
-  def wdPeru: `51` = this.cast(51)
+  def wdSpain: `34` = 34.asInstanceOf[`34`]
   @scala.inline
-  def wdSpain: `34` = this.cast(34)
+  def wdSweden: `46` = 46.asInstanceOf[`46`]
   @scala.inline
-  def wdSweden: `46` = this.cast(46)
+  def wdTaiwan: `886` = 886.asInstanceOf[`886`]
   @scala.inline
-  def wdTaiwan: `886` = this.cast(886)
+  def wdUK: `44` = 44.asInstanceOf[`44`]
   @scala.inline
-  def wdUK: `44` = this.cast(44)
+  def wdUS: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdUS: `1` = this.cast(1)
-  @scala.inline
-  def wdVenezuela: `58` = this.cast(58)
+  def wdVenezuela: `58` = 58.asInstanceOf[`58`]
 }
 

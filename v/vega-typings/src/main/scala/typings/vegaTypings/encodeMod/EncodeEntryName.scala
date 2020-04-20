@@ -17,20 +17,18 @@ trait EncodeEntryName extends js.Object
 
 object EncodeEntryName {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def enter: typings.vegaTypings.vegaTypingsStrings.enter = "enter".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.enter]
   @scala.inline
-  def enter: typings.vegaTypings.vegaTypingsStrings.enter = this.cast("enter")
+  def exit: typings.vegaTypings.vegaTypingsStrings.exit = "exit".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.exit]
   @scala.inline
-  def exit: typings.vegaTypings.vegaTypingsStrings.exit = this.cast("exit")
+  def hover: typings.vegaTypings.vegaTypingsStrings.hover = "hover".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.hover]
   @scala.inline
-  def hover: typings.vegaTypings.vegaTypingsStrings.hover = this.cast("hover")
+  def leave: typings.vegaTypings.vegaTypingsStrings.leave = "leave".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.leave]
   @scala.inline
-  def leave: typings.vegaTypings.vegaTypingsStrings.leave = this.cast("leave")
+  def release: typings.vegaTypings.vegaTypingsStrings.release = "release".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.release]
   @scala.inline
-  def release: typings.vegaTypings.vegaTypingsStrings.release = this.cast("release")
+  def select: typings.vegaTypings.vegaTypingsStrings.select = "select".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.select]
   @scala.inline
-  def select: typings.vegaTypings.vegaTypingsStrings.select = this.cast("select")
-  @scala.inline
-  def update: typings.vegaTypings.vegaTypingsStrings.update = this.cast("update")
+  def update: typings.vegaTypings.vegaTypingsStrings.update = "update".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.update]
 }
 

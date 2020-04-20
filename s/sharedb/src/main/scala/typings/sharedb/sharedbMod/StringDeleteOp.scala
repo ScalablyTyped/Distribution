@@ -13,7 +13,6 @@ object StringDeleteOp {
   @scala.inline
   def apply(p: Path, sd: String): StringDeleteOp = {
     val __obj = js.Dynamic.literal(p = p.asInstanceOf[js.Any], sd = sd.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StringDeleteOp]
   }
 }

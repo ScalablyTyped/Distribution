@@ -14,7 +14,6 @@ object AnonGlyph {
   @scala.inline
   def apply(glyph: Glyph, num: Double): AnonGlyph = {
     val __obj = js.Dynamic.literal(glyph = glyph.asInstanceOf[js.Any], num = num.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGlyph]
   }
 }

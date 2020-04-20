@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "react-photoswipe"
-version := "1.3-dt-20191115Z-8654df"
+version := "1.3-dt-20191115Z-63ea37"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.9-2d2033",
-  "org.scalablytyped" %%% "photoswipe" % "4.1.3-dt-20200225Z-f340bd",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-ece683",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20200402Z-6f4338",
-  "org.scalablytyped" %%% "std" % "3.8-a0108c")
+  "org.scalablytyped" %%% "csstype" % "2.6.9-313239",
+  "org.scalablytyped" %%% "photoswipe" % "4.1.3-dt-20200225Z-afeb29",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-11830c",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20200409Z-0bc722",
+  "org.scalablytyped" %%% "std" % "3.8-9b2470")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

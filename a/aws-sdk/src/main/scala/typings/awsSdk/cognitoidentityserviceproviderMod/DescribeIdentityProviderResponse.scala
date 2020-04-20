@@ -16,7 +16,6 @@ object DescribeIdentityProviderResponse {
   @scala.inline
   def apply(IdentityProvider: IdentityProviderType): DescribeIdentityProviderResponse = {
     val __obj = js.Dynamic.literal(IdentityProvider = IdentityProvider.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeIdentityProviderResponse]
   }
 }

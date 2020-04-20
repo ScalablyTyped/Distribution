@@ -14,7 +14,6 @@ object IntervalContext {
   @scala.inline
   def apply(interval: AnonEndTime, intervalText: String): IntervalContext = {
     val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any], intervalText = intervalText.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IntervalContext]
   }
 }

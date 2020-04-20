@@ -13,7 +13,6 @@ object UsageObject {
   @scala.inline
   def apply(grantedBytes: Double, usedBytes: Double): UsageObject = {
     val __obj = js.Dynamic.literal(grantedBytes = grantedBytes.asInstanceOf[js.Any], usedBytes = usedBytes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UsageObject]
   }
 }

@@ -14,7 +14,6 @@ object Blockcipher {
   @scala.inline
   def apply(decrypt: (Buffer, Buffer) => Buffer, encrypt: (Buffer, Buffer) => Buffer): Blockcipher = {
     val __obj = js.Dynamic.literal(decrypt = js.Any.fromFunction2(decrypt), encrypt = js.Any.fromFunction2(encrypt))
-  
     __obj.asInstanceOf[Blockcipher]
   }
 }

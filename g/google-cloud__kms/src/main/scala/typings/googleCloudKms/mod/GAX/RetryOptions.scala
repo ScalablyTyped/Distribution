@@ -14,7 +14,6 @@ object RetryOptions {
   @scala.inline
   def apply(backoffSettings: BackoffSettings, retryCodes: js.Array[String]): RetryOptions = {
     val __obj = js.Dynamic.literal(backoffSettings = backoffSettings.asInstanceOf[js.Any], retryCodes = retryCodes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RetryOptions]
   }
 }

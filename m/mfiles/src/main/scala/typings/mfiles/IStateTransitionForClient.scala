@@ -30,7 +30,6 @@ object IStateTransitionForClient {
     ToState: Double
   ): IStateTransitionForClient = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), FromState = FromState.asInstanceOf[js.Any], GetAsLookup = js.Any.fromFunction0(GetAsLookup), GetAsTypedValue = js.Any.fromFunction0(GetAsTypedValue), ID = ID.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Selectable = Selectable.asInstanceOf[js.Any], SelectableFlagAffectedByPseudoUsers = SelectableFlagAffectedByPseudoUsers.asInstanceOf[js.Any], ToState = ToState.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IStateTransitionForClient]
   }
 }

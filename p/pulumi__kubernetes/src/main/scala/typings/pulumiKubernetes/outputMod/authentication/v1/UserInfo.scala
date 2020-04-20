@@ -31,7 +31,6 @@ object UserInfo {
   @scala.inline
   def apply(extra: js.Object, groups: js.Array[String], uid: String, username: String): UserInfo = {
     val __obj = js.Dynamic.literal(extra = extra.asInstanceOf[js.Any], groups = groups.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UserInfo]
   }
 }

@@ -15,7 +15,6 @@ object DidChangeWatchedFilesParams {
   @scala.inline
   def apply(changes: js.Array[FileEvent]): DidChangeWatchedFilesParams = {
     val __obj = js.Dynamic.literal(changes = changes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DidChangeWatchedFilesParams]
   }
 }

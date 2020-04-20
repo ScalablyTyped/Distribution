@@ -39,7 +39,6 @@ object VerificationData {
     cvc_check: `match` | mismatch | not_provided
   ): VerificationData = {
     val __obj = js.Dynamic.literal(address_line1_check = address_line1_check.asInstanceOf[js.Any], address_zip_check = address_zip_check.asInstanceOf[js.Any], authentication = authentication.asInstanceOf[js.Any], cvc_check = cvc_check.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VerificationData]
   }
 }

@@ -434,33 +434,33 @@ object antDesignReactNativeStrings {
   @scala.inline
   def ActionSheet: ActionSheet = "ActionSheet".asInstanceOf[ActionSheet]
   @scala.inline
-  def `ActionSheet example`: `ActionSheet example` = "ActionSheet example".asInstanceOf[`ActionSheet example`]
+  def `ActionSheet example`: `ActionSheet example` = ("ActionSheet example").asInstanceOf[`ActionSheet example`]
   @scala.inline
   def Icon: Icon = "Icon".asInstanceOf[Icon]
   @scala.inline
-  def `Icon Example`: `Icon Example` = "Icon Example".asInstanceOf[`Icon Example`]
+  def `Icon Example`: `Icon Example` = ("Icon Example").asInstanceOf[`Icon Example`]
   @scala.inline
   def List: List = "List".asInstanceOf[List]
   @scala.inline
-  def `List Example`: `List Example` = "List Example".asInstanceOf[`List Example`]
+  def `List Example`: `List Example` = ("List Example").asInstanceOf[`List Example`]
   @scala.inline
   def ListView: ListView = "ListView".asInstanceOf[ListView]
   @scala.inline
-  def `ListView Example`: `ListView Example` = "ListView Example".asInstanceOf[`ListView Example`]
+  def `ListView Example`: `ListView Example` = ("ListView Example").asInstanceOf[`ListView Example`]
   @scala.inline
   def Popover: Popover = "Popover".asInstanceOf[Popover]
   @scala.inline
-  def `Popover example`: `Popover example` = "Popover example".asInstanceOf[`Popover example`]
+  def `Popover example`: `Popover example` = ("Popover example").asInstanceOf[`Popover example`]
   @scala.inline
   def PopoverItem: PopoverItem = "PopoverItem".asInstanceOf[PopoverItem]
   @scala.inline
   def Portal: Portal = "Portal".asInstanceOf[Portal]
   @scala.inline
-  def `Portal example`: `Portal example` = "Portal example".asInstanceOf[`Portal example`]
+  def `Portal example`: `Portal example` = ("Portal example").asInstanceOf[`Portal example`]
   @scala.inline
   def Tabs: Tabs = "Tabs".asInstanceOf[Tabs]
   @scala.inline
-  def `Tabs example`: `Tabs example` = "Tabs example".asInstanceOf[`Tabs example`]
+  def `Tabs example`: `Tabs example` = ("Tabs example").asInstanceOf[`Tabs example`]
   @scala.inline
   def URL: URL = "URL".asInstanceOf[URL]
   @scala.inline

@@ -2,9 +2,7 @@ package typings.titanium.Titanium.UI.iOS
 
 import typings.titanium.Point
 import typings.titanium.Titanium.Proxy
-import typings.titanium.Titanium.UI.TabGroup
 import typings.titanium.Titanium.UI.View
-import typings.titanium.Titanium.UI.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,160 +10,125 @@ import scala.scalajs.js.annotation._
 /**
 			 * Base dynamic configuration for an item.
 			 */
-trait DynamicItemBehavior extends Proxy {
+@JSGlobal("Titanium.UI.iOS.DynamicItemBehavior")
+@js.native
+class DynamicItemBehavior () extends Proxy {
   /**
   				 * Specifies if this item can rotate.
   				 */
-  var allowsRotation: Boolean
+  var allowsRotation: Boolean = js.native
   /**
   				 * Specifies the angular resistance of this item.
   				 */
-  var angularResistance: Double
+  var angularResistance: Double = js.native
   /**
   				 * Specifies the relative mass density of this item.
   				 */
-  var density: Double
+  var density: Double = js.native
   /**
   				 * Specifies the elasticity applied to collisions for this item.
   				 */
-  var elasticity: Double
+  var elasticity: Double = js.native
   /**
   				 * Specifies the linear resistance of the item when it slides against another item.
   				 */
-  var friction: Double
+  var friction: Double = js.native
   /**
   				 * Items added to this behavior.
   				 */
-  val items: js.Array[View]
+  val items: js.Array[View] = js.native
   /**
   				 * Specifies the linear resistance of this item which reduces linear velocity over time.
   				 */
-  var resistance: Double
+  var resistance: Double = js.native
   /**
   				 * Adds a specified angular velocity for the item.
   				 */
-  def addAngularVelocityForItem(item: js.Any, velocity: Double): Unit
+  def addAngularVelocityForItem(item: View, velocity: Double): Unit = js.native
   /**
   				 * Adds an item to this behavior.
   				 */
-  def addItem(item: js.Any): Unit
+  def addItem(item: View): Unit = js.native
   /**
   				 * Adds a specified linear velocity for the item.
   				 */
-  def addLinearVelocityForItem(item: js.Any, velocity: Point): Unit
+  def addLinearVelocityForItem(item: View, velocity: Point): Unit = js.native
   /**
   				 * Returns the angular velocity of the item.
   				 */
-  def angularVelocityForItem(item: js.Any): Double
+  def angularVelocityForItem(item: View): Double = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iOS.DynamicItemBehavior.allowsRotation> property.
+  				 * @deprecated Access <Titanium.UI.iOS.DynamicItemBehavior.allowsRotation> instead.
   				 */
-  def getAllowsRotation(): Boolean
+  def getAllowsRotation(): Boolean = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iOS.DynamicItemBehavior.angularResistance> property.
+  				 * @deprecated Access <Titanium.UI.iOS.DynamicItemBehavior.angularResistance> instead.
   				 */
-  def getAngularResistance(): Double
+  def getAngularResistance(): Double = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iOS.DynamicItemBehavior.density> property.
+  				 * @deprecated Access <Titanium.UI.iOS.DynamicItemBehavior.density> instead.
   				 */
-  def getDensity(): Double
+  def getDensity(): Double = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iOS.DynamicItemBehavior.elasticity> property.
+  				 * @deprecated Access <Titanium.UI.iOS.DynamicItemBehavior.elasticity> instead.
   				 */
-  def getElasticity(): Double
+  def getElasticity(): Double = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iOS.DynamicItemBehavior.friction> property.
+  				 * @deprecated Access <Titanium.UI.iOS.DynamicItemBehavior.friction> instead.
   				 */
-  def getFriction(): Double
+  def getFriction(): Double = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iOS.DynamicItemBehavior.items> property.
+  				 * @deprecated Access <Titanium.UI.iOS.DynamicItemBehavior.items> instead.
   				 */
-  def getItems(): js.Array[View]
+  def getItems(): js.Array[View] = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iOS.DynamicItemBehavior.resistance> property.
+  				 * @deprecated Access <Titanium.UI.iOS.DynamicItemBehavior.resistance> instead.
   				 */
-  def getResistance(): Double
+  def getResistance(): Double = js.native
   /**
   				 * Returns the linear velocity of the item.
   				 */
-  def linearVelocityForItem(item: js.Any): Point
+  def linearVelocityForItem(item: View): Point = js.native
   /**
   				 * Removes the specified item from this behavior.
   				 */
-  def removeItem(item: js.Any): Unit
+  def removeItem(item: View): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.UI.iOS.DynamicItemBehavior.allowsRotation> property.
+  				 * @deprecated Set the value using <Titanium.UI.iOS.DynamicItemBehavior.allowsRotation> instead.
   				 */
-  def setAllowsRotation(allowsRotation: Boolean): Unit
+  def setAllowsRotation(allowsRotation: Boolean): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.UI.iOS.DynamicItemBehavior.angularResistance> property.
+  				 * @deprecated Set the value using <Titanium.UI.iOS.DynamicItemBehavior.angularResistance> instead.
   				 */
-  def setAngularResistance(angularResistance: Double): Unit
+  def setAngularResistance(angularResistance: Double): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.UI.iOS.DynamicItemBehavior.density> property.
+  				 * @deprecated Set the value using <Titanium.UI.iOS.DynamicItemBehavior.density> instead.
   				 */
-  def setDensity(density: Double): Unit
+  def setDensity(density: Double): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.UI.iOS.DynamicItemBehavior.elasticity> property.
+  				 * @deprecated Set the value using <Titanium.UI.iOS.DynamicItemBehavior.elasticity> instead.
   				 */
-  def setElasticity(elasticity: Double): Unit
+  def setElasticity(elasticity: Double): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.UI.iOS.DynamicItemBehavior.friction> property.
+  				 * @deprecated Set the value using <Titanium.UI.iOS.DynamicItemBehavior.friction> instead.
   				 */
-  def setFriction(friction: Double): Unit
+  def setFriction(friction: Double): Unit = js.native
   /**
   				 * Sets the value of the <Titanium.UI.iOS.DynamicItemBehavior.resistance> property.
+  				 * @deprecated Set the value using <Titanium.UI.iOS.DynamicItemBehavior.resistance> instead.
   				 */
-  def setResistance(resistance: Double): Unit
-}
-
-object DynamicItemBehavior {
-  @scala.inline
-  def apply(
-    addAngularVelocityForItem: (js.Any, Double) => Unit,
-    addEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    addItem: js.Any => Unit,
-    addLinearVelocityForItem: (js.Any, Point) => Unit,
-    allowsRotation: Boolean,
-    angularResistance: Double,
-    angularVelocityForItem: js.Any => Double,
-    apiName: String,
-    applyProperties: js.Any => Unit,
-    bubbleParent: Boolean,
-    density: Double,
-    elasticity: Double,
-    fireEvent: (String, js.Any) => Unit,
-    friction: Double,
-    getAllowsRotation: () => Boolean,
-    getAngularResistance: () => Double,
-    getApiName: () => String,
-    getBubbleParent: () => Boolean,
-    getDensity: () => Double,
-    getElasticity: () => Double,
-    getFriction: () => Double,
-    getItems: () => js.Array[View],
-    getResistance: () => Double,
-    items: js.Array[View],
-    linearVelocityForItem: js.Any => Point,
-    removeEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    removeItem: js.Any => Unit,
-    resistance: Double,
-    setAllowsRotation: Boolean => Unit,
-    setAngularResistance: Double => Unit,
-    setBubbleParent: Boolean => Unit,
-    setDensity: Double => Unit,
-    setElasticity: Double => Unit,
-    setFriction: Double => Unit,
-    setResistance: Double => Unit,
-    getLifecycleContainer: () => Window | TabGroup = null,
-    lifecycleContainer: Window | TabGroup = null,
-    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ Window, Unit]) with (js.Function1[/* lifecycleContainer */ TabGroup, Unit]) = null
-  ): DynamicItemBehavior = {
-    val __obj = js.Dynamic.literal(addAngularVelocityForItem = js.Any.fromFunction2(addAngularVelocityForItem), addEventListener = js.Any.fromFunction2(addEventListener), addItem = js.Any.fromFunction1(addItem), addLinearVelocityForItem = js.Any.fromFunction2(addLinearVelocityForItem), allowsRotation = allowsRotation.asInstanceOf[js.Any], angularResistance = angularResistance.asInstanceOf[js.Any], angularVelocityForItem = js.Any.fromFunction1(angularVelocityForItem), apiName = apiName.asInstanceOf[js.Any], applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent.asInstanceOf[js.Any], density = density.asInstanceOf[js.Any], elasticity = elasticity.asInstanceOf[js.Any], fireEvent = js.Any.fromFunction2(fireEvent), friction = friction.asInstanceOf[js.Any], getAllowsRotation = js.Any.fromFunction0(getAllowsRotation), getAngularResistance = js.Any.fromFunction0(getAngularResistance), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getDensity = js.Any.fromFunction0(getDensity), getElasticity = js.Any.fromFunction0(getElasticity), getFriction = js.Any.fromFunction0(getFriction), getItems = js.Any.fromFunction0(getItems), getResistance = js.Any.fromFunction0(getResistance), items = items.asInstanceOf[js.Any], linearVelocityForItem = js.Any.fromFunction1(linearVelocityForItem), removeEventListener = js.Any.fromFunction2(removeEventListener), removeItem = js.Any.fromFunction1(removeItem), resistance = resistance.asInstanceOf[js.Any], setAllowsRotation = js.Any.fromFunction1(setAllowsRotation), setAngularResistance = js.Any.fromFunction1(setAngularResistance), setBubbleParent = js.Any.fromFunction1(setBubbleParent), setDensity = js.Any.fromFunction1(setDensity), setElasticity = js.Any.fromFunction1(setElasticity), setFriction = js.Any.fromFunction1(setFriction), setResistance = js.Any.fromFunction1(setResistance))
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
-    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
-    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DynamicItemBehavior]
-  }
+  def setResistance(resistance: Double): Unit = js.native
 }
 

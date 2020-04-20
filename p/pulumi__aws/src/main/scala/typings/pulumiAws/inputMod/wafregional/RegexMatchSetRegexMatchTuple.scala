@@ -32,7 +32,6 @@ object RegexMatchSetRegexMatchTuple {
     textTransformation: Input[String]
   ): RegexMatchSetRegexMatchTuple = {
     val __obj = js.Dynamic.literal(fieldToMatch = fieldToMatch.asInstanceOf[js.Any], regexPatternSetId = regexPatternSetId.asInstanceOf[js.Any], textTransformation = textTransformation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RegexMatchSetRegexMatchTuple]
   }
 }

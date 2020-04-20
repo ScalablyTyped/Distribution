@@ -14,7 +14,6 @@ object AnonClient {
   @scala.inline
   def apply(client: Double, full: Double, top: Double): AnonClient = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], full = full.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonClient]
   }
 }

@@ -13,7 +13,7 @@ trait XmlCharRef[Parent] extends js.Object {
   /**
     * Gets the character of this character reference.
     */
-  def char(): String = js.native
+  def char: String = js.native
   /**
     * Sets the character of this character reference.
     */
@@ -22,7 +22,7 @@ trait XmlCharRef[Parent] extends js.Object {
     * Gets whether the decimal or hexadecimal representation should be used
     * for this character reference.
     */
-  def hex(): Boolean = js.native
+  def hex: Boolean = js.native
   /**
     * Sets whether the decimal or hexadecimal representation should be used
     * for this character reference.

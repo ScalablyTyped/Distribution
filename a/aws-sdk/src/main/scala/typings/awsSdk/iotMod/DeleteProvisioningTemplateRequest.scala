@@ -16,7 +16,6 @@ object DeleteProvisioningTemplateRequest {
   @scala.inline
   def apply(templateName: TemplateName): DeleteProvisioningTemplateRequest = {
     val __obj = js.Dynamic.literal(templateName = templateName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteProvisioningTemplateRequest]
   }
 }

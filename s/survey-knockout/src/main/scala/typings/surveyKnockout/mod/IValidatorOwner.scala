@@ -22,7 +22,6 @@ object IValidatorOwner {
     validatedValue: js.Any
   ): IValidatorOwner = {
     val __obj = js.Dynamic.literal(getDataFilteredProperties = js.Any.fromFunction0(getDataFilteredProperties), getDataFilteredValues = js.Any.fromFunction0(getDataFilteredValues), getValidatorTitle = js.Any.fromFunction0(getValidatorTitle), getValidators = js.Any.fromFunction0(getValidators), validatedValue = validatedValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IValidatorOwner]
   }
 }

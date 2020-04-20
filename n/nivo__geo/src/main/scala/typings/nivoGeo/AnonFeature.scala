@@ -12,7 +12,6 @@ object AnonFeature {
   @scala.inline
   def apply(feature: js.Any): AnonFeature = {
     val __obj = js.Dynamic.literal(feature = feature.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFeature]
   }
 }

@@ -20,7 +20,6 @@ object AddTagsToOnPremisesInstancesInput {
   @scala.inline
   def apply(instanceNames: InstanceNameList, tags: TagList): AddTagsToOnPremisesInstancesInput = {
     val __obj = js.Dynamic.literal(instanceNames = instanceNames.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddTagsToOnPremisesInstancesInput]
   }
 }

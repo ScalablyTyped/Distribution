@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /* Inlined std.Promise<got.got.Response<B>> & {cancel (): void} */
 @js.native
 trait GotPromise[B /* <: Buffer | String | js.Object */] extends js.Object {
-  @JSName(scala.scalajs.js.Symbol.toStringTag)
+  @JSName(js.Symbol.toStringTag)
   val toStringTag: String = js.native
   def cancel(): Unit = js.native
   /**

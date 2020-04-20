@@ -14,10 +14,8 @@ trait WdMovementType extends js.Object
 
 object WdMovementType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdExtend: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdExtend: `1` = this.cast(1)
-  @scala.inline
-  def wdMove: `0` = this.cast(0)
+  def wdMove: `0` = 0.asInstanceOf[`0`]
 }
 

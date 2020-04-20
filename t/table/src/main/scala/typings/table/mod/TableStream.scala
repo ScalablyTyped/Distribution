@@ -12,7 +12,6 @@ object TableStream {
   @scala.inline
   def apply(write: js.Array[String] => Unit): TableStream = {
     val __obj = js.Dynamic.literal(write = js.Any.fromFunction1(write))
-  
     __obj.asInstanceOf[TableStream]
   }
 }

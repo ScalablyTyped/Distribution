@@ -20,7 +20,6 @@ object DeleteTagsMessage {
   @scala.inline
   def apply(ResourceName: String, TagKeys: TagKeyList): DeleteTagsMessage = {
     val __obj = js.Dynamic.literal(ResourceName = ResourceName.asInstanceOf[js.Any], TagKeys = TagKeys.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteTagsMessage]
   }
 }

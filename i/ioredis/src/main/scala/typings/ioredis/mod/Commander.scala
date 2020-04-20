@@ -21,7 +21,6 @@ object Commander {
     sendCommand: () => Unit
   ): Commander = {
     val __obj = js.Dynamic.literal(createBuiltinCommand = js.Any.fromFunction1(createBuiltinCommand), defineCommand = js.Any.fromFunction2(defineCommand), getBuiltinCommands = js.Any.fromFunction0(getBuiltinCommands), sendCommand = js.Any.fromFunction0(sendCommand))
-  
     __obj.asInstanceOf[Commander]
   }
 }

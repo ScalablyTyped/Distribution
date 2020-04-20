@@ -26,7 +26,6 @@ object IEntityCollectionView {
     totalRecordCountLimitExceeded: scala.Boolean
   ): IEntityCollectionView = {
     val __obj = js.Dynamic.literal(entities = entities.asInstanceOf[js.Any], entityName = entityName.asInstanceOf[js.Any], minActiveRowVersion = minActiveRowVersion.asInstanceOf[js.Any], moreRecords = moreRecords.asInstanceOf[js.Any], pagingCookie = pagingCookie.asInstanceOf[js.Any], totalRecordCount = totalRecordCount.asInstanceOf[js.Any], totalRecordCountLimitExceeded = totalRecordCountLimitExceeded.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IEntityCollectionView]
   }
 }

@@ -18,7 +18,6 @@ object IPush {
   @scala.inline
   def apply[T](push: /* repeated */ T => Double): IPush[T] = {
     val __obj = js.Dynamic.literal(push = js.Any.fromFunction1(push))
-  
     __obj.asInstanceOf[IPush[T]]
   }
 }

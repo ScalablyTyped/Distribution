@@ -19,7 +19,6 @@ object OnLocalServiceFoundCallbackResult {
   @scala.inline
   def apply(ip: String, port: Double, serviceName: String, serviceType: String): OnLocalServiceFoundCallbackResult = {
     val __obj = js.Dynamic.literal(ip = ip.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any], serviceType = serviceType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnLocalServiceFoundCallbackResult]
   }
 }

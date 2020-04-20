@@ -16,7 +16,6 @@ object Markdown {
   @scala.inline
   def apply(markdown: AnonIsAtAll, msgtype: markdown): Markdown = {
     val __obj = js.Dynamic.literal(markdown = markdown.asInstanceOf[js.Any], msgtype = msgtype.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Markdown]
   }
 }

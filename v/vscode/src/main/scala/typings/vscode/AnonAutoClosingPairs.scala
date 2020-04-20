@@ -12,7 +12,6 @@ object AnonAutoClosingPairs {
   @scala.inline
   def apply(autoClosingPairs: js.Array[AnonNotIn]): AnonAutoClosingPairs = {
     val __obj = js.Dynamic.literal(autoClosingPairs = autoClosingPairs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAutoClosingPairs]
   }
 }

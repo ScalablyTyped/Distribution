@@ -14,14 +14,12 @@ trait Type extends js.Object
 
 object Type {
   @scala.inline
-  def GROUP: typings.facebookInstantGames.facebookInstantGamesStrings.GROUP = this.cast("GROUP")
+  def GROUP: typings.facebookInstantGames.facebookInstantGamesStrings.GROUP = "GROUP".asInstanceOf[typings.facebookInstantGames.facebookInstantGamesStrings.GROUP]
   @scala.inline
-  def POST: typings.facebookInstantGames.facebookInstantGamesStrings.POST = this.cast("POST")
+  def POST: typings.facebookInstantGames.facebookInstantGamesStrings.POST = "POST".asInstanceOf[typings.facebookInstantGames.facebookInstantGamesStrings.POST]
   @scala.inline
-  def SOLO: typings.facebookInstantGames.facebookInstantGamesStrings.SOLO = this.cast("SOLO")
+  def SOLO: typings.facebookInstantGames.facebookInstantGamesStrings.SOLO = "SOLO".asInstanceOf[typings.facebookInstantGames.facebookInstantGamesStrings.SOLO]
   @scala.inline
-  def THREAD: typings.facebookInstantGames.facebookInstantGamesStrings.THREAD = this.cast("THREAD")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def THREAD: typings.facebookInstantGames.facebookInstantGamesStrings.THREAD = "THREAD".asInstanceOf[typings.facebookInstantGames.facebookInstantGamesStrings.THREAD]
 }
 

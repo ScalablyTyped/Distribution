@@ -14,14 +14,12 @@ trait StorageEngineT extends js.Object
 
 object StorageEngineT {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def devnull: typings.mongodbMemoryServerCore.mongodbMemoryServerCoreStrings.devnull = "devnull".asInstanceOf[typings.mongodbMemoryServerCore.mongodbMemoryServerCoreStrings.devnull]
   @scala.inline
-  def devnull: typings.mongodbMemoryServerCore.mongodbMemoryServerCoreStrings.devnull = this.cast("devnull")
+  def ephemeralForTest: typings.mongodbMemoryServerCore.mongodbMemoryServerCoreStrings.ephemeralForTest = "ephemeralForTest".asInstanceOf[typings.mongodbMemoryServerCore.mongodbMemoryServerCoreStrings.ephemeralForTest]
   @scala.inline
-  def ephemeralForTest: typings.mongodbMemoryServerCore.mongodbMemoryServerCoreStrings.ephemeralForTest = this.cast("ephemeralForTest")
+  def mmapv1: typings.mongodbMemoryServerCore.mongodbMemoryServerCoreStrings.mmapv1 = "mmapv1".asInstanceOf[typings.mongodbMemoryServerCore.mongodbMemoryServerCoreStrings.mmapv1]
   @scala.inline
-  def mmapv1: typings.mongodbMemoryServerCore.mongodbMemoryServerCoreStrings.mmapv1 = this.cast("mmapv1")
-  @scala.inline
-  def wiredTiger: typings.mongodbMemoryServerCore.mongodbMemoryServerCoreStrings.wiredTiger = this.cast("wiredTiger")
+  def wiredTiger: typings.mongodbMemoryServerCore.mongodbMemoryServerCoreStrings.wiredTiger = "wiredTiger".asInstanceOf[typings.mongodbMemoryServerCore.mongodbMemoryServerCoreStrings.wiredTiger]
 }
 

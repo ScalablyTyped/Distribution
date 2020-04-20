@@ -21,7 +21,6 @@ object GetBucketTaggingOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, TagSet: js.Array[UnmarshalledTag]): GetBucketTaggingOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], TagSet = TagSet.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBucketTaggingOutput]
   }
 }

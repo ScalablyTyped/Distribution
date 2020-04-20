@@ -16,7 +16,6 @@ object ScrollEvent {
     remove: String => Unit
   ): ScrollEvent = {
     val __obj = js.Dynamic.literal(register = js.Any.fromFunction2(register), remove = js.Any.fromFunction1(remove))
-  
     __obj.asInstanceOf[ScrollEvent]
   }
 }

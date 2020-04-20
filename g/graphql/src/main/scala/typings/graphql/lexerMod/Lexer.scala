@@ -49,7 +49,6 @@ object Lexer {
     token: Token
   ): Lexer[TOptions] = {
     val __obj = js.Dynamic.literal(advance = js.Any.fromFunction0(advance), lastToken = lastToken.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], lineStart = lineStart.asInstanceOf[js.Any], lookahead = js.Any.fromFunction0(lookahead), options = options.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Lexer[TOptions]]
   }
 }

@@ -44,7 +44,6 @@ object Responder {
     requestStream: Payload[D, M] => Flowable[Payload[D, M]]
   ): Responder[D, M] = {
     val __obj = js.Dynamic.literal(fireAndForget = js.Any.fromFunction1(fireAndForget), metadataPush = js.Any.fromFunction1(metadataPush), requestChannel = js.Any.fromFunction1(requestChannel), requestResponse = js.Any.fromFunction1(requestResponse), requestStream = js.Any.fromFunction1(requestStream))
-  
     __obj.asInstanceOf[Responder[D, M]]
   }
 }

@@ -33,7 +33,7 @@ abstract class ParameterType protected () extends Element {
   val containerAsJavaActionParameter_FParameterType: IJavaActionParameter = js.native
   @JSName("model")
   var model_FParameterType: IModel = js.native
-  def containerAsJavaActionParameter(): JavaActionParameter = js.native
+  def containerAsJavaActionParameter: JavaActionParameter = js.native
 }
 
 /* static members */

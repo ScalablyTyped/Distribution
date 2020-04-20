@@ -13,7 +13,6 @@ object AnonGlParentBus {
   @scala.inline
   def apply(glParent: Bus): AnonGlParentBus = {
     val __obj = js.Dynamic.literal(glParent = glParent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGlParentBus]
   }
 }

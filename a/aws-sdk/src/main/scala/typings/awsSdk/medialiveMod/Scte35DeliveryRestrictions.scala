@@ -33,7 +33,6 @@ object Scte35DeliveryRestrictions {
     WebDeliveryAllowedFlag: Scte35WebDeliveryAllowedFlag
   ): Scte35DeliveryRestrictions = {
     val __obj = js.Dynamic.literal(ArchiveAllowedFlag = ArchiveAllowedFlag.asInstanceOf[js.Any], DeviceRestrictions = DeviceRestrictions.asInstanceOf[js.Any], NoRegionalBlackoutFlag = NoRegionalBlackoutFlag.asInstanceOf[js.Any], WebDeliveryAllowedFlag = WebDeliveryAllowedFlag.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Scte35DeliveryRestrictions]
   }
 }

@@ -12,7 +12,6 @@ object ExecutionInput {
   @scala.inline
   def apply(parallelExecutionType: ParallelExecutionTypes): ExecutionInput = {
     val __obj = js.Dynamic.literal(parallelExecutionType = parallelExecutionType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExecutionInput]
   }
 }

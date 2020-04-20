@@ -16,12 +16,10 @@ trait XlOLEType extends js.Object
 
 object XlOLEType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlOLEControl: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlOLEControl: `2` = this.cast(2)
+  def xlOLEEmbed: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlOLEEmbed: `1` = this.cast(1)
-  @scala.inline
-  def xlOLELink: `0` = this.cast(0)
+  def xlOLELink: `0` = 0.asInstanceOf[`0`]
 }
 

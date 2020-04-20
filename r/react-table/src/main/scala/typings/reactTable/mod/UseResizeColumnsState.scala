@@ -13,7 +13,6 @@ object UseResizeColumnsState {
   @scala.inline
   def apply[D /* <: js.Object */](columnResizing: AnonColumnWidth): UseResizeColumnsState[D] = {
     val __obj = js.Dynamic.literal(columnResizing = columnResizing.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UseResizeColumnsState[D]]
   }
 }

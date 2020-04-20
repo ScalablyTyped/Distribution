@@ -12,7 +12,6 @@ object InsightsServiceStoryResponseData {
   @scala.inline
   def apply(media: InsightsServiceStoryResponseMedia): InsightsServiceStoryResponseData = {
     val __obj = js.Dynamic.literal(media = media.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InsightsServiceStoryResponseData]
   }
 }

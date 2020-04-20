@@ -17,7 +17,6 @@ object ProviderLiteral {
     resolvedValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResolvedValue */ js.Any
   ): ProviderLiteral = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], resolvedValue = resolvedValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProviderLiteral]
   }
 }

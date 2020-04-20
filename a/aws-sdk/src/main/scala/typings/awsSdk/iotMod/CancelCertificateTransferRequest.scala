@@ -16,7 +16,6 @@ object CancelCertificateTransferRequest {
   @scala.inline
   def apply(certificateId: CertificateId): CancelCertificateTransferRequest = {
     val __obj = js.Dynamic.literal(certificateId = certificateId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CancelCertificateTransferRequest]
   }
 }

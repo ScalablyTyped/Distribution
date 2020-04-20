@@ -16,7 +16,6 @@ object PromoteResourceShareCreatedFromPolicyRequest {
   @scala.inline
   def apply(resourceShareArn: String): PromoteResourceShareCreatedFromPolicyRequest = {
     val __obj = js.Dynamic.literal(resourceShareArn = resourceShareArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PromoteResourceShareCreatedFromPolicyRequest]
   }
 }

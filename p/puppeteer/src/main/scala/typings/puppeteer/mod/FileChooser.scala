@@ -24,7 +24,6 @@ object FileChooser {
     isMultiple: () => Boolean
   ): FileChooser = {
     val __obj = js.Dynamic.literal(accept = js.Any.fromFunction1(accept), cancel = js.Any.fromFunction0(cancel), isMultiple = js.Any.fromFunction0(isMultiple))
-  
     __obj.asInstanceOf[FileChooser]
   }
 }

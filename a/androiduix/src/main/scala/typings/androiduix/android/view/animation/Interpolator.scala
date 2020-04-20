@@ -12,7 +12,6 @@ object Interpolator {
   @scala.inline
   def apply(getInterpolation: Double => Double): Interpolator = {
     val __obj = js.Dynamic.literal(getInterpolation = js.Any.fromFunction1(getInterpolation))
-  
     __obj.asInstanceOf[Interpolator]
   }
 }

@@ -12,7 +12,6 @@ object PivotSchemaColumnAxis {
   @scala.inline
   def apply(tuples: js.Array[PivotTupleModel]): PivotSchemaColumnAxis = {
     val __obj = js.Dynamic.literal(tuples = tuples.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PivotSchemaColumnAxis]
   }
 }

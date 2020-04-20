@@ -12,7 +12,6 @@ object PermissionResult {
   @scala.inline
   def apply(status: String): PermissionResult = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PermissionResult]
   }
 }

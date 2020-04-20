@@ -12,7 +12,6 @@ object AnonEnumValuesAnonDefinitionNameAscending {
   @scala.inline
   def apply(enumValues: AnonDefinitionNameAscending): AnonEnumValuesAnonDefinitionNameAscending = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumValuesAnonDefinitionNameAscending]
   }
 }

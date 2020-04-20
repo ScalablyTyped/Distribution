@@ -15,7 +15,6 @@ object IStringData {
   @scala.inline
   def apply(AsString: String, Clone: () => IStringData, StringDataType: MFStringDataType): IStringData = {
     val __obj = js.Dynamic.literal(AsString = AsString.asInstanceOf[js.Any], Clone = js.Any.fromFunction0(Clone), StringDataType = StringDataType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IStringData]
   }
 }

@@ -15,7 +15,6 @@ object NamedRequest {
   @scala.inline
   def apply(name: String): NamedRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NamedRequest]
   }
 }

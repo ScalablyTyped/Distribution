@@ -14,10 +14,8 @@ trait ReadingOrder extends js.Object
 
 object ReadingOrder {
   @scala.inline
-  def LeftToRight: `1` = this.cast(1)
+  def LeftToRight: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def RightToLeft: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def RightToLeft: `2` = 2.asInstanceOf[`2`]
 }
 

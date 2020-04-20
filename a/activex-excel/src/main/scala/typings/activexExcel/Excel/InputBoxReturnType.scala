@@ -24,20 +24,18 @@ trait InputBoxReturnType extends js.Object
 
 object InputBoxReturnType {
   @scala.inline
-  def Boolean: `4` = this.cast(4)
+  def Boolean: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def ErrorValue: `16` = this.cast(16)
+  def ErrorValue: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def Formula: `0` = this.cast(0)
+  def Formula: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def Number: `1` = this.cast(1)
+  def Number: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def Range: `8` = this.cast(8)
+  def Range: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def SafeArray: `64` = this.cast(64)
+  def SafeArray: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def String: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def String: `2` = 2.asInstanceOf[`2`]
 }
 

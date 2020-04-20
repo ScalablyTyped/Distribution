@@ -13,7 +13,6 @@ object MediaEditResponseRootObject {
   @scala.inline
   def apply(media: MediaInfoResponseItemsItem, status: String): MediaEditResponseRootObject = {
     val __obj = js.Dynamic.literal(media = media.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MediaEditResponseRootObject]
   }
 }

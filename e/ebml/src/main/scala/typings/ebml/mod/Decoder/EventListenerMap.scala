@@ -24,7 +24,6 @@ object EventListenerMap {
     readable: () => Unit
   ): EventListenerMap = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), data = js.Any.fromFunction1(data), end = js.Any.fromFunction0(end), error = js.Any.fromFunction1(error), readable = js.Any.fromFunction0(readable))
-  
     __obj.asInstanceOf[EventListenerMap]
   }
 }

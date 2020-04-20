@@ -15,7 +15,6 @@ object AnonDirection {
   @scala.inline
   def apply(direction: String, styles: StringDictionary[RegisteredStyle[_]]): AnonDirection = {
     val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDirection]
   }
 }

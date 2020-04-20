@@ -17,7 +17,6 @@ object GetDomainSnapshotOption {
   @scala.inline
   def apply(automatedSnapshotStartHour: Double): GetDomainSnapshotOption = {
     val __obj = js.Dynamic.literal(automatedSnapshotStartHour = automatedSnapshotStartHour.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDomainSnapshotOption]
   }
 }

@@ -96,92 +96,90 @@ trait MsoAnimProperty extends js.Object
 
 object MsoAnimProperty {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoAnimColor: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def msoAnimColor: `7` = this.cast(7)
+  def msoAnimHeight: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoAnimHeight: `4` = this.cast(4)
+  def msoAnimNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def msoAnimNone: `0` = this.cast(0)
+  def msoAnimOpacity: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def msoAnimOpacity: `5` = this.cast(5)
+  def msoAnimRotation: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def msoAnimRotation: `6` = this.cast(6)
+  def msoAnimShapeFillBackColor: `1007` = 1007.asInstanceOf[`1007`]
   @scala.inline
-  def msoAnimShapeFillBackColor: `1007` = this.cast(1007)
+  def msoAnimShapeFillColor: `1005` = 1005.asInstanceOf[`1005`]
   @scala.inline
-  def msoAnimShapeFillColor: `1005` = this.cast(1005)
+  def msoAnimShapeFillOn: `1004` = 1004.asInstanceOf[`1004`]
   @scala.inline
-  def msoAnimShapeFillOn: `1004` = this.cast(1004)
+  def msoAnimShapeFillOpacity: `1006` = 1006.asInstanceOf[`1006`]
   @scala.inline
-  def msoAnimShapeFillOpacity: `1006` = this.cast(1006)
+  def msoAnimShapeLineColor: `1009` = 1009.asInstanceOf[`1009`]
   @scala.inline
-  def msoAnimShapeLineColor: `1009` = this.cast(1009)
+  def msoAnimShapeLineOn: `1008` = 1008.asInstanceOf[`1008`]
   @scala.inline
-  def msoAnimShapeLineOn: `1008` = this.cast(1008)
+  def msoAnimShapePictureBrightness: `1001` = 1001.asInstanceOf[`1001`]
   @scala.inline
-  def msoAnimShapePictureBrightness: `1001` = this.cast(1001)
+  def msoAnimShapePictureContrast: `1000` = 1000.asInstanceOf[`1000`]
   @scala.inline
-  def msoAnimShapePictureContrast: `1000` = this.cast(1000)
+  def msoAnimShapePictureGamma: `1002` = 1002.asInstanceOf[`1002`]
   @scala.inline
-  def msoAnimShapePictureGamma: `1002` = this.cast(1002)
+  def msoAnimShapePictureGrayscale: `1003` = 1003.asInstanceOf[`1003`]
   @scala.inline
-  def msoAnimShapePictureGrayscale: `1003` = this.cast(1003)
+  def msoAnimShapeShadowColor: `1012` = 1012.asInstanceOf[`1012`]
   @scala.inline
-  def msoAnimShapeShadowColor: `1012` = this.cast(1012)
+  def msoAnimShapeShadowOffsetX: `1014` = 1014.asInstanceOf[`1014`]
   @scala.inline
-  def msoAnimShapeShadowOffsetX: `1014` = this.cast(1014)
+  def msoAnimShapeShadowOffsetY: `1015` = 1015.asInstanceOf[`1015`]
   @scala.inline
-  def msoAnimShapeShadowOffsetY: `1015` = this.cast(1015)
+  def msoAnimShapeShadowOn: `1010` = 1010.asInstanceOf[`1010`]
   @scala.inline
-  def msoAnimShapeShadowOn: `1010` = this.cast(1010)
+  def msoAnimShapeShadowOpacity: `1013` = 1013.asInstanceOf[`1013`]
   @scala.inline
-  def msoAnimShapeShadowOpacity: `1013` = this.cast(1013)
+  def msoAnimShapeShadowType: `1011` = 1011.asInstanceOf[`1011`]
   @scala.inline
-  def msoAnimShapeShadowType: `1011` = this.cast(1011)
+  def msoAnimTextBulletCharacter: `111` = 111.asInstanceOf[`111`]
   @scala.inline
-  def msoAnimTextBulletCharacter: `111` = this.cast(111)
+  def msoAnimTextBulletColor: `114` = 114.asInstanceOf[`114`]
   @scala.inline
-  def msoAnimTextBulletColor: `114` = this.cast(114)
+  def msoAnimTextBulletFontName: `112` = 112.asInstanceOf[`112`]
   @scala.inline
-  def msoAnimTextBulletFontName: `112` = this.cast(112)
+  def msoAnimTextBulletNumber: `113` = 113.asInstanceOf[`113`]
   @scala.inline
-  def msoAnimTextBulletNumber: `113` = this.cast(113)
+  def msoAnimTextBulletRelativeSize: `115` = 115.asInstanceOf[`115`]
   @scala.inline
-  def msoAnimTextBulletRelativeSize: `115` = this.cast(115)
+  def msoAnimTextBulletStyle: `116` = 116.asInstanceOf[`116`]
   @scala.inline
-  def msoAnimTextBulletStyle: `116` = this.cast(116)
+  def msoAnimTextBulletType: `117` = 117.asInstanceOf[`117`]
   @scala.inline
-  def msoAnimTextBulletType: `117` = this.cast(117)
+  def msoAnimTextFontBold: `100` = 100.asInstanceOf[`100`]
   @scala.inline
-  def msoAnimTextFontBold: `100` = this.cast(100)
+  def msoAnimTextFontColor: `101` = 101.asInstanceOf[`101`]
   @scala.inline
-  def msoAnimTextFontColor: `101` = this.cast(101)
+  def msoAnimTextFontEmboss: `102` = 102.asInstanceOf[`102`]
   @scala.inline
-  def msoAnimTextFontEmboss: `102` = this.cast(102)
+  def msoAnimTextFontItalic: `103` = 103.asInstanceOf[`103`]
   @scala.inline
-  def msoAnimTextFontItalic: `103` = this.cast(103)
+  def msoAnimTextFontName: `104` = 104.asInstanceOf[`104`]
   @scala.inline
-  def msoAnimTextFontName: `104` = this.cast(104)
+  def msoAnimTextFontShadow: `105` = 105.asInstanceOf[`105`]
   @scala.inline
-  def msoAnimTextFontShadow: `105` = this.cast(105)
+  def msoAnimTextFontSize: `106` = 106.asInstanceOf[`106`]
   @scala.inline
-  def msoAnimTextFontSize: `106` = this.cast(106)
+  def msoAnimTextFontStrikeThrough: `110` = 110.asInstanceOf[`110`]
   @scala.inline
-  def msoAnimTextFontStrikeThrough: `110` = this.cast(110)
+  def msoAnimTextFontSubscript: `107` = 107.asInstanceOf[`107`]
   @scala.inline
-  def msoAnimTextFontSubscript: `107` = this.cast(107)
+  def msoAnimTextFontSuperscript: `108` = 108.asInstanceOf[`108`]
   @scala.inline
-  def msoAnimTextFontSuperscript: `108` = this.cast(108)
+  def msoAnimTextFontUnderline: `109` = 109.asInstanceOf[`109`]
   @scala.inline
-  def msoAnimTextFontUnderline: `109` = this.cast(109)
+  def msoAnimVisibility: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def msoAnimVisibility: `8` = this.cast(8)
+  def msoAnimWidth: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoAnimWidth: `3` = this.cast(3)
+  def msoAnimX: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoAnimX: `1` = this.cast(1)
-  @scala.inline
-  def msoAnimY: `2` = this.cast(2)
+  def msoAnimY: `2` = 2.asInstanceOf[`2`]
 }
 

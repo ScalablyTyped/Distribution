@@ -13,7 +13,6 @@ object Request {
   @scala.inline
   def apply(jwt: JWT): Request = {
     val __obj = js.Dynamic.literal(jwt = jwt.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Request]
   }
 }

@@ -13,7 +13,6 @@ object PickImplmin {
   @scala.inline
   def apply(min: Double): PickImplmin = {
     val __obj = js.Dynamic.literal(min = min.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplmin]
   }
 }

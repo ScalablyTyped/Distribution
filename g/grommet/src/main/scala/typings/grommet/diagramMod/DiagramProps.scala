@@ -13,7 +13,6 @@ object DiagramProps {
   @scala.inline
   def apply(connections: js.Array[AnonAnchor]): DiagramProps = {
     val __obj = js.Dynamic.literal(connections = connections.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DiagramProps]
   }
 }

@@ -16,7 +16,6 @@ object WithInvocationContext {
   @scala.inline
   def apply(invocationContext: js.Any): WithInvocationContext = {
     val __obj = js.Dynamic.literal(invocationContext = invocationContext.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WithInvocationContext]
   }
 }

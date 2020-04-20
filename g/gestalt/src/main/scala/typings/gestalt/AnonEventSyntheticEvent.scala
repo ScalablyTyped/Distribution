@@ -17,7 +17,6 @@ object AnonEventSyntheticEvent {
   @scala.inline
   def apply(event: SyntheticEvent[MouseEvent[HTMLDivElement, NativeMouseEvent], Event_]): AnonEventSyntheticEvent = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEventSyntheticEvent]
   }
 }

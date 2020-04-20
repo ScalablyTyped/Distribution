@@ -22,7 +22,6 @@ object IResizeGroupOverflowSetExampleState {
     short: Boolean
   ): IResizeGroupOverflowSetExampleState = {
     val __obj = js.Dynamic.literal(buttonsChecked = buttonsChecked.asInstanceOf[js.Any], cachingEnabled = cachingEnabled.asInstanceOf[js.Any], numberOfItems = numberOfItems.asInstanceOf[js.Any], onGrowDataEnabled = onGrowDataEnabled.asInstanceOf[js.Any], short = short.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IResizeGroupOverflowSetExampleState]
   }
 }

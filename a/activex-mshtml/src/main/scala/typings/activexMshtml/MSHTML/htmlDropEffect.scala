@@ -20,16 +20,14 @@ trait htmlDropEffect extends js.Object
 
 object htmlDropEffect {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def htmlDropEffectCopy: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def htmlDropEffectCopy: `0` = this.cast(0)
+  def htmlDropEffectLink: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def htmlDropEffectLink: `1` = this.cast(1)
+  def htmlDropEffectMove: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def htmlDropEffectMove: `2` = this.cast(2)
+  def htmlDropEffectNone: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def htmlDropEffectNone: `3` = this.cast(3)
-  @scala.inline
-  def htmlDropEffect_Max: `2147483647` = this.cast(2147483647)
+  def htmlDropEffect_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

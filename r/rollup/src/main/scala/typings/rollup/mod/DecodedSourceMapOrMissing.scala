@@ -15,7 +15,6 @@ object DecodedSourceMapOrMissing {
   @scala.inline
   def AnonMissing(missing: `true`, plugin: String): DecodedSourceMapOrMissing = {
     val __obj = js.Dynamic.literal(missing = missing.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DecodedSourceMapOrMissing]
   }
   @scala.inline

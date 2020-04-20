@@ -23,32 +23,30 @@ trait Animations extends js.Object
 
 object Animations {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def coverStart: typings.oracleOraclejet.oracleOraclejetStrings.coverStart = "coverStart".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.coverStart]
   @scala.inline
-  def coverStart: typings.oracleOraclejet.oracleOraclejetStrings.coverStart = this.cast("coverStart")
+  def coverUp: typings.oracleOraclejet.oracleOraclejetStrings.coverUp = "coverUp".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.coverUp]
   @scala.inline
-  def coverUp: typings.oracleOraclejet.oracleOraclejetStrings.coverUp = this.cast("coverUp")
+  def fade: typings.oracleOraclejet.oracleOraclejetStrings.fade = "fade".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.fade]
   @scala.inline
-  def fade: typings.oracleOraclejet.oracleOraclejetStrings.fade = this.cast("fade")
+  def navChild: typings.oracleOraclejet.oracleOraclejetStrings.navChild = "navChild".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.navChild]
   @scala.inline
-  def navChild: typings.oracleOraclejet.oracleOraclejetStrings.navChild = this.cast("navChild")
+  def navParent: typings.oracleOraclejet.oracleOraclejetStrings.navParent = "navParent".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.navParent]
   @scala.inline
-  def navParent: typings.oracleOraclejet.oracleOraclejetStrings.navParent = this.cast("navParent")
+  def navSiblingEarlier: typings.oracleOraclejet.oracleOraclejetStrings.navSiblingEarlier = "navSiblingEarlier".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.navSiblingEarlier]
   @scala.inline
-  def navSiblingEarlier: typings.oracleOraclejet.oracleOraclejetStrings.navSiblingEarlier = this.cast("navSiblingEarlier")
+  def navSiblingLater: typings.oracleOraclejet.oracleOraclejetStrings.navSiblingLater = "navSiblingLater".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.navSiblingLater]
   @scala.inline
-  def navSiblingLater: typings.oracleOraclejet.oracleOraclejetStrings.navSiblingLater = this.cast("navSiblingLater")
+  def pushEnd: typings.oracleOraclejet.oracleOraclejetStrings.pushEnd = "pushEnd".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.pushEnd]
   @scala.inline
-  def pushEnd: typings.oracleOraclejet.oracleOraclejetStrings.pushEnd = this.cast("pushEnd")
+  def pushStart: typings.oracleOraclejet.oracleOraclejetStrings.pushStart = "pushStart".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.pushStart]
   @scala.inline
-  def pushStart: typings.oracleOraclejet.oracleOraclejetStrings.pushStart = this.cast("pushStart")
+  def revealDown: typings.oracleOraclejet.oracleOraclejetStrings.revealDown = "revealDown".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.revealDown]
   @scala.inline
-  def revealDown: typings.oracleOraclejet.oracleOraclejetStrings.revealDown = this.cast("revealDown")
+  def revealEnd: typings.oracleOraclejet.oracleOraclejetStrings.revealEnd = "revealEnd".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.revealEnd]
   @scala.inline
-  def revealEnd: typings.oracleOraclejet.oracleOraclejetStrings.revealEnd = this.cast("revealEnd")
+  def zoomIn: typings.oracleOraclejet.oracleOraclejetStrings.zoomIn = "zoomIn".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.zoomIn]
   @scala.inline
-  def zoomIn: typings.oracleOraclejet.oracleOraclejetStrings.zoomIn = this.cast("zoomIn")
-  @scala.inline
-  def zoomOut: typings.oracleOraclejet.oracleOraclejetStrings.zoomOut = this.cast("zoomOut")
+  def zoomOut: typings.oracleOraclejet.oracleOraclejetStrings.zoomOut = "zoomOut".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.zoomOut]
 }
 

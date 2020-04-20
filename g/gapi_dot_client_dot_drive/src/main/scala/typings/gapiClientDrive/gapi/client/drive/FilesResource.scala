@@ -55,7 +55,6 @@ object FilesResource {
     watch: AnonAcknowledgeAbuse => Request_[Channel]
   ): FilesResource = {
     val __obj = js.Dynamic.literal(copy = js.Any.fromFunction1(copy), create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), emptyTrash = js.Any.fromFunction1(emptyTrash), export = js.Any.fromFunction1(export), generateIds = js.Any.fromFunction1(generateIds), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update), watch = js.Any.fromFunction1(watch))
-  
     __obj.asInstanceOf[FilesResource]
   }
 }

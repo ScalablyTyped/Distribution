@@ -22,7 +22,6 @@ object ISharedLinkPublicOperations {
     GetSharedLinkInfo: (String, String, INamedValues) => ISharedFileInfo
   ): ISharedLinkPublicOperations = {
     val __obj = js.Dynamic.literal(DownloadSharedFileInBlocks_Begin = js.Any.fromFunction3(DownloadSharedFileInBlocks_Begin), DownloadSharedFileInBlocks_Begin_32bit = js.Any.fromFunction3(DownloadSharedFileInBlocks_Begin_32bit), DownloadSharedFileInBlocks_ReadBlock = js.Any.fromFunction5(DownloadSharedFileInBlocks_ReadBlock), DownloadSharedFileInBlocks_ReadBlock_32bit = js.Any.fromFunction5(DownloadSharedFileInBlocks_ReadBlock_32bit), GetSharedLinkInfo = js.Any.fromFunction3(GetSharedLinkInfo))
-  
     __obj.asInstanceOf[ISharedLinkPublicOperations]
   }
 }

@@ -16,7 +16,6 @@ object DeleteUserPoolRequest {
   @scala.inline
   def apply(UserPoolId: UserPoolIdType): DeleteUserPoolRequest = {
     val __obj = js.Dynamic.literal(UserPoolId = UserPoolId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteUserPoolRequest]
   }
 }

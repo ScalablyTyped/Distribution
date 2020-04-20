@@ -19,7 +19,6 @@ object TriggerArgs {
   @scala.inline
   def apply(repositoryName: Input[String], triggers: Input[js.Array[Input[TriggerTrigger]]]): TriggerArgs = {
     val __obj = js.Dynamic.literal(repositoryName = repositoryName.asInstanceOf[js.Any], triggers = triggers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TriggerArgs]
   }
 }

@@ -15,10 +15,8 @@ trait RowRegion extends js.Object
 
 object RowRegion {
   @scala.inline
-  def body: typings.luminoDatagrid.luminoDatagridStrings.body = this.cast("body")
+  def body: typings.luminoDatagrid.luminoDatagridStrings.body = "body".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.body]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def `column-header`: typings.luminoDatagrid.luminoDatagridStrings.`column-header` = this.cast("column-header")
+  def `column-header`: typings.luminoDatagrid.luminoDatagridStrings.`column-header` = "column-header".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.`column-header`]
 }
 

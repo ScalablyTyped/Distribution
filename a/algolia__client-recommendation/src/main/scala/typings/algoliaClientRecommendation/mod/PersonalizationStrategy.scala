@@ -29,7 +29,6 @@ object PersonalizationStrategy {
     personalizationImpact: Double
   ): PersonalizationStrategy = {
     val __obj = js.Dynamic.literal(eventsScoring = eventsScoring.asInstanceOf[js.Any], facetsScoring = facetsScoring.asInstanceOf[js.Any], personalizationImpact = personalizationImpact.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PersonalizationStrategy]
   }
 }

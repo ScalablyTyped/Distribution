@@ -13,7 +13,6 @@ object AnonGetDisposable {
   @scala.inline
   def apply(getDisposable: () => IDisposable): AnonGetDisposable = {
     val __obj = js.Dynamic.literal(getDisposable = js.Any.fromFunction0(getDisposable))
-  
     __obj.asInstanceOf[AnonGetDisposable]
   }
 }

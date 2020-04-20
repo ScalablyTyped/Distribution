@@ -70,7 +70,7 @@ class SignedXml () extends IXmlSerializable {
   def Sign(algorithm: EcdsaParams, key: CryptoKey, data: Document_, options: OptionsSign): js.Promise[Signature] = js.native
   def Sign(algorithm: RsaPssParams, key: CryptoKey, data: Document_): js.Promise[Signature] = js.native
   def Sign(algorithm: RsaPssParams, key: CryptoKey, data: Document_, options: OptionsSign): js.Promise[Signature] = js.native
-  def Signature(): Uint8Array | Null = js.native
+  def Signature: Uint8Array | Null = js.native
   /* protected */ def TransformSignedInfo(): String = js.native
   /* protected */ def TransformSignedInfo(data: Document_): String = js.native
   /* protected */ def TransformSignedInfo(data: Element): String = js.native
@@ -78,6 +78,6 @@ class SignedXml () extends IXmlSerializable {
   /* protected */ def ValidateSignatureValue(keys: js.Array[CryptoKey]): js.Promise[Boolean] = js.native
   def Verify(): js.Promise[Boolean] = js.native
   def Verify(key: CryptoKey): js.Promise[Boolean] = js.native
-  def XmlSignature(): Signature = js.native
+  def XmlSignature: Signature = js.native
 }
 

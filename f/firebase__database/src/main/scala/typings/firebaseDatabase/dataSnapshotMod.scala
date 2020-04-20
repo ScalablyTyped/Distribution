@@ -71,13 +71,13 @@ object dataSnapshotMod extends js.Object {
       * @return {boolean} True if the DataSnapshot contains 1 or more child nodes.
       */
     def hasChildren(): Boolean = js.native
-    def key(): String = js.native
+    def key: String = js.native
     /**
       * Returns the number of children for this DataSnapshot.
       * @return {number} The number of children that this DataSnapshot contains.
       */
     def numChildren(): Double = js.native
-    def ref(): Reference = js.native
+    def ref: Reference = js.native
     def toJSON(): js.Any = js.native
     /**
       * Retrieves the snapshot contents as JSON.  Returns null if the snapshot is

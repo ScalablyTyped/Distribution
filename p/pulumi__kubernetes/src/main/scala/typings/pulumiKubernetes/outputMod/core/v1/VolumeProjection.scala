@@ -35,7 +35,6 @@ object VolumeProjection {
     serviceAccountToken: ServiceAccountTokenProjection
   ): VolumeProjection = {
     val __obj = js.Dynamic.literal(configMap = configMap.asInstanceOf[js.Any], downwardAPI = downwardAPI.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any], serviceAccountToken = serviceAccountToken.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VolumeProjection]
   }
 }

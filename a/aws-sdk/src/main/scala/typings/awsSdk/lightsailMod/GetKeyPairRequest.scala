@@ -16,7 +16,6 @@ object GetKeyPairRequest {
   @scala.inline
   def apply(keyPairName: ResourceName): GetKeyPairRequest = {
     val __obj = js.Dynamic.literal(keyPairName = keyPairName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetKeyPairRequest]
   }
 }

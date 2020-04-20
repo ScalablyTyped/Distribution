@@ -19,10 +19,10 @@ class Deferred[T] () extends js.Object {
   /**
     * The reject method of the promise associated with this deferred object.
     */
-  def reject(): js.Function1[/* reason */ js.UndefOr[js.Any], Unit] = js.native
+  def reject: js.Function1[/* reason */ js.UndefOr[js.Any], Unit] = js.native
   /**
     * The resolve method of the promise associated with this deferred object.
     */
-  def resolve(): js.Function1[/* value */ js.UndefOr[T | js.Thenable[T]], Unit] = js.native
+  def resolve: js.Function1[/* value */ js.UndefOr[T | js.Thenable[T]], Unit] = js.native
 }
 

@@ -31,7 +31,6 @@ object TableChangeState {
     sortOrder: asc | desc
   ): TableChangeState[T] = {
     val __obj = js.Dynamic.literal(cellEdit = cellEdit.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], filters = filters.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], sizePerPage = sizePerPage.asInstanceOf[js.Any], sortField = sortField.asInstanceOf[js.Any], sortOrder = sortOrder.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TableChangeState[T]]
   }
 }

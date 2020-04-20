@@ -17,7 +17,6 @@ object ActionMeta {
     state: State[TContext, TEvent, _, _]
   ): ActionMeta[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(_event = _event.asInstanceOf[js.Any], action = action.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ActionMeta[TContext, TEvent]]
   }
 }

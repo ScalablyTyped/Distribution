@@ -13,7 +13,6 @@ object ASTNode {
   @scala.inline
   def apply(attrs: js.Array[Attr], tag: String): ASTNode = {
     val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ASTNode]
   }
 }

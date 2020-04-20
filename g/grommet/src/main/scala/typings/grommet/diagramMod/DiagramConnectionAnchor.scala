@@ -13,12 +13,10 @@ trait DiagramConnectionAnchor extends js.Object
 
 object DiagramConnectionAnchor {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.grommet.grommetStrings.center = "center".asInstanceOf[typings.grommet.grommetStrings.center]
   @scala.inline
-  def center: typings.grommet.grommetStrings.center = this.cast("center")
+  def horizontal: typings.grommet.grommetStrings.horizontal = "horizontal".asInstanceOf[typings.grommet.grommetStrings.horizontal]
   @scala.inline
-  def horizontal: typings.grommet.grommetStrings.horizontal = this.cast("horizontal")
-  @scala.inline
-  def vertical: typings.grommet.grommetStrings.vertical = this.cast("vertical")
+  def vertical: typings.grommet.grommetStrings.vertical = "vertical".asInstanceOf[typings.grommet.grommetStrings.vertical]
 }
 

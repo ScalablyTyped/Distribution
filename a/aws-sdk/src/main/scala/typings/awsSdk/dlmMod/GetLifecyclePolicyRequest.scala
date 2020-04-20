@@ -16,7 +16,6 @@ object GetLifecyclePolicyRequest {
   @scala.inline
   def apply(PolicyId: PolicyId): GetLifecyclePolicyRequest = {
     val __obj = js.Dynamic.literal(PolicyId = PolicyId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetLifecyclePolicyRequest]
   }
 }

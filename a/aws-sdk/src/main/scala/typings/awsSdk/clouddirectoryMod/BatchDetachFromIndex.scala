@@ -20,7 +20,6 @@ object BatchDetachFromIndex {
   @scala.inline
   def apply(IndexReference: ObjectReference, TargetReference: ObjectReference): BatchDetachFromIndex = {
     val __obj = js.Dynamic.literal(IndexReference = IndexReference.asInstanceOf[js.Any], TargetReference = TargetReference.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchDetachFromIndex]
   }
 }

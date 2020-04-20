@@ -25,7 +25,6 @@ object LocationsResource {
     transferConfigs: TransferConfigsResource
   ): LocationsResource = {
     val __obj = js.Dynamic.literal(dataSources = dataSources.asInstanceOf[js.Any], get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), transferConfigs = transferConfigs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LocationsResource]
   }
 }

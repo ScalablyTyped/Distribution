@@ -30,26 +30,24 @@ trait styleTextJustify extends js.Object
 
 object styleTextJustify {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleTextJustifyAuto: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def styleTextJustifyAuto: `8` = this.cast(8)
+  def styleTextJustifyDistribute: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def styleTextJustifyDistribute: `3` = this.cast(3)
+  def styleTextJustifyDistributeAllLines: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def styleTextJustifyDistributeAllLines: `4` = this.cast(4)
+  def styleTextJustifyInterCluster: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def styleTextJustifyInterCluster: `6` = this.cast(6)
+  def styleTextJustifyInterIdeograph: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def styleTextJustifyInterIdeograph: `5` = this.cast(5)
+  def styleTextJustifyInterWord: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleTextJustifyInterWord: `1` = this.cast(1)
+  def styleTextJustifyKashida: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def styleTextJustifyKashida: `7` = this.cast(7)
+  def styleTextJustifyNewspaper: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleTextJustifyNewspaper: `2` = this.cast(2)
+  def styleTextJustifyNotSet: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleTextJustifyNotSet: `0` = this.cast(0)
-  @scala.inline
-  def styleTextJustify_Max: `2147483647` = this.cast(2147483647)
+  def styleTextJustify_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

@@ -28,7 +28,6 @@ object IOptions {
   @scala.inline
   def apply(confirm: () => js.Promise[Unit], registry: ISettingRegistry): IOptions = {
     val __obj = js.Dynamic.literal(confirm = js.Any.fromFunction0(confirm), registry = registry.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IOptions]
   }
 }

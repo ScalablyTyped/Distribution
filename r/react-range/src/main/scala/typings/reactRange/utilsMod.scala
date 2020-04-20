@@ -42,9 +42,25 @@ object utilsMod extends js.Object {
   def useThumbOverlap(rangeRef: Null, values: js.Array[Double], index: Double): js.Array[String | CSSProperties] = js.native
   def useThumbOverlap(rangeRef: Null, values: js.Array[Double], index: Double, step: Double): js.Array[String | CSSProperties] = js.native
   def useThumbOverlap(rangeRef: Null, values: js.Array[Double], index: Double, step: Double, separator: String): js.Array[String | CSSProperties] = js.native
+  def useThumbOverlap(
+    rangeRef: Null,
+    values: js.Array[Double],
+    index: Double,
+    step: Double,
+    separator: String,
+    valueToLabel: js.Function1[/* value */ String, String]
+  ): js.Array[String | CSSProperties] = js.native
   def useThumbOverlap(rangeRef: default, values: js.Array[Double], index: Double): js.Array[String | CSSProperties] = js.native
   def useThumbOverlap(rangeRef: default, values: js.Array[Double], index: Double, step: Double): js.Array[String | CSSProperties] = js.native
   def useThumbOverlap(rangeRef: default, values: js.Array[Double], index: Double, step: Double, separator: String): js.Array[String | CSSProperties] = js.native
+  def useThumbOverlap(
+    rangeRef: default,
+    values: js.Array[Double],
+    index: Double,
+    step: Double,
+    separator: String,
+    valueToLabel: js.Function1[/* value */ String, String]
+  ): js.Array[String | CSSProperties] = js.native
   def voidFn(): Unit = js.native
 }
 

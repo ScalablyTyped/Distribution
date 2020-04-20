@@ -33,7 +33,6 @@ object CreateDirectoryResponse {
     ObjectIdentifier: ObjectIdentifier
   ): CreateDirectoryResponse = {
     val __obj = js.Dynamic.literal(AppliedSchemaArn = AppliedSchemaArn.asInstanceOf[js.Any], DirectoryArn = DirectoryArn.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], ObjectIdentifier = ObjectIdentifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateDirectoryResponse]
   }
 }

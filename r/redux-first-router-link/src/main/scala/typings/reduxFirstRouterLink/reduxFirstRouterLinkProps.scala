@@ -10,7 +10,7 @@ trait reduxFirstRouterLinkProps {
   def NavLinkProps: typings.reduxFirstRouterLink.mod.NavLinkProps.type = typings.reduxFirstRouterLink.mod.NavLinkProps
   type NavLinkProps = typings.reduxFirstRouterLink.mod.NavLinkProps
   @scala.inline
-  def ReduxFirstRouterLinkProps: LinkProps.type = typings.reduxFirstRouterLink.mod.LinkProps
+  def ReduxFirstRouterLinkProps: LinkProps.type = LinkProps
   type ReduxFirstRouterLinkProps = LinkProps
 }
 

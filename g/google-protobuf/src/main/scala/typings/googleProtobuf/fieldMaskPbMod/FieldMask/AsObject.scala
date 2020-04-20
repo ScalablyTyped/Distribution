@@ -12,7 +12,6 @@ object AsObject {
   @scala.inline
   def apply(pathsList: js.Array[String]): AsObject = {
     val __obj = js.Dynamic.literal(pathsList = pathsList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AsObject]
   }
 }

@@ -15,7 +15,6 @@ object AnonEntries {
   @scala.inline
   def apply(chart: Chart, entries: js.Array[AnonDataPoint], toolTip: AnonEntries): AnonEntries = {
     val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any], entries = entries.asInstanceOf[js.Any], toolTip = toolTip.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEntries]
   }
 }

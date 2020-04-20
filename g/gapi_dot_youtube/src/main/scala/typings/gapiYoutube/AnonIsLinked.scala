@@ -19,7 +19,6 @@ object AnonIsLinked {
   @scala.inline
   def apply(isLinked: Boolean, privacyStatus: String): AnonIsLinked = {
     val __obj = js.Dynamic.literal(isLinked = isLinked.asInstanceOf[js.Any], privacyStatus = privacyStatus.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsLinked]
   }
 }

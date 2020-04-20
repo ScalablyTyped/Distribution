@@ -13,7 +13,6 @@ object TypeofGlue {
   @scala.inline
   def apply(Types: TypeofGlue): TypeofGlue = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofGlue]
   }
 }

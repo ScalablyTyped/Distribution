@@ -29,7 +29,6 @@ object LogEntry {
     time: String
   ): LogEntry = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], exception = exception.asInstanceOf[js.Any], guid = guid.asInstanceOf[js.Any], multiInject = multiInject.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any], rootRequest = rootRequest.asInstanceOf[js.Any], serviceIdentifier = serviceIdentifier.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LogEntry]
   }
 }

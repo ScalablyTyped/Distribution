@@ -22,18 +22,16 @@ trait styleGridColumnAlign extends js.Object
 
 object styleGridColumnAlign {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleGridColumnAlignCenter: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleGridColumnAlignCenter: `0` = this.cast(0)
+  def styleGridColumnAlignEnd: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleGridColumnAlignEnd: `1` = this.cast(1)
+  def styleGridColumnAlignNotSet: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def styleGridColumnAlignNotSet: `4` = this.cast(4)
+  def styleGridColumnAlignStart: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleGridColumnAlignStart: `2` = this.cast(2)
+  def styleGridColumnAlignStretch: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def styleGridColumnAlignStretch: `3` = this.cast(3)
-  @scala.inline
-  def styleGridColumnAlign_Max: `2147483647` = this.cast(2147483647)
+  def styleGridColumnAlign_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

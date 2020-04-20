@@ -19,7 +19,7 @@ object frontFacingBlockMod extends js.Object {
     /**
       * Gets the output component
       */
-    def output(): NodeMaterialConnectionPoint = js.native
+    def output: NodeMaterialConnectionPoint = js.native
   }
   
 }

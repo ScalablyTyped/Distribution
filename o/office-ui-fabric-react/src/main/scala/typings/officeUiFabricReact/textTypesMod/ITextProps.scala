@@ -1,5 +1,19 @@
 package typings.officeUiFabricReact.textTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeUiFabricReact.officeUiFabricReactStrings.large
+import typings.officeUiFabricReact.officeUiFabricReactStrings.medium
+import typings.officeUiFabricReact.officeUiFabricReactStrings.mediumPlus
+import typings.officeUiFabricReact.officeUiFabricReactStrings.mega
+import typings.officeUiFabricReact.officeUiFabricReactStrings.small
+import typings.officeUiFabricReact.officeUiFabricReactStrings.smallPlus
+import typings.officeUiFabricReact.officeUiFabricReactStrings.superLarge
+import typings.officeUiFabricReact.officeUiFabricReactStrings.tiny
+import typings.officeUiFabricReact.officeUiFabricReactStrings.xLarge
+import typings.officeUiFabricReact.officeUiFabricReactStrings.xLargePlus
+import typings.officeUiFabricReact.officeUiFabricReactStrings.xSmall
+import typings.officeUiFabricReact.officeUiFabricReactStrings.xxLarge
+import typings.officeUiFabricReact.officeUiFabricReactStrings.xxLargePlus
 import typings.react.AnonHtml
 import typings.react.mod.AnimationEvent
 import typings.react.mod.Booleanish
@@ -107,7 +121,9 @@ import scala.scalajs.js.annotation._
   /**
     * Optional font type for Text.
     */
-  var variant: js.UndefOr[String] = js.undefined
+  var variant: js.UndefOr[
+    tiny | xSmall | small | smallPlus | medium | mediumPlus | large | xLarge | xLargePlus | xxLarge | xxLargePlus | superLarge | mega
+  ] = js.undefined
 }
 
 object ITextProps {
@@ -282,7 +298,7 @@ object ITextProps {
     slot: String = null,
     slots: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof TSlots ]:? @uifabric/foundation.@uifabric/foundation/lib/ISlots.ISlotOptions<@uifabric/foundation.@uifabric/foundation/lib/ISlots.ExtractProps<TSlots[key]>>}
-    */ typings.uifabricFoundation.uifabricFoundationStrings.AnonSlots with ITextSlots = null,
+    */ typings.uifabricFoundation.uifabricFoundationStrings.AnonSlots with TopLevel[ITextSlots] = null,
     spellCheck: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
     styles: IStylesFunctionOrObject[ITextProps, ITextTokens, ITextStyles] = null,
@@ -295,7 +311,7 @@ object ITextProps {
     translate: yes | no = null,
     typeof: String = null,
     unselectable: on | off = null,
-    variant: String = null,
+    variant: tiny | xSmall | small | smallPlus | medium | mediumPlus | large | xLarge | xLargePlus | xxLarge | xxLargePlus | superLarge | mega = null,
     vocab: String = null
   ): ITextProps = {
     val __obj = js.Dynamic.literal()

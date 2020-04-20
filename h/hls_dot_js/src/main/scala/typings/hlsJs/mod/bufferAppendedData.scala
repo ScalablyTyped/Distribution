@@ -14,7 +14,6 @@ object bufferAppendedData {
   @scala.inline
   def apply(pending: Double, timeRanges: AnonAudio): bufferAppendedData = {
     val __obj = js.Dynamic.literal(pending = pending.asInstanceOf[js.Any], timeRanges = timeRanges.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[bufferAppendedData]
   }
 }

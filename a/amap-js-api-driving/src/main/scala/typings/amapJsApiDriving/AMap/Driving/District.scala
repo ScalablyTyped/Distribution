@@ -19,7 +19,6 @@ object District {
   @scala.inline
   def apply(adcode: String, name: String): District = {
     val __obj = js.Dynamic.literal(adcode = adcode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[District]
   }
 }

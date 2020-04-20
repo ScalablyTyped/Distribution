@@ -18,7 +18,6 @@ object OnScaleGestureListener {
     onScaleEnd: typings.androiduix.android.view.ScaleGestureDetector => Unit
   ): OnScaleGestureListener = {
     val __obj = js.Dynamic.literal(onScale = js.Any.fromFunction1(onScale), onScaleBegin = js.Any.fromFunction1(onScaleBegin), onScaleEnd = js.Any.fromFunction1(onScaleEnd))
-  
     __obj.asInstanceOf[OnScaleGestureListener]
   }
 }

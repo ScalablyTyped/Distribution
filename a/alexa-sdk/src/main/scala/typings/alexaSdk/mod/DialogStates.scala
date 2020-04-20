@@ -13,12 +13,10 @@ trait DialogStates extends js.Object
 
 object DialogStates {
   @scala.inline
-  def COMPLETED: typings.alexaSdk.alexaSdkStrings.COMPLETED = this.cast("COMPLETED")
+  def COMPLETED: typings.alexaSdk.alexaSdkStrings.COMPLETED = "COMPLETED".asInstanceOf[typings.alexaSdk.alexaSdkStrings.COMPLETED]
   @scala.inline
-  def IN_PROGRESS: typings.alexaSdk.alexaSdkStrings.IN_PROGRESS = this.cast("IN_PROGRESS")
+  def IN_PROGRESS: typings.alexaSdk.alexaSdkStrings.IN_PROGRESS = "IN_PROGRESS".asInstanceOf[typings.alexaSdk.alexaSdkStrings.IN_PROGRESS]
   @scala.inline
-  def STARTED: typings.alexaSdk.alexaSdkStrings.STARTED = this.cast("STARTED")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def STARTED: typings.alexaSdk.alexaSdkStrings.STARTED = "STARTED".asInstanceOf[typings.alexaSdk.alexaSdkStrings.STARTED]
 }
 

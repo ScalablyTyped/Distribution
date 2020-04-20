@@ -16,7 +16,6 @@ object CrawlerDynamodbTarget {
   @scala.inline
   def apply(path: String): CrawlerDynamodbTarget = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CrawlerDynamodbTarget]
   }
 }

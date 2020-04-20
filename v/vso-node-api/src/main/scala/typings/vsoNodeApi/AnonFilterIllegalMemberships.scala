@@ -13,7 +13,6 @@ object AnonFilterIllegalMemberships {
   @scala.inline
   def apply(filterIllegalMemberships: Double, none: Double): AnonFilterIllegalMemberships = {
     val __obj = js.Dynamic.literal(filterIllegalMemberships = filterIllegalMemberships.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFilterIllegalMemberships]
   }
 }

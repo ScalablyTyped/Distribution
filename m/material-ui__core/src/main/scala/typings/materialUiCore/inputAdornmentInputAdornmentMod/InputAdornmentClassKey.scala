@@ -15,16 +15,14 @@ trait InputAdornmentClassKey extends js.Object
 
 object InputAdornmentClassKey {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def disablePointerEvents: typings.materialUiCore.materialUiCoreStrings.disablePointerEvents = "disablePointerEvents".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.disablePointerEvents]
   @scala.inline
-  def disablePointerEvents: typings.materialUiCore.materialUiCoreStrings.disablePointerEvents = this.cast("disablePointerEvents")
+  def filled: typings.materialUiCore.materialUiCoreStrings.filled = "filled".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.filled]
   @scala.inline
-  def filled: typings.materialUiCore.materialUiCoreStrings.filled = this.cast("filled")
+  def positionEnd: typings.materialUiCore.materialUiCoreStrings.positionEnd = "positionEnd".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.positionEnd]
   @scala.inline
-  def positionEnd: typings.materialUiCore.materialUiCoreStrings.positionEnd = this.cast("positionEnd")
+  def positionStart: typings.materialUiCore.materialUiCoreStrings.positionStart = "positionStart".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.positionStart]
   @scala.inline
-  def positionStart: typings.materialUiCore.materialUiCoreStrings.positionStart = this.cast("positionStart")
-  @scala.inline
-  def root: typings.materialUiCore.materialUiCoreStrings.root = this.cast("root")
+  def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
 }
 

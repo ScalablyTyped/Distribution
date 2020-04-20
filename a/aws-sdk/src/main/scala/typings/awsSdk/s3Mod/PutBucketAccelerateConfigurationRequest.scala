@@ -20,7 +20,6 @@ object PutBucketAccelerateConfigurationRequest {
   @scala.inline
   def apply(AccelerateConfiguration: AccelerateConfiguration, Bucket: BucketName): PutBucketAccelerateConfigurationRequest = {
     val __obj = js.Dynamic.literal(AccelerateConfiguration = AccelerateConfiguration.asInstanceOf[js.Any], Bucket = Bucket.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutBucketAccelerateConfigurationRequest]
   }
 }

@@ -20,7 +20,6 @@ object NgAnalyzedFileWithInjectables {
     shallowModules: js.Array[CompileShallowModuleMetadata]
   ): NgAnalyzedFileWithInjectables = {
     val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], injectables = injectables.asInstanceOf[js.Any], shallowModules = shallowModules.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NgAnalyzedFileWithInjectables]
   }
 }

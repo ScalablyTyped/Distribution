@@ -19,7 +19,6 @@ object AspsCollection {
   @scala.inline
   def apply(get: (String, Double) => Asp, list: String => Asps, remove: (String, Double) => Unit): AspsCollection = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get), list = js.Any.fromFunction1(list), remove = js.Any.fromFunction2(remove))
-  
     __obj.asInstanceOf[AspsCollection]
   }
 }

@@ -12,7 +12,6 @@ object TemplateURLOptions {
   @scala.inline
   def apply(Payline: String): TemplateURLOptions = {
     val __obj = js.Dynamic.literal(Payline = Payline.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TemplateURLOptions]
   }
 }

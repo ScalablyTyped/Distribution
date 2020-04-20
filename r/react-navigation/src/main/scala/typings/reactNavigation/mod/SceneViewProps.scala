@@ -15,7 +15,6 @@ object SceneViewProps {
   @scala.inline
   def apply(component: ComponentType[js.Object], navigation: NavigationProp[_], screenProps: js.Any): SceneViewProps = {
     val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], navigation = navigation.asInstanceOf[js.Any], screenProps = screenProps.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SceneViewProps]
   }
 }

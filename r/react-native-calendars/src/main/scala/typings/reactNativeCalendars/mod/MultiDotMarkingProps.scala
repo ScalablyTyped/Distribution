@@ -15,7 +15,6 @@ object MultiDotMarkingProps {
   @scala.inline
   def apply(markedDates: StringDictionary[MultiDotMarking], markingType: `multi-dot`): MultiDotMarkingProps = {
     val __obj = js.Dynamic.literal(markedDates = markedDates.asInstanceOf[js.Any], markingType = markingType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MultiDotMarkingProps]
   }
 }

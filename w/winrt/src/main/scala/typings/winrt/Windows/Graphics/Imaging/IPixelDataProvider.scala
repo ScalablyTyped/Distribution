@@ -13,7 +13,6 @@ object IPixelDataProvider {
   @scala.inline
   def apply(detachPixelData: () => Uint8Array): IPixelDataProvider = {
     val __obj = js.Dynamic.literal(detachPixelData = js.Any.fromFunction0(detachPixelData))
-  
     __obj.asInstanceOf[IPixelDataProvider]
   }
 }

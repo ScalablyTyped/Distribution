@@ -51,29 +51,29 @@ class Microflow protected () extends ServerSideMicroflow {
   val microflowActionInfo_FMicroflow: IMicroflowActionInfo | Null = js.native
   @JSName("model")
   var model_FMicroflow: IModel = js.native
-  def allowConcurrentExecution(): Boolean = js.native
+  def allowConcurrentExecution: Boolean = js.native
   def allowConcurrentExecution(newValue: Boolean): js.Any = js.native
   /**
     * In version 7.23.0: added public
     */
-  def allowedModuleRoles(): IList[IModuleRole] = js.native
-  def allowedModuleRolesQualifiedNames(): js.Array[String] = js.native
-  def concurrencyErrorMessage(): Text = js.native
+  def allowedModuleRoles: IList[IModuleRole] = js.native
+  def allowedModuleRolesQualifiedNames: js.Array[String] = js.native
+  def concurrencyErrorMessage: Text = js.native
   def concurrencyErrorMessage(newValue: Text): js.Any = js.native
   def concurrencyErrorMicroflow(): js.Any = js.native
   def concurrencyErrorMicroflow(newValue: IMicroflow): js.Any = js.native
-  def concurrencyErrorMicroflowQualifiedName(): String | Null = js.native
+  def concurrencyErrorMicroflowQualifiedName: String | Null = js.native
   @JSName("concurrencyErrorMicroflow")
-  def concurrencyErrorMicroflow_Union(): IMicroflow | Null = js.native
+  def concurrencyErrorMicroflow_Union: IMicroflow | Null = js.native
   @JSName("containerAsFolderBase")
-  def containerAsFolderBase_MMicroflow(): FolderBase = js.native
+  def containerAsFolderBase_MMicroflow: FolderBase = js.native
   def microflowActionInfo(): js.Any = js.native
   def microflowActionInfo(newValue: MicroflowActionInfo): js.Any = js.native
   /**
     * In version 8.0.0: introduced
     */
   @JSName("microflowActionInfo")
-  def microflowActionInfo_Union(): MicroflowActionInfo | Null = js.native
+  def microflowActionInfo_Union: MicroflowActionInfo | Null = js.native
 }
 
 /* static members */

@@ -14,7 +14,6 @@ object ExecutionContextInfo {
   @scala.inline
   def apply(frameName: String, id: Double, iterationId: Double): ExecutionContextInfo = {
     val __obj = js.Dynamic.literal(frameName = frameName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], iterationId = iterationId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExecutionContextInfo]
   }
 }

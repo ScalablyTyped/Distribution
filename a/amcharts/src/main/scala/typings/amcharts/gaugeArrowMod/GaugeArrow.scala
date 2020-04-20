@@ -101,7 +101,6 @@ object GaugeArrow {
     value: Double
   ): GaugeArrow = {
     val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], axis = axis.asInstanceOf[js.Any], borderAlpha = borderAlpha.asInstanceOf[js.Any], clockWiseOnly = clockWiseOnly.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], innerRadius = innerRadius.asInstanceOf[js.Any], nailAlpha = nailAlpha.asInstanceOf[js.Any], nailBorderAlpha = nailBorderAlpha.asInstanceOf[js.Any], nailBorderThickness = nailBorderThickness.asInstanceOf[js.Any], nailRadius = nailRadius.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], setValue = js.Any.fromFunction1(setValue), startWidth = startWidth.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GaugeArrow]
   }
 }

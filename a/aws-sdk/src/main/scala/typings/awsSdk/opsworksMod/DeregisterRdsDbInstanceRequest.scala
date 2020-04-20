@@ -16,7 +16,6 @@ object DeregisterRdsDbInstanceRequest {
   @scala.inline
   def apply(RdsDbInstanceArn: String): DeregisterRdsDbInstanceRequest = {
     val __obj = js.Dynamic.literal(RdsDbInstanceArn = RdsDbInstanceArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeregisterRdsDbInstanceRequest]
   }
 }

@@ -16,7 +16,6 @@ object connectSuccessArgs {
   @scala.inline
   def apply(client: client, clientId: String, isReconnect: Boolean, meta: js.Any, timestamp: Date): connectSuccessArgs = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], isReconnect = isReconnect.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[connectSuccessArgs]
   }
 }

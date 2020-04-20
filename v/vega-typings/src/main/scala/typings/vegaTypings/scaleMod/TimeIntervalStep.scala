@@ -13,7 +13,6 @@ object TimeIntervalStep {
   @scala.inline
   def apply(interval: TimeInterval, step: Double): TimeIntervalStep = {
     val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TimeIntervalStep]
   }
 }

@@ -26,7 +26,6 @@ object GetResourceResult {
   @scala.inline
   def apply(id: String, parentId: String, path: String, pathPart: String, restApiId: String): GetResourceResult = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], parentId = parentId.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pathPart = pathPart.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetResourceResult]
   }
 }

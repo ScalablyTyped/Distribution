@@ -15,7 +15,17 @@ import scala.scalajs.js.annotation._
 @JSImport("baseui", "styled")
 @js.native
 object styled_noscript extends js.Object {
-  def apply[P /* <: js.Object */, T](component: noscript, styledFn: js.Function1[/* props */ AnonTheme[T] with P, StyleObject]): StyletronComponent[(Pick[ComponentProps[noscript], Exclude[String, AnonClassName]]) with P] = js.native
-  def apply[P /* <: js.Object */, T](component: noscript, styledFn: StyleObject): StyletronComponent[(Pick[ComponentProps[noscript], Exclude[String, AnonClassName]]) with P] = js.native
+  def apply[P /* <: js.Object */, T](component: noscript, styledFn: js.Function1[/* props */ AnonTheme[T] with P, StyleObject]): StyletronComponent[
+    (Pick[
+      ComponentProps[noscript], 
+      Exclude[/* keyof react.react.ComponentProps<'noscript'> */ String, AnonClassName]
+    ]) with P
+  ] = js.native
+  def apply[P /* <: js.Object */, T](component: noscript, styledFn: StyleObject): StyletronComponent[
+    (Pick[
+      ComponentProps[noscript], 
+      Exclude[/* keyof react.react.ComponentProps<'noscript'> */ String, AnonClassName]
+    ]) with P
+  ] = js.native
 }
 

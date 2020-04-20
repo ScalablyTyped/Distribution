@@ -13,12 +13,10 @@ trait ListSize extends js.Object
 
 object ListSize {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def default: typings.antd.antdStrings.default = "default".asInstanceOf[typings.antd.antdStrings.default]
   @scala.inline
-  def default: typings.antd.antdStrings.default = this.cast("default")
+  def large: typings.antd.antdStrings.large = "large".asInstanceOf[typings.antd.antdStrings.large]
   @scala.inline
-  def large: typings.antd.antdStrings.large = this.cast("large")
-  @scala.inline
-  def small: typings.antd.antdStrings.small = this.cast("small")
+  def small: typings.antd.antdStrings.small = "small".asInstanceOf[typings.antd.antdStrings.small]
 }
 

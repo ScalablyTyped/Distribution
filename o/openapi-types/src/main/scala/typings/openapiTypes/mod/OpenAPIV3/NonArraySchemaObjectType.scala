@@ -16,18 +16,16 @@ trait NonArraySchemaObjectType extends js.Object
 
 object NonArraySchemaObjectType {
   @scala.inline
-  def boolean: typings.openapiTypes.openapiTypesStrings.boolean = this.cast("boolean")
+  def boolean: typings.openapiTypes.openapiTypesStrings.boolean = "boolean".asInstanceOf[typings.openapiTypes.openapiTypesStrings.boolean]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def integer: typings.openapiTypes.openapiTypesStrings.integer = "integer".asInstanceOf[typings.openapiTypes.openapiTypesStrings.integer]
   @scala.inline
-  def integer: typings.openapiTypes.openapiTypesStrings.integer = this.cast("integer")
+  def `null`: typings.openapiTypes.openapiTypesStrings.`null` = "null".asInstanceOf[typings.openapiTypes.openapiTypesStrings.`null`]
   @scala.inline
-  def `null`: typings.openapiTypes.openapiTypesStrings.`null` = this.cast("null")
+  def number: typings.openapiTypes.openapiTypesStrings.number = "number".asInstanceOf[typings.openapiTypes.openapiTypesStrings.number]
   @scala.inline
-  def number: typings.openapiTypes.openapiTypesStrings.number = this.cast("number")
+  def `object`: typings.openapiTypes.openapiTypesStrings.`object` = "object".asInstanceOf[typings.openapiTypes.openapiTypesStrings.`object`]
   @scala.inline
-  def `object`: typings.openapiTypes.openapiTypesStrings.`object` = this.cast("object")
-  @scala.inline
-  def string: typings.openapiTypes.openapiTypesStrings.string = this.cast("string")
+  def string: typings.openapiTypes.openapiTypesStrings.string = "string".asInstanceOf[typings.openapiTypes.openapiTypesStrings.string]
 }
 

@@ -31,7 +31,6 @@ object Recordofftonexttheonasbac {
     to: js.Any
   ): Recordofftonexttheonasbac = {
     val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any], back = back.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any], off = off.asInstanceOf[js.Any], on = on.asInstanceOf[js.Any], rid = rid.asInstanceOf[js.Any], the = the.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Recordofftonexttheonasbac]
   }
 }

@@ -78,7 +78,7 @@ trait Popup
     */
   val currentDockPosition: auto | `top-center` | `top-right` | `top-left` | `bottom-left` | `bottom-center` | `bottom-right` = js.native
   /**
-    * Enables automatic creation of a popup template for layers that have popups enabled but no popupTemplate defined. Automatic popup templates are supported for layers that support the `createPopupTemplate` method. (Supported for [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html), [GeoJSONLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html), [SceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html), [CSVLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html), [PointCloudLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-PointCloudLayer.html), [StreamLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html) and [ImageryLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html)).
+    * Enables automatic creation of a popup template for layers that have popups enabled but no popupTemplate defined. Automatic popup templates are supported for layers that support the `createPopupTemplate` method. (Supported for [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html), [GeoJSONLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html), [SceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html), [CSVLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html), [PointCloudLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-PointCloudLayer.html), [StreamLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html), and [ImageryLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html)).
     * > Starting with version 4.12, [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) content can no longer be set using a wildcard, e.g. `*`. Instead, set the `defaultPopupTemplateEnabled` property to `true`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#defaultPopupTemplateEnabled)
@@ -135,6 +135,14 @@ trait Popup
     */
   var location: Point = js.native
   /**
+    * Defines the maximum icons displayed at one time in the action area.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#maxInlineActions)
+    *
+    * @default 3
+    */
+  var maxInlineActions: Double | js.Any = js.native
+  /**
     * An array of pending Promises that have not yet been fulfilled. If there are no pending promises, the value is `null`. When the pending promises are resolved they are removed from this array and the features they return are pushed into the [features](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#features) array.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#promises)
@@ -152,6 +160,12 @@ trait Popup
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#selectedFeatureIndex)
     */
   var selectedFeatureIndex: Double = js.native
+  /**
+    * Returns a reference to the current [Feature](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html) that the Popup is using. This is useful if needing to get a reference to the widget in order to make any changes to it.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#selectedFeatureWidget)
+    */
+  val selectedFeatureWidget: Feature = js.native
   /**
     * Indicates whether to display a spinner at the popup location prior to its display when it has pending promises.
     *
@@ -183,6 +197,12 @@ trait Popup
     */
   var visible: Boolean = js.native
   /**
+    * The visible elements that are displayed within the widget. This property provides the ability to turn individual elements of the widget's display on/off.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#visibleElements)
+    */
+  var visibleElements: PopupVisibleElements = js.native
+  /**
     * Use this method to remove focus from the Widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#blur)
@@ -206,6 +226,19 @@ trait Popup
     *
     */
   def close(): Unit = js.native
+  /**
+    * Use this method to return feature(s) at a given screen location. These features are fetched from all of the [LayerViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) in the [view](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html). In order to use this, a layer must already have an associated [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) and have its [popupEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#popupEnabled). These features can then be used within a custom [Popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html) or [Feature](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html) widget experience. One example could be a custom side panel that displays feature-specific information based on an end user's click location. This method allows a developer the ability to control how the input location is handled, and then subsequently, what to do with the results.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#fetchFeatures)
+    *
+    * @param screenPoint An object representing a point on the screen. This point can be in either the MapView or SceneView.
+    * @param screenPoint.x The x coordinate.
+    * @param screenPoint.y The y coordinate.
+    * @param options The [options](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#FetchFeaturesOptions) to pass into the `fetchFeatures` method.
+    *
+    */
+  def fetchFeatures(screenPoint: PopupFetchFeaturesScreenPoint): js.Promise[FetchPopupFeaturesResult] = js.native
+  def fetchFeatures(screenPoint: PopupFetchFeaturesScreenPoint, options: FetchFeaturesOptions): js.Promise[FetchPopupFeaturesResult] = js.native
   /**
     * Use this method to give focus to the Widget if the widget is able to be focused.
     *

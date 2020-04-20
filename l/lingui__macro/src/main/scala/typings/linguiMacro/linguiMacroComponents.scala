@@ -1,5 +1,9 @@
 package typings.linguiMacro
 
+import typings.linguiMacro.mod.Plural_
+import typings.linguiMacro.mod.SelectOrdinal_
+import typings.linguiMacro.mod.Select_
+import typings.linguiMacro.transMod.default
 import typings.react.mod.ComponentType
 import typings.std.Date
 import typings.std.Intl.DateTimeFormatOptions
@@ -10,16 +14,16 @@ import scala.scalajs.js.annotation._
 
 object linguiMacroComponents extends linguiMacroProps {
   @scala.inline
-  def DateFormat: ComponentType[DateFormatProps[Date, DateTimeFormatOptions]] = js.constructorOf[typings.linguiMacro.mod.DateFormat].asInstanceOf[typings.react.mod.ComponentType[DateFormatProps[typings.std.Date, typings.std.Intl.DateTimeFormatOptions]]]
+  def DateFormat: ComponentType[DateFormatProps[Date, DateTimeFormatOptions]] = js.constructorOf[typings.linguiMacro.mod.DateFormat].asInstanceOf[ComponentType[DateFormatProps[Date, DateTimeFormatOptions]]]
   @scala.inline
-  def NumberFormat: ComponentType[NumberFormatProps[Double, NumberFormatOptions]] = js.constructorOf[typings.linguiMacro.mod.NumberFormat].asInstanceOf[typings.react.mod.ComponentType[NumberFormatProps[scala.Double, typings.std.Intl.NumberFormatOptions]]]
+  def NumberFormat: ComponentType[NumberFormatProps[Double, NumberFormatOptions]] = js.constructorOf[typings.linguiMacro.mod.NumberFormat].asInstanceOf[ComponentType[NumberFormatProps[Double, NumberFormatOptions]]]
   @scala.inline
-  def Plural: ComponentType[PluralProps] = js.constructorOf[typings.linguiMacro.mod.Plural_].asInstanceOf[typings.react.mod.ComponentType[PluralProps]]
+  def Plural: ComponentType[PluralProps] = js.constructorOf[Plural_].asInstanceOf[ComponentType[PluralProps]]
   @scala.inline
-  def Select: ComponentType[SelectProps] = js.constructorOf[typings.linguiMacro.mod.Select_].asInstanceOf[typings.react.mod.ComponentType[SelectProps]]
+  def Select: ComponentType[SelectProps] = js.constructorOf[Select_].asInstanceOf[ComponentType[SelectProps]]
   @scala.inline
-  def SelectOrdinal: ComponentType[SelectOrdinalProps] = js.constructorOf[typings.linguiMacro.mod.SelectOrdinal_].asInstanceOf[typings.react.mod.ComponentType[SelectOrdinalProps]]
+  def SelectOrdinal: ComponentType[SelectOrdinalProps] = js.constructorOf[SelectOrdinal_].asInstanceOf[ComponentType[SelectOrdinalProps]]
   @scala.inline
-  def Trans: ComponentType[TransProps] = js.constructorOf[typings.linguiMacro.transMod.default].asInstanceOf[typings.react.mod.ComponentType[TransProps]]
+  def Trans: ComponentType[TransProps] = js.constructorOf[default].asInstanceOf[ComponentType[TransProps]]
 }
 

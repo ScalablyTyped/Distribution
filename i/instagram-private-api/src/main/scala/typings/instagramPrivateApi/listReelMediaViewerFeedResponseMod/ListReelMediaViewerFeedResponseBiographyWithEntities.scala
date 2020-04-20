@@ -13,7 +13,6 @@ object ListReelMediaViewerFeedResponseBiographyWithEntities {
   @scala.inline
   def apply(entities: js.Array[_], raw_text: String): ListReelMediaViewerFeedResponseBiographyWithEntities = {
     val __obj = js.Dynamic.literal(entities = entities.asInstanceOf[js.Any], raw_text = raw_text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListReelMediaViewerFeedResponseBiographyWithEntities]
   }
 }

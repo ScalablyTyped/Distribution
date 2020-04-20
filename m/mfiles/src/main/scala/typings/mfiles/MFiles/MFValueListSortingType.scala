@@ -14,10 +14,8 @@ trait MFValueListSortingType extends js.Object
 
 object MFValueListSortingType {
   @scala.inline
-  def ExtID: `1` = this.cast(1)
+  def ExtID: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def Name: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Name: `0` = 0.asInstanceOf[`0`]
 }
 

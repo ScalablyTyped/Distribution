@@ -12,10 +12,8 @@ trait CalendarDirection extends js.Object
 
 object CalendarDirection {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def horizontal: typings.nivoCalendar.nivoCalendarStrings.horizontal = "horizontal".asInstanceOf[typings.nivoCalendar.nivoCalendarStrings.horizontal]
   @scala.inline
-  def horizontal: typings.nivoCalendar.nivoCalendarStrings.horizontal = this.cast("horizontal")
-  @scala.inline
-  def vertical: typings.nivoCalendar.nivoCalendarStrings.vertical = this.cast("vertical")
+  def vertical: typings.nivoCalendar.nivoCalendarStrings.vertical = "vertical".asInstanceOf[typings.nivoCalendar.nivoCalendarStrings.vertical]
 }
 

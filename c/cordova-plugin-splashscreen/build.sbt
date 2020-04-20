@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cordova-plugin-splashscreen"
-version := "5.0.3-9d8379"
+version := "5.0.3-4772ed"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

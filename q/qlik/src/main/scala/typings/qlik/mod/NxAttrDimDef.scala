@@ -14,7 +14,6 @@ object NxAttrDimDef {
   @scala.inline
   def apply(qDef: String, qLibraryId: String, qSortBy: SortCriteria): NxAttrDimDef = {
     val __obj = js.Dynamic.literal(qDef = qDef.asInstanceOf[js.Any], qLibraryId = qLibraryId.asInstanceOf[js.Any], qSortBy = qSortBy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NxAttrDimDef]
   }
 }

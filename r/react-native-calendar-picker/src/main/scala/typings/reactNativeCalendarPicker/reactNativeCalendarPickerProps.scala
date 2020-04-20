@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeCalendarPickerProps {
   @scala.inline
-  def ReactNativeCalendarPickerProps: CalendarPickerProps.type = typings.reactNativeCalendarPicker.mod.CalendarPickerProps
+  def ReactNativeCalendarPickerProps: CalendarPickerProps.type = CalendarPickerProps
   type ReactNativeCalendarPickerProps = CalendarPickerProps
 }
 

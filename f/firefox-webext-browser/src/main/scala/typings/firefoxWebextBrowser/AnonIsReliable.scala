@@ -15,7 +15,6 @@ object AnonIsReliable {
   @scala.inline
   def apply(isReliable: Boolean, languages: js.Array[AnonLanguage]): AnonIsReliable = {
     val __obj = js.Dynamic.literal(isReliable = isReliable.asInstanceOf[js.Any], languages = languages.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsReliable]
   }
 }

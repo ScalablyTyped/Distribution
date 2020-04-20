@@ -13,7 +13,6 @@ object AnonDetectedSourceLanguage {
   @scala.inline
   def apply(detectedSourceLanguage: String, translatedText: String): AnonDetectedSourceLanguage = {
     val __obj = js.Dynamic.literal(detectedSourceLanguage = detectedSourceLanguage.asInstanceOf[js.Any], translatedText = translatedText.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDetectedSourceLanguage]
   }
 }

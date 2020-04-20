@@ -22,7 +22,6 @@ object SearchMatch {
   @scala.inline
   def apply(lineContent: String, lineNumber: Double): SearchMatch = {
     val __obj = js.Dynamic.literal(lineContent = lineContent.asInstanceOf[js.Any], lineNumber = lineNumber.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SearchMatch]
   }
 }

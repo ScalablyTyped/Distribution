@@ -21,7 +21,6 @@ object colors {
   @scala.inline
   def apply(ThreeD: js.Object): colors = {
     val __obj = js.Dynamic.literal(ThreeD = ThreeD.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[colors]
   }
 }

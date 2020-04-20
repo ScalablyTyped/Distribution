@@ -12,10 +12,8 @@ trait Projection extends js.Object
 
 object Projection {
   @scala.inline
-  def `900913`: typings.mapboxSphericalmercator.mapboxSphericalmercatorStrings.`900913` = this.cast("900913")
+  def `900913`: typings.mapboxSphericalmercator.mapboxSphericalmercatorStrings.`900913` = "900913".asInstanceOf[typings.mapboxSphericalmercator.mapboxSphericalmercatorStrings.`900913`]
   @scala.inline
-  def WGS84: typings.mapboxSphericalmercator.mapboxSphericalmercatorStrings.WGS84 = this.cast("WGS84")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def WGS84: typings.mapboxSphericalmercator.mapboxSphericalmercatorStrings.WGS84 = "WGS84".asInstanceOf[typings.mapboxSphericalmercator.mapboxSphericalmercatorStrings.WGS84]
 }
 

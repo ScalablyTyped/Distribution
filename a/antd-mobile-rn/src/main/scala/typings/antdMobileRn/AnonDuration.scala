@@ -17,7 +17,6 @@ object AnonDuration {
   @scala.inline
   def apply(duration: Double, mask: Boolean, onClose: () => Unit, styles: StringDictionary[RegisteredStyle[_]]): AnonDuration = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any], onClose = js.Any.fromFunction0(onClose), styles = styles.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDuration]
   }
 }

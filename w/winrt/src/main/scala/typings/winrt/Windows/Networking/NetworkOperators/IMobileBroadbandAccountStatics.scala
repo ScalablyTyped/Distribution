@@ -17,7 +17,6 @@ object IMobileBroadbandAccountStatics {
     createFromNetworkAccountId: String => MobileBroadbandAccount
   ): IMobileBroadbandAccountStatics = {
     val __obj = js.Dynamic.literal(availableNetworkAccountIds = availableNetworkAccountIds.asInstanceOf[js.Any], createFromNetworkAccountId = js.Any.fromFunction1(createFromNetworkAccountId))
-  
     __obj.asInstanceOf[IMobileBroadbandAccountStatics]
   }
 }

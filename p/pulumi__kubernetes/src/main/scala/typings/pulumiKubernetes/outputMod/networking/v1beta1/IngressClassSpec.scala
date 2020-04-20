@@ -28,7 +28,6 @@ object IngressClassSpec {
   @scala.inline
   def apply(controller: String, parameters: TypedLocalObjectReference): IngressClassSpec = {
     val __obj = js.Dynamic.literal(controller = controller.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IngressClassSpec]
   }
 }

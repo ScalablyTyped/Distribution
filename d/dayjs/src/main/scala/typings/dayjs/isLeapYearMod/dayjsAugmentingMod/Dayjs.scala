@@ -12,7 +12,6 @@ object Dayjs {
   @scala.inline
   def apply(isLeapYear: () => Boolean): Dayjs = {
     val __obj = js.Dynamic.literal(isLeapYear = js.Any.fromFunction0(isLeapYear))
-  
     __obj.asInstanceOf[Dayjs]
   }
 }

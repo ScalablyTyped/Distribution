@@ -20,7 +20,6 @@ object RegisterTargetsInput {
   @scala.inline
   def apply(TargetGroupArn: TargetGroupArn, Targets: TargetDescriptions): RegisterTargetsInput = {
     val __obj = js.Dynamic.literal(TargetGroupArn = TargetGroupArn.asInstanceOf[js.Any], Targets = Targets.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RegisterTargetsInput]
   }
 }

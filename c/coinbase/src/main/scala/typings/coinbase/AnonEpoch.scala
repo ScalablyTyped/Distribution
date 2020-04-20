@@ -13,7 +13,6 @@ object AnonEpoch {
   @scala.inline
   def apply(epoch: Double, iso: String): AnonEpoch = {
     val __obj = js.Dynamic.literal(epoch = epoch.asInstanceOf[js.Any], iso = iso.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEpoch]
   }
 }

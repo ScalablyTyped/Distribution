@@ -14,10 +14,8 @@ trait ParsedEventType extends js.Object
 
 object ParsedEventType {
   @scala.inline
-  def Animation: `1` = this.cast(1)
+  def Animation: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def Regular: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Regular: `0` = 0.asInstanceOf[`0`]
 }
 

@@ -12,7 +12,6 @@ object TrackTrackErrorEvent {
   @scala.inline
   def apply(error: Error): TrackTrackErrorEvent = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TrackTrackErrorEvent]
   }
 }

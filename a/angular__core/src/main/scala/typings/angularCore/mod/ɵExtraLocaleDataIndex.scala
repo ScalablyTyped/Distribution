@@ -16,12 +16,10 @@ trait ɵExtraLocaleDataIndex extends js.Object
 
 object ɵExtraLocaleDataIndex {
   @scala.inline
-  def ExtraDayPeriodFormats: `0` = this.cast(0)
+  def ExtraDayPeriodFormats: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def ExtraDayPeriodStandalone: `1` = this.cast(1)
+  def ExtraDayPeriodStandalone: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def ExtraDayPeriodsRules: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ExtraDayPeriodsRules: `2` = 2.asInstanceOf[`2`]
 }
 

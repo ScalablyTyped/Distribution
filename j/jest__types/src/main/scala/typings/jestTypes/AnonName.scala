@@ -14,7 +14,6 @@ object AnonName {
   @scala.inline
   def apply(name: include_test_location_in_result): AnonName = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonName]
   }
 }

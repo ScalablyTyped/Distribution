@@ -22,7 +22,6 @@ object GraphQLService {
     onSchemaChange: SchemaChangeCallback => Unsubscriber
   ): GraphQLService = {
     val __obj = js.Dynamic.literal(executor = js.Any.fromFunction1(executor), load = js.Any.fromFunction1(load), onSchemaChange = js.Any.fromFunction1(onSchemaChange))
-  
     __obj.asInstanceOf[GraphQLService]
   }
 }

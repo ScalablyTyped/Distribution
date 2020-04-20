@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeQrcodeProps {
   @scala.inline
-  def ReactNativeQrcodeProps: QRCodeProperties.type = typings.reactNativeQrcode.mod.QRCodeProperties
+  def ReactNativeQrcodeProps: QRCodeProperties.type = QRCodeProperties
   type ReactNativeQrcodeProps = QRCodeProperties
 }
 

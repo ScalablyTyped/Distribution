@@ -13,7 +13,6 @@ object CanvasToTempFilePathSuccessCallbackResult {
   @scala.inline
   def apply(tempFilePath: String): CanvasToTempFilePathSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(tempFilePath = tempFilePath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CanvasToTempFilePathSuccessCallbackResult]
   }
 }

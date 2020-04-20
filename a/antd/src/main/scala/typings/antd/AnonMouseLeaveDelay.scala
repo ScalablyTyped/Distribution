@@ -23,7 +23,6 @@ object AnonMouseLeaveDelay {
     trigger: String
   ): AnonMouseLeaveDelay = {
     val __obj = js.Dynamic.literal(mouseEnterDelay = mouseEnterDelay.asInstanceOf[js.Any], mouseLeaveDelay = mouseLeaveDelay.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], transitionName = transitionName.asInstanceOf[js.Any], trigger = trigger.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMouseLeaveDelay]
   }
 }

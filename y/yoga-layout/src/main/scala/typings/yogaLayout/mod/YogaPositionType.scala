@@ -12,10 +12,8 @@ trait YogaPositionType extends js.Object
 
 object YogaPositionType {
   @scala.inline
-  def `0`: typings.yogaLayout.yogaLayoutNumbers.`0` = this.cast(0)
+  def `0`: typings.yogaLayout.yogaLayoutNumbers.`0` = 0.asInstanceOf[typings.yogaLayout.yogaLayoutNumbers.`0`]
   @scala.inline
-  def `1`: typings.yogaLayout.yogaLayoutNumbers.`1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `1`: typings.yogaLayout.yogaLayoutNumbers.`1` = 1.asInstanceOf[typings.yogaLayout.yogaLayoutNumbers.`1`]
 }
 

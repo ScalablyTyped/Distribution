@@ -13,7 +13,6 @@ object AttrRecognizerStatic {
   @scala.inline
   def apply(attrTest: HammerInput => Boolean, process: HammerInput => js.Any): AttrRecognizerStatic = {
     val __obj = js.Dynamic.literal(attrTest = js.Any.fromFunction1(attrTest), process = js.Any.fromFunction1(process))
-  
     __obj.asInstanceOf[AttrRecognizerStatic]
   }
 }

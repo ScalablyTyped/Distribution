@@ -15,7 +15,6 @@ object UploadFileSuccessCallbackResult {
   @scala.inline
   def apply(data: String, statusCode: Double): UploadFileSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UploadFileSuccessCallbackResult]
   }
 }

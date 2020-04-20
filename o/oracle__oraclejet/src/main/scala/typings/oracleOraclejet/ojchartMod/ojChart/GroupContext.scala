@@ -14,7 +14,6 @@ object GroupContext {
   @scala.inline
   def apply(indexPath: js.Array[_], subId: String): GroupContext = {
     val __obj = js.Dynamic.literal(indexPath = indexPath.asInstanceOf[js.Any], subId = subId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GroupContext]
   }
 }

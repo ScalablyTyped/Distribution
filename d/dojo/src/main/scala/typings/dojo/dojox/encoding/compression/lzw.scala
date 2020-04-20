@@ -26,7 +26,6 @@ object lzw {
   @scala.inline
   def apply(Decoder: js.Any => Unit, Encoder: js.Any => Unit): lzw = {
     val __obj = js.Dynamic.literal(Decoder = js.Any.fromFunction1(Decoder), Encoder = js.Any.fromFunction1(Encoder))
-  
     __obj.asInstanceOf[lzw]
   }
 }

@@ -18,7 +18,6 @@ object FunctionTypeParam {
     typeAnnotation: FlowTypeAnnotation
   ): FunctionTypeParam = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FunctionTypeParam]
   }
 }

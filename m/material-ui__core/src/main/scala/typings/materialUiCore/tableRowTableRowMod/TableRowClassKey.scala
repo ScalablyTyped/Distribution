@@ -15,16 +15,14 @@ trait TableRowClassKey extends js.Object
 
 object TableRowClassKey {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def footer: typings.materialUiCore.materialUiCoreStrings.footer = "footer".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.footer]
   @scala.inline
-  def footer: typings.materialUiCore.materialUiCoreStrings.footer = this.cast("footer")
+  def head: typings.materialUiCore.materialUiCoreStrings.head = "head".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.head]
   @scala.inline
-  def head: typings.materialUiCore.materialUiCoreStrings.head = this.cast("head")
+  def hover: typings.materialUiCore.materialUiCoreStrings.hover = "hover".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.hover]
   @scala.inline
-  def hover: typings.materialUiCore.materialUiCoreStrings.hover = this.cast("hover")
+  def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
   @scala.inline
-  def root: typings.materialUiCore.materialUiCoreStrings.root = this.cast("root")
-  @scala.inline
-  def selected: typings.materialUiCore.materialUiCoreStrings.selected = this.cast("selected")
+  def selected: typings.materialUiCore.materialUiCoreStrings.selected = "selected".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.selected]
 }
 

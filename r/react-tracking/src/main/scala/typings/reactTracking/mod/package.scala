@@ -24,7 +24,7 @@ package object mod {
   ]
   type Track_[T, P, S] = js.Function2[
     /* trackingInfo */ js.UndefOr[
-      typings.reactTracking.mod.TrackingInfo[typings.std.Pick[T, java.lang.String], P, S]
+      typings.reactTracking.mod.TrackingInfo[typings.std.Pick[T, /* keyof T */ java.lang.String], P, S]
     ], 
     /* options */ js.UndefOr[typings.reactTracking.mod.Options[typings.std.Partial[T]]], 
     typings.reactTracking.mod.Decorator

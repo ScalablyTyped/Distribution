@@ -22,7 +22,6 @@ object AnonIbiza {
     userInterface: Double
   ): AnonIbiza = {
     val __obj = js.Dynamic.literal(ibiza = ibiza.asInstanceOf[js.Any], portalExtensionApi = portalExtensionApi.asInstanceOf[js.Any], restApi = restApi.asInstanceOf[js.Any], undefined = undefined.asInstanceOf[js.Any], userInterface = userInterface.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIbiza]
   }
 }

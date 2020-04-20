@@ -12,7 +12,6 @@ object IState {
   @scala.inline
   def apply(equals: IState => Boolean): IState = {
     val __obj = js.Dynamic.literal(equals = js.Any.fromFunction1(equals))
-  
     __obj.asInstanceOf[IState]
   }
 }

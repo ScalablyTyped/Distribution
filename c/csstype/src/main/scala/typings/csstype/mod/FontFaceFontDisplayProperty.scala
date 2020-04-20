@@ -15,16 +15,14 @@ trait FontFaceFontDisplayProperty extends js.Object
 
 object FontFaceFontDisplayProperty {
   @scala.inline
-  def auto: typings.csstype.csstypeStrings.auto = this.cast("auto")
+  def auto: typings.csstype.csstypeStrings.auto = "auto".asInstanceOf[typings.csstype.csstypeStrings.auto]
   @scala.inline
-  def block: typings.csstype.csstypeStrings.block = this.cast("block")
+  def block: typings.csstype.csstypeStrings.block = "block".asInstanceOf[typings.csstype.csstypeStrings.block]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fallback: typings.csstype.csstypeStrings.fallback = "fallback".asInstanceOf[typings.csstype.csstypeStrings.fallback]
   @scala.inline
-  def fallback: typings.csstype.csstypeStrings.fallback = this.cast("fallback")
+  def optional: typings.csstype.csstypeStrings.optional = "optional".asInstanceOf[typings.csstype.csstypeStrings.optional]
   @scala.inline
-  def optional: typings.csstype.csstypeStrings.optional = this.cast("optional")
-  @scala.inline
-  def swap: typings.csstype.csstypeStrings.swap = this.cast("swap")
+  def swap: typings.csstype.csstypeStrings.swap = "swap".asInstanceOf[typings.csstype.csstypeStrings.swap]
 }
 

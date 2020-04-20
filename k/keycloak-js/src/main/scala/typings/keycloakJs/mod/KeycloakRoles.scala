@@ -12,7 +12,6 @@ object KeycloakRoles {
   @scala.inline
   def apply(roles: js.Array[String]): KeycloakRoles = {
     val __obj = js.Dynamic.literal(roles = roles.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KeycloakRoles]
   }
 }

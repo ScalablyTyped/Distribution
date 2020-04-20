@@ -46,7 +46,6 @@ object VMAPAdSource {
     vastAdData: Element
   ): VMAPAdSource = {
     val __obj = js.Dynamic.literal(adTagURI = adTagURI.asInstanceOf[js.Any], allowMultipleAds = allowMultipleAds.asInstanceOf[js.Any], customData = customData.asInstanceOf[js.Any], followRedirects = followRedirects.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], vastAdData = vastAdData.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VMAPAdSource]
   }
 }

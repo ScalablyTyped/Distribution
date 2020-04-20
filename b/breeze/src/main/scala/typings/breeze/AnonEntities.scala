@@ -16,7 +16,6 @@ object AnonEntities {
   @scala.inline
   def apply(entities: js.Array[Entity], tempKeyMapping: StringDictionary[EntityKey]): AnonEntities = {
     val __obj = js.Dynamic.literal(entities = entities.asInstanceOf[js.Any], tempKeyMapping = tempKeyMapping.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEntities]
   }
 }

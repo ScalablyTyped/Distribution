@@ -16,7 +16,6 @@ object InputProcessingConfiguration {
   @scala.inline
   def apply(InputLambdaProcessor: InputLambdaProcessor): InputProcessingConfiguration = {
     val __obj = js.Dynamic.literal(InputLambdaProcessor = InputLambdaProcessor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InputProcessingConfiguration]
   }
 }

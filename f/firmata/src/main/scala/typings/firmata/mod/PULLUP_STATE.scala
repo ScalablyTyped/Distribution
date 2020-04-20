@@ -14,10 +14,8 @@ trait PULLUP_STATE extends js.Object
 
 object PULLUP_STATE {
   @scala.inline
-  def DISABLED: `0` = this.cast(0)
+  def DISABLED: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def ENABLED: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ENABLED: `1` = 1.asInstanceOf[`1`]
 }
 

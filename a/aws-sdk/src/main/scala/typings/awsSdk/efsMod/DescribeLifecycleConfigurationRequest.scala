@@ -16,7 +16,6 @@ object DescribeLifecycleConfigurationRequest {
   @scala.inline
   def apply(FileSystemId: FileSystemId): DescribeLifecycleConfigurationRequest = {
     val __obj = js.Dynamic.literal(FileSystemId = FileSystemId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeLifecycleConfigurationRequest]
   }
 }

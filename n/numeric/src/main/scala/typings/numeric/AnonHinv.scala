@@ -13,7 +13,6 @@ object AnonHinv {
   @scala.inline
   def apply(Hinv: Matrix): AnonHinv = {
     val __obj = js.Dynamic.literal(Hinv = Hinv.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHinv]
   }
 }

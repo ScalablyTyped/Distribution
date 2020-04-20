@@ -26,7 +26,6 @@ object StreamInfo {
     uncompressedSize: Double
   ): StreamInfo = {
     val __obj = js.Dynamic.literal(blocks = blocks.asInstanceOf[js.Any], checks = checks.asInstanceOf[js.Any], fileSize = fileSize.asInstanceOf[js.Any], memlimit = memlimit.asInstanceOf[js.Any], streamPadding = streamPadding.asInstanceOf[js.Any], streams = streams.asInstanceOf[js.Any], uncompressedSize = uncompressedSize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StreamInfo]
   }
 }

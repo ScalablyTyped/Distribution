@@ -26,7 +26,6 @@ object IPropertyBase {
     Update: (js.Any, String) => Unit
   ): IPropertyBase = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), GetData = js.Any.fromFunction0(GetData), GetLocalized = js.Any.fromFunction0(GetLocalized), HasDataValue = js.Any.fromFunction0(HasDataValue), HasLocalizedValue = js.Any.fromFunction0(HasLocalizedValue), Update = js.Any.fromFunction2(Update))
-  
     __obj.asInstanceOf[IPropertyBase]
   }
 }

@@ -14,10 +14,8 @@ trait WdKana extends js.Object
 
 object WdKana {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdKanaHiragana: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def wdKanaHiragana: `9` = this.cast(9)
-  @scala.inline
-  def wdKanaKatakana: `8` = this.cast(8)
+  def wdKanaKatakana: `8` = 8.asInstanceOf[`8`]
 }
 

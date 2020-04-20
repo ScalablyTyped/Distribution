@@ -16,7 +16,6 @@ object GetConnectionInput {
   @scala.inline
   def apply(ConnectionArn: ConnectionArn): GetConnectionInput = {
     val __obj = js.Dynamic.literal(ConnectionArn = ConnectionArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetConnectionInput]
   }
 }

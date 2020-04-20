@@ -13,12 +13,10 @@ trait ResponseType extends js.Object
 
 object ResponseType {
   @scala.inline
-  def binary: typings.k6.k6Strings.binary = this.cast("binary")
+  def binary: typings.k6.k6Strings.binary = "binary".asInstanceOf[typings.k6.k6Strings.binary]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def none: typings.k6.k6Strings.none = "none".asInstanceOf[typings.k6.k6Strings.none]
   @scala.inline
-  def none: typings.k6.k6Strings.none = this.cast("none")
-  @scala.inline
-  def text: typings.k6.k6Strings.text = this.cast("text")
+  def text: typings.k6.k6Strings.text = "text".asInstanceOf[typings.k6.k6Strings.text]
 }
 

@@ -54,6 +54,12 @@ trait LayerListProperties extends WidgetProperties {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#viewModel)
     */
   var viewModel: js.UndefOr[LayerListViewModelProperties] = js.undefined
+  /**
+    * The visible elements that are displayed within the widget. This property provides the ability to turn individual elements of the widget's display on/off.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#visibleElements)
+    */
+  var visibleElements: js.UndefOr[LayerListVisibleElements] = js.undefined
 }
 
 object LayerListProperties {
@@ -69,7 +75,8 @@ object LayerListProperties {
     selectionEnabled: js.UndefOr[Boolean] = js.undefined,
     statusIndicatorsVisible: js.UndefOr[Boolean] = js.undefined,
     view: MapViewProperties | SceneViewProperties = null,
-    viewModel: LayerListViewModelProperties = null
+    viewModel: LayerListViewModelProperties = null,
+    visibleElements: LayerListVisibleElements = null
   ): LayerListProperties = {
     val __obj = js.Dynamic.literal()
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
@@ -83,6 +90,7 @@ object LayerListProperties {
     if (!js.isUndefined(statusIndicatorsVisible)) __obj.updateDynamic("statusIndicatorsVisible")(statusIndicatorsVisible.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel.asInstanceOf[js.Any])
+    if (visibleElements != null) __obj.updateDynamic("visibleElements")(visibleElements.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayerListProperties]
   }
 }

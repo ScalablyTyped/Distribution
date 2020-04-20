@@ -20,16 +20,14 @@ trait QueryValueType extends js.Object
 
 object QueryValueType {
   @scala.inline
-  def ElementRef: `0` = this.cast(0)
+  def ElementRef: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def Provider: `4` = this.cast(4)
+  def Provider: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def RenderElement: `1` = this.cast(1)
+  def RenderElement: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def TemplateRef: `2` = this.cast(2)
+  def TemplateRef: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def ViewContainerRef: `3` = this.cast(3)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ViewContainerRef: `3` = 3.asInstanceOf[`3`]
 }
 

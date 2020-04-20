@@ -12,7 +12,6 @@ object OnGroupCollapseListener {
   @scala.inline
   def apply(onGroupCollapse: Double => Unit): OnGroupCollapseListener = {
     val __obj = js.Dynamic.literal(onGroupCollapse = js.Any.fromFunction1(onGroupCollapse))
-  
     __obj.asInstanceOf[OnGroupCollapseListener]
   }
 }

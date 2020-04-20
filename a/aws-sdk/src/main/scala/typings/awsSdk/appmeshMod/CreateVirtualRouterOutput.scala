@@ -16,7 +16,6 @@ object CreateVirtualRouterOutput {
   @scala.inline
   def apply(virtualRouter: VirtualRouterData): CreateVirtualRouterOutput = {
     val __obj = js.Dynamic.literal(virtualRouter = virtualRouter.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateVirtualRouterOutput]
   }
 }

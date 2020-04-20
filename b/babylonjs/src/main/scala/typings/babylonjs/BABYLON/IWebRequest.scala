@@ -23,7 +23,6 @@ object IWebRequest {
   @scala.inline
   def apply(responseURL: String, status: Double, statusText: String): IWebRequest = {
     val __obj = js.Dynamic.literal(responseURL = responseURL.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IWebRequest]
   }
 }

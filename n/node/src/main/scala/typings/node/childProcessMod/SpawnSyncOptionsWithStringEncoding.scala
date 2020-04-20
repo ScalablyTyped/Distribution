@@ -2,7 +2,7 @@ package typings.node.childProcessMod
 
 import typings.node.BufferEncoding
 import typings.node.NodeJS.ArrayBufferView
-import typings.node.NodeJS.ProcessEnv
+import typings.node.NodeJS.Dict
 import typings.node.NodeJS.Signals
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +19,7 @@ object SpawnSyncOptionsWithStringEncoding {
     encoding: BufferEncoding,
     argv0: String = null,
     cwd: String = null,
-    env: ProcessEnv = null,
+    env: Dict[String] = null,
     gid: Int | Double = null,
     input: String | ArrayBufferView = null,
     killSignal: Signals | Double = null,

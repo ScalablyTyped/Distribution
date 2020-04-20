@@ -20,7 +20,6 @@ object AppsListAccountsForPlanResponseItemMarketplacePendingChange {
     unit_count: Null
   ): AppsListAccountsForPlanResponseItemMarketplacePendingChange = {
     val __obj = js.Dynamic.literal(effective_date = effective_date.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], plan = plan.asInstanceOf[js.Any], unit_count = unit_count.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AppsListAccountsForPlanResponseItemMarketplacePendingChange]
   }
 }

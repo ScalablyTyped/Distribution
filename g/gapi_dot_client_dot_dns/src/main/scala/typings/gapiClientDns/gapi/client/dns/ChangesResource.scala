@@ -25,7 +25,6 @@ object ChangesResource {
     list: AnonFields => Request_[ChangesListResponse]
   ): ChangesResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[ChangesResource]
   }
 }

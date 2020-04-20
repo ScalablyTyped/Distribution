@@ -12,7 +12,6 @@ object DiscoverRepositoryChainingResponseChainingInfo {
   @scala.inline
   def apply(sources: String): DiscoverRepositoryChainingResponseChainingInfo = {
     val __obj = js.Dynamic.literal(sources = sources.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DiscoverRepositoryChainingResponseChainingInfo]
   }
 }

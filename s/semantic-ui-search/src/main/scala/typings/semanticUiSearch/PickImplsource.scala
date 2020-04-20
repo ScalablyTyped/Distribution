@@ -14,7 +14,6 @@ object PickImplsource {
   @scala.inline
   def apply(source: `false` | js.Any): PickImplsource = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplsource]
   }
 }

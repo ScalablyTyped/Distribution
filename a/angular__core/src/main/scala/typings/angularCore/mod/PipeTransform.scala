@@ -12,7 +12,6 @@ object PipeTransform {
   @scala.inline
   def apply(transform: (js.Any, /* repeated */ js.Any) => js.Any): PipeTransform = {
     val __obj = js.Dynamic.literal(transform = js.Any.fromFunction2(transform))
-  
     __obj.asInstanceOf[PipeTransform]
   }
 }

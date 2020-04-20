@@ -13,7 +13,6 @@ object Observer {
   @scala.inline
   def apply[T](checked: () => Observer[_]): Observer[T] = {
     val __obj = js.Dynamic.literal(checked = js.Any.fromFunction0(checked))
-  
     __obj.asInstanceOf[Observer[T]]
   }
 }

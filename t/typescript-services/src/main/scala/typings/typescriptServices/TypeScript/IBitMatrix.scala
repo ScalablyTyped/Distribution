@@ -18,7 +18,6 @@ object IBitMatrix {
     valueAt: (Double, Double) => Boolean
   ): IBitMatrix = {
     val __obj = js.Dynamic.literal(release = js.Any.fromFunction0(release), setValueAt = js.Any.fromFunction3(setValueAt), valueAt = js.Any.fromFunction2(valueAt))
-  
     __obj.asInstanceOf[IBitMatrix]
   }
 }

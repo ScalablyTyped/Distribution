@@ -16,7 +16,6 @@ object SidebarIconDetail {
   @scala.inline
   def apply(icon: ImageData): SidebarIconDetail = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SidebarIconDetail]
   }
 }

@@ -16,12 +16,10 @@ trait MsoAnimEffectRestart extends js.Object
 
 object MsoAnimEffectRestart {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoAnimEffectRestartAlways: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoAnimEffectRestartAlways: `1` = this.cast(1)
+  def msoAnimEffectRestartNever: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoAnimEffectRestartNever: `3` = this.cast(3)
-  @scala.inline
-  def msoAnimEffectRestartWhenOff: `2` = this.cast(2)
+  def msoAnimEffectRestartWhenOff: `2` = 2.asInstanceOf[`2`]
 }
 

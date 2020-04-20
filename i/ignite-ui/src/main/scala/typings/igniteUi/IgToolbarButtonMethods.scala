@@ -41,7 +41,6 @@ object IgToolbarButtonMethods {
     widget: () => js.Object
   ): IgToolbarButtonMethods = {
     val __obj = js.Dynamic.literal(activate = js.Any.fromFunction1(activate), deactivate = js.Any.fromFunction1(deactivate), destroy = js.Any.fromFunction0(destroy), toggle = js.Any.fromFunction0(toggle), widget = js.Any.fromFunction0(widget))
-  
     __obj.asInstanceOf[IgToolbarButtonMethods]
   }
 }

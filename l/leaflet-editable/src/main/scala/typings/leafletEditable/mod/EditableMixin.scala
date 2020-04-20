@@ -37,7 +37,6 @@ object EditableMixin {
     toggleEdit: () => Unit
   ): EditableMixin = {
     val __obj = js.Dynamic.literal(disableEdit = js.Any.fromFunction0(disableEdit), editEnabled = js.Any.fromFunction0(editEnabled), enableEdit = js.Any.fromFunction0(enableEdit), toggleEdit = js.Any.fromFunction0(toggleEdit))
-  
     __obj.asInstanceOf[EditableMixin]
   }
 }

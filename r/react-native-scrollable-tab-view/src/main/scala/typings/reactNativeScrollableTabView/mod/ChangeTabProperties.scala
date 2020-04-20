@@ -18,7 +18,6 @@ object ChangeTabProperties {
   @scala.inline
   def apply(from: Double, i: Double, ref: Element): ChangeTabProperties = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChangeTabProperties]
   }
 }

@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import typings.std.AbortSignal
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -57,6 +58,12 @@ trait univariateColorSizeCreateContinuousRendererParams extends Object {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-univariateColorSize.html#createContinuousRenderer)
     */
   var normalizationField: js.UndefOr[String] = js.undefined
+  /**
+    * Allows for cancelable requests. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-univariateColorSize.html#createContinuousRenderer)
+    */
+  var signal: js.UndefOr[AbortSignal] = js.undefined
   /**
     * Indicates whether symbol sizes should vary based on view scale. When set, a valid [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance must be provided in the `view` parameter. This option is not supported for 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
@@ -139,6 +146,7 @@ object univariateColorSizeCreateContinuousRendererParams {
     maxValue: Int | Double = null,
     minValue: Int | Double = null,
     normalizationField: String = null,
+    signal: AbortSignal = null,
     sizeOptimizationEnabled: js.UndefOr[Boolean] = js.undefined,
     sizeOptions: univariateColorSizeCreateContinuousRendererParamsSizeOptions = null,
     sqlExpression: String = null,
@@ -157,6 +165,7 @@ object univariateColorSizeCreateContinuousRendererParams {
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
     if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
     if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField.asInstanceOf[js.Any])
+    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
     if (!js.isUndefined(sizeOptimizationEnabled)) __obj.updateDynamic("sizeOptimizationEnabled")(sizeOptimizationEnabled.asInstanceOf[js.Any])
     if (sizeOptions != null) __obj.updateDynamic("sizeOptions")(sizeOptions.asInstanceOf[js.Any])
     if (sqlExpression != null) __obj.updateDynamic("sqlExpression")(sqlExpression.asInstanceOf[js.Any])

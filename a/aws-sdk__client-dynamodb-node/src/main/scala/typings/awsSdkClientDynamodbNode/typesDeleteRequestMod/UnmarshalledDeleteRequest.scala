@@ -18,7 +18,6 @@ object UnmarshalledDeleteRequest {
   @scala.inline
   def apply(Key: StringDictionary[UnmarshalledAttributeValue]): UnmarshalledDeleteRequest = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnmarshalledDeleteRequest]
   }
 }

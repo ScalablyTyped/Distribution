@@ -13,12 +13,10 @@ trait EXPIRY_STRATEGY extends js.Object
 
 object EXPIRY_STRATEGY {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def error: typings.pollyjsCore.pollyjsCoreStrings.error = "error".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.error]
   @scala.inline
-  def error: typings.pollyjsCore.pollyjsCoreStrings.error = this.cast("error")
+  def record: typings.pollyjsCore.pollyjsCoreStrings.record = "record".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.record]
   @scala.inline
-  def record: typings.pollyjsCore.pollyjsCoreStrings.record = this.cast("record")
-  @scala.inline
-  def warn: typings.pollyjsCore.pollyjsCoreStrings.warn = this.cast("warn")
+  def warn: typings.pollyjsCore.pollyjsCoreStrings.warn = "warn".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.warn]
 }
 

@@ -13,12 +13,10 @@ trait AddressFamily extends js.Object
 
 object AddressFamily {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ipv4: typings.fridaGum.fridaGumStrings.ipv4 = "ipv4".asInstanceOf[typings.fridaGum.fridaGumStrings.ipv4]
   @scala.inline
-  def ipv4: typings.fridaGum.fridaGumStrings.ipv4 = this.cast("ipv4")
+  def ipv6: typings.fridaGum.fridaGumStrings.ipv6 = "ipv6".asInstanceOf[typings.fridaGum.fridaGumStrings.ipv6]
   @scala.inline
-  def ipv6: typings.fridaGum.fridaGumStrings.ipv6 = this.cast("ipv6")
-  @scala.inline
-  def unix: typings.fridaGum.fridaGumStrings.unix = this.cast("unix")
+  def unix: typings.fridaGum.fridaGumStrings.unix = "unix".asInstanceOf[typings.fridaGum.fridaGumStrings.unix]
 }
 

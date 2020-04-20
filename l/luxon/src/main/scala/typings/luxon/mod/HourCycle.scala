@@ -14,14 +14,12 @@ trait HourCycle extends js.Object
 
 object HourCycle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def h11: typings.luxon.luxonStrings.h11 = "h11".asInstanceOf[typings.luxon.luxonStrings.h11]
   @scala.inline
-  def h11: typings.luxon.luxonStrings.h11 = this.cast("h11")
+  def h12: typings.luxon.luxonStrings.h12 = "h12".asInstanceOf[typings.luxon.luxonStrings.h12]
   @scala.inline
-  def h12: typings.luxon.luxonStrings.h12 = this.cast("h12")
+  def h23: typings.luxon.luxonStrings.h23 = "h23".asInstanceOf[typings.luxon.luxonStrings.h23]
   @scala.inline
-  def h23: typings.luxon.luxonStrings.h23 = this.cast("h23")
-  @scala.inline
-  def h24: typings.luxon.luxonStrings.h24 = this.cast("h24")
+  def h24: typings.luxon.luxonStrings.h24 = "h24".asInstanceOf[typings.luxon.luxonStrings.h24]
 }
 

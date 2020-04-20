@@ -15,7 +15,6 @@ object IXmlDtdAttlistOptions {
   @scala.inline
   def apply(charData: String): IXmlDtdAttlistOptions = {
     val __obj = js.Dynamic.literal(charData = charData.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IXmlDtdAttlistOptions]
   }
 }

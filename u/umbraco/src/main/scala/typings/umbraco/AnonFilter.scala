@@ -24,7 +24,6 @@ object AnonFilter {
     pageSize: Double
   ): AnonFilter = {
     val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], orderBy = orderBy.asInstanceOf[js.Any], orderDirection = orderDirection.asInstanceOf[js.Any], pageNumber = pageNumber.asInstanceOf[js.Any], pageSize = pageSize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFilter]
   }
 }

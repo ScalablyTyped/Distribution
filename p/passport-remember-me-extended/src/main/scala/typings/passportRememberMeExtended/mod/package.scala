@@ -11,7 +11,12 @@ package object mod {
     scala.Unit
   ]
   type IssueFunctionWithRequest = js.Function3[
-    /* req */ typings.express.mod.Request_[typings.expressServeStaticCore.mod.ParamsDictionary], 
+    /* req */ typings.express.mod.Request_[
+      typings.expressServeStaticCore.mod.ParamsDictionary, 
+      js.Any, 
+      js.Any, 
+      typings.expressServeStaticCore.mod.Query
+    ], 
     /* user */ js.Any, 
     /* done */ js.Function2[/* err */ js.Any, /* token */ js.UndefOr[js.Any], scala.Unit], 
     scala.Unit
@@ -27,7 +32,12 @@ package object mod {
     scala.Unit
   ]
   type VerifyFunctionWithRequest = js.Function3[
-    /* req */ typings.express.mod.Request_[typings.expressServeStaticCore.mod.ParamsDictionary], 
+    /* req */ typings.express.mod.Request_[
+      typings.expressServeStaticCore.mod.ParamsDictionary, 
+      js.Any, 
+      js.Any, 
+      typings.expressServeStaticCore.mod.Query
+    ], 
     /* token */ js.Any, 
     /* done */ js.Function3[
       /* err */ js.Any, 

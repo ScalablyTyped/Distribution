@@ -20,7 +20,6 @@ object DefinitionEnvironmentReference {
     releaseDefinitionName: String
   ): DefinitionEnvironmentReference = {
     val __obj = js.Dynamic.literal(definitionEnvironmentId = definitionEnvironmentId.asInstanceOf[js.Any], definitionEnvironmentName = definitionEnvironmentName.asInstanceOf[js.Any], releaseDefinitionId = releaseDefinitionId.asInstanceOf[js.Any], releaseDefinitionName = releaseDefinitionName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DefinitionEnvironmentReference]
   }
 }

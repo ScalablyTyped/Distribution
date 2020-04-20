@@ -1,5 +1,6 @@
 package typings.officeUiFabricReact
 
+import org.scalablytyped.runtime.TopLevel
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`additions text`
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`inline`
 import typings.officeUiFabricReact.officeUiFabricReactStrings.additions
@@ -278,7 +279,7 @@ trait PartialIStackProps extends js.Object {
   var slots: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in 'root' | 'inner' ]:? @uifabric/foundation.@uifabric/foundation/lib/ISlots.ISlotOptions<@uifabric/foundation.@uifabric/foundation/lib/ISlots.ExtractProps<office-ui-fabric-react.office-ui-fabric-react/lib/components/Stack/Stack.types.IStackSlots[key]>>}
-    */ typings.officeUiFabricReact.officeUiFabricReactStrings.PartialIStackProps with IStackSlots
+    */ typings.officeUiFabricReact.officeUiFabricReactStrings.PartialIStackProps with TopLevel[IStackSlots]
   ] = js.undefined
   var spellCheck: js.UndefOr[Booleanish] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
@@ -478,7 +479,7 @@ object PartialIStackProps {
     slot: String = null,
     slots: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in 'root' | 'inner' ]:? @uifabric/foundation.@uifabric/foundation/lib/ISlots.ISlotOptions<@uifabric/foundation.@uifabric/foundation/lib/ISlots.ExtractProps<office-ui-fabric-react.office-ui-fabric-react/lib/components/Stack/Stack.types.IStackSlots[key]>>}
-    */ typings.officeUiFabricReact.officeUiFabricReactStrings.PartialIStackProps with IStackSlots = null,
+    */ typings.officeUiFabricReact.officeUiFabricReactStrings.PartialIStackProps with TopLevel[IStackSlots] = null,
     spellCheck: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
     styles: IStylesFunctionOrObject[IStackProps, IStackTokens, IStackStyles] = null,

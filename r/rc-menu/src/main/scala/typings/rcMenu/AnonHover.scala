@@ -14,7 +14,6 @@ object AnonHover {
   @scala.inline
   def apply(hover: Boolean, key: Key): AnonHover = {
     val __obj = js.Dynamic.literal(hover = hover.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHover]
   }
 }

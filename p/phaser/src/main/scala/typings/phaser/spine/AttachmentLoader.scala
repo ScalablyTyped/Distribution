@@ -24,7 +24,6 @@ object AttachmentLoader {
     newRegionAttachment: (Skin, String, String) => RegionAttachment
   ): AttachmentLoader = {
     val __obj = js.Dynamic.literal(newBoundingBoxAttachment = js.Any.fromFunction2(newBoundingBoxAttachment), newClippingAttachment = js.Any.fromFunction2(newClippingAttachment), newMeshAttachment = js.Any.fromFunction3(newMeshAttachment), newPathAttachment = js.Any.fromFunction2(newPathAttachment), newPointAttachment = js.Any.fromFunction2(newPointAttachment), newRegionAttachment = js.Any.fromFunction3(newRegionAttachment))
-  
     __obj.asInstanceOf[AttachmentLoader]
   }
 }

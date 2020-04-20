@@ -33,7 +33,6 @@ object GetAuthTypeResponse {
     setHelpUrl: String => GetAuthTypeResponse
   ): GetAuthTypeResponse = {
     val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), printJson = js.Any.fromFunction0(printJson), setAuthType = js.Any.fromFunction1(setAuthType), setHelpUrl = js.Any.fromFunction1(setHelpUrl))
-  
     __obj.asInstanceOf[GetAuthTypeResponse]
   }
 }

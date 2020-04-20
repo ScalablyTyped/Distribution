@@ -30,7 +30,6 @@ object ICellConfig {
   @scala.inline
   def apply(column: Double, columnSpan: Double, row: Double, rowSpan: Double): ICellConfig = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], columnSpan = columnSpan.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], rowSpan = rowSpan.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICellConfig]
   }
 }

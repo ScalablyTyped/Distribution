@@ -1,18 +1,19 @@
 package typings.rmcDialog
 
 import typings.react.mod.ComponentType
+import typings.rmcDialog.dialogMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object rmcDialogComponents extends rmcDialogProps {
   @scala.inline
-  def Dialog: ComponentType[DialogProps] = js.constructorOf[typings.rmcDialog.dialogMod.default].asInstanceOf[typings.react.mod.ComponentType[DialogProps]]
+  def Dialog: ComponentType[DialogProps] = js.constructorOf[default].asInstanceOf[ComponentType[DialogProps]]
   @scala.inline
-  def LazyRenderBox: ComponentType[LazyRenderBoxProps] = js.constructorOf[typings.rmcDialog.lazyRenderBoxMod.default].asInstanceOf[typings.react.mod.ComponentType[LazyRenderBoxProps]]
+  def LazyRenderBox: ComponentType[LazyRenderBoxProps] = js.constructorOf[typings.rmcDialog.lazyRenderBoxMod.default].asInstanceOf[ComponentType[LazyRenderBoxProps]]
   @scala.inline
-  def Modal: ComponentType[ModalProps] = js.constructorOf[typings.rmcDialog.modalMod.default].asInstanceOf[typings.react.mod.ComponentType[ModalProps]]
+  def Modal: ComponentType[ModalProps] = js.constructorOf[typings.rmcDialog.modalMod.default].asInstanceOf[ComponentType[ModalProps]]
   @scala.inline
-  def RmcDialog: ComponentType[RmcDialogProps] = js.constructorOf[typings.rmcDialog.mod.default].asInstanceOf[typings.react.mod.ComponentType[RmcDialogProps]]
+  def RmcDialog: ComponentType[RmcDialogProps] = js.constructorOf[typings.rmcDialog.mod.default].asInstanceOf[ComponentType[RmcDialogProps]]
 }
 

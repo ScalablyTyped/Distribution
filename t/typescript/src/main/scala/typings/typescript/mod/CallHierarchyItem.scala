@@ -22,7 +22,6 @@ object CallHierarchyItem {
     span: TextSpan
   ): CallHierarchyItem = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selectionSpan = selectionSpan.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CallHierarchyItem]
   }
 }

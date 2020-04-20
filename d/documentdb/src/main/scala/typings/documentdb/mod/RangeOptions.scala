@@ -15,7 +15,6 @@ object RangeOptions {
   @scala.inline
   def apply(high: js.Any, low: js.Any): RangeOptions = {
     val __obj = js.Dynamic.literal(high = high.asInstanceOf[js.Any], low = low.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RangeOptions]
   }
 }

@@ -12,9 +12,15 @@ object phoneMatcherMod extends js.Object {
   @js.native
   class PhoneMatcher () extends Matcher {
     /**
-      * The regular expression to match Phone numbers. Example match:
+      * The regular expression to match Phone numbers. Example matches:
       *
       *     (123) 456-7890
+      *     123 456 7890
+      *     123-456-7890
+      *     +18004441234,,;,10226420346#
+      *     +1 (800) 444 1234
+      *     10226420346#
+      *     1-800-444-1234,1022,64,20346#
       *
       * This regular expression has the following capturing groups:
       *

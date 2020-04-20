@@ -20,7 +20,6 @@ object AnonBackground {
     content: RegisteredStyle[ViewStyle]
   ): AnonBackground = {
     val __obj = js.Dynamic.literal(arrow = arrow.asInstanceOf[js.Any], background = background.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBackground]
   }
 }

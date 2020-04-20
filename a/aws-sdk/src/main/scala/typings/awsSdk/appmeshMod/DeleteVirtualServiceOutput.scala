@@ -16,7 +16,6 @@ object DeleteVirtualServiceOutput {
   @scala.inline
   def apply(virtualService: VirtualServiceData): DeleteVirtualServiceOutput = {
     val __obj = js.Dynamic.literal(virtualService = virtualService.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteVirtualServiceOutput]
   }
 }

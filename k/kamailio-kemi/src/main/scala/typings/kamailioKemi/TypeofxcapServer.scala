@@ -18,7 +18,6 @@ object TypeofxcapServer {
     xcaps_put: (String, String, String) => Double
   ): TypeofxcapServer = {
     val __obj = js.Dynamic.literal(xcaps_del = js.Any.fromFunction2(xcaps_del), xcaps_get = js.Any.fromFunction2(xcaps_get), xcaps_put = js.Any.fromFunction3(xcaps_put))
-  
     __obj.asInstanceOf[TypeofxcapServer]
   }
 }

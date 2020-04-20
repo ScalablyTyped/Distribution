@@ -19,7 +19,6 @@ object CompileTemplateOptions {
   @scala.inline
   def apply(code: String, dependencies: js.Array[String]): CompileTemplateOptions = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], dependencies = dependencies.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CompileTemplateOptions]
   }
 }

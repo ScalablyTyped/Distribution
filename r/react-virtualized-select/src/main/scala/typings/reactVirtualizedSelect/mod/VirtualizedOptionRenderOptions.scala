@@ -10,7 +10,7 @@ trait VirtualizedOptionRenderOptions[T] extends js.Object {
   var focusedOption: T
   var focusedOptionIndex: Double
   var key: String
-  var labelKey: String
+  var labelKey: /* keyof T */ String
   var listProps: ListProps
   var option: T
   var options: js.Array[T]
@@ -27,7 +27,7 @@ object VirtualizedOptionRenderOptions {
     focusedOption: T,
     focusedOptionIndex: Double,
     key: String,
-    labelKey: String,
+    labelKey: /* keyof T */ String,
     listProps: ListProps,
     option: T,
     options: js.Array[T],
@@ -36,7 +36,6 @@ object VirtualizedOptionRenderOptions {
     valueArray: js.Array[T]
   ): VirtualizedOptionRenderOptions[T] = {
     val __obj = js.Dynamic.literal(focusOption = js.Any.fromFunction1(focusOption), focusedOption = focusedOption.asInstanceOf[js.Any], focusedOptionIndex = focusedOptionIndex.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], labelKey = labelKey.asInstanceOf[js.Any], listProps = listProps.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], selectValue = js.Any.fromFunction1(selectValue), style = style.asInstanceOf[js.Any], valueArray = valueArray.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VirtualizedOptionRenderOptions[T]]
   }
 }

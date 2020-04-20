@@ -13,12 +13,10 @@ trait USBTransferStatus extends js.Object
 
 object USBTransferStatus {
   @scala.inline
-  def babble: typings.w3cWebUsb.w3cWebUsbStrings.babble = this.cast("babble")
+  def babble: typings.w3cWebUsb.w3cWebUsbStrings.babble = "babble".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.babble]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ok: typings.w3cWebUsb.w3cWebUsbStrings.ok = "ok".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.ok]
   @scala.inline
-  def ok: typings.w3cWebUsb.w3cWebUsbStrings.ok = this.cast("ok")
-  @scala.inline
-  def stall: typings.w3cWebUsb.w3cWebUsbStrings.stall = this.cast("stall")
+  def stall: typings.w3cWebUsb.w3cWebUsbStrings.stall = "stall".asInstanceOf[typings.w3cWebUsb.w3cWebUsbStrings.stall]
 }
 

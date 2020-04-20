@@ -23,7 +23,6 @@ object SegmentCommon {
   @scala.inline
   def apply(distance: Double, instruction: String, time: Double): SegmentCommon = {
     val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], instruction = instruction.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SegmentCommon]
   }
 }

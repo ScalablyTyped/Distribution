@@ -17,12 +17,10 @@ trait IOMode extends js.Object
 
 object IOMode {
   @scala.inline
-  def ForAppending: `8` = this.cast(8)
+  def ForAppending: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def ForReading: `1` = this.cast(1)
+  def ForReading: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def ForWriting: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ForWriting: `2` = 2.asInstanceOf[`2`]
 }
 

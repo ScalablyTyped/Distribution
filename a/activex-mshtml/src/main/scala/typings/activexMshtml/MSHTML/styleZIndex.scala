@@ -14,10 +14,8 @@ trait styleZIndex extends js.Object
 
 object styleZIndex {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleZIndexAuto: `-2147483647` = -2147483647.asInstanceOf[`-2147483647`]
   @scala.inline
-  def styleZIndexAuto: `-2147483647` = this.cast(-2147483647)
-  @scala.inline
-  def styleZIndex_Max: `2147483647` = this.cast(2147483647)
+  def styleZIndex_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

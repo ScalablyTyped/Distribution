@@ -13,7 +13,6 @@ object InitOptions {
   @scala.inline
   def apply(env: String | AnonDatabase): InitOptions = {
     val __obj = js.Dynamic.literal(env = env.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InitOptions]
   }
 }

@@ -12,7 +12,6 @@ object VoiceErrorResponse {
   @scala.inline
   def apply(result: String): VoiceErrorResponse = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VoiceErrorResponse]
   }
 }

@@ -15,7 +15,6 @@ object DeleteMessageBatchResultEntry {
   @scala.inline
   def apply(Id: String): DeleteMessageBatchResultEntry = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteMessageBatchResultEntry]
   }
 }

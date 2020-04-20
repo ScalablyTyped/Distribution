@@ -15,6 +15,6 @@ class Lister () extends js.Object {
   /**
     */
   var _listingsLoaded: js.Any = js.native
-  def listingsLoaded(): ISignal[this.type, ListResult] = js.native
+  def listingsLoaded: ISignal[this.type, ListResult] = js.native
 }
 

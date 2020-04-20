@@ -13,7 +13,6 @@ object Interface {
   @scala.inline
   def apply(Socket: String, Types: js.Array[PluginInterfaceType]): Interface = {
     val __obj = js.Dynamic.literal(Socket = Socket.asInstanceOf[js.Any], Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Interface]
   }
 }

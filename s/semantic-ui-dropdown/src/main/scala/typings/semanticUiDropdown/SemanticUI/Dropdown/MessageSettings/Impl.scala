@@ -27,7 +27,6 @@ object Impl {
   @scala.inline
   def apply(addResult: String, count: String, maxSelections: String, noResults: String): Impl = {
     val __obj = js.Dynamic.literal(addResult = addResult.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], maxSelections = maxSelections.asInstanceOf[js.Any], noResults = noResults.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Impl]
   }
 }

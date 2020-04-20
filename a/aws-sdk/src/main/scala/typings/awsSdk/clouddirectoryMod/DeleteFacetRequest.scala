@@ -20,7 +20,6 @@ object DeleteFacetRequest {
   @scala.inline
   def apply(Name: FacetName, SchemaArn: Arn): DeleteFacetRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], SchemaArn = SchemaArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteFacetRequest]
   }
 }

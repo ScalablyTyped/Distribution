@@ -12,7 +12,6 @@ object PluginRemoveStyleElement {
   @scala.inline
   def apply(removeStyleElement: Boolean | js.Object): PluginRemoveStyleElement = {
     val __obj = js.Dynamic.literal(removeStyleElement = removeStyleElement.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PluginRemoveStyleElement]
   }
 }

@@ -51,7 +51,6 @@ object HttpRequest {
     url: () => String
   ): HttpRequest = {
     val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), continue = js.Any.fromFunction0(continue), fail = js.Any.fromFunction0(fail), fulfill = js.Any.fromFunction1(fulfill), headers = js.Any.fromFunction0(headers), method = js.Any.fromFunction0(method), url = js.Any.fromFunction0(url))
-  
     __obj.asInstanceOf[HttpRequest]
   }
 }

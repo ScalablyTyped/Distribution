@@ -24,7 +24,6 @@ object AnonAbandoned {
     succeededWithIssues: Double
   ): AnonAbandoned = {
     val __obj = js.Dynamic.literal(abandoned = abandoned.asInstanceOf[js.Any], canceled = canceled.asInstanceOf[js.Any], failed = failed.asInstanceOf[js.Any], skipped = skipped.asInstanceOf[js.Any], succeeded = succeeded.asInstanceOf[js.Any], succeededWithIssues = succeededWithIssues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAbandoned]
   }
 }

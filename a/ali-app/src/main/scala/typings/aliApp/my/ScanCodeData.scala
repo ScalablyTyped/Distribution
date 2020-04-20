@@ -23,7 +23,6 @@ object ScanCodeData {
   @scala.inline
   def apply(barCode: String, code: String, qrCode: String): ScanCodeData = {
     val __obj = js.Dynamic.literal(barCode = barCode.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], qrCode = qrCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScanCodeData]
   }
 }

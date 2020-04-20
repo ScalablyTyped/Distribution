@@ -12,7 +12,6 @@ object OfflineCheck {
   @scala.inline
   def apply(url: String): OfflineCheck = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OfflineCheck]
   }
 }

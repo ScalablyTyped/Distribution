@@ -14,10 +14,8 @@ trait WdGutterStyleOld extends js.Object
 
 object WdGutterStyleOld {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdGutterStyleBidi: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdGutterStyleBidi: `2` = this.cast(2)
-  @scala.inline
-  def wdGutterStyleLatin: `-10` = this.cast(-10)
+  def wdGutterStyleLatin: `-10` = -10.asInstanceOf[`-10`]
 }
 

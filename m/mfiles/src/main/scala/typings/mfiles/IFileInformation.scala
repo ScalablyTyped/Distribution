@@ -21,7 +21,6 @@ object IFileInformation {
     FileType: MFFileInformationType
   ): IFileInformation = {
     val __obj = js.Dynamic.literal(Clear = js.Any.fromFunction0(Clear), EmailMessage = EmailMessage.asInstanceOf[js.Any], ExtractFromFile = js.Any.fromFunction1(ExtractFromFile), FileType = FileType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IFileInformation]
   }
 }

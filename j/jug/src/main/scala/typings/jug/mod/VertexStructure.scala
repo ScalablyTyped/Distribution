@@ -15,7 +15,6 @@ object VertexStructure {
   @scala.inline
   def apply(data: VertexData, edge: js.Array[Vertex], level: Double, parent: Vertex): VertexStructure = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], edge = edge.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VertexStructure]
   }
 }

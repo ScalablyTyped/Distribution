@@ -23,7 +23,6 @@ object V1beta1Resource {
   @scala.inline
   def apply(getEidparams: AnonAccesstoken => Request_[EphemeralIdRegistrationParams]): V1beta1Resource = {
     val __obj = js.Dynamic.literal(getEidparams = js.Any.fromFunction1(getEidparams))
-  
     __obj.asInstanceOf[V1beta1Resource]
   }
 }

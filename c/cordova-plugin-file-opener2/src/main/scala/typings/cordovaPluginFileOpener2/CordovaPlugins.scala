@@ -12,7 +12,6 @@ object CordovaPlugins {
   @scala.inline
   def apply(fileOpener2: CordovaPluginsFileOpener2): CordovaPlugins = {
     val __obj = js.Dynamic.literal(fileOpener2 = fileOpener2.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CordovaPlugins]
   }
 }

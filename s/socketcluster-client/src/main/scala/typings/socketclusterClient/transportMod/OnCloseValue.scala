@@ -13,7 +13,6 @@ object OnCloseValue {
   @scala.inline
   def apply(code: Double, reason: String): OnCloseValue = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnCloseValue]
   }
 }

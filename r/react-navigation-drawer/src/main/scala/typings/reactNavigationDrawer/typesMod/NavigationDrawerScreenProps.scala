@@ -21,7 +21,6 @@ object NavigationDrawerScreenProps {
     theme: SupportedThemes
   ): NavigationDrawerScreenProps[Params, ScreenProps] = {
     val __obj = js.Dynamic.literal(navigation = navigation.asInstanceOf[js.Any], screenProps = screenProps.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NavigationDrawerScreenProps[Params, ScreenProps]]
   }
 }

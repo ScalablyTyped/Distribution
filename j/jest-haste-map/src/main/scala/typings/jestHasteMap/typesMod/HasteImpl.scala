@@ -13,7 +13,6 @@ object HasteImpl {
   @scala.inline
   def apply(getHasteName: Path => js.UndefOr[String]): HasteImpl = {
     val __obj = js.Dynamic.literal(getHasteName = js.Any.fromFunction1(getHasteName))
-  
     __obj.asInstanceOf[HasteImpl]
   }
 }

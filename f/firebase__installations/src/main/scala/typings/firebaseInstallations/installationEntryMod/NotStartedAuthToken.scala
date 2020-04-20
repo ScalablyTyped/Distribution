@@ -13,7 +13,6 @@ object NotStartedAuthToken {
   @scala.inline
   def apply(requestStatus: `0`): NotStartedAuthToken = {
     val __obj = js.Dynamic.literal(requestStatus = requestStatus.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NotStartedAuthToken]
   }
 }

@@ -20,7 +20,6 @@ object GetInvalidationRequest {
   @scala.inline
   def apply(DistributionId: String, Id: String): GetInvalidationRequest = {
     val __obj = js.Dynamic.literal(DistributionId = DistributionId.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetInvalidationRequest]
   }
 }

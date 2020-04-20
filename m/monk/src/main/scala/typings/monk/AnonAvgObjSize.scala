@@ -39,7 +39,6 @@ object AnonAvgObjSize {
     wiredTiger: js.Any
   ): AnonAvgObjSize = {
     val __obj = js.Dynamic.literal(avgObjSize = avgObjSize.asInstanceOf[js.Any], capped = capped.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], indexDetails = indexDetails.asInstanceOf[js.Any], indexSizes = indexSizes.asInstanceOf[js.Any], nindexes = nindexes.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], storageSize = storageSize.asInstanceOf[js.Any], totalIndexSize = totalIndexSize.asInstanceOf[js.Any], wiredTiger = wiredTiger.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAvgObjSize]
   }
 }

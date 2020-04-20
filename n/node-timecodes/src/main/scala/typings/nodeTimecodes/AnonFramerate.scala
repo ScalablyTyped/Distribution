@@ -12,7 +12,6 @@ object AnonFramerate {
   @scala.inline
   def apply(framerate: Double): AnonFramerate = {
     val __obj = js.Dynamic.literal(framerate = framerate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFramerate]
   }
 }

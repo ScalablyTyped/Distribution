@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ReadonlyArrayCookietoValu extends /* n */ NumberDictionary[Cookie] {
   /** Iterator of values in the array. */
-  @JSName(scala.scalajs.js.Symbol.iterator)
+  @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[Cookie]] = js.native
   /**
     * Gets the length of the array. This is a number one higher than the highest element defined in an array.

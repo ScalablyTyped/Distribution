@@ -18,7 +18,6 @@ object JdbcSavepoint {
   @scala.inline
   def apply(getSavepointId: () => Integer, getSavepointName: () => String): JdbcSavepoint = {
     val __obj = js.Dynamic.literal(getSavepointId = js.Any.fromFunction0(getSavepointId), getSavepointName = js.Any.fromFunction0(getSavepointName))
-  
     __obj.asInstanceOf[JdbcSavepoint]
   }
 }

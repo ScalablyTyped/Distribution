@@ -65,7 +65,7 @@ object mod extends js.Object {
   def attr_string(`type`: string): ComputedProperty[String, String] = js.native
   @JSName("attr")
   def attr_string(`type`: string, options: AttrOptions[String]): ComputedProperty[String, String] = js.native
-  def belongsTo[K /* <: String */](modelName: K): ComputedProperty[
+  def belongsTo[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K): ComputedProperty[
     (/* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any) with (PromiseObject[
       /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
     ]), 
@@ -75,7 +75,7 @@ object mod extends js.Object {
     * `DS.belongsTo` is used to define One-To-One and One-To-Many
     * relationships on a [DS.Model](/api/data/classes/DS.Model.html).
     */
-  def belongsTo[K /* <: String */](
+  def belongsTo[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](
     modelName: K,
     options: (RelationshipOptions[
       /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
@@ -86,7 +86,7 @@ object mod extends js.Object {
     ]), 
     /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
   ] = js.native
-  def hasMany[K /* <: String */](`type`: K): ComputedProperty[
+  def hasMany[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](`type`: K): ComputedProperty[
     PromiseManyArray[
       /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
     ], 
@@ -98,7 +98,7 @@ object mod extends js.Object {
     * `DS.hasMany` is used to define One-To-Many and Many-To-Many
     * relationships on a [DS.Model](/api/data/classes/DS.Model.html).
     */
-  def hasMany[K /* <: String */](
+  def hasMany[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](
     `type`: K,
     options: (RelationshipOptions[
       /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
@@ -130,7 +130,7 @@ object mod extends js.Object {
       * Represents the model's class name as a string. This can be used to look up the model's class name through
       * `DS.Store`'s modelFor method.
       */
-    var modelName: String = js.native
+    var modelName: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String = js.native
     /**
       * An array of types directly related to a model. Each type will be
       * included once, regardless of the number of relationships it has with
@@ -212,11 +212,11 @@ object mod extends js.Object {
     /**
       * Find the relationship which is the inverse of the one asked for.
       */
-    def inverseFor[K /* <: String */](name: K, store: Store): js.Object = js.native
+    def inverseFor[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](name: K, store: Store): js.Object = js.native
     /**
       * For a given relationship name, returns the model type of the relationship.
       */
-    def typeForRelationship[K /* <: String */](name: K, store: Store): /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any = js.native
+    def typeForRelationship[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](name: K, store: Store): /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any = js.native
   }
   
 }

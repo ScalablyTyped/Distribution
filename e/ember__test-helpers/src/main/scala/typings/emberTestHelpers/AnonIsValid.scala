@@ -13,7 +13,6 @@ object AnonIsValid {
   @scala.inline
   def apply(isValid: Boolean, message: String): AnonIsValid = {
     val __obj = js.Dynamic.literal(isValid = isValid.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsValid]
   }
 }

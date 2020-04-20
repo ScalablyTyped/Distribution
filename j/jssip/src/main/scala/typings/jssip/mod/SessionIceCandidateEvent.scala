@@ -14,7 +14,6 @@ object SessionIceCandidateEvent {
   @scala.inline
   def apply(candidate: RTCIceCandidate, ready: () => Unit): SessionIceCandidateEvent = {
     val __obj = js.Dynamic.literal(candidate = candidate.asInstanceOf[js.Any], ready = js.Any.fromFunction0(ready))
-  
     __obj.asInstanceOf[SessionIceCandidateEvent]
   }
 }

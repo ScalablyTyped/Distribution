@@ -23,10 +23,10 @@ class MsdText protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FMsdText: IModel = js.native
-  def caption(): String = js.native
+  def caption: String = js.native
   def caption(newValue: String): js.Any = js.native
-  def containerAsMsdEnumerationValue(): MsdEnumerationValue = js.native
-  def languageCode(): String = js.native
+  def containerAsMsdEnumerationValue: MsdEnumerationValue = js.native
+  def languageCode: String = js.native
   def languageCode(newValue: String): js.Any = js.native
 }
 

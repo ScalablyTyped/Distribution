@@ -13,12 +13,10 @@ trait JwtAlgorithm extends js.Object
 
 object JwtAlgorithm {
   @scala.inline
-  def HS256: typings.arangodb.arangodbStrings.HS256 = this.cast("HS256")
+  def HS256: typings.arangodb.arangodbStrings.HS256 = "HS256".asInstanceOf[typings.arangodb.arangodbStrings.HS256]
   @scala.inline
-  def HS384: typings.arangodb.arangodbStrings.HS384 = this.cast("HS384")
+  def HS384: typings.arangodb.arangodbStrings.HS384 = "HS384".asInstanceOf[typings.arangodb.arangodbStrings.HS384]
   @scala.inline
-  def HS512: typings.arangodb.arangodbStrings.HS512 = this.cast("HS512")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def HS512: typings.arangodb.arangodbStrings.HS512 = "HS512".asInstanceOf[typings.arangodb.arangodbStrings.HS512]
 }
 

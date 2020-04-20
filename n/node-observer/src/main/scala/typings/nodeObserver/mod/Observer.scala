@@ -37,7 +37,6 @@ object Observer {
     unsubscribe: (js.Object, String) => Unit
   ): Observer = {
     val __obj = js.Dynamic.literal(send = js.Any.fromFunction3(send), subscribe = js.Any.fromFunction3(subscribe), subscribers = subscribers.asInstanceOf[js.Any], unsubscribe = js.Any.fromFunction2(unsubscribe))
-  
     __obj.asInstanceOf[Observer]
   }
 }

@@ -13,12 +13,10 @@ trait OptionsLandmarkVerbosityValue extends js.Object
 
 object OptionsLandmarkVerbosityValue {
   @scala.inline
-  def all: typings.highcharts.highchartsStrings.all = this.cast("all")
+  def all: typings.highcharts.highchartsStrings.all = "all".asInstanceOf[typings.highcharts.highchartsStrings.all]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def disabled: typings.highcharts.highchartsStrings.disabled = "disabled".asInstanceOf[typings.highcharts.highchartsStrings.disabled]
   @scala.inline
-  def disabled: typings.highcharts.highchartsStrings.disabled = this.cast("disabled")
-  @scala.inline
-  def one: typings.highcharts.highchartsStrings.one = this.cast("one")
+  def one: typings.highcharts.highchartsStrings.one = "one".asInstanceOf[typings.highcharts.highchartsStrings.one]
 }
 

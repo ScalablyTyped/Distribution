@@ -33,11 +33,11 @@ trait CameraOptionsType extends js.Object {
   /**
   	 * Function to call if the user presses the cancel button.
   	 */
-  var cancel: js.UndefOr[js.Function1[/* param0 */ FailureResponse, _]] = js.undefined
+  var cancel: js.UndefOr[js.Function1[/* param0 */ FailureResponse, Unit]] = js.undefined
   /**
   	 * Function to call upon receiving an error.
   	 */
-  var error: js.UndefOr[js.Function1[/* param0 */ FailureResponse, _]] = js.undefined
+  var error: js.UndefOr[js.Function1[/* param0 */ FailureResponse, Unit]] = js.undefined
   /**
   	 * Show the camera in a popover.
   	 */
@@ -47,7 +47,7 @@ trait CameraOptionsType extends js.Object {
   	 * you to select existing live photos from the gallery, capturing new live photos is not supported by
   	 * iOS public API, yet.
   	 */
-  var mediaTypes: js.UndefOr[js.Array[String]] = js.undefined
+  var mediaTypes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
   	 * View to added as an overlay to the camera UI (on top).
   	 */
@@ -67,7 +67,7 @@ trait CameraOptionsType extends js.Object {
   /**
   	 * Function to call when the camera is closed after a successful capture/selection.
   	 */
-  var success: js.UndefOr[js.Function1[/* param0 */ CameraMediaItemType, _]] = js.undefined
+  var success: js.UndefOr[js.Function1[/* param0 */ CameraMediaItemType, Unit]] = js.undefined
   /**
   	 * Transformation matrix to apply to the camera or photogallery view.
   	 */
@@ -94,15 +94,15 @@ object CameraOptionsType {
     arrowDirection: Int | Double = null,
     autohide: js.UndefOr[Boolean] = js.undefined,
     autorotate: js.UndefOr[Boolean] = js.undefined,
-    cancel: /* param0 */ FailureResponse => _ = null,
-    error: /* param0 */ FailureResponse => _ = null,
+    cancel: /* param0 */ FailureResponse => Unit = null,
+    error: /* param0 */ FailureResponse => Unit = null,
     inPopOver: js.UndefOr[Boolean] = js.undefined,
-    mediaTypes: js.Array[String] = null,
+    mediaTypes: js.Array[java.lang.String] = null,
     overlay: View = null,
     popoverView: View = null,
     saveToPhotoGallery: js.UndefOr[Boolean] = js.undefined,
     showControls: js.UndefOr[Boolean] = js.undefined,
-    success: /* param0 */ CameraMediaItemType => _ = null,
+    success: /* param0 */ CameraMediaItemType => Unit = null,
     transform: Matrix2D = null,
     videoMaximumDuration: Int | Double = null,
     videoQuality: Int | Double = null,

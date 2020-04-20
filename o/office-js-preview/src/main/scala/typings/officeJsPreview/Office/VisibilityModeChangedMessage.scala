@@ -18,7 +18,6 @@ object VisibilityModeChangedMessage {
   @scala.inline
   def apply(visibilityMode: VisibilityMode): VisibilityModeChangedMessage = {
     val __obj = js.Dynamic.literal(visibilityMode = visibilityMode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VisibilityModeChangedMessage]
   }
 }

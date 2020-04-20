@@ -37,7 +37,6 @@ object ISearch {
     total: Double
   ): ISearch = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISearch]
   }
 }

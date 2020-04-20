@@ -13,7 +13,6 @@ object ISettingsCommandFactory {
   @scala.inline
   def apply(create: (js.Any, String, UICommandInvokedHandler) => SettingsCommand): ISettingsCommandFactory = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction3(create))
-  
     __obj.asInstanceOf[ISettingsCommandFactory]
   }
 }

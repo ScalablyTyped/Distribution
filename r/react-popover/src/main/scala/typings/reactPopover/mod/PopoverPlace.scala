@@ -18,22 +18,20 @@ trait PopoverPlace extends js.Object
 
 object PopoverPlace {
   @scala.inline
-  def above: typings.reactPopover.reactPopoverStrings.above = this.cast("above")
+  def above: typings.reactPopover.reactPopoverStrings.above = "above".asInstanceOf[typings.reactPopover.reactPopoverStrings.above]
   @scala.inline
-  def below: typings.reactPopover.reactPopoverStrings.below = this.cast("below")
+  def below: typings.reactPopover.reactPopoverStrings.below = "below".asInstanceOf[typings.reactPopover.reactPopoverStrings.below]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def column: typings.reactPopover.reactPopoverStrings.column = "column".asInstanceOf[typings.reactPopover.reactPopoverStrings.column]
   @scala.inline
-  def column: typings.reactPopover.reactPopoverStrings.column = this.cast("column")
+  def end: typings.reactPopover.reactPopoverStrings.end = "end".asInstanceOf[typings.reactPopover.reactPopoverStrings.end]
   @scala.inline
-  def end: typings.reactPopover.reactPopoverStrings.end = this.cast("end")
+  def left: typings.reactPopover.reactPopoverStrings.left = "left".asInstanceOf[typings.reactPopover.reactPopoverStrings.left]
   @scala.inline
-  def left: typings.reactPopover.reactPopoverStrings.left = this.cast("left")
+  def right: typings.reactPopover.reactPopoverStrings.right = "right".asInstanceOf[typings.reactPopover.reactPopoverStrings.right]
   @scala.inline
-  def right: typings.reactPopover.reactPopoverStrings.right = this.cast("right")
+  def row: typings.reactPopover.reactPopoverStrings.row = "row".asInstanceOf[typings.reactPopover.reactPopoverStrings.row]
   @scala.inline
-  def row: typings.reactPopover.reactPopoverStrings.row = this.cast("row")
-  @scala.inline
-  def start: typings.reactPopover.reactPopoverStrings.start = this.cast("start")
+  def start: typings.reactPopover.reactPopoverStrings.start = "start".asInstanceOf[typings.reactPopover.reactPopoverStrings.start]
 }
 

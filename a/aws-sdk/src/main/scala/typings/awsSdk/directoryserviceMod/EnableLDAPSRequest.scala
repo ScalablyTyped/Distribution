@@ -20,7 +20,6 @@ object EnableLDAPSRequest {
   @scala.inline
   def apply(DirectoryId: DirectoryId, Type: LDAPSType): EnableLDAPSRequest = {
     val __obj = js.Dynamic.literal(DirectoryId = DirectoryId.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EnableLDAPSRequest]
   }
 }

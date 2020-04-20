@@ -14,7 +14,6 @@ object RedshiftDatabase {
   @scala.inline
   def apply(ClusterIdentifier: RedshiftClusterIdentifier, DatabaseName: RedshiftDatabaseName): RedshiftDatabase = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any], DatabaseName = DatabaseName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RedshiftDatabase]
   }
 }

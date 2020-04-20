@@ -14,14 +14,12 @@ trait WindowsInformationProtectionEnforcementLevel extends js.Object
 
 object WindowsInformationProtectionEnforcementLevel {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def encryptAndAuditOnly: typings.microsoftGraph.microsoftGraphStrings.encryptAndAuditOnly = "encryptAndAuditOnly".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.encryptAndAuditOnly]
   @scala.inline
-  def encryptAndAuditOnly: typings.microsoftGraph.microsoftGraphStrings.encryptAndAuditOnly = this.cast("encryptAndAuditOnly")
+  def encryptAuditAndBlock: typings.microsoftGraph.microsoftGraphStrings.encryptAuditAndBlock = "encryptAuditAndBlock".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.encryptAuditAndBlock]
   @scala.inline
-  def encryptAuditAndBlock: typings.microsoftGraph.microsoftGraphStrings.encryptAuditAndBlock = this.cast("encryptAuditAndBlock")
+  def encryptAuditAndPrompt: typings.microsoftGraph.microsoftGraphStrings.encryptAuditAndPrompt = "encryptAuditAndPrompt".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.encryptAuditAndPrompt]
   @scala.inline
-  def encryptAuditAndPrompt: typings.microsoftGraph.microsoftGraphStrings.encryptAuditAndPrompt = this.cast("encryptAuditAndPrompt")
-  @scala.inline
-  def noProtection: typings.microsoftGraph.microsoftGraphStrings.noProtection = this.cast("noProtection")
+  def noProtection: typings.microsoftGraph.microsoftGraphStrings.noProtection = "noProtection".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.noProtection]
 }
 

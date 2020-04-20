@@ -12,7 +12,6 @@ object Subscription {
   @scala.inline
   def apply(unsubscribe: () => Unit): Subscription = {
     val __obj = js.Dynamic.literal(unsubscribe = js.Any.fromFunction0(unsubscribe))
-  
     __obj.asInstanceOf[Subscription]
   }
 }

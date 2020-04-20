@@ -31,48 +31,46 @@ trait _OptionalPermission extends js.Object
 
 object _OptionalPermission {
   @scala.inline
-  def activeTab: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.activeTab = this.cast("activeTab")
+  def activeTab: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.activeTab = "activeTab".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.activeTab]
   @scala.inline
-  def bookmarks: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.bookmarks = this.cast("bookmarks")
+  def bookmarks: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.bookmarks = "bookmarks".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.bookmarks]
   @scala.inline
-  def browserSettings: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.browserSettings = this.cast("browserSettings")
+  def browserSettings: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.browserSettings = "browserSettings".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.browserSettings]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def clipboardRead: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.clipboardRead = "clipboardRead".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.clipboardRead]
   @scala.inline
-  def clipboardRead: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.clipboardRead = this.cast("clipboardRead")
+  def clipboardWrite: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.clipboardWrite = "clipboardWrite".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.clipboardWrite]
   @scala.inline
-  def clipboardWrite: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.clipboardWrite = this.cast("clipboardWrite")
+  def cookies: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.cookies = "cookies".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.cookies]
   @scala.inline
-  def cookies: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.cookies = this.cast("cookies")
+  def downloads: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.downloads = "downloads".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.downloads]
   @scala.inline
-  def downloads: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.downloads = this.cast("downloads")
+  def downloadsDotopen: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.downloadsDotopen = "downloads.open".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.downloadsDotopen]
   @scala.inline
-  def downloadsDotopen: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.downloadsDotopen = this.cast("downloads.open")
+  def find: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.find = "find".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.find]
   @scala.inline
-  def find: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.find = this.cast("find")
+  def geolocation: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.geolocation = "geolocation".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.geolocation]
   @scala.inline
-  def geolocation: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.geolocation = this.cast("geolocation")
+  def history: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.history = "history".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.history]
   @scala.inline
-  def history: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.history = this.cast("history")
+  def idle: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.idle = "idle".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.idle]
   @scala.inline
-  def idle: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.idle = this.cast("idle")
+  def menusDotoverrideContext: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.menusDotoverrideContext = "menus.overrideContext".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.menusDotoverrideContext]
   @scala.inline
-  def menusDotoverrideContext: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.menusDotoverrideContext = this.cast("menus.overrideContext")
+  def notifications: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.notifications = "notifications".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.notifications]
   @scala.inline
-  def notifications: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.notifications = this.cast("notifications")
+  def search: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.search = "search".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.search]
   @scala.inline
-  def search: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.search = this.cast("search")
+  def tabHide: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tabHide = "tabHide".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tabHide]
   @scala.inline
-  def tabHide: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tabHide = this.cast("tabHide")
+  def tabs: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tabs = "tabs".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tabs]
   @scala.inline
-  def tabs: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tabs = this.cast("tabs")
+  def topSites: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.topSites = "topSites".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.topSites]
   @scala.inline
-  def topSites: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.topSites = this.cast("topSites")
+  def webNavigation: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.webNavigation = "webNavigation".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.webNavigation]
   @scala.inline
-  def webNavigation: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.webNavigation = this.cast("webNavigation")
+  def webRequest: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.webRequest = "webRequest".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.webRequest]
   @scala.inline
-  def webRequest: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.webRequest = this.cast("webRequest")
-  @scala.inline
-  def webRequestBlocking: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.webRequestBlocking = this.cast("webRequestBlocking")
+  def webRequestBlocking: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.webRequestBlocking = "webRequestBlocking".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.webRequestBlocking]
 }
 

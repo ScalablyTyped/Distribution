@@ -12,10 +12,8 @@ trait LightEffect extends js.Object
 
 object LightEffect {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def colorloop: typings.nodeHueApi.nodeHueApiStrings.colorloop = "colorloop".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.colorloop]
   @scala.inline
-  def colorloop: typings.nodeHueApi.nodeHueApiStrings.colorloop = this.cast("colorloop")
-  @scala.inline
-  def none: typings.nodeHueApi.nodeHueApiStrings.none = this.cast("none")
+  def none: typings.nodeHueApi.nodeHueApiStrings.none = "none".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.none]
 }
 

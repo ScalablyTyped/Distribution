@@ -1337,13 +1337,13 @@ object BlissNS extends js.Object {
     @JSName("$")
     def $[T](expr: js.Object, context: Element): Array[T] = js.native
     @JSName("$")
-    def $[T](selector: String): BlissDecoratedArrayElement[T] = js.native
+    def $[T](selector: String): BlissDecoratedElement[T] = js.native
     @JSName("$")
-    def $[T](selector: String, context: Element): BlissDecoratedArrayElement[T] = js.native
+    def $[T](selector: String, context: Element): BlissDecoratedElement[T] = js.native
     @JSName("$")
-    def $_T_BlissDecoratedElement[T](selector: String): BlissDecoratedElement[T] = js.native
+    def $_T_BlissDecoratedArrayElement[T](selector: String): BlissDecoratedArrayElement[T] = js.native
     @JSName("$")
-    def $_T_BlissDecoratedElement[T](selector: String, context: Element): BlissDecoratedElement[T] = js.native
+    def $_T_BlissDecoratedArrayElement[T](selector: String, context: Element): BlissDecoratedArrayElement[T] = js.native
     def apply[T](selector: String): BlissDecoratedElement[T] = js.native
     def apply[T](selector: String, context: Element): BlissDecoratedElement[T] = js.native
     def Class(options: AnonDictpropertyName): js.Object = js.native

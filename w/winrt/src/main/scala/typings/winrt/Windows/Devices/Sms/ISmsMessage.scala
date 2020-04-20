@@ -13,7 +13,6 @@ object ISmsMessage {
   @scala.inline
   def apply(id: Double, messageClass: SmsMessageClass): ISmsMessage = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], messageClass = messageClass.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISmsMessage]
   }
 }

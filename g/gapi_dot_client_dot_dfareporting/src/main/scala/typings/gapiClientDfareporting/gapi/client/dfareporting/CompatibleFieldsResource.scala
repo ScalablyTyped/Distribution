@@ -18,7 +18,6 @@ object CompatibleFieldsResource {
   @scala.inline
   def apply(query: AnonKey => Request_[CompatibleFields]): CompatibleFieldsResource = {
     val __obj = js.Dynamic.literal(query = js.Any.fromFunction1(query))
-  
     __obj.asInstanceOf[CompatibleFieldsResource]
   }
 }

@@ -10,5 +10,10 @@ package object interfaces {
     js.Array[typings.inversifyExpressUtils.interfacesMod.interfaces.ParameterMetadata]
   ]
   type HandlerDecorator = js.Function3[/* target */ js.Any, /* key */ java.lang.String, /* value */ js.Any, scala.Unit]
-  type Middleware = typings.inversify.interfacesMod.interfaces.ServiceIdentifier[js.Any] | typings.express.mod.RequestHandler[typings.expressServeStaticCore.mod.ParamsDictionary]
+  type Middleware = typings.inversify.interfacesMod.interfaces.ServiceIdentifier[js.Any] | (typings.express.mod.RequestHandler[
+    typings.expressServeStaticCore.mod.ParamsDictionary, 
+    js.Any, 
+    js.Any, 
+    typings.expressServeStaticCore.mod.Query
+  ])
 }

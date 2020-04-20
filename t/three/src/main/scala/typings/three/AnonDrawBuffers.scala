@@ -15,7 +15,6 @@ object AnonDrawBuffers {
   @scala.inline
   def apply(derivatives: Boolean, drawBuffers: Boolean, fragDepth: Boolean, shaderTextureLOD: Boolean): AnonDrawBuffers = {
     val __obj = js.Dynamic.literal(derivatives = derivatives.asInstanceOf[js.Any], drawBuffers = drawBuffers.asInstanceOf[js.Any], fragDepth = fragDepth.asInstanceOf[js.Any], shaderTextureLOD = shaderTextureLOD.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDrawBuffers]
   }
 }

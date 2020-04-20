@@ -32,7 +32,6 @@ object IUtilDomEvent {
     removeListener: (HTMLElement, String, js.Function) => Unit
   ): IUtilDomEvent = {
     val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction3(addListener), getPointer = js.Any.fromFunction2(getPointer), removeListener = js.Any.fromFunction3(removeListener))
-  
     __obj.asInstanceOf[IUtilDomEvent]
   }
 }

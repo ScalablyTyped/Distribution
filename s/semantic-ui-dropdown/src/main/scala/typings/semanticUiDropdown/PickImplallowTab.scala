@@ -13,7 +13,6 @@ object PickImplallowTab {
   @scala.inline
   def apply(allowTab: Boolean): PickImplallowTab = {
     val __obj = js.Dynamic.literal(allowTab = allowTab.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplallowTab]
   }
 }

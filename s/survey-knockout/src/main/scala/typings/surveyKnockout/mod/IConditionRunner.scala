@@ -12,7 +12,6 @@ object IConditionRunner {
   @scala.inline
   def apply(runCondition: (HashTable[_], HashTable[_]) => js.Any): IConditionRunner = {
     val __obj = js.Dynamic.literal(runCondition = js.Any.fromFunction2(runCondition))
-  
     __obj.asInstanceOf[IConditionRunner]
   }
 }

@@ -25,7 +25,6 @@ object DirectorySitesResource {
     list: AnonAcceptsInStreamVideoPlacements => Request_[DirectorySitesListResponse]
   ): DirectorySitesResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[DirectorySitesResource]
   }
 }

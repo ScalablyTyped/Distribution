@@ -13,7 +13,6 @@ object TypeofQLDBSession {
   @scala.inline
   def apply(Types: TypeofQLDBSession): TypeofQLDBSession = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofQLDBSession]
   }
 }

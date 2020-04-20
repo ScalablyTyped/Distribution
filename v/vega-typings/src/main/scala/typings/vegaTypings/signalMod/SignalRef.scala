@@ -38,7 +38,6 @@ object SignalRef {
   @scala.inline
   def apply(signal: String): SignalRef = {
     val __obj = js.Dynamic.literal(signal = signal.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SignalRef]
   }
 }

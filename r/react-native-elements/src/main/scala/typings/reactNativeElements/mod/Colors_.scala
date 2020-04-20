@@ -45,7 +45,6 @@ object Colors_ {
     warning: String
   ): Colors_ = {
     val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], divider = divider.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], grey0 = grey0.asInstanceOf[js.Any], grey1 = grey1.asInstanceOf[js.Any], grey2 = grey2.asInstanceOf[js.Any], grey3 = grey3.asInstanceOf[js.Any], grey4 = grey4.asInstanceOf[js.Any], grey5 = grey5.asInstanceOf[js.Any], greyOutline = greyOutline.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], primary = primary.asInstanceOf[js.Any], searchBg = searchBg.asInstanceOf[js.Any], secondary = secondary.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any], warning = warning.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Colors_]
   }
 }

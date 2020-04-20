@@ -36,7 +36,6 @@ object ocrIdCardResponse {
     words_result_num: Double
   ): ocrIdCardResponse = {
     val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], edit_tool = edit_tool.asInstanceOf[js.Any], image_status = image_status.asInstanceOf[js.Any], log_id = log_id.asInstanceOf[js.Any], risk_type = risk_type.asInstanceOf[js.Any], words_result = words_result.asInstanceOf[js.Any], words_result_num = words_result_num.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ocrIdCardResponse]
   }
 }

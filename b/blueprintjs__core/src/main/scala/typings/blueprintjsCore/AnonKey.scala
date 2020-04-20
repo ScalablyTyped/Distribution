@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonKey[T /* <: js.Object */] extends js.Object {
-  var key: String
+  var key: /* keyof T */ String
   var valueA: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
   var valueB: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
 }
@@ -13,12 +13,11 @@ trait AnonKey[T /* <: js.Object */] extends js.Object {
 object AnonKey {
   @scala.inline
   def apply[T /* <: js.Object */](
-    key: String,
+    key: /* keyof T */ String,
     valueA: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any,
     valueB: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
   ): AnonKey[T] = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], valueA = valueA.asInstanceOf[js.Any], valueB = valueB.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonKey[T]]
   }
 }

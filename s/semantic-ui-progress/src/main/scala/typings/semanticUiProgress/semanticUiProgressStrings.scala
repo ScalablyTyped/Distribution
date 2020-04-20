@@ -194,27 +194,27 @@ object semanticUiProgressStrings {
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
-  def `get normalized value`: `get normalized value` = "get normalized value".asInstanceOf[`get normalized value`]
+  def `get normalized value`: `get normalized value` = ("get normalized value").asInstanceOf[`get normalized value`]
   @scala.inline
-  def `get percent`: `get percent` = "get percent".asInstanceOf[`get percent`]
+  def `get percent`: `get percent` = ("get percent").asInstanceOf[`get percent`]
   @scala.inline
-  def `get text`: `get text` = "get text".asInstanceOf[`get text`]
+  def `get text`: `get text` = ("get text").asInstanceOf[`get text`]
   @scala.inline
-  def `get total`: `get total` = "get total".asInstanceOf[`get total`]
+  def `get total`: `get total` = ("get total").asInstanceOf[`get total`]
   @scala.inline
-  def `get value`: `get value` = "get value".asInstanceOf[`get value`]
+  def `get value`: `get value` = ("get value").asInstanceOf[`get value`]
   @scala.inline
   def increment: increment = "increment".asInstanceOf[increment]
   @scala.inline
-  def `is active`: `is active` = "is active".asInstanceOf[`is active`]
+  def `is active`: `is active` = ("is active").asInstanceOf[`is active`]
   @scala.inline
-  def `is complete`: `is complete` = "is complete".asInstanceOf[`is complete`]
+  def `is complete`: `is complete` = ("is complete").asInstanceOf[`is complete`]
   @scala.inline
-  def `is error`: `is error` = "is error".asInstanceOf[`is error`]
+  def `is error`: `is error` = ("is error").asInstanceOf[`is error`]
   @scala.inline
-  def `is success`: `is success` = "is success".asInstanceOf[`is success`]
+  def `is success`: `is success` = ("is success").asInstanceOf[`is success`]
   @scala.inline
-  def `is warning`: `is warning` = "is warning".asInstanceOf[`is warning`]
+  def `is warning`: `is warning` = ("is warning").asInstanceOf[`is warning`]
   @scala.inline
   def label: label = "label".asInstanceOf[label]
   @scala.inline
@@ -248,37 +248,37 @@ object semanticUiProgressStrings {
   @scala.inline
   def regExp: regExp = "regExp".asInstanceOf[regExp]
   @scala.inline
-  def `remove active`: `remove active` = "remove active".asInstanceOf[`remove active`]
+  def `remove active`: `remove active` = ("remove active").asInstanceOf[`remove active`]
   @scala.inline
-  def `remove error`: `remove error` = "remove error".asInstanceOf[`remove error`]
+  def `remove error`: `remove error` = ("remove error").asInstanceOf[`remove error`]
   @scala.inline
-  def `remove success`: `remove success` = "remove success".asInstanceOf[`remove success`]
+  def `remove success`: `remove success` = ("remove success").asInstanceOf[`remove success`]
   @scala.inline
-  def `remove warning`: `remove warning` = "remove warning".asInstanceOf[`remove warning`]
+  def `remove warning`: `remove warning` = ("remove warning").asInstanceOf[`remove warning`]
   @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
   @scala.inline
   def selector: selector = "selector".asInstanceOf[selector]
   @scala.inline
-  def `set active`: `set active` = "set active".asInstanceOf[`set active`]
+  def `set active`: `set active` = ("set active").asInstanceOf[`set active`]
   @scala.inline
-  def `set bar label`: `set bar label` = "set bar label".asInstanceOf[`set bar label`]
+  def `set bar label`: `set bar label` = ("set bar label").asInstanceOf[`set bar label`]
   @scala.inline
-  def `set duration`: `set duration` = "set duration".asInstanceOf[`set duration`]
+  def `set duration`: `set duration` = ("set duration").asInstanceOf[`set duration`]
   @scala.inline
-  def `set error`: `set error` = "set error".asInstanceOf[`set error`]
+  def `set error`: `set error` = ("set error").asInstanceOf[`set error`]
   @scala.inline
-  def `set label`: `set label` = "set label".asInstanceOf[`set label`]
+  def `set label`: `set label` = ("set label").asInstanceOf[`set label`]
   @scala.inline
-  def `set percent`: `set percent` = "set percent".asInstanceOf[`set percent`]
+  def `set percent`: `set percent` = ("set percent").asInstanceOf[`set percent`]
   @scala.inline
-  def `set progress`: `set progress` = "set progress".asInstanceOf[`set progress`]
+  def `set progress`: `set progress` = ("set progress").asInstanceOf[`set progress`]
   @scala.inline
-  def `set success`: `set success` = "set success".asInstanceOf[`set success`]
+  def `set success`: `set success` = ("set success").asInstanceOf[`set success`]
   @scala.inline
-  def `set total`: `set total` = "set total".asInstanceOf[`set total`]
+  def `set total`: `set total` = ("set total").asInstanceOf[`set total`]
   @scala.inline
-  def `set warning`: `set warning` = "set warning".asInstanceOf[`set warning`]
+  def `set warning`: `set warning` = ("set warning").asInstanceOf[`set warning`]
   @scala.inline
   def setting: setting = "setting".asInstanceOf[setting]
   @scala.inline
@@ -290,7 +290,7 @@ object semanticUiProgressStrings {
   @scala.inline
   def total: total = "total".asInstanceOf[total]
   @scala.inline
-  def `update progress`: `update progress` = "update progress".asInstanceOf[`update progress`]
+  def `update progress`: `update progress` = ("update progress").asInstanceOf[`update progress`]
   @scala.inline
   def value: value = "value".asInstanceOf[value]
   @scala.inline

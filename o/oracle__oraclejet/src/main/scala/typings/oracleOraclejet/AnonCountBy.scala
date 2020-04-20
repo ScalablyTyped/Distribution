@@ -12,7 +12,6 @@ object AnonCountBy {
   @scala.inline
   def apply(countBy: String): AnonCountBy = {
     val __obj = js.Dynamic.literal(countBy = countBy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCountBy]
   }
 }

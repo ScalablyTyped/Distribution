@@ -12,10 +12,8 @@ trait LogicalBooleanOperatorType extends js.Object
 
 object LogicalBooleanOperatorType {
   @scala.inline
-  def AND: typings.slonik.slonikStrings.AND = this.cast("AND")
+  def AND: typings.slonik.slonikStrings.AND = "AND".asInstanceOf[typings.slonik.slonikStrings.AND]
   @scala.inline
-  def OR: typings.slonik.slonikStrings.OR = this.cast("OR")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def OR: typings.slonik.slonikStrings.OR = "OR".asInstanceOf[typings.slonik.slonikStrings.OR]
 }
 

@@ -22,7 +22,6 @@ object ReactionsDeleteForTeamDiscussionCommentParams {
     team_slug: String
   ): ReactionsDeleteForTeamDiscussionCommentParams = {
     val __obj = js.Dynamic.literal(comment_number = comment_number.asInstanceOf[js.Any], discussion_number = discussion_number.asInstanceOf[js.Any], org = org.asInstanceOf[js.Any], reaction_id = reaction_id.asInstanceOf[js.Any], team_slug = team_slug.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReactionsDeleteForTeamDiscussionCommentParams]
   }
 }

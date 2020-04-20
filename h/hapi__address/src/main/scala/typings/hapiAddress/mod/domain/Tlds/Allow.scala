@@ -14,7 +14,6 @@ object Allow {
   @scala.inline
   def apply(allow: Set[String] | `true`): Allow = {
     val __obj = js.Dynamic.literal(allow = allow.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Allow]
   }
 }

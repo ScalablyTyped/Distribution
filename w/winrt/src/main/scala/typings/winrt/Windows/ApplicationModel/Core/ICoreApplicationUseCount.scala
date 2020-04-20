@@ -13,7 +13,6 @@ object ICoreApplicationUseCount {
   @scala.inline
   def apply(decrementApplicationUseCount: () => Unit, incrementApplicationUseCount: () => Unit): ICoreApplicationUseCount = {
     val __obj = js.Dynamic.literal(decrementApplicationUseCount = js.Any.fromFunction0(decrementApplicationUseCount), incrementApplicationUseCount = js.Any.fromFunction0(incrementApplicationUseCount))
-  
     __obj.asInstanceOf[ICoreApplicationUseCount]
   }
 }

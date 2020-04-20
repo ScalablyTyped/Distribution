@@ -1,23 +1,20 @@
 package typings.reactTable.mod
 
 import typings.react.mod.ReactNode
-import typings.reactTable.AnonData
 import typings.reactTable.reactTableStrings.Footer
 import typings.reactTable.reactTableStrings.Header
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined parent std.Omit<react-table.react-table.Column<D>, 'id' | 'columns'> */
+/* Inlined parent std.Omit<react-table.react-table.ColumnInterface<D>, 'id'> */
+/* Inlined parent react-table.react-table.ColumnInterfaceBasedOnValue<D, any> */
 /* Inlined parent react-table.react-table.UseTableColumnProps<D> */
 /* Inlined parent react-table.react-table.UseTableHeaderGroupProps<D> */
 @js.native
 trait HeaderGroup[D /* <: js.Object */] extends js.Object {
-  var Cell: js.UndefOr[Renderer[CellProps[D]]] = js.native
+  var Cell: js.UndefOr[Renderer[CellProps[D, _]]] = js.native
   var Header: js.UndefOr[Renderer[HeaderProps[D]]] = js.native
-  var accessor: js.UndefOr[
-    IdType[D] | (js.Function3[/* originalRow */ D, /* index */ Double, /* sub */ AnonData[D], CellValue])
-  ] = js.native
   var columns: js.Array[ColumnInstance[D]] = js.native
   var depth: Double = js.native
   var headers: js.Array[ColumnInstance[D]] = js.native

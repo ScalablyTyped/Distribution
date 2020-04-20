@@ -13,6 +13,9 @@ import typings.openpgp.mod.packet.SecretKey
 import typings.openpgp.mod.packet.SecretSubkey
 import typings.openpgp.mod.packet.Signature
 import typings.openpgp.mod.revokeReasonForRevocation
+import typings.openpgp.openpgpStrings.encrypt
+import typings.openpgp.openpgpStrings.encrypt_sign
+import typings.openpgp.openpgpStrings.sign
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -89,15 +92,30 @@ class Key protected () extends js.Object {
     * When `capabilities` is null, defaults to returning the expiry date of the primary key.
     * Returns null if `capabilities` is passed and the key does not have the specified capabilities or is revoked or invalid.
     * Returns Infinity if the key doesn't expire.
-    * @param {encrypt | sign | encrypt_sign} capabilities, optional
+    * @param capabilities, optional
     * @param keyId, optional
     * @param userId, optional user ID
     * @returns
     */
   def getExpirationTime(): js.Promise[Date | Infinity | Null] = js.native
-  def getExpirationTime(capabilities: js.Any): js.Promise[Date | Infinity | Null] = js.native
-  def getExpirationTime(capabilities: js.Any, keyId: Keyid): js.Promise[Date | Infinity | Null] = js.native
-  def getExpirationTime(capabilities: js.Any, keyId: Keyid, userId: js.Object): js.Promise[Date | Infinity | Null] = js.native
+  @JSName("getExpirationTime")
+  def getExpirationTime_encrypt(capabilities: encrypt): js.Promise[Date | Infinity | Null] = js.native
+  @JSName("getExpirationTime")
+  def getExpirationTime_encrypt(capabilities: encrypt, keyId: Keyid): js.Promise[Date | Infinity | Null] = js.native
+  @JSName("getExpirationTime")
+  def getExpirationTime_encrypt(capabilities: encrypt, keyId: Keyid, userId: js.Object): js.Promise[Date | Infinity | Null] = js.native
+  @JSName("getExpirationTime")
+  def getExpirationTime_encryptsign(capabilities: encrypt_sign): js.Promise[Date | Infinity | Null] = js.native
+  @JSName("getExpirationTime")
+  def getExpirationTime_encryptsign(capabilities: encrypt_sign, keyId: Keyid): js.Promise[Date | Infinity | Null] = js.native
+  @JSName("getExpirationTime")
+  def getExpirationTime_encryptsign(capabilities: encrypt_sign, keyId: Keyid, userId: js.Object): js.Promise[Date | Infinity | Null] = js.native
+  @JSName("getExpirationTime")
+  def getExpirationTime_sign(capabilities: sign): js.Promise[Date | Infinity | Null] = js.native
+  @JSName("getExpirationTime")
+  def getExpirationTime_sign(capabilities: sign, keyId: Keyid): js.Promise[Date | Infinity | Null] = js.native
+  @JSName("getExpirationTime")
+  def getExpirationTime_sign(capabilities: sign, keyId: Keyid, userId: js.Object): js.Promise[Date | Infinity | Null] = js.native
   /**
     * Calculates the fingerprint of the key
     * @returns A string containing the fingerprint in lowercase hex

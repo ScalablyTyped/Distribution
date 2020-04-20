@@ -13,7 +13,6 @@ object Nest {
   @scala.inline
   def apply(Burn: (js.Any, js.Any) => Unit, Feather: (js.Any, js.Any) => Unit): Nest = {
     val __obj = js.Dynamic.literal(Burn = js.Any.fromFunction2(Burn), Feather = js.Any.fromFunction2(Feather))
-  
     __obj.asInstanceOf[Nest]
   }
 }

@@ -18,7 +18,6 @@ object Request {
   @scala.inline
   def apply(rateLimit: RateLimitInfo): Request = {
     val __obj = js.Dynamic.literal(rateLimit = rateLimit.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Request]
   }
 }

@@ -15,7 +15,6 @@ object AnonHeight {
   @scala.inline
   def apply(height: String, mp4: String, mp4_size: String, width: String): AnonHeight = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], mp4 = mp4.asInstanceOf[js.Any], mp4_size = mp4_size.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHeight]
   }
 }

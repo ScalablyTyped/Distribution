@@ -15,7 +15,6 @@ object DimensionValuesResource {
   @scala.inline
   def apply(query: AnonUserIp => Request_[DimensionValueList]): DimensionValuesResource = {
     val __obj = js.Dynamic.literal(query = js.Any.fromFunction1(query))
-  
     __obj.asInstanceOf[DimensionValuesResource]
   }
 }

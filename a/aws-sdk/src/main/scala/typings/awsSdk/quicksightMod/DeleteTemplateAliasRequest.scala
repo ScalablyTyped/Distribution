@@ -24,7 +24,6 @@ object DeleteTemplateAliasRequest {
   @scala.inline
   def apply(AliasName: AliasName, AwsAccountId: AwsAccountId, TemplateId: RestrictiveResourceId): DeleteTemplateAliasRequest = {
     val __obj = js.Dynamic.literal(AliasName = AliasName.asInstanceOf[js.Any], AwsAccountId = AwsAccountId.asInstanceOf[js.Any], TemplateId = TemplateId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteTemplateAliasRequest]
   }
 }

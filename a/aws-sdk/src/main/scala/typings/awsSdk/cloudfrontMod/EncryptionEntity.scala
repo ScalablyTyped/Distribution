@@ -24,7 +24,6 @@ object EncryptionEntity {
   @scala.inline
   def apply(FieldPatterns: FieldPatterns, ProviderId: String, PublicKeyId: String): EncryptionEntity = {
     val __obj = js.Dynamic.literal(FieldPatterns = FieldPatterns.asInstanceOf[js.Any], ProviderId = ProviderId.asInstanceOf[js.Any], PublicKeyId = PublicKeyId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EncryptionEntity]
   }
 }

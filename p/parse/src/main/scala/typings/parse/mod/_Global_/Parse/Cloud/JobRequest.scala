@@ -13,7 +13,6 @@ object JobRequest {
   @scala.inline
   def apply(message: js.Any => Unit, params: js.Any): JobRequest = {
     val __obj = js.Dynamic.literal(message = js.Any.fromFunction1(message), params = params.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JobRequest]
   }
 }

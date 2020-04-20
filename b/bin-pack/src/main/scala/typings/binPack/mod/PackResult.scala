@@ -18,7 +18,6 @@ object PackResult {
   @scala.inline
   def apply[T](height: Double, items: js.Array[PackedItem[T]], width: Double): PackResult[T] = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PackResult[T]]
   }
 }

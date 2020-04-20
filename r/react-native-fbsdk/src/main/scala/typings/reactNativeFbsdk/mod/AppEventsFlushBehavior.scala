@@ -12,10 +12,8 @@ trait AppEventsFlushBehavior extends js.Object
 
 object AppEventsFlushBehavior {
   @scala.inline
-  def auto: typings.reactNativeFbsdk.reactNativeFbsdkStrings.auto = this.cast("auto")
+  def auto: typings.reactNativeFbsdk.reactNativeFbsdkStrings.auto = "auto".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.auto]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def `explicitly-only`: typings.reactNativeFbsdk.reactNativeFbsdkStrings.`explicitly-only` = this.cast("explicitly-only")
+  def `explicitly-only`: typings.reactNativeFbsdk.reactNativeFbsdkStrings.`explicitly-only` = "explicitly-only".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.`explicitly-only`]
 }
 

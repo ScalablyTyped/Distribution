@@ -13,7 +13,6 @@ object AnonToasts {
   @scala.inline
   def apply(toasts: js.Array[IToastOptions]): AnonToasts = {
     val __obj = js.Dynamic.literal(toasts = toasts.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonToasts]
   }
 }

@@ -15,7 +15,6 @@ object MemoryAccessCallbacks {
   @scala.inline
   def apply(onAccess: MemoryAccessDetails => Unit): MemoryAccessCallbacks = {
     val __obj = js.Dynamic.literal(onAccess = js.Any.fromFunction1(onAccess))
-  
     __obj.asInstanceOf[MemoryAccessCallbacks]
   }
 }

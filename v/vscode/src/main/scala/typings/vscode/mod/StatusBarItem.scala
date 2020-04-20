@@ -14,10 +14,14 @@ trait StatusBarItem extends js.Object {
   		 */
   var color: js.UndefOr[String | ThemeColor] = js.undefined
   /**
-  		 * The identifier of a command to run on click. The command must be
-  		 * [known](#commands.getCommands).
+  		 * [`Command`](#Command) or identifier of a command to run on click.
+  		 *
+  		 * The command must be [known](#commands.getCommands).
+  		 *
+  		 * Note that if this is a [`Command`](#Command) object, only the [`command`](#Command.command) and [`arguments`](#Command.arguments)
+  		 * are used by VS Code.
   		 */
-  var command: js.UndefOr[String] = js.undefined
+  var command: js.UndefOr[String | Command] = js.undefined
   /**
   		 * The priority of this item. Higher value means the item should
   		 * be shown more to the left.
@@ -60,7 +64,7 @@ object StatusBarItem {
     show: () => Unit,
     text: String,
     color: String | ThemeColor = null,
-    command: String = null,
+    command: String | Command = null,
     priority: Int | Double = null,
     tooltip: String = null
   ): StatusBarItem = {

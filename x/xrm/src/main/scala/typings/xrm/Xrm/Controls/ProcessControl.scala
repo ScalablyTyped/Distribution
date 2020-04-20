@@ -36,7 +36,6 @@ object ProcessControl {
     setVisible: Boolean => Unit
   ): ProcessControl = {
     val __obj = js.Dynamic.literal(getDisplayState = js.Any.fromFunction0(getDisplayState), getVisible = js.Any.fromFunction0(getVisible), reflow = js.Any.fromFunction3(reflow), setDisplayState = js.Any.fromFunction1(setDisplayState), setVisible = js.Any.fromFunction1(setVisible))
-  
     __obj.asInstanceOf[ProcessControl]
   }
 }

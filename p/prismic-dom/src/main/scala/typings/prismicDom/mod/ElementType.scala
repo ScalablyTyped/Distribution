@@ -30,44 +30,42 @@ trait ElementType extends js.Object
 
 object ElementType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def em: typings.prismicDom.prismicDomStrings.em = "em".asInstanceOf[typings.prismicDom.prismicDomStrings.em]
   @scala.inline
-  def em: typings.prismicDom.prismicDomStrings.em = this.cast("em")
+  def embed: typings.prismicDom.prismicDomStrings.embed = "embed".asInstanceOf[typings.prismicDom.prismicDomStrings.embed]
   @scala.inline
-  def embed: typings.prismicDom.prismicDomStrings.embed = this.cast("embed")
+  def `group-list-item`: typings.prismicDom.prismicDomStrings.`group-list-item` = "group-list-item".asInstanceOf[typings.prismicDom.prismicDomStrings.`group-list-item`]
   @scala.inline
-  def `group-list-item`: typings.prismicDom.prismicDomStrings.`group-list-item` = this.cast("group-list-item")
+  def `group-o-list-item`: typings.prismicDom.prismicDomStrings.`group-o-list-item` = "group-o-list-item".asInstanceOf[typings.prismicDom.prismicDomStrings.`group-o-list-item`]
   @scala.inline
-  def `group-o-list-item`: typings.prismicDom.prismicDomStrings.`group-o-list-item` = this.cast("group-o-list-item")
+  def heading1: typings.prismicDom.prismicDomStrings.heading1 = "heading1".asInstanceOf[typings.prismicDom.prismicDomStrings.heading1]
   @scala.inline
-  def heading1: typings.prismicDom.prismicDomStrings.heading1 = this.cast("heading1")
+  def heading2: typings.prismicDom.prismicDomStrings.heading2 = "heading2".asInstanceOf[typings.prismicDom.prismicDomStrings.heading2]
   @scala.inline
-  def heading2: typings.prismicDom.prismicDomStrings.heading2 = this.cast("heading2")
+  def heading3: typings.prismicDom.prismicDomStrings.heading3 = "heading3".asInstanceOf[typings.prismicDom.prismicDomStrings.heading3]
   @scala.inline
-  def heading3: typings.prismicDom.prismicDomStrings.heading3 = this.cast("heading3")
+  def heading4: typings.prismicDom.prismicDomStrings.heading4 = "heading4".asInstanceOf[typings.prismicDom.prismicDomStrings.heading4]
   @scala.inline
-  def heading4: typings.prismicDom.prismicDomStrings.heading4 = this.cast("heading4")
+  def heading5: typings.prismicDom.prismicDomStrings.heading5 = "heading5".asInstanceOf[typings.prismicDom.prismicDomStrings.heading5]
   @scala.inline
-  def heading5: typings.prismicDom.prismicDomStrings.heading5 = this.cast("heading5")
+  def heading6: typings.prismicDom.prismicDomStrings.heading6 = "heading6".asInstanceOf[typings.prismicDom.prismicDomStrings.heading6]
   @scala.inline
-  def heading6: typings.prismicDom.prismicDomStrings.heading6 = this.cast("heading6")
+  def hyperlink: typings.prismicDom.prismicDomStrings.hyperlink = "hyperlink".asInstanceOf[typings.prismicDom.prismicDomStrings.hyperlink]
   @scala.inline
-  def hyperlink: typings.prismicDom.prismicDomStrings.hyperlink = this.cast("hyperlink")
+  def image: typings.prismicDom.prismicDomStrings.image = "image".asInstanceOf[typings.prismicDom.prismicDomStrings.image]
   @scala.inline
-  def image: typings.prismicDom.prismicDomStrings.image = this.cast("image")
+  def label: typings.prismicDom.prismicDomStrings.label = "label".asInstanceOf[typings.prismicDom.prismicDomStrings.label]
   @scala.inline
-  def label: typings.prismicDom.prismicDomStrings.label = this.cast("label")
+  def `list-item`: typings.prismicDom.prismicDomStrings.`list-item` = "list-item".asInstanceOf[typings.prismicDom.prismicDomStrings.`list-item`]
   @scala.inline
-  def `list-item`: typings.prismicDom.prismicDomStrings.`list-item` = this.cast("list-item")
+  def `o-list-item`: typings.prismicDom.prismicDomStrings.`o-list-item` = "o-list-item".asInstanceOf[typings.prismicDom.prismicDomStrings.`o-list-item`]
   @scala.inline
-  def `o-list-item`: typings.prismicDom.prismicDomStrings.`o-list-item` = this.cast("o-list-item")
+  def paragraph: typings.prismicDom.prismicDomStrings.paragraph = "paragraph".asInstanceOf[typings.prismicDom.prismicDomStrings.paragraph]
   @scala.inline
-  def paragraph: typings.prismicDom.prismicDomStrings.paragraph = this.cast("paragraph")
+  def preformatted: typings.prismicDom.prismicDomStrings.preformatted = "preformatted".asInstanceOf[typings.prismicDom.prismicDomStrings.preformatted]
   @scala.inline
-  def preformatted: typings.prismicDom.prismicDomStrings.preformatted = this.cast("preformatted")
+  def span: typings.prismicDom.prismicDomStrings.span = "span".asInstanceOf[typings.prismicDom.prismicDomStrings.span]
   @scala.inline
-  def span: typings.prismicDom.prismicDomStrings.span = this.cast("span")
-  @scala.inline
-  def strong: typings.prismicDom.prismicDomStrings.strong = this.cast("strong")
+  def strong: typings.prismicDom.prismicDomStrings.strong = "strong".asInstanceOf[typings.prismicDom.prismicDomStrings.strong]
 }
 

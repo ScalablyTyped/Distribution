@@ -12,7 +12,6 @@ object AsymmetricMatcher {
   @scala.inline
   def apply(asymmetricMatch: js.Any => Boolean): AsymmetricMatcher = {
     val __obj = js.Dynamic.literal(asymmetricMatch = js.Any.fromFunction1(asymmetricMatch))
-  
     __obj.asInstanceOf[AsymmetricMatcher]
   }
 }

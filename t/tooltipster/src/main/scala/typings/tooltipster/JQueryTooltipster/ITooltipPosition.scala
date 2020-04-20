@@ -34,7 +34,6 @@ object ITooltipPosition {
   @scala.inline
   def apply(coord: AnonLeft, distance: Double, side: TooltipPositioningSide, size: AnonHeight, target: Double): ITooltipPosition = {
     val __obj = js.Dynamic.literal(coord = coord.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], side = side.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ITooltipPosition]
   }
 }

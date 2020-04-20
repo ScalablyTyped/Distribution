@@ -12,7 +12,6 @@ object AnonEncode {
   @scala.inline
   def apply(encode: String): AnonEncode = {
     val __obj = js.Dynamic.literal(encode = encode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEncode]
   }
 }

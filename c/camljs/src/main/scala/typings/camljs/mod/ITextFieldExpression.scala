@@ -33,7 +33,6 @@ object ITextFieldExpression {
     NotEqualTo: String => IExpression
   ): ITextFieldExpression = {
     val __obj = js.Dynamic.literal(BeginsWith = js.Any.fromFunction1(BeginsWith), Contains = js.Any.fromFunction1(Contains), EqualTo = js.Any.fromFunction1(EqualTo), In = js.Any.fromFunction1(In), IsNotNull = js.Any.fromFunction0(IsNotNull), IsNull = js.Any.fromFunction0(IsNull), NotEqualTo = js.Any.fromFunction1(NotEqualTo))
-  
     __obj.asInstanceOf[ITextFieldExpression]
   }
 }

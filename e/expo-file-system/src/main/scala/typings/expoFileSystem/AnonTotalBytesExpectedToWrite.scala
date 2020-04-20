@@ -13,7 +13,6 @@ object AnonTotalBytesExpectedToWrite {
   @scala.inline
   def apply(totalBytesExpectedToWrite: Double, totalBytesWritten: Double): AnonTotalBytesExpectedToWrite = {
     val __obj = js.Dynamic.literal(totalBytesExpectedToWrite = totalBytesExpectedToWrite.asInstanceOf[js.Any], totalBytesWritten = totalBytesWritten.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTotalBytesExpectedToWrite]
   }
 }

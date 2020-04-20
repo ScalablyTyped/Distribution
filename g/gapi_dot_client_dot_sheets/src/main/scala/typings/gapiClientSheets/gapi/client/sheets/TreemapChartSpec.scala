@@ -34,6 +34,11 @@ trait TreemapChartSpec extends js.Object {
   var colorScale: js.UndefOr[TreemapChartColorScale] = js.undefined
   /** The background color for header cells. */
   var headerColor: js.UndefOr[Color] = js.undefined
+  /**
+    * The background color for header cells.
+    * If header_color is also set, this field takes precedence.
+    */
+  var headerColorStyle: js.UndefOr[ColorStyle] = js.undefined
   /** True to hide tooltips. */
   var hideTooltips: js.UndefOr[Boolean] = js.undefined
   /**
@@ -83,6 +88,7 @@ object TreemapChartSpec {
     colorData: ChartData = null,
     colorScale: TreemapChartColorScale = null,
     headerColor: Color = null,
+    headerColorStyle: ColorStyle = null,
     hideTooltips: js.UndefOr[Boolean] = js.undefined,
     hintedLevels: Int | Double = null,
     labels: ChartData = null,
@@ -97,6 +103,7 @@ object TreemapChartSpec {
     if (colorData != null) __obj.updateDynamic("colorData")(colorData.asInstanceOf[js.Any])
     if (colorScale != null) __obj.updateDynamic("colorScale")(colorScale.asInstanceOf[js.Any])
     if (headerColor != null) __obj.updateDynamic("headerColor")(headerColor.asInstanceOf[js.Any])
+    if (headerColorStyle != null) __obj.updateDynamic("headerColorStyle")(headerColorStyle.asInstanceOf[js.Any])
     if (!js.isUndefined(hideTooltips)) __obj.updateDynamic("hideTooltips")(hideTooltips.asInstanceOf[js.Any])
     if (hintedLevels != null) __obj.updateDynamic("hintedLevels")(hintedLevels.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])

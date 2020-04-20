@@ -12,7 +12,6 @@ object ForeignConstraintBuilder {
   @scala.inline
   def apply(references: String => ReferencingColumnBuilder): ForeignConstraintBuilder = {
     val __obj = js.Dynamic.literal(references = js.Any.fromFunction1(references))
-  
     __obj.asInstanceOf[ForeignConstraintBuilder]
   }
 }

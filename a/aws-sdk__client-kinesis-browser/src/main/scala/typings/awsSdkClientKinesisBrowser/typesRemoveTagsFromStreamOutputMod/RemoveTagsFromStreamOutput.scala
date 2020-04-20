@@ -18,7 +18,6 @@ object RemoveTagsFromStreamOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): RemoveTagsFromStreamOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RemoveTagsFromStreamOutput]
   }
 }

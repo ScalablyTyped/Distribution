@@ -13,7 +13,6 @@ object PickImplcloseNested {
   @scala.inline
   def apply(closeNested: Boolean): PickImplcloseNested = {
     val __obj = js.Dynamic.literal(closeNested = closeNested.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplcloseNested]
   }
 }

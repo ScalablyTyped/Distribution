@@ -64,7 +64,6 @@ object loop {
     regroup: (js.Any, js.Any) => js.Any
   ): loop = {
     val __obj = js.Dynamic.literal(CycleNode = js.Any.fromFunction4(CycleNode), IfChangedNode = js.Any.fromFunction3(IfChangedNode), RegroupNode = js.Any.fromFunction3(RegroupNode), cycle = js.Any.fromFunction2(cycle), ifchanged = js.Any.fromFunction2(ifchanged), regroup = js.Any.fromFunction2(regroup))
-  
     __obj.asInstanceOf[loop]
   }
 }

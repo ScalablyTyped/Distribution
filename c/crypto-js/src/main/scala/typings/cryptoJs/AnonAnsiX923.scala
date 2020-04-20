@@ -25,7 +25,6 @@ object AnonAnsiX923 {
     ZeroPadding: Padding
   ): AnonAnsiX923 = {
     val __obj = js.Dynamic.literal(AnsiX923 = AnsiX923.asInstanceOf[js.Any], Iso10126 = Iso10126.asInstanceOf[js.Any], Iso97971 = Iso97971.asInstanceOf[js.Any], NoPadding = NoPadding.asInstanceOf[js.Any], Pkcs7 = Pkcs7.asInstanceOf[js.Any], ZeroPadding = ZeroPadding.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAnsiX923]
   }
 }

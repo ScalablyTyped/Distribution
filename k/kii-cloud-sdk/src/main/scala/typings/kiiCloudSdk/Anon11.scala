@@ -23,7 +23,6 @@ object Anon11 {
     success: KiiGroup => js.Any
   ): Anon11 = {
     val __obj = js.Dynamic.literal(failure = js.Any.fromFunction4(failure), success = js.Any.fromFunction1(success))
-  
     __obj.asInstanceOf[Anon11]
   }
 }

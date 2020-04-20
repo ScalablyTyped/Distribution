@@ -15,7 +15,6 @@ object AnonCommunication {
   @scala.inline
   def apply(communication: String, incoming: Boolean, outgoing: Boolean, signedon: Boolean): AnonCommunication = {
     val __obj = js.Dynamic.literal(communication = communication.asInstanceOf[js.Any], incoming = incoming.asInstanceOf[js.Any], outgoing = outgoing.asInstanceOf[js.Any], signedon = signedon.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCommunication]
   }
 }

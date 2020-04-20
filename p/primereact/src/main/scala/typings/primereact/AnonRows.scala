@@ -15,7 +15,6 @@ object AnonRows {
   @scala.inline
   def apply(first: Double, originalEvent: Event_, rows: Double): AnonRows = {
     val __obj = js.Dynamic.literal(first = first.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRows]
   }
 }

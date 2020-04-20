@@ -24,7 +24,6 @@ object AnonOPENASPINNEDTAB {
     OPEN_FULL_SCREEN: OPEN_FULL_SCREEN
   ): AnonOPENASPINNEDTAB = {
     val __obj = js.Dynamic.literal(OPEN_AS_PINNED_TAB = OPEN_AS_PINNED_TAB.asInstanceOf[js.Any], OPEN_AS_REGULAR_TAB = OPEN_AS_REGULAR_TAB.asInstanceOf[js.Any], OPEN_AS_WINDOW = OPEN_AS_WINDOW.asInstanceOf[js.Any], OPEN_FULL_SCREEN = OPEN_FULL_SCREEN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOPENASPINNEDTAB]
   }
 }

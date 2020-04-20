@@ -22,7 +22,6 @@ object ISelect {
     update: js.Any => Unit
   ): ISelect = {
     val __obj = js.Dynamic.literal(active = js.Any.fromFunction1(active), hide = js.Any.fromFunction0(hide), select = js.Any.fromFunction1(select), show = js.Any.fromFunction0(show), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[ISelect]
   }
 }

@@ -14,7 +14,6 @@ object PagerEvent {
   @scala.inline
   def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Pager): PagerEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PagerEvent]
   }
 }

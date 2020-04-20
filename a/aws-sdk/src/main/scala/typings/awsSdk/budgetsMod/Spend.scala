@@ -20,7 +20,6 @@ object Spend {
   @scala.inline
   def apply(Amount: NumericValue, Unit: UnitValue): Spend = {
     val __obj = js.Dynamic.literal(Amount = Amount.asInstanceOf[js.Any], Unit = Unit.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Spend]
   }
 }

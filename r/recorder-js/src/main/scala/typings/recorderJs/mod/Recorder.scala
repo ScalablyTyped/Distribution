@@ -19,7 +19,6 @@ object Recorder {
     stop: () => js.Promise[RecorderResult]
   ): Recorder = {
     val __obj = js.Dynamic.literal(init = js.Any.fromFunction1(init), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop))
-  
     __obj.asInstanceOf[Recorder]
   }
 }

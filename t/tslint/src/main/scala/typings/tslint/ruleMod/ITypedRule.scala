@@ -21,7 +21,6 @@ object ITypedRule {
     isEnabled: () => Boolean
   ): ITypedRule = {
     val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), applyWithProgram = js.Any.fromFunction2(applyWithProgram), applyWithWalker = js.Any.fromFunction1(applyWithWalker), getOptions = js.Any.fromFunction0(getOptions), isEnabled = js.Any.fromFunction0(isEnabled))
-  
     __obj.asInstanceOf[ITypedRule]
   }
 }

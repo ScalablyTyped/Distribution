@@ -24,7 +24,6 @@ object ResultRowValue {
   @scala.inline
   def apply(Key: string, Type: string, Value: string): ResultRowValue = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResultRowValue]
   }
 }

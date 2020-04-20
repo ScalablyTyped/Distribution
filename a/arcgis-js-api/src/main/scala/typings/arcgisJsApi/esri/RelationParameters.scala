@@ -17,7 +17,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait RelationParameters extends Accessor {
+trait RelationParameters
+  extends Accessor
+     with JSONSupport {
   /**
     * The first array of geometries to compute the relation. The structure of each geometry in the array is same as the structure of the json geometry objects returned by the ArcGIS REST API.
     *
@@ -58,14 +60,6 @@ trait RelationParameters extends Accessor {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationParameters.html#relationParameter)
     */
   var relationParameter: String = js.native
-  /**
-    * Converts an instance of  [this class]() to its ArcGIS portal JSON representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/programming-patterns/#using-fromjson) topic in the Guide for more information.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationParameters.html#toJSON)
-    *
-    *
-    */
-  def toJSON(): js.Any = js.native
 }
 
 @JSGlobal("__esri.RelationParameters")

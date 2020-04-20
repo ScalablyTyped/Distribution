@@ -29,7 +29,6 @@ object ShareOpenGraphDialogOptions {
   @scala.inline
   def apply(action_properties: String, action_type: String, method: String): ShareOpenGraphDialogOptions = {
     val __obj = js.Dynamic.literal(action_properties = action_properties.asInstanceOf[js.Any], action_type = action_type.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ShareOpenGraphDialogOptions]
   }
 }

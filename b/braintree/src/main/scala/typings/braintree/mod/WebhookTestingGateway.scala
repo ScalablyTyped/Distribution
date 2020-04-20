@@ -12,7 +12,6 @@ object WebhookTestingGateway {
   @scala.inline
   def apply(sampleNotification: (WebhookNotificationKind, String) => js.Promise[SampleNotification]): WebhookTestingGateway = {
     val __obj = js.Dynamic.literal(sampleNotification = js.Any.fromFunction2(sampleNotification))
-  
     __obj.asInstanceOf[WebhookTestingGateway]
   }
 }

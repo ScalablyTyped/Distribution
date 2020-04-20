@@ -27,7 +27,6 @@ object UrlLocation {
   @scala.inline
   def apply(hash: String, parameter: StringDictionary[String], parameters: StringDictionary[js.Array[String]]): UrlLocation = {
     val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], parameter = parameter.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UrlLocation]
   }
 }

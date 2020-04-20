@@ -21,28 +21,26 @@ trait Formats extends js.Object
 
 object Formats {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def color: typings.revalidator.revalidatorStrings.color = "color".asInstanceOf[typings.revalidator.revalidatorStrings.color]
   @scala.inline
-  def color: typings.revalidator.revalidatorStrings.color = this.cast("color")
+  def date: typings.revalidator.revalidatorStrings.date = "date".asInstanceOf[typings.revalidator.revalidatorStrings.date]
   @scala.inline
-  def date: typings.revalidator.revalidatorStrings.date = this.cast("date")
+  def `date-time`: typings.revalidator.revalidatorStrings.`date-time` = "date-time".asInstanceOf[typings.revalidator.revalidatorStrings.`date-time`]
   @scala.inline
-  def `date-time`: typings.revalidator.revalidatorStrings.`date-time` = this.cast("date-time")
+  def email: typings.revalidator.revalidatorStrings.email = "email".asInstanceOf[typings.revalidator.revalidatorStrings.email]
   @scala.inline
-  def email: typings.revalidator.revalidatorStrings.email = this.cast("email")
+  def `host-name`: typings.revalidator.revalidatorStrings.`host-name` = "host-name".asInstanceOf[typings.revalidator.revalidatorStrings.`host-name`]
   @scala.inline
-  def `host-name`: typings.revalidator.revalidatorStrings.`host-name` = this.cast("host-name")
+  def `ip-address`: typings.revalidator.revalidatorStrings.`ip-address` = "ip-address".asInstanceOf[typings.revalidator.revalidatorStrings.`ip-address`]
   @scala.inline
-  def `ip-address`: typings.revalidator.revalidatorStrings.`ip-address` = this.cast("ip-address")
+  def ipv6: typings.revalidator.revalidatorStrings.ipv6 = "ipv6".asInstanceOf[typings.revalidator.revalidatorStrings.ipv6]
   @scala.inline
-  def ipv6: typings.revalidator.revalidatorStrings.ipv6 = this.cast("ipv6")
+  def regex: typings.revalidator.revalidatorStrings.regex = "regex".asInstanceOf[typings.revalidator.revalidatorStrings.regex]
   @scala.inline
-  def regex: typings.revalidator.revalidatorStrings.regex = this.cast("regex")
+  def time: typings.revalidator.revalidatorStrings.time = "time".asInstanceOf[typings.revalidator.revalidatorStrings.time]
   @scala.inline
-  def time: typings.revalidator.revalidatorStrings.time = this.cast("time")
+  def url: typings.revalidator.revalidatorStrings.url = "url".asInstanceOf[typings.revalidator.revalidatorStrings.url]
   @scala.inline
-  def url: typings.revalidator.revalidatorStrings.url = this.cast("url")
-  @scala.inline
-  def `utc-millisec`: typings.revalidator.revalidatorStrings.`utc-millisec` = this.cast("utc-millisec")
+  def `utc-millisec`: typings.revalidator.revalidatorStrings.`utc-millisec` = "utc-millisec".asInstanceOf[typings.revalidator.revalidatorStrings.`utc-millisec`]
 }
 

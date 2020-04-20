@@ -19,7 +19,6 @@ object TaskAgentPublicKey {
   @scala.inline
   def apply(exponent: js.Array[Double], modulus: js.Array[Double]): TaskAgentPublicKey = {
     val __obj = js.Dynamic.literal(exponent = exponent.asInstanceOf[js.Any], modulus = modulus.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TaskAgentPublicKey]
   }
 }

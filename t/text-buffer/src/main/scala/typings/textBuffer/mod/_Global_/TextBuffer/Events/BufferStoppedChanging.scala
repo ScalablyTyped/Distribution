@@ -13,7 +13,6 @@ object BufferStoppedChanging {
   @scala.inline
   def apply(changes: js.Array[TextChange]): BufferStoppedChanging = {
     val __obj = js.Dynamic.literal(changes = changes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BufferStoppedChanging]
   }
 }

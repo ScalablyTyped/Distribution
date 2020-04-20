@@ -18,7 +18,6 @@ object PermissionsResource {
   @scala.inline
   def apply(queryTestablePermissions: AnonOauthtoken => Request_[QueryTestablePermissionsResponse]): PermissionsResource = {
     val __obj = js.Dynamic.literal(queryTestablePermissions = js.Any.fromFunction1(queryTestablePermissions))
-  
     __obj.asInstanceOf[PermissionsResource]
   }
 }

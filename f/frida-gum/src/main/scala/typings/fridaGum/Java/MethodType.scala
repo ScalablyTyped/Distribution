@@ -17,12 +17,10 @@ trait MethodType extends js.Object
 
 object MethodType {
   @scala.inline
-  def Constructor: `1` = this.cast(1)
+  def Constructor: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def Instance: `3` = this.cast(3)
+  def Instance: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def Static: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Static: `2` = 2.asInstanceOf[`2`]
 }
 

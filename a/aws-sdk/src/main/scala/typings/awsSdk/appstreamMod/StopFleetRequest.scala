@@ -16,7 +16,6 @@ object StopFleetRequest {
   @scala.inline
   def apply(Name: String): StopFleetRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopFleetRequest]
   }
 }

@@ -256,7 +256,7 @@ class AbstractMesh protected ()
   /** @hidden */
   def _collideForSubMesh(subMesh: SubMesh, transformMatrix: Matrix, collider: Collider): AbstractMesh = js.native
   /** @hidden */
-  def _effectiveMesh(): AbstractMesh = js.native
+  def _effectiveMesh: AbstractMesh = js.native
   /** @hidden */
   def _freeze(): Unit = js.native
   /** @hidden */
@@ -271,7 +271,7 @@ class AbstractMesh protected ()
   /** @hidden */
   def _markSubMeshesAsMiscDirty(): Unit = js.native
   /** @hidden */
-  def _positions(): Nullable[js.Array[Vector3]] = js.native
+  def _positions: Nullable[js.Array[Vector3]] = js.native
   /** @hidden */
   def _postActivate(): Unit = js.native
   /** @hidden */
@@ -313,7 +313,7 @@ class AbstractMesh protected ()
   def alignWithNormal(normal: Vector3): AbstractMesh = js.native
   def alignWithNormal(normal: Vector3, upDirection: Vector3): AbstractMesh = js.native
   /** Gets or sets a boolean indicating that this mesh will allow fog to be rendered on it (true by default) */
-  def applyFog(): Boolean = js.native
+  def applyFog: Boolean = js.native
   def applyFog(value: Boolean): js.Any = js.native
   /** Apply a physic impulse to the mesh
     * @param force defines the force to apply
@@ -345,29 +345,29 @@ class AbstractMesh protected ()
     * Gets or sets a boolean indicating that this mesh can be used in the collision engine
     * @see http://doc.babylonjs.com/babylon101/cameras,_mesh_collisions_and_gravity
     */
-  def checkCollisions(): Boolean = js.native
+  def checkCollisions: Boolean = js.native
   def checkCollisions(collisionEnabled: Boolean): js.Any = js.native
   /**
     * Gets Collider object used to compute collisions (not physics)
     * @see http://doc.babylonjs.com/babylon101/cameras,_mesh_collisions_and_gravity
     */
-  def collider(): Nullable[Collider] = js.native
+  def collider: Nullable[Collider] = js.native
   /**
     * Gets or sets the current collision group mask (-1 by default).
     * A collision between A and B will happen if A.collisionGroup & b.collisionMask !== 0
     */
-  def collisionGroup(): Double = js.native
+  def collisionGroup: Double = js.native
   def collisionGroup(mask: Double): js.Any = js.native
   /**
     * Gets or sets a collision mask used to mask collisions (default is -1).
     * A collision between A and B will happen if A.collisionGroup & b.collisionMask !== 0
     */
-  def collisionMask(): Double = js.native
+  def collisionMask: Double = js.native
   def collisionMask(mask: Double): js.Any = js.native
   /**
     * Gets or sets a boolean indicating that bone animations must be computed by the CPU (false by default)
     */
-  def computeBonesUsingShaders(): Boolean = js.native
+  def computeBonesUsingShaders: Boolean = js.native
   def computeBonesUsingShaders(value: Boolean): js.Any = js.native
   /**
     * Creates new normals data for the mesh
@@ -420,13 +420,13 @@ class AbstractMesh protected ()
     * Used only when facet depth sort is enabled
     * @see http://doc.babylonjs.com/how_to/how_to_use_facetdata#facet-depth-sort
     */
-  def facetDepthSortFrom(): Vector3 = js.native
+  def facetDepthSortFrom: Vector3 = js.native
   def facetDepthSortFrom(location: Vector3): js.Any = js.native
   /**
     * Gets the number of facets in the mesh
     * @see http://doc.babylonjs.com/how_to/how_to_use_facetdata#what-is-a-mesh-facet
     */
-  def facetNb(): Double = js.native
+  def facetNb: Double = js.native
   /**
     * Returns the mesh BoundingInfo object or creates a new one and returns if it was undefined.
     * Note that it returns a shallow bounding of the mesh (i.e. it does not include children).
@@ -556,9 +556,9 @@ class AbstractMesh protected ()
   /**
     * Gets a boolean indicating if this mesh has instances
     */
-  def hasInstances(): Boolean = js.native
+  def hasInstances: Boolean = js.native
   /** Gets or sets a boolean indicating that this mesh contains vertex color data with alpha values */
-  def hasVertexAlpha(): Boolean = js.native
+  def hasVertexAlpha: Boolean = js.native
   def hasVertexAlpha(value: Boolean): js.Any = js.native
   /**
     * Checks if the passed Ray intersects with the mesh
@@ -593,11 +593,11 @@ class AbstractMesh protected ()
   /**
     * Gets a boolean indicating if this mesh is an instance or a regular mesh
     */
-  def isAnInstance(): Boolean = js.native
+  def isAnInstance: Boolean = js.native
   /**
     * Returns true if the mesh is blocked. Implemented by child classes
     */
-  def isBlocked(): Boolean = js.native
+  def isBlocked: Boolean = js.native
   /**
     * Checks if a cullable object (mesh...) is in the camera frustum
     * Unlike isInFrustum this cheks the full bounding box
@@ -610,7 +610,7 @@ class AbstractMesh protected ()
     * gets a boolean indicating if facetData is enabled
     * @see http://doc.babylonjs.com/how_to/how_to_use_facetdata#what-is-a-mesh-facet
     */
-  def isFacetDataEnabled(): Boolean = js.native
+  def isFacetDataEnabled: Boolean = js.native
   /**
     * Checks if the object or part of the object is in the frustum
     * @param frustumPlanes Camera near/planes
@@ -622,12 +622,12 @@ class AbstractMesh protected ()
     * Gets or sets the current layer mask (default is 0x0FFFFFFF)
     * @see http://doc.babylonjs.com/how_to/layermasks_and_multi-cam_textures
     */
-  def layerMask(): Double = js.native
+  def layerMask: Double = js.native
   def layerMask(value: Double): js.Any = js.native
   /** Gets the list of lights affecting that mesh */
-  def lightSources(): js.Array[Light] = js.native
+  def lightSources: js.Array[Light] = js.native
   /** Gets or sets current material */
-  def material(): Nullable[Material] = js.native
+  def material: Nullable[Material] = js.native
   def material(value: Nullable[Material]): js.Any = js.native
   /**
     * Perform relative position change from the point of view of behind the front of the mesh.
@@ -652,10 +652,10 @@ class AbstractMesh protected ()
     * Doesn't work with multi-materials
     * @see http://doc.babylonjs.com/how_to/how_to_use_facetdata#facet-depth-sort
     */
-  def mustDepthSortFacets(): Boolean = js.native
+  def mustDepthSortFacets: Boolean = js.native
   def mustDepthSortFacets(sort: Boolean): js.Any = js.native
   /** Gets or sets the number of allowed bone influences per vertex (4 by default) */
-  def numBoneInfluencers(): Double = js.native
+  def numBoneInfluencers: Double = js.native
   def numBoneInfluencers(value: Double): js.Any = js.native
   /** Set a function to call when this mesh collides with another one */
   def onCollide(callback: js.Function0[Unit]): js.Any = js.native
@@ -666,19 +666,19 @@ class AbstractMesh protected ()
     * Ex : 1.01 (default) the partioning space is 1% bigger than the bounding box
     * @see http://doc.babylonjs.com/how_to/how_to_use_facetdata#tweaking-the-partitioning
     */
-  def partitioningBBoxRatio(): Double = js.native
+  def partitioningBBoxRatio: Double = js.native
   def partitioningBBoxRatio(ratio: Double): js.Any = js.native
   /**
     * Gets or set the number (integer) of subdivisions per axis in the partioning space
     * @see http://doc.babylonjs.com/how_to/how_to_use_facetdata#tweaking-the-partitioning
     */
-  def partitioningSubdivisions(): Double = js.native
+  def partitioningSubdivisions: Double = js.native
   def partitioningSubdivisions(nb: Double): js.Any = js.native
   /**
     * Gets or sets a boolean indicating that this mesh can receive realtime shadows
     * @see http://doc.babylonjs.com/babylon101/shadows
     */
-  def receiveShadows(): Boolean = js.native
+  def receiveShadows: Boolean = js.native
   def receiveShadows(value: Boolean): js.Any = js.native
   /**
     * This method recomputes and sets a new BoundingInfo to the mesh unless it is locked.
@@ -750,7 +750,7 @@ class AbstractMesh protected ()
     */
   def setVerticesData(kind: String, data: FloatArray): AbstractMesh = js.native
   def setVerticesData(kind: String, data: FloatArray, updatable: Boolean, stride: Double): AbstractMesh = js.native
-  def skeleton(): Nullable[Skeleton] = js.native
+  def skeleton: Nullable[Skeleton] = js.native
   /**
     * Gets or sets a skeleton to apply skining transformations
     * @see http://doc.babylonjs.com/how_to/how_to_use_bones_and_skeletons
@@ -776,14 +776,14 @@ class AbstractMesh protected ()
   def updateIndices(indices: IndicesArray, offset: Double): AbstractMesh = js.native
   def updateIndices(indices: IndicesArray, offset: Double, gpuMemoryOnly: Boolean): AbstractMesh = js.native
   /** Gets a boolean indicating if this mesh has skinning data and an attached skeleton */
-  def useBones(): Boolean = js.native
+  def useBones: Boolean = js.native
   /** Gets or sets a boolean indicating that this mesh needs to use vertex color data to render (if this kind of vertex data is available in the geometry) */
-  def useVertexColors(): Boolean = js.native
+  def useVertexColors: Boolean = js.native
   def useVertexColors(value: Boolean): js.Any = js.native
   /**
     * Gets or sets mesh visibility between 0 and 1 (default is 1)
     */
-  def visibility(): Double = js.native
+  def visibility: Double = js.native
   /**
     * Gets or sets mesh visibility between 0 and 1 (default is 1)
     */
@@ -839,18 +839,18 @@ object AbstractMesh extends js.Object {
   /** Occlusion set to strict */
   var OCCLUSION_TYPE_STRICT: Double = js.native
   /** Billboard on all axes */
-  def BILLBOARDMODE_ALL(): Double = js.native
+  def BILLBOARDMODE_ALL: Double = js.native
   /**
     * No billboard
     */
-  def BILLBOARDMODE_NONE(): Double = js.native
+  def BILLBOARDMODE_NONE: Double = js.native
   /** Billboard on using position instead of orientation */
-  def BILLBOARDMODE_USE_POSITION(): Double = js.native
+  def BILLBOARDMODE_USE_POSITION: Double = js.native
   /** Billboard on X axis */
-  def BILLBOARDMODE_X(): Double = js.native
+  def BILLBOARDMODE_X: Double = js.native
   /** Billboard on Y axis */
-  def BILLBOARDMODE_Y(): Double = js.native
+  def BILLBOARDMODE_Y: Double = js.native
   /** Billboard on Z axis */
-  def BILLBOARDMODE_Z(): Double = js.native
+  def BILLBOARDMODE_Z: Double = js.native
 }
 

@@ -20,7 +20,7 @@ object modelEventReceiverMod extends js.Object {
     var eventSource: ^  | Null = js.native
     var fileEventEmitter: js.Any = js.native
     var workingCopyId: js.Any = js.native
-    def isRunning(): Boolean = js.native
+    def isRunning: Boolean = js.native
     def onDeltaEvent(callback: js.Function1[/* modelEvent */ IDeltaEvent, Unit]): Unit = js.native
     def onFileEvent(callback: js.Function1[/* modelEvent */ IFileEvent, Unit]): Unit = js.native
     def start(lastEventId: Double): Unit = js.native

@@ -20,16 +20,14 @@ trait MsoFileNewSection extends js.Object
 
 object MsoFileNewSection {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoBottomSection: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoBottomSection: `4` = this.cast(4)
+  def msoNew: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoNew: `1` = this.cast(1)
+  def msoNewfromExistingFile: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoNewfromExistingFile: `2` = this.cast(2)
+  def msoNewfromTemplate: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoNewfromTemplate: `3` = this.cast(3)
-  @scala.inline
-  def msoOpenDocument: `0` = this.cast(0)
+  def msoOpenDocument: `0` = 0.asInstanceOf[`0`]
 }
 

@@ -18,7 +18,6 @@ object PullsGetCommentResponseLinks {
     self: PullsGetCommentResponseLinksSelf
   ): PullsGetCommentResponseLinks = {
     val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any], pull_request = pull_request.asInstanceOf[js.Any], self = self.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PullsGetCommentResponseLinks]
   }
 }

@@ -21,7 +21,6 @@ object GraphQLNodeDefinitions {
     nodesField: GraphQLFieldConfig[_, _, StringDictionary[_]]
   ): GraphQLNodeDefinitions = {
     val __obj = js.Dynamic.literal(nodeField = nodeField.asInstanceOf[js.Any], nodeInterface = nodeInterface.asInstanceOf[js.Any], nodesField = nodesField.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GraphQLNodeDefinitions]
   }
 }

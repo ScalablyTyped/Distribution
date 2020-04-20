@@ -16,18 +16,16 @@ trait ExcelDataType extends js.Object
 
 object ExcelDataType {
   @scala.inline
-  def b: typings.xlsx.xlsxStrings.b = this.cast("b")
+  def b: typings.xlsx.xlsxStrings.b = "b".asInstanceOf[typings.xlsx.xlsxStrings.b]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def d: typings.xlsx.xlsxStrings.d = "d".asInstanceOf[typings.xlsx.xlsxStrings.d]
   @scala.inline
-  def d: typings.xlsx.xlsxStrings.d = this.cast("d")
+  def e: typings.xlsx.xlsxStrings.e = "e".asInstanceOf[typings.xlsx.xlsxStrings.e]
   @scala.inline
-  def e: typings.xlsx.xlsxStrings.e = this.cast("e")
+  def n: typings.xlsx.xlsxStrings.n = "n".asInstanceOf[typings.xlsx.xlsxStrings.n]
   @scala.inline
-  def n: typings.xlsx.xlsxStrings.n = this.cast("n")
+  def s: typings.xlsx.xlsxStrings.s = "s".asInstanceOf[typings.xlsx.xlsxStrings.s]
   @scala.inline
-  def s: typings.xlsx.xlsxStrings.s = this.cast("s")
-  @scala.inline
-  def z: typings.xlsx.xlsxStrings.z = this.cast("z")
+  def z: typings.xlsx.xlsxStrings.z = "z".asInstanceOf[typings.xlsx.xlsxStrings.z]
 }
 

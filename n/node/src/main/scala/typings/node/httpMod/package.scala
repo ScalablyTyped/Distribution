@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object httpMod {
   // outgoing headers allows numbers (as they are converted internally to strings)
-  type OutgoingHttpHeaders = org.scalablytyped.runtime.StringDictionary[js.UndefOr[scala.Double | java.lang.String | js.Array[java.lang.String]]]
+  type OutgoingHttpHeaders = typings.node.NodeJS.Dict[scala.Double | java.lang.String | js.Array[java.lang.String]]
   type RequestListener = js.Function2[
     /* req */ typings.node.httpMod.IncomingMessage, 
     /* res */ typings.node.httpMod.ServerResponse, 

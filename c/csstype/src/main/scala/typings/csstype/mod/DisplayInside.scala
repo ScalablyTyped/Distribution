@@ -19,24 +19,22 @@ trait DisplayInside extends _DisplayProperty
 
 object DisplayInside {
   @scala.inline
-  def `-ms-flexbox`: typings.csstype.csstypeStrings.`-ms-flexbox` = this.cast("-ms-flexbox")
+  def `-ms-flexbox`: typings.csstype.csstypeStrings.`-ms-flexbox` = "-ms-flexbox".asInstanceOf[typings.csstype.csstypeStrings.`-ms-flexbox`]
   @scala.inline
-  def `-ms-grid`: typings.csstype.csstypeStrings.`-ms-grid` = this.cast("-ms-grid")
+  def `-ms-grid`: typings.csstype.csstypeStrings.`-ms-grid` = "-ms-grid".asInstanceOf[typings.csstype.csstypeStrings.`-ms-grid`]
   @scala.inline
-  def `-webkit-flex`: typings.csstype.csstypeStrings.`-webkit-flex` = this.cast("-webkit-flex")
+  def `-webkit-flex`: typings.csstype.csstypeStrings.`-webkit-flex` = "-webkit-flex".asInstanceOf[typings.csstype.csstypeStrings.`-webkit-flex`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def flex: typings.csstype.csstypeStrings.flex = "flex".asInstanceOf[typings.csstype.csstypeStrings.flex]
   @scala.inline
-  def flex: typings.csstype.csstypeStrings.flex = this.cast("flex")
+  def flow: typings.csstype.csstypeStrings.flow = "flow".asInstanceOf[typings.csstype.csstypeStrings.flow]
   @scala.inline
-  def flow: typings.csstype.csstypeStrings.flow = this.cast("flow")
+  def `flow-root`: typings.csstype.csstypeStrings.`flow-root` = "flow-root".asInstanceOf[typings.csstype.csstypeStrings.`flow-root`]
   @scala.inline
-  def `flow-root`: typings.csstype.csstypeStrings.`flow-root` = this.cast("flow-root")
+  def grid: typings.csstype.csstypeStrings.grid = "grid".asInstanceOf[typings.csstype.csstypeStrings.grid]
   @scala.inline
-  def grid: typings.csstype.csstypeStrings.grid = this.cast("grid")
+  def ruby: typings.csstype.csstypeStrings.ruby = "ruby".asInstanceOf[typings.csstype.csstypeStrings.ruby]
   @scala.inline
-  def ruby: typings.csstype.csstypeStrings.ruby = this.cast("ruby")
-  @scala.inline
-  def table: typings.csstype.csstypeStrings.table = this.cast("table")
+  def table: typings.csstype.csstypeStrings.table = "table".asInstanceOf[typings.csstype.csstypeStrings.table]
 }
 

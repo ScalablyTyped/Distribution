@@ -20,7 +20,6 @@ object DeleteDocumentationPartRequest {
   @scala.inline
   def apply(documentationPartId: String, restApiId: String): DeleteDocumentationPartRequest = {
     val __obj = js.Dynamic.literal(documentationPartId = documentationPartId.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteDocumentationPartRequest]
   }
 }

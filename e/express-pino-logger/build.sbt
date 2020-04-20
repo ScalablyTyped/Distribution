@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "express-pino-logger"
-version := "4.0-dt-20191003Z-32d050"
+version := "4.0-dt-20191003Z-020cc1"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "13.11-dt-20200402Z-9a87f0",
-  "org.scalablytyped" %%% "pino" % "5.17-dt-20200309Z-18ac42",
-  "org.scalablytyped" %%% "pino-http" % "4.4-dt-20200320Z-703c6d",
-  "org.scalablytyped" %%% "pino-std-serializers" % "2.4-dt-20190701Z-f9b7f6",
-  "org.scalablytyped" %%% "sonic-boom" % "0.7-dt-20190819Z-b02784",
-  "org.scalablytyped" %%% "std" % "3.8-a0108c")
+  "org.scalablytyped" %%% "node" % "13.13-dt-20200417Z-f3d81d",
+  "org.scalablytyped" %%% "pino" % "6.0-dt-20200413Z-db0ae5",
+  "org.scalablytyped" %%% "pino-http" % "5.0-dt-20200416Z-a731ce",
+  "org.scalablytyped" %%% "pino-std-serializers" % "2.4-dt-20190701Z-67642b",
+  "org.scalablytyped" %%% "sonic-boom" % "0.7-dt-20190819Z-07a712",
+  "org.scalablytyped" %%% "std" % "3.8-9b2470")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

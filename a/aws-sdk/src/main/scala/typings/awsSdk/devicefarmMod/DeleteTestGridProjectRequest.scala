@@ -16,7 +16,6 @@ object DeleteTestGridProjectRequest {
   @scala.inline
   def apply(projectArn: DeviceFarmArn): DeleteTestGridProjectRequest = {
     val __obj = js.Dynamic.literal(projectArn = projectArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteTestGridProjectRequest]
   }
 }

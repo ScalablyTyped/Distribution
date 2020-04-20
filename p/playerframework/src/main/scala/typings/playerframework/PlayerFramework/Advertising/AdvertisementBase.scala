@@ -12,7 +12,6 @@ object AdvertisementBase {
   @scala.inline
   def apply(source: js.Any): AdvertisementBase = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AdvertisementBase]
   }
 }

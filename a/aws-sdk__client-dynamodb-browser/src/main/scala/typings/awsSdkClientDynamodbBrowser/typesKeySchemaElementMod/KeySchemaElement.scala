@@ -21,7 +21,6 @@ object KeySchemaElement {
   @scala.inline
   def apply(AttributeName: String, KeyType: HASH | RANGE | String): KeySchemaElement = {
     val __obj = js.Dynamic.literal(AttributeName = AttributeName.asInstanceOf[js.Any], KeyType = KeyType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KeySchemaElement]
   }
 }

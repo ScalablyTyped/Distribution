@@ -13,7 +13,6 @@ object AnonCancelCurrentEdit {
   @scala.inline
   def apply(cancelCurrentEdit: () => Boolean, commitCurrentEdit: () => Boolean): AnonCancelCurrentEdit = {
     val __obj = js.Dynamic.literal(cancelCurrentEdit = js.Any.fromFunction0(cancelCurrentEdit), commitCurrentEdit = js.Any.fromFunction0(commitCurrentEdit))
-  
     __obj.asInstanceOf[AnonCancelCurrentEdit]
   }
 }

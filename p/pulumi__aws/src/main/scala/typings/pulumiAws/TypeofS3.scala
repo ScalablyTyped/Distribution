@@ -17,7 +17,6 @@ object TypeofS3 {
   @scala.inline
   def apply(ManagedUpload: TypeofManagedUpload, PresignedPost: Instantiable0[PresignedPost], Types: TypeofS3): TypeofS3 = {
     val __obj = js.Dynamic.literal(ManagedUpload = ManagedUpload.asInstanceOf[js.Any], PresignedPost = PresignedPost.asInstanceOf[js.Any], Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofS3]
   }
 }

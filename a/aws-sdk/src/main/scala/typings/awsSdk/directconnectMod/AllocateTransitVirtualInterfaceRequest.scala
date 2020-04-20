@@ -28,7 +28,6 @@ object AllocateTransitVirtualInterfaceRequest {
     ownerAccount: OwnerAccount
   ): AllocateTransitVirtualInterfaceRequest = {
     val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any], newTransitVirtualInterfaceAllocation = newTransitVirtualInterfaceAllocation.asInstanceOf[js.Any], ownerAccount = ownerAccount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AllocateTransitVirtualInterfaceRequest]
   }
 }

@@ -16,7 +16,6 @@ object DescribeLocationFsxWindowsRequest {
   @scala.inline
   def apply(LocationArn: LocationArn): DescribeLocationFsxWindowsRequest = {
     val __obj = js.Dynamic.literal(LocationArn = LocationArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeLocationFsxWindowsRequest]
   }
 }

@@ -23,7 +23,6 @@ object UpdateRecorder {
     updateExistingImport: (NamedImports, String) => Unit
   ): UpdateRecorder = {
     val __obj = js.Dynamic.literal(addClassComment = js.Any.fromFunction2(addClassComment), addClassDecorator = js.Any.fromFunction2(addClassDecorator), addNewImport = js.Any.fromFunction2(addNewImport), commitUpdate = js.Any.fromFunction0(commitUpdate), updateExistingImport = js.Any.fromFunction2(updateExistingImport))
-  
     __obj.asInstanceOf[UpdateRecorder]
   }
 }

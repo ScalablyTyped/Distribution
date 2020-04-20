@@ -16,7 +16,6 @@ object GetAccessKeyInfoRequest {
   @scala.inline
   def apply(AccessKeyId: accessKeyIdType): GetAccessKeyInfoRequest = {
     val __obj = js.Dynamic.literal(AccessKeyId = AccessKeyId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetAccessKeyInfoRequest]
   }
 }

@@ -62,7 +62,6 @@ object Queue {
     wait: js.Function => js.Function
   ): Queue = {
     val __obj = js.Dynamic.literal(Process = js.Any.fromFunction0(Process), Push = js.Any.fromFunction1(Push), Resume = js.Any.fromFunction0(Resume), Suspend = js.Any.fromFunction0(Suspend), call = js.Any.fromFunction0(call), pending = pending.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any], running = running.asInstanceOf[js.Any], wait = js.Any.fromFunction1(wait))
-  
     __obj.asInstanceOf[Queue]
   }
 }

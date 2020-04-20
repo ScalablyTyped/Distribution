@@ -20,7 +20,6 @@ object MoneyData {
   @scala.inline
   def apply(Amount: Double, Currency: CurrencyISO): MoneyData = {
     val __obj = js.Dynamic.literal(Amount = Amount.asInstanceOf[js.Any], Currency = Currency.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MoneyData]
   }
 }

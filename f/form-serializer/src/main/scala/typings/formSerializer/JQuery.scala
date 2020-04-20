@@ -19,7 +19,6 @@ object JQuery {
   @scala.inline
   def apply(serializeJSON: () => String, serializeObject: () => js.Object): JQuery = {
     val __obj = js.Dynamic.literal(serializeJSON = js.Any.fromFunction0(serializeJSON), serializeObject = js.Any.fromFunction0(serializeObject))
-  
     __obj.asInstanceOf[JQuery]
   }
 }

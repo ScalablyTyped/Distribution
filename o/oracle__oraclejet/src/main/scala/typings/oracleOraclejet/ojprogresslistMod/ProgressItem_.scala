@@ -18,7 +18,6 @@ object ProgressItem_ {
     removeEventListener: (EventType, EventListener) => Unit
   ): ProgressItem_ = {
     val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), removeEventListener = js.Any.fromFunction2(removeEventListener))
-  
     __obj.asInstanceOf[ProgressItem_]
   }
 }

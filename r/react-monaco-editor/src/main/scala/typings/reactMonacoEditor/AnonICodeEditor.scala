@@ -13,7 +13,6 @@ object AnonICodeEditor {
   @scala.inline
   def apply(ICodeEditor: String, IDiffEditor: String): AnonICodeEditor = {
     val __obj = js.Dynamic.literal(ICodeEditor = ICodeEditor.asInstanceOf[js.Any], IDiffEditor = IDiffEditor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonICodeEditor]
   }
 }

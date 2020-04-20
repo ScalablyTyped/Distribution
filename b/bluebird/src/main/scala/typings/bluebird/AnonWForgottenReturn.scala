@@ -13,7 +13,6 @@ object AnonWForgottenReturn {
   @scala.inline
   def apply(wForgottenReturn: Boolean): AnonWForgottenReturn = {
     val __obj = js.Dynamic.literal(wForgottenReturn = wForgottenReturn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonWForgottenReturn]
   }
 }

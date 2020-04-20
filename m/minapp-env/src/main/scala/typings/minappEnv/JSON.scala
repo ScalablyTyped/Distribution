@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait JSON extends js.Object {
-  @JSName(scala.scalajs.js.Symbol.toStringTag)
+  @JSName(js.Symbol.toStringTag)
   val toStringTag: typings.minappEnv.minappEnvStrings.JSON = js.native
   /**
     * Converts a JavaScript Object Notation (JSON) string into an object.

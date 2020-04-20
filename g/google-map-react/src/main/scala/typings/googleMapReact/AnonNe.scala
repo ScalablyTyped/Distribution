@@ -15,7 +15,6 @@ object AnonNe {
   @scala.inline
   def apply(ne: Coords, sw: Coords): AnonNe = {
     val __obj = js.Dynamic.literal(ne = ne.asInstanceOf[js.Any], sw = sw.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNe]
   }
 }

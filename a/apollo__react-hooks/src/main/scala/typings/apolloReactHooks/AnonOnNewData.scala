@@ -16,7 +16,6 @@ object AnonOnNewData {
   @scala.inline
   def apply[TData, TVariables](context: ApolloContextValue, onNewData: () => Unit, options: QueryOptions[TData, TVariables]): AnonOnNewData[TData, TVariables] = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], onNewData = js.Any.fromFunction0(onNewData), options = options.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOnNewData[TData, TVariables]]
   }
 }

@@ -16,7 +16,6 @@ object ReceivedMessageFromWorkerEventDataType {
   @scala.inline
   def apply(message: String, sessionId: SessionID): ReceivedMessageFromWorkerEventDataType = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], sessionId = sessionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReceivedMessageFromWorkerEventDataType]
   }
 }

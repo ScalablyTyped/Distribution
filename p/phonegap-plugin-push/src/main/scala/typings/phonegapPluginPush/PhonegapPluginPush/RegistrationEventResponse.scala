@@ -15,7 +15,6 @@ object RegistrationEventResponse {
   @scala.inline
   def apply(registrationId: String): RegistrationEventResponse = {
     val __obj = js.Dynamic.literal(registrationId = registrationId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RegistrationEventResponse]
   }
 }

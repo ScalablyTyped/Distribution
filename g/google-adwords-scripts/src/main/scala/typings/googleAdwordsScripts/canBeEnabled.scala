@@ -16,7 +16,6 @@ object canBeEnabled {
   @scala.inline
   def apply(enable: () => Unit, isEnabled: () => Boolean, isPaused: () => Boolean, pause: () => Unit): canBeEnabled = {
     val __obj = js.Dynamic.literal(enable = js.Any.fromFunction0(enable), isEnabled = js.Any.fromFunction0(isEnabled), isPaused = js.Any.fromFunction0(isPaused), pause = js.Any.fromFunction0(pause))
-  
     __obj.asInstanceOf[canBeEnabled]
   }
 }

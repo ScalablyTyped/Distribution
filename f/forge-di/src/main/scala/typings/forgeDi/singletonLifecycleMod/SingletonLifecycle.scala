@@ -17,7 +17,6 @@ object SingletonLifecycle {
     resolve: (typings.forgeDi.resolverMod.default, typings.forgeDi.contextMod.default, Arguments) => js.Any
   ): SingletonLifecycle = {
     val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any], resolve = js.Any.fromFunction3(resolve))
-  
     __obj.asInstanceOf[SingletonLifecycle]
   }
 }

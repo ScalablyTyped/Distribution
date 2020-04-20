@@ -125,9 +125,9 @@ object mod extends js.Object {
   def lcm(x: Double, y: Double): Double = js.native
   def lines(str: String): js.Array[String] = js.native
   def listsToObj[A](keys: js.Array[Double | String]): js.Function1[/* values */ js.Array[A], StringDictionary[A]] = js.native
-  def listsToObj[A](keys: js.Array[String], values: js.Array[A]): StringDictionary[A] = js.native
+  def listsToObj[A](keys: js.Array[Double], values: js.Array[A]): NumberDictionary[A] = js.native
   @JSName("listsToObj")
-  def listsToObj_A_NumberDictionary[A](keys: js.Array[Double], values: js.Array[A]): NumberDictionary[A] = js.native
+  def listsToObj_A_StringDictionary[A](keys: js.Array[String], values: js.Array[A]): StringDictionary[A] = js.native
   def ln(x: Double): Double = js.native
   def map[A, B](f: js.Function1[/* x */ A, B]): js.Function1[/* xs */ js.Array[A], js.Array[B]] = js.native
   def map[A, B](f: js.Function1[/* x */ A, B], `object`: NumberDictionary[A]): NumberDictionary[B] = js.native
@@ -171,9 +171,9 @@ object mod extends js.Object {
     g: js.Function1[/* x */ A, B],
     x: A
   ): js.Function1[/* y */ A, C] = js.native
-  def pairsToObj[A](`object`: js.Array[js.Tuple2[String, A]]): StringDictionary[A] = js.native
+  def pairsToObj[A](`object`: js.Array[js.Tuple2[Double, A]]): NumberDictionary[A] = js.native
   @JSName("pairsToObj")
-  def pairsToObj_A_NumberDictionary[A](`object`: js.Array[js.Tuple2[Double, A]]): NumberDictionary[A] = js.native
+  def pairsToObj_A_StringDictionary[A](`object`: js.Array[js.Tuple2[String, A]]): StringDictionary[A] = js.native
   def partition[A](f: js.Function1[/* x */ A, Boolean]): js.Function1[/* xs */ js.Array[A], js.Tuple2[js.Array[A], js.Array[A]]] = js.native
   def partition[A](f: js.Function1[/* x */ A, Boolean], `object`: NumberDictionary[A]): js.Tuple2[NumberDictionary[A], NumberDictionary[A]] = js.native
   def partition[A](f: js.Function1[/* x */ A, Boolean], `object`: StringDictionary[A]): js.Tuple2[StringDictionary[A], StringDictionary[A]] = js.native

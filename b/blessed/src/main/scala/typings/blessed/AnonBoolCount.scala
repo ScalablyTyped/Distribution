@@ -26,7 +26,6 @@ object AnonBoolCount {
     strTableSize: Double
   ): AnonBoolCount = {
     val __obj = js.Dynamic.literal(boolCount = boolCount.asInstanceOf[js.Any], dataSize = dataSize.asInstanceOf[js.Any], headerSize = headerSize.asInstanceOf[js.Any], lastStrTableOffset = lastStrTableOffset.asInstanceOf[js.Any], numCount = numCount.asInstanceOf[js.Any], strCount = strCount.asInstanceOf[js.Any], strTableSize = strTableSize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBoolCount]
   }
 }

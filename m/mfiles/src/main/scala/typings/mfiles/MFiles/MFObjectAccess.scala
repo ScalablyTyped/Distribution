@@ -22,18 +22,16 @@ trait MFObjectAccess extends js.Object
 
 object MFObjectAccess {
   @scala.inline
-  def AttachObjects: `16` = this.cast(16)
+  def AttachObjects: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def ChangePermissions: `4` = this.cast(4)
+  def ChangePermissions: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def Delete: `8` = this.cast(8)
+  def Delete: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def Edit: `2` = this.cast(2)
+  def Edit: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def None: `0` = this.cast(0)
+  def None: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def Read: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Read: `1` = 1.asInstanceOf[`1`]
 }
 

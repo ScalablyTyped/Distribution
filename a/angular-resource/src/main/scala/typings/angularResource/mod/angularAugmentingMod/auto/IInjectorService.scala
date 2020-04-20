@@ -15,7 +15,6 @@ object IInjectorService {
   @scala.inline
   def apply(get: $resource => IResourceService): IInjectorService = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
-  
     __obj.asInstanceOf[IInjectorService]
   }
 }

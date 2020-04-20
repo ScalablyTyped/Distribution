@@ -13,7 +13,6 @@ object AnonRowKey {
   @scala.inline
   def apply(rowKey: String, values: js.Array[_]): AnonRowKey = {
     val __obj = js.Dynamic.literal(rowKey = rowKey.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRowKey]
   }
 }

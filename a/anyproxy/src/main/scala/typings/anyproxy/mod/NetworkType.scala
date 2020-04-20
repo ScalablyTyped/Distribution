@@ -12,10 +12,8 @@ trait NetworkType extends js.Object
 
 object NetworkType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def http: typings.anyproxy.anyproxyStrings.http = "http".asInstanceOf[typings.anyproxy.anyproxyStrings.http]
   @scala.inline
-  def http: typings.anyproxy.anyproxyStrings.http = this.cast("http")
-  @scala.inline
-  def https: typings.anyproxy.anyproxyStrings.https = this.cast("https")
+  def https: typings.anyproxy.anyproxyStrings.https = "https".asInstanceOf[typings.anyproxy.anyproxyStrings.https]
 }
 

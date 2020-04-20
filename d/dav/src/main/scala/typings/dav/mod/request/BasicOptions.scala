@@ -23,7 +23,6 @@ object BasicOptions {
   @scala.inline
   def apply(data: String, etag: String, method: String): BasicOptions = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], etag = etag.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BasicOptions]
   }
 }

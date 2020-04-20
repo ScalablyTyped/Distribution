@@ -16,7 +16,6 @@ object AnonLoaded {
   @scala.inline
   def apply(event: SyntheticEvent[HTMLVideoElement, Event_], loaded: Double): AnonLoaded = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], loaded = loaded.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLoaded]
   }
 }

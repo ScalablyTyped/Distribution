@@ -16,12 +16,10 @@ trait XlCategoryType extends js.Object
 
 object XlCategoryType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlAutomaticScale: `-4105` = -4105.asInstanceOf[`-4105`]
   @scala.inline
-  def xlAutomaticScale: `-4105` = this.cast(-4105)
+  def xlCategoryScale: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlCategoryScale: `2` = this.cast(2)
-  @scala.inline
-  def xlTimeScale: `3` = this.cast(3)
+  def xlTimeScale: `3` = 3.asInstanceOf[`3`]
 }
 

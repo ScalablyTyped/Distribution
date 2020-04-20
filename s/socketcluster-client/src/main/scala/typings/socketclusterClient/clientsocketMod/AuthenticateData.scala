@@ -13,7 +13,6 @@ object AuthenticateData {
   @scala.inline
   def apply(authToken: js.Object, signedAuthToken: String): AuthenticateData = {
     val __obj = js.Dynamic.literal(authToken = authToken.asInstanceOf[js.Any], signedAuthToken = signedAuthToken.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AuthenticateData]
   }
 }

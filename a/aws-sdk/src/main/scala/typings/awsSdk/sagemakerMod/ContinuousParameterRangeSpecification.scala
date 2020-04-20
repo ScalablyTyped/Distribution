@@ -20,7 +20,6 @@ object ContinuousParameterRangeSpecification {
   @scala.inline
   def apply(MaxValue: ParameterValue, MinValue: ParameterValue): ContinuousParameterRangeSpecification = {
     val __obj = js.Dynamic.literal(MaxValue = MaxValue.asInstanceOf[js.Any], MinValue = MinValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ContinuousParameterRangeSpecification]
   }
 }

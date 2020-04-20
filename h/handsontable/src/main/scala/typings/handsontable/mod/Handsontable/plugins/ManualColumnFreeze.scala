@@ -37,7 +37,6 @@ object ManualColumnFreeze {
     updatePlugin: () => Unit
   ): ManualColumnFreeze = {
     val __obj = js.Dynamic.literal(addHook = js.Any.fromFunction2(addHook), callOnPluginsReady = js.Any.fromFunction1(callOnPluginsReady), clearHooks = js.Any.fromFunction0(clearHooks), destroy = js.Any.fromFunction0(destroy), disablePlugin = js.Any.fromFunction0(disablePlugin), enablePlugin = js.Any.fromFunction0(enablePlugin), enabled = enabled.asInstanceOf[js.Any], freezeColumn = js.Any.fromFunction1(freezeColumn), frozenColumnsBasePositions = frozenColumnsBasePositions.asInstanceOf[js.Any], hot = hot.asInstanceOf[js.Any], init = js.Any.fromFunction0(init), initialized = initialized.asInstanceOf[js.Any], isPluginsReady = isPluginsReady.asInstanceOf[js.Any], manualColumnMovePlugin = manualColumnMovePlugin.asInstanceOf[js.Any], pluginName = pluginName.asInstanceOf[js.Any], pluginsInitializedCallback = pluginsInitializedCallback.asInstanceOf[js.Any], removeHooks = js.Any.fromFunction1(removeHooks), t = t.asInstanceOf[js.Any], unfreezeColumn = js.Any.fromFunction1(unfreezeColumn), updatePlugin = js.Any.fromFunction0(updatePlugin))
-  
     __obj.asInstanceOf[ManualColumnFreeze]
   }
 }

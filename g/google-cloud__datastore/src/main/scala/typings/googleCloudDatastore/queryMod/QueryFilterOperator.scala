@@ -15,16 +15,14 @@ trait QueryFilterOperator extends js.Object
 
 object QueryFilterOperator {
   @scala.inline
-  def Equalssign: typings.googleCloudDatastore.googleCloudDatastoreStrings.Equalssign = this.cast("=")
+  def Equalssign: typings.googleCloudDatastore.googleCloudDatastoreStrings.Equalssign = "=".asInstanceOf[typings.googleCloudDatastore.googleCloudDatastoreStrings.Equalssign]
   @scala.inline
-  def Greaterthansign: typings.googleCloudDatastore.googleCloudDatastoreStrings.Greaterthansign = this.cast(">")
+  def Greaterthansign: typings.googleCloudDatastore.googleCloudDatastoreStrings.Greaterthansign = ">".asInstanceOf[typings.googleCloudDatastore.googleCloudDatastoreStrings.Greaterthansign]
   @scala.inline
-  def GreaterthansignEqualssign: typings.googleCloudDatastore.googleCloudDatastoreStrings.GreaterthansignEqualssign = this.cast(">=")
+  def GreaterthansignEqualssign: typings.googleCloudDatastore.googleCloudDatastoreStrings.GreaterthansignEqualssign = ">=".asInstanceOf[typings.googleCloudDatastore.googleCloudDatastoreStrings.GreaterthansignEqualssign]
   @scala.inline
-  def Lessthansign: typings.googleCloudDatastore.googleCloudDatastoreStrings.Lessthansign = this.cast("<")
+  def Lessthansign: typings.googleCloudDatastore.googleCloudDatastoreStrings.Lessthansign = "<".asInstanceOf[typings.googleCloudDatastore.googleCloudDatastoreStrings.Lessthansign]
   @scala.inline
-  def LessthansignEqualssign: typings.googleCloudDatastore.googleCloudDatastoreStrings.LessthansignEqualssign = this.cast("<=")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def LessthansignEqualssign: typings.googleCloudDatastore.googleCloudDatastoreStrings.LessthansignEqualssign = "<=".asInstanceOf[typings.googleCloudDatastore.googleCloudDatastoreStrings.LessthansignEqualssign]
 }
 

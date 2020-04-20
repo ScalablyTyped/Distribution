@@ -13,12 +13,10 @@ trait Utf8AsciiLatin1Encoding extends js.Object
 
 object Utf8AsciiLatin1Encoding {
   @scala.inline
-  def ascii: typings.node.nodeStrings.ascii = this.cast("ascii")
+  def ascii: typings.node.nodeStrings.ascii = "ascii".asInstanceOf[typings.node.nodeStrings.ascii]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def latin1: typings.node.nodeStrings.latin1 = "latin1".asInstanceOf[typings.node.nodeStrings.latin1]
   @scala.inline
-  def latin1: typings.node.nodeStrings.latin1 = this.cast("latin1")
-  @scala.inline
-  def utf8: typings.node.nodeStrings.utf8 = this.cast("utf8")
+  def utf8: typings.node.nodeStrings.utf8 = "utf8".asInstanceOf[typings.node.nodeStrings.utf8]
 }
 

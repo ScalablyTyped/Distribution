@@ -13,12 +13,10 @@ trait ExtrapolateType extends js.Object
 
 object ExtrapolateType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def clamp: typings.reactNative.reactNativeStrings.clamp = "clamp".asInstanceOf[typings.reactNative.reactNativeStrings.clamp]
   @scala.inline
-  def clamp: typings.reactNative.reactNativeStrings.clamp = this.cast("clamp")
+  def extend: typings.reactNative.reactNativeStrings.extend = "extend".asInstanceOf[typings.reactNative.reactNativeStrings.extend]
   @scala.inline
-  def extend: typings.reactNative.reactNativeStrings.extend = this.cast("extend")
-  @scala.inline
-  def identity: typings.reactNative.reactNativeStrings.identity = this.cast("identity")
+  def identity: typings.reactNative.reactNativeStrings.identity = "identity".asInstanceOf[typings.reactNative.reactNativeStrings.identity]
 }
 

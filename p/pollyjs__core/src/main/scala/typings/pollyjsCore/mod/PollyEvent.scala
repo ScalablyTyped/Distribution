@@ -13,12 +13,10 @@ trait PollyEvent extends js.Object
 
 object PollyEvent {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def create: typings.pollyjsCore.pollyjsCoreStrings.create = "create".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.create]
   @scala.inline
-  def create: typings.pollyjsCore.pollyjsCoreStrings.create = this.cast("create")
+  def register: typings.pollyjsCore.pollyjsCoreStrings.register = "register".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.register]
   @scala.inline
-  def register: typings.pollyjsCore.pollyjsCoreStrings.register = this.cast("register")
-  @scala.inline
-  def stop: typings.pollyjsCore.pollyjsCoreStrings.stop = this.cast("stop")
+  def stop: typings.pollyjsCore.pollyjsCoreStrings.stop = "stop".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.stop]
 }
 

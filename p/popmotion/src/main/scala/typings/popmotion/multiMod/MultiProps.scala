@@ -25,7 +25,6 @@ object MultiProps {
     startActions: (A, ActionStarter[I]) => T
   ): MultiProps[A, T, V, I] = {
     val __obj = js.Dynamic.literal(getCount = js.Any.fromFunction1(getCount), getFirst = js.Any.fromFunction1(getFirst), getOutput = js.Any.fromFunction0(getOutput), mapApi = js.Any.fromFunction2(mapApi), setProp = js.Any.fromFunction3(setProp), startActions = js.Any.fromFunction2(startActions))
-  
     __obj.asInstanceOf[MultiProps[A, T, V, I]]
   }
 }

@@ -49,7 +49,6 @@ object Context {
     property: String
   ): Context = {
     val __obj = js.Dynamic.literal(accesType = accesType.asInstanceOf[js.Any], accessToken = accessToken.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], model = js.Any.fromFunction0(model), modelId = modelId.asInstanceOf[js.Any], modelName = modelName.asInstanceOf[js.Any], principals = principals.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Context]
   }
 }

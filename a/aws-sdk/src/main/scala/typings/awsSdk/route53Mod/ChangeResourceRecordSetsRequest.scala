@@ -20,7 +20,6 @@ object ChangeResourceRecordSetsRequest {
   @scala.inline
   def apply(ChangeBatch: ChangeBatch, HostedZoneId: ResourceId): ChangeResourceRecordSetsRequest = {
     val __obj = js.Dynamic.literal(ChangeBatch = ChangeBatch.asInstanceOf[js.Any], HostedZoneId = HostedZoneId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChangeResourceRecordSetsRequest]
   }
 }

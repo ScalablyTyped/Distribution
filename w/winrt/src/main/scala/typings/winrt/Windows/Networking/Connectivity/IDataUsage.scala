@@ -13,7 +13,6 @@ object IDataUsage {
   @scala.inline
   def apply(bytesReceived: Double, bytesSent: Double): IDataUsage = {
     val __obj = js.Dynamic.literal(bytesReceived = bytesReceived.asInstanceOf[js.Any], bytesSent = bytesSent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDataUsage]
   }
 }

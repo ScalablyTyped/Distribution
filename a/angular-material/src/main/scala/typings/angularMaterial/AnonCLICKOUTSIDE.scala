@@ -13,7 +13,6 @@ object AnonCLICKOUTSIDE {
   @scala.inline
   def apply(CLICK_OUTSIDE: String, ESCAPE: String): AnonCLICKOUTSIDE = {
     val __obj = js.Dynamic.literal(CLICK_OUTSIDE = CLICK_OUTSIDE.asInstanceOf[js.Any], ESCAPE = ESCAPE.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCLICKOUTSIDE]
   }
 }

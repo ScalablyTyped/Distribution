@@ -13,12 +13,10 @@ trait WebGLPowerPreference extends js.Object
 
 object WebGLPowerPreference {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def default: typings.std.stdStrings.default = "default".asInstanceOf[typings.std.stdStrings.default]
   @scala.inline
-  def default: typings.std.stdStrings.default = this.cast("default")
+  def `high-performance`: typings.std.stdStrings.`high-performance` = "high-performance".asInstanceOf[typings.std.stdStrings.`high-performance`]
   @scala.inline
-  def `high-performance`: typings.std.stdStrings.`high-performance` = this.cast("high-performance")
-  @scala.inline
-  def `low-power`: typings.std.stdStrings.`low-power` = this.cast("low-power")
+  def `low-power`: typings.std.stdStrings.`low-power` = "low-power".asInstanceOf[typings.std.stdStrings.`low-power`]
 }
 

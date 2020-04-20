@@ -14,7 +14,6 @@ object FormNameProps {
   @scala.inline
   def apply(children: AnonForm => ReactNode): FormNameProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-  
     __obj.asInstanceOf[FormNameProps]
   }
 }

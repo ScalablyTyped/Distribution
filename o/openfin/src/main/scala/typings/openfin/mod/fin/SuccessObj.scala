@@ -12,7 +12,6 @@ object SuccessObj {
   @scala.inline
   def apply(httpResponseCode: Double): SuccessObj = {
     val __obj = js.Dynamic.literal(httpResponseCode = httpResponseCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SuccessObj]
   }
 }

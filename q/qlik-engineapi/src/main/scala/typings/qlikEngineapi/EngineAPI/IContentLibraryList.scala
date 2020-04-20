@@ -18,7 +18,6 @@ object IContentLibraryList {
   @scala.inline
   def apply(qItems: IContentLibraryListItem): IContentLibraryList = {
     val __obj = js.Dynamic.literal(qItems = qItems.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IContentLibraryList]
   }
 }

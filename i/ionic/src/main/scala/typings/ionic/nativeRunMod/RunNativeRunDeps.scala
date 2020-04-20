@@ -17,7 +17,6 @@ object RunNativeRunDeps {
   @scala.inline
   def apply(config: IConfig, log: ILogger, shell: IShell): RunNativeRunDeps = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], shell = shell.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RunNativeRunDeps]
   }
 }

@@ -33,7 +33,6 @@ object AssociateDeviceWithPlacementRequest {
     projectName: ProjectName
   ): AssociateDeviceWithPlacementRequest = {
     val __obj = js.Dynamic.literal(deviceId = deviceId.asInstanceOf[js.Any], deviceTemplateName = deviceTemplateName.asInstanceOf[js.Any], placementName = placementName.asInstanceOf[js.Any], projectName = projectName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssociateDeviceWithPlacementRequest]
   }
 }

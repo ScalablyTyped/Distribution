@@ -14,14 +14,12 @@ trait ImpactValue extends js.Object
 
 object ImpactValue {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def critical: typings.axeCore.axeCoreStrings.critical = "critical".asInstanceOf[typings.axeCore.axeCoreStrings.critical]
   @scala.inline
-  def critical: typings.axeCore.axeCoreStrings.critical = this.cast("critical")
+  def minor: typings.axeCore.axeCoreStrings.minor = "minor".asInstanceOf[typings.axeCore.axeCoreStrings.minor]
   @scala.inline
-  def minor: typings.axeCore.axeCoreStrings.minor = this.cast("minor")
+  def moderate: typings.axeCore.axeCoreStrings.moderate = "moderate".asInstanceOf[typings.axeCore.axeCoreStrings.moderate]
   @scala.inline
-  def moderate: typings.axeCore.axeCoreStrings.moderate = this.cast("moderate")
-  @scala.inline
-  def serious: typings.axeCore.axeCoreStrings.serious = this.cast("serious")
+  def serious: typings.axeCore.axeCoreStrings.serious = "serious".asInstanceOf[typings.axeCore.axeCoreStrings.serious]
 }
 

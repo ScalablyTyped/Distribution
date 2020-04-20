@@ -12,7 +12,6 @@ object AnonBinaryBoolean {
   @scala.inline
   def apply(binary: Boolean): AnonBinaryBoolean = {
     val __obj = js.Dynamic.literal(binary = binary.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBinaryBoolean]
   }
 }

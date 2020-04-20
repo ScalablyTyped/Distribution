@@ -19,24 +19,22 @@ trait ShortcutNameType extends js.Object
 
 object ShortcutNameType {
   @scala.inline
-  def album: typings.jsmediatags.jsmediatagsStrings.album = this.cast("album")
+  def album: typings.jsmediatags.jsmediatagsStrings.album = "album".asInstanceOf[typings.jsmediatags.jsmediatagsStrings.album]
   @scala.inline
-  def artist: typings.jsmediatags.jsmediatagsStrings.artist = this.cast("artist")
+  def artist: typings.jsmediatags.jsmediatagsStrings.artist = "artist".asInstanceOf[typings.jsmediatags.jsmediatagsStrings.artist]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def comment: typings.jsmediatags.jsmediatagsStrings.comment = "comment".asInstanceOf[typings.jsmediatags.jsmediatagsStrings.comment]
   @scala.inline
-  def comment: typings.jsmediatags.jsmediatagsStrings.comment = this.cast("comment")
+  def genre: typings.jsmediatags.jsmediatagsStrings.genre = "genre".asInstanceOf[typings.jsmediatags.jsmediatagsStrings.genre]
   @scala.inline
-  def genre: typings.jsmediatags.jsmediatagsStrings.genre = this.cast("genre")
+  def lyrics: typings.jsmediatags.jsmediatagsStrings.lyrics = "lyrics".asInstanceOf[typings.jsmediatags.jsmediatagsStrings.lyrics]
   @scala.inline
-  def lyrics: typings.jsmediatags.jsmediatagsStrings.lyrics = this.cast("lyrics")
+  def picture: typings.jsmediatags.jsmediatagsStrings.picture = "picture".asInstanceOf[typings.jsmediatags.jsmediatagsStrings.picture]
   @scala.inline
-  def picture: typings.jsmediatags.jsmediatagsStrings.picture = this.cast("picture")
+  def title: typings.jsmediatags.jsmediatagsStrings.title = "title".asInstanceOf[typings.jsmediatags.jsmediatagsStrings.title]
   @scala.inline
-  def title: typings.jsmediatags.jsmediatagsStrings.title = this.cast("title")
+  def track: typings.jsmediatags.jsmediatagsStrings.track = "track".asInstanceOf[typings.jsmediatags.jsmediatagsStrings.track]
   @scala.inline
-  def track: typings.jsmediatags.jsmediatagsStrings.track = this.cast("track")
-  @scala.inline
-  def year: typings.jsmediatags.jsmediatagsStrings.year = this.cast("year")
+  def year: typings.jsmediatags.jsmediatagsStrings.year = "year".asInstanceOf[typings.jsmediatags.jsmediatagsStrings.year]
 }
 

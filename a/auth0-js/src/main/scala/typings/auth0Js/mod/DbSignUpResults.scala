@@ -15,7 +15,6 @@ object DbSignUpResults {
   @scala.inline
   def apply(email: String, emailVerified: Boolean): DbSignUpResults = {
     val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], emailVerified = emailVerified.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DbSignUpResults]
   }
 }

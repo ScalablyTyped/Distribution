@@ -23,7 +23,6 @@ object DataRegistry {
     subscribe: /* callback */ js.Function0[Unit] => js.Function0[Unit]
   ): DataRegistry = {
     val __obj = js.Dynamic.literal(dispatch = js.Any.fromFunction1(dispatch), registerGenericStore = js.Any.fromFunction2(registerGenericStore), registerStore = registerStore.asInstanceOf[js.Any], select = js.Any.fromFunction1(select), subscribe = js.Any.fromFunction1(subscribe))
-  
     __obj.asInstanceOf[DataRegistry]
   }
 }

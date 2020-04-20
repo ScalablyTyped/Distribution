@@ -42,7 +42,6 @@ object INxDerivedField {
   @scala.inline
   def apply(qExpr: String, qId: String, qMethod: String, qName: String, qTags: js.Array[String]): INxDerivedField = {
     val __obj = js.Dynamic.literal(qExpr = qExpr.asInstanceOf[js.Any], qId = qId.asInstanceOf[js.Any], qMethod = qMethod.asInstanceOf[js.Any], qName = qName.asInstanceOf[js.Any], qTags = qTags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INxDerivedField]
   }
 }

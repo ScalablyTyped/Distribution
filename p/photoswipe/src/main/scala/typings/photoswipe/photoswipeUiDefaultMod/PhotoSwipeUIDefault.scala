@@ -19,7 +19,6 @@ object PhotoSwipeUIDefault {
   @scala.inline
   def apply(init: () => Unit, update: () => Unit): PhotoSwipeUIDefault = {
     val __obj = js.Dynamic.literal(init = js.Any.fromFunction0(init), update = js.Any.fromFunction0(update))
-  
     __obj.asInstanceOf[PhotoSwipeUIDefault]
   }
 }

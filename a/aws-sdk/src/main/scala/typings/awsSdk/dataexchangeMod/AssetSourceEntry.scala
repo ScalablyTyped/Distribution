@@ -20,7 +20,6 @@ object AssetSourceEntry {
   @scala.inline
   def apply(Bucket: string, Key: string): AssetSourceEntry = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssetSourceEntry]
   }
 }

@@ -16,7 +16,6 @@ object MappingMethods {
   @scala.inline
   def apply(getRootName: ASTPath[_] => String): MappingMethods = {
     val __obj = js.Dynamic.literal(getRootName = js.Any.fromFunction1(getRootName))
-  
     __obj.asInstanceOf[MappingMethods]
   }
 }

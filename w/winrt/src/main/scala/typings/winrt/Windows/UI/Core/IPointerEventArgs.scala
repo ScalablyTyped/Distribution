@@ -22,7 +22,6 @@ object IPointerEventArgs {
     keyModifiers: VirtualKeyModifiers
   ): IPointerEventArgs = {
     val __obj = js.Dynamic.literal(currentPoint = currentPoint.asInstanceOf[js.Any], getIntermediatePoints = js.Any.fromFunction0(getIntermediatePoints), handled = handled.asInstanceOf[js.Any], keyModifiers = keyModifiers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPointerEventArgs]
   }
 }

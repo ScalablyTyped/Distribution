@@ -27,7 +27,6 @@ object IFieldDefEx {
   @scala.inline
   def apply(qName: String, qType: FieldDefExType): IFieldDefEx = {
     val __obj = js.Dynamic.literal(qName = qName.asInstanceOf[js.Any], qType = qType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IFieldDefEx]
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait reactBeforeunloadProps {
   @scala.inline
-  def BeforeunloadProps: AnonChildren.type = typings.reactBeforeunload.AnonChildren
+  def BeforeunloadProps: AnonChildren.type = AnonChildren
   type BeforeunloadProps = AnonChildren
 }
 

@@ -15,7 +15,6 @@ object AnonECDSASIGN {
   @scala.inline
   def apply(ECDSA_SIGN: ecdsaSign, RSA_SIGN: rsaSign): AnonECDSASIGN = {
     val __obj = js.Dynamic.literal(ECDSA_SIGN = ECDSA_SIGN.asInstanceOf[js.Any], RSA_SIGN = RSA_SIGN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonECDSASIGN]
   }
 }

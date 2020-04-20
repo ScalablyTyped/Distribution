@@ -52,7 +52,6 @@ object SeriesLegendData {
     yHTML: String
   ): SeriesLegendData = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], dashHTML = dashHTML.asInstanceOf[js.Any], isHighlighted = isHighlighted.asInstanceOf[js.Any], isVisible = isVisible.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], labelHTML = labelHTML.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], yHTML = yHTML.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SeriesLegendData]
   }
 }

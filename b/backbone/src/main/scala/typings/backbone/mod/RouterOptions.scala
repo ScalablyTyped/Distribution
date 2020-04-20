@@ -12,7 +12,6 @@ object RouterOptions {
   @scala.inline
   def apply(routes: js.Any): RouterOptions = {
     val __obj = js.Dynamic.literal(routes = routes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RouterOptions]
   }
 }

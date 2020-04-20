@@ -19,7 +19,6 @@ object Entry {
   @scala.inline
   def apply(mapType: MapType, name: String): Entry = {
     val __obj = js.Dynamic.literal(mapType = mapType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Entry]
   }
 }

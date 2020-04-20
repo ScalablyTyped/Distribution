@@ -2,8 +2,6 @@ package typings.titanium.Titanium.Android
 
 import typings.titanium.Titanium.Blob
 import typings.titanium.Titanium.Proxy
-import typings.titanium.Titanium.UI.TabGroup
-import typings.titanium.Titanium.UI.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,182 +9,140 @@ import scala.scalajs.js.annotation._
 /**
 		 * Message objects passed between Android application components.
 		 */
-trait Intent extends Proxy {
+@JSGlobal("Titanium.Android.Intent")
+@js.native
+class Intent () extends Proxy {
   /**
   			 * The action associated with this intent.
   			 */
-  var action: String
+  var action: String = js.native
   /**
   			 * The Java class name of the activity associated with this intent
   			 * ([packageName](Titanium.Android.Intent.packageName) must also be set).
   			 */
-  var className: String
+  var className: String = js.native
   /**
   			 * The Intent's Data URI.
   			 */
-  val data: String
+  val data: String = js.native
   /**
   			 * Intent flags.
   			 */
-  var flags: Double
+  var flags: Double = js.native
   /**
   			 * The fully-qualified Java package name of the activity.
   			 */
-  var packageName: String
+  var packageName: String = js.native
   /**
   			 * The MIME type for this Intent.
   			 */
-  val `type`: String
+  val `type`: String = js.native
   /**
   			 * The URL to a Titanium JavaScript Activity.
   			 */
-  var url: String
+  var url: String = js.native
   /**
   			 * Adds a category to this Intent.
   			 */
-  def addCategory(name: String): Unit
+  def addCategory(name: String): Unit = js.native
   /**
   			 * Adds to the existing flags on the `Intent`.
   			 */
-  def addFlags(flags: Double): Unit
+  def addFlags(flags: Double): Unit = js.native
   /**
   			 * Gets the value of the <Titanium.Android.Intent.action> property.
+  			 * @deprecated Access <Titanium.Android.Intent.action> instead.
   			 */
-  def getAction(): String
+  def getAction(): String = js.native
   /**
   			 * Get a <Titanium.Blob> property from this `Intent`.
   			 */
-  def getBlobExtra(name: String): Blob
+  def getBlobExtra(name: String): Blob = js.native
   /**
   			 * Get a boolean property from this Intent.
   			 */
-  def getBooleanExtra(name: String, defaultValue: Boolean): Boolean
+  def getBooleanExtra(name: String, defaultValue: Boolean): Boolean = js.native
   /**
   			 * Gets the value of the <Titanium.Android.Intent.className> property.
+  			 * @deprecated Access <Titanium.Android.Intent.className> instead.
   			 */
-  def getClassName(): String
+  def getClassName(): String = js.native
   /**
   			 * Get the Data URI from this `Intent`.
   			 */
-  def getData(): String
+  def getData(): String = js.native
   /**
   			 * Get a double property from this `Intent`.
   			 */
-  def getDoubleExtra(name: String, defaultValue: Double): Double
+  def getDoubleExtra(name: String, defaultValue: Double): Double = js.native
   /**
   			 * Gets the value of the <Titanium.Android.Intent.flags> property.
+  			 * @deprecated Access <Titanium.Android.Intent.flags> instead.
   			 */
-  def getFlags(): Double
+  def getFlags(): Double = js.native
   /**
   			 * Get an integer property from this `Intent`.
   			 */
-  def getIntExtra(name: String, defaultValue: Double): Double
+  def getIntExtra(name: String, defaultValue: Double): Double = js.native
   /**
   			 * Get a long property from this `Intent`.
   			 */
-  def getLongExtra(name: String, defaultValue: Double): Double
+  def getLongExtra(name: String, defaultValue: Double): Double = js.native
   /**
   			 * Gets the value of the <Titanium.Android.Intent.packageName> property.
+  			 * @deprecated Access <Titanium.Android.Intent.packageName> instead.
   			 */
-  def getPackageName(): String
+  def getPackageName(): String = js.native
   /**
   			 * Get a string property from this `Intent`.
   			 */
-  def getStringExtra(name: String): String
+  def getStringExtra(name: String): String = js.native
   /**
   			 * Gets the value of the <Titanium.Android.Intent.type> property.
+  			 * @deprecated Access <Titanium.Android.Intent.type> instead.
   			 */
-  def getType(): String
+  def getType(): String = js.native
   /**
   			 * Gets the value of the <Titanium.Android.Intent.url> property.
+  			 * @deprecated Access <Titanium.Android.Intent.url> instead.
   			 */
-  def getUrl(): String
+  def getUrl(): String = js.native
   /**
   			 * Returns `true` if this `Intent` has the specified property.
   			 */
-  def hasExtra(name: String): Boolean
+  def hasExtra(name: String): Boolean = js.native
   /**
   			 * Puts an extra property on this `Intent`.
   			 */
-  def putExtra(name: String, value: js.Any): Unit
+  def putExtra(name: String, value: js.Any): Unit = js.native
   /**
   			 * Put a URI property on this `Intent` (useful for <Titanium.Android.EXTRA_STREAM>).
   			 */
-  def putExtraUri(name: String, value: js.Any): Unit
+  def putExtraUri(name: String, value: js.Any): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.Intent.action> property.
+  			 * @deprecated Set the value using <Titanium.Android.Intent.action> instead.
   			 */
-  def setAction(action: String): Unit
+  def setAction(action: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.Intent.className> property.
+  			 * @deprecated Set the value using <Titanium.Android.Intent.className> instead.
   			 */
-  def setClassName(className: String): Unit
+  def setClassName(className: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.Intent.flags> property.
+  			 * @deprecated Set the value using <Titanium.Android.Intent.flags> instead.
   			 */
-  def setFlags(flags: Double): Unit
+  def setFlags(flags: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.Intent.packageName> property.
+  			 * @deprecated Set the value using <Titanium.Android.Intent.packageName> instead.
   			 */
-  def setPackageName(packageName: String): Unit
+  def setPackageName(packageName: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.Intent.url> property.
+  			 * @deprecated Set the value using <Titanium.Android.Intent.url> instead.
   			 */
-  def setUrl(url: String): Unit
-}
-
-object Intent {
-  @scala.inline
-  def apply(
-    action: String,
-    addCategory: String => Unit,
-    addEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    addFlags: Double => Unit,
-    apiName: String,
-    applyProperties: js.Any => Unit,
-    bubbleParent: Boolean,
-    className: String,
-    data: String,
-    fireEvent: (String, js.Any) => Unit,
-    flags: Double,
-    getAction: () => String,
-    getApiName: () => String,
-    getBlobExtra: String => Blob,
-    getBooleanExtra: (String, Boolean) => Boolean,
-    getBubbleParent: () => Boolean,
-    getClassName: () => String,
-    getData: () => String,
-    getDoubleExtra: (String, Double) => Double,
-    getFlags: () => Double,
-    getIntExtra: (String, Double) => Double,
-    getLongExtra: (String, Double) => Double,
-    getPackageName: () => String,
-    getStringExtra: String => String,
-    getType: () => String,
-    getUrl: () => String,
-    hasExtra: String => Boolean,
-    packageName: String,
-    putExtra: (String, js.Any) => Unit,
-    putExtraUri: (String, js.Any) => Unit,
-    removeEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    setAction: String => Unit,
-    setBubbleParent: Boolean => Unit,
-    setClassName: String => Unit,
-    setFlags: Double => Unit,
-    setPackageName: String => Unit,
-    setUrl: String => Unit,
-    `type`: String,
-    url: String,
-    getLifecycleContainer: () => Window | TabGroup = null,
-    lifecycleContainer: Window | TabGroup = null,
-    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ Window, Unit]) with (js.Function1[/* lifecycleContainer */ TabGroup, Unit]) = null
-  ): Intent = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], addCategory = js.Any.fromFunction1(addCategory), addEventListener = js.Any.fromFunction2(addEventListener), addFlags = js.Any.fromFunction1(addFlags), apiName = apiName.asInstanceOf[js.Any], applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], fireEvent = js.Any.fromFunction2(fireEvent), flags = flags.asInstanceOf[js.Any], getAction = js.Any.fromFunction0(getAction), getApiName = js.Any.fromFunction0(getApiName), getBlobExtra = js.Any.fromFunction1(getBlobExtra), getBooleanExtra = js.Any.fromFunction2(getBooleanExtra), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getClassName = js.Any.fromFunction0(getClassName), getData = js.Any.fromFunction0(getData), getDoubleExtra = js.Any.fromFunction2(getDoubleExtra), getFlags = js.Any.fromFunction0(getFlags), getIntExtra = js.Any.fromFunction2(getIntExtra), getLongExtra = js.Any.fromFunction2(getLongExtra), getPackageName = js.Any.fromFunction0(getPackageName), getStringExtra = js.Any.fromFunction1(getStringExtra), getType = js.Any.fromFunction0(getType), getUrl = js.Any.fromFunction0(getUrl), hasExtra = js.Any.fromFunction1(hasExtra), packageName = packageName.asInstanceOf[js.Any], putExtra = js.Any.fromFunction2(putExtra), putExtraUri = js.Any.fromFunction2(putExtraUri), removeEventListener = js.Any.fromFunction2(removeEventListener), setAction = js.Any.fromFunction1(setAction), setBubbleParent = js.Any.fromFunction1(setBubbleParent), setClassName = js.Any.fromFunction1(setClassName), setFlags = js.Any.fromFunction1(setFlags), setPackageName = js.Any.fromFunction1(setPackageName), setUrl = js.Any.fromFunction1(setUrl), url = url.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
-    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
-    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Intent]
-  }
+  def setUrl(url: String): Unit = js.native
 }
 

@@ -22,7 +22,6 @@ object APIError {
   @scala.inline
   def apply(code: ErrorCodeType, message: String): APIError = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[APIError]
   }
 }

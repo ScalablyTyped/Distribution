@@ -46,7 +46,6 @@ object ShippingsettingsResource {
     update: AnonOauthtoken => Request_[ShippingSettings]
   ): ShippingsettingsResource = {
     val __obj = js.Dynamic.literal(custombatch = js.Any.fromFunction1(custombatch), get = js.Any.fromFunction1(get), getsupportedcarriers = js.Any.fromFunction1(getsupportedcarriers), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[ShippingsettingsResource]
   }
 }

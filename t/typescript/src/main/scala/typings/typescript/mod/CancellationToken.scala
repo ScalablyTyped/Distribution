@@ -14,7 +14,6 @@ object CancellationToken {
   @scala.inline
   def apply(isCancellationRequested: () => Boolean, throwIfCancellationRequested: () => Unit): CancellationToken = {
     val __obj = js.Dynamic.literal(isCancellationRequested = js.Any.fromFunction0(isCancellationRequested), throwIfCancellationRequested = js.Any.fromFunction0(throwIfCancellationRequested))
-  
     __obj.asInstanceOf[CancellationToken]
   }
 }

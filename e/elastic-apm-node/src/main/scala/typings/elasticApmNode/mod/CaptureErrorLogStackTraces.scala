@@ -13,12 +13,10 @@ trait CaptureErrorLogStackTraces extends js.Object
 
 object CaptureErrorLogStackTraces {
   @scala.inline
-  def always: typings.elasticApmNode.elasticApmNodeStrings.always = this.cast("always")
+  def always: typings.elasticApmNode.elasticApmNodeStrings.always = "always".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.always]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def messages: typings.elasticApmNode.elasticApmNodeStrings.messages = "messages".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.messages]
   @scala.inline
-  def messages: typings.elasticApmNode.elasticApmNodeStrings.messages = this.cast("messages")
-  @scala.inline
-  def never: typings.elasticApmNode.elasticApmNodeStrings.never = this.cast("never")
+  def never: typings.elasticApmNode.elasticApmNodeStrings.never = "never".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.never]
 }
 

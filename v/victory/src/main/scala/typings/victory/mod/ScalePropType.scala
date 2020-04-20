@@ -17,14 +17,12 @@ trait ScalePropType extends js.Object
 
 object ScalePropType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def linear: typings.victory.victoryStrings.linear = "linear".asInstanceOf[typings.victory.victoryStrings.linear]
   @scala.inline
-  def linear: typings.victory.victoryStrings.linear = this.cast("linear")
+  def log: typings.victory.victoryStrings.log = "log".asInstanceOf[typings.victory.victoryStrings.log]
   @scala.inline
-  def log: typings.victory.victoryStrings.log = this.cast("log")
+  def sqrt: typings.victory.victoryStrings.sqrt = "sqrt".asInstanceOf[typings.victory.victoryStrings.sqrt]
   @scala.inline
-  def sqrt: typings.victory.victoryStrings.sqrt = this.cast("sqrt")
-  @scala.inline
-  def time: typings.victory.victoryStrings.time = this.cast("time")
+  def time: typings.victory.victoryStrings.time = "time".asInstanceOf[typings.victory.victoryStrings.time]
 }
 

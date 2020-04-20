@@ -45,18 +45,18 @@ object LineCol extends js.Object {
     /**
       * The current column of the model.
       */
-    def column(): Double = js.native
+    def column: Double = js.native
     def editor(): js.Any = js.native
     def editor(editor: IEditor): js.Any = js.native
     /**
       * The current editor of the model.
       */
     @JSName("editor")
-    def editor_Union(): IEditor | Null = js.native
+    def editor_Union: IEditor | Null = js.native
     /**
       * The current line of the model.
       */
-    def line(): Double = js.native
+    def line: Double = js.native
   }
   
 }

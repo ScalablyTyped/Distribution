@@ -20,7 +20,6 @@ object AnonLevel {
   @scala.inline
   def apply(level: debug | log | info | warn | error, mode: none | test): AnonLevel = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLevel]
   }
 }

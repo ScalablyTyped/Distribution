@@ -84,11 +84,11 @@ object nightwatchStrings {
   @scala.inline
   def browser: browser = "browser".asInstanceOf[browser]
   @scala.inline
-  def `class name`: `class name` = "class name".asInstanceOf[`class name`]
+  def `class name`: `class name` = ("class name").asInstanceOf[`class name`]
   @scala.inline
   def client: client = "client".asInstanceOf[client]
   @scala.inline
-  def `css selector`: `css selector` = "css selector".asInstanceOf[`css selector`]
+  def `css selector`: `css selector` = ("css selector").asInstanceOf[`css selector`]
   @scala.inline
   def driver: driver = "driver".asInstanceOf[driver]
   @scala.inline
@@ -96,19 +96,19 @@ object nightwatchStrings {
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   @scala.inline
-  def `link text`: `link text` = "link text".asInstanceOf[`link text`]
+  def `link text`: `link text` = ("link text").asInstanceOf[`link text`]
   @scala.inline
   def middle: middle = "middle".asInstanceOf[middle]
   @scala.inline
   def name: name = "name".asInstanceOf[name]
   @scala.inline
-  def `partial link text`: `partial link text` = "partial link text".asInstanceOf[`partial link text`]
+  def `partial link text`: `partial link text` = ("partial link text").asInstanceOf[`partial link text`]
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   @scala.inline
   def server: server = "server".asInstanceOf[server]
   @scala.inline
-  def `tag name`: `tag name` = "tag name".asInstanceOf[`tag name`]
+  def `tag name`: `tag name` = ("tag name").asInstanceOf[`tag name`]
   @scala.inline
   def xpath: xpath = "xpath".asInstanceOf[xpath]
 }

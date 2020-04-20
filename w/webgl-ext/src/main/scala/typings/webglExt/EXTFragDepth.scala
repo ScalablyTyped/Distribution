@@ -12,7 +12,6 @@ object EXTFragDepth {
   @scala.inline
   def apply(__EXT_frag_depth: Unit): EXTFragDepth = {
     val __obj = js.Dynamic.literal(__EXT_frag_depth = __EXT_frag_depth.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EXTFragDepth]
   }
 }

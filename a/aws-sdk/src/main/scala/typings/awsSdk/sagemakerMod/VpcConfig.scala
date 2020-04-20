@@ -20,7 +20,6 @@ object VpcConfig {
   @scala.inline
   def apply(SecurityGroupIds: VpcSecurityGroupIds, Subnets: Subnets): VpcConfig = {
     val __obj = js.Dynamic.literal(SecurityGroupIds = SecurityGroupIds.asInstanceOf[js.Any], Subnets = Subnets.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VpcConfig]
   }
 }

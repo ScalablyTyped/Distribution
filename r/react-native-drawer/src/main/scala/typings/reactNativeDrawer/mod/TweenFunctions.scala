@@ -41,68 +41,66 @@ trait TweenFunctions extends js.Object
 
 object TweenFunctions {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def easeInBack: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInBack = "easeInBack".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInBack]
   @scala.inline
-  def easeInBack: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInBack = this.cast("easeInBack")
+  def easeInBounce: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInBounce = "easeInBounce".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInBounce]
   @scala.inline
-  def easeInBounce: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInBounce = this.cast("easeInBounce")
+  def easeInCirc: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInCirc = "easeInCirc".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInCirc]
   @scala.inline
-  def easeInCirc: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInCirc = this.cast("easeInCirc")
+  def easeInCubic: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInCubic = "easeInCubic".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInCubic]
   @scala.inline
-  def easeInCubic: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInCubic = this.cast("easeInCubic")
+  def easeInElastic: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInElastic = "easeInElastic".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInElastic]
   @scala.inline
-  def easeInElastic: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInElastic = this.cast("easeInElastic")
+  def easeInExpo: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInExpo = "easeInExpo".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInExpo]
   @scala.inline
-  def easeInExpo: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInExpo = this.cast("easeInExpo")
+  def easeInOutBack: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutBack = "easeInOutBack".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutBack]
   @scala.inline
-  def easeInOutBack: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutBack = this.cast("easeInOutBack")
+  def easeInOutBounce: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutBounce = "easeInOutBounce".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutBounce]
   @scala.inline
-  def easeInOutBounce: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutBounce = this.cast("easeInOutBounce")
+  def easeInOutCirc: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutCirc = "easeInOutCirc".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutCirc]
   @scala.inline
-  def easeInOutCirc: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutCirc = this.cast("easeInOutCirc")
+  def easeInOutCubic: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutCubic = "easeInOutCubic".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutCubic]
   @scala.inline
-  def easeInOutCubic: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutCubic = this.cast("easeInOutCubic")
+  def easeInOutElastic: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutElastic = "easeInOutElastic".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutElastic]
   @scala.inline
-  def easeInOutElastic: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutElastic = this.cast("easeInOutElastic")
+  def easeInOutExpo: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutExpo = "easeInOutExpo".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutExpo]
   @scala.inline
-  def easeInOutExpo: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutExpo = this.cast("easeInOutExpo")
+  def easeInOutQuad: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutQuad = "easeInOutQuad".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutQuad]
   @scala.inline
-  def easeInOutQuad: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutQuad = this.cast("easeInOutQuad")
+  def easeInOutQuart: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutQuart = "easeInOutQuart".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutQuart]
   @scala.inline
-  def easeInOutQuart: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutQuart = this.cast("easeInOutQuart")
+  def easeInOutQuint: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutQuint = "easeInOutQuint".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutQuint]
   @scala.inline
-  def easeInOutQuint: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutQuint = this.cast("easeInOutQuint")
+  def easeInOutSine: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutSine = "easeInOutSine".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutSine]
   @scala.inline
-  def easeInOutSine: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInOutSine = this.cast("easeInOutSine")
+  def easeInQuad: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInQuad = "easeInQuad".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInQuad]
   @scala.inline
-  def easeInQuad: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInQuad = this.cast("easeInQuad")
+  def easeInQuart: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInQuart = "easeInQuart".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInQuart]
   @scala.inline
-  def easeInQuart: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInQuart = this.cast("easeInQuart")
+  def easeInQuint: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInQuint = "easeInQuint".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInQuint]
   @scala.inline
-  def easeInQuint: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInQuint = this.cast("easeInQuint")
+  def easeInSine: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInSine = "easeInSine".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeInSine]
   @scala.inline
-  def easeInSine: typings.reactNativeDrawer.reactNativeDrawerStrings.easeInSine = this.cast("easeInSine")
+  def easeOutBack: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutBack = "easeOutBack".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutBack]
   @scala.inline
-  def easeOutBack: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutBack = this.cast("easeOutBack")
+  def easeOutBounce: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutBounce = "easeOutBounce".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutBounce]
   @scala.inline
-  def easeOutBounce: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutBounce = this.cast("easeOutBounce")
+  def easeOutCirc: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutCirc = "easeOutCirc".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutCirc]
   @scala.inline
-  def easeOutCirc: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutCirc = this.cast("easeOutCirc")
+  def easeOutCubic: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutCubic = "easeOutCubic".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutCubic]
   @scala.inline
-  def easeOutCubic: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutCubic = this.cast("easeOutCubic")
+  def easeOutElastic: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutElastic = "easeOutElastic".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutElastic]
   @scala.inline
-  def easeOutElastic: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutElastic = this.cast("easeOutElastic")
+  def easeOutExpo: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutExpo = "easeOutExpo".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutExpo]
   @scala.inline
-  def easeOutExpo: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutExpo = this.cast("easeOutExpo")
+  def easeOutQuad: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutQuad = "easeOutQuad".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutQuad]
   @scala.inline
-  def easeOutQuad: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutQuad = this.cast("easeOutQuad")
+  def easeOutQuart: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutQuart = "easeOutQuart".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutQuart]
   @scala.inline
-  def easeOutQuart: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutQuart = this.cast("easeOutQuart")
+  def easeOutQuint: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutQuint = "easeOutQuint".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutQuint]
   @scala.inline
-  def easeOutQuint: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutQuint = this.cast("easeOutQuint")
+  def easeOutSine: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutSine = "easeOutSine".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutSine]
   @scala.inline
-  def easeOutSine: typings.reactNativeDrawer.reactNativeDrawerStrings.easeOutSine = this.cast("easeOutSine")
-  @scala.inline
-  def linear: typings.reactNativeDrawer.reactNativeDrawerStrings.linear = this.cast("linear")
+  def linear: typings.reactNativeDrawer.reactNativeDrawerStrings.linear = "linear".asInstanceOf[typings.reactNativeDrawer.reactNativeDrawerStrings.linear]
 }
 

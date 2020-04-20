@@ -24,20 +24,18 @@ trait MFDefaultPropertyType extends js.Object
 
 object MFDefaultPropertyType {
   @scala.inline
-  def FixedValue: `1` = this.cast(1)
+  def FixedValue: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def FromEmail: `4` = this.cast(4)
+  def FromEmail: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def FromEmailHeader: `5` = this.cast(5)
+  def FromEmailHeader: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def FromHPDSSXML: `2` = this.cast(2)
+  def FromHPDSSXML: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def FromOCR: `6` = this.cast(6)
+  def FromOCR: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def FromXML: `3` = this.cast(3)
+  def FromXML: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def Undefined: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Undefined: `0` = 0.asInstanceOf[`0`]
 }
 

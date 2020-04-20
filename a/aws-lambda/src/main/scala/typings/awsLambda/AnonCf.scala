@@ -12,7 +12,6 @@ object AnonCf {
   @scala.inline
   def apply(cf: CloudFrontEventrequestClo): AnonCf = {
     val __obj = js.Dynamic.literal(cf = cf.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCf]
   }
 }

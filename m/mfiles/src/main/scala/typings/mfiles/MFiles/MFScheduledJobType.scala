@@ -32,28 +32,26 @@ trait MFScheduledJobType extends js.Object
 
 object MFScheduledJobType {
   @scala.inline
-  def ArchiveOldVersions: `6` = this.cast(6)
+  def ArchiveOldVersions: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def Backup: `1` = this.cast(1)
+  def Backup: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def CopyVault: `3` = this.cast(3)
+  def CopyVault: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def ExportContent: `5` = this.cast(5)
+  def ExportContent: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def ImportContent: `7` = this.cast(7)
+  def ImportContent: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def MigrateVault: `10` = this.cast(10)
+  def MigrateVault: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def OptimizeVault: `8` = this.cast(8)
+  def OptimizeVault: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def Recalculate: `9` = this.cast(9)
+  def Recalculate: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def Restore: `2` = this.cast(2)
+  def Restore: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def Uninitialized: `0` = this.cast(0)
+  def Uninitialized: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def VerifyVault: `4` = this.cast(4)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def VerifyVault: `4` = 4.asInstanceOf[`4`]
 }
 

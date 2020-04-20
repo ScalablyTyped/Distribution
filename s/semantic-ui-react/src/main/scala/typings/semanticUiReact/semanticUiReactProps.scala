@@ -38,7 +38,7 @@ trait semanticUiReactProps {
   def BreadcrumbSectionProps: typings.semanticUiReact.breadcrumbSectionMod.BreadcrumbSectionProps.type = typings.semanticUiReact.breadcrumbSectionMod.BreadcrumbSectionProps
   type BreadcrumbSectionProps = typings.semanticUiReact.breadcrumbSectionMod.BreadcrumbSectionProps
   @scala.inline
-  def ButtonProps: StrictButtonProps.type = typings.semanticUiReact.buttonButtonMod.StrictButtonProps
+  def ButtonProps: StrictButtonProps.type = StrictButtonProps
   type ButtonProps = typings.semanticUiReact.buttonButtonMod.ButtonProps
   @scala.inline
   def ButtonContentProps: typings.semanticUiReact.buttonContentMod.ButtonContentProps.type = typings.semanticUiReact.buttonContentMod.ButtonContentProps
@@ -170,7 +170,7 @@ trait semanticUiReactProps {
   def FlagProps: typings.semanticUiReact.flagFlagMod.FlagProps.type = typings.semanticUiReact.flagFlagMod.FlagProps
   type FlagProps = typings.semanticUiReact.flagFlagMod.FlagProps
   @scala.inline
-  def FormProps: StrictFormProps.type = typings.semanticUiReact.formFormMod.StrictFormProps
+  def FormProps: StrictFormProps.type = StrictFormProps
   type FormProps = typings.semanticUiReact.formFormMod.FormProps
   @scala.inline
   def FormButtonProps: typings.semanticUiReact.formButtonMod.FormButtonProps.type = typings.semanticUiReact.formButtonMod.FormButtonProps
@@ -233,7 +233,7 @@ trait semanticUiReactProps {
   def ImageGroupProps: typings.semanticUiReact.imageGroupMod.ImageGroupProps.type = typings.semanticUiReact.imageGroupMod.ImageGroupProps
   type ImageGroupProps = typings.semanticUiReact.imageGroupMod.ImageGroupProps
   @scala.inline
-  def InputProps: StrictInputProps.type = typings.semanticUiReact.inputInputMod.StrictInputProps
+  def InputProps: StrictInputProps.type = StrictInputProps
   type InputProps = typings.semanticUiReact.inputInputMod.InputProps
   @scala.inline
   def ItemProps: typings.semanticUiReact.itemItemMod.ItemProps.type = typings.semanticUiReact.itemItemMod.ItemProps
@@ -477,7 +477,7 @@ trait semanticUiReactProps {
   def TableBodyProps: typings.semanticUiReact.tableBodyMod.TableBodyProps.type = typings.semanticUiReact.tableBodyMod.TableBodyProps
   type TableBodyProps = typings.semanticUiReact.tableBodyMod.TableBodyProps
   @scala.inline
-  def TableCellProps: StrictTableCellProps.type = typings.semanticUiReact.tableCellMod.StrictTableCellProps
+  def TableCellProps: StrictTableCellProps.type = StrictTableCellProps
   type TableCellProps = typings.semanticUiReact.tableCellMod.TableCellProps
   @scala.inline
   def TableFooterProps: typings.semanticUiReact.tableFooterMod.TableFooterProps.type = typings.semanticUiReact.tableFooterMod.TableFooterProps
@@ -492,7 +492,7 @@ trait semanticUiReactProps {
   def TableRowProps: typings.semanticUiReact.tableRowMod.TableRowProps.type = typings.semanticUiReact.tableRowMod.TableRowProps
   type TableRowProps = typings.semanticUiReact.tableRowMod.TableRowProps
   @scala.inline
-  def TextAreaProps: StrictTextAreaProps.type = typings.semanticUiReact.textAreaTextAreaMod.StrictTextAreaProps
+  def TextAreaProps: StrictTextAreaProps.type = StrictTextAreaProps
   type TextAreaProps = typings.semanticUiReact.textAreaTextAreaMod.TextAreaProps
   @scala.inline
   def TransitionProps: typings.semanticUiReact.transitionTransitionMod.TransitionProps.type = typings.semanticUiReact.transitionTransitionMod.TransitionProps

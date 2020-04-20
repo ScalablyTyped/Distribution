@@ -19,7 +19,6 @@ object CreateAnimationOptions {
   @scala.inline
   def apply(delay: Double, duration: Double, timeFunction: TimingFunction, transformOrigin: String): CreateAnimationOptions = {
     val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], timeFunction = timeFunction.asInstanceOf[js.Any], transformOrigin = transformOrigin.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateAnimationOptions]
   }
 }

@@ -13,7 +13,6 @@ object AnonXmlns {
   @scala.inline
   def apply(xmlns: `true`): AnonXmlns = {
     val __obj = js.Dynamic.literal(xmlns = xmlns.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonXmlns]
   }
 }

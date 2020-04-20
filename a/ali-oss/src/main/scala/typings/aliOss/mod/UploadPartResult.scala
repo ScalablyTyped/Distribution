@@ -14,7 +14,6 @@ object UploadPartResult {
   @scala.inline
   def apply(etag: String, name: String, res: NormalSuccessResponse): UploadPartResult = {
     val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UploadPartResult]
   }
 }

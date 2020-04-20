@@ -1,5 +1,6 @@
 package typings.blueprintjsDatetime.datePickerCoreMod
 
+import typings.blueprintjsDatetime.AnonFormatDate
 import typings.blueprintjsDatetime.timePickerMod.ITimePickerProps
 import typings.blueprintjsDatetime.timePickerMod.TimePrecision
 import typings.std.Date
@@ -20,9 +21,7 @@ trait IDatePickerBaseProps extends js.Object {
   /**
     * Collection of functions that provide internationalization support.
     */
-  var localeUtils: js.UndefOr[
-    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LocaleUtils */ js.Any
-  ] = js.undefined
+  var localeUtils: js.UndefOr[AnonFormatDate] = js.undefined
   /**
     * The latest date the user can select.
     * @default Dec. 31st of this year.
@@ -70,7 +69,7 @@ object IDatePickerBaseProps {
   def apply(
     initialMonth: Date = null,
     locale: String = null,
-    localeUtils: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LocaleUtils */ js.Any = null,
+    localeUtils: AnonFormatDate = null,
     maxDate: Date = null,
     minDate: Date = null,
     modifiers: IDatePickerModifiers = null,

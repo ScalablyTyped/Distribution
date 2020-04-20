@@ -13,7 +13,6 @@ object AnonOptionsOptions {
   @scala.inline
   def apply(options: Options): AnonOptionsOptions = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOptionsOptions]
   }
 }

@@ -13,7 +13,6 @@ object PickImplhistory {
   @scala.inline
   def apply(history: Boolean): PickImplhistory = {
     val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplhistory]
   }
 }

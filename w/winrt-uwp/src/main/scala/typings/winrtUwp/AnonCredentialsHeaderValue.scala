@@ -14,7 +14,6 @@ object AnonCredentialsHeaderValue {
   @scala.inline
   def apply(credentialsHeaderValue: HttpCredentialsHeaderValue, returnValue: Boolean): AnonCredentialsHeaderValue = {
     val __obj = js.Dynamic.literal(credentialsHeaderValue = credentialsHeaderValue.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCredentialsHeaderValue]
   }
 }

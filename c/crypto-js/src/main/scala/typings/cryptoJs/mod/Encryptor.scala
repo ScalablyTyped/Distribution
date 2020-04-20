@@ -12,7 +12,6 @@ object Encryptor {
   @scala.inline
   def apply(process: String => String): Encryptor = {
     val __obj = js.Dynamic.literal(process = js.Any.fromFunction1(process))
-  
     __obj.asInstanceOf[Encryptor]
   }
 }

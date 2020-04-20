@@ -22,7 +22,6 @@ object CoverageStatistics {
     linesPartiallyCovered: Double
   ): CoverageStatistics = {
     val __obj = js.Dynamic.literal(blocksCovered = blocksCovered.asInstanceOf[js.Any], blocksNotCovered = blocksNotCovered.asInstanceOf[js.Any], linesCovered = linesCovered.asInstanceOf[js.Any], linesNotCovered = linesNotCovered.asInstanceOf[js.Any], linesPartiallyCovered = linesPartiallyCovered.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CoverageStatistics]
   }
 }

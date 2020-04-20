@@ -13,12 +13,10 @@ trait CompositeOperation extends js.Object
 
 object CompositeOperation {
   @scala.inline
-  def accumulate: typings.std.stdStrings.accumulate = this.cast("accumulate")
+  def accumulate: typings.std.stdStrings.accumulate = "accumulate".asInstanceOf[typings.std.stdStrings.accumulate]
   @scala.inline
-  def add: typings.std.stdStrings.add = this.cast("add")
+  def add: typings.std.stdStrings.add = "add".asInstanceOf[typings.std.stdStrings.add]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def replace: typings.std.stdStrings.replace = this.cast("replace")
+  def replace: typings.std.stdStrings.replace = "replace".asInstanceOf[typings.std.stdStrings.replace]
 }
 

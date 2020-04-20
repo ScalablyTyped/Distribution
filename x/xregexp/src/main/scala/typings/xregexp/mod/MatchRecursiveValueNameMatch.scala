@@ -30,7 +30,6 @@ object MatchRecursiveValueNameMatch {
   @scala.inline
   def apply(end: Double, name: String, start: Double, value: String): MatchRecursiveValueNameMatch = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MatchRecursiveValueNameMatch]
   }
 }

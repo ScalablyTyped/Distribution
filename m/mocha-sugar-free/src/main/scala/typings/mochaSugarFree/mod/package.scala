@@ -11,7 +11,7 @@ package object mod {
     scala.Unit
   ]
   /** Construct a type with the properties of T except for those in type K. */
-  type Omit[T, K /* <: java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[java.lang.String, K]]
+  type Omit[T, K /* <: /* keyof any */ java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
   type SuiteFunc = js.ThisFunction1[
     /* this */ js.UndefOr[scala.Nothing], 
     /* context */ typings.mochaSugarFree.mod.SuiteContext, 

@@ -16,7 +16,6 @@ object IMongoData {
   @scala.inline
   def apply(event: AnonCommandName, startedData: AnonCommand, succeeded: Boolean): IMongoData = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], startedData = startedData.asInstanceOf[js.Any], succeeded = succeeded.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMongoData]
   }
 }

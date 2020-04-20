@@ -68,7 +68,6 @@ object locale {
     regexp: js.Object => Unit
   ): locale = {
     val __obj = js.Dynamic.literal(addCustomFormats = js.Any.fromFunction2(addCustomFormats), format = js.Any.fromFunction2(format), getNames = js.Any.fromFunction5(getNames), parse = js.Any.fromFunction2(parse), regexp = js.Any.fromFunction1(regexp))
-  
     __obj.asInstanceOf[locale]
   }
 }

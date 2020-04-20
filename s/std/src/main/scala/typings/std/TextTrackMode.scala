@@ -13,12 +13,10 @@ trait TextTrackMode extends js.Object
 
 object TextTrackMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def disabled: typings.std.stdStrings.disabled = "disabled".asInstanceOf[typings.std.stdStrings.disabled]
   @scala.inline
-  def disabled: typings.std.stdStrings.disabled = this.cast("disabled")
+  def hidden: typings.std.stdStrings.hidden = "hidden".asInstanceOf[typings.std.stdStrings.hidden]
   @scala.inline
-  def hidden: typings.std.stdStrings.hidden = this.cast("hidden")
-  @scala.inline
-  def showing: typings.std.stdStrings.showing = this.cast("showing")
+  def showing: typings.std.stdStrings.showing = "showing".asInstanceOf[typings.std.stdStrings.showing]
 }
 

@@ -28,7 +28,6 @@ object ArchiveRuleSummary {
   @scala.inline
   def apply(createdAt: Timestamp, filter: FilterCriteriaMap, ruleName: Name, updatedAt: Timestamp): ArchiveRuleSummary = {
     val __obj = js.Dynamic.literal(createdAt = createdAt.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], ruleName = ruleName.asInstanceOf[js.Any], updatedAt = updatedAt.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ArchiveRuleSummary]
   }
 }

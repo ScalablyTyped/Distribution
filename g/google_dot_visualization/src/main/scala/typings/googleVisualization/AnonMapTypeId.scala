@@ -12,7 +12,6 @@ object AnonMapTypeId {
   @scala.inline
   def apply(mapTypeId: AnonName): AnonMapTypeId = {
     val __obj = js.Dynamic.literal(mapTypeId = mapTypeId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMapTypeId]
   }
 }

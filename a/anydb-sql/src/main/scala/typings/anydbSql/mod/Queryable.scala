@@ -20,7 +20,6 @@ object Queryable {
     where: /* repeated */ js.Any => Query[T]
   ): Queryable[T] = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction0(delete), select = js.Any.fromFunction1(select), selectDeep = js.Any.fromFunction1(selectDeep), where = js.Any.fromFunction1(where))
-  
     __obj.asInstanceOf[Queryable[T]]
   }
 }

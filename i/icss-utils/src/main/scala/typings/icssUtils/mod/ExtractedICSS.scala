@@ -13,7 +13,6 @@ object ExtractedICSS {
   @scala.inline
   def apply(icssExports: CSSExports, icssImports: CSSImports): ExtractedICSS = {
     val __obj = js.Dynamic.literal(icssExports = icssExports.asInstanceOf[js.Any], icssImports = icssImports.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExtractedICSS]
   }
 }

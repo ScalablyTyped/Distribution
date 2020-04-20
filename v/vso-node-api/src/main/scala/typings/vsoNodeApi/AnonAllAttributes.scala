@@ -44,7 +44,6 @@ object AnonAllAttributes {
     useFallbackAssetUri: Double
   ): AnonAllAttributes = {
     val __obj = js.Dynamic.literal(allAttributes = allAttributes.asInstanceOf[js.Any], excludeNonValidated = excludeNonValidated.asInstanceOf[js.Any], includeAssetUri = includeAssetUri.asInstanceOf[js.Any], includeCategoryAndTags = includeCategoryAndTags.asInstanceOf[js.Any], includeFiles = includeFiles.asInstanceOf[js.Any], includeInstallationTargets = includeInstallationTargets.asInstanceOf[js.Any], includeLatestVersionOnly = includeLatestVersionOnly.asInstanceOf[js.Any], includeLcids = includeLcids.asInstanceOf[js.Any], includeMetadata = includeMetadata.asInstanceOf[js.Any], includeMinimalPayloadForVsIde = includeMinimalPayloadForVsIde.asInstanceOf[js.Any], includeSharedAccounts = includeSharedAccounts.asInstanceOf[js.Any], includeStatistics = includeStatistics.asInstanceOf[js.Any], includeVersionProperties = includeVersionProperties.asInstanceOf[js.Any], includeVersions = includeVersions.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], useFallbackAssetUri = useFallbackAssetUri.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAllAttributes]
   }
 }

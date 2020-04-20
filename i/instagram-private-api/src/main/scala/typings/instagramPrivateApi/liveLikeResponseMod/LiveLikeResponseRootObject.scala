@@ -14,7 +14,6 @@ object LiveLikeResponseRootObject {
   @scala.inline
   def apply(burst_likes: Double, likes: Double, status: String): LiveLikeResponseRootObject = {
     val __obj = js.Dynamic.literal(burst_likes = burst_likes.asInstanceOf[js.Any], likes = likes.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LiveLikeResponseRootObject]
   }
 }

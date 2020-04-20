@@ -13,7 +13,6 @@ object GetExtConfigSuccessCallbackResult {
   @scala.inline
   def apply(extConfig: js.Object): GetExtConfigSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(extConfig = extConfig.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetExtConfigSuccessCallbackResult]
   }
 }

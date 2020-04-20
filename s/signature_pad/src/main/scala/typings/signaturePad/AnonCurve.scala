@@ -14,7 +14,6 @@ object AnonCurve {
   @scala.inline
   def apply(color: String, curve: Bezier): AnonCurve = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], curve = curve.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCurve]
   }
 }

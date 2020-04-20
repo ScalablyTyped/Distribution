@@ -13,7 +13,6 @@ object DiffReturn {
   @scala.inline
   def apply[This](image: This, percent: Double): DiffReturn[This] = {
     val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DiffReturn[This]]
   }
 }

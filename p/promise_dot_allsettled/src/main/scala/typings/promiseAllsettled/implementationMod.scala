@@ -1,5 +1,6 @@
 package typings.promiseAllsettled
 
+import org.scalablytyped.runtime.TopLevel
 import typings.promiseAllsettled.typesMod.PromiseResult
 import typings.std.Iterable
 import scala.scalajs.js
@@ -14,9 +15,9 @@ object implementationMod extends js.Object {
   def apply[T](iterable: Iterable[js.Promise[T] | T]): js.Promise[js.Array[PromiseResult[T, _]]] = js.native
   type PromiseResultTuple[T /* <: Array[js.Any] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: promise.allsettled.promise.allsettled/types.PromiseResult<T[P], unknown>}
-    */ typings.promiseAllsettled.promiseAllsettledStrings.PromiseResultTuple with T
+    */ typings.promiseAllsettled.promiseAllsettledStrings.PromiseResultTuple with TopLevel[T]
   type PromiseTuple[T /* <: Array[js.Any] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: std.Promise<T[P]> | T[P]}
-    */ typings.promiseAllsettled.promiseAllsettledStrings.PromiseTuple with js.Any
+    */ typings.promiseAllsettled.promiseAllsettledStrings.PromiseTuple with TopLevel[js.Any]
 }
 

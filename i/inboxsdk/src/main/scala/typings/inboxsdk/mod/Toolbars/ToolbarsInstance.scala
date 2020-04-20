@@ -28,7 +28,6 @@ object ToolbarsInstance {
     registerToolbarButtonForThreadView: LegacyToolbarButtonDescriptor => js.Function0[Unit]
   ): ToolbarsInstance = {
     val __obj = js.Dynamic.literal(addToolbarButtonForApp = js.Any.fromFunction1(addToolbarButtonForApp), registerThreadButton = js.Any.fromFunction1(registerThreadButton), registerToolbarButtonForList = js.Any.fromFunction1(registerToolbarButtonForList), registerToolbarButtonForThreadView = js.Any.fromFunction1(registerToolbarButtonForThreadView))
-  
     __obj.asInstanceOf[ToolbarsInstance]
   }
 }

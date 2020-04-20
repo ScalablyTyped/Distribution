@@ -12,7 +12,6 @@ object UserAgentContext {
   @scala.inline
   def apply(userAgent: typings.koaUseragent.useragentMod.default): UserAgentContext = {
     val __obj = js.Dynamic.literal(userAgent = userAgent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UserAgentContext]
   }
 }

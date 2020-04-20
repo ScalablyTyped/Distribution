@@ -31,7 +31,6 @@ object DeploymentApprovalPendingEvent {
     release: Release
   ): DeploymentApprovalPendingEvent = {
     val __obj = js.Dynamic.literal(approval = approval.asInstanceOf[js.Any], approvalOptions = approvalOptions.asInstanceOf[js.Any], completedApprovals = completedApprovals.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], deployment = deployment.asInstanceOf[js.Any], isMultipleRankApproval = isMultipleRankApproval.asInstanceOf[js.Any], pendingApprovals = pendingApprovals.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeploymentApprovalPendingEvent]
   }
 }

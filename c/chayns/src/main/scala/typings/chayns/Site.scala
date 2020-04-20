@@ -16,7 +16,6 @@ object Site {
   @scala.inline
   def apply(appstoreName: String, facebookId: String, locationId: Double, siteId: String): Site = {
     val __obj = js.Dynamic.literal(appstoreName = appstoreName.asInstanceOf[js.Any], facebookId = facebookId.asInstanceOf[js.Any], locationId = locationId.asInstanceOf[js.Any], siteId = siteId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Site]
   }
 }

@@ -1,5 +1,6 @@
 package typings.routeParser.mod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.routeParser.routeParserBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +19,7 @@ trait Route[TParams /* <: js.Object */] extends js.Object {
     */
   def `match`(pathname: String): (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in keyof TParams ]: string}
-    */ typings.routeParser.routeParserStrings.Route with js.Any) | `false`
+    */ typings.routeParser.routeParserStrings.Route with TopLevel[js.Any]) | `false`
   /**
     * Reverse a route specification to a path, returning false if it can't be
     * fulfilled
@@ -34,7 +35,7 @@ object Route {
   def apply[TParams /* <: js.Object */](
     `match`: String => (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in keyof TParams ]: string}
-    */ typings.routeParser.routeParserStrings.Route with js.Any) | `false`,
+    */ typings.routeParser.routeParserStrings.Route with TopLevel[js.Any]) | `false`,
     reverse: TParams => String | `false`
   ): Route[TParams] = {
     val __obj = js.Dynamic.literal(reverse = js.Any.fromFunction1(reverse))

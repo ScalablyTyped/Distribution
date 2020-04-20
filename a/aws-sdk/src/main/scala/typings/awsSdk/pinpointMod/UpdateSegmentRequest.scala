@@ -21,7 +21,6 @@ object UpdateSegmentRequest {
   @scala.inline
   def apply(ApplicationId: string, SegmentId: string, WriteSegmentRequest: WriteSegmentRequest): UpdateSegmentRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], SegmentId = SegmentId.asInstanceOf[js.Any], WriteSegmentRequest = WriteSegmentRequest.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateSegmentRequest]
   }
 }

@@ -28,7 +28,6 @@ object AnonAttributeNames {
     SignedPropertiesType: String
   ): AnonAttributeNames = {
     val __obj = js.Dynamic.literal(AttributeNames = AttributeNames.asInstanceOf[js.Any], DefaultPrefix = DefaultPrefix.asInstanceOf[js.Any], ElementNames = ElementNames.asInstanceOf[js.Any], NamespaceURI = NamespaceURI.asInstanceOf[js.Any], SignedPropertiesType = SignedPropertiesType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAttributeNames]
   }
 }

@@ -27,7 +27,6 @@ object LogEventQueryResourceFetch {
     shouldFetch: Boolean
   ): LogEventQueryResourceFetch = {
     val __obj = js.Dynamic.literal(fetchPolicy = fetchPolicy.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], queryAvailability = queryAvailability.asInstanceOf[js.Any], renderPolicy = renderPolicy.asInstanceOf[js.Any], shouldFetch = shouldFetch.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LogEventQueryResourceFetch]
   }
 }

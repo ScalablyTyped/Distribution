@@ -15,7 +15,6 @@ object WindowState {
   @scala.inline
   def apply(focused: Boolean): WindowState = {
     val __obj = js.Dynamic.literal(focused = focused.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WindowState]
   }
 }

@@ -13,7 +13,6 @@ object APIGatewayProxyCognitoAuthorizer {
   @scala.inline
   def apply(claims: StringDictionary[String]): APIGatewayProxyCognitoAuthorizer = {
     val __obj = js.Dynamic.literal(claims = claims.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[APIGatewayProxyCognitoAuthorizer]
   }
 }

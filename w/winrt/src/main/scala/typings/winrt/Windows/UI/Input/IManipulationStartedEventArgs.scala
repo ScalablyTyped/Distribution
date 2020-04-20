@@ -16,7 +16,6 @@ object IManipulationStartedEventArgs {
   @scala.inline
   def apply(cumulative: ManipulationDelta, pointerDeviceType: PointerDeviceType, position: Point): IManipulationStartedEventArgs = {
     val __obj = js.Dynamic.literal(cumulative = cumulative.asInstanceOf[js.Any], pointerDeviceType = pointerDeviceType.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IManipulationStartedEventArgs]
   }
 }

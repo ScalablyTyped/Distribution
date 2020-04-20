@@ -13,7 +13,6 @@ object IgtvSearchResponseBiographyWithEntities {
   @scala.inline
   def apply(entities: js.Array[IgtvSearchResponseEntitiesItem], raw_text: String): IgtvSearchResponseBiographyWithEntities = {
     val __obj = js.Dynamic.literal(entities = entities.asInstanceOf[js.Any], raw_text = raw_text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IgtvSearchResponseBiographyWithEntities]
   }
 }

@@ -15,7 +15,6 @@ object Typeofbase64 {
   @scala.inline
   def apply(decode: String => Uint8Array, encode: Arrayish => String): Typeofbase64 = {
     val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode))
-  
     __obj.asInstanceOf[Typeofbase64]
   }
 }

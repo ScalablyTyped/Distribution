@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait mobxReactDevtoolsProps {
   @scala.inline
-  def MobxReactDevtoolsProps: IDevToolProps.type = typings.mobxReactDevtools.mod.IDevToolProps
+  def MobxReactDevtoolsProps: IDevToolProps.type = IDevToolProps
   type MobxReactDevtoolsProps = IDevToolProps
   @scala.inline
-  def UpdatesControlProps: AnonHighlightTimeout.type = typings.mobxReactDevtools.AnonHighlightTimeout
+  def UpdatesControlProps: AnonHighlightTimeout.type = AnonHighlightTimeout
   type UpdatesControlProps = AnonHighlightTimeout
 }
 

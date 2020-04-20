@@ -18,22 +18,20 @@ trait AlignContentType extends js.Object
 
 object AlignContentType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.azdata.azdataStrings.center = "center".asInstanceOf[typings.azdata.azdataStrings.center]
   @scala.inline
-  def center: typings.azdata.azdataStrings.center = this.cast("center")
+  def `flex-end`: typings.azdata.azdataStrings.`flex-end` = "flex-end".asInstanceOf[typings.azdata.azdataStrings.`flex-end`]
   @scala.inline
-  def `flex-end`: typings.azdata.azdataStrings.`flex-end` = this.cast("flex-end")
+  def `flex-start`: typings.azdata.azdataStrings.`flex-start` = "flex-start".asInstanceOf[typings.azdata.azdataStrings.`flex-start`]
   @scala.inline
-  def `flex-start`: typings.azdata.azdataStrings.`flex-start` = this.cast("flex-start")
+  def inherit: typings.azdata.azdataStrings.inherit = "inherit".asInstanceOf[typings.azdata.azdataStrings.inherit]
   @scala.inline
-  def inherit: typings.azdata.azdataStrings.inherit = this.cast("inherit")
+  def initial: typings.azdata.azdataStrings.initial = "initial".asInstanceOf[typings.azdata.azdataStrings.initial]
   @scala.inline
-  def initial: typings.azdata.azdataStrings.initial = this.cast("initial")
+  def `space-around`: typings.azdata.azdataStrings.`space-around` = "space-around".asInstanceOf[typings.azdata.azdataStrings.`space-around`]
   @scala.inline
-  def `space-around`: typings.azdata.azdataStrings.`space-around` = this.cast("space-around")
+  def `space-between`: typings.azdata.azdataStrings.`space-between` = "space-between".asInstanceOf[typings.azdata.azdataStrings.`space-between`]
   @scala.inline
-  def `space-between`: typings.azdata.azdataStrings.`space-between` = this.cast("space-between")
-  @scala.inline
-  def stretch: typings.azdata.azdataStrings.stretch = this.cast("stretch")
+  def stretch: typings.azdata.azdataStrings.stretch = "stretch".asInstanceOf[typings.azdata.azdataStrings.stretch]
 }
 

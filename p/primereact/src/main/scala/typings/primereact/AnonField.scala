@@ -13,7 +13,6 @@ object AnonField {
   @scala.inline
   def apply(field: String, order: Double): AnonField = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonField]
   }
 }

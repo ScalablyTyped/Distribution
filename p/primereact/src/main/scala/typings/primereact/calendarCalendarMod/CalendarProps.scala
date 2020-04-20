@@ -58,12 +58,14 @@ trait CalendarProps extends js.Object {
   var shortYearCutoff: js.UndefOr[String] = js.undefined
   var showButtonBar: js.UndefOr[Boolean] = js.undefined
   var showIcon: js.UndefOr[Boolean] = js.undefined
+  var showMillisec: js.UndefOr[Boolean] = js.undefined
   var showOnFocus: js.UndefOr[Boolean] = js.undefined
   var showOtherMonths: js.UndefOr[Boolean] = js.undefined
   var showSeconds: js.UndefOr[Boolean] = js.undefined
   var showTime: js.UndefOr[Boolean] = js.undefined
   var showWeek: js.UndefOr[Boolean] = js.undefined
   var stepHour: js.UndefOr[Double] = js.undefined
+  var stepMillisec: js.UndefOr[Double] = js.undefined
   var stepMinute: js.UndefOr[Double] = js.undefined
   var stepSecond: js.UndefOr[Double] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
@@ -130,12 +132,14 @@ object CalendarProps {
     shortYearCutoff: String = null,
     showButtonBar: js.UndefOr[Boolean] = js.undefined,
     showIcon: js.UndefOr[Boolean] = js.undefined,
+    showMillisec: js.UndefOr[Boolean] = js.undefined,
     showOnFocus: js.UndefOr[Boolean] = js.undefined,
     showOtherMonths: js.UndefOr[Boolean] = js.undefined,
     showSeconds: js.UndefOr[Boolean] = js.undefined,
     showTime: js.UndefOr[Boolean] = js.undefined,
     showWeek: js.UndefOr[Boolean] = js.undefined,
     stepHour: Int | Double = null,
+    stepMillisec: Int | Double = null,
     stepMinute: Int | Double = null,
     stepSecond: Int | Double = null,
     style: js.Object = null,
@@ -199,12 +203,14 @@ object CalendarProps {
     if (shortYearCutoff != null) __obj.updateDynamic("shortYearCutoff")(shortYearCutoff.asInstanceOf[js.Any])
     if (!js.isUndefined(showButtonBar)) __obj.updateDynamic("showButtonBar")(showButtonBar.asInstanceOf[js.Any])
     if (!js.isUndefined(showIcon)) __obj.updateDynamic("showIcon")(showIcon.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMillisec)) __obj.updateDynamic("showMillisec")(showMillisec.asInstanceOf[js.Any])
     if (!js.isUndefined(showOnFocus)) __obj.updateDynamic("showOnFocus")(showOnFocus.asInstanceOf[js.Any])
     if (!js.isUndefined(showOtherMonths)) __obj.updateDynamic("showOtherMonths")(showOtherMonths.asInstanceOf[js.Any])
     if (!js.isUndefined(showSeconds)) __obj.updateDynamic("showSeconds")(showSeconds.asInstanceOf[js.Any])
     if (!js.isUndefined(showTime)) __obj.updateDynamic("showTime")(showTime.asInstanceOf[js.Any])
     if (!js.isUndefined(showWeek)) __obj.updateDynamic("showWeek")(showWeek.asInstanceOf[js.Any])
     if (stepHour != null) __obj.updateDynamic("stepHour")(stepHour.asInstanceOf[js.Any])
+    if (stepMillisec != null) __obj.updateDynamic("stepMillisec")(stepMillisec.asInstanceOf[js.Any])
     if (stepMinute != null) __obj.updateDynamic("stepMinute")(stepMinute.asInstanceOf[js.Any])
     if (stepSecond != null) __obj.updateDynamic("stepSecond")(stepSecond.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

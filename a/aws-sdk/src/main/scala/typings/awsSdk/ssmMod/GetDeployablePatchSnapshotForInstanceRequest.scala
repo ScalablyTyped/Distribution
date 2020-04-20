@@ -20,7 +20,6 @@ object GetDeployablePatchSnapshotForInstanceRequest {
   @scala.inline
   def apply(InstanceId: InstanceId, SnapshotId: SnapshotId): GetDeployablePatchSnapshotForInstanceRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any], SnapshotId = SnapshotId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDeployablePatchSnapshotForInstanceRequest]
   }
 }

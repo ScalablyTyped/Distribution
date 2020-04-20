@@ -44,7 +44,6 @@ object TypeofAccordionContainer {
     ]
   ): TypeofAccordionContainer = {
     val __obj = js.Dynamic.literal(_Button = _Button.asInstanceOf[js.Any], _InnerContainer = _InnerContainer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofAccordionContainer]
   }
 }

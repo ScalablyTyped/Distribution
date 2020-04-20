@@ -13,7 +13,6 @@ object PickImpljitter {
   @scala.inline
   def apply(jitter: Double): PickImpljitter = {
     val __obj = js.Dynamic.literal(jitter = jitter.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpljitter]
   }
 }

@@ -11,34 +11,34 @@ trait Font extends js.Object {
   /**
   	 * Specifies the font family or specific font to use.
   	 */
-  var fontFamily: js.UndefOr[String] = js.undefined
+  var fontFamily: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Font size, in platform-dependent units.
   	 */
-  var fontSize: js.UndefOr[Double | String] = js.undefined
+  var fontSize: js.UndefOr[Double | java.lang.String] = js.undefined
   /**
   	 * Font style. Valid values are "italic" or "normal".
   	 */
-  var fontStyle: js.UndefOr[String] = js.undefined
+  var fontStyle: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Font weight. Valid values are "bold", "semibold", "normal", "thin",
   	 * "light" and "ultralight".
   	 */
-  var fontWeight: js.UndefOr[String] = js.undefined
+  var fontWeight: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * The text style for the font.
   	 */
-  var textStyle: js.UndefOr[String] = js.undefined
+  var textStyle: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object Font {
   @scala.inline
   def apply(
-    fontFamily: String = null,
-    fontSize: Double | String = null,
-    fontStyle: String = null,
-    fontWeight: String = null,
-    textStyle: String = null
+    fontFamily: java.lang.String = null,
+    fontSize: Double | java.lang.String = null,
+    fontStyle: java.lang.String = null,
+    fontWeight: java.lang.String = null,
+    textStyle: java.lang.String = null
   ): Font = {
     val __obj = js.Dynamic.literal()
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])

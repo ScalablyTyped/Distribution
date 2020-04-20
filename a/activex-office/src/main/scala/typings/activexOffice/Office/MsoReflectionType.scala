@@ -32,28 +32,26 @@ trait MsoReflectionType extends js.Object
 
 object MsoReflectionType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoReflectionType1: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoReflectionType1: `1` = this.cast(1)
+  def msoReflectionType2: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoReflectionType2: `2` = this.cast(2)
+  def msoReflectionType3: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoReflectionType3: `3` = this.cast(3)
+  def msoReflectionType4: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoReflectionType4: `4` = this.cast(4)
+  def msoReflectionType5: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def msoReflectionType5: `5` = this.cast(5)
+  def msoReflectionType6: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def msoReflectionType6: `6` = this.cast(6)
+  def msoReflectionType7: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def msoReflectionType7: `7` = this.cast(7)
+  def msoReflectionType8: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def msoReflectionType8: `8` = this.cast(8)
+  def msoReflectionType9: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def msoReflectionType9: `9` = this.cast(9)
+  def msoReflectionTypeMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def msoReflectionTypeMixed: `-2` = this.cast(-2)
-  @scala.inline
-  def msoReflectionTypeNone: `0` = this.cast(0)
+  def msoReflectionTypeNone: `0` = 0.asInstanceOf[`0`]
 }
 

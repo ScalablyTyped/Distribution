@@ -16,7 +16,6 @@ object TlsValidationContext {
   @scala.inline
   def apply(trust: TlsValidationContextTrust): TlsValidationContext = {
     val __obj = js.Dynamic.literal(trust = trust.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TlsValidationContext]
   }
 }

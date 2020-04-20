@@ -8,12 +8,16 @@ import scala.scalajs.js.annotation._
 /** Properties of a KnowledgeOperationMetadata. */
 trait IKnowledgeOperationMetadata extends js.Object {
   /** KnowledgeOperationMetadata state */
-  var state: js.UndefOr[State | String | Null] = js.undefined
+  var state: js.UndefOr[
+    State | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.State * / any */ String) | Null
+  ] = js.undefined
 }
 
 object IKnowledgeOperationMetadata {
   @scala.inline
-  def apply(state: State | String = null): IKnowledgeOperationMetadata = {
+  def apply(
+    state: State | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.State * / any */ String) = null
+  ): IKnowledgeOperationMetadata = {
     val __obj = js.Dynamic.literal()
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[IKnowledgeOperationMetadata]

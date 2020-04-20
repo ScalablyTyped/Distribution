@@ -22,7 +22,6 @@ object SignatureHelpProviderMetadata {
   @scala.inline
   def apply(retriggerCharacters: js.Array[String], triggerCharacters: js.Array[String]): SignatureHelpProviderMetadata = {
     val __obj = js.Dynamic.literal(retriggerCharacters = retriggerCharacters.asInstanceOf[js.Any], triggerCharacters = triggerCharacters.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SignatureHelpProviderMetadata]
   }
 }

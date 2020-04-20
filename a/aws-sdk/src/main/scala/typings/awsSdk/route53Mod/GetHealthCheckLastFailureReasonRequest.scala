@@ -16,7 +16,6 @@ object GetHealthCheckLastFailureReasonRequest {
   @scala.inline
   def apply(HealthCheckId: HealthCheckId): GetHealthCheckLastFailureReasonRequest = {
     val __obj = js.Dynamic.literal(HealthCheckId = HealthCheckId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetHealthCheckLastFailureReasonRequest]
   }
 }

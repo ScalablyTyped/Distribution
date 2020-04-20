@@ -30,7 +30,6 @@ object AnonDATE {
     WEEK: String
   ): AnonDATE = {
     val __obj = js.Dynamic.literal(DATE = DATE.asInstanceOf[js.Any], DATETIME_LOCAL = DATETIME_LOCAL.asInstanceOf[js.Any], DATETIME_LOCAL_MS = DATETIME_LOCAL_MS.asInstanceOf[js.Any], DATETIME_LOCAL_SECONDS = DATETIME_LOCAL_SECONDS.asInstanceOf[js.Any], MONTH = MONTH.asInstanceOf[js.Any], TIME = TIME.asInstanceOf[js.Any], TIME_MS = TIME_MS.asInstanceOf[js.Any], TIME_SECONDS = TIME_SECONDS.asInstanceOf[js.Any], WEEK = WEEK.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDATE]
   }
 }

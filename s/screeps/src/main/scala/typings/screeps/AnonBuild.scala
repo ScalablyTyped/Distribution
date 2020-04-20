@@ -14,7 +14,6 @@ object AnonBuild {
   @scala.inline
   def apply(build: `1.5`, repair: `1.5`): AnonBuild = {
     val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], repair = repair.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBuild]
   }
 }

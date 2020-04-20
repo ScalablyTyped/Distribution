@@ -15,7 +15,6 @@ object CreateOnFallbackOptions {
   @scala.inline
   def apply(flags: IonicEnvironmentFlags, log: ILogger): CreateOnFallbackOptions = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateOnFallbackOptions]
   }
 }

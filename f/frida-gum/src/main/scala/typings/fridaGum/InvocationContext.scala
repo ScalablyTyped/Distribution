@@ -37,7 +37,6 @@ object InvocationContext {
     threadId: ThreadId
   ): InvocationContext = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], lastError = lastError.asInstanceOf[js.Any], returnAddress = returnAddress.asInstanceOf[js.Any], threadId = threadId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InvocationContext]
   }
   @scala.inline
@@ -49,7 +48,6 @@ object InvocationContext {
     threadId: ThreadId
   ): InvocationContext = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], errno = errno.asInstanceOf[js.Any], returnAddress = returnAddress.asInstanceOf[js.Any], threadId = threadId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InvocationContext]
   }
 }

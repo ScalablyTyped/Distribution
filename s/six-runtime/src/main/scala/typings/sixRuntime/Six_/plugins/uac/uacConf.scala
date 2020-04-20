@@ -30,7 +30,6 @@ object uacConf {
     whiteList: String | RegExp | js.Array[String] | whiteList
   ): uacConf = {
     val __obj = js.Dynamic.literal(client_id = client_id.asInstanceOf[js.Any], client_secret = client_secret.asInstanceOf[js.Any], enableMock = enableMock.asInstanceOf[js.Any], failHook = js.Any.fromFunction3(failHook), getPath = js.Any.fromFunction1(getPath), skipOffline = skipOffline.asInstanceOf[js.Any], whiteList = whiteList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[uacConf]
   }
 }

@@ -12,7 +12,6 @@ object Observer {
   @scala.inline
   def apply(encryptionKey: String): Observer = {
     val __obj = js.Dynamic.literal(encryptionKey = encryptionKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Observer]
   }
 }

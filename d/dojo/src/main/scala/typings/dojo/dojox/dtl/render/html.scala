@@ -24,7 +24,6 @@ object html {
   @scala.inline
   def apply(Render: (HTMLElement, DomTemplated) => Unit): html = {
     val __obj = js.Dynamic.literal(Render = js.Any.fromFunction2(Render))
-  
     __obj.asInstanceOf[html]
   }
 }

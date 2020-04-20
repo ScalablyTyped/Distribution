@@ -14,7 +14,6 @@ object AnonPfCancel {
   @scala.inline
   def apply(pDocument: _XDocument, pfCancel: Boolean): AnonPfCancel = {
     val __obj = js.Dynamic.literal(pDocument = pDocument.asInstanceOf[js.Any], pfCancel = pfCancel.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPfCancel]
   }
 }

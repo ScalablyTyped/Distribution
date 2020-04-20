@@ -14,14 +14,12 @@ trait Scope extends js.Object
 
 object Scope {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def incognito_persistent: typings.chromeApps.chromeAppsStrings.incognito_persistent = "incognito_persistent".asInstanceOf[typings.chromeApps.chromeAppsStrings.incognito_persistent]
   @scala.inline
-  def incognito_persistent: typings.chromeApps.chromeAppsStrings.incognito_persistent = this.cast("incognito_persistent")
+  def incognito_session_only: typings.chromeApps.chromeAppsStrings.incognito_session_only = "incognito_session_only".asInstanceOf[typings.chromeApps.chromeAppsStrings.incognito_session_only]
   @scala.inline
-  def incognito_session_only: typings.chromeApps.chromeAppsStrings.incognito_session_only = this.cast("incognito_session_only")
+  def regular: typings.chromeApps.chromeAppsStrings.regular = "regular".asInstanceOf[typings.chromeApps.chromeAppsStrings.regular]
   @scala.inline
-  def regular: typings.chromeApps.chromeAppsStrings.regular = this.cast("regular")
-  @scala.inline
-  def regular_only: typings.chromeApps.chromeAppsStrings.regular_only = this.cast("regular_only")
+  def regular_only: typings.chromeApps.chromeAppsStrings.regular_only = "regular_only".asInstanceOf[typings.chromeApps.chromeAppsStrings.regular_only]
 }
 

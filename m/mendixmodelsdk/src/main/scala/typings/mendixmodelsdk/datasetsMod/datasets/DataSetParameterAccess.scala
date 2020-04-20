@@ -24,9 +24,9 @@ class DataSetParameterAccess protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FDataSetParameterAccess: IModel = js.native
-  def constraintAccessList(): IList[DataSetConstraintAccess] = js.native
-  def containerAsDataSetModuleRoleAccess(): DataSetModuleRoleAccess = js.native
-  def parameterName(): String = js.native
+  def constraintAccessList: IList[DataSetConstraintAccess] = js.native
+  def containerAsDataSetModuleRoleAccess: DataSetModuleRoleAccess = js.native
+  def parameterName: String = js.native
   def parameterName(newValue: String): js.Any = js.native
 }
 

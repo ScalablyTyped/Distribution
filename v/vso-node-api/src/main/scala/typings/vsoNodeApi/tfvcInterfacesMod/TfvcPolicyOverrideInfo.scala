@@ -13,7 +13,6 @@ object TfvcPolicyOverrideInfo {
   @scala.inline
   def apply(comment: String, policyFailures: js.Array[TfvcPolicyFailureInfo]): TfvcPolicyOverrideInfo = {
     val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], policyFailures = policyFailures.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TfvcPolicyOverrideInfo]
   }
 }

@@ -13,7 +13,6 @@ object AnonFolder {
   @scala.inline
   def apply(Folder: Folder): AnonFolder = {
     val __obj = js.Dynamic.literal(Folder = Folder.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFolder]
   }
 }

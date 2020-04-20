@@ -14,7 +14,6 @@ object AnonProjectPackageJson {
   @scala.inline
   def apply(projectPackageJson: ProjectPackageJson, shouldModifyScripts: Boolean): AnonProjectPackageJson = {
     val __obj = js.Dynamic.literal(projectPackageJson = projectPackageJson.asInstanceOf[js.Any], shouldModifyScripts = shouldModifyScripts.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonProjectPackageJson]
   }
 }

@@ -16,12 +16,10 @@ trait WdSpellingWordType extends js.Object
 
 object WdSpellingWordType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdAnagram: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdAnagram: `2` = this.cast(2)
+  def wdSpellword: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdSpellword: `0` = this.cast(0)
-  @scala.inline
-  def wdWildcard: `1` = this.cast(1)
+  def wdWildcard: `1` = 1.asInstanceOf[`1`]
 }
 

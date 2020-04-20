@@ -18,7 +18,6 @@ object LocationHelper {
     getRedirectQueryParam: Props => String
   ): LocationHelper[Props] = {
     val __obj = js.Dynamic.literal(createRedirectLoc = js.Any.fromFunction2(createRedirectLoc), getRedirectQueryParam = js.Any.fromFunction1(getRedirectQueryParam))
-  
     __obj.asInstanceOf[LocationHelper[Props]]
   }
 }

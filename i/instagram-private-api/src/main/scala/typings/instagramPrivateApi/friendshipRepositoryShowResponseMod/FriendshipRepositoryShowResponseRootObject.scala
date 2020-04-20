@@ -34,7 +34,6 @@ object FriendshipRepositoryShowResponseRootObject {
     status: String
   ): FriendshipRepositoryShowResponseRootObject = {
     val __obj = js.Dynamic.literal(blocking = blocking.asInstanceOf[js.Any], followed_by = followed_by.asInstanceOf[js.Any], following = following.asInstanceOf[js.Any], incoming_request = incoming_request.asInstanceOf[js.Any], is_bestie = is_bestie.asInstanceOf[js.Any], is_blocking_reel = is_blocking_reel.asInstanceOf[js.Any], is_muting_reel = is_muting_reel.asInstanceOf[js.Any], is_private = is_private.asInstanceOf[js.Any], muting = muting.asInstanceOf[js.Any], outgoing_request = outgoing_request.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FriendshipRepositoryShowResponseRootObject]
   }
 }

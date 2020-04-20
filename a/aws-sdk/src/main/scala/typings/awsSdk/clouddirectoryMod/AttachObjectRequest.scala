@@ -33,7 +33,6 @@ object AttachObjectRequest {
     ParentReference: ObjectReference
   ): AttachObjectRequest = {
     val __obj = js.Dynamic.literal(ChildReference = ChildReference.asInstanceOf[js.Any], DirectoryArn = DirectoryArn.asInstanceOf[js.Any], LinkName = LinkName.asInstanceOf[js.Any], ParentReference = ParentReference.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AttachObjectRequest]
   }
 }

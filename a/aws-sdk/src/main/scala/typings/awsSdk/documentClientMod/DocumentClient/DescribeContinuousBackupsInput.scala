@@ -16,7 +16,6 @@ object DescribeContinuousBackupsInput {
   @scala.inline
   def apply(TableName: TableName): DescribeContinuousBackupsInput = {
     val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeContinuousBackupsInput]
   }
 }

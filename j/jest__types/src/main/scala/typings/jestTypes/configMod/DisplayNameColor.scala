@@ -49,74 +49,72 @@ trait DisplayNameColor extends js.Object
 
 object DisplayNameColor {
   @scala.inline
-  def bgBlack: typings.jestTypes.jestTypesStrings.bgBlack = this.cast("bgBlack")
+  def bgBlack: typings.jestTypes.jestTypesStrings.bgBlack = "bgBlack".asInstanceOf[typings.jestTypes.jestTypesStrings.bgBlack]
   @scala.inline
-  def bgBlackBright: typings.jestTypes.jestTypesStrings.bgBlackBright = this.cast("bgBlackBright")
+  def bgBlackBright: typings.jestTypes.jestTypesStrings.bgBlackBright = "bgBlackBright".asInstanceOf[typings.jestTypes.jestTypesStrings.bgBlackBright]
   @scala.inline
-  def bgBlue: typings.jestTypes.jestTypesStrings.bgBlue = this.cast("bgBlue")
+  def bgBlue: typings.jestTypes.jestTypesStrings.bgBlue = "bgBlue".asInstanceOf[typings.jestTypes.jestTypesStrings.bgBlue]
   @scala.inline
-  def bgBlueBright: typings.jestTypes.jestTypesStrings.bgBlueBright = this.cast("bgBlueBright")
+  def bgBlueBright: typings.jestTypes.jestTypesStrings.bgBlueBright = "bgBlueBright".asInstanceOf[typings.jestTypes.jestTypesStrings.bgBlueBright]
   @scala.inline
-  def bgCyan: typings.jestTypes.jestTypesStrings.bgCyan = this.cast("bgCyan")
+  def bgCyan: typings.jestTypes.jestTypesStrings.bgCyan = "bgCyan".asInstanceOf[typings.jestTypes.jestTypesStrings.bgCyan]
   @scala.inline
-  def bgCyanBright: typings.jestTypes.jestTypesStrings.bgCyanBright = this.cast("bgCyanBright")
+  def bgCyanBright: typings.jestTypes.jestTypesStrings.bgCyanBright = "bgCyanBright".asInstanceOf[typings.jestTypes.jestTypesStrings.bgCyanBright]
   @scala.inline
-  def bgGreen: typings.jestTypes.jestTypesStrings.bgGreen = this.cast("bgGreen")
+  def bgGreen: typings.jestTypes.jestTypesStrings.bgGreen = "bgGreen".asInstanceOf[typings.jestTypes.jestTypesStrings.bgGreen]
   @scala.inline
-  def bgGreenBright: typings.jestTypes.jestTypesStrings.bgGreenBright = this.cast("bgGreenBright")
+  def bgGreenBright: typings.jestTypes.jestTypesStrings.bgGreenBright = "bgGreenBright".asInstanceOf[typings.jestTypes.jestTypesStrings.bgGreenBright]
   @scala.inline
-  def bgMagenta: typings.jestTypes.jestTypesStrings.bgMagenta = this.cast("bgMagenta")
+  def bgMagenta: typings.jestTypes.jestTypesStrings.bgMagenta = "bgMagenta".asInstanceOf[typings.jestTypes.jestTypesStrings.bgMagenta]
   @scala.inline
-  def bgMagentaBright: typings.jestTypes.jestTypesStrings.bgMagentaBright = this.cast("bgMagentaBright")
+  def bgMagentaBright: typings.jestTypes.jestTypesStrings.bgMagentaBright = "bgMagentaBright".asInstanceOf[typings.jestTypes.jestTypesStrings.bgMagentaBright]
   @scala.inline
-  def bgRed: typings.jestTypes.jestTypesStrings.bgRed = this.cast("bgRed")
+  def bgRed: typings.jestTypes.jestTypesStrings.bgRed = "bgRed".asInstanceOf[typings.jestTypes.jestTypesStrings.bgRed]
   @scala.inline
-  def bgRedBright: typings.jestTypes.jestTypesStrings.bgRedBright = this.cast("bgRedBright")
+  def bgRedBright: typings.jestTypes.jestTypesStrings.bgRedBright = "bgRedBright".asInstanceOf[typings.jestTypes.jestTypesStrings.bgRedBright]
   @scala.inline
-  def bgWhite: typings.jestTypes.jestTypesStrings.bgWhite = this.cast("bgWhite")
+  def bgWhite: typings.jestTypes.jestTypesStrings.bgWhite = "bgWhite".asInstanceOf[typings.jestTypes.jestTypesStrings.bgWhite]
   @scala.inline
-  def bgWhiteBright: typings.jestTypes.jestTypesStrings.bgWhiteBright = this.cast("bgWhiteBright")
+  def bgWhiteBright: typings.jestTypes.jestTypesStrings.bgWhiteBright = "bgWhiteBright".asInstanceOf[typings.jestTypes.jestTypesStrings.bgWhiteBright]
   @scala.inline
-  def bgYellow: typings.jestTypes.jestTypesStrings.bgYellow = this.cast("bgYellow")
+  def bgYellow: typings.jestTypes.jestTypesStrings.bgYellow = "bgYellow".asInstanceOf[typings.jestTypes.jestTypesStrings.bgYellow]
   @scala.inline
-  def bgYellowBright: typings.jestTypes.jestTypesStrings.bgYellowBright = this.cast("bgYellowBright")
+  def bgYellowBright: typings.jestTypes.jestTypesStrings.bgYellowBright = "bgYellowBright".asInstanceOf[typings.jestTypes.jestTypesStrings.bgYellowBright]
   @scala.inline
-  def black: typings.jestTypes.jestTypesStrings.black = this.cast("black")
+  def black: typings.jestTypes.jestTypesStrings.black = "black".asInstanceOf[typings.jestTypes.jestTypesStrings.black]
   @scala.inline
-  def blackBright: typings.jestTypes.jestTypesStrings.blackBright = this.cast("blackBright")
+  def blackBright: typings.jestTypes.jestTypesStrings.blackBright = "blackBright".asInstanceOf[typings.jestTypes.jestTypesStrings.blackBright]
   @scala.inline
-  def blue: typings.jestTypes.jestTypesStrings.blue = this.cast("blue")
+  def blue: typings.jestTypes.jestTypesStrings.blue = "blue".asInstanceOf[typings.jestTypes.jestTypesStrings.blue]
   @scala.inline
-  def blueBright: typings.jestTypes.jestTypesStrings.blueBright = this.cast("blueBright")
+  def blueBright: typings.jestTypes.jestTypesStrings.blueBright = "blueBright".asInstanceOf[typings.jestTypes.jestTypesStrings.blueBright]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cyan: typings.jestTypes.jestTypesStrings.cyan = "cyan".asInstanceOf[typings.jestTypes.jestTypesStrings.cyan]
   @scala.inline
-  def cyan: typings.jestTypes.jestTypesStrings.cyan = this.cast("cyan")
+  def cyanBright: typings.jestTypes.jestTypesStrings.cyanBright = "cyanBright".asInstanceOf[typings.jestTypes.jestTypesStrings.cyanBright]
   @scala.inline
-  def cyanBright: typings.jestTypes.jestTypesStrings.cyanBright = this.cast("cyanBright")
+  def gray: typings.jestTypes.jestTypesStrings.gray = "gray".asInstanceOf[typings.jestTypes.jestTypesStrings.gray]
   @scala.inline
-  def gray: typings.jestTypes.jestTypesStrings.gray = this.cast("gray")
+  def green: typings.jestTypes.jestTypesStrings.green = "green".asInstanceOf[typings.jestTypes.jestTypesStrings.green]
   @scala.inline
-  def green: typings.jestTypes.jestTypesStrings.green = this.cast("green")
+  def greenBright: typings.jestTypes.jestTypesStrings.greenBright = "greenBright".asInstanceOf[typings.jestTypes.jestTypesStrings.greenBright]
   @scala.inline
-  def greenBright: typings.jestTypes.jestTypesStrings.greenBright = this.cast("greenBright")
+  def grey: typings.jestTypes.jestTypesStrings.grey = "grey".asInstanceOf[typings.jestTypes.jestTypesStrings.grey]
   @scala.inline
-  def grey: typings.jestTypes.jestTypesStrings.grey = this.cast("grey")
+  def magenta: typings.jestTypes.jestTypesStrings.magenta = "magenta".asInstanceOf[typings.jestTypes.jestTypesStrings.magenta]
   @scala.inline
-  def magenta: typings.jestTypes.jestTypesStrings.magenta = this.cast("magenta")
+  def magentaBright: typings.jestTypes.jestTypesStrings.magentaBright = "magentaBright".asInstanceOf[typings.jestTypes.jestTypesStrings.magentaBright]
   @scala.inline
-  def magentaBright: typings.jestTypes.jestTypesStrings.magentaBright = this.cast("magentaBright")
+  def red: typings.jestTypes.jestTypesStrings.red = "red".asInstanceOf[typings.jestTypes.jestTypesStrings.red]
   @scala.inline
-  def red: typings.jestTypes.jestTypesStrings.red = this.cast("red")
+  def redBright: typings.jestTypes.jestTypesStrings.redBright = "redBright".asInstanceOf[typings.jestTypes.jestTypesStrings.redBright]
   @scala.inline
-  def redBright: typings.jestTypes.jestTypesStrings.redBright = this.cast("redBright")
+  def white: typings.jestTypes.jestTypesStrings.white = "white".asInstanceOf[typings.jestTypes.jestTypesStrings.white]
   @scala.inline
-  def white: typings.jestTypes.jestTypesStrings.white = this.cast("white")
+  def whiteBright: typings.jestTypes.jestTypesStrings.whiteBright = "whiteBright".asInstanceOf[typings.jestTypes.jestTypesStrings.whiteBright]
   @scala.inline
-  def whiteBright: typings.jestTypes.jestTypesStrings.whiteBright = this.cast("whiteBright")
+  def yellow: typings.jestTypes.jestTypesStrings.yellow = "yellow".asInstanceOf[typings.jestTypes.jestTypesStrings.yellow]
   @scala.inline
-  def yellow: typings.jestTypes.jestTypesStrings.yellow = this.cast("yellow")
-  @scala.inline
-  def yellowBright: typings.jestTypes.jestTypesStrings.yellowBright = this.cast("yellowBright")
+  def yellowBright: typings.jestTypes.jestTypesStrings.yellowBright = "yellowBright".asInstanceOf[typings.jestTypes.jestTypesStrings.yellowBright]
 }
 

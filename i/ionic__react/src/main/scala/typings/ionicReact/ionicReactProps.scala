@@ -10,268 +10,268 @@ trait ionicReactProps {
   def CreateAnimationProps: typings.ionicReact.createAnimationMod.CreateAnimationProps.type = typings.ionicReact.createAnimationMod.CreateAnimationProps
   type CreateAnimationProps = typings.ionicReact.createAnimationMod.CreateAnimationProps
   @scala.inline
-  def IonActionSheetProps: ActionSheetOptionsReactOv.type = typings.ionicReact.ActionSheetOptionsReactOv
+  def IonActionSheetProps: ActionSheetOptionsReactOv.type = ActionSheetOptionsReactOv
   type IonActionSheetProps = ActionSheetOptionsReactOv
   @scala.inline
-  def IonAlertProps: AlertOptionsReactControll.type = typings.ionicReact.AlertOptionsReactControll
+  def IonAlertProps: AlertOptionsReactControll.type = AlertOptionsReactControll
   type IonAlertProps = AlertOptionsReactControll
   @scala.inline
-  def IonAppProps: IonAppPickHTMLAttributesH.type = typings.ionicReact.IonAppPickHTMLAttributesH
+  def IonAppProps: IonAppPickHTMLAttributesH.type = IonAppPickHTMLAttributesH
   type IonAppProps = IonAppPickHTMLAttributesH
   @scala.inline
-  def IonAvatarProps: IonAvatarPickHTMLAttribut.type = typings.ionicReact.IonAvatarPickHTMLAttribut
+  def IonAvatarProps: IonAvatarPickHTMLAttribut.type = IonAvatarPickHTMLAttribut
   type IonAvatarProps = IonAvatarPickHTMLAttribut
   @scala.inline
-  def IonBackButtonInnerProps: PickIonBackButtondisabled.type = typings.ionicReact.PickIonBackButtondisabled
+  def IonBackButtonInnerProps: PickIonBackButtondisabled.type = PickIonBackButtondisabled
   type IonBackButtonInnerProps = PickIonBackButtondisabled
   @scala.inline
-  def IonBackdropProps: IonBackdropPickHTMLAttrib.type = typings.ionicReact.IonBackdropPickHTMLAttrib
+  def IonBackdropProps: IonBackdropPickHTMLAttrib.type = IonBackdropPickHTMLAttrib
   type IonBackdropProps = IonBackdropPickHTMLAttrib
   @scala.inline
-  def IonBadgeProps: IonBadgePickHTMLAttribute.type = typings.ionicReact.IonBadgePickHTMLAttribute
+  def IonBadgeProps: IonBadgePickHTMLAttribute.type = IonBadgePickHTMLAttribute
   type IonBadgeProps = IonBadgePickHTMLAttribute
   @scala.inline
-  def IonButtonProps: PickIonButtondisabledstro.type = typings.ionicReact.PickIonButtondisabledstro
+  def IonButtonProps: PickIonButtondisabledstro.type = PickIonButtondisabledstro
   type IonButtonProps = PickIonButtondisabledstro
   @scala.inline
-  def IonButtonsProps: IonButtonsPickHTMLAttribu.type = typings.ionicReact.IonButtonsPickHTMLAttribu
+  def IonButtonsProps: IonButtonsPickHTMLAttribu.type = IonButtonsPickHTMLAttribu
   type IonButtonsProps = IonButtonsPickHTMLAttribu
   @scala.inline
-  def IonCardProps: PickIonCarddisabledbutton.type = typings.ionicReact.PickIonCarddisabledbutton
+  def IonCardProps: PickIonCarddisabledbutton.type = PickIonCarddisabledbutton
   type IonCardProps = PickIonCarddisabledbutton
   @scala.inline
-  def IonCardContentProps: IonCardContentPickHTMLAtt.type = typings.ionicReact.IonCardContentPickHTMLAtt
+  def IonCardContentProps: IonCardContentPickHTMLAtt.type = IonCardContentPickHTMLAtt
   type IonCardContentProps = IonCardContentPickHTMLAtt
   @scala.inline
-  def IonCardHeaderProps: IonCardHeaderPickHTMLAttr.type = typings.ionicReact.IonCardHeaderPickHTMLAttr
+  def IonCardHeaderProps: IonCardHeaderPickHTMLAttr.type = IonCardHeaderPickHTMLAttr
   type IonCardHeaderProps = IonCardHeaderPickHTMLAttr
   @scala.inline
-  def IonCardSubtitleProps: IonCardSubtitlePickHTMLAt.type = typings.ionicReact.IonCardSubtitlePickHTMLAt
+  def IonCardSubtitleProps: IonCardSubtitlePickHTMLAt.type = IonCardSubtitlePickHTMLAt
   type IonCardSubtitleProps = IonCardSubtitlePickHTMLAt
   @scala.inline
-  def IonCardTitleProps: IonCardTitlePickHTMLAttri.type = typings.ionicReact.IonCardTitlePickHTMLAttri
+  def IonCardTitleProps: IonCardTitlePickHTMLAttri.type = IonCardTitlePickHTMLAttri
   type IonCardTitleProps = IonCardTitlePickHTMLAttri
   @scala.inline
-  def IonCheckboxProps: IonCheckboxPickHTMLAttrib.type = typings.ionicReact.IonCheckboxPickHTMLAttrib
+  def IonCheckboxProps: IonCheckboxPickHTMLAttrib.type = IonCheckboxPickHTMLAttrib
   type IonCheckboxProps = IonCheckboxPickHTMLAttrib
   @scala.inline
-  def IonChipProps: IonChipPickHTMLAttributes.type = typings.ionicReact.IonChipPickHTMLAttributes
+  def IonChipProps: IonChipPickHTMLAttributes.type = IonChipPickHTMLAttributes
   type IonChipProps = IonChipPickHTMLAttributes
   @scala.inline
-  def IonColProps: IonColPickHTMLAttributesH.type = typings.ionicReact.IonColPickHTMLAttributesH
+  def IonColProps: IonColPickHTMLAttributesH.type = IonColPickHTMLAttributesH
   type IonColProps = IonColPickHTMLAttributesH
   @scala.inline
-  def IonContentProps: IonContentPickHTMLAttribu.type = typings.ionicReact.IonContentPickHTMLAttribu
+  def IonContentProps: IonContentPickHTMLAttribu.type = IonContentPickHTMLAttribu
   type IonContentProps = IonContentPickHTMLAttribu
   @scala.inline
-  def IonDatetimeProps: IonDatetimePickHTMLAttrib.type = typings.ionicReact.IonDatetimePickHTMLAttrib
+  def IonDatetimeProps: IonDatetimePickHTMLAttrib.type = IonDatetimePickHTMLAttrib
   type IonDatetimeProps = IonDatetimePickHTMLAttrib
   @scala.inline
-  def IonFabProps: IonFabPickHTMLAttributesH.type = typings.ionicReact.IonFabPickHTMLAttributesH
+  def IonFabProps: IonFabPickHTMLAttributesH.type = IonFabPickHTMLAttributesH
   type IonFabProps = IonFabPickHTMLAttributesH
   @scala.inline
-  def IonFabButtonProps: PickIonFabButtonshowdisab.type = typings.ionicReact.PickIonFabButtonshowdisab
+  def IonFabButtonProps: PickIonFabButtonshowdisab.type = PickIonFabButtonshowdisab
   type IonFabButtonProps = PickIonFabButtonshowdisab
   @scala.inline
-  def IonFabListProps: IonFabListPickHTMLAttribu.type = typings.ionicReact.IonFabListPickHTMLAttribu
+  def IonFabListProps: IonFabListPickHTMLAttribu.type = IonFabListPickHTMLAttribu
   type IonFabListProps = IonFabListPickHTMLAttribu
   @scala.inline
-  def IonFooterProps: IonFooterPickHTMLAttribut.type = typings.ionicReact.IonFooterPickHTMLAttribut
+  def IonFooterProps: IonFooterPickHTMLAttribut.type = IonFooterPickHTMLAttribut
   type IonFooterProps = IonFooterPickHTMLAttribut
   @scala.inline
-  def IonGridProps: IonGridPickHTMLAttributes.type = typings.ionicReact.IonGridPickHTMLAttributes
+  def IonGridProps: IonGridPickHTMLAttributes.type = IonGridPickHTMLAttributes
   type IonGridProps = IonGridPickHTMLAttributes
   @scala.inline
-  def IonHeaderProps: IonHeaderPickHTMLAttribut.type = typings.ionicReact.IonHeaderPickHTMLAttribut
+  def IonHeaderProps: IonHeaderPickHTMLAttribut.type = IonHeaderPickHTMLAttribut
   type IonHeaderProps = IonHeaderPickHTMLAttribut
   @scala.inline
-  def IonIconProps: IonIconPropsIonicReactPro.type = typings.ionicReact.IonIconPropsIonicReactPro
+  def IonIconProps: IonIconPropsIonicReactPro.type = IonIconPropsIonicReactPro
   type IonIconProps = IonIconPropsIonicReactPro
   @scala.inline
-  def IonIconInnerProps: IonIconPickHTMLAttributes.type = typings.ionicReact.IonIconPickHTMLAttributes
+  def IonIconInnerProps: IonIconPickHTMLAttributes.type = IonIconPickHTMLAttributes
   type IonIconInnerProps = IonIconPickHTMLAttributes
   @scala.inline
-  def IonImgProps: IonImgPickHTMLAttributesH.type = typings.ionicReact.IonImgPickHTMLAttributesH
+  def IonImgProps: IonImgPickHTMLAttributesH.type = IonImgPickHTMLAttributesH
   type IonImgProps = IonImgPickHTMLAttributesH
   @scala.inline
-  def IonInfiniteScrollProps: IonInfiniteScrollPickHTML.type = typings.ionicReact.IonInfiniteScrollPickHTML
+  def IonInfiniteScrollProps: IonInfiniteScrollPickHTML.type = IonInfiniteScrollPickHTML
   type IonInfiniteScrollProps = IonInfiniteScrollPickHTML
   @scala.inline
-  def IonInfiniteScrollContentProps: IonInfiniteScrollContentP.type = typings.ionicReact.IonInfiniteScrollContentP
+  def IonInfiniteScrollContentProps: IonInfiniteScrollContentP.type = IonInfiniteScrollContentP
   type IonInfiniteScrollContentProps = IonInfiniteScrollContentP
   @scala.inline
-  def IonInputProps: IonInputPickHTMLAttribute.type = typings.ionicReact.IonInputPickHTMLAttribute
+  def IonInputProps: IonInputPickHTMLAttribute.type = IonInputPickHTMLAttribute
   type IonInputProps = IonInputPickHTMLAttribute
   @scala.inline
-  def IonItemProps: PickIonItemdisabledbutton.type = typings.ionicReact.PickIonItemdisabledbutton
+  def IonItemProps: PickIonItemdisabledbutton.type = PickIonItemdisabledbutton
   type IonItemProps = PickIonItemdisabledbutton
   @scala.inline
-  def IonItemDividerProps: IonItemDividerPickHTMLAtt.type = typings.ionicReact.IonItemDividerPickHTMLAtt
+  def IonItemDividerProps: IonItemDividerPickHTMLAtt.type = IonItemDividerPickHTMLAtt
   type IonItemDividerProps = IonItemDividerPickHTMLAtt
   @scala.inline
-  def IonItemGroupProps: IonItemGroupPickHTMLAttri.type = typings.ionicReact.IonItemGroupPickHTMLAttri
+  def IonItemGroupProps: IonItemGroupPickHTMLAttri.type = IonItemGroupPickHTMLAttri
   type IonItemGroupProps = IonItemGroupPickHTMLAttri
   @scala.inline
-  def IonItemOptionProps: PickIonItemOptiondisabled.type = typings.ionicReact.PickIonItemOptiondisabled
+  def IonItemOptionProps: PickIonItemOptiondisabled.type = PickIonItemOptiondisabled
   type IonItemOptionProps = PickIonItemOptiondisabled
   @scala.inline
-  def IonItemOptionsProps: IonItemOptionsPickHTMLAtt.type = typings.ionicReact.IonItemOptionsPickHTMLAtt
+  def IonItemOptionsProps: IonItemOptionsPickHTMLAtt.type = IonItemOptionsPickHTMLAtt
   type IonItemOptionsProps = IonItemOptionsPickHTMLAtt
   @scala.inline
-  def IonItemSlidingProps: IonItemSlidingPickHTMLAtt.type = typings.ionicReact.IonItemSlidingPickHTMLAtt
+  def IonItemSlidingProps: IonItemSlidingPickHTMLAtt.type = IonItemSlidingPickHTMLAtt
   type IonItemSlidingProps = IonItemSlidingPickHTMLAtt
   @scala.inline
-  def IonLabelProps: IonLabelPickHTMLAttribute.type = typings.ionicReact.IonLabelPickHTMLAttribute
+  def IonLabelProps: IonLabelPickHTMLAttribute.type = IonLabelPickHTMLAttribute
   type IonLabelProps = IonLabelPickHTMLAttribute
   @scala.inline
-  def IonListProps: IonListPickHTMLAttributes.type = typings.ionicReact.IonListPickHTMLAttributes
+  def IonListProps: IonListPickHTMLAttributes.type = IonListPickHTMLAttributes
   type IonListProps = IonListPickHTMLAttributes
   @scala.inline
-  def IonListHeaderProps: IonListHeaderPickHTMLAttr.type = typings.ionicReact.IonListHeaderPickHTMLAttr
+  def IonListHeaderProps: IonListHeaderPickHTMLAttr.type = IonListHeaderPickHTMLAttr
   type IonListHeaderProps = IonListHeaderPickHTMLAttr
   @scala.inline
-  def IonLoadingProps: LoadingOptionsReactContro.type = typings.ionicReact.LoadingOptionsReactContro
+  def IonLoadingProps: LoadingOptionsReactContro.type = LoadingOptionsReactContro
   type IonLoadingProps = LoadingOptionsReactContro
   @scala.inline
-  def IonMenuProps: IonMenuPickHTMLAttributes.type = typings.ionicReact.IonMenuPickHTMLAttributes
+  def IonMenuProps: IonMenuPickHTMLAttributes.type = IonMenuPickHTMLAttributes
   type IonMenuProps = IonMenuPickHTMLAttributes
   @scala.inline
-  def IonMenuButtonProps: IonMenuButtonPickHTMLAttr.type = typings.ionicReact.IonMenuButtonPickHTMLAttr
+  def IonMenuButtonProps: IonMenuButtonPickHTMLAttr.type = IonMenuButtonPickHTMLAttr
   type IonMenuButtonProps = IonMenuButtonPickHTMLAttr
   @scala.inline
-  def IonMenuToggleProps: IonMenuTogglePickHTMLAttr.type = typings.ionicReact.IonMenuTogglePickHTMLAttr
+  def IonMenuToggleProps: IonMenuTogglePickHTMLAttr.type = IonMenuTogglePickHTMLAttr
   type IonMenuToggleProps = IonMenuTogglePickHTMLAttr
   @scala.inline
-  def IonModalProps: childrenReactNodeforwarde.type = typings.ionicReact.childrenReactNodeforwarde
+  def IonModalProps: childrenReactNodeforwarde.type = childrenReactNodeforwarde
   type IonModalProps = childrenReactNodeforwarde
   @scala.inline
-  def IonNavProps: IonNavPickHTMLAttributesH.type = typings.ionicReact.IonNavPickHTMLAttributesH
+  def IonNavProps: IonNavPickHTMLAttributesH.type = IonNavPickHTMLAttributesH
   type IonNavProps = IonNavPickHTMLAttributesH
   @scala.inline
-  def IonNoteProps: IonNotePickHTMLAttributes.type = typings.ionicReact.IonNotePickHTMLAttributes
+  def IonNoteProps: IonNotePickHTMLAttributes.type = IonNotePickHTMLAttributes
   type IonNoteProps = IonNotePickHTMLAttributes
   @scala.inline
-  def IonPageProps: PickHTMLAttributesunknown.type = typings.ionicReact.PickHTMLAttributesunknown
+  def IonPageProps: PickHTMLAttributesunknown.type = PickHTMLAttributesunknown
   type IonPageProps = PickHTMLAttributesunknown
   @scala.inline
-  def IonPickerProps: PickerOptionsReactControl.type = typings.ionicReact.PickerOptionsReactControl
+  def IonPickerProps: PickerOptionsReactControl.type = PickerOptionsReactControl
   type IonPickerProps = PickerOptionsReactControl
   @scala.inline
-  def IonPickerColumnProps: IonPickerColumnPickHTMLAt.type = typings.ionicReact.IonPickerColumnPickHTMLAt
+  def IonPickerColumnProps: IonPickerColumnPickHTMLAt.type = IonPickerColumnPickHTMLAt
   type IonPickerColumnProps = IonPickerColumnPickHTMLAt
   @scala.inline
-  def IonPopoverProps: childrenReactNodeforwardeAnimated.type = typings.ionicReact.childrenReactNodeforwardeAnimated
+  def IonPopoverProps: childrenReactNodeforwardeAnimated.type = childrenReactNodeforwardeAnimated
   type IonPopoverProps = childrenReactNodeforwardeAnimated
   @scala.inline
-  def IonProgressBarProps: IonProgressBarPickHTMLAtt.type = typings.ionicReact.IonProgressBarPickHTMLAtt
+  def IonProgressBarProps: IonProgressBarPickHTMLAtt.type = IonProgressBarPickHTMLAtt
   type IonProgressBarProps = IonProgressBarPickHTMLAtt
   @scala.inline
-  def IonRadioProps: IonRadioPickHTMLAttribute.type = typings.ionicReact.IonRadioPickHTMLAttribute
+  def IonRadioProps: IonRadioPickHTMLAttribute.type = IonRadioPickHTMLAttribute
   type IonRadioProps = IonRadioPickHTMLAttribute
   @scala.inline
-  def IonRadioGroupProps: IonRadioGroupPickHTMLAttr.type = typings.ionicReact.IonRadioGroupPickHTMLAttr
+  def IonRadioGroupProps: IonRadioGroupPickHTMLAttr.type = IonRadioGroupPickHTMLAttr
   type IonRadioGroupProps = IonRadioGroupPickHTMLAttr
   @scala.inline
-  def IonRangeProps: IonRangePickHTMLAttribute.type = typings.ionicReact.IonRangePickHTMLAttribute
+  def IonRangeProps: IonRangePickHTMLAttribute.type = IonRangePickHTMLAttribute
   type IonRangeProps = IonRangePickHTMLAttribute
   @scala.inline
-  def IonRefresherProps: IonRefresherPickHTMLAttri.type = typings.ionicReact.IonRefresherPickHTMLAttri
+  def IonRefresherProps: IonRefresherPickHTMLAttri.type = IonRefresherPickHTMLAttri
   type IonRefresherProps = IonRefresherPickHTMLAttri
   @scala.inline
-  def IonRefresherContentProps: IonRefresherContentPickHT.type = typings.ionicReact.IonRefresherContentPickHT
+  def IonRefresherContentProps: IonRefresherContentPickHT.type = IonRefresherContentPickHT
   type IonRefresherContentProps = IonRefresherContentPickHT
   @scala.inline
-  def IonReorderProps: IonReorderPickHTMLAttribu.type = typings.ionicReact.IonReorderPickHTMLAttribu
+  def IonReorderProps: IonReorderPickHTMLAttribu.type = IonReorderPickHTMLAttribu
   type IonReorderProps = IonReorderPickHTMLAttribu
   @scala.inline
-  def IonReorderGroupProps: IonReorderGroupPickHTMLAt.type = typings.ionicReact.IonReorderGroupPickHTMLAt
+  def IonReorderGroupProps: IonReorderGroupPickHTMLAt.type = IonReorderGroupPickHTMLAt
   type IonReorderGroupProps = IonReorderGroupPickHTMLAt
   @scala.inline
-  def IonRippleEffectProps: IonRippleEffectPickHTMLAt.type = typings.ionicReact.IonRippleEffectPickHTMLAt
+  def IonRippleEffectProps: IonRippleEffectPickHTMLAt.type = IonRippleEffectPickHTMLAt
   type IonRippleEffectProps = IonRippleEffectPickHTMLAt
   @scala.inline
-  def IonRouterLinkProps: PickIonRouterLinkcolorhre.type = typings.ionicReact.PickIonRouterLinkcolorhre
+  def IonRouterLinkProps: PickIonRouterLinkcolorhre.type = PickIonRouterLinkcolorhre
   type IonRouterLinkProps = PickIonRouterLinkcolorhre
   @scala.inline
-  def IonRouterOutletProps: PickIonicReactExternalPro.type = typings.ionicReact.PickIonicReactExternalPro
+  def IonRouterOutletProps: PickIonicReactExternalPro.type = PickIonicReactExternalPro
   type IonRouterOutletProps = PickIonicReactExternalPro
   @scala.inline
-  def IonRouterOutletInnerProps: IonRouterOutletPickHTMLAt.type = typings.ionicReact.IonRouterOutletPickHTMLAt
+  def IonRouterOutletInnerProps: IonRouterOutletPickHTMLAt.type = IonRouterOutletPickHTMLAt
   type IonRouterOutletInnerProps = IonRouterOutletPickHTMLAt
   @scala.inline
-  def IonRowProps: IonRowPickHTMLAttributesH.type = typings.ionicReact.IonRowPickHTMLAttributesH
+  def IonRowProps: IonRowPickHTMLAttributesH.type = IonRowPickHTMLAttributesH
   type IonRowProps = IonRowPickHTMLAttributesH
   @scala.inline
-  def IonSearchbarProps: IonSearchbarPickHTMLAttri.type = typings.ionicReact.IonSearchbarPickHTMLAttri
+  def IonSearchbarProps: IonSearchbarPickHTMLAttri.type = IonSearchbarPickHTMLAttri
   type IonSearchbarProps = IonSearchbarPickHTMLAttri
   @scala.inline
-  def IonSegmentProps: IonSegmentPickHTMLAttribu.type = typings.ionicReact.IonSegmentPickHTMLAttribu
+  def IonSegmentProps: IonSegmentPickHTMLAttribu.type = IonSegmentPickHTMLAttribu
   type IonSegmentProps = IonSegmentPickHTMLAttribu
   @scala.inline
-  def IonSegmentButtonProps: IonSegmentButtonPickHTMLA.type = typings.ionicReact.IonSegmentButtonPickHTMLA
+  def IonSegmentButtonProps: IonSegmentButtonPickHTMLA.type = IonSegmentButtonPickHTMLA
   type IonSegmentButtonProps = IonSegmentButtonPickHTMLA
   @scala.inline
-  def IonSelectProps: IonSelectPickHTMLAttribut.type = typings.ionicReact.IonSelectPickHTMLAttribut
+  def IonSelectProps: IonSelectPickHTMLAttribut.type = IonSelectPickHTMLAttribut
   type IonSelectProps = IonSelectPickHTMLAttribut
   @scala.inline
-  def IonSelectOptionProps: IonSelectOptionPickHTMLAt.type = typings.ionicReact.IonSelectOptionPickHTMLAt
+  def IonSelectOptionProps: IonSelectOptionPickHTMLAt.type = IonSelectOptionPickHTMLAt
   type IonSelectOptionProps = IonSelectOptionPickHTMLAt
   @scala.inline
-  def IonSelectPopoverProps: IonSelectPopoverPickHTMLA.type = typings.ionicReact.IonSelectPopoverPickHTMLA
+  def IonSelectPopoverProps: IonSelectPopoverPickHTMLA.type = IonSelectPopoverPickHTMLA
   type IonSelectPopoverProps = IonSelectPopoverPickHTMLA
   @scala.inline
-  def IonSkeletonTextProps: IonSkeletonTextPickHTMLAt.type = typings.ionicReact.IonSkeletonTextPickHTMLAt
+  def IonSkeletonTextProps: IonSkeletonTextPickHTMLAt.type = IonSkeletonTextPickHTMLAt
   type IonSkeletonTextProps = IonSkeletonTextPickHTMLAt
   @scala.inline
-  def IonSlideProps: IonSlidePickHTMLAttribute.type = typings.ionicReact.IonSlidePickHTMLAttribute
+  def IonSlideProps: IonSlidePickHTMLAttribute.type = IonSlidePickHTMLAttribute
   type IonSlideProps = IonSlidePickHTMLAttribute
   @scala.inline
-  def IonSlidesProps: IonSlidesPickHTMLAttribut.type = typings.ionicReact.IonSlidesPickHTMLAttribut
+  def IonSlidesProps: IonSlidesPickHTMLAttribut.type = IonSlidesPickHTMLAttribut
   type IonSlidesProps = IonSlidesPickHTMLAttribut
   @scala.inline
-  def IonSpinnerProps: IonSpinnerPickHTMLAttribu.type = typings.ionicReact.IonSpinnerPickHTMLAttribu
+  def IonSpinnerProps: IonSpinnerPickHTMLAttribu.type = IonSpinnerPickHTMLAttribu
   type IonSpinnerProps = IonSpinnerPickHTMLAttribu
   @scala.inline
-  def IonSplitPaneProps: IonSplitPanePickHTMLAttri.type = typings.ionicReact.IonSplitPanePickHTMLAttri
+  def IonSplitPaneProps: IonSplitPanePickHTMLAttri.type = IonSplitPanePickHTMLAttri
   type IonSplitPaneProps = IonSplitPanePickHTMLAttri
   @scala.inline
-  def IonTabProps: IonTabPickHTMLAttributesH.type = typings.ionicReact.IonTabPickHTMLAttributesH
+  def IonTabProps: IonTabPickHTMLAttributesH.type = IonTabPickHTMLAttributesH
   type IonTabProps = IonTabPickHTMLAttributesH
   @scala.inline
-  def IonTabBarProps: Props.type = typings.ionicReact.ionTabBarMod.Props
+  def IonTabBarProps: Props.type = Props
   type IonTabBarProps = Props
   @scala.inline
-  def IonTabBarInnerProps: IonTabBarPickHTMLAttribut.type = typings.ionicReact.IonTabBarPickHTMLAttribut
+  def IonTabBarInnerProps: IonTabBarPickHTMLAttribut.type = IonTabBarPickHTMLAttribut
   type IonTabBarInnerProps = IonTabBarPickHTMLAttribut
   @scala.inline
-  def IonTabButtonProps: IonTabButtonPickHTMLAttri.type = typings.ionicReact.IonTabButtonPickHTMLAttri
+  def IonTabButtonProps: IonTabButtonPickHTMLAttri.type = IonTabButtonPickHTMLAttri
   type IonTabButtonProps = IonTabButtonPickHTMLAttri
   @scala.inline
   def IonTabsProps: typings.ionicReact.ionTabsMod.Props.type = typings.ionicReact.ionTabsMod.Props
   type IonTabsProps = typings.ionicReact.ionTabsMod.Props
   @scala.inline
-  def IonTextProps: IonTextPickHTMLAttributes.type = typings.ionicReact.IonTextPickHTMLAttributes
+  def IonTextProps: IonTextPickHTMLAttributes.type = IonTextPickHTMLAttributes
   type IonTextProps = IonTextPickHTMLAttributes
   @scala.inline
-  def IonTextareaProps: IonTextareaPickHTMLAttrib.type = typings.ionicReact.IonTextareaPickHTMLAttrib
+  def IonTextareaProps: IonTextareaPickHTMLAttrib.type = IonTextareaPickHTMLAttrib
   type IonTextareaProps = IonTextareaPickHTMLAttrib
   @scala.inline
-  def IonThumbnailProps: IonThumbnailPickHTMLAttri.type = typings.ionicReact.IonThumbnailPickHTMLAttri
+  def IonThumbnailProps: IonThumbnailPickHTMLAttri.type = IonThumbnailPickHTMLAttri
   type IonThumbnailProps = IonThumbnailPickHTMLAttri
   @scala.inline
-  def IonTitleProps: IonTitlePickHTMLAttribute.type = typings.ionicReact.IonTitlePickHTMLAttribute
+  def IonTitleProps: IonTitlePickHTMLAttribute.type = IonTitlePickHTMLAttribute
   type IonTitleProps = IonTitlePickHTMLAttribute
   @scala.inline
-  def IonToastProps: ToastOptionsReactControll.type = typings.ionicReact.ToastOptionsReactControll
+  def IonToastProps: ToastOptionsReactControll.type = ToastOptionsReactControll
   type IonToastProps = ToastOptionsReactControll
   @scala.inline
-  def IonToggleProps: IonTogglePickHTMLAttribut.type = typings.ionicReact.IonTogglePickHTMLAttribut
+  def IonToggleProps: IonTogglePickHTMLAttribut.type = IonTogglePickHTMLAttribut
   type IonToggleProps = IonTogglePickHTMLAttribut
   @scala.inline
-  def IonToolbarProps: IonToolbarPickHTMLAttribu.type = typings.ionicReact.IonToolbarPickHTMLAttribu
+  def IonToolbarProps: IonToolbarPickHTMLAttribu.type = IonToolbarPickHTMLAttribu
   type IonToolbarProps = IonToolbarPickHTMLAttribu
   @scala.inline
-  def IonVirtualScrollProps: IonVirtualScrollPickHTMLA.type = typings.ionicReact.IonVirtualScrollPickHTMLA
+  def IonVirtualScrollProps: IonVirtualScrollPickHTMLA.type = IonVirtualScrollPickHTMLA
   type IonVirtualScrollProps = IonVirtualScrollPickHTMLA
 }
 

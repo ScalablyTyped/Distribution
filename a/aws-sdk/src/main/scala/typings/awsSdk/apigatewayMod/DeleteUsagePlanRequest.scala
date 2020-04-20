@@ -16,7 +16,6 @@ object DeleteUsagePlanRequest {
   @scala.inline
   def apply(usagePlanId: String): DeleteUsagePlanRequest = {
     val __obj = js.Dynamic.literal(usagePlanId = usagePlanId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteUsagePlanRequest]
   }
 }

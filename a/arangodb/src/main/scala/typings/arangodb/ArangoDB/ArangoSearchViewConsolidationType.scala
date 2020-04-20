@@ -14,14 +14,12 @@ trait ArangoSearchViewConsolidationType extends js.Object
 
 object ArangoSearchViewConsolidationType {
   @scala.inline
-  def bytes: typings.arangodb.arangodbStrings.bytes = this.cast("bytes")
+  def bytes: typings.arangodb.arangodbStrings.bytes = "bytes".asInstanceOf[typings.arangodb.arangodbStrings.bytes]
   @scala.inline
-  def bytes_accum: typings.arangodb.arangodbStrings.bytes_accum = this.cast("bytes_accum")
+  def bytes_accum: typings.arangodb.arangodbStrings.bytes_accum = "bytes_accum".asInstanceOf[typings.arangodb.arangodbStrings.bytes_accum]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def count: typings.arangodb.arangodbStrings.count = "count".asInstanceOf[typings.arangodb.arangodbStrings.count]
   @scala.inline
-  def count: typings.arangodb.arangodbStrings.count = this.cast("count")
-  @scala.inline
-  def fill: typings.arangodb.arangodbStrings.fill = this.cast("fill")
+  def fill: typings.arangodb.arangodbStrings.fill = "fill".asInstanceOf[typings.arangodb.arangodbStrings.fill]
 }
 

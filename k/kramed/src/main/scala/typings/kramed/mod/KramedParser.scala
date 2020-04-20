@@ -12,7 +12,6 @@ object KramedParser {
   @scala.inline
   def apply(parse: js.Array[_] => String): KramedParser = {
     val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse))
-  
     __obj.asInstanceOf[KramedParser]
   }
 }

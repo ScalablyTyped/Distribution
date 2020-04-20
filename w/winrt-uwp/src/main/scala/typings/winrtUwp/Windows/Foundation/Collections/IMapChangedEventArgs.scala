@@ -16,7 +16,6 @@ object IMapChangedEventArgs {
   @scala.inline
   def apply[K](collectionChange: CollectionChange, key: K): IMapChangedEventArgs[K] = {
     val __obj = js.Dynamic.literal(collectionChange = collectionChange.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMapChangedEventArgs[K]]
   }
 }

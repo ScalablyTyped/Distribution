@@ -47,7 +47,6 @@ object PriorityQueue {
     size: () => Double
   ): PriorityQueue[T] = {
     val __obj = js.Dynamic.literal(deq = js.Any.fromFunction0(deq), enq = js.Any.fromFunction1(enq), forEach = js.Any.fromFunction1(forEach), isEmpty = js.Any.fromFunction0(isEmpty), peek = js.Any.fromFunction0(peek), size = js.Any.fromFunction0(size))
-  
     __obj.asInstanceOf[PriorityQueue[T]]
   }
 }

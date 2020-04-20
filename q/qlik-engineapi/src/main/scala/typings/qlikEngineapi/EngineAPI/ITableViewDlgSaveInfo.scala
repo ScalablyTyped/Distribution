@@ -30,7 +30,6 @@ object ITableViewDlgSaveInfo {
   @scala.inline
   def apply(qCtlInfo: ITableViewCtlSaveInfo, qMode: Double, qPos: IRect): ITableViewDlgSaveInfo = {
     val __obj = js.Dynamic.literal(qCtlInfo = qCtlInfo.asInstanceOf[js.Any], qMode = qMode.asInstanceOf[js.Any], qPos = qPos.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ITableViewDlgSaveInfo]
   }
 }

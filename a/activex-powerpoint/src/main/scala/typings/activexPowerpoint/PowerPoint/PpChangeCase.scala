@@ -20,16 +20,14 @@ trait PpChangeCase extends js.Object
 
 object PpChangeCase {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ppCaseLower: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def ppCaseLower: `2` = this.cast(2)
+  def ppCaseSentence: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def ppCaseSentence: `1` = this.cast(1)
+  def ppCaseTitle: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def ppCaseTitle: `4` = this.cast(4)
+  def ppCaseToggle: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def ppCaseToggle: `5` = this.cast(5)
-  @scala.inline
-  def ppCaseUpper: `3` = this.cast(3)
+  def ppCaseUpper: `3` = 3.asInstanceOf[`3`]
 }
 

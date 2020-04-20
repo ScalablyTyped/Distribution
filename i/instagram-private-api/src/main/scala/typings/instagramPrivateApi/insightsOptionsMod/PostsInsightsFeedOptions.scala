@@ -43,7 +43,6 @@ object PostsInsightsFeedOptions {
     timeframe: ONE_WEEK | ONE_MONTH | THREE_MONTHS | SIX_MONTHS | ONE_YEAR | TWO_YEARS
   ): PostsInsightsFeedOptions = {
     val __obj = js.Dynamic.literal(dataOrdering = dataOrdering.asInstanceOf[js.Any], postType = postType.asInstanceOf[js.Any], timeframe = timeframe.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PostsInsightsFeedOptions]
   }
 }

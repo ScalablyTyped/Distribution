@@ -37,7 +37,7 @@ trait Iteratoranyanyanyany extends js.Object {
   /**
     * @inheritDoc
     */
-  def first(): js.Any = js.native
+  def first: js.Any = js.native
   def next(): Iterator[
     /* import warning: RewrittenClass.unapply cls was tparam Key */ _, 
     /* import warning: RewrittenClass.unapply cls was tparam T */ _, 
@@ -62,7 +62,7 @@ trait Iteratoranyanyanyany extends js.Object {
   /**
     * @inheritDoc
     */
-  def second(): js.Any = js.native
+  def second: js.Any = js.native
   /**
     * @inheritDoc
     */
@@ -74,6 +74,6 @@ trait Iteratoranyanyanyany extends js.Object {
   /**
     * @inheritDoc
     */
-  def value(): Entryanyany = js.native
+  def value: Entryanyany = js.native
 }
 

@@ -13,7 +13,6 @@ object PickImplinteger {
   @scala.inline
   def apply(integer: String): PickImplinteger = {
     val __obj = js.Dynamic.literal(integer = integer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplinteger]
   }
 }

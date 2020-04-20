@@ -13,12 +13,10 @@ trait LineJoinType extends js.Object
 
 object LineJoinType {
   @scala.inline
-  def bevel: typings.reactNativeMaps.reactNativeMapsStrings.bevel = this.cast("bevel")
+  def bevel: typings.reactNativeMaps.reactNativeMapsStrings.bevel = "bevel".asInstanceOf[typings.reactNativeMaps.reactNativeMapsStrings.bevel]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def miter: typings.reactNativeMaps.reactNativeMapsStrings.miter = "miter".asInstanceOf[typings.reactNativeMaps.reactNativeMapsStrings.miter]
   @scala.inline
-  def miter: typings.reactNativeMaps.reactNativeMapsStrings.miter = this.cast("miter")
-  @scala.inline
-  def round: typings.reactNativeMaps.reactNativeMapsStrings.round = this.cast("round")
+  def round: typings.reactNativeMaps.reactNativeMapsStrings.round = "round".asInstanceOf[typings.reactNativeMaps.reactNativeMapsStrings.round]
 }
 

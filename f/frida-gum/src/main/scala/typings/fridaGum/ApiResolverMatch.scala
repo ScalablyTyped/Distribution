@@ -19,7 +19,6 @@ object ApiResolverMatch {
   @scala.inline
   def apply(address: NativePointer, name: String): ApiResolverMatch = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ApiResolverMatch]
   }
 }

@@ -13,7 +13,6 @@ object IPageScrollOption {
   @scala.inline
   def apply(scrollTop: Double): IPageScrollOption = {
     val __obj = js.Dynamic.literal(scrollTop = scrollTop.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPageScrollOption]
   }
 }

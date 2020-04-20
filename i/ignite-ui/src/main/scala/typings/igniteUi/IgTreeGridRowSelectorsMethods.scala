@@ -74,7 +74,6 @@ object IgTreeGridRowSelectorsMethods {
     uncheckedRows: () => js.Array[_]
   ): IgTreeGridRowSelectorsMethods = {
     val __obj = js.Dynamic.literal(changeCheckState = js.Any.fromFunction2(changeCheckState), changeCheckStateById = js.Any.fromFunction2(changeCheckStateById), changeLocale = js.Any.fromFunction0(changeLocale), checkStateById = js.Any.fromFunction1(checkStateById), checkedRows = js.Any.fromFunction0(checkedRows), destroy = js.Any.fromFunction0(destroy), partiallyCheckedRows = js.Any.fromFunction0(partiallyCheckedRows), rsRenderColgroup = js.Any.fromFunction0(rsRenderColgroup), toggleCheckState = js.Any.fromFunction1(toggleCheckState), toggleCheckStateById = js.Any.fromFunction1(toggleCheckStateById), uncheckedRows = js.Any.fromFunction0(uncheckedRows))
-  
     __obj.asInstanceOf[IgTreeGridRowSelectorsMethods]
   }
 }

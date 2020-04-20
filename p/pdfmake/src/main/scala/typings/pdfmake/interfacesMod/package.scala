@@ -56,5 +56,11 @@ package object interfacesMod {
   type StyleDictionary = org.scalablytyped.runtime.StringDictionary[typings.pdfmake.interfacesMod.Style]
   type TFontDictionary = org.scalablytyped.runtime.StringDictionary[typings.pdfmake.interfacesMod.TFontFamilyTypes]
   type TableCell = js.Object | (typings.pdfmake.interfacesMod.Content with typings.pdfmake.AnonBorder)
+  /* Rewritten from type alias, can be one of: 
+    - java.lang.String
+    - typings.pdfmake.interfacesMod.PredefinedTableLayout
+    - typings.pdfmake.interfacesMod.CustomTableLayout
+  */
+  type TableLayout = typings.pdfmake.interfacesMod._TableLayout | java.lang.String
   type UnorderedListElement = typings.pdfmake.interfacesMod.Content with typings.pdfmake.AnonListType
 }

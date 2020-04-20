@@ -79,7 +79,7 @@ class AttachmentsModel () extends IAttachmentsModel {
     * A signal emitted when the model changes.
     */
   @JSName("changed")
-  def changed_MAttachmentsModel(): ISignal[this.type, ChangedArgs] = js.native
+  def changed_MAttachmentsModel: ISignal[this.type, ChangedArgs] = js.native
   /**
     * Clear all of the attachments.
     */
@@ -120,17 +120,17 @@ class AttachmentsModel () extends IAttachmentsModel {
     * Test whether the model is disposed.
     */
   @JSName("isDisposed")
-  def isDisposed_MAttachmentsModel(): Boolean = js.native
+  def isDisposed_MAttachmentsModel: Boolean = js.native
   /**
     * The keys of the attachments in the model.
     */
   @JSName("keys")
-  def keys_MAttachmentsModel(): js.Array[String] = js.native
+  def keys_MAttachmentsModel: js.Array[String] = js.native
   /**
     * Get the length of the items in the model.
     */
   @JSName("length")
-  def length_MAttachmentsModel(): Double = js.native
+  def length_MAttachmentsModel: Double = js.native
   /**
     * Remove the attachment whose name is the specified key.
     * Note that this is optional only until Jupyterlab 2.0 release.
@@ -146,7 +146,7 @@ class AttachmentsModel () extends IAttachmentsModel {
     * A signal emitted when the model state changes.
     */
   @JSName("stateChanged")
-  def stateChanged_MAttachmentsModel(): ISignal[IAttachmentsModel, Unit] = js.native
+  def stateChanged_MAttachmentsModel: ISignal[IAttachmentsModel, Unit] = js.native
   /**
     * Serialize the model to JSON.
     */

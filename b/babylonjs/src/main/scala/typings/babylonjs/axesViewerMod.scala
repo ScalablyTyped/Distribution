@@ -70,11 +70,11 @@ object axesViewerMod extends js.Object {
       */
     def update(position: Vector3, xaxis: Vector3, yaxis: Vector3, zaxis: Vector3): Unit = js.native
     /** Gets the node hierarchy used to render x-axis */
-    def xAxis(): TransformNode = js.native
+    def xAxis: TransformNode = js.native
     /** Gets the node hierarchy used to render y-axis */
-    def yAxis(): TransformNode = js.native
+    def yAxis: TransformNode = js.native
     /** Gets the node hierarchy used to render z-axis */
-    def zAxis(): TransformNode = js.native
+    def zAxis: TransformNode = js.native
   }
   
   /* static members */

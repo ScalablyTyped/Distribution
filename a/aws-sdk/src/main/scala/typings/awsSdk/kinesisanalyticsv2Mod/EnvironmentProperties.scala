@@ -16,7 +16,6 @@ object EnvironmentProperties {
   @scala.inline
   def apply(PropertyGroups: PropertyGroups): EnvironmentProperties = {
     val __obj = js.Dynamic.literal(PropertyGroups = PropertyGroups.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EnvironmentProperties]
   }
 }

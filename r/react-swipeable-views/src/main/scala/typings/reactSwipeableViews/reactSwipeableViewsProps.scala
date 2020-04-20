@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactSwipeableViewsProps {
   @scala.inline
-  def ReactSwipeableViewsProps: SwipeableViewsProps.type = typings.reactSwipeableViews.mod.SwipeableViewsProps
+  def ReactSwipeableViewsProps: SwipeableViewsProps.type = SwipeableViewsProps
   type ReactSwipeableViewsProps = SwipeableViewsProps
 }
 

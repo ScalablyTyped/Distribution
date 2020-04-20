@@ -13,7 +13,6 @@ object AnonRel {
   @scala.inline
   def apply(rel: String, url: String): AnonRel = {
     val __obj = js.Dynamic.literal(rel = rel.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRel]
   }
 }

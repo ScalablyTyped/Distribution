@@ -16,7 +16,6 @@ object CreateFieldLevelEncryptionProfileRequest {
   @scala.inline
   def apply(FieldLevelEncryptionProfileConfig: FieldLevelEncryptionProfileConfig): CreateFieldLevelEncryptionProfileRequest = {
     val __obj = js.Dynamic.literal(FieldLevelEncryptionProfileConfig = FieldLevelEncryptionProfileConfig.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateFieldLevelEncryptionProfileRequest]
   }
 }

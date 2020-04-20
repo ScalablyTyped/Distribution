@@ -15,7 +15,6 @@ object AnonMYRSGD {
   @scala.inline
   def apply(MYR: js.Array[String], SGD: js.Array[String], THB: js.Array[String], TWD: js.Array[String]): AnonMYRSGD = {
     val __obj = js.Dynamic.literal(MYR = MYR.asInstanceOf[js.Any], SGD = SGD.asInstanceOf[js.Any], THB = THB.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMYRSGD]
   }
 }

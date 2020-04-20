@@ -1,5 +1,6 @@
 package typings.curriable
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Parameters
 import typings.std.ReturnType
 import typings.std.Symbol
@@ -27,7 +28,7 @@ object mod extends js.Object {
   type Cast[X, Y] = Y | X
   type CleanedGaps[T /* <: js.Array[_] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: std.NonNullable<T[K]>}
-    */ typings.curriable.curriableStrings.CleanedGaps with T
+    */ typings.curriable.curriableStrings.CleanedGaps with TopLevel[T]
   type Concat[T1 /* <: js.Array[_] */, T2 /* <: js.Array[_] */] = Reverse[Cast[js.Any, js.Array[js.Any]], T2, js.Array[js.Any]]
   type Curried[Fn /* <: Handler */] = Curry_[Fn] with AnonArity[Fn]
   type Curry_[F /* <: Handler */] = js.Function1[
@@ -48,7 +49,7 @@ object mod extends js.Object {
   type Next[I /* <: js.Array[_] */] = Prepend[js.Any, I]
   type PartialGaps[T /* <: js.Array[_] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]:? T[K] | curriable.curriable.Placeholder}
-    */ typings.curriable.curriableStrings.PartialGaps with T
+    */ typings.curriable.curriableStrings.PartialGaps with TopLevel[T]
   type Placeholder = Symbol | Double
   type Pos[I /* <: js.Array[_] */] = Length[I]
   type Prepend[E, T /* <: js.Array[_] */] = T

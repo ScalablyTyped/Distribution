@@ -16,7 +16,6 @@ object DescribeSigningJobRequest {
   @scala.inline
   def apply(jobId: JobId): DescribeSigningJobRequest = {
     val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeSigningJobRequest]
   }
 }

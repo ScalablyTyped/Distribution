@@ -15,7 +15,6 @@ object Window {
   @scala.inline
   def apply(__viewport__ : ViewportConfiguration, viewport: Viewport): Window = {
     val __obj = js.Dynamic.literal(__viewport__ = __viewport__.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Window]
   }
 }

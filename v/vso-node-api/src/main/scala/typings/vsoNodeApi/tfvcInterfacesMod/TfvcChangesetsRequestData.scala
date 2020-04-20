@@ -23,7 +23,6 @@ object TfvcChangesetsRequestData {
   @scala.inline
   def apply(changesetIds: js.Array[Double], commentLength: Double, includeLinks: Boolean): TfvcChangesetsRequestData = {
     val __obj = js.Dynamic.literal(changesetIds = changesetIds.asInstanceOf[js.Any], commentLength = commentLength.asInstanceOf[js.Any], includeLinks = includeLinks.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TfvcChangesetsRequestData]
   }
 }

@@ -24,7 +24,6 @@ object Types {
     multihash: Multihash
   ): Types = {
     val __obj = js.Dynamic.literal(Buffer = Buffer.asInstanceOf[js.Any], CID = CID.asInstanceOf[js.Any], PeerId = PeerId.asInstanceOf[js.Any], PeerInfo = PeerInfo.asInstanceOf[js.Any], multiaddr = multiaddr.asInstanceOf[js.Any], multihash = multihash.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Types]
   }
 }

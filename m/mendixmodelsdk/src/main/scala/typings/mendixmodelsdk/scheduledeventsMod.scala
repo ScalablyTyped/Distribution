@@ -60,21 +60,21 @@ object scheduledeventsMod extends js.Object {
       @JSName("model")
       var model_FScheduledEvent: IModel = js.native
       @JSName("containerAsFolderBase")
-      def containerAsFolderBase_MScheduledEvent(): FolderBase = js.native
-      def enabled(): Boolean = js.native
+      def containerAsFolderBase_MScheduledEvent: FolderBase = js.native
+      def enabled: Boolean = js.native
       def enabled(newValue: Boolean): js.Any = js.native
-      def interval(): Double = js.native
+      def interval: Double = js.native
       def interval(newValue: Double): js.Any = js.native
-      def intervalType(): IntervalType = js.native
+      def intervalType: IntervalType = js.native
       def intervalType(newValue: IntervalType): js.Any = js.native
       def microflow(): js.Any = js.native
       def microflow(newValue: IMicroflow): js.Any = js.native
-      def microflowQualifiedName(): String | Null = js.native
+      def microflowQualifiedName: String | Null = js.native
       @JSName("microflow")
-      def microflow_Union(): IMicroflow | Null = js.native
-      def startDateTime(): String = js.native
+      def microflow_Union: IMicroflow | Null = js.native
+      def startDateTime: String = js.native
       def startDateTime(newValue: String): js.Any = js.native
-      def timeZone(): TimeZoneEnum = js.native
+      def timeZone: TimeZoneEnum = js.native
       def timeZone(newValue: TimeZoneEnum): js.Any = js.native
     }
     

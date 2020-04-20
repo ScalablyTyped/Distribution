@@ -28,7 +28,6 @@ object AnonDel {
     wrap: js.Function
   ): AnonDel = {
     val __obj = js.Dynamic.literal(del = del.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], getAndPassUp = getAndPassUp.asInstanceOf[js.Any], mget = mget.asInstanceOf[js.Any], mset = mset.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any], set = set.asInstanceOf[js.Any], wrap = wrap.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDel]
   }
 }

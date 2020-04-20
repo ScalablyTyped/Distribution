@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait reactDataGridProps {
   @scala.inline
-  def AutoCompleteProps: AutoCompleteEditorProps.type = typings.reactDataGrid.AdazzleReactDataGridPlugins.AutoCompleteEditorProps
+  def AutoCompleteProps: AutoCompleteEditorProps.type = AutoCompleteEditorProps
   type AutoCompleteProps = AutoCompleteEditorProps
   @scala.inline
   def AutoCompleteTokensEditorProps: typings.reactDataGrid.AdazzleReactDataGridPlugins.AutoCompleteTokensEditorProps.type = typings.reactDataGrid.AdazzleReactDataGridPlugins.AutoCompleteTokensEditorProps
@@ -17,7 +17,7 @@ trait reactDataGridProps {
   def DropDownEditorProps: typings.reactDataGrid.AdazzleReactDataGridPlugins.DropDownEditorProps.type = typings.reactDataGrid.AdazzleReactDataGridPlugins.DropDownEditorProps
   type DropDownEditorProps = typings.reactDataGrid.AdazzleReactDataGridPlugins.DropDownEditorProps
   @scala.inline
-  def ReactDataGridProps: GridProps.type = typings.reactDataGrid.AdazzleReactDataGrid.GridProps
+  def ReactDataGridProps: GridProps.type = GridProps
   type ReactDataGridProps[T] = GridProps[T]
 }
 

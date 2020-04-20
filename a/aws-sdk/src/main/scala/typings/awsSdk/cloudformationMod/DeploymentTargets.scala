@@ -11,7 +11,7 @@ trait DeploymentTargets extends js.Object {
     */
   var Accounts: js.UndefOr[AccountList] = js.native
   /**
-    * The organization root ID or organizational unit (OUs) IDs to which StackSets deploys.
+    * The organization root ID or organizational unit (OU) IDs to which StackSets deploys.
     */
   var OrganizationalUnitIds: js.UndefOr[OrganizationalUnitIdList] = js.native
 }

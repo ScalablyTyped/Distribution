@@ -20,7 +20,6 @@ object DeleteJourneyRequest {
   @scala.inline
   def apply(ApplicationId: string, JourneyId: string): DeleteJourneyRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], JourneyId = JourneyId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteJourneyRequest]
   }
 }

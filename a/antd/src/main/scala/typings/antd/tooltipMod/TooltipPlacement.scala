@@ -22,30 +22,28 @@ trait TooltipPlacement extends js.Object
 
 object TooltipPlacement {
   @scala.inline
-  def bottom: typings.antd.antdStrings.bottom = this.cast("bottom")
+  def bottom: typings.antd.antdStrings.bottom = "bottom".asInstanceOf[typings.antd.antdStrings.bottom]
   @scala.inline
-  def bottomLeft: typings.antd.antdStrings.bottomLeft = this.cast("bottomLeft")
+  def bottomLeft: typings.antd.antdStrings.bottomLeft = "bottomLeft".asInstanceOf[typings.antd.antdStrings.bottomLeft]
   @scala.inline
-  def bottomRight: typings.antd.antdStrings.bottomRight = this.cast("bottomRight")
+  def bottomRight: typings.antd.antdStrings.bottomRight = "bottomRight".asInstanceOf[typings.antd.antdStrings.bottomRight]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def left: typings.antd.antdStrings.left = "left".asInstanceOf[typings.antd.antdStrings.left]
   @scala.inline
-  def left: typings.antd.antdStrings.left = this.cast("left")
+  def leftBottom: typings.antd.antdStrings.leftBottom = "leftBottom".asInstanceOf[typings.antd.antdStrings.leftBottom]
   @scala.inline
-  def leftBottom: typings.antd.antdStrings.leftBottom = this.cast("leftBottom")
+  def leftTop: typings.antd.antdStrings.leftTop = "leftTop".asInstanceOf[typings.antd.antdStrings.leftTop]
   @scala.inline
-  def leftTop: typings.antd.antdStrings.leftTop = this.cast("leftTop")
+  def right: typings.antd.antdStrings.right = "right".asInstanceOf[typings.antd.antdStrings.right]
   @scala.inline
-  def right: typings.antd.antdStrings.right = this.cast("right")
+  def rightBottom: typings.antd.antdStrings.rightBottom = "rightBottom".asInstanceOf[typings.antd.antdStrings.rightBottom]
   @scala.inline
-  def rightBottom: typings.antd.antdStrings.rightBottom = this.cast("rightBottom")
+  def rightTop: typings.antd.antdStrings.rightTop = "rightTop".asInstanceOf[typings.antd.antdStrings.rightTop]
   @scala.inline
-  def rightTop: typings.antd.antdStrings.rightTop = this.cast("rightTop")
+  def top: typings.antd.antdStrings.top = "top".asInstanceOf[typings.antd.antdStrings.top]
   @scala.inline
-  def top: typings.antd.antdStrings.top = this.cast("top")
+  def topLeft: typings.antd.antdStrings.topLeft = "topLeft".asInstanceOf[typings.antd.antdStrings.topLeft]
   @scala.inline
-  def topLeft: typings.antd.antdStrings.topLeft = this.cast("topLeft")
-  @scala.inline
-  def topRight: typings.antd.antdStrings.topRight = this.cast("topRight")
+  def topRight: typings.antd.antdStrings.topRight = "topRight".asInstanceOf[typings.antd.antdStrings.topRight]
 }
 

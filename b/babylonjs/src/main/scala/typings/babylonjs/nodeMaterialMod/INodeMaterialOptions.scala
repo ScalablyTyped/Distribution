@@ -15,7 +15,6 @@ object INodeMaterialOptions {
   @scala.inline
   def apply(emitComments: Boolean): INodeMaterialOptions = {
     val __obj = js.Dynamic.literal(emitComments = emitComments.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INodeMaterialOptions]
   }
 }

@@ -46,7 +46,6 @@ object Typeofdatavisualization {
     TreeMap: TypeofTreeMap
   ): Typeofdatavisualization = {
     val __obj = js.Dynamic.literal(Barcode = Barcode.asInstanceOf[js.Any], BulletGraph = BulletGraph.asInstanceOf[js.Any], Chart = Chart.asInstanceOf[js.Any], CircularGauge = CircularGauge.asInstanceOf[js.Any], Diagram = Diagram.asInstanceOf[js.Any], DigitalGauge = DigitalGauge.asInstanceOf[js.Any], HeatMap = HeatMap.asInstanceOf[js.Any], HeatMapLegend = HeatMapLegend.asInstanceOf[js.Any], LinearGauge = LinearGauge.asInstanceOf[js.Any], Map = Map.asInstanceOf[js.Any], Overview = Overview.asInstanceOf[js.Any], RangeNavigator = RangeNavigator.asInstanceOf[js.Any], Sparkline = Sparkline.asInstanceOf[js.Any], Sunburst = Sunburst.asInstanceOf[js.Any], SunburstChart = SunburstChart.asInstanceOf[js.Any], SymbolPalette = SymbolPalette.asInstanceOf[js.Any], TreeMap = TreeMap.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Typeofdatavisualization]
   }
 }

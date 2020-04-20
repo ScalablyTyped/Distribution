@@ -25,7 +25,6 @@ object GetLedgerResult {
   @scala.inline
   def apply(arn: String, deletionProtection: Boolean, id: String, name: String): GetLedgerResult = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], deletionProtection = deletionProtection.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetLedgerResult]
   }
 }

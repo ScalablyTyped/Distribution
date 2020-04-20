@@ -1,9 +1,9 @@
 package typings.chromeApps.chrome.networking.config
 
 import typings.chromeApps.chromeAppsStrings.failed_
-import typings.chromeApps.chromeAppsStrings.rejected
-import typings.chromeApps.chromeAppsStrings.succeeded
-import typings.chromeApps.chromeAppsStrings.unhandled
+import typings.chromeApps.chromeAppsStrings.rejected_
+import typings.chromeApps.chromeAppsStrings.succeeded_
+import typings.chromeApps.chromeAppsStrings.unhandled_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,8 +19,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object AuthenticationResult extends js.Object {
   var FAILED: failed_ = js.native
-  var REJECTED: rejected = js.native
-  var SUCCEEDED: succeeded = js.native
-  var UNHANDLED: unhandled = js.native
+  var REJECTED: rejected_ = js.native
+  var SUCCEEDED: succeeded_ = js.native
+  var UNHANDLED: unhandled_ = js.native
 }
 

@@ -24,7 +24,6 @@ object AcknowledgeThirdPartyJobInput {
   @scala.inline
   def apply(clientToken: ClientToken, jobId: ThirdPartyJobId, nonce: Nonce): AcknowledgeThirdPartyJobInput = {
     val __obj = js.Dynamic.literal(clientToken = clientToken.asInstanceOf[js.Any], jobId = jobId.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AcknowledgeThirdPartyJobInput]
   }
 }

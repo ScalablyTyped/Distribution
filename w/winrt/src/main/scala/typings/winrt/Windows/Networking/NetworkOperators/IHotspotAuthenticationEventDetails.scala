@@ -12,7 +12,6 @@ object IHotspotAuthenticationEventDetails {
   @scala.inline
   def apply(eventToken: String): IHotspotAuthenticationEventDetails = {
     val __obj = js.Dynamic.literal(eventToken = eventToken.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IHotspotAuthenticationEventDetails]
   }
 }

@@ -13,7 +13,6 @@ object AnimationFrameProvider {
   @scala.inline
   def apply(cancelAnimationFrame: Double => Unit, requestAnimationFrame: FrameRequestCallback => Double): AnimationFrameProvider = {
     val __obj = js.Dynamic.literal(cancelAnimationFrame = js.Any.fromFunction1(cancelAnimationFrame), requestAnimationFrame = js.Any.fromFunction1(requestAnimationFrame))
-  
     __obj.asInstanceOf[AnimationFrameProvider]
   }
 }

@@ -23,32 +23,30 @@ trait EasingFunction extends js.Object
 
 object EasingFunction {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def easeInCubic: typings.vis.visStrings.easeInCubic = "easeInCubic".asInstanceOf[typings.vis.visStrings.easeInCubic]
   @scala.inline
-  def easeInCubic: typings.vis.visStrings.easeInCubic = this.cast("easeInCubic")
+  def easeInOutCubic: typings.vis.visStrings.easeInOutCubic = "easeInOutCubic".asInstanceOf[typings.vis.visStrings.easeInOutCubic]
   @scala.inline
-  def easeInOutCubic: typings.vis.visStrings.easeInOutCubic = this.cast("easeInOutCubic")
+  def easeInOutQuad: typings.vis.visStrings.easeInOutQuad = "easeInOutQuad".asInstanceOf[typings.vis.visStrings.easeInOutQuad]
   @scala.inline
-  def easeInOutQuad: typings.vis.visStrings.easeInOutQuad = this.cast("easeInOutQuad")
+  def easeInOutQuart: typings.vis.visStrings.easeInOutQuart = "easeInOutQuart".asInstanceOf[typings.vis.visStrings.easeInOutQuart]
   @scala.inline
-  def easeInOutQuart: typings.vis.visStrings.easeInOutQuart = this.cast("easeInOutQuart")
+  def easeInOutQuint: typings.vis.visStrings.easeInOutQuint = "easeInOutQuint".asInstanceOf[typings.vis.visStrings.easeInOutQuint]
   @scala.inline
-  def easeInOutQuint: typings.vis.visStrings.easeInOutQuint = this.cast("easeInOutQuint")
+  def easeInQuad: typings.vis.visStrings.easeInQuad = "easeInQuad".asInstanceOf[typings.vis.visStrings.easeInQuad]
   @scala.inline
-  def easeInQuad: typings.vis.visStrings.easeInQuad = this.cast("easeInQuad")
+  def easeInQuart: typings.vis.visStrings.easeInQuart = "easeInQuart".asInstanceOf[typings.vis.visStrings.easeInQuart]
   @scala.inline
-  def easeInQuart: typings.vis.visStrings.easeInQuart = this.cast("easeInQuart")
+  def easeInQuint: typings.vis.visStrings.easeInQuint = "easeInQuint".asInstanceOf[typings.vis.visStrings.easeInQuint]
   @scala.inline
-  def easeInQuint: typings.vis.visStrings.easeInQuint = this.cast("easeInQuint")
+  def easeOutCubic: typings.vis.visStrings.easeOutCubic = "easeOutCubic".asInstanceOf[typings.vis.visStrings.easeOutCubic]
   @scala.inline
-  def easeOutCubic: typings.vis.visStrings.easeOutCubic = this.cast("easeOutCubic")
+  def easeOutQuad: typings.vis.visStrings.easeOutQuad = "easeOutQuad".asInstanceOf[typings.vis.visStrings.easeOutQuad]
   @scala.inline
-  def easeOutQuad: typings.vis.visStrings.easeOutQuad = this.cast("easeOutQuad")
+  def easeOutQuart: typings.vis.visStrings.easeOutQuart = "easeOutQuart".asInstanceOf[typings.vis.visStrings.easeOutQuart]
   @scala.inline
-  def easeOutQuart: typings.vis.visStrings.easeOutQuart = this.cast("easeOutQuart")
+  def easeOutQuint: typings.vis.visStrings.easeOutQuint = "easeOutQuint".asInstanceOf[typings.vis.visStrings.easeOutQuint]
   @scala.inline
-  def easeOutQuint: typings.vis.visStrings.easeOutQuint = this.cast("easeOutQuint")
-  @scala.inline
-  def linear: typings.vis.visStrings.linear = this.cast("linear")
+  def linear: typings.vis.visStrings.linear = "linear".asInstanceOf[typings.vis.visStrings.linear]
 }
 

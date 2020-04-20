@@ -16,7 +16,6 @@ object StopMonitoringMembersResponse {
   @scala.inline
   def apply(UnprocessedAccounts: UnprocessedAccounts): StopMonitoringMembersResponse = {
     val __obj = js.Dynamic.literal(UnprocessedAccounts = UnprocessedAccounts.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopMonitoringMembersResponse]
   }
 }

@@ -40,38 +40,36 @@ trait FIND extends js.Object
 
 object FIND {
   @scala.inline
-  def ALL: `255` = this.cast(255)
+  def ALL: `255` = 255.asInstanceOf[`255`]
   @scala.inline
-  def AND_BREAK_REWRITES: `48` = this.cast(48)
+  def AND_BREAK_REWRITES: `48` = 48.asInstanceOf[`48`]
   @scala.inline
-  def BREAK_REWRITES: `32` = this.cast(32)
+  def BREAK_REWRITES: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def BREAK_REWRITES_FOR_RENAMES_ONLY: `32768` = this.cast(32768)
+  def BREAK_REWRITES_FOR_RENAMES_ONLY: `32768` = 32768.asInstanceOf[`32768`]
   @scala.inline
-  def BY_CONFIG: `0` = this.cast(0)
+  def BY_CONFIG: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def COPIES: `4` = this.cast(4)
+  def COPIES: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def COPIES_FROM_UNMODIFIED: `8` = this.cast(8)
+  def COPIES_FROM_UNMODIFIED: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def DONT_IGNORE_WHITESPACE: `8192` = this.cast(8192)
+  def DONT_IGNORE_WHITESPACE: `8192` = 8192.asInstanceOf[`8192`]
   @scala.inline
-  def EXACT_MATCH_ONLY: `16384` = this.cast(16384)
+  def EXACT_MATCH_ONLY: `16384` = 16384.asInstanceOf[`16384`]
   @scala.inline
-  def FOR_UNTRACKED: `64` = this.cast(64)
+  def FOR_UNTRACKED: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def IGNORE_LEADING_WHITESPACE: `0` = this.cast(0)
+  def IGNORE_LEADING_WHITESPACE: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def IGNORE_WHITESPACE: `4096` = this.cast(4096)
+  def IGNORE_WHITESPACE: `4096` = 4096.asInstanceOf[`4096`]
   @scala.inline
-  def REMOVE_UNMODIFIED: `65536` = this.cast(65536)
+  def REMOVE_UNMODIFIED: `65536` = 65536.asInstanceOf[`65536`]
   @scala.inline
-  def RENAMES: `1` = this.cast(1)
+  def RENAMES: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def RENAMES_FROM_REWRITES: `2` = this.cast(2)
+  def RENAMES_FROM_REWRITES: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def REWRITES: `16` = this.cast(16)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def REWRITES: `16` = 16.asInstanceOf[`16`]
 }
 

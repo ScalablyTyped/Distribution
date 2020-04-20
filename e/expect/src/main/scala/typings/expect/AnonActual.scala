@@ -14,7 +14,6 @@ object AnonActual {
   @scala.inline
   def apply(actual: js.Any, error: js.Any, expected: Double): AnonActual = {
     val __obj = js.Dynamic.literal(actual = actual.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], expected = expected.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonActual]
   }
 }

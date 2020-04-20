@@ -13,7 +13,6 @@ object ThrottleMetadata {
   @scala.inline
   def apply(backoffCount: Double, throttleEndTimeMillis: Double): ThrottleMetadata = {
     val __obj = js.Dynamic.literal(backoffCount = backoffCount.asInstanceOf[js.Any], throttleEndTimeMillis = throttleEndTimeMillis.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ThrottleMetadata]
   }
 }

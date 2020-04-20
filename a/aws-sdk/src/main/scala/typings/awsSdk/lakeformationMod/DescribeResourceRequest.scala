@@ -16,7 +16,6 @@ object DescribeResourceRequest {
   @scala.inline
   def apply(ResourceArn: ResourceArnString): DescribeResourceRequest = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeResourceRequest]
   }
 }

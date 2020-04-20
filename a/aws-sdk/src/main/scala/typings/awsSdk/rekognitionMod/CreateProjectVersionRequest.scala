@@ -38,7 +38,6 @@ object CreateProjectVersionRequest {
     VersionName: VersionName
   ): CreateProjectVersionRequest = {
     val __obj = js.Dynamic.literal(OutputConfig = OutputConfig.asInstanceOf[js.Any], ProjectArn = ProjectArn.asInstanceOf[js.Any], TestingData = TestingData.asInstanceOf[js.Any], TrainingData = TrainingData.asInstanceOf[js.Any], VersionName = VersionName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateProjectVersionRequest]
   }
 }

@@ -15,7 +15,6 @@ object GetWeRunDataSuccessCallbackResult {
   @scala.inline
   def apply(encryptedData: String, iv: String): GetWeRunDataSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(encryptedData = encryptedData.asInstanceOf[js.Any], iv = iv.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetWeRunDataSuccessCallbackResult]
   }
 }

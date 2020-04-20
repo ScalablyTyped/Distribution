@@ -52,48 +52,46 @@ trait XlParameterDataType extends js.Object
 
 object XlParameterDataType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlParamTypeBigInt: `-5` = -5.asInstanceOf[`-5`]
   @scala.inline
-  def xlParamTypeBigInt: `-5` = this.cast(-5)
+  def xlParamTypeBinary: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def xlParamTypeBinary: `-2` = this.cast(-2)
+  def xlParamTypeBit: `-7` = -7.asInstanceOf[`-7`]
   @scala.inline
-  def xlParamTypeBit: `-7` = this.cast(-7)
+  def xlParamTypeChar: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlParamTypeChar: `1` = this.cast(1)
+  def xlParamTypeDate: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def xlParamTypeDate: `9` = this.cast(9)
+  def xlParamTypeDecimal: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlParamTypeDecimal: `3` = this.cast(3)
+  def xlParamTypeDouble: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def xlParamTypeDouble: `8` = this.cast(8)
+  def xlParamTypeFloat: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def xlParamTypeFloat: `6` = this.cast(6)
+  def xlParamTypeInteger: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlParamTypeInteger: `4` = this.cast(4)
+  def xlParamTypeLongVarBinary: `-4` = -4.asInstanceOf[`-4`]
   @scala.inline
-  def xlParamTypeLongVarBinary: `-4` = this.cast(-4)
+  def xlParamTypeLongVarChar: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def xlParamTypeLongVarChar: `-1` = this.cast(-1)
+  def xlParamTypeNumeric: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlParamTypeNumeric: `2` = this.cast(2)
+  def xlParamTypeReal: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def xlParamTypeReal: `7` = this.cast(7)
+  def xlParamTypeSmallInt: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xlParamTypeSmallInt: `5` = this.cast(5)
+  def xlParamTypeTime: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def xlParamTypeTime: `10` = this.cast(10)
+  def xlParamTypeTimestamp: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def xlParamTypeTimestamp: `11` = this.cast(11)
+  def xlParamTypeTinyInt: `-6` = -6.asInstanceOf[`-6`]
   @scala.inline
-  def xlParamTypeTinyInt: `-6` = this.cast(-6)
+  def xlParamTypeUnknown: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def xlParamTypeUnknown: `0` = this.cast(0)
+  def xlParamTypeVarBinary: `-3` = -3.asInstanceOf[`-3`]
   @scala.inline
-  def xlParamTypeVarBinary: `-3` = this.cast(-3)
+  def xlParamTypeVarChar: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def xlParamTypeVarChar: `12` = this.cast(12)
-  @scala.inline
-  def xlParamTypeWChar: `-8` = this.cast(-8)
+  def xlParamTypeWChar: `-8` = -8.asInstanceOf[`-8`]
 }
 

@@ -16,7 +16,6 @@ object GetReusableDelegationSetResponse {
   @scala.inline
   def apply(DelegationSet: DelegationSet): GetReusableDelegationSetResponse = {
     val __obj = js.Dynamic.literal(DelegationSet = DelegationSet.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetReusableDelegationSetResponse]
   }
 }

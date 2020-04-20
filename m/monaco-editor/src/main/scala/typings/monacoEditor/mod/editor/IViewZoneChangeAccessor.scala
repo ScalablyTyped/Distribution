@@ -27,7 +27,6 @@ object IViewZoneChangeAccessor {
   @scala.inline
   def apply(addZone: IViewZone => String, layoutZone: String => Unit, removeZone: String => Unit): IViewZoneChangeAccessor = {
     val __obj = js.Dynamic.literal(addZone = js.Any.fromFunction1(addZone), layoutZone = js.Any.fromFunction1(layoutZone), removeZone = js.Any.fromFunction1(removeZone))
-  
     __obj.asInstanceOf[IViewZoneChangeAccessor]
   }
 }

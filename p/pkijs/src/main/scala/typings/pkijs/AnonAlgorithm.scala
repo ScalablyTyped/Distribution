@@ -15,7 +15,6 @@ object AnonAlgorithm {
   @scala.inline
   def apply(algorithm: Algorithm, usages: js.Array[KeyUsage]): AnonAlgorithm = {
     val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any], usages = usages.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAlgorithm]
   }
 }

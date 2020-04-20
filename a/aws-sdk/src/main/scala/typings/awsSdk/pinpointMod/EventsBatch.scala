@@ -20,7 +20,6 @@ object EventsBatch {
   @scala.inline
   def apply(Endpoint: PublicEndpoint, Events: MapOfEvent): EventsBatch = {
     val __obj = js.Dynamic.literal(Endpoint = Endpoint.asInstanceOf[js.Any], Events = Events.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventsBatch]
   }
 }

@@ -19,20 +19,18 @@ trait menuBase extends js.Object
 
 object menuBase {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def menuItemColonaddContact: typings.jweixin.jweixinStrings.menuItemColonaddContact = "menuItem:addContact".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColonaddContact]
   @scala.inline
-  def menuItemColonaddContact: typings.jweixin.jweixinStrings.menuItemColonaddContact = this.cast("menuItem:addContact")
+  def menuItemColondayMode: typings.jweixin.jweixinStrings.menuItemColondayMode = "menuItem:dayMode".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColondayMode]
   @scala.inline
-  def menuItemColondayMode: typings.jweixin.jweixinStrings.menuItemColondayMode = this.cast("menuItem:dayMode")
+  def menuItemColonexposeArticle: typings.jweixin.jweixinStrings.menuItemColonexposeArticle = "menuItem:exposeArticle".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColonexposeArticle]
   @scala.inline
-  def menuItemColonexposeArticle: typings.jweixin.jweixinStrings.menuItemColonexposeArticle = this.cast("menuItem:exposeArticle")
+  def menuItemColonnightMode: typings.jweixin.jweixinStrings.menuItemColonnightMode = "menuItem:nightMode".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColonnightMode]
   @scala.inline
-  def menuItemColonnightMode: typings.jweixin.jweixinStrings.menuItemColonnightMode = this.cast("menuItem:nightMode")
+  def menuItemColonprofile: typings.jweixin.jweixinStrings.menuItemColonprofile = "menuItem:profile".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColonprofile]
   @scala.inline
-  def menuItemColonprofile: typings.jweixin.jweixinStrings.menuItemColonprofile = this.cast("menuItem:profile")
+  def menuItemColonrefresh: typings.jweixin.jweixinStrings.menuItemColonrefresh = "menuItem:refresh".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColonrefresh]
   @scala.inline
-  def menuItemColonrefresh: typings.jweixin.jweixinStrings.menuItemColonrefresh = this.cast("menuItem:refresh")
-  @scala.inline
-  def menuItemColonsetFont: typings.jweixin.jweixinStrings.menuItemColonsetFont = this.cast("menuItem:setFont")
+  def menuItemColonsetFont: typings.jweixin.jweixinStrings.menuItemColonsetFont = "menuItem:setFont".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColonsetFont]
 }
 

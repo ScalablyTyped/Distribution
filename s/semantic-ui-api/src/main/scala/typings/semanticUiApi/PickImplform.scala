@@ -13,7 +13,6 @@ object PickImplform {
   @scala.inline
   def apply(form: String): PickImplform = {
     val __obj = js.Dynamic.literal(form = form.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplform]
   }
 }

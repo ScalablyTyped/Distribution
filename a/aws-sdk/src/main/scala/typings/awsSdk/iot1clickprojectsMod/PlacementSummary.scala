@@ -28,7 +28,6 @@ object PlacementSummary {
   @scala.inline
   def apply(createdDate: Time, placementName: PlacementName, projectName: ProjectName, updatedDate: Time): PlacementSummary = {
     val __obj = js.Dynamic.literal(createdDate = createdDate.asInstanceOf[js.Any], placementName = placementName.asInstanceOf[js.Any], projectName = projectName.asInstanceOf[js.Any], updatedDate = updatedDate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PlacementSummary]
   }
 }

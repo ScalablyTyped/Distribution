@@ -14,7 +14,6 @@ object GetAmiProductCode {
   @scala.inline
   def apply(productCodeId: String, productCodeType: String): GetAmiProductCode = {
     val __obj = js.Dynamic.literal(productCodeId = productCodeId.asInstanceOf[js.Any], productCodeType = productCodeType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetAmiProductCode]
   }
 }

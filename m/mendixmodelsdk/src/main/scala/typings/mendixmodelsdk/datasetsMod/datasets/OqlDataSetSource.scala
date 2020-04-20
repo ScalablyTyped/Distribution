@@ -22,12 +22,12 @@ class OqlDataSetSource protected () extends DataSetSource {
   ) = this()
   @JSName("model")
   var model_FOqlDataSetSource: IModel = js.native
-  def ignoreErrorsInQuery(): Boolean = js.native
+  def ignoreErrorsInQuery: Boolean = js.native
   def ignoreErrorsInQuery(newValue: Boolean): js.Any = js.native
   /**
     * The value of this property is conceptually of type oql.OqlQuery.
     */
-  def query(): String = js.native
+  def query: String = js.native
   def query(newValue: String): js.Any = js.native
 }
 

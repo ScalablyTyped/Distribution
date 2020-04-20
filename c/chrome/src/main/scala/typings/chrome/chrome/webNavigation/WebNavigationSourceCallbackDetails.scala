@@ -27,7 +27,6 @@ object WebNavigationSourceCallbackDetails {
     url: String
   ): WebNavigationSourceCallbackDetails = {
     val __obj = js.Dynamic.literal(sourceFrameId = sourceFrameId.asInstanceOf[js.Any], sourceProcessId = sourceProcessId.asInstanceOf[js.Any], sourceTabId = sourceTabId.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WebNavigationSourceCallbackDetails]
   }
 }

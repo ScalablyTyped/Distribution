@@ -20,7 +20,6 @@ object WorkflowExecutionTimedOutEventAttributes {
   @scala.inline
   def apply(childPolicy: ChildPolicy, timeoutType: WorkflowExecutionTimeoutType): WorkflowExecutionTimedOutEventAttributes = {
     val __obj = js.Dynamic.literal(childPolicy = childPolicy.asInstanceOf[js.Any], timeoutType = timeoutType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WorkflowExecutionTimedOutEventAttributes]
   }
 }

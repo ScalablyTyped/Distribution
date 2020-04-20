@@ -18,7 +18,6 @@ object IgGridRowSelectorsMethods {
   @scala.inline
   def apply(changeLocale: () => Unit, destroy: () => Unit, rsRenderColgroup: () => Unit): IgGridRowSelectorsMethods = {
     val __obj = js.Dynamic.literal(changeLocale = js.Any.fromFunction0(changeLocale), destroy = js.Any.fromFunction0(destroy), rsRenderColgroup = js.Any.fromFunction0(rsRenderColgroup))
-  
     __obj.asInstanceOf[IgGridRowSelectorsMethods]
   }
 }

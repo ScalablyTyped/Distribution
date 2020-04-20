@@ -16,7 +16,6 @@ object DeleteRolePermissionsBoundaryRequest {
   @scala.inline
   def apply(RoleName: roleNameType): DeleteRolePermissionsBoundaryRequest = {
     val __obj = js.Dynamic.literal(RoleName = RoleName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteRolePermissionsBoundaryRequest]
   }
 }

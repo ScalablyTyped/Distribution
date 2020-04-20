@@ -24,20 +24,18 @@ trait WdFramePosition extends js.Object
 
 object WdFramePosition {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdFrameBottom: `-999997` = -999997.asInstanceOf[`-999997`]
   @scala.inline
-  def wdFrameBottom: `-999997` = this.cast(-999997)
+  def wdFrameCenter: `-999995` = -999995.asInstanceOf[`-999995`]
   @scala.inline
-  def wdFrameCenter: `-999995` = this.cast(-999995)
+  def wdFrameInside: `-999994` = -999994.asInstanceOf[`-999994`]
   @scala.inline
-  def wdFrameInside: `-999994` = this.cast(-999994)
+  def wdFrameLeft: `-999998` = -999998.asInstanceOf[`-999998`]
   @scala.inline
-  def wdFrameLeft: `-999998` = this.cast(-999998)
+  def wdFrameOutside: `-999993` = -999993.asInstanceOf[`-999993`]
   @scala.inline
-  def wdFrameOutside: `-999993` = this.cast(-999993)
+  def wdFrameRight: `-999996` = -999996.asInstanceOf[`-999996`]
   @scala.inline
-  def wdFrameRight: `-999996` = this.cast(-999996)
-  @scala.inline
-  def wdFrameTop: `-999999` = this.cast(-999999)
+  def wdFrameTop: `-999999` = -999999.asInstanceOf[`-999999`]
 }
 

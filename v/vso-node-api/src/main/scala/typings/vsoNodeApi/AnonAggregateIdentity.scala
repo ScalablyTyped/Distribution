@@ -15,7 +15,6 @@ object AnonAggregateIdentity {
   @scala.inline
   def apply(aggregateIdentity: Double, importedIdentity: Double, none: Double, serviceIdentity: Double): AnonAggregateIdentity = {
     val __obj = js.Dynamic.literal(aggregateIdentity = aggregateIdentity.asInstanceOf[js.Any], importedIdentity = importedIdentity.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], serviceIdentity = serviceIdentity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAggregateIdentity]
   }
 }

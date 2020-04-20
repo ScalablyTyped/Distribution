@@ -20,7 +20,6 @@ object DeleteReceiptRuleRequest {
   @scala.inline
   def apply(RuleName: ReceiptRuleName, RuleSetName: ReceiptRuleSetName): DeleteReceiptRuleRequest = {
     val __obj = js.Dynamic.literal(RuleName = RuleName.asInstanceOf[js.Any], RuleSetName = RuleSetName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteReceiptRuleRequest]
   }
 }

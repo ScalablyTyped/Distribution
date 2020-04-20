@@ -25,13 +25,13 @@ class MappingMicroflowCall protected ()
   ) = this()
   @JSName("model")
   var model_FMappingMicroflowCall: IModel = js.native
-  def containerAsObjectMappingElement(): ObjectMappingElement = js.native
+  def containerAsObjectMappingElement: ObjectMappingElement = js.native
   def microflow(): js.Any = js.native
   def microflow(newValue: IMicroflow): js.Any = js.native
-  def microflowQualifiedName(): String | Null = js.native
+  def microflowQualifiedName: String | Null = js.native
   @JSName("microflow")
-  def microflow_Union(): IMicroflow | Null = js.native
-  def parameterMappings(): IList[MappingMicroflowParameter] = js.native
+  def microflow_Union: IMicroflow | Null = js.native
+  def parameterMappings: IList[MappingMicroflowParameter] = js.native
 }
 
 /* static members */

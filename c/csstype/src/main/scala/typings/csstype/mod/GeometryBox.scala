@@ -22,20 +22,18 @@ trait GeometryBox
 
 object GeometryBox {
   @scala.inline
-  def `border-box`: typings.csstype.csstypeStrings.`border-box` = this.cast("border-box")
+  def `border-box`: typings.csstype.csstypeStrings.`border-box` = "border-box".asInstanceOf[typings.csstype.csstypeStrings.`border-box`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `content-box`: typings.csstype.csstypeStrings.`content-box` = "content-box".asInstanceOf[typings.csstype.csstypeStrings.`content-box`]
   @scala.inline
-  def `content-box`: typings.csstype.csstypeStrings.`content-box` = this.cast("content-box")
+  def `fill-box`: typings.csstype.csstypeStrings.`fill-box` = "fill-box".asInstanceOf[typings.csstype.csstypeStrings.`fill-box`]
   @scala.inline
-  def `fill-box`: typings.csstype.csstypeStrings.`fill-box` = this.cast("fill-box")
+  def `margin-box`: typings.csstype.csstypeStrings.`margin-box` = "margin-box".asInstanceOf[typings.csstype.csstypeStrings.`margin-box`]
   @scala.inline
-  def `margin-box`: typings.csstype.csstypeStrings.`margin-box` = this.cast("margin-box")
+  def `padding-box`: typings.csstype.csstypeStrings.`padding-box` = "padding-box".asInstanceOf[typings.csstype.csstypeStrings.`padding-box`]
   @scala.inline
-  def `padding-box`: typings.csstype.csstypeStrings.`padding-box` = this.cast("padding-box")
+  def `stroke-box`: typings.csstype.csstypeStrings.`stroke-box` = "stroke-box".asInstanceOf[typings.csstype.csstypeStrings.`stroke-box`]
   @scala.inline
-  def `stroke-box`: typings.csstype.csstypeStrings.`stroke-box` = this.cast("stroke-box")
-  @scala.inline
-  def `view-box`: typings.csstype.csstypeStrings.`view-box` = this.cast("view-box")
+  def `view-box`: typings.csstype.csstypeStrings.`view-box` = "view-box".asInstanceOf[typings.csstype.csstypeStrings.`view-box`]
 }
 

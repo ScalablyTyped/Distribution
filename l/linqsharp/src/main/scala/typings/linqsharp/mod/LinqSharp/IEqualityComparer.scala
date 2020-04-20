@@ -13,7 +13,6 @@ object IEqualityComparer {
   @scala.inline
   def apply[T](Equals: (T, T) => Boolean, GetHashCode: T => Double): IEqualityComparer[T] = {
     val __obj = js.Dynamic.literal(Equals = js.Any.fromFunction2(Equals), GetHashCode = js.Any.fromFunction1(GetHashCode))
-  
     __obj.asInstanceOf[IEqualityComparer[T]]
   }
 }

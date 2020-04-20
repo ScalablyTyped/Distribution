@@ -24,7 +24,6 @@ object AnonDisknum {
     uncompressedSize: Double
   ): AnonDisknum = {
     val __obj = js.Dynamic.literal(compressedSize = compressedSize.asInstanceOf[js.Any], disknum = disknum.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], partsize = partsize.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any], uncompressedSize = uncompressedSize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDisknum]
   }
 }

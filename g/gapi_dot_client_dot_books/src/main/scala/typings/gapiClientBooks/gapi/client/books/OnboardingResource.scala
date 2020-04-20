@@ -21,7 +21,6 @@ object OnboardingResource {
     listCategoryVolumes: AnonCategoryId => Request_[Volume2]
   ): OnboardingResource = {
     val __obj = js.Dynamic.literal(listCategories = js.Any.fromFunction1(listCategories), listCategoryVolumes = js.Any.fromFunction1(listCategoryVolumes))
-  
     __obj.asInstanceOf[OnboardingResource]
   }
 }

@@ -21,7 +21,7 @@ package object httpMod {
   type BatchRequests = js.Array[typings.k6.httpMod.BatchRequest] | org.scalablytyped.runtime.StringDictionary[typings.k6.httpMod.BatchRequest]
   type BatchResponses[Q] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Q ]: Q[K] extends k6.k6/http.RefinedBatchRequest<infer RT>? k6.k6/http.RefinedResponse<any> : never}
-    */ typings.k6.k6Strings.BatchResponses with Q
+    */ typings.k6.k6Strings.BatchResponses with org.scalablytyped.runtime.TopLevel[Q]
   type CookieJarCookies = org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
   type ParamsCookieValue = java.lang.String | typings.k6.AnonReplace
   type RefinedBatchRequest[RT /* <: js.UndefOr[typings.k6.httpMod.ResponseType] */] = java.lang.String | typings.k6.httpMod.ArrayRefinedBatchRequest[RT] | typings.k6.httpMod.ObjectRefinedBatchRequest[RT]

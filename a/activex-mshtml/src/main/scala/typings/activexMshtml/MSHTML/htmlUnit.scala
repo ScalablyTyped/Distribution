@@ -20,16 +20,14 @@ trait htmlUnit extends js.Object
 
 object htmlUnit {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def htmlUnitCharacter: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def htmlUnitCharacter: `1` = this.cast(1)
+  def htmlUnitSentence: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def htmlUnitSentence: `3` = this.cast(3)
+  def htmlUnitTextEdit: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def htmlUnitTextEdit: `6` = this.cast(6)
+  def htmlUnitWord: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def htmlUnitWord: `2` = this.cast(2)
-  @scala.inline
-  def htmlUnit_Max: `2147483647` = this.cast(2147483647)
+  def htmlUnit_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

@@ -16,7 +16,6 @@ object AnonMap {
   @scala.inline
   def apply(map: TileLayer, traffic: TileLayer, trafficincidents: MarkerTileLayer): AnonMap = {
     val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any], traffic = traffic.asInstanceOf[js.Any], trafficincidents = trafficincidents.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMap]
   }
 }

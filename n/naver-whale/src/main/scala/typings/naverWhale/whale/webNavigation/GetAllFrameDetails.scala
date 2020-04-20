@@ -13,7 +13,6 @@ object GetAllFrameDetails {
   @scala.inline
   def apply(tabId: Double): GetAllFrameDetails = {
     val __obj = js.Dynamic.literal(tabId = tabId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetAllFrameDetails]
   }
 }

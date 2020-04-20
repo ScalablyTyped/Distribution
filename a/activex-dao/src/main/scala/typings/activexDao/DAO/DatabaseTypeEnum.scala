@@ -29,29 +29,27 @@ import scala.scalajs.js.annotation._
 trait DatabaseTypeEnum extends js.Object
 
 object DatabaseTypeEnum {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   /** @deprecated */
   @scala.inline
-  def dbDecrypt: `4` = this.cast(4)
+  def dbDecrypt: `4` = 4.asInstanceOf[`4`]
   /** @deprecated */
   @scala.inline
-  def dbEncrypt: `2` = this.cast(2)
+  def dbEncrypt: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def dbVersion10: `1` = this.cast(1)
+  def dbVersion10: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def dbVersion11: `8` = this.cast(8)
+  def dbVersion11: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def dbVersion120: `128` = this.cast(128)
+  def dbVersion120: `128` = 128.asInstanceOf[`128`]
   @scala.inline
-  def dbVersion140: `256` = this.cast(256)
+  def dbVersion140: `256` = 256.asInstanceOf[`256`]
   @scala.inline
-  def dbVersion150: `512` = this.cast(512)
+  def dbVersion150: `512` = 512.asInstanceOf[`512`]
   @scala.inline
-  def dbVersion20: `16` = this.cast(16)
+  def dbVersion20: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def dbVersion30: `32` = this.cast(32)
+  def dbVersion30: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def dbVersion40: `64` = this.cast(64)
+  def dbVersion40: `64` = 64.asInstanceOf[`64`]
 }
 

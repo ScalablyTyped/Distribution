@@ -19,7 +19,6 @@ object ProgressParams {
   @scala.inline
   def apply[T](token: ProgressToken, value: T): ProgressParams[T] = {
     val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProgressParams[T]]
   }
 }

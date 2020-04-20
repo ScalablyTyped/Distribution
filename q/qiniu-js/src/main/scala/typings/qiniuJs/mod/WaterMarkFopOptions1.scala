@@ -30,7 +30,6 @@ object WaterMarkFopOptions1 {
     mode: `1`
   ): WaterMarkFopOptions1 = {
     val __obj = js.Dynamic.literal(dissolve = dissolve.asInstanceOf[js.Any], dx = dx.asInstanceOf[js.Any], dy = dy.asInstanceOf[js.Any], fop = fop.asInstanceOf[js.Any], gravity = gravity.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WaterMarkFopOptions1]
   }
 }

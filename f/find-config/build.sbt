@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "find-config"
-version := "1.0-dt-20200327Z-e32771"
+version := "1.0-dt-20200327Z-5736b1"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

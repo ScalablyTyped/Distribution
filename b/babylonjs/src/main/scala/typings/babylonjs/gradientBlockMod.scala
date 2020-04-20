@@ -25,11 +25,11 @@ object gradientBlockMod extends js.Object {
     /**
       * Gets the gradient input component
       */
-    def gradient(): NodeMaterialConnectionPoint = js.native
+    def gradient: NodeMaterialConnectionPoint = js.native
     /**
       * Gets the output component
       */
-    def output(): NodeMaterialConnectionPoint = js.native
+    def output: NodeMaterialConnectionPoint = js.native
   }
   
   @js.native

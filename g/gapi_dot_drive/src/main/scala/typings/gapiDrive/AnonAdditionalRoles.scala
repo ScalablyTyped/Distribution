@@ -22,7 +22,6 @@ object AnonAdditionalRoles {
     teamDrivePermissionType: String
   ): AnonAdditionalRoles = {
     val __obj = js.Dynamic.literal(additionalRoles = additionalRoles.asInstanceOf[js.Any], inherited = inherited.asInstanceOf[js.Any], inheritedFrom = inheritedFrom.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], teamDrivePermissionType = teamDrivePermissionType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAdditionalRoles]
   }
 }

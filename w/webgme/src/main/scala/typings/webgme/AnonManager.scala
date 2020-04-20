@@ -27,7 +27,6 @@ object AnonManager {
   @scala.inline
   def apply(enable: Boolean, manager: memory | redis): AnonManager = {
     val __obj = js.Dynamic.literal(enable = enable.asInstanceOf[js.Any], manager = manager.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonManager]
   }
 }

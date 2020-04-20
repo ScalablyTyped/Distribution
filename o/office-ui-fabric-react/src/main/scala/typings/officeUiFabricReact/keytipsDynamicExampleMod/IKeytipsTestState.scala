@@ -12,7 +12,6 @@ object IKeytipsTestState {
   @scala.inline
   def apply(currButton: String): IKeytipsTestState = {
     val __obj = js.Dynamic.literal(currButton = currButton.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IKeytipsTestState]
   }
 }

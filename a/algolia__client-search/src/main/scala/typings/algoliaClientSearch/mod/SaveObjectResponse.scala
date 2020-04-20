@@ -19,7 +19,6 @@ object SaveObjectResponse {
   @scala.inline
   def apply(objectID: String, taskID: Double): SaveObjectResponse = {
     val __obj = js.Dynamic.literal(objectID = objectID.asInstanceOf[js.Any], taskID = taskID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SaveObjectResponse]
   }
 }

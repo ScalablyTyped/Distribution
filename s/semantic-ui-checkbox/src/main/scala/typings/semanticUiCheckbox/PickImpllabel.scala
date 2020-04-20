@@ -13,7 +13,6 @@ object PickImpllabel {
   @scala.inline
   def apply(label: String): PickImpllabel = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpllabel]
   }
 }

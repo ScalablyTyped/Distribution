@@ -13,7 +13,6 @@ object RetrievalProgress {
   @scala.inline
   def apply(bytesRetrieved: Double, totalBytesToRetrieve: Double): RetrievalProgress = {
     val __obj = js.Dynamic.literal(bytesRetrieved = bytesRetrieved.asInstanceOf[js.Any], totalBytesToRetrieve = totalBytesToRetrieve.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RetrievalProgress]
   }
 }

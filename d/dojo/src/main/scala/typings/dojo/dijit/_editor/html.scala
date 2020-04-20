@@ -58,7 +58,6 @@ object html {
     getNodeHtmlHelper: (HTMLElement, js.Array[String]) => String
   ): html = {
     val __obj = js.Dynamic.literal(escapeXml = js.Any.fromFunction2(escapeXml), getChildrenHtml = js.Any.fromFunction1(getChildrenHtml), getChildrenHtmlHelper = js.Any.fromFunction2(getChildrenHtmlHelper), getNodeHtml = js.Any.fromFunction1(getNodeHtml), getNodeHtmlHelper = js.Any.fromFunction2(getNodeHtmlHelper))
-  
     __obj.asInstanceOf[html]
   }
 }

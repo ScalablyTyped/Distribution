@@ -176,55 +176,55 @@ object detectBrowserStrings {
   sealed trait yandexbrowser extends Browser
   
   @scala.inline
-  def `Amazon OS`: `Amazon OS` = "Amazon OS".asInstanceOf[`Amazon OS`]
+  def `Amazon OS`: `Amazon OS` = ("Amazon OS").asInstanceOf[`Amazon OS`]
   @scala.inline
-  def `Android OS`: `Android OS` = "Android OS".asInstanceOf[`Android OS`]
+  def `Android OS`: `Android OS` = ("Android OS").asInstanceOf[`Android OS`]
   @scala.inline
   def BeOS: BeOS = "BeOS".asInstanceOf[BeOS]
   @scala.inline
-  def `BlackBerry OS`: `BlackBerry OS` = "BlackBerry OS".asInstanceOf[`BlackBerry OS`]
+  def `BlackBerry OS`: `BlackBerry OS` = ("BlackBerry OS").asInstanceOf[`BlackBerry OS`]
   @scala.inline
-  def `Chrome OS`: `Chrome OS` = "Chrome OS".asInstanceOf[`Chrome OS`]
+  def `Chrome OS`: `Chrome OS` = ("Chrome OS").asInstanceOf[`Chrome OS`]
   @scala.inline
   def Linux: Linux = "Linux".asInstanceOf[Linux]
   @scala.inline
-  def `Mac OS`: `Mac OS` = "Mac OS".asInstanceOf[`Mac OS`]
+  def `Mac OS`: `Mac OS` = ("Mac OS").asInstanceOf[`Mac OS`]
   @scala.inline
   def OSSlash2: OSSlash2 = "OS/2".asInstanceOf[OSSlash2]
   @scala.inline
-  def `Open BSD`: `Open BSD` = "Open BSD".asInstanceOf[`Open BSD`]
+  def `Open BSD`: `Open BSD` = ("Open BSD").asInstanceOf[`Open BSD`]
   @scala.inline
   def QNX: QNX = "QNX".asInstanceOf[QNX]
   @scala.inline
-  def `Search Bot`: `Search Bot` = "Search Bot".asInstanceOf[`Search Bot`]
+  def `Search Bot`: `Search Bot` = ("Search Bot").asInstanceOf[`Search Bot`]
   @scala.inline
-  def `Sun OS`: `Sun OS` = "Sun OS".asInstanceOf[`Sun OS`]
+  def `Sun OS`: `Sun OS` = ("Sun OS").asInstanceOf[`Sun OS`]
   @scala.inline
-  def `Windows 10`: `Windows 10` = "Windows 10".asInstanceOf[`Windows 10`]
+  def `Windows 10`: `Windows 10` = ("Windows 10").asInstanceOf[`Windows 10`]
   @scala.inline
-  def `Windows 2000`: `Windows 2000` = "Windows 2000".asInstanceOf[`Windows 2000`]
+  def `Windows 2000`: `Windows 2000` = ("Windows 2000").asInstanceOf[`Windows 2000`]
   @scala.inline
-  def `Windows 3Dot11`: `Windows 3Dot11` = "Windows 3.11".asInstanceOf[`Windows 3Dot11`]
+  def `Windows 3Dot11`: `Windows 3Dot11` = ("Windows 3.11").asInstanceOf[`Windows 3Dot11`]
   @scala.inline
-  def `Windows 7`: `Windows 7` = "Windows 7".asInstanceOf[`Windows 7`]
+  def `Windows 7`: `Windows 7` = ("Windows 7").asInstanceOf[`Windows 7`]
   @scala.inline
-  def `Windows 8`: `Windows 8` = "Windows 8".asInstanceOf[`Windows 8`]
+  def `Windows 8`: `Windows 8` = ("Windows 8").asInstanceOf[`Windows 8`]
   @scala.inline
-  def `Windows 8Dot1`: `Windows 8Dot1` = "Windows 8.1".asInstanceOf[`Windows 8Dot1`]
+  def `Windows 8Dot1`: `Windows 8Dot1` = ("Windows 8.1").asInstanceOf[`Windows 8Dot1`]
   @scala.inline
-  def `Windows 95`: `Windows 95` = "Windows 95".asInstanceOf[`Windows 95`]
+  def `Windows 95`: `Windows 95` = ("Windows 95").asInstanceOf[`Windows 95`]
   @scala.inline
-  def `Windows 98`: `Windows 98` = "Windows 98".asInstanceOf[`Windows 98`]
+  def `Windows 98`: `Windows 98` = ("Windows 98").asInstanceOf[`Windows 98`]
   @scala.inline
-  def `Windows ME`: `Windows ME` = "Windows ME".asInstanceOf[`Windows ME`]
+  def `Windows ME`: `Windows ME` = ("Windows ME").asInstanceOf[`Windows ME`]
   @scala.inline
-  def `Windows Mobile`: `Windows Mobile` = "Windows Mobile".asInstanceOf[`Windows Mobile`]
+  def `Windows Mobile`: `Windows Mobile` = ("Windows Mobile").asInstanceOf[`Windows Mobile`]
   @scala.inline
-  def `Windows Server 2003`: `Windows Server 2003` = "Windows Server 2003".asInstanceOf[`Windows Server 2003`]
+  def `Windows Server 2003`: `Windows Server 2003` = ("Windows Server 2003").asInstanceOf[`Windows Server 2003`]
   @scala.inline
-  def `Windows Vista`: `Windows Vista` = "Windows Vista".asInstanceOf[`Windows Vista`]
+  def `Windows Vista`: `Windows Vista` = ("Windows Vista").asInstanceOf[`Windows Vista`]
   @scala.inline
-  def `Windows XP`: `Windows XP` = "Windows XP".asInstanceOf[`Windows XP`]
+  def `Windows XP`: `Windows XP` = ("Windows XP").asInstanceOf[`Windows XP`]
   @scala.inline
   def android: android = "android".asInstanceOf[android]
   @scala.inline

@@ -64,7 +64,6 @@ object TypeofFilterOperator {
     StartsWith: js.Any
   ): TypeofFilterOperator = {
     val __obj = js.Dynamic.literal(BT = BT.asInstanceOf[js.Any], Contains = Contains.asInstanceOf[js.Any], EQ = EQ.asInstanceOf[js.Any], EndsWith = EndsWith.asInstanceOf[js.Any], GE = GE.asInstanceOf[js.Any], GT = GT.asInstanceOf[js.Any], LE = LE.asInstanceOf[js.Any], LT = LT.asInstanceOf[js.Any], NE = NE.asInstanceOf[js.Any], StartsWith = StartsWith.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofFilterOperator]
   }
 }

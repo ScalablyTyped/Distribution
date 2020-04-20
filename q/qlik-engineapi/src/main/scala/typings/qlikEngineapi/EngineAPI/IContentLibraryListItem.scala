@@ -26,7 +26,6 @@ object IContentLibraryListItem {
   @scala.inline
   def apply(qAppSpecific: Boolean, qMeta: INxMeta, qName: String): IContentLibraryListItem = {
     val __obj = js.Dynamic.literal(qAppSpecific = qAppSpecific.asInstanceOf[js.Any], qMeta = qMeta.asInstanceOf[js.Any], qName = qName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IContentLibraryListItem]
   }
 }

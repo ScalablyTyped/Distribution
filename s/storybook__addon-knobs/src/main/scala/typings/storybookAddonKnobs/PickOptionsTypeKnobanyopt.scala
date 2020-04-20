@@ -17,7 +17,6 @@ object PickOptionsTypeKnobanyopt {
   @scala.inline
   def apply(options: OptionsTypeOptionsProp[_], optionsObj: OptionsKnobOptions, value: js.Any): PickOptionsTypeKnobanyopt = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], optionsObj = optionsObj.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickOptionsTypeKnobanyopt]
   }
 }

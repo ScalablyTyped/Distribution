@@ -16,12 +16,10 @@ trait HTMLMinimizeFlag extends js.Object
 
 object HTMLMinimizeFlag {
   @scala.inline
-  def HTMLMinimizeFlagNo: `0` = this.cast(0)
+  def HTMLMinimizeFlagNo: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def HTMLMinimizeFlagYes: `131072` = this.cast(131072)
+  def HTMLMinimizeFlagYes: `131072` = 131072.asInstanceOf[`131072`]
   @scala.inline
-  def HTMLMinimizeFlag_Max: `2147483647` = this.cast(2147483647)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def HTMLMinimizeFlag_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

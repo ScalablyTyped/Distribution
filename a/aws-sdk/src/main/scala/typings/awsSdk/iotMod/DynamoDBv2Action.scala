@@ -20,7 +20,6 @@ object DynamoDBv2Action {
   @scala.inline
   def apply(putItem: PutItemInput, roleArn: AwsArn): DynamoDBv2Action = {
     val __obj = js.Dynamic.literal(putItem = putItem.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DynamoDBv2Action]
   }
 }

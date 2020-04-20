@@ -34,7 +34,6 @@ object DebuggeesResource {
     register: AnonFields => Request_[RegisterDebuggeeResponse]
   ): DebuggeesResource = {
     val __obj = js.Dynamic.literal(breakpoints = breakpoints.asInstanceOf[js.Any], list = js.Any.fromFunction1(list), register = js.Any.fromFunction1(register))
-  
     __obj.asInstanceOf[DebuggeesResource]
   }
 }

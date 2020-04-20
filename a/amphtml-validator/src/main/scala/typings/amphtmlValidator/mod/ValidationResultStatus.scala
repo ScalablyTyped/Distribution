@@ -13,12 +13,10 @@ trait ValidationResultStatus extends js.Object
 
 object ValidationResultStatus {
   @scala.inline
-  def FAIL: typings.amphtmlValidator.amphtmlValidatorStrings.FAIL = this.cast("FAIL")
+  def FAIL: typings.amphtmlValidator.amphtmlValidatorStrings.FAIL = "FAIL".asInstanceOf[typings.amphtmlValidator.amphtmlValidatorStrings.FAIL]
   @scala.inline
-  def PASS: typings.amphtmlValidator.amphtmlValidatorStrings.PASS = this.cast("PASS")
+  def PASS: typings.amphtmlValidator.amphtmlValidatorStrings.PASS = "PASS".asInstanceOf[typings.amphtmlValidator.amphtmlValidatorStrings.PASS]
   @scala.inline
-  def UNKNOWN: typings.amphtmlValidator.amphtmlValidatorStrings.UNKNOWN = this.cast("UNKNOWN")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UNKNOWN: typings.amphtmlValidator.amphtmlValidatorStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.amphtmlValidator.amphtmlValidatorStrings.UNKNOWN]
 }
 

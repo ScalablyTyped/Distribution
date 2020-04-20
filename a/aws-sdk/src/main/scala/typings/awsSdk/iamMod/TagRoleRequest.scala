@@ -20,7 +20,6 @@ object TagRoleRequest {
   @scala.inline
   def apply(RoleName: roleNameType, Tags: tagListType): TagRoleRequest = {
     val __obj = js.Dynamic.literal(RoleName = RoleName.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TagRoleRequest]
   }
 }

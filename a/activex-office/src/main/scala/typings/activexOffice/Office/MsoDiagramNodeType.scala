@@ -14,10 +14,8 @@ trait MsoDiagramNodeType extends js.Object
 
 object MsoDiagramNodeType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoDiagramAssistant: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoDiagramAssistant: `2` = this.cast(2)
-  @scala.inline
-  def msoDiagramNode: `1` = this.cast(1)
+  def msoDiagramNode: `1` = 1.asInstanceOf[`1`]
 }
 

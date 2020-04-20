@@ -14,7 +14,6 @@ object IDataPlanUsage {
   @scala.inline
   def apply(lastSyncTime: Date, megabytesUsed: Double): IDataPlanUsage = {
     val __obj = js.Dynamic.literal(lastSyncTime = lastSyncTime.asInstanceOf[js.Any], megabytesUsed = megabytesUsed.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDataPlanUsage]
   }
 }

@@ -35,7 +35,6 @@ object Impl {
   @scala.inline
   def apply(content: String, html: String, offset: String, position: String, title: String, variation: String): Impl = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], variation = variation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Impl]
   }
 }

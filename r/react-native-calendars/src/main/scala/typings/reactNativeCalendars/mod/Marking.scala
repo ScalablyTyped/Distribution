@@ -31,7 +31,6 @@ object Marking {
   @scala.inline
   def MultiPeriodMarking(periods: js.Array[AnonColor]): Marking = {
     val __obj = js.Dynamic.literal(periods = periods.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Marking]
   }
   @scala.inline
@@ -57,7 +56,6 @@ object Marking {
   @scala.inline
   def CustomMarking(customStyles: MarkedDateCustomStyles): Marking = {
     val __obj = js.Dynamic.literal(customStyles = customStyles.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Marking]
   }
   @scala.inline

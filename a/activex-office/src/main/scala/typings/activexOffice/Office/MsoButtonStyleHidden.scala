@@ -14,10 +14,8 @@ trait MsoButtonStyleHidden extends js.Object
 
 object MsoButtonStyleHidden {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoButtonTextBelow: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def msoButtonTextBelow: `8` = this.cast(8)
-  @scala.inline
-  def msoButtonWrapText: `4` = this.cast(4)
+  def msoButtonWrapText: `4` = 4.asInstanceOf[`4`]
 }
 

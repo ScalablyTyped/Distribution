@@ -25,7 +25,6 @@ object IDoCheck {
   @scala.inline
   def apply($doCheck: () => Unit): IDoCheck = {
     val __obj = js.Dynamic.literal($doCheck = js.Any.fromFunction0($doCheck))
-  
     __obj.asInstanceOf[IDoCheck]
   }
 }

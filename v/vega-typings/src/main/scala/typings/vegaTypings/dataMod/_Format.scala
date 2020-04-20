@@ -45,7 +45,6 @@ object _Format {
   @scala.inline
   def AnonParse(parse: Parse): _Format = {
     val __obj = js.Dynamic.literal(parse = parse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[_Format]
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait reactChatWidgetProps {
   @scala.inline
-  def WidgetProps: AnonAutofocus.type = typings.reactChatWidget.AnonAutofocus
+  def WidgetProps: AnonAutofocus.type = AnonAutofocus
   type WidgetProps = AnonAutofocus
 }
 

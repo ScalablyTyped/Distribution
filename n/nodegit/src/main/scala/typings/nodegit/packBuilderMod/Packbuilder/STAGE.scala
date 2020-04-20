@@ -14,10 +14,8 @@ trait STAGE extends js.Object
 
 object STAGE {
   @scala.inline
-  def ADDING_OBJECTS: `0` = this.cast(0)
+  def ADDING_OBJECTS: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def DELTAFICATION: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def DELTAFICATION: `1` = 1.asInstanceOf[`1`]
 }
 

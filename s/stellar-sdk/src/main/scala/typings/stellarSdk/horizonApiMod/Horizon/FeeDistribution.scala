@@ -40,7 +40,6 @@ object FeeDistribution {
     p99: String
   ): FeeDistribution = {
     val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], p10 = p10.asInstanceOf[js.Any], p20 = p20.asInstanceOf[js.Any], p30 = p30.asInstanceOf[js.Any], p40 = p40.asInstanceOf[js.Any], p50 = p50.asInstanceOf[js.Any], p60 = p60.asInstanceOf[js.Any], p70 = p70.asInstanceOf[js.Any], p80 = p80.asInstanceOf[js.Any], p90 = p90.asInstanceOf[js.Any], p95 = p95.asInstanceOf[js.Any], p99 = p99.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FeeDistribution]
   }
 }

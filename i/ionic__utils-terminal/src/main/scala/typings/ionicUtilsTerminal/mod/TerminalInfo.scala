@@ -27,7 +27,6 @@ object TerminalInfo {
   @scala.inline
   def apply(ci: Boolean, shell: String, tty: Boolean, windows: Boolean): TerminalInfo = {
     val __obj = js.Dynamic.literal(ci = ci.asInstanceOf[js.Any], shell = shell.asInstanceOf[js.Any], tty = tty.asInstanceOf[js.Any], windows = windows.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TerminalInfo]
   }
 }

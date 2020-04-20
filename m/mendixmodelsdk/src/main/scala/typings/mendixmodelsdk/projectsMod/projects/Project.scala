@@ -39,12 +39,12 @@ class Project protected () extends StructuralUnit {
   var projectConversion_FProject: IProjectConversion = js.native
   @JSName("projectDocuments")
   var projectDocuments_FProject: IList[IProjectDocument] = js.native
-  def isSystemProject(): Boolean = js.native
+  def isSystemProject: Boolean = js.native
   def isSystemProject(newValue: Boolean): js.Any = js.native
-  def modules(): IList[IModule] = js.native
-  def projectConversion(): IProjectConversion = js.native
+  def modules: IList[IModule] = js.native
+  def projectConversion: IProjectConversion = js.native
   def projectConversion(newValue: IProjectConversion): js.Any = js.native
-  def projectDocuments(): IList[IProjectDocument] = js.native
+  def projectDocuments: IList[IProjectDocument] = js.native
 }
 
 /* static members */

@@ -44,7 +44,6 @@ object version {
   @scala.inline
   def apply(flag: String, major: Double, minor: Double, patch: Double, revision: Double): version = {
     val __obj = js.Dynamic.literal(flag = flag.asInstanceOf[js.Any], major = major.asInstanceOf[js.Any], minor = minor.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[version]
   }
 }

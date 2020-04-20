@@ -16,7 +16,6 @@ object PreProcessorExtraInfo {
   @scala.inline
   def apply(context: AnonPluginManager, fileInfo: RootFileInfo, imports: StringDictionary[js.Any]): PreProcessorExtraInfo = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], fileInfo = fileInfo.asInstanceOf[js.Any], imports = imports.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PreProcessorExtraInfo]
   }
 }

@@ -16,7 +16,6 @@ object FrameCaptureGroupSettings {
   @scala.inline
   def apply(Destination: OutputLocationRef): FrameCaptureGroupSettings = {
     val __obj = js.Dynamic.literal(Destination = Destination.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FrameCaptureGroupSettings]
   }
 }

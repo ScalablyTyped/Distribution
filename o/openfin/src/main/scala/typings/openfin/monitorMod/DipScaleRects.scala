@@ -13,7 +13,6 @@ object DipScaleRects {
   @scala.inline
   def apply(dipRect: Rect, scaledRect: Rect): DipScaleRects = {
     val __obj = js.Dynamic.literal(dipRect = dipRect.asInstanceOf[js.Any], scaledRect = scaledRect.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DipScaleRects]
   }
 }

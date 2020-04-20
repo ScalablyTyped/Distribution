@@ -20,7 +20,6 @@ object GetAnalyzedResourceRequest {
   @scala.inline
   def apply(analyzerArn: AnalyzerArn, resourceArn: ResourceArn): GetAnalyzedResourceRequest = {
     val __obj = js.Dynamic.literal(analyzerArn = analyzerArn.asInstanceOf[js.Any], resourceArn = resourceArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetAnalyzedResourceRequest]
   }
 }

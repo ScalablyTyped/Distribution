@@ -27,7 +27,6 @@ object DeliveryInfo {
     routingKey: String
   ): DeliveryInfo = {
     val __obj = js.Dynamic.literal(consumerTag = consumerTag.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], deliveryTag = deliveryTag.asInstanceOf[js.Any], exchange = exchange.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any], redelivered = redelivered.asInstanceOf[js.Any], routingKey = routingKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeliveryInfo]
   }
 }

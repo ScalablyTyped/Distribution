@@ -67,15 +67,15 @@ class GroundMesh protected () extends Mesh {
   /**
     * The minimum of x and y subdivisions
     */
-  def subdivisions(): Double = js.native
+  def subdivisions: Double = js.native
   /**
     * X subdivisions
     */
-  def subdivisionsX(): Double = js.native
+  def subdivisionsX: Double = js.native
   /**
     * Y subdivisions
     */
-  def subdivisionsY(): Double = js.native
+  def subdivisionsY: Double = js.native
   /**
     * Force the heights to be recomputed for getHeightAtCoordinates() or getNormalAtCoordinates()
     * if the ground has been updated.

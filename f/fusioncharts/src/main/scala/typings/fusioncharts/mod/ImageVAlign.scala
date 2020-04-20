@@ -13,12 +13,10 @@ trait ImageVAlign extends js.Object
 
 object ImageVAlign {
   @scala.inline
-  def bottom: typings.fusioncharts.fusionchartsStrings.bottom = this.cast("bottom")
+  def bottom: typings.fusioncharts.fusionchartsStrings.bottom = "bottom".asInstanceOf[typings.fusioncharts.fusionchartsStrings.bottom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def middle: typings.fusioncharts.fusionchartsStrings.middle = "middle".asInstanceOf[typings.fusioncharts.fusionchartsStrings.middle]
   @scala.inline
-  def middle: typings.fusioncharts.fusionchartsStrings.middle = this.cast("middle")
-  @scala.inline
-  def top: typings.fusioncharts.fusionchartsStrings.top = this.cast("top")
+  def top: typings.fusioncharts.fusionchartsStrings.top = "top".asInstanceOf[typings.fusioncharts.fusionchartsStrings.top]
 }
 

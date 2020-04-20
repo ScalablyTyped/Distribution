@@ -13,7 +13,6 @@ object PrivateKeyProvider {
   @scala.inline
   def apply(send: /* repeated */ js.Any => js.Any, sendAsync: /* repeated */ js.Any => Unit): PrivateKeyProvider = {
     val __obj = js.Dynamic.literal(send = js.Any.fromFunction1(send), sendAsync = js.Any.fromFunction1(sendAsync))
-  
     __obj.asInstanceOf[PrivateKeyProvider]
   }
 }

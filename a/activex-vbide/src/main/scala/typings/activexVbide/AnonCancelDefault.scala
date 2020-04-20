@@ -14,7 +14,6 @@ object AnonCancelDefault {
   @scala.inline
   def apply(CancelDefault: Boolean, CommandBarControl: js.Any, handled: Boolean): AnonCancelDefault = {
     val __obj = js.Dynamic.literal(CancelDefault = CancelDefault.asInstanceOf[js.Any], CommandBarControl = CommandBarControl.asInstanceOf[js.Any], handled = handled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCancelDefault]
   }
 }

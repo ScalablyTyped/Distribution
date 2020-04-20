@@ -12,7 +12,6 @@ object AnonExec {
   @scala.inline
   def apply(exec: js.Any): AnonExec = {
     val __obj = js.Dynamic.literal(exec = exec.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonExec]
   }
 }

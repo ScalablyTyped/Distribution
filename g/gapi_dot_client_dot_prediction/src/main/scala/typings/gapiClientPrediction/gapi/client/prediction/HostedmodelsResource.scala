@@ -15,7 +15,6 @@ object HostedmodelsResource {
   @scala.inline
   def apply(predict: AnonAlt => Request_[Output]): HostedmodelsResource = {
     val __obj = js.Dynamic.literal(predict = js.Any.fromFunction1(predict))
-  
     __obj.asInstanceOf[HostedmodelsResource]
   }
 }

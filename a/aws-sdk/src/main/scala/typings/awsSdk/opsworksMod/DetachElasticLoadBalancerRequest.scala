@@ -20,7 +20,6 @@ object DetachElasticLoadBalancerRequest {
   @scala.inline
   def apply(ElasticLoadBalancerName: String, LayerId: String): DetachElasticLoadBalancerRequest = {
     val __obj = js.Dynamic.literal(ElasticLoadBalancerName = ElasticLoadBalancerName.asInstanceOf[js.Any], LayerId = LayerId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DetachElasticLoadBalancerRequest]
   }
 }

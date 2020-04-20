@@ -20,7 +20,6 @@ object AnonNamefilter {
   @scala.inline
   def apply(name_filter: js.Array[String], on_named: MinecraftTrigger | String): AnonNamefilter = {
     val __obj = js.Dynamic.literal(name_filter = name_filter.asInstanceOf[js.Any], on_named = on_named.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNamefilter]
   }
 }

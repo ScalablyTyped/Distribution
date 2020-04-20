@@ -21,7 +21,6 @@ object ParseTreeListener {
     visitTerminal: TerminalNode => Unit
   ): ParseTreeListener = {
     val __obj = js.Dynamic.literal(enterEveryRule = js.Any.fromFunction1(enterEveryRule), exitEveryRule = js.Any.fromFunction1(exitEveryRule), visitErrorNode = js.Any.fromFunction1(visitErrorNode), visitTerminal = js.Any.fromFunction1(visitTerminal))
-  
     __obj.asInstanceOf[ParseTreeListener]
   }
 }

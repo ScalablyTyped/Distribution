@@ -26,7 +26,6 @@ object KernelProfile {
     totalTensorsSnapshot: Double
   ): KernelProfile = {
     val __obj = js.Dynamic.literal(bytesAdded = bytesAdded.asInstanceOf[js.Any], inputShapes = inputShapes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], outputShapes = outputShapes.asInstanceOf[js.Any], tensorsAdded = tensorsAdded.asInstanceOf[js.Any], totalBytesSnapshot = totalBytesSnapshot.asInstanceOf[js.Any], totalTensorsSnapshot = totalTensorsSnapshot.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KernelProfile]
   }
 }

@@ -48,7 +48,6 @@ object AnonApplicationDirectory {
     tempDirectory: String
   ): AnonApplicationDirectory = {
     val __obj = js.Dynamic.literal(applicationDirectory = applicationDirectory.asInstanceOf[js.Any], applicationStorageDirectory = applicationStorageDirectory.asInstanceOf[js.Any], cacheDirectory = cacheDirectory.asInstanceOf[js.Any], dataDirectory = dataDirectory.asInstanceOf[js.Any], documentsDirectory = documentsDirectory.asInstanceOf[js.Any], externalApplicationStorageDirectory = externalApplicationStorageDirectory.asInstanceOf[js.Any], externalCacheDirectory = externalCacheDirectory.asInstanceOf[js.Any], externalDataDirectory = externalDataDirectory.asInstanceOf[js.Any], externalRootDirectory = externalRootDirectory.asInstanceOf[js.Any], sharedDirectory = sharedDirectory.asInstanceOf[js.Any], syncedDataDirectory = syncedDataDirectory.asInstanceOf[js.Any], tempDirectory = tempDirectory.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonApplicationDirectory]
   }
 }

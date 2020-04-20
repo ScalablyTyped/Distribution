@@ -16,7 +16,6 @@ object InstanceFleetProvisioningSpecifications {
   @scala.inline
   def apply(SpotSpecification: SpotProvisioningSpecification): InstanceFleetProvisioningSpecifications = {
     val __obj = js.Dynamic.literal(SpotSpecification = SpotSpecification.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InstanceFleetProvisioningSpecifications]
   }
 }

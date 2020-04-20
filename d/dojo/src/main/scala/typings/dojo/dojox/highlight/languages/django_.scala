@@ -28,7 +28,6 @@ object django_ {
   @scala.inline
   def apply(case_insensitive: Boolean, defaultMode: js.Object, modes: js.Array[_]): django_ = {
     val __obj = js.Dynamic.literal(case_insensitive = case_insensitive.asInstanceOf[js.Any], defaultMode = defaultMode.asInstanceOf[js.Any], modes = modes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[django_]
   }
 }

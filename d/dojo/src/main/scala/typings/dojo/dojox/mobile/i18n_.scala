@@ -42,7 +42,6 @@ object i18n_ {
     registerBundle: js.Array[_] => Unit
   ): i18n_ = {
     val __obj = js.Dynamic.literal(I18NProperties = I18NProperties.asInstanceOf[js.Any], load = js.Any.fromFunction3(load), registerBundle = js.Any.fromFunction1(registerBundle))
-  
     __obj.asInstanceOf[i18n_]
   }
 }

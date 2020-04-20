@@ -101,7 +101,6 @@ object Set {
     union: Set[T] => Unit
   ): Set[T] = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), clear = js.Any.fromFunction0(clear), contains = js.Any.fromFunction1(contains), dictionary = dictionary.asInstanceOf[js.Any], difference = js.Any.fromFunction1(difference), forEach = js.Any.fromFunction1(forEach), intersection = js.Any.fromFunction1(intersection), isEmpty = js.Any.fromFunction0(isEmpty), isSubsetOf = js.Any.fromFunction1(isSubsetOf), remove = js.Any.fromFunction1(remove), size = js.Any.fromFunction0(size), toArray = js.Any.fromFunction0(toArray), union = js.Any.fromFunction1(union))
-  
     __obj.asInstanceOf[Set[T]]
   }
 }

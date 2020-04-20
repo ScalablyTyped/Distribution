@@ -12,7 +12,6 @@ object DatumFieldRef {
   @scala.inline
   def apply(datum: Field): DatumFieldRef = {
     val __obj = js.Dynamic.literal(datum = datum.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DatumFieldRef]
   }
 }

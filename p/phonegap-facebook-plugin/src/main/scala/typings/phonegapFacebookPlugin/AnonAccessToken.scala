@@ -24,7 +24,6 @@ object AnonAccessToken {
     userID: String
   ): AnonAccessToken = {
     val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], expiresIn = expiresIn.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any], session_key = session_key.asInstanceOf[js.Any], sig = sig.asInstanceOf[js.Any], userID = userID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAccessToken]
   }
 }

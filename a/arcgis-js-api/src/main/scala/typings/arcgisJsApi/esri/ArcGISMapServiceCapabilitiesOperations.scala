@@ -45,7 +45,6 @@ object ArcGISMapServiceCapabilitiesOperations {
     supportsTileMap: Boolean
   ): ArcGISMapServiceCapabilitiesOperations = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsExportMap = supportsExportMap.asInstanceOf[js.Any], supportsExportTiles = supportsExportTiles.asInstanceOf[js.Any], supportsQuery = supportsQuery.asInstanceOf[js.Any], supportsTileMap = supportsTileMap.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ArcGISMapServiceCapabilitiesOperations]
   }
 }

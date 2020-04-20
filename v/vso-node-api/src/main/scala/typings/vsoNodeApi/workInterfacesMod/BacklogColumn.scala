@@ -14,7 +14,6 @@ object BacklogColumn {
   @scala.inline
   def apply(columnFieldReference: WorkItemFieldReference, width: Double): BacklogColumn = {
     val __obj = js.Dynamic.literal(columnFieldReference = columnFieldReference.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BacklogColumn]
   }
 }

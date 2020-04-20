@@ -14,7 +14,6 @@ object AnonFormData {
   @scala.inline
   def apply(formData: js.Any, xhr: XMLHttpRequest): AnonFormData = {
     val __obj = js.Dynamic.literal(formData = formData.asInstanceOf[js.Any], xhr = xhr.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFormData]
   }
 }

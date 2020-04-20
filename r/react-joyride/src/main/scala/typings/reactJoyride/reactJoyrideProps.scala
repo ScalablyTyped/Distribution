@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactJoyrideProps {
   @scala.inline
-  def ReactJoyrideProps: Props.type = typings.reactJoyride.mod.Props
+  def ReactJoyrideProps: Props.type = Props
   type ReactJoyrideProps = Props
 }
 

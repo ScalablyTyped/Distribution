@@ -27,7 +27,6 @@ object LightSettings {
   @scala.inline
   def apply(color: String, lightOffDurationMillis: Double, lightOnDurationMillis: Double): LightSettings = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], lightOffDurationMillis = lightOffDurationMillis.asInstanceOf[js.Any], lightOnDurationMillis = lightOnDurationMillis.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LightSettings]
   }
 }

@@ -14,7 +14,6 @@ object GeoJSON {
   @scala.inline
   def apply(geometry: AnonCoordinates): GeoJSON = {
     val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GeoJSON]
   }
 }

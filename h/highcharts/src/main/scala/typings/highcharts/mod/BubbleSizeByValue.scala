@@ -12,10 +12,8 @@ trait BubbleSizeByValue extends js.Object
 
 object BubbleSizeByValue {
   @scala.inline
-  def area: typings.highcharts.highchartsStrings.area = this.cast("area")
+  def area: typings.highcharts.highchartsStrings.area = "area".asInstanceOf[typings.highcharts.highchartsStrings.area]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def width: typings.highcharts.highchartsStrings.width = this.cast("width")
+  def width: typings.highcharts.highchartsStrings.width = "width".asInstanceOf[typings.highcharts.highchartsStrings.width]
 }
 

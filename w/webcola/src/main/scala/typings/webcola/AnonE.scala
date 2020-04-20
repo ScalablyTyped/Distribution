@@ -15,7 +15,6 @@ object AnonE {
   @scala.inline
   def apply(E: js.Array[VisibilityEdge], V: js.Array[VisibilityVertex]): AnonE = {
     val __obj = js.Dynamic.literal(E = E.asInstanceOf[js.Any], V = V.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonE]
   }
 }

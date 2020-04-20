@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait HTMLAllCollection extends /* index */ NumberDictionary[Element] {
-  @JSName(scala.scalajs.js.Symbol.iterator)
+  @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[Element]] = js.native
   /**
     * Returns the number of elements in the collection.

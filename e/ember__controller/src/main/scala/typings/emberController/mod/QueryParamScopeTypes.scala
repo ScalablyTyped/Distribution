@@ -13,10 +13,8 @@ trait QueryParamScopeTypes extends js.Object
 
 object QueryParamScopeTypes {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def controller: typings.emberController.emberControllerStrings.controller = "controller".asInstanceOf[typings.emberController.emberControllerStrings.controller]
   @scala.inline
-  def controller: typings.emberController.emberControllerStrings.controller = this.cast("controller")
-  @scala.inline
-  def model: typings.emberController.emberControllerStrings.model = this.cast("model")
+  def model: typings.emberController.emberControllerStrings.model = "model".asInstanceOf[typings.emberController.emberControllerStrings.model]
 }
 

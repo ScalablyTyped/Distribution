@@ -30,7 +30,6 @@ object CellDragEvent {
   @scala.inline
   def apply(cellKey: String, fromRow: Double, toRow: Double, value: js.Any): CellDragEvent = {
     val __obj = js.Dynamic.literal(cellKey = cellKey.asInstanceOf[js.Any], fromRow = fromRow.asInstanceOf[js.Any], toRow = toRow.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CellDragEvent]
   }
 }

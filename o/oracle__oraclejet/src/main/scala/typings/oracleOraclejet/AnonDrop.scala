@@ -13,7 +13,6 @@ object AnonDrop {
   @scala.inline
   def apply(drag: AnonNodes, drop: AnonBackground): AnonDrop = {
     val __obj = js.Dynamic.literal(drag = drag.asInstanceOf[js.Any], drop = drop.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDrop]
   }
 }

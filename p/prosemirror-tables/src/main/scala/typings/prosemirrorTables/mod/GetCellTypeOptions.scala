@@ -15,7 +15,6 @@ object GetCellTypeOptions {
   @scala.inline
   def apply(col: Double, node: Node[_], row: Double): GetCellTypeOptions = {
     val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetCellTypeOptions]
   }
 }

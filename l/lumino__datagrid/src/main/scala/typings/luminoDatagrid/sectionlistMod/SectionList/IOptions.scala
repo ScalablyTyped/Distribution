@@ -18,7 +18,6 @@ object IOptions {
   @scala.inline
   def apply(defaultSize: Double): IOptions = {
     val __obj = js.Dynamic.literal(defaultSize = defaultSize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IOptions]
   }
 }

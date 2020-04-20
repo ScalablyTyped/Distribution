@@ -12,10 +12,8 @@ trait NotificationLevel extends js.Object
 
 object NotificationLevel {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def default: typings.twilioChat.twilioChatStrings.default = "default".asInstanceOf[typings.twilioChat.twilioChatStrings.default]
   @scala.inline
-  def default: typings.twilioChat.twilioChatStrings.default = this.cast("default")
-  @scala.inline
-  def muted: typings.twilioChat.twilioChatStrings.muted = this.cast("muted")
+  def muted: typings.twilioChat.twilioChatStrings.muted = "muted".asInstanceOf[typings.twilioChat.twilioChatStrings.muted]
 }
 

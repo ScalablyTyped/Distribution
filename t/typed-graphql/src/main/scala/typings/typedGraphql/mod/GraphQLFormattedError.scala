@@ -13,7 +13,6 @@ object GraphQLFormattedError {
   @scala.inline
   def apply(locations: js.Array[GraphQLErrorLocation], message: String): GraphQLFormattedError = {
     val __obj = js.Dynamic.literal(locations = locations.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GraphQLFormattedError]
   }
 }

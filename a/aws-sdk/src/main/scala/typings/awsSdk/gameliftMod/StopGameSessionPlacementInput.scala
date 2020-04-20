@@ -16,7 +16,6 @@ object StopGameSessionPlacementInput {
   @scala.inline
   def apply(PlacementId: IdStringModel): StopGameSessionPlacementInput = {
     val __obj = js.Dynamic.literal(PlacementId = PlacementId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopGameSessionPlacementInput]
   }
 }

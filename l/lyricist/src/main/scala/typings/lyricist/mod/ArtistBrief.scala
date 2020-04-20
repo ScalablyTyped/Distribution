@@ -28,7 +28,6 @@ object ArtistBrief {
     url: String
   ): ArtistBrief = {
     val __obj = js.Dynamic.literal(api_path = api_path.asInstanceOf[js.Any], header_image_url = header_image_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], image_url = image_url.asInstanceOf[js.Any], is_meme_verified = is_meme_verified.asInstanceOf[js.Any], is_verified = is_verified.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ArtistBrief]
   }
 }

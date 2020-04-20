@@ -16,7 +16,6 @@ object StopJobRequest {
   @scala.inline
   def apply(arn: AmazonResourceName): StopJobRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopJobRequest]
   }
 }

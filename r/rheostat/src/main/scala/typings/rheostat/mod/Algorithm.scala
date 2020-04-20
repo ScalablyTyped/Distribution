@@ -13,7 +13,6 @@ object Algorithm {
   @scala.inline
   def apply(getPosition: (Double, Double, Double) => Double, getValue: (Double, Double, Double) => Double): Algorithm = {
     val __obj = js.Dynamic.literal(getPosition = js.Any.fromFunction3(getPosition), getValue = js.Any.fromFunction3(getValue))
-  
     __obj.asInstanceOf[Algorithm]
   }
 }

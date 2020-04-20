@@ -21,7 +21,6 @@ object SizeValue {
   @scala.inline
   def apply(unit: Percentsign | px, value: Double): SizeValue = {
     val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SizeValue]
   }
 }

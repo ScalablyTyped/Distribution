@@ -22,18 +22,16 @@ trait PpBaselineAlignment extends js.Object
 
 object PpBaselineAlignment {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ppBaselineAlignAuto: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def ppBaselineAlignAuto: `5` = this.cast(5)
+  def ppBaselineAlignBaseline: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def ppBaselineAlignBaseline: `1` = this.cast(1)
+  def ppBaselineAlignCenter: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def ppBaselineAlignCenter: `3` = this.cast(3)
+  def ppBaselineAlignFarEast50: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def ppBaselineAlignFarEast50: `4` = this.cast(4)
+  def ppBaselineAlignMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def ppBaselineAlignMixed: `-2` = this.cast(-2)
-  @scala.inline
-  def ppBaselineAlignTop: `2` = this.cast(2)
+  def ppBaselineAlignTop: `2` = 2.asInstanceOf[`2`]
 }
 

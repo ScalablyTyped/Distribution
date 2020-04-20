@@ -13,7 +13,6 @@ object ClipboardStatic {
   @scala.inline
   def apply(getString: () => js.Promise[String], setString: String => Unit): ClipboardStatic = {
     val __obj = js.Dynamic.literal(getString = js.Any.fromFunction0(getString), setString = js.Any.fromFunction1(setString))
-  
     __obj.asInstanceOf[ClipboardStatic]
   }
 }

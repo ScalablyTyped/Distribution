@@ -14,7 +14,6 @@ object AnonMicros {
   @scala.inline
   def apply(micros: Double, millis: Double, seconds: Double): AnonMicros = {
     val __obj = js.Dynamic.literal(micros = micros.asInstanceOf[js.Any], millis = millis.asInstanceOf[js.Any], seconds = seconds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMicros]
   }
 }

@@ -18,7 +18,6 @@ object ManifestsResource {
   @scala.inline
   def apply(get: AnonDeployment => Request_[Manifest], list: AnonMaxResults => Request_[ManifestsListResponse]): ManifestsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[ManifestsResource]
   }
 }

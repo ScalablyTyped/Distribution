@@ -16,7 +16,6 @@ object GetLoadBalancerTlsCertificatesRequest {
   @scala.inline
   def apply(loadBalancerName: ResourceName): GetLoadBalancerTlsCertificatesRequest = {
     val __obj = js.Dynamic.literal(loadBalancerName = loadBalancerName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetLoadBalancerTlsCertificatesRequest]
   }
 }

@@ -13,7 +13,6 @@ object Guid {
   @scala.inline
   def apply(ispermalink: String, text: String): Guid = {
     val __obj = js.Dynamic.literal(ispermalink = ispermalink.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Guid]
   }
 }

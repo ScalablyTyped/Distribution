@@ -37,8 +37,8 @@ class WebGLPipelineContext () extends IPipelineContext {
   /* CompleteClass */
   override def _handlesSpectorRebuildCallback(onCompiled: js.Function1[/* compiledObject */ js.Any, Unit]): Unit = js.native
   @JSName("isAsync")
-  def isAsync_MWebGLPipelineContext(): Boolean = js.native
+  def isAsync_MWebGLPipelineContext: Boolean = js.native
   @JSName("isReady")
-  def isReady_MWebGLPipelineContext(): Boolean = js.native
+  def isReady_MWebGLPipelineContext: Boolean = js.native
 }
 

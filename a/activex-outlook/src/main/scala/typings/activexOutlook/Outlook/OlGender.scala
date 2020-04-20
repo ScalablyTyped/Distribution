@@ -16,12 +16,10 @@ trait OlGender extends js.Object
 
 object OlGender {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olFemale: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olFemale: `1` = this.cast(1)
+  def olMale: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olMale: `2` = this.cast(2)
-  @scala.inline
-  def olUnspecified: `0` = this.cast(0)
+  def olUnspecified: `0` = 0.asInstanceOf[`0`]
 }
 

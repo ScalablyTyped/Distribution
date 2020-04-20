@@ -14,7 +14,6 @@ object FSInfoResult {
   @scala.inline
   def apply(freeSpace: Double, totalSpace: Double): FSInfoResult = {
     val __obj = js.Dynamic.literal(freeSpace = freeSpace.asInstanceOf[js.Any], totalSpace = totalSpace.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FSInfoResult]
   }
 }

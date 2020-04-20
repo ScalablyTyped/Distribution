@@ -45,6 +45,7 @@ package object frauddetectorMod {
   type Language = typings.awsSdk.awsSdkStrings.DETECTORPL | java.lang.String
   type ListOfModelScores = js.Array[typings.awsSdk.frauddetectorMod.ModelScores]
   type ListOfModelVersions = js.Array[typings.awsSdk.frauddetectorMod.ModelVersion]
+  type ListOfRuleResults = js.Array[typings.awsSdk.frauddetectorMod.RuleResult]
   type ListOfStrings = js.Array[java.lang.String]
   type MaxResults = scala.Double
   type MetricsMap = org.scalablytyped.runtime.StringDictionary[java.lang.String]
@@ -90,6 +91,12 @@ package object frauddetectorMod {
   type OutcomeList = js.Array[typings.awsSdk.frauddetectorMod.Outcome]
   type OutcomesMaxResults = scala.Double
   type RuleDetailList = js.Array[typings.awsSdk.frauddetectorMod.RuleDetail]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.ALL_MATCHED
+    - typings.awsSdk.awsSdkStrings.FIRST_MATCHED
+    - java.lang.String
+  */
+  type RuleExecutionMode = typings.awsSdk.frauddetectorMod._RuleExecutionMode | java.lang.String
   type RuleList = js.Array[typings.awsSdk.frauddetectorMod.Rule]
   type RulesMaxResults = scala.Double
   type VariableEntryList = js.Array[typings.awsSdk.frauddetectorMod.VariableEntry]

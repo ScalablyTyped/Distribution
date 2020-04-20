@@ -33,7 +33,6 @@ object Referrer {
     url: String
   ): Referrer = {
     val __obj = js.Dynamic.literal(policy = policy.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Referrer]
   }
 }

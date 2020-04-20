@@ -13,7 +13,6 @@ object QueryExecuteCompleteNotificationResult {
   @scala.inline
   def apply(batchSummaries: js.Array[BatchSummary], ownerUri: String): QueryExecuteCompleteNotificationResult = {
     val __obj = js.Dynamic.literal(batchSummaries = batchSummaries.asInstanceOf[js.Any], ownerUri = ownerUri.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[QueryExecuteCompleteNotificationResult]
   }
 }

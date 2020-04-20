@@ -14,10 +14,8 @@ trait ɵQueryBindingType extends js.Object
 
 object ɵQueryBindingType {
   @scala.inline
-  def All: `1` = this.cast(1)
+  def All: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def First: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def First: `0` = 0.asInstanceOf[`0`]
 }
 

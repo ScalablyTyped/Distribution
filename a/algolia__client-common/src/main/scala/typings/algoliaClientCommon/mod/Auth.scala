@@ -22,7 +22,6 @@ object Auth {
   @scala.inline
   def apply(headers: () => Record[String, String], queryParameters: () => Record[String, String]): Auth = {
     val __obj = js.Dynamic.literal(headers = js.Any.fromFunction0(headers), queryParameters = js.Any.fromFunction0(queryParameters))
-  
     __obj.asInstanceOf[Auth]
   }
 }

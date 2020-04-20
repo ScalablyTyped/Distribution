@@ -60,6 +60,9 @@ package object rdsMod {
     - typings.awsSdk.awsSdkStrings.`insufficient-resource-limits`
     - typings.awsSdk.awsSdkStrings.creating__
     - typings.awsSdk.awsSdkStrings.deleting__
+    - typings.awsSdk.awsSdkStrings.suspended__
+    - typings.awsSdk.awsSdkStrings.suspending
+    - typings.awsSdk.awsSdkStrings.reactivating
     - java.lang.String
   */
   type DBProxyStatus = typings.awsSdk.rdsMod._DBProxyStatus | java.lang.String
@@ -75,7 +78,12 @@ package object rdsMod {
   type DoubleOptional = scala.Double
   type DoubleRangeList = js.Array[typings.awsSdk.rdsMod.DoubleRange]
   type EC2SecurityGroupList = js.Array[typings.awsSdk.rdsMod.EC2SecurityGroup]
-  type EngineFamily = typings.awsSdk.awsSdkStrings.MYSQL | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.MYSQL
+    - typings.awsSdk.awsSdkStrings.POSTGRESQL
+    - java.lang.String
+  */
+  type EngineFamily = typings.awsSdk.rdsMod._EngineFamily | java.lang.String
   type EngineModeList = js.Array[typings.awsSdk.rdsMod.String]
   type EventCategoriesList = js.Array[typings.awsSdk.rdsMod.String]
   type EventCategoriesMapList = js.Array[typings.awsSdk.rdsMod.EventCategoriesMap]
@@ -150,7 +158,22 @@ package object rdsMod {
   type TStamp = typings.std.Date
   type TagList = js.Array[typings.awsSdk.rdsMod.Tag]
   type TargetGroupList = js.Array[typings.awsSdk.rdsMod.DBProxyTargetGroup]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.UNREACHABLE
+    - typings.awsSdk.awsSdkStrings.CONNECTION_FAILED
+    - typings.awsSdk.awsSdkStrings.AUTH_FAILURE
+    - typings.awsSdk.awsSdkStrings.PENDING_PROXY_CAPACITY
+    - java.lang.String
+  */
+  type TargetHealthReason = typings.awsSdk.rdsMod._TargetHealthReason | java.lang.String
   type TargetList = js.Array[typings.awsSdk.rdsMod.DBProxyTarget]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.REGISTERING
+    - typings.awsSdk.awsSdkStrings.AVAILABLE
+    - typings.awsSdk.awsSdkStrings.UNAVAILABLE
+    - java.lang.String
+  */
+  type TargetState = typings.awsSdk.rdsMod._TargetState | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.RDS_INSTANCE
     - typings.awsSdk.awsSdkStrings.RDS_SERVERLESS_ENDPOINT

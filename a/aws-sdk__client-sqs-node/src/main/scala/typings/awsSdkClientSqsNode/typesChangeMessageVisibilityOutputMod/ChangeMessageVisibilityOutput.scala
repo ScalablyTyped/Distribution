@@ -18,7 +18,6 @@ object ChangeMessageVisibilityOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): ChangeMessageVisibilityOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChangeMessageVisibilityOutput]
   }
 }

@@ -16,7 +16,6 @@ object INodeArgs {
   @scala.inline
   def apply(node: js.Any, section: js.Any): INodeArgs = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INodeArgs]
   }
 }

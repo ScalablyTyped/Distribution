@@ -157,7 +157,6 @@ object ILabel {
     setObjectText: (String, String) => ILabel
   ): ILabel = {
     val __obj = js.Dynamic.literal(getAddressBarcodePosition = js.Any.fromFunction1(getAddressBarcodePosition), getAddressObjectCount = js.Any.fromFunction0(getAddressObjectCount), getAddressText = js.Any.fromFunction1(getAddressText), getLabelXml = js.Any.fromFunction0(getLabelXml), getObjectNames = js.Any.fromFunction0(getObjectNames), getObjectText = js.Any.fromFunction1(getObjectText), print = js.Any.fromFunction3(print), printAndPollStatus = js.Any.fromFunction5(printAndPollStatus), render = js.Any.fromFunction2(render), setAddressBarcodePosition = js.Any.fromFunction2(setAddressBarcodePosition), setAddressText = js.Any.fromFunction2(setAddressText), setObjectText = js.Any.fromFunction2(setObjectText))
-  
     __obj.asInstanceOf[ILabel]
   }
 }

@@ -49,7 +49,6 @@ object IUtilArc {
     getBoundsOfCurve: (Double, Double, Double, Double, Double, Double, Double, Double) => js.Array[Point]
   ): IUtilArc = {
     val __obj = js.Dynamic.literal(drawArc = js.Any.fromFunction4(drawArc), getBoundsOfArc = js.Any.fromFunction9(getBoundsOfArc), getBoundsOfCurve = js.Any.fromFunction8(getBoundsOfCurve))
-  
     __obj.asInstanceOf[IUtilArc]
   }
 }

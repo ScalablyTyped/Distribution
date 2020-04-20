@@ -16,7 +16,6 @@ object GetGameSessionLogUrlInput {
   @scala.inline
   def apply(GameSessionId: ArnStringModel): GetGameSessionLogUrlInput = {
     val __obj = js.Dynamic.literal(GameSessionId = GameSessionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetGameSessionLogUrlInput]
   }
 }

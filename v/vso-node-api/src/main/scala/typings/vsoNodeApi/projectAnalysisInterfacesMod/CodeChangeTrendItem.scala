@@ -14,7 +14,6 @@ object CodeChangeTrendItem {
   @scala.inline
   def apply(time: Date, value: Double): CodeChangeTrendItem = {
     val __obj = js.Dynamic.literal(time = time.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CodeChangeTrendItem]
   }
 }

@@ -16,7 +16,6 @@ object OutputDataConfig {
   @scala.inline
   def apply(S3Uri: S3Uri): OutputDataConfig = {
     val __obj = js.Dynamic.literal(S3Uri = S3Uri.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OutputDataConfig]
   }
 }

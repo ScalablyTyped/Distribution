@@ -17,7 +17,6 @@ object IGridImporterApi {
   @scala.inline
   def apply(importFile: File => Unit): IGridImporterApi = {
     val __obj = js.Dynamic.literal(importFile = js.Any.fromFunction1(importFile))
-  
     __obj.asInstanceOf[IGridImporterApi]
   }
 }

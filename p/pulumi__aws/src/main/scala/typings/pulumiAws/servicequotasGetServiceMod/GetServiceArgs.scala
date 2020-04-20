@@ -16,7 +16,6 @@ object GetServiceArgs {
   @scala.inline
   def apply(serviceName: String): GetServiceArgs = {
     val __obj = js.Dynamic.literal(serviceName = serviceName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetServiceArgs]
   }
 }

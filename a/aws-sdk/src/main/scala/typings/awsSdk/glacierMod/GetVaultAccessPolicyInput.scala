@@ -20,7 +20,6 @@ object GetVaultAccessPolicyInput {
   @scala.inline
   def apply(accountId: String, vaultName: String): GetVaultAccessPolicyInput = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], vaultName = vaultName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetVaultAccessPolicyInput]
   }
 }

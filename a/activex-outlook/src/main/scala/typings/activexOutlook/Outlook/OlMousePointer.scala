@@ -40,36 +40,34 @@ trait OlMousePointer extends js.Object
 
 object OlMousePointer {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olMousePointerAppStarting: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def olMousePointerAppStarting: `13` = this.cast(13)
+  def olMousePointerArrow: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olMousePointerArrow: `1` = this.cast(1)
+  def olMousePointerCross: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olMousePointerCross: `2` = this.cast(2)
+  def olMousePointerCustom: `99` = 99.asInstanceOf[`99`]
   @scala.inline
-  def olMousePointerCustom: `99` = this.cast(99)
+  def olMousePointerDefault: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def olMousePointerDefault: `0` = this.cast(0)
+  def olMousePointerHelp: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def olMousePointerHelp: `14` = this.cast(14)
+  def olMousePointerHourGlass: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def olMousePointerHourGlass: `11` = this.cast(11)
+  def olMousePointerIBeam: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def olMousePointerIBeam: `3` = this.cast(3)
+  def olMousePointerNoDrop: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def olMousePointerNoDrop: `12` = this.cast(12)
+  def olMousePointerSizeAll: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def olMousePointerSizeAll: `15` = this.cast(15)
+  def olMousePointerSizeNESW: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def olMousePointerSizeNESW: `6` = this.cast(6)
+  def olMousePointerSizeNS: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def olMousePointerSizeNS: `7` = this.cast(7)
+  def olMousePointerSizeNWSE: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def olMousePointerSizeNWSE: `8` = this.cast(8)
+  def olMousePointerSizeWE: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def olMousePointerSizeWE: `9` = this.cast(9)
-  @scala.inline
-  def olMousePointerUpArrow: `10` = this.cast(10)
+  def olMousePointerUpArrow: `10` = 10.asInstanceOf[`10`]
 }
 

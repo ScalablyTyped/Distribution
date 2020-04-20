@@ -20,7 +20,6 @@ object TestFailuresAnalysis {
     previousContext: TestResultsContext
   ): TestFailuresAnalysis = {
     val __obj = js.Dynamic.literal(existingFailures = existingFailures.asInstanceOf[js.Any], fixedTests = fixedTests.asInstanceOf[js.Any], newFailures = newFailures.asInstanceOf[js.Any], previousContext = previousContext.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TestFailuresAnalysis]
   }
 }

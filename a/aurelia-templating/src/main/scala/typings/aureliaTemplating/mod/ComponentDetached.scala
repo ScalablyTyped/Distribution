@@ -15,7 +15,6 @@ object ComponentDetached {
   @scala.inline
   def apply(detached: () => Unit): ComponentDetached = {
     val __obj = js.Dynamic.literal(detached = js.Any.fromFunction0(detached))
-  
     __obj.asInstanceOf[ComponentDetached]
   }
 }

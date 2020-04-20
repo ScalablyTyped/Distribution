@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactPlaidLinkProps {
   @scala.inline
-  def ReactPlaidLinkProps: PlaidLinkProps.type = typings.reactPlaidLink.mod.PlaidLinkProps
+  def ReactPlaidLinkProps: PlaidLinkProps.type = PlaidLinkProps
   type ReactPlaidLinkProps = PlaidLinkProps
 }
 

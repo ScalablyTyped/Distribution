@@ -28,42 +28,40 @@ trait GeomType extends js.Object
 
 object GeomType {
   @scala.inline
-  def area: typings.bizcharts.bizchartsStrings.area = this.cast("area")
+  def area: typings.bizcharts.bizchartsStrings.area = "area".asInstanceOf[typings.bizcharts.bizchartsStrings.area]
   @scala.inline
-  def areaStack: typings.bizcharts.bizchartsStrings.areaStack = this.cast("areaStack")
+  def areaStack: typings.bizcharts.bizchartsStrings.areaStack = "areaStack".asInstanceOf[typings.bizcharts.bizchartsStrings.areaStack]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def edge: typings.bizcharts.bizchartsStrings.edge = "edge".asInstanceOf[typings.bizcharts.bizchartsStrings.edge]
   @scala.inline
-  def edge: typings.bizcharts.bizchartsStrings.edge = this.cast("edge")
+  def heatmap: typings.bizcharts.bizchartsStrings.heatmap = "heatmap".asInstanceOf[typings.bizcharts.bizchartsStrings.heatmap]
   @scala.inline
-  def heatmap: typings.bizcharts.bizchartsStrings.heatmap = this.cast("heatmap")
+  def interval: typings.bizcharts.bizchartsStrings.interval = "interval".asInstanceOf[typings.bizcharts.bizchartsStrings.interval]
   @scala.inline
-  def interval: typings.bizcharts.bizchartsStrings.interval = this.cast("interval")
+  def intervalDodge: typings.bizcharts.bizchartsStrings.intervalDodge = "intervalDodge".asInstanceOf[typings.bizcharts.bizchartsStrings.intervalDodge]
   @scala.inline
-  def intervalDodge: typings.bizcharts.bizchartsStrings.intervalDodge = this.cast("intervalDodge")
+  def intervalStack: typings.bizcharts.bizchartsStrings.intervalStack = "intervalStack".asInstanceOf[typings.bizcharts.bizchartsStrings.intervalStack]
   @scala.inline
-  def intervalStack: typings.bizcharts.bizchartsStrings.intervalStack = this.cast("intervalStack")
+  def intervalSymmetric: typings.bizcharts.bizchartsStrings.intervalSymmetric = "intervalSymmetric".asInstanceOf[typings.bizcharts.bizchartsStrings.intervalSymmetric]
   @scala.inline
-  def intervalSymmetric: typings.bizcharts.bizchartsStrings.intervalSymmetric = this.cast("intervalSymmetric")
+  def line: typings.bizcharts.bizchartsStrings.line = "line".asInstanceOf[typings.bizcharts.bizchartsStrings.line]
   @scala.inline
-  def line: typings.bizcharts.bizchartsStrings.line = this.cast("line")
+  def lineStack: typings.bizcharts.bizchartsStrings.lineStack = "lineStack".asInstanceOf[typings.bizcharts.bizchartsStrings.lineStack]
   @scala.inline
-  def lineStack: typings.bizcharts.bizchartsStrings.lineStack = this.cast("lineStack")
+  def path: typings.bizcharts.bizchartsStrings.path = "path".asInstanceOf[typings.bizcharts.bizchartsStrings.path]
   @scala.inline
-  def path: typings.bizcharts.bizchartsStrings.path = this.cast("path")
+  def point: typings.bizcharts.bizchartsStrings.point = "point".asInstanceOf[typings.bizcharts.bizchartsStrings.point]
   @scala.inline
-  def point: typings.bizcharts.bizchartsStrings.point = this.cast("point")
+  def pointDodge: typings.bizcharts.bizchartsStrings.pointDodge = "pointDodge".asInstanceOf[typings.bizcharts.bizchartsStrings.pointDodge]
   @scala.inline
-  def pointDodge: typings.bizcharts.bizchartsStrings.pointDodge = this.cast("pointDodge")
+  def pointJitter: typings.bizcharts.bizchartsStrings.pointJitter = "pointJitter".asInstanceOf[typings.bizcharts.bizchartsStrings.pointJitter]
   @scala.inline
-  def pointJitter: typings.bizcharts.bizchartsStrings.pointJitter = this.cast("pointJitter")
+  def pointStack: typings.bizcharts.bizchartsStrings.pointStack = "pointStack".asInstanceOf[typings.bizcharts.bizchartsStrings.pointStack]
   @scala.inline
-  def pointStack: typings.bizcharts.bizchartsStrings.pointStack = this.cast("pointStack")
+  def polygon: typings.bizcharts.bizchartsStrings.polygon = "polygon".asInstanceOf[typings.bizcharts.bizchartsStrings.polygon]
   @scala.inline
-  def polygon: typings.bizcharts.bizchartsStrings.polygon = this.cast("polygon")
+  def schema: typings.bizcharts.bizchartsStrings.schema = "schema".asInstanceOf[typings.bizcharts.bizchartsStrings.schema]
   @scala.inline
-  def schema: typings.bizcharts.bizchartsStrings.schema = this.cast("schema")
-  @scala.inline
-  def schemaDodge: typings.bizcharts.bizchartsStrings.schemaDodge = this.cast("schemaDodge")
+  def schemaDodge: typings.bizcharts.bizchartsStrings.schemaDodge = "schemaDodge".asInstanceOf[typings.bizcharts.bizchartsStrings.schemaDodge]
 }
 

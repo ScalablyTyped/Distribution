@@ -20,7 +20,6 @@ object History {
     transitioning: Boolean
   ): History = {
     val __obj = js.Dynamic.literal(listen = js.Any.fromFunction1(listen), location = location.asInstanceOf[js.Any], navigate = navigate.asInstanceOf[js.Any], transitioning = transitioning.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[History]
   }
 }

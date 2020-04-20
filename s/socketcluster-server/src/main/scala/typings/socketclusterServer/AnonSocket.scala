@@ -13,7 +13,6 @@ object AnonSocket {
   @scala.inline
   def apply(socket: ^): AnonSocket = {
     val __obj = js.Dynamic.literal(socket = socket.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSocket]
   }
 }

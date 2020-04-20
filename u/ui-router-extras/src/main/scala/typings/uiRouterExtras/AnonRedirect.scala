@@ -14,7 +14,6 @@ object AnonRedirect {
   @scala.inline
   def apply(redirect: IRedirectParams, to: IRedirectParams): AnonRedirect = {
     val __obj = js.Dynamic.literal(redirect = redirect.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRedirect]
   }
 }

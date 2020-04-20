@@ -20,7 +20,6 @@ object DescribeUserProfileRequest {
   @scala.inline
   def apply(DomainId: DomainId, UserProfileName: UserProfileName): DescribeUserProfileRequest = {
     val __obj = js.Dynamic.literal(DomainId = DomainId.asInstanceOf[js.Any], UserProfileName = UserProfileName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeUserProfileRequest]
   }
 }

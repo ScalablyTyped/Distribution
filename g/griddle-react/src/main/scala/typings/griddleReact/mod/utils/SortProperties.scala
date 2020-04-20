@@ -19,7 +19,6 @@ object SortProperties {
     sortProperty: GriddleSortKey
   ): SortProperties = {
     val __obj = js.Dynamic.literal(columnId = columnId.asInstanceOf[js.Any], setSortColumn = js.Any.fromFunction1(setSortColumn), sortProperty = sortProperty.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SortProperties]
   }
 }

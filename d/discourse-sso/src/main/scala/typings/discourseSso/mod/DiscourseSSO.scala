@@ -18,7 +18,6 @@ object DiscourseSSO {
     validate: (String, String) => Boolean
   ): DiscourseSSO = {
     val __obj = js.Dynamic.literal(buildLoginString = js.Any.fromFunction1(buildLoginString), getNonce = js.Any.fromFunction1(getNonce), validate = js.Any.fromFunction2(validate))
-  
     __obj.asInstanceOf[DiscourseSSO]
   }
 }

@@ -28,7 +28,6 @@ object IProtocol {
   @scala.inline
   def apply(replyData: Invoke => Unit, sendData: Invoke => Unit): IProtocol = {
     val __obj = js.Dynamic.literal(replyData = js.Any.fromFunction1(replyData), sendData = js.Any.fromFunction1(sendData))
-  
     __obj.asInstanceOf[IProtocol]
   }
 }

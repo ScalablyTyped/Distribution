@@ -23,7 +23,6 @@ object Meta {
     runMethod: callback | `catch` | promise | stream | sync
   ): Meta = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], hrDuration = hrDuration.asInstanceOf[js.Any], runMethod = runMethod.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Meta]
   }
 }

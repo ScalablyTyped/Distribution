@@ -22,7 +22,6 @@ object CustomersCollection {
     update: (Customer, String) => Customer
   ): CustomersCollection = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), patch = js.Any.fromFunction2(patch), update = js.Any.fromFunction2(update))
-  
     __obj.asInstanceOf[CustomersCollection]
   }
 }

@@ -12,7 +12,6 @@ object AnonDoNotInstantiate {
   @scala.inline
   def apply(doNotInstantiate: Boolean): AnonDoNotInstantiate = {
     val __obj = js.Dynamic.literal(doNotInstantiate = doNotInstantiate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDoNotInstantiate]
   }
 }

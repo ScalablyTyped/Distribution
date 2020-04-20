@@ -13,7 +13,6 @@ object EditCellResult {
   @scala.inline
   def apply(cell: EditCell, isRowDirty: Boolean): EditCellResult = {
     val __obj = js.Dynamic.literal(cell = cell.asInstanceOf[js.Any], isRowDirty = isRowDirty.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EditCellResult]
   }
 }

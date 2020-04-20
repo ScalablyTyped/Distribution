@@ -16,7 +16,6 @@ object Requester {
   @scala.inline
   def apply(send: Request => ReadonlyPromiseResponse): Requester = {
     val __obj = js.Dynamic.literal(send = js.Any.fromFunction1(send))
-  
     __obj.asInstanceOf[Requester]
   }
 }

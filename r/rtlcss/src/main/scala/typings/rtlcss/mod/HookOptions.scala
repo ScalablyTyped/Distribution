@@ -19,7 +19,6 @@ object HookOptions {
   @scala.inline
   def apply(post: () => Unit, pre: () => Unit): HookOptions = {
     val __obj = js.Dynamic.literal(post = js.Any.fromFunction0(post), pre = js.Any.fromFunction0(pre))
-  
     __obj.asInstanceOf[HookOptions]
   }
 }

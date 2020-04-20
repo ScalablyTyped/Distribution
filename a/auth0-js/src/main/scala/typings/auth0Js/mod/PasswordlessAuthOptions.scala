@@ -15,7 +15,6 @@ object PasswordlessAuthOptions {
   @scala.inline
   def apply(connection: String, email: String, phoneNumber: String, verificationCode: String): PasswordlessAuthOptions = {
     val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], phoneNumber = phoneNumber.asInstanceOf[js.Any], verificationCode = verificationCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PasswordlessAuthOptions]
   }
 }

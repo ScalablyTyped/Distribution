@@ -16,7 +16,6 @@ object SendTemplatedEmailResponse {
   @scala.inline
   def apply(MessageId: MessageId): SendTemplatedEmailResponse = {
     val __obj = js.Dynamic.literal(MessageId = MessageId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SendTemplatedEmailResponse]
   }
 }

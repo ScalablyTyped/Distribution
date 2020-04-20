@@ -32,13 +32,13 @@ class OfflineEntityConfig protected () extends Element {
   /**
     * The value of this property is conceptually of type xPathConstraints.XPathConstraint.
     */
-  def constraint(): String = js.native
+  def constraint: String = js.native
   def constraint(newValue: String): js.Any = js.native
-  def containerAsNavigationProfileBase(): NavigationProfileBase = js.native
-  def entity(): IEntity = js.native
+  def containerAsNavigationProfileBase: NavigationProfileBase = js.native
+  def entity: IEntity = js.native
   def entity(newValue: IEntity): js.Any = js.native
-  def entityQualifiedName(): String = js.native
-  def shouldDownload(): Boolean = js.native
+  def entityQualifiedName: String = js.native
+  def shouldDownload: Boolean = js.native
   def shouldDownload(newValue: Boolean): js.Any = js.native
 }
 

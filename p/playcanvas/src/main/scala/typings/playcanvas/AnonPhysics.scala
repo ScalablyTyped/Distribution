@@ -13,7 +13,6 @@ object AnonPhysics {
   @scala.inline
   def apply(physics: AnonGravity, render: AnonExposure): AnonPhysics = {
     val __obj = js.Dynamic.literal(physics = physics.asInstanceOf[js.Any], render = render.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPhysics]
   }
 }

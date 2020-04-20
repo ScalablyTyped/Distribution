@@ -21,7 +21,6 @@ object IActionDefinition {
     Clone: () => IActionDefinition
   ): IActionDefinition = {
     val __obj = js.Dynamic.literal(ActionCreateSeparateAssignment = ActionCreateSeparateAssignment.asInstanceOf[js.Any], ActionType = ActionType.asInstanceOf[js.Any], Clear = js.Any.fromFunction0(Clear), Clone = js.Any.fromFunction0(Clone))
-  
     __obj.asInstanceOf[IActionDefinition]
   }
 }

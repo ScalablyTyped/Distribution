@@ -55,7 +55,6 @@ object Server {
     server: Http2Server
   ): Server = {
     val __obj = js.Dynamic.literal(listen = js.Any.fromFunction2(listen), onStream = js.Any.fromFunction2(onStream), road = road.asInstanceOf[js.Any], sendResponse = js.Any.fromFunction2(sendResponse), server = server.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Server]
   }
 }

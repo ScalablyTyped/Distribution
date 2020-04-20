@@ -5,15 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CreateStorageDataAttributes extends js.Object {
-  var extension: BaseAttributesExtensionObject
+  var extension: js.UndefOr[BaseAttributesExtensionObject] = js.undefined
   var name: String
 }
 
 object CreateStorageDataAttributes {
   @scala.inline
-  def apply(extension: BaseAttributesExtensionObject, name: String): CreateStorageDataAttributes = {
-    val __obj = js.Dynamic.literal(extension = extension.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
+  def apply(name: String, extension: BaseAttributesExtensionObject = null): CreateStorageDataAttributes = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateStorageDataAttributes]
   }
 }

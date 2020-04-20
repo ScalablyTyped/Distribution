@@ -13,7 +13,6 @@ object AnonFeatureChoroplethBoundFeature {
   @scala.inline
   def apply(feature: ChoroplethBoundFeature): AnonFeatureChoroplethBoundFeature = {
     val __obj = js.Dynamic.literal(feature = feature.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFeatureChoroplethBoundFeature]
   }
 }

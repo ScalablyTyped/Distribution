@@ -16,7 +16,6 @@ object DescribeForecastRequest {
   @scala.inline
   def apply(ForecastArn: Arn): DescribeForecastRequest = {
     val __obj = js.Dynamic.literal(ForecastArn = ForecastArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeForecastRequest]
   }
 }

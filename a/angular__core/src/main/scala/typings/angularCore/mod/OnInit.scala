@@ -19,7 +19,6 @@ object OnInit {
   @scala.inline
   def apply(ngOnInit: () => Unit): OnInit = {
     val __obj = js.Dynamic.literal(ngOnInit = js.Any.fromFunction0(ngOnInit))
-  
     __obj.asInstanceOf[OnInit]
   }
 }

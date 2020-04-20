@@ -14,7 +14,6 @@ object EncodedFullHashesResource {
   @scala.inline
   def apply(get: AnonAccesstoken => Request_[FindFullHashesResponse]): EncodedFullHashesResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
-  
     __obj.asInstanceOf[EncodedFullHashesResource]
   }
 }

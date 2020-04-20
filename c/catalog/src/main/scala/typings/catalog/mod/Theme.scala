@@ -67,7 +67,6 @@ object Theme {
     textColor: String
   ): Theme = {
     val __obj = js.Dynamic.literal(background = background.asInstanceOf[js.Any], baseFontSize = baseFontSize.asInstanceOf[js.Any], bgDark = bgDark.asInstanceOf[js.Any], bgLight = bgLight.asInstanceOf[js.Any], brandColor = brandColor.asInstanceOf[js.Any], checkerboardPatternDark = checkerboardPatternDark.asInstanceOf[js.Any], checkerboardPatternLight = checkerboardPatternLight.asInstanceOf[js.Any], codeColor = codeColor.asInstanceOf[js.Any], codeStyles = codeStyles.asInstanceOf[js.Any], fontFamily = fontFamily.asInstanceOf[js.Any], fontHeading = fontHeading.asInstanceOf[js.Any], fontMono = fontMono.asInstanceOf[js.Any], lightColor = lightColor.asInstanceOf[js.Any], linkColor = linkColor.asInstanceOf[js.Any], msRatio = msRatio.asInstanceOf[js.Any], navBarBackground = navBarBackground.asInstanceOf[js.Any], navBarTextColor = navBarTextColor.asInstanceOf[js.Any], pageHeadingBackground = pageHeadingBackground.asInstanceOf[js.Any], pageHeadingHeight = pageHeadingHeight.asInstanceOf[js.Any], pageHeadingTextColor = pageHeadingTextColor.asInstanceOf[js.Any], sidebarColor = sidebarColor.asInstanceOf[js.Any], sidebarColorActive = sidebarColorActive.asInstanceOf[js.Any], sidebarColorHeading = sidebarColorHeading.asInstanceOf[js.Any], sidebarColorLine = sidebarColorLine.asInstanceOf[js.Any], sidebarColorText = sidebarColorText.asInstanceOf[js.Any], sidebarColorTextActive = sidebarColorTextActive.asInstanceOf[js.Any], textColor = textColor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Theme]
   }
 }

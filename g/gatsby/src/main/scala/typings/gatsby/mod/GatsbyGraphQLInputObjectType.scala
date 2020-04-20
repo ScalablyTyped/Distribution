@@ -15,7 +15,6 @@ object GatsbyGraphQLInputObjectType {
   @scala.inline
   def apply(config: ComposeInputObjectTypeConfig, kind: INPUT_OBJECT): GatsbyGraphQLInputObjectType = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GatsbyGraphQLInputObjectType]
   }
 }

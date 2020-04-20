@@ -14,7 +14,6 @@ object ShortcodeMatch {
   @scala.inline
   def apply(content: String, index: Double, shortcode: Shortcode_): ShortcodeMatch = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], shortcode = shortcode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ShortcodeMatch]
   }
 }

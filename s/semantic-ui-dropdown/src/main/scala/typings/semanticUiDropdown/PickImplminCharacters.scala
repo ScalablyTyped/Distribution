@@ -13,7 +13,6 @@ object PickImplminCharacters {
   @scala.inline
   def apply(minCharacters: Double): PickImplminCharacters = {
     val __obj = js.Dynamic.literal(minCharacters = minCharacters.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplminCharacters]
   }
 }

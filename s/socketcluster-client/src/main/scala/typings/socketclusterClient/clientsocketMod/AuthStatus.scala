@@ -14,7 +14,6 @@ object AuthStatus {
   @scala.inline
   def apply(authError: Error, isAuthenticated: AuthStates): AuthStatus = {
     val __obj = js.Dynamic.literal(authError = authError.asInstanceOf[js.Any], isAuthenticated = isAuthenticated.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AuthStatus]
   }
 }

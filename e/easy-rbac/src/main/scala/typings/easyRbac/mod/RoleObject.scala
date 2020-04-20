@@ -13,7 +13,6 @@ object RoleObject {
   @scala.inline
   def apply(name: String, when: js.Object => js.Promise[Boolean]): RoleObject = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], when = js.Any.fromFunction1(when))
-  
     __obj.asInstanceOf[RoleObject]
   }
 }

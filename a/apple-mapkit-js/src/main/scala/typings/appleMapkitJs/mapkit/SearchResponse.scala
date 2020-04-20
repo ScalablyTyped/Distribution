@@ -27,7 +27,6 @@ object SearchResponse {
   @scala.inline
   def apply(boundingRegion: CoordinateRegion, places: js.Array[Place], query: String): SearchResponse = {
     val __obj = js.Dynamic.literal(boundingRegion = boundingRegion.asInstanceOf[js.Any], places = places.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SearchResponse]
   }
 }

@@ -13,7 +13,6 @@ object NotifyWhenUploadedInput {
   @scala.inline
   def apply(FileShareARN: FileShareARN): NotifyWhenUploadedInput = {
     val __obj = js.Dynamic.literal(FileShareARN = FileShareARN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NotifyWhenUploadedInput]
   }
 }

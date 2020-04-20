@@ -35,56 +35,54 @@ trait PlaceDetailsRequestField extends js.Object
 
 object PlaceDetailsRequestField {
   @scala.inline
-  def address_component: typings.googleMaps.googleMapsStrings.address_component = this.cast("address_component")
+  def address_component: typings.googleMaps.googleMapsStrings.address_component = "address_component".asInstanceOf[typings.googleMaps.googleMapsStrings.address_component]
   @scala.inline
-  def adr_address: typings.googleMaps.googleMapsStrings.adr_address = this.cast("adr_address")
+  def adr_address: typings.googleMaps.googleMapsStrings.adr_address = "adr_address".asInstanceOf[typings.googleMaps.googleMapsStrings.adr_address]
   @scala.inline
-  def alt_id: typings.googleMaps.googleMapsStrings.alt_id = this.cast("alt_id")
+  def alt_id: typings.googleMaps.googleMapsStrings.alt_id = "alt_id".asInstanceOf[typings.googleMaps.googleMapsStrings.alt_id]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def formatted_address: typings.googleMaps.googleMapsStrings.formatted_address = "formatted_address".asInstanceOf[typings.googleMaps.googleMapsStrings.formatted_address]
   @scala.inline
-  def formatted_address: typings.googleMaps.googleMapsStrings.formatted_address = this.cast("formatted_address")
+  def formatted_phone_number: typings.googleMaps.googleMapsStrings.formatted_phone_number = "formatted_phone_number".asInstanceOf[typings.googleMaps.googleMapsStrings.formatted_phone_number]
   @scala.inline
-  def formatted_phone_number: typings.googleMaps.googleMapsStrings.formatted_phone_number = this.cast("formatted_phone_number")
+  def geometry: typings.googleMaps.googleMapsStrings.geometry = "geometry".asInstanceOf[typings.googleMaps.googleMapsStrings.geometry]
   @scala.inline
-  def geometry: typings.googleMaps.googleMapsStrings.geometry = this.cast("geometry")
+  def icon: typings.googleMaps.googleMapsStrings.icon = "icon".asInstanceOf[typings.googleMaps.googleMapsStrings.icon]
   @scala.inline
-  def icon: typings.googleMaps.googleMapsStrings.icon = this.cast("icon")
+  def id: typings.googleMaps.googleMapsStrings.id = "id".asInstanceOf[typings.googleMaps.googleMapsStrings.id]
   @scala.inline
-  def id: typings.googleMaps.googleMapsStrings.id = this.cast("id")
+  def international_phone_number: typings.googleMaps.googleMapsStrings.international_phone_number = "international_phone_number".asInstanceOf[typings.googleMaps.googleMapsStrings.international_phone_number]
   @scala.inline
-  def international_phone_number: typings.googleMaps.googleMapsStrings.international_phone_number = this.cast("international_phone_number")
+  def name: typings.googleMaps.googleMapsStrings.name = "name".asInstanceOf[typings.googleMaps.googleMapsStrings.name]
   @scala.inline
-  def name: typings.googleMaps.googleMapsStrings.name = this.cast("name")
+  def opening_hours: typings.googleMaps.googleMapsStrings.opening_hours = "opening_hours".asInstanceOf[typings.googleMaps.googleMapsStrings.opening_hours]
   @scala.inline
-  def opening_hours: typings.googleMaps.googleMapsStrings.opening_hours = this.cast("opening_hours")
+  def permanently_closed: typings.googleMaps.googleMapsStrings.permanently_closed = "permanently_closed".asInstanceOf[typings.googleMaps.googleMapsStrings.permanently_closed]
   @scala.inline
-  def permanently_closed: typings.googleMaps.googleMapsStrings.permanently_closed = this.cast("permanently_closed")
+  def photo: typings.googleMaps.googleMapsStrings.photo = "photo".asInstanceOf[typings.googleMaps.googleMapsStrings.photo]
   @scala.inline
-  def photo: typings.googleMaps.googleMapsStrings.photo = this.cast("photo")
+  def place_id: typings.googleMaps.googleMapsStrings.place_id = "place_id".asInstanceOf[typings.googleMaps.googleMapsStrings.place_id]
   @scala.inline
-  def place_id: typings.googleMaps.googleMapsStrings.place_id = this.cast("place_id")
+  def plus_code: typings.googleMaps.googleMapsStrings.plus_code = "plus_code".asInstanceOf[typings.googleMaps.googleMapsStrings.plus_code]
   @scala.inline
-  def plus_code: typings.googleMaps.googleMapsStrings.plus_code = this.cast("plus_code")
+  def price_level: typings.googleMaps.googleMapsStrings.price_level = "price_level".asInstanceOf[typings.googleMaps.googleMapsStrings.price_level]
   @scala.inline
-  def price_level: typings.googleMaps.googleMapsStrings.price_level = this.cast("price_level")
+  def rating: typings.googleMaps.googleMapsStrings.rating = "rating".asInstanceOf[typings.googleMaps.googleMapsStrings.rating]
   @scala.inline
-  def rating: typings.googleMaps.googleMapsStrings.rating = this.cast("rating")
+  def review: typings.googleMaps.googleMapsStrings.review = "review".asInstanceOf[typings.googleMaps.googleMapsStrings.review]
   @scala.inline
-  def review: typings.googleMaps.googleMapsStrings.review = this.cast("review")
+  def scope: typings.googleMaps.googleMapsStrings.scope = "scope".asInstanceOf[typings.googleMaps.googleMapsStrings.scope]
   @scala.inline
-  def scope: typings.googleMaps.googleMapsStrings.scope = this.cast("scope")
+  def `type`: typings.googleMaps.googleMapsStrings.`type` = "type".asInstanceOf[typings.googleMaps.googleMapsStrings.`type`]
   @scala.inline
-  def `type`: typings.googleMaps.googleMapsStrings.`type` = this.cast("type")
+  def url: typings.googleMaps.googleMapsStrings.url = "url".asInstanceOf[typings.googleMaps.googleMapsStrings.url]
   @scala.inline
-  def url: typings.googleMaps.googleMapsStrings.url = this.cast("url")
+  def user_ratings_total: typings.googleMaps.googleMapsStrings.user_ratings_total = "user_ratings_total".asInstanceOf[typings.googleMaps.googleMapsStrings.user_ratings_total]
   @scala.inline
-  def user_ratings_total: typings.googleMaps.googleMapsStrings.user_ratings_total = this.cast("user_ratings_total")
+  def utc_offset: typings.googleMaps.googleMapsStrings.utc_offset = "utc_offset".asInstanceOf[typings.googleMaps.googleMapsStrings.utc_offset]
   @scala.inline
-  def utc_offset: typings.googleMaps.googleMapsStrings.utc_offset = this.cast("utc_offset")
+  def vicinity: typings.googleMaps.googleMapsStrings.vicinity = "vicinity".asInstanceOf[typings.googleMaps.googleMapsStrings.vicinity]
   @scala.inline
-  def vicinity: typings.googleMaps.googleMapsStrings.vicinity = this.cast("vicinity")
-  @scala.inline
-  def website: typings.googleMaps.googleMapsStrings.website = this.cast("website")
+  def website: typings.googleMaps.googleMapsStrings.website = "website".asInstanceOf[typings.googleMaps.googleMapsStrings.website]
 }
 

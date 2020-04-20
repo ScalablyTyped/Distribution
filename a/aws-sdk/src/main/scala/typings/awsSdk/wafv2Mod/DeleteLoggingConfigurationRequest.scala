@@ -16,7 +16,6 @@ object DeleteLoggingConfigurationRequest {
   @scala.inline
   def apply(ResourceArn: ResourceArn): DeleteLoggingConfigurationRequest = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteLoggingConfigurationRequest]
   }
 }

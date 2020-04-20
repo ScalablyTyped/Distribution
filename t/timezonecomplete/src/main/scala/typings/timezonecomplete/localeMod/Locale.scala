@@ -89,7 +89,6 @@ object Locale {
     weekdayTwoLetters: js.Array[String]
   ): Locale = {
     val __obj = js.Dynamic.literal(dayPeriodAbbreviated = dayPeriodAbbreviated.asInstanceOf[js.Any], dayPeriodNarrow = dayPeriodNarrow.asInstanceOf[js.Any], dayPeriodWide = dayPeriodWide.asInstanceOf[js.Any], eraAbbreviated = eraAbbreviated.asInstanceOf[js.Any], eraNarrow = eraNarrow.asInstanceOf[js.Any], eraWide = eraWide.asInstanceOf[js.Any], longMonthNames = longMonthNames.asInstanceOf[js.Any], longWeekdayNames = longWeekdayNames.asInstanceOf[js.Any], monthLetters = monthLetters.asInstanceOf[js.Any], quarterAbbreviations = quarterAbbreviations.asInstanceOf[js.Any], quarterLetter = quarterLetter.asInstanceOf[js.Any], quarterWord = quarterWord.asInstanceOf[js.Any], shortMonthNames = shortMonthNames.asInstanceOf[js.Any], shortWeekdayNames = shortWeekdayNames.asInstanceOf[js.Any], standAloneLongMonthNames = standAloneLongMonthNames.asInstanceOf[js.Any], standAloneMonthLetters = standAloneMonthLetters.asInstanceOf[js.Any], standAloneQuarterAbbreviations = standAloneQuarterAbbreviations.asInstanceOf[js.Any], standAloneQuarterLetter = standAloneQuarterLetter.asInstanceOf[js.Any], standAloneQuarterWord = standAloneQuarterWord.asInstanceOf[js.Any], standAloneShortMonthNames = standAloneShortMonthNames.asInstanceOf[js.Any], weekdayLetters = weekdayLetters.asInstanceOf[js.Any], weekdayTwoLetters = weekdayTwoLetters.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Locale]
   }
 }

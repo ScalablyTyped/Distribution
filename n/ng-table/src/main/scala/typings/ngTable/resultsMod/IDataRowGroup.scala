@@ -15,7 +15,6 @@ object IDataRowGroup {
   @scala.inline
   def apply[T]($hideRows: Boolean, data: js.Array[T], value: String): IDataRowGroup[T] = {
     val __obj = js.Dynamic.literal($hideRows = $hideRows.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDataRowGroup[T]]
   }
 }

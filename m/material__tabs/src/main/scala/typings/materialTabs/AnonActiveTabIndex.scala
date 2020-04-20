@@ -12,7 +12,6 @@ object AnonActiveTabIndex {
   @scala.inline
   def apply(activeTabIndex: Double): AnonActiveTabIndex = {
     val __obj = js.Dynamic.literal(activeTabIndex = activeTabIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonActiveTabIndex]
   }
 }

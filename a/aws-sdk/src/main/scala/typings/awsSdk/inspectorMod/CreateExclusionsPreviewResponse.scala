@@ -16,7 +16,6 @@ object CreateExclusionsPreviewResponse {
   @scala.inline
   def apply(previewToken: UUID): CreateExclusionsPreviewResponse = {
     val __obj = js.Dynamic.literal(previewToken = previewToken.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateExclusionsPreviewResponse]
   }
 }

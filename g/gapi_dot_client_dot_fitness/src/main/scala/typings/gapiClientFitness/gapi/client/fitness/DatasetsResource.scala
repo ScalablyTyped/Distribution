@@ -37,7 +37,6 @@ object DatasetsResource {
     patch: AnonDatasetId => Request_[Dataset]
   ): DatasetsResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), patch = js.Any.fromFunction1(patch))
-  
     __obj.asInstanceOf[DatasetsResource]
   }
 }

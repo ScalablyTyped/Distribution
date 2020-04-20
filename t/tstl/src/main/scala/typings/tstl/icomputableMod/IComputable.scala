@@ -24,7 +24,6 @@ object IComputable {
     plus: Param => Ret
   ): IComputable[Param, Ret] = {
     val __obj = js.Dynamic.literal(divides = js.Any.fromFunction1(divides), minus = js.Any.fromFunction1(minus), modules = js.Any.fromFunction1(modules), multiplies = js.Any.fromFunction1(multiplies), negate = js.Any.fromFunction0(negate), plus = js.Any.fromFunction1(plus))
-  
     __obj.asInstanceOf[IComputable[Param, Ret]]
   }
 }

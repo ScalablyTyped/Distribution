@@ -12,7 +12,6 @@ object Users {
   @scala.inline
   def apply(openedCount: () => js.Promise[Double | String]): Users = {
     val __obj = js.Dynamic.literal(openedCount = js.Any.fromFunction0(openedCount))
-  
     __obj.asInstanceOf[Users]
   }
 }

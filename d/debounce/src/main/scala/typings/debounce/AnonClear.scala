@@ -13,7 +13,6 @@ object AnonClear {
   @scala.inline
   def apply(clear: () => Unit, flush: () => Unit): AnonClear = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), flush = js.Any.fromFunction0(flush))
-  
     __obj.asInstanceOf[AnonClear]
   }
 }

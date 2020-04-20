@@ -28,38 +28,36 @@ trait DeviceManagementExchangeAccessStateReason extends js.Object
 
 object DeviceManagementExchangeAccessStateReason {
   @scala.inline
-  def azureADBlockDueToAccessPolicy: typings.microsoftGraph.microsoftGraphStrings.azureADBlockDueToAccessPolicy = this.cast("azureADBlockDueToAccessPolicy")
+  def azureADBlockDueToAccessPolicy: typings.microsoftGraph.microsoftGraphStrings.azureADBlockDueToAccessPolicy = "azureADBlockDueToAccessPolicy".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.azureADBlockDueToAccessPolicy]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def compliant: typings.microsoftGraph.microsoftGraphStrings.compliant = "compliant".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.compliant]
   @scala.inline
-  def compliant: typings.microsoftGraph.microsoftGraphStrings.compliant = this.cast("compliant")
+  def compromisedPassword: typings.microsoftGraph.microsoftGraphStrings.compromisedPassword = "compromisedPassword".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.compromisedPassword]
   @scala.inline
-  def compromisedPassword: typings.microsoftGraph.microsoftGraphStrings.compromisedPassword = this.cast("compromisedPassword")
+  def deviceNotKnownWithManagedApp: typings.microsoftGraph.microsoftGraphStrings.deviceNotKnownWithManagedApp = "deviceNotKnownWithManagedApp".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deviceNotKnownWithManagedApp]
   @scala.inline
-  def deviceNotKnownWithManagedApp: typings.microsoftGraph.microsoftGraphStrings.deviceNotKnownWithManagedApp = this.cast("deviceNotKnownWithManagedApp")
+  def exchangeDeviceRule: typings.microsoftGraph.microsoftGraphStrings.exchangeDeviceRule = "exchangeDeviceRule".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.exchangeDeviceRule]
   @scala.inline
-  def exchangeDeviceRule: typings.microsoftGraph.microsoftGraphStrings.exchangeDeviceRule = this.cast("exchangeDeviceRule")
+  def exchangeGlobalRule: typings.microsoftGraph.microsoftGraphStrings.exchangeGlobalRule = "exchangeGlobalRule".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.exchangeGlobalRule]
   @scala.inline
-  def exchangeGlobalRule: typings.microsoftGraph.microsoftGraphStrings.exchangeGlobalRule = this.cast("exchangeGlobalRule")
+  def exchangeIndividualRule: typings.microsoftGraph.microsoftGraphStrings.exchangeIndividualRule = "exchangeIndividualRule".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.exchangeIndividualRule]
   @scala.inline
-  def exchangeIndividualRule: typings.microsoftGraph.microsoftGraphStrings.exchangeIndividualRule = this.cast("exchangeIndividualRule")
+  def exchangeMailboxPolicy: typings.microsoftGraph.microsoftGraphStrings.exchangeMailboxPolicy = "exchangeMailboxPolicy".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.exchangeMailboxPolicy]
   @scala.inline
-  def exchangeMailboxPolicy: typings.microsoftGraph.microsoftGraphStrings.exchangeMailboxPolicy = this.cast("exchangeMailboxPolicy")
+  def exchangeUpgrade: typings.microsoftGraph.microsoftGraphStrings.exchangeUpgrade = "exchangeUpgrade".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.exchangeUpgrade]
   @scala.inline
-  def exchangeUpgrade: typings.microsoftGraph.microsoftGraphStrings.exchangeUpgrade = this.cast("exchangeUpgrade")
+  def mfaRequired: typings.microsoftGraph.microsoftGraphStrings.mfaRequired = "mfaRequired".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.mfaRequired]
   @scala.inline
-  def mfaRequired: typings.microsoftGraph.microsoftGraphStrings.mfaRequired = this.cast("mfaRequired")
+  def none: none_ = "none".asInstanceOf[none_]
   @scala.inline
-  def none: none_ = this.cast("none")
+  def notCompliant: typings.microsoftGraph.microsoftGraphStrings.notCompliant = "notCompliant".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notCompliant]
   @scala.inline
-  def notCompliant: typings.microsoftGraph.microsoftGraphStrings.notCompliant = this.cast("notCompliant")
+  def notEnrolled: typings.microsoftGraph.microsoftGraphStrings.notEnrolled = "notEnrolled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notEnrolled]
   @scala.inline
-  def notEnrolled: typings.microsoftGraph.microsoftGraphStrings.notEnrolled = this.cast("notEnrolled")
+  def other: typings.microsoftGraph.microsoftGraphStrings.other = "other".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.other]
   @scala.inline
-  def other: typings.microsoftGraph.microsoftGraphStrings.other = this.cast("other")
+  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
-  @scala.inline
-  def unknownLocation: typings.microsoftGraph.microsoftGraphStrings.unknownLocation = this.cast("unknownLocation")
+  def unknownLocation: typings.microsoftGraph.microsoftGraphStrings.unknownLocation = "unknownLocation".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownLocation]
 }
 

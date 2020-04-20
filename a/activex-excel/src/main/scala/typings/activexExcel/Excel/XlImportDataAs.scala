@@ -16,12 +16,10 @@ trait XlImportDataAs extends js.Object
 
 object XlImportDataAs {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlPivotTableReport: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlPivotTableReport: `1` = this.cast(1)
+  def xlQueryTable: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def xlQueryTable: `0` = this.cast(0)
-  @scala.inline
-  def xlTable: `2` = this.cast(2)
+  def xlTable: `2` = 2.asInstanceOf[`2`]
 }
 

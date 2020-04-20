@@ -28,7 +28,6 @@ object ICommand {
     getEditOperations: (ITextModel, IEditOperationBuilder) => Unit
   ): ICommand = {
     val __obj = js.Dynamic.literal(computeCursorState = js.Any.fromFunction2(computeCursorState), getEditOperations = js.Any.fromFunction2(getEditOperations))
-  
     __obj.asInstanceOf[ICommand]
   }
 }

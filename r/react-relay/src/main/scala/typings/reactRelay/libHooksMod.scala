@@ -30,7 +30,15 @@ import scala.scalajs.js.annotation._
 @JSImport("react-relay/lib/hooks", JSImport.Namespace)
 @js.native
 object libHooksMod extends js.Object {
-  def EntryPointContainer[TPreloadedQueries /* <: js.Object */, TPreloadedNestedEntryPoints /* <: js.Object */, TRuntimeProps /* <: js.Object */, TExtraProps, TEntryPointComponent /* <: EntryPointComponent[TPreloadedQueries, TPreloadedNestedEntryPoints, TRuntimeProps, TExtraProps] */](hasEntryPointReferenceProps: AnonEntryPointReference[TEntryPointComponent, TRuntimeProps]): ClassicElement[ElementType[_]] = js.native
+  def EntryPointContainer[TPreloadedQueries /* <: js.Object */, TPreloadedNestedEntryPoints /* <: js.Object */, TRuntimeProps /* <: js.Object */, TExtraProps, TEntryPointComponent /* <: EntryPointComponent[TPreloadedQueries, TPreloadedNestedEntryPoints, TRuntimeProps, TExtraProps] */](
+    hasEntryPointReferenceProps: AnonEntryPointReference[
+      TEntryPointComponent, 
+      TRuntimeProps, 
+      TPreloadedQueries, 
+      TPreloadedNestedEntryPoints, 
+      TExtraProps
+    ]
+  ): ClassicElement[ElementType[_]] = js.native
   def LazyLoadEntryPointContainer[TEntryPointParams /* <: js.Object */, TPreloadedQueries /* <: js.Object */, TPreloadedEntryPoints /* <: js.Object */, TRuntimeProps /* <: js.Object */, TExtraProps](
     hasEntryPointEntryPointParamsPropsEnvironmentProvider: EntryPointContainerProps[
       // tslint:disable-next-line no-unnecessary-generics
@@ -117,16 +125,16 @@ object libHooksMod extends js.Object {
   ReturnType[TQuery, TKey | Null, Call[KeyReturnType[TKey]] | Null] = js.native
   def useBlockingPaginationFragment[TQuery /* <: OperationType */, TKey /* <: KeyType */](fragmentInput: GraphQLTaggedNode, parentFragmentRef: Null, componentDisplayName: String): // tslint:disable-next-line no-unnecessary-generics
   ReturnType[TQuery, TKey | Null, Call[KeyReturnType[TKey]] | Null] = js.native
-  def useFragment[TKey /* <: ArrayKeyType */](fragmentInput: GraphQLTaggedNode): js.Array[typings.reactRelay.useFragmentMod.Call[ArrayKeyReturnType[TKey]]] | Null = js.native
-  def useFragment[TKey /* <: typings.reactRelay.useFragmentMod.KeyType */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): typings.reactRelay.useFragmentMod.Call[typings.reactRelay.useFragmentMod.KeyReturnType[TKey]] = js.native
+  def useFragment[TKey /* <: typings.reactRelay.useFragmentMod.KeyType */](fragmentInput: GraphQLTaggedNode): typings.reactRelay.useFragmentMod.Call[typings.reactRelay.useFragmentMod.KeyReturnType[TKey]] | Null = js.native
+  def useFragment[TKey /* <: typings.reactRelay.useFragmentMod.KeyType */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): typings.reactRelay.useFragmentMod.Call[typings.reactRelay.useFragmentMod.KeyReturnType[TKey]] | Null = js.native
+  @JSName("useFragment")
+  def useFragment_TKey_ArrayKeyType[TKey /* <: ArrayKeyType */](fragmentInput: GraphQLTaggedNode): js.Array[typings.reactRelay.useFragmentMod.Call[ArrayKeyReturnType[TKey]]] | Null = js.native
+  @JSName("useFragment")
+  def useFragment_TKey_ArrayKeyType[TKey /* <: ArrayKeyType */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): js.Array[typings.reactRelay.useFragmentMod.Call[ArrayKeyReturnType[TKey]]] | Null = js.native
   @JSName("useFragment")
   def useFragment_TKey_ArrayKeyType_Array[TKey /* <: ArrayKeyType */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): js.Array[typings.reactRelay.useFragmentMod.Call[ArrayKeyReturnType[TKey]]] = js.native
   @JSName("useFragment")
-  def useFragment_TKey_ArrayKeyType_Union[TKey /* <: ArrayKeyType */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): js.Array[typings.reactRelay.useFragmentMod.Call[ArrayKeyReturnType[TKey]]] | Null = js.native
-  @JSName("useFragment")
-  def useFragment_TKey_KeyType[TKey /* <: typings.reactRelay.useFragmentMod.KeyType */](fragmentInput: GraphQLTaggedNode): typings.reactRelay.useFragmentMod.Call[typings.reactRelay.useFragmentMod.KeyReturnType[TKey]] | Null = js.native
-  @JSName("useFragment")
-  def useFragment_TKey_KeyType_Union[TKey /* <: typings.reactRelay.useFragmentMod.KeyType */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): typings.reactRelay.useFragmentMod.Call[typings.reactRelay.useFragmentMod.KeyReturnType[TKey]] | Null = js.native
+  def useFragment_TKey_KeyType_Call[TKey /* <: typings.reactRelay.useFragmentMod.KeyType */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): typings.reactRelay.useFragmentMod.Call[typings.reactRelay.useFragmentMod.KeyReturnType[TKey]] = js.native
   @JSName("useLazyLoadQuery")
   def useLazyLoadQuery_variables[TQuery /* <: OperationType */](
     gqlQuery: GraphQLTaggedNode,

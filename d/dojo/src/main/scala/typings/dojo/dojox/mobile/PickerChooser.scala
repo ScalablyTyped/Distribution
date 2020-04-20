@@ -27,7 +27,6 @@ object PickerChooser {
   @scala.inline
   def apply(load: (js.Any, js.Any, js.Any) => Unit): PickerChooser = {
     val __obj = js.Dynamic.literal(load = js.Any.fromFunction3(load))
-  
     __obj.asInstanceOf[PickerChooser]
   }
 }

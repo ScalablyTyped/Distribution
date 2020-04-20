@@ -20,7 +20,6 @@ object DisablePolicyTypeRequest {
   @scala.inline
   def apply(PolicyType: PolicyType, RootId: RootId): DisablePolicyTypeRequest = {
     val __obj = js.Dynamic.literal(PolicyType = PolicyType.asInstanceOf[js.Any], RootId = RootId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisablePolicyTypeRequest]
   }
 }

@@ -13,7 +13,6 @@ object DeleteEndpointResponse {
   @scala.inline
   def apply(EndpointResponse: EndpointResponse): DeleteEndpointResponse = {
     val __obj = js.Dynamic.literal(EndpointResponse = EndpointResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteEndpointResponse]
   }
 }

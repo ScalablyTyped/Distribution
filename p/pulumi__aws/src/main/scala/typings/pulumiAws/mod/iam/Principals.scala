@@ -93,6 +93,11 @@ object Principals extends js.Object {
     */
   val EcsPrincipal: Principal = js.native
   /**
+    * Service Principal for Elastic Container Service Tasks
+    * Usage: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-iam-roles.html
+    */
+  val EcsTasksPrincipal: Principal = js.native
+  /**
     * Service Principal for Edge Lambda
     */
   val EdgeLambdaPrincipal: Principal = js.native

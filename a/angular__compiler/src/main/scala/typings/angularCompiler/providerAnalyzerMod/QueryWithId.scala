@@ -14,7 +14,6 @@ object QueryWithId {
   @scala.inline
   def apply(meta: CompileQueryMetadata, queryId: Double): QueryWithId = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], queryId = queryId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[QueryWithId]
   }
 }

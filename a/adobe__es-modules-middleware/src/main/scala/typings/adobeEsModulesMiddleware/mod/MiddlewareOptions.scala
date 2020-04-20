@@ -14,7 +14,6 @@ object MiddlewareOptions {
   @scala.inline
   def apply(paths: StringDictionary[String]): MiddlewareOptions = {
     val __obj = js.Dynamic.literal(paths = paths.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MiddlewareOptions]
   }
 }

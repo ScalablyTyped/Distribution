@@ -15,7 +15,6 @@ object DivisionsResource {
   @scala.inline
   def apply(search: AnonAlt => Request_[DivisionSearchResponse]): DivisionsResource = {
     val __obj = js.Dynamic.literal(search = js.Any.fromFunction1(search))
-  
     __obj.asInstanceOf[DivisionsResource]
   }
 }

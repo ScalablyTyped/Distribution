@@ -13,12 +13,10 @@ trait StrokeJoin extends js.Object
 
 object StrokeJoin {
   @scala.inline
-  def bevel: typings.vegaTypings.vegaTypingsStrings.bevel = this.cast("bevel")
+  def bevel: typings.vegaTypings.vegaTypingsStrings.bevel = "bevel".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.bevel]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def miter: typings.vegaTypings.vegaTypingsStrings.miter = "miter".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.miter]
   @scala.inline
-  def miter: typings.vegaTypings.vegaTypingsStrings.miter = this.cast("miter")
-  @scala.inline
-  def round: typings.vegaTypings.vegaTypingsStrings.round = this.cast("round")
+  def round: typings.vegaTypings.vegaTypingsStrings.round = "round".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.round]
 }
 

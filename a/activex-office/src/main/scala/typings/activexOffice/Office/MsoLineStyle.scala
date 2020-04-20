@@ -22,18 +22,16 @@ trait MsoLineStyle extends js.Object
 
 object MsoLineStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoLineSingle: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoLineSingle: `1` = this.cast(1)
+  def msoLineStyleMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def msoLineStyleMixed: `-2` = this.cast(-2)
+  def msoLineThickBetweenThin: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def msoLineThickBetweenThin: `5` = this.cast(5)
+  def msoLineThickThin: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoLineThickThin: `4` = this.cast(4)
+  def msoLineThinThick: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoLineThinThick: `3` = this.cast(3)
-  @scala.inline
-  def msoLineThinThin: `2` = this.cast(2)
+  def msoLineThinThin: `2` = 2.asInstanceOf[`2`]
 }
 

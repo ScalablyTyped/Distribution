@@ -24,7 +24,6 @@ object EventsResource {
     record: AnonLanguage => Request_[EventUpdateResponse]
   ): EventsResource = {
     val __obj = js.Dynamic.literal(listByPlayer = js.Any.fromFunction1(listByPlayer), listDefinitions = js.Any.fromFunction1(listDefinitions), record = js.Any.fromFunction1(record))
-  
     __obj.asInstanceOf[EventsResource]
   }
 }

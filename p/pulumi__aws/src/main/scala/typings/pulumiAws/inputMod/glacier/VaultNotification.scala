@@ -21,7 +21,6 @@ object VaultNotification {
   @scala.inline
   def apply(events: Input[js.Array[Input[String]]], snsTopic: Input[String]): VaultNotification = {
     val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], snsTopic = snsTopic.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VaultNotification]
   }
 }

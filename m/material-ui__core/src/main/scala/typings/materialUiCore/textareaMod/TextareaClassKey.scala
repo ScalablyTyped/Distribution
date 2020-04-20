@@ -13,12 +13,10 @@ trait TextareaClassKey extends js.Object
 
 object TextareaClassKey {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
   @scala.inline
-  def root: typings.materialUiCore.materialUiCoreStrings.root = this.cast("root")
+  def shadow: typings.materialUiCore.materialUiCoreStrings.shadow = "shadow".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.shadow]
   @scala.inline
-  def shadow: typings.materialUiCore.materialUiCoreStrings.shadow = this.cast("shadow")
-  @scala.inline
-  def textarea: typings.materialUiCore.materialUiCoreStrings.textarea = this.cast("textarea")
+  def textarea: typings.materialUiCore.materialUiCoreStrings.textarea = "textarea".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.textarea]
 }
 

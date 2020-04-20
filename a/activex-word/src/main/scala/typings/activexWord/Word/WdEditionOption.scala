@@ -26,22 +26,20 @@ trait WdEditionOption extends js.Object
 
 object WdEditionOption {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdAutomaticUpdate: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdAutomaticUpdate: `3` = this.cast(3)
+  def wdCancelPublisher: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdCancelPublisher: `0` = this.cast(0)
+  def wdChangeAttributes: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdChangeAttributes: `5` = this.cast(5)
+  def wdManualUpdate: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdManualUpdate: `4` = this.cast(4)
+  def wdOpenSource: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def wdOpenSource: `7` = this.cast(7)
+  def wdSelectPublisher: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdSelectPublisher: `2` = this.cast(2)
+  def wdSendPublisher: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdSendPublisher: `1` = this.cast(1)
-  @scala.inline
-  def wdUpdateSubscriber: `6` = this.cast(6)
+  def wdUpdateSubscriber: `6` = 6.asInstanceOf[`6`]
 }
 

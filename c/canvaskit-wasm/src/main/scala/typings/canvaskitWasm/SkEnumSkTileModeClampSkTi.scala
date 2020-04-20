@@ -24,7 +24,6 @@ object SkEnumSkTileModeClampSkTi {
     values: js.Array[SkTileMode]
   ): SkEnumSkTileModeClampSkTi = {
     val __obj = js.Dynamic.literal(Clamp = Clamp.asInstanceOf[js.Any], Decal = Decal.asInstanceOf[js.Any], Mirror = Mirror.asInstanceOf[js.Any], Repeat = Repeat.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SkEnumSkTileModeClampSkTi]
   }
 }

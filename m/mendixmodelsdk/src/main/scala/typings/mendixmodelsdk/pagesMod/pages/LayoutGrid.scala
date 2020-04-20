@@ -30,8 +30,8 @@ class LayoutGrid protected () extends ConditionallyVisibleWidget {
   ) = this()
   @JSName("model")
   var model_FLayoutGrid: IModel = js.native
-  def rows(): IList[LayoutGridRow] = js.native
-  def width(): ContainerWidth = js.native
+  def rows: IList[LayoutGridRow] = js.native
+  def width: ContainerWidth = js.native
   def width(newValue: ContainerWidth): js.Any = js.native
 }
 

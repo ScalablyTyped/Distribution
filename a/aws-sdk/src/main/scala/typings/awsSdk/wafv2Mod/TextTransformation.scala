@@ -20,7 +20,6 @@ object TextTransformation {
   @scala.inline
   def apply(Priority: TextTransformationPriority, Type: TextTransformationType): TextTransformation = {
     val __obj = js.Dynamic.literal(Priority = Priority.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TextTransformation]
   }
 }

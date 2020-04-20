@@ -482,482 +482,480 @@ trait WdWordDialog extends js.Object
 
 object WdWordDialog {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdDialogBuildingBlockOrganizer: `2067` = 2067.asInstanceOf[`2067`]
   @scala.inline
-  def wdDialogBuildingBlockOrganizer: `2067` = this.cast(2067)
+  def wdDialogCSSLinks: `1261` = 1261.asInstanceOf[`1261`]
   @scala.inline
-  def wdDialogCSSLinks: `1261` = this.cast(1261)
+  def wdDialogCompatibilityChecker: `2439` = 2439.asInstanceOf[`2439`]
   @scala.inline
-  def wdDialogCompatibilityChecker: `2439` = this.cast(2439)
+  def wdDialogConnect: `420` = 420.asInstanceOf[`420`]
   @scala.inline
-  def wdDialogConnect: `420` = this.cast(420)
+  def wdDialogConsistencyChecker: `1121` = 1121.asInstanceOf[`1121`]
   @scala.inline
-  def wdDialogConsistencyChecker: `1121` = this.cast(1121)
+  def wdDialogContentControlProperties: `2394` = 2394.asInstanceOf[`2394`]
   @scala.inline
-  def wdDialogContentControlProperties: `2394` = this.cast(2394)
+  def wdDialogControlRun: `235` = 235.asInstanceOf[`235`]
   @scala.inline
-  def wdDialogControlRun: `235` = this.cast(235)
+  def wdDialogConvertObject: `392` = 392.asInstanceOf[`392`]
   @scala.inline
-  def wdDialogConvertObject: `392` = this.cast(392)
+  def wdDialogCopyFile: `300` = 300.asInstanceOf[`300`]
   @scala.inline
-  def wdDialogCopyFile: `300` = this.cast(300)
+  def wdDialogCreateAutoText: `872` = 872.asInstanceOf[`872`]
   @scala.inline
-  def wdDialogCreateAutoText: `872` = this.cast(872)
+  def wdDialogCreateSource: `1922` = 1922.asInstanceOf[`1922`]
   @scala.inline
-  def wdDialogCreateSource: `1922` = this.cast(1922)
+  def wdDialogDocumentInspector: `1482` = 1482.asInstanceOf[`1482`]
   @scala.inline
-  def wdDialogDocumentInspector: `1482` = this.cast(1482)
+  def wdDialogDocumentStatistics: `78` = 78.asInstanceOf[`78`]
   @scala.inline
-  def wdDialogDocumentStatistics: `78` = this.cast(78)
+  def wdDialogDrawAlign: `634` = 634.asInstanceOf[`634`]
   @scala.inline
-  def wdDialogDrawAlign: `634` = this.cast(634)
+  def wdDialogDrawSnapToGrid: `633` = 633.asInstanceOf[`633`]
   @scala.inline
-  def wdDialogDrawSnapToGrid: `633` = this.cast(633)
+  def wdDialogEditAutoText: `985` = 985.asInstanceOf[`985`]
   @scala.inline
-  def wdDialogEditAutoText: `985` = this.cast(985)
+  def wdDialogEditCreatePublisher: `732` = 732.asInstanceOf[`732`]
   @scala.inline
-  def wdDialogEditCreatePublisher: `732` = this.cast(732)
+  def wdDialogEditFind: `112` = 112.asInstanceOf[`112`]
   @scala.inline
-  def wdDialogEditFind: `112` = this.cast(112)
+  def wdDialogEditFrame: `458` = 458.asInstanceOf[`458`]
   @scala.inline
-  def wdDialogEditFrame: `458` = this.cast(458)
+  def wdDialogEditGoTo: `896` = 896.asInstanceOf[`896`]
   @scala.inline
-  def wdDialogEditGoTo: `896` = this.cast(896)
+  def wdDialogEditGoToOld: `811` = 811.asInstanceOf[`811`]
   @scala.inline
-  def wdDialogEditGoToOld: `811` = this.cast(811)
+  def wdDialogEditLinks: `124` = 124.asInstanceOf[`124`]
   @scala.inline
-  def wdDialogEditLinks: `124` = this.cast(124)
+  def wdDialogEditObject: `125` = 125.asInstanceOf[`125`]
   @scala.inline
-  def wdDialogEditObject: `125` = this.cast(125)
+  def wdDialogEditPasteSpecial: `111` = 111.asInstanceOf[`111`]
   @scala.inline
-  def wdDialogEditPasteSpecial: `111` = this.cast(111)
+  def wdDialogEditPublishOptions: `735` = 735.asInstanceOf[`735`]
   @scala.inline
-  def wdDialogEditPublishOptions: `735` = this.cast(735)
+  def wdDialogEditReplace: `117` = 117.asInstanceOf[`117`]
   @scala.inline
-  def wdDialogEditReplace: `117` = this.cast(117)
+  def wdDialogEditStyle: `120` = 120.asInstanceOf[`120`]
   @scala.inline
-  def wdDialogEditStyle: `120` = this.cast(120)
+  def wdDialogEditSubscribeOptions: `736` = 736.asInstanceOf[`736`]
   @scala.inline
-  def wdDialogEditSubscribeOptions: `736` = this.cast(736)
+  def wdDialogEditSubscribeTo: `733` = 733.asInstanceOf[`733`]
   @scala.inline
-  def wdDialogEditSubscribeTo: `733` = this.cast(733)
+  def wdDialogEditTOACategory: `625` = 625.asInstanceOf[`625`]
   @scala.inline
-  def wdDialogEditTOACategory: `625` = this.cast(625)
+  def wdDialogEmailOptions: `863` = 863.asInstanceOf[`863`]
   @scala.inline
-  def wdDialogEmailOptions: `863` = this.cast(863)
+  def wdDialogExportAsFixedFormat: `2349` = 2349.asInstanceOf[`2349`]
   @scala.inline
-  def wdDialogExportAsFixedFormat: `2349` = this.cast(2349)
+  def wdDialogFileDocumentLayout: `178` = 178.asInstanceOf[`178`]
   @scala.inline
-  def wdDialogFileDocumentLayout: `178` = this.cast(178)
+  def wdDialogFileFind: `99` = 99.asInstanceOf[`99`]
   @scala.inline
-  def wdDialogFileFind: `99` = this.cast(99)
+  def wdDialogFileMacCustomPageSetupGX: `737` = 737.asInstanceOf[`737`]
   @scala.inline
-  def wdDialogFileMacCustomPageSetupGX: `737` = this.cast(737)
+  def wdDialogFileMacPageSetup: `685` = 685.asInstanceOf[`685`]
   @scala.inline
-  def wdDialogFileMacPageSetup: `685` = this.cast(685)
+  def wdDialogFileMacPageSetupGX: `444` = 444.asInstanceOf[`444`]
   @scala.inline
-  def wdDialogFileMacPageSetupGX: `444` = this.cast(444)
+  def wdDialogFileNew: `79` = 79.asInstanceOf[`79`]
   @scala.inline
-  def wdDialogFileNew: `79` = this.cast(79)
+  def wdDialogFileNew2007: `1116` = 1116.asInstanceOf[`1116`]
   @scala.inline
-  def wdDialogFileNew2007: `1116` = this.cast(1116)
+  def wdDialogFileOpen: `80` = 80.asInstanceOf[`80`]
   @scala.inline
-  def wdDialogFileOpen: `80` = this.cast(80)
+  def wdDialogFilePageSetup: `178` = 178.asInstanceOf[`178`]
   @scala.inline
-  def wdDialogFilePageSetup: `178` = this.cast(178)
+  def wdDialogFilePrint: `88` = 88.asInstanceOf[`88`]
   @scala.inline
-  def wdDialogFilePrint: `88` = this.cast(88)
+  def wdDialogFilePrintOneCopy: `445` = 445.asInstanceOf[`445`]
   @scala.inline
-  def wdDialogFilePrintOneCopy: `445` = this.cast(445)
+  def wdDialogFilePrintSetup: `97` = 97.asInstanceOf[`97`]
   @scala.inline
-  def wdDialogFilePrintSetup: `97` = this.cast(97)
+  def wdDialogFileRoutingSlip: `624` = 624.asInstanceOf[`624`]
   @scala.inline
-  def wdDialogFileRoutingSlip: `624` = this.cast(624)
+  def wdDialogFileSaveAs: `84` = 84.asInstanceOf[`84`]
   @scala.inline
-  def wdDialogFileSaveAs: `84` = this.cast(84)
+  def wdDialogFileSaveVersion: `1007` = 1007.asInstanceOf[`1007`]
   @scala.inline
-  def wdDialogFileSaveVersion: `1007` = this.cast(1007)
+  def wdDialogFileSummaryInfo: `86` = 86.asInstanceOf[`86`]
   @scala.inline
-  def wdDialogFileSummaryInfo: `86` = this.cast(86)
+  def wdDialogFileVersions: `945` = 945.asInstanceOf[`945`]
   @scala.inline
-  def wdDialogFileVersions: `945` = this.cast(945)
+  def wdDialogFitText: `983` = 983.asInstanceOf[`983`]
   @scala.inline
-  def wdDialogFitText: `983` = this.cast(983)
+  def wdDialogFontSubstitution: `581` = 581.asInstanceOf[`581`]
   @scala.inline
-  def wdDialogFontSubstitution: `581` = this.cast(581)
+  def wdDialogFormFieldHelp: `361` = 361.asInstanceOf[`361`]
   @scala.inline
-  def wdDialogFormFieldHelp: `361` = this.cast(361)
+  def wdDialogFormFieldOptions: `353` = 353.asInstanceOf[`353`]
   @scala.inline
-  def wdDialogFormFieldOptions: `353` = this.cast(353)
+  def wdDialogFormatAddrFonts: `103` = 103.asInstanceOf[`103`]
   @scala.inline
-  def wdDialogFormatAddrFonts: `103` = this.cast(103)
+  def wdDialogFormatBordersAndShading: `189` = 189.asInstanceOf[`189`]
   @scala.inline
-  def wdDialogFormatBordersAndShading: `189` = this.cast(189)
+  def wdDialogFormatBulletsAndNumbering: `824` = 824.asInstanceOf[`824`]
   @scala.inline
-  def wdDialogFormatBulletsAndNumbering: `824` = this.cast(824)
+  def wdDialogFormatCallout: `610` = 610.asInstanceOf[`610`]
   @scala.inline
-  def wdDialogFormatCallout: `610` = this.cast(610)
+  def wdDialogFormatChangeCase: `322` = 322.asInstanceOf[`322`]
   @scala.inline
-  def wdDialogFormatChangeCase: `322` = this.cast(322)
+  def wdDialogFormatColumns: `177` = 177.asInstanceOf[`177`]
   @scala.inline
-  def wdDialogFormatColumns: `177` = this.cast(177)
+  def wdDialogFormatDefineStyleBorders: `185` = 185.asInstanceOf[`185`]
   @scala.inline
-  def wdDialogFormatDefineStyleBorders: `185` = this.cast(185)
+  def wdDialogFormatDefineStyleFont: `181` = 181.asInstanceOf[`181`]
   @scala.inline
-  def wdDialogFormatDefineStyleFont: `181` = this.cast(181)
+  def wdDialogFormatDefineStyleFrame: `184` = 184.asInstanceOf[`184`]
   @scala.inline
-  def wdDialogFormatDefineStyleFrame: `184` = this.cast(184)
+  def wdDialogFormatDefineStyleLang: `186` = 186.asInstanceOf[`186`]
   @scala.inline
-  def wdDialogFormatDefineStyleLang: `186` = this.cast(186)
+  def wdDialogFormatDefineStylePara: `182` = 182.asInstanceOf[`182`]
   @scala.inline
-  def wdDialogFormatDefineStylePara: `182` = this.cast(182)
+  def wdDialogFormatDefineStyleTabs: `183` = 183.asInstanceOf[`183`]
   @scala.inline
-  def wdDialogFormatDefineStyleTabs: `183` = this.cast(183)
+  def wdDialogFormatDrawingObject: `960` = 960.asInstanceOf[`960`]
   @scala.inline
-  def wdDialogFormatDrawingObject: `960` = this.cast(960)
+  def wdDialogFormatDropCap: `488` = 488.asInstanceOf[`488`]
   @scala.inline
-  def wdDialogFormatDropCap: `488` = this.cast(488)
+  def wdDialogFormatEncloseCharacters: `1162` = 1162.asInstanceOf[`1162`]
   @scala.inline
-  def wdDialogFormatEncloseCharacters: `1162` = this.cast(1162)
+  def wdDialogFormatFont: `174` = 174.asInstanceOf[`174`]
   @scala.inline
-  def wdDialogFormatFont: `174` = this.cast(174)
+  def wdDialogFormatFrame: `190` = 190.asInstanceOf[`190`]
   @scala.inline
-  def wdDialogFormatFrame: `190` = this.cast(190)
+  def wdDialogFormatPageNumber: `298` = 298.asInstanceOf[`298`]
   @scala.inline
-  def wdDialogFormatPageNumber: `298` = this.cast(298)
+  def wdDialogFormatParagraph: `175` = 175.asInstanceOf[`175`]
   @scala.inline
-  def wdDialogFormatParagraph: `175` = this.cast(175)
+  def wdDialogFormatPicture: `187` = 187.asInstanceOf[`187`]
   @scala.inline
-  def wdDialogFormatPicture: `187` = this.cast(187)
+  def wdDialogFormatRetAddrFonts: `221` = 221.asInstanceOf[`221`]
   @scala.inline
-  def wdDialogFormatRetAddrFonts: `221` = this.cast(221)
+  def wdDialogFormatSectionLayout: `176` = 176.asInstanceOf[`176`]
   @scala.inline
-  def wdDialogFormatSectionLayout: `176` = this.cast(176)
+  def wdDialogFormatStyle: `180` = 180.asInstanceOf[`180`]
   @scala.inline
-  def wdDialogFormatStyle: `180` = this.cast(180)
+  def wdDialogFormatStyleGallery: `505` = 505.asInstanceOf[`505`]
   @scala.inline
-  def wdDialogFormatStyleGallery: `505` = this.cast(505)
+  def wdDialogFormatStylesCustom: `1248` = 1248.asInstanceOf[`1248`]
   @scala.inline
-  def wdDialogFormatStylesCustom: `1248` = this.cast(1248)
+  def wdDialogFormatTabs: `179` = 179.asInstanceOf[`179`]
   @scala.inline
-  def wdDialogFormatTabs: `179` = this.cast(179)
+  def wdDialogFormatTheme: `855` = 855.asInstanceOf[`855`]
   @scala.inline
-  def wdDialogFormatTheme: `855` = this.cast(855)
+  def wdDialogFormattingRestrictions: `1427` = 1427.asInstanceOf[`1427`]
   @scala.inline
-  def wdDialogFormattingRestrictions: `1427` = this.cast(1427)
+  def wdDialogFrameSetProperties: `1074` = 1074.asInstanceOf[`1074`]
   @scala.inline
-  def wdDialogFrameSetProperties: `1074` = this.cast(1074)
+  def wdDialogHelpAbout: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def wdDialogHelpAbout: `9` = this.cast(9)
+  def wdDialogHelpWordPerfectHelp: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def wdDialogHelpWordPerfectHelp: `10` = this.cast(10)
+  def wdDialogHelpWordPerfectHelpOptions: `511` = 511.asInstanceOf[`511`]
   @scala.inline
-  def wdDialogHelpWordPerfectHelpOptions: `511` = this.cast(511)
+  def wdDialogHorizontalInVertical: `1160` = 1160.asInstanceOf[`1160`]
   @scala.inline
-  def wdDialogHorizontalInVertical: `1160` = this.cast(1160)
+  def wdDialogIMESetDefault: `1094` = 1094.asInstanceOf[`1094`]
   @scala.inline
-  def wdDialogIMESetDefault: `1094` = this.cast(1094)
+  def wdDialogInsertAddCaption: `402` = 402.asInstanceOf[`402`]
   @scala.inline
-  def wdDialogInsertAddCaption: `402` = this.cast(402)
+  def wdDialogInsertAutoCaption: `359` = 359.asInstanceOf[`359`]
   @scala.inline
-  def wdDialogInsertAutoCaption: `359` = this.cast(359)
+  def wdDialogInsertBookmark: `168` = 168.asInstanceOf[`168`]
   @scala.inline
-  def wdDialogInsertBookmark: `168` = this.cast(168)
+  def wdDialogInsertBreak: `159` = 159.asInstanceOf[`159`]
   @scala.inline
-  def wdDialogInsertBreak: `159` = this.cast(159)
+  def wdDialogInsertCaption: `357` = 357.asInstanceOf[`357`]
   @scala.inline
-  def wdDialogInsertCaption: `357` = this.cast(357)
+  def wdDialogInsertCaptionNumbering: `358` = 358.asInstanceOf[`358`]
   @scala.inline
-  def wdDialogInsertCaptionNumbering: `358` = this.cast(358)
+  def wdDialogInsertCrossReference: `367` = 367.asInstanceOf[`367`]
   @scala.inline
-  def wdDialogInsertCrossReference: `367` = this.cast(367)
+  def wdDialogInsertDatabase: `341` = 341.asInstanceOf[`341`]
   @scala.inline
-  def wdDialogInsertDatabase: `341` = this.cast(341)
+  def wdDialogInsertDateTime: `165` = 165.asInstanceOf[`165`]
   @scala.inline
-  def wdDialogInsertDateTime: `165` = this.cast(165)
+  def wdDialogInsertField: `166` = 166.asInstanceOf[`166`]
   @scala.inline
-  def wdDialogInsertField: `166` = this.cast(166)
+  def wdDialogInsertFile: `164` = 164.asInstanceOf[`164`]
   @scala.inline
-  def wdDialogInsertFile: `164` = this.cast(164)
+  def wdDialogInsertFootnote: `370` = 370.asInstanceOf[`370`]
   @scala.inline
-  def wdDialogInsertFootnote: `370` = this.cast(370)
+  def wdDialogInsertFormField: `483` = 483.asInstanceOf[`483`]
   @scala.inline
-  def wdDialogInsertFormField: `483` = this.cast(483)
+  def wdDialogInsertHyperlink: `925` = 925.asInstanceOf[`925`]
   @scala.inline
-  def wdDialogInsertHyperlink: `925` = this.cast(925)
+  def wdDialogInsertIndex: `170` = 170.asInstanceOf[`170`]
   @scala.inline
-  def wdDialogInsertIndex: `170` = this.cast(170)
+  def wdDialogInsertIndexAndTables: `473` = 473.asInstanceOf[`473`]
   @scala.inline
-  def wdDialogInsertIndexAndTables: `473` = this.cast(473)
+  def wdDialogInsertMergeField: `167` = 167.asInstanceOf[`167`]
   @scala.inline
-  def wdDialogInsertMergeField: `167` = this.cast(167)
+  def wdDialogInsertNumber: `812` = 812.asInstanceOf[`812`]
   @scala.inline
-  def wdDialogInsertNumber: `812` = this.cast(812)
+  def wdDialogInsertObject: `172` = 172.asInstanceOf[`172`]
   @scala.inline
-  def wdDialogInsertObject: `172` = this.cast(172)
+  def wdDialogInsertPageNumbers: `294` = 294.asInstanceOf[`294`]
   @scala.inline
-  def wdDialogInsertPageNumbers: `294` = this.cast(294)
+  def wdDialogInsertPicture: `163` = 163.asInstanceOf[`163`]
   @scala.inline
-  def wdDialogInsertPicture: `163` = this.cast(163)
+  def wdDialogInsertPlaceholder: `2348` = 2348.asInstanceOf[`2348`]
   @scala.inline
-  def wdDialogInsertPlaceholder: `2348` = this.cast(2348)
+  def wdDialogInsertSource: `2120` = 2120.asInstanceOf[`2120`]
   @scala.inline
-  def wdDialogInsertSource: `2120` = this.cast(2120)
+  def wdDialogInsertSubdocument: `583` = 583.asInstanceOf[`583`]
   @scala.inline
-  def wdDialogInsertSubdocument: `583` = this.cast(583)
+  def wdDialogInsertSymbol: `162` = 162.asInstanceOf[`162`]
   @scala.inline
-  def wdDialogInsertSymbol: `162` = this.cast(162)
+  def wdDialogInsertTableOfAuthorities: `471` = 471.asInstanceOf[`471`]
   @scala.inline
-  def wdDialogInsertTableOfAuthorities: `471` = this.cast(471)
+  def wdDialogInsertTableOfContents: `171` = 171.asInstanceOf[`171`]
   @scala.inline
-  def wdDialogInsertTableOfContents: `171` = this.cast(171)
+  def wdDialogInsertTableOfFigures: `472` = 472.asInstanceOf[`472`]
   @scala.inline
-  def wdDialogInsertTableOfFigures: `472` = this.cast(472)
+  def wdDialogInsertWebComponent: `1324` = 1324.asInstanceOf[`1324`]
   @scala.inline
-  def wdDialogInsertWebComponent: `1324` = this.cast(1324)
+  def wdDialogLabelOptions: `1367` = 1367.asInstanceOf[`1367`]
   @scala.inline
-  def wdDialogLabelOptions: `1367` = this.cast(1367)
+  def wdDialogLetterWizard: `821` = 821.asInstanceOf[`821`]
   @scala.inline
-  def wdDialogLetterWizard: `821` = this.cast(821)
+  def wdDialogListCommands: `723` = 723.asInstanceOf[`723`]
   @scala.inline
-  def wdDialogListCommands: `723` = this.cast(723)
+  def wdDialogMailMerge: `676` = 676.asInstanceOf[`676`]
   @scala.inline
-  def wdDialogMailMerge: `676` = this.cast(676)
+  def wdDialogMailMergeCheck: `677` = 677.asInstanceOf[`677`]
   @scala.inline
-  def wdDialogMailMergeCheck: `677` = this.cast(677)
+  def wdDialogMailMergeCreateDataSource: `642` = 642.asInstanceOf[`642`]
   @scala.inline
-  def wdDialogMailMergeCreateDataSource: `642` = this.cast(642)
+  def wdDialogMailMergeCreateHeaderSource: `643` = 643.asInstanceOf[`643`]
   @scala.inline
-  def wdDialogMailMergeCreateHeaderSource: `643` = this.cast(643)
+  def wdDialogMailMergeFieldMapping: `1304` = 1304.asInstanceOf[`1304`]
   @scala.inline
-  def wdDialogMailMergeFieldMapping: `1304` = this.cast(1304)
+  def wdDialogMailMergeFindRecipient: `1326` = 1326.asInstanceOf[`1326`]
   @scala.inline
-  def wdDialogMailMergeFindRecipient: `1326` = this.cast(1326)
+  def wdDialogMailMergeFindRecord: `569` = 569.asInstanceOf[`569`]
   @scala.inline
-  def wdDialogMailMergeFindRecord: `569` = this.cast(569)
+  def wdDialogMailMergeHelper: `680` = 680.asInstanceOf[`680`]
   @scala.inline
-  def wdDialogMailMergeHelper: `680` = this.cast(680)
+  def wdDialogMailMergeInsertAddressBlock: `1305` = 1305.asInstanceOf[`1305`]
   @scala.inline
-  def wdDialogMailMergeInsertAddressBlock: `1305` = this.cast(1305)
+  def wdDialogMailMergeInsertAsk: `4047` = 4047.asInstanceOf[`4047`]
   @scala.inline
-  def wdDialogMailMergeInsertAsk: `4047` = this.cast(4047)
+  def wdDialogMailMergeInsertFields: `1307` = 1307.asInstanceOf[`1307`]
   @scala.inline
-  def wdDialogMailMergeInsertFields: `1307` = this.cast(1307)
+  def wdDialogMailMergeInsertFillIn: `4048` = 4048.asInstanceOf[`4048`]
   @scala.inline
-  def wdDialogMailMergeInsertFillIn: `4048` = this.cast(4048)
+  def wdDialogMailMergeInsertGreetingLine: `1306` = 1306.asInstanceOf[`1306`]
   @scala.inline
-  def wdDialogMailMergeInsertGreetingLine: `1306` = this.cast(1306)
+  def wdDialogMailMergeInsertIf: `4049` = 4049.asInstanceOf[`4049`]
   @scala.inline
-  def wdDialogMailMergeInsertIf: `4049` = this.cast(4049)
+  def wdDialogMailMergeInsertNextIf: `4053` = 4053.asInstanceOf[`4053`]
   @scala.inline
-  def wdDialogMailMergeInsertNextIf: `4053` = this.cast(4053)
+  def wdDialogMailMergeInsertSet: `4054` = 4054.asInstanceOf[`4054`]
   @scala.inline
-  def wdDialogMailMergeInsertSet: `4054` = this.cast(4054)
+  def wdDialogMailMergeInsertSkipIf: `4055` = 4055.asInstanceOf[`4055`]
   @scala.inline
-  def wdDialogMailMergeInsertSkipIf: `4055` = this.cast(4055)
+  def wdDialogMailMergeOpenDataSource: `81` = 81.asInstanceOf[`81`]
   @scala.inline
-  def wdDialogMailMergeOpenDataSource: `81` = this.cast(81)
+  def wdDialogMailMergeOpenHeaderSource: `82` = 82.asInstanceOf[`82`]
   @scala.inline
-  def wdDialogMailMergeOpenHeaderSource: `82` = this.cast(82)
+  def wdDialogMailMergeQueryOptions: `681` = 681.asInstanceOf[`681`]
   @scala.inline
-  def wdDialogMailMergeQueryOptions: `681` = this.cast(681)
+  def wdDialogMailMergeRecipients: `1308` = 1308.asInstanceOf[`1308`]
   @scala.inline
-  def wdDialogMailMergeRecipients: `1308` = this.cast(1308)
+  def wdDialogMailMergeSetDocumentType: `1339` = 1339.asInstanceOf[`1339`]
   @scala.inline
-  def wdDialogMailMergeSetDocumentType: `1339` = this.cast(1339)
+  def wdDialogMailMergeUseAddressBook: `779` = 779.asInstanceOf[`779`]
   @scala.inline
-  def wdDialogMailMergeUseAddressBook: `779` = this.cast(779)
+  def wdDialogMarkCitation: `463` = 463.asInstanceOf[`463`]
   @scala.inline
-  def wdDialogMarkCitation: `463` = this.cast(463)
+  def wdDialogMarkIndexEntry: `169` = 169.asInstanceOf[`169`]
   @scala.inline
-  def wdDialogMarkIndexEntry: `169` = this.cast(169)
+  def wdDialogMarkTableOfContentsEntry: `442` = 442.asInstanceOf[`442`]
   @scala.inline
-  def wdDialogMarkTableOfContentsEntry: `442` = this.cast(442)
+  def wdDialogMyPermission: `1437` = 1437.asInstanceOf[`1437`]
   @scala.inline
-  def wdDialogMyPermission: `1437` = this.cast(1437)
+  def wdDialogNewToolbar: `586` = 586.asInstanceOf[`586`]
   @scala.inline
-  def wdDialogNewToolbar: `586` = this.cast(586)
+  def wdDialogNoteOptions: `373` = 373.asInstanceOf[`373`]
   @scala.inline
-  def wdDialogNoteOptions: `373` = this.cast(373)
+  def wdDialogOMathRecognizedFunctions: `2165` = 2165.asInstanceOf[`2165`]
   @scala.inline
-  def wdDialogOMathRecognizedFunctions: `2165` = this.cast(2165)
+  def wdDialogOrganizer: `222` = 222.asInstanceOf[`222`]
   @scala.inline
-  def wdDialogOrganizer: `222` = this.cast(222)
+  def wdDialogPermission: `1469` = 1469.asInstanceOf[`1469`]
   @scala.inline
-  def wdDialogPermission: `1469` = this.cast(1469)
+  def wdDialogPhoneticGuide: `986` = 986.asInstanceOf[`986`]
   @scala.inline
-  def wdDialogPhoneticGuide: `986` = this.cast(986)
+  def wdDialogReviewAfmtRevisions: `570` = 570.asInstanceOf[`570`]
   @scala.inline
-  def wdDialogReviewAfmtRevisions: `570` = this.cast(570)
+  def wdDialogSchemaLibrary: `1417` = 1417.asInstanceOf[`1417`]
   @scala.inline
-  def wdDialogSchemaLibrary: `1417` = this.cast(1417)
+  def wdDialogSearch: `1363` = 1363.asInstanceOf[`1363`]
   @scala.inline
-  def wdDialogSearch: `1363` = this.cast(1363)
+  def wdDialogShowRepairs: `1381` = 1381.asInstanceOf[`1381`]
   @scala.inline
-  def wdDialogShowRepairs: `1381` = this.cast(1381)
+  def wdDialogSourceManager: `1920` = 1920.asInstanceOf[`1920`]
   @scala.inline
-  def wdDialogSourceManager: `1920` = this.cast(1920)
+  def wdDialogStyleManagement: `1948` = 1948.asInstanceOf[`1948`]
   @scala.inline
-  def wdDialogStyleManagement: `1948` = this.cast(1948)
+  def wdDialogTCSCTranslator: `1156` = 1156.asInstanceOf[`1156`]
   @scala.inline
-  def wdDialogTCSCTranslator: `1156` = this.cast(1156)
+  def wdDialogTableAutoFormat: `563` = 563.asInstanceOf[`563`]
   @scala.inline
-  def wdDialogTableAutoFormat: `563` = this.cast(563)
+  def wdDialogTableCellOptions: `1081` = 1081.asInstanceOf[`1081`]
   @scala.inline
-  def wdDialogTableCellOptions: `1081` = this.cast(1081)
+  def wdDialogTableColumnWidth: `143` = 143.asInstanceOf[`143`]
   @scala.inline
-  def wdDialogTableColumnWidth: `143` = this.cast(143)
+  def wdDialogTableDeleteCells: `133` = 133.asInstanceOf[`133`]
   @scala.inline
-  def wdDialogTableDeleteCells: `133` = this.cast(133)
+  def wdDialogTableFormatCell: `612` = 612.asInstanceOf[`612`]
   @scala.inline
-  def wdDialogTableFormatCell: `612` = this.cast(612)
+  def wdDialogTableFormula: `348` = 348.asInstanceOf[`348`]
   @scala.inline
-  def wdDialogTableFormula: `348` = this.cast(348)
+  def wdDialogTableInsertCells: `130` = 130.asInstanceOf[`130`]
   @scala.inline
-  def wdDialogTableInsertCells: `130` = this.cast(130)
+  def wdDialogTableInsertRow: `131` = 131.asInstanceOf[`131`]
   @scala.inline
-  def wdDialogTableInsertRow: `131` = this.cast(131)
+  def wdDialogTableInsertTable: `129` = 129.asInstanceOf[`129`]
   @scala.inline
-  def wdDialogTableInsertTable: `129` = this.cast(129)
+  def wdDialogTableOfCaptionsOptions: `551` = 551.asInstanceOf[`551`]
   @scala.inline
-  def wdDialogTableOfCaptionsOptions: `551` = this.cast(551)
+  def wdDialogTableOfContentsOptions: `470` = 470.asInstanceOf[`470`]
   @scala.inline
-  def wdDialogTableOfContentsOptions: `470` = this.cast(470)
+  def wdDialogTableProperties: `861` = 861.asInstanceOf[`861`]
   @scala.inline
-  def wdDialogTableProperties: `861` = this.cast(861)
+  def wdDialogTableRowHeight: `142` = 142.asInstanceOf[`142`]
   @scala.inline
-  def wdDialogTableRowHeight: `142` = this.cast(142)
+  def wdDialogTableSort: `199` = 199.asInstanceOf[`199`]
   @scala.inline
-  def wdDialogTableSort: `199` = this.cast(199)
+  def wdDialogTableSplitCells: `137` = 137.asInstanceOf[`137`]
   @scala.inline
-  def wdDialogTableSplitCells: `137` = this.cast(137)
+  def wdDialogTableTableOptions: `1080` = 1080.asInstanceOf[`1080`]
   @scala.inline
-  def wdDialogTableTableOptions: `1080` = this.cast(1080)
+  def wdDialogTableToText: `128` = 128.asInstanceOf[`128`]
   @scala.inline
-  def wdDialogTableToText: `128` = this.cast(128)
+  def wdDialogTableWrapping: `854` = 854.asInstanceOf[`854`]
   @scala.inline
-  def wdDialogTableWrapping: `854` = this.cast(854)
+  def wdDialogTextToTable: `127` = 127.asInstanceOf[`127`]
   @scala.inline
-  def wdDialogTextToTable: `127` = this.cast(127)
+  def wdDialogToolsAcceptRejectChanges: `506` = 506.asInstanceOf[`506`]
   @scala.inline
-  def wdDialogToolsAcceptRejectChanges: `506` = this.cast(506)
+  def wdDialogToolsAdvancedSettings: `206` = 206.asInstanceOf[`206`]
   @scala.inline
-  def wdDialogToolsAdvancedSettings: `206` = this.cast(206)
+  def wdDialogToolsAutoCorrect: `378` = 378.asInstanceOf[`378`]
   @scala.inline
-  def wdDialogToolsAutoCorrect: `378` = this.cast(378)
+  def wdDialogToolsAutoCorrectExceptions: `762` = 762.asInstanceOf[`762`]
   @scala.inline
-  def wdDialogToolsAutoCorrectExceptions: `762` = this.cast(762)
+  def wdDialogToolsAutoManager: `915` = 915.asInstanceOf[`915`]
   @scala.inline
-  def wdDialogToolsAutoManager: `915` = this.cast(915)
+  def wdDialogToolsAutoSummarize: `874` = 874.asInstanceOf[`874`]
   @scala.inline
-  def wdDialogToolsAutoSummarize: `874` = this.cast(874)
+  def wdDialogToolsBulletsNumbers: `196` = 196.asInstanceOf[`196`]
   @scala.inline
-  def wdDialogToolsBulletsNumbers: `196` = this.cast(196)
+  def wdDialogToolsCompareDocuments: `198` = 198.asInstanceOf[`198`]
   @scala.inline
-  def wdDialogToolsCompareDocuments: `198` = this.cast(198)
+  def wdDialogToolsCreateDirectory: `833` = 833.asInstanceOf[`833`]
   @scala.inline
-  def wdDialogToolsCreateDirectory: `833` = this.cast(833)
+  def wdDialogToolsCreateEnvelope: `173` = 173.asInstanceOf[`173`]
   @scala.inline
-  def wdDialogToolsCreateEnvelope: `173` = this.cast(173)
+  def wdDialogToolsCreateLabels: `489` = 489.asInstanceOf[`489`]
   @scala.inline
-  def wdDialogToolsCreateLabels: `489` = this.cast(489)
+  def wdDialogToolsCustomize: `152` = 152.asInstanceOf[`152`]
   @scala.inline
-  def wdDialogToolsCustomize: `152` = this.cast(152)
+  def wdDialogToolsCustomizeKeyboard: `432` = 432.asInstanceOf[`432`]
   @scala.inline
-  def wdDialogToolsCustomizeKeyboard: `432` = this.cast(432)
+  def wdDialogToolsCustomizeMenuBar: `615` = 615.asInstanceOf[`615`]
   @scala.inline
-  def wdDialogToolsCustomizeMenuBar: `615` = this.cast(615)
+  def wdDialogToolsCustomizeMenus: `433` = 433.asInstanceOf[`433`]
   @scala.inline
-  def wdDialogToolsCustomizeMenus: `433` = this.cast(433)
+  def wdDialogToolsDictionary: `989` = 989.asInstanceOf[`989`]
   @scala.inline
-  def wdDialogToolsDictionary: `989` = this.cast(989)
+  def wdDialogToolsEnvelopesAndLabels: `607` = 607.asInstanceOf[`607`]
   @scala.inline
-  def wdDialogToolsEnvelopesAndLabels: `607` = this.cast(607)
+  def wdDialogToolsGrammarSettings: `885` = 885.asInstanceOf[`885`]
   @scala.inline
-  def wdDialogToolsGrammarSettings: `885` = this.cast(885)
+  def wdDialogToolsHangulHanjaConversion: `784` = 784.asInstanceOf[`784`]
   @scala.inline
-  def wdDialogToolsHangulHanjaConversion: `784` = this.cast(784)
+  def wdDialogToolsHighlightChanges: `197` = 197.asInstanceOf[`197`]
   @scala.inline
-  def wdDialogToolsHighlightChanges: `197` = this.cast(197)
+  def wdDialogToolsHyphenation: `195` = 195.asInstanceOf[`195`]
   @scala.inline
-  def wdDialogToolsHyphenation: `195` = this.cast(195)
+  def wdDialogToolsLanguage: `188` = 188.asInstanceOf[`188`]
   @scala.inline
-  def wdDialogToolsLanguage: `188` = this.cast(188)
+  def wdDialogToolsMacro: `215` = 215.asInstanceOf[`215`]
   @scala.inline
-  def wdDialogToolsMacro: `215` = this.cast(215)
+  def wdDialogToolsMacroRecord: `214` = 214.asInstanceOf[`214`]
   @scala.inline
-  def wdDialogToolsMacroRecord: `214` = this.cast(214)
+  def wdDialogToolsManageFields: `631` = 631.asInstanceOf[`631`]
   @scala.inline
-  def wdDialogToolsManageFields: `631` = this.cast(631)
+  def wdDialogToolsMergeDocuments: `435` = 435.asInstanceOf[`435`]
   @scala.inline
-  def wdDialogToolsMergeDocuments: `435` = this.cast(435)
+  def wdDialogToolsOptions: `974` = 974.asInstanceOf[`974`]
   @scala.inline
-  def wdDialogToolsOptions: `974` = this.cast(974)
+  def wdDialogToolsOptionsAutoFormat: `959` = 959.asInstanceOf[`959`]
   @scala.inline
-  def wdDialogToolsOptionsAutoFormat: `959` = this.cast(959)
+  def wdDialogToolsOptionsAutoFormatAsYouType: `778` = 778.asInstanceOf[`778`]
   @scala.inline
-  def wdDialogToolsOptionsAutoFormatAsYouType: `778` = this.cast(778)
+  def wdDialogToolsOptionsBidi: `1029` = 1029.asInstanceOf[`1029`]
   @scala.inline
-  def wdDialogToolsOptionsBidi: `1029` = this.cast(1029)
+  def wdDialogToolsOptionsCompatibility: `525` = 525.asInstanceOf[`525`]
   @scala.inline
-  def wdDialogToolsOptionsCompatibility: `525` = this.cast(525)
+  def wdDialogToolsOptionsEdit: `224` = 224.asInstanceOf[`224`]
   @scala.inline
-  def wdDialogToolsOptionsEdit: `224` = this.cast(224)
+  def wdDialogToolsOptionsEditCopyPaste: `1356` = 1356.asInstanceOf[`1356`]
   @scala.inline
-  def wdDialogToolsOptionsEditCopyPaste: `1356` = this.cast(1356)
+  def wdDialogToolsOptionsFileLocations: `225` = 225.asInstanceOf[`225`]
   @scala.inline
-  def wdDialogToolsOptionsFileLocations: `225` = this.cast(225)
+  def wdDialogToolsOptionsFuzzy: `790` = 790.asInstanceOf[`790`]
   @scala.inline
-  def wdDialogToolsOptionsFuzzy: `790` = this.cast(790)
+  def wdDialogToolsOptionsGeneral: `203` = 203.asInstanceOf[`203`]
   @scala.inline
-  def wdDialogToolsOptionsGeneral: `203` = this.cast(203)
+  def wdDialogToolsOptionsPrint: `208` = 208.asInstanceOf[`208`]
   @scala.inline
-  def wdDialogToolsOptionsPrint: `208` = this.cast(208)
+  def wdDialogToolsOptionsSave: `209` = 209.asInstanceOf[`209`]
   @scala.inline
-  def wdDialogToolsOptionsSave: `209` = this.cast(209)
+  def wdDialogToolsOptionsSecurity: `1361` = 1361.asInstanceOf[`1361`]
   @scala.inline
-  def wdDialogToolsOptionsSecurity: `1361` = this.cast(1361)
+  def wdDialogToolsOptionsSmartTag: `1395` = 1395.asInstanceOf[`1395`]
   @scala.inline
-  def wdDialogToolsOptionsSmartTag: `1395` = this.cast(1395)
+  def wdDialogToolsOptionsSpellingAndGrammar: `211` = 211.asInstanceOf[`211`]
   @scala.inline
-  def wdDialogToolsOptionsSpellingAndGrammar: `211` = this.cast(211)
+  def wdDialogToolsOptionsTrackChanges: `386` = 386.asInstanceOf[`386`]
   @scala.inline
-  def wdDialogToolsOptionsTrackChanges: `386` = this.cast(386)
+  def wdDialogToolsOptionsTypography: `739` = 739.asInstanceOf[`739`]
   @scala.inline
-  def wdDialogToolsOptionsTypography: `739` = this.cast(739)
+  def wdDialogToolsOptionsUserInfo: `213` = 213.asInstanceOf[`213`]
   @scala.inline
-  def wdDialogToolsOptionsUserInfo: `213` = this.cast(213)
+  def wdDialogToolsOptionsView: `204` = 204.asInstanceOf[`204`]
   @scala.inline
-  def wdDialogToolsOptionsView: `204` = this.cast(204)
+  def wdDialogToolsProtectDocument: `503` = 503.asInstanceOf[`503`]
   @scala.inline
-  def wdDialogToolsProtectDocument: `503` = this.cast(503)
+  def wdDialogToolsProtectSection: `578` = 578.asInstanceOf[`578`]
   @scala.inline
-  def wdDialogToolsProtectSection: `578` = this.cast(578)
+  def wdDialogToolsRevisions: `197` = 197.asInstanceOf[`197`]
   @scala.inline
-  def wdDialogToolsRevisions: `197` = this.cast(197)
+  def wdDialogToolsSpellingAndGrammar: `828` = 828.asInstanceOf[`828`]
   @scala.inline
-  def wdDialogToolsSpellingAndGrammar: `828` = this.cast(828)
+  def wdDialogToolsTemplates: `87` = 87.asInstanceOf[`87`]
   @scala.inline
-  def wdDialogToolsTemplates: `87` = this.cast(87)
+  def wdDialogToolsThesaurus: `194` = 194.asInstanceOf[`194`]
   @scala.inline
-  def wdDialogToolsThesaurus: `194` = this.cast(194)
+  def wdDialogToolsUnprotectDocument: `521` = 521.asInstanceOf[`521`]
   @scala.inline
-  def wdDialogToolsUnprotectDocument: `521` = this.cast(521)
+  def wdDialogToolsWordCount: `228` = 228.asInstanceOf[`228`]
   @scala.inline
-  def wdDialogToolsWordCount: `228` = this.cast(228)
+  def wdDialogTwoLinesInOne: `1161` = 1161.asInstanceOf[`1161`]
   @scala.inline
-  def wdDialogTwoLinesInOne: `1161` = this.cast(1161)
+  def wdDialogUpdateTOC: `331` = 331.asInstanceOf[`331`]
   @scala.inline
-  def wdDialogUpdateTOC: `331` = this.cast(331)
+  def wdDialogViewZoom: `577` = 577.asInstanceOf[`577`]
   @scala.inline
-  def wdDialogViewZoom: `577` = this.cast(577)
+  def wdDialogWebOptions: `898` = 898.asInstanceOf[`898`]
   @scala.inline
-  def wdDialogWebOptions: `898` = this.cast(898)
+  def wdDialogWindowActivate: `220` = 220.asInstanceOf[`220`]
   @scala.inline
-  def wdDialogWindowActivate: `220` = this.cast(220)
+  def wdDialogXMLElementAttributes: `1460` = 1460.asInstanceOf[`1460`]
   @scala.inline
-  def wdDialogXMLElementAttributes: `1460` = this.cast(1460)
-  @scala.inline
-  def wdDialogXMLOptions: `1425` = this.cast(1425)
+  def wdDialogXMLOptions: `1425` = 1425.asInstanceOf[`1425`]
 }
 

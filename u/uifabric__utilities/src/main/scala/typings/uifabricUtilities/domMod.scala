@@ -1,5 +1,6 @@
 package typings.uifabricUtilities
 
+import typings.react.mod.SyntheticEvent
 import typings.std.Document_
 import typings.std.Element
 import typings.std.Event_
@@ -41,18 +42,26 @@ object domMod extends js.Object {
   def getWindow(rootElement: Element): js.UndefOr[Window_] = js.native
   def isVirtualElement(element: HTMLElement): /* is @uifabric/utilities.@uifabric/utilities/lib/dom/IVirtualElement.IVirtualElement */ Boolean = js.native
   def isVirtualElement(element: IVirtualElement): /* is @uifabric/utilities.@uifabric/utilities/lib/dom/IVirtualElement.IVirtualElement */ Boolean = js.native
-  def on(element: Element, eventName: String, callback: js.Function1[/* ev */ Event_, Unit]): js.Function0[Unit] = js.native
   def on(
     element: Element,
     eventName: String,
-    callback: js.Function1[/* ev */ Event_, Unit],
+    callback: js.Function1[/* ev */ Event_ | (SyntheticEvent[Element, Event_]), Unit]
+  ): js.Function0[Unit] = js.native
+  def on(
+    element: Element,
+    eventName: String,
+    callback: js.Function1[/* ev */ Event_ | (SyntheticEvent[Element, Event_]), Unit],
     options: Boolean
   ): js.Function0[Unit] = js.native
-  def on(element: Window_, eventName: String, callback: js.Function1[/* ev */ Event_, Unit]): js.Function0[Unit] = js.native
   def on(
     element: Window_,
     eventName: String,
-    callback: js.Function1[/* ev */ Event_, Unit],
+    callback: js.Function1[/* ev */ Event_ | (SyntheticEvent[Element, Event_]), Unit]
+  ): js.Function0[Unit] = js.native
+  def on(
+    element: Window_,
+    eventName: String,
+    callback: js.Function1[/* ev */ Event_ | (SyntheticEvent[Element, Event_]), Unit],
     options: Boolean
   ): js.Function0[Unit] = js.native
   def portalContainsElement(target: HTMLElement): Boolean = js.native

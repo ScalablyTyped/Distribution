@@ -13,7 +13,6 @@ object IServer {
   @scala.inline
   def apply(log: String => Unit, registerSystem: (Double, Double) => js.Any): IServer = {
     val __obj = js.Dynamic.literal(log = js.Any.fromFunction1(log), registerSystem = js.Any.fromFunction2(registerSystem))
-  
     __obj.asInstanceOf[IServer]
   }
 }

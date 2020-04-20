@@ -16,7 +16,6 @@ object ReleaseHostsRequest {
   @scala.inline
   def apply(HostIds: RequestHostIdList): ReleaseHostsRequest = {
     val __obj = js.Dynamic.literal(HostIds = HostIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReleaseHostsRequest]
   }
 }

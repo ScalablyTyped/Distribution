@@ -34,7 +34,6 @@ object IKeepAliveService {
   @scala.inline
   def apply(ping: () => Unit, setInterval: Double => Unit, start: () => Unit, stop: () => Unit): IKeepAliveService = {
     val __obj = js.Dynamic.literal(ping = js.Any.fromFunction0(ping), setInterval = js.Any.fromFunction1(setInterval), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop))
-  
     __obj.asInstanceOf[IKeepAliveService]
   }
 }

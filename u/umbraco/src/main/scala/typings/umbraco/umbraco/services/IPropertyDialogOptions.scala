@@ -20,7 +20,6 @@ object IPropertyDialogOptions {
   @scala.inline
   def apply(callback: js.Function, editor: String, value: js.Object): IPropertyDialogOptions = {
     val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any], editor = editor.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPropertyDialogOptions]
   }
 }

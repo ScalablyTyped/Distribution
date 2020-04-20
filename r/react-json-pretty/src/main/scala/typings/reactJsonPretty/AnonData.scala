@@ -29,7 +29,6 @@ object AnonData {
     themeClassName: Requireable[String]
   ): AnonData = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any], onJSONPrettyError = onJSONPrettyError.asInstanceOf[js.Any], replacer = replacer.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], space = space.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any], themeClassName = themeClassName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonData]
   }
 }

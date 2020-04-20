@@ -1,10 +1,10 @@
 package typings.atom.mod
 
-import typings.atom.atomStrings.bottom
+import typings.atom.atomStrings.bottom_
 import typings.atom.atomStrings.center
 import typings.atom.atomStrings.down
-import typings.atom.atomStrings.left
-import typings.atom.atomStrings.right
+import typings.atom.atomStrings.left_
+import typings.atom.atomStrings.right_
 import typings.atom.atomStrings.up
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,7 +32,7 @@ trait WorkspaceOpenOptions extends js.Object {
     *  by the item.
     *  NOTE: This option should almost always be omitted to honor user preference.
     */
-  var location: js.UndefOr[left | right | bottom | center] = js.undefined
+  var location: js.UndefOr[left_ | right_ | bottom_ | center] = js.undefined
   /**
     *  A Boolean indicating whether or not the item should be opened in a pending state.
     *  Existing pending items in a pane are replaced with new pending items when they
@@ -54,7 +54,7 @@ trait WorkspaceOpenOptions extends js.Object {
     *  opened in the bottommost pane of the current active pane's column. If only one pane
     *  exists in the column, a new pane will be created.
     */
-  var split: js.UndefOr[left | right | up | down] = js.undefined
+  var split: js.UndefOr[left_ | right_ | up | down] = js.undefined
 }
 
 object WorkspaceOpenOptions {
@@ -64,10 +64,10 @@ object WorkspaceOpenOptions {
     activatePane: js.UndefOr[Boolean] = js.undefined,
     initialColumn: Int | Double = null,
     initialLine: Int | Double = null,
-    location: left | right | bottom | center = null,
+    location: left_ | right_ | bottom_ | center = null,
     pending: js.UndefOr[Boolean] = js.undefined,
     searchAllPanes: js.UndefOr[Boolean] = js.undefined,
-    split: left | right | up | down = null
+    split: left_ | right_ | up | down = null
   ): WorkspaceOpenOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(activateItem)) __obj.updateDynamic("activateItem")(activateItem.asInstanceOf[js.Any])

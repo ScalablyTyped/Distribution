@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 trait AnonAutoFreeze extends js.Object {
   var autoFreeze: js.UndefOr[Boolean] = js.undefined
   var onAssign: js.UndefOr[
-    js.Function3[/* state */ ImmerState[_], /* prop */ String, /* value */ js.Any, Unit]
+    js.Function3[/* state */ ImmerState[_], /* keyof any */ /* prop */ String, /* value */ js.Any, Unit]
   ] = js.undefined
   var onCopy: js.UndefOr[js.Function1[/* state */ ImmerState[_], Unit]] = js.undefined
-  var onDelete: js.UndefOr[js.Function2[/* state */ ImmerState[_], /* prop */ String, Unit]] = js.undefined
+  var onDelete: js.UndefOr[js.Function2[/* state */ ImmerState[_], /* keyof any */ /* prop */ String, Unit]] = js.undefined
   var useProxies: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -19,9 +19,9 @@ object AnonAutoFreeze {
   @scala.inline
   def apply(
     autoFreeze: js.UndefOr[Boolean] = js.undefined,
-    onAssign: (/* state */ ImmerState[_], /* prop */ String, /* value */ js.Any) => Unit = null,
+    onAssign: (/* state */ ImmerState[_], /* keyof any */ /* prop */ String, /* value */ js.Any) => Unit = null,
     onCopy: /* state */ ImmerState[_] => Unit = null,
-    onDelete: (/* state */ ImmerState[_], /* prop */ String) => Unit = null,
+    onDelete: (/* state */ ImmerState[_], /* keyof any */ /* prop */ String) => Unit = null,
     useProxies: js.UndefOr[Boolean] = js.undefined
   ): AnonAutoFreeze = {
     val __obj = js.Dynamic.literal()

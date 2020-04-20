@@ -27,7 +27,6 @@ object VolumeAttachmentSpec {
   @scala.inline
   def apply(attacher: String, nodeName: String, source: VolumeAttachmentSource): VolumeAttachmentSpec = {
     val __obj = js.Dynamic.literal(attacher = attacher.asInstanceOf[js.Any], nodeName = nodeName.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VolumeAttachmentSpec]
   }
 }

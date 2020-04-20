@@ -18,20 +18,18 @@ trait WindowOpenDisposition extends js.Object
 
 object WindowOpenDisposition {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def current_tab: typings.chromeApps.chromeAppsStrings.current_tab = "current_tab".asInstanceOf[typings.chromeApps.chromeAppsStrings.current_tab]
   @scala.inline
-  def current_tab: typings.chromeApps.chromeAppsStrings.current_tab = this.cast("current_tab")
+  def ignore: typings.chromeApps.chromeAppsStrings.ignore = "ignore".asInstanceOf[typings.chromeApps.chromeAppsStrings.ignore]
   @scala.inline
-  def ignore: typings.chromeApps.chromeAppsStrings.ignore = this.cast("ignore")
+  def new_background_tab: typings.chromeApps.chromeAppsStrings.new_background_tab = "new_background_tab".asInstanceOf[typings.chromeApps.chromeAppsStrings.new_background_tab]
   @scala.inline
-  def new_background_tab: typings.chromeApps.chromeAppsStrings.new_background_tab = this.cast("new_background_tab")
+  def new_foreground_tab: typings.chromeApps.chromeAppsStrings.new_foreground_tab = "new_foreground_tab".asInstanceOf[typings.chromeApps.chromeAppsStrings.new_foreground_tab]
   @scala.inline
-  def new_foreground_tab: typings.chromeApps.chromeAppsStrings.new_foreground_tab = this.cast("new_foreground_tab")
+  def new_popup: typings.chromeApps.chromeAppsStrings.new_popup = "new_popup".asInstanceOf[typings.chromeApps.chromeAppsStrings.new_popup]
   @scala.inline
-  def new_popup: typings.chromeApps.chromeAppsStrings.new_popup = this.cast("new_popup")
+  def new_window: typings.chromeApps.chromeAppsStrings.new_window = "new_window".asInstanceOf[typings.chromeApps.chromeAppsStrings.new_window]
   @scala.inline
-  def new_window: typings.chromeApps.chromeAppsStrings.new_window = this.cast("new_window")
-  @scala.inline
-  def save_to_disk: typings.chromeApps.chromeAppsStrings.save_to_disk = this.cast("save_to_disk")
+  def save_to_disk: typings.chromeApps.chromeAppsStrings.save_to_disk = "save_to_disk".asInstanceOf[typings.chromeApps.chromeAppsStrings.save_to_disk]
 }
 

@@ -20,7 +20,6 @@ object DisassociateTeamMemberRequest {
   @scala.inline
   def apply(projectId: ProjectId, userArn: UserArn): DisassociateTeamMemberRequest = {
     val __obj = js.Dynamic.literal(projectId = projectId.asInstanceOf[js.Any], userArn = userArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisassociateTeamMemberRequest]
   }
 }

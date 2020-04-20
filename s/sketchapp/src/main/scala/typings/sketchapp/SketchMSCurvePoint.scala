@@ -29,7 +29,6 @@ object SketchMSCurvePoint {
     point: SketchMSPointString
   ): SketchMSCurvePoint = {
     val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], cornerRadius = cornerRadius.asInstanceOf[js.Any], curveFrom = curveFrom.asInstanceOf[js.Any], curveMode = curveMode.asInstanceOf[js.Any], curveTo = curveTo.asInstanceOf[js.Any], hasCurveFrom = hasCurveFrom.asInstanceOf[js.Any], hasCurveTo = hasCurveTo.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SketchMSCurvePoint]
   }
 }

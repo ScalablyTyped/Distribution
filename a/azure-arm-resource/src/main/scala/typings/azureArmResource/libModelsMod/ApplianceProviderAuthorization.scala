@@ -22,7 +22,6 @@ object ApplianceProviderAuthorization {
   @scala.inline
   def apply(principalId: String, roleDefinitionId: String): ApplianceProviderAuthorization = {
     val __obj = js.Dynamic.literal(principalId = principalId.asInstanceOf[js.Any], roleDefinitionId = roleDefinitionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ApplianceProviderAuthorization]
   }
 }

@@ -25,7 +25,6 @@ object Compositor {
     render: (Layout, String, CompositorOption, js.Function1[/* error */ Error, Unit]) => Unit
   ): Compositor = {
     val __obj = js.Dynamic.literal(readImages = js.Any.fromFunction2(readImages), render = js.Any.fromFunction4(render))
-  
     __obj.asInstanceOf[Compositor]
   }
 }

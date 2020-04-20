@@ -19,7 +19,6 @@ object BehaviorReplaceModel {
   @scala.inline
   def apply(color: String, name: String): BehaviorReplaceModel = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BehaviorReplaceModel]
   }
 }

@@ -14,7 +14,6 @@ object ReadableStreamReadValueResult {
   @scala.inline
   def apply[T](done: `false`, value: T): ReadableStreamReadValueResult[T] = {
     val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReadableStreamReadValueResult[T]]
   }
 }

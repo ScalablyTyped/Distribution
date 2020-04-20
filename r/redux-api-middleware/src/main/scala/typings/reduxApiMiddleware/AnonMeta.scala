@@ -12,7 +12,6 @@ object AnonMeta {
   @scala.inline
   def apply[Meta](meta: Meta): AnonMeta[Meta] = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMeta[Meta]]
   }
 }

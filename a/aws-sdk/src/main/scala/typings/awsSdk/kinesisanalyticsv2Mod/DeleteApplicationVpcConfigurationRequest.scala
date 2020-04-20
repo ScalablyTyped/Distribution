@@ -28,7 +28,6 @@ object DeleteApplicationVpcConfigurationRequest {
     VpcConfigurationId: Id
   ): DeleteApplicationVpcConfigurationRequest = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], CurrentApplicationVersionId = CurrentApplicationVersionId.asInstanceOf[js.Any], VpcConfigurationId = VpcConfigurationId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteApplicationVpcConfigurationRequest]
   }
 }

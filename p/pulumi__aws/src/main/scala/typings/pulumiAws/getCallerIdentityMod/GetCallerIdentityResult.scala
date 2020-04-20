@@ -28,7 +28,6 @@ object GetCallerIdentityResult {
   @scala.inline
   def apply(accountId: String, arn: String, id: String, userId: String): GetCallerIdentityResult = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], arn = arn.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetCallerIdentityResult]
   }
 }

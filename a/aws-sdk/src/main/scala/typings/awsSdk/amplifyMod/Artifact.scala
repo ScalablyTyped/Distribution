@@ -20,7 +20,6 @@ object Artifact {
   @scala.inline
   def apply(artifactFileName: ArtifactFileName, artifactId: ArtifactId): Artifact = {
     val __obj = js.Dynamic.literal(artifactFileName = artifactFileName.asInstanceOf[js.Any], artifactId = artifactId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Artifact]
   }
 }

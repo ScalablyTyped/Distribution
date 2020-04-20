@@ -20,7 +20,6 @@ object AgentConfiguration {
   @scala.inline
   def apply(periodInSeconds: Integer, shouldProfile: Boolean): AgentConfiguration = {
     val __obj = js.Dynamic.literal(periodInSeconds = periodInSeconds.asInstanceOf[js.Any], shouldProfile = shouldProfile.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AgentConfiguration]
   }
 }

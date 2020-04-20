@@ -12,10 +12,8 @@ trait IPType extends js.Object
 
 object IPType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ipv4: typings.proxyLists.proxyListsStrings.ipv4 = "ipv4".asInstanceOf[typings.proxyLists.proxyListsStrings.ipv4]
   @scala.inline
-  def ipv4: typings.proxyLists.proxyListsStrings.ipv4 = this.cast("ipv4")
-  @scala.inline
-  def ipv6: typings.proxyLists.proxyListsStrings.ipv6 = this.cast("ipv6")
+  def ipv6: typings.proxyLists.proxyListsStrings.ipv6 = "ipv6".asInstanceOf[typings.proxyLists.proxyListsStrings.ipv6]
 }
 

@@ -18,6 +18,6 @@ package object mod {
     typings.standardEngine.mod.Options, 
     typings.standardEngine.standardEngineStrings.ignore | typings.standardEngine.standardEngineStrings.cwd
   ]) with typings.standardEngine.mod.LintDefaultOptions
-  type Omit[T, K /* <: java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[java.lang.String, K]]
-  type PickWithSomeRequired[T, TRequired /* <: java.lang.String */] = (typings.standardEngine.mod.Omit[T, TRequired]) with (typings.std.Pick[typings.std.Required[T], TRequired])
+  type Omit[T, K /* <: /* keyof any */ java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
+  type PickWithSomeRequired[T, TRequired /* <: /* keyof T */ java.lang.String */] = (typings.standardEngine.mod.Omit[T, TRequired]) with (typings.std.Pick[typings.std.Required[T], TRequired])
 }

@@ -26,7 +26,6 @@ object AnonRipemd160 {
     sha512: String
   ): AnonRipemd160 = {
     val __obj = js.Dynamic.literal(md5 = md5.asInstanceOf[js.Any], ripemd160 = ripemd160.asInstanceOf[js.Any], sha1 = sha1.asInstanceOf[js.Any], sha224 = sha224.asInstanceOf[js.Any], sha256 = sha256.asInstanceOf[js.Any], sha384 = sha384.asInstanceOf[js.Any], sha512 = sha512.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRipemd160]
   }
 }

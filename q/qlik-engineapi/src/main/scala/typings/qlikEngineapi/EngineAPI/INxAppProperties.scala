@@ -44,7 +44,6 @@ object INxAppProperties {
     qTitle: String
   ): INxAppProperties = {
     val __obj = js.Dynamic.literal(qLastReloadTime = qLastReloadTime.asInstanceOf[js.Any], qMigrationHash = qMigrationHash.asInstanceOf[js.Any], qSavedInProductVersion = qSavedInProductVersion.asInstanceOf[js.Any], qThumbnail = qThumbnail.asInstanceOf[js.Any], qTitle = qTitle.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INxAppProperties]
   }
 }

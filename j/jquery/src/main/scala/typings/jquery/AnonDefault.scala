@@ -19,7 +19,6 @@ object AnonDefault {
   @scala.inline
   def apply[TTarget, TData](_default: (TriggeredEvent[TTarget, TData, _, _], TData) => Unit | `false`): AnonDefault[TTarget, TData] = {
     val __obj = js.Dynamic.literal(_default = js.Any.fromFunction2(_default))
-  
     __obj.asInstanceOf[AnonDefault[TTarget, TData]]
   }
 }

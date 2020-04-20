@@ -164,6 +164,10 @@ trait SeriesBar_ extends js.Object {
   /**
     * The maximum width of the bar. Adaptive when not specified.
     *
+    * Has higer priority than barWidth.
+    *
+    * Can be an absolute value like 40 or a percent value like '60%'. The percent is based on the calculated category width.
+    *
     * In a single coodinate system, this attribute is shared by multiple
     * `'bar'` series.
     * This attribute should be set on the last `'bar'` series in the
@@ -173,7 +177,7 @@ trait SeriesBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-bar.barMaxWidth
     */
-  var barMaxWidth: js.UndefOr[Double] = js.undefined
+  var barMaxWidth: js.UndefOr[Double | String] = js.undefined
   /**
     * The minimum width of bar.
     * It could be used to avoid the following situation: the interaction
@@ -184,7 +188,26 @@ trait SeriesBar_ extends js.Object {
     */
   var barMinHeight: js.UndefOr[Double] = js.undefined
   /**
+    * The minimum width of the bar. In cartesian the default value is 1, otherwise the default value if null.
+    *
+    * Has higer priority than barWidth.
+    *
+    * Can be an absolute value like 40 or a percent value like ''60%''. The percent is based on the calculated category width.
+    *
+    * In a single coodinate system, this attribute is shared by multiple
+    * ''bar'' series.
+    * This attribute should be set on the last ''bar'' series in the
+    * coodinate system, then it will be adopted by all 'bar' series
+    * in the coordinate system.
+    *
+    *              *
+    * @see https://echarts.apache.org/en/option.html#series-bar.barMinWidth
+    */
+  var barMinWidth: js.UndefOr[Double | String] = js.undefined
+  /**
     * The width of the bar. Adaptive when not specified.
+    *
+    * Can be an absolute value like 40 or a percent value like '60%'. The percent is based on the calculated category width.
     *
     * In a single coodinate system, this attribute is shared by multiple
     * `'bar'` series.
@@ -195,7 +218,7 @@ trait SeriesBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-bar.barWidth
     */
-  var barWidth: js.UndefOr[Double] = js.undefined
+  var barWidth: js.UndefOr[Double | String] = js.undefined
   /**
     * The coordinate used in the series, whose options are:
     *
@@ -709,9 +732,10 @@ object SeriesBar_ {
     animationThreshold: Int | Double = null,
     barCategoryGap: String = null,
     barGap: String = null,
-    barMaxWidth: Int | Double = null,
+    barMaxWidth: Double | String = null,
     barMinHeight: Int | Double = null,
-    barWidth: Int | Double = null,
+    barMinWidth: Double | String = null,
+    barWidth: Double | String = null,
     coordinateSystem: String = null,
     cursor: String = null,
     data: js.Array[
@@ -756,6 +780,7 @@ object SeriesBar_ {
     if (barGap != null) __obj.updateDynamic("barGap")(barGap.asInstanceOf[js.Any])
     if (barMaxWidth != null) __obj.updateDynamic("barMaxWidth")(barMaxWidth.asInstanceOf[js.Any])
     if (barMinHeight != null) __obj.updateDynamic("barMinHeight")(barMinHeight.asInstanceOf[js.Any])
+    if (barMinWidth != null) __obj.updateDynamic("barMinWidth")(barMinWidth.asInstanceOf[js.Any])
     if (barWidth != null) __obj.updateDynamic("barWidth")(barWidth.asInstanceOf[js.Any])
     if (coordinateSystem != null) __obj.updateDynamic("coordinateSystem")(coordinateSystem.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])

@@ -13,12 +13,10 @@ trait PresenceMode extends js.Object
 
 object PresenceMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def forbidden: typings.hapiJoi.hapiJoiStrings.forbidden = "forbidden".asInstanceOf[typings.hapiJoi.hapiJoiStrings.forbidden]
   @scala.inline
-  def forbidden: typings.hapiJoi.hapiJoiStrings.forbidden = this.cast("forbidden")
+  def optional: typings.hapiJoi.hapiJoiStrings.optional = "optional".asInstanceOf[typings.hapiJoi.hapiJoiStrings.optional]
   @scala.inline
-  def optional: typings.hapiJoi.hapiJoiStrings.optional = this.cast("optional")
-  @scala.inline
-  def required: typings.hapiJoi.hapiJoiStrings.required = this.cast("required")
+  def required: typings.hapiJoi.hapiJoiStrings.required = "required".asInstanceOf[typings.hapiJoi.hapiJoiStrings.required]
 }
 

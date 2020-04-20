@@ -30,7 +30,6 @@ object ActivityGetFeedsResponse {
     user_url: String
   ): ActivityGetFeedsResponse = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], current_user_actor_url = current_user_actor_url.asInstanceOf[js.Any], current_user_organization_url = current_user_organization_url.asInstanceOf[js.Any], current_user_organization_urls = current_user_organization_urls.asInstanceOf[js.Any], current_user_public_url = current_user_public_url.asInstanceOf[js.Any], current_user_url = current_user_url.asInstanceOf[js.Any], security_advisories_url = security_advisories_url.asInstanceOf[js.Any], timeline_url = timeline_url.asInstanceOf[js.Any], user_url = user_url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ActivityGetFeedsResponse]
   }
 }

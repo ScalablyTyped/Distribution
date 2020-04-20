@@ -17,7 +17,6 @@ object TrackingProp {
   @scala.inline
   def apply[P](getTrackingData: () => js.Object, trackEvent: Partial[P] => js.Any): TrackingProp[P] = {
     val __obj = js.Dynamic.literal(getTrackingData = js.Any.fromFunction0(getTrackingData), trackEvent = js.Any.fromFunction1(trackEvent))
-  
     __obj.asInstanceOf[TrackingProp[P]]
   }
 }

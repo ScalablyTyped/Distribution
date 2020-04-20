@@ -16,7 +16,6 @@ object DeleteDBParameterGroupMessage {
   @scala.inline
   def apply(DBParameterGroupName: String): DeleteDBParameterGroupMessage = {
     val __obj = js.Dynamic.literal(DBParameterGroupName = DBParameterGroupName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteDBParameterGroupMessage]
   }
 }

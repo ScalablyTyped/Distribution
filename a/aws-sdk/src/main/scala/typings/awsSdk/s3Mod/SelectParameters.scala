@@ -33,7 +33,6 @@ object SelectParameters {
     OutputSerialization: OutputSerialization
   ): SelectParameters = {
     val __obj = js.Dynamic.literal(Expression = Expression.asInstanceOf[js.Any], ExpressionType = ExpressionType.asInstanceOf[js.Any], InputSerialization = InputSerialization.asInstanceOf[js.Any], OutputSerialization = OutputSerialization.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SelectParameters]
   }
 }

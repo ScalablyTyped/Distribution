@@ -11,7 +11,7 @@ trait ViewTemplate extends js.Object {
   /**
   	 * View's ID (or set of IDs) used for data binding. This value must be unique.
   	 */
-  var bindId: js.UndefOr[String] = js.undefined
+  var bindId: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Contains an array of subview templates to be added (in order) as children to this view.
   	 */
@@ -27,14 +27,14 @@ trait ViewTemplate extends js.Object {
   /**
   	 * View's class name, for example, `Ti.UI.Button`.
   	 */
-  var `type`: String
+  var `type`: java.lang.String
 }
 
 object ViewTemplate {
   @scala.inline
   def apply(
-    `type`: String,
-    bindId: String = null,
+    `type`: java.lang.String,
+    bindId: java.lang.String = null,
     childTemplates: js.Array[ViewTemplate] = null,
     events: js.Any = null,
     properties: js.Any = null

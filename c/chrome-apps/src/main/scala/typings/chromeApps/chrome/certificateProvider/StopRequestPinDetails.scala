@@ -21,8 +21,11 @@ trait StopRequestPinDetails extends js.Object {
   var errorType: js.UndefOr[
     ToStringLiteral[
       AnonINVALIDPIN, 
-      String, 
-      Exclude[String, INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR]
+      INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR, 
+      Exclude[
+        INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR, 
+        INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR
+      ]
     ]
   ] = js.undefined
   /**
@@ -37,8 +40,11 @@ object StopRequestPinDetails {
     signRequestId: Double,
     errorType: ToStringLiteral[
       AnonINVALIDPIN, 
-      String, 
-      Exclude[String, INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR]
+      INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR, 
+      Exclude[
+        INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR, 
+        INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR
+      ]
     ] = null
   ): StopRequestPinDetails = {
     val __obj = js.Dynamic.literal(signRequestId = signRequestId.asInstanceOf[js.Any])

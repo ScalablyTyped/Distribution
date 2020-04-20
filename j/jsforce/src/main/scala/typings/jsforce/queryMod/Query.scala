@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 class Query[T] ()
   extends Readable
      with Promise[T] {
-  @JSName(scala.scalajs.js.Symbol.toStringTag)
+  @JSName(js.Symbol.toStringTag)
   var toStringTag_Query: typings.jsforce.jsforceStrings.Promise = js.native
   def del(): js.Any = js.native
   def del(callback: js.Function2[/* err */ Error, /* ret */ RecordResult, Unit]): js.Any = js.native

@@ -28,7 +28,6 @@ object SetLoadBalancerListenerSSLCertificateInput {
     SSLCertificateId: SSLCertificateId
   ): SetLoadBalancerListenerSSLCertificateInput = {
     val __obj = js.Dynamic.literal(LoadBalancerName = LoadBalancerName.asInstanceOf[js.Any], LoadBalancerPort = LoadBalancerPort.asInstanceOf[js.Any], SSLCertificateId = SSLCertificateId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetLoadBalancerListenerSSLCertificateInput]
   }
 }

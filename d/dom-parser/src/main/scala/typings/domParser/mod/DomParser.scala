@@ -12,7 +12,6 @@ object DomParser {
   @scala.inline
   def apply(parseFromString: String => Dom): DomParser = {
     val __obj = js.Dynamic.literal(parseFromString = js.Any.fromFunction1(parseFromString))
-  
     __obj.asInstanceOf[DomParser]
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactToggleProps {
   @scala.inline
-  def ReactToggleProps: ToggleProps.type = typings.reactToggle.mod.ToggleProps
+  def ReactToggleProps: ToggleProps.type = ToggleProps
   type ReactToggleProps = ToggleProps
 }
 

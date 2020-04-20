@@ -13,7 +13,6 @@ object CloseProject {
   @scala.inline
   def apply(kind: closeProject, projectName: String): CloseProject = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], projectName = projectName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CloseProject]
   }
 }

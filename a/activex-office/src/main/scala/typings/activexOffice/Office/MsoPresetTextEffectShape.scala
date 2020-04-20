@@ -92,88 +92,86 @@ trait MsoPresetTextEffectShape extends js.Object
 
 object MsoPresetTextEffectShape {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoTextEffectShapeArchDownCurve: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def msoTextEffectShapeArchDownCurve: `10` = this.cast(10)
+  def msoTextEffectShapeArchDownPour: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def msoTextEffectShapeArchDownPour: `14` = this.cast(14)
+  def msoTextEffectShapeArchUpCurve: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def msoTextEffectShapeArchUpCurve: `9` = this.cast(9)
+  def msoTextEffectShapeArchUpPour: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def msoTextEffectShapeArchUpPour: `13` = this.cast(13)
+  def msoTextEffectShapeButtonCurve: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def msoTextEffectShapeButtonCurve: `12` = this.cast(12)
+  def msoTextEffectShapeButtonPour: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def msoTextEffectShapeButtonPour: `16` = this.cast(16)
+  def msoTextEffectShapeCanDown: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def msoTextEffectShapeCanDown: `20` = this.cast(20)
+  def msoTextEffectShapeCanUp: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def msoTextEffectShapeCanUp: `19` = this.cast(19)
+  def msoTextEffectShapeCascadeDown: `40` = 40.asInstanceOf[`40`]
   @scala.inline
-  def msoTextEffectShapeCascadeDown: `40` = this.cast(40)
+  def msoTextEffectShapeCascadeUp: `39` = 39.asInstanceOf[`39`]
   @scala.inline
-  def msoTextEffectShapeCascadeUp: `39` = this.cast(39)
+  def msoTextEffectShapeChevronDown: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def msoTextEffectShapeChevronDown: `6` = this.cast(6)
+  def msoTextEffectShapeChevronUp: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def msoTextEffectShapeChevronUp: `5` = this.cast(5)
+  def msoTextEffectShapeCircleCurve: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def msoTextEffectShapeCircleCurve: `11` = this.cast(11)
+  def msoTextEffectShapeCirclePour: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def msoTextEffectShapeCirclePour: `15` = this.cast(15)
+  def msoTextEffectShapeCurveDown: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def msoTextEffectShapeCurveDown: `18` = this.cast(18)
+  def msoTextEffectShapeCurveUp: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def msoTextEffectShapeCurveUp: `17` = this.cast(17)
+  def msoTextEffectShapeDeflate: `26` = 26.asInstanceOf[`26`]
   @scala.inline
-  def msoTextEffectShapeDeflate: `26` = this.cast(26)
+  def msoTextEffectShapeDeflateBottom: `28` = 28.asInstanceOf[`28`]
   @scala.inline
-  def msoTextEffectShapeDeflateBottom: `28` = this.cast(28)
+  def msoTextEffectShapeDeflateInflate: `31` = 31.asInstanceOf[`31`]
   @scala.inline
-  def msoTextEffectShapeDeflateInflate: `31` = this.cast(31)
+  def msoTextEffectShapeDeflateInflateDeflate: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def msoTextEffectShapeDeflateInflateDeflate: `32` = this.cast(32)
+  def msoTextEffectShapeDeflateTop: `30` = 30.asInstanceOf[`30`]
   @scala.inline
-  def msoTextEffectShapeDeflateTop: `30` = this.cast(30)
+  def msoTextEffectShapeDoubleWave1: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def msoTextEffectShapeDoubleWave1: `23` = this.cast(23)
+  def msoTextEffectShapeDoubleWave2: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def msoTextEffectShapeDoubleWave2: `24` = this.cast(24)
+  def msoTextEffectShapeFadeDown: `36` = 36.asInstanceOf[`36`]
   @scala.inline
-  def msoTextEffectShapeFadeDown: `36` = this.cast(36)
+  def msoTextEffectShapeFadeLeft: `34` = 34.asInstanceOf[`34`]
   @scala.inline
-  def msoTextEffectShapeFadeLeft: `34` = this.cast(34)
+  def msoTextEffectShapeFadeRight: `33` = 33.asInstanceOf[`33`]
   @scala.inline
-  def msoTextEffectShapeFadeRight: `33` = this.cast(33)
+  def msoTextEffectShapeFadeUp: `35` = 35.asInstanceOf[`35`]
   @scala.inline
-  def msoTextEffectShapeFadeUp: `35` = this.cast(35)
+  def msoTextEffectShapeInflate: `25` = 25.asInstanceOf[`25`]
   @scala.inline
-  def msoTextEffectShapeInflate: `25` = this.cast(25)
+  def msoTextEffectShapeInflateBottom: `27` = 27.asInstanceOf[`27`]
   @scala.inline
-  def msoTextEffectShapeInflateBottom: `27` = this.cast(27)
+  def msoTextEffectShapeInflateTop: `29` = 29.asInstanceOf[`29`]
   @scala.inline
-  def msoTextEffectShapeInflateTop: `29` = this.cast(29)
+  def msoTextEffectShapeMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def msoTextEffectShapeMixed: `-2` = this.cast(-2)
+  def msoTextEffectShapePlainText: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoTextEffectShapePlainText: `1` = this.cast(1)
+  def msoTextEffectShapeRingInside: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def msoTextEffectShapeRingInside: `7` = this.cast(7)
+  def msoTextEffectShapeRingOutside: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def msoTextEffectShapeRingOutside: `8` = this.cast(8)
+  def msoTextEffectShapeSlantDown: `38` = 38.asInstanceOf[`38`]
   @scala.inline
-  def msoTextEffectShapeSlantDown: `38` = this.cast(38)
+  def msoTextEffectShapeSlantUp: `37` = 37.asInstanceOf[`37`]
   @scala.inline
-  def msoTextEffectShapeSlantUp: `37` = this.cast(37)
+  def msoTextEffectShapeStop: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoTextEffectShapeStop: `2` = this.cast(2)
+  def msoTextEffectShapeTriangleDown: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoTextEffectShapeTriangleDown: `4` = this.cast(4)
+  def msoTextEffectShapeTriangleUp: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoTextEffectShapeTriangleUp: `3` = this.cast(3)
+  def msoTextEffectShapeWave1: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def msoTextEffectShapeWave1: `21` = this.cast(21)
-  @scala.inline
-  def msoTextEffectShapeWave2: `22` = this.cast(22)
+  def msoTextEffectShapeWave2: `22` = 22.asInstanceOf[`22`]
 }
 

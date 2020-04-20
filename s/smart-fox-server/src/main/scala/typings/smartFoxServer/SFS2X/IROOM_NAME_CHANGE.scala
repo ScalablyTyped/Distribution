@@ -14,7 +14,6 @@ object IROOM_NAME_CHANGE {
   @scala.inline
   def apply(oldName: String, room: SFSRoom): IROOM_NAME_CHANGE = {
     val __obj = js.Dynamic.literal(oldName = oldName.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IROOM_NAME_CHANGE]
   }
 }

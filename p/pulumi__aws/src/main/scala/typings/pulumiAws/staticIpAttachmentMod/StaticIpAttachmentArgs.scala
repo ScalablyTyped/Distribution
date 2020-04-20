@@ -21,7 +21,6 @@ object StaticIpAttachmentArgs {
   @scala.inline
   def apply(instanceName: Input[String], staticIpName: Input[String]): StaticIpAttachmentArgs = {
     val __obj = js.Dynamic.literal(instanceName = instanceName.asInstanceOf[js.Any], staticIpName = staticIpName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StaticIpAttachmentArgs]
   }
 }

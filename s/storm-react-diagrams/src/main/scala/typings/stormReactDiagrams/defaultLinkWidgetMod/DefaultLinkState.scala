@@ -12,7 +12,6 @@ object DefaultLinkState {
   @scala.inline
   def apply(selected: Boolean): DefaultLinkState = {
     val __obj = js.Dynamic.literal(selected = selected.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DefaultLinkState]
   }
 }

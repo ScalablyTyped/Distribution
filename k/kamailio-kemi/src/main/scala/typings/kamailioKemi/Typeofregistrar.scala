@@ -44,7 +44,6 @@ object Typeofregistrar {
     unregister_ruid: (String, String, String) => Double
   ): Typeofregistrar = {
     val __obj = js.Dynamic.literal(add_sock_hdr = js.Any.fromFunction1(add_sock_hdr), lookup = js.Any.fromFunction1(lookup), lookup_branches = js.Any.fromFunction1(lookup_branches), lookup_to_dset = js.Any.fromFunction2(lookup_to_dset), lookup_uri = js.Any.fromFunction2(lookup_uri), reg_fetch_contacts = js.Any.fromFunction3(reg_fetch_contacts), reg_free_contacts = js.Any.fromFunction1(reg_free_contacts), registered = js.Any.fromFunction1(registered), registered_action = js.Any.fromFunction4(registered_action), registered_flags = js.Any.fromFunction3(registered_flags), registered_uri = js.Any.fromFunction2(registered_uri), save = js.Any.fromFunction2(save), save_uri = js.Any.fromFunction3(save_uri), set_q_override = js.Any.fromFunction1(set_q_override), unregister = js.Any.fromFunction2(unregister), unregister_ruid = js.Any.fromFunction3(unregister_ruid))
-  
     __obj.asInstanceOf[Typeofregistrar]
   }
 }

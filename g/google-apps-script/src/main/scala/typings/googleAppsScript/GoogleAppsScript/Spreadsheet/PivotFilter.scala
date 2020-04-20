@@ -26,7 +26,6 @@ object PivotFilter {
     setFilterCriteria: FilterCriteria => PivotFilter
   ): PivotFilter = {
     val __obj = js.Dynamic.literal(getFilterCriteria = js.Any.fromFunction0(getFilterCriteria), getPivotTable = js.Any.fromFunction0(getPivotTable), getSourceDataColumn = js.Any.fromFunction0(getSourceDataColumn), remove = js.Any.fromFunction0(remove), setFilterCriteria = js.Any.fromFunction1(setFilterCriteria))
-  
     __obj.asInstanceOf[PivotFilter]
   }
 }

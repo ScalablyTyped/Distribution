@@ -13,7 +13,6 @@ object AnonContactsDicArray {
   @scala.inline
   def apply(contactsDicArray: js.Array[ContactsDic]): AnonContactsDicArray = {
     val __obj = js.Dynamic.literal(contactsDicArray = contactsDicArray.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonContactsDicArray]
   }
 }

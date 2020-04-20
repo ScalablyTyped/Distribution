@@ -16,12 +16,10 @@ trait WdContentControlDateStorageFormat extends js.Object
 
 object WdContentControlDateStorageFormat {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdContentControlDateStorageDate: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdContentControlDateStorageDate: `1` = this.cast(1)
+  def wdContentControlDateStorageDateTime: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdContentControlDateStorageDateTime: `2` = this.cast(2)
-  @scala.inline
-  def wdContentControlDateStorageText: `0` = this.cast(0)
+  def wdContentControlDateStorageText: `0` = 0.asInstanceOf[`0`]
 }
 

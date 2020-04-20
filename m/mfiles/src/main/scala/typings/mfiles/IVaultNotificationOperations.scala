@@ -19,7 +19,6 @@ object IVaultNotificationOperations {
   @scala.inline
   def apply(SendCustomNotification: (IUserOrUserGroupIDs, Boolean, IStrings, Boolean, String, String) => Unit): IVaultNotificationOperations = {
     val __obj = js.Dynamic.literal(SendCustomNotification = js.Any.fromFunction6(SendCustomNotification))
-  
     __obj.asInstanceOf[IVaultNotificationOperations]
   }
 }

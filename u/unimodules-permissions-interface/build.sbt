@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "unimodules-permissions-interface"
-version := "5.0.0-ef0d78"
+version := "5.0.0-903e94"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

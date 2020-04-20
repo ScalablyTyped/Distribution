@@ -14,10 +14,8 @@ trait WdStyleSheetLinkType extends js.Object
 
 object WdStyleSheetLinkType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdStyleSheetLinkTypeImported: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdStyleSheetLinkTypeImported: `1` = this.cast(1)
-  @scala.inline
-  def wdStyleSheetLinkTypeLinked: `0` = this.cast(0)
+  def wdStyleSheetLinkTypeLinked: `0` = 0.asInstanceOf[`0`]
 }
 

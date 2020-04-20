@@ -13,7 +13,6 @@ object PickImplaccordion {
   @scala.inline
   def apply(accordion: String): PickImplaccordion = {
     val __obj = js.Dynamic.literal(accordion = accordion.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplaccordion]
   }
 }

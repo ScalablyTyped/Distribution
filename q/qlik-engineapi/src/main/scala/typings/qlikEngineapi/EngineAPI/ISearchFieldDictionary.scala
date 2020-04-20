@@ -24,7 +24,6 @@ object ISearchFieldDictionary {
   @scala.inline
   def apply(qField: Double, qResult: js.Array[ISearchTermResult]): ISearchFieldDictionary = {
     val __obj = js.Dynamic.literal(qField = qField.asInstanceOf[js.Any], qResult = qResult.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISearchFieldDictionary]
   }
 }

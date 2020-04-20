@@ -14,7 +14,6 @@ object AnonScreen {
   @scala.inline
   def apply(screen: ScaledSize, window: ScaledSize): AnonScreen = {
     val __obj = js.Dynamic.literal(screen = screen.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonScreen]
   }
 }

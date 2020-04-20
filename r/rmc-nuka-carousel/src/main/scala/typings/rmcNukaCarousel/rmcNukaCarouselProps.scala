@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait rmcNukaCarouselProps {
   @scala.inline
-  def CarouselProps: ICarouselProps.type = typings.rmcNukaCarousel.carouselMod.ICarouselProps
+  def CarouselProps: ICarouselProps.type = ICarouselProps
   type CarouselProps = ICarouselProps
   @scala.inline
-  def LibProps: ICarouselProps.type = typings.rmcNukaCarousel.carouselMod.ICarouselProps
+  def LibProps: ICarouselProps.type = ICarouselProps
   type LibProps = ICarouselProps
 }
 

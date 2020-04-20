@@ -14,7 +14,6 @@ object Document {
   @scala.inline
   def apply(registerElement: (String, CustomElementInit) => CustomElementConstructor): Document = {
     val __obj = js.Dynamic.literal(registerElement = js.Any.fromFunction2(registerElement))
-  
     __obj.asInstanceOf[Document]
   }
 }

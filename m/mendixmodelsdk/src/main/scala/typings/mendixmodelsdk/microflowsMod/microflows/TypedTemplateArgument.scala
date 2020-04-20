@@ -26,7 +26,7 @@ abstract class TypedTemplateArgument protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FTypedTemplateArgument: IModel = js.native
-  def containerAsTypedTemplate(): TypedTemplate = js.native
+  def containerAsTypedTemplate: TypedTemplate = js.native
 }
 
 /* static members */

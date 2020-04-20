@@ -31,7 +31,6 @@ object BufferList {
     unshift: D => Unit
   ): BufferList[D] = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), concat = js.Any.fromFunction1(concat), head = head.asInstanceOf[js.Any], join = js.Any.fromFunction1(join), length = length.asInstanceOf[js.Any], push = js.Any.fromFunction1(push), shift = js.Any.fromFunction0(shift), tail = tail.asInstanceOf[js.Any], unshift = js.Any.fromFunction1(unshift))
-  
     __obj.asInstanceOf[BufferList[D]]
   }
 }

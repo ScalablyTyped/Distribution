@@ -15,7 +15,6 @@ object Utils {
   @scala.inline
   def apply(toArray: (js.Any, hex) => js.Array[Double], toHex: js.Any => String): Utils = {
     val __obj = js.Dynamic.literal(toArray = js.Any.fromFunction2(toArray), toHex = js.Any.fromFunction1(toHex))
-  
     __obj.asInstanceOf[Utils]
   }
 }

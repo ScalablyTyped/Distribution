@@ -20,12 +20,12 @@ class Launcher protected () extends VDomRenderer[LauncherModel] {
   /**
     * The cwd of the launcher.
     */
-  def cwd(): String = js.native
+  def cwd: String = js.native
   def cwd(value: String): js.Any = js.native
   /**
     * Whether there is a pending item being launched.
     */
-  def pending(): Boolean = js.native
+  def pending: Boolean = js.native
   def pending(value: Boolean): js.Any = js.native
 }
 

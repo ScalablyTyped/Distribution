@@ -14,7 +14,6 @@ object IDeltaChange {
   @scala.inline
   def apply(delta: Delta, reversedDelta: Delta): IDeltaChange = {
     val __obj = js.Dynamic.literal(delta = delta.asInstanceOf[js.Any], reversedDelta = reversedDelta.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDeltaChange]
   }
 }

@@ -15,14 +15,12 @@ trait fundingType extends js.Object
 
 object fundingType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def credit: typings.stripeV3.stripeV3Strings.credit = "credit".asInstanceOf[typings.stripeV3.stripeV3Strings.credit]
   @scala.inline
-  def credit: typings.stripeV3.stripeV3Strings.credit = this.cast("credit")
+  def debit: typings.stripeV3.stripeV3Strings.debit = "debit".asInstanceOf[typings.stripeV3.stripeV3Strings.debit]
   @scala.inline
-  def debit: typings.stripeV3.stripeV3Strings.debit = this.cast("debit")
+  def prepaid: typings.stripeV3.stripeV3Strings.prepaid = "prepaid".asInstanceOf[typings.stripeV3.stripeV3Strings.prepaid]
   @scala.inline
-  def prepaid: typings.stripeV3.stripeV3Strings.prepaid = this.cast("prepaid")
-  @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
+  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
 }
 

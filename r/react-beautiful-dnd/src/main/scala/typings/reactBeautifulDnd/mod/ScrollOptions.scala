@@ -12,7 +12,6 @@ object ScrollOptions {
   @scala.inline
   def apply(shouldPublishImmediately: Boolean): ScrollOptions = {
     val __obj = js.Dynamic.literal(shouldPublishImmediately = shouldPublishImmediately.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScrollOptions]
   }
 }

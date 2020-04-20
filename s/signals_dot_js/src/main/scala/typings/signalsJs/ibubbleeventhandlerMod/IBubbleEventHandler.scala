@@ -19,7 +19,6 @@ object IBubbleEventHandler {
   @scala.inline
   def apply(onEventBubbled: IEvent => Boolean): IBubbleEventHandler = {
     val __obj = js.Dynamic.literal(onEventBubbled = js.Any.fromFunction1(onEventBubbled))
-  
     __obj.asInstanceOf[IBubbleEventHandler]
   }
 }

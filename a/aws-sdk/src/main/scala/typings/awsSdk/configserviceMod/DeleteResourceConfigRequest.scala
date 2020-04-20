@@ -20,7 +20,6 @@ object DeleteResourceConfigRequest {
   @scala.inline
   def apply(ResourceId: ResourceId, ResourceType: ResourceTypeString): DeleteResourceConfigRequest = {
     val __obj = js.Dynamic.literal(ResourceId = ResourceId.asInstanceOf[js.Any], ResourceType = ResourceType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteResourceConfigRequest]
   }
 }

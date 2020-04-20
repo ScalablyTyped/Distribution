@@ -15,7 +15,6 @@ object CustomerUsageReportsResource {
   @scala.inline
   def apply(get: AnonDate => Request_[UsageReports]): CustomerUsageReportsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
-  
     __obj.asInstanceOf[CustomerUsageReportsResource]
   }
 }

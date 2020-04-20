@@ -30,7 +30,6 @@ object GoogleApiOAuth2TokenObject {
   @scala.inline
   def apply(access_token: String, error: String, expires_in: String, state: String): GoogleApiOAuth2TokenObject = {
     val __obj = js.Dynamic.literal(access_token = access_token.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], expires_in = expires_in.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GoogleApiOAuth2TokenObject]
   }
 }

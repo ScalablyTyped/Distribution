@@ -16,7 +16,6 @@ object DeleteNotebookInstanceLifecycleConfigInput {
   @scala.inline
   def apply(NotebookInstanceLifecycleConfigName: NotebookInstanceLifecycleConfigName): DeleteNotebookInstanceLifecycleConfigInput = {
     val __obj = js.Dynamic.literal(NotebookInstanceLifecycleConfigName = NotebookInstanceLifecycleConfigName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteNotebookInstanceLifecycleConfigInput]
   }
 }

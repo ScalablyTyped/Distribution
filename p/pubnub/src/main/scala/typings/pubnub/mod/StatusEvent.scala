@@ -28,7 +28,6 @@ object StatusEvent {
     subscribedChannels: js.Array[String]
   ): StatusEvent = {
     val __obj = js.Dynamic.literal(affectedChannelGroups = affectedChannelGroups.asInstanceOf[js.Any], affectedChannels = affectedChannels.asInstanceOf[js.Any], category = category.asInstanceOf[js.Any], currentTimetoken = currentTimetoken.asInstanceOf[js.Any], lastTimetoken = lastTimetoken.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], subscribedChannels = subscribedChannels.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StatusEvent]
   }
 }

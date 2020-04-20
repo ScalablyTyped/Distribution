@@ -22,7 +22,6 @@ object JestMatchersShape {
   @scala.inline
   def apply(rejects: AndNot, resolves: AndNot): JestMatchersShape = {
     val __obj = js.Dynamic.literal(rejects = rejects.asInstanceOf[js.Any], resolves = resolves.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JestMatchersShape]
   }
 }

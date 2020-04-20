@@ -12,7 +12,6 @@ object AnonOverlayClicked {
   @scala.inline
   def apply(overlayClicked: Boolean): AnonOverlayClicked = {
     val __obj = js.Dynamic.literal(overlayClicked = overlayClicked.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOverlayClicked]
   }
 }

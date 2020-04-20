@@ -16,7 +16,6 @@ object GetGatewayGroupRequest {
   @scala.inline
   def apply(GatewayGroupArn: Arn): GetGatewayGroupRequest = {
     val __obj = js.Dynamic.literal(GatewayGroupArn = GatewayGroupArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetGatewayGroupRequest]
   }
 }

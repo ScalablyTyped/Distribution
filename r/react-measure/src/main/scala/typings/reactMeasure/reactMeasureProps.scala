@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactMeasureProps {
   @scala.inline
-  def ReactMeasureProps: MeasureProps.type = typings.reactMeasure.mod.MeasureProps
+  def ReactMeasureProps: MeasureProps.type = MeasureProps
   type ReactMeasureProps = MeasureProps
 }
 

@@ -23,7 +23,6 @@ object IWorkInfo {
   @scala.inline
   def apply(employer: AnonName, position: AnonName): IWorkInfo = {
     val __obj = js.Dynamic.literal(employer = employer.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IWorkInfo]
   }
 }

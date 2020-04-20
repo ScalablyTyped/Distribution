@@ -16,7 +16,6 @@ object CacheResult {
   @scala.inline
   def apply(files: AnonMax, items: AnonMax, memory: AnonCurrent): CacheResult = {
     val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], memory = memory.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CacheResult]
   }
 }

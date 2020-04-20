@@ -20,7 +20,7 @@ object mod extends js.Object {
     * @param prop The property to set.
     * @param value The value to set on `object[prop]`
     */
-  def apply[T, K /* <: String */](
+  def apply[T, K /* <: /* keyof T */ String */](
     `object`: T,
     prop: K,
     value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any

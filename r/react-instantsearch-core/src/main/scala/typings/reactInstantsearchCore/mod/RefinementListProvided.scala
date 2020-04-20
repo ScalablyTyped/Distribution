@@ -37,7 +37,6 @@ object RefinementListProvided {
     searchForItems: /* repeated */ js.Any => js.Any
   ): RefinementListProvided = {
     val __obj = js.Dynamic.literal(canRefine = canRefine.asInstanceOf[js.Any], createURL = js.Any.fromFunction1(createURL), currentRefinement = currentRefinement.asInstanceOf[js.Any], isFromSearch = isFromSearch.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], refine = js.Any.fromFunction1(refine), searchForItems = js.Any.fromFunction1(searchForItems))
-  
     __obj.asInstanceOf[RefinementListProvided]
   }
 }

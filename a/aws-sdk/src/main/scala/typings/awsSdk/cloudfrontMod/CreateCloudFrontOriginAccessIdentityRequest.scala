@@ -16,7 +16,6 @@ object CreateCloudFrontOriginAccessIdentityRequest {
   @scala.inline
   def apply(CloudFrontOriginAccessIdentityConfig: CloudFrontOriginAccessIdentityConfig): CreateCloudFrontOriginAccessIdentityRequest = {
     val __obj = js.Dynamic.literal(CloudFrontOriginAccessIdentityConfig = CloudFrontOriginAccessIdentityConfig.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateCloudFrontOriginAccessIdentityRequest]
   }
 }

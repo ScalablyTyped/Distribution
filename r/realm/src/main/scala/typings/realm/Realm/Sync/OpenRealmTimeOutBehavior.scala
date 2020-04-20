@@ -14,10 +14,8 @@ trait OpenRealmTimeOutBehavior extends js.Object
 
 object OpenRealmTimeOutBehavior {
   @scala.inline
-  def OpenLocalRealm: openLocalRealm = this.cast("openLocalRealm")
+  def OpenLocalRealm: openLocalRealm = "openLocalRealm".asInstanceOf[openLocalRealm]
   @scala.inline
-  def ThrowException: throwException = this.cast("throwException")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ThrowException: throwException = "throwException".asInstanceOf[throwException]
 }
 

@@ -30,7 +30,6 @@ object IShippingMethod {
   @scala.inline
   def apply(amount: Double, currency: String, delivery_estimate: AnonEarliest, description: String, id: String): IShippingMethod = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], delivery_estimate = delivery_estimate.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IShippingMethod]
   }
 }

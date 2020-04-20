@@ -16,18 +16,16 @@ trait SequentialSingleHue extends js.Object
 
 object SequentialSingleHue {
   @scala.inline
-  def blues: typings.vegaTypings.vegaTypingsStrings.blues = this.cast("blues")
+  def blues: typings.vegaTypings.vegaTypingsStrings.blues = "blues".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.blues]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def greens: typings.vegaTypings.vegaTypingsStrings.greens = "greens".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.greens]
   @scala.inline
-  def greens: typings.vegaTypings.vegaTypingsStrings.greens = this.cast("greens")
+  def greys: typings.vegaTypings.vegaTypingsStrings.greys = "greys".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.greys]
   @scala.inline
-  def greys: typings.vegaTypings.vegaTypingsStrings.greys = this.cast("greys")
+  def oranges: typings.vegaTypings.vegaTypingsStrings.oranges = "oranges".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.oranges]
   @scala.inline
-  def oranges: typings.vegaTypings.vegaTypingsStrings.oranges = this.cast("oranges")
+  def purples: typings.vegaTypings.vegaTypingsStrings.purples = "purples".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.purples]
   @scala.inline
-  def purples: typings.vegaTypings.vegaTypingsStrings.purples = this.cast("purples")
-  @scala.inline
-  def reds: typings.vegaTypings.vegaTypingsStrings.reds = this.cast("reds")
+  def reds: typings.vegaTypings.vegaTypingsStrings.reds = "reds".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.reds]
 }
 

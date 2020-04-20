@@ -16,7 +16,6 @@ object GetSecurityConfigurationRequest {
   @scala.inline
   def apply(Name: NameString): GetSecurityConfigurationRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetSecurityConfigurationRequest]
   }
 }

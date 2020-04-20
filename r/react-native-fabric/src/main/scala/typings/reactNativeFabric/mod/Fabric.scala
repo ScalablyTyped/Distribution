@@ -25,7 +25,6 @@ object Fabric {
   @scala.inline
   def apply(Answers: AnonLogAddToCart, Crashlytics: AnonCrash): Fabric = {
     val __obj = js.Dynamic.literal(Answers = Answers.asInstanceOf[js.Any], Crashlytics = Crashlytics.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Fabric]
   }
 }

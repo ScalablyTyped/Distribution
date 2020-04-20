@@ -61,7 +61,7 @@ object Logger extends js.Object {
   /**
     * Gets current log cache (list of logs)
     */
-  def LogCache(): String = js.native
+  def LogCache: String = js.native
   /**
     * Sets the current log level (MessageLogLevel / WarningLogLevel / ErrorLogLevel)
     */

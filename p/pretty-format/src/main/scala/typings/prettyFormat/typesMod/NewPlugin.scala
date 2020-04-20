@@ -16,7 +16,6 @@ object NewPlugin {
     test: /* arg0 */ js.Any => Boolean
   ): NewPlugin = {
     val __obj = js.Dynamic.literal(serialize = js.Any.fromFunction6(serialize), test = js.Any.fromFunction1(test))
-  
     __obj.asInstanceOf[NewPlugin]
   }
 }

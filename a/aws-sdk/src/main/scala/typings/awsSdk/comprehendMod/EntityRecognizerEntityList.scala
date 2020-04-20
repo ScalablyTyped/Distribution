@@ -16,7 +16,6 @@ object EntityRecognizerEntityList {
   @scala.inline
   def apply(S3Uri: S3Uri): EntityRecognizerEntityList = {
     val __obj = js.Dynamic.literal(S3Uri = S3Uri.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EntityRecognizerEntityList]
   }
 }

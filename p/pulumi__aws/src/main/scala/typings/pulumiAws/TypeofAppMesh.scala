@@ -13,7 +13,6 @@ object TypeofAppMesh {
   @scala.inline
   def apply(Types: TypeofAppMesh): TypeofAppMesh = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofAppMesh]
   }
 }

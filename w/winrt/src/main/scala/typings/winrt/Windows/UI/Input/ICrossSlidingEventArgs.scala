@@ -16,7 +16,6 @@ object ICrossSlidingEventArgs {
   @scala.inline
   def apply(crossSlidingState: CrossSlidingState, pointerDeviceType: PointerDeviceType, position: Point): ICrossSlidingEventArgs = {
     val __obj = js.Dynamic.literal(crossSlidingState = crossSlidingState.asInstanceOf[js.Any], pointerDeviceType = pointerDeviceType.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICrossSlidingEventArgs]
   }
 }

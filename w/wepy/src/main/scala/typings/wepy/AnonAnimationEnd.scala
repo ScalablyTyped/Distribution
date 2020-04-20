@@ -23,7 +23,6 @@ object AnonAnimationEnd {
     markerId: Double
   ): AnonAnimationEnd = {
     val __obj = js.Dynamic.literal(animationEnd = js.Any.fromFunction0(animationEnd), autoRotate = autoRotate.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], markerId = markerId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAnimationEnd]
   }
 }

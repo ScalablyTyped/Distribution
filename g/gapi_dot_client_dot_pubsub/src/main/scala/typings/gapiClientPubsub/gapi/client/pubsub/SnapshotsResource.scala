@@ -38,7 +38,6 @@ object SnapshotsResource {
     testIamPermissions: AnonAccesstoken => Request_[TestIamPermissionsResponse]
   ): SnapshotsResource = {
     val __obj = js.Dynamic.literal(getIamPolicy = js.Any.fromFunction1(getIamPolicy), setIamPolicy = js.Any.fromFunction1(setIamPolicy), testIamPermissions = js.Any.fromFunction1(testIamPermissions))
-  
     __obj.asInstanceOf[SnapshotsResource]
   }
 }

@@ -20,7 +20,6 @@ object OriginGroupMembers {
   @scala.inline
   def apply(Items: OriginGroupMemberList, Quantity: integer): OriginGroupMembers = {
     val __obj = js.Dynamic.literal(Items = Items.asInstanceOf[js.Any], Quantity = Quantity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OriginGroupMembers]
   }
 }

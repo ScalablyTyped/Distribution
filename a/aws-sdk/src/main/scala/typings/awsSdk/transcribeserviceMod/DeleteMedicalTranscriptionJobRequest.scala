@@ -16,7 +16,6 @@ object DeleteMedicalTranscriptionJobRequest {
   @scala.inline
   def apply(MedicalTranscriptionJobName: TranscriptionJobName): DeleteMedicalTranscriptionJobRequest = {
     val __obj = js.Dynamic.literal(MedicalTranscriptionJobName = MedicalTranscriptionJobName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteMedicalTranscriptionJobRequest]
   }
 }

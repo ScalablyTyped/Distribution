@@ -13,7 +13,6 @@ object EncodeOptions {
   @scala.inline
   def apply(section: String, whitespace: Boolean): EncodeOptions = {
     val __obj = js.Dynamic.literal(section = section.asInstanceOf[js.Any], whitespace = whitespace.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EncodeOptions]
   }
 }

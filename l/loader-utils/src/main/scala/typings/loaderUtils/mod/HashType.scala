@@ -14,14 +14,12 @@ trait HashType extends js.Object
 
 object HashType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def md5: typings.loaderUtils.loaderUtilsStrings.md5 = "md5".asInstanceOf[typings.loaderUtils.loaderUtilsStrings.md5]
   @scala.inline
-  def md5: typings.loaderUtils.loaderUtilsStrings.md5 = this.cast("md5")
+  def sha1: typings.loaderUtils.loaderUtilsStrings.sha1 = "sha1".asInstanceOf[typings.loaderUtils.loaderUtilsStrings.sha1]
   @scala.inline
-  def sha1: typings.loaderUtils.loaderUtilsStrings.sha1 = this.cast("sha1")
+  def sha256: typings.loaderUtils.loaderUtilsStrings.sha256 = "sha256".asInstanceOf[typings.loaderUtils.loaderUtilsStrings.sha256]
   @scala.inline
-  def sha256: typings.loaderUtils.loaderUtilsStrings.sha256 = this.cast("sha256")
-  @scala.inline
-  def sha512: typings.loaderUtils.loaderUtilsStrings.sha512 = this.cast("sha512")
+  def sha512: typings.loaderUtils.loaderUtilsStrings.sha512 = "sha512".asInstanceOf[typings.loaderUtils.loaderUtilsStrings.sha512]
 }
 

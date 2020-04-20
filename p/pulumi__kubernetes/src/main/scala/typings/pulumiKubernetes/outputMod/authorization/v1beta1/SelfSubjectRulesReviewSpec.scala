@@ -18,7 +18,6 @@ object SelfSubjectRulesReviewSpec {
   @scala.inline
   def apply(namespace: String): SelfSubjectRulesReviewSpec = {
     val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SelfSubjectRulesReviewSpec]
   }
 }

@@ -15,7 +15,6 @@ object PickImplrules {
   @scala.inline
   def apply(rules: StringDictionary[js.ThisFunction1[/* this */ HTMLElement, /* repeated */ js.Any, Boolean]]): PickImplrules = {
     val __obj = js.Dynamic.literal(rules = rules.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplrules]
   }
 }

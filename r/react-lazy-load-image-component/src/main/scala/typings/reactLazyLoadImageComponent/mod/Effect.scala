@@ -13,12 +13,10 @@ trait Effect extends js.Object
 
 object Effect {
   @scala.inline
-  def `black-and-white`: typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings.`black-and-white` = this.cast("black-and-white")
+  def `black-and-white`: typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings.`black-and-white` = "black-and-white".asInstanceOf[typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings.`black-and-white`]
   @scala.inline
-  def blur: typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings.blur = this.cast("blur")
+  def blur: typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings.blur = "blur".asInstanceOf[typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings.blur]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def opacity: typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings.opacity = this.cast("opacity")
+  def opacity: typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings.opacity = "opacity".asInstanceOf[typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings.opacity]
 }
 

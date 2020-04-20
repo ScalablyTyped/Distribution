@@ -26,7 +26,6 @@ object Types {
   @scala.inline
   def apply(dialog: `0`, iframe: `2`, loading: `3`, page: `1`, tips: `4`): Types = {
     val __obj = js.Dynamic.literal(dialog = dialog.asInstanceOf[js.Any], iframe = iframe.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], tips = tips.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Types]
   }
 }

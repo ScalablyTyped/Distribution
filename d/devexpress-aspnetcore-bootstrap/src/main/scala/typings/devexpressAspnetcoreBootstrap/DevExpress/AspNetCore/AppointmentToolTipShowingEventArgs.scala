@@ -12,7 +12,6 @@ object AppointmentToolTipShowingEventArgs {
   @scala.inline
   def apply(appointment: BootstrapSchedulerAppointment, cancel: Boolean, sender: Control): AppointmentToolTipShowingEventArgs = {
     val __obj = js.Dynamic.literal(appointment = appointment.asInstanceOf[js.Any], cancel = cancel.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AppointmentToolTipShowingEventArgs]
   }
 }

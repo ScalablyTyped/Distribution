@@ -20,16 +20,14 @@ trait EffectiveConnectionType extends js.Object
 
 object EffectiveConnectionType {
   @scala.inline
-  def CONNECTION_2G: `2` = this.cast(2)
+  def CONNECTION_2G: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def CONNECTION_3G: `3` = this.cast(3)
+  def CONNECTION_3G: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def CONNECTION_4G: `4` = this.cast(4)
+  def CONNECTION_4G: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def CONNECTION_SLOW_2G: `1` = this.cast(1)
+  def CONNECTION_SLOW_2G: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def UNKNOWN: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UNKNOWN: `0` = 0.asInstanceOf[`0`]
 }
 

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jest/reporters" : "25.2.6"
+      "@jest/reporters" : "25.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@jest/reporters" : "25.2.6"
+      "@jest/reporters" : "25.3.0"
     }
   ],
   "compile-devDependencies" : [

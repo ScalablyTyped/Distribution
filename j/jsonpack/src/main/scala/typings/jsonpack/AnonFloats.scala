@@ -14,7 +14,6 @@ object AnonFloats {
   @scala.inline
   def apply(floats: js.Array[Double], integers: js.Array[Double], strings: js.Array[String]): AnonFloats = {
     val __obj = js.Dynamic.literal(floats = floats.asInstanceOf[js.Any], integers = integers.asInstanceOf[js.Any], strings = strings.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFloats]
   }
 }

@@ -15,7 +15,6 @@ object HeadBucketOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): HeadBucketOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HeadBucketOutput]
   }
 }

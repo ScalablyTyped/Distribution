@@ -13,7 +13,6 @@ object PickImplwarningWarning {
   @scala.inline
   def apply(warning: String): PickImplwarningWarning = {
     val __obj = js.Dynamic.literal(warning = warning.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplwarningWarning]
   }
 }

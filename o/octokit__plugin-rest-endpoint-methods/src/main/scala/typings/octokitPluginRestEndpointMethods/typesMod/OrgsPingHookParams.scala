@@ -13,7 +13,6 @@ object OrgsPingHookParams {
   @scala.inline
   def apply(hook_id: Double, org: String): OrgsPingHookParams = {
     val __obj = js.Dynamic.literal(hook_id = hook_id.asInstanceOf[js.Any], org = org.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OrgsPingHookParams]
   }
 }

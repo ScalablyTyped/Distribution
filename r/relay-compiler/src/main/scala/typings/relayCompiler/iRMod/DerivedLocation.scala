@@ -14,7 +14,6 @@ object DerivedLocation {
   @scala.inline
   def apply(kind: Derived, source: Location): DerivedLocation = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DerivedLocation]
   }
 }

@@ -30,7 +30,7 @@ class LoginButton protected () extends Button {
   ) = this()
   @JSName("model")
   var model_FLoginButton: IModel = js.native
-  def validationMessageWidget(): String = js.native
+  def validationMessageWidget: String = js.native
   def validationMessageWidget(newValue: String): js.Any = js.native
 }
 

@@ -13,7 +13,6 @@ object TypeofPinpointEmail {
   @scala.inline
   def apply(Types: TypeofPinpointEmail): TypeofPinpointEmail = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofPinpointEmail]
   }
 }

@@ -18,14 +18,12 @@ trait OlFormatDuration extends js.Object
 
 object OlFormatDuration {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olFormatDurationLong: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olFormatDurationLong: `2` = this.cast(2)
+  def olFormatDurationLongBusiness: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def olFormatDurationLongBusiness: `4` = this.cast(4)
+  def olFormatDurationShort: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olFormatDurationShort: `1` = this.cast(1)
-  @scala.inline
-  def olFormatDurationShortBusiness: `3` = this.cast(3)
+  def olFormatDurationShortBusiness: `3` = 3.asInstanceOf[`3`]
 }
 

@@ -16,7 +16,6 @@ object GetBucketCorsRequest {
   @scala.inline
   def apply(Bucket: BucketName): GetBucketCorsRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBucketCorsRequest]
   }
 }

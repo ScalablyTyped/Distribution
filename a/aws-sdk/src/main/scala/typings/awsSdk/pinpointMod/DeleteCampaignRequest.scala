@@ -20,7 +20,6 @@ object DeleteCampaignRequest {
   @scala.inline
   def apply(ApplicationId: string, CampaignId: string): DeleteCampaignRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], CampaignId = CampaignId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteCampaignRequest]
   }
 }

@@ -13,7 +13,6 @@ object TypeofDataPipeline {
   @scala.inline
   def apply(Types: TypeofDataPipeline): TypeofDataPipeline = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofDataPipeline]
   }
 }

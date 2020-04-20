@@ -16,12 +16,10 @@ trait styleDataRepeat extends js.Object
 
 object styleDataRepeat {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleDataRepeatInner: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleDataRepeatInner: `1` = this.cast(1)
+  def styleDataRepeatNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleDataRepeatNone: `0` = this.cast(0)
-  @scala.inline
-  def styleDataRepeat_Max: `2147483647` = this.cast(2147483647)
+  def styleDataRepeat_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

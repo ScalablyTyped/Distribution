@@ -14,14 +14,12 @@ trait Channel extends js.Object
 
 object Channel {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def control: typings.jupyterlabServices.jupyterlabServicesStrings.control = "control".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.control]
   @scala.inline
-  def control: typings.jupyterlabServices.jupyterlabServicesStrings.control = this.cast("control")
+  def iopub: typings.jupyterlabServices.jupyterlabServicesStrings.iopub = "iopub".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.iopub]
   @scala.inline
-  def iopub: typings.jupyterlabServices.jupyterlabServicesStrings.iopub = this.cast("iopub")
+  def shell: typings.jupyterlabServices.jupyterlabServicesStrings.shell = "shell".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.shell]
   @scala.inline
-  def shell: typings.jupyterlabServices.jupyterlabServicesStrings.shell = this.cast("shell")
-  @scala.inline
-  def stdin: typings.jupyterlabServices.jupyterlabServicesStrings.stdin = this.cast("stdin")
+  def stdin: typings.jupyterlabServices.jupyterlabServicesStrings.stdin = "stdin".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.stdin]
 }
 

@@ -14,7 +14,6 @@ object BufferChanging {
   @scala.inline
   def apply(oldRange: Range): BufferChanging = {
     val __obj = js.Dynamic.literal(oldRange = oldRange.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BufferChanging]
   }
 }

@@ -17,7 +17,6 @@ object RouteSpecTcpRoute {
   @scala.inline
   def apply(action: Input[RouteSpecTcpRouteAction]): RouteSpecTcpRoute = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RouteSpecTcpRoute]
   }
 }

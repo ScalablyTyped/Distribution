@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeDrawerProps {
   @scala.inline
-  def ReactNativeDrawerProps: DrawerProperties.type = typings.reactNativeDrawer.mod.DrawerProperties
+  def ReactNativeDrawerProps: DrawerProperties.type = DrawerProperties
   type ReactNativeDrawerProps = DrawerProperties
 }
 

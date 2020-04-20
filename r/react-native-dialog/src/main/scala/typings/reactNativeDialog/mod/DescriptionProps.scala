@@ -12,7 +12,6 @@ object DescriptionProps {
   @scala.inline
   def apply(children: String): DescriptionProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescriptionProps]
   }
 }

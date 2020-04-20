@@ -80,9 +80,8 @@ class Duplex ()
   override def pipe[T /* <: WritableStream */](destination: T): T = js.native
   /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T, options: typings.node.AnonEnd): T = js.native
-  /* InferMemberOverrides */
   @JSName("pipe")
-  def pipe_T_WritableStream_T[T /* <: WritableStream */](destination: T): T = js.native
+  def pipe_S_WritableStream_S[S /* <: WritableStream */](dest: S): S = js.native
   @JSName("prependListener")
   def prependListener_data(event: data, listener: js.Function1[/* chunk */ js.Any, Unit]): this.type = js.native
   @JSName("prependListener")

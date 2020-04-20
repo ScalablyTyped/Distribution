@@ -13,7 +13,6 @@ object PickPaginationOptionsmax {
   @scala.inline
   def apply(max: Double): PickPaginationOptionsmax = {
     val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickPaginationOptionsmax]
   }
 }

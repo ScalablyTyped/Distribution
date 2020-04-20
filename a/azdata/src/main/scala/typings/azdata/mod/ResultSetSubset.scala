@@ -13,7 +13,6 @@ object ResultSetSubset {
   @scala.inline
   def apply(rowCount: Double, rows: js.Array[js.Array[DbCellValue]]): ResultSetSubset = {
     val __obj = js.Dynamic.literal(rowCount = rowCount.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResultSetSubset]
   }
 }

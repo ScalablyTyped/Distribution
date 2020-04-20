@@ -24,7 +24,6 @@ object Note {
   @scala.inline
   def apply(Text: NonEmptyString, UpdatedAt: NonEmptyString, UpdatedBy: NonEmptyString): Note = {
     val __obj = js.Dynamic.literal(Text = Text.asInstanceOf[js.Any], UpdatedAt = UpdatedAt.asInstanceOf[js.Any], UpdatedBy = UpdatedBy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Note]
   }
 }

@@ -13,7 +13,6 @@ object DefaultState {
   @scala.inline
   def apply(fields: js.Object, unset: js.Array[String]): DefaultState = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], unset = unset.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DefaultState]
   }
 }

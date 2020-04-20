@@ -16,7 +16,6 @@ object GetQueueRequest {
   @scala.inline
   def apply(Name: string): GetQueueRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetQueueRequest]
   }
 }

@@ -13,7 +13,6 @@ object PluginPrefixIds {
   @scala.inline
   def apply(prefixIds: Boolean | js.Object): PluginPrefixIds = {
     val __obj = js.Dynamic.literal(prefixIds = prefixIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PluginPrefixIds]
   }
 }

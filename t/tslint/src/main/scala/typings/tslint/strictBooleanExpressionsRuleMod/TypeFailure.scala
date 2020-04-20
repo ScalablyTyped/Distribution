@@ -26,22 +26,20 @@ trait TypeFailure extends js.Object
 
 object TypeFailure {
   @scala.inline
-  def AlwaysFalsy: `1` = this.cast(1)
+  def AlwaysFalsy: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def AlwaysTruthy: `0` = this.cast(0)
+  def AlwaysTruthy: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def Enum: `6` = this.cast(6)
+  def Enum: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def Mixes: `7` = this.cast(7)
+  def Mixes: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def Null: `4` = this.cast(4)
+  def Null: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def Number: `3` = this.cast(3)
+  def Number: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def String: `2` = this.cast(2)
+  def String: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def Undefined: `5` = this.cast(5)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Undefined: `5` = 5.asInstanceOf[`5`]
 }
 

@@ -13,7 +13,6 @@ object RTCIceGathererEventMap {
   @scala.inline
   def apply(error: Event_, localcandidate: RTCIceGathererEvent): RTCIceGathererEventMap = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], localcandidate = localcandidate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RTCIceGathererEventMap]
   }
 }

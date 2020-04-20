@@ -32,7 +32,6 @@ object AnnotationsResource {
     update: AnonAltAnnotationId => Request_[Annotation]
   ): AnnotationsResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), summary = js.Any.fromFunction1(summary), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[AnnotationsResource]
   }
 }

@@ -22,20 +22,18 @@ trait FieldAttributeEnum extends js.Object
 
 object FieldAttributeEnum {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dbAutoIncrField: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def dbAutoIncrField: `16` = this.cast(16)
+  def dbDescending: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def dbDescending: `1` = this.cast(1)
+  def dbFixedField: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def dbFixedField: `1` = this.cast(1)
+  def dbHyperlinkField: `32768` = 32768.asInstanceOf[`32768`]
   @scala.inline
-  def dbHyperlinkField: `32768` = this.cast(32768)
+  def dbSystemField: `8192` = 8192.asInstanceOf[`8192`]
   @scala.inline
-  def dbSystemField: `8192` = this.cast(8192)
+  def dbUpdatableField: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def dbUpdatableField: `32` = this.cast(32)
-  @scala.inline
-  def dbVariableField: `2` = this.cast(2)
+  def dbVariableField: `2` = 2.asInstanceOf[`2`]
 }
 

@@ -17,7 +17,6 @@ object AnonStore {
     Store: Store
   ): AnonStore = {
     val __obj = js.Dynamic.literal(CommandBar = CommandBar.asInstanceOf[js.Any], Store = Store.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonStore]
   }
 }

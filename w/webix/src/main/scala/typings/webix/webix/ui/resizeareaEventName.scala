@@ -12,10 +12,8 @@ trait resizeareaEventName extends js.Object
 
 object resizeareaEventName {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def onResize: typings.webix.webixStrings.onResize = "onResize".asInstanceOf[typings.webix.webixStrings.onResize]
   @scala.inline
-  def onResize: typings.webix.webixStrings.onResize = this.cast("onResize")
-  @scala.inline
-  def onResizeEnd: typings.webix.webixStrings.onResizeEnd = this.cast("onResizeEnd")
+  def onResizeEnd: typings.webix.webixStrings.onResizeEnd = "onResizeEnd".asInstanceOf[typings.webix.webixStrings.onResizeEnd]
 }
 

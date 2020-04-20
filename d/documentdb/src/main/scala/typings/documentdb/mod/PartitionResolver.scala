@@ -30,7 +30,6 @@ object PartitionResolver {
     resolveForRead: js.Any => js.Array[String]
   ): PartitionResolver = {
     val __obj = js.Dynamic.literal(getPartitionKey = js.Any.fromFunction1(getPartitionKey), resolveForCreate = js.Any.fromFunction1(resolveForCreate), resolveForRead = js.Any.fromFunction1(resolveForRead))
-  
     __obj.asInstanceOf[PartitionResolver]
   }
 }

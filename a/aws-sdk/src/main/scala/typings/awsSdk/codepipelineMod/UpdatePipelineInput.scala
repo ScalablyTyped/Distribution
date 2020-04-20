@@ -16,7 +16,6 @@ object UpdatePipelineInput {
   @scala.inline
   def apply(pipeline: PipelineDeclaration): UpdatePipelineInput = {
     val __obj = js.Dynamic.literal(pipeline = pipeline.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdatePipelineInput]
   }
 }

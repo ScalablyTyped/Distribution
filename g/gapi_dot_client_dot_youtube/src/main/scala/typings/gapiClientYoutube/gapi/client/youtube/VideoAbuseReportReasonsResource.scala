@@ -15,7 +15,6 @@ object VideoAbuseReportReasonsResource {
   @scala.inline
   def apply(list: AnonUserIp => Request_[VideoAbuseReportReasonListResponse]): VideoAbuseReportReasonsResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[VideoAbuseReportReasonsResource]
   }
 }

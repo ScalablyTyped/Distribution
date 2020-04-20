@@ -12,7 +12,6 @@ object InsightsServicePostResponseTray {
   @scala.inline
   def apply(nodes: js.Array[InsightsServicePostResponseNodesItem]): InsightsServicePostResponseTray = {
     val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InsightsServicePostResponseTray]
   }
 }

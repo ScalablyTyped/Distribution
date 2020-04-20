@@ -12,7 +12,6 @@ object AnonPattern {
   @scala.inline
   def apply(pattern: AnonIdent): AnonPattern = {
     val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPattern]
   }
 }

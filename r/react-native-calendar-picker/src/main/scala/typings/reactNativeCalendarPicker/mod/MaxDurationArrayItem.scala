@@ -13,7 +13,6 @@ object MaxDurationArrayItem {
   @scala.inline
   def apply(date: MomentParsable, maxDuration: Double): MaxDurationArrayItem = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], maxDuration = maxDuration.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MaxDurationArrayItem]
   }
 }

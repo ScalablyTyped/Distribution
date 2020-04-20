@@ -20,7 +20,6 @@ object ZoomChangeInfo {
     zoomSettings: typings.chrome.chrome.tabs.ZoomSettings
   ): ZoomChangeInfo = {
     val __obj = js.Dynamic.literal(newZoomFactor = newZoomFactor.asInstanceOf[js.Any], oldZoomFactor = oldZoomFactor.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any], zoomSettings = zoomSettings.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ZoomChangeInfo]
   }
 }

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object storybookReactRouterComponents extends storybookReactRouterProps {
   @scala.inline
-  def StoryRouter: ComponentType[StoryRouterProps] = js.constructorOf[typings.storybookReactRouter.mod.StoryRouter].asInstanceOf[typings.react.mod.ComponentType[StoryRouterProps]]
+  def StoryRouter: ComponentType[StoryRouterProps] = js.constructorOf[typings.storybookReactRouter.mod.StoryRouter].asInstanceOf[ComponentType[StoryRouterProps]]
 }
 

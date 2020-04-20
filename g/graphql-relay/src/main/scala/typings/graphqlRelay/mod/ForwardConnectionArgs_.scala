@@ -14,7 +14,6 @@ object ForwardConnectionArgs_ {
   @scala.inline
   def apply(after: AnonType, first: AnonType): ForwardConnectionArgs_ = {
     val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], first = first.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ForwardConnectionArgs_]
   }
 }

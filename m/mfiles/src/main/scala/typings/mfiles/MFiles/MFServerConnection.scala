@@ -14,10 +14,8 @@ trait MFServerConnection extends js.Object
 
 object MFServerConnection {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def nonymous: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def nonymous: `2` = this.cast(2)
-  @scala.inline
-  def uthenticated: `1` = this.cast(1)
+  def uthenticated: `1` = 1.asInstanceOf[`1`]
 }
 

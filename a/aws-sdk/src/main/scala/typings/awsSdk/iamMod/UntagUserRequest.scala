@@ -20,7 +20,6 @@ object UntagUserRequest {
   @scala.inline
   def apply(TagKeys: tagKeyListType, UserName: existingUserNameType): UntagUserRequest = {
     val __obj = js.Dynamic.literal(TagKeys = TagKeys.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UntagUserRequest]
   }
 }

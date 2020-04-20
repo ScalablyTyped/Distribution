@@ -16,7 +16,6 @@ object DeleteGameSessionQueueInput {
   @scala.inline
   def apply(Name: GameSessionQueueNameOrArn): DeleteGameSessionQueueInput = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteGameSessionQueueInput]
   }
 }

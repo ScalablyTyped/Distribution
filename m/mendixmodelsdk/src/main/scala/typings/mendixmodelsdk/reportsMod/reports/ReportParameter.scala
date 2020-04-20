@@ -29,14 +29,14 @@ abstract class ReportParameter protected () extends Widget {
   /**
     * In version 6.10.0: deleted
     */
-  def parameterName(): String = js.native
+  def parameterName: String = js.native
   def parameterName(newValue: String): js.Any = js.native
-  def parameterQualifiedName(): String | Null = js.native
+  def parameterQualifiedName: String | Null = js.native
   /**
     * In version 6.10.0: introduced
     */
   @JSName("parameter")
-  def parameter_Union(): IDataSetParameter | Null = js.native
+  def parameter_Union: IDataSetParameter | Null = js.native
 }
 
 /* static members */

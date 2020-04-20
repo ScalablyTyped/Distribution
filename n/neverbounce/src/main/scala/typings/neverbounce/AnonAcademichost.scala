@@ -54,7 +54,6 @@ object AnonAcademichost {
     temporary_dns_error: String
   ): AnonAcademichost = {
     val __obj = js.Dynamic.literal(academic_host = academic_host.asInstanceOf[js.Any], accepts_all = accepts_all.asInstanceOf[js.Any], bad_dns = bad_dns.asInstanceOf[js.Any], bad_syntax = bad_syntax.asInstanceOf[js.Any], connect_fails = connect_fails.asInstanceOf[js.Any], contains_alias = contains_alias.asInstanceOf[js.Any], contains_subdomain = contains_subdomain.asInstanceOf[js.Any], disposable_email = disposable_email.asInstanceOf[js.Any], free_email_host = free_email_host.asInstanceOf[js.Any], government_host = government_host.asInstanceOf[js.Any], has_dns = has_dns.asInstanceOf[js.Any], has_dns_mx = has_dns_mx.asInstanceOf[js.Any], international_host = international_host.asInstanceOf[js.Any], military_host = military_host.asInstanceOf[js.Any], profanity = profanity.asInstanceOf[js.Any], role_account = role_account.asInstanceOf[js.Any], smtp_connectable = smtp_connectable.asInstanceOf[js.Any], spamtrap_network = spamtrap_network.asInstanceOf[js.Any], spelling_mistake = spelling_mistake.asInstanceOf[js.Any], squatter_host = squatter_host.asInstanceOf[js.Any], temporary_dns_error = temporary_dns_error.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAcademichost]
   }
 }

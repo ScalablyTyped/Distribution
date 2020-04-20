@@ -15,7 +15,6 @@ object EventMap {
   @scala.inline
   def apply(error: Event_[error, AnonInfo]): EventMap = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventMap]
   }
 }

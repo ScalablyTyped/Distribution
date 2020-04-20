@@ -16,7 +16,6 @@ object GraphQLValidation {
   @scala.inline
   def apply(definitionLimit: Double => js.Any, depthLimit: Double => js.Any, fieldLimit: Double => js.Any): GraphQLValidation = {
     val __obj = js.Dynamic.literal(definitionLimit = js.Any.fromFunction1(definitionLimit), depthLimit = js.Any.fromFunction1(depthLimit), fieldLimit = js.Any.fromFunction1(fieldLimit))
-  
     __obj.asInstanceOf[GraphQLValidation]
   }
 }

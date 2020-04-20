@@ -22,7 +22,6 @@ object AnonCols {
     prefixCls: String
   ): AnonCols = {
     val __obj = js.Dynamic.literal(cols = cols.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], pickerPrefixCls = pickerPrefixCls.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCols]
   }
 }

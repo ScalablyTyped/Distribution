@@ -22,7 +22,6 @@ object BlendMixin {
     opacity: Double
   ): BlendMixin = {
     val __obj = js.Dynamic.literal(blendMode = blendMode.asInstanceOf[js.Any], effectStyleId = effectStyleId.asInstanceOf[js.Any], effects = effects.asInstanceOf[js.Any], isMask = isMask.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BlendMixin]
   }
 }

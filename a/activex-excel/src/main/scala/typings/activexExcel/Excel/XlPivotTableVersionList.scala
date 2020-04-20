@@ -22,18 +22,16 @@ trait XlPivotTableVersionList extends js.Object
 
 object XlPivotTableVersionList {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlPivotTableVersion10: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlPivotTableVersion10: `1` = this.cast(1)
+  def xlPivotTableVersion11: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlPivotTableVersion11: `2` = this.cast(2)
+  def xlPivotTableVersion12: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlPivotTableVersion12: `3` = this.cast(3)
+  def xlPivotTableVersion14: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlPivotTableVersion14: `4` = this.cast(4)
+  def xlPivotTableVersion2000: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def xlPivotTableVersion2000: `0` = this.cast(0)
-  @scala.inline
-  def xlPivotTableVersionCurrent: `-1` = this.cast(-1)
+  def xlPivotTableVersionCurrent: `-1` = -1.asInstanceOf[`-1`]
 }
 

@@ -18,7 +18,6 @@ object VerifyResponseArgs {
   @scala.inline
   def apply(request: Buffer, response: Buffer, secret: String): VerifyResponseArgs = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VerifyResponseArgs]
   }
 }

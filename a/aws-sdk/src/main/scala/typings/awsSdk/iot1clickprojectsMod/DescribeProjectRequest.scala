@@ -16,7 +16,6 @@ object DescribeProjectRequest {
   @scala.inline
   def apply(projectName: ProjectName): DescribeProjectRequest = {
     val __obj = js.Dynamic.literal(projectName = projectName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeProjectRequest]
   }
 }

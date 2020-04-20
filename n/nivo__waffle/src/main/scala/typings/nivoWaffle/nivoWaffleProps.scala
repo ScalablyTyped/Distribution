@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 
 trait nivoWaffleProps {
   @scala.inline
-  def ResponsiveWaffleProps: WaffleSvgProps.type = typings.nivoWaffle.mod.WaffleSvgProps
+  def ResponsiveWaffleProps: WaffleSvgProps.type = WaffleSvgProps
   type ResponsiveWaffleProps = WaffleSvgProps
   @scala.inline
-  def ResponsiveWaffleCanvasProps: WaffleCanvasProps.type = typings.nivoWaffle.mod.WaffleCanvasProps
+  def ResponsiveWaffleCanvasProps: WaffleCanvasProps.type = WaffleCanvasProps
   type ResponsiveWaffleCanvasProps = WaffleCanvasProps
   @scala.inline
-  def ResponsiveWaffleHtmlProps: WaffleHtmlProps.type = typings.nivoWaffle.mod.WaffleHtmlProps
+  def ResponsiveWaffleHtmlProps: WaffleHtmlProps.type = WaffleHtmlProps
   type ResponsiveWaffleHtmlProps = WaffleHtmlProps
 }
 

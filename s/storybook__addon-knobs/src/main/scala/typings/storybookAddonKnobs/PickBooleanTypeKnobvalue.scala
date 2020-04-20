@@ -14,7 +14,6 @@ object PickBooleanTypeKnobvalue {
   @scala.inline
   def apply(value: BooleanTypeKnobValue): PickBooleanTypeKnobvalue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickBooleanTypeKnobvalue]
   }
 }

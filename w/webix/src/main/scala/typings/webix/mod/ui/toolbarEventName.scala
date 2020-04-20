@@ -23,32 +23,30 @@ trait toolbarEventName extends js.Object
 
 object toolbarEventName {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def onAfterLoad: typings.webix.webixStrings.onAfterLoad = "onAfterLoad".asInstanceOf[typings.webix.webixStrings.onAfterLoad]
   @scala.inline
-  def onAfterLoad: typings.webix.webixStrings.onAfterLoad = this.cast("onAfterLoad")
+  def onAfterScroll: typings.webix.webixStrings.onAfterScroll = "onAfterScroll".asInstanceOf[typings.webix.webixStrings.onAfterScroll]
   @scala.inline
-  def onAfterScroll: typings.webix.webixStrings.onAfterScroll = this.cast("onAfterScroll")
+  def onAfterValidation: typings.webix.webixStrings.onAfterValidation = "onAfterValidation".asInstanceOf[typings.webix.webixStrings.onAfterValidation]
   @scala.inline
-  def onAfterValidation: typings.webix.webixStrings.onAfterValidation = this.cast("onAfterValidation")
+  def onBeforeLoad: typings.webix.webixStrings.onBeforeLoad = "onBeforeLoad".asInstanceOf[typings.webix.webixStrings.onBeforeLoad]
   @scala.inline
-  def onBeforeLoad: typings.webix.webixStrings.onBeforeLoad = this.cast("onBeforeLoad")
+  def onBeforeValidate: typings.webix.webixStrings.onBeforeValidate = "onBeforeValidate".asInstanceOf[typings.webix.webixStrings.onBeforeValidate]
   @scala.inline
-  def onBeforeValidate: typings.webix.webixStrings.onBeforeValidate = this.cast("onBeforeValidate")
+  def onBindRequest: typings.webix.webixStrings.onBindRequest = "onBindRequest".asInstanceOf[typings.webix.webixStrings.onBindRequest]
   @scala.inline
-  def onBindRequest: typings.webix.webixStrings.onBindRequest = this.cast("onBindRequest")
+  def onChange: typings.webix.webixStrings.onChange = "onChange".asInstanceOf[typings.webix.webixStrings.onChange]
   @scala.inline
-  def onChange: typings.webix.webixStrings.onChange = this.cast("onChange")
+  def onDestruct: typings.webix.webixStrings.onDestruct = "onDestruct".asInstanceOf[typings.webix.webixStrings.onDestruct]
   @scala.inline
-  def onDestruct: typings.webix.webixStrings.onDestruct = this.cast("onDestruct")
+  def onLoadError: typings.webix.webixStrings.onLoadError = "onLoadError".asInstanceOf[typings.webix.webixStrings.onLoadError]
   @scala.inline
-  def onLoadError: typings.webix.webixStrings.onLoadError = this.cast("onLoadError")
+  def onValidationError: typings.webix.webixStrings.onValidationError = "onValidationError".asInstanceOf[typings.webix.webixStrings.onValidationError]
   @scala.inline
-  def onValidationError: typings.webix.webixStrings.onValidationError = this.cast("onValidationError")
+  def onValidationSuccess: typings.webix.webixStrings.onValidationSuccess = "onValidationSuccess".asInstanceOf[typings.webix.webixStrings.onValidationSuccess]
   @scala.inline
-  def onValidationSuccess: typings.webix.webixStrings.onValidationSuccess = this.cast("onValidationSuccess")
+  def onValues: typings.webix.webixStrings.onValues = "onValues".asInstanceOf[typings.webix.webixStrings.onValues]
   @scala.inline
-  def onValues: typings.webix.webixStrings.onValues = this.cast("onValues")
-  @scala.inline
-  def onViewShow: typings.webix.webixStrings.onViewShow = this.cast("onViewShow")
+  def onViewShow: typings.webix.webixStrings.onViewShow = "onViewShow".asInstanceOf[typings.webix.webixStrings.onViewShow]
 }
 

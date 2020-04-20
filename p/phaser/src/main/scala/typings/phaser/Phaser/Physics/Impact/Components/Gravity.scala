@@ -25,7 +25,6 @@ object Gravity {
   @scala.inline
   def apply(gravity: Double, setGravity: Double => GameObject): Gravity = {
     val __obj = js.Dynamic.literal(gravity = gravity.asInstanceOf[js.Any], setGravity = js.Any.fromFunction1(setGravity))
-  
     __obj.asInstanceOf[Gravity]
   }
 }

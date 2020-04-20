@@ -16,7 +16,6 @@ object SendEmailResponse {
   @scala.inline
   def apply(MessageId: MessageId): SendEmailResponse = {
     val __obj = js.Dynamic.literal(MessageId = MessageId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SendEmailResponse]
   }
 }

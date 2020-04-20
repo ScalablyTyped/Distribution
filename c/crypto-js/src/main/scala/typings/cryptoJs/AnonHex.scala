@@ -13,7 +13,6 @@ object AnonHex {
   @scala.inline
   def apply(Hex: js.Any, OpenSSL: js.Any): AnonHex = {
     val __obj = js.Dynamic.literal(Hex = Hex.asInstanceOf[js.Any], OpenSSL = OpenSSL.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHex]
   }
 }

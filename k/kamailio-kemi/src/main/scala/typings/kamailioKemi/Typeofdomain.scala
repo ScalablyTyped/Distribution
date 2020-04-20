@@ -22,7 +22,6 @@ object Typeofdomain {
     lookup_domain_prefix: (String, String) => Double
   ): Typeofdomain = {
     val __obj = js.Dynamic.literal(is_domain_local = js.Any.fromFunction1(is_domain_local), is_from_local = js.Any.fromFunction0(is_from_local), is_uri_host_local = js.Any.fromFunction0(is_uri_host_local), lookup_domain = js.Any.fromFunction1(lookup_domain), lookup_domain_prefix = js.Any.fromFunction2(lookup_domain_prefix))
-  
     __obj.asInstanceOf[Typeofdomain]
   }
 }

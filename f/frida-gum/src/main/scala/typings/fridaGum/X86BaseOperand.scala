@@ -12,7 +12,6 @@ object X86BaseOperand {
   @scala.inline
   def apply(size: Double): X86BaseOperand = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[X86BaseOperand]
   }
 }

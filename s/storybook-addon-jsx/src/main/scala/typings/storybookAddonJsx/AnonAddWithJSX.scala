@@ -18,7 +18,6 @@ object AnonAddWithJSX {
     addWithJSX: (/* kind */ String, /* fn */ js.Function0[ReactNode], /* options */ js.UndefOr[AddonParameters]) => StoryApi[StoryFnReturnType]
   ): AnonAddWithJSX[StoryFnReturnType] = {
     val __obj = js.Dynamic.literal(addWithJSX = js.Any.fromFunction3(addWithJSX))
-  
     __obj.asInstanceOf[AnonAddWithJSX[StoryFnReturnType]]
   }
 }

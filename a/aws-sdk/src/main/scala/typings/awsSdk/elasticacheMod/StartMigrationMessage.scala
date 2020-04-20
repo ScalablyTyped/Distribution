@@ -20,7 +20,6 @@ object StartMigrationMessage {
   @scala.inline
   def apply(CustomerNodeEndpointList: CustomerNodeEndpointList, ReplicationGroupId: String): StartMigrationMessage = {
     val __obj = js.Dynamic.literal(CustomerNodeEndpointList = CustomerNodeEndpointList.asInstanceOf[js.Any], ReplicationGroupId = ReplicationGroupId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StartMigrationMessage]
   }
 }

@@ -13,7 +13,6 @@ object AnonRoughnessMap {
   @scala.inline
   def apply(roughnessMap: IUniform): AnonRoughnessMap = {
     val __obj = js.Dynamic.literal(roughnessMap = roughnessMap.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRoughnessMap]
   }
 }

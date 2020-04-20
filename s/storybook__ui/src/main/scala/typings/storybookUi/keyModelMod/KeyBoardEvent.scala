@@ -27,7 +27,6 @@ object KeyBoardEvent {
     shiftKey: Boolean
   ): KeyBoardEvent = {
     val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], keyCodeKey = keyCodeKey.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KeyBoardEvent]
   }
 }

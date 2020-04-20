@@ -36,6 +36,6 @@ class Serializer () extends default {
     * The `serialize` method is used when a record is saved in order to convert
     * the record into the form that your external data source expects.
     */
-  def serialize[K /* <: String */](snapshot: Snapshot[K], options: js.Object): js.Object = js.native
+  def serialize[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](snapshot: Snapshot[K], options: js.Object): js.Object = js.native
 }
 

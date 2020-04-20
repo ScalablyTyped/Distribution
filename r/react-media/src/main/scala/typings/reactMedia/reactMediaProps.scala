@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactMediaProps {
   @scala.inline
-  def ReactMediaProps: SingleQueryProps.type = typings.reactMedia.mod.SingleQueryProps
+  def ReactMediaProps: SingleQueryProps.type = SingleQueryProps
   type ReactMediaProps = SingleQueryProps
 }
 

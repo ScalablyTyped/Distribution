@@ -24,13 +24,13 @@ class ConfirmationInfo protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FConfirmationInfo: IModel = js.native
-  def cancelButtonCaption(): Text = js.native
+  def cancelButtonCaption: Text = js.native
   def cancelButtonCaption(newValue: Text): js.Any = js.native
-  def containerAsCallNanoflowClientAction(): CallNanoflowClientAction = js.native
-  def containerAsMicroflowSettings(): MicroflowSettings = js.native
-  def proceedButtonCaption(): Text = js.native
+  def containerAsCallNanoflowClientAction: CallNanoflowClientAction = js.native
+  def containerAsMicroflowSettings: MicroflowSettings = js.native
+  def proceedButtonCaption: Text = js.native
   def proceedButtonCaption(newValue: Text): js.Any = js.native
-  def question(): Text = js.native
+  def question: Text = js.native
   def question(newValue: Text): js.Any = js.native
 }
 

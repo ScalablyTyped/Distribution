@@ -28,7 +28,6 @@ object UserFeedResponseCarouselMediaItem {
     pk: String
   ): UserFeedResponseCarouselMediaItem = {
     val __obj = js.Dynamic.literal(carousel_parent_id = carousel_parent_id.asInstanceOf[js.Any], fb_user_tags = fb_user_tags.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], image_versions2 = image_versions2.asInstanceOf[js.Any], media_type = media_type.asInstanceOf[js.Any], original_height = original_height.asInstanceOf[js.Any], original_width = original_width.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UserFeedResponseCarouselMediaItem]
   }
 }

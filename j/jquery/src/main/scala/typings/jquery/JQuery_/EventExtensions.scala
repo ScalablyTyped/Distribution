@@ -20,7 +20,6 @@ object EventExtensions {
   @scala.inline
   def apply(special: SpecialEventHooks): EventExtensions = {
     val __obj = js.Dynamic.literal(special = special.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventExtensions]
   }
 }

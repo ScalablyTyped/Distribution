@@ -16,7 +16,6 @@ object CreateCompilationJobResponse {
   @scala.inline
   def apply(CompilationJobArn: CompilationJobArn): CreateCompilationJobResponse = {
     val __obj = js.Dynamic.literal(CompilationJobArn = CompilationJobArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateCompilationJobResponse]
   }
 }

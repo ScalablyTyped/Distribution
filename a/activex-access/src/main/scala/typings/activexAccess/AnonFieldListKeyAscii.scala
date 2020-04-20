@@ -13,7 +13,6 @@ object AnonFieldListKeyAscii {
   @scala.inline
   def apply(FieldList: Double, KeyAscii: Double): AnonFieldListKeyAscii = {
     val __obj = js.Dynamic.literal(FieldList = FieldList.asInstanceOf[js.Any], KeyAscii = KeyAscii.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFieldListKeyAscii]
   }
 }

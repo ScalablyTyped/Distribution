@@ -71,7 +71,7 @@ class Terminal () extends IDisposable {
     * normal buffer or the alt buffer depending on what's running in the
     * terminal.
     */
-  val buffer: IBuffer = js.native
+  val buffer: IBufferNamespace = js.native
   /**
     * The number of columns in the terminal's viewport. Use
     * `ITerminalOptions.cols` to set this in the constructor and
@@ -216,6 +216,8 @@ class Terminal () extends IDisposable {
   def deregisterCharacterJoiner(joinerId: Double): Unit = js.native
   /**
     * (EXPERIMENTAL) Deregisters a link matcher if it has been registered.
+    * @deprecated The link matcher API is now deprecated in favor of the link
+    * provider API, see `registerLinkProvider`.
     * @param matcherId The link matcher's ID (returned after register)
     */
   def deregisterLinkMatcher(matcherId: Double): Unit = js.native
@@ -398,6 +400,8 @@ class Terminal () extends IDisposable {
   /**
     * (EXPERIMENTAL) Registers a link matcher, allowing custom link patterns to
     * be matched and handled.
+    * @deprecated The link matcher API is now deprecated in favor of the link
+    * provider API, see `registerLinkProvider`.
     * @param regex The regular expression to search for, specifically this
     * searches the textContent of the rows. You will want to use \s to match a
     * space ' ' character for example.
@@ -411,6 +415,13 @@ class Terminal () extends IDisposable {
     handler: js.Function2[/* event */ MouseEvent, /* uri */ String, Unit],
     options: ILinkMatcherOptions
   ): Double = js.native
+  /**
+    * (EXPERIMENTAL) Registers a link provider, allowing a custom parser to
+    * be used to match and handle links. Multiple link providers can be used,
+    * they will be asked in the order in which they are registered.
+    * @param linkProvider The link provider to use to detect links.
+    */
+  def registerLinkProvider(linkProvider: ILinkProvider): IDisposable = js.native
   /**
     * (EXPERIMENTAL) Adds a marker to the normal buffer and returns it. If the
     * alt buffer is active, undefined is returned.

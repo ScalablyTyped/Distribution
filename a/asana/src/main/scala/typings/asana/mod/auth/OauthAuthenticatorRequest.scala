@@ -17,7 +17,6 @@ object OauthAuthenticatorRequest {
   @scala.inline
   def apply(headers: AnonAuthorization): OauthAuthenticatorRequest = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OauthAuthenticatorRequest]
   }
 }

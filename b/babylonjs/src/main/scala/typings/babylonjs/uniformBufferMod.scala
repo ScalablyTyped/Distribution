@@ -175,7 +175,7 @@ object uniformBufferMod extends js.Object {
       * Indicates if the WebGL underlying uniform buffer is in sync
       * with the javascript cache data.
       */
-    def isSync(): Boolean = js.native
+    def isSync: Boolean = js.native
     /**
       * Sets a sampler uniform on the effect.
       * @param name Define the name of the sampler.
@@ -276,7 +276,7 @@ object uniformBufferMod extends js.Object {
       * Indicates if the buffer is using the WebGL2 UBO implementation,
       * or just falling back on setUniformXXX calls.
       */
-    def useUbo(): Boolean = js.native
+    def useUbo: Boolean = js.native
   }
   
   /* static members */

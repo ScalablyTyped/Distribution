@@ -12,7 +12,6 @@ object CancelTaskParams {
   @scala.inline
   def apply(taskId: String): CancelTaskParams = {
     val __obj = js.Dynamic.literal(taskId = taskId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CancelTaskParams]
   }
 }

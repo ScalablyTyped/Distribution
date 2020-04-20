@@ -16,7 +16,6 @@ object GetDomainClusterConfigZoneAwarenessConfig {
   @scala.inline
   def apply(availabilityZoneCount: Double): GetDomainClusterConfigZoneAwarenessConfig = {
     val __obj = js.Dynamic.literal(availabilityZoneCount = availabilityZoneCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDomainClusterConfigZoneAwarenessConfig]
   }
 }

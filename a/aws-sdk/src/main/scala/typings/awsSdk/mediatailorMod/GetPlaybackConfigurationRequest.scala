@@ -16,7 +16,6 @@ object GetPlaybackConfigurationRequest {
   @scala.inline
   def apply(Name: string): GetPlaybackConfigurationRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetPlaybackConfigurationRequest]
   }
 }

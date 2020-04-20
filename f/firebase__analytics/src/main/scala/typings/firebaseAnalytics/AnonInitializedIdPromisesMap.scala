@@ -13,7 +13,6 @@ object AnonInitializedIdPromisesMap {
   @scala.inline
   def apply(initializedIdPromisesMap: StringDictionary[js.Promise[Unit]]): AnonInitializedIdPromisesMap = {
     val __obj = js.Dynamic.literal(initializedIdPromisesMap = initializedIdPromisesMap.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonInitializedIdPromisesMap]
   }
 }

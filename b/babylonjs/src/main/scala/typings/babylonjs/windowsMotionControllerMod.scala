@@ -62,27 +62,27 @@ object windowsMotionControllerMod extends js.Object {
     /**
       * Fired when the grip button on this controller is modified
       */
-    def onGripButtonStateChangedObservable(): Observable[ExtendedGamepadButton] = js.native
+    def onGripButtonStateChangedObservable: Observable[ExtendedGamepadButton] = js.native
     /**
       * Fired when the menu button on this controller is modified
       */
-    def onMenuButtonStateChangedObservable(): Observable[ExtendedGamepadButton] = js.native
+    def onMenuButtonStateChangedObservable: Observable[ExtendedGamepadButton] = js.native
     /**
       * Fired when the thumbstick button on this controller is modified
       */
-    def onThumbstickButtonStateChangedObservable(): Observable[ExtendedGamepadButton] = js.native
+    def onThumbstickButtonStateChangedObservable: Observable[ExtendedGamepadButton] = js.native
     /**
       * Fired when the touchpad button on this controller is modified
       */
-    def onTouchpadButtonStateChangedObservable(): Observable[ExtendedGamepadButton] = js.native
+    def onTouchpadButtonStateChangedObservable: Observable[ExtendedGamepadButton] = js.native
     /**
       * Fired when the touchpad values on this controller are modified
       */
-    def onTouchpadValuesChangedObservable(): Observable[StickValues] = js.native
+    def onTouchpadValuesChangedObservable: Observable[StickValues] = js.native
     /**
       * Fired when the trigger on this controller is modified
       */
-    def onTriggerButtonStateChangedObservable(): Observable[ExtendedGamepadButton] = js.native
+    def onTriggerButtonStateChangedObservable: Observable[ExtendedGamepadButton] = js.native
   }
   
   @js.native

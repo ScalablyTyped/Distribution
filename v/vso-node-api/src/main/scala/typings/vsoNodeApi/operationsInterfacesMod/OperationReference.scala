@@ -23,7 +23,6 @@ object OperationReference {
   @scala.inline
   def apply(id: String, status: OperationStatus, url: String): OperationReference = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OperationReference]
   }
 }

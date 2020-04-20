@@ -43,7 +43,7 @@ object localByNameReferencePropertyMod extends js.Object {
     def localName(): String | Null = js.native
     def set(): Unit = js.native
     def set(newValue: T): Unit = js.native
-    def targetType(): String = js.native
+    def targetType: String = js.native
     def updateWithRawValue(value: String): Unit = js.native
   }
   

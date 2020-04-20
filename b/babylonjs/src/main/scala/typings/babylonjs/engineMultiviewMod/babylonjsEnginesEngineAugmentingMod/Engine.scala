@@ -27,7 +27,6 @@ object Engine {
     createMultiviewRenderTargetTexture: (Double, Double) => InternalTexture
   ): Engine = {
     val __obj = js.Dynamic.literal(bindMultiviewFramebuffer = js.Any.fromFunction1(bindMultiviewFramebuffer), createMultiviewRenderTargetTexture = js.Any.fromFunction2(createMultiviewRenderTargetTexture))
-  
     __obj.asInstanceOf[Engine]
   }
 }

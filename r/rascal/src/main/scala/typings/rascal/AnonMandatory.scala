@@ -13,7 +13,6 @@ object AnonMandatory {
   @scala.inline
   def apply(mandatory: Boolean, persistent: Boolean): AnonMandatory = {
     val __obj = js.Dynamic.literal(mandatory = mandatory.asInstanceOf[js.Any], persistent = persistent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMandatory]
   }
 }

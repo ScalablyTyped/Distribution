@@ -18,14 +18,12 @@ trait WdChevronConvertRule extends js.Object
 
 object WdChevronConvertRule {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdAlwaysConvert: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdAlwaysConvert: `1` = this.cast(1)
+  def wdAskToConvert: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdAskToConvert: `3` = this.cast(3)
+  def wdAskToNotConvert: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdAskToNotConvert: `2` = this.cast(2)
-  @scala.inline
-  def wdNeverConvert: `0` = this.cast(0)
+  def wdNeverConvert: `0` = 0.asInstanceOf[`0`]
 }
 

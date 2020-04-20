@@ -27,7 +27,6 @@ object Footer {
     toJSON: () => AnonText
   ): Footer = {
     val __obj = js.Dynamic.literal(getEnable = js.Any.fromFunction0(getEnable), getHtml = js.Any.fromFunction0(getHtml), getText = js.Any.fromFunction0(getText), setEnable = js.Any.fromFunction1(setEnable), setHtml = js.Any.fromFunction1(setHtml), setText = js.Any.fromFunction1(setText), toJSON = js.Any.fromFunction0(toJSON))
-  
     __obj.asInstanceOf[Footer]
   }
 }

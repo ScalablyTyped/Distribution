@@ -18,16 +18,14 @@ trait `type` extends js.Object
 
 object `type` {
   @scala.inline
-  def BEGIN: `0` = this.cast(0)
+  def BEGIN: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def BEGIN_END: `3` = this.cast(3)
+  def BEGIN_END: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def END: `2` = this.cast(2)
+  def END: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def MID: `1` = this.cast(1)
+  def MID: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def NONE: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def NONE: `1` = 1.asInstanceOf[`1`]
 }
 

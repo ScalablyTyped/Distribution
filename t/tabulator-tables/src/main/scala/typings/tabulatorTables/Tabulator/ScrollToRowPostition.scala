@@ -14,14 +14,12 @@ trait ScrollToRowPostition extends js.Object
 
 object ScrollToRowPostition {
   @scala.inline
-  def bottom: typings.tabulatorTables.tabulatorTablesStrings.bottom = this.cast("bottom")
+  def bottom: typings.tabulatorTables.tabulatorTablesStrings.bottom = "bottom".asInstanceOf[typings.tabulatorTables.tabulatorTablesStrings.bottom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.tabulatorTables.tabulatorTablesStrings.center = "center".asInstanceOf[typings.tabulatorTables.tabulatorTablesStrings.center]
   @scala.inline
-  def center: typings.tabulatorTables.tabulatorTablesStrings.center = this.cast("center")
+  def nearest: typings.tabulatorTables.tabulatorTablesStrings.nearest = "nearest".asInstanceOf[typings.tabulatorTables.tabulatorTablesStrings.nearest]
   @scala.inline
-  def nearest: typings.tabulatorTables.tabulatorTablesStrings.nearest = this.cast("nearest")
-  @scala.inline
-  def top: typings.tabulatorTables.tabulatorTablesStrings.top = this.cast("top")
+  def top: typings.tabulatorTables.tabulatorTablesStrings.top = "top".asInstanceOf[typings.tabulatorTables.tabulatorTablesStrings.top]
 }
 

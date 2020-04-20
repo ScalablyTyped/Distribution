@@ -23,7 +23,6 @@ object LimiterInfo {
   @scala.inline
   def apply(remaining: Double, reset: Double, total: Double): LimiterInfo = {
     val __obj = js.Dynamic.literal(remaining = remaining.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LimiterInfo]
   }
 }

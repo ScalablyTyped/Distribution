@@ -13,7 +13,6 @@ object UploadFileSuccess {
   @scala.inline
   def apply(fileID: String, statusCode: Double): UploadFileSuccess = {
     val __obj = js.Dynamic.literal(fileID = fileID.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UploadFileSuccess]
   }
 }

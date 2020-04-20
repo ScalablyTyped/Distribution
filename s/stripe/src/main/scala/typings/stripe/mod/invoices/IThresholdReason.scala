@@ -19,7 +19,6 @@ object IThresholdReason {
   @scala.inline
   def apply(amount_gte: Double, item_reasons: js.Array[IItemReason]): IThresholdReason = {
     val __obj = js.Dynamic.literal(amount_gte = amount_gte.asInstanceOf[js.Any], item_reasons = item_reasons.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IThresholdReason]
   }
 }

@@ -22,7 +22,6 @@ object ReactionsCreateForIssueResponse {
     user: ReactionsCreateForIssueResponseUser
   ): ReactionsCreateForIssueResponse = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReactionsCreateForIssueResponse]
   }
 }

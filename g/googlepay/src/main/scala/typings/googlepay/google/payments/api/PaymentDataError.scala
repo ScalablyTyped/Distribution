@@ -35,7 +35,6 @@ object PaymentDataError {
   @scala.inline
   def apply(intent: CallbackIntent, message: String, reason: ErrorReason): PaymentDataError = {
     val __obj = js.Dynamic.literal(intent = intent.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PaymentDataError]
   }
 }

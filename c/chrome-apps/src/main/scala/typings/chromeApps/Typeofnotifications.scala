@@ -98,9 +98,9 @@ trait Typeofnotifications extends js.Object {
     callback: js.Function1[
       /* level */ ToStringLiteral[
         /* import warning: importer.ImportType#apply Failed type conversion: typeof PermissionLevel */ js.Any, 
-        String, 
+        /* keyof typeof PermissionLevel */ String, 
         Exclude[
-          String, 
+          /* keyof typeof PermissionLevel */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: typeof PermissionLevel[keyof typeof PermissionLevel] */ js.Any
         ]
       ], 

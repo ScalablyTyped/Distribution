@@ -25,7 +25,6 @@ object EventDestinationCloudwatchDestination {
   @scala.inline
   def apply(defaultValue: Input[String], dimensionName: Input[String], valueSource: Input[String]): EventDestinationCloudwatchDestination = {
     val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any], dimensionName = dimensionName.asInstanceOf[js.Any], valueSource = valueSource.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventDestinationCloudwatchDestination]
   }
 }

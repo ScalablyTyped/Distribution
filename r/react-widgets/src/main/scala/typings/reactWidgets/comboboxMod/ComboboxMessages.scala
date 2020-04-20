@@ -27,7 +27,6 @@ object ComboboxMessages {
     open: String | (js.Function1[/* props */ ComboboxProps, String])
   ): ComboboxMessages = {
     val __obj = js.Dynamic.literal(emptyFilter = emptyFilter.asInstanceOf[js.Any], emptyList = emptyList.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ComboboxMessages]
   }
 }

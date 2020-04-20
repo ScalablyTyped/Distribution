@@ -25,7 +25,6 @@ object AxeAnalysis {
     violations: js.Array[Result]
   ): AxeAnalysis = {
     val __obj = js.Dynamic.literal(inapplicable = inapplicable.asInstanceOf[js.Any], incomplete = incomplete.asInstanceOf[js.Any], passes = passes.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], violations = violations.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AxeAnalysis]
   }
 }

@@ -8,6 +8,7 @@ import typings.authmosphere.oauthconfigMod.OAuthConfig
 import typings.express.mod.Request_
 import typings.express.mod.Response_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,7 +50,7 @@ object utilsMod extends js.Object {
     * @param field The name of the field to return
     * @returns {string} The value of the header field
     */
-  def getHeaderValue(req: Request_[ParamsDictionary], fieldName: String): js.UndefOr[String] = js.native
+  def getHeaderValue(req: Request_[ParamsDictionary, _, _, Query], fieldName: String): js.UndefOr[String] = js.native
   def isAuthorizationCodeGrantConfig(config: OAuthConfig): /* is authmosphere.authmosphere/lib/src/types/OAuthConfig.AuthorizationCodeGrantConfig */ Boolean = js.native
   def isCredentialsClientConfig(options: js.Any): /* is authmosphere.authmosphere/lib/src/types/OAuthConfig.CredentialsClientConfig */ Boolean = js.native
   def isCredentialsDirConfig(options: js.Any): /* is authmosphere.authmosphere/lib/src/types/OAuthConfig.CredentialsDirConfig */ Boolean = js.native
@@ -64,7 +65,7 @@ object utilsMod extends js.Object {
     * @param req
     * @returns {function(any): undefined}
     */
-  def setTokeninfo(req: Request_[ParamsDictionary]): js.Function1[/* data */ AnonAccesstoken, Unit] = js.native
+  def setTokeninfo(req: Request_[ParamsDictionary, _, _, Query]): js.Function1[/* data */ AnonAccesstoken, Unit] = js.native
   /**
     * Validates options object and throws TypeError if mandatory options is not specified.
     *

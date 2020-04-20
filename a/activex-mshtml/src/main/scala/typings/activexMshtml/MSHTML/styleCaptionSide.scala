@@ -22,18 +22,16 @@ trait styleCaptionSide extends js.Object
 
 object styleCaptionSide {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleCaptionSideBottom: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleCaptionSideBottom: `2` = this.cast(2)
+  def styleCaptionSideLeft: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def styleCaptionSideLeft: `3` = this.cast(3)
+  def styleCaptionSideNotSet: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleCaptionSideNotSet: `0` = this.cast(0)
+  def styleCaptionSideRight: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def styleCaptionSideRight: `4` = this.cast(4)
+  def styleCaptionSideTop: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleCaptionSideTop: `1` = this.cast(1)
-  @scala.inline
-  def styleCaptionSide_Max: `2147483647` = this.cast(2147483647)
+  def styleCaptionSide_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

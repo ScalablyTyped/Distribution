@@ -14,7 +14,6 @@ object AnonHTML {
   @scala.inline
   def apply(Date: String, HTML: Double, Text: Double): AnonHTML = {
     val __obj = js.Dynamic.literal(Date = Date.asInstanceOf[js.Any], HTML = HTML.asInstanceOf[js.Any], Text = Text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHTML]
   }
 }

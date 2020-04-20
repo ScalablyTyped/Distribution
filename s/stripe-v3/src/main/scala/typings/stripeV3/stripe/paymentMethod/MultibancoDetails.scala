@@ -13,7 +13,6 @@ object MultibancoDetails {
   @scala.inline
   def apply(entity: String, reference: String): MultibancoDetails = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], reference = reference.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MultibancoDetails]
   }
 }

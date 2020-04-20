@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetComponentResponse extends js.Object {
   /**
-    *  The component object associated with the specified ARN. 
+    * The component object associated with the specified ARN. 
     */
   var component: js.UndefOr[Component] = js.native
   /**
-    *  The request ID that uniquely identifies this request. 
+    * The request ID that uniquely identifies this request. 
     */
   var requestId: js.UndefOr[NonEmptyString] = js.native
 }

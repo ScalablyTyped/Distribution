@@ -32,7 +32,6 @@ object RegionInstanceGroupsResource {
     setNamedPorts: AnonRequestIdUserIp => Request_[Operation]
   ): RegionInstanceGroupsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), listInstances = js.Any.fromFunction1(listInstances), setNamedPorts = js.Any.fromFunction1(setNamedPorts))
-  
     __obj.asInstanceOf[RegionInstanceGroupsResource]
   }
 }

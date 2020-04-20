@@ -12,7 +12,6 @@ object Context {
   @scala.inline
   def apply(csrf: String): Context = {
     val __obj = js.Dynamic.literal(csrf = csrf.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Context]
   }
 }

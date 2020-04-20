@@ -14,7 +14,6 @@ object PickImplclassName {
   @scala.inline
   def apply(className: ClassNameSettings): PickImplclassName = {
     val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplclassName]
   }
 }

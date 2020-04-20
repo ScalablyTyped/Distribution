@@ -16,7 +16,6 @@ object GetBatchPredictionInput {
   @scala.inline
   def apply(BatchPredictionId: EntityId): GetBatchPredictionInput = {
     val __obj = js.Dynamic.literal(BatchPredictionId = BatchPredictionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBatchPredictionInput]
   }
 }

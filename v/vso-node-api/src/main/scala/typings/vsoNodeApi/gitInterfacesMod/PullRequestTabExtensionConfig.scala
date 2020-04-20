@@ -13,7 +13,6 @@ object PullRequestTabExtensionConfig {
   @scala.inline
   def apply(pullRequestId: Double, repositoryId: String): PullRequestTabExtensionConfig = {
     val __obj = js.Dynamic.literal(pullRequestId = pullRequestId.asInstanceOf[js.Any], repositoryId = repositoryId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PullRequestTabExtensionConfig]
   }
 }

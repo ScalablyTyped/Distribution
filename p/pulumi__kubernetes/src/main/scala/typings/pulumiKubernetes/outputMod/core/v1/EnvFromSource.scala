@@ -26,7 +26,6 @@ object EnvFromSource {
   @scala.inline
   def apply(configMapRef: ConfigMapEnvSource, prefix: String, secretRef: SecretEnvSource): EnvFromSource = {
     val __obj = js.Dynamic.literal(configMapRef = configMapRef.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], secretRef = secretRef.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EnvFromSource]
   }
 }

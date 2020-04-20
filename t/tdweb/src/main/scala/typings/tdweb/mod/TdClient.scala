@@ -40,7 +40,6 @@ object TdClient {
   @scala.inline
   def apply(send: TdObject => js.Promise[TdError | TdObject]): TdClient = {
     val __obj = js.Dynamic.literal(send = js.Any.fromFunction1(send))
-  
     __obj.asInstanceOf[TdClient]
   }
 }

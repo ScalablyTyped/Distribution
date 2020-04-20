@@ -15,16 +15,14 @@ trait StateOptions extends js.Object
 
 object StateOptions {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def closed: typings.jqueryPnotify.jqueryPnotifyStrings.closed = "closed".asInstanceOf[typings.jqueryPnotify.jqueryPnotifyStrings.closed]
   @scala.inline
-  def closed: typings.jqueryPnotify.jqueryPnotifyStrings.closed = this.cast("closed")
+  def closing: typings.jqueryPnotify.jqueryPnotifyStrings.closing = "closing".asInstanceOf[typings.jqueryPnotify.jqueryPnotifyStrings.closing]
   @scala.inline
-  def closing: typings.jqueryPnotify.jqueryPnotifyStrings.closing = this.cast("closing")
+  def initializing: typings.jqueryPnotify.jqueryPnotifyStrings.initializing = "initializing".asInstanceOf[typings.jqueryPnotify.jqueryPnotifyStrings.initializing]
   @scala.inline
-  def initializing: typings.jqueryPnotify.jqueryPnotifyStrings.initializing = this.cast("initializing")
+  def open: typings.jqueryPnotify.jqueryPnotifyStrings.open = "open".asInstanceOf[typings.jqueryPnotify.jqueryPnotifyStrings.open]
   @scala.inline
-  def open: typings.jqueryPnotify.jqueryPnotifyStrings.open = this.cast("open")
-  @scala.inline
-  def opening: typings.jqueryPnotify.jqueryPnotifyStrings.opening = this.cast("opening")
+  def opening: typings.jqueryPnotify.jqueryPnotifyStrings.opening = "opening".asInstanceOf[typings.jqueryPnotify.jqueryPnotifyStrings.opening]
 }
 

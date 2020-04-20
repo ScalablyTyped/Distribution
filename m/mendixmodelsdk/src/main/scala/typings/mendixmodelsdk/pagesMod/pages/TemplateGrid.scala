@@ -29,11 +29,11 @@ class TemplateGrid protected () extends Grid {
   ) = this()
   @JSName("model")
   var model_FTemplateGrid: IModel = js.native
-  def contents(): TemplateGridContents = js.native
+  def contents: TemplateGridContents = js.native
   def contents(newValue: TemplateGridContents): js.Any = js.native
-  def numberOfColumns(): Double = js.native
+  def numberOfColumns: Double = js.native
   def numberOfColumns(newValue: Double): js.Any = js.native
-  def numberOfRows(): Double = js.native
+  def numberOfRows: Double = js.native
   def numberOfRows(newValue: Double): js.Any = js.native
 }
 

@@ -20,7 +20,6 @@ object PutNotificationChannelRequest {
   @scala.inline
   def apply(SnsRoleName: ResourceArn, SnsTopicArn: ResourceArn): PutNotificationChannelRequest = {
     val __obj = js.Dynamic.literal(SnsRoleName = SnsRoleName.asInstanceOf[js.Any], SnsTopicArn = SnsTopicArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutNotificationChannelRequest]
   }
 }

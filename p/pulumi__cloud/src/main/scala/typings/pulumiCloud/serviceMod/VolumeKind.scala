@@ -12,10 +12,8 @@ trait VolumeKind extends js.Object
 
 object VolumeKind {
   @scala.inline
-  def HostPathVolume: typings.pulumiCloud.pulumiCloudStrings.HostPathVolume = this.cast("HostPathVolume")
+  def HostPathVolume: typings.pulumiCloud.pulumiCloudStrings.HostPathVolume = "HostPathVolume".asInstanceOf[typings.pulumiCloud.pulumiCloudStrings.HostPathVolume]
   @scala.inline
-  def SharedVolume: typings.pulumiCloud.pulumiCloudStrings.SharedVolume = this.cast("SharedVolume")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SharedVolume: typings.pulumiCloud.pulumiCloudStrings.SharedVolume = "SharedVolume".asInstanceOf[typings.pulumiCloud.pulumiCloudStrings.SharedVolume]
 }
 

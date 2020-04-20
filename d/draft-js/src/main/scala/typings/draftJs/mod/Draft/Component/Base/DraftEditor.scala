@@ -13,9 +13,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DraftEditor
   extends Component[DraftEditorProps, js.Object, js.Any] {
-  // Remove focus from the editor node.
+  /** Remove focus from the editor node. */
   def blur(): Unit = js.native
-  // Force focus back onto the editor node.
+  /** Force focus back onto the editor node. */
   def focus(): Unit = js.native
 }
 

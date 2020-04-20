@@ -14,7 +14,6 @@ object KV {
   @scala.inline
   def apply[T](key: InternalNamePath, value: T): KV[T] = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KV[T]]
   }
 }

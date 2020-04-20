@@ -12,7 +12,6 @@ object DocumentStore {
   @scala.inline
   def apply(collection: String => Collection): DocumentStore = {
     val __obj = js.Dynamic.literal(collection = js.Any.fromFunction1(collection))
-  
     __obj.asInstanceOf[DocumentStore]
   }
 }

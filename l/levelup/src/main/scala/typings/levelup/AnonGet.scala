@@ -23,7 +23,6 @@ object AnonGet {
     ]) => Unit
   ): AnonGet = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction3(get))
-  
     __obj.asInstanceOf[AnonGet]
   }
 }

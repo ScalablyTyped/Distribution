@@ -46,7 +46,6 @@ object GetVpcLinkResult {
     targetArns: js.Array[String]
   ): GetVpcLinkResult = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusMessage = statusMessage.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], targetArns = targetArns.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetVpcLinkResult]
   }
 }

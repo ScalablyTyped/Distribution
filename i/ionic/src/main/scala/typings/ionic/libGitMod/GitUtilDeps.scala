@@ -13,7 +13,6 @@ object GitUtilDeps {
   @scala.inline
   def apply(shell: IShell): GitUtilDeps = {
     val __obj = js.Dynamic.literal(shell = shell.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GitUtilDeps]
   }
 }

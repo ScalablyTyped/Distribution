@@ -24,7 +24,6 @@ object CreateCampaignRequest {
   @scala.inline
   def apply(minProvisionedTPS: TransactionsPerSecond, name: Name, solutionVersionArn: Arn): CreateCampaignRequest = {
     val __obj = js.Dynamic.literal(minProvisionedTPS = minProvisionedTPS.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], solutionVersionArn = solutionVersionArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateCampaignRequest]
   }
 }

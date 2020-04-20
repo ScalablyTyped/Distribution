@@ -16,18 +16,16 @@ trait ResizeOption extends js.Object
 
 object ResizeOption {
   @scala.inline
-  def `@`: typings.gm.gmStrings.`@` = this.cast("@")
+  def `@`: typings.gm.gmStrings.`@` = "@".asInstanceOf[typings.gm.gmStrings.`@`]
   @scala.inline
-  def Exclamationmark: typings.gm.gmStrings.Exclamationmark = this.cast("!")
+  def Exclamationmark: typings.gm.gmStrings.Exclamationmark = "!".asInstanceOf[typings.gm.gmStrings.Exclamationmark]
   @scala.inline
-  def Greaterthansign: typings.gm.gmStrings.Greaterthansign = this.cast(">")
+  def Greaterthansign: typings.gm.gmStrings.Greaterthansign = ">".asInstanceOf[typings.gm.gmStrings.Greaterthansign]
   @scala.inline
-  def Lessthansign: typings.gm.gmStrings.Lessthansign = this.cast("<")
+  def Lessthansign: typings.gm.gmStrings.Lessthansign = "<".asInstanceOf[typings.gm.gmStrings.Lessthansign]
   @scala.inline
-  def Percentsign: typings.gm.gmStrings.Percentsign = this.cast("%")
+  def Percentsign: typings.gm.gmStrings.Percentsign = "%".asInstanceOf[typings.gm.gmStrings.Percentsign]
   @scala.inline
-  def ^ : typings.gm.gmStrings.^ = this.cast("^")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ^ : typings.gm.gmStrings.^ = "^".asInstanceOf[typings.gm.gmStrings.^]
 }
 

@@ -19,7 +19,6 @@ object AsObject {
     modulesList: js.Array[Uint8Array | String]
   ): AsObject = {
     val __obj = js.Dynamic.literal(argumentsList = argumentsList.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], modulesList = modulesList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AsObject]
   }
 }

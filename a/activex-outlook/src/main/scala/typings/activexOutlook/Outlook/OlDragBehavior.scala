@@ -14,10 +14,8 @@ trait OlDragBehavior extends js.Object
 
 object OlDragBehavior {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olDragBehaviorDisabled: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def olDragBehaviorDisabled: `0` = this.cast(0)
-  @scala.inline
-  def olDragBehaviorEnabled: `1` = this.cast(1)
+  def olDragBehaviorEnabled: `1` = 1.asInstanceOf[`1`]
 }
 

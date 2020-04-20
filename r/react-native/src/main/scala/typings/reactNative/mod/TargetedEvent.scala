@@ -12,7 +12,6 @@ object TargetedEvent {
   @scala.inline
   def apply(target: Double): TargetedEvent = {
     val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TargetedEvent]
   }
 }

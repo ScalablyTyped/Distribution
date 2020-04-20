@@ -17,7 +17,6 @@ object Auth0DelegationToken {
   @scala.inline
   def apply(expiresIn: Double, idToken: String, tokenType: String): Auth0DelegationToken = {
     val __obj = js.Dynamic.literal(expiresIn = expiresIn.asInstanceOf[js.Any], idToken = idToken.asInstanceOf[js.Any], tokenType = tokenType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Auth0DelegationToken]
   }
 }

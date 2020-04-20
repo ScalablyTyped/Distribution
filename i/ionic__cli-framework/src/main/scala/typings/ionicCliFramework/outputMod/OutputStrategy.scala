@@ -15,7 +15,6 @@ object OutputStrategy {
   @scala.inline
   def apply(createTaskChain: () => TaskChain, stream: WritableStream): OutputStrategy = {
     val __obj = js.Dynamic.literal(createTaskChain = js.Any.fromFunction0(createTaskChain), stream = stream.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OutputStrategy]
   }
 }

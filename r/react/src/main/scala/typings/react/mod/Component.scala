@@ -46,20 +46,20 @@ class Component[P, S, SS] protected () extends ComponentLifecycle[P, S, SS] {
   def forceUpdate(): Unit = js.native
   def forceUpdate(callback: js.Function0[Unit]): Unit = js.native
   def render(): ReactNode = js.native
-  def setState[K /* <: String */](): Unit = js.native
-  def setState[K /* <: String */](state: S): Unit = js.native
-  def setState[K /* <: String */](state: S, callback: js.Function0[Unit]): Unit = js.native
+  def setState[K /* <: /* keyof S */ String */](): Unit = js.native
+  def setState[K /* <: /* keyof S */ String */](state: S): Unit = js.native
+  def setState[K /* <: /* keyof S */ String */](state: S, callback: js.Function0[Unit]): Unit = js.native
   // We MUST keep setState() as a unified signature because it allows proper checking of the method return type.
   // See: https://github.com/DefinitelyTyped/DefinitelyTyped/issues/18365#issuecomment-351013257
   // Also, the ` | S` allows intellisense to not be dumbisense
-  def setState[K /* <: String */](state: js.Function2[/* prevState */ S, /* props */ P, (Pick[S, K]) | S | Null]): Unit = js.native
-  def setState[K /* <: String */](
+  def setState[K /* <: /* keyof S */ String */](state: js.Function2[/* prevState */ S, /* props */ P, (Pick[S, K]) | S | Null]): Unit = js.native
+  def setState[K /* <: /* keyof S */ String */](
     state: js.Function2[/* prevState */ S, /* props */ P, (Pick[S, K]) | S | Null],
     callback: js.Function0[Unit]
   ): Unit = js.native
-  def setState[K /* <: String */](state: Null, callback: js.Function0[Unit]): Unit = js.native
-  def setState[K /* <: String */](state: Pick[S, K]): Unit = js.native
-  def setState[K /* <: String */](state: Pick[S, K], callback: js.Function0[Unit]): Unit = js.native
+  def setState[K /* <: /* keyof S */ String */](state: Null, callback: js.Function0[Unit]): Unit = js.native
+  def setState[K /* <: /* keyof S */ String */](state: Pick[S, K]): Unit = js.native
+  def setState[K /* <: /* keyof S */ String */](state: Pick[S, K], callback: js.Function0[Unit]): Unit = js.native
 }
 
 /* static members */

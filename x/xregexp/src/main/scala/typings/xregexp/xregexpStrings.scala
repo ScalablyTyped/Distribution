@@ -454,7 +454,7 @@ object xregexpStrings {
   @scala.inline
   def astral: astral = "astral".asInstanceOf[astral]
   @scala.inline
-  def `astral namespacing`: `astral namespacing` = "astral namespacing".asInstanceOf[`astral namespacing`]
+  def `astral namespacing`: `astral namespacing` = ("astral namespacing").asInstanceOf[`astral namespacing`]
   @scala.inline
   def b_ : b_ = "b".asInstanceOf[b_]
   @scala.inline
@@ -488,7 +488,7 @@ object xregexpStrings {
   @scala.inline
   def namespacing: namespacing = "namespacing".asInstanceOf[namespacing]
   @scala.inline
-  def `namespacing astral`: `namespacing astral` = "namespacing astral".asInstanceOf[`namespacing astral`]
+  def `namespacing astral`: `namespacing astral` = ("namespacing astral").asInstanceOf[`namespacing astral`]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline

@@ -22,7 +22,6 @@ object CapturedDepthData {
     timestamp: Double
   ): CapturedDepthData = {
     val __obj = js.Dynamic.literal(cameraCalibrationData = cameraCalibrationData.asInstanceOf[js.Any], depthDataAccuracy = depthDataAccuracy.asInstanceOf[js.Any], depthDataFiltered = depthDataFiltered.asInstanceOf[js.Any], depthDataQuality = depthDataQuality.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CapturedDepthData]
   }
 }

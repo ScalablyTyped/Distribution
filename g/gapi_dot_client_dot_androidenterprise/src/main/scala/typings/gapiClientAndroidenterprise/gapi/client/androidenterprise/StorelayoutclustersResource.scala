@@ -33,7 +33,6 @@ object StorelayoutclustersResource {
     update: AnonClusterId => Request_[StoreCluster]
   ): StorelayoutclustersResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[StorelayoutclustersResource]
   }
 }

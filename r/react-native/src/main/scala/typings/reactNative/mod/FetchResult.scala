@@ -21,7 +21,6 @@ object FetchResult {
     ResultFailed: UIBackgroundFetchResultFailed
   ): FetchResult = {
     val __obj = js.Dynamic.literal(NewData = NewData.asInstanceOf[js.Any], NoData = NoData.asInstanceOf[js.Any], ResultFailed = ResultFailed.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FetchResult]
   }
 }

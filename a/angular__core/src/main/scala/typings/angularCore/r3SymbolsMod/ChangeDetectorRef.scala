@@ -110,7 +110,6 @@ object ChangeDetectorRef {
     reattach: () => Unit
   ): ChangeDetectorRef = {
     val __obj = js.Dynamic.literal(checkNoChanges = js.Any.fromFunction0(checkNoChanges), detach = js.Any.fromFunction0(detach), detectChanges = js.Any.fromFunction0(detectChanges), markForCheck = js.Any.fromFunction0(markForCheck), reattach = js.Any.fromFunction0(reattach))
-  
     __obj.asInstanceOf[ChangeDetectorRef]
   }
 }

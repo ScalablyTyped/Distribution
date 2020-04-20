@@ -15,7 +15,6 @@ object AnonLastsave {
   @scala.inline
   def apply(lastsave: Date, savecount: Double, value: String): AnonLastsave = {
     val __obj = js.Dynamic.literal(lastsave = lastsave.asInstanceOf[js.Any], savecount = savecount.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLastsave]
   }
 }

@@ -17,7 +17,6 @@ object SnapshotSerializer {
   @scala.inline
   def apply(deserialize: String => AnonName, serialize: (String, SnapshotSuite) => String): SnapshotSerializer = {
     val __obj = js.Dynamic.literal(deserialize = js.Any.fromFunction1(deserialize), serialize = js.Any.fromFunction2(serialize))
-  
     __obj.asInstanceOf[SnapshotSerializer]
   }
 }

@@ -12,7 +12,6 @@ object RouteOptionsAccessEntityObject {
   @scala.inline
   def apply(entity: AccessEntity): RouteOptionsAccessEntityObject = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RouteOptionsAccessEntityObject]
   }
 }

@@ -22,7 +22,6 @@ object Typeofsquash {
     TANH: (Double, Boolean) => Double
   ): Typeofsquash = {
     val __obj = js.Dynamic.literal(HLIM = js.Any.fromFunction2(HLIM), IDENTITY = js.Any.fromFunction2(IDENTITY), LOGISTIC = js.Any.fromFunction2(LOGISTIC), ReLU = js.Any.fromFunction2(ReLU), TANH = js.Any.fromFunction2(TANH))
-  
     __obj.asInstanceOf[Typeofsquash]
   }
 }

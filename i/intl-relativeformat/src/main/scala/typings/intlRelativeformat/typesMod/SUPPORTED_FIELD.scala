@@ -45,48 +45,46 @@ trait SUPPORTED_FIELD extends js.Object
 
 object SUPPORTED_FIELD {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def day: typings.intlRelativeformat.intlRelativeformatStrings.day = "day".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.day]
   @scala.inline
-  def day: typings.intlRelativeformat.intlRelativeformatStrings.day = this.cast("day")
+  def dayNarrow: `day-narrow` = "day-narrow".asInstanceOf[`day-narrow`]
   @scala.inline
-  def dayNarrow: `day-narrow` = this.cast("day-narrow")
+  def dayShort: `day-short` = "day-short".asInstanceOf[`day-short`]
   @scala.inline
-  def dayShort: `day-short` = this.cast("day-short")
+  def hour: typings.intlRelativeformat.intlRelativeformatStrings.hour = "hour".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.hour]
   @scala.inline
-  def hour: typings.intlRelativeformat.intlRelativeformatStrings.hour = this.cast("hour")
+  def hourNarrow: `hour-narrow` = "hour-narrow".asInstanceOf[`hour-narrow`]
   @scala.inline
-  def hourNarrow: `hour-narrow` = this.cast("hour-narrow")
+  def hourShort: `hour-short` = "hour-short".asInstanceOf[`hour-short`]
   @scala.inline
-  def hourShort: `hour-short` = this.cast("hour-short")
+  def minute: typings.intlRelativeformat.intlRelativeformatStrings.minute = "minute".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.minute]
   @scala.inline
-  def minute: typings.intlRelativeformat.intlRelativeformatStrings.minute = this.cast("minute")
+  def minuteNarrow: `minute-narrow` = "minute-narrow".asInstanceOf[`minute-narrow`]
   @scala.inline
-  def minuteNarrow: `minute-narrow` = this.cast("minute-narrow")
+  def minuteShort: `minute-short` = "minute-short".asInstanceOf[`minute-short`]
   @scala.inline
-  def minuteShort: `minute-short` = this.cast("minute-short")
+  def month: typings.intlRelativeformat.intlRelativeformatStrings.month = "month".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.month]
   @scala.inline
-  def month: typings.intlRelativeformat.intlRelativeformatStrings.month = this.cast("month")
+  def monthNarrow: `month-narrow` = "month-narrow".asInstanceOf[`month-narrow`]
   @scala.inline
-  def monthNarrow: `month-narrow` = this.cast("month-narrow")
+  def monthShort: `month-short` = "month-short".asInstanceOf[`month-short`]
   @scala.inline
-  def monthShort: `month-short` = this.cast("month-short")
+  def second: typings.intlRelativeformat.intlRelativeformatStrings.second = "second".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.second]
   @scala.inline
-  def second: typings.intlRelativeformat.intlRelativeformatStrings.second = this.cast("second")
+  def secondNarrow: `second-narrow` = "second-narrow".asInstanceOf[`second-narrow`]
   @scala.inline
-  def secondNarrow: `second-narrow` = this.cast("second-narrow")
+  def secondShort: `second-short` = "second-short".asInstanceOf[`second-short`]
   @scala.inline
-  def secondShort: `second-short` = this.cast("second-short")
+  def week: typings.intlRelativeformat.intlRelativeformatStrings.week = "week".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.week]
   @scala.inline
-  def week: typings.intlRelativeformat.intlRelativeformatStrings.week = this.cast("week")
+  def weekNarrow: `week-narrow` = "week-narrow".asInstanceOf[`week-narrow`]
   @scala.inline
-  def weekNarrow: `week-narrow` = this.cast("week-narrow")
+  def weekShort: `week-short` = "week-short".asInstanceOf[`week-short`]
   @scala.inline
-  def weekShort: `week-short` = this.cast("week-short")
+  def year: typings.intlRelativeformat.intlRelativeformatStrings.year = "year".asInstanceOf[typings.intlRelativeformat.intlRelativeformatStrings.year]
   @scala.inline
-  def year: typings.intlRelativeformat.intlRelativeformatStrings.year = this.cast("year")
+  def yearNarrow: `year-narrow` = "year-narrow".asInstanceOf[`year-narrow`]
   @scala.inline
-  def yearNarrow: `year-narrow` = this.cast("year-narrow")
-  @scala.inline
-  def yearShort: `year-short` = this.cast("year-short")
+  def yearShort: `year-short` = "year-short".asInstanceOf[`year-short`]
 }
 

@@ -31,7 +31,6 @@ object TensorStorage {
     write: (BackendValues, js.Array[Double], DataType) => DataId
   ): TensorStorage = {
     val __obj = js.Dynamic.literal(disposeData = js.Any.fromFunction1(disposeData), memory = js.Any.fromFunction0(memory), move = js.Any.fromFunction4(move), numDataIds = js.Any.fromFunction0(numDataIds), read = js.Any.fromFunction1(read), readSync = js.Any.fromFunction1(readSync), write = js.Any.fromFunction3(write))
-  
     __obj.asInstanceOf[TensorStorage]
   }
 }

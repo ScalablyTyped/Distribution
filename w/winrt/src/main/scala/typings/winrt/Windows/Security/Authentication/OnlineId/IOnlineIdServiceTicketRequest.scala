@@ -13,7 +13,6 @@ object IOnlineIdServiceTicketRequest {
   @scala.inline
   def apply(policy: String, service: String): IOnlineIdServiceTicketRequest = {
     val __obj = js.Dynamic.literal(policy = policy.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IOnlineIdServiceTicketRequest]
   }
 }

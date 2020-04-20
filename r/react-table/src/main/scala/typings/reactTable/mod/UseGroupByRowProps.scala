@@ -29,7 +29,6 @@ object UseGroupByRowProps {
     values: Record[IdType[D], AggregatedValue]
   ): UseGroupByRowProps[D] = {
     val __obj = js.Dynamic.literal(depth = depth.asInstanceOf[js.Any], groupById = groupById.asInstanceOf[js.Any], groupByVal = groupByVal.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], isGrouped = isGrouped.asInstanceOf[js.Any], subRows = subRows.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UseGroupByRowProps[D]]
   }
 }

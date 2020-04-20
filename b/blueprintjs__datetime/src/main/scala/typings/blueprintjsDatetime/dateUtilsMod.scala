@@ -40,6 +40,6 @@ object dateUtilsMod extends js.Object {
   def isTimeEqualOrSmallerThan(time: Date, timeToCompare: Date): Boolean = js.native
   def isTimeInRange(date: Date, minDate: Date, maxDate: Date): Boolean = js.native
   def isTimeSameOrAfter(date: Date, dateToCompare: Date): Boolean = js.native
-  type DateRange = js.Tuple2[js.UndefOr[Date], js.UndefOr[Date]]
+  type DateRange = js.Tuple2[Date | Null, Date | Null]
 }
 

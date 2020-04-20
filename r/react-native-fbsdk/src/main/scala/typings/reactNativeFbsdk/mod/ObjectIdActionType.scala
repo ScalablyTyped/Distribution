@@ -13,12 +13,10 @@ trait ObjectIdActionType extends js.Object
 
 object ObjectIdActionType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def open_graph: typings.reactNativeFbsdk.reactNativeFbsdkStrings.open_graph = "open_graph".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.open_graph]
   @scala.inline
-  def open_graph: typings.reactNativeFbsdk.reactNativeFbsdkStrings.open_graph = this.cast("open_graph")
+  def page: typings.reactNativeFbsdk.reactNativeFbsdkStrings.page = "page".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.page]
   @scala.inline
-  def page: typings.reactNativeFbsdk.reactNativeFbsdkStrings.page = this.cast("page")
-  @scala.inline
-  def unknown: typings.reactNativeFbsdk.reactNativeFbsdkStrings.unknown = this.cast("unknown")
+  def unknown: typings.reactNativeFbsdk.reactNativeFbsdkStrings.unknown = "unknown".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.unknown]
 }
 

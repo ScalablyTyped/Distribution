@@ -13,7 +13,6 @@ object PickImplmenuIcon {
   @scala.inline
   def apply(menuIcon: String): PickImplmenuIcon = {
     val __obj = js.Dynamic.literal(menuIcon = menuIcon.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplmenuIcon]
   }
 }

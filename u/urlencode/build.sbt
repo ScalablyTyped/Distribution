@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "urlencode"
-version := "1.1-dt-20190311Z-867846"
+version := "1.1-dt-20190311Z-2b85d7"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -15,7 +15,6 @@ object RaphaelCartesianCurvePoint {
   @scala.inline
   def apply(alpha: Double, x: Double, y: Double): RaphaelCartesianCurvePoint = {
     val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RaphaelCartesianCurvePoint]
   }
 }

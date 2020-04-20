@@ -16,7 +16,6 @@ object ShouldRowBeSkippedParams {
   @scala.inline
   def apply(api: GridApi, context: js.Any, node: RowNode): ShouldRowBeSkippedParams = {
     val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ShouldRowBeSkippedParams]
   }
 }

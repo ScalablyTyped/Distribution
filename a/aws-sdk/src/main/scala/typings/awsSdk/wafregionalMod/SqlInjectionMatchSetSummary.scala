@@ -20,7 +20,6 @@ object SqlInjectionMatchSetSummary {
   @scala.inline
   def apply(Name: ResourceName, SqlInjectionMatchSetId: ResourceId): SqlInjectionMatchSetSummary = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], SqlInjectionMatchSetId = SqlInjectionMatchSetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SqlInjectionMatchSetSummary]
   }
 }

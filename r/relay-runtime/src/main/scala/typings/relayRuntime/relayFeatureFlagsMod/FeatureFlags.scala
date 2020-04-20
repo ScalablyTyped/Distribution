@@ -20,7 +20,6 @@ object FeatureFlags {
     USE_RECORD_SOURCE_MAP_IMPL: Boolean
   ): FeatureFlags = {
     val __obj = js.Dynamic.literal(ENABLE_CONNECTION_RESOLVERS = ENABLE_CONNECTION_RESOLVERS.asInstanceOf[js.Any], ENABLE_PARTIAL_RENDERING_DEFAULT = ENABLE_PARTIAL_RENDERING_DEFAULT.asInstanceOf[js.Any], ENABLE_VARIABLE_CONNECTION_KEY = ENABLE_VARIABLE_CONNECTION_KEY.asInstanceOf[js.Any], USE_RECORD_SOURCE_MAP_IMPL = USE_RECORD_SOURCE_MAP_IMPL.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FeatureFlags]
   }
 }

@@ -16,7 +16,6 @@ object DeleteObjectRequest {
   @scala.inline
   def apply(Path: PathNaming): DeleteObjectRequest = {
     val __obj = js.Dynamic.literal(Path = Path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteObjectRequest]
   }
 }

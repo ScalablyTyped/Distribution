@@ -14,7 +14,6 @@ object AnonBufferInt16Array {
   @scala.inline
   def apply(buffer: Int16Array, bytesWritten: Double): AnonBufferInt16Array = {
     val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], bytesWritten = bytesWritten.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBufferInt16Array]
   }
 }

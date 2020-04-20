@@ -12,13 +12,13 @@ trait reactMdlProps {
   def BadgeProps: typings.reactMdl.mod.BadgeProps.type = typings.reactMdl.mod.BadgeProps
   type BadgeProps = typings.reactMdl.mod.BadgeProps
   @scala.inline
-  def ButtonProps: StandardButtonProps.type = typings.reactMdl.mod.StandardButtonProps
+  def ButtonProps: StandardButtonProps.type = StandardButtonProps
   type ButtonProps = StandardButtonProps
   @scala.inline
   def CardProps: typings.reactMdl.mod.CardProps.type = typings.reactMdl.mod.CardProps
   type CardProps = typings.reactMdl.mod.CardProps
   @scala.inline
-  def CardActionsProps: CardActionProps.type = typings.reactMdl.mod.CardActionProps
+  def CardActionsProps: CardActionProps.type = CardActionProps
   type CardActionsProps = CardActionProps
   type CardMediaProps = MDLOtherProps
   type CardMenuProps = MDLOtherProps
@@ -106,7 +106,7 @@ trait reactMdlProps {
   type ListItemContentProps = typings.reactMdl.mod.ListItemContentProps
   type MDLBasicComponentProps = MDLOtherProps
   @scala.inline
-  def MDLComponentProps: AnonRecursive.type = typings.reactMdl.AnonRecursive
+  def MDLComponentProps: AnonRecursive.type = AnonRecursive
   type MDLComponentProps = AnonRecursive
   @scala.inline
   def MenuProps: typings.reactMdl.mod.MenuProps.type = typings.reactMdl.mod.MenuProps

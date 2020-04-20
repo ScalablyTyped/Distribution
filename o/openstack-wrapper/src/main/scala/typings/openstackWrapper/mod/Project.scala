@@ -24,7 +24,6 @@ object Project {
     project_token: String
   ): Project = {
     val __obj = js.Dynamic.literal(general_token = general_token.asInstanceOf[js.Any], glance = glance.asInstanceOf[js.Any], neutron = neutron.asInstanceOf[js.Any], nova = nova.asInstanceOf[js.Any], octavia = octavia.asInstanceOf[js.Any], project_token = project_token.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Project]
   }
 }

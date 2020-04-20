@@ -22,7 +22,6 @@ object SdkOptions {
   @scala.inline
   def apply(player: PlayerState, token: AnonAccesstoken): SdkOptions = {
     val __obj = js.Dynamic.literal(player = player.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SdkOptions]
   }
 }

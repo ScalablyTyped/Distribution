@@ -13,7 +13,6 @@ object TimerConfig {
   @scala.inline
   def apply[Ref](idToRef: Double => Ref, refToId: Ref => Double | Unit): TimerConfig[Ref] = {
     val __obj = js.Dynamic.literal(idToRef = js.Any.fromFunction1(idToRef), refToId = js.Any.fromFunction1(refToId))
-  
     __obj.asInstanceOf[TimerConfig[Ref]]
   }
 }

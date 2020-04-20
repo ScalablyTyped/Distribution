@@ -19,7 +19,6 @@ object AnonStory {
     story: js.Any
   ): AnonStory = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], renderTree = js.Any.fromFunction3(renderTree), story = story.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonStory]
   }
 }

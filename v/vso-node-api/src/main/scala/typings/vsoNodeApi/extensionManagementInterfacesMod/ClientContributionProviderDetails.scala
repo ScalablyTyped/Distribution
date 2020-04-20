@@ -28,7 +28,6 @@ object ClientContributionProviderDetails {
   @scala.inline
   def apply(displayName: String, name: String, properties: StringDictionary[String], version: String): ClientContributionProviderDetails = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClientContributionProviderDetails]
   }
 }

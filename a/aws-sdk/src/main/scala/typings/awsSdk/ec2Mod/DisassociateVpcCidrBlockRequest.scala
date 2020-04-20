@@ -16,7 +16,6 @@ object DisassociateVpcCidrBlockRequest {
   @scala.inline
   def apply(AssociationId: VpcCidrAssociationId): DisassociateVpcCidrBlockRequest = {
     val __obj = js.Dynamic.literal(AssociationId = AssociationId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisassociateVpcCidrBlockRequest]
   }
 }

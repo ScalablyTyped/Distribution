@@ -24,7 +24,6 @@ object DirectThreadFeedResponseLastPermanentItem {
     user_id: Double
   ): DirectThreadFeedResponseLastPermanentItem = {
     val __obj = js.Dynamic.literal(client_context = client_context.asInstanceOf[js.Any], item_id = item_id.asInstanceOf[js.Any], item_type = item_type.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], user_id = user_id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DirectThreadFeedResponseLastPermanentItem]
   }
 }

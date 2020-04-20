@@ -13,7 +13,6 @@ object UpdateData {
   @scala.inline
   def apply(color: String, uuid: String): UpdateData = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateData]
   }
 }

@@ -18,22 +18,20 @@ trait uPressure extends js.Object
 
 object uPressure {
   @scala.inline
-  def MPa: typings.convertUnits.convertUnitsStrings.MPa = this.cast("MPa")
+  def MPa: typings.convertUnits.convertUnitsStrings.MPa = "MPa".asInstanceOf[typings.convertUnits.convertUnitsStrings.MPa]
   @scala.inline
-  def Pa: typings.convertUnits.convertUnitsStrings.Pa = this.cast("Pa")
+  def Pa: typings.convertUnits.convertUnitsStrings.Pa = "Pa".asInstanceOf[typings.convertUnits.convertUnitsStrings.Pa]
   @scala.inline
-  def bar: typings.convertUnits.convertUnitsStrings.bar = this.cast("bar")
+  def bar: typings.convertUnits.convertUnitsStrings.bar = "bar".asInstanceOf[typings.convertUnits.convertUnitsStrings.bar]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def hPa: typings.convertUnits.convertUnitsStrings.hPa = "hPa".asInstanceOf[typings.convertUnits.convertUnitsStrings.hPa]
   @scala.inline
-  def hPa: typings.convertUnits.convertUnitsStrings.hPa = this.cast("hPa")
+  def kPa: typings.convertUnits.convertUnitsStrings.kPa = "kPa".asInstanceOf[typings.convertUnits.convertUnitsStrings.kPa]
   @scala.inline
-  def kPa: typings.convertUnits.convertUnitsStrings.kPa = this.cast("kPa")
+  def ksi: typings.convertUnits.convertUnitsStrings.ksi = "ksi".asInstanceOf[typings.convertUnits.convertUnitsStrings.ksi]
   @scala.inline
-  def ksi: typings.convertUnits.convertUnitsStrings.ksi = this.cast("ksi")
+  def psi: typings.convertUnits.convertUnitsStrings.psi = "psi".asInstanceOf[typings.convertUnits.convertUnitsStrings.psi]
   @scala.inline
-  def psi: typings.convertUnits.convertUnitsStrings.psi = this.cast("psi")
-  @scala.inline
-  def torr: typings.convertUnits.convertUnitsStrings.torr = this.cast("torr")
+  def torr: typings.convertUnits.convertUnitsStrings.torr = "torr".asInstanceOf[typings.convertUnits.convertUnitsStrings.torr]
 }
 

@@ -40,7 +40,7 @@ trait gestaltProps {
   def GroupAvatarProps: typings.gestalt.mod.GroupAvatarProps.type = typings.gestalt.mod.GroupAvatarProps
   type GroupAvatarProps = typings.gestalt.mod.GroupAvatarProps
   @scala.inline
-  def HeadingProps: HeaderProps.type = typings.gestalt.mod.HeaderProps
+  def HeadingProps: HeaderProps.type = HeaderProps
   type HeadingProps = HeaderProps
   @scala.inline
   def IconProps: typings.gestalt.mod.IconProps.type = typings.gestalt.mod.IconProps

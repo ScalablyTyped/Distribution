@@ -12,7 +12,6 @@ object Window {
   @scala.inline
   def apply(BluetoothClassicSerial: BluetoothClassicSerial_): Window = {
     val __obj = js.Dynamic.literal(BluetoothClassicSerial = BluetoothClassicSerial.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Window]
   }
 }

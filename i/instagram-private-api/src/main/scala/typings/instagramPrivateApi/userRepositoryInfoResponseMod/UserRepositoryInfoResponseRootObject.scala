@@ -13,7 +13,6 @@ object UserRepositoryInfoResponseRootObject {
   @scala.inline
   def apply(status: String, user: UserRepositoryInfoResponseUser): UserRepositoryInfoResponseRootObject = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UserRepositoryInfoResponseRootObject]
   }
 }

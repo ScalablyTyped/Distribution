@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class InsightsItem () extends js.Object {
   var key: String = js.native
-  var revision: Double = js.native
   var value: js.Object = js.native
 }
 

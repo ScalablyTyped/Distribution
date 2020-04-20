@@ -18,7 +18,6 @@ object TestModuleStatic {
     verifySnapshot: js.Function1[/* indicator */ js.UndefOr[js.Any], Unit] => Unit
   ): TestModuleStatic = {
     val __obj = js.Dynamic.literal(markTestCompleted = js.Any.fromFunction0(markTestCompleted), markTestPassed = js.Any.fromFunction1(markTestPassed), verifySnapshot = js.Any.fromFunction1(verifySnapshot))
-  
     __obj.asInstanceOf[TestModuleStatic]
   }
 }

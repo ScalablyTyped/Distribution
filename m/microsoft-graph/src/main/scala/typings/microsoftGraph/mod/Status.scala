@@ -15,16 +15,14 @@ trait Status extends js.Object
 
 object Status {
   @scala.inline
-  def active: typings.microsoftGraph.microsoftGraphStrings.active = this.cast("active")
+  def active: typings.microsoftGraph.microsoftGraphStrings.active = "active".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.active]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def deleted: typings.microsoftGraph.microsoftGraphStrings.deleted = "deleted".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deleted]
   @scala.inline
-  def deleted: typings.microsoftGraph.microsoftGraphStrings.deleted = this.cast("deleted")
+  def ignored: typings.microsoftGraph.microsoftGraphStrings.ignored = "ignored".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.ignored]
   @scala.inline
-  def ignored: typings.microsoftGraph.microsoftGraphStrings.ignored = this.cast("ignored")
+  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
   @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = this.cast("unknownFutureValue")
-  @scala.inline
-  def updated: typings.microsoftGraph.microsoftGraphStrings.updated = this.cast("updated")
+  def updated: typings.microsoftGraph.microsoftGraphStrings.updated = "updated".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.updated]
 }
 

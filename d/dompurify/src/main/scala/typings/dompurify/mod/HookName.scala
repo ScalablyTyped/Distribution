@@ -19,24 +19,22 @@ trait HookName extends js.Object
 
 object HookName {
   @scala.inline
-  def afterSanitizeAttributes: typings.dompurify.dompurifyStrings.afterSanitizeAttributes = this.cast("afterSanitizeAttributes")
+  def afterSanitizeAttributes: typings.dompurify.dompurifyStrings.afterSanitizeAttributes = "afterSanitizeAttributes".asInstanceOf[typings.dompurify.dompurifyStrings.afterSanitizeAttributes]
   @scala.inline
-  def afterSanitizeElements: typings.dompurify.dompurifyStrings.afterSanitizeElements = this.cast("afterSanitizeElements")
+  def afterSanitizeElements: typings.dompurify.dompurifyStrings.afterSanitizeElements = "afterSanitizeElements".asInstanceOf[typings.dompurify.dompurifyStrings.afterSanitizeElements]
   @scala.inline
-  def afterSanitizeShadowDOM: typings.dompurify.dompurifyStrings.afterSanitizeShadowDOM = this.cast("afterSanitizeShadowDOM")
+  def afterSanitizeShadowDOM: typings.dompurify.dompurifyStrings.afterSanitizeShadowDOM = "afterSanitizeShadowDOM".asInstanceOf[typings.dompurify.dompurifyStrings.afterSanitizeShadowDOM]
   @scala.inline
-  def beforeSanitizeAttributes: typings.dompurify.dompurifyStrings.beforeSanitizeAttributes = this.cast("beforeSanitizeAttributes")
+  def beforeSanitizeAttributes: typings.dompurify.dompurifyStrings.beforeSanitizeAttributes = "beforeSanitizeAttributes".asInstanceOf[typings.dompurify.dompurifyStrings.beforeSanitizeAttributes]
   @scala.inline
-  def beforeSanitizeElements: typings.dompurify.dompurifyStrings.beforeSanitizeElements = this.cast("beforeSanitizeElements")
+  def beforeSanitizeElements: typings.dompurify.dompurifyStrings.beforeSanitizeElements = "beforeSanitizeElements".asInstanceOf[typings.dompurify.dompurifyStrings.beforeSanitizeElements]
   @scala.inline
-  def beforeSanitizeShadowDOM: typings.dompurify.dompurifyStrings.beforeSanitizeShadowDOM = this.cast("beforeSanitizeShadowDOM")
+  def beforeSanitizeShadowDOM: typings.dompurify.dompurifyStrings.beforeSanitizeShadowDOM = "beforeSanitizeShadowDOM".asInstanceOf[typings.dompurify.dompurifyStrings.beforeSanitizeShadowDOM]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def uponSanitizeAttribute: typings.dompurify.dompurifyStrings.uponSanitizeAttribute = "uponSanitizeAttribute".asInstanceOf[typings.dompurify.dompurifyStrings.uponSanitizeAttribute]
   @scala.inline
-  def uponSanitizeAttribute: typings.dompurify.dompurifyStrings.uponSanitizeAttribute = this.cast("uponSanitizeAttribute")
+  def uponSanitizeElement: typings.dompurify.dompurifyStrings.uponSanitizeElement = "uponSanitizeElement".asInstanceOf[typings.dompurify.dompurifyStrings.uponSanitizeElement]
   @scala.inline
-  def uponSanitizeElement: typings.dompurify.dompurifyStrings.uponSanitizeElement = this.cast("uponSanitizeElement")
-  @scala.inline
-  def uponSanitizeShadowNode: typings.dompurify.dompurifyStrings.uponSanitizeShadowNode = this.cast("uponSanitizeShadowNode")
+  def uponSanitizeShadowNode: typings.dompurify.dompurifyStrings.uponSanitizeShadowNode = "uponSanitizeShadowNode".asInstanceOf[typings.dompurify.dompurifyStrings.uponSanitizeShadowNode]
 }
 

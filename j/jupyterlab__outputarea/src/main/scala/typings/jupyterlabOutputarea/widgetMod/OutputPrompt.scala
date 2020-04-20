@@ -13,7 +13,7 @@ class OutputPrompt () extends IOutputPrompt {
     * The execution count for the prompt.
     */
   @JSName("executionCount")
-  def executionCount_MOutputPrompt(): ExecutionCount = js.native
+  def executionCount_MOutputPrompt: ExecutionCount = js.native
   @JSName("executionCount")
   def executionCount_MOutputPrompt(value: ExecutionCount): js.Any = js.native
 }

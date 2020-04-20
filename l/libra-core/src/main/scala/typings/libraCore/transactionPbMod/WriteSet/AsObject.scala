@@ -12,7 +12,6 @@ object AsObject {
   @scala.inline
   def apply(writeSetList: js.Array[typings.libraCore.transactionPbMod.WriteOp.AsObject]): AsObject = {
     val __obj = js.Dynamic.literal(writeSetList = writeSetList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AsObject]
   }
 }

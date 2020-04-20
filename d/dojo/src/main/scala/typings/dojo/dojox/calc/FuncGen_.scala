@@ -80,7 +80,6 @@ object FuncGen_ {
     toFrac: js.Any => js.Any
   ): FuncGen_ = {
     val __obj = js.Dynamic.literal(FuncGen = js.Any.fromFunction0(FuncGen), Grapher = js.Any.fromFunction0(Grapher), approx = js.Any.fromFunction1(approx), draw = js.Any.fromFunction3(draw), generatePoints = js.Any.fromFunction8(generatePoints), pow = js.Any.fromFunction2(pow), toFrac = js.Any.fromFunction1(toFrac))
-  
     __obj.asInstanceOf[FuncGen_]
   }
 }

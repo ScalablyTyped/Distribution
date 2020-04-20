@@ -16,7 +16,6 @@ object DeleteImportedKeyMaterialRequest {
   @scala.inline
   def apply(KeyId: KeyIdType): DeleteImportedKeyMaterialRequest = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteImportedKeyMaterialRequest]
   }
 }

@@ -13,7 +13,6 @@ object GeometryDescriptor {
   @scala.inline
   def apply[T /* <: Geometry[_] */](Geometry: GeometryConstructor[T], schema: Schema_[js.Object]): GeometryDescriptor[T] = {
     val __obj = js.Dynamic.literal(Geometry = Geometry.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GeometryDescriptor[T]]
   }
 }

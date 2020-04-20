@@ -13,7 +13,6 @@ object Edge {
   @scala.inline
   def apply[T](cursor: ConnectionCursor, node: T): Edge[T] = {
     val __obj = js.Dynamic.literal(cursor = cursor.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Edge[T]]
   }
 }

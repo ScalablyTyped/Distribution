@@ -28,8 +28,8 @@ class ProjectConversion protected () extends ModelUnit {
   val containerAsProject_FProjectConversion: IProject = js.native
   @JSName("model")
   var model_FProjectConversion: IModel = js.native
-  def containerAsProject(): Project = js.native
-  def markers(): IList[OneTimeConversionMarker] = js.native
+  def containerAsProject: Project = js.native
+  def markers: IList[OneTimeConversionMarker] = js.native
 }
 
 /* static members */

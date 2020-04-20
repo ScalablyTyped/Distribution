@@ -14,7 +14,6 @@ object SessionRejectOptions {
   @scala.inline
   def apply(extraHeaders: js.Array[String], reason_phrase: String, status_code: Double): SessionRejectOptions = {
     val __obj = js.Dynamic.literal(extraHeaders = extraHeaders.asInstanceOf[js.Any], reason_phrase = reason_phrase.asInstanceOf[js.Any], status_code = status_code.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SessionRejectOptions]
   }
 }

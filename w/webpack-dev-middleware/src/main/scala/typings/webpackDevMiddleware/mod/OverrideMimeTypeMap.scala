@@ -13,7 +13,6 @@ object OverrideMimeTypeMap {
   @scala.inline
   def apply(force: Boolean, typeMap: MimeTypeMap): OverrideMimeTypeMap = {
     val __obj = js.Dynamic.literal(force = force.asInstanceOf[js.Any], typeMap = typeMap.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OverrideMimeTypeMap]
   }
 }

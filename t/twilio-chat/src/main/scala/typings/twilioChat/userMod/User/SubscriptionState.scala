@@ -13,12 +13,10 @@ trait SubscriptionState extends js.Object
 
 object SubscriptionState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def initializing: typings.twilioChat.twilioChatStrings.initializing = "initializing".asInstanceOf[typings.twilioChat.twilioChatStrings.initializing]
   @scala.inline
-  def initializing: typings.twilioChat.twilioChatStrings.initializing = this.cast("initializing")
+  def subscribed: typings.twilioChat.twilioChatStrings.subscribed = "subscribed".asInstanceOf[typings.twilioChat.twilioChatStrings.subscribed]
   @scala.inline
-  def subscribed: typings.twilioChat.twilioChatStrings.subscribed = this.cast("subscribed")
-  @scala.inline
-  def unsubscribed: typings.twilioChat.twilioChatStrings.unsubscribed = this.cast("unsubscribed")
+  def unsubscribed: typings.twilioChat.twilioChatStrings.unsubscribed = "unsubscribed".asInstanceOf[typings.twilioChat.twilioChatStrings.unsubscribed]
 }
 

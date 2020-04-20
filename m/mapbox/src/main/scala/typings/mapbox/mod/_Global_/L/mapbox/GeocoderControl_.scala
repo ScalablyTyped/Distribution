@@ -36,7 +36,6 @@ object GeocoderControl_ {
     setURL: String => js.Any
   ): GeocoderControl_ = {
     val __obj = js.Dynamic.literal(getURL = js.Any.fromFunction0(getURL), on = js.Any.fromFunction2(on), onAdd = js.Any.fromFunction1(onAdd), setID = js.Any.fromFunction1(setID), setTileJSON = js.Any.fromFunction1(setTileJSON), setURL = js.Any.fromFunction1(setURL))
-  
     __obj.asInstanceOf[GeocoderControl_]
   }
 }

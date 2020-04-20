@@ -20,7 +20,6 @@ object IConnectionCost {
     roaming: Boolean
   ): IConnectionCost = {
     val __obj = js.Dynamic.literal(approachingDataLimit = approachingDataLimit.asInstanceOf[js.Any], networkCostType = networkCostType.asInstanceOf[js.Any], overDataLimit = overDataLimit.asInstanceOf[js.Any], roaming = roaming.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IConnectionCost]
   }
 }

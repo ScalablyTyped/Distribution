@@ -34,30 +34,28 @@ trait XlThemeColor extends js.Object
 
 object XlThemeColor {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlThemeColorAccent1: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xlThemeColorAccent1: `5` = this.cast(5)
+  def xlThemeColorAccent2: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def xlThemeColorAccent2: `6` = this.cast(6)
+  def xlThemeColorAccent3: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def xlThemeColorAccent3: `7` = this.cast(7)
+  def xlThemeColorAccent4: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def xlThemeColorAccent4: `8` = this.cast(8)
+  def xlThemeColorAccent5: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def xlThemeColorAccent5: `9` = this.cast(9)
+  def xlThemeColorAccent6: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def xlThemeColorAccent6: `10` = this.cast(10)
+  def xlThemeColorDark1: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlThemeColorDark1: `1` = this.cast(1)
+  def xlThemeColorDark2: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlThemeColorDark2: `3` = this.cast(3)
+  def xlThemeColorFollowedHyperlink: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def xlThemeColorFollowedHyperlink: `12` = this.cast(12)
+  def xlThemeColorHyperlink: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def xlThemeColorHyperlink: `11` = this.cast(11)
+  def xlThemeColorLight1: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlThemeColorLight1: `2` = this.cast(2)
-  @scala.inline
-  def xlThemeColorLight2: `4` = this.cast(4)
+  def xlThemeColorLight2: `4` = 4.asInstanceOf[`4`]
 }
 

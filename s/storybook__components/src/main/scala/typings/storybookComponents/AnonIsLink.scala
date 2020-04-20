@@ -13,7 +13,6 @@ object AnonIsLink {
   @scala.inline
   def apply(isLink: Boolean): AnonIsLink = {
     val __obj = js.Dynamic.literal(isLink = isLink.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsLink]
   }
 }

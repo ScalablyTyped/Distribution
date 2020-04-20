@@ -28,7 +28,6 @@ object HorizontalPodAutoscalerBehavior {
   @scala.inline
   def apply(scaleDown: HPAScalingRules, scaleUp: HPAScalingRules): HorizontalPodAutoscalerBehavior = {
     val __obj = js.Dynamic.literal(scaleDown = scaleDown.asInstanceOf[js.Any], scaleUp = scaleUp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HorizontalPodAutoscalerBehavior]
   }
 }

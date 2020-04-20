@@ -14,7 +14,6 @@ object TableContextProps {
   @scala.inline
   def apply(padding: Padding): TableContextProps = {
     val __obj = js.Dynamic.literal(padding = padding.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TableContextProps]
   }
 }

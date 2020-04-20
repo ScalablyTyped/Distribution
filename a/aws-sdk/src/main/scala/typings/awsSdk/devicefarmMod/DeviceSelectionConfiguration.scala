@@ -20,7 +20,6 @@ object DeviceSelectionConfiguration {
   @scala.inline
   def apply(filters: DeviceFilters, maxDevices: Integer): DeviceSelectionConfiguration = {
     val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any], maxDevices = maxDevices.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeviceSelectionConfiguration]
   }
 }

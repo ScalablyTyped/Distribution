@@ -13,7 +13,6 @@ object Provider {
   @scala.inline
   def apply(close: js.Function => Unit): Provider = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction1(close))
-  
     __obj.asInstanceOf[Provider]
   }
 }

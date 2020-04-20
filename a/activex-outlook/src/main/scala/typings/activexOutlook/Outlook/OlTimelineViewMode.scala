@@ -16,12 +16,10 @@ trait OlTimelineViewMode extends js.Object
 
 object OlTimelineViewMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olTimelineViewDay: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def olTimelineViewDay: `0` = this.cast(0)
+  def olTimelineViewMonth: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olTimelineViewMonth: `2` = this.cast(2)
-  @scala.inline
-  def olTimelineViewWeek: `1` = this.cast(1)
+  def olTimelineViewWeek: `1` = 1.asInstanceOf[`1`]
 }
 

@@ -85,7 +85,6 @@ object NativeMethods {
     setNativeProps: js.Object => Unit
   ): NativeMethods = {
     val __obj = js.Dynamic.literal(blur = js.Any.fromFunction0(blur), focus = js.Any.fromFunction0(focus), measure = js.Any.fromFunction1(measure), measureInWindow = js.Any.fromFunction1(measureInWindow), measureLayout = js.Any.fromFunction3(measureLayout), refs = refs.asInstanceOf[js.Any], setNativeProps = js.Any.fromFunction1(setNativeProps))
-  
     __obj.asInstanceOf[NativeMethods]
   }
 }

@@ -14,14 +14,12 @@ trait AbiType extends js.Object
 
 object AbiType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def constructor: typings.web3Utils.web3UtilsStrings.constructor = "constructor".asInstanceOf[typings.web3Utils.web3UtilsStrings.constructor]
   @scala.inline
-  def constructor: typings.web3Utils.web3UtilsStrings.constructor = this.cast("constructor")
+  def event: typings.web3Utils.web3UtilsStrings.event = "event".asInstanceOf[typings.web3Utils.web3UtilsStrings.event]
   @scala.inline
-  def event: typings.web3Utils.web3UtilsStrings.event = this.cast("event")
+  def fallback: typings.web3Utils.web3UtilsStrings.fallback = "fallback".asInstanceOf[typings.web3Utils.web3UtilsStrings.fallback]
   @scala.inline
-  def fallback: typings.web3Utils.web3UtilsStrings.fallback = this.cast("fallback")
-  @scala.inline
-  def function: typings.web3Utils.web3UtilsStrings.function = this.cast("function")
+  def function: typings.web3Utils.web3UtilsStrings.function = "function".asInstanceOf[typings.web3Utils.web3UtilsStrings.function]
 }
 

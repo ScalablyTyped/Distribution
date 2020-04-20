@@ -13,7 +13,6 @@ object BingMapsLayerLayerviewCreateErrorEvent {
   @scala.inline
   def apply(error: Error, view: View): BingMapsLayerLayerviewCreateErrorEvent = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BingMapsLayerLayerviewCreateErrorEvent]
   }
 }

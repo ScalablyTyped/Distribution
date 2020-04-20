@@ -25,7 +25,6 @@ object XmlNode {
     visit: js.Function1[XmlNode, Unit] => Unit
   ): XmlNode = {
     val __obj = js.Dynamic.literal(getAttribute = js.Any.fromFunction2(getAttribute), localName = localName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], path = js.Any.fromFunction2(path), prefix = prefix.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], visit = js.Any.fromFunction1(visit))
-  
     __obj.asInstanceOf[XmlNode]
   }
 }

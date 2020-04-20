@@ -12,10 +12,8 @@ trait OptionsApproximationValue extends js.Object
 
 object OptionsApproximationValue {
   @scala.inline
-  def `barnes-hut`: typings.highcharts.highchartsStrings.`barnes-hut` = this.cast("barnes-hut")
+  def `barnes-hut`: typings.highcharts.highchartsStrings.`barnes-hut` = "barnes-hut".asInstanceOf[typings.highcharts.highchartsStrings.`barnes-hut`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def none: typings.highcharts.highchartsStrings.none = this.cast("none")
+  def none: typings.highcharts.highchartsStrings.none = "none".asInstanceOf[typings.highcharts.highchartsStrings.none]
 }
 

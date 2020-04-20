@@ -21,28 +21,26 @@ trait MsWrapFlowProperty extends js.Object
 
 object MsWrapFlowProperty {
   @scala.inline
-  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = this.cast("-moz-initial")
+  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.csstype.csstypeStrings.`-moz-initial`]
   @scala.inline
-  def auto: typings.csstype.csstypeStrings.auto = this.cast("auto")
+  def auto: typings.csstype.csstypeStrings.auto = "auto".asInstanceOf[typings.csstype.csstypeStrings.auto]
   @scala.inline
-  def both: typings.csstype.csstypeStrings.both = this.cast("both")
+  def both: typings.csstype.csstypeStrings.both = "both".asInstanceOf[typings.csstype.csstypeStrings.both]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def clear: typings.csstype.csstypeStrings.clear = "clear".asInstanceOf[typings.csstype.csstypeStrings.clear]
   @scala.inline
-  def clear: typings.csstype.csstypeStrings.clear = this.cast("clear")
+  def end: typings.csstype.csstypeStrings.end = "end".asInstanceOf[typings.csstype.csstypeStrings.end]
   @scala.inline
-  def end: typings.csstype.csstypeStrings.end = this.cast("end")
+  def inherit: typings.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[typings.csstype.csstypeStrings.inherit]
   @scala.inline
-  def inherit: typings.csstype.csstypeStrings.inherit = this.cast("inherit")
+  def initial: typings.csstype.csstypeStrings.initial = "initial".asInstanceOf[typings.csstype.csstypeStrings.initial]
   @scala.inline
-  def initial: typings.csstype.csstypeStrings.initial = this.cast("initial")
+  def maximum: typings.csstype.csstypeStrings.maximum = "maximum".asInstanceOf[typings.csstype.csstypeStrings.maximum]
   @scala.inline
-  def maximum: typings.csstype.csstypeStrings.maximum = this.cast("maximum")
+  def revert: typings.csstype.csstypeStrings.revert = "revert".asInstanceOf[typings.csstype.csstypeStrings.revert]
   @scala.inline
-  def revert: typings.csstype.csstypeStrings.revert = this.cast("revert")
+  def start: typings.csstype.csstypeStrings.start = "start".asInstanceOf[typings.csstype.csstypeStrings.start]
   @scala.inline
-  def start: typings.csstype.csstypeStrings.start = this.cast("start")
-  @scala.inline
-  def unset: typings.csstype.csstypeStrings.unset = this.cast("unset")
+  def unset: typings.csstype.csstypeStrings.unset = "unset".asInstanceOf[typings.csstype.csstypeStrings.unset]
 }
 

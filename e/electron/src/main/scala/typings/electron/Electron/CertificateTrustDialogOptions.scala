@@ -19,7 +19,6 @@ object CertificateTrustDialogOptions {
   @scala.inline
   def apply(certificate: Certificate, message: String): CertificateTrustDialogOptions = {
     val __obj = js.Dynamic.literal(certificate = certificate.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CertificateTrustDialogOptions]
   }
 }

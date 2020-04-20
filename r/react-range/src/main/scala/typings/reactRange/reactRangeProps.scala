@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactRangeProps {
   @scala.inline
-  def RangeProps: IProps.type = typings.reactRange.typesMod.IProps
+  def RangeProps: IProps.type = IProps
   type RangeProps = IProps
 }
 

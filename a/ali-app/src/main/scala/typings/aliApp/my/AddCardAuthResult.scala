@@ -30,7 +30,6 @@ object AddCardAuthResult {
   @scala.inline
   def apply(code: String, result: AnonAppid, resultStatus: String, success: Boolean): AddCardAuthResult = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], resultStatus = resultStatus.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddCardAuthResult]
   }
 }

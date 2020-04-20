@@ -14,7 +14,6 @@ object Grammars {
   @scala.inline
   def apply(grammars: js.Array[Grammar]): Grammars = {
     val __obj = js.Dynamic.literal(grammars = grammars.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Grammars]
   }
 }

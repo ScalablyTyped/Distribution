@@ -14,7 +14,6 @@ object IWeeklyTrigger {
   @scala.inline
   def apply(DaysOfTheWeek: MFTriggerWeekDay, WeeksInterval: Double): IWeeklyTrigger = {
     val __obj = js.Dynamic.literal(DaysOfTheWeek = DaysOfTheWeek.asInstanceOf[js.Any], WeeksInterval = WeeksInterval.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IWeeklyTrigger]
   }
 }

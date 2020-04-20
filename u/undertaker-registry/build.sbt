@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "undertaker-registry"
-version := "1.0-dt-20200225Z-769b20"
+version := "1.0-dt-20200225Z-3d3200"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

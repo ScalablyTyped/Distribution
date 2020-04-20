@@ -12,7 +12,6 @@ object OldCircularArc {
   @scala.inline
   def apply(a: js.Tuple4[Position, Position2D, Double, Double]): OldCircularArc = {
     val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OldCircularArc]
   }
 }

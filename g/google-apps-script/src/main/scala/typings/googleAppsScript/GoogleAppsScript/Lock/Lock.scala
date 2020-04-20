@@ -51,7 +51,6 @@ object Lock {
     waitLock: Integer => Unit
   ): Lock = {
     val __obj = js.Dynamic.literal(hasLock = js.Any.fromFunction0(hasLock), releaseLock = js.Any.fromFunction0(releaseLock), tryLock = js.Any.fromFunction1(tryLock), waitLock = js.Any.fromFunction1(waitLock))
-  
     __obj.asInstanceOf[Lock]
   }
 }

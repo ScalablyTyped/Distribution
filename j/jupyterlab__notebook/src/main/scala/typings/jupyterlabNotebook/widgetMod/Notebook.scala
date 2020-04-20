@@ -109,7 +109,7 @@ class Notebook protected () extends StaticNotebook {
     * #### Notes
     * This is a cell or `null` if there is no active cell.
     */
-  def activeCell(): Cell | Null = js.native
+  def activeCell: Cell | Null = js.native
   /**
     * A signal emitted when the active cell changes.
     *
@@ -117,14 +117,14 @@ class Notebook protected () extends StaticNotebook {
     * This can be due to the active index changing or the
     * cell at the active index changing.
     */
-  def activeCellChanged(): ISignal[this.type, Cell] = js.native
+  def activeCellChanged: ISignal[this.type, Cell] = js.native
   /**
     * The active cell index of the notebook.
     *
     * #### Notes
     * The index will be clamped to the bounds of the notebook cells.
     */
-  def activeCellIndex(): Double = js.native
+  def activeCellIndex: Double = js.native
   def activeCellIndex(newValue: Double): js.Any = js.native
   /**
     * Deselect a cell widget.
@@ -186,7 +186,7 @@ class Notebook protected () extends StaticNotebook {
   /**
     * The interactivity mode of the notebook.
     */
-  def mode(): NotebookMode = js.native
+  def mode: NotebookMode = js.native
   def mode(newValue: NotebookMode): js.Any = js.native
   /**
     * A message handler invoked on a `'resize'` message.
@@ -220,7 +220,7 @@ class Notebook protected () extends StaticNotebook {
   /**
     * A signal emitted when the selection state of the notebook changes.
     */
-  def selectionChanged(): ISignal[this.type, Unit] = js.native
+  def selectionChanged: ISignal[this.type, Unit] = js.native
   /**
     * Set URI fragment identifier.
     */
@@ -228,7 +228,7 @@ class Notebook protected () extends StaticNotebook {
   /**
     * A signal emitted when the state of the notebook changes.
     */
-  def stateChanged(): ISignal[this.type, IChangedArgs[_, _, String]] = js.native
+  def stateChanged: ISignal[this.type, IChangedArgs[_, _, String]] = js.native
 }
 
 @JSImport("@jupyterlab/notebook/lib/widget", "Notebook")

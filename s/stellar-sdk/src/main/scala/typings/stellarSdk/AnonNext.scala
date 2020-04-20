@@ -15,7 +15,6 @@ object AnonNext {
   @scala.inline
   def apply(next: ResponseLink, prev: ResponseLink, self: ResponseLink): AnonNext = {
     val __obj = js.Dynamic.literal(next = next.asInstanceOf[js.Any], prev = prev.asInstanceOf[js.Any], self = self.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNext]
   }
 }

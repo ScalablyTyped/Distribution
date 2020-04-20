@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("ember-data", "DS.SnapshotRecordArray")
 @js.native
-class SnapshotRecordArray[K /* <: String */] () extends js.Object {
+class SnapshotRecordArray[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */] () extends js.Object {
   /**
     * The relationships to include for this request.
     */
@@ -22,6 +22,8 @@ class SnapshotRecordArray[K /* <: String */] () extends js.Object {
   /**
     * Get snapshots of the underlying record array
     */
-  def snapshots(): js.Array[Snapshot[String]] = js.native
+  def snapshots(): js.Array[
+    Snapshot[/* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String]
+  ] = js.native
 }
 

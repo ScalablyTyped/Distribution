@@ -12,7 +12,6 @@ object Session {
   @scala.inline
   def apply(flash: Flash): Session = {
     val __obj = js.Dynamic.literal(flash = flash.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Session]
   }
 }

@@ -29,7 +29,6 @@ object MenuBarDocument {
     setSelectedItem: Element => Unit
   ): MenuBarDocument = {
     val __obj = js.Dynamic.literal(getDocument = js.Any.fromFunction1(getDocument), setDocument = js.Any.fromFunction2(setDocument), setSelectedItem = js.Any.fromFunction1(setSelectedItem))
-  
     __obj.asInstanceOf[MenuBarDocument]
   }
 }

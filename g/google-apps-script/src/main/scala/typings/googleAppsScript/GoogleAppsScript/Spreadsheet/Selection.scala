@@ -44,7 +44,6 @@ object Selection {
     getNextDataRange: Direction => Range | Null
   ): Selection = {
     val __obj = js.Dynamic.literal(getActiveRange = js.Any.fromFunction0(getActiveRange), getActiveRangeList = js.Any.fromFunction0(getActiveRangeList), getActiveSheet = js.Any.fromFunction0(getActiveSheet), getCurrentCell = js.Any.fromFunction0(getCurrentCell), getNextDataRange = js.Any.fromFunction1(getNextDataRange))
-  
     __obj.asInstanceOf[Selection]
   }
 }

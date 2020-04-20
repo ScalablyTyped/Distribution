@@ -15,7 +15,6 @@ object AnalyticsConfigurationStorageClassAnalysisDataExportDestination {
     s3BucketDestination: AnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestination
   ): AnalyticsConfigurationStorageClassAnalysisDataExportDestination = {
     val __obj = js.Dynamic.literal(s3BucketDestination = s3BucketDestination.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnalyticsConfigurationStorageClassAnalysisDataExportDestination]
   }
 }

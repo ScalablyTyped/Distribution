@@ -13,7 +13,6 @@ object PickImplglyphWidth {
   @scala.inline
   def apply(glyphWidth: Double): PickImplglyphWidth = {
     val __obj = js.Dynamic.literal(glyphWidth = glyphWidth.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplglyphWidth]
   }
 }

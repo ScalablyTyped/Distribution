@@ -46,7 +46,6 @@ object fx {
     animateTransform: js.Object => js.Any
   ): fx = {
     val __obj = js.Dynamic.literal(animateFill = js.Any.fromFunction1(animateFill), animateFont = js.Any.fromFunction1(animateFont), animateStroke = js.Any.fromFunction1(animateStroke), animateTransform = js.Any.fromFunction1(animateTransform))
-  
     __obj.asInstanceOf[fx]
   }
 }

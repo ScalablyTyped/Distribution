@@ -20,7 +20,6 @@ object DeleteMemberInput {
   @scala.inline
   def apply(MemberId: ResourceIdString, NetworkId: ResourceIdString): DeleteMemberInput = {
     val __obj = js.Dynamic.literal(MemberId = MemberId.asInstanceOf[js.Any], NetworkId = NetworkId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteMemberInput]
   }
 }

@@ -30,7 +30,6 @@ object NameOptions {
     suffix: Boolean
   ): NameOptions = {
     val __obj = js.Dynamic.literal(full = full.asInstanceOf[js.Any], gender = gender.asInstanceOf[js.Any], middle = middle.asInstanceOf[js.Any], middle_initial = middle_initial.asInstanceOf[js.Any], nationality = nationality.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], suffix = suffix.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NameOptions]
   }
 }

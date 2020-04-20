@@ -22,7 +22,6 @@ object AnonDel {
     set: (String, Handler[V]) => Unit
   ): AnonDel[V] = {
     val __obj = js.Dynamic.literal(del = js.Any.fromFunction1(del), empty = js.Any.fromFunction0(empty), get = js.Any.fromFunction1(get), set = js.Any.fromFunction2(set))
-  
     __obj.asInstanceOf[AnonDel[V]]
   }
 }

@@ -15,7 +15,6 @@ object AnonIsCoordinate {
   @scala.inline
   def apply(isCoordinate: String => Boolean, parse: String => Coordinate, stringify: Coordinate => String): AnonIsCoordinate = {
     val __obj = js.Dynamic.literal(isCoordinate = js.Any.fromFunction1(isCoordinate), parse = js.Any.fromFunction1(parse), stringify = js.Any.fromFunction1(stringify))
-  
     __obj.asInstanceOf[AnonIsCoordinate]
   }
 }

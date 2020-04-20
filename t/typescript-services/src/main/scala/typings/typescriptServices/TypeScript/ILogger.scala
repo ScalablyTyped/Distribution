@@ -24,7 +24,6 @@ object ILogger {
     warning: () => Boolean
   ): ILogger = {
     val __obj = js.Dynamic.literal(debug = js.Any.fromFunction0(debug), error = js.Any.fromFunction0(error), fatal = js.Any.fromFunction0(fatal), information = js.Any.fromFunction0(information), log = js.Any.fromFunction1(log), warning = js.Any.fromFunction0(warning))
-  
     __obj.asInstanceOf[ILogger]
   }
 }

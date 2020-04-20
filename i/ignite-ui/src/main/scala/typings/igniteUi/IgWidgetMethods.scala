@@ -38,7 +38,6 @@ object IgWidgetMethods {
     destroy: () => Unit
   ): IgWidgetMethods = {
     val __obj = js.Dynamic.literal(changeGlobalLanguage = js.Any.fromFunction0(changeGlobalLanguage), changeGlobalRegional = js.Any.fromFunction0(changeGlobalRegional), changeLocale = js.Any.fromFunction1(changeLocale), destroy = js.Any.fromFunction0(destroy))
-  
     __obj.asInstanceOf[IgWidgetMethods]
   }
 }

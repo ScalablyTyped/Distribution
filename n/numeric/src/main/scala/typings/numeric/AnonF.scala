@@ -27,7 +27,6 @@ object AnonF {
     solution: Vector
   ): AnonF = {
     val __obj = js.Dynamic.literal(f = f.asInstanceOf[js.Any], gradient = gradient.asInstanceOf[js.Any], invHessian = invHessian.asInstanceOf[js.Any], iterations = iterations.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], solution = solution.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonF]
   }
 }

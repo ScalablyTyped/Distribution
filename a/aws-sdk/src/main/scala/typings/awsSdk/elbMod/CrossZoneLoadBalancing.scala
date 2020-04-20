@@ -16,7 +16,6 @@ object CrossZoneLoadBalancing {
   @scala.inline
   def apply(Enabled: CrossZoneLoadBalancingEnabled): CrossZoneLoadBalancing = {
     val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CrossZoneLoadBalancing]
   }
 }

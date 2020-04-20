@@ -12,10 +12,8 @@ trait LegendType extends js.Object
 
 object LegendType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def gradient: typings.vegaTypings.vegaTypingsStrings.gradient = "gradient".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.gradient]
   @scala.inline
-  def gradient: typings.vegaTypings.vegaTypingsStrings.gradient = this.cast("gradient")
-  @scala.inline
-  def symbol: typings.vegaTypings.vegaTypingsStrings.symbol = this.cast("symbol")
+  def symbol: typings.vegaTypings.vegaTypingsStrings.symbol = "symbol".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.symbol]
 }
 

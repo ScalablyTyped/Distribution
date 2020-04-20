@@ -12,7 +12,6 @@ object AnonBreakpoint {
   @scala.inline
   def apply(breakpoint: Double): AnonBreakpoint = {
     val __obj = js.Dynamic.literal(breakpoint = breakpoint.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBreakpoint]
   }
 }

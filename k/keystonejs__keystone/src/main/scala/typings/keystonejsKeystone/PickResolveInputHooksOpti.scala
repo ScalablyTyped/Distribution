@@ -23,7 +23,6 @@ object PickResolveInputHooksOpti {
     updatedItem: js.Any
   ): PickResolveInputHooksOpti = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], existingItem = existingItem.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], originalInput = originalInput.asInstanceOf[js.Any], updatedItem = updatedItem.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickResolveInputHooksOpti]
   }
 }

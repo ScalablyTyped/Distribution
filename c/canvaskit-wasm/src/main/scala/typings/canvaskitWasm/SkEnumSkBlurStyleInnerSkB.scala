@@ -24,7 +24,6 @@ object SkEnumSkBlurStyleInnerSkB {
     values: js.Array[SkBlurStyle]
   ): SkEnumSkBlurStyleInnerSkB = {
     val __obj = js.Dynamic.literal(Inner = Inner.asInstanceOf[js.Any], Normal = Normal.asInstanceOf[js.Any], Outer = Outer.asInstanceOf[js.Any], Solid = Solid.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SkEnumSkBlurStyleInnerSkB]
   }
 }

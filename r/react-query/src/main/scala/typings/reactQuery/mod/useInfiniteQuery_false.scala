@@ -23,26 +23,26 @@ object useInfiniteQuery_false extends js.Object {
     queryFn: InfiniteQueryFunction[TResult, js.Array[TKey], TMoreVariable],
     config: InfiniteQueryOptions[TResult, TMoreVariable]
   ): InfiniteQueryResult[TResult, TMoreVariable] = js.native
-  def apply[TResult, TKey /* <: AnyQueryKey */, TVariables /* <: AnyVariables */, TMoreVariable](
+  def apply[TResult, TKey /* <: String */, TVariables /* <: AnyVariables */, TMoreVariable](
     queryKey: js.Function0[js.UndefOr[TKey | `false` | Null]],
     variables: TVariables,
-    queryFn: InfiniteQueryFunctionWithVariables[TResult, TKey, TVariables, TMoreVariable]
+    queryFn: InfiniteQueryFunctionWithVariables[TResult, js.Array[TKey], TVariables, TMoreVariable]
   ): InfiniteQueryResult[TResult, TMoreVariable] = js.native
-  def apply[TResult, TKey /* <: AnyQueryKey */, TVariables /* <: AnyVariables */, TMoreVariable](
+  def apply[TResult, TKey /* <: String */, TVariables /* <: AnyVariables */, TMoreVariable](
     queryKey: js.Function0[js.UndefOr[TKey | `false` | Null]],
     variables: TVariables,
-    queryFn: InfiniteQueryFunctionWithVariables[TResult, TKey, TVariables, TMoreVariable],
+    queryFn: InfiniteQueryFunctionWithVariables[TResult, js.Array[TKey], TVariables, TMoreVariable],
     config: InfiniteQueryOptions[TResult, TMoreVariable]
   ): InfiniteQueryResult[TResult, TMoreVariable] = js.native
-  def apply[TResult, TKey /* <: AnyQueryKey */, TVariables /* <: AnyVariables */, TMoreVariable](
+  def apply[TResult, TKey /* <: String */, TVariables /* <: AnyVariables */, TMoreVariable](
     queryKey: `false`,
     variables: TVariables,
-    queryFn: InfiniteQueryFunctionWithVariables[TResult, TKey, TVariables, TMoreVariable]
+    queryFn: InfiniteQueryFunctionWithVariables[TResult, js.Array[TKey], TVariables, TMoreVariable]
   ): InfiniteQueryResult[TResult, TMoreVariable] = js.native
-  def apply[TResult, TKey /* <: AnyQueryKey */, TVariables /* <: AnyVariables */, TMoreVariable](
+  def apply[TResult, TKey /* <: String */, TVariables /* <: AnyVariables */, TMoreVariable](
     queryKey: `false`,
     variables: TVariables,
-    queryFn: InfiniteQueryFunctionWithVariables[TResult, TKey, TVariables, TMoreVariable],
+    queryFn: InfiniteQueryFunctionWithVariables[TResult, js.Array[TKey], TVariables, TMoreVariable],
     config: InfiniteQueryOptions[TResult, TMoreVariable]
   ): InfiniteQueryResult[TResult, TMoreVariable] = js.native
 }

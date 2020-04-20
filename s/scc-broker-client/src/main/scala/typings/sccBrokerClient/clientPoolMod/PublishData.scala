@@ -15,7 +15,6 @@ object PublishData {
   @scala.inline
   def apply(channel: String, data: js.Any, poolIndex: Double, targetURI: String): PublishData = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], poolIndex = poolIndex.asInstanceOf[js.Any], targetURI = targetURI.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PublishData]
   }
 }

@@ -17,7 +17,6 @@ object ISmsTextMessageStatics {
     fromBinaryMessage: SmsBinaryMessage => SmsTextMessage
   ): ISmsTextMessageStatics = {
     val __obj = js.Dynamic.literal(fromBinaryData = js.Any.fromFunction2(fromBinaryData), fromBinaryMessage = js.Any.fromFunction1(fromBinaryMessage))
-  
     __obj.asInstanceOf[ISmsTextMessageStatics]
   }
 }

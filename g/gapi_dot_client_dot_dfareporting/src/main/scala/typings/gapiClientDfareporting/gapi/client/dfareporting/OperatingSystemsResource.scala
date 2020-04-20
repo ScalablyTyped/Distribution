@@ -21,7 +21,6 @@ object OperatingSystemsResource {
     list: AnonKey => Request_[OperatingSystemsListResponse]
   ): OperatingSystemsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[OperatingSystemsResource]
   }
 }

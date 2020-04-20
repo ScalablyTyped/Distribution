@@ -19,7 +19,6 @@ object AdCustomizerSourceBuilder {
     withName: String => AdCustomizerSourceBuilder[AdCustomizerSource]
   ): AdCustomizerSourceBuilder[AdCustomizerSource] = {
     val __obj = js.Dynamic.literal(addAttribute = js.Any.fromFunction2(addAttribute), addAttributes = js.Any.fromFunction1(addAttributes), build = js.Any.fromFunction0(build), withName = js.Any.fromFunction1(withName))
-  
     __obj.asInstanceOf[AdCustomizerSourceBuilder[AdCustomizerSource]]
   }
 }

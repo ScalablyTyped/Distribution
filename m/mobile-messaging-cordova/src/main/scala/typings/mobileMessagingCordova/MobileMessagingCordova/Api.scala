@@ -1,5 +1,6 @@
 package typings.mobileMessagingCordova.MobileMessagingCordova
 
+import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -161,6 +162,39 @@ trait Api extends js.Object {
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* error */ MobileMessagingError, Unit]
   ): Unit = js.native
+  /**
+    * Sends an event to the server eventually, handles possible errors and do retries for you.
+    *
+    * @param eventData. An object containing event data
+    * {
+    *   definitionId: "eventDefinitionId"
+    *   properties: {
+    *     "stringAttribute": "string",
+    *     "numberAttribute": 1,
+    *     "dateAttribute": "2020-02-26T09:41:57Z",
+    *     "booleanAttribute": true
+    *   }
+    * }
+    */
+  def submitEvent(eventData: CustomEvent[_]): Unit = js.native
+  /**
+    * Sends an event to the server immediately.
+    * You have to handle possible connection or server errors, do retries yourself.
+    *
+    * @param eventData. An object containing event data
+    * {
+    *   definitionId: "eventDefinitionId"
+    *   properties: {
+    *     "stringAttribute": "string",
+    *     "numberAttribute": 1,
+    *     "dateAttribute": "2020-02-26T09:41:57Z",
+    *     "booleanAttribute": true
+    *   }
+    * }
+    * @param callback will be called on result
+    * @param errorCallback will be called on error, you have to handle error and do retries yourself
+    */
+  def submitEventImmediately(eventData: CustomEvent[_], callback: js.Function0[Unit], errorCallback: js.Function0[Unit]): Unit = js.native
   /**
     * Un register from MobileMessaging library event.
     *

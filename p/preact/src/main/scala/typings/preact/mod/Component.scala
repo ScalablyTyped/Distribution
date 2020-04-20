@@ -39,20 +39,20 @@ abstract class Component[P, S] () extends AnyComponent[P, S] {
   def render(props: RenderableProps[P, _]): ComponentChild = js.native
   def render(props: RenderableProps[P, _], state: S): ComponentChild = js.native
   def render(props: RenderableProps[P, _], state: S, context: js.Any): ComponentChild = js.native
-  def setState[K /* <: String */](): Unit = js.native
+  def setState[K /* <: /* keyof S */ String */](): Unit = js.native
   // From https://github.com/DefinitelyTyped/DefinitelyTyped/blob/e836acc75a78cf0655b5dfdbe81d69fdd4d8a252/types/react/index.d.ts#L402
   // // We MUST keep setState() as a unified signature because it allows proper checking of the method return type.
   // // See: https://github.com/DefinitelyTyped/DefinitelyTyped/issues/18365#issuecomment-351013257
-  def setState[K /* <: String */](state: js.Function2[/* prevState */ S, /* props */ P, (Pick[S, K]) | Partial[S] | Null]): Unit = js.native
-  def setState[K /* <: String */](
+  def setState[K /* <: /* keyof S */ String */](state: js.Function2[/* prevState */ S, /* props */ P, (Pick[S, K]) | Partial[S] | Null]): Unit = js.native
+  def setState[K /* <: /* keyof S */ String */](
     state: js.Function2[/* prevState */ S, /* props */ P, (Pick[S, K]) | Partial[S] | Null],
     callback: js.Function0[Unit]
   ): Unit = js.native
-  def setState[K /* <: String */](state: Null, callback: js.Function0[Unit]): Unit = js.native
-  def setState[K /* <: String */](state: Partial[S]): Unit = js.native
-  def setState[K /* <: String */](state: Partial[S], callback: js.Function0[Unit]): Unit = js.native
-  def setState[K /* <: String */](state: Pick[S, K]): Unit = js.native
-  def setState[K /* <: String */](state: Pick[S, K], callback: js.Function0[Unit]): Unit = js.native
+  def setState[K /* <: /* keyof S */ String */](state: Null, callback: js.Function0[Unit]): Unit = js.native
+  def setState[K /* <: /* keyof S */ String */](state: Partial[S]): Unit = js.native
+  def setState[K /* <: /* keyof S */ String */](state: Partial[S], callback: js.Function0[Unit]): Unit = js.native
+  def setState[K /* <: /* keyof S */ String */](state: Pick[S, K]): Unit = js.native
+  def setState[K /* <: /* keyof S */ String */](state: Pick[S, K], callback: js.Function0[Unit]): Unit = js.native
 }
 
 /* static members */

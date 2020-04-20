@@ -63,7 +63,6 @@ object Result {
     string: String
   ): Result = {
     val __obj = js.Dynamic.literal(equation = equation.asInstanceOf[js.Any], points = points.asInstanceOf[js.Any], predict = js.Any.fromFunction1(predict), r2 = r2.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Result]
   }
 }

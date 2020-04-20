@@ -17,7 +17,6 @@ object CreateImportJobRequest {
   @scala.inline
   def apply(ApplicationId: string, ImportJobRequest: ImportJobRequest): CreateImportJobRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], ImportJobRequest = ImportJobRequest.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateImportJobRequest]
   }
 }

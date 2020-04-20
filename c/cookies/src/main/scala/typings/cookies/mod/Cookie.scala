@@ -40,7 +40,6 @@ object Cookie {
     value: String
   ): Cookie = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], expires = expires.asInstanceOf[js.Any], httpOnly = httpOnly.asInstanceOf[js.Any], maxAge = maxAge.asInstanceOf[js.Any], maxage = maxage.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], overwrite = overwrite.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], sameSite = sameSite.asInstanceOf[js.Any], secure = secure.asInstanceOf[js.Any], toHeader = js.Any.fromFunction0(toHeader), value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Cookie]
   }
 }

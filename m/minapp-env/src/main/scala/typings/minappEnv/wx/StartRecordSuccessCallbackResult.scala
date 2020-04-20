@@ -13,7 +13,6 @@ object StartRecordSuccessCallbackResult {
   @scala.inline
   def apply(tempFilePath: String): StartRecordSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(tempFilePath = tempFilePath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StartRecordSuccessCallbackResult]
   }
 }

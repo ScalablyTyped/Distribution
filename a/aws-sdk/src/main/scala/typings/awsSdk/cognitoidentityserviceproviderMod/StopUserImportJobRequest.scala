@@ -20,7 +20,6 @@ object StopUserImportJobRequest {
   @scala.inline
   def apply(JobId: UserImportJobIdType, UserPoolId: UserPoolIdType): StopUserImportJobRequest = {
     val __obj = js.Dynamic.literal(JobId = JobId.asInstanceOf[js.Any], UserPoolId = UserPoolId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopUserImportJobRequest]
   }
 }

@@ -4,6 +4,7 @@ import typings.express.mod.NextFunction
 import typings.express.mod.Request_
 import typings.express.mod.Response_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.inversify.interfacesMod.interfaces.BindingToSyntax
 import typings.inversify.interfacesMod.interfaces.ServiceIdentifier
 import typings.inversifyExpressUtils.interfacesMod.interfaces.HttpContext
@@ -18,7 +19,7 @@ object baseMiddlewareMod extends js.Object {
   abstract class BaseMiddleware () extends js.Object {
     val httpContext: HttpContext = js.native
     /* protected */ def bind[T](serviceIdentifier: ServiceIdentifier[T]): BindingToSyntax[T] = js.native
-    def handler(req: Request_[ParamsDictionary], res: Response_[_], next: NextFunction): Unit = js.native
+    def handler(req: Request_[ParamsDictionary, _, _, Query], res: Response_[_], next: NextFunction): Unit = js.native
   }
   
 }

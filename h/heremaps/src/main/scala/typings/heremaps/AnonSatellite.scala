@@ -15,7 +15,6 @@ object AnonSatellite {
   @scala.inline
   def apply(normal: MapType, satellite: MapType, terrain: MapType): AnonSatellite = {
     val __obj = js.Dynamic.literal(normal = normal.asInstanceOf[js.Any], satellite = satellite.asInstanceOf[js.Any], terrain = terrain.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSatellite]
   }
 }

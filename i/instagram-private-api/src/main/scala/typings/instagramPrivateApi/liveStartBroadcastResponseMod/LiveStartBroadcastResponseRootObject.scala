@@ -13,7 +13,6 @@ object LiveStartBroadcastResponseRootObject {
   @scala.inline
   def apply(media_id: String, status: String): LiveStartBroadcastResponseRootObject = {
     val __obj = js.Dynamic.literal(media_id = media_id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LiveStartBroadcastResponseRootObject]
   }
 }

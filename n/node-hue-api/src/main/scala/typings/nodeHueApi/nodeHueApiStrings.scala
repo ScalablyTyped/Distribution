@@ -126,9 +126,9 @@ object nodeHueApiStrings {
   @scala.inline
   def Driveway: Driveway = "Driveway".asInstanceOf[Driveway]
   @scala.inline
-  def `Front door`: `Front door` = "Front door".asInstanceOf[`Front door`]
+  def `Front door`: `Front door` = ("Front door").asInstanceOf[`Front door`]
   @scala.inline
-  def `Garage Terrace`: `Garage Terrace` = "Garage Terrace".asInstanceOf[`Garage Terrace`]
+  def `Garage Terrace`: `Garage Terrace` = ("Garage Terrace").asInstanceOf[`Garage Terrace`]
   @scala.inline
   def Garden: Garden = "Garden".asInstanceOf[Garden]
   @scala.inline
@@ -136,7 +136,7 @@ object nodeHueApiStrings {
   @scala.inline
   def Hallway: Hallway = "Hallway".asInstanceOf[Hallway]
   @scala.inline
-  def `Kids bedroom`: `Kids bedroom` = "Kids bedroom".asInstanceOf[`Kids bedroom`]
+  def `Kids bedroom`: `Kids bedroom` = ("Kids bedroom").asInstanceOf[`Kids bedroom`]
   @scala.inline
   def Kitchen: Kitchen = "Kitchen".asInstanceOf[Kitchen]
   @scala.inline
@@ -144,7 +144,7 @@ object nodeHueApiStrings {
   @scala.inline
   def LightSource: LightSource = "LightSource".asInstanceOf[LightSource]
   @scala.inline
-  def `Living room`: `Living room` = "Living room".asInstanceOf[`Living room`]
+  def `Living room`: `Living room` = ("Living room").asInstanceOf[`Living room`]
   @scala.inline
   def Luminaire: Luminaire = "Luminaire".asInstanceOf[Luminaire]
   @scala.inline

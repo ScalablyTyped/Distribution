@@ -14,14 +14,12 @@ trait ActivationStateType extends js.Object
 
 object ActivationStateType {
   @scala.inline
-  def Activated: typings.chromeApps.chromeAppsStrings.Activated = this.cast("Activated")
+  def Activated: typings.chromeApps.chromeAppsStrings.Activated = "Activated".asInstanceOf[typings.chromeApps.chromeAppsStrings.Activated]
   @scala.inline
-  def Activating: typings.chromeApps.chromeAppsStrings.Activating = this.cast("Activating")
+  def Activating: typings.chromeApps.chromeAppsStrings.Activating = "Activating".asInstanceOf[typings.chromeApps.chromeAppsStrings.Activating]
   @scala.inline
-  def NotActivated: typings.chromeApps.chromeAppsStrings.NotActivated = this.cast("NotActivated")
+  def NotActivated: typings.chromeApps.chromeAppsStrings.NotActivated = "NotActivated".asInstanceOf[typings.chromeApps.chromeAppsStrings.NotActivated]
   @scala.inline
-  def PartiallyActivated: typings.chromeApps.chromeAppsStrings.PartiallyActivated = this.cast("PartiallyActivated")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def PartiallyActivated: typings.chromeApps.chromeAppsStrings.PartiallyActivated = "PartiallyActivated".asInstanceOf[typings.chromeApps.chromeAppsStrings.PartiallyActivated]
 }
 

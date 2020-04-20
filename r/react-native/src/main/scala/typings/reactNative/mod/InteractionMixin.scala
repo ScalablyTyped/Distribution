@@ -22,7 +22,6 @@ object InteractionMixin {
     runAfterInteractions: js.Function0[_] => Unit
   ): InteractionMixin = {
     val __obj = js.Dynamic.literal(clearInteractionHandle = js.Any.fromFunction1(clearInteractionHandle), createInteractionHandle = js.Any.fromFunction0(createInteractionHandle), runAfterInteractions = js.Any.fromFunction1(runAfterInteractions))
-  
     __obj.asInstanceOf[InteractionMixin]
   }
 }

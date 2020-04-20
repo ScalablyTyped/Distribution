@@ -45,7 +45,6 @@ object Addin_ {
     showAsTaskpane: () => js.Promise[Unit]
   ): Addin_ = {
     val __obj = js.Dynamic.literal(getStartupBehavior = js.Any.fromFunction0(getStartupBehavior), hide = js.Any.fromFunction0(hide), onVisibilityModeChanged = js.Any.fromFunction1(onVisibilityModeChanged), setStartupBehavior = js.Any.fromFunction1(setStartupBehavior), showAsTaskpane = js.Any.fromFunction0(showAsTaskpane))
-  
     __obj.asInstanceOf[Addin_]
   }
 }

@@ -15,7 +15,6 @@ object IOctreeContainer {
   @scala.inline
   def apply[T](blocks: js.Array[OctreeBlock[T]]): IOctreeContainer[T] = {
     val __obj = js.Dynamic.literal(blocks = blocks.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IOctreeContainer[T]]
   }
 }

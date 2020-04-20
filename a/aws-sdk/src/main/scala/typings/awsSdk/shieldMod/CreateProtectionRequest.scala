@@ -20,7 +20,6 @@ object CreateProtectionRequest {
   @scala.inline
   def apply(Name: ProtectionName, ResourceArn: ResourceArn): CreateProtectionRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], ResourceArn = ResourceArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateProtectionRequest]
   }
 }

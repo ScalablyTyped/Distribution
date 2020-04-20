@@ -1,6 +1,10 @@
 package typings.trustedTypes.mod._Global_
 
 import typings.std.Pick
+import typings.trustedTypes.trustedTypesStrings.createHTML
+import typings.trustedTypes.trustedTypesStrings.createScript
+import typings.trustedTypes.trustedTypesStrings.createScriptURL
+import typings.trustedTypes.trustedTypesStrings.createURL
 import typings.trustedTypes.trustedTypesStrings.name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,8 +14,8 @@ import scala.scalajs.js.annotation._
 trait TrustedTypePolicyFactory extends js.Object {
   var defaultPolicy: js.UndefOr[TrustedTypePolicy] = js.native
   var emptyHTML: TrustedHTML = js.native
-  def createPolicy[Keys /* <: String */](name: String, policyOptions: Pick[TrustedTypePolicyOptions, Keys]): Pick[TrustedTypePolicy, name | Keys] = js.native
-  def createPolicy[Keys /* <: String */](name: String, policyOptions: Pick[TrustedTypePolicyOptions, Keys], expose: Boolean): Pick[TrustedTypePolicy, name | Keys] = js.native
+  def createPolicy[Keys /* <: createHTML | createScript | createScriptURL | createURL */](name: String, policyOptions: Pick[TrustedTypePolicyOptions, Keys]): Pick[TrustedTypePolicy, name | Keys] = js.native
+  def createPolicy[Keys /* <: createHTML | createScript | createScriptURL | createURL */](name: String, policyOptions: Pick[TrustedTypePolicyOptions, Keys], expose: Boolean): Pick[TrustedTypePolicy, name | Keys] = js.native
   def getAttributeType(tagName: String, attrName: String): js.UndefOr[String] = js.native
   def getAttributeType(tagName: String, attrName: String, elemNs: String): js.UndefOr[String] = js.native
   def getAttributeType(tagName: String, attrName: String, elemNs: String, attrNs: String): js.UndefOr[String] = js.native

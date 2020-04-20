@@ -18,7 +18,6 @@ object IControlChannelTriggerResetEventDetails {
     softwareSlotReset: Boolean
   ): IControlChannelTriggerResetEventDetails = {
     val __obj = js.Dynamic.literal(hardwareSlotReset = hardwareSlotReset.asInstanceOf[js.Any], resetReason = resetReason.asInstanceOf[js.Any], softwareSlotReset = softwareSlotReset.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IControlChannelTriggerResetEventDetails]
   }
 }

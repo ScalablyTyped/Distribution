@@ -21,7 +21,6 @@ object WizardContextRenderProps {
   @scala.inline
   def AnonChildren(children: WizardContext => ReactNode): WizardContextRenderProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-  
     __obj.asInstanceOf[WizardContextRenderProps]
   }
 }

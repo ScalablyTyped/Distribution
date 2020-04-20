@@ -13,7 +13,6 @@ object TypeofTranslate {
   @scala.inline
   def apply(Types: TypeofTranslate): TypeofTranslate = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofTranslate]
   }
 }

@@ -35,7 +35,6 @@ object IAnimator {
     totalTime: Double => Double
   ): IAnimator = {
     val __obj = js.Dynamic.literal(animate = js.Any.fromFunction2(animate), totalTime = js.Any.fromFunction1(totalTime))
-  
     __obj.asInstanceOf[IAnimator]
   }
 }

@@ -20,7 +20,6 @@ object EncryptionKey {
   @scala.inline
   def apply(Id: EncryptionKeyID, Type: EncryptionKeyType): EncryptionKey = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EncryptionKey]
   }
 }

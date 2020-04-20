@@ -15,7 +15,6 @@ object Module_ {
   @scala.inline
   def apply(exports: js.Any): Module_ = {
     val __obj = js.Dynamic.literal(exports = exports.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Module_]
   }
 }

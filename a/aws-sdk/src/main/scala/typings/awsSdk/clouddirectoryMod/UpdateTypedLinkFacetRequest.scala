@@ -33,7 +33,6 @@ object UpdateTypedLinkFacetRequest {
     SchemaArn: Arn
   ): UpdateTypedLinkFacetRequest = {
     val __obj = js.Dynamic.literal(AttributeUpdates = AttributeUpdates.asInstanceOf[js.Any], IdentityAttributeOrder = IdentityAttributeOrder.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], SchemaArn = SchemaArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateTypedLinkFacetRequest]
   }
 }

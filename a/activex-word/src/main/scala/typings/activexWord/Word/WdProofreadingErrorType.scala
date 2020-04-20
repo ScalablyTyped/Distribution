@@ -14,10 +14,8 @@ trait WdProofreadingErrorType extends js.Object
 
 object WdProofreadingErrorType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdGrammaticalError: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdGrammaticalError: `1` = this.cast(1)
-  @scala.inline
-  def wdSpellingError: `0` = this.cast(0)
+  def wdSpellingError: `0` = 0.asInstanceOf[`0`]
 }
 

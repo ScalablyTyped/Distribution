@@ -49,25 +49,45 @@ package object oidcStrategyMod {
     scala.Unit
   ])
   type VerifyOIDCFunctionWithReq = (js.Function3[
-    /* req */ typings.express.mod.Request_[typings.expressServeStaticCore.mod.ParamsDictionary], 
+    /* req */ typings.express.mod.Request_[
+      typings.expressServeStaticCore.mod.ParamsDictionary, 
+      js.Any, 
+      js.Any, 
+      typings.expressServeStaticCore.mod.Query
+    ], 
     /* profile */ typings.passportAzureAd.oidcStrategyMod.IProfile, 
     /* done */ typings.passportAzureAd.commonMod.VerifyCallback, 
     scala.Unit
   ]) | (js.Function4[
-    /* req */ typings.express.mod.Request_[typings.expressServeStaticCore.mod.ParamsDictionary], 
+    /* req */ typings.express.mod.Request_[
+      typings.expressServeStaticCore.mod.ParamsDictionary, 
+      js.Any, 
+      js.Any, 
+      typings.expressServeStaticCore.mod.Query
+    ], 
     /* iss */ java.lang.String, 
     /* sub */ java.lang.String, 
     /* done */ typings.passportAzureAd.commonMod.VerifyCallback, 
     scala.Unit
   ]) | (js.Function5[
-    /* req */ typings.express.mod.Request_[typings.expressServeStaticCore.mod.ParamsDictionary], 
+    /* req */ typings.express.mod.Request_[
+      typings.expressServeStaticCore.mod.ParamsDictionary, 
+      js.Any, 
+      js.Any, 
+      typings.expressServeStaticCore.mod.Query
+    ], 
     /* iss */ java.lang.String, 
     /* sub */ java.lang.String, 
     /* profile */ typings.passportAzureAd.oidcStrategyMod.IProfile, 
     /* done */ typings.passportAzureAd.commonMod.VerifyCallback, 
     scala.Unit
   ]) | (js.Function7[
-    /* req */ typings.express.mod.Request_[typings.expressServeStaticCore.mod.ParamsDictionary], 
+    /* req */ typings.express.mod.Request_[
+      typings.expressServeStaticCore.mod.ParamsDictionary, 
+      js.Any, 
+      js.Any, 
+      typings.expressServeStaticCore.mod.Query
+    ], 
     /* iss */ java.lang.String, 
     /* sub */ java.lang.String, 
     /* profile */ typings.passportAzureAd.oidcStrategyMod.IProfile, 
@@ -76,7 +96,12 @@ package object oidcStrategyMod {
     /* done */ typings.passportAzureAd.commonMod.VerifyCallback, 
     scala.Unit
   ]) | (js.Function8[
-    /* req */ typings.express.mod.Request_[typings.expressServeStaticCore.mod.ParamsDictionary], 
+    /* req */ typings.express.mod.Request_[
+      typings.expressServeStaticCore.mod.ParamsDictionary, 
+      js.Any, 
+      js.Any, 
+      typings.expressServeStaticCore.mod.Query
+    ], 
     /* iss */ java.lang.String, 
     /* sub */ java.lang.String, 
     /* profile */ typings.passportAzureAd.oidcStrategyMod.IProfile, 
@@ -86,7 +111,12 @@ package object oidcStrategyMod {
     /* done */ typings.passportAzureAd.commonMod.VerifyCallback, 
     scala.Unit
   ]) | (js.Function9[
-    /* req */ typings.express.mod.Request_[typings.expressServeStaticCore.mod.ParamsDictionary], 
+    /* req */ typings.express.mod.Request_[
+      typings.expressServeStaticCore.mod.ParamsDictionary, 
+      js.Any, 
+      js.Any, 
+      typings.expressServeStaticCore.mod.Query
+    ], 
     /* iss */ java.lang.String, 
     /* sub */ java.lang.String, 
     /* profile */ typings.passportAzureAd.oidcStrategyMod.IProfile, 

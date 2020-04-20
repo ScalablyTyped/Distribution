@@ -15,7 +15,6 @@ object ISavedTransformationMatrix {
   @scala.inline
   def apply(viewProjection: Matrix, world: Matrix): ISavedTransformationMatrix = {
     val __obj = js.Dynamic.literal(viewProjection = viewProjection.asInstanceOf[js.Any], world = world.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISavedTransformationMatrix]
   }
 }

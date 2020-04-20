@@ -24,34 +24,32 @@ trait Placement extends js.Object
 
 object Placement {
   @scala.inline
-  def auto: typings.reactJoyride.reactJoyrideStrings.auto = this.cast("auto")
+  def auto: typings.reactJoyride.reactJoyrideStrings.auto = "auto".asInstanceOf[typings.reactJoyride.reactJoyrideStrings.auto]
   @scala.inline
-  def bottom: typings.reactJoyride.reactJoyrideStrings.bottom = this.cast("bottom")
+  def bottom: typings.reactJoyride.reactJoyrideStrings.bottom = "bottom".asInstanceOf[typings.reactJoyride.reactJoyrideStrings.bottom]
   @scala.inline
-  def `bottom-end`: typings.reactJoyride.reactJoyrideStrings.`bottom-end` = this.cast("bottom-end")
+  def `bottom-end`: typings.reactJoyride.reactJoyrideStrings.`bottom-end` = "bottom-end".asInstanceOf[typings.reactJoyride.reactJoyrideStrings.`bottom-end`]
   @scala.inline
-  def `bottom-start`: typings.reactJoyride.reactJoyrideStrings.`bottom-start` = this.cast("bottom-start")
+  def `bottom-start`: typings.reactJoyride.reactJoyrideStrings.`bottom-start` = "bottom-start".asInstanceOf[typings.reactJoyride.reactJoyrideStrings.`bottom-start`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.reactJoyride.reactJoyrideStrings.center = "center".asInstanceOf[typings.reactJoyride.reactJoyrideStrings.center]
   @scala.inline
-  def center: typings.reactJoyride.reactJoyrideStrings.center = this.cast("center")
+  def left: typings.reactJoyride.reactJoyrideStrings.left = "left".asInstanceOf[typings.reactJoyride.reactJoyrideStrings.left]
   @scala.inline
-  def left: typings.reactJoyride.reactJoyrideStrings.left = this.cast("left")
+  def `left-end`: typings.reactJoyride.reactJoyrideStrings.`left-end` = "left-end".asInstanceOf[typings.reactJoyride.reactJoyrideStrings.`left-end`]
   @scala.inline
-  def `left-end`: typings.reactJoyride.reactJoyrideStrings.`left-end` = this.cast("left-end")
+  def `left-start`: typings.reactJoyride.reactJoyrideStrings.`left-start` = "left-start".asInstanceOf[typings.reactJoyride.reactJoyrideStrings.`left-start`]
   @scala.inline
-  def `left-start`: typings.reactJoyride.reactJoyrideStrings.`left-start` = this.cast("left-start")
+  def right: typings.reactJoyride.reactJoyrideStrings.right = "right".asInstanceOf[typings.reactJoyride.reactJoyrideStrings.right]
   @scala.inline
-  def right: typings.reactJoyride.reactJoyrideStrings.right = this.cast("right")
+  def `right-end`: typings.reactJoyride.reactJoyrideStrings.`right-end` = "right-end".asInstanceOf[typings.reactJoyride.reactJoyrideStrings.`right-end`]
   @scala.inline
-  def `right-end`: typings.reactJoyride.reactJoyrideStrings.`right-end` = this.cast("right-end")
+  def `right-start`: typings.reactJoyride.reactJoyrideStrings.`right-start` = "right-start".asInstanceOf[typings.reactJoyride.reactJoyrideStrings.`right-start`]
   @scala.inline
-  def `right-start`: typings.reactJoyride.reactJoyrideStrings.`right-start` = this.cast("right-start")
+  def top: typings.reactJoyride.reactJoyrideStrings.top = "top".asInstanceOf[typings.reactJoyride.reactJoyrideStrings.top]
   @scala.inline
-  def top: typings.reactJoyride.reactJoyrideStrings.top = this.cast("top")
+  def `top-end`: typings.reactJoyride.reactJoyrideStrings.`top-end` = "top-end".asInstanceOf[typings.reactJoyride.reactJoyrideStrings.`top-end`]
   @scala.inline
-  def `top-end`: typings.reactJoyride.reactJoyrideStrings.`top-end` = this.cast("top-end")
-  @scala.inline
-  def `top-start`: typings.reactJoyride.reactJoyrideStrings.`top-start` = this.cast("top-start")
+  def `top-start`: typings.reactJoyride.reactJoyrideStrings.`top-start` = "top-start".asInstanceOf[typings.reactJoyride.reactJoyrideStrings.`top-start`]
 }
 

@@ -42,11 +42,11 @@ class LayoutParameter protected ()
     */
   /* CompleteClass */
   override val qualifiedName: String | Null = js.native
-  def containerAsLayout(): Layout = js.native
-  def name(): String = js.native
+  def containerAsLayout: Layout = js.native
+  def name: String = js.native
   def name(newValue: String): js.Any = js.native
   @JSName("qualifiedName")
-  def qualifiedName_MLayoutParameter(): String | Null = js.native
+  def qualifiedName_MLayoutParameter: String | Null = js.native
 }
 
 /* static members */

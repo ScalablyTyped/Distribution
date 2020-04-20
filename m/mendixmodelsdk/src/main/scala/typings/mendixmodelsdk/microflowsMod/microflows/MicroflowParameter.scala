@@ -32,7 +32,7 @@ class MicroflowParameter protected () extends MicroflowParameterBase {
   @JSName("model")
   var model_FMicroflowParameter: IModel = js.native
   @JSName("containerAsMicroflow")
-  def containerAsMicroflow_MMicroflowParameter(): Microflow = js.native
+  def containerAsMicroflow_MMicroflowParameter: Microflow = js.native
 }
 
 /* static members */

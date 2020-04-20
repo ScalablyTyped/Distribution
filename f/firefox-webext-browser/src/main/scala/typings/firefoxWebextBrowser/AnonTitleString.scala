@@ -15,7 +15,6 @@ object AnonTitleString {
   @scala.inline
   def apply(title: String, url: String): AnonTitleString = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTitleString]
   }
 }

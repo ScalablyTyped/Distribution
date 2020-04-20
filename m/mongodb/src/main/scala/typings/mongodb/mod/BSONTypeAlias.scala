@@ -32,50 +32,48 @@ trait BSONTypeAlias extends js.Object
 
 object BSONTypeAlias {
   @scala.inline
-  def array: typings.mongodb.mongodbStrings.array = this.cast("array")
+  def array: typings.mongodb.mongodbStrings.array = "array".asInstanceOf[typings.mongodb.mongodbStrings.array]
   @scala.inline
-  def binData: typings.mongodb.mongodbStrings.binData = this.cast("binData")
+  def binData: typings.mongodb.mongodbStrings.binData = "binData".asInstanceOf[typings.mongodb.mongodbStrings.binData]
   @scala.inline
-  def bool: typings.mongodb.mongodbStrings.bool = this.cast("bool")
+  def bool: typings.mongodb.mongodbStrings.bool = "bool".asInstanceOf[typings.mongodb.mongodbStrings.bool]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def date: typings.mongodb.mongodbStrings.date = "date".asInstanceOf[typings.mongodb.mongodbStrings.date]
   @scala.inline
-  def date: typings.mongodb.mongodbStrings.date = this.cast("date")
+  def dbPointer: typings.mongodb.mongodbStrings.dbPointer = "dbPointer".asInstanceOf[typings.mongodb.mongodbStrings.dbPointer]
   @scala.inline
-  def dbPointer: typings.mongodb.mongodbStrings.dbPointer = this.cast("dbPointer")
+  def decimal: typings.mongodb.mongodbStrings.decimal = "decimal".asInstanceOf[typings.mongodb.mongodbStrings.decimal]
   @scala.inline
-  def decimal: typings.mongodb.mongodbStrings.decimal = this.cast("decimal")
+  def double: typings.mongodb.mongodbStrings.double = "double".asInstanceOf[typings.mongodb.mongodbStrings.double]
   @scala.inline
-  def double: typings.mongodb.mongodbStrings.double = this.cast("double")
+  def int: typings.mongodb.mongodbStrings.int = "int".asInstanceOf[typings.mongodb.mongodbStrings.int]
   @scala.inline
-  def int: typings.mongodb.mongodbStrings.int = this.cast("int")
+  def javascript: typings.mongodb.mongodbStrings.javascript = "javascript".asInstanceOf[typings.mongodb.mongodbStrings.javascript]
   @scala.inline
-  def javascript: typings.mongodb.mongodbStrings.javascript = this.cast("javascript")
+  def javascriptWithScope: typings.mongodb.mongodbStrings.javascriptWithScope = "javascriptWithScope".asInstanceOf[typings.mongodb.mongodbStrings.javascriptWithScope]
   @scala.inline
-  def javascriptWithScope: typings.mongodb.mongodbStrings.javascriptWithScope = this.cast("javascriptWithScope")
+  def long: typings.mongodb.mongodbStrings.long = "long".asInstanceOf[typings.mongodb.mongodbStrings.long]
   @scala.inline
-  def long: typings.mongodb.mongodbStrings.long = this.cast("long")
+  def maxKey: typings.mongodb.mongodbStrings.maxKey = "maxKey".asInstanceOf[typings.mongodb.mongodbStrings.maxKey]
   @scala.inline
-  def maxKey: typings.mongodb.mongodbStrings.maxKey = this.cast("maxKey")
+  def minKey: typings.mongodb.mongodbStrings.minKey = "minKey".asInstanceOf[typings.mongodb.mongodbStrings.minKey]
   @scala.inline
-  def minKey: typings.mongodb.mongodbStrings.minKey = this.cast("minKey")
+  def `null`: typings.mongodb.mongodbStrings.`null` = "null".asInstanceOf[typings.mongodb.mongodbStrings.`null`]
   @scala.inline
-  def `null`: typings.mongodb.mongodbStrings.`null` = this.cast("null")
+  def number: typings.mongodb.mongodbStrings.number = "number".asInstanceOf[typings.mongodb.mongodbStrings.number]
   @scala.inline
-  def number: typings.mongodb.mongodbStrings.number = this.cast("number")
+  def `object`: typings.mongodb.mongodbStrings.`object` = "object".asInstanceOf[typings.mongodb.mongodbStrings.`object`]
   @scala.inline
-  def `object`: typings.mongodb.mongodbStrings.`object` = this.cast("object")
+  def objectId: typings.mongodb.mongodbStrings.objectId = "objectId".asInstanceOf[typings.mongodb.mongodbStrings.objectId]
   @scala.inline
-  def objectId: typings.mongodb.mongodbStrings.objectId = this.cast("objectId")
+  def regex: typings.mongodb.mongodbStrings.regex = "regex".asInstanceOf[typings.mongodb.mongodbStrings.regex]
   @scala.inline
-  def regex: typings.mongodb.mongodbStrings.regex = this.cast("regex")
+  def string: typings.mongodb.mongodbStrings.string = "string".asInstanceOf[typings.mongodb.mongodbStrings.string]
   @scala.inline
-  def string: typings.mongodb.mongodbStrings.string = this.cast("string")
+  def symbol: typings.mongodb.mongodbStrings.symbol = "symbol".asInstanceOf[typings.mongodb.mongodbStrings.symbol]
   @scala.inline
-  def symbol: typings.mongodb.mongodbStrings.symbol = this.cast("symbol")
+  def timestamp: typings.mongodb.mongodbStrings.timestamp = "timestamp".asInstanceOf[typings.mongodb.mongodbStrings.timestamp]
   @scala.inline
-  def timestamp: typings.mongodb.mongodbStrings.timestamp = this.cast("timestamp")
-  @scala.inline
-  def undefined: typings.mongodb.mongodbStrings.undefined = this.cast("undefined")
+  def undefined: typings.mongodb.mongodbStrings.undefined = "undefined".asInstanceOf[typings.mongodb.mongodbStrings.undefined]
 }
 

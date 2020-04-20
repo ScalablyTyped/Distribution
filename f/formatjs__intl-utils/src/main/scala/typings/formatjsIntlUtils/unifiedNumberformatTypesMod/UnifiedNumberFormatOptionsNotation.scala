@@ -14,14 +14,12 @@ trait UnifiedNumberFormatOptionsNotation extends js.Object
 
 object UnifiedNumberFormatOptionsNotation {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def compact: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.compact = "compact".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.compact]
   @scala.inline
-  def compact: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.compact = this.cast("compact")
+  def engineering: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.engineering = "engineering".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.engineering]
   @scala.inline
-  def engineering: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.engineering = this.cast("engineering")
+  def scientific: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.scientific = "scientific".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.scientific]
   @scala.inline
-  def scientific: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.scientific = this.cast("scientific")
-  @scala.inline
-  def standard: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.standard = this.cast("standard")
+  def standard: typings.formatjsIntlUtils.formatjsIntlUtilsStrings.standard = "standard".asInstanceOf[typings.formatjsIntlUtils.formatjsIntlUtilsStrings.standard]
 }
 

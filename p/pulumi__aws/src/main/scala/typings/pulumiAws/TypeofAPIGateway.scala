@@ -13,7 +13,6 @@ object TypeofAPIGateway {
   @scala.inline
   def apply(Types: TypeofAPIGateway): TypeofAPIGateway = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofAPIGateway]
   }
 }

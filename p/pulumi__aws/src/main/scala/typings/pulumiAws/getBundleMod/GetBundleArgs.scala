@@ -16,7 +16,6 @@ object GetBundleArgs {
   @scala.inline
   def apply(bundleId: String): GetBundleArgs = {
     val __obj = js.Dynamic.literal(bundleId = bundleId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBundleArgs]
   }
 }

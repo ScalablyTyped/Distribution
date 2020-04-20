@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object emotionThemingComponents extends emotionThemingProps {
   @scala.inline
-  def ThemeProvider[Theme]: ComponentType[ThemeProviderProps[Theme]] = typings.emotionTheming.mod.ThemeProvider.asInstanceOf[typings.react.mod.ComponentType[ThemeProviderProps[Theme]]]
+  def ThemeProvider[Theme]: ComponentType[ThemeProviderProps[Theme]] = typings.emotionTheming.mod.ThemeProvider.asInstanceOf[ComponentType[ThemeProviderProps[Theme]]]
 }
 

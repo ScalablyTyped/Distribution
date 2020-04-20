@@ -41,7 +41,6 @@ object GetRepositoryResult {
     tags: StringDictionary[js.Any]
   ): GetRepositoryResult = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], registryId = registryId.asInstanceOf[js.Any], repositoryUrl = repositoryUrl.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetRepositoryResult]
   }
 }

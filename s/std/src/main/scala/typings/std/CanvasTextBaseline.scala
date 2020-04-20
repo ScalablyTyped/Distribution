@@ -16,18 +16,16 @@ trait CanvasTextBaseline extends js.Object
 
 object CanvasTextBaseline {
   @scala.inline
-  def alphabetic: typings.std.stdStrings.alphabetic = this.cast("alphabetic")
+  def alphabetic: typings.std.stdStrings.alphabetic = "alphabetic".asInstanceOf[typings.std.stdStrings.alphabetic]
   @scala.inline
-  def bottom: typings.std.stdStrings.bottom = this.cast("bottom")
+  def bottom: typings.std.stdStrings.bottom = "bottom".asInstanceOf[typings.std.stdStrings.bottom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def hanging: typings.std.stdStrings.hanging = "hanging".asInstanceOf[typings.std.stdStrings.hanging]
   @scala.inline
-  def hanging: typings.std.stdStrings.hanging = this.cast("hanging")
+  def ideographic: typings.std.stdStrings.ideographic = "ideographic".asInstanceOf[typings.std.stdStrings.ideographic]
   @scala.inline
-  def ideographic: typings.std.stdStrings.ideographic = this.cast("ideographic")
+  def middle: typings.std.stdStrings.middle = "middle".asInstanceOf[typings.std.stdStrings.middle]
   @scala.inline
-  def middle: typings.std.stdStrings.middle = this.cast("middle")
-  @scala.inline
-  def top: typings.std.stdStrings.top = this.cast("top")
+  def top: typings.std.stdStrings.top = "top".asInstanceOf[typings.std.stdStrings.top]
 }
 

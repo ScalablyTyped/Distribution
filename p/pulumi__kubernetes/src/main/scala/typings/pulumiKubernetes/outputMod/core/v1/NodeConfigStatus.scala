@@ -63,7 +63,6 @@ object NodeConfigStatus {
     lastKnownGood: NodeConfigSource
   ): NodeConfigStatus = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], assigned = assigned.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], lastKnownGood = lastKnownGood.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NodeConfigStatus]
   }
 }

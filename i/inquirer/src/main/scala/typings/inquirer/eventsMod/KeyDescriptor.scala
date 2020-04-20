@@ -23,7 +23,6 @@ object KeyDescriptor {
   @scala.inline
   def apply(key: Key, value: String): KeyDescriptor = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KeyDescriptor]
   }
 }

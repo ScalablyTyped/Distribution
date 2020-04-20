@@ -30,7 +30,6 @@ object Acceptance {
   @scala.inline
   def apply(date: Double, ip: String, status: accepted | refused, user_agent: String): Acceptance = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], user_agent = user_agent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Acceptance]
   }
 }

@@ -19,18 +19,16 @@ trait TaskState extends js.Object
 
 object TaskState {
   @scala.inline
-  def canceling: typings.zoneJs.zoneJsStrings.canceling = this.cast("canceling")
+  def canceling: typings.zoneJs.zoneJsStrings.canceling = "canceling".asInstanceOf[typings.zoneJs.zoneJsStrings.canceling]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def notScheduled: typings.zoneJs.zoneJsStrings.notScheduled = "notScheduled".asInstanceOf[typings.zoneJs.zoneJsStrings.notScheduled]
   @scala.inline
-  def notScheduled: typings.zoneJs.zoneJsStrings.notScheduled = this.cast("notScheduled")
+  def running: typings.zoneJs.zoneJsStrings.running = "running".asInstanceOf[typings.zoneJs.zoneJsStrings.running]
   @scala.inline
-  def running: typings.zoneJs.zoneJsStrings.running = this.cast("running")
+  def scheduled: typings.zoneJs.zoneJsStrings.scheduled = "scheduled".asInstanceOf[typings.zoneJs.zoneJsStrings.scheduled]
   @scala.inline
-  def scheduled: typings.zoneJs.zoneJsStrings.scheduled = this.cast("scheduled")
+  def scheduling: typings.zoneJs.zoneJsStrings.scheduling = "scheduling".asInstanceOf[typings.zoneJs.zoneJsStrings.scheduling]
   @scala.inline
-  def scheduling: typings.zoneJs.zoneJsStrings.scheduling = this.cast("scheduling")
-  @scala.inline
-  def unknown: typings.zoneJs.zoneJsStrings.unknown = this.cast("unknown")
+  def unknown: typings.zoneJs.zoneJsStrings.unknown = "unknown".asInstanceOf[typings.zoneJs.zoneJsStrings.unknown]
 }
 

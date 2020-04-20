@@ -22,18 +22,16 @@ trait OlDayWeekTimeScale extends js.Object
 
 object OlDayWeekTimeScale {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olTimeScale10Minutes: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olTimeScale10Minutes: `2` = this.cast(2)
+  def olTimeScale15Minutes: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def olTimeScale15Minutes: `3` = this.cast(3)
+  def olTimeScale30Minutes: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def olTimeScale30Minutes: `4` = this.cast(4)
+  def olTimeScale5Minutes: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def olTimeScale5Minutes: `0` = this.cast(0)
+  def olTimeScale60Minutes: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def olTimeScale60Minutes: `5` = this.cast(5)
-  @scala.inline
-  def olTimeScale6Minutes: `1` = this.cast(1)
+  def olTimeScale6Minutes: `1` = 1.asInstanceOf[`1`]
 }
 

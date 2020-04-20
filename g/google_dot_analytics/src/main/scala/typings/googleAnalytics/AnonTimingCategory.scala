@@ -14,7 +14,6 @@ object AnonTimingCategory {
   @scala.inline
   def apply(timingCategory: String, timingValue: Double, timingVar: String): AnonTimingCategory = {
     val __obj = js.Dynamic.literal(timingCategory = timingCategory.asInstanceOf[js.Any], timingValue = timingValue.asInstanceOf[js.Any], timingVar = timingVar.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTimingCategory]
   }
 }

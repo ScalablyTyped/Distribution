@@ -30,7 +30,6 @@ object UVGenerator {
     generateTopUV: (ExtrudeBufferGeometry, js.Array[Double], Double, Double, Double) => js.Array[Vector2]
   ): UVGenerator = {
     val __obj = js.Dynamic.literal(generateSideWallUV = js.Any.fromFunction6(generateSideWallUV), generateTopUV = js.Any.fromFunction5(generateTopUV))
-  
     __obj.asInstanceOf[UVGenerator]
   }
 }

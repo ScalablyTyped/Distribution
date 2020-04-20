@@ -69,6 +69,8 @@ class List[T] protected ()
   /** Called when a page has been removed from the DOM. */
   var _onPageRemoved: js.Any = js.native
   var _onRenderPage: js.Any = js.native
+  var _onRenderRoot: js.Any = js.native
+  var _onRenderSurface: js.Any = js.native
   /**
     * Called synchronously to reset the required render range to 0 on scrolling. After async scroll has executed,
     * we will call onAsyncIdle which will reset it back to it's correct value.

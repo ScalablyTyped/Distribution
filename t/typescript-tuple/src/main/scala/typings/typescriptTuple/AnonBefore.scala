@@ -19,7 +19,6 @@ object AnonBefore {
     start: js.Any
   ): AnonBefore[Tuple, Holder] = {
     val __obj = js.Dynamic.literal(before = before.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBefore[Tuple, Holder]]
   }
 }

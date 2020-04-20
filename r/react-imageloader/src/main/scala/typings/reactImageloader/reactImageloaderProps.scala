@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactImageloaderProps {
   @scala.inline
-  def ReactImageloaderProps: ImageLoaderProps.type = typings.reactImageloader.mod.ImageLoaderProps
+  def ReactImageloaderProps: ImageLoaderProps.type = ImageLoaderProps
   type ReactImageloaderProps = ImageLoaderProps
 }
 

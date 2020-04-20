@@ -13,7 +13,6 @@ object TypeofECR {
   @scala.inline
   def apply(Types: TypeofECR): TypeofECR = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofECR]
   }
 }

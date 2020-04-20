@@ -10,7 +10,7 @@ trait TableToolkitProps[T /* <: js.Object */] extends js.Object {
   var bootstrap4: js.UndefOr[Boolean] = js.undefined
   var columns: js.Array[ColumnDescription[T, _]]
   var data: js.Array[T]
-  var keyField: String
+  var keyField: /* keyof T */ String
   var ref: js.UndefOr[js.Any] = js.undefined
   var search: js.UndefOr[TableSearchProps[T] | Boolean] = js.undefined
   def children(props: ToolkitContextType): Element
@@ -22,7 +22,7 @@ object TableToolkitProps {
     children: ToolkitContextType => Element,
     columns: js.Array[ColumnDescription[T, _]],
     data: js.Array[T],
-    keyField: String,
+    keyField: /* keyof T */ String,
     bootstrap4: js.UndefOr[Boolean] = js.undefined,
     ref: js.Any = null,
     search: TableSearchProps[T] | Boolean = null

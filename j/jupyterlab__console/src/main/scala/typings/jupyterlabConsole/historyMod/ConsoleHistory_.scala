@@ -83,7 +83,7 @@ class ConsoleHistory_ protected () extends IConsoleHistory {
     * The current editor used by the history manager.
     */
   @JSName("editor")
-  def editor_Union(): IEditor | Null = js.native
+  def editor_Union: IEditor | Null = js.native
   /**
     * Get the next item in the console history.
     *
@@ -99,7 +99,7 @@ class ConsoleHistory_ protected () extends IConsoleHistory {
     * Get whether the console history manager is disposed.
     */
   @JSName("isDisposed")
-  def isDisposed_MConsoleHistory_(): Boolean = js.native
+  def isDisposed_MConsoleHistory_ : Boolean = js.native
   /**
     * Handle an edge requested signal.
     */
@@ -123,7 +123,7 @@ class ConsoleHistory_ protected () extends IConsoleHistory {
     * The placeholder text that a history session began with.
     */
   @JSName("placeholder")
-  def placeholder_MConsoleHistory_(): String = js.native
+  def placeholder_MConsoleHistory_ : String = js.native
   /**
     * Add a new item to the bottom of history.
     *

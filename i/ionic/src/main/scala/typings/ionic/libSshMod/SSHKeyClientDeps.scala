@@ -16,7 +16,6 @@ object SSHKeyClientDeps {
   @scala.inline
   def apply(client: IClient, token: String, user: AnonIdNumber): SSHKeyClientDeps = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SSHKeyClientDeps]
   }
 }

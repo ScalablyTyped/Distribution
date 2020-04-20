@@ -16,7 +16,6 @@ object Point {
   @scala.inline
   def apply(getX: () => Double, getY: () => Double): Point = {
     val __obj = js.Dynamic.literal(getX = js.Any.fromFunction0(getX), getY = js.Any.fromFunction0(getY))
-  
     __obj.asInstanceOf[Point]
   }
 }

@@ -12,7 +12,6 @@ object IServerDateOptions {
   @scala.inline
   def apply(offset: Double): IServerDateOptions = {
     val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IServerDateOptions]
   }
 }

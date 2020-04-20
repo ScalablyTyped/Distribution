@@ -23,7 +23,6 @@ object HeatmapData {
   @scala.inline
   def apply[T](data: js.Array[T], max: Double, min: Double): HeatmapData[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HeatmapData[T]]
   }
 }

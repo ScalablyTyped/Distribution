@@ -80,6 +80,7 @@ package object imagebuilderMod {
   type InstanceTypeList = js.Array[typings.awsSdk.imagebuilderMod.InstanceType]
   type NonEmptyString = java.lang.String
   type NullableBoolean = scala.Boolean
+  type OsVersion = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.Self_
     - typings.awsSdk.awsSdkStrings.Shared_

@@ -16,7 +16,6 @@ object BasePath {
   @scala.inline
   def apply(hasVariables: () => Boolean, path: String, variables: StringDictionary[AnonEnum]): BasePath = {
     val __obj = js.Dynamic.literal(hasVariables = js.Any.fromFunction0(hasVariables), path = path.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BasePath]
   }
 }

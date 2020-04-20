@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactImagesProps {
   @scala.inline
-  def ReactImagesProps: LightboxProps.type = typings.reactImages.mod.LightboxProps
+  def ReactImagesProps: LightboxProps.type = LightboxProps
   type ReactImagesProps = LightboxProps
 }
 

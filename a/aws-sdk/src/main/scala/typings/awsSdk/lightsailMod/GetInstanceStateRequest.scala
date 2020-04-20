@@ -16,7 +16,6 @@ object GetInstanceStateRequest {
   @scala.inline
   def apply(instanceName: ResourceName): GetInstanceStateRequest = {
     val __obj = js.Dynamic.literal(instanceName = instanceName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetInstanceStateRequest]
   }
 }

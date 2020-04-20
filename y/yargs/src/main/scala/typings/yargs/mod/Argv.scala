@@ -1,6 +1,7 @@
 package typings.yargs.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Error
 import typings.yargs.PartialParserConfiguratio
 import typings.yargs.yargsBooleans.`false`
@@ -33,7 +34,7 @@ trait Argv[T] extends js.Object {
     */
   var argv: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof yargs.yargs.Arguments<T> ]: yargs.yargs.Arguments<T>[key]}
-    */ typings.yargs.yargsStrings.Argv with Arguments[T] = js.native
+    */ typings.yargs.yargsStrings.Argv with TopLevel[Arguments[T]] = js.native
   /**
     * If the arguments have not been parsed, this property is `false`.
     *
@@ -42,7 +43,7 @@ trait Argv[T] extends js.Object {
   var parsed: DetailedArguments | `false` = js.native
   def apply(): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof yargs.yargs.Arguments<T> ]: yargs.yargs.Arguments<T>[key]}
-    */ typings.yargs.yargsStrings.Argv with Arguments[T] = js.native
+    */ typings.yargs.yargsStrings.Argv with TopLevel[Arguments[T]] = js.native
   def apply(args: js.Array[String]): Argv[T] = js.native
   def apply(args: js.Array[String], cwd: String): Argv[T] = js.native
   def alias(aliases: StringDictionary[String | js.Array[String]]): Argv[T] = js.native
@@ -57,8 +58,8 @@ trait Argv[T] extends js.Object {
     * Each key of this object should be the canonical version of the option, and each value should be a string or an array of strings.
     */
   // Aliases for previously declared options can inherit the types of those options.
-  def alias[K1 /* <: String */, K2 /* <: String */](shortName: K1 | K2, longName: K1 | K2): Argv[T with typings.yargs.yargsStrings.Argv] = js.native
-  def alias[K1 /* <: String */, K2 /* <: String */](shortName: K1 | K2, longName: js.Array[K1 | K2]): Argv[T with typings.yargs.yargsStrings.Argv] = js.native
+  def alias[K1 /* <: /* keyof T */ String */, K2 /* <: String */](shortName: K1 | K2, longName: K1 | K2): Argv[T with typings.yargs.yargsStrings.Argv with TopLevel[T]] = js.native
+  def alias[K1 /* <: /* keyof T */ String */, K2 /* <: String */](shortName: K1 | K2, longName: js.Array[K1 | K2]): Argv[T with typings.yargs.yargsStrings.Argv with TopLevel[T]] = js.native
   /**
     * Tell the parser to interpret `key` as an array.
     * If `.array('foo')` is set, `--foo foo bar` will be parsed as `['foo', 'bar']` rather than as `'foo'`.
@@ -66,8 +67,8 @@ trait Argv[T] extends js.Object {
     *
     * When the option is used with a positional, use `--` to tell `yargs` to stop adding values to the array.
     */
-  def array[K /* <: String */](key: K): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with T] = js.native
-  def array[K /* <: String */](key: js.Array[K]): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with T] = js.native
+  def array[K /* <: /* keyof T */ String */](key: K): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with TopLevel[T]] = js.native
+  def array[K /* <: /* keyof T */ String */](key: js.Array[K]): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with TopLevel[T]] = js.native
   /**
     * Interpret `key` as a boolean. If a non-flag option follows `key` in `process.argv`, that string won't get set as the value of `key`.
     *
@@ -75,8 +76,8 @@ trait Argv[T] extends js.Object {
     *
     * If `key` is an array, interpret all the elements as booleans.
     */
-  def boolean[K /* <: String */](key: K): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with js.Any] = js.native
-  def boolean[K /* <: String */](key: js.Array[K]): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with js.Any] = js.native
+  def boolean[K /* <: /* keyof T */ String */](key: K): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with TopLevel[js.Any]] = js.native
+  def boolean[K /* <: /* keyof T */ String */](key: js.Array[K]): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with TopLevel[js.Any]] = js.native
   /**
     * Check that certain conditions are met in the provided arguments.
     * @param func Called with two arguments, the parsed `argv` hash and an array of options and their aliases.
@@ -88,7 +89,9 @@ trait Argv[T] extends js.Object {
     func: js.Function2[/* argv */ Arguments[T], /* aliases */ StringDictionary[String], _],
     global: Boolean
   ): Argv[T] = js.native
-  def choices[C /* <: StringDictionary[js.Array[_]] */](choices: C): Argv[(Omit[T, String]) with typings.yargs.yargsStrings.Argv with C] = js.native
+  def choices[C /* <: StringDictionary[js.Array[_]] */](choices: C): Argv[
+    (Omit[T, /* keyof C */ String]) with typings.yargs.yargsStrings.Argv with TopLevel[C]
+  ] = js.native
   /**
     * Limit valid values for key to a predefined set of choices, given as an array or as an individual value.
     * If this method is called multiple times, all enumerated values will be merged together.
@@ -98,8 +101,10 @@ trait Argv[T] extends js.Object {
     *
     * Choices can also be specified as choices in the object given to `option()`.
     */
-  def choices[K /* <: String */, C /* <: js.Array[_] */](key: K, values: C): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with C] = js.native
-  def coerce[O /* <: StringDictionary[js.Function1[/* arg */ js.Any, _]] */](opts: O): Argv[(Omit[T, String]) with typings.yargs.yargsStrings.Argv with O] = js.native
+  def choices[K /* <: /* keyof T */ String */, C /* <: js.Array[_] */](key: K, values: C): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with TopLevel[C]] = js.native
+  def coerce[O /* <: StringDictionary[js.Function1[/* arg */ js.Any, _]] */](opts: O): Argv[
+    (Omit[T, /* keyof O */ String]) with typings.yargs.yargsStrings.Argv with TopLevel[O]
+  ] = js.native
   /**
     * Provide a synchronous function to coerce or transform the value(s) given on the command line for `key`.
     *
@@ -116,8 +121,8 @@ trait Argv[T] extends js.Object {
     *
     * If you are using dot-notion or arrays, .e.g., `user.email` and `user.password`, coercion will be applied to the final object that has been parsed
     */
-  def coerce[K /* <: String */, V](key: K, func: js.Function1[/* arg */ js.Any, V]): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with js.Any] = js.native
-  def coerce[K /* <: String */, V](key: js.Array[K], func: js.Function1[/* arg */ js.Any, V]): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with js.Any] = js.native
+  def coerce[K /* <: /* keyof T */ String */, V](key: K, func: js.Function1[/* arg */ js.Any, V]): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with TopLevel[js.Any]] = js.native
+  def coerce[K /* <: /* keyof T */ String */, V](key: js.Array[K], func: js.Function1[/* arg */ js.Any, V]): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with TopLevel[js.Any]] = js.native
   /**
     * Define the commands exposed by your application.
     * @param command Should be a string representing the command or an array of strings representing the command and its aliases.
@@ -276,10 +281,10 @@ trait Argv[T] extends js.Object {
   /**
     * Interpret `key` as a boolean flag, but set its parsed value to the number of flag occurrences rather than `true` or `false`. Default value is thus `0`.
     */
-  def count[K /* <: String */](key: K): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with js.Any] = js.native
-  def count[K /* <: String */](key: js.Array[K]): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with js.Any] = js.native
-  def default[D /* <: StringDictionary[js.Any] */](defaults: D): Argv[(Omit[T, String]) with D] = js.native
-  def default[D /* <: StringDictionary[js.Any] */](defaults: D, description: String): Argv[(Omit[T, String]) with D] = js.native
+  def count[K /* <: /* keyof T */ String */](key: K): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with TopLevel[js.Any]] = js.native
+  def count[K /* <: /* keyof T */ String */](key: js.Array[K]): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with TopLevel[js.Any]] = js.native
+  def default[D /* <: StringDictionary[js.Any] */](defaults: D): Argv[(Omit[T, /* keyof D */ String]) with D] = js.native
+  def default[D /* <: StringDictionary[js.Any] */](defaults: D, description: String): Argv[(Omit[T, /* keyof D */ String]) with D] = js.native
   /**
     * Set `argv[key]` to `value` if no option was specified in `process.argv`.
     *
@@ -289,8 +294,8 @@ trait Argv[T] extends js.Object {
     *
     * Optionally, `description` can also be provided and will take precedence over displaying the value in the usage instructions.
     */
-  def default[K /* <: String */, V](key: K, value: V): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with js.Any] = js.native
-  def default[K /* <: String */, V](key: K, value: V, description: String): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with js.Any] = js.native
+  def default[K /* <: /* keyof T */ String */, V](key: K, value: V): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with TopLevel[js.Any]] = js.native
+  def default[K /* <: /* keyof T */ String */, V](key: K, value: V, description: String): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with TopLevel[js.Any]] = js.native
   def demand(key: String): Argv[T] = js.native
   def demand(key: String, required: Boolean): Argv[T] = js.native
   def demand(key: js.Array[String]): Argv[T] = js.native
@@ -304,9 +309,9 @@ trait Argv[T] extends js.Object {
     * @deprecated since version 6.6.0
     * Use '.demandCommand()' or '.demandOption()' instead
     */
-  def demand[K /* <: String */](key: K): Argv[Defined[T, K]] = js.native
-  def demand[K /* <: String */](key: K, msg: String): Argv[Defined[T, K]] = js.native
-  def demand[K /* <: String */](key: js.Array[K], msg: String): Argv[Defined[T, K]] = js.native
+  def demand[K /* <: /* keyof T */ String */](key: K): Argv[Defined[T, K]] = js.native
+  def demand[K /* <: /* keyof T */ String */](key: K, msg: String): Argv[Defined[T, K]] = js.native
+  def demand[K /* <: /* keyof T */ String */](key: js.Array[K], msg: String): Argv[Defined[T, K]] = js.native
   /**
     * Demand in context of commands.
     * You can demand a minimum and a maximum number a user can have within your program, as well as provide corresponding error messages if either of the demands is not met.
@@ -327,21 +332,21 @@ trait Argv[T] extends js.Object {
     * @param msg If string is given, it will be printed when the argument is missing, instead of the standard error message.
     * @param demand Controls whether the option is demanded; this is useful when using .options() to specify command line parameters.
     */
-  def demandOption[K /* <: String */](key: K): Argv[Defined[T, K]] = js.native
-  def demandOption[K /* <: String */](key: K, msg: String): Argv[Defined[T, K]] = js.native
-  def demandOption[K /* <: String */](key: js.Array[K], msg: String): Argv[Defined[T, K]] = js.native
+  def demandOption[K /* <: /* keyof T */ String */](key: K): Argv[Defined[T, K]] = js.native
+  def demandOption[K /* <: /* keyof T */ String */](key: K, msg: String): Argv[Defined[T, K]] = js.native
+  def demandOption[K /* <: /* keyof T */ String */](key: js.Array[K], msg: String): Argv[Defined[T, K]] = js.native
   @JSName("demandOption")
-  def demandOption_K_String[K /* <: String */](key: js.Array[K]): Argv[Defined[T, K]] = js.native
+  def demandOption_K_String[K /* <: /* keyof T */ String */](key: js.Array[K]): Argv[Defined[T, K]] = js.native
   @JSName("demandOption")
-  def demandOption_true[K /* <: String */](key: K, msg: `true`): Argv[Defined[T, K]] = js.native
+  def demandOption_true[K /* <: /* keyof T */ String */](key: K, msg: `true`): Argv[Defined[T, K]] = js.native
   @JSName("demandOption")
-  def demandOption_true[K /* <: String */](key: js.Array[K], msg: `true`): Argv[Defined[T, K]] = js.native
+  def demandOption_true[K /* <: /* keyof T */ String */](key: js.Array[K], msg: `true`): Argv[Defined[T, K]] = js.native
   @JSName("demand")
-  def demand_K_String[K /* <: String */](key: js.Array[K]): Argv[Defined[T, K]] = js.native
+  def demand_K_String[K /* <: /* keyof T */ String */](key: js.Array[K]): Argv[Defined[T, K]] = js.native
   @JSName("demand")
-  def demand_true[K /* <: String */](key: K, msg: `true`): Argv[Defined[T, K]] = js.native
+  def demand_true[K /* <: /* keyof T */ String */](key: K, msg: `true`): Argv[Defined[T, K]] = js.native
   @JSName("demand")
-  def demand_true[K /* <: String */](key: js.Array[K], msg: `true`): Argv[Defined[T, K]] = js.native
+  def demand_true[K /* <: /* keyof T */ String */](key: js.Array[K], msg: `true`): Argv[Defined[T, K]] = js.native
   def describe(descriptions: StringDictionary[String]): Argv[T] = js.native
   /**
     * Describe a `key` for the generated usage information.
@@ -465,8 +470,8 @@ trait Argv[T] extends js.Object {
   def nargs(key: String, count: Double): Argv[T] = js.native
   def nargs(nargs: StringDictionary[Double]): Argv[T] = js.native
   /** The key provided represents a path and should have `path.normalize()` applied. */
-  def normalize[K /* <: String */](key: K): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with T] = js.native
-  def normalize[K /* <: String */](key: js.Array[K]): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with T] = js.native
+  def normalize[K /* <: /* keyof T */ String */](key: K): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with TopLevel[T]] = js.native
+  def normalize[K /* <: /* keyof T */ String */](key: js.Array[K]): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with TopLevel[T]] = js.native
   /**
     * Tell the parser to always interpret key as a number.
     *
@@ -478,25 +483,25 @@ trait Argv[T] extends js.Object {
     *
     * Note that decimals, hexadecimals, and scientific notation are all accepted.
     */
-  def number[K /* <: String */](key: K): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with T] = js.native
-  def number[K /* <: String */](key: js.Array[K]): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with T] = js.native
+  def number[K /* <: /* keyof T */ String */](key: K): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with TopLevel[T]] = js.native
+  def number[K /* <: /* keyof T */ String */](key: js.Array[K]): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with TopLevel[T]] = js.native
   /**
     * Method to execute when a command finishes successfully.
     * @param func Is called with the successful result of the command that finished.
     */
   def onFinishCommand(func: js.Function1[/* result */ js.Any, Unit]): Argv[T] = js.native
-  def option[O /* <: StringDictionary[Options] */](options: O): Argv[(Omit[T, String]) with InferredOptionTypes[O]] = js.native
+  def option[O /* <: StringDictionary[Options] */](options: O): Argv[(Omit[T, /* keyof O */ String]) with InferredOptionTypes[O]] = js.native
   /**
     * This method can be used to make yargs aware of options that could exist.
     * You can also pass an opt object which can hold further customization, like `.alias()`, `.demandOption()` etc. for that option.
     */
-  def option[K /* <: String */, O /* <: Options */](key: K, options: O): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with js.Any] = js.native
-  def options[O /* <: StringDictionary[Options] */](options: O): Argv[(Omit[T, String]) with InferredOptionTypes[O]] = js.native
+  def option[K /* <: /* keyof T */ String */, O /* <: Options */](key: K, options: O): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with TopLevel[js.Any]] = js.native
+  def options[O /* <: StringDictionary[Options] */](options: O): Argv[(Omit[T, /* keyof O */ String]) with InferredOptionTypes[O]] = js.native
   /**
     * This method can be used to make yargs aware of options that could exist.
     * You can also pass an opt object which can hold further customization, like `.alias()`, `.demandOption()` etc. for that option.
     */
-  def options[K /* <: String */, O /* <: Options */](key: K, options: O): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with js.Any] = js.native
+  def options[K /* <: /* keyof T */ String */, O /* <: Options */](key: K, options: O): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with TopLevel[js.Any]] = js.native
   /**
     * Parse `args` instead of `process.argv`. Returns the `argv` object. `args` may either be a pre-processed argv array, or a raw argument string.
     *
@@ -505,25 +510,25 @@ trait Argv[T] extends js.Object {
     */
   def parse(): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof yargs.yargs.Arguments<T> ]: yargs.yargs.Arguments<T>[key]}
-    */ typings.yargs.yargsStrings.Argv with Arguments[T] = js.native
+    */ typings.yargs.yargsStrings.Argv with TopLevel[Arguments[T]] = js.native
   def parse(arg: String): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof yargs.yargs.Arguments<T> ]: yargs.yargs.Arguments<T>[key]}
-    */ typings.yargs.yargsStrings.Argv with Arguments[T] = js.native
+    */ typings.yargs.yargsStrings.Argv with TopLevel[Arguments[T]] = js.native
   def parse(arg: String, context: js.Object): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof yargs.yargs.Arguments<T> ]: yargs.yargs.Arguments<T>[key]}
-    */ typings.yargs.yargsStrings.Argv with Arguments[T] = js.native
+    */ typings.yargs.yargsStrings.Argv with TopLevel[Arguments[T]] = js.native
   def parse(arg: String, context: js.Object, parseCallback: ParseCallback[T]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof yargs.yargs.Arguments<T> ]: yargs.yargs.Arguments<T>[key]}
-    */ typings.yargs.yargsStrings.Argv with Arguments[T] = js.native
+    */ typings.yargs.yargsStrings.Argv with TopLevel[Arguments[T]] = js.native
   def parse(arg: js.Array[String]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof yargs.yargs.Arguments<T> ]: yargs.yargs.Arguments<T>[key]}
-    */ typings.yargs.yargsStrings.Argv with Arguments[T] = js.native
+    */ typings.yargs.yargsStrings.Argv with TopLevel[Arguments[T]] = js.native
   def parse(arg: js.Array[String], context: js.Object): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof yargs.yargs.Arguments<T> ]: yargs.yargs.Arguments<T>[key]}
-    */ typings.yargs.yargsStrings.Argv with Arguments[T] = js.native
+    */ typings.yargs.yargsStrings.Argv with TopLevel[Arguments[T]] = js.native
   def parse(arg: js.Array[String], context: js.Object, parseCallback: ParseCallback[T]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof yargs.yargs.Arguments<T> ]: yargs.yargs.Arguments<T>[key]}
-    */ typings.yargs.yargsStrings.Argv with Arguments[T] = js.native
+    */ typings.yargs.yargsStrings.Argv with TopLevel[Arguments[T]] = js.native
   /** Allows to configure advanced yargs features. */
   def parserConfiguration(configuration: PartialParserConfiguratio): Argv[T] = js.native
   /**
@@ -538,7 +543,7 @@ trait Argv[T] extends js.Object {
     * Allows you to configure a command's positional arguments with an API similar to `.option()`.
     * `.positional()` should be called in a command's builder function, and is not available on the top-level yargs instance. If so, it will throw an error.
     */
-  def positional[K /* <: String */, O /* <: PositionalOptions */](key: K, opt: O): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with js.Any] = js.native
+  def positional[K /* <: /* keyof T */ String */, O /* <: PositionalOptions */](key: K, opt: O): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with TopLevel[js.Any]] = js.native
   /** Should yargs provide suggestions regarding similar commands if no matching command is found? */
   def recommendCommands(): Argv[T] = js.native
   def require(key: String, msg: String): Argv[T] = js.native
@@ -551,15 +556,15 @@ trait Argv[T] extends js.Object {
     * @deprecated since version 6.6.0
     * Use '.demandCommand()' or '.demandOption()' instead
     */
-  def require[K /* <: String */](key: K): Argv[Defined[T, K]] = js.native
-  def require[K /* <: String */](key: K, msg: String): Argv[Defined[T, K]] = js.native
-  def require[K /* <: String */](key: js.Array[K]): Argv[Defined[T, K]] = js.native
+  def require[K /* <: /* keyof T */ String */](key: K): Argv[Defined[T, K]] = js.native
+  def require[K /* <: /* keyof T */ String */](key: K, msg: String): Argv[Defined[T, K]] = js.native
+  def require[K /* <: /* keyof T */ String */](key: js.Array[K]): Argv[Defined[T, K]] = js.native
   @JSName("require")
-  def require_K_String[K /* <: String */](key: js.Array[K], msg: String): Argv[Defined[T, K]] = js.native
+  def require_K_String[K /* <: /* keyof T */ String */](key: js.Array[K], msg: String): Argv[Defined[T, K]] = js.native
   @JSName("require")
-  def require_true[K /* <: String */](key: K, msg: `true`): Argv[Defined[T, K]] = js.native
+  def require_true[K /* <: /* keyof T */ String */](key: K, msg: `true`): Argv[Defined[T, K]] = js.native
   @JSName("require")
-  def require_true[K /* <: String */](key: js.Array[K], msg: `true`): Argv[Defined[T, K]] = js.native
+  def require_true[K /* <: /* keyof T */ String */](key: js.Array[K], msg: `true`): Argv[Defined[T, K]] = js.native
   def required(key: String, msg: String): Argv[T] = js.native
   def required(key: String, required: Boolean): Argv[T] = js.native
   def required(keys: js.Array[Double], msg: String): Argv[T] = js.native
@@ -570,15 +575,15 @@ trait Argv[T] extends js.Object {
     * @deprecated since version 6.6.0
     * Use '.demandCommand()' or '.demandOption()' instead
     */
-  def required[K /* <: String */](key: K): Argv[Defined[T, K]] = js.native
-  def required[K /* <: String */](key: K, msg: String): Argv[Defined[T, K]] = js.native
-  def required[K /* <: String */](key: js.Array[K]): Argv[Defined[T, K]] = js.native
+  def required[K /* <: /* keyof T */ String */](key: K): Argv[Defined[T, K]] = js.native
+  def required[K /* <: /* keyof T */ String */](key: K, msg: String): Argv[Defined[T, K]] = js.native
+  def required[K /* <: /* keyof T */ String */](key: js.Array[K]): Argv[Defined[T, K]] = js.native
   @JSName("required")
-  def required_K_String[K /* <: String */](key: js.Array[K], msg: String): Argv[Defined[T, K]] = js.native
+  def required_K_String[K /* <: /* keyof T */ String */](key: js.Array[K], msg: String): Argv[Defined[T, K]] = js.native
   @JSName("required")
-  def required_true[K /* <: String */](key: K, msg: `true`): Argv[Defined[T, K]] = js.native
+  def required_true[K /* <: /* keyof T */ String */](key: K, msg: `true`): Argv[Defined[T, K]] = js.native
   @JSName("required")
-  def required_true[K /* <: String */](key: js.Array[K], msg: `true`): Argv[Defined[T, K]] = js.native
+  def required_true[K /* <: /* keyof T */ String */](key: js.Array[K], msg: `true`): Argv[Defined[T, K]] = js.native
   def requiresArg(key: String): Argv[T] = js.native
   def requiresArg(key: js.Array[String]): Argv[T] = js.native
   /**
@@ -634,8 +639,8 @@ trait Argv[T] extends js.Object {
     *
     * `.string('_')` will result in non-hyphenated arguments being interpreted as strings, regardless of whether they resemble numbers.
     */
-  def string[K /* <: String */](key: K): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with T] = js.native
-  def string[K /* <: String */](key: js.Array[K]): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with T] = js.native
+  def string[K /* <: /* keyof T */ String */](key: K): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with TopLevel[T]] = js.native
+  def string[K /* <: /* keyof T */ String */](key: js.Array[K]): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with TopLevel[T]] = js.native
   // Intended to be used with '.wrap()'
   def terminalWidth(): Double = js.native
   def updateLocale(obj: StringDictionary[String]): Argv[T] = js.native

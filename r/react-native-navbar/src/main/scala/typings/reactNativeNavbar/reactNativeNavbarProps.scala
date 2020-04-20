@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeNavbarProps {
   @scala.inline
-  def ReactNativeNavbarProps: NavigationBarProps.type = typings.reactNativeNavbar.mod.NavigationBarProps
+  def ReactNativeNavbarProps: NavigationBarProps.type = NavigationBarProps
   type ReactNativeNavbarProps = NavigationBarProps
 }
 

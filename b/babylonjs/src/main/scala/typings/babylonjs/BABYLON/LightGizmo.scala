@@ -18,7 +18,7 @@ class LightGizmo () extends Gizmo {
   var _light: js.Any = js.native
   var _lightMesh: js.Any = js.native
   var _material: js.Any = js.native
-  def light(): Nullable[Light] = js.native
+  def light: Nullable[Light] = js.native
   /**
     * The light that the gizmo is attached to
     */
@@ -26,7 +26,7 @@ class LightGizmo () extends Gizmo {
   /**
     * Gets the material used to render the light gizmo
     */
-  def material(): StandardMaterial = js.native
+  def material: StandardMaterial = js.native
 }
 
 /* static members */

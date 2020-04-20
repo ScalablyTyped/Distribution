@@ -16,7 +16,6 @@ object DeleteRunRequest {
   @scala.inline
   def apply(arn: AmazonResourceName): DeleteRunRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteRunRequest]
   }
 }

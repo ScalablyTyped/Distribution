@@ -16,12 +16,10 @@ trait AcShowToolbar extends js.Object
 
 object AcShowToolbar {
   @scala.inline
-  def acToolbarNo: `2` = this.cast(2)
+  def acToolbarNo: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def acToolbarWhereApprop: `1` = this.cast(1)
+  def acToolbarWhereApprop: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def acToolbarYes: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def acToolbarYes: `0` = 0.asInstanceOf[`0`]
 }
 

@@ -16,18 +16,16 @@ trait SupportType extends js.Object
 
 object SupportType {
   @scala.inline
-  def bmp: typings.images.imagesStrings.bmp = this.cast("bmp")
+  def bmp: typings.images.imagesStrings.bmp = "bmp".asInstanceOf[typings.images.imagesStrings.bmp]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def gif: typings.images.imagesStrings.gif = "gif".asInstanceOf[typings.images.imagesStrings.gif]
   @scala.inline
-  def gif: typings.images.imagesStrings.gif = this.cast("gif")
+  def jpg: typings.images.imagesStrings.jpg = "jpg".asInstanceOf[typings.images.imagesStrings.jpg]
   @scala.inline
-  def jpg: typings.images.imagesStrings.jpg = this.cast("jpg")
+  def png: typings.images.imagesStrings.png = "png".asInstanceOf[typings.images.imagesStrings.png]
   @scala.inline
-  def png: typings.images.imagesStrings.png = this.cast("png")
+  def raw: typings.images.imagesStrings.raw = "raw".asInstanceOf[typings.images.imagesStrings.raw]
   @scala.inline
-  def raw: typings.images.imagesStrings.raw = this.cast("raw")
-  @scala.inline
-  def webp: typings.images.imagesStrings.webp = this.cast("webp")
+  def webp: typings.images.imagesStrings.webp = "webp".asInstanceOf[typings.images.imagesStrings.webp]
 }
 

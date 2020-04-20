@@ -16,18 +16,16 @@ trait CustomInputType extends js.Object
 
 object CustomInputType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def checkbox: typings.reactstrap.reactstrapStrings.checkbox = "checkbox".asInstanceOf[typings.reactstrap.reactstrapStrings.checkbox]
   @scala.inline
-  def checkbox: typings.reactstrap.reactstrapStrings.checkbox = this.cast("checkbox")
+  def file: typings.reactstrap.reactstrapStrings.file = "file".asInstanceOf[typings.reactstrap.reactstrapStrings.file]
   @scala.inline
-  def file: typings.reactstrap.reactstrapStrings.file = this.cast("file")
+  def radio: typings.reactstrap.reactstrapStrings.radio = "radio".asInstanceOf[typings.reactstrap.reactstrapStrings.radio]
   @scala.inline
-  def radio: typings.reactstrap.reactstrapStrings.radio = this.cast("radio")
+  def range: typings.reactstrap.reactstrapStrings.range = "range".asInstanceOf[typings.reactstrap.reactstrapStrings.range]
   @scala.inline
-  def range: typings.reactstrap.reactstrapStrings.range = this.cast("range")
+  def select: typings.reactstrap.reactstrapStrings.select = "select".asInstanceOf[typings.reactstrap.reactstrapStrings.select]
   @scala.inline
-  def select: typings.reactstrap.reactstrapStrings.select = this.cast("select")
-  @scala.inline
-  def switch: typings.reactstrap.reactstrapStrings.switch = this.cast("switch")
+  def switch: typings.reactstrap.reactstrapStrings.switch = "switch".asInstanceOf[typings.reactstrap.reactstrapStrings.switch]
 }
 

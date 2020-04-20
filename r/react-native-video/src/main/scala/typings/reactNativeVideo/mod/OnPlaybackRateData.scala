@@ -12,7 +12,6 @@ object OnPlaybackRateData {
   @scala.inline
   def apply(playbackRate: Double): OnPlaybackRateData = {
     val __obj = js.Dynamic.literal(playbackRate = playbackRate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnPlaybackRateData]
   }
 }

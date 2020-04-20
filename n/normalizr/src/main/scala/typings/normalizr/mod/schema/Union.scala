@@ -13,7 +13,6 @@ object Union {
   @scala.inline
   def apply[T](define: Schema_[_] => Unit): Union[T] = {
     val __obj = js.Dynamic.literal(define = js.Any.fromFunction1(define))
-  
     __obj.asInstanceOf[Union[T]]
   }
 }

@@ -25,7 +25,6 @@ object OpenClusterOptions {
   @scala.inline
   def apply(releaseFunction: (Position, StringDictionary[Position]) => StringDictionary[Position]): OpenClusterOptions = {
     val __obj = js.Dynamic.literal(releaseFunction = js.Any.fromFunction2(releaseFunction))
-  
     __obj.asInstanceOf[OpenClusterOptions]
   }
 }

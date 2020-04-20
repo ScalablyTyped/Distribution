@@ -52,7 +52,6 @@ object DirectionsViewModelLastRoute {
     routeResults: RouteResult
   ): DirectionsViewModelLastRoute = {
     val __obj = js.Dynamic.literal(barriers = barriers.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), messages = messages.asInstanceOf[js.Any], polygonBarriers = polygonBarriers.asInstanceOf[js.Any], polylineBarriers = polylineBarriers.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), routeResults = routeResults.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DirectionsViewModelLastRoute]
   }
 }

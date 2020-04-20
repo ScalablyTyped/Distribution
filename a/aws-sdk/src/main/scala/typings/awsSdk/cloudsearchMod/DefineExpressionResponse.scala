@@ -13,7 +13,6 @@ object DefineExpressionResponse {
   @scala.inline
   def apply(Expression: ExpressionStatus): DefineExpressionResponse = {
     val __obj = js.Dynamic.literal(Expression = Expression.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DefineExpressionResponse]
   }
 }

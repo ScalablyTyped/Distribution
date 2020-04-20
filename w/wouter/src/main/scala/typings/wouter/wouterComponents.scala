@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 object wouterComponents extends wouterProps {
   @scala.inline
-  def Link: ComponentType[LinkProps] = typings.wouter.mod.Link.asInstanceOf[typings.react.mod.ComponentType[LinkProps]]
+  def Link: ComponentType[LinkProps] = typings.wouter.mod.Link.asInstanceOf[ComponentType[LinkProps]]
   @scala.inline
-  def Redirect: ComponentType[RedirectProps] = typings.wouter.mod.Redirect.asInstanceOf[typings.react.mod.ComponentType[RedirectProps]]
+  def Redirect: ComponentType[RedirectProps] = typings.wouter.mod.Redirect.asInstanceOf[ComponentType[RedirectProps]]
   @scala.inline
-  def Router: ComponentType[RouterProps] = typings.wouter.mod.Router.asInstanceOf[typings.react.mod.ComponentType[RouterProps]]
+  def Router: ComponentType[RouterProps] = typings.wouter.mod.Router.asInstanceOf[ComponentType[RouterProps]]
   @scala.inline
-  def Switch: ComponentType[SwitchProps] = typings.wouter.mod.Switch.asInstanceOf[typings.react.mod.ComponentType[SwitchProps]]
+  def Switch: ComponentType[SwitchProps] = typings.wouter.mod.Switch.asInstanceOf[ComponentType[SwitchProps]]
 }
 

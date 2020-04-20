@@ -153,6 +153,9 @@ object reactWithStylesStrings {
   sealed trait contents extends js.Object
   
   @js.native
+  sealed trait css extends js.Object
+  
+  @js.native
   sealed trait darken extends js.Object
   
   @js.native
@@ -624,6 +627,9 @@ object reactWithStylesStrings {
   sealed trait stroke extends js.Object
   
   @js.native
+  sealed trait styles extends js.Object
+  
+  @js.native
   sealed trait subgrid extends js.Object
   
   @js.native
@@ -658,6 +664,9 @@ object reactWithStylesStrings {
   
   @js.native
   sealed trait `text-before-edge` extends js.Object
+  
+  @js.native
+  sealed trait theme extends js.Object
   
   @js.native
   sealed trait trim extends js.Object
@@ -771,7 +780,7 @@ object reactWithStylesStrings {
   @scala.inline
   def block: block = "block".asInstanceOf[block]
   @scala.inline
-  def `block flow`: `block flow` = "block flow".asInstanceOf[`block flow`]
+  def `block flow`: `block flow` = ("block flow").asInstanceOf[`block flow`]
   @scala.inline
   def bold: bold = "bold".asInstanceOf[bold]
   @scala.inline
@@ -805,25 +814,27 @@ object reactWithStylesStrings {
   @scala.inline
   def column: column = "column".asInstanceOf[column]
   @scala.inline
-  def `column nowrap`: `column nowrap` = "column nowrap".asInstanceOf[`column nowrap`]
+  def `column nowrap`: `column nowrap` = ("column nowrap").asInstanceOf[`column nowrap`]
   @scala.inline
-  def `column wrap`: `column wrap` = "column wrap".asInstanceOf[`column wrap`]
+  def `column wrap`: `column wrap` = ("column wrap").asInstanceOf[`column wrap`]
   @scala.inline
-  def `column wrap-reverse`: `column wrap-reverse` = "column wrap-reverse".asInstanceOf[`column wrap-reverse`]
+  def `column wrap-reverse`: `column wrap-reverse` = ("column wrap-reverse").asInstanceOf[`column wrap-reverse`]
   @scala.inline
   def `column-reverse`: `column-reverse` = "column-reverse".asInstanceOf[`column-reverse`]
   @scala.inline
-  def `column-reverse nowrap`: `column-reverse nowrap` = "column-reverse nowrap".asInstanceOf[`column-reverse nowrap`]
+  def `column-reverse nowrap`: `column-reverse nowrap` = ("column-reverse nowrap").asInstanceOf[`column-reverse nowrap`]
   @scala.inline
-  def `column-reverse wrap`: `column-reverse wrap` = "column-reverse wrap".asInstanceOf[`column-reverse wrap`]
+  def `column-reverse wrap`: `column-reverse wrap` = ("column-reverse wrap").asInstanceOf[`column-reverse wrap`]
   @scala.inline
-  def `column-reverse wrap-reverse`: `column-reverse wrap-reverse` = "column-reverse wrap-reverse".asInstanceOf[`column-reverse wrap-reverse`]
+  def `column-reverse wrap-reverse`: `column-reverse wrap-reverse` = ("column-reverse wrap-reverse").asInstanceOf[`column-reverse wrap-reverse`]
   @scala.inline
   def condensed: condensed = "condensed".asInstanceOf[condensed]
   @scala.inline
   def `content-box`: `content-box` = "content-box".asInstanceOf[`content-box`]
   @scala.inline
   def contents: contents = "contents".asInstanceOf[contents]
+  @scala.inline
+  def css: css = "css".asInstanceOf[css]
   @scala.inline
   def darken: darken = "darken".asInstanceOf[darken]
   @scala.inline
@@ -863,7 +874,7 @@ object reactWithStylesStrings {
   @scala.inline
   def flex: flex = "flex".asInstanceOf[flex]
   @scala.inline
-  def `flex run-in`: `flex run-in` = "flex run-in".asInstanceOf[`flex run-in`]
+  def `flex run-in`: `flex run-in` = ("flex run-in").asInstanceOf[`flex run-in`]
   @scala.inline
   def `flex-end`: `flex-end` = "flex-end".asInstanceOf[`flex-end`]
   @scala.inline
@@ -871,7 +882,7 @@ object reactWithStylesStrings {
   @scala.inline
   def flow: flow = "flow".asInstanceOf[flow]
   @scala.inline
-  def `flow list-item block`: `flow list-item block` = "flow list-item block".asInstanceOf[`flow list-item block`]
+  def `flow list-item block`: `flow list-item block` = ("flow list-item block").asInstanceOf[`flow list-item block`]
   @scala.inline
   def `flow-root`: `flow-root` = "flow-root".asInstanceOf[`flow-root`]
   @scala.inline
@@ -903,7 +914,7 @@ object reactWithStylesStrings {
   @scala.inline
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   @scala.inline
-  def `inline table`: `inline table` = "inline table".asInstanceOf[`inline table`]
+  def `inline table`: `inline table` = ("inline table").asInstanceOf[`inline table`]
   @scala.inline
   def `inline-block`: `inline-block` = "inline-block".asInstanceOf[`inline-block`]
   @scala.inline
@@ -953,17 +964,17 @@ object reactWithStylesStrings {
   @scala.inline
   def `list-item`: `list-item` = "list-item".asInstanceOf[`list-item`]
   @scala.inline
-  def `list-item block`: `list-item block` = "list-item block".asInstanceOf[`list-item block`]
+  def `list-item block`: `list-item block` = ("list-item block").asInstanceOf[`list-item block`]
   @scala.inline
-  def `list-item block flow`: `list-item block flow` = "list-item block flow".asInstanceOf[`list-item block flow`]
+  def `list-item block flow`: `list-item block flow` = ("list-item block flow").asInstanceOf[`list-item block flow`]
   @scala.inline
-  def `list-item block flow-root`: `list-item block flow-root` = "list-item block flow-root".asInstanceOf[`list-item block flow-root`]
+  def `list-item block flow-root`: `list-item block flow-root` = ("list-item block flow-root").asInstanceOf[`list-item block flow-root`]
   @scala.inline
-  def `list-item flow`: `list-item flow` = "list-item flow".asInstanceOf[`list-item flow`]
+  def `list-item flow`: `list-item flow` = ("list-item flow").asInstanceOf[`list-item flow`]
   @scala.inline
-  def `list-item flow-root`: `list-item flow-root` = "list-item flow-root".asInstanceOf[`list-item flow-root`]
+  def `list-item flow-root`: `list-item flow-root` = ("list-item flow-root").asInstanceOf[`list-item flow-root`]
   @scala.inline
-  def `list-item inline`: `list-item inline` = "list-item inline".asInstanceOf[`list-item inline`]
+  def `list-item inline`: `list-item inline` = ("list-item inline").asInstanceOf[`list-item inline`]
   @scala.inline
   def local: local = "local".asInstanceOf[local]
   @scala.inline
@@ -999,13 +1010,13 @@ object reactWithStylesStrings {
   @scala.inline
   def nowrap: nowrap = "nowrap".asInstanceOf[nowrap]
   @scala.inline
-  def `nowrap column`: `nowrap column` = "nowrap column".asInstanceOf[`nowrap column`]
+  def `nowrap column`: `nowrap column` = ("nowrap column").asInstanceOf[`nowrap column`]
   @scala.inline
-  def `nowrap column-reverse`: `nowrap column-reverse` = "nowrap column-reverse".asInstanceOf[`nowrap column-reverse`]
+  def `nowrap column-reverse`: `nowrap column-reverse` = ("nowrap column-reverse").asInstanceOf[`nowrap column-reverse`]
   @scala.inline
-  def `nowrap row`: `nowrap row` = "nowrap row".asInstanceOf[`nowrap row`]
+  def `nowrap row`: `nowrap row` = ("nowrap row").asInstanceOf[`nowrap row`]
   @scala.inline
-  def `nowrap row-reverse`: `nowrap row-reverse` = "nowrap row-reverse".asInstanceOf[`nowrap row-reverse`]
+  def `nowrap row-reverse`: `nowrap row-reverse` = ("nowrap row-reverse").asInstanceOf[`nowrap row-reverse`]
   @scala.inline
   def oblique: oblique = "oblique".asInstanceOf[oblique]
   @scala.inline
@@ -1055,19 +1066,19 @@ object reactWithStylesStrings {
   @scala.inline
   def row: row = "row".asInstanceOf[row]
   @scala.inline
-  def `row nowrap`: `row nowrap` = "row nowrap".asInstanceOf[`row nowrap`]
+  def `row nowrap`: `row nowrap` = ("row nowrap").asInstanceOf[`row nowrap`]
   @scala.inline
-  def `row wrap`: `row wrap` = "row wrap".asInstanceOf[`row wrap`]
+  def `row wrap`: `row wrap` = ("row wrap").asInstanceOf[`row wrap`]
   @scala.inline
-  def `row wrap-reverse`: `row wrap-reverse` = "row wrap-reverse".asInstanceOf[`row wrap-reverse`]
+  def `row wrap-reverse`: `row wrap-reverse` = ("row wrap-reverse").asInstanceOf[`row wrap-reverse`]
   @scala.inline
   def `row-reverse`: `row-reverse` = "row-reverse".asInstanceOf[`row-reverse`]
   @scala.inline
-  def `row-reverse nowrap`: `row-reverse nowrap` = "row-reverse nowrap".asInstanceOf[`row-reverse nowrap`]
+  def `row-reverse nowrap`: `row-reverse nowrap` = ("row-reverse nowrap").asInstanceOf[`row-reverse nowrap`]
   @scala.inline
-  def `row-reverse wrap`: `row-reverse wrap` = "row-reverse wrap".asInstanceOf[`row-reverse wrap`]
+  def `row-reverse wrap`: `row-reverse wrap` = ("row-reverse wrap").asInstanceOf[`row-reverse wrap`]
   @scala.inline
-  def `row-reverse wrap-reverse`: `row-reverse wrap-reverse` = "row-reverse wrap-reverse".asInstanceOf[`row-reverse wrap-reverse`]
+  def `row-reverse wrap-reverse`: `row-reverse wrap-reverse` = ("row-reverse wrap-reverse").asInstanceOf[`row-reverse wrap-reverse`]
   @scala.inline
   def rtl: rtl = "rtl".asInstanceOf[rtl]
   @scala.inline
@@ -1139,6 +1150,8 @@ object reactWithStylesStrings {
   @scala.inline
   def stroke: stroke = "stroke".asInstanceOf[stroke]
   @scala.inline
+  def styles: styles = "styles".asInstanceOf[styles]
+  @scala.inline
   def subgrid: subgrid = "subgrid".asInstanceOf[subgrid]
   @scala.inline
   def table: table = "table".asInstanceOf[table]
@@ -1162,6 +1175,8 @@ object reactWithStylesStrings {
   def `text-after-edge`: `text-after-edge` = "text-after-edge".asInstanceOf[`text-after-edge`]
   @scala.inline
   def `text-before-edge`: `text-before-edge` = "text-before-edge".asInstanceOf[`text-before-edge`]
+  @scala.inline
+  def theme: theme = "theme".asInstanceOf[theme]
   @scala.inline
   def trim: trim = "trim".asInstanceOf[trim]
   @scala.inline
@@ -1191,22 +1206,22 @@ object reactWithStylesStrings {
   @scala.inline
   def wrap: wrap = "wrap".asInstanceOf[wrap]
   @scala.inline
-  def `wrap column`: `wrap column` = "wrap column".asInstanceOf[`wrap column`]
+  def `wrap column`: `wrap column` = ("wrap column").asInstanceOf[`wrap column`]
   @scala.inline
-  def `wrap column-reverse`: `wrap column-reverse` = "wrap column-reverse".asInstanceOf[`wrap column-reverse`]
+  def `wrap column-reverse`: `wrap column-reverse` = ("wrap column-reverse").asInstanceOf[`wrap column-reverse`]
   @scala.inline
-  def `wrap row`: `wrap row` = "wrap row".asInstanceOf[`wrap row`]
+  def `wrap row`: `wrap row` = ("wrap row").asInstanceOf[`wrap row`]
   @scala.inline
-  def `wrap row-reverse`: `wrap row-reverse` = "wrap row-reverse".asInstanceOf[`wrap row-reverse`]
+  def `wrap row-reverse`: `wrap row-reverse` = ("wrap row-reverse").asInstanceOf[`wrap row-reverse`]
   @scala.inline
   def `wrap-reverse`: `wrap-reverse` = "wrap-reverse".asInstanceOf[`wrap-reverse`]
   @scala.inline
-  def `wrap-reverse column`: `wrap-reverse column` = "wrap-reverse column".asInstanceOf[`wrap-reverse column`]
+  def `wrap-reverse column`: `wrap-reverse column` = ("wrap-reverse column").asInstanceOf[`wrap-reverse column`]
   @scala.inline
-  def `wrap-reverse column-reverse`: `wrap-reverse column-reverse` = "wrap-reverse column-reverse".asInstanceOf[`wrap-reverse column-reverse`]
+  def `wrap-reverse column-reverse`: `wrap-reverse column-reverse` = ("wrap-reverse column-reverse").asInstanceOf[`wrap-reverse column-reverse`]
   @scala.inline
-  def `wrap-reverse row`: `wrap-reverse row` = "wrap-reverse row".asInstanceOf[`wrap-reverse row`]
+  def `wrap-reverse row`: `wrap-reverse row` = ("wrap-reverse row").asInstanceOf[`wrap-reverse row`]
   @scala.inline
-  def `wrap-reverse row-reverse`: `wrap-reverse row-reverse` = "wrap-reverse row-reverse".asInstanceOf[`wrap-reverse row-reverse`]
+  def `wrap-reverse row-reverse`: `wrap-reverse row-reverse` = ("wrap-reverse row-reverse").asInstanceOf[`wrap-reverse row-reverse`]
 }
 

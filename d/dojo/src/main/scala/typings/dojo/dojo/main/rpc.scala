@@ -28,7 +28,6 @@ object rpc {
   @scala.inline
   def apply(JsonService: () => Unit, JsonpService: () => Unit, RpcService: () => Unit): rpc = {
     val __obj = js.Dynamic.literal(JsonService = js.Any.fromFunction0(JsonService), JsonpService = js.Any.fromFunction0(JsonpService), RpcService = js.Any.fromFunction0(RpcService))
-  
     __obj.asInstanceOf[rpc]
   }
 }

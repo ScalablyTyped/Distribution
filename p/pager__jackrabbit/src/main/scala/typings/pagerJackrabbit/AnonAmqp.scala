@@ -14,7 +14,6 @@ object AnonAmqp {
   @scala.inline
   def apply(amqp: js.Any, connection: Connection): AnonAmqp = {
     val __obj = js.Dynamic.literal(amqp = amqp.asInstanceOf[js.Any], connection = connection.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAmqp]
   }
 }

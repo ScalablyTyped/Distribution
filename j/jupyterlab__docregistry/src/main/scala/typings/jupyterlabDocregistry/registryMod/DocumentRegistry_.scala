@@ -101,7 +101,7 @@ class DocumentRegistry_ () extends IDisposable {
   /**
     * A signal emitted when the registry has changed.
     */
-  def changed(): ISignal[this.type, IChangedArgs] = js.native
+  def changed: ISignal[this.type, IChangedArgs] = js.native
   /**
     * Get the default rendered widget factory for a path.
     *
@@ -200,7 +200,7 @@ class DocumentRegistry_ () extends IDisposable {
     * Get whether the document registry has been disposed.
     */
   @JSName("isDisposed")
-  def isDisposed_MDocumentRegistry_(): Boolean = js.native
+  def isDisposed_MDocumentRegistry_ : Boolean = js.native
   /**
     * Create an iterator over the model factories that have been registered.
     *

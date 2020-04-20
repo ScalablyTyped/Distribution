@@ -14,7 +14,6 @@ object EntryStatsPredicate {
   @scala.inline
   def apply(stats: `true`): EntryStatsPredicate = {
     val __obj = js.Dynamic.literal(stats = stats.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EntryStatsPredicate]
   }
 }

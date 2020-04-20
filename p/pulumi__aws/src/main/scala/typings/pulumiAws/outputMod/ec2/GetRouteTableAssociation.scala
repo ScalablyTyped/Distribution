@@ -38,7 +38,6 @@ object GetRouteTableAssociation {
     subnetId: String
   ): GetRouteTableAssociation = {
     val __obj = js.Dynamic.literal(gatewayId = gatewayId.asInstanceOf[js.Any], main = main.asInstanceOf[js.Any], routeTableAssociationId = routeTableAssociationId.asInstanceOf[js.Any], routeTableId = routeTableId.asInstanceOf[js.Any], subnetId = subnetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetRouteTableAssociation]
   }
 }

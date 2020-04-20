@@ -32,7 +32,6 @@ object AnonCity {
     text: String
   ): AnonCity = {
     val __obj = js.Dynamic.literal(city = city.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], countryCode = countryCode.asInstanceOf[js.Any], county = county.asInstanceOf[js.Any], district = district.asInstanceOf[js.Any], house = house.asInstanceOf[js.Any], postalCode = postalCode.asInstanceOf[js.Any], stateCode = stateCode.asInstanceOf[js.Any], street = street.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCity]
   }
 }

@@ -13,7 +13,6 @@ object PickImplautofocus {
   @scala.inline
   def apply(autofocus: Boolean): PickImplautofocus = {
     val __obj = js.Dynamic.literal(autofocus = autofocus.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplautofocus]
   }
 }

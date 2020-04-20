@@ -47,9 +47,9 @@ object reactDateRangeStrings {
   sealed trait tr extends LanguageType
   
   @scala.inline
-  def `Last 30 Days`: `Last 30 Days` = "Last 30 Days".asInstanceOf[`Last 30 Days`]
+  def `Last 30 Days`: `Last 30 Days` = ("Last 30 Days").asInstanceOf[`Last 30 Days`]
   @scala.inline
-  def `Last 7 Days`: `Last 7 Days` = "Last 7 Days".asInstanceOf[`Last 7 Days`]
+  def `Last 7 Days`: `Last 7 Days` = ("Last 7 Days").asInstanceOf[`Last 7 Days`]
   @scala.inline
   def Today: Today = "Today".asInstanceOf[Today]
   @scala.inline

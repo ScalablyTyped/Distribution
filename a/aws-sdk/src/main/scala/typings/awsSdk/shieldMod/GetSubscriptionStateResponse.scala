@@ -16,7 +16,6 @@ object GetSubscriptionStateResponse {
   @scala.inline
   def apply(SubscriptionState: SubscriptionState): GetSubscriptionStateResponse = {
     val __obj = js.Dynamic.literal(SubscriptionState = SubscriptionState.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetSubscriptionStateResponse]
   }
 }

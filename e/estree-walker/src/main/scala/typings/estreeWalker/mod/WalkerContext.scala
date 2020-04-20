@@ -12,7 +12,6 @@ object WalkerContext {
   @scala.inline
   def apply(skip: () => Unit): WalkerContext = {
     val __obj = js.Dynamic.literal(skip = js.Any.fromFunction0(skip))
-  
     __obj.asInstanceOf[WalkerContext]
   }
 }

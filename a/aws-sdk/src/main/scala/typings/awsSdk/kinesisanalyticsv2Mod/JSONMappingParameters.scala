@@ -16,7 +16,6 @@ object JSONMappingParameters {
   @scala.inline
   def apply(RecordRowPath: RecordRowPath): JSONMappingParameters = {
     val __obj = js.Dynamic.literal(RecordRowPath = RecordRowPath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JSONMappingParameters]
   }
 }

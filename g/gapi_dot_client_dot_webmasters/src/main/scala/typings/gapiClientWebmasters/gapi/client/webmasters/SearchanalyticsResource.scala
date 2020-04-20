@@ -21,7 +21,6 @@ object SearchanalyticsResource {
   @scala.inline
   def apply(query: AnonAlt => Request_[SearchAnalyticsQueryResponse]): SearchanalyticsResource = {
     val __obj = js.Dynamic.literal(query = js.Any.fromFunction1(query))
-  
     __obj.asInstanceOf[SearchanalyticsResource]
   }
 }

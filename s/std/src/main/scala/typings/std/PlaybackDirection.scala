@@ -14,14 +14,12 @@ trait PlaybackDirection extends js.Object
 
 object PlaybackDirection {
   @scala.inline
-  def alternate: typings.std.stdStrings.alternate = this.cast("alternate")
+  def alternate: typings.std.stdStrings.alternate = "alternate".asInstanceOf[typings.std.stdStrings.alternate]
   @scala.inline
-  def `alternate-reverse`: typings.std.stdStrings.`alternate-reverse` = this.cast("alternate-reverse")
+  def `alternate-reverse`: typings.std.stdStrings.`alternate-reverse` = "alternate-reverse".asInstanceOf[typings.std.stdStrings.`alternate-reverse`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def normal: typings.std.stdStrings.normal = "normal".asInstanceOf[typings.std.stdStrings.normal]
   @scala.inline
-  def normal: typings.std.stdStrings.normal = this.cast("normal")
-  @scala.inline
-  def reverse: typings.std.stdStrings.reverse = this.cast("reverse")
+  def reverse: typings.std.stdStrings.reverse = "reverse".asInstanceOf[typings.std.stdStrings.reverse]
 }
 

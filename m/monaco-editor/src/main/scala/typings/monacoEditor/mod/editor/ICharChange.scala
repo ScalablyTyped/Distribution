@@ -24,7 +24,6 @@ object ICharChange {
     originalStartLineNumber: Double
   ): ICharChange = {
     val __obj = js.Dynamic.literal(modifiedEndColumn = modifiedEndColumn.asInstanceOf[js.Any], modifiedEndLineNumber = modifiedEndLineNumber.asInstanceOf[js.Any], modifiedStartColumn = modifiedStartColumn.asInstanceOf[js.Any], modifiedStartLineNumber = modifiedStartLineNumber.asInstanceOf[js.Any], originalEndColumn = originalEndColumn.asInstanceOf[js.Any], originalEndLineNumber = originalEndLineNumber.asInstanceOf[js.Any], originalStartColumn = originalStartColumn.asInstanceOf[js.Any], originalStartLineNumber = originalStartLineNumber.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICharChange]
   }
 }

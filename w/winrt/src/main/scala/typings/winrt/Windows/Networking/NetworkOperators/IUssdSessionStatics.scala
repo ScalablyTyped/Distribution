@@ -16,7 +16,6 @@ object IUssdSessionStatics {
     createFromNetworkInterfaceId: String => UssdSession
   ): IUssdSessionStatics = {
     val __obj = js.Dynamic.literal(createFromNetworkAccountId = js.Any.fromFunction1(createFromNetworkAccountId), createFromNetworkInterfaceId = js.Any.fromFunction1(createFromNetworkInterfaceId))
-  
     __obj.asInstanceOf[IUssdSessionStatics]
   }
 }

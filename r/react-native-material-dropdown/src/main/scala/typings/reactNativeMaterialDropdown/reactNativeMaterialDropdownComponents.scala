@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactNativeMaterialDropdownComponents extends reactNativeMaterialDropdownProps {
   @scala.inline
-  def Dropdown: ComponentType[DropdownProps] = js.constructorOf[typings.reactNativeMaterialDropdown.mod.Dropdown].asInstanceOf[typings.react.mod.ComponentType[DropdownProps]]
+  def Dropdown: ComponentType[DropdownProps] = js.constructorOf[typings.reactNativeMaterialDropdown.mod.Dropdown].asInstanceOf[ComponentType[DropdownProps]]
 }
 

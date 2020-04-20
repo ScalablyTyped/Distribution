@@ -13,7 +13,6 @@ object PickImplisExactly {
   @scala.inline
   def apply(isExactly: String): PickImplisExactly = {
     val __obj = js.Dynamic.literal(isExactly = isExactly.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplisExactly]
   }
 }

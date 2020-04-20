@@ -16,7 +16,6 @@ object HumanLoopActivationConditionsConfig {
   @scala.inline
   def apply(HumanLoopActivationConditions: HumanLoopActivationConditions): HumanLoopActivationConditionsConfig = {
     val __obj = js.Dynamic.literal(HumanLoopActivationConditions = HumanLoopActivationConditions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HumanLoopActivationConditionsConfig]
   }
 }

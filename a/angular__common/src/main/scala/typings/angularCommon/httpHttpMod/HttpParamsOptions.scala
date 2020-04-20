@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Options used to construct an `HttpParams` instance.
+/**
+  * Options used to construct an `HttpParams` instance.
   *
   * @publicApi
   */

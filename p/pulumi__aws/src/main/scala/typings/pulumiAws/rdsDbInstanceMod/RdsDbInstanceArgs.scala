@@ -34,7 +34,6 @@ object RdsDbInstanceArgs {
     stackId: Input[String]
   ): RdsDbInstanceArgs = {
     val __obj = js.Dynamic.literal(dbPassword = dbPassword.asInstanceOf[js.Any], dbUser = dbUser.asInstanceOf[js.Any], rdsDbInstanceArn = rdsDbInstanceArn.asInstanceOf[js.Any], stackId = stackId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RdsDbInstanceArgs]
   }
 }

@@ -59,14 +59,14 @@ class BinaryExpression protected () extends Expression {
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
-  def left(): Expression = js.native
+  def left: Expression = js.native
   def left(newValue: Expression): js.Any = js.native
-  def operator(): BinaryOperator = js.native
+  def operator: BinaryOperator = js.native
   def operator(newValue: BinaryOperator): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
-  def right(): Expression = js.native
+  def right: Expression = js.native
   def right(newValue: Expression): js.Any = js.native
 }
 

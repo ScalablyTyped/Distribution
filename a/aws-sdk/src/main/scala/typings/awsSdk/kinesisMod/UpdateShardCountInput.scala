@@ -24,7 +24,6 @@ object UpdateShardCountInput {
   @scala.inline
   def apply(ScalingType: ScalingType, StreamName: StreamName, TargetShardCount: PositiveIntegerObject): UpdateShardCountInput = {
     val __obj = js.Dynamic.literal(ScalingType = ScalingType.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any], TargetShardCount = TargetShardCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateShardCountInput]
   }
 }

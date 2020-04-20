@@ -1,6 +1,8 @@
 package typings.openpgp.mod.packet
 
 import typings.openpgp.mod.ReadableStream
+import typings.openpgp.openpgpStrings.decrypt
+import typings.openpgp.openpgpStrings.encrypt
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,16 +17,22 @@ import scala.scalajs.js.annotation._
   * AEAD Protected Data Packet
   */
 class SymEncryptedAEADProtected () extends js.Object {
-  def crypt(fn: js.Any, key: Uint8Array, data: ReadableStream[Uint8Array], streaming: Boolean): Uint8Array | ReadableStream[Uint8Array] = js.native
+  @JSName("crypt")
+  def crypt_decrypt(fn: decrypt, key: Uint8Array, data: ReadableStream[Uint8Array], streaming: Boolean): Uint8Array | ReadableStream[Uint8Array] = js.native
+  @JSName("crypt")
+  def crypt_decrypt(fn: decrypt, key: Uint8Array, data: Uint8Array, streaming: Boolean): Uint8Array | ReadableStream[Uint8Array] = js.native
+  @JSName("crypt")
+  def crypt_encrypt(fn: encrypt, key: Uint8Array, data: ReadableStream[Uint8Array], streaming: Boolean): Uint8Array | ReadableStream[Uint8Array] = js.native
   /**
     * En/decrypt the payload.
-    * @param {encrypt | decrypt} fn Whether to encrypt or decrypt
+    * @param fn Whether to encrypt or decrypt
     * @param key The session key used to en/decrypt the payload
     * @param data The data to en/decrypt
     * @param streaming Whether the top-level function will return a stream
     * @returns
     */
-  def crypt(fn: js.Any, key: Uint8Array, data: Uint8Array, streaming: Boolean): Uint8Array | ReadableStream[Uint8Array] = js.native
+  @JSName("crypt")
+  def crypt_encrypt(fn: encrypt, key: Uint8Array, data: Uint8Array, streaming: Boolean): Uint8Array | ReadableStream[Uint8Array] = js.native
   /**
     * Decrypt the encrypted payload.
     * @param sessionKeyAlgorithm The session key's cipher algorithm e.g. 'aes128'

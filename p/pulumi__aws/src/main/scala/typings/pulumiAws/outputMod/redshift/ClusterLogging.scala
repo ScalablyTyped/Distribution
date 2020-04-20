@@ -25,7 +25,6 @@ object ClusterLogging {
   @scala.inline
   def apply(bucketName: String, enable: Boolean, s3KeyPrefix: String): ClusterLogging = {
     val __obj = js.Dynamic.literal(bucketName = bucketName.asInstanceOf[js.Any], enable = enable.asInstanceOf[js.Any], s3KeyPrefix = s3KeyPrefix.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClusterLogging]
   }
 }

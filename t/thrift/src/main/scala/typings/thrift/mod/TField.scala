@@ -15,7 +15,6 @@ object TField {
   @scala.inline
   def apply(fid: Double, fname: String, ftype: Type): TField = {
     val __obj = js.Dynamic.literal(fid = fid.asInstanceOf[js.Any], fname = fname.asInstanceOf[js.Any], ftype = ftype.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TField]
   }
 }

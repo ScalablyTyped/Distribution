@@ -12,7 +12,6 @@ object MultipleOfParams {
   @scala.inline
   def apply(multipleOf: Double): MultipleOfParams = {
     val __obj = js.Dynamic.literal(multipleOf = multipleOf.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MultipleOfParams]
   }
 }

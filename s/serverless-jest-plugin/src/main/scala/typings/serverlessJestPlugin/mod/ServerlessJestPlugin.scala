@@ -16,7 +16,6 @@ object ServerlessJestPlugin {
   @scala.inline
   def apply(commands: Commands, hooks: Hooks): ServerlessJestPlugin = {
     val __obj = js.Dynamic.literal(commands = commands.asInstanceOf[js.Any], hooks = hooks.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ServerlessJestPlugin]
   }
 }

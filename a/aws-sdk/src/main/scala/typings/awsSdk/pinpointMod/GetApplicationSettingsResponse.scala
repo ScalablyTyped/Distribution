@@ -13,7 +13,6 @@ object GetApplicationSettingsResponse {
   @scala.inline
   def apply(ApplicationSettingsResource: ApplicationSettingsResource): GetApplicationSettingsResponse = {
     val __obj = js.Dynamic.literal(ApplicationSettingsResource = ApplicationSettingsResource.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetApplicationSettingsResponse]
   }
 }

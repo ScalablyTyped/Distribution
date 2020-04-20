@@ -12,7 +12,6 @@ object KnockoutStatic {
   @scala.inline
   def apply(postbox: KnockoutPostBox): KnockoutStatic = {
     val __obj = js.Dynamic.literal(postbox = postbox.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KnockoutStatic]
   }
 }

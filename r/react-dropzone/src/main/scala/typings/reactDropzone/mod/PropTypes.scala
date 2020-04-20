@@ -14,14 +14,12 @@ trait PropTypes extends js.Object
 
 object PropTypes {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def multiple: typings.reactDropzone.reactDropzoneStrings.multiple = "multiple".asInstanceOf[typings.reactDropzone.reactDropzoneStrings.multiple]
   @scala.inline
-  def multiple: typings.reactDropzone.reactDropzoneStrings.multiple = this.cast("multiple")
+  def onDragEnter: typings.reactDropzone.reactDropzoneStrings.onDragEnter = "onDragEnter".asInstanceOf[typings.reactDropzone.reactDropzoneStrings.onDragEnter]
   @scala.inline
-  def onDragEnter: typings.reactDropzone.reactDropzoneStrings.onDragEnter = this.cast("onDragEnter")
+  def onDragLeave: typings.reactDropzone.reactDropzoneStrings.onDragLeave = "onDragLeave".asInstanceOf[typings.reactDropzone.reactDropzoneStrings.onDragLeave]
   @scala.inline
-  def onDragLeave: typings.reactDropzone.reactDropzoneStrings.onDragLeave = this.cast("onDragLeave")
-  @scala.inline
-  def onDragOver: typings.reactDropzone.reactDropzoneStrings.onDragOver = this.cast("onDragOver")
+  def onDragOver: typings.reactDropzone.reactDropzoneStrings.onDragOver = "onDragOver".asInstanceOf[typings.reactDropzone.reactDropzoneStrings.onDragOver]
 }
 

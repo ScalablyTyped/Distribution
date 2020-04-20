@@ -16,7 +16,6 @@ object MacroParams {
   @scala.inline
   def apply(babel: TypeofBabel, references: defaultArrayNodePathNodeR, state: js.Any): MacroParams = {
     val __obj = js.Dynamic.literal(babel = babel.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MacroParams]
   }
 }

@@ -16,7 +16,6 @@ object BatchGetResourceConfigRequest {
   @scala.inline
   def apply(resourceKeys: ResourceKeys): BatchGetResourceConfigRequest = {
     val __obj = js.Dynamic.literal(resourceKeys = resourceKeys.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchGetResourceConfigRequest]
   }
 }

@@ -13,7 +13,6 @@ object TypeofpresenceXml {
   @scala.inline
   def apply(pres_check_activities: (String, String) => Double, pres_check_basic: (String, String) => Double): TypeofpresenceXml = {
     val __obj = js.Dynamic.literal(pres_check_activities = js.Any.fromFunction2(pres_check_activities), pres_check_basic = js.Any.fromFunction2(pres_check_basic))
-  
     __obj.asInstanceOf[TypeofpresenceXml]
   }
 }

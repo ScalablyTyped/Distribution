@@ -15,7 +15,6 @@ object AnonResourceIdAnonChannelIdKind {
   @scala.inline
   def apply(resourceId: AnonChannelIdKind): AnonResourceIdAnonChannelIdKind = {
     val __obj = js.Dynamic.literal(resourceId = resourceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonResourceIdAnonChannelIdKind]
   }
 }

@@ -12,7 +12,6 @@ object BottomTabLongPressedEvent {
   @scala.inline
   def apply(selectedTabIndex: Double): BottomTabLongPressedEvent = {
     val __obj = js.Dynamic.literal(selectedTabIndex = selectedTabIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BottomTabLongPressedEvent]
   }
 }

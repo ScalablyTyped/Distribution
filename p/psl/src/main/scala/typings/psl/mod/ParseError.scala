@@ -14,7 +14,6 @@ object ParseError {
   @scala.inline
   def apply(error: AnonCode, input: String): ParseError = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ParseError]
   }
 }

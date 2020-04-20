@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Specifies the text style for the <Font> Object.
+		 * The font used for alternate captions.
 		 */
 @JSGlobal("Titanium.UI.TEXT_STYLE_CAPTION2")
 @js.native

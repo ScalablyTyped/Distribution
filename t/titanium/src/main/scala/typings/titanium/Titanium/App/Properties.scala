@@ -1,7 +1,10 @@
 package typings.titanium.Titanium.App
 
+import typings.titanium.Titanium.Event
+import typings.titanium.Titanium.Module
 import typings.titanium.Titanium.UI.TabGroup
 import typings.titanium.Titanium.UI.Window
+import typings.titanium.titaniumStrings.change
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,6 +13,11 @@ import scala.scalajs.js.annotation._
 		 * The App Properties module is used for storing application-related data in property/value pairs
 		 * that persist beyond application sessions and device power cycles.
 		 */
+@JSGlobal("Titanium.App.Properties")
+@js.native
+class Properties () extends Module
+
+/* static members */
 @JSGlobal("Titanium.App.Properties")
 @js.native
 object Properties extends js.Object {
@@ -28,7 +36,15 @@ object Properties extends js.Object {
   /**
   			 * Adds the specified callback as an event listener for the named event.
   			 */
-  def addEventListener(name: String, callback: js.Function1[/* param0 */ js.Any, _]): Unit = js.native
+  def addEventListener(name: String, callback: js.Function1[/* param0 */ Event, Unit]): Unit = js.native
+  /**
+  			 * Adds the specified callback as an event listener for the named event.
+  			 */
+  @JSName("addEventListener")
+  def addEventListener_change(
+    name: change,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ PropertiesChangeEvent, Unit]
+  ): Unit = js.native
   /**
   			 * Applies the properties to the proxy.
   			 */
@@ -36,9 +52,18 @@ object Properties extends js.Object {
   /**
   			 * Fires a synthesized event to any registered listeners.
   			 */
+  def fireEvent(name: String): Unit = js.native
   def fireEvent(name: String, event: js.Any): Unit = js.native
   /**
+  			 * Fires a synthesized event to any registered listeners.
+  			 */
+  @JSName("fireEvent")
+  def fireEvent_change(name: change): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_change(name: change, event: PropertiesChangeEvent): Unit = js.native
+  /**
   			 * Gets the value of the <Titanium.App.Properties.apiName> property.
+  			 * @deprecated Access <Titanium.App.Properties.apiName> instead.
   			 */
   def getApiName(): String = js.native
   /**
@@ -48,6 +73,7 @@ object Properties extends js.Object {
   def getBool(property: String, defaultValue: Boolean): Boolean = js.native
   /**
   			 * Gets the value of the <Titanium.App.Properties.bubbleParent> property.
+  			 * @deprecated Access <Titanium.App.Properties.bubbleParent> instead.
   			 */
   def getBubbleParent(): Boolean = js.native
   /**
@@ -62,6 +88,7 @@ object Properties extends js.Object {
   def getInt(property: String, defaultValue: Double): Double = js.native
   /**
   			 * Gets the value of the <Titanium.App.Properties.lifecycleContainer> property.
+  			 * @deprecated Access <Titanium.App.Properties.lifecycleContainer> instead.
   			 */
   def getLifecycleContainer(): Window | TabGroup = js.native
   /**
@@ -94,7 +121,15 @@ object Properties extends js.Object {
   /**
   			 * Removes the specified callback as an event listener for the named event.
   			 */
-  def removeEventListener(name: String, callback: js.Function1[/* param0 */ js.Any, _]): Unit = js.native
+  def removeEventListener(name: String, callback: js.Function1[/* param0 */ Event, Unit]): Unit = js.native
+  /**
+  			 * Removes the specified callback as an event listener for the named event.
+  			 */
+  @JSName("removeEventListener")
+  def removeEventListener_change(
+    name: change,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ PropertiesChangeEvent, Unit]
+  ): Unit = js.native
   /**
   			 * Removes a property if it exists, or does nothing otherwise.
   			 */
@@ -106,6 +141,7 @@ object Properties extends js.Object {
   def setBool(property: String, value: Boolean): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.App.Properties.bubbleParent> property.
+  			 * @deprecated Set the value using <Titanium.App.Properties.bubbleParent> instead.
   			 */
   def setBubbleParent(bubbleParent: Boolean): Unit = js.native
   /**
@@ -118,12 +154,10 @@ object Properties extends js.Object {
   			 * does not exist.
   			 */
   def setInt(property: String, value: Double): Unit = js.native
-  /**
-  			 * Sets the value of the <Titanium.App.Properties.lifecycleContainer> property.
-  			 */
   def setLifecycleContainer(lifecycleContainer: TabGroup): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.App.Properties.lifecycleContainer> property.
+  			 * @deprecated Set the value using <Titanium.App.Properties.lifecycleContainer> instead.
   			 */
   def setLifecycleContainer(lifecycleContainer: Window): Unit = js.native
   /**

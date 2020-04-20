@@ -20,7 +20,6 @@ object GetMediaForFragmentListInput {
   @scala.inline
   def apply(Fragments: FragmentNumberList, StreamName: StreamName): GetMediaForFragmentListInput = {
     val __obj = js.Dynamic.literal(Fragments = Fragments.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetMediaForFragmentListInput]
   }
 }

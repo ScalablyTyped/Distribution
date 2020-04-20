@@ -12,7 +12,6 @@ object FSWatcher {
   @scala.inline
   def apply(close: () => Unit): FSWatcher = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close))
-  
     __obj.asInstanceOf[FSWatcher]
   }
 }

@@ -24,7 +24,6 @@ object WebViewApi {
     webViewReload: Double => Unit
   ): WebViewApi = {
     val __obj = js.Dynamic.literal(createWebView = js.Any.fromFunction1(createWebView), destroyWebView = js.Any.fromFunction1(destroyWebView), webViewBoundChange = js.Any.fromFunction5(webViewBoundChange), webViewGoBack = js.Any.fromFunction1(webViewGoBack), webViewLoadUrl = js.Any.fromFunction2(webViewLoadUrl), webViewReload = js.Any.fromFunction1(webViewReload))
-  
     __obj.asInstanceOf[WebViewApi]
   }
 }

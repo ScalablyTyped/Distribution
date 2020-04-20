@@ -24,7 +24,6 @@ object ComposeActionResponse {
   @scala.inline
   def apply(printJson: () => String): ComposeActionResponse = {
     val __obj = js.Dynamic.literal(printJson = js.Any.fromFunction0(printJson))
-  
     __obj.asInstanceOf[ComposeActionResponse]
   }
 }

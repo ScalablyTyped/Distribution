@@ -16,7 +16,6 @@ object GetFunctionDefinitionRequest {
   @scala.inline
   def apply(FunctionDefinitionId: string): GetFunctionDefinitionRequest = {
     val __obj = js.Dynamic.literal(FunctionDefinitionId = FunctionDefinitionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetFunctionDefinitionRequest]
   }
 }

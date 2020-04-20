@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 object reactNativeRatingsComponents extends reactNativeRatingsProps {
   @scala.inline
-  def AirbnbRating: ComponentType[AirbnbRatingProps] = js.constructorOf[typings.reactNativeRatings.mod.AirbnbRating].asInstanceOf[typings.react.mod.ComponentType[AirbnbRatingProps]]
+  def AirbnbRating: ComponentType[AirbnbRatingProps] = js.constructorOf[typings.reactNativeRatings.mod.AirbnbRating].asInstanceOf[ComponentType[AirbnbRatingProps]]
   @scala.inline
-  def Rating: ComponentType[RatingProps] = js.constructorOf[typings.reactNativeRatings.mod.Rating].asInstanceOf[typings.react.mod.ComponentType[RatingProps]]
+  def Rating: ComponentType[RatingProps] = js.constructorOf[typings.reactNativeRatings.mod.Rating].asInstanceOf[ComponentType[RatingProps]]
 }
 

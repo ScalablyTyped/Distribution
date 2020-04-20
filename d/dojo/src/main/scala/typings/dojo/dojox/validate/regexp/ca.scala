@@ -26,7 +26,6 @@ object ca {
   @scala.inline
   def apply(postalCode: () => String, province: () => String): ca = {
     val __obj = js.Dynamic.literal(postalCode = js.Any.fromFunction0(postalCode), province = js.Any.fromFunction0(province))
-  
     __obj.asInstanceOf[ca]
   }
 }

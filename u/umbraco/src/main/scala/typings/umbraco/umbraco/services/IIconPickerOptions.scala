@@ -16,7 +16,6 @@ object IIconPickerOptions {
   @scala.inline
   def apply(callback: js.Function): IIconPickerOptions = {
     val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IIconPickerOptions]
   }
 }

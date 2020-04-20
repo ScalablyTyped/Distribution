@@ -13,7 +13,6 @@ object IDetailsListCompactExampleState {
   @scala.inline
   def apply(items: js.Array[IDetailsListCompactExampleItem], selectionDetails: String): IDetailsListCompactExampleState = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], selectionDetails = selectionDetails.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDetailsListCompactExampleState]
   }
 }

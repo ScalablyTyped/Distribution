@@ -14,7 +14,6 @@ object DownloadFileResult {
   @scala.inline
   def apply(errMsg: String, statusCode: Double, tempFilePath: String): DownloadFileResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], tempFilePath = tempFilePath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DownloadFileResult]
   }
 }

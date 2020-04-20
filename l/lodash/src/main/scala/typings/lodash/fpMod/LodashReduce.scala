@@ -14,7 +14,12 @@ trait LodashReduce extends js.Object {
   def apply[T /* <: js.Object */](callback: __, accumulator: __, collection: T): LodashReduce3x4[T] = js.native
   def apply[T](callback: __, accumulator: __, collection: js.Array[T]): LodashReduce1x4[T] = js.native
   def apply[T](callback: __, accumulator: __, collection: List[T]): LodashReduce2x4[T] = js.native
-  def apply[T, TResult](callback: MemoIteratorCapped[T, TResult]): LodashReduce1x1[T, TResult] = js.native
+  def apply[T /* <: js.Object */, TResult](
+    callback: MemoIteratorCapped[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
+      TResult
+    ]
+  ): LodashReduce3x1[T, TResult] = js.native
   def apply[T, TResult](callback: MemoIteratorCapped[T, TResult], accumulator: TResult): LodashReduce1x3[T, TResult] = js.native
   def apply[T /* <: js.Object */, TResult](
     callback: MemoIteratorCapped[

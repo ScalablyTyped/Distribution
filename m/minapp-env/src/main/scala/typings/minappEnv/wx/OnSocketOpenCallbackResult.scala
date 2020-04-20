@@ -15,7 +15,6 @@ object OnSocketOpenCallbackResult {
   @scala.inline
   def apply(header: js.Object): OnSocketOpenCallbackResult = {
     val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnSocketOpenCallbackResult]
   }
 }

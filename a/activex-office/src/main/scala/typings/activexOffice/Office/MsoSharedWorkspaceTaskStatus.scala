@@ -20,16 +20,14 @@ trait MsoSharedWorkspaceTaskStatus extends js.Object
 
 object MsoSharedWorkspaceTaskStatus {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoSharedWorkspaceTaskStatusCompleted: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoSharedWorkspaceTaskStatusCompleted: `3` = this.cast(3)
+  def msoSharedWorkspaceTaskStatusDeferred: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoSharedWorkspaceTaskStatusDeferred: `4` = this.cast(4)
+  def msoSharedWorkspaceTaskStatusInProgress: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoSharedWorkspaceTaskStatusInProgress: `2` = this.cast(2)
+  def msoSharedWorkspaceTaskStatusNotStarted: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoSharedWorkspaceTaskStatusNotStarted: `1` = this.cast(1)
-  @scala.inline
-  def msoSharedWorkspaceTaskStatusWaiting: `5` = this.cast(5)
+  def msoSharedWorkspaceTaskStatusWaiting: `5` = 5.asInstanceOf[`5`]
 }
 

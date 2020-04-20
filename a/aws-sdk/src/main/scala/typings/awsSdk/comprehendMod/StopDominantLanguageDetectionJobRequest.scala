@@ -16,7 +16,6 @@ object StopDominantLanguageDetectionJobRequest {
   @scala.inline
   def apply(JobId: JobId): StopDominantLanguageDetectionJobRequest = {
     val __obj = js.Dynamic.literal(JobId = JobId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopDominantLanguageDetectionJobRequest]
   }
 }

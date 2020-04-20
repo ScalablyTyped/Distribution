@@ -12,10 +12,8 @@ trait MemberIndexFormat extends js.Object
 
 object MemberIndexFormat {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def grouped: typings.jsdocToMarkdown.jsdocToMarkdownStrings.grouped = "grouped".asInstanceOf[typings.jsdocToMarkdown.jsdocToMarkdownStrings.grouped]
   @scala.inline
-  def grouped: typings.jsdocToMarkdown.jsdocToMarkdownStrings.grouped = this.cast("grouped")
-  @scala.inline
-  def list: typings.jsdocToMarkdown.jsdocToMarkdownStrings.list = this.cast("list")
+  def list: typings.jsdocToMarkdown.jsdocToMarkdownStrings.list = "list".asInstanceOf[typings.jsdocToMarkdown.jsdocToMarkdownStrings.list]
 }
 

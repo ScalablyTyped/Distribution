@@ -15,7 +15,6 @@ object AnonCancelMap {
   @scala.inline
   def apply(Cancel: Boolean, Map: XmlMap, Url: String): AnonCancelMap = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Map = Map.asInstanceOf[js.Any], Url = Url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCancelMap]
   }
 }

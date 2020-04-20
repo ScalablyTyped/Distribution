@@ -15,7 +15,6 @@ object AnonDistanceMax {
   @scala.inline
   def apply(distance: Double, max: Vector3, min: Vector3): AnonDistanceMax = {
     val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDistanceMax]
   }
 }

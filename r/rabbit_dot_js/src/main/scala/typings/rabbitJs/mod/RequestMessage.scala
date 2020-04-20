@@ -14,7 +14,6 @@ object RequestMessage {
   @scala.inline
   def apply(content: js.Any, properties: AnonCorrelationId): RequestMessage = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RequestMessage]
   }
 }

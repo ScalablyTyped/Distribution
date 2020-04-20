@@ -50,7 +50,7 @@ class ImageProcessingPostProcess protected () extends PostProcess {
   /**
     * Gets Color curves setup used in the effect if colorCurvesEnabled is set to true .
     */
-  def colorCurves(): Nullable[ColorCurves] = js.native
+  def colorCurves: Nullable[ColorCurves] = js.native
   /**
     * Sets Color curves setup used in the effect if colorCurvesEnabled is set to true .
     */
@@ -58,7 +58,7 @@ class ImageProcessingPostProcess protected () extends PostProcess {
   /**
     * Gets wether the color curves effect is enabled.
     */
-  def colorCurvesEnabled(): Boolean = js.native
+  def colorCurvesEnabled: Boolean = js.native
   /**
     * Sets wether the color curves effect is enabled.
     */
@@ -66,7 +66,7 @@ class ImageProcessingPostProcess protected () extends PostProcess {
   /**
     * Gets wether the color grading effect is enabled.
     */
-  def colorGradingEnabled(): Boolean = js.native
+  def colorGradingEnabled: Boolean = js.native
   /**
     * Gets wether the color grading effect is enabled.
     */
@@ -74,7 +74,7 @@ class ImageProcessingPostProcess protected () extends PostProcess {
   /**
     * Gets Color grading LUT texture used in the effect if colorGradingEnabled is set to true.
     */
-  def colorGradingTexture(): Nullable[BaseTexture] = js.native
+  def colorGradingTexture: Nullable[BaseTexture] = js.native
   /**
     * Sets Color grading LUT texture used in the effect if colorGradingEnabled is set to true.
     */
@@ -82,7 +82,7 @@ class ImageProcessingPostProcess protected () extends PostProcess {
   /**
     * Gets contrast used in the effect.
     */
-  def contrast(): Double = js.native
+  def contrast: Double = js.native
   /**
     * Sets contrast used in the effect.
     */
@@ -90,7 +90,7 @@ class ImageProcessingPostProcess protected () extends PostProcess {
   /**
     * Gets exposure used in the effect.
     */
-  def exposure(): Double = js.native
+  def exposure: Double = js.native
   /**
     * Sets exposure used in the effect.
     */
@@ -98,7 +98,7 @@ class ImageProcessingPostProcess protected () extends PostProcess {
   /**
     * Gets wether the input of the processing is in Gamma or Linear Space.
     */
-  def fromLinearSpace(): Boolean = js.native
+  def fromLinearSpace: Boolean = js.native
   /**
     * Sets wether the input of the processing is in Gamma or Linear Space.
     */
@@ -106,7 +106,7 @@ class ImageProcessingPostProcess protected () extends PostProcess {
   /**
     * Gets the image processing configuration used either in this material.
     */
-  def imageProcessingConfiguration(): ImageProcessingConfiguration = js.native
+  def imageProcessingConfiguration: ImageProcessingConfiguration = js.native
   /**
     * Sets the Default image processing configuration used either in the this material.
     *
@@ -116,7 +116,7 @@ class ImageProcessingPostProcess protected () extends PostProcess {
   /**
     * Gets wether tonemapping is enabled or not.
     */
-  def toneMappingEnabled(): Boolean = js.native
+  def toneMappingEnabled: Boolean = js.native
   /**
     * Sets wether tonemapping is enabled or not
     */
@@ -124,7 +124,7 @@ class ImageProcessingPostProcess protected () extends PostProcess {
   /**
     * Gets the type of tone mapping effect.
     */
-  def toneMappingType(): Double = js.native
+  def toneMappingType: Double = js.native
   /**
     * Sets the type of tone mapping effect.
     */
@@ -132,7 +132,7 @@ class ImageProcessingPostProcess protected () extends PostProcess {
   /**
     * Gets the vignette blend mode allowing different kind of effect.
     */
-  def vignetteBlendMode(): Double = js.native
+  def vignetteBlendMode: Double = js.native
   /**
     * Sets the vignette blend mode allowing different kind of effect.
     */
@@ -140,7 +140,7 @@ class ImageProcessingPostProcess protected () extends PostProcess {
   /**
     * Gets Camera field of view used by the Vignette effect.
     */
-  def vignetteCameraFov(): Double = js.native
+  def vignetteCameraFov: Double = js.native
   /**
     * Sets Camera field of view used by the Vignette effect.
     */
@@ -148,7 +148,7 @@ class ImageProcessingPostProcess protected () extends PostProcess {
   /**
     * Gets Vignette centre X Offset.
     */
-  def vignetteCentreX(): Double = js.native
+  def vignetteCentreX: Double = js.native
   /**
     * Sets Vignette centre X Offset.
     */
@@ -156,7 +156,7 @@ class ImageProcessingPostProcess protected () extends PostProcess {
   /**
     * Gets Vignette centre Y Offset.
     */
-  def vignetteCentreY(): Double = js.native
+  def vignetteCentreY: Double = js.native
   /**
     * Sets Vignette centre Y Offset.
     */
@@ -165,7 +165,7 @@ class ImageProcessingPostProcess protected () extends PostProcess {
     * Gets Color of the vignette applied on the screen through the chosen blend mode (vignetteBlendMode)
     * if vignetteEnabled is set to true.
     */
-  def vignetteColor(): Color4 = js.native
+  def vignetteColor: Color4 = js.native
   /**
     * Sets Color of the vignette applied on the screen through the chosen blend mode (vignetteBlendMode)
     * if vignetteEnabled is set to true.
@@ -174,7 +174,7 @@ class ImageProcessingPostProcess protected () extends PostProcess {
   /**
     * Gets wether the vignette effect is enabled.
     */
-  def vignetteEnabled(): Boolean = js.native
+  def vignetteEnabled: Boolean = js.native
   /**
     * Sets wether the vignette effect is enabled.
     */
@@ -182,7 +182,7 @@ class ImageProcessingPostProcess protected () extends PostProcess {
   /**
     * Gets Vignette stretch size.
     */
-  def vignetteStretch(): Double = js.native
+  def vignetteStretch: Double = js.native
   /**
     * Sets Vignette stretch size.
     */
@@ -190,7 +190,7 @@ class ImageProcessingPostProcess protected () extends PostProcess {
   /**
     * Gets Vignette weight or intensity of the vignette effect.
     */
-  def vignetteWeight(): Double = js.native
+  def vignetteWeight: Double = js.native
   /**
     * Sets Vignette weight or intensity of the vignette effect.
     */

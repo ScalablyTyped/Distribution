@@ -13,7 +13,6 @@ object AnonMarkers {
   @scala.inline
   def apply(markers: js.Array[KmlMarker]): AnonMarkers = {
     val __obj = js.Dynamic.literal(markers = markers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMarkers]
   }
 }

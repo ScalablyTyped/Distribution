@@ -13,7 +13,6 @@ object OpenFile {
   @scala.inline
   def apply(fd: Double, path: String): OpenFile = {
     val __obj = js.Dynamic.literal(fd = fd.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OpenFile]
   }
 }

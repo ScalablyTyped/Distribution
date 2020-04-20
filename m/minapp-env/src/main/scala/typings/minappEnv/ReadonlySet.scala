@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ReadonlySet[T] extends js.Object {
   /** Iterates over values in the set. */
-  @JSName(scala.scalajs.js.Symbol.iterator)
+  @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[T]] = js.native
   val size: Double = js.native
   /**

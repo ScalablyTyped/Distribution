@@ -20,33 +20,32 @@ import scala.scalajs.js.annotation._
 
 object catalogComponents extends catalogProps {
   @scala.inline
-  def AudioSpecimen: ComponentType[SpecimenProps with AudioSpecimenProps] = js.constructorOf[typings.catalog.mod.AudioSpecimen].asInstanceOf[typings.react.mod.ComponentType[typings.catalog.mod.SpecimenProps with typings.catalog.mod.AudioSpecimenProps]]
+  def AudioSpecimen: ComponentType[SpecimenProps with AudioSpecimenProps] = js.constructorOf[typings.catalog.mod.AudioSpecimen].asInstanceOf[ComponentType[SpecimenProps with AudioSpecimenProps]]
   @scala.inline
-  def Catalog: ComponentType[CatalogProps] = js.constructorOf[typings.catalog.mod.Catalog].asInstanceOf[typings.react.mod.ComponentType[CatalogProps]]
+  def Catalog: ComponentType[CatalogProps] = js.constructorOf[typings.catalog.mod.Catalog].asInstanceOf[ComponentType[CatalogProps]]
   @scala.inline
-  def CodeSpecimen: ComponentType[SpecimenProps with CodeSpecimenProps] = js.constructorOf[typings.catalog.mod.CodeSpecimen].asInstanceOf[typings.react.mod.ComponentType[typings.catalog.mod.SpecimenProps with typings.catalog.mod.CodeSpecimenProps]]
+  def CodeSpecimen: ComponentType[SpecimenProps with CodeSpecimenProps] = js.constructorOf[typings.catalog.mod.CodeSpecimen].asInstanceOf[ComponentType[SpecimenProps with CodeSpecimenProps]]
   @scala.inline
-  def ColorPaletteSpecimen: ComponentType[SpecimenProps with ColorPaletteSpecimenProps] = js.constructorOf[typings.catalog.mod.ColorPaletteSpecimen].asInstanceOf[typings.react.mod.ComponentType[
-  typings.catalog.mod.SpecimenProps with typings.catalog.mod.ColorPaletteSpecimenProps]]
+  def ColorPaletteSpecimen: ComponentType[SpecimenProps with ColorPaletteSpecimenProps] = js.constructorOf[typings.catalog.mod.ColorPaletteSpecimen].asInstanceOf[ComponentType[SpecimenProps with ColorPaletteSpecimenProps]]
   @scala.inline
-  def ColorSpecimen: ComponentType[SpecimenProps with ColorSpecimenProps] = js.constructorOf[typings.catalog.mod.ColorSpecimen].asInstanceOf[typings.react.mod.ComponentType[typings.catalog.mod.SpecimenProps with typings.catalog.mod.ColorSpecimenProps]]
+  def ColorSpecimen: ComponentType[SpecimenProps with ColorSpecimenProps] = js.constructorOf[typings.catalog.mod.ColorSpecimen].asInstanceOf[ComponentType[SpecimenProps with ColorSpecimenProps]]
   @scala.inline
-  def DownloadSpecimen: ComponentType[SpecimenProps with DownloadSpecimenProps] = js.constructorOf[typings.catalog.mod.DownloadSpecimen].asInstanceOf[typings.react.mod.ComponentType[typings.catalog.mod.SpecimenProps with typings.catalog.mod.DownloadSpecimenProps]]
+  def DownloadSpecimen: ComponentType[SpecimenProps with DownloadSpecimenProps] = js.constructorOf[typings.catalog.mod.DownloadSpecimen].asInstanceOf[ComponentType[SpecimenProps with DownloadSpecimenProps]]
   @scala.inline
-  def HintSpecimen: ComponentType[SpecimenProps with HintSpecimenProps] = js.constructorOf[typings.catalog.mod.HintSpecimen].asInstanceOf[typings.react.mod.ComponentType[typings.catalog.mod.SpecimenProps with typings.catalog.mod.HintSpecimenProps]]
+  def HintSpecimen: ComponentType[SpecimenProps with HintSpecimenProps] = js.constructorOf[typings.catalog.mod.HintSpecimen].asInstanceOf[ComponentType[SpecimenProps with HintSpecimenProps]]
   @scala.inline
-  def HtmlSpecimen: ComponentType[SpecimenProps with HtmlSpecimenProps] = js.constructorOf[typings.catalog.mod.HtmlSpecimen].asInstanceOf[typings.react.mod.ComponentType[typings.catalog.mod.SpecimenProps with typings.catalog.mod.HtmlSpecimenProps]]
+  def HtmlSpecimen: ComponentType[SpecimenProps with HtmlSpecimenProps] = js.constructorOf[typings.catalog.mod.HtmlSpecimen].asInstanceOf[ComponentType[SpecimenProps with HtmlSpecimenProps]]
   @scala.inline
-  def ImageSpecimen: ComponentType[SpecimenProps with ImageSpecimenProps] = js.constructorOf[typings.catalog.mod.ImageSpecimen].asInstanceOf[typings.react.mod.ComponentType[typings.catalog.mod.SpecimenProps with typings.catalog.mod.ImageSpecimenProps]]
+  def ImageSpecimen: ComponentType[SpecimenProps with ImageSpecimenProps] = js.constructorOf[typings.catalog.mod.ImageSpecimen].asInstanceOf[ComponentType[SpecimenProps with ImageSpecimenProps]]
   @scala.inline
-  def Page: ComponentType[js.Object] = js.constructorOf[typings.catalog.mod.Page].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
+  def Page: ComponentType[js.Object] = js.constructorOf[typings.catalog.mod.Page].asInstanceOf[ComponentType[js.Object]]
   @scala.inline
-  def ReactSpecimen: ComponentType[SpecimenProps with ReactSpecimenProps] = js.constructorOf[typings.catalog.mod.ReactSpecimen].asInstanceOf[typings.react.mod.ComponentType[typings.catalog.mod.SpecimenProps with typings.catalog.mod.ReactSpecimenProps]]
+  def ReactSpecimen: ComponentType[SpecimenProps with ReactSpecimenProps] = js.constructorOf[typings.catalog.mod.ReactSpecimen].asInstanceOf[ComponentType[SpecimenProps with ReactSpecimenProps]]
   @scala.inline
-  def TableSpecimen: ComponentType[SpecimenProps with TableSpecimenProps] = js.constructorOf[typings.catalog.mod.TableSpecimen].asInstanceOf[typings.react.mod.ComponentType[typings.catalog.mod.SpecimenProps with typings.catalog.mod.TableSpecimenProps]]
+  def TableSpecimen: ComponentType[SpecimenProps with TableSpecimenProps] = js.constructorOf[typings.catalog.mod.TableSpecimen].asInstanceOf[ComponentType[SpecimenProps with TableSpecimenProps]]
   @scala.inline
-  def TypeSpecimen: ComponentType[SpecimenProps with TypeSpecimenProps] = js.constructorOf[typings.catalog.mod.TypeSpecimen].asInstanceOf[typings.react.mod.ComponentType[typings.catalog.mod.SpecimenProps with typings.catalog.mod.TypeSpecimenProps]]
+  def TypeSpecimen: ComponentType[SpecimenProps with TypeSpecimenProps] = js.constructorOf[typings.catalog.mod.TypeSpecimen].asInstanceOf[ComponentType[SpecimenProps with TypeSpecimenProps]]
   @scala.inline
-  def VideoSpecimen: ComponentType[SpecimenProps with VideoSpecimenProps] = js.constructorOf[typings.catalog.mod.VideoSpecimen].asInstanceOf[typings.react.mod.ComponentType[typings.catalog.mod.SpecimenProps with typings.catalog.mod.VideoSpecimenProps]]
+  def VideoSpecimen: ComponentType[SpecimenProps with VideoSpecimenProps] = js.constructorOf[typings.catalog.mod.VideoSpecimen].asInstanceOf[ComponentType[SpecimenProps with VideoSpecimenProps]]
 }
 

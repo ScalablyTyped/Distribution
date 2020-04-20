@@ -12,7 +12,6 @@ object Response {
   @scala.inline
   def apply(boom: Boom): Response = {
     val __obj = js.Dynamic.literal(boom = boom.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Response]
   }
 }

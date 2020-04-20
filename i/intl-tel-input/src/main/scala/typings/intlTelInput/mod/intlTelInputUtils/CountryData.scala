@@ -14,7 +14,6 @@ object CountryData {
   @scala.inline
   def apply(dialCode: String, iso2: String, name: String): CountryData = {
     val __obj = js.Dynamic.literal(dialCode = dialCode.asInstanceOf[js.Any], iso2 = iso2.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CountryData]
   }
 }

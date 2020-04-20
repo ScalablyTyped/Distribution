@@ -19,7 +19,6 @@ object AnonIsPrimary {
   @scala.inline
   def apply(isPrimary: Boolean, serviceId: String): AnonIsPrimary = {
     val __obj = js.Dynamic.literal(isPrimary = isPrimary.asInstanceOf[js.Any], serviceId = serviceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsPrimary]
   }
 }

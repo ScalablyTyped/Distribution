@@ -16,7 +16,6 @@ object DeleteOpenIDConnectProviderRequest {
   @scala.inline
   def apply(OpenIDConnectProviderArn: arnType): DeleteOpenIDConnectProviderRequest = {
     val __obj = js.Dynamic.literal(OpenIDConnectProviderArn = OpenIDConnectProviderArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteOpenIDConnectProviderRequest]
   }
 }

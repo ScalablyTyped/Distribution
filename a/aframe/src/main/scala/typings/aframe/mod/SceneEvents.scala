@@ -14,14 +14,12 @@ trait SceneEvents extends js.Object
 
 object SceneEvents {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `enter-vr`: typings.aframe.aframeStrings.`enter-vr` = "enter-vr".asInstanceOf[typings.aframe.aframeStrings.`enter-vr`]
   @scala.inline
-  def `enter-vr`: typings.aframe.aframeStrings.`enter-vr` = this.cast("enter-vr")
+  def `exit-vr`: typings.aframe.aframeStrings.`exit-vr` = "exit-vr".asInstanceOf[typings.aframe.aframeStrings.`exit-vr`]
   @scala.inline
-  def `exit-vr`: typings.aframe.aframeStrings.`exit-vr` = this.cast("exit-vr")
+  def loaded: typings.aframe.aframeStrings.loaded = "loaded".asInstanceOf[typings.aframe.aframeStrings.loaded]
   @scala.inline
-  def loaded: typings.aframe.aframeStrings.loaded = this.cast("loaded")
-  @scala.inline
-  def renderstart: typings.aframe.aframeStrings.renderstart = this.cast("renderstart")
+  def renderstart: typings.aframe.aframeStrings.renderstart = "renderstart".asInstanceOf[typings.aframe.aframeStrings.renderstart]
 }
 

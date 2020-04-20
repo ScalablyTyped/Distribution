@@ -32,7 +32,6 @@ object AnonLgblock {
     quality: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11`
   ): AnonLgblock = {
     val __obj = js.Dynamic.literal(lgblock = lgblock.asInstanceOf[js.Any], lgwin = lgwin.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], quality = quality.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLgblock]
   }
 }

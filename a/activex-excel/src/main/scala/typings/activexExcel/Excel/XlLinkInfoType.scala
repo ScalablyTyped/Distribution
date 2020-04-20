@@ -16,12 +16,10 @@ trait XlLinkInfoType extends js.Object
 
 object XlLinkInfoType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlLinkInfoOLELinks: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlLinkInfoOLELinks: `2` = this.cast(2)
+  def xlLinkInfoPublishers: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xlLinkInfoPublishers: `5` = this.cast(5)
-  @scala.inline
-  def xlLinkInfoSubscribers: `6` = this.cast(6)
+  def xlLinkInfoSubscribers: `6` = 6.asInstanceOf[`6`]
 }
 

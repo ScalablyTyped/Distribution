@@ -15,7 +15,6 @@ object MediaStreamTrackEventMap {
   @scala.inline
   def apply(ended: Event_, isolationchange: Event_, mute: Event_, unmute: Event_): MediaStreamTrackEventMap = {
     val __obj = js.Dynamic.literal(ended = ended.asInstanceOf[js.Any], isolationchange = isolationchange.asInstanceOf[js.Any], mute = mute.asInstanceOf[js.Any], unmute = unmute.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MediaStreamTrackEventMap]
   }
 }

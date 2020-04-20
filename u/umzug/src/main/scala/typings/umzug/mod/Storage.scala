@@ -34,7 +34,6 @@ object Storage {
     unlogMigration: String => js.Promise[Unit]
   ): Storage = {
     val __obj = js.Dynamic.literal(executed = js.Any.fromFunction0(executed), logMigration = js.Any.fromFunction1(logMigration), unlogMigration = js.Any.fromFunction1(unlogMigration))
-  
     __obj.asInstanceOf[Storage]
   }
 }

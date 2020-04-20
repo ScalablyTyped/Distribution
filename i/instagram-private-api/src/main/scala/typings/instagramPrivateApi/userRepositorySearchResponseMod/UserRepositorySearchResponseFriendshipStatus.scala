@@ -22,7 +22,6 @@ object UserRepositorySearchResponseFriendshipStatus {
     outgoing_request: Boolean
   ): UserRepositorySearchResponseFriendshipStatus = {
     val __obj = js.Dynamic.literal(following = following.asInstanceOf[js.Any], incoming_request = incoming_request.asInstanceOf[js.Any], is_bestie = is_bestie.asInstanceOf[js.Any], is_private = is_private.asInstanceOf[js.Any], outgoing_request = outgoing_request.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UserRepositorySearchResponseFriendshipStatus]
   }
 }

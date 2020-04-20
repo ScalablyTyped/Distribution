@@ -1,7 +1,8 @@
 package typings.testingLibraryCypress.mod._Global_
 
-import typings.cypress.JQuery_
+import typings.jquery.JQuery_
 import typings.std.HTMLElement
+import typings.testingLibraryCypress.mod.ByRoleOptions
 import typings.testingLibraryCypress.mod.MatcherOptions
 import typings.testingLibraryCypress.mod.SelectorMatcherOptions
 import typings.testingLibraryDom.matchesMod.Matcher
@@ -78,7 +79,7 @@ object Cypress extends js.Object {
       * @see https://github.com/testing-library/dom-testing-library#table-of-contents
       */
     def findAllByRole(id: Matcher): Chainable[JQuery_[HTMLElement]] = js.native
-    def findAllByRole(id: Matcher, options: MatcherOptions): Chainable[JQuery_[HTMLElement]] = js.native
+    def findAllByRole(id: Matcher, options: ByRoleOptions): Chainable[JQuery_[HTMLElement]] = js.native
     /**
       * dom-testing-library helpers for Cypress
       *
@@ -182,7 +183,7 @@ object Cypress extends js.Object {
       * @see https://github.com/testing-library/dom-testing-library#table-of-contents
       */
     def findByRole(id: Matcher): Chainable[JQuery_[HTMLElement]] = js.native
-    def findByRole(id: Matcher, options: MatcherOptions): Chainable[JQuery_[HTMLElement]] = js.native
+    def findByRole(id: Matcher, options: ByRoleOptions): Chainable[JQuery_[HTMLElement]] = js.native
     /**
       * dom-testing-library helpers for Cypress
       *
@@ -286,7 +287,7 @@ object Cypress extends js.Object {
       * @see https://github.com/testing-library/dom-testing-library#table-of-contents
       */
     def queryAllByRole(id: Matcher): Chainable[JQuery_[HTMLElement]] = js.native
-    def queryAllByRole(id: Matcher, options: MatcherOptions): Chainable[JQuery_[HTMLElement]] = js.native
+    def queryAllByRole(id: Matcher, options: ByRoleOptions): Chainable[JQuery_[HTMLElement]] = js.native
     /**
       * dom-testing-library helpers for Cypress
       *
@@ -390,7 +391,7 @@ object Cypress extends js.Object {
       * @see https://github.com/testing-library/dom-testing-library#table-of-contents
       */
     def queryByRole(id: Matcher): Chainable[JQuery_[HTMLElement]] = js.native
-    def queryByRole(id: Matcher, options: MatcherOptions): Chainable[JQuery_[HTMLElement]] = js.native
+    def queryByRole(id: Matcher, options: ByRoleOptions): Chainable[JQuery_[HTMLElement]] = js.native
     /**
       * dom-testing-library helpers for Cypress
       *

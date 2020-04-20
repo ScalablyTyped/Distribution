@@ -15,7 +15,6 @@ object AnonUsesOnChanges {
   @scala.inline
   def apply(usesOnChanges: Boolean): AnonUsesOnChanges = {
     val __obj = js.Dynamic.literal(usesOnChanges = usesOnChanges.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonUsesOnChanges]
   }
 }

@@ -12,7 +12,6 @@ object AnonVArray {
   @scala.inline
   def apply(v: js.Array[AnonV]): AnonVArray = {
     val __obj = js.Dynamic.literal(v = v.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonVArray]
   }
 }

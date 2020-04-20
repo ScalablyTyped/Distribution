@@ -11,10 +11,8 @@ import scala.scalajs.js.annotation._
 
 object reachSkipNavComponents extends reachSkipNavProps {
   @scala.inline
-  def SkipNavContent: ComponentType[SkipNavProps with HTMLProps[HTMLDivElement]] = js.constructorOf[typings.reachSkipNav.mod.SkipNavContent].asInstanceOf[typings.react.mod.ComponentType[
-  typings.reachSkipNav.mod.SkipNavProps with typings.react.mod.HTMLProps[typings.std.HTMLDivElement]]]
+  def SkipNavContent: ComponentType[SkipNavProps with HTMLProps[HTMLDivElement]] = js.constructorOf[typings.reachSkipNav.mod.SkipNavContent].asInstanceOf[ComponentType[SkipNavProps with HTMLProps[HTMLDivElement]]]
   @scala.inline
-  def SkipNavLink: ComponentType[SkipNavProps with HTMLProps[HTMLAnchorElement]] = js.constructorOf[typings.reachSkipNav.mod.SkipNavLink].asInstanceOf[typings.react.mod.ComponentType[
-  typings.reachSkipNav.mod.SkipNavProps with typings.react.mod.HTMLProps[typings.std.HTMLAnchorElement]]]
+  def SkipNavLink: ComponentType[SkipNavProps with HTMLProps[HTMLAnchorElement]] = js.constructorOf[typings.reachSkipNav.mod.SkipNavLink].asInstanceOf[ComponentType[SkipNavProps with HTMLProps[HTMLAnchorElement]]]
 }
 

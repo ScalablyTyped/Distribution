@@ -17,7 +17,6 @@ object IEndpointPairFactory {
   @scala.inline
   def apply(createEndpointPair: (HostName, String, HostName, String) => EndpointPair): IEndpointPairFactory = {
     val __obj = js.Dynamic.literal(createEndpointPair = js.Any.fromFunction4(createEndpointPair))
-  
     __obj.asInstanceOf[IEndpointPairFactory]
   }
 }

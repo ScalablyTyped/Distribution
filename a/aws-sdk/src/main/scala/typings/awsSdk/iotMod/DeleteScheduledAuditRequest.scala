@@ -16,7 +16,6 @@ object DeleteScheduledAuditRequest {
   @scala.inline
   def apply(scheduledAuditName: ScheduledAuditName): DeleteScheduledAuditRequest = {
     val __obj = js.Dynamic.literal(scheduledAuditName = scheduledAuditName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteScheduledAuditRequest]
   }
 }

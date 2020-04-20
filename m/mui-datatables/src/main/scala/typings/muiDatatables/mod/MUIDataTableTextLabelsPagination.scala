@@ -15,7 +15,6 @@ object MUIDataTableTextLabelsPagination {
   @scala.inline
   def apply(displayRows: String, next: String, previous: String, rowsPerPage: String): MUIDataTableTextLabelsPagination = {
     val __obj = js.Dynamic.literal(displayRows = displayRows.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any], previous = previous.asInstanceOf[js.Any], rowsPerPage = rowsPerPage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MUIDataTableTextLabelsPagination]
   }
 }

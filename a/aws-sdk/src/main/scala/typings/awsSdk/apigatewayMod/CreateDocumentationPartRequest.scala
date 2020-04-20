@@ -24,7 +24,6 @@ object CreateDocumentationPartRequest {
   @scala.inline
   def apply(location: DocumentationPartLocation, properties: String, restApiId: String): CreateDocumentationPartRequest = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateDocumentationPartRequest]
   }
 }

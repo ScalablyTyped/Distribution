@@ -24,7 +24,6 @@ object TypeofDefinePluginRuntimeValue {
     ]
   ): TypeofDefinePluginRuntimeValue = {
     val __obj = js.Dynamic.literal(RuntimeValue = RuntimeValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofDefinePluginRuntimeValue]
   }
 }

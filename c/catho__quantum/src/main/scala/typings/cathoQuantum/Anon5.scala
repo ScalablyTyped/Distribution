@@ -13,7 +13,6 @@ object Anon5 {
   @scala.inline
   def apply(displayName: CardDotThumbnail): Anon5 = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Anon5]
   }
 }

@@ -22,7 +22,6 @@ object ElementInstructionMap {
     has: js.Any => Boolean
   ): ElementInstructionMap = {
     val __obj = js.Dynamic.literal(_map = _map.asInstanceOf[js.Any], append = js.Any.fromFunction2(append), clear = js.Any.fromFunction0(clear), consume = js.Any.fromFunction1(consume), has = js.Any.fromFunction1(has))
-  
     __obj.asInstanceOf[ElementInstructionMap]
   }
 }

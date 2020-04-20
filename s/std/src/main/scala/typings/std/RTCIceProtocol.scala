@@ -12,10 +12,8 @@ trait RTCIceProtocol extends js.Object
 
 object RTCIceProtocol {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def tcp: typings.std.stdStrings.tcp = "tcp".asInstanceOf[typings.std.stdStrings.tcp]
   @scala.inline
-  def tcp: typings.std.stdStrings.tcp = this.cast("tcp")
-  @scala.inline
-  def udp: typings.std.stdStrings.udp = this.cast("udp")
+  def udp: typings.std.stdStrings.udp = "udp".asInstanceOf[typings.std.stdStrings.udp]
 }
 

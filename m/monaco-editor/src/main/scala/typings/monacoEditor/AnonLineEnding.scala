@@ -13,7 +13,6 @@ object AnonLineEnding {
   @scala.inline
   def apply(lineEnding: String, preserveBOM: Boolean): AnonLineEnding = {
     val __obj = js.Dynamic.literal(lineEnding = lineEnding.asInstanceOf[js.Any], preserveBOM = preserveBOM.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLineEnding]
   }
 }

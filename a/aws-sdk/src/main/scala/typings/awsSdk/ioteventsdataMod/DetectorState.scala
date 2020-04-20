@@ -24,7 +24,6 @@ object DetectorState {
   @scala.inline
   def apply(stateName: StateName, timers: Timers, variables: Variables): DetectorState = {
     val __obj = js.Dynamic.literal(stateName = stateName.asInstanceOf[js.Any], timers = timers.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DetectorState]
   }
 }

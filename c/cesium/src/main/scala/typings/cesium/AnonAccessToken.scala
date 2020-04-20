@@ -14,7 +14,6 @@ object AnonAccessToken {
   @scala.inline
   def apply(accessToken: String, server: String | Resource): AnonAccessToken = {
     val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAccessToken]
   }
 }

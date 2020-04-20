@@ -15,7 +15,6 @@ object AnonMonth {
   @scala.inline
   def apply(day: String, month: String, weekday: String, year: String): AnonMonth = {
     val __obj = js.Dynamic.literal(day = day.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], weekday = weekday.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMonth]
   }
 }

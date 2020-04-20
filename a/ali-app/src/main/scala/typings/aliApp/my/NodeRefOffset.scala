@@ -19,7 +19,6 @@ object NodeRefOffset {
   @scala.inline
   def apply(dataset: js.Any, id: String, scrollLeft: Double, scrollTop: Double): NodeRefOffset = {
     val __obj = js.Dynamic.literal(dataset = dataset.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], scrollLeft = scrollLeft.asInstanceOf[js.Any], scrollTop = scrollTop.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NodeRefOffset]
   }
 }

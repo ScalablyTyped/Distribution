@@ -15,7 +15,6 @@ object JQuery {
   @scala.inline
   def apply(addNavigation: NavigateOptions => JQuery, keyboard: KeyboardOptions => JQuery): JQuery = {
     val __obj = js.Dynamic.literal(addNavigation = js.Any.fromFunction1(addNavigation), keyboard = js.Any.fromFunction1(keyboard))
-  
     __obj.asInstanceOf[JQuery]
   }
 }

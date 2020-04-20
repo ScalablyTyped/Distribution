@@ -12,7 +12,6 @@ object InsightsServiceAccountResponsePromotionsUnit {
   @scala.inline
   def apply(summary_promotions: InsightsServiceAccountResponseSummaryPromotions): InsightsServiceAccountResponsePromotionsUnit = {
     val __obj = js.Dynamic.literal(summary_promotions = summary_promotions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InsightsServiceAccountResponsePromotionsUnit]
   }
 }

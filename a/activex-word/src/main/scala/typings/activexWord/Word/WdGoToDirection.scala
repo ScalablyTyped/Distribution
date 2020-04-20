@@ -18,18 +18,16 @@ trait WdGoToDirection extends js.Object
 
 object WdGoToDirection {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdGoToAbsolute: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdGoToAbsolute: `1` = this.cast(1)
+  def wdGoToFirst: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdGoToFirst: `1` = this.cast(1)
+  def wdGoToLast: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def wdGoToLast: `-1` = this.cast(-1)
+  def wdGoToNext: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdGoToNext: `2` = this.cast(2)
+  def wdGoToPrevious: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdGoToPrevious: `3` = this.cast(3)
-  @scala.inline
-  def wdGoToRelative: `2` = this.cast(2)
+  def wdGoToRelative: `2` = 2.asInstanceOf[`2`]
 }
 

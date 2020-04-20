@@ -13,7 +13,6 @@ object AnonCsrinfo {
   @scala.inline
   def apply(csrinfo: CertificationRequestInfo): AnonCsrinfo = {
     val __obj = js.Dynamic.literal(csrinfo = csrinfo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCsrinfo]
   }
 }

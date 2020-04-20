@@ -28,7 +28,6 @@ object AddApplicationVpcConfigurationRequest {
     VpcConfiguration: VpcConfiguration
   ): AddApplicationVpcConfigurationRequest = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], CurrentApplicationVersionId = CurrentApplicationVersionId.asInstanceOf[js.Any], VpcConfiguration = VpcConfiguration.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddApplicationVpcConfigurationRequest]
   }
 }

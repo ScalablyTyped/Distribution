@@ -18,7 +18,6 @@ object IAdcProvider {
   @scala.inline
   def apply(getControllers: () => IVectorView[IAdcControllerProvider]): IAdcProvider = {
     val __obj = js.Dynamic.literal(getControllers = js.Any.fromFunction0(getControllers))
-  
     __obj.asInstanceOf[IAdcProvider]
   }
 }

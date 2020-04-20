@@ -10,6 +10,7 @@ package object mod {
   type DateTimeFormatOptions = typings.vueI18n.mod.VueI18n.DateTimeFormatOptions
   type DateTimeFormatResult = typings.vueI18n.mod.VueI18n.DateTimeFormatResult
   type DateTimeFormats = typings.vueI18n.mod.VueI18n.DateTimeFormats
+  type FallbackLocale = typings.vueI18n.mod.VueI18n.FallbackLocale
   type Formatter = typings.vueI18n.mod.VueI18n.Formatter
   type I18nOptions = typings.vueI18n.mod.VueI18n.I18nOptions
   type IntlAvailability = typings.vueI18n.mod.VueI18n.IntlAvailability

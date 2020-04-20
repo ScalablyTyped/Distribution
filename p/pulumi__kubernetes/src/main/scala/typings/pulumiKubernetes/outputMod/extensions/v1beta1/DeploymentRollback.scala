@@ -47,7 +47,6 @@ object DeploymentRollback {
     updatedAnnotations: StringDictionary[String]
   ): DeploymentRollback = {
     val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], rollbackTo = rollbackTo.asInstanceOf[js.Any], updatedAnnotations = updatedAnnotations.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeploymentRollback]
   }
 }

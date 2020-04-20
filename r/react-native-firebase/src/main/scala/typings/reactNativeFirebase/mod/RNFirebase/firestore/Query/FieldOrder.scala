@@ -13,7 +13,6 @@ object FieldOrder {
   @scala.inline
   def apply(direction: String, fieldPath: NativeFieldPath): FieldOrder = {
     val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], fieldPath = fieldPath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FieldOrder]
   }
 }

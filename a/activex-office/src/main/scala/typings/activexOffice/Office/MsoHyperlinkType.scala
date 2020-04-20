@@ -16,12 +16,10 @@ trait MsoHyperlinkType extends js.Object
 
 object MsoHyperlinkType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoHyperlinkInlineShape: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoHyperlinkInlineShape: `2` = this.cast(2)
+  def msoHyperlinkRange: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def msoHyperlinkRange: `0` = this.cast(0)
-  @scala.inline
-  def msoHyperlinkShape: `1` = this.cast(1)
+  def msoHyperlinkShape: `1` = 1.asInstanceOf[`1`]
 }
 

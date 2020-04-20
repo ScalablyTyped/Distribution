@@ -26,7 +26,6 @@ object TypeofglobalXpub {
     expected: `Leftcurlybracket masterFingerprintColon BufferSemicolon extendedPubkeyColon BufferSemicolon pathColon stringSemicolon Rightcurlybracket`
   ): TypeofglobalXpub = {
     val __obj = js.Dynamic.literal(canAddToArray = js.Any.fromFunction3(canAddToArray), check = js.Any.fromFunction1(check), decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode), expected = expected.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofglobalXpub]
   }
 }

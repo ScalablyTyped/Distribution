@@ -28,7 +28,6 @@ object TaskGroupRevision {
     taskGroupId: String
   ): TaskGroupRevision = {
     val __obj = js.Dynamic.literal(changeType = changeType.asInstanceOf[js.Any], changedBy = changedBy.asInstanceOf[js.Any], changedDate = changedDate.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], fileId = fileId.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any], taskGroupId = taskGroupId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TaskGroupRevision]
   }
 }

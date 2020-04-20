@@ -9,7 +9,9 @@ import scala.scalajs.js.annotation._
 /** Properties of a BrowseCarouselCard. */
 trait IBrowseCarouselCard extends js.Object {
   /** BrowseCarouselCard imageDisplayOptions */
-  var imageDisplayOptions: js.UndefOr[ImageDisplayOptions | String | Null] = js.undefined
+  var imageDisplayOptions: js.UndefOr[
+    ImageDisplayOptions | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Intent.Message.BrowseCarouselCard.ImageDisplayOptions * / any */ String) | Null
+  ] = js.undefined
   /** BrowseCarouselCard items */
   var items: js.UndefOr[js.Array[IBrowseCarouselCardItem] | Null] = js.undefined
 }
@@ -17,7 +19,7 @@ trait IBrowseCarouselCard extends js.Object {
 object IBrowseCarouselCard {
   @scala.inline
   def apply(
-    imageDisplayOptions: ImageDisplayOptions | String = null,
+    imageDisplayOptions: ImageDisplayOptions | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Intent.Message.BrowseCarouselCard.ImageDisplayOptions * / any */ String) = null,
     items: js.Array[IBrowseCarouselCardItem] = null
   ): IBrowseCarouselCard = {
     val __obj = js.Dynamic.literal()

@@ -22,16 +22,14 @@ trait ShellWindowTypeConstants extends js.Object
 
 object ShellWindowTypeConstants {
   @scala.inline
-  def SWC_3RDPARTY: `2` = this.cast(2)
+  def SWC_3RDPARTY: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def SWC_BROWSER: `1` = this.cast(1)
+  def SWC_BROWSER: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def SWC_CALLBACK: `4` = this.cast(4)
+  def SWC_CALLBACK: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def SWC_DESKTOP: `8` = this.cast(8)
+  def SWC_DESKTOP: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def SWC_EXPLORER: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SWC_EXPLORER: `0` = 0.asInstanceOf[`0`]
 }
 

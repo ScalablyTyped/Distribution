@@ -24,6 +24,7 @@ trait PartialCypressRunOptions extends js.Object {
   var reporter: js.UndefOr[String] = js.undefined
   var reporterOptions: js.UndefOr[js.Any] = js.undefined
   var spec: js.UndefOr[String] = js.undefined
+  var tag: js.UndefOr[String] = js.undefined
 }
 
 object PartialCypressRunOptions {
@@ -45,7 +46,8 @@ object PartialCypressRunOptions {
     record: js.UndefOr[Boolean] = js.undefined,
     reporter: String = null,
     reporterOptions: js.Any = null,
-    spec: String = null
+    spec: String = null,
+    tag: String = null
   ): PartialCypressRunOptions = {
     val __obj = js.Dynamic.literal()
     if (browser != null) __obj.updateDynamic("browser")(browser.asInstanceOf[js.Any])
@@ -65,6 +67,7 @@ object PartialCypressRunOptions {
     if (reporter != null) __obj.updateDynamic("reporter")(reporter.asInstanceOf[js.Any])
     if (reporterOptions != null) __obj.updateDynamic("reporterOptions")(reporterOptions.asInstanceOf[js.Any])
     if (spec != null) __obj.updateDynamic("spec")(spec.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialCypressRunOptions]
   }
 }

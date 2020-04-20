@@ -17,7 +17,6 @@ object UpdateApnsVoipSandboxChannelRequest {
   @scala.inline
   def apply(APNSVoipSandboxChannelRequest: APNSVoipSandboxChannelRequest, ApplicationId: string): UpdateApnsVoipSandboxChannelRequest = {
     val __obj = js.Dynamic.literal(APNSVoipSandboxChannelRequest = APNSVoipSandboxChannelRequest.asInstanceOf[js.Any], ApplicationId = ApplicationId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateApnsVoipSandboxChannelRequest]
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactCollapsibleProps {
   @scala.inline
-  def ReactCollapsibleProps: CollapsibleProps.type = typings.reactCollapsible.mod.CollapsibleProps
+  def ReactCollapsibleProps: CollapsibleProps.type = CollapsibleProps
   type ReactCollapsibleProps = CollapsibleProps
 }
 

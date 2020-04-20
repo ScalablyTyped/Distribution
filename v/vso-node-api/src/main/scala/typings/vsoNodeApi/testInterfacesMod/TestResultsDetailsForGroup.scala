@@ -19,7 +19,6 @@ object TestResultsDetailsForGroup {
     resultsCountByOutcome: NumberDictionary[AggregatedResultsByOutcome]
   ): TestResultsDetailsForGroup = {
     val __obj = js.Dynamic.literal(groupByValue = groupByValue.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any], resultsCountByOutcome = resultsCountByOutcome.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TestResultsDetailsForGroup]
   }
 }

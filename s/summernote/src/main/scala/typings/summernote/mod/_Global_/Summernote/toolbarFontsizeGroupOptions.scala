@@ -15,12 +15,10 @@ trait toolbarFontsizeGroupOptions extends js.Object
 
 object toolbarFontsizeGroupOptions {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def color: typings.summernote.summernoteStrings.color = "color".asInstanceOf[typings.summernote.summernoteStrings.color]
   @scala.inline
-  def color: typings.summernote.summernoteStrings.color = this.cast("color")
+  def fontname: fontname_ = "fontname".asInstanceOf[fontname_]
   @scala.inline
-  def fontname: fontname_ = this.cast("fontname")
-  @scala.inline
-  def fontsize: fontsize_ = this.cast("fontsize")
+  def fontsize: fontsize_ = "fontsize".asInstanceOf[fontsize_]
 }
 

@@ -14,7 +14,6 @@ object AnonCertPath {
   @scala.inline
   def apply(certPath: String, keyPath: String, port: Double): AnonCertPath = {
     val __obj = js.Dynamic.literal(certPath = certPath.asInstanceOf[js.Any], keyPath = keyPath.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCertPath]
   }
 }

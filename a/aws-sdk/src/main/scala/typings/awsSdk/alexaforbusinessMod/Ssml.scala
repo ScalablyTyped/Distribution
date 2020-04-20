@@ -20,7 +20,6 @@ object Ssml {
   @scala.inline
   def apply(Locale: Locale, Value: SsmlValue): Ssml = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Ssml]
   }
 }

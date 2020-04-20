@@ -15,7 +15,6 @@ object ContainerState {
   @scala.inline
   def apply(isDisabled: Boolean, isRtl: Boolean): ContainerState = {
     val __obj = js.Dynamic.literal(isDisabled = isDisabled.asInstanceOf[js.Any], isRtl = isRtl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ContainerState]
   }
 }

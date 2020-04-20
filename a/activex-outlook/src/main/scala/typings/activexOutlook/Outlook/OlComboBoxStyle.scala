@@ -14,10 +14,8 @@ trait OlComboBoxStyle extends js.Object
 
 object OlComboBoxStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olComboBoxStyleCombo: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def olComboBoxStyleCombo: `0` = this.cast(0)
-  @scala.inline
-  def olComboBoxStyleList: `2` = this.cast(2)
+  def olComboBoxStyleList: `2` = 2.asInstanceOf[`2`]
 }
 

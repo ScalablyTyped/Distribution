@@ -17,7 +17,7 @@ object repeaterMod extends js.Object {
     def equals(obj: Repeater[T]): Boolean = js.native
     def index(): Double = js.native
     def next(): Repeater[T] = js.native
-    def value(): T = js.native
+    def value: T = js.native
   }
   
 }

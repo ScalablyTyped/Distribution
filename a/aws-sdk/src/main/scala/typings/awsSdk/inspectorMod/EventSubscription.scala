@@ -20,7 +20,6 @@ object EventSubscription {
   @scala.inline
   def apply(event: InspectorEvent, subscribedAt: Timestamp): EventSubscription = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], subscribedAt = subscribedAt.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventSubscription]
   }
 }

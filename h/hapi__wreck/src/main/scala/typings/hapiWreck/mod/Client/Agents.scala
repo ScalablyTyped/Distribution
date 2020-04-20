@@ -28,7 +28,6 @@ object Agents {
     httpsAllowUnauthorized: typings.node.httpsMod.Agent
   ): Agents = {
     val __obj = js.Dynamic.literal(http = http.asInstanceOf[js.Any], https = https.asInstanceOf[js.Any], httpsAllowUnauthorized = httpsAllowUnauthorized.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Agents]
   }
 }

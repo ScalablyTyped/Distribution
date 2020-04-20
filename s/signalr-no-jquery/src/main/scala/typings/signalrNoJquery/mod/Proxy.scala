@@ -45,7 +45,6 @@ object Proxy {
     state: js.Any
   ): Proxy = {
     val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], hasSubscriptions = js.Any.fromFunction0(hasSubscriptions), hubName = hubName.asInstanceOf[js.Any], init = js.Any.fromFunction2(init), invoke = js.Any.fromFunction2(invoke), off = js.Any.fromFunction2(off), on = js.Any.fromFunction2(on), state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Proxy]
   }
 }

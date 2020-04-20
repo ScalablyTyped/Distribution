@@ -14,7 +14,6 @@ object AnonLHO2 {
   @scala.inline
   def apply(LHO2: AnonRangedHeal, LO: AnonHeal, XLHO2: AnonHealRangedHeal): AnonLHO2 = {
     val __obj = js.Dynamic.literal(LHO2 = LHO2.asInstanceOf[js.Any], LO = LO.asInstanceOf[js.Any], XLHO2 = XLHO2.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLHO2]
   }
 }

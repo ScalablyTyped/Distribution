@@ -19,7 +19,6 @@ object UserInfoResponse {
   @scala.inline
   def apply(encryptData: String, rawData: String, signature: String, userInfo: UserInfo): UserInfoResponse = {
     val __obj = js.Dynamic.literal(encryptData = encryptData.asInstanceOf[js.Any], rawData = rawData.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any], userInfo = userInfo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UserInfoResponse]
   }
 }

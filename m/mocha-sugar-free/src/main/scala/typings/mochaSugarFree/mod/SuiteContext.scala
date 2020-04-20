@@ -18,7 +18,6 @@ object SuiteContext {
   @scala.inline
   def apply(isHook: `false`, isSuite: `true`, isTest: `false`): SuiteContext = {
     val __obj = js.Dynamic.literal(isHook = isHook.asInstanceOf[js.Any], isSuite = isSuite.asInstanceOf[js.Any], isTest = isTest.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SuiteContext]
   }
 }

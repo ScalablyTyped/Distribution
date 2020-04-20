@@ -17,7 +17,6 @@ object ITreeNode {
   @scala.inline
   def apply(id: Double | String, nodes: js.Array[ITreeNode], title: String): ITreeNode = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ITreeNode]
   }
 }

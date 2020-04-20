@@ -21,7 +21,6 @@ object UpdateCampaignRequest {
   @scala.inline
   def apply(ApplicationId: string, CampaignId: string, WriteCampaignRequest: WriteCampaignRequest): UpdateCampaignRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], CampaignId = CampaignId.asInstanceOf[js.Any], WriteCampaignRequest = WriteCampaignRequest.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateCampaignRequest]
   }
 }

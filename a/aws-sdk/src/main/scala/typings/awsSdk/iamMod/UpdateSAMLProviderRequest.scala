@@ -20,7 +20,6 @@ object UpdateSAMLProviderRequest {
   @scala.inline
   def apply(SAMLMetadataDocument: SAMLMetadataDocumentType, SAMLProviderArn: arnType): UpdateSAMLProviderRequest = {
     val __obj = js.Dynamic.literal(SAMLMetadataDocument = SAMLMetadataDocument.asInstanceOf[js.Any], SAMLProviderArn = SAMLProviderArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateSAMLProviderRequest]
   }
 }

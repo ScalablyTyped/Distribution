@@ -20,7 +20,6 @@ object IPropertyDefOrObjectType {
     PropertyDef: Boolean
   ): IPropertyDefOrObjectType = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), GetAsExpression = js.Any.fromFunction0(GetAsExpression), ID = ID.asInstanceOf[js.Any], PropertyDef = PropertyDef.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPropertyDefOrObjectType]
   }
 }

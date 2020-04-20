@@ -17,7 +17,6 @@ object ojValidationGroupSettableProperties {
   @scala.inline
   def apply(valid: valid | pending | invalidHidden | invalidShown): ojValidationGroupSettableProperties = {
     val __obj = js.Dynamic.literal(valid = valid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ojValidationGroupSettableProperties]
   }
 }

@@ -16,18 +16,16 @@ trait InfoItemGroup extends js.Object
 
 object InfoItemGroup {
   @scala.inline
-  def capacitor: typings.ionic.ionicStrings.capacitor = this.cast("capacitor")
+  def capacitor: typings.ionic.ionicStrings.capacitor = "capacitor".asInstanceOf[typings.ionic.ionicStrings.capacitor]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cordova: typings.ionic.ionicStrings.cordova = "cordova".asInstanceOf[typings.ionic.ionicStrings.cordova]
   @scala.inline
-  def cordova: typings.ionic.ionicStrings.cordova = this.cast("cordova")
+  def environment: typings.ionic.ionicStrings.environment = "environment".asInstanceOf[typings.ionic.ionicStrings.environment]
   @scala.inline
-  def environment: typings.ionic.ionicStrings.environment = this.cast("environment")
+  def ionic: typings.ionic.ionicStrings.ionic = "ionic".asInstanceOf[typings.ionic.ionicStrings.ionic]
   @scala.inline
-  def ionic: typings.ionic.ionicStrings.ionic = this.cast("ionic")
+  def system: typings.ionic.ionicStrings.system = "system".asInstanceOf[typings.ionic.ionicStrings.system]
   @scala.inline
-  def system: typings.ionic.ionicStrings.system = this.cast("system")
-  @scala.inline
-  def utility: typings.ionic.ionicStrings.utility = this.cast("utility")
+  def utility: typings.ionic.ionicStrings.utility = "utility".asInstanceOf[typings.ionic.ionicStrings.utility]
 }
 

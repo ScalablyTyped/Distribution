@@ -43,7 +43,6 @@ object TaskAgentPoolMaintenanceDefinition {
     scheduleSetting: TaskAgentPoolMaintenanceSchedule
   ): TaskAgentPoolMaintenanceDefinition = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], jobTimeoutInMinutes = jobTimeoutInMinutes.asInstanceOf[js.Any], maxConcurrentAgentsPercentage = maxConcurrentAgentsPercentage.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], pool = pool.asInstanceOf[js.Any], retentionPolicy = retentionPolicy.asInstanceOf[js.Any], scheduleSetting = scheduleSetting.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TaskAgentPoolMaintenanceDefinition]
   }
 }

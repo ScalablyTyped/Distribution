@@ -13,7 +13,6 @@ object levelLoadingData {
   @scala.inline
   def apply(level: Double, url: String): levelLoadingData = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[levelLoadingData]
   }
 }

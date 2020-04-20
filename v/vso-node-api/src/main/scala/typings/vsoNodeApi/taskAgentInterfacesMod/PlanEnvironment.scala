@@ -19,7 +19,6 @@ object PlanEnvironment {
     variables: StringDictionary[String]
   ): PlanEnvironment = {
     val __obj = js.Dynamic.literal(mask = mask.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PlanEnvironment]
   }
 }

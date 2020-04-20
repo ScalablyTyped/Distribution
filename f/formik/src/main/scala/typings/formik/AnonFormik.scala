@@ -13,7 +13,6 @@ object AnonFormik {
   @scala.inline
   def apply[Values](formik: FormikContextType[Values]): AnonFormik[Values] = {
     val __obj = js.Dynamic.literal(formik = formik.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFormik[Values]]
   }
 }

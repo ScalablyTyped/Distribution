@@ -52,9 +52,9 @@ class ReportDropDown protected () extends ReportParameter {
   var model_FReportDropDown: IModel = js.native
   def attribute(): js.Any = js.native
   def attribute(newValue: IAttribute): js.Any = js.native
-  def attributeQualifiedName(): String | Null = js.native
+  def attributeQualifiedName: String | Null = js.native
   @JSName("attribute")
-  def attribute_Union(): IAttribute | Null = js.native
+  def attribute_Union: IAttribute | Null = js.native
 }
 
 /* static members */

@@ -13,12 +13,10 @@ trait X86BranchHint extends js.Object
 
 object X86BranchHint {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def likely: typings.fridaGum.fridaGumStrings.likely = "likely".asInstanceOf[typings.fridaGum.fridaGumStrings.likely]
   @scala.inline
-  def likely: typings.fridaGum.fridaGumStrings.likely = this.cast("likely")
+  def `no-hint`: typings.fridaGum.fridaGumStrings.`no-hint` = "no-hint".asInstanceOf[typings.fridaGum.fridaGumStrings.`no-hint`]
   @scala.inline
-  def `no-hint`: typings.fridaGum.fridaGumStrings.`no-hint` = this.cast("no-hint")
-  @scala.inline
-  def unlikely: typings.fridaGum.fridaGumStrings.unlikely = this.cast("unlikely")
+  def unlikely: typings.fridaGum.fridaGumStrings.unlikely = "unlikely".asInstanceOf[typings.fridaGum.fridaGumStrings.unlikely]
 }
 

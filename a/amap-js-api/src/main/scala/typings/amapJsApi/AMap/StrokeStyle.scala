@@ -12,10 +12,8 @@ trait StrokeStyle extends js.Object
 
 object StrokeStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dashed: typings.amapJsApi.amapJsApiStrings.dashed = "dashed".asInstanceOf[typings.amapJsApi.amapJsApiStrings.dashed]
   @scala.inline
-  def dashed: typings.amapJsApi.amapJsApiStrings.dashed = this.cast("dashed")
-  @scala.inline
-  def solid: typings.amapJsApi.amapJsApiStrings.solid = this.cast("solid")
+  def solid: typings.amapJsApi.amapJsApiStrings.solid = "solid".asInstanceOf[typings.amapJsApi.amapJsApiStrings.solid]
 }
 

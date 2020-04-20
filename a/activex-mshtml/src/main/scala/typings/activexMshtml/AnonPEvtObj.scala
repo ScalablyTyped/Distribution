@@ -13,7 +13,6 @@ object AnonPEvtObj {
   @scala.inline
   def apply(pEvtObj: IHTMLEventObj): AnonPEvtObj = {
     val __obj = js.Dynamic.literal(pEvtObj = pEvtObj.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPEvtObj]
   }
 }

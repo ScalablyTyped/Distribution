@@ -18,7 +18,6 @@ object MediaResource {
   @scala.inline
   def apply(download: AnonKey => Request_[Media]): MediaResource = {
     val __obj = js.Dynamic.literal(download = js.Any.fromFunction1(download))
-  
     __obj.asInstanceOf[MediaResource]
   }
 }

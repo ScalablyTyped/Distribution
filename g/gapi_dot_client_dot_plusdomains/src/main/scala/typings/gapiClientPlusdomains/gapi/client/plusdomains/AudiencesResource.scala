@@ -15,7 +15,6 @@ object AudiencesResource {
   @scala.inline
   def apply(list: AnonFields => Request_[AudiencesFeed]): AudiencesResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[AudiencesResource]
   }
 }

@@ -13,7 +13,6 @@ object PickImplselectFirstResult {
   @scala.inline
   def apply(selectFirstResult: Boolean): PickImplselectFirstResult = {
     val __obj = js.Dynamic.literal(selectFirstResult = selectFirstResult.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplselectFirstResult]
   }
 }

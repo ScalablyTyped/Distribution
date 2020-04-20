@@ -13,7 +13,6 @@ object PickImplplaceholderPlaceholder {
   @scala.inline
   def apply(placeholder: String): PickImplplaceholderPlaceholder = {
     val __obj = js.Dynamic.literal(placeholder = placeholder.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplplaceholderPlaceholder]
   }
 }

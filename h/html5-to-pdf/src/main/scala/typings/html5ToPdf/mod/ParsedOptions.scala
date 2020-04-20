@@ -29,7 +29,6 @@ object ParsedOptions {
     templateUrl: String
   ): ParsedOptions = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], include = include.asInstanceOf[js.Any], launchOptions = launchOptions.asInstanceOf[js.Any], pdf = pdf.asInstanceOf[js.Any], renderDelay = renderDelay.asInstanceOf[js.Any], templatePath = templatePath.asInstanceOf[js.Any], templateUrl = templateUrl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ParsedOptions]
   }
 }

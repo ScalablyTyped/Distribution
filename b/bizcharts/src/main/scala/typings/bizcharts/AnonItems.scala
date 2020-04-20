@@ -15,7 +15,6 @@ object AnonItems {
   @scala.inline
   def apply(items: js.Any, tooltip: js.Any, x: Double, y: Double): AnonItems = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonItems]
   }
 }

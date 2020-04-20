@@ -11,6 +11,47 @@ import scala.scalajs.js.annotation._
 @JSImport("plottable/build/src/animators/easingAnimator", JSImport.Namespace)
 @js.native
 object easingAnimatorMod extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - typings.plottable.plottableStrings.circle
+    - typings.plottable.plottableStrings.linear
+    - typings.plottable.plottableStrings.quad
+    - typings.plottable.plottableStrings.quadIn
+    - typings.plottable.plottableStrings.quadOut
+    - typings.plottable.plottableStrings.quadInOut
+    - typings.plottable.plottableStrings.cubic
+    - typings.plottable.plottableStrings.cubicIn
+    - typings.plottable.plottableStrings.cubicOut
+    - typings.plottable.plottableStrings.cubicInOut
+    - typings.plottable.plottableStrings.poly
+    - typings.plottable.plottableStrings.polyIn
+    - typings.plottable.plottableStrings.polyOut
+    - typings.plottable.plottableStrings.polyInOut
+    - typings.plottable.plottableStrings.sin
+    - typings.plottable.plottableStrings.sinIn
+    - typings.plottable.plottableStrings.sinOut
+    - typings.plottable.plottableStrings.sinInOut
+    - typings.plottable.plottableStrings.exp
+    - typings.plottable.plottableStrings.expIn
+    - typings.plottable.plottableStrings.expOut
+    - typings.plottable.plottableStrings.expInOut
+    - typings.plottable.plottableStrings.circleIn
+    - typings.plottable.plottableStrings.circleOut
+    - typings.plottable.plottableStrings.circleInOut
+    - typings.plottable.plottableStrings.bounce
+    - typings.plottable.plottableStrings.bounceIn
+    - typings.plottable.plottableStrings.bounceOut
+    - typings.plottable.plottableStrings.bounceInOut
+    - typings.plottable.plottableStrings.back
+    - typings.plottable.plottableStrings.backIn
+    - typings.plottable.plottableStrings.backOut
+    - typings.plottable.plottableStrings.backInOut
+    - typings.plottable.plottableStrings.elastic
+    - typings.plottable.plottableStrings.elasticIn
+    - typings.plottable.plottableStrings.elasticOut
+    - typings.plottable.plottableStrings.elasticInOut
+  */
+  trait EaseName extends js.Object
+  
   @js.native
   /**
     * Constructs the default animator
@@ -191,6 +232,5 @@ object easingAnimatorMod extends js.Object {
   }
   
   type EaseFn = js.Function1[/* normalizedTime */ Double, Double]
-  type EaseName = String
 }
 

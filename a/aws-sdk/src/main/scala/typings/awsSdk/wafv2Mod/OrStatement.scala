@@ -16,7 +16,6 @@ object OrStatement {
   @scala.inline
   def apply(Statements: Statements): OrStatement = {
     val __obj = js.Dynamic.literal(Statements = Statements.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OrStatement]
   }
 }

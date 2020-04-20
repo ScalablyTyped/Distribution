@@ -16,7 +16,6 @@ object StopEntitiesDetectionJobRequest {
   @scala.inline
   def apply(JobId: JobId): StopEntitiesDetectionJobRequest = {
     val __obj = js.Dynamic.literal(JobId = JobId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopEntitiesDetectionJobRequest]
   }
 }

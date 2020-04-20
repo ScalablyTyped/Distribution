@@ -13,7 +13,6 @@ object AnonStream {
   @scala.inline
   def apply(stream: GeoStream_): AnonStream = {
     val __obj = js.Dynamic.literal(stream = stream.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonStream]
   }
 }

@@ -23,7 +23,6 @@ object BridgeSummary {
   @scala.inline
   def apply(h: String, n: String, r: Boolean): BridgeSummary = {
     val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BridgeSummary]
   }
 }

@@ -24,58 +24,58 @@ import scala.scalajs.js.annotation._
 
 trait muiDatatablesProps {
   @scala.inline
-  def MuiDatatablesProps: MUIDataTableProps.type = typings.muiDatatables.mod.MUIDataTableProps
+  def MuiDatatablesProps: MUIDataTableProps.type = MUIDataTableProps
   type MuiDatatablesProps = MUIDataTableProps
   @scala.inline
-  def PopoverProps: MUIDataTablePopover.type = typings.muiDatatables.mod.MUIDataTablePopover
+  def PopoverProps: MUIDataTablePopover.type = MUIDataTablePopover
   type PopoverProps = MUIDataTablePopover
   @scala.inline
-  def TableBodyProps: MUIDataTableBody.type = typings.muiDatatables.mod.MUIDataTableBody
+  def TableBodyProps: MUIDataTableBody.type = MUIDataTableBody
   type TableBodyProps = MUIDataTableBody
   @scala.inline
-  def TableBodyCellProps: MUIDataTableBodyCell.type = typings.muiDatatables.mod.MUIDataTableBodyCell
+  def TableBodyCellProps: MUIDataTableBodyCell.type = MUIDataTableBodyCell
   type TableBodyCellProps = MUIDataTableBodyCell
   @scala.inline
-  def TableBodyRowProps: MUIDataTableBodyRow.type = typings.muiDatatables.mod.MUIDataTableBodyRow
+  def TableBodyRowProps: MUIDataTableBodyRow.type = MUIDataTableBodyRow
   type TableBodyRowProps = MUIDataTableBodyRow
   @scala.inline
-  def TableFilterProps: MUIDataTableFilter.type = typings.muiDatatables.mod.MUIDataTableFilter
+  def TableFilterProps: MUIDataTableFilter.type = MUIDataTableFilter
   type TableFilterProps = MUIDataTableFilter
   @scala.inline
-  def TableFilterListProps: MUIDataTableFilterList.type = typings.muiDatatables.mod.MUIDataTableFilterList
+  def TableFilterListProps: MUIDataTableFilterList.type = MUIDataTableFilterList
   type TableFilterListProps = MUIDataTableFilterList
   @scala.inline
-  def TableFooterProps: MUIDataTableFooter.type = typings.muiDatatables.mod.MUIDataTableFooter
+  def TableFooterProps: MUIDataTableFooter.type = MUIDataTableFooter
   type TableFooterProps = MUIDataTableFooter
   @scala.inline
-  def TableHeadProps: MUIDataTableHead.type = typings.muiDatatables.mod.MUIDataTableHead
+  def TableHeadProps: MUIDataTableHead.type = MUIDataTableHead
   type TableHeadProps = MUIDataTableHead
   @scala.inline
-  def TableHeadCellProps: MUIDataTableHeadCell.type = typings.muiDatatables.mod.MUIDataTableHeadCell
+  def TableHeadCellProps: MUIDataTableHeadCell.type = MUIDataTableHeadCell
   type TableHeadCellProps = MUIDataTableHeadCell
   @scala.inline
-  def TableHeadRowProps: MUIDataTableHeadRow.type = typings.muiDatatables.mod.MUIDataTableHeadRow
+  def TableHeadRowProps: MUIDataTableHeadRow.type = MUIDataTableHeadRow
   type TableHeadRowProps = MUIDataTableHeadRow
   @scala.inline
-  def TablePaginationProps: MUIDataTablePagination.type = typings.muiDatatables.mod.MUIDataTablePagination
+  def TablePaginationProps: MUIDataTablePagination.type = MUIDataTablePagination
   type TablePaginationProps = MUIDataTablePagination
   @scala.inline
-  def TableResizeProps: MUIDataTableResize.type = typings.muiDatatables.mod.MUIDataTableResize
+  def TableResizeProps: MUIDataTableResize.type = MUIDataTableResize
   type TableResizeProps = MUIDataTableResize
   @scala.inline
-  def TableSearchProps: MUIDataTableSearch.type = typings.muiDatatables.mod.MUIDataTableSearch
+  def TableSearchProps: MUIDataTableSearch.type = MUIDataTableSearch
   type TableSearchProps = MUIDataTableSearch
   @scala.inline
-  def TableSelectCellProps: MUIDataTableSelectCell.type = typings.muiDatatables.mod.MUIDataTableSelectCell
+  def TableSelectCellProps: MUIDataTableSelectCell.type = MUIDataTableSelectCell
   type TableSelectCellProps = MUIDataTableSelectCell
   @scala.inline
-  def TableToolbarProps: MUIDataTableToolbar.type = typings.muiDatatables.mod.MUIDataTableToolbar
+  def TableToolbarProps: MUIDataTableToolbar.type = MUIDataTableToolbar
   type TableToolbarProps = MUIDataTableToolbar
   @scala.inline
-  def TableToolbarSelectProps: MUIDataTableToolbarSelect.type = typings.muiDatatables.mod.MUIDataTableToolbarSelect
+  def TableToolbarSelectProps: MUIDataTableToolbarSelect.type = MUIDataTableToolbarSelect
   type TableToolbarSelectProps = MUIDataTableToolbarSelect
   @scala.inline
-  def TableViewColProps: MUIDataTableViewCol.type = typings.muiDatatables.mod.MUIDataTableViewCol
+  def TableViewColProps: MUIDataTableViewCol.type = MUIDataTableViewCol
   type TableViewColProps = MUIDataTableViewCol
 }
 

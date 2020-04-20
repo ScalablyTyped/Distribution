@@ -12,7 +12,6 @@ object UseFiltersState {
   @scala.inline
   def apply[D /* <: js.Object */](filters: Filters[D]): UseFiltersState[D] = {
     val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UseFiltersState[D]]
   }
 }

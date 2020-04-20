@@ -20,7 +20,6 @@ object HomeDirectoryMapEntry {
   @scala.inline
   def apply(Entry: MapEntry, Target: MapTarget): HomeDirectoryMapEntry = {
     val __obj = js.Dynamic.literal(Entry = Entry.asInstanceOf[js.Any], Target = Target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HomeDirectoryMapEntry]
   }
 }

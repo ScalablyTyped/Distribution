@@ -13,7 +13,6 @@ object FileSearch {
   @scala.inline
   def apply(each: js.Function1[/* file */ String, Unit] => Unit, list: () => js.Array[String]): FileSearch = {
     val __obj = js.Dynamic.literal(each = js.Any.fromFunction1(each), list = js.Any.fromFunction0(list))
-  
     __obj.asInstanceOf[FileSearch]
   }
 }

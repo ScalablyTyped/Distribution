@@ -13,7 +13,6 @@ object AnonActionTimetoken {
   @scala.inline
   def apply(actionTimetoken: String | Double, uuid: String): AnonActionTimetoken = {
     val __obj = js.Dynamic.literal(actionTimetoken = actionTimetoken.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonActionTimetoken]
   }
 }

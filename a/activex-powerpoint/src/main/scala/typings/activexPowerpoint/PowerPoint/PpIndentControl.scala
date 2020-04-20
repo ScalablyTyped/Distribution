@@ -16,12 +16,10 @@ trait PpIndentControl extends js.Object
 
 object PpIndentControl {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ppIndentControlMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def ppIndentControlMixed: `-2` = this.cast(-2)
+  def ppIndentKeepAttr: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def ppIndentKeepAttr: `2` = this.cast(2)
-  @scala.inline
-  def ppIndentReplaceAttr: `1` = this.cast(1)
+  def ppIndentReplaceAttr: `1` = 1.asInstanceOf[`1`]
 }
 

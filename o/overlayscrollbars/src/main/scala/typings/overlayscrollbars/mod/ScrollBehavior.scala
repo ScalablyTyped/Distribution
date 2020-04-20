@@ -13,12 +13,10 @@ trait ScrollBehavior extends js.Object
 
 object ScrollBehavior {
   @scala.inline
-  def always: typings.overlayscrollbars.overlayscrollbarsStrings.always = this.cast("always")
+  def always: typings.overlayscrollbars.overlayscrollbarsStrings.always = "always".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.always]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ifneeded: typings.overlayscrollbars.overlayscrollbarsStrings.ifneeded = "ifneeded".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.ifneeded]
   @scala.inline
-  def ifneeded: typings.overlayscrollbars.overlayscrollbarsStrings.ifneeded = this.cast("ifneeded")
-  @scala.inline
-  def never: typings.overlayscrollbars.overlayscrollbarsStrings.never = this.cast("never")
+  def never: typings.overlayscrollbars.overlayscrollbarsStrings.never = "never".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.never]
 }
 

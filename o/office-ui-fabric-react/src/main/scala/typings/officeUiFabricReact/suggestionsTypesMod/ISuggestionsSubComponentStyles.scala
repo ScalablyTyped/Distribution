@@ -15,7 +15,6 @@ object ISuggestionsSubComponentStyles {
   @scala.inline
   def apply(spinner: IStyleFunctionOrObject[ISpinnerStyleProps, _]): ISuggestionsSubComponentStyles = {
     val __obj = js.Dynamic.literal(spinner = spinner.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISuggestionsSubComponentStyles]
   }
 }

@@ -12,10 +12,8 @@ trait Hemisphere extends js.Object
 
 object Hemisphere {
   @scala.inline
-  def N: typings.geodesy.geodesyStrings.N = this.cast("N")
+  def N: typings.geodesy.geodesyStrings.N = "N".asInstanceOf[typings.geodesy.geodesyStrings.N]
   @scala.inline
-  def S: typings.geodesy.geodesyStrings.S = this.cast("S")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def S: typings.geodesy.geodesyStrings.S = "S".asInstanceOf[typings.geodesy.geodesyStrings.S]
 }
 

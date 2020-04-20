@@ -13,7 +13,6 @@ object PickImplhideAdditions {
   @scala.inline
   def apply(hideAdditions: Boolean): PickImplhideAdditions = {
     val __obj = js.Dynamic.literal(hideAdditions = hideAdditions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplhideAdditions]
   }
 }

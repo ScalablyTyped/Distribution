@@ -20,7 +20,6 @@ object AnonAvatar {
   @scala.inline
   def apply(avatar: String, email: String, mobile: String, realName: String, userId: String): AnonAvatar = {
     val __obj = js.Dynamic.literal(avatar = avatar.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], mobile = mobile.asInstanceOf[js.Any], realName = realName.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAvatar]
   }
 }

@@ -17,7 +17,6 @@ object AccountAliasArgs {
   @scala.inline
   def apply(accountAlias: Input[String]): AccountAliasArgs = {
     val __obj = js.Dynamic.literal(accountAlias = accountAlias.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AccountAliasArgs]
   }
 }

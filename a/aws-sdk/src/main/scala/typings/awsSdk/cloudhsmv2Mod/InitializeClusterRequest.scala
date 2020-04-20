@@ -24,7 +24,6 @@ object InitializeClusterRequest {
   @scala.inline
   def apply(ClusterId: ClusterId, SignedCert: Cert, TrustAnchor: Cert): InitializeClusterRequest = {
     val __obj = js.Dynamic.literal(ClusterId = ClusterId.asInstanceOf[js.Any], SignedCert = SignedCert.asInstanceOf[js.Any], TrustAnchor = TrustAnchor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InitializeClusterRequest]
   }
 }

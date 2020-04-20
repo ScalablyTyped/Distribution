@@ -13,7 +13,6 @@ object TypeofDataSync {
   @scala.inline
   def apply(Types: TypeofDataSync): TypeofDataSync = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofDataSync]
   }
 }

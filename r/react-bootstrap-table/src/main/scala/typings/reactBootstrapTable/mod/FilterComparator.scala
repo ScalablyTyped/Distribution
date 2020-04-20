@@ -16,18 +16,16 @@ trait FilterComparator extends js.Object
 
 object FilterComparator {
   @scala.inline
-  def Equalssign: typings.reactBootstrapTable.reactBootstrapTableStrings.Equalssign = this.cast("=")
+  def Equalssign: typings.reactBootstrapTable.reactBootstrapTableStrings.Equalssign = "=".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.Equalssign]
   @scala.inline
-  def ExclamationmarkEqualssign: typings.reactBootstrapTable.reactBootstrapTableStrings.ExclamationmarkEqualssign = this.cast("!=")
+  def ExclamationmarkEqualssign: typings.reactBootstrapTable.reactBootstrapTableStrings.ExclamationmarkEqualssign = "!=".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.ExclamationmarkEqualssign]
   @scala.inline
-  def Greaterthansign: typings.reactBootstrapTable.reactBootstrapTableStrings.Greaterthansign = this.cast(">")
+  def Greaterthansign: typings.reactBootstrapTable.reactBootstrapTableStrings.Greaterthansign = ">".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.Greaterthansign]
   @scala.inline
-  def GreaterthansignEqualssign: typings.reactBootstrapTable.reactBootstrapTableStrings.GreaterthansignEqualssign = this.cast(">=")
+  def GreaterthansignEqualssign: typings.reactBootstrapTable.reactBootstrapTableStrings.GreaterthansignEqualssign = ">=".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.GreaterthansignEqualssign]
   @scala.inline
-  def Lessthansign: typings.reactBootstrapTable.reactBootstrapTableStrings.Lessthansign = this.cast("<")
+  def Lessthansign: typings.reactBootstrapTable.reactBootstrapTableStrings.Lessthansign = "<".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.Lessthansign]
   @scala.inline
-  def LessthansignEqualssign: typings.reactBootstrapTable.reactBootstrapTableStrings.LessthansignEqualssign = this.cast("<=")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def LessthansignEqualssign: typings.reactBootstrapTable.reactBootstrapTableStrings.LessthansignEqualssign = "<=".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.LessthansignEqualssign]
 }
 

@@ -14,7 +14,6 @@ object AnonSuccess {
   @scala.inline
   def apply(failure: String => js.Any, success: (js.Array[KiiTopic], String) => js.Any): AnonSuccess = {
     val __obj = js.Dynamic.literal(failure = js.Any.fromFunction1(failure), success = js.Any.fromFunction2(success))
-  
     __obj.asInstanceOf[AnonSuccess]
   }
 }

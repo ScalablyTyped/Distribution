@@ -67,7 +67,6 @@ object ISelectionOwner {
     uuid: String
   ): ISelectionOwner = {
     val __obj = js.Dynamic.literal(getCursorPosition = js.Any.fromFunction0(getCursorPosition), getSelection = js.Any.fromFunction0(getSelection), getSelections = js.Any.fromFunction0(getSelections), setCursorPosition = js.Any.fromFunction1(setCursorPosition), setSelection = js.Any.fromFunction1(setSelection), setSelections = js.Any.fromFunction1(setSelections), uuid = uuid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISelectionOwner]
   }
 }

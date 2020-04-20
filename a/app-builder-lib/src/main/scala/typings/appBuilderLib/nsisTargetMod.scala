@@ -35,11 +35,11 @@ object nsisTargetMod extends js.Object {
     def buildAppPackage(appOutDir: String, arch: Arch): js.Promise[PackageFileInfo] = js.native
     /* protected */ def configureDefines(oneClick: Boolean, defines: js.Any): js.Promise[_] = js.native
     /* protected */ def generateGitHubInstallerName(): String = js.native
-    /* protected */ def installerFilenamePattern(): String = js.native
-    def isBuildDifferentialAware(): Boolean = js.native
-    /* private */ def isPortable(): js.Any = js.native
-    /* private */ def isUnicodeEnabled(): js.Any = js.native
-    def isWebInstaller(): Boolean = js.native
+    /* protected */ def installerFilenamePattern: String = js.native
+    def isBuildDifferentialAware: Boolean = js.native
+    /* private */ def isPortable: js.Any = js.native
+    /* private */ def isUnicodeEnabled: js.Any = js.native
+    def isWebInstaller: Boolean = js.native
   }
   
 }

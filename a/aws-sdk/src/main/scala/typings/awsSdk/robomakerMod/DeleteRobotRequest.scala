@@ -16,7 +16,6 @@ object DeleteRobotRequest {
   @scala.inline
   def apply(robot: Arn): DeleteRobotRequest = {
     val __obj = js.Dynamic.literal(robot = robot.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteRobotRequest]
   }
 }

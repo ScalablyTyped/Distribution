@@ -28,7 +28,6 @@ object PeopleFeed {
     totalItems: Double
   ): PeopleFeed = {
     val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], nextPageToken = nextPageToken.asInstanceOf[js.Any], selfLink = selfLink.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], totalItems = totalItems.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PeopleFeed]
   }
 }

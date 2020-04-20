@@ -89,7 +89,6 @@ object AccessibilityInfoStatic {
     setAccessibilityFocus: Double => Unit
   ): AccessibilityInfoStatic = {
     val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), announceForAccessibility = js.Any.fromFunction1(announceForAccessibility), fetch = js.Any.fromFunction0(fetch), isBoldTextEnabled = js.Any.fromFunction0(isBoldTextEnabled), isGrayscaleEnabled = js.Any.fromFunction0(isGrayscaleEnabled), isInvertColorsEnabled = js.Any.fromFunction0(isInvertColorsEnabled), isReduceMotionEnabled = js.Any.fromFunction0(isReduceMotionEnabled), isReduceTransparencyEnabled = js.Any.fromFunction0(isReduceTransparencyEnabled), isScreenReaderEnabled = js.Any.fromFunction0(isScreenReaderEnabled), removeEventListener = js.Any.fromFunction2(removeEventListener), setAccessibilityFocus = js.Any.fromFunction1(setAccessibilityFocus))
-  
     __obj.asInstanceOf[AccessibilityInfoStatic]
   }
 }

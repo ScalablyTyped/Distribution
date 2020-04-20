@@ -20,7 +20,6 @@ object RenameColumnOperation {
   @scala.inline
   def apply(ColumnName: ColumnName, NewColumnName: ColumnName): RenameColumnOperation = {
     val __obj = js.Dynamic.literal(ColumnName = ColumnName.asInstanceOf[js.Any], NewColumnName = NewColumnName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RenameColumnOperation]
   }
 }

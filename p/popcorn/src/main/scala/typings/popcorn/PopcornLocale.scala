@@ -13,7 +13,6 @@ object PopcornLocale {
   @scala.inline
   def apply(get: () => String, set: String => js.Any): PopcornLocale = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get), set = js.Any.fromFunction1(set))
-  
     __obj.asInstanceOf[PopcornLocale]
   }
 }

@@ -45,13 +45,13 @@ class ModuleRole protected ()
     */
   /* CompleteClass */
   override val qualifiedName: String | Null = js.native
-  def containerAsModuleSecurity(): ModuleSecurity = js.native
-  def description(): String = js.native
+  def containerAsModuleSecurity: ModuleSecurity = js.native
+  def description: String = js.native
   def description(newValue: String): js.Any = js.native
-  def name(): String = js.native
+  def name: String = js.native
   def name(newValue: String): js.Any = js.native
   @JSName("qualifiedName")
-  def qualifiedName_MModuleRole(): String | Null = js.native
+  def qualifiedName_MModuleRole: String | Null = js.native
 }
 
 /* static members */

@@ -12,7 +12,6 @@ object KnockoutStatic {
   @scala.inline
   def apply(stringTemplateEngine: AnonInstance): KnockoutStatic = {
     val __obj = js.Dynamic.literal(stringTemplateEngine = stringTemplateEngine.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KnockoutStatic]
   }
 }

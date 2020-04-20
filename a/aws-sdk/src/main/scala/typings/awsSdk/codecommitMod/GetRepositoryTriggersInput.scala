@@ -16,7 +16,6 @@ object GetRepositoryTriggersInput {
   @scala.inline
   def apply(repositoryName: RepositoryName): GetRepositoryTriggersInput = {
     val __obj = js.Dynamic.literal(repositoryName = repositoryName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetRepositoryTriggersInput]
   }
 }

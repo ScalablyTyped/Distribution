@@ -65,11 +65,11 @@ class ObservableUndoableList[T] protected () extends ObservableList[T] {
   /**
     * Whether the object can redo changes.
     */
-  def canRedo(): Boolean = js.native
+  def canRedo: Boolean = js.native
   /**
     * Whether the object can undo changes.
     */
-  def canUndo(): Boolean = js.native
+  def canUndo: Boolean = js.native
   /**
     * Clear the change stack.
     */

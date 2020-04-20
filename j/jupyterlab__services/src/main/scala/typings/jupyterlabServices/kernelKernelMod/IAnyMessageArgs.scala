@@ -22,7 +22,6 @@ object IAnyMessageArgs {
   @scala.inline
   def apply(direction: send | recv, msg: ReadonlyIMessageMessageTy): IAnyMessageArgs = {
     val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IAnyMessageArgs]
   }
 }

@@ -18,7 +18,6 @@ object OpenMonitoringInfo {
   @scala.inline
   def apply(Prometheus: PrometheusInfo): OpenMonitoringInfo = {
     val __obj = js.Dynamic.literal(Prometheus = Prometheus.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OpenMonitoringInfo]
   }
 }

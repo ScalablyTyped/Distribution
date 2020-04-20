@@ -2,7 +2,7 @@ package typings.childProcessPromise
 
 import typings.childProcessPromise.childProcessPromiseStrings.stderr
 import typings.childProcessPromise.childProcessPromiseStrings.stdout
-import typings.node.NodeJS.ProcessEnv
+import typings.node.NodeJS.Dict
 import typings.node.childProcessMod.SerializationType
 import typings.node.childProcessMod.StdioOptions
 import scala.scalajs.js
@@ -17,7 +17,7 @@ trait ReadonlyOptionsSpawnOptio extends js.Object {
   ] = js.undefined
   val cwd: js.UndefOr[String] = js.undefined
   val detached: js.UndefOr[Boolean] = js.undefined
-  val env: js.UndefOr[ProcessEnv] = js.undefined
+  val env: js.UndefOr[Dict[String]] = js.undefined
   val gid: js.UndefOr[Double] = js.undefined
   val serialization: js.UndefOr[SerializationType] = js.undefined
   val shell: js.UndefOr[Boolean | String] = js.undefined
@@ -36,7 +36,7 @@ object ReadonlyOptionsSpawnOptio {
     capture: (js.Array[stdout | stderr | js.Any]) | (js.Tuple2[stdout | stderr, stderr | stdout]) = null,
     cwd: String = null,
     detached: js.UndefOr[Boolean] = js.undefined,
-    env: ProcessEnv = null,
+    env: Dict[String] = null,
     gid: Int | Double = null,
     serialization: SerializationType = null,
     shell: Boolean | String = null,

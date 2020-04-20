@@ -13,7 +13,6 @@ object ErrorRule {
   @scala.inline
   def apply(error: `true`): ErrorRule = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ErrorRule]
   }
 }

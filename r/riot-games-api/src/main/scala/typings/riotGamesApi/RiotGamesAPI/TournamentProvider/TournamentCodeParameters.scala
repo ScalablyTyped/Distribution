@@ -24,7 +24,6 @@ object TournamentCodeParameters {
     teamSize: Double
   ): TournamentCodeParameters = {
     val __obj = js.Dynamic.literal(allowedSummonerIds = allowedSummonerIds.asInstanceOf[js.Any], mapType = mapType.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], pickType = pickType.asInstanceOf[js.Any], spectatorType = spectatorType.asInstanceOf[js.Any], teamSize = teamSize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TournamentCodeParameters]
   }
 }

@@ -19,7 +19,6 @@ object ISmsDeviceStatics {
     getDeviceSelector: () => String
   ): ISmsDeviceStatics = {
     val __obj = js.Dynamic.literal(fromIdAsync = js.Any.fromFunction1(fromIdAsync), getDefaultAsync = js.Any.fromFunction0(getDefaultAsync), getDeviceSelector = js.Any.fromFunction0(getDeviceSelector))
-  
     __obj.asInstanceOf[ISmsDeviceStatics]
   }
 }

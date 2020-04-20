@@ -23,7 +23,6 @@ object UpdateApprovalRuleTemplateNameInput {
     oldApprovalRuleTemplateName: ApprovalRuleTemplateName
   ): UpdateApprovalRuleTemplateNameInput = {
     val __obj = js.Dynamic.literal(newApprovalRuleTemplateName = newApprovalRuleTemplateName.asInstanceOf[js.Any], oldApprovalRuleTemplateName = oldApprovalRuleTemplateName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateApprovalRuleTemplateNameInput]
   }
 }

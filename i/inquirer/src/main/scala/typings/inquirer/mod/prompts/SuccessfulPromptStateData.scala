@@ -27,7 +27,6 @@ object SuccessfulPromptStateData {
   @scala.inline
   def apply[T](isValid: `true`, value: T): SuccessfulPromptStateData[T] = {
     val __obj = js.Dynamic.literal(isValid = isValid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SuccessfulPromptStateData[T]]
   }
 }

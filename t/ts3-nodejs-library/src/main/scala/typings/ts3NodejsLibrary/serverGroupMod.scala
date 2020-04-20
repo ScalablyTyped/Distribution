@@ -71,12 +71,12 @@ object serverGroupMod extends js.Object {
     def getIcon(): js.Promise[Buffer] = js.native
     /** gets the icon name of the servergroup */
     def getIconName(): js.Promise[String] = js.native
-    def iconid(): Double = js.native
-    def nMemberAddp(): Double = js.native
-    def nMemberRemovep(): Double = js.native
-    def nModifyp(): Double = js.native
-    def name(): String = js.native
-    def namemode(): Double = js.native
+    def iconid: Double = js.native
+    def nMemberAddp: Double = js.native
+    def nMemberRemovep: Double = js.native
+    def nModifyp: Double = js.native
+    def name: String = js.native
+    def namemode: Double = js.native
     /**
       * returns a list of permissions assigned to the server group specified with sgid
       * @param permsid if the permsid option is set to true the output will contain the permission names
@@ -87,10 +87,10 @@ object serverGroupMod extends js.Object {
       * @param name new name of the group
       */
     def rename(name: String): js.Promise[js.Array[QueryResponseTypes]] = js.native
-    def savedb(): Double = js.native
-    def sgid(): Double = js.native
-    def sortid(): Double = js.native
-    def `type`(): Double = js.native
+    def savedb: Double = js.native
+    def sgid: Double = js.native
+    def sortid: Double = js.native
+    def `type`: Double = js.native
   }
   
 }

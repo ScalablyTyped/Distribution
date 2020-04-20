@@ -28,7 +28,6 @@ object TooltipPositionerPointObject {
   @scala.inline
   def apply(isHeader: Boolean, negative: Boolean, plotX: Double, plotY: Double): TooltipPositionerPointObject = {
     val __obj = js.Dynamic.literal(isHeader = isHeader.asInstanceOf[js.Any], negative = negative.asInstanceOf[js.Any], plotX = plotX.asInstanceOf[js.Any], plotY = plotY.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TooltipPositionerPointObject]
   }
 }

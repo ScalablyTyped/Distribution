@@ -15,7 +15,6 @@ object AnonStats {
   @scala.inline
   def apply(compiler: Compiler_, stats: Stats): AnonStats = {
     val __obj = js.Dynamic.literal(compiler = compiler.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonStats]
   }
 }

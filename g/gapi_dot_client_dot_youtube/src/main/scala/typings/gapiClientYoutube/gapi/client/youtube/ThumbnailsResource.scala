@@ -15,7 +15,6 @@ object ThumbnailsResource {
   @scala.inline
   def apply(set: AnonVideoId => Request_[ThumbnailSetResponse]): ThumbnailsResource = {
     val __obj = js.Dynamic.literal(set = js.Any.fromFunction1(set))
-  
     __obj.asInstanceOf[ThumbnailsResource]
   }
 }

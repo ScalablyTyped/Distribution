@@ -46,7 +46,6 @@ object DistanceMatrixRowElement {
     status: DistanceMatrixResponseElementLevelStatus
   ): DistanceMatrixRowElement = {
     val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], duration_in_traffic = duration_in_traffic.asInstanceOf[js.Any], fare = fare.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DistanceMatrixRowElement]
   }
 }

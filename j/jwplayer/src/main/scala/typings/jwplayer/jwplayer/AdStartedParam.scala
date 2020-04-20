@@ -13,7 +13,6 @@ object AdStartedParam {
   @scala.inline
   def apply(creativetype: String, tag: String): AdStartedParam = {
     val __obj = js.Dynamic.literal(creativetype = creativetype.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AdStartedParam]
   }
 }

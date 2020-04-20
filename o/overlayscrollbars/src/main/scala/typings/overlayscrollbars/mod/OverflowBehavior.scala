@@ -18,22 +18,20 @@ trait OverflowBehavior extends js.Object
 
 object OverflowBehavior {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def h: typings.overlayscrollbars.overlayscrollbarsStrings.h = "h".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.h]
   @scala.inline
-  def h: typings.overlayscrollbars.overlayscrollbarsStrings.h = this.cast("h")
+  def hidden: typings.overlayscrollbars.overlayscrollbarsStrings.hidden = "hidden".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.hidden]
   @scala.inline
-  def hidden: typings.overlayscrollbars.overlayscrollbarsStrings.hidden = this.cast("hidden")
+  def s: typings.overlayscrollbars.overlayscrollbarsStrings.s = "s".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.s]
   @scala.inline
-  def s: typings.overlayscrollbars.overlayscrollbarsStrings.s = this.cast("s")
+  def scroll: typings.overlayscrollbars.overlayscrollbarsStrings.scroll = "scroll".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.scroll]
   @scala.inline
-  def scroll: typings.overlayscrollbars.overlayscrollbarsStrings.scroll = this.cast("scroll")
+  def `v-h`: typings.overlayscrollbars.overlayscrollbarsStrings.`v-h` = "v-h".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.`v-h`]
   @scala.inline
-  def `v-h`: typings.overlayscrollbars.overlayscrollbarsStrings.`v-h` = this.cast("v-h")
+  def `v-s`: typings.overlayscrollbars.overlayscrollbarsStrings.`v-s` = "v-s".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.`v-s`]
   @scala.inline
-  def `v-s`: typings.overlayscrollbars.overlayscrollbarsStrings.`v-s` = this.cast("v-s")
+  def `visible-hidden`: typings.overlayscrollbars.overlayscrollbarsStrings.`visible-hidden` = "visible-hidden".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.`visible-hidden`]
   @scala.inline
-  def `visible-hidden`: typings.overlayscrollbars.overlayscrollbarsStrings.`visible-hidden` = this.cast("visible-hidden")
-  @scala.inline
-  def `visible-scroll`: typings.overlayscrollbars.overlayscrollbarsStrings.`visible-scroll` = this.cast("visible-scroll")
+  def `visible-scroll`: typings.overlayscrollbars.overlayscrollbarsStrings.`visible-scroll` = "visible-scroll".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.`visible-scroll`]
 }
 

@@ -14,7 +14,6 @@ object AnonImportedBy {
   @scala.inline
   def apply(importedBy: js.Array[String], imports: js.Array[String], modified: String): AnonImportedBy = {
     val __obj = js.Dynamic.literal(importedBy = importedBy.asInstanceOf[js.Any], imports = imports.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonImportedBy]
   }
 }

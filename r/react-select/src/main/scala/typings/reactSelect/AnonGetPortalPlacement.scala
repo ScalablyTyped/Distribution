@@ -13,7 +13,6 @@ object AnonGetPortalPlacement {
   @scala.inline
   def apply(getPortalPlacement: MenuState => Unit): AnonGetPortalPlacement = {
     val __obj = js.Dynamic.literal(getPortalPlacement = js.Any.fromFunction1(getPortalPlacement))
-  
     __obj.asInstanceOf[AnonGetPortalPlacement]
   }
 }

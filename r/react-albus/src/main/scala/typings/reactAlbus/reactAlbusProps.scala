@@ -11,7 +11,7 @@ trait reactAlbusProps {
   def StepsProps: typings.reactAlbus.mod.StepsProps.type = typings.reactAlbus.mod.StepsProps
   type StepsProps = typings.reactAlbus.mod.StepsProps
   @scala.inline
-  def WithWizardProps: WizardContextRenderProps.type = typings.reactAlbus.mod.WizardContextRenderProps
+  def WithWizardProps: WizardContextRenderProps.type = WizardContextRenderProps
   type WithWizardProps = WizardContextRenderProps
   @scala.inline
   def WizardProps: typings.reactAlbus.mod.WizardProps.type = typings.reactAlbus.mod.WizardProps

@@ -12,7 +12,6 @@ object ISessionDelegate {
   @scala.inline
   def apply(startSession: Client => Client): ISessionDelegate = {
     val __obj = js.Dynamic.literal(startSession = js.Any.fromFunction1(startSession))
-  
     __obj.asInstanceOf[ISessionDelegate]
   }
 }

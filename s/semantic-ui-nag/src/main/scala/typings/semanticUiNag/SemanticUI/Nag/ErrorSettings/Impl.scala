@@ -23,7 +23,6 @@ object Impl {
   @scala.inline
   def apply(method: String, noCookieStorage: String, noStorage: String): Impl = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], noCookieStorage = noCookieStorage.asInstanceOf[js.Any], noStorage = noStorage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Impl]
   }
 }

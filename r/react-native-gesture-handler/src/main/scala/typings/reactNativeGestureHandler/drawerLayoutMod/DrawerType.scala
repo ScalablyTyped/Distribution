@@ -13,12 +13,10 @@ trait DrawerType extends js.Object
 
 object DrawerType {
   @scala.inline
-  def back: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.back = this.cast("back")
+  def back: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.back = "back".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.back]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def front: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.front = "front".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.front]
   @scala.inline
-  def front: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.front = this.cast("front")
-  @scala.inline
-  def slide: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.slide = this.cast("slide")
+  def slide: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.slide = "slide".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.slide]
 }
 

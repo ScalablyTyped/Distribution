@@ -20,7 +20,6 @@ object DeleteUserRequest {
   @scala.inline
   def apply(InstanceId: InstanceId, UserId: UserId): DeleteUserRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any], UserId = UserId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteUserRequest]
   }
 }

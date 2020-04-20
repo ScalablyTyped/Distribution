@@ -13,6 +13,6 @@ class UrlTree () extends js.Object {
   var queryParams: Params = js.native
   /** The root segment group of the URL tree */
   var root: UrlSegmentGroup = js.native
-  def queryParamMap(): ParamMap = js.native
+  def queryParamMap: ParamMap = js.native
 }
 

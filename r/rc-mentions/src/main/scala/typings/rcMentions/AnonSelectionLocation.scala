@@ -13,7 +13,6 @@ object AnonSelectionLocation {
   @scala.inline
   def apply(selectionLocation: Double, text: String): AnonSelectionLocation = {
     val __obj = js.Dynamic.literal(selectionLocation = selectionLocation.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSelectionLocation]
   }
 }

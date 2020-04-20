@@ -13,7 +13,6 @@ object TypeofKinesisAnalyticsV2 {
   @scala.inline
   def apply(Types: TypeofKinesisAnalyticsV2): TypeofKinesisAnalyticsV2 = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofKinesisAnalyticsV2]
   }
 }

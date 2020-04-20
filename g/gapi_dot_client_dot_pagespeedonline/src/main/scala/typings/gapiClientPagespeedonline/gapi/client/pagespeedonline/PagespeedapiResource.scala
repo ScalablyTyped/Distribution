@@ -18,7 +18,6 @@ object PagespeedapiResource {
   @scala.inline
   def apply(runpagespeed: AnonAlt => Request_[Result]): PagespeedapiResource = {
     val __obj = js.Dynamic.literal(runpagespeed = js.Any.fromFunction1(runpagespeed))
-  
     __obj.asInstanceOf[PagespeedapiResource]
   }
 }

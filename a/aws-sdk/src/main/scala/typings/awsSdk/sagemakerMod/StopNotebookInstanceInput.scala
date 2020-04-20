@@ -16,7 +16,6 @@ object StopNotebookInstanceInput {
   @scala.inline
   def apply(NotebookInstanceName: NotebookInstanceName): StopNotebookInstanceInput = {
     val __obj = js.Dynamic.literal(NotebookInstanceName = NotebookInstanceName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopNotebookInstanceInput]
   }
 }

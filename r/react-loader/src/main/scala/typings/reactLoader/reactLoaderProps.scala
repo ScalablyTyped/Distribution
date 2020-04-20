@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactLoaderProps {
   @scala.inline
-  def ReactLoaderProps: LoaderProps.type = typings.reactLoader.mod.LoaderProps
+  def ReactLoaderProps: LoaderProps.type = LoaderProps
   type ReactLoaderProps = LoaderProps
 }
 

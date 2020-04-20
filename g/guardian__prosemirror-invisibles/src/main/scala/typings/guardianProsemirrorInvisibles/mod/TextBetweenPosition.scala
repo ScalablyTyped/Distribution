@@ -13,7 +13,6 @@ object TextBetweenPosition {
   @scala.inline
   def apply(pos: Double, text: String): TextBetweenPosition = {
     val __obj = js.Dynamic.literal(pos = pos.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TextBetweenPosition]
   }
 }

@@ -15,7 +15,6 @@ object CacheKeyOptions {
   @scala.inline
   def apply(config: ProjectConfig, instrument: Boolean, rootDir: String): CacheKeyOptions = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], instrument = instrument.asInstanceOf[js.Any], rootDir = rootDir.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CacheKeyOptions]
   }
 }

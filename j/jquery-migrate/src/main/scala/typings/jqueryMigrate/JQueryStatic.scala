@@ -46,7 +46,6 @@ object JQueryStatic {
     migrateWarnings: js.Array[String]
   ): JQueryStatic = {
     val __obj = js.Dynamic.literal(migrateMute = migrateMute.asInstanceOf[js.Any], migrateReset = js.Any.fromFunction0(migrateReset), migrateTrace = migrateTrace.asInstanceOf[js.Any], migrateVersion = migrateVersion.asInstanceOf[js.Any], migrateWarnings = migrateWarnings.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JQueryStatic]
   }
 }

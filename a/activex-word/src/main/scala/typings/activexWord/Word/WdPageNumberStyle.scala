@@ -68,64 +68,62 @@ trait WdPageNumberStyle extends js.Object
 
 object WdPageNumberStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdPageNumberStyleArabic: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdPageNumberStyleArabic: `0` = this.cast(0)
+  def wdPageNumberStyleArabicFullWidth: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def wdPageNumberStyleArabicFullWidth: `14` = this.cast(14)
+  def wdPageNumberStyleArabicLetter1: `46` = 46.asInstanceOf[`46`]
   @scala.inline
-  def wdPageNumberStyleArabicLetter1: `46` = this.cast(46)
+  def wdPageNumberStyleArabicLetter2: `48` = 48.asInstanceOf[`48`]
   @scala.inline
-  def wdPageNumberStyleArabicLetter2: `48` = this.cast(48)
+  def wdPageNumberStyleHanjaRead: `41` = 41.asInstanceOf[`41`]
   @scala.inline
-  def wdPageNumberStyleHanjaRead: `41` = this.cast(41)
+  def wdPageNumberStyleHanjaReadDigit: `42` = 42.asInstanceOf[`42`]
   @scala.inline
-  def wdPageNumberStyleHanjaReadDigit: `42` = this.cast(42)
+  def wdPageNumberStyleHebrewLetter1: `45` = 45.asInstanceOf[`45`]
   @scala.inline
-  def wdPageNumberStyleHebrewLetter1: `45` = this.cast(45)
+  def wdPageNumberStyleHebrewLetter2: `47` = 47.asInstanceOf[`47`]
   @scala.inline
-  def wdPageNumberStyleHebrewLetter2: `47` = this.cast(47)
+  def wdPageNumberStyleHindiArabic: `51` = 51.asInstanceOf[`51`]
   @scala.inline
-  def wdPageNumberStyleHindiArabic: `51` = this.cast(51)
+  def wdPageNumberStyleHindiCardinalText: `52` = 52.asInstanceOf[`52`]
   @scala.inline
-  def wdPageNumberStyleHindiCardinalText: `52` = this.cast(52)
+  def wdPageNumberStyleHindiLetter1: `49` = 49.asInstanceOf[`49`]
   @scala.inline
-  def wdPageNumberStyleHindiLetter1: `49` = this.cast(49)
+  def wdPageNumberStyleHindiLetter2: `50` = 50.asInstanceOf[`50`]
   @scala.inline
-  def wdPageNumberStyleHindiLetter2: `50` = this.cast(50)
+  def wdPageNumberStyleKanji: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def wdPageNumberStyleKanji: `10` = this.cast(10)
+  def wdPageNumberStyleKanjiDigit: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def wdPageNumberStyleKanjiDigit: `11` = this.cast(11)
+  def wdPageNumberStyleKanjiTraditional: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def wdPageNumberStyleKanjiTraditional: `16` = this.cast(16)
+  def wdPageNumberStyleLowercaseLetter: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdPageNumberStyleLowercaseLetter: `4` = this.cast(4)
+  def wdPageNumberStyleLowercaseRoman: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdPageNumberStyleLowercaseRoman: `2` = this.cast(2)
+  def wdPageNumberStyleNumberInCircle: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def wdPageNumberStyleNumberInCircle: `18` = this.cast(18)
+  def wdPageNumberStyleNumberInDash: `57` = 57.asInstanceOf[`57`]
   @scala.inline
-  def wdPageNumberStyleNumberInDash: `57` = this.cast(57)
+  def wdPageNumberStyleSimpChinNum1: `37` = 37.asInstanceOf[`37`]
   @scala.inline
-  def wdPageNumberStyleSimpChinNum1: `37` = this.cast(37)
+  def wdPageNumberStyleSimpChinNum2: `38` = 38.asInstanceOf[`38`]
   @scala.inline
-  def wdPageNumberStyleSimpChinNum2: `38` = this.cast(38)
+  def wdPageNumberStyleThaiArabic: `54` = 54.asInstanceOf[`54`]
   @scala.inline
-  def wdPageNumberStyleThaiArabic: `54` = this.cast(54)
+  def wdPageNumberStyleThaiCardinalText: `55` = 55.asInstanceOf[`55`]
   @scala.inline
-  def wdPageNumberStyleThaiCardinalText: `55` = this.cast(55)
+  def wdPageNumberStyleThaiLetter: `53` = 53.asInstanceOf[`53`]
   @scala.inline
-  def wdPageNumberStyleThaiLetter: `53` = this.cast(53)
+  def wdPageNumberStyleTradChinNum1: `33` = 33.asInstanceOf[`33`]
   @scala.inline
-  def wdPageNumberStyleTradChinNum1: `33` = this.cast(33)
+  def wdPageNumberStyleTradChinNum2: `34` = 34.asInstanceOf[`34`]
   @scala.inline
-  def wdPageNumberStyleTradChinNum2: `34` = this.cast(34)
+  def wdPageNumberStyleUppercaseLetter: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdPageNumberStyleUppercaseLetter: `3` = this.cast(3)
+  def wdPageNumberStyleUppercaseRoman: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdPageNumberStyleUppercaseRoman: `1` = this.cast(1)
-  @scala.inline
-  def wdPageNumberStyleVietCardinalText: `56` = this.cast(56)
+  def wdPageNumberStyleVietCardinalText: `56` = 56.asInstanceOf[`56`]
 }
 

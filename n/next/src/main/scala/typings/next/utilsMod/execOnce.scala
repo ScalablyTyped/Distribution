@@ -1,5 +1,6 @@
 package typings.next.utilsMod
 
+import typings.std.ReturnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("next/dist/next-server/lib/utils", "execOnce")
 @js.native
 object execOnce extends js.Object {
-  def apply(fn: js.Function1[/* args */ js.Any, _]): js.Function1[/* args */ js.Any, _] = js.native
+  def apply[T /* <: js.Function1[/* repeated */ js.Any, ReturnType[T]] */](fn: T): T = js.native
 }
 

@@ -12,7 +12,6 @@ object Aliasable {
   @scala.inline
   def apply(as: String => Aliasable): Aliasable = {
     val __obj = js.Dynamic.literal(as = js.Any.fromFunction1(as))
-  
     __obj.asInstanceOf[Aliasable]
   }
 }

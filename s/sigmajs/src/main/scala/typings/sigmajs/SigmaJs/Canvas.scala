@@ -23,7 +23,6 @@ object Canvas {
     nodes: StringDictionary[js.Function2[/* node */ Node, /* repeated */ js.Any, Unit]]
   ): Canvas = {
     val __obj = js.Dynamic.literal(edges = edges.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Canvas]
   }
 }

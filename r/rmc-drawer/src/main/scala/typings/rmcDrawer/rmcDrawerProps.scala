@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait rmcDrawerProps {
   @scala.inline
-  def RmcDrawerProps: PartialDrawerProps.type = typings.rmcDrawer.PartialDrawerProps
+  def RmcDrawerProps: PartialDrawerProps.type = PartialDrawerProps
   type RmcDrawerProps = PartialDrawerProps
 }
 

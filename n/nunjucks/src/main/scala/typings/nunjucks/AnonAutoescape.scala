@@ -12,7 +12,6 @@ object AnonAutoescape {
   @scala.inline
   def apply(autoescape: Boolean): AnonAutoescape = {
     val __obj = js.Dynamic.literal(autoescape = autoescape.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAutoescape]
   }
 }

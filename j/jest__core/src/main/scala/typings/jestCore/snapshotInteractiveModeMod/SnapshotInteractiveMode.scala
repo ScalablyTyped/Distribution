@@ -55,7 +55,6 @@ object SnapshotInteractiveMode {
     updateWithResults: AggregatedResult => Unit
   ): SnapshotInteractiveMode = {
     val __obj = js.Dynamic.literal(_clearTestSummary = _clearTestSummary.asInstanceOf[js.Any], _countPaths = _countPaths.asInstanceOf[js.Any], _drawUIDone = _drawUIDone.asInstanceOf[js.Any], _drawUIDoneWithSkipped = _drawUIDoneWithSkipped.asInstanceOf[js.Any], _drawUIOverlay = _drawUIOverlay.asInstanceOf[js.Any], _drawUIProgress = _drawUIProgress.asInstanceOf[js.Any], _isActive = _isActive.asInstanceOf[js.Any], _pipe = _pipe.asInstanceOf[js.Any], _run = _run.asInstanceOf[js.Any], _skippedNum = _skippedNum.asInstanceOf[js.Any], _testAssertions = _testAssertions.asInstanceOf[js.Any], _updateTestRunnerConfig = _updateTestRunnerConfig.asInstanceOf[js.Any], abort = js.Any.fromFunction0(abort), getSkippedNum = js.Any.fromFunction0(getSkippedNum), isActive = js.Any.fromFunction0(isActive), put = js.Any.fromFunction1(put), restart = js.Any.fromFunction0(restart), run = js.Any.fromFunction2(run), updateWithResults = js.Any.fromFunction1(updateWithResults))
-  
     __obj.asInstanceOf[SnapshotInteractiveMode]
   }
 }

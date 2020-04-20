@@ -145,7 +145,7 @@ object nwJsStrings {
   @scala.inline
   def click: click = "click".asInstanceOf[click]
   @scala.inline
-  def `click `: `click ` = "click ".asInstanceOf[`click `]
+  def `click `: `click ` = ("click ").asInstanceOf[`click `]
   @scala.inline
   def close: close = "close".asInstanceOf[close]
   @scala.inline
@@ -153,11 +153,11 @@ object nwJsStrings {
   @scala.inline
   def `devtools-closed`: `devtools-closed` = "devtools-closed".asInstanceOf[`devtools-closed`]
   @scala.inline
-  def `displayAdded `: `displayAdded ` = "displayAdded ".asInstanceOf[`displayAdded `]
+  def `displayAdded `: `displayAdded ` = ("displayAdded ").asInstanceOf[`displayAdded `]
   @scala.inline
   def displayBoundsChanged: displayBoundsChanged = "displayBoundsChanged".asInstanceOf[displayBoundsChanged]
   @scala.inline
-  def `displayRemoved `: `displayRemoved ` = "displayRemoved ".asInstanceOf[`displayRemoved `]
+  def `displayRemoved `: `displayRemoved ` = ("displayRemoved ").asInstanceOf[`displayRemoved `]
   @scala.inline
   def `document-end`: `document-end` = "document-end".asInstanceOf[`document-end`]
   @scala.inline

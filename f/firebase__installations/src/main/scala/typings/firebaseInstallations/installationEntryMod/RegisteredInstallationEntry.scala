@@ -23,7 +23,6 @@ object RegisteredInstallationEntry {
   @scala.inline
   def apply(authToken: AuthToken, fid: String, refreshToken: String, registrationStatus: `2`): RegisteredInstallationEntry = {
     val __obj = js.Dynamic.literal(authToken = authToken.asInstanceOf[js.Any], fid = fid.asInstanceOf[js.Any], refreshToken = refreshToken.asInstanceOf[js.Any], registrationStatus = registrationStatus.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RegisteredInstallationEntry]
   }
 }

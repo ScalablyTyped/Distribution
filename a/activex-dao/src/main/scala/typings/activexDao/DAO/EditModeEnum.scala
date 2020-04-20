@@ -16,12 +16,10 @@ trait EditModeEnum extends js.Object
 
 object EditModeEnum {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dbEditAdd: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def dbEditAdd: `2` = this.cast(2)
+  def dbEditInProgress: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def dbEditInProgress: `1` = this.cast(1)
-  @scala.inline
-  def dbEditNone: `0` = this.cast(0)
+  def dbEditNone: `0` = 0.asInstanceOf[`0`]
 }
 

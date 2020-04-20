@@ -10,7 +10,12 @@ package object mod {
     typings.imperium.imperiumStrings.params | typings.imperium.imperiumStrings.query | typings.imperium.imperiumStrings.headers | typings.imperium.imperiumStrings.body
   ]
   type GetAcl = js.Function1[
-    /* req */ typings.express.mod.Request_[typings.expressServeStaticCore.mod.ParamsDictionary], 
+    /* req */ typings.express.mod.Request_[
+      typings.expressServeStaticCore.mod.ParamsDictionary, 
+      js.Any, 
+      js.Any, 
+      typings.expressServeStaticCore.mod.Query
+    ], 
     js.Promise[scala.Boolean | js.Object]
   ]
   type RoleParams = org.scalablytyped.runtime.StringDictionary[java.lang.String]

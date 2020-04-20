@@ -24,7 +24,6 @@ object JQuery {
     unmousewheel: () => JQuery
   ): JQuery = {
     val __obj = js.Dynamic.literal(mousewheel = js.Any.fromFunction1(mousewheel), on = js.Any.fromFunction2(on), unmousewheel = js.Any.fromFunction0(unmousewheel))
-  
     __obj.asInstanceOf[JQuery]
   }
 }

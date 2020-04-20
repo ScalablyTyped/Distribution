@@ -23,7 +23,6 @@ object ScramSha1Mechanism {
     response: Credentials => String
   ): ScramSha1Mechanism = {
     val __obj = js.Dynamic.literal(challenge = js.Any.fromFunction1(challenge), clientFirst = clientFirst.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], response = js.Any.fromFunction1(response))
-  
     __obj.asInstanceOf[ScramSha1Mechanism]
   }
 }

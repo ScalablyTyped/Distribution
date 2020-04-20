@@ -24,7 +24,6 @@ object DeleteGroupRequest {
   @scala.inline
   def apply(AwsAccountId: AwsAccountId, GroupName: GroupName, Namespace: Namespace): DeleteGroupRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], GroupName = GroupName.asInstanceOf[js.Any], Namespace = Namespace.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteGroupRequest]
   }
 }

@@ -32,30 +32,28 @@ trait `type` extends js.Object
 
 object `type` {
   @scala.inline
-  def CODA_LEFT: `0` = this.cast(0)
+  def CODA_LEFT: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def CODA_RIGHT: `1` = this.cast(1)
+  def CODA_RIGHT: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def DC: `4` = this.cast(4)
+  def DC: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def DC_AL_CODA: `5` = this.cast(5)
+  def DC_AL_CODA: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def DC_AL_FINE: `6` = this.cast(6)
+  def DC_AL_FINE: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def DS: `7` = this.cast(7)
+  def DS: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def DS_AL_CODA: `8` = this.cast(8)
+  def DS_AL_CODA: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def DS_AL_FINE: `9` = this.cast(9)
+  def DS_AL_FINE: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def FINE: `10` = this.cast(10)
+  def FINE: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def NONE: `1` = this.cast(1)
+  def NONE: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def SEGNO_LEFT: `2` = this.cast(2)
+  def SEGNO_LEFT: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def SEGNO_RIGHT: `3` = this.cast(3)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SEGNO_RIGHT: `3` = 3.asInstanceOf[`3`]
 }
 

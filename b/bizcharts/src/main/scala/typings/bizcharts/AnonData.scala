@@ -17,7 +17,6 @@ object AnonData {
   @scala.inline
   def apply(data: js.Any, geom: js.Any, preData: js.Any, preShape: Shape, shape: Shape): AnonData = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], geom = geom.asInstanceOf[js.Any], preData = preData.asInstanceOf[js.Any], preShape = preShape.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonData]
   }
 }

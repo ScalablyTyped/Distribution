@@ -16,7 +16,6 @@ object InventoryFilter {
   @scala.inline
   def apply(Prefix: Prefix): InventoryFilter = {
     val __obj = js.Dynamic.literal(Prefix = Prefix.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InventoryFilter]
   }
 }

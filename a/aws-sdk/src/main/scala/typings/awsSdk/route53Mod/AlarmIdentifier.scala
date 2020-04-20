@@ -20,7 +20,6 @@ object AlarmIdentifier {
   @scala.inline
   def apply(Name: AlarmName, Region: CloudWatchRegion): AlarmIdentifier = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Region = Region.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AlarmIdentifier]
   }
 }

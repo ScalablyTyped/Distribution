@@ -29,7 +29,6 @@ object NestedMap {
     values: () => js.Array[(NestedMap[Datum, RollupType]) | js.Array[Datum] | RollupType]
   ): NestedMap[Datum, RollupType] = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), each = js.Any.fromFunction1(each), empty = js.Any.fromFunction0(empty), entries = js.Any.fromFunction0(entries), get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), keys = js.Any.fromFunction0(keys), remove = js.Any.fromFunction1(remove), set = js.Any.fromFunction2(set), size = js.Any.fromFunction0(size), values = js.Any.fromFunction0(values))
-  
     __obj.asInstanceOf[NestedMap[Datum, RollupType]]
   }
 }

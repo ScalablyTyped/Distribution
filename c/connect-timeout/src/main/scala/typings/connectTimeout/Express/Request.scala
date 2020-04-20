@@ -19,7 +19,6 @@ object Request {
   @scala.inline
   def apply(clearTimeout: () => Unit, timedout: Boolean): Request = {
     val __obj = js.Dynamic.literal(clearTimeout = js.Any.fromFunction0(clearTimeout), timedout = timedout.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Request]
   }
 }

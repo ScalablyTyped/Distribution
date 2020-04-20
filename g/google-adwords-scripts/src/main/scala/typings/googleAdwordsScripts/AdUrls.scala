@@ -17,7 +17,6 @@ object AdUrls {
     getTrackingTemplate: () => String
   ): AdUrls = {
     val __obj = js.Dynamic.literal(getCustomParameters = js.Any.fromFunction0(getCustomParameters), getFinalUrl = js.Any.fromFunction0(getFinalUrl), getMobileFinalUrl = js.Any.fromFunction0(getMobileFinalUrl), getTrackingTemplate = js.Any.fromFunction0(getTrackingTemplate))
-  
     __obj.asInstanceOf[AdUrls]
   }
 }

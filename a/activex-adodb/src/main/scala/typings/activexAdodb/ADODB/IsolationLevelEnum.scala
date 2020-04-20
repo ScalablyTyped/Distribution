@@ -22,24 +22,22 @@ trait IsolationLevelEnum extends js.Object
 
 object IsolationLevelEnum {
   @scala.inline
-  def adXactBrowse: `256` = this.cast(256)
+  def adXactBrowse: `256` = 256.asInstanceOf[`256`]
   @scala.inline
-  def adXactChaos: `16` = this.cast(16)
+  def adXactChaos: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def adXactCursorStability: `4096` = this.cast(4096)
+  def adXactCursorStability: `4096` = 4096.asInstanceOf[`4096`]
   @scala.inline
-  def adXactIsolated: `1048576` = this.cast(1048576)
+  def adXactIsolated: `1048576` = 1048576.asInstanceOf[`1048576`]
   @scala.inline
-  def adXactReadCommitted: `4096` = this.cast(4096)
+  def adXactReadCommitted: `4096` = 4096.asInstanceOf[`4096`]
   @scala.inline
-  def adXactReadUncommitted: `256` = this.cast(256)
+  def adXactReadUncommitted: `256` = 256.asInstanceOf[`256`]
   @scala.inline
-  def adXactRepeatableRead: `65536` = this.cast(65536)
+  def adXactRepeatableRead: `65536` = 65536.asInstanceOf[`65536`]
   @scala.inline
-  def adXactSerializable: `1048576` = this.cast(1048576)
+  def adXactSerializable: `1048576` = 1048576.asInstanceOf[`1048576`]
   @scala.inline
-  def adXactUnspecified: `-1` = this.cast(-1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def adXactUnspecified: `-1` = -1.asInstanceOf[`-1`]
 }
 

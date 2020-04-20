@@ -14,14 +14,12 @@ trait LegendPositionType extends js.Object
 
 object LegendPositionType {
   @scala.inline
-  def `bottom-left`: typings.vis.visStrings.`bottom-left` = this.cast("bottom-left")
+  def `bottom-left`: typings.vis.visStrings.`bottom-left` = "bottom-left".asInstanceOf[typings.vis.visStrings.`bottom-left`]
   @scala.inline
-  def `bottom-right`: typings.vis.visStrings.`bottom-right` = this.cast("bottom-right")
+  def `bottom-right`: typings.vis.visStrings.`bottom-right` = "bottom-right".asInstanceOf[typings.vis.visStrings.`bottom-right`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `top-left`: typings.vis.visStrings.`top-left` = "top-left".asInstanceOf[typings.vis.visStrings.`top-left`]
   @scala.inline
-  def `top-left`: typings.vis.visStrings.`top-left` = this.cast("top-left")
-  @scala.inline
-  def `top-right`: typings.vis.visStrings.`top-right` = this.cast("top-right")
+  def `top-right`: typings.vis.visStrings.`top-right` = "top-right".asInstanceOf[typings.vis.visStrings.`top-right`]
 }
 

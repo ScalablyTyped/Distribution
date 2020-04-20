@@ -16,7 +16,6 @@ object GetResourcePolicyRequest {
   @scala.inline
   def apply(SecretId: SecretIdType): GetResourcePolicyRequest = {
     val __obj = js.Dynamic.literal(SecretId = SecretId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetResourcePolicyRequest]
   }
 }

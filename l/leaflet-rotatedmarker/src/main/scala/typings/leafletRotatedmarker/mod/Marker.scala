@@ -19,7 +19,6 @@ object Marker {
   @scala.inline
   def apply(setRotationAngle: Double => Marker, setRotationOrigin: String => Marker): Marker = {
     val __obj = js.Dynamic.literal(setRotationAngle = js.Any.fromFunction1(setRotationAngle), setRotationOrigin = js.Any.fromFunction1(setRotationOrigin))
-  
     __obj.asInstanceOf[Marker]
   }
 }

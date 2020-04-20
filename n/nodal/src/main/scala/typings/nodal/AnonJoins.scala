@@ -12,7 +12,6 @@ object AnonJoins {
   @scala.inline
   def apply(structure: js.Any): AnonJoins = {
     val __obj = js.Dynamic.literal(structure = structure.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonJoins]
   }
 }

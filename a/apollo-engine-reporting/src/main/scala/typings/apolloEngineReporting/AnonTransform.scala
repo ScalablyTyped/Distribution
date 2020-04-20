@@ -15,7 +15,6 @@ object AnonTransform {
   @scala.inline
   def apply(transform: VariableValueTransformOptions => Record[String, _]): AnonTransform = {
     val __obj = js.Dynamic.literal(transform = js.Any.fromFunction1(transform))
-  
     __obj.asInstanceOf[AnonTransform]
   }
 }

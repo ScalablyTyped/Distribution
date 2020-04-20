@@ -20,7 +20,6 @@ object ConversionsResource {
     batchupdate: AnonKey => Request_[ConversionsBatchUpdateResponse]
   ): ConversionsResource = {
     val __obj = js.Dynamic.literal(batchinsert = js.Any.fromFunction1(batchinsert), batchupdate = js.Any.fromFunction1(batchupdate))
-  
     __obj.asInstanceOf[ConversionsResource]
   }
 }

@@ -13,7 +13,6 @@ object AnonSelect {
   @scala.inline
   def apply(select: /* key */ String => SelectorMap): AnonSelect = {
     val __obj = js.Dynamic.literal(select = js.Any.fromFunction1(select))
-  
     __obj.asInstanceOf[AnonSelect]
   }
 }

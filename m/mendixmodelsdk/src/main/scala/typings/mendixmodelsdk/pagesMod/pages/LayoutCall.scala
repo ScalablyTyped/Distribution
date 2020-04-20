@@ -49,20 +49,20 @@ class LayoutCall protected () extends Element {
   val layout_FLayoutCall: ILayout | Null = js.native
   @JSName("model")
   var model_FLayoutCall: IModel = js.native
-  def arguments(): IList[LayoutCallArgument] = js.native
-  def containerAsLayout(): Layout = js.native
-  def containerAsPage(): Page = js.native
-  def containerAsPageTemplate(): PageTemplate = js.native
-  def containerAsWebLayoutContent(): WebLayoutContent = js.native
+  def arguments: IList[LayoutCallArgument] = js.native
+  def containerAsLayout: Layout = js.native
+  def containerAsPage: Page = js.native
+  def containerAsPageTemplate: PageTemplate = js.native
+  def containerAsWebLayoutContent: WebLayoutContent = js.native
   def layout(): js.Any = js.native
   def layout(newValue: ILayout): js.Any = js.native
-  def layoutQualifiedName(): String | Null = js.native
+  def layoutQualifiedName: String | Null = js.native
   /**
     * In version 8.0.0: removed optional
     * In version 7.17.0: added public
     */
   @JSName("layout")
-  def layout_Union(): ILayout | Null = js.native
+  def layout_Union: ILayout | Null = js.native
 }
 
 /* static members */

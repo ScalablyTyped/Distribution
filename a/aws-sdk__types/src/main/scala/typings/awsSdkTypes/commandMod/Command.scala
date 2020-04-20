@@ -22,7 +22,6 @@ object Command {
     resolveMiddleware: (MiddlewareStack[ClientInput, ClientOutput, StreamType], ResolvedConfiguration) => Handler[InputType, OutputType]
   ): Command[ClientInput, InputType, ClientOutput, OutputType, ResolvedConfiguration, StreamType] = {
     val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], resolveMiddleware = js.Any.fromFunction2(resolveMiddleware))
-  
     __obj.asInstanceOf[Command[ClientInput, InputType, ClientOutput, OutputType, ResolvedConfiguration, StreamType]]
   }
 }

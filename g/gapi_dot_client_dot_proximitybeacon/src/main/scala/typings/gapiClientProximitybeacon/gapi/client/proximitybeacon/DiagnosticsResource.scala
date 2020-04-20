@@ -23,7 +23,6 @@ object DiagnosticsResource {
   @scala.inline
   def apply(list: AnonAlertFilter => Request_[ListDiagnosticsResponse]): DiagnosticsResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[DiagnosticsResource]
   }
 }

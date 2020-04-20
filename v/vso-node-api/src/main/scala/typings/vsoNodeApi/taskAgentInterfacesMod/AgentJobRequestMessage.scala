@@ -27,7 +27,6 @@ object AgentJobRequestMessage {
     timeline: TimelineReference
   ): AgentJobRequestMessage = {
     val __obj = js.Dynamic.literal(environment = environment.asInstanceOf[js.Any], jobId = jobId.asInstanceOf[js.Any], jobName = jobName.asInstanceOf[js.Any], lockToken = lockToken.asInstanceOf[js.Any], lockedUntil = lockedUntil.asInstanceOf[js.Any], messageType = messageType.asInstanceOf[js.Any], plan = plan.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any], tasks = tasks.asInstanceOf[js.Any], timeline = timeline.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AgentJobRequestMessage]
   }
 }

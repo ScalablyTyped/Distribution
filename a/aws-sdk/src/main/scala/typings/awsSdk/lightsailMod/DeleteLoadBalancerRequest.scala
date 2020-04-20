@@ -16,7 +16,6 @@ object DeleteLoadBalancerRequest {
   @scala.inline
   def apply(loadBalancerName: ResourceName): DeleteLoadBalancerRequest = {
     val __obj = js.Dynamic.literal(loadBalancerName = loadBalancerName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteLoadBalancerRequest]
   }
 }

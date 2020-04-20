@@ -28,7 +28,6 @@ object SetVariableValueParameterType {
   @scala.inline
   def apply(callFrameId: CallFrameId, newValue: CallArgument, scopeNumber: Double, variableName: String): SetVariableValueParameterType = {
     val __obj = js.Dynamic.literal(callFrameId = callFrameId.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], scopeNumber = scopeNumber.asInstanceOf[js.Any], variableName = variableName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetVariableValueParameterType]
   }
 }

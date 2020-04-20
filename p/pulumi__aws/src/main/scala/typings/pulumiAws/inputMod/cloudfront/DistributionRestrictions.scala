@@ -14,7 +14,6 @@ object DistributionRestrictions {
   @scala.inline
   def apply(geoRestriction: Input[DistributionRestrictionsGeoRestriction]): DistributionRestrictions = {
     val __obj = js.Dynamic.literal(geoRestriction = geoRestriction.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DistributionRestrictions]
   }
 }

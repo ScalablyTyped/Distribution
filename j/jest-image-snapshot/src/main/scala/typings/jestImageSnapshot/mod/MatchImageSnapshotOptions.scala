@@ -41,6 +41,11 @@ trait MatchImageSnapshotOptions extends js.Object {
     */
   var diffDirection: js.UndefOr[horizontal | vertical] = js.undefined
   /**
+    * Will output base64 string of a diff image to console in case of failed tests (in addition to creating a diff image).
+    * This string can be copy-pasted to a browser address string to preview the diff for a failed test.
+    */
+  var dumpDiffToConsole: js.UndefOr[Boolean] = js.undefined
+  /**
     * Sets the threshold that would trigger a test failure based on the failureThresholdType selected. This is different
     * to the customDiffConfig.threshold above - the customDiffConfig.threshold is the per pixel failure threshold, whereas
     * this is the failure threshold for the entire comparison.
@@ -78,6 +83,7 @@ object MatchImageSnapshotOptions {
     customSnapshotIdentifier: (js.Function1[/* parameters */ AnonCounter, String]) | String = null,
     customSnapshotsDir: String = null,
     diffDirection: horizontal | vertical = null,
+    dumpDiffToConsole: js.UndefOr[Boolean] = js.undefined,
     failureThreshold: Int | Double = null,
     failureThresholdType: pixel | percent = null,
     noColors: js.UndefOr[Boolean] = js.undefined,
@@ -91,6 +97,7 @@ object MatchImageSnapshotOptions {
     if (customSnapshotIdentifier != null) __obj.updateDynamic("customSnapshotIdentifier")(customSnapshotIdentifier.asInstanceOf[js.Any])
     if (customSnapshotsDir != null) __obj.updateDynamic("customSnapshotsDir")(customSnapshotsDir.asInstanceOf[js.Any])
     if (diffDirection != null) __obj.updateDynamic("diffDirection")(diffDirection.asInstanceOf[js.Any])
+    if (!js.isUndefined(dumpDiffToConsole)) __obj.updateDynamic("dumpDiffToConsole")(dumpDiffToConsole.asInstanceOf[js.Any])
     if (failureThreshold != null) __obj.updateDynamic("failureThreshold")(failureThreshold.asInstanceOf[js.Any])
     if (failureThresholdType != null) __obj.updateDynamic("failureThresholdType")(failureThresholdType.asInstanceOf[js.Any])
     if (!js.isUndefined(noColors)) __obj.updateDynamic("noColors")(noColors.asInstanceOf[js.Any])

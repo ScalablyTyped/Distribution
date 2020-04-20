@@ -16,13 +16,11 @@ object TagOper {
   @scala.inline
   def TagCompanies(name: String, users: js.Array[AnonId]): TagOper = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TagOper]
   }
   @scala.inline
   def TagUsers(name: String, users: js.Array[UserIdentifier]): TagOper = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TagOper]
   }
 }

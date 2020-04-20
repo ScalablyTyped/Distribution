@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait emojiMartProps {
   @scala.inline
-  def CategoryProps: Props.type = typings.emojiMart.categoryMod.Props
+  def CategoryProps: Props.type = Props
   type CategoryProps = Props
   @scala.inline
   def EmojiProps: typings.emojiMart.sharedPropsMod.EmojiProps.type = typings.emojiMart.sharedPropsMod.EmojiProps

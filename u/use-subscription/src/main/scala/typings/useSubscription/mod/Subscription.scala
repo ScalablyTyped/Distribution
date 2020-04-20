@@ -20,7 +20,6 @@ object Subscription {
   @scala.inline
   def apply[T](getCurrentValue: () => T, subscribe: js.Function0[Unit] => Unsubscribe): Subscription[T] = {
     val __obj = js.Dynamic.literal(getCurrentValue = js.Any.fromFunction0(getCurrentValue), subscribe = js.Any.fromFunction1(subscribe))
-  
     __obj.asInstanceOf[Subscription[T]]
   }
 }

@@ -14,10 +14,8 @@ trait MsoOrgChartOrientation extends js.Object
 
 object MsoOrgChartOrientation {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoOrgChartOrientationMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def msoOrgChartOrientationMixed: `-2` = this.cast(-2)
-  @scala.inline
-  def msoOrgChartOrientationVertical: `1` = this.cast(1)
+  def msoOrgChartOrientationVertical: `1` = 1.asInstanceOf[`1`]
 }
 

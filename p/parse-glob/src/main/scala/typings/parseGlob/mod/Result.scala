@@ -33,7 +33,6 @@ object Result {
   @scala.inline
   def apply(base: String, glob: String, is: AnonBraces, orig: String, path: AnonBasename): Result = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], glob = glob.asInstanceOf[js.Any], is = is.asInstanceOf[js.Any], orig = orig.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Result]
   }
 }

@@ -30,7 +30,6 @@ object DescribeHumanTaskUiResponse {
     UiTemplate: UiTemplateInfo
   ): DescribeHumanTaskUiResponse = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime.asInstanceOf[js.Any], HumanTaskUiArn = HumanTaskUiArn.asInstanceOf[js.Any], HumanTaskUiName = HumanTaskUiName.asInstanceOf[js.Any], UiTemplate = UiTemplate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeHumanTaskUiResponse]
   }
 }

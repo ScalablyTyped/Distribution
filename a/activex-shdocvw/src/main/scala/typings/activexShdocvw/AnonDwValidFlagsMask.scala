@@ -13,7 +13,6 @@ object AnonDwValidFlagsMask {
   @scala.inline
   def apply(dwValidFlagsMask: Double, dwWindowStateFlags: Double): AnonDwValidFlagsMask = {
     val __obj = js.Dynamic.literal(dwValidFlagsMask = dwValidFlagsMask.asInstanceOf[js.Any], dwWindowStateFlags = dwWindowStateFlags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDwValidFlagsMask]
   }
 }

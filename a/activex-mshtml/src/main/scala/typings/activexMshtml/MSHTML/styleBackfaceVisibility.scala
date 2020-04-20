@@ -18,14 +18,12 @@ trait styleBackfaceVisibility extends js.Object
 
 object styleBackfaceVisibility {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleBackfaceVisibilityHidden: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleBackfaceVisibilityHidden: `1` = this.cast(1)
+  def styleBackfaceVisibilityNotSet: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleBackfaceVisibilityNotSet: `2` = this.cast(2)
+  def styleBackfaceVisibilityVisible: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleBackfaceVisibilityVisible: `0` = this.cast(0)
-  @scala.inline
-  def styleBackfaceVisibility_Max: `2147483647` = this.cast(2147483647)
+  def styleBackfaceVisibility_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

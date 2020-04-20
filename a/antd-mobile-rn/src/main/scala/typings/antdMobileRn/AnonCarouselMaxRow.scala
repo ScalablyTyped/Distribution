@@ -26,7 +26,6 @@ object AnonCarouselMaxRow {
     styles: StringDictionary[RegisteredStyle[_]]
   ): AnonCarouselMaxRow = {
     val __obj = js.Dynamic.literal(carouselMaxRow = carouselMaxRow.asInstanceOf[js.Any], columnNum = columnNum.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], hasLine = hasLine.asInstanceOf[js.Any], isCarousel = isCarousel.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCarouselMaxRow]
   }
 }

@@ -20,7 +20,6 @@ object DetachTypedLinkRequest {
   @scala.inline
   def apply(DirectoryArn: Arn, TypedLinkSpecifier: TypedLinkSpecifier): DetachTypedLinkRequest = {
     val __obj = js.Dynamic.literal(DirectoryArn = DirectoryArn.asInstanceOf[js.Any], TypedLinkSpecifier = TypedLinkSpecifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DetachTypedLinkRequest]
   }
 }

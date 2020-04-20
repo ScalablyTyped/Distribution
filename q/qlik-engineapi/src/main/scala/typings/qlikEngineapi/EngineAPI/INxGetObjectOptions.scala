@@ -28,7 +28,6 @@ object INxGetObjectOptions {
   @scala.inline
   def apply(qData: js.Any, qIncludeSessionObjects: Boolean, qTypes: js.Array[String]): INxGetObjectOptions = {
     val __obj = js.Dynamic.literal(qData = qData.asInstanceOf[js.Any], qIncludeSessionObjects = qIncludeSessionObjects.asInstanceOf[js.Any], qTypes = qTypes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INxGetObjectOptions]
   }
 }

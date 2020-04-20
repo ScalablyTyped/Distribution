@@ -7,17 +7,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait UploadListProps extends js.Object {
+trait UploadListProps[T] extends js.Object {
   var downloadIcon: js.UndefOr[ReactNode] = js.undefined
   var iconRender: js.UndefOr[
-    js.Function2[/* file */ UploadFile[_], /* listType */ js.UndefOr[UploadListType], ReactNode]
+    js.Function2[/* file */ UploadFile[T], /* listType */ js.UndefOr[UploadListType], ReactNode]
   ] = js.undefined
-  var items: js.UndefOr[js.Array[UploadFile[_]]] = js.undefined
+  var items: js.UndefOr[js.Array[UploadFile[T]]] = js.undefined
   var listType: js.UndefOr[UploadListType] = js.undefined
   var locale: UploadLocale
-  var onDownload: js.UndefOr[js.Function1[/* file */ UploadFile[_], Unit]] = js.undefined
-  var onPreview: js.UndefOr[js.Function1[/* file */ UploadFile[_], Unit]] = js.undefined
-  var onRemove: js.UndefOr[js.Function1[/* file */ UploadFile[_], Unit | Boolean]] = js.undefined
+  var onDownload: js.UndefOr[js.Function1[/* file */ UploadFile[T], Unit]] = js.undefined
+  var onPreview: js.UndefOr[js.Function1[/* file */ UploadFile[T], Unit]] = js.undefined
+  var onRemove: js.UndefOr[js.Function1[/* file */ UploadFile[T], Unit | Boolean]] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
   var previewFile: js.UndefOr[PreviewFileHandler] = js.undefined
   var progressAttr: js.UndefOr[js.Object] = js.undefined
@@ -29,15 +29,15 @@ trait UploadListProps extends js.Object {
 
 object UploadListProps {
   @scala.inline
-  def apply(
+  def apply[T](
     locale: UploadLocale,
     downloadIcon: ReactNode = null,
-    iconRender: (/* file */ UploadFile[_], /* listType */ js.UndefOr[UploadListType]) => ReactNode = null,
-    items: js.Array[UploadFile[_]] = null,
+    iconRender: (/* file */ UploadFile[T], /* listType */ js.UndefOr[UploadListType]) => ReactNode = null,
+    items: js.Array[UploadFile[T]] = null,
     listType: UploadListType = null,
-    onDownload: /* file */ UploadFile[_] => Unit = null,
-    onPreview: /* file */ UploadFile[_] => Unit = null,
-    onRemove: /* file */ UploadFile[_] => Unit | Boolean = null,
+    onDownload: /* file */ UploadFile[T] => Unit = null,
+    onPreview: /* file */ UploadFile[T] => Unit = null,
+    onRemove: /* file */ UploadFile[T] => Unit | Boolean = null,
     prefixCls: String = null,
     previewFile: /* file */ File | Blob => js.Thenable[String] = null,
     progressAttr: js.Object = null,
@@ -45,7 +45,7 @@ object UploadListProps {
     showDownloadIcon: js.UndefOr[Boolean] = js.undefined,
     showPreviewIcon: js.UndefOr[Boolean] = js.undefined,
     showRemoveIcon: js.UndefOr[Boolean] = js.undefined
-  ): UploadListProps = {
+  ): UploadListProps[T] = {
     val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any])
     if (downloadIcon != null) __obj.updateDynamic("downloadIcon")(downloadIcon.asInstanceOf[js.Any])
     if (iconRender != null) __obj.updateDynamic("iconRender")(js.Any.fromFunction2(iconRender))
@@ -61,7 +61,7 @@ object UploadListProps {
     if (!js.isUndefined(showDownloadIcon)) __obj.updateDynamic("showDownloadIcon")(showDownloadIcon.asInstanceOf[js.Any])
     if (!js.isUndefined(showPreviewIcon)) __obj.updateDynamic("showPreviewIcon")(showPreviewIcon.asInstanceOf[js.Any])
     if (!js.isUndefined(showRemoveIcon)) __obj.updateDynamic("showRemoveIcon")(showRemoveIcon.asInstanceOf[js.Any])
-    __obj.asInstanceOf[UploadListProps]
+    __obj.asInstanceOf[UploadListProps[T]]
   }
 }
 

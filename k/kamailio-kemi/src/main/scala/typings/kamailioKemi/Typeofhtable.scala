@@ -48,7 +48,6 @@ object Typeofhtable {
     sht_unlock: (String, String) => Double
   ): Typeofhtable = {
     val __obj = js.Dynamic.literal(sht_has_name = js.Any.fromFunction3(sht_has_name), sht_has_str_value = js.Any.fromFunction3(sht_has_str_value), sht_iterator_end = js.Any.fromFunction1(sht_iterator_end), sht_iterator_next = js.Any.fromFunction1(sht_iterator_next), sht_iterator_start = js.Any.fromFunction2(sht_iterator_start), sht_lock = js.Any.fromFunction2(sht_lock), sht_reset = js.Any.fromFunction1(sht_reset), sht_rm = js.Any.fromFunction2(sht_rm), sht_rm_name = js.Any.fromFunction3(sht_rm_name), sht_rm_name_re = js.Any.fromFunction2(sht_rm_name_re), sht_rm_value = js.Any.fromFunction3(sht_rm_value), sht_rm_value_re = js.Any.fromFunction2(sht_rm_value_re), sht_setex = js.Any.fromFunction3(sht_setex), sht_seti = js.Any.fromFunction3(sht_seti), sht_sets = js.Any.fromFunction3(sht_sets), sht_setxi = js.Any.fromFunction4(sht_setxi), sht_setxs = js.Any.fromFunction4(sht_setxs), sht_unlock = js.Any.fromFunction2(sht_unlock))
-  
     __obj.asInstanceOf[Typeofhtable]
   }
 }

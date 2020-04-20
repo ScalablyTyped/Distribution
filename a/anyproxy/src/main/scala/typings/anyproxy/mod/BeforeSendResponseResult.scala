@@ -13,7 +13,6 @@ object BeforeSendResponseResult {
   @scala.inline
   def apply(response: PartialResponse): BeforeSendResponseResult = {
     val __obj = js.Dynamic.literal(response = response.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BeforeSendResponseResult]
   }
 }

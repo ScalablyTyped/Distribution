@@ -14,14 +14,12 @@ trait ICellTargetArea extends js.Object
 
 object ICellTargetArea {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cell: typings.jupyterlabCells.jupyterlabCellsStrings.cell = "cell".asInstanceOf[typings.jupyterlabCells.jupyterlabCellsStrings.cell]
   @scala.inline
-  def cell: typings.jupyterlabCells.jupyterlabCellsStrings.cell = this.cast("cell")
+  def input: typings.jupyterlabCells.jupyterlabCellsStrings.input = "input".asInstanceOf[typings.jupyterlabCells.jupyterlabCellsStrings.input]
   @scala.inline
-  def input: typings.jupyterlabCells.jupyterlabCellsStrings.input = this.cast("input")
+  def prompt: typings.jupyterlabCells.jupyterlabCellsStrings.prompt = "prompt".asInstanceOf[typings.jupyterlabCells.jupyterlabCellsStrings.prompt]
   @scala.inline
-  def prompt: typings.jupyterlabCells.jupyterlabCellsStrings.prompt = this.cast("prompt")
-  @scala.inline
-  def unknown: typings.jupyterlabCells.jupyterlabCellsStrings.unknown = this.cast("unknown")
+  def unknown: typings.jupyterlabCells.jupyterlabCellsStrings.unknown = "unknown".asInstanceOf[typings.jupyterlabCells.jupyterlabCellsStrings.unknown]
 }
 

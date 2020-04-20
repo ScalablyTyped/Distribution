@@ -14,14 +14,12 @@ trait Preload extends js.Object
 
 object Preload {
   @scala.inline
-  def _empty: typings.reactAudioPlayer.reactAudioPlayerStrings._empty = this.cast("")
+  def _empty: typings.reactAudioPlayer.reactAudioPlayerStrings._empty = "".asInstanceOf[typings.reactAudioPlayer.reactAudioPlayerStrings._empty]
   @scala.inline
-  def auto: typings.reactAudioPlayer.reactAudioPlayerStrings.auto = this.cast("auto")
+  def auto: typings.reactAudioPlayer.reactAudioPlayerStrings.auto = "auto".asInstanceOf[typings.reactAudioPlayer.reactAudioPlayerStrings.auto]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def metadata: typings.reactAudioPlayer.reactAudioPlayerStrings.metadata = "metadata".asInstanceOf[typings.reactAudioPlayer.reactAudioPlayerStrings.metadata]
   @scala.inline
-  def metadata: typings.reactAudioPlayer.reactAudioPlayerStrings.metadata = this.cast("metadata")
-  @scala.inline
-  def none: typings.reactAudioPlayer.reactAudioPlayerStrings.none = this.cast("none")
+  def none: typings.reactAudioPlayer.reactAudioPlayerStrings.none = "none".asInstanceOf[typings.reactAudioPlayer.reactAudioPlayerStrings.none]
 }
 

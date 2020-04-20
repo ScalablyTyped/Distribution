@@ -12,7 +12,6 @@ object RandomGenerator {
   @scala.inline
   def apply(nextBytes: js.Array[Double] => Unit): RandomGenerator = {
     val __obj = js.Dynamic.literal(nextBytes = js.Any.fromFunction1(nextBytes))
-  
     __obj.asInstanceOf[RandomGenerator]
   }
 }

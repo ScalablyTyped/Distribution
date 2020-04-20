@@ -13,7 +13,6 @@ object AnonLeft {
   @scala.inline
   def apply(left: js.Any, right: js.Any): AnonLeft = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLeft]
   }
 }

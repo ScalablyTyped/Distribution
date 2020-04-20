@@ -15,7 +15,6 @@ object ReleaseObjectGroupParameterType {
   @scala.inline
   def apply(objectGroup: String): ReleaseObjectGroupParameterType = {
     val __obj = js.Dynamic.literal(objectGroup = objectGroup.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReleaseObjectGroupParameterType]
   }
 }

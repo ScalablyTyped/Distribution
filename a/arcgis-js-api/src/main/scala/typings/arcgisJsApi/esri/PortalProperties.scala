@@ -184,7 +184,7 @@ trait PortalProperties extends LoadableProperties {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#eueiEnabled)
     *
-    * @default false
+    * @default null
     */
   var eueiEnabled: js.UndefOr[Boolean] = js.undefined
   /**

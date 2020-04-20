@@ -56,7 +56,6 @@ object ChannelList {
     total_clients_family: Double
   ): ChannelList = {
     val __obj = js.Dynamic.literal(channel_banner_gfx_url = channel_banner_gfx_url.asInstanceOf[js.Any], channel_banner_mode = channel_banner_mode.asInstanceOf[js.Any], channel_codec = channel_codec.asInstanceOf[js.Any], channel_codec_quality = channel_codec_quality.asInstanceOf[js.Any], channel_flag_default = channel_flag_default.asInstanceOf[js.Any], channel_flag_password = channel_flag_password.asInstanceOf[js.Any], channel_flag_permanent = channel_flag_permanent.asInstanceOf[js.Any], channel_flag_semi_permanent = channel_flag_semi_permanent.asInstanceOf[js.Any], channel_icon_id = channel_icon_id.asInstanceOf[js.Any], channel_maxclients = channel_maxclients.asInstanceOf[js.Any], channel_maxfamilyclients = channel_maxfamilyclients.asInstanceOf[js.Any], channel_name = channel_name.asInstanceOf[js.Any], channel_needed_subscribe_power = channel_needed_subscribe_power.asInstanceOf[js.Any], channel_needed_talk_power = channel_needed_talk_power.asInstanceOf[js.Any], channel_order = channel_order.asInstanceOf[js.Any], channel_topic = channel_topic.asInstanceOf[js.Any], cid = cid.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], seconds_empty = seconds_empty.asInstanceOf[js.Any], total_clients = total_clients.asInstanceOf[js.Any], total_clients_family = total_clients_family.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChannelList]
   }
 }

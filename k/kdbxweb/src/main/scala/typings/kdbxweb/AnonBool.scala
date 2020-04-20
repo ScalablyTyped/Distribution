@@ -26,7 +26,6 @@ object AnonBool {
     UInt64: Double
   ): AnonBool = {
     val __obj = js.Dynamic.literal(Bool = Bool.asInstanceOf[js.Any], Bytes = Bytes.asInstanceOf[js.Any], Int32 = Int32.asInstanceOf[js.Any], Int64 = Int64.asInstanceOf[js.Any], String = String.asInstanceOf[js.Any], UInt32 = UInt32.asInstanceOf[js.Any], UInt64 = UInt64.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBool]
   }
 }

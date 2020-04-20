@@ -13,7 +13,6 @@ object AnonGHSNGN {
   @scala.inline
   def apply(GHS: js.Array[String], NGN: js.Array[String]): AnonGHSNGN = {
     val __obj = js.Dynamic.literal(GHS = GHS.asInstanceOf[js.Any], NGN = NGN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGHSNGN]
   }
 }

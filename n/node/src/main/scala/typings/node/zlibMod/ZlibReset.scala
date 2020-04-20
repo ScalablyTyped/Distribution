@@ -12,7 +12,6 @@ object ZlibReset {
   @scala.inline
   def apply(reset: () => Unit): ZlibReset = {
     val __obj = js.Dynamic.literal(reset = js.Any.fromFunction0(reset))
-  
     __obj.asInstanceOf[ZlibReset]
   }
 }

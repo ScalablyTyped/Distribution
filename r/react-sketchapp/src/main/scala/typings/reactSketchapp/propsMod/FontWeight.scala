@@ -23,32 +23,30 @@ trait FontWeight extends js.Object
 
 object FontWeight {
   @scala.inline
-  def `100`: typings.reactSketchapp.reactSketchappStrings.`100` = this.cast("100")
+  def `100`: typings.reactSketchapp.reactSketchappStrings.`100` = "100".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.`100`]
   @scala.inline
-  def `200`: typings.reactSketchapp.reactSketchappStrings.`200` = this.cast("200")
+  def `200`: typings.reactSketchapp.reactSketchappStrings.`200` = "200".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.`200`]
   @scala.inline
-  def `300`: typings.reactSketchapp.reactSketchappStrings.`300` = this.cast("300")
+  def `300`: typings.reactSketchapp.reactSketchappStrings.`300` = "300".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.`300`]
   @scala.inline
-  def `400`: typings.reactSketchapp.reactSketchappStrings.`400` = this.cast("400")
+  def `400`: typings.reactSketchapp.reactSketchappStrings.`400` = "400".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.`400`]
   @scala.inline
-  def `500`: typings.reactSketchapp.reactSketchappStrings.`500` = this.cast("500")
+  def `500`: typings.reactSketchapp.reactSketchappStrings.`500` = "500".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.`500`]
   @scala.inline
-  def `600`: typings.reactSketchapp.reactSketchappStrings.`600` = this.cast("600")
+  def `600`: typings.reactSketchapp.reactSketchappStrings.`600` = "600".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.`600`]
   @scala.inline
-  def `700`: typings.reactSketchapp.reactSketchappStrings.`700` = this.cast("700")
+  def `700`: typings.reactSketchapp.reactSketchappStrings.`700` = "700".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.`700`]
   @scala.inline
-  def `800`: typings.reactSketchapp.reactSketchappStrings.`800` = this.cast("800")
+  def `800`: typings.reactSketchapp.reactSketchappStrings.`800` = "800".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.`800`]
   @scala.inline
-  def `900`: typings.reactSketchapp.reactSketchappStrings.`900` = this.cast("900")
+  def `900`: typings.reactSketchapp.reactSketchappStrings.`900` = "900".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.`900`]
   @scala.inline
-  def bold: typings.reactSketchapp.reactSketchappStrings.bold = this.cast("bold")
+  def bold: typings.reactSketchapp.reactSketchappStrings.bold = "bold".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.bold]
   @scala.inline
-  def bolder: typings.reactSketchapp.reactSketchappStrings.bolder = this.cast("bolder")
+  def bolder: typings.reactSketchapp.reactSketchappStrings.bolder = "bolder".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.bolder]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def lighter: typings.reactSketchapp.reactSketchappStrings.lighter = "lighter".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.lighter]
   @scala.inline
-  def lighter: typings.reactSketchapp.reactSketchappStrings.lighter = this.cast("lighter")
-  @scala.inline
-  def normal: typings.reactSketchapp.reactSketchappStrings.normal = this.cast("normal")
+  def normal: typings.reactSketchapp.reactSketchappStrings.normal = "normal".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.normal]
 }
 

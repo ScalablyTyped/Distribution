@@ -13,7 +13,6 @@ object AnimationEventMap {
   @scala.inline
   def apply(cancel: AnimationPlaybackEvent, finish: AnimationPlaybackEvent): AnimationEventMap = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], finish = finish.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnimationEventMap]
   }
 }

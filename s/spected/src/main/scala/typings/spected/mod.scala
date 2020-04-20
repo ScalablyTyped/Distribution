@@ -1,5 +1,6 @@
 package typings.spected
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +16,7 @@ object mod extends js.Object {
   type Predicate[INPUT, ROOTINPUT] = js.Function2[/* value */ INPUT, /* inputs */ ROOTINPUT, Boolean]
   type Result[INPUT, SPEC] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof INPUT ]: true | std.Array<any> | / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias spected.spected.Result<INPUT[key], any> * / object}
-    */ typings.spected.spectedStrings.Result with js.Any
+    */ typings.spected.spectedStrings.Result with TopLevel[js.Any]
   type Spec[INPUT, ROOTINPUT] = js.Tuple2[Predicate[INPUT, ROOTINPUT], ErrorMsg[INPUT]]
   type SpecArray[INPUT, ROOTINPUT] = js.Array[Spec[INPUT, ROOTINPUT]]
   type SpecFunction[INPUT, ROOTINPUT] = js.Function1[
@@ -25,7 +26,7 @@ object mod extends js.Object {
   type SpecObject[INPUT, ROOTINPUT] = Partial[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof INPUT ]: spected.spected.SpecValue<INPUT[key], ROOTINPUT>}
-    */ typings.spected.spectedStrings.SpecObject with INPUT
+    */ typings.spected.spectedStrings.SpecObject with TopLevel[INPUT]
   ]
   type SpecValue[INPUT, ROOTINPUT] = (SpecArray[INPUT, ROOTINPUT]) | (SpecFunction[INPUT, ROOTINPUT]) | (SpecObject[INPUT, ROOTINPUT])
 }

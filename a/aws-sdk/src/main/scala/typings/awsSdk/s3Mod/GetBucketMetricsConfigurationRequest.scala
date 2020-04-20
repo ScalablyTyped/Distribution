@@ -20,7 +20,6 @@ object GetBucketMetricsConfigurationRequest {
   @scala.inline
   def apply(Bucket: BucketName, Id: MetricsId): GetBucketMetricsConfigurationRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBucketMetricsConfigurationRequest]
   }
 }

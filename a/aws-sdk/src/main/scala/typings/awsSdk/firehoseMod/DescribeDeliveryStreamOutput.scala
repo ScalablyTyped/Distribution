@@ -16,7 +16,6 @@ object DescribeDeliveryStreamOutput {
   @scala.inline
   def apply(DeliveryStreamDescription: DeliveryStreamDescription): DescribeDeliveryStreamOutput = {
     val __obj = js.Dynamic.literal(DeliveryStreamDescription = DeliveryStreamDescription.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeDeliveryStreamOutput]
   }
 }

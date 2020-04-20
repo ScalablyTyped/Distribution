@@ -26,7 +26,6 @@ object ResolvedCollatorOptions {
     usage: String
   ): ResolvedCollatorOptions = {
     val __obj = js.Dynamic.literal(caseFirst = caseFirst.asInstanceOf[js.Any], collation = collation.asInstanceOf[js.Any], ignorePunctuation = ignorePunctuation.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], numeric = numeric.asInstanceOf[js.Any], sensitivity = sensitivity.asInstanceOf[js.Any], usage = usage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResolvedCollatorOptions]
   }
 }

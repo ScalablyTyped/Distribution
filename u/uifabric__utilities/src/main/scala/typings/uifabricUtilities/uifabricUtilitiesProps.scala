@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 
 trait uifabricUtilitiesProps {
   @scala.inline
-  def CustomizerProps: ICustomizerProps.type = typings.uifabricUtilities.customizerTypesMod.ICustomizerProps
+  def CustomizerProps: ICustomizerProps.type = ICustomizerProps
   type CustomizerProps = ICustomizerProps
   @scala.inline
-  def DelayedRenderProps: IDelayedRenderProps.type = typings.uifabricUtilities.delayedRenderMod.IDelayedRenderProps
+  def DelayedRenderProps: IDelayedRenderProps.type = IDelayedRenderProps
   type DelayedRenderProps = IDelayedRenderProps
   @scala.inline
-  def FocusRectsProps: AnonRootRef.type = typings.uifabricUtilities.AnonRootRef
+  def FocusRectsProps: AnonRootRef.type = AnonRootRef
   type FocusRectsProps = AnonRootRef
 }
 

@@ -17,20 +17,18 @@ trait symbologyType extends js.Object
 
 object symbologyType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def coda39: typings.escPosEncoder.escPosEncoderStrings.coda39 = "coda39".asInstanceOf[typings.escPosEncoder.escPosEncoderStrings.coda39]
   @scala.inline
-  def coda39: typings.escPosEncoder.escPosEncoderStrings.coda39 = this.cast("coda39")
+  def codabar: typings.escPosEncoder.escPosEncoderStrings.codabar = "codabar".asInstanceOf[typings.escPosEncoder.escPosEncoderStrings.codabar]
   @scala.inline
-  def codabar: typings.escPosEncoder.escPosEncoderStrings.codabar = this.cast("codabar")
+  def ean13: typings.escPosEncoder.escPosEncoderStrings.ean13 = "ean13".asInstanceOf[typings.escPosEncoder.escPosEncoderStrings.ean13]
   @scala.inline
-  def ean13: typings.escPosEncoder.escPosEncoderStrings.ean13 = this.cast("ean13")
+  def ean8: typings.escPosEncoder.escPosEncoderStrings.ean8 = "ean8".asInstanceOf[typings.escPosEncoder.escPosEncoderStrings.ean8]
   @scala.inline
-  def ean8: typings.escPosEncoder.escPosEncoderStrings.ean8 = this.cast("ean8")
+  def itf: typings.escPosEncoder.escPosEncoderStrings.itf = "itf".asInstanceOf[typings.escPosEncoder.escPosEncoderStrings.itf]
   @scala.inline
-  def itf: typings.escPosEncoder.escPosEncoderStrings.itf = this.cast("itf")
+  def upca: typings.escPosEncoder.escPosEncoderStrings.upca = "upca".asInstanceOf[typings.escPosEncoder.escPosEncoderStrings.upca]
   @scala.inline
-  def upca: typings.escPosEncoder.escPosEncoderStrings.upca = this.cast("upca")
-  @scala.inline
-  def upce: typings.escPosEncoder.escPosEncoderStrings.upce = this.cast("upce")
+  def upce: typings.escPosEncoder.escPosEncoderStrings.upce = "upce".asInstanceOf[typings.escPosEncoder.escPosEncoderStrings.upce]
 }
 

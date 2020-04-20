@@ -20,7 +20,6 @@ object GetBackendEnvironmentRequest {
   @scala.inline
   def apply(appId: AppId, environmentName: EnvironmentName): GetBackendEnvironmentRequest = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], environmentName = environmentName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBackendEnvironmentRequest]
   }
 }

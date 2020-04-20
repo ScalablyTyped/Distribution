@@ -13,7 +13,6 @@ object AnonUniqueKey {
   @scala.inline
   def apply(uniqueKey: String): AnonUniqueKey = {
     val __obj = js.Dynamic.literal(uniqueKey = uniqueKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonUniqueKey]
   }
 }

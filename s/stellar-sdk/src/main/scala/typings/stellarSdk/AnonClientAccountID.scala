@@ -17,7 +17,6 @@ object AnonClientAccountID {
   @scala.inline
   def apply(clientAccountID: String, tx: Transaction[Memo[MemoType], js.Array[Operation]]): AnonClientAccountID = {
     val __obj = js.Dynamic.literal(clientAccountID = clientAccountID.asInstanceOf[js.Any], tx = tx.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonClientAccountID]
   }
 }

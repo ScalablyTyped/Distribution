@@ -13,12 +13,10 @@ trait AttestationConveyancePreference extends js.Object
 
 object AttestationConveyancePreference {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def direct: typings.std.stdStrings.direct = "direct".asInstanceOf[typings.std.stdStrings.direct]
   @scala.inline
-  def direct: typings.std.stdStrings.direct = this.cast("direct")
+  def indirect: typings.std.stdStrings.indirect = "indirect".asInstanceOf[typings.std.stdStrings.indirect]
   @scala.inline
-  def indirect: typings.std.stdStrings.indirect = this.cast("indirect")
-  @scala.inline
-  def none: typings.std.stdStrings.none = this.cast("none")
+  def none: typings.std.stdStrings.none = "none".asInstanceOf[typings.std.stdStrings.none]
 }
 

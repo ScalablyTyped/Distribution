@@ -30,7 +30,6 @@ object Persistor {
     subscribe: PersistorSubscribeCallback => js.Function0[_]
   ): Persistor = {
     val __obj = js.Dynamic.literal(dispatch = js.Any.fromFunction1(dispatch), flush = js.Any.fromFunction0(flush), getState = js.Any.fromFunction0(getState), pause = js.Any.fromFunction0(pause), persist = js.Any.fromFunction0(persist), purge = js.Any.fromFunction0(purge), subscribe = js.Any.fromFunction1(subscribe))
-  
     __obj.asInstanceOf[Persistor]
   }
 }

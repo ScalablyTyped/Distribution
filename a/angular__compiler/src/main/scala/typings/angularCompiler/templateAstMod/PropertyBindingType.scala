@@ -20,16 +20,14 @@ trait PropertyBindingType extends js.Object
 
 object PropertyBindingType {
   @scala.inline
-  def Animation: `4` = this.cast(4)
+  def Animation: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def Attribute: `1` = this.cast(1)
+  def Attribute: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def Class: `2` = this.cast(2)
+  def Class: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def Property: `0` = this.cast(0)
+  def Property: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def Style: `3` = this.cast(3)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Style: `3` = 3.asInstanceOf[`3`]
 }
 

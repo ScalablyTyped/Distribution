@@ -6,8 +6,6 @@ import scala.scalajs.js.annotation._
 
 trait reactRouterGuardProps {
   type BrowserRouterProps = typings.reactRouterDom.mod.BrowserRouterProps
-  type LinkProps[S] = typings.reactRouterDom.mod.LinkProps[S]
-  type NavLinkProps[S] = typings.reactRouterDom.mod.NavLinkProps[S]
   type RedirectProps = typings.reactRouter.mod.RedirectProps
   type RouterProps = typings.reactRouter.mod.RouterProps
   @scala.inline

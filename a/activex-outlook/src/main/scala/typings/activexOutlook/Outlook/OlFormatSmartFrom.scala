@@ -14,10 +14,8 @@ trait OlFormatSmartFrom extends js.Object
 
 object OlFormatSmartFrom {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olFormatSmartFromFromOnly: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olFormatSmartFromFromOnly: `2` = this.cast(2)
-  @scala.inline
-  def olFormatSmartFromFromTo: `1` = this.cast(1)
+  def olFormatSmartFromFromTo: `1` = 1.asInstanceOf[`1`]
 }
 

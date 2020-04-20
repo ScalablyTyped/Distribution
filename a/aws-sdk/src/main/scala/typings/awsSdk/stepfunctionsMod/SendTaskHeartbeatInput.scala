@@ -16,7 +16,6 @@ object SendTaskHeartbeatInput {
   @scala.inline
   def apply(taskToken: TaskToken): SendTaskHeartbeatInput = {
     val __obj = js.Dynamic.literal(taskToken = taskToken.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SendTaskHeartbeatInput]
   }
 }

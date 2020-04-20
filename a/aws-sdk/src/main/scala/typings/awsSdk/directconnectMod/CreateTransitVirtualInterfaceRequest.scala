@@ -20,7 +20,6 @@ object CreateTransitVirtualInterfaceRequest {
   @scala.inline
   def apply(connectionId: ConnectionId, newTransitVirtualInterface: NewTransitVirtualInterface): CreateTransitVirtualInterfaceRequest = {
     val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any], newTransitVirtualInterface = newTransitVirtualInterface.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateTransitVirtualInterfaceRequest]
   }
 }

@@ -12,7 +12,6 @@ object HttpsCallableResult {
   @scala.inline
   def apply(data: js.Any): HttpsCallableResult = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HttpsCallableResult]
   }
 }

@@ -20,7 +20,6 @@ object DeploymentAuthorizationInfo {
     vstsAccessTokenKey: String
   ): DeploymentAuthorizationInfo = {
     val __obj = js.Dynamic.literal(authorizationHeaderFor = authorizationHeaderFor.asInstanceOf[js.Any], resources = resources.asInstanceOf[js.Any], tenantId = tenantId.asInstanceOf[js.Any], vstsAccessTokenKey = vstsAccessTokenKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeploymentAuthorizationInfo]
   }
 }

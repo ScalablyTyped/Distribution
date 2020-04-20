@@ -13,7 +13,6 @@ object DateOptions {
   @scala.inline
   def apply(newDateInternal: Function): DateOptions = {
     val __obj = js.Dynamic.literal(newDateInternal = newDateInternal.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DateOptions]
   }
 }

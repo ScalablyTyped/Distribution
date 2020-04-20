@@ -44,7 +44,6 @@ object BuildDefinitionSourceProvider {
     supportedTriggerTypes: DefinitionTriggerType
   ): BuildDefinitionSourceProvider = {
     val __obj = js.Dynamic.literal(definitionUri = definitionUri.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lastModified = lastModified.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], supportedTriggerTypes = supportedTriggerTypes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BuildDefinitionSourceProvider]
   }
 }

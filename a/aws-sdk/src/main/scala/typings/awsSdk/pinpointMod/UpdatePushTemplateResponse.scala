@@ -13,7 +13,6 @@ object UpdatePushTemplateResponse {
   @scala.inline
   def apply(MessageBody: MessageBody): UpdatePushTemplateResponse = {
     val __obj = js.Dynamic.literal(MessageBody = MessageBody.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdatePushTemplateResponse]
   }
 }

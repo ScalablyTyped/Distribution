@@ -14,14 +14,12 @@ trait StringEncoding extends js.Object
 
 object StringEncoding {
   @scala.inline
-  def base64: typings.k6.k6Strings.base64 = this.cast("base64")
+  def base64: typings.k6.k6Strings.base64 = "base64".asInstanceOf[typings.k6.k6Strings.base64]
   @scala.inline
-  def base64rawurl: typings.k6.k6Strings.base64rawurl = this.cast("base64rawurl")
+  def base64rawurl: typings.k6.k6Strings.base64rawurl = "base64rawurl".asInstanceOf[typings.k6.k6Strings.base64rawurl]
   @scala.inline
-  def base64url: typings.k6.k6Strings.base64url = this.cast("base64url")
+  def base64url: typings.k6.k6Strings.base64url = "base64url".asInstanceOf[typings.k6.k6Strings.base64url]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def hex: typings.k6.k6Strings.hex = this.cast("hex")
+  def hex: typings.k6.k6Strings.hex = "hex".asInstanceOf[typings.k6.k6Strings.hex]
 }
 

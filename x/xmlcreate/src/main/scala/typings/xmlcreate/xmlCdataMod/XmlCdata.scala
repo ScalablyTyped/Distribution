@@ -13,7 +13,7 @@ trait XmlCdata[Parent] extends js.Object {
   /**
     * Gets the character data of this CDATA section.
     */
-  def charData(): String = js.native
+  def charData: String = js.native
   /**
     * Sets the character data of this CDATA section.
     */

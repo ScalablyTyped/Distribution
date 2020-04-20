@@ -59,6 +59,7 @@ trait View
   def getAnimating(): Boolean = js.native
   def getCenter(): Coordinate = js.native
   def getCenterInternal(): Coordinate = js.native
+  def getConstrainResolution(): Boolean = js.native
   def getConstrainedCenter(): Coordinate = js.native
   def getConstrainedCenter(targetCenter: js.UndefOr[scala.Nothing], opt_targetResolution: Double): Coordinate = js.native
   def getConstrainedCenter(targetCenter: Coordinate): Coordinate = js.native

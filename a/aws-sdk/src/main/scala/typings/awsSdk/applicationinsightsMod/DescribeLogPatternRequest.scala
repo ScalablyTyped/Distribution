@@ -28,7 +28,6 @@ object DescribeLogPatternRequest {
     ResourceGroupName: ResourceGroupName
   ): DescribeLogPatternRequest = {
     val __obj = js.Dynamic.literal(PatternName = PatternName.asInstanceOf[js.Any], PatternSetName = PatternSetName.asInstanceOf[js.Any], ResourceGroupName = ResourceGroupName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeLogPatternRequest]
   }
 }

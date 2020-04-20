@@ -14,7 +14,6 @@ object AnonDisabled {
   @scala.inline
   def apply(disabled: Double, enabled: Double, paused: Double): AnonDisabled = {
     val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], paused = paused.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDisabled]
   }
 }

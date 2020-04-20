@@ -20,7 +20,6 @@ object GetConfigurationProfileRequest {
   @scala.inline
   def apply(ApplicationId: Id, ConfigurationProfileId: Id): GetConfigurationProfileRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], ConfigurationProfileId = ConfigurationProfileId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetConfigurationProfileRequest]
   }
 }

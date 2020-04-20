@@ -16,7 +16,6 @@ object GetHostedZoneCountResponse {
   @scala.inline
   def apply(HostedZoneCount: HostedZoneCount): GetHostedZoneCountResponse = {
     val __obj = js.Dynamic.literal(HostedZoneCount = HostedZoneCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetHostedZoneCountResponse]
   }
 }

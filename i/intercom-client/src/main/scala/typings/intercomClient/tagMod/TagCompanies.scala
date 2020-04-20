@@ -14,7 +14,6 @@ object TagCompanies {
   @scala.inline
   def apply(name: String, users: js.Array[AnonId]): TagCompanies = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TagCompanies]
   }
 }

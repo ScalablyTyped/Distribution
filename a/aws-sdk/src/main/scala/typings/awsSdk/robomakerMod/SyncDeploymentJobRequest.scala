@@ -20,7 +20,6 @@ object SyncDeploymentJobRequest {
   @scala.inline
   def apply(clientRequestToken: ClientRequestToken, fleet: Arn): SyncDeploymentJobRequest = {
     val __obj = js.Dynamic.literal(clientRequestToken = clientRequestToken.asInstanceOf[js.Any], fleet = fleet.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SyncDeploymentJobRequest]
   }
 }

@@ -16,7 +16,6 @@ object JQuery {
   @scala.inline
   def apply(affix: String => JQuery): JQuery = {
     val __obj = js.Dynamic.literal(affix = js.Any.fromFunction1(affix))
-  
     __obj.asInstanceOf[JQuery]
   }
 }

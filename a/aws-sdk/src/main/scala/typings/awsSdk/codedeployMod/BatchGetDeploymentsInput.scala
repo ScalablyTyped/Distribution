@@ -16,7 +16,6 @@ object BatchGetDeploymentsInput {
   @scala.inline
   def apply(deploymentIds: DeploymentsList): BatchGetDeploymentsInput = {
     val __obj = js.Dynamic.literal(deploymentIds = deploymentIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchGetDeploymentsInput]
   }
 }

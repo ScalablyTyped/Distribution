@@ -107,6 +107,13 @@ trait SceneView
     */
   var highlightOptions: SceneViewHighlightOptions = js.native
   /**
+    * This property contains performance information in a SceneView like global memory usage and additional details for layers about memory consumption and number of features.
+    * > **This property is experimental** and should be used for debugging purposes only. Its interface will change in future releases.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#performanceInfo)
+    */
+  val performanceInfo: SceneViewPerformanceInfo = js.native
+  /**
     * SceneView can draw scenes in three different quality modes: `high`, `medium` and `low`.  The `low` quality profile significantly increases performance on slower browsers and devices by reducing the memory limit and the visual quality in the following aspects:
     *   * Map resolution
     *   * Scene layer detail level
@@ -116,9 +123,6 @@ trait SceneView
     * The high and medium quality profiles differ in the maximum amount of memory which the view is allowed to use. A higher memory limit improves quality in complex web scenes with many layers, but can have a negative impact on drawing performance and stability.  [Physically based rendering](https://en.wikipedia.org/wiki/Physically_based_rendering) (PBR) materials are enabled on all 3D objects in a SceneView in "high" quality mode. However, if a [GLTF model](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#resource) or a 3D Object [SceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html) has PBR settings defined on the material, then these will be rendered in all quality modes.  In "high" quality mode, on a HiDPI display, graphics are rendered at a higher resolution depending on the browser's [devicePixelRatio](https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio) property.  The default value is based on the detected browser:
     *   * `low` for Internet Explorer 11 and certain mobile devices
     *   * `medium` for any other browser
-    *
-    *
-    * Overriding the default value is best done in the constructor (see example below). If the value is modified after construction, only a subset of the quality aspects are affected.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#qualityProfile)
     */
@@ -166,7 +170,21 @@ trait SceneView
     *   * Object with a combination of `target`, `center`, `scale`, `position`, `heading` and `tilt` properties (with `target` being any of the types listed above). The `center` property is provided as a convenience to animate the [SceneView.center](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#center) and is the equivalent of specifying the `target` with the center [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html). The target must be provided in the spatial reference of the view.
     *
     *
-    * This function returns a promise which resolves as soon as the new view has been set to the target. If the transition is animated, then the ongoing animation can be obtained using [SceneView.animation](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#animation).  If the given target is far away from the current camera position, then heading and tilt will be automatically set to their neutral values (facing north, looking top down). Tilt and heading can always be explicitly set to override this behavior.
+    * This function returns a promise which resolves as soon as the new view has been set to the target. If the transition is animated, then the ongoing animation can be obtained using [SceneView.animation](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#animation). If setting the view to the new target fails, the promise returned by the goTo() method rejects with an error. Use a catch statement, to handle the error:
+    * ```
+    * view.goTo({
+    *   center: [-126, 49]
+    * })
+    * .catch(function(error) {
+    *   if (error.name != "AbortError") {
+    *      console.error(error);
+    *   }
+    * });
+    * ```
+    *
+    * If the given target is far away from the current camera position, then heading and tilt will be automatically set to their
+    * neutral values (facing north, looking top down).
+    * Tilt and heading can always be explicitly set to override this behavior.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#goTo)
     *

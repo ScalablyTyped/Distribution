@@ -16,12 +16,10 @@ trait MsoHorizontalAnchor extends js.Object
 
 object MsoHorizontalAnchor {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoAnchorCenter: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoAnchorCenter: `2` = this.cast(2)
+  def msoAnchorNone: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoAnchorNone: `1` = this.cast(1)
-  @scala.inline
-  def msoHorizontalAnchorMixed: `-2` = this.cast(-2)
+  def msoHorizontalAnchorMixed: `-2` = -2.asInstanceOf[`-2`]
 }
 

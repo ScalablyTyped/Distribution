@@ -15,7 +15,6 @@ object AddInspectedHeapObjectParameterType {
   @scala.inline
   def apply(heapObjectId: HeapSnapshotObjectId): AddInspectedHeapObjectParameterType = {
     val __obj = js.Dynamic.literal(heapObjectId = heapObjectId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddInspectedHeapObjectParameterType]
   }
 }

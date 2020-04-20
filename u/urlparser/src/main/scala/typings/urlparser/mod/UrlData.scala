@@ -17,7 +17,6 @@ object UrlData {
   @scala.inline
   def apply(host: AnonHostname, path: AnonBase, query: AnonParams): UrlData = {
     val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UrlData]
   }
 }

@@ -18,7 +18,6 @@ object AudioSpriteSound {
   @scala.inline
   def apply(spritemap: js.Object): AudioSpriteSound = {
     val __obj = js.Dynamic.literal(spritemap = spritemap.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AudioSpriteSound]
   }
 }

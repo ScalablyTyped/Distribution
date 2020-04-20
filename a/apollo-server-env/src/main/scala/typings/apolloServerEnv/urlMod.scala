@@ -34,7 +34,7 @@ object urlMod extends js.Object {
   class URLSearchParams ()
     extends Iterable[js.Tuple2[String, String]] {
     def this(init: URLSearchParamsInit) = this()
-    @JSName(scala.scalajs.js.Symbol.iterator)
+    @JSName(js.Symbol.iterator)
     var iterator_URLSearchParams: js.Function0[IterableIterator[js.Tuple2[String, String]]] = js.native
     def append(name: String, value: String): Unit = js.native
     def delete(name: String): Unit = js.native

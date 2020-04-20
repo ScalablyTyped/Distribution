@@ -63,7 +63,6 @@ object XLCMenu {
     showItem: (String, js.Array[_]) => Unit
   ): XLCMenu = {
     val __obj = js.Dynamic.literal(addItem = js.Any.fromFunction4(addItem), changeDataSource = js.Any.fromFunction2(changeDataSource), disableItem = js.Any.fromFunction2(disableItem), enableItem = js.Any.fromFunction2(enableItem), hideItem = js.Any.fromFunction2(hideItem), removeItem = js.Any.fromFunction2(removeItem), showItem = js.Any.fromFunction2(showItem))
-  
     __obj.asInstanceOf[XLCMenu]
   }
 }

@@ -16,7 +16,6 @@ object AnonVolume {
   @scala.inline
   def apply(event: SyntheticEvent[HTMLDivElement, Event_], volume: Double): AnonVolume = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], volume = volume.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonVolume]
   }
 }

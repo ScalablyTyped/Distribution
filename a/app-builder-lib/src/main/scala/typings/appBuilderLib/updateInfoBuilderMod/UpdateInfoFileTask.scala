@@ -23,7 +23,6 @@ object UpdateInfoFileTask {
     publishConfiguration: PublishConfiguration
   ): UpdateInfoFileTask = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], packager = packager.asInstanceOf[js.Any], publishConfiguration = publishConfiguration.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateInfoFileTask]
   }
 }

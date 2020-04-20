@@ -24,7 +24,6 @@ object ProjectActivityMetrics {
     pullRequestsCreatedCount: Double
   ): ProjectActivityMetrics = {
     val __obj = js.Dynamic.literal(authorsCount = authorsCount.asInstanceOf[js.Any], codeChangesCount = codeChangesCount.asInstanceOf[js.Any], codeChangesTrend = codeChangesTrend.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], pullRequestsCompletedCount = pullRequestsCompletedCount.asInstanceOf[js.Any], pullRequestsCreatedCount = pullRequestsCreatedCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProjectActivityMetrics]
   }
 }

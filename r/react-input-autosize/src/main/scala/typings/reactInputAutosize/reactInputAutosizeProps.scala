@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactInputAutosizeProps {
   @scala.inline
-  def ReactInputAutosizeProps: AutosizeInputProps.type = typings.reactInputAutosize.mod.AutosizeInputProps
+  def ReactInputAutosizeProps: AutosizeInputProps.type = AutosizeInputProps
   type ReactInputAutosizeProps = AutosizeInputProps
 }
 

@@ -20,7 +20,6 @@ object ModifyLunaClientRequest {
   @scala.inline
   def apply(Certificate: Certificate, ClientArn: ClientArn): ModifyLunaClientRequest = {
     val __obj = js.Dynamic.literal(Certificate = Certificate.asInstanceOf[js.Any], ClientArn = ClientArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ModifyLunaClientRequest]
   }
 }

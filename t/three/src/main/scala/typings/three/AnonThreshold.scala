@@ -12,7 +12,6 @@ object AnonThreshold {
   @scala.inline
   def apply(threshold: Double): AnonThreshold = {
     val __obj = js.Dynamic.literal(threshold = threshold.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonThreshold]
   }
 }

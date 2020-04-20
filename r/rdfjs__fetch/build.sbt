@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "rdfjs__fetch"
-version := "2.0-dt-20200322Z-c912b6"
+version := "2.0-dt-20200322Z-4a8667"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "13.11-dt-20200402Z-9a87f0",
-  "org.scalablytyped" %%% "rdf-js" % "2.0-dt-20200406Z-c4d300",
-  "org.scalablytyped" %%% "rdfjs__fetch-lite" % "2.0-dt-20200302Z-ec85d7",
-  "org.scalablytyped" %%% "rdfjs__sink-map" % "1.0-dt-20200116Z-fd2ee4",
-  "org.scalablytyped" %%% "std" % "3.8-a0108c")
+  "org.scalablytyped" %%% "node" % "13.13-dt-20200417Z-f3d81d",
+  "org.scalablytyped" %%% "rdf-js" % "2.0-dt-20200406Z-01e9a6",
+  "org.scalablytyped" %%% "rdfjs__fetch-lite" % "2.0-dt-20200302Z-eb7f10",
+  "org.scalablytyped" %%% "rdfjs__sink-map" % "1.0-dt-20200116Z-51811e",
+  "org.scalablytyped" %%% "std" % "3.8-9b2470")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

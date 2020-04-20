@@ -18,14 +18,12 @@ trait PpSoundEffectType extends js.Object
 
 object PpSoundEffectType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ppSoundEffectsMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def ppSoundEffectsMixed: `-2` = this.cast(-2)
+  def ppSoundFile: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def ppSoundFile: `2` = this.cast(2)
+  def ppSoundNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def ppSoundNone: `0` = this.cast(0)
-  @scala.inline
-  def ppSoundStopPrevious: `1` = this.cast(1)
+  def ppSoundStopPrevious: `1` = 1.asInstanceOf[`1`]
 }
 

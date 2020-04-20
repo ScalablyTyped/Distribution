@@ -80,15 +80,15 @@ object imagesMod extends js.Object {
         */
       /* CompleteClass */
       override val qualifiedName: String | Null = js.native
-      def containerAsImageCollection(): ImageCollection = js.native
+      def containerAsImageCollection: ImageCollection = js.native
       def imageData(): js.Any = js.native
       def imageData(newValue: String): js.Any = js.native
       @JSName("imageData")
-      def imageData_Union(): String | Null = js.native
-      def name(): String = js.native
+      def imageData_Union: String | Null = js.native
+      def name: String = js.native
       def name(newValue: String): js.Any = js.native
       @JSName("qualifiedName")
-      def qualifiedName_MImage(): String | Null = js.native
+      def qualifiedName_MImage: String | Null = js.native
     }
     
     /**
@@ -116,8 +116,8 @@ object imagesMod extends js.Object {
       @JSName("model")
       var model_FImageCollection: IModel = js.native
       @JSName("containerAsFolderBase")
-      def containerAsFolderBase_MImageCollection(): FolderBase = js.native
-      def images(): IList[Image] = js.native
+      def containerAsFolderBase_MImageCollection: FolderBase = js.native
+      def images: IList[Image] = js.native
     }
     
     /* static members */

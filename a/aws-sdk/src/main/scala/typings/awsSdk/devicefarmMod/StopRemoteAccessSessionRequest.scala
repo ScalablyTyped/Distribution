@@ -16,7 +16,6 @@ object StopRemoteAccessSessionRequest {
   @scala.inline
   def apply(arn: AmazonResourceName): StopRemoteAccessSessionRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopRemoteAccessSessionRequest]
   }
 }

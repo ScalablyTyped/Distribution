@@ -16,7 +16,6 @@ object GetAnalyzerResponse {
   @scala.inline
   def apply(analyzer: AnalyzerSummary): GetAnalyzerResponse = {
     val __obj = js.Dynamic.literal(analyzer = analyzer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetAnalyzerResponse]
   }
 }

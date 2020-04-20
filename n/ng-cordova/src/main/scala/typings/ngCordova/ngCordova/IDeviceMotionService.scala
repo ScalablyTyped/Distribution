@@ -19,7 +19,6 @@ object IDeviceMotionService {
     watchAcceleration: IDeviceMotionAccelerometerOptions => IDeviceMotionWatchPromise
   ): IDeviceMotionService = {
     val __obj = js.Dynamic.literal(clearWatch = js.Any.fromFunction1(clearWatch), getCurrentAcceleration = js.Any.fromFunction0(getCurrentAcceleration), watchAcceleration = js.Any.fromFunction1(watchAcceleration))
-  
     __obj.asInstanceOf[IDeviceMotionService]
   }
 }

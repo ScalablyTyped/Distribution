@@ -13,7 +13,7 @@ package object mod {
     * https://github.com/Microsoft/TypeScript/issues/12215#issuecomment-307871458
     */
   /** @internal */
-  type Omit[T, K /* <: java.lang.String */] = typings.std.Pick[
+  type Omit[T, K /* <: /* keyof T */ java.lang.String */] = typings.std.Pick[
     T, 
     /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: P} & {[ P in K ]: never} & {[x: string] : never, [x: number] : never}[keyof T] */ js.Any
   ]

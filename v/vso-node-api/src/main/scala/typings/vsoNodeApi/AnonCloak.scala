@@ -13,7 +13,6 @@ object AnonCloak {
   @scala.inline
   def apply(cloak: Double, map: Double): AnonCloak = {
     val __obj = js.Dynamic.literal(cloak = cloak.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCloak]
   }
 }

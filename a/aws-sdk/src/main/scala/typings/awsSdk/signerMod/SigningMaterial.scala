@@ -16,7 +16,6 @@ object SigningMaterial {
   @scala.inline
   def apply(certificateArn: CertificateArn): SigningMaterial = {
     val __obj = js.Dynamic.literal(certificateArn = certificateArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SigningMaterial]
   }
 }

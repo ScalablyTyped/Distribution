@@ -16,7 +16,6 @@ object DeleteSourceCredentialsInput {
   @scala.inline
   def apply(arn: NonEmptyString): DeleteSourceCredentialsInput = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteSourceCredentialsInput]
   }
 }

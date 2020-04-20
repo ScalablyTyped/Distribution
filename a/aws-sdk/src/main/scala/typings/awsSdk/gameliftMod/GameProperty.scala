@@ -20,7 +20,6 @@ object GameProperty {
   @scala.inline
   def apply(Key: GamePropertyKey, Value: GamePropertyValue): GameProperty = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GameProperty]
   }
 }

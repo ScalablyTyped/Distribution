@@ -13,7 +13,6 @@ object UtilBase64 {
   @scala.inline
   def apply(decode: String => String, encode: String => String): UtilBase64 = {
     val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode))
-  
     __obj.asInstanceOf[UtilBase64]
   }
 }

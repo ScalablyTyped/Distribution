@@ -16,7 +16,6 @@ object DeleteSnapshotScheduleMessage {
   @scala.inline
   def apply(ScheduleIdentifier: String): DeleteSnapshotScheduleMessage = {
     val __obj = js.Dynamic.literal(ScheduleIdentifier = ScheduleIdentifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteSnapshotScheduleMessage]
   }
 }

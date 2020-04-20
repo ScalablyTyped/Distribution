@@ -14,7 +14,6 @@ object AnonMatches {
   @scala.inline
   def apply(context: Context, matches: AnonStats): AnonMatches = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMatches]
   }
 }

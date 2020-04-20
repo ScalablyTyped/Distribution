@@ -28,7 +28,6 @@ object BatchAddFacetToObject {
     SchemaFacet: SchemaFacet
   ): BatchAddFacetToObject = {
     val __obj = js.Dynamic.literal(ObjectAttributeList = ObjectAttributeList.asInstanceOf[js.Any], ObjectReference = ObjectReference.asInstanceOf[js.Any], SchemaFacet = SchemaFacet.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchAddFacetToObject]
   }
 }

@@ -13,7 +13,6 @@ object TeamBacklogMapping {
   @scala.inline
   def apply(categoryReferenceName: String, teamId: String): TeamBacklogMapping = {
     val __obj = js.Dynamic.literal(categoryReferenceName = categoryReferenceName.asInstanceOf[js.Any], teamId = teamId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TeamBacklogMapping]
   }
 }

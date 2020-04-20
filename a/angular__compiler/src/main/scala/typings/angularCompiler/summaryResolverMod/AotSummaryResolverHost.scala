@@ -38,7 +38,6 @@ object AotSummaryResolverHost {
     toSummaryFileName: (String, String) => String
   ): AotSummaryResolverHost = {
     val __obj = js.Dynamic.literal(fromSummaryFileName = js.Any.fromFunction2(fromSummaryFileName), isSourceFile = js.Any.fromFunction1(isSourceFile), loadSummary = js.Any.fromFunction1(loadSummary), toSummaryFileName = js.Any.fromFunction2(toSummaryFileName))
-  
     __obj.asInstanceOf[AotSummaryResolverHost]
   }
 }

@@ -24,7 +24,6 @@ object DescribeUserRequest {
   @scala.inline
   def apply(AwsAccountId: AwsAccountId, Namespace: Namespace, UserName: UserName_): DescribeUserRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], Namespace = Namespace.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeUserRequest]
   }
 }

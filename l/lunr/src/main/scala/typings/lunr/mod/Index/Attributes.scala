@@ -41,7 +41,6 @@ object Attributes {
     tokenSet: TokenSet
   ): Attributes = {
     val __obj = js.Dynamic.literal(documentVectors = documentVectors.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], invertedIndex = invertedIndex.asInstanceOf[js.Any], pipeline = pipeline.asInstanceOf[js.Any], tokenSet = tokenSet.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Attributes]
   }
 }

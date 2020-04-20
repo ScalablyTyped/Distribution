@@ -14,7 +14,6 @@ object AnonProductInfoHeaderValue {
   @scala.inline
   def apply(productInfoHeaderValue: HttpProductInfoHeaderValue, returnValue: Boolean): AnonProductInfoHeaderValue = {
     val __obj = js.Dynamic.literal(productInfoHeaderValue = productInfoHeaderValue.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonProductInfoHeaderValue]
   }
 }

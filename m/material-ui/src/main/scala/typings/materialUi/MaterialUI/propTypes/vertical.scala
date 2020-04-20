@@ -13,12 +13,10 @@ trait vertical extends js.Object
 
 object vertical {
   @scala.inline
-  def bottom: typings.materialUi.materialUiStrings.bottom = this.cast("bottom")
+  def bottom: typings.materialUi.materialUiStrings.bottom = "bottom".asInstanceOf[typings.materialUi.materialUiStrings.bottom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.materialUi.materialUiStrings.center = "center".asInstanceOf[typings.materialUi.materialUiStrings.center]
   @scala.inline
-  def center: typings.materialUi.materialUiStrings.center = this.cast("center")
-  @scala.inline
-  def top: typings.materialUi.materialUiStrings.top = this.cast("top")
+  def top: typings.materialUi.materialUiStrings.top = "top".asInstanceOf[typings.materialUi.materialUiStrings.top]
 }
 

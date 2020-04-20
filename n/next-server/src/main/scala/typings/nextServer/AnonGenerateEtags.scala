@@ -13,7 +13,6 @@ object AnonGenerateEtags {
   @scala.inline
   def apply(generateEtags: Boolean, poweredByHeader: Boolean): AnonGenerateEtags = {
     val __obj = js.Dynamic.literal(generateEtags = generateEtags.asInstanceOf[js.Any], poweredByHeader = poweredByHeader.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGenerateEtags]
   }
 }

@@ -12,7 +12,6 @@ object Downloader {
   @scala.inline
   def apply[T](download: (String, String, T) => js.Promise[Unit]): Downloader[T] = {
     val __obj = js.Dynamic.literal(download = js.Any.fromFunction3(download))
-  
     __obj.asInstanceOf[Downloader[T]]
   }
 }

@@ -40,7 +40,6 @@ object Typeoflcr {
     to_gw_addr: (Double, String, Double) => Double
   ): Typeoflcr = {
     val __obj = js.Dynamic.literal(defunct_gw = js.Any.fromFunction1(defunct_gw), from_any_gw = js.Any.fromFunction0(from_any_gw), from_any_gw_addr = js.Any.fromFunction2(from_any_gw_addr), from_gw = js.Any.fromFunction1(from_gw), from_gw_addr = js.Any.fromFunction3(from_gw_addr), inactivate_gw = js.Any.fromFunction0(inactivate_gw), load_gws = js.Any.fromFunction1(load_gws), load_gws_furi = js.Any.fromFunction3(load_gws_furi), load_gws_ruser = js.Any.fromFunction2(load_gws_ruser), next_gw = js.Any.fromFunction0(next_gw), to_any_gw = js.Any.fromFunction0(to_any_gw), to_any_gw_addr = js.Any.fromFunction2(to_any_gw_addr), to_gw = js.Any.fromFunction1(to_gw), to_gw_addr = js.Any.fromFunction3(to_gw_addr))
-  
     __obj.asInstanceOf[Typeoflcr]
   }
 }

@@ -13,7 +13,6 @@ object PickImplpromptPromptString {
   @scala.inline
   def apply(prompt: String): PickImplpromptPromptString = {
     val __obj = js.Dynamic.literal(prompt = prompt.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplpromptPromptString]
   }
 }

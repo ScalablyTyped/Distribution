@@ -24,7 +24,6 @@ object DirectRepositoryRankedRecipientsResponseRootObject {
     status: String
   ): DirectRepositoryRankedRecipientsResponseRootObject = {
     val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any], filtered = filtered.asInstanceOf[js.Any], rank_token = rank_token.asInstanceOf[js.Any], ranked_recipients = ranked_recipients.asInstanceOf[js.Any], request_id = request_id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DirectRepositoryRankedRecipientsResponseRootObject]
   }
 }

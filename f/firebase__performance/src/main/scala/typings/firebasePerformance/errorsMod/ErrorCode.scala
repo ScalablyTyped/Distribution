@@ -2,10 +2,11 @@ package typings.firebasePerformance.errorsMod
 
 import typings.firebasePerformance.firebasePerformanceStrings.`FB not default`
 import typings.firebasePerformance.firebasePerformanceStrings.`RC response not ok`
+import typings.firebasePerformance.firebasePerformanceStrings.`invalid String merger input`
 import typings.firebasePerformance.firebasePerformanceStrings.`invalid attribute name`
 import typings.firebasePerformance.firebasePerformanceStrings.`invalid attribute value`
 import typings.firebasePerformance.firebasePerformanceStrings.`invalid cc log`
-import typings.firebasePerformance.firebasePerformanceStrings.`invalide custom metric name`
+import typings.firebasePerformance.firebasePerformanceStrings.`invalid custom metric name`
 import typings.firebasePerformance.firebasePerformanceStrings.`no api key`
 import typings.firebasePerformance.firebasePerformanceStrings.`no app id`
 import typings.firebasePerformance.firebasePerformanceStrings.`no project id`
@@ -28,36 +29,37 @@ import scala.scalajs.js.annotation._
   - typings.firebasePerformance.firebasePerformanceStrings.`RC response not ok`
   - typings.firebasePerformance.firebasePerformanceStrings.`invalid attribute name`
   - typings.firebasePerformance.firebasePerformanceStrings.`invalid attribute value`
-  - typings.firebasePerformance.firebasePerformanceStrings.`invalide custom metric name`
+  - typings.firebasePerformance.firebasePerformanceStrings.`invalid custom metric name`
+  - typings.firebasePerformance.firebasePerformanceStrings.`invalid String merger input`
 */
 trait ErrorCode extends js.Object
 
 object ErrorCode {
   @scala.inline
-  def FB_NOT_DEFAULT: `FB not default` = this.cast("FB not default")
+  def FB_NOT_DEFAULT: `FB not default` = ("FB not default").asInstanceOf[`FB not default`]
   @scala.inline
-  def INVALID_ATTRIBUTE_NAME: `invalid attribute name` = this.cast("invalid attribute name")
+  def INVALID_ATTRIBUTE_NAME: `invalid attribute name` = ("invalid attribute name").asInstanceOf[`invalid attribute name`]
   @scala.inline
-  def INVALID_ATTRIBUTE_VALUE: `invalid attribute value` = this.cast("invalid attribute value")
+  def INVALID_ATTRIBUTE_VALUE: `invalid attribute value` = ("invalid attribute value").asInstanceOf[`invalid attribute value`]
   @scala.inline
-  def INVALID_CC_LOG: `invalid cc log` = this.cast("invalid cc log")
+  def INVALID_CC_LOG: `invalid cc log` = ("invalid cc log").asInstanceOf[`invalid cc log`]
   @scala.inline
-  def INVALID_CUSTOM_METRIC_NAME: `invalide custom metric name` = this.cast("invalide custom metric name")
+  def INVALID_CUSTOM_METRIC_NAME: `invalid custom metric name` = ("invalid custom metric name").asInstanceOf[`invalid custom metric name`]
   @scala.inline
-  def NO_API_KEY: `no api key` = this.cast("no api key")
+  def INVALID_STRING_MERGER_PARAMETER: `invalid String merger input` = ("invalid String merger input").asInstanceOf[`invalid String merger input`]
   @scala.inline
-  def NO_APP_ID: `no app id` = this.cast("no app id")
+  def NO_API_KEY: `no api key` = ("no api key").asInstanceOf[`no api key`]
   @scala.inline
-  def NO_PROJECT_ID: `no project id` = this.cast("no project id")
+  def NO_APP_ID: `no app id` = ("no app id").asInstanceOf[`no app id`]
   @scala.inline
-  def NO_WINDOW: `no window` = this.cast("no window")
+  def NO_PROJECT_ID: `no project id` = ("no project id").asInstanceOf[`no project id`]
   @scala.inline
-  def RC_NOT_OK: `RC response not ok` = this.cast("RC response not ok")
+  def NO_WINDOW: `no window` = ("no window").asInstanceOf[`no window`]
   @scala.inline
-  def TRACE_STARTED_BEFORE: `trace started` = this.cast("trace started")
+  def RC_NOT_OK: `RC response not ok` = ("RC response not ok").asInstanceOf[`RC response not ok`]
   @scala.inline
-  def TRACE_STOPPED_BEFORE: `trace stopped` = this.cast("trace stopped")
+  def TRACE_STARTED_BEFORE: `trace started` = ("trace started").asInstanceOf[`trace started`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def TRACE_STOPPED_BEFORE: `trace stopped` = ("trace stopped").asInstanceOf[`trace stopped`]
 }
 

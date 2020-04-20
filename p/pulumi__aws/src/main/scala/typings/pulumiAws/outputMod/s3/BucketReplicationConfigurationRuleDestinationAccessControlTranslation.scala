@@ -16,7 +16,6 @@ object BucketReplicationConfigurationRuleDestinationAccessControlTranslation {
   @scala.inline
   def apply(owner: String): BucketReplicationConfigurationRuleDestinationAccessControlTranslation = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BucketReplicationConfigurationRuleDestinationAccessControlTranslation]
   }
 }

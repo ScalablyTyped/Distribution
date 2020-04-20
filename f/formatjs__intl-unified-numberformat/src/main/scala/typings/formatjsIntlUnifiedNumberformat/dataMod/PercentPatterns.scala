@@ -1,8 +1,12 @@
 package typings.formatjsIntlUnifiedNumberformat.dataMod
 
 import typings.formatjsIntlUnifiedNumberformat.RecordDecimalFormatNumSig
+import typings.formatjsIntlUnifiedNumberformat.formatjsIntlUnifiedNumberformatStrings.always
+import typings.formatjsIntlUnifiedNumberformat.formatjsIntlUnifiedNumberformatStrings.auto
 import typings.formatjsIntlUnifiedNumberformat.formatjsIntlUnifiedNumberformatStrings.compactLong
 import typings.formatjsIntlUnifiedNumberformat.formatjsIntlUnifiedNumberformatStrings.compactShort
+import typings.formatjsIntlUnifiedNumberformat.formatjsIntlUnifiedNumberformatStrings.exceptZero
+import typings.formatjsIntlUnifiedNumberformat.formatjsIntlUnifiedNumberformatStrings.never
 import typings.formatjsIntlUtils.numberTypesMod.CompactSignPattern
 import typings.formatjsIntlUtils.numberTypesMod.DecimalFormatNum
 import typings.formatjsIntlUtils.numberTypesMod.NotationPattern
@@ -15,9 +19,9 @@ import scala.scalajs.js.annotation._
 trait PercentPatterns extends DecimalPatterns {
   var generateStandardOrScientificPattern: js.Any
   @JSName("scientific")
-  def scientific_MPercentPatterns(): SignPattern
+  def scientific_MPercentPatterns: SignPattern
   @JSName("standard")
-  def standard_MPercentPatterns(): SignPattern
+  def standard_MPercentPatterns: SignPattern
 }
 
 object PercentPatterns {
@@ -50,7 +54,7 @@ object PercentPatterns {
     compactSignPattern: CompactSignPattern = null,
     decimalNum: DecimalFormatNum = null,
     notation: compactShort | compactLong = null,
-    signDisplay: String = null,
+    signDisplay: auto | always | never | exceptZero = null,
     signPattern: SignPattern = null
   ): PercentPatterns = {
     val __obj = js.Dynamic.literal(always = js.Any.fromFunction0(always), auto = js.Any.fromFunction0(auto), compactLong = js.Any.fromFunction0(compactLong), compactShort = js.Any.fromFunction0(compactShort), exceptZero = js.Any.fromFunction0(exceptZero), generateStandardOrScientificPattern = generateStandardOrScientificPattern.asInstanceOf[js.Any], never = js.Any.fromFunction0(never), numberingSystem = numberingSystem.asInstanceOf[js.Any], numbers = numbers.asInstanceOf[js.Any], produceCompactSignPattern = js.Any.fromFunction1(produceCompactSignPattern), scientific = js.Any.fromFunction0(scientific), standard = js.Any.fromFunction0(standard))

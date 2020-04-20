@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait jupyterlabStatusbarProps {
   @scala.inline
-  def ProgressBarProps: IProps.type = typings.jupyterlabStatusbar.progressBarMod.ProgressBar.IProps
+  def ProgressBarProps: IProps.type = IProps
   type ProgressBarProps = IProps
 }
 

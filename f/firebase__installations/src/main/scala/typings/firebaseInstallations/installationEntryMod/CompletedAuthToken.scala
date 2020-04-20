@@ -28,7 +28,6 @@ object CompletedAuthToken {
   @scala.inline
   def apply(creationTime: Double, expiresIn: Double, requestStatus: `2`, token: String): CompletedAuthToken = {
     val __obj = js.Dynamic.literal(creationTime = creationTime.asInstanceOf[js.Any], expiresIn = expiresIn.asInstanceOf[js.Any], requestStatus = requestStatus.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CompletedAuthToken]
   }
 }

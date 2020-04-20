@@ -16,15 +16,15 @@ trait showParams extends js.Object {
   /**
   	 * Array of String instances.
   	 */
-  var buttonNames: js.UndefOr[js.Array[String]] = js.undefined
+  var buttonNames: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
   	 * String to be used as a message for the dialog.
   	 */
-  var message: js.UndefOr[String] = js.undefined
+  var message: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Array of String instances.
   	 */
-  var options: js.UndefOr[js.Array[String]] = js.undefined
+  var options: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
   	 * Positions the arrow of the option dialog relative to the attached view's dimensions.
   	 */
@@ -32,7 +32,7 @@ trait showParams extends js.Object {
   /**
   	 * String to be used as title for the dialog.
   	 */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * View to which to attach the dialog.
   	 */
@@ -43,11 +43,11 @@ object showParams {
   @scala.inline
   def apply(
     animated: js.UndefOr[Boolean] = js.undefined,
-    buttonNames: js.Array[String] = null,
-    message: String = null,
-    options: js.Array[String] = null,
+    buttonNames: js.Array[java.lang.String] = null,
+    message: java.lang.String = null,
+    options: js.Array[java.lang.String] = null,
     rect: Dimension = null,
-    title: String = null,
+    title: java.lang.String = null,
     view: View = null
   ): showParams = {
     val __obj = js.Dynamic.literal()

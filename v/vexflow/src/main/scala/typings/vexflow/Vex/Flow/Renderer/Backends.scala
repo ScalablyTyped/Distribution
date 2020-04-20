@@ -16,14 +16,12 @@ trait Backends extends js.Object
 
 object Backends {
   @scala.inline
-  def CANVAS: `1` = this.cast(1)
+  def CANVAS: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def RAPHAEL: `0` = this.cast(0)
+  def RAPHAEL: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def SVG: `1` = this.cast(1)
+  def SVG: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def VML: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def VML: `2` = 2.asInstanceOf[`2`]
 }
 

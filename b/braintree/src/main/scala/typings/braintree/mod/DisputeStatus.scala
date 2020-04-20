@@ -16,18 +16,16 @@ trait DisputeStatus extends js.Object
 
 object DisputeStatus {
   @scala.inline
-  def Accepted: typings.braintree.braintreeStrings.Accepted = this.cast("Accepted")
+  def Accepted: typings.braintree.braintreeStrings.Accepted = "Accepted".asInstanceOf[typings.braintree.braintreeStrings.Accepted]
   @scala.inline
-  def Disputed: typings.braintree.braintreeStrings.Disputed = this.cast("Disputed")
+  def Disputed: typings.braintree.braintreeStrings.Disputed = "Disputed".asInstanceOf[typings.braintree.braintreeStrings.Disputed]
   @scala.inline
-  def Expired: typings.braintree.braintreeStrings.Expired = this.cast("Expired")
+  def Expired: typings.braintree.braintreeStrings.Expired = "Expired".asInstanceOf[typings.braintree.braintreeStrings.Expired]
   @scala.inline
-  def Lost: typings.braintree.braintreeStrings.Lost = this.cast("Lost")
+  def Lost: typings.braintree.braintreeStrings.Lost = "Lost".asInstanceOf[typings.braintree.braintreeStrings.Lost]
   @scala.inline
-  def Open: typings.braintree.braintreeStrings.Open = this.cast("Open")
+  def Open: typings.braintree.braintreeStrings.Open = "Open".asInstanceOf[typings.braintree.braintreeStrings.Open]
   @scala.inline
-  def Won: typings.braintree.braintreeStrings.Won = this.cast("Won")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Won: typings.braintree.braintreeStrings.Won = "Won".asInstanceOf[typings.braintree.braintreeStrings.Won]
 }
 

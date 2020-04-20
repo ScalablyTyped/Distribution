@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait reactCustomScrollbarsProps {
   @scala.inline
-  def ReactCustomScrollbarsProps: ScrollbarProps.type = typings.reactCustomScrollbars.mod.ScrollbarProps
+  def ReactCustomScrollbarsProps: ScrollbarProps.type = ScrollbarProps
   type ReactCustomScrollbarsProps = ScrollbarProps
   @scala.inline
-  def ScrollbarsProps: ScrollbarProps.type = typings.reactCustomScrollbars.mod.ScrollbarProps
+  def ScrollbarsProps: ScrollbarProps.type = ScrollbarProps
   type ScrollbarsProps = ScrollbarProps
 }
 

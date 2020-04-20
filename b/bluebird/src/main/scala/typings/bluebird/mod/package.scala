@@ -14,7 +14,7 @@ package object mod {
     typings.bluebird.mod.Resolvable[R]
   ]
   type Resolvable[R] = R | js.Thenable[R]
-  type ResolvableProps[T] = js.Object with typings.bluebird.bluebirdStrings.ResolvableProps with T
+  type ResolvableProps[T] = js.Object with typings.bluebird.bluebirdStrings.ResolvableProps with org.scalablytyped.runtime.TopLevel[T]
   /** @deprecated Use PromiseLike<T> directly. */
   type Thenable[T] = js.Thenable[T]
 }

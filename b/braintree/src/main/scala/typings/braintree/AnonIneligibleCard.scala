@@ -14,7 +14,6 @@ object AnonIneligibleCard {
   @scala.inline
   def apply(IneligibleCard: String, InsufficientPoints: String, Success: String): AnonIneligibleCard = {
     val __obj = js.Dynamic.literal(IneligibleCard = IneligibleCard.asInstanceOf[js.Any], InsufficientPoints = InsufficientPoints.asInstanceOf[js.Any], Success = Success.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIneligibleCard]
   }
 }

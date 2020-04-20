@@ -23,19 +23,19 @@ class MemberAccess protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FMemberAccess: IModel = js.native
-  def accessRights(): MemberAccessRights = js.native
+  def accessRights: MemberAccessRights = js.native
   def accessRights(newValue: MemberAccessRights): js.Any = js.native
   def association(): js.Any = js.native
   def association(newValue: IAssociationBase): js.Any = js.native
-  def associationQualifiedName(): String | Null = js.native
+  def associationQualifiedName: String | Null = js.native
   @JSName("association")
-  def association_Union(): IAssociationBase | Null = js.native
+  def association_Union: IAssociationBase | Null = js.native
   def attribute(): js.Any = js.native
   def attribute(newValue: IAttribute): js.Any = js.native
-  def attributeQualifiedName(): String | Null = js.native
+  def attributeQualifiedName: String | Null = js.native
   @JSName("attribute")
-  def attribute_Union(): IAttribute | Null = js.native
-  def containerAsAccessRule(): AccessRule = js.native
+  def attribute_Union: IAttribute | Null = js.native
+  def containerAsAccessRule: AccessRule = js.native
 }
 
 /* static members */

@@ -35,7 +35,6 @@ object PatternFileTypeMap_ {
   @scala.inline
   def apply(add: (String, String) => Unit, getContentType: String => Unit, map: js.Object): PatternFileTypeMap_ = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), getContentType = js.Any.fromFunction1(getContentType), map = map.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PatternFileTypeMap_]
   }
 }

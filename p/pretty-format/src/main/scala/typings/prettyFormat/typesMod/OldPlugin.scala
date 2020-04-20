@@ -16,7 +16,6 @@ object OldPlugin {
     test: /* arg0 */ js.Any => Boolean
   ): OldPlugin = {
     val __obj = js.Dynamic.literal(print = js.Any.fromFunction5(print), test = js.Any.fromFunction1(test))
-  
     __obj.asInstanceOf[OldPlugin]
   }
 }

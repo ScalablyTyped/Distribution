@@ -14,7 +14,6 @@ object Success {
   @scala.inline
   def apply[T](status: `true`, value: T): Success[T] = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Success[T]]
   }
 }

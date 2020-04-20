@@ -24,7 +24,6 @@ object SubscribedRuleGroupSummary {
   @scala.inline
   def apply(MetricName: MetricName, Name: ResourceName, RuleGroupId: ResourceId): SubscribedRuleGroupSummary = {
     val __obj = js.Dynamic.literal(MetricName = MetricName.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], RuleGroupId = RuleGroupId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SubscribedRuleGroupSummary]
   }
 }

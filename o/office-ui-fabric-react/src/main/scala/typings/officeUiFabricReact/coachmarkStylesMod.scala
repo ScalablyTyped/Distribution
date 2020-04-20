@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation._
 object coachmarkStylesMod extends js.Object {
   val COACHMARK_HEIGHT: `32` = js.native
   val COACHMARK_WIDTH: `32` = js.native
-  val rotateOne: String = js.native
-  val scaleOne: String = js.native
-  val translateOne: String = js.native
   def getStyles(props: ICoachmarkStyleProps): ICoachmarkStyles = js.native
+  def rotateOne(): String = js.native
+  def scaleOne(): String = js.native
+  def translateOne(): String = js.native
 }
 

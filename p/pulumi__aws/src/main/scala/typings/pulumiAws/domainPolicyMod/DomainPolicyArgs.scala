@@ -22,7 +22,6 @@ object DomainPolicyArgs {
   @scala.inline
   def apply(accessPolicies: Input[String | PolicyDocument], domainName: Input[String]): DomainPolicyArgs = {
     val __obj = js.Dynamic.literal(accessPolicies = accessPolicies.asInstanceOf[js.Any], domainName = domainName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DomainPolicyArgs]
   }
 }

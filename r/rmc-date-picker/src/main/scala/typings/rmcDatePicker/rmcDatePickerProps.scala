@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 
 trait rmcDatePickerProps {
   @scala.inline
-  def DatePickerProps: IDatePickerProps.type = typings.rmcDatePicker.idatepickerpropsMod.IDatePickerProps
+  def DatePickerProps: IDatePickerProps.type = IDatePickerProps
   type DatePickerProps = IDatePickerProps
   @scala.inline
-  def PopupProps: IPopupDatePickerProps.type = typings.rmcDatePicker.popupMod.IPopupDatePickerProps
+  def PopupProps: IPopupDatePickerProps.type = IPopupDatePickerProps
   type PopupProps = IPopupDatePickerProps
   @scala.inline
-  def RmcDatePickerProps: IDatePickerProps.type = typings.rmcDatePicker.idatepickerpropsMod.IDatePickerProps
+  def RmcDatePickerProps: IDatePickerProps.type = IDatePickerProps
   type RmcDatePickerProps = IDatePickerProps
 }
 

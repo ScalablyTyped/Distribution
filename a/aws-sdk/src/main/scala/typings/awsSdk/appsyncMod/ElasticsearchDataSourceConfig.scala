@@ -20,7 +20,6 @@ object ElasticsearchDataSourceConfig {
   @scala.inline
   def apply(awsRegion: String, endpoint: String): ElasticsearchDataSourceConfig = {
     val __obj = js.Dynamic.literal(awsRegion = awsRegion.asInstanceOf[js.Any], endpoint = endpoint.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ElasticsearchDataSourceConfig]
   }
 }

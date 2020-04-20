@@ -16,7 +16,6 @@ object DescribeProvisioningTemplateRequest {
   @scala.inline
   def apply(templateName: TemplateName): DescribeProvisioningTemplateRequest = {
     val __obj = js.Dynamic.literal(templateName = templateName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeProvisioningTemplateRequest]
   }
 }

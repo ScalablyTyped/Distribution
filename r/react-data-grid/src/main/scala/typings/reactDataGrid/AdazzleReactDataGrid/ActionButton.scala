@@ -13,7 +13,6 @@ object ActionButton {
   @scala.inline
   def apply(callback: () => Unit, icon: String): ActionButton = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction0(callback), icon = icon.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ActionButton]
   }
 }

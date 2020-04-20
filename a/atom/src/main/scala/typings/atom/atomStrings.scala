@@ -8,13 +8,49 @@ import scala.scalajs.js.annotation._
 
 object atomStrings {
   @js.native
+  sealed trait `12px` extends js.Object
+  
+  @js.native
+  sealed trait `14px` extends js.Object
+  
+  @js.native
+  sealed trait `16px` extends js.Object
+  
+  @js.native
+  sealed trait `18px` extends js.Object
+  
+  @js.native
+  sealed trait `21px` extends js.Object
+  
+  @js.native
+  sealed trait `24px` extends js.Object
+  
+  @js.native
+  sealed trait `28px` extends js.Object
+  
+  @js.native
+  sealed trait `32px` extends js.Object
+  
+  @js.native
+  sealed trait Bottom extends js.Object
+  
+  @js.native
   sealed trait Cursor extends js.Object
+  
+  @js.native
+  sealed trait Left extends js.Object
+  
+  @js.native
+  sealed trait Right extends js.Object
   
   @js.native
   sealed trait Subsequence extends js.Object
   
   @js.native
   sealed trait Symbol extends js.Object
+  
+  @js.native
+  sealed trait Top extends js.Object
   
   @js.native
   sealed trait Word extends js.Object
@@ -128,7 +164,7 @@ object atomStrings {
   sealed trait block extends js.Object
   
   @js.native
-  sealed trait bottom extends TooltipPlacement
+  sealed trait bottom_ extends TooltipPlacement
   
   @js.native
   sealed trait center extends js.Object
@@ -242,6 +278,9 @@ object atomStrings {
   sealed trait dev extends js.Object
   
   @js.native
+  sealed trait devicon extends js.Object
+  
+  @js.native
   sealed trait down extends js.Object
   
   @js.native
@@ -350,7 +389,16 @@ object atomStrings {
   sealed trait experimental extends js.Object
   
   @js.native
+  sealed trait fa extends js.Object
+  
+  @js.native
+  sealed trait fab extends js.Object
+  
+  @js.native
   sealed trait fatal extends js.Object
+  
+  @js.native
+  sealed trait fi extends js.Object
   
   @js.native
   sealed trait file extends js.Object
@@ -386,6 +434,9 @@ object atomStrings {
   sealed trait hover extends js.Object
   
   @js.native
+  sealed trait icomoon extends js.Object
+  
+  @js.native
   sealed trait in extends js.Object
   
   @js.native
@@ -393,6 +444,9 @@ object atomStrings {
   
   @js.native
   sealed trait inside extends js.Object
+  
+  @js.native
+  sealed trait ion extends js.Object
   
   @js.native
   sealed trait iso88591 extends FileEncoding
@@ -443,7 +497,7 @@ object atomStrings {
   sealed trait koi8u extends FileEncoding
   
   @js.native
-  sealed trait left extends TooltipPlacement
+  sealed trait left_ extends TooltipPlacement
   
   @js.native
   sealed trait limited extends js.Object
@@ -477,6 +531,9 @@ object atomStrings {
   
   @js.native
   sealed trait manual extends js.Object
+  
+  @js.native
+  sealed trait mdi extends js.Object
   
   @js.native
   sealed trait modified extends js.Object
@@ -518,7 +575,7 @@ object atomStrings {
   sealed trait renamed extends js.Object
   
   @js.native
-  sealed trait right extends TooltipPlacement
+  sealed trait right_ extends TooltipPlacement
   
   @js.native
   sealed trait separator extends js.Object
@@ -575,7 +632,22 @@ object atomStrings {
   sealed trait textOrSnippet extends js.Object
   
   @js.native
-  sealed trait top extends TooltipPlacement
+  sealed trait `tool-barDotfullWidth` extends js.Object
+  
+  @js.native
+  sealed trait `tool-barDoticonSize` extends js.Object
+  
+  @js.native
+  sealed trait `tool-barDotposition` extends js.Object
+  
+  @js.native
+  sealed trait `tool-barDotuseTouchBar` extends js.Object
+  
+  @js.native
+  sealed trait `tool-barDotvisible` extends js.Object
+  
+  @js.native
+  sealed trait top_ extends TooltipPlacement
   
   @js.native
   sealed trait touch extends js.Object
@@ -629,11 +701,35 @@ object atomStrings {
   sealed trait yes extends js.Object
   
   @scala.inline
+  def `12px`: `12px` = "12px".asInstanceOf[`12px`]
+  @scala.inline
+  def `14px`: `14px` = "14px".asInstanceOf[`14px`]
+  @scala.inline
+  def `16px`: `16px` = "16px".asInstanceOf[`16px`]
+  @scala.inline
+  def `18px`: `18px` = "18px".asInstanceOf[`18px`]
+  @scala.inline
+  def `21px`: `21px` = "21px".asInstanceOf[`21px`]
+  @scala.inline
+  def `24px`: `24px` = "24px".asInstanceOf[`24px`]
+  @scala.inline
+  def `28px`: `28px` = "28px".asInstanceOf[`28px`]
+  @scala.inline
+  def `32px`: `32px` = "32px".asInstanceOf[`32px`]
+  @scala.inline
+  def Bottom: Bottom = "Bottom".asInstanceOf[Bottom]
+  @scala.inline
   def Cursor: Cursor = "Cursor".asInstanceOf[Cursor]
+  @scala.inline
+  def Left: Left = "Left".asInstanceOf[Left]
+  @scala.inline
+  def Right: Right = "Right".asInstanceOf[Right]
   @scala.inline
   def Subsequence: Subsequence = "Subsequence".asInstanceOf[Subsequence]
   @scala.inline
   def Symbol: Symbol = "Symbol".asInstanceOf[Symbol]
+  @scala.inline
+  def Top: Top = "Top".asInstanceOf[Top]
   @scala.inline
   def Word: Word = "Word".asInstanceOf[Word]
   @scala.inline
@@ -647,13 +743,13 @@ object atomStrings {
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
-  def `auto bottom`: `auto bottom` = "auto bottom".asInstanceOf[`auto bottom`]
+  def `auto bottom`: `auto bottom` = ("auto bottom").asInstanceOf[`auto bottom`]
   @scala.inline
-  def `auto left`: `auto left` = "auto left".asInstanceOf[`auto left`]
+  def `auto left`: `auto left` = ("auto left").asInstanceOf[`auto left`]
   @scala.inline
-  def `auto right`: `auto right` = "auto right".asInstanceOf[`auto right`]
+  def `auto right`: `auto right` = ("auto right").asInstanceOf[`auto right`]
   @scala.inline
-  def `auto top`: `auto top` = "auto top".asInstanceOf[`auto top`]
+  def `auto top`: `auto top` = ("auto top").asInstanceOf[`auto top`]
   @scala.inline
   def `autocomplete-plusDotautoActivationDelay`: `autocomplete-plusDotautoActivationDelay` = "autocomplete-plus.autoActivationDelay".asInstanceOf[`autocomplete-plusDotautoActivationDelay`]
   @scala.inline
@@ -709,7 +805,7 @@ object atomStrings {
   @scala.inline
   def block: block = "block".asInstanceOf[block]
   @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  def bottom_ : bottom_ = "bottom".asInstanceOf[bottom_]
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   @scala.inline
@@ -785,6 +881,8 @@ object atomStrings {
   @scala.inline
   def dev: dev = "dev".asInstanceOf[dev]
   @scala.inline
+  def devicon: devicon = "devicon".asInstanceOf[devicon]
+  @scala.inline
   def down: down = "down".asInstanceOf[down]
   @scala.inline
   def editorDotatomicSoftTabs: editorDotatomicSoftTabs = "editor.atomicSoftTabs".asInstanceOf[editorDotatomicSoftTabs]
@@ -857,7 +955,13 @@ object atomStrings {
   @scala.inline
   def experimental: experimental = "experimental".asInstanceOf[experimental]
   @scala.inline
+  def fa: fa = "fa".asInstanceOf[fa]
+  @scala.inline
+  def fab: fab = "fab".asInstanceOf[fab]
+  @scala.inline
   def fatal: fatal = "fatal".asInstanceOf[fatal]
+  @scala.inline
+  def fi: fi = "fi".asInstanceOf[fi]
   @scala.inline
   def file: file = "file".asInstanceOf[file]
   @scala.inline
@@ -881,11 +985,15 @@ object atomStrings {
   @scala.inline
   def hover: hover = "hover".asInstanceOf[hover]
   @scala.inline
+  def icomoon: icomoon = "icomoon".asInstanceOf[icomoon]
+  @scala.inline
   def in: in = "in".asInstanceOf[in]
   @scala.inline
   def info: info = "info".asInstanceOf[info]
   @scala.inline
   def inside: inside = "inside".asInstanceOf[inside]
+  @scala.inline
+  def ion: ion = "ion".asInstanceOf[ion]
   @scala.inline
   def iso88591: iso88591 = "iso88591".asInstanceOf[iso88591]
   @scala.inline
@@ -919,7 +1027,7 @@ object atomStrings {
   @scala.inline
   def koi8u: koi8u = "koi8u".asInstanceOf[koi8u]
   @scala.inline
-  def left: left = "left".asInstanceOf[left]
+  def left_ : left_ = "left".asInstanceOf[left_]
   @scala.inline
   def limited: limited = "limited".asInstanceOf[limited]
   @scala.inline
@@ -942,6 +1050,8 @@ object atomStrings {
   def macroman: macroman = "macroman".asInstanceOf[macroman]
   @scala.inline
   def manual: manual = "manual".asInstanceOf[manual]
+  @scala.inline
+  def mdi: mdi = "mdi".asInstanceOf[mdi]
   @scala.inline
   def modified: modified = "modified".asInstanceOf[modified]
   @scala.inline
@@ -969,7 +1079,7 @@ object atomStrings {
   @scala.inline
   def renamed: renamed = "renamed".asInstanceOf[renamed]
   @scala.inline
-  def right: right = "right".asInstanceOf[right]
+  def right_ : right_ = "right".asInstanceOf[right_]
   @scala.inline
   def separator: separator = "separator".asInstanceOf[separator]
   @scala.inline
@@ -997,9 +1107,9 @@ object atomStrings {
   @scala.inline
   def tab: tab = "tab".asInstanceOf[tab]
   @scala.inline
-  def `tab alwaysComma enter when suggestion explicitly selected`: `tab alwaysComma enter when suggestion explicitly selected` = "tab always, enter when suggestion explicitly selected".asInstanceOf[`tab alwaysComma enter when suggestion explicitly selected`]
+  def `tab alwaysComma enter when suggestion explicitly selected`: `tab alwaysComma enter when suggestion explicitly selected` = ("tab always, enter when suggestion explicitly selected").asInstanceOf[`tab alwaysComma enter when suggestion explicitly selected`]
   @scala.inline
-  def `tab and enter`: `tab and enter` = "tab and enter".asInstanceOf[`tab and enter`]
+  def `tab and enter`: `tab and enter` = ("tab and enter").asInstanceOf[`tab and enter`]
   @scala.inline
   def tail: tail = "tail".asInstanceOf[tail]
   @scala.inline
@@ -1007,7 +1117,17 @@ object atomStrings {
   @scala.inline
   def textOrSnippet: textOrSnippet = "textOrSnippet".asInstanceOf[textOrSnippet]
   @scala.inline
-  def top: top = "top".asInstanceOf[top]
+  def `tool-barDotfullWidth`: `tool-barDotfullWidth` = "tool-bar.fullWidth".asInstanceOf[`tool-barDotfullWidth`]
+  @scala.inline
+  def `tool-barDoticonSize`: `tool-barDoticonSize` = "tool-bar.iconSize".asInstanceOf[`tool-barDoticonSize`]
+  @scala.inline
+  def `tool-barDotposition`: `tool-barDotposition` = "tool-bar.position".asInstanceOf[`tool-barDotposition`]
+  @scala.inline
+  def `tool-barDotuseTouchBar`: `tool-barDotuseTouchBar` = "tool-bar.useTouchBar".asInstanceOf[`tool-barDotuseTouchBar`]
+  @scala.inline
+  def `tool-barDotvisible`: `tool-barDotvisible` = "tool-bar.visible".asInstanceOf[`tool-barDotvisible`]
+  @scala.inline
+  def top_ : top_ = "top".asInstanceOf[top_]
   @scala.inline
   def touch: touch = "touch".asInstanceOf[touch]
   @scala.inline

@@ -20,7 +20,6 @@ object DeleteConfigurationProfileRequest {
   @scala.inline
   def apply(ApplicationId: Id, ConfigurationProfileId: Id): DeleteConfigurationProfileRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], ConfigurationProfileId = ConfigurationProfileId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteConfigurationProfileRequest]
   }
 }

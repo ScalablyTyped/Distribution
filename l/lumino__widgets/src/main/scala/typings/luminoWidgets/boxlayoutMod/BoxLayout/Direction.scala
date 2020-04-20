@@ -17,14 +17,12 @@ trait Direction extends js.Object
 
 object Direction {
   @scala.inline
-  def `bottom-to-top`: typings.luminoWidgets.luminoWidgetsStrings.`bottom-to-top` = this.cast("bottom-to-top")
+  def `bottom-to-top`: typings.luminoWidgets.luminoWidgetsStrings.`bottom-to-top` = "bottom-to-top".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`bottom-to-top`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `left-to-right`: typings.luminoWidgets.luminoWidgetsStrings.`left-to-right` = "left-to-right".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`left-to-right`]
   @scala.inline
-  def `left-to-right`: typings.luminoWidgets.luminoWidgetsStrings.`left-to-right` = this.cast("left-to-right")
+  def `right-to-left`: typings.luminoWidgets.luminoWidgetsStrings.`right-to-left` = "right-to-left".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`right-to-left`]
   @scala.inline
-  def `right-to-left`: typings.luminoWidgets.luminoWidgetsStrings.`right-to-left` = this.cast("right-to-left")
-  @scala.inline
-  def `top-to-bottom`: typings.luminoWidgets.luminoWidgetsStrings.`top-to-bottom` = this.cast("top-to-bottom")
+  def `top-to-bottom`: typings.luminoWidgets.luminoWidgetsStrings.`top-to-bottom` = "top-to-bottom".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`top-to-bottom`]
 }
 

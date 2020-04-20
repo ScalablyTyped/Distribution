@@ -24,11 +24,11 @@ class ConstantValue protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FConstantValue: IModel = js.native
-  def constant(): IConstant = js.native
+  def constant: IConstant = js.native
   def constant(newValue: IConstant): js.Any = js.native
-  def constantQualifiedName(): String = js.native
-  def containerAsConfiguration(): Configuration = js.native
-  def value(): String = js.native
+  def constantQualifiedName: String = js.native
+  def containerAsConfiguration: Configuration = js.native
+  def value: String = js.native
   def value(newValue: String): js.Any = js.native
 }
 

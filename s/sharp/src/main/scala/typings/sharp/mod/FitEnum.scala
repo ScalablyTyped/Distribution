@@ -21,7 +21,6 @@ object FitEnum {
   @scala.inline
   def apply(contain: contain, cover: cover, fill: fill, inside: inside, outside: outside): FitEnum = {
     val __obj = js.Dynamic.literal(contain = contain.asInstanceOf[js.Any], cover = cover.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], inside = inside.asInstanceOf[js.Any], outside = outside.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FitEnum]
   }
 }

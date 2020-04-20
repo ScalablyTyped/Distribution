@@ -14,7 +14,6 @@ object INumberFormatter2 {
   @scala.inline
   def apply(formatDouble: Double => String, formatInt: Double => String, formatUInt: Double => String): INumberFormatter2 = {
     val __obj = js.Dynamic.literal(formatDouble = js.Any.fromFunction1(formatDouble), formatInt = js.Any.fromFunction1(formatInt), formatUInt = js.Any.fromFunction1(formatUInt))
-  
     __obj.asInstanceOf[INumberFormatter2]
   }
 }

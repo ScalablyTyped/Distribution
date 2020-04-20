@@ -12,10 +12,8 @@ trait WorkerType extends js.Object
 
 object WorkerType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def classic: typings.std.stdStrings.classic = "classic".asInstanceOf[typings.std.stdStrings.classic]
   @scala.inline
-  def classic: typings.std.stdStrings.classic = this.cast("classic")
-  @scala.inline
-  def module: typings.std.stdStrings.module = this.cast("module")
+  def module: typings.std.stdStrings.module = "module".asInstanceOf[typings.std.stdStrings.module]
 }
 

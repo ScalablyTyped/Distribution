@@ -12,7 +12,6 @@ object String {
   @scala.inline
   def apply(toTitleCase: () => java.lang.String): String = {
     val __obj = js.Dynamic.literal(toTitleCase = js.Any.fromFunction0(toTitleCase))
-  
     __obj.asInstanceOf[String]
   }
 }

@@ -20,7 +20,6 @@ object AnonFeatures {
     permissions: js.Array[_]
   ): AnonFeatures = {
     val __obj = js.Dynamic.literal(excluded_permissions = excluded_permissions.asInstanceOf[js.Any], features = features.asInstanceOf[js.Any], interactions = interactions.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFeatures]
   }
 }

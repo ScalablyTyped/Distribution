@@ -20,7 +20,6 @@ object DetachLoadBalancersType {
   @scala.inline
   def apply(AutoScalingGroupName: ResourceName, LoadBalancerNames: LoadBalancerNames): DetachLoadBalancersType = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any], LoadBalancerNames = LoadBalancerNames.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DetachLoadBalancersType]
   }
 }

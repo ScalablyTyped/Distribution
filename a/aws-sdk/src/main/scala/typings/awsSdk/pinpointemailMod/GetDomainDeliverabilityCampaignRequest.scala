@@ -16,7 +16,6 @@ object GetDomainDeliverabilityCampaignRequest {
   @scala.inline
   def apply(CampaignId: CampaignId): GetDomainDeliverabilityCampaignRequest = {
     val __obj = js.Dynamic.literal(CampaignId = CampaignId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDomainDeliverabilityCampaignRequest]
   }
 }

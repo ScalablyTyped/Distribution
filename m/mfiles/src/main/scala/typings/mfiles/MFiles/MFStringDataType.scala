@@ -14,10 +14,8 @@ trait MFStringDataType extends js.Object
 
 object MFStringDataType {
   @scala.inline
-  def JSON: `0` = this.cast(0)
+  def JSON: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def XML: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def XML: `1` = 1.asInstanceOf[`1`]
 }
 

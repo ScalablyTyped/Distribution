@@ -15,7 +15,6 @@ object PaginationProps {
   @scala.inline
   def apply(current: Double, display: Double, onChange: Double => Unit, total: Double): PaginationProps = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), total = total.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PaginationProps]
   }
 }

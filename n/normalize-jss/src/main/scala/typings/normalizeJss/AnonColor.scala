@@ -24,7 +24,6 @@ object AnonColor {
     whiteSpace: String
   ): AnonColor = {
     val __obj = js.Dynamic.literal(boxSizing = boxSizing.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], maxWidth = maxWidth.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any], whiteSpace = whiteSpace.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonColor]
   }
 }

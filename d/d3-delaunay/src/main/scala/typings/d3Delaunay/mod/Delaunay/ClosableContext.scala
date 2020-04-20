@@ -18,7 +18,6 @@ object ClosableContext {
   @scala.inline
   def apply(closePath: () => Unit): ClosableContext = {
     val __obj = js.Dynamic.literal(closePath = js.Any.fromFunction0(closePath))
-  
     __obj.asInstanceOf[ClosableContext]
   }
 }

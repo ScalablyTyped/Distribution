@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 object reactReduxI18nComponents extends reactReduxI18nProps {
   @scala.inline
-  def Localize: ComponentType[LocalizeProps] = js.constructorOf[typings.reactReduxI18n.mod.Localize].asInstanceOf[typings.react.mod.ComponentType[LocalizeProps]]
+  def Localize: ComponentType[LocalizeProps] = js.constructorOf[typings.reactReduxI18n.mod.Localize].asInstanceOf[ComponentType[LocalizeProps]]
   @scala.inline
-  def Translate: ComponentType[TranslateProps] = js.constructorOf[typings.reactReduxI18n.mod.Translate].asInstanceOf[typings.react.mod.ComponentType[TranslateProps]]
+  def Translate: ComponentType[TranslateProps] = js.constructorOf[typings.reactReduxI18n.mod.Translate].asInstanceOf[ComponentType[TranslateProps]]
 }
 

@@ -8,7 +8,6 @@ import typings.blueprintjsDatetime.blueprintjsDatetimeBooleans.`false`
 import typings.blueprintjsDatetime.datePickerCoreMod.IDatePickerBaseProps
 import typings.blueprintjsDatetime.shortcutsMod.IDatePickerShortcut
 import typings.react.mod._Global_.JSX.Element
-import typings.reactDayPicker.propsMod.DayPickerProps
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -44,7 +43,9 @@ trait IDateInputProps
     * `canChangeMonth`, `captionElement`, `fromMonth` (use `minDate`), `month` (use
     * `initialMonth`), `toMonth` (use `maxDate`).
     */
-  var dayPickerProps: js.UndefOr[DayPickerProps] = js.native
+  var dayPickerProps: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DayPickerProps */ js.Any
+  ] = js.native
   /**
     * The default date to be used in the component when uncontrolled.
     */

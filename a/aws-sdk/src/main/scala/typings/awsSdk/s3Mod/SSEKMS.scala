@@ -16,7 +16,6 @@ object SSEKMS {
   @scala.inline
   def apply(KeyId: SSEKMSKeyId): SSEKMS = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SSEKMS]
   }
 }

@@ -60,7 +60,6 @@ object mouse {
     wheel: (js.Any, js.Any) => js.Any
   ): mouse = {
     val __obj = js.Dynamic.literal(enter = enter.asInstanceOf[js.Any], isLeft = js.Any.fromFunction0(isLeft), isMiddle = js.Any.fromFunction0(isMiddle), isRight = js.Any.fromFunction0(isRight), leave = leave.asInstanceOf[js.Any], wheel = js.Any.fromFunction2(wheel))
-  
     __obj.asInstanceOf[mouse]
   }
 }

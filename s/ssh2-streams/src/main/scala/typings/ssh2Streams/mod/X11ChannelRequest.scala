@@ -27,7 +27,6 @@ object X11ChannelRequest {
     wantReply: Boolean
   ): X11ChannelRequest = {
     val __obj = js.Dynamic.literal(cookie = cookie.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], screen = screen.asInstanceOf[js.Any], single = single.asInstanceOf[js.Any], wantReply = wantReply.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[X11ChannelRequest]
   }
 }

@@ -27,7 +27,6 @@ object AfterPackContext {
     targets: js.Array[Target]
   ): AfterPackContext = {
     val __obj = js.Dynamic.literal(appOutDir = appOutDir.asInstanceOf[js.Any], arch = arch.asInstanceOf[js.Any], electronPlatformName = electronPlatformName.asInstanceOf[js.Any], outDir = outDir.asInstanceOf[js.Any], packager = packager.asInstanceOf[js.Any], targets = targets.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AfterPackContext]
   }
 }

@@ -16,12 +16,10 @@ trait PpAdvanceMode extends js.Object
 
 object PpAdvanceMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ppAdvanceModeMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def ppAdvanceModeMixed: `-2` = this.cast(-2)
+  def ppAdvanceOnClick: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def ppAdvanceOnClick: `1` = this.cast(1)
-  @scala.inline
-  def ppAdvanceOnTime: `2` = this.cast(2)
+  def ppAdvanceOnTime: `2` = 2.asInstanceOf[`2`]
 }
 

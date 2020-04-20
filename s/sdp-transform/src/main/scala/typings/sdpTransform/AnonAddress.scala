@@ -22,7 +22,6 @@ object AnonAddress {
     username: String
   ): AnonAddress = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], netType = netType.asInstanceOf[js.Any], sessionId = sessionId.asInstanceOf[js.Any], sessionVersion = sessionVersion.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAddress]
   }
 }

@@ -27,7 +27,6 @@ object HydratedNamespaceMetadata {
     summary: String
   ): HydratedNamespaceMetadata[C, N, M, I, O] = {
     val __obj = js.Dynamic.literal(aliases = aliases.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], footnotes = footnotes.asInstanceOf[js.Any], groups = groups.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HydratedNamespaceMetadata[C, N, M, I, O]]
   }
 }

@@ -23,7 +23,6 @@ object BatchGetAggregateResourceConfigRequest {
     ResourceIdentifiers: ResourceIdentifiersList
   ): BatchGetAggregateResourceConfigRequest = {
     val __obj = js.Dynamic.literal(ConfigurationAggregatorName = ConfigurationAggregatorName.asInstanceOf[js.Any], ResourceIdentifiers = ResourceIdentifiers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchGetAggregateResourceConfigRequest]
   }
 }

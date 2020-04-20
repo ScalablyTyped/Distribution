@@ -20,7 +20,6 @@ object RegexPatternSetSummary {
   @scala.inline
   def apply(Name: ResourceName, RegexPatternSetId: ResourceId): RegexPatternSetSummary = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], RegexPatternSetId = RegexPatternSetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RegexPatternSetSummary]
   }
 }

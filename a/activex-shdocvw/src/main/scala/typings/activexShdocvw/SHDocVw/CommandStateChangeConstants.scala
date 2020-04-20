@@ -18,12 +18,10 @@ trait CommandStateChangeConstants extends js.Object
 
 object CommandStateChangeConstants {
   @scala.inline
-  def CSC_NAVIGATEBACK: `2` = this.cast(2)
+  def CSC_NAVIGATEBACK: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def CSC_NAVIGATEFORWARD: `1` = this.cast(1)
+  def CSC_NAVIGATEFORWARD: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def CSC_UPDATECOMMANDS: `-1` = this.cast(-1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def CSC_UPDATECOMMANDS: `-1` = -1.asInstanceOf[`-1`]
 }
 

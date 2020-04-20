@@ -30,7 +30,6 @@ object Scene {
     getBoundingBoxRenderer: () => BoundingBoxRenderer
   ): Scene = {
     val __obj = js.Dynamic.literal(_boundingBoxRenderer = _boundingBoxRenderer.asInstanceOf[js.Any], _forceShowBoundingBoxes = _forceShowBoundingBoxes.asInstanceOf[js.Any], forceShowBoundingBoxes = forceShowBoundingBoxes.asInstanceOf[js.Any], getBoundingBoxRenderer = js.Any.fromFunction0(getBoundingBoxRenderer))
-  
     __obj.asInstanceOf[Scene]
   }
 }

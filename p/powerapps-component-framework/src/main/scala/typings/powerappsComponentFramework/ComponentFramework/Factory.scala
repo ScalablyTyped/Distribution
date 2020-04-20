@@ -23,7 +23,6 @@ object Factory {
   @scala.inline
   def apply(getPopupService: () => PopupService, requestRender: () => Unit): Factory = {
     val __obj = js.Dynamic.literal(getPopupService = js.Any.fromFunction0(getPopupService), requestRender = js.Any.fromFunction0(requestRender))
-  
     __obj.asInstanceOf[Factory]
   }
 }

@@ -14,14 +14,12 @@ trait booleanFormat extends js.Object
 
 object booleanFormat {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `empty-true`: typings.searchParams.searchParamsStrings.`empty-true` = "empty-true".asInstanceOf[typings.searchParams.searchParamsStrings.`empty-true`]
   @scala.inline
-  def `empty-true`: typings.searchParams.searchParamsStrings.`empty-true` = this.cast("empty-true")
+  def none: typings.searchParams.searchParamsStrings.none = "none".asInstanceOf[typings.searchParams.searchParamsStrings.none]
   @scala.inline
-  def none: typings.searchParams.searchParamsStrings.none = this.cast("none")
+  def string: typings.searchParams.searchParamsStrings.string = "string".asInstanceOf[typings.searchParams.searchParamsStrings.string]
   @scala.inline
-  def string: typings.searchParams.searchParamsStrings.string = this.cast("string")
-  @scala.inline
-  def unicode: typings.searchParams.searchParamsStrings.unicode = this.cast("unicode")
+  def unicode: typings.searchParams.searchParamsStrings.unicode = "unicode".asInstanceOf[typings.searchParams.searchParamsStrings.unicode]
 }
 

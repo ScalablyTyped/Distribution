@@ -17,7 +17,6 @@ object FormatterContext {
   @scala.inline
   def apply(currency: AnonRates, enum: Enums, extension: String, lang: String, stopPropagation: Boolean): FormatterContext = {
     val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], enum = enum.asInstanceOf[js.Any], extension = extension.asInstanceOf[js.Any], lang = lang.asInstanceOf[js.Any], stopPropagation = stopPropagation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FormatterContext]
   }
 }

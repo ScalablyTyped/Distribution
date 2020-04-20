@@ -13,7 +13,6 @@ object AnonCenterValue {
   @scala.inline
   def apply(centerValue: AnonCenterX, zoomAmount: Double): AnonCenterValue = {
     val __obj = js.Dynamic.literal(centerValue = centerValue.asInstanceOf[js.Any], zoomAmount = zoomAmount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCenterValue]
   }
 }

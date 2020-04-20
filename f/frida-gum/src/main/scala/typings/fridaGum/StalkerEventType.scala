@@ -15,16 +15,14 @@ trait StalkerEventType extends js.Object
 
 object StalkerEventType {
   @scala.inline
-  def block: typings.fridaGum.fridaGumStrings.block = this.cast("block")
+  def block: typings.fridaGum.fridaGumStrings.block = "block".asInstanceOf[typings.fridaGum.fridaGumStrings.block]
   @scala.inline
-  def call: typings.fridaGum.fridaGumStrings.call = this.cast("call")
+  def call: typings.fridaGum.fridaGumStrings.call = "call".asInstanceOf[typings.fridaGum.fridaGumStrings.call]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def compile: typings.fridaGum.fridaGumStrings.compile = "compile".asInstanceOf[typings.fridaGum.fridaGumStrings.compile]
   @scala.inline
-  def compile: typings.fridaGum.fridaGumStrings.compile = this.cast("compile")
+  def exec: typings.fridaGum.fridaGumStrings.exec = "exec".asInstanceOf[typings.fridaGum.fridaGumStrings.exec]
   @scala.inline
-  def exec: typings.fridaGum.fridaGumStrings.exec = this.cast("exec")
-  @scala.inline
-  def ret: typings.fridaGum.fridaGumStrings.ret = this.cast("ret")
+  def ret: typings.fridaGum.fridaGumStrings.ret = "ret".asInstanceOf[typings.fridaGum.fridaGumStrings.ret]
 }
 

@@ -24,7 +24,6 @@ object UpdateResourceDataSyncRequest {
   @scala.inline
   def apply(SyncName: ResourceDataSyncName, SyncSource: ResourceDataSyncSource, SyncType: ResourceDataSyncType): UpdateResourceDataSyncRequest = {
     val __obj = js.Dynamic.literal(SyncName = SyncName.asInstanceOf[js.Any], SyncSource = SyncSource.asInstanceOf[js.Any], SyncType = SyncType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateResourceDataSyncRequest]
   }
 }

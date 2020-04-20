@@ -19,7 +19,7 @@ object countdownStickerMod extends js.Object {
     var startBackgroundColor: js.UndefOr[String] = js.native
     var text: String = js.native
     var textColor: js.UndefOr[String] = js.native
-    def endTs(): DateTime | Double = js.native
+    def endTs: DateTime | Double = js.native
     def endTs(value: Double): js.Any = js.native
     def endTs(value: DateTime): js.Any = js.native
   }

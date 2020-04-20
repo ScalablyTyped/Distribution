@@ -14,7 +14,6 @@ object WrapperSettings {
   @scala.inline
   def apply(options: OptionsParameter, parameters: StringDictionary[js.Any]): WrapperSettings = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WrapperSettings]
   }
 }

@@ -15,7 +15,6 @@ object PersonResponse {
   @scala.inline
   def apply(httpStatusCode: Double, person: Person, requestedResourceName: String): PersonResponse = {
     val __obj = js.Dynamic.literal(httpStatusCode = httpStatusCode.asInstanceOf[js.Any], person = person.asInstanceOf[js.Any], requestedResourceName = requestedResourceName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PersonResponse]
   }
 }

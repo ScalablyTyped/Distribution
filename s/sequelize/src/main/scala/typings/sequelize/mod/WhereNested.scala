@@ -18,7 +18,6 @@ object WhereNested {
   @scala.inline
   def apply($and: js.Array[AnyWhereOptions | WhereLogic], $or: js.Array[AnyWhereOptions | WhereLogic]): WhereNested = {
     val __obj = js.Dynamic.literal($and = $and.asInstanceOf[js.Any], $or = $or.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WhereNested]
   }
 }

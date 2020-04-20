@@ -16,7 +16,6 @@ object EntityCollection {
   @scala.inline
   def apply(entities: js.Array[Entity], pagination: Pagination): EntityCollection = {
     val __obj = js.Dynamic.literal(entities = entities.asInstanceOf[js.Any], pagination = pagination.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EntityCollection]
   }
 }

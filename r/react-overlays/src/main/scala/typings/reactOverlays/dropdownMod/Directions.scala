@@ -14,14 +14,12 @@ trait Directions extends js.Object
 
 object Directions {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def down: typings.reactOverlays.reactOverlaysStrings.down = "down".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.down]
   @scala.inline
-  def down: typings.reactOverlays.reactOverlaysStrings.down = this.cast("down")
+  def left: typings.reactOverlays.reactOverlaysStrings.left = "left".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.left]
   @scala.inline
-  def left: typings.reactOverlays.reactOverlaysStrings.left = this.cast("left")
+  def right: typings.reactOverlays.reactOverlaysStrings.right = "right".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.right]
   @scala.inline
-  def right: typings.reactOverlays.reactOverlaysStrings.right = this.cast("right")
-  @scala.inline
-  def up: typings.reactOverlays.reactOverlaysStrings.up = this.cast("up")
+  def up: typings.reactOverlays.reactOverlaysStrings.up = "up".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.up]
 }
 

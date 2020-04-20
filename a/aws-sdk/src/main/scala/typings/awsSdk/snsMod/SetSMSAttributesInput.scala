@@ -16,7 +16,6 @@ object SetSMSAttributesInput {
   @scala.inline
   def apply(attributes: MapStringToString): SetSMSAttributesInput = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetSMSAttributesInput]
   }
 }

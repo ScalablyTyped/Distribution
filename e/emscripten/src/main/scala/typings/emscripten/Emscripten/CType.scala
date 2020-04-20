@@ -23,32 +23,30 @@ trait CType extends js.Object
 
 object CType {
   @scala.inline
-  def Asterisk: typings.emscripten.emscriptenStrings.Asterisk = this.cast("*")
+  def Asterisk: typings.emscripten.emscriptenStrings.Asterisk = "*".asInstanceOf[typings.emscripten.emscriptenStrings.Asterisk]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def double: typings.emscripten.emscriptenStrings.double = "double".asInstanceOf[typings.emscripten.emscriptenStrings.double]
   @scala.inline
-  def double: typings.emscripten.emscriptenStrings.double = this.cast("double")
+  def doubleAsterisk: typings.emscripten.emscriptenStrings.doubleAsterisk = "double*".asInstanceOf[typings.emscripten.emscriptenStrings.doubleAsterisk]
   @scala.inline
-  def doubleAsterisk: typings.emscripten.emscriptenStrings.doubleAsterisk = this.cast("double*")
+  def float: typings.emscripten.emscriptenStrings.float = "float".asInstanceOf[typings.emscripten.emscriptenStrings.float]
   @scala.inline
-  def float: typings.emscripten.emscriptenStrings.float = this.cast("float")
+  def floatAsterisk: typings.emscripten.emscriptenStrings.floatAsterisk = "float*".asInstanceOf[typings.emscripten.emscriptenStrings.floatAsterisk]
   @scala.inline
-  def floatAsterisk: typings.emscripten.emscriptenStrings.floatAsterisk = this.cast("float*")
+  def i16: typings.emscripten.emscriptenStrings.i16 = "i16".asInstanceOf[typings.emscripten.emscriptenStrings.i16]
   @scala.inline
-  def i16: typings.emscripten.emscriptenStrings.i16 = this.cast("i16")
+  def i16Asterisk: typings.emscripten.emscriptenStrings.i16Asterisk = "i16*".asInstanceOf[typings.emscripten.emscriptenStrings.i16Asterisk]
   @scala.inline
-  def i16Asterisk: typings.emscripten.emscriptenStrings.i16Asterisk = this.cast("i16*")
+  def i32: typings.emscripten.emscriptenStrings.i32 = "i32".asInstanceOf[typings.emscripten.emscriptenStrings.i32]
   @scala.inline
-  def i32: typings.emscripten.emscriptenStrings.i32 = this.cast("i32")
+  def i32Asterisk: typings.emscripten.emscriptenStrings.i32Asterisk = "i32*".asInstanceOf[typings.emscripten.emscriptenStrings.i32Asterisk]
   @scala.inline
-  def i32Asterisk: typings.emscripten.emscriptenStrings.i32Asterisk = this.cast("i32*")
+  def i64: typings.emscripten.emscriptenStrings.i64 = "i64".asInstanceOf[typings.emscripten.emscriptenStrings.i64]
   @scala.inline
-  def i64: typings.emscripten.emscriptenStrings.i64 = this.cast("i64")
+  def i64Asterisk: typings.emscripten.emscriptenStrings.i64Asterisk = "i64*".asInstanceOf[typings.emscripten.emscriptenStrings.i64Asterisk]
   @scala.inline
-  def i64Asterisk: typings.emscripten.emscriptenStrings.i64Asterisk = this.cast("i64*")
+  def i8: typings.emscripten.emscriptenStrings.i8 = "i8".asInstanceOf[typings.emscripten.emscriptenStrings.i8]
   @scala.inline
-  def i8: typings.emscripten.emscriptenStrings.i8 = this.cast("i8")
-  @scala.inline
-  def i8Asterisk: typings.emscripten.emscriptenStrings.i8Asterisk = this.cast("i8*")
+  def i8Asterisk: typings.emscripten.emscriptenStrings.i8Asterisk = "i8*".asInstanceOf[typings.emscripten.emscriptenStrings.i8Asterisk]
 }
 

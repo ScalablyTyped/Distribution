@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import typings.std.AbortSignal
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -22,6 +23,12 @@ trait scaleRangeScaleRangeParams extends Object {
     */
   var sampleSize: js.UndefOr[Double] = js.undefined
   /**
+    * Allows for cancelable requests. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-heuristics-scaleRange.html#scaleRange)
+    */
+  var signal: js.UndefOr[AbortSignal] = js.undefined
+  /**
     * The [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) or [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) where the layer will be rendered.
     *
     * [Read more...](global.html)
@@ -37,10 +44,12 @@ object scaleRangeScaleRangeParams {
     layer: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer | GeoJSONLayer,
     propertyIsEnumerable: PropertyKey => Boolean,
     view: View,
-    sampleSize: Int | Double = null
+    sampleSize: Int | Double = null,
+    signal: AbortSignal = null
   ): scaleRangeScaleRangeParams = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), view = view.asInstanceOf[js.Any])
     if (sampleSize != null) __obj.updateDynamic("sampleSize")(sampleSize.asInstanceOf[js.Any])
+    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
     __obj.asInstanceOf[scaleRangeScaleRangeParams]
   }
 }

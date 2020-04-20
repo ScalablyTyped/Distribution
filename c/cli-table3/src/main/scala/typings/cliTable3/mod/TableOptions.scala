@@ -26,7 +26,6 @@ object TableOptions {
     wordWrap: Boolean
   ): TableOptions = {
     val __obj = js.Dynamic.literal(colAligns = colAligns.asInstanceOf[js.Any], colWidths = colWidths.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], rowAligns = rowAligns.asInstanceOf[js.Any], rowHeights = rowHeights.asInstanceOf[js.Any], truncate = truncate.asInstanceOf[js.Any], wordWrap = wordWrap.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TableOptions]
   }
 }

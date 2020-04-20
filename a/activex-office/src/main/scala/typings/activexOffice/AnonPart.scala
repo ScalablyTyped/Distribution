@@ -13,7 +13,6 @@ object AnonPart {
   @scala.inline
   def apply(Part: CustomXMLPart): AnonPart = {
     val __obj = js.Dynamic.literal(Part = Part.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPart]
   }
 }

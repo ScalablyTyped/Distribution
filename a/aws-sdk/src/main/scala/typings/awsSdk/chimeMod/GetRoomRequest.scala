@@ -20,7 +20,6 @@ object GetRoomRequest {
   @scala.inline
   def apply(AccountId: NonEmptyString, RoomId: NonEmptyString): GetRoomRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], RoomId = RoomId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetRoomRequest]
   }
 }

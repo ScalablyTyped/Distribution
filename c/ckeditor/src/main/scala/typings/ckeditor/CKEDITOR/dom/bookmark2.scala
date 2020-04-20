@@ -26,7 +26,6 @@ object bookmark2 {
     startOffset: Double
   ): bookmark2 = {
     val __obj = js.Dynamic.literal(collapsed = collapsed.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], endOffset = endOffset.asInstanceOf[js.Any], is2 = is2.asInstanceOf[js.Any], normalized = normalized.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], startOffset = startOffset.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[bookmark2]
   }
 }

@@ -68,7 +68,7 @@ trait SequenceBaser[T] extends js.Object {
   def toObject(): js.Any = js.native
   def union(var_args: js.Array[T]): Sequence[T] = js.native
   def uniq(): Sequence[T] = js.native
-  def uniq(key: String): Sequence[T] = js.native
+  def uniq(key: /* keyof T */ String): Sequence[T] = js.native
   def where(properties: js.Any): Sequence[T] = js.native
   def without(var_args: T*): Sequence[T] = js.native
   def without(var_args: js.Array[T]): Sequence[T] = js.native

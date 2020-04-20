@@ -21,17 +21,129 @@ import typings.jquery.JQuery_.TypeOrArray
 import typings.jquery.JQuery_.htmlString
 import typings.jquery.JQuery_.jqXHR
 import typings.jquery.jqueryBooleans.`false`
+import typings.jquery.jqueryStrings.`object`
+import typings.jquery.jqueryStrings.`var`
+import typings.jquery.jqueryStrings.a
+import typings.jquery.jqueryStrings.abbr
+import typings.jquery.jqueryStrings.address
+import typings.jquery.jqueryStrings.applet
+import typings.jquery.jqueryStrings.area
+import typings.jquery.jqueryStrings.article
+import typings.jquery.jqueryStrings.aside
+import typings.jquery.jqueryStrings.audio
+import typings.jquery.jqueryStrings.b
+import typings.jquery.jqueryStrings.base
+import typings.jquery.jqueryStrings.basefont
+import typings.jquery.jqueryStrings.bdi
+import typings.jquery.jqueryStrings.bdo
+import typings.jquery.jqueryStrings.blockquote
 import typings.jquery.jqueryStrings.blur
+import typings.jquery.jqueryStrings.body
+import typings.jquery.jqueryStrings.br
+import typings.jquery.jqueryStrings.button
+import typings.jquery.jqueryStrings.canvas
+import typings.jquery.jqueryStrings.caption
 import typings.jquery.jqueryStrings.change
+import typings.jquery.jqueryStrings.circle
+import typings.jquery.jqueryStrings.cite
 import typings.jquery.jqueryStrings.click
+import typings.jquery.jqueryStrings.clipPath
+import typings.jquery.jqueryStrings.code
+import typings.jquery.jqueryStrings.col
+import typings.jquery.jqueryStrings.colgroup
 import typings.jquery.jqueryStrings.contextmenu
+import typings.jquery.jqueryStrings.data
+import typings.jquery.jqueryStrings.datalist
 import typings.jquery.jqueryStrings.dblclick
+import typings.jquery.jqueryStrings.dd
+import typings.jquery.jqueryStrings.defs
+import typings.jquery.jqueryStrings.del
+import typings.jquery.jqueryStrings.desc
+import typings.jquery.jqueryStrings.details
+import typings.jquery.jqueryStrings.dfn
+import typings.jquery.jqueryStrings.dialog
+import typings.jquery.jqueryStrings.dir
+import typings.jquery.jqueryStrings.div
+import typings.jquery.jqueryStrings.dl
+import typings.jquery.jqueryStrings.dt
+import typings.jquery.jqueryStrings.ellipse
+import typings.jquery.jqueryStrings.em
+import typings.jquery.jqueryStrings.embed
+import typings.jquery.jqueryStrings.feBlend
+import typings.jquery.jqueryStrings.feColorMatrix
+import typings.jquery.jqueryStrings.feComponentTransfer
+import typings.jquery.jqueryStrings.feComposite
+import typings.jquery.jqueryStrings.feConvolveMatrix
+import typings.jquery.jqueryStrings.feDiffuseLighting
+import typings.jquery.jqueryStrings.feDisplacementMap
+import typings.jquery.jqueryStrings.feDistantLight
+import typings.jquery.jqueryStrings.feFlood
+import typings.jquery.jqueryStrings.feFuncA
+import typings.jquery.jqueryStrings.feFuncB
+import typings.jquery.jqueryStrings.feFuncG
+import typings.jquery.jqueryStrings.feFuncR
+import typings.jquery.jqueryStrings.feGaussianBlur
+import typings.jquery.jqueryStrings.feImage
+import typings.jquery.jqueryStrings.feMerge
+import typings.jquery.jqueryStrings.feMergeNode
+import typings.jquery.jqueryStrings.feMorphology
+import typings.jquery.jqueryStrings.feOffset
+import typings.jquery.jqueryStrings.fePointLight
+import typings.jquery.jqueryStrings.feSpecularLighting
+import typings.jquery.jqueryStrings.feSpotLight
+import typings.jquery.jqueryStrings.feTile
+import typings.jquery.jqueryStrings.feTurbulence
+import typings.jquery.jqueryStrings.fieldset
+import typings.jquery.jqueryStrings.figcaption
+import typings.jquery.jqueryStrings.figure
+import typings.jquery.jqueryStrings.filter
 import typings.jquery.jqueryStrings.focus
 import typings.jquery.jqueryStrings.focusin
 import typings.jquery.jqueryStrings.focusout
+import typings.jquery.jqueryStrings.font
+import typings.jquery.jqueryStrings.footer
+import typings.jquery.jqueryStrings.foreignObject
+import typings.jquery.jqueryStrings.form
+import typings.jquery.jqueryStrings.frame
+import typings.jquery.jqueryStrings.frameset
+import typings.jquery.jqueryStrings.g
+import typings.jquery.jqueryStrings.h1
+import typings.jquery.jqueryStrings.h2
+import typings.jquery.jqueryStrings.h3
+import typings.jquery.jqueryStrings.h4
+import typings.jquery.jqueryStrings.h5
+import typings.jquery.jqueryStrings.h6
+import typings.jquery.jqueryStrings.head
+import typings.jquery.jqueryStrings.header
+import typings.jquery.jqueryStrings.hgroup
+import typings.jquery.jqueryStrings.hr
+import typings.jquery.jqueryStrings.html
+import typings.jquery.jqueryStrings.i
+import typings.jquery.jqueryStrings.iframe
+import typings.jquery.jqueryStrings.image
+import typings.jquery.jqueryStrings.img
+import typings.jquery.jqueryStrings.input
+import typings.jquery.jqueryStrings.ins
+import typings.jquery.jqueryStrings.kbd
 import typings.jquery.jqueryStrings.keydown
 import typings.jquery.jqueryStrings.keypress
 import typings.jquery.jqueryStrings.keyup
+import typings.jquery.jqueryStrings.label
+import typings.jquery.jqueryStrings.legend
+import typings.jquery.jqueryStrings.li
+import typings.jquery.jqueryStrings.line
+import typings.jquery.jqueryStrings.linearGradient
+import typings.jquery.jqueryStrings.link
+import typings.jquery.jqueryStrings.main
+import typings.jquery.jqueryStrings.map
+import typings.jquery.jqueryStrings.mark
+import typings.jquery.jqueryStrings.marker
+import typings.jquery.jqueryStrings.marquee
+import typings.jquery.jqueryStrings.mask
+import typings.jquery.jqueryStrings.menu
+import typings.jquery.jqueryStrings.meta
+import typings.jquery.jqueryStrings.metadata
+import typings.jquery.jqueryStrings.meter
 import typings.jquery.jqueryStrings.mousedown
 import typings.jquery.jqueryStrings.mouseenter
 import typings.jquery.jqueryStrings.mouseleave
@@ -39,17 +151,200 @@ import typings.jquery.jqueryStrings.mousemove
 import typings.jquery.jqueryStrings.mouseout
 import typings.jquery.jqueryStrings.mouseover
 import typings.jquery.jqueryStrings.mouseup
+import typings.jquery.jqueryStrings.nav
+import typings.jquery.jqueryStrings.noscript
+import typings.jquery.jqueryStrings.ol
+import typings.jquery.jqueryStrings.optgroup
+import typings.jquery.jqueryStrings.option
+import typings.jquery.jqueryStrings.output
+import typings.jquery.jqueryStrings.p
+import typings.jquery.jqueryStrings.param
+import typings.jquery.jqueryStrings.path
+import typings.jquery.jqueryStrings.pattern
+import typings.jquery.jqueryStrings.picture
+import typings.jquery.jqueryStrings.polygon
+import typings.jquery.jqueryStrings.polyline
+import typings.jquery.jqueryStrings.pre
+import typings.jquery.jqueryStrings.progress
+import typings.jquery.jqueryStrings.q
+import typings.jquery.jqueryStrings.radialGradient
+import typings.jquery.jqueryStrings.rect
 import typings.jquery.jqueryStrings.resize
+import typings.jquery.jqueryStrings.rp
+import typings.jquery.jqueryStrings.rt
+import typings.jquery.jqueryStrings.ruby
+import typings.jquery.jqueryStrings.s
+import typings.jquery.jqueryStrings.samp
+import typings.jquery.jqueryStrings.script
 import typings.jquery.jqueryStrings.scroll
+import typings.jquery.jqueryStrings.section
 import typings.jquery.jqueryStrings.select
+import typings.jquery.jqueryStrings.slot
+import typings.jquery.jqueryStrings.small
+import typings.jquery.jqueryStrings.source
+import typings.jquery.jqueryStrings.span
+import typings.jquery.jqueryStrings.stop
+import typings.jquery.jqueryStrings.strong
+import typings.jquery.jqueryStrings.style
+import typings.jquery.jqueryStrings.sub
 import typings.jquery.jqueryStrings.submit
+import typings.jquery.jqueryStrings.summary
+import typings.jquery.jqueryStrings.sup
+import typings.jquery.jqueryStrings.svg
+import typings.jquery.jqueryStrings.switch
+import typings.jquery.jqueryStrings.symbol
+import typings.jquery.jqueryStrings.table
+import typings.jquery.jqueryStrings.tbody
+import typings.jquery.jqueryStrings.td
+import typings.jquery.jqueryStrings.template
+import typings.jquery.jqueryStrings.text
+import typings.jquery.jqueryStrings.textPath
+import typings.jquery.jqueryStrings.textarea
+import typings.jquery.jqueryStrings.tfoot
+import typings.jquery.jqueryStrings.th
+import typings.jquery.jqueryStrings.thead
+import typings.jquery.jqueryStrings.time
+import typings.jquery.jqueryStrings.title
+import typings.jquery.jqueryStrings.tr
+import typings.jquery.jqueryStrings.track
+import typings.jquery.jqueryStrings.tspan
+import typings.jquery.jqueryStrings.u
+import typings.jquery.jqueryStrings.ul
+import typings.jquery.jqueryStrings.use
+import typings.jquery.jqueryStrings.video
+import typings.jquery.jqueryStrings.view
+import typings.jquery.jqueryStrings.wbr
 import typings.std.ArrayLike
 import typings.std.Comment
 import typings.std.DocumentFragment
 import typings.std.Document_
 import typings.std.Element
+import typings.std.HTMLAnchorElement
+import typings.std.HTMLAppletElement
+import typings.std.HTMLAreaElement
+import typings.std.HTMLAudioElement
+import typings.std.HTMLBRElement
+import typings.std.HTMLBaseElement
+import typings.std.HTMLBaseFontElement
+import typings.std.HTMLBodyElement
+import typings.std.HTMLButtonElement
+import typings.std.HTMLCanvasElement
+import typings.std.HTMLDListElement
+import typings.std.HTMLDataElement
+import typings.std.HTMLDataListElement
+import typings.std.HTMLDetailsElement
+import typings.std.HTMLDialogElement
+import typings.std.HTMLDirectoryElement
+import typings.std.HTMLDivElement
 import typings.std.HTMLElement
+import typings.std.HTMLEmbedElement
+import typings.std.HTMLFieldSetElement
+import typings.std.HTMLFontElement
+import typings.std.HTMLFormElement
+import typings.std.HTMLFrameElement
+import typings.std.HTMLFrameSetElement
+import typings.std.HTMLHRElement
+import typings.std.HTMLHeadElement
+import typings.std.HTMLHeadingElement
+import typings.std.HTMLHtmlElement
+import typings.std.HTMLIFrameElement
+import typings.std.HTMLImageElement
+import typings.std.HTMLInputElement
+import typings.std.HTMLLIElement
+import typings.std.HTMLLabelElement
+import typings.std.HTMLLegendElement
+import typings.std.HTMLLinkElement
+import typings.std.HTMLMapElement
+import typings.std.HTMLMarqueeElement
+import typings.std.HTMLMenuElement
+import typings.std.HTMLMetaElement
+import typings.std.HTMLMeterElement
+import typings.std.HTMLModElement
+import typings.std.HTMLOListElement
+import typings.std.HTMLObjectElement
+import typings.std.HTMLOptGroupElement
+import typings.std.HTMLOptionElement
+import typings.std.HTMLOutputElement
+import typings.std.HTMLParagraphElement
+import typings.std.HTMLParamElement
+import typings.std.HTMLPictureElement
+import typings.std.HTMLPreElement
+import typings.std.HTMLProgressElement
+import typings.std.HTMLQuoteElement
+import typings.std.HTMLScriptElement
+import typings.std.HTMLSelectElement
+import typings.std.HTMLSlotElement
+import typings.std.HTMLSourceElement
+import typings.std.HTMLSpanElement
+import typings.std.HTMLStyleElement
+import typings.std.HTMLTableCaptionElement
+import typings.std.HTMLTableColElement
+import typings.std.HTMLTableDataCellElement
+import typings.std.HTMLTableElement
+import typings.std.HTMLTableHeaderCellElement
+import typings.std.HTMLTableRowElement
+import typings.std.HTMLTableSectionElement
+import typings.std.HTMLTemplateElement
+import typings.std.HTMLTextAreaElement
+import typings.std.HTMLTimeElement
+import typings.std.HTMLTitleElement
+import typings.std.HTMLTrackElement
+import typings.std.HTMLUListElement
+import typings.std.HTMLVideoElement
 import typings.std.Iterable
+import typings.std.SVGCircleElement
+import typings.std.SVGClipPathElement
+import typings.std.SVGDefsElement
+import typings.std.SVGDescElement
+import typings.std.SVGEllipseElement
+import typings.std.SVGFEBlendElement
+import typings.std.SVGFEColorMatrixElement
+import typings.std.SVGFEComponentTransferElement
+import typings.std.SVGFECompositeElement
+import typings.std.SVGFEConvolveMatrixElement
+import typings.std.SVGFEDiffuseLightingElement
+import typings.std.SVGFEDisplacementMapElement
+import typings.std.SVGFEDistantLightElement
+import typings.std.SVGFEFloodElement
+import typings.std.SVGFEFuncAElement
+import typings.std.SVGFEFuncBElement
+import typings.std.SVGFEFuncGElement
+import typings.std.SVGFEFuncRElement
+import typings.std.SVGFEGaussianBlurElement
+import typings.std.SVGFEImageElement
+import typings.std.SVGFEMergeElement
+import typings.std.SVGFEMergeNodeElement
+import typings.std.SVGFEMorphologyElement
+import typings.std.SVGFEOffsetElement
+import typings.std.SVGFEPointLightElement
+import typings.std.SVGFESpecularLightingElement
+import typings.std.SVGFESpotLightElement
+import typings.std.SVGFETileElement
+import typings.std.SVGFETurbulenceElement
+import typings.std.SVGFilterElement
+import typings.std.SVGForeignObjectElement
+import typings.std.SVGGElement
+import typings.std.SVGImageElement
+import typings.std.SVGLineElement
+import typings.std.SVGLinearGradientElement
+import typings.std.SVGMarkerElement
+import typings.std.SVGMaskElement
+import typings.std.SVGMetadataElement
+import typings.std.SVGPathElement
+import typings.std.SVGPatternElement
+import typings.std.SVGPolygonElement
+import typings.std.SVGPolylineElement
+import typings.std.SVGRadialGradientElement
+import typings.std.SVGRectElement
+import typings.std.SVGSVGElement
+import typings.std.SVGStopElement
+import typings.std.SVGSwitchElement
+import typings.std.SVGSymbolElement
+import typings.std.SVGTSpanElement
+import typings.std.SVGTextElement
+import typings.std.SVGTextPathElement
+import typings.std.SVGUseElement
+import typings.std.SVGViewElement
 import typings.std.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -4122,7 +4417,11 @@ trait JQuery__[TElement]
     */
   def filter(selector_elements_selection_function: Selector): this.type = js.native
   def filter(selector_elements_selection_function: TypeOrArray[Element]): this.type = js.native
-  def find(selector_element: JQuery_[HTMLElement]): this.type = js.native
+  def find[E /* <: HTMLElement */](selector_element: E): JQuery_[E] = js.native
+  def find[E /* <: HTMLElement */](selector_element: JQuery_[E]): JQuery_[E] = js.native
+  def find[E /* <: HTMLElement */](selector_element: Selector): JQuery_[E] = js.native
+  @JSName("find")
+  def find_a(selector_element: JQuery_[a]): JQuery_[HTMLAnchorElement] = js.native
   /**
     * Get the descendants of each element in the current set of matched elements, filtered by a selector, jQuery object, or element.
     * @param selector_element _&#x40;param_ `selector_element`
@@ -4234,8 +4533,692 @@ trait JQuery__[TElement]
   </html>
   ```
     */
-  def find(selector_element: Selector): this.type = js.native
-  def find(selector_element: Element): this.type = js.native
+  @JSName("find")
+  def find_a(selector_element: a): JQuery_[HTMLAnchorElement] = js.native
+  @JSName("find")
+  def find_abbr(selector_element: JQuery_[abbr]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_abbr(selector_element: abbr): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_address(selector_element: JQuery_[address]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_address(selector_element: address): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_applet(selector_element: JQuery_[applet]): JQuery_[HTMLAppletElement] = js.native
+  @JSName("find")
+  def find_applet(selector_element: applet): JQuery_[HTMLAppletElement] = js.native
+  @JSName("find")
+  def find_area(selector_element: JQuery_[area]): JQuery_[HTMLAreaElement] = js.native
+  @JSName("find")
+  def find_area(selector_element: area): JQuery_[HTMLAreaElement] = js.native
+  @JSName("find")
+  def find_article(selector_element: JQuery_[article]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_article(selector_element: article): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_aside(selector_element: JQuery_[aside]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_aside(selector_element: aside): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_audio(selector_element: JQuery_[audio]): JQuery_[HTMLAudioElement] = js.native
+  @JSName("find")
+  def find_audio(selector_element: audio): JQuery_[HTMLAudioElement] = js.native
+  @JSName("find")
+  def find_b(selector_element: JQuery_[b]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_b(selector_element: b): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_base(selector_element: JQuery_[base]): JQuery_[HTMLBaseElement] = js.native
+  @JSName("find")
+  def find_base(selector_element: base): JQuery_[HTMLBaseElement] = js.native
+  @JSName("find")
+  def find_basefont(selector_element: JQuery_[basefont]): JQuery_[HTMLBaseFontElement] = js.native
+  @JSName("find")
+  def find_basefont(selector_element: basefont): JQuery_[HTMLBaseFontElement] = js.native
+  @JSName("find")
+  def find_bdi(selector_element: JQuery_[bdi]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_bdi(selector_element: bdi): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_bdo(selector_element: JQuery_[bdo]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_bdo(selector_element: bdo): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_blockquote(selector_element: JQuery_[blockquote]): JQuery_[HTMLQuoteElement] = js.native
+  @JSName("find")
+  def find_blockquote(selector_element: blockquote): JQuery_[HTMLQuoteElement] = js.native
+  @JSName("find")
+  def find_body(selector_element: JQuery_[body]): JQuery_[HTMLBodyElement] = js.native
+  @JSName("find")
+  def find_body(selector_element: body): JQuery_[HTMLBodyElement] = js.native
+  @JSName("find")
+  def find_br(selector_element: JQuery_[br]): JQuery_[HTMLBRElement] = js.native
+  @JSName("find")
+  def find_br(selector_element: br): JQuery_[HTMLBRElement] = js.native
+  @JSName("find")
+  def find_button(selector_element: JQuery_[button]): JQuery_[HTMLButtonElement] = js.native
+  @JSName("find")
+  def find_button(selector_element: button): JQuery_[HTMLButtonElement] = js.native
+  @JSName("find")
+  def find_canvas(selector_element: JQuery_[canvas]): JQuery_[HTMLCanvasElement] = js.native
+  @JSName("find")
+  def find_canvas(selector_element: canvas): JQuery_[HTMLCanvasElement] = js.native
+  @JSName("find")
+  def find_caption(selector_element: JQuery_[caption]): JQuery_[HTMLTableCaptionElement] = js.native
+  @JSName("find")
+  def find_caption(selector_element: caption): JQuery_[HTMLTableCaptionElement] = js.native
+  @JSName("find")
+  def find_circle(selector_element: JQuery_[circle]): JQuery_[SVGCircleElement] = js.native
+  @JSName("find")
+  def find_circle(selector_element: circle): JQuery_[SVGCircleElement] = js.native
+  @JSName("find")
+  def find_cite(selector_element: JQuery_[cite]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_cite(selector_element: cite): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_clipPath(selector_element: JQuery_[clipPath]): JQuery_[SVGClipPathElement] = js.native
+  @JSName("find")
+  def find_clipPath(selector_element: clipPath): JQuery_[SVGClipPathElement] = js.native
+  @JSName("find")
+  def find_code(selector_element: JQuery_[code]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_code(selector_element: code): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_col(selector_element: JQuery_[col]): JQuery_[HTMLTableColElement] = js.native
+  @JSName("find")
+  def find_col(selector_element: col): JQuery_[HTMLTableColElement] = js.native
+  @JSName("find")
+  def find_colgroup(selector_element: JQuery_[colgroup]): JQuery_[HTMLTableColElement] = js.native
+  @JSName("find")
+  def find_colgroup(selector_element: colgroup): JQuery_[HTMLTableColElement] = js.native
+  @JSName("find")
+  def find_data(selector_element: JQuery_[data]): JQuery_[HTMLDataElement] = js.native
+  @JSName("find")
+  def find_data(selector_element: data): JQuery_[HTMLDataElement] = js.native
+  @JSName("find")
+  def find_datalist(selector_element: JQuery_[datalist]): JQuery_[HTMLDataListElement] = js.native
+  @JSName("find")
+  def find_datalist(selector_element: datalist): JQuery_[HTMLDataListElement] = js.native
+  @JSName("find")
+  def find_dd(selector_element: JQuery_[dd]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_dd(selector_element: dd): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_defs(selector_element: JQuery_[defs]): JQuery_[SVGDefsElement] = js.native
+  @JSName("find")
+  def find_defs(selector_element: defs): JQuery_[SVGDefsElement] = js.native
+  @JSName("find")
+  def find_del(selector_element: JQuery_[del]): JQuery_[HTMLModElement] = js.native
+  @JSName("find")
+  def find_del(selector_element: del): JQuery_[HTMLModElement] = js.native
+  @JSName("find")
+  def find_desc(selector_element: JQuery_[desc]): JQuery_[SVGDescElement] = js.native
+  @JSName("find")
+  def find_desc(selector_element: desc): JQuery_[SVGDescElement] = js.native
+  @JSName("find")
+  def find_details(selector_element: JQuery_[details]): JQuery_[HTMLDetailsElement] = js.native
+  @JSName("find")
+  def find_details(selector_element: details): JQuery_[HTMLDetailsElement] = js.native
+  @JSName("find")
+  def find_dfn(selector_element: JQuery_[dfn]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_dfn(selector_element: dfn): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_dialog(selector_element: JQuery_[dialog]): JQuery_[HTMLDialogElement] = js.native
+  @JSName("find")
+  def find_dialog(selector_element: dialog): JQuery_[HTMLDialogElement] = js.native
+  @JSName("find")
+  def find_dir(selector_element: JQuery_[dir]): JQuery_[HTMLDirectoryElement] = js.native
+  @JSName("find")
+  def find_dir(selector_element: dir): JQuery_[HTMLDirectoryElement] = js.native
+  @JSName("find")
+  def find_div(selector_element: JQuery_[div]): JQuery_[HTMLDivElement] = js.native
+  @JSName("find")
+  def find_div(selector_element: div): JQuery_[HTMLDivElement] = js.native
+  @JSName("find")
+  def find_dl(selector_element: JQuery_[dl]): JQuery_[HTMLDListElement] = js.native
+  @JSName("find")
+  def find_dl(selector_element: dl): JQuery_[HTMLDListElement] = js.native
+  @JSName("find")
+  def find_dt(selector_element: JQuery_[dt]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_dt(selector_element: dt): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_ellipse(selector_element: JQuery_[ellipse]): JQuery_[SVGEllipseElement] = js.native
+  @JSName("find")
+  def find_ellipse(selector_element: ellipse): JQuery_[SVGEllipseElement] = js.native
+  @JSName("find")
+  def find_em(selector_element: JQuery_[em]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_em(selector_element: em): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_embed(selector_element: JQuery_[embed]): JQuery_[HTMLEmbedElement] = js.native
+  @JSName("find")
+  def find_embed(selector_element: embed): JQuery_[HTMLEmbedElement] = js.native
+  @JSName("find")
+  def find_feBlend(selector_element: JQuery_[feBlend]): JQuery_[SVGFEBlendElement] = js.native
+  @JSName("find")
+  def find_feBlend(selector_element: feBlend): JQuery_[SVGFEBlendElement] = js.native
+  @JSName("find")
+  def find_feColorMatrix(selector_element: JQuery_[feColorMatrix]): JQuery_[SVGFEColorMatrixElement] = js.native
+  @JSName("find")
+  def find_feColorMatrix(selector_element: feColorMatrix): JQuery_[SVGFEColorMatrixElement] = js.native
+  @JSName("find")
+  def find_feComponentTransfer(selector_element: JQuery_[feComponentTransfer]): JQuery_[SVGFEComponentTransferElement] = js.native
+  @JSName("find")
+  def find_feComponentTransfer(selector_element: feComponentTransfer): JQuery_[SVGFEComponentTransferElement] = js.native
+  @JSName("find")
+  def find_feComposite(selector_element: JQuery_[feComposite]): JQuery_[SVGFECompositeElement] = js.native
+  @JSName("find")
+  def find_feComposite(selector_element: feComposite): JQuery_[SVGFECompositeElement] = js.native
+  @JSName("find")
+  def find_feConvolveMatrix(selector_element: JQuery_[feConvolveMatrix]): JQuery_[SVGFEConvolveMatrixElement] = js.native
+  @JSName("find")
+  def find_feConvolveMatrix(selector_element: feConvolveMatrix): JQuery_[SVGFEConvolveMatrixElement] = js.native
+  @JSName("find")
+  def find_feDiffuseLighting(selector_element: JQuery_[feDiffuseLighting]): JQuery_[SVGFEDiffuseLightingElement] = js.native
+  @JSName("find")
+  def find_feDiffuseLighting(selector_element: feDiffuseLighting): JQuery_[SVGFEDiffuseLightingElement] = js.native
+  @JSName("find")
+  def find_feDisplacementMap(selector_element: JQuery_[feDisplacementMap]): JQuery_[SVGFEDisplacementMapElement] = js.native
+  @JSName("find")
+  def find_feDisplacementMap(selector_element: feDisplacementMap): JQuery_[SVGFEDisplacementMapElement] = js.native
+  @JSName("find")
+  def find_feDistantLight(selector_element: JQuery_[feDistantLight]): JQuery_[SVGFEDistantLightElement] = js.native
+  @JSName("find")
+  def find_feDistantLight(selector_element: feDistantLight): JQuery_[SVGFEDistantLightElement] = js.native
+  @JSName("find")
+  def find_feFlood(selector_element: JQuery_[feFlood]): JQuery_[SVGFEFloodElement] = js.native
+  @JSName("find")
+  def find_feFlood(selector_element: feFlood): JQuery_[SVGFEFloodElement] = js.native
+  @JSName("find")
+  def find_feFuncA(selector_element: JQuery_[feFuncA]): JQuery_[SVGFEFuncAElement] = js.native
+  @JSName("find")
+  def find_feFuncA(selector_element: feFuncA): JQuery_[SVGFEFuncAElement] = js.native
+  @JSName("find")
+  def find_feFuncB(selector_element: JQuery_[feFuncB]): JQuery_[SVGFEFuncBElement] = js.native
+  @JSName("find")
+  def find_feFuncB(selector_element: feFuncB): JQuery_[SVGFEFuncBElement] = js.native
+  @JSName("find")
+  def find_feFuncG(selector_element: JQuery_[feFuncG]): JQuery_[SVGFEFuncGElement] = js.native
+  @JSName("find")
+  def find_feFuncG(selector_element: feFuncG): JQuery_[SVGFEFuncGElement] = js.native
+  @JSName("find")
+  def find_feFuncR(selector_element: JQuery_[feFuncR]): JQuery_[SVGFEFuncRElement] = js.native
+  @JSName("find")
+  def find_feFuncR(selector_element: feFuncR): JQuery_[SVGFEFuncRElement] = js.native
+  @JSName("find")
+  def find_feGaussianBlur(selector_element: JQuery_[feGaussianBlur]): JQuery_[SVGFEGaussianBlurElement] = js.native
+  @JSName("find")
+  def find_feGaussianBlur(selector_element: feGaussianBlur): JQuery_[SVGFEGaussianBlurElement] = js.native
+  @JSName("find")
+  def find_feImage(selector_element: JQuery_[feImage]): JQuery_[SVGFEImageElement] = js.native
+  @JSName("find")
+  def find_feImage(selector_element: feImage): JQuery_[SVGFEImageElement] = js.native
+  @JSName("find")
+  def find_feMerge(selector_element: JQuery_[feMerge]): JQuery_[SVGFEMergeElement] = js.native
+  @JSName("find")
+  def find_feMerge(selector_element: feMerge): JQuery_[SVGFEMergeElement] = js.native
+  @JSName("find")
+  def find_feMergeNode(selector_element: JQuery_[feMergeNode]): JQuery_[SVGFEMergeNodeElement] = js.native
+  @JSName("find")
+  def find_feMergeNode(selector_element: feMergeNode): JQuery_[SVGFEMergeNodeElement] = js.native
+  @JSName("find")
+  def find_feMorphology(selector_element: JQuery_[feMorphology]): JQuery_[SVGFEMorphologyElement] = js.native
+  @JSName("find")
+  def find_feMorphology(selector_element: feMorphology): JQuery_[SVGFEMorphologyElement] = js.native
+  @JSName("find")
+  def find_feOffset(selector_element: JQuery_[feOffset]): JQuery_[SVGFEOffsetElement] = js.native
+  @JSName("find")
+  def find_feOffset(selector_element: feOffset): JQuery_[SVGFEOffsetElement] = js.native
+  @JSName("find")
+  def find_fePointLight(selector_element: JQuery_[fePointLight]): JQuery_[SVGFEPointLightElement] = js.native
+  @JSName("find")
+  def find_fePointLight(selector_element: fePointLight): JQuery_[SVGFEPointLightElement] = js.native
+  @JSName("find")
+  def find_feSpecularLighting(selector_element: JQuery_[feSpecularLighting]): JQuery_[SVGFESpecularLightingElement] = js.native
+  @JSName("find")
+  def find_feSpecularLighting(selector_element: feSpecularLighting): JQuery_[SVGFESpecularLightingElement] = js.native
+  @JSName("find")
+  def find_feSpotLight(selector_element: JQuery_[feSpotLight]): JQuery_[SVGFESpotLightElement] = js.native
+  @JSName("find")
+  def find_feSpotLight(selector_element: feSpotLight): JQuery_[SVGFESpotLightElement] = js.native
+  @JSName("find")
+  def find_feTile(selector_element: JQuery_[feTile]): JQuery_[SVGFETileElement] = js.native
+  @JSName("find")
+  def find_feTile(selector_element: feTile): JQuery_[SVGFETileElement] = js.native
+  @JSName("find")
+  def find_feTurbulence(selector_element: JQuery_[feTurbulence]): JQuery_[SVGFETurbulenceElement] = js.native
+  @JSName("find")
+  def find_feTurbulence(selector_element: feTurbulence): JQuery_[SVGFETurbulenceElement] = js.native
+  @JSName("find")
+  def find_fieldset(selector_element: JQuery_[fieldset]): JQuery_[HTMLFieldSetElement] = js.native
+  @JSName("find")
+  def find_fieldset(selector_element: fieldset): JQuery_[HTMLFieldSetElement] = js.native
+  @JSName("find")
+  def find_figcaption(selector_element: JQuery_[figcaption]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_figcaption(selector_element: figcaption): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_figure(selector_element: JQuery_[figure]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_figure(selector_element: figure): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_filter(selector_element: JQuery_[filter]): JQuery_[SVGFilterElement] = js.native
+  @JSName("find")
+  def find_filter(selector_element: filter): JQuery_[SVGFilterElement] = js.native
+  @JSName("find")
+  def find_font(selector_element: JQuery_[font]): JQuery_[HTMLFontElement] = js.native
+  @JSName("find")
+  def find_font(selector_element: font): JQuery_[HTMLFontElement] = js.native
+  @JSName("find")
+  def find_footer(selector_element: JQuery_[footer]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_footer(selector_element: footer): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_foreignObject(selector_element: JQuery_[foreignObject]): JQuery_[SVGForeignObjectElement] = js.native
+  @JSName("find")
+  def find_foreignObject(selector_element: foreignObject): JQuery_[SVGForeignObjectElement] = js.native
+  @JSName("find")
+  def find_form(selector_element: JQuery_[form]): JQuery_[HTMLFormElement] = js.native
+  @JSName("find")
+  def find_form(selector_element: form): JQuery_[HTMLFormElement] = js.native
+  @JSName("find")
+  def find_frame(selector_element: JQuery_[frame]): JQuery_[HTMLFrameElement] = js.native
+  @JSName("find")
+  def find_frame(selector_element: frame): JQuery_[HTMLFrameElement] = js.native
+  @JSName("find")
+  def find_frameset(selector_element: JQuery_[frameset]): JQuery_[HTMLFrameSetElement] = js.native
+  @JSName("find")
+  def find_frameset(selector_element: frameset): JQuery_[HTMLFrameSetElement] = js.native
+  @JSName("find")
+  def find_g(selector_element: JQuery_[g]): JQuery_[SVGGElement] = js.native
+  @JSName("find")
+  def find_g(selector_element: g): JQuery_[SVGGElement] = js.native
+  @JSName("find")
+  def find_h1(selector_element: JQuery_[h1]): JQuery_[HTMLHeadingElement] = js.native
+  @JSName("find")
+  def find_h1(selector_element: h1): JQuery_[HTMLHeadingElement] = js.native
+  @JSName("find")
+  def find_h2(selector_element: JQuery_[h2]): JQuery_[HTMLHeadingElement] = js.native
+  @JSName("find")
+  def find_h2(selector_element: h2): JQuery_[HTMLHeadingElement] = js.native
+  @JSName("find")
+  def find_h3(selector_element: JQuery_[h3]): JQuery_[HTMLHeadingElement] = js.native
+  @JSName("find")
+  def find_h3(selector_element: h3): JQuery_[HTMLHeadingElement] = js.native
+  @JSName("find")
+  def find_h4(selector_element: JQuery_[h4]): JQuery_[HTMLHeadingElement] = js.native
+  @JSName("find")
+  def find_h4(selector_element: h4): JQuery_[HTMLHeadingElement] = js.native
+  @JSName("find")
+  def find_h5(selector_element: JQuery_[h5]): JQuery_[HTMLHeadingElement] = js.native
+  @JSName("find")
+  def find_h5(selector_element: h5): JQuery_[HTMLHeadingElement] = js.native
+  @JSName("find")
+  def find_h6(selector_element: JQuery_[h6]): JQuery_[HTMLHeadingElement] = js.native
+  @JSName("find")
+  def find_h6(selector_element: h6): JQuery_[HTMLHeadingElement] = js.native
+  @JSName("find")
+  def find_head(selector_element: JQuery_[head]): JQuery_[HTMLHeadElement] = js.native
+  @JSName("find")
+  def find_head(selector_element: head): JQuery_[HTMLHeadElement] = js.native
+  @JSName("find")
+  def find_header(selector_element: JQuery_[header]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_header(selector_element: header): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_hgroup(selector_element: JQuery_[hgroup]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_hgroup(selector_element: hgroup): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_hr(selector_element: JQuery_[hr]): JQuery_[HTMLHRElement] = js.native
+  @JSName("find")
+  def find_hr(selector_element: hr): JQuery_[HTMLHRElement] = js.native
+  @JSName("find")
+  def find_html(selector_element: JQuery_[html]): JQuery_[HTMLHtmlElement] = js.native
+  @JSName("find")
+  def find_html(selector_element: html): JQuery_[HTMLHtmlElement] = js.native
+  @JSName("find")
+  def find_i(selector_element: JQuery_[i]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_i(selector_element: i): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_iframe(selector_element: JQuery_[iframe]): JQuery_[HTMLIFrameElement] = js.native
+  @JSName("find")
+  def find_iframe(selector_element: iframe): JQuery_[HTMLIFrameElement] = js.native
+  @JSName("find")
+  def find_image(selector_element: JQuery_[image]): JQuery_[SVGImageElement] = js.native
+  @JSName("find")
+  def find_image(selector_element: image): JQuery_[SVGImageElement] = js.native
+  @JSName("find")
+  def find_img(selector_element: JQuery_[img]): JQuery_[HTMLImageElement] = js.native
+  @JSName("find")
+  def find_img(selector_element: img): JQuery_[HTMLImageElement] = js.native
+  @JSName("find")
+  def find_input(selector_element: JQuery_[input]): JQuery_[HTMLInputElement] = js.native
+  @JSName("find")
+  def find_input(selector_element: input): JQuery_[HTMLInputElement] = js.native
+  @JSName("find")
+  def find_ins(selector_element: JQuery_[ins]): JQuery_[HTMLModElement] = js.native
+  @JSName("find")
+  def find_ins(selector_element: ins): JQuery_[HTMLModElement] = js.native
+  @JSName("find")
+  def find_kbd(selector_element: JQuery_[kbd]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_kbd(selector_element: kbd): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_label(selector_element: JQuery_[label]): JQuery_[HTMLLabelElement] = js.native
+  @JSName("find")
+  def find_label(selector_element: label): JQuery_[HTMLLabelElement] = js.native
+  @JSName("find")
+  def find_legend(selector_element: JQuery_[legend]): JQuery_[HTMLLegendElement] = js.native
+  @JSName("find")
+  def find_legend(selector_element: legend): JQuery_[HTMLLegendElement] = js.native
+  @JSName("find")
+  def find_li(selector_element: JQuery_[li]): JQuery_[HTMLLIElement] = js.native
+  @JSName("find")
+  def find_li(selector_element: li): JQuery_[HTMLLIElement] = js.native
+  @JSName("find")
+  def find_line(selector_element: JQuery_[line]): JQuery_[SVGLineElement] = js.native
+  @JSName("find")
+  def find_line(selector_element: line): JQuery_[SVGLineElement] = js.native
+  @JSName("find")
+  def find_linearGradient(selector_element: JQuery_[linearGradient]): JQuery_[SVGLinearGradientElement] = js.native
+  @JSName("find")
+  def find_linearGradient(selector_element: linearGradient): JQuery_[SVGLinearGradientElement] = js.native
+  @JSName("find")
+  def find_link(selector_element: JQuery_[link]): JQuery_[HTMLLinkElement] = js.native
+  @JSName("find")
+  def find_link(selector_element: link): JQuery_[HTMLLinkElement] = js.native
+  @JSName("find")
+  def find_main(selector_element: JQuery_[main]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_main(selector_element: main): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_map(selector_element: JQuery_[map]): JQuery_[HTMLMapElement] = js.native
+  @JSName("find")
+  def find_map(selector_element: map): JQuery_[HTMLMapElement] = js.native
+  @JSName("find")
+  def find_mark(selector_element: JQuery_[mark]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_mark(selector_element: mark): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_marker(selector_element: JQuery_[marker]): JQuery_[SVGMarkerElement] = js.native
+  @JSName("find")
+  def find_marker(selector_element: marker): JQuery_[SVGMarkerElement] = js.native
+  @JSName("find")
+  def find_marquee(selector_element: JQuery_[marquee]): JQuery_[HTMLMarqueeElement] = js.native
+  @JSName("find")
+  def find_marquee(selector_element: marquee): JQuery_[HTMLMarqueeElement] = js.native
+  @JSName("find")
+  def find_mask(selector_element: JQuery_[mask]): JQuery_[SVGMaskElement] = js.native
+  @JSName("find")
+  def find_mask(selector_element: mask): JQuery_[SVGMaskElement] = js.native
+  @JSName("find")
+  def find_menu(selector_element: JQuery_[menu]): JQuery_[HTMLMenuElement] = js.native
+  @JSName("find")
+  def find_menu(selector_element: menu): JQuery_[HTMLMenuElement] = js.native
+  @JSName("find")
+  def find_meta(selector_element: JQuery_[meta]): JQuery_[HTMLMetaElement] = js.native
+  @JSName("find")
+  def find_meta(selector_element: meta): JQuery_[HTMLMetaElement] = js.native
+  @JSName("find")
+  def find_metadata(selector_element: JQuery_[metadata]): JQuery_[SVGMetadataElement] = js.native
+  @JSName("find")
+  def find_metadata(selector_element: metadata): JQuery_[SVGMetadataElement] = js.native
+  @JSName("find")
+  def find_meter(selector_element: JQuery_[meter]): JQuery_[HTMLMeterElement] = js.native
+  @JSName("find")
+  def find_meter(selector_element: meter): JQuery_[HTMLMeterElement] = js.native
+  @JSName("find")
+  def find_nav(selector_element: JQuery_[nav]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_nav(selector_element: nav): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_noscript(selector_element: JQuery_[noscript]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_noscript(selector_element: noscript): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_object(selector_element: JQuery_[`object`]): JQuery_[HTMLObjectElement] = js.native
+  @JSName("find")
+  def find_object(selector_element: `object`): JQuery_[HTMLObjectElement] = js.native
+  @JSName("find")
+  def find_ol(selector_element: JQuery_[ol]): JQuery_[HTMLOListElement] = js.native
+  @JSName("find")
+  def find_ol(selector_element: ol): JQuery_[HTMLOListElement] = js.native
+  @JSName("find")
+  def find_optgroup(selector_element: JQuery_[optgroup]): JQuery_[HTMLOptGroupElement] = js.native
+  @JSName("find")
+  def find_optgroup(selector_element: optgroup): JQuery_[HTMLOptGroupElement] = js.native
+  @JSName("find")
+  def find_option(selector_element: JQuery_[option]): JQuery_[HTMLOptionElement] = js.native
+  @JSName("find")
+  def find_option(selector_element: option): JQuery_[HTMLOptionElement] = js.native
+  @JSName("find")
+  def find_output(selector_element: JQuery_[output]): JQuery_[HTMLOutputElement] = js.native
+  @JSName("find")
+  def find_output(selector_element: output): JQuery_[HTMLOutputElement] = js.native
+  @JSName("find")
+  def find_p(selector_element: JQuery_[p]): JQuery_[HTMLParagraphElement] = js.native
+  @JSName("find")
+  def find_p(selector_element: p): JQuery_[HTMLParagraphElement] = js.native
+  @JSName("find")
+  def find_param(selector_element: JQuery_[param]): JQuery_[HTMLParamElement] = js.native
+  @JSName("find")
+  def find_param(selector_element: param): JQuery_[HTMLParamElement] = js.native
+  @JSName("find")
+  def find_path(selector_element: JQuery_[path]): JQuery_[SVGPathElement] = js.native
+  @JSName("find")
+  def find_path(selector_element: path): JQuery_[SVGPathElement] = js.native
+  @JSName("find")
+  def find_pattern(selector_element: JQuery_[pattern]): JQuery_[SVGPatternElement] = js.native
+  @JSName("find")
+  def find_pattern(selector_element: pattern): JQuery_[SVGPatternElement] = js.native
+  @JSName("find")
+  def find_picture(selector_element: JQuery_[picture]): JQuery_[HTMLPictureElement] = js.native
+  @JSName("find")
+  def find_picture(selector_element: picture): JQuery_[HTMLPictureElement] = js.native
+  @JSName("find")
+  def find_polygon(selector_element: JQuery_[polygon]): JQuery_[SVGPolygonElement] = js.native
+  @JSName("find")
+  def find_polygon(selector_element: polygon): JQuery_[SVGPolygonElement] = js.native
+  @JSName("find")
+  def find_polyline(selector_element: JQuery_[polyline]): JQuery_[SVGPolylineElement] = js.native
+  @JSName("find")
+  def find_polyline(selector_element: polyline): JQuery_[SVGPolylineElement] = js.native
+  @JSName("find")
+  def find_pre(selector_element: JQuery_[pre]): JQuery_[HTMLPreElement] = js.native
+  @JSName("find")
+  def find_pre(selector_element: pre): JQuery_[HTMLPreElement] = js.native
+  @JSName("find")
+  def find_progress(selector_element: JQuery_[progress]): JQuery_[HTMLProgressElement] = js.native
+  @JSName("find")
+  def find_progress(selector_element: progress): JQuery_[HTMLProgressElement] = js.native
+  @JSName("find")
+  def find_q(selector_element: JQuery_[q]): JQuery_[HTMLQuoteElement] = js.native
+  @JSName("find")
+  def find_q(selector_element: q): JQuery_[HTMLQuoteElement] = js.native
+  @JSName("find")
+  def find_radialGradient(selector_element: JQuery_[radialGradient]): JQuery_[SVGRadialGradientElement] = js.native
+  @JSName("find")
+  def find_radialGradient(selector_element: radialGradient): JQuery_[SVGRadialGradientElement] = js.native
+  @JSName("find")
+  def find_rect(selector_element: JQuery_[rect]): JQuery_[SVGRectElement] = js.native
+  @JSName("find")
+  def find_rect(selector_element: rect): JQuery_[SVGRectElement] = js.native
+  @JSName("find")
+  def find_rp(selector_element: JQuery_[rp]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_rp(selector_element: rp): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_rt(selector_element: JQuery_[rt]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_rt(selector_element: rt): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_ruby(selector_element: JQuery_[ruby]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_ruby(selector_element: ruby): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_s(selector_element: JQuery_[s]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_s(selector_element: s): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_samp(selector_element: JQuery_[samp]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_samp(selector_element: samp): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_script(selector_element: JQuery_[script]): JQuery_[HTMLScriptElement] = js.native
+  @JSName("find")
+  def find_script(selector_element: script): JQuery_[HTMLScriptElement] = js.native
+  @JSName("find")
+  def find_section(selector_element: JQuery_[section]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_section(selector_element: section): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_select(selector_element: JQuery_[select]): JQuery_[HTMLSelectElement] = js.native
+  @JSName("find")
+  def find_select(selector_element: select): JQuery_[HTMLSelectElement] = js.native
+  @JSName("find")
+  def find_slot(selector_element: JQuery_[slot]): JQuery_[HTMLSlotElement] = js.native
+  @JSName("find")
+  def find_slot(selector_element: slot): JQuery_[HTMLSlotElement] = js.native
+  @JSName("find")
+  def find_small(selector_element: JQuery_[small]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_small(selector_element: small): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_source(selector_element: JQuery_[source]): JQuery_[HTMLSourceElement] = js.native
+  @JSName("find")
+  def find_source(selector_element: source): JQuery_[HTMLSourceElement] = js.native
+  @JSName("find")
+  def find_span(selector_element: JQuery_[span]): JQuery_[HTMLSpanElement] = js.native
+  @JSName("find")
+  def find_span(selector_element: span): JQuery_[HTMLSpanElement] = js.native
+  @JSName("find")
+  def find_stop(selector_element: JQuery_[stop]): JQuery_[SVGStopElement] = js.native
+  @JSName("find")
+  def find_stop(selector_element: stop): JQuery_[SVGStopElement] = js.native
+  @JSName("find")
+  def find_strong(selector_element: JQuery_[strong]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_strong(selector_element: strong): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_style(selector_element: JQuery_[style]): JQuery_[HTMLStyleElement] = js.native
+  @JSName("find")
+  def find_style(selector_element: style): JQuery_[HTMLStyleElement] = js.native
+  @JSName("find")
+  def find_sub(selector_element: JQuery_[sub]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_sub(selector_element: sub): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_summary(selector_element: JQuery_[summary]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_summary(selector_element: summary): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_sup(selector_element: JQuery_[sup]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_sup(selector_element: sup): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_svg(selector_element: JQuery_[svg]): JQuery_[SVGSVGElement] = js.native
+  @JSName("find")
+  def find_svg(selector_element: svg): JQuery_[SVGSVGElement] = js.native
+  @JSName("find")
+  def find_switch(selector_element: JQuery_[switch]): JQuery_[SVGSwitchElement] = js.native
+  @JSName("find")
+  def find_switch(selector_element: switch): JQuery_[SVGSwitchElement] = js.native
+  @JSName("find")
+  def find_symbol(selector_element: JQuery_[symbol]): JQuery_[SVGSymbolElement] = js.native
+  @JSName("find")
+  def find_symbol(selector_element: symbol): JQuery_[SVGSymbolElement] = js.native
+  @JSName("find")
+  def find_table(selector_element: JQuery_[table]): JQuery_[HTMLTableElement] = js.native
+  @JSName("find")
+  def find_table(selector_element: table): JQuery_[HTMLTableElement] = js.native
+  @JSName("find")
+  def find_tbody(selector_element: JQuery_[tbody]): JQuery_[HTMLTableSectionElement] = js.native
+  @JSName("find")
+  def find_tbody(selector_element: tbody): JQuery_[HTMLTableSectionElement] = js.native
+  @JSName("find")
+  def find_td(selector_element: JQuery_[td]): JQuery_[HTMLTableDataCellElement] = js.native
+  @JSName("find")
+  def find_td(selector_element: td): JQuery_[HTMLTableDataCellElement] = js.native
+  @JSName("find")
+  def find_template(selector_element: JQuery_[template]): JQuery_[HTMLTemplateElement] = js.native
+  @JSName("find")
+  def find_template(selector_element: template): JQuery_[HTMLTemplateElement] = js.native
+  @JSName("find")
+  def find_text(selector_element: JQuery_[text]): JQuery_[SVGTextElement] = js.native
+  @JSName("find")
+  def find_text(selector_element: text): JQuery_[SVGTextElement] = js.native
+  @JSName("find")
+  def find_textPath(selector_element: JQuery_[textPath]): JQuery_[SVGTextPathElement] = js.native
+  @JSName("find")
+  def find_textPath(selector_element: textPath): JQuery_[SVGTextPathElement] = js.native
+  @JSName("find")
+  def find_textarea(selector_element: JQuery_[textarea]): JQuery_[HTMLTextAreaElement] = js.native
+  @JSName("find")
+  def find_textarea(selector_element: textarea): JQuery_[HTMLTextAreaElement] = js.native
+  @JSName("find")
+  def find_tfoot(selector_element: JQuery_[tfoot]): JQuery_[HTMLTableSectionElement] = js.native
+  @JSName("find")
+  def find_tfoot(selector_element: tfoot): JQuery_[HTMLTableSectionElement] = js.native
+  @JSName("find")
+  def find_th(selector_element: JQuery_[th]): JQuery_[HTMLTableHeaderCellElement] = js.native
+  @JSName("find")
+  def find_th(selector_element: th): JQuery_[HTMLTableHeaderCellElement] = js.native
+  @JSName("find")
+  def find_thead(selector_element: JQuery_[thead]): JQuery_[HTMLTableSectionElement] = js.native
+  @JSName("find")
+  def find_thead(selector_element: thead): JQuery_[HTMLTableSectionElement] = js.native
+  @JSName("find")
+  def find_time(selector_element: JQuery_[time]): JQuery_[HTMLTimeElement] = js.native
+  @JSName("find")
+  def find_time(selector_element: time): JQuery_[HTMLTimeElement] = js.native
+  @JSName("find")
+  def find_title(selector_element: JQuery_[title]): JQuery_[HTMLTitleElement] = js.native
+  @JSName("find")
+  def find_title(selector_element: title): JQuery_[HTMLTitleElement] = js.native
+  @JSName("find")
+  def find_tr(selector_element: JQuery_[tr]): JQuery_[HTMLTableRowElement] = js.native
+  @JSName("find")
+  def find_tr(selector_element: tr): JQuery_[HTMLTableRowElement] = js.native
+  @JSName("find")
+  def find_track(selector_element: JQuery_[track]): JQuery_[HTMLTrackElement] = js.native
+  @JSName("find")
+  def find_track(selector_element: track): JQuery_[HTMLTrackElement] = js.native
+  @JSName("find")
+  def find_tspan(selector_element: JQuery_[tspan]): JQuery_[SVGTSpanElement] = js.native
+  @JSName("find")
+  def find_tspan(selector_element: tspan): JQuery_[SVGTSpanElement] = js.native
+  @JSName("find")
+  def find_u(selector_element: JQuery_[u]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_u(selector_element: u): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_ul(selector_element: JQuery_[ul]): JQuery_[HTMLUListElement] = js.native
+  @JSName("find")
+  def find_ul(selector_element: ul): JQuery_[HTMLUListElement] = js.native
+  @JSName("find")
+  def find_use(selector_element: JQuery_[use]): JQuery_[SVGUseElement] = js.native
+  @JSName("find")
+  def find_use(selector_element: use): JQuery_[SVGUseElement] = js.native
+  @JSName("find")
+  def find_var(selector_element: JQuery_[`var`]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_var(selector_element: `var`): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_video(selector_element: JQuery_[video]): JQuery_[HTMLVideoElement] = js.native
+  @JSName("find")
+  def find_video(selector_element: video): JQuery_[HTMLVideoElement] = js.native
+  @JSName("find")
+  def find_view(selector_element: JQuery_[view]): JQuery_[SVGViewElement] = js.native
+  @JSName("find")
+  def find_view(selector_element: view): JQuery_[SVGViewElement] = js.native
+  @JSName("find")
+  def find_wbr(selector_element: JQuery_[wbr]): JQuery_[HTMLElement] = js.native
+  @JSName("find")
+  def find_wbr(selector_element: wbr): JQuery_[HTMLElement] = js.native
   /**
     * Stop the currently-running animation, remove all queued animations, and complete all animations for the matched elements.
     * @param queue The name of the queue in which to stop animations.

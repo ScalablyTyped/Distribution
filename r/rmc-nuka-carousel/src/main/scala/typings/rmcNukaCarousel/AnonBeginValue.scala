@@ -26,7 +26,6 @@ object AnonBeginValue {
     stackBehavior: js.Any
   ): AnonBeginValue = {
     val __obj = js.Dynamic.literal(beginValue = beginValue.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], easing = easing.asInstanceOf[js.Any], endValue = endValue.asInstanceOf[js.Any], onEnd = onEnd.asInstanceOf[js.Any], stackBehavior = stackBehavior.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBeginValue]
   }
 }

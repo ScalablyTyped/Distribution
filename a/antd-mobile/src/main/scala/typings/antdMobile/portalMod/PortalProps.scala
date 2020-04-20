@@ -13,7 +13,6 @@ object PortalProps {
   @scala.inline
   def apply(getContainer: () => Element): PortalProps = {
     val __obj = js.Dynamic.literal(getContainer = js.Any.fromFunction0(getContainer))
-  
     __obj.asInstanceOf[PortalProps]
   }
 }

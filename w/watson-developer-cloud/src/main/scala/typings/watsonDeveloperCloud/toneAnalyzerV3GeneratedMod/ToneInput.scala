@@ -14,7 +14,6 @@ object ToneInput {
   @scala.inline
   def apply(text: String): ToneInput = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ToneInput]
   }
 }

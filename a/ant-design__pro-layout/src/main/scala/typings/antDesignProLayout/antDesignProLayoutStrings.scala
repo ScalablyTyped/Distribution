@@ -1,6 +1,7 @@
 package typings.antDesignProLayout
 
 import typings.antDesignProLayout.defaultSettingsMod.ContentWidth
+import typings.antDesignProLayout.localesMod.localeType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,10 +14,10 @@ object antDesignProLayoutStrings {
   sealed trait Fluid extends ContentWidth
   
   @js.native
-  sealed trait `en-US` extends js.Object
+  sealed trait `en-US` extends localeType
   
   @js.native
-  sealed trait `it-IT` extends js.Object
+  sealed trait `it-IT` extends localeType
   
   @js.native
   sealed trait itemRender extends js.Object
@@ -34,10 +35,10 @@ object antDesignProLayoutStrings {
   sealed trait topmenu extends js.Object
   
   @js.native
-  sealed trait `zh-CN` extends js.Object
+  sealed trait `zh-CN` extends localeType
   
   @js.native
-  sealed trait `zh-TW` extends js.Object
+  sealed trait `zh-TW` extends localeType
   
   @scala.inline
   def Fixed: Fixed = "Fixed".asInstanceOf[Fixed]

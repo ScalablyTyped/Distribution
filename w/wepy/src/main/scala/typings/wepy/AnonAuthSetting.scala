@@ -12,7 +12,6 @@ object AnonAuthSetting {
   @scala.inline
   def apply(authSetting: AnonScopeaddress): AnonAuthSetting = {
     val __obj = js.Dynamic.literal(authSetting = authSetting.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAuthSetting]
   }
 }

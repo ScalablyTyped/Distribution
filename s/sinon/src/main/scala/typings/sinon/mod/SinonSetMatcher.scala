@@ -25,7 +25,6 @@ object SinonSetMatcher {
     test: js.Any => Boolean
   ): SinonSetMatcher = {
     val __obj = js.Dynamic.literal(and = js.Any.fromFunction1(and), contains = js.Any.fromFunction1(contains), deepEquals = js.Any.fromFunction1(deepEquals), or = js.Any.fromFunction1(or), test = js.Any.fromFunction1(test))
-  
     __obj.asInstanceOf[SinonSetMatcher]
   }
 }

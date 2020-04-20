@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNativePercentageCircleProps {
   @scala.inline
-  def ReactNativePercentageCircleProps: PercentageCircleProps.type = typings.reactNativePercentageCircle.mod.PercentageCircleProps
+  def ReactNativePercentageCircleProps: PercentageCircleProps.type = PercentageCircleProps
   type ReactNativePercentageCircleProps = PercentageCircleProps
 }
 

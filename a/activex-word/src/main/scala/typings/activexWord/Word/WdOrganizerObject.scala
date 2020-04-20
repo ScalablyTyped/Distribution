@@ -18,14 +18,12 @@ trait WdOrganizerObject extends js.Object
 
 object WdOrganizerObject {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdOrganizerObjectAutoText: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdOrganizerObjectAutoText: `1` = this.cast(1)
+  def wdOrganizerObjectCommandBars: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdOrganizerObjectCommandBars: `2` = this.cast(2)
+  def wdOrganizerObjectProjectItems: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdOrganizerObjectProjectItems: `3` = this.cast(3)
-  @scala.inline
-  def wdOrganizerObjectStyles: `0` = this.cast(0)
+  def wdOrganizerObjectStyles: `0` = 0.asInstanceOf[`0`]
 }
 

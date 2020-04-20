@@ -131,11 +131,11 @@ trait Queue[T] extends EventEmitter {
     * If the specified job cannot be located, the promise callback parameter will be set to null.
     */
   def getJob(jobId: JobId): js.Promise[Job[T] | Null] = js.native
-  def getJobCountByTypes(types: String): js.Promise[JobCounts] = js.native
   /**
-    * Returns a promise that resolves with the job counts for the given queue of the given types.
+    * Returns a promise that resolves with the job counts for the given queue of the given job statuses.
     */
-  def getJobCountByTypes(types: js.Array[String]): js.Promise[JobCounts] = js.native
+  def getJobCountByTypes(types: js.Array[JobStatus]): js.Promise[JobCounts] = js.native
+  def getJobCountByTypes(types: JobStatus): js.Promise[JobCounts] = js.native
   /**
     * Returns a promise that resolves with the job counts for the given queue.
     */
@@ -148,13 +148,13 @@ trait Queue[T] extends EventEmitter {
   def getJobLogs(jobId: String, start: Double): js.Promise[AnonCount] = js.native
   def getJobLogs(jobId: String, start: Double, end: Double): js.Promise[AnonCount] = js.native
   /**
-    * Returns a promise that will return an array of job instances of the given types.
+    * Returns a promise that will return an array of job instances of the given job statuses.
     * Optional parameters for range and ordering are provided.
     */
-  def getJobs(types: js.Array[String]): js.Promise[js.Array[Job[T]]] = js.native
-  def getJobs(types: js.Array[String], start: Double): js.Promise[js.Array[Job[T]]] = js.native
-  def getJobs(types: js.Array[String], start: Double, end: Double): js.Promise[js.Array[Job[T]]] = js.native
-  def getJobs(types: js.Array[String], start: Double, end: Double, asc: Boolean): js.Promise[js.Array[Job[T]]] = js.native
+  def getJobs(types: js.Array[JobStatus]): js.Promise[js.Array[Job[T]]] = js.native
+  def getJobs(types: js.Array[JobStatus], start: Double): js.Promise[js.Array[Job[T]]] = js.native
+  def getJobs(types: js.Array[JobStatus], start: Double, end: Double): js.Promise[js.Array[Job[T]]] = js.native
+  def getJobs(types: js.Array[JobStatus], start: Double, end: Double, asc: Boolean): js.Promise[js.Array[Job[T]]] = js.native
   /**
     * Returns a promise that resolves with the quantity of paused jobs.
     */

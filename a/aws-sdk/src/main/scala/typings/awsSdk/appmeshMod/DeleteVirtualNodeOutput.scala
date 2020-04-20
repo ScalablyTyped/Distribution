@@ -16,7 +16,6 @@ object DeleteVirtualNodeOutput {
   @scala.inline
   def apply(virtualNode: VirtualNodeData): DeleteVirtualNodeOutput = {
     val __obj = js.Dynamic.literal(virtualNode = virtualNode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteVirtualNodeOutput]
   }
 }

@@ -14,14 +14,12 @@ trait TableChangeType extends js.Object
 
 object TableChangeType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cellEdit: typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.cellEdit = "cellEdit".asInstanceOf[typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.cellEdit]
   @scala.inline
-  def cellEdit: typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.cellEdit = this.cast("cellEdit")
+  def filter: typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.filter = "filter".asInstanceOf[typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.filter]
   @scala.inline
-  def filter: typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.filter = this.cast("filter")
+  def pagination: typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.pagination = "pagination".asInstanceOf[typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.pagination]
   @scala.inline
-  def pagination: typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.pagination = this.cast("pagination")
-  @scala.inline
-  def sort: typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.sort = this.cast("sort")
+  def sort: typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.sort = "sort".asInstanceOf[typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.sort]
 }
 

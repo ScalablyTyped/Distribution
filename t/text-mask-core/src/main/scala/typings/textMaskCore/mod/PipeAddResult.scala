@@ -13,7 +13,6 @@ object PipeAddResult {
   @scala.inline
   def apply(indexesOfPipedChars: js.Array[Double], value: String): PipeAddResult = {
     val __obj = js.Dynamic.literal(indexesOfPipedChars = indexesOfPipedChars.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PipeAddResult]
   }
 }

@@ -18,7 +18,7 @@ class BrowseCarouselCard_ () extends IBrowseCarouselCard {
   def this(properties: IBrowseCarouselCard) = this()
   /** BrowseCarouselCard imageDisplayOptions. */
   @JSName("imageDisplayOptions")
-  var imageDisplayOptions_BrowseCarouselCard_ : ImageDisplayOptions | String = js.native
+  var imageDisplayOptions_BrowseCarouselCard_ : ImageDisplayOptions | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.ImageDisplayOptions * / any */ String) = js.native
   /** BrowseCarouselCard items. */
   @JSName("items")
   var items_BrowseCarouselCard_ : js.Array[IBrowseCarouselCardItem] = js.native

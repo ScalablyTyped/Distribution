@@ -16,7 +16,6 @@ object GetRawMessageContentRequest {
   @scala.inline
   def apply(messageId: messageIdType): GetRawMessageContentRequest = {
     val __obj = js.Dynamic.literal(messageId = messageId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetRawMessageContentRequest]
   }
 }

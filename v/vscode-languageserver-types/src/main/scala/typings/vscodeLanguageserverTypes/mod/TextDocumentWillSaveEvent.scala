@@ -22,7 +22,6 @@ object TextDocumentWillSaveEvent {
   @scala.inline
   def apply(document: TextDocument, reason: `1` | `2` | `3`): TextDocumentWillSaveEvent = {
     val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TextDocumentWillSaveEvent]
   }
 }

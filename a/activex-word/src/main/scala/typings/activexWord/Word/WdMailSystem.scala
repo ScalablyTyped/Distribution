@@ -18,14 +18,12 @@ trait WdMailSystem extends js.Object
 
 object WdMailSystem {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdMAPI: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdMAPI: `1` = this.cast(1)
+  def wdMAPIandPowerTalk: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdMAPIandPowerTalk: `3` = this.cast(3)
+  def wdNoMailSystem: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdNoMailSystem: `0` = this.cast(0)
-  @scala.inline
-  def wdPowerTalk: `2` = this.cast(2)
+  def wdPowerTalk: `2` = 2.asInstanceOf[`2`]
 }
 

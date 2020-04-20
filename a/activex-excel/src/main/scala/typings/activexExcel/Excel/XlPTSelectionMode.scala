@@ -24,20 +24,18 @@ trait XlPTSelectionMode extends js.Object
 
 object XlPTSelectionMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlBlanks: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlBlanks: `4` = this.cast(4)
+  def xlButton: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def xlButton: `15` = this.cast(15)
+  def xlDataAndLabel: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def xlDataAndLabel: `0` = this.cast(0)
+  def xlDataOnly: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlDataOnly: `2` = this.cast(2)
+  def xlFirstRow: `256` = 256.asInstanceOf[`256`]
   @scala.inline
-  def xlFirstRow: `256` = this.cast(256)
+  def xlLabelOnly: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlLabelOnly: `1` = this.cast(1)
-  @scala.inline
-  def xlOrigin: `3` = this.cast(3)
+  def xlOrigin: `3` = 3.asInstanceOf[`3`]
 }
 

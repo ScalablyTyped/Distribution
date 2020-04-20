@@ -13,7 +13,6 @@ object ParseResponse {
   @scala.inline
   def apply(parsed: js.Array[String], unparseable: js.Array[String]): ParseResponse = {
     val __obj = js.Dynamic.literal(parsed = parsed.asInstanceOf[js.Any], unparseable = unparseable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ParseResponse]
   }
 }

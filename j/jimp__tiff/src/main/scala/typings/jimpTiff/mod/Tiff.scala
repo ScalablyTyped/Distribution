@@ -24,7 +24,6 @@ object Tiff {
     mime: AnonImagetiff
   ): Tiff = {
     val __obj = js.Dynamic.literal(constants = constants.asInstanceOf[js.Any], decoders = decoders.asInstanceOf[js.Any], encoders = encoders.asInstanceOf[js.Any], mime = mime.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Tiff]
   }
 }

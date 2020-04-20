@@ -16,7 +16,6 @@ object GetResolverEndpointRequest {
   @scala.inline
   def apply(ResolverEndpointId: ResourceId): GetResolverEndpointRequest = {
     val __obj = js.Dynamic.literal(ResolverEndpointId = ResolverEndpointId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetResolverEndpointRequest]
   }
 }

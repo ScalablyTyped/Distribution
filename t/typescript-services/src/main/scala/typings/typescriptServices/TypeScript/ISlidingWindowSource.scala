@@ -18,7 +18,6 @@ object ISlidingWindowSource {
   @scala.inline
   def apply(fetchMoreItems: (js.Any, Double, js.Array[_], Double, Double) => Double): ISlidingWindowSource = {
     val __obj = js.Dynamic.literal(fetchMoreItems = js.Any.fromFunction5(fetchMoreItems))
-  
     __obj.asInstanceOf[ISlidingWindowSource]
   }
 }

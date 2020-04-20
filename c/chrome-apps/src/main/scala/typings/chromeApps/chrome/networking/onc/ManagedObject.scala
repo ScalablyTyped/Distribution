@@ -12,10 +12,8 @@ trait ManagedObject extends js.Object
 
 object ManagedObject {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def managed: typings.chromeApps.chromeAppsStrings.managed = "managed".asInstanceOf[typings.chromeApps.chromeAppsStrings.managed]
   @scala.inline
-  def managed: typings.chromeApps.chromeAppsStrings.managed = this.cast("managed")
-  @scala.inline
-  def unmanaged: typings.chromeApps.chromeAppsStrings.unmanaged = this.cast("unmanaged")
+  def unmanaged: typings.chromeApps.chromeAppsStrings.unmanaged = "unmanaged".asInstanceOf[typings.chromeApps.chromeAppsStrings.unmanaged]
 }
 

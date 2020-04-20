@@ -20,7 +20,6 @@ object DescribeMigrationTaskRequest {
   @scala.inline
   def apply(MigrationTaskName: MigrationTaskName, ProgressUpdateStream: ProgressUpdateStream): DescribeMigrationTaskRequest = {
     val __obj = js.Dynamic.literal(MigrationTaskName = MigrationTaskName.asInstanceOf[js.Any], ProgressUpdateStream = ProgressUpdateStream.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeMigrationTaskRequest]
   }
 }

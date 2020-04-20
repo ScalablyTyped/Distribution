@@ -30,7 +30,7 @@ class NavigationList protected () extends ConditionallyVisibleWidget {
   ) = this()
   @JSName("model")
   var model_FNavigationList: IModel = js.native
-  def items(): IList[NavigationListItem] = js.native
+  def items: IList[NavigationListItem] = js.native
 }
 
 /* static members */

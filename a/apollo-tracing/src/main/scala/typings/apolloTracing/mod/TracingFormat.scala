@@ -18,7 +18,6 @@ object TracingFormat {
   @scala.inline
   def apply(duration: Double, endTime: String, execution: AnonResolvers, startTime: String, version: `1`): TracingFormat = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], endTime = endTime.asInstanceOf[js.Any], execution = execution.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TracingFormat]
   }
 }

@@ -18,14 +18,12 @@ trait WdFarEastLineBreakLanguageID extends js.Object
 
 object WdFarEastLineBreakLanguageID {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdLineBreakJapanese: `1041` = 1041.asInstanceOf[`1041`]
   @scala.inline
-  def wdLineBreakJapanese: `1041` = this.cast(1041)
+  def wdLineBreakKorean: `1042` = 1042.asInstanceOf[`1042`]
   @scala.inline
-  def wdLineBreakKorean: `1042` = this.cast(1042)
+  def wdLineBreakSimplifiedChinese: `2052` = 2052.asInstanceOf[`2052`]
   @scala.inline
-  def wdLineBreakSimplifiedChinese: `2052` = this.cast(2052)
-  @scala.inline
-  def wdLineBreakTraditionalChinese: `1028` = this.cast(1028)
+  def wdLineBreakTraditionalChinese: `1028` = 1028.asInstanceOf[`1028`]
 }
 

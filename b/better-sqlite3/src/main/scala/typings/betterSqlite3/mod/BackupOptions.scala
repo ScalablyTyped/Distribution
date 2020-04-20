@@ -12,7 +12,6 @@ object BackupOptions {
   @scala.inline
   def apply(progress: BackupMetadata => Double): BackupOptions = {
     val __obj = js.Dynamic.literal(progress = js.Any.fromFunction1(progress))
-  
     __obj.asInstanceOf[BackupOptions]
   }
 }

@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait StartHumanLoopRequest extends js.Object {
   /**
-    * Attributes of the data specified by the customer.
+    * Attributes of the specified data. Use DataAttributes to specify if your data is free of personally identifiable information and/or free of adult content.
     */
   var DataAttributes: js.UndefOr[HumanLoopDataAttributes] = js.native
   /**
-    * The Amazon Resource Name (ARN) of the flow definition.
+    * The Amazon Resource Name (ARN) of the flow definition associated with this human loop.
     */
   var FlowDefinitionArn: typings.awsSdk.augmentedairuntimeMod.FlowDefinitionArn = js.native
   /**
-    * An object containing information about the human loop.
+    * An object that contains information about the human loop.
     */
   var HumanLoopInput: typings.awsSdk.augmentedairuntimeMod.HumanLoopInput = js.native
   /**

@@ -15,7 +15,6 @@ object Threshold {
   @scala.inline
   def apply(line: PartialGaugeLine, thickness: Double, value: Double): Threshold = {
     val __obj = js.Dynamic.literal(line = line.asInstanceOf[js.Any], thickness = thickness.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Threshold]
   }
 }

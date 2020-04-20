@@ -66,7 +66,6 @@ object AnonBRL {
     XCD: js.Array[String]
   ): AnonBRL = {
     val __obj = js.Dynamic.literal(AUD = AUD.asInstanceOf[js.Any], BBD = BBD.asInstanceOf[js.Any], BMD = BMD.asInstanceOf[js.Any], BRL = BRL.asInstanceOf[js.Any], BSD = BSD.asInstanceOf[js.Any], BYN = BYN.asInstanceOf[js.Any], BZD = BZD.asInstanceOf[js.Any], CAD = CAD.asInstanceOf[js.Any], CUC = CUC.asInstanceOf[js.Any], CUP = CUP.asInstanceOf[js.Any], DOP = DOP.asInstanceOf[js.Any], FJD = FJD.asInstanceOf[js.Any], FKP = FKP.asInstanceOf[js.Any], GYD = GYD.asInstanceOf[js.Any], ISK = ISK.asInstanceOf[js.Any], JMD = JMD.asInstanceOf[js.Any], KYD = KYD.asInstanceOf[js.Any], LRD = LRD.asInstanceOf[js.Any], MXN = MXN.asInstanceOf[js.Any], NAD = NAD.asInstanceOf[js.Any], NZD = NZD.asInstanceOf[js.Any], RUB = RUB.asInstanceOf[js.Any], SBD = SBD.asInstanceOf[js.Any], SGD = SGD.asInstanceOf[js.Any], TTD = TTD.asInstanceOf[js.Any], UYU = UYU.asInstanceOf[js.Any], XCD = XCD.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBRL]
   }
 }

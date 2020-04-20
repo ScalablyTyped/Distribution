@@ -12,10 +12,8 @@ trait Filter extends js.Object
 
 object Filter {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def exclude: typings.jsdevtoolsFilePathFilter.jsdevtoolsFilePathFilterStrings.exclude = "exclude".asInstanceOf[typings.jsdevtoolsFilePathFilter.jsdevtoolsFilePathFilterStrings.exclude]
   @scala.inline
-  def exclude: typings.jsdevtoolsFilePathFilter.jsdevtoolsFilePathFilterStrings.exclude = this.cast("exclude")
-  @scala.inline
-  def include: typings.jsdevtoolsFilePathFilter.jsdevtoolsFilePathFilterStrings.include = this.cast("include")
+  def include: typings.jsdevtoolsFilePathFilter.jsdevtoolsFilePathFilterStrings.include = "include".asInstanceOf[typings.jsdevtoolsFilePathFilter.jsdevtoolsFilePathFilterStrings.include]
 }
 

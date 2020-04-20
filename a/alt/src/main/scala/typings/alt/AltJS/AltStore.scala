@@ -20,7 +20,6 @@ object AltStore {
     unlisten: js.Function1[/* state */ S, _] => Unit
   ): AltStore[S] = {
     val __obj = js.Dynamic.literal(emitChange = js.Any.fromFunction0(emitChange), getState = js.Any.fromFunction0(getState), listen = js.Any.fromFunction1(listen), unlisten = js.Any.fromFunction1(unlisten))
-  
     __obj.asInstanceOf[AltStore[S]]
   }
 }

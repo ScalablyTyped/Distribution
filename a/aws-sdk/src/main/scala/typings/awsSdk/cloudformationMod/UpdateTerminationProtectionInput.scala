@@ -20,7 +20,6 @@ object UpdateTerminationProtectionInput {
   @scala.inline
   def apply(EnableTerminationProtection: EnableTerminationProtection, StackName: StackNameOrId): UpdateTerminationProtectionInput = {
     val __obj = js.Dynamic.literal(EnableTerminationProtection = EnableTerminationProtection.asInstanceOf[js.Any], StackName = StackName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateTerminationProtectionInput]
   }
 }

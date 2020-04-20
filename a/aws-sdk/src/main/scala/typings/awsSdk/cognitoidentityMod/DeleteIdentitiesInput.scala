@@ -16,7 +16,6 @@ object DeleteIdentitiesInput {
   @scala.inline
   def apply(IdentityIdsToDelete: IdentityIdList): DeleteIdentitiesInput = {
     val __obj = js.Dynamic.literal(IdentityIdsToDelete = IdentityIdsToDelete.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteIdentitiesInput]
   }
 }

@@ -13,6 +13,20 @@ trait IRouteProvider extends IServiceProvider {
     * This option defaults to false. If the option is set to true, then the particular route can be matched without being case sensitive
     */
   var caseInsensitiveMatch: js.UndefOr[Boolean] = js.native
+  /**
+    * Call this method as a getter (i.e. without any arguments) to get the current value of the eagerInstantiationEnabled flag.
+    */
+  def eagerInstantiationEnabled(): Boolean = js.native
+  /**
+    * Call this method as a setter to enable/disable eager instantiation of the $route service upon application bootstrap.
+    *
+    * Instantiating $route early is necessary for capturing the initial $locationChangeStart event and navigating to the appropriate route. Usually, $route is instantiated in time by the ngView directive. Yet, in cases where ngView is included in an asynchronously loaded template (e.g. in another directive's template), the directive factory might not be called soon enough for $route to be instantiated before the initial $locationChangeSuccess event is fired. Eager instantiation ensures that $route is always instantiated in time, regardless of when ngView will be loaded.
+    *
+    * The default value is true.
+    *
+    * @param enabled If provided, update the internal eagerInstantiationEnabled flag.
+    */
+  def eagerInstantiationEnabled(enabled: Boolean): IRouteProvider = js.native
   def otherwise(params: String): IRouteProvider = js.native
   /**
     * Sets route definition that will be used on route change when no other route definition is matched.

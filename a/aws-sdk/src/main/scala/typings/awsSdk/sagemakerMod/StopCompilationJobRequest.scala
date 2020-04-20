@@ -16,7 +16,6 @@ object StopCompilationJobRequest {
   @scala.inline
   def apply(CompilationJobName: EntityName): StopCompilationJobRequest = {
     val __obj = js.Dynamic.literal(CompilationJobName = CompilationJobName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopCompilationJobRequest]
   }
 }

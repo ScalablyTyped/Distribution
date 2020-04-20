@@ -14,14 +14,12 @@ trait TriggerEvent extends js.Object
 
 object TriggerEvent {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def chosenColonactivate: typings.chosenJs.chosenJsStrings.chosenColonactivate = "chosen:activate".asInstanceOf[typings.chosenJs.chosenJsStrings.chosenColonactivate]
   @scala.inline
-  def chosenColonactivate: typings.chosenJs.chosenJsStrings.chosenColonactivate = this.cast("chosen:activate")
+  def chosenColonclose: typings.chosenJs.chosenJsStrings.chosenColonclose = "chosen:close".asInstanceOf[typings.chosenJs.chosenJsStrings.chosenColonclose]
   @scala.inline
-  def chosenColonclose: typings.chosenJs.chosenJsStrings.chosenColonclose = this.cast("chosen:close")
+  def chosenColonopen: typings.chosenJs.chosenJsStrings.chosenColonopen = "chosen:open".asInstanceOf[typings.chosenJs.chosenJsStrings.chosenColonopen]
   @scala.inline
-  def chosenColonopen: typings.chosenJs.chosenJsStrings.chosenColonopen = this.cast("chosen:open")
-  @scala.inline
-  def chosenColonupdated: typings.chosenJs.chosenJsStrings.chosenColonupdated = this.cast("chosen:updated")
+  def chosenColonupdated: typings.chosenJs.chosenJsStrings.chosenColonupdated = "chosen:updated".asInstanceOf[typings.chosenJs.chosenJsStrings.chosenColonupdated]
 }
 

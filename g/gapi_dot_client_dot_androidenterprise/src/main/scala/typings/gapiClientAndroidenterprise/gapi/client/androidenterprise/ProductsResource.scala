@@ -54,7 +54,6 @@ object ProductsResource {
     unapprove: AnonProductId => Request_[Unit]
   ): ProductsResource = {
     val __obj = js.Dynamic.literal(approve = js.Any.fromFunction1(approve), generateApprovalUrl = js.Any.fromFunction1(generateApprovalUrl), get = js.Any.fromFunction1(get), getAppRestrictionsSchema = js.Any.fromFunction1(getAppRestrictionsSchema), getPermissions = js.Any.fromFunction1(getPermissions), list = js.Any.fromFunction1(list), unapprove = js.Any.fromFunction1(unapprove))
-  
     __obj.asInstanceOf[ProductsResource]
   }
 }

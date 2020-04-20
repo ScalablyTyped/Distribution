@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 class PluginCollection[P /* <: Plugin[_] */] protected () extends js.Object {
   def this(editor: Editor) = this()
   def this(editor: Editor, availablePlugins: js.Array[Instantiable1[/* editor */ Editor, P]]) = this()
-  @JSName(scala.scalajs.js.Symbol.iterator)
+  @JSName(js.Symbol.iterator)
   var iterator: js.Function0[
     Iterator[js.Tuple2[Instantiable1[/* editor */ Editor, P], P], _, js.UndefOr[scala.Nothing]]
   ] = js.native

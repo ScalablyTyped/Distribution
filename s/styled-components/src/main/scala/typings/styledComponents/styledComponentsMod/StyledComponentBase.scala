@@ -188,7 +188,7 @@ import scala.scalajs.js.annotation._
 
 /* Inlined parent styled-components.styled-components.ForwardRefExoticBase<styled-components.styled-components.StyledComponentProps<C, T, O, A>> */
 @js.native
-trait StyledComponentBase[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any */, T /* <: js.Object */, O /* <: js.Object */, A /* <: String */] extends js.Object {
+trait StyledComponentBase[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any */, T /* <: js.Object */, O /* <: js.Object */, A /* <: /* keyof any */ String */] extends js.Object {
   @JSName("$$typeof")
   var DollarDollartypeof: js.Symbol = js.native
   var defaultProps: js.UndefOr[Partial[StyledComponentProps[C, T, O, A]]] = js.native
@@ -207,14 +207,14 @@ trait StyledComponentBase[C /* <: /* import warning: LimitUnionLength.leaveTypeR
   // ): React.ReactElement<StyledComponentPropsWithAs<AsC, T, O, A>>
   // TODO (TypeScript 3.2): delete this overload
   def apply(props: (StyledComponentProps[C, T, O, A]) with AnonAs): ReactElement = js.native
-  def withComponent[WithC /* <: (ComponentClass[_, ComponentState]) | FunctionComponent[_] */](component: WithC): StyledComponent[WithC, T, O, A] = js.native
-  @JSName("withComponent")
-  def withComponent_WithC_AnyStyledComponent[WithC /* <: AnyStyledComponent */](component: WithC): StyledComponent[
+  def withComponent[WithC /* <: AnyStyledComponent */](component: WithC): StyledComponent[
     StyledComponentInnerComponent[WithC], 
     T, 
     O with StyledComponentInnerOtherProps[WithC], 
     A | StyledComponentInnerAttrs[WithC]
   ] = js.native
+  @JSName("withComponent")
+  def withComponent_WithC_UnionComponentClassWildcardComponentStateFunctionComponentWildcard[WithC /* <: (ComponentClass[_, ComponentState]) | FunctionComponent[_] */](component: WithC): StyledComponent[WithC, T, O, A] = js.native
   @JSName("withComponent")
   def withComponent_a(component: a): StyledComponent[a, T, O, A] = js.native
   @JSName("withComponent")

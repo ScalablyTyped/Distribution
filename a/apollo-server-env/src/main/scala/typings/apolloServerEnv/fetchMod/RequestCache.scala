@@ -16,18 +16,16 @@ trait RequestCache extends js.Object
 
 object RequestCache {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def default: typings.apolloServerEnv.apolloServerEnvStrings.default = "default".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.default]
   @scala.inline
-  def default: typings.apolloServerEnv.apolloServerEnvStrings.default = this.cast("default")
+  def `force-cache`: typings.apolloServerEnv.apolloServerEnvStrings.`force-cache` = "force-cache".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.`force-cache`]
   @scala.inline
-  def `force-cache`: typings.apolloServerEnv.apolloServerEnvStrings.`force-cache` = this.cast("force-cache")
+  def `no-cache`: typings.apolloServerEnv.apolloServerEnvStrings.`no-cache` = "no-cache".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.`no-cache`]
   @scala.inline
-  def `no-cache`: typings.apolloServerEnv.apolloServerEnvStrings.`no-cache` = this.cast("no-cache")
+  def `no-store`: typings.apolloServerEnv.apolloServerEnvStrings.`no-store` = "no-store".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.`no-store`]
   @scala.inline
-  def `no-store`: typings.apolloServerEnv.apolloServerEnvStrings.`no-store` = this.cast("no-store")
+  def `only-if-cached`: typings.apolloServerEnv.apolloServerEnvStrings.`only-if-cached` = "only-if-cached".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.`only-if-cached`]
   @scala.inline
-  def `only-if-cached`: typings.apolloServerEnv.apolloServerEnvStrings.`only-if-cached` = this.cast("only-if-cached")
-  @scala.inline
-  def reload: typings.apolloServerEnv.apolloServerEnvStrings.reload = this.cast("reload")
+  def reload: typings.apolloServerEnv.apolloServerEnvStrings.reload = "reload".asInstanceOf[typings.apolloServerEnv.apolloServerEnvStrings.reload]
 }
 

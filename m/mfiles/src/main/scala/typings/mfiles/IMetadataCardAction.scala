@@ -24,7 +24,6 @@ object IMetadataCardAction {
     IsVisible: () => Boolean
   ): IMetadataCardAction = {
     val __obj = js.Dynamic.literal(Activate = js.Any.fromFunction0(Activate), Events = Events.asInstanceOf[js.Any], GetExplanation = js.Any.fromFunction0(GetExplanation), GetName = js.Any.fromFunction0(GetName), IsEnabled = js.Any.fromFunction0(IsEnabled), IsVisible = js.Any.fromFunction0(IsVisible))
-  
     __obj.asInstanceOf[IMetadataCardAction]
   }
 }

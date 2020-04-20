@@ -16,7 +16,6 @@ object NgModuleProviderDef {
   @scala.inline
   def apply(deps: js.Array[DepDef], flags: ɵNodeFlags, index: Double, token: js.Any, value: js.Any): NgModuleProviderDef = {
     val __obj = js.Dynamic.literal(deps = deps.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NgModuleProviderDef]
   }
 }

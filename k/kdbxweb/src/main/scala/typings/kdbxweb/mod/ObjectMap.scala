@@ -14,7 +14,6 @@ object ObjectMap {
   @scala.inline
   def apply(deleted: js.Array[KdbxObject], objects: js.Array[KdbxObject], remote: js.Array[KdbxObject]): ObjectMap = {
     val __obj = js.Dynamic.literal(deleted = deleted.asInstanceOf[js.Any], objects = objects.asInstanceOf[js.Any], remote = remote.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ObjectMap]
   }
 }

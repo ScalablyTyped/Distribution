@@ -31,7 +31,6 @@ object IDataTableEx {
   @scala.inline
   def apply(qFields: js.Array[IDataField], qFormatSpec: String, qName: String): IDataTableEx = {
     val __obj = js.Dynamic.literal(qFields = qFields.asInstanceOf[js.Any], qFormatSpec = qFormatSpec.asInstanceOf[js.Any], qName = qName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDataTableEx]
   }
 }

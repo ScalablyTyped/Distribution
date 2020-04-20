@@ -24,7 +24,7 @@ object depthReducerMod extends js.Object {
       * Gets the depth renderer used for the computation.
       * Note that the result is null if you provide your own renderer when calling setDepthRenderer.
       */
-    def depthRenderer(): Nullable[DepthRenderer] = js.native
+    def depthRenderer: Nullable[DepthRenderer] = js.native
     /**
       * Sets the depth renderer to use to generate the depth map
       * @param depthRenderer The depth renderer to use. If not provided, a new one will be created automatically

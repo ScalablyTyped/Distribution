@@ -43,7 +43,6 @@ object IServer {
   @scala.inline
   def apply(addClient: IClientDriver => Unit, close: () => Unit, open: Double => Unit): IServer = {
     val __obj = js.Dynamic.literal(addClient = js.Any.fromFunction1(addClient), close = js.Any.fromFunction0(close), open = js.Any.fromFunction1(open))
-  
     __obj.asInstanceOf[IServer]
   }
 }

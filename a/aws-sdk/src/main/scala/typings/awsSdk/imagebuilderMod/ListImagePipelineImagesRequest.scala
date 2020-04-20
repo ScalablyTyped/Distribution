@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListImagePipelineImagesRequest extends js.Object {
   /**
-    *  The filters. 
+    * The filters. 
     */
   var filters: js.UndefOr[FilterList] = js.native
   /**
-    *  The Amazon Resource Name (ARN) of the image pipeline whose images you want to view. 
+    * The Amazon Resource Name (ARN) of the image pipeline whose images you want to view. 
     */
   var imagePipelineArn: ImagePipelineArn = js.native
   /**
-    *  The maximum items to return in a request. 
+    * The maximum items to return in a request. 
     */
   var maxResults: js.UndefOr[RestrictedInteger] = js.native
   /**
-    *  A token to specify where to start paginating. This is the NextToken from a previously truncated response. 
+    * A token to specify where to start paginating. This is the NextToken from a previously truncated response. 
     */
   var nextToken: js.UndefOr[NonEmptyString] = js.native
 }

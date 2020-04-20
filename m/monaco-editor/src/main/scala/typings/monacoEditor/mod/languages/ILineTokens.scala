@@ -20,7 +20,6 @@ object ILineTokens {
   @scala.inline
   def apply(endState: IState, tokens: js.Array[IToken]): ILineTokens = {
     val __obj = js.Dynamic.literal(endState = endState.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ILineTokens]
   }
 }

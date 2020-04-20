@@ -13,7 +13,6 @@ object GeolocationError {
   @scala.inline
   def apply(error: AnonCode): GeolocationError = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GeolocationError]
   }
 }

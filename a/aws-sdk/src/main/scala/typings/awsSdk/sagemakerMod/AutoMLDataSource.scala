@@ -16,7 +16,6 @@ object AutoMLDataSource {
   @scala.inline
   def apply(S3DataSource: AutoMLS3DataSource): AutoMLDataSource = {
     val __obj = js.Dynamic.literal(S3DataSource = S3DataSource.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AutoMLDataSource]
   }
 }

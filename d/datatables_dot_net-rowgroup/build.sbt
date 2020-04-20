@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "datatables_dot_net-rowgroup"
-version := "1.0-dt-20190212Z-98ef01"
+version := "1.0-dt-20190212Z-e763c3"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "datatables_dot_net" % "1.10-dt-20200407Z-21c997",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20200326Z-2318d7",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-3d9ead",
-  "org.scalablytyped" %%% "std" % "3.8-a0108c")
+  "org.scalablytyped" %%% "datatables_dot_net" % "1.10-dt-20200407Z-ecb0c0",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20200415Z-e1b00b",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-ca8578",
+  "org.scalablytyped" %%% "std" % "3.8-9b2470")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

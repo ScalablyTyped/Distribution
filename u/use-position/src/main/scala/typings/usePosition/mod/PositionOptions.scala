@@ -30,7 +30,6 @@ object PositionOptions {
   @scala.inline
   def apply(enableHighAccuracy: Boolean, maximumAge: Double, timeout: Double): PositionOptions = {
     val __obj = js.Dynamic.literal(enableHighAccuracy = enableHighAccuracy.asInstanceOf[js.Any], maximumAge = maximumAge.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PositionOptions]
   }
 }

@@ -23,7 +23,6 @@ object ChoroplethBoundFeature {
     value: Double
   ): ChoroplethBoundFeature = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], formattedValue = formattedValue.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChoroplethBoundFeature]
   }
 }

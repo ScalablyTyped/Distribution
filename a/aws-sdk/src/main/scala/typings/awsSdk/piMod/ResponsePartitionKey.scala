@@ -16,7 +16,6 @@ object ResponsePartitionKey {
   @scala.inline
   def apply(Dimensions: DimensionMap): ResponsePartitionKey = {
     val __obj = js.Dynamic.literal(Dimensions = Dimensions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResponsePartitionKey]
   }
 }

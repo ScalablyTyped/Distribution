@@ -14,7 +14,6 @@ object InlineSnapshot {
   @scala.inline
   def apply(frame: Frame, snapshot: String): InlineSnapshot = {
     val __obj = js.Dynamic.literal(frame = frame.asInstanceOf[js.Any], snapshot = snapshot.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InlineSnapshot]
   }
 }

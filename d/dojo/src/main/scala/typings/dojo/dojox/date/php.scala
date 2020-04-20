@@ -30,7 +30,6 @@ object php {
   @scala.inline
   def apply(DateFormat: String => Unit, format: (Date, String) => Unit): php = {
     val __obj = js.Dynamic.literal(DateFormat = js.Any.fromFunction1(DateFormat), format = js.Any.fromFunction2(format))
-  
     __obj.asInstanceOf[php]
   }
 }

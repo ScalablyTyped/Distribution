@@ -18,7 +18,6 @@ object PlayersResource {
   @scala.inline
   def apply(get: AnonPlayerId => Request_[Player], list: AnonMaxResults => Request_[PlayerListResponse]): PlayersResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[PlayersResource]
   }
 }

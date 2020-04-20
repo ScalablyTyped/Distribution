@@ -16,14 +16,14 @@ class CliTheme () extends EventEmitter {
   def format(str: String): String = js.native
   def format(str: String, style: String): String = js.native
   def format(str: String, style: String, strip: Boolean): String = js.native
-  def get[K /* <: String */, V](path: K): js.UndefOr[
+  def get[K /* <: /* keyof T */ String */, V](path: K): js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | V | Null
   ] = js.native
-  def get[K /* <: String */, V](path: K, defaultValue: V): js.UndefOr[
+  def get[K /* <: /* keyof T */ String */, V](path: K, defaultValue: V): js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | V | Null
   ] = js.native
-  def set[K /* <: String */](path: K): this.type = js.native
-  def set[K /* <: String */](
+  def set[K /* <: /* keyof T */ String */](path: K): this.type = js.native
+  def set[K /* <: /* keyof T */ String */](
     path: K,
     value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ): this.type = js.native

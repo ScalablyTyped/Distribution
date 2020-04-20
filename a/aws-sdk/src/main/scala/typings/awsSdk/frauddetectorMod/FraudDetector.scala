@@ -91,12 +91,25 @@ trait FraudDetector extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateVariableResult, Unit]
   ): Request[CreateVariableResult, AWSError] = js.native
   /**
-    * Deletes the detector version.
+    * Deletes the detector. Before deleting a detector, you must first delete all detector versions and rule versions associated with the detector.
+    */
+  def deleteDetector(): Request[DeleteDetectorResult, AWSError] = js.native
+  def deleteDetector(callback: js.Function2[/* err */ AWSError, /* data */ DeleteDetectorResult, Unit]): Request[DeleteDetectorResult, AWSError] = js.native
+  /**
+    * Deletes the detector. Before deleting a detector, you must first delete all detector versions and rule versions associated with the detector.
+    */
+  def deleteDetector(params: DeleteDetectorRequest): Request[DeleteDetectorResult, AWSError] = js.native
+  def deleteDetector(
+    params: DeleteDetectorRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteDetectorResult, Unit]
+  ): Request[DeleteDetectorResult, AWSError] = js.native
+  /**
+    * Deletes the detector version. You cannot delete detector versions that are in ACTIVE status.
     */
   def deleteDetectorVersion(): Request[DeleteDetectorVersionResult, AWSError] = js.native
   def deleteDetectorVersion(callback: js.Function2[/* err */ AWSError, /* data */ DeleteDetectorVersionResult, Unit]): Request[DeleteDetectorVersionResult, AWSError] = js.native
   /**
-    * Deletes the detector version.
+    * Deletes the detector version. You cannot delete detector versions that are in ACTIVE status.
     */
   def deleteDetectorVersion(params: DeleteDetectorVersionRequest): Request[DeleteDetectorVersionResult, AWSError] = js.native
   def deleteDetectorVersion(
@@ -116,6 +129,19 @@ trait FraudDetector extends Service {
     params: DeleteEventRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteEventResult, Unit]
   ): Request[DeleteEventResult, AWSError] = js.native
+  /**
+    * Deletes the rule version. You cannot delete a rule version if it is used by an ACTIVE or INACTIVE detector version.
+    */
+  def deleteRuleVersion(): Request[DeleteRuleVersionResult, AWSError] = js.native
+  def deleteRuleVersion(callback: js.Function2[/* err */ AWSError, /* data */ DeleteRuleVersionResult, Unit]): Request[DeleteRuleVersionResult, AWSError] = js.native
+  /**
+    * Deletes the rule version. You cannot delete a rule version if it is used by an ACTIVE or INACTIVE detector version.
+    */
+  def deleteRuleVersion(params: DeleteRuleVersionRequest): Request[DeleteRuleVersionResult, AWSError] = js.native
+  def deleteRuleVersion(
+    params: DeleteRuleVersionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteRuleVersionResult, Unit]
+  ): Request[DeleteRuleVersionResult, AWSError] = js.native
   /**
     * Gets all versions for a specified detector.
     */

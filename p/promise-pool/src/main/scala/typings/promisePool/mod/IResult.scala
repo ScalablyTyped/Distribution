@@ -14,7 +14,6 @@ object IResult {
   @scala.inline
   def apply(fulfilled: Double, rejected: Double, total: Double): IResult = {
     val __obj = js.Dynamic.literal(fulfilled = fulfilled.asInstanceOf[js.Any], rejected = rejected.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IResult]
   }
 }

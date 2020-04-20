@@ -13,7 +13,6 @@ object PhoneMultiFactorEnrollInfoOptions {
   @scala.inline
   def apply(phoneNumber: String, session: MultiFactorSession): PhoneMultiFactorEnrollInfoOptions = {
     val __obj = js.Dynamic.literal(phoneNumber = phoneNumber.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PhoneMultiFactorEnrollInfoOptions]
   }
 }

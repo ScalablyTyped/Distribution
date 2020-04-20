@@ -15,16 +15,14 @@ trait ReductionModeType extends js.Object
 
 object ReductionModeType {
   @scala.inline
-  def C: typings.qlikEngineapi.qlikEngineapiStrings.C = this.cast("C")
+  def C: typings.qlikEngineapi.qlikEngineapiStrings.C = "C".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.C]
   @scala.inline
-  def D1: typings.qlikEngineapi.qlikEngineapiStrings.D1 = this.cast("D1")
+  def D1: typings.qlikEngineapi.qlikEngineapiStrings.D1 = "D1".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.D1]
   @scala.inline
-  def N: typings.qlikEngineapi.qlikEngineapiStrings.N = this.cast("N")
+  def N: typings.qlikEngineapi.qlikEngineapiStrings.N = "N".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.N]
   @scala.inline
-  def S: typings.qlikEngineapi.qlikEngineapiStrings.S = this.cast("S")
+  def S: typings.qlikEngineapi.qlikEngineapiStrings.S = "S".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.S]
   @scala.inline
-  def ST: typings.qlikEngineapi.qlikEngineapiStrings.ST = this.cast("ST")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ST: typings.qlikEngineapi.qlikEngineapiStrings.ST = "ST".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.ST]
 }
 

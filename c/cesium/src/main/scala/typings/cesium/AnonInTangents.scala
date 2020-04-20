@@ -21,7 +21,6 @@ object AnonInTangents {
     times: js.Array[Double]
   ): AnonInTangents = {
     val __obj = js.Dynamic.literal(inTangents = inTangents.asInstanceOf[js.Any], outTangents = outTangents.asInstanceOf[js.Any], points = points.asInstanceOf[js.Any], times = times.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonInTangents]
   }
 }

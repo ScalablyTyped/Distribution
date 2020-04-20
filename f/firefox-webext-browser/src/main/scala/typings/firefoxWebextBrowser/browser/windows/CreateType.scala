@@ -18,14 +18,12 @@ trait CreateType extends js.Object
 
 object CreateType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def detached_panel: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.detached_panel = "detached_panel".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.detached_panel]
   @scala.inline
-  def detached_panel: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.detached_panel = this.cast("detached_panel")
+  def normal: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal = "normal".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal]
   @scala.inline
-  def normal: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal = this.cast("normal")
+  def panel: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.panel = "panel".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.panel]
   @scala.inline
-  def panel: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.panel = this.cast("panel")
-  @scala.inline
-  def popup: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.popup = this.cast("popup")
+  def popup: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.popup = "popup".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.popup]
 }
 

@@ -14,7 +14,6 @@ object AnonEquals {
   @scala.inline
   def apply(equals: Double, notEquals: Double): AnonEquals = {
     val __obj = js.Dynamic.literal(equals = equals.asInstanceOf[js.Any], notEquals = notEquals.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEquals]
   }
 }

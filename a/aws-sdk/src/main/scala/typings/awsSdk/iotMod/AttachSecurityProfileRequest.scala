@@ -20,7 +20,6 @@ object AttachSecurityProfileRequest {
   @scala.inline
   def apply(securityProfileName: SecurityProfileName, securityProfileTargetArn: SecurityProfileTargetArn): AttachSecurityProfileRequest = {
     val __obj = js.Dynamic.literal(securityProfileName = securityProfileName.asInstanceOf[js.Any], securityProfileTargetArn = securityProfileTargetArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AttachSecurityProfileRequest]
   }
 }

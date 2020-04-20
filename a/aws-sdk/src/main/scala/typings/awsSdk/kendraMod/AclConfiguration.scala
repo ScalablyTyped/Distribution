@@ -16,7 +16,6 @@ object AclConfiguration {
   @scala.inline
   def apply(AllowedGroupsColumnName: ColumnName): AclConfiguration = {
     val __obj = js.Dynamic.literal(AllowedGroupsColumnName = AllowedGroupsColumnName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AclConfiguration]
   }
 }

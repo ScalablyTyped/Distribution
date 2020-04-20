@@ -13,7 +13,6 @@ object HighlightsRepositoryEditReelResponseTalliesItem {
   @scala.inline
   def apply(count: Double, text: String): HighlightsRepositoryEditReelResponseTalliesItem = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HighlightsRepositoryEditReelResponseTalliesItem]
   }
 }

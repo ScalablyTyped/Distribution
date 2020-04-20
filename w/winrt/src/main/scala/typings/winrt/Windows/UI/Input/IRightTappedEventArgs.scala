@@ -15,7 +15,6 @@ object IRightTappedEventArgs {
   @scala.inline
   def apply(pointerDeviceType: PointerDeviceType, position: Point): IRightTappedEventArgs = {
     val __obj = js.Dynamic.literal(pointerDeviceType = pointerDeviceType.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IRightTappedEventArgs]
   }
 }

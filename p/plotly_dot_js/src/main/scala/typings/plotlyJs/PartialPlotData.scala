@@ -7,6 +7,7 @@ import typings.plotlyJs.mod.DataTransform
 import typings.plotlyJs.mod.Datum
 import typings.plotlyJs.mod.ErrorBar
 import typings.plotlyJs.mod.MarkerSymbol
+import typings.plotlyJs.mod.PlotType
 import typings.plotlyJs.mod.TypedArray
 import typings.plotlyJs.plotlyJsBooleans.`false`
 import typings.plotlyJs.plotlyJsStrings.`bottom center`
@@ -20,30 +21,20 @@ import typings.plotlyJs.plotlyJsStrings.`top left`
 import typings.plotlyJs.plotlyJsStrings.`top right`
 import typings.plotlyJs.plotlyJsStrings.all
 import typings.plotlyJs.plotlyJsStrings.area
-import typings.plotlyJs.plotlyJsStrings.bar
 import typings.plotlyJs.plotlyJsStrings.best
-import typings.plotlyJs.plotlyJsStrings.box
-import typings.plotlyJs.plotlyJsStrings.candlestick
-import typings.plotlyJs.plotlyJsStrings.choropleth
 import typings.plotlyJs.plotlyJsStrings.clockwise
-import typings.plotlyJs.plotlyJsStrings.contour
 import typings.plotlyJs.plotlyJsStrings.counterclockwise
 import typings.plotlyJs.plotlyJsStrings.delta
 import typings.plotlyJs.plotlyJsStrings.diameter
 import typings.plotlyJs.plotlyJsStrings.fast
 import typings.plotlyJs.plotlyJsStrings.fills
-import typings.plotlyJs.plotlyJsStrings.funnel
-import typings.plotlyJs.plotlyJsStrings.funnelarea
 import typings.plotlyJs.plotlyJsStrings.gauge
 import typings.plotlyJs.plotlyJsStrings.gaugePlussigndelta
 import typings.plotlyJs.plotlyJsStrings.gaugePlussignnumber
 import typings.plotlyJs.plotlyJsStrings.gaugePlussignnumberPlussigndelta
 import typings.plotlyJs.plotlyJsStrings.h
-import typings.plotlyJs.plotlyJsStrings.heatmap
-import typings.plotlyJs.plotlyJsStrings.histogram
 import typings.plotlyJs.plotlyJsStrings.hv
 import typings.plotlyJs.plotlyJsStrings.hvh
-import typings.plotlyJs.plotlyJsStrings.indicator
 import typings.plotlyJs.plotlyJsStrings.inside
 import typings.plotlyJs.plotlyJsStrings.label
 import typings.plotlyJs.plotlyJsStrings.labelPlussignpercent
@@ -57,28 +48,16 @@ import typings.plotlyJs.plotlyJsStrings.linear
 import typings.plotlyJs.plotlyJsStrings.lines
 import typings.plotlyJs.plotlyJsStrings.linesPlussignmarkers
 import typings.plotlyJs.plotlyJsStrings.markers
-import typings.plotlyJs.plotlyJsStrings.mesh3d
 import typings.plotlyJs.plotlyJsStrings.name
 import typings.plotlyJs.plotlyJsStrings.none
 import typings.plotlyJs.plotlyJsStrings.number
 import typings.plotlyJs.plotlyJsStrings.numberPlussigndelta
-import typings.plotlyJs.plotlyJsStrings.ohlc
 import typings.plotlyJs.plotlyJsStrings.outside
-import typings.plotlyJs.plotlyJsStrings.parcoords
 import typings.plotlyJs.plotlyJsStrings.percent
-import typings.plotlyJs.plotlyJsStrings.pie
-import typings.plotlyJs.plotlyJsStrings.pointcloud
 import typings.plotlyJs.plotlyJsStrings.points
-import typings.plotlyJs.plotlyJsStrings.scatter
-import typings.plotlyJs.plotlyJsStrings.scatter3d
-import typings.plotlyJs.plotlyJsStrings.scattergeo
-import typings.plotlyJs.plotlyJsStrings.scattergl
-import typings.plotlyJs.plotlyJsStrings.scatterpolar
-import typings.plotlyJs.plotlyJsStrings.scatterternary
 import typings.plotlyJs.plotlyJsStrings.sd
 import typings.plotlyJs.plotlyJsStrings.skip
 import typings.plotlyJs.plotlyJsStrings.spline
-import typings.plotlyJs.plotlyJsStrings.surface
 import typings.plotlyJs.plotlyJsStrings.text
 import typings.plotlyJs.plotlyJsStrings.textPlussignlines
 import typings.plotlyJs.plotlyJsStrings.textPlussignlinesPlussignmarkers
@@ -92,13 +71,11 @@ import typings.plotlyJs.plotlyJsStrings.tonexty
 import typings.plotlyJs.plotlyJsStrings.toself
 import typings.plotlyJs.plotlyJsStrings.tozerox
 import typings.plotlyJs.plotlyJsStrings.tozeroy
-import typings.plotlyJs.plotlyJsStrings.treemap
 import typings.plotlyJs.plotlyJsStrings.v
 import typings.plotlyJs.plotlyJsStrings.value
 import typings.plotlyJs.plotlyJsStrings.valuePlussignpercent
 import typings.plotlyJs.plotlyJsStrings.vh
 import typings.plotlyJs.plotlyJsStrings.vhv
-import typings.plotlyJs.plotlyJsStrings.waterfall
 import typings.plotlyJs.plotlyJsStrings.x
 import typings.plotlyJs.plotlyJsStrings.xPlussignname
 import typings.plotlyJs.plotlyJsStrings.xPlussigntext
@@ -232,12 +209,10 @@ trait PartialPlotData extends js.Object {
     (`top left`) | (`top center`) | (`top right`) | (`middle left`) | (`middle center`) | (`middle right`) | (`bottom left`) | (`bottom center`) | (`bottom right`) | inside | outside
   ] = js.undefined
   var theta: js.UndefOr[js.Array[Datum]] = js.undefined
-  var title: js.UndefOr[PartialDataTitleFont] = js.undefined
+  var title: js.UndefOr[PartialDataTitle] = js.undefined
   var transforms: js.UndefOr[js.Array[DataTransform]] = js.undefined
   var transpose: js.UndefOr[Boolean] = js.undefined
-  var `type`: js.UndefOr[
-    bar | box | candlestick | choropleth | contour | heatmap | histogram | indicator | mesh3d | ohlc | parcoords | pie | pointcloud | scatter | scatter3d | scattergeo | scattergl | scatterpolar | scatterternary | surface | treemap | waterfall | funnel | funnelarea
-  ] = js.undefined
+  var `type`: js.UndefOr[PlotType] = js.undefined
   var value: js.UndefOr[Double] = js.undefined
   var values: js.UndefOr[js.Array[Datum]] = js.undefined
   var visible: js.UndefOr[Boolean | legendonly] = js.undefined
@@ -321,10 +296,10 @@ object PartialPlotData {
     textinfo: label | labelPlussigntext | labelPlussignvalue | labelPlussignpercent | labelPlussigntextPlussignvalue | labelPlussigntextPlussignpercent | labelPlussignvaluePlussignpercent | text | textPlussignvalue | textPlussignpercent | textPlussignvaluePlussignpercent | value | valuePlussignpercent | percent | none = null,
     textposition: (`top left`) | (`top center`) | (`top right`) | (`middle left`) | (`middle center`) | (`middle right`) | (`bottom left`) | (`bottom center`) | (`bottom right`) | inside | outside = null,
     theta: js.Array[Datum] = null,
-    title: PartialDataTitleFont = null,
+    title: PartialDataTitle = null,
     transforms: js.Array[DataTransform] = null,
     transpose: js.UndefOr[Boolean] = js.undefined,
-    `type`: bar | box | candlestick | choropleth | contour | heatmap | histogram | indicator | mesh3d | ohlc | parcoords | pie | pointcloud | scatter | scatter3d | scattergeo | scattergl | scatterpolar | scatterternary | surface | treemap | waterfall | funnel | funnelarea = null,
+    `type`: PlotType = null,
     value: Int | Double = null,
     values: js.Array[Datum] = null,
     visible: Boolean | legendonly = null,

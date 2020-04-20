@@ -18,7 +18,6 @@ object RequiredLoaderSizeProps {
   @scala.inline
   def apply(color: String, css: String | PrecompiledCss, loading: Boolean, size: LengthType): RequiredLoaderSizeProps = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], css = css.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RequiredLoaderSizeProps]
   }
 }

@@ -14,7 +14,6 @@ object ComponentRes {
   @scala.inline
   def apply(mod: js.Any, page: ComponentType[js.Object]): ComponentRes = {
     val __obj = js.Dynamic.literal(mod = mod.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ComponentRes]
   }
 }

@@ -13,12 +13,10 @@ trait DimensionType extends js.Object
 
 object DimensionType {
   @scala.inline
-  def D: typings.qlikEngineapi.qlikEngineapiStrings.D = this.cast("D")
+  def D: typings.qlikEngineapi.qlikEngineapiStrings.D = "D".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.D]
   @scala.inline
-  def N: typings.qlikEngineapi.qlikEngineapiStrings.N = this.cast("N")
+  def N: typings.qlikEngineapi.qlikEngineapiStrings.N = "N".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.N]
   @scala.inline
-  def T: typings.qlikEngineapi.qlikEngineapiStrings.T = this.cast("T")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def T: typings.qlikEngineapi.qlikEngineapiStrings.T = "T".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.T]
 }
 

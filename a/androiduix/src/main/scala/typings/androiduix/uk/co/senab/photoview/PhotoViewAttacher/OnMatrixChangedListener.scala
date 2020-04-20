@@ -13,7 +13,6 @@ object OnMatrixChangedListener {
   @scala.inline
   def apply(onMatrixChanged: RectF => Unit): OnMatrixChangedListener = {
     val __obj = js.Dynamic.literal(onMatrixChanged = js.Any.fromFunction1(onMatrixChanged))
-  
     __obj.asInstanceOf[OnMatrixChangedListener]
   }
 }

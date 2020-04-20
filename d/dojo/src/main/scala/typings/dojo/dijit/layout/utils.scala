@@ -47,7 +47,6 @@ object utils {
     marginBox2contentBox: (HTMLElement, js.Object) => js.Object
   ): utils = {
     val __obj = js.Dynamic.literal(layoutChildren = js.Any.fromFunction5(layoutChildren), marginBox2contentBox = js.Any.fromFunction2(marginBox2contentBox))
-  
     __obj.asInstanceOf[utils]
   }
 }

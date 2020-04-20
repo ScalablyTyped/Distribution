@@ -12,10 +12,8 @@ trait StrokeLinecapType extends js.Object
 
 object StrokeLinecapType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def round: typings.reactCountdownCircleTimer.reactCountdownCircleTimerStrings.round = "round".asInstanceOf[typings.reactCountdownCircleTimer.reactCountdownCircleTimerStrings.round]
   @scala.inline
-  def round: typings.reactCountdownCircleTimer.reactCountdownCircleTimerStrings.round = this.cast("round")
-  @scala.inline
-  def square: typings.reactCountdownCircleTimer.reactCountdownCircleTimerStrings.square = this.cast("square")
+  def square: typings.reactCountdownCircleTimer.reactCountdownCircleTimerStrings.square = "square".asInstanceOf[typings.reactCountdownCircleTimer.reactCountdownCircleTimerStrings.square]
 }
 

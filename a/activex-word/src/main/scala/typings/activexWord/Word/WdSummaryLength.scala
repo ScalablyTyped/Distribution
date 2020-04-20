@@ -26,22 +26,20 @@ trait WdSummaryLength extends js.Object
 
 object WdSummaryLength {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wd100Words: `-4` = -4.asInstanceOf[`-4`]
   @scala.inline
-  def wd100Words: `-4` = this.cast(-4)
+  def wd10Percent: `-6` = -6.asInstanceOf[`-6`]
   @scala.inline
-  def wd10Percent: `-6` = this.cast(-6)
+  def wd10Sentences: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def wd10Sentences: `-2` = this.cast(-2)
+  def wd20Sentences: `-3` = -3.asInstanceOf[`-3`]
   @scala.inline
-  def wd20Sentences: `-3` = this.cast(-3)
+  def wd25Percent: `-7` = -7.asInstanceOf[`-7`]
   @scala.inline
-  def wd25Percent: `-7` = this.cast(-7)
+  def wd500Words: `-5` = -5.asInstanceOf[`-5`]
   @scala.inline
-  def wd500Words: `-5` = this.cast(-5)
+  def wd50Percent: `-8` = -8.asInstanceOf[`-8`]
   @scala.inline
-  def wd50Percent: `-8` = this.cast(-8)
-  @scala.inline
-  def wd75Percent: `-9` = this.cast(-9)
+  def wd75Percent: `-9` = -9.asInstanceOf[`-9`]
 }
 

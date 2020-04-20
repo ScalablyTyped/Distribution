@@ -23,7 +23,6 @@ object ShallowReference {
   @scala.inline
   def apply(id: String, name: String, url: String): ShallowReference = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ShallowReference]
   }
 }

@@ -14,7 +14,6 @@ object ConcatenateReturn {
   @scala.inline
   def apply(done: js.Promise[Unit], stream: ReadableStream[_]): ConcatenateReturn = {
     val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConcatenateReturn]
   }
 }

@@ -13,7 +13,6 @@ object Location {
   @scala.inline
   def apply(names: Translations, pokemon: js.Array[LocationPokemon]): Location = {
     val __obj = js.Dynamic.literal(names = names.asInstanceOf[js.Any], pokemon = pokemon.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Location]
   }
 }

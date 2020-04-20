@@ -14,7 +14,6 @@ object LiftEffect {
   @scala.inline
   def apply(displacedBy: DisplacedBy, effected: DraggableIdMap, inVirtualList: Boolean): LiftEffect = {
     val __obj = js.Dynamic.literal(displacedBy = displacedBy.asInstanceOf[js.Any], effected = effected.asInstanceOf[js.Any], inVirtualList = inVirtualList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LiftEffect]
   }
 }

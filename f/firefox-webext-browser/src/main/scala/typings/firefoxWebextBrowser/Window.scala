@@ -12,7 +12,6 @@ object Window {
   @scala.inline
   def apply(browser: Typeofbrowser): Window = {
     val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Window]
   }
 }

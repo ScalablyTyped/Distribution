@@ -13,7 +13,6 @@ object ValidationResult {
   @scala.inline
   def apply[T](error: js.Any, value: T): ValidationResult[T] = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ValidationResult[T]]
   }
 }

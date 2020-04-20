@@ -20,7 +20,6 @@ object DescribeDomainRequest {
   @scala.inline
   def apply(DomainName: DomainName, FleetArn: FleetArn): DescribeDomainRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any], FleetArn = FleetArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeDomainRequest]
   }
 }

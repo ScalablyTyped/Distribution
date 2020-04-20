@@ -12,7 +12,6 @@ object AnonNetworkType {
   @scala.inline
   def apply(networkType: String): AnonNetworkType = {
     val __obj = js.Dynamic.literal(networkType = networkType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNetworkType]
   }
 }

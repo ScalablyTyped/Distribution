@@ -19,24 +19,22 @@ trait YogaEdge extends js.Object
 
 object YogaEdge {
   @scala.inline
-  def `0`: typings.yogaLayout.yogaLayoutNumbers.`0` = this.cast(0)
+  def `0`: typings.yogaLayout.yogaLayoutNumbers.`0` = 0.asInstanceOf[typings.yogaLayout.yogaLayoutNumbers.`0`]
   @scala.inline
-  def `1`: typings.yogaLayout.yogaLayoutNumbers.`1` = this.cast(1)
+  def `1`: typings.yogaLayout.yogaLayoutNumbers.`1` = 1.asInstanceOf[typings.yogaLayout.yogaLayoutNumbers.`1`]
   @scala.inline
-  def `2`: typings.yogaLayout.yogaLayoutNumbers.`2` = this.cast(2)
+  def `2`: typings.yogaLayout.yogaLayoutNumbers.`2` = 2.asInstanceOf[typings.yogaLayout.yogaLayoutNumbers.`2`]
   @scala.inline
-  def `3`: typings.yogaLayout.yogaLayoutNumbers.`3` = this.cast(3)
+  def `3`: typings.yogaLayout.yogaLayoutNumbers.`3` = 3.asInstanceOf[typings.yogaLayout.yogaLayoutNumbers.`3`]
   @scala.inline
-  def `4`: typings.yogaLayout.yogaLayoutNumbers.`4` = this.cast(4)
+  def `4`: typings.yogaLayout.yogaLayoutNumbers.`4` = 4.asInstanceOf[typings.yogaLayout.yogaLayoutNumbers.`4`]
   @scala.inline
-  def `5`: typings.yogaLayout.yogaLayoutNumbers.`5` = this.cast(5)
+  def `5`: typings.yogaLayout.yogaLayoutNumbers.`5` = 5.asInstanceOf[typings.yogaLayout.yogaLayoutNumbers.`5`]
   @scala.inline
-  def `6`: typings.yogaLayout.yogaLayoutNumbers.`6` = this.cast(6)
+  def `6`: typings.yogaLayout.yogaLayoutNumbers.`6` = 6.asInstanceOf[typings.yogaLayout.yogaLayoutNumbers.`6`]
   @scala.inline
-  def `7`: typings.yogaLayout.yogaLayoutNumbers.`7` = this.cast(7)
+  def `7`: typings.yogaLayout.yogaLayoutNumbers.`7` = 7.asInstanceOf[typings.yogaLayout.yogaLayoutNumbers.`7`]
   @scala.inline
-  def `8`: typings.yogaLayout.yogaLayoutNumbers.`8` = this.cast(8)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `8`: typings.yogaLayout.yogaLayoutNumbers.`8` = 8.asInstanceOf[typings.yogaLayout.yogaLayoutNumbers.`8`]
 }
 

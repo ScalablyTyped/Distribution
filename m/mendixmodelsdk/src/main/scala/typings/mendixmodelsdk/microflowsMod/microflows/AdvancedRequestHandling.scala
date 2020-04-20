@@ -26,9 +26,9 @@ class AdvancedRequestHandling protected () extends RequestHandling {
   /**
     * In version 6.7.0: introduced
     */
-  def nullValueOption(): NullValueOption = js.native
+  def nullValueOption: NullValueOption = js.native
   def nullValueOption(newValue: NullValueOption): js.Any = js.native
-  def parameterMappings(): IList[WebServiceOperationAdvancedParameterMapping] = js.native
+  def parameterMappings: IList[WebServiceOperationAdvancedParameterMapping] = js.native
 }
 
 /* static members */

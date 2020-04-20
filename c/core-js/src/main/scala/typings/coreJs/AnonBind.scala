@@ -16,7 +16,6 @@ object AnonBind {
     part: (Function, /* repeated */ js.Any) => js.Any
   ): AnonBind = {
     val __obj = js.Dynamic.literal(bind = js.Any.fromFunction3(bind), part = js.Any.fromFunction2(part))
-  
     __obj.asInstanceOf[AnonBind]
   }
 }

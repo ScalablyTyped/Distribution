@@ -12,7 +12,6 @@ object ConstraintMixin {
   @scala.inline
   def apply(constraints: Constraints): ConstraintMixin = {
     val __obj = js.Dynamic.literal(constraints = constraints.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConstraintMixin]
   }
 }

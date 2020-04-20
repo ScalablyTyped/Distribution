@@ -13,7 +13,6 @@ object PickImplallowMultiple {
   @scala.inline
   def apply(allowMultiple: Boolean): PickImplallowMultiple = {
     val __obj = js.Dynamic.literal(allowMultiple = allowMultiple.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplallowMultiple]
   }
 }

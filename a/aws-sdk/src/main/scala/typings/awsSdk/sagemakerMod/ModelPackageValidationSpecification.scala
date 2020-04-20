@@ -20,7 +20,6 @@ object ModelPackageValidationSpecification {
   @scala.inline
   def apply(ValidationProfiles: ModelPackageValidationProfiles, ValidationRole: RoleArn): ModelPackageValidationSpecification = {
     val __obj = js.Dynamic.literal(ValidationProfiles = ValidationProfiles.asInstanceOf[js.Any], ValidationRole = ValidationRole.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ModelPackageValidationSpecification]
   }
 }

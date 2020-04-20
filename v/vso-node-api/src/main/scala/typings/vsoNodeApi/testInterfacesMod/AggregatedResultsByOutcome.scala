@@ -24,7 +24,6 @@ object AggregatedResultsByOutcome {
     rerunResultCount: Double
   ): AggregatedResultsByOutcome = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], groupByField = groupByField.asInstanceOf[js.Any], groupByValue = groupByValue.asInstanceOf[js.Any], outcome = outcome.asInstanceOf[js.Any], rerunResultCount = rerunResultCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AggregatedResultsByOutcome]
   }
 }

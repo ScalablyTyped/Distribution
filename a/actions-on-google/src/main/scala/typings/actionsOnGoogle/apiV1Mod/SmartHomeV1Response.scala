@@ -16,19 +16,16 @@ object SmartHomeV1Response {
   @scala.inline
   def SmartHomeV1SyncResponse(payload: SmartHomeV1SyncPayload, requestId: String): SmartHomeV1Response = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SmartHomeV1Response]
   }
   @scala.inline
   def SmartHomeV1QueryResponse(payload: SmartHomeV1QueryPayload, requestId: String): SmartHomeV1Response = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SmartHomeV1Response]
   }
   @scala.inline
   def SmartHomeV1ExecuteResponse(payload: SmartHomeV1ExecutePayload, requestId: String): SmartHomeV1Response = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SmartHomeV1Response]
   }
 }

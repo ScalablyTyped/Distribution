@@ -16,7 +16,6 @@ object CreateMatchmakingRuleSetOutput {
   @scala.inline
   def apply(RuleSet: MatchmakingRuleSet): CreateMatchmakingRuleSetOutput = {
     val __obj = js.Dynamic.literal(RuleSet = RuleSet.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateMatchmakingRuleSetOutput]
   }
 }

@@ -15,7 +15,6 @@ object RandInstance {
   @scala.inline
   def apply(generate: Double => Buffer | Uint8Array, rand: rand): RandInstance = {
     val __obj = js.Dynamic.literal(generate = js.Any.fromFunction1(generate), rand = rand.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RandInstance]
   }
 }

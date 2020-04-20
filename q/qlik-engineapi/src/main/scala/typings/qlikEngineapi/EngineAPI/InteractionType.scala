@@ -21,14 +21,12 @@ trait InteractionType extends js.Object
 
 object InteractionType {
   @scala.inline
-  def IT_BREAK: typings.qlikEngineapi.qlikEngineapiStrings.IT_BREAK = this.cast("IT_BREAK")
+  def IT_BREAK: typings.qlikEngineapi.qlikEngineapiStrings.IT_BREAK = "IT_BREAK".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.IT_BREAK]
   @scala.inline
-  def IT_END: typings.qlikEngineapi.qlikEngineapiStrings.IT_END = this.cast("IT_END")
+  def IT_END: typings.qlikEngineapi.qlikEngineapiStrings.IT_END = "IT_END".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.IT_END]
   @scala.inline
-  def IT_MSGBOX: typings.qlikEngineapi.qlikEngineapiStrings.IT_MSGBOX = this.cast("IT_MSGBOX")
+  def IT_MSGBOX: typings.qlikEngineapi.qlikEngineapiStrings.IT_MSGBOX = "IT_MSGBOX".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.IT_MSGBOX]
   @scala.inline
-  def IT_SCRIPTLINE: typings.qlikEngineapi.qlikEngineapiStrings.IT_SCRIPTLINE = this.cast("IT_SCRIPTLINE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def IT_SCRIPTLINE: typings.qlikEngineapi.qlikEngineapiStrings.IT_SCRIPTLINE = "IT_SCRIPTLINE".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.IT_SCRIPTLINE]
 }
 

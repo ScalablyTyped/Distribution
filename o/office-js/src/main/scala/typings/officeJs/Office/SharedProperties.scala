@@ -52,7 +52,6 @@ object SharedProperties {
     targetRestUrl: String
   ): SharedProperties = {
     val __obj = js.Dynamic.literal(delegatePermissions = delegatePermissions.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], targetMailbox = targetMailbox.asInstanceOf[js.Any], targetRestUrl = targetRestUrl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SharedProperties]
   }
 }

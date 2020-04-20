@@ -13,7 +13,6 @@ object IPayOutPaymentType {
   @scala.inline
   def apply(BankWire: BANK_WIRE): IPayOutPaymentType = {
     val __obj = js.Dynamic.literal(BankWire = BankWire.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPayOutPaymentType]
   }
 }

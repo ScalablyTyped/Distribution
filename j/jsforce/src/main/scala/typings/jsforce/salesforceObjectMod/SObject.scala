@@ -1,5 +1,6 @@
 package typings.jsforce.salesforceObjectMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.jsforce.AnonCallCallback
 import typings.jsforce.AnonCallCallbackClear
 import typings.jsforce.AnonCallClear
@@ -259,18 +260,18 @@ class SObject[T] () extends js.Object {
   def select(
     fields: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: boolean}
-    */ typings.jsforce.jsforceStrings.SObject with js.Any
+    */ typings.jsforce.jsforceStrings.SObject with TopLevel[js.Any]
   ): Query[js.Array[Partial[T]]] = js.native
   def select(
     fields: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: boolean}
-    */ typings.jsforce.jsforceStrings.SObject with js.Any,
+    */ typings.jsforce.jsforceStrings.SObject with TopLevel[js.Any],
     callback: Callback[js.Array[Partial[T]]]
   ): Query[js.Array[Partial[T]]] = js.native
-  def select(fields: String): Query[js.Array[Partial[T]]] = js.native
-  def select(fields: String, callback: Callback[js.Array[Partial[T]]]): Query[js.Array[Partial[T]]] = js.native
-  def select(fields: js.Array[String]): Query[js.Array[Partial[T]]] = js.native
-  def select(fields: js.Array[String], callback: Callback[js.Array[Partial[T]]]): Query[js.Array[Partial[T]]] = js.native
+  def select(fields: /* keyof T */ String): Query[js.Array[Partial[T]]] = js.native
+  def select(fields: /* keyof T */ String, callback: Callback[js.Array[Partial[T]]]): Query[js.Array[Partial[T]]] = js.native
+  def select(fields: js.Array[/* keyof T */ String]): Query[js.Array[Partial[T]]] = js.native
+  def select(fields: js.Array[/* keyof T */ String], callback: Callback[js.Array[Partial[T]]]): Query[js.Array[Partial[T]]] = js.native
   def update(records: js.Array[Partial[T]]): js.Promise[js.Array[RecordResult]] = js.native
   def update(records: js.Array[Partial[T]], callback: Callback[js.Array[RecordResult]]): js.Promise[js.Array[RecordResult]] = js.native
   def update(records: js.Array[Partial[T]], options: RestApiOptions): js.Promise[js.Array[RecordResult]] = js.native

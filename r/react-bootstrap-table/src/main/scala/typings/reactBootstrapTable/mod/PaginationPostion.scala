@@ -15,12 +15,10 @@ trait PaginationPostion extends js.Object
 
 object PaginationPostion {
   @scala.inline
-  def both: typings.reactBootstrapTable.reactBootstrapTableStrings.both = this.cast("both")
+  def both: typings.reactBootstrapTable.reactBootstrapTableStrings.both = "both".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.both]
   @scala.inline
-  def bottom: bottom_ = this.cast("bottom")
+  def bottom: bottom_ = "bottom".asInstanceOf[bottom_]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def top: top_ = this.cast("top")
+  def top: top_ = "top".asInstanceOf[top_]
 }
 

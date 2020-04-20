@@ -24,34 +24,32 @@ trait AnchorStaticId extends _AnchorId
 
 object AnchorStaticId {
   @scala.inline
-  def Assign: typings.jsplumb.jsplumbStrings.Assign = this.cast("Assign")
+  def Assign: typings.jsplumb.jsplumbStrings.Assign = "Assign".asInstanceOf[typings.jsplumb.jsplumbStrings.Assign]
   @scala.inline
-  def Bottom: typings.jsplumb.jsplumbStrings.Bottom = this.cast("Bottom")
+  def Bottom: typings.jsplumb.jsplumbStrings.Bottom = "Bottom".asInstanceOf[typings.jsplumb.jsplumbStrings.Bottom]
   @scala.inline
-  def BottomCenter: typings.jsplumb.jsplumbStrings.BottomCenter = this.cast("BottomCenter")
+  def BottomCenter: typings.jsplumb.jsplumbStrings.BottomCenter = "BottomCenter".asInstanceOf[typings.jsplumb.jsplumbStrings.BottomCenter]
   @scala.inline
-  def BottomLeft: typings.jsplumb.jsplumbStrings.BottomLeft = this.cast("BottomLeft")
+  def BottomLeft: typings.jsplumb.jsplumbStrings.BottomLeft = "BottomLeft".asInstanceOf[typings.jsplumb.jsplumbStrings.BottomLeft]
   @scala.inline
-  def BottomRight: typings.jsplumb.jsplumbStrings.BottomRight = this.cast("BottomRight")
+  def BottomRight: typings.jsplumb.jsplumbStrings.BottomRight = "BottomRight".asInstanceOf[typings.jsplumb.jsplumbStrings.BottomRight]
   @scala.inline
-  def Center: typings.jsplumb.jsplumbStrings.Center = this.cast("Center")
+  def Center: typings.jsplumb.jsplumbStrings.Center = "Center".asInstanceOf[typings.jsplumb.jsplumbStrings.Center]
   @scala.inline
-  def Left: typings.jsplumb.jsplumbStrings.Left = this.cast("Left")
+  def Left: typings.jsplumb.jsplumbStrings.Left = "Left".asInstanceOf[typings.jsplumb.jsplumbStrings.Left]
   @scala.inline
-  def LeftMiddle: typings.jsplumb.jsplumbStrings.LeftMiddle = this.cast("LeftMiddle")
+  def LeftMiddle: typings.jsplumb.jsplumbStrings.LeftMiddle = "LeftMiddle".asInstanceOf[typings.jsplumb.jsplumbStrings.LeftMiddle]
   @scala.inline
-  def Right: typings.jsplumb.jsplumbStrings.Right = this.cast("Right")
+  def Right: typings.jsplumb.jsplumbStrings.Right = "Right".asInstanceOf[typings.jsplumb.jsplumbStrings.Right]
   @scala.inline
-  def RightMiddle: typings.jsplumb.jsplumbStrings.RightMiddle = this.cast("RightMiddle")
+  def RightMiddle: typings.jsplumb.jsplumbStrings.RightMiddle = "RightMiddle".asInstanceOf[typings.jsplumb.jsplumbStrings.RightMiddle]
   @scala.inline
-  def Top: typings.jsplumb.jsplumbStrings.Top = this.cast("Top")
+  def Top: typings.jsplumb.jsplumbStrings.Top = "Top".asInstanceOf[typings.jsplumb.jsplumbStrings.Top]
   @scala.inline
-  def TopCenter: typings.jsplumb.jsplumbStrings.TopCenter = this.cast("TopCenter")
+  def TopCenter: typings.jsplumb.jsplumbStrings.TopCenter = "TopCenter".asInstanceOf[typings.jsplumb.jsplumbStrings.TopCenter]
   @scala.inline
-  def TopLeft: typings.jsplumb.jsplumbStrings.TopLeft = this.cast("TopLeft")
+  def TopLeft: typings.jsplumb.jsplumbStrings.TopLeft = "TopLeft".asInstanceOf[typings.jsplumb.jsplumbStrings.TopLeft]
   @scala.inline
-  def TopRight: typings.jsplumb.jsplumbStrings.TopRight = this.cast("TopRight")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def TopRight: typings.jsplumb.jsplumbStrings.TopRight = "TopRight".asInstanceOf[typings.jsplumb.jsplumbStrings.TopRight]
 }
 

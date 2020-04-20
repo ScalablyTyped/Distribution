@@ -24,7 +24,6 @@ object AnonMXNMYR {
     USD: js.Array[js.UndefOr[String]]
   ): AnonMXNMYR = {
     val __obj = js.Dynamic.literal(CAD = CAD.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any], MXN = MXN.asInstanceOf[js.Any], MYR = MYR.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMXNMYR]
   }
 }

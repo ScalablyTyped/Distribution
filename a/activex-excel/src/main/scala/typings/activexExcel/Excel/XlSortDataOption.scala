@@ -14,10 +14,8 @@ trait XlSortDataOption extends js.Object
 
 object XlSortDataOption {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlSortNormal: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def xlSortNormal: `0` = this.cast(0)
-  @scala.inline
-  def xlSortTextAsNumbers: `1` = this.cast(1)
+  def xlSortTextAsNumbers: `1` = 1.asInstanceOf[`1`]
 }
 

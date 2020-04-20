@@ -19,7 +19,6 @@ object ISearchBox {
   @scala.inline
   def apply(focus: () => Unit, hasFocus: () => Boolean): ISearchBox = {
     val __obj = js.Dynamic.literal(focus = js.Any.fromFunction0(focus), hasFocus = js.Any.fromFunction0(hasFocus))
-  
     __obj.asInstanceOf[ISearchBox]
   }
 }

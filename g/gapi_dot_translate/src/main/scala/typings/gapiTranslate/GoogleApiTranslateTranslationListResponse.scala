@@ -12,7 +12,6 @@ object GoogleApiTranslateTranslationListResponse {
   @scala.inline
   def apply(data: AnonTranslations): GoogleApiTranslateTranslationListResponse = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GoogleApiTranslateTranslationListResponse]
   }
 }

@@ -28,24 +28,22 @@ trait ConnectModeEnum extends js.Object
 
 object ConnectModeEnum {
   @scala.inline
-  def adModeRead: `1` = this.cast(1)
+  def adModeRead: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def adModeReadWrite: `3` = this.cast(3)
+  def adModeReadWrite: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def adModeRecursive: `4194304` = this.cast(4194304)
+  def adModeRecursive: `4194304` = 4194304.asInstanceOf[`4194304`]
   @scala.inline
-  def adModeShareDenyNone: `16` = this.cast(16)
+  def adModeShareDenyNone: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def adModeShareDenyRead: `4` = this.cast(4)
+  def adModeShareDenyRead: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def adModeShareDenyWrite: `8` = this.cast(8)
+  def adModeShareDenyWrite: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def adModeShareExclusive: `12` = this.cast(12)
+  def adModeShareExclusive: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def adModeUnknown: `0` = this.cast(0)
+  def adModeUnknown: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def adModeWrite: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def adModeWrite: `2` = 2.asInstanceOf[`2`]
 }
 

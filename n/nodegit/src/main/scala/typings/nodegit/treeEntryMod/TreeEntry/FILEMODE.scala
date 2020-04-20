@@ -22,18 +22,16 @@ trait FILEMODE extends js.Object
 
 object FILEMODE {
   @scala.inline
-  def BLOB: `33188` = this.cast(33188)
+  def BLOB: `33188` = 33188.asInstanceOf[`33188`]
   @scala.inline
-  def COMMIT: `57344` = this.cast(57344)
+  def COMMIT: `57344` = 57344.asInstanceOf[`57344`]
   @scala.inline
-  def EXECUTABLE: `33261` = this.cast(33261)
+  def EXECUTABLE: `33261` = 33261.asInstanceOf[`33261`]
   @scala.inline
-  def LINK: `40960` = this.cast(40960)
+  def LINK: `40960` = 40960.asInstanceOf[`40960`]
   @scala.inline
-  def TREE: `16384` = this.cast(16384)
+  def TREE: `16384` = 16384.asInstanceOf[`16384`]
   @scala.inline
-  def UNREADABLE: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UNREADABLE: `0` = 0.asInstanceOf[`0`]
 }
 

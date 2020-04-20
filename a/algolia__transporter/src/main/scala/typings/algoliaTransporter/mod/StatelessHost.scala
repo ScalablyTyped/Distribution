@@ -23,7 +23,6 @@ object StatelessHost {
   @scala.inline
   def apply(accept: CallType, protocol: String, url: String): StatelessHost = {
     val __obj = js.Dynamic.literal(accept = accept.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StatelessHost]
   }
 }

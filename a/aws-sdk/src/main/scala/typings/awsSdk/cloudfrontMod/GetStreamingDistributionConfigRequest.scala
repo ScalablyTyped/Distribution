@@ -16,7 +16,6 @@ object GetStreamingDistributionConfigRequest {
   @scala.inline
   def apply(Id: String): GetStreamingDistributionConfigRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetStreamingDistributionConfigRequest]
   }
 }

@@ -16,7 +16,6 @@ object BatchGetQueryExecutionInput {
   @scala.inline
   def apply(QueryExecutionIds: QueryExecutionIdList): BatchGetQueryExecutionInput = {
     val __obj = js.Dynamic.literal(QueryExecutionIds = QueryExecutionIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchGetQueryExecutionInput]
   }
 }

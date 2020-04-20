@@ -30,7 +30,6 @@ object SpyAnd {
     throwError: String => Spy
   ): SpyAnd = {
     val __obj = js.Dynamic.literal(callFake = js.Any.fromFunction1(callFake), callThrough = js.Any.fromFunction0(callThrough), returnValue = js.Any.fromFunction1(returnValue), returnValues = js.Any.fromFunction1(returnValues), stub = js.Any.fromFunction0(stub), throwError = js.Any.fromFunction1(throwError))
-  
     __obj.asInstanceOf[SpyAnd]
   }
 }

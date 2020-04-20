@@ -13,7 +13,6 @@ object PickImplclosable {
   @scala.inline
   def apply(closable: Boolean): PickImplclosable = {
     val __obj = js.Dynamic.literal(closable = closable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplclosable]
   }
 }

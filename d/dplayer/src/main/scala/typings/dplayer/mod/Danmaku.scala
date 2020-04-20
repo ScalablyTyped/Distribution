@@ -24,7 +24,6 @@ object Danmaku {
     show: () => Unit
   ): Danmaku = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), draw = js.Any.fromFunction1(draw), hide = js.Any.fromFunction0(hide), opacity = js.Any.fromFunction1(opacity), send = js.Any.fromFunction2(send), show = js.Any.fromFunction0(show))
-  
     __obj.asInstanceOf[Danmaku]
   }
 }

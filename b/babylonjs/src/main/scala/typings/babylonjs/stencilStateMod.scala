@@ -23,23 +23,23 @@ object stencilStateMod extends js.Object {
     var _stencilTest: js.Any = js.native
     @JSName("apply")
     def apply(gl: WebGLRenderingContext): Unit = js.native
-    def isDirty(): Boolean = js.native
+    def isDirty: Boolean = js.native
     def reset(): Unit = js.native
-    def stencilFunc(): Double = js.native
+    def stencilFunc: Double = js.native
     def stencilFunc(value: Double): js.Any = js.native
-    def stencilFuncMask(): Double = js.native
+    def stencilFuncMask: Double = js.native
     def stencilFuncMask(value: Double): js.Any = js.native
-    def stencilFuncRef(): Double = js.native
+    def stencilFuncRef: Double = js.native
     def stencilFuncRef(value: Double): js.Any = js.native
-    def stencilMask(): Double = js.native
+    def stencilMask: Double = js.native
     def stencilMask(value: Double): js.Any = js.native
-    def stencilOpDepthFail(): Double = js.native
+    def stencilOpDepthFail: Double = js.native
     def stencilOpDepthFail(value: Double): js.Any = js.native
-    def stencilOpStencilDepthPass(): Double = js.native
+    def stencilOpStencilDepthPass: Double = js.native
     def stencilOpStencilDepthPass(value: Double): js.Any = js.native
-    def stencilOpStencilFail(): Double = js.native
+    def stencilOpStencilFail: Double = js.native
     def stencilOpStencilFail(value: Double): js.Any = js.native
-    def stencilTest(): Boolean = js.native
+    def stencilTest: Boolean = js.native
     def stencilTest(value: Boolean): js.Any = js.native
   }
   

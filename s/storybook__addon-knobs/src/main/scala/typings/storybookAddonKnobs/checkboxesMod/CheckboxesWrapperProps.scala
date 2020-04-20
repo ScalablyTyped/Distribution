@@ -12,7 +12,6 @@ object CheckboxesWrapperProps {
   @scala.inline
   def apply(isInline: Boolean): CheckboxesWrapperProps = {
     val __obj = js.Dynamic.literal(isInline = isInline.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CheckboxesWrapperProps]
   }
 }

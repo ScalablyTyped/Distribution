@@ -12,7 +12,6 @@ object AnonBackgroundImage {
   @scala.inline
   def apply(backgroundImage: String): AnonBackgroundImage = {
     val __obj = js.Dynamic.literal(backgroundImage = backgroundImage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBackgroundImage]
   }
 }

@@ -13,7 +13,6 @@ object PickImpluseLabels {
   @scala.inline
   def apply(useLabels: Boolean): PickImpluseLabels = {
     val __obj = js.Dynamic.literal(useLabels = useLabels.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpluseLabels]
   }
 }

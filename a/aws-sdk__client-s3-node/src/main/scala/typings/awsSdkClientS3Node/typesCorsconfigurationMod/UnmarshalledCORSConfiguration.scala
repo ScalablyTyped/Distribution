@@ -17,7 +17,6 @@ object UnmarshalledCORSConfiguration {
   @scala.inline
   def apply(CORSRules: js.Array[UnmarshalledCORSRule]): UnmarshalledCORSConfiguration = {
     val __obj = js.Dynamic.literal(CORSRules = CORSRules.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnmarshalledCORSConfiguration]
   }
 }

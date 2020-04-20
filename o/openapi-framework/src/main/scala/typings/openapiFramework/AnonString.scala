@@ -13,7 +13,6 @@ object AnonString {
   @scala.inline
   def apply(string: IJsonSchema): AnonString = {
     val __obj = js.Dynamic.literal(string = string.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonString]
   }
 }

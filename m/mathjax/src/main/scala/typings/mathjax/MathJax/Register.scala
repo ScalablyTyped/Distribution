@@ -35,7 +35,6 @@ object Register {
     StartupHook: (String, js.Any) => Unit
   ): Register = {
     val __obj = js.Dynamic.literal(LoadHook = js.Any.fromFunction2(LoadHook), MessageHook = js.Any.fromFunction2(MessageHook), PreProcessor = js.Any.fromFunction1(PreProcessor), StartupHook = js.Any.fromFunction2(StartupHook))
-  
     __obj.asInstanceOf[Register]
   }
 }

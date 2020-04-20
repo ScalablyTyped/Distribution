@@ -14,7 +14,6 @@ object Descriptor {
   @scala.inline
   def apply(uuid: String, value: Buffer): Descriptor = {
     val __obj = js.Dynamic.literal(uuid = uuid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Descriptor]
   }
 }

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactDraftWysiwygComponents extends reactDraftWysiwygProps {
   @scala.inline
-  def Editor: ComponentType[EditorProps] = js.constructorOf[typings.reactDraftWysiwyg.mod.Editor].asInstanceOf[typings.react.mod.ComponentType[EditorProps]]
+  def Editor: ComponentType[EditorProps] = js.constructorOf[typings.reactDraftWysiwyg.mod.Editor].asInstanceOf[ComponentType[EditorProps]]
 }
 

@@ -20,7 +20,6 @@ object DisassociateResolverEndpointIpAddressRequest {
   @scala.inline
   def apply(IpAddress: IpAddressUpdate, ResolverEndpointId: ResourceId): DisassociateResolverEndpointIpAddressRequest = {
     val __obj = js.Dynamic.literal(IpAddress = IpAddress.asInstanceOf[js.Any], ResolverEndpointId = ResolverEndpointId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisassociateResolverEndpointIpAddressRequest]
   }
 }

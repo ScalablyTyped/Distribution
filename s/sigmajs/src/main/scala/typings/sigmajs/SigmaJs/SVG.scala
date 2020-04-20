@@ -20,7 +20,6 @@ object SVG {
     nodes: StringDictionary[SVGObject[Node]]
   ): SVG = {
     val __obj = js.Dynamic.literal(edges = edges.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SVG]
   }
 }

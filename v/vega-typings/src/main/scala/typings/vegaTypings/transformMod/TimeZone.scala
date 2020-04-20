@@ -12,10 +12,8 @@ trait TimeZone extends js.Object
 
 object TimeZone {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def local: typings.vegaTypings.vegaTypingsStrings.local = "local".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.local]
   @scala.inline
-  def local: typings.vegaTypings.vegaTypingsStrings.local = this.cast("local")
-  @scala.inline
-  def utc: typings.vegaTypings.vegaTypingsStrings.utc = this.cast("utc")
+  def utc: typings.vegaTypings.vegaTypingsStrings.utc = "utc".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.utc]
 }
 

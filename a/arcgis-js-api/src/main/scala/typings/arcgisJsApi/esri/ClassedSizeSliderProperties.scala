@@ -22,7 +22,7 @@ trait ClassedSizeSliderProperties extends SmartMappingSliderBaseProperties {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedSizeSlider.html#style)
     */
-  var style: js.UndefOr[ClassedSizeSliderStyle] = js.undefined
+  var style: js.UndefOr[ClassedSizeSliderStyleProperties] = js.undefined
   /**
     * The view model for the ClassedSizeSlider widget. This class contains all the logic (properties and methods) that controls this widget's behavior. See the [ClassedSizeSliderViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedSizeSlider-ClassedSizeSliderViewModel.html) class to access all properties and methods on the ClassedSizeSlider widget.
     *
@@ -46,7 +46,7 @@ object ClassedSizeSliderProperties {
     max: Int | Double = null,
     min: Int | Double = null,
     precision: Int | Double = null,
-    style: ClassedSizeSliderStyle = null,
+    style: ClassedSizeSliderStyleProperties = null,
     viewModel: ClassedSizeSliderViewModelProperties = null,
     zoomOptions: SmartMappingSliderBaseZoomOptions = null
   ): ClassedSizeSliderProperties = {

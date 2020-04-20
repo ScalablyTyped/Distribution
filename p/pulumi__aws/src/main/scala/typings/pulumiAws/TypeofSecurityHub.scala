@@ -13,7 +13,6 @@ object TypeofSecurityHub {
   @scala.inline
   def apply(Types: TypeofSecurityHub): TypeofSecurityHub = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofSecurityHub]
   }
 }

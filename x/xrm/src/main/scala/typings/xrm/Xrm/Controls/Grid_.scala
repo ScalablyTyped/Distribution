@@ -38,7 +38,6 @@ object Grid_ {
     getTotalRecordCount: () => Double
   ): Grid_ = {
     val __obj = js.Dynamic.literal(getRows = js.Any.fromFunction0(getRows), getSelectedRows = js.Any.fromFunction0(getSelectedRows), getTotalRecordCount = js.Any.fromFunction0(getTotalRecordCount))
-  
     __obj.asInstanceOf[Grid_]
   }
 }

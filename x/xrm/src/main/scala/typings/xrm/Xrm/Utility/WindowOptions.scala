@@ -18,7 +18,6 @@ object WindowOptions {
   @scala.inline
   def apply(openInNewWindow: Boolean): WindowOptions = {
     val __obj = js.Dynamic.literal(openInNewWindow = openInNewWindow.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WindowOptions]
   }
 }

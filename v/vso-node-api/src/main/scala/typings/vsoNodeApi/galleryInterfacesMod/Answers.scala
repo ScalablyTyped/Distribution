@@ -19,7 +19,6 @@ object Answers {
   @scala.inline
   def apply(vSMarketplaceExtensionName: String, vSMarketplacePublisherName: String): Answers = {
     val __obj = js.Dynamic.literal(vSMarketplaceExtensionName = vSMarketplaceExtensionName.asInstanceOf[js.Any], vSMarketplacePublisherName = vSMarketplacePublisherName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Answers]
   }
 }

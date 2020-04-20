@@ -22,7 +22,6 @@ object TapTargetOptions {
   @scala.inline
   def apply(onClose: Element => Unit, onOpen: Element => Unit): TapTargetOptions = {
     val __obj = js.Dynamic.literal(onClose = js.Any.fromFunction1(onClose), onOpen = js.Any.fromFunction1(onOpen))
-  
     __obj.asInstanceOf[TapTargetOptions]
   }
 }

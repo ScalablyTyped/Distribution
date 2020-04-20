@@ -19,7 +19,6 @@ object Typeofcss {
     scssDefaults: LanguageServiceDefaults
   ): Typeofcss = {
     val __obj = js.Dynamic.literal(cssDefaults = cssDefaults.asInstanceOf[js.Any], lessDefaults = lessDefaults.asInstanceOf[js.Any], scssDefaults = scssDefaults.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Typeofcss]
   }
 }

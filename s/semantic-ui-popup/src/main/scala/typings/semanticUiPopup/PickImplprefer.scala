@@ -15,7 +15,6 @@ object PickImplprefer {
   @scala.inline
   def apply(prefer: adjacent | opposite): PickImplprefer = {
     val __obj = js.Dynamic.literal(prefer = prefer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplprefer]
   }
 }

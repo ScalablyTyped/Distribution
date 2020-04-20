@@ -14,7 +14,6 @@ object Binding {
   @scala.inline
   def apply(condition: Expr, members: js.Array[String], role: String): Binding = {
     val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Binding]
   }
 }

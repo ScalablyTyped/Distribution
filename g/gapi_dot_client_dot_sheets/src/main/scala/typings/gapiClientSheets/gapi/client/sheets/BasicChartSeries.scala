@@ -6,10 +6,16 @@ import scala.scalajs.js.annotation._
 
 trait BasicChartSeries extends js.Object {
   /**
-    * The color for elements (i.e. bars, lines, points) associated with this
-    * series.  If empty, a default color is used.
+    * The color for elements (such as bars, lines, and points) associated with
+    * this series.  If empty, a default color is used.
     */
   var color: js.UndefOr[Color] = js.undefined
+  /**
+    * The color for elements (such as bars, lines, and points) associated with
+    * this series.  If empty, a default color is used.
+    * If color is also set, this field takes precedence.
+    */
+  var colorStyle: js.UndefOr[ColorStyle] = js.undefined
   /**
     * The line style of this series. Valid only if the
     * chartType is AREA,
@@ -46,6 +52,7 @@ object BasicChartSeries {
   @scala.inline
   def apply(
     color: Color = null,
+    colorStyle: ColorStyle = null,
     lineStyle: LineStyle = null,
     series: ChartData = null,
     targetAxis: String = null,
@@ -53,6 +60,7 @@ object BasicChartSeries {
   ): BasicChartSeries = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (colorStyle != null) __obj.updateDynamic("colorStyle")(colorStyle.asInstanceOf[js.Any])
     if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
     if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
     if (targetAxis != null) __obj.updateDynamic("targetAxis")(targetAxis.asInstanceOf[js.Any])

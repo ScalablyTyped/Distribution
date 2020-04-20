@@ -22,6 +22,10 @@ trait CreatePlacementGroupRequest extends js.Object {
     * The placement strategy.
     */
   var Strategy: js.UndefOr[PlacementStrategy] = js.native
+  /**
+    * The tags to apply to the new placement group.
+    */
+  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.native
 }
 
 object CreatePlacementGroupRequest {
@@ -30,13 +34,15 @@ object CreatePlacementGroupRequest {
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     GroupName: String = null,
     PartitionCount: Int | scala.Double = null,
-    Strategy: PlacementStrategy = null
+    Strategy: PlacementStrategy = null,
+    TagSpecifications: TagSpecificationList = null
   ): CreatePlacementGroupRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
     if (GroupName != null) __obj.updateDynamic("GroupName")(GroupName.asInstanceOf[js.Any])
     if (PartitionCount != null) __obj.updateDynamic("PartitionCount")(PartitionCount.asInstanceOf[js.Any])
     if (Strategy != null) __obj.updateDynamic("Strategy")(Strategy.asInstanceOf[js.Any])
+    if (TagSpecifications != null) __obj.updateDynamic("TagSpecifications")(TagSpecifications.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePlacementGroupRequest]
   }
 }

@@ -42,7 +42,7 @@ class GamepadManager () extends js.Object {
   /**
     * The gamepads in the game pad manager
     */
-  def gamepads(): js.Array[Gamepad] = js.native
+  def gamepads: js.Array[Gamepad] = js.native
   /**
     * Get the gamepad controllers based on type
     * @param type The type of gamepad controller

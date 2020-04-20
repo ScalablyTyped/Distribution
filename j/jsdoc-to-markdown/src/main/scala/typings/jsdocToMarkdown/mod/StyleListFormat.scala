@@ -14,14 +14,12 @@ trait StyleListFormat extends js.Object
 
 object StyleListFormat {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dl: typings.jsdocToMarkdown.jsdocToMarkdownStrings.dl = "dl".asInstanceOf[typings.jsdocToMarkdown.jsdocToMarkdownStrings.dl]
   @scala.inline
-  def dl: typings.jsdocToMarkdown.jsdocToMarkdownStrings.dl = this.cast("dl")
+  def grouped: typings.jsdocToMarkdown.jsdocToMarkdownStrings.grouped = "grouped".asInstanceOf[typings.jsdocToMarkdown.jsdocToMarkdownStrings.grouped]
   @scala.inline
-  def grouped: typings.jsdocToMarkdown.jsdocToMarkdownStrings.grouped = this.cast("grouped")
+  def none: typings.jsdocToMarkdown.jsdocToMarkdownStrings.none = "none".asInstanceOf[typings.jsdocToMarkdown.jsdocToMarkdownStrings.none]
   @scala.inline
-  def none: typings.jsdocToMarkdown.jsdocToMarkdownStrings.none = this.cast("none")
-  @scala.inline
-  def table: typings.jsdocToMarkdown.jsdocToMarkdownStrings.table = this.cast("table")
+  def table: typings.jsdocToMarkdown.jsdocToMarkdownStrings.table = "table".asInstanceOf[typings.jsdocToMarkdown.jsdocToMarkdownStrings.table]
 }
 

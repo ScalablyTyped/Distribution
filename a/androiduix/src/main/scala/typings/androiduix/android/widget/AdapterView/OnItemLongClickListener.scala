@@ -15,7 +15,6 @@ object OnItemLongClickListener {
     onItemLongClick: (typings.androiduix.android.widget.AdapterView[_], View, Double, Double) => Boolean
   ): OnItemLongClickListener = {
     val __obj = js.Dynamic.literal(onItemLongClick = js.Any.fromFunction4(onItemLongClick))
-  
     __obj.asInstanceOf[OnItemLongClickListener]
   }
 }

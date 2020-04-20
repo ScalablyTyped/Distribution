@@ -30,26 +30,24 @@ trait WdPartOfSpeech extends js.Object
 
 object WdPartOfSpeech {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdAdjective: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdAdjective: `0` = this.cast(0)
+  def wdAdverb: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdAdverb: `2` = this.cast(2)
+  def wdConjunction: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdConjunction: `5` = this.cast(5)
+  def wdIdiom: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def wdIdiom: `8` = this.cast(8)
+  def wdInterjection: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def wdInterjection: `7` = this.cast(7)
+  def wdNoun: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdNoun: `1` = this.cast(1)
+  def wdOther: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def wdOther: `9` = this.cast(9)
+  def wdPreposition: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdPreposition: `6` = this.cast(6)
+  def wdPronoun: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdPronoun: `4` = this.cast(4)
-  @scala.inline
-  def wdVerb: `3` = this.cast(3)
+  def wdVerb: `3` = 3.asInstanceOf[`3`]
 }
 

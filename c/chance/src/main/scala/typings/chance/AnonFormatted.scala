@@ -12,7 +12,6 @@ object AnonFormatted {
   @scala.inline
   def apply(formatted: Boolean): AnonFormatted = {
     val __obj = js.Dynamic.literal(formatted = formatted.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFormatted]
   }
 }

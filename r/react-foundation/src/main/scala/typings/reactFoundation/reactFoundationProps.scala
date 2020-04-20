@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 
 trait reactFoundationProps {
   @scala.inline
-  def AccordionProps: AccordianProps.type = typings.reactFoundation.accordionMod.AccordianProps
+  def AccordionProps: AccordianProps.type = AccordianProps
   type AccordionProps = AccordianProps
   @scala.inline
-  def AccordionContentProps: AccordianContentProps.type = typings.reactFoundation.accordionMod.AccordianContentProps
+  def AccordionContentProps: AccordianContentProps.type = AccordianContentProps
   type AccordionContentProps = AccordianContentProps
   @scala.inline
-  def AccordionItemProps: AccordianItemProps.type = typings.reactFoundation.accordionMod.AccordianItemProps
+  def AccordionItemProps: AccordianItemProps.type = AccordianItemProps
   type AccordionItemProps = AccordianItemProps
   @scala.inline
   def AccordionTitleProps: typings.reactFoundation.accordionMod.AccordionTitleProps.type = typings.reactFoundation.accordionMod.AccordionTitleProps

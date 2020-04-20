@@ -43,7 +43,6 @@ object ItemTypeToComponent {
     PREVIOUS_PAGE_LINK: ComponentType[PaginationComponentProps]
   ): ItemTypeToComponent = {
     val __obj = js.Dynamic.literal(ELLIPSIS = ELLIPSIS.asInstanceOf[js.Any], FIRST_PAGE_LINK = FIRST_PAGE_LINK.asInstanceOf[js.Any], LAST_PAGE_LINK = LAST_PAGE_LINK.asInstanceOf[js.Any], NEXT_PAGE_LINK = NEXT_PAGE_LINK.asInstanceOf[js.Any], PAGE = PAGE.asInstanceOf[js.Any], PREVIOUS_PAGE_LINK = PREVIOUS_PAGE_LINK.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ItemTypeToComponent]
   }
 }

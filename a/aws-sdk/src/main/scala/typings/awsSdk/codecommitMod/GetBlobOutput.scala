@@ -16,7 +16,6 @@ object GetBlobOutput {
   @scala.inline
   def apply(content: blob): GetBlobOutput = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBlobOutput]
   }
 }

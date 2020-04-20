@@ -16,6 +16,6 @@ class InputPrompt () extends IInputPrompt {
     * The execution count for the prompt.
     */
   @JSName("executionCount")
-  def executionCount_Union(): String | Null = js.native
+  def executionCount_Union: String | Null = js.native
 }
 

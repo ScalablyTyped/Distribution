@@ -20,7 +20,6 @@ object GetFileUploadURLRequest {
   @scala.inline
   def apply(AssignmentId: EntityId, QuestionIdentifier: String): GetFileUploadURLRequest = {
     val __obj = js.Dynamic.literal(AssignmentId = AssignmentId.asInstanceOf[js.Any], QuestionIdentifier = QuestionIdentifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetFileUploadURLRequest]
   }
 }

@@ -13,7 +13,6 @@ object AuthContextConfig {
   @scala.inline
   def apply(clientId: String, realm: String): AuthContextConfig = {
     val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], realm = realm.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AuthContextConfig]
   }
 }

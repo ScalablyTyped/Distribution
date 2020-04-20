@@ -19,7 +19,6 @@ object AnonBrand {
   @scala.inline
   def apply(brand: `3`, light: `1`, regular: `0`, solid: `2`): AnonBrand = {
     val __obj = js.Dynamic.literal(brand = brand.asInstanceOf[js.Any], light = light.asInstanceOf[js.Any], regular = regular.asInstanceOf[js.Any], solid = solid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBrand]
   }
 }

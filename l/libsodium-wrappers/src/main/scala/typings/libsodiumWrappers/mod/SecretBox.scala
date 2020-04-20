@@ -14,7 +14,6 @@ object SecretBox {
   @scala.inline
   def apply(cipher: Uint8Array, mac: Uint8Array): SecretBox = {
     val __obj = js.Dynamic.literal(cipher = cipher.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SecretBox]
   }
 }

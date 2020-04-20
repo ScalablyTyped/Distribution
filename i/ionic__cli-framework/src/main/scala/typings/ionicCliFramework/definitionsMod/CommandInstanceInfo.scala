@@ -19,7 +19,6 @@ object CommandInstanceInfo {
     location: NamespaceLocateResult[C, N, M, I, O]
   ): CommandInstanceInfo[C, N, M, I, O] = {
     val __obj = js.Dynamic.literal(env = env.asInstanceOf[js.Any], executor = executor.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CommandInstanceInfo[C, N, M, I, O]]
   }
 }

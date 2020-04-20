@@ -38,7 +38,6 @@ object ArcGISMapServiceCapabilities {
     propertyIsEnumerable: PropertyKey => Boolean
   ): ArcGISMapServiceCapabilities = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], exportMap = exportMap.asInstanceOf[js.Any], exportTiles = exportTiles.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), operations = operations.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-  
     __obj.asInstanceOf[ArcGISMapServiceCapabilities]
   }
 }

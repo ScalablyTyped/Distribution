@@ -227,7 +227,7 @@ object activexFaxcomexlibStrings {
   @scala.inline
   def Invoke: Invoke = "Invoke".asInstanceOf[Invoke]
   @scala.inline
-  def `LessthansignAll DevicesGreaterthansign`: `LessthansignAll DevicesGreaterthansign` = "<All Devices>".asInstanceOf[`LessthansignAll DevicesGreaterthansign`]
+  def `LessthansignAll DevicesGreaterthansign`: `LessthansignAll DevicesGreaterthansign` = ("<All Devices>").asInstanceOf[`LessthansignAll DevicesGreaterthansign`]
   @scala.inline
   def OnActivityLoggingConfigChange: OnActivityLoggingConfigChange = "OnActivityLoggingConfigChange".asInstanceOf[OnActivityLoggingConfigChange]
   @scala.inline

@@ -20,7 +20,6 @@ object DeleteEnvironmentMembershipRequest {
   @scala.inline
   def apply(environmentId: EnvironmentId, userArn: UserArn): DeleteEnvironmentMembershipRequest = {
     val __obj = js.Dynamic.literal(environmentId = environmentId.asInstanceOf[js.Any], userArn = userArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteEnvironmentMembershipRequest]
   }
 }

@@ -13,7 +13,6 @@ object PickImplcontext {
   @scala.inline
   def apply(context: String | JQuery): PickImplcontext = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplcontext]
   }
 }

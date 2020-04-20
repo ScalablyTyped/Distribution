@@ -14,14 +14,12 @@ trait ShareDialogModeAndroid extends js.Object
 
 object ShareDialogModeAndroid {
   @scala.inline
-  def automatic: typings.reactNativeFbsdk.reactNativeFbsdkStrings.automatic = this.cast("automatic")
+  def automatic: typings.reactNativeFbsdk.reactNativeFbsdkStrings.automatic = "automatic".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.automatic]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def feed: typings.reactNativeFbsdk.reactNativeFbsdkStrings.feed = "feed".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.feed]
   @scala.inline
-  def feed: typings.reactNativeFbsdk.reactNativeFbsdkStrings.feed = this.cast("feed")
+  def native: typings.reactNativeFbsdk.reactNativeFbsdkStrings.native = "native".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.native]
   @scala.inline
-  def native: typings.reactNativeFbsdk.reactNativeFbsdkStrings.native = this.cast("native")
-  @scala.inline
-  def web: typings.reactNativeFbsdk.reactNativeFbsdkStrings.web = this.cast("web")
+  def web: typings.reactNativeFbsdk.reactNativeFbsdkStrings.web = "web".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.web]
 }
 

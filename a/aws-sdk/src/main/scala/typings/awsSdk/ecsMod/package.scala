@@ -112,6 +112,18 @@ package object ecsMod {
   type DevicesList = js.Array[typings.awsSdk.ecsMod.Device]
   type DockerLabelsMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.ecsMod.String]
   type Double = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.ENABLED
+    - typings.awsSdk.awsSdkStrings.DISABLED
+    - java.lang.String
+  */
+  type EFSAuthorizationConfigIAM = typings.awsSdk.ecsMod._EFSAuthorizationConfigIAM | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.ENABLED
+    - typings.awsSdk.awsSdkStrings.DISABLED
+    - java.lang.String
+  */
+  type EFSTransitEncryption = typings.awsSdk.ecsMod._EFSTransitEncryption | java.lang.String
   type EnvironmentVariables = js.Array[typings.awsSdk.ecsMod.KeyValuePair]
   type Failures = js.Array[typings.awsSdk.ecsMod.Failure]
   type FirelensConfigurationOptionsMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.ecsMod.String]

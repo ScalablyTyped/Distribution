@@ -25,7 +25,6 @@ object RenderMainArgs {
     storyFn: () => StoryFn[StoryFnPreactReturnType]
   ): RenderMainArgs = {
     val __obj = js.Dynamic.literal(forceRender = forceRender.asInstanceOf[js.Any], selectedKind = selectedKind.asInstanceOf[js.Any], selectedStory = selectedStory.asInstanceOf[js.Any], showError = js.Any.fromFunction1(showError), showMain = js.Any.fromFunction0(showMain), storyFn = js.Any.fromFunction0(storyFn))
-  
     __obj.asInstanceOf[RenderMainArgs]
   }
 }

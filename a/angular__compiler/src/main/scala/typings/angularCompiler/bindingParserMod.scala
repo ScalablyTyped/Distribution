@@ -86,7 +86,7 @@ object bindingParserMod extends js.Object {
     def createDirectiveHostEventAsts(dirMeta: CompileDirectiveSummary, sourceSpan: ParseSourceSpan): js.Array[ParsedEvent] | Null = js.native
     def createDirectiveHostPropertyAsts(dirMeta: CompileDirectiveSummary, elementSelector: String, sourceSpan: ParseSourceSpan): js.Array[BoundElementProperty] | Null = js.native
     def getUsedPipes(): js.Array[CompilePipeSummary] = js.native
-    def interpolationConfig(): InterpolationConfig = js.native
+    def interpolationConfig: InterpolationConfig = js.native
     def parseEvent(
       name: String,
       expression: String,

@@ -34,7 +34,7 @@ object reactDynamicNumberStrings {
   @scala.inline
   def Dot: Dot = ".".asInstanceOf[Dot]
   @scala.inline
-  def Space: Space = " ".asInstanceOf[Space]
+  def Space: Space = (" ").asInstanceOf[Space]
   @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline

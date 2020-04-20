@@ -22,7 +22,6 @@ object ReducerContainer {
     style: StyleObject
   ): ReducerContainer = {
     val __obj = js.Dynamic.literal(assignmentCommutative = assignmentCommutative.asInstanceOf[js.Any], factory = js.Any.fromFunction1(factory), reducer = js.Any.fromFunction2(reducer), style = style.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReducerContainer]
   }
   @scala.inline
@@ -31,7 +30,6 @@ object ReducerContainer {
     reducer: (/* style */ StyleObject, /* props */ js.UndefOr[js.Object]) => StyleObject
   ): ReducerContainer = {
     val __obj = js.Dynamic.literal(assignmentCommutative = assignmentCommutative.asInstanceOf[js.Any], reducer = js.Any.fromFunction2(reducer))
-  
     __obj.asInstanceOf[ReducerContainer]
   }
 }

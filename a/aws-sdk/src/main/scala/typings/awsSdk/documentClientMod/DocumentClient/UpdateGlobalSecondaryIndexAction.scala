@@ -20,7 +20,6 @@ object UpdateGlobalSecondaryIndexAction {
   @scala.inline
   def apply(IndexName: IndexName, ProvisionedThroughput: ProvisionedThroughput): UpdateGlobalSecondaryIndexAction = {
     val __obj = js.Dynamic.literal(IndexName = IndexName.asInstanceOf[js.Any], ProvisionedThroughput = ProvisionedThroughput.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateGlobalSecondaryIndexAction]
   }
 }

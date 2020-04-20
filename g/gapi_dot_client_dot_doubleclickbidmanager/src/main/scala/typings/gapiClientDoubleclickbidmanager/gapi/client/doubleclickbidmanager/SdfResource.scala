@@ -15,7 +15,6 @@ object SdfResource {
   @scala.inline
   def apply(download: AnonAlt => Request_[DownloadResponse]): SdfResource = {
     val __obj = js.Dynamic.literal(download = js.Any.fromFunction1(download))
-  
     __obj.asInstanceOf[SdfResource]
   }
 }

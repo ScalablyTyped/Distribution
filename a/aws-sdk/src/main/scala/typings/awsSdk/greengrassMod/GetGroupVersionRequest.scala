@@ -20,7 +20,6 @@ object GetGroupVersionRequest {
   @scala.inline
   def apply(GroupId: string, GroupVersionId: string): GetGroupVersionRequest = {
     val __obj = js.Dynamic.literal(GroupId = GroupId.asInstanceOf[js.Any], GroupVersionId = GroupVersionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetGroupVersionRequest]
   }
 }

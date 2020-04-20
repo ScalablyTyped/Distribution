@@ -19,7 +19,6 @@ object CloseConnectionOptions {
   @scala.inline
   def apply(drop: Boolean): CloseConnectionOptions = {
     val __obj = js.Dynamic.literal(drop = drop.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CloseConnectionOptions]
   }
 }

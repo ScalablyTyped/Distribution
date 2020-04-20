@@ -33,7 +33,8 @@ package object mod {
     /* docs */ js.Array[js.Any], 
     js.Promise[js.Any] | scala.Unit
   ]
-  type MongooseFilterQuery[T] = typings.mongoose.mongooseStrings.MongooseFilterQuery with js.Any with typings.mongodb.mod.RootQuerySelector[T]
+  type MongooseFilterQuery[T] = typings.mongoose.mongooseStrings.MongooseFilterQuery with org.scalablytyped.runtime.TopLevel[js.Any] with typings.mongodb.mod.RootQuerySelector[T]
+  type MongooseUpdateQuery[S] = typings.mongodb.mod.UpdateQuery[S] with typings.mongodb.mod.MatchKeysAndValues[S]
   /*
     * Some mongoose classes have the same name as the native JS classes
     * Keep references to native classes using a "Native" prefix
@@ -42,7 +43,7 @@ package object mod {
   type NativeDate = typings.std.DateConstructor
   type NativeError = typings.std.ErrorConstructor
   // We can use TypeScript Omit once minimum required TypeScript Version is above 3.5
-  type Omit[T, K] = typings.std.Pick[T, typings.std.Exclude[java.lang.String, K]]
+  type Omit[T, K] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
   /*
     * section query.js
     * http://mongoosejs.com/docs/api.html#query-js
@@ -64,4 +65,5 @@ package object mod {
   ]
   type SchemaTypeOpts[T] = typings.mongoose.mod.SchemaTypeOpts_[T]
   type TagSet = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  type UpdateQuery[D] = typings.mongoose.mod.MongooseUpdateQuery[typings.mongoose.mod.DocumentDefinition[D]]
 }

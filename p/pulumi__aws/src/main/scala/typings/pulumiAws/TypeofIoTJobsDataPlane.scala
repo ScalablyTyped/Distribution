@@ -13,7 +13,6 @@ object TypeofIoTJobsDataPlane {
   @scala.inline
   def apply(Types: TypeofIoTJobsDataPlane): TypeofIoTJobsDataPlane = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofIoTJobsDataPlane]
   }
 }

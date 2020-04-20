@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait rmcTooltipProps {
   @scala.inline
-  def LibProps: ITooltipProps.type = typings.rmcTooltip.tooltipMod.ITooltipProps
+  def LibProps: ITooltipProps.type = ITooltipProps
   type LibProps = ITooltipProps
   @scala.inline
-  def TooltipProps: ITooltipProps.type = typings.rmcTooltip.tooltipMod.ITooltipProps
+  def TooltipProps: ITooltipProps.type = ITooltipProps
   type TooltipProps = ITooltipProps
 }
 

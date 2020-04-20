@@ -20,7 +20,6 @@ object DeleteIPSetRequest {
   @scala.inline
   def apply(ChangeToken: ChangeToken, IPSetId: ResourceId): DeleteIPSetRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken.asInstanceOf[js.Any], IPSetId = IPSetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteIPSetRequest]
   }
 }

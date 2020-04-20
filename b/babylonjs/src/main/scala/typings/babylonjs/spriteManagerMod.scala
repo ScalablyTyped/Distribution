@@ -174,7 +174,7 @@ object spriteManagerMod extends js.Object {
       * the static Constants.ALPHA_x properties provided in this class.
       * Default value is Constants.ALPHA_COMBINE
       */
-    def blendMode(): Double = js.native
+    def blendMode: Double = js.native
     def blendMode(blendMode: Double): js.Any = js.native
     /**
       * Releases all held resources
@@ -188,7 +188,7 @@ object spriteManagerMod extends js.Object {
     /**
       * Gets or sets the spritesheet texture
       */
-    def texture(): Texture = js.native
+    def texture: Texture = js.native
     def texture(value: Texture): js.Any = js.native
   }
   

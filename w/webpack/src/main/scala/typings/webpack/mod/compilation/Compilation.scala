@@ -61,6 +61,8 @@ class Compilation () extends Tapable {
   var usedChunkIds: js.Any = js.native
   var usedModuleIds: js.Any = js.native
   var warnings: js.Array[_] = js.native
+  def addChunkInGroup(groupOptions: GroupOptions): ChunkGroup = js.native
+  def addChunkInGroup(groupOptions: GroupOptions, module: Module, loc: DependencyLocation, request: String): ChunkGroup = js.native
   // tslint:disable-next-line:ban-types
   def addEntry(context: js.Any, entry: js.Any, name: js.Any, callback: js.Function): Unit = js.native
   def addModule(module: CompilationModule, cacheGroup: js.Any): js.Any = js.native

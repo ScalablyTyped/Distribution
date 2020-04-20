@@ -14,10 +14,8 @@ trait vbextCodePaneview extends js.Object
 
 object vbextCodePaneview {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def vbext_cv_FullModuleView: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def vbext_cv_FullModuleView: `1` = this.cast(1)
-  @scala.inline
-  def vbext_cv_ProcedureView: `0` = this.cast(0)
+  def vbext_cv_ProcedureView: `0` = 0.asInstanceOf[`0`]
 }
 

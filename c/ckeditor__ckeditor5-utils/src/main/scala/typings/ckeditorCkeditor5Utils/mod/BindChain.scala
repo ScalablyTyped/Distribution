@@ -16,7 +16,6 @@ object BindChain {
     toMany: (js.Array[Observable], /* repeated */ Observable | String | js.Function) => Unit
   ): BindChain = {
     val __obj = js.Dynamic.literal(to = js.Any.fromFunction2(to), toMany = js.Any.fromFunction2(toMany))
-  
     __obj.asInstanceOf[BindChain]
   }
 }

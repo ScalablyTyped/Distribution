@@ -20,7 +20,6 @@ object AssociateKmsKeyRequest {
   @scala.inline
   def apply(kmsKeyId: KmsKeyId, logGroupName: LogGroupName): AssociateKmsKeyRequest = {
     val __obj = js.Dynamic.literal(kmsKeyId = kmsKeyId.asInstanceOf[js.Any], logGroupName = logGroupName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssociateKmsKeyRequest]
   }
 }

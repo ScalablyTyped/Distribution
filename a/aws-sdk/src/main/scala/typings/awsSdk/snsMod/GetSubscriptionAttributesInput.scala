@@ -16,7 +16,6 @@ object GetSubscriptionAttributesInput {
   @scala.inline
   def apply(SubscriptionArn: subscriptionARN): GetSubscriptionAttributesInput = {
     val __obj = js.Dynamic.literal(SubscriptionArn = SubscriptionArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetSubscriptionAttributesInput]
   }
 }

@@ -26,7 +26,6 @@ object ModuleCoverage {
     statistics: CoverageStatistics
   ): ModuleCoverage = {
     val __obj = js.Dynamic.literal(blockCount = blockCount.asInstanceOf[js.Any], blockData = blockData.asInstanceOf[js.Any], functions = functions.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any], signatureAge = signatureAge.asInstanceOf[js.Any], statistics = statistics.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ModuleCoverage]
   }
 }

@@ -13,10 +13,8 @@ trait scanType extends js.Object
 
 object scanType {
   @scala.inline
-  def bar: typings.aliApp.aliAppStrings.bar = this.cast("bar")
+  def bar: typings.aliApp.aliAppStrings.bar = "bar".asInstanceOf[typings.aliApp.aliAppStrings.bar]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def qr: typings.aliApp.aliAppStrings.qr = this.cast("qr")
+  def qr: typings.aliApp.aliAppStrings.qr = "qr".asInstanceOf[typings.aliApp.aliAppStrings.qr]
 }
 

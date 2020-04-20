@@ -20,7 +20,6 @@ object MetricDimension {
   @scala.inline
   def apply(Name: MetricDimensionName, Value: MetricDimensionValue): MetricDimension = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MetricDimension]
   }
 }

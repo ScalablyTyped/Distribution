@@ -12,7 +12,6 @@ object AsObject {
   @scala.inline
   def apply(assertionErrorCode: String): AsObject = {
     val __obj = js.Dynamic.literal(assertionErrorCode = assertionErrorCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AsObject]
   }
 }

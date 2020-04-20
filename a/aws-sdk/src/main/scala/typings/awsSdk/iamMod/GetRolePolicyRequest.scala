@@ -20,7 +20,6 @@ object GetRolePolicyRequest {
   @scala.inline
   def apply(PolicyName: policyNameType, RoleName: roleNameType): GetRolePolicyRequest = {
     val __obj = js.Dynamic.literal(PolicyName = PolicyName.asInstanceOf[js.Any], RoleName = RoleName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetRolePolicyRequest]
   }
 }

@@ -37,8 +37,8 @@ class BasicParameterType protected () extends ParameterType {
   @JSName("type")
   val type_FBasicParameterType: IType = js.native
   @JSName("containerAsJavaActionParameter")
-  def containerAsJavaActionParameter_MBasicParameterType(): JavaActionParameter = js.native
-  def `type`(): Type = js.native
+  def containerAsJavaActionParameter_MBasicParameterType: JavaActionParameter = js.native
+  def `type`: Type = js.native
   def `type`(newValue: Type): js.Any = js.native
 }
 

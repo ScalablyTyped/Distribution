@@ -22,7 +22,6 @@ object Watermark {
     showAll: () => Unit
   ): Watermark = {
     val __obj = js.Dynamic.literal(hide = js.Any.fromFunction1(hide), hideAll = js.Any.fromFunction0(hideAll), options = options.asInstanceOf[js.Any], show = js.Any.fromFunction1(show), showAll = js.Any.fromFunction0(showAll))
-  
     __obj.asInstanceOf[Watermark]
   }
 }

@@ -16,7 +16,6 @@ object DeleteConnectionInput {
   @scala.inline
   def apply(ConnectionArn: ConnectionArn): DeleteConnectionInput = {
     val __obj = js.Dynamic.literal(ConnectionArn = ConnectionArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteConnectionInput]
   }
 }

@@ -20,7 +20,6 @@ object TagUserRequest {
   @scala.inline
   def apply(Tags: tagListType, UserName: existingUserNameType): TagUserRequest = {
     val __obj = js.Dynamic.literal(Tags = Tags.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TagUserRequest]
   }
 }

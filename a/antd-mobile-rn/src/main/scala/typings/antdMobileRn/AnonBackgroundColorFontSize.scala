@@ -22,7 +22,6 @@ object AnonBackgroundColorFontSize {
     textAlignVertical: String
   ): AnonBackgroundColorFontSize = {
     val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any], paddingHorizontal = paddingHorizontal.asInstanceOf[js.Any], textAlignVertical = textAlignVertical.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBackgroundColorFontSize]
   }
 }

@@ -13,7 +13,6 @@ object PickImplrequiredParameter {
   @scala.inline
   def apply(requiredParameter: String): PickImplrequiredParameter = {
     val __obj = js.Dynamic.literal(requiredParameter = requiredParameter.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplrequiredParameter]
   }
 }

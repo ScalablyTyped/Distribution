@@ -27,7 +27,7 @@ object jsDataStrings {
   sealed trait skip extends js.Object
   
   @scala.inline
-  def `LessthansignPercentsignEqualssign version PercentsignGreaterthansign`: `LessthansignPercentsignEqualssign version PercentsignGreaterthansign` = "<%= version %>".asInstanceOf[`LessthansignPercentsignEqualssign version PercentsignGreaterthansign`]
+  def `LessthansignPercentsignEqualssign version PercentsignGreaterthansign`: `LessthansignPercentsignEqualssign version PercentsignGreaterthansign` = ("<%= version %>").asInstanceOf[`LessthansignPercentsignEqualssign version PercentsignGreaterthansign`]
   @scala.inline
   def belongsTo: belongsTo = "belongsTo".asInstanceOf[belongsTo]
   @scala.inline

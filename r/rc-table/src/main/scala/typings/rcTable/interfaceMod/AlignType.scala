@@ -13,12 +13,10 @@ trait AlignType extends js.Object
 
 object AlignType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.rcTable.rcTableStrings.center = "center".asInstanceOf[typings.rcTable.rcTableStrings.center]
   @scala.inline
-  def center: typings.rcTable.rcTableStrings.center = this.cast("center")
+  def left: typings.rcTable.rcTableStrings.left = "left".asInstanceOf[typings.rcTable.rcTableStrings.left]
   @scala.inline
-  def left: typings.rcTable.rcTableStrings.left = this.cast("left")
-  @scala.inline
-  def right: typings.rcTable.rcTableStrings.right = this.cast("right")
+  def right: typings.rcTable.rcTableStrings.right = "right".asInstanceOf[typings.rcTable.rcTableStrings.right]
 }
 

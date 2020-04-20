@@ -24,20 +24,18 @@ trait TYPE extends js.Object
 
 object TYPE {
   @scala.inline
-  def DEFAULT: `8` = this.cast(8)
+  def DEFAULT: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def SSH_CUSTOM: `4` = this.cast(4)
+  def SSH_CUSTOM: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def SSH_INTERACTIVE: `16` = this.cast(16)
+  def SSH_INTERACTIVE: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def SSH_KEY: `2` = this.cast(2)
+  def SSH_KEY: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def SSH_MEMORY: `64` = this.cast(64)
+  def SSH_MEMORY: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def USERNAME: `32` = this.cast(32)
+  def USERNAME: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def USERPASS_PLAINTEXT: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def USERPASS_PLAINTEXT: `1` = 1.asInstanceOf[`1`]
 }
 

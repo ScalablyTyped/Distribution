@@ -16,7 +16,6 @@ object PickImplstorageMethod {
   @scala.inline
   def apply(storageMethod: cookie | localstorage | sessionstorage): PickImplstorageMethod = {
     val __obj = js.Dynamic.literal(storageMethod = storageMethod.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplstorageMethod]
   }
 }

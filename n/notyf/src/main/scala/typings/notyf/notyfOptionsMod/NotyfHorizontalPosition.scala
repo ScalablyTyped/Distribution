@@ -13,12 +13,10 @@ trait NotyfHorizontalPosition extends js.Object
 
 object NotyfHorizontalPosition {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.notyf.notyfStrings.center = "center".asInstanceOf[typings.notyf.notyfStrings.center]
   @scala.inline
-  def center: typings.notyf.notyfStrings.center = this.cast("center")
+  def left: typings.notyf.notyfStrings.left = "left".asInstanceOf[typings.notyf.notyfStrings.left]
   @scala.inline
-  def left: typings.notyf.notyfStrings.left = this.cast("left")
-  @scala.inline
-  def right: typings.notyf.notyfStrings.right = this.cast("right")
+  def right: typings.notyf.notyfStrings.right = "right".asInstanceOf[typings.notyf.notyfStrings.right]
 }
 

@@ -23,7 +23,6 @@ object ContainerDebugAdapter {
     resolver: typings.emberEngine.resolverMod.default
   ): ContainerDebugAdapter = {
     val __obj = js.Dynamic.literal(canCatalogEntriesByType = js.Any.fromFunction1(canCatalogEntriesByType), catalogEntriesByType = js.Any.fromFunction1(catalogEntriesByType), constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), resolver = resolver.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ContainerDebugAdapter]
   }
 }

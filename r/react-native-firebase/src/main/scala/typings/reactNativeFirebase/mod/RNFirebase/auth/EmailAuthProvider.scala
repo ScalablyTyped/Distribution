@@ -23,7 +23,6 @@ object EmailAuthProvider {
     credentialWithLink: (String, String) => AuthCredential
   ): EmailAuthProvider = {
     val __obj = js.Dynamic.literal(EMAIL_LINK_SIGN_IN_METHOD = EMAIL_LINK_SIGN_IN_METHOD.asInstanceOf[js.Any], EMAIL_PASSWORD_SIGN_IN_METHOD = EMAIL_PASSWORD_SIGN_IN_METHOD.asInstanceOf[js.Any], PROVIDER_ID = PROVIDER_ID.asInstanceOf[js.Any], credential = js.Any.fromFunction2(credential), credentialWithLink = js.Any.fromFunction2(credentialWithLink))
-  
     __obj.asInstanceOf[EmailAuthProvider]
   }
 }

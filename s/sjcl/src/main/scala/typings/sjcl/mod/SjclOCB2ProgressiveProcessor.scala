@@ -12,7 +12,6 @@ object SjclOCB2ProgressiveProcessor {
   @scala.inline
   def apply(process: BitArray_ => BitArray_): SjclOCB2ProgressiveProcessor = {
     val __obj = js.Dynamic.literal(process = js.Any.fromFunction1(process))
-  
     __obj.asInstanceOf[SjclOCB2ProgressiveProcessor]
   }
 }

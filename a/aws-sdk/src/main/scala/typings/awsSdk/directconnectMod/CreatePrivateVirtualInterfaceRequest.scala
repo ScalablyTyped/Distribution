@@ -20,7 +20,6 @@ object CreatePrivateVirtualInterfaceRequest {
   @scala.inline
   def apply(connectionId: ConnectionId, newPrivateVirtualInterface: NewPrivateVirtualInterface): CreatePrivateVirtualInterfaceRequest = {
     val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any], newPrivateVirtualInterface = newPrivateVirtualInterface.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreatePrivateVirtualInterfaceRequest]
   }
 }

@@ -16,14 +16,12 @@ trait SingleAnimationDirection
 
 object SingleAnimationDirection {
   @scala.inline
-  def alternate: typings.csstype.csstypeStrings.alternate = this.cast("alternate")
+  def alternate: typings.csstype.csstypeStrings.alternate = "alternate".asInstanceOf[typings.csstype.csstypeStrings.alternate]
   @scala.inline
-  def `alternate-reverse`: typings.csstype.csstypeStrings.`alternate-reverse` = this.cast("alternate-reverse")
+  def `alternate-reverse`: typings.csstype.csstypeStrings.`alternate-reverse` = "alternate-reverse".asInstanceOf[typings.csstype.csstypeStrings.`alternate-reverse`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def normal: typings.csstype.csstypeStrings.normal = "normal".asInstanceOf[typings.csstype.csstypeStrings.normal]
   @scala.inline
-  def normal: typings.csstype.csstypeStrings.normal = this.cast("normal")
-  @scala.inline
-  def reverse: typings.csstype.csstypeStrings.reverse = this.cast("reverse")
+  def reverse: typings.csstype.csstypeStrings.reverse = "reverse".asInstanceOf[typings.csstype.csstypeStrings.reverse]
 }
 

@@ -22,7 +22,6 @@ object ShareAction {
   @scala.inline
   def ShareDismissedAction(action: dismissedAction): ShareAction = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ShareAction]
   }
 }

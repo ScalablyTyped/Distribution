@@ -13,7 +13,6 @@ object ChatPhoto {
   @scala.inline
   def apply(big_file_id: String, small_file_id: String): ChatPhoto = {
     val __obj = js.Dynamic.literal(big_file_id = big_file_id.asInstanceOf[js.Any], small_file_id = small_file_id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChatPhoto]
   }
 }

@@ -27,7 +27,6 @@ object BoxStyle {
     vertical: String
   ): BoxStyle = {
     val __obj = js.Dynamic.literal(bottomLeft = bottomLeft.asInstanceOf[js.Any], bottomRight = bottomRight.asInstanceOf[js.Any], horizontal = horizontal.asInstanceOf[js.Any], topLeft = topLeft.asInstanceOf[js.Any], topRight = topRight.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BoxStyle]
   }
 }

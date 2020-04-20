@@ -14,10 +14,8 @@ trait OlSolutionScope extends js.Object
 
 object OlSolutionScope {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olHideInDefaultModules: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def olHideInDefaultModules: `0` = this.cast(0)
-  @scala.inline
-  def olShowInDefaultModules: `1` = this.cast(1)
+  def olShowInDefaultModules: `1` = 1.asInstanceOf[`1`]
 }
 

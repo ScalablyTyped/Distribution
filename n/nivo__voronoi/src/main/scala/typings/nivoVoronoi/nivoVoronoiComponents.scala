@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 
 object nivoVoronoiComponents extends nivoVoronoiProps {
   @scala.inline
-  def ResponsiveVoroinoi: ComponentType[ResponsiveVoroinoiProps] = js.constructorOf[typings.nivoVoronoi.mod.ResponsiveVoroinoi].asInstanceOf[typings.react.mod.ComponentType[ResponsiveVoroinoiProps]]
+  def ResponsiveVoroinoi: ComponentType[ResponsiveVoroinoiProps] = js.constructorOf[typings.nivoVoronoi.mod.ResponsiveVoroinoi].asInstanceOf[ComponentType[ResponsiveVoroinoiProps]]
   @scala.inline
-  def Voronoi: ComponentType[VoronoiProps with Dimensions] = js.constructorOf[typings.nivoVoronoi.mod.Voronoi].asInstanceOf[typings.react.mod.ComponentType[typings.nivoVoronoi.mod.VoronoiProps with typings.nivoCore.mod.Dimensions]]
+  def Voronoi: ComponentType[VoronoiProps with Dimensions] = js.constructorOf[typings.nivoVoronoi.mod.Voronoi].asInstanceOf[ComponentType[VoronoiProps with Dimensions]]
 }
 

@@ -25,6 +25,8 @@ trait FnCall extends js.Object {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PushEvent */ _
     ]
   ): js.Promise[Unit] = js.native
-  def apply(`type`: String): js.Promise[Unit] = js.native
+  def apply(
+    `type`: /* keyof / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceWorkerGlobalScopeEventMap * / any */ String
+  ): js.Promise[Unit] = js.native
 }
 

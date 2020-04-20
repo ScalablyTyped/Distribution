@@ -24,20 +24,18 @@ trait OlGroupType extends js.Object
 
 object OlGroupType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olCustomFoldersGroup: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def olCustomFoldersGroup: `0` = this.cast(0)
+  def olFavoriteFoldersGroup: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def olFavoriteFoldersGroup: `4` = this.cast(4)
+  def olMyFoldersGroup: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olMyFoldersGroup: `1` = this.cast(1)
+  def olOtherFoldersGroup: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def olOtherFoldersGroup: `3` = this.cast(3)
+  def olPeopleFoldersGroup: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olPeopleFoldersGroup: `2` = this.cast(2)
+  def olReadOnlyGroup: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def olReadOnlyGroup: `6` = this.cast(6)
-  @scala.inline
-  def olRoomsGroup: `5` = this.cast(5)
+  def olRoomsGroup: `5` = 5.asInstanceOf[`5`]
 }
 

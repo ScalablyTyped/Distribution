@@ -12,7 +12,6 @@ object ConstantState {
   @scala.inline
   def apply(newDrawable: () => typings.androiduix.android.graphics.drawable.Drawable): ConstantState = {
     val __obj = js.Dynamic.literal(newDrawable = js.Any.fromFunction0(newDrawable))
-  
     __obj.asInstanceOf[ConstantState]
   }
 }

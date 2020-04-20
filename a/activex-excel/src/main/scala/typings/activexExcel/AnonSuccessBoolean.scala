@@ -12,7 +12,6 @@ object AnonSuccessBoolean {
   @scala.inline
   def apply(Success: Boolean): AnonSuccessBoolean = {
     val __obj = js.Dynamic.literal(Success = Success.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSuccessBoolean]
   }
 }

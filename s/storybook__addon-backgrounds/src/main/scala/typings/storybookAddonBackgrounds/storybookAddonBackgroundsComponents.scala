@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 object storybookAddonBackgroundsComponents extends storybookAddonBackgroundsProps {
   @scala.inline
-  def BackgroundSelector: ComponentType[BackgroundSelectorProps] = js.constructorOf[typings.storybookAddonBackgrounds.backgroundSelectorMod.BackgroundSelector].asInstanceOf[typings.react.mod.ComponentType[BackgroundSelectorProps]]
+  def BackgroundSelector: ComponentType[BackgroundSelectorProps] = js.constructorOf[typings.storybookAddonBackgrounds.backgroundSelectorMod.BackgroundSelector].asInstanceOf[ComponentType[BackgroundSelectorProps]]
   @scala.inline
-  def GridSelector: ComponentType[js.Object] = typings.storybookAddonBackgrounds.gridSelectorMod.GridSelector.asInstanceOf[typings.react.mod.ComponentType[js.Object]]
+  def GridSelector: ComponentType[js.Object] = typings.storybookAddonBackgrounds.gridSelectorMod.GridSelector.asInstanceOf[ComponentType[js.Object]]
 }
 

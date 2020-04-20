@@ -13,7 +13,6 @@ object AnonOffset {
   @scala.inline
   def apply(offset: js.Array[Double], offsetRelative: js.Array[Double]): AnonOffset = {
     val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], offsetRelative = offsetRelative.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOffset]
   }
 }

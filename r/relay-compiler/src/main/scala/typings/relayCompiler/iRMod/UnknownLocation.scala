@@ -13,7 +13,6 @@ object UnknownLocation {
   @scala.inline
   def apply(kind: Unknown): UnknownLocation = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnknownLocation]
   }
 }

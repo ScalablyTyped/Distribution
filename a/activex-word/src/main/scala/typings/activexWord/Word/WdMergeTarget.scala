@@ -16,12 +16,10 @@ trait WdMergeTarget extends js.Object
 
 object WdMergeTarget {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdMergeTargetCurrent: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdMergeTargetCurrent: `1` = this.cast(1)
+  def wdMergeTargetNew: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdMergeTargetNew: `2` = this.cast(2)
-  @scala.inline
-  def wdMergeTargetSelected: `0` = this.cast(0)
+  def wdMergeTargetSelected: `0` = 0.asInstanceOf[`0`]
 }
 

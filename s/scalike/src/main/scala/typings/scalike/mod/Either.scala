@@ -26,7 +26,6 @@ object Either {
     value: A | B
   ): Either[A, B] = {
     val __obj = js.Dynamic.literal(fold = js.Any.fromFunction2(fold), isLeft = isLeft.asInstanceOf[js.Any], isRight = isRight.asInstanceOf[js.Any], left = js.Any.fromFunction0(left), right = js.Any.fromFunction0(right), swap = js.Any.fromFunction0(swap), value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Either[A, B]]
   }
 }

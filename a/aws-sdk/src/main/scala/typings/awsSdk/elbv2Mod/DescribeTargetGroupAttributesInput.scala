@@ -16,7 +16,6 @@ object DescribeTargetGroupAttributesInput {
   @scala.inline
   def apply(TargetGroupArn: TargetGroupArn): DescribeTargetGroupAttributesInput = {
     val __obj = js.Dynamic.literal(TargetGroupArn = TargetGroupArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeTargetGroupAttributesInput]
   }
 }

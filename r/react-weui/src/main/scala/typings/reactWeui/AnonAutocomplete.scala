@@ -28,7 +28,6 @@ object AnonAutocomplete {
     searchName: String
   ): AnonAutocomplete = {
     val __obj = js.Dynamic.literal(autocomplete = autocomplete.asInstanceOf[js.Any], lang = lang.asInstanceOf[js.Any], onCancel = onCancel.asInstanceOf[js.Any], onChange = onChange.asInstanceOf[js.Any], onClear = onClear.asInstanceOf[js.Any], onSubmit = onSubmit.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], searchName = searchName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAutocomplete]
   }
 }

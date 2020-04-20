@@ -98,7 +98,6 @@ object RegionInstanceGroupManagersResource {
     setTargetPools: AnonInstanceGroupManagerKey => Request_[Operation]
   ): RegionInstanceGroupManagersResource = {
     val __obj = js.Dynamic.literal(abandonInstances = js.Any.fromFunction1(abandonInstances), delete = js.Any.fromFunction1(delete), deleteInstances = js.Any.fromFunction1(deleteInstances), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), listManagedInstances = js.Any.fromFunction1(listManagedInstances), recreateInstances = js.Any.fromFunction1(recreateInstances), resize = js.Any.fromFunction1(resize), setInstanceTemplate = js.Any.fromFunction1(setInstanceTemplate), setTargetPools = js.Any.fromFunction1(setTargetPools))
-  
     __obj.asInstanceOf[RegionInstanceGroupManagersResource]
   }
 }

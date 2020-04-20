@@ -14,7 +14,6 @@ object NodeStringDecoder {
   @scala.inline
   def apply(detectIncompleteChar: Buffer => Double, write: Buffer => String): NodeStringDecoder = {
     val __obj = js.Dynamic.literal(detectIncompleteChar = js.Any.fromFunction1(detectIncompleteChar), write = js.Any.fromFunction1(write))
-  
     __obj.asInstanceOf[NodeStringDecoder]
   }
 }

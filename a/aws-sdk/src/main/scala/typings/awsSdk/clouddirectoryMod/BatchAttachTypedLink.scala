@@ -33,7 +33,6 @@ object BatchAttachTypedLink {
     TypedLinkFacet: TypedLinkSchemaAndFacetName
   ): BatchAttachTypedLink = {
     val __obj = js.Dynamic.literal(Attributes = Attributes.asInstanceOf[js.Any], SourceObjectReference = SourceObjectReference.asInstanceOf[js.Any], TargetObjectReference = TargetObjectReference.asInstanceOf[js.Any], TypedLinkFacet = TypedLinkFacet.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchAttachTypedLink]
   }
 }

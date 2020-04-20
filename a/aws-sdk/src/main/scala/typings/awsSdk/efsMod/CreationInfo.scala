@@ -24,7 +24,6 @@ object CreationInfo {
   @scala.inline
   def apply(OwnerGid: OwnerGid, OwnerUid: OwnerUid, Permissions: Permissions): CreationInfo = {
     val __obj = js.Dynamic.literal(OwnerGid = OwnerGid.asInstanceOf[js.Any], OwnerUid = OwnerUid.asInstanceOf[js.Any], Permissions = Permissions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreationInfo]
   }
 }

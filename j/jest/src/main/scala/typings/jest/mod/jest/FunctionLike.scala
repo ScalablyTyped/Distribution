@@ -12,7 +12,6 @@ object FunctionLike {
   @scala.inline
   def apply(name: String): FunctionLike = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FunctionLike]
   }
 }

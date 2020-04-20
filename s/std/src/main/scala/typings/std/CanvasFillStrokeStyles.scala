@@ -22,7 +22,6 @@ object CanvasFillStrokeStyles {
     strokeStyle: java.lang.String | CanvasGradient | CanvasPattern
   ): CanvasFillStrokeStyles = {
     val __obj = js.Dynamic.literal(createLinearGradient = js.Any.fromFunction4(createLinearGradient), createPattern = js.Any.fromFunction2(createPattern), createRadialGradient = js.Any.fromFunction6(createRadialGradient), fillStyle = fillStyle.asInstanceOf[js.Any], strokeStyle = strokeStyle.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CanvasFillStrokeStyles]
   }
 }

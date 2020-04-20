@@ -16,7 +16,6 @@ object UpdatePhoneNumberSettingsRequest {
   @scala.inline
   def apply(CallingName: CallingName): UpdatePhoneNumberSettingsRequest = {
     val __obj = js.Dynamic.literal(CallingName = CallingName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdatePhoneNumberSettingsRequest]
   }
 }

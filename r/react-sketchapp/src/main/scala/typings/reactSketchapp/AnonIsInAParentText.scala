@@ -12,7 +12,6 @@ object AnonIsInAParentText {
   @scala.inline
   def apply(isInAParentText: Boolean): AnonIsInAParentText = {
     val __obj = js.Dynamic.literal(isInAParentText = isInAParentText.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsInAParentText]
   }
 }

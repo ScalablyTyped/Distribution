@@ -12,10 +12,8 @@ trait FirstNameNationalities extends js.Object
 
 object FirstNameNationalities {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def en: typings.chance.chanceStrings.en = "en".asInstanceOf[typings.chance.chanceStrings.en]
   @scala.inline
-  def en: typings.chance.chanceStrings.en = this.cast("en")
-  @scala.inline
-  def it: typings.chance.chanceStrings.it = this.cast("it")
+  def it: typings.chance.chanceStrings.it = "it".asInstanceOf[typings.chance.chanceStrings.it]
 }
 

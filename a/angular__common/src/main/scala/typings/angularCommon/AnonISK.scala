@@ -66,7 +66,6 @@ object AnonISK {
     VND: js.Array[js.UndefOr[String]]
   ): AnonISK = {
     val __obj = js.Dynamic.literal(AUD = AUD.asInstanceOf[js.Any], BBD = BBD.asInstanceOf[js.Any], BMD = BMD.asInstanceOf[js.Any], BRL = BRL.asInstanceOf[js.Any], BSD = BSD.asInstanceOf[js.Any], BZD = BZD.asInstanceOf[js.Any], CNY = CNY.asInstanceOf[js.Any], DKK = DKK.asInstanceOf[js.Any], DOP = DOP.asInstanceOf[js.Any], EEK = EEK.asInstanceOf[js.Any], EGP = EGP.asInstanceOf[js.Any], ESP = ESP.asInstanceOf[js.Any], GBP = GBP.asInstanceOf[js.Any], HKD = HKD.asInstanceOf[js.Any], IEP = IEP.asInstanceOf[js.Any], INR = INR.asInstanceOf[js.Any], ISK = ISK.asInstanceOf[js.Any], JMD = JMD.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any], KRW = KRW.asInstanceOf[js.Any], NOK = NOK.asInstanceOf[js.Any], NZD = NZD.asInstanceOf[js.Any], RON = RON.asInstanceOf[js.Any], SEK = SEK.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any], VND = VND.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonISK]
   }
 }

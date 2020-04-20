@@ -18,22 +18,20 @@ trait JobScope extends js.Object
 
 object JobScope {
   @scala.inline
-  def canceled: typings.gitlab.gitlabStrings.canceled = this.cast("canceled")
+  def canceled: typings.gitlab.gitlabStrings.canceled = "canceled".asInstanceOf[typings.gitlab.gitlabStrings.canceled]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def created: typings.gitlab.gitlabStrings.created = "created".asInstanceOf[typings.gitlab.gitlabStrings.created]
   @scala.inline
-  def created: typings.gitlab.gitlabStrings.created = this.cast("created")
+  def failed: typings.gitlab.gitlabStrings.failed = "failed".asInstanceOf[typings.gitlab.gitlabStrings.failed]
   @scala.inline
-  def failed: typings.gitlab.gitlabStrings.failed = this.cast("failed")
+  def manual: typings.gitlab.gitlabStrings.manual = "manual".asInstanceOf[typings.gitlab.gitlabStrings.manual]
   @scala.inline
-  def manual: typings.gitlab.gitlabStrings.manual = this.cast("manual")
+  def pending: typings.gitlab.gitlabStrings.pending = "pending".asInstanceOf[typings.gitlab.gitlabStrings.pending]
   @scala.inline
-  def pending: typings.gitlab.gitlabStrings.pending = this.cast("pending")
+  def running: typings.gitlab.gitlabStrings.running = "running".asInstanceOf[typings.gitlab.gitlabStrings.running]
   @scala.inline
-  def running: typings.gitlab.gitlabStrings.running = this.cast("running")
+  def skipped: typings.gitlab.gitlabStrings.skipped = "skipped".asInstanceOf[typings.gitlab.gitlabStrings.skipped]
   @scala.inline
-  def skipped: typings.gitlab.gitlabStrings.skipped = this.cast("skipped")
-  @scala.inline
-  def success: typings.gitlab.gitlabStrings.success = this.cast("success")
+  def success: typings.gitlab.gitlabStrings.success = "success".asInstanceOf[typings.gitlab.gitlabStrings.success]
 }
 

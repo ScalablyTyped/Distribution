@@ -9,7 +9,10 @@ import scala.scalajs.js.annotation._
 @JSImport("ramda/src/pick", JSImport.Namespace)
 @js.native
 object pickMod extends js.Object {
-  def default[K /* <: String */](names: js.Array[K]): js.Function1[/* obj */ js.Any, Pick[_, Exclude[String, Exclude[String, K]]]] = js.native
-  def default[T, K /* <: String */](names: js.Array[K], obj: T): Pick[T, Exclude[String, Exclude[String, K]]] = js.native
+  def default[K /* <: String */](names: js.Array[K]): js.Function1[
+    /* obj */ js.Any, 
+    Pick[_, Exclude[/* keyof any */ String, Exclude[/* keyof any */ String, K]]]
+  ] = js.native
+  def default[T, K /* <: String */](names: js.Array[K], obj: T): Pick[T, Exclude[/* keyof T */ String, Exclude[/* keyof T */ String, K]]] = js.native
 }
 

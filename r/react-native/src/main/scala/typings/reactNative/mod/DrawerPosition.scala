@@ -13,7 +13,6 @@ object DrawerPosition {
   @scala.inline
   def apply(Left: Double, Right: Double): DrawerPosition = {
     val __obj = js.Dynamic.literal(Left = Left.asInstanceOf[js.Any], Right = Right.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DrawerPosition]
   }
 }

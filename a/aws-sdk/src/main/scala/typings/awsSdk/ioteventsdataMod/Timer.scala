@@ -20,7 +20,6 @@ object Timer {
   @scala.inline
   def apply(name: TimerName, timestamp: Timestamp): Timer = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Timer]
   }
 }

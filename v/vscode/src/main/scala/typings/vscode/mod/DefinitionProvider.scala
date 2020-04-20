@@ -23,7 +23,6 @@ object DefinitionProvider {
     provideDefinition: (TextDocument, Position, CancellationToken) => ProviderResult[Definition | js.Array[DefinitionLink]]
   ): DefinitionProvider = {
     val __obj = js.Dynamic.literal(provideDefinition = js.Any.fromFunction3(provideDefinition))
-  
     __obj.asInstanceOf[DefinitionProvider]
   }
 }

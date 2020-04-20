@@ -20,16 +20,14 @@ trait XlPivotTableSourceType extends js.Object
 
 object XlPivotTableSourceType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlConsolidation: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlConsolidation: `3` = this.cast(3)
+  def xlDatabase: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlDatabase: `1` = this.cast(1)
+  def xlExternal: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlExternal: `2` = this.cast(2)
+  def xlPivotTable: `-4148` = -4148.asInstanceOf[`-4148`]
   @scala.inline
-  def xlPivotTable: `-4148` = this.cast(-4148)
-  @scala.inline
-  def xlScenario: `4` = this.cast(4)
+  def xlScenario: `4` = 4.asInstanceOf[`4`]
 }
 

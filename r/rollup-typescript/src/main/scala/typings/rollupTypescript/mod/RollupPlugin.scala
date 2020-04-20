@@ -19,7 +19,6 @@ object RollupPlugin {
     transform: (String, String) => AnonCode
   ): RollupPlugin = {
     val __obj = js.Dynamic.literal(load = js.Any.fromFunction1(load), resolveId = js.Any.fromFunction2(resolveId), transform = js.Any.fromFunction2(transform))
-  
     __obj.asInstanceOf[RollupPlugin]
   }
 }

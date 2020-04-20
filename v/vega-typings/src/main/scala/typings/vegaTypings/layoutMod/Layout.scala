@@ -15,7 +15,6 @@ object Layout {
   @scala.inline
   def SignalRef(signal: String): Layout = {
     val __obj = js.Dynamic.literal(signal = signal.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Layout]
   }
   @scala.inline

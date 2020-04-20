@@ -24,7 +24,6 @@ object Anon3 {
     success: KiiAppAdminContext => js.Any
   ): Anon3 = {
     val __obj = js.Dynamic.literal(failure = js.Any.fromFunction4(failure), success = js.Any.fromFunction1(success))
-  
     __obj.asInstanceOf[Anon3]
   }
 }

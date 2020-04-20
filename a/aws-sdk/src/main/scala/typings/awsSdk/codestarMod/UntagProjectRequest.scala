@@ -20,7 +20,6 @@ object UntagProjectRequest {
   @scala.inline
   def apply(id: ProjectId, tags: TagKeys): UntagProjectRequest = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UntagProjectRequest]
   }
 }

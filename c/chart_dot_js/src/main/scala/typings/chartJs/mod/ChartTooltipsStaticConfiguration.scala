@@ -13,7 +13,6 @@ object ChartTooltipsStaticConfiguration {
   @scala.inline
   def apply(positioners: StringDictionary[ChartTooltipPositioner]): ChartTooltipsStaticConfiguration = {
     val __obj = js.Dynamic.literal(positioners = positioners.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChartTooltipsStaticConfiguration]
   }
 }

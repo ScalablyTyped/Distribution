@@ -13,7 +13,7 @@ object util extends js.Object {
     @js.native
     class CopyOnWriteArrayList[T] () extends js.Object {
       var isDataNew: js.Any = js.native
-      @JSName(scala.scalajs.js.Symbol.iterator)
+      @JSName(js.Symbol.iterator)
       var iterator_FCopyOnWriteArrayList: js.Function0[IterableIterator[T]] = js.native
       var mData: js.Any = js.native
       def add(items: T*): Unit = js.native

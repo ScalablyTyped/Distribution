@@ -23,7 +23,6 @@ object Renderer {
     settings: Settings => Unit
   ): Renderer = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], refresh = js.Any.fromFunction0(refresh), render = js.Any.fromFunction0(render), resize = js.Any.fromFunction0(resize), settings = js.Any.fromFunction1(settings))
-  
     __obj.asInstanceOf[Renderer]
   }
 }

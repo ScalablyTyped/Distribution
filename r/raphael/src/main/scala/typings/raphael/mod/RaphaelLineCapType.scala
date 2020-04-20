@@ -13,12 +13,10 @@ trait RaphaelLineCapType extends js.Object
 
 object RaphaelLineCapType {
   @scala.inline
-  def butt: typings.raphael.raphaelStrings.butt = this.cast("butt")
+  def butt: typings.raphael.raphaelStrings.butt = "butt".asInstanceOf[typings.raphael.raphaelStrings.butt]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def round: typings.raphael.raphaelStrings.round = "round".asInstanceOf[typings.raphael.raphaelStrings.round]
   @scala.inline
-  def round: typings.raphael.raphaelStrings.round = this.cast("round")
-  @scala.inline
-  def square: typings.raphael.raphaelStrings.square = this.cast("square")
+  def square: typings.raphael.raphaelStrings.square = "square".asInstanceOf[typings.raphael.raphaelStrings.square]
 }
 

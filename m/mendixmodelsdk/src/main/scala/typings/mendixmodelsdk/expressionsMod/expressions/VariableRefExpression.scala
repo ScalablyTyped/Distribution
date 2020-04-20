@@ -63,11 +63,11 @@ class VariableRefExpression protected () extends Expression {
     * In version 7.11.0: introduced
     */
   @JSName("member")
-  def member_Union(): MemberRef | Null = js.native
+  def member_Union: MemberRef | Null = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
-  def variable(): VariableRef = js.native
+  def variable: VariableRef = js.native
   def variable(newValue: VariableRef): js.Any = js.native
 }
 

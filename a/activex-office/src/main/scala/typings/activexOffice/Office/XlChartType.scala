@@ -180,176 +180,174 @@ trait XlChartType extends js.Object
 
 object XlChartType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xl3DArea: `-4098` = -4098.asInstanceOf[`-4098`]
   @scala.inline
-  def xl3DArea: `-4098` = this.cast(-4098)
+  def xl3DAreaStacked: `78` = 78.asInstanceOf[`78`]
   @scala.inline
-  def xl3DAreaStacked: `78` = this.cast(78)
+  def xl3DAreaStacked100: `79` = 79.asInstanceOf[`79`]
   @scala.inline
-  def xl3DAreaStacked100: `79` = this.cast(79)
+  def xl3DBarClustered: `60` = 60.asInstanceOf[`60`]
   @scala.inline
-  def xl3DBarClustered: `60` = this.cast(60)
+  def xl3DBarStacked: `61` = 61.asInstanceOf[`61`]
   @scala.inline
-  def xl3DBarStacked: `61` = this.cast(61)
+  def xl3DBarStacked100: `62` = 62.asInstanceOf[`62`]
   @scala.inline
-  def xl3DBarStacked100: `62` = this.cast(62)
+  def xl3DColumn: `-4100` = -4100.asInstanceOf[`-4100`]
   @scala.inline
-  def xl3DColumn: `-4100` = this.cast(-4100)
+  def xl3DColumnClustered: `54` = 54.asInstanceOf[`54`]
   @scala.inline
-  def xl3DColumnClustered: `54` = this.cast(54)
+  def xl3DColumnStacked: `55` = 55.asInstanceOf[`55`]
   @scala.inline
-  def xl3DColumnStacked: `55` = this.cast(55)
+  def xl3DColumnStacked100: `56` = 56.asInstanceOf[`56`]
   @scala.inline
-  def xl3DColumnStacked100: `56` = this.cast(56)
+  def xl3DLine: `-4101` = -4101.asInstanceOf[`-4101`]
   @scala.inline
-  def xl3DLine: `-4101` = this.cast(-4101)
+  def xl3DPie: `-4102` = -4102.asInstanceOf[`-4102`]
   @scala.inline
-  def xl3DPie: `-4102` = this.cast(-4102)
+  def xl3DPieExploded: `70` = 70.asInstanceOf[`70`]
   @scala.inline
-  def xl3DPieExploded: `70` = this.cast(70)
+  def xlArea: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlArea: `1` = this.cast(1)
+  def xlAreaStacked: `76` = 76.asInstanceOf[`76`]
   @scala.inline
-  def xlAreaStacked: `76` = this.cast(76)
+  def xlAreaStacked100: `77` = 77.asInstanceOf[`77`]
   @scala.inline
-  def xlAreaStacked100: `77` = this.cast(77)
+  def xlBarClustered: `57` = 57.asInstanceOf[`57`]
   @scala.inline
-  def xlBarClustered: `57` = this.cast(57)
+  def xlBarOfPie: `71` = 71.asInstanceOf[`71`]
   @scala.inline
-  def xlBarOfPie: `71` = this.cast(71)
+  def xlBarStacked: `58` = 58.asInstanceOf[`58`]
   @scala.inline
-  def xlBarStacked: `58` = this.cast(58)
+  def xlBarStacked100: `59` = 59.asInstanceOf[`59`]
   @scala.inline
-  def xlBarStacked100: `59` = this.cast(59)
+  def xlBoxwhisker: `121` = 121.asInstanceOf[`121`]
   @scala.inline
-  def xlBoxwhisker: `121` = this.cast(121)
+  def xlBubble: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def xlBubble: `15` = this.cast(15)
+  def xlBubble3DEffect: `87` = 87.asInstanceOf[`87`]
   @scala.inline
-  def xlBubble3DEffect: `87` = this.cast(87)
+  def xlColumnClustered: `51` = 51.asInstanceOf[`51`]
   @scala.inline
-  def xlColumnClustered: `51` = this.cast(51)
+  def xlColumnStacked: `52` = 52.asInstanceOf[`52`]
   @scala.inline
-  def xlColumnStacked: `52` = this.cast(52)
+  def xlColumnStacked100: `53` = 53.asInstanceOf[`53`]
   @scala.inline
-  def xlColumnStacked100: `53` = this.cast(53)
+  def xlCombo: `-4152` = -4152.asInstanceOf[`-4152`]
   @scala.inline
-  def xlCombo: `-4152` = this.cast(-4152)
+  def xlComboAreaStackedColumnClustered: `115` = 115.asInstanceOf[`115`]
   @scala.inline
-  def xlComboAreaStackedColumnClustered: `115` = this.cast(115)
+  def xlComboColumnClusteredLine: `113` = 113.asInstanceOf[`113`]
   @scala.inline
-  def xlComboColumnClusteredLine: `113` = this.cast(113)
+  def xlComboColumnClusteredLineSecondaryAxis: `114` = 114.asInstanceOf[`114`]
   @scala.inline
-  def xlComboColumnClusteredLineSecondaryAxis: `114` = this.cast(114)
+  def xlConeBarClustered: `102` = 102.asInstanceOf[`102`]
   @scala.inline
-  def xlConeBarClustered: `102` = this.cast(102)
+  def xlConeBarStacked: `103` = 103.asInstanceOf[`103`]
   @scala.inline
-  def xlConeBarStacked: `103` = this.cast(103)
+  def xlConeBarStacked100: `104` = 104.asInstanceOf[`104`]
   @scala.inline
-  def xlConeBarStacked100: `104` = this.cast(104)
+  def xlConeCol: `105` = 105.asInstanceOf[`105`]
   @scala.inline
-  def xlConeCol: `105` = this.cast(105)
+  def xlConeColClustered: `99` = 99.asInstanceOf[`99`]
   @scala.inline
-  def xlConeColClustered: `99` = this.cast(99)
+  def xlConeColStacked: `100` = 100.asInstanceOf[`100`]
   @scala.inline
-  def xlConeColStacked: `100` = this.cast(100)
+  def xlConeColStacked100: `101` = 101.asInstanceOf[`101`]
   @scala.inline
-  def xlConeColStacked100: `101` = this.cast(101)
+  def xlCylinderBarClustered: `95` = 95.asInstanceOf[`95`]
   @scala.inline
-  def xlCylinderBarClustered: `95` = this.cast(95)
+  def xlCylinderBarStacked: `96` = 96.asInstanceOf[`96`]
   @scala.inline
-  def xlCylinderBarStacked: `96` = this.cast(96)
+  def xlCylinderBarStacked100: `97` = 97.asInstanceOf[`97`]
   @scala.inline
-  def xlCylinderBarStacked100: `97` = this.cast(97)
+  def xlCylinderCol: `98` = 98.asInstanceOf[`98`]
   @scala.inline
-  def xlCylinderCol: `98` = this.cast(98)
+  def xlCylinderColClustered: `92` = 92.asInstanceOf[`92`]
   @scala.inline
-  def xlCylinderColClustered: `92` = this.cast(92)
+  def xlCylinderColStacked: `93` = 93.asInstanceOf[`93`]
   @scala.inline
-  def xlCylinderColStacked: `93` = this.cast(93)
+  def xlCylinderColStacked100: `94` = 94.asInstanceOf[`94`]
   @scala.inline
-  def xlCylinderColStacked100: `94` = this.cast(94)
+  def xlDoughnut: `-4120` = -4120.asInstanceOf[`-4120`]
   @scala.inline
-  def xlDoughnut: `-4120` = this.cast(-4120)
+  def xlDoughnutExploded: `80` = 80.asInstanceOf[`80`]
   @scala.inline
-  def xlDoughnutExploded: `80` = this.cast(80)
+  def xlHistogram: `118` = 118.asInstanceOf[`118`]
   @scala.inline
-  def xlHistogram: `118` = this.cast(118)
+  def xlLine: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlLine: `4` = this.cast(4)
+  def xlLineMarkers: `65` = 65.asInstanceOf[`65`]
   @scala.inline
-  def xlLineMarkers: `65` = this.cast(65)
+  def xlLineMarkersStacked: `66` = 66.asInstanceOf[`66`]
   @scala.inline
-  def xlLineMarkersStacked: `66` = this.cast(66)
+  def xlLineMarkersStacked100: `67` = 67.asInstanceOf[`67`]
   @scala.inline
-  def xlLineMarkersStacked100: `67` = this.cast(67)
+  def xlLineStacked: `63` = 63.asInstanceOf[`63`]
   @scala.inline
-  def xlLineStacked: `63` = this.cast(63)
+  def xlLineStacked100: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def xlLineStacked100: `64` = this.cast(64)
+  def xlOtherCombinations: `116` = 116.asInstanceOf[`116`]
   @scala.inline
-  def xlOtherCombinations: `116` = this.cast(116)
+  def xlPareto: `122` = 122.asInstanceOf[`122`]
   @scala.inline
-  def xlPareto: `122` = this.cast(122)
+  def xlPie: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xlPie: `5` = this.cast(5)
+  def xlPieExploded: `69` = 69.asInstanceOf[`69`]
   @scala.inline
-  def xlPieExploded: `69` = this.cast(69)
+  def xlPieOfPie: `68` = 68.asInstanceOf[`68`]
   @scala.inline
-  def xlPieOfPie: `68` = this.cast(68)
+  def xlPyramidBarClustered: `109` = 109.asInstanceOf[`109`]
   @scala.inline
-  def xlPyramidBarClustered: `109` = this.cast(109)
+  def xlPyramidBarStacked: `110` = 110.asInstanceOf[`110`]
   @scala.inline
-  def xlPyramidBarStacked: `110` = this.cast(110)
+  def xlPyramidBarStacked100: `111` = 111.asInstanceOf[`111`]
   @scala.inline
-  def xlPyramidBarStacked100: `111` = this.cast(111)
+  def xlPyramidCol: `112` = 112.asInstanceOf[`112`]
   @scala.inline
-  def xlPyramidCol: `112` = this.cast(112)
+  def xlPyramidColClustered: `106` = 106.asInstanceOf[`106`]
   @scala.inline
-  def xlPyramidColClustered: `106` = this.cast(106)
+  def xlPyramidColStacked: `107` = 107.asInstanceOf[`107`]
   @scala.inline
-  def xlPyramidColStacked: `107` = this.cast(107)
+  def xlPyramidColStacked100: `108` = 108.asInstanceOf[`108`]
   @scala.inline
-  def xlPyramidColStacked100: `108` = this.cast(108)
+  def xlRadar: `-4151` = -4151.asInstanceOf[`-4151`]
   @scala.inline
-  def xlRadar: `-4151` = this.cast(-4151)
+  def xlRadarFilled: `82` = 82.asInstanceOf[`82`]
   @scala.inline
-  def xlRadarFilled: `82` = this.cast(82)
+  def xlRadarMarkers: `81` = 81.asInstanceOf[`81`]
   @scala.inline
-  def xlRadarMarkers: `81` = this.cast(81)
+  def xlStockHLC: `88` = 88.asInstanceOf[`88`]
   @scala.inline
-  def xlStockHLC: `88` = this.cast(88)
+  def xlStockOHLC: `89` = 89.asInstanceOf[`89`]
   @scala.inline
-  def xlStockOHLC: `89` = this.cast(89)
+  def xlStockVHLC: `90` = 90.asInstanceOf[`90`]
   @scala.inline
-  def xlStockVHLC: `90` = this.cast(90)
+  def xlStockVOHLC: `91` = 91.asInstanceOf[`91`]
   @scala.inline
-  def xlStockVOHLC: `91` = this.cast(91)
+  def xlSuggestedChart: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def xlSuggestedChart: `-2` = this.cast(-2)
+  def xlSunburst: `120` = 120.asInstanceOf[`120`]
   @scala.inline
-  def xlSunburst: `120` = this.cast(120)
+  def xlSurface: `83` = 83.asInstanceOf[`83`]
   @scala.inline
-  def xlSurface: `83` = this.cast(83)
+  def xlSurfaceTopView: `85` = 85.asInstanceOf[`85`]
   @scala.inline
-  def xlSurfaceTopView: `85` = this.cast(85)
+  def xlSurfaceTopViewWireframe: `86` = 86.asInstanceOf[`86`]
   @scala.inline
-  def xlSurfaceTopViewWireframe: `86` = this.cast(86)
+  def xlSurfaceWireframe: `84` = 84.asInstanceOf[`84`]
   @scala.inline
-  def xlSurfaceWireframe: `84` = this.cast(84)
+  def xlTreemap: `117` = 117.asInstanceOf[`117`]
   @scala.inline
-  def xlTreemap: `117` = this.cast(117)
+  def xlWaterfall: `119` = 119.asInstanceOf[`119`]
   @scala.inline
-  def xlWaterfall: `119` = this.cast(119)
+  def xlXYScatter: `-4169` = -4169.asInstanceOf[`-4169`]
   @scala.inline
-  def xlXYScatter: `-4169` = this.cast(-4169)
+  def xlXYScatterLines: `74` = 74.asInstanceOf[`74`]
   @scala.inline
-  def xlXYScatterLines: `74` = this.cast(74)
+  def xlXYScatterLinesNoMarkers: `75` = 75.asInstanceOf[`75`]
   @scala.inline
-  def xlXYScatterLinesNoMarkers: `75` = this.cast(75)
+  def xlXYScatterSmooth: `72` = 72.asInstanceOf[`72`]
   @scala.inline
-  def xlXYScatterSmooth: `72` = this.cast(72)
-  @scala.inline
-  def xlXYScatterSmoothNoMarkers: `73` = this.cast(73)
+  def xlXYScatterSmoothNoMarkers: `73` = 73.asInstanceOf[`73`]
 }
 

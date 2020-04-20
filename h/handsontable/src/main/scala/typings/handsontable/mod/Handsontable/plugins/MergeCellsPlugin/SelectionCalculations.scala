@@ -17,7 +17,6 @@ object SelectionCalculations {
     snapDelta: (js.Object, CellRange, MergedCellCoords) => Unit
   ): SelectionCalculations = {
     val __obj = js.Dynamic.literal(getUpdatedSelectionRange = js.Any.fromFunction2(getUpdatedSelectionRange), snapDelta = js.Any.fromFunction3(snapDelta))
-  
     __obj.asInstanceOf[SelectionCalculations]
   }
 }

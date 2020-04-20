@@ -16,18 +16,16 @@ trait AlignContentType extends js.Object
 
 object AlignContentType {
   @scala.inline
-  def around: typings.grommet.grommetStrings.around = this.cast("around")
+  def around: typings.grommet.grommetStrings.around = "around".asInstanceOf[typings.grommet.grommetStrings.around]
   @scala.inline
-  def between: typings.grommet.grommetStrings.between = this.cast("between")
+  def between: typings.grommet.grommetStrings.between = "between".asInstanceOf[typings.grommet.grommetStrings.between]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.grommet.grommetStrings.center = "center".asInstanceOf[typings.grommet.grommetStrings.center]
   @scala.inline
-  def center: typings.grommet.grommetStrings.center = this.cast("center")
+  def end: typings.grommet.grommetStrings.end = "end".asInstanceOf[typings.grommet.grommetStrings.end]
   @scala.inline
-  def end: typings.grommet.grommetStrings.end = this.cast("end")
+  def start: typings.grommet.grommetStrings.start = "start".asInstanceOf[typings.grommet.grommetStrings.start]
   @scala.inline
-  def start: typings.grommet.grommetStrings.start = this.cast("start")
-  @scala.inline
-  def stretch: typings.grommet.grommetStrings.stretch = this.cast("stretch")
+  def stretch: typings.grommet.grommetStrings.stretch = "stretch".asInstanceOf[typings.grommet.grommetStrings.stretch]
 }
 

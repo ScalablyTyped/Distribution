@@ -19,7 +19,6 @@ object ICompletionManager_ {
   @scala.inline
   def apply(register: ICompletable => ICompletableAttributes): ICompletionManager_ = {
     val __obj = js.Dynamic.literal(register = js.Any.fromFunction1(register))
-  
     __obj.asInstanceOf[ICompletionManager_]
   }
 }

@@ -16,18 +16,16 @@ trait LogLevelNames extends js.Object
 
 object LogLevelNames {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def debug: typings.consoleLogLevel.consoleLogLevelStrings.debug = "debug".asInstanceOf[typings.consoleLogLevel.consoleLogLevelStrings.debug]
   @scala.inline
-  def debug: typings.consoleLogLevel.consoleLogLevelStrings.debug = this.cast("debug")
+  def error: typings.consoleLogLevel.consoleLogLevelStrings.error = "error".asInstanceOf[typings.consoleLogLevel.consoleLogLevelStrings.error]
   @scala.inline
-  def error: typings.consoleLogLevel.consoleLogLevelStrings.error = this.cast("error")
+  def fatal: typings.consoleLogLevel.consoleLogLevelStrings.fatal = "fatal".asInstanceOf[typings.consoleLogLevel.consoleLogLevelStrings.fatal]
   @scala.inline
-  def fatal: typings.consoleLogLevel.consoleLogLevelStrings.fatal = this.cast("fatal")
+  def info: typings.consoleLogLevel.consoleLogLevelStrings.info = "info".asInstanceOf[typings.consoleLogLevel.consoleLogLevelStrings.info]
   @scala.inline
-  def info: typings.consoleLogLevel.consoleLogLevelStrings.info = this.cast("info")
+  def trace: typings.consoleLogLevel.consoleLogLevelStrings.trace = "trace".asInstanceOf[typings.consoleLogLevel.consoleLogLevelStrings.trace]
   @scala.inline
-  def trace: typings.consoleLogLevel.consoleLogLevelStrings.trace = this.cast("trace")
-  @scala.inline
-  def warn: typings.consoleLogLevel.consoleLogLevelStrings.warn = this.cast("warn")
+  def warn: typings.consoleLogLevel.consoleLogLevelStrings.warn = "warn".asInstanceOf[typings.consoleLogLevel.consoleLogLevelStrings.warn]
 }
 

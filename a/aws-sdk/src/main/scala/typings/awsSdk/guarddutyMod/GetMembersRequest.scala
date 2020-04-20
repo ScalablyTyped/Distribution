@@ -20,7 +20,6 @@ object GetMembersRequest {
   @scala.inline
   def apply(AccountIds: AccountIds, DetectorId: DetectorId): GetMembersRequest = {
     val __obj = js.Dynamic.literal(AccountIds = AccountIds.asInstanceOf[js.Any], DetectorId = DetectorId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetMembersRequest]
   }
 }

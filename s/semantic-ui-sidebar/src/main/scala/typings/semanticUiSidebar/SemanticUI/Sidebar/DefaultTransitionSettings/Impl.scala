@@ -13,7 +13,6 @@ object Impl {
   @scala.inline
   def apply(computer: ComputerSettings, mobile: MobileSettings): Impl = {
     val __obj = js.Dynamic.literal(computer = computer.asInstanceOf[js.Any], mobile = mobile.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Impl]
   }
 }

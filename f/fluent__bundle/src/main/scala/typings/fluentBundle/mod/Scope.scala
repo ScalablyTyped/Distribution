@@ -22,7 +22,6 @@ object Scope {
     reportError: String => Unit
   ): Scope = {
     val __obj = js.Dynamic.literal(cloneForTermReference = js.Any.fromFunction1(cloneForTermReference), memoizeIntlObject = js.Any.fromFunction2(memoizeIntlObject), reportError = js.Any.fromFunction1(reportError))
-  
     __obj.asInstanceOf[Scope]
   }
 }

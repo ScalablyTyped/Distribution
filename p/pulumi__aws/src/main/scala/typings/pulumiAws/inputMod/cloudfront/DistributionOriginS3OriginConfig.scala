@@ -18,7 +18,6 @@ object DistributionOriginS3OriginConfig {
   @scala.inline
   def apply(originAccessIdentity: Input[String]): DistributionOriginS3OriginConfig = {
     val __obj = js.Dynamic.literal(originAccessIdentity = originAccessIdentity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DistributionOriginS3OriginConfig]
   }
 }

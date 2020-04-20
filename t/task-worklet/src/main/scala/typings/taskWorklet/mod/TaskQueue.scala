@@ -13,7 +13,6 @@ object TaskQueue {
   @scala.inline
   def apply(addModule: String => js.Promise[Unit], postTask: (String, /* repeated */ js.Any) => Task[_]): TaskQueue = {
     val __obj = js.Dynamic.literal(addModule = js.Any.fromFunction1(addModule), postTask = js.Any.fromFunction2(postTask))
-  
     __obj.asInstanceOf[TaskQueue]
   }
 }

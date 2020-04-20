@@ -20,7 +20,6 @@ object Validator {
   @scala.inline
   def apply(Content: StringWithLengthBetween0And32768, Type: ValidatorType): Validator = {
     val __obj = js.Dynamic.literal(Content = Content.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Validator]
   }
 }

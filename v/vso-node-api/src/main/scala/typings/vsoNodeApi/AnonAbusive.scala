@@ -14,7 +14,6 @@ object AnonAbusive {
   @scala.inline
   def apply(abusive: Double, general: Double, spam: Double): AnonAbusive = {
     val __obj = js.Dynamic.literal(abusive = abusive.asInstanceOf[js.Any], general = general.asInstanceOf[js.Any], spam = spam.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAbusive]
   }
 }

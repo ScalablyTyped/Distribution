@@ -41,7 +41,6 @@ object SelectUI {
     update: () => Unit
   ): SelectUI = {
     val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), buildState = buildState.asInstanceOf[js.Any], closeOptions = js.Any.fromFunction0(closeOptions), destroy = js.Any.fromFunction0(destroy), element = js.Any.fromFunction0(element), eventManager = eventManager.asInstanceOf[js.Any], focus = js.Any.fromFunction0(focus), getValue = js.Any.fromFunction0(getValue), hide = js.Any.fromFunction0(hide), hot = hot.asInstanceOf[js.Any], isBuilt = js.Any.fromFunction0(isBuilt), items = items.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], openOptions = js.Any.fromFunction0(openOptions), options = options.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), setItems = js.Any.fromFunction1(setItems), setValue = js.Any.fromFunction1(setValue), show = js.Any.fromFunction0(show), update = js.Any.fromFunction0(update))
-  
     __obj.asInstanceOf[SelectUI]
   }
 }

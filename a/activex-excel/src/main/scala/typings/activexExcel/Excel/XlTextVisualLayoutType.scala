@@ -14,10 +14,8 @@ trait XlTextVisualLayoutType extends js.Object
 
 object XlTextVisualLayoutType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlTextVisualLTR: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlTextVisualLTR: `1` = this.cast(1)
-  @scala.inline
-  def xlTextVisualRTL: `2` = this.cast(2)
+  def xlTextVisualRTL: `2` = 2.asInstanceOf[`2`]
 }
 

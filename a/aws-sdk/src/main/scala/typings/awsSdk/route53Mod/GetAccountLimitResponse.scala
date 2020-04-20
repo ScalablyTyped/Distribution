@@ -20,7 +20,6 @@ object GetAccountLimitResponse {
   @scala.inline
   def apply(Count: UsageCount, Limit: AccountLimit): GetAccountLimitResponse = {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Limit = Limit.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetAccountLimitResponse]
   }
 }

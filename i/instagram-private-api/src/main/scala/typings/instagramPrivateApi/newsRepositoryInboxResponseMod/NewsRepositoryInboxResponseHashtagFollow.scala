@@ -14,7 +14,6 @@ object NewsRepositoryInboxResponseHashtagFollow {
   @scala.inline
   def apply(follow_status: Double, id: String, name: String): NewsRepositoryInboxResponseHashtagFollow = {
     val __obj = js.Dynamic.literal(follow_status = follow_status.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NewsRepositoryInboxResponseHashtagFollow]
   }
 }

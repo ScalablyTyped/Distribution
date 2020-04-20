@@ -25,20 +25,18 @@ trait FAX_JOB_OPERATIONS_ENUM extends js.Object
 
 object FAX_JOB_OPERATIONS_ENUM {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fjoDELETE: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def fjoDELETE: `16` = this.cast(16)
+  def fjoPAUSE: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def fjoPAUSE: `2` = this.cast(2)
+  def fjoRECIPIENT_INFO: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def fjoRECIPIENT_INFO: `32` = this.cast(32)
+  def fjoRESTART: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def fjoRESTART: `8` = this.cast(8)
+  def fjoRESUME: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def fjoRESUME: `4` = this.cast(4)
+  def fjoSENDER_INFO: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def fjoSENDER_INFO: `64` = this.cast(64)
-  @scala.inline
-  def fjoVIEW: `1` = this.cast(1)
+  def fjoVIEW: `1` = 1.asInstanceOf[`1`]
 }
 

@@ -14,14 +14,12 @@ trait Command extends js.Object
 
 object Command {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def resize: typings.jqueryEasyLoading.jqueryEasyLoadingStrings.resize = "resize".asInstanceOf[typings.jqueryEasyLoading.jqueryEasyLoadingStrings.resize]
   @scala.inline
-  def resize: typings.jqueryEasyLoading.jqueryEasyLoadingStrings.resize = this.cast("resize")
+  def start: typings.jqueryEasyLoading.jqueryEasyLoadingStrings.start = "start".asInstanceOf[typings.jqueryEasyLoading.jqueryEasyLoadingStrings.start]
   @scala.inline
-  def start: typings.jqueryEasyLoading.jqueryEasyLoadingStrings.start = this.cast("start")
+  def stop: typings.jqueryEasyLoading.jqueryEasyLoadingStrings.stop = "stop".asInstanceOf[typings.jqueryEasyLoading.jqueryEasyLoadingStrings.stop]
   @scala.inline
-  def stop: typings.jqueryEasyLoading.jqueryEasyLoadingStrings.stop = this.cast("stop")
-  @scala.inline
-  def toggle: typings.jqueryEasyLoading.jqueryEasyLoadingStrings.toggle = this.cast("toggle")
+  def toggle: typings.jqueryEasyLoading.jqueryEasyLoadingStrings.toggle = "toggle".asInstanceOf[typings.jqueryEasyLoading.jqueryEasyLoadingStrings.toggle]
 }
 

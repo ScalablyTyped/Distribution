@@ -18,14 +18,12 @@ trait IconType extends js.Object
 
 object IconType {
   @scala.inline
-  def ExclamationMakr: `48` = this.cast(48)
+  def ExclamationMakr: `48` = 48.asInstanceOf[`48`]
   @scala.inline
-  def InformationMark: `64` = this.cast(64)
+  def InformationMark: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def QuestionMark: `32` = this.cast(32)
+  def QuestionMark: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def Stop: `16` = this.cast(16)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Stop: `16` = 16.asInstanceOf[`16`]
 }
 

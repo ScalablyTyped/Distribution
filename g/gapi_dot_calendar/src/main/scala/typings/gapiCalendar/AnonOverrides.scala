@@ -13,7 +13,6 @@ object AnonOverrides {
   @scala.inline
   def apply(overrides: js.Array[AnonMinutes], useDefault: Boolean): AnonOverrides = {
     val __obj = js.Dynamic.literal(overrides = overrides.asInstanceOf[js.Any], useDefault = useDefault.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOverrides]
   }
 }

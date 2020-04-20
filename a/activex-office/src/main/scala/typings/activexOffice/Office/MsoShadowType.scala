@@ -98,94 +98,92 @@ trait MsoShadowType extends js.Object
 
 object MsoShadowType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoShadow1: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoShadow1: `1` = this.cast(1)
+  def msoShadow10: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def msoShadow10: `10` = this.cast(10)
+  def msoShadow11: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def msoShadow11: `11` = this.cast(11)
+  def msoShadow12: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def msoShadow12: `12` = this.cast(12)
+  def msoShadow13: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def msoShadow13: `13` = this.cast(13)
+  def msoShadow14: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def msoShadow14: `14` = this.cast(14)
+  def msoShadow15: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def msoShadow15: `15` = this.cast(15)
+  def msoShadow16: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def msoShadow16: `16` = this.cast(16)
+  def msoShadow17: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def msoShadow17: `17` = this.cast(17)
+  def msoShadow18: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def msoShadow18: `18` = this.cast(18)
+  def msoShadow19: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def msoShadow19: `19` = this.cast(19)
+  def msoShadow2: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoShadow2: `2` = this.cast(2)
+  def msoShadow20: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def msoShadow20: `20` = this.cast(20)
+  def msoShadow21: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def msoShadow21: `21` = this.cast(21)
+  def msoShadow22: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def msoShadow22: `22` = this.cast(22)
+  def msoShadow23: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def msoShadow23: `23` = this.cast(23)
+  def msoShadow24: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def msoShadow24: `24` = this.cast(24)
+  def msoShadow25: `25` = 25.asInstanceOf[`25`]
   @scala.inline
-  def msoShadow25: `25` = this.cast(25)
+  def msoShadow26: `26` = 26.asInstanceOf[`26`]
   @scala.inline
-  def msoShadow26: `26` = this.cast(26)
+  def msoShadow27: `27` = 27.asInstanceOf[`27`]
   @scala.inline
-  def msoShadow27: `27` = this.cast(27)
+  def msoShadow28: `28` = 28.asInstanceOf[`28`]
   @scala.inline
-  def msoShadow28: `28` = this.cast(28)
+  def msoShadow29: `29` = 29.asInstanceOf[`29`]
   @scala.inline
-  def msoShadow29: `29` = this.cast(29)
+  def msoShadow3: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoShadow3: `3` = this.cast(3)
+  def msoShadow30: `30` = 30.asInstanceOf[`30`]
   @scala.inline
-  def msoShadow30: `30` = this.cast(30)
+  def msoShadow31: `31` = 31.asInstanceOf[`31`]
   @scala.inline
-  def msoShadow31: `31` = this.cast(31)
+  def msoShadow32: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def msoShadow32: `32` = this.cast(32)
+  def msoShadow33: `33` = 33.asInstanceOf[`33`]
   @scala.inline
-  def msoShadow33: `33` = this.cast(33)
+  def msoShadow34: `34` = 34.asInstanceOf[`34`]
   @scala.inline
-  def msoShadow34: `34` = this.cast(34)
+  def msoShadow35: `35` = 35.asInstanceOf[`35`]
   @scala.inline
-  def msoShadow35: `35` = this.cast(35)
+  def msoShadow36: `36` = 36.asInstanceOf[`36`]
   @scala.inline
-  def msoShadow36: `36` = this.cast(36)
+  def msoShadow37: `37` = 37.asInstanceOf[`37`]
   @scala.inline
-  def msoShadow37: `37` = this.cast(37)
+  def msoShadow38: `38` = 38.asInstanceOf[`38`]
   @scala.inline
-  def msoShadow38: `38` = this.cast(38)
+  def msoShadow39: `39` = 39.asInstanceOf[`39`]
   @scala.inline
-  def msoShadow39: `39` = this.cast(39)
+  def msoShadow4: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoShadow4: `4` = this.cast(4)
+  def msoShadow40: `40` = 40.asInstanceOf[`40`]
   @scala.inline
-  def msoShadow40: `40` = this.cast(40)
+  def msoShadow41: `41` = 41.asInstanceOf[`41`]
   @scala.inline
-  def msoShadow41: `41` = this.cast(41)
+  def msoShadow42: `42` = 42.asInstanceOf[`42`]
   @scala.inline
-  def msoShadow42: `42` = this.cast(42)
+  def msoShadow43: `43` = 43.asInstanceOf[`43`]
   @scala.inline
-  def msoShadow43: `43` = this.cast(43)
+  def msoShadow5: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def msoShadow5: `5` = this.cast(5)
+  def msoShadow6: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def msoShadow6: `6` = this.cast(6)
+  def msoShadow7: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def msoShadow7: `7` = this.cast(7)
+  def msoShadow8: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def msoShadow8: `8` = this.cast(8)
+  def msoShadow9: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def msoShadow9: `9` = this.cast(9)
-  @scala.inline
-  def msoShadowMixed: `-2` = this.cast(-2)
+  def msoShadowMixed: `-2` = -2.asInstanceOf[`-2`]
 }
 

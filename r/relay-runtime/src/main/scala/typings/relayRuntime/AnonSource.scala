@@ -16,7 +16,6 @@ object AnonSource {
   @scala.inline
   def apply(operation: OperationDescriptor, source: RelayObservable[GraphQLResponse]): AnonSource = {
     val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSource]
   }
 }

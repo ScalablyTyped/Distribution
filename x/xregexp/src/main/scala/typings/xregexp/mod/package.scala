@@ -35,7 +35,7 @@ package object mod {
   /**
     * Special helper type that sets only specific properties to required.
     */
-  type PickRequired[T, K /* <: java.lang.String */] = T with (typings.std.Required[typings.std.Pick[T, K]])
+  type PickRequired[T, K /* <: /* keyof T */ java.lang.String */] = T with (typings.std.Required[typings.std.Pick[T, K]])
   /**
     *   Replacement functions are invoked with three or more arguments:
     *     - {string}        substring  - The matched substring (corresponds to `$&` above). Named backreferences are accessible as

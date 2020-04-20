@@ -16,7 +16,6 @@ object JiraParameters {
   @scala.inline
   def apply(SiteBaseUrl: SiteBaseUrl): JiraParameters = {
     val __obj = js.Dynamic.literal(SiteBaseUrl = SiteBaseUrl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JiraParameters]
   }
 }

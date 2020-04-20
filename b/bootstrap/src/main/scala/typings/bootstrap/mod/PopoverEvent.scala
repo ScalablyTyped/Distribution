@@ -15,16 +15,14 @@ trait PopoverEvent extends js.Object
 
 object PopoverEvent {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def hiddenDotbsDotpopover: typings.bootstrap.bootstrapStrings.hiddenDotbsDotpopover = "hidden.bs.popover".asInstanceOf[typings.bootstrap.bootstrapStrings.hiddenDotbsDotpopover]
   @scala.inline
-  def hiddenDotbsDotpopover: typings.bootstrap.bootstrapStrings.hiddenDotbsDotpopover = this.cast("hidden.bs.popover")
+  def hideDotbsDotpopover: typings.bootstrap.bootstrapStrings.hideDotbsDotpopover = "hide.bs.popover".asInstanceOf[typings.bootstrap.bootstrapStrings.hideDotbsDotpopover]
   @scala.inline
-  def hideDotbsDotpopover: typings.bootstrap.bootstrapStrings.hideDotbsDotpopover = this.cast("hide.bs.popover")
+  def insertedDotbsDotpopover: typings.bootstrap.bootstrapStrings.insertedDotbsDotpopover = "inserted.bs.popover".asInstanceOf[typings.bootstrap.bootstrapStrings.insertedDotbsDotpopover]
   @scala.inline
-  def insertedDotbsDotpopover: typings.bootstrap.bootstrapStrings.insertedDotbsDotpopover = this.cast("inserted.bs.popover")
+  def showDotbsDotpopover: typings.bootstrap.bootstrapStrings.showDotbsDotpopover = "show.bs.popover".asInstanceOf[typings.bootstrap.bootstrapStrings.showDotbsDotpopover]
   @scala.inline
-  def showDotbsDotpopover: typings.bootstrap.bootstrapStrings.showDotbsDotpopover = this.cast("show.bs.popover")
-  @scala.inline
-  def shownDotbsDotpopover: typings.bootstrap.bootstrapStrings.shownDotbsDotpopover = this.cast("shown.bs.popover")
+  def shownDotbsDotpopover: typings.bootstrap.bootstrapStrings.shownDotbsDotpopover = "shown.bs.popover".asInstanceOf[typings.bootstrap.bootstrapStrings.shownDotbsDotpopover]
 }
 

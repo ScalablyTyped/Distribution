@@ -14,7 +14,6 @@ object RequiredProjectIntegratio {
   @scala.inline
   def apply(enabled: Boolean, root: String): RequiredProjectIntegratio = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RequiredProjectIntegratio]
   }
 }

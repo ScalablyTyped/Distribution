@@ -13,7 +13,6 @@ object MapStyle {
   @scala.inline
   def apply(features: js.Array[_], style: String): MapStyle = {
     val __obj = js.Dynamic.literal(features = features.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MapStyle]
   }
 }

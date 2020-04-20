@@ -22,7 +22,7 @@ class EnumerationCase protected () extends CaseValue {
   ) = this()
   @JSName("model")
   var model_FEnumerationCase: IModel = js.native
-  def value(): String = js.native
+  def value: String = js.native
   def value(newValue: String): js.Any = js.native
 }
 

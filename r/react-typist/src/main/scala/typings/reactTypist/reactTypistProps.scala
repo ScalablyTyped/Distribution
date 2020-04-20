@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactTypistProps {
   @scala.inline
-  def BackspaceProps: BackSpaceProps.type = typings.reactTypist.mod.Typist.BackSpaceProps
+  def BackspaceProps: BackSpaceProps.type = BackSpaceProps
   type BackspaceProps = BackSpaceProps
   @scala.inline
   def DelayProps: typings.reactTypist.mod.Typist.DelayProps.type = typings.reactTypist.mod.Typist.DelayProps
@@ -19,7 +19,7 @@ trait reactTypistProps {
   def TypistProps: typings.reactTypist.mod.TypistProps.type = typings.reactTypist.mod.TypistProps
   type TypistProps = typings.reactTypist.mod.TypistProps
   @scala.inline
-  def TypistBackspaceProps: BackSpaceProps.type = typings.reactTypist.mod.Typist.BackSpaceProps
+  def TypistBackspaceProps: BackSpaceProps.type = BackSpaceProps
   type TypistBackspaceProps = BackSpaceProps
   @scala.inline
   def TypistDelayProps: typings.reactTypist.mod.Typist.DelayProps.type = typings.reactTypist.mod.Typist.DelayProps

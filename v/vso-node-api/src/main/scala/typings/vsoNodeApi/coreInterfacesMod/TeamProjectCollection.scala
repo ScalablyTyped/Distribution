@@ -23,7 +23,6 @@ object TeamProjectCollection {
   @scala.inline
   def apply(_links: js.Any, description: String, id: String, name: String, state: String, url: String): TeamProjectCollection = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TeamProjectCollection]
   }
 }

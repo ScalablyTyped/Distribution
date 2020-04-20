@@ -16,7 +16,6 @@ object PutItemInput {
   @scala.inline
   def apply(tableName: TableName): PutItemInput = {
     val __obj = js.Dynamic.literal(tableName = tableName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutItemInput]
   }
 }

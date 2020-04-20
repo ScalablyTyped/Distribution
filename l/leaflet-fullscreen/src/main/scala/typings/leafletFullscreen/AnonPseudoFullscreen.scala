@@ -12,7 +12,6 @@ object AnonPseudoFullscreen {
   @scala.inline
   def apply(pseudoFullscreen: Boolean): AnonPseudoFullscreen = {
     val __obj = js.Dynamic.literal(pseudoFullscreen = pseudoFullscreen.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPseudoFullscreen]
   }
 }

@@ -14,7 +14,6 @@ object OSActionButton {
   @scala.inline
   def apply(icon: String, id: String, text: String): OSActionButton = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OSActionButton]
   }
 }

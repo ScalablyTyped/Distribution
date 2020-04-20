@@ -1,6 +1,7 @@
 package typings.checkTypes.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.checkTypes.AnonInstantiable
 import typings.std.Partial
 import typings.std.RegExp
@@ -95,12 +96,12 @@ trait CheckType extends js.Object {
     predicates: Partial[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in keyof T ]: (args : ...any): boolean}
-    */ typings.checkTypes.checkTypesStrings.CheckType with js.Any
+    */ typings.checkTypes.checkTypesStrings.CheckType with TopLevel[js.Any]
     ]
   ): Partial[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in keyof T ]: any}
-    */ typings.checkTypes.checkTypesStrings.CheckType with js.Any
+    */ typings.checkTypes.checkTypesStrings.CheckType with TopLevel[js.Any]
   ] = js.native
   def `match`(a: String, b: RegExp): Boolean = js.native
   def maybe[T](`val`: T): Boolean | T = js.native

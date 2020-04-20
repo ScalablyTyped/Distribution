@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 
 trait rmcCascaderProps {
   @scala.inline
-  def CascaderProps: ICascaderProps.type = typings.rmcCascader.cascaderTypesMod.ICascaderProps
+  def CascaderProps: ICascaderProps.type = ICascaderProps
   type CascaderProps = ICascaderProps
   @scala.inline
-  def PopupProps: IPopupCascaderProps.type = typings.rmcCascader.popupMod.IPopupCascaderProps
+  def PopupProps: IPopupCascaderProps.type = IPopupCascaderProps
   type PopupProps = IPopupCascaderProps
   @scala.inline
-  def RmcCascaderProps: ICascaderProps.type = typings.rmcCascader.cascaderTypesMod.ICascaderProps
+  def RmcCascaderProps: ICascaderProps.type = ICascaderProps
   type RmcCascaderProps = ICascaderProps
 }
 

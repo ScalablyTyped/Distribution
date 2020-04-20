@@ -14,7 +14,6 @@ object ReaderArgument {
   @scala.inline
   def ReaderLiteral(kind: String, name: String, value: js.Any): ReaderArgument = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReaderArgument]
   }
   @scala.inline

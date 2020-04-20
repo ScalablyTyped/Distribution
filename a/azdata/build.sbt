@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "azdata"
-version := "1.15-dt-20200225Z-0950e8"
+version := "1.15-dt-20200225Z-18c0b7"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.8-a0108c",
-  "org.scalablytyped" %%% "vscode" % "1.43-dt-20200309Z-8a7e01")
+  "org.scalablytyped" %%% "std" % "3.8-9b2470",
+  "org.scalablytyped" %%% "vscode" % "1.44-dt-20200408Z-6f200b")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

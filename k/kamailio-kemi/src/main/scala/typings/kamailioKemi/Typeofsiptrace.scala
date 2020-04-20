@@ -22,7 +22,6 @@ object Typeofsiptrace {
     sip_trace_dst_cid: (String, String) => Double
   ): Typeofsiptrace = {
     val __obj = js.Dynamic.literal(hlog = js.Any.fromFunction1(hlog), hlog_cid = js.Any.fromFunction2(hlog_cid), sip_trace = js.Any.fromFunction0(sip_trace), sip_trace_dst = js.Any.fromFunction1(sip_trace_dst), sip_trace_dst_cid = js.Any.fromFunction2(sip_trace_dst_cid))
-  
     __obj.asInstanceOf[Typeofsiptrace]
   }
 }

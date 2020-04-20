@@ -66,7 +66,6 @@ object Payments_ {
     purchaseAsync: PurchaseConfig => js.Promise[Purchase]
   ): Payments_ = {
     val __obj = js.Dynamic.literal(consumePurchaseAsync = js.Any.fromFunction1(consumePurchaseAsync), getCatalogAsync = js.Any.fromFunction0(getCatalogAsync), getPurchasesAsync = js.Any.fromFunction0(getPurchasesAsync), onReady = js.Any.fromFunction1(onReady), purchaseAsync = js.Any.fromFunction1(purchaseAsync))
-  
     __obj.asInstanceOf[Payments_]
   }
 }

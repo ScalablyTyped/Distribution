@@ -24,7 +24,6 @@ object Transition {
   @scala.inline
   def apply(_isMBTransition: Boolean, check: _ => Boolean, event: String): Transition = {
     val __obj = js.Dynamic.literal(_isMBTransition = _isMBTransition.asInstanceOf[js.Any], check = js.Any.fromFunction1(check), event = event.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Transition]
   }
 }

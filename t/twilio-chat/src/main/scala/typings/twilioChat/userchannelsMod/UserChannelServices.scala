@@ -13,7 +13,6 @@ object UserChannelServices {
   @scala.inline
   def apply(network: Network): UserChannelServices = {
     val __obj = js.Dynamic.literal(network = network.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UserChannelServices]
   }
 }

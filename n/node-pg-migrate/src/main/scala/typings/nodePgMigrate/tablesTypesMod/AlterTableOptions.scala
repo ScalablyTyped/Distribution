@@ -16,7 +16,6 @@ object AlterTableOptions {
   @scala.inline
   def apply(levelSecurity: DISABLE | ENABLE | FORCE | (`NO FORCE`)): AlterTableOptions = {
     val __obj = js.Dynamic.literal(levelSecurity = levelSecurity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AlterTableOptions]
   }
 }

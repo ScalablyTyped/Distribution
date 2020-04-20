@@ -23,7 +23,6 @@ object IFloatingFilterWrapperParams {
     suppressFilterButton: Boolean
   ): IFloatingFilterWrapperParams[M, F, P] = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], floatingFilterComp = floatingFilterComp.asInstanceOf[js.Any], suppressFilterButton = suppressFilterButton.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IFloatingFilterWrapperParams[M, F, P]]
   }
 }

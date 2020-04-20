@@ -14,14 +14,12 @@ trait iconType extends js.Object
 
 object iconType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def error: typings.reactReduxToastr.reactReduxToastrStrings.error = "error".asInstanceOf[typings.reactReduxToastr.reactReduxToastrStrings.error]
   @scala.inline
-  def error: typings.reactReduxToastr.reactReduxToastrStrings.error = this.cast("error")
+  def info: typings.reactReduxToastr.reactReduxToastrStrings.info = "info".asInstanceOf[typings.reactReduxToastr.reactReduxToastrStrings.info]
   @scala.inline
-  def info: typings.reactReduxToastr.reactReduxToastrStrings.info = this.cast("info")
+  def success: typings.reactReduxToastr.reactReduxToastrStrings.success = "success".asInstanceOf[typings.reactReduxToastr.reactReduxToastrStrings.success]
   @scala.inline
-  def success: typings.reactReduxToastr.reactReduxToastrStrings.success = this.cast("success")
-  @scala.inline
-  def warning: typings.reactReduxToastr.reactReduxToastrStrings.warning = this.cast("warning")
+  def warning: typings.reactReduxToastr.reactReduxToastrStrings.warning = "warning".asInstanceOf[typings.reactReduxToastr.reactReduxToastrStrings.warning]
 }
 

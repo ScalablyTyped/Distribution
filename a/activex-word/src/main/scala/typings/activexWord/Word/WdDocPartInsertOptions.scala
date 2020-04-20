@@ -16,12 +16,10 @@ trait WdDocPartInsertOptions extends js.Object
 
 object WdDocPartInsertOptions {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdInsertContent: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdInsertContent: `0` = this.cast(0)
+  def wdInsertPage: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdInsertPage: `2` = this.cast(2)
-  @scala.inline
-  def wdInsertParagraph: `1` = this.cast(1)
+  def wdInsertParagraph: `1` = 1.asInstanceOf[`1`]
 }
 

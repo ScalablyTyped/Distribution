@@ -18,7 +18,6 @@ object IPickerProp {
     select: /* repeated */ js.Any => Unit
   ): IPickerProp = {
     val __obj = js.Dynamic.literal(computeChildIndex = js.Any.fromFunction1(computeChildIndex), doScrollingComplete = js.Any.fromFunction1(doScrollingComplete), select = js.Any.fromFunction1(select))
-  
     __obj.asInstanceOf[IPickerProp]
   }
 }

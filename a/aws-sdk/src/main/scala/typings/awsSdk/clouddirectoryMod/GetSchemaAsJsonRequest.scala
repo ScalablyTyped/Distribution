@@ -16,7 +16,6 @@ object GetSchemaAsJsonRequest {
   @scala.inline
   def apply(SchemaArn: Arn): GetSchemaAsJsonRequest = {
     val __obj = js.Dynamic.literal(SchemaArn = SchemaArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetSchemaAsJsonRequest]
   }
 }

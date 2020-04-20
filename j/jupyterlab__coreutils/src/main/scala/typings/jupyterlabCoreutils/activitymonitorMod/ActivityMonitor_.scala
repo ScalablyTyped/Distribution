@@ -36,7 +36,7 @@ class ActivityMonitor_[Sender, Args] protected () extends IDisposable {
   /**
     * A signal emitted when activity has ceased.
     */
-  def activityStopped(): ISignal[this.type, IArguments[Sender, Args]] = js.native
+  def activityStopped: ISignal[this.type, IArguments[Sender, Args]] = js.native
   /**
     * Dispose of the resources held by the object.
     *
@@ -57,11 +57,11 @@ class ActivityMonitor_[Sender, Args] protected () extends IDisposable {
     * This is a read-only property.
     */
   @JSName("isDisposed")
-  def isDisposed_MActivityMonitor_(): Boolean = js.native
+  def isDisposed_MActivityMonitor_ : Boolean = js.native
   /**
     * The timeout associated with the monitor, in milliseconds.
     */
-  def timeout(): Double = js.native
+  def timeout: Double = js.native
   def timeout(value: Double): js.Any = js.native
 }
 

@@ -20,7 +20,6 @@ object SetIdentityDkimEnabledRequest {
   @scala.inline
   def apply(DkimEnabled: Enabled, Identity: Identity): SetIdentityDkimEnabledRequest = {
     val __obj = js.Dynamic.literal(DkimEnabled = DkimEnabled.asInstanceOf[js.Any], Identity = Identity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetIdentityDkimEnabledRequest]
   }
 }

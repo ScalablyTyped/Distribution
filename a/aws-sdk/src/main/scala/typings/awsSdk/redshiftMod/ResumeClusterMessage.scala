@@ -16,7 +16,6 @@ object ResumeClusterMessage {
   @scala.inline
   def apply(ClusterIdentifier: String): ResumeClusterMessage = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResumeClusterMessage]
   }
 }

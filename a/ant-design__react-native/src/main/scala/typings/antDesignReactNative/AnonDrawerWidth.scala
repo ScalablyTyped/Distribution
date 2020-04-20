@@ -14,7 +14,6 @@ object AnonDrawerWidth {
   @scala.inline
   def apply(drawerWidth: Double, open: Boolean, position: String): AnonDrawerWidth = {
     val __obj = js.Dynamic.literal(drawerWidth = drawerWidth.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDrawerWidth]
   }
 }

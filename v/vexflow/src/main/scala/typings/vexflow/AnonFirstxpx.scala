@@ -22,7 +22,6 @@ object AnonFirstxpx {
     last_ys: js.Array[Double]
   ): AnonFirstxpx = {
     val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], first_x_px = first_x_px.asInstanceOf[js.Any], first_ys = first_ys.asInstanceOf[js.Any], last_x_px = last_x_px.asInstanceOf[js.Any], last_ys = last_ys.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFirstxpx]
   }
 }

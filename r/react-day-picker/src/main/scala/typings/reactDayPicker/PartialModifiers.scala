@@ -1,11 +1,11 @@
 package typings.reactDayPicker
 
-import typings.reactDayPicker.commonMod.Modifier
+import typings.reactDayPicker.modifiersMod.Modifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Partial<react-day-picker.react-day-picker/types/common.Modifiers> */
+/* Inlined std.Partial<react-day-picker.react-day-picker/types/Modifiers.Modifiers> */
 trait PartialModifiers extends js.Object {
   var outside: js.UndefOr[Modifier | js.Array[Modifier]] = js.undefined
   var today: js.UndefOr[Modifier | js.Array[Modifier]] = js.undefined

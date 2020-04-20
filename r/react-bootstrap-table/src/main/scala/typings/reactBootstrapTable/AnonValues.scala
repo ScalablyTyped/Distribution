@@ -16,7 +16,6 @@ object AnonValues {
     values: EditSelectOptionValue | EditCheckboxOptionValue | (js.Function1[/* row */ TRow, EditCheckboxOptionValue | EditSelectOptionValue])
   ): AnonValues[TRow] = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonValues[TRow]]
   }
 }

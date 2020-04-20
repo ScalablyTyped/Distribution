@@ -14,7 +14,6 @@ object RequiredStripPrefixConfig {
   @scala.inline
   def apply(scheme: Boolean, www: Boolean): RequiredStripPrefixConfig = {
     val __obj = js.Dynamic.literal(scheme = scheme.asInstanceOf[js.Any], www = www.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RequiredStripPrefixConfig]
   }
 }

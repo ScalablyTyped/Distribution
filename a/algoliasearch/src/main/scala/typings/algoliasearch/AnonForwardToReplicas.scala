@@ -12,7 +12,6 @@ object AnonForwardToReplicas {
   @scala.inline
   def apply(forwardToReplicas: Boolean): AnonForwardToReplicas = {
     val __obj = js.Dynamic.literal(forwardToReplicas = forwardToReplicas.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonForwardToReplicas]
   }
 }

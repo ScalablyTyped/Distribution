@@ -14,7 +14,6 @@ object AnonAlignmentX {
   @scala.inline
   def apply(alignmentX: Double, alignmentY: Double, text: String): AnonAlignmentX = {
     val __obj = js.Dynamic.literal(alignmentX = alignmentX.asInstanceOf[js.Any], alignmentY = alignmentY.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAlignmentX]
   }
 }

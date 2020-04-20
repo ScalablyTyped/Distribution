@@ -15,16 +15,14 @@ trait RTCRtpTransceiverDirection extends js.Object
 
 object RTCRtpTransceiverDirection {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def inactive: typings.std.stdStrings.inactive = "inactive".asInstanceOf[typings.std.stdStrings.inactive]
   @scala.inline
-  def inactive: typings.std.stdStrings.inactive = this.cast("inactive")
+  def recvonly: typings.std.stdStrings.recvonly = "recvonly".asInstanceOf[typings.std.stdStrings.recvonly]
   @scala.inline
-  def recvonly: typings.std.stdStrings.recvonly = this.cast("recvonly")
+  def sendonly: typings.std.stdStrings.sendonly = "sendonly".asInstanceOf[typings.std.stdStrings.sendonly]
   @scala.inline
-  def sendonly: typings.std.stdStrings.sendonly = this.cast("sendonly")
+  def sendrecv: typings.std.stdStrings.sendrecv = "sendrecv".asInstanceOf[typings.std.stdStrings.sendrecv]
   @scala.inline
-  def sendrecv: typings.std.stdStrings.sendrecv = this.cast("sendrecv")
-  @scala.inline
-  def stopped: typings.std.stdStrings.stopped = this.cast("stopped")
+  def stopped: typings.std.stdStrings.stopped = "stopped".asInstanceOf[typings.std.stdStrings.stopped]
 }
 

@@ -12,7 +12,6 @@ object MarkdownParameter {
   @scala.inline
   def apply(markdown: String): MarkdownParameter = {
     val __obj = js.Dynamic.literal(markdown = markdown.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MarkdownParameter]
   }
 }

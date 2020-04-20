@@ -23,7 +23,6 @@ object Tether {
     setOptions: ITetherOptions => Unit
   ): Tether = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), position = js.Any.fromFunction0(position), setOptions = js.Any.fromFunction1(setOptions))
-  
     __obj.asInstanceOf[Tether]
   }
 }

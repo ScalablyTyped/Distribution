@@ -15,7 +15,6 @@ object SortCapability {
   @scala.inline
   def apply[D](attributes: none | single | multiple): SortCapability[D] = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SortCapability[D]]
   }
 }

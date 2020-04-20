@@ -23,7 +23,6 @@ object RenderMathInElementSpecificOptionsDelimiters {
   @scala.inline
   def apply(display: Boolean, left: String, right: String): RenderMathInElementSpecificOptionsDelimiters = {
     val __obj = js.Dynamic.literal(display = display.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RenderMathInElementSpecificOptionsDelimiters]
   }
 }

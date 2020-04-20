@@ -16,7 +16,6 @@ object PhysicsUpdraftEventData {
   @scala.inline
   def apply(cylinder: Mesh): PhysicsUpdraftEventData = {
     val __obj = js.Dynamic.literal(cylinder = cylinder.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PhysicsUpdraftEventData]
   }
 }

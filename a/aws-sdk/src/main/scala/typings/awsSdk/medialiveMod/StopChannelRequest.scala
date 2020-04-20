@@ -16,7 +16,6 @@ object StopChannelRequest {
   @scala.inline
   def apply(ChannelId: string): StopChannelRequest = {
     val __obj = js.Dynamic.literal(ChannelId = ChannelId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopChannelRequest]
   }
 }

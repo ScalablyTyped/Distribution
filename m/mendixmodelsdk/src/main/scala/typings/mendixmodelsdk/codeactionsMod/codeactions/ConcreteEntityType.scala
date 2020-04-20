@@ -40,14 +40,14 @@ class ConcreteEntityType protected () extends EntityType {
   @JSName("model")
   var model_FConcreteEntityType: IModel = js.native
   @JSName("containerAsBasicParameterType")
-  def containerAsBasicParameterType_MConcreteEntityType(): BasicParameterType = js.native
+  def containerAsBasicParameterType_MConcreteEntityType: BasicParameterType = js.native
   @JSName("containerAsCodeAction")
-  def containerAsCodeAction_MConcreteEntityType(): CodeAction = js.native
+  def containerAsCodeAction_MConcreteEntityType: CodeAction = js.native
   @JSName("containerAsListType")
-  def containerAsListType_MConcreteEntityType(): ListType = js.native
-  def entity(): IEntity = js.native
+  def containerAsListType_MConcreteEntityType: ListType = js.native
+  def entity: IEntity = js.native
   def entity(newValue: IEntity): js.Any = js.native
-  def entityQualifiedName(): String = js.native
+  def entityQualifiedName: String = js.native
 }
 
 /* static members */

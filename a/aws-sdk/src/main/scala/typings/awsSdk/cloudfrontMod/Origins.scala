@@ -20,7 +20,6 @@ object Origins {
   @scala.inline
   def apply(Items: OriginList, Quantity: integer): Origins = {
     val __obj = js.Dynamic.literal(Items = Items.asInstanceOf[js.Any], Quantity = Quantity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Origins]
   }
 }

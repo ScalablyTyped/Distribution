@@ -16,7 +16,6 @@ object GetDeploymentInput {
   @scala.inline
   def apply(deploymentId: DeploymentId): GetDeploymentInput = {
     val __obj = js.Dynamic.literal(deploymentId = deploymentId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDeploymentInput]
   }
 }

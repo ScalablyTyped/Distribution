@@ -23,7 +23,6 @@ object ChangeStreamEvents {
     resumeTokenChanged: ResumeToken => Unit
   ): ChangeStreamEvents[TSchema] = {
     val __obj = js.Dynamic.literal(change = js.Any.fromFunction1(change), close = js.Any.fromFunction0(close), end = js.Any.fromFunction0(end), error = js.Any.fromFunction1(error), resumeTokenChanged = js.Any.fromFunction1(resumeTokenChanged))
-  
     __obj.asInstanceOf[ChangeStreamEvents[TSchema]]
   }
 }

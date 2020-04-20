@@ -13,7 +13,6 @@ object Edit {
   @scala.inline
   def apply(handlers: EditHandlers, toolbar: EditToolbar): Edit = {
     val __obj = js.Dynamic.literal(handlers = handlers.asInstanceOf[js.Any], toolbar = toolbar.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Edit]
   }
 }

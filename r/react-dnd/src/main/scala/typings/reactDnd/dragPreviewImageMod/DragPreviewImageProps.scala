@@ -20,7 +20,6 @@ object DragPreviewImageProps {
     src: String
   ): DragPreviewImageProps = {
     val __obj = js.Dynamic.literal(connect = js.Any.fromFunction2(connect), src = src.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DragPreviewImageProps]
   }
 }

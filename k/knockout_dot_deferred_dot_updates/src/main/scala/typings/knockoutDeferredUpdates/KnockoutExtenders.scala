@@ -13,7 +13,6 @@ object KnockoutExtenders {
   @scala.inline
   def apply(deferred: (js.Any, Boolean) => js.Any): KnockoutExtenders = {
     val __obj = js.Dynamic.literal(deferred = js.Any.fromFunction2(deferred))
-  
     __obj.asInstanceOf[KnockoutExtenders]
   }
 }

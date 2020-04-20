@@ -36,7 +36,6 @@ object RequiredReplSetOpts {
     storageEngine: StorageEngineT
   ): RequiredReplSetOpts = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], auth = auth.asInstanceOf[js.Any], configSettings = configSettings.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], dbName = dbName.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], oplogSize = oplogSize.asInstanceOf[js.Any], spawn = spawn.asInstanceOf[js.Any], storageEngine = storageEngine.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RequiredReplSetOpts]
   }
 }

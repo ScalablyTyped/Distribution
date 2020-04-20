@@ -14,7 +14,6 @@ object I18nManagerStatic {
   @scala.inline
   def apply(allowRTL: Boolean => js.Object, forceRTL: Boolean => js.Object, isRTL: Boolean): I18nManagerStatic = {
     val __obj = js.Dynamic.literal(allowRTL = js.Any.fromFunction1(allowRTL), forceRTL = js.Any.fromFunction1(forceRTL), isRTL = isRTL.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[I18nManagerStatic]
   }
 }

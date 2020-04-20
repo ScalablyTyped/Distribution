@@ -14,7 +14,6 @@ object AnonLeftshift {
   @scala.inline
   def apply(left_shift: Double, right_shift: Double, text_line: Double): AnonLeftshift = {
     val __obj = js.Dynamic.literal(left_shift = left_shift.asInstanceOf[js.Any], right_shift = right_shift.asInstanceOf[js.Any], text_line = text_line.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLeftshift]
   }
 }

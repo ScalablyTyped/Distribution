@@ -13,12 +13,10 @@ trait GlideRecordOperation extends js.Object
 
 object GlideRecordOperation {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def delete: typings.servicenowLondon.servicenowLondonStrings.delete = "delete".asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.delete]
   @scala.inline
-  def delete: typings.servicenowLondon.servicenowLondonStrings.delete = this.cast("delete")
+  def insert: typings.servicenowLondon.servicenowLondonStrings.insert = "insert".asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.insert]
   @scala.inline
-  def insert: typings.servicenowLondon.servicenowLondonStrings.insert = this.cast("insert")
-  @scala.inline
-  def update: typings.servicenowLondon.servicenowLondonStrings.update = this.cast("update")
+  def update: typings.servicenowLondon.servicenowLondonStrings.update = "update".asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.update]
 }
 

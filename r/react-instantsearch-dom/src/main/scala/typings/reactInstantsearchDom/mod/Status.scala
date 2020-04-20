@@ -16,18 +16,16 @@ trait Status extends js.Object
 
 object Status {
   @scala.inline
-  def askingPermission: typings.reactInstantsearchDom.reactInstantsearchDomStrings.askingPermission = this.cast("askingPermission")
+  def askingPermission: typings.reactInstantsearchDom.reactInstantsearchDomStrings.askingPermission = "askingPermission".asInstanceOf[typings.reactInstantsearchDom.reactInstantsearchDomStrings.askingPermission]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def error: typings.reactInstantsearchDom.reactInstantsearchDomStrings.error = "error".asInstanceOf[typings.reactInstantsearchDom.reactInstantsearchDomStrings.error]
   @scala.inline
-  def error: typings.reactInstantsearchDom.reactInstantsearchDomStrings.error = this.cast("error")
+  def finished: typings.reactInstantsearchDom.reactInstantsearchDomStrings.finished = "finished".asInstanceOf[typings.reactInstantsearchDom.reactInstantsearchDomStrings.finished]
   @scala.inline
-  def finished: typings.reactInstantsearchDom.reactInstantsearchDomStrings.finished = this.cast("finished")
+  def initial: typings.reactInstantsearchDom.reactInstantsearchDomStrings.initial = "initial".asInstanceOf[typings.reactInstantsearchDom.reactInstantsearchDomStrings.initial]
   @scala.inline
-  def initial: typings.reactInstantsearchDom.reactInstantsearchDomStrings.initial = this.cast("initial")
+  def recognizing: typings.reactInstantsearchDom.reactInstantsearchDomStrings.recognizing = "recognizing".asInstanceOf[typings.reactInstantsearchDom.reactInstantsearchDomStrings.recognizing]
   @scala.inline
-  def recognizing: typings.reactInstantsearchDom.reactInstantsearchDomStrings.recognizing = this.cast("recognizing")
-  @scala.inline
-  def waiting: typings.reactInstantsearchDom.reactInstantsearchDomStrings.waiting = this.cast("waiting")
+  def waiting: typings.reactInstantsearchDom.reactInstantsearchDomStrings.waiting = "waiting".asInstanceOf[typings.reactInstantsearchDom.reactInstantsearchDomStrings.waiting]
 }
 

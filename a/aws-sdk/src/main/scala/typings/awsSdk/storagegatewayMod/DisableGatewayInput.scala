@@ -13,7 +13,6 @@ object DisableGatewayInput {
   @scala.inline
   def apply(GatewayARN: GatewayARN): DisableGatewayInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisableGatewayInput]
   }
 }

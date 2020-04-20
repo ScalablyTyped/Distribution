@@ -12,7 +12,6 @@ object AnonEnumValuesAnonError {
   @scala.inline
   def apply(enumValues: AnonError): AnonEnumValuesAnonError = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumValuesAnonError]
   }
 }

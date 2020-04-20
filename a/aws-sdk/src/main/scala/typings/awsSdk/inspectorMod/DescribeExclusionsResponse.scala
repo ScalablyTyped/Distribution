@@ -20,7 +20,6 @@ object DescribeExclusionsResponse {
   @scala.inline
   def apply(exclusions: ExclusionMap, failedItems: FailedItems): DescribeExclusionsResponse = {
     val __obj = js.Dynamic.literal(exclusions = exclusions.asInstanceOf[js.Any], failedItems = failedItems.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeExclusionsResponse]
   }
 }

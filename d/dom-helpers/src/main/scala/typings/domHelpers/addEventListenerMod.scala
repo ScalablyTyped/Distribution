@@ -1292,11 +1292,11 @@ object addEventListenerMod extends js.Object {
     handler: TaggedEventHandler[wheel],
     options: AddEventListenerOptions
   ): Unit = js.native
-  type EventHandler[K /* <: String */] = js.ThisFunction1[
+  type EventHandler[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 92 */ js.Any */] = js.ThisFunction1[
     /* this */ HTMLElement, 
     /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementEventMap[K] */ /* event */ js.Any, 
     js.Any
   ]
-  type TaggedEventHandler[K /* <: String */] = EventHandler[K] with AnonOnce[K]
+  type TaggedEventHandler[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 92 */ js.Any */] = EventHandler[K] with AnonOnce[K]
 }
 

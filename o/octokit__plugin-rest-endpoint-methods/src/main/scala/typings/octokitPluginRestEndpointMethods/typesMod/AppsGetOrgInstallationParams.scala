@@ -12,7 +12,6 @@ object AppsGetOrgInstallationParams {
   @scala.inline
   def apply(org: String): AppsGetOrgInstallationParams = {
     val __obj = js.Dynamic.literal(org = org.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AppsGetOrgInstallationParams]
   }
 }

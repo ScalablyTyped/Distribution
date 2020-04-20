@@ -13,12 +13,10 @@ trait MarkAccuracy extends js.Object
 
 object MarkAccuracy {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def complementary: typings.markJs.markJsStrings.complementary = "complementary".asInstanceOf[typings.markJs.markJsStrings.complementary]
   @scala.inline
-  def complementary: typings.markJs.markJsStrings.complementary = this.cast("complementary")
+  def exactly: typings.markJs.markJsStrings.exactly = "exactly".asInstanceOf[typings.markJs.markJsStrings.exactly]
   @scala.inline
-  def exactly: typings.markJs.markJsStrings.exactly = this.cast("exactly")
-  @scala.inline
-  def partially: typings.markJs.markJsStrings.partially = this.cast("partially")
+  def partially: typings.markJs.markJsStrings.partially = "partially".asInstanceOf[typings.markJs.markJsStrings.partially]
 }
 

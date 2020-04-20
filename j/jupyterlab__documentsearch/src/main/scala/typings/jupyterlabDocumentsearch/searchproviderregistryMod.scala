@@ -29,7 +29,7 @@ object searchproviderregistryMod extends js.Object {
       * or removed.
       */
     @JSName("changed")
-    def changed_MSearchProviderRegistry(): ISignal[this.type, Unit] = js.native
+    def changed_MSearchProviderRegistry: ISignal[this.type, Unit] = js.native
     /**
       * Returns a matching provider for the widget.
       *

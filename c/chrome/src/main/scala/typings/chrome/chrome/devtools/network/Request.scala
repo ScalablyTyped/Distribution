@@ -21,7 +21,6 @@ object Request {
   @scala.inline
   def apply(getContent: js.Function2[/* content */ String, /* encoding */ String, Unit] => Unit): Request = {
     val __obj = js.Dynamic.literal(getContent = js.Any.fromFunction1(getContent))
-  
     __obj.asInstanceOf[Request]
   }
 }

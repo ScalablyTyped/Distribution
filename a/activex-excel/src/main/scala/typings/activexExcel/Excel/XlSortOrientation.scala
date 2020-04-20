@@ -14,10 +14,8 @@ trait XlSortOrientation extends js.Object
 
 object XlSortOrientation {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlSortColumns: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlSortColumns: `1` = this.cast(1)
-  @scala.inline
-  def xlSortRows: `2` = this.cast(2)
+  def xlSortRows: `2` = 2.asInstanceOf[`2`]
 }
 

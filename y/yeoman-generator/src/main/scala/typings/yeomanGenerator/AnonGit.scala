@@ -13,7 +13,6 @@ object AnonGit {
   @scala.inline
   def apply(git: AnonEmail, github: AnonUsername): AnonGit = {
     val __obj = js.Dynamic.literal(git = git.asInstanceOf[js.Any], github = github.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGit]
   }
 }

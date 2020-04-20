@@ -29,11 +29,11 @@ class MasterDetailDetailRegion protected () extends MasterDetailRegion {
   ) = this()
   @JSName("model")
   var model_FMasterDetailDetailRegion: IModel = js.native
-  def responsiveWeight(): Double = js.native
+  def responsiveWeight: Double = js.native
   def responsiveWeight(newValue: Double): js.Any = js.native
-  def tabletWeight(): Double = js.native
+  def tabletWeight: Double = js.native
   def tabletWeight(newValue: Double): js.Any = js.native
-  def title(): Text = js.native
+  def title: Text = js.native
   def title(newValue: Text): js.Any = js.native
 }
 

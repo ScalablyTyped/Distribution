@@ -77,6 +77,7 @@ import scala.scalajs.js.annotation._
 trait MentionsProps extends BaseTextareaAttrs {
   @JSName("defaultValue")
   var defaultValue_MentionsProps: js.UndefOr[String] = js.undefined
+  var direction: js.UndefOr[Direction] = js.undefined
   var filterOption: js.UndefOr[
     `false` | (js.Function2[/* input */ String, /* hasValue */ OptionProps, Boolean])
   ] = js.undefined
@@ -165,6 +166,7 @@ object MentionsProps {
     defaultValue: String = null,
     dir: String = null,
     dirName: String = null,
+    direction: Direction = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     draggable: js.UndefOr[Boolean] = js.undefined,
     filterOption: `false` | (js.Function2[/* input */ String, /* hasValue */ OptionProps, Boolean]) = null,
@@ -363,6 +365,7 @@ object MentionsProps {
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
     if (dirName != null) __obj.updateDynamic("dirName")(dirName.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
     if (filterOption != null) __obj.updateDynamic("filterOption")(filterOption.asInstanceOf[js.Any])

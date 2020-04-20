@@ -22,7 +22,6 @@ object EnterLeaveCounter {
     reset: () => Unit
   ): EnterLeaveCounter = {
     val __obj = js.Dynamic.literal(enter = js.Any.fromFunction1(enter), entered = entered.asInstanceOf[js.Any], isNodeInDocument = isNodeInDocument.asInstanceOf[js.Any], leave = js.Any.fromFunction1(leave), reset = js.Any.fromFunction0(reset))
-  
     __obj.asInstanceOf[EnterLeaveCounter]
   }
 }

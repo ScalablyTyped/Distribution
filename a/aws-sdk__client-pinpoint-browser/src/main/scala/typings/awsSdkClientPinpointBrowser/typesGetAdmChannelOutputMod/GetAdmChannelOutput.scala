@@ -23,7 +23,6 @@ object GetAdmChannelOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, ADMChannelResponse: UnmarshalledADMChannelResponse): GetAdmChannelOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], ADMChannelResponse = ADMChannelResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetAdmChannelOutput]
   }
 }

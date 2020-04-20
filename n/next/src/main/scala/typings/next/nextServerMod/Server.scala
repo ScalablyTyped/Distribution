@@ -26,6 +26,7 @@ trait Server extends js.Object {
   var _validFilesystemPathSet: js.Any = js.native
   var buildId: String = js.native
   var compression: js.UndefOr[js.Any] = js.native
+  var customErrorNo404Warn: js.Any = js.native
   var customRoutes: js.UndefOr[AnonHeaders] = js.native
   var dir: String = js.native
   var distDir: String = js.native
@@ -57,7 +58,7 @@ trait Server extends js.Object {
   var serverBuildDir: String = js.native
   var staticPathsWorker: js.UndefOr[defaultloadStaticPathsdis] = js.native
   /* protected */ def _beforeCatchAllRender(_req: IncomingMessage, _res: ServerResponse, _params: Params, _parsedUrl: UrlWithParsedQuery): js.Promise[Boolean] = js.native
-  /* private */ def _isLikeServerless(): js.Any = js.native
+  /* private */ def _isLikeServerless: js.Any = js.native
   /* protected */ def close(): js.Promise[Unit] = js.native
   /* protected */ def currentPhase(): String = js.native
   /* protected */ def ensureApiPage(pathname: String): js.Promise[Unit] = js.native

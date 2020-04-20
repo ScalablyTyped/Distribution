@@ -25,9 +25,9 @@ class RegExRuleInfo protected () extends RuleInfo {
   var model_FRegExRuleInfo: IModel = js.native
   def regularExpression(): js.Any = js.native
   def regularExpression(newValue: IRegularExpression): js.Any = js.native
-  def regularExpressionQualifiedName(): String | Null = js.native
+  def regularExpressionQualifiedName: String | Null = js.native
   @JSName("regularExpression")
-  def regularExpression_Union(): IRegularExpression | Null = js.native
+  def regularExpression_Union: IRegularExpression | Null = js.native
 }
 
 /* static members */

@@ -16,7 +16,6 @@ object UpdateTrafficPolicyCommentResponse {
   @scala.inline
   def apply(TrafficPolicy: TrafficPolicy): UpdateTrafficPolicyCommentResponse = {
     val __obj = js.Dynamic.literal(TrafficPolicy = TrafficPolicy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateTrafficPolicyCommentResponse]
   }
 }

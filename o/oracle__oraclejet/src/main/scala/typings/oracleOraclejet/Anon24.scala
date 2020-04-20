@@ -13,7 +13,6 @@ object Anon24 {
   @scala.inline
   def apply[K](renderer: TooltipContext[K] => AnonInsert | AnonPreventDefault): Anon24[K] = {
     val __obj = js.Dynamic.literal(renderer = js.Any.fromFunction1(renderer))
-  
     __obj.asInstanceOf[Anon24[K]]
   }
 }

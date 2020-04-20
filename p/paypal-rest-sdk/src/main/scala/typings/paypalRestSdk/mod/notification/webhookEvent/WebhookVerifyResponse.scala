@@ -12,7 +12,6 @@ object WebhookVerifyResponse {
   @scala.inline
   def apply(verification_status: String): WebhookVerifyResponse = {
     val __obj = js.Dynamic.literal(verification_status = verification_status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WebhookVerifyResponse]
   }
 }

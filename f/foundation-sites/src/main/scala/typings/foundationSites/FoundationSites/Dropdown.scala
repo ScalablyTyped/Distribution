@@ -23,7 +23,6 @@ object Dropdown {
     toggle: () => Unit
   ): Dropdown = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), destroy = js.Any.fromFunction0(destroy), getPositionClass = js.Any.fromFunction0(getPositionClass), open = js.Any.fromFunction0(open), toggle = js.Any.fromFunction0(toggle))
-  
     __obj.asInstanceOf[Dropdown]
   }
 }

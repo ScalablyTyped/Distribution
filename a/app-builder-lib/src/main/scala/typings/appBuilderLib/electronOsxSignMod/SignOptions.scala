@@ -9,12 +9,14 @@ trait SignOptions extends BaseSignOptions {
   var entitlements: js.UndefOr[String] = js.undefined
   var `entitlements-inherit`: js.UndefOr[String] = js.undefined
   var `gatekeeper-assess`: js.UndefOr[Boolean] = js.undefined
+  var hardenedRuntime: js.UndefOr[Boolean] = js.undefined
   var `identity-validation`: js.UndefOr[Boolean] = js.undefined
   var ignore: js.UndefOr[String] = js.undefined
   var `pre-auto-entitlements`: js.UndefOr[Boolean] = js.undefined
   var `pre-embed-provisioning-profile`: js.UndefOr[Boolean] = js.undefined
   var `provisioning-profile`: js.UndefOr[String] = js.undefined
   var requirements: js.UndefOr[String] = js.undefined
+  var `signature-size`: js.UndefOr[Double] = js.undefined
   var `type`: js.UndefOr[String] = js.undefined
   var version: js.UndefOr[String] = js.undefined
 }
@@ -27,6 +29,7 @@ object SignOptions {
     entitlements: String = null,
     `entitlements-inherit`: String = null,
     `gatekeeper-assess`: js.UndefOr[Boolean] = js.undefined,
+    hardenedRuntime: js.UndefOr[Boolean] = js.undefined,
     identity: String = null,
     `identity-validation`: js.UndefOr[Boolean] = js.undefined,
     ignore: String = null,
@@ -36,6 +39,7 @@ object SignOptions {
     `pre-embed-provisioning-profile`: js.UndefOr[Boolean] = js.undefined,
     `provisioning-profile`: String = null,
     requirements: String = null,
+    `signature-size`: Int | Double = null,
     `type`: String = null,
     version: String = null
   ): SignOptions = {
@@ -44,6 +48,7 @@ object SignOptions {
     if (entitlements != null) __obj.updateDynamic("entitlements")(entitlements.asInstanceOf[js.Any])
     if (`entitlements-inherit` != null) __obj.updateDynamic("entitlements-inherit")(`entitlements-inherit`.asInstanceOf[js.Any])
     if (!js.isUndefined(`gatekeeper-assess`)) __obj.updateDynamic("gatekeeper-assess")(`gatekeeper-assess`.asInstanceOf[js.Any])
+    if (!js.isUndefined(hardenedRuntime)) __obj.updateDynamic("hardenedRuntime")(hardenedRuntime.asInstanceOf[js.Any])
     if (identity != null) __obj.updateDynamic("identity")(identity.asInstanceOf[js.Any])
     if (!js.isUndefined(`identity-validation`)) __obj.updateDynamic("identity-validation")(`identity-validation`.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
@@ -53,6 +58,7 @@ object SignOptions {
     if (!js.isUndefined(`pre-embed-provisioning-profile`)) __obj.updateDynamic("pre-embed-provisioning-profile")(`pre-embed-provisioning-profile`.asInstanceOf[js.Any])
     if (`provisioning-profile` != null) __obj.updateDynamic("provisioning-profile")(`provisioning-profile`.asInstanceOf[js.Any])
     if (requirements != null) __obj.updateDynamic("requirements")(requirements.asInstanceOf[js.Any])
+    if (`signature-size` != null) __obj.updateDynamic("signature-size")(`signature-size`.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignOptions]

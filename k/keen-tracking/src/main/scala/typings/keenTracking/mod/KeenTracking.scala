@@ -18,7 +18,6 @@ object KeenTracking {
     recordEvents: StringDictionary[js.Array[js.Object]] => js.Promise[StringDictionary[js.Array[Boolean]]]
   ): KeenTracking = {
     val __obj = js.Dynamic.literal(recordEvent = js.Any.fromFunction2(recordEvent), recordEvents = js.Any.fromFunction1(recordEvents))
-  
     __obj.asInstanceOf[KeenTracking]
   }
 }

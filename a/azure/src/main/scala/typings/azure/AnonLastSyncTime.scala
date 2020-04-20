@@ -14,7 +14,6 @@ object AnonLastSyncTime {
   @scala.inline
   def apply(LastSyncTime: Date, Status: String): AnonLastSyncTime = {
     val __obj = js.Dynamic.literal(LastSyncTime = LastSyncTime.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLastSyncTime]
   }
 }

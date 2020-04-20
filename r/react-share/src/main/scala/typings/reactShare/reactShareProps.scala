@@ -9,133 +9,133 @@ import scala.scalajs.js.annotation._
 
 trait reactShareProps {
   @scala.inline
-  def EmailIconProps: IconComponentProps.type = typings.reactShare.mod.IconComponentProps
+  def EmailIconProps: IconComponentProps.type = IconComponentProps
   type EmailIconProps = IconComponentProps
   @scala.inline
-  def EmailShareButtonProps: CommonShareButtonPropssub.type = typings.reactShare.CommonShareButtonPropssub
+  def EmailShareButtonProps: CommonShareButtonPropssub.type = CommonShareButtonPropssub
   type EmailShareButtonProps = CommonShareButtonPropssub
   @scala.inline
-  def FacebookIconProps: IconComponentProps.type = typings.reactShare.mod.IconComponentProps
+  def FacebookIconProps: IconComponentProps.type = IconComponentProps
   type FacebookIconProps = IconComponentProps
   @scala.inline
-  def FacebookShareButtonProps: CommonShareButtonPropsquo.type = typings.reactShare.CommonShareButtonPropsquo
+  def FacebookShareButtonProps: CommonShareButtonPropsquo.type = CommonShareButtonPropsquo
   type FacebookShareButtonProps = CommonShareButtonPropsquo
   @scala.inline
-  def FacebookShareCountProps: ShareCountComponentProps.type = typings.reactShare.mod.ShareCountComponentProps
+  def FacebookShareCountProps: ShareCountComponentProps.type = ShareCountComponentProps
   type FacebookShareCountProps = ShareCountComponentProps
   @scala.inline
-  def InstapaperIconProps: IconComponentProps.type = typings.reactShare.mod.IconComponentProps
+  def InstapaperIconProps: IconComponentProps.type = IconComponentProps
   type InstapaperIconProps = IconComponentProps
   @scala.inline
-  def InstapaperShareButtonProps: CommonShareButtonPropstitDescription.type = typings.reactShare.CommonShareButtonPropstitDescription
+  def InstapaperShareButtonProps: CommonShareButtonPropstitDescription.type = CommonShareButtonPropstitDescription
   type InstapaperShareButtonProps = CommonShareButtonPropstitDescription
   @scala.inline
-  def LineIconProps: IconComponentProps.type = typings.reactShare.mod.IconComponentProps
+  def LineIconProps: IconComponentProps.type = IconComponentProps
   type LineIconProps = IconComponentProps
   @scala.inline
-  def LineShareButtonProps: CommonShareButtonPropstitAdditionalProps.type = typings.reactShare.CommonShareButtonPropstitAdditionalProps
+  def LineShareButtonProps: CommonShareButtonPropstitAdditionalProps.type = CommonShareButtonPropstitAdditionalProps
   type LineShareButtonProps = CommonShareButtonPropstitAdditionalProps
   @scala.inline
-  def LinkedinIconProps: IconComponentProps.type = typings.reactShare.mod.IconComponentProps
+  def LinkedinIconProps: IconComponentProps.type = IconComponentProps
   type LinkedinIconProps = IconComponentProps
   @scala.inline
-  def LinkedinShareButtonProps: CommonShareButtonProps.type = typings.reactShare.mod.CommonShareButtonProps
+  def LinkedinShareButtonProps: CommonShareButtonProps.type = CommonShareButtonProps
   type LinkedinShareButtonProps = CommonShareButtonProps
   @scala.inline
-  def LivejournalIconProps: IconComponentProps.type = typings.reactShare.mod.IconComponentProps
+  def LivejournalIconProps: IconComponentProps.type = IconComponentProps
   type LivejournalIconProps = IconComponentProps
   @scala.inline
-  def LivejournalShareButtonProps: CommonShareButtonPropstitDescription.type = typings.reactShare.CommonShareButtonPropstitDescription
+  def LivejournalShareButtonProps: CommonShareButtonPropstitDescription.type = CommonShareButtonPropstitDescription
   type LivejournalShareButtonProps = CommonShareButtonPropstitDescription
   @scala.inline
-  def MailruIconProps: IconComponentProps.type = typings.reactShare.mod.IconComponentProps
+  def MailruIconProps: IconComponentProps.type = IconComponentProps
   type MailruIconProps = IconComponentProps
   @scala.inline
-  def MailruShareButtonProps: CommonShareButtonPropstitClassName.type = typings.reactShare.CommonShareButtonPropstitClassName
+  def MailruShareButtonProps: CommonShareButtonPropstitClassName.type = CommonShareButtonPropstitClassName
   type MailruShareButtonProps = CommonShareButtonPropstitClassName
   @scala.inline
-  def OKIconProps: IconComponentProps.type = typings.reactShare.mod.IconComponentProps
+  def OKIconProps: IconComponentProps.type = IconComponentProps
   type OKIconProps = IconComponentProps
   @scala.inline
-  def OKShareButtonProps: CommonShareButtonPropstitClassName.type = typings.reactShare.CommonShareButtonPropstitClassName
+  def OKShareButtonProps: CommonShareButtonPropstitClassName.type = CommonShareButtonPropstitClassName
   type OKShareButtonProps = CommonShareButtonPropstitClassName
   @scala.inline
-  def OKShareCountProps: ShareCountComponentProps.type = typings.reactShare.mod.ShareCountComponentProps
+  def OKShareCountProps: ShareCountComponentProps.type = ShareCountComponentProps
   type OKShareCountProps = ShareCountComponentProps
   @scala.inline
-  def PinterestIconProps: IconComponentProps.type = typings.reactShare.mod.IconComponentProps
+  def PinterestIconProps: IconComponentProps.type = IconComponentProps
   type PinterestIconProps = IconComponentProps
   @scala.inline
-  def PinterestShareButtonProps: CommonShareButtonPropsmed.type = typings.reactShare.CommonShareButtonPropsmed
+  def PinterestShareButtonProps: CommonShareButtonPropsmed.type = CommonShareButtonPropsmed
   type PinterestShareButtonProps = CommonShareButtonPropsmed
   @scala.inline
-  def PinterestShareCountProps: ShareCountComponentProps.type = typings.reactShare.mod.ShareCountComponentProps
+  def PinterestShareCountProps: ShareCountComponentProps.type = ShareCountComponentProps
   type PinterestShareCountProps = ShareCountComponentProps
   @scala.inline
-  def PocketIconProps: IconComponentProps.type = typings.reactShare.mod.IconComponentProps
+  def PocketIconProps: IconComponentProps.type = IconComponentProps
   type PocketIconProps = IconComponentProps
   @scala.inline
-  def PocketShareButtonProps: CommonShareButtonPropstitAdditionalProps.type = typings.reactShare.CommonShareButtonPropstitAdditionalProps
+  def PocketShareButtonProps: CommonShareButtonPropstitAdditionalProps.type = CommonShareButtonPropstitAdditionalProps
   type PocketShareButtonProps = CommonShareButtonPropstitAdditionalProps
   @scala.inline
-  def RedditIconProps: IconComponentProps.type = typings.reactShare.mod.IconComponentProps
+  def RedditIconProps: IconComponentProps.type = IconComponentProps
   type RedditIconProps = IconComponentProps
   @scala.inline
-  def RedditShareButtonProps: CommonShareButtonPropstitAdditionalProps.type = typings.reactShare.CommonShareButtonPropstitAdditionalProps
+  def RedditShareButtonProps: CommonShareButtonPropstitAdditionalProps.type = CommonShareButtonPropstitAdditionalProps
   type RedditShareButtonProps = CommonShareButtonPropstitAdditionalProps
   @scala.inline
-  def RedditShareCountProps: ShareCountComponentProps.type = typings.reactShare.mod.ShareCountComponentProps
+  def RedditShareCountProps: ShareCountComponentProps.type = ShareCountComponentProps
   type RedditShareCountProps = ShareCountComponentProps
   @scala.inline
-  def TelegramIconProps: IconComponentProps.type = typings.reactShare.mod.IconComponentProps
+  def TelegramIconProps: IconComponentProps.type = IconComponentProps
   type TelegramIconProps = IconComponentProps
   @scala.inline
-  def TelegramShareButtonProps: CommonShareButtonPropstitAdditionalProps.type = typings.reactShare.CommonShareButtonPropstitAdditionalProps
+  def TelegramShareButtonProps: CommonShareButtonPropstitAdditionalProps.type = CommonShareButtonPropstitAdditionalProps
   type TelegramShareButtonProps = CommonShareButtonPropstitAdditionalProps
   @scala.inline
-  def TumblrIconProps: IconComponentProps.type = typings.reactShare.mod.IconComponentProps
+  def TumblrIconProps: IconComponentProps.type = IconComponentProps
   type TumblrIconProps = IconComponentProps
   @scala.inline
-  def TumblrShareButtonProps: CommonShareButtonPropstitCaption.type = typings.reactShare.CommonShareButtonPropstitCaption
+  def TumblrShareButtonProps: CommonShareButtonPropstitCaption.type = CommonShareButtonPropstitCaption
   type TumblrShareButtonProps = CommonShareButtonPropstitCaption
   @scala.inline
-  def TumblrShareCountProps: ShareCountComponentProps.type = typings.reactShare.mod.ShareCountComponentProps
+  def TumblrShareCountProps: ShareCountComponentProps.type = ShareCountComponentProps
   type TumblrShareCountProps = ShareCountComponentProps
   @scala.inline
-  def TwitterIconProps: IconComponentProps.type = typings.reactShare.mod.IconComponentProps
+  def TwitterIconProps: IconComponentProps.type = IconComponentProps
   type TwitterIconProps = IconComponentProps
   @scala.inline
-  def TwitterShareButtonProps: CommonShareButtonPropstit.type = typings.reactShare.CommonShareButtonPropstit
+  def TwitterShareButtonProps: CommonShareButtonPropstit.type = CommonShareButtonPropstit
   type TwitterShareButtonProps = CommonShareButtonPropstit
   @scala.inline
-  def VKIconProps: IconComponentProps.type = typings.reactShare.mod.IconComponentProps
+  def VKIconProps: IconComponentProps.type = IconComponentProps
   type VKIconProps = IconComponentProps
   @scala.inline
-  def VKShareButtonProps: CommonShareButtonPropstitClassName.type = typings.reactShare.CommonShareButtonPropstitClassName
+  def VKShareButtonProps: CommonShareButtonPropstitClassName.type = CommonShareButtonPropstitClassName
   type VKShareButtonProps = CommonShareButtonPropstitClassName
   @scala.inline
-  def VKShareCountProps: ShareCountComponentProps.type = typings.reactShare.mod.ShareCountComponentProps
+  def VKShareCountProps: ShareCountComponentProps.type = ShareCountComponentProps
   type VKShareCountProps = ShareCountComponentProps
   @scala.inline
-  def ViberIconProps: IconComponentProps.type = typings.reactShare.mod.IconComponentProps
+  def ViberIconProps: IconComponentProps.type = IconComponentProps
   type ViberIconProps = IconComponentProps
   @scala.inline
-  def ViberShareButtonProps: CommonShareButtonPropstitBeforeOnClick.type = typings.reactShare.CommonShareButtonPropstitBeforeOnClick
+  def ViberShareButtonProps: CommonShareButtonPropstitBeforeOnClick.type = CommonShareButtonPropstitBeforeOnClick
   type ViberShareButtonProps = CommonShareButtonPropstitBeforeOnClick
   @scala.inline
-  def WeiboShareButtonProps: CommonShareButtonPropstitDisabled.type = typings.reactShare.CommonShareButtonPropstitDisabled
+  def WeiboShareButtonProps: CommonShareButtonPropstitDisabled.type = CommonShareButtonPropstitDisabled
   type WeiboShareButtonProps = CommonShareButtonPropstitDisabled
   @scala.inline
-  def WhatsappIconProps: IconComponentProps.type = typings.reactShare.mod.IconComponentProps
+  def WhatsappIconProps: IconComponentProps.type = IconComponentProps
   type WhatsappIconProps = IconComponentProps
   @scala.inline
-  def WhatsappShareButtonProps: CommonShareButtonPropstitBeforeOnClick.type = typings.reactShare.CommonShareButtonPropstitBeforeOnClick
+  def WhatsappShareButtonProps: CommonShareButtonPropstitBeforeOnClick.type = CommonShareButtonPropstitBeforeOnClick
   type WhatsappShareButtonProps = CommonShareButtonPropstitBeforeOnClick
   @scala.inline
-  def WorkplaceIconProps: IconComponentProps.type = typings.reactShare.mod.IconComponentProps
+  def WorkplaceIconProps: IconComponentProps.type = IconComponentProps
   type WorkplaceIconProps = IconComponentProps
   @scala.inline
-  def WorkplaceShareButtonProps: CommonShareButtonPropsquo.type = typings.reactShare.CommonShareButtonPropsquo
+  def WorkplaceShareButtonProps: CommonShareButtonPropsquo.type = CommonShareButtonPropsquo
   type WorkplaceShareButtonProps = CommonShareButtonPropsquo
 }
 

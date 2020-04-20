@@ -12,7 +12,6 @@ object ScreenSize {
   @scala.inline
   def apply(height: Double): ScreenSize = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScreenSize]
   }
 }

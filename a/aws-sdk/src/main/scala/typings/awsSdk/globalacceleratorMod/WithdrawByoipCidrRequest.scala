@@ -16,7 +16,6 @@ object WithdrawByoipCidrRequest {
   @scala.inline
   def apply(Cidr: GenericString): WithdrawByoipCidrRequest = {
     val __obj = js.Dynamic.literal(Cidr = Cidr.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WithdrawByoipCidrRequest]
   }
 }

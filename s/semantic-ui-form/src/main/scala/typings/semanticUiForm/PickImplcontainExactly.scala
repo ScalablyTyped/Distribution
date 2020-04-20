@@ -13,7 +13,6 @@ object PickImplcontainExactly {
   @scala.inline
   def apply(containExactly: String): PickImplcontainExactly = {
     val __obj = js.Dynamic.literal(containExactly = containExactly.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplcontainExactly]
   }
 }

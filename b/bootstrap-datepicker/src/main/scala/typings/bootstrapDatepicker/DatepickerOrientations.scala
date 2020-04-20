@@ -23,32 +23,30 @@ trait DatepickerOrientations extends js.Object
 
 object DatepickerOrientations {
   @scala.inline
-  def auto: typings.bootstrapDatepicker.bootstrapDatepickerStrings.auto = this.cast("auto")
+  def auto: typings.bootstrapDatepicker.bootstrapDatepickerStrings.auto = "auto".asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerStrings.auto]
   @scala.inline
-  def `auto left`: typings.bootstrapDatepicker.bootstrapDatepickerStrings.`auto left` = this.cast("auto left")
+  def `auto left`: typings.bootstrapDatepicker.bootstrapDatepickerStrings.`auto left` = ("auto left").asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerStrings.`auto left`]
   @scala.inline
-  def `auto right`: typings.bootstrapDatepicker.bootstrapDatepickerStrings.`auto right` = this.cast("auto right")
+  def `auto right`: typings.bootstrapDatepicker.bootstrapDatepickerStrings.`auto right` = ("auto right").asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerStrings.`auto right`]
   @scala.inline
-  def `bottom auto`: typings.bootstrapDatepicker.bootstrapDatepickerStrings.`bottom auto` = this.cast("bottom auto")
+  def `bottom auto`: typings.bootstrapDatepicker.bootstrapDatepickerStrings.`bottom auto` = ("bottom auto").asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerStrings.`bottom auto`]
   @scala.inline
-  def `bottom left`: typings.bootstrapDatepicker.bootstrapDatepickerStrings.`bottom left` = this.cast("bottom left")
+  def `bottom left`: typings.bootstrapDatepicker.bootstrapDatepickerStrings.`bottom left` = ("bottom left").asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerStrings.`bottom left`]
   @scala.inline
-  def `bottom right`: typings.bootstrapDatepicker.bootstrapDatepickerStrings.`bottom right` = this.cast("bottom right")
+  def `bottom right`: typings.bootstrapDatepicker.bootstrapDatepickerStrings.`bottom right` = ("bottom right").asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerStrings.`bottom right`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `left bottom`: typings.bootstrapDatepicker.bootstrapDatepickerStrings.`left bottom` = ("left bottom").asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerStrings.`left bottom`]
   @scala.inline
-  def `left bottom`: typings.bootstrapDatepicker.bootstrapDatepickerStrings.`left bottom` = this.cast("left bottom")
+  def `left top`: typings.bootstrapDatepicker.bootstrapDatepickerStrings.`left top` = ("left top").asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerStrings.`left top`]
   @scala.inline
-  def `left top`: typings.bootstrapDatepicker.bootstrapDatepickerStrings.`left top` = this.cast("left top")
+  def `right bottom`: typings.bootstrapDatepicker.bootstrapDatepickerStrings.`right bottom` = ("right bottom").asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerStrings.`right bottom`]
   @scala.inline
-  def `right bottom`: typings.bootstrapDatepicker.bootstrapDatepickerStrings.`right bottom` = this.cast("right bottom")
+  def `right top`: typings.bootstrapDatepicker.bootstrapDatepickerStrings.`right top` = ("right top").asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerStrings.`right top`]
   @scala.inline
-  def `right top`: typings.bootstrapDatepicker.bootstrapDatepickerStrings.`right top` = this.cast("right top")
+  def `top auto`: typings.bootstrapDatepicker.bootstrapDatepickerStrings.`top auto` = ("top auto").asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerStrings.`top auto`]
   @scala.inline
-  def `top auto`: typings.bootstrapDatepicker.bootstrapDatepickerStrings.`top auto` = this.cast("top auto")
+  def `top left`: typings.bootstrapDatepicker.bootstrapDatepickerStrings.`top left` = ("top left").asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerStrings.`top left`]
   @scala.inline
-  def `top left`: typings.bootstrapDatepicker.bootstrapDatepickerStrings.`top left` = this.cast("top left")
-  @scala.inline
-  def `top right`: typings.bootstrapDatepicker.bootstrapDatepickerStrings.`top right` = this.cast("top right")
+  def `top right`: typings.bootstrapDatepicker.bootstrapDatepickerStrings.`top right` = ("top right").asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerStrings.`top right`]
 }
 

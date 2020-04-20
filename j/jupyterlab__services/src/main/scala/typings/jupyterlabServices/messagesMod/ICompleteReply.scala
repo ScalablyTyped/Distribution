@@ -30,7 +30,6 @@ object ICompleteReply {
     status: ok
   ): ICompleteReply = {
     val __obj = js.Dynamic.literal(cursor_end = cursor_end.asInstanceOf[js.Any], cursor_start = cursor_start.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICompleteReply]
   }
 }

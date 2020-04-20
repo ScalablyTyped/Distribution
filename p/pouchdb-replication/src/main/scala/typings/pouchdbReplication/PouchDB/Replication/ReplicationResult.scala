@@ -30,7 +30,6 @@ object ReplicationResult {
     start_time: Date
   ): ReplicationResult[Content] = {
     val __obj = js.Dynamic.literal(doc_write_failures = doc_write_failures.asInstanceOf[js.Any], docs = docs.asInstanceOf[js.Any], docs_read = docs_read.asInstanceOf[js.Any], docs_written = docs_written.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], last_seq = last_seq.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], start_time = start_time.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReplicationResult[Content]]
   }
 }

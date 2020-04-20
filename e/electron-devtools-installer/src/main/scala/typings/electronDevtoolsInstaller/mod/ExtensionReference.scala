@@ -13,7 +13,6 @@ object ExtensionReference {
   @scala.inline
   def apply(electron: String, id: String): ExtensionReference = {
     val __obj = js.Dynamic.literal(electron = electron.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExtensionReference]
   }
 }

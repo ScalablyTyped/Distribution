@@ -14,14 +14,12 @@ trait ThemeTypeAdditionalBackgroundsTiling extends js.Object
 
 object ThemeTypeAdditionalBackgroundsTiling {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `no-repeat`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`no-repeat` = "no-repeat".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`no-repeat`]
   @scala.inline
-  def `no-repeat`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`no-repeat` = this.cast("no-repeat")
+  def repeat: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.repeat = "repeat".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.repeat]
   @scala.inline
-  def repeat: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.repeat = this.cast("repeat")
+  def `repeat-x`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`repeat-x` = "repeat-x".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`repeat-x`]
   @scala.inline
-  def `repeat-x`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`repeat-x` = this.cast("repeat-x")
-  @scala.inline
-  def `repeat-y`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`repeat-y` = this.cast("repeat-y")
+  def `repeat-y`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`repeat-y` = "repeat-y".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`repeat-y`]
 }
 

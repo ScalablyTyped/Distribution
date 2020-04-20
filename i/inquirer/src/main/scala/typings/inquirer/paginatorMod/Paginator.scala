@@ -44,7 +44,6 @@ object Paginator {
     screen: typings.inquirer.screenManagerMod.^
   ): Paginator = {
     val __obj = js.Dynamic.literal(lastIndex = lastIndex.asInstanceOf[js.Any], paginate = js.Any.fromFunction2(paginate), pointer = pointer.asInstanceOf[js.Any], screen = screen.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Paginator]
   }
 }

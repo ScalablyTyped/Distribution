@@ -18,22 +18,20 @@ trait ToRelativeUnit extends js.Object
 
 object ToRelativeUnit {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def days: typings.luxon.luxonStrings.days = "days".asInstanceOf[typings.luxon.luxonStrings.days]
   @scala.inline
-  def days: typings.luxon.luxonStrings.days = this.cast("days")
+  def hours: typings.luxon.luxonStrings.hours = "hours".asInstanceOf[typings.luxon.luxonStrings.hours]
   @scala.inline
-  def hours: typings.luxon.luxonStrings.hours = this.cast("hours")
+  def minutes: typings.luxon.luxonStrings.minutes = "minutes".asInstanceOf[typings.luxon.luxonStrings.minutes]
   @scala.inline
-  def minutes: typings.luxon.luxonStrings.minutes = this.cast("minutes")
+  def months: typings.luxon.luxonStrings.months = "months".asInstanceOf[typings.luxon.luxonStrings.months]
   @scala.inline
-  def months: typings.luxon.luxonStrings.months = this.cast("months")
+  def quarters: typings.luxon.luxonStrings.quarters = "quarters".asInstanceOf[typings.luxon.luxonStrings.quarters]
   @scala.inline
-  def quarters: typings.luxon.luxonStrings.quarters = this.cast("quarters")
+  def seconds: typings.luxon.luxonStrings.seconds = "seconds".asInstanceOf[typings.luxon.luxonStrings.seconds]
   @scala.inline
-  def seconds: typings.luxon.luxonStrings.seconds = this.cast("seconds")
+  def weeks: typings.luxon.luxonStrings.weeks = "weeks".asInstanceOf[typings.luxon.luxonStrings.weeks]
   @scala.inline
-  def weeks: typings.luxon.luxonStrings.weeks = this.cast("weeks")
-  @scala.inline
-  def years: typings.luxon.luxonStrings.years = this.cast("years")
+  def years: typings.luxon.luxonStrings.years = "years".asInstanceOf[typings.luxon.luxonStrings.years]
 }
 

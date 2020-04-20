@@ -14,7 +14,6 @@ object LintResultData {
   @scala.inline
   def apply(rulesMeta: StringDictionary[RuleMetaData]): LintResultData = {
     val __obj = js.Dynamic.literal(rulesMeta = rulesMeta.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LintResultData]
   }
 }

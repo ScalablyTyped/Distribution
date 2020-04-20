@@ -13,7 +13,6 @@ object AnonUpgradeController {
   @scala.inline
   def apply(upgradeController: `1.5`): AnonUpgradeController = {
     val __obj = js.Dynamic.literal(upgradeController = upgradeController.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonUpgradeController]
   }
 }

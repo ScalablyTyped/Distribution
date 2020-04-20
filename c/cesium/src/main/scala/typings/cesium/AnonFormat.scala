@@ -16,7 +16,6 @@ object AnonFormat {
   @scala.inline
   def apply(format: String, request: String, service: String, styles: String, version: String): AnonFormat = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFormat]
   }
 }

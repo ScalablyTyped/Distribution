@@ -14,14 +14,12 @@ trait MemberLocation extends js.Object
 
 object MemberLocation {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def header: typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.header = "header".asInstanceOf[typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.header]
   @scala.inline
-  def header: typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.header = this.cast("header")
+  def headers: typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.headers = "headers".asInstanceOf[typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.headers]
   @scala.inline
-  def headers: typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.headers = this.cast("headers")
+  def querystring: typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.querystring = "querystring".asInstanceOf[typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.querystring]
   @scala.inline
-  def querystring: typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.querystring = this.cast("querystring")
-  @scala.inline
-  def uri: typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.uri = this.cast("uri")
+  def uri: typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.uri = "uri".asInstanceOf[typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.uri]
 }
 

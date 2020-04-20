@@ -12,7 +12,6 @@ object ScrollBarOption {
   @scala.inline
   def apply(fade: Boolean): ScrollBarOption = {
     val __obj = js.Dynamic.literal(fade = fade.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScrollBarOption]
   }
 }

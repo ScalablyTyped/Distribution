@@ -35,54 +35,52 @@ trait SecurityNetworkProtocol extends js.Object
 
 object SecurityNetworkProtocol {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ggp: typings.microsoftGraph.microsoftGraphStrings.ggp = "ggp".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.ggp]
   @scala.inline
-  def ggp: typings.microsoftGraph.microsoftGraphStrings.ggp = this.cast("ggp")
+  def icmp: typings.microsoftGraph.microsoftGraphStrings.icmp = "icmp".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.icmp]
   @scala.inline
-  def icmp: typings.microsoftGraph.microsoftGraphStrings.icmp = this.cast("icmp")
+  def icmpV6: typings.microsoftGraph.microsoftGraphStrings.icmpV6 = "icmpV6".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.icmpV6]
   @scala.inline
-  def icmpV6: typings.microsoftGraph.microsoftGraphStrings.icmpV6 = this.cast("icmpV6")
+  def idp: typings.microsoftGraph.microsoftGraphStrings.idp = "idp".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.idp]
   @scala.inline
-  def idp: typings.microsoftGraph.microsoftGraphStrings.idp = this.cast("idp")
+  def igmp: typings.microsoftGraph.microsoftGraphStrings.igmp = "igmp".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.igmp]
   @scala.inline
-  def igmp: typings.microsoftGraph.microsoftGraphStrings.igmp = this.cast("igmp")
+  def ip: typings.microsoftGraph.microsoftGraphStrings.ip = "ip".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.ip]
   @scala.inline
-  def ip: typings.microsoftGraph.microsoftGraphStrings.ip = this.cast("ip")
+  def ipSecAuthenticationHeader: typings.microsoftGraph.microsoftGraphStrings.ipSecAuthenticationHeader = "ipSecAuthenticationHeader".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.ipSecAuthenticationHeader]
   @scala.inline
-  def ipSecAuthenticationHeader: typings.microsoftGraph.microsoftGraphStrings.ipSecAuthenticationHeader = this.cast("ipSecAuthenticationHeader")
+  def ipSecEncapsulatingSecurityPayload: typings.microsoftGraph.microsoftGraphStrings.ipSecEncapsulatingSecurityPayload = "ipSecEncapsulatingSecurityPayload".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.ipSecEncapsulatingSecurityPayload]
   @scala.inline
-  def ipSecEncapsulatingSecurityPayload: typings.microsoftGraph.microsoftGraphStrings.ipSecEncapsulatingSecurityPayload = this.cast("ipSecEncapsulatingSecurityPayload")
+  def ipv4: typings.microsoftGraph.microsoftGraphStrings.ipv4 = "ipv4".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.ipv4]
   @scala.inline
-  def ipv4: typings.microsoftGraph.microsoftGraphStrings.ipv4 = this.cast("ipv4")
+  def ipv6: typings.microsoftGraph.microsoftGraphStrings.ipv6 = "ipv6".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.ipv6]
   @scala.inline
-  def ipv6: typings.microsoftGraph.microsoftGraphStrings.ipv6 = this.cast("ipv6")
+  def ipv6DestinationOptions: typings.microsoftGraph.microsoftGraphStrings.ipv6DestinationOptions = "ipv6DestinationOptions".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.ipv6DestinationOptions]
   @scala.inline
-  def ipv6DestinationOptions: typings.microsoftGraph.microsoftGraphStrings.ipv6DestinationOptions = this.cast("ipv6DestinationOptions")
+  def ipv6FragmentHeader: typings.microsoftGraph.microsoftGraphStrings.ipv6FragmentHeader = "ipv6FragmentHeader".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.ipv6FragmentHeader]
   @scala.inline
-  def ipv6FragmentHeader: typings.microsoftGraph.microsoftGraphStrings.ipv6FragmentHeader = this.cast("ipv6FragmentHeader")
+  def ipv6NoNextHeader: typings.microsoftGraph.microsoftGraphStrings.ipv6NoNextHeader = "ipv6NoNextHeader".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.ipv6NoNextHeader]
   @scala.inline
-  def ipv6NoNextHeader: typings.microsoftGraph.microsoftGraphStrings.ipv6NoNextHeader = this.cast("ipv6NoNextHeader")
+  def ipv6RoutingHeader: typings.microsoftGraph.microsoftGraphStrings.ipv6RoutingHeader = "ipv6RoutingHeader".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.ipv6RoutingHeader]
   @scala.inline
-  def ipv6RoutingHeader: typings.microsoftGraph.microsoftGraphStrings.ipv6RoutingHeader = this.cast("ipv6RoutingHeader")
+  def ipx: typings.microsoftGraph.microsoftGraphStrings.ipx = "ipx".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.ipx]
   @scala.inline
-  def ipx: typings.microsoftGraph.microsoftGraphStrings.ipx = this.cast("ipx")
+  def nd: typings.microsoftGraph.microsoftGraphStrings.nd = "nd".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.nd]
   @scala.inline
-  def nd: typings.microsoftGraph.microsoftGraphStrings.nd = this.cast("nd")
+  def pup: typings.microsoftGraph.microsoftGraphStrings.pup = "pup".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.pup]
   @scala.inline
-  def pup: typings.microsoftGraph.microsoftGraphStrings.pup = this.cast("pup")
+  def raw: typings.microsoftGraph.microsoftGraphStrings.raw = "raw".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.raw]
   @scala.inline
-  def raw: typings.microsoftGraph.microsoftGraphStrings.raw = this.cast("raw")
+  def spx: typings.microsoftGraph.microsoftGraphStrings.spx = "spx".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.spx]
   @scala.inline
-  def spx: typings.microsoftGraph.microsoftGraphStrings.spx = this.cast("spx")
+  def spxII: typings.microsoftGraph.microsoftGraphStrings.spxII = "spxII".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.spxII]
   @scala.inline
-  def spxII: typings.microsoftGraph.microsoftGraphStrings.spxII = this.cast("spxII")
+  def tcp: typings.microsoftGraph.microsoftGraphStrings.tcp = "tcp".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.tcp]
   @scala.inline
-  def tcp: typings.microsoftGraph.microsoftGraphStrings.tcp = this.cast("tcp")
+  def udp: typings.microsoftGraph.microsoftGraphStrings.udp = "udp".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.udp]
   @scala.inline
-  def udp: typings.microsoftGraph.microsoftGraphStrings.udp = this.cast("udp")
+  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = this.cast("unknownFutureValue")
+  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }
 

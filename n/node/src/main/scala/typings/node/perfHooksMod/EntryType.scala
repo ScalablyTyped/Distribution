@@ -17,20 +17,18 @@ trait EntryType extends js.Object
 
 object EntryType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def function: typings.node.nodeStrings.function = "function".asInstanceOf[typings.node.nodeStrings.function]
   @scala.inline
-  def function: typings.node.nodeStrings.function = this.cast("function")
+  def gc: typings.node.nodeStrings.gc = "gc".asInstanceOf[typings.node.nodeStrings.gc]
   @scala.inline
-  def gc: typings.node.nodeStrings.gc = this.cast("gc")
+  def http: typings.node.nodeStrings.http = "http".asInstanceOf[typings.node.nodeStrings.http]
   @scala.inline
-  def http: typings.node.nodeStrings.http = this.cast("http")
+  def http2: typings.node.nodeStrings.http2 = "http2".asInstanceOf[typings.node.nodeStrings.http2]
   @scala.inline
-  def http2: typings.node.nodeStrings.http2 = this.cast("http2")
+  def mark: typings.node.nodeStrings.mark = "mark".asInstanceOf[typings.node.nodeStrings.mark]
   @scala.inline
-  def mark: typings.node.nodeStrings.mark = this.cast("mark")
+  def measure: typings.node.nodeStrings.measure = "measure".asInstanceOf[typings.node.nodeStrings.measure]
   @scala.inline
-  def measure: typings.node.nodeStrings.measure = this.cast("measure")
-  @scala.inline
-  def node: typings.node.nodeStrings.node = this.cast("node")
+  def node: typings.node.nodeStrings.node = "node".asInstanceOf[typings.node.nodeStrings.node]
 }
 

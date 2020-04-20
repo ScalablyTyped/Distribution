@@ -12,7 +12,6 @@ object ReleaseDefinitionEnvironmentStep {
   @scala.inline
   def apply(id: Double): ReleaseDefinitionEnvironmentStep = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReleaseDefinitionEnvironmentStep]
   }
 }

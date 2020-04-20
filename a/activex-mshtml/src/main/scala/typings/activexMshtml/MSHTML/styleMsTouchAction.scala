@@ -32,28 +32,26 @@ trait styleMsTouchAction extends js.Object
 
 object styleMsTouchAction {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleMsTouchActionAuto: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleMsTouchActionAuto: `1` = this.cast(1)
+  def styleMsTouchActionCrossSlideX: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def styleMsTouchActionCrossSlideX: `64` = this.cast(64)
+  def styleMsTouchActionCrossSlideY: `128` = 128.asInstanceOf[`128`]
   @scala.inline
-  def styleMsTouchActionCrossSlideY: `128` = this.cast(128)
+  def styleMsTouchActionDoubleTapZoom: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def styleMsTouchActionDoubleTapZoom: `4` = this.cast(4)
+  def styleMsTouchActionManipulation: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleMsTouchActionManipulation: `2` = this.cast(2)
+  def styleMsTouchActionNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleMsTouchActionNone: `0` = this.cast(0)
+  def styleMsTouchActionNotSet: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def styleMsTouchActionNotSet: `-1` = this.cast(-1)
+  def styleMsTouchActionPanX: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def styleMsTouchActionPanX: `8` = this.cast(8)
+  def styleMsTouchActionPanY: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def styleMsTouchActionPanY: `16` = this.cast(16)
+  def styleMsTouchActionPinchZoom: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def styleMsTouchActionPinchZoom: `32` = this.cast(32)
-  @scala.inline
-  def styleMsTouchAction_Max: `2147483647` = this.cast(2147483647)
+  def styleMsTouchAction_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

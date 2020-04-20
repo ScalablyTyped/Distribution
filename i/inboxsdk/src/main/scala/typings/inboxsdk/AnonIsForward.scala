@@ -12,7 +12,6 @@ object AnonIsForward {
   @scala.inline
   def apply(isForward: Boolean): AnonIsForward = {
     val __obj = js.Dynamic.literal(isForward = isForward.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsForward]
   }
 }

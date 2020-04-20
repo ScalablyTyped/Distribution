@@ -14,7 +14,6 @@ object AnonStyleJson {
   @scala.inline
   def apply(styleJson: js.Array[MapStyleItem]): AnonStyleJson = {
     val __obj = js.Dynamic.literal(styleJson = styleJson.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonStyleJson]
   }
 }

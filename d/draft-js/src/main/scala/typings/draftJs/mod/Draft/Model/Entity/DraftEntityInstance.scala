@@ -27,7 +27,6 @@ object DraftEntityInstance {
   @scala.inline
   def apply(getData: () => js.Any, getMutability: () => DraftEntityMutability, getType: () => DraftEntityType): DraftEntityInstance = {
     val __obj = js.Dynamic.literal(getData = js.Any.fromFunction0(getData), getMutability = js.Any.fromFunction0(getMutability), getType = js.Any.fromFunction0(getType))
-  
     __obj.asInstanceOf[DraftEntityInstance]
   }
 }

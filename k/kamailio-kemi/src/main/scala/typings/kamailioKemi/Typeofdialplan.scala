@@ -13,7 +13,6 @@ object Typeofdialplan {
   @scala.inline
   def apply(dp_match: (Double, String) => Double, dp_replace: (Double, String, String) => Double): Typeofdialplan = {
     val __obj = js.Dynamic.literal(dp_match = js.Any.fromFunction2(dp_match), dp_replace = js.Any.fromFunction3(dp_replace))
-  
     __obj.asInstanceOf[Typeofdialplan]
   }
 }

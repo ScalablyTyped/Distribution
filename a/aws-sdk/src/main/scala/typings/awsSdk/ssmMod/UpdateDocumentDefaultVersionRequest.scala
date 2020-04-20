@@ -20,7 +20,6 @@ object UpdateDocumentDefaultVersionRequest {
   @scala.inline
   def apply(DocumentVersion: DocumentVersionNumber, Name: DocumentName): UpdateDocumentDefaultVersionRequest = {
     val __obj = js.Dynamic.literal(DocumentVersion = DocumentVersion.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateDocumentDefaultVersionRequest]
   }
 }

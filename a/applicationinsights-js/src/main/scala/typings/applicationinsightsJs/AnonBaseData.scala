@@ -14,7 +14,6 @@ object AnonBaseData {
   @scala.inline
   def apply(baseData: FieldType, baseType: FieldType): AnonBaseData = {
     val __obj = js.Dynamic.literal(baseData = baseData.asInstanceOf[js.Any], baseType = baseType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBaseData]
   }
 }

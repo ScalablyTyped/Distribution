@@ -19,7 +19,6 @@ object ISearchActivatedEventArgs {
     splashScreen: SplashScreen
   ): ISearchActivatedEventArgs = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], previousExecutionState = previousExecutionState.asInstanceOf[js.Any], queryText = queryText.asInstanceOf[js.Any], splashScreen = splashScreen.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISearchActivatedEventArgs]
   }
 }

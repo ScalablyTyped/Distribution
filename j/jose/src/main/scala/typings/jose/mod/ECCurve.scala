@@ -14,14 +14,12 @@ trait ECCurve extends js.Object
 
 object ECCurve {
   @scala.inline
-  def `P-256`: typings.jose.joseStrings.`P-256` = this.cast("P-256")
+  def `P-256`: typings.jose.joseStrings.`P-256` = "P-256".asInstanceOf[typings.jose.joseStrings.`P-256`]
   @scala.inline
-  def `P-384`: typings.jose.joseStrings.`P-384` = this.cast("P-384")
+  def `P-384`: typings.jose.joseStrings.`P-384` = "P-384".asInstanceOf[typings.jose.joseStrings.`P-384`]
   @scala.inline
-  def `P-521`: typings.jose.joseStrings.`P-521` = this.cast("P-521")
+  def `P-521`: typings.jose.joseStrings.`P-521` = "P-521".asInstanceOf[typings.jose.joseStrings.`P-521`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def secp256k1: typings.jose.joseStrings.secp256k1 = this.cast("secp256k1")
+  def secp256k1: typings.jose.joseStrings.secp256k1 = "secp256k1".asInstanceOf[typings.jose.joseStrings.secp256k1]
 }
 

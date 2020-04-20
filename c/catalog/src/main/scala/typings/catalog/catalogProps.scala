@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait catalogProps {
   @scala.inline
-  def CatalogProps: Config.type = typings.catalog.mod.Config
+  def CatalogProps: Config.type = Config
   type CatalogProps = Config
 }
 

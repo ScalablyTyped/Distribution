@@ -18,7 +18,6 @@ object AnonCreateURL {
     searchForItems: /* repeated */ js.Any => js.Any
   ): AnonCreateURL = {
     val __obj = js.Dynamic.literal(createURL = js.Any.fromFunction1(createURL), refine = js.Any.fromFunction1(refine), searchForItems = js.Any.fromFunction1(searchForItems))
-  
     __obj.asInstanceOf[AnonCreateURL]
   }
 }

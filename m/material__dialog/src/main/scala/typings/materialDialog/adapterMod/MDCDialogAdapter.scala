@@ -51,7 +51,6 @@ object MDCDialogAdapter {
     untrapFocusOnSurface: () => Unit
   ): MDCDialogAdapter = {
     val __obj = js.Dynamic.literal(addBodyClass = js.Any.fromFunction1(addBodyClass), addClass = js.Any.fromFunction1(addClass), deregisterDocumentKeydownHandler = js.Any.fromFunction1(deregisterDocumentKeydownHandler), deregisterInteractionHandler = js.Any.fromFunction2(deregisterInteractionHandler), deregisterSurfaceInteractionHandler = js.Any.fromFunction2(deregisterSurfaceInteractionHandler), deregisterTransitionEndHandler = js.Any.fromFunction1(deregisterTransitionEndHandler), eventTargetHasClass = js.Any.fromFunction2(eventTargetHasClass), isDialog = js.Any.fromFunction1(isDialog), notifyAccept = js.Any.fromFunction0(notifyAccept), notifyCancel = js.Any.fromFunction0(notifyCancel), registerDocumentKeydownHandler = js.Any.fromFunction1(registerDocumentKeydownHandler), registerInteractionHandler = js.Any.fromFunction2(registerInteractionHandler), registerSurfaceInteractionHandler = js.Any.fromFunction2(registerSurfaceInteractionHandler), registerTransitionEndHandler = js.Any.fromFunction1(registerTransitionEndHandler), removeBodyClass = js.Any.fromFunction1(removeBodyClass), removeClass = js.Any.fromFunction1(removeClass), trapFocusOnSurface = js.Any.fromFunction0(trapFocusOnSurface), untrapFocusOnSurface = js.Any.fromFunction0(untrapFocusOnSurface))
-  
     __obj.asInstanceOf[MDCDialogAdapter]
   }
 }

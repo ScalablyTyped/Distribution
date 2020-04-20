@@ -12,7 +12,6 @@ object PluginRemoveXMLProcInst {
   @scala.inline
   def apply(removeXMLProcInst: Boolean | js.Object): PluginRemoveXMLProcInst = {
     val __obj = js.Dynamic.literal(removeXMLProcInst = removeXMLProcInst.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PluginRemoveXMLProcInst]
   }
 }

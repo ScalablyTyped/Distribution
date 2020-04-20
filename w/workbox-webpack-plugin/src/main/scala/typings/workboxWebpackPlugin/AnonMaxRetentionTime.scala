@@ -12,7 +12,6 @@ object AnonMaxRetentionTime {
   @scala.inline
   def apply(maxRetentionTime: Double): AnonMaxRetentionTime = {
     val __obj = js.Dynamic.literal(maxRetentionTime = maxRetentionTime.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMaxRetentionTime]
   }
 }

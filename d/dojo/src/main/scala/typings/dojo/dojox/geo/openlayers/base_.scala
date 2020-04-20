@@ -108,7 +108,6 @@ object base_ {
     widget: js.Object
   ): base_ = {
     val __obj = js.Dynamic.literal(BaseLayerType = BaseLayerType.asInstanceOf[js.Any], Collection = js.Any.fromFunction0(Collection), EPSG4326 = EPSG4326.asInstanceOf[js.Any], Feature = js.Any.fromFunction0(Feature), Geometry = js.Any.fromFunction0(Geometry), GeometryFeature = js.Any.fromFunction0(GeometryFeature), GfxLayer = js.Any.fromFunction0(GfxLayer), GreatCircle = GreatCircle.asInstanceOf[js.Any], JsonImport = js.Any.fromFunction0(JsonImport), Layer = js.Any.fromFunction0(Layer), LineString = js.Any.fromFunction0(LineString), Map = js.Any.fromFunction0(Map), Point = js.Any.fromFunction0(Point), TouchInteractionSupport = js.Any.fromFunction0(TouchInteractionSupport), WidgetFeature = js.Any.fromFunction0(WidgetFeature), parseDMS = js.Any.fromFunction2(parseDMS), widget = widget.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[base_]
   }
 }

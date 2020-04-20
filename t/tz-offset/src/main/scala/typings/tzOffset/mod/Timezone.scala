@@ -145,276 +145,274 @@ trait Timezone extends js.Object
 
 object Timezone {
   @scala.inline
-  def AfricaSlashAlgiers: typings.tzOffset.tzOffsetStrings.AfricaSlashAlgiers = this.cast("Africa/Algiers")
+  def AfricaSlashAlgiers: typings.tzOffset.tzOffsetStrings.AfricaSlashAlgiers = "Africa/Algiers".asInstanceOf[typings.tzOffset.tzOffsetStrings.AfricaSlashAlgiers]
   @scala.inline
-  def AfricaSlashCairo: typings.tzOffset.tzOffsetStrings.AfricaSlashCairo = this.cast("Africa/Cairo")
+  def AfricaSlashCairo: typings.tzOffset.tzOffsetStrings.AfricaSlashCairo = "Africa/Cairo".asInstanceOf[typings.tzOffset.tzOffsetStrings.AfricaSlashCairo]
   @scala.inline
-  def AfricaSlashCasablanca: typings.tzOffset.tzOffsetStrings.AfricaSlashCasablanca = this.cast("Africa/Casablanca")
+  def AfricaSlashCasablanca: typings.tzOffset.tzOffsetStrings.AfricaSlashCasablanca = "Africa/Casablanca".asInstanceOf[typings.tzOffset.tzOffsetStrings.AfricaSlashCasablanca]
   @scala.inline
-  def AfricaSlashHarare: typings.tzOffset.tzOffsetStrings.AfricaSlashHarare = this.cast("Africa/Harare")
+  def AfricaSlashHarare: typings.tzOffset.tzOffsetStrings.AfricaSlashHarare = "Africa/Harare".asInstanceOf[typings.tzOffset.tzOffsetStrings.AfricaSlashHarare]
   @scala.inline
-  def AfricaSlashJohannesburg: typings.tzOffset.tzOffsetStrings.AfricaSlashJohannesburg = this.cast("Africa/Johannesburg")
+  def AfricaSlashJohannesburg: typings.tzOffset.tzOffsetStrings.AfricaSlashJohannesburg = "Africa/Johannesburg".asInstanceOf[typings.tzOffset.tzOffsetStrings.AfricaSlashJohannesburg]
   @scala.inline
-  def AfricaSlashMonrovia: typings.tzOffset.tzOffsetStrings.AfricaSlashMonrovia = this.cast("Africa/Monrovia")
+  def AfricaSlashMonrovia: typings.tzOffset.tzOffsetStrings.AfricaSlashMonrovia = "Africa/Monrovia".asInstanceOf[typings.tzOffset.tzOffsetStrings.AfricaSlashMonrovia]
   @scala.inline
-  def AfricaSlashNairobi: typings.tzOffset.tzOffsetStrings.AfricaSlashNairobi = this.cast("Africa/Nairobi")
+  def AfricaSlashNairobi: typings.tzOffset.tzOffsetStrings.AfricaSlashNairobi = "Africa/Nairobi".asInstanceOf[typings.tzOffset.tzOffsetStrings.AfricaSlashNairobi]
   @scala.inline
-  def AmericaSlashArgentinaSlashBuenos_Aires: typings.tzOffset.tzOffsetStrings.AmericaSlashArgentinaSlashBuenos_Aires = this.cast("America/Argentina/Buenos_Aires")
+  def AmericaSlashArgentinaSlashBuenos_Aires: typings.tzOffset.tzOffsetStrings.AmericaSlashArgentinaSlashBuenos_Aires = "America/Argentina/Buenos_Aires".asInstanceOf[typings.tzOffset.tzOffsetStrings.AmericaSlashArgentinaSlashBuenos_Aires]
   @scala.inline
-  def AmericaSlashBogota: typings.tzOffset.tzOffsetStrings.AmericaSlashBogota = this.cast("America/Bogota")
+  def AmericaSlashBogota: typings.tzOffset.tzOffsetStrings.AmericaSlashBogota = "America/Bogota".asInstanceOf[typings.tzOffset.tzOffsetStrings.AmericaSlashBogota]
   @scala.inline
-  def AmericaSlashCaracas: typings.tzOffset.tzOffsetStrings.AmericaSlashCaracas = this.cast("America/Caracas")
+  def AmericaSlashCaracas: typings.tzOffset.tzOffsetStrings.AmericaSlashCaracas = "America/Caracas".asInstanceOf[typings.tzOffset.tzOffsetStrings.AmericaSlashCaracas]
   @scala.inline
-  def AmericaSlashChicago: typings.tzOffset.tzOffsetStrings.AmericaSlashChicago = this.cast("America/Chicago")
+  def AmericaSlashChicago: typings.tzOffset.tzOffsetStrings.AmericaSlashChicago = "America/Chicago".asInstanceOf[typings.tzOffset.tzOffsetStrings.AmericaSlashChicago]
   @scala.inline
-  def AmericaSlashChihuahua: typings.tzOffset.tzOffsetStrings.AmericaSlashChihuahua = this.cast("America/Chihuahua")
+  def AmericaSlashChihuahua: typings.tzOffset.tzOffsetStrings.AmericaSlashChihuahua = "America/Chihuahua".asInstanceOf[typings.tzOffset.tzOffsetStrings.AmericaSlashChihuahua]
   @scala.inline
-  def AmericaSlashDenver: typings.tzOffset.tzOffsetStrings.AmericaSlashDenver = this.cast("America/Denver")
+  def AmericaSlashDenver: typings.tzOffset.tzOffsetStrings.AmericaSlashDenver = "America/Denver".asInstanceOf[typings.tzOffset.tzOffsetStrings.AmericaSlashDenver]
   @scala.inline
-  def AmericaSlashGodthab: typings.tzOffset.tzOffsetStrings.AmericaSlashGodthab = this.cast("America/Godthab")
+  def AmericaSlashGodthab: typings.tzOffset.tzOffsetStrings.AmericaSlashGodthab = "America/Godthab".asInstanceOf[typings.tzOffset.tzOffsetStrings.AmericaSlashGodthab]
   @scala.inline
-  def AmericaSlashGuatemala: typings.tzOffset.tzOffsetStrings.AmericaSlashGuatemala = this.cast("America/Guatemala")
+  def AmericaSlashGuatemala: typings.tzOffset.tzOffsetStrings.AmericaSlashGuatemala = "America/Guatemala".asInstanceOf[typings.tzOffset.tzOffsetStrings.AmericaSlashGuatemala]
   @scala.inline
-  def AmericaSlashGuyana: typings.tzOffset.tzOffsetStrings.AmericaSlashGuyana = this.cast("America/Guyana")
+  def AmericaSlashGuyana: typings.tzOffset.tzOffsetStrings.AmericaSlashGuyana = "America/Guyana".asInstanceOf[typings.tzOffset.tzOffsetStrings.AmericaSlashGuyana]
   @scala.inline
-  def AmericaSlashHalifax: typings.tzOffset.tzOffsetStrings.AmericaSlashHalifax = this.cast("America/Halifax")
+  def AmericaSlashHalifax: typings.tzOffset.tzOffsetStrings.AmericaSlashHalifax = "America/Halifax".asInstanceOf[typings.tzOffset.tzOffsetStrings.AmericaSlashHalifax]
   @scala.inline
-  def AmericaSlashIndianaSlashIndianapolis: typings.tzOffset.tzOffsetStrings.AmericaSlashIndianaSlashIndianapolis = this.cast("America/Indiana/Indianapolis")
+  def AmericaSlashIndianaSlashIndianapolis: typings.tzOffset.tzOffsetStrings.AmericaSlashIndianaSlashIndianapolis = "America/Indiana/Indianapolis".asInstanceOf[typings.tzOffset.tzOffsetStrings.AmericaSlashIndianaSlashIndianapolis]
   @scala.inline
-  def AmericaSlashJuneau: typings.tzOffset.tzOffsetStrings.AmericaSlashJuneau = this.cast("America/Juneau")
+  def AmericaSlashJuneau: typings.tzOffset.tzOffsetStrings.AmericaSlashJuneau = "America/Juneau".asInstanceOf[typings.tzOffset.tzOffsetStrings.AmericaSlashJuneau]
   @scala.inline
-  def AmericaSlashLa_Paz: typings.tzOffset.tzOffsetStrings.AmericaSlashLa_Paz = this.cast("America/La_Paz")
+  def AmericaSlashLa_Paz: typings.tzOffset.tzOffsetStrings.AmericaSlashLa_Paz = "America/La_Paz".asInstanceOf[typings.tzOffset.tzOffsetStrings.AmericaSlashLa_Paz]
   @scala.inline
-  def AmericaSlashLima: typings.tzOffset.tzOffsetStrings.AmericaSlashLima = this.cast("America/Lima")
+  def AmericaSlashLima: typings.tzOffset.tzOffsetStrings.AmericaSlashLima = "America/Lima".asInstanceOf[typings.tzOffset.tzOffsetStrings.AmericaSlashLima]
   @scala.inline
-  def AmericaSlashLos_Angeles: typings.tzOffset.tzOffsetStrings.AmericaSlashLos_Angeles = this.cast("America/Los_Angeles")
+  def AmericaSlashLos_Angeles: typings.tzOffset.tzOffsetStrings.AmericaSlashLos_Angeles = "America/Los_Angeles".asInstanceOf[typings.tzOffset.tzOffsetStrings.AmericaSlashLos_Angeles]
   @scala.inline
-  def AmericaSlashMazatlan: typings.tzOffset.tzOffsetStrings.AmericaSlashMazatlan = this.cast("America/Mazatlan")
+  def AmericaSlashMazatlan: typings.tzOffset.tzOffsetStrings.AmericaSlashMazatlan = "America/Mazatlan".asInstanceOf[typings.tzOffset.tzOffsetStrings.AmericaSlashMazatlan]
   @scala.inline
-  def AmericaSlashMexico_City: typings.tzOffset.tzOffsetStrings.AmericaSlashMexico_City = this.cast("America/Mexico_City")
+  def AmericaSlashMexico_City: typings.tzOffset.tzOffsetStrings.AmericaSlashMexico_City = "America/Mexico_City".asInstanceOf[typings.tzOffset.tzOffsetStrings.AmericaSlashMexico_City]
   @scala.inline
-  def AmericaSlashMonterrey: typings.tzOffset.tzOffsetStrings.AmericaSlashMonterrey = this.cast("America/Monterrey")
+  def AmericaSlashMonterrey: typings.tzOffset.tzOffsetStrings.AmericaSlashMonterrey = "America/Monterrey".asInstanceOf[typings.tzOffset.tzOffsetStrings.AmericaSlashMonterrey]
   @scala.inline
-  def AmericaSlashMontevideo: typings.tzOffset.tzOffsetStrings.AmericaSlashMontevideo = this.cast("America/Montevideo")
+  def AmericaSlashMontevideo: typings.tzOffset.tzOffsetStrings.AmericaSlashMontevideo = "America/Montevideo".asInstanceOf[typings.tzOffset.tzOffsetStrings.AmericaSlashMontevideo]
   @scala.inline
-  def AmericaSlashNew_York: typings.tzOffset.tzOffsetStrings.AmericaSlashNew_York = this.cast("America/New_York")
+  def AmericaSlashNew_York: typings.tzOffset.tzOffsetStrings.AmericaSlashNew_York = "America/New_York".asInstanceOf[typings.tzOffset.tzOffsetStrings.AmericaSlashNew_York]
   @scala.inline
-  def AmericaSlashPhoenix: typings.tzOffset.tzOffsetStrings.AmericaSlashPhoenix = this.cast("America/Phoenix")
+  def AmericaSlashPhoenix: typings.tzOffset.tzOffsetStrings.AmericaSlashPhoenix = "America/Phoenix".asInstanceOf[typings.tzOffset.tzOffsetStrings.AmericaSlashPhoenix]
   @scala.inline
-  def AmericaSlashPuerto_Rico: typings.tzOffset.tzOffsetStrings.AmericaSlashPuerto_Rico = this.cast("America/Puerto_Rico")
+  def AmericaSlashPuerto_Rico: typings.tzOffset.tzOffsetStrings.AmericaSlashPuerto_Rico = "America/Puerto_Rico".asInstanceOf[typings.tzOffset.tzOffsetStrings.AmericaSlashPuerto_Rico]
   @scala.inline
-  def AmericaSlashRegina: typings.tzOffset.tzOffsetStrings.AmericaSlashRegina = this.cast("America/Regina")
+  def AmericaSlashRegina: typings.tzOffset.tzOffsetStrings.AmericaSlashRegina = "America/Regina".asInstanceOf[typings.tzOffset.tzOffsetStrings.AmericaSlashRegina]
   @scala.inline
-  def AmericaSlashSantiago: typings.tzOffset.tzOffsetStrings.AmericaSlashSantiago = this.cast("America/Santiago")
+  def AmericaSlashSantiago: typings.tzOffset.tzOffsetStrings.AmericaSlashSantiago = "America/Santiago".asInstanceOf[typings.tzOffset.tzOffsetStrings.AmericaSlashSantiago]
   @scala.inline
-  def AmericaSlashSao_Paulo: typings.tzOffset.tzOffsetStrings.AmericaSlashSao_Paulo = this.cast("America/Sao_Paulo")
+  def AmericaSlashSao_Paulo: typings.tzOffset.tzOffsetStrings.AmericaSlashSao_Paulo = "America/Sao_Paulo".asInstanceOf[typings.tzOffset.tzOffsetStrings.AmericaSlashSao_Paulo]
   @scala.inline
-  def AmericaSlashSt_Johns: typings.tzOffset.tzOffsetStrings.AmericaSlashSt_Johns = this.cast("America/St_Johns")
+  def AmericaSlashSt_Johns: typings.tzOffset.tzOffsetStrings.AmericaSlashSt_Johns = "America/St_Johns".asInstanceOf[typings.tzOffset.tzOffsetStrings.AmericaSlashSt_Johns]
   @scala.inline
-  def AmericaSlashTijuana: typings.tzOffset.tzOffsetStrings.AmericaSlashTijuana = this.cast("America/Tijuana")
+  def AmericaSlashTijuana: typings.tzOffset.tzOffsetStrings.AmericaSlashTijuana = "America/Tijuana".asInstanceOf[typings.tzOffset.tzOffsetStrings.AmericaSlashTijuana]
   @scala.inline
-  def AsiaSlashAlmaty: typings.tzOffset.tzOffsetStrings.AsiaSlashAlmaty = this.cast("Asia/Almaty")
+  def AsiaSlashAlmaty: typings.tzOffset.tzOffsetStrings.AsiaSlashAlmaty = "Asia/Almaty".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashAlmaty]
   @scala.inline
-  def AsiaSlashBaghdad: typings.tzOffset.tzOffsetStrings.AsiaSlashBaghdad = this.cast("Asia/Baghdad")
+  def AsiaSlashBaghdad: typings.tzOffset.tzOffsetStrings.AsiaSlashBaghdad = "Asia/Baghdad".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashBaghdad]
   @scala.inline
-  def AsiaSlashBaku: typings.tzOffset.tzOffsetStrings.AsiaSlashBaku = this.cast("Asia/Baku")
+  def AsiaSlashBaku: typings.tzOffset.tzOffsetStrings.AsiaSlashBaku = "Asia/Baku".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashBaku]
   @scala.inline
-  def AsiaSlashBangkok: typings.tzOffset.tzOffsetStrings.AsiaSlashBangkok = this.cast("Asia/Bangkok")
+  def AsiaSlashBangkok: typings.tzOffset.tzOffsetStrings.AsiaSlashBangkok = "Asia/Bangkok".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashBangkok]
   @scala.inline
-  def AsiaSlashChongqing: typings.tzOffset.tzOffsetStrings.AsiaSlashChongqing = this.cast("Asia/Chongqing")
+  def AsiaSlashChongqing: typings.tzOffset.tzOffsetStrings.AsiaSlashChongqing = "Asia/Chongqing".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashChongqing]
   @scala.inline
-  def AsiaSlashColombo: typings.tzOffset.tzOffsetStrings.AsiaSlashColombo = this.cast("Asia/Colombo")
+  def AsiaSlashColombo: typings.tzOffset.tzOffsetStrings.AsiaSlashColombo = "Asia/Colombo".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashColombo]
   @scala.inline
-  def AsiaSlashDhaka: typings.tzOffset.tzOffsetStrings.AsiaSlashDhaka = this.cast("Asia/Dhaka")
+  def AsiaSlashDhaka: typings.tzOffset.tzOffsetStrings.AsiaSlashDhaka = "Asia/Dhaka".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashDhaka]
   @scala.inline
-  def AsiaSlashHong_Kong: typings.tzOffset.tzOffsetStrings.AsiaSlashHong_Kong = this.cast("Asia/Hong_Kong")
+  def AsiaSlashHong_Kong: typings.tzOffset.tzOffsetStrings.AsiaSlashHong_Kong = "Asia/Hong_Kong".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashHong_Kong]
   @scala.inline
-  def AsiaSlashIrkutsk: typings.tzOffset.tzOffsetStrings.AsiaSlashIrkutsk = this.cast("Asia/Irkutsk")
+  def AsiaSlashIrkutsk: typings.tzOffset.tzOffsetStrings.AsiaSlashIrkutsk = "Asia/Irkutsk".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashIrkutsk]
   @scala.inline
-  def AsiaSlashJakarta: typings.tzOffset.tzOffsetStrings.AsiaSlashJakarta = this.cast("Asia/Jakarta")
+  def AsiaSlashJakarta: typings.tzOffset.tzOffsetStrings.AsiaSlashJakarta = "Asia/Jakarta".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashJakarta]
   @scala.inline
-  def AsiaSlashJerusalem: typings.tzOffset.tzOffsetStrings.AsiaSlashJerusalem = this.cast("Asia/Jerusalem")
+  def AsiaSlashJerusalem: typings.tzOffset.tzOffsetStrings.AsiaSlashJerusalem = "Asia/Jerusalem".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashJerusalem]
   @scala.inline
-  def AsiaSlashKabul: typings.tzOffset.tzOffsetStrings.AsiaSlashKabul = this.cast("Asia/Kabul")
+  def AsiaSlashKabul: typings.tzOffset.tzOffsetStrings.AsiaSlashKabul = "Asia/Kabul".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashKabul]
   @scala.inline
-  def AsiaSlashKamchatka: typings.tzOffset.tzOffsetStrings.AsiaSlashKamchatka = this.cast("Asia/Kamchatka")
+  def AsiaSlashKamchatka: typings.tzOffset.tzOffsetStrings.AsiaSlashKamchatka = "Asia/Kamchatka".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashKamchatka]
   @scala.inline
-  def AsiaSlashKarachi: typings.tzOffset.tzOffsetStrings.AsiaSlashKarachi = this.cast("Asia/Karachi")
+  def AsiaSlashKarachi: typings.tzOffset.tzOffsetStrings.AsiaSlashKarachi = "Asia/Karachi".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashKarachi]
   @scala.inline
-  def AsiaSlashKathmandu: typings.tzOffset.tzOffsetStrings.AsiaSlashKathmandu = this.cast("Asia/Kathmandu")
+  def AsiaSlashKathmandu: typings.tzOffset.tzOffsetStrings.AsiaSlashKathmandu = "Asia/Kathmandu".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashKathmandu]
   @scala.inline
-  def AsiaSlashKolkata: typings.tzOffset.tzOffsetStrings.AsiaSlashKolkata = this.cast("Asia/Kolkata")
+  def AsiaSlashKolkata: typings.tzOffset.tzOffsetStrings.AsiaSlashKolkata = "Asia/Kolkata".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashKolkata]
   @scala.inline
-  def AsiaSlashKrasnoyarsk: typings.tzOffset.tzOffsetStrings.AsiaSlashKrasnoyarsk = this.cast("Asia/Krasnoyarsk")
+  def AsiaSlashKrasnoyarsk: typings.tzOffset.tzOffsetStrings.AsiaSlashKrasnoyarsk = "Asia/Krasnoyarsk".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashKrasnoyarsk]
   @scala.inline
-  def AsiaSlashKuala_Lumpur: typings.tzOffset.tzOffsetStrings.AsiaSlashKuala_Lumpur = this.cast("Asia/Kuala_Lumpur")
+  def AsiaSlashKuala_Lumpur: typings.tzOffset.tzOffsetStrings.AsiaSlashKuala_Lumpur = "Asia/Kuala_Lumpur".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashKuala_Lumpur]
   @scala.inline
-  def AsiaSlashKuwait: typings.tzOffset.tzOffsetStrings.AsiaSlashKuwait = this.cast("Asia/Kuwait")
+  def AsiaSlashKuwait: typings.tzOffset.tzOffsetStrings.AsiaSlashKuwait = "Asia/Kuwait".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashKuwait]
   @scala.inline
-  def AsiaSlashMagadan: typings.tzOffset.tzOffsetStrings.AsiaSlashMagadan = this.cast("Asia/Magadan")
+  def AsiaSlashMagadan: typings.tzOffset.tzOffsetStrings.AsiaSlashMagadan = "Asia/Magadan".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashMagadan]
   @scala.inline
-  def AsiaSlashMuscat: typings.tzOffset.tzOffsetStrings.AsiaSlashMuscat = this.cast("Asia/Muscat")
+  def AsiaSlashMuscat: typings.tzOffset.tzOffsetStrings.AsiaSlashMuscat = "Asia/Muscat".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashMuscat]
   @scala.inline
-  def AsiaSlashNovosibirsk: typings.tzOffset.tzOffsetStrings.AsiaSlashNovosibirsk = this.cast("Asia/Novosibirsk")
+  def AsiaSlashNovosibirsk: typings.tzOffset.tzOffsetStrings.AsiaSlashNovosibirsk = "Asia/Novosibirsk".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashNovosibirsk]
   @scala.inline
-  def AsiaSlashRangoon: typings.tzOffset.tzOffsetStrings.AsiaSlashRangoon = this.cast("Asia/Rangoon")
+  def AsiaSlashRangoon: typings.tzOffset.tzOffsetStrings.AsiaSlashRangoon = "Asia/Rangoon".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashRangoon]
   @scala.inline
-  def AsiaSlashRiyadh: typings.tzOffset.tzOffsetStrings.AsiaSlashRiyadh = this.cast("Asia/Riyadh")
+  def AsiaSlashRiyadh: typings.tzOffset.tzOffsetStrings.AsiaSlashRiyadh = "Asia/Riyadh".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashRiyadh]
   @scala.inline
-  def AsiaSlashSeoul: typings.tzOffset.tzOffsetStrings.AsiaSlashSeoul = this.cast("Asia/Seoul")
+  def AsiaSlashSeoul: typings.tzOffset.tzOffsetStrings.AsiaSlashSeoul = "Asia/Seoul".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashSeoul]
   @scala.inline
-  def AsiaSlashShanghai: typings.tzOffset.tzOffsetStrings.AsiaSlashShanghai = this.cast("Asia/Shanghai")
+  def AsiaSlashShanghai: typings.tzOffset.tzOffsetStrings.AsiaSlashShanghai = "Asia/Shanghai".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashShanghai]
   @scala.inline
-  def AsiaSlashSingapore: typings.tzOffset.tzOffsetStrings.AsiaSlashSingapore = this.cast("Asia/Singapore")
+  def AsiaSlashSingapore: typings.tzOffset.tzOffsetStrings.AsiaSlashSingapore = "Asia/Singapore".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashSingapore]
   @scala.inline
-  def AsiaSlashSrednekolymsk: typings.tzOffset.tzOffsetStrings.AsiaSlashSrednekolymsk = this.cast("Asia/Srednekolymsk")
+  def AsiaSlashSrednekolymsk: typings.tzOffset.tzOffsetStrings.AsiaSlashSrednekolymsk = "Asia/Srednekolymsk".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashSrednekolymsk]
   @scala.inline
-  def AsiaSlashTaipei: typings.tzOffset.tzOffsetStrings.AsiaSlashTaipei = this.cast("Asia/Taipei")
+  def AsiaSlashTaipei: typings.tzOffset.tzOffsetStrings.AsiaSlashTaipei = "Asia/Taipei".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashTaipei]
   @scala.inline
-  def AsiaSlashTashkent: typings.tzOffset.tzOffsetStrings.AsiaSlashTashkent = this.cast("Asia/Tashkent")
+  def AsiaSlashTashkent: typings.tzOffset.tzOffsetStrings.AsiaSlashTashkent = "Asia/Tashkent".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashTashkent]
   @scala.inline
-  def AsiaSlashTbilisi: typings.tzOffset.tzOffsetStrings.AsiaSlashTbilisi = this.cast("Asia/Tbilisi")
+  def AsiaSlashTbilisi: typings.tzOffset.tzOffsetStrings.AsiaSlashTbilisi = "Asia/Tbilisi".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashTbilisi]
   @scala.inline
-  def AsiaSlashTehran: typings.tzOffset.tzOffsetStrings.AsiaSlashTehran = this.cast("Asia/Tehran")
+  def AsiaSlashTehran: typings.tzOffset.tzOffsetStrings.AsiaSlashTehran = "Asia/Tehran".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashTehran]
   @scala.inline
-  def AsiaSlashTokyo: typings.tzOffset.tzOffsetStrings.AsiaSlashTokyo = this.cast("Asia/Tokyo")
+  def AsiaSlashTokyo: typings.tzOffset.tzOffsetStrings.AsiaSlashTokyo = "Asia/Tokyo".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashTokyo]
   @scala.inline
-  def AsiaSlashUlaanbaatar: typings.tzOffset.tzOffsetStrings.AsiaSlashUlaanbaatar = this.cast("Asia/Ulaanbaatar")
+  def AsiaSlashUlaanbaatar: typings.tzOffset.tzOffsetStrings.AsiaSlashUlaanbaatar = "Asia/Ulaanbaatar".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashUlaanbaatar]
   @scala.inline
-  def AsiaSlashUrumqi: typings.tzOffset.tzOffsetStrings.AsiaSlashUrumqi = this.cast("Asia/Urumqi")
+  def AsiaSlashUrumqi: typings.tzOffset.tzOffsetStrings.AsiaSlashUrumqi = "Asia/Urumqi".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashUrumqi]
   @scala.inline
-  def AsiaSlashVladivostok: typings.tzOffset.tzOffsetStrings.AsiaSlashVladivostok = this.cast("Asia/Vladivostok")
+  def AsiaSlashVladivostok: typings.tzOffset.tzOffsetStrings.AsiaSlashVladivostok = "Asia/Vladivostok".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashVladivostok]
   @scala.inline
-  def AsiaSlashYakutsk: typings.tzOffset.tzOffsetStrings.AsiaSlashYakutsk = this.cast("Asia/Yakutsk")
+  def AsiaSlashYakutsk: typings.tzOffset.tzOffsetStrings.AsiaSlashYakutsk = "Asia/Yakutsk".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashYakutsk]
   @scala.inline
-  def AsiaSlashYekaterinburg: typings.tzOffset.tzOffsetStrings.AsiaSlashYekaterinburg = this.cast("Asia/Yekaterinburg")
+  def AsiaSlashYekaterinburg: typings.tzOffset.tzOffsetStrings.AsiaSlashYekaterinburg = "Asia/Yekaterinburg".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashYekaterinburg]
   @scala.inline
-  def AsiaSlashYerevan: typings.tzOffset.tzOffsetStrings.AsiaSlashYerevan = this.cast("Asia/Yerevan")
+  def AsiaSlashYerevan: typings.tzOffset.tzOffsetStrings.AsiaSlashYerevan = "Asia/Yerevan".asInstanceOf[typings.tzOffset.tzOffsetStrings.AsiaSlashYerevan]
   @scala.inline
-  def AtlanticSlashAzores: typings.tzOffset.tzOffsetStrings.AtlanticSlashAzores = this.cast("Atlantic/Azores")
+  def AtlanticSlashAzores: typings.tzOffset.tzOffsetStrings.AtlanticSlashAzores = "Atlantic/Azores".asInstanceOf[typings.tzOffset.tzOffsetStrings.AtlanticSlashAzores]
   @scala.inline
-  def AtlanticSlashCape_Verde: typings.tzOffset.tzOffsetStrings.AtlanticSlashCape_Verde = this.cast("Atlantic/Cape_Verde")
+  def AtlanticSlashCape_Verde: typings.tzOffset.tzOffsetStrings.AtlanticSlashCape_Verde = "Atlantic/Cape_Verde".asInstanceOf[typings.tzOffset.tzOffsetStrings.AtlanticSlashCape_Verde]
   @scala.inline
-  def AtlanticSlashSouth_Georgia: typings.tzOffset.tzOffsetStrings.AtlanticSlashSouth_Georgia = this.cast("Atlantic/South_Georgia")
+  def AtlanticSlashSouth_Georgia: typings.tzOffset.tzOffsetStrings.AtlanticSlashSouth_Georgia = "Atlantic/South_Georgia".asInstanceOf[typings.tzOffset.tzOffsetStrings.AtlanticSlashSouth_Georgia]
   @scala.inline
-  def AustraliaSlashAdelaide: typings.tzOffset.tzOffsetStrings.AustraliaSlashAdelaide = this.cast("Australia/Adelaide")
+  def AustraliaSlashAdelaide: typings.tzOffset.tzOffsetStrings.AustraliaSlashAdelaide = "Australia/Adelaide".asInstanceOf[typings.tzOffset.tzOffsetStrings.AustraliaSlashAdelaide]
   @scala.inline
-  def AustraliaSlashBrisbane: typings.tzOffset.tzOffsetStrings.AustraliaSlashBrisbane = this.cast("Australia/Brisbane")
+  def AustraliaSlashBrisbane: typings.tzOffset.tzOffsetStrings.AustraliaSlashBrisbane = "Australia/Brisbane".asInstanceOf[typings.tzOffset.tzOffsetStrings.AustraliaSlashBrisbane]
   @scala.inline
-  def AustraliaSlashDarwin: typings.tzOffset.tzOffsetStrings.AustraliaSlashDarwin = this.cast("Australia/Darwin")
+  def AustraliaSlashDarwin: typings.tzOffset.tzOffsetStrings.AustraliaSlashDarwin = "Australia/Darwin".asInstanceOf[typings.tzOffset.tzOffsetStrings.AustraliaSlashDarwin]
   @scala.inline
-  def AustraliaSlashHobart: typings.tzOffset.tzOffsetStrings.AustraliaSlashHobart = this.cast("Australia/Hobart")
+  def AustraliaSlashHobart: typings.tzOffset.tzOffsetStrings.AustraliaSlashHobart = "Australia/Hobart".asInstanceOf[typings.tzOffset.tzOffsetStrings.AustraliaSlashHobart]
   @scala.inline
-  def AustraliaSlashMelbourne: typings.tzOffset.tzOffsetStrings.AustraliaSlashMelbourne = this.cast("Australia/Melbourne")
+  def AustraliaSlashMelbourne: typings.tzOffset.tzOffsetStrings.AustraliaSlashMelbourne = "Australia/Melbourne".asInstanceOf[typings.tzOffset.tzOffsetStrings.AustraliaSlashMelbourne]
   @scala.inline
-  def AustraliaSlashPerth: typings.tzOffset.tzOffsetStrings.AustraliaSlashPerth = this.cast("Australia/Perth")
+  def AustraliaSlashPerth: typings.tzOffset.tzOffsetStrings.AustraliaSlashPerth = "Australia/Perth".asInstanceOf[typings.tzOffset.tzOffsetStrings.AustraliaSlashPerth]
   @scala.inline
-  def AustraliaSlashSydney: typings.tzOffset.tzOffsetStrings.AustraliaSlashSydney = this.cast("Australia/Sydney")
+  def AustraliaSlashSydney: typings.tzOffset.tzOffsetStrings.AustraliaSlashSydney = "Australia/Sydney".asInstanceOf[typings.tzOffset.tzOffsetStrings.AustraliaSlashSydney]
   @scala.inline
-  def EtcSlashGMTPlussign12: typings.tzOffset.tzOffsetStrings.EtcSlashGMTPlussign12 = this.cast("Etc/GMT+12")
+  def EtcSlashGMTPlussign12: typings.tzOffset.tzOffsetStrings.EtcSlashGMTPlussign12 = "Etc/GMT+12".asInstanceOf[typings.tzOffset.tzOffsetStrings.EtcSlashGMTPlussign12]
   @scala.inline
-  def EtcSlashUTC: typings.tzOffset.tzOffsetStrings.EtcSlashUTC = this.cast("Etc/UTC")
+  def EtcSlashUTC: typings.tzOffset.tzOffsetStrings.EtcSlashUTC = "Etc/UTC".asInstanceOf[typings.tzOffset.tzOffsetStrings.EtcSlashUTC]
   @scala.inline
-  def EuropeSlashAmsterdam: typings.tzOffset.tzOffsetStrings.EuropeSlashAmsterdam = this.cast("Europe/Amsterdam")
+  def EuropeSlashAmsterdam: typings.tzOffset.tzOffsetStrings.EuropeSlashAmsterdam = "Europe/Amsterdam".asInstanceOf[typings.tzOffset.tzOffsetStrings.EuropeSlashAmsterdam]
   @scala.inline
-  def EuropeSlashAthens: typings.tzOffset.tzOffsetStrings.EuropeSlashAthens = this.cast("Europe/Athens")
+  def EuropeSlashAthens: typings.tzOffset.tzOffsetStrings.EuropeSlashAthens = "Europe/Athens".asInstanceOf[typings.tzOffset.tzOffsetStrings.EuropeSlashAthens]
   @scala.inline
-  def EuropeSlashBelgrade: typings.tzOffset.tzOffsetStrings.EuropeSlashBelgrade = this.cast("Europe/Belgrade")
+  def EuropeSlashBelgrade: typings.tzOffset.tzOffsetStrings.EuropeSlashBelgrade = "Europe/Belgrade".asInstanceOf[typings.tzOffset.tzOffsetStrings.EuropeSlashBelgrade]
   @scala.inline
-  def EuropeSlashBerlin: typings.tzOffset.tzOffsetStrings.EuropeSlashBerlin = this.cast("Europe/Berlin")
+  def EuropeSlashBerlin: typings.tzOffset.tzOffsetStrings.EuropeSlashBerlin = "Europe/Berlin".asInstanceOf[typings.tzOffset.tzOffsetStrings.EuropeSlashBerlin]
   @scala.inline
-  def EuropeSlashBratislava: typings.tzOffset.tzOffsetStrings.EuropeSlashBratislava = this.cast("Europe/Bratislava")
+  def EuropeSlashBratislava: typings.tzOffset.tzOffsetStrings.EuropeSlashBratislava = "Europe/Bratislava".asInstanceOf[typings.tzOffset.tzOffsetStrings.EuropeSlashBratislava]
   @scala.inline
-  def EuropeSlashBrussels: typings.tzOffset.tzOffsetStrings.EuropeSlashBrussels = this.cast("Europe/Brussels")
+  def EuropeSlashBrussels: typings.tzOffset.tzOffsetStrings.EuropeSlashBrussels = "Europe/Brussels".asInstanceOf[typings.tzOffset.tzOffsetStrings.EuropeSlashBrussels]
   @scala.inline
-  def EuropeSlashBucharest: typings.tzOffset.tzOffsetStrings.EuropeSlashBucharest = this.cast("Europe/Bucharest")
+  def EuropeSlashBucharest: typings.tzOffset.tzOffsetStrings.EuropeSlashBucharest = "Europe/Bucharest".asInstanceOf[typings.tzOffset.tzOffsetStrings.EuropeSlashBucharest]
   @scala.inline
-  def EuropeSlashBudapest: typings.tzOffset.tzOffsetStrings.EuropeSlashBudapest = this.cast("Europe/Budapest")
+  def EuropeSlashBudapest: typings.tzOffset.tzOffsetStrings.EuropeSlashBudapest = "Europe/Budapest".asInstanceOf[typings.tzOffset.tzOffsetStrings.EuropeSlashBudapest]
   @scala.inline
-  def EuropeSlashCopenhagen: typings.tzOffset.tzOffsetStrings.EuropeSlashCopenhagen = this.cast("Europe/Copenhagen")
+  def EuropeSlashCopenhagen: typings.tzOffset.tzOffsetStrings.EuropeSlashCopenhagen = "Europe/Copenhagen".asInstanceOf[typings.tzOffset.tzOffsetStrings.EuropeSlashCopenhagen]
   @scala.inline
-  def EuropeSlashDublin: typings.tzOffset.tzOffsetStrings.EuropeSlashDublin = this.cast("Europe/Dublin")
+  def EuropeSlashDublin: typings.tzOffset.tzOffsetStrings.EuropeSlashDublin = "Europe/Dublin".asInstanceOf[typings.tzOffset.tzOffsetStrings.EuropeSlashDublin]
   @scala.inline
-  def EuropeSlashHelsinki: typings.tzOffset.tzOffsetStrings.EuropeSlashHelsinki = this.cast("Europe/Helsinki")
+  def EuropeSlashHelsinki: typings.tzOffset.tzOffsetStrings.EuropeSlashHelsinki = "Europe/Helsinki".asInstanceOf[typings.tzOffset.tzOffsetStrings.EuropeSlashHelsinki]
   @scala.inline
-  def EuropeSlashIstanbul: typings.tzOffset.tzOffsetStrings.EuropeSlashIstanbul = this.cast("Europe/Istanbul")
+  def EuropeSlashIstanbul: typings.tzOffset.tzOffsetStrings.EuropeSlashIstanbul = "Europe/Istanbul".asInstanceOf[typings.tzOffset.tzOffsetStrings.EuropeSlashIstanbul]
   @scala.inline
-  def EuropeSlashKaliningrad: typings.tzOffset.tzOffsetStrings.EuropeSlashKaliningrad = this.cast("Europe/Kaliningrad")
+  def EuropeSlashKaliningrad: typings.tzOffset.tzOffsetStrings.EuropeSlashKaliningrad = "Europe/Kaliningrad".asInstanceOf[typings.tzOffset.tzOffsetStrings.EuropeSlashKaliningrad]
   @scala.inline
-  def EuropeSlashKiev: typings.tzOffset.tzOffsetStrings.EuropeSlashKiev = this.cast("Europe/Kiev")
+  def EuropeSlashKiev: typings.tzOffset.tzOffsetStrings.EuropeSlashKiev = "Europe/Kiev".asInstanceOf[typings.tzOffset.tzOffsetStrings.EuropeSlashKiev]
   @scala.inline
-  def EuropeSlashLisbon: typings.tzOffset.tzOffsetStrings.EuropeSlashLisbon = this.cast("Europe/Lisbon")
+  def EuropeSlashLisbon: typings.tzOffset.tzOffsetStrings.EuropeSlashLisbon = "Europe/Lisbon".asInstanceOf[typings.tzOffset.tzOffsetStrings.EuropeSlashLisbon]
   @scala.inline
-  def EuropeSlashLjubljana: typings.tzOffset.tzOffsetStrings.EuropeSlashLjubljana = this.cast("Europe/Ljubljana")
+  def EuropeSlashLjubljana: typings.tzOffset.tzOffsetStrings.EuropeSlashLjubljana = "Europe/Ljubljana".asInstanceOf[typings.tzOffset.tzOffsetStrings.EuropeSlashLjubljana]
   @scala.inline
-  def EuropeSlashLondon: typings.tzOffset.tzOffsetStrings.EuropeSlashLondon = this.cast("Europe/London")
+  def EuropeSlashLondon: typings.tzOffset.tzOffsetStrings.EuropeSlashLondon = "Europe/London".asInstanceOf[typings.tzOffset.tzOffsetStrings.EuropeSlashLondon]
   @scala.inline
-  def EuropeSlashMadrid: typings.tzOffset.tzOffsetStrings.EuropeSlashMadrid = this.cast("Europe/Madrid")
+  def EuropeSlashMadrid: typings.tzOffset.tzOffsetStrings.EuropeSlashMadrid = "Europe/Madrid".asInstanceOf[typings.tzOffset.tzOffsetStrings.EuropeSlashMadrid]
   @scala.inline
-  def EuropeSlashMinsk: typings.tzOffset.tzOffsetStrings.EuropeSlashMinsk = this.cast("Europe/Minsk")
+  def EuropeSlashMinsk: typings.tzOffset.tzOffsetStrings.EuropeSlashMinsk = "Europe/Minsk".asInstanceOf[typings.tzOffset.tzOffsetStrings.EuropeSlashMinsk]
   @scala.inline
-  def EuropeSlashMoscow: typings.tzOffset.tzOffsetStrings.EuropeSlashMoscow = this.cast("Europe/Moscow")
+  def EuropeSlashMoscow: typings.tzOffset.tzOffsetStrings.EuropeSlashMoscow = "Europe/Moscow".asInstanceOf[typings.tzOffset.tzOffsetStrings.EuropeSlashMoscow]
   @scala.inline
-  def EuropeSlashParis: typings.tzOffset.tzOffsetStrings.EuropeSlashParis = this.cast("Europe/Paris")
+  def EuropeSlashParis: typings.tzOffset.tzOffsetStrings.EuropeSlashParis = "Europe/Paris".asInstanceOf[typings.tzOffset.tzOffsetStrings.EuropeSlashParis]
   @scala.inline
-  def EuropeSlashPrague: typings.tzOffset.tzOffsetStrings.EuropeSlashPrague = this.cast("Europe/Prague")
+  def EuropeSlashPrague: typings.tzOffset.tzOffsetStrings.EuropeSlashPrague = "Europe/Prague".asInstanceOf[typings.tzOffset.tzOffsetStrings.EuropeSlashPrague]
   @scala.inline
-  def EuropeSlashRiga: typings.tzOffset.tzOffsetStrings.EuropeSlashRiga = this.cast("Europe/Riga")
+  def EuropeSlashRiga: typings.tzOffset.tzOffsetStrings.EuropeSlashRiga = "Europe/Riga".asInstanceOf[typings.tzOffset.tzOffsetStrings.EuropeSlashRiga]
   @scala.inline
-  def EuropeSlashRome: typings.tzOffset.tzOffsetStrings.EuropeSlashRome = this.cast("Europe/Rome")
+  def EuropeSlashRome: typings.tzOffset.tzOffsetStrings.EuropeSlashRome = "Europe/Rome".asInstanceOf[typings.tzOffset.tzOffsetStrings.EuropeSlashRome]
   @scala.inline
-  def EuropeSlashSamara: typings.tzOffset.tzOffsetStrings.EuropeSlashSamara = this.cast("Europe/Samara")
+  def EuropeSlashSamara: typings.tzOffset.tzOffsetStrings.EuropeSlashSamara = "Europe/Samara".asInstanceOf[typings.tzOffset.tzOffsetStrings.EuropeSlashSamara]
   @scala.inline
-  def EuropeSlashSarajevo: typings.tzOffset.tzOffsetStrings.EuropeSlashSarajevo = this.cast("Europe/Sarajevo")
+  def EuropeSlashSarajevo: typings.tzOffset.tzOffsetStrings.EuropeSlashSarajevo = "Europe/Sarajevo".asInstanceOf[typings.tzOffset.tzOffsetStrings.EuropeSlashSarajevo]
   @scala.inline
-  def EuropeSlashSkopje: typings.tzOffset.tzOffsetStrings.EuropeSlashSkopje = this.cast("Europe/Skopje")
+  def EuropeSlashSkopje: typings.tzOffset.tzOffsetStrings.EuropeSlashSkopje = "Europe/Skopje".asInstanceOf[typings.tzOffset.tzOffsetStrings.EuropeSlashSkopje]
   @scala.inline
-  def EuropeSlashSofia: typings.tzOffset.tzOffsetStrings.EuropeSlashSofia = this.cast("Europe/Sofia")
+  def EuropeSlashSofia: typings.tzOffset.tzOffsetStrings.EuropeSlashSofia = "Europe/Sofia".asInstanceOf[typings.tzOffset.tzOffsetStrings.EuropeSlashSofia]
   @scala.inline
-  def EuropeSlashStockholm: typings.tzOffset.tzOffsetStrings.EuropeSlashStockholm = this.cast("Europe/Stockholm")
+  def EuropeSlashStockholm: typings.tzOffset.tzOffsetStrings.EuropeSlashStockholm = "Europe/Stockholm".asInstanceOf[typings.tzOffset.tzOffsetStrings.EuropeSlashStockholm]
   @scala.inline
-  def EuropeSlashTallinn: typings.tzOffset.tzOffsetStrings.EuropeSlashTallinn = this.cast("Europe/Tallinn")
+  def EuropeSlashTallinn: typings.tzOffset.tzOffsetStrings.EuropeSlashTallinn = "Europe/Tallinn".asInstanceOf[typings.tzOffset.tzOffsetStrings.EuropeSlashTallinn]
   @scala.inline
-  def EuropeSlashVienna: typings.tzOffset.tzOffsetStrings.EuropeSlashVienna = this.cast("Europe/Vienna")
+  def EuropeSlashVienna: typings.tzOffset.tzOffsetStrings.EuropeSlashVienna = "Europe/Vienna".asInstanceOf[typings.tzOffset.tzOffsetStrings.EuropeSlashVienna]
   @scala.inline
-  def EuropeSlashVilnius: typings.tzOffset.tzOffsetStrings.EuropeSlashVilnius = this.cast("Europe/Vilnius")
+  def EuropeSlashVilnius: typings.tzOffset.tzOffsetStrings.EuropeSlashVilnius = "Europe/Vilnius".asInstanceOf[typings.tzOffset.tzOffsetStrings.EuropeSlashVilnius]
   @scala.inline
-  def EuropeSlashVolgograd: typings.tzOffset.tzOffsetStrings.EuropeSlashVolgograd = this.cast("Europe/Volgograd")
+  def EuropeSlashVolgograd: typings.tzOffset.tzOffsetStrings.EuropeSlashVolgograd = "Europe/Volgograd".asInstanceOf[typings.tzOffset.tzOffsetStrings.EuropeSlashVolgograd]
   @scala.inline
-  def EuropeSlashWarsaw: typings.tzOffset.tzOffsetStrings.EuropeSlashWarsaw = this.cast("Europe/Warsaw")
+  def EuropeSlashWarsaw: typings.tzOffset.tzOffsetStrings.EuropeSlashWarsaw = "Europe/Warsaw".asInstanceOf[typings.tzOffset.tzOffsetStrings.EuropeSlashWarsaw]
   @scala.inline
-  def EuropeSlashZagreb: typings.tzOffset.tzOffsetStrings.EuropeSlashZagreb = this.cast("Europe/Zagreb")
+  def EuropeSlashZagreb: typings.tzOffset.tzOffsetStrings.EuropeSlashZagreb = "Europe/Zagreb".asInstanceOf[typings.tzOffset.tzOffsetStrings.EuropeSlashZagreb]
   @scala.inline
-  def EuropeSlashZurich: typings.tzOffset.tzOffsetStrings.EuropeSlashZurich = this.cast("Europe/Zurich")
+  def EuropeSlashZurich: typings.tzOffset.tzOffsetStrings.EuropeSlashZurich = "Europe/Zurich".asInstanceOf[typings.tzOffset.tzOffsetStrings.EuropeSlashZurich]
   @scala.inline
-  def PacificSlashApia: typings.tzOffset.tzOffsetStrings.PacificSlashApia = this.cast("Pacific/Apia")
+  def PacificSlashApia: typings.tzOffset.tzOffsetStrings.PacificSlashApia = "Pacific/Apia".asInstanceOf[typings.tzOffset.tzOffsetStrings.PacificSlashApia]
   @scala.inline
-  def PacificSlashAuckland: typings.tzOffset.tzOffsetStrings.PacificSlashAuckland = this.cast("Pacific/Auckland")
+  def PacificSlashAuckland: typings.tzOffset.tzOffsetStrings.PacificSlashAuckland = "Pacific/Auckland".asInstanceOf[typings.tzOffset.tzOffsetStrings.PacificSlashAuckland]
   @scala.inline
-  def PacificSlashChatham: typings.tzOffset.tzOffsetStrings.PacificSlashChatham = this.cast("Pacific/Chatham")
+  def PacificSlashChatham: typings.tzOffset.tzOffsetStrings.PacificSlashChatham = "Pacific/Chatham".asInstanceOf[typings.tzOffset.tzOffsetStrings.PacificSlashChatham]
   @scala.inline
-  def PacificSlashFakaofo: typings.tzOffset.tzOffsetStrings.PacificSlashFakaofo = this.cast("Pacific/Fakaofo")
+  def PacificSlashFakaofo: typings.tzOffset.tzOffsetStrings.PacificSlashFakaofo = "Pacific/Fakaofo".asInstanceOf[typings.tzOffset.tzOffsetStrings.PacificSlashFakaofo]
   @scala.inline
-  def PacificSlashFiji: typings.tzOffset.tzOffsetStrings.PacificSlashFiji = this.cast("Pacific/Fiji")
+  def PacificSlashFiji: typings.tzOffset.tzOffsetStrings.PacificSlashFiji = "Pacific/Fiji".asInstanceOf[typings.tzOffset.tzOffsetStrings.PacificSlashFiji]
   @scala.inline
-  def PacificSlashGuadalcanal: typings.tzOffset.tzOffsetStrings.PacificSlashGuadalcanal = this.cast("Pacific/Guadalcanal")
+  def PacificSlashGuadalcanal: typings.tzOffset.tzOffsetStrings.PacificSlashGuadalcanal = "Pacific/Guadalcanal".asInstanceOf[typings.tzOffset.tzOffsetStrings.PacificSlashGuadalcanal]
   @scala.inline
-  def PacificSlashGuam: typings.tzOffset.tzOffsetStrings.PacificSlashGuam = this.cast("Pacific/Guam")
+  def PacificSlashGuam: typings.tzOffset.tzOffsetStrings.PacificSlashGuam = "Pacific/Guam".asInstanceOf[typings.tzOffset.tzOffsetStrings.PacificSlashGuam]
   @scala.inline
-  def PacificSlashHonolulu: typings.tzOffset.tzOffsetStrings.PacificSlashHonolulu = this.cast("Pacific/Honolulu")
+  def PacificSlashHonolulu: typings.tzOffset.tzOffsetStrings.PacificSlashHonolulu = "Pacific/Honolulu".asInstanceOf[typings.tzOffset.tzOffsetStrings.PacificSlashHonolulu]
   @scala.inline
-  def PacificSlashMajuro: typings.tzOffset.tzOffsetStrings.PacificSlashMajuro = this.cast("Pacific/Majuro")
+  def PacificSlashMajuro: typings.tzOffset.tzOffsetStrings.PacificSlashMajuro = "Pacific/Majuro".asInstanceOf[typings.tzOffset.tzOffsetStrings.PacificSlashMajuro]
   @scala.inline
-  def PacificSlashMidway: typings.tzOffset.tzOffsetStrings.PacificSlashMidway = this.cast("Pacific/Midway")
+  def PacificSlashMidway: typings.tzOffset.tzOffsetStrings.PacificSlashMidway = "Pacific/Midway".asInstanceOf[typings.tzOffset.tzOffsetStrings.PacificSlashMidway]
   @scala.inline
-  def PacificSlashNoumea: typings.tzOffset.tzOffsetStrings.PacificSlashNoumea = this.cast("Pacific/Noumea")
+  def PacificSlashNoumea: typings.tzOffset.tzOffsetStrings.PacificSlashNoumea = "Pacific/Noumea".asInstanceOf[typings.tzOffset.tzOffsetStrings.PacificSlashNoumea]
   @scala.inline
-  def PacificSlashPago_Pago: typings.tzOffset.tzOffsetStrings.PacificSlashPago_Pago = this.cast("Pacific/Pago_Pago")
+  def PacificSlashPago_Pago: typings.tzOffset.tzOffsetStrings.PacificSlashPago_Pago = "Pacific/Pago_Pago".asInstanceOf[typings.tzOffset.tzOffsetStrings.PacificSlashPago_Pago]
   @scala.inline
-  def PacificSlashPort_Moresby: typings.tzOffset.tzOffsetStrings.PacificSlashPort_Moresby = this.cast("Pacific/Port_Moresby")
+  def PacificSlashPort_Moresby: typings.tzOffset.tzOffsetStrings.PacificSlashPort_Moresby = "Pacific/Port_Moresby".asInstanceOf[typings.tzOffset.tzOffsetStrings.PacificSlashPort_Moresby]
   @scala.inline
-  def PacificSlashTongatapu: typings.tzOffset.tzOffsetStrings.PacificSlashTongatapu = this.cast("Pacific/Tongatapu")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def PacificSlashTongatapu: typings.tzOffset.tzOffsetStrings.PacificSlashTongatapu = "Pacific/Tongatapu".asInstanceOf[typings.tzOffset.tzOffsetStrings.PacificSlashTongatapu]
 }
 

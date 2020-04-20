@@ -15,7 +15,6 @@ object IdsResource {
   @scala.inline
   def apply(ids: js.Array[String], kind: driveNumbersigngeneratedIds, space: String): IdsResource = {
     val __obj = js.Dynamic.literal(ids = ids.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], space = space.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IdsResource]
   }
 }

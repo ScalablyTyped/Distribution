@@ -17,20 +17,18 @@ trait JSONSchemaContentEncodingName extends js.Object
 
 object JSONSchemaContentEncodingName {
   @scala.inline
-  def `7bit`: typings.jsonSchemaTyped.jsonSchemaTypedStrings.`7bit` = this.cast("7bit")
+  def `7bit`: typings.jsonSchemaTyped.jsonSchemaTypedStrings.`7bit` = "7bit".asInstanceOf[typings.jsonSchemaTyped.jsonSchemaTypedStrings.`7bit`]
   @scala.inline
-  def `8bit`: typings.jsonSchemaTyped.jsonSchemaTypedStrings.`8bit` = this.cast("8bit")
+  def `8bit`: typings.jsonSchemaTyped.jsonSchemaTypedStrings.`8bit` = "8bit".asInstanceOf[typings.jsonSchemaTyped.jsonSchemaTypedStrings.`8bit`]
   @scala.inline
-  def base64: typings.jsonSchemaTyped.jsonSchemaTypedStrings.base64 = this.cast("base64")
+  def base64: typings.jsonSchemaTyped.jsonSchemaTypedStrings.base64 = "base64".asInstanceOf[typings.jsonSchemaTyped.jsonSchemaTypedStrings.base64]
   @scala.inline
-  def binary: typings.jsonSchemaTyped.jsonSchemaTypedStrings.binary = this.cast("binary")
+  def binary: typings.jsonSchemaTyped.jsonSchemaTypedStrings.binary = "binary".asInstanceOf[typings.jsonSchemaTyped.jsonSchemaTypedStrings.binary]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `ietf-token`: typings.jsonSchemaTyped.jsonSchemaTypedStrings.`ietf-token` = "ietf-token".asInstanceOf[typings.jsonSchemaTyped.jsonSchemaTypedStrings.`ietf-token`]
   @scala.inline
-  def `ietf-token`: typings.jsonSchemaTyped.jsonSchemaTypedStrings.`ietf-token` = this.cast("ietf-token")
+  def `quoted-printable`: typings.jsonSchemaTyped.jsonSchemaTypedStrings.`quoted-printable` = "quoted-printable".asInstanceOf[typings.jsonSchemaTyped.jsonSchemaTypedStrings.`quoted-printable`]
   @scala.inline
-  def `quoted-printable`: typings.jsonSchemaTyped.jsonSchemaTypedStrings.`quoted-printable` = this.cast("quoted-printable")
-  @scala.inline
-  def `x-token`: typings.jsonSchemaTyped.jsonSchemaTypedStrings.`x-token` = this.cast("x-token")
+  def `x-token`: typings.jsonSchemaTyped.jsonSchemaTypedStrings.`x-token` = "x-token".asInstanceOf[typings.jsonSchemaTyped.jsonSchemaTypedStrings.`x-token`]
 }
 

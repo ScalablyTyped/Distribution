@@ -1,6 +1,6 @@
 package typings.plotlyJs.mod
 
-import typings.plotlyJs.PartialDataTitleFont
+import typings.plotlyJs.PartialDataTitle
 import typings.plotlyJs.PartialFont
 import typings.plotlyJs.plotlyJsBooleans.`false`
 import typings.plotlyJs.plotlyJsBooleans.`true`
@@ -84,7 +84,7 @@ trait Axis extends js.Object {
   var ticktext: js.Array[String]
   var tickvals: js.Array[_]
   var tickwidth: Double
-  var title: String | PartialDataTitleFont
+  var title: String | PartialDataTitle
   var titlefont: PartialFont
   var `type`: AxisType
   var visible: Boolean
@@ -135,7 +135,7 @@ object Axis {
     ticktext: js.Array[String],
     tickvals: js.Array[_],
     tickwidth: Double,
-    title: String | PartialDataTitleFont,
+    title: String | PartialDataTitle,
     titlefont: PartialFont,
     `type`: AxisType,
     visible: Boolean,

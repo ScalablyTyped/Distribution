@@ -18,7 +18,6 @@ object Head {
   @scala.inline
   def apply[TResponse](request: AnonRegex, response: AnonData[TResponse]): Head[TResponse] = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Head[TResponse]]
   }
 }

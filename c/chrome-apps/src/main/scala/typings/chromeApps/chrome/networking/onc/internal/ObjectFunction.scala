@@ -1,12 +1,12 @@
 package typings.chromeApps.chrome.networking.onc.internal
 
-import typings.chromeApps.chromeAppsStrings.unknown_
+import typings.chromeApps.chromeAppsStrings.unknown__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.chromeApps.chromeAppsStrings.unknown_
+  - typings.chromeApps.chromeAppsStrings.unknown__
   - typings.chromeApps.chromeAppsStrings.getter
   - typings.chromeApps.chromeAppsStrings.setter
 */
@@ -14,12 +14,10 @@ trait ObjectFunction extends js.Object
 
 object ObjectFunction {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def getter: typings.chromeApps.chromeAppsStrings.getter = "getter".asInstanceOf[typings.chromeApps.chromeAppsStrings.getter]
   @scala.inline
-  def getter: typings.chromeApps.chromeAppsStrings.getter = this.cast("getter")
+  def setter: typings.chromeApps.chromeAppsStrings.setter = "setter".asInstanceOf[typings.chromeApps.chromeAppsStrings.setter]
   @scala.inline
-  def setter: typings.chromeApps.chromeAppsStrings.setter = this.cast("setter")
-  @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
+  def unknown: unknown__ = "unknown".asInstanceOf[unknown__]
 }
 

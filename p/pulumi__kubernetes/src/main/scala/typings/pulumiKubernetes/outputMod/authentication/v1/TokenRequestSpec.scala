@@ -35,7 +35,6 @@ object TokenRequestSpec {
   @scala.inline
   def apply(audiences: js.Array[String], boundObjectRef: BoundObjectReference, expirationSeconds: Double): TokenRequestSpec = {
     val __obj = js.Dynamic.literal(audiences = audiences.asInstanceOf[js.Any], boundObjectRef = boundObjectRef.asInstanceOf[js.Any], expirationSeconds = expirationSeconds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TokenRequestSpec]
   }
 }

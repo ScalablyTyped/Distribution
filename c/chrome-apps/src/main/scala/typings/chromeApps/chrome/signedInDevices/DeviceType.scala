@@ -1,6 +1,6 @@
 package typings.chromeApps.chrome.signedInDevices
 
-import typings.chromeApps.chromeAppsStrings.unknown_
+import typings.chromeApps.chromeAppsStrings.unknown__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,20 +9,18 @@ import scala.scalajs.js.annotation._
   - typings.chromeApps.chromeAppsStrings.desktop_or_laptop
   - typings.chromeApps.chromeAppsStrings.phone
   - typings.chromeApps.chromeAppsStrings.tablet
-  - typings.chromeApps.chromeAppsStrings.unknown_
+  - typings.chromeApps.chromeAppsStrings.unknown__
 */
 trait DeviceType extends js.Object
 
 object DeviceType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def desktop_or_laptop: typings.chromeApps.chromeAppsStrings.desktop_or_laptop = "desktop_or_laptop".asInstanceOf[typings.chromeApps.chromeAppsStrings.desktop_or_laptop]
   @scala.inline
-  def desktop_or_laptop: typings.chromeApps.chromeAppsStrings.desktop_or_laptop = this.cast("desktop_or_laptop")
+  def phone: typings.chromeApps.chromeAppsStrings.phone = "phone".asInstanceOf[typings.chromeApps.chromeAppsStrings.phone]
   @scala.inline
-  def phone: typings.chromeApps.chromeAppsStrings.phone = this.cast("phone")
+  def tablet: typings.chromeApps.chromeAppsStrings.tablet = "tablet".asInstanceOf[typings.chromeApps.chromeAppsStrings.tablet]
   @scala.inline
-  def tablet: typings.chromeApps.chromeAppsStrings.tablet = this.cast("tablet")
-  @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
+  def unknown: unknown__ = "unknown".asInstanceOf[unknown__]
 }
 

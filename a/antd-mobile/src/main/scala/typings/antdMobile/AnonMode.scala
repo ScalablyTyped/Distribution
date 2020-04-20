@@ -14,7 +14,6 @@ object AnonMode {
   @scala.inline
   def apply(mode: String, onLeftClick: () => Unit, prefixCls: String): AnonMode = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], onLeftClick = js.Any.fromFunction0(onLeftClick), prefixCls = prefixCls.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMode]
   }
 }

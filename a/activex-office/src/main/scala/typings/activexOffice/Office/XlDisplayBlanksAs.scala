@@ -16,12 +16,10 @@ trait XlDisplayBlanksAs extends js.Object
 
 object XlDisplayBlanksAs {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlInterpolated: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlInterpolated: `3` = this.cast(3)
+  def xlNotPlotted: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlNotPlotted: `1` = this.cast(1)
-  @scala.inline
-  def xlZero: `2` = this.cast(2)
+  def xlZero: `2` = 2.asInstanceOf[`2`]
 }
 

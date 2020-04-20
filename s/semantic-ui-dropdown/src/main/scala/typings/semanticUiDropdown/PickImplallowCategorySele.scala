@@ -13,7 +13,6 @@ object PickImplallowCategorySele {
   @scala.inline
   def apply(allowCategorySelection: Boolean): PickImplallowCategorySele = {
     val __obj = js.Dynamic.literal(allowCategorySelection = allowCategorySelection.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplallowCategorySele]
   }
 }

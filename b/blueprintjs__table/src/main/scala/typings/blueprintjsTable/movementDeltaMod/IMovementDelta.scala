@@ -15,7 +15,6 @@ object IMovementDelta {
   @scala.inline
   def apply(cols: Double, rows: Double): IMovementDelta = {
     val __obj = js.Dynamic.literal(cols = cols.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMovementDelta]
   }
 }

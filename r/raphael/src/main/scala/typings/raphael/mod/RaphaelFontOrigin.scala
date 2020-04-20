@@ -12,10 +12,8 @@ trait RaphaelFontOrigin extends js.Object
 
 object RaphaelFontOrigin {
   @scala.inline
-  def baseline: typings.raphael.raphaelStrings.baseline = this.cast("baseline")
+  def baseline: typings.raphael.raphaelStrings.baseline = "baseline".asInstanceOf[typings.raphael.raphaelStrings.baseline]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def middle: typings.raphael.raphaelStrings.middle = this.cast("middle")
+  def middle: typings.raphael.raphaelStrings.middle = "middle".asInstanceOf[typings.raphael.raphaelStrings.middle]
 }
 

@@ -13,7 +13,6 @@ object AnonInkBar {
   @scala.inline
   def apply(inkBar: Boolean, tabPane: Boolean): AnonInkBar = {
     val __obj = js.Dynamic.literal(inkBar = inkBar.asInstanceOf[js.Any], tabPane = tabPane.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonInkBar]
   }
 }

@@ -16,7 +16,6 @@ object DeleteActivationRequest {
   @scala.inline
   def apply(ActivationId: ActivationId): DeleteActivationRequest = {
     val __obj = js.Dynamic.literal(ActivationId = ActivationId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteActivationRequest]
   }
 }

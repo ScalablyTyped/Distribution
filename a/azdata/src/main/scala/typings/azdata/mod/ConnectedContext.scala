@@ -17,7 +17,6 @@ object ConnectedContext {
   @scala.inline
   def apply(connectionProfile: IConnectionProfile): ConnectedContext = {
     val __obj = js.Dynamic.literal(connectionProfile = connectionProfile.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConnectedContext]
   }
 }

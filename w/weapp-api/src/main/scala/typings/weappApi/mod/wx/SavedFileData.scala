@@ -13,7 +13,6 @@ object SavedFileData {
   @scala.inline
   def apply(savedFilePath: String): SavedFileData = {
     val __obj = js.Dynamic.literal(savedFilePath = savedFilePath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SavedFileData]
   }
 }

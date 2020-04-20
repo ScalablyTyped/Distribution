@@ -26,7 +26,6 @@ object Settings {
     storefrontCountryCode: String
   ): Settings = {
     val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any], onRestrictionsChange = js.Any.fromFunction0(onRestrictionsChange), restrictions = restrictions.asInstanceOf[js.Any], storefrontCountryCode = storefrontCountryCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Settings]
   }
 }

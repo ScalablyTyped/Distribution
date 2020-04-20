@@ -30,7 +30,7 @@ trait ReactImageGalleryProps extends js.Object {
   var items: js.Array[ReactImageGalleryItem]
   var lazyLoad: js.UndefOr[Boolean] = js.undefined
   var onClick: js.UndefOr[js.Function1[/* event */ MouseEventHandler[HTMLDivElement], Unit]] = js.undefined
-  var onErrorImage: js.UndefOr[String] = js.undefined
+  var onErrorImageURL: js.UndefOr[String] = js.undefined
   var onImageError: js.UndefOr[js.Function1[/* event */ ReactEventHandler[HTMLImageElement], Unit]] = js.undefined
   var onImageLoad: js.UndefOr[js.Function1[/* event */ ReactEventHandler[HTMLImageElement], Unit]] = js.undefined
   var onMouseLeave: js.UndefOr[js.Function1[/* event */ MouseEventHandler[HTMLDivElement], Unit]] = js.undefined
@@ -95,7 +95,7 @@ object ReactImageGalleryProps {
     isRTL: js.UndefOr[Boolean] = js.undefined,
     lazyLoad: js.UndefOr[Boolean] = js.undefined,
     onClick: /* event */ MouseEventHandler[HTMLDivElement] => Unit = null,
-    onErrorImage: String = null,
+    onErrorImageURL: String = null,
     onImageError: /* event */ ReactEventHandler[HTMLImageElement] => Unit = null,
     onImageLoad: /* event */ ReactEventHandler[HTMLImageElement] => Unit = null,
     onMouseLeave: /* event */ MouseEventHandler[HTMLDivElement] => Unit = null,
@@ -146,7 +146,7 @@ object ReactImageGalleryProps {
     if (!js.isUndefined(isRTL)) __obj.updateDynamic("isRTL")(isRTL.asInstanceOf[js.Any])
     if (!js.isUndefined(lazyLoad)) __obj.updateDynamic("lazyLoad")(lazyLoad.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (onErrorImage != null) __obj.updateDynamic("onErrorImage")(onErrorImage.asInstanceOf[js.Any])
+    if (onErrorImageURL != null) __obj.updateDynamic("onErrorImageURL")(onErrorImageURL.asInstanceOf[js.Any])
     if (onImageError != null) __obj.updateDynamic("onImageError")(js.Any.fromFunction1(onImageError))
     if (onImageLoad != null) __obj.updateDynamic("onImageLoad")(js.Any.fromFunction1(onImageLoad))
     if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))

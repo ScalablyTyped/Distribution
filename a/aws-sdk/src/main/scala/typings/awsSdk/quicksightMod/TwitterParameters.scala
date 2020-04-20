@@ -20,7 +20,6 @@ object TwitterParameters {
   @scala.inline
   def apply(MaxRows: PositiveInteger, Query: Query): TwitterParameters = {
     val __obj = js.Dynamic.literal(MaxRows = MaxRows.asInstanceOf[js.Any], Query = Query.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TwitterParameters]
   }
 }

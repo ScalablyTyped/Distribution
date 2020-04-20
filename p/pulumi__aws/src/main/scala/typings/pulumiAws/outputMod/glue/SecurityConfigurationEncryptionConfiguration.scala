@@ -22,7 +22,6 @@ object SecurityConfigurationEncryptionConfiguration {
     s3Encryption: SecurityConfigurationEncryptionConfigurationS3Encryption
   ): SecurityConfigurationEncryptionConfiguration = {
     val __obj = js.Dynamic.literal(cloudwatchEncryption = cloudwatchEncryption.asInstanceOf[js.Any], jobBookmarksEncryption = jobBookmarksEncryption.asInstanceOf[js.Any], s3Encryption = s3Encryption.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SecurityConfigurationEncryptionConfiguration]
   }
 }

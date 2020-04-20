@@ -21,7 +21,6 @@ object LinuxResource {
     getLinuxAccountViews: AnonFilter => Request_[LinuxGetLinuxAccountViewsResponse]
   ): LinuxResource = {
     val __obj = js.Dynamic.literal(getAuthorizedKeysView = js.Any.fromFunction1(getAuthorizedKeysView), getLinuxAccountViews = js.Any.fromFunction1(getLinuxAccountViews))
-  
     __obj.asInstanceOf[LinuxResource]
   }
 }

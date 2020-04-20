@@ -12,7 +12,6 @@ object Resource {
   @scala.inline
   def apply(resourcePath: String): Resource = {
     val __obj = js.Dynamic.literal(resourcePath = resourcePath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Resource]
   }
 }

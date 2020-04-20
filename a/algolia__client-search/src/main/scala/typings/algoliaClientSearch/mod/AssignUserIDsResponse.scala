@@ -15,7 +15,6 @@ object AssignUserIDsResponse {
   @scala.inline
   def apply(createdAt: String): AssignUserIDsResponse = {
     val __obj = js.Dynamic.literal(createdAt = createdAt.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssignUserIDsResponse]
   }
 }

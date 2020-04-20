@@ -13,7 +13,6 @@ object BusStation {
   @scala.inline
   def apply(name: String, position: Point): BusStation = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BusStation]
   }
 }

@@ -15,7 +15,6 @@ object GlobalXpub {
   @scala.inline
   def apply(extendedPubkey: Buffer, masterFingerprint: Buffer, path: String): GlobalXpub = {
     val __obj = js.Dynamic.literal(extendedPubkey = extendedPubkey.asInstanceOf[js.Any], masterFingerprint = masterFingerprint.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GlobalXpub]
   }
 }

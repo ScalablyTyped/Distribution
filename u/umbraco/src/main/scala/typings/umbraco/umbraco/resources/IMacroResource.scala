@@ -46,7 +46,6 @@ object IMacroResource {
     getMacroResultAsHtmlForEditor: (Double, Double, js.Array[_]) => js.Any
   ): IMacroResource = {
     val __obj = js.Dynamic.literal(getMacroParameters = js.Any.fromFunction1(getMacroParameters), getMacroResultAsHtmlForEditor = js.Any.fromFunction3(getMacroResultAsHtmlForEditor))
-  
     __obj.asInstanceOf[IMacroResource]
   }
 }

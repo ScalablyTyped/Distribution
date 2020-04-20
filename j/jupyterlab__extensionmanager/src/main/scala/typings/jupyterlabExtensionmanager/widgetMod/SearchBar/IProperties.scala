@@ -21,7 +21,6 @@ object IProperties {
   @scala.inline
   def apply(disabled: Boolean, placeholder: String, settings: ISettings): IProperties = {
     val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IProperties]
   }
 }

@@ -20,7 +20,6 @@ object AnonCurrency {
   @scala.inline
   def apply(currency: String, rates: StringDictionary[String]): AnonCurrency = {
     val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], rates = rates.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCurrency]
   }
 }

@@ -13,7 +13,6 @@ object AnonLeftImageOffset {
   @scala.inline
   def apply(leftImageOffset: Double, topImageOffset: Double): AnonLeftImageOffset = {
     val __obj = js.Dynamic.literal(leftImageOffset = leftImageOffset.asInstanceOf[js.Any], topImageOffset = topImageOffset.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLeftImageOffset]
   }
 }

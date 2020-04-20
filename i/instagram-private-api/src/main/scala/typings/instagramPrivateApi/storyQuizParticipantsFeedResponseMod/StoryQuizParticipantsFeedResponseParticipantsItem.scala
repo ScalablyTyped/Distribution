@@ -14,7 +14,6 @@ object StoryQuizParticipantsFeedResponseParticipantsItem {
   @scala.inline
   def apply(answer: Double, ts: Double, user: StoryQuizParticipantsFeedResponseUser): StoryQuizParticipantsFeedResponseParticipantsItem = {
     val __obj = js.Dynamic.literal(answer = answer.asInstanceOf[js.Any], ts = ts.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StoryQuizParticipantsFeedResponseParticipantsItem]
   }
 }

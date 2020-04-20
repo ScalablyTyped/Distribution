@@ -20,16 +20,14 @@ trait SignatureProviderDetail extends js.Object
 
 object SignatureProviderDetail {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def sigprovdetHashAlgorithm: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def sigprovdetHashAlgorithm: `1` = this.cast(1)
+  def sigprovdetUIOnly: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def sigprovdetUIOnly: `2` = this.cast(2)
+  def sigprovdetUrl: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def sigprovdetUrl: `0` = this.cast(0)
+  def sigprovdetUseOfficeStampUI: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def sigprovdetUseOfficeStampUI: `4` = this.cast(4)
-  @scala.inline
-  def sigprovdetUseOfficeUI: `3` = this.cast(3)
+  def sigprovdetUseOfficeUI: `3` = 3.asInstanceOf[`3`]
 }
 

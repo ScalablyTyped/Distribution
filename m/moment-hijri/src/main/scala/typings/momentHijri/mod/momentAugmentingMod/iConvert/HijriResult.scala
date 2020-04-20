@@ -14,7 +14,6 @@ object HijriResult {
   @scala.inline
   def apply(hd: Double, hm: Double, hy: Double): HijriResult = {
     val __obj = js.Dynamic.literal(hd = hd.asInstanceOf[js.Any], hm = hm.asInstanceOf[js.Any], hy = hy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HijriResult]
   }
 }

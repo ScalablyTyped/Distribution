@@ -13,7 +13,6 @@ object AnonPartialLinkText {
   @scala.inline
   def apply(partialLinkText: String): AnonPartialLinkText = {
     val __obj = js.Dynamic.literal(partialLinkText = partialLinkText.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPartialLinkText]
   }
 }

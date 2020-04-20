@@ -27,7 +27,6 @@ object Encoding {
   @scala.inline
   def apply(xmlAttributeEncode: String => String, xmlEncode: String => String): Encoding = {
     val __obj = js.Dynamic.literal(xmlAttributeEncode = js.Any.fromFunction1(xmlAttributeEncode), xmlEncode = js.Any.fromFunction1(xmlEncode))
-  
     __obj.asInstanceOf[Encoding]
   }
 }

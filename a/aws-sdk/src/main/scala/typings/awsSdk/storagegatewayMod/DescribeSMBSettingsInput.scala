@@ -13,7 +13,6 @@ object DescribeSMBSettingsInput {
   @scala.inline
   def apply(GatewayARN: GatewayARN): DescribeSMBSettingsInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeSMBSettingsInput]
   }
 }

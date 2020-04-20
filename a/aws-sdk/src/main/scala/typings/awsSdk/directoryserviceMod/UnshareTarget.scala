@@ -20,7 +20,6 @@ object UnshareTarget {
   @scala.inline
   def apply(Id: TargetId, Type: TargetType): UnshareTarget = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnshareTarget]
   }
 }

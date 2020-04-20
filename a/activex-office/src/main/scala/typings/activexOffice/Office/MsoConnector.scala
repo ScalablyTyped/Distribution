@@ -14,10 +14,8 @@ trait MsoConnector extends js.Object
 
 object MsoConnector {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoConnectorAnd: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoConnectorAnd: `1` = this.cast(1)
-  @scala.inline
-  def msoConnectorOr: `2` = this.cast(2)
+  def msoConnectorOr: `2` = 2.asInstanceOf[`2`]
 }
 

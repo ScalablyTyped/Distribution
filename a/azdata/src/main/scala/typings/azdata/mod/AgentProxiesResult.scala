@@ -12,7 +12,6 @@ object AgentProxiesResult {
   @scala.inline
   def apply(errorMessage: String, proxies: js.Array[AgentProxyInfo], success: Boolean): AgentProxiesResult = {
     val __obj = js.Dynamic.literal(errorMessage = errorMessage.asInstanceOf[js.Any], proxies = proxies.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AgentProxiesResult]
   }
 }

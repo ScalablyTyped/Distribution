@@ -24,20 +24,18 @@ trait MsoCustomXMLNodeType extends js.Object
 
 object MsoCustomXMLNodeType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoCustomXMLNodeAttribute: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoCustomXMLNodeAttribute: `2` = this.cast(2)
+  def msoCustomXMLNodeCData: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoCustomXMLNodeCData: `4` = this.cast(4)
+  def msoCustomXMLNodeComment: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def msoCustomXMLNodeComment: `8` = this.cast(8)
+  def msoCustomXMLNodeDocument: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def msoCustomXMLNodeDocument: `9` = this.cast(9)
+  def msoCustomXMLNodeElement: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoCustomXMLNodeElement: `1` = this.cast(1)
+  def msoCustomXMLNodeProcessingInstruction: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def msoCustomXMLNodeProcessingInstruction: `7` = this.cast(7)
-  @scala.inline
-  def msoCustomXMLNodeText: `3` = this.cast(3)
+  def msoCustomXMLNodeText: `3` = 3.asInstanceOf[`3`]
 }
 

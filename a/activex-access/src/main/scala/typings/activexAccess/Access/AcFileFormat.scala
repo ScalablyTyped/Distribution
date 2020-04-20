@@ -22,18 +22,16 @@ trait AcFileFormat extends js.Object
 
 object AcFileFormat {
   @scala.inline
-  def acFileFormatAccess2: `2` = this.cast(2)
+  def acFileFormatAccess2: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def acFileFormatAccess2000: `9` = this.cast(9)
+  def acFileFormatAccess2000: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def acFileFormatAccess2002: `10` = this.cast(10)
+  def acFileFormatAccess2002: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def acFileFormatAccess2007: `12` = this.cast(12)
+  def acFileFormatAccess2007: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def acFileFormatAccess95: `7` = this.cast(7)
+  def acFileFormatAccess95: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def acFileFormatAccess97: `8` = this.cast(8)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def acFileFormatAccess97: `8` = 8.asInstanceOf[`8`]
 }
 

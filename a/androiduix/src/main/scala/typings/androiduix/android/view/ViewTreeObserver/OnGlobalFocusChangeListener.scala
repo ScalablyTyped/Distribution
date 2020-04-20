@@ -13,7 +13,6 @@ object OnGlobalFocusChangeListener {
   @scala.inline
   def apply(onGlobalFocusChanged: (View, View) => js.Any): OnGlobalFocusChangeListener = {
     val __obj = js.Dynamic.literal(onGlobalFocusChanged = js.Any.fromFunction2(onGlobalFocusChanged))
-  
     __obj.asInstanceOf[OnGlobalFocusChangeListener]
   }
 }

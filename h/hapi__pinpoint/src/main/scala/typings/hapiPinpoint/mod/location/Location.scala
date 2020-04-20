@@ -19,7 +19,6 @@ object Location {
   @scala.inline
   def apply(filename: String, line: Double): Location = {
     val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Location]
   }
 }

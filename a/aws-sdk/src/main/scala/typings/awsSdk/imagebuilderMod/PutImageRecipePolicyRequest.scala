@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PutImageRecipePolicyRequest extends js.Object {
   /**
-    *  The Amazon Resource Name (ARN) of the image recipe that this policy should be applied to. 
+    * The Amazon Resource Name (ARN) of the image recipe that this policy should be applied to. 
     */
   var imageRecipeArn: ImageRecipeArn = js.native
   /**
-    *  The policy to apply. 
+    * The policy to apply. 
     */
   var policy: ResourcePolicyDocument = js.native
 }
@@ -20,7 +20,6 @@ object PutImageRecipePolicyRequest {
   @scala.inline
   def apply(imageRecipeArn: ImageRecipeArn, policy: ResourcePolicyDocument): PutImageRecipePolicyRequest = {
     val __obj = js.Dynamic.literal(imageRecipeArn = imageRecipeArn.asInstanceOf[js.Any], policy = policy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutImageRecipePolicyRequest]
   }
 }

@@ -15,14 +15,12 @@ trait UndefinedState extends js.Object
 
 object UndefinedState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def locked_portal: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.locked_portal = "locked_portal".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.locked_portal]
   @scala.inline
-  def locked_portal: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.locked_portal = this.cast("locked_portal")
+  def not_captive: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.not_captive = "not_captive".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.not_captive]
   @scala.inline
-  def not_captive: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.not_captive = this.cast("not_captive")
+  def unknown: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unknown = "unknown".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unknown]
   @scala.inline
-  def unknown: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unknown = this.cast("unknown")
-  @scala.inline
-  def unlocked_portal: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unlocked_portal = this.cast("unlocked_portal")
+  def unlocked_portal: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unlocked_portal = "unlocked_portal".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unlocked_portal]
 }
 

@@ -15,7 +15,6 @@ object AnonShWorksheetTargetPivotTable {
   @scala.inline
   def apply(Sh: Worksheet, Target: PivotTable): AnonShWorksheetTargetPivotTable = {
     val __obj = js.Dynamic.literal(Sh = Sh.asInstanceOf[js.Any], Target = Target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonShWorksheetTargetPivotTable]
   }
 }

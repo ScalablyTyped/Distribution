@@ -52,7 +52,6 @@ object AnonTags {
     title: String
   ): AnonTags = {
     val __obj = js.Dynamic.literal(categoryId = categoryId.asInstanceOf[js.Any], channelId = channelId.asInstanceOf[js.Any], channelTitle = channelTitle.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], publishedAt = publishedAt.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], thumbnails = thumbnails.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTags]
   }
 }

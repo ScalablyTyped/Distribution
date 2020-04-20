@@ -24,20 +24,18 @@ trait WdTablePosition extends js.Object
 
 object WdTablePosition {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdTableBottom: `-999997` = -999997.asInstanceOf[`-999997`]
   @scala.inline
-  def wdTableBottom: `-999997` = this.cast(-999997)
+  def wdTableCenter: `-999995` = -999995.asInstanceOf[`-999995`]
   @scala.inline
-  def wdTableCenter: `-999995` = this.cast(-999995)
+  def wdTableInside: `-999994` = -999994.asInstanceOf[`-999994`]
   @scala.inline
-  def wdTableInside: `-999994` = this.cast(-999994)
+  def wdTableLeft: `-999998` = -999998.asInstanceOf[`-999998`]
   @scala.inline
-  def wdTableLeft: `-999998` = this.cast(-999998)
+  def wdTableOutside: `-999993` = -999993.asInstanceOf[`-999993`]
   @scala.inline
-  def wdTableOutside: `-999993` = this.cast(-999993)
+  def wdTableRight: `-999996` = -999996.asInstanceOf[`-999996`]
   @scala.inline
-  def wdTableRight: `-999996` = this.cast(-999996)
-  @scala.inline
-  def wdTableTop: `-999999` = this.cast(-999999)
+  def wdTableTop: `-999999` = -999999.asInstanceOf[`-999999`]
 }
 

@@ -15,7 +15,6 @@ object Watch {
   @scala.inline
   def apply[T](close: () => Unit, getProgram: () => T): Watch[T] = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), getProgram = js.Any.fromFunction0(getProgram))
-  
     __obj.asInstanceOf[Watch[T]]
   }
 }

@@ -14,10 +14,8 @@ trait ViewFlags extends js.Object
 
 object ViewFlags {
   @scala.inline
-  def None: `0` = this.cast(0)
+  def None: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def OnPush: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def OnPush: `2` = 2.asInstanceOf[`2`]
 }
 

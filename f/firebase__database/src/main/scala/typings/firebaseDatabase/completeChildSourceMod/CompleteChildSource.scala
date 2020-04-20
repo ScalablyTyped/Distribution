@@ -29,7 +29,6 @@ object CompleteChildSource {
     getCompleteChild: String => Node | Null
   ): CompleteChildSource = {
     val __obj = js.Dynamic.literal(getChildAfterChild = js.Any.fromFunction3(getChildAfterChild), getCompleteChild = js.Any.fromFunction1(getCompleteChild))
-  
     __obj.asInstanceOf[CompleteChildSource]
   }
 }

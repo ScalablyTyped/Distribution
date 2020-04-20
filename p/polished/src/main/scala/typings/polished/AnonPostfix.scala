@@ -15,7 +15,6 @@ object AnonPostfix {
   @scala.inline
   def apply(postfix: AnonArgCount, regSymbol: Exclamationmark, symbol: Exclamationmark): AnonPostfix = {
     val __obj = js.Dynamic.literal(postfix = postfix.asInstanceOf[js.Any], regSymbol = regSymbol.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPostfix]
   }
 }

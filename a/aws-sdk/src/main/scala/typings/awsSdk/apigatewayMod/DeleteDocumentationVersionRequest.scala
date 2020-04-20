@@ -20,7 +20,6 @@ object DeleteDocumentationVersionRequest {
   @scala.inline
   def apply(documentationVersion: String, restApiId: String): DeleteDocumentationVersionRequest = {
     val __obj = js.Dynamic.literal(documentationVersion = documentationVersion.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteDocumentationVersionRequest]
   }
 }

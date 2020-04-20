@@ -13,7 +13,6 @@ object SequentialConfig {
   @scala.inline
   def apply(layers: js.Array[LayerSerialization]): SequentialConfig = {
     val __obj = js.Dynamic.literal(layers = layers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SequentialConfig]
   }
 }

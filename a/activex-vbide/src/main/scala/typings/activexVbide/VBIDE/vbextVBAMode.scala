@@ -16,12 +16,10 @@ trait vbextVBAMode extends js.Object
 
 object vbextVBAMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def vbext_vm_Break: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def vbext_vm_Break: `1` = this.cast(1)
+  def vbext_vm_Design: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def vbext_vm_Design: `2` = this.cast(2)
-  @scala.inline
-  def vbext_vm_Run: `0` = this.cast(0)
+  def vbext_vm_Run: `0` = 0.asInstanceOf[`0`]
 }
 

@@ -12,10 +12,8 @@ trait ManagedAppAvailability extends js.Object
 
 object ManagedAppAvailability {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def global: typings.microsoftGraph.microsoftGraphStrings.global = "global".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.global]
   @scala.inline
-  def global: typings.microsoftGraph.microsoftGraphStrings.global = this.cast("global")
-  @scala.inline
-  def lineOfBusiness: typings.microsoftGraph.microsoftGraphStrings.lineOfBusiness = this.cast("lineOfBusiness")
+  def lineOfBusiness: typings.microsoftGraph.microsoftGraphStrings.lineOfBusiness = "lineOfBusiness".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.lineOfBusiness]
 }
 

@@ -16,7 +16,6 @@ object IRenderComponent {
   @scala.inline
   def apply[TProps](children: TProps => Element): IRenderComponent[TProps] = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-  
     __obj.asInstanceOf[IRenderComponent[TProps]]
   }
 }

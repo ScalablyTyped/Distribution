@@ -24,20 +24,18 @@ trait WdAnimation extends js.Object
 
 object WdAnimation {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdAnimationBlinkingBackground: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdAnimationBlinkingBackground: `2` = this.cast(2)
+  def wdAnimationLasVegasLights: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdAnimationLasVegasLights: `1` = this.cast(1)
+  def wdAnimationMarchingBlackAnts: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdAnimationMarchingBlackAnts: `4` = this.cast(4)
+  def wdAnimationMarchingRedAnts: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdAnimationMarchingRedAnts: `5` = this.cast(5)
+  def wdAnimationNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdAnimationNone: `0` = this.cast(0)
+  def wdAnimationShimmer: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdAnimationShimmer: `6` = this.cast(6)
-  @scala.inline
-  def wdAnimationSparkleText: `3` = this.cast(3)
+  def wdAnimationSparkleText: `3` = 3.asInstanceOf[`3`]
 }
 

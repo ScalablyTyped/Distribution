@@ -18,22 +18,22 @@ trait reactNativeSvgChartsProps {
   def BarChartProps: typings.reactNativeSvgCharts.mod.BarChartProps.type = typings.reactNativeSvgCharts.mod.BarChartProps
   type BarChartProps[T] = typings.reactNativeSvgCharts.mod.BarChartProps[T]
   @scala.inline
-  def DecoratorsHorizontalLineProps: HorizontalLineProps.type = typings.reactNativeSvgCharts.mod.HorizontalLineProps
+  def DecoratorsHorizontalLineProps: HorizontalLineProps.type = HorizontalLineProps
   type DecoratorsHorizontalLineProps = HorizontalLineProps
   @scala.inline
-  def DecoratorsPointProps: PointProps.type = typings.reactNativeSvgCharts.mod.PointProps
+  def DecoratorsPointProps: PointProps.type = PointProps
   type DecoratorsPointProps = PointProps
   @scala.inline
-  def DecoratorsTooltipProps: TooltipProps.type = typings.reactNativeSvgCharts.mod.TooltipProps
+  def DecoratorsTooltipProps: TooltipProps.type = TooltipProps
   type DecoratorsTooltipProps = TooltipProps
   @scala.inline
   def GridProps: typings.reactNativeSvgCharts.mod.GridProps.type = typings.reactNativeSvgCharts.mod.GridProps
   type GridProps[T] = typings.reactNativeSvgCharts.mod.GridProps[T]
   @scala.inline
-  def LineChartProps: ChartProps.type = typings.reactNativeSvgCharts.mod.ChartProps
+  def LineChartProps: ChartProps.type = ChartProps
   type LineChartProps[T] = ChartProps[T]
   @scala.inline
-  def PathProps: AnimatedPathProps.type = typings.reactNativeSvgCharts.mod.AnimatedPathProps
+  def PathProps: AnimatedPathProps.type = AnimatedPathProps
   type PathProps = AnimatedPathProps
   @scala.inline
   def PieChartProps: typings.reactNativeSvgCharts.mod.PieChartProps.type = typings.reactNativeSvgCharts.mod.PieChartProps

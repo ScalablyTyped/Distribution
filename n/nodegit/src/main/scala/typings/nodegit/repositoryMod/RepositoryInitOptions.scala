@@ -28,7 +28,6 @@ object RepositoryInitOptions {
     workdirPath: String
   ): RepositoryInitOptions = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], initialHead = initialHead.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], originUrl = originUrl.asInstanceOf[js.Any], templatePath = templatePath.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], workdirPath = workdirPath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RepositoryInitOptions]
   }
 }

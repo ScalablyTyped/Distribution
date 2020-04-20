@@ -20,26 +20,24 @@ trait FabClassKey extends js.Object
 
 object FabClassKey {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def colorInherit: typings.materialUiCore.materialUiCoreStrings.colorInherit = "colorInherit".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.colorInherit]
   @scala.inline
-  def colorInherit: typings.materialUiCore.materialUiCoreStrings.colorInherit = this.cast("colorInherit")
+  def disabled: typings.materialUiCore.materialUiCoreStrings.disabled = "disabled".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.disabled]
   @scala.inline
-  def disabled: typings.materialUiCore.materialUiCoreStrings.disabled = this.cast("disabled")
+  def extended: typings.materialUiCore.materialUiCoreStrings.extended = "extended".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.extended]
   @scala.inline
-  def extended: typings.materialUiCore.materialUiCoreStrings.extended = this.cast("extended")
+  def focusVisible: typings.materialUiCore.materialUiCoreStrings.focusVisible = "focusVisible".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.focusVisible]
   @scala.inline
-  def focusVisible: typings.materialUiCore.materialUiCoreStrings.focusVisible = this.cast("focusVisible")
+  def label: typings.materialUiCore.materialUiCoreStrings.label = "label".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.label]
   @scala.inline
-  def label: typings.materialUiCore.materialUiCoreStrings.label = this.cast("label")
+  def primary: typings.materialUiCore.materialUiCoreStrings.primary = "primary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.primary]
   @scala.inline
-  def primary: typings.materialUiCore.materialUiCoreStrings.primary = this.cast("primary")
+  def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
   @scala.inline
-  def root: typings.materialUiCore.materialUiCoreStrings.root = this.cast("root")
+  def secondary: typings.materialUiCore.materialUiCoreStrings.secondary = "secondary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.secondary]
   @scala.inline
-  def secondary: typings.materialUiCore.materialUiCoreStrings.secondary = this.cast("secondary")
+  def sizeMedium: typings.materialUiCore.materialUiCoreStrings.sizeMedium = "sizeMedium".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.sizeMedium]
   @scala.inline
-  def sizeMedium: typings.materialUiCore.materialUiCoreStrings.sizeMedium = this.cast("sizeMedium")
-  @scala.inline
-  def sizeSmall: typings.materialUiCore.materialUiCoreStrings.sizeSmall = this.cast("sizeSmall")
+  def sizeSmall: typings.materialUiCore.materialUiCoreStrings.sizeSmall = "sizeSmall".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.sizeSmall]
 }
 

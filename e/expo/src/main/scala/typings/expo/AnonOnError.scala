@@ -15,7 +15,6 @@ object AnonOnError {
   @scala.inline
   def apply(onError: Null, onFinish: Null, startAsync: Null): AnonOnError = {
     val __obj = js.Dynamic.literal(onError = onError.asInstanceOf[js.Any], onFinish = onFinish.asInstanceOf[js.Any], startAsync = startAsync.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOnError]
   }
 }

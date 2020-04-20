@@ -25,17 +25,17 @@ class DataGridExportToCSVButton protected () extends GridControlBarButton {
   ) = this()
   @JSName("model")
   var model_FDataGridExportToCSVButton: IModel = js.native
-  def decimalSeparator(): String = js.native
+  def decimalSeparator: String = js.native
   def decimalSeparator(newValue: String): js.Any = js.native
-  def delimiter(): String = js.native
+  def delimiter: String = js.native
   def delimiter(newValue: String): js.Any = js.native
-  def generateExcelHint(): Boolean = js.native
+  def generateExcelHint: Boolean = js.native
   def generateExcelHint(newValue: Boolean): js.Any = js.native
-  def groupSeparator(): String = js.native
+  def groupSeparator: String = js.native
   def groupSeparator(newValue: String): js.Any = js.native
-  def maxNumberOfRows(): Double = js.native
+  def maxNumberOfRows: Double = js.native
   def maxNumberOfRows(newValue: Double): js.Any = js.native
-  def useGridDateFormat(): Boolean = js.native
+  def useGridDateFormat: Boolean = js.native
   def useGridDateFormat(newValue: Boolean): js.Any = js.native
 }
 

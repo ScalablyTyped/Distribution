@@ -22,18 +22,16 @@ trait AcExportXMLOtherFlags extends js.Object
 
 object AcExportXMLOtherFlags {
   @scala.inline
-  def acEmbedSchema: `1` = this.cast(1)
+  def acEmbedSchema: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def acExcludePrimaryKeyAndIndexes: `2` = this.cast(2)
+  def acExcludePrimaryKeyAndIndexes: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def acExportAllTableAndFieldProperties: `32` = this.cast(32)
+  def acExportAllTableAndFieldProperties: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def acLiveReportSource: `8` = this.cast(8)
+  def acLiveReportSource: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def acPersistReportML: `16` = this.cast(16)
+  def acPersistReportML: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def acRunFromServer: `4` = this.cast(4)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def acRunFromServer: `4` = 4.asInstanceOf[`4`]
 }
 

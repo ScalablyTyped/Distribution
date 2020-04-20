@@ -37,7 +37,6 @@ object ThemeManager {
     onDidChangeActiveThemes: js.Function0[Unit] => Disposable
   ): ThemeManager = {
     val __obj = js.Dynamic.literal(getActiveThemeNames = js.Any.fromFunction0(getActiveThemeNames), getActiveThemes = js.Any.fromFunction0(getActiveThemes), getEnabledThemeNames = js.Any.fromFunction0(getEnabledThemeNames), getLoadedThemeNames = js.Any.fromFunction0(getLoadedThemeNames), getLoadedThemes = js.Any.fromFunction0(getLoadedThemes), onDidChangeActiveThemes = js.Any.fromFunction1(onDidChangeActiveThemes))
-  
     __obj.asInstanceOf[ThemeManager]
   }
 }

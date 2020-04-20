@@ -28,7 +28,6 @@ object scopeMap {
   @scala.inline
   def apply(dijit: js.Array[_], dojo: js.Array[_], dojox: js.Array[_]): scopeMap = {
     val __obj = js.Dynamic.literal(dijit = dijit.asInstanceOf[js.Any], dojo = dojo.asInstanceOf[js.Any], dojox = dojox.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[scopeMap]
   }
 }

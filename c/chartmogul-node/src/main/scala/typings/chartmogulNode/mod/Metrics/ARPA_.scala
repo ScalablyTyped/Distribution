@@ -13,7 +13,6 @@ object ARPA_ {
   @scala.inline
   def apply(arpa: Double, date: String): ARPA_ = {
     val __obj = js.Dynamic.literal(arpa = arpa.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ARPA_]
   }
 }

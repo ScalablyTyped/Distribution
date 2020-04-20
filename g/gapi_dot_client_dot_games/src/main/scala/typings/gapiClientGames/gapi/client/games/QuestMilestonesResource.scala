@@ -18,7 +18,6 @@ object QuestMilestonesResource {
   @scala.inline
   def apply(claim: AnonMilestoneId => Request_[Unit]): QuestMilestonesResource = {
     val __obj = js.Dynamic.literal(claim = js.Any.fromFunction1(claim))
-  
     __obj.asInstanceOf[QuestMilestonesResource]
   }
 }

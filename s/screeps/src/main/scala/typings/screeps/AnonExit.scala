@@ -13,7 +13,6 @@ object AnonExit {
   @scala.inline
   def apply(exit: ExitConstant, room: String): AnonExit = {
     val __obj = js.Dynamic.literal(exit = exit.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonExit]
   }
 }

@@ -14,7 +14,6 @@ object HslColor {
   @scala.inline
   def apply(hue: Double, lightness: Double, saturation: Double): HslColor = {
     val __obj = js.Dynamic.literal(hue = hue.asInstanceOf[js.Any], lightness = lightness.asInstanceOf[js.Any], saturation = saturation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HslColor]
   }
 }

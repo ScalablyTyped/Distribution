@@ -26,8 +26,8 @@ abstract class CodeActionParameterValue protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FCodeActionParameterValue: IModel = js.native
-  def containerAsJavaActionParameterMapping(): JavaActionParameterMapping = js.native
-  def containerAsJavaScriptActionParameterMapping(): JavaScriptActionParameterMapping = js.native
+  def containerAsJavaActionParameterMapping: JavaActionParameterMapping = js.native
+  def containerAsJavaScriptActionParameterMapping: JavaScriptActionParameterMapping = js.native
 }
 
 /* static members */

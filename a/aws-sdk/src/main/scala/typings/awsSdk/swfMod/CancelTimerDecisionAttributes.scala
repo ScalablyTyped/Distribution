@@ -16,7 +16,6 @@ object CancelTimerDecisionAttributes {
   @scala.inline
   def apply(timerId: TimerId): CancelTimerDecisionAttributes = {
     val __obj = js.Dynamic.literal(timerId = timerId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CancelTimerDecisionAttributes]
   }
 }

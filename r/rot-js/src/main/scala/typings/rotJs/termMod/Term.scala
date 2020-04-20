@@ -33,7 +33,6 @@ object Term {
     setOptions: DisplayOptions => Unit
   ): Term = {
     val __obj = js.Dynamic.literal(_cursor = _cursor.asInstanceOf[js.Any], _lastColor = _lastColor.asInstanceOf[js.Any], _offset = _offset.asInstanceOf[js.Any], _options = _options.asInstanceOf[js.Any], clear = js.Any.fromFunction0(clear), computeFontSize = js.Any.fromFunction0(computeFontSize), computeSize = js.Any.fromFunction0(computeSize), draw = js.Any.fromFunction2(draw), eventToPosition = js.Any.fromFunction2(eventToPosition), getContainer = js.Any.fromFunction0(getContainer), schedule = js.Any.fromFunction1(schedule), setOptions = js.Any.fromFunction1(setOptions))
-  
     __obj.asInstanceOf[Term]
   }
 }

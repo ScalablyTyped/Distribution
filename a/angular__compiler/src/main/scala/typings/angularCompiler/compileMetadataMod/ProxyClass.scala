@@ -12,7 +12,6 @@ object ProxyClass {
   @scala.inline
   def apply(setDelegate: js.Any => Unit): ProxyClass = {
     val __obj = js.Dynamic.literal(setDelegate = js.Any.fromFunction1(setDelegate))
-  
     __obj.asInstanceOf[ProxyClass]
   }
 }

@@ -16,7 +16,6 @@ object ModBan {
   @scala.inline
   def apply(duration: Double, moderator: String, reason: String, ref: String, username: String): ModBan = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], moderator = moderator.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ModBan]
   }
 }

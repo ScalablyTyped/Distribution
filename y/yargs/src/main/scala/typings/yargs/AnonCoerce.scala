@@ -14,7 +14,6 @@ object AnonCoerce {
     coerce: js.Any => /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any
   ): AnonCoerce = {
     val __obj = js.Dynamic.literal(coerce = js.Any.fromFunction1(coerce))
-  
     __obj.asInstanceOf[AnonCoerce]
   }
 }

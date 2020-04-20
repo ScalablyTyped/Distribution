@@ -16,18 +16,16 @@ trait SocketType extends js.Object
 
 object SocketType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def tcp: typings.fridaGum.fridaGumStrings.tcp = "tcp".asInstanceOf[typings.fridaGum.fridaGumStrings.tcp]
   @scala.inline
-  def tcp: typings.fridaGum.fridaGumStrings.tcp = this.cast("tcp")
+  def tcp6: typings.fridaGum.fridaGumStrings.tcp6 = "tcp6".asInstanceOf[typings.fridaGum.fridaGumStrings.tcp6]
   @scala.inline
-  def tcp6: typings.fridaGum.fridaGumStrings.tcp6 = this.cast("tcp6")
+  def udp: typings.fridaGum.fridaGumStrings.udp = "udp".asInstanceOf[typings.fridaGum.fridaGumStrings.udp]
   @scala.inline
-  def udp: typings.fridaGum.fridaGumStrings.udp = this.cast("udp")
+  def udp6: typings.fridaGum.fridaGumStrings.udp6 = "udp6".asInstanceOf[typings.fridaGum.fridaGumStrings.udp6]
   @scala.inline
-  def udp6: typings.fridaGum.fridaGumStrings.udp6 = this.cast("udp6")
+  def unixColondgram: typings.fridaGum.fridaGumStrings.unixColondgram = "unix:dgram".asInstanceOf[typings.fridaGum.fridaGumStrings.unixColondgram]
   @scala.inline
-  def unixColondgram: typings.fridaGum.fridaGumStrings.unixColondgram = this.cast("unix:dgram")
-  @scala.inline
-  def unixColonstream: typings.fridaGum.fridaGumStrings.unixColonstream = this.cast("unix:stream")
+  def unixColonstream: typings.fridaGum.fridaGumStrings.unixColonstream = "unix:stream".asInstanceOf[typings.fridaGum.fridaGumStrings.unixColonstream]
 }
 

@@ -58,7 +58,6 @@ object NetworkPolicySpec {
     policyTypes: js.Array[String]
   ): NetworkPolicySpec = {
     val __obj = js.Dynamic.literal(egress = egress.asInstanceOf[js.Any], ingress = ingress.asInstanceOf[js.Any], podSelector = podSelector.asInstanceOf[js.Any], policyTypes = policyTypes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NetworkPolicySpec]
   }
 }

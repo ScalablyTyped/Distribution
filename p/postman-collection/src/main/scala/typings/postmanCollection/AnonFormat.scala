@@ -13,7 +13,6 @@ object AnonFormat {
   @scala.inline
   def apply(format: String, source: String): AnonFormat = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFormat]
   }
 }

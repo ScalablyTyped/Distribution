@@ -25,7 +25,6 @@ object DateObj {
     today: Boolean
   ): DateObj = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], nextMonth = nextMonth.asInstanceOf[js.Any], prevMonth = prevMonth.asInstanceOf[js.Any], selectable = selectable.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], today = today.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DateObj]
   }
 }

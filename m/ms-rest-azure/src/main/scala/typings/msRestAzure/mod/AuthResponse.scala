@@ -16,7 +16,6 @@ object AuthResponse {
     subscriptions: js.Array[LinkedSubscription]
   ): AuthResponse = {
     val __obj = js.Dynamic.literal(credentials = credentials.asInstanceOf[js.Any], subscriptions = subscriptions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AuthResponse]
   }
 }

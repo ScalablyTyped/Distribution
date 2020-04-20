@@ -12,10 +12,8 @@ trait sizeType extends js.Object
 
 object sizeType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def normal: typings.escPosEncoder.escPosEncoderStrings.normal = "normal".asInstanceOf[typings.escPosEncoder.escPosEncoderStrings.normal]
   @scala.inline
-  def normal: typings.escPosEncoder.escPosEncoderStrings.normal = this.cast("normal")
-  @scala.inline
-  def small: typings.escPosEncoder.escPosEncoderStrings.small = this.cast("small")
+  def small: typings.escPosEncoder.escPosEncoderStrings.small = "small".asInstanceOf[typings.escPosEncoder.escPosEncoderStrings.small]
 }
 

@@ -16,12 +16,14 @@ class ColorSliderBase protected ()
   extends Component[IColorSliderProps, IColorSliderState, js.Any]
      with IColorSlider {
   def this(props: IColorSliderProps) = this()
-  var _events: js.Any = js.native
+  var _disposables: js.Any = js.native
+  var _disposeListeners: js.Any = js.native
+  val _maxValue: js.Any = js.native
   var _onKeyDown: js.Any = js.native
   var _onMouseDown: js.Any = js.native
   var _onMouseMove: js.Any = js.native
-  var _onMouseUp: js.Any = js.native
   var _root: js.Any = js.native
+  val _type: js.Any = js.native
   var _updateValue: js.Any = js.native
   /** Current value of the slider. */
   /* CompleteClass */

@@ -13,7 +13,6 @@ object AnonProcessor {
   @scala.inline
   def apply[THandler, TProcessor](Processor: AnonInstantiable[THandler, TProcessor]): AnonProcessor[THandler, TProcessor] = {
     val __obj = js.Dynamic.literal(Processor = Processor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonProcessor[THandler, TProcessor]]
   }
 }

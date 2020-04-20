@@ -22,7 +22,6 @@ object PikadayI18nConfig {
     weekdaysShort: js.Array[String]
   ): PikadayI18nConfig = {
     val __obj = js.Dynamic.literal(months = months.asInstanceOf[js.Any], nextMonth = nextMonth.asInstanceOf[js.Any], previousMonth = previousMonth.asInstanceOf[js.Any], weekdays = weekdays.asInstanceOf[js.Any], weekdaysShort = weekdaysShort.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PikadayI18nConfig]
   }
 }

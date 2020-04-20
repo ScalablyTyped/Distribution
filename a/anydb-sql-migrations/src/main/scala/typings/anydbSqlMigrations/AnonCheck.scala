@@ -27,7 +27,6 @@ object AnonCheck {
     undoLast: () => ^[_]
   ): AnonCheck = {
     val __obj = js.Dynamic.literal(check = js.Any.fromFunction1(check), drop = js.Any.fromFunction0(drop), execMigrations = js.Any.fromFunction1(execMigrations), migrate = js.Any.fromFunction0(migrate), run = js.Any.fromFunction0(run), undoLast = js.Any.fromFunction0(undoLast))
-  
     __obj.asInstanceOf[AnonCheck]
   }
 }

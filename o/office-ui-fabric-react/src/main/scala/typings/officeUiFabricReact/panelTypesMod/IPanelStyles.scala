@@ -8,8 +8,9 @@ import scala.scalajs.js.annotation._
 trait IPanelStyles extends js.Object {
   /**
     * Style for the close button IconButton element.
+    * @deprecated Use `subComponentStyles.closeButton` instead.
     */
-  var closeButton: IStyle
+  var closeButton: js.UndefOr[IStyle] = js.undefined
   /**
     * Style for the navigation container element.
     */
@@ -62,11 +63,16 @@ trait IPanelStyles extends js.Object {
     * Style for the scrollable content area container element.
     */
   var scrollableContent: IStyle
+  /**
+    * Styling for subcomponents.
+    */
+  var subComponentStyles: IPanelSubComponentStyles
 }
 
 object IPanelStyles {
   @scala.inline
   def apply(
+    subComponentStyles: IPanelSubComponentStyles,
     closeButton: IStyle = null,
     commands: IStyle = null,
     content: IStyle = null,
@@ -82,7 +88,7 @@ object IPanelStyles {
     root: IStyle = null,
     scrollableContent: IStyle = null
   ): IPanelStyles = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(subComponentStyles = subComponentStyles.asInstanceOf[js.Any])
     if (closeButton != null) __obj.updateDynamic("closeButton")(closeButton.asInstanceOf[js.Any])
     if (commands != null) __obj.updateDynamic("commands")(commands.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])

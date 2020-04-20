@@ -12,7 +12,6 @@ object ICoreWindowDialogFactory {
   @scala.inline
   def apply(createWithTitle: String => CoreWindowDialog): ICoreWindowDialogFactory = {
     val __obj = js.Dynamic.literal(createWithTitle = js.Any.fromFunction1(createWithTitle))
-  
     __obj.asInstanceOf[ICoreWindowDialogFactory]
   }
 }

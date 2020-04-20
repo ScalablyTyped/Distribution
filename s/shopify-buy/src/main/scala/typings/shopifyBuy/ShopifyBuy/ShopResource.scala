@@ -13,7 +13,6 @@ object ShopResource {
   @scala.inline
   def apply(fetchInfo: () => js.Promise[Shop], fetchPolicies: () => js.Promise[Shop]): ShopResource = {
     val __obj = js.Dynamic.literal(fetchInfo = js.Any.fromFunction0(fetchInfo), fetchPolicies = js.Any.fromFunction0(fetchPolicies))
-  
     __obj.asInstanceOf[ShopResource]
   }
 }

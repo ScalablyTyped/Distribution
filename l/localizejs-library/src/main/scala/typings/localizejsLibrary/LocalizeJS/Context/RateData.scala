@@ -14,7 +14,6 @@ object RateData {
   @scala.inline
   def apply(fromCurrency: String, rate: String, toCurrency: String): RateData = {
     val __obj = js.Dynamic.literal(fromCurrency = fromCurrency.asInstanceOf[js.Any], rate = rate.asInstanceOf[js.Any], toCurrency = toCurrency.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RateData]
   }
 }

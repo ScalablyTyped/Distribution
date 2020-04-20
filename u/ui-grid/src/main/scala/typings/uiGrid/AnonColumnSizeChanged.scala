@@ -19,7 +19,6 @@ object AnonColumnSizeChanged {
   @scala.inline
   def apply(columnSizeChanged: (IScope, columnSizeChangedHandler) => Unit): AnonColumnSizeChanged = {
     val __obj = js.Dynamic.literal(columnSizeChanged = js.Any.fromFunction2(columnSizeChanged))
-  
     __obj.asInstanceOf[AnonColumnSizeChanged]
   }
 }

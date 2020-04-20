@@ -16,7 +16,6 @@ object TransactGetItem {
   @scala.inline
   def apply(Get: Get): TransactGetItem = {
     val __obj = js.Dynamic.literal(Get = Get.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TransactGetItem]
   }
 }

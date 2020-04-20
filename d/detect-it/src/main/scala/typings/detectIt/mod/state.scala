@@ -24,7 +24,6 @@ object state {
     detectTouchEvents: detectTouchEvents
   ): state = {
     val __obj = js.Dynamic.literal(detectHover = detectHover.asInstanceOf[js.Any], detectPassiveEvents = detectPassiveEvents.asInstanceOf[js.Any], detectPointer = detectPointer.asInstanceOf[js.Any], detectTouchEvents = detectTouchEvents.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[state]
   }
 }

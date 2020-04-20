@@ -12,7 +12,6 @@ object FinderIterator {
   @scala.inline
   def apply(next: () => FindResult): FinderIterator = {
     val __obj = js.Dynamic.literal(next = js.Any.fromFunction0(next))
-  
     __obj.asInstanceOf[FinderIterator]
   }
 }

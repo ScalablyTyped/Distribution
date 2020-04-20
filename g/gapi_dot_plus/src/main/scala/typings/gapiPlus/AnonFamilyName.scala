@@ -24,7 +24,6 @@ object AnonFamilyName {
     middleName: String
   ): AnonFamilyName = {
     val __obj = js.Dynamic.literal(familyName = familyName.asInstanceOf[js.Any], formatted = formatted.asInstanceOf[js.Any], givenName = givenName.asInstanceOf[js.Any], honorificPrefix = honorificPrefix.asInstanceOf[js.Any], honorificSuffix = honorificSuffix.asInstanceOf[js.Any], middleName = middleName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFamilyName]
   }
 }

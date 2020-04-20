@@ -12,7 +12,6 @@ object AnonStorystickerids {
   @scala.inline
   def apply(story_sticker_ids: String): AnonStorystickerids = {
     val __obj = js.Dynamic.literal(story_sticker_ids = story_sticker_ids.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonStorystickerids]
   }
 }

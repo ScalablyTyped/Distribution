@@ -22,7 +22,6 @@ object AnonBYNCNY {
     TWD: js.Array[String]
   ): AnonBYNCNY = {
     val __obj = js.Dynamic.literal(BYN = BYN.asInstanceOf[js.Any], CNY = CNY.asInstanceOf[js.Any], ILP = ILP.asInstanceOf[js.Any], THB = THB.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBYNCNY]
   }
 }

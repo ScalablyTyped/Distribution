@@ -96,13 +96,13 @@ object firebaseDatabaseStrings {
   @scala.inline
   def `5`: `5` = "5".asInstanceOf[`5`]
   @scala.inline
-  def Spacechild_added: Spacechild_added = " child_added".asInstanceOf[Spacechild_added]
+  def Spacechild_added: Spacechild_added = (" child_added").asInstanceOf[Spacechild_added]
   @scala.inline
-  def Spacechild_changed: Spacechild_changed = " child_changed".asInstanceOf[Spacechild_changed]
+  def Spacechild_changed: Spacechild_changed = (" child_changed").asInstanceOf[Spacechild_changed]
   @scala.inline
-  def Spacechild_moved: Spacechild_moved = " child_moved".asInstanceOf[Spacechild_moved]
+  def Spacechild_moved: Spacechild_moved = (" child_moved").asInstanceOf[Spacechild_moved]
   @scala.inline
-  def Spacechild_removed: Spacechild_removed = " child_removed".asInstanceOf[Spacechild_removed]
+  def Spacechild_removed: Spacechild_removed = (" child_removed").asInstanceOf[Spacechild_removed]
   @scala.inline
   def `[MAX_NAME]`: `[MAX_NAME]` = "[MAX_NAME]".asInstanceOf[`[MAX_NAME]`]
   @scala.inline

@@ -24,7 +24,6 @@ object bidiutils {
   @scala.inline
   def apply(reverseMatrix: (js.Any, js.Any, js.Any, js.Any) => Unit): bidiutils = {
     val __obj = js.Dynamic.literal(reverseMatrix = js.Any.fromFunction4(reverseMatrix))
-  
     __obj.asInstanceOf[bidiutils]
   }
 }

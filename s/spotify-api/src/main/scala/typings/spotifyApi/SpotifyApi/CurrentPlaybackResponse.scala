@@ -1,5 +1,8 @@
 package typings.spotifyApi.SpotifyApi
 
+import typings.spotifyApi.spotifyApiStrings.context
+import typings.spotifyApi.spotifyApiStrings.off
+import typings.spotifyApi.spotifyApiStrings.track
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +16,7 @@ object CurrentPlaybackResponse {
   def apply(
     device: UserDevice,
     is_playing: Boolean,
-    repeat_state: PlaybackRepeatState,
+    repeat_state: off | track | context,
     shuffle_state: Boolean,
     timestamp: Double,
     context: ContextObject = null,

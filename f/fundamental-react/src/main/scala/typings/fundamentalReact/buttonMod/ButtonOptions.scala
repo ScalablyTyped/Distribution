@@ -12,10 +12,8 @@ trait ButtonOptions extends js.Object
 
 object ButtonOptions {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def emphasized: typings.fundamentalReact.fundamentalReactStrings.emphasized = "emphasized".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.emphasized]
   @scala.inline
-  def emphasized: typings.fundamentalReact.fundamentalReactStrings.emphasized = this.cast("emphasized")
-  @scala.inline
-  def transparent: typings.fundamentalReact.fundamentalReactStrings.transparent = this.cast("transparent")
+  def transparent: typings.fundamentalReact.fundamentalReactStrings.transparent = "transparent".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.transparent]
 }
 

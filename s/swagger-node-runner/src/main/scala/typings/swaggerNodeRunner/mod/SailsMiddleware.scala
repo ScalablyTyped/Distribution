@@ -19,7 +19,6 @@ object SailsMiddleware {
     runner: Runner
   ): SailsMiddleware = {
     val __obj = js.Dynamic.literal(chain = js.Any.fromFunction0(chain), runner = runner.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SailsMiddleware]
   }
 }

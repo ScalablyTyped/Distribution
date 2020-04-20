@@ -28,24 +28,22 @@ trait WdLineWidth extends js.Object
 
 object WdLineWidth {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdLineWidth025pt: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdLineWidth025pt: `2` = this.cast(2)
+  def wdLineWidth050pt: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdLineWidth050pt: `4` = this.cast(4)
+  def wdLineWidth075pt: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdLineWidth075pt: `6` = this.cast(6)
+  def wdLineWidth100pt: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def wdLineWidth100pt: `8` = this.cast(8)
+  def wdLineWidth150pt: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def wdLineWidth150pt: `12` = this.cast(12)
+  def wdLineWidth225pt: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def wdLineWidth225pt: `18` = this.cast(18)
+  def wdLineWidth300pt: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def wdLineWidth300pt: `24` = this.cast(24)
+  def wdLineWidth450pt: `36` = 36.asInstanceOf[`36`]
   @scala.inline
-  def wdLineWidth450pt: `36` = this.cast(36)
-  @scala.inline
-  def wdLineWidth600pt: `48` = this.cast(48)
+  def wdLineWidth600pt: `48` = 48.asInstanceOf[`48`]
 }
 

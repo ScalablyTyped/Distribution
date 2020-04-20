@@ -18,7 +18,6 @@ object OfflineErrorCallbackObject {
   @scala.inline
   def apply(debugMessage: String, errorCode: Double, message: String): OfflineErrorCallbackObject = {
     val __obj = js.Dynamic.literal(debugMessage = debugMessage.asInstanceOf[js.Any], errorCode = errorCode.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OfflineErrorCallbackObject]
   }
 }

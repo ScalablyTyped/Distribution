@@ -13,12 +13,10 @@ trait KeyType extends js.Object
 
 object KeyType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `private`: typings.std.stdStrings.`private` = "private".asInstanceOf[typings.std.stdStrings.`private`]
   @scala.inline
-  def `private`: typings.std.stdStrings.`private` = this.cast("private")
+  def public: typings.std.stdStrings.public = "public".asInstanceOf[typings.std.stdStrings.public]
   @scala.inline
-  def public: typings.std.stdStrings.public = this.cast("public")
-  @scala.inline
-  def secret: typings.std.stdStrings.secret = this.cast("secret")
+  def secret: typings.std.stdStrings.secret = "secret".asInstanceOf[typings.std.stdStrings.secret]
 }
 

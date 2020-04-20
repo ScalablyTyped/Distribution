@@ -18,22 +18,20 @@ trait HTMLDlgFlag extends js.Object
 
 object HTMLDlgFlag {
   @scala.inline
-  def HTMLDlgFlag0: `0` = this.cast(0)
+  def HTMLDlgFlag0: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def HTMLDlgFlag1: `1` = this.cast(1)
+  def HTMLDlgFlag1: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def HTMLDlgFlagNo: `0` = this.cast(0)
+  def HTMLDlgFlagNo: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def HTMLDlgFlagNotSet: `-1` = this.cast(-1)
+  def HTMLDlgFlagNotSet: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def HTMLDlgFlagOff: `0` = this.cast(0)
+  def HTMLDlgFlagOff: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def HTMLDlgFlagOn: `1` = this.cast(1)
+  def HTMLDlgFlagOn: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def HTMLDlgFlagYes: `1` = this.cast(1)
+  def HTMLDlgFlagYes: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def HTMLDlgFlag_Max: `2147483647` = this.cast(2147483647)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def HTMLDlgFlag_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

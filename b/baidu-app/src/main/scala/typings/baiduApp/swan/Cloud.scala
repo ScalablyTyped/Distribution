@@ -26,7 +26,6 @@ object Cloud {
   @scala.inline
   def apply(collection: String => js.Object, database: AnonEnv => js.Object, init: InitCloudOptions => Unit): Cloud = {
     val __obj = js.Dynamic.literal(collection = js.Any.fromFunction1(collection), database = js.Any.fromFunction1(database), init = js.Any.fromFunction1(init))
-  
     __obj.asInstanceOf[Cloud]
   }
 }

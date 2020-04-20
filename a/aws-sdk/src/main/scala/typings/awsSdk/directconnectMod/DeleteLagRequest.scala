@@ -16,7 +16,6 @@ object DeleteLagRequest {
   @scala.inline
   def apply(lagId: LagId): DeleteLagRequest = {
     val __obj = js.Dynamic.literal(lagId = lagId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteLagRequest]
   }
 }

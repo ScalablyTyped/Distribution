@@ -13,7 +13,6 @@ object PickImplsearchDelay {
   @scala.inline
   def apply(searchDelay: Double): PickImplsearchDelay = {
     val __obj = js.Dynamic.literal(searchDelay = searchDelay.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplsearchDelay]
   }
 }

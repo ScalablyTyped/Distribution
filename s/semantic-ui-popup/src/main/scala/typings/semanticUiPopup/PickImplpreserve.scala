@@ -13,7 +13,6 @@ object PickImplpreserve {
   @scala.inline
   def apply(preserve: Boolean): PickImplpreserve = {
     val __obj = js.Dynamic.literal(preserve = preserve.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplpreserve]
   }
 }

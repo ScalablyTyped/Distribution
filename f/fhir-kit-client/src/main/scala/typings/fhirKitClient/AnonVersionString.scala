@@ -1,6 +1,6 @@
 package typings.fhirKitClient
 
-import typings.fhirKitClient.fhirKitClientStrings.ClinicalImpression
+import typings.fhirKitClient.fhirKitClientStrings.AppointmentResponse
 import typings.request.mod.Headers
 import typings.request.mod.Options
 import scala.scalajs.js
@@ -11,7 +11,7 @@ trait AnonVersionString extends js.Object {
   var headers: js.UndefOr[Headers] = js.undefined
   var id: String
   var options: js.UndefOr[Options] = js.undefined
-  var resourceType: ClinicalImpression
+  var resourceType: AppointmentResponse
   var version: String
 }
 
@@ -19,7 +19,7 @@ object AnonVersionString {
   @scala.inline
   def apply(
     id: String,
-    resourceType: ClinicalImpression,
+    resourceType: AppointmentResponse,
     version: String,
     headers: Headers = null,
     options: Options = null

@@ -63,8 +63,8 @@ object menusMod extends js.Object {
       @JSName("model")
       var model_FMenuDocument: IModel = js.native
       @JSName("containerAsFolderBase")
-      def containerAsFolderBase_MMenuDocument(): FolderBase = js.native
-      def itemCollection(): MenuItemCollection = js.native
+      def containerAsFolderBase_MMenuDocument: FolderBase = js.native
+      def itemCollection: MenuItemCollection = js.native
       def itemCollection(newValue: MenuItemCollection): js.Any = js.native
     }
     
@@ -83,14 +83,14 @@ object menusMod extends js.Object {
       ) = this()
       @JSName("model")
       var model_FMenuItem: IModel = js.native
-      def action(): ClientAction = js.native
+      def action: ClientAction = js.native
       def action(newValue: ClientAction): js.Any = js.native
-      def caption(): Text = js.native
+      def caption: Text = js.native
       def caption(newValue: Text): js.Any = js.native
       def icon(): js.Any = js.native
       def icon(newValue: Icon): js.Any = js.native
       @JSName("icon")
-      def icon_Union(): Icon | Null = js.native
+      def icon_Union: Icon | Null = js.native
     }
     
     @js.native
@@ -119,10 +119,10 @@ object menusMod extends js.Object {
       ) = this()
       @JSName("model")
       var model_FMenuItemContainer: IModel = js.native
-      def containerAsMenuDocument(): MenuDocument = js.native
-      def containerAsMenuItemContainer(): MenuItemContainer = js.native
-      def containerAsNavigationProfile(): NavigationProfile = js.native
-      def items(): IList[MenuItem] = js.native
+      def containerAsMenuDocument: MenuDocument = js.native
+      def containerAsMenuItemContainer: MenuItemContainer = js.native
+      def containerAsNavigationProfile: NavigationProfile = js.native
+      def items: IList[MenuItem] = js.native
     }
     
     /* static members */

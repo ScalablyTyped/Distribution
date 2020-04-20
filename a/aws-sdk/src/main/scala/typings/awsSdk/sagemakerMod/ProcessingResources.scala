@@ -16,7 +16,6 @@ object ProcessingResources {
   @scala.inline
   def apply(ClusterConfig: ProcessingClusterConfig): ProcessingResources = {
     val __obj = js.Dynamic.literal(ClusterConfig = ClusterConfig.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProcessingResources]
   }
 }

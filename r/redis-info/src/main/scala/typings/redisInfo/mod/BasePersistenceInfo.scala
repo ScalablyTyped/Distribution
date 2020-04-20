@@ -40,7 +40,6 @@ object BasePersistenceInfo {
     rdb_last_save_time: String
   ): BasePersistenceInfo = {
     val __obj = js.Dynamic.literal(aof_current_rewrite_time_sec = aof_current_rewrite_time_sec.asInstanceOf[js.Any], aof_last_bgrewrite_status = aof_last_bgrewrite_status.asInstanceOf[js.Any], aof_last_cow_size = aof_last_cow_size.asInstanceOf[js.Any], aof_last_rewrite_time_sec = aof_last_rewrite_time_sec.asInstanceOf[js.Any], aof_last_write_status = aof_last_write_status.asInstanceOf[js.Any], aof_rewrite_in_progress = aof_rewrite_in_progress.asInstanceOf[js.Any], aof_rewrite_scheduled = aof_rewrite_scheduled.asInstanceOf[js.Any], rdb_bgsave_in_progress = rdb_bgsave_in_progress.asInstanceOf[js.Any], rdb_changes_since_last_save = rdb_changes_since_last_save.asInstanceOf[js.Any], rdb_current_bgsave_time_sec = rdb_current_bgsave_time_sec.asInstanceOf[js.Any], rdb_last_bgsave_status = rdb_last_bgsave_status.asInstanceOf[js.Any], rdb_last_bgsave_time_sec = rdb_last_bgsave_time_sec.asInstanceOf[js.Any], rdb_last_cow_size = rdb_last_cow_size.asInstanceOf[js.Any], rdb_last_save_time = rdb_last_save_time.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BasePersistenceInfo]
   }
 }

@@ -23,7 +23,6 @@ object AnonAddEventListener {
     tagName: String
   ): AnonAddEventListener = {
     val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction0(addEventListener), dispatchEvent = js.Any.fromFunction1(dispatchEvent), getAttribute = js.Any.fromFunction1(getAttribute), removeEventListener = js.Any.fromFunction0(removeEventListener), tagName = tagName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAddEventListener]
   }
 }

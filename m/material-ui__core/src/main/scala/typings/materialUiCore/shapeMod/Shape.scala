@@ -13,7 +13,6 @@ object Shape {
   @scala.inline
   def apply(borderRadius: Double): Shape = {
     val __obj = js.Dynamic.literal(borderRadius = borderRadius.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Shape]
   }
 }

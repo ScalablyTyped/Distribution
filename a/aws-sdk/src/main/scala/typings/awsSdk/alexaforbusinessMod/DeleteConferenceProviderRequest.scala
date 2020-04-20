@@ -16,7 +16,6 @@ object DeleteConferenceProviderRequest {
   @scala.inline
   def apply(ConferenceProviderArn: Arn): DeleteConferenceProviderRequest = {
     val __obj = js.Dynamic.literal(ConferenceProviderArn = ConferenceProviderArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteConferenceProviderRequest]
   }
 }

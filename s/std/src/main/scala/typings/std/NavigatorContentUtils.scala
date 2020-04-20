@@ -16,7 +16,6 @@ object NavigatorContentUtils {
     unregisterProtocolHandler: (java.lang.String, java.lang.String) => Unit
   ): NavigatorContentUtils = {
     val __obj = js.Dynamic.literal(registerProtocolHandler = js.Any.fromFunction3(registerProtocolHandler), unregisterProtocolHandler = js.Any.fromFunction2(unregisterProtocolHandler))
-  
     __obj.asInstanceOf[NavigatorContentUtils]
   }
 }

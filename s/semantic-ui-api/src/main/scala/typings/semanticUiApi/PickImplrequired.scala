@@ -14,7 +14,6 @@ object PickImplrequired {
   @scala.inline
   def apply(required: RegExp): PickImplrequired = {
     val __obj = js.Dynamic.literal(required = required.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplrequired]
   }
 }

@@ -440,444 +440,442 @@ trait MsoLanguageID extends js.Object
 
 object MsoLanguageID {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoLanguageIDAfrikaans: `1078` = 1078.asInstanceOf[`1078`]
   @scala.inline
-  def msoLanguageIDAfrikaans: `1078` = this.cast(1078)
+  def msoLanguageIDAlbanian: `1052` = 1052.asInstanceOf[`1052`]
   @scala.inline
-  def msoLanguageIDAlbanian: `1052` = this.cast(1052)
+  def msoLanguageIDAmharic: `1118` = 1118.asInstanceOf[`1118`]
   @scala.inline
-  def msoLanguageIDAmharic: `1118` = this.cast(1118)
+  def msoLanguageIDArabic: `1025` = 1025.asInstanceOf[`1025`]
   @scala.inline
-  def msoLanguageIDArabic: `1025` = this.cast(1025)
+  def msoLanguageIDArabicAlgeria: `5121` = 5121.asInstanceOf[`5121`]
   @scala.inline
-  def msoLanguageIDArabicAlgeria: `5121` = this.cast(5121)
+  def msoLanguageIDArabicBahrain: `15361` = 15361.asInstanceOf[`15361`]
   @scala.inline
-  def msoLanguageIDArabicBahrain: `15361` = this.cast(15361)
+  def msoLanguageIDArabicEgypt: `3073` = 3073.asInstanceOf[`3073`]
   @scala.inline
-  def msoLanguageIDArabicEgypt: `3073` = this.cast(3073)
+  def msoLanguageIDArabicIraq: `2049` = 2049.asInstanceOf[`2049`]
   @scala.inline
-  def msoLanguageIDArabicIraq: `2049` = this.cast(2049)
+  def msoLanguageIDArabicJordan: `11265` = 11265.asInstanceOf[`11265`]
   @scala.inline
-  def msoLanguageIDArabicJordan: `11265` = this.cast(11265)
+  def msoLanguageIDArabicKuwait: `13313` = 13313.asInstanceOf[`13313`]
   @scala.inline
-  def msoLanguageIDArabicKuwait: `13313` = this.cast(13313)
+  def msoLanguageIDArabicLebanon: `12289` = 12289.asInstanceOf[`12289`]
   @scala.inline
-  def msoLanguageIDArabicLebanon: `12289` = this.cast(12289)
+  def msoLanguageIDArabicLibya: `4097` = 4097.asInstanceOf[`4097`]
   @scala.inline
-  def msoLanguageIDArabicLibya: `4097` = this.cast(4097)
+  def msoLanguageIDArabicMorocco: `6145` = 6145.asInstanceOf[`6145`]
   @scala.inline
-  def msoLanguageIDArabicMorocco: `6145` = this.cast(6145)
+  def msoLanguageIDArabicOman: `8193` = 8193.asInstanceOf[`8193`]
   @scala.inline
-  def msoLanguageIDArabicOman: `8193` = this.cast(8193)
+  def msoLanguageIDArabicQatar: `16385` = 16385.asInstanceOf[`16385`]
   @scala.inline
-  def msoLanguageIDArabicQatar: `16385` = this.cast(16385)
+  def msoLanguageIDArabicSyria: `10241` = 10241.asInstanceOf[`10241`]
   @scala.inline
-  def msoLanguageIDArabicSyria: `10241` = this.cast(10241)
+  def msoLanguageIDArabicTunisia: `7169` = 7169.asInstanceOf[`7169`]
   @scala.inline
-  def msoLanguageIDArabicTunisia: `7169` = this.cast(7169)
+  def msoLanguageIDArabicUAE: `14337` = 14337.asInstanceOf[`14337`]
   @scala.inline
-  def msoLanguageIDArabicUAE: `14337` = this.cast(14337)
+  def msoLanguageIDArabicYemen: `9217` = 9217.asInstanceOf[`9217`]
   @scala.inline
-  def msoLanguageIDArabicYemen: `9217` = this.cast(9217)
+  def msoLanguageIDArmenian: `1067` = 1067.asInstanceOf[`1067`]
   @scala.inline
-  def msoLanguageIDArmenian: `1067` = this.cast(1067)
+  def msoLanguageIDAssamese: `1101` = 1101.asInstanceOf[`1101`]
   @scala.inline
-  def msoLanguageIDAssamese: `1101` = this.cast(1101)
+  def msoLanguageIDAzeriCyrillic: `2092` = 2092.asInstanceOf[`2092`]
   @scala.inline
-  def msoLanguageIDAzeriCyrillic: `2092` = this.cast(2092)
+  def msoLanguageIDAzeriLatin: `1068` = 1068.asInstanceOf[`1068`]
   @scala.inline
-  def msoLanguageIDAzeriLatin: `1068` = this.cast(1068)
+  def msoLanguageIDBasque: `1069` = 1069.asInstanceOf[`1069`]
   @scala.inline
-  def msoLanguageIDBasque: `1069` = this.cast(1069)
+  def msoLanguageIDBelgianDutch: `2067` = 2067.asInstanceOf[`2067`]
   @scala.inline
-  def msoLanguageIDBelgianDutch: `2067` = this.cast(2067)
+  def msoLanguageIDBelgianFrench: `2060` = 2060.asInstanceOf[`2060`]
   @scala.inline
-  def msoLanguageIDBelgianFrench: `2060` = this.cast(2060)
+  def msoLanguageIDBengali: `1093` = 1093.asInstanceOf[`1093`]
   @scala.inline
-  def msoLanguageIDBengali: `1093` = this.cast(1093)
+  def msoLanguageIDBosnian: `4122` = 4122.asInstanceOf[`4122`]
   @scala.inline
-  def msoLanguageIDBosnian: `4122` = this.cast(4122)
+  def msoLanguageIDBosnianBosniaHerzegovinaCyrillic: `8218` = 8218.asInstanceOf[`8218`]
   @scala.inline
-  def msoLanguageIDBosnianBosniaHerzegovinaCyrillic: `8218` = this.cast(8218)
+  def msoLanguageIDBosnianBosniaHerzegovinaLatin: `5146` = 5146.asInstanceOf[`5146`]
   @scala.inline
-  def msoLanguageIDBosnianBosniaHerzegovinaLatin: `5146` = this.cast(5146)
+  def msoLanguageIDBrazilianPortuguese: `1046` = 1046.asInstanceOf[`1046`]
   @scala.inline
-  def msoLanguageIDBrazilianPortuguese: `1046` = this.cast(1046)
+  def msoLanguageIDBulgarian: `1026` = 1026.asInstanceOf[`1026`]
   @scala.inline
-  def msoLanguageIDBulgarian: `1026` = this.cast(1026)
+  def msoLanguageIDBurmese: `1109` = 1109.asInstanceOf[`1109`]
   @scala.inline
-  def msoLanguageIDBurmese: `1109` = this.cast(1109)
+  def msoLanguageIDByelorussian: `1059` = 1059.asInstanceOf[`1059`]
   @scala.inline
-  def msoLanguageIDByelorussian: `1059` = this.cast(1059)
+  def msoLanguageIDCatalan: `1027` = 1027.asInstanceOf[`1027`]
   @scala.inline
-  def msoLanguageIDCatalan: `1027` = this.cast(1027)
+  def msoLanguageIDCherokee: `1116` = 1116.asInstanceOf[`1116`]
   @scala.inline
-  def msoLanguageIDCherokee: `1116` = this.cast(1116)
+  def msoLanguageIDChineseHongKongSAR: `3076` = 3076.asInstanceOf[`3076`]
   @scala.inline
-  def msoLanguageIDChineseHongKongSAR: `3076` = this.cast(3076)
+  def msoLanguageIDChineseMacaoSAR: `5124` = 5124.asInstanceOf[`5124`]
   @scala.inline
-  def msoLanguageIDChineseMacaoSAR: `5124` = this.cast(5124)
+  def msoLanguageIDChineseSingapore: `4100` = 4100.asInstanceOf[`4100`]
   @scala.inline
-  def msoLanguageIDChineseSingapore: `4100` = this.cast(4100)
+  def msoLanguageIDCroatian: `1050` = 1050.asInstanceOf[`1050`]
   @scala.inline
-  def msoLanguageIDCroatian: `1050` = this.cast(1050)
+  def msoLanguageIDCzech: `1029` = 1029.asInstanceOf[`1029`]
   @scala.inline
-  def msoLanguageIDCzech: `1029` = this.cast(1029)
+  def msoLanguageIDDanish: `1030` = 1030.asInstanceOf[`1030`]
   @scala.inline
-  def msoLanguageIDDanish: `1030` = this.cast(1030)
+  def msoLanguageIDDivehi: `1125` = 1125.asInstanceOf[`1125`]
   @scala.inline
-  def msoLanguageIDDivehi: `1125` = this.cast(1125)
+  def msoLanguageIDDutch: `1043` = 1043.asInstanceOf[`1043`]
   @scala.inline
-  def msoLanguageIDDutch: `1043` = this.cast(1043)
+  def msoLanguageIDDzongkhaBhutan: `2129` = 2129.asInstanceOf[`2129`]
   @scala.inline
-  def msoLanguageIDDzongkhaBhutan: `2129` = this.cast(2129)
+  def msoLanguageIDEdo: `1126` = 1126.asInstanceOf[`1126`]
   @scala.inline
-  def msoLanguageIDEdo: `1126` = this.cast(1126)
+  def msoLanguageIDEnglishAUS: `3081` = 3081.asInstanceOf[`3081`]
   @scala.inline
-  def msoLanguageIDEnglishAUS: `3081` = this.cast(3081)
+  def msoLanguageIDEnglishBelize: `10249` = 10249.asInstanceOf[`10249`]
   @scala.inline
-  def msoLanguageIDEnglishBelize: `10249` = this.cast(10249)
+  def msoLanguageIDEnglishCanadian: `4105` = 4105.asInstanceOf[`4105`]
   @scala.inline
-  def msoLanguageIDEnglishCanadian: `4105` = this.cast(4105)
+  def msoLanguageIDEnglishCaribbean: `9225` = 9225.asInstanceOf[`9225`]
   @scala.inline
-  def msoLanguageIDEnglishCaribbean: `9225` = this.cast(9225)
+  def msoLanguageIDEnglishIndonesia: `14345` = 14345.asInstanceOf[`14345`]
   @scala.inline
-  def msoLanguageIDEnglishIndonesia: `14345` = this.cast(14345)
+  def msoLanguageIDEnglishIreland: `6153` = 6153.asInstanceOf[`6153`]
   @scala.inline
-  def msoLanguageIDEnglishIreland: `6153` = this.cast(6153)
+  def msoLanguageIDEnglishJamaica: `8201` = 8201.asInstanceOf[`8201`]
   @scala.inline
-  def msoLanguageIDEnglishJamaica: `8201` = this.cast(8201)
+  def msoLanguageIDEnglishNewZealand: `5129` = 5129.asInstanceOf[`5129`]
   @scala.inline
-  def msoLanguageIDEnglishNewZealand: `5129` = this.cast(5129)
+  def msoLanguageIDEnglishPhilippines: `13321` = 13321.asInstanceOf[`13321`]
   @scala.inline
-  def msoLanguageIDEnglishPhilippines: `13321` = this.cast(13321)
+  def msoLanguageIDEnglishSouthAfrica: `7177` = 7177.asInstanceOf[`7177`]
   @scala.inline
-  def msoLanguageIDEnglishSouthAfrica: `7177` = this.cast(7177)
+  def msoLanguageIDEnglishTrinidadTobago: `11273` = 11273.asInstanceOf[`11273`]
   @scala.inline
-  def msoLanguageIDEnglishTrinidadTobago: `11273` = this.cast(11273)
+  def msoLanguageIDEnglishUK: `2057` = 2057.asInstanceOf[`2057`]
   @scala.inline
-  def msoLanguageIDEnglishUK: `2057` = this.cast(2057)
+  def msoLanguageIDEnglishUS: `1033` = 1033.asInstanceOf[`1033`]
   @scala.inline
-  def msoLanguageIDEnglishUS: `1033` = this.cast(1033)
+  def msoLanguageIDEnglishZimbabwe: `12297` = 12297.asInstanceOf[`12297`]
   @scala.inline
-  def msoLanguageIDEnglishZimbabwe: `12297` = this.cast(12297)
+  def msoLanguageIDEstonian: `1061` = 1061.asInstanceOf[`1061`]
   @scala.inline
-  def msoLanguageIDEstonian: `1061` = this.cast(1061)
+  def msoLanguageIDFaeroese: `1080` = 1080.asInstanceOf[`1080`]
   @scala.inline
-  def msoLanguageIDFaeroese: `1080` = this.cast(1080)
+  def msoLanguageIDFarsi: `1065` = 1065.asInstanceOf[`1065`]
   @scala.inline
-  def msoLanguageIDFarsi: `1065` = this.cast(1065)
+  def msoLanguageIDFilipino: `1124` = 1124.asInstanceOf[`1124`]
   @scala.inline
-  def msoLanguageIDFilipino: `1124` = this.cast(1124)
+  def msoLanguageIDFinnish: `1035` = 1035.asInstanceOf[`1035`]
   @scala.inline
-  def msoLanguageIDFinnish: `1035` = this.cast(1035)
+  def msoLanguageIDFrench: `1036` = 1036.asInstanceOf[`1036`]
   @scala.inline
-  def msoLanguageIDFrench: `1036` = this.cast(1036)
+  def msoLanguageIDFrenchCameroon: `11276` = 11276.asInstanceOf[`11276`]
   @scala.inline
-  def msoLanguageIDFrenchCameroon: `11276` = this.cast(11276)
+  def msoLanguageIDFrenchCanadian: `3084` = 3084.asInstanceOf[`3084`]
   @scala.inline
-  def msoLanguageIDFrenchCanadian: `3084` = this.cast(3084)
+  def msoLanguageIDFrenchCongoDRC: `9228` = 9228.asInstanceOf[`9228`]
   @scala.inline
-  def msoLanguageIDFrenchCongoDRC: `9228` = this.cast(9228)
+  def msoLanguageIDFrenchCotedIvoire: `12300` = 12300.asInstanceOf[`12300`]
   @scala.inline
-  def msoLanguageIDFrenchCotedIvoire: `12300` = this.cast(12300)
+  def msoLanguageIDFrenchHaiti: `15372` = 15372.asInstanceOf[`15372`]
   @scala.inline
-  def msoLanguageIDFrenchHaiti: `15372` = this.cast(15372)
+  def msoLanguageIDFrenchLuxembourg: `5132` = 5132.asInstanceOf[`5132`]
   @scala.inline
-  def msoLanguageIDFrenchLuxembourg: `5132` = this.cast(5132)
+  def msoLanguageIDFrenchMali: `13324` = 13324.asInstanceOf[`13324`]
   @scala.inline
-  def msoLanguageIDFrenchMali: `13324` = this.cast(13324)
+  def msoLanguageIDFrenchMonaco: `6156` = 6156.asInstanceOf[`6156`]
   @scala.inline
-  def msoLanguageIDFrenchMonaco: `6156` = this.cast(6156)
+  def msoLanguageIDFrenchMorocco: `14348` = 14348.asInstanceOf[`14348`]
   @scala.inline
-  def msoLanguageIDFrenchMorocco: `14348` = this.cast(14348)
+  def msoLanguageIDFrenchReunion: `8204` = 8204.asInstanceOf[`8204`]
   @scala.inline
-  def msoLanguageIDFrenchReunion: `8204` = this.cast(8204)
+  def msoLanguageIDFrenchSenegal: `10252` = 10252.asInstanceOf[`10252`]
   @scala.inline
-  def msoLanguageIDFrenchSenegal: `10252` = this.cast(10252)
+  def msoLanguageIDFrenchWestIndies: `7180` = 7180.asInstanceOf[`7180`]
   @scala.inline
-  def msoLanguageIDFrenchWestIndies: `7180` = this.cast(7180)
+  def msoLanguageIDFrenchZaire: `9228` = 9228.asInstanceOf[`9228`]
   @scala.inline
-  def msoLanguageIDFrenchZaire: `9228` = this.cast(9228)
+  def msoLanguageIDFrisianNetherlands: `1122` = 1122.asInstanceOf[`1122`]
   @scala.inline
-  def msoLanguageIDFrisianNetherlands: `1122` = this.cast(1122)
+  def msoLanguageIDFulfulde: `1127` = 1127.asInstanceOf[`1127`]
   @scala.inline
-  def msoLanguageIDFulfulde: `1127` = this.cast(1127)
+  def msoLanguageIDGaelicIreland: `2108` = 2108.asInstanceOf[`2108`]
   @scala.inline
-  def msoLanguageIDGaelicIreland: `2108` = this.cast(2108)
+  def msoLanguageIDGaelicScotland: `1084` = 1084.asInstanceOf[`1084`]
   @scala.inline
-  def msoLanguageIDGaelicScotland: `1084` = this.cast(1084)
+  def msoLanguageIDGalician: `1110` = 1110.asInstanceOf[`1110`]
   @scala.inline
-  def msoLanguageIDGalician: `1110` = this.cast(1110)
+  def msoLanguageIDGeorgian: `1079` = 1079.asInstanceOf[`1079`]
   @scala.inline
-  def msoLanguageIDGeorgian: `1079` = this.cast(1079)
+  def msoLanguageIDGerman: `1031` = 1031.asInstanceOf[`1031`]
   @scala.inline
-  def msoLanguageIDGerman: `1031` = this.cast(1031)
+  def msoLanguageIDGermanAustria: `3079` = 3079.asInstanceOf[`3079`]
   @scala.inline
-  def msoLanguageIDGermanAustria: `3079` = this.cast(3079)
+  def msoLanguageIDGermanLiechtenstein: `5127` = 5127.asInstanceOf[`5127`]
   @scala.inline
-  def msoLanguageIDGermanLiechtenstein: `5127` = this.cast(5127)
+  def msoLanguageIDGermanLuxembourg: `4103` = 4103.asInstanceOf[`4103`]
   @scala.inline
-  def msoLanguageIDGermanLuxembourg: `4103` = this.cast(4103)
+  def msoLanguageIDGreek: `1032` = 1032.asInstanceOf[`1032`]
   @scala.inline
-  def msoLanguageIDGreek: `1032` = this.cast(1032)
+  def msoLanguageIDGuarani: `1140` = 1140.asInstanceOf[`1140`]
   @scala.inline
-  def msoLanguageIDGuarani: `1140` = this.cast(1140)
+  def msoLanguageIDGujarati: `1095` = 1095.asInstanceOf[`1095`]
   @scala.inline
-  def msoLanguageIDGujarati: `1095` = this.cast(1095)
+  def msoLanguageIDHausa: `1128` = 1128.asInstanceOf[`1128`]
   @scala.inline
-  def msoLanguageIDHausa: `1128` = this.cast(1128)
+  def msoLanguageIDHawaiian: `1141` = 1141.asInstanceOf[`1141`]
   @scala.inline
-  def msoLanguageIDHawaiian: `1141` = this.cast(1141)
+  def msoLanguageIDHebrew: `1037` = 1037.asInstanceOf[`1037`]
   @scala.inline
-  def msoLanguageIDHebrew: `1037` = this.cast(1037)
+  def msoLanguageIDHindi: `1081` = 1081.asInstanceOf[`1081`]
   @scala.inline
-  def msoLanguageIDHindi: `1081` = this.cast(1081)
+  def msoLanguageIDHungarian: `1038` = 1038.asInstanceOf[`1038`]
   @scala.inline
-  def msoLanguageIDHungarian: `1038` = this.cast(1038)
+  def msoLanguageIDIbibio: `1129` = 1129.asInstanceOf[`1129`]
   @scala.inline
-  def msoLanguageIDIbibio: `1129` = this.cast(1129)
+  def msoLanguageIDIcelandic: `1039` = 1039.asInstanceOf[`1039`]
   @scala.inline
-  def msoLanguageIDIcelandic: `1039` = this.cast(1039)
+  def msoLanguageIDIgbo: `1136` = 1136.asInstanceOf[`1136`]
   @scala.inline
-  def msoLanguageIDIgbo: `1136` = this.cast(1136)
+  def msoLanguageIDIndonesian: `1057` = 1057.asInstanceOf[`1057`]
   @scala.inline
-  def msoLanguageIDIndonesian: `1057` = this.cast(1057)
+  def msoLanguageIDInuktitut: `1117` = 1117.asInstanceOf[`1117`]
   @scala.inline
-  def msoLanguageIDInuktitut: `1117` = this.cast(1117)
+  def msoLanguageIDItalian: `1040` = 1040.asInstanceOf[`1040`]
   @scala.inline
-  def msoLanguageIDItalian: `1040` = this.cast(1040)
+  def msoLanguageIDJapanese: `1041` = 1041.asInstanceOf[`1041`]
   @scala.inline
-  def msoLanguageIDJapanese: `1041` = this.cast(1041)
+  def msoLanguageIDKannada: `1099` = 1099.asInstanceOf[`1099`]
   @scala.inline
-  def msoLanguageIDKannada: `1099` = this.cast(1099)
+  def msoLanguageIDKanuri: `1137` = 1137.asInstanceOf[`1137`]
   @scala.inline
-  def msoLanguageIDKanuri: `1137` = this.cast(1137)
+  def msoLanguageIDKashmiri: `1120` = 1120.asInstanceOf[`1120`]
   @scala.inline
-  def msoLanguageIDKashmiri: `1120` = this.cast(1120)
+  def msoLanguageIDKashmiriDevanagari: `2144` = 2144.asInstanceOf[`2144`]
   @scala.inline
-  def msoLanguageIDKashmiriDevanagari: `2144` = this.cast(2144)
+  def msoLanguageIDKazakh: `1087` = 1087.asInstanceOf[`1087`]
   @scala.inline
-  def msoLanguageIDKazakh: `1087` = this.cast(1087)
+  def msoLanguageIDKhmer: `1107` = 1107.asInstanceOf[`1107`]
   @scala.inline
-  def msoLanguageIDKhmer: `1107` = this.cast(1107)
+  def msoLanguageIDKirghiz: `1088` = 1088.asInstanceOf[`1088`]
   @scala.inline
-  def msoLanguageIDKirghiz: `1088` = this.cast(1088)
+  def msoLanguageIDKonkani: `1111` = 1111.asInstanceOf[`1111`]
   @scala.inline
-  def msoLanguageIDKonkani: `1111` = this.cast(1111)
+  def msoLanguageIDKorean: `1042` = 1042.asInstanceOf[`1042`]
   @scala.inline
-  def msoLanguageIDKorean: `1042` = this.cast(1042)
+  def msoLanguageIDKyrgyz: `1088` = 1088.asInstanceOf[`1088`]
   @scala.inline
-  def msoLanguageIDKyrgyz: `1088` = this.cast(1088)
+  def msoLanguageIDLao: `1108` = 1108.asInstanceOf[`1108`]
   @scala.inline
-  def msoLanguageIDLao: `1108` = this.cast(1108)
+  def msoLanguageIDLatin: `1142` = 1142.asInstanceOf[`1142`]
   @scala.inline
-  def msoLanguageIDLatin: `1142` = this.cast(1142)
+  def msoLanguageIDLatvian: `1062` = 1062.asInstanceOf[`1062`]
   @scala.inline
-  def msoLanguageIDLatvian: `1062` = this.cast(1062)
+  def msoLanguageIDLithuanian: `1063` = 1063.asInstanceOf[`1063`]
   @scala.inline
-  def msoLanguageIDLithuanian: `1063` = this.cast(1063)
+  def msoLanguageIDMacedonian: `1071` = 1071.asInstanceOf[`1071`]
   @scala.inline
-  def msoLanguageIDMacedonian: `1071` = this.cast(1071)
+  def msoLanguageIDMacedonianFYROM: `1071` = 1071.asInstanceOf[`1071`]
   @scala.inline
-  def msoLanguageIDMacedonianFYROM: `1071` = this.cast(1071)
+  def msoLanguageIDMalayBruneiDarussalam: `2110` = 2110.asInstanceOf[`2110`]
   @scala.inline
-  def msoLanguageIDMalayBruneiDarussalam: `2110` = this.cast(2110)
+  def msoLanguageIDMalayalam: `1100` = 1100.asInstanceOf[`1100`]
   @scala.inline
-  def msoLanguageIDMalayalam: `1100` = this.cast(1100)
+  def msoLanguageIDMalaysian: `1086` = 1086.asInstanceOf[`1086`]
   @scala.inline
-  def msoLanguageIDMalaysian: `1086` = this.cast(1086)
+  def msoLanguageIDMaltese: `1082` = 1082.asInstanceOf[`1082`]
   @scala.inline
-  def msoLanguageIDMaltese: `1082` = this.cast(1082)
+  def msoLanguageIDManipuri: `1112` = 1112.asInstanceOf[`1112`]
   @scala.inline
-  def msoLanguageIDManipuri: `1112` = this.cast(1112)
+  def msoLanguageIDMaori: `1153` = 1153.asInstanceOf[`1153`]
   @scala.inline
-  def msoLanguageIDMaori: `1153` = this.cast(1153)
+  def msoLanguageIDMarathi: `1102` = 1102.asInstanceOf[`1102`]
   @scala.inline
-  def msoLanguageIDMarathi: `1102` = this.cast(1102)
+  def msoLanguageIDMexicanSpanish: `2058` = 2058.asInstanceOf[`2058`]
   @scala.inline
-  def msoLanguageIDMexicanSpanish: `2058` = this.cast(2058)
+  def msoLanguageIDMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def msoLanguageIDMixed: `-2` = this.cast(-2)
+  def msoLanguageIDMongolian: `1104` = 1104.asInstanceOf[`1104`]
   @scala.inline
-  def msoLanguageIDMongolian: `1104` = this.cast(1104)
+  def msoLanguageIDNepali: `1121` = 1121.asInstanceOf[`1121`]
   @scala.inline
-  def msoLanguageIDNepali: `1121` = this.cast(1121)
+  def msoLanguageIDNoProofing: `1024` = 1024.asInstanceOf[`1024`]
   @scala.inline
-  def msoLanguageIDNoProofing: `1024` = this.cast(1024)
+  def msoLanguageIDNone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def msoLanguageIDNone: `0` = this.cast(0)
+  def msoLanguageIDNorwegianBokmol: `1044` = 1044.asInstanceOf[`1044`]
   @scala.inline
-  def msoLanguageIDNorwegianBokmol: `1044` = this.cast(1044)
+  def msoLanguageIDNorwegianNynorsk: `2068` = 2068.asInstanceOf[`2068`]
   @scala.inline
-  def msoLanguageIDNorwegianNynorsk: `2068` = this.cast(2068)
+  def msoLanguageIDOriya: `1096` = 1096.asInstanceOf[`1096`]
   @scala.inline
-  def msoLanguageIDOriya: `1096` = this.cast(1096)
+  def msoLanguageIDOromo: `1138` = 1138.asInstanceOf[`1138`]
   @scala.inline
-  def msoLanguageIDOromo: `1138` = this.cast(1138)
+  def msoLanguageIDPashto: `1123` = 1123.asInstanceOf[`1123`]
   @scala.inline
-  def msoLanguageIDPashto: `1123` = this.cast(1123)
+  def msoLanguageIDPolish: `1045` = 1045.asInstanceOf[`1045`]
   @scala.inline
-  def msoLanguageIDPolish: `1045` = this.cast(1045)
+  def msoLanguageIDPortuguese: `2070` = 2070.asInstanceOf[`2070`]
   @scala.inline
-  def msoLanguageIDPortuguese: `2070` = this.cast(2070)
+  def msoLanguageIDPunjabi: `1094` = 1094.asInstanceOf[`1094`]
   @scala.inline
-  def msoLanguageIDPunjabi: `1094` = this.cast(1094)
+  def msoLanguageIDQuechuaBolivia: `1131` = 1131.asInstanceOf[`1131`]
   @scala.inline
-  def msoLanguageIDQuechuaBolivia: `1131` = this.cast(1131)
+  def msoLanguageIDQuechuaEcuador: `2155` = 2155.asInstanceOf[`2155`]
   @scala.inline
-  def msoLanguageIDQuechuaEcuador: `2155` = this.cast(2155)
+  def msoLanguageIDQuechuaPeru: `3179` = 3179.asInstanceOf[`3179`]
   @scala.inline
-  def msoLanguageIDQuechuaPeru: `3179` = this.cast(3179)
+  def msoLanguageIDRhaetoRomanic: `1047` = 1047.asInstanceOf[`1047`]
   @scala.inline
-  def msoLanguageIDRhaetoRomanic: `1047` = this.cast(1047)
+  def msoLanguageIDRomanian: `1048` = 1048.asInstanceOf[`1048`]
   @scala.inline
-  def msoLanguageIDRomanian: `1048` = this.cast(1048)
+  def msoLanguageIDRomanianMoldova: `2072` = 2072.asInstanceOf[`2072`]
   @scala.inline
-  def msoLanguageIDRomanianMoldova: `2072` = this.cast(2072)
+  def msoLanguageIDRussian: `1049` = 1049.asInstanceOf[`1049`]
   @scala.inline
-  def msoLanguageIDRussian: `1049` = this.cast(1049)
+  def msoLanguageIDRussianMoldova: `2073` = 2073.asInstanceOf[`2073`]
   @scala.inline
-  def msoLanguageIDRussianMoldova: `2073` = this.cast(2073)
+  def msoLanguageIDSamiLappish: `1083` = 1083.asInstanceOf[`1083`]
   @scala.inline
-  def msoLanguageIDSamiLappish: `1083` = this.cast(1083)
+  def msoLanguageIDSanskrit: `1103` = 1103.asInstanceOf[`1103`]
   @scala.inline
-  def msoLanguageIDSanskrit: `1103` = this.cast(1103)
+  def msoLanguageIDSepedi: `1132` = 1132.asInstanceOf[`1132`]
   @scala.inline
-  def msoLanguageIDSepedi: `1132` = this.cast(1132)
+  def msoLanguageIDSerbianBosniaHerzegovinaCyrillic: `7194` = 7194.asInstanceOf[`7194`]
   @scala.inline
-  def msoLanguageIDSerbianBosniaHerzegovinaCyrillic: `7194` = this.cast(7194)
+  def msoLanguageIDSerbianBosniaHerzegovinaLatin: `6170` = 6170.asInstanceOf[`6170`]
   @scala.inline
-  def msoLanguageIDSerbianBosniaHerzegovinaLatin: `6170` = this.cast(6170)
+  def msoLanguageIDSerbianCyrillic: `3098` = 3098.asInstanceOf[`3098`]
   @scala.inline
-  def msoLanguageIDSerbianCyrillic: `3098` = this.cast(3098)
+  def msoLanguageIDSerbianLatin: `2074` = 2074.asInstanceOf[`2074`]
   @scala.inline
-  def msoLanguageIDSerbianLatin: `2074` = this.cast(2074)
+  def msoLanguageIDSesotho: `1072` = 1072.asInstanceOf[`1072`]
   @scala.inline
-  def msoLanguageIDSesotho: `1072` = this.cast(1072)
+  def msoLanguageIDSimplifiedChinese: `2052` = 2052.asInstanceOf[`2052`]
   @scala.inline
-  def msoLanguageIDSimplifiedChinese: `2052` = this.cast(2052)
+  def msoLanguageIDSindhi: `1113` = 1113.asInstanceOf[`1113`]
   @scala.inline
-  def msoLanguageIDSindhi: `1113` = this.cast(1113)
+  def msoLanguageIDSindhiPakistan: `2137` = 2137.asInstanceOf[`2137`]
   @scala.inline
-  def msoLanguageIDSindhiPakistan: `2137` = this.cast(2137)
+  def msoLanguageIDSinhalese: `1115` = 1115.asInstanceOf[`1115`]
   @scala.inline
-  def msoLanguageIDSinhalese: `1115` = this.cast(1115)
+  def msoLanguageIDSlovak: `1051` = 1051.asInstanceOf[`1051`]
   @scala.inline
-  def msoLanguageIDSlovak: `1051` = this.cast(1051)
+  def msoLanguageIDSlovenian: `1060` = 1060.asInstanceOf[`1060`]
   @scala.inline
-  def msoLanguageIDSlovenian: `1060` = this.cast(1060)
+  def msoLanguageIDSomali: `1143` = 1143.asInstanceOf[`1143`]
   @scala.inline
-  def msoLanguageIDSomali: `1143` = this.cast(1143)
+  def msoLanguageIDSorbian: `1070` = 1070.asInstanceOf[`1070`]
   @scala.inline
-  def msoLanguageIDSorbian: `1070` = this.cast(1070)
+  def msoLanguageIDSpanish: `1034` = 1034.asInstanceOf[`1034`]
   @scala.inline
-  def msoLanguageIDSpanish: `1034` = this.cast(1034)
+  def msoLanguageIDSpanishArgentina: `11274` = 11274.asInstanceOf[`11274`]
   @scala.inline
-  def msoLanguageIDSpanishArgentina: `11274` = this.cast(11274)
+  def msoLanguageIDSpanishBolivia: `16394` = 16394.asInstanceOf[`16394`]
   @scala.inline
-  def msoLanguageIDSpanishBolivia: `16394` = this.cast(16394)
+  def msoLanguageIDSpanishChile: `13322` = 13322.asInstanceOf[`13322`]
   @scala.inline
-  def msoLanguageIDSpanishChile: `13322` = this.cast(13322)
+  def msoLanguageIDSpanishColombia: `9226` = 9226.asInstanceOf[`9226`]
   @scala.inline
-  def msoLanguageIDSpanishColombia: `9226` = this.cast(9226)
+  def msoLanguageIDSpanishCostaRica: `5130` = 5130.asInstanceOf[`5130`]
   @scala.inline
-  def msoLanguageIDSpanishCostaRica: `5130` = this.cast(5130)
+  def msoLanguageIDSpanishDominicanRepublic: `7178` = 7178.asInstanceOf[`7178`]
   @scala.inline
-  def msoLanguageIDSpanishDominicanRepublic: `7178` = this.cast(7178)
+  def msoLanguageIDSpanishEcuador: `12298` = 12298.asInstanceOf[`12298`]
   @scala.inline
-  def msoLanguageIDSpanishEcuador: `12298` = this.cast(12298)
+  def msoLanguageIDSpanishElSalvador: `17418` = 17418.asInstanceOf[`17418`]
   @scala.inline
-  def msoLanguageIDSpanishElSalvador: `17418` = this.cast(17418)
+  def msoLanguageIDSpanishGuatemala: `4106` = 4106.asInstanceOf[`4106`]
   @scala.inline
-  def msoLanguageIDSpanishGuatemala: `4106` = this.cast(4106)
+  def msoLanguageIDSpanishHonduras: `18442` = 18442.asInstanceOf[`18442`]
   @scala.inline
-  def msoLanguageIDSpanishHonduras: `18442` = this.cast(18442)
+  def msoLanguageIDSpanishModernSort: `3082` = 3082.asInstanceOf[`3082`]
   @scala.inline
-  def msoLanguageIDSpanishModernSort: `3082` = this.cast(3082)
+  def msoLanguageIDSpanishNicaragua: `19466` = 19466.asInstanceOf[`19466`]
   @scala.inline
-  def msoLanguageIDSpanishNicaragua: `19466` = this.cast(19466)
+  def msoLanguageIDSpanishPanama: `6154` = 6154.asInstanceOf[`6154`]
   @scala.inline
-  def msoLanguageIDSpanishPanama: `6154` = this.cast(6154)
+  def msoLanguageIDSpanishParaguay: `15370` = 15370.asInstanceOf[`15370`]
   @scala.inline
-  def msoLanguageIDSpanishParaguay: `15370` = this.cast(15370)
+  def msoLanguageIDSpanishPeru: `10250` = 10250.asInstanceOf[`10250`]
   @scala.inline
-  def msoLanguageIDSpanishPeru: `10250` = this.cast(10250)
+  def msoLanguageIDSpanishPuertoRico: `20490` = 20490.asInstanceOf[`20490`]
   @scala.inline
-  def msoLanguageIDSpanishPuertoRico: `20490` = this.cast(20490)
+  def msoLanguageIDSpanishUruguay: `14346` = 14346.asInstanceOf[`14346`]
   @scala.inline
-  def msoLanguageIDSpanishUruguay: `14346` = this.cast(14346)
+  def msoLanguageIDSpanishVenezuela: `8202` = 8202.asInstanceOf[`8202`]
   @scala.inline
-  def msoLanguageIDSpanishVenezuela: `8202` = this.cast(8202)
+  def msoLanguageIDSutu: `1072` = 1072.asInstanceOf[`1072`]
   @scala.inline
-  def msoLanguageIDSutu: `1072` = this.cast(1072)
+  def msoLanguageIDSwahili: `1089` = 1089.asInstanceOf[`1089`]
   @scala.inline
-  def msoLanguageIDSwahili: `1089` = this.cast(1089)
+  def msoLanguageIDSwedish: `1053` = 1053.asInstanceOf[`1053`]
   @scala.inline
-  def msoLanguageIDSwedish: `1053` = this.cast(1053)
+  def msoLanguageIDSwedishFinland: `2077` = 2077.asInstanceOf[`2077`]
   @scala.inline
-  def msoLanguageIDSwedishFinland: `2077` = this.cast(2077)
+  def msoLanguageIDSwissFrench: `4108` = 4108.asInstanceOf[`4108`]
   @scala.inline
-  def msoLanguageIDSwissFrench: `4108` = this.cast(4108)
+  def msoLanguageIDSwissGerman: `2055` = 2055.asInstanceOf[`2055`]
   @scala.inline
-  def msoLanguageIDSwissGerman: `2055` = this.cast(2055)
+  def msoLanguageIDSwissItalian: `2064` = 2064.asInstanceOf[`2064`]
   @scala.inline
-  def msoLanguageIDSwissItalian: `2064` = this.cast(2064)
+  def msoLanguageIDSyriac: `1114` = 1114.asInstanceOf[`1114`]
   @scala.inline
-  def msoLanguageIDSyriac: `1114` = this.cast(1114)
+  def msoLanguageIDTajik: `1064` = 1064.asInstanceOf[`1064`]
   @scala.inline
-  def msoLanguageIDTajik: `1064` = this.cast(1064)
+  def msoLanguageIDTamazight: `1119` = 1119.asInstanceOf[`1119`]
   @scala.inline
-  def msoLanguageIDTamazight: `1119` = this.cast(1119)
+  def msoLanguageIDTamazightLatin: `2143` = 2143.asInstanceOf[`2143`]
   @scala.inline
-  def msoLanguageIDTamazightLatin: `2143` = this.cast(2143)
+  def msoLanguageIDTamil: `1097` = 1097.asInstanceOf[`1097`]
   @scala.inline
-  def msoLanguageIDTamil: `1097` = this.cast(1097)
+  def msoLanguageIDTatar: `1092` = 1092.asInstanceOf[`1092`]
   @scala.inline
-  def msoLanguageIDTatar: `1092` = this.cast(1092)
+  def msoLanguageIDTelugu: `1098` = 1098.asInstanceOf[`1098`]
   @scala.inline
-  def msoLanguageIDTelugu: `1098` = this.cast(1098)
+  def msoLanguageIDThai: `1054` = 1054.asInstanceOf[`1054`]
   @scala.inline
-  def msoLanguageIDThai: `1054` = this.cast(1054)
+  def msoLanguageIDTibetan: `1105` = 1105.asInstanceOf[`1105`]
   @scala.inline
-  def msoLanguageIDTibetan: `1105` = this.cast(1105)
+  def msoLanguageIDTigrignaEritrea: `2163` = 2163.asInstanceOf[`2163`]
   @scala.inline
-  def msoLanguageIDTigrignaEritrea: `2163` = this.cast(2163)
+  def msoLanguageIDTigrignaEthiopic: `1139` = 1139.asInstanceOf[`1139`]
   @scala.inline
-  def msoLanguageIDTigrignaEthiopic: `1139` = this.cast(1139)
+  def msoLanguageIDTraditionalChinese: `1028` = 1028.asInstanceOf[`1028`]
   @scala.inline
-  def msoLanguageIDTraditionalChinese: `1028` = this.cast(1028)
+  def msoLanguageIDTsonga: `1073` = 1073.asInstanceOf[`1073`]
   @scala.inline
-  def msoLanguageIDTsonga: `1073` = this.cast(1073)
+  def msoLanguageIDTswana: `1074` = 1074.asInstanceOf[`1074`]
   @scala.inline
-  def msoLanguageIDTswana: `1074` = this.cast(1074)
+  def msoLanguageIDTurkish: `1055` = 1055.asInstanceOf[`1055`]
   @scala.inline
-  def msoLanguageIDTurkish: `1055` = this.cast(1055)
+  def msoLanguageIDTurkmen: `1090` = 1090.asInstanceOf[`1090`]
   @scala.inline
-  def msoLanguageIDTurkmen: `1090` = this.cast(1090)
+  def msoLanguageIDUkrainian: `1058` = 1058.asInstanceOf[`1058`]
   @scala.inline
-  def msoLanguageIDUkrainian: `1058` = this.cast(1058)
+  def msoLanguageIDUrdu: `1056` = 1056.asInstanceOf[`1056`]
   @scala.inline
-  def msoLanguageIDUrdu: `1056` = this.cast(1056)
+  def msoLanguageIDUzbekCyrillic: `2115` = 2115.asInstanceOf[`2115`]
   @scala.inline
-  def msoLanguageIDUzbekCyrillic: `2115` = this.cast(2115)
+  def msoLanguageIDUzbekLatin: `1091` = 1091.asInstanceOf[`1091`]
   @scala.inline
-  def msoLanguageIDUzbekLatin: `1091` = this.cast(1091)
+  def msoLanguageIDVenda: `1075` = 1075.asInstanceOf[`1075`]
   @scala.inline
-  def msoLanguageIDVenda: `1075` = this.cast(1075)
+  def msoLanguageIDVietnamese: `1066` = 1066.asInstanceOf[`1066`]
   @scala.inline
-  def msoLanguageIDVietnamese: `1066` = this.cast(1066)
+  def msoLanguageIDWelsh: `1106` = 1106.asInstanceOf[`1106`]
   @scala.inline
-  def msoLanguageIDWelsh: `1106` = this.cast(1106)
+  def msoLanguageIDXhosa: `1076` = 1076.asInstanceOf[`1076`]
   @scala.inline
-  def msoLanguageIDXhosa: `1076` = this.cast(1076)
+  def msoLanguageIDYi: `1144` = 1144.asInstanceOf[`1144`]
   @scala.inline
-  def msoLanguageIDYi: `1144` = this.cast(1144)
+  def msoLanguageIDYiddish: `1085` = 1085.asInstanceOf[`1085`]
   @scala.inline
-  def msoLanguageIDYiddish: `1085` = this.cast(1085)
+  def msoLanguageIDYoruba: `1130` = 1130.asInstanceOf[`1130`]
   @scala.inline
-  def msoLanguageIDYoruba: `1130` = this.cast(1130)
-  @scala.inline
-  def msoLanguageIDZulu: `1077` = this.cast(1077)
+  def msoLanguageIDZulu: `1077` = 1077.asInstanceOf[`1077`]
 }
 

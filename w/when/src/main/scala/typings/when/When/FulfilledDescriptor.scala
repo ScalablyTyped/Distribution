@@ -16,7 +16,6 @@ object FulfilledDescriptor {
   @scala.inline
   def apply[T](state: fulfilled, value: T): FulfilledDescriptor[T] = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FulfilledDescriptor[T]]
   }
 }

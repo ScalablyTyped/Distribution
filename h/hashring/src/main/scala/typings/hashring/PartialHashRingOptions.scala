@@ -26,10 +26,10 @@ object PartialHashRingOptions {
   ): PartialHashRingOptions = {
     val __obj = js.Dynamic.literal()
     if (compatibility != null) __obj.updateDynamic("compatibility")(compatibility.asInstanceOf[js.Any])
-    if (`default port` != null) __obj.updateDynamic("default port")(`default port`.asInstanceOf[js.Any])
-    if (`max cache size` != null) __obj.updateDynamic("max cache size")(`max cache size`.asInstanceOf[js.Any])
+    if (`default port` != null) __obj.updateDynamic("default port")((`default port`).asInstanceOf[js.Any])
+    if (`max cache size` != null) __obj.updateDynamic("max cache size")((`max cache size`).asInstanceOf[js.Any])
     if (replicas != null) __obj.updateDynamic("replicas")(replicas.asInstanceOf[js.Any])
-    if (`vnode count` != null) __obj.updateDynamic("vnode count")(`vnode count`.asInstanceOf[js.Any])
+    if (`vnode count` != null) __obj.updateDynamic("vnode count")((`vnode count`).asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialHashRingOptions]
   }
 }

@@ -27,7 +27,6 @@ object Transformer {
   @scala.inline
   def apply(addSource: (String, String) => Transformer, generate: String => js.Promise[Unit]): Transformer = {
     val __obj = js.Dynamic.literal(addSource = js.Any.fromFunction2(addSource), generate = js.Any.fromFunction1(generate))
-  
     __obj.asInstanceOf[Transformer]
   }
 }

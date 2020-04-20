@@ -26,7 +26,6 @@ object IStreamSocketListener {
     onconnectionreceived: js.Any
   ): IStreamSocketListener = {
     val __obj = js.Dynamic.literal(bindEndpointAsync = js.Any.fromFunction2(bindEndpointAsync), bindServiceNameAsync = js.Any.fromFunction1(bindServiceNameAsync), close = js.Any.fromFunction0(close), control = control.asInstanceOf[js.Any], information = information.asInstanceOf[js.Any], onconnectionreceived = onconnectionreceived.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IStreamSocketListener]
   }
 }

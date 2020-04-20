@@ -18,7 +18,6 @@ object BackHandlerStatic {
     removeEventListener: (BackPressEventName, js.Function0[js.UndefOr[Boolean | Null]]) => Unit
   ): BackHandlerStatic = {
     val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), exitApp = js.Any.fromFunction0(exitApp), removeEventListener = js.Any.fromFunction2(removeEventListener))
-  
     __obj.asInstanceOf[BackHandlerStatic]
   }
 }

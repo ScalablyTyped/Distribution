@@ -14,7 +14,6 @@ object NestedMenuState {
   @scala.inline
   def apply(menus: js.Array[Ref[HTMLElement]]): NestedMenuState = {
     val __obj = js.Dynamic.literal(menus = menus.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NestedMenuState]
   }
 }

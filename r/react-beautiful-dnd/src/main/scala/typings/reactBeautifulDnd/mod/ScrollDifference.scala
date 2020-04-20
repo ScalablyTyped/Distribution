@@ -16,7 +16,6 @@ object ScrollDifference {
   @scala.inline
   def apply(displacement: Position, value: Position): ScrollDifference = {
     val __obj = js.Dynamic.literal(displacement = displacement.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScrollDifference]
   }
 }

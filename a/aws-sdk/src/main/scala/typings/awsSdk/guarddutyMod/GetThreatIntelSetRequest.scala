@@ -20,7 +20,6 @@ object GetThreatIntelSetRequest {
   @scala.inline
   def apply(DetectorId: DetectorId, ThreatIntelSetId: String): GetThreatIntelSetRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId.asInstanceOf[js.Any], ThreatIntelSetId = ThreatIntelSetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetThreatIntelSetRequest]
   }
 }

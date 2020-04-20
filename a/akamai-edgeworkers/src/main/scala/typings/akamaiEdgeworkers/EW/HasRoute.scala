@@ -18,7 +18,6 @@ object HasRoute {
   @scala.inline
   def apply(route: Destination => Unit): HasRoute = {
     val __obj = js.Dynamic.literal(route = js.Any.fromFunction1(route))
-  
     __obj.asInstanceOf[HasRoute]
   }
 }

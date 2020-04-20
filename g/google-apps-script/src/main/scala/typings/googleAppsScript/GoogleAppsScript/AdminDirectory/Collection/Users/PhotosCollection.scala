@@ -25,7 +25,6 @@ object PhotosCollection {
     update: (UserPhoto, String) => UserPhoto
   ): PhotosCollection = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), patch = js.Any.fromFunction2(patch), remove = js.Any.fromFunction1(remove), update = js.Any.fromFunction2(update))
-  
     __obj.asInstanceOf[PhotosCollection]
   }
 }

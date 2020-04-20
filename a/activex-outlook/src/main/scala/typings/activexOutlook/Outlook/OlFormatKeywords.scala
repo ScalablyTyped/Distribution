@@ -7,8 +7,6 @@ import scala.scalajs.js.annotation._
 
 object OlFormatKeywords {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def olFormatKeywordsText: `1` = this.cast(1)
+  def olFormatKeywordsText: `1` = 1.asInstanceOf[`1`]
 }
 

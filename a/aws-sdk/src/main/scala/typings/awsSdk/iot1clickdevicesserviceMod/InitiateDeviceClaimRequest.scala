@@ -16,7 +16,6 @@ object InitiateDeviceClaimRequest {
   @scala.inline
   def apply(DeviceId: string): InitiateDeviceClaimRequest = {
     val __obj = js.Dynamic.literal(DeviceId = DeviceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InitiateDeviceClaimRequest]
   }
 }

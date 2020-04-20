@@ -19,24 +19,22 @@ trait ChartType extends js.Object
 
 object ChartType {
   @scala.inline
-  def bar: typings.chartJs.chartJsStrings.bar = this.cast("bar")
+  def bar: typings.chartJs.chartJsStrings.bar = "bar".asInstanceOf[typings.chartJs.chartJsStrings.bar]
   @scala.inline
-  def bubble: typings.chartJs.chartJsStrings.bubble = this.cast("bubble")
+  def bubble: typings.chartJs.chartJsStrings.bubble = "bubble".asInstanceOf[typings.chartJs.chartJsStrings.bubble]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def doughnut: typings.chartJs.chartJsStrings.doughnut = "doughnut".asInstanceOf[typings.chartJs.chartJsStrings.doughnut]
   @scala.inline
-  def doughnut: typings.chartJs.chartJsStrings.doughnut = this.cast("doughnut")
+  def horizontalBar: typings.chartJs.chartJsStrings.horizontalBar = "horizontalBar".asInstanceOf[typings.chartJs.chartJsStrings.horizontalBar]
   @scala.inline
-  def horizontalBar: typings.chartJs.chartJsStrings.horizontalBar = this.cast("horizontalBar")
+  def line: typings.chartJs.chartJsStrings.line = "line".asInstanceOf[typings.chartJs.chartJsStrings.line]
   @scala.inline
-  def line: typings.chartJs.chartJsStrings.line = this.cast("line")
+  def pie: typings.chartJs.chartJsStrings.pie = "pie".asInstanceOf[typings.chartJs.chartJsStrings.pie]
   @scala.inline
-  def pie: typings.chartJs.chartJsStrings.pie = this.cast("pie")
+  def polarArea: typings.chartJs.chartJsStrings.polarArea = "polarArea".asInstanceOf[typings.chartJs.chartJsStrings.polarArea]
   @scala.inline
-  def polarArea: typings.chartJs.chartJsStrings.polarArea = this.cast("polarArea")
+  def radar: typings.chartJs.chartJsStrings.radar = "radar".asInstanceOf[typings.chartJs.chartJsStrings.radar]
   @scala.inline
-  def radar: typings.chartJs.chartJsStrings.radar = this.cast("radar")
-  @scala.inline
-  def scatter: typings.chartJs.chartJsStrings.scatter = this.cast("scatter")
+  def scatter: typings.chartJs.chartJsStrings.scatter = "scatter".asInstanceOf[typings.chartJs.chartJsStrings.scatter]
 }
 

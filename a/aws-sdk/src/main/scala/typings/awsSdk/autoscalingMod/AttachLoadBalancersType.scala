@@ -20,7 +20,6 @@ object AttachLoadBalancersType {
   @scala.inline
   def apply(AutoScalingGroupName: ResourceName, LoadBalancerNames: LoadBalancerNames): AttachLoadBalancersType = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any], LoadBalancerNames = LoadBalancerNames.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AttachLoadBalancersType]
   }
 }

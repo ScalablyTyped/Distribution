@@ -20,7 +20,6 @@ object ListEventTypesFilter {
   @scala.inline
   def apply(Name: ListEventTypesFilterName, Value: ListEventTypesFilterValue): ListEventTypesFilter = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListEventTypesFilter]
   }
 }

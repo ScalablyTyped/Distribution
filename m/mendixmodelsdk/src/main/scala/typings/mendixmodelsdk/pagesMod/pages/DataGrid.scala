@@ -32,7 +32,7 @@ class DataGrid protected () extends ColumnGrid {
   /**
     * In version 8.0.0: introduced
     */
-  def caption(): ClientTemplate = js.native
+  def caption: ClientTemplate = js.native
   def caption(newValue: ClientTemplate): js.Any = js.native
 }
 

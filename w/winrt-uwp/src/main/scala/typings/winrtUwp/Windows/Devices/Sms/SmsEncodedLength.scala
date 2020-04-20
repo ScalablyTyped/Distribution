@@ -28,7 +28,6 @@ object SmsEncodedLength {
     segmentCount: Double
   ): SmsEncodedLength = {
     val __obj = js.Dynamic.literal(byteCountLastSegment = byteCountLastSegment.asInstanceOf[js.Any], bytesPerSegment = bytesPerSegment.asInstanceOf[js.Any], characterCountLastSegment = characterCountLastSegment.asInstanceOf[js.Any], charactersPerSegment = charactersPerSegment.asInstanceOf[js.Any], segmentCount = segmentCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SmsEncodedLength]
   }
 }

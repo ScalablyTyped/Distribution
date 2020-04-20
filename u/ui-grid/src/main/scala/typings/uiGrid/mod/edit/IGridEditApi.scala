@@ -13,7 +13,6 @@ object IGridEditApi {
   @scala.inline
   def apply[TEntity](on: AnonAfterCellEdit[TEntity]): IGridEditApi[TEntity] = {
     val __obj = js.Dynamic.literal(on = on.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IGridEditApi[TEntity]]
   }
 }

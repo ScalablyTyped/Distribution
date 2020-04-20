@@ -13,7 +13,6 @@ object ServerYar {
   @scala.inline
   def apply(revoke: Id => js.Promise[Unit]): ServerYar = {
     val __obj = js.Dynamic.literal(revoke = js.Any.fromFunction1(revoke))
-  
     __obj.asInstanceOf[ServerYar]
   }
 }

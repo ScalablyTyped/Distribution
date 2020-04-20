@@ -14,7 +14,6 @@ object DeviceResponse {
   @scala.inline
   def apply(color: String, online: Boolean, uuid: String): DeviceResponse = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], online = online.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeviceResponse]
   }
 }

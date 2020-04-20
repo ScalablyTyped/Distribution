@@ -33,7 +33,6 @@ object SignalResourceInput {
     UniqueId: ResourceSignalUniqueId
   ): SignalResourceInput = {
     val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId.asInstanceOf[js.Any], StackName = StackName.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], UniqueId = UniqueId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SignalResourceInput]
   }
 }

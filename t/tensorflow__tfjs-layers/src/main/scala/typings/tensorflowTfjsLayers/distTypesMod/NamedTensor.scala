@@ -15,7 +15,6 @@ object NamedTensor {
   @scala.inline
   def apply(name: String, tensor: Tensor[Rank]): NamedTensor = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], tensor = tensor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NamedTensor]
   }
 }

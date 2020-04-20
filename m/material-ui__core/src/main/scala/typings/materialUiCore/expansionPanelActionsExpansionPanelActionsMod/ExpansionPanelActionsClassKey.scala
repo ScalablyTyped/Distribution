@@ -12,10 +12,8 @@ trait ExpansionPanelActionsClassKey extends js.Object
 
 object ExpansionPanelActionsClassKey {
   @scala.inline
-  def action: typings.materialUiCore.materialUiCoreStrings.action = this.cast("action")
+  def action: typings.materialUiCore.materialUiCoreStrings.action = "action".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.action]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def root: typings.materialUiCore.materialUiCoreStrings.root = this.cast("root")
+  def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
 }
 

@@ -16,7 +16,6 @@ object KinesisFirehoseOutputUpdate {
   @scala.inline
   def apply(ResourceARNUpdate: ResourceARN): KinesisFirehoseOutputUpdate = {
     val __obj = js.Dynamic.literal(ResourceARNUpdate = ResourceARNUpdate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KinesisFirehoseOutputUpdate]
   }
 }

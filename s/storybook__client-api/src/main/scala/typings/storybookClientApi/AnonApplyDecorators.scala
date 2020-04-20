@@ -18,7 +18,6 @@ object AnonApplyDecorators {
     getDecorators: () => js.Array[DecoratorFunction[_]]
   ): AnonApplyDecorators = {
     val __obj = js.Dynamic.literal(applyDecorators = js.Any.fromFunction2(applyDecorators), getDecorators = js.Any.fromFunction0(getDecorators))
-  
     __obj.asInstanceOf[AnonApplyDecorators]
   }
 }

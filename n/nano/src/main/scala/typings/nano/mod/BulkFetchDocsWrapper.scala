@@ -12,7 +12,6 @@ object BulkFetchDocsWrapper {
   @scala.inline
   def apply(keys: js.Array[String]): BulkFetchDocsWrapper = {
     val __obj = js.Dynamic.literal(keys = keys.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BulkFetchDocsWrapper]
   }
 }

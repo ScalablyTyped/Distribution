@@ -14,7 +14,6 @@ object WebNavigationEventFilter {
   @scala.inline
   def apply(url: js.Array[UrlFilter]): WebNavigationEventFilter = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WebNavigationEventFilter]
   }
 }

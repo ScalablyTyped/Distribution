@@ -11,7 +11,7 @@ trait SearchResponse extends js.Object {
     */
   var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.native
   /**
-    * A list of SearchResult objects.
+    * A list of SearchRecord objects.
     */
   var Results: js.UndefOr[SearchResultsList] = js.native
 }

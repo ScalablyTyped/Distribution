@@ -87,7 +87,6 @@ object AnonAcbRating {
     tvpgRating: String
   ): AnonAcbRating = {
     val __obj = js.Dynamic.literal(acbRating = acbRating.asInstanceOf[js.Any], bbfcRating = bbfcRating.asInstanceOf[js.Any], cbfcRating = cbfcRating.asInstanceOf[js.Any], chvrsRating = chvrsRating.asInstanceOf[js.Any], djctqRating = djctqRating.asInstanceOf[js.Any], eirinRating = eirinRating.asInstanceOf[js.Any], fmocRating = fmocRating.asInstanceOf[js.Any], fskRating = fskRating.asInstanceOf[js.Any], icaaRating = icaaRating.asInstanceOf[js.Any], kmrbRating = kmrbRating.asInstanceOf[js.Any], mpaaRating = mpaaRating.asInstanceOf[js.Any], oflcRating = oflcRating.asInstanceOf[js.Any], rtcRating = rtcRating.asInstanceOf[js.Any], russiaRating = russiaRating.asInstanceOf[js.Any], tvpgRating = tvpgRating.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAcbRating]
   }
 }

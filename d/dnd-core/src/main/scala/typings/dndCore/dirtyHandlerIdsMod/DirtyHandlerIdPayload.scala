@@ -13,7 +13,6 @@ object DirtyHandlerIdPayload {
   @scala.inline
   def apply(prevTargetIds: js.Array[String], targetIds: js.Array[String]): DirtyHandlerIdPayload = {
     val __obj = js.Dynamic.literal(prevTargetIds = prevTargetIds.asInstanceOf[js.Any], targetIds = targetIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DirtyHandlerIdPayload]
   }
 }

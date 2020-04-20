@@ -17,20 +17,18 @@ trait FormLabelClassKey extends js.Object
 
 object FormLabelClassKey {
   @scala.inline
-  def asterisk: typings.materialUiCore.materialUiCoreStrings.asterisk = this.cast("asterisk")
+  def asterisk: typings.materialUiCore.materialUiCoreStrings.asterisk = "asterisk".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.asterisk]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def disabled: typings.materialUiCore.materialUiCoreStrings.disabled = "disabled".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.disabled]
   @scala.inline
-  def disabled: typings.materialUiCore.materialUiCoreStrings.disabled = this.cast("disabled")
+  def error: typings.materialUiCore.materialUiCoreStrings.error = "error".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.error]
   @scala.inline
-  def error: typings.materialUiCore.materialUiCoreStrings.error = this.cast("error")
+  def filled: typings.materialUiCore.materialUiCoreStrings.filled = "filled".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.filled]
   @scala.inline
-  def filled: typings.materialUiCore.materialUiCoreStrings.filled = this.cast("filled")
+  def focused: typings.materialUiCore.materialUiCoreStrings.focused = "focused".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.focused]
   @scala.inline
-  def focused: typings.materialUiCore.materialUiCoreStrings.focused = this.cast("focused")
+  def required: typings.materialUiCore.materialUiCoreStrings.required = "required".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.required]
   @scala.inline
-  def required: typings.materialUiCore.materialUiCoreStrings.required = this.cast("required")
-  @scala.inline
-  def root: typings.materialUiCore.materialUiCoreStrings.root = this.cast("root")
+  def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
 }
 

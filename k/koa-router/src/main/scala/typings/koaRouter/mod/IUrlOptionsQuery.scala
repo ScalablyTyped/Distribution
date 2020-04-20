@@ -12,7 +12,6 @@ object IUrlOptionsQuery {
   @scala.inline
   def apply(query: js.Object | String): IUrlOptionsQuery = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IUrlOptionsQuery]
   }
 }

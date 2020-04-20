@@ -18,7 +18,6 @@ object ICopyright {
   @scala.inline
   def apply(alt: String, label: String): ICopyright = {
     val __obj = js.Dynamic.literal(alt = alt.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICopyright]
   }
 }

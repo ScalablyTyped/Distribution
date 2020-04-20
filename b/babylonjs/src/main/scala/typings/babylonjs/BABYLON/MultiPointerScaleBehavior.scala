@@ -41,6 +41,6 @@ class MultiPointerScaleBehavior () extends Behavior[Mesh] {
     *  The name of the behavior
     */
   @JSName("name")
-  def name_MMultiPointerScaleBehavior(): String = js.native
+  def name_MMultiPointerScaleBehavior: String = js.native
 }
 

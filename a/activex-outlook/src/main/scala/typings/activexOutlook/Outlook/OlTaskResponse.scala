@@ -18,14 +18,12 @@ trait OlTaskResponse extends js.Object
 
 object OlTaskResponse {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olTaskAccept: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olTaskAccept: `2` = this.cast(2)
+  def olTaskAssign: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olTaskAssign: `1` = this.cast(1)
+  def olTaskDecline: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def olTaskDecline: `3` = this.cast(3)
-  @scala.inline
-  def olTaskSimple: `0` = this.cast(0)
+  def olTaskSimple: `0` = 0.asInstanceOf[`0`]
 }
 

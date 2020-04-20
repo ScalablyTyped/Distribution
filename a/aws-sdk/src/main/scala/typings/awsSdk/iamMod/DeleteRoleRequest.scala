@@ -16,7 +16,6 @@ object DeleteRoleRequest {
   @scala.inline
   def apply(RoleName: roleNameType): DeleteRoleRequest = {
     val __obj = js.Dynamic.literal(RoleName = RoleName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteRoleRequest]
   }
 }

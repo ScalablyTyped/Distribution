@@ -12,7 +12,6 @@ object DatabasePragma {
   @scala.inline
   def apply(enableBundledMode: Boolean): DatabasePragma = {
     val __obj = js.Dynamic.literal(enableBundledMode = enableBundledMode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DatabasePragma]
   }
 }

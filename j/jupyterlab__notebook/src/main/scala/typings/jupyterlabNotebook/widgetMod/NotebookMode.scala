@@ -12,10 +12,8 @@ trait NotebookMode extends js.Object
 
 object NotebookMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def command: typings.jupyterlabNotebook.jupyterlabNotebookStrings.command = "command".asInstanceOf[typings.jupyterlabNotebook.jupyterlabNotebookStrings.command]
   @scala.inline
-  def command: typings.jupyterlabNotebook.jupyterlabNotebookStrings.command = this.cast("command")
-  @scala.inline
-  def edit: typings.jupyterlabNotebook.jupyterlabNotebookStrings.edit = this.cast("edit")
+  def edit: typings.jupyterlabNotebook.jupyterlabNotebookStrings.edit = "edit".asInstanceOf[typings.jupyterlabNotebook.jupyterlabNotebookStrings.edit]
 }
 

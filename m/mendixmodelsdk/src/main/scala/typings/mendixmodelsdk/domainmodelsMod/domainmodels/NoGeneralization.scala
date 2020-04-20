@@ -50,28 +50,28 @@ class NoGeneralization protected () extends GeneralizationBase {
   @JSName("persistable")
   val persistable_FNoGeneralization: Boolean = js.native
   @JSName("containerAsEntity")
-  def containerAsEntity_MNoGeneralization(): Entity = js.native
+  def containerAsEntity_MNoGeneralization: Entity = js.native
   /**
     * In version 8.2.0: added public
     */
-  def hasChangedBy(): Boolean = js.native
+  def hasChangedBy: Boolean = js.native
   def hasChangedBy(newValue: Boolean): js.Any = js.native
   /**
     * In version 8.2.0: added public
     */
-  def hasChangedDate(): Boolean = js.native
+  def hasChangedDate: Boolean = js.native
   def hasChangedDate(newValue: Boolean): js.Any = js.native
   /**
     * In version 8.2.0: added public
     */
-  def hasCreatedDate(): Boolean = js.native
+  def hasCreatedDate: Boolean = js.native
   def hasCreatedDate(newValue: Boolean): js.Any = js.native
   /**
     * In version 8.2.0: added public
     */
-  def hasOwner(): Boolean = js.native
+  def hasOwner: Boolean = js.native
   def hasOwner(newValue: Boolean): js.Any = js.native
-  def persistable(): Boolean = js.native
+  def persistable: Boolean = js.native
   def persistable(newValue: Boolean): js.Any = js.native
 }
 

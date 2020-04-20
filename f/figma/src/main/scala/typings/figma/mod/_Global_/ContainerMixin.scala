@@ -15,7 +15,6 @@ object ContainerMixin {
   @scala.inline
   def apply(backgroundStyleId: String, backgrounds: js.Array[Paint], expanded: Boolean): ContainerMixin = {
     val __obj = js.Dynamic.literal(backgroundStyleId = backgroundStyleId.asInstanceOf[js.Any], backgrounds = backgrounds.asInstanceOf[js.Any], expanded = expanded.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ContainerMixin]
   }
 }

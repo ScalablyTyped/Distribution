@@ -12,10 +12,8 @@ trait ConsumerType extends js.Object
 
 object ConsumerType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def human: typings.tslint.tslintStrings.human = "human".asInstanceOf[typings.tslint.tslintStrings.human]
   @scala.inline
-  def human: typings.tslint.tslintStrings.human = this.cast("human")
-  @scala.inline
-  def machine: typings.tslint.tslintStrings.machine = this.cast("machine")
+  def machine: typings.tslint.tslintStrings.machine = "machine".asInstanceOf[typings.tslint.tslintStrings.machine]
 }
 

@@ -28,7 +28,6 @@ object InstancePatchStateFilter {
     Values: InstancePatchStateFilterValues
   ): InstancePatchStateFilter = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InstancePatchStateFilter]
   }
 }

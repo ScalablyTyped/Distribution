@@ -28,6 +28,9 @@ trait ClusterArgs extends js.Object {
     * Creates a unique cluster identifier beginning with the specified prefix. Conflicts with `clusterIdentifier`.
     */
   val clusterIdentifierPrefix: js.UndefOr[Input[String]] = js.native
+  /**
+    * A value that indicates whether the DB cluster has deletion protection enabled.The database can't be deleted when deletion protection is enabled. By default, deletion protection is disabled.
+    */
   val deletionProtection: js.UndefOr[Input[Boolean]] = js.native
   /**
     * A list of the log types this DB cluster is configured to export to Cloudwatch Logs. Currently only supports `audit`.

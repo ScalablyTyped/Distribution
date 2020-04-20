@@ -22,7 +22,6 @@ object ITreeResource {
   @scala.inline
   def apply(loadApplication: js.Any => Unit, loadMenu: js.Any => Unit, loadNodes: js.Any => Unit): ITreeResource = {
     val __obj = js.Dynamic.literal(loadApplication = js.Any.fromFunction1(loadApplication), loadMenu = js.Any.fromFunction1(loadMenu), loadNodes = js.Any.fromFunction1(loadNodes))
-  
     __obj.asInstanceOf[ITreeResource]
   }
 }

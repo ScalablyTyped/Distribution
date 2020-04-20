@@ -15,7 +15,6 @@ object AnonIndexName {
   @scala.inline
   def apply(indexName: String, params: QueryParameters, query: String): AnonIndexName = {
     val __obj = js.Dynamic.literal(indexName = indexName.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIndexName]
   }
 }

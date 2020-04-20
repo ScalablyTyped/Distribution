@@ -13,7 +13,6 @@ object MDCTabScrollerAnimation {
   @scala.inline
   def apply(finalScrollPosition: Double, scrollDelta: Double): MDCTabScrollerAnimation = {
     val __obj = js.Dynamic.literal(finalScrollPosition = finalScrollPosition.asInstanceOf[js.Any], scrollDelta = scrollDelta.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MDCTabScrollerAnimation]
   }
 }

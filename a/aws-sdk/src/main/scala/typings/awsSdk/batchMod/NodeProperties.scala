@@ -24,7 +24,6 @@ object NodeProperties {
   @scala.inline
   def apply(mainNode: Integer, nodeRangeProperties: NodeRangeProperties, numNodes: Integer): NodeProperties = {
     val __obj = js.Dynamic.literal(mainNode = mainNode.asInstanceOf[js.Any], nodeRangeProperties = nodeRangeProperties.asInstanceOf[js.Any], numNodes = numNodes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NodeProperties]
   }
 }

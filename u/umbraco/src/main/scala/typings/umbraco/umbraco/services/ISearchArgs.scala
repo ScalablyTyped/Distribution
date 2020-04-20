@@ -15,7 +15,6 @@ object ISearchArgs {
   @scala.inline
   def apply(term: String): ISearchArgs = {
     val __obj = js.Dynamic.literal(term = term.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISearchArgs]
   }
 }

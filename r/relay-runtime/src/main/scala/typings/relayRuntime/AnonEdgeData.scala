@@ -16,7 +16,6 @@ object AnonEdgeData {
   @scala.inline
   def apply[TEdge](edgeData: StringDictionary[TEdge], kind: update): AnonEdgeData[TEdge] = {
     val __obj = js.Dynamic.literal(edgeData = edgeData.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEdgeData[TEdge]]
   }
 }

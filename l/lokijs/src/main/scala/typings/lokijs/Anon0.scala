@@ -13,7 +13,6 @@ object Anon0 {
   @scala.inline
   def apply(serializationMethod: destructured): Anon0 = {
     val __obj = js.Dynamic.literal(serializationMethod = serializationMethod.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Anon0]
   }
 }

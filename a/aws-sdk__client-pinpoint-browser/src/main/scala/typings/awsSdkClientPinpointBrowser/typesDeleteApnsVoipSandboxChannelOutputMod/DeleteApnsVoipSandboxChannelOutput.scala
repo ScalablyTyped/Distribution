@@ -26,7 +26,6 @@ object DeleteApnsVoipSandboxChannelOutput {
     APNSVoipSandboxChannelResponse: UnmarshalledAPNSVoipSandboxChannelResponse
   ): DeleteApnsVoipSandboxChannelOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], APNSVoipSandboxChannelResponse = APNSVoipSandboxChannelResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteApnsVoipSandboxChannelOutput]
   }
 }

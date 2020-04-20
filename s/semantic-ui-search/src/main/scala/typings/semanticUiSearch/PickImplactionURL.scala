@@ -13,7 +13,6 @@ object PickImplactionURL {
   @scala.inline
   def apply(actionURL: String): PickImplactionURL = {
     val __obj = js.Dynamic.literal(actionURL = actionURL.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplactionURL]
   }
 }

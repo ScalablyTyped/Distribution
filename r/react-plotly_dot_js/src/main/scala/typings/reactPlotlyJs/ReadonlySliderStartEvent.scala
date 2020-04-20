@@ -14,7 +14,6 @@ object ReadonlySliderStartEvent {
   @scala.inline
   def apply(slider: Slider): ReadonlySliderStartEvent = {
     val __obj = js.Dynamic.literal(slider = slider.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReadonlySliderStartEvent]
   }
 }

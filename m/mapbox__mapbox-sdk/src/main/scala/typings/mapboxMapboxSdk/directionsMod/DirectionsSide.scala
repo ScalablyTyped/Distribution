@@ -12,10 +12,8 @@ trait DirectionsSide extends js.Object
 
 object DirectionsSide {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def left: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.left = "left".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.left]
   @scala.inline
-  def left: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.left = this.cast("left")
-  @scala.inline
-  def right: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.right = this.cast("right")
+  def right: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.right = "right".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.right]
 }
 

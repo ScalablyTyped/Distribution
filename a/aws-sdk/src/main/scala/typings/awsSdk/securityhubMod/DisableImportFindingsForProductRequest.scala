@@ -16,7 +16,6 @@ object DisableImportFindingsForProductRequest {
   @scala.inline
   def apply(ProductSubscriptionArn: NonEmptyString): DisableImportFindingsForProductRequest = {
     val __obj = js.Dynamic.literal(ProductSubscriptionArn = ProductSubscriptionArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisableImportFindingsForProductRequest]
   }
 }

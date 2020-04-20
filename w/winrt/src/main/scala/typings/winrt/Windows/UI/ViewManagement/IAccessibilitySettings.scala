@@ -14,7 +14,6 @@ object IAccessibilitySettings {
   @scala.inline
   def apply(highContrast: Boolean, highContrastScheme: String, onhighcontrastchanged: js.Any): IAccessibilitySettings = {
     val __obj = js.Dynamic.literal(highContrast = highContrast.asInstanceOf[js.Any], highContrastScheme = highContrastScheme.asInstanceOf[js.Any], onhighcontrastchanged = onhighcontrastchanged.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IAccessibilitySettings]
   }
 }

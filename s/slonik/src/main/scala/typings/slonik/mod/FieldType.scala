@@ -13,7 +13,6 @@ object FieldType {
   @scala.inline
   def apply(dataTypeId: Double, name: String): FieldType = {
     val __obj = js.Dynamic.literal(dataTypeId = dataTypeId.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FieldType]
   }
 }

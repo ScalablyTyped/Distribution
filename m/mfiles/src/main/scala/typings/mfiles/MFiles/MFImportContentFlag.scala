@@ -28,24 +28,22 @@ trait MFImportContentFlag extends js.Object
 
 object MFImportContentFlag {
   @scala.inline
-  def DeleteContentPackage: `4` = this.cast(4)
+  def DeleteContentPackage: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def DoNotImportObjectDestructions: `64` = this.cast(64)
+  def DoNotImportObjectDestructions: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def ForceNoStructureIdUpdate: `16384` = this.cast(16384)
+  def ForceNoStructureIdUpdate: `16384` = 16384.asInstanceOf[`16384`]
   @scala.inline
-  def ImportCheckoutStates: `16` = this.cast(16)
+  def ImportCheckoutStates: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def None: `0` = this.cast(0)
+  def None: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def OmitDoneFile: `32768` = this.cast(32768)
+  def OmitDoneFile: `32768` = 32768.asInstanceOf[`32768`]
   @scala.inline
-  def ResetExportTimestamps: `32` = this.cast(32)
+  def ResetExportTimestamps: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def UseMultipleContentPackages: `1` = this.cast(1)
+  def UseMultipleContentPackages: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def UseNamesAsAliases: `128` = this.cast(128)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UseNamesAsAliases: `128` = 128.asInstanceOf[`128`]
 }
 

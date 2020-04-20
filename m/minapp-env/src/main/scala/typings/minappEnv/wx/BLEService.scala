@@ -16,7 +16,6 @@ object BLEService {
   @scala.inline
   def apply(isPrimary: Boolean, uuid: String): BLEService = {
     val __obj = js.Dynamic.literal(isPrimary = isPrimary.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BLEService]
   }
 }

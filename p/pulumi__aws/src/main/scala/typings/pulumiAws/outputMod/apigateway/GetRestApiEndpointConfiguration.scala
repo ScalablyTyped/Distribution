@@ -14,7 +14,6 @@ object GetRestApiEndpointConfiguration {
   @scala.inline
   def apply(types: js.Array[String], vpcEndpointIds: js.Array[String]): GetRestApiEndpointConfiguration = {
     val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any], vpcEndpointIds = vpcEndpointIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetRestApiEndpointConfiguration]
   }
 }

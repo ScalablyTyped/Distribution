@@ -27,7 +27,6 @@ object AnonAll {
     medium: RankScoreObject
   ): AnonAll = {
     val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], beginner = beginner.asInstanceOf[js.Any], easy = easy.asInstanceOf[js.Any], elite = elite.asInstanceOf[js.Any], hard = hard.asInstanceOf[js.Any], master = master.asInstanceOf[js.Any], medium = medium.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAll]
   }
 }

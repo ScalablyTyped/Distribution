@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 /** Properties of a ListIntentsRequest. */
 trait IListIntentsRequest extends js.Object {
   /** ListIntentsRequest intentView */
-  var intentView: js.UndefOr[IntentView | String | Null] = js.undefined
+  var intentView: js.UndefOr[
+    IntentView | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.IntentView * / any */ String) | Null
+  ] = js.undefined
   /** ListIntentsRequest languageCode */
   var languageCode: js.UndefOr[String | Null] = js.undefined
   /** ListIntentsRequest pageSize */
@@ -21,7 +23,7 @@ trait IListIntentsRequest extends js.Object {
 object IListIntentsRequest {
   @scala.inline
   def apply(
-    intentView: IntentView | String = null,
+    intentView: IntentView | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.IntentView * / any */ String) = null,
     languageCode: String = null,
     pageSize: Int | Double = null,
     pageToken: String = null,

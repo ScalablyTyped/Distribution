@@ -23,7 +23,6 @@ object SelfSubjectAccessReviewSpec {
   @scala.inline
   def apply(nonResourceAttributes: NonResourceAttributes, resourceAttributes: ResourceAttributes): SelfSubjectAccessReviewSpec = {
     val __obj = js.Dynamic.literal(nonResourceAttributes = nonResourceAttributes.asInstanceOf[js.Any], resourceAttributes = resourceAttributes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SelfSubjectAccessReviewSpec]
   }
 }

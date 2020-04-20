@@ -16,12 +16,10 @@ trait WdMailerPriority extends js.Object
 
 object WdMailerPriority {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdPriorityHigh: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdPriorityHigh: `3` = this.cast(3)
+  def wdPriorityLow: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdPriorityLow: `2` = this.cast(2)
-  @scala.inline
-  def wdPriorityNormal: `1` = this.cast(1)
+  def wdPriorityNormal: `1` = 1.asInstanceOf[`1`]
 }
 

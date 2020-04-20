@@ -13,7 +13,6 @@ object ISettingsPaneCommandsRequest {
   @scala.inline
   def apply(applicationCommands: IVector[SettingsCommand]): ISettingsPaneCommandsRequest = {
     val __obj = js.Dynamic.literal(applicationCommands = applicationCommands.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISettingsPaneCommandsRequest]
   }
 }

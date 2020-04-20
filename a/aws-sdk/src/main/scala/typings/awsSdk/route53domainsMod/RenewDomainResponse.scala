@@ -16,7 +16,6 @@ object RenewDomainResponse {
   @scala.inline
   def apply(OperationId: OperationId): RenewDomainResponse = {
     val __obj = js.Dynamic.literal(OperationId = OperationId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RenewDomainResponse]
   }
 }

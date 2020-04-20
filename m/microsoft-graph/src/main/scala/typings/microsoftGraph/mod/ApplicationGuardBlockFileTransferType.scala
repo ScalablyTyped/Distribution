@@ -15,16 +15,14 @@ trait ApplicationGuardBlockFileTransferType extends js.Object
 
 object ApplicationGuardBlockFileTransferType {
   @scala.inline
-  def blockImageAndTextFile: typings.microsoftGraph.microsoftGraphStrings.blockImageAndTextFile = this.cast("blockImageAndTextFile")
+  def blockImageAndTextFile: typings.microsoftGraph.microsoftGraphStrings.blockImageAndTextFile = "blockImageAndTextFile".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blockImageAndTextFile]
   @scala.inline
-  def blockImageFile: typings.microsoftGraph.microsoftGraphStrings.blockImageFile = this.cast("blockImageFile")
+  def blockImageFile: typings.microsoftGraph.microsoftGraphStrings.blockImageFile = "blockImageFile".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blockImageFile]
   @scala.inline
-  def blockNone: typings.microsoftGraph.microsoftGraphStrings.blockNone = this.cast("blockNone")
+  def blockNone: typings.microsoftGraph.microsoftGraphStrings.blockNone = "blockNone".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blockNone]
   @scala.inline
-  def blockTextFile: typings.microsoftGraph.microsoftGraphStrings.blockTextFile = this.cast("blockTextFile")
+  def blockTextFile: typings.microsoftGraph.microsoftGraphStrings.blockTextFile = "blockTextFile".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blockTextFile]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def notConfigured: typings.microsoftGraph.microsoftGraphStrings.notConfigured = this.cast("notConfigured")
+  def notConfigured: typings.microsoftGraph.microsoftGraphStrings.notConfigured = "notConfigured".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notConfigured]
 }
 

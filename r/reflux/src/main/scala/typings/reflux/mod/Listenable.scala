@@ -12,7 +12,6 @@ object Listenable {
   @scala.inline
   def apply(listen: ListenFn): Listenable = {
     val __obj = js.Dynamic.literal(listen = listen.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Listenable]
   }
 }

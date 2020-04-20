@@ -16,7 +16,6 @@ object IRoute {
   @scala.inline
   def apply(routeLegs: js.Array[IRouteLeg], routePath: js.Array[Location]): IRoute = {
     val __obj = js.Dynamic.literal(routeLegs = routeLegs.asInstanceOf[js.Any], routePath = routePath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IRoute]
   }
 }

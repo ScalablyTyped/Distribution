@@ -9,52 +9,52 @@ import scala.scalajs.js.annotation._
 
 trait halogeniumProps {
   @scala.inline
-  def BeatLoaderProps: MarginLoaderProps.type = typings.halogenium.mod.MarginLoaderProps
+  def BeatLoaderProps: MarginLoaderProps.type = MarginLoaderProps
   type BeatLoaderProps = MarginLoaderProps
   @scala.inline
-  def BounceLoaderProps: SizeLoaderProps.type = typings.halogenium.mod.SizeLoaderProps
+  def BounceLoaderProps: SizeLoaderProps.type = SizeLoaderProps
   type BounceLoaderProps = SizeLoaderProps
   @scala.inline
-  def ClipLoaderProps: SizeLoaderProps.type = typings.halogenium.mod.SizeLoaderProps
+  def ClipLoaderProps: SizeLoaderProps.type = SizeLoaderProps
   type ClipLoaderProps = SizeLoaderProps
   @scala.inline
-  def DotLoaderProps: SizeLoaderProps.type = typings.halogenium.mod.SizeLoaderProps
+  def DotLoaderProps: SizeLoaderProps.type = SizeLoaderProps
   type DotLoaderProps = SizeLoaderProps
   @scala.inline
-  def FadeLoaderProps: RadiusLoaderProps.type = typings.halogenium.mod.RadiusLoaderProps
+  def FadeLoaderProps: RadiusLoaderProps.type = RadiusLoaderProps
   type FadeLoaderProps = RadiusLoaderProps
   @scala.inline
-  def GridLoaderProps: MarginLoaderProps.type = typings.halogenium.mod.MarginLoaderProps
+  def GridLoaderProps: MarginLoaderProps.type = MarginLoaderProps
   type GridLoaderProps = MarginLoaderProps
   @scala.inline
-  def MoonLoaderProps: SizeLoaderProps.type = typings.halogenium.mod.SizeLoaderProps
+  def MoonLoaderProps: SizeLoaderProps.type = SizeLoaderProps
   type MoonLoaderProps = SizeLoaderProps
   @scala.inline
-  def PacmanLoaderProps: MarginLoaderProps.type = typings.halogenium.mod.MarginLoaderProps
+  def PacmanLoaderProps: MarginLoaderProps.type = MarginLoaderProps
   type PacmanLoaderProps = MarginLoaderProps
   @scala.inline
-  def PulseLoaderProps: MarginLoaderProps.type = typings.halogenium.mod.MarginLoaderProps
+  def PulseLoaderProps: MarginLoaderProps.type = MarginLoaderProps
   type PulseLoaderProps = MarginLoaderProps
   @scala.inline
-  def RingLoaderProps: SizeLoaderProps.type = typings.halogenium.mod.SizeLoaderProps
+  def RingLoaderProps: SizeLoaderProps.type = SizeLoaderProps
   type RingLoaderProps = SizeLoaderProps
   @scala.inline
-  def RiseLoaderProps: MarginLoaderProps.type = typings.halogenium.mod.MarginLoaderProps
+  def RiseLoaderProps: MarginLoaderProps.type = MarginLoaderProps
   type RiseLoaderProps = MarginLoaderProps
   @scala.inline
-  def RotateLoaderProps: MarginLoaderProps.type = typings.halogenium.mod.MarginLoaderProps
+  def RotateLoaderProps: MarginLoaderProps.type = MarginLoaderProps
   type RotateLoaderProps = MarginLoaderProps
   @scala.inline
-  def ScaleLoaderProps: RadiusLoaderProps.type = typings.halogenium.mod.RadiusLoaderProps
+  def ScaleLoaderProps: RadiusLoaderProps.type = RadiusLoaderProps
   type ScaleLoaderProps = RadiusLoaderProps
   @scala.inline
-  def SkewLoaderProps: SizeLoaderProps.type = typings.halogenium.mod.SizeLoaderProps
+  def SkewLoaderProps: SizeLoaderProps.type = SizeLoaderProps
   type SkewLoaderProps = SizeLoaderProps
   @scala.inline
-  def SquareLoaderProps: SizeLoaderProps.type = typings.halogenium.mod.SizeLoaderProps
+  def SquareLoaderProps: SizeLoaderProps.type = SizeLoaderProps
   type SquareLoaderProps = SizeLoaderProps
   @scala.inline
-  def SyncLoaderProps: MarginLoaderProps.type = typings.halogenium.mod.MarginLoaderProps
+  def SyncLoaderProps: MarginLoaderProps.type = MarginLoaderProps
   type SyncLoaderProps = MarginLoaderProps
 }
 

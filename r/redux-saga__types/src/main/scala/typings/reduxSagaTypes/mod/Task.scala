@@ -47,7 +47,6 @@ object Task {
     toPromise: () => js.Promise[js.Any]
   ): Task = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), error = js.Any.fromFunction0(error), isCancelled = js.Any.fromFunction0(isCancelled), isRunning = js.Any.fromFunction0(isRunning), result = js.Any.fromFunction0(result), setContext = js.Any.fromFunction1(setContext), toPromise = js.Any.fromFunction0(toPromise))
-  
     __obj.asInstanceOf[Task]
   }
 }

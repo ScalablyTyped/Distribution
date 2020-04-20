@@ -11,7 +11,7 @@ trait titleAttributesParams extends js.Object {
   /**
   	 * Color of the window title, as a color name or hex triplet.
   	 */
-  var color: js.UndefOr[String] = js.undefined
+  var color: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Font to use for the window title.
   	 */
@@ -24,7 +24,7 @@ trait titleAttributesParams extends js.Object {
 
 object titleAttributesParams {
   @scala.inline
-  def apply(color: String = null, font: Font = null, shadow: shadowDict = null): titleAttributesParams = {
+  def apply(color: java.lang.String = null, font: Font = null, shadow: shadowDict = null): titleAttributesParams = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])

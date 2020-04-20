@@ -24,7 +24,6 @@ object IControllerLocals {
   @scala.inline
   def apply($element: JQuery, $scope: IScope): IControllerLocals = {
     val __obj = js.Dynamic.literal($element = $element.asInstanceOf[js.Any], $scope = $scope.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IControllerLocals]
   }
 }

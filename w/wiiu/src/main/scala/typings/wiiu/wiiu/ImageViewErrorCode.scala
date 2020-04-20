@@ -18,14 +18,12 @@ trait ImageViewErrorCode extends js.Object
 
 object ImageViewErrorCode {
   @scala.inline
-  def DIMENSIONS_TOO_LARGE: `203` = this.cast(203)
+  def DIMENSIONS_TOO_LARGE: `203` = 203.asInstanceOf[`203`]
   @scala.inline
-  def FILE_SIZE_TOO_LARGE: `204` = this.cast(204)
+  def FILE_SIZE_TOO_LARGE: `204` = 204.asInstanceOf[`204`]
   @scala.inline
-  def TOO_MANY_PIXELS_PROGRESSIVE_JPEG: `205` = this.cast(205)
+  def TOO_MANY_PIXELS_PROGRESSIVE_JPEG: `205` = 205.asInstanceOf[`205`]
   @scala.inline
-  def UNSUPPORTED_FORMAT: `202` = this.cast(202)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UNSUPPORTED_FORMAT: `202` = 202.asInstanceOf[`202`]
 }
 

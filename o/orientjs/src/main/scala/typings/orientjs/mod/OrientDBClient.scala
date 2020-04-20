@@ -26,7 +26,7 @@ class OrientDBClient () extends EventEmitter {
   def session(): js.Promise[ODatabaseSession] = js.native
   def session(options: ODatabaseSessionOptions): js.Promise[ODatabaseSession] = js.native
   def sessions(): js.Promise[ODatabaseSessionPool] = js.native
-  def sessions(options: ODatabaseSessionOptions): js.Promise[ODatabaseSessionPool] = js.native
+  def sessions(options: ODatabaseSessionPoolOptions): js.Promise[ODatabaseSessionPool] = js.native
 }
 
 /* static members */

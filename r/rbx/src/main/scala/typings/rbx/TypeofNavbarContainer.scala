@@ -1,0 +1,15 @@
+package typings.rbx
+
+import org.scalablytyped.runtime.Instantiable1
+import typings.rbx.navbarContainerMod.NavbarContainer
+import typings.rbx.navbarContainerMod.NavbarContainerProps
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait TypeofNavbarContainer extends Instantiable1[/* props */ NavbarContainerProps, NavbarContainer] {
+  var defaultProps: AnonTransparent = js.native
+  var displayName: String = js.native
+}
+

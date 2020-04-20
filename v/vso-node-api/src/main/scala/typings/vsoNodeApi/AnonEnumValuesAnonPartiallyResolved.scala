@@ -12,7 +12,6 @@ object AnonEnumValuesAnonPartiallyResolved {
   @scala.inline
   def apply(enumValues: AnonPartiallyResolved): AnonEnumValuesAnonPartiallyResolved = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumValuesAnonPartiallyResolved]
   }
 }

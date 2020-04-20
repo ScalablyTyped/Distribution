@@ -15,7 +15,7 @@ trait SplitBoxProps[P /* <: EnhancerProps */] extends js.Object {
   var remainingProps: Pick[
     P, 
     Exclude[
-      String, 
+      /* keyof P */ String, 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 140 */ js.Any
     ]
   ]
@@ -31,13 +31,12 @@ object SplitBoxProps {
     remainingProps: Pick[
       P, 
       Exclude[
-        String, 
+        /* keyof P */ String, 
         /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 140 */ js.Any
       ]
     ]
   ): SplitBoxProps[P] = {
     val __obj = js.Dynamic.literal(matchedProps = matchedProps.asInstanceOf[js.Any], remainingProps = remainingProps.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SplitBoxProps[P]]
   }
 }

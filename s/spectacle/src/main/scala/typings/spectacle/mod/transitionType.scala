@@ -17,14 +17,12 @@ trait transitionType extends js.Object
 
 object transitionType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fade: typings.spectacle.spectacleStrings.fade = "fade".asInstanceOf[typings.spectacle.spectacleStrings.fade]
   @scala.inline
-  def fade: typings.spectacle.spectacleStrings.fade = this.cast("fade")
+  def slide: typings.spectacle.spectacleStrings.slide = "slide".asInstanceOf[typings.spectacle.spectacleStrings.slide]
   @scala.inline
-  def slide: typings.spectacle.spectacleStrings.slide = this.cast("slide")
+  def spin: typings.spectacle.spectacleStrings.spin = "spin".asInstanceOf[typings.spectacle.spectacleStrings.spin]
   @scala.inline
-  def spin: typings.spectacle.spectacleStrings.spin = this.cast("spin")
-  @scala.inline
-  def zoom: typings.spectacle.spectacleStrings.zoom = this.cast("zoom")
+  def zoom: typings.spectacle.spectacleStrings.zoom = "zoom".asInstanceOf[typings.spectacle.spectacleStrings.zoom]
 }
 

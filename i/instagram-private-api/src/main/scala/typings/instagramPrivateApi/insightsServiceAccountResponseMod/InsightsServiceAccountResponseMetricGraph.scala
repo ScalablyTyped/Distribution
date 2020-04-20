@@ -12,7 +12,6 @@ object InsightsServiceAccountResponseMetricGraph {
   @scala.inline
   def apply(nodes: js.Array[InsightsServiceAccountResponseNodesItem]): InsightsServiceAccountResponseMetricGraph = {
     val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InsightsServiceAccountResponseMetricGraph]
   }
 }

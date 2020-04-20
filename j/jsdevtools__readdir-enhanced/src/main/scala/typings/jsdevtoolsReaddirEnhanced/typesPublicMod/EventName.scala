@@ -14,14 +14,12 @@ trait EventName extends js.Object
 
 object EventName {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def directory: typings.jsdevtoolsReaddirEnhanced.jsdevtoolsReaddirEnhancedStrings.directory = "directory".asInstanceOf[typings.jsdevtoolsReaddirEnhanced.jsdevtoolsReaddirEnhancedStrings.directory]
   @scala.inline
-  def directory: typings.jsdevtoolsReaddirEnhanced.jsdevtoolsReaddirEnhancedStrings.directory = this.cast("directory")
+  def error: typings.jsdevtoolsReaddirEnhanced.jsdevtoolsReaddirEnhancedStrings.error = "error".asInstanceOf[typings.jsdevtoolsReaddirEnhanced.jsdevtoolsReaddirEnhancedStrings.error]
   @scala.inline
-  def error: typings.jsdevtoolsReaddirEnhanced.jsdevtoolsReaddirEnhancedStrings.error = this.cast("error")
+  def file: typings.jsdevtoolsReaddirEnhanced.jsdevtoolsReaddirEnhancedStrings.file = "file".asInstanceOf[typings.jsdevtoolsReaddirEnhanced.jsdevtoolsReaddirEnhancedStrings.file]
   @scala.inline
-  def file: typings.jsdevtoolsReaddirEnhanced.jsdevtoolsReaddirEnhancedStrings.file = this.cast("file")
-  @scala.inline
-  def symlink: typings.jsdevtoolsReaddirEnhanced.jsdevtoolsReaddirEnhancedStrings.symlink = this.cast("symlink")
+  def symlink: typings.jsdevtoolsReaddirEnhanced.jsdevtoolsReaddirEnhancedStrings.symlink = "symlink".asInstanceOf[typings.jsdevtoolsReaddirEnhanced.jsdevtoolsReaddirEnhancedStrings.symlink]
 }
 

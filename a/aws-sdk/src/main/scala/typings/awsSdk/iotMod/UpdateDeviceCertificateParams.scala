@@ -16,7 +16,6 @@ object UpdateDeviceCertificateParams {
   @scala.inline
   def apply(action: DeviceCertificateUpdateAction): UpdateDeviceCertificateParams = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateDeviceCertificateParams]
   }
 }

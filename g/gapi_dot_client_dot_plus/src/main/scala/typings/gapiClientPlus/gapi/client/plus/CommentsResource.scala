@@ -18,7 +18,6 @@ object CommentsResource {
   @scala.inline
   def apply(get: AnonCommentId => Request_[Comment], list: AnonKey => Request_[CommentFeed]): CommentsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[CommentsResource]
   }
 }

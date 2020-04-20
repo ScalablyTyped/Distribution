@@ -24,7 +24,6 @@ object JSONAnimationFrame {
   @scala.inline
   def apply(duration: Double, frame: String | integer, key: String): JSONAnimationFrame = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JSONAnimationFrame]
   }
 }

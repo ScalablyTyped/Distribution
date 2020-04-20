@@ -19,7 +19,6 @@ object IFactory {
   @scala.inline
   def apply(createNew: String => IModelDB): IFactory = {
     val __obj = js.Dynamic.literal(createNew = js.Any.fromFunction1(createNew))
-  
     __obj.asInstanceOf[IFactory]
   }
 }

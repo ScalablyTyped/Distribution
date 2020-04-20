@@ -25,7 +25,7 @@ class OnClickMicroflow protected () extends OnClickBehavior {
   ) = this()
   @JSName("model")
   var model_FOnClickMicroflow: IModel = js.native
-  def microflowSettings(): MicroflowSettings = js.native
+  def microflowSettings: MicroflowSettings = js.native
   def microflowSettings(newValue: MicroflowSettings): js.Any = js.native
 }
 

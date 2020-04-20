@@ -13,7 +13,6 @@ object PickImpllegacyParameters {
   @scala.inline
   def apply(legacyParameters: String): PickImpllegacyParameters = {
     val __obj = js.Dynamic.literal(legacyParameters = legacyParameters.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpllegacyParameters]
   }
 }

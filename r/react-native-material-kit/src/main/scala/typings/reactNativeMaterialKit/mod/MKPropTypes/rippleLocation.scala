@@ -12,10 +12,8 @@ trait rippleLocation extends js.Object
 
 object rippleLocation {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.reactNativeMaterialKit.reactNativeMaterialKitStrings.center = "center".asInstanceOf[typings.reactNativeMaterialKit.reactNativeMaterialKitStrings.center]
   @scala.inline
-  def center: typings.reactNativeMaterialKit.reactNativeMaterialKitStrings.center = this.cast("center")
-  @scala.inline
-  def tapLocation: typings.reactNativeMaterialKit.reactNativeMaterialKitStrings.tapLocation = this.cast("tapLocation")
+  def tapLocation: typings.reactNativeMaterialKit.reactNativeMaterialKitStrings.tapLocation = "tapLocation".asInstanceOf[typings.reactNativeMaterialKit.reactNativeMaterialKitStrings.tapLocation]
 }
 

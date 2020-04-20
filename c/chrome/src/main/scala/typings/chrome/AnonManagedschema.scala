@@ -12,7 +12,6 @@ object AnonManagedschema {
   @scala.inline
   def apply(managed_schema: String): AnonManagedschema = {
     val __obj = js.Dynamic.literal(managed_schema = managed_schema.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonManagedschema]
   }
 }

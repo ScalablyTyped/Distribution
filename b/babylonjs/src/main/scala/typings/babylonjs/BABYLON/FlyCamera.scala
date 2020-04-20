@@ -83,7 +83,7 @@ class FlyCamera protected () extends TargetCamera {
     * Gets the input sensibility for mouse input.
     * Higher values reduce sensitivity.
     */
-  def angularSensibility(): Double = js.native
+  def angularSensibility: Double = js.native
   /**
     * Sets the input sensibility for a mouse input.
     * Higher values reduce sensitivity.
@@ -92,7 +92,7 @@ class FlyCamera protected () extends TargetCamera {
   /**
     * Get the mask that the camera ignores in collision events.
     */
-  def collisionMask(): Double = js.native
+  def collisionMask: Double = js.native
   /**
     * Set the mask that the camera ignores in collision events.
     */
@@ -100,12 +100,12 @@ class FlyCamera protected () extends TargetCamera {
   /**
     * Get the keys for camera movement backward.
     */
-  def keysBackward(): js.Array[Double] = js.native
+  def keysBackward: js.Array[Double] = js.native
   def keysBackward(value: js.Array[Double]): js.Any = js.native
   /**
     * Get the keys for camera movement down.
     */
-  def keysDown(): js.Array[Double] = js.native
+  def keysDown: js.Array[Double] = js.native
   /**
     * Set the keys for camera movement down.
     */
@@ -113,7 +113,7 @@ class FlyCamera protected () extends TargetCamera {
   /**
     * Get the keys for camera movement forward.
     */
-  def keysForward(): js.Array[Double] = js.native
+  def keysForward: js.Array[Double] = js.native
   /**
     * Set the keys for camera movement forward.
     */
@@ -121,7 +121,7 @@ class FlyCamera protected () extends TargetCamera {
   /**
     * Get the keys for camera movement left.
     */
-  def keysLeft(): js.Array[Double] = js.native
+  def keysLeft: js.Array[Double] = js.native
   /**
     * Set the keys for camera movement left.
     */
@@ -129,7 +129,7 @@ class FlyCamera protected () extends TargetCamera {
   /**
     * Set the keys for camera movement right.
     */
-  def keysRight(): js.Array[Double] = js.native
+  def keysRight: js.Array[Double] = js.native
   /**
     * Set the keys for camera movement right.
     */
@@ -137,7 +137,7 @@ class FlyCamera protected () extends TargetCamera {
   /**
     * Get the keys for camera movement up.
     */
-  def keysUp(): js.Array[Double] = js.native
+  def keysUp: js.Array[Double] = js.native
   /**
     * Set the keys for camera movement up.
     */

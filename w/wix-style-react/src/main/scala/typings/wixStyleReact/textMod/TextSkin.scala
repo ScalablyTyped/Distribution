@@ -15,16 +15,14 @@ trait TextSkin extends js.Object
 
 object TextSkin {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def disabled: typings.wixStyleReact.wixStyleReactStrings.disabled = "disabled".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.disabled]
   @scala.inline
-  def disabled: typings.wixStyleReact.wixStyleReactStrings.disabled = this.cast("disabled")
+  def error: typings.wixStyleReact.wixStyleReactStrings.error = "error".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.error]
   @scala.inline
-  def error: typings.wixStyleReact.wixStyleReactStrings.error = this.cast("error")
+  def premium: typings.wixStyleReact.wixStyleReactStrings.premium = "premium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.premium]
   @scala.inline
-  def premium: typings.wixStyleReact.wixStyleReactStrings.premium = this.cast("premium")
+  def standard: typings.wixStyleReact.wixStyleReactStrings.standard = "standard".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.standard]
   @scala.inline
-  def standard: typings.wixStyleReact.wixStyleReactStrings.standard = this.cast("standard")
-  @scala.inline
-  def success: typings.wixStyleReact.wixStyleReactStrings.success = this.cast("success")
+  def success: typings.wixStyleReact.wixStyleReactStrings.success = "success".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.success]
 }
 

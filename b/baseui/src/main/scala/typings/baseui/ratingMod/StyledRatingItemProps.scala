@@ -24,7 +24,6 @@ object StyledRatingItemProps {
     $theme: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Theme */ js.Any
   ): StyledRatingItemProps = {
     val __obj = js.Dynamic.literal($index = $index.asInstanceOf[js.Any], $isActive = $isActive.asInstanceOf[js.Any], $isSelected = $isSelected.asInstanceOf[js.Any], $theme = $theme.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StyledRatingItemProps]
   }
 }

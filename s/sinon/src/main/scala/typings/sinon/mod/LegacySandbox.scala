@@ -13,7 +13,6 @@ object LegacySandbox {
   @scala.inline
   def apply(sandbox: Anon0): LegacySandbox = {
     val __obj = js.Dynamic.literal(sandbox = sandbox.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LegacySandbox]
   }
 }

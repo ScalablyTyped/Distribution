@@ -12,7 +12,6 @@ object AnonAuthorization {
   @scala.inline
   def apply(Authorization: String): AnonAuthorization = {
     val __obj = js.Dynamic.literal(Authorization = Authorization.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAuthorization]
   }
 }

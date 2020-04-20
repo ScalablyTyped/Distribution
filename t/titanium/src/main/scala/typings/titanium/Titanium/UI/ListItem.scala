@@ -11,175 +11,130 @@ import scala.scalajs.js.annotation._
 /**
 		 * A list item is an individual item in a list section.
 		 */
-trait ListItem extends Proxy {
+@JSGlobal("Titanium.UI.ListItem")
+@js.native
+class ListItem () extends Proxy {
   /**
   			 * Sets an accessory on the right side of an item.
   			 */
-  var accessoryType: Double
+  var accessoryType: Double = js.native
   /**
   			 * Background color of the view, as a color name or hex triplet.
   			 */
-  var backgroundColor: String
+  var backgroundColor: String = js.native
   /**
   			 * Background gradient to render when the item is not selected.
   			 */
-  var backgroundGradient: Gradient
+  var backgroundGradient: Gradient = js.native
   /**
   			 * Background image to render when the item is not selected.
   			 */
-  var backgroundImage: String
+  var backgroundImage: String = js.native
   /**
   			 * Specifies if the item can be deleted by a user initiated action.
   			 */
-  var canEdit: Boolean
+  var canEdit: Boolean = js.native
   /**
   			 * Specifies if the item can be inserted by a user initiated action.
   			 */
-  var canInsert: Boolean
+  var canInsert: Boolean = js.native
   /**
   			 * Specifies if the item can be reordered within the list view by a user initiated action.
   			 */
-  var canMove: Boolean
+  var canMove: Boolean = js.native
   /**
   			 * Default text color of the item when not selected, as a color name or hex triplet.
   			 */
-  var color: String
+  var color: String = js.native
   /**
   			 * Specifies custom action items to be shown when when a list item is edited.
   			 */
-  var editActions: js.Array[RowActionType]
+  var editActions: js.Array[RowActionType] = js.native
   /**
   			 * Font to use for the item title.
   			 */
-  var font: Font
+  var font: Font = js.native
   /**
   			 * Row height in platform-specific units.
   			 */
-  var height: Double | String
+  var height: Double | String = js.native
   /**
   			 * Image to render in the image area of the item, specified as a local path or URL.
   			 */
-  var image: String
+  var image: String = js.native
   /**
   			 * A user defined string that gets passed to events.
   			 */
-  var itemId: String
+  var itemId: String = js.native
   /**
   			 * The text to match against when the [ListView](Titanium.UI.ListView) is performing a search.
   			 */
-  var searchableText: String
+  var searchableText: String = js.native
   /**
   			 * Background color of the view, as a color name or hex triplet when item is selected.
   			 */
-  var selectedBackgroundColor: String
+  var selectedBackgroundColor: String = js.native
   /**
   			 * Background gradient to render when the item is selected.
   			 */
-  var selectedBackgroundGradient: Gradient
+  var selectedBackgroundGradient: Gradient = js.native
   /**
   			 * Background image to render when the item is selected.
   			 */
-  var selectedBackgroundImage: String
+  var selectedBackgroundImage: String = js.native
   /**
   			 * Color to use for the item title when the item is selected, as a color name or hex triplet.
   			 */
-  var selectedColor: String
+  var selectedColor: String = js.native
   /**
   			 * Color to use for the item subtitle when the item is selected, as a color name or hex triplet.
   			 */
-  var selectedSubtitleColor: String
+  var selectedSubtitleColor: String = js.native
   /**
   			 * Selection style constant to control the selection color.
   			 */
-  var selectionStyle: Double
+  var selectionStyle: Double = js.native
   /**
   			 * Subtitle to set in the text area of the item.
   			 */
-  var subtitle: String
+  var subtitle: String = js.native
   /**
   			 * Default text color of the subtitle, as a color name or hex triplet.
   			 */
-  var subtitleColor: String
+  var subtitleColor: String = js.native
   /**
   			 * Title to set in the text area of the item.
   			 */
-  var title: String
+  var title: String = js.native
   /**
   			 * Gets the value of the <Titanium.UI.ListItem.editActions> property.
+  			 * @deprecated Access <Titanium.UI.ListItem.editActions> instead.
   			 */
-  def getEditActions(): js.Array[RowActionType]
+  def getEditActions(): js.Array[RowActionType] = js.native
   /**
   			 * Gets the value of the <Titanium.UI.ListItem.selectedColor> property.
+  			 * @deprecated Access <Titanium.UI.ListItem.selectedColor> instead.
   			 */
-  def getSelectedColor(): String
+  def getSelectedColor(): String = js.native
   /**
   			 * Gets the value of the <Titanium.UI.ListItem.selectedSubtitleColor> property.
+  			 * @deprecated Access <Titanium.UI.ListItem.selectedSubtitleColor> instead.
   			 */
-  def getSelectedSubtitleColor(): String
+  def getSelectedSubtitleColor(): String = js.native
   /**
   			 * Sets the value of the <Titanium.UI.ListItem.editActions> property.
+  			 * @deprecated Set the value using <Titanium.UI.ListItem.editActions> instead.
   			 */
-  def setEditActions(editActions: js.Array[RowActionType]): Unit
+  def setEditActions(editActions: js.Array[RowActionType]): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.ListItem.selectedColor> property.
+  			 * @deprecated Set the value using <Titanium.UI.ListItem.selectedColor> instead.
   			 */
-  def setSelectedColor(selectedColor: String): Unit
+  def setSelectedColor(selectedColor: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.ListItem.selectedSubtitleColor> property.
+  			 * @deprecated Set the value using <Titanium.UI.ListItem.selectedSubtitleColor> instead.
   			 */
-  def setSelectedSubtitleColor(selectedSubtitleColor: String): Unit
-}
-
-object ListItem {
-  @scala.inline
-  def apply(
-    accessoryType: Double,
-    addEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    apiName: String,
-    applyProperties: js.Any => Unit,
-    backgroundColor: String,
-    backgroundGradient: Gradient,
-    backgroundImage: String,
-    bubbleParent: Boolean,
-    canEdit: Boolean,
-    canInsert: Boolean,
-    canMove: Boolean,
-    color: String,
-    editActions: js.Array[RowActionType],
-    fireEvent: (String, js.Any) => Unit,
-    font: Font,
-    getApiName: () => String,
-    getBubbleParent: () => Boolean,
-    getEditActions: () => js.Array[RowActionType],
-    getSelectedColor: () => String,
-    getSelectedSubtitleColor: () => String,
-    height: Double | String,
-    image: String,
-    itemId: String,
-    removeEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    searchableText: String,
-    selectedBackgroundColor: String,
-    selectedBackgroundGradient: Gradient,
-    selectedBackgroundImage: String,
-    selectedColor: String,
-    selectedSubtitleColor: String,
-    selectionStyle: Double,
-    setBubbleParent: Boolean => Unit,
-    setEditActions: js.Array[RowActionType] => Unit,
-    setSelectedColor: String => Unit,
-    setSelectedSubtitleColor: String => Unit,
-    subtitle: String,
-    subtitleColor: String,
-    title: String,
-    getLifecycleContainer: () => Window | TabGroup = null,
-    lifecycleContainer: Window | TabGroup = null,
-    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ Window, Unit]) with (js.Function1[/* lifecycleContainer */ TabGroup, Unit]) = null
-  ): ListItem = {
-    val __obj = js.Dynamic.literal(accessoryType = accessoryType.asInstanceOf[js.Any], addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName.asInstanceOf[js.Any], applyProperties = js.Any.fromFunction1(applyProperties), backgroundColor = backgroundColor.asInstanceOf[js.Any], backgroundGradient = backgroundGradient.asInstanceOf[js.Any], backgroundImage = backgroundImage.asInstanceOf[js.Any], bubbleParent = bubbleParent.asInstanceOf[js.Any], canEdit = canEdit.asInstanceOf[js.Any], canInsert = canInsert.asInstanceOf[js.Any], canMove = canMove.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], editActions = editActions.asInstanceOf[js.Any], fireEvent = js.Any.fromFunction2(fireEvent), font = font.asInstanceOf[js.Any], getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getEditActions = js.Any.fromFunction0(getEditActions), getSelectedColor = js.Any.fromFunction0(getSelectedColor), getSelectedSubtitleColor = js.Any.fromFunction0(getSelectedSubtitleColor), height = height.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], itemId = itemId.asInstanceOf[js.Any], removeEventListener = js.Any.fromFunction2(removeEventListener), searchableText = searchableText.asInstanceOf[js.Any], selectedBackgroundColor = selectedBackgroundColor.asInstanceOf[js.Any], selectedBackgroundGradient = selectedBackgroundGradient.asInstanceOf[js.Any], selectedBackgroundImage = selectedBackgroundImage.asInstanceOf[js.Any], selectedColor = selectedColor.asInstanceOf[js.Any], selectedSubtitleColor = selectedSubtitleColor.asInstanceOf[js.Any], selectionStyle = selectionStyle.asInstanceOf[js.Any], setBubbleParent = js.Any.fromFunction1(setBubbleParent), setEditActions = js.Any.fromFunction1(setEditActions), setSelectedColor = js.Any.fromFunction1(setSelectedColor), setSelectedSubtitleColor = js.Any.fromFunction1(setSelectedSubtitleColor), subtitle = subtitle.asInstanceOf[js.Any], subtitleColor = subtitleColor.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
-    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
-    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ListItem]
-  }
+  def setSelectedSubtitleColor(selectedSubtitleColor: String): Unit = js.native
 }
 

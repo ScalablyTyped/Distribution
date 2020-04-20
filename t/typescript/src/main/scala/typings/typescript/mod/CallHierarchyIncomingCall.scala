@@ -13,7 +13,6 @@ object CallHierarchyIncomingCall {
   @scala.inline
   def apply(from: CallHierarchyItem, fromSpans: js.Array[TextSpan]): CallHierarchyIncomingCall = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], fromSpans = fromSpans.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CallHierarchyIncomingCall]
   }
 }

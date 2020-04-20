@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait rmcTabsProps {
   @scala.inline
-  def DefaultTabBarProps: PropsType.type = typings.rmcTabs.defaultTabBarMod.PropsType
+  def DefaultTabBarProps: PropsType.type = PropsType
   type DefaultTabBarProps = PropsType
   @scala.inline
   def TabPaneProps: typings.rmcTabs.tabPaneMod.PropsType.type = typings.rmcTabs.tabPaneMod.PropsType

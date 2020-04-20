@@ -12,7 +12,6 @@ object ServiceWorkerDefaultOption {
   @scala.inline
   def apply(assets: js.Array[String]): ServiceWorkerDefaultOption = {
     val __obj = js.Dynamic.literal(assets = assets.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ServiceWorkerDefaultOption]
   }
 }

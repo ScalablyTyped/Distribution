@@ -16,7 +16,6 @@ object AnonValueSetArray {
   @scala.inline
   def apply(valueSet: js.Array[CompletionItemTag]): AnonValueSetArray = {
     val __obj = js.Dynamic.literal(valueSet = valueSet.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonValueSetArray]
   }
 }

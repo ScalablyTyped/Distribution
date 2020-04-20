@@ -27,7 +27,6 @@ object Scrollable {
     shouldClipSubject: Boolean
   ): Scrollable = {
     val __obj = js.Dynamic.literal(frameClient = frameClient.asInstanceOf[js.Any], pageMarginBox = pageMarginBox.asInstanceOf[js.Any], scroll = scroll.asInstanceOf[js.Any], scrollSize = scrollSize.asInstanceOf[js.Any], shouldClipSubject = shouldClipSubject.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Scrollable]
   }
 }

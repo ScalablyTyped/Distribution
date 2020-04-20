@@ -149,7 +149,6 @@ object PDFJSStatic {
     workerSrc: String
   ): PDFJSStatic = {
     val __obj = js.Dynamic.literal(PDFSinglePageViewer = js.Any.fromFunction1(PDFSinglePageViewer), PDFViewer = js.Any.fromFunction1(PDFViewer), cMapPacked = cMapPacked.asInstanceOf[js.Any], cMapUrl = cMapUrl.asInstanceOf[js.Any], disableAutoFetch = disableAutoFetch.asInstanceOf[js.Any], disableCreateObjectURL = disableCreateObjectURL.asInstanceOf[js.Any], disableFontFace = disableFontFace.asInstanceOf[js.Any], disableFullscreen = disableFullscreen.asInstanceOf[js.Any], disableRange = disableRange.asInstanceOf[js.Any], disableStream = disableStream.asInstanceOf[js.Any], disableTextLayer = disableTextLayer.asInstanceOf[js.Any], disableWebGL = disableWebGL.asInstanceOf[js.Any], disableWorker = disableWorker.asInstanceOf[js.Any], imageResourcesPath = imageResourcesPath.asInstanceOf[js.Any], isEvalSupported = isEvalSupported.asInstanceOf[js.Any], maxCanvasPixels = maxCanvasPixels.asInstanceOf[js.Any], maxImageSize = maxImageSize.asInstanceOf[js.Any], openExternalLinksInNewWindow = openExternalLinksInNewWindow.asInstanceOf[js.Any], pdfBug = pdfBug.asInstanceOf[js.Any], postMessageTransfers = postMessageTransfers.asInstanceOf[js.Any], useOnlyCssZoom = useOnlyCssZoom.asInstanceOf[js.Any], verbosity = verbosity.asInstanceOf[js.Any], workerSrc = workerSrc.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PDFJSStatic]
   }
 }

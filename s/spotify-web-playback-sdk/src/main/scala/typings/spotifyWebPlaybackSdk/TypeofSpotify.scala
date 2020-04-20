@@ -15,7 +15,6 @@ object TypeofSpotify {
   @scala.inline
   def apply(SpotifyPlayer: Instantiable1[/* options */ PlayerInit, SpotifyPlayer]): TypeofSpotify = {
     val __obj = js.Dynamic.literal(SpotifyPlayer = SpotifyPlayer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofSpotify]
   }
 }

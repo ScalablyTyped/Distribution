@@ -14,10 +14,8 @@ trait MFBuiltInDocumentClass extends js.Object
 
 object MFBuiltInDocumentClass {
   @scala.inline
-  def OtherDocument: `1` = this.cast(1)
+  def OtherDocument: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def UnclassifiedDocument: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UnclassifiedDocument: `0` = 0.asInstanceOf[`0`]
 }
 

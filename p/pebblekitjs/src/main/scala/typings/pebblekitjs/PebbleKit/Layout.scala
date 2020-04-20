@@ -13,7 +13,6 @@ object Layout {
   @scala.inline
   def apply(icon: String, subtitleTemplateString: String): Layout = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], subtitleTemplateString = subtitleTemplateString.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Layout]
   }
 }

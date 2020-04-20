@@ -16,7 +16,6 @@ object OriginGroupMember {
   @scala.inline
   def apply(OriginId: String): OriginGroupMember = {
     val __obj = js.Dynamic.literal(OriginId = OriginId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OriginGroupMember]
   }
 }

@@ -6,7 +6,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ListProxySessionsResponse extends js.Object {
+  /**
+    * The token to use to retrieve the next page of results.
+    */
   var NextToken: js.UndefOr[NextTokenString] = js.native
+  /**
+    * The proxy session details.
+    */
   var ProxySessions: js.UndefOr[typings.awsSdk.chimeMod.ProxySessions] = js.native
 }
 

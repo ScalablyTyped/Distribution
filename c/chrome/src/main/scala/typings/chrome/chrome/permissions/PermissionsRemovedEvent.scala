@@ -17,7 +17,6 @@ object PermissionsRemovedEvent {
   @scala.inline
   def apply(addListener: js.Function1[/* permissions */ Permissions, Unit] => Unit): PermissionsRemovedEvent = {
     val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction1(addListener))
-  
     __obj.asInstanceOf[PermissionsRemovedEvent]
   }
 }

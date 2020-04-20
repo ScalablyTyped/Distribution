@@ -13,12 +13,10 @@ trait UniqueByStringPredicate extends js.Object
 
 object UniqueByStringPredicate {
   @scala.inline
-  def base: typings.globStream.globStreamStrings.base = this.cast("base")
+  def base: typings.globStream.globStreamStrings.base = "base".asInstanceOf[typings.globStream.globStreamStrings.base]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cwd: typings.globStream.globStreamStrings.cwd = "cwd".asInstanceOf[typings.globStream.globStreamStrings.cwd]
   @scala.inline
-  def cwd: typings.globStream.globStreamStrings.cwd = this.cast("cwd")
-  @scala.inline
-  def path: typings.globStream.globStreamStrings.path = this.cast("path")
+  def path: typings.globStream.globStreamStrings.path = "path".asInstanceOf[typings.globStream.globStreamStrings.path]
 }
 

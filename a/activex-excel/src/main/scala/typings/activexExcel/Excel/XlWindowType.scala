@@ -20,16 +20,14 @@ trait XlWindowType extends js.Object
 
 object XlWindowType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlChartAsWindow: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xlChartAsWindow: `5` = this.cast(5)
+  def xlChartInPlace: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlChartInPlace: `4` = this.cast(4)
+  def xlClipboard: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlClipboard: `3` = this.cast(3)
+  def xlInfo: `-4129` = -4129.asInstanceOf[`-4129`]
   @scala.inline
-  def xlInfo: `-4129` = this.cast(-4129)
-  @scala.inline
-  def xlWorkbook: `1` = this.cast(1)
+  def xlWorkbook: `1` = 1.asInstanceOf[`1`]
 }
 

@@ -31,7 +31,6 @@ object AnonBasename {
   @scala.inline
   def apply(basename: String, dirname: String, ext: String, extname: String, filename: String): AnonBasename = {
     val __obj = js.Dynamic.literal(basename = basename.asInstanceOf[js.Any], dirname = dirname.asInstanceOf[js.Any], ext = ext.asInstanceOf[js.Any], extname = extname.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBasename]
   }
 }

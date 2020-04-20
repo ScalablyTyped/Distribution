@@ -16,7 +16,6 @@ object GetClusterIdentityOidc {
   @scala.inline
   def apply(issuer: String): GetClusterIdentityOidc = {
     val __obj = js.Dynamic.literal(issuer = issuer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetClusterIdentityOidc]
   }
 }

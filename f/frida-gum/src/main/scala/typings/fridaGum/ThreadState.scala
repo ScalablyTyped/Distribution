@@ -15,16 +15,14 @@ trait ThreadState extends js.Object
 
 object ThreadState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def halted: typings.fridaGum.fridaGumStrings.halted = "halted".asInstanceOf[typings.fridaGum.fridaGumStrings.halted]
   @scala.inline
-  def halted: typings.fridaGum.fridaGumStrings.halted = this.cast("halted")
+  def running: typings.fridaGum.fridaGumStrings.running = "running".asInstanceOf[typings.fridaGum.fridaGumStrings.running]
   @scala.inline
-  def running: typings.fridaGum.fridaGumStrings.running = this.cast("running")
+  def stopped: typings.fridaGum.fridaGumStrings.stopped = "stopped".asInstanceOf[typings.fridaGum.fridaGumStrings.stopped]
   @scala.inline
-  def stopped: typings.fridaGum.fridaGumStrings.stopped = this.cast("stopped")
+  def uninterruptible: typings.fridaGum.fridaGumStrings.uninterruptible = "uninterruptible".asInstanceOf[typings.fridaGum.fridaGumStrings.uninterruptible]
   @scala.inline
-  def uninterruptible: typings.fridaGum.fridaGumStrings.uninterruptible = this.cast("uninterruptible")
-  @scala.inline
-  def waiting: typings.fridaGum.fridaGumStrings.waiting = this.cast("waiting")
+  def waiting: typings.fridaGum.fridaGumStrings.waiting = "waiting".asInstanceOf[typings.fridaGum.fridaGumStrings.waiting]
 }
 

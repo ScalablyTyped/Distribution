@@ -8,8 +8,9 @@ import scala.scalajs.js.annotation._
 /**
 		 * An application shortcut.
 		 */
+@JSGlobal("Titanium.UI.ShortcutItem")
 @js.native
-trait ShortcutItem extends Proxy {
+class ShortcutItem () extends Proxy {
   /**
   			 * Description of the shortcut.
   			 */
@@ -21,25 +22,30 @@ trait ShortcutItem extends Proxy {
   /**
   			 * Determines shortcut id.
   			 */
-  var id: String = js.native
+  @JSName("id")
+  var id_ShortcutItem: String = js.native
   /**
   			 * Title of the shortcut.
   			 */
   var title: String = js.native
   /**
   			 * Gets the value of the <Titanium.UI.ShortcutItem.description> property.
+  			 * @deprecated Access <Titanium.UI.ShortcutItem.description> instead.
   			 */
   def getDescription(): String = js.native
   /**
   			 * Gets the value of the <Titanium.UI.ShortcutItem.icon> property.
+  			 * @deprecated Access <Titanium.UI.ShortcutItem.icon> instead.
   			 */
   def getIcon(): String | Double = js.native
   /**
   			 * Gets the value of the <Titanium.UI.ShortcutItem.id> property.
+  			 * @deprecated Access <Titanium.UI.ShortcutItem.id> instead.
   			 */
   def getId(): String = js.native
   /**
   			 * Gets the value of the <Titanium.UI.ShortcutItem.title> property.
+  			 * @deprecated Access <Titanium.UI.ShortcutItem.title> instead.
   			 */
   def getTitle(): String = js.native
   /**
@@ -52,22 +58,23 @@ trait ShortcutItem extends Proxy {
   def pin(): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.ShortcutItem.description> property.
+  			 * @deprecated Set the value using <Titanium.UI.ShortcutItem.description> instead.
   			 */
   def setDescription(description: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.ShortcutItem.icon> property.
+  			 * @deprecated Set the value using <Titanium.UI.ShortcutItem.icon> instead.
   			 */
   def setIcon(icon: String): Unit = js.native
-  /**
-  			 * Sets the value of the <Titanium.UI.ShortcutItem.icon> property.
-  			 */
   def setIcon(icon: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.ShortcutItem.id> property.
+  			 * @deprecated Set the value using <Titanium.UI.ShortcutItem.id> instead.
   			 */
   def setId(id: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.ShortcutItem.title> property.
+  			 * @deprecated Set the value using <Titanium.UI.ShortcutItem.title> instead.
   			 */
   def setTitle(title: String): Unit = js.native
   /**

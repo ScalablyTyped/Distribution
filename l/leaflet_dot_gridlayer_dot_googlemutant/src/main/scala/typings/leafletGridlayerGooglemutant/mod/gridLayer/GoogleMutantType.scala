@@ -14,14 +14,12 @@ trait GoogleMutantType extends js.Object
 
 object GoogleMutantType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def hybrid: typings.leafletGridlayerGooglemutant.leafletGridlayerGooglemutantStrings.hybrid = "hybrid".asInstanceOf[typings.leafletGridlayerGooglemutant.leafletGridlayerGooglemutantStrings.hybrid]
   @scala.inline
-  def hybrid: typings.leafletGridlayerGooglemutant.leafletGridlayerGooglemutantStrings.hybrid = this.cast("hybrid")
+  def roadmap: typings.leafletGridlayerGooglemutant.leafletGridlayerGooglemutantStrings.roadmap = "roadmap".asInstanceOf[typings.leafletGridlayerGooglemutant.leafletGridlayerGooglemutantStrings.roadmap]
   @scala.inline
-  def roadmap: typings.leafletGridlayerGooglemutant.leafletGridlayerGooglemutantStrings.roadmap = this.cast("roadmap")
+  def satellite: typings.leafletGridlayerGooglemutant.leafletGridlayerGooglemutantStrings.satellite = "satellite".asInstanceOf[typings.leafletGridlayerGooglemutant.leafletGridlayerGooglemutantStrings.satellite]
   @scala.inline
-  def satellite: typings.leafletGridlayerGooglemutant.leafletGridlayerGooglemutantStrings.satellite = this.cast("satellite")
-  @scala.inline
-  def terrain: typings.leafletGridlayerGooglemutant.leafletGridlayerGooglemutantStrings.terrain = this.cast("terrain")
+  def terrain: typings.leafletGridlayerGooglemutant.leafletGridlayerGooglemutantStrings.terrain = "terrain".asInstanceOf[typings.leafletGridlayerGooglemutant.leafletGridlayerGooglemutantStrings.terrain]
 }
 

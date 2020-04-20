@@ -20,7 +20,6 @@ object EditorWrappingInfo {
     wrappingColumn: Double
   ): EditorWrappingInfo = {
     val __obj = js.Dynamic.literal(isDominatedByLongLines = isDominatedByLongLines.asInstanceOf[js.Any], isViewportWrapping = isViewportWrapping.asInstanceOf[js.Any], isWordWrapMinified = isWordWrapMinified.asInstanceOf[js.Any], wrappingColumn = wrappingColumn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EditorWrappingInfo]
   }
 }

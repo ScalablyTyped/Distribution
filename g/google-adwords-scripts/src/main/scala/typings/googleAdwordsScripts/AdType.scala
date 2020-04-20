@@ -18,22 +18,20 @@ trait AdType extends js.Object
 
 object AdType {
   @scala.inline
-  def EXPANDED_TEXT_AD: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.EXPANDED_TEXT_AD = this.cast("EXPANDED_TEXT_AD")
+  def EXPANDED_TEXT_AD: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.EXPANDED_TEXT_AD = "EXPANDED_TEXT_AD".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.EXPANDED_TEXT_AD]
   @scala.inline
-  def IMAGE_AD: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.IMAGE_AD = this.cast("IMAGE_AD")
+  def IMAGE_AD: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.IMAGE_AD = "IMAGE_AD".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.IMAGE_AD]
   @scala.inline
-  def MOBILE_AD: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.MOBILE_AD = this.cast("MOBILE_AD")
+  def MOBILE_AD: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.MOBILE_AD = "MOBILE_AD".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.MOBILE_AD]
   @scala.inline
-  def MOBILE_IMAGE_AD: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.MOBILE_IMAGE_AD = this.cast("MOBILE_IMAGE_AD")
+  def MOBILE_IMAGE_AD: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.MOBILE_IMAGE_AD = "MOBILE_IMAGE_AD".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.MOBILE_IMAGE_AD]
   @scala.inline
-  def PRODUCT_AD: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.PRODUCT_AD = this.cast("PRODUCT_AD")
+  def PRODUCT_AD: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.PRODUCT_AD = "PRODUCT_AD".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.PRODUCT_AD]
   @scala.inline
-  def RICH_MEDIA_AD: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.RICH_MEDIA_AD = this.cast("RICH_MEDIA_AD")
+  def RICH_MEDIA_AD: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.RICH_MEDIA_AD = "RICH_MEDIA_AD".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.RICH_MEDIA_AD]
   @scala.inline
-  def TEMPLATE_AD: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.TEMPLATE_AD = this.cast("TEMPLATE_AD")
+  def TEMPLATE_AD: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.TEMPLATE_AD = "TEMPLATE_AD".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.TEMPLATE_AD]
   @scala.inline
-  def TEXT_AD: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.TEXT_AD = this.cast("TEXT_AD")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def TEXT_AD: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.TEXT_AD = "TEXT_AD".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.TEXT_AD]
 }
 

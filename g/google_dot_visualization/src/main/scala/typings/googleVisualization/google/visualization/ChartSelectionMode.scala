@@ -12,10 +12,8 @@ trait ChartSelectionMode extends js.Object
 
 object ChartSelectionMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def multiple: typings.googleVisualization.googleVisualizationStrings.multiple = "multiple".asInstanceOf[typings.googleVisualization.googleVisualizationStrings.multiple]
   @scala.inline
-  def multiple: typings.googleVisualization.googleVisualizationStrings.multiple = this.cast("multiple")
-  @scala.inline
-  def single: typings.googleVisualization.googleVisualizationStrings.single = this.cast("single")
+  def single: typings.googleVisualization.googleVisualizationStrings.single = "single".asInstanceOf[typings.googleVisualization.googleVisualizationStrings.single]
 }
 

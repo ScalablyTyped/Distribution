@@ -15,7 +15,7 @@ object datewithzoneMod extends js.Object {
     var date: Date = js.native
     var tzid: js.UndefOr[String | Null] = js.native
     def getTime(): Double = js.native
-    /* private */ def isUTC(): js.Any = js.native
+    /* private */ def isUTC: js.Any = js.native
     def rezonedDate(): Date = js.native
   }
   

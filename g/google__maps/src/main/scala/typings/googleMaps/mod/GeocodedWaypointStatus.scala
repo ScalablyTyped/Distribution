@@ -12,10 +12,8 @@ trait GeocodedWaypointStatus extends js.Object
 
 object GeocodedWaypointStatus {
   @scala.inline
-  def OK: typings.googleMaps.googleMapsStrings.OK = this.cast("OK")
+  def OK: typings.googleMaps.googleMapsStrings.OK = "OK".asInstanceOf[typings.googleMaps.googleMapsStrings.OK]
   @scala.inline
-  def ZERO_RESULTS: typings.googleMaps.googleMapsStrings.ZERO_RESULTS = this.cast("ZERO_RESULTS")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ZERO_RESULTS: typings.googleMaps.googleMapsStrings.ZERO_RESULTS = "ZERO_RESULTS".asInstanceOf[typings.googleMaps.googleMapsStrings.ZERO_RESULTS]
 }
 

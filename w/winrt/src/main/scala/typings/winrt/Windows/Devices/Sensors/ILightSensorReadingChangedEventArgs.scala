@@ -12,7 +12,6 @@ object ILightSensorReadingChangedEventArgs {
   @scala.inline
   def apply(reading: LightSensorReading): ILightSensorReadingChangedEventArgs = {
     val __obj = js.Dynamic.literal(reading = reading.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ILightSensorReadingChangedEventArgs]
   }
 }

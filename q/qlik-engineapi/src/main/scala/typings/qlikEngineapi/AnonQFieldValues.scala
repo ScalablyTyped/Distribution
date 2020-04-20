@@ -13,7 +13,6 @@ object AnonQFieldValues {
   @scala.inline
   def apply(qFieldValues: js.Array[IFieldValue]): AnonQFieldValues = {
     val __obj = js.Dynamic.literal(qFieldValues = qFieldValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonQFieldValues]
   }
 }

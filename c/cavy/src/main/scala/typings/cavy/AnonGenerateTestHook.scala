@@ -13,7 +13,6 @@ object AnonGenerateTestHook {
   @scala.inline
   def apply(generateTestHook: TestHookGenerator): AnonGenerateTestHook = {
     val __obj = js.Dynamic.literal(generateTestHook = generateTestHook.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGenerateTestHook]
   }
 }

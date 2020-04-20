@@ -14,7 +14,6 @@ object AnonIsNew {
   @scala.inline
   def apply(isNew: `false`): AnonIsNew = {
     val __obj = js.Dynamic.literal(isNew = isNew.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsNew]
   }
 }

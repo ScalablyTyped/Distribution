@@ -13,12 +13,10 @@ trait Change extends js.Object
 
 object Change {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def delete: typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.delete = "delete".asInstanceOf[typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.delete]
   @scala.inline
-  def delete: typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.delete = this.cast("delete")
+  def equal: typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.equal = "equal".asInstanceOf[typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.equal]
   @scala.inline
-  def equal: typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.equal = this.cast("equal")
-  @scala.inline
-  def insert: typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.insert = this.cast("insert")
+  def insert: typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.insert = "insert".asInstanceOf[typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.insert]
 }
 

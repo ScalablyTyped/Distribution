@@ -13,7 +13,6 @@ object Window {
   @scala.inline
   def apply(PushNotification: PushNotificationStatic): Window = {
     val __obj = js.Dynamic.literal(PushNotification = PushNotification.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Window]
   }
 }

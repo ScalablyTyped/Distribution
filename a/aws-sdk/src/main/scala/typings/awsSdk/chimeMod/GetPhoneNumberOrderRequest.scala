@@ -16,7 +16,6 @@ object GetPhoneNumberOrderRequest {
   @scala.inline
   def apply(PhoneNumberOrderId: GuidString): GetPhoneNumberOrderRequest = {
     val __obj = js.Dynamic.literal(PhoneNumberOrderId = PhoneNumberOrderId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetPhoneNumberOrderRequest]
   }
 }

@@ -24,7 +24,6 @@ object IHealthComponent {
   @scala.inline
   def apply(max: Double, value: Double): IHealthComponent = {
     val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IHealthComponent]
   }
 }

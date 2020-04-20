@@ -15,7 +15,6 @@ object IConfig {
   @scala.inline
   def apply(api: ApiDefinition, routes: js.Array[IRoute]): IConfig = {
     val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IConfig]
   }
 }

@@ -1,9 +1,8 @@
 package typings.antd.badgeMod
 
-import typings.antd.antdStrings.error
-import typings.antd.antdStrings.processing
-import typings.antd.antdStrings.success
-import typings.antd.antdStrings.warning
+import typings.antd.colorsMod.PresetColorType
+import typings.antd.colorsMod.PresetStatusColorType
+import typings.antd.typeMod.LiteralUnion
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import scala.scalajs.js
@@ -12,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 trait BadgeProps extends js.Object {
   var className: js.UndefOr[String] = js.undefined
-  var color: js.UndefOr[String] = js.undefined
+  var color: js.UndefOr[LiteralUnion[PresetColorType, String]] = js.undefined
   /** Number to show in badge */
   var count: js.UndefOr[ReactNode] = js.undefined
   /** whether to show red dot without number */
@@ -23,7 +22,7 @@ trait BadgeProps extends js.Object {
   var prefixCls: js.UndefOr[String] = js.undefined
   var scrollNumberPrefixCls: js.UndefOr[String] = js.undefined
   var showZero: js.UndefOr[Boolean] = js.undefined
-  var status: js.UndefOr[success | processing | typings.antd.antdStrings.default | error | warning] = js.undefined
+  var status: js.UndefOr[PresetStatusColorType] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
   var text: js.UndefOr[ReactNode] = js.undefined
   var title: js.UndefOr[String] = js.undefined
@@ -33,7 +32,7 @@ object BadgeProps {
   @scala.inline
   def apply(
     className: String = null,
-    color: String = null,
+    color: LiteralUnion[PresetColorType, String] = null,
     count: ReactNode = null,
     dot: js.UndefOr[Boolean] = js.undefined,
     offset: js.Tuple2[Double | String, Double | String] = null,
@@ -41,7 +40,7 @@ object BadgeProps {
     prefixCls: String = null,
     scrollNumberPrefixCls: String = null,
     showZero: js.UndefOr[Boolean] = js.undefined,
-    status: success | processing | typings.antd.antdStrings.default | error | warning = null,
+    status: PresetStatusColorType = null,
     style: CSSProperties = null,
     text: ReactNode = null,
     title: String = null

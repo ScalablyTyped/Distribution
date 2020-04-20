@@ -16,7 +16,6 @@ object StopLoggingRequest {
   @scala.inline
   def apply(Name: String): StopLoggingRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopLoggingRequest]
   }
 }

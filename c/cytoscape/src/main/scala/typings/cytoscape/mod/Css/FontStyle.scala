@@ -14,12 +14,10 @@ trait FontStyle extends js.Object
 
 object FontStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def italic: typings.cytoscape.cytoscapeStrings.italic = "italic".asInstanceOf[typings.cytoscape.cytoscapeStrings.italic]
   @scala.inline
-  def italic: typings.cytoscape.cytoscapeStrings.italic = this.cast("italic")
+  def normal: typings.cytoscape.cytoscapeStrings.normal = "normal".asInstanceOf[typings.cytoscape.cytoscapeStrings.normal]
   @scala.inline
-  def normal: typings.cytoscape.cytoscapeStrings.normal = this.cast("normal")
-  @scala.inline
-  def oblique: typings.cytoscape.cytoscapeStrings.oblique = this.cast("oblique")
+  def oblique: typings.cytoscape.cytoscapeStrings.oblique = "oblique".asInstanceOf[typings.cytoscape.cytoscapeStrings.oblique]
 }
 

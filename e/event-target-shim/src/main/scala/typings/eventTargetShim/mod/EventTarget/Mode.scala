@@ -13,12 +13,10 @@ trait Mode extends js.Object
 
 object Mode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def loose: typings.eventTargetShim.eventTargetShimStrings.loose = "loose".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.loose]
   @scala.inline
-  def loose: typings.eventTargetShim.eventTargetShimStrings.loose = this.cast("loose")
+  def standard: typings.eventTargetShim.eventTargetShimStrings.standard = "standard".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.standard]
   @scala.inline
-  def standard: typings.eventTargetShim.eventTargetShimStrings.standard = this.cast("standard")
-  @scala.inline
-  def strict: typings.eventTargetShim.eventTargetShimStrings.strict = this.cast("strict")
+  def strict: typings.eventTargetShim.eventTargetShimStrings.strict = "strict".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.strict]
 }
 

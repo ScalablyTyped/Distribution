@@ -55,7 +55,6 @@ object AccountProvider {
     refresh: Account => Thenable[Account | PromptFailedResult]
   ): AccountProvider = {
     val __obj = js.Dynamic.literal(autoOAuthCancelled = js.Any.fromFunction0(autoOAuthCancelled), clear = js.Any.fromFunction1(clear), getSecurityToken = js.Any.fromFunction2(getSecurityToken), initialize = js.Any.fromFunction1(initialize), prompt = js.Any.fromFunction0(prompt), refresh = js.Any.fromFunction1(refresh))
-  
     __obj.asInstanceOf[AccountProvider]
   }
 }

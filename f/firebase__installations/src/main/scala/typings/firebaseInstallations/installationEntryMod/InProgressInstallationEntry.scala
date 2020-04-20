@@ -22,7 +22,6 @@ object InProgressInstallationEntry {
   @scala.inline
   def apply(fid: String, registrationStatus: `1`, registrationTime: Double): InProgressInstallationEntry = {
     val __obj = js.Dynamic.literal(fid = fid.asInstanceOf[js.Any], registrationStatus = registrationStatus.asInstanceOf[js.Any], registrationTime = registrationTime.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InProgressInstallationEntry]
   }
 }

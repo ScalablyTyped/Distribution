@@ -16,7 +16,6 @@ object AnonOriginalEventTarget {
   @scala.inline
   def apply(originalEvent: Event_, target: AnonName, value: Date | js.Array[Date]): AnonOriginalEventTarget = {
     val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOriginalEventTarget]
   }
 }

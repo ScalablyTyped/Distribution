@@ -13,7 +13,6 @@ object TypeofCognitoIdentity {
   @scala.inline
   def apply(Types: TypeofCognitoIdentity): TypeofCognitoIdentity = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofCognitoIdentity]
   }
 }

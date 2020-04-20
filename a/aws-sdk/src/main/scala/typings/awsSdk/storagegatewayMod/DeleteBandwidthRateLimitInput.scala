@@ -17,7 +17,6 @@ object DeleteBandwidthRateLimitInput {
   @scala.inline
   def apply(BandwidthType: BandwidthType, GatewayARN: GatewayARN): DeleteBandwidthRateLimitInput = {
     val __obj = js.Dynamic.literal(BandwidthType = BandwidthType.asInstanceOf[js.Any], GatewayARN = GatewayARN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteBandwidthRateLimitInput]
   }
 }

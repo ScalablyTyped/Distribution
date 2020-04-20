@@ -12,7 +12,6 @@ object HookRunInContextOptions {
   @scala.inline
   def apply(coverageVariable: String, verbose: Boolean): HookRunInContextOptions = {
     val __obj = js.Dynamic.literal(coverageVariable = coverageVariable.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HookRunInContextOptions]
   }
 }

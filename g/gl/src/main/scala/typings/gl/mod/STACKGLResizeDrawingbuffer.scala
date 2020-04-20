@@ -13,7 +13,6 @@ object STACKGLResizeDrawingbuffer {
   @scala.inline
   def apply(resize: (GLint, GLint) => Unit): STACKGLResizeDrawingbuffer = {
     val __obj = js.Dynamic.literal(resize = js.Any.fromFunction2(resize))
-  
     __obj.asInstanceOf[STACKGLResizeDrawingbuffer]
   }
 }

@@ -34,6 +34,12 @@ trait BasemapToggleProperties extends WidgetProperties {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapToggle.html#viewModel)
     */
   var viewModel: js.UndefOr[BasemapToggleViewModelProperties] = js.undefined
+  /**
+    * The visible elements that are displayed within the widget. This property provides the ability to turn individual elements of the widget's display on/off.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapToggle.html#visibleElements)
+    */
+  var visibleElements: js.UndefOr[BasemapToggleVisibleElements] = js.undefined
 }
 
 object BasemapToggleProperties {
@@ -46,7 +52,8 @@ object BasemapToggleProperties {
     nextBasemap: BasemapProperties | String = null,
     titleVisible: js.UndefOr[Boolean] = js.undefined,
     view: MapViewProperties | SceneViewProperties = null,
-    viewModel: BasemapToggleViewModelProperties = null
+    viewModel: BasemapToggleViewModelProperties = null,
+    visibleElements: BasemapToggleVisibleElements = null
   ): BasemapToggleProperties = {
     val __obj = js.Dynamic.literal()
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
@@ -57,6 +64,7 @@ object BasemapToggleProperties {
     if (!js.isUndefined(titleVisible)) __obj.updateDynamic("titleVisible")(titleVisible.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel.asInstanceOf[js.Any])
+    if (visibleElements != null) __obj.updateDynamic("visibleElements")(visibleElements.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasemapToggleProperties]
   }
 }

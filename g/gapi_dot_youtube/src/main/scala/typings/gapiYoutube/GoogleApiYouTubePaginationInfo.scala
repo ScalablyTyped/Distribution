@@ -42,7 +42,6 @@ object GoogleApiYouTubePaginationInfo {
     prevPageToken: String
   ): GoogleApiYouTubePaginationInfo[T] = {
     val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], nextPageToken = nextPageToken.asInstanceOf[js.Any], pageInfo = pageInfo.asInstanceOf[js.Any], prevPageToken = prevPageToken.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GoogleApiYouTubePaginationInfo[T]]
   }
 }

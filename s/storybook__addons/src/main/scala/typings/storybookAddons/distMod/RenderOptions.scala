@@ -13,7 +13,6 @@ object RenderOptions {
   @scala.inline
   def apply(active: Boolean, key: String): RenderOptions = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RenderOptions]
   }
 }

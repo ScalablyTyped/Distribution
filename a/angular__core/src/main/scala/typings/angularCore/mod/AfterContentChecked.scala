@@ -17,7 +17,6 @@ object AfterContentChecked {
   @scala.inline
   def apply(ngAfterContentChecked: () => Unit): AfterContentChecked = {
     val __obj = js.Dynamic.literal(ngAfterContentChecked = js.Any.fromFunction0(ngAfterContentChecked))
-  
     __obj.asInstanceOf[AfterContentChecked]
   }
 }

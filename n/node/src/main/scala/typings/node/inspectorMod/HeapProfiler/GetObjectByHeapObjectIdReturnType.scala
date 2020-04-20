@@ -16,7 +16,6 @@ object GetObjectByHeapObjectIdReturnType {
   @scala.inline
   def apply(result: RemoteObject): GetObjectByHeapObjectIdReturnType = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetObjectByHeapObjectIdReturnType]
   }
 }

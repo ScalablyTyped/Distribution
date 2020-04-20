@@ -18,7 +18,6 @@ object AnonSet {
   @scala.inline
   def apply[TElement](set: Tween[TElement] => Unit): AnonSet[TElement] = {
     val __obj = js.Dynamic.literal(set = js.Any.fromFunction1(set))
-  
     __obj.asInstanceOf[AnonSet[TElement]]
   }
 }

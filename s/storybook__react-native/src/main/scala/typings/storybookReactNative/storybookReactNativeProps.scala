@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait storybookReactNativeProps {
   @scala.inline
-  def AbsolutePositionedKeyboardAwareViewProps: Props.type = typings.storybookReactNative.absolutePositionedKeyboardAwareViewMod.Props
+  def AbsolutePositionedKeyboardAwareViewProps: Props.type = Props
   type AbsolutePositionedKeyboardAwareViewProps = Props
   @scala.inline
   def BarProps: typings.storybookReactNative.barMod.Props.type = typings.storybookReactNative.barMod.Props

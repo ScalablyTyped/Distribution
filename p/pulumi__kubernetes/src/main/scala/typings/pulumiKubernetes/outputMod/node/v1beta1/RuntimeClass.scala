@@ -71,7 +71,6 @@ object RuntimeClass {
     scheduling: Scheduling
   ): RuntimeClass = {
     val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], handler = handler.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], overhead = overhead.asInstanceOf[js.Any], scheduling = scheduling.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RuntimeClass]
   }
 }

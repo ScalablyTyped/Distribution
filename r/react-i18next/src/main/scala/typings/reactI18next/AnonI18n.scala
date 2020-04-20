@@ -16,7 +16,6 @@ object AnonI18n {
   @scala.inline
   def apply(i18n: i18n, ready: Boolean, t: TFunction): AnonI18n = {
     val __obj = js.Dynamic.literal(i18n = i18n.asInstanceOf[js.Any], ready = ready.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonI18n]
   }
 }

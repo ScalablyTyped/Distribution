@@ -20,7 +20,6 @@ object SuspendGameServerGroupInput {
   @scala.inline
   def apply(GameServerGroupName: GameServerGroupNameOrArn, SuspendActions: GameServerGroupActions): SuspendGameServerGroupInput = {
     val __obj = js.Dynamic.literal(GameServerGroupName = GameServerGroupName.asInstanceOf[js.Any], SuspendActions = SuspendActions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SuspendGameServerGroupInput]
   }
 }

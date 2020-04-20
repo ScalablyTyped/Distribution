@@ -23,7 +23,6 @@ object BuildOptionGroupDefinition {
   @scala.inline
   def apply(displayName: String, isExpanded: Boolean, name: String): BuildOptionGroupDefinition = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], isExpanded = isExpanded.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BuildOptionGroupDefinition]
   }
 }

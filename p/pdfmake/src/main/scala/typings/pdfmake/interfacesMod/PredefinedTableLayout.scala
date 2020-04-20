@@ -9,16 +9,14 @@ import scala.scalajs.js.annotation._
   - typings.pdfmake.pdfmakeStrings.headerLineOnly
   - typings.pdfmake.pdfmakeStrings.lightHorizontalLines
 */
-trait PredefinedTableLayout extends TableLayout
+trait PredefinedTableLayout extends _TableLayout
 
 object PredefinedTableLayout {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def headerLineOnly: typings.pdfmake.pdfmakeStrings.headerLineOnly = "headerLineOnly".asInstanceOf[typings.pdfmake.pdfmakeStrings.headerLineOnly]
   @scala.inline
-  def headerLineOnly: typings.pdfmake.pdfmakeStrings.headerLineOnly = this.cast("headerLineOnly")
+  def lightHorizontalLines: typings.pdfmake.pdfmakeStrings.lightHorizontalLines = "lightHorizontalLines".asInstanceOf[typings.pdfmake.pdfmakeStrings.lightHorizontalLines]
   @scala.inline
-  def lightHorizontalLines: typings.pdfmake.pdfmakeStrings.lightHorizontalLines = this.cast("lightHorizontalLines")
-  @scala.inline
-  def noBorders: typings.pdfmake.pdfmakeStrings.noBorders = this.cast("noBorders")
+  def noBorders: typings.pdfmake.pdfmakeStrings.noBorders = "noBorders".asInstanceOf[typings.pdfmake.pdfmakeStrings.noBorders]
 }
 

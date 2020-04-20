@@ -32,7 +32,6 @@ object ClientsResource {
     users: UsersResource
   ): ClientsResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get), invitations = invitations.asInstanceOf[js.Any], list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update), users = users.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClientsResource]
   }
 }

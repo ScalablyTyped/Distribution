@@ -13,7 +13,6 @@ object PickImplinitialCheck {
   @scala.inline
   def apply(initialCheck: Boolean): PickImplinitialCheck = {
     val __obj = js.Dynamic.literal(initialCheck = initialCheck.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplinitialCheck]
   }
 }

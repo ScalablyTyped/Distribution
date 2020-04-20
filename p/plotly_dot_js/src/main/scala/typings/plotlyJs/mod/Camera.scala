@@ -15,7 +15,6 @@ object Camera {
   @scala.inline
   def apply(center: PartialPoint, eye: PartialPoint, up: PartialPoint): Camera = {
     val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], eye = eye.asInstanceOf[js.Any], up = up.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Camera]
   }
 }

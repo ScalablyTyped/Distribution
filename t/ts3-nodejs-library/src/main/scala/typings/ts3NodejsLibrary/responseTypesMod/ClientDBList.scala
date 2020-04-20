@@ -32,7 +32,6 @@ object ClientDBList {
     count: Double
   ): ClientDBList = {
     val __obj = js.Dynamic.literal(cldbid = cldbid.asInstanceOf[js.Any], client_created = client_created.asInstanceOf[js.Any], client_description = client_description.asInstanceOf[js.Any], client_lastconnected = client_lastconnected.asInstanceOf[js.Any], client_lastip = client_lastip.asInstanceOf[js.Any], client_login_name = client_login_name.asInstanceOf[js.Any], client_nickname = client_nickname.asInstanceOf[js.Any], client_totalconnections = client_totalconnections.asInstanceOf[js.Any], client_unique_identifier = client_unique_identifier.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClientDBList]
   }
 }

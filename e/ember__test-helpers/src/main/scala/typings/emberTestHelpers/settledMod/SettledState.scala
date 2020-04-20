@@ -22,7 +22,6 @@ object SettledState {
     pendingRequestCount: Double
   ): SettledState = {
     val __obj = js.Dynamic.literal(hasPendingRequests = hasPendingRequests.asInstanceOf[js.Any], hasPendingTimers = hasPendingTimers.asInstanceOf[js.Any], hasPendingWaiters = hasPendingWaiters.asInstanceOf[js.Any], hasRunLoop = hasRunLoop.asInstanceOf[js.Any], pendingRequestCount = pendingRequestCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SettledState]
   }
 }

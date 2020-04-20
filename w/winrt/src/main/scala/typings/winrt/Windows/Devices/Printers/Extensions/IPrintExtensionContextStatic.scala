@@ -12,7 +12,6 @@ object IPrintExtensionContextStatic {
   @scala.inline
   def apply(fromDeviceId: String => js.Any): IPrintExtensionContextStatic = {
     val __obj = js.Dynamic.literal(fromDeviceId = js.Any.fromFunction1(fromDeviceId))
-  
     __obj.asInstanceOf[IPrintExtensionContextStatic]
   }
 }

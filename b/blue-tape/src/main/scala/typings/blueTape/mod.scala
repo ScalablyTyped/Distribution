@@ -23,6 +23,7 @@ object mod extends js.Object {
   def createHarness(): js.Any = js.native
   def createStream(): ReadableStream = js.native
   def createStream(opts: StreamOptions): ReadableStream = js.native
+  def onFailure(cb: js.Function0[Unit]): Unit = js.native
   def onFinish(cb: js.Function0[Unit]): Unit = js.native
   def only(cb: TestCase): Unit = js.native
   def only(name: String, cb: TestCase): Unit = js.native

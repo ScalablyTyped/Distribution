@@ -15,12 +15,10 @@ trait Transport extends js.Object
 
 object Transport {
   @scala.inline
-  def ble: typings.std.stdStrings.ble = this.cast("ble")
+  def ble: typings.std.stdStrings.ble = "ble".asInstanceOf[typings.std.stdStrings.ble]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def nfc: nfc_ = "nfc".asInstanceOf[nfc_]
   @scala.inline
-  def nfc: nfc_ = this.cast("nfc")
-  @scala.inline
-  def usb: usb_ = this.cast("usb")
+  def usb: usb_ = "usb".asInstanceOf[usb_]
 }
 

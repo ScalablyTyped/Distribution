@@ -18,7 +18,6 @@ object AnonElement {
   @scala.inline
   def apply(element: Element, model: BaseModel[BaseEntity[BaseListener[_]], BaseModelListener]): AnonElement = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonElement]
   }
 }

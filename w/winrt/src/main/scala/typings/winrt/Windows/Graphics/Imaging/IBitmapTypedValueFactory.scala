@@ -13,7 +13,6 @@ object IBitmapTypedValueFactory {
   @scala.inline
   def apply(create: (js.Any, PropertyType) => BitmapTypedValue): IBitmapTypedValueFactory = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction2(create))
-  
     __obj.asInstanceOf[IBitmapTypedValueFactory]
   }
 }

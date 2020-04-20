@@ -16,7 +16,6 @@ object DeleteOriginEndpointRequest {
   @scala.inline
   def apply(Id: string): DeleteOriginEndpointRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteOriginEndpointRequest]
   }
 }

@@ -20,7 +20,6 @@ object GetMaintenanceWindowExecutionTaskRequest {
   @scala.inline
   def apply(TaskId: MaintenanceWindowExecutionTaskId, WindowExecutionId: MaintenanceWindowExecutionId): GetMaintenanceWindowExecutionTaskRequest = {
     val __obj = js.Dynamic.literal(TaskId = TaskId.asInstanceOf[js.Any], WindowExecutionId = WindowExecutionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetMaintenanceWindowExecutionTaskRequest]
   }
 }

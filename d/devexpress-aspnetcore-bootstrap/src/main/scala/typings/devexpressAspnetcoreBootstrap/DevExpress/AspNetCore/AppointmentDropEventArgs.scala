@@ -19,7 +19,6 @@ object AppointmentDropEventArgs {
     sender: Control
   ): AppointmentDropEventArgs = {
     val __obj = js.Dynamic.literal(dragInformation = dragInformation.asInstanceOf[js.Any], handled = handled.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AppointmentDropEventArgs]
   }
 }

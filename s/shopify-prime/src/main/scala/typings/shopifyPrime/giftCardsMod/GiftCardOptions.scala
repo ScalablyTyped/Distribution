@@ -24,7 +24,6 @@ object GiftCardOptions {
   @scala.inline
   def apply(order: String, query: String, status: String): GiftCardOptions = {
     val __obj = js.Dynamic.literal(order = order.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GiftCardOptions]
   }
 }

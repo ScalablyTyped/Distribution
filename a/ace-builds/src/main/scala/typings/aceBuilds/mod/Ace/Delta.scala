@@ -17,7 +17,6 @@ object Delta {
   @scala.inline
   def apply(action: insert | remove, end: Point, lines: js.Array[String], start: Point): Delta = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], lines = lines.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Delta]
   }
 }

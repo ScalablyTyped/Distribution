@@ -20,7 +20,7 @@ class InputAudioConfig () extends IInputAudioConfig {
   def this(properties: IInputAudioConfig) = this()
   /** InputAudioConfig audioEncoding. */
   @JSName("audioEncoding")
-  var audioEncoding_InputAudioConfig: AudioEncoding | String = js.native
+  var audioEncoding_InputAudioConfig: AudioEncoding | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.AudioEncoding * / any */ String) = js.native
   /** InputAudioConfig enableWordInfo. */
   @JSName("enableWordInfo")
   var enableWordInfo_InputAudioConfig: Boolean = js.native
@@ -29,7 +29,7 @@ class InputAudioConfig () extends IInputAudioConfig {
   var languageCode_InputAudioConfig: String = js.native
   /** InputAudioConfig modelVariant. */
   @JSName("modelVariant")
-  var modelVariant_InputAudioConfig: SpeechModelVariant | String = js.native
+  var modelVariant_InputAudioConfig: SpeechModelVariant | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.SpeechModelVariant * / any */ String) = js.native
   /** InputAudioConfig model. */
   @JSName("model")
   var model_InputAudioConfig: String = js.native

@@ -20,7 +20,6 @@ object CreatePartnerEventSourceRequest {
   @scala.inline
   def apply(Account: AccountId, Name: EventSourceName): CreatePartnerEventSourceRequest = {
     val __obj = js.Dynamic.literal(Account = Account.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreatePartnerEventSourceRequest]
   }
 }

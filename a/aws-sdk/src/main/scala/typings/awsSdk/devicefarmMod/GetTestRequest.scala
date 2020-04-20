@@ -16,7 +16,6 @@ object GetTestRequest {
   @scala.inline
   def apply(arn: AmazonResourceName): GetTestRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetTestRequest]
   }
 }

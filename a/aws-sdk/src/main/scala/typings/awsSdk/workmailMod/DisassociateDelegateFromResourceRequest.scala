@@ -24,7 +24,6 @@ object DisassociateDelegateFromResourceRequest {
   @scala.inline
   def apply(EntityId: WorkMailIdentifier, OrganizationId: OrganizationId, ResourceId: ResourceId): DisassociateDelegateFromResourceRequest = {
     val __obj = js.Dynamic.literal(EntityId = EntityId.asInstanceOf[js.Any], OrganizationId = OrganizationId.asInstanceOf[js.Any], ResourceId = ResourceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisassociateDelegateFromResourceRequest]
   }
 }

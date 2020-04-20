@@ -21,7 +21,6 @@ object ITextSnapshot {
     getText: TextSpan => String
   ): ITextSnapshot = {
     val __obj = js.Dynamic.literal(getLineFromLineNumber = js.Any.fromFunction1(getLineFromLineNumber), getLineFromPosition = js.Any.fromFunction1(getLineFromPosition), getLineNumberFromPosition = js.Any.fromFunction1(getLineNumberFromPosition), getText = js.Any.fromFunction1(getText))
-  
     __obj.asInstanceOf[ITextSnapshot]
   }
 }

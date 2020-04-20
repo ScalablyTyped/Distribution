@@ -12,7 +12,6 @@ object AnonEnumValuesAnonCaseSensitive {
   @scala.inline
   def apply(enumValues: AnonCaseSensitive): AnonEnumValuesAnonCaseSensitive = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumValuesAnonCaseSensitive]
   }
 }

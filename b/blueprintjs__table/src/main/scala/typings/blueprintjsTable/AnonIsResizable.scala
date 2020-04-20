@@ -13,7 +13,6 @@ object AnonIsResizable {
   @scala.inline
   def apply(isResizable: Boolean, minSize: Double): AnonIsResizable = {
     val __obj = js.Dynamic.literal(isResizable = isResizable.asInstanceOf[js.Any], minSize = minSize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsResizable]
   }
 }

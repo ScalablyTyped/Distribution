@@ -36,7 +36,6 @@ object IDialogProvider {
     setForceHtmlReload: Boolean => Unit
   ): IDialogProvider = {
     val __obj = js.Dynamic.literal($get = $get.asInstanceOf[js.Any], setDefaults = js.Any.fromFunction1(setDefaults), setForceBodyReload = js.Any.fromFunction1(setForceBodyReload), setForceHtmlReload = js.Any.fromFunction1(setForceHtmlReload))
-  
     __obj.asInstanceOf[IDialogProvider]
   }
 }

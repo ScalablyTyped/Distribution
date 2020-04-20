@@ -14,14 +14,12 @@ trait HookName extends js.Object
 
 object HookName {
   @scala.inline
-  def buildColonafter: typings.ionic.ionicStrings.buildColonafter = this.cast("build:after")
+  def buildColonafter: typings.ionic.ionicStrings.buildColonafter = "build:after".asInstanceOf[typings.ionic.ionicStrings.buildColonafter]
   @scala.inline
-  def buildColonbefore: typings.ionic.ionicStrings.buildColonbefore = this.cast("build:before")
+  def buildColonbefore: typings.ionic.ionicStrings.buildColonbefore = "build:before".asInstanceOf[typings.ionic.ionicStrings.buildColonbefore]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def serveColonafter: typings.ionic.ionicStrings.serveColonafter = "serve:after".asInstanceOf[typings.ionic.ionicStrings.serveColonafter]
   @scala.inline
-  def serveColonafter: typings.ionic.ionicStrings.serveColonafter = this.cast("serve:after")
-  @scala.inline
-  def serveColonbefore: typings.ionic.ionicStrings.serveColonbefore = this.cast("serve:before")
+  def serveColonbefore: typings.ionic.ionicStrings.serveColonbefore = "serve:before".asInstanceOf[typings.ionic.ionicStrings.serveColonbefore]
 }
 

@@ -14,7 +14,6 @@ object AnonEmptyPrefix {
   @scala.inline
   def apply[Prefix /* <: js.Array[_] */, Tuple /* <: js.Array[_] */](empty: Prefix, infinite: AnonCODENAME, nonEmpty: js.Any): AnonEmptyPrefix[Prefix, Tuple] = {
     val __obj = js.Dynamic.literal(empty = empty.asInstanceOf[js.Any], infinite = infinite.asInstanceOf[js.Any], nonEmpty = nonEmpty.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEmptyPrefix[Prefix, Tuple]]
   }
 }

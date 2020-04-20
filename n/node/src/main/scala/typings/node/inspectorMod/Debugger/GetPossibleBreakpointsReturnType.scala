@@ -15,7 +15,6 @@ object GetPossibleBreakpointsReturnType {
   @scala.inline
   def apply(locations: js.Array[BreakLocation]): GetPossibleBreakpointsReturnType = {
     val __obj = js.Dynamic.literal(locations = locations.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetPossibleBreakpointsReturnType]
   }
 }

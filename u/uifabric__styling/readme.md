@@ -1,7 +1,7 @@
 
 # Scala.js typings for uifabric__styling
 
-Typings are for version 7.11.1
+Typings are for version 7.11.6
 
 ## Library description:
 Styling helpers for Office UI Fabric.

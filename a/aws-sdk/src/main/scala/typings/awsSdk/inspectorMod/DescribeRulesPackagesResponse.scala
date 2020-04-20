@@ -20,7 +20,6 @@ object DescribeRulesPackagesResponse {
   @scala.inline
   def apply(failedItems: FailedItems, rulesPackages: RulesPackageList): DescribeRulesPackagesResponse = {
     val __obj = js.Dynamic.literal(failedItems = failedItems.asInstanceOf[js.Any], rulesPackages = rulesPackages.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeRulesPackagesResponse]
   }
 }

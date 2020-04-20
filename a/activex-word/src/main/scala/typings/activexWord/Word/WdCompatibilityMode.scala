@@ -18,14 +18,12 @@ trait WdCompatibilityMode extends js.Object
 
 object WdCompatibilityMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdCurrent: `65535` = 65535.asInstanceOf[`65535`]
   @scala.inline
-  def wdCurrent: `65535` = this.cast(65535)
+  def wdWord2003: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def wdWord2003: `11` = this.cast(11)
+  def wdWord2007: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def wdWord2007: `12` = this.cast(12)
-  @scala.inline
-  def wdWord2010: `14` = this.cast(14)
+  def wdWord2010: `14` = 14.asInstanceOf[`14`]
 }
 

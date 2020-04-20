@@ -16,7 +16,6 @@ object CancelResizeMessage {
   @scala.inline
   def apply(ClusterIdentifier: String): CancelResizeMessage = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CancelResizeMessage]
   }
 }

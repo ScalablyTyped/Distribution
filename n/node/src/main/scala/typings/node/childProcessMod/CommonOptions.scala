@@ -1,6 +1,6 @@
 package typings.node.childProcessMod
 
-import typings.node.NodeJS.ProcessEnv
+import typings.node.NodeJS.Dict
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ object CommonOptions {
   @scala.inline
   def apply(
     cwd: String = null,
-    env: ProcessEnv = null,
+    env: Dict[String] = null,
     gid: Int | Double = null,
     timeout: Int | Double = null,
     uid: Int | Double = null,

@@ -14,7 +14,6 @@ object PermissionDetailsLocationIOS {
   @scala.inline
   def apply(scope: whenInUse | always): PermissionDetailsLocationIOS = {
     val __obj = js.Dynamic.literal(scope = scope.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PermissionDetailsLocationIOS]
   }
 }

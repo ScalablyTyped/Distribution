@@ -14,12 +14,10 @@ trait ManagedAppDataStorageLocation extends js.Object
 
 object ManagedAppDataStorageLocation {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def localStorage: typings.microsoftGraph.microsoftGraphStrings.localStorage = "localStorage".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.localStorage]
   @scala.inline
-  def localStorage: typings.microsoftGraph.microsoftGraphStrings.localStorage = this.cast("localStorage")
+  def oneDriveForBusiness: oneDriveForBusiness_ = "oneDriveForBusiness".asInstanceOf[oneDriveForBusiness_]
   @scala.inline
-  def oneDriveForBusiness: oneDriveForBusiness_ = this.cast("oneDriveForBusiness")
-  @scala.inline
-  def sharePoint: typings.microsoftGraph.microsoftGraphStrings.sharePoint = this.cast("sharePoint")
+  def sharePoint: typings.microsoftGraph.microsoftGraphStrings.sharePoint = "sharePoint".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sharePoint]
 }
 

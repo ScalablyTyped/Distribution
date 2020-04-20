@@ -13,7 +13,6 @@ object canSetBidModifier {
   @scala.inline
   def apply(getBidModifier: () => Double, setBidModifier: Double => Unit): canSetBidModifier = {
     val __obj = js.Dynamic.literal(getBidModifier = js.Any.fromFunction0(getBidModifier), setBidModifier = js.Any.fromFunction1(setBidModifier))
-  
     __obj.asInstanceOf[canSetBidModifier]
   }
 }

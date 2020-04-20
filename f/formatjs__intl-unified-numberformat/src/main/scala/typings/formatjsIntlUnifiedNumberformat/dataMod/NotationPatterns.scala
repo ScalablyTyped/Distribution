@@ -14,31 +14,31 @@ trait NotationPatterns extends CompactSignPattern {
   var decimalNum: js.UndefOr[DecimalFormatNum] = js.undefined
   var notation: js.UndefOr[compactShort | compactLong] = js.undefined
   @JSName("100000000000000")
-  def `100000000000000_MNotationPatterns`(): SignPattern
+  def `100000000000000_MNotationPatterns`: SignPattern
   @JSName("10000000000000")
-  def `10000000000000_MNotationPatterns`(): SignPattern
+  def `10000000000000_MNotationPatterns`: SignPattern
   @JSName("1000000000000")
-  def `1000000000000_MNotationPatterns`(): SignPattern
+  def `1000000000000_MNotationPatterns`: SignPattern
   @JSName("100000000000")
-  def `100000000000_MNotationPatterns`(): SignPattern
+  def `100000000000_MNotationPatterns`: SignPattern
   @JSName("10000000000")
-  def `10000000000_MNotationPatterns`(): SignPattern
+  def `10000000000_MNotationPatterns`: SignPattern
   @JSName("1000000000")
-  def `1000000000_MNotationPatterns`(): SignPattern
+  def `1000000000_MNotationPatterns`: SignPattern
   @JSName("100000000")
-  def `100000000_MNotationPatterns`(): SignPattern
+  def `100000000_MNotationPatterns`: SignPattern
   @JSName("10000000")
-  def `10000000_MNotationPatterns`(): SignPattern
+  def `10000000_MNotationPatterns`: SignPattern
   @JSName("1000000")
-  def `1000000_MNotationPatterns`(): SignPattern
+  def `1000000_MNotationPatterns`: SignPattern
   @JSName("100000")
-  def `100000_MNotationPatterns`(): SignPattern
+  def `100000_MNotationPatterns`: SignPattern
   @JSName("10000")
-  def `10000_MNotationPatterns`(): SignPattern
+  def `10000_MNotationPatterns`: SignPattern
   @JSName("1000")
-  def `1000_MNotationPatterns`(): SignPattern
-  def compactLong(): RecordDecimalFormatNumSig
-  def compactShort(): RecordDecimalFormatNumSig
+  def `1000_MNotationPatterns`: SignPattern
+  def compactLong: RecordDecimalFormatNumSig
+  def compactShort: RecordDecimalFormatNumSig
   def produceCompactSignPattern(decimalNum: DecimalFormatNum): SignPattern
 }
 

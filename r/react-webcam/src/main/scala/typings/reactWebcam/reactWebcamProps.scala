@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactWebcamProps {
   @scala.inline
-  def ReactWebcamProps: WebcamProps.type = typings.reactWebcam.mod.WebcamProps
+  def ReactWebcamProps: WebcamProps.type = WebcamProps
   type ReactWebcamProps = WebcamProps
 }
 

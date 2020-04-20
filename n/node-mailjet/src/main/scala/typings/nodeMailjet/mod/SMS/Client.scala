@@ -13,7 +13,6 @@ object Client {
   @scala.inline
   def apply(get: String => GetResource, post: String => PostResource): Client = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), post = js.Any.fromFunction1(post))
-  
     __obj.asInstanceOf[Client]
   }
 }

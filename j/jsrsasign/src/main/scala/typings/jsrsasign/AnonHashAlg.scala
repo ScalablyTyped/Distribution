@@ -22,7 +22,6 @@ object AnonHashAlg {
     signerPrvKey: String
   ): AnonHashAlg = {
     val __obj = js.Dynamic.literal(hashAlg = hashAlg.asInstanceOf[js.Any], sAttr = sAttr.asInstanceOf[js.Any], sigAlg = sigAlg.asInstanceOf[js.Any], signerCert = signerCert.asInstanceOf[js.Any], signerPrvKey = signerPrvKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHashAlg]
   }
 }

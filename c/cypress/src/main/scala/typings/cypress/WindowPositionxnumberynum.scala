@@ -18,7 +18,6 @@ object WindowPositionxnumberynum {
   @scala.inline
   def apply(left: Double, leftCenter: Double, top: Double, topCenter: Double, x: Double, y: Double): WindowPositionxnumberynum = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], leftCenter = leftCenter.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], topCenter = topCenter.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WindowPositionxnumberynum]
   }
 }

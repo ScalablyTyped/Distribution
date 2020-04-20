@@ -54,7 +54,6 @@ object Queue_ {
     defer: (js.Function1[/* repeated */ js.Any, Unit], /* repeated */ js.Any) => Queue_
   ): Queue_ = {
     val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), await = js.Any.fromFunction1(await), awaitAll = js.Any.fromFunction1(awaitAll), defer = js.Any.fromFunction2(defer))
-  
     __obj.asInstanceOf[Queue_]
   }
 }

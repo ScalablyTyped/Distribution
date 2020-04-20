@@ -15,7 +15,6 @@ object Mechanism {
   @scala.inline
   def apply(challenge: String => Unit, name: String, response: StringDictionary[js.Any] => String): Mechanism = {
     val __obj = js.Dynamic.literal(challenge = js.Any.fromFunction1(challenge), name = name.asInstanceOf[js.Any], response = js.Any.fromFunction1(response))
-  
     __obj.asInstanceOf[Mechanism]
   }
 }

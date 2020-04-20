@@ -20,7 +20,6 @@ object QueryArgProfile {
   @scala.inline
   def apply(ProfileId: String, QueryArg: String): QueryArgProfile = {
     val __obj = js.Dynamic.literal(ProfileId = ProfileId.asInstanceOf[js.Any], QueryArg = QueryArg.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[QueryArgProfile]
   }
 }

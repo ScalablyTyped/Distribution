@@ -12,7 +12,6 @@ object ConnectionReferenceObject {
   @scala.inline
   def apply[TEdge](__connection: ConnectionReference[TEdge]): ConnectionReferenceObject[TEdge] = {
     val __obj = js.Dynamic.literal(__connection = __connection.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConnectionReferenceObject[TEdge]]
   }
 }

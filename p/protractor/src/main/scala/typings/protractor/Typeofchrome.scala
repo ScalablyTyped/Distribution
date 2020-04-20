@@ -25,7 +25,6 @@ object Typeofchrome {
     setDefaultService: DriverService => Unit
   ): Typeofchrome = {
     val __obj = js.Dynamic.literal(Driver = Driver.asInstanceOf[js.Any], Options = Options.asInstanceOf[js.Any], ServiceBuilder = ServiceBuilder.asInstanceOf[js.Any], getDefaultService = js.Any.fromFunction0(getDefaultService), setDefaultService = js.Any.fromFunction1(setDefaultService))
-  
     __obj.asInstanceOf[Typeofchrome]
   }
 }

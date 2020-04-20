@@ -28,11 +28,11 @@ abstract class LoginTextBox protected () extends Widget {
   var model_FLoginTextBox: IModel = js.native
   def label(): js.Any = js.native
   def label(newValue: Text): js.Any = js.native
-  def labelWidth(): Double = js.native
+  def labelWidth: Double = js.native
   def labelWidth(newValue: Double): js.Any = js.native
   @JSName("label")
-  def label_Union(): Text | Null = js.native
-  def placeholder(): Text = js.native
+  def label_Union: Text | Null = js.native
+  def placeholder: Text = js.native
   def placeholder(newValue: Text): js.Any = js.native
 }
 

@@ -13,7 +13,6 @@ object TypeofMacie {
   @scala.inline
   def apply(Types: TypeofMacie): TypeofMacie = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofMacie]
   }
 }

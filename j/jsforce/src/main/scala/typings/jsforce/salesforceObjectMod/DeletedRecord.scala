@@ -13,7 +13,6 @@ object DeletedRecord {
   @scala.inline
   def apply(deletedDate: String, id: String): DeletedRecord = {
     val __obj = js.Dynamic.literal(deletedDate = deletedDate.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeletedRecord]
   }
 }

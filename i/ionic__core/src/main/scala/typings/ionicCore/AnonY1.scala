@@ -14,7 +14,6 @@ object AnonY1 {
   @scala.inline
   def apply(style: AnonTransform, y1: Double, y2: Double): AnonY1 = {
     val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any], y1 = y1.asInstanceOf[js.Any], y2 = y2.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonY1]
   }
 }

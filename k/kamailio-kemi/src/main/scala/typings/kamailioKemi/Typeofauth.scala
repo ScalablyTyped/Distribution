@@ -20,7 +20,6 @@ object Typeofauth {
     pv_auth_check: (String, String, Double, Double) => Double
   ): Typeofauth = {
     val __obj = js.Dynamic.literal(auth_challenge = js.Any.fromFunction2(auth_challenge), consume_credentials = js.Any.fromFunction0(consume_credentials), has_credentials = js.Any.fromFunction1(has_credentials), pv_auth_check = js.Any.fromFunction4(pv_auth_check))
-  
     __obj.asInstanceOf[Typeofauth]
   }
 }

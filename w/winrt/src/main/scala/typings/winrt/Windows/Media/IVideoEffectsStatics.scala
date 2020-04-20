@@ -12,7 +12,6 @@ object IVideoEffectsStatics {
   @scala.inline
   def apply(videoStabilization: String): IVideoEffectsStatics = {
     val __obj = js.Dynamic.literal(videoStabilization = videoStabilization.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IVideoEffectsStatics]
   }
 }

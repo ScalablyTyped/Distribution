@@ -12,7 +12,6 @@ object INgProgressLiteProvider {
   @scala.inline
   def apply(settings: IConfigurationOptions): INgProgressLiteProvider = {
     val __obj = js.Dynamic.literal(settings = settings.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INgProgressLiteProvider]
   }
 }

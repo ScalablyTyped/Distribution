@@ -25,7 +25,6 @@ object GridsterCollisionData {
     region: String
   ): GridsterCollisionData = {
     val __obj = js.Dynamic.literal(area = area.asInstanceOf[js.Any], area_coords = area_coords.asInstanceOf[js.Any], coords = coords.asInstanceOf[js.Any], el = el.asInstanceOf[js.Any], player_coords = player_coords.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GridsterCollisionData]
   }
 }

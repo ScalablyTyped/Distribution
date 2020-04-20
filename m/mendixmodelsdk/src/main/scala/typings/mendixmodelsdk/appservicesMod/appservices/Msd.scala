@@ -24,18 +24,18 @@ class Msd protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FMsd: IModel = js.native
-  def containerAsConsumedAppService(): ConsumedAppService = js.native
-  def domainModel(): MsdDomainModel = js.native
+  def containerAsConsumedAppService: ConsumedAppService = js.native
+  def domainModel: MsdDomainModel = js.native
   def domainModel(newValue: MsdDomainModel): js.Any = js.native
-  def enumerations(): MsdEnumerationContainer = js.native
+  def enumerations: MsdEnumerationContainer = js.native
   def enumerations(newValue: MsdEnumerationContainer): js.Any = js.native
-  def metadata(): MsdMetadata = js.native
+  def metadata: MsdMetadata = js.native
   def metadata(newValue: MsdMetadata): js.Any = js.native
-  def version(): MsdVersion = js.native
+  def version: MsdVersion = js.native
   def version(newValue: MsdVersion): js.Any = js.native
-  def wsdl(): String = js.native
+  def wsdl: String = js.native
   def wsdl(newValue: String): js.Any = js.native
-  def wsdlDescription(): WsdlDescription = js.native
+  def wsdlDescription: WsdlDescription = js.native
   def wsdlDescription(newValue: WsdlDescription): js.Any = js.native
 }
 

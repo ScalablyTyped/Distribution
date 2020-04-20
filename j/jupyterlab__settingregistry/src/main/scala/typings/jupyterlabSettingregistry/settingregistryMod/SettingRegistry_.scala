@@ -102,7 +102,7 @@ class SettingRegistry_ protected () extends ISettingRegistry {
     * A signal that emits the name of a plugin when its settings change.
     */
   @JSName("pluginChanged")
-  def pluginChanged_MSettingRegistry_(): ISignal[this.type, String] = js.native
+  def pluginChanged_MSettingRegistry_ : ISignal[this.type, String] = js.native
   /**
     * Reload a plugin's settings into the registry even if they already exist.
     *

@@ -12,7 +12,6 @@ object SourceFileLike {
   @scala.inline
   def apply(getLineAndCharacterOfPosition: Double => LineAndCharacter): SourceFileLike = {
     val __obj = js.Dynamic.literal(getLineAndCharacterOfPosition = js.Any.fromFunction1(getLineAndCharacterOfPosition))
-  
     __obj.asInstanceOf[SourceFileLike]
   }
 }

@@ -15,7 +15,6 @@ object AnonRsaprvkey {
   @scala.inline
   def apply(rsaprvkey: RSAKey, tbsobj: TBSCertList): AnonRsaprvkey = {
     val __obj = js.Dynamic.literal(rsaprvkey = rsaprvkey.asInstanceOf[js.Any], tbsobj = tbsobj.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRsaprvkey]
   }
 }

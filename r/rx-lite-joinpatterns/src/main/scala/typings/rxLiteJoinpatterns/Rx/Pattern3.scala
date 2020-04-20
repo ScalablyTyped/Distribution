@@ -16,7 +16,6 @@ object Pattern3 {
     thenDo: js.Function3[/* item1 */ T1, /* item2 */ T2, /* item3 */ T3, js.Any] => Plan[js.Any]
   ): Pattern3[T1, T2, T3] = {
     val __obj = js.Dynamic.literal(and = js.Any.fromFunction1(and), thenDo = js.Any.fromFunction1(thenDo))
-  
     __obj.asInstanceOf[Pattern3[T1, T2, T3]]
   }
 }

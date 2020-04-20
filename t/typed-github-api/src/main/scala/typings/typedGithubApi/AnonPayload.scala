@@ -16,7 +16,6 @@ object AnonPayload {
   @scala.inline
   def apply(payload: String, reason: valid, signature: String, verified: Boolean): AnonPayload = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPayload]
   }
 }

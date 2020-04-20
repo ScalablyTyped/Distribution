@@ -13,7 +13,6 @@ object AnonFree {
   @scala.inline
   def apply(free: Double, total: Double): AnonFree = {
     val __obj = js.Dynamic.literal(free = free.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFree]
   }
 }

@@ -13,7 +13,6 @@ object ExportParams {
   @scala.inline
   def apply(FromTS: Double, ToTS: Double): ExportParams = {
     val __obj = js.Dynamic.literal(FromTS = FromTS.asInstanceOf[js.Any], ToTS = ToTS.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExportParams]
   }
 }

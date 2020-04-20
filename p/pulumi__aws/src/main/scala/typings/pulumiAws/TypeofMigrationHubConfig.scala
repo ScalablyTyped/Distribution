@@ -13,7 +13,6 @@ object TypeofMigrationHubConfig {
   @scala.inline
   def apply(Types: TypeofMigrationHubConfig): TypeofMigrationHubConfig = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofMigrationHubConfig]
   }
 }

@@ -23,7 +23,7 @@ abstract class SplitCondition protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FSplitCondition: IModel = js.native
-  def containerAsExclusiveSplit(): ExclusiveSplit = js.native
+  def containerAsExclusiveSplit: ExclusiveSplit = js.native
 }
 
 /* static members */

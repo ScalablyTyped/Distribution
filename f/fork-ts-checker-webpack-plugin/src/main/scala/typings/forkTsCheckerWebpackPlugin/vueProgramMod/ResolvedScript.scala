@@ -14,7 +14,6 @@ object ResolvedScript {
   @scala.inline
   def apply(content: String, scriptKind: ScriptKind): ResolvedScript = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], scriptKind = scriptKind.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResolvedScript]
   }
 }

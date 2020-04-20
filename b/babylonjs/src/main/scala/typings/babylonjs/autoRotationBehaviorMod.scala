@@ -51,7 +51,7 @@ object autoRotationBehaviorMod extends js.Object {
     /**
       * Gets the default speed at which the camera rotates around the model.
       */
-    def idleRotationSpeed(): Double = js.native
+    def idleRotationSpeed: Double = js.native
     /**
       * Sets the default speed at which the camera rotates around the model.
       */
@@ -59,7 +59,7 @@ object autoRotationBehaviorMod extends js.Object {
     /**
       * Gets the time (milliseconds) to take to spin up to the full idle rotation speed.
       */
-    def idleRotationSpinupTime(): Double = js.native
+    def idleRotationSpinupTime: Double = js.native
     /**
       * Sets the time (milliseconds) to take to spin up to the full idle rotation speed.
       */
@@ -67,7 +67,7 @@ object autoRotationBehaviorMod extends js.Object {
     /**
       * Gets the time (milliseconds) to wait after user interaction before the camera starts rotating.
       */
-    def idleRotationWaitTime(): Double = js.native
+    def idleRotationWaitTime: Double = js.native
     /**
       * Sets the time (in milliseconds) to wait after user interaction before the camera starts rotating.
       */
@@ -81,15 +81,15 @@ object autoRotationBehaviorMod extends js.Object {
       * Gets the name of the behavior.
       */
     @JSName("name")
-    def name_MAutoRotationBehavior(): String = js.native
+    def name_MAutoRotationBehavior: String = js.native
     /**
       * Gets a value indicating if the camera is currently rotating because of this behavior
       */
-    def rotationInProgress(): Boolean = js.native
+    def rotationInProgress: Boolean = js.native
     /**
       * Gets the flag that indicates if user zooming should stop animation.
       */
-    def zoomStopsAnimation(): Boolean = js.native
+    def zoomStopsAnimation: Boolean = js.native
     /**
       * Sets the flag that indicates if user zooming should stop animation.
       */

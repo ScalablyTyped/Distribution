@@ -16,7 +16,7 @@ package object mod {
   type LatLngBounds = typings.leaflet.mod.LatLngBounds_ | js.Array[typings.reactLeaflet.mod.LatLng]
   type LayersControl[P /* <: typings.reactLeaflet.mod.LayersControlProps */, E /* <: typings.leaflet.mod.Control_.Layers */] = typings.reactLeaflet.mod.LayersControl_[P, E]
   type LeafletEvents = typings.reactLeaflet.mod.MapEvents with typings.reactLeaflet.mod.MarkerEvents with typings.reactLeaflet.mod.TileLayerEvents with typings.reactLeaflet.mod.PathEvents with typings.reactLeaflet.mod.FeatureGroupEvents with typings.reactLeaflet.mod.LayersControlEvents
-  type Omit[T, K /* <: java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[java.lang.String, K]]
+  type Omit[T, K /* <: /* keyof T */ java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
   type Point = (js.Tuple2[scala.Double, scala.Double]) | typings.leaflet.mod.Point_
   type RemoveLayerHandler = js.Function1[/* layer */ typings.leaflet.mod.Layer, scala.Unit]
 }

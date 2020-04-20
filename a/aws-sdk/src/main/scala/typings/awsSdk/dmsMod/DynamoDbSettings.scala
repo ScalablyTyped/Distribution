@@ -16,7 +16,6 @@ object DynamoDbSettings {
   @scala.inline
   def apply(ServiceAccessRoleArn: String): DynamoDbSettings = {
     val __obj = js.Dynamic.literal(ServiceAccessRoleArn = ServiceAccessRoleArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DynamoDbSettings]
   }
 }

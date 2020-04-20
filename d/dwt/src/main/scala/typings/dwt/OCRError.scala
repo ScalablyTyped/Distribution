@@ -13,7 +13,6 @@ object OCRError {
   @scala.inline
   def apply(errorString: String, responseText: String): OCRError = {
     val __obj = js.Dynamic.literal(errorString = errorString.asInstanceOf[js.Any], responseText = responseText.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OCRError]
   }
 }

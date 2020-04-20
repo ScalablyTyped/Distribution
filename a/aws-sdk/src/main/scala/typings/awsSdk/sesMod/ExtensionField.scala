@@ -20,7 +20,6 @@ object ExtensionField {
   @scala.inline
   def apply(Name: ExtensionFieldName, Value: ExtensionFieldValue): ExtensionField = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExtensionField]
   }
 }

@@ -14,7 +14,6 @@ object OmitRoutechildren {
   @scala.inline
   def apply(breadcrumbName: String, path: String): OmitRoutechildren = {
     val __obj = js.Dynamic.literal(breadcrumbName = breadcrumbName.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OmitRoutechildren]
   }
 }

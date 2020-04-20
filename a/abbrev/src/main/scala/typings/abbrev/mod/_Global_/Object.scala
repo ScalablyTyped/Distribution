@@ -13,7 +13,6 @@ object Object {
   @scala.inline
   def apply(abbrev: () => StringDictionary[String]): Object = {
     val __obj = js.Dynamic.literal(abbrev = js.Any.fromFunction0(abbrev))
-  
     __obj.asInstanceOf[Object]
   }
 }

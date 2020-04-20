@@ -26,22 +26,20 @@ trait ElementType extends js.Object
 
 object ElementType {
   @scala.inline
-  def CDATA: cdata = this.cast("cdata")
+  def CDATA: cdata = "cdata".asInstanceOf[cdata]
   @scala.inline
-  def Comment: comment = this.cast("comment")
+  def Comment: comment = "comment".asInstanceOf[comment]
   @scala.inline
-  def Directive: directive = this.cast("directive")
+  def Directive: directive = "directive".asInstanceOf[directive]
   @scala.inline
-  def Doctype: doctype = this.cast("doctype")
+  def Doctype: doctype = "doctype".asInstanceOf[doctype]
   @scala.inline
-  def Script: script = this.cast("script")
+  def Script: script = "script".asInstanceOf[script]
   @scala.inline
-  def Style: style = this.cast("style")
+  def Style: style = "style".asInstanceOf[style]
   @scala.inline
-  def Tag: tag = this.cast("tag")
+  def Tag: tag = "tag".asInstanceOf[tag]
   @scala.inline
-  def Text: text = this.cast("text")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Text: text = "text".asInstanceOf[text]
 }
 

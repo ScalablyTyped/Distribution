@@ -13,7 +13,6 @@ object PickImpldoesntContain {
   @scala.inline
   def apply(doesntContain: String): PickImpldoesntContain = {
     val __obj = js.Dynamic.literal(doesntContain = doesntContain.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpldoesntContain]
   }
 }

@@ -43,7 +43,6 @@ object SaveEventArguments {
   @scala.inline
   def apply(getSaveMode: () => SaveMode, isDefaultPrevented: () => Boolean, preventDefault: () => Unit): SaveEventArguments = {
     val __obj = js.Dynamic.literal(getSaveMode = js.Any.fromFunction0(getSaveMode), isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = js.Any.fromFunction0(preventDefault))
-  
     __obj.asInstanceOf[SaveEventArguments]
   }
 }

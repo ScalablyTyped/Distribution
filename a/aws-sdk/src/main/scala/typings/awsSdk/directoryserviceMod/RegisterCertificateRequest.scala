@@ -20,7 +20,6 @@ object RegisterCertificateRequest {
   @scala.inline
   def apply(CertificateData: CertificateData, DirectoryId: DirectoryId): RegisterCertificateRequest = {
     val __obj = js.Dynamic.literal(CertificateData = CertificateData.asInstanceOf[js.Any], DirectoryId = DirectoryId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RegisterCertificateRequest]
   }
 }

@@ -33,10 +33,8 @@ trait PaymentMethodType extends js.Object
 
 object PaymentMethodType {
   @scala.inline
-  def CARD: typings.googlepay.googlepayStrings.CARD = this.cast("CARD")
+  def CARD: typings.googlepay.googlepayStrings.CARD = "CARD".asInstanceOf[typings.googlepay.googlepayStrings.CARD]
   @scala.inline
-  def PAYPAL: typings.googlepay.googlepayStrings.PAYPAL = this.cast("PAYPAL")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def PAYPAL: typings.googlepay.googlepayStrings.PAYPAL = "PAYPAL".asInstanceOf[typings.googlepay.googlepayStrings.PAYPAL]
 }
 

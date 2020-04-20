@@ -12,19 +12,12 @@ trait AnonResourceTypeCustomResourceType extends js.Object {
   var id: String
   var options: js.UndefOr[Options] = js.undefined
   var resourceType: CustomResourceType
-  var version: String
 }
 
 object AnonResourceTypeCustomResourceType {
   @scala.inline
-  def apply(
-    id: String,
-    resourceType: CustomResourceType,
-    version: String,
-    headers: Headers = null,
-    options: Options = null
-  ): AnonResourceTypeCustomResourceType = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+  def apply(id: String, resourceType: CustomResourceType, headers: Headers = null, options: Options = null): AnonResourceTypeCustomResourceType = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonResourceTypeCustomResourceType]

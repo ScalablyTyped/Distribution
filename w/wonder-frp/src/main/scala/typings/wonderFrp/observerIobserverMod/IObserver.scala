@@ -15,7 +15,6 @@ object IObserver {
   @scala.inline
   def apply(completed: () => js.Any, dispose: () => Unit, error: js.Any => js.Any, next: js.Any => js.Any): IObserver = {
     val __obj = js.Dynamic.literal(completed = js.Any.fromFunction0(completed), dispose = js.Any.fromFunction0(dispose), error = js.Any.fromFunction1(error), next = js.Any.fromFunction1(next))
-  
     __obj.asInstanceOf[IObserver]
   }
 }

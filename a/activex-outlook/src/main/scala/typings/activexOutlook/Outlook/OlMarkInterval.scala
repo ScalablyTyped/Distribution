@@ -22,18 +22,16 @@ trait OlMarkInterval extends js.Object
 
 object OlMarkInterval {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olMarkComplete: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def olMarkComplete: `5` = this.cast(5)
+  def olMarkNextWeek: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def olMarkNextWeek: `3` = this.cast(3)
+  def olMarkNoDate: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def olMarkNoDate: `4` = this.cast(4)
+  def olMarkThisWeek: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olMarkThisWeek: `2` = this.cast(2)
+  def olMarkToday: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def olMarkToday: `0` = this.cast(0)
-  @scala.inline
-  def olMarkTomorrow: `1` = this.cast(1)
+  def olMarkTomorrow: `1` = 1.asInstanceOf[`1`]
 }
 

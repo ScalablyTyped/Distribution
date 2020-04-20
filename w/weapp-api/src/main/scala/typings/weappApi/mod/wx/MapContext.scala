@@ -30,7 +30,6 @@ object MapContext {
     translateMarker: translateMarkerOptions => Unit
   ): MapContext = {
     val __obj = js.Dynamic.literal(getCenterLocation = js.Any.fromFunction1(getCenterLocation), getRegion = js.Any.fromFunction1(getRegion), getScale = js.Any.fromFunction1(getScale), includePoints = js.Any.fromFunction1(includePoints), moveToLocation = js.Any.fromFunction0(moveToLocation), translateMarker = js.Any.fromFunction1(translateMarker))
-  
     __obj.asInstanceOf[MapContext]
   }
 }

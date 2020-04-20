@@ -28,7 +28,6 @@ object AnonId {
     travelTime: Double
   ): AnonId = {
     val __obj = js.Dynamic.literal(_type = _type.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], instruction = instruction.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], note = note.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any], travelTime = travelTime.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonId]
   }
 }

@@ -23,7 +23,6 @@ object BasisFileInfo {
   @scala.inline
   def apply(hasAlpha: Boolean, images: js.Array[AnonLevels]): BasisFileInfo = {
     val __obj = js.Dynamic.literal(hasAlpha = hasAlpha.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BasisFileInfo]
   }
 }

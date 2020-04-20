@@ -15,7 +15,6 @@ object AnonAnalyzedInjectables {
   @scala.inline
   def apply(analyzedInjectables: js.Array[NgAnalyzedFileWithInjectables], analyzedModules: NgAnalyzedModules): AnonAnalyzedInjectables = {
     val __obj = js.Dynamic.literal(analyzedInjectables = analyzedInjectables.asInstanceOf[js.Any], analyzedModules = analyzedModules.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAnalyzedInjectables]
   }
 }

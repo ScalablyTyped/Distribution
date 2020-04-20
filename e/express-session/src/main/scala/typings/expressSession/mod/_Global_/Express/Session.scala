@@ -27,7 +27,6 @@ object Session {
     touch: () => Unit
   ): Session = {
     val __obj = js.Dynamic.literal(cookie = cookie.asInstanceOf[js.Any], destroy = js.Any.fromFunction1(destroy), id = id.asInstanceOf[js.Any], regenerate = js.Any.fromFunction1(regenerate), reload = js.Any.fromFunction1(reload), save = js.Any.fromFunction1(save), touch = js.Any.fromFunction0(touch))
-  
     __obj.asInstanceOf[Session]
   }
 }

@@ -35,7 +35,6 @@ object TargetTcpProxiesResource {
     setProxyHeader: AnonTargetTcpProxy => Request_[Operation]
   ): TargetTcpProxiesResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), setBackendService = js.Any.fromFunction1(setBackendService), setProxyHeader = js.Any.fromFunction1(setProxyHeader))
-  
     __obj.asInstanceOf[TargetTcpProxiesResource]
   }
 }

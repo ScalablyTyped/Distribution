@@ -16,7 +16,6 @@ object Certificate {
   @scala.inline
   def apply(raw: Buffer): Certificate = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Certificate]
   }
 }

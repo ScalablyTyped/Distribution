@@ -566,7 +566,7 @@ trait Stream[R] extends EventEmitter {
   		 * @param {Array} properties - property names to white filter
   		 * @api public
   		 */
-  def pick[Prop /* <: String */](props: js.Array[Prop]): Stream[Pick[R, Prop]] = js.native
+  def pick[Prop /* <: /* keyof R */ String */](props: js.Array[Prop]): Stream[Pick[R, Prop]] = js.native
   /**
   		 *
   		 * Retrieves copies of all the elements in the collection
@@ -580,7 +580,7 @@ trait Stream[R] extends EventEmitter {
   		 * @param {Function} f - the predicate function
   		 * @api public
   		 */
-  def pickBy[Prop /* <: String */](
+  def pickBy[Prop /* <: /* keyof R */ String */](
     f: js.Function2[
       /* key */ Prop, 
       /* import warning: importer.ImportType#apply Failed type conversion: R[Prop] */ /* value */ js.Any, 
@@ -633,7 +633,7 @@ trait Stream[R] extends EventEmitter {
   		 * @param {String} prop - the property to which values should be associated
   		 * @api public
   		 */
-  def pluck[Prop /* <: String */](prop: Prop): Stream[
+  def pluck[Prop /* <: /* keyof R */ String */](prop: Prop): Stream[
     /* import warning: importer.ImportType#apply Failed type conversion: R[Prop] */ js.Any
   ] = js.native
   def pluck[U](prop: String): Stream[U] = js.native

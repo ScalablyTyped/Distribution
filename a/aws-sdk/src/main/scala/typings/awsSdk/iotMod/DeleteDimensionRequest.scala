@@ -16,7 +16,6 @@ object DeleteDimensionRequest {
   @scala.inline
   def apply(name: DimensionName): DeleteDimensionRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteDimensionRequest]
   }
 }

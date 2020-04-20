@@ -28,7 +28,6 @@ object WalkDetails {
   @scala.inline
   def apply(destination: LngLat, origin: LngLat, path: js.Array[LngLat], steps: js.Array[WalkStep]): WalkDetails = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], steps = steps.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WalkDetails]
   }
 }

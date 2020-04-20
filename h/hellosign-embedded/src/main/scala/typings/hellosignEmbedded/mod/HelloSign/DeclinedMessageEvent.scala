@@ -14,7 +14,6 @@ object DeclinedMessageEvent {
   @scala.inline
   def apply(event: signature_request_declined, signature_id: String): DeclinedMessageEvent = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], signature_id = signature_id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeclinedMessageEvent]
   }
 }

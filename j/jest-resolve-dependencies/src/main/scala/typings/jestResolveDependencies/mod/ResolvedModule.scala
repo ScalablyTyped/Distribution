@@ -14,7 +14,6 @@ object ResolvedModule {
   @scala.inline
   def apply(dependencies: js.Array[Path], file: Path): ResolvedModule = {
     val __obj = js.Dynamic.literal(dependencies = dependencies.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResolvedModule]
   }
 }

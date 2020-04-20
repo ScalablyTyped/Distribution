@@ -115,10 +115,10 @@ trait ModelClass[M /* <: Model */] extends Constructor[M] {
   def query(trxOrKnex: TransactionOrKnex): QueryBuilderType[M] = js.native
   def raw(sql: String, bindings: js.Any*): RawBuilder = js.native
   def ref(expression: String): ReferenceBuilder = js.native
-  def relatedQuery[K /* <: String */](relationName: K): ArrayRelatedQueryBuilder[
+  def relatedQuery[K /* <: /* keyof M */ String */](relationName: K): ArrayRelatedQueryBuilder[
     /* import warning: importer.ImportType#apply Failed type conversion: M[K] */ js.Any
   ] = js.native
-  def relatedQuery[K /* <: String */](relationName: K, trxOrKnex: TransactionOrKnex): ArrayRelatedQueryBuilder[
+  def relatedQuery[K /* <: /* keyof M */ String */](relationName: K, trxOrKnex: TransactionOrKnex): ArrayRelatedQueryBuilder[
     /* import warning: importer.ImportType#apply Failed type conversion: M[K] */ js.Any
   ] = js.native
   def relatedQuery[RM /* <: Model */](relationName: String): QueryBuilderType[RM] = js.native

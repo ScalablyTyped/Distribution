@@ -12,10 +12,8 @@ trait SheetType extends _SheetKeys
 
 object SheetType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def chart: typings.xlsx.xlsxStrings.chart = "chart".asInstanceOf[typings.xlsx.xlsxStrings.chart]
   @scala.inline
-  def chart: typings.xlsx.xlsxStrings.chart = this.cast("chart")
-  @scala.inline
-  def sheet: typings.xlsx.xlsxStrings.sheet = this.cast("sheet")
+  def sheet: typings.xlsx.xlsxStrings.sheet = "sheet".asInstanceOf[typings.xlsx.xlsxStrings.sheet]
 }
 

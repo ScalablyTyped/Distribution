@@ -860,6 +860,7 @@ package object ec2Mod {
   type InstanceStatusEventList = js.Array[typings.awsSdk.ec2Mod.InstanceStatusEvent]
   type InstanceStatusList = js.Array[typings.awsSdk.ec2Mod.InstanceStatus]
   type InstanceStorageFlag = scala.Boolean
+  type InstanceTagKeySet = js.Array[typings.awsSdk.ec2Mod.String]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.t1Dotmicro
     - typings.awsSdk.awsSdkStrings.t2Dotnano

@@ -15,7 +15,6 @@ object DeleteGlobalSecondaryIndexAction {
   @scala.inline
   def apply(IndexName: String): DeleteGlobalSecondaryIndexAction = {
     val __obj = js.Dynamic.literal(IndexName = IndexName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteGlobalSecondaryIndexAction]
   }
 }

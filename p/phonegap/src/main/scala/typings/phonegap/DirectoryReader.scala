@@ -17,7 +17,6 @@ object DirectoryReader {
     readEntries: (js.Function1[/* entries */ FileSystemEntry, Unit], js.Function1[/* error */ FileError, Unit]) => Unit
   ): DirectoryReader = {
     val __obj = js.Dynamic.literal(readEntries = js.Any.fromFunction2(readEntries))
-  
     __obj.asInstanceOf[DirectoryReader]
   }
 }

@@ -34,30 +34,28 @@ trait styleOutlineStyle extends js.Object
 
 object styleOutlineStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleOutlineStyleDashed: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleOutlineStyleDashed: `2` = this.cast(2)
+  def styleOutlineStyleDotted: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleOutlineStyleDotted: `1` = this.cast(1)
+  def styleOutlineStyleDouble: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def styleOutlineStyleDouble: `4` = this.cast(4)
+  def styleOutlineStyleGroove: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def styleOutlineStyleGroove: `5` = this.cast(5)
+  def styleOutlineStyleInset: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def styleOutlineStyleInset: `7` = this.cast(7)
+  def styleOutlineStyleNone: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def styleOutlineStyleNone: `10` = this.cast(10)
+  def styleOutlineStyleNotSet: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleOutlineStyleNotSet: `0` = this.cast(0)
+  def styleOutlineStyleOutset: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def styleOutlineStyleOutset: `8` = this.cast(8)
+  def styleOutlineStyleRidge: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def styleOutlineStyleRidge: `6` = this.cast(6)
+  def styleOutlineStyleSolid: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def styleOutlineStyleSolid: `3` = this.cast(3)
+  def styleOutlineStyleWindowInset: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def styleOutlineStyleWindowInset: `9` = this.cast(9)
-  @scala.inline
-  def styleOutlineStyle_Max: `2147483647` = this.cast(2147483647)
+  def styleOutlineStyle_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

@@ -16,7 +16,6 @@ object GetSAMLProviderRequest {
   @scala.inline
   def apply(SAMLProviderArn: arnType): GetSAMLProviderRequest = {
     val __obj = js.Dynamic.literal(SAMLProviderArn = SAMLProviderArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetSAMLProviderRequest]
   }
 }

@@ -12,7 +12,6 @@ object AnonPrevent {
   @scala.inline
   def apply(prevent: Boolean): AnonPrevent = {
     val __obj = js.Dynamic.literal(prevent = prevent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPrevent]
   }
 }

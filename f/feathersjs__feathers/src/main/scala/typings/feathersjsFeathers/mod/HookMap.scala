@@ -26,7 +26,6 @@ object HookMap {
     update: Hook | js.Array[Hook]
   ): HookMap = {
     val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], create = create.asInstanceOf[js.Any], find = find.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any], remove = remove.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HookMap]
   }
 }

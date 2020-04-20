@@ -23,12 +23,12 @@ class Certificate protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FCertificate: IModel = js.native
-  def containerAsCertificateSettings(): CertificateSettings = js.native
+  def containerAsCertificateSettings: CertificateSettings = js.native
   def data(): js.Any = js.native
   def data(newValue: String): js.Any = js.native
   @JSName("data")
-  def data_Union(): String | Null = js.native
-  def `type`(): CertificateType = js.native
+  def data_Union: String | Null = js.native
+  def `type`: CertificateType = js.native
   def `type`(newValue: CertificateType): js.Any = js.native
 }
 

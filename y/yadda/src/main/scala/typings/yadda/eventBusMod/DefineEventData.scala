@@ -13,7 +13,6 @@ object DefineEventData {
   @scala.inline
   def apply(pattern: String, signature: String): DefineEventData = {
     val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DefineEventData]
   }
 }

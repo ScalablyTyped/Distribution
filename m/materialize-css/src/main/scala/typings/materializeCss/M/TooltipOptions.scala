@@ -64,7 +64,6 @@ object TooltipOptions {
     transitionMovement: Double
   ): TooltipOptions = {
     val __obj = js.Dynamic.literal(enterDelay = enterDelay.asInstanceOf[js.Any], exitDelay = exitDelay.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], inDuration = inDuration.asInstanceOf[js.Any], margin = margin.asInstanceOf[js.Any], outDuration = outDuration.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], transitionMovement = transitionMovement.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TooltipOptions]
   }
 }

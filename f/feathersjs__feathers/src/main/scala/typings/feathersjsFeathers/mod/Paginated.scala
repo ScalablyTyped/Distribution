@@ -15,7 +15,6 @@ object Paginated {
   @scala.inline
   def apply[T](data: js.Array[T], limit: Double, skip: Double, total: Double): Paginated[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], skip = skip.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Paginated[T]]
   }
 }

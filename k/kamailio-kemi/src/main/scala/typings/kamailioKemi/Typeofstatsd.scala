@@ -24,7 +24,6 @@ object Typeofstatsd {
     statsd_stop: String => Double
   ): Typeofstatsd = {
     val __obj = js.Dynamic.literal(statsd_decr = js.Any.fromFunction1(statsd_decr), statsd_gauge = js.Any.fromFunction2(statsd_gauge), statsd_incr = js.Any.fromFunction1(statsd_incr), statsd_set = js.Any.fromFunction2(statsd_set), statsd_start = js.Any.fromFunction1(statsd_start), statsd_stop = js.Any.fromFunction1(statsd_stop))
-  
     __obj.asInstanceOf[Typeofstatsd]
   }
 }

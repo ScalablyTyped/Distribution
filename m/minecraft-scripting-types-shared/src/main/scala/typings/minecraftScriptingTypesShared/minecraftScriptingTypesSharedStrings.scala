@@ -364,6 +364,6 @@ object minecraftScriptingTypesSharedStrings {
   @scala.inline
   def target: target = "target".asInstanceOf[target]
   @scala.inline
-  def `the end`: `the end` = "the end".asInstanceOf[`the end`]
+  def `the end`: `the end` = ("the end").asInstanceOf[`the end`]
 }
 

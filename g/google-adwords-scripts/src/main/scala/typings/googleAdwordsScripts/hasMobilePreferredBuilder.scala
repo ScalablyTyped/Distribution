@@ -12,7 +12,6 @@ object hasMobilePreferredBuilder {
   @scala.inline
   def apply[B](withMobilePreferred: () => B): hasMobilePreferredBuilder[B] = {
     val __obj = js.Dynamic.literal(withMobilePreferred = js.Any.fromFunction0(withMobilePreferred))
-  
     __obj.asInstanceOf[hasMobilePreferredBuilder[B]]
   }
 }

@@ -106,6 +106,9 @@ object dockerodeStrings {
   sealed trait splunk extends LoggingDriverType
   
   @js.native
+  sealed trait ssh extends js.Object
+  
+  @js.native
   sealed trait swarm extends js.Object
   
   @js.native
@@ -181,6 +184,8 @@ object dockerodeStrings {
   def slave: slave = "slave".asInstanceOf[slave]
   @scala.inline
   def splunk: splunk = "splunk".asInstanceOf[splunk]
+  @scala.inline
+  def ssh: ssh = "ssh".asInstanceOf[ssh]
   @scala.inline
   def swarm: swarm = "swarm".asInstanceOf[swarm]
   @scala.inline

@@ -17,25 +17,21 @@ object SmartHomeV1Request {
   @scala.inline
   def SmartHomeV1SyncRequest(inputs: js.Array[SmartHomeV1SyncRequestInputs], requestId: String): SmartHomeV1Request = {
     val __obj = js.Dynamic.literal(inputs = inputs.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SmartHomeV1Request]
   }
   @scala.inline
   def SmartHomeV1QueryRequest(inputs: js.Array[SmartHomeV1QueryRequestInputs], requestId: String): SmartHomeV1Request = {
     val __obj = js.Dynamic.literal(inputs = inputs.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SmartHomeV1Request]
   }
   @scala.inline
   def SmartHomeV1ExecuteRequest(inputs: js.Array[SmartHomeV1ExecuteRequestInputs], requestId: String): SmartHomeV1Request = {
     val __obj = js.Dynamic.literal(inputs = inputs.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SmartHomeV1Request]
   }
   @scala.inline
   def SmartHomeV1DisconnectRequest(inputs: js.Array[AnonIntent], requestId: String): SmartHomeV1Request = {
     val __obj = js.Dynamic.literal(inputs = inputs.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SmartHomeV1Request]
   }
 }

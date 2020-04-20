@@ -9,10 +9,14 @@ import typings.chromeApps.chromeAppsNumbers.`-2`
 import typings.chromeApps.chromeAppsNumbers.`0`
 import typings.chromeApps.chromeAppsNumbers.`1`
 import typings.chromeApps.chromeAppsNumbers.`2`
-import typings.chromeApps.chromeAppsStrings.basic
-import typings.chromeApps.chromeAppsStrings.image
-import typings.chromeApps.chromeAppsStrings.list
-import typings.chromeApps.chromeAppsStrings.progress
+import typings.chromeApps.chromeAppsStrings.BASIC
+import typings.chromeApps.chromeAppsStrings.IMAGE
+import typings.chromeApps.chromeAppsStrings.LIST
+import typings.chromeApps.chromeAppsStrings.PROGRESS
+import typings.chromeApps.chromeAppsStrings.basic_
+import typings.chromeApps.chromeAppsStrings.image_
+import typings.chromeApps.chromeAppsStrings.list_
+import typings.chromeApps.chromeAppsStrings.progress_
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -90,7 +94,11 @@ trait NotificationOptions extends js.Object {
     * Which type of notification to display. Required for notifications.create method.
     * @see enum TemplateType
     */
-  var `type`: ToStringLiteral[AnonBASIC, String, Exclude[String, basic | image | list | progress]]
+  var `type`: ToStringLiteral[
+    AnonBASIC, 
+    BASIC | IMAGE | LIST | PROGRESS, 
+    Exclude[BASIC | IMAGE | LIST | PROGRESS, basic_ | image_ | list_ | progress_]
+  ]
 }
 
 object NotificationOptions {
@@ -99,7 +107,11 @@ object NotificationOptions {
     iconUrl: String,
     message: String,
     title: String,
-    `type`: ToStringLiteral[AnonBASIC, String, Exclude[String, basic | image | list | progress]],
+    `type`: ToStringLiteral[
+      AnonBASIC, 
+      BASIC | IMAGE | LIST | PROGRESS, 
+      Exclude[BASIC | IMAGE | LIST | PROGRESS, basic_ | image_ | list_ | progress_]
+    ],
     appIconMaskUrl: String = null,
     buttons: js.Array[ButtonOptions] = null,
     contextMessage: String = null,

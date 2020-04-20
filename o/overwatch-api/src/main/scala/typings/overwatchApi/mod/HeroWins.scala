@@ -12,7 +12,6 @@ object HeroWins {
   @scala.inline
   def apply(games_won: String, hero: String, img: String): HeroWins = {
     val __obj = js.Dynamic.literal(games_won = games_won.asInstanceOf[js.Any], hero = hero.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HeroWins]
   }
 }

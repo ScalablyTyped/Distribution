@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("rdf-ext/lib/_PropType", JSImport.Namespace)
 @js.native
 object propTypeMod extends js.Object {
-  type PropType[TObj, TProp /* <: String */] = /* import warning: importer.ImportType#apply Failed type conversion: TObj[TProp] */ js.Any
+  type PropType[TObj, TProp /* <: /* keyof TObj */ String */] = /* import warning: importer.ImportType#apply Failed type conversion: TObj[TProp] */ js.Any
 }
 

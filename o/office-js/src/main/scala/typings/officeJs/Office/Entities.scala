@@ -76,7 +76,6 @@ object Entities {
     urls: js.Array[String]
   ): Entities = {
     val __obj = js.Dynamic.literal(addresses = addresses.asInstanceOf[js.Any], contacts = contacts.asInstanceOf[js.Any], emailAddresses = emailAddresses.asInstanceOf[js.Any], meetingSuggestions = meetingSuggestions.asInstanceOf[js.Any], phoneNumbers = phoneNumbers.asInstanceOf[js.Any], taskSuggestions = taskSuggestions.asInstanceOf[js.Any], urls = urls.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Entities]
   }
 }

@@ -14,7 +14,6 @@ object KnobPanelState {
   @scala.inline
   def apply(knobs: Record[String, KnobStoreKnob]): KnobPanelState = {
     val __obj = js.Dynamic.literal(knobs = knobs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KnobPanelState]
   }
 }

@@ -16,7 +16,6 @@ object ThemeUIContext {
   @scala.inline
   def apply(colorMode: String, setColorMode: SetStateAction[String] => Unit, theme: Theme): ThemeUIContext = {
     val __obj = js.Dynamic.literal(colorMode = colorMode.asInstanceOf[js.Any], setColorMode = js.Any.fromFunction1(setColorMode), theme = theme.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ThemeUIContext]
   }
 }

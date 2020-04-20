@@ -13,7 +13,6 @@ object Locale_ {
   @scala.inline
   def apply(months: java.lang.String, weekdays: java.lang.String): Locale_ = {
     val __obj = js.Dynamic.literal(months = months.asInstanceOf[js.Any], weekdays = weekdays.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Locale_]
   }
 }

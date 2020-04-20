@@ -13,7 +13,6 @@ object AnonConfig {
   @scala.inline
   def apply(config: String, payload: Double): AnonConfig = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonConfig]
   }
 }

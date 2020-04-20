@@ -38,7 +38,6 @@ object TrafficPolicySummary {
     Type: RRType
   ): TrafficPolicySummary = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], LatestVersion = LatestVersion.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], TrafficPolicyCount = TrafficPolicyCount.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TrafficPolicySummary]
   }
 }

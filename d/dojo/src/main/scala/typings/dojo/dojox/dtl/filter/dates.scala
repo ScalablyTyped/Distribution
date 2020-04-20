@@ -49,7 +49,6 @@ object dates {
     timeuntil: (js.Any, js.Any) => String
   ): dates = {
     val __obj = js.Dynamic.literal(date = js.Any.fromFunction2(date), time = js.Any.fromFunction2(time), timesince = js.Any.fromFunction2(timesince), timeuntil = js.Any.fromFunction2(timeuntil))
-  
     __obj.asInstanceOf[dates]
   }
 }

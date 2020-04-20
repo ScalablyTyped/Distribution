@@ -13,7 +13,6 @@ object NameServiceMapping {
   @scala.inline
   def apply(database: FirebaseDatabase): NameServiceMapping = {
     val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NameServiceMapping]
   }
 }

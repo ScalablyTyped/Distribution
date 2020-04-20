@@ -1,7 +1,7 @@
 
 # Scala.js typings for tape
 
-Typings are for version v4.2.30
+Typings are for version v4.13.2
 
 ## Library description:
 tap-producing test harness for node and browsers

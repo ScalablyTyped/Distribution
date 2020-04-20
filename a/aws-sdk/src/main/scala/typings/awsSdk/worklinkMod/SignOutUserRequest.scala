@@ -20,7 +20,6 @@ object SignOutUserRequest {
   @scala.inline
   def apply(FleetArn: FleetArn, Username: Username): SignOutUserRequest = {
     val __obj = js.Dynamic.literal(FleetArn = FleetArn.asInstanceOf[js.Any], Username = Username.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SignOutUserRequest]
   }
 }

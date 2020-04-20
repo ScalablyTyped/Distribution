@@ -27,7 +27,6 @@ object IIterator {
   @scala.inline
   def apply[T](iter: () => IIterator[T], next: () => js.UndefOr[T]): IIterator[T] = {
     val __obj = js.Dynamic.literal(iter = js.Any.fromFunction0(iter), next = js.Any.fromFunction0(next))
-  
     __obj.asInstanceOf[IIterator[T]]
   }
 }

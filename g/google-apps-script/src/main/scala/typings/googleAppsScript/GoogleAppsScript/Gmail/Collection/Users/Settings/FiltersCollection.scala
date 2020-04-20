@@ -26,7 +26,6 @@ object FiltersCollection {
     remove: (String, String) => Unit
   ): FiltersCollection = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction2(create), get = js.Any.fromFunction2(get), list = js.Any.fromFunction1(list), remove = js.Any.fromFunction2(remove))
-  
     __obj.asInstanceOf[FiltersCollection]
   }
 }

@@ -20,7 +20,6 @@ object S3Tag {
   @scala.inline
   def apply(Key: NonEmptyMaxLength1024String, Value: MaxLength1024String): S3Tag = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[S3Tag]
   }
 }

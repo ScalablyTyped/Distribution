@@ -12,7 +12,6 @@ object Typeofgroup {
   @scala.inline
   def apply(is_user_in: (String, String) => Double): Typeofgroup = {
     val __obj = js.Dynamic.literal(is_user_in = js.Any.fromFunction2(is_user_in))
-  
     __obj.asInstanceOf[Typeofgroup]
   }
 }

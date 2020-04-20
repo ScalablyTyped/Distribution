@@ -27,7 +27,6 @@ object TeredoProperties {
     udpPort: String
   ): TeredoProperties = {
     val __obj = js.Dynamic.literal(client4 = client4.asInstanceOf[js.Any], coneNat = coneNat.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], microsoft = microsoft.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], server4 = server4.asInstanceOf[js.Any], udpPort = udpPort.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TeredoProperties]
   }
 }

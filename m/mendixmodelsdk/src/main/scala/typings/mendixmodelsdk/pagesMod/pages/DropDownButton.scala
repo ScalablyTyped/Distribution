@@ -30,7 +30,7 @@ class DropDownButton protected () extends Button {
   ) = this()
   @JSName("model")
   var model_FDropDownButton: IModel = js.native
-  def items(): IList[DropDownButtonItem] = js.native
+  def items: IList[DropDownButtonItem] = js.native
 }
 
 /* static members */

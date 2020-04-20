@@ -14,7 +14,6 @@ object PickImplmaxSelections {
   @scala.inline
   def apply(maxSelections: `false` | Double): PickImplmaxSelections = {
     val __obj = js.Dynamic.literal(maxSelections = maxSelections.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplmaxSelections]
   }
 }

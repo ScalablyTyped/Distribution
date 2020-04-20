@@ -34,7 +34,6 @@ object AutofillCalculations {
     snapDragArea: (js.Array[Double], js.Array[Double], String, js.Array[MergedCellCoords]) => js.Array[Double]
   ): AutofillCalculations = {
     val __obj = js.Dynamic.literal(correctSelectionAreaSize = js.Any.fromFunction1(correctSelectionAreaSize), currentFillData = currentFillData.asInstanceOf[js.Any], dragAreaOverlapsCollections = js.Any.fromFunction3(dragAreaOverlapsCollections), getDirection = js.Any.fromFunction2(getDirection), mergedCellsCollection = mergedCellsCollection.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any], recreateAfterDataPopulation = js.Any.fromFunction1(recreateAfterDataPopulation), snapDragArea = js.Any.fromFunction4(snapDragArea))
-  
     __obj.asInstanceOf[AutofillCalculations]
   }
 }

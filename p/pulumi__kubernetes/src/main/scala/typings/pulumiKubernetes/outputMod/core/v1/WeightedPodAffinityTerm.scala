@@ -23,7 +23,6 @@ object WeightedPodAffinityTerm {
   @scala.inline
   def apply(podAffinityTerm: PodAffinityTerm, weight: Double): WeightedPodAffinityTerm = {
     val __obj = js.Dynamic.literal(podAffinityTerm = podAffinityTerm.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WeightedPodAffinityTerm]
   }
 }

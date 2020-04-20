@@ -16,7 +16,6 @@ object ArcRotateCameraInputsManager {
   @scala.inline
   def apply(addVRDeviceOrientation: () => ArcRotateCameraInputsManager): ArcRotateCameraInputsManager = {
     val __obj = js.Dynamic.literal(addVRDeviceOrientation = js.Any.fromFunction0(addVRDeviceOrientation))
-  
     __obj.asInstanceOf[ArcRotateCameraInputsManager]
   }
 }

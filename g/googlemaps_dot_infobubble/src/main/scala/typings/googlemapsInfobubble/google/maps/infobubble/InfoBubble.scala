@@ -38,7 +38,6 @@ object InfoBubble {
     open: (Map[Element], Marker) => Unit
   ): InfoBubble = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), getPosition = js.Any.fromFunction0(getPosition), isOpen = js.Any.fromFunction0(isOpen), open = js.Any.fromFunction2(open))
-  
     __obj.asInstanceOf[InfoBubble]
   }
 }

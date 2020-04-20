@@ -14,7 +14,6 @@ object IAppVersionService {
   @scala.inline
   def apply(getVersionCode: () => IPromise[String], getVersionNumber: () => IPromise[String]): IAppVersionService = {
     val __obj = js.Dynamic.literal(getVersionCode = js.Any.fromFunction0(getVersionCode), getVersionNumber = js.Any.fromFunction0(getVersionNumber))
-  
     __obj.asInstanceOf[IAppVersionService]
   }
 }

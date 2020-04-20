@@ -13,7 +13,6 @@ object FlashCompilerErrors {
   @scala.inline
   def apply(clear: () => js.Any, save: () => js.Any): FlashCompilerErrors = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), save = js.Any.fromFunction0(save))
-  
     __obj.asInstanceOf[FlashCompilerErrors]
   }
 }

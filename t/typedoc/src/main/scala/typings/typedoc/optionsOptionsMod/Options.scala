@@ -258,6 +258,9 @@ class Options protected () extends js.Object {
   def getValue_tsconfig(name: tsconfig): String | (Exclude[_, String]) | js.Any = js.native
   @JSName("getValue")
   def getValue_version(name: version): Boolean | (Exclude[_, String]) | js.Any = js.native
+  def isDefault(
+    name: entryPoint | inputFiles | exclude | categorizeByGroup | excludePrivate | disableOutputCheck | gaID | includeDeclarations | media | includes | includeVersion | plugin | json | options | listInvalidSymbolLinks | excludeProtected | tsconfig | toc | ignoreCompilerErrors | version | logger | gaSite | name | help | mode | excludeExternals | excludeNotExported | readme | excludeTags | hideGenerator | defaultCategory | categoryOrder | theme | externalPattern | gitRevision | out
+  ): Boolean = js.native
   def isDefault(name: String): Boolean = js.native
   def read(logger: Logger): Unit = js.native
   def removeDeclarationByName(name: String): Unit = js.native

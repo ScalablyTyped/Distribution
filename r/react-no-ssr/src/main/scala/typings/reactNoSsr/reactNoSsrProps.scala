@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNoSsrProps {
   @scala.inline
-  def ReactNoSsrProps: AnonOnSSR.type = typings.reactNoSsr.AnonOnSSR
+  def ReactNoSsrProps: AnonOnSSR.type = AnonOnSSR
   type ReactNoSsrProps = AnonOnSSR
 }
 

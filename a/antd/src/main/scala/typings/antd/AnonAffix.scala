@@ -21,7 +21,6 @@ object AnonAffix {
     showInkInFixed: Boolean
   ): AnonAffix = {
     val __obj = js.Dynamic.literal(affix = affix.asInstanceOf[js.Any], getContainer = js.Any.fromFunction0(getContainer), showInkInFixed = showInkInFixed.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAffix]
   }
 }

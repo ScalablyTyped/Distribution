@@ -291,15 +291,15 @@ class Effect protected () extends IDisposable {
   /**
     * Checks if the effect is supported. (Must be called after compilation)
     */
-  def isSupported(): Boolean = js.native
+  def isSupported: Boolean = js.native
   /**
     * Unique key for this effect
     */
-  def key(): String = js.native
+  def key: String = js.native
   /**
     * Observable that will be called when effect is bound.
     */
-  def onBindObservable(): Observable[Effect] = js.native
+  def onBindObservable: Observable[Effect] = js.native
   /**
     * Sets an array on a uniform variable.
     * @param uniformName Name of the variable.

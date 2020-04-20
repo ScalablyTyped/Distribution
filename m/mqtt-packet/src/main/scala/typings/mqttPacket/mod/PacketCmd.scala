@@ -24,34 +24,32 @@ trait PacketCmd extends js.Object
 
 object PacketCmd {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def connack: typings.mqttPacket.mqttPacketStrings.connack = "connack".asInstanceOf[typings.mqttPacket.mqttPacketStrings.connack]
   @scala.inline
-  def connack: typings.mqttPacket.mqttPacketStrings.connack = this.cast("connack")
+  def connect: typings.mqttPacket.mqttPacketStrings.connect = "connect".asInstanceOf[typings.mqttPacket.mqttPacketStrings.connect]
   @scala.inline
-  def connect: typings.mqttPacket.mqttPacketStrings.connect = this.cast("connect")
+  def disconnect: typings.mqttPacket.mqttPacketStrings.disconnect = "disconnect".asInstanceOf[typings.mqttPacket.mqttPacketStrings.disconnect]
   @scala.inline
-  def disconnect: typings.mqttPacket.mqttPacketStrings.disconnect = this.cast("disconnect")
+  def pingreq: typings.mqttPacket.mqttPacketStrings.pingreq = "pingreq".asInstanceOf[typings.mqttPacket.mqttPacketStrings.pingreq]
   @scala.inline
-  def pingreq: typings.mqttPacket.mqttPacketStrings.pingreq = this.cast("pingreq")
+  def pingresp: typings.mqttPacket.mqttPacketStrings.pingresp = "pingresp".asInstanceOf[typings.mqttPacket.mqttPacketStrings.pingresp]
   @scala.inline
-  def pingresp: typings.mqttPacket.mqttPacketStrings.pingresp = this.cast("pingresp")
+  def puback: typings.mqttPacket.mqttPacketStrings.puback = "puback".asInstanceOf[typings.mqttPacket.mqttPacketStrings.puback]
   @scala.inline
-  def puback: typings.mqttPacket.mqttPacketStrings.puback = this.cast("puback")
+  def pubcomp: typings.mqttPacket.mqttPacketStrings.pubcomp = "pubcomp".asInstanceOf[typings.mqttPacket.mqttPacketStrings.pubcomp]
   @scala.inline
-  def pubcomp: typings.mqttPacket.mqttPacketStrings.pubcomp = this.cast("pubcomp")
+  def publish: typings.mqttPacket.mqttPacketStrings.publish = "publish".asInstanceOf[typings.mqttPacket.mqttPacketStrings.publish]
   @scala.inline
-  def publish: typings.mqttPacket.mqttPacketStrings.publish = this.cast("publish")
+  def pubrec: typings.mqttPacket.mqttPacketStrings.pubrec = "pubrec".asInstanceOf[typings.mqttPacket.mqttPacketStrings.pubrec]
   @scala.inline
-  def pubrec: typings.mqttPacket.mqttPacketStrings.pubrec = this.cast("pubrec")
+  def pubrel: typings.mqttPacket.mqttPacketStrings.pubrel = "pubrel".asInstanceOf[typings.mqttPacket.mqttPacketStrings.pubrel]
   @scala.inline
-  def pubrel: typings.mqttPacket.mqttPacketStrings.pubrel = this.cast("pubrel")
+  def suback: typings.mqttPacket.mqttPacketStrings.suback = "suback".asInstanceOf[typings.mqttPacket.mqttPacketStrings.suback]
   @scala.inline
-  def suback: typings.mqttPacket.mqttPacketStrings.suback = this.cast("suback")
+  def subscribe: typings.mqttPacket.mqttPacketStrings.subscribe = "subscribe".asInstanceOf[typings.mqttPacket.mqttPacketStrings.subscribe]
   @scala.inline
-  def subscribe: typings.mqttPacket.mqttPacketStrings.subscribe = this.cast("subscribe")
+  def unsuback: typings.mqttPacket.mqttPacketStrings.unsuback = "unsuback".asInstanceOf[typings.mqttPacket.mqttPacketStrings.unsuback]
   @scala.inline
-  def unsuback: typings.mqttPacket.mqttPacketStrings.unsuback = this.cast("unsuback")
-  @scala.inline
-  def unsubscribe: typings.mqttPacket.mqttPacketStrings.unsubscribe = this.cast("unsubscribe")
+  def unsubscribe: typings.mqttPacket.mqttPacketStrings.unsubscribe = "unsubscribe".asInstanceOf[typings.mqttPacket.mqttPacketStrings.unsubscribe]
 }
 

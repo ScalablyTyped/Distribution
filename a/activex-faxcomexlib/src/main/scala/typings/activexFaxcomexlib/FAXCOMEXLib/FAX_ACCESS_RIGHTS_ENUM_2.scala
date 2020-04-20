@@ -31,26 +31,24 @@ trait FAX_ACCESS_RIGHTS_ENUM_2 extends js.Object
 
 object FAX_ACCESS_RIGHTS_ENUM_2 {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def far2MANAGE_ARCHIVES: `256` = 256.asInstanceOf[`256`]
   @scala.inline
-  def far2MANAGE_ARCHIVES: `256` = this.cast(256)
+  def far2MANAGE_CONFIG: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def far2MANAGE_CONFIG: `64` = this.cast(64)
+  def far2MANAGE_OUT_JOBS: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def far2MANAGE_OUT_JOBS: `16` = this.cast(16)
+  def far2MANAGE_RECEIVE_FOLDER: `512` = 512.asInstanceOf[`512`]
   @scala.inline
-  def far2MANAGE_RECEIVE_FOLDER: `512` = this.cast(512)
+  def far2QUERY_ARCHIVES: `128` = 128.asInstanceOf[`128`]
   @scala.inline
-  def far2QUERY_ARCHIVES: `128` = this.cast(128)
+  def far2QUERY_CONFIG: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def far2QUERY_CONFIG: `32` = this.cast(32)
+  def far2QUERY_OUT_JOBS: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def far2QUERY_OUT_JOBS: `8` = this.cast(8)
+  def far2SUBMIT_HIGH: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def far2SUBMIT_HIGH: `4` = this.cast(4)
+  def far2SUBMIT_LOW: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def far2SUBMIT_LOW: `1` = this.cast(1)
-  @scala.inline
-  def far2SUBMIT_NORMAL: `2` = this.cast(2)
+  def far2SUBMIT_NORMAL: `2` = 2.asInstanceOf[`2`]
 }
 

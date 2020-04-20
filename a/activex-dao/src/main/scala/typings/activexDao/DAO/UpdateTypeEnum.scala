@@ -16,12 +16,10 @@ trait UpdateTypeEnum extends js.Object
 
 object UpdateTypeEnum {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dbUpdateBatch: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def dbUpdateBatch: `4` = this.cast(4)
+  def dbUpdateCurrentRecord: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def dbUpdateCurrentRecord: `2` = this.cast(2)
-  @scala.inline
-  def dbUpdateRegular: `1` = this.cast(1)
+  def dbUpdateRegular: `1` = 1.asInstanceOf[`1`]
 }
 

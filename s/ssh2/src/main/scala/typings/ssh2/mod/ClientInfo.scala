@@ -16,7 +16,6 @@ object ClientInfo {
   @scala.inline
   def apply(header: Header, ip: String): ClientInfo = {
     val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClientInfo]
   }
 }

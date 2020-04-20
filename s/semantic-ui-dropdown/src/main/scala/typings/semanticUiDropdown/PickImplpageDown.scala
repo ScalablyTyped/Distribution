@@ -13,7 +13,6 @@ object PickImplpageDown {
   @scala.inline
   def apply(pageDown: Double): PickImplpageDown = {
     val __obj = js.Dynamic.literal(pageDown = pageDown.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplpageDown]
   }
 }

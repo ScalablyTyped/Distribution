@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation._
 
 object nivoBarComponents extends nivoBarProps {
   @scala.inline
-  def Bar: ComponentType[BarSvgProps with Dimensions] = js.constructorOf[typings.nivoBar.mod.Bar].asInstanceOf[typings.react.mod.ComponentType[typings.nivoBar.mod.BarSvgProps with typings.nivoCore.mod.Dimensions]]
+  def Bar: ComponentType[BarSvgProps with Dimensions] = js.constructorOf[typings.nivoBar.mod.Bar].asInstanceOf[ComponentType[BarSvgProps with Dimensions]]
   @scala.inline
-  def BarCanvas: ComponentType[BarCanvasProps with Dimensions] = js.constructorOf[typings.nivoBar.mod.BarCanvas].asInstanceOf[typings.react.mod.ComponentType[typings.nivoBar.mod.BarCanvasProps with typings.nivoCore.mod.Dimensions]]
+  def BarCanvas: ComponentType[BarCanvasProps with Dimensions] = js.constructorOf[typings.nivoBar.mod.BarCanvas].asInstanceOf[ComponentType[BarCanvasProps with Dimensions]]
   @scala.inline
-  def ResponsiveBar: ComponentType[ResponsiveBarProps] = js.constructorOf[typings.nivoBar.mod.ResponsiveBar].asInstanceOf[typings.react.mod.ComponentType[ResponsiveBarProps]]
+  def ResponsiveBar: ComponentType[ResponsiveBarProps] = js.constructorOf[typings.nivoBar.mod.ResponsiveBar].asInstanceOf[ComponentType[ResponsiveBarProps]]
   @scala.inline
-  def ResponsiveBarCanvas: ComponentType[ResponsiveBarCanvasProps] = js.constructorOf[typings.nivoBar.mod.ResponsiveBarCanvas].asInstanceOf[typings.react.mod.ComponentType[ResponsiveBarCanvasProps]]
+  def ResponsiveBarCanvas: ComponentType[ResponsiveBarCanvasProps] = js.constructorOf[typings.nivoBar.mod.ResponsiveBarCanvas].asInstanceOf[ComponentType[ResponsiveBarCanvasProps]]
 }
 

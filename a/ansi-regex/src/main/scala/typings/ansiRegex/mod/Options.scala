@@ -16,7 +16,6 @@ object Options {
   @scala.inline
   def apply(onlyFirst: Boolean): Options = {
     val __obj = js.Dynamic.literal(onlyFirst = onlyFirst.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Options]
   }
 }

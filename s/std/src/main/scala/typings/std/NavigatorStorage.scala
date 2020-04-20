@@ -12,7 +12,6 @@ object NavigatorStorage {
   @scala.inline
   def apply(storage: StorageManager): NavigatorStorage = {
     val __obj = js.Dynamic.literal(storage = storage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NavigatorStorage]
   }
 }

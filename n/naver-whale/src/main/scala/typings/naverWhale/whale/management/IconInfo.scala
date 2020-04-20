@@ -15,7 +15,6 @@ object IconInfo {
   @scala.inline
   def apply(size: Double, url: String): IconInfo = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IconInfo]
   }
 }

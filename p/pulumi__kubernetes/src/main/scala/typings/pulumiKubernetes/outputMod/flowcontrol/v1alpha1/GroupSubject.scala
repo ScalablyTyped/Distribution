@@ -20,7 +20,6 @@ object GroupSubject {
   @scala.inline
   def apply(name: String): GroupSubject = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GroupSubject]
   }
 }

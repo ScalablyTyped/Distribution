@@ -14,7 +14,6 @@ object IQuickSuggestionsOptions {
   @scala.inline
   def apply(comments: Boolean, other: Boolean, strings: Boolean): IQuickSuggestionsOptions = {
     val __obj = js.Dynamic.literal(comments = comments.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], strings = strings.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IQuickSuggestionsOptions]
   }
 }

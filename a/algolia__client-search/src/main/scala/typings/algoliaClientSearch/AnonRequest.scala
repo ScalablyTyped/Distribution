@@ -18,7 +18,6 @@ object AnonRequest {
     shouldStop: BrowseResponse[TObject] => Boolean
   ): AnonRequest[TObject] = {
     val __obj = js.Dynamic.literal(request = js.Any.fromFunction1(request), shouldStop = js.Any.fromFunction1(shouldStop))
-  
     __obj.asInstanceOf[AnonRequest[TObject]]
   }
 }

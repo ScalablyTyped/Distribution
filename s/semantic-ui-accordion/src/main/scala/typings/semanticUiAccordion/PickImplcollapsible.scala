@@ -13,7 +13,6 @@ object PickImplcollapsible {
   @scala.inline
   def apply(collapsible: Boolean): PickImplcollapsible = {
     val __obj = js.Dynamic.literal(collapsible = collapsible.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplcollapsible]
   }
 }

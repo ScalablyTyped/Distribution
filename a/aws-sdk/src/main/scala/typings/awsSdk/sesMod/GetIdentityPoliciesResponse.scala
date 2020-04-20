@@ -16,7 +16,6 @@ object GetIdentityPoliciesResponse {
   @scala.inline
   def apply(Policies: PolicyMap): GetIdentityPoliciesResponse = {
     val __obj = js.Dynamic.literal(Policies = Policies.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetIdentityPoliciesResponse]
   }
 }

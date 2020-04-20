@@ -16,7 +16,6 @@ object AnonOpenStatus {
   @scala.inline
   def apply(openStatus: GpioOpenStatus, pin: GpioPin, returnValue: Boolean): AnonOpenStatus = {
     val __obj = js.Dynamic.literal(openStatus = openStatus.asInstanceOf[js.Any], pin = pin.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOpenStatus]
   }
 }

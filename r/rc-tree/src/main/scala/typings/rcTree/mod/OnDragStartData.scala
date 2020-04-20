@@ -14,7 +14,6 @@ object OnDragStartData {
   @scala.inline
   def apply(event: Event_, node: InternalTreeNode): OnDragStartData = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnDragStartData]
   }
 }

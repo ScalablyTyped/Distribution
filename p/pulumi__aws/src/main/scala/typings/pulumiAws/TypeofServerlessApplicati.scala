@@ -13,7 +13,6 @@ object TypeofServerlessApplicati {
   @scala.inline
   def apply(Types: TypeofServerlessApplicati): TypeofServerlessApplicati = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofServerlessApplicati]
   }
 }

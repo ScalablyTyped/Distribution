@@ -58,7 +58,6 @@ object ChangedEventDetail {
     valueTypeBefore: RangeValueType | Unknown_ | Empty | String | Integer | Double | Boolean | Error | RichValue
   ): ChangedEventDetail = {
     val __obj = js.Dynamic.literal(valueAfter = valueAfter.asInstanceOf[js.Any], valueBefore = valueBefore.asInstanceOf[js.Any], valueTypeAfter = valueTypeAfter.asInstanceOf[js.Any], valueTypeBefore = valueTypeBefore.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChangedEventDetail]
   }
 }

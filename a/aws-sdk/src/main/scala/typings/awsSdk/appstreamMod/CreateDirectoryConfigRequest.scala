@@ -28,7 +28,6 @@ object CreateDirectoryConfigRequest {
     ServiceAccountCredentials: ServiceAccountCredentials
   ): CreateDirectoryConfigRequest = {
     val __obj = js.Dynamic.literal(DirectoryName = DirectoryName.asInstanceOf[js.Any], OrganizationalUnitDistinguishedNames = OrganizationalUnitDistinguishedNames.asInstanceOf[js.Any], ServiceAccountCredentials = ServiceAccountCredentials.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateDirectoryConfigRequest]
   }
 }

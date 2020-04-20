@@ -18,7 +18,6 @@ object ILightBoxProvider {
     templateUrl: String
   ): ILightBoxProvider = {
     val __obj = js.Dynamic.literal(calculateImageDimensionLimits = js.Any.fromFunction1(calculateImageDimensionLimits), calculateModalDimensions = js.Any.fromFunction1(calculateModalDimensions), templateUrl = templateUrl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ILightBoxProvider]
   }
 }

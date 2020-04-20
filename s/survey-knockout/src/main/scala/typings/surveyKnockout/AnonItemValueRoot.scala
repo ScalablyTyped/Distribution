@@ -13,7 +13,6 @@ object AnonItemValueRoot {
   @scala.inline
   def apply(itemValue: String, root: String): AnonItemValueRoot = {
     val __obj = js.Dynamic.literal(itemValue = itemValue.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonItemValueRoot]
   }
 }

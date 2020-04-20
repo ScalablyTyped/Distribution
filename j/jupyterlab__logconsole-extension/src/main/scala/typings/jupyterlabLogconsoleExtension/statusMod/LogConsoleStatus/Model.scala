@@ -41,12 +41,12 @@ class Model protected () extends VDomModel {
   /**
     * Flag to toggle flashing when new logs added.
     */
-  def flashEnabled(): Boolean = js.native
+  def flashEnabled: Boolean = js.native
   def flashEnabled(enabled: Boolean): js.Any = js.native
   /**
     * Number of messages currently in the current source.
     */
-  def messages(): Double = js.native
+  def messages: Double = js.native
   def source(): js.Any = js.native
   def source(name: String): js.Any = js.native
   def sourceDisplayed(): Unit = js.native
@@ -75,18 +75,18 @@ class Model protected () extends VDomModel {
     * The name of the active log source
     */
   @JSName("source")
-  def source_Union(): String | Null = js.native
+  def source_Union: String | Null = js.native
   /**
     * The number of messages ever stored by the current source.
     */
-  def version(): Double = js.native
+  def version: Double = js.native
   /**
     * The last source version that was displayed.
     */
-  def versionDisplayed(): Double = js.native
+  def versionDisplayed: Double = js.native
   /**
     * The last source version we notified the user about.
     */
-  def versionNotified(): Double = js.native
+  def versionNotified: Double = js.native
 }
 

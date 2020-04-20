@@ -15,7 +15,6 @@ object RequiredCacheHint {
   @scala.inline
   def apply(maxAge: Double, scope: CacheScope): RequiredCacheHint = {
     val __obj = js.Dynamic.literal(maxAge = maxAge.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RequiredCacheHint]
   }
 }

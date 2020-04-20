@@ -16,7 +16,6 @@ object GetBucketRequestPaymentRequest {
   @scala.inline
   def apply(Bucket: BucketName): GetBucketRequestPaymentRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBucketRequestPaymentRequest]
   }
 }

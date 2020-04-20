@@ -33,7 +33,6 @@ object KanbanFilter {
     searchCards: String => Unit
   ): KanbanFilter = {
     val __obj = js.Dynamic.literal(clearFilter = js.Any.fromFunction0(clearFilter), clearSearch = js.Any.fromFunction0(clearSearch), filterCards = js.Any.fromFunction0(filterCards), searchCards = js.Any.fromFunction1(searchCards))
-  
     __obj.asInstanceOf[KanbanFilter]
   }
 }

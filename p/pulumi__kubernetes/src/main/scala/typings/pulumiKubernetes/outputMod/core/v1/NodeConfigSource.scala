@@ -19,7 +19,6 @@ object NodeConfigSource {
   @scala.inline
   def apply(configMap: ConfigMapNodeConfigSource): NodeConfigSource = {
     val __obj = js.Dynamic.literal(configMap = configMap.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NodeConfigSource]
   }
 }

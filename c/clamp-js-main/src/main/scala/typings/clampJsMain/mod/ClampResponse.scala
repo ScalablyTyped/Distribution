@@ -13,7 +13,6 @@ object ClampResponse {
   @scala.inline
   def apply(clamped: String, original: String): ClampResponse = {
     val __obj = js.Dynamic.literal(clamped = clamped.asInstanceOf[js.Any], original = original.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClampResponse]
   }
 }

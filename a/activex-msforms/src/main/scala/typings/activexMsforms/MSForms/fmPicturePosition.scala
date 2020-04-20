@@ -36,32 +36,30 @@ trait fmPicturePosition extends js.Object
 
 object fmPicturePosition {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fmPicturePositionAboveCenter: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def fmPicturePositionAboveCenter: `7` = this.cast(7)
+  def fmPicturePositionAboveLeft: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def fmPicturePositionAboveLeft: `6` = this.cast(6)
+  def fmPicturePositionAboveRight: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def fmPicturePositionAboveRight: `8` = this.cast(8)
+  def fmPicturePositionBelowCenter: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def fmPicturePositionBelowCenter: `10` = this.cast(10)
+  def fmPicturePositionBelowLeft: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def fmPicturePositionBelowLeft: `9` = this.cast(9)
+  def fmPicturePositionBelowRight: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def fmPicturePositionBelowRight: `11` = this.cast(11)
+  def fmPicturePositionCenter: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def fmPicturePositionCenter: `12` = this.cast(12)
+  def fmPicturePositionLeftBottom: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def fmPicturePositionLeftBottom: `2` = this.cast(2)
+  def fmPicturePositionLeftCenter: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def fmPicturePositionLeftCenter: `1` = this.cast(1)
+  def fmPicturePositionLeftTop: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def fmPicturePositionLeftTop: `0` = this.cast(0)
+  def fmPicturePositionRightBottom: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def fmPicturePositionRightBottom: `5` = this.cast(5)
+  def fmPicturePositionRightCenter: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def fmPicturePositionRightCenter: `4` = this.cast(4)
-  @scala.inline
-  def fmPicturePositionRightTop: `3` = this.cast(3)
+  def fmPicturePositionRightTop: `3` = 3.asInstanceOf[`3`]
 }
 

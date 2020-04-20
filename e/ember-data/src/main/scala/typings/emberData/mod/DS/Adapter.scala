@@ -34,7 +34,7 @@ class Adapter () extends default {
     * Implement this method in a subclass to handle the creation of
     * new records.
     */
-  def createRecord[K /* <: String */](
+  def createRecord[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](
     store: Store,
     `type`: /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any,
     snapshot: Snapshot[K]
@@ -43,7 +43,7 @@ class Adapter () extends default {
     * Implement this method in a subclass to handle the deletion of
     * a record.
     */
-  def deleteRecord[K /* <: String */](
+  def deleteRecord[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](
     store: Store,
     `type`: /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any,
     snapshot: Snapshot[K]
@@ -51,7 +51,7 @@ class Adapter () extends default {
   /**
     * The `findAll()` method is used to retrieve all records for a given type.
     */
-  def findAll[K /* <: String */](
+  def findAll[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](
     store: Store,
     `type`: /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any,
     sinceToken: String,
@@ -62,7 +62,7 @@ class Adapter () extends default {
     * requests to find multiple records at once if coalesceFindRequests
     * is true.
     */
-  def findMany[K /* <: String */](
+  def findMany[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](
     store: Store,
     `type`: /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any,
     ids: js.Array[_],
@@ -75,7 +75,7 @@ class Adapter () extends default {
     * method should return a promise that will resolve to a JavaScript object that will be
     * normalized by the serializer.
     */
-  def findRecord[K /* <: String */](
+  def findRecord[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](
     store: Store,
     `type`: /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any,
     id: String,
@@ -87,7 +87,7 @@ class Adapter () extends default {
     * each time you create a new record, and the value returned from it will be
     * assigned to the record's `primaryKey`.
     */
-  def generateIdForRecord[K /* <: String */](
+  def generateIdForRecord[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](
     store: Store,
     `type`: /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any,
     inputProperties: js.Object
@@ -100,7 +100,7 @@ class Adapter () extends default {
   /**
     * This method is called when you call `query` on the store.
     */
-  def query[K /* <: String */](
+  def query[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](
     store: Store,
     `type`: /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any,
     query: js.Object,
@@ -110,7 +110,7 @@ class Adapter () extends default {
     * The `queryRecord()` method is invoked when the store is asked for a single
     * record through a query object.
     */
-  def queryRecord[K /* <: String */](
+  def queryRecord[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](
     store: Store,
     `type`: /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any,
     query: js.Object
@@ -118,36 +118,36 @@ class Adapter () extends default {
   /**
     * Proxies to the serializer's `serialize` method.
     */
-  def serialize[K /* <: String */](snapshot: Snapshot[K], options: js.Object): js.Object = js.native
+  def serialize[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](snapshot: Snapshot[K], options: js.Object): js.Object = js.native
   /**
     * This method is used by the store to determine if the store should
     * reload a record array after the `store.findAll` method resolves
     * with a cached record array.
     */
-  def shouldBackgroundReloadAll[K /* <: String */](store: Store, snapshotRecordArray: SnapshotRecordArray[K]): Boolean = js.native
+  def shouldBackgroundReloadAll[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](store: Store, snapshotRecordArray: SnapshotRecordArray[K]): Boolean = js.native
   /**
     * This method is used by the store to determine if the store should
     * reload a record after the `store.findRecord` method resolves a
     * cached record.
     */
-  def shouldBackgroundReloadRecord[K /* <: String */](store: Store, snapshot: Snapshot[K]): Boolean = js.native
+  def shouldBackgroundReloadRecord[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](store: Store, snapshot: Snapshot[K]): Boolean = js.native
   /**
     * This method is used by the store to determine if the store should
     * reload all records from the adapter when records are requested by
     * `store.findAll`.
     */
-  def shouldReloadAll[K /* <: String */](store: Store, snapshotRecordArray: SnapshotRecordArray[K]): Boolean = js.native
+  def shouldReloadAll[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](store: Store, snapshotRecordArray: SnapshotRecordArray[K]): Boolean = js.native
   /**
     * This method is used by the store to determine if the store should
     * reload a record from the adapter when a record is requested by
     * `store.findRecord`.
     */
-  def shouldReloadRecord[K /* <: String */](store: Store, snapshot: Snapshot[K]): Boolean = js.native
+  def shouldReloadRecord[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](store: Store, snapshot: Snapshot[K]): Boolean = js.native
   /**
     * Implement this method in a subclass to handle the updating of
     * a record.
     */
-  def updateRecord[K /* <: String */](
+  def updateRecord[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](
     store: Store,
     `type`: /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any,
     snapshot: Snapshot[K]

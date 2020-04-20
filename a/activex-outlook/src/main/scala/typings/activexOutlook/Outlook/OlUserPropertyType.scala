@@ -38,34 +38,32 @@ trait OlUserPropertyType extends js.Object
 
 object OlUserPropertyType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olCombination: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def olCombination: `19` = this.cast(19)
+  def olCurrency: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def olCurrency: `14` = this.cast(14)
+  def olDateTime: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def olDateTime: `5` = this.cast(5)
+  def olDuration: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def olDuration: `7` = this.cast(7)
+  def olEnumeration: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def olEnumeration: `21` = this.cast(21)
+  def olFormula: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def olFormula: `18` = this.cast(18)
+  def olInteger: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def olInteger: `20` = this.cast(20)
+  def olKeywords: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def olKeywords: `11` = this.cast(11)
+  def olNumber: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def olNumber: `3` = this.cast(3)
+  def olOutlookInternal: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def olOutlookInternal: `0` = this.cast(0)
+  def olPercent: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def olPercent: `12` = this.cast(12)
+  def olSmartFrom: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def olSmartFrom: `22` = this.cast(22)
+  def olText: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olText: `1` = this.cast(1)
-  @scala.inline
-  def olYesNo: `6` = this.cast(6)
+  def olYesNo: `6` = 6.asInstanceOf[`6`]
 }
 

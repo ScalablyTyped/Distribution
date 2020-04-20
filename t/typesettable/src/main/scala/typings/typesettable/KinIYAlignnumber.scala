@@ -15,7 +15,6 @@ object KinIYAlignnumber {
   @scala.inline
   def apply(bottom: Double, center: Double, top: Double): KinIYAlignnumber = {
     val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], center = center.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KinIYAlignnumber]
   }
 }

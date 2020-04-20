@@ -25,7 +25,6 @@ object ResembleComparison {
     repaint: () => ResembleComparison
   ): ResembleComparison = {
     val __obj = js.Dynamic.literal(ignoreAntialiasing = js.Any.fromFunction0(ignoreAntialiasing), ignoreColors = js.Any.fromFunction0(ignoreColors), ignoreNothing = js.Any.fromFunction0(ignoreNothing), onComplete = js.Any.fromFunction1(onComplete), repaint = js.Any.fromFunction0(repaint))
-  
     __obj.asInstanceOf[ResembleComparison]
   }
 }

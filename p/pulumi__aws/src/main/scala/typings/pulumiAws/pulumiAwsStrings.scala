@@ -749,6 +749,9 @@ object pulumiAwsStrings {
   sealed trait dotnetcore2Dot1 extends Runtime
   
   @js.native
+  sealed trait dotnetcore3Dot1 extends Runtime
+  
+  @js.native
   sealed trait dualstack
     extends IpAddressType
        with typings.pulumiAws.ipAddressTypeMod.IpAddressType
@@ -1442,7 +1445,7 @@ object pulumiAwsStrings {
   @scala.inline
   def REMOVE: REMOVE = "REMOVE".asInstanceOf[REMOVE]
   @scala.inline
-  def `Red Hat Enterprise Linux`: `Red Hat Enterprise Linux` = "Red Hat Enterprise Linux".asInstanceOf[`Red Hat Enterprise Linux`]
+  def `Red Hat Enterprise Linux`: `Red Hat Enterprise Linux` = ("Red Hat Enterprise Linux").asInstanceOf[`Red Hat Enterprise Linux`]
   @scala.inline
   def SETFCAP: SETFCAP = "SETFCAP".asInstanceOf[SETFCAP]
   @scala.inline
@@ -1458,7 +1461,7 @@ object pulumiAwsStrings {
   @scala.inline
   def SRV: SRV = "SRV".asInstanceOf[SRV]
   @scala.inline
-  def `SUSE Linux`: `SUSE Linux` = "SUSE Linux".asInstanceOf[`SUSE Linux`]
+  def `SUSE Linux`: `SUSE Linux` = ("SUSE Linux").asInstanceOf[`SUSE Linux`]
   @scala.inline
   def SYSLOG: SYSLOG = "SYSLOG".asInstanceOf[SYSLOG]
   @scala.inline
@@ -1498,13 +1501,13 @@ object pulumiAwsStrings {
   @scala.inline
   def Windows: Windows = "Windows".asInstanceOf[Windows]
   @scala.inline
-  def `Windows with SQL Server`: `Windows with SQL Server` = "Windows with SQL Server".asInstanceOf[`Windows with SQL Server`]
+  def `Windows with SQL Server`: `Windows with SQL Server` = ("Windows with SQL Server").asInstanceOf[`Windows with SQL Server`]
   @scala.inline
-  def `Windows with SQL Server Enterprise`: `Windows with SQL Server Enterprise` = "Windows with SQL Server Enterprise".asInstanceOf[`Windows with SQL Server Enterprise`]
+  def `Windows with SQL Server Enterprise`: `Windows with SQL Server Enterprise` = ("Windows with SQL Server Enterprise").asInstanceOf[`Windows with SQL Server Enterprise`]
   @scala.inline
-  def `Windows with SQL Server Standard`: `Windows with SQL Server Standard` = "Windows with SQL Server Standard".asInstanceOf[`Windows with SQL Server Standard`]
+  def `Windows with SQL Server Standard`: `Windows with SQL Server Standard` = ("Windows with SQL Server Standard").asInstanceOf[`Windows with SQL Server Standard`]
   @scala.inline
-  def `Windows with SQL Server Web`: `Windows with SQL Server Web` = "Windows with SQL Server Web".asInstanceOf[`Windows with SQL Server Web`]
+  def `Windows with SQL Server Web`: `Windows with SQL Server Web` = ("Windows with SQL Server Web").asInstanceOf[`Windows with SQL Server Web`]
   @scala.inline
   def a1Dot2xlarge: a1Dot2xlarge = "a1.2xlarge".asInstanceOf[a1Dot2xlarge]
   @scala.inline
@@ -1771,6 +1774,8 @@ object pulumiAwsStrings {
   def dotnetcore2Dot0: dotnetcore2Dot0 = "dotnetcore2.0".asInstanceOf[dotnetcore2Dot0]
   @scala.inline
   def dotnetcore2Dot1: dotnetcore2Dot1 = "dotnetcore2.1".asInstanceOf[dotnetcore2Dot1]
+  @scala.inline
+  def dotnetcore3Dot1: dotnetcore3Dot1 = "dotnetcore3.1".asInstanceOf[dotnetcore3Dot1]
   @scala.inline
   def dualstack: dualstack = "dualstack".asInstanceOf[dualstack]
   @scala.inline

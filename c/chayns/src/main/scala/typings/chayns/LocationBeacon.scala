@@ -16,7 +16,6 @@ object LocationBeacon {
   @scala.inline
   def apply(id: Double, latitude: Double, longitude: Double, pushMessage: String): LocationBeacon = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], pushMessage = pushMessage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LocationBeacon]
   }
 }

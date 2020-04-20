@@ -12,7 +12,6 @@ object AnonIgnoreCase {
   @scala.inline
   def apply(ignoreCase: Boolean): AnonIgnoreCase = {
     val __obj = js.Dynamic.literal(ignoreCase = ignoreCase.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIgnoreCase]
   }
 }

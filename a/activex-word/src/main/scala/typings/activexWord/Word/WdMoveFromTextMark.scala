@@ -32,28 +32,26 @@ trait WdMoveFromTextMark extends js.Object
 
 object WdMoveFromTextMark {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdMoveFromTextMarkBold: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdMoveFromTextMarkBold: `6` = this.cast(6)
+  def wdMoveFromTextMarkCaret: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdMoveFromTextMarkCaret: `3` = this.cast(3)
+  def wdMoveFromTextMarkColorOnly: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def wdMoveFromTextMarkColorOnly: `10` = this.cast(10)
+  def wdMoveFromTextMarkDoubleStrikeThrough: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdMoveFromTextMarkDoubleStrikeThrough: `1` = this.cast(1)
+  def wdMoveFromTextMarkDoubleUnderline: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def wdMoveFromTextMarkDoubleUnderline: `9` = this.cast(9)
+  def wdMoveFromTextMarkHidden: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdMoveFromTextMarkHidden: `0` = this.cast(0)
+  def wdMoveFromTextMarkItalic: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def wdMoveFromTextMarkItalic: `7` = this.cast(7)
+  def wdMoveFromTextMarkNone: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdMoveFromTextMarkNone: `5` = this.cast(5)
+  def wdMoveFromTextMarkPound: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdMoveFromTextMarkPound: `4` = this.cast(4)
+  def wdMoveFromTextMarkStrikeThrough: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdMoveFromTextMarkStrikeThrough: `2` = this.cast(2)
-  @scala.inline
-  def wdMoveFromTextMarkUnderline: `8` = this.cast(8)
+  def wdMoveFromTextMarkUnderline: `8` = 8.asInstanceOf[`8`]
 }
 

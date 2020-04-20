@@ -16,7 +16,6 @@ object DescribePartnerEventSourceRequest {
   @scala.inline
   def apply(Name: EventSourceName): DescribePartnerEventSourceRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribePartnerEventSourceRequest]
   }
 }

@@ -12,7 +12,6 @@ object TypeofScenarioLevelPlugin {
   @scala.inline
   def apply(init: js.Any => Unit): TypeofScenarioLevelPlugin = {
     val __obj = js.Dynamic.literal(init = js.Any.fromFunction1(init))
-  
     __obj.asInstanceOf[TypeofScenarioLevelPlugin]
   }
 }

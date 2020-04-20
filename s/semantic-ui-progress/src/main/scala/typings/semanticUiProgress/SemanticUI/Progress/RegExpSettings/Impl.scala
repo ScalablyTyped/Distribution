@@ -16,7 +16,6 @@ object Impl {
   @scala.inline
   def apply(variable: RegExp): Impl = {
     val __obj = js.Dynamic.literal(variable = variable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Impl]
   }
 }

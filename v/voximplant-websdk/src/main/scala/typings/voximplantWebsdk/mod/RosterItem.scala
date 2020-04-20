@@ -40,7 +40,6 @@ object RosterItem {
     subscription_type: Double
   ): RosterItem = {
     val __obj = js.Dynamic.literal(groups = groups.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], resources = resources.asInstanceOf[js.Any], subscription_type = subscription_type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RosterItem]
   }
 }

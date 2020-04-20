@@ -100,7 +100,6 @@ object State {
     phase: DROP_ANIMATING
   ): State = {
     val __obj = js.Dynamic.literal(completed = completed.asInstanceOf[js.Any], dimensions = dimensions.asInstanceOf[js.Any], dropDuration = dropDuration.asInstanceOf[js.Any], newHomeClientOffset = newHomeClientOffset.asInstanceOf[js.Any], phase = phase.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[State]
   }
   @scala.inline

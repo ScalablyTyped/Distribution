@@ -14,7 +14,6 @@ object Results {
   @scala.inline
   def apply(documentTitle: String, issues: js.Array[ResultIssue], pageUrl: String): Results = {
     val __obj = js.Dynamic.literal(documentTitle = documentTitle.asInstanceOf[js.Any], issues = issues.asInstanceOf[js.Any], pageUrl = pageUrl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Results]
   }
 }

@@ -18,7 +18,6 @@ object BillingInfoResource {
   @scala.inline
   def apply(get: AnonAccountId => Request_[BillingInfo], list: AnonFields => Request_[BillingInfoList]): BillingInfoResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[BillingInfoResource]
   }
 }

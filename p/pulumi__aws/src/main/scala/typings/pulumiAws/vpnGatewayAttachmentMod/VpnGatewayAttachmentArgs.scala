@@ -21,7 +21,6 @@ object VpnGatewayAttachmentArgs {
   @scala.inline
   def apply(vpcId: Input[String], vpnGatewayId: Input[String]): VpnGatewayAttachmentArgs = {
     val __obj = js.Dynamic.literal(vpcId = vpcId.asInstanceOf[js.Any], vpnGatewayId = vpnGatewayId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VpnGatewayAttachmentArgs]
   }
 }

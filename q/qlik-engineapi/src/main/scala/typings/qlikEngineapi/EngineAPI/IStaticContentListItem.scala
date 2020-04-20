@@ -42,7 +42,6 @@ object IStaticContentListItem {
   @scala.inline
   def apply(qUrl: String, qUrlDef: String): IStaticContentListItem = {
     val __obj = js.Dynamic.literal(qUrl = qUrl.asInstanceOf[js.Any], qUrlDef = qUrlDef.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IStaticContentListItem]
   }
 }

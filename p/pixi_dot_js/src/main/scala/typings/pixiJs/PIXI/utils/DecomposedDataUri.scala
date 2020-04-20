@@ -44,7 +44,6 @@ object DecomposedDataUri {
   @scala.inline
   def apply(charset: String, data: String, encoding: String, mediaType: String, subType: String): DecomposedDataUri = {
     val __obj = js.Dynamic.literal(charset = charset.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], subType = subType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DecomposedDataUri]
   }
 }

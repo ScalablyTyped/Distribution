@@ -22,18 +22,16 @@ trait WdShowFilter extends js.Object
 
 object WdShowFilter {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdShowFilterFormattingAvailable: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdShowFilterFormattingAvailable: `4` = this.cast(4)
+  def wdShowFilterFormattingInUse: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdShowFilterFormattingInUse: `3` = this.cast(3)
+  def wdShowFilterFormattingRecommended: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdShowFilterFormattingRecommended: `5` = this.cast(5)
+  def wdShowFilterStylesAll: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdShowFilterStylesAll: `2` = this.cast(2)
+  def wdShowFilterStylesAvailable: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdShowFilterStylesAvailable: `0` = this.cast(0)
-  @scala.inline
-  def wdShowFilterStylesInUse: `1` = this.cast(1)
+  def wdShowFilterStylesInUse: `1` = 1.asInstanceOf[`1`]
 }
 

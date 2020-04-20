@@ -14,7 +14,6 @@ object EventType {
   @scala.inline
   def apply(nativeEvent: MessageEvent, url: String): EventType = {
     val __obj = js.Dynamic.literal(nativeEvent = nativeEvent.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventType]
   }
 }

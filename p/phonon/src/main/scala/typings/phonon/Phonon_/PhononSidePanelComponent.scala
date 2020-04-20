@@ -13,7 +13,6 @@ object PhononSidePanelComponent {
   @scala.inline
   def apply(close: () => Unit, open: () => Unit): PhononSidePanelComponent = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), open = js.Any.fromFunction0(open))
-  
     __obj.asInstanceOf[PhononSidePanelComponent]
   }
 }

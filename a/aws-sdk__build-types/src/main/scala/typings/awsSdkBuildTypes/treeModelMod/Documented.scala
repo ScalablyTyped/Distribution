@@ -12,7 +12,6 @@ object Documented {
   @scala.inline
   def apply(documentation: String): Documented = {
     val __obj = js.Dynamic.literal(documentation = documentation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Documented]
   }
 }

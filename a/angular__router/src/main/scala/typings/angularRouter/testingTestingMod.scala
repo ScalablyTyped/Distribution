@@ -34,7 +34,7 @@ object testingTestingMod extends js.Object {
     /**
       * @docsNotRequired
       */
-    def stubbedModules(): StringDictionary[js.Any] = js.native
+    def stubbedModules: StringDictionary[js.Any] = js.native
     /**
       * @docsNotRequired
       */

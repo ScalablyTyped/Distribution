@@ -29,17 +29,17 @@ class SystemIdDataAttribute protected () extends DataMember {
   /**
     * In version 8.5.0: introduced
     */
-  def description(): String = js.native
+  def description: String = js.native
   def description(newValue: String): js.Any = js.native
   def entity(): js.Any = js.native
   def entity(newValue: IEntity): js.Any = js.native
-  def entityQualifiedName(): String | Null = js.native
+  def entityQualifiedName: String | Null = js.native
   @JSName("entity")
-  def entity_Union(): IEntity | Null = js.native
+  def entity_Union: IEntity | Null = js.native
   /**
     * In version 8.5.0: introduced
     */
-  def summary(): String = js.native
+  def summary: String = js.native
   def summary(newValue: String): js.Any = js.native
 }
 

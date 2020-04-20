@@ -12,7 +12,6 @@ object SkillAccountBody {
   @scala.inline
   def apply(accessToken: String): SkillAccountBody = {
     val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SkillAccountBody]
   }
 }

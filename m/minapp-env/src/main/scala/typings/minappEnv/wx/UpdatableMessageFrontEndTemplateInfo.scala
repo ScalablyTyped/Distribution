@@ -16,7 +16,6 @@ object UpdatableMessageFrontEndTemplateInfo {
   @scala.inline
   def apply(parameterList: UpdatableMessageFrontEndParameter): UpdatableMessageFrontEndTemplateInfo = {
     val __obj = js.Dynamic.literal(parameterList = parameterList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdatableMessageFrontEndTemplateInfo]
   }
 }

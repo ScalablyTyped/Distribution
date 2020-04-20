@@ -15,7 +15,6 @@ object DrawStep {
   @scala.inline
   def apply(animator: IAnimator, attrToProjector: AttributeToProjector): DrawStep = {
     val __obj = js.Dynamic.literal(animator = animator.asInstanceOf[js.Any], attrToProjector = attrToProjector.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DrawStep]
   }
 }

@@ -1888,7 +1888,7 @@ object arangodbStrings {
   @scala.inline
   def accepted: accepted = "accepted".asInstanceOf[accepted]
   @scala.inline
-  def `already reported`: `already reported` = "already reported".asInstanceOf[`already reported`]
+  def `already reported`: `already reported` = ("already reported").asInstanceOf[`already reported`]
   @scala.inline
   def any: any = "any".asInstanceOf[any]
   @scala.inline
@@ -1898,11 +1898,11 @@ object arangodbStrings {
   @scala.inline
   def autoincrement: autoincrement = "autoincrement".asInstanceOf[autoincrement]
   @scala.inline
-  def `bad gateway`: `bad gateway` = "bad gateway".asInstanceOf[`bad gateway`]
+  def `bad gateway`: `bad gateway` = ("bad gateway").asInstanceOf[`bad gateway`]
   @scala.inline
-  def `bad request`: `bad request` = "bad request".asInstanceOf[`bad request`]
+  def `bad request`: `bad request` = ("bad request").asInstanceOf[`bad request`]
   @scala.inline
-  def `bandwidth limit exceeded`: `bandwidth limit exceeded` = "bandwidth limit exceeded".asInstanceOf[`bandwidth limit exceeded`]
+  def `bandwidth limit exceeded`: `bandwidth limit exceeded` = ("bandwidth limit exceeded").asInstanceOf[`bandwidth limit exceeded`]
   @scala.inline
   def bool: bool = "bool".asInstanceOf[bool]
   @scala.inline
@@ -1922,9 +1922,9 @@ object arangodbStrings {
   @scala.inline
   def created: created = "created".asInstanceOf[created]
   @scala.inline
-  def `expectation failed`: `expectation failed` = "expectation failed".asInstanceOf[`expectation failed`]
+  def `expectation failed`: `expectation failed` = ("expectation failed").asInstanceOf[`expectation failed`]
   @scala.inline
-  def `failed dependency`: `failed dependency` = "failed dependency".asInstanceOf[`failed dependency`]
+  def `failed dependency`: `failed dependency` = ("failed dependency").asInstanceOf[`failed dependency`]
   @scala.inline
   def fill: fill = "fill".asInstanceOf[fill]
   @scala.inline
@@ -1934,7 +1934,7 @@ object arangodbStrings {
   @scala.inline
   def fulltext: fulltext = "fulltext".asInstanceOf[fulltext]
   @scala.inline
-  def `gateway timeout`: `gateway timeout` = "gateway timeout".asInstanceOf[`gateway timeout`]
+  def `gateway timeout`: `gateway timeout` = ("gateway timeout").asInstanceOf[`gateway timeout`]
   @scala.inline
   def geo: geo = "geo".asInstanceOf[geo]
   @scala.inline
@@ -1944,63 +1944,63 @@ object arangodbStrings {
   @scala.inline
   def header: header = "header".asInstanceOf[header]
   @scala.inline
-  def `http version not supported`: `http version not supported` = "http version not supported".asInstanceOf[`http version not supported`]
+  def `http version not supported`: `http version not supported` = ("http version not supported").asInstanceOf[`http version not supported`]
   @scala.inline
-  def `iApostrophem a teapot`: `iApostrophem a teapot` = "i'm a teapot".asInstanceOf[`iApostrophem a teapot`]
+  def `iApostrophem a teapot`: `iApostrophem a teapot` = ("i'm a teapot").asInstanceOf[`iApostrophem a teapot`]
   @scala.inline
   def id: id = "id".asInstanceOf[id]
   @scala.inline
-  def `im used`: `im used` = "im used".asInstanceOf[`im used`]
+  def `im used`: `im used` = ("im used").asInstanceOf[`im used`]
   @scala.inline
   def inbound: inbound = "inbound".asInstanceOf[inbound]
   @scala.inline
-  def `insufficient storage`: `insufficient storage` = "insufficient storage".asInstanceOf[`insufficient storage`]
+  def `insufficient storage`: `insufficient storage` = ("insufficient storage").asInstanceOf[`insufficient storage`]
   @scala.inline
   def int: int = "int".asInstanceOf[int]
   @scala.inline
   def integer: integer = "integer".asInstanceOf[integer]
   @scala.inline
-  def `internal server error`: `internal server error` = "internal server error".asInstanceOf[`internal server error`]
+  def `internal server error`: `internal server error` = ("internal server error").asInstanceOf[`internal server error`]
   @scala.inline
   def json: json = "json".asInstanceOf[json]
   @scala.inline
-  def `length required`: `length required` = "length required".asInstanceOf[`length required`]
+  def `length required`: `length required` = ("length required").asInstanceOf[`length required`]
   @scala.inline
   def locked: locked = "locked".asInstanceOf[locked]
   @scala.inline
-  def `loop detected`: `loop detected` = "loop detected".asInstanceOf[`loop detected`]
+  def `loop detected`: `loop detected` = ("loop detected").asInstanceOf[`loop detected`]
   @scala.inline
   def md5: md5 = "md5".asInstanceOf[md5]
   @scala.inline
-  def `method not allowed`: `method not allowed` = "method not allowed".asInstanceOf[`method not allowed`]
+  def `method not allowed`: `method not allowed` = ("method not allowed").asInstanceOf[`method not allowed`]
   @scala.inline
-  def `misdirected request`: `misdirected request` = "misdirected request".asInstanceOf[`misdirected request`]
+  def `misdirected request`: `misdirected request` = ("misdirected request").asInstanceOf[`misdirected request`]
   @scala.inline
   def mmfiles: mmfiles = "mmfiles".asInstanceOf[mmfiles]
   @scala.inline
-  def `moved permanently`: `moved permanently` = "moved permanently".asInstanceOf[`moved permanently`]
+  def `moved permanently`: `moved permanently` = ("moved permanently").asInstanceOf[`moved permanently`]
   @scala.inline
   def `multi-status`: `multi-status` = "multi-status".asInstanceOf[`multi-status`]
   @scala.inline
-  def `multiple choices`: `multiple choices` = "multiple choices".asInstanceOf[`multiple choices`]
+  def `multiple choices`: `multiple choices` = ("multiple choices").asInstanceOf[`multiple choices`]
   @scala.inline
-  def `network authentication required`: `network authentication required` = "network authentication required".asInstanceOf[`network authentication required`]
+  def `network authentication required`: `network authentication required` = ("network authentication required").asInstanceOf[`network authentication required`]
   @scala.inline
-  def `no content`: `no content` = "no content".asInstanceOf[`no content`]
+  def `no content`: `no content` = ("no content").asInstanceOf[`no content`]
   @scala.inline
-  def `non-authoritative information`: `non-authoritative information` = "non-authoritative information".asInstanceOf[`non-authoritative information`]
+  def `non-authoritative information`: `non-authoritative information` = ("non-authoritative information").asInstanceOf[`non-authoritative information`]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
-  def `not acceptable`: `not acceptable` = "not acceptable".asInstanceOf[`not acceptable`]
+  def `not acceptable`: `not acceptable` = ("not acceptable").asInstanceOf[`not acceptable`]
   @scala.inline
-  def `not extended`: `not extended` = "not extended".asInstanceOf[`not extended`]
+  def `not extended`: `not extended` = ("not extended").asInstanceOf[`not extended`]
   @scala.inline
-  def `not found`: `not found` = "not found".asInstanceOf[`not found`]
+  def `not found`: `not found` = ("not found").asInstanceOf[`not found`]
   @scala.inline
-  def `not implemented`: `not implemented` = "not implemented".asInstanceOf[`not implemented`]
+  def `not implemented`: `not implemented` = ("not implemented").asInstanceOf[`not implemented`]
   @scala.inline
-  def `not modified`: `not modified` = "not modified".asInstanceOf[`not modified`]
+  def `not modified`: `not modified` = ("not modified").asInstanceOf[`not modified`]
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   @scala.inline
@@ -2008,37 +2008,37 @@ object arangodbStrings {
   @scala.inline
   def outbound: outbound = "outbound".asInstanceOf[outbound]
   @scala.inline
-  def `partial content`: `partial content` = "partial content".asInstanceOf[`partial content`]
+  def `partial content`: `partial content` = ("partial content").asInstanceOf[`partial content`]
   @scala.inline
   def password: password = "password".asInstanceOf[password]
   @scala.inline
-  def `payload too large`: `payload too large` = "payload too large".asInstanceOf[`payload too large`]
+  def `payload too large`: `payload too large` = ("payload too large").asInstanceOf[`payload too large`]
   @scala.inline
-  def `payment required`: `payment required` = "payment required".asInstanceOf[`payment required`]
+  def `payment required`: `payment required` = ("payment required").asInstanceOf[`payment required`]
   @scala.inline
-  def `permanent redirect`: `permanent redirect` = "permanent redirect".asInstanceOf[`permanent redirect`]
+  def `permanent redirect`: `permanent redirect` = ("permanent redirect").asInstanceOf[`permanent redirect`]
   @scala.inline
-  def `precondition failed`: `precondition failed` = "precondition failed".asInstanceOf[`precondition failed`]
+  def `precondition failed`: `precondition failed` = ("precondition failed").asInstanceOf[`precondition failed`]
   @scala.inline
-  def `precondition required`: `precondition required` = "precondition required".asInstanceOf[`precondition required`]
+  def `precondition required`: `precondition required` = ("precondition required").asInstanceOf[`precondition required`]
   @scala.inline
   def processing: processing = "processing".asInstanceOf[processing]
   @scala.inline
-  def `proxy authentication required`: `proxy authentication required` = "proxy authentication required".asInstanceOf[`proxy authentication required`]
+  def `proxy authentication required`: `proxy authentication required` = ("proxy authentication required").asInstanceOf[`proxy authentication required`]
   @scala.inline
-  def `range not satisfiable`: `range not satisfiable` = "range not satisfiable".asInstanceOf[`range not satisfiable`]
+  def `range not satisfiable`: `range not satisfiable` = ("range not satisfiable").asInstanceOf[`range not satisfiable`]
   @scala.inline
-  def `request header fields too large`: `request header fields too large` = "request header fields too large".asInstanceOf[`request header fields too large`]
+  def `request header fields too large`: `request header fields too large` = ("request header fields too large").asInstanceOf[`request header fields too large`]
   @scala.inline
-  def `request timeout`: `request timeout` = "request timeout".asInstanceOf[`request timeout`]
+  def `request timeout`: `request timeout` = ("request timeout").asInstanceOf[`request timeout`]
   @scala.inline
-  def `reset content`: `reset content` = "reset content".asInstanceOf[`reset content`]
+  def `reset content`: `reset content` = ("reset content").asInstanceOf[`reset content`]
   @scala.inline
   def rocksdb: rocksdb = "rocksdb".asInstanceOf[rocksdb]
   @scala.inline
-  def `see other`: `see other` = "see other".asInstanceOf[`see other`]
+  def `see other`: `see other` = ("see other").asInstanceOf[`see other`]
   @scala.inline
-  def `service unavailable`: `service unavailable` = "service unavailable".asInstanceOf[`service unavailable`]
+  def `service unavailable`: `service unavailable` = ("service unavailable").asInstanceOf[`service unavailable`]
   @scala.inline
   def sha1: sha1 = "sha1".asInstanceOf[sha1]
   @scala.inline
@@ -2054,11 +2054,11 @@ object arangodbStrings {
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   @scala.inline
-  def `switching protocols`: `switching protocols` = "switching protocols".asInstanceOf[`switching protocols`]
+  def `switching protocols`: `switching protocols` = ("switching protocols").asInstanceOf[`switching protocols`]
   @scala.inline
-  def `temporary redirect`: `temporary redirect` = "temporary redirect".asInstanceOf[`temporary redirect`]
+  def `temporary redirect`: `temporary redirect` = ("temporary redirect").asInstanceOf[`temporary redirect`]
   @scala.inline
-  def `too many requests`: `too many requests` = "too many requests".asInstanceOf[`too many requests`]
+  def `too many requests`: `too many requests` = ("too many requests").asInstanceOf[`too many requests`]
   @scala.inline
   def traditional: traditional = "traditional".asInstanceOf[traditional]
   @scala.inline
@@ -2066,20 +2066,20 @@ object arangodbStrings {
   @scala.inline
   def unauthorized: unauthorized = "unauthorized".asInstanceOf[unauthorized]
   @scala.inline
-  def `unavailable for legal reasons`: `unavailable for legal reasons` = "unavailable for legal reasons".asInstanceOf[`unavailable for legal reasons`]
+  def `unavailable for legal reasons`: `unavailable for legal reasons` = ("unavailable for legal reasons").asInstanceOf[`unavailable for legal reasons`]
   @scala.inline
-  def `unordered collection`: `unordered collection` = "unordered collection".asInstanceOf[`unordered collection`]
+  def `unordered collection`: `unordered collection` = ("unordered collection").asInstanceOf[`unordered collection`]
   @scala.inline
-  def `unprocessable entity`: `unprocessable entity` = "unprocessable entity".asInstanceOf[`unprocessable entity`]
+  def `unprocessable entity`: `unprocessable entity` = ("unprocessable entity").asInstanceOf[`unprocessable entity`]
   @scala.inline
-  def `unsupported media type`: `unsupported media type` = "unsupported media type".asInstanceOf[`unsupported media type`]
+  def `unsupported media type`: `unsupported media type` = ("unsupported media type").asInstanceOf[`unsupported media type`]
   @scala.inline
-  def `upgrade required`: `upgrade required` = "upgrade required".asInstanceOf[`upgrade required`]
+  def `upgrade required`: `upgrade required` = ("upgrade required").asInstanceOf[`upgrade required`]
   @scala.inline
-  def `uri too long`: `uri too long` = "uri too long".asInstanceOf[`uri too long`]
+  def `uri too long`: `uri too long` = ("uri too long").asInstanceOf[`uri too long`]
   @scala.inline
-  def `use proxy`: `use proxy` = "use proxy".asInstanceOf[`use proxy`]
+  def `use proxy`: `use proxy` = ("use proxy").asInstanceOf[`use proxy`]
   @scala.inline
-  def `variant also negotiates`: `variant also negotiates` = "variant also negotiates".asInstanceOf[`variant also negotiates`]
+  def `variant also negotiates`: `variant also negotiates` = ("variant also negotiates").asInstanceOf[`variant also negotiates`]
 }
 

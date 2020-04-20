@@ -24,13 +24,11 @@ object ConnectionOptions {
   @scala.inline
   def RedisUrlConnectionOptions(url: String): ConnectionOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConnectionOptions]
   }
   @scala.inline
   def RedisClientConnectionOptions(redis: ClientOpts): ConnectionOptions = {
     val __obj = js.Dynamic.literal(redis = redis.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConnectionOptions]
   }
 }

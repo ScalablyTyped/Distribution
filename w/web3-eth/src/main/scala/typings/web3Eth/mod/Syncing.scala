@@ -22,7 +22,6 @@ object Syncing {
     StartingBlock: Double
   ): Syncing = {
     val __obj = js.Dynamic.literal(CurrentBlock = CurrentBlock.asInstanceOf[js.Any], HighestBlock = HighestBlock.asInstanceOf[js.Any], KnownStates = KnownStates.asInstanceOf[js.Any], PulledStates = PulledStates.asInstanceOf[js.Any], StartingBlock = StartingBlock.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Syncing]
   }
 }

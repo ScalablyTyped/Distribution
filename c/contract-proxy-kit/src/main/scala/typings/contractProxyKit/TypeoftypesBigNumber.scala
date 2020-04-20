@@ -28,7 +28,6 @@ object TypeoftypesBigNumber {
     Signer: Instantiable0[Signer]
   ): TypeoftypesBigNumber = {
     val __obj = js.Dynamic.literal(BigNumber = BigNumber.asInstanceOf[js.Any], HDNode = HDNode.asInstanceOf[js.Any], Indexed = Indexed.asInstanceOf[js.Any], MinimalProvider = MinimalProvider.asInstanceOf[js.Any], Signer = Signer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeoftypesBigNumber]
   }
 }

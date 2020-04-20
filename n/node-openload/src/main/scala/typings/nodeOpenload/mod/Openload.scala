@@ -13,7 +13,7 @@ trait Openload extends js.Object {
   var _locationPrefix: String = js.native
   var _version: Double = js.native
   // TypeScript Version: 3.6
-  def config(): OpenloadConfig = js.native
+  def config: OpenloadConfig = js.native
   // TypeScript Version: 3.6
   def config(`object`: OpenloadConfig): js.Any = js.native
   def deleteFile(file: String): js.Promise[js.Array[Boolean]] = js.native
@@ -27,7 +27,7 @@ trait Openload extends js.Object {
   def getSplashImage(file: String): js.Promise[String] = js.native
   def listFolder(folder: String): js.Promise[ListFolder] = js.native
   // TypeScript Version: 3.6
-  def locationPrefix(): String = js.native
+  def locationPrefix: String = js.native
   def remoteUpload(obj: RemoteUploadParam): js.Promise[RemoteUpload] = js.native
   def remoteUploadStatus(obj: RemoteUploadStatusParam): js.Promise[RemoteUploadStatus] = js.native
   def upload(obj: UploadParam, cb: js.Function1[/* progress */ UploadProgress, Unit]): js.Promise[Upload] = js.native

@@ -28,8 +28,8 @@ class DateTimeAttributeType protected () extends AttributeType {
   @JSName("model")
   var model_FDateTimeAttributeType: IModel = js.native
   @JSName("containerAsAttribute")
-  def containerAsAttribute_MDateTimeAttributeType(): Attribute = js.native
-  def localizeDate(): Boolean = js.native
+  def containerAsAttribute_MDateTimeAttributeType: Attribute = js.native
+  def localizeDate: Boolean = js.native
   def localizeDate(newValue: Boolean): js.Any = js.native
 }
 

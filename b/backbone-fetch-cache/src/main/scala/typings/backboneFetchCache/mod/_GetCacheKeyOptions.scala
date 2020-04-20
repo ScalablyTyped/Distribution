@@ -10,7 +10,6 @@ object _GetCacheKeyOptions {
   @scala.inline
   def AnonUrl(url: String): _GetCacheKeyOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[_GetCacheKeyOptions]
   }
   @scala.inline

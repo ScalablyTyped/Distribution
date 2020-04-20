@@ -16,12 +16,10 @@ trait XlCalculation extends js.Object
 
 object XlCalculation {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlCalculationAutomatic: `-4105` = -4105.asInstanceOf[`-4105`]
   @scala.inline
-  def xlCalculationAutomatic: `-4105` = this.cast(-4105)
+  def xlCalculationManual: `-4135` = -4135.asInstanceOf[`-4135`]
   @scala.inline
-  def xlCalculationManual: `-4135` = this.cast(-4135)
-  @scala.inline
-  def xlCalculationSemiautomatic: `2` = this.cast(2)
+  def xlCalculationSemiautomatic: `2` = 2.asInstanceOf[`2`]
 }
 

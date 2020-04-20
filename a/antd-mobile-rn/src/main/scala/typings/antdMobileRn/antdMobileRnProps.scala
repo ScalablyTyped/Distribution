@@ -47,22 +47,22 @@ import scala.scalajs.js.annotation._
 
 trait antdMobileRnProps {
   @scala.inline
-  def AccordionProps: AccordionNativeProps.type = typings.antdMobileRn.indexNativeMod.AccordionNativeProps
+  def AccordionProps: AccordionNativeProps.type = AccordionNativeProps
   type AccordionProps = AccordionNativeProps
   @scala.inline
-  def ActivityIndicatorProps: ActivityIndicatorNativeProps.type = typings.antdMobileRn.activityIndicatorIndexNativeMod.ActivityIndicatorNativeProps
+  def ActivityIndicatorProps: ActivityIndicatorNativeProps.type = ActivityIndicatorNativeProps
   type ActivityIndicatorProps = ActivityIndicatorNativeProps
   @scala.inline
-  def AgreeItemDotnativeProps: AgreeItemNativeProps.type = typings.antdMobileRn.agreeItemNativeMod.AgreeItemNativeProps
+  def AgreeItemDotnativeProps: AgreeItemNativeProps.type = AgreeItemNativeProps
   type AgreeItemDotnativeProps = AgreeItemNativeProps
   @scala.inline
-  def AlertContainerDotnativeProps: AlertContainerProps.type = typings.antdMobileRn.alertContainerNativeMod.AlertContainerProps
+  def AlertContainerDotnativeProps: AlertContainerProps.type = AlertContainerProps
   type AlertContainerDotnativeProps = AlertContainerProps
   @scala.inline
-  def AndroidContainerDotnativeProps: ActionSheetNativeProps.type = typings.antdMobileRn.androidContainerNativeMod.ActionSheetNativeProps
+  def AndroidContainerDotnativeProps: ActionSheetNativeProps.type = ActionSheetNativeProps
   type AndroidContainerDotnativeProps = ActionSheetNativeProps
   @scala.inline
-  def BadgeProps: BadgeNativeProps.type = typings.antdMobileRn.badgeIndexNativeMod.BadgeNativeProps
+  def BadgeProps: BadgeNativeProps.type = BadgeNativeProps
   type BadgeProps = BadgeNativeProps
   @scala.inline
   def BriefProps: typings.antdMobileRn.listItemNativeMod.BriefProps.type = typings.antdMobileRn.listItemNativeMod.BriefProps
@@ -71,37 +71,37 @@ trait antdMobileRnProps {
   def ButtonProps: typings.antdMobileRn.buttonIndexNativeMod.ButtonProps.type = typings.antdMobileRn.buttonIndexNativeMod.ButtonProps
   type ButtonProps = typings.antdMobileRn.buttonIndexNativeMod.ButtonProps
   @scala.inline
-  def CardProps: CardNativeProps.type = typings.antdMobileRn.cardIndexNativeMod.CardNativeProps
+  def CardProps: CardNativeProps.type = CardNativeProps
   type CardProps = CardNativeProps
   @scala.inline
-  def CardBodyDotnativeProps: CardBodyProps.type = typings.antdMobileRn.cardBodyNativeMod.CardBodyProps
+  def CardBodyDotnativeProps: CardBodyProps.type = CardBodyProps
   type CardBodyDotnativeProps = CardBodyProps
   @scala.inline
-  def CardFooterDotnativeProps: CardFooterProps.type = typings.antdMobileRn.cardFooterNativeMod.CardFooterProps
+  def CardFooterDotnativeProps: CardFooterProps.type = CardFooterProps
   type CardFooterDotnativeProps = CardFooterProps
   @scala.inline
-  def CardHeaderDotnativeProps: CardHeaderProps.type = typings.antdMobileRn.cardHeaderNativeMod.CardHeaderProps
+  def CardHeaderDotnativeProps: CardHeaderProps.type = CardHeaderProps
   type CardHeaderDotnativeProps = CardHeaderProps
   @scala.inline
   def CarouselProps: typings.antdMobileRn.carouselIndexNativeMod.CarouselProps.type = typings.antdMobileRn.carouselIndexNativeMod.CarouselProps
   type CarouselProps = typings.antdMobileRn.carouselIndexNativeMod.CarouselProps
   @scala.inline
-  def CheckboxProps: ICheckboxNativeProps.type = typings.antdMobileRn.checkboxNativeMod.ICheckboxNativeProps
+  def CheckboxProps: ICheckboxNativeProps.type = ICheckboxNativeProps
   type CheckboxProps = ICheckboxNativeProps
   @scala.inline
-  def CheckboxDotnativeProps: ICheckboxNativeProps.type = typings.antdMobileRn.checkboxNativeMod.ICheckboxNativeProps
+  def CheckboxDotnativeProps: ICheckboxNativeProps.type = ICheckboxNativeProps
   type CheckboxDotnativeProps = ICheckboxNativeProps
   @scala.inline
-  def CheckboxItemDotnativeProps: ICheckboxItemNativeProps.type = typings.antdMobileRn.checkboxItemNativeMod.ICheckboxItemNativeProps
+  def CheckboxItemDotnativeProps: ICheckboxItemNativeProps.type = ICheckboxItemNativeProps
   type CheckboxItemDotnativeProps = ICheckboxItemNativeProps
   @scala.inline
-  def DatePickerProps: DatePickerNativeProps.type = typings.antdMobileRn.datePickerIndexNativeMod.DatePickerNativeProps
+  def DatePickerProps: DatePickerNativeProps.type = DatePickerNativeProps
   type DatePickerProps = DatePickerNativeProps
   @scala.inline
   def DatePickerViewProps: typings.antdMobileRn.datePickerViewPropsTypeMod.DatePickerProps.type = typings.antdMobileRn.datePickerViewPropsTypeMod.DatePickerProps
   type DatePickerViewProps = typings.antdMobileRn.datePickerViewPropsTypeMod.DatePickerProps
   @scala.inline
-  def DrawerProps: DrawerNativeProps.type = typings.antdMobileRn.drawerIndexNativeMod.DrawerNativeProps
+  def DrawerProps: DrawerNativeProps.type = DrawerNativeProps
   type DrawerProps = DrawerNativeProps
   @scala.inline
   def FlexProps: typings.antdMobileRn.flexNativeMod.FlexProps.type = typings.antdMobileRn.flexNativeMod.FlexProps
@@ -110,7 +110,7 @@ trait antdMobileRnProps {
   def FlexDotnativeProps: typings.antdMobileRn.flexNativeMod.FlexProps.type = typings.antdMobileRn.flexNativeMod.FlexProps
   type FlexDotnativeProps = typings.antdMobileRn.flexNativeMod.FlexProps
   @scala.inline
-  def FlexItemDotnativeProps: FlexItemProps.type = typings.antdMobileRn.flexItemNativeMod.FlexItemProps
+  def FlexItemDotnativeProps: FlexItemProps.type = FlexItemProps
   type FlexItemDotnativeProps = FlexItemProps
   @scala.inline
   def GridProps: typings.antdMobileRn.gridIndexNativeMod.GridProps.type = typings.antdMobileRn.gridIndexNativeMod.GridProps
@@ -119,16 +119,16 @@ trait antdMobileRnProps {
   def IconProps: typings.antdMobileRn.iconIndexNativeMod.IconProps.type = typings.antdMobileRn.iconIndexNativeMod.IconProps
   type IconProps = typings.antdMobileRn.iconIndexNativeMod.IconProps
   @scala.inline
-  def ImagePickerProps: ImagePickerNativeProps.type = typings.antdMobileRn.imagePickerIndexNativeMod.ImagePickerNativeProps
+  def ImagePickerProps: ImagePickerNativeProps.type = ImagePickerNativeProps
   type ImagePickerProps = ImagePickerNativeProps
   @scala.inline
-  def ImageRollDotnativeProps: ImageRollProps.type = typings.antdMobileRn.imageRollNativeMod.ImageRollProps
+  def ImageRollDotnativeProps: ImageRollProps.type = ImageRollProps
   type ImageRollDotnativeProps = ImageRollProps
   @scala.inline
-  def IndexDotnativeProps: TagNativeProps.type = typings.antdMobileRn.tagIndexNativeMod.TagNativeProps
+  def IndexDotnativeProps: TagNativeProps.type = TagNativeProps
   type IndexDotnativeProps = TagNativeProps
   @scala.inline
-  def InputDotnativeProps: TextInputProps.type = typings.antdMobileRn.inputNativeMod.TextInputProps
+  def InputDotnativeProps: TextInputProps.type = TextInputProps
   type InputDotnativeProps = TextInputProps
   @scala.inline
   def InputItemProps: typings.antdMobileRn.inputItemIndexNativeMod.InputItemProps.type = typings.antdMobileRn.inputItemIndexNativeMod.InputItemProps
@@ -137,34 +137,34 @@ trait antdMobileRnProps {
   def ListProps: typings.antdMobileRn.listIndexNativeMod.ListProps.type = typings.antdMobileRn.listIndexNativeMod.ListProps
   type ListProps = typings.antdMobileRn.listIndexNativeMod.ListProps
   @scala.inline
-  def ListItemDotnativeProps: ListItemProps.type = typings.antdMobileRn.listItemNativeMod.ListItemProps
+  def ListItemDotnativeProps: ListItemProps.type = ListItemProps
   type ListItemDotnativeProps = ListItemProps
   @scala.inline
   def LocaleProviderProps: typings.antdMobileRn.localeProviderMod.LocaleProviderProps.type = typings.antdMobileRn.localeProviderMod.LocaleProviderProps
   type LocaleProviderProps = typings.antdMobileRn.localeProviderMod.LocaleProviderProps
   @scala.inline
-  def MarqueeDotnativeProps: MarqueeProps.type = typings.antdMobileRn.marqueeNativeMod.MarqueeProps
+  def MarqueeDotnativeProps: MarqueeProps.type = MarqueeProps
   type MarqueeDotnativeProps = MarqueeProps
   @scala.inline
-  def ModalProps: IModalNativeProps.type = typings.antdMobileRn.modalNativeMod.IModalNativeProps
+  def ModalProps: IModalNativeProps.type = IModalNativeProps
   type ModalProps = IModalNativeProps
   @scala.inline
-  def ModalDotnativeProps: IModalNativeProps.type = typings.antdMobileRn.modalNativeMod.IModalNativeProps
+  def ModalDotnativeProps: IModalNativeProps.type = IModalNativeProps
   type ModalDotnativeProps = IModalNativeProps
   @scala.inline
-  def NoticeBarProps: NoticeNativeProps.type = typings.antdMobileRn.noticeBarIndexNativeMod.NoticeNativeProps
+  def NoticeBarProps: NoticeNativeProps.type = NoticeNativeProps
   type NoticeBarProps = NoticeNativeProps
   @scala.inline
-  def OperationContainerDotnativeProps: OperationContainerProps.type = typings.antdMobileRn.operationContainerNativeMod.OperationContainerProps
+  def OperationContainerDotnativeProps: OperationContainerProps.type = OperationContainerProps
   type OperationContainerDotnativeProps = OperationContainerProps
   @scala.inline
-  def PaginationProps: PaginationNativeProps.type = typings.antdMobileRn.paginationIndexNativeMod.PaginationNativeProps
+  def PaginationProps: PaginationNativeProps.type = PaginationNativeProps
   type PaginationProps = PaginationNativeProps
   @scala.inline
-  def PickerProps: AbstractPickerProps.type = typings.antdMobileRn.abstractPickerMod.AbstractPickerProps
+  def PickerProps: AbstractPickerProps.type = AbstractPickerProps
   type PickerProps = AbstractPickerProps
   @scala.inline
-  def PickerViewProps: IPickerView.type = typings.antdMobileRn.pickerViewMod.IPickerView
+  def PickerViewProps: IPickerView.type = IPickerView
   type PickerViewProps = IPickerView
   @scala.inline
   def PopoverProps: typings.antdMobileRn.popoverIndexNativeMod.PopoverProps.type = typings.antdMobileRn.popoverIndexNativeMod.PopoverProps
@@ -173,28 +173,28 @@ trait antdMobileRnProps {
   def ProgressProps: typings.antdMobileRn.progressIndexNativeMod.ProgressProps.type = typings.antdMobileRn.progressIndexNativeMod.ProgressProps
   type ProgressProps = typings.antdMobileRn.progressIndexNativeMod.ProgressProps
   @scala.inline
-  def PromptContainerDotnativeProps: PropmptContainerProps.type = typings.antdMobileRn.promptContainerNativeMod.PropmptContainerProps
+  def PromptContainerDotnativeProps: PropmptContainerProps.type = PropmptContainerProps
   type PromptContainerDotnativeProps = PropmptContainerProps
   @scala.inline
-  def RadioProps: RadioNativeProps.type = typings.antdMobileRn.radioNativeMod.RadioNativeProps
+  def RadioProps: RadioNativeProps.type = RadioNativeProps
   type RadioProps = RadioNativeProps
   @scala.inline
-  def RadioDotnativeProps: RadioNativeProps.type = typings.antdMobileRn.radioNativeMod.RadioNativeProps
+  def RadioDotnativeProps: RadioNativeProps.type = RadioNativeProps
   type RadioDotnativeProps = RadioNativeProps
   @scala.inline
-  def RadioItemDotnativeProps: RadioItemNativeProps.type = typings.antdMobileRn.radioItemNativeMod.RadioItemNativeProps
+  def RadioItemDotnativeProps: RadioItemNativeProps.type = RadioItemNativeProps
   type RadioItemDotnativeProps = RadioItemNativeProps
   @scala.inline
-  def ResultProps: ResultNativeProps.type = typings.antdMobileRn.resultIndexNativeMod.ResultNativeProps
+  def ResultProps: ResultNativeProps.type = ResultNativeProps
   type ResultProps = ResultNativeProps
   @scala.inline
-  def SearchBarProps: SearchBarNativeProps.type = typings.antdMobileRn.searchBarIndexNativeMod.SearchBarNativeProps
+  def SearchBarProps: SearchBarNativeProps.type = SearchBarNativeProps
   type SearchBarProps = SearchBarNativeProps
   @scala.inline
   def SegmentedControlProps: typings.antdMobileRn.segmentedIosMod.SegmentedControlProps.type = typings.antdMobileRn.segmentedIosMod.SegmentedControlProps
   type SegmentedControlProps = typings.antdMobileRn.segmentedIosMod.SegmentedControlProps
   @scala.inline
-  def SegmentedDotandroidProps: SegmentControlNativeProps.type = typings.antdMobileRn.segmentedAndroidMod.SegmentControlNativeProps
+  def SegmentedDotandroidProps: SegmentControlNativeProps.type = SegmentControlNativeProps
   type SegmentedDotandroidProps = SegmentControlNativeProps
   @scala.inline
   def SegmentedDotiosProps: typings.antdMobileRn.segmentedIosMod.SegmentedControlProps.type = typings.antdMobileRn.segmentedIosMod.SegmentedControlProps
@@ -203,28 +203,28 @@ trait antdMobileRnProps {
   def SliderProps: typings.antdMobileRn.sliderIndexNativeMod.SliderProps.type = typings.antdMobileRn.sliderIndexNativeMod.SliderProps
   type SliderProps = typings.antdMobileRn.sliderIndexNativeMod.SliderProps
   @scala.inline
-  def StepperProps: StepProps.type = typings.antdMobileRn.stepperIndexNativeMod.StepProps
+  def StepperProps: StepProps.type = StepProps
   type StepperProps = StepProps
   @scala.inline
-  def StepsProps: StepsNativeProps.type = typings.antdMobileRn.stepsIndexNativeMod.StepsNativeProps
+  def StepsProps: StepsNativeProps.type = StepsNativeProps
   type StepsProps = StepsNativeProps
   @scala.inline
-  def StepsItemDotnativeProps: StepsItemProps.type = typings.antdMobileRn.stepsItemNativeMod.StepsItemProps
+  def StepsItemDotnativeProps: StepsItemProps.type = StepsItemProps
   type StepsItemDotnativeProps = StepsItemProps
   @scala.inline
   def SwipeActionProps: typings.antdMobileRn.swipeActionIndexNativeMod.SwipeActionProps.type = typings.antdMobileRn.swipeActionIndexNativeMod.SwipeActionProps
   type SwipeActionProps = typings.antdMobileRn.swipeActionIndexNativeMod.SwipeActionProps
   @scala.inline
-  def SwitchProps: AntmSwitchProps.type = typings.antdMobileRn.switchIndexNativeMod.AntmSwitchProps
+  def SwitchProps: AntmSwitchProps.type = AntmSwitchProps
   type SwitchProps = AntmSwitchProps
   @scala.inline
   def TabBarProps: typings.antdMobileRn.tabBarPropsTypeMod.TabBarProps.type = typings.antdMobileRn.tabBarPropsTypeMod.TabBarProps
   type TabBarProps = typings.antdMobileRn.tabBarPropsTypeMod.TabBarProps
   @scala.inline
-  def TabBarItemDotnativeProps: TabBarItemProps.type = typings.antdMobileRn.tabBarItemNativeMod.TabBarItemProps
+  def TabBarItemDotnativeProps: TabBarItemProps.type = TabBarItemProps
   type TabBarItemDotnativeProps = TabBarItemProps
   @scala.inline
-  def TabbarDotandroidProps: TabBarNativeProps.type = typings.antdMobileRn.tabbarAndroidMod.TabBarNativeProps
+  def TabbarDotandroidProps: TabBarNativeProps.type = TabBarNativeProps
   type TabbarDotandroidProps = TabBarNativeProps
   @scala.inline
   def TabbarDotiosProps: typings.antdMobileRn.tabBarPropsTypeMod.TabBarProps.type = typings.antdMobileRn.tabBarPropsTypeMod.TabBarProps
@@ -233,13 +233,13 @@ trait antdMobileRnProps {
   def TabsProps: typings.antdMobileRn.tabsPropsTypeMod.TabsProps.type = typings.antdMobileRn.tabsPropsTypeMod.TabsProps
   type TabsProps = typings.antdMobileRn.tabsPropsTypeMod.TabsProps
   @scala.inline
-  def TagProps: TagNativeProps.type = typings.antdMobileRn.tagIndexNativeMod.TagNativeProps
+  def TagProps: TagNativeProps.type = TagNativeProps
   type TagProps = TagNativeProps
   @scala.inline
-  def TextareaItemProps: TextareaItemNativeProps.type = typings.antdMobileRn.textareaItemIndexNativeMod.TextareaItemNativeProps
+  def TextareaItemProps: TextareaItemNativeProps.type = TextareaItemNativeProps
   type TextareaItemProps = TextareaItemNativeProps
   @scala.inline
-  def ToastContainerDotnativeProps: ToastProps.type = typings.antdMobileRn.toastContainerNativeMod.ToastProps
+  def ToastContainerDotnativeProps: ToastProps.type = ToastProps
   type ToastContainerDotnativeProps = ToastProps
   @scala.inline
   def WhiteSpaceProps: typings.antdMobileRn.whiteSpaceIndexNativeMod.WhiteSpaceProps.type = typings.antdMobileRn.whiteSpaceIndexNativeMod.WhiteSpaceProps

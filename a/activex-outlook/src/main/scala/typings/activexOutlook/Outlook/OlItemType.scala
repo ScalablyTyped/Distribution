@@ -30,26 +30,24 @@ trait OlItemType extends js.Object
 
 object OlItemType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olAppointmentItem: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olAppointmentItem: `1` = this.cast(1)
+  def olContactItem: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olContactItem: `2` = this.cast(2)
+  def olDistributionListItem: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def olDistributionListItem: `7` = this.cast(7)
+  def olJournalItem: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def olJournalItem: `4` = this.cast(4)
+  def olMailItem: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def olMailItem: `0` = this.cast(0)
+  def olMobileItemMMS: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def olMobileItemMMS: `12` = this.cast(12)
+  def olMobileItemSMS: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def olMobileItemSMS: `11` = this.cast(11)
+  def olNoteItem: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def olNoteItem: `5` = this.cast(5)
+  def olPostItem: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def olPostItem: `6` = this.cast(6)
-  @scala.inline
-  def olTaskItem: `3` = this.cast(3)
+  def olTaskItem: `3` = 3.asInstanceOf[`3`]
 }
 

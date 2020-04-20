@@ -10,16 +10,16 @@ import scala.scalajs.js.annotation._
 
 trait rmcTriggerProps {
   @scala.inline
-  def LazyRenderBoxProps: ILazyRenderBoxProps.type = typings.rmcTrigger.lazyRenderBoxMod.ILazyRenderBoxProps
+  def LazyRenderBoxProps: ILazyRenderBoxProps.type = ILazyRenderBoxProps
   type LazyRenderBoxProps = ILazyRenderBoxProps
   @scala.inline
-  def PopupProps: IPopupProps.type = typings.rmcTrigger.popupMod.IPopupProps
+  def PopupProps: IPopupProps.type = IPopupProps
   type PopupProps = IPopupProps
   @scala.inline
-  def PopupInnerProps: IPopupInnerProps.type = typings.rmcTrigger.popupInnerMod.IPopupInnerProps
+  def PopupInnerProps: IPopupInnerProps.type = IPopupInnerProps
   type PopupInnerProps = IPopupInnerProps
   @scala.inline
-  def RmcTriggerProps: ITriggerProps.type = typings.rmcTrigger.propsTypeMod.ITriggerProps
+  def RmcTriggerProps: ITriggerProps.type = ITriggerProps
   type RmcTriggerProps = ITriggerProps
 }
 

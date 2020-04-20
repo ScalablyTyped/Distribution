@@ -13,7 +13,6 @@ object FirebaseApp {
   @scala.inline
   def apply(remoteConfig: () => RemoteConfig): FirebaseApp = {
     val __obj = js.Dynamic.literal(remoteConfig = js.Any.fromFunction0(remoteConfig))
-  
     __obj.asInstanceOf[FirebaseApp]
   }
 }

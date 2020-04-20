@@ -32,9 +32,9 @@ class StringType protected () extends PrimitiveType {
   @JSName("model")
   var model_FStringType: IModel = js.native
   @JSName("containerAsBasicParameterType")
-  def containerAsBasicParameterType_MStringType(): BasicParameterType = js.native
+  def containerAsBasicParameterType_MStringType: BasicParameterType = js.native
   @JSName("containerAsCodeAction")
-  def containerAsCodeAction_MStringType(): CodeAction = js.native
+  def containerAsCodeAction_MStringType: CodeAction = js.native
 }
 
 /* static members */

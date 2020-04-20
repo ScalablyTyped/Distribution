@@ -20,7 +20,6 @@ object StartRemediationExecutionRequest {
   @scala.inline
   def apply(ConfigRuleName: ConfigRuleName, ResourceKeys: ResourceKeys): StartRemediationExecutionRequest = {
     val __obj = js.Dynamic.literal(ConfigRuleName = ConfigRuleName.asInstanceOf[js.Any], ResourceKeys = ResourceKeys.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StartRemediationExecutionRequest]
   }
 }

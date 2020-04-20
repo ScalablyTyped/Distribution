@@ -16,7 +16,6 @@ object GetFederationTokenRequest {
   @scala.inline
   def apply(InstanceId: InstanceId): GetFederationTokenRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetFederationTokenRequest]
   }
 }

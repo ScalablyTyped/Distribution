@@ -85,10 +85,16 @@ object reactNavigationStrings {
   sealed trait initialRoute extends js.Object
   
   @js.native
+  sealed trait isFocused extends js.Object
+  
+  @js.native
   sealed trait isLandscape extends js.Object
   
   @js.native
   sealed trait light extends SupportedThemes
+  
+  @js.native
+  sealed trait navigation extends js.Object
   
   @js.native
   sealed trait never extends SafeAreaViewForceInsetValue
@@ -171,9 +177,13 @@ object reactNavigationStrings {
   @scala.inline
   def initialRoute: initialRoute = "initialRoute".asInstanceOf[initialRoute]
   @scala.inline
+  def isFocused: isFocused = "isFocused".asInstanceOf[isFocused]
+  @scala.inline
   def isLandscape: isLandscape = "isLandscape".asInstanceOf[isLandscape]
   @scala.inline
   def light: light = "light".asInstanceOf[light]
+  @scala.inline
+  def navigation: navigation = "navigation".asInstanceOf[navigation]
   @scala.inline
   def never: never = "never".asInstanceOf[never]
   @scala.inline

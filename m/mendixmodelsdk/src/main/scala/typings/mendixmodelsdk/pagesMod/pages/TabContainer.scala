@@ -33,8 +33,8 @@ class TabContainer protected () extends ConditionallyVisibleWidget {
   def defaultPage(): js.Any = js.native
   def defaultPage(newValue: TabPage): js.Any = js.native
   @JSName("defaultPage")
-  def defaultPage_Union(): TabPage | Null = js.native
-  def tabPages(): IList[TabPage] = js.native
+  def defaultPage_Union: TabPage | Null = js.native
+  def tabPages: IList[TabPage] = js.native
 }
 
 /* static members */

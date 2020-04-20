@@ -33,7 +33,6 @@ object VoiceRecognizerTask {
     stop: () => Unit
   ): VoiceRecognizerTask = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), onError = js.Any.fromFunction1(onError), onFinish = js.Any.fromFunction1(onFinish), onRecognize = js.Any.fromFunction1(onRecognize), onStart = js.Any.fromFunction1(onStart), start = js.Any.fromFunction1(start), stop = js.Any.fromFunction0(stop))
-  
     __obj.asInstanceOf[VoiceRecognizerTask]
   }
 }

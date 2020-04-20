@@ -12,10 +12,8 @@ trait PkceSetting extends js.Object
 
 object PkceSetting {
   @scala.inline
-  def S256: typings.hapiBell.hapiBellStrings.S256 = this.cast("S256")
+  def S256: typings.hapiBell.hapiBellStrings.S256 = "S256".asInstanceOf[typings.hapiBell.hapiBellStrings.S256]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def plain: typings.hapiBell.hapiBellStrings.plain = this.cast("plain")
+  def plain: typings.hapiBell.hapiBellStrings.plain = "plain".asInstanceOf[typings.hapiBell.hapiBellStrings.plain]
 }
 

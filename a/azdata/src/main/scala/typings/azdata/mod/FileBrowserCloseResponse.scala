@@ -13,7 +13,6 @@ object FileBrowserCloseResponse {
   @scala.inline
   def apply(message: String, succeeded: Boolean): FileBrowserCloseResponse = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], succeeded = succeeded.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FileBrowserCloseResponse]
   }
 }

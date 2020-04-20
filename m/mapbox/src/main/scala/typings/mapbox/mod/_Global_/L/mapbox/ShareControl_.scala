@@ -13,7 +13,6 @@ object ShareControl_ {
   @scala.inline
   def apply(onAdd: Map_ => js.Any): ShareControl_ = {
     val __obj = js.Dynamic.literal(onAdd = js.Any.fromFunction1(onAdd))
-  
     __obj.asInstanceOf[ShareControl_]
   }
 }

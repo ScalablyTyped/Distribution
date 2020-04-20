@@ -20,16 +20,14 @@ trait htmlEndPoints extends js.Object
 
 object htmlEndPoints {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def htmlEndPointsEndToEnd: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def htmlEndPointsEndToEnd: `4` = this.cast(4)
+  def htmlEndPointsEndToStart: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def htmlEndPointsEndToStart: `3` = this.cast(3)
+  def htmlEndPointsStartToEnd: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def htmlEndPointsStartToEnd: `2` = this.cast(2)
+  def htmlEndPointsStartToStart: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def htmlEndPointsStartToStart: `1` = this.cast(1)
-  @scala.inline
-  def htmlEndPoints_Max: `2147483647` = this.cast(2147483647)
+  def htmlEndPoints_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

@@ -20,16 +20,14 @@ trait XlErrorBarType extends js.Object
 
 object XlErrorBarType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlErrorBarTypeCustom: `-4114` = -4114.asInstanceOf[`-4114`]
   @scala.inline
-  def xlErrorBarTypeCustom: `-4114` = this.cast(-4114)
+  def xlErrorBarTypeFixedValue: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlErrorBarTypeFixedValue: `1` = this.cast(1)
+  def xlErrorBarTypePercent: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlErrorBarTypePercent: `2` = this.cast(2)
+  def xlErrorBarTypeStDev: `-4155` = -4155.asInstanceOf[`-4155`]
   @scala.inline
-  def xlErrorBarTypeStDev: `-4155` = this.cast(-4155)
-  @scala.inline
-  def xlErrorBarTypeStError: `4` = this.cast(4)
+  def xlErrorBarTypeStError: `4` = 4.asInstanceOf[`4`]
 }
 

@@ -12,7 +12,6 @@ object AnonLocked {
   @scala.inline
   def apply(locked: Boolean): AnonLocked = {
     val __obj = js.Dynamic.literal(locked = locked.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLocked]
   }
 }

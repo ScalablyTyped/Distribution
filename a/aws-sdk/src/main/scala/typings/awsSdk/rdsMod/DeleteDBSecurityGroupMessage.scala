@@ -16,7 +16,6 @@ object DeleteDBSecurityGroupMessage {
   @scala.inline
   def apply(DBSecurityGroupName: String): DeleteDBSecurityGroupMessage = {
     val __obj = js.Dynamic.literal(DBSecurityGroupName = DBSecurityGroupName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteDBSecurityGroupMessage]
   }
 }

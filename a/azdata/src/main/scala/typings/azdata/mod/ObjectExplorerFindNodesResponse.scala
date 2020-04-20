@@ -12,7 +12,6 @@ object ObjectExplorerFindNodesResponse {
   @scala.inline
   def apply(nodes: js.Array[NodeInfo]): ObjectExplorerFindNodesResponse = {
     val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ObjectExplorerFindNodesResponse]
   }
 }

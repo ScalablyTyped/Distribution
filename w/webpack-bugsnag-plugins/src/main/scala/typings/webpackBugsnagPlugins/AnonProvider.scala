@@ -34,7 +34,6 @@ object AnonProvider {
     revision: String
   ): AnonProvider = {
     val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonProvider]
   }
 }

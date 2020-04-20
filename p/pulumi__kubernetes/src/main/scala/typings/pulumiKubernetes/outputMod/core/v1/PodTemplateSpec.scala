@@ -25,7 +25,6 @@ object PodTemplateSpec {
   @scala.inline
   def apply(metadata: ObjectMeta, spec: PodSpec): PodTemplateSpec = {
     val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PodTemplateSpec]
   }
 }

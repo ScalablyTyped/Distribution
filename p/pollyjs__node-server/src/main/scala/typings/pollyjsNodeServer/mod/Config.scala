@@ -22,7 +22,6 @@ object Config {
     recordingsDir: String
   ): Config = {
     val __obj = js.Dynamic.literal(apiNamespace = apiNamespace.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], quiet = quiet.asInstanceOf[js.Any], recordingSizeLimit = recordingSizeLimit.asInstanceOf[js.Any], recordingsDir = recordingsDir.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Config]
   }
 }

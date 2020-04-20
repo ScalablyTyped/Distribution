@@ -23,7 +23,6 @@ object SketchMSStyleBorderOptions {
     lineJoinStyle: Double
   ): SketchMSStyleBorderOptions = {
     val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], dashPattern = dashPattern.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], lineCapStyle = lineCapStyle.asInstanceOf[js.Any], lineJoinStyle = lineJoinStyle.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SketchMSStyleBorderOptions]
   }
 }

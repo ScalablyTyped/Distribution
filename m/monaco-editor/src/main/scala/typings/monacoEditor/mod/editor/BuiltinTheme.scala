@@ -13,12 +13,10 @@ trait BuiltinTheme extends js.Object
 
 object BuiltinTheme {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `hc-black`: typings.monacoEditor.monacoEditorStrings.`hc-black` = "hc-black".asInstanceOf[typings.monacoEditor.monacoEditorStrings.`hc-black`]
   @scala.inline
-  def `hc-black`: typings.monacoEditor.monacoEditorStrings.`hc-black` = this.cast("hc-black")
+  def vs: typings.monacoEditor.monacoEditorStrings.vs = "vs".asInstanceOf[typings.monacoEditor.monacoEditorStrings.vs]
   @scala.inline
-  def vs: typings.monacoEditor.monacoEditorStrings.vs = this.cast("vs")
-  @scala.inline
-  def `vs-dark`: typings.monacoEditor.monacoEditorStrings.`vs-dark` = this.cast("vs-dark")
+  def `vs-dark`: typings.monacoEditor.monacoEditorStrings.`vs-dark` = "vs-dark".asInstanceOf[typings.monacoEditor.monacoEditorStrings.`vs-dark`]
 }
 

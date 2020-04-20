@@ -13,7 +13,6 @@ object AnonBorderTopRightRadius {
   @scala.inline
   def apply(borderBottomRightRadius: Double, borderTopRightRadius: Double): AnonBorderTopRightRadius = {
     val __obj = js.Dynamic.literal(borderBottomRightRadius = borderBottomRightRadius.asInstanceOf[js.Any], borderTopRightRadius = borderTopRightRadius.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBorderTopRightRadius]
   }
 }

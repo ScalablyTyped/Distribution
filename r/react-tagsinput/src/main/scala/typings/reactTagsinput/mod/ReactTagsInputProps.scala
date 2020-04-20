@@ -31,7 +31,7 @@ trait ReactTagsInputProps[Tag] extends Props[TagsInput[Tag]] {
   var renderInput: js.UndefOr[js.Function1[/* props */ RenderInputProps[Tag], ReactNode]] = js.undefined
   var renderLayout: js.UndefOr[RenderLayout] = js.undefined
   var renderTag: js.UndefOr[js.Function1[/* props */ RenderTagProps[Tag], ReactNode]] = js.undefined
-  var tagDisplayProp: js.UndefOr[String | Null] = js.undefined
+  var tagDisplayProp: js.UndefOr[(/* keyof Tag */ String) | Null] = js.undefined
   var tagProps: js.UndefOr[TagProps] = js.undefined
   var validationRegex: js.UndefOr[RegExp] = js.undefined
   var value: js.Array[Tag]
@@ -65,7 +65,7 @@ object ReactTagsInputProps {
     renderInput: /* props */ RenderInputProps[Tag] => ReactNode = null,
     renderLayout: (/* tagElements */ js.Array[ReactElement], /* inputElement */ ReactElement) => ReactChild = null,
     renderTag: /* props */ RenderTagProps[Tag] => ReactNode = null,
-    tagDisplayProp: String = null,
+    tagDisplayProp: /* keyof Tag */ String = null,
     tagProps: TagProps = null,
     validationRegex: RegExp = null
   ): ReactTagsInputProps[Tag] = {

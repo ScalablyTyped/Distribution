@@ -39,7 +39,6 @@ object GetSchemaResponse {
   @scala.inline
   def apply(build: () => js.Any, printJson: () => String, setFields: Fields => GetSchemaResponse): GetSchemaResponse = {
     val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), printJson = js.Any.fromFunction0(printJson), setFields = js.Any.fromFunction1(setFields))
-  
     __obj.asInstanceOf[GetSchemaResponse]
   }
 }

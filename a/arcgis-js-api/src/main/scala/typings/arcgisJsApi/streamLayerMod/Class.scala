@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.streamLayerMod
 
-import typings.arcgisJsApi.esri.PortalItem
 import typings.arcgisJsApi.esri.StreamLayer
 import typings.arcgisJsApi.esri.StreamLayerProperties
 import typings.arcgisJsApi.esri.TimeExtent
@@ -13,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("esri/layers/StreamLayer", JSImport.Namespace)
 @js.native
 /**
-  * The stream layer extends the feature layer to add the ability to connect to a stream of data using HTML5 WebSockets. It connects to a server that emits geographic features continuously. While the feature layer is used to map relatively static data, the stream layer is suitable when you would like to map dynamic streams of data that are unbounded and continuous. When a stream layer is added to a map, users are able to see real-time updates pushed out by the server.
+  * The stream layer connects to a stream of data using [WebSockets](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket). It connects to a server that emits geographic features continuously. The stream layer is suitable when you would like to map dynamic streams of data that are unbounded and continuous. When a stream layer is added to a map, users are able to see real-time updates pushed out by the server.
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html)
   */
@@ -37,22 +36,6 @@ class Class () extends StreamLayer {
     */
   /* CompleteClass */
   override var minScale: Double = js.native
-  /**
-    * The portal item from which the layer is loaded. If the portal item references a Feature Service or Scene Service, then you can specify a single layer to load with the [layerId](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-PortalLayer.html#layerId) property.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-PortalLayer.html#portalItem)
-    */
-  /* CompleteClass */
-  override var portalItem: PortalItem = js.native
-  /**
-    * Refresh interval of the layer in minutes. Value of `0` indicates no refresh.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-RefreshableLayer.html#refreshInterval)
-    *
-    * @default 0
-    */
-  /* CompleteClass */
-  override var refreshInterval: Double = js.native
   /**
     * The layer's time extent. When the layer's [useViewTime](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#useViewTime) is `false`, the layer instructs the view to show data from the layer based on this time extent. If the `useViewTime` is `true`, then this property has no effect on the layer, because the layer will show the data within the view's [timeExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#timeExtent) property.
     *
@@ -89,14 +72,5 @@ class Class () extends StreamLayer {
     */
   /* CompleteClass */
   override var useViewTime: Boolean = js.native
-  /**
-    * Fetches all the data for the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-RefreshableLayer.html#refresh)
-    *
-    *
-    */
-  /* CompleteClass */
-  override def refresh(): Unit = js.native
 }
 

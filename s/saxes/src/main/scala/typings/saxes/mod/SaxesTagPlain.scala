@@ -21,7 +21,6 @@ object SaxesTagPlain {
     name: String
   ): SaxesTagPlain = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], isSelfClosing = isSelfClosing.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SaxesTagPlain]
   }
 }

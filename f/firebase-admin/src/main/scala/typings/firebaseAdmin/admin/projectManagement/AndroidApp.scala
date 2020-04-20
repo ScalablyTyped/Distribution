@@ -74,7 +74,6 @@ object AndroidApp {
     setDisplayName: String => js.Promise[Unit]
   ): AndroidApp = {
     val __obj = js.Dynamic.literal(addShaCertificate = js.Any.fromFunction1(addShaCertificate), appId = appId.asInstanceOf[js.Any], deleteShaCertificate = js.Any.fromFunction1(deleteShaCertificate), getConfig = js.Any.fromFunction0(getConfig), getMetadata = js.Any.fromFunction0(getMetadata), getShaCertificates = js.Any.fromFunction0(getShaCertificates), setDisplayName = js.Any.fromFunction1(setDisplayName))
-  
     __obj.asInstanceOf[AndroidApp]
   }
 }

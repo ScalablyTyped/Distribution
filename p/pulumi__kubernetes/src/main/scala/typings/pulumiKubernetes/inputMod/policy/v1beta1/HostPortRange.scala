@@ -24,7 +24,6 @@ object HostPortRange {
   @scala.inline
   def apply(max: Input[Double], min: Input[Double]): HostPortRange = {
     val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HostPortRange]
   }
 }

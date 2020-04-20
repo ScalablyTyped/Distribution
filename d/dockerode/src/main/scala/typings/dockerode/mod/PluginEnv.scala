@@ -15,7 +15,6 @@ object PluginEnv {
   @scala.inline
   def apply(Description: String, Name: String, Settable: js.Array[String], Value: String): PluginEnv = {
     val __obj = js.Dynamic.literal(Description = Description.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Settable = Settable.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PluginEnv]
   }
 }

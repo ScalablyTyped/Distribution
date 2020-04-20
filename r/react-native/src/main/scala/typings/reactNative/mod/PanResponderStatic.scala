@@ -44,7 +44,6 @@ object PanResponderStatic {
   @scala.inline
   def apply(create: PanResponderCallbacks => PanResponderInstance): PanResponderStatic = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
-  
     __obj.asInstanceOf[PanResponderStatic]
   }
 }

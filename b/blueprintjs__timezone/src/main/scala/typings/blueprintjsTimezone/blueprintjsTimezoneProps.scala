@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait blueprintjsTimezoneProps {
   @scala.inline
-  def TimezonePickerProps: ITimezonePickerProps.type = typings.blueprintjsTimezone.timezonePickerMod.ITimezonePickerProps
+  def TimezonePickerProps: ITimezonePickerProps.type = ITimezonePickerProps
   type TimezonePickerProps = ITimezonePickerProps
 }
 

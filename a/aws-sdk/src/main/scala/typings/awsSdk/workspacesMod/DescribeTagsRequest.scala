@@ -16,7 +16,6 @@ object DescribeTagsRequest {
   @scala.inline
   def apply(ResourceId: NonEmptyString): DescribeTagsRequest = {
     val __obj = js.Dynamic.literal(ResourceId = ResourceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeTagsRequest]
   }
 }

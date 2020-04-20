@@ -14,7 +14,6 @@ object AnonPartitions {
   @scala.inline
   def apply(partitions: js.Array[WebViewPartition]): AnonPartitions = {
     val __obj = js.Dynamic.literal(partitions = partitions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPartitions]
   }
 }

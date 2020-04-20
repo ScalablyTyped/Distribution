@@ -19,7 +19,6 @@ object GitAsyncRefOperationSource {
   @scala.inline
   def apply(commitList: js.Array[GitCommitRef], pullRequestId: Double): GitAsyncRefOperationSource = {
     val __obj = js.Dynamic.literal(commitList = commitList.asInstanceOf[js.Any], pullRequestId = pullRequestId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GitAsyncRefOperationSource]
   }
 }

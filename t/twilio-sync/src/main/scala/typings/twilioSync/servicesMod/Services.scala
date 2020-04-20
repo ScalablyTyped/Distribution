@@ -27,7 +27,6 @@ object Services {
     twilsock: typings.twilsock.mod.Twilsock
   ): Services = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], network = network.asInstanceOf[js.Any], notifications = notifications.asInstanceOf[js.Any], router = router.asInstanceOf[js.Any], storage = storage.asInstanceOf[js.Any], subscriptions = subscriptions.asInstanceOf[js.Any], twilsock = twilsock.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Services]
   }
 }

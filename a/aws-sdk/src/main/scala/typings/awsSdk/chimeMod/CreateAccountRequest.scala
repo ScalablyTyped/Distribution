@@ -16,7 +16,6 @@ object CreateAccountRequest {
   @scala.inline
   def apply(Name: AccountName): CreateAccountRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateAccountRequest]
   }
 }

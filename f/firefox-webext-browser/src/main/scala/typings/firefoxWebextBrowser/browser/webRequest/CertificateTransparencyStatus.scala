@@ -14,14 +14,12 @@ trait CertificateTransparencyStatus extends js.Object
 
 object CertificateTransparencyStatus {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def not_applicable: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.not_applicable = "not_applicable".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.not_applicable]
   @scala.inline
-  def not_applicable: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.not_applicable = this.cast("not_applicable")
+  def policy_compliant: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.policy_compliant = "policy_compliant".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.policy_compliant]
   @scala.inline
-  def policy_compliant: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.policy_compliant = this.cast("policy_compliant")
+  def policy_not_diverse_scts: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.policy_not_diverse_scts = "policy_not_diverse_scts".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.policy_not_diverse_scts]
   @scala.inline
-  def policy_not_diverse_scts: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.policy_not_diverse_scts = this.cast("policy_not_diverse_scts")
-  @scala.inline
-  def policy_not_enough_scts: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.policy_not_enough_scts = this.cast("policy_not_enough_scts")
+  def policy_not_enough_scts: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.policy_not_enough_scts = "policy_not_enough_scts".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.policy_not_enough_scts]
 }
 

@@ -19,7 +19,6 @@ object focusZoneFocusZoneMod extends js.Object {
     var _activeElement: js.Any = js.native
     /** The child element with tabindex=0. */
     var _defaultFocusElement: js.Any = js.native
-    var _disposables: js.Any = js.native
     var _evaluateFocusBeforeRender: js.Any = js.native
     var _focusAlignment: js.Any = js.native
     var _getDocument: js.Any = js.native
@@ -83,6 +82,7 @@ object focusZoneFocusZoneMod extends js.Object {
       */
     var _tryInvokeClickForFocusable: js.Any = js.native
     var _updateTabIndexes: js.Any = js.native
+    var _windowElement: js.Any = js.native
     @JSName("componentDidMount")
     def componentDidMount_MFocusZone(): Unit = js.native
     @JSName("componentDidUpdate")

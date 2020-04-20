@@ -59,7 +59,7 @@ trait ContainerDefinition extends js.Object {
     */
   var firelensConfiguration: js.UndefOr[FirelensConfiguration] = js.native
   /**
-    * The health check command and associated configuration parameters for the container. This parameter maps to HealthCheck in the Create a container section of the Docker Remote API and the HEALTHCHECK parameter of docker run.
+    * The container health check command and associated configuration parameters for the container. This parameter maps to HealthCheck in the Create a container section of the Docker Remote API and the HEALTHCHECK parameter of docker run.
     */
   var healthCheck: js.UndefOr[HealthCheck] = js.native
   /**

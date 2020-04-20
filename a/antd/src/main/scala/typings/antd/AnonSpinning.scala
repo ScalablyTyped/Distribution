@@ -17,7 +17,6 @@ object AnonSpinning {
   @scala.inline
   def apply(size: small | large | default, spinning: Boolean, wrapperClassName: String): AnonSpinning = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], spinning = spinning.asInstanceOf[js.Any], wrapperClassName = wrapperClassName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSpinning]
   }
 }

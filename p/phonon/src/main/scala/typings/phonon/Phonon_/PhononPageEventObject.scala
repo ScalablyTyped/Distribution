@@ -12,7 +12,6 @@ object PhononPageEventObject {
   @scala.inline
   def apply(addEvent: (String, js.Function1[/* parameter */ js.UndefOr[js.Any], Unit]) => Unit): PhononPageEventObject = {
     val __obj = js.Dynamic.literal(addEvent = js.Any.fromFunction2(addEvent))
-  
     __obj.asInstanceOf[PhononPageEventObject]
   }
 }

@@ -13,7 +13,6 @@ object CloudFrontResponseEvent {
   @scala.inline
   def apply(Records: js.Array[AnonCfCloudFrontEventreadonlyre]): CloudFrontResponseEvent = {
     val __obj = js.Dynamic.literal(Records = Records.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CloudFrontResponseEvent]
   }
 }

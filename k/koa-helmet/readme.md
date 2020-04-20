@@ -1,7 +1,7 @@
 
 # Scala.js typings for koa-helmet
 
-Typings are for version 3.1
+Typings are for version 5.2
 
 ## Library description:
 Security header middleware collection for koa

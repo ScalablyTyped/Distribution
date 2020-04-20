@@ -21,7 +21,6 @@ object IHashAlgorithmProvider {
     hashLength: Double
   ): IHashAlgorithmProvider = {
     val __obj = js.Dynamic.literal(algorithmName = algorithmName.asInstanceOf[js.Any], createHash = js.Any.fromFunction0(createHash), hashData = js.Any.fromFunction1(hashData), hashLength = hashLength.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IHashAlgorithmProvider]
   }
 }

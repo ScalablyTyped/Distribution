@@ -20,7 +20,6 @@ object Frequency {
   @scala.inline
   def apply(units: FrequencyUnits, value: Double): Frequency = {
     val __obj = js.Dynamic.literal(units = units.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Frequency]
   }
 }

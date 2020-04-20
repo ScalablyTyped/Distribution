@@ -23,26 +23,26 @@ class RemapBlock protected () extends NodeMaterialBlock {
   /**
     * Gets the input component
     */
-  def input(): NodeMaterialConnectionPoint = js.native
+  def input: NodeMaterialConnectionPoint = js.native
   /**
     * Gets the output component
     */
-  def output(): NodeMaterialConnectionPoint = js.native
+  def output: NodeMaterialConnectionPoint = js.native
   /**
     * Gets the source max input component
     */
-  def sourceMax(): NodeMaterialConnectionPoint = js.native
+  def sourceMax: NodeMaterialConnectionPoint = js.native
   /**
     * Gets the source min input component
     */
-  def sourceMin(): NodeMaterialConnectionPoint = js.native
+  def sourceMin: NodeMaterialConnectionPoint = js.native
   /**
     * Gets the target max input component
     */
-  def targetMax(): NodeMaterialConnectionPoint = js.native
+  def targetMax: NodeMaterialConnectionPoint = js.native
   /**
     * Gets the target min input component
     */
-  def targetMin(): NodeMaterialConnectionPoint = js.native
+  def targetMin: NodeMaterialConnectionPoint = js.native
 }
 

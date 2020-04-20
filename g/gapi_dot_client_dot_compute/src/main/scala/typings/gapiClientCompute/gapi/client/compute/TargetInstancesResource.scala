@@ -33,7 +33,6 @@ object TargetInstancesResource {
     list: AnonFields => Request_[TargetInstanceList]
   ): TargetInstancesResource = {
     val __obj = js.Dynamic.literal(aggregatedList = js.Any.fromFunction1(aggregatedList), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[TargetInstancesResource]
   }
 }

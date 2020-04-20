@@ -20,7 +20,6 @@ object GeoMatchSetUpdate {
   @scala.inline
   def apply(Action: ChangeAction, GeoMatchConstraint: GeoMatchConstraint): GeoMatchSetUpdate = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], GeoMatchConstraint = GeoMatchConstraint.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GeoMatchSetUpdate]
   }
 }

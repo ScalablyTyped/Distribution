@@ -25,7 +25,6 @@ object ReviewsResource {
     reply: AnonUserIp => Request_[ReviewsReplyResponse]
   ): ReviewsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), reply = js.Any.fromFunction1(reply))
-  
     __obj.asInstanceOf[ReviewsResource]
   }
 }

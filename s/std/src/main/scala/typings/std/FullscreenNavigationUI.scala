@@ -13,12 +13,10 @@ trait FullscreenNavigationUI extends js.Object
 
 object FullscreenNavigationUI {
   @scala.inline
-  def auto: typings.std.stdStrings.auto = this.cast("auto")
+  def auto: typings.std.stdStrings.auto = "auto".asInstanceOf[typings.std.stdStrings.auto]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def hide: typings.std.stdStrings.hide = "hide".asInstanceOf[typings.std.stdStrings.hide]
   @scala.inline
-  def hide: typings.std.stdStrings.hide = this.cast("hide")
-  @scala.inline
-  def show: typings.std.stdStrings.show = this.cast("show")
+  def show: typings.std.stdStrings.show = "show".asInstanceOf[typings.std.stdStrings.show]
 }
 

@@ -15,7 +15,6 @@ object IModule {
   @scala.inline
   def apply(factory: (String, IResourceServiceFactoryFunction[_]) => IModule): IModule = {
     val __obj = js.Dynamic.literal(factory = js.Any.fromFunction2(factory))
-  
     __obj.asInstanceOf[IModule]
   }
 }

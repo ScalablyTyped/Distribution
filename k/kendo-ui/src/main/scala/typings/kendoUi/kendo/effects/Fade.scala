@@ -24,7 +24,6 @@ object Fade {
     stop: () => Effect
   ): Fade = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), direction = js.Any.fromFunction1(direction), duration = js.Any.fromFunction1(duration), endValue = js.Any.fromFunction1(endValue), play = js.Any.fromFunction0(play), reverse = js.Any.fromFunction0(reverse), startValue = js.Any.fromFunction1(startValue), stop = js.Any.fromFunction0(stop))
-  
     __obj.asInstanceOf[Fade]
   }
 }

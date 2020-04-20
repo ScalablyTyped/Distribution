@@ -17,12 +17,10 @@ trait DeviceMemCacheType extends js.Object
 
 object DeviceMemCacheType {
   @scala.inline
-  def NONE: `0x0` = this.cast(0x0)
+  def NONE: `0x0` = 0x0.asInstanceOf[`0x0`]
   @scala.inline
-  def READ_ONLY_CACHE: `0x1` = this.cast(0x1)
+  def READ_ONLY_CACHE: `0x1` = 0x1.asInstanceOf[`0x1`]
   @scala.inline
-  def READ_WRITE_CACHE: `0x2` = this.cast(0x2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def READ_WRITE_CACHE: `0x2` = 0x2.asInstanceOf[`0x2`]
 }
 

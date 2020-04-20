@@ -14,7 +14,6 @@ object HeaderContext {
   @scala.inline
   def apply(intervals: js.Array[AnonStartTime], unit: String): HeaderContext = {
     val __obj = js.Dynamic.literal(intervals = intervals.asInstanceOf[js.Any], unit = unit.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HeaderContext]
   }
 }

@@ -16,7 +16,6 @@ object AnonAnonymous {
   @scala.inline
   def apply(anonymous: String, asyncArrow: String, constructor: String, method: String, named: String): AnonAnonymous = {
     val __obj = js.Dynamic.literal(anonymous = anonymous.asInstanceOf[js.Any], asyncArrow = asyncArrow.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], named = named.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAnonymous]
   }
 }

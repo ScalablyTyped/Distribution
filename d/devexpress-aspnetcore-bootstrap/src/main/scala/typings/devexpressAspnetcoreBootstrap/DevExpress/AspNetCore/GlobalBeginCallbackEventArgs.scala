@@ -12,7 +12,6 @@ object GlobalBeginCallbackEventArgs {
   @scala.inline
   def apply(command: String, control: Control, sender: Control): GlobalBeginCallbackEventArgs = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], control = control.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GlobalBeginCallbackEventArgs]
   }
 }

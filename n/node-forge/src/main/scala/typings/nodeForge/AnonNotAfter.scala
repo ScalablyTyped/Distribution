@@ -14,7 +14,6 @@ object AnonNotAfter {
   @scala.inline
   def apply(notAfter: Date, notBefore: Date): AnonNotAfter = {
     val __obj = js.Dynamic.literal(notAfter = notAfter.asInstanceOf[js.Any], notBefore = notBefore.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNotAfter]
   }
 }

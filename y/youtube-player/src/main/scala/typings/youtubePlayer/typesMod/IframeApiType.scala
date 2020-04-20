@@ -13,7 +13,6 @@ object IframeApiType {
   @scala.inline
   def apply(Player: AnonInstantiable): IframeApiType = {
     val __obj = js.Dynamic.literal(Player = Player.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IframeApiType]
   }
 }

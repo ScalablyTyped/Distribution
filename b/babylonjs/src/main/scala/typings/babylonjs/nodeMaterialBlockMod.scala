@@ -98,7 +98,7 @@ object nodeMaterialBlockMod extends js.Object {
     /**
       * Gets or sets the build Id
       */
-    def buildId(): Double = js.native
+    def buildId: Double = js.native
     def buildId(value: Double): js.Any = js.native
     /**
       * Clone the current block to a new identical block
@@ -179,15 +179,15 @@ object nodeMaterialBlockMod extends js.Object {
     /**
       * Gets the list of input points
       */
-    def inputs(): js.Array[NodeMaterialConnectionPoint] = js.native
+    def inputs: js.Array[NodeMaterialConnectionPoint] = js.native
     /**
       * Gets a boolean indicating that this block is an end block (e.g. it is generating a system value)
       */
-    def isFinalMerger(): Boolean = js.native
+    def isFinalMerger: Boolean = js.native
     /**
       * Gets a boolean indicating that this block is an input (e.g. it sends data to the shader)
       */
-    def isInput(): Boolean = js.native
+    def isInput: Boolean = js.native
     /**
       * Checks if the block is ready
       * @param mesh defines the mesh to be rendered
@@ -206,9 +206,9 @@ object nodeMaterialBlockMod extends js.Object {
     /**
       * Gets a boolean indicating that this block can only be used once per NodeMaterial
       */
-    def isUnique(): Boolean = js.native
+    def isUnique: Boolean = js.native
     /** Gets the list of output points */
-    def outputs(): js.Array[NodeMaterialConnectionPoint] = js.native
+    def outputs: js.Array[NodeMaterialConnectionPoint] = js.native
     /**
       * Update defines for shader compilation
       * @param mesh defines the mesh to be rendered
@@ -275,7 +275,7 @@ object nodeMaterialBlockMod extends js.Object {
     /**
       * Gets or sets the target of the block
       */
-    def target(): NodeMaterialBlockTargets = js.native
+    def target: NodeMaterialBlockTargets = js.native
     def target(value: NodeMaterialBlockTargets): js.Any = js.native
     /**
       * Add uniforms, samplers and uniform buffers at compilation time

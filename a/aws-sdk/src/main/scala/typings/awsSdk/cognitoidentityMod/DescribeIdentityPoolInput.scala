@@ -16,7 +16,6 @@ object DescribeIdentityPoolInput {
   @scala.inline
   def apply(IdentityPoolId: IdentityPoolId): DescribeIdentityPoolInput = {
     val __obj = js.Dynamic.literal(IdentityPoolId = IdentityPoolId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeIdentityPoolInput]
   }
 }

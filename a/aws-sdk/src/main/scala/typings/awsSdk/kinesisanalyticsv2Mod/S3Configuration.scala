@@ -20,7 +20,6 @@ object S3Configuration {
   @scala.inline
   def apply(BucketARN: BucketARN, FileKey: FileKey): S3Configuration = {
     val __obj = js.Dynamic.literal(BucketARN = BucketARN.asInstanceOf[js.Any], FileKey = FileKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[S3Configuration]
   }
 }

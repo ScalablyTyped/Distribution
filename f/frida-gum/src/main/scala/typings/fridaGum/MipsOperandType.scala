@@ -13,12 +13,10 @@ trait MipsOperandType extends js.Object
 
 object MipsOperandType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def imm: typings.fridaGum.fridaGumStrings.imm = "imm".asInstanceOf[typings.fridaGum.fridaGumStrings.imm]
   @scala.inline
-  def imm: typings.fridaGum.fridaGumStrings.imm = this.cast("imm")
+  def mem: typings.fridaGum.fridaGumStrings.mem = "mem".asInstanceOf[typings.fridaGum.fridaGumStrings.mem]
   @scala.inline
-  def mem: typings.fridaGum.fridaGumStrings.mem = this.cast("mem")
-  @scala.inline
-  def reg: typings.fridaGum.fridaGumStrings.reg = this.cast("reg")
+  def reg: typings.fridaGum.fridaGumStrings.reg = "reg".asInstanceOf[typings.fridaGum.fridaGumStrings.reg]
 }
 

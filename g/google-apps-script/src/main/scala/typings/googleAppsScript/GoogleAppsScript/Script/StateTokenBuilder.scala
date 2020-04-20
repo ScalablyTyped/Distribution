@@ -38,7 +38,6 @@ object StateTokenBuilder {
     withTimeout: Integer => StateTokenBuilder
   ): StateTokenBuilder = {
     val __obj = js.Dynamic.literal(createToken = js.Any.fromFunction0(createToken), withArgument = js.Any.fromFunction2(withArgument), withMethod = js.Any.fromFunction1(withMethod), withTimeout = js.Any.fromFunction1(withTimeout))
-  
     __obj.asInstanceOf[StateTokenBuilder]
   }
 }

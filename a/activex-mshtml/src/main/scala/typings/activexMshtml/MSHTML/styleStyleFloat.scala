@@ -20,16 +20,14 @@ trait styleStyleFloat extends js.Object
 
 object styleStyleFloat {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleStyleFloatLeft: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleStyleFloatLeft: `1` = this.cast(1)
+  def styleStyleFloatNone: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def styleStyleFloatNone: `3` = this.cast(3)
+  def styleStyleFloatNotSet: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleStyleFloatNotSet: `0` = this.cast(0)
+  def styleStyleFloatRight: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleStyleFloatRight: `2` = this.cast(2)
-  @scala.inline
-  def styleStyleFloat_Max: `2147483647` = this.cast(2147483647)
+  def styleStyleFloat_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

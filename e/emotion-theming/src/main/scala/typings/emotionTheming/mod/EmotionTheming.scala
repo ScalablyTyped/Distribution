@@ -22,7 +22,6 @@ object EmotionTheming {
     withTheme: js.Any => SFC[AddOptionalTo[PropsOf[js.Any], theme]]
   ): EmotionTheming[Theme] = {
     val __obj = js.Dynamic.literal(ThemeProvider = js.Any.fromFunction1(ThemeProvider), withTheme = js.Any.fromFunction1(withTheme))
-  
     __obj.asInstanceOf[EmotionTheming[Theme]]
   }
 }

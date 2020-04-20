@@ -20,26 +20,24 @@ trait TimeUnit extends js.Object
 
 object TimeUnit {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def date: typings.vegaTypings.vegaTypingsStrings.date = "date".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.date]
   @scala.inline
-  def date: typings.vegaTypings.vegaTypingsStrings.date = this.cast("date")
+  def day: typings.vegaTypings.vegaTypingsStrings.day = "day".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.day]
   @scala.inline
-  def day: typings.vegaTypings.vegaTypingsStrings.day = this.cast("day")
+  def hours: typings.vegaTypings.vegaTypingsStrings.hours = "hours".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.hours]
   @scala.inline
-  def hours: typings.vegaTypings.vegaTypingsStrings.hours = this.cast("hours")
+  def milliseconds: typings.vegaTypings.vegaTypingsStrings.milliseconds = "milliseconds".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.milliseconds]
   @scala.inline
-  def milliseconds: typings.vegaTypings.vegaTypingsStrings.milliseconds = this.cast("milliseconds")
+  def minutes: typings.vegaTypings.vegaTypingsStrings.minutes = "minutes".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.minutes]
   @scala.inline
-  def minutes: typings.vegaTypings.vegaTypingsStrings.minutes = this.cast("minutes")
+  def month: typings.vegaTypings.vegaTypingsStrings.month = "month".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.month]
   @scala.inline
-  def month: typings.vegaTypings.vegaTypingsStrings.month = this.cast("month")
+  def quarter: typings.vegaTypings.vegaTypingsStrings.quarter = "quarter".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.quarter]
   @scala.inline
-  def quarter: typings.vegaTypings.vegaTypingsStrings.quarter = this.cast("quarter")
+  def seconds: typings.vegaTypings.vegaTypingsStrings.seconds = "seconds".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.seconds]
   @scala.inline
-  def seconds: typings.vegaTypings.vegaTypingsStrings.seconds = this.cast("seconds")
+  def week: typings.vegaTypings.vegaTypingsStrings.week = "week".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.week]
   @scala.inline
-  def week: typings.vegaTypings.vegaTypingsStrings.week = this.cast("week")
-  @scala.inline
-  def year: typings.vegaTypings.vegaTypingsStrings.year = this.cast("year")
+  def year: typings.vegaTypings.vegaTypingsStrings.year = "year".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.year]
 }
 

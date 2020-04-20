@@ -86,7 +86,7 @@ object PageInstance {
     onTabItemTap: /* options */ js.UndefOr[ITabItemTapOption] => Unit = null,
     onUnload: () => Unit = null,
     route: String = null,
-    setData: (/* data */ D | (Pick[D, String]) | IAnyObject, /* callback */ js.UndefOr[js.Function0[Unit]]) => Unit = null
+    setData: (/* data */ D | (Pick[D, /* keyof D */ String]) | IAnyObject, /* callback */ js.UndefOr[js.Function0[Unit]]) => Unit = null
   ): PageInstance[D, T] = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])

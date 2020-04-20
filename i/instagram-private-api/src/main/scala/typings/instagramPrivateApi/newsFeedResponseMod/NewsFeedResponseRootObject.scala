@@ -20,7 +20,6 @@ object NewsFeedResponseRootObject {
     stories: js.Array[NewsFeedResponseStoriesItem]
   ): NewsFeedResponseRootObject = {
     val __obj = js.Dynamic.literal(auto_load_more_enabled = auto_load_more_enabled.asInstanceOf[js.Any], next_max_id = next_max_id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], stories = stories.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NewsFeedResponseRootObject]
   }
 }

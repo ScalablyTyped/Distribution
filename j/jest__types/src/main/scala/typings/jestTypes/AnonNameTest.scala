@@ -16,7 +16,6 @@ object AnonNameTest {
   @scala.inline
   def apply(name: test_fn_success, test: TestEntry): AnonNameTest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNameTest]
   }
 }

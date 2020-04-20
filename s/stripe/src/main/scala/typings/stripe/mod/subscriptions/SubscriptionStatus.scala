@@ -17,20 +17,18 @@ trait SubscriptionStatus extends js.Object
 
 object SubscriptionStatus {
   @scala.inline
-  def active: typings.stripe.stripeStrings.active = this.cast("active")
+  def active: typings.stripe.stripeStrings.active = "active".asInstanceOf[typings.stripe.stripeStrings.active]
   @scala.inline
-  def canceled: typings.stripe.stripeStrings.canceled = this.cast("canceled")
+  def canceled: typings.stripe.stripeStrings.canceled = "canceled".asInstanceOf[typings.stripe.stripeStrings.canceled]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def incomplete: typings.stripe.stripeStrings.incomplete = "incomplete".asInstanceOf[typings.stripe.stripeStrings.incomplete]
   @scala.inline
-  def incomplete: typings.stripe.stripeStrings.incomplete = this.cast("incomplete")
+  def incomplete_expired: typings.stripe.stripeStrings.incomplete_expired = "incomplete_expired".asInstanceOf[typings.stripe.stripeStrings.incomplete_expired]
   @scala.inline
-  def incomplete_expired: typings.stripe.stripeStrings.incomplete_expired = this.cast("incomplete_expired")
+  def past_due: typings.stripe.stripeStrings.past_due = "past_due".asInstanceOf[typings.stripe.stripeStrings.past_due]
   @scala.inline
-  def past_due: typings.stripe.stripeStrings.past_due = this.cast("past_due")
+  def trialing: typings.stripe.stripeStrings.trialing = "trialing".asInstanceOf[typings.stripe.stripeStrings.trialing]
   @scala.inline
-  def trialing: typings.stripe.stripeStrings.trialing = this.cast("trialing")
-  @scala.inline
-  def unpaid: typings.stripe.stripeStrings.unpaid = this.cast("unpaid")
+  def unpaid: typings.stripe.stripeStrings.unpaid = "unpaid".asInstanceOf[typings.stripe.stripeStrings.unpaid]
 }
 

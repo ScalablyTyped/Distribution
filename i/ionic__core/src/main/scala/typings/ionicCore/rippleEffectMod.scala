@@ -33,7 +33,7 @@ object rippleEffectMod extends js.Object {
     def addRipple(x: Double, y: Double): js.Promise[js.Function0[Unit]] = js.native
     @JSName("render")
     def render_MRippleEffect(): js.Any = js.native
-    /* private */ def unbounded(): js.Any = js.native
+    /* private */ def unbounded: js.Any = js.native
   }
   
 }

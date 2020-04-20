@@ -17,7 +17,6 @@ object AnonCalloutProps {
   @scala.inline
   def apply(calloutProps: AnonBeakWidth): AnonCalloutProps = {
     val __obj = js.Dynamic.literal(calloutProps = calloutProps.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCalloutProps]
   }
 }

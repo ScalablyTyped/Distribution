@@ -43,9 +43,9 @@ object onDeleteEntryRequested
           /* errorCallback */ js.Function1[
             /* error */ ToStringLiteral[
               AnonABORT, 
-              String, 
+              OK | FAILED | IN_USE | EXISTS | NOT_FOUND | ACCESS_DENIED | TOO_MANY_OPENED | NO_MEMORY | NO_SPACE | NOT_A_DIRECTORY | INVALID_OPERATION | SECURITY | ABORT | NOT_A_FILE | NOT_EMPTY | INVALID_URL | IO, 
               Exclude[
-                String, 
+                OK | FAILED | IN_USE | EXISTS | NOT_FOUND | ACCESS_DENIED | TOO_MANY_OPENED | NO_MEMORY | NO_SPACE | NOT_A_DIRECTORY | INVALID_OPERATION | SECURITY | ABORT | NOT_A_FILE | NOT_EMPTY | INVALID_URL | IO, 
                 INVALID_URL | IN_USE | OK | ABORT | SECURITY | NOT_A_DIRECTORY | NOT_A_FILE | INVALID_OPERATION | TOO_MANY_OPENED | NO_MEMORY | ACCESS_DENIED | NOT_FOUND | FAILED | NO_SPACE | EXISTS | NOT_EMPTY | IO
               ]
             ], 

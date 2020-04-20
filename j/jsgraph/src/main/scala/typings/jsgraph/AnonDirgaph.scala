@@ -13,7 +13,6 @@ object AnonDirgaph {
   @scala.inline
   def apply(dirgaph: DirectedGraph): AnonDirgaph = {
     val __obj = js.Dynamic.literal(dirgaph = dirgaph.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDirgaph]
   }
 }

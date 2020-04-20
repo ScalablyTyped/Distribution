@@ -26,7 +26,6 @@ object ISortState {
   @scala.inline
   def apply(direction: ascending | descending, key: name | last_modified): ISortState = {
     val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISortState]
   }
 }

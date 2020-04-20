@@ -61,7 +61,6 @@ object IRison {
     encode_uri: js.Any => String
   ): IRison = {
     val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), decode_array = js.Any.fromFunction1(decode_array), decode_object = js.Any.fromFunction1(decode_object), encode = js.Any.fromFunction1(encode), encode_array = js.Any.fromFunction1(encode_array), encode_object = js.Any.fromFunction1(encode_object), encode_uri = js.Any.fromFunction1(encode_uri))
-  
     __obj.asInstanceOf[IRison]
   }
 }

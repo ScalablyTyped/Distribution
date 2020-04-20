@@ -13,12 +13,10 @@ trait MenuItemClassKey extends js.Object
 
 object MenuItemClassKey {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def gutters: typings.materialUiCore.materialUiCoreStrings.gutters = "gutters".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.gutters]
   @scala.inline
-  def gutters: typings.materialUiCore.materialUiCoreStrings.gutters = this.cast("gutters")
+  def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
   @scala.inline
-  def root: typings.materialUiCore.materialUiCoreStrings.root = this.cast("root")
-  @scala.inline
-  def selected: typings.materialUiCore.materialUiCoreStrings.selected = this.cast("selected")
+  def selected: typings.materialUiCore.materialUiCoreStrings.selected = "selected".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.selected]
 }
 

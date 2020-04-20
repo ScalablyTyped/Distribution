@@ -18,7 +18,6 @@ object LineContext {
   @scala.inline
   def apply(lineTo: (Double, Double) => Unit): LineContext = {
     val __obj = js.Dynamic.literal(lineTo = js.Any.fromFunction2(lineTo))
-  
     __obj.asInstanceOf[LineContext]
   }
 }

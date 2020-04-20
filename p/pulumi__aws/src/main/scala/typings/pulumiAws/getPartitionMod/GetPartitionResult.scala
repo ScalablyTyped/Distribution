@@ -18,7 +18,6 @@ object GetPartitionResult {
   @scala.inline
   def apply(dnsSuffix: String, id: String, partition: String): GetPartitionResult = {
     val __obj = js.Dynamic.literal(dnsSuffix = dnsSuffix.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], partition = partition.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetPartitionResult]
   }
 }

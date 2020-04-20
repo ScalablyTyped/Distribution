@@ -12,7 +12,6 @@ object IdTokenProvider {
   @scala.inline
   def apply(fetchIdToken: String => js.Promise[String]): IdTokenProvider = {
     val __obj = js.Dynamic.literal(fetchIdToken = js.Any.fromFunction1(fetchIdToken))
-  
     __obj.asInstanceOf[IdTokenProvider]
   }
 }

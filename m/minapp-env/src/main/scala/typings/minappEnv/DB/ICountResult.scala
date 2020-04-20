@@ -13,7 +13,6 @@ object ICountResult {
   @scala.inline
   def apply(errMsg: String, total: Double): ICountResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICountResult]
   }
 }

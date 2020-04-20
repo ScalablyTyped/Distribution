@@ -13,7 +13,6 @@ object PickImplmultiple {
   @scala.inline
   def apply(multiple: String): PickImplmultiple = {
     val __obj = js.Dynamic.literal(multiple = multiple.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplmultiple]
   }
 }

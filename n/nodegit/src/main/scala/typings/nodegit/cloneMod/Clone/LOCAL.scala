@@ -18,14 +18,12 @@ trait LOCAL extends js.Object
 
 object LOCAL {
   @scala.inline
-  def AUTO: `0` = this.cast(0)
+  def AUTO: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def LOCAL: `1` = this.cast(1)
+  def LOCAL: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def NO_LINKS: `3` = this.cast(3)
+  def NO_LINKS: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def NO_LOCAL: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def NO_LOCAL: `2` = 2.asInstanceOf[`2`]
 }
 

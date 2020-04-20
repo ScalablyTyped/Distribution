@@ -12,7 +12,6 @@ object AnonChargeback {
   @scala.inline
   def apply(Chargeback: String): AnonChargeback = {
     val __obj = js.Dynamic.literal(Chargeback = Chargeback.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonChargeback]
   }
 }

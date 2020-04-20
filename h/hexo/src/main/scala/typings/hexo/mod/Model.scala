@@ -42,7 +42,6 @@ object Model {
     toArray: () => js.Array[T]
   ): Model[T] = {
     val __obj = js.Dynamic.literal(count = js.Any.fromFunction0(count), filter = js.Any.fromFunction1(filter), forEach = js.Any.fromFunction1(forEach), map = js.Any.fromFunction1(map), toArray = js.Any.fromFunction0(toArray))
-  
     __obj.asInstanceOf[Model[T]]
   }
 }

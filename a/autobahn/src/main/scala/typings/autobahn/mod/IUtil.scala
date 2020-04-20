@@ -12,7 +12,6 @@ object IUtil {
   @scala.inline
   def apply(assert: (Boolean, String) => Unit): IUtil = {
     val __obj = js.Dynamic.literal(assert = js.Any.fromFunction2(assert))
-  
     __obj.asInstanceOf[IUtil]
   }
 }

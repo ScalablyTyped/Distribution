@@ -16,7 +16,6 @@ object AnonIsNewManifest {
   @scala.inline
   def apply(isNew: `true`, manifest: Manifest): AnonIsNewManifest = {
     val __obj = js.Dynamic.literal(isNew = isNew.asInstanceOf[js.Any], manifest = manifest.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsNewManifest]
   }
 }

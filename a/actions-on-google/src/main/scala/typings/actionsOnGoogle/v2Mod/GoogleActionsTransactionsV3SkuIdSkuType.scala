@@ -13,12 +13,10 @@ trait GoogleActionsTransactionsV3SkuIdSkuType extends js.Object
 
 object GoogleActionsTransactionsV3SkuIdSkuType {
   @scala.inline
-  def SKU_TYPE_IN_APP: typings.actionsOnGoogle.actionsOnGoogleStrings.SKU_TYPE_IN_APP = this.cast("SKU_TYPE_IN_APP")
+  def SKU_TYPE_IN_APP: typings.actionsOnGoogle.actionsOnGoogleStrings.SKU_TYPE_IN_APP = "SKU_TYPE_IN_APP".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.SKU_TYPE_IN_APP]
   @scala.inline
-  def SKU_TYPE_SUBSCRIPTION: typings.actionsOnGoogle.actionsOnGoogleStrings.SKU_TYPE_SUBSCRIPTION = this.cast("SKU_TYPE_SUBSCRIPTION")
+  def SKU_TYPE_SUBSCRIPTION: typings.actionsOnGoogle.actionsOnGoogleStrings.SKU_TYPE_SUBSCRIPTION = "SKU_TYPE_SUBSCRIPTION".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.SKU_TYPE_SUBSCRIPTION]
   @scala.inline
-  def SKU_TYPE_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.SKU_TYPE_UNSPECIFIED = this.cast("SKU_TYPE_UNSPECIFIED")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SKU_TYPE_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.SKU_TYPE_UNSPECIFIED = "SKU_TYPE_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.SKU_TYPE_UNSPECIFIED]
 }
 

@@ -16,14 +16,12 @@ trait TriggerType extends js.Object
 
 object TriggerType {
   @scala.inline
-  def Post: typings.documentdb.documentdbStrings.Post = this.cast("Post")
+  def Post: typings.documentdb.documentdbStrings.Post = "Post".asInstanceOf[typings.documentdb.documentdbStrings.Post]
   @scala.inline
-  def Pre: typings.documentdb.documentdbStrings.Pre = this.cast("Pre")
+  def Pre: typings.documentdb.documentdbStrings.Pre = "Pre".asInstanceOf[typings.documentdb.documentdbStrings.Pre]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def post: post_ = "post".asInstanceOf[post_]
   @scala.inline
-  def post: post_ = this.cast("post")
-  @scala.inline
-  def pre: pre_ = this.cast("pre")
+  def pre: pre_ = "pre".asInstanceOf[pre_]
 }
 

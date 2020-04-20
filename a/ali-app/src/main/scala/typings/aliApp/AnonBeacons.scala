@@ -13,7 +13,6 @@ object AnonBeacons {
   @scala.inline
   def apply(beacons: js.Array[Beacon]): AnonBeacons = {
     val __obj = js.Dynamic.literal(beacons = beacons.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBeacons]
   }
 }

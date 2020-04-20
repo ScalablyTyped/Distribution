@@ -58,7 +58,6 @@ object OperationsResource {
     list: AnonAlt => Request_[GoogleLongrunningListOperationsResponse]
   ): OperationsResource = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[OperationsResource]
   }
 }

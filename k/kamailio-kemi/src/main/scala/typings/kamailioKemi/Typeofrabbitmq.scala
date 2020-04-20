@@ -16,7 +16,6 @@ object Typeofrabbitmq {
     publish_consume: (String, String, String, String, String) => Double
   ): Typeofrabbitmq = {
     val __obj = js.Dynamic.literal(publish = js.Any.fromFunction4(publish), publish_consume = js.Any.fromFunction5(publish_consume))
-  
     __obj.asInstanceOf[Typeofrabbitmq]
   }
 }

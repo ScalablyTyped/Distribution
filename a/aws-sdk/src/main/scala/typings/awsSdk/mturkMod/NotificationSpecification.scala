@@ -28,7 +28,6 @@ object NotificationSpecification {
   @scala.inline
   def apply(Destination: String, EventTypes: EventTypeList, Transport: NotificationTransport, Version: String): NotificationSpecification = {
     val __obj = js.Dynamic.literal(Destination = Destination.asInstanceOf[js.Any], EventTypes = EventTypes.asInstanceOf[js.Any], Transport = Transport.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NotificationSpecification]
   }
 }

@@ -40,7 +40,6 @@ object INxSelectionCell {
   @scala.inline
   def apply(qCol: Double, qRow: Double, qType: NxSelectionCellType): INxSelectionCell = {
     val __obj = js.Dynamic.literal(qCol = qCol.asInstanceOf[js.Any], qRow = qRow.asInstanceOf[js.Any], qType = qType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INxSelectionCell]
   }
 }

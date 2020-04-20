@@ -16,12 +16,10 @@ trait OlViewSaveOption extends js.Object
 
 object OlViewSaveOption {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olViewSaveOptionAllFoldersOfType: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olViewSaveOptionAllFoldersOfType: `2` = this.cast(2)
+  def olViewSaveOptionThisFolderEveryone: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def olViewSaveOptionThisFolderEveryone: `0` = this.cast(0)
-  @scala.inline
-  def olViewSaveOptionThisFolderOnlyMe: `1` = this.cast(1)
+  def olViewSaveOptionThisFolderOnlyMe: `1` = 1.asInstanceOf[`1`]
 }
 

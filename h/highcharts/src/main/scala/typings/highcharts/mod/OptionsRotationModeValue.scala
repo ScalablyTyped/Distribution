@@ -14,14 +14,12 @@ trait OptionsRotationModeValue extends js.Object
 
 object OptionsRotationModeValue {
   @scala.inline
-  def auto: typings.highcharts.highchartsStrings.auto = this.cast("auto")
+  def auto: typings.highcharts.highchartsStrings.auto = "auto".asInstanceOf[typings.highcharts.highchartsStrings.auto]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def circular: typings.highcharts.highchartsStrings.circular = "circular".asInstanceOf[typings.highcharts.highchartsStrings.circular]
   @scala.inline
-  def circular: typings.highcharts.highchartsStrings.circular = this.cast("circular")
+  def parallel: typings.highcharts.highchartsStrings.parallel = "parallel".asInstanceOf[typings.highcharts.highchartsStrings.parallel]
   @scala.inline
-  def parallel: typings.highcharts.highchartsStrings.parallel = this.cast("parallel")
-  @scala.inline
-  def perpendicular: typings.highcharts.highchartsStrings.perpendicular = this.cast("perpendicular")
+  def perpendicular: typings.highcharts.highchartsStrings.perpendicular = "perpendicular".asInstanceOf[typings.highcharts.highchartsStrings.perpendicular]
 }
 

@@ -14,14 +14,12 @@ trait PresentationStyle extends js.Object
 
 object PresentationStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def formSheet: typings.reactNativeModal.reactNativeModalStrings.formSheet = "formSheet".asInstanceOf[typings.reactNativeModal.reactNativeModalStrings.formSheet]
   @scala.inline
-  def formSheet: typings.reactNativeModal.reactNativeModalStrings.formSheet = this.cast("formSheet")
+  def fullScreen: typings.reactNativeModal.reactNativeModalStrings.fullScreen = "fullScreen".asInstanceOf[typings.reactNativeModal.reactNativeModalStrings.fullScreen]
   @scala.inline
-  def fullScreen: typings.reactNativeModal.reactNativeModalStrings.fullScreen = this.cast("fullScreen")
+  def overFullScreen: typings.reactNativeModal.reactNativeModalStrings.overFullScreen = "overFullScreen".asInstanceOf[typings.reactNativeModal.reactNativeModalStrings.overFullScreen]
   @scala.inline
-  def overFullScreen: typings.reactNativeModal.reactNativeModalStrings.overFullScreen = this.cast("overFullScreen")
-  @scala.inline
-  def pageSheet: typings.reactNativeModal.reactNativeModalStrings.pageSheet = this.cast("pageSheet")
+  def pageSheet: typings.reactNativeModal.reactNativeModalStrings.pageSheet = "pageSheet".asInstanceOf[typings.reactNativeModal.reactNativeModalStrings.pageSheet]
 }
 

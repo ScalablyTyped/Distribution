@@ -15,16 +15,14 @@ trait LogLevel extends js.Object
 
 object LogLevel {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def critical: typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.critical = "critical".asInstanceOf[typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.critical]
   @scala.inline
-  def critical: typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.critical = this.cast("critical")
+  def debug: typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.debug = "debug".asInstanceOf[typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.debug]
   @scala.inline
-  def debug: typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.debug = this.cast("debug")
+  def error: typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.error = "error".asInstanceOf[typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.error]
   @scala.inline
-  def error: typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.error = this.cast("error")
+  def info: typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.info = "info".asInstanceOf[typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.info]
   @scala.inline
-  def info: typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.info = this.cast("info")
-  @scala.inline
-  def warning: typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.warning = this.cast("warning")
+  def warning: typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.warning = "warning".asInstanceOf[typings.jupyterlabLogconsole.jupyterlabLogconsoleStrings.warning]
 }
 

@@ -18,7 +18,7 @@ package object Schema {
   type Contextual[T /* <: typings.wordpressApiFetch.mod.Schema.Context */, TAdditional, TEditAdditional] = (typings.wordpressApiFetch.AnonRendered with TAdditional) | (typings.wordpressApiFetch.AnonRaw with TAdditional with TEditAdditional)
   type Decontextualize[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in keyof T ]: T[k] extends @wordpress/api-fetch.@wordpress/api-fetch.Schema.Contextual<any, {}, {}>? string : T[k]}
-    */ typings.wordpressApiFetch.wordpressApiFetchStrings.Decontextualize with js.Any
+    */ typings.wordpressApiFetch.wordpressApiFetchStrings.Decontextualize with org.scalablytyped.runtime.TopLevel[js.Any]
   // prettier-ignore
   type Media[T /* <: typings.wordpressApiFetch.mod.Schema.Context */] = typings.wordpressApiFetch.mod.Schema.BaseMedia[T] | (typings.std.Pick[
     typings.wordpressApiFetch.mod.Schema.BaseMedia[T], 

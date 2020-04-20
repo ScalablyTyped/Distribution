@@ -13,7 +13,6 @@ object PickImplreadOnly {
   @scala.inline
   def apply(readOnly: String): PickImplreadOnly = {
     val __obj = js.Dynamic.literal(readOnly = readOnly.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplreadOnly]
   }
 }

@@ -16,7 +16,6 @@ object DeleteInstanceProfileRequest {
   @scala.inline
   def apply(InstanceProfileName: instanceProfileNameType): DeleteInstanceProfileRequest = {
     val __obj = js.Dynamic.literal(InstanceProfileName = InstanceProfileName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteInstanceProfileRequest]
   }
 }

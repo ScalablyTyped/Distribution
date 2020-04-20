@@ -12,7 +12,6 @@ object AnonHighWaterMark {
   @scala.inline
   def apply(highWaterMark: Double): AnonHighWaterMark = {
     val __obj = js.Dynamic.literal(highWaterMark = highWaterMark.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHighWaterMark]
   }
 }

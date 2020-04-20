@@ -23,7 +23,7 @@ abstract class RuleInfo protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FRuleInfo: IModel = js.native
-  def containerAsValidationRule(): ValidationRule = js.native
+  def containerAsValidationRule: ValidationRule = js.native
 }
 
 /* static members */

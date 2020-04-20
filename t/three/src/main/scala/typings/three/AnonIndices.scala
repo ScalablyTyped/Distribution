@@ -15,7 +15,6 @@ object AnonIndices {
   @scala.inline
   def apply(detail: Double, indices: js.Array[Double], radius: Double, vertices: js.Array[Double]): AnonIndices = {
     val __obj = js.Dynamic.literal(detail = detail.asInstanceOf[js.Any], indices = indices.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIndices]
   }
 }

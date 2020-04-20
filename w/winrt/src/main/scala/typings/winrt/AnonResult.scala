@@ -14,7 +14,6 @@ object AnonResult {
   @scala.inline
   def apply(result: JsonArray, succeeded: Boolean): AnonResult = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any], succeeded = succeeded.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonResult]
   }
 }

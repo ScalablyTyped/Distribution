@@ -16,34 +16,34 @@ class MorphTargetsBlock protected () extends NodeMaterialBlock {
   /**
     * Gets the normal input component
     */
-  def normal(): NodeMaterialConnectionPoint = js.native
+  def normal: NodeMaterialConnectionPoint = js.native
   /**
     * Gets the normal output component
     */
-  def normalOutput(): NodeMaterialConnectionPoint = js.native
+  def normalOutput: NodeMaterialConnectionPoint = js.native
   /**
     * Gets the position input component
     */
-  def position(): NodeMaterialConnectionPoint = js.native
+  def position: NodeMaterialConnectionPoint = js.native
   /**
     * Gets the position output component
     */
-  def positionOutput(): NodeMaterialConnectionPoint = js.native
+  def positionOutput: NodeMaterialConnectionPoint = js.native
   /**
     * Gets the tangent input component
     */
-  def tangent(): NodeMaterialConnectionPoint = js.native
+  def tangent: NodeMaterialConnectionPoint = js.native
   /**
     * Gets the tangent output component
     */
-  def tangentOutput(): NodeMaterialConnectionPoint = js.native
+  def tangentOutput: NodeMaterialConnectionPoint = js.native
   /**
     * Gets the tangent input component
     */
-  def uv(): NodeMaterialConnectionPoint = js.native
+  def uv: NodeMaterialConnectionPoint = js.native
   /**
     * Gets the tangent output component
     */
-  def uvOutput(): NodeMaterialConnectionPoint = js.native
+  def uvOutput: NodeMaterialConnectionPoint = js.native
 }
 

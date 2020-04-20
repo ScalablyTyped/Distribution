@@ -42,38 +42,36 @@ trait _BEHAVIOR_RENDER_INFO extends js.Object
 
 object _BEHAVIOR_RENDER_INFO {
   @scala.inline
-  def BEHAVIORRENDERINFO_3DSURFACE: `2097152` = this.cast(2097152)
+  def BEHAVIORRENDERINFO_3DSURFACE: `2097152` = 2097152.asInstanceOf[`2097152`]
   @scala.inline
-  def BEHAVIORRENDERINFO_ABOVECONTENT: `40` = this.cast(40)
+  def BEHAVIORRENDERINFO_ABOVECONTENT: `40` = 40.asInstanceOf[`40`]
   @scala.inline
-  def BEHAVIORRENDERINFO_AFTERBACKGROUND: `2` = this.cast(2)
+  def BEHAVIORRENDERINFO_AFTERBACKGROUND: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def BEHAVIORRENDERINFO_AFTERCONTENT: `8` = this.cast(8)
+  def BEHAVIORRENDERINFO_AFTERCONTENT: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def BEHAVIORRENDERINFO_AFTERFOREGROUND: `32` = this.cast(32)
+  def BEHAVIORRENDERINFO_AFTERFOREGROUND: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def BEHAVIORRENDERINFO_ALLLAYERS: `255` = this.cast(255)
+  def BEHAVIORRENDERINFO_ALLLAYERS: `255` = 255.asInstanceOf[`255`]
   @scala.inline
-  def BEHAVIORRENDERINFO_BEFOREBACKGROUND: `1` = this.cast(1)
+  def BEHAVIORRENDERINFO_BEFOREBACKGROUND: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def BEHAVIORRENDERINFO_BEFORECONTENT: `4` = this.cast(4)
+  def BEHAVIORRENDERINFO_BEFORECONTENT: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def BEHAVIORRENDERINFO_DISABLEALLLAYERS: `3840` = this.cast(3840)
+  def BEHAVIORRENDERINFO_DISABLEALLLAYERS: `3840` = 3840.asInstanceOf[`3840`]
   @scala.inline
-  def BEHAVIORRENDERINFO_DISABLEBACKGROUND: `256` = this.cast(256)
+  def BEHAVIORRENDERINFO_DISABLEBACKGROUND: `256` = 256.asInstanceOf[`256`]
   @scala.inline
-  def BEHAVIORRENDERINFO_DISABLECONTENT: `1024` = this.cast(1024)
+  def BEHAVIORRENDERINFO_DISABLECONTENT: `1024` = 1024.asInstanceOf[`1024`]
   @scala.inline
-  def BEHAVIORRENDERINFO_DISABLENEGATIVEZ: `512` = this.cast(512)
+  def BEHAVIORRENDERINFO_DISABLENEGATIVEZ: `512` = 512.asInstanceOf[`512`]
   @scala.inline
-  def BEHAVIORRENDERINFO_DISABLEPOSITIVEZ: `2048` = this.cast(2048)
+  def BEHAVIORRENDERINFO_DISABLEPOSITIVEZ: `2048` = 2048.asInstanceOf[`2048`]
   @scala.inline
-  def BEHAVIORRENDERINFO_HITTESTING: `4096` = this.cast(4096)
+  def BEHAVIORRENDERINFO_HITTESTING: `4096` = 4096.asInstanceOf[`4096`]
   @scala.inline
-  def BEHAVIORRENDERINFO_SURFACE: `1048576` = this.cast(1048576)
+  def BEHAVIORRENDERINFO_SURFACE: `1048576` = 1048576.asInstanceOf[`1048576`]
   @scala.inline
-  def BEHAVIOR_RENDER_INFO_Max: `2147483647` = this.cast(2147483647)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def BEHAVIOR_RENDER_INFO_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

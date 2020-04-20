@@ -12,7 +12,6 @@ object PluginConvertTransform {
   @scala.inline
   def apply(convertTransform: Boolean | js.Object): PluginConvertTransform = {
     val __obj = js.Dynamic.literal(convertTransform = convertTransform.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PluginConvertTransform]
   }
 }

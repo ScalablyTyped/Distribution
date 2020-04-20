@@ -14,7 +14,6 @@ object VisitorOptions {
   @scala.inline
   def apply(coverageVariable: String, inputSourceMap: RawSourceMap): VisitorOptions = {
     val __obj = js.Dynamic.literal(coverageVariable = coverageVariable.asInstanceOf[js.Any], inputSourceMap = inputSourceMap.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VisitorOptions]
   }
 }

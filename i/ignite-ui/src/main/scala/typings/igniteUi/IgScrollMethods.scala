@@ -34,7 +34,6 @@ object IgScrollMethods {
     refresh: () => Unit
   ): IgScrollMethods = {
     val __obj = js.Dynamic.literal(changeGlobalLanguage = js.Any.fromFunction0(changeGlobalLanguage), changeGlobalRegional = js.Any.fromFunction0(changeGlobalRegional), changeLocale = js.Any.fromFunction0(changeLocale), destroy = js.Any.fromFunction0(destroy), option = js.Any.fromFunction2(option), refresh = js.Any.fromFunction0(refresh))
-  
     __obj.asInstanceOf[IgScrollMethods]
   }
 }

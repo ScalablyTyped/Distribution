@@ -14,14 +14,12 @@ trait ACTION extends js.Object
 
 object ACTION {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def intercept: typings.pollyjsCore.pollyjsCoreStrings.intercept = "intercept".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.intercept]
   @scala.inline
-  def intercept: typings.pollyjsCore.pollyjsCoreStrings.intercept = this.cast("intercept")
+  def passthrough: typings.pollyjsCore.pollyjsCoreStrings.passthrough = "passthrough".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.passthrough]
   @scala.inline
-  def passthrough: typings.pollyjsCore.pollyjsCoreStrings.passthrough = this.cast("passthrough")
+  def record: typings.pollyjsCore.pollyjsCoreStrings.record = "record".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.record]
   @scala.inline
-  def record: typings.pollyjsCore.pollyjsCoreStrings.record = this.cast("record")
-  @scala.inline
-  def replay: typings.pollyjsCore.pollyjsCoreStrings.replay = this.cast("replay")
+  def replay: typings.pollyjsCore.pollyjsCoreStrings.replay = "replay".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.replay]
 }
 

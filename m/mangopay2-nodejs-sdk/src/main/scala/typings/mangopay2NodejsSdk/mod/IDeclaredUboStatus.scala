@@ -17,7 +17,6 @@ object IDeclaredUboStatus {
   @scala.inline
   def apply(Created: CREATED, Refused: REFUSED, Validated: VALIDATED): IDeclaredUboStatus = {
     val __obj = js.Dynamic.literal(Created = Created.asInstanceOf[js.Any], Refused = Refused.asInstanceOf[js.Any], Validated = Validated.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDeclaredUboStatus]
   }
 }

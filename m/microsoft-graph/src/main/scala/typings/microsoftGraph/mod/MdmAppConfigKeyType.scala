@@ -15,16 +15,14 @@ trait MdmAppConfigKeyType extends js.Object
 
 object MdmAppConfigKeyType {
   @scala.inline
-  def booleanType: typings.microsoftGraph.microsoftGraphStrings.booleanType = this.cast("booleanType")
+  def booleanType: typings.microsoftGraph.microsoftGraphStrings.booleanType = "booleanType".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.booleanType]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def integerType: typings.microsoftGraph.microsoftGraphStrings.integerType = "integerType".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.integerType]
   @scala.inline
-  def integerType: typings.microsoftGraph.microsoftGraphStrings.integerType = this.cast("integerType")
+  def realType: typings.microsoftGraph.microsoftGraphStrings.realType = "realType".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.realType]
   @scala.inline
-  def realType: typings.microsoftGraph.microsoftGraphStrings.realType = this.cast("realType")
+  def stringType: typings.microsoftGraph.microsoftGraphStrings.stringType = "stringType".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.stringType]
   @scala.inline
-  def stringType: typings.microsoftGraph.microsoftGraphStrings.stringType = this.cast("stringType")
-  @scala.inline
-  def tokenType: typings.microsoftGraph.microsoftGraphStrings.tokenType = this.cast("tokenType")
+  def tokenType: typings.microsoftGraph.microsoftGraphStrings.tokenType = "tokenType".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.tokenType]
 }
 

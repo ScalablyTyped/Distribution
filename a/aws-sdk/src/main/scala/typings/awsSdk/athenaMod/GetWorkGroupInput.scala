@@ -16,7 +16,6 @@ object GetWorkGroupInput {
   @scala.inline
   def apply(WorkGroup: WorkGroupName): GetWorkGroupInput = {
     val __obj = js.Dynamic.literal(WorkGroup = WorkGroup.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetWorkGroupInput]
   }
 }

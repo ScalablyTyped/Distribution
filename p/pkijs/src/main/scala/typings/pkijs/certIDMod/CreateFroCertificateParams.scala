@@ -13,7 +13,6 @@ object CreateFroCertificateParams {
   @scala.inline
   def apply(hashAlgorithm: String, issuerCertificate: typings.pkijs.certificateMod.default): CreateFroCertificateParams = {
     val __obj = js.Dynamic.literal(hashAlgorithm = hashAlgorithm.asInstanceOf[js.Any], issuerCertificate = issuerCertificate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateFroCertificateParams]
   }
 }

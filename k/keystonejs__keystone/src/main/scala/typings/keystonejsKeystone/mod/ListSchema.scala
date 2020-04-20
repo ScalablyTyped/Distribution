@@ -1,5 +1,6 @@
 package typings.keystonejsKeystone.mod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,7 @@ trait ListSchema[Fields /* <: String */] extends js.Object {
   var access: js.UndefOr[Access] = js.undefined
   var fields: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ fieldName in Fields ]: @keystonejs/keystone.@keystonejs/keystone.AllFieldsOptions<string>}
-    */ typings.keystonejsKeystone.keystonejsKeystoneStrings.ListSchema with js.Any
+    */ typings.keystonejsKeystone.keystonejsKeystoneStrings.ListSchema with TopLevel[js.Any]
   var hooks: js.UndefOr[Hooks] = js.undefined
   var listAdapterClass: js.UndefOr[js.Any] = js.undefined
   var plugins: js.UndefOr[js.Array[Plugin]] = js.undefined
@@ -22,7 +23,7 @@ object ListSchema {
   def apply[Fields /* <: String */](
     fields: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ fieldName in Fields ]: @keystonejs/keystone.@keystonejs/keystone.AllFieldsOptions<string>}
-    */ typings.keystonejsKeystone.keystonejsKeystoneStrings.ListSchema with js.Any,
+    */ typings.keystonejsKeystone.keystonejsKeystoneStrings.ListSchema with TopLevel[js.Any],
     access: Access = null,
     hooks: Hooks = null,
     listAdapterClass: js.Any = null,

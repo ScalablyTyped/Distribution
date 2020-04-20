@@ -14,7 +14,6 @@ object IStandardKernel {
   @scala.inline
   def apply(connectionProviderIds: js.Array[String], displayName: String, name: String): IStandardKernel = {
     val __obj = js.Dynamic.literal(connectionProviderIds = connectionProviderIds.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IStandardKernel]
   }
 }

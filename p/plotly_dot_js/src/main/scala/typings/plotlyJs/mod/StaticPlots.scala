@@ -12,7 +12,6 @@ object StaticPlots {
   @scala.inline
   def apply(resize: Root => Unit): StaticPlots = {
     val __obj = js.Dynamic.literal(resize = js.Any.fromFunction1(resize))
-  
     __obj.asInstanceOf[StaticPlots]
   }
 }

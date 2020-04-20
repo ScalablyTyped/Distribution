@@ -13,7 +13,7 @@ trait MapConstructor
       (/* entries */ js.Array[js.Tuple2[js.Object, js.Object]]) | (/* iterable */ Iterable[js.Tuple2[js.Object, js.Object]]), 
       Map[js.Object, js.Object]
     ] {
-  @JSName(scala.scalajs.js.Symbol.species)
+  @JSName(js.Symbol.species)
   val species: MapConstructor = js.native
 }
 

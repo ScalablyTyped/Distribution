@@ -20,7 +20,6 @@ object Authorization {
   @scala.inline
   def apply(CdnIdentifierSecret: string, SecretsRoleArn: string): Authorization = {
     val __obj = js.Dynamic.literal(CdnIdentifierSecret = CdnIdentifierSecret.asInstanceOf[js.Any], SecretsRoleArn = SecretsRoleArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Authorization]
   }
 }

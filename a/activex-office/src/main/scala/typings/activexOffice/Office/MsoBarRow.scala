@@ -14,10 +14,8 @@ trait MsoBarRow extends js.Object
 
 object MsoBarRow {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoBarRowFirst: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def msoBarRowFirst: `0` = this.cast(0)
-  @scala.inline
-  def msoBarRowLast: `-1` = this.cast(-1)
+  def msoBarRowLast: `-1` = -1.asInstanceOf[`-1`]
 }
 

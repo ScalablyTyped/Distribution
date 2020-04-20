@@ -13,7 +13,6 @@ object AnonLineWidth {
   @scala.inline
   def apply(lineWidth: Double, strokeStyle: String): AnonLineWidth = {
     val __obj = js.Dynamic.literal(lineWidth = lineWidth.asInstanceOf[js.Any], strokeStyle = strokeStyle.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLineWidth]
   }
 }

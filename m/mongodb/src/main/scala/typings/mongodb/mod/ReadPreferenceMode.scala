@@ -15,16 +15,14 @@ trait ReadPreferenceMode extends ReadPreferenceOrMode
 
 object ReadPreferenceMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def nearest: typings.mongodb.mongodbStrings.nearest = "nearest".asInstanceOf[typings.mongodb.mongodbStrings.nearest]
   @scala.inline
-  def nearest: typings.mongodb.mongodbStrings.nearest = this.cast("nearest")
+  def primary: typings.mongodb.mongodbStrings.primary = "primary".asInstanceOf[typings.mongodb.mongodbStrings.primary]
   @scala.inline
-  def primary: typings.mongodb.mongodbStrings.primary = this.cast("primary")
+  def primaryPreferred: typings.mongodb.mongodbStrings.primaryPreferred = "primaryPreferred".asInstanceOf[typings.mongodb.mongodbStrings.primaryPreferred]
   @scala.inline
-  def primaryPreferred: typings.mongodb.mongodbStrings.primaryPreferred = this.cast("primaryPreferred")
+  def secondary: typings.mongodb.mongodbStrings.secondary = "secondary".asInstanceOf[typings.mongodb.mongodbStrings.secondary]
   @scala.inline
-  def secondary: typings.mongodb.mongodbStrings.secondary = this.cast("secondary")
-  @scala.inline
-  def secondaryPreferred: typings.mongodb.mongodbStrings.secondaryPreferred = this.cast("secondaryPreferred")
+  def secondaryPreferred: typings.mongodb.mongodbStrings.secondaryPreferred = "secondaryPreferred".asInstanceOf[typings.mongodb.mongodbStrings.secondaryPreferred]
 }
 

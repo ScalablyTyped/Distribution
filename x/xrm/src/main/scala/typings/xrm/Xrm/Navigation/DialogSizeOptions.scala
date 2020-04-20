@@ -19,7 +19,6 @@ object DialogSizeOptions {
   @scala.inline
   def apply(height: Double, width: Double): DialogSizeOptions = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DialogSizeOptions]
   }
 }

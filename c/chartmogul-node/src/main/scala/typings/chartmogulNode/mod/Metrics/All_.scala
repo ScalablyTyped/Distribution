@@ -13,7 +13,6 @@ object All_ {
   @scala.inline
   def apply(entries: AnonArpa): All_ = {
     val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[All_]
   }
 }

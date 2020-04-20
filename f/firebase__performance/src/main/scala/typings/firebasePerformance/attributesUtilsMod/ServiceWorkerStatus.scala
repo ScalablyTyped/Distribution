@@ -18,14 +18,12 @@ trait ServiceWorkerStatus extends js.Object
 
 object ServiceWorkerStatus {
   @scala.inline
-  def CONTROLLED: `2` = this.cast(2)
+  def CONTROLLED: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def UNCONTROLLED: `3` = this.cast(3)
+  def UNCONTROLLED: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def UNKNOWN: `0` = this.cast(0)
+  def UNKNOWN: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def UNSUPPORTED: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UNSUPPORTED: `1` = 1.asInstanceOf[`1`]
 }
 

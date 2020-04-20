@@ -12,7 +12,6 @@ object AnonReplacementroom {
   @scala.inline
   def apply(replacement_room: js.Object): AnonReplacementroom = {
     val __obj = js.Dynamic.literal(replacement_room = replacement_room.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonReplacementroom]
   }
 }

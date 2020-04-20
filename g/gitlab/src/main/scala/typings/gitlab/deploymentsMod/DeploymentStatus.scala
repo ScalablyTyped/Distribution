@@ -15,16 +15,14 @@ trait DeploymentStatus extends js.Object
 
 object DeploymentStatus {
   @scala.inline
-  def canceled: typings.gitlab.gitlabStrings.canceled = this.cast("canceled")
+  def canceled: typings.gitlab.gitlabStrings.canceled = "canceled".asInstanceOf[typings.gitlab.gitlabStrings.canceled]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def created: typings.gitlab.gitlabStrings.created = "created".asInstanceOf[typings.gitlab.gitlabStrings.created]
   @scala.inline
-  def created: typings.gitlab.gitlabStrings.created = this.cast("created")
+  def failed: typings.gitlab.gitlabStrings.failed = "failed".asInstanceOf[typings.gitlab.gitlabStrings.failed]
   @scala.inline
-  def failed: typings.gitlab.gitlabStrings.failed = this.cast("failed")
+  def running: typings.gitlab.gitlabStrings.running = "running".asInstanceOf[typings.gitlab.gitlabStrings.running]
   @scala.inline
-  def running: typings.gitlab.gitlabStrings.running = this.cast("running")
-  @scala.inline
-  def success: typings.gitlab.gitlabStrings.success = this.cast("success")
+  def success: typings.gitlab.gitlabStrings.success = "success".asInstanceOf[typings.gitlab.gitlabStrings.success]
 }
 

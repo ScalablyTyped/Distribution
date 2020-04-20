@@ -26,7 +26,6 @@ object AnonDateTime {
     String: String
   ): AnonDateTime = {
     val __obj = js.Dynamic.literal(Boolean = Boolean.asInstanceOf[js.Any], DateTime = DateTime.asInstanceOf[js.Any], Float = Float.asInstanceOf[js.Any], ID = ID.asInstanceOf[js.Any], Int = Int.asInstanceOf[js.Any], Json = Json.asInstanceOf[js.Any], String = String.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDateTime]
   }
 }

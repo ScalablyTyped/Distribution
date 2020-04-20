@@ -45,7 +45,6 @@ object Methods {
     update: (ZendeskID, UpdatePayload, ZendeskCallback[_, _]) => ResponsePayload
   ): Methods = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction2(create), getComment = js.Any.fromFunction3(getComment), getRequest = js.Any.fromFunction2(getRequest), list = js.Any.fromFunction1(list), listByOrganization = js.Any.fromFunction2(listByOrganization), listByUser = js.Any.fromFunction2(listByUser), listCCD = js.Any.fromFunction2(listCCD), listComments = js.Any.fromFunction2(listComments), listOpen = js.Any.fromFunction1(listOpen), listSolved = js.Any.fromFunction1(listSolved), requestAll = js.Any.fromFunction3(requestAll), update = js.Any.fromFunction3(update))
-  
     __obj.asInstanceOf[Methods]
   }
 }

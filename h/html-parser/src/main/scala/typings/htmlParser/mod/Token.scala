@@ -13,12 +13,10 @@ trait Token extends js.Object
 
 object Token {
   @scala.inline
-  def Greaterthansign: typings.htmlParser.htmlParserStrings.Greaterthansign = this.cast(">")
+  def Greaterthansign: typings.htmlParser.htmlParserStrings.Greaterthansign = ">".asInstanceOf[typings.htmlParser.htmlParserStrings.Greaterthansign]
   @scala.inline
-  def QuestionmarkGreaterthansign: typings.htmlParser.htmlParserStrings.QuestionmarkGreaterthansign = this.cast("?>")
+  def QuestionmarkGreaterthansign: typings.htmlParser.htmlParserStrings.QuestionmarkGreaterthansign = "?>".asInstanceOf[typings.htmlParser.htmlParserStrings.QuestionmarkGreaterthansign]
   @scala.inline
-  def SlashGreaterthansign: typings.htmlParser.htmlParserStrings.SlashGreaterthansign = this.cast("/>")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SlashGreaterthansign: typings.htmlParser.htmlParserStrings.SlashGreaterthansign = "/>".asInstanceOf[typings.htmlParser.htmlParserStrings.SlashGreaterthansign]
 }
 

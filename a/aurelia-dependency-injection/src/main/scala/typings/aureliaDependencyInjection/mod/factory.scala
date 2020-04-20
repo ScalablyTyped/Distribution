@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object factory extends js.Object {
   def apply[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](keyValue: js.Any): js.Function3[
-    /* target */ (DependencyCtor[TBase, TImpl, TArgs]) with AnonInject[TArgs], 
+    /* target */ (DependencyCtor[TBase, TImpl, TArgs]) with (AnonInject[TArgs, TBase]), 
     /* _key */ js.Any, 
     /* index */ Double, 
     Unit

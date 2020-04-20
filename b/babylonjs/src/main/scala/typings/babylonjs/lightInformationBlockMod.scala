@@ -28,19 +28,19 @@ object lightInformationBlockMod extends js.Object {
     /**
       * Gets the direction output component
       */
-    def color(): NodeMaterialConnectionPoint = js.native
+    def color: NodeMaterialConnectionPoint = js.native
     /**
       * Gets the direction output component
       */
-    def direction(): NodeMaterialConnectionPoint = js.native
+    def direction: NodeMaterialConnectionPoint = js.native
     /**
       * Gets the direction output component
       */
-    def intensity(): NodeMaterialConnectionPoint = js.native
+    def intensity: NodeMaterialConnectionPoint = js.native
     /**
       * Gets the world position input component
       */
-    def worldPosition(): NodeMaterialConnectionPoint = js.native
+    def worldPosition: NodeMaterialConnectionPoint = js.native
   }
   
 }

@@ -14,7 +14,6 @@ object AnonDecimal {
   @scala.inline
   def apply(decimal: String, thousands: String, thousandsSize: Double): AnonDecimal = {
     val __obj = js.Dynamic.literal(decimal = decimal.asInstanceOf[js.Any], thousands = thousands.asInstanceOf[js.Any], thousandsSize = thousandsSize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDecimal]
   }
 }

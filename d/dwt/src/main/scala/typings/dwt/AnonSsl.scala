@@ -17,7 +17,6 @@ object AnonSsl {
   @scala.inline
   def apply(ssl: Boolean): AnonSsl = {
     val __obj = js.Dynamic.literal(ssl = ssl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSsl]
   }
 }

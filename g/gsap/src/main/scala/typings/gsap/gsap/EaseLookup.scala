@@ -12,7 +12,6 @@ object EaseLookup {
   @scala.inline
   def apply(find: String => Ease): EaseLookup = {
     val __obj = js.Dynamic.literal(find = js.Any.fromFunction1(find))
-  
     __obj.asInstanceOf[EaseLookup]
   }
 }

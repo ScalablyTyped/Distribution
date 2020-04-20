@@ -22,7 +22,6 @@ object Path {
     vertice: js.Array[Document[A | B | V]]
   ): Path[A, B, E, V] = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], edges = edges.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], vertice = vertice.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Path[A, B, E, V]]
   }
 }

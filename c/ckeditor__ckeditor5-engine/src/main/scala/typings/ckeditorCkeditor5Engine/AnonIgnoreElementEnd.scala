@@ -16,7 +16,6 @@ object AnonIgnoreElementEnd {
   @scala.inline
   def apply(ignoreElementEnd: Boolean, shallow: Boolean, singleCharacters: Boolean, startPosition: Position): AnonIgnoreElementEnd = {
     val __obj = js.Dynamic.literal(ignoreElementEnd = ignoreElementEnd.asInstanceOf[js.Any], shallow = shallow.asInstanceOf[js.Any], singleCharacters = singleCharacters.asInstanceOf[js.Any], startPosition = startPosition.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIgnoreElementEnd]
   }
 }

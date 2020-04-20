@@ -23,7 +23,6 @@ object BeforeUpdateEvent {
   @scala.inline
   def apply(name: String, source: js.Any, timestamp: Double): BeforeUpdateEvent = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BeforeUpdateEvent]
   }
 }

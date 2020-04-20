@@ -12,7 +12,6 @@ object TeamSettingsDaysOffPatch {
   @scala.inline
   def apply(daysOff: js.Array[DateRange]): TeamSettingsDaysOffPatch = {
     val __obj = js.Dynamic.literal(daysOff = daysOff.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TeamSettingsDaysOffPatch]
   }
 }

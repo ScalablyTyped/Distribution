@@ -45,7 +45,6 @@ object IInspectable {
     standby: Boolean
   ): IInspectable = {
     val __obj = js.Dynamic.literal(cleared = cleared.asInstanceOf[js.Any], disposed = disposed.asInstanceOf[js.Any], inspected = inspected.asInstanceOf[js.Any], isDisposed = isDisposed.asInstanceOf[js.Any], standby = standby.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IInspectable]
   }
 }

@@ -15,7 +15,6 @@ object LogGroupEventRecord {
   @scala.inline
   def apply(id: String, message: String, timestamp: Double): LogGroupEventRecord = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LogGroupEventRecord]
   }
 }

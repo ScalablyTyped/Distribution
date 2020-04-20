@@ -28,7 +28,7 @@ class StreamingRecognitionResult () extends IStreamingRecognitionResult {
   var isFinal_StreamingRecognitionResult: Boolean = js.native
   /** StreamingRecognitionResult messageType. */
   @JSName("messageType")
-  var messageType_StreamingRecognitionResult: MessageType | String = js.native
+  var messageType_StreamingRecognitionResult: MessageType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.StreamingRecognitionResult.MessageType * / any */ String) = js.native
   /** StreamingRecognitionResult speechWordInfo. */
   @JSName("speechWordInfo")
   var speechWordInfo_StreamingRecognitionResult: js.Array[ISpeechWordInfo] = js.native

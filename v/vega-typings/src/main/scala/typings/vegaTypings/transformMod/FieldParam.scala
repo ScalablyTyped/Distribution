@@ -12,7 +12,6 @@ object FieldParam {
   @scala.inline
   def apply(field: String): FieldParam = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FieldParam]
   }
 }

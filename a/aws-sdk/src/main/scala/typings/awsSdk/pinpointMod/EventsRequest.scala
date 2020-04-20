@@ -16,7 +16,6 @@ object EventsRequest {
   @scala.inline
   def apply(BatchItem: MapOfEventsBatch): EventsRequest = {
     val __obj = js.Dynamic.literal(BatchItem = BatchItem.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventsRequest]
   }
 }

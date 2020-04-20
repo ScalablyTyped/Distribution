@@ -14,7 +14,6 @@ object AnonPut {
   @scala.inline
   def apply[DataType](put: DisallowArray[Saveable[DataType]] => Unit): AnonPut[DataType] = {
     val __obj = js.Dynamic.literal(put = js.Any.fromFunction1(put))
-  
     __obj.asInstanceOf[AnonPut[DataType]]
   }
 }

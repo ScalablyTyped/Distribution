@@ -168,7 +168,7 @@ object backgroundMaterialMod extends js.Object {
       * (This does not account for contrast color grading and color curves as they are considered post effect and not directly
       * part of lighting setup.)
       */
-    def _perceptualColor(): Nullable[Color3] = js.native
+    def _perceptualColor: Nullable[Color3] = js.native
     def _perceptualColor(value: Nullable[Color3]): js.Any = js.native
     /**
       * Build the uniform buffer used in the material.
@@ -180,7 +180,7 @@ object backgroundMaterialMod extends js.Object {
       * These are similar to controls found in many professional imaging or colorist software. The global controls are applied to the entire image. For advanced tuning, extra controls are provided to adjust the shadow, midtone and highlight areas of the image;
       * corresponding to low luminance, medium luminance, and high luminance areas respectively.
       */
-    def cameraColorCurves(): Nullable[ColorCurves] = js.native
+    def cameraColorCurves: Nullable[ColorCurves] = js.native
     /**
       * The color grading curves provide additional color adjustmnent that is applied after any color grading transform (3D LUT).
       * They allow basic adjustment of saturation and small exposure adjustments, along with color filter tinting to provide white balance adjustment or more stylistic effects.
@@ -191,7 +191,7 @@ object backgroundMaterialMod extends js.Object {
     /**
       * Gets wether the color curves effect is enabled.
       */
-    def cameraColorCurvesEnabled(): Boolean = js.native
+    def cameraColorCurvesEnabled: Boolean = js.native
     /**
       * Sets wether the color curves effect is enabled.
       */
@@ -199,7 +199,7 @@ object backgroundMaterialMod extends js.Object {
     /**
       * Gets wether the color grading effect is enabled.
       */
-    def cameraColorGradingEnabled(): Boolean = js.native
+    def cameraColorGradingEnabled: Boolean = js.native
     /**
       * Gets wether the color grading effect is enabled.
       */
@@ -207,7 +207,7 @@ object backgroundMaterialMod extends js.Object {
     /**
       * Gets the Color Grading 2D Lookup Texture.
       */
-    def cameraColorGradingTexture(): Nullable[BaseTexture] = js.native
+    def cameraColorGradingTexture: Nullable[BaseTexture] = js.native
     /**
       * Sets the Color Grading 2D Lookup Texture.
       */
@@ -215,7 +215,7 @@ object backgroundMaterialMod extends js.Object {
     /**
       * Gets The camera contrast used on this material.
       */
-    def cameraContrast(): float = js.native
+    def cameraContrast: float = js.native
     /**
       * Sets The camera contrast used on this material.
       */
@@ -225,7 +225,7 @@ object backgroundMaterialMod extends js.Object {
       * This property is here and not in the camera to allow controlling exposure without full screen post process.
       * This corresponds to a photographic exposure.
       */
-    def cameraExposure(): float = js.native
+    def cameraExposure: float = js.native
     /**
       * The camera exposure used on this material.
       * This property is here and not in the camera to allow controlling exposure without full screen post process.
@@ -235,7 +235,7 @@ object backgroundMaterialMod extends js.Object {
     /**
       * Gets wether tonemapping is enabled or not.
       */
-    def cameraToneMappingEnabled(): Boolean = js.native
+    def cameraToneMappingEnabled: Boolean = js.native
     /**
       * Sets wether tonemapping is enabled or not
       */
@@ -245,12 +245,12 @@ object backgroundMaterialMod extends js.Object {
       * Best used when trying to implement visual zoom effects like fish-eye or binoculars while not adjusting camera fov.
       * Recommended to be keep at 1.0 except for special cases.
       */
-    def fovMultiplier(): Double = js.native
+    def fovMultiplier: Double = js.native
     def fovMultiplier(value: Double): js.Any = js.native
     /**
       * Gets the image processing configuration used either in this material.
       */
-    def imageProcessingConfiguration(): Nullable[ImageProcessingConfiguration] = js.native
+    def imageProcessingConfiguration: Nullable[ImageProcessingConfiguration] = js.native
     /**
       * Sets the Default image processing configuration used either in the this material.
       *
@@ -270,13 +270,13 @@ object backgroundMaterialMod extends js.Object {
       * Defines the level of the highliights (highlight area of the reflection map) in order to help scaling the colors.
       * The primary color is used at the level chosen to define what the white area would look.
       */
-    def primaryColorHighlightLevel(): float = js.native
+    def primaryColorHighlightLevel: float = js.native
     def primaryColorHighlightLevel(value: float): js.Any = js.native
     /**
       * Defines the level of the shadows (dark area of the reflection map) in order to help scaling the colors.
       * The color opposite to the primary color is used at the level chosen to define what the black area would look.
       */
-    def primaryColorShadowLevel(): float = js.native
+    def primaryColorShadowLevel: float = js.native
     def primaryColorShadowLevel(value: float): js.Any = js.native
     /**
       * Sets the reflection reflectance fresnel values according to the default standard

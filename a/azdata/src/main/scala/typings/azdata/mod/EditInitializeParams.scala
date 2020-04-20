@@ -23,7 +23,6 @@ object EditInitializeParams {
     schemaName: String
   ): EditInitializeParams = {
     val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any], objectName = objectName.asInstanceOf[js.Any], objectType = objectType.asInstanceOf[js.Any], ownerUri = ownerUri.asInstanceOf[js.Any], queryString = queryString.asInstanceOf[js.Any], schemaName = schemaName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EditInitializeParams]
   }
 }

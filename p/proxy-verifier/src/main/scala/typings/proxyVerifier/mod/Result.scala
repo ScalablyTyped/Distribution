@@ -17,13 +17,11 @@ object Result {
   @scala.inline
   def WorkingResult(ok: `true`): Result = {
     val __obj = js.Dynamic.literal(ok = ok.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Result]
   }
   @scala.inline
   def NotWorkingResult(error: AnonCode, ok: `false`): Result = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Result]
   }
 }

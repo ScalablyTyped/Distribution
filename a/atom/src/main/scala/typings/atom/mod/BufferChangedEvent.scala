@@ -31,7 +31,6 @@ object BufferChangedEvent {
     oldText: String
   ): BufferChangedEvent = {
     val __obj = js.Dynamic.literal(changes = changes.asInstanceOf[js.Any], newRange = newRange.asInstanceOf[js.Any], newText = newText.asInstanceOf[js.Any], oldRange = oldRange.asInstanceOf[js.Any], oldText = oldText.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BufferChangedEvent]
   }
 }

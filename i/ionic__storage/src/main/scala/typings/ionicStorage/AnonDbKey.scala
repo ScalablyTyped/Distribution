@@ -15,7 +15,6 @@ object AnonDbKey {
   @scala.inline
   def apply(dbKey: String, driverOrder: js.Array[String], name: String, storeName: String): AnonDbKey = {
     val __obj = js.Dynamic.literal(dbKey = dbKey.asInstanceOf[js.Any], driverOrder = driverOrder.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], storeName = storeName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDbKey]
   }
 }

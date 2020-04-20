@@ -15,7 +15,6 @@ object InetChecksiteData {
   @scala.inline
   def apply(ms: Double, ok: Boolean, status: Double, url: String): InetChecksiteData = {
     val __obj = js.Dynamic.literal(ms = ms.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InetChecksiteData]
   }
 }

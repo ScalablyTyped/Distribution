@@ -45,7 +45,6 @@ object PlaceAutocompleteResult {
     types: js.Array[AddressType]
   ): PlaceAutocompleteResult = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], matched_substrings = matched_substrings.asInstanceOf[js.Any], place_id = place_id.asInstanceOf[js.Any], structured_formatting = structured_formatting.asInstanceOf[js.Any], terms = terms.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PlaceAutocompleteResult]
   }
 }

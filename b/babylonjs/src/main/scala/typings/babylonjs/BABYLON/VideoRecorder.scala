@@ -32,7 +32,7 @@ class VideoRecorder protected () extends js.Object {
   /**
     * True when a recording is already in progress.
     */
-  def isRecording(): Boolean = js.native
+  def isRecording: Boolean = js.native
   /**
     * Starts recording the canvas for a max duration specified in parameters.
     * @param fileName Defines the name of the file to be downloaded when the recording stop.

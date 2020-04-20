@@ -12,7 +12,6 @@ object ListDatabasesResult {
   @scala.inline
   def apply(databaseNames: js.Array[String]): ListDatabasesResult = {
     val __obj = js.Dynamic.literal(databaseNames = databaseNames.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListDatabasesResult]
   }
 }

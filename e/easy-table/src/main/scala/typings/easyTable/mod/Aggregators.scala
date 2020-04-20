@@ -28,7 +28,6 @@ object Aggregators {
   @scala.inline
   def apply(avg: js.Any, printer: (String, CellPrinter[js.Any]) => CellPrinter[js.Any], sum: js.Any): Aggregators = {
     val __obj = js.Dynamic.literal(avg = avg.asInstanceOf[js.Any], printer = js.Any.fromFunction2(printer), sum = sum.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Aggregators]
   }
 }

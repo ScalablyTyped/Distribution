@@ -13,7 +13,6 @@ object AnonLocaleRequireable {
   @scala.inline
   def apply(locale: Requireable[js.Object]): AnonLocaleRequireable = {
     val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLocaleRequireable]
   }
 }

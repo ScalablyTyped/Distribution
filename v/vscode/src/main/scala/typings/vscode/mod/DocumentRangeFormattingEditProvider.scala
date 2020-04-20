@@ -28,7 +28,6 @@ object DocumentRangeFormattingEditProvider {
     provideDocumentRangeFormattingEdits: (TextDocument, Range, FormattingOptions, CancellationToken) => ProviderResult[js.Array[TextEdit]]
   ): DocumentRangeFormattingEditProvider = {
     val __obj = js.Dynamic.literal(provideDocumentRangeFormattingEdits = js.Any.fromFunction4(provideDocumentRangeFormattingEdits))
-  
     __obj.asInstanceOf[DocumentRangeFormattingEditProvider]
   }
 }

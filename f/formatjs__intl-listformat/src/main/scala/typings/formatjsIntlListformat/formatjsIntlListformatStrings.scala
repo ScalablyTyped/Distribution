@@ -33,7 +33,7 @@ object formatjsIntlListformatStrings {
   sealed trait unit extends js.Object
   
   @scala.inline
-  def `best fit`: `best fit` = "best fit".asInstanceOf[`best fit`]
+  def `best fit`: `best fit` = ("best fit").asInstanceOf[`best fit`]
   @scala.inline
   def conjunction: conjunction = "conjunction".asInstanceOf[conjunction]
   @scala.inline

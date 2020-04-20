@@ -20,7 +20,6 @@ object RegexPatternSetUpdate {
   @scala.inline
   def apply(Action: ChangeAction, RegexPatternString: RegexPatternString): RegexPatternSetUpdate = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], RegexPatternString = RegexPatternString.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RegexPatternSetUpdate]
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactReduxToastrProps {
   @scala.inline
-  def ReactReduxToastrProps: ReduxToastrProps.type = typings.reactReduxToastr.mod.ReduxToastrProps
+  def ReactReduxToastrProps: ReduxToastrProps.type = ReduxToastrProps
   type ReactReduxToastrProps = ReduxToastrProps
 }
 

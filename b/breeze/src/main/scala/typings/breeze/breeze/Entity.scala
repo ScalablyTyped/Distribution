@@ -13,7 +13,6 @@ object Entity {
   @scala.inline
   def apply(entityAspect: EntityAspect, entityType: EntityType): Entity = {
     val __obj = js.Dynamic.literal(entityAspect = entityAspect.asInstanceOf[js.Any], entityType = entityType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Entity]
   }
 }

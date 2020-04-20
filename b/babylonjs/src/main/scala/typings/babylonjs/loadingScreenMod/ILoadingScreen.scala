@@ -32,7 +32,6 @@ object ILoadingScreen {
     loadingUIText: String
   ): ILoadingScreen = {
     val __obj = js.Dynamic.literal(displayLoadingUI = js.Any.fromFunction0(displayLoadingUI), hideLoadingUI = js.Any.fromFunction0(hideLoadingUI), loadingUIBackgroundColor = loadingUIBackgroundColor.asInstanceOf[js.Any], loadingUIText = loadingUIText.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ILoadingScreen]
   }
 }

@@ -44,7 +44,6 @@ object UrlMapsResource {
     validate: AnonQuotaUserUrlMap => Request_[UrlMapsValidateResponse]
   ): UrlMapsResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), invalidateCache = js.Any.fromFunction1(invalidateCache), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update), validate = js.Any.fromFunction1(validate))
-  
     __obj.asInstanceOf[UrlMapsResource]
   }
 }

@@ -12,7 +12,6 @@ object TabInformation {
   @scala.inline
   def apply(teamTabs: js.Array[TabInstance]): TabInformation = {
     val __obj = js.Dynamic.literal(teamTabs = teamTabs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TabInformation]
   }
 }

@@ -12,7 +12,6 @@ object AnonTransparent {
   @scala.inline
   def apply(transparent: Boolean): AnonTransparent = {
     val __obj = js.Dynamic.literal(transparent = transparent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTransparent]
   }
 }

@@ -20,7 +20,6 @@ object StopFleetActionsInput {
   @scala.inline
   def apply(Actions: FleetActionList, FleetId: FleetIdOrArn): StopFleetActionsInput = {
     val __obj = js.Dynamic.literal(Actions = Actions.asInstanceOf[js.Any], FleetId = FleetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopFleetActionsInput]
   }
 }

@@ -14,7 +14,6 @@ object LocalCityResult {
   @scala.inline
   def apply(center: Point, level: Double, name: String): LocalCityResult = {
     val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LocalCityResult]
   }
 }

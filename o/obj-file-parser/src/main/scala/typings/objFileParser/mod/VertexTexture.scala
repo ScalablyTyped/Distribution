@@ -14,7 +14,6 @@ object VertexTexture {
   @scala.inline
   def apply(u: Double, v: Double, w: Double): VertexTexture = {
     val __obj = js.Dynamic.literal(u = u.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VertexTexture]
   }
 }

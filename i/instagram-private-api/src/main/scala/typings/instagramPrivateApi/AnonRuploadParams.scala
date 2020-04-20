@@ -14,7 +14,6 @@ object AnonRuploadParams {
   @scala.inline
   def apply(name: js.Any, ruploadParams: js.Any, waterfallId: js.Any): AnonRuploadParams = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], ruploadParams = ruploadParams.asInstanceOf[js.Any], waterfallId = waterfallId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRuploadParams]
   }
 }

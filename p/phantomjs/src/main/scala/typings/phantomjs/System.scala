@@ -23,7 +23,6 @@ object System {
     platform: String
   ): System = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[System]
   }
 }

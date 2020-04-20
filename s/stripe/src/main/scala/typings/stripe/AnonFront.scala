@@ -19,7 +19,6 @@ object AnonFront {
   @scala.inline
   def apply(back: String, front: String): AnonFront = {
     val __obj = js.Dynamic.literal(back = back.asInstanceOf[js.Any], front = front.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFront]
   }
 }

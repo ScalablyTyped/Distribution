@@ -20,7 +20,6 @@ object SupplementaryFeature {
   @scala.inline
   def apply(Name: Name, Value: Value): SupplementaryFeature = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SupplementaryFeature]
   }
 }

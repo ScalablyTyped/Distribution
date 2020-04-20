@@ -13,12 +13,10 @@ trait ComparisonResult extends js.Object
 
 object ComparisonResult {
   @scala.inline
-  def `-1`: typings.jsQuantities.jsQuantitiesNumbers.`-1` = this.cast(-1)
+  def `-1`: typings.jsQuantities.jsQuantitiesNumbers.`-1` = -1.asInstanceOf[typings.jsQuantities.jsQuantitiesNumbers.`-1`]
   @scala.inline
-  def `0`: typings.jsQuantities.jsQuantitiesNumbers.`0` = this.cast(0)
+  def `0`: typings.jsQuantities.jsQuantitiesNumbers.`0` = 0.asInstanceOf[typings.jsQuantities.jsQuantitiesNumbers.`0`]
   @scala.inline
-  def `1`: typings.jsQuantities.jsQuantitiesNumbers.`1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `1`: typings.jsQuantities.jsQuantitiesNumbers.`1` = 1.asInstanceOf[typings.jsQuantities.jsQuantitiesNumbers.`1`]
 }
 

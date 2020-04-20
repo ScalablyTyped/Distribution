@@ -14,7 +14,6 @@ object AnonValues {
   @scala.inline
   def apply[T /* <: ReadonlyPartialJSONValue */](ids: js.Array[String], values: js.Array[T]): AnonValues[T] = {
     val __obj = js.Dynamic.literal(ids = ids.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonValues[T]]
   }
 }

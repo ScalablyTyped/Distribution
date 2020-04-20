@@ -12,7 +12,6 @@ object PruneNetworksInfo {
   @scala.inline
   def apply(NetworksDeleted: js.Array[String]): PruneNetworksInfo = {
     val __obj = js.Dynamic.literal(NetworksDeleted = NetworksDeleted.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PruneNetworksInfo]
   }
 }

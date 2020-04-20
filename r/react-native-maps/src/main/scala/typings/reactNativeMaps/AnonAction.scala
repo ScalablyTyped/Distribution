@@ -14,7 +14,6 @@ object AnonAction {
   @scala.inline
   def apply(action: `marker-press`, id: String): AnonAction = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAction]
   }
 }

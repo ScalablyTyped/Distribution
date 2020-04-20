@@ -16,7 +16,6 @@ object DescribeAgentRequest {
   @scala.inline
   def apply(AgentArn: AgentArn): DescribeAgentRequest = {
     val __obj = js.Dynamic.literal(AgentArn = AgentArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeAgentRequest]
   }
 }

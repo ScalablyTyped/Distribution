@@ -14,7 +14,6 @@ object AnonCMapData {
   @scala.inline
   def apply(cMapData: js.Any, compressionType: CMapCompressionType): AnonCMapData = {
     val __obj = js.Dynamic.literal(cMapData = cMapData.asInstanceOf[js.Any], compressionType = compressionType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCMapData]
   }
 }

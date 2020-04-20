@@ -16,7 +16,6 @@ object DeleteAddressBookRequest {
   @scala.inline
   def apply(AddressBookArn: Arn): DeleteAddressBookRequest = {
     val __obj = js.Dynamic.literal(AddressBookArn = AddressBookArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteAddressBookRequest]
   }
 }

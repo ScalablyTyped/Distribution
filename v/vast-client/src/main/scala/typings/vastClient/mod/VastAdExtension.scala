@@ -13,7 +13,6 @@ object VastAdExtension {
   @scala.inline
   def apply(attributes: VastAdAttributes, children: js.Array[VastAdExtensionChild]): VastAdExtension = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VastAdExtension]
   }
 }

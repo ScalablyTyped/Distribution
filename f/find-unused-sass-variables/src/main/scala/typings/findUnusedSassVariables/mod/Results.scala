@@ -15,7 +15,6 @@ object Results {
   @scala.inline
   def apply(total: Double, unused: js.Array[String]): Results = {
     val __obj = js.Dynamic.literal(total = total.asInstanceOf[js.Any], unused = unused.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Results]
   }
 }

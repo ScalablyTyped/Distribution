@@ -15,7 +15,6 @@ object AnonChildrenValidator {
   @scala.inline
   def apply(children: Validator[js.Function1[/* props */ ScrollSyncChildProps, ReactNode]]): AnonChildrenValidator = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonChildrenValidator]
   }
 }

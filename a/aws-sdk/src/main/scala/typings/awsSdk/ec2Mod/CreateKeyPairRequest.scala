@@ -14,13 +14,22 @@ trait CreateKeyPairRequest extends js.Object {
     * A unique name for the key pair. Constraints: Up to 255 ASCII characters
     */
   var KeyName: String = js.native
+  /**
+    * The tags to apply to the new key pair.
+    */
+  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.native
 }
 
 object CreateKeyPairRequest {
   @scala.inline
-  def apply(KeyName: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): CreateKeyPairRequest = {
+  def apply(
+    KeyName: String,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    TagSpecifications: TagSpecificationList = null
+  ): CreateKeyPairRequest = {
     val __obj = js.Dynamic.literal(KeyName = KeyName.asInstanceOf[js.Any])
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (TagSpecifications != null) __obj.updateDynamic("TagSpecifications")(TagSpecifications.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateKeyPairRequest]
   }
 }

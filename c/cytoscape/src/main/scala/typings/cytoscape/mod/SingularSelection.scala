@@ -24,7 +24,6 @@ object SingularSelection {
   @scala.inline
   def apply(selectable: () => Boolean, selected: () => Boolean): SingularSelection = {
     val __obj = js.Dynamic.literal(selectable = js.Any.fromFunction0(selectable), selected = js.Any.fromFunction0(selected))
-  
     __obj.asInstanceOf[SingularSelection]
   }
 }

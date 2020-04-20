@@ -22,7 +22,6 @@ object AnonKeepSourceDeleteTarget {
     undecided: Double
   ): AnonKeepSourceDeleteTarget = {
     val __obj = js.Dynamic.literal(keepSourceDeleteTarget = keepSourceDeleteTarget.asInstanceOf[js.Any], keepSourceRenameTarget = keepSourceRenameTarget.asInstanceOf[js.Any], keepTargetDeleteSource = keepTargetDeleteSource.asInstanceOf[js.Any], keepTargetRenameSource = keepTargetRenameSource.asInstanceOf[js.Any], undecided = undecided.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonKeepSourceDeleteTarget]
   }
 }

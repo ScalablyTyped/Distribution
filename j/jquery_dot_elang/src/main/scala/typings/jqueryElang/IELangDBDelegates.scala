@@ -20,7 +20,6 @@ object IELangDBDelegates {
     selectHandler: js.Function
   ): IELangDBDelegates = {
     val __obj = js.Dynamic.literal(insertHandler = insertHandler.asInstanceOf[js.Any], modifyHandler = modifyHandler.asInstanceOf[js.Any], removeHandler = removeHandler.asInstanceOf[js.Any], selectHandler = selectHandler.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IELangDBDelegates]
   }
 }

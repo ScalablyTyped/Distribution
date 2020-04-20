@@ -17,7 +17,6 @@ object Typography {
   @scala.inline
   def apply(fonts: AnonBase, size: AnonCode, weight: AnonBlack): Typography = {
     val __obj = js.Dynamic.literal(fonts = fonts.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Typography]
   }
 }

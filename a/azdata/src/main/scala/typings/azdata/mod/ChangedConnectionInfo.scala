@@ -19,7 +19,6 @@ object ChangedConnectionInfo {
   @scala.inline
   def apply(connection: ConnectionSummary, connectionUri: String): ChangedConnectionInfo = {
     val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], connectionUri = connectionUri.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChangedConnectionInfo]
   }
 }

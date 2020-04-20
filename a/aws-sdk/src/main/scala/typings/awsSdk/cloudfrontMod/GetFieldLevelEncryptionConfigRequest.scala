@@ -16,7 +16,6 @@ object GetFieldLevelEncryptionConfigRequest {
   @scala.inline
   def apply(Id: String): GetFieldLevelEncryptionConfigRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetFieldLevelEncryptionConfigRequest]
   }
 }

@@ -94,6 +94,6 @@ object ChildrenNode extends js.Object {
     * @type {RegExp}
     */
   var INTEGER_REGEXP_ : js.Any = js.native
-  def EMPTY_NODE(): ChildrenNode = js.native
+  def EMPTY_NODE: ChildrenNode = js.native
 }
 

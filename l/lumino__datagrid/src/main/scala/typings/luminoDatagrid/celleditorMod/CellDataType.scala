@@ -24,32 +24,30 @@ trait CellDataType extends _EditorOverrideIdentifier
 
 object CellDataType {
   @scala.inline
-  def boolean: typings.luminoDatagrid.luminoDatagridStrings.boolean = this.cast("boolean")
+  def boolean: typings.luminoDatagrid.luminoDatagridStrings.boolean = "boolean".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.boolean]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def date: typings.luminoDatagrid.luminoDatagridStrings.date = "date".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.date]
   @scala.inline
-  def date: typings.luminoDatagrid.luminoDatagridStrings.date = this.cast("date")
+  def `dateColondynamic-option`: typings.luminoDatagrid.luminoDatagridStrings.`dateColondynamic-option` = "date:dynamic-option".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.`dateColondynamic-option`]
   @scala.inline
-  def `dateColondynamic-option`: typings.luminoDatagrid.luminoDatagridStrings.`dateColondynamic-option` = this.cast("date:dynamic-option")
+  def dateColonoption: typings.luminoDatagrid.luminoDatagridStrings.dateColonoption = "date:option".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.dateColonoption]
   @scala.inline
-  def dateColonoption: typings.luminoDatagrid.luminoDatagridStrings.dateColonoption = this.cast("date:option")
+  def integer: typings.luminoDatagrid.luminoDatagridStrings.integer = "integer".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.integer]
   @scala.inline
-  def integer: typings.luminoDatagrid.luminoDatagridStrings.integer = this.cast("integer")
+  def `integerColondynamic-option`: typings.luminoDatagrid.luminoDatagridStrings.`integerColondynamic-option` = "integer:dynamic-option".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.`integerColondynamic-option`]
   @scala.inline
-  def `integerColondynamic-option`: typings.luminoDatagrid.luminoDatagridStrings.`integerColondynamic-option` = this.cast("integer:dynamic-option")
+  def integerColonoption: typings.luminoDatagrid.luminoDatagridStrings.integerColonoption = "integer:option".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.integerColonoption]
   @scala.inline
-  def integerColonoption: typings.luminoDatagrid.luminoDatagridStrings.integerColonoption = this.cast("integer:option")
+  def number: typings.luminoDatagrid.luminoDatagridStrings.number = "number".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.number]
   @scala.inline
-  def number: typings.luminoDatagrid.luminoDatagridStrings.number = this.cast("number")
+  def `numberColondynamic-option`: typings.luminoDatagrid.luminoDatagridStrings.`numberColondynamic-option` = "number:dynamic-option".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.`numberColondynamic-option`]
   @scala.inline
-  def `numberColondynamic-option`: typings.luminoDatagrid.luminoDatagridStrings.`numberColondynamic-option` = this.cast("number:dynamic-option")
+  def numberColonoption: typings.luminoDatagrid.luminoDatagridStrings.numberColonoption = "number:option".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.numberColonoption]
   @scala.inline
-  def numberColonoption: typings.luminoDatagrid.luminoDatagridStrings.numberColonoption = this.cast("number:option")
+  def string: typings.luminoDatagrid.luminoDatagridStrings.string = "string".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.string]
   @scala.inline
-  def string: typings.luminoDatagrid.luminoDatagridStrings.string = this.cast("string")
+  def `stringColondynamic-option`: typings.luminoDatagrid.luminoDatagridStrings.`stringColondynamic-option` = "string:dynamic-option".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.`stringColondynamic-option`]
   @scala.inline
-  def `stringColondynamic-option`: typings.luminoDatagrid.luminoDatagridStrings.`stringColondynamic-option` = this.cast("string:dynamic-option")
-  @scala.inline
-  def stringColonoption: typings.luminoDatagrid.luminoDatagridStrings.stringColonoption = this.cast("string:option")
+  def stringColonoption: typings.luminoDatagrid.luminoDatagridStrings.stringColonoption = "string:option".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.stringColonoption]
 }
 

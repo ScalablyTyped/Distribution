@@ -20,7 +20,6 @@ object Plugin {
   @scala.inline
   def apply(destroy: /* repeated */ js.Any => js.Any, init: /* repeated */ js.Any => js.Any): Plugin = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction1(destroy), init = js.Any.fromFunction1(init))
-  
     __obj.asInstanceOf[Plugin]
   }
 }

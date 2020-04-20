@@ -20,7 +20,6 @@ object BatchAttachToIndex {
   @scala.inline
   def apply(IndexReference: ObjectReference, TargetReference: ObjectReference): BatchAttachToIndex = {
     val __obj = js.Dynamic.literal(IndexReference = IndexReference.asInstanceOf[js.Any], TargetReference = TargetReference.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchAttachToIndex]
   }
 }

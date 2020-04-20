@@ -23,32 +23,30 @@ trait Compat extends js.Object
 
 object Compat {
   @scala.inline
-  def `button-bevel`: typings.csstype.csstypeStrings.`button-bevel` = this.cast("button-bevel")
+  def `button-bevel`: typings.csstype.csstypeStrings.`button-bevel` = "button-bevel".asInstanceOf[typings.csstype.csstypeStrings.`button-bevel`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def checkbox: typings.csstype.csstypeStrings.checkbox = "checkbox".asInstanceOf[typings.csstype.csstypeStrings.checkbox]
   @scala.inline
-  def checkbox: typings.csstype.csstypeStrings.checkbox = this.cast("checkbox")
+  def listbox: typings.csstype.csstypeStrings.listbox = "listbox".asInstanceOf[typings.csstype.csstypeStrings.listbox]
   @scala.inline
-  def listbox: typings.csstype.csstypeStrings.listbox = this.cast("listbox")
+  def menulist: typings.csstype.csstypeStrings.menulist = "menulist".asInstanceOf[typings.csstype.csstypeStrings.menulist]
   @scala.inline
-  def menulist: typings.csstype.csstypeStrings.menulist = this.cast("menulist")
+  def `menulist-button`: typings.csstype.csstypeStrings.`menulist-button` = "menulist-button".asInstanceOf[typings.csstype.csstypeStrings.`menulist-button`]
   @scala.inline
-  def `menulist-button`: typings.csstype.csstypeStrings.`menulist-button` = this.cast("menulist-button")
+  def meter: typings.csstype.csstypeStrings.meter = "meter".asInstanceOf[typings.csstype.csstypeStrings.meter]
   @scala.inline
-  def meter: typings.csstype.csstypeStrings.meter = this.cast("meter")
+  def `progress-bar`: typings.csstype.csstypeStrings.`progress-bar` = "progress-bar".asInstanceOf[typings.csstype.csstypeStrings.`progress-bar`]
   @scala.inline
-  def `progress-bar`: typings.csstype.csstypeStrings.`progress-bar` = this.cast("progress-bar")
+  def `push-button`: typings.csstype.csstypeStrings.`push-button` = "push-button".asInstanceOf[typings.csstype.csstypeStrings.`push-button`]
   @scala.inline
-  def `push-button`: typings.csstype.csstypeStrings.`push-button` = this.cast("push-button")
+  def radio: typings.csstype.csstypeStrings.radio = "radio".asInstanceOf[typings.csstype.csstypeStrings.radio]
   @scala.inline
-  def radio: typings.csstype.csstypeStrings.radio = this.cast("radio")
+  def searchfield: typings.csstype.csstypeStrings.searchfield = "searchfield".asInstanceOf[typings.csstype.csstypeStrings.searchfield]
   @scala.inline
-  def searchfield: typings.csstype.csstypeStrings.searchfield = this.cast("searchfield")
+  def `slider-horizontal`: typings.csstype.csstypeStrings.`slider-horizontal` = "slider-horizontal".asInstanceOf[typings.csstype.csstypeStrings.`slider-horizontal`]
   @scala.inline
-  def `slider-horizontal`: typings.csstype.csstypeStrings.`slider-horizontal` = this.cast("slider-horizontal")
+  def `square-button`: typings.csstype.csstypeStrings.`square-button` = "square-button".asInstanceOf[typings.csstype.csstypeStrings.`square-button`]
   @scala.inline
-  def `square-button`: typings.csstype.csstypeStrings.`square-button` = this.cast("square-button")
-  @scala.inline
-  def textarea: typings.csstype.csstypeStrings.textarea = this.cast("textarea")
+  def textarea: typings.csstype.csstypeStrings.textarea = "textarea".asInstanceOf[typings.csstype.csstypeStrings.textarea]
 }
 

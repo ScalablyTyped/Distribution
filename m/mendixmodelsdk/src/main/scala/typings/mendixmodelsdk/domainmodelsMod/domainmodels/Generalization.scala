@@ -35,10 +35,10 @@ class Generalization protected () extends GeneralizationBase {
   @JSName("model")
   var model_FGeneralization: IModel = js.native
   @JSName("containerAsEntity")
-  def containerAsEntity_MGeneralization(): Entity = js.native
-  def generalization(): IEntity = js.native
+  def containerAsEntity_MGeneralization: Entity = js.native
+  def generalization: IEntity = js.native
   def generalization(newValue: IEntity): js.Any = js.native
-  def generalizationQualifiedName(): String = js.native
+  def generalizationQualifiedName: String = js.native
 }
 
 /* static members */

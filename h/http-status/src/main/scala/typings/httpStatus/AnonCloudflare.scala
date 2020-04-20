@@ -24,7 +24,6 @@ object AnonCloudflare {
     unofficial: HttpStatusUnofficial
   ): AnonCloudflare = {
     val __obj = js.Dynamic.literal(cloudflare = cloudflare.asInstanceOf[js.Any], iis = iis.asInstanceOf[js.Any], nginx = nginx.asInstanceOf[js.Any], unofficial = unofficial.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCloudflare]
   }
 }

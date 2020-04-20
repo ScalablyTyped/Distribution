@@ -17,7 +17,6 @@ object ListenerRuleConditionSourceIp {
   @scala.inline
   def apply(values: Input[js.Array[Input[String]]]): ListenerRuleConditionSourceIp = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListenerRuleConditionSourceIp]
   }
 }

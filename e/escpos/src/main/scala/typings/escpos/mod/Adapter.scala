@@ -17,7 +17,6 @@ object Adapter {
     write: (Buffer, js.Function1[/* error */ js.UndefOr[js.Any], Unit]) => Adapter
   ): Adapter = {
     val __obj = js.Dynamic.literal(open = js.Any.fromFunction1(open), write = js.Any.fromFunction2(write))
-  
     __obj.asInstanceOf[Adapter]
   }
 }

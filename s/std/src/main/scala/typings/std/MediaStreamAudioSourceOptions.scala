@@ -12,7 +12,6 @@ object MediaStreamAudioSourceOptions {
   @scala.inline
   def apply(mediaStream: MediaStream): MediaStreamAudioSourceOptions = {
     val __obj = js.Dynamic.literal(mediaStream = mediaStream.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MediaStreamAudioSourceOptions]
   }
 }

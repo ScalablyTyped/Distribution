@@ -16,16 +16,14 @@ trait VppTokenState extends js.Object
 
 object VppTokenState {
   @scala.inline
-  def assignedToExternalMDM: typings.microsoftGraph.microsoftGraphStrings.assignedToExternalMDM = this.cast("assignedToExternalMDM")
+  def assignedToExternalMDM: typings.microsoftGraph.microsoftGraphStrings.assignedToExternalMDM = "assignedToExternalMDM".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.assignedToExternalMDM]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def expired: typings.microsoftGraph.microsoftGraphStrings.expired = "expired".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.expired]
   @scala.inline
-  def expired: typings.microsoftGraph.microsoftGraphStrings.expired = this.cast("expired")
+  def invalid: typings.microsoftGraph.microsoftGraphStrings.invalid = "invalid".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.invalid]
   @scala.inline
-  def invalid: typings.microsoftGraph.microsoftGraphStrings.invalid = this.cast("invalid")
+  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
-  @scala.inline
-  def valid: typings.microsoftGraph.microsoftGraphStrings.valid = this.cast("valid")
+  def valid: typings.microsoftGraph.microsoftGraphStrings.valid = "valid".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.valid]
 }
 

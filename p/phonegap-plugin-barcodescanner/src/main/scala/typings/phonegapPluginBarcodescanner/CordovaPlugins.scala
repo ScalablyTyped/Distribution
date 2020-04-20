@@ -13,7 +13,6 @@ object CordovaPlugins {
   @scala.inline
   def apply(barcodeScanner: BarcodeScanner): CordovaPlugins = {
     val __obj = js.Dynamic.literal(barcodeScanner = barcodeScanner.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CordovaPlugins]
   }
 }

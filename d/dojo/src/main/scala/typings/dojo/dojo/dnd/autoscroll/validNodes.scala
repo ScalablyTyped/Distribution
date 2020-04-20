@@ -28,7 +28,6 @@ object validNodes {
   @scala.inline
   def apply(div: Double, p: Double, td: Double): validNodes = {
     val __obj = js.Dynamic.literal(div = div.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], td = td.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[validNodes]
   }
 }

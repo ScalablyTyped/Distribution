@@ -13,7 +13,6 @@ object AnonAutomation {
   @scala.inline
   def apply(automation: Double, deployment: Double): AnonAutomation = {
     val __obj = js.Dynamic.literal(automation = automation.asInstanceOf[js.Any], deployment = deployment.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAutomation]
   }
 }

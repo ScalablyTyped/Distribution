@@ -20,7 +20,6 @@ object DeleteConfigurationTemplateMessage {
   @scala.inline
   def apply(ApplicationName: ApplicationName, TemplateName: ConfigurationTemplateName): DeleteConfigurationTemplateMessage = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], TemplateName = TemplateName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteConfigurationTemplateMessage]
   }
 }

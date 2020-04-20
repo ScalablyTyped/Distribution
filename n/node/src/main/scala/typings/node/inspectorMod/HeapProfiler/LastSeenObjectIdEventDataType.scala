@@ -13,7 +13,6 @@ object LastSeenObjectIdEventDataType {
   @scala.inline
   def apply(lastSeenObjectId: Double, timestamp: Double): LastSeenObjectIdEventDataType = {
     val __obj = js.Dynamic.literal(lastSeenObjectId = lastSeenObjectId.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LastSeenObjectIdEventDataType]
   }
 }

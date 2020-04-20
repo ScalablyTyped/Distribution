@@ -16,7 +16,6 @@ object IUserResource {
   @scala.inline
   def apply(disableUser: Double => Unit): IUserResource = {
     val __obj = js.Dynamic.literal(disableUser = js.Any.fromFunction1(disableUser))
-  
     __obj.asInstanceOf[IUserResource]
   }
 }

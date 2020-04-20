@@ -16,7 +16,6 @@ object StartMLEvaluationTaskRunRequest {
   @scala.inline
   def apply(TransformId: HashString): StartMLEvaluationTaskRunRequest = {
     val __obj = js.Dynamic.literal(TransformId = TransformId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StartMLEvaluationTaskRunRequest]
   }
 }

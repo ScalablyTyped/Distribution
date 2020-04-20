@@ -15,6 +15,6 @@ class FrontFacingBlock protected () extends NodeMaterialBlock {
   /**
     * Gets the output component
     */
-  def output(): NodeMaterialConnectionPoint = js.native
+  def output: NodeMaterialConnectionPoint = js.native
 }
 

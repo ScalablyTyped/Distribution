@@ -21,7 +21,6 @@ object ServiceEndpointAuthenticationScheme {
     scheme: String
   ): ServiceEndpointAuthenticationScheme = {
     val __obj = js.Dynamic.literal(authorizationHeaders = authorizationHeaders.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], inputDescriptors = inputDescriptors.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ServiceEndpointAuthenticationScheme]
   }
 }

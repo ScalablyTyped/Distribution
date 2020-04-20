@@ -15,7 +15,6 @@ object DidChangeWorkspaceFoldersParams {
   @scala.inline
   def apply(event: WorkspaceFoldersChangeEvent): DidChangeWorkspaceFoldersParams = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DidChangeWorkspaceFoldersParams]
   }
 }

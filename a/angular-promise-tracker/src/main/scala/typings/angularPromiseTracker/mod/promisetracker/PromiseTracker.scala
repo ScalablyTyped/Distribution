@@ -26,7 +26,6 @@ object PromiseTracker {
     trackingCount: () => Double
   ): PromiseTracker = {
     val __obj = js.Dynamic.literal(active = js.Any.fromFunction0(active), addPromise = js.Any.fromFunction1(addPromise), cancel = js.Any.fromFunction0(cancel), createPromise = js.Any.fromFunction0(createPromise), tracking = js.Any.fromFunction0(tracking), trackingCount = js.Any.fromFunction0(trackingCount))
-  
     __obj.asInstanceOf[PromiseTracker]
   }
 }

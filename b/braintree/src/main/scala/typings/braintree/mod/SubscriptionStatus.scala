@@ -15,16 +15,14 @@ trait SubscriptionStatus extends js.Object
 
 object SubscriptionStatus {
   @scala.inline
-  def Active: typings.braintree.braintreeStrings.Active = this.cast("Active")
+  def Active: typings.braintree.braintreeStrings.Active = "Active".asInstanceOf[typings.braintree.braintreeStrings.Active]
   @scala.inline
-  def Canceled: typings.braintree.braintreeStrings.Canceled = this.cast("Canceled")
+  def Canceled: typings.braintree.braintreeStrings.Canceled = "Canceled".asInstanceOf[typings.braintree.braintreeStrings.Canceled]
   @scala.inline
-  def Expired: typings.braintree.braintreeStrings.Expired = this.cast("Expired")
+  def Expired: typings.braintree.braintreeStrings.Expired = "Expired".asInstanceOf[typings.braintree.braintreeStrings.Expired]
   @scala.inline
-  def PastDue: typings.braintree.braintreeStrings.PastDue = this.cast("PastDue")
+  def PastDue: typings.braintree.braintreeStrings.PastDue = "PastDue".asInstanceOf[typings.braintree.braintreeStrings.PastDue]
   @scala.inline
-  def Pending: typings.braintree.braintreeStrings.Pending = this.cast("Pending")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Pending: typings.braintree.braintreeStrings.Pending = "Pending".asInstanceOf[typings.braintree.braintreeStrings.Pending]
 }
 

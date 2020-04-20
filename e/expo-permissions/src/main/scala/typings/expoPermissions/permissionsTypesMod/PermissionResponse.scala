@@ -20,7 +20,6 @@ object PermissionResponse {
     status: typings.unimodulesPermissionsInterface.mod.PermissionStatus
   ): PermissionResponse = {
     val __obj = js.Dynamic.literal(canAskAgain = canAskAgain.asInstanceOf[js.Any], expires = expires.asInstanceOf[js.Any], granted = granted.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PermissionResponse]
   }
 }

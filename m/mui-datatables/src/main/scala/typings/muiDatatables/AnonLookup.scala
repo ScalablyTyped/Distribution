@@ -14,7 +14,6 @@ object AnonLookup {
   @scala.inline
   def apply(data: js.Array[AnonIndex], lookup: NumberDictionary[Boolean]): AnonLookup = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], lookup = lookup.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLookup]
   }
 }

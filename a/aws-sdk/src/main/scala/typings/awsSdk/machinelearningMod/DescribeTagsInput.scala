@@ -20,7 +20,6 @@ object DescribeTagsInput {
   @scala.inline
   def apply(ResourceId: EntityId, ResourceType: TaggableResourceType): DescribeTagsInput = {
     val __obj = js.Dynamic.literal(ResourceId = ResourceId.asInstanceOf[js.Any], ResourceType = ResourceType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeTagsInput]
   }
 }

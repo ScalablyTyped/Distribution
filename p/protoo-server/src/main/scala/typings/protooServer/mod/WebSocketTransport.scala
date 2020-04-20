@@ -14,7 +14,6 @@ object WebSocketTransport {
   @scala.inline
   def apply(close: () => Unit, closed: Boolean, send: js.Any => js.Promise[Unit]): WebSocketTransport = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), closed = closed.asInstanceOf[js.Any], send = js.Any.fromFunction1(send))
-  
     __obj.asInstanceOf[WebSocketTransport]
   }
 }

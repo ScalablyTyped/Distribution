@@ -46,11 +46,11 @@ class NotebookPanel_ protected () extends DocumentWidget[Notebook, INotebookMode
   /**
     * The model for the widget.
     */
-  def model(): INotebookModel | Null = js.native
+  def model: INotebookModel | Null = js.native
   /**
     * The session context used by the panel.
     */
-  def sessionContext(): ISessionContext = js.native
+  def sessionContext: ISessionContext = js.native
   /**
     * Update the options for the current notebook panel.
     *

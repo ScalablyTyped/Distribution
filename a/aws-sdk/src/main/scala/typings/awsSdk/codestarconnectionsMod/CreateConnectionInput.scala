@@ -20,7 +20,6 @@ object CreateConnectionInput {
   @scala.inline
   def apply(ConnectionName: ConnectionName, ProviderType: ProviderType): CreateConnectionInput = {
     val __obj = js.Dynamic.literal(ConnectionName = ConnectionName.asInstanceOf[js.Any], ProviderType = ProviderType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateConnectionInput]
   }
 }

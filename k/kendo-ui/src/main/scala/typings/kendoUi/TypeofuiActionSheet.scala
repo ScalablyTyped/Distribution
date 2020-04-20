@@ -58,7 +58,6 @@ object TypeofuiActionSheet {
     Widget: Instantiable0[Widget]
   ): TypeofuiActionSheet = {
     val __obj = js.Dynamic.literal(ActionSheet = ActionSheet.asInstanceOf[js.Any], BackButton = BackButton.asInstanceOf[js.Any], Badge = Badge.asInstanceOf[js.Any], Button = Button.asInstanceOf[js.Any], ButtonGroup = ButtonGroup.asInstanceOf[js.Any], Collapsible = Collapsible.asInstanceOf[js.Any], DetailButton = DetailButton.asInstanceOf[js.Any], Drawer = Drawer.asInstanceOf[js.Any], Layout = Layout.asInstanceOf[js.Any], ListView = ListView.asInstanceOf[js.Any], Loader = Loader.asInstanceOf[js.Any], ModalView = ModalView.asInstanceOf[js.Any], NavBar = NavBar.asInstanceOf[js.Any], Pane = Pane.asInstanceOf[js.Any], PopOver = PopOver.asInstanceOf[js.Any], ScrollView = ScrollView.asInstanceOf[js.Any], Scroller = Scroller.asInstanceOf[js.Any], SplitView = SplitView.asInstanceOf[js.Any], Switch = Switch.asInstanceOf[js.Any], TabStrip = TabStrip.asInstanceOf[js.Any], View = View.asInstanceOf[js.Any], Widget = Widget.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofuiActionSheet]
   }
 }

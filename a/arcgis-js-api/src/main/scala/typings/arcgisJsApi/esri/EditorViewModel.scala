@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @js.native
 trait EditorViewModel extends Accessor {
   /**
-    * A property indicating the current active workflow.
+    * A property indicating the current active workflow. This is either [CreateWorkflow](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-CreateWorkflow.html) or [UpdateWorkflow](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-UpdateWorkflow.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-EditorViewModel.html#activeWorkflow)
     */
-  val activeWorkflow: Workflow = js.native
+  val activeWorkflow: CreateWorkflow | UpdateWorkflow = js.native
   /**
-    * An array of string values which specifies what end users are allowed edit. For example, a feature layer with full editing privileges may be available. But you may only want the end user to have the ability to update existing features. Set the `allowedWorkflows` to only `update`.
+    * An array of string values which specifies what end users are allowed to edit. For example, a feature layer with full editing privileges may be available. But you may only want the end user to have the ability to update existing features. Set the `allowedWorkflows` to only `update`.
     *
     * Possible Value | Description
     * ---------------|------------
@@ -113,7 +113,7 @@ trait EditorViewModel extends Accessor {
     *
     *
     */
-  def cancelWorkflow(): Unit = js.native
+  def cancelWorkflow(): js.Promise[Unit] = js.native
   /**
     * This is applicable if there is an active update workflow. If so, this method deletes the workflow feature.
     *
@@ -121,7 +121,7 @@ trait EditorViewModel extends Accessor {
     *
     *
     */
-  def deleteFeatureFromWorkflow(): Unit = js.native
+  def deleteFeatureFromWorkflow(): js.Promise[Unit] = js.native
   /**
     * Initiates the `create` workflow by displaying the panel where feature creation begins. This method takes a [CreationInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#CreationInfo) object containing the layer(s) and template(s) to use.
     *
@@ -130,7 +130,7 @@ trait EditorViewModel extends Accessor {
     * @param creationInfo An object containing information needed to create a new feature using the Editor widget.
     *
     */
-  def startCreateWorkflowAtFeatureCreation(creationInfo: CreationInfo): Unit = js.native
+  def startCreateWorkflowAtFeatureCreation(creationInfo: CreationInfo): js.Promise[Unit] = js.native
   /**
     * This method starts the Editor workflow where it waits for the feature to be selected.
     *
@@ -139,7 +139,7 @@ trait EditorViewModel extends Accessor {
     * @param feature The feature to be updated.
     *
     */
-  def startCreateWorkflowAtFeatureEdit(feature: Graphic): Unit = js.native
+  def startCreateWorkflowAtFeatureEdit(feature: Graphic): js.Promise[Unit] = js.native
   /**
     * Initiates the `create` workflow by displaying the [FeatureTemplates](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html) panel.
     *
@@ -147,7 +147,7 @@ trait EditorViewModel extends Accessor {
     *
     *
     */
-  def startCreateWorkflowAtFeatureTypeSelection(): Unit = js.native
+  def startCreateWorkflowAtFeatureTypeSelection(): js.Promise[Unit] = js.native
   /**
     * Starts the update workflow at the feature geometry and attribute editing panel.
     *
@@ -156,7 +156,7 @@ trait EditorViewModel extends Accessor {
     * @param feature The feature to be updated.
     *
     */
-  def startUpdateWorkflowAtFeatureEdit(feature: Graphic): Unit = js.native
+  def startUpdateWorkflowAtFeatureEdit(feature: Graphic): js.Promise[Unit] = js.native
   /**
     * Starts the `update` workflow using the current selected feature.
     *
@@ -164,7 +164,7 @@ trait EditorViewModel extends Accessor {
     *
     *
     */
-  def startUpdateWorkflowAtFeatureSelection(): Unit = js.native
+  def startUpdateWorkflowAtFeatureSelection(): js.Promise[Unit] = js.native
   /**
     * Starts the Editor workflow where it waits for multiple features to be selected.
     *
@@ -172,7 +172,7 @@ trait EditorViewModel extends Accessor {
     *
     *
     */
-  def startUpdateWorkflowAtMultipleFeatureSelection(): Unit = js.native
+  def startUpdateWorkflowAtMultipleFeatureSelection(): js.Promise[Unit] = js.native
 }
 
 @JSGlobal("__esri.EditorViewModel")

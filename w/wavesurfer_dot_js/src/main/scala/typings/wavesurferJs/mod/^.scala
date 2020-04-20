@@ -23,6 +23,7 @@ class ^ protected () extends WaveSurfer {
 @JSImport("wavesurfer.js", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  var VERSION: String = js.native
   var util: WaveSurferUtil = js.native
   def create(params: WaveSurferParams): WaveSurfer = js.native
 }

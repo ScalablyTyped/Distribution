@@ -16,7 +16,6 @@ object ProcessingStoppingCondition {
   @scala.inline
   def apply(MaxRuntimeInSeconds: ProcessingMaxRuntimeInSeconds): ProcessingStoppingCondition = {
     val __obj = js.Dynamic.literal(MaxRuntimeInSeconds = MaxRuntimeInSeconds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProcessingStoppingCondition]
   }
 }

@@ -16,7 +16,6 @@ object BatchCreateVariableRequest {
   @scala.inline
   def apply(variableEntries: VariableEntryList): BatchCreateVariableRequest = {
     val __obj = js.Dynamic.literal(variableEntries = variableEntries.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchCreateVariableRequest]
   }
 }

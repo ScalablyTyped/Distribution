@@ -24,7 +24,6 @@ object OnAcceptInfoData {
   @scala.inline
   def apply(clientSocketId: integer, socketId: integer): OnAcceptInfoData = {
     val __obj = js.Dynamic.literal(clientSocketId = clientSocketId.asInstanceOf[js.Any], socketId = socketId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnAcceptInfoData]
   }
 }

@@ -13,7 +13,6 @@ object DraggableLocation {
   @scala.inline
   def apply(droppableId: DroppableId, index: Double): DraggableLocation = {
     val __obj = js.Dynamic.literal(droppableId = droppableId.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DraggableLocation]
   }
 }

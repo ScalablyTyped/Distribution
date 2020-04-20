@@ -23,7 +23,6 @@ object AnonElevation {
   @scala.inline
   def apply(elevation: Double, latitude: Double, longitude: Double): AnonElevation = {
     val __obj = js.Dynamic.literal(elevation = elevation.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonElevation]
   }
 }

@@ -13,7 +13,6 @@ object Defaults_ {
   @scala.inline
   def apply(font: Fonts_, fontPath: String): Defaults_ = {
     val __obj = js.Dynamic.literal(font = font.asInstanceOf[js.Any], fontPath = fontPath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Defaults_]
   }
 }

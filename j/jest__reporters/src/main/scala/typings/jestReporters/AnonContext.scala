@@ -14,7 +14,6 @@ object AnonContext {
   @scala.inline
   def apply(context: Context, matches: AnonAllTests): AnonContext = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonContext]
   }
 }

@@ -13,7 +13,6 @@ object TypeofChime {
   @scala.inline
   def apply(Types: TypeofChime): TypeofChime = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofChime]
   }
 }

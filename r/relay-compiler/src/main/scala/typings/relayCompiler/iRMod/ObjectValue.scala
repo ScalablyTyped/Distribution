@@ -20,7 +20,6 @@ object ObjectValue {
     loc: Location
   ): ObjectValue = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ObjectValue]
   }
 }

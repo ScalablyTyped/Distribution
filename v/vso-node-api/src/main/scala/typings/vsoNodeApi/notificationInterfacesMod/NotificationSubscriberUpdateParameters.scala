@@ -19,7 +19,6 @@ object NotificationSubscriberUpdateParameters {
   @scala.inline
   def apply(deliveryPreference: NotificationSubscriberDeliveryPreference, preferredEmailAddress: String): NotificationSubscriberUpdateParameters = {
     val __obj = js.Dynamic.literal(deliveryPreference = deliveryPreference.asInstanceOf[js.Any], preferredEmailAddress = preferredEmailAddress.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NotificationSubscriberUpdateParameters]
   }
 }

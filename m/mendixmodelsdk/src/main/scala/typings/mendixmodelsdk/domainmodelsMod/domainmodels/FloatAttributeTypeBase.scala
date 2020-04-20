@@ -30,7 +30,7 @@ abstract class FloatAttributeTypeBase protected () extends DecimalAttributeTypeB
   @JSName("model")
   var model_FFloatAttributeTypeBase: IModel = js.native
   @JSName("containerAsAttribute")
-  def containerAsAttribute_MFloatAttributeTypeBase(): Attribute = js.native
+  def containerAsAttribute_MFloatAttributeTypeBase: Attribute = js.native
 }
 
 /* static members */

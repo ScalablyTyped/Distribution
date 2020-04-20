@@ -75,7 +75,6 @@ object IVariable {
     setNxProperties: INxVariableProperties => js.Promise[Unit]
   ): IVariable = {
     val __obj = js.Dynamic.literal(forceContent = js.Any.fromFunction2(forceContent), getContent = js.Any.fromFunction0(getContent), getNxProperties = js.Any.fromFunction0(getNxProperties), getRawContent = js.Any.fromFunction0(getRawContent), setContent = js.Any.fromFunction2(setContent), setNxProperties = js.Any.fromFunction1(setNxProperties))
-  
     __obj.asInstanceOf[IVariable]
   }
 }

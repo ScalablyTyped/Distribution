@@ -19,7 +19,6 @@ object PartialUpdateObjectResponse {
   @scala.inline
   def apply(objectID: String, taskID: Double): PartialUpdateObjectResponse = {
     val __obj = js.Dynamic.literal(objectID = objectID.asInstanceOf[js.Any], taskID = taskID.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PartialUpdateObjectResponse]
   }
 }

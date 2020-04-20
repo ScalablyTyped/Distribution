@@ -12,7 +12,6 @@ object TransactionLineItemGateway {
   @scala.inline
   def apply(findAll: String => js.Promise[js.Array[TransactionLineItem]]): TransactionLineItemGateway = {
     val __obj = js.Dynamic.literal(findAll = js.Any.fromFunction1(findAll))
-  
     __obj.asInstanceOf[TransactionLineItemGateway]
   }
 }

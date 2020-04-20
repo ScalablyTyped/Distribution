@@ -13,7 +13,6 @@ object AnonHref {
   @scala.inline
   def apply(href: String, title: String): AnonHref = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHref]
   }
 }

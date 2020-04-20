@@ -20,7 +20,6 @@ object BatchPutMessageRequest {
   @scala.inline
   def apply(channelName: ChannelName, messages: Messages): BatchPutMessageRequest = {
     val __obj = js.Dynamic.literal(channelName = channelName.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchPutMessageRequest]
   }
 }

@@ -17,20 +17,18 @@ trait Resampling extends js.Object
 
 object Resampling {
   @scala.inline
-  def AVERAGE: typings.gdal.gdalStrings.AVERAGE = this.cast("AVERAGE")
+  def AVERAGE: typings.gdal.gdalStrings.AVERAGE = "AVERAGE".asInstanceOf[typings.gdal.gdalStrings.AVERAGE]
   @scala.inline
-  def AVERAGE_MAGPHASE: typings.gdal.gdalStrings.AVERAGE_MAGPHASE = this.cast("AVERAGE_MAGPHASE")
+  def AVERAGE_MAGPHASE: typings.gdal.gdalStrings.AVERAGE_MAGPHASE = "AVERAGE_MAGPHASE".asInstanceOf[typings.gdal.gdalStrings.AVERAGE_MAGPHASE]
   @scala.inline
-  def CUBIC: typings.gdal.gdalStrings.CUBIC = this.cast("CUBIC")
+  def CUBIC: typings.gdal.gdalStrings.CUBIC = "CUBIC".asInstanceOf[typings.gdal.gdalStrings.CUBIC]
   @scala.inline
-  def GAUSS: typings.gdal.gdalStrings.GAUSS = this.cast("GAUSS")
+  def GAUSS: typings.gdal.gdalStrings.GAUSS = "GAUSS".asInstanceOf[typings.gdal.gdalStrings.GAUSS]
   @scala.inline
-  def MODE: typings.gdal.gdalStrings.MODE = this.cast("MODE")
+  def MODE: typings.gdal.gdalStrings.MODE = "MODE".asInstanceOf[typings.gdal.gdalStrings.MODE]
   @scala.inline
-  def NEAREST: typings.gdal.gdalStrings.NEAREST = this.cast("NEAREST")
+  def NEAREST: typings.gdal.gdalStrings.NEAREST = "NEAREST".asInstanceOf[typings.gdal.gdalStrings.NEAREST]
   @scala.inline
-  def NONE: typings.gdal.gdalStrings.NONE = this.cast("NONE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def NONE: typings.gdal.gdalStrings.NONE = "NONE".asInstanceOf[typings.gdal.gdalStrings.NONE]
 }
 

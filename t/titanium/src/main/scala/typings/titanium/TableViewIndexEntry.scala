@@ -15,12 +15,12 @@ trait TableViewIndexEntry extends js.Object {
   /**
   	 * Title to display in the index bar for this item.
   	 */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object TableViewIndexEntry {
   @scala.inline
-  def apply(index: Int | Double = null, title: String = null): TableViewIndexEntry = {
+  def apply(index: Int | Double = null, title: java.lang.String = null): TableViewIndexEntry = {
     val __obj = js.Dynamic.literal()
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

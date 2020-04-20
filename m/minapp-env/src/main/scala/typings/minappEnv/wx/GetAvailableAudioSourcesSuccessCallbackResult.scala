@@ -36,7 +36,6 @@ object GetAvailableAudioSourcesSuccessCallbackResult {
     ]
   ): GetAvailableAudioSourcesSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(audioSources = audioSources.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetAvailableAudioSourcesSuccessCallbackResult]
   }
 }

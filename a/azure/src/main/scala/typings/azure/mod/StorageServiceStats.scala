@@ -13,7 +13,6 @@ object StorageServiceStats {
   @scala.inline
   def apply(GeoReplication: AnonLastSyncTime): StorageServiceStats = {
     val __obj = js.Dynamic.literal(GeoReplication = GeoReplication.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StorageServiceStats]
   }
 }

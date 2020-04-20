@@ -14,7 +14,6 @@ object TranslationModels {
   @scala.inline
   def apply(models: js.Array[TranslationModel]): TranslationModels = {
     val __obj = js.Dynamic.literal(models = models.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TranslationModels]
   }
 }

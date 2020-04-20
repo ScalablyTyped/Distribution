@@ -17,7 +17,6 @@ object RetrieveTapeRecoveryPointInput {
   @scala.inline
   def apply(GatewayARN: GatewayARN, TapeARN: TapeARN): RetrieveTapeRecoveryPointInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN.asInstanceOf[js.Any], TapeARN = TapeARN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RetrieveTapeRecoveryPointInput]
   }
 }

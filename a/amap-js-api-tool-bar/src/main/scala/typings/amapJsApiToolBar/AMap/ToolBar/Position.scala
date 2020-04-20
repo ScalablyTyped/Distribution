@@ -14,14 +14,12 @@ trait Position extends js.Object
 
 object Position {
   @scala.inline
-  def LB: typings.amapJsApiToolBar.amapJsApiToolBarStrings.LB = this.cast("LB")
+  def LB: typings.amapJsApiToolBar.amapJsApiToolBarStrings.LB = "LB".asInstanceOf[typings.amapJsApiToolBar.amapJsApiToolBarStrings.LB]
   @scala.inline
-  def LT: typings.amapJsApiToolBar.amapJsApiToolBarStrings.LT = this.cast("LT")
+  def LT: typings.amapJsApiToolBar.amapJsApiToolBarStrings.LT = "LT".asInstanceOf[typings.amapJsApiToolBar.amapJsApiToolBarStrings.LT]
   @scala.inline
-  def RB: typings.amapJsApiToolBar.amapJsApiToolBarStrings.RB = this.cast("RB")
+  def RB: typings.amapJsApiToolBar.amapJsApiToolBarStrings.RB = "RB".asInstanceOf[typings.amapJsApiToolBar.amapJsApiToolBarStrings.RB]
   @scala.inline
-  def RT: typings.amapJsApiToolBar.amapJsApiToolBarStrings.RT = this.cast("RT")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def RT: typings.amapJsApiToolBar.amapJsApiToolBarStrings.RT = "RT".asInstanceOf[typings.amapJsApiToolBar.amapJsApiToolBarStrings.RT]
 }
 

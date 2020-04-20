@@ -12,7 +12,6 @@ object TypeofSchema {
   @scala.inline
   def apply(Types: js.Any): TypeofSchema = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofSchema]
   }
 }

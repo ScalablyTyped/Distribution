@@ -12,7 +12,6 @@ object AnonFragment {
   @scala.inline
   def apply(fragment: String): AnonFragment = {
     val __obj = js.Dynamic.literal(fragment = fragment.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFragment]
   }
 }

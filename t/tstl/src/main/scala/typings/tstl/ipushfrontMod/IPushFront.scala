@@ -17,7 +17,6 @@ object IPushFront {
   @scala.inline
   def apply[T](push_front: T => Unit): IPushFront[T] = {
     val __obj = js.Dynamic.literal(push_front = js.Any.fromFunction1(push_front))
-  
     __obj.asInstanceOf[IPushFront[T]]
   }
 }

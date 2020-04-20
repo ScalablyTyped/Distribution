@@ -24,7 +24,6 @@ object AnonPaddingBottom {
     paddingBottom: Double
   ): AnonPaddingBottom = {
     val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], borderColor = borderColor.asInstanceOf[js.Any], borderRadius = borderRadius.asInstanceOf[js.Any], borderWidth = borderWidth.asInstanceOf[js.Any], flexDirection = flexDirection.asInstanceOf[js.Any], paddingBottom = paddingBottom.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPaddingBottom]
   }
 }

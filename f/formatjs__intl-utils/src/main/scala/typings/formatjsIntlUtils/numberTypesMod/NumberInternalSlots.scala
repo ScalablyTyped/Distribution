@@ -14,7 +14,6 @@ object NumberInternalSlots {
   @scala.inline
   def apply(ild: NumberILD, nu: js.Array[String], patterns: NumberLocalePatternData): NumberInternalSlots = {
     val __obj = js.Dynamic.literal(ild = ild.asInstanceOf[js.Any], nu = nu.asInstanceOf[js.Any], patterns = patterns.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NumberInternalSlots]
   }
 }

@@ -15,7 +15,6 @@ object TypeofLayer {
   @scala.inline
   def apply(LayerConnection: TypeofLayerConnection): TypeofLayer = {
     val __obj = js.Dynamic.literal(LayerConnection = LayerConnection.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofLayer]
   }
 }

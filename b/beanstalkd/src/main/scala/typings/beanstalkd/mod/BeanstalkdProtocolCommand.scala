@@ -13,7 +13,6 @@ object BeanstalkdProtocolCommand {
   @scala.inline
   def apply(args: js.Array[_], command: String): BeanstalkdProtocolCommand = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BeanstalkdProtocolCommand]
   }
 }

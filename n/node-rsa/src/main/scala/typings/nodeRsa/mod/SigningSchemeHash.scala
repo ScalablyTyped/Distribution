@@ -28,42 +28,40 @@ trait SigningSchemeHash extends js.Object
 
 object SigningSchemeHash {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `pkcs1-md4`: typings.nodeRsa.nodeRsaStrings.`pkcs1-md4` = "pkcs1-md4".asInstanceOf[typings.nodeRsa.nodeRsaStrings.`pkcs1-md4`]
   @scala.inline
-  def `pkcs1-md4`: typings.nodeRsa.nodeRsaStrings.`pkcs1-md4` = this.cast("pkcs1-md4")
+  def `pkcs1-md5`: typings.nodeRsa.nodeRsaStrings.`pkcs1-md5` = "pkcs1-md5".asInstanceOf[typings.nodeRsa.nodeRsaStrings.`pkcs1-md5`]
   @scala.inline
-  def `pkcs1-md5`: typings.nodeRsa.nodeRsaStrings.`pkcs1-md5` = this.cast("pkcs1-md5")
+  def `pkcs1-ripemd160`: typings.nodeRsa.nodeRsaStrings.`pkcs1-ripemd160` = "pkcs1-ripemd160".asInstanceOf[typings.nodeRsa.nodeRsaStrings.`pkcs1-ripemd160`]
   @scala.inline
-  def `pkcs1-ripemd160`: typings.nodeRsa.nodeRsaStrings.`pkcs1-ripemd160` = this.cast("pkcs1-ripemd160")
+  def `pkcs1-sha`: typings.nodeRsa.nodeRsaStrings.`pkcs1-sha` = "pkcs1-sha".asInstanceOf[typings.nodeRsa.nodeRsaStrings.`pkcs1-sha`]
   @scala.inline
-  def `pkcs1-sha`: typings.nodeRsa.nodeRsaStrings.`pkcs1-sha` = this.cast("pkcs1-sha")
+  def `pkcs1-sha1`: typings.nodeRsa.nodeRsaStrings.`pkcs1-sha1` = "pkcs1-sha1".asInstanceOf[typings.nodeRsa.nodeRsaStrings.`pkcs1-sha1`]
   @scala.inline
-  def `pkcs1-sha1`: typings.nodeRsa.nodeRsaStrings.`pkcs1-sha1` = this.cast("pkcs1-sha1")
+  def `pkcs1-sha224`: typings.nodeRsa.nodeRsaStrings.`pkcs1-sha224` = "pkcs1-sha224".asInstanceOf[typings.nodeRsa.nodeRsaStrings.`pkcs1-sha224`]
   @scala.inline
-  def `pkcs1-sha224`: typings.nodeRsa.nodeRsaStrings.`pkcs1-sha224` = this.cast("pkcs1-sha224")
+  def `pkcs1-sha256`: typings.nodeRsa.nodeRsaStrings.`pkcs1-sha256` = "pkcs1-sha256".asInstanceOf[typings.nodeRsa.nodeRsaStrings.`pkcs1-sha256`]
   @scala.inline
-  def `pkcs1-sha256`: typings.nodeRsa.nodeRsaStrings.`pkcs1-sha256` = this.cast("pkcs1-sha256")
+  def `pkcs1-sha384`: typings.nodeRsa.nodeRsaStrings.`pkcs1-sha384` = "pkcs1-sha384".asInstanceOf[typings.nodeRsa.nodeRsaStrings.`pkcs1-sha384`]
   @scala.inline
-  def `pkcs1-sha384`: typings.nodeRsa.nodeRsaStrings.`pkcs1-sha384` = this.cast("pkcs1-sha384")
+  def `pkcs1-sha512`: typings.nodeRsa.nodeRsaStrings.`pkcs1-sha512` = "pkcs1-sha512".asInstanceOf[typings.nodeRsa.nodeRsaStrings.`pkcs1-sha512`]
   @scala.inline
-  def `pkcs1-sha512`: typings.nodeRsa.nodeRsaStrings.`pkcs1-sha512` = this.cast("pkcs1-sha512")
+  def `pss-md4`: typings.nodeRsa.nodeRsaStrings.`pss-md4` = "pss-md4".asInstanceOf[typings.nodeRsa.nodeRsaStrings.`pss-md4`]
   @scala.inline
-  def `pss-md4`: typings.nodeRsa.nodeRsaStrings.`pss-md4` = this.cast("pss-md4")
+  def `pss-md5`: typings.nodeRsa.nodeRsaStrings.`pss-md5` = "pss-md5".asInstanceOf[typings.nodeRsa.nodeRsaStrings.`pss-md5`]
   @scala.inline
-  def `pss-md5`: typings.nodeRsa.nodeRsaStrings.`pss-md5` = this.cast("pss-md5")
+  def `pss-ripemd160`: typings.nodeRsa.nodeRsaStrings.`pss-ripemd160` = "pss-ripemd160".asInstanceOf[typings.nodeRsa.nodeRsaStrings.`pss-ripemd160`]
   @scala.inline
-  def `pss-ripemd160`: typings.nodeRsa.nodeRsaStrings.`pss-ripemd160` = this.cast("pss-ripemd160")
+  def `pss-sha`: typings.nodeRsa.nodeRsaStrings.`pss-sha` = "pss-sha".asInstanceOf[typings.nodeRsa.nodeRsaStrings.`pss-sha`]
   @scala.inline
-  def `pss-sha`: typings.nodeRsa.nodeRsaStrings.`pss-sha` = this.cast("pss-sha")
+  def `pss-sha1`: typings.nodeRsa.nodeRsaStrings.`pss-sha1` = "pss-sha1".asInstanceOf[typings.nodeRsa.nodeRsaStrings.`pss-sha1`]
   @scala.inline
-  def `pss-sha1`: typings.nodeRsa.nodeRsaStrings.`pss-sha1` = this.cast("pss-sha1")
+  def `pss-sha224`: typings.nodeRsa.nodeRsaStrings.`pss-sha224` = "pss-sha224".asInstanceOf[typings.nodeRsa.nodeRsaStrings.`pss-sha224`]
   @scala.inline
-  def `pss-sha224`: typings.nodeRsa.nodeRsaStrings.`pss-sha224` = this.cast("pss-sha224")
+  def `pss-sha256`: typings.nodeRsa.nodeRsaStrings.`pss-sha256` = "pss-sha256".asInstanceOf[typings.nodeRsa.nodeRsaStrings.`pss-sha256`]
   @scala.inline
-  def `pss-sha256`: typings.nodeRsa.nodeRsaStrings.`pss-sha256` = this.cast("pss-sha256")
+  def `pss-sha384`: typings.nodeRsa.nodeRsaStrings.`pss-sha384` = "pss-sha384".asInstanceOf[typings.nodeRsa.nodeRsaStrings.`pss-sha384`]
   @scala.inline
-  def `pss-sha384`: typings.nodeRsa.nodeRsaStrings.`pss-sha384` = this.cast("pss-sha384")
-  @scala.inline
-  def `pss-sha512`: typings.nodeRsa.nodeRsaStrings.`pss-sha512` = this.cast("pss-sha512")
+  def `pss-sha512`: typings.nodeRsa.nodeRsaStrings.`pss-sha512` = "pss-sha512".asInstanceOf[typings.nodeRsa.nodeRsaStrings.`pss-sha512`]
 }
 

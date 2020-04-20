@@ -15,7 +15,6 @@ object ReadonlyDISABLEDstringSIL {
   @scala.inline
   def apply(DISABLED: String, SILENT: String, STRICT: String): ReadonlyDISABLEDstringSIL = {
     val __obj = js.Dynamic.literal(DISABLED = DISABLED.asInstanceOf[js.Any], SILENT = SILENT.asInstanceOf[js.Any], STRICT = STRICT.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReadonlyDISABLEDstringSIL]
   }
 }

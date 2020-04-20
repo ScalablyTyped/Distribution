@@ -31,7 +31,7 @@ class PerfCounter () extends js.Object {
   /**
     * Returns the average value since the performance counter is running
     */
-  def average(): Double = js.native
+  def average: Double = js.native
   /**
     * Start monitoring this performance counter
     */
@@ -39,11 +39,11 @@ class PerfCounter () extends js.Object {
   /**
     * Gets the total value count
     */
-  def count(): Double = js.native
+  def count: Double = js.native
   /**
     * Returns the current value
     */
-  def current(): Double = js.native
+  def current: Double = js.native
   /**
     * Compute the time lapsed since the previous beginMonitoring() call.
     * @param newFrame true by default to fetch the result and monitor a new frame, if false the time monitored will be added to the current frame counter
@@ -58,19 +58,19 @@ class PerfCounter () extends js.Object {
   /**
     * Returns the average value of the last second the counter was monitored
     */
-  def lastSecAverage(): Double = js.native
+  def lastSecAverage: Double = js.native
   /**
     * Returns the biggest value ever
     */
-  def max(): Double = js.native
+  def max: Double = js.native
   /**
     * Returns the smallest value ever
     */
-  def min(): Double = js.native
+  def min: Double = js.native
   /**
     * Gets the accumulated total
     */
-  def total(): Double = js.native
+  def total: Double = js.native
 }
 
 /* static members */

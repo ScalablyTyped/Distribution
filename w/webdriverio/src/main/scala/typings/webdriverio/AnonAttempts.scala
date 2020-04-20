@@ -13,7 +13,6 @@ object AnonAttempts {
   @scala.inline
   def apply(attempts: Double, limit: Double): AnonAttempts = {
     val __obj = js.Dynamic.literal(attempts = attempts.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAttempts]
   }
 }

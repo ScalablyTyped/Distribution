@@ -12,7 +12,6 @@ object RoomParams {
   @scala.inline
   def apply(roomId: String): RoomParams = {
     val __obj = js.Dynamic.literal(roomId = roomId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RoomParams]
   }
 }

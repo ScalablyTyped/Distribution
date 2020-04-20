@@ -18,7 +18,6 @@ object InstantiableSymbol {
     getTypeParameterArgumentMap: () => TypeArgumentMap
   ): InstantiableSymbol = {
     val __obj = js.Dynamic.literal(getAllowedToReferenceTypeParameters = js.Any.fromFunction0(getAllowedToReferenceTypeParameters), getIsSpecialized = js.Any.fromFunction0(getIsSpecialized), getTypeParameterArgumentMap = js.Any.fromFunction0(getTypeParameterArgumentMap))
-  
     __obj.asInstanceOf[InstantiableSymbol]
   }
 }

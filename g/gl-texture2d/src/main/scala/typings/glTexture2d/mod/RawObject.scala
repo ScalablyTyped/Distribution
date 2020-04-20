@@ -16,7 +16,6 @@ object RawObject {
   @scala.inline
   def apply(height: Double, raw: ArrayBufferView | InputType | ImageBitmap, width: Double): RawObject = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RawObject]
   }
 }

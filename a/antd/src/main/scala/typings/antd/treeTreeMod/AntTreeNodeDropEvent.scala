@@ -9,7 +9,9 @@ import scala.scalajs.js.annotation._
 
 trait AntTreeNodeDropEvent extends js.Object {
   var dragNode: AntTreeNode
-  var dragNodesKeys: js.Array[String]
+  var dragNodesKeys: js.Array[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ _
+  ]
   var dropPosition: Double
   var dropToGap: js.UndefOr[Boolean] = js.undefined
   var event: MouseEvent[HTMLElement, NativeMouseEvent]
@@ -20,7 +22,9 @@ object AntTreeNodeDropEvent {
   @scala.inline
   def apply(
     dragNode: AntTreeNode,
-    dragNodesKeys: js.Array[String],
+    dragNodesKeys: js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ _
+    ],
     dropPosition: Double,
     event: MouseEvent[HTMLElement, NativeMouseEvent],
     node: AntTreeNode,

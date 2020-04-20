@@ -12,7 +12,6 @@ object AnonEnumValuesAnonNotFound {
   @scala.inline
   def apply(enumValues: AnonNotFound): AnonEnumValuesAnonNotFound = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumValuesAnonNotFound]
   }
 }

@@ -13,7 +13,6 @@ object DefineAnalysisSchemeResponse {
   @scala.inline
   def apply(AnalysisScheme: AnalysisSchemeStatus): DefineAnalysisSchemeResponse = {
     val __obj = js.Dynamic.literal(AnalysisScheme = AnalysisScheme.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DefineAnalysisSchemeResponse]
   }
 }

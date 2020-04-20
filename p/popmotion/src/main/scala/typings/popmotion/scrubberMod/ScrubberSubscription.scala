@@ -12,7 +12,6 @@ object ScrubberSubscription {
   @scala.inline
   def apply(seek: Double => js.Any): ScrubberSubscription = {
     val __obj = js.Dynamic.literal(seek = js.Any.fromFunction1(seek))
-  
     __obj.asInstanceOf[ScrubberSubscription]
   }
 }

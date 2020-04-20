@@ -13,7 +13,6 @@ object Point {
   @scala.inline
   def apply(column: Double, row: Double): Point = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Point]
   }
 }

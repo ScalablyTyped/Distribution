@@ -105,7 +105,7 @@ class Logger_ protected () extends ILogger {
     * A signal emitted when the list of log messages changes.
     */
   @JSName("contentChanged")
-  def contentChanged_MLogger_(): ISignal[this.type, IContentChange] = js.native
+  def contentChanged_MLogger_ : ISignal[this.type, IContentChange] = js.native
   /**
     * Dispose of the resources held by the object.
     *
@@ -123,17 +123,17 @@ class Logger_ protected () extends ILogger {
     * Whether the logger is disposed.
     */
   @JSName("isDisposed")
-  def isDisposed_MLogger_(): Boolean = js.native
+  def isDisposed_MLogger_ : Boolean = js.native
   /**
     * Number of outputs logged.
     */
   @JSName("length")
-  def length_MLogger_(): Double = js.native
+  def length_MLogger_ : Double = js.native
   /**
     * The level of outputs logged
     */
   @JSName("level")
-  def level_MLogger_(): LogLevel = js.native
+  def level_MLogger_ : LogLevel = js.native
   @JSName("level")
   def level_MLogger_(newValue: LogLevel): js.Any = js.native
   /**
@@ -151,7 +151,7 @@ class Logger_ protected () extends ILogger {
     * `.maxLength`.
     */
   @JSName("maxLength")
-  def maxLength_MLogger_(): Double = js.native
+  def maxLength_MLogger_ : Double = js.native
   @JSName("maxLength")
   def maxLength_MLogger_(value: Double): js.Any = js.native
   @JSName("rendermime")
@@ -162,16 +162,16 @@ class Logger_ protected () extends ILogger {
     * Rendermime to use when rendering outputs logged.
     */
   @JSName("rendermime")
-  def rendermime_Union(): IRenderMimeRegistry | Null = js.native
+  def rendermime_Union: IRenderMimeRegistry | Null = js.native
   /**
     * A signal emitted when the log state changes.
     */
   @JSName("stateChanged")
-  def stateChanged_MLogger_(): ISignal[this.type, IStateChange] = js.native
+  def stateChanged_MLogger_ : ISignal[this.type, IStateChange] = js.native
   /**
     * The number of messages that have ever been stored.
     */
   @JSName("version")
-  def version_MLogger_(): Double = js.native
+  def version_MLogger_ : Double = js.native
 }
 

@@ -24,7 +24,6 @@ object DeleteNotificationRequest {
   @scala.inline
   def apply(AccountId: AccountId, BudgetName: BudgetName, Notification: Notification): DeleteNotificationRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], BudgetName = BudgetName.asInstanceOf[js.Any], Notification = Notification.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteNotificationRequest]
   }
 }

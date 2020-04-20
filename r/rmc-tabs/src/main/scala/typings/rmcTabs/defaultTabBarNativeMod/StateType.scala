@@ -21,7 +21,6 @@ object StateType {
     _widthTabUnderline: Value
   ): StateType = {
     val __obj = js.Dynamic.literal(_containerWidth = _containerWidth.asInstanceOf[js.Any], _leftTabUnderline = _leftTabUnderline.asInstanceOf[js.Any], _tabContainerWidth = _tabContainerWidth.asInstanceOf[js.Any], _widthTabUnderline = _widthTabUnderline.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StateType]
   }
 }

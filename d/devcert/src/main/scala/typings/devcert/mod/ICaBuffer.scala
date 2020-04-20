@@ -14,7 +14,6 @@ object ICaBuffer {
   @scala.inline
   def apply(ca: Buffer): ICaBuffer = {
     val __obj = js.Dynamic.literal(ca = ca.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICaBuffer]
   }
 }

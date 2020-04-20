@@ -15,10 +15,8 @@ trait WidgetFormat extends js.Object
 
 object WidgetFormat {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def classic: typings.deezerSdk.deezerSdkStrings.classic = "classic".asInstanceOf[typings.deezerSdk.deezerSdkStrings.classic]
   @scala.inline
-  def classic: typings.deezerSdk.deezerSdkStrings.classic = this.cast("classic")
-  @scala.inline
-  def square: typings.deezerSdk.deezerSdkStrings.square = this.cast("square")
+  def square: typings.deezerSdk.deezerSdkStrings.square = "square".asInstanceOf[typings.deezerSdk.deezerSdkStrings.square]
 }
 

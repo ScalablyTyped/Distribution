@@ -14,7 +14,6 @@ object RDSDatabaseCredentials {
   @scala.inline
   def apply(Password: RDSDatabasePassword, Username: RDSDatabaseUsername): RDSDatabaseCredentials = {
     val __obj = js.Dynamic.literal(Password = Password.asInstanceOf[js.Any], Username = Username.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RDSDatabaseCredentials]
   }
 }

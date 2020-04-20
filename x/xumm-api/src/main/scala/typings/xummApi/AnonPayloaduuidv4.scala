@@ -22,7 +22,6 @@ object AnonPayloaduuidv4 {
     user_token: Boolean
   ): AnonPayloaduuidv4 = {
     val __obj = js.Dynamic.literal(payload_uuidv4 = payload_uuidv4.asInstanceOf[js.Any], reference_call_uuidv4 = reference_call_uuidv4.asInstanceOf[js.Any], return_url = return_url.asInstanceOf[js.Any], signed = signed.asInstanceOf[js.Any], user_token = user_token.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPayloaduuidv4]
   }
 }

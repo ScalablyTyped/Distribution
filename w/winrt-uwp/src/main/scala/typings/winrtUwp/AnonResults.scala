@@ -15,7 +15,6 @@ object AnonResults {
   @scala.inline
   def apply(results: Vector3, returnValue: IPromiseWithIAsyncAction): AnonResults = {
     val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonResults]
   }
 }

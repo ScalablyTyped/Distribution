@@ -15,7 +15,6 @@ object LastPlay {
   @scala.inline
   def apply(dj: DJ, media: Media, score: Score): LastPlay = {
     val __obj = js.Dynamic.literal(dj = dj.asInstanceOf[js.Any], media = media.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LastPlay]
   }
 }

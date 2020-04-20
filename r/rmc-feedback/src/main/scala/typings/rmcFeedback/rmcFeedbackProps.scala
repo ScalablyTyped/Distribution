@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait rmcFeedbackProps {
   @scala.inline
-  def RmcFeedbackProps: ITouchProps.type = typings.rmcFeedback.propTypesMod.ITouchProps
+  def RmcFeedbackProps: ITouchProps.type = ITouchProps
   type RmcFeedbackProps = ITouchProps
   @scala.inline
-  def TouchFeedbackProps: ITouchProps.type = typings.rmcFeedback.propTypesMod.ITouchProps
+  def TouchFeedbackProps: ITouchProps.type = ITouchProps
   type TouchFeedbackProps = ITouchProps
 }
 

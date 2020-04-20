@@ -20,7 +20,6 @@ object AnonTrigger {
   @scala.inline
   def apply[TTarget, TData](trigger: (typings.jquery.JQuery_.Event, TData) => Unit | `false`): AnonTrigger[TTarget, TData] = {
     val __obj = js.Dynamic.literal(trigger = js.Any.fromFunction2(trigger))
-  
     __obj.asInstanceOf[AnonTrigger[TTarget, TData]]
   }
 }

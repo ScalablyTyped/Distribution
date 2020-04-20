@@ -19,7 +19,6 @@ object PsbtFromKeyValsArg {
     outputKeyVals: js.Array[js.Array[KeyValue]]
   ): PsbtFromKeyValsArg = {
     val __obj = js.Dynamic.literal(globalMapKeyVals = globalMapKeyVals.asInstanceOf[js.Any], inputKeyVals = inputKeyVals.asInstanceOf[js.Any], outputKeyVals = outputKeyVals.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PsbtFromKeyValsArg]
   }
 }

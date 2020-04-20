@@ -23,7 +23,6 @@ object ClusterStep {
     name: Input[String]
   ): ClusterStep = {
     val __obj = js.Dynamic.literal(actionOnFailure = actionOnFailure.asInstanceOf[js.Any], hadoopJarStep = hadoopJarStep.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClusterStep]
   }
 }

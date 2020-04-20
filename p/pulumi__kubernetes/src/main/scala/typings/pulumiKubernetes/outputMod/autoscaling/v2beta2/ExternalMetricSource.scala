@@ -24,7 +24,6 @@ object ExternalMetricSource {
   @scala.inline
   def apply(metric: MetricIdentifier, target: MetricTarget): ExternalMetricSource = {
     val __obj = js.Dynamic.literal(metric = metric.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExternalMetricSource]
   }
 }

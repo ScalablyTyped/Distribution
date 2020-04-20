@@ -14,10 +14,8 @@ trait OlPageType extends js.Object
 
 object OlPageType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olPageTypePlanner: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def olPageTypePlanner: `0` = this.cast(0)
-  @scala.inline
-  def olPageTypeTracker: `1` = this.cast(1)
+  def olPageTypeTracker: `1` = 1.asInstanceOf[`1`]
 }
 

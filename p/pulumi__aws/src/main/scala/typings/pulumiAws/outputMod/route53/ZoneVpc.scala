@@ -20,7 +20,6 @@ object ZoneVpc {
   @scala.inline
   def apply(vpcId: String, vpcRegion: String): ZoneVpc = {
     val __obj = js.Dynamic.literal(vpcId = vpcId.asInstanceOf[js.Any], vpcRegion = vpcRegion.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ZoneVpc]
   }
 }

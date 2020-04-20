@@ -9,4 +9,5 @@ package object esListMod {
     /* props */ typings.reactVirtualized.esListMod.ListRowProps, 
     typings.react.mod.ReactNode
   ]
+  type RenderedRows = typings.reactVirtualized.mod.OverscanIndexRange with typings.reactVirtualized.mod.IndexRange
 }

@@ -21,7 +21,6 @@ object TabledataResource {
     list: AnonPageToken => Request_[TableDataList]
   ): TabledataResource = {
     val __obj = js.Dynamic.literal(insertAll = js.Any.fromFunction1(insertAll), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[TabledataResource]
   }
 }

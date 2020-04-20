@@ -14,10 +14,8 @@ trait styleGridColumn extends js.Object
 
 object styleGridColumn {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleGridColumnNotSet: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleGridColumnNotSet: `0` = this.cast(0)
-  @scala.inline
-  def styleGridColumn_Max: `2147483647` = this.cast(2147483647)
+  def styleGridColumn_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

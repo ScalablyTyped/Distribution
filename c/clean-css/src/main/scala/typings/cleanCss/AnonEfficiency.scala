@@ -27,7 +27,6 @@ object AnonEfficiency {
   @scala.inline
   def apply(efficiency: Double, minifiedSize: Double, originalSize: Double, timeSpent: Double): AnonEfficiency = {
     val __obj = js.Dynamic.literal(efficiency = efficiency.asInstanceOf[js.Any], minifiedSize = minifiedSize.asInstanceOf[js.Any], originalSize = originalSize.asInstanceOf[js.Any], timeSpent = timeSpent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEfficiency]
   }
 }

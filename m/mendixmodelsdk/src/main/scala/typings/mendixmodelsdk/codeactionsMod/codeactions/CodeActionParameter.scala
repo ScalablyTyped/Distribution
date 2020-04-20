@@ -61,24 +61,24 @@ abstract class CodeActionParameter protected ()
   /**
     * In version 7.21.0: introduced
     */
-  def actionParameterType(): ParameterType = js.native
+  def actionParameterType: ParameterType = js.native
   def actionParameterType(newValue: ParameterType): js.Any = js.native
   /**
     * In version 7.18.0: introduced
     */
-  def category(): String = js.native
+  def category: String = js.native
   def category(newValue: String): js.Any = js.native
-  def containerAsCodeAction(): CodeAction = js.native
-  def containerAsJavaAction(): JavaAction = js.native
+  def containerAsCodeAction: CodeAction = js.native
+  def containerAsJavaAction: JavaAction = js.native
   /**
     * In version 6.10.0: introduced
     */
-  def description(): String = js.native
+  def description: String = js.native
   def description(newValue: String): js.Any = js.native
-  def name(): String = js.native
+  def name: String = js.native
   def name(newValue: String): js.Any = js.native
   @JSName("qualifiedName")
-  def qualifiedName_MCodeActionParameter(): String | Null = js.native
+  def qualifiedName_MCodeActionParameter: String | Null = js.native
 }
 
 /* static members */

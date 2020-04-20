@@ -12,7 +12,6 @@ object AnonCloseIcon {
   @scala.inline
   def apply(closeIcon: String): AnonCloseIcon = {
     val __obj = js.Dynamic.literal(closeIcon = closeIcon.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCloseIcon]
   }
 }

@@ -13,7 +13,6 @@ object IAuthCra {
   @scala.inline
   def apply(derive_key: (String, String, Double, Double) => String, sign: (String, String) => String): IAuthCra = {
     val __obj = js.Dynamic.literal(derive_key = js.Any.fromFunction4(derive_key), sign = js.Any.fromFunction2(sign))
-  
     __obj.asInstanceOf[IAuthCra]
   }
 }

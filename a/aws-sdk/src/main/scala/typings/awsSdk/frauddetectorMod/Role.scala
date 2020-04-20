@@ -20,7 +20,6 @@ object Role {
   @scala.inline
   def apply(arn: String, name: String): Role = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Role]
   }
 }

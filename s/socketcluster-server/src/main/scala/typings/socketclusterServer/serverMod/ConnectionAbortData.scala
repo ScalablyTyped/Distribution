@@ -13,7 +13,6 @@ object ConnectionAbortData {
   @scala.inline
   def apply(code: Double, reason: String, socket: typings.socketclusterServer.serversocketMod.^): ConnectionAbortData = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], socket = socket.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConnectionAbortData]
   }
 }

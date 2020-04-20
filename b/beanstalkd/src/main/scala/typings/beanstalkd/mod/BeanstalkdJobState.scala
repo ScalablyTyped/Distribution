@@ -14,14 +14,12 @@ trait BeanstalkdJobState extends js.Object
 
 object BeanstalkdJobState {
   @scala.inline
-  def buried: typings.beanstalkd.beanstalkdStrings.buried = this.cast("buried")
+  def buried: typings.beanstalkd.beanstalkdStrings.buried = "buried".asInstanceOf[typings.beanstalkd.beanstalkdStrings.buried]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def delayed: typings.beanstalkd.beanstalkdStrings.delayed = "delayed".asInstanceOf[typings.beanstalkd.beanstalkdStrings.delayed]
   @scala.inline
-  def delayed: typings.beanstalkd.beanstalkdStrings.delayed = this.cast("delayed")
+  def ready: typings.beanstalkd.beanstalkdStrings.ready = "ready".asInstanceOf[typings.beanstalkd.beanstalkdStrings.ready]
   @scala.inline
-  def ready: typings.beanstalkd.beanstalkdStrings.ready = this.cast("ready")
-  @scala.inline
-  def reserved: typings.beanstalkd.beanstalkdStrings.reserved = this.cast("reserved")
+  def reserved: typings.beanstalkd.beanstalkdStrings.reserved = "reserved".asInstanceOf[typings.beanstalkd.beanstalkdStrings.reserved]
 }
 

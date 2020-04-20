@@ -22,7 +22,6 @@ object PanoramaData {
     tiles: PanoramaTileData
   ): PanoramaData = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], tiles = tiles.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PanoramaData]
   }
 }

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 object conductorAnimateComponents extends conductorAnimateProps {
   @scala.inline
-  def Animated: ComponentType[AnimatedProps] = js.constructorOf[typings.conductorAnimate.mod.Animated].asInstanceOf[typings.react.mod.ComponentType[AnimatedProps]]
+  def Animated: ComponentType[AnimatedProps] = js.constructorOf[typings.conductorAnimate.mod.Animated].asInstanceOf[ComponentType[AnimatedProps]]
   @scala.inline
-  def Conductor: ComponentType[ConductorProps] = js.constructorOf[typings.conductorAnimate.mod.Conductor].asInstanceOf[typings.react.mod.ComponentType[ConductorProps]]
+  def Conductor: ComponentType[ConductorProps] = js.constructorOf[typings.conductorAnimate.mod.Conductor].asInstanceOf[ComponentType[ConductorProps]]
 }
 

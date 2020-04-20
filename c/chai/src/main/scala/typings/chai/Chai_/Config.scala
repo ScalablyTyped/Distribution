@@ -37,7 +37,6 @@ object Config {
     useProxy: Boolean
   ): Config = {
     val __obj = js.Dynamic.literal(includeStack = includeStack.asInstanceOf[js.Any], proxyExcludedKeys = proxyExcludedKeys.asInstanceOf[js.Any], showDiff = showDiff.asInstanceOf[js.Any], truncateThreshold = truncateThreshold.asInstanceOf[js.Any], useProxy = useProxy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Config]
   }
 }

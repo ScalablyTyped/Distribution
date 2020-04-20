@@ -18,7 +18,6 @@ object AnonCheckedEvent {
   @scala.inline
   def apply(checked: Boolean, event: SyntheticEvent[MouseEvent[HTMLInputElement, NativeMouseEvent], Event_]): AnonCheckedEvent = {
     val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCheckedEvent]
   }
 }

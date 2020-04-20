@@ -16,7 +16,6 @@ object SkEnumSkAffinityDownstrea {
   @scala.inline
   def apply(Downstream: SkAffinity, Upstream: SkAffinity, values: js.Array[SkAffinity]): SkEnumSkAffinityDownstrea = {
     val __obj = js.Dynamic.literal(Downstream = Downstream.asInstanceOf[js.Any], Upstream = Upstream.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SkEnumSkAffinityDownstrea]
   }
 }

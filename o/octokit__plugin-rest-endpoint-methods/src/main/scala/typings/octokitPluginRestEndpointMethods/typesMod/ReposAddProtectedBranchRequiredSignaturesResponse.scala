@@ -13,7 +13,6 @@ object ReposAddProtectedBranchRequiredSignaturesResponse {
   @scala.inline
   def apply(enabled: Boolean, url: String): ReposAddProtectedBranchRequiredSignaturesResponse = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReposAddProtectedBranchRequiredSignaturesResponse]
   }
 }

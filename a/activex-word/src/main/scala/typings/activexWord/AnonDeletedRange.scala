@@ -16,7 +16,6 @@ object AnonDeletedRange {
   @scala.inline
   def apply(DeletedRange: Range, InUndoRedo: Boolean, OldXMLNode: XMLNode): AnonDeletedRange = {
     val __obj = js.Dynamic.literal(DeletedRange = DeletedRange.asInstanceOf[js.Any], InUndoRedo = InUndoRedo.asInstanceOf[js.Any], OldXMLNode = OldXMLNode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDeletedRange]
   }
 }

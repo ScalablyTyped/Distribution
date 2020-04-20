@@ -41,7 +41,6 @@ object CurrentLoadData {
     raw_currentload_user: Double
   ): CurrentLoadData = {
     val __obj = js.Dynamic.literal(avgload = avgload.asInstanceOf[js.Any], cpus = cpus.asInstanceOf[js.Any], currentload = currentload.asInstanceOf[js.Any], currentload_idle = currentload_idle.asInstanceOf[js.Any], currentload_irq = currentload_irq.asInstanceOf[js.Any], currentload_nice = currentload_nice.asInstanceOf[js.Any], currentload_system = currentload_system.asInstanceOf[js.Any], currentload_user = currentload_user.asInstanceOf[js.Any], raw_currentload = raw_currentload.asInstanceOf[js.Any], raw_currentload_idle = raw_currentload_idle.asInstanceOf[js.Any], raw_currentload_irq = raw_currentload_irq.asInstanceOf[js.Any], raw_currentload_nice = raw_currentload_nice.asInstanceOf[js.Any], raw_currentload_system = raw_currentload_system.asInstanceOf[js.Any], raw_currentload_user = raw_currentload_user.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CurrentLoadData]
   }
 }

@@ -16,7 +16,6 @@ object ResetTimerAction {
   @scala.inline
   def apply(timerName: TimerName): ResetTimerAction = {
     val __obj = js.Dynamic.literal(timerName = timerName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResetTimerAction]
   }
 }

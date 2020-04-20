@@ -25,7 +25,7 @@ object AnonFactor {
     if (factor != null) __obj.updateDynamic("factor")(factor.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (`reconnect timeout` != null) __obj.updateDynamic("reconnect timeout")(`reconnect timeout`.asInstanceOf[js.Any])
+    if (`reconnect timeout` != null) __obj.updateDynamic("reconnect timeout")((`reconnect timeout`).asInstanceOf[js.Any])
     if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonFactor]
   }

@@ -13,7 +13,6 @@ object AnonLongShort {
   @scala.inline
   def apply(long: RecordDecimalFormatNumLDM, short: RecordDecimalFormatNumLDM): AnonLongShort = {
     val __obj = js.Dynamic.literal(long = long.asInstanceOf[js.Any], short = short.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLongShort]
   }
 }

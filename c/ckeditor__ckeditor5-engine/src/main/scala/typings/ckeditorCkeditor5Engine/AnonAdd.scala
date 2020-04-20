@@ -12,7 +12,6 @@ object AnonAdd {
   @scala.inline
   def apply(add: () => Unit): AnonAdd = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction0(add))
-  
     __obj.asInstanceOf[AnonAdd]
   }
 }

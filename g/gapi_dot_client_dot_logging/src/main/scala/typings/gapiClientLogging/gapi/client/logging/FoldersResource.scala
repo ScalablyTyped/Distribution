@@ -14,7 +14,6 @@ object FoldersResource {
   @scala.inline
   def apply(exclusions: ExclusionsResource, logs: LogsResource, sinks: SinksResource): FoldersResource = {
     val __obj = js.Dynamic.literal(exclusions = exclusions.asInstanceOf[js.Any], logs = logs.asInstanceOf[js.Any], sinks = sinks.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FoldersResource]
   }
 }

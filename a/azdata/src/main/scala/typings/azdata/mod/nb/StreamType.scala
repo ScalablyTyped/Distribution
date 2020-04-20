@@ -12,10 +12,8 @@ trait StreamType extends js.Object
 
 object StreamType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def stderr: typings.azdata.azdataStrings.stderr = "stderr".asInstanceOf[typings.azdata.azdataStrings.stderr]
   @scala.inline
-  def stderr: typings.azdata.azdataStrings.stderr = this.cast("stderr")
-  @scala.inline
-  def stdout: typings.azdata.azdataStrings.stdout = this.cast("stdout")
+  def stdout: typings.azdata.azdataStrings.stdout = "stdout".asInstanceOf[typings.azdata.azdataStrings.stdout]
 }
 

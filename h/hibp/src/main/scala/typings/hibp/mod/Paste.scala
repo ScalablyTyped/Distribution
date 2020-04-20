@@ -16,7 +16,6 @@ object Paste {
   @scala.inline
   def apply(Date: String, EmailCount: Double, Id: String, Source: String, Title: String): Paste = {
     val __obj = js.Dynamic.literal(Date = Date.asInstanceOf[js.Any], EmailCount = EmailCount.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any], Title = Title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Paste]
   }
 }

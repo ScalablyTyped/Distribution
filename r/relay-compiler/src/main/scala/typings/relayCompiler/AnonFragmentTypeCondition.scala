@@ -12,7 +12,6 @@ object AnonFragmentTypeCondition {
   @scala.inline
   def apply(fragmentTypeCondition: String): AnonFragmentTypeCondition = {
     val __obj = js.Dynamic.literal(fragmentTypeCondition = fragmentTypeCondition.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFragmentTypeCondition]
   }
 }

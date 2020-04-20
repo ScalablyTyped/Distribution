@@ -20,7 +20,6 @@ object DeleteNotificationConfigurationType {
   @scala.inline
   def apply(AutoScalingGroupName: ResourceName, TopicARN: ResourceName): DeleteNotificationConfigurationType = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any], TopicARN = TopicARN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteNotificationConfigurationType]
   }
 }

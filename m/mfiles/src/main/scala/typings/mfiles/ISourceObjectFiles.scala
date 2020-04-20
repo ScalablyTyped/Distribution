@@ -24,7 +24,6 @@ object ISourceObjectFiles {
     Remove: Double => Unit
   ): ISourceObjectFiles = {
     val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), AddEmptyFile = js.Any.fromFunction2(AddEmptyFile), AddFile = js.Any.fromFunction3(AddFile), Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Remove = js.Any.fromFunction1(Remove))
-  
     __obj.asInstanceOf[ISourceObjectFiles]
   }
 }

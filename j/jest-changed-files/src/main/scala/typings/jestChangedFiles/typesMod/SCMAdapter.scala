@@ -17,7 +17,6 @@ object SCMAdapter {
     getRoot: Path => js.Promise[Path | Null]
   ): SCMAdapter = {
     val __obj = js.Dynamic.literal(findChangedFiles = js.Any.fromFunction2(findChangedFiles), getRoot = js.Any.fromFunction1(getRoot))
-  
     __obj.asInstanceOf[SCMAdapter]
   }
 }

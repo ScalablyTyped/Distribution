@@ -12,7 +12,6 @@ object AnonEnumValuesAnonCancellingCompleted {
   @scala.inline
   def apply(enumValues: AnonCancellingCompleted): AnonEnumValuesAnonCancellingCompleted = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumValuesAnonCancellingCompleted]
   }
 }

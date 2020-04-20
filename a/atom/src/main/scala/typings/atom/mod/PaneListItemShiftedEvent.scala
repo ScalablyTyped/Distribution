@@ -15,7 +15,6 @@ object PaneListItemShiftedEvent {
   @scala.inline
   def apply(index: Double, item: js.Object): PaneListItemShiftedEvent = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PaneListItemShiftedEvent]
   }
 }

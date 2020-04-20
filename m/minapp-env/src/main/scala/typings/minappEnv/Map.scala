@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Map[K, V] extends js.Object {
   /** Returns an iterable of entries in the map. */
-  @JSName(scala.scalajs.js.Symbol.iterator)
+  @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[js.Tuple2[K, V]]] = js.native
   val size: Double = js.native
-  @JSName(scala.scalajs.js.Symbol.toStringTag)
+  @JSName(js.Symbol.toStringTag)
   val toStringTag: typings.minappEnv.minappEnvStrings.Map = js.native
   def clear(): Unit = js.native
   def delete(key: K): scala.Boolean = js.native

@@ -13,12 +13,10 @@ trait GoogleActionsV2MediaStatusStatus extends js.Object
 
 object GoogleActionsV2MediaStatusStatus {
   @scala.inline
-  def FAILED: typings.actionsOnGoogle.actionsOnGoogleStrings.FAILED = this.cast("FAILED")
+  def FAILED: typings.actionsOnGoogle.actionsOnGoogleStrings.FAILED = "FAILED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.FAILED]
   @scala.inline
-  def FINISHED: typings.actionsOnGoogle.actionsOnGoogleStrings.FINISHED = this.cast("FINISHED")
+  def FINISHED: typings.actionsOnGoogle.actionsOnGoogleStrings.FINISHED = "FINISHED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.FINISHED]
   @scala.inline
-  def STATUS_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.STATUS_UNSPECIFIED = this.cast("STATUS_UNSPECIFIED")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def STATUS_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.STATUS_UNSPECIFIED = "STATUS_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.STATUS_UNSPECIFIED]
 }
 

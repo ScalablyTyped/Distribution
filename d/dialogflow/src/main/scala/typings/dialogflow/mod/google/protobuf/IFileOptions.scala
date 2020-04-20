@@ -36,7 +36,9 @@ trait IFileOptions extends js.Object {
   /** FileOptions objcClassPrefix */
   var objcClassPrefix: js.UndefOr[String | Null] = js.undefined
   /** FileOptions optimizeFor */
-  var optimizeFor: js.UndefOr[OptimizeMode | String | Null] = js.undefined
+  var optimizeFor: js.UndefOr[
+    OptimizeMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.FileOptions.OptimizeMode * / any */ String) | Null
+  ] = js.undefined
   /** FileOptions phpClassPrefix */
   var phpClassPrefix: js.UndefOr[String | Null] = js.undefined
   /** FileOptions phpGenericServices */
@@ -71,7 +73,7 @@ object IFileOptions {
     javaPackage: String = null,
     javaStringCheckUtf8: js.UndefOr[Boolean] = js.undefined,
     objcClassPrefix: String = null,
-    optimizeFor: OptimizeMode | String = null,
+    optimizeFor: OptimizeMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.FileOptions.OptimizeMode * / any */ String) = null,
     phpClassPrefix: String = null,
     phpGenericServices: js.UndefOr[Boolean] = js.undefined,
     phpMetadataNamespace: String = null,

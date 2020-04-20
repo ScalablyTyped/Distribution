@@ -20,7 +20,6 @@ object IPSetUpdate {
   @scala.inline
   def apply(Action: ChangeAction, IPSetDescriptor: IPSetDescriptor): IPSetUpdate = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], IPSetDescriptor = IPSetDescriptor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPSetUpdate]
   }
 }

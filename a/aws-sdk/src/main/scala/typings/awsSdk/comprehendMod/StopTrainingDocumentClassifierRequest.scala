@@ -16,7 +16,6 @@ object StopTrainingDocumentClassifierRequest {
   @scala.inline
   def apply(DocumentClassifierArn: DocumentClassifierArn): StopTrainingDocumentClassifierRequest = {
     val __obj = js.Dynamic.literal(DocumentClassifierArn = DocumentClassifierArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopTrainingDocumentClassifierRequest]
   }
 }

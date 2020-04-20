@@ -24,7 +24,6 @@ object IOptions {
   @scala.inline
   def apply(plugin: IPlugin, registry: ISettingRegistry): IOptions = {
     val __obj = js.Dynamic.literal(plugin = plugin.asInstanceOf[js.Any], registry = registry.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IOptions]
   }
 }

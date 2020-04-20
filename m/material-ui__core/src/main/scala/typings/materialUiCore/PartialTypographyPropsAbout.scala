@@ -1,5 +1,6 @@
 package typings.materialUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
 import typings.materialUiCore.materialUiCoreStrings.additions
@@ -169,7 +170,7 @@ trait PartialTypographyPropsAbout extends js.Object {
   var headlineMapping: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ type in @material-ui/core.@material-ui/core/Typography/Typography.Style ]: string}
-    */ typings.materialUiCore.materialUiCoreStrings.PartialTypographyPropsAbout with js.Any
+    */ typings.materialUiCore.materialUiCoreStrings.PartialTypographyPropsAbout with TopLevel[js.Any]
   ] = js.native
   var hidden: js.UndefOr[Boolean] = js.native
   var id: js.UndefOr[String] = js.native
@@ -360,7 +361,7 @@ object PartialTypographyPropsAbout {
     gutterBottom: js.UndefOr[Boolean] = js.undefined,
     headlineMapping: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ type in @material-ui/core.@material-ui/core/Typography/Typography.Style ]: string}
-    */ typings.materialUiCore.materialUiCoreStrings.PartialTypographyPropsAbout with js.Any = null,
+    */ typings.materialUiCore.materialUiCoreStrings.PartialTypographyPropsAbout with TopLevel[js.Any] = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     `inline`: js.UndefOr[Boolean] = js.undefined,

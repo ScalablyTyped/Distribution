@@ -14,7 +14,6 @@ object EntryObjectModePredicate {
   @scala.inline
   def apply(objectMode: `true`): EntryObjectModePredicate = {
     val __obj = js.Dynamic.literal(objectMode = objectMode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EntryObjectModePredicate]
   }
 }

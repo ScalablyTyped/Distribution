@@ -90,10 +90,10 @@ object buttonMod extends js.Object {
     override var `type`: submit | reset | button = js.native
     @JSName("componentWillLoad")
     def componentWillLoad_MButton(): Unit = js.native
-    /* private */ def hasIconOnly(): js.Any = js.native
+    /* private */ def hasIconOnly: js.Any = js.native
     @JSName("render")
     def render_MButton(): js.Any = js.native
-    /* private */ def rippleType(): js.Any = js.native
+    /* private */ def rippleType: js.Any = js.native
   }
   
 }

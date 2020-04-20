@@ -14,7 +14,6 @@ object LabServeDetails {
   @scala.inline
   def apply(address: String, port: Double, projectType: ProjectType): LabServeDetails = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], projectType = projectType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LabServeDetails]
   }
 }

@@ -15,7 +15,6 @@ object AnonCapture {
   @scala.inline
   def apply(capture: String, captureConstraint: Double, key: String, targets: js.Array[String]): AnonCapture = {
     val __obj = js.Dynamic.literal(capture = capture.asInstanceOf[js.Any], captureConstraint = captureConstraint.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], targets = targets.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCapture]
   }
 }

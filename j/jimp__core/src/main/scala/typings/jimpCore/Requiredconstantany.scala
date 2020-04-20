@@ -13,7 +13,6 @@ object Requiredconstantany {
   @scala.inline
   def apply(constant: js.Any): Requiredconstantany = {
     val __obj = js.Dynamic.literal(constant = constant.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Requiredconstantany]
   }
 }

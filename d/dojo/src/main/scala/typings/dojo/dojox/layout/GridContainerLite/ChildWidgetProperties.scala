@@ -29,7 +29,6 @@ object ChildWidgetProperties {
   @scala.inline
   def apply(column: String, dragRestriction: Boolean): ChildWidgetProperties = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], dragRestriction = dragRestriction.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChildWidgetProperties]
   }
 }

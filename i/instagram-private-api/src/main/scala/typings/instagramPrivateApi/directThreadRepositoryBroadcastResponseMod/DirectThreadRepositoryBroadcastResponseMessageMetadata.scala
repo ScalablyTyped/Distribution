@@ -22,7 +22,6 @@ object DirectThreadRepositoryBroadcastResponseMessageMetadata {
     timestamp: String
   ): DirectThreadRepositoryBroadcastResponseMessageMetadata = {
     val __obj = js.Dynamic.literal(client_context = client_context.asInstanceOf[js.Any], item_id = item_id.asInstanceOf[js.Any], participant_ids = participant_ids.asInstanceOf[js.Any], thread_id = thread_id.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DirectThreadRepositoryBroadcastResponseMessageMetadata]
   }
 }

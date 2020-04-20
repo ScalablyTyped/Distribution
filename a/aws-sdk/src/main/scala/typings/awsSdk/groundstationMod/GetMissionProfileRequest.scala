@@ -16,7 +16,6 @@ object GetMissionProfileRequest {
   @scala.inline
   def apply(missionProfileId: String): GetMissionProfileRequest = {
     val __obj = js.Dynamic.literal(missionProfileId = missionProfileId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetMissionProfileRequest]
   }
 }

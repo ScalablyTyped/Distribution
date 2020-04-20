@@ -20,7 +20,6 @@ object TrustedAdvisorCostOptimizingSummary {
   @scala.inline
   def apply(estimatedMonthlySavings: Double, estimatedPercentMonthlySavings: Double): TrustedAdvisorCostOptimizingSummary = {
     val __obj = js.Dynamic.literal(estimatedMonthlySavings = estimatedMonthlySavings.asInstanceOf[js.Any], estimatedPercentMonthlySavings = estimatedPercentMonthlySavings.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TrustedAdvisorCostOptimizingSummary]
   }
 }

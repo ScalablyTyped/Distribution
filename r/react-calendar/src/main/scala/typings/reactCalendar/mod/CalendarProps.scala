@@ -14,6 +14,10 @@ trait CalendarProps extends js.Object {
   var activeStartDate: js.UndefOr[Date] = js.undefined
   var calendarType: js.UndefOr[CalendarType] = js.undefined
   var className: js.UndefOr[String | js.Array[String]] = js.undefined
+  var defaultActiveStartDate: js.UndefOr[Date] = js.undefined
+  var defaultValue: js.UndefOr[Date | js.Array[Date]] = js.undefined
+  var defaultView: js.UndefOr[Detail] = js.undefined
+  var formatLongDate: js.UndefOr[FormatterCallback] = js.undefined
   var formatMonth: js.UndefOr[FormatterCallback] = js.undefined
   var formatMonthYear: js.UndefOr[FormatterCallback] = js.undefined
   var formatShortWeekday: js.UndefOr[FormatterCallback] = js.undefined
@@ -23,6 +27,7 @@ trait CalendarProps extends js.Object {
   var maxDetail: js.UndefOr[Detail] = js.undefined
   var minDate: js.UndefOr[Date] = js.undefined
   var minDetail: js.UndefOr[Detail] = js.undefined
+  var navigationAriaLabel: js.UndefOr[String] = js.undefined
   var navigationLabel: js.UndefOr[
     js.Function1[
       /* props */ AnonDate, 
@@ -46,6 +51,7 @@ trait CalendarProps extends js.Object {
   var onClickYear: js.UndefOr[DateCallback] = js.undefined
   var onDrillDown: js.UndefOr[ViewCallback] = js.undefined
   var onDrillUp: js.UndefOr[ViewCallback] = js.undefined
+  var onViewChange: js.UndefOr[ViewCallback] = js.undefined
   var prev2AriaLabel: js.UndefOr[String] = js.undefined
   var prev2Label: js.UndefOr[
     String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) | Null
@@ -63,6 +69,7 @@ trait CalendarProps extends js.Object {
    // For backwards compatibility
   var returnValue: js.UndefOr[start | end | range] = js.undefined
   var selectRange: js.UndefOr[Boolean] = js.undefined
+  var showDoubleView: js.UndefOr[Boolean] = js.undefined
   var showFixedNumberOfWeeks: js.UndefOr[Boolean] = js.undefined
   var showNavigation: js.UndefOr[Boolean] = js.undefined
   var showNeighboringMonth: js.UndefOr[Boolean] = js.undefined
@@ -87,6 +94,10 @@ object CalendarProps {
     activeStartDate: Date = null,
     calendarType: CalendarType = null,
     className: String | js.Array[String] = null,
+    defaultActiveStartDate: Date = null,
+    defaultValue: Date | js.Array[Date] = null,
+    defaultView: Detail = null,
+    formatLongDate: (/* locale */ String, /* date */ Date) => String = null,
     formatMonth: (/* locale */ String, /* date */ Date) => String = null,
     formatMonthYear: (/* locale */ String, /* date */ Date) => String = null,
     formatShortWeekday: (/* locale */ String, /* date */ Date) => String = null,
@@ -96,6 +107,7 @@ object CalendarProps {
     maxDetail: Detail = null,
     minDate: Date = null,
     minDetail: Detail = null,
+    navigationAriaLabel: String = null,
     navigationLabel: /* props */ AnonDate => String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ _) | Null = null,
     next2AriaLabel: String = null,
     next2Label: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) = null,
@@ -110,6 +122,7 @@ object CalendarProps {
     onClickYear: /* date */ Date => Unit = null,
     onDrillDown: /* props */ ViewCallbackProperties => Unit = null,
     onDrillUp: /* props */ ViewCallbackProperties => Unit = null,
+    onViewChange: /* props */ ViewCallbackProperties => Unit = null,
     prev2AriaLabel: String = null,
     prev2Label: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) = null,
     prevAriaLabel: String = null,
@@ -117,6 +130,7 @@ object CalendarProps {
     renderChildren: /* props */ CalendarTileProperties => (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ _) | Null = null,
     returnValue: start | end | range = null,
     selectRange: js.UndefOr[Boolean] = js.undefined,
+    showDoubleView: js.UndefOr[Boolean] = js.undefined,
     showFixedNumberOfWeeks: js.UndefOr[Boolean] = js.undefined,
     showNavigation: js.UndefOr[Boolean] = js.undefined,
     showNeighboringMonth: js.UndefOr[Boolean] = js.undefined,
@@ -134,6 +148,10 @@ object CalendarProps {
     if (activeStartDate != null) __obj.updateDynamic("activeStartDate")(activeStartDate.asInstanceOf[js.Any])
     if (calendarType != null) __obj.updateDynamic("calendarType")(calendarType.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (defaultActiveStartDate != null) __obj.updateDynamic("defaultActiveStartDate")(defaultActiveStartDate.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (defaultView != null) __obj.updateDynamic("defaultView")(defaultView.asInstanceOf[js.Any])
+    if (formatLongDate != null) __obj.updateDynamic("formatLongDate")(js.Any.fromFunction2(formatLongDate))
     if (formatMonth != null) __obj.updateDynamic("formatMonth")(js.Any.fromFunction2(formatMonth))
     if (formatMonthYear != null) __obj.updateDynamic("formatMonthYear")(js.Any.fromFunction2(formatMonthYear))
     if (formatShortWeekday != null) __obj.updateDynamic("formatShortWeekday")(js.Any.fromFunction2(formatShortWeekday))
@@ -143,6 +161,7 @@ object CalendarProps {
     if (maxDetail != null) __obj.updateDynamic("maxDetail")(maxDetail.asInstanceOf[js.Any])
     if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
     if (minDetail != null) __obj.updateDynamic("minDetail")(minDetail.asInstanceOf[js.Any])
+    if (navigationAriaLabel != null) __obj.updateDynamic("navigationAriaLabel")(navigationAriaLabel.asInstanceOf[js.Any])
     if (navigationLabel != null) __obj.updateDynamic("navigationLabel")(js.Any.fromFunction1(navigationLabel))
     if (next2AriaLabel != null) __obj.updateDynamic("next2AriaLabel")(next2AriaLabel.asInstanceOf[js.Any])
     if (next2Label != null) __obj.updateDynamic("next2Label")(next2Label.asInstanceOf[js.Any])
@@ -157,6 +176,7 @@ object CalendarProps {
     if (onClickYear != null) __obj.updateDynamic("onClickYear")(js.Any.fromFunction1(onClickYear))
     if (onDrillDown != null) __obj.updateDynamic("onDrillDown")(js.Any.fromFunction1(onDrillDown))
     if (onDrillUp != null) __obj.updateDynamic("onDrillUp")(js.Any.fromFunction1(onDrillUp))
+    if (onViewChange != null) __obj.updateDynamic("onViewChange")(js.Any.fromFunction1(onViewChange))
     if (prev2AriaLabel != null) __obj.updateDynamic("prev2AriaLabel")(prev2AriaLabel.asInstanceOf[js.Any])
     if (prev2Label != null) __obj.updateDynamic("prev2Label")(prev2Label.asInstanceOf[js.Any])
     if (prevAriaLabel != null) __obj.updateDynamic("prevAriaLabel")(prevAriaLabel.asInstanceOf[js.Any])
@@ -164,6 +184,7 @@ object CalendarProps {
     if (renderChildren != null) __obj.updateDynamic("renderChildren")(js.Any.fromFunction1(renderChildren))
     if (returnValue != null) __obj.updateDynamic("returnValue")(returnValue.asInstanceOf[js.Any])
     if (!js.isUndefined(selectRange)) __obj.updateDynamic("selectRange")(selectRange.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDoubleView)) __obj.updateDynamic("showDoubleView")(showDoubleView.asInstanceOf[js.Any])
     if (!js.isUndefined(showFixedNumberOfWeeks)) __obj.updateDynamic("showFixedNumberOfWeeks")(showFixedNumberOfWeeks.asInstanceOf[js.Any])
     if (!js.isUndefined(showNavigation)) __obj.updateDynamic("showNavigation")(showNavigation.asInstanceOf[js.Any])
     if (!js.isUndefined(showNeighboringMonth)) __obj.updateDynamic("showNeighboringMonth")(showNeighboringMonth.asInstanceOf[js.Any])

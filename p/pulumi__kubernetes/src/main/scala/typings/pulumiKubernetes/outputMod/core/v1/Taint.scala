@@ -33,7 +33,6 @@ object Taint {
   @scala.inline
   def apply(effect: String, key: String, timeAdded: String, value: String): Taint = {
     val __obj = js.Dynamic.literal(effect = effect.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], timeAdded = timeAdded.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Taint]
   }
 }

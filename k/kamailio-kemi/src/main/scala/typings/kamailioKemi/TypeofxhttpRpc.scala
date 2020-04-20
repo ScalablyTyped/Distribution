@@ -12,7 +12,6 @@ object TypeofxhttpRpc {
   @scala.inline
   def apply(dispatch: () => Double): TypeofxhttpRpc = {
     val __obj = js.Dynamic.literal(dispatch = js.Any.fromFunction0(dispatch))
-  
     __obj.asInstanceOf[TypeofxhttpRpc]
   }
 }

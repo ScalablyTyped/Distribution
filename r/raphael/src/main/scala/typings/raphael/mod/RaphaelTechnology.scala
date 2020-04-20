@@ -13,12 +13,10 @@ trait RaphaelTechnology extends js.Object
 
 object RaphaelTechnology {
   @scala.inline
-  def SVG: typings.raphael.raphaelStrings.SVG = this.cast("SVG")
+  def SVG: typings.raphael.raphaelStrings.SVG = "SVG".asInstanceOf[typings.raphael.raphaelStrings.SVG]
   @scala.inline
-  def VML: typings.raphael.raphaelStrings.VML = this.cast("VML")
+  def VML: typings.raphael.raphaelStrings.VML = "VML".asInstanceOf[typings.raphael.raphaelStrings.VML]
   @scala.inline
-  def _empty: typings.raphael.raphaelStrings._empty = this.cast("")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def _empty: typings.raphael.raphaelStrings._empty = "".asInstanceOf[typings.raphael.raphaelStrings._empty]
 }
 

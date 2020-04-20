@@ -20,7 +20,6 @@ object ModifyDBClusterParameterGroupMessage {
   @scala.inline
   def apply(DBClusterParameterGroupName: String, Parameters: ParametersList): ModifyDBClusterParameterGroupMessage = {
     val __obj = js.Dynamic.literal(DBClusterParameterGroupName = DBClusterParameterGroupName.asInstanceOf[js.Any], Parameters = Parameters.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ModifyDBClusterParameterGroupMessage]
   }
 }

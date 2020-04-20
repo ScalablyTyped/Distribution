@@ -12,7 +12,6 @@ object WebGLUniformLocation {
   @scala.inline
   def apply(_currentState: js.Any): WebGLUniformLocation = {
     val __obj = js.Dynamic.literal(_currentState = _currentState.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WebGLUniformLocation]
   }
 }

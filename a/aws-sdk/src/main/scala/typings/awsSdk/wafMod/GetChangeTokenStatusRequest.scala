@@ -16,7 +16,6 @@ object GetChangeTokenStatusRequest {
   @scala.inline
   def apply(ChangeToken: ChangeToken): GetChangeTokenStatusRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetChangeTokenStatusRequest]
   }
 }

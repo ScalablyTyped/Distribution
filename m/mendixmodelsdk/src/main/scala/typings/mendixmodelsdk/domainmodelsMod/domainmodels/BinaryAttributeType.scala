@@ -28,7 +28,7 @@ class BinaryAttributeType protected () extends AttributeType {
   @JSName("model")
   var model_FBinaryAttributeType: IModel = js.native
   @JSName("containerAsAttribute")
-  def containerAsAttribute_MBinaryAttributeType(): Attribute = js.native
+  def containerAsAttribute_MBinaryAttributeType: Attribute = js.native
 }
 
 /* static members */

@@ -14,7 +14,6 @@ object AnonJobId {
   @scala.inline
   def apply(jobId: Double, promise: js.Promise[DownloadResult]): AnonJobId = {
     val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], promise = promise.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonJobId]
   }
 }

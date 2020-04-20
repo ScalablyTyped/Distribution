@@ -13,12 +13,10 @@ trait AnnotationType extends js.Object
 
 object AnnotationType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def circle: typings.nivoAnnotations.nivoAnnotationsStrings.circle = "circle".asInstanceOf[typings.nivoAnnotations.nivoAnnotationsStrings.circle]
   @scala.inline
-  def circle: typings.nivoAnnotations.nivoAnnotationsStrings.circle = this.cast("circle")
+  def dot: typings.nivoAnnotations.nivoAnnotationsStrings.dot = "dot".asInstanceOf[typings.nivoAnnotations.nivoAnnotationsStrings.dot]
   @scala.inline
-  def dot: typings.nivoAnnotations.nivoAnnotationsStrings.dot = this.cast("dot")
-  @scala.inline
-  def rect: typings.nivoAnnotations.nivoAnnotationsStrings.rect = this.cast("rect")
+  def rect: typings.nivoAnnotations.nivoAnnotationsStrings.rect = "rect".asInstanceOf[typings.nivoAnnotations.nivoAnnotationsStrings.rect]
 }
 

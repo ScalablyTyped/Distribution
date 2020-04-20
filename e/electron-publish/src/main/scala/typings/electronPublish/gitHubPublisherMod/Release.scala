@@ -24,7 +24,6 @@ object Release {
     upload_url: String
   ): Release = {
     val __obj = js.Dynamic.literal(draft = draft.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], prerelease = prerelease.asInstanceOf[js.Any], published_at = published_at.asInstanceOf[js.Any], tag_name = tag_name.asInstanceOf[js.Any], upload_url = upload_url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Release]
   }
 }

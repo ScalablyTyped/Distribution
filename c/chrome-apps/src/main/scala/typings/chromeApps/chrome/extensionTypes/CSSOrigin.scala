@@ -17,10 +17,8 @@ trait CSSOrigin extends js.Object
 
 object CSSOrigin {
   @scala.inline
-  def author: typings.chromeApps.chromeAppsStrings.author = this.cast("author")
+  def author: typings.chromeApps.chromeAppsStrings.author = "author".asInstanceOf[typings.chromeApps.chromeAppsStrings.author]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def user: user_ = this.cast("user")
+  def user: user_ = "user".asInstanceOf[user_]
 }
 

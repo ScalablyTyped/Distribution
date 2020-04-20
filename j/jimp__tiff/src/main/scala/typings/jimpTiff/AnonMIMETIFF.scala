@@ -13,7 +13,6 @@ object AnonMIMETIFF {
   @scala.inline
   def apply(MIME_TIFF: imageSlashtiff): AnonMIMETIFF = {
     val __obj = js.Dynamic.literal(MIME_TIFF = MIME_TIFF.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMIMETIFF]
   }
 }

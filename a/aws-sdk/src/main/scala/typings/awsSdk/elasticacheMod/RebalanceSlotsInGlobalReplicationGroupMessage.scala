@@ -20,7 +20,6 @@ object RebalanceSlotsInGlobalReplicationGroupMessage {
   @scala.inline
   def apply(ApplyImmediately: Boolean, GlobalReplicationGroupId: String): RebalanceSlotsInGlobalReplicationGroupMessage = {
     val __obj = js.Dynamic.literal(ApplyImmediately = ApplyImmediately.asInstanceOf[js.Any], GlobalReplicationGroupId = GlobalReplicationGroupId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RebalanceSlotsInGlobalReplicationGroupMessage]
   }
 }

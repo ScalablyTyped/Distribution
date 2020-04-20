@@ -54,50 +54,48 @@ trait STRATEGY extends js.Object
 
 object STRATEGY {
   @scala.inline
-  def ALLOW_CONFLICTS: `16` = this.cast(16)
+  def ALLOW_CONFLICTS: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def CONFLICT_STYLE_DIFF3: `2097152` = this.cast(2097152)
+  def CONFLICT_STYLE_DIFF3: `2097152` = 2097152.asInstanceOf[`2097152`]
   @scala.inline
-  def CONFLICT_STYLE_MERGE: `1048576` = this.cast(1048576)
+  def CONFLICT_STYLE_MERGE: `1048576` = 1048576.asInstanceOf[`1048576`]
   @scala.inline
-  def DISABLE_PATHSPEC_MATCH: `8192` = this.cast(8192)
+  def DISABLE_PATHSPEC_MATCH: `8192` = 8192.asInstanceOf[`8192`]
   @scala.inline
-  def DONT_OVERWRITE_IGNORED: `524288` = this.cast(524288)
+  def DONT_OVERWRITE_IGNORED: `524288` = 524288.asInstanceOf[`524288`]
   @scala.inline
-  def DONT_REMOVE_EXISTING: `4194304` = this.cast(4194304)
+  def DONT_REMOVE_EXISTING: `4194304` = 4194304.asInstanceOf[`4194304`]
   @scala.inline
-  def DONT_UPDATE_INDEX: `256` = this.cast(256)
+  def DONT_UPDATE_INDEX: `256` = 256.asInstanceOf[`256`]
   @scala.inline
-  def DONT_WRITE_INDEX: `8388608` = this.cast(8388608)
+  def DONT_WRITE_INDEX: `8388608` = 8388608.asInstanceOf[`8388608`]
   @scala.inline
-  def FORCE: `2` = this.cast(2)
+  def FORCE: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def NONE: `0` = this.cast(0)
+  def NONE: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def NO_REFRESH: `512` = this.cast(512)
+  def NO_REFRESH: `512` = 512.asInstanceOf[`512`]
   @scala.inline
-  def RECREATE_MISSING: `4` = this.cast(4)
+  def RECREATE_MISSING: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def REMOVE_IGNORED: `64` = this.cast(64)
+  def REMOVE_IGNORED: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def REMOVE_UNTRACKED: `32` = this.cast(32)
+  def REMOVE_UNTRACKED: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def SAFE: `1` = this.cast(1)
+  def SAFE: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def SKIP_LOCKED_DIRECTORIES: `262144` = this.cast(262144)
+  def SKIP_LOCKED_DIRECTORIES: `262144` = 262144.asInstanceOf[`262144`]
   @scala.inline
-  def SKIP_UNMERGED: `1024` = this.cast(1024)
+  def SKIP_UNMERGED: `1024` = 1024.asInstanceOf[`1024`]
   @scala.inline
-  def UPDATE_ONLY: `128` = this.cast(128)
+  def UPDATE_ONLY: `128` = 128.asInstanceOf[`128`]
   @scala.inline
-  def UPDATE_SUBMODULES: `65536` = this.cast(65536)
+  def UPDATE_SUBMODULES: `65536` = 65536.asInstanceOf[`65536`]
   @scala.inline
-  def UPDATE_SUBMODULES_IF_CHANGED: `131072` = this.cast(131072)
+  def UPDATE_SUBMODULES_IF_CHANGED: `131072` = 131072.asInstanceOf[`131072`]
   @scala.inline
-  def USE_OURS: `2048` = this.cast(2048)
+  def USE_OURS: `2048` = 2048.asInstanceOf[`2048`]
   @scala.inline
-  def USE_THEIRS: `4096` = this.cast(4096)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def USE_THEIRS: `4096` = 4096.asInstanceOf[`4096`]
 }
 

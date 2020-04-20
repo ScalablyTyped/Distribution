@@ -18,7 +18,6 @@ object RouteData {
   @scala.inline
   def apply(data: StringDictionary[js.Any], get: String => js.Any): RouteData = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], get = js.Any.fromFunction1(get))
-  
     __obj.asInstanceOf[RouteData]
   }
 }

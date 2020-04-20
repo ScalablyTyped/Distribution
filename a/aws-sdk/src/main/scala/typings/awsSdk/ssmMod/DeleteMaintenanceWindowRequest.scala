@@ -16,7 +16,6 @@ object DeleteMaintenanceWindowRequest {
   @scala.inline
   def apply(WindowId: MaintenanceWindowId): DeleteMaintenanceWindowRequest = {
     val __obj = js.Dynamic.literal(WindowId = WindowId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteMaintenanceWindowRequest]
   }
 }

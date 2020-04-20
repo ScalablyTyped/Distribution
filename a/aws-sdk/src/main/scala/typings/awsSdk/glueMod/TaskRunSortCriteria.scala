@@ -20,7 +20,6 @@ object TaskRunSortCriteria {
   @scala.inline
   def apply(Column: TaskRunSortColumnType, SortDirection: SortDirectionType): TaskRunSortCriteria = {
     val __obj = js.Dynamic.literal(Column = Column.asInstanceOf[js.Any], SortDirection = SortDirection.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TaskRunSortCriteria]
   }
 }

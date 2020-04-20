@@ -19,7 +19,6 @@ object AnonNeedLoadMoreData {
   @scala.inline
   def apply(needLoadMoreData: js.Function, needLoadMoreDataTop: js.Function): AnonNeedLoadMoreData = {
     val __obj = js.Dynamic.literal(needLoadMoreData = needLoadMoreData.asInstanceOf[js.Any], needLoadMoreDataTop = needLoadMoreDataTop.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNeedLoadMoreData]
   }
 }

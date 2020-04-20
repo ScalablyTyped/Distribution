@@ -20,7 +20,6 @@ object DataPoint {
   @scala.inline
   def apply(Timestamp: ISOTimestamp, Value: Double): DataPoint = {
     val __obj = js.Dynamic.literal(Timestamp = Timestamp.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DataPoint]
   }
 }

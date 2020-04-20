@@ -13,7 +13,6 @@ object AnonPassedPath {
   @scala.inline
   def apply(passedPath: js.Array[LngLat]): AnonPassedPath = {
     val __obj = js.Dynamic.literal(passedPath = passedPath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPassedPath]
   }
 }

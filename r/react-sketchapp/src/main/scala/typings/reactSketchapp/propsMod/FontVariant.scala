@@ -12,10 +12,8 @@ trait FontVariant extends js.Object
 
 object FontVariant {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def normal: typings.reactSketchapp.reactSketchappStrings.normal = "normal".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.normal]
   @scala.inline
-  def normal: typings.reactSketchapp.reactSketchappStrings.normal = this.cast("normal")
-  @scala.inline
-  def `small-caps`: typings.reactSketchapp.reactSketchappStrings.`small-caps` = this.cast("small-caps")
+  def `small-caps`: typings.reactSketchapp.reactSketchappStrings.`small-caps` = "small-caps".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.`small-caps`]
 }
 

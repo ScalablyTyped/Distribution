@@ -13,12 +13,10 @@ trait Warnings extends js.Object
 
 object Warnings {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fallbackImage: typings.reactImgix.reactImgixStrings.fallbackImage = "fallbackImage".asInstanceOf[typings.reactImgix.reactImgixStrings.fallbackImage]
   @scala.inline
-  def fallbackImage: typings.reactImgix.reactImgixStrings.fallbackImage = this.cast("fallbackImage")
+  def invalidARFormat: typings.reactImgix.reactImgixStrings.invalidARFormat = "invalidARFormat".asInstanceOf[typings.reactImgix.reactImgixStrings.invalidARFormat]
   @scala.inline
-  def invalidARFormat: typings.reactImgix.reactImgixStrings.invalidARFormat = this.cast("invalidARFormat")
-  @scala.inline
-  def sizesAttribute: typings.reactImgix.reactImgixStrings.sizesAttribute = this.cast("sizesAttribute")
+  def sizesAttribute: typings.reactImgix.reactImgixStrings.sizesAttribute = "sizesAttribute".asInstanceOf[typings.reactImgix.reactImgixStrings.sizesAttribute]
 }
 

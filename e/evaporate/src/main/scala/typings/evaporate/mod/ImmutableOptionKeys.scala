@@ -23,32 +23,30 @@ trait ImmutableOptionKeys extends js.Object
 
 object ImmutableOptionKeys {
   @scala.inline
-  def allowS3ExistenceOptimization: typings.evaporate.evaporateStrings.allowS3ExistenceOptimization = this.cast("allowS3ExistenceOptimization")
+  def allowS3ExistenceOptimization: typings.evaporate.evaporateStrings.allowS3ExistenceOptimization = "allowS3ExistenceOptimization".asInstanceOf[typings.evaporate.evaporateStrings.allowS3ExistenceOptimization]
   @scala.inline
-  def awsRegion: typings.evaporate.evaporateStrings.awsRegion = this.cast("awsRegion")
+  def awsRegion: typings.evaporate.evaporateStrings.awsRegion = "awsRegion".asInstanceOf[typings.evaporate.evaporateStrings.awsRegion]
   @scala.inline
-  def awsSignatureVersion: typings.evaporate.evaporateStrings.awsSignatureVersion = this.cast("awsSignatureVersion")
+  def awsSignatureVersion: typings.evaporate.evaporateStrings.awsSignatureVersion = "awsSignatureVersion".asInstanceOf[typings.evaporate.evaporateStrings.awsSignatureVersion]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cloudfront: typings.evaporate.evaporateStrings.cloudfront = "cloudfront".asInstanceOf[typings.evaporate.evaporateStrings.cloudfront]
   @scala.inline
-  def cloudfront: typings.evaporate.evaporateStrings.cloudfront = this.cast("cloudfront")
+  def computeContentMd5: typings.evaporate.evaporateStrings.computeContentMd5 = "computeContentMd5".asInstanceOf[typings.evaporate.evaporateStrings.computeContentMd5]
   @scala.inline
-  def computeContentMd5: typings.evaporate.evaporateStrings.computeContentMd5 = this.cast("computeContentMd5")
+  def cryptoHexEncodedHash256: typings.evaporate.evaporateStrings.cryptoHexEncodedHash256 = "cryptoHexEncodedHash256".asInstanceOf[typings.evaporate.evaporateStrings.cryptoHexEncodedHash256]
   @scala.inline
-  def cryptoHexEncodedHash256: typings.evaporate.evaporateStrings.cryptoHexEncodedHash256 = this.cast("cryptoHexEncodedHash256")
+  def cryptoMd5Method: typings.evaporate.evaporateStrings.cryptoMd5Method = "cryptoMd5Method".asInstanceOf[typings.evaporate.evaporateStrings.cryptoMd5Method]
   @scala.inline
-  def cryptoMd5Method: typings.evaporate.evaporateStrings.cryptoMd5Method = this.cast("cryptoMd5Method")
+  def encodeFilename: typings.evaporate.evaporateStrings.encodeFilename = "encodeFilename".asInstanceOf[typings.evaporate.evaporateStrings.encodeFilename]
   @scala.inline
-  def encodeFilename: typings.evaporate.evaporateStrings.encodeFilename = this.cast("encodeFilename")
+  def evaporateChanged: typings.evaporate.evaporateStrings.evaporateChanged = "evaporateChanged".asInstanceOf[typings.evaporate.evaporateStrings.evaporateChanged]
   @scala.inline
-  def evaporateChanged: typings.evaporate.evaporateStrings.evaporateChanged = this.cast("evaporateChanged")
+  def logging: typings.evaporate.evaporateStrings.logging = "logging".asInstanceOf[typings.evaporate.evaporateStrings.logging]
   @scala.inline
-  def logging: typings.evaporate.evaporateStrings.logging = this.cast("logging")
+  def maxConcurrentParts: typings.evaporate.evaporateStrings.maxConcurrentParts = "maxConcurrentParts".asInstanceOf[typings.evaporate.evaporateStrings.maxConcurrentParts]
   @scala.inline
-  def maxConcurrentParts: typings.evaporate.evaporateStrings.maxConcurrentParts = this.cast("maxConcurrentParts")
+  def onlyRetryForSameFileName: typings.evaporate.evaporateStrings.onlyRetryForSameFileName = "onlyRetryForSameFileName".asInstanceOf[typings.evaporate.evaporateStrings.onlyRetryForSameFileName]
   @scala.inline
-  def onlyRetryForSameFileName: typings.evaporate.evaporateStrings.onlyRetryForSameFileName = this.cast("onlyRetryForSameFileName")
-  @scala.inline
-  def timeUrl: typings.evaporate.evaporateStrings.timeUrl = this.cast("timeUrl")
+  def timeUrl: typings.evaporate.evaporateStrings.timeUrl = "timeUrl".asInstanceOf[typings.evaporate.evaporateStrings.timeUrl]
 }
 

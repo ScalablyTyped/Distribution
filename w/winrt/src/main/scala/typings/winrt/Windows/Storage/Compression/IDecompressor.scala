@@ -20,7 +20,6 @@ object IDecompressor {
     readAsync: (IBuffer, Double, InputStreamOptions) => IAsyncOperationWithProgress[IBuffer, Double]
   ): IDecompressor = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), detachStream = js.Any.fromFunction0(detachStream), readAsync = js.Any.fromFunction3(readAsync))
-  
     __obj.asInstanceOf[IDecompressor]
   }
 }

@@ -15,7 +15,6 @@ object AnonMap {
   @scala.inline
   def apply(map: js.Any, originalEvent: Event_, overlay: js.Any): AnonMap = {
     val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any], overlay = overlay.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMap]
   }
 }

@@ -15,7 +15,6 @@ object AnonCollection {
   @scala.inline
   def apply(collection: ICollection[_], monkInstance: IMonkManager): AnonCollection = {
     val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any], monkInstance = monkInstance.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCollection]
   }
 }

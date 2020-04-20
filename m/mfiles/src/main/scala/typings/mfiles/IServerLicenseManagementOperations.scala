@@ -13,7 +13,6 @@ object IServerLicenseManagementOperations {
   @scala.inline
   def apply(GetLicenseStatus: () => ILicenseStatus, SetLicenseCodeAndSerialNumber: (String, String) => Unit): IServerLicenseManagementOperations = {
     val __obj = js.Dynamic.literal(GetLicenseStatus = js.Any.fromFunction0(GetLicenseStatus), SetLicenseCodeAndSerialNumber = js.Any.fromFunction2(SetLicenseCodeAndSerialNumber))
-  
     __obj.asInstanceOf[IServerLicenseManagementOperations]
   }
 }

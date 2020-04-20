@@ -15,7 +15,6 @@ object AnonRegister {
   @scala.inline
   def apply[T /* <: Entity */, TEngine](register: (EntitySource[T, _], js.Any) => Adapter[TEngine]): AnonRegister[T, TEngine] = {
     val __obj = js.Dynamic.literal(register = js.Any.fromFunction2(register))
-  
     __obj.asInstanceOf[AnonRegister[T, TEngine]]
   }
 }

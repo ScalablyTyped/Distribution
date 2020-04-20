@@ -16,7 +16,6 @@ object AnonAudioSources {
   @scala.inline
   def apply(audioSources: js.Array[AudioSourceType]): AnonAudioSources = {
     val __obj = js.Dynamic.literal(audioSources = audioSources.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAudioSources]
   }
 }

@@ -17,10 +17,8 @@ trait RoleType extends js.Object
 
 object RoleType {
   @scala.inline
-  def AssociationEntity: `2` = this.cast(2)
+  def AssociationEntity: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def Referencing: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Referencing: `1` = 1.asInstanceOf[`1`]
 }
 

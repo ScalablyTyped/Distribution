@@ -30,7 +30,6 @@ object arg {
   @scala.inline
   def apply(ShadowResizeArgs: js.Object => AnonX, StyleArgs: js.Object => AnonCssClass): arg = {
     val __obj = js.Dynamic.literal(ShadowResizeArgs = js.Any.fromFunction1(ShadowResizeArgs), StyleArgs = js.Any.fromFunction1(StyleArgs))
-  
     __obj.asInstanceOf[arg]
   }
 }

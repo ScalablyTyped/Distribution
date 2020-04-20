@@ -25,9 +25,9 @@ package object AMap {
   type MassMarks[D /* <: typings.amapJsApi.AMap.MassMarks.Data */] = typings.amapJsApi.AMap.MassMarks_[D]
   type MediaLayer[E /* <: typings.std.HTMLElement */] = typings.amapJsApi.AMap.MediaLayer_[E]
   type Merge[O, T] = O with T
-  type Omit[T, E /* <: java.lang.String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  type Omit[T, E /* <: /* keyof T */ java.lang.String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in std.Exclude<keyof T, E> ]: T[K]}
-    */ typings.amapJsApi.amapJsApiStrings.Omit with T
+    */ typings.amapJsApi.amapJsApiStrings.Omit with org.scalablytyped.runtime.TopLevel[T]
   type OptionalKey[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: -? undefined extends T[K]? K : never}[keyof T] */ js.Any
   type Overlay[ExtraData] = typings.amapJsApi.AMap.Overlay_[ExtraData]
   type PathOverlay[ExtraData] = typings.amapJsApi.AMap.PathOverlay_[ExtraData]

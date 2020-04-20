@@ -22,7 +22,6 @@ object MerkleTree {
     root: () => String
   ): MerkleTree = {
     val __obj = js.Dynamic.literal(depth = js.Any.fromFunction0(depth), level = js.Any.fromFunction1(level), levels = js.Any.fromFunction0(levels), nodes = js.Any.fromFunction0(nodes), root = js.Any.fromFunction0(root))
-  
     __obj.asInstanceOf[MerkleTree]
   }
 }

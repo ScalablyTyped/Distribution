@@ -29,7 +29,7 @@ abstract class IntegerAttributeTypeBase protected () extends NumericAttributeTyp
   @JSName("model")
   var model_FIntegerAttributeTypeBase: IModel = js.native
   @JSName("containerAsAttribute")
-  def containerAsAttribute_MIntegerAttributeTypeBase(): Attribute = js.native
+  def containerAsAttribute_MIntegerAttributeTypeBase: Attribute = js.native
 }
 
 /* static members */

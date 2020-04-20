@@ -36,7 +36,7 @@ object listIteratorMod extends js.Object {
     /**
       * @inheritDoc
       */
-    def value(): T = js.native
+    def value: T = js.native
   }
   
 }

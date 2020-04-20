@@ -17,7 +17,6 @@ object CertificateParams {
     key: String | (js.Array[Buffer | js.Object | String]) | Buffer
   ): CertificateParams = {
     val __obj = js.Dynamic.literal(cert = cert.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CertificateParams]
   }
 }

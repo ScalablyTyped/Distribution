@@ -21,7 +21,6 @@ object ICommandConfig {
   @scala.inline
   def apply(resultKey: String): ICommandConfig = {
     val __obj = js.Dynamic.literal(resultKey = resultKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICommandConfig]
   }
 }

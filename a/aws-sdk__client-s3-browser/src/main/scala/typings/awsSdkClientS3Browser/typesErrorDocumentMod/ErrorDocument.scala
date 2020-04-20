@@ -15,7 +15,6 @@ object ErrorDocument {
   @scala.inline
   def apply(Key: String): ErrorDocument = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ErrorDocument]
   }
 }

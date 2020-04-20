@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait altProps {
   @scala.inline
-  def AltContainerProps: ContainerProps.type = typings.alt.altContainerMod.ContainerProps
+  def AltContainerProps: ContainerProps.type = ContainerProps
   type AltContainerProps = ContainerProps
   @scala.inline
-  def ClassProps: ContainerProps.type = typings.alt.altContainerMod.ContainerProps
+  def ClassProps: ContainerProps.type = ContainerProps
   type ClassProps = ContainerProps
 }
 

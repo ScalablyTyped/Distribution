@@ -185,20 +185,20 @@ trait Typeofjest extends js.Object {
     * Note: The default timeout interval is 5 seconds if this method is not called.
     */
   def setTimeout(timeout: Double): /* import warning: importer.ImportType#apply Failed type conversion: typeof jest */ js.Any = js.native
-  def spyOn[T /* <: js.Object */, M /* <: ConstructorPropertyNames[Required[T]] */](`object`: T, method: M): SpyInstance[
-    InstanceType[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Required<T>[M] */ js.Any
-    ], 
-    ConstructorArgsType[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Required<T>[M] */ js.Any
-    ]
-  ] = js.native
-  @JSName("spyOn")
-  def spyOn_T_ObjectM_FunctionPropertyNamesRequiredT[T /* <: js.Object */, M /* <: FunctionPropertyNames[Required[T]] */](`object`: T, method: M): SpyInstance[
+  def spyOn[T /* <: js.Object */, M /* <: FunctionPropertyNames[Required[T]] */](`object`: T, method: M): SpyInstance[
     ReturnType[
       /* import warning: importer.ImportType#apply Failed type conversion: std.Required<T>[M] */ js.Any
     ], 
     ArgsType[
+      /* import warning: importer.ImportType#apply Failed type conversion: std.Required<T>[M] */ js.Any
+    ]
+  ] = js.native
+  @JSName("spyOn")
+  def spyOn_T_ObjectM_ConstructorPropertyNamesRequiredT[T /* <: js.Object */, M /* <: ConstructorPropertyNames[Required[T]] */](`object`: T, method: M): SpyInstance[
+    InstanceType[
+      /* import warning: importer.ImportType#apply Failed type conversion: std.Required<T>[M] */ js.Any
+    ], 
+    ConstructorArgsType[
       /* import warning: importer.ImportType#apply Failed type conversion: std.Required<T>[M] */ js.Any
     ]
   ] = js.native

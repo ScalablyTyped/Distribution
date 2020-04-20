@@ -12,7 +12,6 @@ object ITypeaheadProvider {
   @scala.inline
   def apply(defaults: ITypeaheadOptions): ITypeaheadProvider = {
     val __obj = js.Dynamic.literal(defaults = defaults.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ITypeaheadProvider]
   }
 }

@@ -16,12 +16,10 @@ trait OlOfficeDocItemsType extends js.Object
 
 object OlOfficeDocItemsType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olExcelWorkSheetItem: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def olExcelWorkSheetItem: `8` = this.cast(8)
+  def olPowerPointShowItem: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def olPowerPointShowItem: `10` = this.cast(10)
-  @scala.inline
-  def olWordDocumentItem: `9` = this.cast(9)
+  def olWordDocumentItem: `9` = 9.asInstanceOf[`9`]
 }
 

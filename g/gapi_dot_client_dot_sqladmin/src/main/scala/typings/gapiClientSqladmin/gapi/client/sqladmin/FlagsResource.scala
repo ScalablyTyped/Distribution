@@ -15,7 +15,6 @@ object FlagsResource {
   @scala.inline
   def apply(list: AnonDatabaseVersion => Request_[FlagsListResponse]): FlagsResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[FlagsResource]
   }
 }

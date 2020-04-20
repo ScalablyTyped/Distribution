@@ -16,7 +16,6 @@ object GetResourcePolicyInput {
   @scala.inline
   def apply(resourceArn: NonEmptyString): GetResourcePolicyInput = {
     val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetResourcePolicyInput]
   }
 }

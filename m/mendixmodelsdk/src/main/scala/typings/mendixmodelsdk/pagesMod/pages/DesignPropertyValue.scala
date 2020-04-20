@@ -26,14 +26,14 @@ class DesignPropertyValue protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FDesignPropertyValue: IModel = js.native
-  def booleanValue(): Boolean = js.native
+  def booleanValue: Boolean = js.native
   def booleanValue(newValue: Boolean): js.Any = js.native
-  def containerAsAppearance(): Appearance = js.native
-  def key(): String = js.native
+  def containerAsAppearance: Appearance = js.native
+  def key: String = js.native
   def key(newValue: String): js.Any = js.native
-  def stringValue(): String = js.native
+  def stringValue: String = js.native
   def stringValue(newValue: String): js.Any = js.native
-  def `type`(): DesignPropertyValueType = js.native
+  def `type`: DesignPropertyValueType = js.native
   def `type`(newValue: DesignPropertyValueType): js.Any = js.native
 }
 

@@ -144,7 +144,6 @@ object MapHandlerMap {
     zoom_changed: js.Array[js.Any]
   ): MapHandlerMap = {
     val __obj = js.Dynamic.literal(bounds_changed = bounds_changed.asInstanceOf[js.Any], center_changed = center_changed.asInstanceOf[js.Any], click = click.asInstanceOf[js.Any], dblclick = dblclick.asInstanceOf[js.Any], drag = drag.asInstanceOf[js.Any], dragend = dragend.asInstanceOf[js.Any], dragstart = dragstart.asInstanceOf[js.Any], heading_changed = heading_changed.asInstanceOf[js.Any], idle = idle.asInstanceOf[js.Any], maptypeid_changed = maptypeid_changed.asInstanceOf[js.Any], mousemove = mousemove.asInstanceOf[js.Any], mouseout = mouseout.asInstanceOf[js.Any], mouseover = mouseover.asInstanceOf[js.Any], projection_changed = projection_changed.asInstanceOf[js.Any], rightclick = rightclick.asInstanceOf[js.Any], tilesloaded = tilesloaded.asInstanceOf[js.Any], tilt_changed = tilt_changed.asInstanceOf[js.Any], zoom_changed = zoom_changed.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MapHandlerMap]
   }
 }

@@ -16,7 +16,6 @@ object RebootBrokerRequest {
   @scala.inline
   def apply(BrokerId: string): RebootBrokerRequest = {
     val __obj = js.Dynamic.literal(BrokerId = BrokerId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RebootBrokerRequest]
   }
 }

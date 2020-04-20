@@ -16,7 +16,6 @@ object CreateBranchResult {
   @scala.inline
   def apply(branch: Branch): CreateBranchResult = {
     val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateBranchResult]
   }
 }

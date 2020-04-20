@@ -14,7 +14,6 @@ object PickFilterfieldvalue {
   @scala.inline
   def apply(field: String, value: js.Any): PickFilterfieldvalue = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickFilterfieldvalue]
   }
 }

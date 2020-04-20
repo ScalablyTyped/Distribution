@@ -22,7 +22,6 @@ object ResultRetentionSettings {
     manualResultsRetentionDuration: Double
   ): ResultRetentionSettings = {
     val __obj = js.Dynamic.literal(automatedResultsRetentionDuration = automatedResultsRetentionDuration.asInstanceOf[js.Any], lastUpdatedBy = lastUpdatedBy.asInstanceOf[js.Any], lastUpdatedDate = lastUpdatedDate.asInstanceOf[js.Any], manualResultsRetentionDuration = manualResultsRetentionDuration.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResultRetentionSettings]
   }
 }

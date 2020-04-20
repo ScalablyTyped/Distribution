@@ -31,7 +31,7 @@ class GridSearchService protected () extends js.Object {
   /**
     * A signal fired when the grid changes.
     */
-  def changed(): ISignal[GridSearchService, Unit] = js.native
+  def changed: ISignal[GridSearchService, Unit] = js.native
   /**
     * Clear the search.
     */
@@ -41,6 +41,6 @@ class GridSearchService protected () extends js.Object {
     */
   def find(query: RegExp): Boolean = js.native
   def find(query: RegExp, reverse: Boolean): Boolean = js.native
-  def query(): RegExp | Null = js.native
+  def query: RegExp | Null = js.native
 }
 

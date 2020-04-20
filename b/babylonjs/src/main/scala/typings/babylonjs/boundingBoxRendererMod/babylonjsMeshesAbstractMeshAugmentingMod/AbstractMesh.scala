@@ -17,7 +17,6 @@ object AbstractMesh {
   @scala.inline
   def apply(_showBoundingBox: Boolean, showBoundingBox: Boolean): AbstractMesh = {
     val __obj = js.Dynamic.literal(_showBoundingBox = _showBoundingBox.asInstanceOf[js.Any], showBoundingBox = showBoundingBox.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AbstractMesh]
   }
 }

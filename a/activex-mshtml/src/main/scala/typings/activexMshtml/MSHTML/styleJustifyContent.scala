@@ -24,20 +24,18 @@ trait styleJustifyContent extends js.Object
 
 object styleJustifyContent {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleJustifyContentCenter: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleJustifyContentCenter: `2` = this.cast(2)
+  def styleJustifyContentFlexEnd: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleJustifyContentFlexEnd: `1` = this.cast(1)
+  def styleJustifyContentFlexStart: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleJustifyContentFlexStart: `0` = this.cast(0)
+  def styleJustifyContentNotSet: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def styleJustifyContentNotSet: `5` = this.cast(5)
+  def styleJustifyContentSpaceAround: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def styleJustifyContentSpaceAround: `4` = this.cast(4)
+  def styleJustifyContentSpaceBetween: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def styleJustifyContentSpaceBetween: `3` = this.cast(3)
-  @scala.inline
-  def styleJustifyContent_Max: `2147483647` = this.cast(2147483647)
+  def styleJustifyContent_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

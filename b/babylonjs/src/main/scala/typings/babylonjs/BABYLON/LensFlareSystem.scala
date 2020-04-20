@@ -83,7 +83,7 @@ class LensFlareSystem protected () extends js.Object {
   /**
     * Define if the lens flare system is enabled.
     */
-  def isEnabled(): Boolean = js.native
+  def isEnabled: Boolean = js.native
   def isEnabled(value: Boolean): js.Any = js.native
   /**
     * Define a predicate which could limit the list of meshes able to occlude the effect.

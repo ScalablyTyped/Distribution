@@ -12,7 +12,6 @@ object ReleaseTriggerBase {
   @scala.inline
   def apply(triggerType: ReleaseTriggerType): ReleaseTriggerBase = {
     val __obj = js.Dynamic.literal(triggerType = triggerType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReleaseTriggerBase]
   }
 }

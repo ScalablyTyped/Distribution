@@ -21,7 +21,6 @@ object IAssignmentClassInfo {
     TaskAssignmentClassInfo: ITaskAssignmentClassInfo
   ): IAssignmentClassInfo = {
     val __obj = js.Dynamic.literal(ApprovalAssignmentClassInfo = ApprovalAssignmentClassInfo.asInstanceOf[js.Any], AssignmentType = AssignmentType.asInstanceOf[js.Any], Clone = js.Any.fromFunction0(Clone), TaskAssignmentClassInfo = TaskAssignmentClassInfo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IAssignmentClassInfo]
   }
 }

@@ -12,7 +12,6 @@ object AnonAuthentication {
   @scala.inline
   def apply[UserType /* <: js.Object */, ListNames /* <: String */](authentication: AnonItem[UserType, ListNames]): AnonAuthentication[UserType, ListNames] = {
     val __obj = js.Dynamic.literal(authentication = authentication.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAuthentication[UserType, ListNames]]
   }
 }

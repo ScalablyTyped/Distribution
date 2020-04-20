@@ -14,7 +14,6 @@ object AnonContextualIdentity {
   @scala.inline
   def apply(contextualIdentity: ContextualIdentity): AnonContextualIdentity = {
     val __obj = js.Dynamic.literal(contextualIdentity = contextualIdentity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonContextualIdentity]
   }
 }

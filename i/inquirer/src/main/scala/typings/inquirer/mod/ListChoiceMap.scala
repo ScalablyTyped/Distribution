@@ -24,7 +24,6 @@ object ListChoiceMap {
     SeparatorOptions: SeparatorOptions
   ): ListChoiceMap[T] = {
     val __obj = js.Dynamic.literal(Choice = Choice.asInstanceOf[js.Any], ChoiceOptions = ChoiceOptions.asInstanceOf[js.Any], ListChoiceOptions = ListChoiceOptions.asInstanceOf[js.Any], Separator = Separator.asInstanceOf[js.Any], SeparatorOptions = SeparatorOptions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListChoiceMap[T]]
   }
 }

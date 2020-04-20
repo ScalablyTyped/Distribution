@@ -15,7 +15,6 @@ object AnonVetsion {
   @scala.inline
   def apply(appId: String, vetsion: String): AnonVetsion = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], vetsion = vetsion.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonVetsion]
   }
 }

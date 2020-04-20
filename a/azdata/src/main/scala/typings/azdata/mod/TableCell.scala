@@ -14,7 +14,6 @@ object TableCell {
   @scala.inline
   def apply(column: Double, row: Double, value: js.Any): TableCell = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TableCell]
   }
 }

@@ -12,7 +12,6 @@ object AggregateVersion {
   @scala.inline
   def apply(version: Double): AggregateVersion = {
     val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AggregateVersion]
   }
 }

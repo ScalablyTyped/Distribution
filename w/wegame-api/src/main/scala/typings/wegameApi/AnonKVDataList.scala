@@ -12,7 +12,6 @@ object AnonKVDataList {
   @scala.inline
   def apply(KVDataList: js.Array[KVData]): AnonKVDataList = {
     val __obj = js.Dynamic.literal(KVDataList = KVDataList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonKVDataList]
   }
 }

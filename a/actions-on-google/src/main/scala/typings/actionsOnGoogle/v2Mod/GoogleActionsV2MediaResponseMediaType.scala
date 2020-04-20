@@ -12,10 +12,8 @@ trait GoogleActionsV2MediaResponseMediaType extends js.Object
 
 object GoogleActionsV2MediaResponseMediaType {
   @scala.inline
-  def AUDIO: typings.actionsOnGoogle.actionsOnGoogleStrings.AUDIO = this.cast("AUDIO")
+  def AUDIO: typings.actionsOnGoogle.actionsOnGoogleStrings.AUDIO = "AUDIO".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.AUDIO]
   @scala.inline
-  def MEDIA_TYPE_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.MEDIA_TYPE_UNSPECIFIED = this.cast("MEDIA_TYPE_UNSPECIFIED")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def MEDIA_TYPE_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.MEDIA_TYPE_UNSPECIFIED = "MEDIA_TYPE_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.MEDIA_TYPE_UNSPECIFIED]
 }
 

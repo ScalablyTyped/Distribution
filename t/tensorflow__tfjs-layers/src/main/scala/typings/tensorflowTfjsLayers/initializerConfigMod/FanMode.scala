@@ -13,12 +13,10 @@ trait FanMode extends js.Object
 
 object FanMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fanAvg: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.fanAvg = "fanAvg".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.fanAvg]
   @scala.inline
-  def fanAvg: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.fanAvg = this.cast("fanAvg")
+  def fanIn: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.fanIn = "fanIn".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.fanIn]
   @scala.inline
-  def fanIn: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.fanIn = this.cast("fanIn")
-  @scala.inline
-  def fanOut: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.fanOut = this.cast("fanOut")
+  def fanOut: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.fanOut = "fanOut".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.fanOut]
 }
 

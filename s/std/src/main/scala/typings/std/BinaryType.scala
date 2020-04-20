@@ -12,10 +12,8 @@ trait BinaryType extends js.Object
 
 object BinaryType {
   @scala.inline
-  def arraybuffer: typings.std.stdStrings.arraybuffer = this.cast("arraybuffer")
+  def arraybuffer: typings.std.stdStrings.arraybuffer = "arraybuffer".asInstanceOf[typings.std.stdStrings.arraybuffer]
   @scala.inline
-  def blob: typings.std.stdStrings.blob = this.cast("blob")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def blob: typings.std.stdStrings.blob = "blob".asInstanceOf[typings.std.stdStrings.blob]
 }
 

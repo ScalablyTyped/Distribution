@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactFontawesomeProps {
   @scala.inline
-  def ReactFontawesomeProps: FontAwesomeProps.type = typings.reactFontawesome.mod.FontAwesomeProps
+  def ReactFontawesomeProps: FontAwesomeProps.type = FontAwesomeProps
   type ReactFontawesomeProps = FontAwesomeProps
 }
 

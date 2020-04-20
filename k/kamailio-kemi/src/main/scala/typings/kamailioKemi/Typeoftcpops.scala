@@ -32,7 +32,6 @@ object Typeoftcpops {
     tcp_set_connection_lifetime_cid: (Double, Double) => Double
   ): Typeoftcpops = {
     val __obj = js.Dynamic.literal(tcp_conid_alive = js.Any.fromFunction1(tcp_conid_alive), tcp_conid_state = js.Any.fromFunction1(tcp_conid_state), tcp_enable_closed_event = js.Any.fromFunction0(tcp_enable_closed_event), tcp_enable_closed_event_cid = js.Any.fromFunction1(tcp_enable_closed_event_cid), tcp_keepalive_disable = js.Any.fromFunction0(tcp_keepalive_disable), tcp_keepalive_disable_cid = js.Any.fromFunction1(tcp_keepalive_disable_cid), tcp_keepalive_enable = js.Any.fromFunction3(tcp_keepalive_enable), tcp_keepalive_enable_cid = js.Any.fromFunction4(tcp_keepalive_enable_cid), tcp_set_connection_lifetime = js.Any.fromFunction1(tcp_set_connection_lifetime), tcp_set_connection_lifetime_cid = js.Any.fromFunction2(tcp_set_connection_lifetime_cid))
-  
     __obj.asInstanceOf[Typeoftcpops]
   }
 }

@@ -13,7 +13,6 @@ object IEnumerable {
   @scala.inline
   def apply[T](getEnumerator: () => IEnumerator[T]): IEnumerable[T] = {
     val __obj = js.Dynamic.literal(getEnumerator = js.Any.fromFunction0(getEnumerator))
-  
     __obj.asInstanceOf[IEnumerable[T]]
   }
 }

@@ -21,7 +21,6 @@ object RSocketWebSocketClient {
     sendOne: Frame => Unit
   ): RSocketWebSocketClient = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), connect = js.Any.fromFunction0(connect), connectionStatus = js.Any.fromFunction0(connectionStatus), receive = js.Any.fromFunction0(receive), send = js.Any.fromFunction1(send), sendOne = js.Any.fromFunction1(sendOne))
-  
     __obj.asInstanceOf[RSocketWebSocketClient]
   }
 }

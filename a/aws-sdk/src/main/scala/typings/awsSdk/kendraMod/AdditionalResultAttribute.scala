@@ -24,7 +24,6 @@ object AdditionalResultAttribute {
   @scala.inline
   def apply(Key: String, Value: AdditionalResultAttributeValue, ValueType: AdditionalResultAttributeValueType): AdditionalResultAttribute = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any], ValueType = ValueType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AdditionalResultAttribute]
   }
 }

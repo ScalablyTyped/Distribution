@@ -13,7 +13,6 @@ object Joigoose {
   @scala.inline
   def apply(convert: Schema => typings.mongoose.mod.Schema[_]): Joigoose = {
     val __obj = js.Dynamic.literal(convert = js.Any.fromFunction1(convert))
-  
     __obj.asInstanceOf[Joigoose]
   }
 }

@@ -13,7 +13,6 @@ object SearchApi {
   @scala.inline
   def apply(indexDocument: (String, String) => Unit, search: String => js.Promise[js.Array[String]]): SearchApi = {
     val __obj = js.Dynamic.literal(indexDocument = js.Any.fromFunction2(indexDocument), search = js.Any.fromFunction1(search))
-  
     __obj.asInstanceOf[SearchApi]
   }
 }

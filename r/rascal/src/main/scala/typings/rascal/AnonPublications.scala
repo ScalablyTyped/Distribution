@@ -20,7 +20,6 @@ object AnonPublications {
     vhosts: AnonBindings
   ): AnonPublications = {
     val __obj = js.Dynamic.literal(publications = publications.asInstanceOf[js.Any], redeliveries = redeliveries.asInstanceOf[js.Any], subscriptions = subscriptions.asInstanceOf[js.Any], vhosts = vhosts.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPublications]
   }
 }

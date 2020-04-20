@@ -20,7 +20,6 @@ object languages {
   @scala.inline
   def apply(pygments: js.Object): languages = {
     val __obj = js.Dynamic.literal(pygments = pygments.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[languages]
   }
 }

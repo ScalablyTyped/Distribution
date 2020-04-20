@@ -41,7 +41,6 @@ object XLPivot {
     refreshDataSource: (String, Double) => Unit
   ): XLPivot = {
     val __obj = js.Dynamic.literal(clearPivotFieldList = js.Any.fromFunction1(clearPivotFieldList), createPivotTable = js.Any.fromFunction5(createPivotTable), deletePivotTable = js.Any.fromFunction1(deletePivotTable), refreshDataSource = js.Any.fromFunction2(refreshDataSource))
-  
     __obj.asInstanceOf[XLPivot]
   }
 }

@@ -13,7 +13,6 @@ object AnonSsml {
   @scala.inline
   def apply(ssml: String): AnonSsml = {
     val __obj = js.Dynamic.literal(ssml = ssml.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSsml]
   }
 }

@@ -16,7 +16,6 @@ object StopServerRequest {
   @scala.inline
   def apply(ServerId: ServerId): StopServerRequest = {
     val __obj = js.Dynamic.literal(ServerId = ServerId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopServerRequest]
   }
 }

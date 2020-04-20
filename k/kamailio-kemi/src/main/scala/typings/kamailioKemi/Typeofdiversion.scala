@@ -13,7 +13,6 @@ object Typeofdiversion {
   @scala.inline
   def apply(add_diversion: String => Double, add_diversion_uri: (String, String) => Double): Typeofdiversion = {
     val __obj = js.Dynamic.literal(add_diversion = js.Any.fromFunction1(add_diversion), add_diversion_uri = js.Any.fromFunction2(add_diversion_uri))
-  
     __obj.asInstanceOf[Typeofdiversion]
   }
 }

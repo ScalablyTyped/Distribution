@@ -22,7 +22,6 @@ object ThreeDSecureAccountDetails {
   @scala.inline
   def apply(cardType: String, lastTwo: String): ThreeDSecureAccountDetails = {
     val __obj = js.Dynamic.literal(cardType = cardType.asInstanceOf[js.Any], lastTwo = lastTwo.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ThreeDSecureAccountDetails]
   }
 }

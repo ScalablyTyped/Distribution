@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object set extends js.Object {
   def apply[V, C /* <: StringDictionary[V] */](collection: C, key: String, value: V): C = js.native
   def apply[V, C /* <: js.Array[V] */](collection: C, key: Double, value: V): C = js.native
-  def apply[C, K /* <: String */](
+  def apply[C, K /* <: /* keyof C */ String */](
     `object`: C,
     key: K,
     value: /* import warning: importer.ImportType#apply Failed type conversion: C[K] */ js.Any

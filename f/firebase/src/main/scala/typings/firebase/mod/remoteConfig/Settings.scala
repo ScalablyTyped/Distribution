@@ -21,7 +21,6 @@ object Settings {
   @scala.inline
   def apply(fetchTimeoutMillis: Double, minimumFetchIntervalMillis: Double): Settings = {
     val __obj = js.Dynamic.literal(fetchTimeoutMillis = fetchTimeoutMillis.asInstanceOf[js.Any], minimumFetchIntervalMillis = minimumFetchIntervalMillis.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Settings]
   }
 }

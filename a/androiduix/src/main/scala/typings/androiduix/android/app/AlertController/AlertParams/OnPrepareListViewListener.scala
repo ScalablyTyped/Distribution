@@ -13,7 +13,6 @@ object OnPrepareListViewListener {
   @scala.inline
   def apply(onPrepareListView: ListView => Unit): OnPrepareListViewListener = {
     val __obj = js.Dynamic.literal(onPrepareListView = js.Any.fromFunction1(onPrepareListView))
-  
     __obj.asInstanceOf[OnPrepareListViewListener]
   }
 }

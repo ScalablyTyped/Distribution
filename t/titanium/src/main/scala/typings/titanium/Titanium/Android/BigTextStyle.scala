@@ -1,8 +1,6 @@
 package typings.titanium.Titanium.Android
 
 import typings.titanium.Titanium.Proxy
-import typings.titanium.Titanium.UI.TabGroup
-import typings.titanium.Titanium.UI.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,75 +8,50 @@ import scala.scalajs.js.annotation._
 /**
 		 * Helper object for generating large-format notifications that include a lot of text.
 		 */
-trait BigTextStyle extends Proxy {
+@JSGlobal("Titanium.Android.BigTextStyle")
+@js.native
+class BigTextStyle () extends Proxy {
   /**
   			 * Overrides <Titanium.Android.Notification.contentTitle> in the big form of the notification. This defaults to the value passed to <Titanium.Android.Notification.contentTitle>.
   			 */
-  var bigContentTitle: String
+  var bigContentTitle: String = js.native
   /**
   			 * Sets the longer text to be displayed in the big form of the notification in place of the content text.
   			 */
-  var bigText: String
+  var bigText: String = js.native
   /**
   			 * Set the first line of text after the detail section in the big form of the notification.
   			 */
-  var summaryText: String
+  var summaryText: String = js.native
   /**
   			 * Gets the value of the <Titanium.Android.BigTextStyle.bigContentTitle> property.
+  			 * @deprecated Access <Titanium.Android.BigTextStyle.bigContentTitle> instead.
   			 */
-  def getBigContentTitle(): String
+  def getBigContentTitle(): String = js.native
   /**
   			 * Gets the value of the <Titanium.Android.BigTextStyle.bigText> property.
+  			 * @deprecated Access <Titanium.Android.BigTextStyle.bigText> instead.
   			 */
-  def getBigText(): String
+  def getBigText(): String = js.native
   /**
   			 * Gets the value of the <Titanium.Android.BigTextStyle.summaryText> property.
+  			 * @deprecated Access <Titanium.Android.BigTextStyle.summaryText> instead.
   			 */
-  def getSummaryText(): String
+  def getSummaryText(): String = js.native
   /**
   			 * Sets the value of the <Titanium.Android.BigTextStyle.bigContentTitle> property.
+  			 * @deprecated Set the value using <Titanium.Android.BigTextStyle.bigContentTitle> instead.
   			 */
-  def setBigContentTitle(bigContentTitle: String): Unit
+  def setBigContentTitle(bigContentTitle: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.BigTextStyle.bigText> property.
+  			 * @deprecated Set the value using <Titanium.Android.BigTextStyle.bigText> instead.
   			 */
-  def setBigText(bigText: String): Unit
+  def setBigText(bigText: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.BigTextStyle.summaryText> property.
+  			 * @deprecated Set the value using <Titanium.Android.BigTextStyle.summaryText> instead.
   			 */
-  def setSummaryText(summaryText: String): Unit
-}
-
-object BigTextStyle {
-  @scala.inline
-  def apply(
-    addEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    apiName: String,
-    applyProperties: js.Any => Unit,
-    bigContentTitle: String,
-    bigText: String,
-    bubbleParent: Boolean,
-    fireEvent: (String, js.Any) => Unit,
-    getApiName: () => String,
-    getBigContentTitle: () => String,
-    getBigText: () => String,
-    getBubbleParent: () => Boolean,
-    getSummaryText: () => String,
-    removeEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
-    setBigContentTitle: String => Unit,
-    setBigText: String => Unit,
-    setBubbleParent: Boolean => Unit,
-    setSummaryText: String => Unit,
-    summaryText: String,
-    getLifecycleContainer: () => Window | TabGroup = null,
-    lifecycleContainer: Window | TabGroup = null,
-    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ Window, Unit]) with (js.Function1[/* lifecycleContainer */ TabGroup, Unit]) = null
-  ): BigTextStyle = {
-    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName.asInstanceOf[js.Any], applyProperties = js.Any.fromFunction1(applyProperties), bigContentTitle = bigContentTitle.asInstanceOf[js.Any], bigText = bigText.asInstanceOf[js.Any], bubbleParent = bubbleParent.asInstanceOf[js.Any], fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getBigContentTitle = js.Any.fromFunction0(getBigContentTitle), getBigText = js.Any.fromFunction0(getBigText), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getSummaryText = js.Any.fromFunction0(getSummaryText), removeEventListener = js.Any.fromFunction2(removeEventListener), setBigContentTitle = js.Any.fromFunction1(setBigContentTitle), setBigText = js.Any.fromFunction1(setBigText), setBubbleParent = js.Any.fromFunction1(setBubbleParent), setSummaryText = js.Any.fromFunction1(setSummaryText), summaryText = summaryText.asInstanceOf[js.Any])
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
-    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
-    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BigTextStyle]
-  }
+  def setSummaryText(summaryText: String): Unit = js.native
 }
 

@@ -14,7 +14,6 @@ object AnonEndPosition {
   @scala.inline
   def apply(endPosition: Cartesian2, startPosition: Cartesian2): AnonEndPosition = {
     val __obj = js.Dynamic.literal(endPosition = endPosition.asInstanceOf[js.Any], startPosition = startPosition.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEndPosition]
   }
 }

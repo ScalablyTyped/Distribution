@@ -40,7 +40,6 @@ object OIDCAuthProviderConfig {
   @scala.inline
   def apply(clientId: String, displayName: String, enabled: Boolean, issuer: String, providerId: String): OIDCAuthProviderConfig = {
     val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], issuer = issuer.asInstanceOf[js.Any], providerId = providerId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OIDCAuthProviderConfig]
   }
 }

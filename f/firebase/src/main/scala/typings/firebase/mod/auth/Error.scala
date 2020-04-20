@@ -80,7 +80,6 @@ object Error {
   @scala.inline
   def apply(code: String, message: String): Error = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Error]
   }
 }

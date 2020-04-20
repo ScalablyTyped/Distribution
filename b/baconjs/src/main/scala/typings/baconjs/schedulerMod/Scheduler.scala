@@ -22,7 +22,6 @@ object Scheduler {
     setTimeout: (js.Function, Double) => Double
   ): Scheduler = {
     val __obj = js.Dynamic.literal(clearInterval = js.Any.fromFunction1(clearInterval), clearTimeout = js.Any.fromFunction1(clearTimeout), now = js.Any.fromFunction0(now), setInterval = js.Any.fromFunction2(setInterval), setTimeout = js.Any.fromFunction2(setTimeout))
-  
     __obj.asInstanceOf[Scheduler]
   }
 }

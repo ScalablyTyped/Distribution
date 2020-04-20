@@ -13,7 +13,6 @@ object ARR_ {
   @scala.inline
   def apply(arr: Double, date: String): ARR_ = {
     val __obj = js.Dynamic.literal(arr = arr.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ARR_]
   }
 }

@@ -33,7 +33,22 @@ object jestCoreStrings {
   sealed trait none extends js.Object
   
   @js.native
+  sealed trait roots extends js.Object
+  
+  @js.native
   sealed trait teamcity extends js.Object
+  
+  @js.native
+  sealed trait testMatch extends js.Object
+  
+  @js.native
+  sealed trait testPathIgnorePatterns extends js.Object
+  
+  @js.native
+  sealed trait testPathPattern extends js.Object
+  
+  @js.native
+  sealed trait testRegex extends js.Object
   
   @js.native
   sealed trait text extends js.Object
@@ -69,7 +84,17 @@ object jestCoreStrings {
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
+  def roots: roots = "roots".asInstanceOf[roots]
+  @scala.inline
   def teamcity: teamcity = "teamcity".asInstanceOf[teamcity]
+  @scala.inline
+  def testMatch: testMatch = "testMatch".asInstanceOf[testMatch]
+  @scala.inline
+  def testPathIgnorePatterns: testPathIgnorePatterns = "testPathIgnorePatterns".asInstanceOf[testPathIgnorePatterns]
+  @scala.inline
+  def testPathPattern: testPathPattern = "testPathPattern".asInstanceOf[testPathPattern]
+  @scala.inline
+  def testRegex: testRegex = "testRegex".asInstanceOf[testRegex]
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   @scala.inline

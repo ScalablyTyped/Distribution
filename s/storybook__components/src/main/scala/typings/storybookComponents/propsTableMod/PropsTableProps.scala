@@ -17,7 +17,6 @@ object PropsTableProps {
   @scala.inline
   def PropsTableRowsProps(rows: js.Array[PropDef]): PropsTableProps = {
     val __obj = js.Dynamic.literal(rows = rows.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PropsTableProps]
   }
   @scala.inline
@@ -29,7 +28,6 @@ object PropsTableProps {
   @scala.inline
   def PropsTableErrorProps(error: PropsTableError): PropsTableProps = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PropsTableProps]
   }
 }

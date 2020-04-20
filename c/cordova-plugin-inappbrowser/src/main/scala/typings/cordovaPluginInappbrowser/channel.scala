@@ -15,16 +15,14 @@ trait channel extends js.Object
 
 object channel {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def exit: typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.exit = "exit".asInstanceOf[typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.exit]
   @scala.inline
-  def exit: typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.exit = this.cast("exit")
+  def loaderror: typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.loaderror = "loaderror".asInstanceOf[typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.loaderror]
   @scala.inline
-  def loaderror: typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.loaderror = this.cast("loaderror")
+  def loadstart: typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.loadstart = "loadstart".asInstanceOf[typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.loadstart]
   @scala.inline
-  def loadstart: typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.loadstart = this.cast("loadstart")
+  def loadstop: typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.loadstop = "loadstop".asInstanceOf[typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.loadstop]
   @scala.inline
-  def loadstop: typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.loadstop = this.cast("loadstop")
-  @scala.inline
-  def message: typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.message = this.cast("message")
+  def message: typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.message = "message".asInstanceOf[typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.message]
 }
 

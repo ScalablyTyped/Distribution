@@ -89,22 +89,22 @@ class BoneLookController protected () extends js.Object {
   /**
     * Gets or sets the maximum pitch angle that the bone can look to
     */
-  def maxPitch(): Double = js.native
+  def maxPitch: Double = js.native
   def maxPitch(value: Double): js.Any = js.native
   /**
     * Gets or sets the maximum yaw angle that the bone can look to
     */
-  def maxYaw(): Double = js.native
+  def maxYaw: Double = js.native
   def maxYaw(value: Double): js.Any = js.native
   /**
     * Gets or sets the minimum pitch angle that the bone can look to
     */
-  def minPitch(): Double = js.native
+  def minPitch: Double = js.native
   def minPitch(value: Double): js.Any = js.native
   /**
     * Gets or sets the minimum yaw angle that the bone can look to
     */
-  def minYaw(): Double = js.native
+  def minYaw: Double = js.native
   def minYaw(value: Double): js.Any = js.native
   /**
     * Update the bone to look at the target.  This should be called before the scene is rendered (use scene.registerBeforeRender())

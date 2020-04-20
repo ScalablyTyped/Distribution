@@ -18,7 +18,6 @@ object DropTargetConnector {
   @scala.inline
   def apply(dropTarget: () => ConnectDropTarget): DropTargetConnector = {
     val __obj = js.Dynamic.literal(dropTarget = js.Any.fromFunction0(dropTarget))
-  
     __obj.asInstanceOf[DropTargetConnector]
   }
 }

@@ -15,7 +15,6 @@ object AnonBetween {
   @scala.inline
   def apply(between: between, center: center): AnonBetween = {
     val __obj = js.Dynamic.literal(between = between.asInstanceOf[js.Any], center = center.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBetween]
   }
 }

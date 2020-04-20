@@ -13,7 +13,6 @@ object AnonShowTime {
   @scala.inline
   def apply[DateType](showTime: SharedTimeProps[DateType]): AnonShowTime[DateType] = {
     val __obj = js.Dynamic.literal(showTime = showTime.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonShowTime[DateType]]
   }
 }

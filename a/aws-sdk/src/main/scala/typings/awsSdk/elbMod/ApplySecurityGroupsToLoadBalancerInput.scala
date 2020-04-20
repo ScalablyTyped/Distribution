@@ -20,7 +20,6 @@ object ApplySecurityGroupsToLoadBalancerInput {
   @scala.inline
   def apply(LoadBalancerName: AccessPointName, SecurityGroups: SecurityGroups): ApplySecurityGroupsToLoadBalancerInput = {
     val __obj = js.Dynamic.literal(LoadBalancerName = LoadBalancerName.asInstanceOf[js.Any], SecurityGroups = SecurityGroups.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ApplySecurityGroupsToLoadBalancerInput]
   }
 }

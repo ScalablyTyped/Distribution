@@ -12,7 +12,6 @@ object Similar {
   @scala.inline
   def apply(faceIds: js.Array[String]): Similar = {
     val __obj = js.Dynamic.literal(faceIds = faceIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Similar]
   }
 }

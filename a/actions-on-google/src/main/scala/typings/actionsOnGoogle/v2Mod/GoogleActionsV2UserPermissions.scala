@@ -15,16 +15,14 @@ trait GoogleActionsV2UserPermissions extends js.Object
 
 object GoogleActionsV2UserPermissions {
   @scala.inline
-  def DEVICE_COARSE_LOCATION: typings.actionsOnGoogle.actionsOnGoogleStrings.DEVICE_COARSE_LOCATION = this.cast("DEVICE_COARSE_LOCATION")
+  def DEVICE_COARSE_LOCATION: typings.actionsOnGoogle.actionsOnGoogleStrings.DEVICE_COARSE_LOCATION = "DEVICE_COARSE_LOCATION".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.DEVICE_COARSE_LOCATION]
   @scala.inline
-  def DEVICE_PRECISE_LOCATION: typings.actionsOnGoogle.actionsOnGoogleStrings.DEVICE_PRECISE_LOCATION = this.cast("DEVICE_PRECISE_LOCATION")
+  def DEVICE_PRECISE_LOCATION: typings.actionsOnGoogle.actionsOnGoogleStrings.DEVICE_PRECISE_LOCATION = "DEVICE_PRECISE_LOCATION".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.DEVICE_PRECISE_LOCATION]
   @scala.inline
-  def NAME: typings.actionsOnGoogle.actionsOnGoogleStrings.NAME = this.cast("NAME")
+  def NAME: typings.actionsOnGoogle.actionsOnGoogleStrings.NAME = "NAME".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.NAME]
   @scala.inline
-  def UNSPECIFIED_PERMISSION: typings.actionsOnGoogle.actionsOnGoogleStrings.UNSPECIFIED_PERMISSION = this.cast("UNSPECIFIED_PERMISSION")
+  def UNSPECIFIED_PERMISSION: typings.actionsOnGoogle.actionsOnGoogleStrings.UNSPECIFIED_PERMISSION = "UNSPECIFIED_PERMISSION".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.UNSPECIFIED_PERMISSION]
   @scala.inline
-  def UPDATE: typings.actionsOnGoogle.actionsOnGoogleStrings.UPDATE = this.cast("UPDATE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UPDATE: typings.actionsOnGoogle.actionsOnGoogleStrings.UPDATE = "UPDATE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.UPDATE]
 }
 

@@ -55,28 +55,28 @@ class KeyInfoX509Data () extends KeyInfoClause {
     * Gets or sets the Certificate Revocation List (CRL) contained within the KeyInfoX509Data object.
     */
   @JSName("CRL")
-  def CRL_Union(): Uint8Array | Null = js.native
+  def CRL_Union: Uint8Array | Null = js.native
   /**
     * Gets a list of the X.509v3 certificates contained in the KeyInfoX509Data object.
     */
-  def Certificates(): js.Array[X509Certificate] = js.native
+  def Certificates: js.Array[X509Certificate] = js.native
   /**
     * Gets a list of X509IssuerSerial structures that represent an issuer name and serial number pair.
     */
-  def IssuerSerials(): js.Array[IX509IssuerSerial] = js.native
+  def IssuerSerials: js.Array[IX509IssuerSerial] = js.native
   /**
     * Gets public key of the X509Data
     */
   @JSName("Key")
-  def Key_MKeyInfoX509Data(): CryptoKey | Null = js.native
+  def Key_MKeyInfoX509Data: CryptoKey | Null = js.native
   /**
     * Gets a list of the subject key identifiers (SKIs) contained in the KeyInfoX509Data object.
     */
-  def SubjectKeyIds(): js.Array[Uint8Array] = js.native
+  def SubjectKeyIds: js.Array[Uint8Array] = js.native
   /**
     * Gets a list of the subject names of the entities contained in the KeyInfoX509Data object.
     */
-  def SubjectNames(): js.Array[String] = js.native
+  def SubjectNames: js.Array[String] = js.native
   def exportKey(alg: EcKeyImportParams): js.Promise[_] = js.native
   /**
     * Exports key from X509Data object

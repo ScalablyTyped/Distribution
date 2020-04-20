@@ -12,10 +12,8 @@ trait FillRule extends js.Object
 
 object FillRule {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def evenodd: typings.reactNativeSvg.reactNativeSvgStrings.evenodd = "evenodd".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.evenodd]
   @scala.inline
-  def evenodd: typings.reactNativeSvg.reactNativeSvgStrings.evenodd = this.cast("evenodd")
-  @scala.inline
-  def nonzero: typings.reactNativeSvg.reactNativeSvgStrings.nonzero = this.cast("nonzero")
+  def nonzero: typings.reactNativeSvg.reactNativeSvgStrings.nonzero = "nonzero".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.nonzero]
 }
 

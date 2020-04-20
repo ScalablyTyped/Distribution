@@ -2,7 +2,9 @@ package typings.titanium.Titanium
 
 import typings.titanium.DecodeNumberDict
 import typings.titanium.DecodeStringDict
+import typings.titanium.Dictionary
 import typings.titanium.EncodeNumberDict
+import typings.titanium.EncodeStringDict
 import typings.titanium.Titanium.UI.TabGroup
 import typings.titanium.Titanium.UI.Window
 import scala.scalajs.js
@@ -12,6 +14,11 @@ import scala.scalajs.js.annotation._
 /**
 	 * A module for translating between primitive types and raw byte streams.
 	 */
+@JSGlobal("Titanium.Codec")
+@js.native
+class Codec () extends Module
+
+/* static members */
 @JSGlobal("Titanium.Codec")
 @js.native
 object Codec extends js.Object {
@@ -86,7 +93,7 @@ object Codec extends js.Object {
   /**
   		 * Adds the specified callback as an event listener for the named event.
   		 */
-  def addEventListener(name: String, callback: js.Function1[/* param0 */ js.Any, _]): Unit = js.native
+  def addEventListener(name: String, callback: js.Function1[/* param0 */ Event, Unit]): Unit = js.native
   /**
   		 * Applies the properties to the proxy.
   		 */
@@ -106,21 +113,25 @@ object Codec extends js.Object {
   /**
   		 * Encodes a string into a series of bytes in a buffer using the specified character set.
   		 */
-  def encodeString(options: js.Any): Double = js.native
+  def encodeString(options: Dictionary[EncodeStringDict]): Double = js.native
   /**
   		 * Fires a synthesized event to any registered listeners.
   		 */
+  def fireEvent(name: String): Unit = js.native
   def fireEvent(name: String, event: js.Any): Unit = js.native
   /**
   		 * Gets the value of the <Titanium.Codec.apiName> property.
+  		 * @deprecated Access <Titanium.Codec.apiName> instead.
   		 */
   def getApiName(): String = js.native
   /**
   		 * Gets the value of the <Titanium.Codec.bubbleParent> property.
+  		 * @deprecated Access <Titanium.Codec.bubbleParent> instead.
   		 */
   def getBubbleParent(): Boolean = js.native
   /**
   		 * Gets the value of the <Titanium.Codec.lifecycleContainer> property.
+  		 * @deprecated Access <Titanium.Codec.lifecycleContainer> instead.
   		 */
   def getLifecycleContainer(): Window | TabGroup = js.native
   /**
@@ -131,17 +142,16 @@ object Codec extends js.Object {
   /**
   		 * Removes the specified callback as an event listener for the named event.
   		 */
-  def removeEventListener(name: String, callback: js.Function1[/* param0 */ js.Any, _]): Unit = js.native
+  def removeEventListener(name: String, callback: js.Function1[/* param0 */ Event, Unit]): Unit = js.native
   /**
   		 * Sets the value of the <Titanium.Codec.bubbleParent> property.
+  		 * @deprecated Set the value using <Titanium.Codec.bubbleParent> instead.
   		 */
   def setBubbleParent(bubbleParent: Boolean): Unit = js.native
-  /**
-  		 * Sets the value of the <Titanium.Codec.lifecycleContainer> property.
-  		 */
   def setLifecycleContainer(lifecycleContainer: TabGroup): Unit = js.native
   /**
   		 * Sets the value of the <Titanium.Codec.lifecycleContainer> property.
+  		 * @deprecated Set the value using <Titanium.Codec.lifecycleContainer> instead.
   		 */
   def setLifecycleContainer(lifecycleContainer: Window): Unit = js.native
 }

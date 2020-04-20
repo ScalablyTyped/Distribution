@@ -13,10 +13,8 @@ trait FormatListOptions extends js.Object
 
 object FormatListOptions {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def style: typings.reactIntl.reactIntlStrings.style = "style".asInstanceOf[typings.reactIntl.reactIntlStrings.style]
   @scala.inline
-  def style: typings.reactIntl.reactIntlStrings.style = this.cast("style")
-  @scala.inline
-  def `type`: typings.reactIntl.reactIntlStrings.`type` = this.cast("type")
+  def `type`: typings.reactIntl.reactIntlStrings.`type` = "type".asInstanceOf[typings.reactIntl.reactIntlStrings.`type`]
 }
 

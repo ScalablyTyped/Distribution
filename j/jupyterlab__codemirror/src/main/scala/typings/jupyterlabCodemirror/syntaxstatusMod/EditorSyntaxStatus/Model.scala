@@ -28,11 +28,11 @@ class Model () extends VDomModel {
     * The current editor for the application editor tracker.
     */
   @JSName("editor")
-  def editor_Union(): IEditor | Null = js.native
+  def editor_Union: IEditor | Null = js.native
   /**
     * The current mode for the editor. If no editor is present,
     * returns the empty string.
     */
-  def mode(): String = js.native
+  def mode: String = js.native
 }
 

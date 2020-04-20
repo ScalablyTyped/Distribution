@@ -18,7 +18,6 @@ object PointerMeta {
   @scala.inline
   def apply(items: js.Array[AnonId], max: Double): PointerMeta = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PointerMeta]
   }
 }

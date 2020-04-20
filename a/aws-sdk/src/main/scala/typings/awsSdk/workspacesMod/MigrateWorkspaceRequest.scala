@@ -20,7 +20,6 @@ object MigrateWorkspaceRequest {
   @scala.inline
   def apply(BundleId: BundleId, SourceWorkspaceId: WorkspaceId): MigrateWorkspaceRequest = {
     val __obj = js.Dynamic.literal(BundleId = BundleId.asInstanceOf[js.Any], SourceWorkspaceId = SourceWorkspaceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MigrateWorkspaceRequest]
   }
 }

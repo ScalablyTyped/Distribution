@@ -12,10 +12,8 @@ trait GoogleActionsV2OrdersCustomerInfoOptionsCustomerInfoProperties extends js.
 
 object GoogleActionsV2OrdersCustomerInfoOptionsCustomerInfoProperties {
   @scala.inline
-  def CUSTOMER_INFO_PROPERTY_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.CUSTOMER_INFO_PROPERTY_UNSPECIFIED = this.cast("CUSTOMER_INFO_PROPERTY_UNSPECIFIED")
+  def CUSTOMER_INFO_PROPERTY_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.CUSTOMER_INFO_PROPERTY_UNSPECIFIED = "CUSTOMER_INFO_PROPERTY_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CUSTOMER_INFO_PROPERTY_UNSPECIFIED]
   @scala.inline
-  def EMAIL: typings.actionsOnGoogle.actionsOnGoogleStrings.EMAIL = this.cast("EMAIL")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def EMAIL: typings.actionsOnGoogle.actionsOnGoogleStrings.EMAIL = "EMAIL".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.EMAIL]
 }
 

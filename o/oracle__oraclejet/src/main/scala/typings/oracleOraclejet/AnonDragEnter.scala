@@ -23,7 +23,6 @@ object AnonDragEnter {
     drop: (Event_, js.Object) => Unit
   ): AnonDragEnter = {
     val __obj = js.Dynamic.literal(dataTypes = dataTypes.asInstanceOf[js.Any], dragEnter = js.Any.fromFunction2(dragEnter), dragLeave = js.Any.fromFunction2(dragLeave), dragOver = js.Any.fromFunction2(dragOver), drop = js.Any.fromFunction2(drop))
-  
     __obj.asInstanceOf[AnonDragEnter]
   }
 }

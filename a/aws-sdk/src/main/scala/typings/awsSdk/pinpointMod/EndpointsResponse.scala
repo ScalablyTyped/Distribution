@@ -16,7 +16,6 @@ object EndpointsResponse {
   @scala.inline
   def apply(Item: ListOfEndpointResponse): EndpointsResponse = {
     val __obj = js.Dynamic.literal(Item = Item.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EndpointsResponse]
   }
 }

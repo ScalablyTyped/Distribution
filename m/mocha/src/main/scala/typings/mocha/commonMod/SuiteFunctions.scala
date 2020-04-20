@@ -24,7 +24,6 @@ object SuiteFunctions {
   @scala.inline
   def apply(create: CreateOptions => Suite_, only: CreateOptions => Suite_, skip: CreateOptions => Suite_): SuiteFunctions = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), only = js.Any.fromFunction1(only), skip = js.Any.fromFunction1(skip))
-  
     __obj.asInstanceOf[SuiteFunctions]
   }
 }

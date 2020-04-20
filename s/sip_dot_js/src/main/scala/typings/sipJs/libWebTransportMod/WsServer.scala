@@ -16,7 +16,6 @@ object WsServer {
   @scala.inline
   def apply(isError: Boolean, scheme: String, sipUri: String, weight: Double, wsUri: String): WsServer = {
     val __obj = js.Dynamic.literal(isError = isError.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any], sipUri = sipUri.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any], wsUri = wsUri.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WsServer]
   }
 }

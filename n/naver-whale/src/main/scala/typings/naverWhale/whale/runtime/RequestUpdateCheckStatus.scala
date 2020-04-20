@@ -13,12 +13,10 @@ trait RequestUpdateCheckStatus extends js.Object
 
 object RequestUpdateCheckStatus {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def no_update: typings.naverWhale.naverWhaleStrings.no_update = "no_update".asInstanceOf[typings.naverWhale.naverWhaleStrings.no_update]
   @scala.inline
-  def no_update: typings.naverWhale.naverWhaleStrings.no_update = this.cast("no_update")
+  def throttled: typings.naverWhale.naverWhaleStrings.throttled = "throttled".asInstanceOf[typings.naverWhale.naverWhaleStrings.throttled]
   @scala.inline
-  def throttled: typings.naverWhale.naverWhaleStrings.throttled = this.cast("throttled")
-  @scala.inline
-  def update_available: typings.naverWhale.naverWhaleStrings.update_available = this.cast("update_available")
+  def update_available: typings.naverWhale.naverWhaleStrings.update_available = "update_available".asInstanceOf[typings.naverWhale.naverWhaleStrings.update_available]
 }
 

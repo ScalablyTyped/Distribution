@@ -13,12 +13,10 @@ trait Linecap extends js.Object
 
 object Linecap {
   @scala.inline
-  def butt: typings.reactNativeSvg.reactNativeSvgStrings.butt = this.cast("butt")
+  def butt: typings.reactNativeSvg.reactNativeSvgStrings.butt = "butt".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.butt]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def round: typings.reactNativeSvg.reactNativeSvgStrings.round = "round".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.round]
   @scala.inline
-  def round: typings.reactNativeSvg.reactNativeSvgStrings.round = this.cast("round")
-  @scala.inline
-  def square: typings.reactNativeSvg.reactNativeSvgStrings.square = this.cast("square")
+  def square: typings.reactNativeSvg.reactNativeSvgStrings.square = "square".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.square]
 }
 

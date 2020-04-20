@@ -14,10 +14,8 @@ trait WdViewTypeOld extends js.Object
 
 object WdViewTypeOld {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdOnlineView: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdOnlineView: `6` = this.cast(6)
-  @scala.inline
-  def wdPageView: `3` = this.cast(3)
+  def wdPageView: `3` = 3.asInstanceOf[`3`]
 }
 

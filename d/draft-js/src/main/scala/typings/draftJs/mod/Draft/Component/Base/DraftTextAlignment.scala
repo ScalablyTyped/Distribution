@@ -13,12 +13,10 @@ trait DraftTextAlignment extends js.Object
 
 object DraftTextAlignment {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.draftJs.draftJsStrings.center = "center".asInstanceOf[typings.draftJs.draftJsStrings.center]
   @scala.inline
-  def center: typings.draftJs.draftJsStrings.center = this.cast("center")
+  def left: typings.draftJs.draftJsStrings.left = "left".asInstanceOf[typings.draftJs.draftJsStrings.left]
   @scala.inline
-  def left: typings.draftJs.draftJsStrings.left = this.cast("left")
-  @scala.inline
-  def right: typings.draftJs.draftJsStrings.right = this.cast("right")
+  def right: typings.draftJs.draftJsStrings.right = "right".asInstanceOf[typings.draftJs.draftJsStrings.right]
 }
 

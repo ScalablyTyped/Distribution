@@ -13,7 +13,6 @@ object AnonIntent {
   @scala.inline
   def apply(intent: actionDotdevicesDotDISCONNECT): AnonIntent = {
     val __obj = js.Dynamic.literal(intent = intent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIntent]
   }
 }

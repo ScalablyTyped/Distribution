@@ -21,7 +21,6 @@ object ISpecModels {
   @scala.inline
   def apply(default: String, kernelspecs: StringDictionary[js.UndefOr[ISpecModel]]): ISpecModels = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], kernelspecs = kernelspecs.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISpecModels]
   }
 }

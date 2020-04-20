@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait rcResizeObserverProps {
   @scala.inline
-  def LibProps: ResizeObserverProps.type = typings.rcResizeObserver.mod.ResizeObserverProps
+  def LibProps: ResizeObserverProps.type = ResizeObserverProps
   type LibProps = ResizeObserverProps
 }
 

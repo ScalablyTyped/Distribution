@@ -16,7 +16,6 @@ object SetDefaultAuthorizerRequest {
   @scala.inline
   def apply(authorizerName: AuthorizerName): SetDefaultAuthorizerRequest = {
     val __obj = js.Dynamic.literal(authorizerName = authorizerName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetDefaultAuthorizerRequest]
   }
 }

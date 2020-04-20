@@ -16,6 +16,7 @@ trait Options extends js.Object {
   var attributionsCollapsible: js.UndefOr[Boolean] = js.undefined
   var cacheSize: js.UndefOr[Double] = js.undefined
   var crossOrigin: js.UndefOr[String] = js.undefined
+  var maxResolution: js.UndefOr[Double] = js.undefined
   var maxZoom: js.UndefOr[Double] = js.undefined
   var minZoom: js.UndefOr[Double] = js.undefined
   var opaque: js.UndefOr[Boolean] = js.undefined
@@ -40,6 +41,7 @@ object Options {
     attributionsCollapsible: js.UndefOr[Boolean] = js.undefined,
     cacheSize: Int | Double = null,
     crossOrigin: String = null,
+    maxResolution: Int | Double = null,
     maxZoom: Int | Double = null,
     minZoom: Int | Double = null,
     opaque: js.UndefOr[Boolean] = js.undefined,
@@ -61,6 +63,7 @@ object Options {
     if (!js.isUndefined(attributionsCollapsible)) __obj.updateDynamic("attributionsCollapsible")(attributionsCollapsible.asInstanceOf[js.Any])
     if (cacheSize != null) __obj.updateDynamic("cacheSize")(cacheSize.asInstanceOf[js.Any])
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
+    if (maxResolution != null) __obj.updateDynamic("maxResolution")(maxResolution.asInstanceOf[js.Any])
     if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
     if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
     if (!js.isUndefined(opaque)) __obj.updateDynamic("opaque")(opaque.asInstanceOf[js.Any])

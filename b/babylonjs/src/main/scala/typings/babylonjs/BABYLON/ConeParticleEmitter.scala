@@ -42,7 +42,7 @@ class ConeParticleEmitter () extends IParticleEmitterType {
   /**
     * Gets or sets the angle of the emission cone
     */
-  def angle(): Double = js.native
+  def angle: Double = js.native
   def angle(value: Double): js.Any = js.native
   /**
     * Called by the GPUParticleSystem to setup the update shader
@@ -77,7 +77,7 @@ class ConeParticleEmitter () extends IParticleEmitterType {
   /**
     * Gets or sets the radius of the emission cone
     */
-  def radius(): Double = js.native
+  def radius: Double = js.native
   def radius(value: Double): js.Any = js.native
   /**
     * Serializes the particle system to a JSON object.

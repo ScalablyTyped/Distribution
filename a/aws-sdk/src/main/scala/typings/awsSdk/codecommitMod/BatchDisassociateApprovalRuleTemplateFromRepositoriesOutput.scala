@@ -23,7 +23,6 @@ object BatchDisassociateApprovalRuleTemplateFromRepositoriesOutput {
     errors: BatchDisassociateApprovalRuleTemplateFromRepositoriesErrorsList
   ): BatchDisassociateApprovalRuleTemplateFromRepositoriesOutput = {
     val __obj = js.Dynamic.literal(disassociatedRepositoryNames = disassociatedRepositoryNames.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchDisassociateApprovalRuleTemplateFromRepositoriesOutput]
   }
 }

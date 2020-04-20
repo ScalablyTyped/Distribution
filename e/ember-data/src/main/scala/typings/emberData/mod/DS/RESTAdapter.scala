@@ -36,43 +36,43 @@ class RESTAdapter () extends Adapter {
   /**
     * Builds a URL for a given type and optional ID.
     */
-  def buildURL[K /* <: String */](): String = js.native
-  def buildURL[K /* <: String */](modelName: K): String = js.native
-  def buildURL[K /* <: String */](modelName: K, id: String): String = js.native
-  def buildURL[K /* <: String */](modelName: K, id: String, snapshot: js.Array[_]): String = js.native
-  def buildURL[K /* <: String */](modelName: K, id: String, snapshot: js.Array[_], requestType: String): String = js.native
-  def buildURL[K /* <: String */](modelName: K, id: String, snapshot: js.Array[_], requestType: String, query: js.Object): String = js.native
-  def buildURL[K /* <: String */](modelName: K, id: String, snapshot: Null, requestType: String): String = js.native
-  def buildURL[K /* <: String */](modelName: K, id: String, snapshot: Null, requestType: String, query: js.Object): String = js.native
-  def buildURL[K /* <: String */](modelName: K, id: String, snapshot: Snapshot[K]): String = js.native
-  def buildURL[K /* <: String */](modelName: K, id: String, snapshot: Snapshot[K], requestType: String): String = js.native
-  def buildURL[K /* <: String */](modelName: K, id: String, snapshot: Snapshot[K], requestType: String, query: js.Object): String = js.native
-  def buildURL[K /* <: String */](modelName: K, id: js.Array[_]): String = js.native
-  def buildURL[K /* <: String */](modelName: K, id: js.Array[_], snapshot: js.Array[_]): String = js.native
-  def buildURL[K /* <: String */](modelName: K, id: js.Array[_], snapshot: js.Array[_], requestType: String): String = js.native
-  def buildURL[K /* <: String */](modelName: K, id: js.Array[_], snapshot: js.Array[_], requestType: String, query: js.Object): String = js.native
-  def buildURL[K /* <: String */](modelName: K, id: js.Array[_], snapshot: Null, requestType: String): String = js.native
-  def buildURL[K /* <: String */](modelName: K, id: js.Array[_], snapshot: Null, requestType: String, query: js.Object): String = js.native
-  def buildURL[K /* <: String */](modelName: K, id: js.Array[_], snapshot: Snapshot[K]): String = js.native
-  def buildURL[K /* <: String */](modelName: K, id: js.Array[_], snapshot: Snapshot[K], requestType: String): String = js.native
-  def buildURL[K /* <: String */](modelName: K, id: js.Array[_], snapshot: Snapshot[K], requestType: String, query: js.Object): String = js.native
-  def buildURL[K /* <: String */](modelName: K, id: js.Object): String = js.native
-  def buildURL[K /* <: String */](modelName: K, id: js.Object, snapshot: js.Array[_]): String = js.native
-  def buildURL[K /* <: String */](modelName: K, id: js.Object, snapshot: js.Array[_], requestType: String): String = js.native
-  def buildURL[K /* <: String */](modelName: K, id: js.Object, snapshot: js.Array[_], requestType: String, query: js.Object): String = js.native
-  def buildURL[K /* <: String */](modelName: K, id: js.Object, snapshot: Null, requestType: String): String = js.native
-  def buildURL[K /* <: String */](modelName: K, id: js.Object, snapshot: Null, requestType: String, query: js.Object): String = js.native
-  def buildURL[K /* <: String */](modelName: K, id: js.Object, snapshot: Snapshot[K]): String = js.native
-  def buildURL[K /* <: String */](modelName: K, id: js.Object, snapshot: Snapshot[K], requestType: String): String = js.native
-  def buildURL[K /* <: String */](modelName: K, id: js.Object, snapshot: Snapshot[K], requestType: String, query: js.Object): String = js.native
-  def buildURL[K /* <: String */](modelName: K, id: Null, snapshot: js.Array[_]): String = js.native
-  def buildURL[K /* <: String */](modelName: K, id: Null, snapshot: js.Array[_], requestType: String): String = js.native
-  def buildURL[K /* <: String */](modelName: K, id: Null, snapshot: js.Array[_], requestType: String, query: js.Object): String = js.native
-  def buildURL[K /* <: String */](modelName: K, id: Null, snapshot: Null, requestType: String): String = js.native
-  def buildURL[K /* <: String */](modelName: K, id: Null, snapshot: Null, requestType: String, query: js.Object): String = js.native
-  def buildURL[K /* <: String */](modelName: K, id: Null, snapshot: Snapshot[K]): String = js.native
-  def buildURL[K /* <: String */](modelName: K, id: Null, snapshot: Snapshot[K], requestType: String): String = js.native
-  def buildURL[K /* <: String */](modelName: K, id: Null, snapshot: Snapshot[K], requestType: String, query: js.Object): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, id: String): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, id: String, snapshot: js.Array[_]): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, id: String, snapshot: js.Array[_], requestType: String): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, id: String, snapshot: js.Array[_], requestType: String, query: js.Object): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, id: String, snapshot: Null, requestType: String): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, id: String, snapshot: Null, requestType: String, query: js.Object): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, id: String, snapshot: Snapshot[K]): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, id: String, snapshot: Snapshot[K], requestType: String): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, id: String, snapshot: Snapshot[K], requestType: String, query: js.Object): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, id: js.Array[_]): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, id: js.Array[_], snapshot: js.Array[_]): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, id: js.Array[_], snapshot: js.Array[_], requestType: String): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, id: js.Array[_], snapshot: js.Array[_], requestType: String, query: js.Object): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, id: js.Array[_], snapshot: Null, requestType: String): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, id: js.Array[_], snapshot: Null, requestType: String, query: js.Object): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, id: js.Array[_], snapshot: Snapshot[K]): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, id: js.Array[_], snapshot: Snapshot[K], requestType: String): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, id: js.Array[_], snapshot: Snapshot[K], requestType: String, query: js.Object): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, id: js.Object): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, id: js.Object, snapshot: js.Array[_]): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, id: js.Object, snapshot: js.Array[_], requestType: String): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, id: js.Object, snapshot: js.Array[_], requestType: String, query: js.Object): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, id: js.Object, snapshot: Null, requestType: String): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, id: js.Object, snapshot: Null, requestType: String, query: js.Object): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, id: js.Object, snapshot: Snapshot[K]): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, id: js.Object, snapshot: Snapshot[K], requestType: String): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, id: js.Object, snapshot: Snapshot[K], requestType: String, query: js.Object): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, id: Null, snapshot: js.Array[_]): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, id: Null, snapshot: js.Array[_], requestType: String): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, id: Null, snapshot: js.Array[_], requestType: String, query: js.Object): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, id: Null, snapshot: Null, requestType: String): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, id: Null, snapshot: Null, requestType: String, query: js.Object): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, id: Null, snapshot: Snapshot[K]): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, id: Null, snapshot: Snapshot[K], requestType: String): String = js.native
+  def buildURL[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, id: Null, snapshot: Snapshot[K], requestType: String, query: js.Object): String = js.native
   /**
     * Get the data (body or query params) for a request.
     */
@@ -82,13 +82,13 @@ class RESTAdapter () extends Adapter {
     * belongs-to relationship that was originally specified as a URL (inside of
     * `links`).
     */
-  def findBelongsTo[K /* <: String */](store: Store, snapshot: Snapshot[K], url: String): Promise[_] = js.native
+  def findBelongsTo[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](store: Store, snapshot: Snapshot[K], url: String): Promise[_] = js.native
   /**
     * Called by the store in order to fetch a JSON array for
     * the unloaded records in a has-many relationship that were originally
     * specified as a URL (inside of `links`).
     */
-  def findHasMany[K /* <: String */](store: Store, snapshot: Snapshot[K], url: String, relationship: js.Object): Promise[_] = js.native
+  def findHasMany[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](store: Store, snapshot: Snapshot[K], url: String, relationship: js.Object): Promise[_] = js.native
   /**
     * Takes an ajax response, and returns the json payload or an error.
     */
@@ -114,12 +114,12 @@ class RESTAdapter () extends Adapter {
   /**
     * Determines the pathname for a given type.
     */
-  def pathForType[K /* <: String */](modelName: K): String = js.native
+  def pathForType[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K): String = js.native
   /**
     * Called by the store in order to fetch a JSON array for
     * the records that match a particular query.
     */
-  def query[K /* <: String */](
+  def query[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](
     store: Store,
     `type`: /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any,
     query: js.Object
@@ -133,43 +133,43 @@ class RESTAdapter () extends Adapter {
     * Builds a URL for a `record.save()` call when the record was created
     * locally using `store.createRecord()`.
     */
-  def urlForCreateRecord[K /* <: String */](modelName: K, snapshot: Snapshot[K]): String = js.native
+  def urlForCreateRecord[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, snapshot: Snapshot[K]): String = js.native
   /**
     * Builds a URL for a `record.save()` call when the record has been deleted locally.
     */
-  def urlForDeleteRecord[K /* <: String */](id: String, modelName: K, snapshot: Snapshot[K]): String = js.native
+  def urlForDeleteRecord[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](id: String, modelName: K, snapshot: Snapshot[K]): String = js.native
   /**
     * Builds a URL for a `store.findAll(type)` call.
     */
-  def urlForFindAll[K /* <: String */](modelName: K, snapshot: SnapshotRecordArray[K]): String = js.native
+  def urlForFindAll[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](modelName: K, snapshot: SnapshotRecordArray[K]): String = js.native
   /**
     * Builds a URL for fetching a async belongsTo relationship when a url
     * is not provided by the server.
     */
-  def urlForFindBelongsTo[K /* <: String */](id: String, modelName: K, snapshot: Snapshot[K]): String = js.native
+  def urlForFindBelongsTo[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](id: String, modelName: K, snapshot: Snapshot[K]): String = js.native
   /**
     * Builds a URL for fetching a async hasMany relationship when a url
     * is not provided by the server.
     */
-  def urlForFindHasMany[K /* <: String */](id: String, modelName: K, snapshot: Snapshot[K]): String = js.native
+  def urlForFindHasMany[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](id: String, modelName: K, snapshot: Snapshot[K]): String = js.native
   /**
     * Builds a URL for coalesceing multiple `store.findRecord(type, id)`
     * records into 1 request when the adapter's `coalesceFindRequests`
     * property is true.
     */
-  def urlForFindMany[K /* <: String */](ids: js.Array[_], modelName: K, snapshots: js.Array[_]): String = js.native
+  def urlForFindMany[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](ids: js.Array[_], modelName: K, snapshots: js.Array[_]): String = js.native
   /**
     * Builds a URL for a `store.findRecord(type, id)` call.
     */
-  def urlForFindRecord[K /* <: String */](id: String, modelName: K, snapshot: Snapshot[K]): String = js.native
+  def urlForFindRecord[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](id: String, modelName: K, snapshot: Snapshot[K]): String = js.native
   /**
     * Builds a URL for a `store.query(type, query)` call.
     */
-  def urlForQuery[K /* <: String */](query: js.Object, modelName: K): String = js.native
+  def urlForQuery[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](query: js.Object, modelName: K): String = js.native
   /**
     * Builds a URL for a `store.queryRecord(type, query)` call.
     */
-  def urlForQueryRecord[K /* <: String */](query: js.Object, modelName: K): String = js.native
+  def urlForQueryRecord[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](query: js.Object, modelName: K): String = js.native
   /**
     * Get the URL for a request.
     */
@@ -177,6 +177,6 @@ class RESTAdapter () extends Adapter {
   /**
     * Builds a URL for a `record.save()` call when the record has been update locally.
     */
-  def urlForUpdateRecord[K /* <: String */](id: String, modelName: K, snapshot: Snapshot[K]): String = js.native
+  def urlForUpdateRecord[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](id: String, modelName: K, snapshot: Snapshot[K]): String = js.native
 }
 

@@ -13,12 +13,10 @@ trait GoToLocationValues extends js.Object
 
 object GoToLocationValues {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def goto: typings.monacoEditor.monacoEditorStrings.goto = "goto".asInstanceOf[typings.monacoEditor.monacoEditorStrings.goto]
   @scala.inline
-  def goto: typings.monacoEditor.monacoEditorStrings.goto = this.cast("goto")
+  def gotoAndPeek: typings.monacoEditor.monacoEditorStrings.gotoAndPeek = "gotoAndPeek".asInstanceOf[typings.monacoEditor.monacoEditorStrings.gotoAndPeek]
   @scala.inline
-  def gotoAndPeek: typings.monacoEditor.monacoEditorStrings.gotoAndPeek = this.cast("gotoAndPeek")
-  @scala.inline
-  def peek: typings.monacoEditor.monacoEditorStrings.peek = this.cast("peek")
+  def peek: typings.monacoEditor.monacoEditorStrings.peek = "peek".asInstanceOf[typings.monacoEditor.monacoEditorStrings.peek]
 }
 

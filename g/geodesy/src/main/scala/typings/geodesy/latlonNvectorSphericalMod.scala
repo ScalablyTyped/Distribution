@@ -34,15 +34,15 @@ object latlonNvectorSphericalMod extends js.Object {
     def intermediatePointTo(point: LatLonNvectorSpherical, fraction: Double): LatLonNvectorSpherical = js.native
     def isEnclosedBy(polygon: Polygon[LatLonNvectorSpherical]): Boolean = js.native
     def isWithinExtent(point1: LatLonNvectorSpherical, point2: LatLonNvectorSpherical): Boolean = js.native
-    def lat(): Double = js.native
+    def lat: Double = js.native
     def lat(lat: Double): js.Any = js.native
-    def latitude(): Double = js.native
+    def latitude: Double = js.native
     def latitude(lat: Double): js.Any = js.native
-    def lng(): Double = js.native
+    def lng: Double = js.native
     def lng(lon: Double): js.Any = js.native
-    def lon(): Double = js.native
+    def lon: Double = js.native
     def lon(lon: Double): js.Any = js.native
-    def longitude(): Double = js.native
+    def longitude: Double = js.native
     def longitude(lon: Double): js.Any = js.native
     def midpointTo(point: LatLonNvectorSpherical): LatLonNvectorSpherical = js.native
     def nearestPointOnSegment(point1: LatLonNvectorSpherical, point2: LatLonNvectorSpherical): LatLonNvectorSpherical = js.native
@@ -77,7 +77,7 @@ object latlonNvectorSphericalMod extends js.Object {
     def fromLocale(str: String): String = js.native
     def parse(dms: String): Double = js.native
     def parse(dms: Double): Double = js.native
-    def separator(): String = js.native
+    def separator: String = js.native
     def separator(char: String): js.Any = js.native
     def toBrng(deg: Double): String = js.native
     def toBrng(deg: Double, format: Format): String = js.native
@@ -108,9 +108,9 @@ object latlonNvectorSphericalMod extends js.Object {
       path2brngEnd: PathBrngEnd
     ): LatLonNvectorSpherical = js.native
     def meanOf(points: Polygon[LatLonNvectorSpherical]): LatLonNvectorSpherical = js.native
-    def metresToKm(): Double = js.native
-    def metresToMiles(): Double = js.native
-    def metresToNauticalMiles(): Double = js.native
+    def metresToKm: Double = js.native
+    def metresToMiles: Double = js.native
+    def metresToNauticalMiles: Double = js.native
     def triangulate(point1: LatLonNvectorSpherical, bearing1: Double, point2: LatLonNvectorSpherical, bearing2: Double): LatLonNvectorSpherical = js.native
     def trilaterate(
       point1: LatLonNvectorSpherical,

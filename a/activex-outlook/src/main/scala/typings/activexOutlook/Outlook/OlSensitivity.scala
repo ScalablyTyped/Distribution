@@ -18,14 +18,12 @@ trait OlSensitivity extends js.Object
 
 object OlSensitivity {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olConfidential: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def olConfidential: `3` = this.cast(3)
+  def olNormal: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def olNormal: `0` = this.cast(0)
+  def olPersonal: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olPersonal: `1` = this.cast(1)
-  @scala.inline
-  def olPrivate: `2` = this.cast(2)
+  def olPrivate: `2` = 2.asInstanceOf[`2`]
 }
 

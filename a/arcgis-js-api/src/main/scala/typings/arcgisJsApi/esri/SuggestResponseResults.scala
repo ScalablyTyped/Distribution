@@ -38,7 +38,6 @@ object SuggestResponseResults {
     sourceIndex: Double
   ): SuggestResponseResults = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), results = results.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SuggestResponseResults]
   }
 }

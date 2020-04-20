@@ -13,7 +13,6 @@ object Anon0 {
   @scala.inline
   def apply(OH: ZH2O): Anon0 = {
     val __obj = js.Dynamic.literal(OH = OH.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Anon0]
   }
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined tape-promise.tape-promise.AsyncTapeFunction & {None (opts : tape.tape.TestOptions, cb : tape.tape.TestCase): void, None (cb : tape.tape.TestCase): void, None (name : string, opts : tape.tape.TestOptions, cb : tape.tape.TestCase): void, None (name : string, cb : tape.tape.TestCase): void, readonly onFinish (cb : (): void): void, readonly only (name : string, cb : tape.tape.TestCase): void, readonly only (name : string, opts : tape.tape.TestOptions, cb : tape.tape.TestCase): void, readonly only (cb : tape.tape.TestCase): void, readonly only (opts : tape.tape.TestOptions, cb : tape.tape.TestCase): void, readonly createStream (): node.NodeJS.ReadableStream, readonly createStream (opts : tape.tape.StreamOptions): node.NodeJS.ReadableStream, readonly skip (name : string, cb : tape.tape.TestCase): void, readonly skip (name : string, opts : tape.tape.TestOptions, cb : tape.tape.TestCase): void, readonly skip (cb : tape.tape.TestCase): void, readonly skip (opts : tape.tape.TestOptions, cb : tape.tape.TestCase): void, readonly createHarness (): / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof tape * / any} */
+/* Inlined tape-promise.tape-promise.AsyncTapeFunction & {None (opts : tape.tape.TestOptions, cb : tape.tape.TestCase): void, None (cb : tape.tape.TestCase): void, None (name : string, opts : tape.tape.TestOptions, cb : tape.tape.TestCase): void, None (name : string, cb : tape.tape.TestCase): void, readonly onFinish (cb : (): void): void, readonly only (name : string, cb : tape.tape.TestCase): void, readonly only (name : string, opts : tape.tape.TestOptions, cb : tape.tape.TestCase): void, readonly only (cb : tape.tape.TestCase): void, readonly only (opts : tape.tape.TestOptions, cb : tape.tape.TestCase): void, readonly createStream (): node.NodeJS.ReadableStream, readonly createStream (opts : tape.tape.StreamOptions): node.NodeJS.ReadableStream, readonly skip (name : string, cb : tape.tape.TestCase): void, readonly skip (name : string, opts : tape.tape.TestOptions, cb : tape.tape.TestCase): void, readonly skip (cb : tape.tape.TestCase): void, readonly skip (opts : tape.tape.TestOptions, cb : tape.tape.TestCase): void, readonly createHarness (): / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof tape * / any, readonly onFailure (cb : (): void): void} */
 @js.native
 trait AsyncTapeFunctionNoneopts extends js.Object {
   def apply(cb: TestCase | typings.tapePromise.mod.TestCase): Unit = js.native
@@ -30,6 +30,7 @@ trait AsyncTapeFunctionNoneopts extends js.Object {
   def createHarness_Intersection(): AsyncTapeFunction with AnonCall = js.native
   def createStream(): ReadableStream = js.native
   def createStream(opts: StreamOptions): ReadableStream = js.native
+  def onFailure(cb: js.Function0[Unit]): Unit = js.native
   def onFinish(cb: js.Function0[Unit]): Unit = js.native
   def only(cb: TestCase | typings.tapePromise.mod.TestCase): Unit = js.native
   /**

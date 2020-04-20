@@ -59,7 +59,6 @@ object VectorTileLayerCurrentStyleInfo {
     styleUrl: String
   ): VectorTileLayerCurrentStyleInfo = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], glyphsUrl = glyphsUrl.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layerDefinition = layerDefinition.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), serviceUrl = serviceUrl.asInstanceOf[js.Any], spriteUrl = spriteUrl.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], styleUrl = styleUrl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VectorTileLayerCurrentStyleInfo]
   }
 }

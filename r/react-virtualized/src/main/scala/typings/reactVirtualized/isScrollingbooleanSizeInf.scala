@@ -15,7 +15,6 @@ object isScrollingbooleanSizeInf {
   @scala.inline
   def apply(height: Double, isScrolling: Boolean, width: Double): isScrollingbooleanSizeInf = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], isScrolling = isScrolling.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[isScrollingbooleanSizeInf]
   }
 }

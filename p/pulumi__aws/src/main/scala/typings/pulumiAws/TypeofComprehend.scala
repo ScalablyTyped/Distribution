@@ -13,7 +13,6 @@ object TypeofComprehend {
   @scala.inline
   def apply(Types: TypeofComprehend): TypeofComprehend = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofComprehend]
   }
 }

@@ -13,7 +13,6 @@ object PickImplfilterRemoteData {
   @scala.inline
   def apply(filterRemoteData: Boolean): PickImplfilterRemoteData = {
     val __obj = js.Dynamic.literal(filterRemoteData = filterRemoteData.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplfilterRemoteData]
   }
 }

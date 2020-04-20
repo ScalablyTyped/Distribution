@@ -143,7 +143,9 @@ object rruleMod extends js.Object {
   object default extends js.Object {
     val DAILY: String | Double = js.native
     val FR: Weekday = js.native
-    val FREQUENCIES: js.Array[String] = js.native
+    val FREQUENCIES: js.Array[
+        /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Frequency * / any */ String
+      ] = js.native
     val HOURLY: String | Double = js.native
     val MINUTELY: String | Double = js.native
     val MO: Weekday = js.native

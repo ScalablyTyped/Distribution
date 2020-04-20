@@ -16,7 +16,6 @@ object I2cTransferResult {
   @scala.inline
   def apply(bytesTransferred: Double, status: I2cTransferStatus): I2cTransferResult = {
     val __obj = js.Dynamic.literal(bytesTransferred = bytesTransferred.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[I2cTransferResult]
   }
 }

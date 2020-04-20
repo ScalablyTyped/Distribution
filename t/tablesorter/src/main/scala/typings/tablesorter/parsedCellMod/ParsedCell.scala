@@ -39,7 +39,6 @@ object ParsedCell {
     tbodyIndex: Double
   ): ParsedCell = {
     val __obj = js.Dynamic.literal($cell = $cell.asInstanceOf[js.Any], $row = $row.asInstanceOf[js.Any], parsed = parsed.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], rowIndex = rowIndex.asInstanceOf[js.Any], tbodyIndex = tbodyIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ParsedCell]
   }
 }

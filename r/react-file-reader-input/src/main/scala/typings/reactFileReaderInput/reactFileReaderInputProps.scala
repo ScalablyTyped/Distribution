@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactFileReaderInputProps {
   @scala.inline
-  def ReactFileReaderInputProps: Props.type = typings.reactFileReaderInput.mod.Props
+  def ReactFileReaderInputProps: Props.type = Props
   type ReactFileReaderInputProps = Props
 }
 

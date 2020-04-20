@@ -40,7 +40,6 @@ object GetLaunchTemplateNetworkInterface {
     subnetId: String
   ): GetLaunchTemplateNetworkInterface = {
     val __obj = js.Dynamic.literal(associatePublicIpAddress = associatePublicIpAddress.asInstanceOf[js.Any], deleteOnTermination = deleteOnTermination.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], deviceIndex = deviceIndex.asInstanceOf[js.Any], ipv4AddressCount = ipv4AddressCount.asInstanceOf[js.Any], ipv4Addresses = ipv4Addresses.asInstanceOf[js.Any], ipv6AddressCount = ipv6AddressCount.asInstanceOf[js.Any], ipv6Addresses = ipv6Addresses.asInstanceOf[js.Any], networkInterfaceId = networkInterfaceId.asInstanceOf[js.Any], privateIpAddress = privateIpAddress.asInstanceOf[js.Any], securityGroups = securityGroups.asInstanceOf[js.Any], subnetId = subnetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetLaunchTemplateNetworkInterface]
   }
 }

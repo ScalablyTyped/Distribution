@@ -30,7 +30,6 @@ object AnonComplete {
     waiting_analyzed: String
   ): AnonComplete = {
     val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any], failed = failed.asInstanceOf[js.Any], parsing = parsing.asInstanceOf[js.Any], queued = queued.asInstanceOf[js.Any], running = running.asInstanceOf[js.Any], under_review = under_review.asInstanceOf[js.Any], uploading = uploading.asInstanceOf[js.Any], waiting = waiting.asInstanceOf[js.Any], waiting_analyzed = waiting_analyzed.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonComplete]
   }
 }

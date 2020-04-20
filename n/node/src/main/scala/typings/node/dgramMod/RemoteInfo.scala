@@ -17,7 +17,6 @@ object RemoteInfo {
   @scala.inline
   def apply(address: String, family: IPv4 | IPv6, port: Double, size: Double): RemoteInfo = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], family = family.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RemoteInfo]
   }
 }

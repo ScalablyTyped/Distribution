@@ -146,7 +146,7 @@ object formatjsIntlRelativetimeformatStrings {
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
-  def `best fit`: `best fit` = "best fit".asInstanceOf[`best fit`]
+  def `best fit`: `best fit` = ("best fit").asInstanceOf[`best fit`]
   @scala.inline
   def day: day = "day".asInstanceOf[day]
   @scala.inline

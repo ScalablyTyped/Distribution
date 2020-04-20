@@ -21,7 +21,6 @@ object ElevationAlongPathRequest {
   @scala.inline
   def apply(path: js.Array[LatLng] | String, samples: Double): ElevationAlongPathRequest = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], samples = samples.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ElevationAlongPathRequest]
   }
 }

@@ -16,7 +16,6 @@ object GetFunctionConcurrencyRequest {
   @scala.inline
   def apply(FunctionName: FunctionName): GetFunctionConcurrencyRequest = {
     val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetFunctionConcurrencyRequest]
   }
 }

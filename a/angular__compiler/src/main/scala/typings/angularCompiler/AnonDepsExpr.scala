@@ -17,7 +17,6 @@ object AnonDepsExpr {
   @scala.inline
   def apply(depsExpr: Expression, flags: NodeFlags, providerExpr: Expression, tokenExpr: Expression): AnonDepsExpr = {
     val __obj = js.Dynamic.literal(depsExpr = depsExpr.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], providerExpr = providerExpr.asInstanceOf[js.Any], tokenExpr = tokenExpr.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDepsExpr]
   }
 }

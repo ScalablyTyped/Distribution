@@ -13,12 +13,10 @@ trait FilterPosition extends js.Object
 
 object FilterPosition {
   @scala.inline
-  def bottom: typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.bottom = this.cast("bottom")
+  def bottom: typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.bottom = "bottom".asInstanceOf[typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.bottom]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `inline`: typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.`inline` = "inline".asInstanceOf[typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.`inline`]
   @scala.inline
-  def `inline`: typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.`inline` = this.cast("inline")
-  @scala.inline
-  def top: typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.top = this.cast("top")
+  def top: typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.top = "top".asInstanceOf[typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.top]
 }
 

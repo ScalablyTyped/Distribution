@@ -19,7 +19,6 @@ object Anon14 {
   @scala.inline
   def apply(channels: `1`, clockRate: `16000`, mediaType: A, name: DVI4): Anon14 = {
     val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any], clockRate = clockRate.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Anon14]
   }
 }

@@ -23,7 +23,6 @@ object IUnicodeHandling {
   @scala.inline
   def apply(activeVersion: String, register: IUnicodeVersionProvider => Unit, versions: js.Array[String]): IUnicodeHandling = {
     val __obj = js.Dynamic.literal(activeVersion = activeVersion.asInstanceOf[js.Any], register = js.Any.fromFunction1(register), versions = versions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IUnicodeHandling]
   }
 }

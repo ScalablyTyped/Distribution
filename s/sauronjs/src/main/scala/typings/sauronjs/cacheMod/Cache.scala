@@ -26,7 +26,6 @@ object Cache {
     size: () => Double
   ): Cache = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), exists = js.Any.fromFunction1(exists), forEach = js.Any.fromFunction1(forEach), get = js.Any.fromFunction1(get), keys = js.Any.fromFunction0(keys), set = js.Any.fromFunction2(set), size = js.Any.fromFunction0(size))
-  
     __obj.asInstanceOf[Cache]
   }
 }

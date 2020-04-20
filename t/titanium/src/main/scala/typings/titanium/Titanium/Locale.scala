@@ -2,6 +2,7 @@ package typings.titanium.Titanium
 
 import typings.titanium.Titanium.UI.TabGroup
 import typings.titanium.Titanium.UI.Window
+import typings.titanium.titaniumStrings.change
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +10,11 @@ import scala.scalajs.js.annotation._
 /**
 	 * The top level Locale module.
 	 */
+@JSGlobal("Titanium.Locale")
+@js.native
+class Locale () extends Module
+
+/* static members */
 @JSGlobal("Titanium.Locale")
 @js.native
 object Locale extends js.Object {
@@ -39,7 +45,15 @@ object Locale extends js.Object {
   /**
   		 * Adds the specified callback as an event listener for the named event.
   		 */
-  def addEventListener(name: String, callback: js.Function1[/* param0 */ js.Any, _]): Unit = js.native
+  def addEventListener(name: String, callback: js.Function1[/* param0 */ Event, Unit]): Unit = js.native
+  /**
+  		 * Adds the specified callback as an event listener for the named event.
+  		 */
+  @JSName("addEventListener")
+  def addEventListener_change(
+    name: change,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ LocaleChangeEvent, Unit]
+  ): Unit = js.native
   /**
   		 * Applies the properties to the proxy.
   		 */
@@ -47,17 +61,27 @@ object Locale extends js.Object {
   /**
   		 * Fires a synthesized event to any registered listeners.
   		 */
+  def fireEvent(name: String): Unit = js.native
   def fireEvent(name: String, event: js.Any): Unit = js.native
+  /**
+  		 * Fires a synthesized event to any registered listeners.
+  		 */
+  @JSName("fireEvent")
+  def fireEvent_change(name: change): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_change(name: change, event: LocaleChangeEvent): Unit = js.native
   /**
   		 * Formats a telephone number according to the current system locale.
   		 */
   def formatTelephoneNumber(number: String): String = js.native
   /**
   		 * Gets the value of the <Titanium.Locale.apiName> property.
+  		 * @deprecated Access <Titanium.Locale.apiName> instead.
   		 */
   def getApiName(): String = js.native
   /**
   		 * Gets the value of the <Titanium.Locale.bubbleParent> property.
+  		 * @deprecated Access <Titanium.Locale.bubbleParent> instead.
   		 */
   def getBubbleParent(): Boolean = js.native
   /**
@@ -70,18 +94,22 @@ object Locale extends js.Object {
   def getCurrencySymbol(currencyCode: String): String = js.native
   /**
   		 * Gets the value of the <Titanium.Locale.currentCountry> property.
+  		 * @deprecated Access <Titanium.Locale.currentCountry> instead.
   		 */
   def getCurrentCountry(): String = js.native
   /**
   		 * Gets the value of the <Titanium.Locale.currentLanguage> property.
+  		 * @deprecated Access <Titanium.Locale.currentLanguage> instead.
   		 */
   def getCurrentLanguage(): String = js.native
   /**
   		 * Gets the value of the <Titanium.Locale.currentLocale> property.
+  		 * @deprecated Access <Titanium.Locale.currentLocale> instead.
   		 */
   def getCurrentLocale(): String = js.native
   /**
   		 * Gets the value of the <Titanium.Locale.lifecycleContainer> property.
+  		 * @deprecated Access <Titanium.Locale.lifecycleContainer> instead.
   		 */
   def getLifecycleContainer(): Window | TabGroup = js.native
   /**
@@ -97,21 +125,28 @@ object Locale extends js.Object {
   /**
   		 * Removes the specified callback as an event listener for the named event.
   		 */
-  def removeEventListener(name: String, callback: js.Function1[/* param0 */ js.Any, _]): Unit = js.native
+  def removeEventListener(name: String, callback: js.Function1[/* param0 */ Event, Unit]): Unit = js.native
+  /**
+  		 * Removes the specified callback as an event listener for the named event.
+  		 */
+  @JSName("removeEventListener")
+  def removeEventListener_change(
+    name: change,
+    callback: js.ThisFunction1[/* this */ this.type, /* event */ LocaleChangeEvent, Unit]
+  ): Unit = js.native
   /**
   		 * Sets the value of the <Titanium.Locale.bubbleParent> property.
+  		 * @deprecated Set the value using <Titanium.Locale.bubbleParent> instead.
   		 */
   def setBubbleParent(bubbleParent: Boolean): Unit = js.native
   /**
   		 * Sets the current language of the application.
   		 */
   def setLanguage(language: String): Unit = js.native
-  /**
-  		 * Sets the value of the <Titanium.Locale.lifecycleContainer> property.
-  		 */
   def setLifecycleContainer(lifecycleContainer: TabGroup): Unit = js.native
   /**
   		 * Sets the value of the <Titanium.Locale.lifecycleContainer> property.
+  		 * @deprecated Set the value using <Titanium.Locale.lifecycleContainer> instead.
   		 */
   def setLifecycleContainer(lifecycleContainer: Window): Unit = js.native
 }

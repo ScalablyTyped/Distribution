@@ -51,7 +51,6 @@ object global {
     undefined_onload: () => Unit
   ): global = {
     val __obj = js.Dynamic.literal($ = js.Any.fromFunction0($), GoogleSearchStoreCallback_undefined_NaN = js.Any.fromFunction4(GoogleSearchStoreCallback_undefined_NaN), jQuery = js.Any.fromFunction0(jQuery), swfIsInHTML = js.Any.fromFunction0(swfIsInHTML), undefined_onload = js.Any.fromFunction0(undefined_onload))
-  
     __obj.asInstanceOf[global]
   }
 }

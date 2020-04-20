@@ -13,7 +13,6 @@ object Request {
   @scala.inline
   def apply(busboy: Busboy): Request = {
     val __obj = js.Dynamic.literal(busboy = busboy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Request]
   }
 }

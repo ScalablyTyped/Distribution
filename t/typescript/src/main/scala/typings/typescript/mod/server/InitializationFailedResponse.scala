@@ -14,7 +14,6 @@ object InitializationFailedResponse {
   @scala.inline
   def apply(kind: EventInitializationFailed, message: String): InitializationFailedResponse = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InitializationFailedResponse]
   }
 }

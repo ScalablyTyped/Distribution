@@ -24,7 +24,6 @@ object SettingsResource {
     watch: AnonPageToken => Request_[Channel]
   ): SettingsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), watch = js.Any.fromFunction1(watch))
-  
     __obj.asInstanceOf[SettingsResource]
   }
 }

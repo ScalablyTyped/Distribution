@@ -34,30 +34,28 @@ trait WdBrowseTarget extends js.Object
 
 object WdBrowseTarget {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdBrowseComment: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdBrowseComment: `3` = this.cast(3)
+  def wdBrowseEdit: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def wdBrowseEdit: `10` = this.cast(10)
+  def wdBrowseEndnote: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdBrowseEndnote: `5` = this.cast(5)
+  def wdBrowseField: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdBrowseField: `6` = this.cast(6)
+  def wdBrowseFind: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def wdBrowseFind: `11` = this.cast(11)
+  def wdBrowseFootnote: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdBrowseFootnote: `4` = this.cast(4)
+  def wdBrowseGoTo: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def wdBrowseGoTo: `12` = this.cast(12)
+  def wdBrowseGraphic: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def wdBrowseGraphic: `8` = this.cast(8)
+  def wdBrowseHeading: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def wdBrowseHeading: `9` = this.cast(9)
+  def wdBrowsePage: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdBrowsePage: `1` = this.cast(1)
+  def wdBrowseSection: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdBrowseSection: `2` = this.cast(2)
-  @scala.inline
-  def wdBrowseTable: `7` = this.cast(7)
+  def wdBrowseTable: `7` = 7.asInstanceOf[`7`]
 }
 

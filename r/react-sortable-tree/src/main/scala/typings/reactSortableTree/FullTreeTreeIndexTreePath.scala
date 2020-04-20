@@ -18,7 +18,6 @@ object FullTreeTreeIndexTreePath {
   @scala.inline
   def apply(parentNode: TreeItem, path: NumberOrStringArray, treeData: js.Array[TreeItem], treeIndex: Double): FullTreeTreeIndexTreePath = {
     val __obj = js.Dynamic.literal(parentNode = parentNode.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], treeData = treeData.asInstanceOf[js.Any], treeIndex = treeIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FullTreeTreeIndexTreePath]
   }
 }

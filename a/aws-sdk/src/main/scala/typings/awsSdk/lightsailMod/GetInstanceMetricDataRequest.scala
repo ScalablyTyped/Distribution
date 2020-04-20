@@ -48,7 +48,6 @@ object GetInstanceMetricDataRequest {
     unit: MetricUnit
   ): GetInstanceMetricDataRequest = {
     val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], instanceName = instanceName.asInstanceOf[js.Any], metricName = metricName.asInstanceOf[js.Any], period = period.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], statistics = statistics.asInstanceOf[js.Any], unit = unit.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetInstanceMetricDataRequest]
   }
 }

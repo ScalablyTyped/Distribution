@@ -659,7 +659,7 @@ object openfinStrings {
   sealed trait xhr extends js.Object
   
   @scala.inline
-  def `Not implemented in this environment`: `Not implemented in this environment` = "Not implemented in this environment".asInstanceOf[`Not implemented in this environment`]
+  def `Not implemented in this environment`: `Not implemented in this environment` = ("Not implemented in this environment").asInstanceOf[`Not implemented in this environment`]
   @scala.inline
   def `abnormal-termination`: `abnormal-termination` = "abnormal-termination".asInstanceOf[`abnormal-termination`]
   @scala.inline
@@ -749,7 +749,7 @@ object openfinStrings {
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
-  def `external connection`: `external connection` = "external connection".asInstanceOf[`external connection`]
+  def `external connection`: `external connection` = ("external connection").asInstanceOf[`external connection`]
   @scala.inline
   def `external-process-exited`: `external-process-exited` = "external-process-exited".asInstanceOf[`external-process-exited`]
   @scala.inline

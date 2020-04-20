@@ -21,7 +21,6 @@ object SjclExceptions {
     notReady: SjclExceptionFactory
   ): SjclExceptions = {
     val __obj = js.Dynamic.literal(bug = bug.asInstanceOf[js.Any], corrupt = corrupt.asInstanceOf[js.Any], invalid = invalid.asInstanceOf[js.Any], notReady = notReady.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SjclExceptions]
   }
 }

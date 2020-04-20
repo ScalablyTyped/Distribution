@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Meeting extends js.Object {
   /**
+    * The external meeting ID.
+    */
+  var ExternalMeetingId: js.UndefOr[ExternalMeetingIdType] = js.native
+  /**
     * The media placement for the meeting.
     */
   var MediaPlacement: js.UndefOr[typings.awsSdk.chimeMod.MediaPlacement] = js.native
@@ -22,8 +26,14 @@ trait Meeting extends js.Object {
 
 object Meeting {
   @scala.inline
-  def apply(MediaPlacement: MediaPlacement = null, MediaRegion: String = null, MeetingId: GuidString = null): Meeting = {
+  def apply(
+    ExternalMeetingId: ExternalMeetingIdType = null,
+    MediaPlacement: MediaPlacement = null,
+    MediaRegion: String = null,
+    MeetingId: GuidString = null
+  ): Meeting = {
     val __obj = js.Dynamic.literal()
+    if (ExternalMeetingId != null) __obj.updateDynamic("ExternalMeetingId")(ExternalMeetingId.asInstanceOf[js.Any])
     if (MediaPlacement != null) __obj.updateDynamic("MediaPlacement")(MediaPlacement.asInstanceOf[js.Any])
     if (MediaRegion != null) __obj.updateDynamic("MediaRegion")(MediaRegion.asInstanceOf[js.Any])
     if (MeetingId != null) __obj.updateDynamic("MeetingId")(MeetingId.asInstanceOf[js.Any])

@@ -14,7 +14,6 @@ object IFacepileOverflowExampleState {
   @scala.inline
   def apply(displayedPersonas: js.Any, overflowButtonType: OverflowButtonType): IFacepileOverflowExampleState = {
     val __obj = js.Dynamic.literal(displayedPersonas = displayedPersonas.asInstanceOf[js.Any], overflowButtonType = overflowButtonType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IFacepileOverflowExampleState]
   }
 }

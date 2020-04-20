@@ -19,24 +19,22 @@ trait ResourceType extends js.Object
 
 object ResourceType {
   @scala.inline
-  def account: typings.coinbase.coinbaseStrings.account = this.cast("account")
+  def account: typings.coinbase.coinbaseStrings.account = "account".asInstanceOf[typings.coinbase.coinbaseStrings.account]
   @scala.inline
-  def address: typings.coinbase.coinbaseStrings.address = this.cast("address")
+  def address: typings.coinbase.coinbaseStrings.address = "address".asInstanceOf[typings.coinbase.coinbaseStrings.address]
   @scala.inline
-  def buy: typings.coinbase.coinbaseStrings.buy = this.cast("buy")
+  def buy: typings.coinbase.coinbaseStrings.buy = "buy".asInstanceOf[typings.coinbase.coinbaseStrings.buy]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def deposit: typings.coinbase.coinbaseStrings.deposit = "deposit".asInstanceOf[typings.coinbase.coinbaseStrings.deposit]
   @scala.inline
-  def deposit: typings.coinbase.coinbaseStrings.deposit = this.cast("deposit")
+  def payment_method: typings.coinbase.coinbaseStrings.payment_method = "payment_method".asInstanceOf[typings.coinbase.coinbaseStrings.payment_method]
   @scala.inline
-  def payment_method: typings.coinbase.coinbaseStrings.payment_method = this.cast("payment_method")
+  def sell: typings.coinbase.coinbaseStrings.sell = "sell".asInstanceOf[typings.coinbase.coinbaseStrings.sell]
   @scala.inline
-  def sell: typings.coinbase.coinbaseStrings.sell = this.cast("sell")
+  def transaction: typings.coinbase.coinbaseStrings.transaction = "transaction".asInstanceOf[typings.coinbase.coinbaseStrings.transaction]
   @scala.inline
-  def transaction: typings.coinbase.coinbaseStrings.transaction = this.cast("transaction")
+  def user: typings.coinbase.coinbaseStrings.user = "user".asInstanceOf[typings.coinbase.coinbaseStrings.user]
   @scala.inline
-  def user: typings.coinbase.coinbaseStrings.user = this.cast("user")
-  @scala.inline
-  def withdrawal: typings.coinbase.coinbaseStrings.withdrawal = this.cast("withdrawal")
+  def withdrawal: typings.coinbase.coinbaseStrings.withdrawal = "withdrawal".asInstanceOf[typings.coinbase.coinbaseStrings.withdrawal]
 }
 

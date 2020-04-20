@@ -14,7 +14,6 @@ object Focusable {
   @scala.inline
   def apply(find: ParentNode => js.Array[Element]): Focusable = {
     val __obj = js.Dynamic.literal(find = js.Any.fromFunction1(find))
-  
     __obj.asInstanceOf[Focusable]
   }
 }

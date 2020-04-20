@@ -12,10 +12,8 @@ trait AutoCompleteMatchingStrategy extends js.Object
 
 object AutoCompleteMatchingStrategy {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def contain: typings.jsoneditor.jsoneditorStrings.contain = "contain".asInstanceOf[typings.jsoneditor.jsoneditorStrings.contain]
   @scala.inline
-  def contain: typings.jsoneditor.jsoneditorStrings.contain = this.cast("contain")
-  @scala.inline
-  def start: typings.jsoneditor.jsoneditorStrings.start = this.cast("start")
+  def start: typings.jsoneditor.jsoneditorStrings.start = "start".asInstanceOf[typings.jsoneditor.jsoneditorStrings.start]
 }
 

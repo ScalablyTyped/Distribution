@@ -13,7 +13,6 @@ object Window {
   @scala.inline
   def apply(jQBrowser: Matchs): Window = {
     val __obj = js.Dynamic.literal(jQBrowser = jQBrowser.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Window]
   }
 }

@@ -16,6 +16,10 @@ import typings.atom.Anon19
 import typings.atom.Anon2
 import typings.atom.Anon20
 import typings.atom.Anon21
+import typings.atom.Anon22
+import typings.atom.Anon23
+import typings.atom.Anon24
+import typings.atom.Anon25
 import typings.atom.Anon3
 import typings.atom.Anon4
 import typings.atom.Anon5
@@ -42,9 +46,21 @@ import typings.atom.AnonValue
 import typings.atom.AnonValueInvisibles
 import typings.atom.AnonValueNumber
 import typings.atom.AnonValueString
+import typings.atom.atomStrings.Bottom
+import typings.atom.atomStrings.Left
+import typings.atom.atomStrings.Right
 import typings.atom.atomStrings.Subsequence
 import typings.atom.atomStrings.Symbol
+import typings.atom.atomStrings.Top
 import typings.atom.atomStrings.Word
+import typings.atom.atomStrings.`12px`
+import typings.atom.atomStrings.`14px`
+import typings.atom.atomStrings.`16px`
+import typings.atom.atomStrings.`18px`
+import typings.atom.atomStrings.`21px`
+import typings.atom.atomStrings.`24px`
+import typings.atom.atomStrings.`28px`
+import typings.atom.atomStrings.`32px`
 import typings.atom.atomStrings.`autocomplete-plusDotautoActivationDelay`
 import typings.atom.atomStrings.`autocomplete-plusDotbackspaceTriggersAutocomplete`
 import typings.atom.atomStrings.`autocomplete-plusDotbuiltinProviderBlacklist`
@@ -73,6 +89,11 @@ import typings.atom.atomStrings.`status-barDotisVisible`
 import typings.atom.atomStrings.`status-barDotselectionCountFormat`
 import typings.atom.atomStrings.`tab alwaysComma enter when suggestion explicitly selected`
 import typings.atom.atomStrings.`tab and enter`
+import typings.atom.atomStrings.`tool-barDotfullWidth`
+import typings.atom.atomStrings.`tool-barDoticonSize`
+import typings.atom.atomStrings.`tool-barDotposition`
+import typings.atom.atomStrings.`tool-barDotuseTouchBar`
+import typings.atom.atomStrings.`tool-barDotvisible`
 import typings.atom.atomStrings.always
 import typings.atom.atomStrings.atom
 import typings.atom.atomStrings.auto
@@ -169,17 +190,17 @@ trait Config extends js.Object {
   @JSName("getAll")
   def getAll_autocompleteplusbuiltinProviderBlacklist(keyPath: `autocomplete-plusDotbuiltinProviderBlacklist`, options: AnonSources): js.Array[AnonValueString] = js.native
   @JSName("getAll")
-  def getAll_autocompleteplusconfirmCompletion(keyPath: `autocomplete-plusDotconfirmCompletion`): js.Array[Anon18] = js.native
+  def getAll_autocompleteplusconfirmCompletion(keyPath: `autocomplete-plusDotconfirmCompletion`): js.Array[Anon20] = js.native
   @JSName("getAll")
-  def getAll_autocompleteplusconfirmCompletion(keyPath: `autocomplete-plusDotconfirmCompletion`, options: AnonSources): js.Array[Anon18] = js.native
+  def getAll_autocompleteplusconfirmCompletion(keyPath: `autocomplete-plusDotconfirmCompletion`, options: AnonSources): js.Array[Anon20] = js.native
   @JSName("getAll")
   def getAll_autocompleteplusconsumeSuffix(keyPath: `autocomplete-plusDotconsumeSuffix`): js.Array[AnonValue] = js.native
   @JSName("getAll")
   def getAll_autocompleteplusconsumeSuffix(keyPath: `autocomplete-plusDotconsumeSuffix`, options: AnonSources): js.Array[AnonValue] = js.native
   @JSName("getAll")
-  def getAll_autocompleteplusdefaultProvider(keyPath: `autocomplete-plusDotdefaultProvider`): js.Array[Anon20] = js.native
+  def getAll_autocompleteplusdefaultProvider(keyPath: `autocomplete-plusDotdefaultProvider`): js.Array[Anon22] = js.native
   @JSName("getAll")
-  def getAll_autocompleteplusdefaultProvider(keyPath: `autocomplete-plusDotdefaultProvider`, options: AnonSources): js.Array[Anon20] = js.native
+  def getAll_autocompleteplusdefaultProvider(keyPath: `autocomplete-plusDotdefaultProvider`, options: AnonSources): js.Array[Anon22] = js.native
   @JSName("getAll")
   def getAll_autocompleteplusenableAutoActivation(keyPath: `autocomplete-plusDotenableAutoActivation`): js.Array[AnonValue] = js.native
   @JSName("getAll")
@@ -217,17 +238,17 @@ trait Config extends js.Object {
   @JSName("getAll")
   def getAll_autocompleteplusscopeBlacklist(keyPath: `autocomplete-plusDotscopeBlacklist`, options: AnonSources): js.Array[AnonScopeDescriptor] = js.native
   @JSName("getAll")
-  def getAll_autocompleteplussimilarSuggestionRemoval(keyPath: `autocomplete-plusDotsimilarSuggestionRemoval`): js.Array[Anon21] = js.native
+  def getAll_autocompleteplussimilarSuggestionRemoval(keyPath: `autocomplete-plusDotsimilarSuggestionRemoval`): js.Array[Anon23] = js.native
   @JSName("getAll")
-  def getAll_autocompleteplussimilarSuggestionRemoval(keyPath: `autocomplete-plusDotsimilarSuggestionRemoval`, options: AnonSources): js.Array[Anon21] = js.native
+  def getAll_autocompleteplussimilarSuggestionRemoval(keyPath: `autocomplete-plusDotsimilarSuggestionRemoval`, options: AnonSources): js.Array[Anon23] = js.native
   @JSName("getAll")
   def getAll_autocompleteplusstrictMatching(keyPath: `autocomplete-plusDotstrictMatching`): js.Array[AnonValue] = js.native
   @JSName("getAll")
   def getAll_autocompleteplusstrictMatching(keyPath: `autocomplete-plusDotstrictMatching`, options: AnonSources): js.Array[AnonValue] = js.native
   @JSName("getAll")
-  def getAll_autocompleteplussuggestionListFollows(keyPath: `autocomplete-plusDotsuggestionListFollows`): js.Array[Anon19] = js.native
+  def getAll_autocompleteplussuggestionListFollows(keyPath: `autocomplete-plusDotsuggestionListFollows`): js.Array[Anon21] = js.native
   @JSName("getAll")
-  def getAll_autocompleteplussuggestionListFollows(keyPath: `autocomplete-plusDotsuggestionListFollows`, options: AnonSources): js.Array[Anon19] = js.native
+  def getAll_autocompleteplussuggestionListFollows(keyPath: `autocomplete-plusDotsuggestionListFollows`, options: AnonSources): js.Array[Anon21] = js.native
   @JSName("getAll")
   def getAll_autocompleteplussuppressActivationForEditorClasses(keyPath: `autocomplete-plusDotsuppressActivationForEditorClasses`): js.Array[AnonScopeDescriptor] = js.native
   @JSName("getAll")
@@ -265,9 +286,9 @@ trait Config extends js.Object {
   @JSName("getAll")
   def getAll_corecloseEmptyWindows(keyPath: coreDotcloseEmptyWindows, options: AnonSources): js.Array[AnonValue] = js.native
   @JSName("getAll")
-  def getAll_corecolorProfile(keyPath: coreDotcolorProfile): js.Array[Anon14] = js.native
+  def getAll_corecolorProfile(keyPath: coreDotcolorProfile): js.Array[Anon16] = js.native
   @JSName("getAll")
-  def getAll_corecolorProfile(keyPath: coreDotcolorProfile, options: AnonSources): js.Array[Anon14] = js.native
+  def getAll_corecolorProfile(keyPath: coreDotcolorProfile, options: AnonSources): js.Array[Anon16] = js.native
   @JSName("getAll")
   def getAll_corecustomFileTypes(keyPath: coreDotcustomFileTypes): js.Array[AnonScopeDescriptorValue] = js.native
   @JSName("getAll")
@@ -289,9 +310,9 @@ trait Config extends js.Object {
   @JSName("getAll")
   def getAll_corefileEncoding(keyPath: coreDotfileEncoding, options: AnonSources): js.Array[AnonScopeDescriptorScopeDescriptor] = js.native
   @JSName("getAll")
-  def getAll_corefileSystemWatcher(keyPath: coreDotfileSystemWatcher): js.Array[Anon13] = js.native
+  def getAll_corefileSystemWatcher(keyPath: coreDotfileSystemWatcher): js.Array[Anon15] = js.native
   @JSName("getAll")
-  def getAll_corefileSystemWatcher(keyPath: coreDotfileSystemWatcher, options: AnonSources): js.Array[Anon13] = js.native
+  def getAll_corefileSystemWatcher(keyPath: coreDotfileSystemWatcher, options: AnonSources): js.Array[Anon15] = js.native
   @JSName("getAll")
   def getAll_corefollowSymlinks(keyPath: coreDotfollowSymlinks): js.Array[AnonValue] = js.native
   @JSName("getAll")
@@ -317,9 +338,9 @@ trait Config extends js.Object {
   @JSName("getAll")
   def getAll_corerestorePreviousWindowsOnStart(keyPath: coreDotrestorePreviousWindowsOnStart, options: AnonSources): js.Array[AnonScopeDescriptorScopeDescriptorValue] = js.native
   @JSName("getAll")
-  def getAll_coretelemetryConsent(keyPath: coreDottelemetryConsent): js.Array[Anon12] = js.native
+  def getAll_coretelemetryConsent(keyPath: coreDottelemetryConsent): js.Array[Anon14] = js.native
   @JSName("getAll")
-  def getAll_coretelemetryConsent(keyPath: coreDottelemetryConsent, options: AnonSources): js.Array[Anon12] = js.native
+  def getAll_coretelemetryConsent(keyPath: coreDottelemetryConsent, options: AnonSources): js.Array[Anon14] = js.native
   @JSName("getAll")
   def getAll_corethemes(keyPath: coreDotthemes): js.Array[AnonScopeDescriptor] = js.native
   @JSName("getAll")
@@ -353,25 +374,25 @@ trait Config extends js.Object {
   @JSName("getAll")
   def getAll_editorautoIndentOnPaste(keyPath: editorDotautoIndentOnPaste, options: AnonSources): js.Array[AnonValue] = js.native
   @JSName("getAll")
-  def getAll_editorcommentEnd(keyPath: editorDotcommentEnd): js.Array[Anon15] = js.native
+  def getAll_editorcommentEnd(keyPath: editorDotcommentEnd): js.Array[Anon17] = js.native
   @JSName("getAll")
-  def getAll_editorcommentEnd(keyPath: editorDotcommentEnd, options: AnonSources): js.Array[Anon15] = js.native
+  def getAll_editorcommentEnd(keyPath: editorDotcommentEnd, options: AnonSources): js.Array[Anon17] = js.native
   @JSName("getAll")
-  def getAll_editorcommentStart(keyPath: editorDotcommentStart): js.Array[Anon15] = js.native
+  def getAll_editorcommentStart(keyPath: editorDotcommentStart): js.Array[Anon17] = js.native
   @JSName("getAll")
-  def getAll_editorcommentStart(keyPath: editorDotcommentStart, options: AnonSources): js.Array[Anon15] = js.native
+  def getAll_editorcommentStart(keyPath: editorDotcommentStart, options: AnonSources): js.Array[Anon17] = js.native
   @JSName("getAll")
   def getAll_editorconfirmCheckoutHeadRevision(keyPath: editorDotconfirmCheckoutHeadRevision): js.Array[AnonValue] = js.native
   @JSName("getAll")
   def getAll_editorconfirmCheckoutHeadRevision(keyPath: editorDotconfirmCheckoutHeadRevision, options: AnonSources): js.Array[AnonValue] = js.native
   @JSName("getAll")
-  def getAll_editordecreaseIndentPattern(keyPath: editorDotdecreaseIndentPattern): js.Array[Anon15] = js.native
+  def getAll_editordecreaseIndentPattern(keyPath: editorDotdecreaseIndentPattern): js.Array[Anon17] = js.native
   @JSName("getAll")
-  def getAll_editordecreaseIndentPattern(keyPath: editorDotdecreaseIndentPattern, options: AnonSources): js.Array[Anon15] = js.native
+  def getAll_editordecreaseIndentPattern(keyPath: editorDotdecreaseIndentPattern, options: AnonSources): js.Array[Anon17] = js.native
   @JSName("getAll")
-  def getAll_editorfoldEndPattern(keyPath: editorDotfoldEndPattern): js.Array[Anon15] = js.native
+  def getAll_editorfoldEndPattern(keyPath: editorDotfoldEndPattern): js.Array[Anon17] = js.native
   @JSName("getAll")
-  def getAll_editorfoldEndPattern(keyPath: editorDotfoldEndPattern, options: AnonSources): js.Array[Anon15] = js.native
+  def getAll_editorfoldEndPattern(keyPath: editorDotfoldEndPattern, options: AnonSources): js.Array[Anon17] = js.native
   @JSName("getAll")
   def getAll_editorfontFamily(keyPath: editorDotfontFamily): js.Array[AnonValueString] = js.native
   @JSName("getAll")
@@ -381,17 +402,17 @@ trait Config extends js.Object {
   @JSName("getAll")
   def getAll_editorfontSize(keyPath: editorDotfontSize, options: AnonSources): js.Array[AnonValueNumber] = js.native
   @JSName("getAll")
-  def getAll_editorincreaseIndentPattern(keyPath: editorDotincreaseIndentPattern): js.Array[Anon15] = js.native
+  def getAll_editorincreaseIndentPattern(keyPath: editorDotincreaseIndentPattern): js.Array[Anon17] = js.native
   @JSName("getAll")
-  def getAll_editorincreaseIndentPattern(keyPath: editorDotincreaseIndentPattern, options: AnonSources): js.Array[Anon15] = js.native
+  def getAll_editorincreaseIndentPattern(keyPath: editorDotincreaseIndentPattern, options: AnonSources): js.Array[Anon17] = js.native
   @JSName("getAll")
   def getAll_editorinvisibles(keyPath: editorDotinvisibles): js.Array[AnonValueInvisibles] = js.native
   @JSName("getAll")
   def getAll_editorinvisibles(keyPath: editorDotinvisibles, options: AnonSources): js.Array[AnonValueInvisibles] = js.native
   @JSName("getAll")
-  def getAll_editorlineHeight(keyPath: editorDotlineHeight): js.Array[Anon16] = js.native
+  def getAll_editorlineHeight(keyPath: editorDotlineHeight): js.Array[Anon18] = js.native
   @JSName("getAll")
-  def getAll_editorlineHeight(keyPath: editorDotlineHeight, options: AnonSources): js.Array[Anon16] = js.native
+  def getAll_editorlineHeight(keyPath: editorDotlineHeight, options: AnonSources): js.Array[Anon18] = js.native
   @JSName("getAll")
   def getAll_editormaxScreenLineLength(keyPath: editorDotmaxScreenLineLength): js.Array[AnonValueNumber] = js.native
   @JSName("getAll")
@@ -449,9 +470,9 @@ trait Config extends js.Object {
   @JSName("getAll")
   def getAll_editortabLength(keyPath: editorDottabLength, options: AnonSources): js.Array[AnonValueNumber] = js.native
   @JSName("getAll")
-  def getAll_editortabType(keyPath: editorDottabType): js.Array[Anon17] = js.native
+  def getAll_editortabType(keyPath: editorDottabType): js.Array[Anon19] = js.native
   @JSName("getAll")
-  def getAll_editortabType(keyPath: editorDottabType, options: AnonSources): js.Array[Anon17] = js.native
+  def getAll_editortabType(keyPath: editorDottabType, options: AnonSources): js.Array[Anon19] = js.native
   @JSName("getAll")
   def getAll_editorundoGroupingInterval(keyPath: editorDotundoGroupingInterval): js.Array[AnonValueNumber] = js.native
   @JSName("getAll")
@@ -500,6 +521,26 @@ trait Config extends js.Object {
   def getAll_statusbarselectionCountFormat(keyPath: `status-barDotselectionCountFormat`): js.Array[AnonValueString] = js.native
   @JSName("getAll")
   def getAll_statusbarselectionCountFormat(keyPath: `status-barDotselectionCountFormat`, options: AnonSources): js.Array[AnonValueString] = js.native
+  @JSName("getAll")
+  def getAll_toolbarfullWidth(keyPath: `tool-barDotfullWidth`): js.Array[AnonValue] = js.native
+  @JSName("getAll")
+  def getAll_toolbarfullWidth(keyPath: `tool-barDotfullWidth`, options: AnonSources): js.Array[AnonValue] = js.native
+  @JSName("getAll")
+  def getAll_toolbariconSize(keyPath: `tool-barDoticonSize`): js.Array[Anon24] = js.native
+  @JSName("getAll")
+  def getAll_toolbariconSize(keyPath: `tool-barDoticonSize`, options: AnonSources): js.Array[Anon24] = js.native
+  @JSName("getAll")
+  def getAll_toolbarposition(keyPath: `tool-barDotposition`): js.Array[Anon25] = js.native
+  @JSName("getAll")
+  def getAll_toolbarposition(keyPath: `tool-barDotposition`, options: AnonSources): js.Array[Anon25] = js.native
+  @JSName("getAll")
+  def getAll_toolbaruseTouchBar(keyPath: `tool-barDotuseTouchBar`): js.Array[AnonValueString] = js.native
+  @JSName("getAll")
+  def getAll_toolbaruseTouchBar(keyPath: `tool-barDotuseTouchBar`, options: AnonSources): js.Array[AnonValueString] = js.native
+  @JSName("getAll")
+  def getAll_toolbarvisible(keyPath: `tool-barDotvisible`): js.Array[AnonValue] = js.native
+  @JSName("getAll")
+  def getAll_toolbarvisible(keyPath: `tool-barDotvisible`, options: AnonSources): js.Array[AnonValue] = js.native
   /**
     *  Retrieve the schema for a specific key path. The schema will tell you what type
     *  the keyPath expects, and other metadata about the config option.
@@ -854,6 +895,26 @@ trait Config extends js.Object {
   def get_statusbarselectionCountFormat(keyPath: `status-barDotselectionCountFormat`): String = js.native
   @JSName("get")
   def get_statusbarselectionCountFormat(keyPath: `status-barDotselectionCountFormat`, options: AnonExcludeSources): String = js.native
+  @JSName("get")
+  def get_toolbarfullWidth(keyPath: `tool-barDotfullWidth`): Boolean = js.native
+  @JSName("get")
+  def get_toolbarfullWidth(keyPath: `tool-barDotfullWidth`, options: AnonExcludeSources): Boolean = js.native
+  @JSName("get")
+  def get_toolbariconSize(keyPath: `tool-barDoticonSize`): `12px` | `14px` | `16px` | `18px` | `21px` | `24px` | `28px` | `32px` = js.native
+  @JSName("get")
+  def get_toolbariconSize(keyPath: `tool-barDoticonSize`, options: AnonExcludeSources): `12px` | `14px` | `16px` | `18px` | `21px` | `24px` | `28px` | `32px` = js.native
+  @JSName("get")
+  def get_toolbarposition(keyPath: `tool-barDotposition`): Top | Right | Bottom | Left = js.native
+  @JSName("get")
+  def get_toolbarposition(keyPath: `tool-barDotposition`, options: AnonExcludeSources): Top | Right | Bottom | Left = js.native
+  @JSName("get")
+  def get_toolbaruseTouchBar(keyPath: `tool-barDotuseTouchBar`): String = js.native
+  @JSName("get")
+  def get_toolbaruseTouchBar(keyPath: `tool-barDotuseTouchBar`, options: AnonExcludeSources): String = js.native
+  @JSName("get")
+  def get_toolbarvisible(keyPath: `tool-barDotvisible`): Boolean = js.native
+  @JSName("get")
+  def get_toolbarvisible(keyPath: `tool-barDotvisible`, options: AnonExcludeSources): Boolean = js.native
   def observe(
     keyPath: `autocomplete-plusDotconfirmCompletion`,
     callback: js.Function1[
@@ -895,6 +956,30 @@ trait Config extends js.Object {
     keyPath: `autocomplete-plusDotsuggestionListFollows`,
     options: AnonScope,
     callback: js.Function1[/* value */ Word | typings.atom.atomStrings.Cursor, Unit]
+  ): Disposable = js.native
+  def observe(
+    keyPath: `tool-barDoticonSize`,
+    callback: js.Function1[
+      /* value */ `12px` | `14px` | `16px` | `18px` | `21px` | `24px` | `28px` | `32px`, 
+      Unit
+    ]
+  ): Disposable = js.native
+  def observe(
+    keyPath: `tool-barDoticonSize`,
+    options: AnonScope,
+    callback: js.Function1[
+      /* value */ `12px` | `14px` | `16px` | `18px` | `21px` | `24px` | `28px` | `32px`, 
+      Unit
+    ]
+  ): Disposable = js.native
+  def observe(
+    keyPath: `tool-barDotposition`,
+    callback: js.Function1[/* value */ Top | Right | Bottom | Left, Unit]
+  ): Disposable = js.native
+  def observe(
+    keyPath: `tool-barDotposition`,
+    options: AnonScope,
+    callback: js.Function1[/* value */ Top | Right | Bottom | Left, Unit]
   ): Disposable = js.native
   def observe(keyPath: coreDotcolorProfile, callback: js.Function1[/* value */ default | srgb, Unit]): Disposable = js.native
   def observe(
@@ -1568,6 +1653,30 @@ trait Config extends js.Object {
     keyPath: `status-barDotselectionCountFormat`,
     options: AnonScope,
     callback: js.Function1[/* value */ String, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_toolbarfullWidth(keyPath: `tool-barDotfullWidth`, callback: js.Function1[/* value */ Boolean, Unit]): Disposable = js.native
+  @JSName("observe")
+  def observe_toolbarfullWidth(
+    keyPath: `tool-barDotfullWidth`,
+    options: AnonScope,
+    callback: js.Function1[/* value */ Boolean, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_toolbaruseTouchBar(keyPath: `tool-barDotuseTouchBar`, callback: js.Function1[/* value */ String, Unit]): Disposable = js.native
+  @JSName("observe")
+  def observe_toolbaruseTouchBar(
+    keyPath: `tool-barDotuseTouchBar`,
+    options: AnonScope,
+    callback: js.Function1[/* value */ String, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_toolbarvisible(keyPath: `tool-barDotvisible`, callback: js.Function1[/* value */ Boolean, Unit]): Disposable = js.native
+  @JSName("observe")
+  def observe_toolbarvisible(
+    keyPath: `tool-barDotvisible`,
+    options: AnonScope,
+    callback: js.Function1[/* value */ Boolean, Unit]
   ): Disposable = js.native
   /**
     *  Add a listener for changes to a given key path. If keyPath is not specified, your
@@ -2370,6 +2479,46 @@ trait Config extends js.Object {
     options: AnonScope,
     callback: js.Function1[/* values */ AnonNewValueString, Unit]
   ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_toolbarfullWidth(keyPath: `tool-barDotfullWidth`, callback: js.Function1[/* values */ AnonNewValueOldValue, Unit]): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_toolbarfullWidth(
+    keyPath: `tool-barDotfullWidth`,
+    options: AnonScope,
+    callback: js.Function1[/* values */ AnonNewValueOldValue, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_toolbariconSize(keyPath: `tool-barDoticonSize`, callback: js.Function1[/* values */ Anon12, Unit]): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_toolbariconSize(
+    keyPath: `tool-barDoticonSize`,
+    options: AnonScope,
+    callback: js.Function1[/* values */ Anon12, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_toolbarposition(keyPath: `tool-barDotposition`, callback: js.Function1[/* values */ Anon13, Unit]): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_toolbarposition(
+    keyPath: `tool-barDotposition`,
+    options: AnonScope,
+    callback: js.Function1[/* values */ Anon13, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_toolbaruseTouchBar(keyPath: `tool-barDotuseTouchBar`, callback: js.Function1[/* values */ AnonNewValueString, Unit]): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_toolbaruseTouchBar(
+    keyPath: `tool-barDotuseTouchBar`,
+    options: AnonScope,
+    callback: js.Function1[/* values */ AnonNewValueString, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_toolbarvisible(keyPath: `tool-barDotvisible`, callback: js.Function1[/* values */ AnonNewValueOldValue, Unit]): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_toolbarvisible(
+    keyPath: `tool-barDotvisible`,
+    options: AnonScope,
+    callback: js.Function1[/* values */ AnonNewValueOldValue, Unit]
+  ): Disposable = js.native
   def set(
     keyPath: `autocomplete-plusDotconfirmCompletion`,
     value: `tab alwaysComma enter when suggestion explicitly selected`
@@ -2409,6 +2558,30 @@ trait Config extends js.Object {
   ): Unit = js.native
   def set(keyPath: `autocomplete-plusDotsuggestionListFollows`, value: Word): Unit = js.native
   def set(keyPath: `autocomplete-plusDotsuggestionListFollows`, value: Word, options: AnonScopeSelector): Unit = js.native
+  def set(keyPath: `tool-barDoticonSize`, value: `12px`): Unit = js.native
+  def set(keyPath: `tool-barDoticonSize`, value: `12px`, options: AnonScopeSelector): Unit = js.native
+  def set(keyPath: `tool-barDoticonSize`, value: `14px`): Unit = js.native
+  def set(keyPath: `tool-barDoticonSize`, value: `14px`, options: AnonScopeSelector): Unit = js.native
+  def set(keyPath: `tool-barDoticonSize`, value: `16px`): Unit = js.native
+  def set(keyPath: `tool-barDoticonSize`, value: `16px`, options: AnonScopeSelector): Unit = js.native
+  def set(keyPath: `tool-barDoticonSize`, value: `18px`): Unit = js.native
+  def set(keyPath: `tool-barDoticonSize`, value: `18px`, options: AnonScopeSelector): Unit = js.native
+  def set(keyPath: `tool-barDoticonSize`, value: `21px`): Unit = js.native
+  def set(keyPath: `tool-barDoticonSize`, value: `21px`, options: AnonScopeSelector): Unit = js.native
+  def set(keyPath: `tool-barDoticonSize`, value: `24px`): Unit = js.native
+  def set(keyPath: `tool-barDoticonSize`, value: `24px`, options: AnonScopeSelector): Unit = js.native
+  def set(keyPath: `tool-barDoticonSize`, value: `28px`): Unit = js.native
+  def set(keyPath: `tool-barDoticonSize`, value: `28px`, options: AnonScopeSelector): Unit = js.native
+  def set(keyPath: `tool-barDoticonSize`, value: `32px`): Unit = js.native
+  def set(keyPath: `tool-barDoticonSize`, value: `32px`, options: AnonScopeSelector): Unit = js.native
+  def set(keyPath: `tool-barDotposition`, value: Bottom): Unit = js.native
+  def set(keyPath: `tool-barDotposition`, value: Bottom, options: AnonScopeSelector): Unit = js.native
+  def set(keyPath: `tool-barDotposition`, value: Left): Unit = js.native
+  def set(keyPath: `tool-barDotposition`, value: Left, options: AnonScopeSelector): Unit = js.native
+  def set(keyPath: `tool-barDotposition`, value: Right): Unit = js.native
+  def set(keyPath: `tool-barDotposition`, value: Right, options: AnonScopeSelector): Unit = js.native
+  def set(keyPath: `tool-barDotposition`, value: Top): Unit = js.native
+  def set(keyPath: `tool-barDotposition`, value: Top, options: AnonScopeSelector): Unit = js.native
   def set(keyPath: coreDotcolorProfile, value: default): Unit = js.native
   def set(keyPath: coreDotcolorProfile, value: default, options: AnonScopeSelector): Unit = js.native
   def set(keyPath: coreDotcolorProfile, value: srgb): Unit = js.native
@@ -2795,6 +2968,18 @@ trait Config extends js.Object {
   def set_statusbarselectionCountFormat(keyPath: `status-barDotselectionCountFormat`, value: String): Unit = js.native
   @JSName("set")
   def set_statusbarselectionCountFormat(keyPath: `status-barDotselectionCountFormat`, value: String, options: AnonScopeSelector): Unit = js.native
+  @JSName("set")
+  def set_toolbarfullWidth(keyPath: `tool-barDotfullWidth`, value: Boolean): Unit = js.native
+  @JSName("set")
+  def set_toolbarfullWidth(keyPath: `tool-barDotfullWidth`, value: Boolean, options: AnonScopeSelector): Unit = js.native
+  @JSName("set")
+  def set_toolbaruseTouchBar(keyPath: `tool-barDotuseTouchBar`, value: String): Unit = js.native
+  @JSName("set")
+  def set_toolbaruseTouchBar(keyPath: `tool-barDotuseTouchBar`, value: String, options: AnonScopeSelector): Unit = js.native
+  @JSName("set")
+  def set_toolbarvisible(keyPath: `tool-barDotvisible`, value: Boolean): Unit = js.native
+  @JSName("set")
+  def set_toolbarvisible(keyPath: `tool-barDotvisible`, value: Boolean, options: AnonScopeSelector): Unit = js.native
   /**
     *  Suppress calls to handler functions registered with ::onDidChange and ::observe
     *  for the duration of callback. After callback executes, handlers will be called

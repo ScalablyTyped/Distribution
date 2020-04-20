@@ -24,7 +24,6 @@ object AnonSelectWrapper {
     small: String
   ): AnonSelectWrapper = {
     val __obj = js.Dynamic.literal(control = control.asInstanceOf[js.Any], onError = onError.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], selectWrapper = selectWrapper.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSelectWrapper]
   }
 }

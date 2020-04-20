@@ -29,18 +29,18 @@ import scala.scalajs.js.annotation._
   var unit: js.Any
   var units: js.Any
   @JSName("always")
-  def always_MUnitPatterns(): NotationPattern
+  def always_MUnitPatterns: NotationPattern
   @JSName("auto")
-  def auto_MUnitPatterns(): NotationPattern
+  def auto_MUnitPatterns: NotationPattern
   @JSName("exceptZero")
-  def exceptZero_MUnitPatterns(): NotationPattern
-  def long(): this.type
-  def narrow(): this.type
+  def exceptZero_MUnitPatterns: NotationPattern
+  def long: this.type
+  def narrow: this.type
   @JSName("never")
-  def never_MUnitPatterns(): NotationPattern
-  def scientific(): SignPattern
-  def short(): this.type
-  def standard(): SignPattern
+  def never_MUnitPatterns: NotationPattern
+  def scientific: SignPattern
+  def short: this.type
+  def standard: SignPattern
 }
 
 object UnitPatterns {

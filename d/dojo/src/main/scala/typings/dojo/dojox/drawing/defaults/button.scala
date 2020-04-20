@@ -36,7 +36,6 @@ object button {
   @scala.inline
   def apply(down: js.Object, icon: js.Object, norm: js.Object, over: js.Object, selected: js.Object): button = {
     val __obj = js.Dynamic.literal(down = down.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], norm = norm.asInstanceOf[js.Any], over = over.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[button]
   }
 }

@@ -21,7 +21,6 @@ object Typeofacc {
     acc_request: (String, String) => Double
   ): Typeofacc = {
     val __obj = js.Dynamic.literal(acc_db_request = js.Any.fromFunction2(acc_db_request), acc_log_request = js.Any.fromFunction1(acc_log_request), acc_request = js.Any.fromFunction2(acc_request))
-  
     __obj.asInstanceOf[Typeofacc]
   }
 }

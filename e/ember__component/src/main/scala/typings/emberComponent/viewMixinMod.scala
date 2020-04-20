@@ -115,6 +115,30 @@ object viewMixinMod extends js.Object {
     @JSName("$")
     def $[TElement](callback: js.ThisFunction1[/* this */ Document_, /* $ */ this.type, Unit]): JQuery_[TElement] = js.native
     /**
+      * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
+      * @param element_elementArray _&#x40;param_ `element_elementArray`
+      * <br>
+      * * `element` — A DOM element to wrap in a jQuery object. <br>
+      * * `elementArray` — An array containing a set of DOM elements to wrap in a jQuery object.
+      * @see \`{@link https://api.jquery.com/jQuery/ }\`
+      * @since 1.0
+      * @example ​ ````Set the background color of the page to black.
+    ```javascript
+    $( document.body ).css( "background", "black" );
+    ```
+      * @example ​ ````Hide all the input elements within a form.
+    ```javascript
+    $( myForm.elements ).hide();
+    ```
+      */
+    /**
+      * Returns a jQuery object for this view's element. If you pass in a selector
+      * string, this method will return a jQuery object, using the current element
+      * as its buffer.
+      */
+    @JSName("$")
+    def $[T /* <: Element */](element_elementArray: T): JQuery_[T] = js.native
+    /**
       * Returns a jQuery object for this view's element. If you pass in a selector
       * string, this method will return a jQuery object, using the current element
       * as its buffer.
@@ -172,19 +196,6 @@ object viewMixinMod extends js.Object {
       */
     @JSName("$")
     def $[TElement /* <: HTMLElement */](html: htmlString, ownerDocument_attributes: Document_): JQuery_[TElement] = js.native
-    /**
-      * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
-      * @param object A plain object to wrap in a jQuery object.
-      * @see \`{@link https://api.jquery.com/jQuery/ }\`
-      * @since 1.0
-      */
-    /**
-      * Returns a jQuery object for this view's element. If you pass in a selector
-      * string, this method will return a jQuery object, using the current element
-      * as its buffer.
-      */
-    @JSName("$")
-    def $[T /* <: PlainObject[_] */](`object`: T): JQuery_[T] = js.native
     /**
       * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
       * @param selection An existing jQuery object to clone.
@@ -273,20 +284,9 @@ object viewMixinMod extends js.Object {
     def $_TElement_Element[TElement /* <: Element */](selector: Selector, context: Document_): JQuery_[TElement] = js.native
     /**
       * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
-      * @param element_elementArray _&#x40;param_ `element_elementArray`
-      * <br>
-      * * `element` — A DOM element to wrap in a jQuery object. <br>
-      * * `elementArray` — An array containing a set of DOM elements to wrap in a jQuery object.
+      * @param object A plain object to wrap in a jQuery object.
       * @see \`{@link https://api.jquery.com/jQuery/ }\`
       * @since 1.0
-      * @example ​ ````Set the background color of the page to black.
-    ```javascript
-    $( document.body ).css( "background", "black" );
-    ```
-      * @example ​ ````Hide all the input elements within a form.
-    ```javascript
-    $( myForm.elements ).hide();
-    ```
       */
     /**
       * Returns a jQuery object for this view's element. If you pass in a selector
@@ -294,7 +294,7 @@ object viewMixinMod extends js.Object {
       * as its buffer.
       */
     @JSName("$")
-    def $_T_Element[T /* <: Element */](element_elementArray: T): JQuery_[T] = js.native
+    def $_T_PlainObjectWildcard[T /* <: PlainObject[_] */](`object`: T): JQuery_[T] = js.native
     /**
       * Called when the element of the view has been inserted into the DOM.
       * Override this function to do any set up that requires an element

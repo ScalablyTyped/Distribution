@@ -38,6 +38,9 @@ object knexStrings {
   sealed trait MappedAliasType extends js.Object
   
   @js.native
+  sealed trait MaybeRawRecord extends js.Object
+  
+  @js.native
   sealed trait Ref extends js.Object
   
   @js.native
@@ -78,6 +81,8 @@ object knexStrings {
   def LessthansignGreaterthansign: LessthansignGreaterthansign = "<>".asInstanceOf[LessthansignGreaterthansign]
   @scala.inline
   def MappedAliasType: MappedAliasType = "MappedAliasType".asInstanceOf[MappedAliasType]
+  @scala.inline
+  def MaybeRawRecord: MaybeRawRecord = "MaybeRawRecord".asInstanceOf[MaybeRawRecord]
   @scala.inline
   def Ref: Ref = "Ref".asInstanceOf[Ref]
   @scala.inline

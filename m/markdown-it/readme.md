@@ -1,6 +1,7 @@
 
 # Scala.js typings for markdown-it
 
+Typings are for version v10.0.0
 
 ## Library description:
 Markdown-it - modern pluggable markdown parser.

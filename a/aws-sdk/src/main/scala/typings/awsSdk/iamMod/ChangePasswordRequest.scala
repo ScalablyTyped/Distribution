@@ -20,7 +20,6 @@ object ChangePasswordRequest {
   @scala.inline
   def apply(NewPassword: passwordType, OldPassword: passwordType): ChangePasswordRequest = {
     val __obj = js.Dynamic.literal(NewPassword = NewPassword.asInstanceOf[js.Any], OldPassword = OldPassword.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChangePasswordRequest]
   }
 }

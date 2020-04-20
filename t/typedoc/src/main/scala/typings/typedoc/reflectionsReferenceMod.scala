@@ -27,7 +27,7 @@ object reflectionsReferenceMod extends js.Object {
     var _state: js.Any = js.native
     def getTargetReflection(): Reflection = js.native
     def getTargetReflectionDeep(): Reflection = js.native
-    def isReference(): Boolean = js.native
+    def isReference: Boolean = js.native
     def tryGetTargetReflection(): js.UndefOr[Reflection] = js.native
     def tryGetTargetReflectionDeep(): js.UndefOr[Reflection] = js.native
   }

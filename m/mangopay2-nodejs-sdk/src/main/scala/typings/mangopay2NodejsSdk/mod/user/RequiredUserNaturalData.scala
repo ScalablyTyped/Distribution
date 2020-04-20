@@ -16,18 +16,16 @@ trait RequiredUserNaturalData extends js.Object
 
 object RequiredUserNaturalData {
   @scala.inline
-  def Birthday: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.Birthday = this.cast("Birthday")
+  def Birthday: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.Birthday = "Birthday".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.Birthday]
   @scala.inline
-  def CountryOfResidence: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CountryOfResidence = this.cast("CountryOfResidence")
+  def CountryOfResidence: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CountryOfResidence = "CountryOfResidence".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CountryOfResidence]
   @scala.inline
-  def Email: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.Email = this.cast("Email")
+  def Email: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.Email = "Email".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.Email]
   @scala.inline
-  def FirstName: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FirstName = this.cast("FirstName")
+  def FirstName: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FirstName = "FirstName".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FirstName]
   @scala.inline
-  def LastName: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LastName = this.cast("LastName")
+  def LastName: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LastName = "LastName".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LastName]
   @scala.inline
-  def Nationality: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.Nationality = this.cast("Nationality")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Nationality: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.Nationality = "Nationality".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.Nationality]
 }
 

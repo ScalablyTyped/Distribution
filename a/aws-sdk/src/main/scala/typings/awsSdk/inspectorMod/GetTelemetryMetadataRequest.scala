@@ -16,7 +16,6 @@ object GetTelemetryMetadataRequest {
   @scala.inline
   def apply(assessmentRunArn: Arn): GetTelemetryMetadataRequest = {
     val __obj = js.Dynamic.literal(assessmentRunArn = assessmentRunArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetTelemetryMetadataRequest]
   }
 }

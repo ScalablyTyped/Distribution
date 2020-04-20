@@ -13,12 +13,10 @@ trait ServeStrategy extends js.Object
 
 object ServeStrategy {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def mirror: typings.hoxy.hoxyStrings.mirror = "mirror".asInstanceOf[typings.hoxy.hoxyStrings.mirror]
   @scala.inline
-  def mirror: typings.hoxy.hoxyStrings.mirror = this.cast("mirror")
+  def overlay: typings.hoxy.hoxyStrings.overlay = "overlay".asInstanceOf[typings.hoxy.hoxyStrings.overlay]
   @scala.inline
-  def overlay: typings.hoxy.hoxyStrings.overlay = this.cast("overlay")
-  @scala.inline
-  def replace: typings.hoxy.hoxyStrings.replace = this.cast("replace")
+  def replace: typings.hoxy.hoxyStrings.replace = "replace".asInstanceOf[typings.hoxy.hoxyStrings.replace]
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.surveyKnockout.mod.IParentElement because var conflicts: isReadOnly. Inlined addElement, removeElement
 - typings.surveyKnockout.mod.ISurveyElement because Already inherited
-- typings.surveyKnockout.mod.IPanel because var conflicts: containsErrors, isPage, isPanel, isReadOnly, isVisible, name. Inlined getChildrenLayoutType, getQuestionTitleLocation, parent, elementWidthChanged, indexOf, elements */ @JSImport("survey-knockout", "PanelModelBase")
+- typings.surveyKnockout.mod.IPanel because var conflicts: containsErrors, isPage, isPanel, isReadOnly, isVisible, name. Inlined getChildrenLayoutType, getQuestionTitleLocation, getQuestionStartIndex, parent, elementWidthChanged, indexOf, elements */ @JSImport("survey-knockout", "PanelModelBase")
 @js.native
 class PanelModelBase ()
   extends SurveyElement
@@ -144,6 +144,7 @@ class PanelModelBase ()
   def addQuestionsToList(list: js.Array[IQuestion]): Unit = js.native
   def addQuestionsToList(list: js.Array[IQuestion], visibleOnly: Boolean): Unit = js.native
   def addQuestionsToList(list: js.Array[IQuestion], visibleOnly: Boolean, includingDesignTime: Boolean): Unit = js.native
+  /* protected */ def beforeSetVisibleIndex(index: Double): Double = js.native
   /* protected */ def canAddElement(element: IElement): Boolean = js.native
   /* protected */ def childVisibilityChanged(): Unit = js.native
   /**
@@ -200,6 +201,7 @@ class PanelModelBase ()
   /* CompleteClass */
   override def getMarkdownHtml(text: String): String = js.native
   def getPanel(): IPanel = js.native
+  /* protected */ def getPanelStartIndex(index: Double): Double = js.native
   /* CompleteClass */
   override def getProcessedText(text: String): String = js.native
   /**
@@ -208,8 +210,10 @@ class PanelModelBase ()
     */
   def getQuestionByName(name: String): Question = js.native
   def getQuestionByValueName(valueName: String): Question = js.native
+  def getQuestionStartIndex(): String = js.native
   def getQuestionTitleLocation(): String = js.native
   /* protected */ def getRenderedTitle(str: String): String = js.native
+  /* protected */ def getStartIndex(): String = js.native
   /**
     * Returns the type of the object as a string as it represents in the json. It should be in lowcase.
     */
@@ -234,6 +238,7 @@ class PanelModelBase ()
     * @param element question or panel
     */
   def indexOf(element: IElement): Double = js.native
+  /* protected */ def isContinueNumbering(): Boolean = js.native
   def isLayoutTypeSupported(layoutType: String): Boolean = js.native
   /* InferMemberOverrides */
   override def locStrsChanged(): Unit with js.Any = js.native

@@ -13,7 +13,6 @@ object TwoHandleSliderState {
   @scala.inline
   def apply(maxValue: Double, minValue: Double): TwoHandleSliderState = {
     val __obj = js.Dynamic.literal(maxValue = maxValue.asInstanceOf[js.Any], minValue = minValue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TwoHandleSliderState]
   }
 }

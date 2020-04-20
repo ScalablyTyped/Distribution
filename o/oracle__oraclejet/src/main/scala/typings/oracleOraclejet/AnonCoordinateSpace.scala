@@ -16,7 +16,6 @@ object AnonCoordinateSpace {
   @scala.inline
   def apply(coordinateSpace: js.Any, id: js.Any, labelLayout: LabelLayout, path: String): AnonCoordinateSpace = {
     val __obj = js.Dynamic.literal(coordinateSpace = coordinateSpace.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], labelLayout = labelLayout.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCoordinateSpace]
   }
 }

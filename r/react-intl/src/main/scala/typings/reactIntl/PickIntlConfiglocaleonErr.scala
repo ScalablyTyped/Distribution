@@ -14,7 +14,6 @@ object PickIntlConfiglocaleonErr {
   @scala.inline
   def apply(locale: String, onError: /* err */ String => Unit): PickIntlConfiglocaleonErr = {
     val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], onError = js.Any.fromFunction1(onError))
-  
     __obj.asInstanceOf[PickIntlConfiglocaleonErr]
   }
 }

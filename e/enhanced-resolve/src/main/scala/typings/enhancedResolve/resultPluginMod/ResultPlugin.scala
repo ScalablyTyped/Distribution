@@ -14,7 +14,6 @@ object ResultPlugin {
   @scala.inline
   def apply(apply: typings.enhancedResolve.resolverMod.^ => Unit, source: String): ResultPlugin = {
     val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), source = source.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResultPlugin]
   }
 }

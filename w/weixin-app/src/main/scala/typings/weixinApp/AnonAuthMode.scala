@@ -20,7 +20,6 @@ object AnonAuthMode {
   @scala.inline
   def apply(authMode: String, errCode: Double, errMsg: String, resultJSON: String, resultJSONSignature: String): AnonAuthMode = {
     val __obj = js.Dynamic.literal(authMode = authMode.asInstanceOf[js.Any], errCode = errCode.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any], resultJSON = resultJSON.asInstanceOf[js.Any], resultJSONSignature = resultJSONSignature.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAuthMode]
   }
 }

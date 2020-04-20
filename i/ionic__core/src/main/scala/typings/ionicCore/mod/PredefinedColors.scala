@@ -19,24 +19,22 @@ trait PredefinedColors extends js.Object
 
 object PredefinedColors {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def danger: typings.ionicCore.ionicCoreStrings.danger = "danger".asInstanceOf[typings.ionicCore.ionicCoreStrings.danger]
   @scala.inline
-  def danger: typings.ionicCore.ionicCoreStrings.danger = this.cast("danger")
+  def dark: typings.ionicCore.ionicCoreStrings.dark = "dark".asInstanceOf[typings.ionicCore.ionicCoreStrings.dark]
   @scala.inline
-  def dark: typings.ionicCore.ionicCoreStrings.dark = this.cast("dark")
+  def light: typings.ionicCore.ionicCoreStrings.light = "light".asInstanceOf[typings.ionicCore.ionicCoreStrings.light]
   @scala.inline
-  def light: typings.ionicCore.ionicCoreStrings.light = this.cast("light")
+  def medium: typings.ionicCore.ionicCoreStrings.medium = "medium".asInstanceOf[typings.ionicCore.ionicCoreStrings.medium]
   @scala.inline
-  def medium: typings.ionicCore.ionicCoreStrings.medium = this.cast("medium")
+  def primary: typings.ionicCore.ionicCoreStrings.primary = "primary".asInstanceOf[typings.ionicCore.ionicCoreStrings.primary]
   @scala.inline
-  def primary: typings.ionicCore.ionicCoreStrings.primary = this.cast("primary")
+  def secondary: typings.ionicCore.ionicCoreStrings.secondary = "secondary".asInstanceOf[typings.ionicCore.ionicCoreStrings.secondary]
   @scala.inline
-  def secondary: typings.ionicCore.ionicCoreStrings.secondary = this.cast("secondary")
+  def success: typings.ionicCore.ionicCoreStrings.success = "success".asInstanceOf[typings.ionicCore.ionicCoreStrings.success]
   @scala.inline
-  def success: typings.ionicCore.ionicCoreStrings.success = this.cast("success")
+  def tertiary: typings.ionicCore.ionicCoreStrings.tertiary = "tertiary".asInstanceOf[typings.ionicCore.ionicCoreStrings.tertiary]
   @scala.inline
-  def tertiary: typings.ionicCore.ionicCoreStrings.tertiary = this.cast("tertiary")
-  @scala.inline
-  def warning: typings.ionicCore.ionicCoreStrings.warning = this.cast("warning")
+  def warning: typings.ionicCore.ionicCoreStrings.warning = "warning".asInstanceOf[typings.ionicCore.ionicCoreStrings.warning]
 }
 

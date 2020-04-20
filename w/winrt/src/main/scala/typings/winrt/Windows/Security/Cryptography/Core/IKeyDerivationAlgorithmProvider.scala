@@ -14,7 +14,6 @@ object IKeyDerivationAlgorithmProvider {
   @scala.inline
   def apply(algorithmName: String, createKey: IBuffer => CryptographicKey): IKeyDerivationAlgorithmProvider = {
     val __obj = js.Dynamic.literal(algorithmName = algorithmName.asInstanceOf[js.Any], createKey = js.Any.fromFunction1(createKey))
-  
     __obj.asInstanceOf[IKeyDerivationAlgorithmProvider]
   }
 }

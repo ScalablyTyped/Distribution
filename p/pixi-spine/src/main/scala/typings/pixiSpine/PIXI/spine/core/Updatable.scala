@@ -13,7 +13,6 @@ object Updatable {
   @scala.inline
   def apply(isActive: () => Boolean, update: () => Unit): Updatable = {
     val __obj = js.Dynamic.literal(isActive = js.Any.fromFunction0(isActive), update = js.Any.fromFunction0(update))
-  
     __obj.asInstanceOf[Updatable]
   }
 }

@@ -25,37 +25,31 @@ object Aggregation {
   @scala.inline
   def AnonStdev(stdev: String): Aggregation = {
     val __obj = js.Dynamic.literal(stdev = stdev.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Aggregation]
   }
   @scala.inline
   def AnonMax(max: String): Aggregation = {
     val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Aggregation]
   }
   @scala.inline
   def AnonMin(min: String): Aggregation = {
     val __obj = js.Dynamic.literal(min = min.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Aggregation]
   }
   @scala.inline
   def AnonCount(count: String): Aggregation = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Aggregation]
   }
   @scala.inline
   def AnonAvg(avg: String): Aggregation = {
     val __obj = js.Dynamic.literal(avg = avg.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Aggregation]
   }
   @scala.inline
   def AnonSum(sum: String): Aggregation = {
     val __obj = js.Dynamic.literal(sum = sum.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Aggregation]
   }
 }

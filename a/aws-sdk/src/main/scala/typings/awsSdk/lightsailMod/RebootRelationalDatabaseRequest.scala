@@ -16,7 +16,6 @@ object RebootRelationalDatabaseRequest {
   @scala.inline
   def apply(relationalDatabaseName: ResourceName): RebootRelationalDatabaseRequest = {
     val __obj = js.Dynamic.literal(relationalDatabaseName = relationalDatabaseName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RebootRelationalDatabaseRequest]
   }
 }

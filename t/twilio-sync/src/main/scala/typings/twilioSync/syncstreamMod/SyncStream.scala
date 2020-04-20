@@ -21,14 +21,10 @@ import scala.scalajs.js.annotation._
 class SyncStream protected ()
   extends typings.twilioSync.closeableMod.default {
   def this(syncStreamImpl: SyncStreamImpl) = this()
-  val dateExpires: String = js.native
-  val lastEventId: js.Any = js.native
-  val links: js.Any = js.native
-  val sid: String = js.native
   val syncStreamImpl: js.Any = js.native
-  val `type`: String = js.native
-  val uniqueName: String = js.native
-  val uri: String = js.native
+  def dateExpires: String = js.native
+  def lastEventId: js.Any = js.native
+  def links: js.Any = js.native
   /**
     * Publish a Message to the Stream. The system will attempt delivery to all online subscribers.
     * @param {Object} value The body of the dispatched message. Maximum size in serialized JSON: 4KB.
@@ -75,12 +71,16 @@ class SyncStream protected ()
     *   });
     */
   def setTtl(ttl: Double): js.Promise[Unit] = js.native
+  def sid: String = js.native
+  def `type`: String = js.native
+  def uniqueName: String = js.native
+  def uri: String = js.native
 }
 
 /* static members */
 @JSImport("twilio-sync/lib/streams/syncstream", "SyncStream")
 @js.native
 object SyncStream extends js.Object {
-  val `type`: String = js.native
+  def `type`: String = js.native
 }
 

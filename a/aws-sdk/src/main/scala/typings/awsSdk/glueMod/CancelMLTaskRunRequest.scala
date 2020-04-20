@@ -20,7 +20,6 @@ object CancelMLTaskRunRequest {
   @scala.inline
   def apply(TaskRunId: HashString, TransformId: HashString): CancelMLTaskRunRequest = {
     val __obj = js.Dynamic.literal(TaskRunId = TaskRunId.asInstanceOf[js.Any], TransformId = TransformId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CancelMLTaskRunRequest]
   }
 }

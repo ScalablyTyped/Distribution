@@ -16,7 +16,6 @@ object EntityInfo {
   @scala.inline
   def apply(entityType: String, name: String, parent: Identity, uuid: String): EntityInfo = {
     val __obj = js.Dynamic.literal(entityType = entityType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EntityInfo]
   }
 }

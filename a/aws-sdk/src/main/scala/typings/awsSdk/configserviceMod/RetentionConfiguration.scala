@@ -20,7 +20,6 @@ object RetentionConfiguration {
   @scala.inline
   def apply(Name: RetentionConfigurationName, RetentionPeriodInDays: RetentionPeriodInDays): RetentionConfiguration = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], RetentionPeriodInDays = RetentionPeriodInDays.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RetentionConfiguration]
   }
 }

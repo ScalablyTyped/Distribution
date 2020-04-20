@@ -13,7 +13,6 @@ object PickImplkeepOnScreen {
   @scala.inline
   def apply(keepOnScreen: Boolean): PickImplkeepOnScreen = {
     val __obj = js.Dynamic.literal(keepOnScreen = keepOnScreen.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplkeepOnScreen]
   }
 }

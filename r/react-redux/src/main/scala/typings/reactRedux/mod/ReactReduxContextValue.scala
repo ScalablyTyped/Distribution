@@ -15,7 +15,6 @@ object ReactReduxContextValue {
   @scala.inline
   def apply[SS, A /* <: Action[_] */](store: Store[SS, A], storeState: SS): ReactReduxContextValue[SS, A] = {
     val __obj = js.Dynamic.literal(store = store.asInstanceOf[js.Any], storeState = storeState.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReactReduxContextValue[SS, A]]
   }
 }

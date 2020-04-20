@@ -17,7 +17,6 @@ object AnonS {
     V: Uint8Array
   ): AnonS = {
     val __obj = js.Dynamic.literal(S = S.asInstanceOf[js.Any], V = V.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonS]
   }
 }

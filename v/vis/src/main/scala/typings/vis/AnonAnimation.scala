@@ -14,7 +14,6 @@ object AnonAnimation {
   @scala.inline
   def apply(animation: TimelineAnimationOptions, focus: Boolean): AnonAnimation = {
     val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAnimation]
   }
 }

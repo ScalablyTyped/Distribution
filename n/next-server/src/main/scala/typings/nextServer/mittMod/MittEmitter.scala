@@ -18,7 +18,6 @@ object MittEmitter {
     on: (String, Handler) => Unit
   ): MittEmitter = {
     val __obj = js.Dynamic.literal(emit = js.Any.fromFunction2(emit), off = js.Any.fromFunction2(off), on = js.Any.fromFunction2(on))
-  
     __obj.asInstanceOf[MittEmitter]
   }
 }

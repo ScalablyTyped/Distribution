@@ -13,12 +13,10 @@ trait DocumentChangeType extends js.Object
 
 object DocumentChangeType {
   @scala.inline
-  def added: typings.googleCloudFirestore.googleCloudFirestoreStrings.added = this.cast("added")
+  def added: typings.googleCloudFirestore.googleCloudFirestoreStrings.added = "added".asInstanceOf[typings.googleCloudFirestore.googleCloudFirestoreStrings.added]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def modified: typings.googleCloudFirestore.googleCloudFirestoreStrings.modified = "modified".asInstanceOf[typings.googleCloudFirestore.googleCloudFirestoreStrings.modified]
   @scala.inline
-  def modified: typings.googleCloudFirestore.googleCloudFirestoreStrings.modified = this.cast("modified")
-  @scala.inline
-  def removed: typings.googleCloudFirestore.googleCloudFirestoreStrings.removed = this.cast("removed")
+  def removed: typings.googleCloudFirestore.googleCloudFirestoreStrings.removed = "removed".asInstanceOf[typings.googleCloudFirestore.googleCloudFirestoreStrings.removed]
 }
 

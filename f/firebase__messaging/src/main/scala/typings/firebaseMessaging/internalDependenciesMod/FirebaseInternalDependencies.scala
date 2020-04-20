@@ -28,7 +28,6 @@ object FirebaseInternalDependencies {
     installations: FirebaseInstallations
   ): FirebaseInternalDependencies = {
     val __obj = js.Dynamic.literal(analyticsProvider = analyticsProvider.asInstanceOf[js.Any], app = app.asInstanceOf[js.Any], appConfig = appConfig.asInstanceOf[js.Any], installations = installations.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FirebaseInternalDependencies]
   }
 }

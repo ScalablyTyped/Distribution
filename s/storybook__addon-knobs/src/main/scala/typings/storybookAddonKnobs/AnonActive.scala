@@ -19,7 +19,6 @@ object AnonActive {
     onReset: Validator[js.UndefOr[js.Object]]
   ): AnonActive = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], api = api.asInstanceOf[js.Any], onReset = onReset.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonActive]
   }
 }

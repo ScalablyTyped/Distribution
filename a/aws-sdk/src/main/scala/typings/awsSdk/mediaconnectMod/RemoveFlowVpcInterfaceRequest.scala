@@ -20,7 +20,6 @@ object RemoveFlowVpcInterfaceRequest {
   @scala.inline
   def apply(FlowArn: string, VpcInterfaceName: string): RemoveFlowVpcInterfaceRequest = {
     val __obj = js.Dynamic.literal(FlowArn = FlowArn.asInstanceOf[js.Any], VpcInterfaceName = VpcInterfaceName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RemoveFlowVpcInterfaceRequest]
   }
 }

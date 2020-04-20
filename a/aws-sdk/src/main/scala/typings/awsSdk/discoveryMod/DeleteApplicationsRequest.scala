@@ -16,7 +16,6 @@ object DeleteApplicationsRequest {
   @scala.inline
   def apply(configurationIds: ApplicationIdsList): DeleteApplicationsRequest = {
     val __obj = js.Dynamic.literal(configurationIds = configurationIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteApplicationsRequest]
   }
 }

@@ -12,7 +12,6 @@ object IPlayToSourceRequestedEventArgs {
   @scala.inline
   def apply(sourceRequest: PlayToSourceRequest): IPlayToSourceRequestedEventArgs = {
     val __obj = js.Dynamic.literal(sourceRequest = sourceRequest.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPlayToSourceRequestedEventArgs]
   }
 }

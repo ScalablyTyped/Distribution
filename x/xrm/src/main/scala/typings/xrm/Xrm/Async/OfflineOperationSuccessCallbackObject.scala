@@ -22,7 +22,6 @@ object OfflineOperationSuccessCallbackObject {
   @scala.inline
   def apply(id: String, logicalName: String): OfflineOperationSuccessCallbackObject = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], logicalName = logicalName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OfflineOperationSuccessCallbackObject]
   }
 }

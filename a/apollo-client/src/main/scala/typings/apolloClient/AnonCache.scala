@@ -14,7 +14,6 @@ object AnonCache {
   @scala.inline
   def apply[TCacheShape](cache: ApolloCache[TCacheShape], getCacheKey: AnonId => js.Any): AnonCache[TCacheShape] = {
     val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], getCacheKey = js.Any.fromFunction1(getCacheKey))
-  
     __obj.asInstanceOf[AnonCache[TCacheShape]]
   }
 }

@@ -16,7 +16,6 @@ object EvaluatePullRequestApprovalRulesOutput {
   @scala.inline
   def apply(evaluation: Evaluation): EvaluatePullRequestApprovalRulesOutput = {
     val __obj = js.Dynamic.literal(evaluation = evaluation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EvaluatePullRequestApprovalRulesOutput]
   }
 }

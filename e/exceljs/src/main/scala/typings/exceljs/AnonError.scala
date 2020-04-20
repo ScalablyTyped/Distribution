@@ -13,7 +13,6 @@ object AnonError {
   @scala.inline
   def apply(error: CellErrorValue): AnonError = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonError]
   }
 }

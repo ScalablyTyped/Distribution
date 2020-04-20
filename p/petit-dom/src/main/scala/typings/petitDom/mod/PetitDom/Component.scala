@@ -25,7 +25,6 @@ object Component {
     unmount: Element => Unit
   ): Component[P] = {
     val __obj = js.Dynamic.literal(mount = js.Any.fromFunction2(mount), patch = js.Any.fromFunction5(patch), unmount = js.Any.fromFunction1(unmount))
-  
     __obj.asInstanceOf[Component[P]]
   }
 }

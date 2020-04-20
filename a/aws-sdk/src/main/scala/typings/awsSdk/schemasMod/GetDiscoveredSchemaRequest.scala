@@ -20,7 +20,6 @@ object GetDiscoveredSchemaRequest {
   @scala.inline
   def apply(Events: listOfGetDiscoveredSchemaVersionItemInput, Type: Type): GetDiscoveredSchemaRequest = {
     val __obj = js.Dynamic.literal(Events = Events.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDiscoveredSchemaRequest]
   }
 }

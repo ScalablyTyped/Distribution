@@ -14,7 +14,6 @@ object IKeytipsOverflowExampleState {
   @scala.inline
   def apply(items: js.Array[IOverflowSetItemProps], overflowItems: js.Array[IOverflowSetItemProps]): IKeytipsOverflowExampleState = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], overflowItems = overflowItems.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IKeytipsOverflowExampleState]
   }
 }

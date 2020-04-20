@@ -20,7 +20,6 @@ object AnonLongNarrow {
     short: Record[CurrencyCode, String]
   ): AnonLongNarrow = {
     val __obj = js.Dynamic.literal(long = long.asInstanceOf[js.Any], narrow = narrow.asInstanceOf[js.Any], short = short.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLongNarrow]
   }
 }

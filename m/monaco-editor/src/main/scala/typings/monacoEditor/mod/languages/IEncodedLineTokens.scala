@@ -38,7 +38,6 @@ object IEncodedLineTokens {
   @scala.inline
   def apply(endState: IState, tokens: Uint32Array): IEncodedLineTokens = {
     val __obj = js.Dynamic.literal(endState = endState.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IEncodedLineTokens]
   }
 }

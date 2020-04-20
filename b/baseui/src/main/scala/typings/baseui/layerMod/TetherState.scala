@@ -12,7 +12,6 @@ object TetherState {
   @scala.inline
   def apply(isMounted: Boolean): TetherState = {
     val __obj = js.Dynamic.literal(isMounted = isMounted.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TetherState]
   }
 }

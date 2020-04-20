@@ -17,6 +17,7 @@ object mocksMod extends js.Object {
     def readResource(req: js.Any, callback: js.Function2[/* err */ js.Any, /* innterResponse */ js.Any, Unit]): js.Promise[Unit] = js.native
     def registerResource(req: js.Any, callback: js.Function2[/* err */ js.Any, /* innerResponse */ js.Any, Unit]): js.Promise[Unit] = js.native
     def registerResourceOutputs(req: js.Any, callback: js.Function2[/* err */ js.Any, /* innerResponse */ js.Any, Unit]): Unit = js.native
+    def supportsFeature(req: js.Any, callback: js.Function2[/* err */ js.Any, /* innerResponse */ js.Any, Unit]): Unit = js.native
   }
   
   @js.native

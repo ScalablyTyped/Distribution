@@ -17,7 +17,6 @@ object PushtokensResource {
   @scala.inline
   def apply(remove: AnonOauthtoken => Request_[Unit], update: AnonOauthtoken => Request_[Unit]): PushtokensResource = {
     val __obj = js.Dynamic.literal(remove = js.Any.fromFunction1(remove), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[PushtokensResource]
   }
 }

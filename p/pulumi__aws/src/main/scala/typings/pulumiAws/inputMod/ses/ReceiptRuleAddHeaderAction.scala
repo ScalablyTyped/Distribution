@@ -25,7 +25,6 @@ object ReceiptRuleAddHeaderAction {
   @scala.inline
   def apply(headerName: Input[String], headerValue: Input[String], position: Input[Double]): ReceiptRuleAddHeaderAction = {
     val __obj = js.Dynamic.literal(headerName = headerName.asInstanceOf[js.Any], headerValue = headerValue.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReceiptRuleAddHeaderAction]
   }
 }

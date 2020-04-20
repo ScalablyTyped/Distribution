@@ -18,6 +18,6 @@ class UrlSegment protected () extends js.Object {
   var parameters: StringDictionary[String] = js.native
   /** The path part of a URL segment */
   var path: String = js.native
-  def parameterMap(): ParamMap = js.native
+  def parameterMap: ParamMap = js.native
 }
 

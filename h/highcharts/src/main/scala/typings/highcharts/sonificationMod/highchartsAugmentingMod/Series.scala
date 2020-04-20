@@ -18,7 +18,6 @@ object Series {
   @scala.inline
   def apply(sonify: SonifySeriesOptionsObject => Unit): Series = {
     val __obj = js.Dynamic.literal(sonify = js.Any.fromFunction1(sonify))
-  
     __obj.asInstanceOf[Series]
   }
 }

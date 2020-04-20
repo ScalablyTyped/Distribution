@@ -70,7 +70,6 @@ object AnonAlignX {
     showOnlyFor: Requireable[_]
   ): AnonAlignX = {
     val __obj = js.Dynamic.literal(alignX = alignX.asInstanceOf[js.Any], alignY = alignY.asInstanceOf[js.Any], breakpoint = breakpoint.asInstanceOf[js.Any], centerAlign = centerAlign.asInstanceOf[js.Any], flexChild = flexChild.asInstanceOf[js.Any], flexContainer = flexContainer.asInstanceOf[js.Any], flexDirCol = flexDirCol.asInstanceOf[js.Any], flexDirColRev = flexDirColRev.asInstanceOf[js.Any], flexDirRow = flexDirRow.asInstanceOf[js.Any], flexDirRowRev = flexDirRowRev.asInstanceOf[js.Any], flexOrder = flexOrder.asInstanceOf[js.Any], flexOrderLarge = flexOrderLarge.asInstanceOf[js.Any], flexOrderMedium = flexOrderMedium.asInstanceOf[js.Any], flexOrderSmall = flexOrderSmall.asInstanceOf[js.Any], float = float.asInstanceOf[js.Any], hideFor = hideFor.asInstanceOf[js.Any], hideOnlyFor = hideOnlyFor.asInstanceOf[js.Any], isClearfix = isClearfix.asInstanceOf[js.Any], isHidden = isHidden.asInstanceOf[js.Any], isInvisible = isInvisible.asInstanceOf[js.Any], selfAlignX = selfAlignX.asInstanceOf[js.Any], selfAlignY = selfAlignY.asInstanceOf[js.Any], showFor = showFor.asInstanceOf[js.Any], showForLandscape = showForLandscape.asInstanceOf[js.Any], showForPortrait = showForPortrait.asInstanceOf[js.Any], showForSr = showForSr.asInstanceOf[js.Any], showOnFocus = showOnFocus.asInstanceOf[js.Any], showOnlyFor = showOnlyFor.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAlignX]
   }
 }

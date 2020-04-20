@@ -18,6 +18,8 @@ package object chimeMod {
   type AreaCode = java.lang.String
   type Arn = java.lang.String
   type AttendeeList = js.Array[typings.awsSdk.chimeMod.Attendee]
+  type AttendeeTagKeyList = js.Array[typings.awsSdk.chimeMod.TagKey]
+  type AttendeeTagList = js.Array[typings.awsSdk.chimeMod.Tag]
   type BatchCreateAttendeeErrorList = js.Array[typings.awsSdk.chimeMod.CreateAttendeeError]
   type Boolean = scala.Boolean
   type BotList = js.Array[typings.awsSdk.chimeMod.Bot]
@@ -76,6 +78,7 @@ package object chimeMod {
     - java.lang.String
   */
   type ErrorCode = typings.awsSdk.chimeMod._ErrorCode | java.lang.String
+  type ExternalMeetingIdType = java.lang.String
   type ExternalUserIdType = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.Country_
@@ -105,6 +108,8 @@ package object chimeMod {
   type License = typings.awsSdk.chimeMod._License | java.lang.String
   type LicenseList = js.Array[typings.awsSdk.chimeMod.License]
   type MeetingList = js.Array[typings.awsSdk.chimeMod.Meeting]
+  type MeetingTagKeyList = js.Array[typings.awsSdk.chimeMod.TagKey]
+  type MeetingTagList = js.Array[typings.awsSdk.chimeMod.Tag]
   type MemberErrorList = js.Array[typings.awsSdk.chimeMod.MemberError]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.User_
@@ -223,6 +228,10 @@ package object chimeMod {
   type String = java.lang.String
   type String128 = java.lang.String
   type StringList = js.Array[typings.awsSdk.chimeMod.String]
+  type TagKey = java.lang.String
+  type TagKeyList = js.Array[typings.awsSdk.chimeMod.TagKey]
+  type TagList = js.Array[typings.awsSdk.chimeMod.Tag]
+  type TagValue = java.lang.String
   type TollFreePrefix = java.lang.String
   type UpdatePhoneNumberRequestItemList = js.Array[typings.awsSdk.chimeMod.UpdatePhoneNumberRequestItem]
   type UpdateUserRequestItemList = js.Array[typings.awsSdk.chimeMod.UpdateUserRequestItem]

@@ -41,7 +41,6 @@ object DataProvider {
     updateSourceData: (Double, Double, js.Any) => Unit
   ): DataProvider = {
     val __obj = js.Dynamic.literal(changes = changes.asInstanceOf[js.Any], clearChanges = js.Any.fromFunction0(clearChanges), collectChanges = js.Any.fromFunction3(collectChanges), destroy = js.Any.fromFunction0(destroy), getDataAtCell = js.Any.fromFunction2(getDataAtCell), getDataByRange = js.Any.fromFunction4(getDataByRange), getRawDataAtCell = js.Any.fromFunction2(getRawDataAtCell), getRawDataByRange = js.Any.fromFunction4(getRawDataByRange), getSourceDataAtCell = js.Any.fromFunction2(getSourceDataAtCell), getSourceDataByRange = js.Any.fromFunction4(getSourceDataByRange), hot = hot.asInstanceOf[js.Any], isInDataRange = js.Any.fromFunction2(isInDataRange), t = t.asInstanceOf[js.Any], updateSourceData = js.Any.fromFunction3(updateSourceData))
-  
     __obj.asInstanceOf[DataProvider]
   }
 }

@@ -62,17 +62,17 @@ class BloomEffect protected () extends PostProcessRenderEffect {
   /**
     * Specifies the size of the bloom blur kernel, relative to the final output size
     */
-  def kernel(): Double = js.native
+  def kernel: Double = js.native
   def kernel(value: Double): js.Any = js.native
   /**
     * The luminance threshold to find bright areas of the image to bloom.
     */
-  def threshold(): Double = js.native
+  def threshold: Double = js.native
   def threshold(value: Double): js.Any = js.native
   /**
     * The strength of the bloom.
     */
-  def weight(): Double = js.native
+  def weight: Double = js.native
   def weight(value: Double): js.Any = js.native
 }
 

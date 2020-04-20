@@ -69,7 +69,6 @@ object CompilerHooks {
     watchRun: AsyncSeriesHook[Compiler_, _, _]
   ): CompilerHooks = {
     val __obj = js.Dynamic.literal(additionalPass = additionalPass.asInstanceOf[js.Any], afterCompile = afterCompile.asInstanceOf[js.Any], afterEmit = afterEmit.asInstanceOf[js.Any], afterEnvironment = afterEnvironment.asInstanceOf[js.Any], afterPlugins = afterPlugins.asInstanceOf[js.Any], afterResolvers = afterResolvers.asInstanceOf[js.Any], beforeCompile = beforeCompile.asInstanceOf[js.Any], beforeRun = beforeRun.asInstanceOf[js.Any], compilation = compilation.asInstanceOf[js.Any], compile = compile.asInstanceOf[js.Any], contextModuleFactory = contextModuleFactory.asInstanceOf[js.Any], done = done.asInstanceOf[js.Any], emit = emit.asInstanceOf[js.Any], entryOption = entryOption.asInstanceOf[js.Any], environment = environment.asInstanceOf[js.Any], failed = failed.asInstanceOf[js.Any], invalid = invalid.asInstanceOf[js.Any], make = make.asInstanceOf[js.Any], normalModuleFactory = normalModuleFactory.asInstanceOf[js.Any], run = run.asInstanceOf[js.Any], shouldEmit = shouldEmit.asInstanceOf[js.Any], thisCompilation = thisCompilation.asInstanceOf[js.Any], watchClose = watchClose.asInstanceOf[js.Any], watchRun = watchRun.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CompilerHooks]
   }
 }

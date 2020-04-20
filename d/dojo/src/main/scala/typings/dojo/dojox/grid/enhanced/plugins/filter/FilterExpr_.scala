@@ -122,7 +122,6 @@ object FilterExpr_ {
     TimeExpr: () => Unit
   ): FilterExpr_ = {
     val __obj = js.Dynamic.literal(BooleanExpr = js.Any.fromFunction0(BooleanExpr), Contains = js.Any.fromFunction0(Contains), DateExpr = js.Any.fromFunction0(DateExpr), EndsWith = js.Any.fromFunction0(EndsWith), EqualTo = js.Any.fromFunction0(EqualTo), IsEmpty = js.Any.fromFunction0(IsEmpty), LargerThan = js.Any.fromFunction0(LargerThan), LargerThanOrEqualTo = js.Any.fromFunction0(LargerThanOrEqualTo), LessThan = js.Any.fromFunction0(LessThan), LessThanOrEqualTo = js.Any.fromFunction0(LessThanOrEqualTo), LogicALL = js.Any.fromFunction0(LogicALL), LogicAND = js.Any.fromFunction0(LogicAND), LogicANY = js.Any.fromFunction0(LogicANY), LogicNOT = js.Any.fromFunction0(LogicNOT), LogicOR = js.Any.fromFunction0(LogicOR), LogicXOR = js.Any.fromFunction0(LogicXOR), Matches = js.Any.fromFunction0(Matches), NumberExpr = js.Any.fromFunction0(NumberExpr), StartsWith = js.Any.fromFunction0(StartsWith), StringExpr = js.Any.fromFunction0(StringExpr), TimeExpr = js.Any.fromFunction0(TimeExpr))
-  
     __obj.asInstanceOf[FilterExpr_]
   }
 }

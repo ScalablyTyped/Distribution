@@ -13,7 +13,6 @@ object AnonPDataDOMEvent {
   @scala.inline
   def apply(pDataDOMEvent: DataDOMEventObject): AnonPDataDOMEvent = {
     val __obj = js.Dynamic.literal(pDataDOMEvent = pDataDOMEvent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPDataDOMEvent]
   }
 }

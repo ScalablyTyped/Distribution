@@ -24,7 +24,6 @@ object DisassociateGlobalReplicationGroupMessage {
   @scala.inline
   def apply(GlobalReplicationGroupId: String, ReplicationGroupId: String, ReplicationGroupRegion: String): DisassociateGlobalReplicationGroupMessage = {
     val __obj = js.Dynamic.literal(GlobalReplicationGroupId = GlobalReplicationGroupId.asInstanceOf[js.Any], ReplicationGroupId = ReplicationGroupId.asInstanceOf[js.Any], ReplicationGroupRegion = ReplicationGroupRegion.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisassociateGlobalReplicationGroupMessage]
   }
 }

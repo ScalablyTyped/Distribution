@@ -36,7 +36,6 @@ object Friction {
     setFrictionY: Double => GameObject
   ): Friction = {
     val __obj = js.Dynamic.literal(setFriction = js.Any.fromFunction2(setFriction), setFrictionX = js.Any.fromFunction1(setFrictionX), setFrictionY = js.Any.fromFunction1(setFrictionY))
-  
     __obj.asInstanceOf[Friction]
   }
 }

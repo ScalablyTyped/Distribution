@@ -19,7 +19,6 @@ object Gradient {
   @scala.inline
   def apply(calcArray: Double => Color, calcHex: Double => String): Gradient = {
     val __obj = js.Dynamic.literal(calcArray = js.Any.fromFunction1(calcArray), calcHex = js.Any.fromFunction1(calcHex))
-  
     __obj.asInstanceOf[Gradient]
   }
 }

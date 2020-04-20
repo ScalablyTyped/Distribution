@@ -14,7 +14,6 @@ object AnonPoints {
   @scala.inline
   def apply(points: js.Array[Point], status: Double): AnonPoints = {
     val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPoints]
   }
 }

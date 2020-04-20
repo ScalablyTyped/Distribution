@@ -12,7 +12,6 @@ object OnSubscribeSuccessParams {
   @scala.inline
   def apply(grantedQos: Qos, invocationContext: js.Any): OnSubscribeSuccessParams = {
     val __obj = js.Dynamic.literal(grantedQos = grantedQos.asInstanceOf[js.Any], invocationContext = invocationContext.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnSubscribeSuccessParams]
   }
 }

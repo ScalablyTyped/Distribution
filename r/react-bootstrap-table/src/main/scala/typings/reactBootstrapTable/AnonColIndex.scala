@@ -13,7 +13,6 @@ object AnonColIndex {
   @scala.inline
   def apply(colIndex: Double, rowIndex: Double): AnonColIndex = {
     val __obj = js.Dynamic.literal(colIndex = colIndex.asInstanceOf[js.Any], rowIndex = rowIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonColIndex]
   }
 }

@@ -13,12 +13,10 @@ trait StackHeaderMode extends js.Object
 
 object StackHeaderMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def float: typings.reactNavigationStack.reactNavigationStackStrings.float = "float".asInstanceOf[typings.reactNavigationStack.reactNavigationStackStrings.float]
   @scala.inline
-  def float: typings.reactNavigationStack.reactNavigationStackStrings.float = this.cast("float")
+  def none: typings.reactNavigationStack.reactNavigationStackStrings.none = "none".asInstanceOf[typings.reactNavigationStack.reactNavigationStackStrings.none]
   @scala.inline
-  def none: typings.reactNavigationStack.reactNavigationStackStrings.none = this.cast("none")
-  @scala.inline
-  def screen: typings.reactNavigationStack.reactNavigationStackStrings.screen = this.cast("screen")
+  def screen: typings.reactNavigationStack.reactNavigationStackStrings.screen = "screen".asInstanceOf[typings.reactNavigationStack.reactNavigationStackStrings.screen]
 }
 

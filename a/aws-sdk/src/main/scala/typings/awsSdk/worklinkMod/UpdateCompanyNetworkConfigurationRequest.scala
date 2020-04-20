@@ -28,7 +28,6 @@ object UpdateCompanyNetworkConfigurationRequest {
   @scala.inline
   def apply(FleetArn: FleetArn, SecurityGroupIds: SecurityGroupIds, SubnetIds: SubnetIds, VpcId: VpcId): UpdateCompanyNetworkConfigurationRequest = {
     val __obj = js.Dynamic.literal(FleetArn = FleetArn.asInstanceOf[js.Any], SecurityGroupIds = SecurityGroupIds.asInstanceOf[js.Any], SubnetIds = SubnetIds.asInstanceOf[js.Any], VpcId = VpcId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateCompanyNetworkConfigurationRequest]
   }
 }

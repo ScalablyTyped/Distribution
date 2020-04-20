@@ -20,7 +20,6 @@ object IInkRecognizerContainer {
     setDefaultRecognizer: InkRecognizer => Unit
   ): IInkRecognizerContainer = {
     val __obj = js.Dynamic.literal(getRecognizers = js.Any.fromFunction0(getRecognizers), recognizeAsync = js.Any.fromFunction2(recognizeAsync), setDefaultRecognizer = js.Any.fromFunction1(setDefaultRecognizer))
-  
     __obj.asInstanceOf[IInkRecognizerContainer]
   }
 }

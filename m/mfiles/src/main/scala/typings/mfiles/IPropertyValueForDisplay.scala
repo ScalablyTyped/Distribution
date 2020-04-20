@@ -31,7 +31,6 @@ object IPropertyValueForDisplay {
     ReadOnly: Boolean
   ): IPropertyValueForDisplay = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), ContentType = ContentType.asInstanceOf[js.Any], DataType = DataType.asInstanceOf[js.Any], DisplayValue = DisplayValue.asInstanceOf[js.Any], PropertyDef = PropertyDef.asInstanceOf[js.Any], PropertyDefName = PropertyDefName.asInstanceOf[js.Any], PropertyValue = PropertyValue.asInstanceOf[js.Any], ReadOnly = ReadOnly.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPropertyValueForDisplay]
   }
 }

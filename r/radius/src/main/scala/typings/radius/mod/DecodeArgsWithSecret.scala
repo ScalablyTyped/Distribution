@@ -16,7 +16,6 @@ object DecodeArgsWithSecret {
   @scala.inline
   def apply(packet: Buffer, secret: String): DecodeArgsWithSecret = {
     val __obj = js.Dynamic.literal(packet = packet.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DecodeArgsWithSecret]
   }
 }

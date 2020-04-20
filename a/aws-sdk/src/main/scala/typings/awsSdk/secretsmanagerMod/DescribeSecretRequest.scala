@@ -16,7 +16,6 @@ object DescribeSecretRequest {
   @scala.inline
   def apply(SecretId: SecretIdType): DescribeSecretRequest = {
     val __obj = js.Dynamic.literal(SecretId = SecretId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeSecretRequest]
   }
 }

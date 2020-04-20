@@ -12,7 +12,6 @@ object AnonAddons {
   @scala.inline
   def apply(selectedPanel: String): AnonAddons = {
     val __obj = js.Dynamic.literal(selectedPanel = selectedPanel.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAddons]
   }
 }

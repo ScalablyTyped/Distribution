@@ -14,10 +14,8 @@ trait WdUpdateStyleListBehavior extends js.Object
 
 object WdUpdateStyleListBehavior {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdListBehaviorAddBulletsNumbering: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdListBehaviorAddBulletsNumbering: `1` = this.cast(1)
-  @scala.inline
-  def wdListBehaviorKeepPreviousPattern: `0` = this.cast(0)
+  def wdListBehaviorKeepPreviousPattern: `0` = 0.asInstanceOf[`0`]
 }
 

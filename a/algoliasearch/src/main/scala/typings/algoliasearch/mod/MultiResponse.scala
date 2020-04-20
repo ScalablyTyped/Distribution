@@ -12,7 +12,6 @@ object MultiResponse {
   @scala.inline
   def apply[T](results: js.Array[Response[T]]): MultiResponse[T] = {
     val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MultiResponse[T]]
   }
 }

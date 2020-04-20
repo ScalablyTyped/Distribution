@@ -15,7 +15,6 @@ object PickKeyboardEventkeykeyCo {
   @scala.inline
   def apply(key: String, keyCode: Double, which: Double): PickKeyboardEventkeykeyCo = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickKeyboardEventkeykeyCo]
   }
 }

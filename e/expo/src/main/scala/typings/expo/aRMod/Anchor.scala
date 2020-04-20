@@ -1,5 +1,6 @@
 package typings.expo.aRMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.expo.AnonLength
 import typings.expo.AnonName
 import typings.expo.aRMod.AnchorType.Face
@@ -45,7 +46,7 @@ object Anchor {
     `type`: AnchorType with Face,
     blendShapes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ shape in expo.expo/build/AR.BlendShape ]:? number}
-    */ typings.expo.expoStrings.FaceAnchor with js.Any = null,
+    */ typings.expo.expoStrings.FaceAnchor with TopLevel[js.Any] = null,
     geometry: FaceGeometry = null
   ): Anchor = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], isTracked = isTracked.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any])

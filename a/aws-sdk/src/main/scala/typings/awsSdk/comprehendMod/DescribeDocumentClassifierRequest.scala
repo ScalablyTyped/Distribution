@@ -16,7 +16,6 @@ object DescribeDocumentClassifierRequest {
   @scala.inline
   def apply(DocumentClassifierArn: DocumentClassifierArn): DescribeDocumentClassifierRequest = {
     val __obj = js.Dynamic.literal(DocumentClassifierArn = DocumentClassifierArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeDocumentClassifierRequest]
   }
 }

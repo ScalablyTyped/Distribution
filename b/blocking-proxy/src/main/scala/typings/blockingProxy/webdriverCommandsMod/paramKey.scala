@@ -14,14 +14,12 @@ trait paramKey extends js.Object
 
 object paramKey {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def elementId: typings.blockingProxy.blockingProxyStrings.elementId = "elementId".asInstanceOf[typings.blockingProxy.blockingProxyStrings.elementId]
   @scala.inline
-  def elementId: typings.blockingProxy.blockingProxyStrings.elementId = this.cast("elementId")
+  def name: typings.blockingProxy.blockingProxyStrings.name = "name".asInstanceOf[typings.blockingProxy.blockingProxyStrings.name]
   @scala.inline
-  def name: typings.blockingProxy.blockingProxyStrings.name = this.cast("name")
+  def propertyName: typings.blockingProxy.blockingProxyStrings.propertyName = "propertyName".asInstanceOf[typings.blockingProxy.blockingProxyStrings.propertyName]
   @scala.inline
-  def propertyName: typings.blockingProxy.blockingProxyStrings.propertyName = this.cast("propertyName")
-  @scala.inline
-  def sessionId: typings.blockingProxy.blockingProxyStrings.sessionId = this.cast("sessionId")
+  def sessionId: typings.blockingProxy.blockingProxyStrings.sessionId = "sessionId".asInstanceOf[typings.blockingProxy.blockingProxyStrings.sessionId]
 }
 

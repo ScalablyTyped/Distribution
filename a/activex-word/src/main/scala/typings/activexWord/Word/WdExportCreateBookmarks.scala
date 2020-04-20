@@ -16,12 +16,10 @@ trait WdExportCreateBookmarks extends js.Object
 
 object WdExportCreateBookmarks {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdExportCreateHeadingBookmarks: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdExportCreateHeadingBookmarks: `1` = this.cast(1)
+  def wdExportCreateNoBookmarks: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdExportCreateNoBookmarks: `0` = this.cast(0)
-  @scala.inline
-  def wdExportCreateWordBookmarks: `2` = this.cast(2)
+  def wdExportCreateWordBookmarks: `2` = 2.asInstanceOf[`2`]
 }
 

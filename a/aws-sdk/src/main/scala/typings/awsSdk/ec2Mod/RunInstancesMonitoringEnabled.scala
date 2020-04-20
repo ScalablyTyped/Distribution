@@ -16,7 +16,6 @@ object RunInstancesMonitoringEnabled {
   @scala.inline
   def apply(Enabled: Boolean): RunInstancesMonitoringEnabled = {
     val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RunInstancesMonitoringEnabled]
   }
 }

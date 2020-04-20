@@ -14,7 +14,6 @@ object PartialSig {
   @scala.inline
   def apply(pubkey: Buffer, signature: Buffer): PartialSig = {
     val __obj = js.Dynamic.literal(pubkey = pubkey.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PartialSig]
   }
 }

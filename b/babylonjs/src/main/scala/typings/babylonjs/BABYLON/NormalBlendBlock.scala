@@ -15,14 +15,14 @@ class NormalBlendBlock protected () extends NodeMaterialBlock {
   /**
     * Gets the first input component
     */
-  def normalMap0(): NodeMaterialConnectionPoint = js.native
+  def normalMap0: NodeMaterialConnectionPoint = js.native
   /**
     * Gets the second input component
     */
-  def normalMap1(): NodeMaterialConnectionPoint = js.native
+  def normalMap1: NodeMaterialConnectionPoint = js.native
   /**
     * Gets the output component
     */
-  def output(): NodeMaterialConnectionPoint = js.native
+  def output: NodeMaterialConnectionPoint = js.native
 }
 

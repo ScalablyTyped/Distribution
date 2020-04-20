@@ -20,7 +20,6 @@ object DeleteAggregationAuthorizationRequest {
   @scala.inline
   def apply(AuthorizedAccountId: AccountId, AuthorizedAwsRegion: AwsRegion): DeleteAggregationAuthorizationRequest = {
     val __obj = js.Dynamic.literal(AuthorizedAccountId = AuthorizedAccountId.asInstanceOf[js.Any], AuthorizedAwsRegion = AuthorizedAwsRegion.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteAggregationAuthorizationRequest]
   }
 }

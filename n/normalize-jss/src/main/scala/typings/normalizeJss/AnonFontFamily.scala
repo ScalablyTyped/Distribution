@@ -15,7 +15,6 @@ object AnonFontFamily {
   @scala.inline
   def apply(fontFamily: String, fontSize: String, lineHeight: String, margin: Double): AnonFontFamily = {
     val __obj = js.Dynamic.literal(fontFamily = fontFamily.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any], margin = margin.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFontFamily]
   }
 }

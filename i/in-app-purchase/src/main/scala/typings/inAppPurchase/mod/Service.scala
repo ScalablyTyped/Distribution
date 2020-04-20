@@ -17,20 +17,18 @@ trait Service extends js.Object
 
 object Service {
   @scala.inline
-  def amazon: typings.inAppPurchase.inAppPurchaseStrings.amazon = this.cast("amazon")
+  def amazon: typings.inAppPurchase.inAppPurchaseStrings.amazon = "amazon".asInstanceOf[typings.inAppPurchase.inAppPurchaseStrings.amazon]
   @scala.inline
-  def apple: typings.inAppPurchase.inAppPurchaseStrings.apple = this.cast("apple")
+  def apple: typings.inAppPurchase.inAppPurchaseStrings.apple = "apple".asInstanceOf[typings.inAppPurchase.inAppPurchaseStrings.apple]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def facebook: typings.inAppPurchase.inAppPurchaseStrings.facebook = "facebook".asInstanceOf[typings.inAppPurchase.inAppPurchaseStrings.facebook]
   @scala.inline
-  def facebook: typings.inAppPurchase.inAppPurchaseStrings.facebook = this.cast("facebook")
+  def google: typings.inAppPurchase.inAppPurchaseStrings.google = "google".asInstanceOf[typings.inAppPurchase.inAppPurchaseStrings.google]
   @scala.inline
-  def google: typings.inAppPurchase.inAppPurchaseStrings.google = this.cast("google")
+  def roku: typings.inAppPurchase.inAppPurchaseStrings.roku = "roku".asInstanceOf[typings.inAppPurchase.inAppPurchaseStrings.roku]
   @scala.inline
-  def roku: typings.inAppPurchase.inAppPurchaseStrings.roku = this.cast("roku")
+  def unity: typings.inAppPurchase.inAppPurchaseStrings.unity = "unity".asInstanceOf[typings.inAppPurchase.inAppPurchaseStrings.unity]
   @scala.inline
-  def unity: typings.inAppPurchase.inAppPurchaseStrings.unity = this.cast("unity")
-  @scala.inline
-  def windows: typings.inAppPurchase.inAppPurchaseStrings.windows = this.cast("windows")
+  def windows: typings.inAppPurchase.inAppPurchaseStrings.windows = "windows".asInstanceOf[typings.inAppPurchase.inAppPurchaseStrings.windows]
 }
 

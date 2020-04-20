@@ -16,18 +16,16 @@ trait PerimeterShape extends js.Object
 
 object PerimeterShape {
   @scala.inline
-  def Circle: typings.jsplumb.jsplumbStrings.Circle = this.cast("Circle")
+  def Circle: typings.jsplumb.jsplumbStrings.Circle = "Circle".asInstanceOf[typings.jsplumb.jsplumbStrings.Circle]
   @scala.inline
-  def Diamond: typings.jsplumb.jsplumbStrings.Diamond = this.cast("Diamond")
+  def Diamond: typings.jsplumb.jsplumbStrings.Diamond = "Diamond".asInstanceOf[typings.jsplumb.jsplumbStrings.Diamond]
   @scala.inline
-  def Ellipse: typings.jsplumb.jsplumbStrings.Ellipse = this.cast("Ellipse")
+  def Ellipse: typings.jsplumb.jsplumbStrings.Ellipse = "Ellipse".asInstanceOf[typings.jsplumb.jsplumbStrings.Ellipse]
   @scala.inline
-  def Rectangle: typings.jsplumb.jsplumbStrings.Rectangle = this.cast("Rectangle")
+  def Rectangle: typings.jsplumb.jsplumbStrings.Rectangle = "Rectangle".asInstanceOf[typings.jsplumb.jsplumbStrings.Rectangle]
   @scala.inline
-  def Square: typings.jsplumb.jsplumbStrings.Square = this.cast("Square")
+  def Square: typings.jsplumb.jsplumbStrings.Square = "Square".asInstanceOf[typings.jsplumb.jsplumbStrings.Square]
   @scala.inline
-  def Triangle: typings.jsplumb.jsplumbStrings.Triangle = this.cast("Triangle")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Triangle: typings.jsplumb.jsplumbStrings.Triangle = "Triangle".asInstanceOf[typings.jsplumb.jsplumbStrings.Triangle]
 }
 

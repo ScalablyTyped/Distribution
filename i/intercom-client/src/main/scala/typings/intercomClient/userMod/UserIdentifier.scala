@@ -15,19 +15,16 @@ object UserIdentifier {
   @scala.inline
   def AnonId(id: String): UserIdentifier = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UserIdentifier]
   }
   @scala.inline
   def AnonUserid(user_id: String): UserIdentifier = {
     val __obj = js.Dynamic.literal(user_id = user_id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UserIdentifier]
   }
   @scala.inline
   def AnonEmail(email: String): UserIdentifier = {
     val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UserIdentifier]
   }
 }

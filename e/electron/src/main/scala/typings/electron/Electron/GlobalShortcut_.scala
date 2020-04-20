@@ -71,7 +71,6 @@ object GlobalShortcut_ {
     unregisterAll: () => Unit
   ): GlobalShortcut_ = {
     val __obj = js.Dynamic.literal(isRegistered = js.Any.fromFunction1(isRegistered), register = js.Any.fromFunction2(register), registerAll = js.Any.fromFunction2(registerAll), unregister = js.Any.fromFunction1(unregister), unregisterAll = js.Any.fromFunction0(unregisterAll))
-  
     __obj.asInstanceOf[GlobalShortcut_]
   }
 }

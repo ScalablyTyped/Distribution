@@ -13,7 +13,6 @@ object DataProtocolClientCapabilities {
   @scala.inline
   def apply(hostName: String, hostVersion: String): DataProtocolClientCapabilities = {
     val __obj = js.Dynamic.literal(hostName = hostName.asInstanceOf[js.Any], hostVersion = hostVersion.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DataProtocolClientCapabilities]
   }
 }

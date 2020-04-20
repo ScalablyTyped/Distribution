@@ -19,20 +19,18 @@ trait ComplianceState extends js.Object
 
 object ComplianceState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def compliant: typings.microsoftGraph.microsoftGraphStrings.compliant = "compliant".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.compliant]
   @scala.inline
-  def compliant: typings.microsoftGraph.microsoftGraphStrings.compliant = this.cast("compliant")
+  def configManager: typings.microsoftGraph.microsoftGraphStrings.configManager = "configManager".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.configManager]
   @scala.inline
-  def configManager: typings.microsoftGraph.microsoftGraphStrings.configManager = this.cast("configManager")
+  def conflict: typings.microsoftGraph.microsoftGraphStrings.conflict = "conflict".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.conflict]
   @scala.inline
-  def conflict: typings.microsoftGraph.microsoftGraphStrings.conflict = this.cast("conflict")
+  def error: typings.microsoftGraph.microsoftGraphStrings.error = "error".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.error]
   @scala.inline
-  def error: typings.microsoftGraph.microsoftGraphStrings.error = this.cast("error")
+  def inGracePeriod: typings.microsoftGraph.microsoftGraphStrings.inGracePeriod = "inGracePeriod".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.inGracePeriod]
   @scala.inline
-  def inGracePeriod: typings.microsoftGraph.microsoftGraphStrings.inGracePeriod = this.cast("inGracePeriod")
+  def noncompliant: noncompliant_ = "noncompliant".asInstanceOf[noncompliant_]
   @scala.inline
-  def noncompliant: noncompliant_ = this.cast("noncompliant")
-  @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
+  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
 }
 

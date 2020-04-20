@@ -20,7 +20,6 @@ object DeleteTagsRequest {
   @scala.inline
   def apply(FileSystemId: FileSystemId, TagKeys: TagKeys): DeleteTagsRequest = {
     val __obj = js.Dynamic.literal(FileSystemId = FileSystemId.asInstanceOf[js.Any], TagKeys = TagKeys.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteTagsRequest]
   }
 }

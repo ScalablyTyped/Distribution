@@ -14,7 +14,6 @@ object Entry {
   @scala.inline
   def apply[K, V](e: Double, k: K, v: V): Entry[K, V] = {
     val __obj = js.Dynamic.literal(e = e.asInstanceOf[js.Any], k = k.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Entry[K, V]]
   }
 }

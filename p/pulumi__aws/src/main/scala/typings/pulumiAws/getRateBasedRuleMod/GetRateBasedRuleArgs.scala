@@ -16,7 +16,6 @@ object GetRateBasedRuleArgs {
   @scala.inline
   def apply(name: String): GetRateBasedRuleArgs = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetRateBasedRuleArgs]
   }
 }

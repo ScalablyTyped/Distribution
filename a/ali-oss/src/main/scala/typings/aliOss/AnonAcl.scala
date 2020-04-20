@@ -14,7 +14,6 @@ object AnonAcl {
   @scala.inline
   def apply(acl: String, res: NormalSuccessResponse): AnonAcl = {
     val __obj = js.Dynamic.literal(acl = acl.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAcl]
   }
 }

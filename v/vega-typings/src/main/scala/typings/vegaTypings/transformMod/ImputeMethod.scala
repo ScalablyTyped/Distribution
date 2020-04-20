@@ -15,16 +15,14 @@ trait ImputeMethod extends js.Object
 
 object ImputeMethod {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def max: typings.vegaTypings.vegaTypingsStrings.max = "max".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.max]
   @scala.inline
-  def max: typings.vegaTypings.vegaTypingsStrings.max = this.cast("max")
+  def mean: typings.vegaTypings.vegaTypingsStrings.mean = "mean".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.mean]
   @scala.inline
-  def mean: typings.vegaTypings.vegaTypingsStrings.mean = this.cast("mean")
+  def median: typings.vegaTypings.vegaTypingsStrings.median = "median".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.median]
   @scala.inline
-  def median: typings.vegaTypings.vegaTypingsStrings.median = this.cast("median")
+  def min: typings.vegaTypings.vegaTypingsStrings.min = "min".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.min]
   @scala.inline
-  def min: typings.vegaTypings.vegaTypingsStrings.min = this.cast("min")
-  @scala.inline
-  def value: typings.vegaTypings.vegaTypingsStrings.value = this.cast("value")
+  def value: typings.vegaTypings.vegaTypingsStrings.value = "value".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.value]
 }
 

@@ -12,11 +12,9 @@ trait TypeString extends js.Object
 
 object TypeString {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def css: typings.htmlWebpackTagsPlugin.htmlWebpackTagsPluginStrings.css = this.cast("css")
+  def css: typings.htmlWebpackTagsPlugin.htmlWebpackTagsPluginStrings.css = "css".asInstanceOf[typings.htmlWebpackTagsPlugin.htmlWebpackTagsPluginStrings.css]
   @JSName("js")
   @scala.inline
-  def js_ : typings.htmlWebpackTagsPlugin.htmlWebpackTagsPluginStrings.js_ = this.cast("js")
+  def js_ : typings.htmlWebpackTagsPlugin.htmlWebpackTagsPluginStrings.js_ = "js".asInstanceOf[typings.htmlWebpackTagsPlugin.htmlWebpackTagsPluginStrings.js_]
 }
 

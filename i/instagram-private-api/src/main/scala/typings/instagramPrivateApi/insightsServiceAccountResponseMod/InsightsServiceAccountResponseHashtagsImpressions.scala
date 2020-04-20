@@ -16,7 +16,6 @@ object InsightsServiceAccountResponseHashtagsImpressions {
     organic: InsightsServiceAccountResponseOrganic
   ): InsightsServiceAccountResponseHashtagsImpressions = {
     val __obj = js.Dynamic.literal(account_hashtags = account_hashtags.asInstanceOf[js.Any], organic = organic.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InsightsServiceAccountResponseHashtagsImpressions]
   }
 }

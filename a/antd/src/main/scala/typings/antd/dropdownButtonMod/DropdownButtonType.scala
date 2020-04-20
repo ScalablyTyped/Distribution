@@ -13,12 +13,10 @@ trait DropdownButtonType extends js.Object
 
 object DropdownButtonType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dashed: typings.antd.antdStrings.dashed = "dashed".asInstanceOf[typings.antd.antdStrings.dashed]
   @scala.inline
-  def dashed: typings.antd.antdStrings.dashed = this.cast("dashed")
+  def ghost: typings.antd.antdStrings.ghost = "ghost".asInstanceOf[typings.antd.antdStrings.ghost]
   @scala.inline
-  def ghost: typings.antd.antdStrings.ghost = this.cast("ghost")
-  @scala.inline
-  def primary: typings.antd.antdStrings.primary = this.cast("primary")
+  def primary: typings.antd.antdStrings.primary = "primary".asInstanceOf[typings.antd.antdStrings.primary]
 }
 

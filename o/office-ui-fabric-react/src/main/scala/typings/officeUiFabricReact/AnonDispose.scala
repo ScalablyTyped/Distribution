@@ -13,7 +13,6 @@ object AnonDispose {
   @scala.inline
   def apply(dispose: () => Unit, key: String): AnonDispose = {
     val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), key = key.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDispose]
   }
 }

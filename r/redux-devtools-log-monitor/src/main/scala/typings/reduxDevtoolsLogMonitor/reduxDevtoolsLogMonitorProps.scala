@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reduxDevtoolsLogMonitorProps {
   @scala.inline
-  def ReduxDevtoolsLogMonitorProps: ILogMonitorProps.type = typings.reduxDevtoolsLogMonitor.mod.ILogMonitorProps
+  def ReduxDevtoolsLogMonitorProps: ILogMonitorProps.type = ILogMonitorProps
   type ReduxDevtoolsLogMonitorProps = ILogMonitorProps
 }
 

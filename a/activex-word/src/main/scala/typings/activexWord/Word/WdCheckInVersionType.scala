@@ -16,12 +16,10 @@ trait WdCheckInVersionType extends js.Object
 
 object WdCheckInVersionType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdCheckInMajorVersion: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdCheckInMajorVersion: `1` = this.cast(1)
+  def wdCheckInMinorVersion: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdCheckInMinorVersion: `0` = this.cast(0)
-  @scala.inline
-  def wdCheckInOverwriteVersion: `2` = this.cast(2)
+  def wdCheckInOverwriteVersion: `2` = 2.asInstanceOf[`2`]
 }
 

@@ -15,14 +15,12 @@ trait IosNotificationAlertType extends js.Object
 
 object IosNotificationAlertType {
   @scala.inline
-  def banner: typings.microsoftGraph.microsoftGraphStrings.banner = this.cast("banner")
+  def banner: typings.microsoftGraph.microsoftGraphStrings.banner = "banner".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.banner]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def deviceDefault: typings.microsoftGraph.microsoftGraphStrings.deviceDefault = "deviceDefault".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deviceDefault]
   @scala.inline
-  def deviceDefault: typings.microsoftGraph.microsoftGraphStrings.deviceDefault = this.cast("deviceDefault")
+  def modal: typings.microsoftGraph.microsoftGraphStrings.modal = "modal".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.modal]
   @scala.inline
-  def modal: typings.microsoftGraph.microsoftGraphStrings.modal = this.cast("modal")
-  @scala.inline
-  def none: none_ = this.cast("none")
+  def none: none_ = "none".asInstanceOf[none_]
 }
 

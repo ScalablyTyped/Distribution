@@ -13,7 +13,6 @@ object AnonData {
   @scala.inline
   def apply[DataType, PageContextType](data: DataType, pageContext: PageContextType): AnonData[DataType, PageContextType] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], pageContext = pageContext.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonData[DataType, PageContextType]]
   }
 }

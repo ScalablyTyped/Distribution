@@ -18,21 +18,21 @@ class CordovaConfig protected () extends js.Object {
   val configXmlPath: String = js.native
   val packageJsonPath: String = js.native
   var saving: Boolean = js.native
-  def doc(): ElementTree = js.native
+  def doc: ElementTree = js.native
   def ensurePlatformImages(platform: String, resourcesPlatform: ResourcesPlatform): Unit = js.native
   def ensureSplashScreenPreferences(): Unit = js.native
   def getBundleId(): js.UndefOr[String] = js.native
   def getConfiguredPlatforms(): js.Array[ConfiguredPlatform] = js.native
   def getPreference(prefName: String): js.UndefOr[String] = js.native
   def getProjectInfo(): AnonVersion = js.native
-  def pkg(): CordovaPackageJson = js.native
+  def pkg: CordovaPackageJson = js.native
   /* protected */ def reload(): js.Promise[Unit] = js.native
   /**
     * Set config.xml src url back to its original url
     */
   def resetContentSrc(): Unit = js.native
   def save(): js.Promise[Unit] = js.native
-  def sessionid(): String = js.native
+  def sessionid: String = js.native
   def setBundleId(bundleId: String): Unit = js.native
   def setName(name: String): Unit = js.native
   /* protected */ def write(): String = js.native

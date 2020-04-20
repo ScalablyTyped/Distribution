@@ -25,7 +25,6 @@ object AnonAction {
     start: stringOrDate
   ): AnonAction = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], slots = slots.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAction]
   }
 }

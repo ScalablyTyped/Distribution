@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 
 trait reactSvgPanZoomProps {
   @scala.inline
-  def ReactSVGPanZoomProps: Props.type = typings.reactSvgPanZoom.mod.Props
+  def ReactSVGPanZoomProps: Props.type = Props
   type ReactSVGPanZoomProps = Props
   @scala.inline
-  def UncontrolledReactSVGPanZoomProps: UncontrolledProps.type = typings.reactSvgPanZoom.mod.UncontrolledProps
+  def UncontrolledReactSVGPanZoomProps: UncontrolledProps.type = UncontrolledProps
   type UncontrolledReactSVGPanZoomProps = UncontrolledProps
 }
 

@@ -24,7 +24,6 @@ object StructuredFormatting {
     secondary_text: String
   ): StructuredFormatting = {
     val __obj = js.Dynamic.literal(main_text = main_text.asInstanceOf[js.Any], main_text_matched_substrings = main_text_matched_substrings.asInstanceOf[js.Any], secondary_text = secondary_text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StructuredFormatting]
   }
 }

@@ -17,20 +17,18 @@ trait brandType extends js.Object
 
 object brandType {
   @scala.inline
-  def `American Express`: typings.stripeV3.stripeV3Strings.`American Express` = this.cast("American Express")
+  def `American Express`: typings.stripeV3.stripeV3Strings.`American Express` = ("American Express").asInstanceOf[typings.stripeV3.stripeV3Strings.`American Express`]
   @scala.inline
-  def `Diners Club`: typings.stripeV3.stripeV3Strings.`Diners Club` = this.cast("Diners Club")
+  def `Diners Club`: typings.stripeV3.stripeV3Strings.`Diners Club` = ("Diners Club").asInstanceOf[typings.stripeV3.stripeV3Strings.`Diners Club`]
   @scala.inline
-  def Discover: typings.stripeV3.stripeV3Strings.Discover = this.cast("Discover")
+  def Discover: typings.stripeV3.stripeV3Strings.Discover = "Discover".asInstanceOf[typings.stripeV3.stripeV3Strings.Discover]
   @scala.inline
-  def JCB: typings.stripeV3.stripeV3Strings.JCB = this.cast("JCB")
+  def JCB: typings.stripeV3.stripeV3Strings.JCB = "JCB".asInstanceOf[typings.stripeV3.stripeV3Strings.JCB]
   @scala.inline
-  def MasterCard: typings.stripeV3.stripeV3Strings.MasterCard = this.cast("MasterCard")
+  def MasterCard: typings.stripeV3.stripeV3Strings.MasterCard = "MasterCard".asInstanceOf[typings.stripeV3.stripeV3Strings.MasterCard]
   @scala.inline
-  def Unknown: typings.stripeV3.stripeV3Strings.Unknown = this.cast("Unknown")
+  def Unknown: typings.stripeV3.stripeV3Strings.Unknown = "Unknown".asInstanceOf[typings.stripeV3.stripeV3Strings.Unknown]
   @scala.inline
-  def Visa: typings.stripeV3.stripeV3Strings.Visa = this.cast("Visa")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Visa: typings.stripeV3.stripeV3Strings.Visa = "Visa".asInstanceOf[typings.stripeV3.stripeV3Strings.Visa]
 }
 

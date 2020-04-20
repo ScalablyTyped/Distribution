@@ -14,14 +14,12 @@ trait IssuingCardReplacementReason extends js.Object
 
 object IssuingCardReplacementReason {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def damage: typings.stripe.stripeStrings.damage = "damage".asInstanceOf[typings.stripe.stripeStrings.damage]
   @scala.inline
-  def damage: typings.stripe.stripeStrings.damage = this.cast("damage")
+  def expiration: typings.stripe.stripeStrings.expiration = "expiration".asInstanceOf[typings.stripe.stripeStrings.expiration]
   @scala.inline
-  def expiration: typings.stripe.stripeStrings.expiration = this.cast("expiration")
+  def loss: typings.stripe.stripeStrings.loss = "loss".asInstanceOf[typings.stripe.stripeStrings.loss]
   @scala.inline
-  def loss: typings.stripe.stripeStrings.loss = this.cast("loss")
-  @scala.inline
-  def theft: typings.stripe.stripeStrings.theft = this.cast("theft")
+  def theft: typings.stripe.stripeStrings.theft = "theft".asInstanceOf[typings.stripe.stripeStrings.theft]
 }
 

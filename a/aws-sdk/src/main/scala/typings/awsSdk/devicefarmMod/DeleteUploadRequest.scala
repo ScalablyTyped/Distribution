@@ -16,7 +16,6 @@ object DeleteUploadRequest {
   @scala.inline
   def apply(arn: AmazonResourceName): DeleteUploadRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteUploadRequest]
   }
 }

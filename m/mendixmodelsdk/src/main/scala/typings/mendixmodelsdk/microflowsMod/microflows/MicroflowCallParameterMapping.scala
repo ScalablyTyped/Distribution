@@ -27,19 +27,19 @@ class MicroflowCallParameterMapping protected () extends Element {
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
-  def argument(): String = js.native
+  def argument: String = js.native
   def argument(newValue: String): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 7.9.0: introduced
     */
-  def argumentModel(): Expression = js.native
+  def argumentModel: Expression = js.native
   def argumentModel(newValue: Expression): js.Any = js.native
-  def containerAsMicroflowCall(): MicroflowCall = js.native
-  def parameter(): IMicroflowParameter = js.native
+  def containerAsMicroflowCall: MicroflowCall = js.native
+  def parameter: IMicroflowParameter = js.native
   def parameter(newValue: IMicroflowParameter): js.Any = js.native
-  def parameterQualifiedName(): String = js.native
+  def parameterQualifiedName: String = js.native
 }
 
 /* static members */

@@ -12,7 +12,6 @@ object Humanize {
   @scala.inline
   def apply(capitalize: Boolean): Humanize = {
     val __obj = js.Dynamic.literal(capitalize = capitalize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Humanize]
   }
 }

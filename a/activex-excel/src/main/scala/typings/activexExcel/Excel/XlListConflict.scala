@@ -18,14 +18,12 @@ trait XlListConflict extends js.Object
 
 object XlListConflict {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlListConflictDialog: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def xlListConflictDialog: `0` = this.cast(0)
+  def xlListConflictDiscardAllConflicts: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlListConflictDiscardAllConflicts: `2` = this.cast(2)
+  def xlListConflictError: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlListConflictError: `3` = this.cast(3)
-  @scala.inline
-  def xlListConflictRetryAllConflicts: `1` = this.cast(1)
+  def xlListConflictRetryAllConflicts: `1` = 1.asInstanceOf[`1`]
 }
 

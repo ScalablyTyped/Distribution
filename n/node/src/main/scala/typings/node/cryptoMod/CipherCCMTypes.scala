@@ -14,14 +14,12 @@ trait CipherCCMTypes extends js.Object
 
 object CipherCCMTypes {
   @scala.inline
-  def `aes-128-ccm`: typings.node.nodeStrings.`aes-128-ccm` = this.cast("aes-128-ccm")
+  def `aes-128-ccm`: typings.node.nodeStrings.`aes-128-ccm` = "aes-128-ccm".asInstanceOf[typings.node.nodeStrings.`aes-128-ccm`]
   @scala.inline
-  def `aes-192-ccm`: typings.node.nodeStrings.`aes-192-ccm` = this.cast("aes-192-ccm")
+  def `aes-192-ccm`: typings.node.nodeStrings.`aes-192-ccm` = "aes-192-ccm".asInstanceOf[typings.node.nodeStrings.`aes-192-ccm`]
   @scala.inline
-  def `aes-256-ccm`: typings.node.nodeStrings.`aes-256-ccm` = this.cast("aes-256-ccm")
+  def `aes-256-ccm`: typings.node.nodeStrings.`aes-256-ccm` = "aes-256-ccm".asInstanceOf[typings.node.nodeStrings.`aes-256-ccm`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def `chacha20-poly1305`: typings.node.nodeStrings.`chacha20-poly1305` = this.cast("chacha20-poly1305")
+  def `chacha20-poly1305`: typings.node.nodeStrings.`chacha20-poly1305` = "chacha20-poly1305".asInstanceOf[typings.node.nodeStrings.`chacha20-poly1305`]
 }
 

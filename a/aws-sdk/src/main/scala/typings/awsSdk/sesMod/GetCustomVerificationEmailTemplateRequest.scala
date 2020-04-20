@@ -16,7 +16,6 @@ object GetCustomVerificationEmailTemplateRequest {
   @scala.inline
   def apply(TemplateName: TemplateName): GetCustomVerificationEmailTemplateRequest = {
     val __obj = js.Dynamic.literal(TemplateName = TemplateName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetCustomVerificationEmailTemplateRequest]
   }
 }

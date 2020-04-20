@@ -13,7 +13,6 @@ object Counter {
   @scala.inline
   def apply(increment: Double => Unit): Counter = {
     val __obj = js.Dynamic.literal(increment = js.Any.fromFunction1(increment))
-  
     __obj.asInstanceOf[Counter]
   }
 }

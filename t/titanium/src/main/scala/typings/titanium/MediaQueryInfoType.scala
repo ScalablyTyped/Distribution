@@ -15,12 +15,12 @@ trait MediaQueryInfoType extends js.Object {
   /**
   	 * The value for the given predicate. See the descriptions in <MediaQueryType> for information about which properties require which values.
   	 */
-  var value: js.UndefOr[Double | String | Boolean] = js.undefined
+  var value: js.UndefOr[Double | java.lang.String | Boolean] = js.undefined
 }
 
 object MediaQueryInfoType {
   @scala.inline
-  def apply(exact: js.UndefOr[Boolean] = js.undefined, value: Double | String | Boolean = null): MediaQueryInfoType = {
+  def apply(exact: js.UndefOr[Boolean] = js.undefined, value: Double | java.lang.String | Boolean = null): MediaQueryInfoType = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

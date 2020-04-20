@@ -12,10 +12,8 @@ trait Means extends js.Object
 
 object Means {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def 로: typings.josa.josaStrings.로 = "\uB85C".asInstanceOf[typings.josa.josaStrings.로]
   @scala.inline
-  def 로: typings.josa.josaStrings.로 = this.cast("\uB85C")
-  @scala.inline
-  def 으로: typings.josa.josaStrings.으로 = this.cast("\uC73C\uB85C")
+  def 으로: typings.josa.josaStrings.으로 = "\uC73C\uB85C".asInstanceOf[typings.josa.josaStrings.으로]
 }
 

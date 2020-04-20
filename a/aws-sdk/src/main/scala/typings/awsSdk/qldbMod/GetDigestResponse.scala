@@ -20,7 +20,6 @@ object GetDigestResponse {
   @scala.inline
   def apply(Digest: Digest, DigestTipAddress: ValueHolder): GetDigestResponse = {
     val __obj = js.Dynamic.literal(Digest = Digest.asInstanceOf[js.Any], DigestTipAddress = DigestTipAddress.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDigestResponse]
   }
 }

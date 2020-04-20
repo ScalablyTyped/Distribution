@@ -28,7 +28,6 @@ object InnerProps {
     tabIndex: Double
   ): InnerProps = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick), onMouseMove = js.Any.fromFunction1(onMouseMove), onMouseOver = js.Any.fromFunction1(onMouseOver), tabIndex = tabIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InnerProps]
   }
 }

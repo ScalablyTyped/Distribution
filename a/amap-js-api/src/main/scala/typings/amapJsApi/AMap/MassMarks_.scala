@@ -28,7 +28,7 @@ class MassMarks_[D /* <: Data */] protected () extends Layer {
   /**
     * 获取数据集
     */
-  def getData(): js.Array[(Pick[D, Exclude[String, lnglat]]) with AnonLnglatLngLat] = js.native
+  def getData(): js.Array[(Pick[D, Exclude[/* keyof D */ String, lnglat]]) with AnonLnglatLngLat] = js.native
   /**
     * 获取显示样式
     */

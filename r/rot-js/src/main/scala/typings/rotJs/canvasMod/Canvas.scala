@@ -32,7 +32,6 @@ object Canvas {
     setOptions: DisplayOptions => Unit
   ): Canvas = {
     val __obj = js.Dynamic.literal(_ctx = _ctx.asInstanceOf[js.Any], _normalizedEventToPosition = js.Any.fromFunction2(_normalizedEventToPosition), _options = _options.asInstanceOf[js.Any], _updateSize = js.Any.fromFunction0(_updateSize), clear = js.Any.fromFunction0(clear), computeFontSize = js.Any.fromFunction2(computeFontSize), computeSize = js.Any.fromFunction2(computeSize), draw = js.Any.fromFunction2(draw), eventToPosition = js.Any.fromFunction2(eventToPosition), getContainer = js.Any.fromFunction0(getContainer), schedule = js.Any.fromFunction1(schedule), setOptions = js.Any.fromFunction1(setOptions))
-  
     __obj.asInstanceOf[Canvas]
   }
 }

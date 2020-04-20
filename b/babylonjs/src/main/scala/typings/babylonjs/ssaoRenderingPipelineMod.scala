@@ -88,7 +88,7 @@ object ssaoRenderingPipelineMod extends js.Object {
     /**
       * Gets active scene
       */
-    def scene(): Scene = js.native
+    def scene: Scene = js.native
   }
   
 }

@@ -24,7 +24,6 @@ object Trie {
     keysWithPrefix: String => js.Array[String]
   ): Trie = {
     val __obj = js.Dynamic.literal(addString = js.Any.fromFunction1(addString), addStrings = js.Any.fromFunction1(addStrings), contains = js.Any.fromFunction1(contains), findMatchesOnPath = js.Any.fromFunction1(findMatchesOnPath), findPrefix = js.Any.fromFunction1(findPrefix), keysWithPrefix = js.Any.fromFunction1(keysWithPrefix))
-  
     __obj.asInstanceOf[Trie]
   }
 }

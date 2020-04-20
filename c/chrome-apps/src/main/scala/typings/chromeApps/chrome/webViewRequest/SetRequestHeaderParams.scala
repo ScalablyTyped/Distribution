@@ -15,7 +15,6 @@ object SetRequestHeaderParams {
   @scala.inline
   def apply(name: String, value: String): SetRequestHeaderParams = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetRequestHeaderParams]
   }
 }

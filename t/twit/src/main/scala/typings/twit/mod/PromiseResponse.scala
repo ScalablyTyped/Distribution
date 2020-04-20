@@ -14,7 +14,6 @@ object PromiseResponse {
   @scala.inline
   def apply(data: Response, resp: IncomingMessage): PromiseResponse = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], resp = resp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PromiseResponse]
   }
 }

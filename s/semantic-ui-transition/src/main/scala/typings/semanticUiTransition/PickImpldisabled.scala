@@ -13,7 +13,6 @@ object PickImpldisabled {
   @scala.inline
   def apply(disabled: String): PickImpldisabled = {
     val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpldisabled]
   }
 }

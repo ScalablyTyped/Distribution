@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactMovableProps {
   @scala.inline
-  def ListProps: IProps.type = typings.reactMovable.typesMod.IProps
+  def ListProps: IProps.type = IProps
   type ListProps[Value] = IProps[Value]
 }
 

@@ -15,16 +15,14 @@ trait TriggerTypes extends js.Object
 
 object TriggerTypes {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def click: typings.reactPopperTooltip.reactPopperTooltipStrings.click = "click".asInstanceOf[typings.reactPopperTooltip.reactPopperTooltipStrings.click]
   @scala.inline
-  def click: typings.reactPopperTooltip.reactPopperTooltipStrings.click = this.cast("click")
+  def focus: typings.reactPopperTooltip.reactPopperTooltipStrings.focus = "focus".asInstanceOf[typings.reactPopperTooltip.reactPopperTooltipStrings.focus]
   @scala.inline
-  def focus: typings.reactPopperTooltip.reactPopperTooltipStrings.focus = this.cast("focus")
+  def hover: typings.reactPopperTooltip.reactPopperTooltipStrings.hover = "hover".asInstanceOf[typings.reactPopperTooltip.reactPopperTooltipStrings.hover]
   @scala.inline
-  def hover: typings.reactPopperTooltip.reactPopperTooltipStrings.hover = this.cast("hover")
+  def none: typings.reactPopperTooltip.reactPopperTooltipStrings.none = "none".asInstanceOf[typings.reactPopperTooltip.reactPopperTooltipStrings.none]
   @scala.inline
-  def none: typings.reactPopperTooltip.reactPopperTooltipStrings.none = this.cast("none")
-  @scala.inline
-  def `right-click`: typings.reactPopperTooltip.reactPopperTooltipStrings.`right-click` = this.cast("right-click")
+  def `right-click`: typings.reactPopperTooltip.reactPopperTooltipStrings.`right-click` = "right-click".asInstanceOf[typings.reactPopperTooltip.reactPopperTooltipStrings.`right-click`]
 }
 

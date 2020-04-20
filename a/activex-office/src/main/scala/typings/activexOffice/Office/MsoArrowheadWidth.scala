@@ -18,14 +18,12 @@ trait MsoArrowheadWidth extends js.Object
 
 object MsoArrowheadWidth {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoArrowheadNarrow: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoArrowheadNarrow: `1` = this.cast(1)
+  def msoArrowheadWide: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoArrowheadWide: `3` = this.cast(3)
+  def msoArrowheadWidthMedium: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoArrowheadWidthMedium: `2` = this.cast(2)
-  @scala.inline
-  def msoArrowheadWidthMixed: `-2` = this.cast(-2)
+  def msoArrowheadWidthMixed: `-2` = -2.asInstanceOf[`-2`]
 }
 

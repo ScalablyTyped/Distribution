@@ -33,7 +33,7 @@ class Task () extends EventEmitter {
   def emit_tick(name: tick): Boolean = js.native
   def end(): this.type = js.native
   def fail(): this.type = js.native
-  def msg(): String = js.native
+  def msg: String = js.native
   def msg(msg: String): js.Any = js.native
   @JSName("on")
   def on_clear(name: clear, handler: js.Function0[Unit]): this.type = js.native

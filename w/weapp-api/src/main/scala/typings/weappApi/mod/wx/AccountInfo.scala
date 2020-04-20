@@ -18,7 +18,6 @@ object AccountInfo {
   @scala.inline
   def apply(Plugin: AnonVetsion, miniProgram: AnonAppId): AccountInfo = {
     val __obj = js.Dynamic.literal(Plugin = Plugin.asInstanceOf[js.Any], miniProgram = miniProgram.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AccountInfo]
   }
 }

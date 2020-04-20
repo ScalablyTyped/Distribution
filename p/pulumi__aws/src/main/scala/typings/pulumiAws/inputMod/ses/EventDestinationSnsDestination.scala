@@ -17,7 +17,6 @@ object EventDestinationSnsDestination {
   @scala.inline
   def apply(topicArn: Input[String]): EventDestinationSnsDestination = {
     val __obj = js.Dynamic.literal(topicArn = topicArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventDestinationSnsDestination]
   }
 }

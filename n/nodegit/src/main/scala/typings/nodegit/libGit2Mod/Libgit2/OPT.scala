@@ -36,32 +36,30 @@ trait OPT extends js.Object
 
 object OPT {
   @scala.inline
-  def ENABLE_CACHING: `8` = this.cast(8)
+  def ENABLE_CACHING: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def GET_CACHED_MEMORY: `9` = this.cast(9)
+  def GET_CACHED_MEMORY: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def GET_MWINDOW_MAPPED_LIMIT: `2` = this.cast(2)
+  def GET_MWINDOW_MAPPED_LIMIT: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def GET_MWINDOW_SIZE: `0` = this.cast(0)
+  def GET_MWINDOW_SIZE: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def GET_SEARCH_PATH: `4` = this.cast(4)
+  def GET_SEARCH_PATH: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def GET_TEMPLATE_PATH: `10` = this.cast(10)
+  def GET_TEMPLATE_PATH: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def SET_CACHE_MAX_SIZE: `7` = this.cast(7)
+  def SET_CACHE_MAX_SIZE: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def SET_CACHE_OBJECT_LIMIT: `6` = this.cast(6)
+  def SET_CACHE_OBJECT_LIMIT: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def SET_MWINDOW_MAPPED_LIMIT: `3` = this.cast(3)
+  def SET_MWINDOW_MAPPED_LIMIT: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def SET_MWINDOW_SIZE: `1` = this.cast(1)
+  def SET_MWINDOW_SIZE: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def SET_SEARCH_PATH: `5` = this.cast(5)
+  def SET_SEARCH_PATH: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def SET_SSL_CERT_LOCATIONS: `12` = this.cast(12)
+  def SET_SSL_CERT_LOCATIONS: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def SET_TEMPLATE_PATH: `11` = this.cast(11)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SET_TEMPLATE_PATH: `11` = 11.asInstanceOf[`11`]
 }
 

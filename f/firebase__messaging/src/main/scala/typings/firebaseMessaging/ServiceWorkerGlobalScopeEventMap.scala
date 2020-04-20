@@ -18,7 +18,6 @@ object ServiceWorkerGlobalScopeEventMap {
     pushsubscriptionchange: PushSubscriptionChangeEvent
   ): ServiceWorkerGlobalScopeEventMap = {
     val __obj = js.Dynamic.literal(notificationclick = notificationclick.asInstanceOf[js.Any], push = push.asInstanceOf[js.Any], pushsubscriptionchange = pushsubscriptionchange.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ServiceWorkerGlobalScopeEventMap]
   }
 }

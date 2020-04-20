@@ -16,7 +16,6 @@ object UpdateWorkteamResponse {
   @scala.inline
   def apply(Workteam: Workteam): UpdateWorkteamResponse = {
     val __obj = js.Dynamic.literal(Workteam = Workteam.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateWorkteamResponse]
   }
 }

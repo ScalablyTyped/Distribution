@@ -14,14 +14,12 @@ trait Status extends js.Object
 
 object Status {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def error: typings.wordpressNotices.wordpressNoticesStrings.error = "error".asInstanceOf[typings.wordpressNotices.wordpressNoticesStrings.error]
   @scala.inline
-  def error: typings.wordpressNotices.wordpressNoticesStrings.error = this.cast("error")
+  def info: typings.wordpressNotices.wordpressNoticesStrings.info = "info".asInstanceOf[typings.wordpressNotices.wordpressNoticesStrings.info]
   @scala.inline
-  def info: typings.wordpressNotices.wordpressNoticesStrings.info = this.cast("info")
+  def success: typings.wordpressNotices.wordpressNoticesStrings.success = "success".asInstanceOf[typings.wordpressNotices.wordpressNoticesStrings.success]
   @scala.inline
-  def success: typings.wordpressNotices.wordpressNoticesStrings.success = this.cast("success")
-  @scala.inline
-  def warning: typings.wordpressNotices.wordpressNoticesStrings.warning = this.cast("warning")
+  def warning: typings.wordpressNotices.wordpressNoticesStrings.warning = "warning".asInstanceOf[typings.wordpressNotices.wordpressNoticesStrings.warning]
 }
 

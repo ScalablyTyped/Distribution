@@ -13,7 +13,6 @@ object AnonFlags {
   @scala.inline
   def apply(flags: String, pattern: String): AnonFlags = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFlags]
   }
 }

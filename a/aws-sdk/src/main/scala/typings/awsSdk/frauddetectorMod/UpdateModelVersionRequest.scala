@@ -38,7 +38,6 @@ object UpdateModelVersionRequest {
     status: ModelVersionStatus
   ): UpdateModelVersionRequest = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], modelId = modelId.asInstanceOf[js.Any], modelType = modelType.asInstanceOf[js.Any], modelVersionNumber = modelVersionNumber.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateModelVersionRequest]
   }
 }

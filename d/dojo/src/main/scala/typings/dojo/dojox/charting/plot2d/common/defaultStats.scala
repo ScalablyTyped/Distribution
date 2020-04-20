@@ -32,7 +32,6 @@ object defaultStats {
   @scala.inline
   def apply(hmax: js.Object, hmin: js.Object, vmax: js.Object, vmin: js.Object): defaultStats = {
     val __obj = js.Dynamic.literal(hmax = hmax.asInstanceOf[js.Any], hmin = hmin.asInstanceOf[js.Any], vmax = vmax.asInstanceOf[js.Any], vmin = vmin.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[defaultStats]
   }
 }

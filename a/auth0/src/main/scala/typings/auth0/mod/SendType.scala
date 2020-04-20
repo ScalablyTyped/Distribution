@@ -12,10 +12,8 @@ trait SendType extends js.Object
 
 object SendType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def code: typings.auth0.auth0Strings.code = "code".asInstanceOf[typings.auth0.auth0Strings.code]
   @scala.inline
-  def code: typings.auth0.auth0Strings.code = this.cast("code")
-  @scala.inline
-  def link: typings.auth0.auth0Strings.link = this.cast("link")
+  def link: typings.auth0.auth0Strings.link = "link".asInstanceOf[typings.auth0.auth0Strings.link]
 }
 

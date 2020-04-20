@@ -12,7 +12,6 @@ object Filter {
   @scala.inline
   def apply(getTagName: () => String): Filter = {
     val __obj = js.Dynamic.literal(getTagName = js.Any.fromFunction0(getTagName))
-  
     __obj.asInstanceOf[Filter]
   }
 }

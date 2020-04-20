@@ -28,7 +28,6 @@ object SpeechResource {
     recognize: AnonBearertoken => Request_[RecognizeResponse]
   ): SpeechResource = {
     val __obj = js.Dynamic.literal(longrunningrecognize = js.Any.fromFunction1(longrunningrecognize), recognize = js.Any.fromFunction1(recognize))
-  
     __obj.asInstanceOf[SpeechResource]
   }
 }

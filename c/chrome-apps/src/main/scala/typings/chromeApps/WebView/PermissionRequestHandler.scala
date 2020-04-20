@@ -15,7 +15,6 @@ object PermissionRequestHandler {
   @scala.inline
   def apply(allow: () => Unit, deny: () => Unit): PermissionRequestHandler = {
     val __obj = js.Dynamic.literal(allow = js.Any.fromFunction0(allow), deny = js.Any.fromFunction0(deny))
-  
     __obj.asInstanceOf[PermissionRequestHandler]
   }
 }

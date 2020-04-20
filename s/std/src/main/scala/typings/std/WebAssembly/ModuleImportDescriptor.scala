@@ -14,7 +14,6 @@ object ModuleImportDescriptor {
   @scala.inline
   def apply(kind: ImportExportKind, module: String, name: String): ModuleImportDescriptor = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], module = module.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ModuleImportDescriptor]
   }
 }

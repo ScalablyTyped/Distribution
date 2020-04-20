@@ -15,7 +15,6 @@ object AnonArcFourVariant {
   @scala.inline
   def apply(ArcFourVariant: Double, ChaCha20: Double, Null: Double, Salsa20: Double): AnonArcFourVariant = {
     val __obj = js.Dynamic.literal(ArcFourVariant = ArcFourVariant.asInstanceOf[js.Any], ChaCha20 = ChaCha20.asInstanceOf[js.Any], Null = Null.asInstanceOf[js.Any], Salsa20 = Salsa20.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonArcFourVariant]
   }
 }

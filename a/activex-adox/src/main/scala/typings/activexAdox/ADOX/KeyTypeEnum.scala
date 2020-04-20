@@ -16,12 +16,10 @@ trait KeyTypeEnum extends js.Object
 
 object KeyTypeEnum {
   @scala.inline
-  def adKeyForeign: `2` = this.cast(2)
+  def adKeyForeign: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def adKeyPrimary: `1` = this.cast(1)
+  def adKeyPrimary: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def adKeyUnique: `3` = this.cast(3)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def adKeyUnique: `3` = 3.asInstanceOf[`3`]
 }
 

@@ -16,12 +16,10 @@ trait fmOrientation extends js.Object
 
 object fmOrientation {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fmOrientationAuto: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def fmOrientationAuto: `-1` = this.cast(-1)
+  def fmOrientationHorizontal: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def fmOrientationHorizontal: `1` = this.cast(1)
-  @scala.inline
-  def fmOrientationVertical: `0` = this.cast(0)
+  def fmOrientationVertical: `0` = 0.asInstanceOf[`0`]
 }
 

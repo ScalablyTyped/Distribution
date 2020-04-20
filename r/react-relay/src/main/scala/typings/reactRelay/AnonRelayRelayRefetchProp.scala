@@ -13,7 +13,6 @@ object AnonRelayRelayRefetchProp {
   @scala.inline
   def apply(relay: RelayRefetchProp): AnonRelayRelayRefetchProp = {
     val __obj = js.Dynamic.literal(relay = relay.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRelayRelayRefetchProp]
   }
 }

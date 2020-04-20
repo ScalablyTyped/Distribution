@@ -20,7 +20,6 @@ object FederatedUser {
   @scala.inline
   def apply(Arn: arnType, FederatedUserId: federatedIdType): FederatedUser = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], FederatedUserId = FederatedUserId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FederatedUser]
   }
 }

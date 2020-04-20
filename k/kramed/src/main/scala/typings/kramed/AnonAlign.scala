@@ -13,7 +13,6 @@ object AnonAlign {
   @scala.inline
   def apply(align: String, header: Boolean): AnonAlign = {
     val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAlign]
   }
 }

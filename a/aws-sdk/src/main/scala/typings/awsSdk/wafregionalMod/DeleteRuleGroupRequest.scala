@@ -20,7 +20,6 @@ object DeleteRuleGroupRequest {
   @scala.inline
   def apply(ChangeToken: ChangeToken, RuleGroupId: ResourceId): DeleteRuleGroupRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken.asInstanceOf[js.Any], RuleGroupId = RuleGroupId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteRuleGroupRequest]
   }
 }

@@ -15,7 +15,6 @@ object AnonCellUnit {
   @scala.inline
   def apply(cellUnit: CellUnits, endDate: String, startDate: String): AnonCellUnit = {
     val __obj = js.Dynamic.literal(cellUnit = cellUnit.asInstanceOf[js.Any], endDate = endDate.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCellUnit]
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "port-numbers"
-version := "5.0-dt-20191218Z-fa7534"
+version := "5.0-dt-20191218Z-b2134f"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

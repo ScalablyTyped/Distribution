@@ -12,7 +12,6 @@ object ListOptions {
   @scala.inline
   def apply(isPack: Boolean): ListOptions = {
     val __obj = js.Dynamic.literal(isPack = isPack.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListOptions]
   }
 }

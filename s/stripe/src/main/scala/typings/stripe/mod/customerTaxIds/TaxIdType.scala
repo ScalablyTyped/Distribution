@@ -17,18 +17,16 @@ trait TaxIdType extends js.Object
 
 object TaxIdType {
   @scala.inline
-  def au_abn: typings.stripe.stripeStrings.au_abn = this.cast("au_abn")
+  def au_abn: typings.stripe.stripeStrings.au_abn = "au_abn".asInstanceOf[typings.stripe.stripeStrings.au_abn]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def eu_vat: typings.stripe.stripeStrings.eu_vat = "eu_vat".asInstanceOf[typings.stripe.stripeStrings.eu_vat]
   @scala.inline
-  def eu_vat: typings.stripe.stripeStrings.eu_vat = this.cast("eu_vat")
+  def in_gst: typings.stripe.stripeStrings.in_gst = "in_gst".asInstanceOf[typings.stripe.stripeStrings.in_gst]
   @scala.inline
-  def in_gst: typings.stripe.stripeStrings.in_gst = this.cast("in_gst")
+  def no_vat: typings.stripe.stripeStrings.no_vat = "no_vat".asInstanceOf[typings.stripe.stripeStrings.no_vat]
   @scala.inline
-  def no_vat: typings.stripe.stripeStrings.no_vat = this.cast("no_vat")
+  def nz_gst: typings.stripe.stripeStrings.nz_gst = "nz_gst".asInstanceOf[typings.stripe.stripeStrings.nz_gst]
   @scala.inline
-  def nz_gst: typings.stripe.stripeStrings.nz_gst = this.cast("nz_gst")
-  @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
+  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
 }
 

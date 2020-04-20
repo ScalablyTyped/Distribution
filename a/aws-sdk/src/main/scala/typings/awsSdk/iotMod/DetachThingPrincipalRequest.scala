@@ -20,7 +20,6 @@ object DetachThingPrincipalRequest {
   @scala.inline
   def apply(principal: Principal, thingName: ThingName): DetachThingPrincipalRequest = {
     val __obj = js.Dynamic.literal(principal = principal.asInstanceOf[js.Any], thingName = thingName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DetachThingPrincipalRequest]
   }
 }

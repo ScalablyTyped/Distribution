@@ -40,7 +40,6 @@ object HostedFieldsCardCode {
   @scala.inline
   def apply(name: String, size: Double): HostedFieldsCardCode = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HostedFieldsCardCode]
   }
 }

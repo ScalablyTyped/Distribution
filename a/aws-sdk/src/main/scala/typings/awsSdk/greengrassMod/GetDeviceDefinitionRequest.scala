@@ -16,7 +16,6 @@ object GetDeviceDefinitionRequest {
   @scala.inline
   def apply(DeviceDefinitionId: string): GetDeviceDefinitionRequest = {
     val __obj = js.Dynamic.literal(DeviceDefinitionId = DeviceDefinitionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDeviceDefinitionRequest]
   }
 }

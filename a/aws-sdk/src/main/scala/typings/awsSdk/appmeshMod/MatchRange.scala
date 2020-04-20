@@ -20,7 +20,6 @@ object MatchRange {
   @scala.inline
   def apply(end: Long, start: Long): MatchRange = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MatchRange]
   }
 }

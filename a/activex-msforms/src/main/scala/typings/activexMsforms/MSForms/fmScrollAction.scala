@@ -32,28 +32,26 @@ trait fmScrollAction extends js.Object
 
 object fmScrollAction {
   @scala.inline
-  def _fmScrollActionAbsoluteChange: `7` = this.cast(7)
+  def _fmScrollActionAbsoluteChange: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fmScrollActionBegin: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def fmScrollActionBegin: `5` = this.cast(5)
+  def fmScrollActionControlRequest: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def fmScrollActionControlRequest: `9` = this.cast(9)
+  def fmScrollActionEnd: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def fmScrollActionEnd: `6` = this.cast(6)
+  def fmScrollActionFocusRequest: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def fmScrollActionFocusRequest: `10` = this.cast(10)
+  def fmScrollActionLineDown: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def fmScrollActionLineDown: `2` = this.cast(2)
+  def fmScrollActionLineUp: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def fmScrollActionLineUp: `1` = this.cast(1)
+  def fmScrollActionNoChange: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def fmScrollActionNoChange: `0` = this.cast(0)
+  def fmScrollActionPageDown: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def fmScrollActionPageDown: `4` = this.cast(4)
+  def fmScrollActionPageUp: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def fmScrollActionPageUp: `3` = this.cast(3)
-  @scala.inline
-  def fmScrollActionPropertyChange: `8` = this.cast(8)
+  def fmScrollActionPropertyChange: `8` = 8.asInstanceOf[`8`]
 }
 

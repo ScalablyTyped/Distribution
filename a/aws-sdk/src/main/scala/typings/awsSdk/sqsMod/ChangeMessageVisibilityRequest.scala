@@ -24,7 +24,6 @@ object ChangeMessageVisibilityRequest {
   @scala.inline
   def apply(QueueUrl: String, ReceiptHandle: String, VisibilityTimeout: Integer): ChangeMessageVisibilityRequest = {
     val __obj = js.Dynamic.literal(QueueUrl = QueueUrl.asInstanceOf[js.Any], ReceiptHandle = ReceiptHandle.asInstanceOf[js.Any], VisibilityTimeout = VisibilityTimeout.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChangeMessageVisibilityRequest]
   }
 }

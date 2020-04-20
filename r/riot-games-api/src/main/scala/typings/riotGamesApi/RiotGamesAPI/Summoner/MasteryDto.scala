@@ -13,7 +13,6 @@ object MasteryDto {
   @scala.inline
   def apply(id: Double, rank: Double): MasteryDto = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], rank = rank.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MasteryDto]
   }
 }

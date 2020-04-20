@@ -17,12 +17,10 @@ trait FAX_SCHEDULE_TYPE_ENUM extends js.Object
 
 object FAX_SCHEDULE_TYPE_ENUM {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fstDISCOUNT_PERIOD: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def fstDISCOUNT_PERIOD: `2` = this.cast(2)
+  def fstNOW: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def fstNOW: `0` = this.cast(0)
-  @scala.inline
-  def fstSPECIFIC_TIME: `1` = this.cast(1)
+  def fstSPECIFIC_TIME: `1` = 1.asInstanceOf[`1`]
 }
 

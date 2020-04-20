@@ -13,7 +13,6 @@ object AnonPDocument {
   @scala.inline
   def apply(pDocument: _XDocument): AnonPDocument = {
     val __obj = js.Dynamic.literal(pDocument = pDocument.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPDocument]
   }
 }

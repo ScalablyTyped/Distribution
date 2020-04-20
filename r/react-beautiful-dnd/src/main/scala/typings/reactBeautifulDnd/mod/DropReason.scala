@@ -12,10 +12,8 @@ trait DropReason extends js.Object
 
 object DropReason {
   @scala.inline
-  def CANCEL: typings.reactBeautifulDnd.reactBeautifulDndStrings.CANCEL = this.cast("CANCEL")
+  def CANCEL: typings.reactBeautifulDnd.reactBeautifulDndStrings.CANCEL = "CANCEL".asInstanceOf[typings.reactBeautifulDnd.reactBeautifulDndStrings.CANCEL]
   @scala.inline
-  def DROP: typings.reactBeautifulDnd.reactBeautifulDndStrings.DROP = this.cast("DROP")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def DROP: typings.reactBeautifulDnd.reactBeautifulDndStrings.DROP = "DROP".asInstanceOf[typings.reactBeautifulDnd.reactBeautifulDndStrings.DROP]
 }
 

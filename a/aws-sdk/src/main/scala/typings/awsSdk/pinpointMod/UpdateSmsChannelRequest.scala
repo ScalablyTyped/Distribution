@@ -17,7 +17,6 @@ object UpdateSmsChannelRequest {
   @scala.inline
   def apply(ApplicationId: string, SMSChannelRequest: SMSChannelRequest): UpdateSmsChannelRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], SMSChannelRequest = SMSChannelRequest.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateSmsChannelRequest]
   }
 }

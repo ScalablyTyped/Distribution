@@ -16,7 +16,6 @@ object DescribeIdentityProviderConfigurationRequest {
   @scala.inline
   def apply(FleetArn: FleetArn): DescribeIdentityProviderConfigurationRequest = {
     val __obj = js.Dynamic.literal(FleetArn = FleetArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeIdentityProviderConfigurationRequest]
   }
 }

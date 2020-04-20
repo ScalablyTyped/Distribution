@@ -29,7 +29,6 @@ object TypeInfo {
     leave: Node => Unit
   ): TypeInfo = {
     val __obj = js.Dynamic.literal(enter = js.Any.fromFunction1(enter), getArgument = js.Any.fromFunction0(getArgument), getDirective = js.Any.fromFunction0(getDirective), getFieldDef = js.Any.fromFunction0(getFieldDef), getInputType = js.Any.fromFunction0(getInputType), getParentType = js.Any.fromFunction0(getParentType), getType = js.Any.fromFunction0(getType), leave = js.Any.fromFunction1(leave))
-  
     __obj.asInstanceOf[TypeInfo]
   }
 }

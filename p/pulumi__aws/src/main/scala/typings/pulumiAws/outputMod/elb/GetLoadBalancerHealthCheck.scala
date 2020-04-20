@@ -23,7 +23,6 @@ object GetLoadBalancerHealthCheck {
     unhealthyThreshold: Double
   ): GetLoadBalancerHealthCheck = {
     val __obj = js.Dynamic.literal(healthyThreshold = healthyThreshold.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any], unhealthyThreshold = unhealthyThreshold.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetLoadBalancerHealthCheck]
   }
 }

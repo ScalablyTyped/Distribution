@@ -25,11 +25,11 @@ class WebServiceOperationAdvancedParameterMapping protected () extends WebServic
   var model_FWebServiceOperationAdvancedParameterMapping: IModel = js.native
   def mapping(): js.Any = js.native
   def mapping(newValue: IExportMapping): js.Any = js.native
-  def mappingArgumentVariableName(): String = js.native
+  def mappingArgumentVariableName: String = js.native
   def mappingArgumentVariableName(newValue: String): js.Any = js.native
-  def mappingQualifiedName(): String | Null = js.native
+  def mappingQualifiedName: String | Null = js.native
   @JSName("mapping")
-  def mapping_Union(): IExportMapping | Null = js.native
+  def mapping_Union: IExportMapping | Null = js.native
 }
 
 /* static members */

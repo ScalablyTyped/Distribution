@@ -16,7 +16,6 @@ object SketchSharedStyleContainer {
     setObjects: js.Array[SketchStyle] => Unit
   ): SketchSharedStyleContainer = {
     val __obj = js.Dynamic.literal(addSharedStyleWithName_firstInstance = js.Any.fromFunction2(addSharedStyleWithName_firstInstance), setObjects = js.Any.fromFunction1(setObjects))
-  
     __obj.asInstanceOf[SketchSharedStyleContainer]
   }
 }

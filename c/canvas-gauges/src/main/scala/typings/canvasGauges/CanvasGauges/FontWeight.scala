@@ -23,32 +23,30 @@ trait FontWeight extends js.Object
 
 object FontWeight {
   @scala.inline
-  def `100`: typings.canvasGauges.canvasGaugesStrings.`100` = this.cast("100")
+  def `100`: typings.canvasGauges.canvasGaugesStrings.`100` = "100".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.`100`]
   @scala.inline
-  def `200`: typings.canvasGauges.canvasGaugesStrings.`200` = this.cast("200")
+  def `200`: typings.canvasGauges.canvasGaugesStrings.`200` = "200".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.`200`]
   @scala.inline
-  def `300`: typings.canvasGauges.canvasGaugesStrings.`300` = this.cast("300")
+  def `300`: typings.canvasGauges.canvasGaugesStrings.`300` = "300".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.`300`]
   @scala.inline
-  def `400`: typings.canvasGauges.canvasGaugesStrings.`400` = this.cast("400")
+  def `400`: typings.canvasGauges.canvasGaugesStrings.`400` = "400".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.`400`]
   @scala.inline
-  def `500`: typings.canvasGauges.canvasGaugesStrings.`500` = this.cast("500")
+  def `500`: typings.canvasGauges.canvasGaugesStrings.`500` = "500".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.`500`]
   @scala.inline
-  def `600`: typings.canvasGauges.canvasGaugesStrings.`600` = this.cast("600")
+  def `600`: typings.canvasGauges.canvasGaugesStrings.`600` = "600".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.`600`]
   @scala.inline
-  def `700`: typings.canvasGauges.canvasGaugesStrings.`700` = this.cast("700")
+  def `700`: typings.canvasGauges.canvasGaugesStrings.`700` = "700".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.`700`]
   @scala.inline
-  def `800`: typings.canvasGauges.canvasGaugesStrings.`800` = this.cast("800")
+  def `800`: typings.canvasGauges.canvasGaugesStrings.`800` = "800".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.`800`]
   @scala.inline
-  def `900`: typings.canvasGauges.canvasGaugesStrings.`900` = this.cast("900")
+  def `900`: typings.canvasGauges.canvasGaugesStrings.`900` = "900".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.`900`]
   @scala.inline
-  def bold: typings.canvasGauges.canvasGaugesStrings.bold = this.cast("bold")
+  def bold: typings.canvasGauges.canvasGaugesStrings.bold = "bold".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.bold]
   @scala.inline
-  def bolder: typings.canvasGauges.canvasGaugesStrings.bolder = this.cast("bolder")
+  def bolder: typings.canvasGauges.canvasGaugesStrings.bolder = "bolder".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.bolder]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def lighter: typings.canvasGauges.canvasGaugesStrings.lighter = "lighter".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.lighter]
   @scala.inline
-  def lighter: typings.canvasGauges.canvasGaugesStrings.lighter = this.cast("lighter")
-  @scala.inline
-  def normal: typings.canvasGauges.canvasGaugesStrings.normal = this.cast("normal")
+  def normal: typings.canvasGauges.canvasGaugesStrings.normal = "normal".asInstanceOf[typings.canvasGauges.canvasGaugesStrings.normal]
 }
 

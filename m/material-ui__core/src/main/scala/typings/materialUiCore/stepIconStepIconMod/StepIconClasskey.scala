@@ -15,16 +15,14 @@ trait StepIconClasskey extends js.Object
 
 object StepIconClasskey {
   @scala.inline
-  def active: typings.materialUiCore.materialUiCoreStrings.active = this.cast("active")
+  def active: typings.materialUiCore.materialUiCoreStrings.active = "active".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.active]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def completed: typings.materialUiCore.materialUiCoreStrings.completed = "completed".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.completed]
   @scala.inline
-  def completed: typings.materialUiCore.materialUiCoreStrings.completed = this.cast("completed")
+  def error: typings.materialUiCore.materialUiCoreStrings.error = "error".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.error]
   @scala.inline
-  def error: typings.materialUiCore.materialUiCoreStrings.error = this.cast("error")
+  def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
   @scala.inline
-  def root: typings.materialUiCore.materialUiCoreStrings.root = this.cast("root")
-  @scala.inline
-  def text: typings.materialUiCore.materialUiCoreStrings.text = this.cast("text")
+  def text: typings.materialUiCore.materialUiCoreStrings.text = "text".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.text]
 }
 

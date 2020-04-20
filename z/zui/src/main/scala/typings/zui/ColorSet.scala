@@ -12,7 +12,6 @@ object ColorSet {
   @scala.inline
   def apply(get: String => Color): ColorSet = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
-  
     __obj.asInstanceOf[ColorSet]
   }
 }

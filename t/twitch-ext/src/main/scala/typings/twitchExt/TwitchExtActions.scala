@@ -46,7 +46,6 @@ object TwitchExtActions {
     requestIdShare: () => Unit
   ): TwitchExtActions = {
     val __obj = js.Dynamic.literal(followChannel = js.Any.fromFunction1(followChannel), minimize = js.Any.fromFunction0(minimize), onFollow = js.Any.fromFunction1(onFollow), requestIdShare = js.Any.fromFunction0(requestIdShare))
-  
     __obj.asInstanceOf[TwitchExtActions]
   }
 }

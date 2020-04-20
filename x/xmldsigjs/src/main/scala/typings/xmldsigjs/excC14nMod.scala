@@ -16,7 +16,7 @@ object excC14nMod extends js.Object {
       * Gets or sets a string that contains namespace prefixes to canonicalize
       * using the standard canonicalization algorithm.
       */
-    def InclusiveNamespacesPrefixList(): String = js.native
+    def InclusiveNamespacesPrefixList: String = js.native
     def InclusiveNamespacesPrefixList(value: String): js.Any = js.native
   }
   

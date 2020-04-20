@@ -15,16 +15,14 @@ trait ShortManifestResource extends js.Object
 
 object ShortManifestResource {
   @scala.inline
-  def addon_catalog: typings.stremioAddonSdk.stremioAddonSdkStrings.addon_catalog = this.cast("addon_catalog")
+  def addon_catalog: typings.stremioAddonSdk.stremioAddonSdkStrings.addon_catalog = "addon_catalog".asInstanceOf[typings.stremioAddonSdk.stremioAddonSdkStrings.addon_catalog]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def catalog: typings.stremioAddonSdk.stremioAddonSdkStrings.catalog = "catalog".asInstanceOf[typings.stremioAddonSdk.stremioAddonSdkStrings.catalog]
   @scala.inline
-  def catalog: typings.stremioAddonSdk.stremioAddonSdkStrings.catalog = this.cast("catalog")
+  def meta: typings.stremioAddonSdk.stremioAddonSdkStrings.meta = "meta".asInstanceOf[typings.stremioAddonSdk.stremioAddonSdkStrings.meta]
   @scala.inline
-  def meta: typings.stremioAddonSdk.stremioAddonSdkStrings.meta = this.cast("meta")
+  def stream: typings.stremioAddonSdk.stremioAddonSdkStrings.stream = "stream".asInstanceOf[typings.stremioAddonSdk.stremioAddonSdkStrings.stream]
   @scala.inline
-  def stream: typings.stremioAddonSdk.stremioAddonSdkStrings.stream = this.cast("stream")
-  @scala.inline
-  def subtitles: typings.stremioAddonSdk.stremioAddonSdkStrings.subtitles = this.cast("subtitles")
+  def subtitles: typings.stremioAddonSdk.stremioAddonSdkStrings.subtitles = "subtitles".asInstanceOf[typings.stremioAddonSdk.stremioAddonSdkStrings.subtitles]
 }
 

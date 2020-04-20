@@ -12,7 +12,6 @@ object ObjectExplorerSessionResponse {
   @scala.inline
   def apply(sessionId: String): ObjectExplorerSessionResponse = {
     val __obj = js.Dynamic.literal(sessionId = sessionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ObjectExplorerSessionResponse]
   }
 }

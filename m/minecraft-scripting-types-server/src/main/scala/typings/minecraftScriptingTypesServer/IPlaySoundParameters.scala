@@ -34,7 +34,6 @@ object IPlaySoundParameters {
   @scala.inline
   def apply(pitch: Double, position: VectorArray, sound: String, volume: Double): IPlaySoundParameters = {
     val __obj = js.Dynamic.literal(pitch = pitch.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], sound = sound.asInstanceOf[js.Any], volume = volume.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPlaySoundParameters]
   }
 }

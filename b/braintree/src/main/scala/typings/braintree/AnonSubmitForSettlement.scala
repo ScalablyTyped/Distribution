@@ -12,7 +12,6 @@ object AnonSubmitForSettlement {
   @scala.inline
   def apply(submitForSettlement: Boolean): AnonSubmitForSettlement = {
     val __obj = js.Dynamic.literal(submitForSettlement = submitForSettlement.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSubmitForSettlement]
   }
 }

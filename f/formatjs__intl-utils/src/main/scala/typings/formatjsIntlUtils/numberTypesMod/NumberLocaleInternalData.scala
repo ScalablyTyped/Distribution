@@ -21,7 +21,6 @@ object NumberLocaleInternalData {
     units: Record[String, UnitData]
   ): NumberLocaleInternalData = {
     val __obj = js.Dynamic.literal(currencies = currencies.asInstanceOf[js.Any], nu = nu.asInstanceOf[js.Any], numbers = numbers.asInstanceOf[js.Any], units = units.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NumberLocaleInternalData]
   }
 }

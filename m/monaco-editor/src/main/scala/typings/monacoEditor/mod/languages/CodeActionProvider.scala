@@ -20,7 +20,6 @@ object CodeActionProvider {
     provideCodeActions: (ITextModel, Range, CodeActionContext, CancellationToken) => ProviderResult[CodeActionList]
   ): CodeActionProvider = {
     val __obj = js.Dynamic.literal(provideCodeActions = js.Any.fromFunction4(provideCodeActions))
-  
     __obj.asInstanceOf[CodeActionProvider]
   }
 }

@@ -28,7 +28,6 @@ object ProtocolHandler {
   @scala.inline
   def apply(name: String, protocol: String | ProtocolHandlerProtocol, uriTemplate: ExtensionURL | HttpURL): ProtocolHandler = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], uriTemplate = uriTemplate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProtocolHandler]
   }
 }

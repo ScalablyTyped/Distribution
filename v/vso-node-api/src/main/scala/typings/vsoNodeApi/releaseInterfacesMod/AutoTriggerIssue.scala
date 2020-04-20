@@ -22,7 +22,6 @@ object AutoTriggerIssue {
     releaseTriggerType: ReleaseTriggerType
   ): AutoTriggerIssue = {
     val __obj = js.Dynamic.literal(issue = issue.asInstanceOf[js.Any], issueSource = issueSource.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], releaseDefinitionReference = releaseDefinitionReference.asInstanceOf[js.Any], releaseTriggerType = releaseTriggerType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AutoTriggerIssue]
   }
 }

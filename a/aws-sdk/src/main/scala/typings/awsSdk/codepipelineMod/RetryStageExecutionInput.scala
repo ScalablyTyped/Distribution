@@ -33,7 +33,6 @@ object RetryStageExecutionInput {
     stageName: StageName
   ): RetryStageExecutionInput = {
     val __obj = js.Dynamic.literal(pipelineExecutionId = pipelineExecutionId.asInstanceOf[js.Any], pipelineName = pipelineName.asInstanceOf[js.Any], retryMode = retryMode.asInstanceOf[js.Any], stageName = stageName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RetryStageExecutionInput]
   }
 }

@@ -29,44 +29,42 @@ trait CustomerSourceType extends js.Object
 
 object CustomerSourceType {
   @scala.inline
-  def APPOINTMENTS: typings.squareConnect.squareConnectStrings.APPOINTMENTS = this.cast("APPOINTMENTS")
+  def APPOINTMENTS: typings.squareConnect.squareConnectStrings.APPOINTMENTS = "APPOINTMENTS".asInstanceOf[typings.squareConnect.squareConnectStrings.APPOINTMENTS]
   @scala.inline
-  def COUPON: typings.squareConnect.squareConnectStrings.COUPON = this.cast("COUPON")
+  def COUPON: typings.squareConnect.squareConnectStrings.COUPON = "COUPON".asInstanceOf[typings.squareConnect.squareConnectStrings.COUPON]
   @scala.inline
-  def DELETION_RECOVERY: typings.squareConnect.squareConnectStrings.DELETION_RECOVERY = this.cast("DELETION_RECOVERY")
+  def DELETION_RECOVERY: typings.squareConnect.squareConnectStrings.DELETION_RECOVERY = "DELETION_RECOVERY".asInstanceOf[typings.squareConnect.squareConnectStrings.DELETION_RECOVERY]
   @scala.inline
-  def DIRECTORY: typings.squareConnect.squareConnectStrings.DIRECTORY = this.cast("DIRECTORY")
+  def DIRECTORY: typings.squareConnect.squareConnectStrings.DIRECTORY = "DIRECTORY".asInstanceOf[typings.squareConnect.squareConnectStrings.DIRECTORY]
   @scala.inline
-  def EGIFTING: typings.squareConnect.squareConnectStrings.EGIFTING = this.cast("EGIFTING")
+  def EGIFTING: typings.squareConnect.squareConnectStrings.EGIFTING = "EGIFTING".asInstanceOf[typings.squareConnect.squareConnectStrings.EGIFTING]
   @scala.inline
-  def EMAIL_COLLECTION: typings.squareConnect.squareConnectStrings.EMAIL_COLLECTION = this.cast("EMAIL_COLLECTION")
+  def EMAIL_COLLECTION: typings.squareConnect.squareConnectStrings.EMAIL_COLLECTION = "EMAIL_COLLECTION".asInstanceOf[typings.squareConnect.squareConnectStrings.EMAIL_COLLECTION]
   @scala.inline
-  def FEEDBACK: typings.squareConnect.squareConnectStrings.FEEDBACK = this.cast("FEEDBACK")
+  def FEEDBACK: typings.squareConnect.squareConnectStrings.FEEDBACK = "FEEDBACK".asInstanceOf[typings.squareConnect.squareConnectStrings.FEEDBACK]
   @scala.inline
-  def IMPORT: typings.squareConnect.squareConnectStrings.IMPORT = this.cast("IMPORT")
+  def IMPORT: typings.squareConnect.squareConnectStrings.IMPORT = "IMPORT".asInstanceOf[typings.squareConnect.squareConnectStrings.IMPORT]
   @scala.inline
-  def INSTANT_PROFILE: typings.squareConnect.squareConnectStrings.INSTANT_PROFILE = this.cast("INSTANT_PROFILE")
+  def INSTANT_PROFILE: typings.squareConnect.squareConnectStrings.INSTANT_PROFILE = "INSTANT_PROFILE".asInstanceOf[typings.squareConnect.squareConnectStrings.INSTANT_PROFILE]
   @scala.inline
-  def INVOICES: typings.squareConnect.squareConnectStrings.INVOICES = this.cast("INVOICES")
+  def INVOICES: typings.squareConnect.squareConnectStrings.INVOICES = "INVOICES".asInstanceOf[typings.squareConnect.squareConnectStrings.INVOICES]
   @scala.inline
-  def LOYALTY: typings.squareConnect.squareConnectStrings.LOYALTY = this.cast("LOYALTY")
+  def LOYALTY: typings.squareConnect.squareConnectStrings.LOYALTY = "LOYALTY".asInstanceOf[typings.squareConnect.squareConnectStrings.LOYALTY]
   @scala.inline
-  def MARKETING: typings.squareConnect.squareConnectStrings.MARKETING = this.cast("MARKETING")
+  def MARKETING: typings.squareConnect.squareConnectStrings.MARKETING = "MARKETING".asInstanceOf[typings.squareConnect.squareConnectStrings.MARKETING]
   @scala.inline
-  def MERGE: typings.squareConnect.squareConnectStrings.MERGE = this.cast("MERGE")
+  def MERGE: typings.squareConnect.squareConnectStrings.MERGE = "MERGE".asInstanceOf[typings.squareConnect.squareConnectStrings.MERGE]
   @scala.inline
-  def ONLINE_STORE: typings.squareConnect.squareConnectStrings.ONLINE_STORE = this.cast("ONLINE_STORE")
+  def ONLINE_STORE: typings.squareConnect.squareConnectStrings.ONLINE_STORE = "ONLINE_STORE".asInstanceOf[typings.squareConnect.squareConnectStrings.ONLINE_STORE]
   @scala.inline
-  def OTHER: typings.squareConnect.squareConnectStrings.OTHER = this.cast("OTHER")
+  def OTHER: typings.squareConnect.squareConnectStrings.OTHER = "OTHER".asInstanceOf[typings.squareConnect.squareConnectStrings.OTHER]
   @scala.inline
-  def TERMINAL: typings.squareConnect.squareConnectStrings.TERMINAL = this.cast("TERMINAL")
+  def TERMINAL: typings.squareConnect.squareConnectStrings.TERMINAL = "TERMINAL".asInstanceOf[typings.squareConnect.squareConnectStrings.TERMINAL]
   @scala.inline
-  def THIRD_PARTY: typings.squareConnect.squareConnectStrings.THIRD_PARTY = this.cast("THIRD_PARTY")
+  def THIRD_PARTY: typings.squareConnect.squareConnectStrings.THIRD_PARTY = "THIRD_PARTY".asInstanceOf[typings.squareConnect.squareConnectStrings.THIRD_PARTY]
   @scala.inline
-  def THIRD_PARTY_IMPORT: typings.squareConnect.squareConnectStrings.THIRD_PARTY_IMPORT = this.cast("THIRD_PARTY_IMPORT")
+  def THIRD_PARTY_IMPORT: typings.squareConnect.squareConnectStrings.THIRD_PARTY_IMPORT = "THIRD_PARTY_IMPORT".asInstanceOf[typings.squareConnect.squareConnectStrings.THIRD_PARTY_IMPORT]
   @scala.inline
-  def UNMERGE_RECOVERY: typings.squareConnect.squareConnectStrings.UNMERGE_RECOVERY = this.cast("UNMERGE_RECOVERY")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UNMERGE_RECOVERY: typings.squareConnect.squareConnectStrings.UNMERGE_RECOVERY = "UNMERGE_RECOVERY".asInstanceOf[typings.squareConnect.squareConnectStrings.UNMERGE_RECOVERY]
 }
 

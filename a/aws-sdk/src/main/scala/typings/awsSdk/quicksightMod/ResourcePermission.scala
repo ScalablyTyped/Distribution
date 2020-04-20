@@ -20,7 +20,6 @@ object ResourcePermission {
   @scala.inline
   def apply(Actions: ActionList, Principal: Principal): ResourcePermission = {
     val __obj = js.Dynamic.literal(Actions = Actions.asInstanceOf[js.Any], Principal = Principal.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResourcePermission]
   }
 }

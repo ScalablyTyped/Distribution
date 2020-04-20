@@ -12,7 +12,6 @@ object AsMutableOptions {
   @scala.inline
   def apply[TDeep /* <: Boolean */](deep: TDeep): AsMutableOptions[TDeep] = {
     val __obj = js.Dynamic.literal(deep = deep.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AsMutableOptions[TDeep]]
   }
 }

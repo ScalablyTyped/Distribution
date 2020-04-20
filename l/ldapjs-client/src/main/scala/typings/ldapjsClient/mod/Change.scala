@@ -17,7 +17,6 @@ object Change {
   @scala.inline
   def apply(modification: StringDictionary[js.Any], operation: add | delete | replace): Change = {
     val __obj = js.Dynamic.literal(modification = modification.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Change]
   }
 }

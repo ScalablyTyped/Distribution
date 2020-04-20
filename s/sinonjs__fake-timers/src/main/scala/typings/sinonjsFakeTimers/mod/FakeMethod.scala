@@ -23,32 +23,30 @@ trait FakeMethod extends js.Object
 
 object FakeMethod {
   @scala.inline
-  def Date: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.Date = this.cast("Date")
+  def Date: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.Date = "Date".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.Date]
   @scala.inline
-  def cancelAnimationFrame: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.cancelAnimationFrame = this.cast("cancelAnimationFrame")
+  def cancelAnimationFrame: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.cancelAnimationFrame = "cancelAnimationFrame".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.cancelAnimationFrame]
   @scala.inline
-  def cancelIdleCallback: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.cancelIdleCallback = this.cast("cancelIdleCallback")
+  def cancelIdleCallback: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.cancelIdleCallback = "cancelIdleCallback".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.cancelIdleCallback]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def clearImmediate: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.clearImmediate = "clearImmediate".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.clearImmediate]
   @scala.inline
-  def clearImmediate: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.clearImmediate = this.cast("clearImmediate")
+  def clearInterval: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.clearInterval = "clearInterval".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.clearInterval]
   @scala.inline
-  def clearInterval: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.clearInterval = this.cast("clearInterval")
+  def clearTimeout: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.clearTimeout = "clearTimeout".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.clearTimeout]
   @scala.inline
-  def clearTimeout: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.clearTimeout = this.cast("clearTimeout")
+  def hrtime: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.hrtime = "hrtime".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.hrtime]
   @scala.inline
-  def hrtime: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.hrtime = this.cast("hrtime")
+  def nextTick: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.nextTick = "nextTick".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.nextTick]
   @scala.inline
-  def nextTick: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.nextTick = this.cast("nextTick")
+  def requestAnimationFrame: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.requestAnimationFrame = "requestAnimationFrame".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.requestAnimationFrame]
   @scala.inline
-  def requestAnimationFrame: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.requestAnimationFrame = this.cast("requestAnimationFrame")
+  def requestIdleCallback: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.requestIdleCallback = "requestIdleCallback".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.requestIdleCallback]
   @scala.inline
-  def requestIdleCallback: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.requestIdleCallback = this.cast("requestIdleCallback")
+  def setImmediate: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.setImmediate = "setImmediate".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.setImmediate]
   @scala.inline
-  def setImmediate: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.setImmediate = this.cast("setImmediate")
+  def setInterval: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.setInterval = "setInterval".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.setInterval]
   @scala.inline
-  def setInterval: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.setInterval = this.cast("setInterval")
-  @scala.inline
-  def setTimeout: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.setTimeout = this.cast("setTimeout")
+  def setTimeout: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.setTimeout = "setTimeout".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.setTimeout]
 }
 

@@ -14,7 +14,6 @@ object Continent {
   @scala.inline
   def apply(countries: js.Array[Country], name: String, regions: js.Array[String]): Continent = {
     val __obj = js.Dynamic.literal(countries = countries.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], regions = regions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Continent]
   }
 }

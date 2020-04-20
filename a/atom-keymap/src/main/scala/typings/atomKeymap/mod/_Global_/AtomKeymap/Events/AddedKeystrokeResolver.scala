@@ -30,7 +30,6 @@ object AddedKeystrokeResolver {
   @scala.inline
   def apply(event: KeyboardEvent, keymap: js.Object, keystroke: String, layoutName: String): AddedKeystrokeResolver = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], keymap = keymap.asInstanceOf[js.Any], keystroke = keystroke.asInstanceOf[js.Any], layoutName = layoutName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddedKeystrokeResolver]
   }
 }

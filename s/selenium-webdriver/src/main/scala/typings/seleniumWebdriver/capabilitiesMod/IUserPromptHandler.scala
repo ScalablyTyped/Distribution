@@ -33,7 +33,6 @@ object IUserPromptHandler {
     IGNORE: String
   ): IUserPromptHandler = {
     val __obj = js.Dynamic.literal(ACCEPT = ACCEPT.asInstanceOf[js.Any], ACCEPT_AND_NOTIFY = ACCEPT_AND_NOTIFY.asInstanceOf[js.Any], DISMISS = DISMISS.asInstanceOf[js.Any], DISMISS_AND_NOTIFY = DISMISS_AND_NOTIFY.asInstanceOf[js.Any], IGNORE = IGNORE.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IUserPromptHandler]
   }
 }

@@ -16,7 +16,6 @@ object DeleteSubnetGroupRequest {
   @scala.inline
   def apply(SubnetGroupName: String): DeleteSubnetGroupRequest = {
     val __obj = js.Dynamic.literal(SubnetGroupName = SubnetGroupName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteSubnetGroupRequest]
   }
 }

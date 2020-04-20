@@ -15,7 +15,6 @@ object RouterAPI {
   @scala.inline
   def apply(app: DvaInstance, history: History[LocationState]): RouterAPI = {
     val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], history = history.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RouterAPI]
   }
 }

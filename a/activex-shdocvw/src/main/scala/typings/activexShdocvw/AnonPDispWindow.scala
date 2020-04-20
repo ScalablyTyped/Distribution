@@ -12,7 +12,6 @@ object AnonPDispWindow {
   @scala.inline
   def apply(pDispWindow: js.Any): AnonPDispWindow = {
     val __obj = js.Dynamic.literal(pDispWindow = pDispWindow.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPDispWindow]
   }
 }

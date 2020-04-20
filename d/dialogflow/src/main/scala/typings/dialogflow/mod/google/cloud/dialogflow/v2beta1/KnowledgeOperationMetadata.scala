@@ -22,7 +22,7 @@ class KnowledgeOperationMetadata () extends IKnowledgeOperationMetadata {
   def this(properties: IKnowledgeOperationMetadata) = this()
   /** KnowledgeOperationMetadata state. */
   @JSName("state")
-  var state_KnowledgeOperationMetadata: State | String = js.native
+  var state_KnowledgeOperationMetadata: State | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.State * / any */ String) = js.native
   /**
     * Converts this KnowledgeOperationMetadata to JSON.
     * @returns JSON object

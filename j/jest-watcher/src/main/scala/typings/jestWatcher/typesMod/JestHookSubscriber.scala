@@ -18,7 +18,6 @@ object JestHookSubscriber {
     shouldRunTestSuite: ShouldRunTestSuite => Unit
   ): JestHookSubscriber = {
     val __obj = js.Dynamic.literal(onFileChange = js.Any.fromFunction1(onFileChange), onTestRunComplete = js.Any.fromFunction1(onTestRunComplete), shouldRunTestSuite = js.Any.fromFunction1(shouldRunTestSuite))
-  
     __obj.asInstanceOf[JestHookSubscriber]
   }
 }

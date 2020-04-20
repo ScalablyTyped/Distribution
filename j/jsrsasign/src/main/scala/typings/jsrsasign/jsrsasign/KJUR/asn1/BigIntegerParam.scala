@@ -13,7 +13,6 @@ object BigIntegerParam {
   @scala.inline
   def apply(bigint: BigInteger): BigIntegerParam = {
     val __obj = js.Dynamic.literal(bigint = bigint.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BigIntegerParam]
   }
 }

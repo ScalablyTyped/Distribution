@@ -27,7 +27,6 @@ object JasmineJQueryEvents {
     wasTriggeredWith: (String, String, js.Any, Env) => Boolean
   ): JasmineJQueryEvents = {
     val __obj = js.Dynamic.literal(args = js.Any.fromFunction2(args), cleanUp = js.Any.fromFunction0(cleanUp), spyOn = js.Any.fromFunction2(spyOn), wasPrevented = js.Any.fromFunction2(wasPrevented), wasStopped = js.Any.fromFunction2(wasStopped), wasTriggered = js.Any.fromFunction2(wasTriggered), wasTriggeredWith = js.Any.fromFunction4(wasTriggeredWith))
-  
     __obj.asInstanceOf[JasmineJQueryEvents]
   }
 }

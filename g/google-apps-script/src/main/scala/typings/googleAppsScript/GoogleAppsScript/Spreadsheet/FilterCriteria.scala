@@ -25,7 +25,6 @@ object FilterCriteria {
     getVisibleValues: () => js.Array[String]
   ): FilterCriteria = {
     val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), getCriteriaType = js.Any.fromFunction0(getCriteriaType), getCriteriaValues = js.Any.fromFunction0(getCriteriaValues), getHiddenValues = js.Any.fromFunction0(getHiddenValues), getVisibleValues = js.Any.fromFunction0(getVisibleValues))
-  
     __obj.asInstanceOf[FilterCriteria]
   }
 }

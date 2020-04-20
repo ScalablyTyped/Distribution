@@ -38,34 +38,32 @@ trait SetOptionEnum extends js.Object
 
 object SetOptionEnum {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dbExclusiveAsyncDelay: `60` = 60.asInstanceOf[`60`]
   @scala.inline
-  def dbExclusiveAsyncDelay: `60` = this.cast(60)
+  def dbFlushTransactionTimeout: `66` = 66.asInstanceOf[`66`]
   @scala.inline
-  def dbFlushTransactionTimeout: `66` = this.cast(66)
+  def dbImplicitCommitSync: `59` = 59.asInstanceOf[`59`]
   @scala.inline
-  def dbImplicitCommitSync: `59` = this.cast(59)
+  def dbLockDelay: `63` = 63.asInstanceOf[`63`]
   @scala.inline
-  def dbLockDelay: `63` = this.cast(63)
+  def dbLockRetry: `57` = 57.asInstanceOf[`57`]
   @scala.inline
-  def dbLockRetry: `57` = this.cast(57)
+  def dbMaxBufferSize: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def dbMaxBufferSize: `8` = this.cast(8)
+  def dbMaxLocksPerFile: `62` = 62.asInstanceOf[`62`]
   @scala.inline
-  def dbMaxLocksPerFile: `62` = this.cast(62)
+  def dbPageTimeout: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def dbPageTimeout: `6` = this.cast(6)
+  def dbPasswordEncryptionAlgorithm: `81` = 81.asInstanceOf[`81`]
   @scala.inline
-  def dbPasswordEncryptionAlgorithm: `81` = this.cast(81)
+  def dbPasswordEncryptionKeyLength: `82` = 82.asInstanceOf[`82`]
   @scala.inline
-  def dbPasswordEncryptionKeyLength: `82` = this.cast(82)
+  def dbPasswordEncryptionProvider: `80` = 80.asInstanceOf[`80`]
   @scala.inline
-  def dbPasswordEncryptionProvider: `80` = this.cast(80)
+  def dbRecycleLVs: `65` = 65.asInstanceOf[`65`]
   @scala.inline
-  def dbRecycleLVs: `65` = this.cast(65)
+  def dbSharedAsyncDelay: `61` = 61.asInstanceOf[`61`]
   @scala.inline
-  def dbSharedAsyncDelay: `61` = this.cast(61)
-  @scala.inline
-  def dbUserCommitSync: `58` = this.cast(58)
+  def dbUserCommitSync: `58` = 58.asInstanceOf[`58`]
 }
 

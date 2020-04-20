@@ -16,7 +16,6 @@ object GetRequestedServiceQuotaChangeRequest {
   @scala.inline
   def apply(RequestId: RequestId): GetRequestedServiceQuotaChangeRequest = {
     val __obj = js.Dynamic.literal(RequestId = RequestId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetRequestedServiceQuotaChangeRequest]
   }
 }

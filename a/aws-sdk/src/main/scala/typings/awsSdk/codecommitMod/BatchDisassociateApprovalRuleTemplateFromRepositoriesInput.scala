@@ -20,7 +20,6 @@ object BatchDisassociateApprovalRuleTemplateFromRepositoriesInput {
   @scala.inline
   def apply(approvalRuleTemplateName: ApprovalRuleTemplateName, repositoryNames: RepositoryNameList): BatchDisassociateApprovalRuleTemplateFromRepositoriesInput = {
     val __obj = js.Dynamic.literal(approvalRuleTemplateName = approvalRuleTemplateName.asInstanceOf[js.Any], repositoryNames = repositoryNames.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchDisassociateApprovalRuleTemplateFromRepositoriesInput]
   }
 }

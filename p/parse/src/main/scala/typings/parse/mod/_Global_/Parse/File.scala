@@ -5,6 +5,7 @@ import typings.parse.AnonForceSecure
 import typings.parse.AnonName
 import typings.parse.AnonSize
 import typings.parse.AnonUri
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,6 +49,11 @@ class File protected () extends js.Object {
   def this(name: String, data: AnonBase64, `type`: String) = this()
   def this(name: String, data: AnonSize, `type`: String) = this()
   def this(name: String, data: AnonUri, `type`: String) = this()
+  def addMetadata(key: String, value: js.Any): Unit = js.native
+  def addTag(key: String, value: js.Any): Unit = js.native
+  def cancel(): Unit = js.native
+  def destroy(): js.Promise[File] = js.native
+  def equals(other: File): Boolean = js.native
   /**
     * Return the data for the file, downloading it if not already present.
     * Data is present if initialized with Byte Array, Base64 or Saved with Uri.
@@ -56,9 +62,13 @@ class File protected () extends js.Object {
     * @returns Promise that is resolved with base64 data
     */
   def getData(): js.Promise[String] = js.native
+  def metadata(): Record[String, _] = js.native
   def name(): String = js.native
   def save(): js.Promise[File] = js.native
   def save(options: SuccessFailureOptions): js.Promise[File] = js.native
+  def setMetadata(metadata: Record[String, _]): Unit = js.native
+  def setTags(tags: Record[String, _]): Unit = js.native
+  def tags(): Record[String, _] = js.native
   def toJSON(): AnonName = js.native
   def url(): String = js.native
   def url(options: AnonForceSecure): String = js.native

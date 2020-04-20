@@ -28,7 +28,6 @@ object PolylineEditor {
     reset: () => Unit
   ): PolylineEditor = {
     val __obj = js.Dynamic.literal(continueBackward = js.Any.fromFunction0(continueBackward), continueForward = js.Any.fromFunction0(continueForward), disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), reset = js.Any.fromFunction0(reset))
-  
     __obj.asInstanceOf[PolylineEditor]
   }
 }

@@ -13,7 +13,6 @@ object SyntaxParseParams {
   @scala.inline
   def apply(ownerUri: String, query: String): SyntaxParseParams = {
     val __obj = js.Dynamic.literal(ownerUri = ownerUri.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SyntaxParseParams]
   }
 }

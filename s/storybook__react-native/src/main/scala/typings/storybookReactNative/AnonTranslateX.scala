@@ -13,7 +13,6 @@ object AnonTranslateX {
   @scala.inline
   def apply(translateX: AnimatedInterpolation): AnonTranslateX = {
     val __obj = js.Dynamic.literal(translateX = translateX.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTranslateX]
   }
 }

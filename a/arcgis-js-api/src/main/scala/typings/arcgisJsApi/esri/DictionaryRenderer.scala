@@ -42,6 +42,15 @@ trait DictionaryRenderer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#url)
     */
   var url: String = js.native
+  /**
+    * This method will return the symbol for a given graphic using the dictionary renderer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#getSymbolAsync)
+    *
+    * @param graphic The graphic used to get the resulting symbol.
+    *
+    */
+  def getSymbolAsync(graphic: Graphic): js.Promise[CIMSymbol] = js.native
 }
 
 @JSGlobal("__esri.DictionaryRenderer")

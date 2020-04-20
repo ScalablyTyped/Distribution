@@ -31,7 +31,6 @@ object TypeofpowerSource {
     requestStatusUpdate: () => Unit
   ): TypeofpowerSource = {
     val __obj = js.Dynamic.literal(getPowerSourceInfo = js.Any.fromFunction1(getPowerSourceInfo), onPowerChanged = onPowerChanged.asInstanceOf[js.Any], requestStatusUpdate = js.Any.fromFunction0(requestStatusUpdate))
-  
     __obj.asInstanceOf[TypeofpowerSource]
   }
 }

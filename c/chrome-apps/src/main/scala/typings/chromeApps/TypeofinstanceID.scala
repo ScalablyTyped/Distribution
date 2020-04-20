@@ -62,7 +62,6 @@ object TypeofinstanceID {
     onTokenRefresh: Event[js.Function0[Unit]]
   ): TypeofinstanceID = {
     val __obj = js.Dynamic.literal(deleteID = js.Any.fromFunction1(deleteID), deleteToken = js.Any.fromFunction2(deleteToken), getCreationTime = js.Any.fromFunction1(getCreationTime), getID = js.Any.fromFunction1(getID), getToken = js.Any.fromFunction2(getToken), onTokenRefresh = onTokenRefresh.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofinstanceID]
   }
 }

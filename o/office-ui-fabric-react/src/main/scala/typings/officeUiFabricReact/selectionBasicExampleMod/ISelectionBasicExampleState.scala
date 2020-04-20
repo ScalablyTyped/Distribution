@@ -29,7 +29,6 @@ object ISelectionBasicExampleState {
     selectionMode: SelectionMode
   ): ISelectionBasicExampleState = {
     val __obj = js.Dynamic.literal(canSelect = canSelect.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], selectionMode = selectionMode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISelectionBasicExampleState]
   }
 }

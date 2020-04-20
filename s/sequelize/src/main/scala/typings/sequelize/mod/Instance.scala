@@ -53,11 +53,11 @@ trait Instance[TAttributes] extends js.Object {
     *
     * If changed is called without an argument and no keys have changed, it will return `false`.
     */
-  def changed(key: String): Boolean = js.native
-  def decrement(fields: String): typings.bluebird.mod.^[this.type] = js.native
-  def decrement(fields: String, options: InstanceIncrementDecrementOptions): typings.bluebird.mod.^[this.type] = js.native
-  def decrement(fields: js.Array[String]): typings.bluebird.mod.^[this.type] = js.native
-  def decrement(fields: js.Array[String], options: InstanceIncrementDecrementOptions): typings.bluebird.mod.^[this.type] = js.native
+  def changed(key: /* keyof TAttributes */ String): Boolean = js.native
+  def decrement(fields: /* keyof TAttributes */ String): typings.bluebird.mod.^[this.type] = js.native
+  def decrement(fields: /* keyof TAttributes */ String, options: InstanceIncrementDecrementOptions): typings.bluebird.mod.^[this.type] = js.native
+  def decrement(fields: js.Array[/* keyof TAttributes */ String]): typings.bluebird.mod.^[this.type] = js.native
+  def decrement(fields: js.Array[/* keyof TAttributes */ String], options: InstanceIncrementDecrementOptions): typings.bluebird.mod.^[this.type] = js.native
   /**
     * Decrement the value of one or more columns. This is done in the database, which means it does not use
     * the values currently stored on the Instance. The decrement is done using a
@@ -103,17 +103,17 @@ trait Instance[TAttributes] extends js.Object {
     *
     * @param options.plain If set to true, included instances will be returned as plain objects
     */
-  def get(key: String): js.Any = js.native
-  def get(key: String, options: AnonClone): js.Any = js.native
+  def get(key: /* keyof TAttributes */ String): js.Any = js.native
+  def get(key: /* keyof TAttributes */ String, options: AnonClone): js.Any = js.native
   def get(options: AnonClone): TAttributes = js.native
   /**
     * Get the value of the underlying data value
     */
-  def getDataValue(key: String): js.Any = js.native
-  def increment(fields: String): typings.bluebird.mod.^[this.type] = js.native
-  def increment(fields: String, options: InstanceIncrementDecrementOptions): typings.bluebird.mod.^[this.type] = js.native
-  def increment(fields: js.Array[String]): typings.bluebird.mod.^[this.type] = js.native
-  def increment(fields: js.Array[String], options: InstanceIncrementDecrementOptions): typings.bluebird.mod.^[this.type] = js.native
+  def getDataValue(key: /* keyof TAttributes */ String): js.Any = js.native
+  def increment(fields: /* keyof TAttributes */ String): typings.bluebird.mod.^[this.type] = js.native
+  def increment(fields: /* keyof TAttributes */ String, options: InstanceIncrementDecrementOptions): typings.bluebird.mod.^[this.type] = js.native
+  def increment(fields: js.Array[/* keyof TAttributes */ String]): typings.bluebird.mod.^[this.type] = js.native
+  def increment(fields: js.Array[/* keyof TAttributes */ String], options: InstanceIncrementDecrementOptions): typings.bluebird.mod.^[this.type] = js.native
   /**
     * Increment the value of one or more columns. This is done in the database, which means it does not use
     * the values currently stored on the Instance. The increment is done using a
@@ -142,7 +142,7 @@ trait Instance[TAttributes] extends js.Object {
     *
     * If previous is called without an argument, it will return an object containing the previous keys and values that have changed.
     */
-  def previous(key: String): js.Any = js.native
+  def previous(key: /* keyof TAttributes */ String): js.Any = js.native
   /**
     * Refresh the current instance in-place, i.e. update the object with current data from the DB and return
     * the same object. This is different from doing a `find(Instance.id)`, because that would create and
@@ -191,22 +191,22 @@ trait Instance[TAttributes] extends js.Object {
     * @param options.raw If set to true, field and virtual setters will be ignored
     * @param options.reset Clear all previously set data values
     */
-  def set[K /* <: String */](
+  def set[K /* <: /* keyof TAttributes */ String */](
     key: K,
     value: /* import warning: importer.ImportType#apply Failed type conversion: TAttributes[K] */ js.Any
   ): this.type = js.native
-  def set[K /* <: String */](
+  def set[K /* <: /* keyof TAttributes */ String */](
     key: K,
     value: /* import warning: importer.ImportType#apply Failed type conversion: TAttributes[K] */ js.Any,
     options: InstanceSetOptions
   ): this.type = js.native
   def setAttributes(keys: js.Object): this.type = js.native
   def setAttributes(keys: js.Object, options: InstanceSetOptions): this.type = js.native
-  def setAttributes[K /* <: String */](
+  def setAttributes[K /* <: /* keyof TAttributes */ String */](
     key: K,
     value: /* import warning: importer.ImportType#apply Failed type conversion: TAttributes[K] */ js.Any
   ): this.type = js.native
-  def setAttributes[K /* <: String */](
+  def setAttributes[K /* <: /* keyof TAttributes */ String */](
     key: K,
     value: /* import warning: importer.ImportType#apply Failed type conversion: TAttributes[K] */ js.Any,
     options: InstanceSetOptions
@@ -214,7 +214,7 @@ trait Instance[TAttributes] extends js.Object {
   /**
     * Update the underlying data value
     */
-  def setDataValue[K /* <: String */](
+  def setDataValue[K /* <: /* keyof TAttributes */ String */](
     key: K,
     value: /* import warning: importer.ImportType#apply Failed type conversion: TAttributes[K] */ js.Any
   ): Unit = js.native
@@ -228,22 +228,22 @@ trait Instance[TAttributes] extends js.Object {
   /**
     * This is the same as calling `set` and then calling `save`.
     */
-  def update[K /* <: String */](
+  def update[K /* <: /* keyof TAttributes */ String */](
     key: K,
     value: /* import warning: importer.ImportType#apply Failed type conversion: TAttributes[K] */ js.Any
   ): typings.bluebird.mod.^[this.type] = js.native
-  def update[K /* <: String */](
+  def update[K /* <: /* keyof TAttributes */ String */](
     key: K,
     value: /* import warning: importer.ImportType#apply Failed type conversion: TAttributes[K] */ js.Any,
     options: InstanceUpdateOptions
   ): typings.bluebird.mod.^[this.type] = js.native
   def updateAttributes(keys: js.Object): typings.bluebird.mod.^[this.type] = js.native
   def updateAttributes(keys: js.Object, options: InstanceUpdateOptions): typings.bluebird.mod.^[this.type] = js.native
-  def updateAttributes[K /* <: String */](
+  def updateAttributes[K /* <: /* keyof TAttributes */ String */](
     key: K,
     value: /* import warning: importer.ImportType#apply Failed type conversion: TAttributes[K] */ js.Any
   ): typings.bluebird.mod.^[this.type] = js.native
-  def updateAttributes[K /* <: String */](
+  def updateAttributes[K /* <: /* keyof TAttributes */ String */](
     key: K,
     value: /* import warning: importer.ImportType#apply Failed type conversion: TAttributes[K] */ js.Any,
     options: InstanceUpdateOptions

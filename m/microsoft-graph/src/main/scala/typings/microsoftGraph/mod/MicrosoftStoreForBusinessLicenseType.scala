@@ -12,10 +12,8 @@ trait MicrosoftStoreForBusinessLicenseType extends js.Object
 
 object MicrosoftStoreForBusinessLicenseType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def offline: typings.microsoftGraph.microsoftGraphStrings.offline = "offline".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.offline]
   @scala.inline
-  def offline: typings.microsoftGraph.microsoftGraphStrings.offline = this.cast("offline")
-  @scala.inline
-  def online: typings.microsoftGraph.microsoftGraphStrings.online = this.cast("online")
+  def online: typings.microsoftGraph.microsoftGraphStrings.online = "online".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.online]
 }
 

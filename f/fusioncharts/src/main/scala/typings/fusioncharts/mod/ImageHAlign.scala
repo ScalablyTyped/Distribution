@@ -13,12 +13,10 @@ trait ImageHAlign extends js.Object
 
 object ImageHAlign {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def left: typings.fusioncharts.fusionchartsStrings.left = "left".asInstanceOf[typings.fusioncharts.fusionchartsStrings.left]
   @scala.inline
-  def left: typings.fusioncharts.fusionchartsStrings.left = this.cast("left")
+  def middle: typings.fusioncharts.fusionchartsStrings.middle = "middle".asInstanceOf[typings.fusioncharts.fusionchartsStrings.middle]
   @scala.inline
-  def middle: typings.fusioncharts.fusionchartsStrings.middle = this.cast("middle")
-  @scala.inline
-  def right: typings.fusioncharts.fusionchartsStrings.right = this.cast("right")
+  def right: typings.fusioncharts.fusionchartsStrings.right = "right".asInstanceOf[typings.fusioncharts.fusionchartsStrings.right]
 }
 

@@ -13,7 +13,6 @@ object AnonAudioBitsPerSecond {
   @scala.inline
   def apply(audioBitsPerSecond: Double, mimeType: String): AnonAudioBitsPerSecond = {
     val __obj = js.Dynamic.literal(audioBitsPerSecond = audioBitsPerSecond.asInstanceOf[js.Any], mimeType = mimeType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAudioBitsPerSecond]
   }
 }

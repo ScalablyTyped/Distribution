@@ -27,7 +27,6 @@ object ScanCodeData {
   @scala.inline
   def apply(charSet: String, path: String, result: String, scanType: scanType): ScanCodeData = {
     val __obj = js.Dynamic.literal(charSet = charSet.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], scanType = scanType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ScanCodeData]
   }
 }

@@ -24,7 +24,6 @@ object Framebuffer {
     syncSize: (Double, Double) => Unit
   ): Framebuffer = {
     val __obj = js.Dynamic.literal(bind = js.Any.fromFunction0(bind), color = color.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), handle = handle.asInstanceOf[js.Any], syncSize = js.Any.fromFunction2(syncSize))
-  
     __obj.asInstanceOf[Framebuffer]
   }
 }

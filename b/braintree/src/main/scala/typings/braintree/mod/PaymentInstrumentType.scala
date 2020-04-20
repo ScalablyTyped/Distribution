@@ -18,22 +18,20 @@ trait PaymentInstrumentType extends js.Object
 
 object PaymentInstrumentType {
   @scala.inline
-  def android_pay_card: typings.braintree.braintreeStrings.android_pay_card = this.cast("android_pay_card")
+  def android_pay_card: typings.braintree.braintreeStrings.android_pay_card = "android_pay_card".asInstanceOf[typings.braintree.braintreeStrings.android_pay_card]
   @scala.inline
-  def apple_pay_card: typings.braintree.braintreeStrings.apple_pay_card = this.cast("apple_pay_card")
+  def apple_pay_card: typings.braintree.braintreeStrings.apple_pay_card = "apple_pay_card".asInstanceOf[typings.braintree.braintreeStrings.apple_pay_card]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def credit_card: typings.braintree.braintreeStrings.credit_card = "credit_card".asInstanceOf[typings.braintree.braintreeStrings.credit_card]
   @scala.inline
-  def credit_card: typings.braintree.braintreeStrings.credit_card = this.cast("credit_card")
+  def masterpass_card: typings.braintree.braintreeStrings.masterpass_card = "masterpass_card".asInstanceOf[typings.braintree.braintreeStrings.masterpass_card]
   @scala.inline
-  def masterpass_card: typings.braintree.braintreeStrings.masterpass_card = this.cast("masterpass_card")
+  def paypal_account: typings.braintree.braintreeStrings.paypal_account = "paypal_account".asInstanceOf[typings.braintree.braintreeStrings.paypal_account]
   @scala.inline
-  def paypal_account: typings.braintree.braintreeStrings.paypal_account = this.cast("paypal_account")
+  def samsung_pay_card: typings.braintree.braintreeStrings.samsung_pay_card = "samsung_pay_card".asInstanceOf[typings.braintree.braintreeStrings.samsung_pay_card]
   @scala.inline
-  def samsung_pay_card: typings.braintree.braintreeStrings.samsung_pay_card = this.cast("samsung_pay_card")
+  def venmo_account: typings.braintree.braintreeStrings.venmo_account = "venmo_account".asInstanceOf[typings.braintree.braintreeStrings.venmo_account]
   @scala.inline
-  def venmo_account: typings.braintree.braintreeStrings.venmo_account = this.cast("venmo_account")
-  @scala.inline
-  def visa_checkout_card: typings.braintree.braintreeStrings.visa_checkout_card = this.cast("visa_checkout_card")
+  def visa_checkout_card: typings.braintree.braintreeStrings.visa_checkout_card = "visa_checkout_card".asInstanceOf[typings.braintree.braintreeStrings.visa_checkout_card]
 }
 

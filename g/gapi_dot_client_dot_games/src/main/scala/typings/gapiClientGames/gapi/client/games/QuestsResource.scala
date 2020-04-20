@@ -18,7 +18,6 @@ object QuestsResource {
   @scala.inline
   def apply(accept: AnonQuestId => Request_[Quest], list: AnonPageToken => Request_[QuestListResponse]): QuestsResource = {
     val __obj = js.Dynamic.literal(accept = js.Any.fromFunction1(accept), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[QuestsResource]
   }
 }

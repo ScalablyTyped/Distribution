@@ -20,7 +20,6 @@ object AccountRepositoryLoginErrorResponsePhoneVerificationSettings {
     robocall_count_down_time_sec: Double
   ): AccountRepositoryLoginErrorResponsePhoneVerificationSettings = {
     val __obj = js.Dynamic.literal(max_sms_count = max_sms_count.asInstanceOf[js.Any], resend_sms_delay_sec = resend_sms_delay_sec.asInstanceOf[js.Any], robocall_after_max_sms = robocall_after_max_sms.asInstanceOf[js.Any], robocall_count_down_time_sec = robocall_count_down_time_sec.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AccountRepositoryLoginErrorResponsePhoneVerificationSettings]
   }
 }

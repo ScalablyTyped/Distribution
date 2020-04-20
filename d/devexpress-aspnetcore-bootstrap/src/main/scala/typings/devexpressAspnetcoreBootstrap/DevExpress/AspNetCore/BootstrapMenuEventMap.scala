@@ -23,7 +23,6 @@ object BootstrapMenuEventMap {
     popUp: MenuItemEventArgs
   ): BootstrapMenuEventMap = {
     val __obj = js.Dynamic.literal(closeUp = closeUp.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], itemClick = itemClick.asInstanceOf[js.Any], itemMouseOut = itemMouseOut.asInstanceOf[js.Any], itemMouseOver = itemMouseOver.asInstanceOf[js.Any], popUp = popUp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BootstrapMenuEventMap]
   }
 }

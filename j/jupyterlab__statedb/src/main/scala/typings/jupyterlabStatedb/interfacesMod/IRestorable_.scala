@@ -26,7 +26,6 @@ object IRestorable_ {
   @scala.inline
   def apply[T /* <: IObservableDisposable */, U](restore: IOptions[T] => js.Promise[U], restored: js.Promise[U]): IRestorable_[T, U] = {
     val __obj = js.Dynamic.literal(restore = js.Any.fromFunction1(restore), restored = restored.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IRestorable_[T, U]]
   }
 }

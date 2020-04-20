@@ -12,7 +12,6 @@ object IKeytipsButtonExampleState {
   @scala.inline
   def apply(btnDisabled: Boolean): IKeytipsButtonExampleState = {
     val __obj = js.Dynamic.literal(btnDisabled = btnDisabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IKeytipsButtonExampleState]
   }
 }

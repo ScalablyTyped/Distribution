@@ -2,6 +2,14 @@ package typings.smartBuffer
 
 import typings.node.BufferEncoding
 import typings.smartBuffer.mod.SmartBuffer
+import typings.smartBuffer.smartBufferStrings.readBigInt64BE
+import typings.smartBuffer.smartBufferStrings.readBigInt64LE
+import typings.smartBuffer.smartBufferStrings.readBigUInt64BE
+import typings.smartBuffer.smartBufferStrings.readBigUInt64LE
+import typings.smartBuffer.smartBufferStrings.writeBigInt64BE
+import typings.smartBuffer.smartBufferStrings.writeBigInt64LE
+import typings.smartBuffer.smartBufferStrings.writeBigUInt64BE
+import typings.smartBuffer.smartBufferStrings.writeBigUInt64LE
 import typings.std.BigInt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -33,7 +41,9 @@ object utilsMod extends js.Object {
   /**
     * Throws if Node.js version is too low to support bigint
     */
-  def bigIntAndBufferInt64Check(bufferMethod: String): Unit = js.native
+  def bigIntAndBufferInt64Check(
+    bufferMethod: readBigInt64BE | readBigInt64LE | readBigUInt64BE | readBigUInt64LE | writeBigInt64BE | writeBigInt64LE | writeBigUInt64BE | writeBigUInt64LE
+  ): Unit = js.native
   /**
     * Checks if a given encoding is a valid Buffer encoding. (Throws an exception if check fails)
     *

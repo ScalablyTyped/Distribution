@@ -13,7 +13,6 @@ object InsightsServiceStoryResponseInlineInsightsNode {
   @scala.inline
   def apply(metrics: Null, state: String): InsightsServiceStoryResponseInlineInsightsNode = {
     val __obj = js.Dynamic.literal(metrics = metrics.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InsightsServiceStoryResponseInlineInsightsNode]
   }
 }

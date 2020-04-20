@@ -36,32 +36,30 @@ trait XlApplicationInternationalBooleans extends XlApplicationInternational
 
 object XlApplicationInternationalBooleans {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xl24HourClock: `33` = 33.asInstanceOf[`33`]
   @scala.inline
-  def xl24HourClock: `33` = this.cast(33)
+  def xl4DigitYears: `43` = 43.asInstanceOf[`43`]
   @scala.inline
-  def xl4DigitYears: `43` = this.cast(43)
+  def xlCurrencyBefore: `37` = 37.asInstanceOf[`37`]
   @scala.inline
-  def xlCurrencyBefore: `37` = this.cast(37)
+  def xlCurrencyLeadingZeros: `40` = 40.asInstanceOf[`40`]
   @scala.inline
-  def xlCurrencyLeadingZeros: `40` = this.cast(40)
+  def xlCurrencyMinusSign: `38` = 38.asInstanceOf[`38`]
   @scala.inline
-  def xlCurrencyMinusSign: `38` = this.cast(38)
+  def xlCurrencySpaceBefore: `36` = 36.asInstanceOf[`36`]
   @scala.inline
-  def xlCurrencySpaceBefore: `36` = this.cast(36)
+  def xlCurrencyTrailingZeros: `39` = 39.asInstanceOf[`39`]
   @scala.inline
-  def xlCurrencyTrailingZeros: `39` = this.cast(39)
+  def xlDayLeadingZero: `42` = 42.asInstanceOf[`42`]
   @scala.inline
-  def xlDayLeadingZero: `42` = this.cast(42)
+  def xlMDY: `44` = 44.asInstanceOf[`44`]
   @scala.inline
-  def xlMDY: `44` = this.cast(44)
+  def xlMetric: `35` = 35.asInstanceOf[`35`]
   @scala.inline
-  def xlMetric: `35` = this.cast(35)
+  def xlMonthLeadingZero: `41` = 41.asInstanceOf[`41`]
   @scala.inline
-  def xlMonthLeadingZero: `41` = this.cast(41)
+  def xlNonEnglishFunctions: `34` = 34.asInstanceOf[`34`]
   @scala.inline
-  def xlNonEnglishFunctions: `34` = this.cast(34)
-  @scala.inline
-  def xlTimeLeadingZero: `45` = this.cast(45)
+  def xlTimeLeadingZero: `45` = 45.asInstanceOf[`45`]
 }
 

@@ -29,7 +29,6 @@ object LicenseDetailItem {
     Version: String
   ): LicenseDetailItem = {
     val __obj = js.Dynamic.literal(Browser = Browser.asInstanceOf[js.Any], EnumLicenseType = EnumLicenseType.asInstanceOf[js.Any], ExpireDate = ExpireDate.asInstanceOf[js.Any], LicenseType = LicenseType.asInstanceOf[js.Any], OS = OS.asInstanceOf[js.Any], Trial = Trial.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LicenseDetailItem]
   }
 }

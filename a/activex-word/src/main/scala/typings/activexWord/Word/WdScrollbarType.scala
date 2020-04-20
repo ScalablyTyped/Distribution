@@ -16,12 +16,10 @@ trait WdScrollbarType extends js.Object
 
 object WdScrollbarType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdScrollbarTypeAuto: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdScrollbarTypeAuto: `0` = this.cast(0)
+  def wdScrollbarTypeNo: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdScrollbarTypeNo: `2` = this.cast(2)
-  @scala.inline
-  def wdScrollbarTypeYes: `1` = this.cast(1)
+  def wdScrollbarTypeYes: `1` = 1.asInstanceOf[`1`]
 }
 

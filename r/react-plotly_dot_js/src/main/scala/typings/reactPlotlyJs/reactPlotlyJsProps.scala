@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactPlotlyJsProps {
   @scala.inline
-  def ReactPlotlyDotjsProps: PlotParams.type = typings.reactPlotlyJs.mod.PlotParams
+  def ReactPlotlyDotjsProps: PlotParams.type = PlotParams
   type ReactPlotlyDotjsProps = PlotParams
 }
 

@@ -31,7 +31,7 @@ class CancelButton protected () extends Button {
   /**
     * In version 6.7.0: introduced
     */
-  def closePage(): Boolean = js.native
+  def closePage: Boolean = js.native
   def closePage(newValue: Boolean): js.Any = js.native
 }
 

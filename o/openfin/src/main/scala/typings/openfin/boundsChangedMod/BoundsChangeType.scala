@@ -16,12 +16,10 @@ trait BoundsChangeType extends js.Object
 
 object BoundsChangeType {
   @scala.inline
-  def POSITION: `0` = this.cast(0)
+  def POSITION: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def POSITION_AND_SIZE: `2` = this.cast(2)
+  def POSITION_AND_SIZE: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def SIZE: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SIZE: `1` = 1.asInstanceOf[`1`]
 }
 

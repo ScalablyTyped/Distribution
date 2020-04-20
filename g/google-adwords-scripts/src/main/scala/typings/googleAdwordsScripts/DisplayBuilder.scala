@@ -20,7 +20,6 @@ object DisplayBuilder {
     withCpm: Double => T
   ): DisplayBuilder[T] = {
     val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), exclude = js.Any.fromFunction0(exclude), withCpc = js.Any.fromFunction1(withCpc), withCpm = js.Any.fromFunction1(withCpm))
-  
     __obj.asInstanceOf[DisplayBuilder[T]]
   }
 }

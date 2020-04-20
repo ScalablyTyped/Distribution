@@ -14,7 +14,6 @@ object ILightSensorReading {
   @scala.inline
   def apply(illuminanceInLux: Double, timestamp: Date): ILightSensorReading = {
     val __obj = js.Dynamic.literal(illuminanceInLux = illuminanceInLux.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ILightSensorReading]
   }
 }

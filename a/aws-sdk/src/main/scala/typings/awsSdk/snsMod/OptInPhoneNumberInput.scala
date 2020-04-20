@@ -16,7 +16,6 @@ object OptInPhoneNumberInput {
   @scala.inline
   def apply(phoneNumber: PhoneNumber): OptInPhoneNumberInput = {
     val __obj = js.Dynamic.literal(phoneNumber = phoneNumber.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OptInPhoneNumberInput]
   }
 }

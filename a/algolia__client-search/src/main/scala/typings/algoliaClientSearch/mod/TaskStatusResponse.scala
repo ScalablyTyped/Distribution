@@ -20,7 +20,6 @@ object TaskStatusResponse {
   @scala.inline
   def apply(pendingTask: Boolean, status: String): TaskStatusResponse = {
     val __obj = js.Dynamic.literal(pendingTask = pendingTask.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TaskStatusResponse]
   }
 }

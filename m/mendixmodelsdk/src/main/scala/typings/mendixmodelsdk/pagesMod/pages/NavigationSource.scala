@@ -27,13 +27,13 @@ class NavigationSource protected () extends MenuSource {
   /**
     * In version 7.2.0: introduced
     */
-  def navigationProfile(): INavigationProfile = js.native
+  def navigationProfile: INavigationProfile = js.native
   def navigationProfile(newValue: INavigationProfile): js.Any = js.native
-  def navigationProfileQualifiedName(): String = js.native
+  def navigationProfileQualifiedName: String = js.native
   /**
     * In version 7.2.0: deleted
     */
-  def profileType(): ProfileType = js.native
+  def profileType: ProfileType = js.native
   def profileType(newValue: ProfileType): js.Any = js.native
 }
 

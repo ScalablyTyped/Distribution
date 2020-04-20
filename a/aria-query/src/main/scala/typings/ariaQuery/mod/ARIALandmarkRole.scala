@@ -18,22 +18,20 @@ trait ARIALandmarkRole extends js.Object
 
 object ARIALandmarkRole {
   @scala.inline
-  def application: typings.ariaQuery.ariaQueryStrings.application = this.cast("application")
+  def application: typings.ariaQuery.ariaQueryStrings.application = "application".asInstanceOf[typings.ariaQuery.ariaQueryStrings.application]
   @scala.inline
-  def banner: typings.ariaQuery.ariaQueryStrings.banner = this.cast("banner")
+  def banner: typings.ariaQuery.ariaQueryStrings.banner = "banner".asInstanceOf[typings.ariaQuery.ariaQueryStrings.banner]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def complementary: typings.ariaQuery.ariaQueryStrings.complementary = "complementary".asInstanceOf[typings.ariaQuery.ariaQueryStrings.complementary]
   @scala.inline
-  def complementary: typings.ariaQuery.ariaQueryStrings.complementary = this.cast("complementary")
+  def contentinfo: typings.ariaQuery.ariaQueryStrings.contentinfo = "contentinfo".asInstanceOf[typings.ariaQuery.ariaQueryStrings.contentinfo]
   @scala.inline
-  def contentinfo: typings.ariaQuery.ariaQueryStrings.contentinfo = this.cast("contentinfo")
+  def form: typings.ariaQuery.ariaQueryStrings.form = "form".asInstanceOf[typings.ariaQuery.ariaQueryStrings.form]
   @scala.inline
-  def form: typings.ariaQuery.ariaQueryStrings.form = this.cast("form")
+  def main: typings.ariaQuery.ariaQueryStrings.main = "main".asInstanceOf[typings.ariaQuery.ariaQueryStrings.main]
   @scala.inline
-  def main: typings.ariaQuery.ariaQueryStrings.main = this.cast("main")
+  def navigation: typings.ariaQuery.ariaQueryStrings.navigation = "navigation".asInstanceOf[typings.ariaQuery.ariaQueryStrings.navigation]
   @scala.inline
-  def navigation: typings.ariaQuery.ariaQueryStrings.navigation = this.cast("navigation")
-  @scala.inline
-  def search: typings.ariaQuery.ariaQueryStrings.search = this.cast("search")
+  def search: typings.ariaQuery.ariaQueryStrings.search = "search".asInstanceOf[typings.ariaQuery.ariaQueryStrings.search]
 }
 

@@ -12,7 +12,6 @@ object ReposListPagesBuildsResponseItemError {
   @scala.inline
   def apply(message: Null): ReposListPagesBuildsResponseItemError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReposListPagesBuildsResponseItemError]
   }
 }

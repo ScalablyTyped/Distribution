@@ -16,7 +16,6 @@ object Chart {
   @scala.inline
   def apply(hasParallelCoordinates: Boolean): Chart = {
     val __obj = js.Dynamic.literal(hasParallelCoordinates = hasParallelCoordinates.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Chart]
   }
 }

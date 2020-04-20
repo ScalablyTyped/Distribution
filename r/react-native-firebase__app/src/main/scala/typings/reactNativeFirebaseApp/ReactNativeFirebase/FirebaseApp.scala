@@ -23,7 +23,6 @@ object FirebaseApp {
   @scala.inline
   def apply(delete: () => js.Promise[Unit], name: String, options: FirebaseAppOptions): FirebaseApp = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction0(delete), name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FirebaseApp]
   }
 }

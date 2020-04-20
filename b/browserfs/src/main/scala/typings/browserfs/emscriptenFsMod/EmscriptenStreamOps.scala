@@ -23,7 +23,6 @@ object EmscriptenStreamOps {
     write: (EmscriptenStream, Uint8Array, Double, Double, Double) => Double
   ): EmscriptenStreamOps = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction1(close), llseek = js.Any.fromFunction3(llseek), open = js.Any.fromFunction1(open), read = js.Any.fromFunction5(read), write = js.Any.fromFunction5(write))
-  
     __obj.asInstanceOf[EmscriptenStreamOps]
   }
 }

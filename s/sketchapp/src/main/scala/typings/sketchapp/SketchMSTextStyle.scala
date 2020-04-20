@@ -14,7 +14,6 @@ object SketchMSTextStyle {
   @scala.inline
   def apply(_class: textStyle, encodedAttributes: SketchMSAttributes): SketchMSTextStyle = {
     val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], encodedAttributes = encodedAttributes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SketchMSTextStyle]
   }
 }

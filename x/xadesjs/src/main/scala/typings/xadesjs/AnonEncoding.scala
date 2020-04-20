@@ -28,7 +28,6 @@ object AnonEncoding {
     Uri: String
   ): AnonEncoding = {
     val __obj = js.Dynamic.literal(Encoding = Encoding.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], ObjectReference = ObjectReference.asInstanceOf[js.Any], Qualifier = Qualifier.asInstanceOf[js.Any], ReferencedData = ReferencedData.asInstanceOf[js.Any], Target = Target.asInstanceOf[js.Any], URI = URI.asInstanceOf[js.Any], Uri = Uri.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEncoding]
   }
 }

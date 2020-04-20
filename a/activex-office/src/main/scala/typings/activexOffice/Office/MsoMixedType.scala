@@ -14,10 +14,8 @@ trait MsoMixedType extends js.Object
 
 object MsoMixedType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoIntegerMixed: `32768` = 32768.asInstanceOf[`32768`]
   @scala.inline
-  def msoIntegerMixed: `32768` = this.cast(32768)
-  @scala.inline
-  def msoSingleMixed: `-2147483648` = this.cast(-2147483648)
+  def msoSingleMixed: `-2147483648` = -2147483648.asInstanceOf[`-2147483648`]
 }
 

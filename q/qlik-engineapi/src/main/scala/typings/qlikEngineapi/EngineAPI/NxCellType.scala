@@ -17,20 +17,18 @@ trait NxCellType extends js.Object
 
 object NxCellType {
   @scala.inline
-  def E: typings.qlikEngineapi.qlikEngineapiStrings.E = this.cast("E")
+  def E: typings.qlikEngineapi.qlikEngineapiStrings.E = "E".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.E]
   @scala.inline
-  def N: typings.qlikEngineapi.qlikEngineapiStrings.N = this.cast("N")
+  def N: typings.qlikEngineapi.qlikEngineapiStrings.N = "N".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.N]
   @scala.inline
-  def P: typings.qlikEngineapi.qlikEngineapiStrings.P = this.cast("P")
+  def P: typings.qlikEngineapi.qlikEngineapiStrings.P = "P".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.P]
   @scala.inline
-  def R: typings.qlikEngineapi.qlikEngineapiStrings.R = this.cast("R")
+  def R: typings.qlikEngineapi.qlikEngineapiStrings.R = "R".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.R]
   @scala.inline
-  def T: typings.qlikEngineapi.qlikEngineapiStrings.T = this.cast("T")
+  def T: typings.qlikEngineapi.qlikEngineapiStrings.T = "T".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.T]
   @scala.inline
-  def U: typings.qlikEngineapi.qlikEngineapiStrings.U = this.cast("U")
+  def U: typings.qlikEngineapi.qlikEngineapiStrings.U = "U".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.U]
   @scala.inline
-  def V: typings.qlikEngineapi.qlikEngineapiStrings.V = this.cast("V")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def V: typings.qlikEngineapi.qlikEngineapiStrings.V = "V".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.V]
 }
 

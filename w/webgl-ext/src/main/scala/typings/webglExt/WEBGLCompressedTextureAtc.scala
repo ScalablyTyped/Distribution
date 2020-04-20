@@ -18,7 +18,6 @@ object WEBGLCompressedTextureAtc {
     COMPRESSED_RGB_ATC_WEBGL: Double
   ): WEBGLCompressedTextureAtc = {
     val __obj = js.Dynamic.literal(COMPRESSED_RGBA_ATC_EXPLICIT_ALPHA_WEBGL = COMPRESSED_RGBA_ATC_EXPLICIT_ALPHA_WEBGL.asInstanceOf[js.Any], COMPRESSED_RGBA_ATC_INTERPOLATED_ALPHA_WEBGL = COMPRESSED_RGBA_ATC_INTERPOLATED_ALPHA_WEBGL.asInstanceOf[js.Any], COMPRESSED_RGB_ATC_WEBGL = COMPRESSED_RGB_ATC_WEBGL.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WEBGLCompressedTextureAtc]
   }
 }

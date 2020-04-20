@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation._
 
 /**
 		 * Converts strings formatted as addresses into clickable links.
+		 * @deprecated Use [Titanium.UI.AUTOLINK_MAP_ADDRESSES](Titanium.UI.AUTOLINK_MAP_ADDRESSES) instead.
 		 */
 @JSGlobal("Titanium.UI.AUTODETECT_ADDRESS")
 @js.native
-object AUTODETECT_ADDRESS extends TopLevel[Double]
+object AUTODETECT_ADDRESS
+  extends TopLevel[scala.Nothing]
 

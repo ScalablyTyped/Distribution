@@ -18,14 +18,12 @@ trait styleEmptyCells extends js.Object
 
 object styleEmptyCells {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleEmptyCellsHide: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleEmptyCellsHide: `2` = this.cast(2)
+  def styleEmptyCellsNotSet: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleEmptyCellsNotSet: `0` = this.cast(0)
+  def styleEmptyCellsShow: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleEmptyCellsShow: `1` = this.cast(1)
-  @scala.inline
-  def styleEmptyCells_Max: `2147483647` = this.cast(2147483647)
+  def styleEmptyCells_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

@@ -23,7 +23,6 @@ object IIterable {
   @scala.inline
   def apply[T](iter: () => IIterator[T]): IIterable[T] = {
     val __obj = js.Dynamic.literal(iter = js.Any.fromFunction0(iter))
-  
     __obj.asInstanceOf[IIterable[T]]
   }
 }

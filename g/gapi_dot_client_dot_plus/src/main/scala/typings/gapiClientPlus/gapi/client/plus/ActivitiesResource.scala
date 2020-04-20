@@ -25,7 +25,6 @@ object ActivitiesResource {
     search: AnonFields => Request_[ActivityFeed]
   ): ActivitiesResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), search = js.Any.fromFunction1(search))
-  
     __obj.asInstanceOf[ActivitiesResource]
   }
 }

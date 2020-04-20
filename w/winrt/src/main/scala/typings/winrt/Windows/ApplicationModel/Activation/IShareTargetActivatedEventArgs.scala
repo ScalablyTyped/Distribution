@@ -18,7 +18,6 @@ object IShareTargetActivatedEventArgs {
     splashScreen: SplashScreen
   ): IShareTargetActivatedEventArgs = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], previousExecutionState = previousExecutionState.asInstanceOf[js.Any], shareOperation = shareOperation.asInstanceOf[js.Any], splashScreen = splashScreen.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IShareTargetActivatedEventArgs]
   }
 }

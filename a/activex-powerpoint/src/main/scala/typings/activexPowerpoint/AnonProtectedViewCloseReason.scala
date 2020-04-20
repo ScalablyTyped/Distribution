@@ -20,7 +20,6 @@ object AnonProtectedViewCloseReason {
     ProtectedViewCloseReason: PpProtectedViewCloseReason
   ): AnonProtectedViewCloseReason = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], ProtViewWindow = ProtViewWindow.asInstanceOf[js.Any], ProtectedViewCloseReason = ProtectedViewCloseReason.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonProtectedViewCloseReason]
   }
 }

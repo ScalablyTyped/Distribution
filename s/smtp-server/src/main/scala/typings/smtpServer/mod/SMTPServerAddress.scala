@@ -19,7 +19,6 @@ object SMTPServerAddress {
   @scala.inline
   def apply(address: String, args: js.Object): SMTPServerAddress = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], args = args.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SMTPServerAddress]
   }
 }

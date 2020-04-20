@@ -13,7 +13,6 @@ object ISpiProvider {
   @scala.inline
   def apply(getControllersAsync: js.Any): ISpiProvider = {
     val __obj = js.Dynamic.literal(getControllersAsync = getControllersAsync.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISpiProvider]
   }
 }

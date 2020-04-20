@@ -16,12 +16,10 @@ trait WdRevisionsWrap extends js.Object
 
 object WdRevisionsWrap {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdWrapAlways: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdWrapAlways: `1` = this.cast(1)
+  def wdWrapAsk: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdWrapAsk: `2` = this.cast(2)
-  @scala.inline
-  def wdWrapNever: `0` = this.cast(0)
+  def wdWrapNever: `0` = 0.asInstanceOf[`0`]
 }
 

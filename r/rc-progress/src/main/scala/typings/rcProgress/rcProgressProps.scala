@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait rcProgressProps {
   @scala.inline
-  def CircleProps: RCProgressProps.type = typings.rcProgress.mod.RCProgressProps
+  def CircleProps: RCProgressProps.type = RCProgressProps
   type CircleProps = RCProgressProps
   @scala.inline
-  def LineProps: RCProgressProps.type = typings.rcProgress.mod.RCProgressProps
+  def LineProps: RCProgressProps.type = RCProgressProps
   type LineProps = RCProgressProps
 }
 

@@ -35,7 +35,6 @@ object StatefulHost {
   @scala.inline
   def apply(accept: CallType, lastUpdate: Double, protocol: String, status: HostStatusType, url: String): StatefulHost = {
     val __obj = js.Dynamic.literal(accept = accept.asInstanceOf[js.Any], lastUpdate = lastUpdate.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StatefulHost]
   }
 }

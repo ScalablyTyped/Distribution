@@ -12,7 +12,6 @@ object AnonDefineCommand {
   @scala.inline
   def apply(defineCommand: (String, String, String) => Unit): AnonDefineCommand = {
     val __obj = js.Dynamic.literal(defineCommand = js.Any.fromFunction3(defineCommand))
-  
     __obj.asInstanceOf[AnonDefineCommand]
   }
 }

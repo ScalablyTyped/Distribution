@@ -32,7 +32,6 @@ object Switchery_ {
   @scala.inline
   def apply(destroy: () => Unit, disable: () => Unit, enable: () => Unit, isDisabled: () => Boolean): Switchery_ = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), isDisabled = js.Any.fromFunction0(isDisabled))
-  
     __obj.asInstanceOf[Switchery_]
   }
 }

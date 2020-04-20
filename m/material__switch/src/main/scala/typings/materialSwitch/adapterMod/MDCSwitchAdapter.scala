@@ -37,7 +37,6 @@ object MDCSwitchAdapter {
     setNativeControlDisabled: Boolean => Unit
   ): MDCSwitchAdapter = {
     val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), removeClass = js.Any.fromFunction1(removeClass), setNativeControlAttr = js.Any.fromFunction2(setNativeControlAttr), setNativeControlChecked = js.Any.fromFunction1(setNativeControlChecked), setNativeControlDisabled = js.Any.fromFunction1(setNativeControlDisabled))
-  
     __obj.asInstanceOf[MDCSwitchAdapter]
   }
 }

@@ -19,7 +19,6 @@ object publishingClient {
   @scala.inline
   def apply(boundRecords: js.Any, id: String): publishingClient = {
     val __obj = js.Dynamic.literal(boundRecords = boundRecords.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[publishingClient]
   }
 }

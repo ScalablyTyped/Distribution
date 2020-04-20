@@ -18,7 +18,6 @@ object UrlbarOnQueryCanceledEvent {
     removeListener: TCallback => Unit
   ): UrlbarOnQueryCanceledEvent[TCallback] = {
     val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction2(addListener), hasListener = js.Any.fromFunction1(hasListener), removeListener = js.Any.fromFunction1(removeListener))
-  
     __obj.asInstanceOf[UrlbarOnQueryCanceledEvent[TCallback]]
   }
 }

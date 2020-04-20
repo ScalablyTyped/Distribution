@@ -13,12 +13,10 @@ trait RTCDegradationPreference extends js.Object
 
 object RTCDegradationPreference {
   @scala.inline
-  def balanced: typings.std.stdStrings.balanced = this.cast("balanced")
+  def balanced: typings.std.stdStrings.balanced = "balanced".asInstanceOf[typings.std.stdStrings.balanced]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `maintain-framerate`: typings.std.stdStrings.`maintain-framerate` = "maintain-framerate".asInstanceOf[typings.std.stdStrings.`maintain-framerate`]
   @scala.inline
-  def `maintain-framerate`: typings.std.stdStrings.`maintain-framerate` = this.cast("maintain-framerate")
-  @scala.inline
-  def `maintain-resolution`: typings.std.stdStrings.`maintain-resolution` = this.cast("maintain-resolution")
+  def `maintain-resolution`: typings.std.stdStrings.`maintain-resolution` = "maintain-resolution".asInstanceOf[typings.std.stdStrings.`maintain-resolution`]
 }
 

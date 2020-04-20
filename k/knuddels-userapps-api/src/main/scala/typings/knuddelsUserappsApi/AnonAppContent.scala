@@ -15,7 +15,6 @@ object AnonAppContent {
   @scala.inline
   def apply(appContent: AppContent, user: User): AnonAppContent = {
     val __obj = js.Dynamic.literal(appContent = appContent.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAppContent]
   }
 }

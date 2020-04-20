@@ -17,7 +17,6 @@ object AnonReplacedTabId {
   @scala.inline
   def apply(replacedTabId: Double, tabId: Double, timeStamp: Double): AnonReplacedTabId = {
     val __obj = js.Dynamic.literal(replacedTabId = replacedTabId.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonReplacedTabId]
   }
 }

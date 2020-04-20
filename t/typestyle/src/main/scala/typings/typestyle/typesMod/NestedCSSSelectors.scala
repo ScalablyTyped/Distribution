@@ -171,8 +171,8 @@ object NestedCSSSelectors {
   /* selector */ StringDictionary[js.UndefOr[NestedCSSProperties]] = null
   ): NestedCSSSelectors = {
     val __obj = js.Dynamic.literal()
-    if (`@media screen and Leftparenthesismax-widthColon 700pxRightparenthesis` != null) __obj.updateDynamic("@media screen and (max-width: 700px)")(`@media screen and Leftparenthesismax-widthColon 700pxRightparenthesis`.asInstanceOf[js.Any])
-    if (`@media screen and Leftparenthesismin-widthColon 700pxRightparenthesis` != null) __obj.updateDynamic("@media screen and (min-width: 700px)")(`@media screen and Leftparenthesismin-widthColon 700pxRightparenthesis`.asInstanceOf[js.Any])
+    if (`@media screen and Leftparenthesismax-widthColon 700pxRightparenthesis` != null) __obj.updateDynamic("@media screen and (max-width: 700px)")((`@media screen and Leftparenthesismax-widthColon 700pxRightparenthesis`).asInstanceOf[js.Any])
+    if (`@media screen and Leftparenthesismin-widthColon 700pxRightparenthesis` != null) __obj.updateDynamic("@media screen and (min-width: 700px)")((`@media screen and Leftparenthesismin-widthColon 700pxRightparenthesis`).asInstanceOf[js.Any])
     if (AmpersandColonColonafter != null) __obj.updateDynamic("&::after")(AmpersandColonColonafter.asInstanceOf[js.Any])
     if (AmpersandColonColonbackdrop != null) __obj.updateDynamic("&::backdrop")(AmpersandColonColonbackdrop.asInstanceOf[js.Any])
     if (AmpersandColonColonbefore != null) __obj.updateDynamic("&::before")(AmpersandColonColonbefore.asInstanceOf[js.Any])

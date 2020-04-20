@@ -10,7 +10,7 @@ trait LineItem extends GraphModel {
     * previously before the product went on sale.
     * If no compareAtPrice is set then this value will be null. An example value: "5.00".
     */
-  var compare_at_price: String
+  var compare_at_price: String | Null
   /**
     * Variant's weight in grams. If no weight is set then 0 is returned.
     */
@@ -57,7 +57,6 @@ trait LineItem extends GraphModel {
 object LineItem {
   @scala.inline
   def apply(
-    compare_at_price: String,
     grams: Double,
     id: String | Double,
     image: Image,
@@ -69,10 +68,12 @@ object LineItem {
     variant_id: String | Double,
     variant_title: String,
     attrs: js.Any = null,
+    compare_at_price: String = null,
     onlineStoreUrl: String = null
   ): LineItem = {
-    val __obj = js.Dynamic.literal(compare_at_price = compare_at_price.asInstanceOf[js.Any], grams = grams.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], line_price = line_price.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], product_id = product_id.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], variant_id = variant_id.asInstanceOf[js.Any], variant_title = variant_title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(grams = grams.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], line_price = line_price.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], product_id = product_id.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], variant_id = variant_id.asInstanceOf[js.Any], variant_title = variant_title.asInstanceOf[js.Any])
     if (attrs != null) __obj.updateDynamic("attrs")(attrs.asInstanceOf[js.Any])
+    if (compare_at_price != null) __obj.updateDynamic("compare_at_price")(compare_at_price.asInstanceOf[js.Any])
     if (onlineStoreUrl != null) __obj.updateDynamic("onlineStoreUrl")(onlineStoreUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineItem]
   }

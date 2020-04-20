@@ -16,7 +16,6 @@ object ReportTaskProgressOutput {
   @scala.inline
   def apply(canceled: Boolean): ReportTaskProgressOutput = {
     val __obj = js.Dynamic.literal(canceled = canceled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReportTaskProgressOutput]
   }
 }

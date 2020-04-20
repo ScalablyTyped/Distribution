@@ -13,7 +13,6 @@ object MultiPeriodMarking {
   @scala.inline
   def apply(periods: js.Array[AnonColor]): MultiPeriodMarking = {
     val __obj = js.Dynamic.literal(periods = periods.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MultiPeriodMarking]
   }
 }

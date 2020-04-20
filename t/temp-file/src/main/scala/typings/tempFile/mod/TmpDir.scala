@@ -20,6 +20,6 @@ class TmpDir () extends js.Object {
   def getTempFile(): js.Promise[String] = js.native
   def getTempFile(options: GetTempFileOptions): js.Promise[String] = js.native
   def getTempFile(options: GetTempFileOptions, isDir: Boolean): js.Promise[String] = js.native
-  def rootTempDir(): js.Promise[String] = js.native
+  def rootTempDir: js.Promise[String] = js.native
 }
 

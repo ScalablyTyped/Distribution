@@ -16,7 +16,6 @@ object GetDigestRequest {
   @scala.inline
   def apply(Name: LedgerName): GetDigestRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDigestRequest]
   }
 }

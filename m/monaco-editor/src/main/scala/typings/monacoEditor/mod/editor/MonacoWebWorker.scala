@@ -29,7 +29,6 @@ object MonacoWebWorker {
     withSyncedResources: js.Array[Uri] => js.Promise[T]
   ): MonacoWebWorker[T] = {
     val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), getProxy = js.Any.fromFunction0(getProxy), withSyncedResources = js.Any.fromFunction1(withSyncedResources))
-  
     __obj.asInstanceOf[MonacoWebWorker[T]]
   }
 }

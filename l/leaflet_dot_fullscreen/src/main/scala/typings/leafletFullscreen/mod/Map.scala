@@ -12,7 +12,6 @@ object Map {
   @scala.inline
   def apply(toggleFullScreen: () => Unit): Map = {
     val __obj = js.Dynamic.literal(toggleFullScreen = js.Any.fromFunction0(toggleFullScreen))
-  
     __obj.asInstanceOf[Map]
   }
 }

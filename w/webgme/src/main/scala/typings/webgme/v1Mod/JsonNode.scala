@@ -28,7 +28,6 @@ object JsonNode {
     sets: js.Any
   ): JsonNode = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], constratints = constratints.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], pointers = pointers.asInstanceOf[js.Any], registry = registry.asInstanceOf[js.Any], sets = sets.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JsonNode]
   }
 }

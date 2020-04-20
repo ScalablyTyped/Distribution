@@ -16,7 +16,6 @@ object DefaultFormsInformationRequestor {
     onDefaultFormsInformationRetrieveSuccess: DefaultFormsInformation => Unit
   ): DefaultFormsInformationRequestor = {
     val __obj = js.Dynamic.literal(onDefaultFormsInformationRetrieveFailure = js.Any.fromFunction0(onDefaultFormsInformationRetrieveFailure), onDefaultFormsInformationRetrieveSuccess = js.Any.fromFunction1(onDefaultFormsInformationRetrieveSuccess))
-  
     __obj.asInstanceOf[DefaultFormsInformationRequestor]
   }
 }

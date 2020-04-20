@@ -88,7 +88,6 @@ object AnonALT {
     WIN: Double
   ): AnonALT = {
     val __obj = js.Dynamic.literal(ALT = ALT.asInstanceOf[js.Any], ALTR = ALTR.asInstanceOf[js.Any], ALTRIGHT = ALTRIGHT.asInstanceOf[js.Any], BACKSPACE = BACKSPACE.asInstanceOf[js.Any], BCKSP = BCKSP.asInstanceOf[js.Any], CAPSLOCK = CAPSLOCK.asInstanceOf[js.Any], CTRL = CTRL.asInstanceOf[js.Any], CTRLR = CTRLR.asInstanceOf[js.Any], CTRLRIGHT = CTRLRIGHT.asInstanceOf[js.Any], DEL = DEL.asInstanceOf[js.Any], DOWN = DOWN.asInstanceOf[js.Any], ENTER = ENTER.asInstanceOf[js.Any], ESC = ESC.asInstanceOf[js.Any], F1 = F1.asInstanceOf[js.Any], F10 = F10.asInstanceOf[js.Any], F11 = F11.asInstanceOf[js.Any], F12 = F12.asInstanceOf[js.Any], F2 = F2.asInstanceOf[js.Any], F3 = F3.asInstanceOf[js.Any], F4 = F4.asInstanceOf[js.Any], F5 = F5.asInstanceOf[js.Any], F6 = F6.asInstanceOf[js.Any], F7 = F7.asInstanceOf[js.Any], F8 = F8.asInstanceOf[js.Any], F9 = F9.asInstanceOf[js.Any], FN = FN.asInstanceOf[js.Any], LEFT = LEFT.asInstanceOf[js.Any], MAC = MAC.asInstanceOf[js.Any], PG_DOWN = PG_DOWN.asInstanceOf[js.Any], PG_UP = PG_UP.asInstanceOf[js.Any], RETURN = RETURN.asInstanceOf[js.Any], RIGHT = RIGHT.asInstanceOf[js.Any], SHIFT = SHIFT.asInstanceOf[js.Any], SPACE = SPACE.asInstanceOf[js.Any], STRG = STRG.asInstanceOf[js.Any], TAB = TAB.asInstanceOf[js.Any], UP = UP.asInstanceOf[js.Any], WIN = WIN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonALT]
   }
 }

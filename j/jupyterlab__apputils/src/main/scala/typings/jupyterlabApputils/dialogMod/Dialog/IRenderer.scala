@@ -53,7 +53,6 @@ object IRenderer {
     createHeader: Header => Widget
   ): IRenderer = {
     val __obj = js.Dynamic.literal(createBody = js.Any.fromFunction1(createBody), createButtonNode = js.Any.fromFunction1(createButtonNode), createFooter = js.Any.fromFunction1(createFooter), createHeader = js.Any.fromFunction1(createHeader))
-  
     __obj.asInstanceOf[IRenderer]
   }
 }

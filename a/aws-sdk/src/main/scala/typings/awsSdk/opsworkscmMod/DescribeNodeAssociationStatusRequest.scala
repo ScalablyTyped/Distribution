@@ -20,7 +20,6 @@ object DescribeNodeAssociationStatusRequest {
   @scala.inline
   def apply(NodeAssociationStatusToken: NodeAssociationStatusToken, ServerName: ServerName): DescribeNodeAssociationStatusRequest = {
     val __obj = js.Dynamic.literal(NodeAssociationStatusToken = NodeAssociationStatusToken.asInstanceOf[js.Any], ServerName = ServerName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeNodeAssociationStatusRequest]
   }
 }

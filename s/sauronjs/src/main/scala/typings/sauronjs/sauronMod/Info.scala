@@ -12,7 +12,6 @@ object Info {
   @scala.inline
   def apply(total: Double): Info = {
     val __obj = js.Dynamic.literal(total = total.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Info]
   }
 }

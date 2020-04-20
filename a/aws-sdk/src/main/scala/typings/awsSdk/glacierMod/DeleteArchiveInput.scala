@@ -24,7 +24,6 @@ object DeleteArchiveInput {
   @scala.inline
   def apply(accountId: String, archiveId: String, vaultName: String): DeleteArchiveInput = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], archiveId = archiveId.asInstanceOf[js.Any], vaultName = vaultName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteArchiveInput]
   }
 }

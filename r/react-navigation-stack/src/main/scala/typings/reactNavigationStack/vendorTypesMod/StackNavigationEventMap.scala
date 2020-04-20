@@ -20,7 +20,6 @@ object StackNavigationEventMap {
   @scala.inline
   def apply(transitionEnd: AnonData, transitionStart: AnonData): StackNavigationEventMap = {
     val __obj = js.Dynamic.literal(transitionEnd = transitionEnd.asInstanceOf[js.Any], transitionStart = transitionStart.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StackNavigationEventMap]
   }
 }

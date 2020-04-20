@@ -14,7 +14,6 @@ object HeaderIndex {
   @scala.inline
   def apply(el: HTMLElement, toolbars: js.Array[js.Any | ToolbarIndex]): HeaderIndex = {
     val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any], toolbars = toolbars.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HeaderIndex]
   }
 }

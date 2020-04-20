@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "joi-password-complexity"
-version := "3.1-dt-20190820Z-523b4c"
+version := "3.1-dt-20190820Z-5d548a"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -26,7 +26,6 @@ object DeferPlaceholder {
     typeName: String
   ): DeferPlaceholder = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], typeName = typeName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeferPlaceholder]
   }
 }

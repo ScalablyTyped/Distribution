@@ -20,7 +20,6 @@ object GetThirdPartyJobDetailsInput {
   @scala.inline
   def apply(clientToken: ClientToken, jobId: ThirdPartyJobId): GetThirdPartyJobDetailsInput = {
     val __obj = js.Dynamic.literal(clientToken = clientToken.asInstanceOf[js.Any], jobId = jobId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetThirdPartyJobDetailsInput]
   }
 }

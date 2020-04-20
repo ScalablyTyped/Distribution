@@ -14,7 +14,6 @@ object ElevationResult {
   @scala.inline
   def apply(elevation: Double, location: LatLng, resolution: Double): ElevationResult = {
     val __obj = js.Dynamic.literal(elevation = elevation.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], resolution = resolution.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ElevationResult]
   }
 }

@@ -24,7 +24,6 @@ object GetNodeInput {
   @scala.inline
   def apply(MemberId: ResourceIdString, NetworkId: ResourceIdString, NodeId: ResourceIdString): GetNodeInput = {
     val __obj = js.Dynamic.literal(MemberId = MemberId.asInstanceOf[js.Any], NetworkId = NetworkId.asInstanceOf[js.Any], NodeId = NodeId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetNodeInput]
   }
 }

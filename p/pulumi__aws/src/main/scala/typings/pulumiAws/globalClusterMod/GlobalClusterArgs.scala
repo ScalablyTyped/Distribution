@@ -16,7 +16,7 @@ trait GlobalClusterArgs extends js.Object {
     */
   val deletionProtection: js.UndefOr[Input[Boolean]] = js.native
   /**
-    * Name of the database engine to be used for this DB cluster. Valid values: `aurora`, `aurora-mysql`. Defaults to `aurora`.
+    * Name of the database engine to be used for this DB cluster. Valid values: `aurora`, `aurora-mysql`, `aurora-postgresql`. Defaults to `aurora`.
     */
   val engine: js.UndefOr[Input[String]] = js.native
   /**

@@ -16,7 +16,6 @@ object StopMultiplexRequest {
   @scala.inline
   def apply(MultiplexId: string): StopMultiplexRequest = {
     val __obj = js.Dynamic.literal(MultiplexId = MultiplexId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopMultiplexRequest]
   }
 }

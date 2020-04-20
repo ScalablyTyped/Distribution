@@ -13,7 +13,6 @@ object PickEmojiDataid {
   @scala.inline
   def apply(id: js.Any): PickEmojiDataid = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickEmojiDataid]
   }
 }

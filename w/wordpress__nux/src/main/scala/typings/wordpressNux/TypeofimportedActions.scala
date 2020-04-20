@@ -20,7 +20,6 @@ object TypeofimportedActions {
     triggerGuide: js.Array[String] => Unit
   ): TypeofimportedActions = {
     val __obj = js.Dynamic.literal(disableTips = js.Any.fromFunction0(disableTips), dismissTip = js.Any.fromFunction1(dismissTip), enableTips = js.Any.fromFunction0(enableTips), triggerGuide = js.Any.fromFunction1(triggerGuide))
-  
     __obj.asInstanceOf[TypeofimportedActions]
   }
 }

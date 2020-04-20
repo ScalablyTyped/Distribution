@@ -17,20 +17,18 @@ trait DayOfWeekString extends js.Object
 
 object DayOfWeekString {
   @scala.inline
-  def FRIDAY: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.FRIDAY = this.cast("FRIDAY")
+  def FRIDAY: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.FRIDAY = "FRIDAY".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.FRIDAY]
   @scala.inline
-  def MONDAY: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.MONDAY = this.cast("MONDAY")
+  def MONDAY: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.MONDAY = "MONDAY".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.MONDAY]
   @scala.inline
-  def SATURDAY: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.SATURDAY = this.cast("SATURDAY")
+  def SATURDAY: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.SATURDAY = "SATURDAY".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.SATURDAY]
   @scala.inline
-  def SUNDAY: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.SUNDAY = this.cast("SUNDAY")
+  def SUNDAY: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.SUNDAY = "SUNDAY".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.SUNDAY]
   @scala.inline
-  def THURSDAY: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.THURSDAY = this.cast("THURSDAY")
+  def THURSDAY: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.THURSDAY = "THURSDAY".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.THURSDAY]
   @scala.inline
-  def TUESDAY: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.TUESDAY = this.cast("TUESDAY")
+  def TUESDAY: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.TUESDAY = "TUESDAY".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.TUESDAY]
   @scala.inline
-  def WEDNESDAY: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.WEDNESDAY = this.cast("WEDNESDAY")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def WEDNESDAY: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.WEDNESDAY = "WEDNESDAY".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.WEDNESDAY]
 }
 

@@ -13,10 +13,8 @@ trait SelectionModeType extends js.Object
 
 object SelectionModeType {
   @scala.inline
-  def CONFIRM: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.CONFIRM = this.cast("CONFIRM")
+  def CONFIRM: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.CONFIRM = "CONFIRM".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.CONFIRM]
   @scala.inline
-  def QUICK: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.QUICK = this.cast("QUICK")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def QUICK: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.QUICK = "QUICK".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.QUICK]
 }
 

@@ -32,7 +32,6 @@ object GlobalForwardingRulesResource {
     setTarget: AnonFieldsForwardingRule => Request_[Operation]
   ): GlobalForwardingRulesResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), setTarget = js.Any.fromFunction1(setTarget))
-  
     __obj.asInstanceOf[GlobalForwardingRulesResource]
   }
 }

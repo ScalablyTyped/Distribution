@@ -19,7 +19,6 @@ object MembersCollection {
   @scala.inline
   def apply(modify: (ModifyContactGroupMembersRequest, String) => ModifyContactGroupMembersResponse): MembersCollection = {
     val __obj = js.Dynamic.literal(modify = js.Any.fromFunction2(modify))
-  
     __obj.asInstanceOf[MembersCollection]
   }
 }

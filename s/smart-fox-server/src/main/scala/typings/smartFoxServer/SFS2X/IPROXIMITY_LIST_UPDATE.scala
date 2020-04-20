@@ -22,7 +22,6 @@ object IPROXIMITY_LIST_UPDATE {
     removedUsers: js.Array[SFSUser]
   ): IPROXIMITY_LIST_UPDATE = {
     val __obj = js.Dynamic.literal(addedItems = addedItems.asInstanceOf[js.Any], addedUsers = addedUsers.asInstanceOf[js.Any], removedItems = removedItems.asInstanceOf[js.Any], removedUsers = removedUsers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPROXIMITY_LIST_UPDATE]
   }
 }

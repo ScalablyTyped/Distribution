@@ -12,7 +12,6 @@ object OnDrawListener {
   @scala.inline
   def apply(onDraw: () => js.Any): OnDrawListener = {
     val __obj = js.Dynamic.literal(onDraw = js.Any.fromFunction0(onDraw))
-  
     __obj.asInstanceOf[OnDrawListener]
   }
 }

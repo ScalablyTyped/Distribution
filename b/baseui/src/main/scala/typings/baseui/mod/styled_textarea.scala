@@ -15,7 +15,17 @@ import scala.scalajs.js.annotation._
 @JSImport("baseui", "styled")
 @js.native
 object styled_textarea extends js.Object {
-  def apply[P /* <: js.Object */, T](component: textarea, styledFn: js.Function1[/* props */ AnonTheme[T] with P, StyleObject]): StyletronComponent[(Pick[ComponentProps[textarea], Exclude[String, AnonClassName]]) with P] = js.native
-  def apply[P /* <: js.Object */, T](component: textarea, styledFn: StyleObject): StyletronComponent[(Pick[ComponentProps[textarea], Exclude[String, AnonClassName]]) with P] = js.native
+  def apply[P /* <: js.Object */, T](component: textarea, styledFn: js.Function1[/* props */ AnonTheme[T] with P, StyleObject]): StyletronComponent[
+    (Pick[
+      ComponentProps[textarea], 
+      Exclude[/* keyof react.react.ComponentProps<'textarea'> */ String, AnonClassName]
+    ]) with P
+  ] = js.native
+  def apply[P /* <: js.Object */, T](component: textarea, styledFn: StyleObject): StyletronComponent[
+    (Pick[
+      ComponentProps[textarea], 
+      Exclude[/* keyof react.react.ComponentProps<'textarea'> */ String, AnonClassName]
+    ]) with P
+  ] = js.native
 }
 

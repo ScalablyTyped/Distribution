@@ -24,7 +24,6 @@ object Advertisement {
     txPowerLevel: Double
   ): Advertisement = {
     val __obj = js.Dynamic.literal(localName = localName.asInstanceOf[js.Any], manufacturerData = manufacturerData.asInstanceOf[js.Any], serviceData = serviceData.asInstanceOf[js.Any], serviceUuids = serviceUuids.asInstanceOf[js.Any], txPowerLevel = txPowerLevel.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Advertisement]
   }
 }

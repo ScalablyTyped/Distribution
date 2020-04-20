@@ -27,7 +27,6 @@ object ContainerInfo {
     getOffsetY: () => Integer
   ): ContainerInfo = {
     val __obj = js.Dynamic.literal(getAnchorColumn = js.Any.fromFunction0(getAnchorColumn), getAnchorRow = js.Any.fromFunction0(getAnchorRow), getOffsetX = js.Any.fromFunction0(getOffsetX), getOffsetY = js.Any.fromFunction0(getOffsetY))
-  
     __obj.asInstanceOf[ContainerInfo]
   }
 }

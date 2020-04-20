@@ -18,7 +18,6 @@ object StandardEngine {
     renderStyle: StyleObject => String
   ): StandardEngine = {
     val __obj = js.Dynamic.literal(renderFontFace = js.Any.fromFunction1(renderFontFace), renderKeyframes = js.Any.fromFunction1(renderKeyframes), renderStyle = js.Any.fromFunction1(renderStyle))
-  
     __obj.asInstanceOf[StandardEngine]
   }
 }

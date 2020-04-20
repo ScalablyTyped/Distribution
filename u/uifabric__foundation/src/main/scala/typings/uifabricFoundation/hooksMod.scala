@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation._
 @JSImport("@uifabric/foundation/lib/hooks", JSImport.Namespace)
 @js.native
 object hooksMod extends js.Object {
-  def getControlledDerivedProps[TProps, TProp /* <: String */](
+  def getControlledDerivedProps[TProps, TProp /* <: /* keyof TProps */ String */](
     props: TProps,
     propName: TProp,
     derivedValue: /* import warning: importer.ImportType#apply Failed type conversion: TProps[TProp] */ js.Any
   ): /* import warning: importer.ImportType#apply Failed type conversion: TProps[TProp] */ js.Any = js.native
-  def useControlledState[TProps, TProp /* <: String */, TDefaultProp /* <: String */](props: TProps, propName: TProp): js.Tuple2[
+  def useControlledState[TProps, TProp /* <: /* keyof TProps */ String */, TDefaultProp /* <: /* keyof TProps */ String */](props: TProps, propName: TProp): js.Tuple2[
     js.UndefOr[
       /* import warning: importer.ImportType#apply Failed type conversion: TProps[TProp] */ js.Any
     ], 
@@ -25,7 +25,7 @@ object hooksMod extends js.Object {
       ]
     ]
   ] = js.native
-  def useControlledState[TProps, TProp /* <: String */, TDefaultProp /* <: String */](props: TProps, propName: TProp, options: IControlledStateOptions[TProps, TProp, TDefaultProp]): js.Tuple2[
+  def useControlledState[TProps, TProp /* <: /* keyof TProps */ String */, TDefaultProp /* <: /* keyof TProps */ String */](props: TProps, propName: TProp, options: IControlledStateOptions[TProps, TProp, TDefaultProp]): js.Tuple2[
     js.UndefOr[
       /* import warning: importer.ImportType#apply Failed type conversion: TProps[TProp] */ js.Any
     ], 

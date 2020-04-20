@@ -12,10 +12,8 @@ trait CompoundOperator extends js.Object
 
 object CompoundOperator {
   @scala.inline
-  def $and: typings.oracleOraclejet.oracleOraclejetStrings.$and = this.cast("$and")
+  def $and: typings.oracleOraclejet.oracleOraclejetStrings.$and = "$and".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.$and]
   @scala.inline
-  def $or: typings.oracleOraclejet.oracleOraclejetStrings.$or = this.cast("$or")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def $or: typings.oracleOraclejet.oracleOraclejetStrings.$or = "$or".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.$or]
 }
 

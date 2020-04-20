@@ -13,7 +13,6 @@ object Kafka {
   @scala.inline
   def apply(send: SendOptions => js.Promise[js.Object]): Kafka = {
     val __obj = js.Dynamic.literal(send = js.Any.fromFunction1(send))
-  
     __obj.asInstanceOf[Kafka]
   }
 }

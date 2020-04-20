@@ -15,7 +15,6 @@ object InsertRow {
   @scala.inline
   def apply(actionType: insert_row, amount: Double, index: Double): InsertRow = {
     val __obj = js.Dynamic.literal(actionType = actionType.asInstanceOf[js.Any], amount = amount.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InsertRow]
   }
 }

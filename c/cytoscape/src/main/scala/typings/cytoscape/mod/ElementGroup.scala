@@ -19,10 +19,8 @@ trait ElementGroup extends js.Object
 
 object ElementGroup {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def edges: typings.cytoscape.cytoscapeStrings.edges = "edges".asInstanceOf[typings.cytoscape.cytoscapeStrings.edges]
   @scala.inline
-  def edges: typings.cytoscape.cytoscapeStrings.edges = this.cast("edges")
-  @scala.inline
-  def nodes: typings.cytoscape.cytoscapeStrings.nodes = this.cast("nodes")
+  def nodes: typings.cytoscape.cytoscapeStrings.nodes = "nodes".asInstanceOf[typings.cytoscape.cytoscapeStrings.nodes]
 }
 

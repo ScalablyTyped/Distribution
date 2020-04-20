@@ -31,7 +31,6 @@ object ContinuousRendererResultColor {
     visualVariable: ColorVariable
   ): ContinuousRendererResultColor = {
     val __obj = js.Dynamic.literal(colorScheme = colorScheme.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), visualVariable = visualVariable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ContinuousRendererResultColor]
   }
 }

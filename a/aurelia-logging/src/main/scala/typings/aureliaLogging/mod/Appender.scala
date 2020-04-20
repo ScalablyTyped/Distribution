@@ -44,7 +44,6 @@ object Appender {
     warn: (Logger, /* repeated */ js.Any) => Unit
   ): Appender = {
     val __obj = js.Dynamic.literal(debug = js.Any.fromFunction2(debug), error = js.Any.fromFunction2(error), info = js.Any.fromFunction2(info), warn = js.Any.fromFunction2(warn))
-  
     __obj.asInstanceOf[Appender]
   }
 }

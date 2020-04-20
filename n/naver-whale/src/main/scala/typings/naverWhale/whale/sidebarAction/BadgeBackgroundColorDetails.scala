@@ -13,7 +13,6 @@ object BadgeBackgroundColorDetails {
   @scala.inline
   def apply(color: String | ColorArray): BadgeBackgroundColorDetails = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BadgeBackgroundColorDetails]
   }
 }

@@ -20,7 +20,6 @@ object EloRank {
     updateRating: (Double, Double, Double) => Double
   ): EloRank = {
     val __obj = js.Dynamic.literal(getExpected = js.Any.fromFunction2(getExpected), getKFactor = js.Any.fromFunction0(getKFactor), setKFactor = js.Any.fromFunction1(setKFactor), updateRating = js.Any.fromFunction3(updateRating))
-  
     __obj.asInstanceOf[EloRank]
   }
 }

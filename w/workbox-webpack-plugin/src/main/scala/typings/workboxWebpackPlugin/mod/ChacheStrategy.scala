@@ -15,16 +15,14 @@ trait ChacheStrategy extends js.Object
 
 object ChacheStrategy {
   @scala.inline
-  def CacheFirst: typings.workboxWebpackPlugin.workboxWebpackPluginStrings.CacheFirst = this.cast("CacheFirst")
+  def CacheFirst: typings.workboxWebpackPlugin.workboxWebpackPluginStrings.CacheFirst = "CacheFirst".asInstanceOf[typings.workboxWebpackPlugin.workboxWebpackPluginStrings.CacheFirst]
   @scala.inline
-  def CacheOnly: typings.workboxWebpackPlugin.workboxWebpackPluginStrings.CacheOnly = this.cast("CacheOnly")
+  def CacheOnly: typings.workboxWebpackPlugin.workboxWebpackPluginStrings.CacheOnly = "CacheOnly".asInstanceOf[typings.workboxWebpackPlugin.workboxWebpackPluginStrings.CacheOnly]
   @scala.inline
-  def NetworkFirst: typings.workboxWebpackPlugin.workboxWebpackPluginStrings.NetworkFirst = this.cast("NetworkFirst")
+  def NetworkFirst: typings.workboxWebpackPlugin.workboxWebpackPluginStrings.NetworkFirst = "NetworkFirst".asInstanceOf[typings.workboxWebpackPlugin.workboxWebpackPluginStrings.NetworkFirst]
   @scala.inline
-  def NetworkOnly: typings.workboxWebpackPlugin.workboxWebpackPluginStrings.NetworkOnly = this.cast("NetworkOnly")
+  def NetworkOnly: typings.workboxWebpackPlugin.workboxWebpackPluginStrings.NetworkOnly = "NetworkOnly".asInstanceOf[typings.workboxWebpackPlugin.workboxWebpackPluginStrings.NetworkOnly]
   @scala.inline
-  def StaleWhileRevalidate: typings.workboxWebpackPlugin.workboxWebpackPluginStrings.StaleWhileRevalidate = this.cast("StaleWhileRevalidate")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def StaleWhileRevalidate: typings.workboxWebpackPlugin.workboxWebpackPluginStrings.StaleWhileRevalidate = "StaleWhileRevalidate".asInstanceOf[typings.workboxWebpackPlugin.workboxWebpackPluginStrings.StaleWhileRevalidate]
 }
 

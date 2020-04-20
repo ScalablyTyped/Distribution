@@ -26,22 +26,20 @@ trait WdBorderType extends js.Object
 
 object WdBorderType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdBorderBottom: `-3` = -3.asInstanceOf[`-3`]
   @scala.inline
-  def wdBorderBottom: `-3` = this.cast(-3)
+  def wdBorderDiagonalDown: `-7` = -7.asInstanceOf[`-7`]
   @scala.inline
-  def wdBorderDiagonalDown: `-7` = this.cast(-7)
+  def wdBorderDiagonalUp: `-8` = -8.asInstanceOf[`-8`]
   @scala.inline
-  def wdBorderDiagonalUp: `-8` = this.cast(-8)
+  def wdBorderHorizontal: `-5` = -5.asInstanceOf[`-5`]
   @scala.inline
-  def wdBorderHorizontal: `-5` = this.cast(-5)
+  def wdBorderLeft: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def wdBorderLeft: `-2` = this.cast(-2)
+  def wdBorderRight: `-4` = -4.asInstanceOf[`-4`]
   @scala.inline
-  def wdBorderRight: `-4` = this.cast(-4)
+  def wdBorderTop: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
-  def wdBorderTop: `-1` = this.cast(-1)
-  @scala.inline
-  def wdBorderVertical: `-6` = this.cast(-6)
+  def wdBorderVertical: `-6` = -6.asInstanceOf[`-6`]
 }
 

@@ -21,7 +21,6 @@ object CredentialProvider {
     saveCredential: (String, String) => Thenable[Boolean]
   ): CredentialProvider = {
     val __obj = js.Dynamic.literal(deleteCredential = js.Any.fromFunction1(deleteCredential), handle = handle.asInstanceOf[js.Any], readCredential = js.Any.fromFunction1(readCredential), saveCredential = js.Any.fromFunction2(saveCredential))
-  
     __obj.asInstanceOf[CredentialProvider]
   }
 }

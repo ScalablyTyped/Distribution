@@ -23,7 +23,6 @@ object canvasLayerMod extends js.Object {
     var renderedResolution: Double = js.native
     /* protected */ def clip(context: CanvasRenderingContext2D, frameState: FrameState, extent: Extent): Unit = js.native
     /* protected */ def clipUnrotated(context: CanvasRenderingContext2D, frameState: FrameState, extent: Extent): Unit = js.native
-    def createTransformString(transform: Transform): String = js.native
     /* protected */ def getRenderTransform(
       center: Coordinate,
       resolution: Double,

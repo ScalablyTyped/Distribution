@@ -13,7 +13,6 @@ object OptimisticAction {
   @scala.inline
   def apply(meta: AnonOptimistic): OptimisticAction = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OptimisticAction]
   }
 }

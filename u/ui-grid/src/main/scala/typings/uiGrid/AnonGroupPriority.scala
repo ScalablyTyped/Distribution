@@ -15,7 +15,6 @@ object AnonGroupPriority {
   @scala.inline
   def apply(groupPriority: Double): AnonGroupPriority = {
     val __obj = js.Dynamic.literal(groupPriority = groupPriority.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonGroupPriority]
   }
 }

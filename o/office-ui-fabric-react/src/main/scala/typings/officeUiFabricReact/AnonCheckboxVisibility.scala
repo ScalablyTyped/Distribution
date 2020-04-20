@@ -30,7 +30,6 @@ object AnonCheckboxVisibility {
     useFastIcons: Boolean
   ): AnonCheckboxVisibility = {
     val __obj = js.Dynamic.literal(checkboxVisibility = checkboxVisibility.asInstanceOf[js.Any], compact = compact.asInstanceOf[js.Any], constrainMode = constrainMode.asInstanceOf[js.Any], isHeaderVisible = isHeaderVisible.asInstanceOf[js.Any], layoutMode = layoutMode.asInstanceOf[js.Any], selectionMode = selectionMode.asInstanceOf[js.Any], useFastIcons = useFastIcons.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCheckboxVisibility]
   }
 }

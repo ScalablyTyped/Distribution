@@ -20,7 +20,6 @@ object AssessmentRunStateChange {
   @scala.inline
   def apply(state: AssessmentRunState, stateChangedAt: Timestamp): AssessmentRunStateChange = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any], stateChangedAt = stateChangedAt.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AssessmentRunStateChange]
   }
 }

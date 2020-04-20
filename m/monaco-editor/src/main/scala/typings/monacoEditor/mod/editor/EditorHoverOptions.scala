@@ -15,7 +15,6 @@ object EditorHoverOptions {
   @scala.inline
   def apply(delay: Double, enabled: Boolean, sticky: Boolean): EditorHoverOptions = {
     val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], sticky = sticky.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EditorHoverOptions]
   }
 }

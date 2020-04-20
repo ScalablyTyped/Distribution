@@ -70,7 +70,6 @@ object LinearOptimizationService {
     createEngine: () => LinearOptimizationEngine
   ): LinearOptimizationService = {
     val __obj = js.Dynamic.literal(Status = Status.asInstanceOf[js.Any], VariableType = VariableType.asInstanceOf[js.Any], createEngine = js.Any.fromFunction0(createEngine))
-  
     __obj.asInstanceOf[LinearOptimizationService]
   }
 }

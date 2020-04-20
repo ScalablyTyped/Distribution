@@ -45,7 +45,6 @@ object ValidatingWebhookConfiguration {
     webhooks: js.Array[ValidatingWebhook]
   ): ValidatingWebhookConfiguration = {
     val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], webhooks = webhooks.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ValidatingWebhookConfiguration]
   }
 }

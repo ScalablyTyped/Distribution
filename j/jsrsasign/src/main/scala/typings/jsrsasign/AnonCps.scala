@@ -14,7 +14,6 @@ object AnonCps {
   @scala.inline
   def apply(cps: String, id: String, unotice: String): AnonCps = {
     val __obj = js.Dynamic.literal(cps = cps.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], unotice = unotice.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCps]
   }
 }

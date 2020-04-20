@@ -24,7 +24,6 @@ object Logger {
     warnOnce: String => Logger
   ): Logger = {
     val __obj = js.Dynamic.literal(annotate = js.Any.fromFunction2(annotate), debug = js.Any.fromFunction1(debug), deprecate = js.Any.fromFunction2(deprecate), enableDebugLog = enableDebugLog.asInstanceOf[js.Any], warn = js.Any.fromFunction1(warn), warnOnce = js.Any.fromFunction1(warnOnce))
-  
     __obj.asInstanceOf[Logger]
   }
 }

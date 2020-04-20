@@ -12,7 +12,6 @@ object INotificationScope {
   @scala.inline
   def apply(kill: Boolean => Unit): INotificationScope = {
     val __obj = js.Dynamic.literal(kill = js.Any.fromFunction1(kill))
-  
     __obj.asInstanceOf[INotificationScope]
   }
 }

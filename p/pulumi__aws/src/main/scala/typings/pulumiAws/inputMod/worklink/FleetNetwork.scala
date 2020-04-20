@@ -29,7 +29,6 @@ object FleetNetwork {
     vpcId: Input[String]
   ): FleetNetwork = {
     val __obj = js.Dynamic.literal(securityGroupIds = securityGroupIds.asInstanceOf[js.Any], subnetIds = subnetIds.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FleetNetwork]
   }
 }

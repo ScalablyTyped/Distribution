@@ -252,248 +252,246 @@ trait MsoShapeStyleIndex extends js.Object
 
 object MsoShapeStyleIndex {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoLineStylePreset1: `10001` = 10001.asInstanceOf[`10001`]
   @scala.inline
-  def msoLineStylePreset1: `10001` = this.cast(10001)
+  def msoLineStylePreset10: `10010` = 10010.asInstanceOf[`10010`]
   @scala.inline
-  def msoLineStylePreset10: `10010` = this.cast(10010)
+  def msoLineStylePreset11: `10011` = 10011.asInstanceOf[`10011`]
   @scala.inline
-  def msoLineStylePreset11: `10011` = this.cast(10011)
+  def msoLineStylePreset12: `10012` = 10012.asInstanceOf[`10012`]
   @scala.inline
-  def msoLineStylePreset12: `10012` = this.cast(10012)
+  def msoLineStylePreset13: `10013` = 10013.asInstanceOf[`10013`]
   @scala.inline
-  def msoLineStylePreset13: `10013` = this.cast(10013)
+  def msoLineStylePreset14: `10014` = 10014.asInstanceOf[`10014`]
   @scala.inline
-  def msoLineStylePreset14: `10014` = this.cast(10014)
+  def msoLineStylePreset15: `10015` = 10015.asInstanceOf[`10015`]
   @scala.inline
-  def msoLineStylePreset15: `10015` = this.cast(10015)
+  def msoLineStylePreset16: `10016` = 10016.asInstanceOf[`10016`]
   @scala.inline
-  def msoLineStylePreset16: `10016` = this.cast(10016)
+  def msoLineStylePreset17: `10017` = 10017.asInstanceOf[`10017`]
   @scala.inline
-  def msoLineStylePreset17: `10017` = this.cast(10017)
+  def msoLineStylePreset18: `10018` = 10018.asInstanceOf[`10018`]
   @scala.inline
-  def msoLineStylePreset18: `10018` = this.cast(10018)
+  def msoLineStylePreset19: `10019` = 10019.asInstanceOf[`10019`]
   @scala.inline
-  def msoLineStylePreset19: `10019` = this.cast(10019)
+  def msoLineStylePreset2: `10002` = 10002.asInstanceOf[`10002`]
   @scala.inline
-  def msoLineStylePreset2: `10002` = this.cast(10002)
+  def msoLineStylePreset20: `10020` = 10020.asInstanceOf[`10020`]
   @scala.inline
-  def msoLineStylePreset20: `10020` = this.cast(10020)
+  def msoLineStylePreset21: `10021` = 10021.asInstanceOf[`10021`]
   @scala.inline
-  def msoLineStylePreset21: `10021` = this.cast(10021)
+  def msoLineStylePreset22: `10022` = 10022.asInstanceOf[`10022`]
   @scala.inline
-  def msoLineStylePreset22: `10022` = this.cast(10022)
+  def msoLineStylePreset23: `10023` = 10023.asInstanceOf[`10023`]
   @scala.inline
-  def msoLineStylePreset23: `10023` = this.cast(10023)
+  def msoLineStylePreset24: `10024` = 10024.asInstanceOf[`10024`]
   @scala.inline
-  def msoLineStylePreset24: `10024` = this.cast(10024)
+  def msoLineStylePreset25: `10025` = 10025.asInstanceOf[`10025`]
   @scala.inline
-  def msoLineStylePreset25: `10025` = this.cast(10025)
+  def msoLineStylePreset26: `10026` = 10026.asInstanceOf[`10026`]
   @scala.inline
-  def msoLineStylePreset26: `10026` = this.cast(10026)
+  def msoLineStylePreset27: `10027` = 10027.asInstanceOf[`10027`]
   @scala.inline
-  def msoLineStylePreset27: `10027` = this.cast(10027)
+  def msoLineStylePreset28: `10028` = 10028.asInstanceOf[`10028`]
   @scala.inline
-  def msoLineStylePreset28: `10028` = this.cast(10028)
+  def msoLineStylePreset29: `10029` = 10029.asInstanceOf[`10029`]
   @scala.inline
-  def msoLineStylePreset29: `10029` = this.cast(10029)
+  def msoLineStylePreset3: `10003` = 10003.asInstanceOf[`10003`]
   @scala.inline
-  def msoLineStylePreset3: `10003` = this.cast(10003)
+  def msoLineStylePreset30: `10030` = 10030.asInstanceOf[`10030`]
   @scala.inline
-  def msoLineStylePreset30: `10030` = this.cast(10030)
+  def msoLineStylePreset31: `10031` = 10031.asInstanceOf[`10031`]
   @scala.inline
-  def msoLineStylePreset31: `10031` = this.cast(10031)
+  def msoLineStylePreset32: `10032` = 10032.asInstanceOf[`10032`]
   @scala.inline
-  def msoLineStylePreset32: `10032` = this.cast(10032)
+  def msoLineStylePreset33: `10033` = 10033.asInstanceOf[`10033`]
   @scala.inline
-  def msoLineStylePreset33: `10033` = this.cast(10033)
+  def msoLineStylePreset34: `10034` = 10034.asInstanceOf[`10034`]
   @scala.inline
-  def msoLineStylePreset34: `10034` = this.cast(10034)
+  def msoLineStylePreset35: `10035` = 10035.asInstanceOf[`10035`]
   @scala.inline
-  def msoLineStylePreset35: `10035` = this.cast(10035)
+  def msoLineStylePreset36: `10036` = 10036.asInstanceOf[`10036`]
   @scala.inline
-  def msoLineStylePreset36: `10036` = this.cast(10036)
+  def msoLineStylePreset37: `10037` = 10037.asInstanceOf[`10037`]
   @scala.inline
-  def msoLineStylePreset37: `10037` = this.cast(10037)
+  def msoLineStylePreset38: `10038` = 10038.asInstanceOf[`10038`]
   @scala.inline
-  def msoLineStylePreset38: `10038` = this.cast(10038)
+  def msoLineStylePreset39: `10039` = 10039.asInstanceOf[`10039`]
   @scala.inline
-  def msoLineStylePreset39: `10039` = this.cast(10039)
+  def msoLineStylePreset4: `10004` = 10004.asInstanceOf[`10004`]
   @scala.inline
-  def msoLineStylePreset4: `10004` = this.cast(10004)
+  def msoLineStylePreset40: `10040` = 10040.asInstanceOf[`10040`]
   @scala.inline
-  def msoLineStylePreset40: `10040` = this.cast(10040)
+  def msoLineStylePreset41: `10041` = 10041.asInstanceOf[`10041`]
   @scala.inline
-  def msoLineStylePreset41: `10041` = this.cast(10041)
+  def msoLineStylePreset42: `10042` = 10042.asInstanceOf[`10042`]
   @scala.inline
-  def msoLineStylePreset42: `10042` = this.cast(10042)
+  def msoLineStylePreset5: `10005` = 10005.asInstanceOf[`10005`]
   @scala.inline
-  def msoLineStylePreset5: `10005` = this.cast(10005)
+  def msoLineStylePreset6: `10006` = 10006.asInstanceOf[`10006`]
   @scala.inline
-  def msoLineStylePreset6: `10006` = this.cast(10006)
+  def msoLineStylePreset7: `10007` = 10007.asInstanceOf[`10007`]
   @scala.inline
-  def msoLineStylePreset7: `10007` = this.cast(10007)
+  def msoLineStylePreset8: `10008` = 10008.asInstanceOf[`10008`]
   @scala.inline
-  def msoLineStylePreset8: `10008` = this.cast(10008)
+  def msoLineStylePreset9: `10009` = 10009.asInstanceOf[`10009`]
   @scala.inline
-  def msoLineStylePreset9: `10009` = this.cast(10009)
+  def msoShapeStyleMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def msoShapeStyleMixed: `-2` = this.cast(-2)
+  def msoShapeStyleNotAPreset: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def msoShapeStyleNotAPreset: `0` = this.cast(0)
+  def msoShapeStylePreset1: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoShapeStylePreset1: `1` = this.cast(1)
+  def msoShapeStylePreset10: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def msoShapeStylePreset10: `10` = this.cast(10)
+  def msoShapeStylePreset11: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def msoShapeStylePreset11: `11` = this.cast(11)
+  def msoShapeStylePreset12: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def msoShapeStylePreset12: `12` = this.cast(12)
+  def msoShapeStylePreset13: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def msoShapeStylePreset13: `13` = this.cast(13)
+  def msoShapeStylePreset14: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def msoShapeStylePreset14: `14` = this.cast(14)
+  def msoShapeStylePreset15: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def msoShapeStylePreset15: `15` = this.cast(15)
+  def msoShapeStylePreset16: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def msoShapeStylePreset16: `16` = this.cast(16)
+  def msoShapeStylePreset17: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def msoShapeStylePreset17: `17` = this.cast(17)
+  def msoShapeStylePreset18: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def msoShapeStylePreset18: `18` = this.cast(18)
+  def msoShapeStylePreset19: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def msoShapeStylePreset19: `19` = this.cast(19)
+  def msoShapeStylePreset2: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoShapeStylePreset2: `2` = this.cast(2)
+  def msoShapeStylePreset20: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def msoShapeStylePreset20: `20` = this.cast(20)
+  def msoShapeStylePreset21: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def msoShapeStylePreset21: `21` = this.cast(21)
+  def msoShapeStylePreset22: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def msoShapeStylePreset22: `22` = this.cast(22)
+  def msoShapeStylePreset23: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def msoShapeStylePreset23: `23` = this.cast(23)
+  def msoShapeStylePreset24: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def msoShapeStylePreset24: `24` = this.cast(24)
+  def msoShapeStylePreset25: `25` = 25.asInstanceOf[`25`]
   @scala.inline
-  def msoShapeStylePreset25: `25` = this.cast(25)
+  def msoShapeStylePreset26: `26` = 26.asInstanceOf[`26`]
   @scala.inline
-  def msoShapeStylePreset26: `26` = this.cast(26)
+  def msoShapeStylePreset27: `27` = 27.asInstanceOf[`27`]
   @scala.inline
-  def msoShapeStylePreset27: `27` = this.cast(27)
+  def msoShapeStylePreset28: `28` = 28.asInstanceOf[`28`]
   @scala.inline
-  def msoShapeStylePreset28: `28` = this.cast(28)
+  def msoShapeStylePreset29: `29` = 29.asInstanceOf[`29`]
   @scala.inline
-  def msoShapeStylePreset29: `29` = this.cast(29)
+  def msoShapeStylePreset3: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoShapeStylePreset3: `3` = this.cast(3)
+  def msoShapeStylePreset30: `30` = 30.asInstanceOf[`30`]
   @scala.inline
-  def msoShapeStylePreset30: `30` = this.cast(30)
+  def msoShapeStylePreset31: `31` = 31.asInstanceOf[`31`]
   @scala.inline
-  def msoShapeStylePreset31: `31` = this.cast(31)
+  def msoShapeStylePreset32: `32` = 32.asInstanceOf[`32`]
   @scala.inline
-  def msoShapeStylePreset32: `32` = this.cast(32)
+  def msoShapeStylePreset33: `33` = 33.asInstanceOf[`33`]
   @scala.inline
-  def msoShapeStylePreset33: `33` = this.cast(33)
+  def msoShapeStylePreset34: `34` = 34.asInstanceOf[`34`]
   @scala.inline
-  def msoShapeStylePreset34: `34` = this.cast(34)
+  def msoShapeStylePreset35: `35` = 35.asInstanceOf[`35`]
   @scala.inline
-  def msoShapeStylePreset35: `35` = this.cast(35)
+  def msoShapeStylePreset36: `36` = 36.asInstanceOf[`36`]
   @scala.inline
-  def msoShapeStylePreset36: `36` = this.cast(36)
+  def msoShapeStylePreset37: `37` = 37.asInstanceOf[`37`]
   @scala.inline
-  def msoShapeStylePreset37: `37` = this.cast(37)
+  def msoShapeStylePreset38: `38` = 38.asInstanceOf[`38`]
   @scala.inline
-  def msoShapeStylePreset38: `38` = this.cast(38)
+  def msoShapeStylePreset39: `39` = 39.asInstanceOf[`39`]
   @scala.inline
-  def msoShapeStylePreset39: `39` = this.cast(39)
+  def msoShapeStylePreset4: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoShapeStylePreset4: `4` = this.cast(4)
+  def msoShapeStylePreset40: `40` = 40.asInstanceOf[`40`]
   @scala.inline
-  def msoShapeStylePreset40: `40` = this.cast(40)
+  def msoShapeStylePreset41: `41` = 41.asInstanceOf[`41`]
   @scala.inline
-  def msoShapeStylePreset41: `41` = this.cast(41)
+  def msoShapeStylePreset42: `42` = 42.asInstanceOf[`42`]
   @scala.inline
-  def msoShapeStylePreset42: `42` = this.cast(42)
+  def msoShapeStylePreset43: `43` = 43.asInstanceOf[`43`]
   @scala.inline
-  def msoShapeStylePreset43: `43` = this.cast(43)
+  def msoShapeStylePreset44: `44` = 44.asInstanceOf[`44`]
   @scala.inline
-  def msoShapeStylePreset44: `44` = this.cast(44)
+  def msoShapeStylePreset45: `45` = 45.asInstanceOf[`45`]
   @scala.inline
-  def msoShapeStylePreset45: `45` = this.cast(45)
+  def msoShapeStylePreset46: `46` = 46.asInstanceOf[`46`]
   @scala.inline
-  def msoShapeStylePreset46: `46` = this.cast(46)
+  def msoShapeStylePreset47: `47` = 47.asInstanceOf[`47`]
   @scala.inline
-  def msoShapeStylePreset47: `47` = this.cast(47)
+  def msoShapeStylePreset48: `48` = 48.asInstanceOf[`48`]
   @scala.inline
-  def msoShapeStylePreset48: `48` = this.cast(48)
+  def msoShapeStylePreset49: `49` = 49.asInstanceOf[`49`]
   @scala.inline
-  def msoShapeStylePreset49: `49` = this.cast(49)
+  def msoShapeStylePreset5: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def msoShapeStylePreset5: `5` = this.cast(5)
+  def msoShapeStylePreset50: `50` = 50.asInstanceOf[`50`]
   @scala.inline
-  def msoShapeStylePreset50: `50` = this.cast(50)
+  def msoShapeStylePreset51: `51` = 51.asInstanceOf[`51`]
   @scala.inline
-  def msoShapeStylePreset51: `51` = this.cast(51)
+  def msoShapeStylePreset52: `52` = 52.asInstanceOf[`52`]
   @scala.inline
-  def msoShapeStylePreset52: `52` = this.cast(52)
+  def msoShapeStylePreset53: `53` = 53.asInstanceOf[`53`]
   @scala.inline
-  def msoShapeStylePreset53: `53` = this.cast(53)
+  def msoShapeStylePreset54: `54` = 54.asInstanceOf[`54`]
   @scala.inline
-  def msoShapeStylePreset54: `54` = this.cast(54)
+  def msoShapeStylePreset55: `55` = 55.asInstanceOf[`55`]
   @scala.inline
-  def msoShapeStylePreset55: `55` = this.cast(55)
+  def msoShapeStylePreset56: `56` = 56.asInstanceOf[`56`]
   @scala.inline
-  def msoShapeStylePreset56: `56` = this.cast(56)
+  def msoShapeStylePreset57: `57` = 57.asInstanceOf[`57`]
   @scala.inline
-  def msoShapeStylePreset57: `57` = this.cast(57)
+  def msoShapeStylePreset58: `58` = 58.asInstanceOf[`58`]
   @scala.inline
-  def msoShapeStylePreset58: `58` = this.cast(58)
+  def msoShapeStylePreset59: `59` = 59.asInstanceOf[`59`]
   @scala.inline
-  def msoShapeStylePreset59: `59` = this.cast(59)
+  def msoShapeStylePreset6: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def msoShapeStylePreset6: `6` = this.cast(6)
+  def msoShapeStylePreset60: `60` = 60.asInstanceOf[`60`]
   @scala.inline
-  def msoShapeStylePreset60: `60` = this.cast(60)
+  def msoShapeStylePreset61: `61` = 61.asInstanceOf[`61`]
   @scala.inline
-  def msoShapeStylePreset61: `61` = this.cast(61)
+  def msoShapeStylePreset62: `62` = 62.asInstanceOf[`62`]
   @scala.inline
-  def msoShapeStylePreset62: `62` = this.cast(62)
+  def msoShapeStylePreset63: `63` = 63.asInstanceOf[`63`]
   @scala.inline
-  def msoShapeStylePreset63: `63` = this.cast(63)
+  def msoShapeStylePreset64: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def msoShapeStylePreset64: `64` = this.cast(64)
+  def msoShapeStylePreset65: `65` = 65.asInstanceOf[`65`]
   @scala.inline
-  def msoShapeStylePreset65: `65` = this.cast(65)
+  def msoShapeStylePreset66: `66` = 66.asInstanceOf[`66`]
   @scala.inline
-  def msoShapeStylePreset66: `66` = this.cast(66)
+  def msoShapeStylePreset67: `67` = 67.asInstanceOf[`67`]
   @scala.inline
-  def msoShapeStylePreset67: `67` = this.cast(67)
+  def msoShapeStylePreset68: `68` = 68.asInstanceOf[`68`]
   @scala.inline
-  def msoShapeStylePreset68: `68` = this.cast(68)
+  def msoShapeStylePreset69: `69` = 69.asInstanceOf[`69`]
   @scala.inline
-  def msoShapeStylePreset69: `69` = this.cast(69)
+  def msoShapeStylePreset7: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def msoShapeStylePreset7: `7` = this.cast(7)
+  def msoShapeStylePreset70: `70` = 70.asInstanceOf[`70`]
   @scala.inline
-  def msoShapeStylePreset70: `70` = this.cast(70)
+  def msoShapeStylePreset71: `71` = 71.asInstanceOf[`71`]
   @scala.inline
-  def msoShapeStylePreset71: `71` = this.cast(71)
+  def msoShapeStylePreset72: `72` = 72.asInstanceOf[`72`]
   @scala.inline
-  def msoShapeStylePreset72: `72` = this.cast(72)
+  def msoShapeStylePreset73: `73` = 73.asInstanceOf[`73`]
   @scala.inline
-  def msoShapeStylePreset73: `73` = this.cast(73)
+  def msoShapeStylePreset74: `74` = 74.asInstanceOf[`74`]
   @scala.inline
-  def msoShapeStylePreset74: `74` = this.cast(74)
+  def msoShapeStylePreset75: `75` = 75.asInstanceOf[`75`]
   @scala.inline
-  def msoShapeStylePreset75: `75` = this.cast(75)
+  def msoShapeStylePreset76: `76` = 76.asInstanceOf[`76`]
   @scala.inline
-  def msoShapeStylePreset76: `76` = this.cast(76)
+  def msoShapeStylePreset77: `77` = 77.asInstanceOf[`77`]
   @scala.inline
-  def msoShapeStylePreset77: `77` = this.cast(77)
+  def msoShapeStylePreset8: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def msoShapeStylePreset8: `8` = this.cast(8)
-  @scala.inline
-  def msoShapeStylePreset9: `9` = this.cast(9)
+  def msoShapeStylePreset9: `9` = 9.asInstanceOf[`9`]
 }
 

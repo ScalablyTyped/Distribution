@@ -12,10 +12,8 @@ trait AutoCompleteElementType extends js.Object
 
 object AutoCompleteElementType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def field: typings.jsoneditor.jsoneditorStrings.field = "field".asInstanceOf[typings.jsoneditor.jsoneditorStrings.field]
   @scala.inline
-  def field: typings.jsoneditor.jsoneditorStrings.field = this.cast("field")
-  @scala.inline
-  def value: typings.jsoneditor.jsoneditorStrings.value = this.cast("value")
+  def value: typings.jsoneditor.jsoneditorStrings.value = "value".asInstanceOf[typings.jsoneditor.jsoneditorStrings.value]
 }
 

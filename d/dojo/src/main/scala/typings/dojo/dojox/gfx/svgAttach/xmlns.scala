@@ -24,7 +24,6 @@ object xmlns {
   @scala.inline
   def apply(svg: String, xlink: String): xmlns = {
     val __obj = js.Dynamic.literal(svg = svg.asInstanceOf[js.Any], xlink = xlink.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[xmlns]
   }
 }

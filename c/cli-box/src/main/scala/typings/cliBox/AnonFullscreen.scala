@@ -17,7 +17,6 @@ object AnonFullscreen {
   @scala.inline
   def apply(fullscreen: Boolean, height: Double, marks: Marks, stringify: Boolean, width: Double): AnonFullscreen = {
     val __obj = js.Dynamic.literal(fullscreen = fullscreen.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], marks = marks.asInstanceOf[js.Any], stringify = stringify.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFullscreen]
   }
 }

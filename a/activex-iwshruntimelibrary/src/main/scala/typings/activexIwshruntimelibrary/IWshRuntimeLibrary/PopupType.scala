@@ -20,16 +20,14 @@ trait PopupType extends js.Object
 
 object PopupType {
   @scala.inline
-  def Modal: `4096` = this.cast(4096)
+  def Modal: `4096` = 4096.asInstanceOf[`4096`]
   @scala.inline
-  def RTL: `1048576` = this.cast(1048576)
+  def RTL: `1048576` = 1048576.asInstanceOf[`1048576`]
   @scala.inline
-  def RightJustified: `524288` = this.cast(524288)
+  def RightJustified: `524288` = 524288.asInstanceOf[`524288`]
   @scala.inline
-  def SecondButtonDefault: `256` = this.cast(256)
+  def SecondButtonDefault: `256` = 256.asInstanceOf[`256`]
   @scala.inline
-  def ThirdButtonDefault: `512` = this.cast(512)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ThirdButtonDefault: `512` = 512.asInstanceOf[`512`]
 }
 

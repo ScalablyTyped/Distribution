@@ -13,7 +13,6 @@ object AnonColumn {
   @scala.inline
   def apply[D /* <: js.Object */](column: HeaderGroup[D]): AnonColumn[D] = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonColumn[D]]
   }
 }

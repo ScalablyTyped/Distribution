@@ -20,7 +20,6 @@ object BatchStopJobRunRequest {
   @scala.inline
   def apply(JobName: NameString, JobRunIds: BatchStopJobRunJobRunIdList): BatchStopJobRunRequest = {
     val __obj = js.Dynamic.literal(JobName = JobName.asInstanceOf[js.Any], JobRunIds = JobRunIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchStopJobRunRequest]
   }
 }

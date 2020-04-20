@@ -19,7 +19,6 @@ object XLPrint {
   @scala.inline
   def apply(printSelection: () => Unit, printSheet: () => Unit): XLPrint = {
     val __obj = js.Dynamic.literal(printSelection = js.Any.fromFunction0(printSelection), printSheet = js.Any.fromFunction0(printSheet))
-  
     __obj.asInstanceOf[XLPrint]
   }
 }

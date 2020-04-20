@@ -14,14 +14,12 @@ trait NumericOperator extends js.Object
 
 object NumericOperator {
   @scala.inline
-  def NUMERIC_GREATER_THAN: typings.googleAppsScript.googleAppsScriptStrings.NUMERIC_GREATER_THAN = this.cast("NUMERIC_GREATER_THAN")
+  def NUMERIC_GREATER_THAN: typings.googleAppsScript.googleAppsScriptStrings.NUMERIC_GREATER_THAN = "NUMERIC_GREATER_THAN".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.NUMERIC_GREATER_THAN]
   @scala.inline
-  def NUMERIC_GREATER_THAN_OR_EQUAL: typings.googleAppsScript.googleAppsScriptStrings.NUMERIC_GREATER_THAN_OR_EQUAL = this.cast("NUMERIC_GREATER_THAN_OR_EQUAL")
+  def NUMERIC_GREATER_THAN_OR_EQUAL: typings.googleAppsScript.googleAppsScriptStrings.NUMERIC_GREATER_THAN_OR_EQUAL = "NUMERIC_GREATER_THAN_OR_EQUAL".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.NUMERIC_GREATER_THAN_OR_EQUAL]
   @scala.inline
-  def NUMERIC_LESS_THAN: typings.googleAppsScript.googleAppsScriptStrings.NUMERIC_LESS_THAN = this.cast("NUMERIC_LESS_THAN")
+  def NUMERIC_LESS_THAN: typings.googleAppsScript.googleAppsScriptStrings.NUMERIC_LESS_THAN = "NUMERIC_LESS_THAN".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.NUMERIC_LESS_THAN]
   @scala.inline
-  def NUMERIC_LESS_THAN_OR_EQUAL: typings.googleAppsScript.googleAppsScriptStrings.NUMERIC_LESS_THAN_OR_EQUAL = this.cast("NUMERIC_LESS_THAN_OR_EQUAL")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def NUMERIC_LESS_THAN_OR_EQUAL: typings.googleAppsScript.googleAppsScriptStrings.NUMERIC_LESS_THAN_OR_EQUAL = "NUMERIC_LESS_THAN_OR_EQUAL".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.NUMERIC_LESS_THAN_OR_EQUAL]
 }
 

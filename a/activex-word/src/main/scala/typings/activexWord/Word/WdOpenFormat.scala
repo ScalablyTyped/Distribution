@@ -48,50 +48,48 @@ trait WdOpenFormat extends js.Object
 
 object WdOpenFormat {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdOpenFormatAllWord: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def wdOpenFormatAllWord: `6` = this.cast(6)
+  def wdOpenFormatAllWordTemplates: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def wdOpenFormatAllWordTemplates: `13` = this.cast(13)
+  def wdOpenFormatAuto: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdOpenFormatAuto: `0` = this.cast(0)
+  def wdOpenFormatDocument: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdOpenFormatDocument: `1` = this.cast(1)
+  def wdOpenFormatDocument97: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdOpenFormatDocument97: `1` = this.cast(1)
+  def wdOpenFormatEncodedText: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdOpenFormatEncodedText: `5` = this.cast(5)
+  def wdOpenFormatOpenDocumentText: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def wdOpenFormatOpenDocumentText: `18` = this.cast(18)
+  def wdOpenFormatRTF: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdOpenFormatRTF: `3` = this.cast(3)
+  def wdOpenFormatTemplate: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdOpenFormatTemplate: `2` = this.cast(2)
+  def wdOpenFormatTemplate97: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdOpenFormatTemplate97: `2` = this.cast(2)
+  def wdOpenFormatText: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdOpenFormatText: `4` = this.cast(4)
+  def wdOpenFormatUnicodeText: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdOpenFormatUnicodeText: `5` = this.cast(5)
+  def wdOpenFormatWebPages: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def wdOpenFormatWebPages: `7` = this.cast(7)
+  def wdOpenFormatXML: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def wdOpenFormatXML: `8` = this.cast(8)
+  def wdOpenFormatXMLDocument: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def wdOpenFormatXMLDocument: `9` = this.cast(9)
+  def wdOpenFormatXMLDocumentMacroEnabled: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def wdOpenFormatXMLDocumentMacroEnabled: `10` = this.cast(10)
+  def wdOpenFormatXMLDocumentMacroEnabledSerialized: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def wdOpenFormatXMLDocumentMacroEnabledSerialized: `15` = this.cast(15)
+  def wdOpenFormatXMLDocumentSerialized: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def wdOpenFormatXMLDocumentSerialized: `14` = this.cast(14)
+  def wdOpenFormatXMLTemplate: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def wdOpenFormatXMLTemplate: `11` = this.cast(11)
+  def wdOpenFormatXMLTemplateMacroEnabled: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def wdOpenFormatXMLTemplateMacroEnabled: `12` = this.cast(12)
+  def wdOpenFormatXMLTemplateMacroEnabledSerialized: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def wdOpenFormatXMLTemplateMacroEnabledSerialized: `17` = this.cast(17)
-  @scala.inline
-  def wdOpenFormatXMLTemplateSerialized: `16` = this.cast(16)
+  def wdOpenFormatXMLTemplateSerialized: `16` = 16.asInstanceOf[`16`]
 }
 

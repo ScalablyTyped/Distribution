@@ -14,10 +14,8 @@ trait MsoDistributeCmd extends js.Object
 
 object MsoDistributeCmd {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoDistributeHorizontally: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def msoDistributeHorizontally: `0` = this.cast(0)
-  @scala.inline
-  def msoDistributeVertically: `1` = this.cast(1)
+  def msoDistributeVertically: `1` = 1.asInstanceOf[`1`]
 }
 

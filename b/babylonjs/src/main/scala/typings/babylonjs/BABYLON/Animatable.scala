@@ -119,7 +119,7 @@ class Animatable protected () extends js.Object {
     * Gets the current frame of the first RuntimeAnimation
     * Used to synchronize Animatables
     */
-  def masterFrame(): Double = js.native
+  def masterFrame: Double = js.native
   /**
     * Pause the animation
     */
@@ -135,7 +135,7 @@ class Animatable protected () extends js.Object {
   /**
     * Gets or sets the speed ratio to apply to the animatable (1.0 by default)
     */
-  def speedRatio(): Double = js.native
+  def speedRatio: Double = js.native
   def speedRatio(value: Double): js.Any = js.native
   /**
     * Stop and delete the current animation
@@ -148,7 +148,7 @@ class Animatable protected () extends js.Object {
   /**
     * Gets the root Animatable used to synchronize and normalize animations
     */
-  def syncRoot(): Nullable[Animatable] = js.native
+  def syncRoot: Nullable[Animatable] = js.native
   /**
     * Synchronize and normalize current Animatable with a source Animatable
     * This is useful when using animation weights and when animations are not of the same length
@@ -164,7 +164,7 @@ class Animatable protected () extends js.Object {
   /**
     * Gets or sets the animatable weight (-1.0 by default meaning not weighted)
     */
-  def weight(): Double = js.native
+  def weight: Double = js.native
   def weight(value: Double): js.Any = js.native
 }
 

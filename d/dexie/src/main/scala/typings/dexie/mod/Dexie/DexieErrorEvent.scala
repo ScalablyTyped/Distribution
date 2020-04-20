@@ -18,7 +18,6 @@ object DexieErrorEvent {
     unsubscribe: js.Function1[/* error */ js.Any, _] => Unit
   ): DexieErrorEvent = {
     val __obj = js.Dynamic.literal(fire = js.Any.fromFunction1(fire), subscribe = js.Any.fromFunction1(subscribe), unsubscribe = js.Any.fromFunction1(unsubscribe))
-  
     __obj.asInstanceOf[DexieErrorEvent]
   }
 }

@@ -20,7 +20,6 @@ object IScrollspy {
     untrackElement: (js.Any, js.Any) => Unit
   ): IScrollspy = {
     val __obj = js.Dynamic.literal(activate = js.Any.fromFunction1(activate), checkOffsets = js.Any.fromFunction0(checkOffsets), trackElement = js.Any.fromFunction2(trackElement), untrackElement = js.Any.fromFunction2(untrackElement))
-  
     __obj.asInstanceOf[IScrollspy]
   }
 }

@@ -23,7 +23,6 @@ object rails {
   @scala.inline
   def apply(live: (js.Any, js.Any, js.Any) => Unit): rails = {
     val __obj = js.Dynamic.literal(live = js.Any.fromFunction3(live))
-  
     __obj.asInstanceOf[rails]
   }
 }

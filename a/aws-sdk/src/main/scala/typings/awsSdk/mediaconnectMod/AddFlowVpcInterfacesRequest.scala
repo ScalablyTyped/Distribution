@@ -20,7 +20,6 @@ object AddFlowVpcInterfacesRequest {
   @scala.inline
   def apply(FlowArn: string, VpcInterfaces: listOfVpcInterfaceRequest): AddFlowVpcInterfacesRequest = {
     val __obj = js.Dynamic.literal(FlowArn = FlowArn.asInstanceOf[js.Any], VpcInterfaces = VpcInterfaces.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddFlowVpcInterfacesRequest]
   }
 }

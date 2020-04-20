@@ -2,6 +2,7 @@ package typings.multer.mod
 
 import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import typings.multer.AnonFieldNameSize
 import typings.multer.mod._Global_.Express.Multer.File
 import scala.scalajs.js
@@ -28,7 +29,7 @@ trait Options extends js.Object {
     */
   var fileFilter: js.UndefOr[
     js.Function3[
-      /* req */ Request_[ParamsDictionary], 
+      /* req */ Request_[ParamsDictionary, _, _, Query], 
       /* file */ File, 
       /* callback */ FileFilterCallback, 
       Unit
@@ -53,7 +54,7 @@ object Options {
   @scala.inline
   def apply(
     dest: String = null,
-    fileFilter: (/* req */ Request_[ParamsDictionary], /* file */ File, /* callback */ FileFilterCallback) => Unit = null,
+    fileFilter: (/* req */ Request_[ParamsDictionary, _, _, Query], /* file */ File, /* callback */ FileFilterCallback) => Unit = null,
     limits: AnonFieldNameSize = null,
     preservePath: js.UndefOr[Boolean] = js.undefined,
     storage: StorageEngine = null

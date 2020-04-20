@@ -21,7 +21,9 @@ trait IMethodOptions extends js.Object {
   /** MethodOptions deprecated */
   var deprecated: js.UndefOr[Boolean | Null] = js.undefined
   /** MethodOptions idempotencyLevel */
-  var idempotencyLevel: js.UndefOr[IdempotencyLevel | String | Null] = js.undefined
+  var idempotencyLevel: js.UndefOr[
+    IdempotencyLevel | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.MethodOptions.IdempotencyLevel * / any */ String) | Null
+  ] = js.undefined
   /** MethodOptions uninterpretedOption */
   var uninterpretedOption: js.UndefOr[js.Array[IUninterpretedOption] | Null] = js.undefined
 }
@@ -33,7 +35,7 @@ object IMethodOptions {
     DotgoogleDotapiDotmethodSignature: js.Array[String] = null,
     DotgoogleDotlongrunningDotoperationInfo: IOperationInfo = null,
     deprecated: js.UndefOr[Boolean] = js.undefined,
-    idempotencyLevel: IdempotencyLevel | String = null,
+    idempotencyLevel: IdempotencyLevel | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.MethodOptions.IdempotencyLevel * / any */ String) = null,
     uninterpretedOption: js.Array[IUninterpretedOption] = null
   ): IMethodOptions = {
     val __obj = js.Dynamic.literal()

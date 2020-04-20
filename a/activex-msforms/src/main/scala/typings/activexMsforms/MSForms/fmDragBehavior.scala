@@ -14,10 +14,8 @@ trait fmDragBehavior extends js.Object
 
 object fmDragBehavior {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fmDragBehaviorDisabled: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def fmDragBehaviorDisabled: `0` = this.cast(0)
-  @scala.inline
-  def fmDragBehaviorEnabled: `1` = this.cast(1)
+  def fmDragBehaviorEnabled: `1` = 1.asInstanceOf[`1`]
 }
 

@@ -12,7 +12,6 @@ object AnonActivePageName {
   @scala.inline
   def apply(ActivePageName: String): AnonActivePageName = {
     val __obj = js.Dynamic.literal(ActivePageName = ActivePageName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonActivePageName]
   }
 }

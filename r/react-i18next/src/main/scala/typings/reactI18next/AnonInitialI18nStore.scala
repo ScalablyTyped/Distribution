@@ -14,7 +14,6 @@ object AnonInitialI18nStore {
   @scala.inline
   def apply(initialI18nStore: StringDictionary[js.Object], initialLanguage: String): AnonInitialI18nStore = {
     val __obj = js.Dynamic.literal(initialI18nStore = initialI18nStore.asInstanceOf[js.Any], initialLanguage = initialLanguage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonInitialI18nStore]
   }
 }

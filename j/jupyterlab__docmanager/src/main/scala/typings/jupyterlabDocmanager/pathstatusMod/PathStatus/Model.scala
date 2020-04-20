@@ -43,17 +43,17 @@ class Model protected () extends VDomModel {
   /**
     * The name of the current activity.
     */
-  def name(): String = js.native
+  def name: String = js.native
   /**
     * The current path for the application.
     */
-  def path(): String = js.native
+  def path: String = js.native
   def widget(): js.Any = js.native
   def widget(widget: Widget): js.Any = js.native
   /**
     * The current widget for the application.
     */
   @JSName("widget")
-  def widget_Union(): Widget | Null = js.native
+  def widget_Union: Widget | Null = js.native
 }
 

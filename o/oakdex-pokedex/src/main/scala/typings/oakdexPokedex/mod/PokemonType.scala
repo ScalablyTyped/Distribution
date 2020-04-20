@@ -15,7 +15,6 @@ object PokemonType {
   @scala.inline
   def apply(color: String, effectivness: AnonBug, names: Translations): PokemonType = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], effectivness = effectivness.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PokemonType]
   }
 }

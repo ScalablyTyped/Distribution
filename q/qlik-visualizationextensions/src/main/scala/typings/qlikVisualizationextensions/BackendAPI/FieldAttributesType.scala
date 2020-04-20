@@ -20,26 +20,24 @@ trait FieldAttributesType extends js.Object
 
 object FieldAttributesType {
   @scala.inline
-  def A: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.A = this.cast("A")
+  def A: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.A = "A".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.A]
   @scala.inline
-  def D: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.D = this.cast("D")
+  def D: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.D = "D".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.D]
   @scala.inline
-  def F: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.F = this.cast("F")
+  def F: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.F = "F".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.F]
   @scala.inline
-  def I: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.I = this.cast("I")
+  def I: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.I = "I".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.I]
   @scala.inline
-  def IV: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.IV = this.cast("IV")
+  def IV: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.IV = "IV".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.IV]
   @scala.inline
-  def M: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.M = this.cast("M")
+  def M: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.M = "M".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.M]
   @scala.inline
-  def R: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.R = this.cast("R")
+  def R: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.R = "R".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.R]
   @scala.inline
-  def T: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.T = this.cast("T")
+  def T: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.T = "T".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.T]
   @scala.inline
-  def TS: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.TS = this.cast("TS")
+  def TS: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.TS = "TS".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.TS]
   @scala.inline
-  def U: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.U = this.cast("U")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def U: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.U = "U".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.U]
 }
 

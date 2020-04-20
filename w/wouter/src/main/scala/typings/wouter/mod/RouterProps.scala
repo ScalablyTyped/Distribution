@@ -18,7 +18,6 @@ object RouterProps {
     matcher: (/* pattern */ Path, /* path */ Path) => Match[DefaultParams]
   ): RouterProps = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], hook = js.Any.fromFunction1(hook), matcher = js.Any.fromFunction2(matcher))
-  
     __obj.asInstanceOf[RouterProps]
   }
 }

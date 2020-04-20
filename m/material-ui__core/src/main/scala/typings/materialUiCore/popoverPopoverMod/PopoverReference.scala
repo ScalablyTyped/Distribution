@@ -13,12 +13,10 @@ trait PopoverReference extends js.Object
 
 object PopoverReference {
   @scala.inline
-  def anchorEl: typings.materialUiCore.materialUiCoreStrings.anchorEl = this.cast("anchorEl")
+  def anchorEl: typings.materialUiCore.materialUiCoreStrings.anchorEl = "anchorEl".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.anchorEl]
   @scala.inline
-  def anchorPosition: typings.materialUiCore.materialUiCoreStrings.anchorPosition = this.cast("anchorPosition")
+  def anchorPosition: typings.materialUiCore.materialUiCoreStrings.anchorPosition = "anchorPosition".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.anchorPosition]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def none: typings.materialUiCore.materialUiCoreStrings.none = this.cast("none")
+  def none: typings.materialUiCore.materialUiCoreStrings.none = "none".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.none]
 }
 

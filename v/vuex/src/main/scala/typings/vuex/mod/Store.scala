@@ -26,6 +26,8 @@ class Store[S] protected () extends js.Object {
   def dispatch(`type`: String, payload: js.Any, options: DispatchOptions): js.Promise[_] = js.native
   def dispatch[P /* <: Payload */](payloadWithType: P): js.Promise[_] = js.native
   def dispatch[P /* <: Payload */](payloadWithType: P, options: DispatchOptions): js.Promise[_] = js.native
+  def hasModule(path: String): Boolean = js.native
+  def hasModule(path: js.Array[String]): Boolean = js.native
   def hotUpdate(options: AnonActions[S]): Unit = js.native
   def registerModule[T](path: String, module: Module[T, S]): Unit = js.native
   def registerModule[T](path: String, module: Module[T, S], options: ModuleOptions): Unit = js.native

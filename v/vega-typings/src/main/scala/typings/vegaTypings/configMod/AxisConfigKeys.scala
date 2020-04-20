@@ -18,22 +18,20 @@ trait AxisConfigKeys extends js.Object
 
 object AxisConfigKeys {
   @scala.inline
-  def axis: typings.vegaTypings.vegaTypingsStrings.axis = this.cast("axis")
+  def axis: typings.vegaTypings.vegaTypingsStrings.axis = "axis".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.axis]
   @scala.inline
-  def axisBand: typings.vegaTypings.vegaTypingsStrings.axisBand = this.cast("axisBand")
+  def axisBand: typings.vegaTypings.vegaTypingsStrings.axisBand = "axisBand".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.axisBand]
   @scala.inline
-  def axisBottom: typings.vegaTypings.vegaTypingsStrings.axisBottom = this.cast("axisBottom")
+  def axisBottom: typings.vegaTypings.vegaTypingsStrings.axisBottom = "axisBottom".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.axisBottom]
   @scala.inline
-  def axisLeft: typings.vegaTypings.vegaTypingsStrings.axisLeft = this.cast("axisLeft")
+  def axisLeft: typings.vegaTypings.vegaTypingsStrings.axisLeft = "axisLeft".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.axisLeft]
   @scala.inline
-  def axisRight: typings.vegaTypings.vegaTypingsStrings.axisRight = this.cast("axisRight")
+  def axisRight: typings.vegaTypings.vegaTypingsStrings.axisRight = "axisRight".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.axisRight]
   @scala.inline
-  def axisTop: typings.vegaTypings.vegaTypingsStrings.axisTop = this.cast("axisTop")
+  def axisTop: typings.vegaTypings.vegaTypingsStrings.axisTop = "axisTop".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.axisTop]
   @scala.inline
-  def axisX: typings.vegaTypings.vegaTypingsStrings.axisX = this.cast("axisX")
+  def axisX: typings.vegaTypings.vegaTypingsStrings.axisX = "axisX".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.axisX]
   @scala.inline
-  def axisY: typings.vegaTypings.vegaTypingsStrings.axisY = this.cast("axisY")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def axisY: typings.vegaTypings.vegaTypingsStrings.axisY = "axisY".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.axisY]
 }
 

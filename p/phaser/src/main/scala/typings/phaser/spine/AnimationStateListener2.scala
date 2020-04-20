@@ -24,7 +24,6 @@ object AnimationStateListener2 {
     start: TrackEntry => Unit
   ): AnimationStateListener2 = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction1(complete), dispose = js.Any.fromFunction1(dispose), end = js.Any.fromFunction1(end), event = js.Any.fromFunction2(event), interrupt = js.Any.fromFunction1(interrupt), start = js.Any.fromFunction1(start))
-  
     __obj.asInstanceOf[AnimationStateListener2]
   }
 }

@@ -12,7 +12,6 @@ object ComposeStatic {
   @scala.inline
   def apply(mixin: (js.Object, js.Array[js.Function]) => Unit): ComposeStatic = {
     val __obj = js.Dynamic.literal(mixin = js.Any.fromFunction2(mixin))
-  
     __obj.asInstanceOf[ComposeStatic]
   }
 }

@@ -15,7 +15,6 @@ object ReposGetTopPathsResponseItem {
   @scala.inline
   def apply(count: Double, path: String, title: String, uniques: Double): ReposGetTopPathsResponseItem = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], uniques = uniques.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReposGetTopPathsResponseItem]
   }
 }

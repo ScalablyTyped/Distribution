@@ -29,19 +29,19 @@ class DataAttribute protected () extends DataMember {
   def attributeByContract(): js.Any = js.native
   def attributeByContract(newValue: MsdAttribute): js.Any = js.native
   @JSName("attributeByContract")
-  def attributeByContract_Union(): MsdAttribute | Null = js.native
-  def attributeQualifiedName(): String | Null = js.native
+  def attributeByContract_Union: MsdAttribute | Null = js.native
+  def attributeQualifiedName: String | Null = js.native
   @JSName("attribute")
-  def attribute_Union(): IAttribute | Null = js.native
+  def attribute_Union: IAttribute | Null = js.native
   /**
     * In version 8.5.0: introduced
     */
-  def description(): String = js.native
+  def description: String = js.native
   def description(newValue: String): js.Any = js.native
   /**
     * In version 8.5.0: introduced
     */
-  def summary(): String = js.native
+  def summary: String = js.native
   def summary(newValue: String): js.Any = js.native
 }
 

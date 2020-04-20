@@ -16,7 +16,6 @@ object UploadSigningCertificateResponse {
   @scala.inline
   def apply(Certificate: SigningCertificate): UploadSigningCertificateResponse = {
     val __obj = js.Dynamic.literal(Certificate = Certificate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UploadSigningCertificateResponse]
   }
 }

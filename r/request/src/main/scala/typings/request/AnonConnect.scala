@@ -16,7 +16,6 @@ object AnonConnect {
   @scala.inline
   def apply(connect: Double, end: Double, lookup: Double, response: Double, socket: Double): AnonConnect = {
     val __obj = js.Dynamic.literal(connect = connect.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], lookup = lookup.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], socket = socket.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonConnect]
   }
 }

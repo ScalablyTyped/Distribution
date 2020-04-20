@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactHammerjsProps {
   @scala.inline
-  def ReactHammerjsProps: ReactHammerProps.type = typings.reactHammerjs.mod.ReactHammerProps
+  def ReactHammerjsProps: ReactHammerProps.type = ReactHammerProps
   type ReactHammerjsProps = ReactHammerProps
 }
 

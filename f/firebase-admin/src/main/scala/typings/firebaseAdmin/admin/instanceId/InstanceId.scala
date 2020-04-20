@@ -41,7 +41,6 @@ object InstanceId {
   @scala.inline
   def apply(app: App, deleteInstanceId: String => js.Promise[Unit]): InstanceId = {
     val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], deleteInstanceId = js.Any.fromFunction1(deleteInstanceId))
-  
     __obj.asInstanceOf[InstanceId]
   }
 }

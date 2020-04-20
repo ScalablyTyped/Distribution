@@ -1,0 +1,37 @@
+package typings.titanium
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * Dictionary object of parameters for the padding/insets applied to all kinds of views.
+  */
+trait Padding extends HorizontalInsets {
+  /**
+  	 * Bottom padding/inset
+  	 */
+  var bottom: js.UndefOr[Double] = js.undefined
+  /**
+  	 * Top padding/inset
+  	 */
+  var top: js.UndefOr[Double] = js.undefined
+}
+
+object Padding {
+  @scala.inline
+  def apply(
+    bottom: Int | Double = null,
+    left: Int | Double = null,
+    right: Int | Double = null,
+    top: Int | Double = null
+  ): Padding = {
+    val __obj = js.Dynamic.literal()
+    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Padding]
+  }
+}
+

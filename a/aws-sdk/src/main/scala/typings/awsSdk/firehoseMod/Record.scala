@@ -16,7 +16,6 @@ object Record {
   @scala.inline
   def apply(Data: Data): Record = {
     val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Record]
   }
 }

@@ -14,7 +14,6 @@ object EncodedUpdatesResource {
   @scala.inline
   def apply(get: AnonAccesstoken => Request_[FetchThreatListUpdatesResponse]): EncodedUpdatesResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
-  
     __obj.asInstanceOf[EncodedUpdatesResource]
   }
 }

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 object mod extends js.Object {
   def default[T, A](
     combinedReducers: Record[
-      String, 
+      /* keyof T */ String, 
       js.Tuple2[
         /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
         Dispatch[A]

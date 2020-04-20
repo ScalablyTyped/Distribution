@@ -12,7 +12,6 @@ object GenerateFuncFlags {
   @scala.inline
   def apply(ttl: Double): GenerateFuncFlags = {
     val __obj = js.Dynamic.literal(ttl = ttl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GenerateFuncFlags]
   }
 }

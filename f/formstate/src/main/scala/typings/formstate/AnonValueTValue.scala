@@ -15,7 +15,6 @@ object AnonValueTValue {
   @scala.inline
   def apply[TValue /* <: ValidatableArray */](hasError: `false`, value: TValue): AnonValueTValue[TValue] = {
     val __obj = js.Dynamic.literal(hasError = hasError.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonValueTValue[TValue]]
   }
 }

@@ -14,10 +14,8 @@ trait XlRowCol extends js.Object
 
 object XlRowCol {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlColumns: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlColumns: `2` = this.cast(2)
-  @scala.inline
-  def xlRows: `1` = this.cast(1)
+  def xlRows: `1` = 1.asInstanceOf[`1`]
 }
 

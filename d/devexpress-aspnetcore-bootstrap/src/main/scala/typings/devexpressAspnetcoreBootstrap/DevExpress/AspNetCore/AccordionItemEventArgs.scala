@@ -20,7 +20,6 @@ object AccordionItemEventArgs {
     sender: Control
   ): AccordionItemEventArgs = {
     val __obj = js.Dynamic.literal(htmlElement = htmlElement.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AccordionItemEventArgs]
   }
 }

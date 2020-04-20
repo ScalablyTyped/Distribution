@@ -12,7 +12,6 @@ object IApplicationDataStatics {
   @scala.inline
   def apply(current: ApplicationData): IApplicationDataStatics = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IApplicationDataStatics]
   }
 }

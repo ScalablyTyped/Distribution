@@ -12,10 +12,8 @@ trait LocaleMatcher extends js.Object
 
 object LocaleMatcher {
   @scala.inline
-  def `best-fit`: typings.vueI18n.vueI18nStrings.`best-fit` = this.cast("best-fit")
+  def `best-fit`: typings.vueI18n.vueI18nStrings.`best-fit` = "best-fit".asInstanceOf[typings.vueI18n.vueI18nStrings.`best-fit`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def lookup: typings.vueI18n.vueI18nStrings.lookup = this.cast("lookup")
+  def lookup: typings.vueI18n.vueI18nStrings.lookup = "lookup".asInstanceOf[typings.vueI18n.vueI18nStrings.lookup]
 }
 

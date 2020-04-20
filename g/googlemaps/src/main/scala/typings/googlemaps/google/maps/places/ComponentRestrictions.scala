@@ -12,7 +12,6 @@ object ComponentRestrictions {
   @scala.inline
   def apply(country: String | js.Array[String]): ComponentRestrictions = {
     val __obj = js.Dynamic.literal(country = country.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ComponentRestrictions]
   }
 }

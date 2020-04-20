@@ -101,6 +101,11 @@ object promises extends js.Object {
     def readFile(options: AnonEncodingNull): js.Promise[Buffer] = js.native
     def readFile(options: BufferEncoding): js.Promise[String] = js.native
     /**
+      * See `fs.readv` promisified version.
+      */
+    def readv(buffers: js.Array[ArrayBufferView]): js.Promise[ReadVResult] = js.native
+    def readv(buffers: js.Array[ArrayBufferView], position: Double): js.Promise[ReadVResult] = js.native
+    /**
       * Asynchronous fstat(2) - Get file status.
       */
     def stat(): js.Promise[Stats] = js.native

@@ -41,7 +41,6 @@ object SecurityPrivilegeMetadata {
     PrivilegeType: Append | AppendTo | Assign | Create | Delete | None | Read | Share | Write
   ): SecurityPrivilegeMetadata = {
     val __obj = js.Dynamic.literal(CanBeBasic = CanBeBasic.asInstanceOf[js.Any], CanBeDeep = CanBeDeep.asInstanceOf[js.Any], CanBeEntityReference = CanBeEntityReference.asInstanceOf[js.Any], CanBeGlobal = CanBeGlobal.asInstanceOf[js.Any], CanBeLocal = CanBeLocal.asInstanceOf[js.Any], CanBeParentEntityReference = CanBeParentEntityReference.asInstanceOf[js.Any], ExtensionData = ExtensionData.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], PrivilegeId = PrivilegeId.asInstanceOf[js.Any], PrivilegeType = PrivilegeType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SecurityPrivilegeMetadata]
   }
 }

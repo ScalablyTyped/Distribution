@@ -35,6 +35,14 @@ trait BaseLayerViewGL2D extends LayerView {
     */
   def attach(): Unit = js.native
   /**
+    * Bind the designated rendering output surface and restore the correct viewport.  This method can be used after the WebGL state has been altered by a call to `gl.bindFramebuffer()` to restore the framebuffer that contains the final, composited frame, i.e. the one that is guaranteed to be bound right before control is handed over to [render()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#render). Note that this *may or may not be the default framebuffer*; [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) can use various surfaces for frame compositing and there is no guarantee that when [render()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#render) is called, the bound framebuffer is the default one.  Together with the framebuffer, also a matching full-size viewport is restored.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#bindRenderTarget)
+    *
+    *
+    */
+  def bindRenderTarget(): Unit = js.native
+  /**
     * Method called after the layer is removed and the [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) is about to be removed. Typically, this method is implemented to free resources like watchers and destroy WebGL objects such as shader programs.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#detach)
@@ -42,6 +50,14 @@ trait BaseLayerViewGL2D extends LayerView {
     *
     */
   def detach(): Unit = js.native
+  /**
+    * Get the designated rendering output surface and corresponding viewport configuration.  The returned object is the same render target that is restored by a call to [bindRenderTarget()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#bindRenderTarget).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#getRenderTarget)
+    *
+    *
+    */
+  def getRenderTarget(): RenderTarget = js.native
   /**
     * Method to implement that is responsible for providing objects hit at the specified screen coordinates. This method is called internally by the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) each time its [hitTest()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#hitTest) method is called.
     *

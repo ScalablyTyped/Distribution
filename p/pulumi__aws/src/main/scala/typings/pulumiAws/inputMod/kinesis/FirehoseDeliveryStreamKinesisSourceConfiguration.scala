@@ -21,7 +21,6 @@ object FirehoseDeliveryStreamKinesisSourceConfiguration {
   @scala.inline
   def apply(kinesisStreamArn: Input[String], roleArn: Input[String]): FirehoseDeliveryStreamKinesisSourceConfiguration = {
     val __obj = js.Dynamic.literal(kinesisStreamArn = kinesisStreamArn.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FirehoseDeliveryStreamKinesisSourceConfiguration]
   }
 }

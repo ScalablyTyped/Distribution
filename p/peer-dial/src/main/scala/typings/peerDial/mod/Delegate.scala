@@ -18,7 +18,6 @@ object Delegate {
     stopApp: (String, String, js.Function1[/* data */ Boolean, Unit]) => Unit
   ): Delegate = {
     val __obj = js.Dynamic.literal(getApp = js.Any.fromFunction1(getApp), launchApp = js.Any.fromFunction3(launchApp), stopApp = js.Any.fromFunction3(stopApp))
-  
     __obj.asInstanceOf[Delegate]
   }
 }

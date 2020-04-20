@@ -12,7 +12,6 @@ object JQuery {
   @scala.inline
   def apply(customSelect: JQueryCustomSelectOption => JQuery): JQuery = {
     val __obj = js.Dynamic.literal(customSelect = js.Any.fromFunction1(customSelect))
-  
     __obj.asInstanceOf[JQuery]
   }
 }

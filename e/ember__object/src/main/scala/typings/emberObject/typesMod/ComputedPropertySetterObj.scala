@@ -12,7 +12,6 @@ object ComputedPropertySetterObj {
   @scala.inline
   def apply[T](set: (String, T) => T): ComputedPropertySetterObj[T] = {
     val __obj = js.Dynamic.literal(set = js.Any.fromFunction2(set))
-  
     __obj.asInstanceOf[ComputedPropertySetterObj[T]]
   }
 }

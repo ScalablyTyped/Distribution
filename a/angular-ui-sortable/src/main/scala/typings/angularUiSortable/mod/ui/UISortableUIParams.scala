@@ -28,7 +28,6 @@ object UISortableUIParams {
     sender: IAugmentedJQuery
   ): UISortableUIParams[T] = {
     val __obj = js.Dynamic.literal(helper = helper.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], originalPosition = originalPosition.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UISortableUIParams[T]]
   }
 }

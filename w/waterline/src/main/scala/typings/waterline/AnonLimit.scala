@@ -13,7 +13,6 @@ object AnonLimit {
   @scala.inline
   def apply(limit: Double, page: Double): AnonLimit = {
     val __obj = js.Dynamic.literal(limit = limit.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLimit]
   }
 }

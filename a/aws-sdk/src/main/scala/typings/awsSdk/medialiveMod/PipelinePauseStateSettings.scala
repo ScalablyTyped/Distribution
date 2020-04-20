@@ -16,7 +16,6 @@ object PipelinePauseStateSettings {
   @scala.inline
   def apply(PipelineId: PipelineId): PipelinePauseStateSettings = {
     val __obj = js.Dynamic.literal(PipelineId = PipelineId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PipelinePauseStateSettings]
   }
 }

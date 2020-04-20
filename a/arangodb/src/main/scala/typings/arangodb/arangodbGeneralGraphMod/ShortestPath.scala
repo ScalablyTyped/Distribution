@@ -15,7 +15,6 @@ object ShortestPath {
   @scala.inline
   def apply[T /* <: js.Object */](distance: Double, edges: js.Array[Edge[T]], vertices: js.Array[String]): ShortestPath[T] = {
     val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], edges = edges.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ShortestPath[T]]
   }
 }

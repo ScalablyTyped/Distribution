@@ -13,7 +13,6 @@ object AnonLanguage {
   @scala.inline
   def apply(language: AnonDidYouMean, text: AnonAutoCorrected): AnonLanguage = {
     val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLanguage]
   }
 }

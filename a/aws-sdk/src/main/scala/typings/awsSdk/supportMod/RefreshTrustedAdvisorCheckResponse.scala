@@ -16,7 +16,6 @@ object RefreshTrustedAdvisorCheckResponse {
   @scala.inline
   def apply(status: TrustedAdvisorCheckRefreshStatus): RefreshTrustedAdvisorCheckResponse = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RefreshTrustedAdvisorCheckResponse]
   }
 }

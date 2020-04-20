@@ -14,8 +14,9 @@ import scala.scalajs.js.annotation._
 /**
 		 * HTTP client object that (mostly) implements the XMLHttpRequest specification.
 		 */
+@JSGlobal("Titanium.Network.HTTPClient")
 @js.native
-trait HTTPClient extends Proxy {
+class HTTPClient () extends Proxy {
   /**
   			 * Ready state constant indicating that the request is complete.
   			 */
@@ -70,9 +71,9 @@ trait HTTPClient extends Proxy {
   			 */
   var enableKeepAlive: Boolean = js.native
   /**
-  			 * Target local file to receive data.
+  			 * Target local file or file path to receive data.
   			 */
-  var file: String = js.native
+  var file: String | File = js.native
   /**
   			 * Absolute URL of the request.
   			 */
@@ -134,91 +135,97 @@ trait HTTPClient extends Proxy {
   			 */
   def abort(): Unit = js.native
   /**
-  			 * Registers a new AuthSchemeFactory for a given scheme.
-  			 */
-  def addAuthFactory(scheme: String, factory: js.Any): Unit = js.native
-  /**
-  			 * Adds a custom key manager.
-  			 */
-  def addKeyManager(X509KeyManager: js.Any): Unit = js.native
-  /**
-  			 * Adds a custom trust manager.
-  			 */
-  def addTrustManager(X509TrustManager: js.Any): Unit = js.native
-  /**
   			 * Clears any cookies stored for the host.
   			 */
   def clearCookies(host: String): Unit = js.native
   /**
   			 * Gets the value of the <Titanium.Network.HTTPClient.allResponseHeaders> property.
+  			 * @deprecated Access <Titanium.Network.HTTPClient.allResponseHeaders> instead.
   			 */
   def getAllResponseHeaders(): String = js.native
   /**
   			 * Gets the value of the <Titanium.Network.HTTPClient.autoEncodeUrl> property.
+  			 * @deprecated Access <Titanium.Network.HTTPClient.autoEncodeUrl> instead.
   			 */
   def getAutoEncodeUrl(): Boolean = js.native
   /**
   			 * Gets the value of the <Titanium.Network.HTTPClient.autoRedirect> property.
+  			 * @deprecated Access <Titanium.Network.HTTPClient.autoRedirect> instead.
   			 */
   def getAutoRedirect(): Boolean = js.native
   /**
   			 * Gets the value of the <Titanium.Network.HTTPClient.cache> property.
+  			 * @deprecated Access <Titanium.Network.HTTPClient.cache> instead.
   			 */
   def getCache(): Boolean = js.native
   /**
   			 * Gets the value of the <Titanium.Network.HTTPClient.connected> property.
+  			 * @deprecated Access <Titanium.Network.HTTPClient.connected> instead.
   			 */
   def getConnected(): Boolean = js.native
   /**
   			 * Gets the value of the <Titanium.Network.HTTPClient.connectionType> property.
+  			 * @deprecated Access <Titanium.Network.HTTPClient.connectionType> instead.
   			 */
   def getConnectionType(): String = js.native
   /**
   			 * Gets the value of the <Titanium.Network.HTTPClient.domain> property.
+  			 * @deprecated Access <Titanium.Network.HTTPClient.domain> instead.
   			 */
   def getDomain(): String = js.native
   /**
   			 * Gets the value of the <Titanium.Network.HTTPClient.enableKeepAlive> property.
+  			 * @deprecated Access <Titanium.Network.HTTPClient.enableKeepAlive> instead.
   			 */
   def getEnableKeepAlive(): Boolean = js.native
   /**
   			 * Gets the value of the <Titanium.Network.HTTPClient.file> property.
+  			 * @deprecated Access <Titanium.Network.HTTPClient.file> instead.
   			 */
-  def getFile(): String = js.native
+  def getFile(): String | File = js.native
   /**
   			 * Gets the value of the <Titanium.Network.HTTPClient.location> property.
+  			 * @deprecated Access <Titanium.Network.HTTPClient.location> instead.
   			 */
   def getLocation(): String = js.native
   /**
   			 * Gets the value of the <Titanium.Network.HTTPClient.ondatastream> property.
+  			 * @deprecated Access <Titanium.Network.HTTPClient.ondatastream> instead.
   			 */
-  def getOndatastream(): js.Function1[/* param0 */ js.Any, _] = js.native
+  def getOndatastream(): js.Function1[/* param0 */ js.Any, Unit] = js.native
   /**
   			 * Gets the value of the <Titanium.Network.HTTPClient.onerror> property.
+  			 * @deprecated Access <Titanium.Network.HTTPClient.onerror> instead.
   			 */
-  def getOnerror(): js.Function1[/* param0 */ FailureResponse, _] = js.native
+  def getOnerror(): js.Function1[/* param0 */ FailureResponse, Unit] = js.native
   /**
   			 * Gets the value of the <Titanium.Network.HTTPClient.onload> property.
+  			 * @deprecated Access <Titanium.Network.HTTPClient.onload> instead.
   			 */
-  def getOnload(): js.Function1[/* param0 */ SuccessResponse, _] = js.native
+  def getOnload(): js.Function1[/* param0 */ SuccessResponse, Unit] = js.native
   /**
   			 * Gets the value of the <Titanium.Network.HTTPClient.onreadystatechange> property.
+  			 * @deprecated Access <Titanium.Network.HTTPClient.onreadystatechange> instead.
   			 */
-  def getOnreadystatechange(): js.Function1[/* param0 */ js.Any, _] = js.native
+  def getOnreadystatechange(): js.Function1[/* param0 */ js.Any, Unit] = js.native
   /**
   			 * Gets the value of the <Titanium.Network.HTTPClient.onsendstream> property.
+  			 * @deprecated Access <Titanium.Network.HTTPClient.onsendstream> instead.
   			 */
-  def getOnsendstream(): js.Function1[/* param0 */ js.Any, _] = js.native
+  def getOnsendstream(): js.Function1[/* param0 */ js.Any, Unit] = js.native
   /**
   			 * Gets the value of the <Titanium.Network.HTTPClient.password> property.
+  			 * @deprecated Access <Titanium.Network.HTTPClient.password> instead.
   			 */
   def getPassword(): String = js.native
   /**
   			 * Gets the value of the <Titanium.Network.HTTPClient.readyState> property.
+  			 * @deprecated Access <Titanium.Network.HTTPClient.readyState> instead.
   			 */
   def getReadyState(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.Network.HTTPClient.responseData> property.
+  			 * @deprecated Access <Titanium.Network.HTTPClient.responseData> instead.
   			 */
   def getResponseData(): Blob = js.native
   /**
@@ -227,64 +234,74 @@ trait HTTPClient extends Proxy {
   def getResponseHeader(name: String): String = js.native
   /**
   			 * Gets the value of the <Titanium.Network.HTTPClient.responseHeaders> property.
+  			 * @deprecated Access <Titanium.Network.HTTPClient.responseHeaders> instead.
   			 */
   def getResponseHeaders(): js.Any = js.native
   /**
   			 * Gets the value of the <Titanium.Network.HTTPClient.responseText> property.
+  			 * @deprecated Access <Titanium.Network.HTTPClient.responseText> instead.
   			 */
   def getResponseText(): String = js.native
   /**
   			 * Gets the value of the <Titanium.Network.HTTPClient.responseXML> property.
+  			 * @deprecated Access <Titanium.Network.HTTPClient.responseXML> instead.
   			 */
   def getResponseXML(): Document = js.native
   /**
   			 * Gets the value of the <Titanium.Network.HTTPClient.securityManager> property.
+  			 * @deprecated Access <Titanium.Network.HTTPClient.securityManager> instead.
   			 */
   def getSecurityManager(): SecurityManagerProtocol = js.native
   /**
   			 * Gets the value of the <Titanium.Network.HTTPClient.status> property.
+  			 * @deprecated Access <Titanium.Network.HTTPClient.status> instead.
   			 */
   def getStatus(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.Network.HTTPClient.statusText> property.
+  			 * @deprecated Access <Titanium.Network.HTTPClient.statusText> instead.
   			 */
   def getStatusText(): String = js.native
   /**
   			 * Gets the value of the <Titanium.Network.HTTPClient.timeout> property.
+  			 * @deprecated Access <Titanium.Network.HTTPClient.timeout> instead.
   			 */
   def getTimeout(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.Network.HTTPClient.tlsVersion> property.
+  			 * @deprecated Access <Titanium.Network.HTTPClient.tlsVersion> instead.
   			 */
   def getTlsVersion(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.Network.HTTPClient.username> property.
+  			 * @deprecated Access <Titanium.Network.HTTPClient.username> instead.
   			 */
   def getUsername(): String = js.native
   /**
   			 * Gets the value of the <Titanium.Network.HTTPClient.validatesSecureCertificate> property.
+  			 * @deprecated Access <Titanium.Network.HTTPClient.validatesSecureCertificate> instead.
   			 */
   def getValidatesSecureCertificate(): Boolean = js.native
   /**
   			 * Function to be called at regular intervals as the request data is being received.
   			 */
-  def ondatastream(param0: js.Any): js.Any = js.native
+  def ondatastream(param0: js.Any): Unit = js.native
   /**
   			 * Function to be called upon a error response.
   			 */
-  def onerror(param0: FailureResponse): js.Any = js.native
+  def onerror(param0: FailureResponse): Unit = js.native
   /**
   			 * Function to be called upon a successful response.
   			 */
-  def onload(param0: SuccessResponse): js.Any = js.native
+  def onload(param0: SuccessResponse): Unit = js.native
   /**
   			 * Function to be called for each [readyState](Titanium.Network.HTTPClient.readyState) change.
   			 */
-  def onreadystatechange(param0: js.Any): js.Any = js.native
+  def onreadystatechange(param0: js.Any): Unit = js.native
   /**
   			 * Function to be called at regular intervals as the request data is being transmitted.
   			 */
-  def onsendstream(param0: js.Any): js.Any = js.native
+  def onsendstream(param0: js.Any): Unit = js.native
   /**
   			 * Opens the request and prepares the connection.
   			 */
@@ -294,56 +311,66 @@ trait HTTPClient extends Proxy {
   			 * Sends the request.
   			 */
   def send(): Unit = js.native
-  def send(data: String): Unit = js.native
   def send(data: js.Any): Unit = js.native
-  def send(data: Blob): Unit = js.native
-  def send(data: File): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Network.HTTPClient.autoEncodeUrl> property.
+  			 * @deprecated Set the value using <Titanium.Network.HTTPClient.autoEncodeUrl> instead.
   			 */
   def setAutoEncodeUrl(autoEncodeUrl: Boolean): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Network.HTTPClient.autoRedirect> property.
+  			 * @deprecated Set the value using <Titanium.Network.HTTPClient.autoRedirect> instead.
   			 */
   def setAutoRedirect(autoRedirect: Boolean): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Network.HTTPClient.cache> property.
+  			 * @deprecated Set the value using <Titanium.Network.HTTPClient.cache> instead.
   			 */
   def setCache(cache: Boolean): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Network.HTTPClient.domain> property.
+  			 * @deprecated Set the value using <Titanium.Network.HTTPClient.domain> instead.
   			 */
   def setDomain(domain: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Network.HTTPClient.enableKeepAlive> property.
+  			 * @deprecated Set the value using <Titanium.Network.HTTPClient.enableKeepAlive> instead.
   			 */
   def setEnableKeepAlive(enableKeepAlive: Boolean): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Network.HTTPClient.file> property.
+  			 * @deprecated Set the value using <Titanium.Network.HTTPClient.file> instead.
   			 */
   def setFile(file: String): Unit = js.native
+  def setFile(file: File): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Network.HTTPClient.ondatastream> property.
+  			 * @deprecated Set the value using <Titanium.Network.HTTPClient.ondatastream> instead.
   			 */
-  def setOndatastream(ondatastream: js.Function1[/* param0 */ js.Any, _]): Unit = js.native
+  def setOndatastream(ondatastream: js.Function1[/* param0 */ js.Any, Unit]): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Network.HTTPClient.onerror> property.
+  			 * @deprecated Set the value using <Titanium.Network.HTTPClient.onerror> instead.
   			 */
-  def setOnerror(onerror: js.Function1[/* param0 */ FailureResponse, _]): Unit = js.native
+  def setOnerror(onerror: js.Function1[/* param0 */ FailureResponse, Unit]): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Network.HTTPClient.onload> property.
+  			 * @deprecated Set the value using <Titanium.Network.HTTPClient.onload> instead.
   			 */
-  def setOnload(onload: js.Function1[/* param0 */ SuccessResponse, _]): Unit = js.native
+  def setOnload(onload: js.Function1[/* param0 */ SuccessResponse, Unit]): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Network.HTTPClient.onreadystatechange> property.
+  			 * @deprecated Set the value using <Titanium.Network.HTTPClient.onreadystatechange> instead.
   			 */
-  def setOnreadystatechange(onreadystatechange: js.Function1[/* param0 */ js.Any, _]): Unit = js.native
+  def setOnreadystatechange(onreadystatechange: js.Function1[/* param0 */ js.Any, Unit]): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Network.HTTPClient.onsendstream> property.
+  			 * @deprecated Set the value using <Titanium.Network.HTTPClient.onsendstream> instead.
   			 */
-  def setOnsendstream(onsendstream: js.Function1[/* param0 */ js.Any, _]): Unit = js.native
+  def setOnsendstream(onsendstream: js.Function1[/* param0 */ js.Any, Unit]): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Network.HTTPClient.password> property.
+  			 * @deprecated Set the value using <Titanium.Network.HTTPClient.password> instead.
   			 */
   def setPassword(password: String): Unit = js.native
   /**
@@ -352,6 +379,7 @@ trait HTTPClient extends Proxy {
   def setRequestHeader(name: String, value: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Network.HTTPClient.securityManager> property.
+  			 * @deprecated Set the value using <Titanium.Network.HTTPClient.securityManager> instead.
   			 */
   def setSecurityManager(securityManager: SecurityManagerProtocol): Unit = js.native
   /**
@@ -360,14 +388,17 @@ trait HTTPClient extends Proxy {
   def setTimeout(timeout: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Network.HTTPClient.tlsVersion> property.
+  			 * @deprecated Set the value using <Titanium.Network.HTTPClient.tlsVersion> instead.
   			 */
   def setTlsVersion(tlsVersion: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Network.HTTPClient.username> property.
+  			 * @deprecated Set the value using <Titanium.Network.HTTPClient.username> instead.
   			 */
   def setUsername(username: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Network.HTTPClient.validatesSecureCertificate> property.
+  			 * @deprecated Set the value using <Titanium.Network.HTTPClient.validatesSecureCertificate> instead.
   			 */
   def setValidatesSecureCertificate(validatesSecureCertificate: Boolean): Unit = js.native
 }

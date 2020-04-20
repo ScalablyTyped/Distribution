@@ -16,16 +16,14 @@ trait AvailableTypes_ extends js.Object
 
 object AvailableTypes_ {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def flat: typings.higButton.higButtonStrings.flat = "flat".asInstanceOf[typings.higButton.higButtonStrings.flat]
   @scala.inline
-  def flat: typings.higButton.higButtonStrings.flat = this.cast("flat")
+  def outline: typings.higButton.higButtonStrings.outline = "outline".asInstanceOf[typings.higButton.higButtonStrings.outline]
   @scala.inline
-  def outline: typings.higButton.higButtonStrings.outline = this.cast("outline")
+  def primary: typings.higButton.higButtonStrings.primary = "primary".asInstanceOf[typings.higButton.higButtonStrings.primary]
   @scala.inline
-  def primary: typings.higButton.higButtonStrings.primary = this.cast("primary")
+  def secondary: typings.higButton.higButtonStrings.secondary = "secondary".asInstanceOf[typings.higButton.higButtonStrings.secondary]
   @scala.inline
-  def secondary: typings.higButton.higButtonStrings.secondary = this.cast("secondary")
-  @scala.inline
-  def solid: typings.higButton.higButtonStrings.solid = this.cast("solid")
+  def solid: typings.higButton.higButtonStrings.solid = "solid".asInstanceOf[typings.higButton.higButtonStrings.solid]
 }
 

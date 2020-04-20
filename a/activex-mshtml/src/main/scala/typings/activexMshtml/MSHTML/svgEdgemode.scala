@@ -20,16 +20,14 @@ trait svgEdgemode extends js.Object
 
 object svgEdgemode {
   @scala.inline
-  def SVG_EDGEMODE_DUPLICATE: `1` = this.cast(1)
+  def SVG_EDGEMODE_DUPLICATE: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def SVG_EDGEMODE_NONE: `3` = this.cast(3)
+  def SVG_EDGEMODE_NONE: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def SVG_EDGEMODE_UNKNOWN: `0` = this.cast(0)
+  def SVG_EDGEMODE_UNKNOWN: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def SVG_EDGEMODE_WRAP: `2` = this.cast(2)
+  def SVG_EDGEMODE_WRAP: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def svgEdgemode_Max: `2147483647` = this.cast(2147483647)
+  def svgEdgemode_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

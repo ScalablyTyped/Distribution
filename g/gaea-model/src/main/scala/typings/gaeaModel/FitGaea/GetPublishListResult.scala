@@ -15,7 +15,6 @@ object GetPublishListResult {
   @scala.inline
   def apply(description: String, version: String): GetPublishListResult = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetPublishListResult]
   }
 }

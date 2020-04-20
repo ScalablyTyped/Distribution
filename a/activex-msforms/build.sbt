@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "activex-msforms"
-version := "2.0-dt-20200225Z-06073e"
+version := "2.0-dt-20200225Z-7e47f4"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "activex-stdole" % "2.0-dt-20200225Z-cae083",
-  "org.scalablytyped" %%% "std" % "3.8-a0108c")
+  "org.scalablytyped" %%% "activex-stdole" % "2.0-dt-20200225Z-f087da",
+  "org.scalablytyped" %%% "std" % "3.8-9b2470")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -17,7 +17,6 @@ object ResourceShareAccepterArgs {
   @scala.inline
   def apply(shareArn: Input[String]): ResourceShareAccepterArgs = {
     val __obj = js.Dynamic.literal(shareArn = shareArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResourceShareAccepterArgs]
   }
 }

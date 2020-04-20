@@ -28,7 +28,6 @@ object FloodlightConfigurationsResource {
     update: AnonKey => Request_[FloodlightConfiguration]
   ): FloodlightConfigurationsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
-  
     __obj.asInstanceOf[FloodlightConfigurationsResource]
   }
 }

@@ -20,16 +20,14 @@ trait ContentVerificationResults extends js.Object
 
 object ContentVerificationResults {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def contverresError: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def contverresError: `0` = this.cast(0)
+  def contverresModified: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def contverresModified: `4` = this.cast(4)
+  def contverresUnverified: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def contverresUnverified: `2` = this.cast(2)
+  def contverresValid: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def contverresValid: `3` = this.cast(3)
-  @scala.inline
-  def contverresVerifying: `1` = this.cast(1)
+  def contverresVerifying: `1` = 1.asInstanceOf[`1`]
 }
 

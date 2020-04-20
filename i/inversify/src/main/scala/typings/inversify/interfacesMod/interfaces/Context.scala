@@ -24,7 +24,6 @@ object Context {
     setCurrentRequest: Request => Unit
   ): Context = {
     val __obj = js.Dynamic.literal(addPlan = js.Any.fromFunction1(addPlan), container = container.asInstanceOf[js.Any], currentRequest = currentRequest.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], plan = plan.asInstanceOf[js.Any], setCurrentRequest = js.Any.fromFunction1(setCurrentRequest))
-  
     __obj.asInstanceOf[Context]
   }
 }

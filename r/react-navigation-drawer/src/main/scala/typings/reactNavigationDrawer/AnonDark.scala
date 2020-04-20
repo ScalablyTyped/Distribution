@@ -13,7 +13,6 @@ object AnonDark {
   @scala.inline
   def apply(dark: String, light: String): AnonDark = {
     val __obj = js.Dynamic.literal(dark = dark.asInstanceOf[js.Any], light = light.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDark]
   }
 }

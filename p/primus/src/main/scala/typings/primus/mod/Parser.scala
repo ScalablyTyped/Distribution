@@ -17,7 +17,6 @@ object Parser {
     encoder: (js.Any, js.Function2[/* error */ Error, /* response */ js.Any, Unit]) => Unit
   ): Parser = {
     val __obj = js.Dynamic.literal(decoder = js.Any.fromFunction2(decoder), encoder = js.Any.fromFunction2(encoder))
-  
     __obj.asInstanceOf[Parser]
   }
 }

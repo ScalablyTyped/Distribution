@@ -13,7 +13,6 @@ object PickImplcount {
   @scala.inline
   def apply(count: String): PickImplcount = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplcount]
   }
 }

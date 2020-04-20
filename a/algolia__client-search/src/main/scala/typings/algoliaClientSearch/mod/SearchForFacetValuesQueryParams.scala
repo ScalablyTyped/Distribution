@@ -19,7 +19,6 @@ object SearchForFacetValuesQueryParams {
   @scala.inline
   def apply(facetName: String, facetQuery: String): SearchForFacetValuesQueryParams = {
     val __obj = js.Dynamic.literal(facetName = facetName.asInstanceOf[js.Any], facetQuery = facetQuery.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SearchForFacetValuesQueryParams]
   }
 }

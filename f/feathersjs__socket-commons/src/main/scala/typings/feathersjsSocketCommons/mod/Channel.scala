@@ -20,7 +20,6 @@ object Channel {
     send: js.Any => Channel
   ): Channel = {
     val __obj = js.Dynamic.literal(filter = js.Any.fromFunction1(filter), join = js.Any.fromFunction1(join), leave = js.Any.fromFunction1(leave), send = js.Any.fromFunction1(send))
-  
     __obj.asInstanceOf[Channel]
   }
 }

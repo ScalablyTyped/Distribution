@@ -13,7 +13,6 @@ object AccessorFunctionProps {
   @scala.inline
   def apply[T](index: Double, item: T): AccessorFunctionProps[T] = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AccessorFunctionProps[T]]
   }
 }

@@ -16,7 +16,6 @@ object SketchMSPageReference {
   @scala.inline
   def apply(_class: MSJSONFileReference, _ref: String, _ref_class: MSImmutablePage): SketchMSPageReference = {
     val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], _ref = _ref.asInstanceOf[js.Any], _ref_class = _ref_class.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SketchMSPageReference]
   }
 }

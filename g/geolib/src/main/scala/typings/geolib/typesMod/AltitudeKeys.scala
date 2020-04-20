@@ -15,16 +15,14 @@ trait AltitudeKeys extends js.Object
 
 object AltitudeKeys {
   @scala.inline
-  def `2`: typings.geolib.geolibNumbers.`2` = this.cast(2)
+  def `2`: typings.geolib.geolibNumbers.`2` = 2.asInstanceOf[typings.geolib.geolibNumbers.`2`]
   @scala.inline
-  def alt: typings.geolib.geolibStrings.alt = this.cast("alt")
+  def alt: typings.geolib.geolibStrings.alt = "alt".asInstanceOf[typings.geolib.geolibStrings.alt]
   @scala.inline
-  def altitude: typings.geolib.geolibStrings.altitude = this.cast("altitude")
+  def altitude: typings.geolib.geolibStrings.altitude = "altitude".asInstanceOf[typings.geolib.geolibStrings.altitude]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def elev: typings.geolib.geolibStrings.elev = "elev".asInstanceOf[typings.geolib.geolibStrings.elev]
   @scala.inline
-  def elev: typings.geolib.geolibStrings.elev = this.cast("elev")
-  @scala.inline
-  def elevation: typings.geolib.geolibStrings.elevation = this.cast("elevation")
+  def elevation: typings.geolib.geolibStrings.elevation = "elevation".asInstanceOf[typings.geolib.geolibStrings.elevation]
 }
 

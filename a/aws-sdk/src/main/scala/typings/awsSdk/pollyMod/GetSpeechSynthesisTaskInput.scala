@@ -16,7 +16,6 @@ object GetSpeechSynthesisTaskInput {
   @scala.inline
   def apply(TaskId: TaskId): GetSpeechSynthesisTaskInput = {
     val __obj = js.Dynamic.literal(TaskId = TaskId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetSpeechSynthesisTaskInput]
   }
 }

@@ -16,7 +16,6 @@ object AnonDescription {
   @scala.inline
   def apply(Description: String, Max: Double, State: OlSyncState, Value: Double): AnonDescription = {
     val __obj = js.Dynamic.literal(Description = Description.asInstanceOf[js.Any], Max = Max.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDescription]
   }
 }

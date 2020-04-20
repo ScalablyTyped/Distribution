@@ -21,7 +21,6 @@ object IExportStructureItem {
     StructureItemType: MFMetadataStructureItem
   ): IExportStructureItem = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), StructureItemGUID = StructureItemGUID.asInstanceOf[js.Any], StructureItemID = StructureItemID.asInstanceOf[js.Any], StructureItemType = StructureItemType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IExportStructureItem]
   }
 }

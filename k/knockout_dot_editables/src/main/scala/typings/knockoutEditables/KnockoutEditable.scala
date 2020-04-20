@@ -23,7 +23,6 @@ object KnockoutEditable {
     rollback: () => Unit
   ): KnockoutEditable = {
     val __obj = js.Dynamic.literal(addEditable = js.Any.fromFunction1(addEditable), beginEdit = js.Any.fromFunction0(beginEdit), commit = js.Any.fromFunction0(commit), hasChanges = js.Any.fromFunction0(hasChanges), rollback = js.Any.fromFunction0(rollback))
-  
     __obj.asInstanceOf[KnockoutEditable]
   }
 }

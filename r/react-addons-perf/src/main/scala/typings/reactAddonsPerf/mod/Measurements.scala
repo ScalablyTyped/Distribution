@@ -27,7 +27,6 @@ object Measurements {
     writes: NumericPerfContext
   ): Measurements = {
     val __obj = js.Dynamic.literal(counts = counts.asInstanceOf[js.Any], displayNames = displayNames.asInstanceOf[js.Any], exclusive = exclusive.asInstanceOf[js.Any], inclusive = inclusive.asInstanceOf[js.Any], render = render.asInstanceOf[js.Any], totalTime = totalTime.asInstanceOf[js.Any], writes = writes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Measurements]
   }
 }

@@ -14,7 +14,6 @@ object AnonActionId {
   @scala.inline
   def apply(action: `marker-deselect`, id: String): AnonActionId = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonActionId]
   }
 }

@@ -162,7 +162,6 @@ object GrammarRegistry {
     selectGrammar: (String, String) => Grammar
   ): GrammarRegistry = {
     val __obj = js.Dynamic.literal(addGrammar = js.Any.fromFunction1(addGrammar), assignLanguageMode = js.Any.fromFunction2(assignLanguageMode), autoAssignLanguageMode = js.Any.fromFunction1(autoAssignLanguageMode), decodeTokens = js.Any.fromFunction2(decodeTokens), getGrammarScore = js.Any.fromFunction3(getGrammarScore), getGrammars = js.Any.fromFunction0(getGrammars), grammarForScopeName = js.Any.fromFunction1(grammarForScopeName), loadGrammar = js.Any.fromFunction2(loadGrammar), loadGrammarSync = js.Any.fromFunction1(loadGrammarSync), maintainLanguageMode = js.Any.fromFunction1(maintainLanguageMode), onDidAddGrammar = js.Any.fromFunction1(onDidAddGrammar), onDidRemoveGrammar = js.Any.fromFunction1(onDidRemoveGrammar), onDidUpdateGrammar = js.Any.fromFunction1(onDidUpdateGrammar), readGrammar = js.Any.fromFunction2(readGrammar), readGrammarSync = js.Any.fromFunction1(readGrammarSync), removeGrammar = js.Any.fromFunction1(removeGrammar), removeGrammarForScopeName = js.Any.fromFunction1(removeGrammarForScopeName), selectGrammar = js.Any.fromFunction2(selectGrammar))
-  
     __obj.asInstanceOf[GrammarRegistry]
   }
 }

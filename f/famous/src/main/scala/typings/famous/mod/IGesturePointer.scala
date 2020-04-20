@@ -15,7 +15,6 @@ object IGesturePointer {
   @scala.inline
   def apply(delta: Vec2, position: Vec2, velocity: Vec2): IGesturePointer = {
     val __obj = js.Dynamic.literal(delta = delta.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], velocity = velocity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IGesturePointer]
   }
 }

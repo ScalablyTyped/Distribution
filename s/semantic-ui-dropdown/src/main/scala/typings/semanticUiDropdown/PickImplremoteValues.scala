@@ -13,7 +13,6 @@ object PickImplremoteValues {
   @scala.inline
   def apply(remoteValues: String): PickImplremoteValues = {
     val __obj = js.Dynamic.literal(remoteValues = remoteValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplremoteValues]
   }
 }

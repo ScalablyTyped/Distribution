@@ -19,7 +19,6 @@ object Typeofcast {
   @scala.inline
   def apply(framework: Typeofframework): Typeofcast = {
     val __obj = js.Dynamic.literal(framework = framework.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Typeofcast]
   }
 }

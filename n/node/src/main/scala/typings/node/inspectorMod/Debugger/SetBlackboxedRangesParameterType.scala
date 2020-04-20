@@ -17,7 +17,6 @@ object SetBlackboxedRangesParameterType {
   @scala.inline
   def apply(positions: js.Array[ScriptPosition], scriptId: ScriptId): SetBlackboxedRangesParameterType = {
     val __obj = js.Dynamic.literal(positions = positions.asInstanceOf[js.Any], scriptId = scriptId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetBlackboxedRangesParameterType]
   }
 }

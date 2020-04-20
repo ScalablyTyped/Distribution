@@ -19,24 +19,22 @@ trait TextFieldTypes extends js.Object
 
 object TextFieldTypes {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def date: typings.ionicCore.ionicCoreStrings.date = "date".asInstanceOf[typings.ionicCore.ionicCoreStrings.date]
   @scala.inline
-  def date: typings.ionicCore.ionicCoreStrings.date = this.cast("date")
+  def email: typings.ionicCore.ionicCoreStrings.email = "email".asInstanceOf[typings.ionicCore.ionicCoreStrings.email]
   @scala.inline
-  def email: typings.ionicCore.ionicCoreStrings.email = this.cast("email")
+  def number: typings.ionicCore.ionicCoreStrings.number = "number".asInstanceOf[typings.ionicCore.ionicCoreStrings.number]
   @scala.inline
-  def number: typings.ionicCore.ionicCoreStrings.number = this.cast("number")
+  def password: typings.ionicCore.ionicCoreStrings.password = "password".asInstanceOf[typings.ionicCore.ionicCoreStrings.password]
   @scala.inline
-  def password: typings.ionicCore.ionicCoreStrings.password = this.cast("password")
+  def search: typings.ionicCore.ionicCoreStrings.search = "search".asInstanceOf[typings.ionicCore.ionicCoreStrings.search]
   @scala.inline
-  def search: typings.ionicCore.ionicCoreStrings.search = this.cast("search")
+  def tel: typings.ionicCore.ionicCoreStrings.tel = "tel".asInstanceOf[typings.ionicCore.ionicCoreStrings.tel]
   @scala.inline
-  def tel: typings.ionicCore.ionicCoreStrings.tel = this.cast("tel")
+  def text: typings.ionicCore.ionicCoreStrings.text = "text".asInstanceOf[typings.ionicCore.ionicCoreStrings.text]
   @scala.inline
-  def text: typings.ionicCore.ionicCoreStrings.text = this.cast("text")
+  def time: typings.ionicCore.ionicCoreStrings.time = "time".asInstanceOf[typings.ionicCore.ionicCoreStrings.time]
   @scala.inline
-  def time: typings.ionicCore.ionicCoreStrings.time = this.cast("time")
-  @scala.inline
-  def url: typings.ionicCore.ionicCoreStrings.url = this.cast("url")
+  def url: typings.ionicCore.ionicCoreStrings.url = "url".asInstanceOf[typings.ionicCore.ionicCoreStrings.url]
 }
 

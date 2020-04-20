@@ -8,5 +8,5 @@ package object errorsMod {
   type ErrorData = org.scalablytyped.runtime.StringDictionary[js.UndefOr[typings.firebaseUtil.errorsMod.StringLike]]
   type ErrorMap[ErrorCode /* <: java.lang.String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ K in ErrorCode ]: string}
-    */ typings.firebaseUtil.firebaseUtilStrings.ErrorMap with js.Any
+    */ typings.firebaseUtil.firebaseUtilStrings.ErrorMap with org.scalablytyped.runtime.TopLevel[js.Any]
 }

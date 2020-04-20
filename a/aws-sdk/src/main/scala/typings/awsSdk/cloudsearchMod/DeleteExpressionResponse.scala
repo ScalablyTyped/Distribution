@@ -16,7 +16,6 @@ object DeleteExpressionResponse {
   @scala.inline
   def apply(Expression: ExpressionStatus): DeleteExpressionResponse = {
     val __obj = js.Dynamic.literal(Expression = Expression.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteExpressionResponse]
   }
 }

@@ -21,7 +21,6 @@ object AnonBIncomingQueueBlocked {
     pFaxServer: FaxServer
   ): AnonBIncomingQueueBlocked = {
     val __obj = js.Dynamic.literal(bIncomingQueueBlocked = bIncomingQueueBlocked.asInstanceOf[js.Any], bOutgoingQueueBlocked = bOutgoingQueueBlocked.asInstanceOf[js.Any], bOutgoingQueuePaused = bOutgoingQueuePaused.asInstanceOf[js.Any], pFaxServer = pFaxServer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBIncomingQueueBlocked]
   }
 }

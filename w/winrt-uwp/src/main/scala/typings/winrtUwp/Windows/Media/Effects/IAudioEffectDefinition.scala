@@ -17,7 +17,6 @@ object IAudioEffectDefinition {
   @scala.inline
   def apply(activatableClassId: String, properties: IPropertySet): IAudioEffectDefinition = {
     val __obj = js.Dynamic.literal(activatableClassId = activatableClassId.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IAudioEffectDefinition]
   }
 }

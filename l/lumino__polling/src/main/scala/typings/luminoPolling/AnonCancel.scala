@@ -13,7 +13,6 @@ object AnonCancel {
   @scala.inline
   def apply[T, U, V /* <: String */](cancel: State[T, U, V] => Boolean): AnonCancel[T, U, V] = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel))
-  
     __obj.asInstanceOf[AnonCancel[T, U, V]]
   }
 }

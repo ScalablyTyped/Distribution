@@ -12,7 +12,6 @@ object ErrorLogger {
   @scala.inline
   def apply(error: /* repeated */ js.Any => Unit): ErrorLogger = {
     val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error))
-  
     __obj.asInstanceOf[ErrorLogger]
   }
 }

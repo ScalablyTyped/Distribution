@@ -23,7 +23,6 @@ object TextDecoderCommon {
   @scala.inline
   def apply(encoding: java.lang.String, fatal: scala.Boolean, ignoreBOM: scala.Boolean): TextDecoderCommon = {
     val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any], fatal = fatal.asInstanceOf[js.Any], ignoreBOM = ignoreBOM.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TextDecoderCommon]
   }
 }

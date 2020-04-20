@@ -15,7 +15,6 @@ object OpenFinExternalApplicationStatic {
   @scala.inline
   def apply(wrap: String => OpenFinExternalApplication): OpenFinExternalApplicationStatic = {
     val __obj = js.Dynamic.literal(wrap = js.Any.fromFunction1(wrap))
-  
     __obj.asInstanceOf[OpenFinExternalApplicationStatic]
   }
 }

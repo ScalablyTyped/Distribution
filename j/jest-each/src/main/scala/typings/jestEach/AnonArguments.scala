@@ -13,7 +13,6 @@ object AnonArguments {
   @scala.inline
   def apply(arguments: js.Array[_], title: String): AnonArguments = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonArguments]
   }
 }

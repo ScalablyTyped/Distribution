@@ -17,7 +17,6 @@ object ProductSubscriptionArgs {
   @scala.inline
   def apply(productArn: Input[String]): ProductSubscriptionArgs = {
     val __obj = js.Dynamic.literal(productArn = productArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProductSubscriptionArgs]
   }
 }

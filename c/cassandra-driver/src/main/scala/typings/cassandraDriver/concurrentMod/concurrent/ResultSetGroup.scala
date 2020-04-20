@@ -15,7 +15,6 @@ object ResultSetGroup {
   @scala.inline
   def apply(errors: js.Array[Error], resultItems: js.Array[_], totalExecuted: Double): ResultSetGroup = {
     val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], resultItems = resultItems.asInstanceOf[js.Any], totalExecuted = totalExecuted.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResultSetGroup]
   }
 }

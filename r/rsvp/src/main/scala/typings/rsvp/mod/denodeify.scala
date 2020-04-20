@@ -1,5 +1,6 @@
 package typings.rsvp.mod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.rsvp.rsvpBooleans.`false`
 import typings.rsvp.rsvpBooleans.`true`
 import scala.scalajs.js
@@ -44,7 +45,7 @@ object denodeify extends js.Object {
     typings.rsvp.mod.RSVP.Promise[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in K1 ]: T}
-    */ typings.rsvp.rsvpStrings.denodeify with js.Any
+    */ typings.rsvp.rsvpStrings.denodeify with TopLevel[js.Any]
     ]
   ] = js.native
   def apply[T1, T2, A, K1 /* <: String */, K2 /* <: String */](
@@ -56,7 +57,7 @@ object denodeify extends js.Object {
     options: js.Tuple2[K1, K2]
   ): js.Function1[
     /* arg1 */ A, 
-    typings.rsvp.mod.RSVP.Promise[typings.rsvp.rsvpStrings.denodeify with js.Any]
+    typings.rsvp.mod.RSVP.Promise[typings.rsvp.rsvpStrings.denodeify with TopLevel[js.Any]]
   ] = js.native
   def apply[T1, T2, T3, A, K1 /* <: String */, K2 /* <: String */, K3 /* <: String */](
     nodeFunc: js.Function2[
@@ -67,7 +68,7 @@ object denodeify extends js.Object {
     options: js.Tuple3[K1, K2, K3]
   ): js.Function1[
     /* arg1 */ A, 
-    typings.rsvp.mod.RSVP.Promise[typings.rsvp.rsvpStrings.denodeify with js.Any]
+    typings.rsvp.mod.RSVP.Promise[typings.rsvp.rsvpStrings.denodeify with TopLevel[js.Any]]
   ] = js.native
 }
 

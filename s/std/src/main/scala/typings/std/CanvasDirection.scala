@@ -13,12 +13,10 @@ trait CanvasDirection extends js.Object
 
 object CanvasDirection {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def inherit: typings.std.stdStrings.inherit = "inherit".asInstanceOf[typings.std.stdStrings.inherit]
   @scala.inline
-  def inherit: typings.std.stdStrings.inherit = this.cast("inherit")
+  def ltr: typings.std.stdStrings.ltr = "ltr".asInstanceOf[typings.std.stdStrings.ltr]
   @scala.inline
-  def ltr: typings.std.stdStrings.ltr = this.cast("ltr")
-  @scala.inline
-  def rtl: typings.std.stdStrings.rtl = this.cast("rtl")
+  def rtl: typings.std.stdStrings.rtl = "rtl".asInstanceOf[typings.std.stdStrings.rtl]
 }
 

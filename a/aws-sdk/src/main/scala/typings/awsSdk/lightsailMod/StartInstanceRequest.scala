@@ -16,7 +16,6 @@ object StartInstanceRequest {
   @scala.inline
   def apply(instanceName: ResourceName): StartInstanceRequest = {
     val __obj = js.Dynamic.literal(instanceName = instanceName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StartInstanceRequest]
   }
 }

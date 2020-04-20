@@ -12,7 +12,6 @@ object CompoundOptions {
   @scala.inline
   def apply(handlers: js.Array[typings.asymmetrikLeafletD3.mod.HexbinHoverHandler]): CompoundOptions = {
     val __obj = js.Dynamic.literal(handlers = handlers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CompoundOptions]
   }
 }

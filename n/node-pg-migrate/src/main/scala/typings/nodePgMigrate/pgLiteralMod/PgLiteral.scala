@@ -12,7 +12,6 @@ object PgLiteral {
   @scala.inline
   def apply(_str: js.Any): PgLiteral = {
     val __obj = js.Dynamic.literal(_str = _str.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PgLiteral]
   }
 }

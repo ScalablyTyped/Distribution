@@ -26,7 +26,6 @@ object TransitionHandlerProps {
     onExiting: js.Any
   ): TransitionHandlerProps = {
     val __obj = js.Dynamic.literal(onEnter = onEnter.asInstanceOf[js.Any], onEntered = onEntered.asInstanceOf[js.Any], onEntering = onEntering.asInstanceOf[js.Any], onExit = onExit.asInstanceOf[js.Any], onExited = onExited.asInstanceOf[js.Any], onExiting = onExiting.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TransitionHandlerProps]
   }
 }

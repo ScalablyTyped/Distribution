@@ -16,12 +16,10 @@ trait XlPageBreak extends js.Object
 
 object XlPageBreak {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlPageBreakAutomatic: `-4105` = -4105.asInstanceOf[`-4105`]
   @scala.inline
-  def xlPageBreakAutomatic: `-4105` = this.cast(-4105)
+  def xlPageBreakManual: `-4135` = -4135.asInstanceOf[`-4135`]
   @scala.inline
-  def xlPageBreakManual: `-4135` = this.cast(-4135)
-  @scala.inline
-  def xlPageBreakNone: `-4142` = this.cast(-4142)
+  def xlPageBreakNone: `-4142` = -4142.asInstanceOf[`-4142`]
 }
 

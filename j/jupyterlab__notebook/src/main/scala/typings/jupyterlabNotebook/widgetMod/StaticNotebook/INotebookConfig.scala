@@ -27,7 +27,6 @@ object INotebookConfig {
   @scala.inline
   def apply(defaultCell: CellType, recordTiming: Boolean, scrollPastEnd: Boolean): INotebookConfig = {
     val __obj = js.Dynamic.literal(defaultCell = defaultCell.asInstanceOf[js.Any], recordTiming = recordTiming.asInstanceOf[js.Any], scrollPastEnd = scrollPastEnd.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INotebookConfig]
   }
 }

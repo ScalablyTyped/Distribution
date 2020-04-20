@@ -12,7 +12,6 @@ object IdleRequestOptions {
   @scala.inline
   def apply(timeout: Double): IdleRequestOptions = {
     val __obj = js.Dynamic.literal(timeout = timeout.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IdleRequestOptions]
   }
 }

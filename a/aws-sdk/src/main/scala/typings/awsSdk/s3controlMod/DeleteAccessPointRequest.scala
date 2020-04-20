@@ -20,7 +20,6 @@ object DeleteAccessPointRequest {
   @scala.inline
   def apply(AccountId: AccountId, Name: AccessPointName): DeleteAccessPointRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteAccessPointRequest]
   }
 }

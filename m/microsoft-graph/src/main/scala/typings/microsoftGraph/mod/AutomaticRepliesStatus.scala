@@ -13,12 +13,10 @@ trait AutomaticRepliesStatus extends js.Object
 
 object AutomaticRepliesStatus {
   @scala.inline
-  def alwaysEnabled: typings.microsoftGraph.microsoftGraphStrings.alwaysEnabled = this.cast("alwaysEnabled")
+  def alwaysEnabled: typings.microsoftGraph.microsoftGraphStrings.alwaysEnabled = "alwaysEnabled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.alwaysEnabled]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def disabled: typings.microsoftGraph.microsoftGraphStrings.disabled = "disabled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.disabled]
   @scala.inline
-  def disabled: typings.microsoftGraph.microsoftGraphStrings.disabled = this.cast("disabled")
-  @scala.inline
-  def scheduled: typings.microsoftGraph.microsoftGraphStrings.scheduled = this.cast("scheduled")
+  def scheduled: typings.microsoftGraph.microsoftGraphStrings.scheduled = "scheduled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.scheduled]
 }
 

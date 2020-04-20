@@ -43,7 +43,6 @@ object JourneyExecutionActivityMetricsResponse {
     Metrics: MapOfString
   ): JourneyExecutionActivityMetricsResponse = {
     val __obj = js.Dynamic.literal(ActivityType = ActivityType.asInstanceOf[js.Any], ApplicationId = ApplicationId.asInstanceOf[js.Any], JourneyActivityId = JourneyActivityId.asInstanceOf[js.Any], JourneyId = JourneyId.asInstanceOf[js.Any], LastEvaluatedTime = LastEvaluatedTime.asInstanceOf[js.Any], Metrics = Metrics.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JourneyExecutionActivityMetricsResponse]
   }
 }

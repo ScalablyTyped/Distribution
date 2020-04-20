@@ -14,7 +14,6 @@ object AnonHunter {
   @scala.inline
   def apply(hunter: RankScoreObject, rogue: RankScoreObject): AnonHunter = {
     val __obj = js.Dynamic.literal(hunter = hunter.asInstanceOf[js.Any], rogue = rogue.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHunter]
   }
 }

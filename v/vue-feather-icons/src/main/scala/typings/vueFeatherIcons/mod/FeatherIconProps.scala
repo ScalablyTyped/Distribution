@@ -12,7 +12,6 @@ object FeatherIconProps {
   @scala.inline
   def apply(size: String): FeatherIconProps = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FeatherIconProps]
   }
 }

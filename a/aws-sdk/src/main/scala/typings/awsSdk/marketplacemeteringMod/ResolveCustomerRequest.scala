@@ -16,7 +16,6 @@ object ResolveCustomerRequest {
   @scala.inline
   def apply(RegistrationToken: NonEmptyString): ResolveCustomerRequest = {
     val __obj = js.Dynamic.literal(RegistrationToken = RegistrationToken.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResolveCustomerRequest]
   }
 }

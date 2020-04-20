@@ -12,10 +12,8 @@ trait GoogleActionsTransactionsV3UserInfoOptionsUserInfoProperties extends js.Ob
 
 object GoogleActionsTransactionsV3UserInfoOptionsUserInfoProperties {
   @scala.inline
-  def EMAIL: typings.actionsOnGoogle.actionsOnGoogleStrings.EMAIL = this.cast("EMAIL")
+  def EMAIL: typings.actionsOnGoogle.actionsOnGoogleStrings.EMAIL = "EMAIL".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.EMAIL]
   @scala.inline
-  def USER_INFO_PROPERTY_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.USER_INFO_PROPERTY_UNSPECIFIED = this.cast("USER_INFO_PROPERTY_UNSPECIFIED")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def USER_INFO_PROPERTY_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.USER_INFO_PROPERTY_UNSPECIFIED = "USER_INFO_PROPERTY_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.USER_INFO_PROPERTY_UNSPECIFIED]
 }
 

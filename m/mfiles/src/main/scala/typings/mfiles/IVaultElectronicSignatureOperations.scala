@@ -24,7 +24,6 @@ object IVaultElectronicSignatureOperations {
     DisconnectSignaturesEx: (IObjVer, Boolean) => IObjectVersionAndProperties
   ): IVaultElectronicSignatureOperations = {
     val __obj = js.Dynamic.literal(AddEmptySignature = js.Any.fromFunction2(AddEmptySignature), AddEmptySignatures = js.Any.fromFunction1(AddEmptySignatures), DisconnectSignature = js.Any.fromFunction2(DisconnectSignature), DisconnectSignatureEx = js.Any.fromFunction3(DisconnectSignatureEx), DisconnectSignatures = js.Any.fromFunction1(DisconnectSignatures), DisconnectSignaturesEx = js.Any.fromFunction2(DisconnectSignaturesEx))
-  
     __obj.asInstanceOf[IVaultElectronicSignatureOperations]
   }
 }

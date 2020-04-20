@@ -17,20 +17,18 @@ trait ActionTypes extends js.Object
 
 object ActionTypes {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def clear: typings.reactSelect.reactSelectStrings.clear = "clear".asInstanceOf[typings.reactSelect.reactSelectStrings.clear]
   @scala.inline
-  def clear: typings.reactSelect.reactSelectStrings.clear = this.cast("clear")
+  def `create-option`: typings.reactSelect.reactSelectStrings.`create-option` = "create-option".asInstanceOf[typings.reactSelect.reactSelectStrings.`create-option`]
   @scala.inline
-  def `create-option`: typings.reactSelect.reactSelectStrings.`create-option` = this.cast("create-option")
+  def `deselect-option`: typings.reactSelect.reactSelectStrings.`deselect-option` = "deselect-option".asInstanceOf[typings.reactSelect.reactSelectStrings.`deselect-option`]
   @scala.inline
-  def `deselect-option`: typings.reactSelect.reactSelectStrings.`deselect-option` = this.cast("deselect-option")
+  def `pop-value`: typings.reactSelect.reactSelectStrings.`pop-value` = "pop-value".asInstanceOf[typings.reactSelect.reactSelectStrings.`pop-value`]
   @scala.inline
-  def `pop-value`: typings.reactSelect.reactSelectStrings.`pop-value` = this.cast("pop-value")
+  def `remove-value`: typings.reactSelect.reactSelectStrings.`remove-value` = "remove-value".asInstanceOf[typings.reactSelect.reactSelectStrings.`remove-value`]
   @scala.inline
-  def `remove-value`: typings.reactSelect.reactSelectStrings.`remove-value` = this.cast("remove-value")
+  def `select-option`: typings.reactSelect.reactSelectStrings.`select-option` = "select-option".asInstanceOf[typings.reactSelect.reactSelectStrings.`select-option`]
   @scala.inline
-  def `select-option`: typings.reactSelect.reactSelectStrings.`select-option` = this.cast("select-option")
-  @scala.inline
-  def `set-value`: typings.reactSelect.reactSelectStrings.`set-value` = this.cast("set-value")
+  def `set-value`: typings.reactSelect.reactSelectStrings.`set-value` = "set-value".asInstanceOf[typings.reactSelect.reactSelectStrings.`set-value`]
 }
 

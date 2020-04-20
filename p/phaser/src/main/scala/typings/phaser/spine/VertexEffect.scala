@@ -14,7 +14,6 @@ object VertexEffect {
   @scala.inline
   def apply(begin: Skeleton => Unit, end: () => Unit, transform: (Vector2, Vector2, Color, Color) => Unit): VertexEffect = {
     val __obj = js.Dynamic.literal(begin = js.Any.fromFunction1(begin), end = js.Any.fromFunction0(end), transform = js.Any.fromFunction4(transform))
-  
     __obj.asInstanceOf[VertexEffect]
   }
 }

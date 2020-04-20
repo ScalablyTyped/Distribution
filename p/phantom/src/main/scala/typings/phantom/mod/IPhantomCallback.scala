@@ -18,7 +18,6 @@ object IPhantomCallback {
   @scala.inline
   def apply(method: callback, parent: phantom, target: js.Function, transform: `true`): IPhantomCallback = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPhantomCallback]
   }
 }

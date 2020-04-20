@@ -16,7 +16,6 @@ object GetRecommenderConfigurationRequest {
   @scala.inline
   def apply(RecommenderId: string): GetRecommenderConfigurationRequest = {
     val __obj = js.Dynamic.literal(RecommenderId = RecommenderId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetRecommenderConfigurationRequest]
   }
 }

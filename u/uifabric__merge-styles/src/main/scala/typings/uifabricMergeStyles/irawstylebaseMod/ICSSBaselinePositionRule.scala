@@ -13,12 +13,10 @@ trait ICSSBaselinePositionRule extends js.Object
 
 object ICSSBaselinePositionRule {
   @scala.inline
-  def baseline: typings.uifabricMergeStyles.uifabricMergeStylesStrings.baseline = this.cast("baseline")
+  def baseline: typings.uifabricMergeStyles.uifabricMergeStylesStrings.baseline = "baseline".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.baseline]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `first baseline`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`first baseline` = ("first baseline").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`first baseline`]
   @scala.inline
-  def `first baseline`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`first baseline` = this.cast("first baseline")
-  @scala.inline
-  def `last baseline`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`last baseline` = this.cast("last baseline")
+  def `last baseline`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`last baseline` = ("last baseline").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`last baseline`]
 }
 

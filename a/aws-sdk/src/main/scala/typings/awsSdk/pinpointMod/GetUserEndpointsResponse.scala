@@ -13,7 +13,6 @@ object GetUserEndpointsResponse {
   @scala.inline
   def apply(EndpointsResponse: EndpointsResponse): GetUserEndpointsResponse = {
     val __obj = js.Dynamic.literal(EndpointsResponse = EndpointsResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetUserEndpointsResponse]
   }
 }

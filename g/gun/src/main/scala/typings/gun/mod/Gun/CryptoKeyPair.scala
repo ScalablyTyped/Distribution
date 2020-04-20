@@ -16,7 +16,6 @@ object CryptoKeyPair {
   @scala.inline
   def apply(epriv: String, epub: String, priv: String, pub: String): CryptoKeyPair = {
     val __obj = js.Dynamic.literal(epriv = epriv.asInstanceOf[js.Any], epub = epub.asInstanceOf[js.Any], priv = priv.asInstanceOf[js.Any], pub = pub.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CryptoKeyPair]
   }
 }

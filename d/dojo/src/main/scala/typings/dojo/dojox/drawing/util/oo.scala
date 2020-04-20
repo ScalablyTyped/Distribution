@@ -63,7 +63,6 @@ object oo {
   @scala.inline
   def apply(declare: () => js.Any, extend: () => js.Function): oo = {
     val __obj = js.Dynamic.literal(declare = js.Any.fromFunction0(declare), extend = js.Any.fromFunction0(extend))
-  
     __obj.asInstanceOf[oo]
   }
 }

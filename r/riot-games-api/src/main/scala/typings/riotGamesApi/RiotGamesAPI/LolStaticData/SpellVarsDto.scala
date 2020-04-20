@@ -16,7 +16,6 @@ object SpellVarsDto {
   @scala.inline
   def apply(coeff: js.Array[Double], dyn: String, key: String, link: String, ranksWith: String): SpellVarsDto = {
     val __obj = js.Dynamic.literal(coeff = coeff.asInstanceOf[js.Any], dyn = dyn.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], ranksWith = ranksWith.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SpellVarsDto]
   }
 }

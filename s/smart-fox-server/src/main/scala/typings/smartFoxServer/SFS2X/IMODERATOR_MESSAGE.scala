@@ -15,7 +15,6 @@ object IMODERATOR_MESSAGE {
   @scala.inline
   def apply(data: js.Object, message: String, sender: SFSUser): IMODERATOR_MESSAGE = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMODERATOR_MESSAGE]
   }
 }

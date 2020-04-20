@@ -16,7 +16,6 @@ object AnonIdx {
   @scala.inline
   def apply(idx: Double, image: DepreciatedJimp, x: Double, y: Double): AnonIdx = {
     val __obj = js.Dynamic.literal(idx = idx.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIdx]
   }
 }

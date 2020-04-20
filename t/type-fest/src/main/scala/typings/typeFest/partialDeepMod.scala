@@ -1,5 +1,6 @@
 package typings.typeFest
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Map
 import typings.std.Partial
 import typings.std.ReadonlyMap
@@ -44,6 +45,6 @@ object partialDeepMod extends js.Object {
   */
   type PartialObjectDeep[ObjectType /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ KeyType in keyof ObjectType ]:? type-fest.type-fest/source/partial-deep.PartialDeep<ObjectType[KeyType]>}
-    */ typings.typeFest.typeFestStrings.PartialObjectDeep with ObjectType
+    */ typings.typeFest.typeFestStrings.PartialObjectDeep with TopLevel[ObjectType]
 }
 

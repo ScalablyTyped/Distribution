@@ -28,7 +28,7 @@ object x509Mod extends js.Object {
     /**
       * Gets a issuer name of the certificate
       */
-    def Issuer(): String = js.native
+    def Issuer: String = js.native
     /**
       * Loads X509Certificate from DER data
       * @param  {Uint8Array} rawData
@@ -47,15 +47,15 @@ object x509Mod extends js.Object {
     /**
       * Gets the public key from the X509Certificate
       */
-    def PublicKey(): CryptoKey | Null = js.native
+    def PublicKey: CryptoKey | Null = js.native
     /**
       * Gets a serial number of the certificate in BIG INTEGER string format
       */
-    def SerialNumber(): String = js.native
+    def SerialNumber: String = js.native
     /**
       * Gets a subject name of the certificate
       */
-    def Subject(): String = js.native
+    def Subject: String = js.native
     /**
       * Returns a thumbprint of the certificate
       * @param  {DigestAlgorithm="SHA-1"} algName Digest algorithm name

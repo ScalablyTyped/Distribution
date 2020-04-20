@@ -15,7 +15,6 @@ object PopupDetails {
   @scala.inline
   def apply(popup: String, tabId: Double): PopupDetails = {
     val __obj = js.Dynamic.literal(popup = popup.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PopupDetails]
   }
 }

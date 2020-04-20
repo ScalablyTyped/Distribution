@@ -31,7 +31,6 @@ object UsersResource {
     updateProfile: AnonFields => Request_[UserProfile]
   ): UsersResource = {
     val __obj = js.Dynamic.literal(createCompanyRelation = js.Any.fromFunction1(createCompanyRelation), deleteCompanyRelation = js.Any.fromFunction1(deleteCompanyRelation), get = js.Any.fromFunction1(get), updateProfile = js.Any.fromFunction1(updateProfile))
-  
     __obj.asInstanceOf[UsersResource]
   }
 }

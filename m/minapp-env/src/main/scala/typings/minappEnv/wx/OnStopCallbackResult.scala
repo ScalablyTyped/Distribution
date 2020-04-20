@@ -13,7 +13,6 @@ object OnStopCallbackResult {
   @scala.inline
   def apply(tempFilePath: String): OnStopCallbackResult = {
     val __obj = js.Dynamic.literal(tempFilePath = tempFilePath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OnStopCallbackResult]
   }
 }

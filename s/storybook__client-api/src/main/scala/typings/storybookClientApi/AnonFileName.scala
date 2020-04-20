@@ -14,7 +14,6 @@ object AnonFileName {
   @scala.inline
   def apply(fileName: String, kind: String, stories: js.Array[AnonName]): AnonFileName = {
     val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], stories = stories.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFileName]
   }
 }

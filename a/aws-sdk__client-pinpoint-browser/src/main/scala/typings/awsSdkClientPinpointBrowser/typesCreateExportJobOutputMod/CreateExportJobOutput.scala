@@ -23,7 +23,6 @@ object CreateExportJobOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, ExportJobResponse: UnmarshalledExportJobResponse): CreateExportJobOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], ExportJobResponse = ExportJobResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateExportJobOutput]
   }
 }

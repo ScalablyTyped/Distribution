@@ -12,10 +12,8 @@ trait SizeParam extends js.Object
 
 object SizeParam {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def height: typings.webdriverio.webdriverioStrings.height = "height".asInstanceOf[typings.webdriverio.webdriverioStrings.height]
   @scala.inline
-  def height: typings.webdriverio.webdriverioStrings.height = this.cast("height")
-  @scala.inline
-  def width: typings.webdriverio.webdriverioStrings.width = this.cast("width")
+  def width: typings.webdriverio.webdriverioStrings.width = "width".asInstanceOf[typings.webdriverio.webdriverioStrings.width]
 }
 

@@ -22,7 +22,6 @@ object AnonBorderColorBorderRadius {
     overflow: String
   ): AnonBorderColorBorderRadius = {
     val __obj = js.Dynamic.literal(borderColor = borderColor.asInstanceOf[js.Any], borderRadius = borderRadius.asInstanceOf[js.Any], borderWidth = borderWidth.asInstanceOf[js.Any], flexDirection = flexDirection.asInstanceOf[js.Any], overflow = overflow.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBorderColorBorderRadius]
   }
 }

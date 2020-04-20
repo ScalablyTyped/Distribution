@@ -13,7 +13,6 @@ object AnonPromise {
   @scala.inline
   def apply(Promise: PromiseConstructorLike): AnonPromise = {
     val __obj = js.Dynamic.literal(Promise = Promise.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPromise]
   }
 }

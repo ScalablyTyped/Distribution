@@ -12,10 +12,8 @@ trait Compression extends js.Object
 
 object Compression {
   @scala.inline
-  def DEFLATE: typings.pizzip.pizzipStrings.DEFLATE = this.cast("DEFLATE")
+  def DEFLATE: typings.pizzip.pizzipStrings.DEFLATE = "DEFLATE".asInstanceOf[typings.pizzip.pizzipStrings.DEFLATE]
   @scala.inline
-  def STORE: typings.pizzip.pizzipStrings.STORE = this.cast("STORE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def STORE: typings.pizzip.pizzipStrings.STORE = "STORE".asInstanceOf[typings.pizzip.pizzipStrings.STORE]
 }
 

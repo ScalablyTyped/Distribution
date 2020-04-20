@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "detect-passive-events"
-version := "1.0-dt-20180214Z-4eeff5"
+version := "1.0-dt-20180214Z-574d4e"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

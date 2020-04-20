@@ -27,7 +27,6 @@ object ImagesResource {
     upload: AnonImageType => Request_[ImagesUploadResponse]
   ): ImagesResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), deleteall = js.Any.fromFunction1(deleteall), list = js.Any.fromFunction1(list), upload = js.Any.fromFunction1(upload))
-  
     __obj.asInstanceOf[ImagesResource]
   }
 }

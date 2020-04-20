@@ -13,7 +13,6 @@ object PickImpldoesntContainExac {
   @scala.inline
   def apply(doesntContainExactly: String): PickImpldoesntContainExac = {
     val __obj = js.Dynamic.literal(doesntContainExactly = doesntContainExactly.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpldoesntContainExac]
   }
 }

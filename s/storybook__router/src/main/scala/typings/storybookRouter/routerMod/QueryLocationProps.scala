@@ -13,7 +13,6 @@ object QueryLocationProps {
   @scala.inline
   def apply(children: RenderData => ReactNode): QueryLocationProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-  
     __obj.asInstanceOf[QueryLocationProps]
   }
 }

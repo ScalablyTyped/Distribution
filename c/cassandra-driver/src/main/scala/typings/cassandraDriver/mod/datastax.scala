@@ -1,5 +1,6 @@
 package typings.cassandraDriver.mod
 
+import typings.cassandraDriver.graphMod.graph.EnumValue
 import typings.cassandraDriver.typesMod.types.ResultSet
 import typings.node.Buffer
 import typings.std.Date
@@ -23,6 +24,14 @@ object datastax extends js.Object {
     def asInt(value: Double): js.Object = js.native
     def asTimestamp(value: Date): js.Object = js.native
     def asUdt(value: js.Object): js.Object = js.native
+    @js.native
+    object t extends js.Object {
+      val id: EnumValue = js.native
+      val key: EnumValue = js.native
+      val label: EnumValue = js.native
+      val value: EnumValue = js.native
+    }
+    
   }
   
   @js.native

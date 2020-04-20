@@ -58,7 +58,7 @@ class CompletionHandler_ protected () extends IDisposable {
     * it is acceptable for the other methods to be simple functions that return
     * rejected promises.
     */
-  def connector(): IDataConnector[IReply, Unit, IRequest, String] = js.native
+  def connector: IDataConnector[IReply, Unit, IRequest, String] = js.native
   def connector(connector: IDataConnector[IReply, Unit, IRequest, String]): js.Any = js.native
   /**
     * Dispose of the resources held by the object.
@@ -79,7 +79,7 @@ class CompletionHandler_ protected () extends IDisposable {
     * The editor used by the completion handler.
     */
   @JSName("editor")
-  def editor_Union(): IEditor | Null = js.native
+  def editor_Union: IEditor | Null = js.native
   /**
     * Get the state of the text editor at the given position.
     */
@@ -92,7 +92,7 @@ class CompletionHandler_ protected () extends IDisposable {
     * Get whether the completion handler is disposed.
     */
   @JSName("isDisposed")
-  def isDisposed_MCompletionHandler_(): Boolean = js.native
+  def isDisposed_MCompletionHandler_ : Boolean = js.native
   /**
     * Handle a completion selected signal from the completion widget.
     */

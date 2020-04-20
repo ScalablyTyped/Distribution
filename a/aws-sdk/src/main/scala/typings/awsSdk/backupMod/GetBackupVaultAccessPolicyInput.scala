@@ -16,7 +16,6 @@ object GetBackupVaultAccessPolicyInput {
   @scala.inline
   def apply(BackupVaultName: BackupVaultName): GetBackupVaultAccessPolicyInput = {
     val __obj = js.Dynamic.literal(BackupVaultName = BackupVaultName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBackupVaultAccessPolicyInput]
   }
 }

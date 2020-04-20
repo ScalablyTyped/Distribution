@@ -31,10 +31,10 @@ import scala.scalajs.js.annotation._
 
 trait antDesignProProps {
   @scala.inline
-  def AuthorizedProps: IAuthorizedProps.type = typings.antDesignPro.authorizedMod.IAuthorizedProps
+  def AuthorizedProps: IAuthorizedProps.type = IAuthorizedProps
   type AuthorizedProps = IAuthorizedProps
   @scala.inline
-  def AuthorizedRouteProps: IAuthorizedRouteProps.type = typings.antDesignPro.authorizedRouteMod.IAuthorizedRouteProps
+  def AuthorizedRouteProps: IAuthorizedRouteProps.type = IAuthorizedRouteProps
   type AuthorizedRouteProps = IAuthorizedRouteProps
   @scala.inline
   def AvatarItemProps: typings.antDesignPro.avatarItemMod.AvatarItemProps.type = typings.antDesignPro.avatarItemMod.AvatarItemProps
@@ -44,18 +44,18 @@ trait antDesignProProps {
   type AvatarListProps = typings.antDesignPro.avatarListMod.AvatarListProps
   type AxisProps = typings.bizcharts.mod.AxisProps
   @scala.inline
-  def BarProps: IBarProps.type = typings.antDesignPro.barMod.IBarProps
+  def BarProps: IBarProps.type = IBarProps
   type BarProps = IBarProps
   @scala.inline
   def BreadcrumbProps: typings.antDesignPro.pageHeaderMod.PageHeaderProps.type = typings.antDesignPro.pageHeaderMod.PageHeaderProps
   type BreadcrumbProps = typings.antDesignPro.pageHeaderMod.PageHeaderProps
   type ChartProps = typings.bizcharts.mod.ChartProps
   @scala.inline
-  def ChartCardProps: IChartCardProps.type = typings.antDesignPro.chartCardMod.IChartCardProps
+  def ChartCardProps: IChartCardProps.type = IChartCardProps
   type ChartCardProps = IChartCardProps
   type CoordProps = typings.bizcharts.mod.CoordProps
   @scala.inline
-  def CountDownProps: ICountDownProps.type = typings.antDesignPro.countDownMod.ICountDownProps
+  def CountDownProps: ICountDownProps.type = ICountDownProps
   type CountDownProps = ICountDownProps
   @scala.inline
   def DescriptionProps: typings.antDesignPro.descriptionMod.DescriptionProps.type = typings.antDesignPro.descriptionMod.DescriptionProps
@@ -71,13 +71,13 @@ trait antDesignProProps {
   type ExceptionProps[L] = typings.antDesignPro.exceptionMod.ExceptionProps[L]
   type FacetProps = typings.bizcharts.mod.FacetProps
   @scala.inline
-  def FieldProps: IFieldProps.type = typings.antDesignPro.fieldMod.IFieldProps
+  def FieldProps: IFieldProps.type = IFieldProps
   type FieldProps = IFieldProps
   @scala.inline
   def FooterToolbarProps: typings.antDesignPro.footerToolbarMod.FooterToolbarProps.type = typings.antDesignPro.footerToolbarMod.FooterToolbarProps
   type FooterToolbarProps = typings.antDesignPro.footerToolbarMod.FooterToolbarProps
   @scala.inline
-  def GaugeProps: IGaugeProps.type = typings.antDesignPro.gaugeMod.IGaugeProps
+  def GaugeProps: IGaugeProps.type = IGaugeProps
   type GaugeProps = IGaugeProps
   type GeomProps = typings.bizcharts.mod.GeomProps
   @scala.inline
@@ -123,13 +123,13 @@ trait antDesignProProps {
   def LoginUserNameProps: typings.antDesignPro.loginItemMod.LoginItemProps.type = typings.antDesignPro.loginItemMod.LoginItemProps
   type LoginUserNameProps = typings.antDesignPro.loginItemMod.LoginItemProps
   @scala.inline
-  def MiniAreaProps: IMiniAreaProps.type = typings.antDesignPro.miniAreaMod.IMiniAreaProps
+  def MiniAreaProps: IMiniAreaProps.type = IMiniAreaProps
   type MiniAreaProps = IMiniAreaProps
   @scala.inline
-  def MiniBarProps: IMiniBarProps.type = typings.antDesignPro.miniBarMod.IMiniBarProps
+  def MiniBarProps: IMiniBarProps.type = IMiniBarProps
   type MiniBarProps = IMiniBarProps
   @scala.inline
-  def MiniProgressProps: IMiniProgressProps.type = typings.antDesignPro.miniProgressMod.IMiniProgressProps
+  def MiniProgressProps: IMiniProgressProps.type = IMiniProgressProps
   type MiniProgressProps = IMiniProgressProps
   @scala.inline
   def NoticeIconProps: typings.antDesignPro.noticeIconMod.NoticeIconProps.type = typings.antDesignPro.noticeIconMod.NoticeIconProps
@@ -144,16 +144,16 @@ trait antDesignProProps {
   def PageHeaderProps: typings.antDesignPro.pageHeaderMod.PageHeaderProps.type = typings.antDesignPro.pageHeaderMod.PageHeaderProps
   type PageHeaderProps = typings.antDesignPro.pageHeaderMod.PageHeaderProps
   @scala.inline
-  def PieProps: IPieProps.type = typings.antDesignPro.pieMod.IPieProps
+  def PieProps: IPieProps.type = IPieProps
   type PieProps = IPieProps
   @scala.inline
-  def RadarProps: IRadarProps.type = typings.antDesignPro.radarMod.IRadarProps
+  def RadarProps: IRadarProps.type = IRadarProps
   type RadarProps = IRadarProps
   @scala.inline
   def ResultProps: typings.antDesignPro.resultMod.ResultProps.type = typings.antDesignPro.resultMod.ResultProps
   type ResultProps = typings.antDesignPro.resultMod.ResultProps
   @scala.inline
-  def TagCloudProps: ITagCloudProps.type = typings.antDesignPro.tagCloudMod.ITagCloudProps
+  def TagCloudProps: ITagCloudProps.type = ITagCloudProps
   type TagCloudProps = ITagCloudProps
   @scala.inline
   def TagSelectProps: typings.antDesignPro.tagSelectMod.TagSelectProps.type = typings.antDesignPro.tagSelectMod.TagSelectProps
@@ -162,15 +162,15 @@ trait antDesignProProps {
   def TagSelectOptionProps: typings.antDesignPro.tagSelectOptionMod.TagSelectOptionProps.type = typings.antDesignPro.tagSelectOptionMod.TagSelectOptionProps
   type TagSelectOptionProps = typings.antDesignPro.tagSelectOptionMod.TagSelectOptionProps
   @scala.inline
-  def TimelineChartProps: ITimelineChartProps.type = typings.antDesignPro.timelineChartMod.ITimelineChartProps
+  def TimelineChartProps: ITimelineChartProps.type = ITimelineChartProps
   type TimelineChartProps = ITimelineChartProps
   type TooltipProps = typings.bizcharts.mod.TooltipProps
   @scala.inline
-  def TrendProps: ITrendProps.type = typings.antDesignPro.trendMod.ITrendProps
+  def TrendProps: ITrendProps.type = ITrendProps
   type TrendProps = ITrendProps
   type ViewProps = typings.bizcharts.mod.ViewProps
   @scala.inline
-  def WaterWaveProps: IWaterWaveProps.type = typings.antDesignPro.waterWaveMod.IWaterWaveProps
+  def WaterWaveProps: IWaterWaveProps.type = IWaterWaveProps
   type WaterWaveProps = IWaterWaveProps
 }
 

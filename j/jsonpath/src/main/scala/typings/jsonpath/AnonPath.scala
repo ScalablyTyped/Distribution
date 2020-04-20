@@ -14,7 +14,6 @@ object AnonPath {
   @scala.inline
   def apply(path: js.Array[PathComponent], value: js.Any): AnonPath = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPath]
   }
 }

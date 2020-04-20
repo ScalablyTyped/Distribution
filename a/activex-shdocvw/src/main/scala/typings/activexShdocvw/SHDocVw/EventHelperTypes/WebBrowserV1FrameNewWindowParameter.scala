@@ -24,7 +24,6 @@ object WebBrowserV1FrameNewWindowParameter {
     URL: String
   ): WebBrowserV1FrameNewWindowParameter = {
     val __obj = js.Dynamic.literal(Flags = Flags.asInstanceOf[js.Any], Headers = Headers.asInstanceOf[js.Any], PostData = PostData.asInstanceOf[js.Any], Processed = Processed.asInstanceOf[js.Any], TargetFrameName = TargetFrameName.asInstanceOf[js.Any], URL = URL.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WebBrowserV1FrameNewWindowParameter]
   }
 }

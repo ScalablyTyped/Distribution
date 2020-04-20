@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@aws-sdk/modeled-endpoint-middleware", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  def modeledEndpointMiddleware[InputType /* <: js.Object */](urlParser: UrlParser, inputKey: String): BuildMiddleware[InputType, _, _] = js.native
+  def modeledEndpointMiddleware[InputType /* <: js.Object */](urlParser: UrlParser, inputKey: /* keyof InputType */ String): BuildMiddleware[InputType, _, _] = js.native
 }
 

@@ -20,16 +20,14 @@ trait ADCPROP_ASYNCTHREADPRIORITY_ENUM extends js.Object
 
 object ADCPROP_ASYNCTHREADPRIORITY_ENUM {
   @scala.inline
-  def adPriorityAboveNormal: `4` = this.cast(4)
+  def adPriorityAboveNormal: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def adPriorityBelowNormal: `2` = this.cast(2)
+  def adPriorityBelowNormal: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def adPriorityHighest: `5` = this.cast(5)
+  def adPriorityHighest: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def adPriorityLowest: `1` = this.cast(1)
+  def adPriorityLowest: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def adPriorityNormal: `3` = this.cast(3)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def adPriorityNormal: `3` = 3.asInstanceOf[`3`]
 }
 

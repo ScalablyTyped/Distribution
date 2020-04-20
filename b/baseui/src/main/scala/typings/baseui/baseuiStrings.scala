@@ -3375,13 +3375,13 @@ object baseuiStrings {
   @scala.inline
   def AZ: AZ = "AZ".asInstanceOf[AZ]
   @scala.inline
-  def `Afghanistan Leftparenthesis‫افغانستان‬‎Rightparenthesis`: `Afghanistan Leftparenthesis‫افغانستان‬‎Rightparenthesis` = "Afghanistan (\u202B\u0627\u0641\u063A\u0627\u0646\u0633\u062A\u0627\u0646\u202C\u200E)".asInstanceOf[`Afghanistan Leftparenthesis‫افغانستان‬‎Rightparenthesis`]
+  def `Afghanistan Leftparenthesis‫افغانستان‬‎Rightparenthesis`: `Afghanistan Leftparenthesis‫افغانستان‬‎Rightparenthesis` = ("Afghanistan (\u202B\u0627\u0641\u063A\u0627\u0646\u0633\u062A\u0627\u0646\u202C\u200E)").asInstanceOf[`Afghanistan Leftparenthesis‫افغانستان‬‎Rightparenthesis`]
   @scala.inline
-  def `Albania LeftparenthesisShqipëriRightparenthesis`: `Albania LeftparenthesisShqipëriRightparenthesis` = "Albania (Shqip\u00EBri)".asInstanceOf[`Albania LeftparenthesisShqipëriRightparenthesis`]
+  def `Albania LeftparenthesisShqipëriRightparenthesis`: `Albania LeftparenthesisShqipëriRightparenthesis` = ("Albania (Shqip\u00EBri)").asInstanceOf[`Albania LeftparenthesisShqipëriRightparenthesis`]
   @scala.inline
-  def `Algeria Leftparenthesis‫الجزائر‬‎Rightparenthesis`: `Algeria Leftparenthesis‫الجزائر‬‎Rightparenthesis` = "Algeria (\u202B\u0627\u0644\u062C\u0632\u0627\u0626\u0631\u202C\u200E)".asInstanceOf[`Algeria Leftparenthesis‫الجزائر‬‎Rightparenthesis`]
+  def `Algeria Leftparenthesis‫الجزائر‬‎Rightparenthesis`: `Algeria Leftparenthesis‫الجزائر‬‎Rightparenthesis` = ("Algeria (\u202B\u0627\u0644\u062C\u0632\u0627\u0626\u0631\u202C\u200E)").asInstanceOf[`Algeria Leftparenthesis‫الجزائر‬‎Rightparenthesis`]
   @scala.inline
-  def `American Samoa`: `American Samoa` = "American Samoa".asInstanceOf[`American Samoa`]
+  def `American Samoa`: `American Samoa` = ("American Samoa").asInstanceOf[`American Samoa`]
   @scala.inline
   def Andorra: Andorra = "Andorra".asInstanceOf[Andorra]
   @scala.inline
@@ -3389,11 +3389,11 @@ object baseuiStrings {
   @scala.inline
   def Anguilla: Anguilla = "Anguilla".asInstanceOf[Anguilla]
   @scala.inline
-  def `Antigua and Barbuda`: `Antigua and Barbuda` = "Antigua and Barbuda".asInstanceOf[`Antigua and Barbuda`]
+  def `Antigua and Barbuda`: `Antigua and Barbuda` = ("Antigua and Barbuda").asInstanceOf[`Antigua and Barbuda`]
   @scala.inline
   def Argentina: Argentina = "Argentina".asInstanceOf[Argentina]
   @scala.inline
-  def `Armenia LeftparenthesisՀայաստանRightparenthesis`: `Armenia LeftparenthesisՀայաստանRightparenthesis` = "Armenia (\u0540\u0561\u0575\u0561\u057D\u057F\u0561\u0576)".asInstanceOf[`Armenia LeftparenthesisՀայաստանRightparenthesis`]
+  def `Armenia LeftparenthesisՀայաստանRightparenthesis`: `Armenia LeftparenthesisՀայաստանRightparenthesis` = ("Armenia (\u0540\u0561\u0575\u0561\u057D\u057F\u0561\u0576)").asInstanceOf[`Armenia LeftparenthesisՀայաստանRightparenthesis`]
   @scala.inline
   def ArrowDown: ArrowDown = "ArrowDown".asInstanceOf[ArrowDown]
   @scala.inline
@@ -3407,9 +3407,9 @@ object baseuiStrings {
   @scala.inline
   def Australia: Australia = "Australia".asInstanceOf[Australia]
   @scala.inline
-  def `Austria LeftparenthesisÖsterreichRightparenthesis`: `Austria LeftparenthesisÖsterreichRightparenthesis` = "Austria (\u00D6sterreich)".asInstanceOf[`Austria LeftparenthesisÖsterreichRightparenthesis`]
+  def `Austria LeftparenthesisÖsterreichRightparenthesis`: `Austria LeftparenthesisÖsterreichRightparenthesis` = ("Austria (\u00D6sterreich)").asInstanceOf[`Austria LeftparenthesisÖsterreichRightparenthesis`]
   @scala.inline
-  def `Azerbaijan LeftparenthesisAzərbaycanRightparenthesis`: `Azerbaijan LeftparenthesisAzərbaycanRightparenthesis` = "Azerbaijan (Az\u0259rbaycan)".asInstanceOf[`Azerbaijan LeftparenthesisAzərbaycanRightparenthesis`]
+  def `Azerbaijan LeftparenthesisAzərbaycanRightparenthesis`: `Azerbaijan LeftparenthesisAzərbaycanRightparenthesis` = ("Azerbaijan (Az\u0259rbaycan)").asInstanceOf[`Azerbaijan LeftparenthesisAzərbaycanRightparenthesis`]
   @scala.inline
   def BA: BA = "BA".asInstanceOf[BA]
   @scala.inline
@@ -3455,43 +3455,43 @@ object baseuiStrings {
   @scala.inline
   def Bahamas: Bahamas = "Bahamas".asInstanceOf[Bahamas]
   @scala.inline
-  def `Bahrain Leftparenthesis‫البحرين‬‎Rightparenthesis`: `Bahrain Leftparenthesis‫البحرين‬‎Rightparenthesis` = "Bahrain (\u202B\u0627\u0644\u0628\u062D\u0631\u064A\u0646\u202C\u200E)".asInstanceOf[`Bahrain Leftparenthesis‫البحرين‬‎Rightparenthesis`]
+  def `Bahrain Leftparenthesis‫البحرين‬‎Rightparenthesis`: `Bahrain Leftparenthesis‫البحرين‬‎Rightparenthesis` = ("Bahrain (\u202B\u0627\u0644\u0628\u062D\u0631\u064A\u0646\u202C\u200E)").asInstanceOf[`Bahrain Leftparenthesis‫البحرين‬‎Rightparenthesis`]
   @scala.inline
-  def `Bangladesh LeftparenthesisবাংলাদেশRightparenthesis`: `Bangladesh LeftparenthesisবাংলাদেশRightparenthesis` = "Bangladesh (\u09AC\u09BE\u0982\u09B2\u09BE\u09A6\u09C7\u09B6)".asInstanceOf[`Bangladesh LeftparenthesisবাংলাদেশRightparenthesis`]
+  def `Bangladesh LeftparenthesisবাংলাদেশRightparenthesis`: `Bangladesh LeftparenthesisবাংলাদেশRightparenthesis` = ("Bangladesh (\u09AC\u09BE\u0982\u09B2\u09BE\u09A6\u09C7\u09B6)").asInstanceOf[`Bangladesh LeftparenthesisবাংলাদেশRightparenthesis`]
   @scala.inline
   def Barbados: Barbados = "Barbados".asInstanceOf[Barbados]
   @scala.inline
-  def `Belarus LeftparenthesisБеларусьRightparenthesis`: `Belarus LeftparenthesisБеларусьRightparenthesis` = "Belarus (\u0411\u0435\u043B\u0430\u0440\u0443\u0441\u044C)".asInstanceOf[`Belarus LeftparenthesisБеларусьRightparenthesis`]
+  def `Belarus LeftparenthesisБеларусьRightparenthesis`: `Belarus LeftparenthesisБеларусьRightparenthesis` = ("Belarus (\u0411\u0435\u043B\u0430\u0440\u0443\u0441\u044C)").asInstanceOf[`Belarus LeftparenthesisБеларусьRightparenthesis`]
   @scala.inline
-  def `Belgium LeftparenthesisBelgiëRightparenthesis`: `Belgium LeftparenthesisBelgiëRightparenthesis` = "Belgium (Belgi\u00EB)".asInstanceOf[`Belgium LeftparenthesisBelgiëRightparenthesis`]
+  def `Belgium LeftparenthesisBelgiëRightparenthesis`: `Belgium LeftparenthesisBelgiëRightparenthesis` = ("Belgium (Belgi\u00EB)").asInstanceOf[`Belgium LeftparenthesisBelgiëRightparenthesis`]
   @scala.inline
   def Belize: Belize = "Belize".asInstanceOf[Belize]
   @scala.inline
-  def `Benin LeftparenthesisBéninRightparenthesis`: `Benin LeftparenthesisBéninRightparenthesis` = "Benin (B\u00E9nin)".asInstanceOf[`Benin LeftparenthesisBéninRightparenthesis`]
+  def `Benin LeftparenthesisBéninRightparenthesis`: `Benin LeftparenthesisBéninRightparenthesis` = ("Benin (B\u00E9nin)").asInstanceOf[`Benin LeftparenthesisBéninRightparenthesis`]
   @scala.inline
   def Bermuda: Bermuda = "Bermuda".asInstanceOf[Bermuda]
   @scala.inline
-  def `Bhutan LeftparenthesisའབྲུགRightparenthesis`: `Bhutan LeftparenthesisའབྲུགRightparenthesis` = "Bhutan (\u0F60\u0F56\u0FB2\u0F74\u0F42)".asInstanceOf[`Bhutan LeftparenthesisའབྲུགRightparenthesis`]
+  def `Bhutan LeftparenthesisའབྲུགRightparenthesis`: `Bhutan LeftparenthesisའབྲུགRightparenthesis` = ("Bhutan (\u0F60\u0F56\u0FB2\u0F74\u0F42)").asInstanceOf[`Bhutan LeftparenthesisའབྲུགRightparenthesis`]
   @scala.inline
   def Bolivia: Bolivia = "Bolivia".asInstanceOf[Bolivia]
   @scala.inline
-  def `Bosnia and Herzegovina LeftparenthesisБосна и ХерцеговинаRightparenthesis`: `Bosnia and Herzegovina LeftparenthesisБосна и ХерцеговинаRightparenthesis` = "Bosnia and Herzegovina (\u0411\u043E\u0441\u043D\u0430 \u0438 \u0425\u0435\u0440\u0446\u0435\u0433\u043E\u0432\u0438\u043D\u0430)".asInstanceOf[`Bosnia and Herzegovina LeftparenthesisБосна и ХерцеговинаRightparenthesis`]
+  def `Bosnia and Herzegovina LeftparenthesisБосна и ХерцеговинаRightparenthesis`: `Bosnia and Herzegovina LeftparenthesisБосна и ХерцеговинаRightparenthesis` = ("Bosnia and Herzegovina (\u0411\u043E\u0441\u043D\u0430 \u0438 \u0425\u0435\u0440\u0446\u0435\u0433\u043E\u0432\u0438\u043D\u0430)").asInstanceOf[`Bosnia and Herzegovina LeftparenthesisБосна и ХерцеговинаRightparenthesis`]
   @scala.inline
   def Botswana: Botswana = "Botswana".asInstanceOf[Botswana]
   @scala.inline
-  def `Brazil LeftparenthesisBrasilRightparenthesis`: `Brazil LeftparenthesisBrasilRightparenthesis` = "Brazil (Brasil)".asInstanceOf[`Brazil LeftparenthesisBrasilRightparenthesis`]
+  def `Brazil LeftparenthesisBrasilRightparenthesis`: `Brazil LeftparenthesisBrasilRightparenthesis` = ("Brazil (Brasil)").asInstanceOf[`Brazil LeftparenthesisBrasilRightparenthesis`]
   @scala.inline
-  def `British Indian Ocean Territory`: `British Indian Ocean Territory` = "British Indian Ocean Territory".asInstanceOf[`British Indian Ocean Territory`]
+  def `British Indian Ocean Territory`: `British Indian Ocean Territory` = ("British Indian Ocean Territory").asInstanceOf[`British Indian Ocean Territory`]
   @scala.inline
-  def `British Virgin Islands`: `British Virgin Islands` = "British Virgin Islands".asInstanceOf[`British Virgin Islands`]
+  def `British Virgin Islands`: `British Virgin Islands` = ("British Virgin Islands").asInstanceOf[`British Virgin Islands`]
   @scala.inline
   def Brunei: Brunei = "Brunei".asInstanceOf[Brunei]
   @scala.inline
-  def `Bulgaria LeftparenthesisБългарияRightparenthesis`: `Bulgaria LeftparenthesisБългарияRightparenthesis` = "Bulgaria (\u0411\u044A\u043B\u0433\u0430\u0440\u0438\u044F)".asInstanceOf[`Bulgaria LeftparenthesisБългарияRightparenthesis`]
+  def `Bulgaria LeftparenthesisБългарияRightparenthesis`: `Bulgaria LeftparenthesisБългарияRightparenthesis` = ("Bulgaria (\u0411\u044A\u043B\u0433\u0430\u0440\u0438\u044F)").asInstanceOf[`Bulgaria LeftparenthesisБългарияRightparenthesis`]
   @scala.inline
-  def `Burkina Faso`: `Burkina Faso` = "Burkina Faso".asInstanceOf[`Burkina Faso`]
+  def `Burkina Faso`: `Burkina Faso` = ("Burkina Faso").asInstanceOf[`Burkina Faso`]
   @scala.inline
-  def `Burundi LeftparenthesisUburundiRightparenthesis`: `Burundi LeftparenthesisUburundiRightparenthesis` = "Burundi (Uburundi)".asInstanceOf[`Burundi LeftparenthesisUburundiRightparenthesis`]
+  def `Burundi LeftparenthesisUburundiRightparenthesis`: `Burundi LeftparenthesisUburundiRightparenthesis` = ("Burundi (Uburundi)").asInstanceOf[`Burundi LeftparenthesisUburundiRightparenthesis`]
   @scala.inline
   def CA: CA = "CA".asInstanceOf[CA]
   @scala.inline
@@ -3537,51 +3537,51 @@ object baseuiStrings {
   @scala.inline
   def CZ: CZ = "CZ".asInstanceOf[CZ]
   @scala.inline
-  def `Cambodia Leftparenthesisកម្ពុជាRightparenthesis`: `Cambodia Leftparenthesisកម្ពុជាRightparenthesis` = "Cambodia (\u1780\u1798\u17D2\u1796\u17BB\u1787\u17B6)".asInstanceOf[`Cambodia Leftparenthesisកម្ពុជាRightparenthesis`]
+  def `Cambodia Leftparenthesisកម្ពុជាRightparenthesis`: `Cambodia Leftparenthesisកម្ពុជាRightparenthesis` = ("Cambodia (\u1780\u1798\u17D2\u1796\u17BB\u1787\u17B6)").asInstanceOf[`Cambodia Leftparenthesisកម្ពុជាRightparenthesis`]
   @scala.inline
-  def `Cameroon LeftparenthesisCamerounRightparenthesis`: `Cameroon LeftparenthesisCamerounRightparenthesis` = "Cameroon (Cameroun)".asInstanceOf[`Cameroon LeftparenthesisCamerounRightparenthesis`]
+  def `Cameroon LeftparenthesisCamerounRightparenthesis`: `Cameroon LeftparenthesisCamerounRightparenthesis` = ("Cameroon (Cameroun)").asInstanceOf[`Cameroon LeftparenthesisCamerounRightparenthesis`]
   @scala.inline
   def Canada: Canada = "Canada".asInstanceOf[Canada]
   @scala.inline
-  def `Cape Verde LeftparenthesisKabu VerdiRightparenthesis`: `Cape Verde LeftparenthesisKabu VerdiRightparenthesis` = "Cape Verde (Kabu Verdi)".asInstanceOf[`Cape Verde LeftparenthesisKabu VerdiRightparenthesis`]
+  def `Cape Verde LeftparenthesisKabu VerdiRightparenthesis`: `Cape Verde LeftparenthesisKabu VerdiRightparenthesis` = ("Cape Verde (Kabu Verdi)").asInstanceOf[`Cape Verde LeftparenthesisKabu VerdiRightparenthesis`]
   @scala.inline
-  def `Cayman Islands`: `Cayman Islands` = "Cayman Islands".asInstanceOf[`Cayman Islands`]
+  def `Cayman Islands`: `Cayman Islands` = ("Cayman Islands").asInstanceOf[`Cayman Islands`]
   @scala.inline
-  def `Central African Republic LeftparenthesisRépublique centrafricaineRightparenthesis`: `Central African Republic LeftparenthesisRépublique centrafricaineRightparenthesis` = "Central African Republic (R\u00E9publique centrafricaine)".asInstanceOf[`Central African Republic LeftparenthesisRépublique centrafricaineRightparenthesis`]
+  def `Central African Republic LeftparenthesisRépublique centrafricaineRightparenthesis`: `Central African Republic LeftparenthesisRépublique centrafricaineRightparenthesis` = ("Central African Republic (R\u00E9publique centrafricaine)").asInstanceOf[`Central African Republic LeftparenthesisRépublique centrafricaineRightparenthesis`]
   @scala.inline
-  def `Chad LeftparenthesisTchadRightparenthesis`: `Chad LeftparenthesisTchadRightparenthesis` = "Chad (Tchad)".asInstanceOf[`Chad LeftparenthesisTchadRightparenthesis`]
+  def `Chad LeftparenthesisTchadRightparenthesis`: `Chad LeftparenthesisTchadRightparenthesis` = ("Chad (Tchad)").asInstanceOf[`Chad LeftparenthesisTchadRightparenthesis`]
   @scala.inline
   def Chile: Chile = "Chile".asInstanceOf[Chile]
   @scala.inline
-  def `China Leftparenthesis中国Rightparenthesis`: `China Leftparenthesis中国Rightparenthesis` = "China (\u4E2D\u56FD)".asInstanceOf[`China Leftparenthesis中国Rightparenthesis`]
+  def `China Leftparenthesis中国Rightparenthesis`: `China Leftparenthesis中国Rightparenthesis` = ("China (\u4E2D\u56FD)").asInstanceOf[`China Leftparenthesis中国Rightparenthesis`]
   @scala.inline
-  def `Christmas Island`: `Christmas Island` = "Christmas Island".asInstanceOf[`Christmas Island`]
+  def `Christmas Island`: `Christmas Island` = ("Christmas Island").asInstanceOf[`Christmas Island`]
   @scala.inline
-  def `Cocos LeftparenthesisKeelingRightparenthesis Islands`: `Cocos LeftparenthesisKeelingRightparenthesis Islands` = "Cocos (Keeling) Islands".asInstanceOf[`Cocos LeftparenthesisKeelingRightparenthesis Islands`]
+  def `Cocos LeftparenthesisKeelingRightparenthesis Islands`: `Cocos LeftparenthesisKeelingRightparenthesis Islands` = ("Cocos (Keeling) Islands").asInstanceOf[`Cocos LeftparenthesisKeelingRightparenthesis Islands`]
   @scala.inline
   def Colombia: Colombia = "Colombia".asInstanceOf[Colombia]
   @scala.inline
-  def `Comoros Leftparenthesis‫جزر القمر‬‎Rightparenthesis`: `Comoros Leftparenthesis‫جزر القمر‬‎Rightparenthesis` = "Comoros (\u202B\u062C\u0632\u0631 \u0627\u0644\u0642\u0645\u0631\u202C\u200E)".asInstanceOf[`Comoros Leftparenthesis‫جزر القمر‬‎Rightparenthesis`]
+  def `Comoros Leftparenthesis‫جزر القمر‬‎Rightparenthesis`: `Comoros Leftparenthesis‫جزر القمر‬‎Rightparenthesis` = ("Comoros (\u202B\u062C\u0632\u0631 \u0627\u0644\u0642\u0645\u0631\u202C\u200E)").asInstanceOf[`Comoros Leftparenthesis‫جزر القمر‬‎Rightparenthesis`]
   @scala.inline
-  def `Congo LeftparenthesisDRCRightparenthesis LeftparenthesisJamhuri ya Kisoemokrasia ya KongoRightparenthesis`: `Congo LeftparenthesisDRCRightparenthesis LeftparenthesisJamhuri ya Kisoemokrasia ya KongoRightparenthesis` = "Congo (DRC) (Jamhuri ya Kisoemokrasia ya Kongo)".asInstanceOf[`Congo LeftparenthesisDRCRightparenthesis LeftparenthesisJamhuri ya Kisoemokrasia ya KongoRightparenthesis`]
+  def `Congo LeftparenthesisDRCRightparenthesis LeftparenthesisJamhuri ya Kisoemokrasia ya KongoRightparenthesis`: `Congo LeftparenthesisDRCRightparenthesis LeftparenthesisJamhuri ya Kisoemokrasia ya KongoRightparenthesis` = ("Congo (DRC) (Jamhuri ya Kisoemokrasia ya Kongo)").asInstanceOf[`Congo LeftparenthesisDRCRightparenthesis LeftparenthesisJamhuri ya Kisoemokrasia ya KongoRightparenthesis`]
   @scala.inline
-  def `Congo LeftparenthesisRepublicRightparenthesis LeftparenthesisCongo-BrazzavilleRightparenthesis`: `Congo LeftparenthesisRepublicRightparenthesis LeftparenthesisCongo-BrazzavilleRightparenthesis` = "Congo (Republic) (Congo-Brazzaville)".asInstanceOf[`Congo LeftparenthesisRepublicRightparenthesis LeftparenthesisCongo-BrazzavilleRightparenthesis`]
+  def `Congo LeftparenthesisRepublicRightparenthesis LeftparenthesisCongo-BrazzavilleRightparenthesis`: `Congo LeftparenthesisRepublicRightparenthesis LeftparenthesisCongo-BrazzavilleRightparenthesis` = ("Congo (Republic) (Congo-Brazzaville)").asInstanceOf[`Congo LeftparenthesisRepublicRightparenthesis LeftparenthesisCongo-BrazzavilleRightparenthesis`]
   @scala.inline
-  def `Cook Islands`: `Cook Islands` = "Cook Islands".asInstanceOf[`Cook Islands`]
+  def `Cook Islands`: `Cook Islands` = ("Cook Islands").asInstanceOf[`Cook Islands`]
   @scala.inline
-  def `Costa Rica`: `Costa Rica` = "Costa Rica".asInstanceOf[`Costa Rica`]
+  def `Costa Rica`: `Costa Rica` = ("Costa Rica").asInstanceOf[`Costa Rica`]
   @scala.inline
-  def `Croatia LeftparenthesisHrvatskaRightparenthesis`: `Croatia LeftparenthesisHrvatskaRightparenthesis` = "Croatia (Hrvatska)".asInstanceOf[`Croatia LeftparenthesisHrvatskaRightparenthesis`]
+  def `Croatia LeftparenthesisHrvatskaRightparenthesis`: `Croatia LeftparenthesisHrvatskaRightparenthesis` = ("Croatia (Hrvatska)").asInstanceOf[`Croatia LeftparenthesisHrvatskaRightparenthesis`]
   @scala.inline
   def Cuba: Cuba = "Cuba".asInstanceOf[Cuba]
   @scala.inline
   def Curaçao: Curaçao = "Cura\u00E7ao".asInstanceOf[Curaçao]
   @scala.inline
-  def `Cyprus LeftparenthesisΚύπροςRightparenthesis`: `Cyprus LeftparenthesisΚύπροςRightparenthesis` = "Cyprus (\u039A\u03CD\u03C0\u03C1\u03BF\u03C2)".asInstanceOf[`Cyprus LeftparenthesisΚύπροςRightparenthesis`]
+  def `Cyprus LeftparenthesisΚύπροςRightparenthesis`: `Cyprus LeftparenthesisΚύπροςRightparenthesis` = ("Cyprus (\u039A\u03CD\u03C0\u03C1\u03BF\u03C2)").asInstanceOf[`Cyprus LeftparenthesisΚύπροςRightparenthesis`]
   @scala.inline
-  def `Czech Republic LeftparenthesisČeská republikaRightparenthesis`: `Czech Republic LeftparenthesisČeská republikaRightparenthesis` = "Czech Republic (\u010Cesk\u00E1 republika)".asInstanceOf[`Czech Republic LeftparenthesisČeská republikaRightparenthesis`]
+  def `Czech Republic LeftparenthesisČeská republikaRightparenthesis`: `Czech Republic LeftparenthesisČeská republikaRightparenthesis` = ("Czech Republic (\u010Cesk\u00E1 republika)").asInstanceOf[`Czech Republic LeftparenthesisČeská republikaRightparenthesis`]
   @scala.inline
-  def `Côte dRightsinglequotationmarkIvoire`: `Côte dRightsinglequotationmarkIvoire` = "C\u00F4te d\u2019Ivoire".asInstanceOf[`Côte dRightsinglequotationmarkIvoire`]
+  def `Côte dRightsinglequotationmarkIvoire`: `Côte dRightsinglequotationmarkIvoire` = ("C\u00F4te d\u2019Ivoire").asInstanceOf[`Côte dRightsinglequotationmarkIvoire`]
   @scala.inline
   def DATETIME: DATETIME = "DATETIME".asInstanceOf[DATETIME]
   @scala.inline
@@ -3601,13 +3601,13 @@ object baseuiStrings {
   @scala.inline
   def DZ: DZ = "DZ".asInstanceOf[DZ]
   @scala.inline
-  def `Denmark LeftparenthesisDanmarkRightparenthesis`: `Denmark LeftparenthesisDanmarkRightparenthesis` = "Denmark (Danmark)".asInstanceOf[`Denmark LeftparenthesisDanmarkRightparenthesis`]
+  def `Denmark LeftparenthesisDanmarkRightparenthesis`: `Denmark LeftparenthesisDanmarkRightparenthesis` = ("Denmark (Danmark)").asInstanceOf[`Denmark LeftparenthesisDanmarkRightparenthesis`]
   @scala.inline
   def Djibouti: Djibouti = "Djibouti".asInstanceOf[Djibouti]
   @scala.inline
   def Dominica: Dominica = "Dominica".asInstanceOf[Dominica]
   @scala.inline
-  def `Dominican Republic LeftparenthesisRepública DominicanaRightparenthesis`: `Dominican Republic LeftparenthesisRepública DominicanaRightparenthesis` = "Dominican Republic (Rep\u00FAblica Dominicana)".asInstanceOf[`Dominican Republic LeftparenthesisRepública DominicanaRightparenthesis`]
+  def `Dominican Republic LeftparenthesisRepública DominicanaRightparenthesis`: `Dominican Republic LeftparenthesisRepública DominicanaRightparenthesis` = ("Dominican Republic (Rep\u00FAblica Dominicana)").asInstanceOf[`Dominican Republic LeftparenthesisRepública DominicanaRightparenthesis`]
   @scala.inline
   def EC: EC = "EC".asInstanceOf[EC]
   @scala.inline
@@ -3623,19 +3623,19 @@ object baseuiStrings {
   @scala.inline
   def Ecuador: Ecuador = "Ecuador".asInstanceOf[Ecuador]
   @scala.inline
-  def `Egypt Leftparenthesis‫مصر‬‎Rightparenthesis`: `Egypt Leftparenthesis‫مصر‬‎Rightparenthesis` = "Egypt (\u202B\u0645\u0635\u0631\u202C\u200E)".asInstanceOf[`Egypt Leftparenthesis‫مصر‬‎Rightparenthesis`]
+  def `Egypt Leftparenthesis‫مصر‬‎Rightparenthesis`: `Egypt Leftparenthesis‫مصر‬‎Rightparenthesis` = ("Egypt (\u202B\u0645\u0635\u0631\u202C\u200E)").asInstanceOf[`Egypt Leftparenthesis‫مصر‬‎Rightparenthesis`]
   @scala.inline
-  def `El Salvador`: `El Salvador` = "El Salvador".asInstanceOf[`El Salvador`]
+  def `El Salvador`: `El Salvador` = ("El Salvador").asInstanceOf[`El Salvador`]
   @scala.inline
   def Enter: Enter = "Enter".asInstanceOf[Enter]
   @scala.inline
-  def `Equatorial Guinea LeftparenthesisGuinea EcuatorialRightparenthesis`: `Equatorial Guinea LeftparenthesisGuinea EcuatorialRightparenthesis` = "Equatorial Guinea (Guinea Ecuatorial)".asInstanceOf[`Equatorial Guinea LeftparenthesisGuinea EcuatorialRightparenthesis`]
+  def `Equatorial Guinea LeftparenthesisGuinea EcuatorialRightparenthesis`: `Equatorial Guinea LeftparenthesisGuinea EcuatorialRightparenthesis` = ("Equatorial Guinea (Guinea Ecuatorial)").asInstanceOf[`Equatorial Guinea LeftparenthesisGuinea EcuatorialRightparenthesis`]
   @scala.inline
   def Eritrea: Eritrea = "Eritrea".asInstanceOf[Eritrea]
   @scala.inline
   def Escape: Escape = "Escape".asInstanceOf[Escape]
   @scala.inline
-  def `Estonia LeftparenthesisEestiRightparenthesis`: `Estonia LeftparenthesisEestiRightparenthesis` = "Estonia (Eesti)".asInstanceOf[`Estonia LeftparenthesisEestiRightparenthesis`]
+  def `Estonia LeftparenthesisEestiRightparenthesis`: `Estonia LeftparenthesisEestiRightparenthesis` = ("Estonia (Eesti)").asInstanceOf[`Estonia LeftparenthesisEestiRightparenthesis`]
   @scala.inline
   def Ethiopia: Ethiopia = "Ethiopia".asInstanceOf[Ethiopia]
   @scala.inline
@@ -3651,19 +3651,19 @@ object baseuiStrings {
   @scala.inline
   def FR: FR = "FR".asInstanceOf[FR]
   @scala.inline
-  def `Falkland Islands LeftparenthesisIslas MalvinasRightparenthesis`: `Falkland Islands LeftparenthesisIslas MalvinasRightparenthesis` = "Falkland Islands (Islas Malvinas)".asInstanceOf[`Falkland Islands LeftparenthesisIslas MalvinasRightparenthesis`]
+  def `Falkland Islands LeftparenthesisIslas MalvinasRightparenthesis`: `Falkland Islands LeftparenthesisIslas MalvinasRightparenthesis` = ("Falkland Islands (Islas Malvinas)").asInstanceOf[`Falkland Islands LeftparenthesisIslas MalvinasRightparenthesis`]
   @scala.inline
-  def `Faroe Islands LeftparenthesisFøroyarRightparenthesis`: `Faroe Islands LeftparenthesisFøroyarRightparenthesis` = "Faroe Islands (F\u00F8royar)".asInstanceOf[`Faroe Islands LeftparenthesisFøroyarRightparenthesis`]
+  def `Faroe Islands LeftparenthesisFøroyarRightparenthesis`: `Faroe Islands LeftparenthesisFøroyarRightparenthesis` = ("Faroe Islands (F\u00F8royar)").asInstanceOf[`Faroe Islands LeftparenthesisFøroyarRightparenthesis`]
   @scala.inline
   def Fiji: Fiji = "Fiji".asInstanceOf[Fiji]
   @scala.inline
-  def `Finland LeftparenthesisSuomiRightparenthesis`: `Finland LeftparenthesisSuomiRightparenthesis` = "Finland (Suomi)".asInstanceOf[`Finland LeftparenthesisSuomiRightparenthesis`]
+  def `Finland LeftparenthesisSuomiRightparenthesis`: `Finland LeftparenthesisSuomiRightparenthesis` = ("Finland (Suomi)").asInstanceOf[`Finland LeftparenthesisSuomiRightparenthesis`]
   @scala.inline
   def France: France = "France".asInstanceOf[France]
   @scala.inline
-  def `French Guiana LeftparenthesisGuyane françaiseRightparenthesis`: `French Guiana LeftparenthesisGuyane françaiseRightparenthesis` = "French Guiana (Guyane fran\u00E7aise)".asInstanceOf[`French Guiana LeftparenthesisGuyane françaiseRightparenthesis`]
+  def `French Guiana LeftparenthesisGuyane françaiseRightparenthesis`: `French Guiana LeftparenthesisGuyane françaiseRightparenthesis` = ("French Guiana (Guyane fran\u00E7aise)").asInstanceOf[`French Guiana LeftparenthesisGuyane françaiseRightparenthesis`]
   @scala.inline
-  def `French Polynesia LeftparenthesisPolynésie françaiseRightparenthesis`: `French Polynesia LeftparenthesisPolynésie françaiseRightparenthesis` = "French Polynesia (Polyn\u00E9sie fran\u00E7aise)".asInstanceOf[`French Polynesia LeftparenthesisPolynésie françaiseRightparenthesis`]
+  def `French Polynesia LeftparenthesisPolynésie françaiseRightparenthesis`: `French Polynesia LeftparenthesisPolynésie françaiseRightparenthesis` = ("French Polynesia (Polyn\u00E9sie fran\u00E7aise)").asInstanceOf[`French Polynesia LeftparenthesisPolynésie françaiseRightparenthesis`]
   @scala.inline
   def GA: GA = "GA".asInstanceOf[GA]
   @scala.inline
@@ -3705,17 +3705,17 @@ object baseuiStrings {
   @scala.inline
   def Gambia: Gambia = "Gambia".asInstanceOf[Gambia]
   @scala.inline
-  def `Georgia LeftparenthesisსაქართველოRightparenthesis`: `Georgia LeftparenthesisსაქართველოRightparenthesis` = "Georgia (\u10E1\u10D0\u10E5\u10D0\u10E0\u10D7\u10D5\u10D4\u10DA\u10DD)".asInstanceOf[`Georgia LeftparenthesisსაქართველოRightparenthesis`]
+  def `Georgia LeftparenthesisსაქართველოRightparenthesis`: `Georgia LeftparenthesisსაქართველოRightparenthesis` = ("Georgia (\u10E1\u10D0\u10E5\u10D0\u10E0\u10D7\u10D5\u10D4\u10DA\u10DD)").asInstanceOf[`Georgia LeftparenthesisსაქართველოRightparenthesis`]
   @scala.inline
-  def `Germany LeftparenthesisDeutschlandRightparenthesis`: `Germany LeftparenthesisDeutschlandRightparenthesis` = "Germany (Deutschland)".asInstanceOf[`Germany LeftparenthesisDeutschlandRightparenthesis`]
+  def `Germany LeftparenthesisDeutschlandRightparenthesis`: `Germany LeftparenthesisDeutschlandRightparenthesis` = ("Germany (Deutschland)").asInstanceOf[`Germany LeftparenthesisDeutschlandRightparenthesis`]
   @scala.inline
-  def `Ghana LeftparenthesisGaanaRightparenthesis`: `Ghana LeftparenthesisGaanaRightparenthesis` = "Ghana (Gaana)".asInstanceOf[`Ghana LeftparenthesisGaanaRightparenthesis`]
+  def `Ghana LeftparenthesisGaanaRightparenthesis`: `Ghana LeftparenthesisGaanaRightparenthesis` = ("Ghana (Gaana)").asInstanceOf[`Ghana LeftparenthesisGaanaRightparenthesis`]
   @scala.inline
   def Gibraltar: Gibraltar = "Gibraltar".asInstanceOf[Gibraltar]
   @scala.inline
-  def `Greece LeftparenthesisΕλλάδαRightparenthesis`: `Greece LeftparenthesisΕλλάδαRightparenthesis` = "Greece (\u0395\u03BB\u03BB\u03AC\u03B4\u03B1)".asInstanceOf[`Greece LeftparenthesisΕλλάδαRightparenthesis`]
+  def `Greece LeftparenthesisΕλλάδαRightparenthesis`: `Greece LeftparenthesisΕλλάδαRightparenthesis` = ("Greece (\u0395\u03BB\u03BB\u03AC\u03B4\u03B1)").asInstanceOf[`Greece LeftparenthesisΕλλάδαRightparenthesis`]
   @scala.inline
-  def `Greenland LeftparenthesisKalaallit NunaatRightparenthesis`: `Greenland LeftparenthesisKalaallit NunaatRightparenthesis` = "Greenland (Kalaallit Nunaat)".asInstanceOf[`Greenland LeftparenthesisKalaallit NunaatRightparenthesis`]
+  def `Greenland LeftparenthesisKalaallit NunaatRightparenthesis`: `Greenland LeftparenthesisKalaallit NunaatRightparenthesis` = ("Greenland (Kalaallit Nunaat)").asInstanceOf[`Greenland LeftparenthesisKalaallit NunaatRightparenthesis`]
   @scala.inline
   def Grenada: Grenada = "Grenada".asInstanceOf[Grenada]
   @scala.inline
@@ -3727,9 +3727,9 @@ object baseuiStrings {
   @scala.inline
   def Guernsey: Guernsey = "Guernsey".asInstanceOf[Guernsey]
   @scala.inline
-  def `Guinea LeftparenthesisGuinéeRightparenthesis`: `Guinea LeftparenthesisGuinéeRightparenthesis` = "Guinea (Guin\u00E9e)".asInstanceOf[`Guinea LeftparenthesisGuinéeRightparenthesis`]
+  def `Guinea LeftparenthesisGuinéeRightparenthesis`: `Guinea LeftparenthesisGuinéeRightparenthesis` = ("Guinea (Guin\u00E9e)").asInstanceOf[`Guinea LeftparenthesisGuinéeRightparenthesis`]
   @scala.inline
-  def `Guinea-Bissau LeftparenthesisGuiné BissauRightparenthesis`: `Guinea-Bissau LeftparenthesisGuiné BissauRightparenthesis` = "Guinea-Bissau (Guin\u00E9 Bissau)".asInstanceOf[`Guinea-Bissau LeftparenthesisGuiné BissauRightparenthesis`]
+  def `Guinea-Bissau LeftparenthesisGuiné BissauRightparenthesis`: `Guinea-Bissau LeftparenthesisGuiné BissauRightparenthesis` = ("Guinea-Bissau (Guin\u00E9 Bissau)").asInstanceOf[`Guinea-Bissau LeftparenthesisGuiné BissauRightparenthesis`]
   @scala.inline
   def Guyana: Guyana = "Guyana".asInstanceOf[Guyana]
   @scala.inline
@@ -3747,9 +3747,9 @@ object baseuiStrings {
   @scala.inline
   def Honduras: Honduras = "Honduras".asInstanceOf[Honduras]
   @scala.inline
-  def `Hong Kong Leftparenthesis香港Rightparenthesis`: `Hong Kong Leftparenthesis香港Rightparenthesis` = "Hong Kong (\u9999\u6E2F)".asInstanceOf[`Hong Kong Leftparenthesis香港Rightparenthesis`]
+  def `Hong Kong Leftparenthesis香港Rightparenthesis`: `Hong Kong Leftparenthesis香港Rightparenthesis` = ("Hong Kong (\u9999\u6E2F)").asInstanceOf[`Hong Kong Leftparenthesis香港Rightparenthesis`]
   @scala.inline
-  def `Hungary LeftparenthesisMagyarországRightparenthesis`: `Hungary LeftparenthesisMagyarországRightparenthesis` = "Hungary (Magyarorsz\u00E1g)".asInstanceOf[`Hungary LeftparenthesisMagyarországRightparenthesis`]
+  def `Hungary LeftparenthesisMagyarországRightparenthesis`: `Hungary LeftparenthesisMagyarországRightparenthesis` = ("Hungary (Magyarorsz\u00E1g)").asInstanceOf[`Hungary LeftparenthesisMagyarországRightparenthesis`]
   @scala.inline
   def ID: ID = "ID".asInstanceOf[ID]
   @scala.inline
@@ -3771,23 +3771,23 @@ object baseuiStrings {
   @scala.inline
   def IT: IT = "IT".asInstanceOf[IT]
   @scala.inline
-  def `Iceland LeftparenthesisÍslandRightparenthesis`: `Iceland LeftparenthesisÍslandRightparenthesis` = "Iceland (\u00CDsland)".asInstanceOf[`Iceland LeftparenthesisÍslandRightparenthesis`]
+  def `Iceland LeftparenthesisÍslandRightparenthesis`: `Iceland LeftparenthesisÍslandRightparenthesis` = ("Iceland (\u00CDsland)").asInstanceOf[`Iceland LeftparenthesisÍslandRightparenthesis`]
   @scala.inline
-  def `India LeftparenthesisभारतRightparenthesis`: `India LeftparenthesisभारतRightparenthesis` = "India (\u092D\u093E\u0930\u0924)".asInstanceOf[`India LeftparenthesisभारतRightparenthesis`]
+  def `India LeftparenthesisभारतRightparenthesis`: `India LeftparenthesisभारतRightparenthesis` = ("India (\u092D\u093E\u0930\u0924)").asInstanceOf[`India LeftparenthesisभारतRightparenthesis`]
   @scala.inline
   def Indonesia: Indonesia = "Indonesia".asInstanceOf[Indonesia]
   @scala.inline
-  def `Iran Leftparenthesis‫ایران‬‎Rightparenthesis`: `Iran Leftparenthesis‫ایران‬‎Rightparenthesis` = "Iran (\u202B\u0627\u06CC\u0631\u0627\u0646\u202C\u200E)".asInstanceOf[`Iran Leftparenthesis‫ایران‬‎Rightparenthesis`]
+  def `Iran Leftparenthesis‫ایران‬‎Rightparenthesis`: `Iran Leftparenthesis‫ایران‬‎Rightparenthesis` = ("Iran (\u202B\u0627\u06CC\u0631\u0627\u0646\u202C\u200E)").asInstanceOf[`Iran Leftparenthesis‫ایران‬‎Rightparenthesis`]
   @scala.inline
-  def `Iraq Leftparenthesis‫العراق‬‎Rightparenthesis`: `Iraq Leftparenthesis‫العراق‬‎Rightparenthesis` = "Iraq (\u202B\u0627\u0644\u0639\u0631\u0627\u0642\u202C\u200E)".asInstanceOf[`Iraq Leftparenthesis‫العراق‬‎Rightparenthesis`]
+  def `Iraq Leftparenthesis‫العراق‬‎Rightparenthesis`: `Iraq Leftparenthesis‫العراق‬‎Rightparenthesis` = ("Iraq (\u202B\u0627\u0644\u0639\u0631\u0627\u0642\u202C\u200E)").asInstanceOf[`Iraq Leftparenthesis‫العراق‬‎Rightparenthesis`]
   @scala.inline
   def Ireland: Ireland = "Ireland".asInstanceOf[Ireland]
   @scala.inline
-  def `Isle of Man`: `Isle of Man` = "Isle of Man".asInstanceOf[`Isle of Man`]
+  def `Isle of Man`: `Isle of Man` = ("Isle of Man").asInstanceOf[`Isle of Man`]
   @scala.inline
-  def `Israel Leftparenthesis‫ישראל‬‎Rightparenthesis`: `Israel Leftparenthesis‫ישראל‬‎Rightparenthesis` = "Israel (\u202B\u05D9\u05E9\u05E8\u05D0\u05DC\u202C\u200E)".asInstanceOf[`Israel Leftparenthesis‫ישראל‬‎Rightparenthesis`]
+  def `Israel Leftparenthesis‫ישראל‬‎Rightparenthesis`: `Israel Leftparenthesis‫ישראל‬‎Rightparenthesis` = ("Israel (\u202B\u05D9\u05E9\u05E8\u05D0\u05DC\u202C\u200E)").asInstanceOf[`Israel Leftparenthesis‫ישראל‬‎Rightparenthesis`]
   @scala.inline
-  def `Italy LeftparenthesisItaliaRightparenthesis`: `Italy LeftparenthesisItaliaRightparenthesis` = "Italy (Italia)".asInstanceOf[`Italy LeftparenthesisItaliaRightparenthesis`]
+  def `Italy LeftparenthesisItaliaRightparenthesis`: `Italy LeftparenthesisItaliaRightparenthesis` = ("Italy (Italia)").asInstanceOf[`Italy LeftparenthesisItaliaRightparenthesis`]
   @scala.inline
   def JE: JE = "JE".asInstanceOf[JE]
   @scala.inline
@@ -3799,11 +3799,11 @@ object baseuiStrings {
   @scala.inline
   def Jamaica: Jamaica = "Jamaica".asInstanceOf[Jamaica]
   @scala.inline
-  def `Japan Leftparenthesis日本Rightparenthesis`: `Japan Leftparenthesis日本Rightparenthesis` = "Japan (\u65E5\u672C)".asInstanceOf[`Japan Leftparenthesis日本Rightparenthesis`]
+  def `Japan Leftparenthesis日本Rightparenthesis`: `Japan Leftparenthesis日本Rightparenthesis` = ("Japan (\u65E5\u672C)").asInstanceOf[`Japan Leftparenthesis日本Rightparenthesis`]
   @scala.inline
   def Jersey: Jersey = "Jersey".asInstanceOf[Jersey]
   @scala.inline
-  def `Jordan Leftparenthesis‫الأردن‬‎Rightparenthesis`: `Jordan Leftparenthesis‫الأردن‬‎Rightparenthesis` = "Jordan (\u202B\u0627\u0644\u0623\u0631\u062F\u0646\u202C\u200E)".asInstanceOf[`Jordan Leftparenthesis‫الأردن‬‎Rightparenthesis`]
+  def `Jordan Leftparenthesis‫الأردن‬‎Rightparenthesis`: `Jordan Leftparenthesis‫الأردن‬‎Rightparenthesis` = ("Jordan (\u202B\u0627\u0644\u0623\u0631\u062F\u0646\u202C\u200E)").asInstanceOf[`Jordan Leftparenthesis‫الأردن‬‎Rightparenthesis`]
   @scala.inline
   def KE: KE = "KE".asInstanceOf[KE]
   @scala.inline
@@ -3827,7 +3827,7 @@ object baseuiStrings {
   @scala.inline
   def KZ: KZ = "KZ".asInstanceOf[KZ]
   @scala.inline
-  def `Kazakhstan LeftparenthesisКазахстанRightparenthesis`: `Kazakhstan LeftparenthesisКазахстанRightparenthesis` = "Kazakhstan (\u041A\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043D)".asInstanceOf[`Kazakhstan LeftparenthesisКазахстанRightparenthesis`]
+  def `Kazakhstan LeftparenthesisКазахстанRightparenthesis`: `Kazakhstan LeftparenthesisКазахстанRightparenthesis` = ("Kazakhstan (\u041A\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043D)").asInstanceOf[`Kazakhstan LeftparenthesisКазахстанRightparenthesis`]
   @scala.inline
   def Kenya: Kenya = "Kenya".asInstanceOf[Kenya]
   @scala.inline
@@ -3835,9 +3835,9 @@ object baseuiStrings {
   @scala.inline
   def Kosovo: Kosovo = "Kosovo".asInstanceOf[Kosovo]
   @scala.inline
-  def `Kuwait Leftparenthesis‫الكويت‬‎Rightparenthesis`: `Kuwait Leftparenthesis‫الكويت‬‎Rightparenthesis` = "Kuwait (\u202B\u0627\u0644\u0643\u0648\u064A\u062A\u202C\u200E)".asInstanceOf[`Kuwait Leftparenthesis‫الكويت‬‎Rightparenthesis`]
+  def `Kuwait Leftparenthesis‫الكويت‬‎Rightparenthesis`: `Kuwait Leftparenthesis‫الكويت‬‎Rightparenthesis` = ("Kuwait (\u202B\u0627\u0644\u0643\u0648\u064A\u062A\u202C\u200E)").asInstanceOf[`Kuwait Leftparenthesis‫الكويت‬‎Rightparenthesis`]
   @scala.inline
-  def `Kyrgyzstan LeftparenthesisКыргызстанRightparenthesis`: `Kyrgyzstan LeftparenthesisКыргызстанRightparenthesis` = "Kyrgyzstan (\u041A\u044B\u0440\u0433\u044B\u0437\u0441\u0442\u0430\u043D)".asInstanceOf[`Kyrgyzstan LeftparenthesisКыргызстанRightparenthesis`]
+  def `Kyrgyzstan LeftparenthesisКыргызстанRightparenthesis`: `Kyrgyzstan LeftparenthesisКыргызстанRightparenthesis` = ("Kyrgyzstan (\u041A\u044B\u0440\u0433\u044B\u0437\u0441\u0442\u0430\u043D)").asInstanceOf[`Kyrgyzstan LeftparenthesisКыргызстанRightparenthesis`]
   @scala.inline
   def L: L = "L".asInstanceOf[L]
   @scala.inline
@@ -3865,21 +3865,21 @@ object baseuiStrings {
   @scala.inline
   def LY: LY = "LY".asInstanceOf[LY]
   @scala.inline
-  def `Laos LeftparenthesisລາວRightparenthesis`: `Laos LeftparenthesisລາວRightparenthesis` = "Laos (\u0EA5\u0EB2\u0EA7)".asInstanceOf[`Laos LeftparenthesisລາວRightparenthesis`]
+  def `Laos LeftparenthesisລາວRightparenthesis`: `Laos LeftparenthesisລາວRightparenthesis` = ("Laos (\u0EA5\u0EB2\u0EA7)").asInstanceOf[`Laos LeftparenthesisລາວRightparenthesis`]
   @scala.inline
-  def `Latvia LeftparenthesisLatvijaRightparenthesis`: `Latvia LeftparenthesisLatvijaRightparenthesis` = "Latvia (Latvija)".asInstanceOf[`Latvia LeftparenthesisLatvijaRightparenthesis`]
+  def `Latvia LeftparenthesisLatvijaRightparenthesis`: `Latvia LeftparenthesisLatvijaRightparenthesis` = ("Latvia (Latvija)").asInstanceOf[`Latvia LeftparenthesisLatvijaRightparenthesis`]
   @scala.inline
-  def `Lebanon Leftparenthesis‫لبنان‬‎Rightparenthesis`: `Lebanon Leftparenthesis‫لبنان‬‎Rightparenthesis` = "Lebanon (\u202B\u0644\u0628\u0646\u0627\u0646\u202C\u200E)".asInstanceOf[`Lebanon Leftparenthesis‫لبنان‬‎Rightparenthesis`]
+  def `Lebanon Leftparenthesis‫لبنان‬‎Rightparenthesis`: `Lebanon Leftparenthesis‫لبنان‬‎Rightparenthesis` = ("Lebanon (\u202B\u0644\u0628\u0646\u0627\u0646\u202C\u200E)").asInstanceOf[`Lebanon Leftparenthesis‫لبنان‬‎Rightparenthesis`]
   @scala.inline
   def Lesotho: Lesotho = "Lesotho".asInstanceOf[Lesotho]
   @scala.inline
   def Liberia: Liberia = "Liberia".asInstanceOf[Liberia]
   @scala.inline
-  def `Libya Leftparenthesis‫ليبيا‬‎Rightparenthesis`: `Libya Leftparenthesis‫ليبيا‬‎Rightparenthesis` = "Libya (\u202B\u0644\u064A\u0628\u064A\u0627\u202C\u200E)".asInstanceOf[`Libya Leftparenthesis‫ليبيا‬‎Rightparenthesis`]
+  def `Libya Leftparenthesis‫ليبيا‬‎Rightparenthesis`: `Libya Leftparenthesis‫ليبيا‬‎Rightparenthesis` = ("Libya (\u202B\u0644\u064A\u0628\u064A\u0627\u202C\u200E)").asInstanceOf[`Libya Leftparenthesis‫ليبيا‬‎Rightparenthesis`]
   @scala.inline
   def Liechtenstein: Liechtenstein = "Liechtenstein".asInstanceOf[Liechtenstein]
   @scala.inline
-  def `Lithuania LeftparenthesisLietuvaRightparenthesis`: `Lithuania LeftparenthesisLietuvaRightparenthesis` = "Lithuania (Lietuva)".asInstanceOf[`Lithuania LeftparenthesisLietuvaRightparenthesis`]
+  def `Lithuania LeftparenthesisLietuvaRightparenthesis`: `Lithuania LeftparenthesisLietuvaRightparenthesis` = ("Lithuania (Lietuva)").asInstanceOf[`Lithuania LeftparenthesisLietuvaRightparenthesis`]
   @scala.inline
   def Luxembourg: Luxembourg = "Luxembourg".asInstanceOf[Luxembourg]
   @scala.inline
@@ -3931,11 +3931,11 @@ object baseuiStrings {
   @scala.inline
   def MZ: MZ = "MZ".asInstanceOf[MZ]
   @scala.inline
-  def `Macau Leftparenthesis澳門Rightparenthesis`: `Macau Leftparenthesis澳門Rightparenthesis` = "Macau (\u6FB3\u9580)".asInstanceOf[`Macau Leftparenthesis澳門Rightparenthesis`]
+  def `Macau Leftparenthesis澳門Rightparenthesis`: `Macau Leftparenthesis澳門Rightparenthesis` = ("Macau (\u6FB3\u9580)").asInstanceOf[`Macau Leftparenthesis澳門Rightparenthesis`]
   @scala.inline
-  def `Macedonia LeftparenthesisFYROMRightparenthesis LeftparenthesisМакедонијаRightparenthesis`: `Macedonia LeftparenthesisFYROMRightparenthesis LeftparenthesisМакедонијаRightparenthesis` = "Macedonia (FYROM) (\u041C\u0430\u043A\u0435\u0434\u043E\u043D\u0438\u0458\u0430)".asInstanceOf[`Macedonia LeftparenthesisFYROMRightparenthesis LeftparenthesisМакедонијаRightparenthesis`]
+  def `Macedonia LeftparenthesisFYROMRightparenthesis LeftparenthesisМакедонијаRightparenthesis`: `Macedonia LeftparenthesisFYROMRightparenthesis LeftparenthesisМакедонијаRightparenthesis` = ("Macedonia (FYROM) (\u041C\u0430\u043A\u0435\u0434\u043E\u043D\u0438\u0458\u0430)").asInstanceOf[`Macedonia LeftparenthesisFYROMRightparenthesis LeftparenthesisМакедонијаRightparenthesis`]
   @scala.inline
-  def `Madagascar LeftparenthesisMadagasikaraRightparenthesis`: `Madagascar LeftparenthesisMadagasikaraRightparenthesis` = "Madagascar (Madagasikara)".asInstanceOf[`Madagascar LeftparenthesisMadagasikaraRightparenthesis`]
+  def `Madagascar LeftparenthesisMadagasikaraRightparenthesis`: `Madagascar LeftparenthesisMadagasikaraRightparenthesis` = ("Madagascar (Madagasikara)").asInstanceOf[`Madagascar LeftparenthesisMadagasikaraRightparenthesis`]
   @scala.inline
   def Malawi: Malawi = "Malawi".asInstanceOf[Malawi]
   @scala.inline
@@ -3947,35 +3947,35 @@ object baseuiStrings {
   @scala.inline
   def Malta: Malta = "Malta".asInstanceOf[Malta]
   @scala.inline
-  def `Marshall Islands`: `Marshall Islands` = "Marshall Islands".asInstanceOf[`Marshall Islands`]
+  def `Marshall Islands`: `Marshall Islands` = ("Marshall Islands").asInstanceOf[`Marshall Islands`]
   @scala.inline
   def Martinique: Martinique = "Martinique".asInstanceOf[Martinique]
   @scala.inline
-  def `Mauritania Leftparenthesis‫موريتانيا‬‎Rightparenthesis`: `Mauritania Leftparenthesis‫موريتانيا‬‎Rightparenthesis` = "Mauritania (\u202B\u0645\u0648\u0631\u064A\u062A\u0627\u0646\u064A\u0627\u202C\u200E)".asInstanceOf[`Mauritania Leftparenthesis‫موريتانيا‬‎Rightparenthesis`]
+  def `Mauritania Leftparenthesis‫موريتانيا‬‎Rightparenthesis`: `Mauritania Leftparenthesis‫موريتانيا‬‎Rightparenthesis` = ("Mauritania (\u202B\u0645\u0648\u0631\u064A\u062A\u0627\u0646\u064A\u0627\u202C\u200E)").asInstanceOf[`Mauritania Leftparenthesis‫موريتانيا‬‎Rightparenthesis`]
   @scala.inline
-  def `Mauritius LeftparenthesisMorisRightparenthesis`: `Mauritius LeftparenthesisMorisRightparenthesis` = "Mauritius (Moris)".asInstanceOf[`Mauritius LeftparenthesisMorisRightparenthesis`]
+  def `Mauritius LeftparenthesisMorisRightparenthesis`: `Mauritius LeftparenthesisMorisRightparenthesis` = ("Mauritius (Moris)").asInstanceOf[`Mauritius LeftparenthesisMorisRightparenthesis`]
   @scala.inline
   def Mayotte: Mayotte = "Mayotte".asInstanceOf[Mayotte]
   @scala.inline
-  def `Mexico LeftparenthesisMéxicoRightparenthesis`: `Mexico LeftparenthesisMéxicoRightparenthesis` = "Mexico (M\u00E9xico)".asInstanceOf[`Mexico LeftparenthesisMéxicoRightparenthesis`]
+  def `Mexico LeftparenthesisMéxicoRightparenthesis`: `Mexico LeftparenthesisMéxicoRightparenthesis` = ("Mexico (M\u00E9xico)").asInstanceOf[`Mexico LeftparenthesisMéxicoRightparenthesis`]
   @scala.inline
   def Micronesia: Micronesia = "Micronesia".asInstanceOf[Micronesia]
   @scala.inline
-  def `Moldova LeftparenthesisRepublica MoldovaRightparenthesis`: `Moldova LeftparenthesisRepublica MoldovaRightparenthesis` = "Moldova (Republica Moldova)".asInstanceOf[`Moldova LeftparenthesisRepublica MoldovaRightparenthesis`]
+  def `Moldova LeftparenthesisRepublica MoldovaRightparenthesis`: `Moldova LeftparenthesisRepublica MoldovaRightparenthesis` = ("Moldova (Republica Moldova)").asInstanceOf[`Moldova LeftparenthesisRepublica MoldovaRightparenthesis`]
   @scala.inline
   def Monaco: Monaco = "Monaco".asInstanceOf[Monaco]
   @scala.inline
-  def `Mongolia LeftparenthesisМонголRightparenthesis`: `Mongolia LeftparenthesisМонголRightparenthesis` = "Mongolia (\u041C\u043E\u043D\u0433\u043E\u043B)".asInstanceOf[`Mongolia LeftparenthesisМонголRightparenthesis`]
+  def `Mongolia LeftparenthesisМонголRightparenthesis`: `Mongolia LeftparenthesisМонголRightparenthesis` = ("Mongolia (\u041C\u043E\u043D\u0433\u043E\u043B)").asInstanceOf[`Mongolia LeftparenthesisМонголRightparenthesis`]
   @scala.inline
-  def `Montenegro LeftparenthesisCrna GoraRightparenthesis`: `Montenegro LeftparenthesisCrna GoraRightparenthesis` = "Montenegro (Crna Gora)".asInstanceOf[`Montenegro LeftparenthesisCrna GoraRightparenthesis`]
+  def `Montenegro LeftparenthesisCrna GoraRightparenthesis`: `Montenegro LeftparenthesisCrna GoraRightparenthesis` = ("Montenegro (Crna Gora)").asInstanceOf[`Montenegro LeftparenthesisCrna GoraRightparenthesis`]
   @scala.inline
   def Montserrat: Montserrat = "Montserrat".asInstanceOf[Montserrat]
   @scala.inline
-  def `Morocco Leftparenthesis‫المغرب‬‎Rightparenthesis`: `Morocco Leftparenthesis‫المغرب‬‎Rightparenthesis` = "Morocco (\u202B\u0627\u0644\u0645\u063A\u0631\u0628\u202C\u200E)".asInstanceOf[`Morocco Leftparenthesis‫المغرب‬‎Rightparenthesis`]
+  def `Morocco Leftparenthesis‫المغرب‬‎Rightparenthesis`: `Morocco Leftparenthesis‫المغرب‬‎Rightparenthesis` = ("Morocco (\u202B\u0627\u0644\u0645\u063A\u0631\u0628\u202C\u200E)").asInstanceOf[`Morocco Leftparenthesis‫المغرب‬‎Rightparenthesis`]
   @scala.inline
-  def `Mozambique LeftparenthesisMoçambiqueRightparenthesis`: `Mozambique LeftparenthesisMoçambiqueRightparenthesis` = "Mozambique (Mo\u00E7ambique)".asInstanceOf[`Mozambique LeftparenthesisMoçambiqueRightparenthesis`]
+  def `Mozambique LeftparenthesisMoçambiqueRightparenthesis`: `Mozambique LeftparenthesisMoçambiqueRightparenthesis` = ("Mozambique (Mo\u00E7ambique)").asInstanceOf[`Mozambique LeftparenthesisMoçambiqueRightparenthesis`]
   @scala.inline
-  def `Myanmar LeftparenthesisBurmaRightparenthesis Leftparenthesisမြန်မာRightparenthesis`: `Myanmar LeftparenthesisBurmaRightparenthesis Leftparenthesisမြန်မာRightparenthesis` = "Myanmar (Burma) (\u1019\u103C\u1014\u103A\u1019\u102C)".asInstanceOf[`Myanmar LeftparenthesisBurmaRightparenthesis Leftparenthesisမြန်မာRightparenthesis`]
+  def `Myanmar LeftparenthesisBurmaRightparenthesis Leftparenthesisမြန်မာRightparenthesis`: `Myanmar LeftparenthesisBurmaRightparenthesis Leftparenthesisမြန်မာRightparenthesis` = ("Myanmar (Burma) (\u1019\u103C\u1014\u103A\u1019\u102C)").asInstanceOf[`Myanmar LeftparenthesisBurmaRightparenthesis Leftparenthesisမြန်မာRightparenthesis`]
   @scala.inline
   def NA: NA = "NA".asInstanceOf[NA]
   @scala.inline
@@ -4003,37 +4003,37 @@ object baseuiStrings {
   @scala.inline
   def NZ: NZ = "NZ".asInstanceOf[NZ]
   @scala.inline
-  def `Namibia LeftparenthesisNamibiëRightparenthesis`: `Namibia LeftparenthesisNamibiëRightparenthesis` = "Namibia (Namibi\u00EB)".asInstanceOf[`Namibia LeftparenthesisNamibiëRightparenthesis`]
+  def `Namibia LeftparenthesisNamibiëRightparenthesis`: `Namibia LeftparenthesisNamibiëRightparenthesis` = ("Namibia (Namibi\u00EB)").asInstanceOf[`Namibia LeftparenthesisNamibiëRightparenthesis`]
   @scala.inline
   def Nauru: Nauru = "Nauru".asInstanceOf[Nauru]
   @scala.inline
-  def `Nepal LeftparenthesisनेपालRightparenthesis`: `Nepal LeftparenthesisनेपालRightparenthesis` = "Nepal (\u0928\u0947\u092A\u093E\u0932)".asInstanceOf[`Nepal LeftparenthesisनेपालRightparenthesis`]
+  def `Nepal LeftparenthesisनेपालRightparenthesis`: `Nepal LeftparenthesisनेपालRightparenthesis` = ("Nepal (\u0928\u0947\u092A\u093E\u0932)").asInstanceOf[`Nepal LeftparenthesisनेपालRightparenthesis`]
   @scala.inline
-  def `Netherlands LeftparenthesisNederlandRightparenthesis`: `Netherlands LeftparenthesisNederlandRightparenthesis` = "Netherlands (Nederland)".asInstanceOf[`Netherlands LeftparenthesisNederlandRightparenthesis`]
+  def `Netherlands LeftparenthesisNederlandRightparenthesis`: `Netherlands LeftparenthesisNederlandRightparenthesis` = ("Netherlands (Nederland)").asInstanceOf[`Netherlands LeftparenthesisNederlandRightparenthesis`]
   @scala.inline
-  def `New Caledonia LeftparenthesisNouvelle-CalédonieRightparenthesis`: `New Caledonia LeftparenthesisNouvelle-CalédonieRightparenthesis` = "New Caledonia (Nouvelle-Cal\u00E9donie)".asInstanceOf[`New Caledonia LeftparenthesisNouvelle-CalédonieRightparenthesis`]
+  def `New Caledonia LeftparenthesisNouvelle-CalédonieRightparenthesis`: `New Caledonia LeftparenthesisNouvelle-CalédonieRightparenthesis` = ("New Caledonia (Nouvelle-Cal\u00E9donie)").asInstanceOf[`New Caledonia LeftparenthesisNouvelle-CalédonieRightparenthesis`]
   @scala.inline
-  def `New Zealand`: `New Zealand` = "New Zealand".asInstanceOf[`New Zealand`]
+  def `New Zealand`: `New Zealand` = ("New Zealand").asInstanceOf[`New Zealand`]
   @scala.inline
   def Nicaragua: Nicaragua = "Nicaragua".asInstanceOf[Nicaragua]
   @scala.inline
-  def `Niger LeftparenthesisNijarRightparenthesis`: `Niger LeftparenthesisNijarRightparenthesis` = "Niger (Nijar)".asInstanceOf[`Niger LeftparenthesisNijarRightparenthesis`]
+  def `Niger LeftparenthesisNijarRightparenthesis`: `Niger LeftparenthesisNijarRightparenthesis` = ("Niger (Nijar)").asInstanceOf[`Niger LeftparenthesisNijarRightparenthesis`]
   @scala.inline
   def Nigeria: Nigeria = "Nigeria".asInstanceOf[Nigeria]
   @scala.inline
   def Niue: Niue = "Niue".asInstanceOf[Niue]
   @scala.inline
-  def `Norfolk Island`: `Norfolk Island` = "Norfolk Island".asInstanceOf[`Norfolk Island`]
+  def `Norfolk Island`: `Norfolk Island` = ("Norfolk Island").asInstanceOf[`Norfolk Island`]
   @scala.inline
-  def `North Korea Leftparenthesis조선 민주주의 인민 공화국Rightparenthesis`: `North Korea Leftparenthesis조선 민주주의 인민 공화국Rightparenthesis` = "North Korea (\uC870\uC120 \uBBFC\uC8FC\uC8FC\uC758 \uC778\uBBFC \uACF5\uD654\uAD6D)".asInstanceOf[`North Korea Leftparenthesis조선 민주주의 인민 공화국Rightparenthesis`]
+  def `North Korea Leftparenthesis조선 민주주의 인민 공화국Rightparenthesis`: `North Korea Leftparenthesis조선 민주주의 인민 공화국Rightparenthesis` = ("North Korea (\uC870\uC120 \uBBFC\uC8FC\uC8FC\uC758 \uC778\uBBFC \uACF5\uD654\uAD6D)").asInstanceOf[`North Korea Leftparenthesis조선 민주주의 인민 공화국Rightparenthesis`]
   @scala.inline
-  def `Northern Mariana Islands`: `Northern Mariana Islands` = "Northern Mariana Islands".asInstanceOf[`Northern Mariana Islands`]
+  def `Northern Mariana Islands`: `Northern Mariana Islands` = ("Northern Mariana Islands").asInstanceOf[`Northern Mariana Islands`]
   @scala.inline
-  def `Norway LeftparenthesisNorgeRightparenthesis`: `Norway LeftparenthesisNorgeRightparenthesis` = "Norway (Norge)".asInstanceOf[`Norway LeftparenthesisNorgeRightparenthesis`]
+  def `Norway LeftparenthesisNorgeRightparenthesis`: `Norway LeftparenthesisNorgeRightparenthesis` = ("Norway (Norge)").asInstanceOf[`Norway LeftparenthesisNorgeRightparenthesis`]
   @scala.inline
   def OM: OM = "OM".asInstanceOf[OM]
   @scala.inline
-  def `Oman Leftparenthesis‫عُمان‬‎Rightparenthesis`: `Oman Leftparenthesis‫عُمان‬‎Rightparenthesis` = "Oman (\u202B\u0639\u064F\u0645\u0627\u0646\u202C\u200E)".asInstanceOf[`Oman Leftparenthesis‫عُمان‬‎Rightparenthesis`]
+  def `Oman Leftparenthesis‫عُمان‬‎Rightparenthesis`: `Oman Leftparenthesis‫عُمان‬‎Rightparenthesis` = ("Oman (\u202B\u0639\u064F\u0645\u0627\u0646\u202C\u200E)").asInstanceOf[`Oman Leftparenthesis‫عُمان‬‎Rightparenthesis`]
   @scala.inline
   def PA: PA = "PA".asInstanceOf[PA]
   @scala.inline
@@ -4063,19 +4063,19 @@ object baseuiStrings {
   @scala.inline
   def PY: PY = "PY".asInstanceOf[PY]
   @scala.inline
-  def `Pakistan Leftparenthesis‫پاکستان‬‎Rightparenthesis`: `Pakistan Leftparenthesis‫پاکستان‬‎Rightparenthesis` = "Pakistan (\u202B\u067E\u0627\u06A9\u0633\u062A\u0627\u0646\u202C\u200E)".asInstanceOf[`Pakistan Leftparenthesis‫پاکستان‬‎Rightparenthesis`]
+  def `Pakistan Leftparenthesis‫پاکستان‬‎Rightparenthesis`: `Pakistan Leftparenthesis‫پاکستان‬‎Rightparenthesis` = ("Pakistan (\u202B\u067E\u0627\u06A9\u0633\u062A\u0627\u0646\u202C\u200E)").asInstanceOf[`Pakistan Leftparenthesis‫پاکستان‬‎Rightparenthesis`]
   @scala.inline
   def Palau: Palau = "Palau".asInstanceOf[Palau]
   @scala.inline
-  def `Palestine Leftparenthesis‫فلسطين‬‎Rightparenthesis`: `Palestine Leftparenthesis‫فلسطين‬‎Rightparenthesis` = "Palestine (\u202B\u0641\u0644\u0633\u0637\u064A\u0646\u202C\u200E)".asInstanceOf[`Palestine Leftparenthesis‫فلسطين‬‎Rightparenthesis`]
+  def `Palestine Leftparenthesis‫فلسطين‬‎Rightparenthesis`: `Palestine Leftparenthesis‫فلسطين‬‎Rightparenthesis` = ("Palestine (\u202B\u0641\u0644\u0633\u0637\u064A\u0646\u202C\u200E)").asInstanceOf[`Palestine Leftparenthesis‫فلسطين‬‎Rightparenthesis`]
   @scala.inline
-  def `Panama LeftparenthesisPanamáRightparenthesis`: `Panama LeftparenthesisPanamáRightparenthesis` = "Panama (Panam\u00E1)".asInstanceOf[`Panama LeftparenthesisPanamáRightparenthesis`]
+  def `Panama LeftparenthesisPanamáRightparenthesis`: `Panama LeftparenthesisPanamáRightparenthesis` = ("Panama (Panam\u00E1)").asInstanceOf[`Panama LeftparenthesisPanamáRightparenthesis`]
   @scala.inline
-  def `Papua New Guinea`: `Papua New Guinea` = "Papua New Guinea".asInstanceOf[`Papua New Guinea`]
+  def `Papua New Guinea`: `Papua New Guinea` = ("Papua New Guinea").asInstanceOf[`Papua New Guinea`]
   @scala.inline
   def Paraguay: Paraguay = "Paraguay".asInstanceOf[Paraguay]
   @scala.inline
-  def `Peru LeftparenthesisPerúRightparenthesis`: `Peru LeftparenthesisPerúRightparenthesis` = "Peru (Per\u00FA)".asInstanceOf[`Peru LeftparenthesisPerúRightparenthesis`]
+  def `Peru LeftparenthesisPerúRightparenthesis`: `Peru LeftparenthesisPerúRightparenthesis` = ("Peru (Per\u00FA)").asInstanceOf[`Peru LeftparenthesisPerúRightparenthesis`]
   @scala.inline
   def Philippines: Philippines = "Philippines".asInstanceOf[Philippines]
   @scala.inline
@@ -4529,15 +4529,15 @@ object baseuiStrings {
   @scala.inline
   def Plussign998: Plussign998 = "+998".asInstanceOf[Plussign998]
   @scala.inline
-  def `Poland LeftparenthesisPolskaRightparenthesis`: `Poland LeftparenthesisPolskaRightparenthesis` = "Poland (Polska)".asInstanceOf[`Poland LeftparenthesisPolskaRightparenthesis`]
+  def `Poland LeftparenthesisPolskaRightparenthesis`: `Poland LeftparenthesisPolskaRightparenthesis` = ("Poland (Polska)").asInstanceOf[`Poland LeftparenthesisPolskaRightparenthesis`]
   @scala.inline
   def Portugal: Portugal = "Portugal".asInstanceOf[Portugal]
   @scala.inline
-  def `Puerto Rico`: `Puerto Rico` = "Puerto Rico".asInstanceOf[`Puerto Rico`]
+  def `Puerto Rico`: `Puerto Rico` = ("Puerto Rico").asInstanceOf[`Puerto Rico`]
   @scala.inline
   def QA: QA = "QA".asInstanceOf[QA]
   @scala.inline
-  def `Qatar Leftparenthesis‫قطر‬‎Rightparenthesis`: `Qatar Leftparenthesis‫قطر‬‎Rightparenthesis` = "Qatar (\u202B\u0642\u0637\u0631\u202C\u200E)".asInstanceOf[`Qatar Leftparenthesis‫قطر‬‎Rightparenthesis`]
+  def `Qatar Leftparenthesis‫قطر‬‎Rightparenthesis`: `Qatar Leftparenthesis‫قطر‬‎Rightparenthesis` = ("Qatar (\u202B\u0642\u0637\u0631\u202C\u200E)").asInstanceOf[`Qatar Leftparenthesis‫قطر‬‎Rightparenthesis`]
   @scala.inline
   def RE: RE = "RE".asInstanceOf[RE]
   @scala.inline
@@ -4549,13 +4549,13 @@ object baseuiStrings {
   @scala.inline
   def RW: RW = "RW".asInstanceOf[RW]
   @scala.inline
-  def `Romania LeftparenthesisRomâniaRightparenthesis`: `Romania LeftparenthesisRomâniaRightparenthesis` = "Romania (Rom\u00E2nia)".asInstanceOf[`Romania LeftparenthesisRomâniaRightparenthesis`]
+  def `Romania LeftparenthesisRomâniaRightparenthesis`: `Romania LeftparenthesisRomâniaRightparenthesis` = ("Romania (Rom\u00E2nia)").asInstanceOf[`Romania LeftparenthesisRomâniaRightparenthesis`]
   @scala.inline
-  def `Russia LeftparenthesisРоссияRightparenthesis`: `Russia LeftparenthesisРоссияRightparenthesis` = "Russia (\u0420\u043E\u0441\u0441\u0438\u044F)".asInstanceOf[`Russia LeftparenthesisРоссияRightparenthesis`]
+  def `Russia LeftparenthesisРоссияRightparenthesis`: `Russia LeftparenthesisРоссияRightparenthesis` = ("Russia (\u0420\u043E\u0441\u0441\u0438\u044F)").asInstanceOf[`Russia LeftparenthesisРоссияRightparenthesis`]
   @scala.inline
   def Rwanda: Rwanda = "Rwanda".asInstanceOf[Rwanda]
   @scala.inline
-  def `Réunion LeftparenthesisLa RéunionRightparenthesis`: `Réunion LeftparenthesisLa RéunionRightparenthesis` = "R\u00E9union (La R\u00E9union)".asInstanceOf[`Réunion LeftparenthesisLa RéunionRightparenthesis`]
+  def `Réunion LeftparenthesisLa RéunionRightparenthesis`: `Réunion LeftparenthesisLa RéunionRightparenthesis` = ("R\u00E9union (La R\u00E9union)").asInstanceOf[`Réunion LeftparenthesisLa RéunionRightparenthesis`]
   @scala.inline
   def SA: SA = "SA".asInstanceOf[SA]
   @scala.inline
@@ -4603,73 +4603,73 @@ object baseuiStrings {
   @scala.inline
   def SZ: SZ = "SZ".asInstanceOf[SZ]
   @scala.inline
-  def `Saint Barthélemy`: `Saint Barthélemy` = "Saint Barth\u00E9lemy".asInstanceOf[`Saint Barthélemy`]
+  def `Saint Barthélemy`: `Saint Barthélemy` = ("Saint Barth\u00E9lemy").asInstanceOf[`Saint Barthélemy`]
   @scala.inline
-  def `Saint Helena`: `Saint Helena` = "Saint Helena".asInstanceOf[`Saint Helena`]
+  def `Saint Helena`: `Saint Helena` = ("Saint Helena").asInstanceOf[`Saint Helena`]
   @scala.inline
-  def `Saint Kitts and Nevis`: `Saint Kitts and Nevis` = "Saint Kitts and Nevis".asInstanceOf[`Saint Kitts and Nevis`]
+  def `Saint Kitts and Nevis`: `Saint Kitts and Nevis` = ("Saint Kitts and Nevis").asInstanceOf[`Saint Kitts and Nevis`]
   @scala.inline
-  def `Saint Lucia`: `Saint Lucia` = "Saint Lucia".asInstanceOf[`Saint Lucia`]
+  def `Saint Lucia`: `Saint Lucia` = ("Saint Lucia").asInstanceOf[`Saint Lucia`]
   @scala.inline
-  def `Saint Martin LeftparenthesisSaint-Martin Leftparenthesispartie françaiseRightparenthesisRightparenthesis`: `Saint Martin LeftparenthesisSaint-Martin Leftparenthesispartie françaiseRightparenthesisRightparenthesis` = "Saint Martin (Saint-Martin (partie fran\u00E7aise))".asInstanceOf[`Saint Martin LeftparenthesisSaint-Martin Leftparenthesispartie françaiseRightparenthesisRightparenthesis`]
+  def `Saint Martin LeftparenthesisSaint-Martin Leftparenthesispartie françaiseRightparenthesisRightparenthesis`: `Saint Martin LeftparenthesisSaint-Martin Leftparenthesispartie françaiseRightparenthesisRightparenthesis` = ("Saint Martin (Saint-Martin (partie fran\u00E7aise))").asInstanceOf[`Saint Martin LeftparenthesisSaint-Martin Leftparenthesispartie françaiseRightparenthesisRightparenthesis`]
   @scala.inline
-  def `Saint Pierre and Miquelon LeftparenthesisSaint-Pierre-et-MiquelonRightparenthesis`: `Saint Pierre and Miquelon LeftparenthesisSaint-Pierre-et-MiquelonRightparenthesis` = "Saint Pierre and Miquelon (Saint-Pierre-et-Miquelon)".asInstanceOf[`Saint Pierre and Miquelon LeftparenthesisSaint-Pierre-et-MiquelonRightparenthesis`]
+  def `Saint Pierre and Miquelon LeftparenthesisSaint-Pierre-et-MiquelonRightparenthesis`: `Saint Pierre and Miquelon LeftparenthesisSaint-Pierre-et-MiquelonRightparenthesis` = ("Saint Pierre and Miquelon (Saint-Pierre-et-Miquelon)").asInstanceOf[`Saint Pierre and Miquelon LeftparenthesisSaint-Pierre-et-MiquelonRightparenthesis`]
   @scala.inline
-  def `Saint Vincent and the Grenadines`: `Saint Vincent and the Grenadines` = "Saint Vincent and the Grenadines".asInstanceOf[`Saint Vincent and the Grenadines`]
+  def `Saint Vincent and the Grenadines`: `Saint Vincent and the Grenadines` = ("Saint Vincent and the Grenadines").asInstanceOf[`Saint Vincent and the Grenadines`]
   @scala.inline
   def Samoa: Samoa = "Samoa".asInstanceOf[Samoa]
   @scala.inline
-  def `San Marino`: `San Marino` = "San Marino".asInstanceOf[`San Marino`]
+  def `San Marino`: `San Marino` = ("San Marino").asInstanceOf[`San Marino`]
   @scala.inline
-  def `Saudi Arabia Leftparenthesis‫المملكة العربية السعودية‬‎Rightparenthesis`: `Saudi Arabia Leftparenthesis‫المملكة العربية السعودية‬‎Rightparenthesis` = "Saudi Arabia (\u202B\u0627\u0644\u0645\u0645\u0644\u0643\u0629 \u0627\u0644\u0639\u0631\u0628\u064A\u0629 \u0627\u0644\u0633\u0639\u0648\u062F\u064A\u0629\u202C\u200E)".asInstanceOf[`Saudi Arabia Leftparenthesis‫المملكة العربية السعودية‬‎Rightparenthesis`]
+  def `Saudi Arabia Leftparenthesis‫المملكة العربية السعودية‬‎Rightparenthesis`: `Saudi Arabia Leftparenthesis‫المملكة العربية السعودية‬‎Rightparenthesis` = ("Saudi Arabia (\u202B\u0627\u0644\u0645\u0645\u0644\u0643\u0629 \u0627\u0644\u0639\u0631\u0628\u064A\u0629 \u0627\u0644\u0633\u0639\u0648\u062F\u064A\u0629\u202C\u200E)").asInstanceOf[`Saudi Arabia Leftparenthesis‫المملكة العربية السعودية‬‎Rightparenthesis`]
   @scala.inline
-  def `Senegal LeftparenthesisSénégalRightparenthesis`: `Senegal LeftparenthesisSénégalRightparenthesis` = "Senegal (S\u00E9n\u00E9gal)".asInstanceOf[`Senegal LeftparenthesisSénégalRightparenthesis`]
+  def `Senegal LeftparenthesisSénégalRightparenthesis`: `Senegal LeftparenthesisSénégalRightparenthesis` = ("Senegal (S\u00E9n\u00E9gal)").asInstanceOf[`Senegal LeftparenthesisSénégalRightparenthesis`]
   @scala.inline
-  def `Serbia LeftparenthesisСрбијаRightparenthesis`: `Serbia LeftparenthesisСрбијаRightparenthesis` = "Serbia (\u0421\u0440\u0431\u0438\u0458\u0430)".asInstanceOf[`Serbia LeftparenthesisСрбијаRightparenthesis`]
+  def `Serbia LeftparenthesisСрбијаRightparenthesis`: `Serbia LeftparenthesisСрбијаRightparenthesis` = ("Serbia (\u0421\u0440\u0431\u0438\u0458\u0430)").asInstanceOf[`Serbia LeftparenthesisСрбијаRightparenthesis`]
   @scala.inline
   def Seychelles: Seychelles = "Seychelles".asInstanceOf[Seychelles]
   @scala.inline
-  def `Sierra Leone`: `Sierra Leone` = "Sierra Leone".asInstanceOf[`Sierra Leone`]
+  def `Sierra Leone`: `Sierra Leone` = ("Sierra Leone").asInstanceOf[`Sierra Leone`]
   @scala.inline
   def Singapore: Singapore = "Singapore".asInstanceOf[Singapore]
   @scala.inline
-  def `Sint Maarten`: `Sint Maarten` = "Sint Maarten".asInstanceOf[`Sint Maarten`]
+  def `Sint Maarten`: `Sint Maarten` = ("Sint Maarten").asInstanceOf[`Sint Maarten`]
   @scala.inline
-  def `Slovakia LeftparenthesisSlovenskoRightparenthesis`: `Slovakia LeftparenthesisSlovenskoRightparenthesis` = "Slovakia (Slovensko)".asInstanceOf[`Slovakia LeftparenthesisSlovenskoRightparenthesis`]
+  def `Slovakia LeftparenthesisSlovenskoRightparenthesis`: `Slovakia LeftparenthesisSlovenskoRightparenthesis` = ("Slovakia (Slovensko)").asInstanceOf[`Slovakia LeftparenthesisSlovenskoRightparenthesis`]
   @scala.inline
-  def `Slovenia LeftparenthesisSlovenijaRightparenthesis`: `Slovenia LeftparenthesisSlovenijaRightparenthesis` = "Slovenia (Slovenija)".asInstanceOf[`Slovenia LeftparenthesisSlovenijaRightparenthesis`]
+  def `Slovenia LeftparenthesisSlovenijaRightparenthesis`: `Slovenia LeftparenthesisSlovenijaRightparenthesis` = ("Slovenia (Slovenija)").asInstanceOf[`Slovenia LeftparenthesisSlovenijaRightparenthesis`]
   @scala.inline
-  def `Solomon Islands`: `Solomon Islands` = "Solomon Islands".asInstanceOf[`Solomon Islands`]
+  def `Solomon Islands`: `Solomon Islands` = ("Solomon Islands").asInstanceOf[`Solomon Islands`]
   @scala.inline
-  def `Somalia LeftparenthesisSoomaaliyaRightparenthesis`: `Somalia LeftparenthesisSoomaaliyaRightparenthesis` = "Somalia (Soomaaliya)".asInstanceOf[`Somalia LeftparenthesisSoomaaliyaRightparenthesis`]
+  def `Somalia LeftparenthesisSoomaaliyaRightparenthesis`: `Somalia LeftparenthesisSoomaaliyaRightparenthesis` = ("Somalia (Soomaaliya)").asInstanceOf[`Somalia LeftparenthesisSoomaaliyaRightparenthesis`]
   @scala.inline
-  def `South Africa`: `South Africa` = "South Africa".asInstanceOf[`South Africa`]
+  def `South Africa`: `South Africa` = ("South Africa").asInstanceOf[`South Africa`]
   @scala.inline
-  def `South Korea Leftparenthesis대한민국Rightparenthesis`: `South Korea Leftparenthesis대한민국Rightparenthesis` = "South Korea (\uB300\uD55C\uBBFC\uAD6D)".asInstanceOf[`South Korea Leftparenthesis대한민국Rightparenthesis`]
+  def `South Korea Leftparenthesis대한민국Rightparenthesis`: `South Korea Leftparenthesis대한민국Rightparenthesis` = ("South Korea (\uB300\uD55C\uBBFC\uAD6D)").asInstanceOf[`South Korea Leftparenthesis대한민국Rightparenthesis`]
   @scala.inline
-  def `South Sudan Leftparenthesis‫جنوب السودان‬‎Rightparenthesis`: `South Sudan Leftparenthesis‫جنوب السودان‬‎Rightparenthesis` = "South Sudan (\u202B\u062C\u0646\u0648\u0628 \u0627\u0644\u0633\u0648\u062F\u0627\u0646\u202C\u200E)".asInstanceOf[`South Sudan Leftparenthesis‫جنوب السودان‬‎Rightparenthesis`]
+  def `South Sudan Leftparenthesis‫جنوب السودان‬‎Rightparenthesis`: `South Sudan Leftparenthesis‫جنوب السودان‬‎Rightparenthesis` = ("South Sudan (\u202B\u062C\u0646\u0648\u0628 \u0627\u0644\u0633\u0648\u062F\u0627\u0646\u202C\u200E)").asInstanceOf[`South Sudan Leftparenthesis‫جنوب السودان‬‎Rightparenthesis`]
   @scala.inline
-  def Space: Space = " ".asInstanceOf[Space]
+  def Space: Space = (" ").asInstanceOf[Space]
   @scala.inline
-  def `Spain LeftparenthesisEspañaRightparenthesis`: `Spain LeftparenthesisEspañaRightparenthesis` = "Spain (Espa\u00F1a)".asInstanceOf[`Spain LeftparenthesisEspañaRightparenthesis`]
+  def `Spain LeftparenthesisEspañaRightparenthesis`: `Spain LeftparenthesisEspañaRightparenthesis` = ("Spain (Espa\u00F1a)").asInstanceOf[`Spain LeftparenthesisEspañaRightparenthesis`]
   @scala.inline
-  def `Sri Lanka Leftparenthesisශ්‍රී ලංකාවRightparenthesis`: `Sri Lanka Leftparenthesisශ්‍රී ලංකාවRightparenthesis` = "Sri Lanka (\u0DC1\u0DCA\u200D\u0DBB\u0DD3 \u0DBD\u0D82\u0D9A\u0DCF\u0DC0)".asInstanceOf[`Sri Lanka Leftparenthesisශ්‍රී ලංකාවRightparenthesis`]
+  def `Sri Lanka Leftparenthesisශ්‍රී ලංකාවRightparenthesis`: `Sri Lanka Leftparenthesisශ්‍රී ලංකාවRightparenthesis` = ("Sri Lanka (\u0DC1\u0DCA\u200D\u0DBB\u0DD3 \u0DBD\u0D82\u0D9A\u0DCF\u0DC0)").asInstanceOf[`Sri Lanka Leftparenthesisශ්‍රී ලංකාවRightparenthesis`]
   @scala.inline
-  def `Sudan Leftparenthesis‫السودان‬‎Rightparenthesis`: `Sudan Leftparenthesis‫السودان‬‎Rightparenthesis` = "Sudan (\u202B\u0627\u0644\u0633\u0648\u062F\u0627\u0646\u202C\u200E)".asInstanceOf[`Sudan Leftparenthesis‫السودان‬‎Rightparenthesis`]
+  def `Sudan Leftparenthesis‫السودان‬‎Rightparenthesis`: `Sudan Leftparenthesis‫السودان‬‎Rightparenthesis` = ("Sudan (\u202B\u0627\u0644\u0633\u0648\u062F\u0627\u0646\u202C\u200E)").asInstanceOf[`Sudan Leftparenthesis‫السودان‬‎Rightparenthesis`]
   @scala.inline
   def Suriname: Suriname = "Suriname".asInstanceOf[Suriname]
   @scala.inline
-  def `Svalbard and Jan Mayen`: `Svalbard and Jan Mayen` = "Svalbard and Jan Mayen".asInstanceOf[`Svalbard and Jan Mayen`]
+  def `Svalbard and Jan Mayen`: `Svalbard and Jan Mayen` = ("Svalbard and Jan Mayen").asInstanceOf[`Svalbard and Jan Mayen`]
   @scala.inline
   def Swaziland: Swaziland = "Swaziland".asInstanceOf[Swaziland]
   @scala.inline
-  def `Sweden LeftparenthesisSverigeRightparenthesis`: `Sweden LeftparenthesisSverigeRightparenthesis` = "Sweden (Sverige)".asInstanceOf[`Sweden LeftparenthesisSverigeRightparenthesis`]
+  def `Sweden LeftparenthesisSverigeRightparenthesis`: `Sweden LeftparenthesisSverigeRightparenthesis` = ("Sweden (Sverige)").asInstanceOf[`Sweden LeftparenthesisSverigeRightparenthesis`]
   @scala.inline
-  def `Switzerland LeftparenthesisSchweizRightparenthesis`: `Switzerland LeftparenthesisSchweizRightparenthesis` = "Switzerland (Schweiz)".asInstanceOf[`Switzerland LeftparenthesisSchweizRightparenthesis`]
+  def `Switzerland LeftparenthesisSchweizRightparenthesis`: `Switzerland LeftparenthesisSchweizRightparenthesis` = ("Switzerland (Schweiz)").asInstanceOf[`Switzerland LeftparenthesisSchweizRightparenthesis`]
   @scala.inline
-  def `Syria Leftparenthesis‫سوريا‬‎Rightparenthesis`: `Syria Leftparenthesis‫سوريا‬‎Rightparenthesis` = "Syria (\u202B\u0633\u0648\u0631\u064A\u0627\u202C\u200E)".asInstanceOf[`Syria Leftparenthesis‫سوريا‬‎Rightparenthesis`]
+  def `Syria Leftparenthesis‫سوريا‬‎Rightparenthesis`: `Syria Leftparenthesis‫سوريا‬‎Rightparenthesis` = ("Syria (\u202B\u0633\u0648\u0631\u064A\u0627\u202C\u200E)").asInstanceOf[`Syria Leftparenthesis‫سوريا‬‎Rightparenthesis`]
   @scala.inline
-  def `São Tomé and Príncipe LeftparenthesisSão Tomé e PríncipeRightparenthesis`: `São Tomé and Príncipe LeftparenthesisSão Tomé e PríncipeRightparenthesis` = "S\u00E3o Tom\u00E9 and Pr\u00EDncipe (S\u00E3o Tom\u00E9 e Pr\u00EDncipe)".asInstanceOf[`São Tomé and Príncipe LeftparenthesisSão Tomé e PríncipeRightparenthesis`]
+  def `São Tomé and Príncipe LeftparenthesisSão Tomé e PríncipeRightparenthesis`: `São Tomé and Príncipe LeftparenthesisSão Tomé e PríncipeRightparenthesis` = ("S\u00E3o Tom\u00E9 and Pr\u00EDncipe (S\u00E3o Tom\u00E9 e Pr\u00EDncipe)").asInstanceOf[`São Tomé and Príncipe LeftparenthesisSão Tomé e PríncipeRightparenthesis`]
   @scala.inline
   def TC: TC = "TC".asInstanceOf[TC]
   @scala.inline
@@ -4701,13 +4701,13 @@ object baseuiStrings {
   @scala.inline
   def TZ: TZ = "TZ".asInstanceOf[TZ]
   @scala.inline
-  def `Taiwan Leftparenthesis台灣Rightparenthesis`: `Taiwan Leftparenthesis台灣Rightparenthesis` = "Taiwan (\u53F0\u7063)".asInstanceOf[`Taiwan Leftparenthesis台灣Rightparenthesis`]
+  def `Taiwan Leftparenthesis台灣Rightparenthesis`: `Taiwan Leftparenthesis台灣Rightparenthesis` = ("Taiwan (\u53F0\u7063)").asInstanceOf[`Taiwan Leftparenthesis台灣Rightparenthesis`]
   @scala.inline
   def Tajikistan: Tajikistan = "Tajikistan".asInstanceOf[Tajikistan]
   @scala.inline
   def Tanzania: Tanzania = "Tanzania".asInstanceOf[Tanzania]
   @scala.inline
-  def `Thailand LeftparenthesisไทยRightparenthesis`: `Thailand LeftparenthesisไทยRightparenthesis` = "Thailand (\u0E44\u0E17\u0E22)".asInstanceOf[`Thailand LeftparenthesisไทยRightparenthesis`]
+  def `Thailand LeftparenthesisไทยRightparenthesis`: `Thailand LeftparenthesisไทยRightparenthesis` = ("Thailand (\u0E44\u0E17\u0E22)").asInstanceOf[`Thailand LeftparenthesisไทยRightparenthesis`]
   @scala.inline
   def `Timor-Leste`: `Timor-Leste` = "Timor-Leste".asInstanceOf[`Timor-Leste`]
   @scala.inline
@@ -4717,21 +4717,21 @@ object baseuiStrings {
   @scala.inline
   def Tonga: Tonga = "Tonga".asInstanceOf[Tonga]
   @scala.inline
-  def `Trinisoad and Tobago`: `Trinisoad and Tobago` = "Trinisoad and Tobago".asInstanceOf[`Trinisoad and Tobago`]
+  def `Trinisoad and Tobago`: `Trinisoad and Tobago` = ("Trinisoad and Tobago").asInstanceOf[`Trinisoad and Tobago`]
   @scala.inline
-  def `Tunisia Leftparenthesis‫تونس‬‎Rightparenthesis`: `Tunisia Leftparenthesis‫تونس‬‎Rightparenthesis` = "Tunisia (\u202B\u062A\u0648\u0646\u0633\u202C\u200E)".asInstanceOf[`Tunisia Leftparenthesis‫تونس‬‎Rightparenthesis`]
+  def `Tunisia Leftparenthesis‫تونس‬‎Rightparenthesis`: `Tunisia Leftparenthesis‫تونس‬‎Rightparenthesis` = ("Tunisia (\u202B\u062A\u0648\u0646\u0633\u202C\u200E)").asInstanceOf[`Tunisia Leftparenthesis‫تونس‬‎Rightparenthesis`]
   @scala.inline
-  def `Turkey LeftparenthesisTürkiyeRightparenthesis`: `Turkey LeftparenthesisTürkiyeRightparenthesis` = "Turkey (T\u00FCrkiye)".asInstanceOf[`Turkey LeftparenthesisTürkiyeRightparenthesis`]
+  def `Turkey LeftparenthesisTürkiyeRightparenthesis`: `Turkey LeftparenthesisTürkiyeRightparenthesis` = ("Turkey (T\u00FCrkiye)").asInstanceOf[`Turkey LeftparenthesisTürkiyeRightparenthesis`]
   @scala.inline
   def Turkmenistan: Turkmenistan = "Turkmenistan".asInstanceOf[Turkmenistan]
   @scala.inline
-  def `Turks and Caicos Islands`: `Turks and Caicos Islands` = "Turks and Caicos Islands".asInstanceOf[`Turks and Caicos Islands`]
+  def `Turks and Caicos Islands`: `Turks and Caicos Islands` = ("Turks and Caicos Islands").asInstanceOf[`Turks and Caicos Islands`]
   @scala.inline
   def Tuvalu: Tuvalu = "Tuvalu".asInstanceOf[Tuvalu]
   @scala.inline
   def UA: UA = "UA".asInstanceOf[UA]
   @scala.inline
-  def `UDotSDot Virgin Islands`: `UDotSDot Virgin Islands` = "U.S. Virgin Islands".asInstanceOf[`UDotSDot Virgin Islands`]
+  def `UDotSDot Virgin Islands`: `UDotSDot Virgin Islands` = ("U.S. Virgin Islands").asInstanceOf[`UDotSDot Virgin Islands`]
   @scala.inline
   def UG: UG = "UG".asInstanceOf[UG]
   @scala.inline
@@ -4743,17 +4743,17 @@ object baseuiStrings {
   @scala.inline
   def Uganda: Uganda = "Uganda".asInstanceOf[Uganda]
   @scala.inline
-  def `Ukraine LeftparenthesisУкраїнаRightparenthesis`: `Ukraine LeftparenthesisУкраїнаRightparenthesis` = "Ukraine (\u0423\u043A\u0440\u0430\u0457\u043D\u0430)".asInstanceOf[`Ukraine LeftparenthesisУкраїнаRightparenthesis`]
+  def `Ukraine LeftparenthesisУкраїнаRightparenthesis`: `Ukraine LeftparenthesisУкраїнаRightparenthesis` = ("Ukraine (\u0423\u043A\u0440\u0430\u0457\u043D\u0430)").asInstanceOf[`Ukraine LeftparenthesisУкраїнаRightparenthesis`]
   @scala.inline
-  def `United Arab Emirates Leftparenthesis‫الإمارات العربية المتحدة‬‎Rightparenthesis`: `United Arab Emirates Leftparenthesis‫الإمارات العربية المتحدة‬‎Rightparenthesis` = "United Arab Emirates (\u202B\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062A \u0627\u0644\u0639\u0631\u0628\u064A\u0629 \u0627\u0644\u0645\u062A\u062D\u062F\u0629\u202C\u200E)".asInstanceOf[`United Arab Emirates Leftparenthesis‫الإمارات العربية المتحدة‬‎Rightparenthesis`]
+  def `United Arab Emirates Leftparenthesis‫الإمارات العربية المتحدة‬‎Rightparenthesis`: `United Arab Emirates Leftparenthesis‫الإمارات العربية المتحدة‬‎Rightparenthesis` = ("United Arab Emirates (\u202B\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062A \u0627\u0644\u0639\u0631\u0628\u064A\u0629 \u0627\u0644\u0645\u062A\u062D\u062F\u0629\u202C\u200E)").asInstanceOf[`United Arab Emirates Leftparenthesis‫الإمارات العربية المتحدة‬‎Rightparenthesis`]
   @scala.inline
-  def `United Kingdom`: `United Kingdom` = "United Kingdom".asInstanceOf[`United Kingdom`]
+  def `United Kingdom`: `United Kingdom` = ("United Kingdom").asInstanceOf[`United Kingdom`]
   @scala.inline
-  def `United States`: `United States` = "United States".asInstanceOf[`United States`]
+  def `United States`: `United States` = ("United States").asInstanceOf[`United States`]
   @scala.inline
   def Uruguay: Uruguay = "Uruguay".asInstanceOf[Uruguay]
   @scala.inline
-  def `Uzbekistan LeftparenthesisOʻzbekistonRightparenthesis`: `Uzbekistan LeftparenthesisOʻzbekistonRightparenthesis` = "Uzbekistan (O\u02BBzbekiston)".asInstanceOf[`Uzbekistan LeftparenthesisOʻzbekistonRightparenthesis`]
+  def `Uzbekistan LeftparenthesisOʻzbekistonRightparenthesis`: `Uzbekistan LeftparenthesisOʻzbekistonRightparenthesis` = ("Uzbekistan (O\u02BBzbekiston)").asInstanceOf[`Uzbekistan LeftparenthesisOʻzbekistonRightparenthesis`]
   @scala.inline
   def VA: VA = "VA".asInstanceOf[VA]
   @scala.inline
@@ -4771,17 +4771,17 @@ object baseuiStrings {
   @scala.inline
   def Vanuatu: Vanuatu = "Vanuatu".asInstanceOf[Vanuatu]
   @scala.inline
-  def `Vatican City LeftparenthesisCittà del VaticanoRightparenthesis`: `Vatican City LeftparenthesisCittà del VaticanoRightparenthesis` = "Vatican City (Citt\u00E0 del Vaticano)".asInstanceOf[`Vatican City LeftparenthesisCittà del VaticanoRightparenthesis`]
+  def `Vatican City LeftparenthesisCittà del VaticanoRightparenthesis`: `Vatican City LeftparenthesisCittà del VaticanoRightparenthesis` = ("Vatican City (Citt\u00E0 del Vaticano)").asInstanceOf[`Vatican City LeftparenthesisCittà del VaticanoRightparenthesis`]
   @scala.inline
   def Venezuela: Venezuela = "Venezuela".asInstanceOf[Venezuela]
   @scala.inline
-  def `Vietnam LeftparenthesisViệt NamRightparenthesis`: `Vietnam LeftparenthesisViệt NamRightparenthesis` = "Vietnam (Vi\u1EC7t Nam)".asInstanceOf[`Vietnam LeftparenthesisViệt NamRightparenthesis`]
+  def `Vietnam LeftparenthesisViệt NamRightparenthesis`: `Vietnam LeftparenthesisViệt NamRightparenthesis` = ("Vietnam (Vi\u1EC7t Nam)").asInstanceOf[`Vietnam LeftparenthesisViệt NamRightparenthesis`]
   @scala.inline
   def WF: WF = "WF".asInstanceOf[WF]
   @scala.inline
   def WS: WS = "WS".asInstanceOf[WS]
   @scala.inline
-  def `Wallis and Futuna LeftparenthesisWallis-et-FutunaRightparenthesis`: `Wallis and Futuna LeftparenthesisWallis-et-FutunaRightparenthesis` = "Wallis and Futuna (Wallis-et-Futuna)".asInstanceOf[`Wallis and Futuna LeftparenthesisWallis-et-FutunaRightparenthesis`]
+  def `Wallis and Futuna LeftparenthesisWallis-et-FutunaRightparenthesis`: `Wallis and Futuna LeftparenthesisWallis-et-FutunaRightparenthesis` = ("Wallis and Futuna (Wallis-et-Futuna)").asInstanceOf[`Wallis and Futuna LeftparenthesisWallis-et-FutunaRightparenthesis`]
   @scala.inline
   def XK: XK = "XK".asInstanceOf[XK]
   @scala.inline
@@ -4793,7 +4793,7 @@ object baseuiStrings {
   @scala.inline
   def `YYYY-MM-DD`: `YYYY-MM-DD` = "YYYY-MM-DD".asInstanceOf[`YYYY-MM-DD`]
   @scala.inline
-  def `Yemen Leftparenthesis‫اليمن‬‎Rightparenthesis`: `Yemen Leftparenthesis‫اليمن‬‎Rightparenthesis` = "Yemen (\u202B\u0627\u0644\u064A\u0645\u0646\u202C\u200E)".asInstanceOf[`Yemen Leftparenthesis‫اليمن‬‎Rightparenthesis`]
+  def `Yemen Leftparenthesis‫اليمن‬‎Rightparenthesis`: `Yemen Leftparenthesis‫اليمن‬‎Rightparenthesis` = ("Yemen (\u202B\u0627\u0644\u064A\u0645\u0646\u202C\u200E)").asInstanceOf[`Yemen Leftparenthesis‫اليمن‬‎Rightparenthesis`]
   @scala.inline
   def ZA: ZA = "ZA".asInstanceOf[ZA]
   @scala.inline
@@ -4851,7 +4851,7 @@ object baseuiStrings {
   @scala.inline
   def block: block = "block".asInstanceOf[block]
   @scala.inline
-  def `block flow`: `block flow` = "block flow".asInstanceOf[`block flow`]
+  def `block flow`: `block flow` = ("block flow").asInstanceOf[`block flow`]
   @scala.inline
   def blockquote: blockquote = "blockquote".asInstanceOf[blockquote]
   @scala.inline
@@ -4901,7 +4901,7 @@ object baseuiStrings {
   @scala.inline
   def column: column = "column".asInstanceOf[column]
   @scala.inline
-  def `column dense`: `column dense` = "column dense".asInstanceOf[`column dense`]
+  def `column dense`: `column dense` = ("column dense").asInstanceOf[`column dense`]
   @scala.inline
   def `column-reverse`: `column-reverse` = "column-reverse".asInstanceOf[`column-reverse`]
   @scala.inline
@@ -5011,13 +5011,13 @@ object baseuiStrings {
   @scala.inline
   def filter: filter = "filter".asInstanceOf[filter]
   @scala.inline
-  def `first baseline`: `first baseline` = "first baseline".asInstanceOf[`first baseline`]
+  def `first baseline`: `first baseline` = ("first baseline").asInstanceOf[`first baseline`]
   @scala.inline
   def fixed: fixed = "fixed".asInstanceOf[fixed]
   @scala.inline
   def flex: flex = "flex".asInstanceOf[flex]
   @scala.inline
-  def `flex run-in`: `flex run-in` = "flex run-in".asInstanceOf[`flex run-in`]
+  def `flex run-in`: `flex run-in` = ("flex run-in").asInstanceOf[`flex run-in`]
   @scala.inline
   def `flex-end`: `flex-end` = "flex-end".asInstanceOf[`flex-end`]
   @scala.inline
@@ -5025,7 +5025,7 @@ object baseuiStrings {
   @scala.inline
   def flow: flow = "flow".asInstanceOf[flow]
   @scala.inline
-  def `flow list-item block`: `flow list-item block` = "flow list-item block".asInstanceOf[`flow list-item block`]
+  def `flow list-item block`: `flow list-item block` = ("flow list-item block").asInstanceOf[`flow list-item block`]
   @scala.inline
   def `flow-root`: `flow-root` = "flow-root".asInstanceOf[`flow-root`]
   @scala.inline
@@ -5087,7 +5087,7 @@ object baseuiStrings {
   @scala.inline
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   @scala.inline
-  def `inline table`: `inline table` = "inline table".asInstanceOf[`inline table`]
+  def `inline table`: `inline table` = ("inline table").asInstanceOf[`inline table`]
   @scala.inline
   def `inline-block`: `inline-block` = "inline-block".asInstanceOf[`inline-block`]
   @scala.inline
@@ -5109,7 +5109,7 @@ object baseuiStrings {
   @scala.inline
   def large_ : large_ = "large".asInstanceOf[large_]
   @scala.inline
-  def `last baseline`: `last baseline` = "last baseline".asInstanceOf[`last baseline`]
+  def `last baseline`: `last baseline` = ("last baseline").asInstanceOf[`last baseline`]
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   @scala.inline
@@ -5117,11 +5117,11 @@ object baseuiStrings {
   @scala.inline
   def leftTop: leftTop = "leftTop".asInstanceOf[leftTop]
   @scala.inline
-  def `legacy center`: `legacy center` = "legacy center".asInstanceOf[`legacy center`]
+  def `legacy center`: `legacy center` = ("legacy center").asInstanceOf[`legacy center`]
   @scala.inline
-  def `legacy left`: `legacy left` = "legacy left".asInstanceOf[`legacy left`]
+  def `legacy left`: `legacy left` = ("legacy left").asInstanceOf[`legacy left`]
   @scala.inline
-  def `legacy right`: `legacy right` = "legacy right".asInstanceOf[`legacy right`]
+  def `legacy right`: `legacy right` = ("legacy right").asInstanceOf[`legacy right`]
   @scala.inline
   def legend: legend = "legend".asInstanceOf[legend]
   @scala.inline
@@ -5137,17 +5137,17 @@ object baseuiStrings {
   @scala.inline
   def `list-item`: `list-item` = "list-item".asInstanceOf[`list-item`]
   @scala.inline
-  def `list-item block`: `list-item block` = "list-item block".asInstanceOf[`list-item block`]
+  def `list-item block`: `list-item block` = ("list-item block").asInstanceOf[`list-item block`]
   @scala.inline
-  def `list-item block flow`: `list-item block flow` = "list-item block flow".asInstanceOf[`list-item block flow`]
+  def `list-item block flow`: `list-item block flow` = ("list-item block flow").asInstanceOf[`list-item block flow`]
   @scala.inline
-  def `list-item block flow-root`: `list-item block flow-root` = "list-item block flow-root".asInstanceOf[`list-item block flow-root`]
+  def `list-item block flow-root`: `list-item block flow-root` = ("list-item block flow-root").asInstanceOf[`list-item block flow-root`]
   @scala.inline
-  def `list-item flow`: `list-item flow` = "list-item flow".asInstanceOf[`list-item flow`]
+  def `list-item flow`: `list-item flow` = ("list-item flow").asInstanceOf[`list-item flow`]
   @scala.inline
-  def `list-item flow-root`: `list-item flow-root` = "list-item flow-root".asInstanceOf[`list-item flow-root`]
+  def `list-item flow-root`: `list-item flow-root` = ("list-item flow-root").asInstanceOf[`list-item flow-root`]
   @scala.inline
-  def `list-item inline`: `list-item inline` = "list-item inline".asInstanceOf[`list-item inline`]
+  def `list-item inline`: `list-item inline` = ("list-item inline").asInstanceOf[`list-item inline`]
   @scala.inline
   def main: main = "main".asInstanceOf[main]
   @scala.inline
@@ -5265,7 +5265,7 @@ object baseuiStrings {
   @scala.inline
   def row: row = "row".asInstanceOf[row]
   @scala.inline
-  def `row dense`: `row dense` = "row dense".asInstanceOf[`row dense`]
+  def `row dense`: `row dense` = ("row dense").asInstanceOf[`row dense`]
   @scala.inline
   def `row-reverse`: `row-reverse` = "row-reverse".asInstanceOf[`row-reverse`]
   @scala.inline
@@ -5287,7 +5287,7 @@ object baseuiStrings {
   @scala.inline
   def s: s = "s".asInstanceOf[s]
   @scala.inline
-  def `safe center`: `safe center` = "safe center".asInstanceOf[`safe center`]
+  def `safe center`: `safe center` = ("safe center").asInstanceOf[`safe center`]
   @scala.inline
   def samp: samp = "samp".asInstanceOf[samp]
   @scala.inline
@@ -5425,7 +5425,7 @@ object baseuiStrings {
   @scala.inline
   def ul: ul = "ul".asInstanceOf[ul]
   @scala.inline
-  def `unsafe center`: `unsafe center` = "unsafe center".asInstanceOf[`unsafe center`]
+  def `unsafe center`: `unsafe center` = ("unsafe center").asInstanceOf[`unsafe center`]
   @scala.inline
   def unset: unset = "unset".asInstanceOf[unset]
   @scala.inline
@@ -5449,6 +5449,6 @@ object baseuiStrings {
   @scala.inline
   def webview: webview = "webview".asInstanceOf[webview]
   @scala.inline
-  def `Åland Islands`: `Åland Islands` = "\u00C5land Islands".asInstanceOf[`Åland Islands`]
+  def `Åland Islands`: `Åland Islands` = ("\u00C5land Islands").asInstanceOf[`Åland Islands`]
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactScrollableAnchorProps {
   @scala.inline
-  def ReactScrollableAnchorProps: ScrollableAnchorProps.type = typings.reactScrollableAnchor.mod.ScrollableAnchorProps
+  def ReactScrollableAnchorProps: ScrollableAnchorProps.type = ScrollableAnchorProps
   type ReactScrollableAnchorProps = ScrollableAnchorProps
 }
 

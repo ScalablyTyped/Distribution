@@ -146,11 +146,11 @@ class LabIcon_ protected ()
   def element(): HTMLElement = js.native
   def element(props: IProps): HTMLElement = js.native
   def render(container: HTMLElement, options: IRendererOptions): Unit = js.native
-  /* protected */ def svgElement(): HTMLElement | Null = js.native
-  /* protected */ def svgInnerHTML(): String | Null = js.native
-  /* protected */ def svgReactAttrs(): js.Any | Null = js.native
+  /* protected */ def svgElement: HTMLElement | Null = js.native
+  /* protected */ def svgInnerHTML: String | Null = js.native
+  /* protected */ def svgReactAttrs: js.Any | Null = js.native
   @JSName("svgstr")
-  def svgstr_MLabIcon_(): String = js.native
+  def svgstr_MLabIcon_ : String = js.native
   @JSName("svgstr")
   def svgstr_MLabIcon_(svgstr: String): js.Any = js.native
 }

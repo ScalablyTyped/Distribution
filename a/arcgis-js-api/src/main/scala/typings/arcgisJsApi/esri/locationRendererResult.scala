@@ -45,7 +45,6 @@ object locationRendererResult {
     renderer: SimpleRenderer
   ): locationRendererResult = {
     val __obj = js.Dynamic.literal(basemapId = basemapId.asInstanceOf[js.Any], basemapTheme = basemapTheme.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), locationScheme = locationScheme.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[locationRendererResult]
   }
 }

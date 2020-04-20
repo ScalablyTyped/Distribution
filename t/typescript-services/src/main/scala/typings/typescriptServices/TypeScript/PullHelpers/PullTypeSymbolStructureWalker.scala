@@ -27,7 +27,6 @@ object PullTypeSymbolStructureWalker {
     signatureReturnTypeWalk: PullTypeSymbol => Boolean
   ): PullTypeSymbolStructureWalker = {
     val __obj = js.Dynamic.literal(callSignatureWalk = js.Any.fromFunction1(callSignatureWalk), constructSignatureWalk = js.Any.fromFunction1(constructSignatureWalk), indexSignatureWalk = js.Any.fromFunction1(indexSignatureWalk), memberSymbolWalk = js.Any.fromFunction1(memberSymbolWalk), signatureParameterWalk = js.Any.fromFunction1(signatureParameterWalk), signatureReturnTypeWalk = js.Any.fromFunction1(signatureReturnTypeWalk))
-  
     __obj.asInstanceOf[PullTypeSymbolStructureWalker]
   }
 }

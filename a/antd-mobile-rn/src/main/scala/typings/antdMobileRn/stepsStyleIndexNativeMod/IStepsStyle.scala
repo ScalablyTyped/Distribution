@@ -58,7 +58,6 @@ object IStepsStyle {
     title_s: TextStyle
   ): IStepsStyle = {
     val __obj = js.Dynamic.literal(content_l = content_l.asInstanceOf[js.Any], content_s = content_s.asInstanceOf[js.Any], description_l = description_l.asInstanceOf[js.Any], description_s = description_s.asInstanceOf[js.Any], head_blue_l = head_blue_l.asInstanceOf[js.Any], head_blue_s = head_blue_s.asInstanceOf[js.Any], head_default_l = head_default_l.asInstanceOf[js.Any], head_default_s = head_default_s.asInstanceOf[js.Any], head_gray_l = head_gray_l.asInstanceOf[js.Any], head_gray_s = head_gray_s.asInstanceOf[js.Any], head_red_l = head_red_l.asInstanceOf[js.Any], head_red_s = head_red_s.asInstanceOf[js.Any], icon_l = icon_l.asInstanceOf[js.Any], icon_s = icon_s.asInstanceOf[js.Any], tail_blue = tail_blue.asInstanceOf[js.Any], tail_default_l = tail_default_l.asInstanceOf[js.Any], tail_default_s = tail_default_s.asInstanceOf[js.Any], tail_error = tail_error.asInstanceOf[js.Any], tail_gray = tail_gray.asInstanceOf[js.Any], tail_last = tail_last.asInstanceOf[js.Any], title_l = title_l.asInstanceOf[js.Any], title_s = title_s.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IStepsStyle]
   }
 }

@@ -12,7 +12,6 @@ object IPeoplePickerItemState {
   @scala.inline
   def apply(contextualMenuVisible: Boolean): IPeoplePickerItemState = {
     val __obj = js.Dynamic.literal(contextualMenuVisible = contextualMenuVisible.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPeoplePickerItemState]
   }
 }

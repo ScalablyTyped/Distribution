@@ -15,7 +15,6 @@ object ServiceAccountResource {
   @scala.inline
   def apply(get: AnonProjectId => Request_[ServiceAccount]): ServiceAccountResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
-  
     __obj.asInstanceOf[ServiceAccountResource]
   }
 }

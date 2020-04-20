@@ -36,58 +36,56 @@ trait NodeType extends js.Object
 
 object NodeType {
   @scala.inline
-  def blockquote: typings.reactMarkdown.reactMarkdownStrings.blockquote = this.cast("blockquote")
+  def blockquote: typings.reactMarkdown.reactMarkdownStrings.blockquote = "blockquote".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.blockquote]
   @scala.inline
-  def break: typings.reactMarkdown.reactMarkdownStrings.break = this.cast("break")
+  def break: typings.reactMarkdown.reactMarkdownStrings.break = "break".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.break]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def code: typings.reactMarkdown.reactMarkdownStrings.code = "code".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.code]
   @scala.inline
-  def code: typings.reactMarkdown.reactMarkdownStrings.code = this.cast("code")
+  def definition: typings.reactMarkdown.reactMarkdownStrings.definition = "definition".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.definition]
   @scala.inline
-  def definition: typings.reactMarkdown.reactMarkdownStrings.definition = this.cast("definition")
+  def delete: typings.reactMarkdown.reactMarkdownStrings.delete = "delete".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.delete]
   @scala.inline
-  def delete: typings.reactMarkdown.reactMarkdownStrings.delete = this.cast("delete")
+  def emphasis: typings.reactMarkdown.reactMarkdownStrings.emphasis = "emphasis".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.emphasis]
   @scala.inline
-  def emphasis: typings.reactMarkdown.reactMarkdownStrings.emphasis = this.cast("emphasis")
+  def heading: typings.reactMarkdown.reactMarkdownStrings.heading = "heading".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.heading]
   @scala.inline
-  def heading: typings.reactMarkdown.reactMarkdownStrings.heading = this.cast("heading")
+  def html: typings.reactMarkdown.reactMarkdownStrings.html = "html".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.html]
   @scala.inline
-  def html: typings.reactMarkdown.reactMarkdownStrings.html = this.cast("html")
+  def image: typings.reactMarkdown.reactMarkdownStrings.image = "image".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.image]
   @scala.inline
-  def image: typings.reactMarkdown.reactMarkdownStrings.image = this.cast("image")
+  def imageReference: typings.reactMarkdown.reactMarkdownStrings.imageReference = "imageReference".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.imageReference]
   @scala.inline
-  def imageReference: typings.reactMarkdown.reactMarkdownStrings.imageReference = this.cast("imageReference")
+  def inlineCode: typings.reactMarkdown.reactMarkdownStrings.inlineCode = "inlineCode".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.inlineCode]
   @scala.inline
-  def inlineCode: typings.reactMarkdown.reactMarkdownStrings.inlineCode = this.cast("inlineCode")
+  def link: typings.reactMarkdown.reactMarkdownStrings.link = "link".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.link]
   @scala.inline
-  def link: typings.reactMarkdown.reactMarkdownStrings.link = this.cast("link")
+  def linkReference: typings.reactMarkdown.reactMarkdownStrings.linkReference = "linkReference".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.linkReference]
   @scala.inline
-  def linkReference: typings.reactMarkdown.reactMarkdownStrings.linkReference = this.cast("linkReference")
+  def list: typings.reactMarkdown.reactMarkdownStrings.list = "list".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.list]
   @scala.inline
-  def list: typings.reactMarkdown.reactMarkdownStrings.list = this.cast("list")
+  def listItem: typings.reactMarkdown.reactMarkdownStrings.listItem = "listItem".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.listItem]
   @scala.inline
-  def listItem: typings.reactMarkdown.reactMarkdownStrings.listItem = this.cast("listItem")
+  def paragraph: typings.reactMarkdown.reactMarkdownStrings.paragraph = "paragraph".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.paragraph]
   @scala.inline
-  def paragraph: typings.reactMarkdown.reactMarkdownStrings.paragraph = this.cast("paragraph")
+  def root: typings.reactMarkdown.reactMarkdownStrings.root = "root".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.root]
   @scala.inline
-  def root: typings.reactMarkdown.reactMarkdownStrings.root = this.cast("root")
+  def strong: typings.reactMarkdown.reactMarkdownStrings.strong = "strong".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.strong]
   @scala.inline
-  def strong: typings.reactMarkdown.reactMarkdownStrings.strong = this.cast("strong")
+  def table: typings.reactMarkdown.reactMarkdownStrings.table = "table".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.table]
   @scala.inline
-  def table: typings.reactMarkdown.reactMarkdownStrings.table = this.cast("table")
+  def tableBody: typings.reactMarkdown.reactMarkdownStrings.tableBody = "tableBody".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.tableBody]
   @scala.inline
-  def tableBody: typings.reactMarkdown.reactMarkdownStrings.tableBody = this.cast("tableBody")
+  def tableCell: typings.reactMarkdown.reactMarkdownStrings.tableCell = "tableCell".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.tableCell]
   @scala.inline
-  def tableCell: typings.reactMarkdown.reactMarkdownStrings.tableCell = this.cast("tableCell")
+  def tableHead: typings.reactMarkdown.reactMarkdownStrings.tableHead = "tableHead".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.tableHead]
   @scala.inline
-  def tableHead: typings.reactMarkdown.reactMarkdownStrings.tableHead = this.cast("tableHead")
+  def tableRow: typings.reactMarkdown.reactMarkdownStrings.tableRow = "tableRow".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.tableRow]
   @scala.inline
-  def tableRow: typings.reactMarkdown.reactMarkdownStrings.tableRow = this.cast("tableRow")
+  def text: typings.reactMarkdown.reactMarkdownStrings.text = "text".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.text]
   @scala.inline
-  def text: typings.reactMarkdown.reactMarkdownStrings.text = this.cast("text")
+  def thematicBreak: typings.reactMarkdown.reactMarkdownStrings.thematicBreak = "thematicBreak".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.thematicBreak]
   @scala.inline
-  def thematicBreak: typings.reactMarkdown.reactMarkdownStrings.thematicBreak = this.cast("thematicBreak")
-  @scala.inline
-  def virtualHtml: typings.reactMarkdown.reactMarkdownStrings.virtualHtml = this.cast("virtualHtml")
+  def virtualHtml: typings.reactMarkdown.reactMarkdownStrings.virtualHtml = "virtualHtml".asInstanceOf[typings.reactMarkdown.reactMarkdownStrings.virtualHtml]
 }
 

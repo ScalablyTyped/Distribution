@@ -12,7 +12,6 @@ object AnonVerifyChecksum {
   @scala.inline
   def apply(verifyChecksum: Boolean): AnonVerifyChecksum = {
     val __obj = js.Dynamic.literal(verifyChecksum = verifyChecksum.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonVerifyChecksum]
   }
 }

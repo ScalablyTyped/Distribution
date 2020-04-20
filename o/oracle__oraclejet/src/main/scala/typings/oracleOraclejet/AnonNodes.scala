@@ -13,7 +13,6 @@ object AnonNodes {
   @scala.inline
   def apply(nodes: AnonDataTypes, ports: AnonDragEnd): AnonNodes = {
     val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any], ports = ports.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNodes]
   }
 }

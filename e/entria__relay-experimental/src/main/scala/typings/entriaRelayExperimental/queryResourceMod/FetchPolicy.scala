@@ -14,14 +14,12 @@ trait FetchPolicy extends js.Object
 
 object FetchPolicy {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `network-only`: typings.entriaRelayExperimental.entriaRelayExperimentalStrings.`network-only` = "network-only".asInstanceOf[typings.entriaRelayExperimental.entriaRelayExperimentalStrings.`network-only`]
   @scala.inline
-  def `network-only`: typings.entriaRelayExperimental.entriaRelayExperimentalStrings.`network-only` = this.cast("network-only")
+  def `store-and-network`: typings.entriaRelayExperimental.entriaRelayExperimentalStrings.`store-and-network` = "store-and-network".asInstanceOf[typings.entriaRelayExperimental.entriaRelayExperimentalStrings.`store-and-network`]
   @scala.inline
-  def `store-and-network`: typings.entriaRelayExperimental.entriaRelayExperimentalStrings.`store-and-network` = this.cast("store-and-network")
+  def `store-only`: typings.entriaRelayExperimental.entriaRelayExperimentalStrings.`store-only` = "store-only".asInstanceOf[typings.entriaRelayExperimental.entriaRelayExperimentalStrings.`store-only`]
   @scala.inline
-  def `store-only`: typings.entriaRelayExperimental.entriaRelayExperimentalStrings.`store-only` = this.cast("store-only")
-  @scala.inline
-  def `store-or-network`: typings.entriaRelayExperimental.entriaRelayExperimentalStrings.`store-or-network` = this.cast("store-or-network")
+  def `store-or-network`: typings.entriaRelayExperimental.entriaRelayExperimentalStrings.`store-or-network` = "store-or-network".asInstanceOf[typings.entriaRelayExperimental.entriaRelayExperimentalStrings.`store-or-network`]
 }
 

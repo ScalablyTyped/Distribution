@@ -16,7 +16,6 @@ object NotificationFeature {
   @scala.inline
   def apply[T /* <: js.Function */](getProvider: typings.vscode.mod.TextDocument => AnonSend[T]): NotificationFeature[T] = {
     val __obj = js.Dynamic.literal(getProvider = js.Any.fromFunction1(getProvider))
-  
     __obj.asInstanceOf[NotificationFeature[T]]
   }
 }

@@ -13,7 +13,6 @@ object ArraySliceMetaInfo {
   @scala.inline
   def apply(arrayLength: Double, sliceStart: Double): ArraySliceMetaInfo = {
     val __obj = js.Dynamic.literal(arrayLength = arrayLength.asInstanceOf[js.Any], sliceStart = sliceStart.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ArraySliceMetaInfo]
   }
 }

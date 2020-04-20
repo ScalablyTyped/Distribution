@@ -17,7 +17,6 @@ object ITextFieldErrorMessageExampleState {
   @scala.inline
   def apply(showFields: Boolean): ITextFieldErrorMessageExampleState = {
     val __obj = js.Dynamic.literal(showFields = showFields.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ITextFieldErrorMessageExampleState]
   }
 }

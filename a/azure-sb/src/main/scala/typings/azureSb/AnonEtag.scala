@@ -12,7 +12,6 @@ object AnonEtag {
   @scala.inline
   def apply(etag: js.Any): AnonEtag = {
     val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEtag]
   }
 }

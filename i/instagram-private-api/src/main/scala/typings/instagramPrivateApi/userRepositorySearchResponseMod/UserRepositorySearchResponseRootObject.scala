@@ -22,7 +22,6 @@ object UserRepositorySearchResponseRootObject {
     users: js.Array[UserRepositorySearchResponseUsersItem]
   ): UserRepositorySearchResponseRootObject = {
     val __obj = js.Dynamic.literal(has_more = has_more.asInstanceOf[js.Any], num_results = num_results.asInstanceOf[js.Any], rank_token = rank_token.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UserRepositorySearchResponseRootObject]
   }
 }

@@ -17,7 +17,6 @@ object DisputeNotification {
   @scala.inline
   def apply(dispute: Dispute, kind: DisputeNotificationKind, timestamp: Date): DisputeNotification = {
     val __obj = js.Dynamic.literal(dispute = dispute.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisputeNotification]
   }
 }

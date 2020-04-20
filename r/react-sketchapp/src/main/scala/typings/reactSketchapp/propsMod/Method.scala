@@ -12,10 +12,8 @@ trait Method extends js.Object
 
 object Method {
   @scala.inline
-  def align: typings.reactSketchapp.reactSketchappStrings.align = this.cast("align")
+  def align: typings.reactSketchapp.reactSketchappStrings.align = "align".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.align]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def stretch: typings.reactSketchapp.reactSketchappStrings.stretch = this.cast("stretch")
+  def stretch: typings.reactSketchapp.reactSketchappStrings.stretch = "stretch".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.stretch]
 }
 

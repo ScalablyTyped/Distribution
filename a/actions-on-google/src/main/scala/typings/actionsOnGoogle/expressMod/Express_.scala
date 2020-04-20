@@ -16,7 +16,7 @@ class Express_ () extends Framework[ExpressHandler] {
   /** @public */
   /* CompleteClass */
   override def handle(base: StandardHandler): ExpressHandler = js.native
-  def isRequest(first: js.Object): /* is express.express.Request<express-serve-static-core.express-serve-static-core.ParamsDictionary> */ Boolean = js.native
+  def isRequest(first: js.Object): /* is express.express.Request<express-serve-static-core.express-serve-static-core.ParamsDictionary, any, any, express-serve-static-core.express-serve-static-core.Query> */ Boolean = js.native
   def isResponse(second: js.Object): /* is express.express.Response<any> */ Boolean = js.native
 }
 

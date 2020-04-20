@@ -13,7 +13,6 @@ object PickImplimage {
   @scala.inline
   def apply(image: String): PickImplimage = {
     val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplimage]
   }
 }

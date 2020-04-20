@@ -14,7 +14,6 @@ object AnonResourceName {
   @scala.inline
   def apply(dataService: DataService, resourceName: String): AnonResourceName = {
     val __obj = js.Dynamic.literal(dataService = dataService.asInstanceOf[js.Any], resourceName = resourceName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonResourceName]
   }
 }

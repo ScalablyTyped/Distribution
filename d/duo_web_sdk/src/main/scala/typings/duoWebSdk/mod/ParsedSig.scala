@@ -14,7 +14,6 @@ object ParsedSig {
   @scala.inline
   def apply(appSig: String, duoSig: String, sigRequest: String): ParsedSig = {
     val __obj = js.Dynamic.literal(appSig = appSig.asInstanceOf[js.Any], duoSig = duoSig.asInstanceOf[js.Any], sigRequest = sigRequest.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ParsedSig]
   }
 }

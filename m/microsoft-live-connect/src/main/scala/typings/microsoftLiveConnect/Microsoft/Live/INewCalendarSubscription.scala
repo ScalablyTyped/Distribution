@@ -24,7 +24,6 @@ object INewCalendarSubscription {
   @scala.inline
   def apply(name: String, subscription_location: String): INewCalendarSubscription = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], subscription_location = subscription_location.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INewCalendarSubscription]
   }
 }

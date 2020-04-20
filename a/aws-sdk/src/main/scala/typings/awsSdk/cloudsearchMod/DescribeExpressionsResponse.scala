@@ -16,7 +16,6 @@ object DescribeExpressionsResponse {
   @scala.inline
   def apply(Expressions: ExpressionStatusList): DescribeExpressionsResponse = {
     val __obj = js.Dynamic.literal(Expressions = Expressions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeExpressionsResponse]
   }
 }

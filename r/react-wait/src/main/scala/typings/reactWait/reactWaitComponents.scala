@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactWaitComponents extends reactWaitProps {
   @scala.inline
-  def Waiter: ComponentType[js.Object] = typings.reactWait.mod.Waiter.asInstanceOf[typings.react.mod.ComponentType[js.Object]]
+  def Waiter: ComponentType[js.Object] = typings.reactWait.mod.Waiter.asInstanceOf[ComponentType[js.Object]]
 }
 

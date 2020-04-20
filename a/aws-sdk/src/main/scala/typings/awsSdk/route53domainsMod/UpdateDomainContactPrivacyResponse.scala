@@ -16,7 +16,6 @@ object UpdateDomainContactPrivacyResponse {
   @scala.inline
   def apply(OperationId: OperationId): UpdateDomainContactPrivacyResponse = {
     val __obj = js.Dynamic.literal(OperationId = OperationId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateDomainContactPrivacyResponse]
   }
 }

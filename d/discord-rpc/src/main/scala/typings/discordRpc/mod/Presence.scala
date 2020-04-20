@@ -1,12 +1,13 @@
 package typings.discordRpc.mod
 
+import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Presence extends js.Object {
   var details: js.UndefOr[String] = js.undefined
-  var endTimestamp: js.UndefOr[Double] = js.undefined
+  var endTimestamp: js.UndefOr[Double | Date] = js.undefined
   var instance: js.UndefOr[Boolean] = js.undefined
   var joinSecret: js.UndefOr[String] = js.undefined
   var largeImageKey: js.UndefOr[String] = js.undefined
@@ -17,7 +18,7 @@ trait Presence extends js.Object {
   var smallImageKey: js.UndefOr[String] = js.undefined
   var smallImageText: js.UndefOr[String] = js.undefined
   var spectateSecret: js.UndefOr[String] = js.undefined
-  var startTimestamp: js.UndefOr[Double] = js.undefined
+  var startTimestamp: js.UndefOr[Double | Date] = js.undefined
   var state: js.UndefOr[String] = js.undefined
 }
 
@@ -25,7 +26,7 @@ object Presence {
   @scala.inline
   def apply(
     details: String = null,
-    endTimestamp: Int | Double = null,
+    endTimestamp: Double | Date = null,
     instance: js.UndefOr[Boolean] = js.undefined,
     joinSecret: String = null,
     largeImageKey: String = null,
@@ -36,7 +37,7 @@ object Presence {
     smallImageKey: String = null,
     smallImageText: String = null,
     spectateSecret: String = null,
-    startTimestamp: Int | Double = null,
+    startTimestamp: Double | Date = null,
     state: String = null
   ): Presence = {
     val __obj = js.Dynamic.literal()

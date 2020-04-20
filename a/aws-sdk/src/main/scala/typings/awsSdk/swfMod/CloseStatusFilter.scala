@@ -16,7 +16,6 @@ object CloseStatusFilter {
   @scala.inline
   def apply(status: CloseStatus): CloseStatusFilter = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CloseStatusFilter]
   }
 }

@@ -16,7 +16,6 @@ object DescribePipelinesOutput {
   @scala.inline
   def apply(pipelineDescriptionList: PipelineDescriptionList): DescribePipelinesOutput = {
     val __obj = js.Dynamic.literal(pipelineDescriptionList = pipelineDescriptionList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribePipelinesOutput]
   }
 }

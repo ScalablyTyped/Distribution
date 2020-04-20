@@ -20,7 +20,6 @@ object Gravity {
   @scala.inline
   def apply(setIgnoreGravity: Boolean => GameObject): Gravity = {
     val __obj = js.Dynamic.literal(setIgnoreGravity = js.Any.fromFunction1(setIgnoreGravity))
-  
     __obj.asInstanceOf[Gravity]
   }
 }

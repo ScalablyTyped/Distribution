@@ -29,7 +29,6 @@ object AnonBuildingid {
   @scala.inline
   def apply(building_id: String, floor: Double, lnglat: LngLat, shop: Shop): AnonBuildingid = {
     val __obj = js.Dynamic.literal(building_id = building_id.asInstanceOf[js.Any], floor = floor.asInstanceOf[js.Any], lnglat = lnglat.asInstanceOf[js.Any], shop = shop.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBuildingid]
   }
 }

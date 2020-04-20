@@ -19,24 +19,22 @@ trait HttpMethod extends js.Object
 
 object HttpMethod {
   @scala.inline
-  def CONNECT: typings.urllib.urllibStrings.CONNECT = this.cast("CONNECT")
+  def CONNECT: typings.urllib.urllibStrings.CONNECT = "CONNECT".asInstanceOf[typings.urllib.urllibStrings.CONNECT]
   @scala.inline
-  def DELETE: typings.urllib.urllibStrings.DELETE = this.cast("DELETE")
+  def DELETE: typings.urllib.urllibStrings.DELETE = "DELETE".asInstanceOf[typings.urllib.urllibStrings.DELETE]
   @scala.inline
-  def GET: typings.urllib.urllibStrings.GET = this.cast("GET")
+  def GET: typings.urllib.urllibStrings.GET = "GET".asInstanceOf[typings.urllib.urllibStrings.GET]
   @scala.inline
-  def HEAD: typings.urllib.urllibStrings.HEAD = this.cast("HEAD")
+  def HEAD: typings.urllib.urllibStrings.HEAD = "HEAD".asInstanceOf[typings.urllib.urllibStrings.HEAD]
   @scala.inline
-  def OPTIONS: typings.urllib.urllibStrings.OPTIONS = this.cast("OPTIONS")
+  def OPTIONS: typings.urllib.urllibStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.urllib.urllibStrings.OPTIONS]
   @scala.inline
-  def PATCH: typings.urllib.urllibStrings.PATCH = this.cast("PATCH")
+  def PATCH: typings.urllib.urllibStrings.PATCH = "PATCH".asInstanceOf[typings.urllib.urllibStrings.PATCH]
   @scala.inline
-  def POST: typings.urllib.urllibStrings.POST = this.cast("POST")
+  def POST: typings.urllib.urllibStrings.POST = "POST".asInstanceOf[typings.urllib.urllibStrings.POST]
   @scala.inline
-  def PUT: typings.urllib.urllibStrings.PUT = this.cast("PUT")
+  def PUT: typings.urllib.urllibStrings.PUT = "PUT".asInstanceOf[typings.urllib.urllibStrings.PUT]
   @scala.inline
-  def TRACE: typings.urllib.urllibStrings.TRACE = this.cast("TRACE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def TRACE: typings.urllib.urllibStrings.TRACE = "TRACE".asInstanceOf[typings.urllib.urllibStrings.TRACE]
 }
 

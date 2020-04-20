@@ -29,7 +29,6 @@ object NodeSingularMetadata {
   @scala.inline
   def apply(degree: Boolean => Double, indegree: Boolean => Double, outdegree: Boolean => Double): NodeSingularMetadata = {
     val __obj = js.Dynamic.literal(degree = js.Any.fromFunction1(degree), indegree = js.Any.fromFunction1(indegree), outdegree = js.Any.fromFunction1(outdegree))
-  
     __obj.asInstanceOf[NodeSingularMetadata]
   }
 }

@@ -28,7 +28,6 @@ object CreateDatasetRequest {
   @scala.inline
   def apply(datasetGroupArn: Arn, datasetType: DatasetType, name: Name, schemaArn: Arn): CreateDatasetRequest = {
     val __obj = js.Dynamic.literal(datasetGroupArn = datasetGroupArn.asInstanceOf[js.Any], datasetType = datasetType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], schemaArn = schemaArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateDatasetRequest]
   }
 }

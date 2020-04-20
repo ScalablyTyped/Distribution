@@ -13,7 +13,6 @@ object Anon0 {
   @scala.inline
   def apply[OverlayType /* <: OverlayElement */](create: js.Any => js.Promise[OverlayType]): Anon0[OverlayType] = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
-  
     __obj.asInstanceOf[Anon0[OverlayType]]
   }
 }

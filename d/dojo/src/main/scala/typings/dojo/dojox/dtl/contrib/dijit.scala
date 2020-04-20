@@ -93,7 +93,6 @@ object dijit {
     widgetsInTemplate: Boolean
   ): dijit = {
     val __obj = js.Dynamic.literal(AttachNode = js.Any.fromFunction2(AttachNode), DojoTypeNode = js.Any.fromFunction2(DojoTypeNode), EventNode = js.Any.fromFunction2(EventNode), data_dojo_attach_event = js.Any.fromFunction2(data_dojo_attach_event), data_dojo_attach_point = js.Any.fromFunction2(data_dojo_attach_point), data_dojo_type = js.Any.fromFunction2(data_dojo_type), dojoAttachEvent = js.Any.fromFunction2(dojoAttachEvent), dojoAttachPoint = js.Any.fromFunction2(dojoAttachPoint), dojoType = js.Any.fromFunction2(dojoType), on = js.Any.fromFunction2(on), widgetsInTemplate = widgetsInTemplate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[dijit]
   }
 }

@@ -194,7 +194,7 @@ object renderTargetTextureMod extends js.Object {
       * @param postProcess define the post process to add
       */
     def addPostProcess(postProcess: PostProcess): Unit = js.native
-    def boundingBoxSize(): Vector3 = js.native
+    def boundingBoxSize: Vector3 = js.native
     /**
       * Gets or sets the size of the bounding box associated with the texture (when in cube mode)
       * When defined, the cubemap will switch to local mode
@@ -240,7 +240,7 @@ object renderTargetTextureMod extends js.Object {
       * depth texture.
       * Otherwise, return null.
       */
-    def depthStencilTexture(): Nullable[InternalTexture] = js.native
+    def depthStencilTexture: Nullable[InternalTexture] = js.native
     /**
       *  This will remove the attached framebuffer objects. The texture will not be able to be used as render target anymore
       */
@@ -312,7 +312,7 @@ object renderTargetTextureMod extends js.Object {
       * Define the refresh rate of the texture or the rendering frequency.
       * Use 0 to render just once, 1 to render on every frame, 2 to render every two frames and so on...
       */
-    def refreshRate(): Double = js.native
+    def refreshRate: Double = js.native
     def refreshRate(value: Double): js.Any = js.native
     /**
       * Remove one of the post process from the list of attached post processes to the texture
@@ -330,7 +330,7 @@ object renderTargetTextureMod extends js.Object {
     /**
       * Use this list to define the list of mesh you want to render.
       */
-    def renderList(): Nullable[js.Array[AbstractMesh]] = js.native
+    def renderList: Nullable[js.Array[AbstractMesh]] = js.native
     def renderList(value: Nullable[js.Array[AbstractMesh]]): js.Any = js.native
     /**
       * Use this predicate to dynamically define the list of mesh you want to render.
@@ -340,7 +340,7 @@ object renderTargetTextureMod extends js.Object {
     /**
       * Gets render target creation options that were used.
       */
-    def renderTargetOptions(): RenderTargetCreationOptions = js.native
+    def renderTargetOptions: RenderTargetCreationOptions = js.native
     /**
       * Resets the refresh counter of the texture and start bak from scratch.
       * Could be useful to regenerate the texture if it is setup to render only once.
@@ -361,7 +361,7 @@ object renderTargetTextureMod extends js.Object {
       * Define the number of samples to use in case of MSAA.
       * It defaults to one meaning no MSAA has been enabled.
       */
-    def samples(): Double = js.native
+    def samples: Double = js.native
     def samples(value: Double): js.Any = js.native
     /**
       * Specifies whether or not the stencil and depth buffer are cleared between two rendering groups.

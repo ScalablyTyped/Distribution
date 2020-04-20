@@ -28,7 +28,6 @@ object DeleteWebACLRequest {
   @scala.inline
   def apply(Id: EntityId, LockToken: LockToken, Name: EntityName, Scope: Scope): DeleteWebACLRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], LockToken = LockToken.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Scope = Scope.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteWebACLRequest]
   }
 }

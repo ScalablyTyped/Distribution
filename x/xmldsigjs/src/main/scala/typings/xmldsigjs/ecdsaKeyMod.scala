@@ -28,7 +28,7 @@ object ecdsaKeyMod extends js.Object {
     /**
       * Gets the NamedCurve value of then public key
       */
-    def NamedCurve(): String = js.native
+    def NamedCurve: String = js.native
   }
   
   @js.native

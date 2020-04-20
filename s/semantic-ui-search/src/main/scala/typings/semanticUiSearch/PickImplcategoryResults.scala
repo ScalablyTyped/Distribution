@@ -13,7 +13,6 @@ object PickImplcategoryResults {
   @scala.inline
   def apply(categoryResults: String): PickImplcategoryResults = {
     val __obj = js.Dynamic.literal(categoryResults = categoryResults.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplcategoryResults]
   }
 }

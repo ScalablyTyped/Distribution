@@ -22,7 +22,6 @@ object OtherRecipientInfo {
     toSchema: () => js.Any
   ): OtherRecipientInfo = {
     val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), oriType = oriType.asInstanceOf[js.Any], oriValue = oriValue.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
-  
     __obj.asInstanceOf[OtherRecipientInfo]
   }
 }

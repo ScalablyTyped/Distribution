@@ -13,7 +13,6 @@ object ViewLayerviewDestroyEvent {
   @scala.inline
   def apply(layer: Layer, layerView: LayerView): ViewLayerviewDestroyEvent = {
     val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], layerView = layerView.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ViewLayerviewDestroyEvent]
   }
 }

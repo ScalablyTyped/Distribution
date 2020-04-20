@@ -37,7 +37,7 @@ class Resizable protected ()
   var resizableTop: Double = js.native
   var targetLeft: Double = js.native
   var targetTop: Double = js.native
-  def base(): js.UndefOr[HTMLElement] = js.native
+  def base: js.UndefOr[HTMLElement] = js.native
   def bindEvents(): Unit = js.native
   def calculateNewMaxFromBoundary(): AnonMaxHeight = js.native
   def calculateNewMaxFromBoundary(maxWidth: Double): AnonMaxHeight = js.native
@@ -63,17 +63,17 @@ class Resizable protected ()
   def onMouseUp(event: TouchEvent): Unit = js.native
   def onResizeStart(event: typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent], direction: Direction): Unit = js.native
   def onResizeStart(event: typings.react.mod.TouchEvent[HTMLDivElement], direction: Direction): Unit = js.native
-  def parentNode(): HTMLElement | Null = js.native
-  def propsSize(): Size = js.native
+  def parentNode: HTMLElement | Null = js.native
+  def propsSize: Size = js.native
   def ref(): Unit = js.native
   def ref(c: HTMLDivElement): Unit = js.native
   def renderResizer(): Element | Null = js.native
   def setBoundingClientRect(): Unit = js.native
-  def size(): NumberSize = js.native
-  def sizeStyle(): AnonHeight = js.native
+  def size: NumberSize = js.native
+  def sizeStyle: AnonHeight = js.native
   def unbindEvents(): Unit = js.native
   def updateSize(size: Size): Unit = js.native
-  def window(): Window | Null = js.native
+  def window: Window | Null = js.native
 }
 
 /* static members */

@@ -139,9 +139,10 @@ trait Typeofreact extends js.Object {
   def createElement[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState]): ReactElement = js.native
   def createElement[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], children: ReactNode*): ReactElement = js.native
   def createElement[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], props: Attributes with P, children: ReactNode*): ReactElement = js.native
-  def createElement[P /* <: js.Object */](`type`: FunctionComponent[P]): ReactElement = js.native
-  def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], children: ReactNode*): ReactElement = js.native
-  def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes with P, children: ReactNode*): ReactElement = js.native
+  // Custom components
+  def createElement[P /* <: js.Object */](`type`: FunctionComponent[P]): FunctionComponentElement[P] = js.native
+  def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], children: ReactNode*): FunctionComponentElement[P] = js.native
+  def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes with P, children: ReactNode*): FunctionComponentElement[P] = js.native
   def createElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: ClassAttributes[T] with P, children: ReactNode*): DOMElement[P, T] = js.native
   def createElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any): ReactSVGElement = js.native
   def createElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
@@ -173,13 +174,12 @@ trait Typeofreact extends js.Object {
     props: ClassAttributes[T] with P,
     children: ReactNode*
   ): DetailedReactHTMLElement[P, T] = js.native
-  // Custom components
   @JSName("createElement")
-  def createElement_P_Object_FunctionComponentElement[P /* <: js.Object */](`type`: FunctionComponent[P]): FunctionComponentElement[P] = js.native
+  def createElement_P_Object_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P]): ReactElement = js.native
   @JSName("createElement")
-  def createElement_P_Object_FunctionComponentElement[P /* <: js.Object */](`type`: FunctionComponent[P], children: ReactNode*): FunctionComponentElement[P] = js.native
+  def createElement_P_Object_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], children: ReactNode*): ReactElement = js.native
   @JSName("createElement")
-  def createElement_P_Object_FunctionComponentElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes with P, children: ReactNode*): FunctionComponentElement[P] = js.native
+  def createElement_P_Object_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes with P, children: ReactNode*): ReactElement = js.native
   // DOM Elements
   // TODO: generalize this to everything in `keyof ReactHTML`, not just "input"
   @JSName("createElement")
@@ -344,28 +344,11 @@ trait Typeofreact extends js.Object {
     * @version 16.8.0
     * @see https://reactjs.org/docs/hooks-reference.html#usereducer
     */
-  // overload where dispatch could accept 0 arguments.
-  def useReducer[R /* <: ReducerWithoutAction[_] */, I](
-    reducer: R,
-    initializerArg: I,
-    initializer: js.Function1[/* arg */ I, ReducerStateWithoutAction[R]]
-  ): js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction] = js.native
-  /**
-    * An alternative to `useState`.
-    *
-    * `useReducer` is usually preferable to `useState` when you have complex state logic that involves
-    * multiple sub-values. It also lets you optimize performance for components that trigger deep
-    * updates because you can pass `dispatch` down instead of callbacks.
-    *
-    * @version 16.8.0
-    * @see https://reactjs.org/docs/hooks-reference.html#usereducer
-    */
   // overload where "I" may be a subset of ReducerState<R>; used to provide autocompletion.
   // If "I" matches ReducerState<R> exactly then the last overload will allow initializer to be ommitted.
   // the last overload effectively behaves as if the identity function (x => x) is the initializer.
   // overload for free "I"; all goes as long as initializer converts it into "ReducerState<R>".
-  @JSName("useReducer")
-  def useReducer_R_ReducerWildcardWildcardI[R /* <: Reducer[_, _] */, I](
+  def useReducer[R /* <: Reducer[_, _] */, I](
     reducer: R,
     initializerArg: (I with ReducerState[R]) | I,
     initializer: js.Function1[(/* arg */ I with ReducerState[R]) | (/* arg */ I), ReducerState[R]]
@@ -383,6 +366,23 @@ trait Typeofreact extends js.Object {
   // overload where dispatch could accept 0 arguments.
   @JSName("useReducer")
   def useReducer_R_ReducerWithoutActionWildcard[R /* <: ReducerWithoutAction[_] */](reducer: R, initializerArg: ReducerStateWithoutAction[R]): js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction] = js.native
+  /**
+    * An alternative to `useState`.
+    *
+    * `useReducer` is usually preferable to `useState` when you have complex state logic that involves
+    * multiple sub-values. It also lets you optimize performance for components that trigger deep
+    * updates because you can pass `dispatch` down instead of callbacks.
+    *
+    * @version 16.8.0
+    * @see https://reactjs.org/docs/hooks-reference.html#usereducer
+    */
+  // overload where dispatch could accept 0 arguments.
+  @JSName("useReducer")
+  def useReducer_R_ReducerWithoutActionWildcardI[R /* <: ReducerWithoutAction[_] */, I](
+    reducer: R,
+    initializerArg: I,
+    initializer: js.Function1[/* arg */ I, ReducerStateWithoutAction[R]]
+  ): js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction] = js.native
   def useRef[T](): RefObject[T] = js.native
   // convenience overload for refs given as a ref prop as they typically start with a null value
   /**

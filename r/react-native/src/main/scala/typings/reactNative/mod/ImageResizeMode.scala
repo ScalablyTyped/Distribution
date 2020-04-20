@@ -15,16 +15,14 @@ trait ImageResizeMode extends js.Object
 
 object ImageResizeMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def center: typings.reactNative.reactNativeStrings.center = "center".asInstanceOf[typings.reactNative.reactNativeStrings.center]
   @scala.inline
-  def center: typings.reactNative.reactNativeStrings.center = this.cast("center")
+  def contain: typings.reactNative.reactNativeStrings.contain = "contain".asInstanceOf[typings.reactNative.reactNativeStrings.contain]
   @scala.inline
-  def contain: typings.reactNative.reactNativeStrings.contain = this.cast("contain")
+  def cover: typings.reactNative.reactNativeStrings.cover = "cover".asInstanceOf[typings.reactNative.reactNativeStrings.cover]
   @scala.inline
-  def cover: typings.reactNative.reactNativeStrings.cover = this.cast("cover")
+  def repeat: typings.reactNative.reactNativeStrings.repeat = "repeat".asInstanceOf[typings.reactNative.reactNativeStrings.repeat]
   @scala.inline
-  def repeat: typings.reactNative.reactNativeStrings.repeat = this.cast("repeat")
-  @scala.inline
-  def stretch: typings.reactNative.reactNativeStrings.stretch = this.cast("stretch")
+  def stretch: typings.reactNative.reactNativeStrings.stretch = "stretch".asInstanceOf[typings.reactNative.reactNativeStrings.stretch]
 }
 

@@ -16,7 +16,6 @@ object ExcludedRule {
   @scala.inline
   def apply(Name: EntityName): ExcludedRule = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExcludedRule]
   }
 }

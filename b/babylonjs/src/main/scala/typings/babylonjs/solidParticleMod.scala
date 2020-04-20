@@ -314,7 +314,7 @@ object solidParticleMod extends js.Object {
     /**
       * Legacy support, changed quaternion to rotationQuaternion
       */
-    def quaternion(): Nullable[Quaternion] = js.native
+    def quaternion: Nullable[Quaternion] = js.native
     /**
       * Legacy support, changed quaternion to rotationQuaternion
       */
@@ -322,7 +322,7 @@ object solidParticleMod extends js.Object {
     /**
       * Legacy support, changed scale to scaling
       */
-    def scale(): Vector3 = js.native
+    def scale: Vector3 = js.native
     /**
       * Legacy support, changed scale to scaling
       */

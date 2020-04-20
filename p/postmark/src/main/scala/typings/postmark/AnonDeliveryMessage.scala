@@ -14,7 +14,6 @@ object AnonDeliveryMessage {
   @scala.inline
   def apply(DeliveryMessage: String, DestinationIP: String, DestinationServer: String): AnonDeliveryMessage = {
     val __obj = js.Dynamic.literal(DeliveryMessage = DeliveryMessage.asInstanceOf[js.Any], DestinationIP = DestinationIP.asInstanceOf[js.Any], DestinationServer = DestinationServer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDeliveryMessage]
   }
 }

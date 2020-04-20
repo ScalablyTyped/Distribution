@@ -17,7 +17,6 @@ object AccountPermissionsCollection {
   @scala.inline
   def apply(get: (String, String) => AccountPermission, list: String => AccountPermissionsListResponse): AccountPermissionsCollection = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[AccountPermissionsCollection]
   }
 }

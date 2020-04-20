@@ -23,7 +23,6 @@ object LocationsResource {
     list: AnonFilter => Request_[ListLocationsResponse]
   ): LocationsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), keyRings = keyRings.asInstanceOf[js.Any], list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[LocationsResource]
   }
 }

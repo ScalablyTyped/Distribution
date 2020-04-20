@@ -13,7 +13,6 @@ object AnonSubtype {
   @scala.inline
   def apply(subtype: DataTypeAbstract): AnonSubtype = {
     val __obj = js.Dynamic.literal(subtype = subtype.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSubtype]
   }
 }

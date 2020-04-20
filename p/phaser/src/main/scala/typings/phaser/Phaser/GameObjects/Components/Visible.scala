@@ -28,7 +28,6 @@ object Visible {
   @scala.inline
   def apply(setVisible: Boolean => Visible, visible: Boolean): Visible = {
     val __obj = js.Dynamic.literal(setVisible = js.Any.fromFunction1(setVisible), visible = visible.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Visible]
   }
 }

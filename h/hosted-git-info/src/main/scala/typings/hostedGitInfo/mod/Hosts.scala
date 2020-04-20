@@ -14,14 +14,12 @@ trait Hosts extends js.Object
 
 object Hosts {
   @scala.inline
-  def bitbucket: typings.hostedGitInfo.hostedGitInfoStrings.bitbucket = this.cast("bitbucket")
+  def bitbucket: typings.hostedGitInfo.hostedGitInfoStrings.bitbucket = "bitbucket".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.bitbucket]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def gist: typings.hostedGitInfo.hostedGitInfoStrings.gist = "gist".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.gist]
   @scala.inline
-  def gist: typings.hostedGitInfo.hostedGitInfoStrings.gist = this.cast("gist")
+  def github: typings.hostedGitInfo.hostedGitInfoStrings.github = "github".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.github]
   @scala.inline
-  def github: typings.hostedGitInfo.hostedGitInfoStrings.github = this.cast("github")
-  @scala.inline
-  def gitlab: typings.hostedGitInfo.hostedGitInfoStrings.gitlab = this.cast("gitlab")
+  def gitlab: typings.hostedGitInfo.hostedGitInfoStrings.gitlab = "gitlab".asInstanceOf[typings.hostedGitInfo.hostedGitInfoStrings.gitlab]
 }
 

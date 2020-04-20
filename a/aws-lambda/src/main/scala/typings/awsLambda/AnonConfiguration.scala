@@ -12,7 +12,6 @@ object AnonConfiguration {
   @scala.inline
   def apply(configuration: AnonFunctionName): AnonConfiguration = {
     val __obj = js.Dynamic.literal(configuration = configuration.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonConfiguration]
   }
 }

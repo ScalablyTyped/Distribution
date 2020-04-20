@@ -17,7 +17,6 @@ object BucketObjectLockConfigurationRule {
   @scala.inline
   def apply(defaultRetention: Input[BucketObjectLockConfigurationRuleDefaultRetention]): BucketObjectLockConfigurationRule = {
     val __obj = js.Dynamic.literal(defaultRetention = defaultRetention.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BucketObjectLockConfigurationRule]
   }
 }

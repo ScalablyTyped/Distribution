@@ -23,7 +23,6 @@ object EventObject {
     slide: Double
   ): EventObject = {
     val __obj = js.Dynamic.literal(isNextSlideDisabled = isNextSlideDisabled.asInstanceOf[js.Any], isPrevSlideDisabled = isPrevSlideDisabled.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemsInSlide = itemsInSlide.asInstanceOf[js.Any], slide = slide.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventObject]
   }
 }

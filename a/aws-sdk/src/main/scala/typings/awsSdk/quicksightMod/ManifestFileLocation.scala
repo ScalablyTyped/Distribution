@@ -20,7 +20,6 @@ object ManifestFileLocation {
   @scala.inline
   def apply(Bucket: S3Bucket, Key: S3Key): ManifestFileLocation = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ManifestFileLocation]
   }
 }

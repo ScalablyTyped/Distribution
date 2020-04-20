@@ -14,14 +14,12 @@ trait Platform extends js.Object
 
 object Platform {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def darwin: typings.fridaGum.fridaGumStrings.darwin = "darwin".asInstanceOf[typings.fridaGum.fridaGumStrings.darwin]
   @scala.inline
-  def darwin: typings.fridaGum.fridaGumStrings.darwin = this.cast("darwin")
+  def linux: typings.fridaGum.fridaGumStrings.linux = "linux".asInstanceOf[typings.fridaGum.fridaGumStrings.linux]
   @scala.inline
-  def linux: typings.fridaGum.fridaGumStrings.linux = this.cast("linux")
+  def qnx: typings.fridaGum.fridaGumStrings.qnx = "qnx".asInstanceOf[typings.fridaGum.fridaGumStrings.qnx]
   @scala.inline
-  def qnx: typings.fridaGum.fridaGumStrings.qnx = this.cast("qnx")
-  @scala.inline
-  def windows: typings.fridaGum.fridaGumStrings.windows = this.cast("windows")
+  def windows: typings.fridaGum.fridaGumStrings.windows = "windows".asInstanceOf[typings.fridaGum.fridaGumStrings.windows]
 }
 

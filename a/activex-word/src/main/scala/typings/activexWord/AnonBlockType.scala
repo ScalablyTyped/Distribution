@@ -17,7 +17,6 @@ object AnonBlockType {
   @scala.inline
   def apply(BlockType: String, Category: String, Name: String, Range: Range, Template: String): AnonBlockType = {
     val __obj = js.Dynamic.literal(BlockType = BlockType.asInstanceOf[js.Any], Category = Category.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Range = Range.asInstanceOf[js.Any], Template = Template.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBlockType]
   }
 }

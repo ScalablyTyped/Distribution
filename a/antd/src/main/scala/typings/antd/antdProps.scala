@@ -50,7 +50,7 @@ trait antdProps {
   def BadgeProps: typings.antd.badgeMod.BadgeProps.type = typings.antd.badgeMod.BadgeProps
   type BadgeProps = typings.antd.badgeMod.BadgeProps
   @scala.inline
-  def BaseProps: InternalBlockProps.type = typings.antd.baseMod.InternalBlockProps
+  def BaseProps: InternalBlockProps.type = InternalBlockProps
   type BaseProps = InternalBlockProps
   @scala.inline
   def BreadcrumbProps: typings.antd.breadcrumbBreadcrumbMod.BreadcrumbProps.type = typings.antd.breadcrumbBreadcrumbMod.BreadcrumbProps
@@ -95,7 +95,7 @@ trait antdProps {
   def CircleProps: typings.antd.circleMod.CircleProps.type = typings.antd.circleMod.CircleProps
   type CircleProps = typings.antd.circleMod.CircleProps
   @scala.inline
-  def ClearableLabeledInputProps: ClearableInputProps.type = typings.antd.clearableLabeledInputMod.ClearableInputProps
+  def ClearableLabeledInputProps: ClearableInputProps.type = ClearableInputProps
   type ClearableLabeledInputProps = ClearableInputProps
   @scala.inline
   def ColProps: typings.antd.gridColMod.ColProps.type = typings.antd.gridColMod.ColProps
@@ -120,22 +120,22 @@ trait antdProps {
   def CountdownProps: typings.antd.countdownMod.CountdownProps.type = typings.antd.countdownMod.CountdownProps
   type CountdownProps = typings.antd.countdownMod.CountdownProps
   @scala.inline
-  def DatePickerProps: PickerProps.type = typings.antd.generatePickerMod.PickerProps
+  def DatePickerProps: PickerProps.type = PickerProps
   type DatePickerProps[DateType] = PickerProps[DateType]
   @scala.inline
-  def DatePickerMonthPickerProps: PickPickPickerDatePropsMo.type = typings.antd.PickPickPickerDatePropsMo
+  def DatePickerMonthPickerProps: PickPickPickerDatePropsMo.type = PickPickPickerDatePropsMo
   type DatePickerMonthPickerProps = PickPickPickerDatePropsMo
   @scala.inline
   def DatePickerRangePickerProps: typings.antd.generatePickerMod.RangePickerProps.type = typings.antd.generatePickerMod.RangePickerProps
   type DatePickerRangePickerProps[DateType] = typings.antd.generatePickerMod.RangePickerProps[DateType]
   @scala.inline
-  def DatePickerTimePickerProps: PickPickPickerTimePropsMo.type = typings.antd.PickPickPickerTimePropsMo
+  def DatePickerTimePickerProps: PickPickPickerTimePropsMo.type = PickPickPickerTimePropsMo
   type DatePickerTimePickerProps = PickPickPickerTimePropsMo
   @scala.inline
-  def DatePickerWeekPickerProps: PickPickPickerDatePropsMo.type = typings.antd.PickPickPickerDatePropsMo
+  def DatePickerWeekPickerProps: PickPickPickerDatePropsMo.type = PickPickPickerDatePropsMo
   type DatePickerWeekPickerProps = PickPickPickerDatePropsMo
   @scala.inline
-  def DatePickerYearPickerProps: PickPickPickerDatePropsMo.type = typings.antd.PickPickPickerDatePropsMo
+  def DatePickerYearPickerProps: PickPickPickerDatePropsMo.type = PickPickPickerDatePropsMo
   type DatePickerYearPickerProps = PickPickPickerDatePropsMo
   @scala.inline
   def DefaultProps: typings.antd.modalModalMod.ModalProps.type = typings.antd.modalModalMod.ModalProps
@@ -159,7 +159,7 @@ trait antdProps {
   def DrawerProps: typings.antd.drawerMod.DrawerProps.type = typings.antd.drawerMod.DrawerProps
   type DrawerProps = typings.antd.drawerMod.DrawerProps
   @scala.inline
-  def DropdownProps: DropDownProps.type = typings.antd.dropdownDropdownMod.DropDownProps
+  def DropdownProps: DropDownProps.type = DropDownProps
   type DropdownProps = DropDownProps
   @scala.inline
   def DropdownButtonProps: typings.antd.dropdownButtonMod.DropdownButtonProps.type = typings.antd.dropdownButtonMod.DropdownButtonProps
@@ -168,7 +168,7 @@ trait antdProps {
   def EditableProps: typings.antd.editableMod.EditableProps.type = typings.antd.editableMod.EditableProps
   type EditableProps = typings.antd.editableMod.EditableProps
   @scala.inline
-  def ElementProps: SkeletonElementProps.type = typings.antd.elementMod.SkeletonElementProps
+  def ElementProps: SkeletonElementProps.type = SkeletonElementProps
   type ElementProps = SkeletonElementProps
   @scala.inline
   def EmptyProps: typings.antd.emptyMod.EmptyProps.type = typings.antd.emptyMod.EmptyProps
@@ -180,13 +180,13 @@ trait antdProps {
   def FilterDropdownProps: typings.antd.filterDropdownMod.FilterDropdownProps.type = typings.antd.filterDropdownMod.FilterDropdownProps
   type FilterDropdownProps[RecordType] = typings.antd.filterDropdownMod.FilterDropdownProps[RecordType]
   @scala.inline
-  def FilterWrapperProps: FilterDropdownMenuWrapperProps.type = typings.antd.filterWrapperMod.FilterDropdownMenuWrapperProps
+  def FilterWrapperProps: FilterDropdownMenuWrapperProps.type = FilterDropdownMenuWrapperProps
   type FilterWrapperProps = FilterDropdownMenuWrapperProps
   @scala.inline
   def FormItemProps: typings.antd.formItemMod.FormItemProps.type = typings.antd.formItemMod.FormItemProps
   type FormItemProps = typings.antd.formItemMod.FormItemProps
   @scala.inline
-  def FormItemLabelProps: FormItemLabelPropsrequire.type = typings.antd.FormItemLabelPropsrequire
+  def FormItemLabelProps: FormItemLabelPropsrequire.type = FormItemLabelPropsrequire
   type FormItemLabelProps = FormItemLabelPropsrequire
   @scala.inline
   def FormListProps: typings.antd.formListMod.FormListProps.type = typings.antd.formListMod.FormListProps
@@ -201,8 +201,20 @@ trait antdProps {
   def GroupProps: typings.antd.inputGroupMod.GroupProps.type = typings.antd.inputGroupMod.GroupProps
   type GroupProps = typings.antd.inputGroupMod.GroupProps
   @scala.inline
-  def HeaderProps: CalendarHeaderProps.type = typings.antd.headerMod.CalendarHeaderProps
+  def HeaderProps: CalendarHeaderProps.type = CalendarHeaderProps
   type HeaderProps[DateType] = CalendarHeaderProps[DateType]
+  @scala.inline
+  def IconMapErrorProps: PickAntdIconPropschildren.type = PickAntdIconPropschildren
+  type IconMapErrorProps = PickAntdIconPropschildren
+  @scala.inline
+  def IconMapInfoProps: PickAntdIconPropschildren.type = PickAntdIconPropschildren
+  type IconMapInfoProps = PickAntdIconPropschildren
+  @scala.inline
+  def IconMapSuccessProps: PickAntdIconPropschildren.type = PickAntdIconPropschildren
+  type IconMapSuccessProps = PickAntdIconPropschildren
+  @scala.inline
+  def IconMapWarningProps: PickAntdIconPropschildren.type = PickAntdIconPropschildren
+  type IconMapWarningProps = PickAntdIconPropschildren
   @scala.inline
   def InputProps: typings.antd.inputInputMod.InputProps.type = typings.antd.inputInputMod.InputProps
   type InputProps = typings.antd.inputInputMod.InputProps
@@ -216,22 +228,22 @@ trait antdProps {
   def ItemProps: typings.antd.listItemMod.ListItemProps.type = typings.antd.listItemMod.ListItemProps
   type ItemProps = typings.antd.listItemMod.ListItemProps
   @scala.inline
-  def ItemMetaProps: ListItemMetaProps.type = typings.antd.listItemMod.ListItemMetaProps
+  def ItemMetaProps: ListItemMetaProps.type = ListItemMetaProps
   type ItemMetaProps = /* props */ ListItemMetaProps
   @scala.inline
-  def LayoutProps: BasicProps.type = typings.antd.layoutLayoutMod.BasicProps
+  def LayoutProps: BasicProps.type = BasicProps
   type LayoutProps = BasicProps
   @scala.inline
-  def LayoutContentProps: BasicProps.type = typings.antd.layoutLayoutMod.BasicProps
+  def LayoutContentProps: BasicProps.type = BasicProps
   type LayoutContentProps = BasicProps
   @scala.inline
-  def LayoutFooterProps: BasicProps.type = typings.antd.layoutLayoutMod.BasicProps
+  def LayoutFooterProps: BasicProps.type = BasicProps
   type LayoutFooterProps = BasicProps
   @scala.inline
-  def LayoutHeaderProps: BasicProps.type = typings.antd.layoutLayoutMod.BasicProps
+  def LayoutHeaderProps: BasicProps.type = BasicProps
   type LayoutHeaderProps = BasicProps
   @scala.inline
-  def LayoutSiderProps: SiderProps.type = typings.antd.siderMod.SiderProps
+  def LayoutSiderProps: SiderProps.type = SiderProps
   type LayoutSiderProps = SiderProps
   @scala.inline
   def LineProps: typings.antd.lineMod.LineProps.type = typings.antd.lineMod.LineProps
@@ -241,11 +253,14 @@ trait antdProps {
   type ListProps[T] = typings.antd.listMod.ListProps[T]
   type ListItemProps[T0, R] = js.Function1[T0, R]
   @scala.inline
+  def LoadingIconProps: typings.antd.loadingIconMod.LoadingIconProps.type = typings.antd.loadingIconMod.LoadingIconProps
+  type LoadingIconProps = typings.antd.loadingIconMod.LoadingIconProps
+  @scala.inline
   def LocaleProviderProps: typings.antd.localeProviderMod.LocaleProviderProps.type = typings.antd.localeProviderMod.LocaleProviderProps
   type LocaleProviderProps = typings.antd.localeProviderMod.LocaleProviderProps
   type LocaleReceiverProps = typings.antd.localeReceiverMod.LocaleReceiverProps
   @scala.inline
-  def MentionsProps: MentionProps.type = typings.antd.mentionsMod.MentionProps
+  def MentionsProps: MentionProps.type = MentionProps
   type MentionsProps = MentionProps
   type MentionsOptionProps = typings.rcMentions.optionMod.OptionProps
   @scala.inline
@@ -262,7 +277,7 @@ trait antdProps {
   def ModalProps: typings.antd.modalModalMod.ModalProps.type = typings.antd.modalModalMod.ModalProps
   type ModalProps = typings.antd.modalModalMod.ModalProps
   @scala.inline
-  def MonthPickerProps: PickPickPickerDatePropsMo.type = typings.antd.PickPickPickerDatePropsMo
+  def MonthPickerProps: PickPickPickerDatePropsMo.type = PickPickPickerDatePropsMo
   type MonthPickerProps = PickPickPickerDatePropsMo
   @scala.inline
   def NumberProps: typings.antd.numberMod.NumberProps.type = typings.antd.numberMod.NumberProps
@@ -278,7 +293,7 @@ trait antdProps {
   def PaginationProps: typings.antd.paginationPaginationMod.PaginationProps.type = typings.antd.paginationPaginationMod.PaginationProps
   type PaginationProps = typings.antd.paginationPaginationMod.PaginationProps
   @scala.inline
-  def ParagraphProps: BlockProps.type = typings.antd.baseMod.BlockProps
+  def ParagraphProps: BlockProps.type = BlockProps
   type ParagraphProps = typings.antd.typographyParagraphMod.ParagraphProps
   @scala.inline
   def PasswordProps: typings.antd.passwordMod.PasswordProps.type = typings.antd.passwordMod.PasswordProps
@@ -293,7 +308,7 @@ trait antdProps {
   def ProgressProps: typings.antd.progressProgressMod.ProgressProps.type = typings.antd.progressProgressMod.ProgressProps
   type ProgressProps = typings.antd.progressProgressMod.ProgressProps
   @scala.inline
-  def RadioProps: AbstractCheckboxProps.type = typings.antd.checkboxCheckboxMod.AbstractCheckboxProps
+  def RadioProps: AbstractCheckboxProps.type = AbstractCheckboxProps
   type RadioProps = typings.antd.radioInterfaceMod.RadioProps
   type RadioGroupContextProviderProps[T] = ProviderProps[T]
   @scala.inline
@@ -303,7 +318,7 @@ trait antdProps {
   def RateProps: typings.antd.rateMod.RateProps.type = typings.antd.rateMod.RateProps
   type RateProps = typings.antd.rateMod.RateProps
   @scala.inline
-  def RenderListBodyProps: TransferListBodyProps.type = typings.antd.renderListBodyMod.TransferListBodyProps
+  def RenderListBodyProps: TransferListBodyProps.type = TransferListBodyProps
   type RenderListBodyProps = TransferListBodyProps
   @scala.inline
   def ResizableTextAreaProps: typings.antd.textAreaMod.TextAreaProps.type = typings.antd.textAreaMod.TextAreaProps
@@ -324,7 +339,7 @@ trait antdProps {
   def SelectProps: typings.antd.selectMod.SelectProps.type = typings.antd.selectMod.SelectProps
   type SelectProps[VT] = typings.antd.selectMod.SelectProps[VT]
   @scala.inline
-  def SizeContextProviderProps: SizeContextProps.type = typings.antd.sizeContextMod.SizeContextProps
+  def SizeContextProviderProps: SizeContextProps.type = SizeContextProps
   type SizeContextProviderProps = SizeContextProps
   @scala.inline
   def SkeletonProps: typings.antd.skeletonSkeletonMod.SkeletonProps.type = typings.antd.skeletonSkeletonMod.SkeletonProps
@@ -343,7 +358,7 @@ trait antdProps {
   def StepsProps: typings.antd.libStepsMod.StepsProps.type = typings.antd.libStepsMod.StepsProps
   type StepsProps = typings.antd.libStepsMod.StepsProps
   @scala.inline
-  def StepsStepProps: StepProps.type = typings.antd.libStepsMod.StepProps
+  def StepsStepProps: StepProps.type = StepProps
   type StepsStepProps = StepProps
   @scala.inline
   def SubMenuProps: typings.antd.subMenuMod.SubMenuProps.type = typings.antd.subMenuMod.SubMenuProps
@@ -376,13 +391,13 @@ trait antdProps {
   def TextAreaProps: typings.antd.textAreaMod.TextAreaProps.type = typings.antd.textAreaMod.TextAreaProps
   type TextAreaProps = typings.antd.textAreaMod.TextAreaProps
   @scala.inline
-  def TimePickerProps: PickPickPickerTimePropsMo.type = typings.antd.PickPickPickerTimePropsMo
+  def TimePickerProps: PickPickPickerTimePropsMo.type = PickPickPickerTimePropsMo
   type TimePickerProps = PickPickPickerTimePropsMo
   @scala.inline
   def TimelineProps: typings.antd.timelineTimelineMod.TimelineProps.type = typings.antd.timelineTimelineMod.TimelineProps
   type TimelineProps = typings.antd.timelineTimelineMod.TimelineProps
   @scala.inline
-  def TimelineItemProps: TimeLineItemProps.type = typings.antd.timelineItemMod.TimeLineItemProps
+  def TimelineItemProps: TimeLineItemProps.type = TimeLineItemProps
   type TimelineItemProps = TimeLineItemProps
   @scala.inline
   def TitleProps: typings.antd.typographyTitleMod.TitleProps.type = typings.antd.typographyTitleMod.TitleProps
@@ -413,18 +428,18 @@ trait antdProps {
   type TypographyProps = typings.antd.typographyTypographyMod.TypographyProps
   @scala.inline
   def UploadProps: typings.antd.uploadInterfaceMod.UploadProps.type = typings.antd.uploadInterfaceMod.UploadProps
-  type UploadProps = typings.antd.uploadInterfaceMod.UploadProps
+  type UploadProps[T] = typings.antd.uploadInterfaceMod.UploadProps[T]
   @scala.inline
   def UploadListProps: typings.antd.uploadInterfaceMod.UploadListProps.type = typings.antd.uploadInterfaceMod.UploadListProps
-  type UploadListProps = typings.antd.uploadInterfaceMod.UploadListProps
+  type UploadListProps[T] = typings.antd.uploadInterfaceMod.UploadListProps[T]
   @scala.inline
-  def WaveProps: AnonInsertExtraNode.type = typings.antd.AnonInsertExtraNode
+  def WaveProps: AnonInsertExtraNode.type = AnonInsertExtraNode
   type WaveProps = AnonInsertExtraNode
   @scala.inline
-  def WeekPickerProps: PickPickPickerDatePropsMo.type = typings.antd.PickPickPickerDatePropsMo
+  def WeekPickerProps: PickPickPickerDatePropsMo.type = PickPickPickerDatePropsMo
   type WeekPickerProps = PickPickPickerDatePropsMo
   @scala.inline
-  def YearPickerProps: PickPickPickerDatePropsMo.type = typings.antd.PickPickPickerDatePropsMo
+  def YearPickerProps: PickPickPickerDatePropsMo.type = PickPickPickerDatePropsMo
   type YearPickerProps = PickPickPickerDatePropsMo
 }
 

@@ -14,7 +14,6 @@ object ApiPreviewProps {
   @scala.inline
   def apply(previewModeEncryptionKey: String, previewModeId: String, previewModeSigningKey: String): ApiPreviewProps = {
     val __obj = js.Dynamic.literal(previewModeEncryptionKey = previewModeEncryptionKey.asInstanceOf[js.Any], previewModeId = previewModeId.asInstanceOf[js.Any], previewModeSigningKey = previewModeSigningKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ApiPreviewProps]
   }
 }

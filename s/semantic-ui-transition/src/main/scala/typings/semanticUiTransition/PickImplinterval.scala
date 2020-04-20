@@ -13,7 +13,6 @@ object PickImplinterval {
   @scala.inline
   def apply(interval: Double): PickImplinterval = {
     val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplinterval]
   }
 }

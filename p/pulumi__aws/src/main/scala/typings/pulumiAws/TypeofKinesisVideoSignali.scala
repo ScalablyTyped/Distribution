@@ -13,7 +13,6 @@ object TypeofKinesisVideoSignali {
   @scala.inline
   def apply(Types: TypeofKinesisVideoSignali): TypeofKinesisVideoSignali = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofKinesisVideoSignali]
   }
 }

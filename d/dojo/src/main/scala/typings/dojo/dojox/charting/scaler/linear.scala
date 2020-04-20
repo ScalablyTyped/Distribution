@@ -47,7 +47,6 @@ object linear {
     getTransformerFromPlot: js.Object => js.Function
   ): linear = {
     val __obj = js.Dynamic.literal(buildScaler = js.Any.fromFunction6(buildScaler), buildTicks = js.Any.fromFunction2(buildTicks), getTransformerFromModel = js.Any.fromFunction1(getTransformerFromModel), getTransformerFromPlot = js.Any.fromFunction1(getTransformerFromPlot))
-  
     __obj.asInstanceOf[linear]
   }
 }

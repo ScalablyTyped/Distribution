@@ -13,7 +13,6 @@ object DefineIndexFieldResponse {
   @scala.inline
   def apply(IndexField: IndexFieldStatus): DefineIndexFieldResponse = {
     val __obj = js.Dynamic.literal(IndexField = IndexField.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DefineIndexFieldResponse]
   }
 }

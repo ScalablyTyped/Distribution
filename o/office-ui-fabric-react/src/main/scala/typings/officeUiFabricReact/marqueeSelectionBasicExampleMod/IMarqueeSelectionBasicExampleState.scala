@@ -12,7 +12,6 @@ object IMarqueeSelectionBasicExampleState {
   @scala.inline
   def apply(isMarqueeEnabled: Boolean): IMarqueeSelectionBasicExampleState = {
     val __obj = js.Dynamic.literal(isMarqueeEnabled = isMarqueeEnabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMarqueeSelectionBasicExampleState]
   }
 }

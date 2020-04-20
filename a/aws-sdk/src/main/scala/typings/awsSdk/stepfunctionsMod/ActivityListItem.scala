@@ -24,7 +24,6 @@ object ActivityListItem {
   @scala.inline
   def apply(activityArn: Arn, creationDate: Timestamp, name: Name): ActivityListItem = {
     val __obj = js.Dynamic.literal(activityArn = activityArn.asInstanceOf[js.Any], creationDate = creationDate.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ActivityListItem]
   }
 }

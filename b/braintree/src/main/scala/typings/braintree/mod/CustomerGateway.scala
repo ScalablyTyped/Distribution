@@ -23,7 +23,6 @@ object CustomerGateway {
     update: (String, CustomerUpdateRequest) => js.Promise[ValidatedResponse[Customer]]
   ): CustomerGateway = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), find = js.Any.fromFunction1(find), search = js.Any.fromFunction1(search), update = js.Any.fromFunction2(update))
-  
     __obj.asInstanceOf[CustomerGateway]
   }
 }

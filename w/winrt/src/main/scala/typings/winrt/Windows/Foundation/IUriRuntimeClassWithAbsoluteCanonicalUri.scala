@@ -13,7 +13,6 @@ object IUriRuntimeClassWithAbsoluteCanonicalUri {
   @scala.inline
   def apply(absoluteCanonicalUri: String, displayIri: String): IUriRuntimeClassWithAbsoluteCanonicalUri = {
     val __obj = js.Dynamic.literal(absoluteCanonicalUri = absoluteCanonicalUri.asInstanceOf[js.Any], displayIri = displayIri.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IUriRuntimeClassWithAbsoluteCanonicalUri]
   }
 }

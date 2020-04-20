@@ -49,7 +49,6 @@ object IServerConnector {
     sendData: Invoke => Unit
   ): IServerConnector = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), connect = js.Any.fromFunction2(connect), isConnected = js.Any.fromFunction0(isConnected), onClose = onClose.asInstanceOf[js.Any], onConnect = onConnect.asInstanceOf[js.Any], replyData = js.Any.fromFunction1(replyData), sendData = js.Any.fromFunction1(sendData))
-  
     __obj.asInstanceOf[IServerConnector]
   }
 }

@@ -25,7 +25,6 @@ object IDataProtectionProvider {
     unprotectStreamAsync: (IInputStream, IOutputStream) => IAsyncAction
   ): IDataProtectionProvider = {
     val __obj = js.Dynamic.literal(protectAsync = js.Any.fromFunction1(protectAsync), protectStreamAsync = js.Any.fromFunction2(protectStreamAsync), unprotectAsync = js.Any.fromFunction1(unprotectAsync), unprotectStreamAsync = js.Any.fromFunction2(unprotectStreamAsync))
-  
     __obj.asInstanceOf[IDataProtectionProvider]
   }
 }

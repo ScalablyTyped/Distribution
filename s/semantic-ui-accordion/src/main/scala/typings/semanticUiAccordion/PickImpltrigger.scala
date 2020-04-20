@@ -13,7 +13,6 @@ object PickImpltrigger {
   @scala.inline
   def apply(trigger: String): PickImpltrigger = {
     val __obj = js.Dynamic.literal(trigger = trigger.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpltrigger]
   }
 }

@@ -14,7 +14,6 @@ object Token {
   @scala.inline
   def apply(accessToken: String, expires: Double, user: String): Token = {
     val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], expires = expires.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Token]
   }
 }

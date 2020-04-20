@@ -12,10 +12,8 @@ trait ExportStateType extends js.Object
 
 object ExportStateType {
   @scala.inline
-  def A: typings.qlikEngineapi.qlikEngineapiStrings.A = this.cast("A")
+  def A: typings.qlikEngineapi.qlikEngineapiStrings.A = "A".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.A]
   @scala.inline
-  def P: typings.qlikEngineapi.qlikEngineapiStrings.P = this.cast("P")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def P: typings.qlikEngineapi.qlikEngineapiStrings.P = "P".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.P]
 }
 

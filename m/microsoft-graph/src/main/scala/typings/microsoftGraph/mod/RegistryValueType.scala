@@ -25,32 +25,30 @@ trait RegistryValueType extends js.Object
 
 object RegistryValueType {
   @scala.inline
-  def binary: typings.microsoftGraph.microsoftGraphStrings.binary = this.cast("binary")
+  def binary: typings.microsoftGraph.microsoftGraphStrings.binary = "binary".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.binary]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dword: typings.microsoftGraph.microsoftGraphStrings.dword = "dword".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.dword]
   @scala.inline
-  def dword: typings.microsoftGraph.microsoftGraphStrings.dword = this.cast("dword")
+  def dwordBigEndian: typings.microsoftGraph.microsoftGraphStrings.dwordBigEndian = "dwordBigEndian".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.dwordBigEndian]
   @scala.inline
-  def dwordBigEndian: typings.microsoftGraph.microsoftGraphStrings.dwordBigEndian = this.cast("dwordBigEndian")
+  def dwordLittleEndian: typings.microsoftGraph.microsoftGraphStrings.dwordLittleEndian = "dwordLittleEndian".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.dwordLittleEndian]
   @scala.inline
-  def dwordLittleEndian: typings.microsoftGraph.microsoftGraphStrings.dwordLittleEndian = this.cast("dwordLittleEndian")
+  def expandSz: typings.microsoftGraph.microsoftGraphStrings.expandSz = "expandSz".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.expandSz]
   @scala.inline
-  def expandSz: typings.microsoftGraph.microsoftGraphStrings.expandSz = this.cast("expandSz")
+  def link: typings.microsoftGraph.microsoftGraphStrings.link = "link".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.link]
   @scala.inline
-  def link: typings.microsoftGraph.microsoftGraphStrings.link = this.cast("link")
+  def multiSz: typings.microsoftGraph.microsoftGraphStrings.multiSz = "multiSz".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.multiSz]
   @scala.inline
-  def multiSz: typings.microsoftGraph.microsoftGraphStrings.multiSz = this.cast("multiSz")
+  def none: none_ = "none".asInstanceOf[none_]
   @scala.inline
-  def none: none_ = this.cast("none")
+  def qword: typings.microsoftGraph.microsoftGraphStrings.qword = "qword".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.qword]
   @scala.inline
-  def qword: typings.microsoftGraph.microsoftGraphStrings.qword = this.cast("qword")
+  def qwordlittleEndian: typings.microsoftGraph.microsoftGraphStrings.qwordlittleEndian = "qwordlittleEndian".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.qwordlittleEndian]
   @scala.inline
-  def qwordlittleEndian: typings.microsoftGraph.microsoftGraphStrings.qwordlittleEndian = this.cast("qwordlittleEndian")
+  def sz: typings.microsoftGraph.microsoftGraphStrings.sz = "sz".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sz]
   @scala.inline
-  def sz: typings.microsoftGraph.microsoftGraphStrings.sz = this.cast("sz")
+  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = this.cast("unknownFutureValue")
+  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }
 

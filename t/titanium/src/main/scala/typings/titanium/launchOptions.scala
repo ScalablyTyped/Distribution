@@ -18,20 +18,20 @@ trait launchOptions extends js.Object {
   	 * This key indicates that the application was launched by another
   	 * application with the specified bundle ID.
   	 */
-  var source: js.UndefOr[String] = js.undefined
+  var source: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * This key indicates that the application was launched in order to open
   	 * the specified URL.
   	 */
-  var url: js.UndefOr[String] = js.undefined
+  var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object launchOptions {
   @scala.inline
   def apply(
     launchOptionsLocationKey: js.UndefOr[Boolean] = js.undefined,
-    source: String = null,
-    url: String = null
+    source: java.lang.String = null,
+    url: java.lang.String = null
   ): launchOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(launchOptionsLocationKey)) __obj.updateDynamic("launchOptionsLocationKey")(launchOptionsLocationKey.asInstanceOf[js.Any])

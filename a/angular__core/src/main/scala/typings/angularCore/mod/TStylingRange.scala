@@ -40,7 +40,6 @@ object TStylingRange {
   @scala.inline
   def apply(__brand__ : typings.angularCore.angularCoreStrings.TStylingRange): TStylingRange = {
     val __obj = js.Dynamic.literal(__brand__ = __brand__.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TStylingRange]
   }
 }

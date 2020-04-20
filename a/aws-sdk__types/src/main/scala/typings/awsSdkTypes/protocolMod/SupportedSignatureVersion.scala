@@ -15,16 +15,14 @@ trait SupportedSignatureVersion extends js.Object
 
 object SupportedSignatureVersion {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def none: typings.awsSdkTypes.awsSdkTypesStrings.none = "none".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.none]
   @scala.inline
-  def none: typings.awsSdkTypes.awsSdkTypesStrings.none = this.cast("none")
+  def s3: typings.awsSdkTypes.awsSdkTypesStrings.s3 = "s3".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.s3]
   @scala.inline
-  def s3: typings.awsSdkTypes.awsSdkTypesStrings.s3 = this.cast("s3")
+  def s3v4: typings.awsSdkTypes.awsSdkTypesStrings.s3v4 = "s3v4".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.s3v4]
   @scala.inline
-  def s3v4: typings.awsSdkTypes.awsSdkTypesStrings.s3v4 = this.cast("s3v4")
+  def v4: typings.awsSdkTypes.awsSdkTypesStrings.v4 = "v4".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.v4]
   @scala.inline
-  def v4: typings.awsSdkTypes.awsSdkTypesStrings.v4 = this.cast("v4")
-  @scala.inline
-  def `v4-unsigned-body`: typings.awsSdkTypes.awsSdkTypesStrings.`v4-unsigned-body` = this.cast("v4-unsigned-body")
+  def `v4-unsigned-body`: typings.awsSdkTypes.awsSdkTypesStrings.`v4-unsigned-body` = "v4-unsigned-body".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.`v4-unsigned-body`]
 }
 

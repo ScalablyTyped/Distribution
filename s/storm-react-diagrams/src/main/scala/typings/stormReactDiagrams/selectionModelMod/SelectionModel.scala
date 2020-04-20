@@ -22,7 +22,6 @@ object SelectionModel {
     model: BaseModel[BaseEntity[BaseListener[_]], BaseModelListener]
   ): SelectionModel = {
     val __obj = js.Dynamic.literal(initialX = initialX.asInstanceOf[js.Any], initialY = initialY.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SelectionModel]
   }
 }

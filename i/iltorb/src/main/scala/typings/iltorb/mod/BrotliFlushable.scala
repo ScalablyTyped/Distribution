@@ -12,7 +12,6 @@ object BrotliFlushable {
   @scala.inline
   def apply(flush: () => Unit): BrotliFlushable = {
     val __obj = js.Dynamic.literal(flush = js.Any.fromFunction0(flush))
-  
     __obj.asInstanceOf[BrotliFlushable]
   }
 }

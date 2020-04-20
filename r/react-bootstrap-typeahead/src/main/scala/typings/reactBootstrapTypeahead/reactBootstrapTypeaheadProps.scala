@@ -22,7 +22,7 @@ trait reactBootstrapTypeaheadProps {
   def ClearButtonProps: typings.reactBootstrapTypeahead.mod.ClearButtonProps.type = typings.reactBootstrapTypeahead.mod.ClearButtonProps
   type ClearButtonProps = typings.reactBootstrapTypeahead.mod.ClearButtonProps
   @scala.inline
-  def HighlighterProps: HighligherProps.type = typings.reactBootstrapTypeahead.mod.HighligherProps
+  def HighlighterProps: HighligherProps.type = HighligherProps
   type HighlighterProps = HighligherProps
   @scala.inline
   def LoaderProps: typings.reactBootstrapTypeahead.mod.LoaderProps.type = typings.reactBootstrapTypeahead.mod.LoaderProps
@@ -46,10 +46,10 @@ trait reactBootstrapTypeaheadProps {
   def TypeaheadProps: typings.reactBootstrapTypeahead.mod.TypeaheadProps.type = typings.reactBootstrapTypeahead.mod.TypeaheadProps
   type TypeaheadProps[T /* <: TypeaheadModel */] = typings.reactBootstrapTypeahead.mod.TypeaheadProps[T]
   @scala.inline
-  def TypeaheadInputMultiProps: TypeaheadMulitInputWithHocProps.type = typings.reactBootstrapTypeahead.mod.TypeaheadMulitInputWithHocProps
+  def TypeaheadInputMultiProps: TypeaheadMulitInputWithHocProps.type = TypeaheadMulitInputWithHocProps
   type TypeaheadInputMultiProps[T /* <: TypeaheadModel */] = TypeaheadMulitInputWithHocProps[T]
   @scala.inline
-  def TypeaheadInputSingleProps: TypeaheadSingleInputWithHocProps.type = typings.reactBootstrapTypeahead.mod.TypeaheadSingleInputWithHocProps
+  def TypeaheadInputSingleProps: TypeaheadSingleInputWithHocProps.type = TypeaheadSingleInputWithHocProps
   type TypeaheadInputSingleProps[T /* <: TypeaheadModel */] = TypeaheadSingleInputWithHocProps[T]
   @scala.inline
   def TypeaheadMenuProps: typings.reactBootstrapTypeahead.mod.TypeaheadMenuProps.type = typings.reactBootstrapTypeahead.mod.TypeaheadMenuProps

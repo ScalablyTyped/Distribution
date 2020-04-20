@@ -15,7 +15,6 @@ object AnonOptions {
   @scala.inline
   def apply(errors: js.Array[Diagnostic], options: TypeAcquisition): AnonOptions = {
     val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOptions]
   }
 }

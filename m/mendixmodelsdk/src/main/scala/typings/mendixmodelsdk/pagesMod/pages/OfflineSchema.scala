@@ -30,13 +30,13 @@ class OfflineSchema protected () extends Element {
   var model_FOfflineSchema: IModel = js.native
   def role(): js.Any = js.native
   def role(newValue: IUserRole): js.Any = js.native
-  def roleQualifiedName(): String | Null = js.native
+  def roleQualifiedName: String | Null = js.native
   @JSName("role")
-  def role_Union(): IUserRole | Null = js.native
+  def role_Union: IUserRole | Null = js.native
   /**
     * In version 6.4.0: introduced
     */
-  def tables(): IList[String] = js.native
+  def tables: IList[String] = js.native
 }
 
 /* static members */

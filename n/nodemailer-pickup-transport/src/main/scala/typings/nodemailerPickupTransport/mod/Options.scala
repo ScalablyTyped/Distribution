@@ -12,7 +12,6 @@ object Options {
   @scala.inline
   def apply(directory: String): Options = {
     val __obj = js.Dynamic.literal(directory = directory.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Options]
   }
 }

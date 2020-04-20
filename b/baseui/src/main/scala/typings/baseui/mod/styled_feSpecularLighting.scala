@@ -19,10 +19,16 @@ object styled_feSpecularLighting extends js.Object {
     component: feSpecularLighting,
     styledFn: js.Function1[/* props */ AnonTheme[T] with P, StyleObject]
   ): StyletronComponent[
-    (Pick[ComponentProps[feSpecularLighting], Exclude[String, AnonClassName]]) with P
+    (Pick[
+      ComponentProps[feSpecularLighting], 
+      Exclude[/* keyof react.react.ComponentProps<'feSpecularLighting'> */ String, AnonClassName]
+    ]) with P
   ] = js.native
   def apply[P /* <: js.Object */, T](component: feSpecularLighting, styledFn: StyleObject): StyletronComponent[
-    (Pick[ComponentProps[feSpecularLighting], Exclude[String, AnonClassName]]) with P
+    (Pick[
+      ComponentProps[feSpecularLighting], 
+      Exclude[/* keyof react.react.ComponentProps<'feSpecularLighting'> */ String, AnonClassName]
+    ]) with P
   ] = js.native
 }
 

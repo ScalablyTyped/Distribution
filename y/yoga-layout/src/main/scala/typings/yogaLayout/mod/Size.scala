@@ -18,7 +18,6 @@ object Size {
     width: Double
   ): Size = {
     val __obj = js.Dynamic.literal(fromJS = js.Any.fromFunction1(fromJS), height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Size]
   }
 }

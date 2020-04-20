@@ -16,7 +16,6 @@ object DeleteSAMLProviderRequest {
   @scala.inline
   def apply(SAMLProviderArn: arnType): DeleteSAMLProviderRequest = {
     val __obj = js.Dynamic.literal(SAMLProviderArn = SAMLProviderArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteSAMLProviderRequest]
   }
 }

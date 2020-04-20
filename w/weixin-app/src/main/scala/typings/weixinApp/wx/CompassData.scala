@@ -14,7 +14,6 @@ object CompassData {
   @scala.inline
   def apply(direction: Double): CompassData = {
     val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CompassData]
   }
 }

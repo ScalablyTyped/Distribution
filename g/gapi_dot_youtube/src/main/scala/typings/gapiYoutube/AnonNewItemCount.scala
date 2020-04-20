@@ -19,7 +19,6 @@ object AnonNewItemCount {
   @scala.inline
   def apply(newItemCount: Double, totalItemCount: Double): AnonNewItemCount = {
     val __obj = js.Dynamic.literal(newItemCount = newItemCount.asInstanceOf[js.Any], totalItemCount = totalItemCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonNewItemCount]
   }
 }

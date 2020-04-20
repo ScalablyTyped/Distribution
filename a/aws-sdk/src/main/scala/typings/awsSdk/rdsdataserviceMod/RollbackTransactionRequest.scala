@@ -24,7 +24,6 @@ object RollbackTransactionRequest {
   @scala.inline
   def apply(resourceArn: Arn, secretArn: Arn, transactionId: Id): RollbackTransactionRequest = {
     val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any], secretArn = secretArn.asInstanceOf[js.Any], transactionId = transactionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RollbackTransactionRequest]
   }
 }

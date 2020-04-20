@@ -16,7 +16,6 @@ object TcpRouteAction {
   @scala.inline
   def apply(weightedTargets: WeightedTargets): TcpRouteAction = {
     val __obj = js.Dynamic.literal(weightedTargets = weightedTargets.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TcpRouteAction]
   }
 }

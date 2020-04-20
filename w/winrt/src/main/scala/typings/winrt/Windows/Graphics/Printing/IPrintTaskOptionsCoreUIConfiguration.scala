@@ -13,7 +13,6 @@ object IPrintTaskOptionsCoreUIConfiguration {
   @scala.inline
   def apply(displayedOptions: IVector[String]): IPrintTaskOptionsCoreUIConfiguration = {
     val __obj = js.Dynamic.literal(displayedOptions = displayedOptions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPrintTaskOptionsCoreUIConfiguration]
   }
 }

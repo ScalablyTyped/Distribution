@@ -12,7 +12,6 @@ object IPlugin {
   @scala.inline
   def apply(init: (IGridScope, IGridInstance, js.Any) => Unit): IPlugin = {
     val __obj = js.Dynamic.literal(init = js.Any.fromFunction3(init))
-  
     __obj.asInstanceOf[IPlugin]
   }
 }

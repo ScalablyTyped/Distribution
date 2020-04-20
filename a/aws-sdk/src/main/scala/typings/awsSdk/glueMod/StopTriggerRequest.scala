@@ -16,7 +16,6 @@ object StopTriggerRequest {
   @scala.inline
   def apply(Name: NameString): StopTriggerRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopTriggerRequest]
   }
 }

@@ -20,7 +20,6 @@ object ProjectSourceVersion {
   @scala.inline
   def apply(sourceIdentifier: String, sourceVersion: String): ProjectSourceVersion = {
     val __obj = js.Dynamic.literal(sourceIdentifier = sourceIdentifier.asInstanceOf[js.Any], sourceVersion = sourceVersion.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ProjectSourceVersion]
   }
 }

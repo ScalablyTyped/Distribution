@@ -20,7 +20,6 @@ object DeleteRemediationExceptionsRequest {
   @scala.inline
   def apply(ConfigRuleName: ConfigRuleName, ResourceKeys: RemediationExceptionResourceKeys): DeleteRemediationExceptionsRequest = {
     val __obj = js.Dynamic.literal(ConfigRuleName = ConfigRuleName.asInstanceOf[js.Any], ResourceKeys = ResourceKeys.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteRemediationExceptionsRequest]
   }
 }

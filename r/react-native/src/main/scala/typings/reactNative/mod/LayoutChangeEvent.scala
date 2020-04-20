@@ -13,7 +13,6 @@ object LayoutChangeEvent {
   @scala.inline
   def apply(nativeEvent: AnonLayout): LayoutChangeEvent = {
     val __obj = js.Dynamic.literal(nativeEvent = nativeEvent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LayoutChangeEvent]
   }
 }

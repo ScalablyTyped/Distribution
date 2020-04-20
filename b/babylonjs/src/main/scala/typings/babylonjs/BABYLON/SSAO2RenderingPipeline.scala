@@ -96,12 +96,12 @@ class SSAO2RenderingPipeline protected () extends PostProcessRenderPipeline {
     */
   var totalStrength: Double = js.native
   def dispose(disableGeometryBufferRenderer: Boolean): Unit = js.native
-  def expensiveBlur(): Boolean = js.native
+  def expensiveBlur: Boolean = js.native
   /**
     * If bilateral blur should be used
     */
   def expensiveBlur(b: Boolean): js.Any = js.native
-  def samples(): Double = js.native
+  def samples: Double = js.native
   /**
     * Number of samples used for the SSAO calculations. Default value is 8
     */
@@ -109,13 +109,13 @@ class SSAO2RenderingPipeline protected () extends PostProcessRenderPipeline {
   /**
     * Gets active scene
     */
-  def scene(): Scene = js.native
+  def scene: Scene = js.native
   /**
     * Serialize the rendering pipeline (Used when exporting)
     * @returns the serialized object
     */
   def serialize(): js.Any = js.native
-  def textureSamples(): Double = js.native
+  def textureSamples: Double = js.native
   /**
     * Number of samples to use for antialiasing
     */
@@ -129,7 +129,7 @@ object SSAO2RenderingPipeline extends js.Object {
   /**
     *  Support test.
     */
-  def IsSupported(): Boolean = js.native
+  def IsSupported: Boolean = js.native
   /**
     * Parse the serialized pipeline
     * @param source Source pipeline.

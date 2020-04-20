@@ -25,7 +25,7 @@ trait antdMobileProps {
   def ActivityIndicatorProps: typings.antdMobile.activityIndicatorMod.ActivityIndicatorProps.type = typings.antdMobile.activityIndicatorMod.ActivityIndicatorProps
   type ActivityIndicatorProps = typings.antdMobile.activityIndicatorMod.ActivityIndicatorProps
   @scala.inline
-  def AgreeItemProps: AgreeItemPropsType.type = typings.antdMobile.agreeItemMod.AgreeItemPropsType
+  def AgreeItemProps: AgreeItemPropsType.type = AgreeItemPropsType
   type AgreeItemProps = AgreeItemPropsType
   @scala.inline
   def BadgeProps: typings.antdMobile.badgeMod.BadgeProps.type = typings.antdMobile.badgeMod.BadgeProps
@@ -59,17 +59,17 @@ trait antdMobileProps {
   def CheckboxItemProps: typings.antdMobile.checkboxItemMod.CheckboxItemProps.type = typings.antdMobile.checkboxItemMod.CheckboxItemProps
   type CheckboxItemProps = typings.antdMobile.checkboxItemMod.CheckboxItemProps
   @scala.inline
-  def CustomInputProps: NumberInputProps.type = typings.antdMobile.customInputMod.NumberInputProps
+  def CustomInputProps: NumberInputProps.type = NumberInputProps
   type CustomInputProps = NumberInputProps
   @scala.inline
-  def DatePickerProps: PropsType.type = typings.antdMobile.datePickerMod.PropsType
+  def DatePickerProps: PropsType.type = PropsType
   type DatePickerProps = PropsType
   @scala.inline
   def DatePickerViewProps: typings.antdMobile.datePickerViewPropsTypeMod.DatePickerProps.type = typings.antdMobile.datePickerViewPropsTypeMod.DatePickerProps
   type DatePickerViewProps = typings.antdMobile.datePickerViewPropsTypeMod.DatePickerProps
   type DefaultTabBarProps = typings.rmcTabs.defaultTabBarMod.PropsType
   @scala.inline
-  def DrawerProps: DrawerWebProps.type = typings.antdMobile.drawerPropsTypeMod.DrawerWebProps
+  def DrawerProps: DrawerWebProps.type = DrawerWebProps
   type DrawerProps = DrawerWebProps
   @scala.inline
   def FlexProps: typings.antdMobile.flexFlexMod.FlexProps.type = typings.antdMobile.flexFlexMod.FlexProps
@@ -84,7 +84,7 @@ trait antdMobileProps {
   def IconProps: typings.antdMobile.iconMod.IconProps.type = typings.antdMobile.iconMod.IconProps
   type IconProps = typings.antdMobile.iconMod.IconProps
   @scala.inline
-  def ImagePickerProps: ImagePickerPropTypes.type = typings.antdMobile.imagePickerMod.ImagePickerPropTypes
+  def ImagePickerProps: ImagePickerPropTypes.type = ImagePickerPropTypes
   type ImagePickerProps = ImagePickerPropTypes
   type IndexedProps = MIndexedListProps
   @scala.inline
@@ -94,7 +94,7 @@ trait antdMobileProps {
   def InputItemProps: typings.antdMobile.inputItemMod.InputItemProps.type = typings.antdMobile.inputItemMod.InputItemProps
   type InputItemProps = typings.antdMobile.inputItemMod.InputItemProps
   @scala.inline
-  def ItemProps: PopoverItemProps.type = typings.antdMobile.itemMod.PopoverItemProps
+  def ItemProps: PopoverItemProps.type = PopoverItemProps
   type ItemProps = PopoverItemProps
   @scala.inline
   def KeyboardItemProps: typings.antdMobile.customKeyboardMod.KeyboardItemProps.type = typings.antdMobile.customKeyboardMod.KeyboardItemProps
@@ -122,19 +122,19 @@ trait antdMobileProps {
   def NavBarProps: typings.antdMobile.navBarPropsTypeMod.NavBarProps.type = typings.antdMobile.navBarPropsTypeMod.NavBarProps
   type NavBarProps = typings.antdMobile.navBarPropsTypeMod.NavBarProps
   @scala.inline
-  def NoticeBarProps: NoticeWebProps.type = typings.antdMobile.noticeBarMod.NoticeWebProps
+  def NoticeBarProps: NoticeWebProps.type = NoticeWebProps
   type NoticeBarProps = NoticeWebProps
   @scala.inline
   def PaginationProps: typings.antdMobile.paginationMod.PaginationProps.type = typings.antdMobile.paginationMod.PaginationProps
   type PaginationProps = typings.antdMobile.paginationMod.PaginationProps
   @scala.inline
-  def PickerProps: AbstractPickerProps.type = typings.antdMobile.abstractPickerMod.AbstractPickerProps
+  def PickerProps: AbstractPickerProps.type = AbstractPickerProps
   type PickerProps = AbstractPickerProps
   @scala.inline
-  def PickerViewProps: IPickerView.type = typings.antdMobile.pickerViewPickerViewMod.IPickerView
+  def PickerViewProps: IPickerView.type = IPickerView
   type PickerViewProps = IPickerView
   @scala.inline
-  def PopoverProps: PopOverPropsType.type = typings.antdMobile.popoverMod.PopOverPropsType
+  def PopoverProps: PopOverPropsType.type = PopOverPropsType
   type PopoverProps = PopOverPropsType
   @scala.inline
   def PortalProps: typings.antdMobile.portalMod.PortalProps.type = typings.antdMobile.portalMod.PortalProps
@@ -165,7 +165,7 @@ trait antdMobileProps {
   def SliderProps: typings.antdMobile.sliderMod.SliderProps.type = typings.antdMobile.sliderMod.SliderProps
   type SliderProps = typings.antdMobile.sliderMod.SliderProps
   @scala.inline
-  def StepperProps: StepProps.type = typings.antdMobile.stepperMod.StepProps
+  def StepperProps: StepProps.type = StepProps
   type StepperProps = StepProps
   @scala.inline
   def StepsProps: typings.antdMobile.stepsMod.StepsProps.type = typings.antdMobile.stepsMod.StepsProps
@@ -183,7 +183,7 @@ trait antdMobileProps {
   def TabProps: typings.antdMobile.tabMod.TabProps.type = typings.antdMobile.tabMod.TabProps
   type TabProps = typings.antdMobile.tabMod.TabProps
   @scala.inline
-  def TabBarProps: AntTabbarProps.type = typings.antdMobile.tabBarMod.AntTabbarProps
+  def TabBarProps: AntTabbarProps.type = AntTabbarProps
   type TabBarProps = AntTabbarProps
   @scala.inline
   def TabsProps: typings.antdMobile.tabsPropsTypeMod.TabsProps.type = typings.antdMobile.tabsPropsTypeMod.TabsProps

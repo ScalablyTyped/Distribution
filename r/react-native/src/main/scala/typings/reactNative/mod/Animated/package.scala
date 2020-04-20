@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object Animated {
   type AnimatedProps[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof T ]: react-native.react-native.Animated.WithAnimatedValue<T[key]>}
-    */ typings.reactNative.reactNativeStrings.AnimatedProps with T
+    */ typings.reactNative.reactNativeStrings.AnimatedProps with org.scalablytyped.runtime.TopLevel[T]
   type AnimatedValue = typings.reactNative.mod.Animated.Value
   type AnimatedValueXY = typings.reactNative.mod.Animated.ValueXY
   type Base = typings.reactNative.mod.Animated.Animated

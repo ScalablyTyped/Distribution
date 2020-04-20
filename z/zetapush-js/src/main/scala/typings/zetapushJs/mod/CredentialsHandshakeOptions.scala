@@ -15,7 +15,6 @@ object CredentialsHandshakeOptions {
   @scala.inline
   def apply(authType: String, deploymentId: String, login: String, password: String): CredentialsHandshakeOptions = {
     val __obj = js.Dynamic.literal(authType = authType.asInstanceOf[js.Any], deploymentId = deploymentId.asInstanceOf[js.Any], login = login.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CredentialsHandshakeOptions]
   }
 }

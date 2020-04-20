@@ -31,7 +31,6 @@ object Impl {
   @scala.inline
   def apply(container: String, elementSize: String, invalidContext: String, method: String, visible: String): Impl = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], elementSize = elementSize.asInstanceOf[js.Any], invalidContext = invalidContext.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Impl]
   }
 }

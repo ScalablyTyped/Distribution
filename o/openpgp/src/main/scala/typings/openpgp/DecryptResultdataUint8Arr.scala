@@ -22,7 +22,6 @@ object DecryptResultdataUint8Arr {
     signatures: js.Array[AnonValid]
   ): DecryptResultdataUint8Arr = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], signatures = signatures.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DecryptResultdataUint8Arr]
   }
 }

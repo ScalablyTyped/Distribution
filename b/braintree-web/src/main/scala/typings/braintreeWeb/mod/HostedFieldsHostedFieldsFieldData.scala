@@ -37,7 +37,6 @@ object HostedFieldsHostedFieldsFieldData {
     isValid: Boolean
   ): HostedFieldsHostedFieldsFieldData = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], isEmpty = isEmpty.asInstanceOf[js.Any], isFocused = isFocused.asInstanceOf[js.Any], isPotentiallyValid = isPotentiallyValid.asInstanceOf[js.Any], isValid = isValid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HostedFieldsHostedFieldsFieldData]
   }
 }

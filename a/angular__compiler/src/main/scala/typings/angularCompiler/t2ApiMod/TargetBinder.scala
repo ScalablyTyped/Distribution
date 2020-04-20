@@ -12,7 +12,6 @@ object TargetBinder {
   @scala.inline
   def apply[D /* <: DirectiveMeta */](bind: Target => BoundTarget[D]): TargetBinder[D] = {
     val __obj = js.Dynamic.literal(bind = js.Any.fromFunction1(bind))
-  
     __obj.asInstanceOf[TargetBinder[D]]
   }
 }

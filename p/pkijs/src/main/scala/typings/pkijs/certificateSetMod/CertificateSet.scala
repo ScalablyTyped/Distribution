@@ -20,7 +20,6 @@ object CertificateSet {
     toSchema: () => js.Any
   ): CertificateSet = {
     val __obj = js.Dynamic.literal(certificates = certificates.asInstanceOf[js.Any], fromSchema = js.Any.fromFunction1(fromSchema), toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
-  
     __obj.asInstanceOf[CertificateSet]
   }
 }

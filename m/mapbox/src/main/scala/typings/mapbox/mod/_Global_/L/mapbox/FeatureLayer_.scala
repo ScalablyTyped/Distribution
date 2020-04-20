@@ -47,7 +47,6 @@ object FeatureLayer_ {
     setGeoJSON: js.Any => FeatureLayer_
   ): FeatureLayer_ = {
     val __obj = js.Dynamic.literal(getFilter = js.Any.fromFunction0(getFilter), getGeoJSON = js.Any.fromFunction0(getGeoJSON), loadID = js.Any.fromFunction1(loadID), loadURL = js.Any.fromFunction1(loadURL), setFilter = js.Any.fromFunction1(setFilter), setGeoJSON = js.Any.fromFunction1(setGeoJSON))
-  
     __obj.asInstanceOf[FeatureLayer_]
   }
 }

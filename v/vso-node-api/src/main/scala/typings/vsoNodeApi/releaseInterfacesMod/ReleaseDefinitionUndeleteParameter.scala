@@ -15,7 +15,6 @@ object ReleaseDefinitionUndeleteParameter {
   @scala.inline
   def apply(comment: String): ReleaseDefinitionUndeleteParameter = {
     val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReleaseDefinitionUndeleteParameter]
   }
 }

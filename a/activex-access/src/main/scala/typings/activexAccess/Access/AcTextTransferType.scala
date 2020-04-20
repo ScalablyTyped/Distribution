@@ -30,26 +30,24 @@ trait AcTextTransferType extends js.Object
 
 object AcTextTransferType {
   @scala.inline
-  def acExportDelim: `2` = this.cast(2)
+  def acExportDelim: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def acExportFixed: `3` = this.cast(3)
+  def acExportFixed: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def acExportHTML: `8` = this.cast(8)
+  def acExportHTML: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def acExportMerge: `4` = this.cast(4)
+  def acExportMerge: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def acImportDelim: `0` = this.cast(0)
+  def acImportDelim: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def acImportFixed: `1` = this.cast(1)
+  def acImportFixed: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def acImportHTML: `7` = this.cast(7)
+  def acImportHTML: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def acLinkDelim: `5` = this.cast(5)
+  def acLinkDelim: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def acLinkFixed: `6` = this.cast(6)
+  def acLinkFixed: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def acLinkHTML: `9` = this.cast(9)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def acLinkHTML: `9` = 9.asInstanceOf[`9`]
 }
 

@@ -13,7 +13,6 @@ object AnonCache {
   @scala.inline
   def apply(cache: Boolean, dataType: String): AnonCache = {
     val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], dataType = dataType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCache]
   }
 }

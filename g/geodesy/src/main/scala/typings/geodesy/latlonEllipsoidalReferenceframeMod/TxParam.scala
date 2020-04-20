@@ -18,7 +18,6 @@ object TxParam {
     rates: js.Tuple6[Double, Double, Double, Double, Double, Double]
   ): TxParam = {
     val __obj = js.Dynamic.literal(epoch = epoch.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], rates = rates.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TxParam]
   }
 }

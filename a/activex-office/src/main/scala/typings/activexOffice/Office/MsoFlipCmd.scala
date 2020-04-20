@@ -14,10 +14,8 @@ trait MsoFlipCmd extends js.Object
 
 object MsoFlipCmd {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoFlipHorizontal: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def msoFlipHorizontal: `0` = this.cast(0)
-  @scala.inline
-  def msoFlipVertical: `1` = this.cast(1)
+  def msoFlipVertical: `1` = 1.asInstanceOf[`1`]
 }
 

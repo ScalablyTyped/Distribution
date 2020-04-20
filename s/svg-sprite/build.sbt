@@ -1,19 +1,18 @@
 organization := "org.scalablytyped"
 name := "svg-sprite"
-version := "0.0-unknown-dt-20190322Z-28c9c0"
-scalaVersion := "2.12.10"
+version := "0.0-unknown-dt-20200225Z-c4f4a5"
+scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "logform" % "2.1.2-6aab8c",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200115Z-14f523",
-  "org.scalablytyped" %%% "std" % "3.7-b6d959",
-  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20191106Z-f89933",
-  "org.scalablytyped" %%% "winston" % "3.2.1-a2e938",
-  "org.scalablytyped" %%% "winston-transport" % "4.3.0-b3f6ad")
+  "org.scalablytyped" %%% "logform" % "2.1.2-12eae7",
+  "org.scalablytyped" %%% "node" % "13.13-dt-20200417Z-f3d81d",
+  "org.scalablytyped" %%% "std" % "3.8-9b2470",
+  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20200225Z-bbc6a1",
+  "org.scalablytyped" %%% "winston" % "3.2.1-6fa9b1",
+  "org.scalablytyped" %%% "winston-transport" % "4.3.0-c21bb8")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-        

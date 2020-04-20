@@ -12,10 +12,8 @@ trait QueryMethod extends js.Object
 
 object QueryMethod {
   @scala.inline
-  def body: typings.apicalypse.apicalypseStrings.body = this.cast("body")
+  def body: typings.apicalypse.apicalypseStrings.body = "body".asInstanceOf[typings.apicalypse.apicalypseStrings.body]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def url: typings.apicalypse.apicalypseStrings.url = this.cast("url")
+  def url: typings.apicalypse.apicalypseStrings.url = "url".asInstanceOf[typings.apicalypse.apicalypseStrings.url]
 }
 

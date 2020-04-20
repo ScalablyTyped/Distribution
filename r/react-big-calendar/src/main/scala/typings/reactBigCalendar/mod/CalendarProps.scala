@@ -19,7 +19,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CalendarProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] extends Props[Calendar[TEvent, TResource]] {
-  var allDayAccessor: js.UndefOr[String | (js.Function1[/* event */ TEvent, Boolean])] = js.undefined
+  var allDayAccessor: js.UndefOr[(/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Boolean])] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var components: js.UndefOr[Components_[TEvent]] = js.undefined
   var culture: js.UndefOr[String] = js.undefined
@@ -30,7 +30,7 @@ trait CalendarProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] ext
   var defaultView: js.UndefOr[View] = js.undefined
   var drilldownView: js.UndefOr[View | Null] = js.undefined
   var elementProps: js.UndefOr[HTMLAttributes[HTMLElement]] = js.undefined
-  var endAccessor: js.UndefOr[String | (js.Function1[/* event */ TEvent, Date])] = js.undefined
+  var endAccessor: js.UndefOr[(/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Date])] = js.undefined
   var eventPropGetter: js.UndefOr[EventPropGetter[TEvent]] = js.undefined
   var events: js.UndefOr[js.Array[TEvent]] = js.undefined
   var formats: js.UndefOr[Formats] = js.undefined
@@ -66,9 +66,9 @@ trait CalendarProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] ext
   var onView: js.UndefOr[js.Function1[/* view */ View, Unit]] = js.undefined
   var popup: js.UndefOr[Boolean] = js.undefined
   var popupOffset: js.UndefOr[Double | AnonX] = js.undefined
-  var resourceAccessor: js.UndefOr[String | (js.Function1[/* event */ TEvent, _])] = js.undefined
-  var resourceIdAccessor: js.UndefOr[String | (js.Function1[/* resource */ TResource, _])] = js.undefined
-  var resourceTitleAccessor: js.UndefOr[String | (js.Function1[/* resource */ TResource, _])] = js.undefined
+  var resourceAccessor: js.UndefOr[(/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, _])] = js.undefined
+  var resourceIdAccessor: js.UndefOr[(/* keyof TResource */ String) | (js.Function1[/* resource */ TResource, _])] = js.undefined
+  var resourceTitleAccessor: js.UndefOr[(/* keyof TResource */ String) | (js.Function1[/* resource */ TResource, _])] = js.undefined
   var resources: js.UndefOr[js.Array[TResource]] = js.undefined
   var rtl: js.UndefOr[Boolean] = js.undefined
   var scrollToTime: js.UndefOr[Date] = js.undefined
@@ -77,12 +77,12 @@ trait CalendarProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] ext
   var showMultiDayTimes: js.UndefOr[Boolean] = js.undefined
   var slotGroupPropGetter: js.UndefOr[SlotGroupPropGetter] = js.undefined
   var slotPropGetter: js.UndefOr[SlotPropGetter] = js.undefined
-  var startAccessor: js.UndefOr[String | (js.Function1[/* event */ TEvent, Date])] = js.undefined
+  var startAccessor: js.UndefOr[(/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Date])] = js.undefined
   var step: js.UndefOr[Double] = js.undefined
   var timeslots: js.UndefOr[Double] = js.undefined
-  var titleAccessor: js.UndefOr[String | (js.Function1[/* event */ TEvent, String])] = js.undefined
+  var titleAccessor: js.UndefOr[(/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, String])] = js.undefined
   var toolbar: js.UndefOr[Boolean] = js.undefined
-  var tooltipAccessor: js.UndefOr[String | (js.Function1[/* event */ TEvent, String])] = js.undefined
+  var tooltipAccessor: js.UndefOr[(/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, String])] = js.undefined
   var view: js.UndefOr[View] = js.undefined
   var views: js.UndefOr[ViewsProps] = js.undefined
 }
@@ -91,7 +91,7 @@ object CalendarProps {
   @scala.inline
   def apply[TEvent /* <: js.Object */, TResource /* <: js.Object */](
     localizer: DateLocalizer,
-    allDayAccessor: String | (js.Function1[/* event */ TEvent, Boolean]) = null,
+    allDayAccessor: (/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Boolean]) = null,
     children: ReactNode = null,
     className: String = null,
     components: Components_[TEvent] = null,
@@ -103,7 +103,7 @@ object CalendarProps {
     defaultView: View = null,
     drilldownView: View = null,
     elementProps: HTMLAttributes[HTMLElement] = null,
-    endAccessor: String | (js.Function1[/* event */ TEvent, Date]) = null,
+    endAccessor: (/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Date]) = null,
     eventPropGetter: (TEvent, /* start */ stringOrDate, /* end */ stringOrDate, /* isSelected */ Boolean) => HTMLAttributes[HTMLDivElement] = null,
     events: js.Array[TEvent] = null,
     formats: Formats = null,
@@ -127,9 +127,9 @@ object CalendarProps {
     popup: js.UndefOr[Boolean] = js.undefined,
     popupOffset: Double | AnonX = null,
     ref: LegacyRef[Calendar[TEvent, TResource]] = null,
-    resourceAccessor: String | (js.Function1[/* event */ TEvent, _]) = null,
-    resourceIdAccessor: String | (js.Function1[/* resource */ TResource, _]) = null,
-    resourceTitleAccessor: String | (js.Function1[/* resource */ TResource, _]) = null,
+    resourceAccessor: (/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, _]) = null,
+    resourceIdAccessor: (/* keyof TResource */ String) | (js.Function1[/* resource */ TResource, _]) = null,
+    resourceTitleAccessor: (/* keyof TResource */ String) | (js.Function1[/* resource */ TResource, _]) = null,
     resources: js.Array[TResource] = null,
     rtl: js.UndefOr[Boolean] = js.undefined,
     scrollToTime: Date = null,
@@ -138,12 +138,12 @@ object CalendarProps {
     showMultiDayTimes: js.UndefOr[Boolean] = js.undefined,
     slotGroupPropGetter: () => HTMLAttributes[HTMLDivElement] = null,
     slotPropGetter: (/* date */ Date, /* resourceId */ js.UndefOr[Double | String]) => HTMLAttributes[HTMLDivElement] = null,
-    startAccessor: String | (js.Function1[/* event */ TEvent, Date]) = null,
+    startAccessor: (/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Date]) = null,
     step: Int | Double = null,
     timeslots: Int | Double = null,
-    titleAccessor: String | (js.Function1[/* event */ TEvent, String]) = null,
+    titleAccessor: (/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, String]) = null,
     toolbar: js.UndefOr[Boolean] = js.undefined,
-    tooltipAccessor: String | (js.Function1[/* event */ TEvent, String]) = null,
+    tooltipAccessor: (/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, String]) = null,
     view: View = null,
     views: ViewsProps = null
   ): CalendarProps[TEvent, TResource] = {

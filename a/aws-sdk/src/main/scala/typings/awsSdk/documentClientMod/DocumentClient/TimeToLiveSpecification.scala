@@ -20,7 +20,6 @@ object TimeToLiveSpecification {
   @scala.inline
   def apply(AttributeName: TimeToLiveAttributeName, Enabled: TimeToLiveEnabled): TimeToLiveSpecification = {
     val __obj = js.Dynamic.literal(AttributeName = AttributeName.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TimeToLiveSpecification]
   }
 }

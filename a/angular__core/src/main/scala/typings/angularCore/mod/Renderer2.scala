@@ -53,7 +53,7 @@ abstract class Renderer2 () extends js.Object {
     * as an object containing key-value pairs.
     * This is useful for renderers that delegate to other renderers.
     */
-  def data(): StringDictionary[js.Any] = js.native
+  def data: StringDictionary[js.Any] = js.native
   /**
     * Implement this callback to destroy the renderer or the host element.
     */

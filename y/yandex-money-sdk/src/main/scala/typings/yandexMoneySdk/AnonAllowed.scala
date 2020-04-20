@@ -12,7 +12,6 @@ object AnonAllowed {
   @scala.inline
   def apply(allowed: Boolean): AnonAllowed = {
     val __obj = js.Dynamic.literal(allowed = allowed.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAllowed]
   }
 }

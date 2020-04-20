@@ -20,7 +20,6 @@ object SetV2LoggingLevelRequest {
   @scala.inline
   def apply(logLevel: LogLevel, logTarget: LogTarget): SetV2LoggingLevelRequest = {
     val __obj = js.Dynamic.literal(logLevel = logLevel.asInstanceOf[js.Any], logTarget = logTarget.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SetV2LoggingLevelRequest]
   }
 }

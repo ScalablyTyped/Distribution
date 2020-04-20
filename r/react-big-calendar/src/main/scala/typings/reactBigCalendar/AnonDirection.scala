@@ -20,7 +20,6 @@ object AnonDirection {
   @scala.inline
   def apply[TEvent /* <: js.Object */](action: resize | move, direction: UP | DOWN | LEFT | RIGHT, event: TEvent): AnonDirection[TEvent] = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDirection[TEvent]]
   }
 }

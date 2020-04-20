@@ -13,7 +13,6 @@ object PickImplunspecifiedRule {
   @scala.inline
   def apply(unspecifiedRule: String): PickImplunspecifiedRule = {
     val __obj = js.Dynamic.literal(unspecifiedRule = unspecifiedRule.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplunspecifiedRule]
   }
 }

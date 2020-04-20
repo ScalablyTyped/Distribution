@@ -39,7 +39,6 @@ object ConditionalTextComparisonRule {
     text: String
   ): ConditionalTextComparisonRule = {
     val __obj = js.Dynamic.literal(operator = operator.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConditionalTextComparisonRule]
   }
 }

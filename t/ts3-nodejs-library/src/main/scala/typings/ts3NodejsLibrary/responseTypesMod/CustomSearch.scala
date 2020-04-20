@@ -14,7 +14,6 @@ object CustomSearch {
   @scala.inline
   def apply(cldbid: Double, ident: String, value: String): CustomSearch = {
     val __obj = js.Dynamic.literal(cldbid = cldbid.asInstanceOf[js.Any], ident = ident.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CustomSearch]
   }
 }

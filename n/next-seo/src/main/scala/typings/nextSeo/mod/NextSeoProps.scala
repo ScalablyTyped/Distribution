@@ -12,7 +12,6 @@ object NextSeoProps {
   @scala.inline
   def apply(config: Config): NextSeoProps = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NextSeoProps]
   }
 }

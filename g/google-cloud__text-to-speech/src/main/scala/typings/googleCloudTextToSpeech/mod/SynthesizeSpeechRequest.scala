@@ -14,7 +14,6 @@ object SynthesizeSpeechRequest {
   @scala.inline
   def apply(audioConfig: AudioConfig, input: SynthesisInput, voice: VoiceSelectionParams): SynthesizeSpeechRequest = {
     val __obj = js.Dynamic.literal(audioConfig = audioConfig.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], voice = voice.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SynthesizeSpeechRequest]
   }
 }

@@ -14,7 +14,6 @@ object HSLA {
   @scala.inline
   def apply(a: Double, h: Double, l: Double, s: Double): HSLA = {
     val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], l = l.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HSLA]
   }
 }

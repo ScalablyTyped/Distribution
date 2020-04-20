@@ -17,7 +17,6 @@ object IRefModelInModel {
   @scala.inline
   def apply(childId: String, childModel: IModel, parentModel: IModel): IRefModelInModel = {
     val __obj = js.Dynamic.literal(childId = childId.asInstanceOf[js.Any], childModel = childModel.asInstanceOf[js.Any], parentModel = parentModel.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IRefModelInModel]
   }
 }

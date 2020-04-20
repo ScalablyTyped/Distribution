@@ -27,7 +27,6 @@ object uuid {
     toURN: () => String
   ): uuid = {
     val __obj = js.Dynamic.literal(equals = js.Any.fromFunction1(equals), fromParts = js.Any.fromFunction6(fromParts), toBytes = js.Any.fromFunction0(toBytes), toURN = js.Any.fromFunction0(toURN))
-  
     __obj.asInstanceOf[uuid]
   }
 }

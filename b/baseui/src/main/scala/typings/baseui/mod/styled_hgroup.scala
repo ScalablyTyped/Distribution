@@ -15,7 +15,17 @@ import scala.scalajs.js.annotation._
 @JSImport("baseui", "styled")
 @js.native
 object styled_hgroup extends js.Object {
-  def apply[P /* <: js.Object */, T](component: hgroup, styledFn: js.Function1[/* props */ AnonTheme[T] with P, StyleObject]): StyletronComponent[(Pick[ComponentProps[hgroup], Exclude[String, AnonClassName]]) with P] = js.native
-  def apply[P /* <: js.Object */, T](component: hgroup, styledFn: StyleObject): StyletronComponent[(Pick[ComponentProps[hgroup], Exclude[String, AnonClassName]]) with P] = js.native
+  def apply[P /* <: js.Object */, T](component: hgroup, styledFn: js.Function1[/* props */ AnonTheme[T] with P, StyleObject]): StyletronComponent[
+    (Pick[
+      ComponentProps[hgroup], 
+      Exclude[/* keyof react.react.ComponentProps<'hgroup'> */ String, AnonClassName]
+    ]) with P
+  ] = js.native
+  def apply[P /* <: js.Object */, T](component: hgroup, styledFn: StyleObject): StyletronComponent[
+    (Pick[
+      ComponentProps[hgroup], 
+      Exclude[/* keyof react.react.ComponentProps<'hgroup'> */ String, AnonClassName]
+    ]) with P
+  ] = js.native
 }
 

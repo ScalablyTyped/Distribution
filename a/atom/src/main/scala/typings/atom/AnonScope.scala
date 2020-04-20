@@ -13,7 +13,6 @@ object AnonScope {
   @scala.inline
   def apply(scope: js.Array[String] | ScopeDescriptor): AnonScope = {
     val __obj = js.Dynamic.literal(scope = scope.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonScope]
   }
 }

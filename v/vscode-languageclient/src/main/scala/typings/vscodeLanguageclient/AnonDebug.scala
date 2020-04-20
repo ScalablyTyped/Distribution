@@ -15,7 +15,6 @@ object AnonDebug {
   @scala.inline
   def apply(debug: Executable, run: Executable): AnonDebug = {
     val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any], run = run.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDebug]
   }
 }

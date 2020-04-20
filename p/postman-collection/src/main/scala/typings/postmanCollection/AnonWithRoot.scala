@@ -12,7 +12,6 @@ object AnonWithRoot {
   @scala.inline
   def apply(withRoot: Boolean): AnonWithRoot = {
     val __obj = js.Dynamic.literal(withRoot = withRoot.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonWithRoot]
   }
 }

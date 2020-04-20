@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait nivoVoronoiProps {
   @scala.inline
-  def ResponsiveVoroinoiProps: VoronoiProps.type = typings.nivoVoronoi.mod.VoronoiProps
+  def ResponsiveVoroinoiProps: VoronoiProps.type = VoronoiProps
   type ResponsiveVoroinoiProps = VoronoiProps
 }
 

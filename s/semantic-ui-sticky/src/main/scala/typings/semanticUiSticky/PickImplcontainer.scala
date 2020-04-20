@@ -13,7 +13,6 @@ object PickImplcontainer {
   @scala.inline
   def apply(container: String): PickImplcontainer = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplcontainer]
   }
 }

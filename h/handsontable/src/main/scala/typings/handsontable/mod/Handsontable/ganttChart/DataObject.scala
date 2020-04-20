@@ -16,7 +16,6 @@ object DataObject {
   @scala.inline
   def apply(additionalData: AnonQuantity, endDate: String | Double | Date, startDate: String | Double | Date): DataObject = {
     val __obj = js.Dynamic.literal(additionalData = additionalData.asInstanceOf[js.Any], endDate = endDate.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DataObject]
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactSwipeProps {
   @scala.inline
-  def ReactSwipeProps: Props.type = typings.reactSwipe.mod.Props
+  def ReactSwipeProps: Props.type = Props
   type ReactSwipeProps = Props
 }
 

@@ -23,7 +23,6 @@ object GetAggregateResourceConfigRequest {
     ResourceIdentifier: AggregateResourceIdentifier
   ): GetAggregateResourceConfigRequest = {
     val __obj = js.Dynamic.literal(ConfigurationAggregatorName = ConfigurationAggregatorName.asInstanceOf[js.Any], ResourceIdentifier = ResourceIdentifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetAggregateResourceConfigRequest]
   }
 }

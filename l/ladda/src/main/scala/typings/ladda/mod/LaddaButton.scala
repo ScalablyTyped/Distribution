@@ -26,7 +26,6 @@ object LaddaButton {
     toggle: () => LaddaButton
   ): LaddaButton = {
     val __obj = js.Dynamic.literal(isLoading = js.Any.fromFunction0(isLoading), remove = js.Any.fromFunction0(remove), setProgress = js.Any.fromFunction1(setProgress), start = js.Any.fromFunction0(start), startAfter = js.Any.fromFunction1(startAfter), stop = js.Any.fromFunction0(stop), toggle = js.Any.fromFunction0(toggle))
-  
     __obj.asInstanceOf[LaddaButton]
   }
 }

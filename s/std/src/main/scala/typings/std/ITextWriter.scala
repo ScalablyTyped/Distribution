@@ -14,7 +14,6 @@ object ITextWriter {
   @scala.inline
   def apply(Close: () => Unit, Write: java.lang.String => Unit, WriteLine: java.lang.String => Unit): ITextWriter = {
     val __obj = js.Dynamic.literal(Close = js.Any.fromFunction0(Close), Write = js.Any.fromFunction1(Write), WriteLine = js.Any.fromFunction1(WriteLine))
-  
     __obj.asInstanceOf[ITextWriter]
   }
 }

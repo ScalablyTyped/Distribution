@@ -44,7 +44,6 @@ object DesktopCapturerSource {
   @scala.inline
   def apply(appIcon: NativeImage_, display_id: String, id: String, name: String, thumbnail: NativeImage_): DesktopCapturerSource = {
     val __obj = js.Dynamic.literal(appIcon = appIcon.asInstanceOf[js.Any], display_id = display_id.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], thumbnail = thumbnail.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DesktopCapturerSource]
   }
 }

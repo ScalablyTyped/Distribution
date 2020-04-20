@@ -13,7 +13,6 @@ object IAnnouncedBulkOperationsExampleState {
   @scala.inline
   def apply(items: js.Array[IFileExampleItem], numberOfItems: Double): IAnnouncedBulkOperationsExampleState = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], numberOfItems = numberOfItems.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IAnnouncedBulkOperationsExampleState]
   }
 }

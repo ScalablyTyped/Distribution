@@ -20,7 +20,6 @@ object CreateContactMethodRequest {
   @scala.inline
   def apply(contactEndpoint: StringMax256, protocol: ContactProtocol): CreateContactMethodRequest = {
     val __obj = js.Dynamic.literal(contactEndpoint = contactEndpoint.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateContactMethodRequest]
   }
 }

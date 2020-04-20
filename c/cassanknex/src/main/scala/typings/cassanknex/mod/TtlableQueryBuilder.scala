@@ -13,7 +13,6 @@ object TtlableQueryBuilder {
   @scala.inline
   def apply(usingTTL: Double => TtlableQueryBuilder, usingTimestamp: Double => TtlableQueryBuilder): TtlableQueryBuilder = {
     val __obj = js.Dynamic.literal(usingTTL = js.Any.fromFunction1(usingTTL), usingTimestamp = js.Any.fromFunction1(usingTimestamp))
-  
     __obj.asInstanceOf[TtlableQueryBuilder]
   }
 }

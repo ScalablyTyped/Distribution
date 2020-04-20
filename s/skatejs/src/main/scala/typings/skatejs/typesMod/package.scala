@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object typesMod {
   type ComponentProps[T, E] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: skatejs.skatejs/types.PropOptions<T[P]>}
-    */ typings.skatejs.skatejsStrings.ComponentProps with T
+    */ typings.skatejs.skatejsStrings.ComponentProps with org.scalablytyped.runtime.TopLevel[T]
   type Constructor[T] = org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T]
   type Maybe[T] = js.UndefOr[T | scala.Null]
   type Mixed = js.Object

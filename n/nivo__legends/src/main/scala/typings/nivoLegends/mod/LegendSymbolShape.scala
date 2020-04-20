@@ -14,14 +14,12 @@ trait LegendSymbolShape extends js.Object
 
 object LegendSymbolShape {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def circle: typings.nivoLegends.nivoLegendsStrings.circle = "circle".asInstanceOf[typings.nivoLegends.nivoLegendsStrings.circle]
   @scala.inline
-  def circle: typings.nivoLegends.nivoLegendsStrings.circle = this.cast("circle")
+  def diamond: typings.nivoLegends.nivoLegendsStrings.diamond = "diamond".asInstanceOf[typings.nivoLegends.nivoLegendsStrings.diamond]
   @scala.inline
-  def diamond: typings.nivoLegends.nivoLegendsStrings.diamond = this.cast("diamond")
+  def square: typings.nivoLegends.nivoLegendsStrings.square = "square".asInstanceOf[typings.nivoLegends.nivoLegendsStrings.square]
   @scala.inline
-  def square: typings.nivoLegends.nivoLegendsStrings.square = this.cast("square")
-  @scala.inline
-  def triangle: typings.nivoLegends.nivoLegendsStrings.triangle = this.cast("triangle")
+  def triangle: typings.nivoLegends.nivoLegendsStrings.triangle = "triangle".asInstanceOf[typings.nivoLegends.nivoLegendsStrings.triangle]
 }
 

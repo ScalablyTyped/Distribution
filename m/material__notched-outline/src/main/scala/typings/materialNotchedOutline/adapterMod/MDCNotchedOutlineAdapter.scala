@@ -43,7 +43,6 @@ object MDCNotchedOutlineAdapter {
     setOutlinePathAttr: String => Unit
   ): MDCNotchedOutlineAdapter = {
     val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), getHeight = js.Any.fromFunction0(getHeight), getIdleOutlineStyleValue = js.Any.fromFunction1(getIdleOutlineStyleValue), getWidth = js.Any.fromFunction0(getWidth), removeClass = js.Any.fromFunction1(removeClass), setOutlinePathAttr = js.Any.fromFunction1(setOutlinePathAttr))
-  
     __obj.asInstanceOf[MDCNotchedOutlineAdapter]
   }
 }

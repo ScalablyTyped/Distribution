@@ -20,7 +20,6 @@ object UpdateManagedInstanceRoleRequest {
   @scala.inline
   def apply(IamRole: IamRole, InstanceId: ManagedInstanceId): UpdateManagedInstanceRoleRequest = {
     val __obj = js.Dynamic.literal(IamRole = IamRole.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateManagedInstanceRoleRequest]
   }
 }

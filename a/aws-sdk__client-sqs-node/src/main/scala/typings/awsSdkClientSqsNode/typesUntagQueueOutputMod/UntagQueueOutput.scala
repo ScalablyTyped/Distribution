@@ -18,7 +18,6 @@ object UntagQueueOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): UntagQueueOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UntagQueueOutput]
   }
 }

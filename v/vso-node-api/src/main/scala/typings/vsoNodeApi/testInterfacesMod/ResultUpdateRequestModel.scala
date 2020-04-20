@@ -22,7 +22,6 @@ object ResultUpdateRequestModel {
     testCaseResult: TestCaseResultUpdateModel
   ): ResultUpdateRequestModel = {
     val __obj = js.Dynamic.literal(actionResultDeletes = actionResultDeletes.asInstanceOf[js.Any], actionResults = actionResults.asInstanceOf[js.Any], parameterDeletes = parameterDeletes.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], testCaseResult = testCaseResult.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResultUpdateRequestModel]
   }
 }

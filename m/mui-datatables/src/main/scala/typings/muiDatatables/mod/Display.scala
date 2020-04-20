@@ -13,12 +13,10 @@ trait Display extends js.Object
 
 object Display {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def excluded: typings.muiDatatables.muiDatatablesStrings.excluded = "excluded".asInstanceOf[typings.muiDatatables.muiDatatablesStrings.excluded]
   @scala.inline
-  def excluded: typings.muiDatatables.muiDatatablesStrings.excluded = this.cast("excluded")
+  def `false`: typings.muiDatatables.muiDatatablesStrings.`false` = "false".asInstanceOf[typings.muiDatatables.muiDatatablesStrings.`false`]
   @scala.inline
-  def `false`: typings.muiDatatables.muiDatatablesStrings.`false` = this.cast("false")
-  @scala.inline
-  def `true`: typings.muiDatatables.muiDatatablesStrings.`true` = this.cast("true")
+  def `true`: typings.muiDatatables.muiDatatablesStrings.`true` = "true".asInstanceOf[typings.muiDatatables.muiDatatablesStrings.`true`]
 }
 

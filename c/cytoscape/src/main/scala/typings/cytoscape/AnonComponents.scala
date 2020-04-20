@@ -23,7 +23,6 @@ object AnonComponents {
     partitionSecond: NodeCollection
   ): AnonComponents = {
     val __obj = js.Dynamic.literal(components = components.asInstanceOf[js.Any], cut = cut.asInstanceOf[js.Any], partitionFirst = partitionFirst.asInstanceOf[js.Any], partitionSecond = partitionSecond.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonComponents]
   }
 }

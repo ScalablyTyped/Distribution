@@ -13,7 +13,6 @@ object ReadBookmark {
   @scala.inline
   def apply(title: String, url: String): ReadBookmark = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReadBookmark]
   }
 }

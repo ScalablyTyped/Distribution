@@ -24,7 +24,6 @@ object AnonAddExpectedEvents {
     watchesInitializedWaiter: () => Boolean
   ): AnonAddExpectedEvents = {
     val __obj = js.Dynamic.literal(addExpectedEvents = js.Any.fromFunction1(addExpectedEvents), initPromise = initPromise.asInstanceOf[js.Any], promise = promise.asInstanceOf[js.Any], unregister = js.Any.fromFunction0(unregister), waiter = js.Any.fromFunction0(waiter), watchesInitializedWaiter = js.Any.fromFunction0(watchesInitializedWaiter))
-  
     __obj.asInstanceOf[AnonAddExpectedEvents]
   }
 }

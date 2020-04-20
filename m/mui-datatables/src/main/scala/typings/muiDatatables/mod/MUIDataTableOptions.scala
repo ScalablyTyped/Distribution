@@ -5,7 +5,7 @@ import typings.muiDatatables.AnonDataDataIndex
 import typings.muiDatatables.AnonLookup
 import typings.muiDatatables.AnonRowIndex
 import typings.muiDatatables.AnonXAxis
-import typings.muiDatatables.PartialMUIDataTableTextLa
+import typings.muiDatatables.PartialMUIDataTableTextLaBody
 import typings.muiDatatables.Partialfilenamestringsepa
 import typings.muiDatatables.muiDatatablesStrings.chip
 import typings.muiDatatables.muiDatatablesStrings.reset
@@ -25,8 +25,8 @@ trait MUIDataTableOptions extends js.Object {
       /* rowCount */ Double, 
       /* page */ Double, 
       /* rowsPerPage */ Double, 
-      /* changeRowsPerPage */ js.Function0[_], 
-      /* changePage */ Double, 
+      /* changeRowsPerPage */ js.Function1[/* page */ String | Double, Unit], 
+      /* changePage */ js.Function1[/* newPage */ Double, Unit], 
       ReactNode
     ]
   ] = js.undefined
@@ -154,7 +154,7 @@ trait MUIDataTableOptions extends js.Object {
   var setTableProps: js.UndefOr[js.Function0[js.Object]] = js.undefined
   var sort: js.UndefOr[Boolean] = js.undefined
   var sortFilterList: js.UndefOr[Boolean] = js.undefined
-  var textLabels: js.UndefOr[PartialMUIDataTableTextLa] = js.undefined
+  var textLabels: js.UndefOr[PartialMUIDataTableTextLaBody] = js.undefined
   var viewColumns: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -164,7 +164,7 @@ object MUIDataTableOptions {
     caseSensitive: js.UndefOr[Boolean] = js.undefined,
     count: Int | Double = null,
     customFilterDialogFooter: /* filterList */ js.Array[_] => ReactNode = null,
-    customFooter: (/* rowCount */ Double, /* page */ Double, /* rowsPerPage */ Double, /* changeRowsPerPage */ js.Function0[_], /* changePage */ Double) => ReactNode = null,
+    customFooter: (/* rowCount */ Double, /* page */ Double, /* rowsPerPage */ Double, /* changeRowsPerPage */ js.Function1[/* page */ String | Double, Unit], /* changePage */ js.Function1[/* newPage */ Double, Unit]) => ReactNode = null,
     customRowRender: (/* data */ js.Array[_], /* dataIndex */ Double, /* rowIndex */ Double) => ReactNode = null,
     customSearch: (/* searchQuery */ String, /* currentRow */ js.Array[_], /* columns */ js.Array[_]) => Boolean = null,
     customSearchRender: (/* searchText */ String, /* handleSearch */ js.Any, /* hideSearch */ js.Any, /* options */ js.Any) => (Component[js.Object, js.Object, _]) | Element = null,
@@ -225,7 +225,7 @@ object MUIDataTableOptions {
     setTableProps: () => js.Object = null,
     sort: js.UndefOr[Boolean] = js.undefined,
     sortFilterList: js.UndefOr[Boolean] = js.undefined,
-    textLabels: PartialMUIDataTableTextLa = null,
+    textLabels: PartialMUIDataTableTextLaBody = null,
     viewColumns: js.UndefOr[Boolean] = js.undefined
   ): MUIDataTableOptions = {
     val __obj = js.Dynamic.literal()

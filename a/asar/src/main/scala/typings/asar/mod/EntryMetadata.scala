@@ -12,7 +12,6 @@ object EntryMetadata {
   @scala.inline
   def apply(unpacked: Boolean): EntryMetadata = {
     val __obj = js.Dynamic.literal(unpacked = unpacked.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EntryMetadata]
   }
 }

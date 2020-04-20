@@ -16,7 +16,6 @@ object RecordWeightedRoutingPolicy {
   @scala.inline
   def apply(weight: Double): RecordWeightedRoutingPolicy = {
     val __obj = js.Dynamic.literal(weight = weight.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RecordWeightedRoutingPolicy]
   }
 }

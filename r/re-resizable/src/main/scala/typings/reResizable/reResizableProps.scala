@@ -10,7 +10,7 @@ trait reResizableProps {
   def ResizableProps: typings.reResizable.mod.ResizableProps.type = typings.reResizable.mod.ResizableProps
   type ResizableProps = typings.reResizable.mod.ResizableProps
   @scala.inline
-  def ResizerProps: Props.type = typings.reResizable.resizerMod.Props
+  def ResizerProps: Props.type = Props
   type ResizerProps = Props
 }
 

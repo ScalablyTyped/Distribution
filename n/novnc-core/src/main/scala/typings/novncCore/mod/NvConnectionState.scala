@@ -14,14 +14,12 @@ trait NvConnectionState extends js.Object
 
 object NvConnectionState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def connected: typings.novncCore.novncCoreStrings.connected = "connected".asInstanceOf[typings.novncCore.novncCoreStrings.connected]
   @scala.inline
-  def connected: typings.novncCore.novncCoreStrings.connected = this.cast("connected")
+  def connecting: typings.novncCore.novncCoreStrings.connecting = "connecting".asInstanceOf[typings.novncCore.novncCoreStrings.connecting]
   @scala.inline
-  def connecting: typings.novncCore.novncCoreStrings.connecting = this.cast("connecting")
+  def disconnected: typings.novncCore.novncCoreStrings.disconnected = "disconnected".asInstanceOf[typings.novncCore.novncCoreStrings.disconnected]
   @scala.inline
-  def disconnected: typings.novncCore.novncCoreStrings.disconnected = this.cast("disconnected")
-  @scala.inline
-  def disconnecting: typings.novncCore.novncCoreStrings.disconnecting = this.cast("disconnecting")
+  def disconnecting: typings.novncCore.novncCoreStrings.disconnecting = "disconnecting".asInstanceOf[typings.novncCore.novncCoreStrings.disconnecting]
 }
 

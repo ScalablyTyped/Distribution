@@ -36,7 +36,6 @@ object TypeofEnum {
     is_from_user_enum_suffix_service: (String, String) => Double
   ): TypeofEnum = {
     val __obj = js.Dynamic.literal(enum_i_query_suffix = js.Any.fromFunction1(enum_i_query_suffix), enum_pv_query = js.Any.fromFunction1(enum_pv_query), enum_pv_query_suffix = js.Any.fromFunction2(enum_pv_query_suffix), enum_pv_query_suffix_service = js.Any.fromFunction3(enum_pv_query_suffix_service), enum_query = js.Any.fromFunction0(enum_query), enum_query_suffix = js.Any.fromFunction1(enum_query_suffix), enum_query_suffix_service = js.Any.fromFunction2(enum_query_suffix_service), i_enum_query = js.Any.fromFunction0(i_enum_query), i_enum_query_suffix_service = js.Any.fromFunction2(i_enum_query_suffix_service), is_from_user_enum = js.Any.fromFunction0(is_from_user_enum), is_from_user_enum_suffix = js.Any.fromFunction1(is_from_user_enum_suffix), is_from_user_enum_suffix_service = js.Any.fromFunction2(is_from_user_enum_suffix_service))
-  
     __obj.asInstanceOf[TypeofEnum]
   }
 }

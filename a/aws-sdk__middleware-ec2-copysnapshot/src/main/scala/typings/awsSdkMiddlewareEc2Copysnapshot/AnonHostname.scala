@@ -14,7 +14,6 @@ object AnonHostname {
   @scala.inline
   def apply(hostname: String, path: String, protocol: String): AnonHostname = {
     val __obj = js.Dynamic.literal(hostname = hostname.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHostname]
   }
 }

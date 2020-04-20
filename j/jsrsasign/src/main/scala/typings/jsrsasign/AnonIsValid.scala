@@ -14,7 +14,6 @@ object AnonIsValid {
   @scala.inline
   def apply(isValid: Boolean, parse: AnonCertsIdx, signerInfos: js.Array[_]): AnonIsValid = {
     val __obj = js.Dynamic.literal(isValid = isValid.asInstanceOf[js.Any], parse = parse.asInstanceOf[js.Any], signerInfos = signerInfos.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsValid]
   }
 }

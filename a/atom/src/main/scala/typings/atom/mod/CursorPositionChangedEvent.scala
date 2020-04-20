@@ -24,7 +24,6 @@ object CursorPositionChangedEvent {
     textChanged: Boolean
   ): CursorPositionChangedEvent = {
     val __obj = js.Dynamic.literal(cursor = cursor.asInstanceOf[js.Any], newBufferPosition = newBufferPosition.asInstanceOf[js.Any], newScreenPosition = newScreenPosition.asInstanceOf[js.Any], oldBufferPosition = oldBufferPosition.asInstanceOf[js.Any], oldScreenPosition = oldScreenPosition.asInstanceOf[js.Any], textChanged = textChanged.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CursorPositionChangedEvent]
   }
 }

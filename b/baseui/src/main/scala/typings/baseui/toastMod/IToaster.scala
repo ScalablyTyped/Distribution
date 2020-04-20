@@ -33,7 +33,6 @@ object IToaster {
     warning: (ReactNode, ReadonlyToastProps) => Key
   ): IToaster = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction1(clear), getRef = js.Any.fromFunction0(getRef), info = js.Any.fromFunction2(info), negative = js.Any.fromFunction2(negative), positive = js.Any.fromFunction2(positive), show = js.Any.fromFunction2(show), update = js.Any.fromFunction2(update), warning = js.Any.fromFunction2(warning))
-  
     __obj.asInstanceOf[IToaster]
   }
 }

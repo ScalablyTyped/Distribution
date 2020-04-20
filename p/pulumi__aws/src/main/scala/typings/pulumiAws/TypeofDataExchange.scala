@@ -13,7 +13,6 @@ object TypeofDataExchange {
   @scala.inline
   def apply(Types: TypeofDataExchange): TypeofDataExchange = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofDataExchange]
   }
 }

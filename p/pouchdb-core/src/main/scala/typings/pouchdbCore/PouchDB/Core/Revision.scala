@@ -12,7 +12,6 @@ object Revision {
   @scala.inline
   def apply[Content /* <: js.Object */](ok: Document[Content] with RevisionIdMeta): Revision[Content] = {
     val __obj = js.Dynamic.literal(ok = ok.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Revision[Content]]
   }
 }

@@ -20,7 +20,6 @@ object DeleteApiMappingRequest {
   @scala.inline
   def apply(ApiMappingId: string, DomainName: string): DeleteApiMappingRequest = {
     val __obj = js.Dynamic.literal(ApiMappingId = ApiMappingId.asInstanceOf[js.Any], DomainName = DomainName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteApiMappingRequest]
   }
 }

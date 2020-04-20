@@ -1,7 +1,7 @@
 
 # Scala.js typings for wavesurfer_dot_js
 
-Typings are for version 3.2
+Typings are for version 3.3
 
 ## Library description:
 Interactive navigable audio visualization using Web Audio and Canvas

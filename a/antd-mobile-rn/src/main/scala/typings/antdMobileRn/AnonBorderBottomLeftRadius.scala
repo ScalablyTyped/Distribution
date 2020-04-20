@@ -24,7 +24,6 @@ object AnonBorderBottomLeftRadius {
     right: Double
   ): AnonBorderBottomLeftRadius = {
     val __obj = js.Dynamic.literal(borderBottomLeftRadius = borderBottomLeftRadius.asInstanceOf[js.Any], borderBottomRightRadius = borderBottomRightRadius.asInstanceOf[js.Any], bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBorderBottomLeftRadius]
   }
 }

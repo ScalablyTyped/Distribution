@@ -21,7 +21,6 @@ object XMLHttpRequestEventMap {
     timeout: ProgressEvent[XMLHttpRequestEventTarget]
   ): XMLHttpRequestEventMap = {
     val __obj = js.Dynamic.literal(abort = abort.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], load = load.asInstanceOf[js.Any], loadend = loadend.asInstanceOf[js.Any], loadstart = loadstart.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], readystatechange = readystatechange.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[XMLHttpRequestEventMap]
   }
 }

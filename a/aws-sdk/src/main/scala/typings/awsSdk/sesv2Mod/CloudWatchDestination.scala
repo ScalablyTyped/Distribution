@@ -16,7 +16,6 @@ object CloudWatchDestination {
   @scala.inline
   def apply(DimensionConfigurations: CloudWatchDimensionConfigurations): CloudWatchDestination = {
     val __obj = js.Dynamic.literal(DimensionConfigurations = DimensionConfigurations.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CloudWatchDestination]
   }
 }

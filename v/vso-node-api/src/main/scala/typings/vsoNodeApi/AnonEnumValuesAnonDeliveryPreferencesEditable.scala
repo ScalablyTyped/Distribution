@@ -12,7 +12,6 @@ object AnonEnumValuesAnonDeliveryPreferencesEditable {
   @scala.inline
   def apply(enumValues: AnonDeliveryPreferencesEditable): AnonEnumValuesAnonDeliveryPreferencesEditable = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumValuesAnonDeliveryPreferencesEditable]
   }
 }

@@ -16,7 +16,6 @@ object DeleteCustomKeyStoreRequest {
   @scala.inline
   def apply(CustomKeyStoreId: CustomKeyStoreIdType): DeleteCustomKeyStoreRequest = {
     val __obj = js.Dynamic.literal(CustomKeyStoreId = CustomKeyStoreId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteCustomKeyStoreRequest]
   }
 }

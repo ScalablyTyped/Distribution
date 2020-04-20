@@ -13,7 +13,6 @@ object TypeofELBv2 {
   @scala.inline
   def apply(Types: TypeofELBv2): TypeofELBv2 = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofELBv2]
   }
 }

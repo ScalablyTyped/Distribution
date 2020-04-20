@@ -16,7 +16,6 @@ object InputParallelismUpdate {
   @scala.inline
   def apply(CountUpdate: InputParallelismCount): InputParallelismUpdate = {
     val __obj = js.Dynamic.literal(CountUpdate = CountUpdate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InputParallelismUpdate]
   }
 }

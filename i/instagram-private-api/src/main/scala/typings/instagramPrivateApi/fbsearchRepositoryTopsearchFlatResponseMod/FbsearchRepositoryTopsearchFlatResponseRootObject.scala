@@ -22,7 +22,6 @@ object FbsearchRepositoryTopsearchFlatResponseRootObject {
     status: String
   ): FbsearchRepositoryTopsearchFlatResponseRootObject = {
     val __obj = js.Dynamic.literal(clear_client_cache = clear_client_cache.asInstanceOf[js.Any], has_more = has_more.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], rank_token = rank_token.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FbsearchRepositoryTopsearchFlatResponseRootObject]
   }
 }

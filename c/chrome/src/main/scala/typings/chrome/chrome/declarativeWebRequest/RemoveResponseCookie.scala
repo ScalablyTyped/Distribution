@@ -12,7 +12,6 @@ object RemoveResponseCookie {
   @scala.inline
   def apply(filter: ResponseCookie): RemoveResponseCookie = {
     val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RemoveResponseCookie]
   }
 }

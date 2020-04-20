@@ -12,7 +12,6 @@ object AnonDep {
   @scala.inline
   def apply(dep: js.Array[String]): AnonDep = {
     val __obj = js.Dynamic.literal(dep = dep.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDep]
   }
 }

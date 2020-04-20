@@ -12,7 +12,6 @@ object AnonEnumValuesAnonRejected {
   @scala.inline
   def apply(enumValues: AnonRejected): AnonEnumValuesAnonRejected = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEnumValuesAnonRejected]
   }
 }

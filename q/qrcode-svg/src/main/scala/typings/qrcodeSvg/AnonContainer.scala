@@ -15,7 +15,6 @@ object AnonContainer {
   @scala.inline
   def apply(container: svg | g | none): AnonContainer = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonContainer]
   }
 }

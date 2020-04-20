@@ -129,7 +129,7 @@ abstract class Light protected () extends Node {
     * Gets the layer id use to find what meshes are not impacted by the light.
     * Inactive if 0
     */
-  def excludeWithLayerMask(): Double = js.native
+  def excludeWithLayerMask: Double = js.native
   /**
     * Sets the layer id use to find what meshes are not impacted by the light.
     * Inactive if 0
@@ -138,7 +138,7 @@ abstract class Light protected () extends Node {
   /**
     * Gets the meshes not impacted by this light.
     */
-  def excludedMeshes(): js.Array[AbstractMesh] = js.native
+  def excludedMeshes: js.Array[AbstractMesh] = js.native
   /**
     * Sets the meshes not impacted by this light.
     */
@@ -167,7 +167,7 @@ abstract class Light protected () extends Node {
     * Gets the layer id use to find what meshes are impacted by the light.
     * Inactive if 0
     */
-  def includeOnlyWithLayerMask(): Double = js.native
+  def includeOnlyWithLayerMask: Double = js.native
   /**
     * Sets the layer id use to find what meshes are impacted by the light.
     * Inactive if 0
@@ -176,7 +176,7 @@ abstract class Light protected () extends Node {
   /**
     * Gets the only meshes impacted by this light.
     */
-  def includedOnlyMeshes(): js.Array[AbstractMesh] = js.native
+  def includedOnlyMeshes: js.Array[AbstractMesh] = js.native
   /**
     * Sets the only meshes impacted by this light.
     */
@@ -185,7 +185,7 @@ abstract class Light protected () extends Node {
     * Gets the photometric scale used to interpret the intensity.
     * This is only relevant with PBR Materials where the light intensity can be defined in a physical way.
     */
-  def intensityMode(): Double = js.native
+  def intensityMode: Double = js.native
   /**
     * Sets the photometric scale used to interpret the intensity.
     * This is only relevant with PBR Materials where the light intensity can be defined in a physical way.
@@ -194,7 +194,7 @@ abstract class Light protected () extends Node {
   /**
     * Gets the lightmap mode of this light (should be one of the constants defined by Light.LIGHTMAP_x)
     */
-  def lightmapMode(): Double = js.native
+  def lightmapMode: Double = js.native
   /**
     * Sets the lightmap mode of this light (should be one of the constants defined by Light.LIGHTMAP_x)
     */
@@ -208,7 +208,7 @@ abstract class Light protected () extends Node {
   /**
     * Gets the light radius used by PBR Materials to simulate soft area lights.
     */
-  def radius(): Double = js.native
+  def radius: Double = js.native
   /**
     * sets the light radius used by PBR Materials to simulate soft area lights.
     */
@@ -217,7 +217,7 @@ abstract class Light protected () extends Node {
     * Defines how far from the source the light is impacting in scene units.
     * Note: Unused in PBR material as the distance light falloff is defined following the inverse squared falloff.
     */
-  def range(): Double = js.native
+  def range: Double = js.native
   /**
     * Defines how far from the source the light is impacting in scene units.
     * Note: Unused in PBR material as the distance light falloff is defined following the inverse squared falloff.
@@ -232,7 +232,7 @@ abstract class Light protected () extends Node {
     * Gets wether or not the shadows are enabled for this light. This can help turning off/on shadow without detaching
     * the current shadow generator.
     */
-  def shadowEnabled(): Boolean = js.native
+  def shadowEnabled: Boolean = js.native
   /**
     * Sets wether or not the shadows are enabled for this light. This can help turning off/on shadow without detaching
     * the current shadow generator.

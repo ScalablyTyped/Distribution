@@ -15,10 +15,16 @@ object reflexboxStrings {
   sealed trait fontWeights extends js.Object
   
   @js.native
+  sealed trait key extends js.Object
+  
+  @js.native
   sealed trait letterSpacings extends js.Object
   
   @js.native
   sealed trait lineHeights extends js.Object
+  
+  @js.native
+  sealed trait ref extends js.Object
   
   @js.native
   sealed trait space extends js.Object
@@ -30,9 +36,13 @@ object reflexboxStrings {
   @scala.inline
   def fontWeights: fontWeights = "fontWeights".asInstanceOf[fontWeights]
   @scala.inline
+  def key: key = "key".asInstanceOf[key]
+  @scala.inline
   def letterSpacings: letterSpacings = "letterSpacings".asInstanceOf[letterSpacings]
   @scala.inline
   def lineHeights: lineHeights = "lineHeights".asInstanceOf[lineHeights]
+  @scala.inline
+  def ref: ref = "ref".asInstanceOf[ref]
   @scala.inline
   def space: space = "space".asInstanceOf[space]
 }

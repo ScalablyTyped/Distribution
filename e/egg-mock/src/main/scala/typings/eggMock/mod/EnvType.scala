@@ -15,16 +15,14 @@ trait EnvType extends js.Object
 
 object EnvType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def default: typings.eggMock.eggMockStrings.default = "default".asInstanceOf[typings.eggMock.eggMockStrings.default]
   @scala.inline
-  def default: typings.eggMock.eggMockStrings.default = this.cast("default")
+  def local: typings.eggMock.eggMockStrings.local = "local".asInstanceOf[typings.eggMock.eggMockStrings.local]
   @scala.inline
-  def local: typings.eggMock.eggMockStrings.local = this.cast("local")
+  def prod: typings.eggMock.eggMockStrings.prod = "prod".asInstanceOf[typings.eggMock.eggMockStrings.prod]
   @scala.inline
-  def prod: typings.eggMock.eggMockStrings.prod = this.cast("prod")
+  def test: typings.eggMock.eggMockStrings.test = "test".asInstanceOf[typings.eggMock.eggMockStrings.test]
   @scala.inline
-  def test: typings.eggMock.eggMockStrings.test = this.cast("test")
-  @scala.inline
-  def unittest: typings.eggMock.eggMockStrings.unittest = this.cast("unittest")
+  def unittest: typings.eggMock.eggMockStrings.unittest = "unittest".asInstanceOf[typings.eggMock.eggMockStrings.unittest]
 }
 

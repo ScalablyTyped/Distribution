@@ -18,7 +18,6 @@ object ContainerStateRunning {
   @scala.inline
   def apply(startedAt: String): ContainerStateRunning = {
     val __obj = js.Dynamic.literal(startedAt = startedAt.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ContainerStateRunning]
   }
 }

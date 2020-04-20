@@ -16,7 +16,6 @@ object DescribeNotebookInstanceInput {
   @scala.inline
   def apply(NotebookInstanceName: NotebookInstanceName): DescribeNotebookInstanceInput = {
     val __obj = js.Dynamic.literal(NotebookInstanceName = NotebookInstanceName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeNotebookInstanceInput]
   }
 }

@@ -13,7 +13,6 @@ object PageRendererProps {
   @scala.inline
   def apply(location: WindowLocation): PageRendererProps = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PageRendererProps]
   }
 }

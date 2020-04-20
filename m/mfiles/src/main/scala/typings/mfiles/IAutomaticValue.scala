@@ -24,7 +24,6 @@ object IAutomaticValue {
     Clone: () => IAutomaticValue
   ): IAutomaticValue = {
     val __obj = js.Dynamic.literal(ANSIncrement = ANSIncrement.asInstanceOf[js.Any], ANVCode = ANVCode.asInstanceOf[js.Any], CVSExpression = CVSExpression.asInstanceOf[js.Any], CVVCode = CVVCode.asInstanceOf[js.Any], CalculationOrderNumber = CalculationOrderNumber.asInstanceOf[js.Any], Clone = js.Any.fromFunction0(Clone))
-  
     __obj.asInstanceOf[IAutomaticValue]
   }
 }

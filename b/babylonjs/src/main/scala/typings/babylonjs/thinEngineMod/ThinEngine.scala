@@ -524,8 +524,8 @@ class ThinEngine protected () extends js.Object {
     samples: Double
   ): Nullable[WebGLRenderbuffer] = js.native
   /** @hidden */
-  def _shouldUseHighPrecisionShader(): Boolean = js.native
-  /* protected */ def _supportsHardwareTextureRescaling(): Boolean = js.native
+  def _shouldUseHighPrecisionShader: Boolean = js.native
+  /* protected */ def _supportsHardwareTextureRescaling: Boolean = js.native
   /** @hidden */
   def _unpackFlipY(value: Boolean): Unit = js.native
   /** @hidden */
@@ -581,7 +581,7 @@ class ThinEngine protected () extends js.Object {
   /**
     * Gets the alpha state manager
     */
-  def alphaState(): AlphaState = js.native
+  def alphaState: AlphaState = js.native
   /**
     * Apply all cached states (depth, culling, stencil and alpha)
     */
@@ -1341,15 +1341,15 @@ class ThinEngine protected () extends js.Object {
   /**
     * Gets the current viewport
     */
-  def currentViewport(): Nullable[IViewportLike] = js.native
+  def currentViewport: Nullable[IViewportLike] = js.native
   /**
     * Gets the depth culling state manager
     */
-  def depthCullingState(): DepthCullingState = js.native
+  def depthCullingState: DepthCullingState = js.native
   /**
     * Returns a string describing the current engine
     */
-  def description(): String = js.native
+  def description: String = js.native
   /**
     * Disable the attribute corresponding to the location in parameter
     * @param attributeLocation defines the attribute location of the attribute to disable
@@ -1373,7 +1373,7 @@ class ThinEngine protected () extends js.Object {
     * Gets or sets a boolean indicating if resources should be retained to be able to handle context lost events
     * @see http://doc.babylonjs.com/how_to/optimizing_your_scene#handling-webgl-context-lost
     */
-  def doNotHandleContextLost(): Boolean = js.native
+  def doNotHandleContextLost: Boolean = js.native
   def doNotHandleContextLost(value: Boolean): js.Any = js.native
   /**
     * Send a draw order
@@ -1422,19 +1422,19 @@ class ThinEngine protected () extends js.Object {
   /**
     * Gets the default empty cube texture
     */
-  def emptyCubeTexture(): InternalTexture = js.native
+  def emptyCubeTexture: InternalTexture = js.native
   /**
     * Gets the default empty texture
     */
-  def emptyTexture(): InternalTexture = js.native
+  def emptyTexture: InternalTexture = js.native
   /**
     * Gets the default empty 2D array texture
     */
-  def emptyTexture2DArray(): InternalTexture = js.native
+  def emptyTexture2DArray: InternalTexture = js.native
   /**
     * Gets the default empty 3D texture
     */
-  def emptyTexture3D(): InternalTexture = js.native
+  def emptyTexture3D: InternalTexture = js.native
   /**
     * Activates an effect, mkaing it the current one (ie. the one used for rendering)
     * @param effect defines the effect to activate
@@ -1549,12 +1549,12 @@ class ThinEngine protected () extends js.Object {
   /**
     * Returns true if the stencil buffer has been enabled through the creation option of the context.
     */
-  def isStencilEnable(): Boolean = js.native
+  def isStencilEnable: Boolean = js.native
   /**
     * Gets a boolean indicating that only power of 2 textures are supported
     * Please note that you can still use non power of 2 textures but in this case the engine will forcefully convert them
     */
-  def needPOTTextures(): Boolean = js.native
+  def needPOTTextures: Boolean = js.native
   /**
     * Reads pixels from the current frame buffer. Please note that this function can be slow
     * @param x defines the x coordinate of the rectangle where pixels must be read
@@ -1772,7 +1772,7 @@ class ThinEngine protected () extends js.Object {
   /**
     * Gets the stencil state manager
     */
-  def stencilState(): StencilState = js.native
+  def stencilState: StencilState = js.native
   /**
     * stop executing a render loop function and remove it from the execution array
     * @param renderFunction defines the function to be removed. If not provided all functions will be removed.
@@ -1783,15 +1783,15 @@ class ThinEngine protected () extends js.Object {
     * Gets a boolean indicating that the engine supports uniform buffers
     * @see http://doc.babylonjs.com/features/webgl2#uniform-buffer-objets
     */
-  def supportsUniformBuffers(): Boolean = js.native
+  def supportsUniformBuffers: Boolean = js.native
   /**
     * Gets the list of texture formats in use
     */
-  def textureFormatInUse(): Nullable[String] = js.native
+  def textureFormatInUse: Nullable[String] = js.native
   /**
     * Gets the list of texture formats supported
     */
-  def texturesSupported(): js.Array[String] = js.native
+  def texturesSupported: js.Array[String] = js.native
   /**
     * Unbind the current render target texture from the webGL context
     * @param texture defines the render target texture to unbind
@@ -1985,7 +1985,7 @@ class ThinEngine protected () extends js.Object {
   /**
     * Gets version of the current webGL context
     */
-  def webGLVersion(): Double = js.native
+  def webGLVersion: Double = js.native
   /**
     * Force the entire cache to be cleared
     * You should not have to use this function unless your engine needs to share the webGL context with another engine
@@ -2038,7 +2038,7 @@ object ThinEngine extends js.Object {
   /**
     * Returns the current npm package of the sdk
     */
-  def NpmPackage(): String = js.native
+  def NpmPackage: String = js.native
   /**
     * Queue a new function into the requested animation frame pool (ie. this function will be executed byt the browser for the next frame)
     * @param func - the function to be called
@@ -2050,12 +2050,12 @@ object ThinEngine extends js.Object {
   /**
     * Gets or sets the relative url used to load shaders if using the engine in non-minified mode
     */
-  def ShadersRepository(): String = js.native
+  def ShadersRepository: String = js.native
   def ShadersRepository(value: String): js.Any = js.native
   /**
     * Returns the current version of the framework
     */
-  def Version(): String = js.native
+  def Version: String = js.native
   /* protected */ def _ConcatenateShader(source: String, defines: Nullable[String]): String = js.native
   /* protected */ def _ConcatenateShader(source: String, defines: Nullable[String], shaderVersion: String): String = js.native
   /**

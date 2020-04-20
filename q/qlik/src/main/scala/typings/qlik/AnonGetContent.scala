@@ -17,7 +17,6 @@ object AnonGetContent {
     setContent: (String, String) => Unit
   ): AnonGetContent = {
     val __obj = js.Dynamic.literal(getContent = js.Any.fromFunction2(getContent), setContent = js.Any.fromFunction2(setContent))
-  
     __obj.asInstanceOf[AnonGetContent]
   }
 }

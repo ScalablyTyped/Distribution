@@ -22,7 +22,6 @@ object DecryptResultdatastringRe {
     signatures: js.Array[AnonValid]
   ): DecryptResultdatastringRe = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], signatures = signatures.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DecryptResultdatastringRe]
   }
 }

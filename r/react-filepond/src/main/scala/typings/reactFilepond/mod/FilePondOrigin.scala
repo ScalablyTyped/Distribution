@@ -13,12 +13,10 @@ trait FilePondOrigin extends js.Object
 
 object FilePondOrigin {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def input: typings.reactFilepond.reactFilepondStrings.input = "input".asInstanceOf[typings.reactFilepond.reactFilepondStrings.input]
   @scala.inline
-  def input: typings.reactFilepond.reactFilepondStrings.input = this.cast("input")
+  def limbo: typings.reactFilepond.reactFilepondStrings.limbo = "limbo".asInstanceOf[typings.reactFilepond.reactFilepondStrings.limbo]
   @scala.inline
-  def limbo: typings.reactFilepond.reactFilepondStrings.limbo = this.cast("limbo")
-  @scala.inline
-  def local: typings.reactFilepond.reactFilepondStrings.local = this.cast("local")
+  def local: typings.reactFilepond.reactFilepondStrings.local = "local".asInstanceOf[typings.reactFilepond.reactFilepondStrings.local]
 }
 

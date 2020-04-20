@@ -21,7 +21,6 @@ object IFileActivatedEventArgs {
     verb: String
   ): IFileActivatedEventArgs = {
     val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], previousExecutionState = previousExecutionState.asInstanceOf[js.Any], splashScreen = splashScreen.asInstanceOf[js.Any], verb = verb.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IFileActivatedEventArgs]
   }
 }

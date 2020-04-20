@@ -14,7 +14,6 @@ object AnonLocations {
   @scala.inline
   def apply(locations: AnonEnum, privacies: AnonEnum, tags: AnonProperties): AnonLocations = {
     val __obj = js.Dynamic.literal(locations = locations.asInstanceOf[js.Any], privacies = privacies.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLocations]
   }
 }

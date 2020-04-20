@@ -14,7 +14,6 @@ object DeleteFileResultItem {
   @scala.inline
   def apply(errMsg: String, fileID: String, status: Double): DeleteFileResultItem = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], fileID = fileID.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteFileResultItem]
   }
 }

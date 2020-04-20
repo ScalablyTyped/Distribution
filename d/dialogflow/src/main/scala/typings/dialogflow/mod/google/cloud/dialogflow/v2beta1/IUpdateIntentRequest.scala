@@ -10,7 +10,9 @@ trait IUpdateIntentRequest extends js.Object {
   /** UpdateIntentRequest intent */
   var intent: js.UndefOr[IIntent | Null] = js.undefined
   /** UpdateIntentRequest intentView */
-  var intentView: js.UndefOr[IntentView | String | Null] = js.undefined
+  var intentView: js.UndefOr[
+    IntentView | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.IntentView * / any */ String) | Null
+  ] = js.undefined
   /** UpdateIntentRequest languageCode */
   var languageCode: js.UndefOr[String | Null] = js.undefined
   /** UpdateIntentRequest updateMask */
@@ -21,7 +23,7 @@ object IUpdateIntentRequest {
   @scala.inline
   def apply(
     intent: IIntent = null,
-    intentView: IntentView | String = null,
+    intentView: IntentView | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.IntentView * / any */ String) = null,
     languageCode: String = null,
     updateMask: IFieldMask = null
   ): IUpdateIntentRequest = {

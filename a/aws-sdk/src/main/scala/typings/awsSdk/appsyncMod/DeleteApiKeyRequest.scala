@@ -20,7 +20,6 @@ object DeleteApiKeyRequest {
   @scala.inline
   def apply(apiId: String, id: String): DeleteApiKeyRequest = {
     val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteApiKeyRequest]
   }
 }

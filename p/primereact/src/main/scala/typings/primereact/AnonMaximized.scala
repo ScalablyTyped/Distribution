@@ -14,7 +14,6 @@ object AnonMaximized {
   @scala.inline
   def apply(maximized: Boolean, originalEvent: Event_): AnonMaximized = {
     val __obj = js.Dynamic.literal(maximized = maximized.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMaximized]
   }
 }

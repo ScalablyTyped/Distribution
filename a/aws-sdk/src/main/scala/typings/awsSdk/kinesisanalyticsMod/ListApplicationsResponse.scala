@@ -20,7 +20,6 @@ object ListApplicationsResponse {
   @scala.inline
   def apply(ApplicationSummaries: ApplicationSummaries, HasMoreApplications: BooleanObject): ListApplicationsResponse = {
     val __obj = js.Dynamic.literal(ApplicationSummaries = ApplicationSummaries.asInstanceOf[js.Any], HasMoreApplications = HasMoreApplications.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListApplicationsResponse]
   }
 }

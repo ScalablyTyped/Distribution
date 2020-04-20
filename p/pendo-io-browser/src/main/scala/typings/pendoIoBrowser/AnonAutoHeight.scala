@@ -24,7 +24,6 @@ object AnonAutoHeight {
     width: Double
   ): AnonAutoHeight = {
     val __obj = js.Dynamic.literal(autoHeight = autoHeight.asInstanceOf[js.Any], css = css.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAutoHeight]
   }
 }

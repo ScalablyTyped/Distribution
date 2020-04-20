@@ -15,7 +15,6 @@ object AnonOnReinit {
   @scala.inline
   def apply(on$Reinit: () => Unit, on$ValidationPass: () => Unit): AnonOnReinit = {
     val __obj = js.Dynamic.literal(on$Reinit = js.Any.fromFunction0(on$Reinit), on$ValidationPass = js.Any.fromFunction0(on$ValidationPass))
-  
     __obj.asInstanceOf[AnonOnReinit]
   }
 }

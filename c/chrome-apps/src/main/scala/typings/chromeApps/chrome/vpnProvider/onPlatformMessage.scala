@@ -4,14 +4,22 @@ import org.scalablytyped.runtime.TopLevel
 import typings.chromeApps.AnonDISCONNECTED
 import typings.chromeApps.chrome.ToStringLiteral
 import typings.chromeApps.chrome.events.Event
-import typings.chromeApps.chromeAppsStrings.connected_
-import typings.chromeApps.chromeAppsStrings.disconnected_
-import typings.chromeApps.chromeAppsStrings.error
+import typings.chromeApps.chromeAppsStrings.CONNECTED
+import typings.chromeApps.chromeAppsStrings.DISCONNECTED
+import typings.chromeApps.chromeAppsStrings.ERROR
+import typings.chromeApps.chromeAppsStrings.LINK_CHANGED
+import typings.chromeApps.chromeAppsStrings.LINK_DOWN
+import typings.chromeApps.chromeAppsStrings.LINK_UP
+import typings.chromeApps.chromeAppsStrings.RESUME
+import typings.chromeApps.chromeAppsStrings.SUSPEND
+import typings.chromeApps.chromeAppsStrings.connected__
+import typings.chromeApps.chromeAppsStrings.disconnected__
+import typings.chromeApps.chromeAppsStrings.error_
 import typings.chromeApps.chromeAppsStrings.linkChanged
 import typings.chromeApps.chromeAppsStrings.linkDown
 import typings.chromeApps.chromeAppsStrings.linkUp
-import typings.chromeApps.chromeAppsStrings.resume
-import typings.chromeApps.chromeAppsStrings.suspend
+import typings.chromeApps.chromeAppsStrings.resume_
+import typings.chromeApps.chromeAppsStrings.suspend_
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,10 +35,10 @@ object onPlatformMessage
           /* id */ String, 
           /* message */ ToStringLiteral[
             AnonDISCONNECTED, 
-            String, 
+            CONNECTED | DISCONNECTED | ERROR | LINK_DOWN | LINK_UP | LINK_CHANGED | SUSPEND | RESUME, 
             Exclude[
-              String, 
-              linkUp | linkChanged | suspend | resume | linkDown | connected_ | error | disconnected_
+              CONNECTED | DISCONNECTED | ERROR | LINK_DOWN | LINK_UP | LINK_CHANGED | SUSPEND | RESUME, 
+              linkUp | linkChanged | suspend_ | resume_ | linkDown | connected__ | error_ | disconnected__
             ]
           ], 
           /* error */ String, 

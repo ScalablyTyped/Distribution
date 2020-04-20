@@ -14,7 +14,6 @@ object ElementObject {
   @scala.inline
   def apply(element: ReactElement | ReactType[_]): ElementObject = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ElementObject]
   }
 }

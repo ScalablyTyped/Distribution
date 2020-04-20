@@ -14,7 +14,6 @@ object AnonKeyCode {
   @scala.inline
   def apply(KeyCode: ReturnInteger, Shift: Double): AnonKeyCode = {
     val __obj = js.Dynamic.literal(KeyCode = KeyCode.asInstanceOf[js.Any], Shift = Shift.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonKeyCode]
   }
 }

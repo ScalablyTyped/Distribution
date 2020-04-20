@@ -26,6 +26,11 @@ trait IFocusZone extends js.Object {
   def focusElement(): Boolean = js.native
   def focusElement(childElement: HTMLElement): Boolean = js.native
   /**
+    * Sets focus to the last tabbable item in the zone.
+    * @returns True if focus could be set to an active element, false if no operation was taken.
+    */
+  def focusLast(): Boolean = js.native
+  /**
     * Forces horizontal alignment in the context of vertical arrowing to use specific point as the reference, rather
     * than a center based on the last horizontal motion.
     * @param point - the new reference point.

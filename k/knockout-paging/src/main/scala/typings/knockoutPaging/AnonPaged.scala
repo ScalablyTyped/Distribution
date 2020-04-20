@@ -12,7 +12,6 @@ object AnonPaged {
   @scala.inline
   def apply(paged: js.Any): AnonPaged = {
     val __obj = js.Dynamic.literal(paged = paged.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPaged]
   }
 }

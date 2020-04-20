@@ -20,7 +20,7 @@ class GetIntentRequest () extends IGetIntentRequest {
   def this(properties: IGetIntentRequest) = this()
   /** GetIntentRequest intentView. */
   @JSName("intentView")
-  var intentView_GetIntentRequest: IntentView | String = js.native
+  var intentView_GetIntentRequest: IntentView | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.IntentView * / any */ String) = js.native
   /** GetIntentRequest languageCode. */
   @JSName("languageCode")
   var languageCode_GetIntentRequest: String = js.native

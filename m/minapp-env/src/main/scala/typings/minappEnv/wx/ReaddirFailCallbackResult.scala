@@ -18,7 +18,6 @@ object ReaddirFailCallbackResult {
   @scala.inline
   def apply(errMsg: String): ReaddirFailCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReaddirFailCallbackResult]
   }
 }

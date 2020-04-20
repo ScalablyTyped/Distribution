@@ -18,22 +18,20 @@ trait GoogleActionsV2OrdersLineItemType extends js.Object
 
 object GoogleActionsV2OrdersLineItemType {
   @scala.inline
-  def DELIVERY: typings.actionsOnGoogle.actionsOnGoogleStrings.DELIVERY = this.cast("DELIVERY")
+  def DELIVERY: typings.actionsOnGoogle.actionsOnGoogleStrings.DELIVERY = "DELIVERY".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.DELIVERY]
   @scala.inline
-  def DISCOUNT: typings.actionsOnGoogle.actionsOnGoogleStrings.DISCOUNT = this.cast("DISCOUNT")
+  def DISCOUNT: typings.actionsOnGoogle.actionsOnGoogleStrings.DISCOUNT = "DISCOUNT".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.DISCOUNT]
   @scala.inline
-  def FEE: typings.actionsOnGoogle.actionsOnGoogleStrings.FEE = this.cast("FEE")
+  def FEE: typings.actionsOnGoogle.actionsOnGoogleStrings.FEE = "FEE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.FEE]
   @scala.inline
-  def GRATUITY: typings.actionsOnGoogle.actionsOnGoogleStrings.GRATUITY = this.cast("GRATUITY")
+  def GRATUITY: typings.actionsOnGoogle.actionsOnGoogleStrings.GRATUITY = "GRATUITY".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.GRATUITY]
   @scala.inline
-  def REGULAR: typings.actionsOnGoogle.actionsOnGoogleStrings.REGULAR = this.cast("REGULAR")
+  def REGULAR: typings.actionsOnGoogle.actionsOnGoogleStrings.REGULAR = "REGULAR".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.REGULAR]
   @scala.inline
-  def SUBTOTAL: typings.actionsOnGoogle.actionsOnGoogleStrings.SUBTOTAL = this.cast("SUBTOTAL")
+  def SUBTOTAL: typings.actionsOnGoogle.actionsOnGoogleStrings.SUBTOTAL = "SUBTOTAL".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.SUBTOTAL]
   @scala.inline
-  def TAX: typings.actionsOnGoogle.actionsOnGoogleStrings.TAX = this.cast("TAX")
+  def TAX: typings.actionsOnGoogle.actionsOnGoogleStrings.TAX = "TAX".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.TAX]
   @scala.inline
-  def UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.UNSPECIFIED = this.cast("UNSPECIFIED")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.UNSPECIFIED = "UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.UNSPECIFIED]
 }
 

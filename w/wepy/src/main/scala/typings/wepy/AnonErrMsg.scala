@@ -13,7 +13,6 @@ object AnonErrMsg {
   @scala.inline
   def apply(errMsg: String, isEnrolled: Boolean): AnonErrMsg = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], isEnrolled = isEnrolled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonErrMsg]
   }
 }

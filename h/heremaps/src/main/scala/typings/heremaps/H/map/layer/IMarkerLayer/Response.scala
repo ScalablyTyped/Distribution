@@ -19,7 +19,6 @@ object Response {
   @scala.inline
   def apply(markers: js.Array[AbstractMarker], total: Double): Response = {
     val __obj = js.Dynamic.literal(markers = markers.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Response]
   }
 }

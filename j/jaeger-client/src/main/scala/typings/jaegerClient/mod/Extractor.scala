@@ -13,7 +13,6 @@ object Extractor {
   @scala.inline
   def apply(extract: js.Any => SpanContext | Null): Extractor = {
     val __obj = js.Dynamic.literal(extract = js.Any.fromFunction1(extract))
-  
     __obj.asInstanceOf[Extractor]
   }
 }

@@ -13,7 +13,6 @@ object TypeofFMS {
   @scala.inline
   def apply(Types: TypeofFMS): TypeofFMS = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofFMS]
   }
 }

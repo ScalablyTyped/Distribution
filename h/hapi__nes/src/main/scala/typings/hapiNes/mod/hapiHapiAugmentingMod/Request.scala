@@ -13,7 +13,6 @@ object Request {
   @scala.inline
   def apply(socket: Socket): Request = {
     val __obj = js.Dynamic.literal(socket = socket.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Request]
   }
 }

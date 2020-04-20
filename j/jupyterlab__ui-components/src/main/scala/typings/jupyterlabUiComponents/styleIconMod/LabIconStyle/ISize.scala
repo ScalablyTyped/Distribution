@@ -14,14 +14,12 @@ trait ISize extends js.Object
 
 object ISize {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def large: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.large = "large".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.large]
   @scala.inline
-  def large: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.large = this.cast("large")
+  def normal: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.normal = "normal".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.normal]
   @scala.inline
-  def normal: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.normal = this.cast("normal")
+  def small: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.small = "small".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.small]
   @scala.inline
-  def small: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.small = this.cast("small")
-  @scala.inline
-  def xlarge: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.xlarge = this.cast("xlarge")
+  def xlarge: typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.xlarge = "xlarge".asInstanceOf[typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.xlarge]
 }
 

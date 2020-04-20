@@ -86,7 +86,7 @@ class FileBrowserModel_ protected () extends IDisposable {
   /**
     * A signal emitted when the file browser model loses connection.
     */
-  def connectionFailure(): ISignal[this.type, Error] = js.native
+  def connectionFailure: ISignal[this.type, Error] = js.native
   /**
     * Dispose of the resources held by the object.
     *
@@ -112,16 +112,16 @@ class FileBrowserModel_ protected () extends IDisposable {
   /**
     * The drive name that gets prepended to the path.
     */
-  def driveName(): String = js.native
+  def driveName: String = js.native
   /**
     * Get the file path changed signal.
     */
-  def fileChanged(): ISignal[this.type, IChangedArgs] = js.native
+  def fileChanged: ISignal[this.type, IChangedArgs] = js.native
   /**
     * Get whether the model is disposed.
     */
   @JSName("isDisposed")
-  def isDisposed_MFileBrowserModel_(): Boolean = js.native
+  def isDisposed_MFileBrowserModel_ : Boolean = js.native
   /**
     * Create an iterator over the model's items.
     *
@@ -131,11 +131,11 @@ class FileBrowserModel_ protected () extends IDisposable {
   /**
     * Get the current path.
     */
-  def path(): String = js.native
+  def path: String = js.native
   /**
     * A signal emitted when the path changes.
     */
-  def pathChanged(): ISignal[
+  def pathChanged: ISignal[
     this.type, 
     typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[String, String, String]
   ] = js.native
@@ -146,7 +146,7 @@ class FileBrowserModel_ protected () extends IDisposable {
   /**
     * A signal emitted when the directory listing is refreshed.
     */
-  def refreshed(): ISignal[this.type, Unit] = js.native
+  def refreshed: ISignal[this.type, Unit] = js.native
   /**
     * Restore the state of the file browser.
     *
@@ -166,7 +166,7 @@ class FileBrowserModel_ protected () extends IDisposable {
   /**
     * A promise that resolves when the model is first restored.
     */
-  def restored(): js.Promise[Unit] = js.native
+  def restored: js.Promise[Unit] = js.native
   /**
     * Create an iterator over the active sessions in the directory.
     *
@@ -176,7 +176,7 @@ class FileBrowserModel_ protected () extends IDisposable {
   /**
     * Get the kernel spec models.
     */
-  def specs(): ISpecModels | Null = js.native
+  def specs: ISpecModels | Null = js.native
   /**
     * Upload a `File` object.
     *
@@ -193,7 +193,7 @@ class FileBrowserModel_ protected () extends IDisposable {
   /**
     * A signal emitted when an upload progresses.
     */
-  def uploadChanged(): ISignal[
+  def uploadChanged: ISignal[
     this.type, 
     typings.jupyterlabCoreutils.interfacesMod.IChangedArgs[IUploadModel | Null, IUploadModel | Null, String]
   ] = js.native

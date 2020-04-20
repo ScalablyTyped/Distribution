@@ -39,7 +39,6 @@ object IMarkerLayer_ {
     requestMarkers: (Rect, Double, Boolean, Point) => Response | TiledResponse
   ): IMarkerLayer_ = {
     val __obj = js.Dynamic.literal(requestDomMarkers = js.Any.fromFunction4(requestDomMarkers), requestMarkers = js.Any.fromFunction4(requestMarkers))
-  
     __obj.asInstanceOf[IMarkerLayer_]
   }
 }

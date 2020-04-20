@@ -20,7 +20,6 @@ object SqlRunConfiguration {
   @scala.inline
   def apply(InputId: Id, InputStartingPositionConfiguration: InputStartingPositionConfiguration): SqlRunConfiguration = {
     val __obj = js.Dynamic.literal(InputId = InputId.asInstanceOf[js.Any], InputStartingPositionConfiguration = InputStartingPositionConfiguration.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SqlRunConfiguration]
   }
 }

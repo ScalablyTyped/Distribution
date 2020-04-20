@@ -12,7 +12,6 @@ object AnonTransformArray {
   @scala.inline
   def apply(transform: js.Array[AnonRotate]): AnonTransformArray = {
     val __obj = js.Dynamic.literal(transform = transform.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTransformArray]
   }
 }

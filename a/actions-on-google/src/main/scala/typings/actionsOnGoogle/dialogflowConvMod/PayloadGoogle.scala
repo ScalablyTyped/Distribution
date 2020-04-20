@@ -12,7 +12,6 @@ object PayloadGoogle {
   @scala.inline
   def apply(google: GoogleAssistantResponse): PayloadGoogle = {
     val __obj = js.Dynamic.literal(google = google.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PayloadGoogle]
   }
 }

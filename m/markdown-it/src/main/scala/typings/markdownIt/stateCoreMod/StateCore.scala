@@ -1,19 +1,25 @@
 package typings.markdownIt.stateCoreMod
 
-import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.Instantiable3
 import typings.markdownIt.libMod.MarkdownIt
+import typings.markdownIt.tokenMod.Nesting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait StateCore
-  extends /** Return any for a yet untyped property */
-/* undocumented */ StringDictionary[js.Any] {
+trait StateCore extends js.Object {
+  var Token: Instantiable3[
+    /* type */ String, 
+    /* tag */ String, 
+    /* nesting */ Nesting, 
+    typings.markdownIt.tokenMod.^
+  ]
   var env: js.Any
-  var level: Double
-  /** Link to parser instance */
+  var inlineMode: Boolean
+  /**
+    * link to parser instance
+    */
   var md: MarkdownIt
-  /** The markdown source code that is being parsed. */
   var src: String
   var tokens: js.Array[typings.markdownIt.tokenMod.^]
 }
@@ -21,16 +27,19 @@ trait StateCore
 object StateCore {
   @scala.inline
   def apply(
+    Token: Instantiable3[
+      /* type */ String, 
+      /* tag */ String, 
+      /* nesting */ Nesting, 
+      typings.markdownIt.tokenMod.^
+    ],
     env: js.Any,
-    level: Double,
+    inlineMode: Boolean,
     md: MarkdownIt,
     src: String,
-    tokens: js.Array[typings.markdownIt.tokenMod.^],
-    StringDictionary: /** Return any for a yet untyped property */
-  /* undocumented */ StringDictionary[js.Any] = null
+    tokens: js.Array[typings.markdownIt.tokenMod.^]
   ): StateCore = {
-    val __obj = js.Dynamic.literal(env = env.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], md = md.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(Token = Token.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], inlineMode = inlineMode.asInstanceOf[js.Any], md = md.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateCore]
   }
 }

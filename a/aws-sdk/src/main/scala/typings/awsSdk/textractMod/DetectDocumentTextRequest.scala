@@ -16,7 +16,6 @@ object DetectDocumentTextRequest {
   @scala.inline
   def apply(Document: Document): DetectDocumentTextRequest = {
     val __obj = js.Dynamic.literal(Document = Document.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DetectDocumentTextRequest]
   }
 }

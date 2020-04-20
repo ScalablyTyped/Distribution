@@ -15,7 +15,6 @@ object AnonKount {
   @scala.inline
   def apply(client: Client_, kount: Boolean, paypal: Boolean): AnonKount = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], kount = kount.asInstanceOf[js.Any], paypal = paypal.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonKount]
   }
 }

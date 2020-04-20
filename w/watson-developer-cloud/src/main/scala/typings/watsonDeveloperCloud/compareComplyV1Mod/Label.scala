@@ -16,7 +16,6 @@ object Label {
   @scala.inline
   def apply(nature: String, party: String): Label = {
     val __obj = js.Dynamic.literal(nature = nature.asInstanceOf[js.Any], party = party.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Label]
   }
 }

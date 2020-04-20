@@ -28,7 +28,6 @@ object Poolable {
   @scala.inline
   def apply(init: () => Unit, reset: () => Unit): Poolable = {
     val __obj = js.Dynamic.literal(init = js.Any.fromFunction0(init), reset = js.Any.fromFunction0(reset))
-  
     __obj.asInstanceOf[Poolable]
   }
 }

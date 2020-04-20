@@ -15,7 +15,6 @@ object TreeWalker {
   @scala.inline
   def apply(current: () => Node, next: () => Node, prev: () => Node): TreeWalker = {
     val __obj = js.Dynamic.literal(current = js.Any.fromFunction0(current), next = js.Any.fromFunction0(next), prev = js.Any.fromFunction0(prev))
-  
     __obj.asInstanceOf[TreeWalker]
   }
 }

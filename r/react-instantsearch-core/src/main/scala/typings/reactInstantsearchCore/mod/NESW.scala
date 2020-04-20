@@ -14,7 +14,6 @@ object NESW {
   @scala.inline
   def apply(northEast: AnonLat, southWest: AnonLat): NESW = {
     val __obj = js.Dynamic.literal(northEast = northEast.asInstanceOf[js.Any], southWest = southWest.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NESW]
   }
 }

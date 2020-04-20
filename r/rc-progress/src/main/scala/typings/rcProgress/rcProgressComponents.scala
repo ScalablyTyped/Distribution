@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 object rcProgressComponents extends rcProgressProps {
   @scala.inline
-  def Circle: ComponentType[CircleProps] = js.constructorOf[typings.rcProgress.mod.Circle].asInstanceOf[typings.react.mod.ComponentType[CircleProps]]
+  def Circle: ComponentType[CircleProps] = js.constructorOf[typings.rcProgress.mod.Circle].asInstanceOf[ComponentType[CircleProps]]
   @scala.inline
-  def Line: ComponentType[LineProps] = js.constructorOf[typings.rcProgress.mod.Line].asInstanceOf[typings.react.mod.ComponentType[LineProps]]
+  def Line: ComponentType[LineProps] = js.constructorOf[typings.rcProgress.mod.Line].asInstanceOf[ComponentType[LineProps]]
 }
 

@@ -37,7 +37,6 @@ object MDCSelectAdapter {
     setValue: String => Unit
   ): MDCSelectAdapter = {
     val __obj = js.Dynamic.literal(activateBottomLine = js.Any.fromFunction0(activateBottomLine), addClass = js.Any.fromFunction1(addClass), deactivateBottomLine = js.Any.fromFunction0(deactivateBottomLine), deregisterInteractionHandler = js.Any.fromFunction2(deregisterInteractionHandler), floatLabel = js.Any.fromFunction1(floatLabel), getSelectedIndex = js.Any.fromFunction0(getSelectedIndex), getValue = js.Any.fromFunction0(getValue), registerInteractionHandler = js.Any.fromFunction2(registerInteractionHandler), removeClass = js.Any.fromFunction1(removeClass), setDisabled = js.Any.fromFunction1(setDisabled), setSelectedIndex = js.Any.fromFunction1(setSelectedIndex), setValue = js.Any.fromFunction1(setValue))
-  
     __obj.asInstanceOf[MDCSelectAdapter]
   }
 }

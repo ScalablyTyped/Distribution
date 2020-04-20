@@ -19,7 +19,6 @@ object Source {
   @scala.inline
   def apply(id: String): Source = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Source]
   }
 }

@@ -13,7 +13,6 @@ object DeleteConnectionRequest {
   @scala.inline
   def apply(ConnectionId: string): DeleteConnectionRequest = {
     val __obj = js.Dynamic.literal(ConnectionId = ConnectionId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteConnectionRequest]
   }
 }

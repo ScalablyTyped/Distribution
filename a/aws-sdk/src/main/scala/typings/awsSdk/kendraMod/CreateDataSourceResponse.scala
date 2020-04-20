@@ -16,7 +16,6 @@ object CreateDataSourceResponse {
   @scala.inline
   def apply(Id: DataSourceId): CreateDataSourceResponse = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateDataSourceResponse]
   }
 }

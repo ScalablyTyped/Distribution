@@ -13,7 +13,6 @@ object RankScoreObject {
   @scala.inline
   def apply(rank: Double, score: Double): RankScoreObject = {
     val __obj = js.Dynamic.literal(rank = rank.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RankScoreObject]
   }
 }

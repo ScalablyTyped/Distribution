@@ -24,7 +24,6 @@ object CreateScopeInfo {
     scopeType: GroupScopeType
   ): CreateScopeInfo = {
     val __obj = js.Dynamic.literal(adminGroupDescription = adminGroupDescription.asInstanceOf[js.Any], adminGroupName = adminGroupName.asInstanceOf[js.Any], creatorId = creatorId.asInstanceOf[js.Any], parentScopeId = parentScopeId.asInstanceOf[js.Any], scopeName = scopeName.asInstanceOf[js.Any], scopeType = scopeType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateScopeInfo]
   }
 }

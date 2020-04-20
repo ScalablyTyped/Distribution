@@ -53,7 +53,6 @@ object PolicyEvaluationRecord {
     status: PolicyEvaluationStatus
   ): PolicyEvaluationRecord = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], artifactId = artifactId.asInstanceOf[js.Any], completedDate = completedDate.asInstanceOf[js.Any], configuration = configuration.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], evaluationId = evaluationId.asInstanceOf[js.Any], startedDate = startedDate.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PolicyEvaluationRecord]
   }
 }

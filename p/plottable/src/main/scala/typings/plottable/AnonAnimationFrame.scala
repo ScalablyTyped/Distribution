@@ -17,7 +17,6 @@ object AnonAnimationFrame {
   @scala.inline
   def apply(animationFrame: animationFrame, immediate: immediate, timeout: timeout): AnonAnimationFrame = {
     val __obj = js.Dynamic.literal(animationFrame = animationFrame.asInstanceOf[js.Any], immediate = immediate.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAnimationFrame]
   }
 }

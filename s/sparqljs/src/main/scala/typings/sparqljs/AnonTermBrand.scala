@@ -12,7 +12,6 @@ object AnonTermBrand {
   @scala.inline
   def apply(__termBrand: String): AnonTermBrand = {
     val __obj = js.Dynamic.literal(__termBrand = __termBrand.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTermBrand]
   }
 }

@@ -13,7 +13,6 @@ object AnonIsRemoved {
   @scala.inline
   def apply(isRemoved: Boolean, uniqueName: String): AnonIsRemoved = {
     val __obj = js.Dynamic.literal(isRemoved = isRemoved.asInstanceOf[js.Any], uniqueName = uniqueName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonIsRemoved]
   }
 }

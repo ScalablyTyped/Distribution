@@ -34,7 +34,6 @@ object ISecondaryTileFactory {
     createWithId: String => SecondaryTile
   ): ISecondaryTileFactory = {
     val __obj = js.Dynamic.literal(createTile = js.Any.fromFunction6(createTile), createWideTile = js.Any.fromFunction7(createWideTile), createWithId = js.Any.fromFunction1(createWithId))
-  
     __obj.asInstanceOf[ISecondaryTileFactory]
   }
 }

@@ -27,7 +27,6 @@ object Slow {
   @scala.inline
   def apply(down: Double, latency: Double, rate: Double, up: Double): Slow = {
     val __obj = js.Dynamic.literal(down = down.asInstanceOf[js.Any], latency = latency.asInstanceOf[js.Any], rate = rate.asInstanceOf[js.Any], up = up.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Slow]
   }
 }

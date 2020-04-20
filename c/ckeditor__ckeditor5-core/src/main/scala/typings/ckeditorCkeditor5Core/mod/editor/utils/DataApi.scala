@@ -13,7 +13,6 @@ object DataApi {
   @scala.inline
   def apply(getData: () => String, setData: String => Unit): DataApi = {
     val __obj = js.Dynamic.literal(getData = js.Any.fromFunction0(getData), setData = js.Any.fromFunction1(setData))
-  
     __obj.asInstanceOf[DataApi]
   }
 }

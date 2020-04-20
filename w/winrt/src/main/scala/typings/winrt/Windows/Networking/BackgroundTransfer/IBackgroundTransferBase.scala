@@ -25,7 +25,6 @@ object IBackgroundTransferBase {
     setRequestHeader: (String, String) => Unit
   ): IBackgroundTransferBase = {
     val __obj = js.Dynamic.literal(costPolicy = costPolicy.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], proxyCredential = proxyCredential.asInstanceOf[js.Any], serverCredential = serverCredential.asInstanceOf[js.Any], setRequestHeader = js.Any.fromFunction2(setRequestHeader))
-  
     __obj.asInstanceOf[IBackgroundTransferBase]
   }
 }

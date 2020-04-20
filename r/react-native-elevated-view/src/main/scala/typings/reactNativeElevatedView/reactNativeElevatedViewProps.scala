@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactNativeElevatedViewProps {
   @scala.inline
-  def ReactNativeElevatedViewProps: ElevatedViewProperties.type = typings.reactNativeElevatedView.mod.ElevatedViewProperties
+  def ReactNativeElevatedViewProps: ElevatedViewProperties.type = ElevatedViewProperties
   type ReactNativeElevatedViewProps = ElevatedViewProperties
 }
 

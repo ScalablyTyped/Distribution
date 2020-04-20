@@ -20,7 +20,6 @@ object StartExecutionOutput {
   @scala.inline
   def apply(executionArn: Arn, startDate: Timestamp): StartExecutionOutput = {
     val __obj = js.Dynamic.literal(executionArn = executionArn.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StartExecutionOutput]
   }
 }

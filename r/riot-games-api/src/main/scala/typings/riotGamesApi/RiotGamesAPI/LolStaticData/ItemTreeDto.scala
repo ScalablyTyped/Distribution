@@ -13,7 +13,6 @@ object ItemTreeDto {
   @scala.inline
   def apply(header: String, tags: js.Array[String]): ItemTreeDto = {
     val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ItemTreeDto]
   }
 }

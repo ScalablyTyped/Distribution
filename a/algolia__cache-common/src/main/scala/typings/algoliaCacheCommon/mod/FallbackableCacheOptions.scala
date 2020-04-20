@@ -15,7 +15,6 @@ object FallbackableCacheOptions {
   @scala.inline
   def apply(caches: js.Array[Cache]): FallbackableCacheOptions = {
     val __obj = js.Dynamic.literal(caches = caches.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FallbackableCacheOptions]
   }
 }

@@ -14,7 +14,6 @@ object HostEntry {
   @scala.inline
   def apply(hostname: String, ipAddress: String): HostEntry = {
     val __obj = js.Dynamic.literal(hostname = hostname.asInstanceOf[js.Any], ipAddress = ipAddress.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HostEntry]
   }
 }

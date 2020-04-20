@@ -27,7 +27,6 @@ object ResultOption {
     shareTicket: String
   ): ResultOption = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], referrerInfo = referrerInfo.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any], shareTicket = shareTicket.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResultOption]
   }
 }

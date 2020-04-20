@@ -16,7 +16,6 @@ object DeleteConfigurationAggregatorRequest {
   @scala.inline
   def apply(ConfigurationAggregatorName: ConfigurationAggregatorName): DeleteConfigurationAggregatorRequest = {
     val __obj = js.Dynamic.literal(ConfigurationAggregatorName = ConfigurationAggregatorName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteConfigurationAggregatorRequest]
   }
 }

@@ -16,7 +16,6 @@ object AnonChoices {
   @scala.inline
   def apply(choices: js.Tuple2[babel, v8], description: `Select between Babel and V8 to collect coverage`): AnonChoices = {
     val __obj = js.Dynamic.literal(choices = choices.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonChoices]
   }
 }

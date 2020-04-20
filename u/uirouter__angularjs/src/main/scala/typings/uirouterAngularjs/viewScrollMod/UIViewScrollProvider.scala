@@ -18,7 +18,6 @@ object UIViewScrollProvider {
   @scala.inline
   def apply(useAnchorScroll: () => Unit): UIViewScrollProvider = {
     val __obj = js.Dynamic.literal(useAnchorScroll = js.Any.fromFunction0(useAnchorScroll))
-  
     __obj.asInstanceOf[UIViewScrollProvider]
   }
 }

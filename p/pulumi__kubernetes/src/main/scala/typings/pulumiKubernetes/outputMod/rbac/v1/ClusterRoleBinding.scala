@@ -50,7 +50,6 @@ object ClusterRoleBinding {
     subjects: js.Array[Subject]
   ): ClusterRoleBinding = {
     val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], roleRef = roleRef.asInstanceOf[js.Any], subjects = subjects.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClusterRoleBinding]
   }
 }

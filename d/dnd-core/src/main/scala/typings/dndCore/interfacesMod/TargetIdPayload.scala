@@ -12,7 +12,6 @@ object TargetIdPayload {
   @scala.inline
   def apply(targetId: Identifier): TargetIdPayload = {
     val __obj = js.Dynamic.literal(targetId = targetId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TargetIdPayload]
   }
 }

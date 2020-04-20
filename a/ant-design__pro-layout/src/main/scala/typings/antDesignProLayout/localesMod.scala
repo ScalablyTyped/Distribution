@@ -12,6 +12,14 @@ import scala.scalajs.js.annotation._
 @JSImport("@ant-design/pro-layout/lib/locales", JSImport.Namespace)
 @js.native
 object localesMod extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - typings.antDesignProLayout.antDesignProLayoutStrings.`zh-CN`
+    - typings.antDesignProLayout.antDesignProLayoutStrings.`zh-TW`
+    - typings.antDesignProLayout.antDesignProLayoutStrings.`en-US`
+    - typings.antDesignProLayout.antDesignProLayoutStrings.`it-IT`
+  */
+  trait localeType extends js.Object
+  
   def default(): StringDictionary[String] = js.native
   @JSName("default")
   def default_enUS(locale: `en-US`): StringDictionary[String] = js.native
@@ -22,6 +30,5 @@ object localesMod extends js.Object {
   @JSName("default")
   def default_zhTW(locale: `zh-TW`): StringDictionary[String] = js.native
   def getLanguage(): String = js.native
-  type localeType = String
 }
 

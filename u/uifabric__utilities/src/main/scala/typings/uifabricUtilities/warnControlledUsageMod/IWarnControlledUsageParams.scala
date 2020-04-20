@@ -10,17 +10,17 @@ trait IWarnControlledUsageParams[P] extends js.Object {
   /** Name of the component class. */
   var componentName: String
   /** Name of the prop for the uncontrolled initial value. */
-  var defaultValueProp: String
+  var defaultValueProp: /* keyof P */ String
   /** Previous props to evaluate (undefined if called in the constructor). */
   var oldProps: js.UndefOr[P] = js.undefined
   /** Name of the change handler prop. */
-  var onChangeProp: String
+  var onChangeProp: /* keyof P */ String
   /** Current props to evaluate. */
   var props: P
   /** Name of the read-only prop. */
-  var readOnlyProp: js.UndefOr[String] = js.undefined
+  var readOnlyProp: js.UndefOr[/* keyof P */ String] = js.undefined
   /** Name of the prop for the controlled value. */
-  var valueProp: String
+  var valueProp: /* keyof P */ String
 }
 
 object IWarnControlledUsageParams {
@@ -28,12 +28,12 @@ object IWarnControlledUsageParams {
   def apply[P](
     componentId: String,
     componentName: String,
-    defaultValueProp: String,
-    onChangeProp: String,
+    defaultValueProp: /* keyof P */ String,
+    onChangeProp: /* keyof P */ String,
     props: P,
-    valueProp: String,
+    valueProp: /* keyof P */ String,
     oldProps: P = null,
-    readOnlyProp: String = null
+    readOnlyProp: /* keyof P */ String = null
   ): IWarnControlledUsageParams[P] = {
     val __obj = js.Dynamic.literal(componentId = componentId.asInstanceOf[js.Any], componentName = componentName.asInstanceOf[js.Any], defaultValueProp = defaultValueProp.asInstanceOf[js.Any], onChangeProp = onChangeProp.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], valueProp = valueProp.asInstanceOf[js.Any])
     if (oldProps != null) __obj.updateDynamic("oldProps")(oldProps.asInstanceOf[js.Any])

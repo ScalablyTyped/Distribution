@@ -19,14 +19,12 @@ trait WiaImageIntent extends js.Object
 
 object WiaImageIntent {
   @scala.inline
-  def ColorIntent: `1` = this.cast(1)
+  def ColorIntent: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def GrayscaleIntent: `2` = this.cast(2)
+  def GrayscaleIntent: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def TextIntent: `4` = this.cast(4)
+  def TextIntent: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def UnspecifiedIntent: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UnspecifiedIntent: `0` = 0.asInstanceOf[`0`]
 }
 

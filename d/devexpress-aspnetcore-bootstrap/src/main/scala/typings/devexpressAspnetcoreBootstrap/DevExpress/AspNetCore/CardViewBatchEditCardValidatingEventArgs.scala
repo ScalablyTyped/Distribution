@@ -13,7 +13,6 @@ object CardViewBatchEditCardValidatingEventArgs {
   @scala.inline
   def apply(sender: Control, validationInfo: js.Any, visibleIndex: Double): CardViewBatchEditCardValidatingEventArgs = {
     val __obj = js.Dynamic.literal(sender = sender.asInstanceOf[js.Any], validationInfo = validationInfo.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CardViewBatchEditCardValidatingEventArgs]
   }
 }

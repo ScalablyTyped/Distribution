@@ -12,7 +12,6 @@ object CommandArray {
   @scala.inline
   def apply(push: js.Function0[Unit] => Double): CommandArray = {
     val __obj = js.Dynamic.literal(push = js.Any.fromFunction1(push))
-  
     __obj.asInstanceOf[CommandArray]
   }
 }

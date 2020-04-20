@@ -13,7 +13,6 @@ object IResourceContextStatics {
   @scala.inline
   def apply(createMatchingContext: IIterable[ResourceQualifier] => ResourceContext): IResourceContextStatics = {
     val __obj = js.Dynamic.literal(createMatchingContext = js.Any.fromFunction1(createMatchingContext))
-  
     __obj.asInstanceOf[IResourceContextStatics]
   }
 }

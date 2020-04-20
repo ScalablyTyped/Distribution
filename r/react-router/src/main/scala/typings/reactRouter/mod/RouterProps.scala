@@ -14,7 +14,6 @@ object RouterProps {
   @scala.inline
   def apply(history: History[LocationState]): RouterProps = {
     val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RouterProps]
   }
 }

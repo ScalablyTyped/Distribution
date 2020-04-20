@@ -20,7 +20,6 @@ object CreateSecurityConfigurationOutput {
   @scala.inline
   def apply(CreationDateTime: Date, Name: XmlString): CreateSecurityConfigurationOutput = {
     val __obj = js.Dynamic.literal(CreationDateTime = CreationDateTime.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateSecurityConfigurationOutput]
   }
 }

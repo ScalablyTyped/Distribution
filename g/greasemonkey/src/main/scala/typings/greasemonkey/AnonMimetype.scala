@@ -14,7 +14,6 @@ object AnonMimetype {
   @scala.inline
   def apply(mimetype: String, name: String, url: String): AnonMimetype = {
     val __obj = js.Dynamic.literal(mimetype = mimetype.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMimetype]
   }
 }

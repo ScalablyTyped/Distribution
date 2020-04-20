@@ -13,7 +13,6 @@ object WebAssemblyInstantiatedSource {
   @scala.inline
   def apply(instance: Instance, module: Module): WebAssemblyInstantiatedSource = {
     val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any], module = module.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WebAssemblyInstantiatedSource]
   }
 }

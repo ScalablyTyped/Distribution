@@ -90,86 +90,84 @@ trait DataTypeEnum extends js.Object
 
 object DataTypeEnum {
   @scala.inline
-  def adArray: `8192` = this.cast(8192)
+  def adArray: `8192` = 8192.asInstanceOf[`8192`]
   @scala.inline
-  def adBSTR: `8` = this.cast(8)
+  def adBSTR: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def adBigInt: `20` = this.cast(20)
+  def adBigInt: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def adBinary: `128` = this.cast(128)
+  def adBinary: `128` = 128.asInstanceOf[`128`]
   @scala.inline
-  def adBoolean: `11` = this.cast(11)
+  def adBoolean: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def adChapter: `136` = this.cast(136)
+  def adChapter: `136` = 136.asInstanceOf[`136`]
   @scala.inline
-  def adChar: `129` = this.cast(129)
+  def adChar: `129` = 129.asInstanceOf[`129`]
   @scala.inline
-  def adCurrency: `6` = this.cast(6)
+  def adCurrency: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def adDBDate: `133` = this.cast(133)
+  def adDBDate: `133` = 133.asInstanceOf[`133`]
   @scala.inline
-  def adDBTime: `134` = this.cast(134)
+  def adDBTime: `134` = 134.asInstanceOf[`134`]
   @scala.inline
-  def adDBTimeStamp: `135` = this.cast(135)
+  def adDBTimeStamp: `135` = 135.asInstanceOf[`135`]
   @scala.inline
-  def adDate: `7` = this.cast(7)
+  def adDate: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def adDecimal: `14` = this.cast(14)
+  def adDecimal: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def adDouble: `5` = this.cast(5)
+  def adDouble: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def adEmpty: `0` = this.cast(0)
+  def adEmpty: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def adError: `10` = this.cast(10)
+  def adError: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def adFileTime: `64` = this.cast(64)
+  def adFileTime: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def adGUID: `72` = this.cast(72)
+  def adGUID: `72` = 72.asInstanceOf[`72`]
   @scala.inline
-  def adIDispatch: `9` = this.cast(9)
+  def adIDispatch: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def adIUnknown: `13` = this.cast(13)
+  def adIUnknown: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def adInteger: `3` = this.cast(3)
+  def adInteger: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def adLongVarBinary: `205` = this.cast(205)
+  def adLongVarBinary: `205` = 205.asInstanceOf[`205`]
   @scala.inline
-  def adLongVarChar: `201` = this.cast(201)
+  def adLongVarChar: `201` = 201.asInstanceOf[`201`]
   @scala.inline
-  def adLongVarWChar: `203` = this.cast(203)
+  def adLongVarWChar: `203` = 203.asInstanceOf[`203`]
   @scala.inline
-  def adNumeric: `131` = this.cast(131)
+  def adNumeric: `131` = 131.asInstanceOf[`131`]
   @scala.inline
-  def adPropVariant: `138` = this.cast(138)
+  def adPropVariant: `138` = 138.asInstanceOf[`138`]
   @scala.inline
-  def adSingle: `4` = this.cast(4)
+  def adSingle: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def adSmallInt: `2` = this.cast(2)
+  def adSmallInt: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def adTinyInt: `16` = this.cast(16)
+  def adTinyInt: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def adUnsignedBigInt: `21` = this.cast(21)
+  def adUnsignedBigInt: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def adUnsignedInt: `19` = this.cast(19)
+  def adUnsignedInt: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def adUnsignedSmallInt: `18` = this.cast(18)
+  def adUnsignedSmallInt: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def adUnsignedTinyInt: `17` = this.cast(17)
+  def adUnsignedTinyInt: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def adUserDefined: `132` = this.cast(132)
+  def adUserDefined: `132` = 132.asInstanceOf[`132`]
   @scala.inline
-  def adVarBinary: `204` = this.cast(204)
+  def adVarBinary: `204` = 204.asInstanceOf[`204`]
   @scala.inline
-  def adVarChar: `200` = this.cast(200)
+  def adVarChar: `200` = 200.asInstanceOf[`200`]
   @scala.inline
-  def adVarNumeric: `139` = this.cast(139)
+  def adVarNumeric: `139` = 139.asInstanceOf[`139`]
   @scala.inline
-  def adVarWChar: `202` = this.cast(202)
+  def adVarWChar: `202` = 202.asInstanceOf[`202`]
   @scala.inline
-  def adVariant: `12` = this.cast(12)
+  def adVariant: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def adWChar: `130` = this.cast(130)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def adWChar: `130` = 130.asInstanceOf[`130`]
 }
 

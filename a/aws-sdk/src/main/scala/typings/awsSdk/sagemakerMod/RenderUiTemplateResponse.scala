@@ -20,7 +20,6 @@ object RenderUiTemplateResponse {
   @scala.inline
   def apply(Errors: RenderingErrorList, RenderedContent: String): RenderUiTemplateResponse = {
     val __obj = js.Dynamic.literal(Errors = Errors.asInstanceOf[js.Any], RenderedContent = RenderedContent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RenderUiTemplateResponse]
   }
 }

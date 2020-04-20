@@ -37,7 +37,6 @@ object RequestedExtension {
     requestCount: Double
   ): RequestedExtension = {
     val __obj = js.Dynamic.literal(extensionName = extensionName.asInstanceOf[js.Any], extensionRequests = extensionRequests.asInstanceOf[js.Any], publisherDisplayName = publisherDisplayName.asInstanceOf[js.Any], publisherName = publisherName.asInstanceOf[js.Any], requestCount = requestCount.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RequestedExtension]
   }
 }

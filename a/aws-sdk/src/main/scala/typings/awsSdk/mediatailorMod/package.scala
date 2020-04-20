@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 package object mediatailorMod {
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.mediatailorMod.ClientApiVersions
   /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.OFF
+    - typings.awsSdk.awsSdkStrings.BEHIND_LIVE_EDGE
+    - java.lang.String
+  */
+  type Mode = typings.awsSdk.mediatailorMod._Mode | java.lang.String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.SINGLE_PERIOD
     - typings.awsSdk.awsSdkStrings.MULTI_PERIOD
     - java.lang.String

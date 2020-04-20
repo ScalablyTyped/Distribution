@@ -14,7 +14,6 @@ object AnonDATAURL {
   @scala.inline
   def apply(DATA_URL: Double, FILE_URI: Double, NATIVE_URI: Double): AnonDATAURL = {
     val __obj = js.Dynamic.literal(DATA_URL = DATA_URL.asInstanceOf[js.Any], FILE_URI = FILE_URI.asInstanceOf[js.Any], NATIVE_URI = NATIVE_URI.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDATAURL]
   }
 }

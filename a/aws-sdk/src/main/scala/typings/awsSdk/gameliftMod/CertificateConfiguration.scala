@@ -16,7 +16,6 @@ object CertificateConfiguration {
   @scala.inline
   def apply(CertificateType: CertificateType): CertificateConfiguration = {
     val __obj = js.Dynamic.literal(CertificateType = CertificateType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CertificateConfiguration]
   }
 }

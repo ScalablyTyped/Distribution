@@ -888,7 +888,7 @@ object figletStrings {
   @scala.inline
   def `3-D`: `3-D` = "3-D".asInstanceOf[`3-D`]
   @scala.inline
-  def `3D Diagonal`: `3D Diagonal` = "3D Diagonal".asInstanceOf[`3D Diagonal`]
+  def `3D Diagonal`: `3D Diagonal` = ("3D Diagonal").asInstanceOf[`3D Diagonal`]
   @scala.inline
   def `3D-ASCII`: `3D-ASCII` = "3D-ASCII".asInstanceOf[`3D-ASCII`]
   @scala.inline
@@ -896,33 +896,33 @@ object figletStrings {
   @scala.inline
   def `4Max`: `4Max` = "4Max".asInstanceOf[`4Max`]
   @scala.inline
-  def `5 Line Oblique`: `5 Line Oblique` = "5 Line Oblique".asInstanceOf[`5 Line Oblique`]
+  def `5 Line Oblique`: `5 Line Oblique` = ("5 Line Oblique").asInstanceOf[`5 Line Oblique`]
   @scala.inline
-  def `AMC 3 Line`: `AMC 3 Line` = "AMC 3 Line".asInstanceOf[`AMC 3 Line`]
+  def `AMC 3 Line`: `AMC 3 Line` = ("AMC 3 Line").asInstanceOf[`AMC 3 Line`]
   @scala.inline
-  def `AMC 3 Liv1`: `AMC 3 Liv1` = "AMC 3 Liv1".asInstanceOf[`AMC 3 Liv1`]
+  def `AMC 3 Liv1`: `AMC 3 Liv1` = ("AMC 3 Liv1").asInstanceOf[`AMC 3 Liv1`]
   @scala.inline
-  def `AMC AAA01`: `AMC AAA01` = "AMC AAA01".asInstanceOf[`AMC AAA01`]
+  def `AMC AAA01`: `AMC AAA01` = ("AMC AAA01").asInstanceOf[`AMC AAA01`]
   @scala.inline
-  def `AMC Neko`: `AMC Neko` = "AMC Neko".asInstanceOf[`AMC Neko`]
+  def `AMC Neko`: `AMC Neko` = ("AMC Neko").asInstanceOf[`AMC Neko`]
   @scala.inline
-  def `AMC Razor`: `AMC Razor` = "AMC Razor".asInstanceOf[`AMC Razor`]
+  def `AMC Razor`: `AMC Razor` = ("AMC Razor").asInstanceOf[`AMC Razor`]
   @scala.inline
-  def `AMC Razor2`: `AMC Razor2` = "AMC Razor2".asInstanceOf[`AMC Razor2`]
+  def `AMC Razor2`: `AMC Razor2` = ("AMC Razor2").asInstanceOf[`AMC Razor2`]
   @scala.inline
-  def `AMC Slash`: `AMC Slash` = "AMC Slash".asInstanceOf[`AMC Slash`]
+  def `AMC Slash`: `AMC Slash` = ("AMC Slash").asInstanceOf[`AMC Slash`]
   @scala.inline
-  def `AMC Slider`: `AMC Slider` = "AMC Slider".asInstanceOf[`AMC Slider`]
+  def `AMC Slider`: `AMC Slider` = ("AMC Slider").asInstanceOf[`AMC Slider`]
   @scala.inline
-  def `AMC Thin`: `AMC Thin` = "AMC Thin".asInstanceOf[`AMC Thin`]
+  def `AMC Thin`: `AMC Thin` = ("AMC Thin").asInstanceOf[`AMC Thin`]
   @scala.inline
-  def `AMC Tubes`: `AMC Tubes` = "AMC Tubes".asInstanceOf[`AMC Tubes`]
+  def `AMC Tubes`: `AMC Tubes` = ("AMC Tubes").asInstanceOf[`AMC Tubes`]
   @scala.inline
-  def `AMC Untitled`: `AMC Untitled` = "AMC Untitled".asInstanceOf[`AMC Untitled`]
+  def `AMC Untitled`: `AMC Untitled` = ("AMC Untitled").asInstanceOf[`AMC Untitled`]
   @scala.inline
-  def `ANSI Shadow`: `ANSI Shadow` = "ANSI Shadow".asInstanceOf[`ANSI Shadow`]
+  def `ANSI Shadow`: `ANSI Shadow` = ("ANSI Shadow").asInstanceOf[`ANSI Shadow`]
   @scala.inline
-  def `ASCII New Roman`: `ASCII New Roman` = "ASCII New Roman".asInstanceOf[`ASCII New Roman`]
+  def `ASCII New Roman`: `ASCII New Roman` = ("ASCII New Roman").asInstanceOf[`ASCII New Roman`]
   @scala.inline
   def Acrobatic: Acrobatic = "Acrobatic".asInstanceOf[Acrobatic]
   @scala.inline
@@ -960,15 +960,15 @@ object figletStrings {
   @scala.inline
   def Big: Big = "Big".asInstanceOf[Big]
   @scala.inline
-  def `Big Chief`: `Big Chief` = "Big Chief".asInstanceOf[`Big Chief`]
+  def `Big Chief`: `Big Chief` = ("Big Chief").asInstanceOf[`Big Chief`]
   @scala.inline
-  def `Big Money-ne`: `Big Money-ne` = "Big Money-ne".asInstanceOf[`Big Money-ne`]
+  def `Big Money-ne`: `Big Money-ne` = ("Big Money-ne").asInstanceOf[`Big Money-ne`]
   @scala.inline
-  def `Big Money-nw`: `Big Money-nw` = "Big Money-nw".asInstanceOf[`Big Money-nw`]
+  def `Big Money-nw`: `Big Money-nw` = ("Big Money-nw").asInstanceOf[`Big Money-nw`]
   @scala.inline
-  def `Big Money-se`: `Big Money-se` = "Big Money-se".asInstanceOf[`Big Money-se`]
+  def `Big Money-se`: `Big Money-se` = ("Big Money-se").asInstanceOf[`Big Money-se`]
   @scala.inline
-  def `Big Money-sw`: `Big Money-sw` = "Big Money-sw".asInstanceOf[`Big Money-sw`]
+  def `Big Money-sw`: `Big Money-sw` = ("Big Money-sw").asInstanceOf[`Big Money-sw`]
   @scala.inline
   def Bigfig: Bigfig = "Bigfig".asInstanceOf[Bigfig]
   @scala.inline
@@ -988,7 +988,7 @@ object figletStrings {
   @scala.inline
   def Broadway: Broadway = "Broadway".asInstanceOf[Broadway]
   @scala.inline
-  def `Broadway KB`: `Broadway KB` = "Broadway KB".asInstanceOf[`Broadway KB`]
+  def `Broadway KB`: `Broadway KB` = ("Broadway KB").asInstanceOf[`Broadway KB`]
   @scala.inline
   def Bubble: Bubble = "Bubble".asInstanceOf[Bubble]
   @scala.inline
@@ -998,7 +998,7 @@ object figletStrings {
   @scala.inline
   def Caligraphy2: Caligraphy2 = "Caligraphy2".asInstanceOf[Caligraphy2]
   @scala.inline
-  def `Calvin S`: `Calvin S` = "Calvin S".asInstanceOf[`Calvin S`]
+  def `Calvin S`: `Calvin S` = ("Calvin S").asInstanceOf[`Calvin S`]
   @scala.inline
   def Cards: Cards = "Cards".asInstanceOf[Cards]
   @scala.inline
@@ -1042,21 +1042,21 @@ object figletStrings {
   @scala.inline
   def DANC4: DANC4 = "DANC4".asInstanceOf[DANC4]
   @scala.inline
-  def `DOS Rebel`: `DOS Rebel` = "DOS Rebel".asInstanceOf[`DOS Rebel`]
+  def `DOS Rebel`: `DOS Rebel` = ("DOS Rebel").asInstanceOf[`DOS Rebel`]
   @scala.inline
   def DWhistled: DWhistled = "DWhistled".asInstanceOf[DWhistled]
   @scala.inline
-  def `Dancing Font`: `Dancing Font` = "Dancing Font".asInstanceOf[`Dancing Font`]
+  def `Dancing Font`: `Dancing Font` = ("Dancing Font").asInstanceOf[`Dancing Font`]
   @scala.inline
   def Decimal: Decimal = "Decimal".asInstanceOf[Decimal]
   @scala.inline
-  def `Def Leppard`: `Def Leppard` = "Def Leppard".asInstanceOf[`Def Leppard`]
+  def `Def Leppard`: `Def Leppard` = ("Def Leppard").asInstanceOf[`Def Leppard`]
   @scala.inline
-  def `Delta Corps Priest 1`: `Delta Corps Priest 1` = "Delta Corps Priest 1".asInstanceOf[`Delta Corps Priest 1`]
+  def `Delta Corps Priest 1`: `Delta Corps Priest 1` = ("Delta Corps Priest 1").asInstanceOf[`Delta Corps Priest 1`]
   @scala.inline
   def Diamond: Diamond = "Diamond".asInstanceOf[Diamond]
   @scala.inline
-  def `Diet Cola`: `Diet Cola` = "Diet Cola".asInstanceOf[`Diet Cola`]
+  def `Diet Cola`: `Diet Cola` = ("Diet Cola").asInstanceOf[`Diet Cola`]
   @scala.inline
   def Digital: Digital = "Digital".asInstanceOf[Digital]
   @scala.inline
@@ -1064,27 +1064,27 @@ object figletStrings {
   @scala.inline
   def Doom: Doom = "Doom".asInstanceOf[Doom]
   @scala.inline
-  def `Dot Matrix`: `Dot Matrix` = "Dot Matrix".asInstanceOf[`Dot Matrix`]
+  def `Dot Matrix`: `Dot Matrix` = ("Dot Matrix").asInstanceOf[`Dot Matrix`]
   @scala.inline
   def Double: Double = "Double".asInstanceOf[Double]
   @scala.inline
-  def `Double Shorts`: `Double Shorts` = "Double Shorts".asInstanceOf[`Double Shorts`]
+  def `Double Shorts`: `Double Shorts` = ("Double Shorts").asInstanceOf[`Double Shorts`]
   @scala.inline
-  def `Dr Pepper`: `Dr Pepper` = "Dr Pepper".asInstanceOf[`Dr Pepper`]
+  def `Dr Pepper`: `Dr Pepper` = ("Dr Pepper").asInstanceOf[`Dr Pepper`]
   @scala.inline
-  def `Efti Chess`: `Efti Chess` = "Efti Chess".asInstanceOf[`Efti Chess`]
+  def `Efti Chess`: `Efti Chess` = ("Efti Chess").asInstanceOf[`Efti Chess`]
   @scala.inline
-  def `Efti Font`: `Efti Font` = "Efti Font".asInstanceOf[`Efti Font`]
+  def `Efti Font`: `Efti Font` = ("Efti Font").asInstanceOf[`Efti Font`]
   @scala.inline
-  def `Efti Italic`: `Efti Italic` = "Efti Italic".asInstanceOf[`Efti Italic`]
+  def `Efti Italic`: `Efti Italic` = ("Efti Italic").asInstanceOf[`Efti Italic`]
   @scala.inline
-  def `Efti Piti`: `Efti Piti` = "Efti Piti".asInstanceOf[`Efti Piti`]
+  def `Efti Piti`: `Efti Piti` = ("Efti Piti").asInstanceOf[`Efti Piti`]
   @scala.inline
-  def `Efti Robot`: `Efti Robot` = "Efti Robot".asInstanceOf[`Efti Robot`]
+  def `Efti Robot`: `Efti Robot` = ("Efti Robot").asInstanceOf[`Efti Robot`]
   @scala.inline
-  def `Efti Wall`: `Efti Wall` = "Efti Wall".asInstanceOf[`Efti Wall`]
+  def `Efti Wall`: `Efti Wall` = ("Efti Wall").asInstanceOf[`Efti Wall`]
   @scala.inline
-  def `Efti Water`: `Efti Water` = "Efti Water".asInstanceOf[`Efti Water`]
+  def `Efti Water`: `Efti Water` = ("Efti Water").asInstanceOf[`Efti Water`]
   @scala.inline
   def Electronic: Electronic = "Electronic".asInstanceOf[Electronic]
   @scala.inline
@@ -1096,21 +1096,21 @@ object figletStrings {
   @scala.inline
   def Filter: Filter = "Filter".asInstanceOf[Filter]
   @scala.inline
-  def `Fire Font-k`: `Fire Font-k` = "Fire Font-k".asInstanceOf[`Fire Font-k`]
+  def `Fire Font-k`: `Fire Font-k` = ("Fire Font-k").asInstanceOf[`Fire Font-k`]
   @scala.inline
-  def `Fire Font-s`: `Fire Font-s` = "Fire Font-s".asInstanceOf[`Fire Font-s`]
+  def `Fire Font-s`: `Fire Font-s` = ("Fire Font-s").asInstanceOf[`Fire Font-s`]
   @scala.inline
   def Flipped: Flipped = "Flipped".asInstanceOf[Flipped]
   @scala.inline
-  def `Flower Power`: `Flower Power` = "Flower Power".asInstanceOf[`Flower Power`]
+  def `Flower Power`: `Flower Power` = ("Flower Power").asInstanceOf[`Flower Power`]
   @scala.inline
-  def `Four Tops`: `Four Tops` = "Four Tops".asInstanceOf[`Four Tops`]
+  def `Four Tops`: `Four Tops` = ("Four Tops").asInstanceOf[`Four Tops`]
   @scala.inline
   def Fraktur: Fraktur = "Fraktur".asInstanceOf[Fraktur]
   @scala.inline
-  def `Fun Face`: `Fun Face` = "Fun Face".asInstanceOf[`Fun Face`]
+  def `Fun Face`: `Fun Face` = ("Fun Face").asInstanceOf[`Fun Face`]
   @scala.inline
-  def `Fun Faces`: `Fun Faces` = "Fun Faces".asInstanceOf[`Fun Faces`]
+  def `Fun Faces`: `Fun Faces` = ("Fun Faces").asInstanceOf[`Fun Faces`]
   @scala.inline
   def Fuzzy: Fuzzy = "Fuzzy".asInstanceOf[Fuzzy]
   @scala.inline
@@ -1136,11 +1136,11 @@ object figletStrings {
   @scala.inline
   def Greek: Greek = "Greek".asInstanceOf[Greek]
   @scala.inline
-  def `Heart Left`: `Heart Left` = "Heart Left".asInstanceOf[`Heart Left`]
+  def `Heart Left`: `Heart Left` = ("Heart Left").asInstanceOf[`Heart Left`]
   @scala.inline
-  def `Heart Right`: `Heart Right` = "Heart Right".asInstanceOf[`Heart Right`]
+  def `Heart Right`: `Heart Right` = ("Heart Right").asInstanceOf[`Heart Right`]
   @scala.inline
-  def `Henry 3D`: `Henry 3D` = "Henry 3D".asInstanceOf[`Henry 3D`]
+  def `Henry 3D`: `Henry 3D` = ("Henry 3D").asInstanceOf[`Henry 3D`]
   @scala.inline
   def Hex: Hex = "Hex".asInstanceOf[Hex]
   @scala.inline
@@ -1148,9 +1148,9 @@ object figletStrings {
   @scala.inline
   def Hollywood: Hollywood = "Hollywood".asInstanceOf[Hollywood]
   @scala.inline
-  def `Horizontal Left`: `Horizontal Left` = "Horizontal Left".asInstanceOf[`Horizontal Left`]
+  def `Horizontal Left`: `Horizontal Left` = ("Horizontal Left").asInstanceOf[`Horizontal Left`]
   @scala.inline
-  def `Horizontal Right`: `Horizontal Right` = "Horizontal Right".asInstanceOf[`Horizontal Right`]
+  def `Horizontal Right`: `Horizontal Right` = ("Horizontal Right").asInstanceOf[`Horizontal Right`]
   @scala.inline
   def `ICL-1900`: `ICL-1900` = "ICL-1900".asInstanceOf[`ICL-1900`]
   @scala.inline
@@ -1170,15 +1170,15 @@ object figletStrings {
   @scala.inline
   def Ivrit: Ivrit = "Ivrit".asInstanceOf[Ivrit]
   @scala.inline
-  def `JS Block Letters`: `JS Block Letters` = "JS Block Letters".asInstanceOf[`JS Block Letters`]
+  def `JS Block Letters`: `JS Block Letters` = ("JS Block Letters").asInstanceOf[`JS Block Letters`]
   @scala.inline
-  def `JS Bracket Letters`: `JS Bracket Letters` = "JS Bracket Letters".asInstanceOf[`JS Bracket Letters`]
+  def `JS Bracket Letters`: `JS Bracket Letters` = ("JS Bracket Letters").asInstanceOf[`JS Bracket Letters`]
   @scala.inline
-  def `JS Capital Curves`: `JS Capital Curves` = "JS Capital Curves".asInstanceOf[`JS Capital Curves`]
+  def `JS Capital Curves`: `JS Capital Curves` = ("JS Capital Curves").asInstanceOf[`JS Capital Curves`]
   @scala.inline
-  def `JS Cursive`: `JS Cursive` = "JS Cursive".asInstanceOf[`JS Cursive`]
+  def `JS Cursive`: `JS Cursive` = ("JS Cursive").asInstanceOf[`JS Cursive`]
   @scala.inline
-  def `JS Stick Letters`: `JS Stick Letters` = "JS Stick Letters".asInstanceOf[`JS Stick Letters`]
+  def `JS Stick Letters`: `JS Stick Letters` = ("JS Stick Letters").asInstanceOf[`JS Stick Letters`]
   @scala.inline
   def Jacky: Jacky = "Jacky".asInstanceOf[Jacky]
   @scala.inline
@@ -1196,21 +1196,21 @@ object figletStrings {
   @scala.inline
   def Konto: Konto = "Konto".asInstanceOf[Konto]
   @scala.inline
-  def `Konto Slant`: `Konto Slant` = "Konto Slant".asInstanceOf[`Konto Slant`]
+  def `Konto Slant`: `Konto Slant` = ("Konto Slant").asInstanceOf[`Konto Slant`]
   @scala.inline
   def LCD: LCD = "LCD".asInstanceOf[LCD]
   @scala.inline
-  def `Larry 3D`: `Larry 3D` = "Larry 3D".asInstanceOf[`Larry 3D`]
+  def `Larry 3D`: `Larry 3D` = ("Larry 3D").asInstanceOf[`Larry 3D`]
   @scala.inline
-  def `Larry 3D 2`: `Larry 3D 2` = "Larry 3D 2".asInstanceOf[`Larry 3D 2`]
+  def `Larry 3D 2`: `Larry 3D 2` = ("Larry 3D 2").asInstanceOf[`Larry 3D 2`]
   @scala.inline
   def Lean: Lean = "Lean".asInstanceOf[Lean]
   @scala.inline
   def Letters: Letters = "Letters".asInstanceOf[Letters]
   @scala.inline
-  def `Lil Devil`: `Lil Devil` = "Lil Devil".asInstanceOf[`Lil Devil`]
+  def `Lil Devil`: `Lil Devil` = ("Lil Devil").asInstanceOf[`Lil Devil`]
   @scala.inline
-  def `Line Blocks`: `Line Blocks` = "Line Blocks".asInstanceOf[`Line Blocks`]
+  def `Line Blocks`: `Line Blocks` = ("Line Blocks").asInstanceOf[`Line Blocks`]
   @scala.inline
   def Linux: Linux = "Linux".asInstanceOf[Linux]
   @scala.inline
@@ -1248,9 +1248,9 @@ object figletStrings {
   @scala.inline
   def NScript: NScript = "NScript".asInstanceOf[NScript]
   @scala.inline
-  def `NT Greek`: `NT Greek` = "NT Greek".asInstanceOf[`NT Greek`]
+  def `NT Greek`: `NT Greek` = ("NT Greek").asInstanceOf[`NT Greek`]
   @scala.inline
-  def `NV Script`: `NV Script` = "NV Script".asInstanceOf[`NV Script`]
+  def `NV Script`: `NV Script` = ("NV Script").asInstanceOf[`NV Script`]
   @scala.inline
   def Nancyj: Nancyj = "Nancyj".asInstanceOf[Nancyj]
   @scala.inline
@@ -1270,17 +1270,17 @@ object figletStrings {
   @scala.inline
   def Ogre: Ogre = "Ogre".asInstanceOf[Ogre]
   @scala.inline
-  def `Old Banner`: `Old Banner` = "Old Banner".asInstanceOf[`Old Banner`]
+  def `Old Banner`: `Old Banner` = ("Old Banner").asInstanceOf[`Old Banner`]
   @scala.inline
   def `Patorjk-HeX`: `Patorjk-HeX` = "Patorjk-HeX".asInstanceOf[`Patorjk-HeX`]
   @scala.inline
-  def `PatorjkApostrophes Cheese`: `PatorjkApostrophes Cheese` = "Patorjk's Cheese".asInstanceOf[`PatorjkApostrophes Cheese`]
+  def `PatorjkApostrophes Cheese`: `PatorjkApostrophes Cheese` = ("Patorjk's Cheese").asInstanceOf[`PatorjkApostrophes Cheese`]
   @scala.inline
   def Pawp: Pawp = "Pawp".asInstanceOf[Pawp]
   @scala.inline
   def Peaks: Peaks = "Peaks".asInstanceOf[Peaks]
   @scala.inline
-  def `Peaks Slant`: `Peaks Slant` = "Peaks Slant".asInstanceOf[`Peaks Slant`]
+  def `Peaks Slant`: `Peaks Slant` = ("Peaks Slant").asInstanceOf[`Peaks Slant`]
   @scala.inline
   def Pebbles: Pebbles = "Pebbles".asInstanceOf[Pebbles]
   @scala.inline
@@ -1298,7 +1298,7 @@ object figletStrings {
   @scala.inline
   def Rectangles: Rectangles = "Rectangles".asInstanceOf[Rectangles]
   @scala.inline
-  def `Red Phoenix`: `Red Phoenix` = "Red Phoenix".asInstanceOf[`Red Phoenix`]
+  def `Red Phoenix`: `Red Phoenix` = ("Red Phoenix").asInstanceOf[`Red Phoenix`]
   @scala.inline
   def Relief: Relief = "Relief".asInstanceOf[Relief]
   @scala.inline
@@ -1314,7 +1314,7 @@ object figletStrings {
   @scala.inline
   def Rounded: Rounded = "Rounded".asInstanceOf[Rounded]
   @scala.inline
-  def `Rowan Cap`: `Rowan Cap` = "Rowan Cap".asInstanceOf[`Rowan Cap`]
+  def `Rowan Cap`: `Rowan Cap` = ("Rowan Cap").asInstanceOf[`Rowan Cap`]
   @scala.inline
   def Rozzo: Rozzo = "Rozzo".asInstanceOf[Rozzo]
   @scala.inline
@@ -1322,11 +1322,11 @@ object figletStrings {
   @scala.inline
   def Runyc: Runyc = "Runyc".asInstanceOf[Runyc]
   @scala.inline
-  def `S Blood`: `S Blood` = "S Blood".asInstanceOf[`S Blood`]
+  def `S Blood`: `S Blood` = ("S Blood").asInstanceOf[`S Blood`]
   @scala.inline
-  def `SL Script`: `SL Script` = "SL Script".asInstanceOf[`SL Script`]
+  def `SL Script`: `SL Script` = ("SL Script").asInstanceOf[`SL Script`]
   @scala.inline
-  def `Santa Clara`: `Santa Clara` = "Santa Clara".asInstanceOf[`Santa Clara`]
+  def `Santa Clara`: `Santa Clara` = ("Santa Clara").asInstanceOf[`Santa Clara`]
   @scala.inline
   def Script: Script = "Script".asInstanceOf[Script]
   @scala.inline
@@ -1340,27 +1340,27 @@ object figletStrings {
   @scala.inline
   def Slant: Slant = "Slant".asInstanceOf[Slant]
   @scala.inline
-  def `Slant Relief`: `Slant Relief` = "Slant Relief".asInstanceOf[`Slant Relief`]
+  def `Slant Relief`: `Slant Relief` = ("Slant Relief").asInstanceOf[`Slant Relief`]
   @scala.inline
   def Slide: Slide = "Slide".asInstanceOf[Slide]
   @scala.inline
   def Small: Small = "Small".asInstanceOf[Small]
   @scala.inline
-  def `Small Caps`: `Small Caps` = "Small Caps".asInstanceOf[`Small Caps`]
+  def `Small Caps`: `Small Caps` = ("Small Caps").asInstanceOf[`Small Caps`]
   @scala.inline
-  def `Small Isometric1`: `Small Isometric1` = "Small Isometric1".asInstanceOf[`Small Isometric1`]
+  def `Small Isometric1`: `Small Isometric1` = ("Small Isometric1").asInstanceOf[`Small Isometric1`]
   @scala.inline
-  def `Small Keyboard`: `Small Keyboard` = "Small Keyboard".asInstanceOf[`Small Keyboard`]
+  def `Small Keyboard`: `Small Keyboard` = ("Small Keyboard").asInstanceOf[`Small Keyboard`]
   @scala.inline
-  def `Small Poison`: `Small Poison` = "Small Poison".asInstanceOf[`Small Poison`]
+  def `Small Poison`: `Small Poison` = ("Small Poison").asInstanceOf[`Small Poison`]
   @scala.inline
-  def `Small Script`: `Small Script` = "Small Script".asInstanceOf[`Small Script`]
+  def `Small Script`: `Small Script` = ("Small Script").asInstanceOf[`Small Script`]
   @scala.inline
-  def `Small Shadow`: `Small Shadow` = "Small Shadow".asInstanceOf[`Small Shadow`]
+  def `Small Shadow`: `Small Shadow` = ("Small Shadow").asInstanceOf[`Small Shadow`]
   @scala.inline
-  def `Small Slant`: `Small Slant` = "Small Slant".asInstanceOf[`Small Slant`]
+  def `Small Slant`: `Small Slant` = ("Small Slant").asInstanceOf[`Small Slant`]
   @scala.inline
-  def `Small Tengwar`: `Small Tengwar` = "Small Tengwar".asInstanceOf[`Small Tengwar`]
+  def `Small Tengwar`: `Small Tengwar` = ("Small Tengwar").asInstanceOf[`Small Tengwar`]
   @scala.inline
   def Soft: Soft = "Soft".asInstanceOf[Soft]
   @scala.inline
@@ -1376,25 +1376,25 @@ object figletStrings {
   @scala.inline
   def Standard: Standard = "Standard".asInstanceOf[Standard]
   @scala.inline
-  def `Star Strips`: `Star Strips` = "Star Strips".asInstanceOf[`Star Strips`]
+  def `Star Strips`: `Star Strips` = ("Star Strips").asInstanceOf[`Star Strips`]
   @scala.inline
-  def `Star Wars`: `Star Wars` = "Star Wars".asInstanceOf[`Star Wars`]
+  def `Star Wars`: `Star Wars` = ("Star Wars").asInstanceOf[`Star Wars`]
   @scala.inline
   def Stellar: Stellar = "Stellar".asInstanceOf[Stellar]
   @scala.inline
   def Stforek: Stforek = "Stforek".asInstanceOf[Stforek]
   @scala.inline
-  def `Stick Letters`: `Stick Letters` = "Stick Letters".asInstanceOf[`Stick Letters`]
+  def `Stick Letters`: `Stick Letters` = ("Stick Letters").asInstanceOf[`Stick Letters`]
   @scala.inline
   def Stop: Stop = "Stop".asInstanceOf[Stop]
   @scala.inline
   def Straight: Straight = "Straight".asInstanceOf[Straight]
   @scala.inline
-  def `Stronger Than All`: `Stronger Than All` = "Stronger Than All".asInstanceOf[`Stronger Than All`]
+  def `Stronger Than All`: `Stronger Than All` = ("Stronger Than All").asInstanceOf[`Stronger Than All`]
   @scala.inline
   def `Sub-Zero`: `Sub-Zero` = "Sub-Zero".asInstanceOf[`Sub-Zero`]
   @scala.inline
-  def `Swamp Land`: `Swamp Land` = "Swamp Land".asInstanceOf[`Swamp Land`]
+  def `Swamp Land`: `Swamp Land` = ("Swamp Land").asInstanceOf[`Swamp Land`]
   @scala.inline
   def Swan: Swan = "Swan".asInstanceOf[Swan]
   @scala.inline
@@ -1410,7 +1410,7 @@ object figletStrings {
   @scala.inline
   def Test1: Test1 = "Test1".asInstanceOf[Test1]
   @scala.inline
-  def `The Edge`: `The Edge` = "The Edge".asInstanceOf[`The Edge`]
+  def `The Edge`: `The Edge` = ("The Edge").asInstanceOf[`The Edge`]
   @scala.inline
   def Thick: Thick = "Thick".asInstanceOf[Thick]
   @scala.inline
@@ -1418,11 +1418,11 @@ object figletStrings {
   @scala.inline
   def Thorned: Thorned = "Thorned".asInstanceOf[Thorned]
   @scala.inline
-  def `Three Point`: `Three Point` = "Three Point".asInstanceOf[`Three Point`]
+  def `Three Point`: `Three Point` = ("Three Point").asInstanceOf[`Three Point`]
   @scala.inline
   def Ticks: Ticks = "Ticks".asInstanceOf[Ticks]
   @scala.inline
-  def `Ticks Slant`: `Ticks Slant` = "Ticks Slant".asInstanceOf[`Ticks Slant`]
+  def `Ticks Slant`: `Ticks Slant` = ("Ticks Slant").asInstanceOf[`Ticks Slant`]
   @scala.inline
   def Tiles: Tiles = "Tiles".asInstanceOf[Tiles]
   @scala.inline
@@ -1440,9 +1440,9 @@ object figletStrings {
   @scala.inline
   def Twisted: Twisted = "Twisted".asInstanceOf[Twisted]
   @scala.inline
-  def `Two Point`: `Two Point` = "Two Point".asInstanceOf[`Two Point`]
+  def `Two Point`: `Two Point` = ("Two Point").asInstanceOf[`Two Point`]
   @scala.inline
-  def `USA Flag`: `USA Flag` = "USA Flag".asInstanceOf[`USA Flag`]
+  def `USA Flag`: `USA Flag` = ("USA Flag").asInstanceOf[`USA Flag`]
   @scala.inline
   def Univers: Univers = "Univers".asInstanceOf[Univers]
   @scala.inline
@@ -1452,13 +1452,13 @@ object figletStrings {
   @scala.inline
   def Weird: Weird = "Weird".asInstanceOf[Weird]
   @scala.inline
-  def `Wet Letter`: `Wet Letter` = "Wet Letter".asInstanceOf[`Wet Letter`]
+  def `Wet Letter`: `Wet Letter` = ("Wet Letter").asInstanceOf[`Wet Letter`]
   @scala.inline
   def Whimsy: Whimsy = "Whimsy".asInstanceOf[Whimsy]
   @scala.inline
   def Wow: Wow = "Wow".asInstanceOf[Wow]
   @scala.inline
-  def `controlled smushing`: `controlled smushing` = "controlled smushing".asInstanceOf[`controlled smushing`]
+  def `controlled smushing`: `controlled smushing` = ("controlled smushing").asInstanceOf[`controlled smushing`]
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   @scala.inline
@@ -1466,6 +1466,6 @@ object figletStrings {
   @scala.inline
   def full: full = "full".asInstanceOf[full]
   @scala.inline
-  def `universal smushing`: `universal smushing` = "universal smushing".asInstanceOf[`universal smushing`]
+  def `universal smushing`: `universal smushing` = ("universal smushing").asInstanceOf[`universal smushing`]
 }
 

@@ -15,16 +15,14 @@ trait QueryEventType extends js.Object
 
 object QueryEventType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def executionPlan: typings.azdata.azdataStrings.executionPlan = "executionPlan".asInstanceOf[typings.azdata.azdataStrings.executionPlan]
   @scala.inline
-  def executionPlan: typings.azdata.azdataStrings.executionPlan = this.cast("executionPlan")
+  def queryStart: typings.azdata.azdataStrings.queryStart = "queryStart".asInstanceOf[typings.azdata.azdataStrings.queryStart]
   @scala.inline
-  def queryStart: typings.azdata.azdataStrings.queryStart = this.cast("queryStart")
+  def queryStop: typings.azdata.azdataStrings.queryStop = "queryStop".asInstanceOf[typings.azdata.azdataStrings.queryStop]
   @scala.inline
-  def queryStop: typings.azdata.azdataStrings.queryStop = this.cast("queryStop")
+  def queryUpdate: typings.azdata.azdataStrings.queryUpdate = "queryUpdate".asInstanceOf[typings.azdata.azdataStrings.queryUpdate]
   @scala.inline
-  def queryUpdate: typings.azdata.azdataStrings.queryUpdate = this.cast("queryUpdate")
-  @scala.inline
-  def visualize: typings.azdata.azdataStrings.visualize = this.cast("visualize")
+  def visualize: typings.azdata.azdataStrings.visualize = "visualize".asInstanceOf[typings.azdata.azdataStrings.visualize]
 }
 

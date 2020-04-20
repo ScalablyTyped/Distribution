@@ -20,7 +20,6 @@ object TaskDefinitionInferenceAccelerator {
   @scala.inline
   def apply(deviceName: String, deviceType: String): TaskDefinitionInferenceAccelerator = {
     val __obj = js.Dynamic.literal(deviceName = deviceName.asInstanceOf[js.Any], deviceType = deviceType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TaskDefinitionInferenceAccelerator]
   }
 }

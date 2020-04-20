@@ -20,7 +20,6 @@ object BatchDetectSentimentRequest {
   @scala.inline
   def apply(LanguageCode: LanguageCode, TextList: StringList): BatchDetectSentimentRequest = {
     val __obj = js.Dynamic.literal(LanguageCode = LanguageCode.asInstanceOf[js.Any], TextList = TextList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchDetectSentimentRequest]
   }
 }

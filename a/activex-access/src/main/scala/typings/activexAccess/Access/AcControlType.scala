@@ -58,54 +58,52 @@ trait AcControlType extends js.Object
 
 object AcControlType {
   @scala.inline
-  def acAttachment: `126` = this.cast(126)
+  def acAttachment: `126` = 126.asInstanceOf[`126`]
   @scala.inline
-  def acBoundObjectFrame: `108` = this.cast(108)
+  def acBoundObjectFrame: `108` = 108.asInstanceOf[`108`]
   @scala.inline
-  def acCheckBox: `106` = this.cast(106)
+  def acCheckBox: `106` = 106.asInstanceOf[`106`]
   @scala.inline
-  def acComboBox: `111` = this.cast(111)
+  def acComboBox: `111` = 111.asInstanceOf[`111`]
   @scala.inline
-  def acCommandButton: `104` = this.cast(104)
+  def acCommandButton: `104` = 104.asInstanceOf[`104`]
   @scala.inline
-  def acCustomControl: `119` = this.cast(119)
+  def acCustomControl: `119` = 119.asInstanceOf[`119`]
   @scala.inline
-  def acEmptyCell: `127` = this.cast(127)
+  def acEmptyCell: `127` = 127.asInstanceOf[`127`]
   @scala.inline
-  def acImage: `103` = this.cast(103)
+  def acImage: `103` = 103.asInstanceOf[`103`]
   @scala.inline
-  def acLabel: `100` = this.cast(100)
+  def acLabel: `100` = 100.asInstanceOf[`100`]
   @scala.inline
-  def acLine: `102` = this.cast(102)
+  def acLine: `102` = 102.asInstanceOf[`102`]
   @scala.inline
-  def acListBox: `110` = this.cast(110)
+  def acListBox: `110` = 110.asInstanceOf[`110`]
   @scala.inline
-  def acNavigationButton: `130` = this.cast(130)
+  def acNavigationButton: `130` = 130.asInstanceOf[`130`]
   @scala.inline
-  def acNavigationControl: `129` = this.cast(129)
+  def acNavigationControl: `129` = 129.asInstanceOf[`129`]
   @scala.inline
-  def acObjectFrame: `114` = this.cast(114)
+  def acObjectFrame: `114` = 114.asInstanceOf[`114`]
   @scala.inline
-  def acOptionButton: `105` = this.cast(105)
+  def acOptionButton: `105` = 105.asInstanceOf[`105`]
   @scala.inline
-  def acOptionGroup: `107` = this.cast(107)
+  def acOptionGroup: `107` = 107.asInstanceOf[`107`]
   @scala.inline
-  def acPage: `124` = this.cast(124)
+  def acPage: `124` = 124.asInstanceOf[`124`]
   @scala.inline
-  def acPageBreak: `118` = this.cast(118)
+  def acPageBreak: `118` = 118.asInstanceOf[`118`]
   @scala.inline
-  def acRectangle: `101` = this.cast(101)
+  def acRectangle: `101` = 101.asInstanceOf[`101`]
   @scala.inline
-  def acSubform: `112` = this.cast(112)
+  def acSubform: `112` = 112.asInstanceOf[`112`]
   @scala.inline
-  def acTabCtl: `123` = this.cast(123)
+  def acTabCtl: `123` = 123.asInstanceOf[`123`]
   @scala.inline
-  def acTextBox: `109` = this.cast(109)
+  def acTextBox: `109` = 109.asInstanceOf[`109`]
   @scala.inline
-  def acToggleButton: `122` = this.cast(122)
+  def acToggleButton: `122` = 122.asInstanceOf[`122`]
   @scala.inline
-  def acWebBrowser: `128` = this.cast(128)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def acWebBrowser: `128` = 128.asInstanceOf[`128`]
 }
 

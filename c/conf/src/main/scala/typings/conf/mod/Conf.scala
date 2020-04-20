@@ -14,15 +14,15 @@ Simple config handling for your app or module.
 trait Conf[T]
   extends Iterable[
       js.Tuple2[
-        String, 
+        /* keyof T */ String, 
         /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
       ]
     ] {
-  @JSName(scala.scalajs.js.Symbol.iterator)
+  @JSName(js.Symbol.iterator)
   var iterator_Conf: js.Function0[
     IterableIterator[
       js.Tuple2[
-        String, 
+        /* keyof T */ String, 
         /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
       ]
     ]
@@ -38,14 +38,14 @@ trait Conf[T]
   	Delete an item.
   	@param key - The key of the item to delete.
   	*/
-  def delete[K /* <: String */](key: K): Unit = js.native
+  def delete[K /* <: /* keyof T */ String */](key: K): Unit = js.native
   /**
   	Get an item.
   	@param key - The key of the item to get.
   	@param defaultValue - The default value if the item does not exist.
   	*/
-  def get[K /* <: String */](key: K): /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = js.native
-  def get[K /* <: String */](
+  def get[K /* <: /* keyof T */ String */](key: K): /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = js.native
+  def get[K /* <: /* keyof T */ String */](
     key: K,
     defaultValue: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ): /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = js.native
@@ -53,7 +53,7 @@ trait Conf[T]
   	Check if an item exists.
   	@param key - The key of the item to check.
   	*/
-  def has[K /* <: String */](key: K): Boolean = js.native
+  def has[K /* <: /* keyof T */ String */](key: K): Boolean = js.native
   /**
   	Watches the whole config object, calling `callback` on any changes.
   	@param callback - A callback function that is called on any changes. When a `key` is first set `oldValue` will be `undefined`, and when a key is deleted `newValue` will be `undefined`.
@@ -66,7 +66,7 @@ trait Conf[T]
   	@param callback - A callback function that is called on any changes. When a `key` is first set `oldValue` will be `undefined`, and when a key is deleted `newValue` will be `undefined`.
   	@returns A function, that when called, will unsubscribe.
   	*/
-  def onDidChange[K /* <: String */](
+  def onDidChange[K /* <: /* keyof T */ String */](
     key: K,
     callback: js.Function2[
       /* newValue */ js.UndefOr[
@@ -82,7 +82,7 @@ trait Conf[T]
   	Reset items to their default values, as defined by the `defaults` or `schema` option.
   	@param keys - The keys of the items to reset.
   	*/
-  def reset[K /* <: String */](keys: K*): Unit = js.native
+  def reset[K /* <: /* keyof T */ String */](keys: K*): Unit = js.native
   /**
   	Set multiple items at once.
   	@param object - A hashmap of items to set at once.
@@ -93,6 +93,6 @@ trait Conf[T]
   	@param key - You can use [dot-notation](https://github.com/sindresorhus/dot-prop) in a key to access nested properties.
   	@param value - Must be JSON serializable. Trying to set the type `undefined`, `function`, or `symbol` will result in a `TypeError`.
   	*/
-  def set[K /* <: String */](key: K, value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any): Unit = js.native
+  def set[K /* <: /* keyof T */ String */](key: K, value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any): Unit = js.native
 }
 

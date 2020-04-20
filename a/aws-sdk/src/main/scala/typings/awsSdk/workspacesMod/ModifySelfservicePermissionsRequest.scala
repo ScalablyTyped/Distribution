@@ -20,7 +20,6 @@ object ModifySelfservicePermissionsRequest {
   @scala.inline
   def apply(ResourceId: DirectoryId, SelfservicePermissions: SelfservicePermissions): ModifySelfservicePermissionsRequest = {
     val __obj = js.Dynamic.literal(ResourceId = ResourceId.asInstanceOf[js.Any], SelfservicePermissions = SelfservicePermissions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ModifySelfservicePermissionsRequest]
   }
 }

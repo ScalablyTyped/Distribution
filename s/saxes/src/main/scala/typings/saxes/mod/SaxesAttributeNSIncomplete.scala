@@ -16,14 +16,12 @@ trait SaxesAttributeNSIncomplete
 
 object SaxesAttributeNSIncomplete {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def local: typings.saxes.saxesStrings.local = "local".asInstanceOf[typings.saxes.saxesStrings.local]
   @scala.inline
-  def local: typings.saxes.saxesStrings.local = this.cast("local")
+  def name: typings.saxes.saxesStrings.name = "name".asInstanceOf[typings.saxes.saxesStrings.name]
   @scala.inline
-  def name: typings.saxes.saxesStrings.name = this.cast("name")
+  def prefix: typings.saxes.saxesStrings.prefix = "prefix".asInstanceOf[typings.saxes.saxesStrings.prefix]
   @scala.inline
-  def prefix: typings.saxes.saxesStrings.prefix = this.cast("prefix")
-  @scala.inline
-  def value: typings.saxes.saxesStrings.value = this.cast("value")
+  def value: typings.saxes.saxesStrings.value = "value".asInstanceOf[typings.saxes.saxesStrings.value]
 }
 

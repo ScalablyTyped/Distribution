@@ -16,7 +16,6 @@ object AddAttributesToFindingsResponse {
   @scala.inline
   def apply(failedItems: FailedItems): AddAttributesToFindingsResponse = {
     val __obj = js.Dynamic.literal(failedItems = failedItems.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddAttributesToFindingsResponse]
   }
 }

@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ^[EventTypes /* <: String | js.Symbol | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ K in keyof EventTypes ]: std.Array<any>}
-  */ typings.eventemitter3.eventemitter3Strings.^  with js.Any) */] () extends EventEmitter[EventTypes]
+  */ typings.eventemitter3.eventemitter3Strings.^  with TopLevel[js.Any]) */] () extends EventEmitter[EventTypes]
 
 @JSImport("eventemitter3", JSImport.Namespace)
 @js.native

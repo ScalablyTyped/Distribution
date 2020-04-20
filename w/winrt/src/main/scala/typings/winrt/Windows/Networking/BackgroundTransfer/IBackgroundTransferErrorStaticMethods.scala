@@ -13,7 +13,6 @@ object IBackgroundTransferErrorStaticMethods {
   @scala.inline
   def apply(getStatus: Double => WebErrorStatus): IBackgroundTransferErrorStaticMethods = {
     val __obj = js.Dynamic.literal(getStatus = js.Any.fromFunction1(getStatus))
-  
     __obj.asInstanceOf[IBackgroundTransferErrorStaticMethods]
   }
 }

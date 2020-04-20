@@ -14,7 +14,6 @@ object AnonHouseNumber {
   @scala.inline
   def apply(City: Double, HouseNumber: Double, Street: js.Array[Double]): AnonHouseNumber = {
     val __obj = js.Dynamic.literal(City = City.asInstanceOf[js.Any], HouseNumber = HouseNumber.asInstanceOf[js.Any], Street = Street.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHouseNumber]
   }
 }

@@ -20,7 +20,6 @@ object IVisitor {
     visitText: Text => js.Any
   ): IVisitor = {
     val __obj = js.Dynamic.literal(visitDeclaration = js.Any.fromFunction1(visitDeclaration), visitDoctype = js.Any.fromFunction1(visitDoctype), visitTag = js.Any.fromFunction1(visitTag), visitText = js.Any.fromFunction1(visitText))
-  
     __obj.asInstanceOf[IVisitor]
   }
 }

@@ -16,7 +16,6 @@ object TagsModel {
   @scala.inline
   def apply(tags: MapOfString): TagsModel = {
     val __obj = js.Dynamic.literal(tags = tags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TagsModel]
   }
 }

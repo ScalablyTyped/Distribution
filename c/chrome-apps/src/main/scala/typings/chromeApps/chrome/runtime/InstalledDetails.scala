@@ -2,10 +2,14 @@ package typings.chromeApps.chrome.runtime
 
 import typings.chromeApps.AnonCHROMEUPDATE
 import typings.chromeApps.chrome.ToStringLiteral
-import typings.chromeApps.chromeAppsStrings.chrome_update
-import typings.chromeApps.chromeAppsStrings.install
-import typings.chromeApps.chromeAppsStrings.shared_module_update
-import typings.chromeApps.chromeAppsStrings.update
+import typings.chromeApps.chromeAppsStrings.CHROME_UPDATE
+import typings.chromeApps.chromeAppsStrings.INSTALL
+import typings.chromeApps.chromeAppsStrings.SHARED_MODULE_UPDATE
+import typings.chromeApps.chromeAppsStrings.UPDATE
+import typings.chromeApps.chromeAppsStrings.chrome_update_
+import typings.chromeApps.chromeAppsStrings.install_
+import typings.chromeApps.chromeAppsStrings.shared_module_update_
+import typings.chromeApps.chromeAppsStrings.update_
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,8 +33,11 @@ trait InstalledDetails extends js.Object {
     */
   var reason: ToStringLiteral[
     AnonCHROMEUPDATE, 
-    String, 
-    Exclude[String, install | update | chrome_update | shared_module_update]
+    INSTALL | UPDATE | CHROME_UPDATE | SHARED_MODULE_UPDATE, 
+    Exclude[
+      INSTALL | UPDATE | CHROME_UPDATE | SHARED_MODULE_UPDATE, 
+      install_ | update_ | chrome_update_ | shared_module_update_
+    ]
   ]
 }
 
@@ -39,8 +46,11 @@ object InstalledDetails {
   def apply(
     reason: ToStringLiteral[
       AnonCHROMEUPDATE, 
-      String, 
-      Exclude[String, install | update | chrome_update | shared_module_update]
+      INSTALL | UPDATE | CHROME_UPDATE | SHARED_MODULE_UPDATE, 
+      Exclude[
+        INSTALL | UPDATE | CHROME_UPDATE | SHARED_MODULE_UPDATE, 
+        install_ | update_ | chrome_update_ | shared_module_update_
+      ]
     ],
     id: String = null,
     previousVersion: String = null

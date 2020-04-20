@@ -16,7 +16,6 @@ object LaunchTemplateLicenseSpecification {
   @scala.inline
   def apply(licenseConfigurationArn: String): LaunchTemplateLicenseSpecification = {
     val __obj = js.Dynamic.literal(licenseConfigurationArn = licenseConfigurationArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LaunchTemplateLicenseSpecification]
   }
 }

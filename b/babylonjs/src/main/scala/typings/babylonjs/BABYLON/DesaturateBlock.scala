@@ -15,14 +15,14 @@ class DesaturateBlock protected () extends NodeMaterialBlock {
   /**
     * Gets the color operand input component
     */
-  def color(): NodeMaterialConnectionPoint = js.native
+  def color: NodeMaterialConnectionPoint = js.native
   /**
     * Gets the level operand input component
     */
-  def level(): NodeMaterialConnectionPoint = js.native
+  def level: NodeMaterialConnectionPoint = js.native
   /**
     * Gets the output component
     */
-  def output(): NodeMaterialConnectionPoint = js.native
+  def output: NodeMaterialConnectionPoint = js.native
 }
 

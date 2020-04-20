@@ -13,7 +13,6 @@ object AnonClientsecret {
   @scala.inline
   def apply(client_secret: String, id: String): AnonClientsecret = {
     val __obj = js.Dynamic.literal(client_secret = client_secret.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonClientsecret]
   }
 }

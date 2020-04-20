@@ -2,6 +2,7 @@ package typings.angular.mod
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,7 +33,7 @@ trait IQService
   def all[T](
     promises: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: angular.angular.IPromise<T[K]> | T[K]}
-    */ typings.angular.angularStrings.IQService with js.Any
+    */ typings.angular.angularStrings.IQService with TopLevel[js.Any]
   ): IPromise[T] = js.native
   def all[TAll](promises: js.Array[TAll | IPromise[TAll]]): IPromise[js.Array[TAll]] = js.native
   def all[T1, T2](values: js.Tuple2[T1 | IPromise[T1], T2 | IPromise[T2]]): IPromise[js.Tuple2[T1, T2]] = js.native

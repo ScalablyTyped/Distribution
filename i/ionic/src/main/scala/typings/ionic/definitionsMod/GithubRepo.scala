@@ -13,7 +13,6 @@ object GithubRepo {
   @scala.inline
   def apply(full_name: String, id: Double): GithubRepo = {
     val __obj = js.Dynamic.literal(full_name = full_name.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GithubRepo]
   }
 }

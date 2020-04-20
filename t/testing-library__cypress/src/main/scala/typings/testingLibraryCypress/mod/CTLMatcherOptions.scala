@@ -1,6 +1,6 @@
 package typings.testingLibraryCypress.mod
 
-import typings.cypress.JQuery_
+import typings.jquery.JQuery_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

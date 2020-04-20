@@ -21,7 +21,6 @@ object RouteSpecTcpRouteActionWeightedTarget {
   @scala.inline
   def apply(virtualNode: Input[String], weight: Input[Double]): RouteSpecTcpRouteActionWeightedTarget = {
     val __obj = js.Dynamic.literal(virtualNode = virtualNode.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RouteSpecTcpRouteActionWeightedTarget]
   }
 }

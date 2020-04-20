@@ -24,7 +24,6 @@ object INxSelectionInfo {
   @scala.inline
   def apply(qInSelections: Boolean, qMadeSelections: Boolean): INxSelectionInfo = {
     val __obj = js.Dynamic.literal(qInSelections = qInSelections.asInstanceOf[js.Any], qMadeSelections = qMadeSelections.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INxSelectionInfo]
   }
 }

@@ -42,7 +42,6 @@ object ItemResponse {
     setScore: js.Any => ItemResponse
   ): ItemResponse = {
     val __obj = js.Dynamic.literal(getFeedback = js.Any.fromFunction0(getFeedback), getItem = js.Any.fromFunction0(getItem), getResponse = js.Any.fromFunction0(getResponse), getScore = js.Any.fromFunction0(getScore), setFeedback = js.Any.fromFunction1(setFeedback), setScore = js.Any.fromFunction1(setScore))
-  
     __obj.asInstanceOf[ItemResponse]
   }
 }

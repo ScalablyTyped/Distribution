@@ -1,5 +1,6 @@
 package typings.awsSdkClientSqsNode.typesSetQueueAttributesInputMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.All
 import typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.ApproximateNumberOfMessages
 import typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.ApproximateNumberOfMessagesDelayed
@@ -49,7 +50,7 @@ trait SetQueueAttributesInput extends InputTypesUnion {
     */
   var Attributes: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in 'All' | 'Policy' | 'VisibilityTimeout' | 'MaximumMessageSize' | 'MessageRetentionPeriod' | 'ApproximateNumberOfMessages' | 'ApproximateNumberOfMessagesNotVisible' | 'CreatedTimestamp' | 'LastModifiedTimestamp' | 'QueueArn' | 'ApproximateNumberOfMessagesDelayed' | 'DelaySeconds' | 'ReceiveMessageWaitTimeSeconds' | 'RedrivePolicy' | 'FifoQueue' | 'ContentBasedDeduplication' | 'KmsMasterKeyId' | 'KmsDataKeyReusePeriodSeconds' | string ]: string}
-    */ typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.SetQueueAttributesInput with js.Any) | (Iterable[
+    */ typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.SetQueueAttributesInput with TopLevel[js.Any]) | (Iterable[
     js.Tuple2[
       All | Policy | VisibilityTimeout | MaximumMessageSize | MessageRetentionPeriod | ApproximateNumberOfMessages | ApproximateNumberOfMessagesNotVisible | CreatedTimestamp | LastModifiedTimestamp | QueueArn | ApproximateNumberOfMessagesDelayed | DelaySeconds | ReceiveMessageWaitTimeSeconds | RedrivePolicy | FifoQueue | ContentBasedDeduplication | KmsMasterKeyId | KmsDataKeyReusePeriodSeconds | String, 
       String
@@ -66,7 +67,7 @@ object SetQueueAttributesInput {
   def apply(
     Attributes: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in 'All' | 'Policy' | 'VisibilityTimeout' | 'MaximumMessageSize' | 'MessageRetentionPeriod' | 'ApproximateNumberOfMessages' | 'ApproximateNumberOfMessagesNotVisible' | 'CreatedTimestamp' | 'LastModifiedTimestamp' | 'QueueArn' | 'ApproximateNumberOfMessagesDelayed' | 'DelaySeconds' | 'ReceiveMessageWaitTimeSeconds' | 'RedrivePolicy' | 'FifoQueue' | 'ContentBasedDeduplication' | 'KmsMasterKeyId' | 'KmsDataKeyReusePeriodSeconds' | string ]: string}
-    */ typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.SetQueueAttributesInput with js.Any) | (Iterable[
+    */ typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.SetQueueAttributesInput with TopLevel[js.Any]) | (Iterable[
       js.Tuple2[
         All | Policy | VisibilityTimeout | MaximumMessageSize | MessageRetentionPeriod | ApproximateNumberOfMessages | ApproximateNumberOfMessagesNotVisible | CreatedTimestamp | LastModifiedTimestamp | QueueArn | ApproximateNumberOfMessagesDelayed | DelaySeconds | ReceiveMessageWaitTimeSeconds | RedrivePolicy | FifoQueue | ContentBasedDeduplication | KmsMasterKeyId | KmsDataKeyReusePeriodSeconds | String, 
         String

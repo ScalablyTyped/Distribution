@@ -13,7 +13,6 @@ object IROOM_ADD {
   @scala.inline
   def apply(room: SFSRoom): IROOM_ADD = {
     val __obj = js.Dynamic.literal(room = room.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IROOM_ADD]
   }
 }

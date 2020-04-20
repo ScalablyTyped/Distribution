@@ -19,7 +19,6 @@ object SourceControlInputBox {
   @scala.inline
   def apply(placeholder: String, value: String): SourceControlInputBox = {
     val __obj = js.Dynamic.literal(placeholder = placeholder.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SourceControlInputBox]
   }
 }

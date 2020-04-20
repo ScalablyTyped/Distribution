@@ -28,7 +28,6 @@ object MailFromAttributes {
     MailFromDomainStatus: MailFromDomainStatus
   ): MailFromAttributes = {
     val __obj = js.Dynamic.literal(BehaviorOnMxFailure = BehaviorOnMxFailure.asInstanceOf[js.Any], MailFromDomain = MailFromDomain.asInstanceOf[js.Any], MailFromDomainStatus = MailFromDomainStatus.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MailFromAttributes]
   }
 }

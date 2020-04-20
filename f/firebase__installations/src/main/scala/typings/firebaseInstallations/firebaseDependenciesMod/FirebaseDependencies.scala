@@ -16,7 +16,6 @@ object FirebaseDependencies {
   @scala.inline
   def apply(appConfig: AppConfig, platformLoggerProvider: Provider[`platform-logger`]): FirebaseDependencies = {
     val __obj = js.Dynamic.literal(appConfig = appConfig.asInstanceOf[js.Any], platformLoggerProvider = platformLoggerProvider.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FirebaseDependencies]
   }
 }

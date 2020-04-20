@@ -16,7 +16,6 @@ object TemplateCreatedMessageEvent {
   @scala.inline
   def apply(event: template_created, template_id: String, template_info: AnonCcroles): TemplateCreatedMessageEvent = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], template_id = template_id.asInstanceOf[js.Any], template_info = template_info.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TemplateCreatedMessageEvent]
   }
 }

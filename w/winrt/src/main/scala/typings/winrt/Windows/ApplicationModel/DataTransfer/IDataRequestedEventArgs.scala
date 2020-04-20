@@ -12,7 +12,6 @@ object IDataRequestedEventArgs {
   @scala.inline
   def apply(request: DataRequest): IDataRequestedEventArgs = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDataRequestedEventArgs]
   }
 }

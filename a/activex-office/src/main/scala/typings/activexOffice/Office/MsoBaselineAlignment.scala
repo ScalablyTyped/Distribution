@@ -22,18 +22,16 @@ trait MsoBaselineAlignment extends js.Object
 
 object MsoBaselineAlignment {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoBaselineAlignAuto: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def msoBaselineAlignAuto: `5` = this.cast(5)
+  def msoBaselineAlignBaseline: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoBaselineAlignBaseline: `1` = this.cast(1)
+  def msoBaselineAlignCenter: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoBaselineAlignCenter: `3` = this.cast(3)
+  def msoBaselineAlignFarEast50: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoBaselineAlignFarEast50: `4` = this.cast(4)
+  def msoBaselineAlignMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def msoBaselineAlignMixed: `-2` = this.cast(-2)
-  @scala.inline
-  def msoBaselineAlignTop: `2` = this.cast(2)
+  def msoBaselineAlignTop: `2` = 2.asInstanceOf[`2`]
 }
 

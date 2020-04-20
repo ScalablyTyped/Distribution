@@ -16,7 +16,6 @@ object CreateAddressRequest {
   @scala.inline
   def apply(Address: Address): CreateAddressRequest = {
     val __obj = js.Dynamic.literal(Address = Address.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateAddressRequest]
   }
 }

@@ -16,18 +16,16 @@ trait ResponseType extends js.Object
 
 object ResponseType {
   @scala.inline
-  def basic: typings.reactNative.reactNativeStrings.basic = this.cast("basic")
+  def basic: typings.reactNative.reactNativeStrings.basic = "basic".asInstanceOf[typings.reactNative.reactNativeStrings.basic]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cors: typings.reactNative.reactNativeStrings.cors = "cors".asInstanceOf[typings.reactNative.reactNativeStrings.cors]
   @scala.inline
-  def cors: typings.reactNative.reactNativeStrings.cors = this.cast("cors")
+  def default: typings.reactNative.reactNativeStrings.default = "default".asInstanceOf[typings.reactNative.reactNativeStrings.default]
   @scala.inline
-  def default: typings.reactNative.reactNativeStrings.default = this.cast("default")
+  def error: typings.reactNative.reactNativeStrings.error = "error".asInstanceOf[typings.reactNative.reactNativeStrings.error]
   @scala.inline
-  def error: typings.reactNative.reactNativeStrings.error = this.cast("error")
+  def opaque: typings.reactNative.reactNativeStrings.opaque = "opaque".asInstanceOf[typings.reactNative.reactNativeStrings.opaque]
   @scala.inline
-  def opaque: typings.reactNative.reactNativeStrings.opaque = this.cast("opaque")
-  @scala.inline
-  def opaqueredirect: typings.reactNative.reactNativeStrings.opaqueredirect = this.cast("opaqueredirect")
+  def opaqueredirect: typings.reactNative.reactNativeStrings.opaqueredirect = "opaqueredirect".asInstanceOf[typings.reactNative.reactNativeStrings.opaqueredirect]
 }
 

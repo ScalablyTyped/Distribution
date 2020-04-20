@@ -12,7 +12,6 @@ object GroupContainerProperties {
   @scala.inline
   def apply(collapsed: Boolean): GroupContainerProperties = {
     val __obj = js.Dynamic.literal(collapsed = collapsed.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GroupContainerProperties]
   }
 }

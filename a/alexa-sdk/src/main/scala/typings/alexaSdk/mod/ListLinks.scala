@@ -12,7 +12,6 @@ object ListLinks {
   @scala.inline
   def apply(next: String): ListLinks = {
     val __obj = js.Dynamic.literal(next = next.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListLinks]
   }
 }

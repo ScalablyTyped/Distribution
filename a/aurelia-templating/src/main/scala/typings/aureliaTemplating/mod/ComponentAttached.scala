@@ -15,7 +15,6 @@ object ComponentAttached {
   @scala.inline
   def apply(attached: () => Unit): ComponentAttached = {
     val __obj = js.Dynamic.literal(attached = js.Any.fromFunction0(attached))
-  
     __obj.asInstanceOf[ComponentAttached]
   }
 }

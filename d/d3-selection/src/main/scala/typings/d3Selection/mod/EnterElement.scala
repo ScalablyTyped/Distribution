@@ -28,7 +28,6 @@ object EnterElement {
     querySelectorAll: String => NodeListOf[Element]
   ): EnterElement = {
     val __obj = js.Dynamic.literal(appendChild = js.Any.fromFunction1(appendChild), insertBefore = js.Any.fromFunction2(insertBefore), namespaceURI = namespaceURI.asInstanceOf[js.Any], ownerDocument = ownerDocument.asInstanceOf[js.Any], querySelector = js.Any.fromFunction1(querySelector), querySelectorAll = js.Any.fromFunction1(querySelectorAll))
-  
     __obj.asInstanceOf[EnterElement]
   }
 }

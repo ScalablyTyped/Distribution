@@ -12,10 +12,8 @@ trait ParserType extends js.Object
 
 object ParserType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def numeric: typings.tablesorter.tablesorterStrings.numeric = "numeric".asInstanceOf[typings.tablesorter.tablesorterStrings.numeric]
   @scala.inline
-  def numeric: typings.tablesorter.tablesorterStrings.numeric = this.cast("numeric")
-  @scala.inline
-  def text: typings.tablesorter.tablesorterStrings.text = this.cast("text")
+  def text: typings.tablesorter.tablesorterStrings.text = "text".asInstanceOf[typings.tablesorter.tablesorterStrings.text]
 }
 

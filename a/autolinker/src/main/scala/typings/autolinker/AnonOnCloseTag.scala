@@ -22,7 +22,6 @@ object AnonOnCloseTag {
     onText: (String, Double) => Unit
   ): AnonOnCloseTag = {
     val __obj = js.Dynamic.literal(onCloseTag = js.Any.fromFunction2(onCloseTag), onComment = js.Any.fromFunction1(onComment), onDoctype = js.Any.fromFunction1(onDoctype), onOpenTag = js.Any.fromFunction2(onOpenTag), onText = js.Any.fromFunction2(onText))
-  
     __obj.asInstanceOf[AnonOnCloseTag]
   }
 }

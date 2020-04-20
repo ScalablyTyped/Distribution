@@ -20,7 +20,6 @@ object Bounce {
   @scala.inline
   def apply(setBounce: Double => GameObject): Bounce = {
     val __obj = js.Dynamic.literal(setBounce = js.Any.fromFunction1(setBounce))
-  
     __obj.asInstanceOf[Bounce]
   }
 }

@@ -46,7 +46,6 @@ object WebDriverError {
     status: Double
   ): WebDriverError = {
     val __obj = js.Dynamic.literal(detail = detail.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WebDriverError]
   }
 }

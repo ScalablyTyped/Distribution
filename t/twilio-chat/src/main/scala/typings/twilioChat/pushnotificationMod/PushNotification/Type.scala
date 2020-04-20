@@ -14,14 +14,12 @@ trait Type extends js.Object
 
 object Type {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def twilioDotchannelDotadded_to_channel: typings.twilioChat.twilioChatStrings.twilioDotchannelDotadded_to_channel = "twilio.channel.added_to_channel".asInstanceOf[typings.twilioChat.twilioChatStrings.twilioDotchannelDotadded_to_channel]
   @scala.inline
-  def twilioDotchannelDotadded_to_channel: typings.twilioChat.twilioChatStrings.twilioDotchannelDotadded_to_channel = this.cast("twilio.channel.added_to_channel")
+  def twilioDotchannelDotinvited_to_channel: typings.twilioChat.twilioChatStrings.twilioDotchannelDotinvited_to_channel = "twilio.channel.invited_to_channel".asInstanceOf[typings.twilioChat.twilioChatStrings.twilioDotchannelDotinvited_to_channel]
   @scala.inline
-  def twilioDotchannelDotinvited_to_channel: typings.twilioChat.twilioChatStrings.twilioDotchannelDotinvited_to_channel = this.cast("twilio.channel.invited_to_channel")
+  def twilioDotchannelDotnew_message: typings.twilioChat.twilioChatStrings.twilioDotchannelDotnew_message = "twilio.channel.new_message".asInstanceOf[typings.twilioChat.twilioChatStrings.twilioDotchannelDotnew_message]
   @scala.inline
-  def twilioDotchannelDotnew_message: typings.twilioChat.twilioChatStrings.twilioDotchannelDotnew_message = this.cast("twilio.channel.new_message")
-  @scala.inline
-  def twilioDotchannelDotremoved_from_channel: typings.twilioChat.twilioChatStrings.twilioDotchannelDotremoved_from_channel = this.cast("twilio.channel.removed_from_channel")
+  def twilioDotchannelDotremoved_from_channel: typings.twilioChat.twilioChatStrings.twilioDotchannelDotremoved_from_channel = "twilio.channel.removed_from_channel".asInstanceOf[typings.twilioChat.twilioChatStrings.twilioDotchannelDotremoved_from_channel]
 }
 

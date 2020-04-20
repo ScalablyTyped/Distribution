@@ -18,22 +18,20 @@ trait ResizeHandle extends js.Object
 
 object ResizeHandle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def e: typings.reactResizable.reactResizableStrings.e = "e".asInstanceOf[typings.reactResizable.reactResizableStrings.e]
   @scala.inline
-  def e: typings.reactResizable.reactResizableStrings.e = this.cast("e")
+  def n: typings.reactResizable.reactResizableStrings.n = "n".asInstanceOf[typings.reactResizable.reactResizableStrings.n]
   @scala.inline
-  def n: typings.reactResizable.reactResizableStrings.n = this.cast("n")
+  def ne: typings.reactResizable.reactResizableStrings.ne = "ne".asInstanceOf[typings.reactResizable.reactResizableStrings.ne]
   @scala.inline
-  def ne: typings.reactResizable.reactResizableStrings.ne = this.cast("ne")
+  def nw: typings.reactResizable.reactResizableStrings.nw = "nw".asInstanceOf[typings.reactResizable.reactResizableStrings.nw]
   @scala.inline
-  def nw: typings.reactResizable.reactResizableStrings.nw = this.cast("nw")
+  def s: typings.reactResizable.reactResizableStrings.s = "s".asInstanceOf[typings.reactResizable.reactResizableStrings.s]
   @scala.inline
-  def s: typings.reactResizable.reactResizableStrings.s = this.cast("s")
+  def se: typings.reactResizable.reactResizableStrings.se = "se".asInstanceOf[typings.reactResizable.reactResizableStrings.se]
   @scala.inline
-  def se: typings.reactResizable.reactResizableStrings.se = this.cast("se")
+  def sw: typings.reactResizable.reactResizableStrings.sw = "sw".asInstanceOf[typings.reactResizable.reactResizableStrings.sw]
   @scala.inline
-  def sw: typings.reactResizable.reactResizableStrings.sw = this.cast("sw")
-  @scala.inline
-  def w: typings.reactResizable.reactResizableStrings.w = this.cast("w")
+  def w: typings.reactResizable.reactResizableStrings.w = "w".asInstanceOf[typings.reactResizable.reactResizableStrings.w]
 }
 

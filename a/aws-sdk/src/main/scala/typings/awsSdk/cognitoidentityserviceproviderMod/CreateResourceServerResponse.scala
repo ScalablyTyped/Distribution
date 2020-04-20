@@ -16,7 +16,6 @@ object CreateResourceServerResponse {
   @scala.inline
   def apply(ResourceServer: ResourceServerType): CreateResourceServerResponse = {
     val __obj = js.Dynamic.literal(ResourceServer = ResourceServer.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateResourceServerResponse]
   }
 }

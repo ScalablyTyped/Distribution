@@ -20,7 +20,6 @@ object KiiSocialConnectOptions {
   @scala.inline
   def AnonOauthtoken(oauth_token: String, oauth_token_secret: String): KiiSocialConnectOptions = {
     val __obj = js.Dynamic.literal(oauth_token = oauth_token.asInstanceOf[js.Any], oauth_token_secret = oauth_token_secret.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[KiiSocialConnectOptions]
   }
 }

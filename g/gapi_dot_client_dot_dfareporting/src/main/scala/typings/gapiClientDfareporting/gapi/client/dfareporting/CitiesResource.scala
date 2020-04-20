@@ -15,7 +15,6 @@ object CitiesResource {
   @scala.inline
   def apply(list: AnonCountryDartIds => Request_[CitiesListResponse]): CitiesResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[CitiesResource]
   }
 }

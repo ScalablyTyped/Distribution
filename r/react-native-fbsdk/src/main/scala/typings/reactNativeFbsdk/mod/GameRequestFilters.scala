@@ -12,10 +12,8 @@ trait GameRequestFilters extends js.Object
 
 object GameRequestFilters {
   @scala.inline
-  def app_non_users: typings.reactNativeFbsdk.reactNativeFbsdkStrings.app_non_users = this.cast("app_non_users")
+  def app_non_users: typings.reactNativeFbsdk.reactNativeFbsdkStrings.app_non_users = "app_non_users".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.app_non_users]
   @scala.inline
-  def app_users: typings.reactNativeFbsdk.reactNativeFbsdkStrings.app_users = this.cast("app_users")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def app_users: typings.reactNativeFbsdk.reactNativeFbsdkStrings.app_users = "app_users".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.app_users]
 }
 

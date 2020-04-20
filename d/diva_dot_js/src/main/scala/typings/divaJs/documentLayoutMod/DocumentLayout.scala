@@ -32,7 +32,6 @@ object DocumentLayout {
     pageGroups: js.Array[PageGroup]
   ): DocumentLayout = {
     val __obj = js.Dynamic.literal(dimensions = dimensions.asInstanceOf[js.Any], getPageDimensions = js.Any.fromFunction1(getPageDimensions), getPageInfo = js.Any.fromFunction1(getPageInfo), getPageOffset = js.Any.fromFunction2(getPageOffset), getPageRegion = js.Any.fromFunction2(getPageRegion), getPageToViewportCenterOffset = js.Any.fromFunction2(getPageToViewportCenterOffset), pageGroups = pageGroups.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DocumentLayout]
   }
 }

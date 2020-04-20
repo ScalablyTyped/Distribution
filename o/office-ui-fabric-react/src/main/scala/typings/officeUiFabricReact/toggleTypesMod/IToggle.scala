@@ -12,7 +12,6 @@ object IToggle {
   @scala.inline
   def apply(focus: () => Unit): IToggle = {
     val __obj = js.Dynamic.literal(focus = js.Any.fromFunction0(focus))
-  
     __obj.asInstanceOf[IToggle]
   }
 }

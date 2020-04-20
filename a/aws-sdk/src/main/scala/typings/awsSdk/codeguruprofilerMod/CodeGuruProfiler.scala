@@ -65,6 +65,19 @@ trait CodeGuruProfiler extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeProfilingGroupResponse, Unit]
   ): Request[DescribeProfilingGroupResponse, AWSError] = js.native
   /**
+    * Gets the profiling group policy.
+    */
+  def getPolicy(): Request[GetPolicyResponse, AWSError] = js.native
+  def getPolicy(callback: js.Function2[/* err */ AWSError, /* data */ GetPolicyResponse, Unit]): Request[GetPolicyResponse, AWSError] = js.native
+  /**
+    * Gets the profiling group policy.
+    */
+  def getPolicy(params: GetPolicyRequest): Request[GetPolicyResponse, AWSError] = js.native
+  def getPolicy(
+    params: GetPolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetPolicyResponse, Unit]
+  ): Request[GetPolicyResponse, AWSError] = js.native
+  /**
     * Gets the aggregated profile of a profiling group for the specified time range. If the requested time range does not align with the available aggregated profiles, it is expanded to attain alignment. If aggregated profiles are available only for part of the period requested, the profile is returned from the earliest available to the latest within the requested time range.  For example, if the requested time range is from 00:00 to 00:20 and the available profiles are from 00:15 to 00:25, the returned profile will be from 00:15 to 00:20.  You must specify exactly two of the following parameters: startTime, period, and endTime. 
     */
   def getProfile(): Request[GetProfileResponse, AWSError] = js.native
@@ -116,6 +129,32 @@ trait CodeGuruProfiler extends Service {
     params: PostAgentProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PostAgentProfileResponse, Unit]
   ): Request[PostAgentProfileResponse, AWSError] = js.native
+  /**
+    * Provides permission to the principals. This overwrites the existing permissions, and is not additive.
+    */
+  def putPermission(): Request[PutPermissionResponse, AWSError] = js.native
+  def putPermission(callback: js.Function2[/* err */ AWSError, /* data */ PutPermissionResponse, Unit]): Request[PutPermissionResponse, AWSError] = js.native
+  /**
+    * Provides permission to the principals. This overwrites the existing permissions, and is not additive.
+    */
+  def putPermission(params: PutPermissionRequest): Request[PutPermissionResponse, AWSError] = js.native
+  def putPermission(
+    params: PutPermissionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutPermissionResponse, Unit]
+  ): Request[PutPermissionResponse, AWSError] = js.native
+  /**
+    * Removes statement for the provided action group from the policy.
+    */
+  def removePermission(): Request[RemovePermissionResponse, AWSError] = js.native
+  def removePermission(callback: js.Function2[/* err */ AWSError, /* data */ RemovePermissionResponse, Unit]): Request[RemovePermissionResponse, AWSError] = js.native
+  /**
+    * Removes statement for the provided action group from the policy.
+    */
+  def removePermission(params: RemovePermissionRequest): Request[RemovePermissionResponse, AWSError] = js.native
+  def removePermission(
+    params: RemovePermissionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RemovePermissionResponse, Unit]
+  ): Request[RemovePermissionResponse, AWSError] = js.native
   /**
     * Updates a profiling group.
     */

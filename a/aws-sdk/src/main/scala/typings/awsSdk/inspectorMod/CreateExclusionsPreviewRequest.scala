@@ -16,7 +16,6 @@ object CreateExclusionsPreviewRequest {
   @scala.inline
   def apply(assessmentTemplateArn: Arn): CreateExclusionsPreviewRequest = {
     val __obj = js.Dynamic.literal(assessmentTemplateArn = assessmentTemplateArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateExclusionsPreviewRequest]
   }
 }

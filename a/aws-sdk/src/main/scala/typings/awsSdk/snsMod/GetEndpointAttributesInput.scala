@@ -16,7 +16,6 @@ object GetEndpointAttributesInput {
   @scala.inline
   def apply(EndpointArn: String): GetEndpointAttributesInput = {
     val __obj = js.Dynamic.literal(EndpointArn = EndpointArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetEndpointAttributesInput]
   }
 }

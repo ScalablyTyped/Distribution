@@ -12,7 +12,6 @@ object VisSelectProperties {
   @scala.inline
   def apply(items: js.Array[Double]): VisSelectProperties = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VisSelectProperties]
   }
 }

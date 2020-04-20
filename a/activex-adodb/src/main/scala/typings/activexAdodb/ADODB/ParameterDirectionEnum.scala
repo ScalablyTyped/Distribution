@@ -20,16 +20,14 @@ trait ParameterDirectionEnum extends js.Object
 
 object ParameterDirectionEnum {
   @scala.inline
-  def adParamInput: `1` = this.cast(1)
+  def adParamInput: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def adParamInputOutput: `3` = this.cast(3)
+  def adParamInputOutput: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def adParamOutput: `2` = this.cast(2)
+  def adParamOutput: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def adParamReturnValue: `4` = this.cast(4)
+  def adParamReturnValue: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def adParamUnknown: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def adParamUnknown: `0` = 0.asInstanceOf[`0`]
 }
 

@@ -18,14 +18,12 @@ trait MsoAnimTextUnitEffect extends js.Object
 
 object MsoAnimTextUnitEffect {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoAnimTextUnitEffectByCharacter: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoAnimTextUnitEffectByCharacter: `1` = this.cast(1)
+  def msoAnimTextUnitEffectByParagraph: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def msoAnimTextUnitEffectByParagraph: `0` = this.cast(0)
+  def msoAnimTextUnitEffectByWord: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoAnimTextUnitEffectByWord: `2` = this.cast(2)
-  @scala.inline
-  def msoAnimTextUnitEffectMixed: `-1` = this.cast(-1)
+  def msoAnimTextUnitEffectMixed: `-1` = -1.asInstanceOf[`-1`]
 }
 

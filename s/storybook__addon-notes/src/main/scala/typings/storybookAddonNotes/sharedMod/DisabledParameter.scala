@@ -12,7 +12,6 @@ object DisabledParameter {
   @scala.inline
   def apply(disable: Boolean): DisabledParameter = {
     val __obj = js.Dynamic.literal(disable = disable.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisabledParameter]
   }
 }

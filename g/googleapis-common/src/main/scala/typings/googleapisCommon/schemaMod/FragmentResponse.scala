@@ -14,7 +14,6 @@ object FragmentResponse {
   @scala.inline
   def apply(codeFragment: StringDictionary[AnonFragment]): FragmentResponse = {
     val __obj = js.Dynamic.literal(codeFragment = codeFragment.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FragmentResponse]
   }
 }

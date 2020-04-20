@@ -13,7 +13,6 @@ object NodeMap {
   @scala.inline
   def apply(source: SourceNode, transform: TransformNode): NodeMap = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NodeMap]
   }
 }

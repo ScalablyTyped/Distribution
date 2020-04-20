@@ -12,7 +12,6 @@ object State {
   @scala.inline
   def apply(currentPage: Double): State = {
     val __obj = js.Dynamic.literal(currentPage = currentPage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[State]
   }
 }

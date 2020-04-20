@@ -26,7 +26,7 @@ class IFrame_ () extends Widget {
     * For more information, see
     * https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement/referrerPolicy
     */
-  def referrerPolicy(): ReferrerPolicy = js.native
+  def referrerPolicy: ReferrerPolicy = js.native
   def referrerPolicy(value: ReferrerPolicy): js.Any = js.native
   /**
     * Exceptions to the sandboxing.
@@ -41,12 +41,12 @@ class IFrame_ () extends Widget {
     * For more information, see
     * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe
     */
-  def sandbox(): js.Array[SandboxExceptions] = js.native
+  def sandbox: js.Array[SandboxExceptions] = js.native
   def sandbox(values: js.Array[SandboxExceptions]): js.Any = js.native
   /**
     * The url of the IFrame.
     */
-  def url(): String = js.native
+  def url: String = js.native
   def url(url: String): js.Any = js.native
 }
 

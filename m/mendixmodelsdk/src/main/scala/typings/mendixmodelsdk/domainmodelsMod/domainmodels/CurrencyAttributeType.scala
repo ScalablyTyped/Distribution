@@ -34,7 +34,7 @@ class CurrencyAttributeType protected () extends FloatAttributeTypeBase {
   @JSName("model")
   var model_FCurrencyAttributeType: IModel = js.native
   @JSName("containerAsAttribute")
-  def containerAsAttribute_MCurrencyAttributeType(): Attribute = js.native
+  def containerAsAttribute_MCurrencyAttributeType: Attribute = js.native
 }
 
 /* static members */

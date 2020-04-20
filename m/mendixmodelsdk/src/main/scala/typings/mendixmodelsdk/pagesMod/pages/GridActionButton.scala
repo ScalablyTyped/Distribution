@@ -25,9 +25,9 @@ class GridActionButton protected () extends GridControlBarButton {
   ) = this()
   @JSName("model")
   var model_FGridActionButton: IModel = js.native
-  def action(): ClientAction = js.native
+  def action: ClientAction = js.native
   def action(newValue: ClientAction): js.Any = js.native
-  def maintainSelectionAfterMicroflow(): Boolean = js.native
+  def maintainSelectionAfterMicroflow: Boolean = js.native
   def maintainSelectionAfterMicroflow(newValue: Boolean): js.Any = js.native
 }
 

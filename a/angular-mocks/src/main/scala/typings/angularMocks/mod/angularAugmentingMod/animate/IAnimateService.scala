@@ -22,7 +22,6 @@ object IAnimateService {
   @scala.inline
   def apply(closeAndFlush: () => Unit, flush: () => Unit): IAnimateService = {
     val __obj = js.Dynamic.literal(closeAndFlush = js.Any.fromFunction0(closeAndFlush), flush = js.Any.fromFunction0(flush))
-  
     __obj.asInstanceOf[IAnimateService]
   }
 }

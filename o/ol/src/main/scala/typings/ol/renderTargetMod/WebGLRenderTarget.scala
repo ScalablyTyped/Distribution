@@ -29,7 +29,6 @@ object WebGLRenderTarget {
     setSize: js.Array[Double] => Unit
   ): WebGLRenderTarget = {
     val __obj = js.Dynamic.literal(clearCachedData = js.Any.fromFunction0(clearCachedData), getFramebuffer = js.Any.fromFunction0(getFramebuffer), getSize = js.Any.fromFunction0(getSize), getTexture = js.Any.fromFunction0(getTexture), readAll = js.Any.fromFunction0(readAll), readPixel = js.Any.fromFunction2(readPixel), setSize = js.Any.fromFunction1(setSize))
-  
     __obj.asInstanceOf[WebGLRenderTarget]
   }
 }

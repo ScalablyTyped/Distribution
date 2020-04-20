@@ -25,22 +25,22 @@ class ServiceInfo protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FServiceInfo: IModel = js.native
-  def containerAsWsdlDescription(): WsdlDescription = js.native
-  def documentation(): String = js.native
+  def containerAsWsdlDescription: WsdlDescription = js.native
+  def documentation: String = js.native
   def documentation(newValue: String): js.Any = js.native
-  def location(): String = js.native
+  def location: String = js.native
   def location(newValue: String): js.Any = js.native
   def locationConstant(): js.Any = js.native
   def locationConstant(newValue: IConstant): js.Any = js.native
-  def locationConstantQualifiedName(): String | Null = js.native
+  def locationConstantQualifiedName: String | Null = js.native
   @JSName("locationConstant")
-  def locationConstant_Union(): IConstant | Null = js.native
-  def name(): String = js.native
+  def locationConstant_Union: IConstant | Null = js.native
+  def name: String = js.native
   def name(newValue: String): js.Any = js.native
-  def operations(): IList[OperationInfo] = js.native
-  def portName(): String = js.native
+  def operations: IList[OperationInfo] = js.native
+  def portName: String = js.native
   def portName(newValue: String): js.Any = js.native
-  def soapVersion(): SoapVersion = js.native
+  def soapVersion: SoapVersion = js.native
   def soapVersion(newValue: SoapVersion): js.Any = js.native
 }
 

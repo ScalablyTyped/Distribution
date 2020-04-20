@@ -15,7 +15,6 @@ object AnonQPathSeparator {
   @scala.inline
   def apply(qPathSeparator: String): AnonQPathSeparator = {
     val __obj = js.Dynamic.literal(qPathSeparator = qPathSeparator.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonQPathSeparator]
   }
 }

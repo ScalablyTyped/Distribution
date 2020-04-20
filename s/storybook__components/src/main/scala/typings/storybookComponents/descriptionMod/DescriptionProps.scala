@@ -13,7 +13,6 @@ object DescriptionProps {
   @scala.inline
   def apply(markdown: String): DescriptionProps = {
     val __obj = js.Dynamic.literal(markdown = markdown.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescriptionProps]
   }
 }

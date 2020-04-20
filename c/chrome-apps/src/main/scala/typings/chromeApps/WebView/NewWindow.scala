@@ -21,7 +21,6 @@ object NewWindow {
   @scala.inline
   def apply(attach: HTMLWebViewElement => Unit, discard: () => Unit): NewWindow = {
     val __obj = js.Dynamic.literal(attach = js.Any.fromFunction1(attach), discard = js.Any.fromFunction0(discard))
-  
     __obj.asInstanceOf[NewWindow]
   }
 }

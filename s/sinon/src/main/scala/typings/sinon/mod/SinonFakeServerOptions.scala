@@ -38,7 +38,6 @@ object SinonFakeServerOptions {
     respondImmediately: Boolean
   ): SinonFakeServerOptions = {
     val __obj = js.Dynamic.literal(autoRespond = autoRespond.asInstanceOf[js.Any], autoRespondAfter = autoRespondAfter.asInstanceOf[js.Any], fakeHTTPMethods = fakeHTTPMethods.asInstanceOf[js.Any], respondImmediately = respondImmediately.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SinonFakeServerOptions]
   }
 }

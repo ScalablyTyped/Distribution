@@ -14,7 +14,6 @@ object AnonBody {
   @scala.inline
   def apply(body: MutableRefObject[HTMLDivElement]): AnonBody = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBody]
   }
 }

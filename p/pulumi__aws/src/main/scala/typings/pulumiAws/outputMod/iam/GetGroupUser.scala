@@ -28,7 +28,6 @@ object GetGroupUser {
   @scala.inline
   def apply(arn: String, path: String, userId: String, userName: String): GetGroupUser = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any], userName = userName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetGroupUser]
   }
 }

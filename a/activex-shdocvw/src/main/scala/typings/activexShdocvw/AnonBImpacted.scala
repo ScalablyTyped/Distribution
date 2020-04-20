@@ -12,7 +12,6 @@ object AnonBImpacted {
   @scala.inline
   def apply(bImpacted: Boolean): AnonBImpacted = {
     val __obj = js.Dynamic.literal(bImpacted = bImpacted.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBImpacted]
   }
 }

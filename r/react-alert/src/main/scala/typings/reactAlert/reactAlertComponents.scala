@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactAlertComponents extends reactAlertProps {
   @scala.inline
-  def Provider: ComponentType[ProviderProps] = js.constructorOf[typings.reactAlert.mod.Provider].asInstanceOf[typings.react.mod.ComponentType[ProviderProps]]
+  def Provider: ComponentType[ProviderProps] = js.constructorOf[typings.reactAlert.mod.Provider].asInstanceOf[ComponentType[ProviderProps]]
 }
 

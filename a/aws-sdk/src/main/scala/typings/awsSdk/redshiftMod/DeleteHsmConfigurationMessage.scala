@@ -16,7 +16,6 @@ object DeleteHsmConfigurationMessage {
   @scala.inline
   def apply(HsmConfigurationIdentifier: String): DeleteHsmConfigurationMessage = {
     val __obj = js.Dynamic.literal(HsmConfigurationIdentifier = HsmConfigurationIdentifier.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteHsmConfigurationMessage]
   }
 }

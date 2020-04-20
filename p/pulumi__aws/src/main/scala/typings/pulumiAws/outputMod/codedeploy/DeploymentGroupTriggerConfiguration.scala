@@ -24,7 +24,6 @@ object DeploymentGroupTriggerConfiguration {
   @scala.inline
   def apply(triggerEvents: js.Array[String], triggerName: String, triggerTargetArn: String): DeploymentGroupTriggerConfiguration = {
     val __obj = js.Dynamic.literal(triggerEvents = triggerEvents.asInstanceOf[js.Any], triggerName = triggerName.asInstanceOf[js.Any], triggerTargetArn = triggerTargetArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeploymentGroupTriggerConfiguration]
   }
 }

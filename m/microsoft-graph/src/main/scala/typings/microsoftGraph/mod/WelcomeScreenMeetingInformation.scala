@@ -13,12 +13,10 @@ trait WelcomeScreenMeetingInformation extends js.Object
 
 object WelcomeScreenMeetingInformation {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def showOrganizerAndTimeAndSubject: typings.microsoftGraph.microsoftGraphStrings.showOrganizerAndTimeAndSubject = "showOrganizerAndTimeAndSubject".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.showOrganizerAndTimeAndSubject]
   @scala.inline
-  def showOrganizerAndTimeAndSubject: typings.microsoftGraph.microsoftGraphStrings.showOrganizerAndTimeAndSubject = this.cast("showOrganizerAndTimeAndSubject")
+  def showOrganizerAndTimeOnly: typings.microsoftGraph.microsoftGraphStrings.showOrganizerAndTimeOnly = "showOrganizerAndTimeOnly".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.showOrganizerAndTimeOnly]
   @scala.inline
-  def showOrganizerAndTimeOnly: typings.microsoftGraph.microsoftGraphStrings.showOrganizerAndTimeOnly = this.cast("showOrganizerAndTimeOnly")
-  @scala.inline
-  def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = this.cast("userDefined")
+  def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userDefined]
 }
 

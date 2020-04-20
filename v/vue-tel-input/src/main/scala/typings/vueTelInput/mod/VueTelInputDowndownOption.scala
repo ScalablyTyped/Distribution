@@ -12,7 +12,6 @@ object VueTelInputDowndownOption {
   @scala.inline
   def apply(disabledDialCode: Boolean): VueTelInputDowndownOption = {
     val __obj = js.Dynamic.literal(disabledDialCode = disabledDialCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VueTelInputDowndownOption]
   }
 }

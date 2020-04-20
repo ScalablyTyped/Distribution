@@ -123,7 +123,7 @@ object reactAdalStrings {
   @scala.inline
   def INFOColon: INFOColon = "INFO:".asInstanceOf[INFOColon]
   @scala.inline
-  def `In Progress`: `In Progress` = "In Progress".asInstanceOf[`In Progress`]
+  def `In Progress`: `In Progress` = ("In Progress").asInstanceOf[`In Progress`]
   @scala.inline
   def LOGIN: LOGIN = "LOGIN".asInstanceOf[LOGIN]
   @scala.inline
@@ -173,7 +173,7 @@ object reactAdalStrings {
   @scala.inline
   def id_token: id_token = "id_token".asInstanceOf[id_token]
   @scala.inline
-  def `id_token token`: `id_token token` = "id_token token".asInstanceOf[`id_token token`]
+  def `id_token token`: `id_token token` = ("id_token token").asInstanceOf[`id_token token`]
   @scala.inline
   def localStorage: localStorage = "localStorage".asInstanceOf[localStorage]
   @scala.inline

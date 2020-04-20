@@ -13,7 +13,6 @@ object CursorOptions {
   @scala.inline
   def apply(buffering: Boolean, enabled: Boolean): CursorOptions = {
     val __obj = js.Dynamic.literal(buffering = buffering.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CursorOptions]
   }
 }

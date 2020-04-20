@@ -12,7 +12,6 @@ object IContextualMenuSubmenuExampleState {
   @scala.inline
   def apply(hoverDelay: Double): IContextualMenuSubmenuExampleState = {
     val __obj = js.Dynamic.literal(hoverDelay = hoverDelay.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IContextualMenuSubmenuExampleState]
   }
 }

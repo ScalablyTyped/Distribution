@@ -14,7 +14,6 @@ object AnonPosttourl {
   @scala.inline
   def apply(enable: Boolean, post_to_url: String, threshold: Double): AnonPosttourl = {
     val __obj = js.Dynamic.literal(enable = enable.asInstanceOf[js.Any], post_to_url = post_to_url.asInstanceOf[js.Any], threshold = threshold.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPosttourl]
   }
 }

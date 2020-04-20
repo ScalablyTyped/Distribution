@@ -13,7 +13,6 @@ object RangeType {
   @scala.inline
   def apply(max: IdType, min: IdType): RangeType = {
     val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RangeType]
   }
 }

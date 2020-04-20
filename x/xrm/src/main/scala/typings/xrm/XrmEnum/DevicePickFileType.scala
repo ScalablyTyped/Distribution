@@ -20,12 +20,10 @@ trait DevicePickFileType extends js.Object
 
 object DevicePickFileType {
   @scala.inline
-  def Audio: audio = this.cast("audio")
+  def Audio: audio = "audio".asInstanceOf[audio]
   @scala.inline
-  def Image: image = this.cast("image")
+  def Image: image = "image".asInstanceOf[image]
   @scala.inline
-  def Video: video = this.cast("video")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Video: video = "video".asInstanceOf[video]
 }
 

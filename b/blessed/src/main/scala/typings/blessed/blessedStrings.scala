@@ -239,7 +239,7 @@ object blessedStrings {
   @scala.inline
   def action: action = "action".asInstanceOf[action]
   @scala.inline
-  def `add item`: `add item` = "add item".asInstanceOf[`add item`]
+  def `add item`: `add item` = ("add item").asInstanceOf[`add item`]
   @scala.inline
   def adopt: adopt = "adopt".asInstanceOf[adopt]
   @scala.inline
@@ -267,19 +267,19 @@ object blessedStrings {
   @scala.inline
   def cpu: cpu = "cpu".asInstanceOf[cpu]
   @scala.inline
-  def `create item`: `create item` = "create item".asInstanceOf[`create item`]
+  def `create item`: `create item` = ("create item").asInstanceOf[`create item`]
   @scala.inline
   def destroy: destroy = "destroy".asInstanceOf[destroy]
   @scala.inline
   def detach: detach = "detach".asInstanceOf[detach]
   @scala.inline
-  def `element click`: `element click` = "element click".asInstanceOf[`element click`]
+  def `element click`: `element click` = ("element click").asInstanceOf[`element click`]
   @scala.inline
-  def `element mouseout`: `element mouseout` = "element mouseout".asInstanceOf[`element mouseout`]
+  def `element mouseout`: `element mouseout` = ("element mouseout").asInstanceOf[`element mouseout`]
   @scala.inline
-  def `element mouseover`: `element mouseover` = "element mouseover".asInstanceOf[`element mouseover`]
+  def `element mouseover`: `element mouseover` = ("element mouseover").asInstanceOf[`element mouseover`]
   @scala.inline
-  def `element mouseup`: `element mouseup` = "element mouseup".asInstanceOf[`element mouseup`]
+  def `element mouseup`: `element mouseup` = ("element mouseup").asInstanceOf[`element mouseup`]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
@@ -297,7 +297,7 @@ object blessedStrings {
   @scala.inline
   def `inline-block`: `inline-block` = "inline-block".asInstanceOf[`inline-block`]
   @scala.inline
-  def `insert item`: `insert item` = "insert item".asInstanceOf[`insert item`]
+  def `insert item`: `insert item` = ("insert item").asInstanceOf[`insert item`]
   @scala.inline
   def keypress: keypress = "keypress".asInstanceOf[keypress]
   @scala.inline
@@ -327,7 +327,7 @@ object blessedStrings {
   @scala.inline
   def overlay: overlay = "overlay".asInstanceOf[overlay]
   @scala.inline
-  def `parsed content`: `parsed content` = "parsed content".asInstanceOf[`parsed content`]
+  def `parsed content`: `parsed content` = ("parsed content").asInstanceOf[`parsed content`]
   @scala.inline
   def prerender: prerender = "prerender".asInstanceOf[prerender]
   @scala.inline
@@ -337,7 +337,7 @@ object blessedStrings {
   @scala.inline
   def remove: remove = "remove".asInstanceOf[remove]
   @scala.inline
-  def `remove item`: `remove item` = "remove item".asInstanceOf[`remove item`]
+  def `remove item`: `remove item` = ("remove item").asInstanceOf[`remove item`]
   @scala.inline
   def render: render = "render".asInstanceOf[render]
   @scala.inline
@@ -353,13 +353,13 @@ object blessedStrings {
   @scala.inline
   def select: select = "select".asInstanceOf[select]
   @scala.inline
-  def `select item`: `select item` = "select item".asInstanceOf[`select item`]
+  def `select item`: `select item` = ("select item").asInstanceOf[`select item`]
   @scala.inline
-  def `select tab`: `select tab` = "select tab".asInstanceOf[`select tab`]
+  def `select tab`: `select tab` = ("select tab").asInstanceOf[`select tab`]
   @scala.inline
-  def `set content`: `set content` = "set content".asInstanceOf[`set content`]
+  def `set content`: `set content` = ("set content").asInstanceOf[`set content`]
   @scala.inline
-  def `set items`: `set items` = "set items".asInstanceOf[`set items`]
+  def `set items`: `set items` = ("set items").asInstanceOf[`set items`]
   @scala.inline
   def show: show = "show".asInstanceOf[show]
   @scala.inline

@@ -13,7 +13,6 @@ object OnAdapterChangeListener {
   @scala.inline
   def apply(onAdapterChanged: (PagerAdapter, PagerAdapter) => Unit): OnAdapterChangeListener = {
     val __obj = js.Dynamic.literal(onAdapterChanged = js.Any.fromFunction2(onAdapterChanged))
-  
     __obj.asInstanceOf[OnAdapterChangeListener]
   }
 }

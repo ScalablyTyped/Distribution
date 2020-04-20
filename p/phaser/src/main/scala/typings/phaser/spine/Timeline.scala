@@ -25,7 +25,6 @@ object Timeline {
     getPropertyId: () => Double
   ): Timeline = {
     val __obj = js.Dynamic.literal(apply = js.Any.fromFunction7(apply), getPropertyId = js.Any.fromFunction0(getPropertyId))
-  
     __obj.asInstanceOf[Timeline]
   }
 }

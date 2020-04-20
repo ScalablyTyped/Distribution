@@ -13,12 +13,10 @@ trait RemoteAssistanceOnboardingStatus extends js.Object
 
 object RemoteAssistanceOnboardingStatus {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def notOnboarded: typings.microsoftGraph.microsoftGraphStrings.notOnboarded = "notOnboarded".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notOnboarded]
   @scala.inline
-  def notOnboarded: typings.microsoftGraph.microsoftGraphStrings.notOnboarded = this.cast("notOnboarded")
+  def onboarded: typings.microsoftGraph.microsoftGraphStrings.onboarded = "onboarded".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.onboarded]
   @scala.inline
-  def onboarded: typings.microsoftGraph.microsoftGraphStrings.onboarded = this.cast("onboarded")
-  @scala.inline
-  def onboarding: typings.microsoftGraph.microsoftGraphStrings.onboarding = this.cast("onboarding")
+  def onboarding: typings.microsoftGraph.microsoftGraphStrings.onboarding = "onboarding".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.onboarding]
 }
 

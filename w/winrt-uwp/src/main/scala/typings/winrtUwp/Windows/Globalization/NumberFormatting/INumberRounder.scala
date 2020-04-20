@@ -55,7 +55,6 @@ object INumberRounder {
     roundUInt64: Double => Double
   ): INumberRounder = {
     val __obj = js.Dynamic.literal(roundDouble = js.Any.fromFunction1(roundDouble), roundInt32 = js.Any.fromFunction1(roundInt32), roundInt64 = js.Any.fromFunction1(roundInt64), roundSingle = js.Any.fromFunction1(roundSingle), roundUInt32 = js.Any.fromFunction1(roundUInt32), roundUInt64 = js.Any.fromFunction1(roundUInt64))
-  
     __obj.asInstanceOf[INumberRounder]
   }
 }

@@ -20,7 +20,6 @@ object UpdateVTLDeviceTypeInput {
   @scala.inline
   def apply(DeviceType: DeviceType, VTLDeviceARN: VTLDeviceARN): UpdateVTLDeviceTypeInput = {
     val __obj = js.Dynamic.literal(DeviceType = DeviceType.asInstanceOf[js.Any], VTLDeviceARN = VTLDeviceARN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateVTLDeviceTypeInput]
   }
 }

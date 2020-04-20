@@ -32,7 +32,6 @@ object Switch {
     setValue: String => Switch
   ): Switch = {
     val __obj = js.Dynamic.literal(setFieldName = js.Any.fromFunction1(setFieldName), setOnChangeAction = js.Any.fromFunction1(setOnChangeAction), setSelected = js.Any.fromFunction1(setSelected), setValue = js.Any.fromFunction1(setValue))
-  
     __obj.asInstanceOf[Switch]
   }
 }

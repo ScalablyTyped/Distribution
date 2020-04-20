@@ -14,10 +14,8 @@ trait WdXMLNodeType extends js.Object
 
 object WdXMLNodeType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdXMLNodeAttribute: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdXMLNodeAttribute: `2` = this.cast(2)
-  @scala.inline
-  def wdXMLNodeElement: `1` = this.cast(1)
+  def wdXMLNodeElement: `1` = 1.asInstanceOf[`1`]
 }
 

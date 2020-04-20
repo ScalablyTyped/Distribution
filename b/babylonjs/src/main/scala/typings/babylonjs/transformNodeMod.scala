@@ -83,17 +83,17 @@ object transformNodeMod extends js.Object {
       * Returns the current mesh absolute position.
       * Returns a Vector3.
       */
-    def absolutePosition(): Vector3 = js.native
+    def absolutePosition: Vector3 = js.native
     /**
       * Returns the current mesh absolute rotation.
       * Returns a Quaternion.
       */
-    def absoluteRotationQuaternion(): Quaternion = js.native
+    def absoluteRotationQuaternion: Quaternion = js.native
     /**
       * Returns the current mesh absolute scaling.
       * Returns a Vector3.
       */
-    def absoluteScaling(): Vector3 = js.native
+    def absoluteScaling: Vector3 = js.native
     /**
       * Adds a rotation step to the mesh current rotation.
       * x, y, z are Euler angles expressed in radians.
@@ -131,7 +131,7 @@ object transformNodeMod extends js.Object {
       * | 7 | BILLBOARDMODE_ALL |  |
       *
       */
-    def billboardMode(): Double = js.native
+    def billboardMode: Double = js.native
     def billboardMode(value: Double): js.Any = js.native
     /**
       * Clone the current transform node
@@ -150,7 +150,7 @@ object transformNodeMod extends js.Object {
     /**
       * The forward direction of that transform in world space.
       */
-    def forward(): Vector3 = js.native
+    def forward: Vector3 = js.native
     /**
       * Prevents the World matrix to be computed any longer
       * @param newWorldMatrix defines an optional matrix to use as world matrix
@@ -243,7 +243,7 @@ object transformNodeMod extends js.Object {
     /**
       * Gets or sets the distance of the object to max, often used by skybox
       */
-    def infiniteDistance(): Boolean = js.native
+    def infiniteDistance: Boolean = js.native
     def infiniteDistance(value: Boolean): js.Any = js.native
     /**
       * Instantiate (when possible) or clone that node with its hierarchy
@@ -263,7 +263,7 @@ object transformNodeMod extends js.Object {
     /**
       * True if the World matrix has been frozen.
       */
-    def isWorldMatrixFrozen(): Boolean = js.native
+    def isWorldMatrixFrozen: Boolean = js.native
     /**
       * Translates the mesh along the passed Vector3 in its local space.
       * @param vector3 the distance to translate in localspace
@@ -293,7 +293,7 @@ object transformNodeMod extends js.Object {
     /**
       * True if the scaling property of this object is non uniform eg. (1,2,1)
       */
-    def nonUniformScaling(): Boolean = js.native
+    def nonUniformScaling: Boolean = js.native
     /**
       * Uniformly scales the mesh to fit inside of a unit cube (1 X 1 X 1 units)
       * @param includeDescendants Use the hierarchy's bounding box instead of the mesh's bounding box. Default is false
@@ -312,13 +312,13 @@ object transformNodeMod extends js.Object {
     /**
       * Gets or set the node position (default is (0.0, 0.0, 0.0))
       */
-    def position(): Vector3 = js.native
+    def position: Vector3 = js.native
     def position(newPosition: Vector3): js.Any = js.native
     /**
       * Gets or sets a boolean indicating that parent rotation should be preserved when using billboards.
       * This could be useful for glTF objects where parent rotation helps converting from right handed to left handed
       */
-    def preserveParentRotationForBillboard(): Boolean = js.native
+    def preserveParentRotationForBillboard: Boolean = js.native
     def preserveParentRotationForBillboard(value: Boolean): js.Any = js.native
     /**
       * If you'd like to be called back after the mesh position, rotation or scaling has been updated.
@@ -336,7 +336,7 @@ object transformNodeMod extends js.Object {
     /**
       * The right direction of that transform in world space.
       */
-    def right(): Vector3 = js.native
+    def right: Vector3 = js.native
     /**
       * Rotates the mesh around the axis vector for the passed angle (amount) expressed in radians, in the given space.
       * space (default LOCAL) can be either Space.LOCAL, either Space.WORLD.
@@ -364,18 +364,18 @@ object transformNodeMod extends js.Object {
       * Gets or sets the rotation property : a Vector3 defining the rotation value in radians around each local axis X, Y, Z  (default is (0.0, 0.0, 0.0)).
       * If rotation quaternion is set, this Vector3 will be ignored and copy from the quaternion
       */
-    def rotation(): Vector3 = js.native
+    def rotation: Vector3 = js.native
     def rotation(newRotation: Vector3): js.Any = js.native
     /**
       * Gets or sets the rotation Quaternion property : this a Quaternion object defining the node rotation by using a unit quaternion (undefined by default, but can be null).
       * If set, only the rotationQuaternion is then used to compute the node rotation (ie. node.rotation will be ignored)
       */
-    def rotationQuaternion(): Nullable[Quaternion] = js.native
+    def rotationQuaternion: Nullable[Quaternion] = js.native
     def rotationQuaternion(quaternion: Nullable[Quaternion]): js.Any = js.native
     /**
       * Gets or sets the scaling property : a Vector3 defining the node scaling along each local axis X, Y, Z (default is (0.0, 0.0, 0.0)).
       */
-    def scaling(): Vector3 = js.native
+    def scaling: Vector3 = js.native
     def scaling(newScaling: Vector3): js.Any = js.native
     /**
       * Serializes the objects information.
@@ -462,7 +462,7 @@ object transformNodeMod extends js.Object {
     /**
       * The up direction of that transform in world space.
       */
-    def up(): Vector3 = js.native
+    def up: Vector3 = js.native
     /**
       * Copies the parameter passed Matrix into the mesh Pose matrix.
       * @param matrix the matrix to copy the pose from

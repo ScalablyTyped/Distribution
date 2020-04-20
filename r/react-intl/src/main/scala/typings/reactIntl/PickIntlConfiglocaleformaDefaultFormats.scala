@@ -28,7 +28,6 @@ object PickIntlConfiglocaleformaDefaultFormats {
     onError: /* err */ String => Unit
   ): PickIntlConfiglocaleformaDefaultFormats = {
     val __obj = js.Dynamic.literal(defaultFormats = defaultFormats.asInstanceOf[js.Any], defaultLocale = defaultLocale.asInstanceOf[js.Any], formats = formats.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], onError = js.Any.fromFunction1(onError))
-  
     __obj.asInstanceOf[PickIntlConfiglocaleformaDefaultFormats]
   }
 }

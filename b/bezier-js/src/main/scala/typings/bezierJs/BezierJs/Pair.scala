@@ -13,7 +13,6 @@ object Pair {
   @scala.inline
   def apply(left: Bezier, right: Bezier): Pair = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Pair]
   }
 }

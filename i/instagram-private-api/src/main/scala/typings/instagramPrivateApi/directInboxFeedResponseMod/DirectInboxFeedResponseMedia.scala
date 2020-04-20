@@ -13,7 +13,6 @@ object DirectInboxFeedResponseMedia {
   @scala.inline
   def apply(expiring_at: Double, user: DirectInboxFeedResponseUser): DirectInboxFeedResponseMedia = {
     val __obj = js.Dynamic.literal(expiring_at = expiring_at.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DirectInboxFeedResponseMedia]
   }
 }

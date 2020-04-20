@@ -14,14 +14,12 @@ trait ChannelType extends js.Object
 
 object ChannelType {
   @scala.inline
-  def apn: typings.twilioNotifications.twilioNotificationsStrings.apn = this.cast("apn")
+  def apn: typings.twilioNotifications.twilioNotificationsStrings.apn = "apn".asInstanceOf[typings.twilioNotifications.twilioNotificationsStrings.apn]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fcm: typings.twilioNotifications.twilioNotificationsStrings.fcm = "fcm".asInstanceOf[typings.twilioNotifications.twilioNotificationsStrings.fcm]
   @scala.inline
-  def fcm: typings.twilioNotifications.twilioNotificationsStrings.fcm = this.cast("fcm")
+  def gcm: typings.twilioNotifications.twilioNotificationsStrings.gcm = "gcm".asInstanceOf[typings.twilioNotifications.twilioNotificationsStrings.gcm]
   @scala.inline
-  def gcm: typings.twilioNotifications.twilioNotificationsStrings.gcm = this.cast("gcm")
-  @scala.inline
-  def twilsock: typings.twilioNotifications.twilioNotificationsStrings.twilsock = this.cast("twilsock")
+  def twilsock: typings.twilioNotifications.twilioNotificationsStrings.twilsock = "twilsock".asInstanceOf[typings.twilioNotifications.twilioNotificationsStrings.twilsock]
 }
 

@@ -17,6 +17,7 @@ import typings.mongodb.mongodbStrings.`SCRAM-SHA-1`
 import typings.mongodb.mongodbStrings.`SCRAM-SHA-256`
 import typings.mongodb.mongodbStrings.majority
 import typings.mongoose.AnonAutoIndex
+import typings.mongoose.AnonExtraOptions
 import typings.node.Buffer
 import typings.node.tlsMod.PeerCertificate
 import typings.std.PromiseConstructor
@@ -39,6 +40,8 @@ trait ConnectionOptions extends MongoClientOptions {
     * to create the underlying collection in MongoDB if autoCreate
     * is set to true.(default: false) */
   var autoCreate: js.UndefOr[Boolean] = js.undefined
+  /** Configure csfle as especified in MongoDB official guide */
+  var autoEncryption: js.UndefOr[AnonExtraOptions] = js.undefined
   var autoIndex: js.UndefOr[Boolean] = js.undefined
   /** mongoose-specific options */
   /** See https://mongoosejs.com/docs/guide.html#bufferCommands */
@@ -79,6 +82,7 @@ object ConnectionOptions {
     authMechanism: DEFAULT | GSSAPI | PLAIN | `MONGODB-X509` | `MONGODB-CR` | `SCRAM-SHA-1` | `SCRAM-SHA-256` | String = null,
     authSource: String = null,
     autoCreate: js.UndefOr[Boolean] = js.undefined,
+    autoEncryption: AnonExtraOptions = null,
     autoIndex: js.UndefOr[Boolean] = js.undefined,
     autoReconnect: js.UndefOr[Boolean] = js.undefined,
     bufferCommands: js.UndefOr[Boolean] = js.undefined,
@@ -169,6 +173,7 @@ object ConnectionOptions {
     if (authMechanism != null) __obj.updateDynamic("authMechanism")(authMechanism.asInstanceOf[js.Any])
     if (authSource != null) __obj.updateDynamic("authSource")(authSource.asInstanceOf[js.Any])
     if (!js.isUndefined(autoCreate)) __obj.updateDynamic("autoCreate")(autoCreate.asInstanceOf[js.Any])
+    if (autoEncryption != null) __obj.updateDynamic("autoEncryption")(autoEncryption.asInstanceOf[js.Any])
     if (!js.isUndefined(autoIndex)) __obj.updateDynamic("autoIndex")(autoIndex.asInstanceOf[js.Any])
     if (!js.isUndefined(autoReconnect)) __obj.updateDynamic("autoReconnect")(autoReconnect.asInstanceOf[js.Any])
     if (!js.isUndefined(bufferCommands)) __obj.updateDynamic("bufferCommands")(bufferCommands.asInstanceOf[js.Any])

@@ -22,7 +22,6 @@ object StorageEngine {
     _removeFile: (IncomingMessage, File, js.Function1[/* error */ Error, Unit]) => Unit
   ): StorageEngine = {
     val __obj = js.Dynamic.literal(_handleFile = js.Any.fromFunction3(_handleFile), _removeFile = js.Any.fromFunction3(_removeFile))
-  
     __obj.asInstanceOf[StorageEngine]
   }
 }

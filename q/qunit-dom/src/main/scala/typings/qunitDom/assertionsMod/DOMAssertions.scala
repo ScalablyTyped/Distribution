@@ -53,6 +53,20 @@ trait DOMAssertions extends js.Object {
   def doesNotExist(): DOMAssertions = js.native
   def doesNotExist(message: String): DOMAssertions = js.native
   /**
+    * Assert that the {@link HTMLElement} has no ARIA attribute with the
+    * provided `name`.
+    *
+    * @param {string} name
+    * @param {string?} message
+    *
+    * @example
+    * assert.dom('button').doesNotHaveAria('pressed');
+    *
+    * @see {@link #hasAria}
+    */
+  def doesNotHaveAria(name: String): DOMAssertions = js.native
+  def doesNotHaveAria(name: String, message: String): DOMAssertions = js.native
+  /**
     * Assert that the {@link HTMLElement} has no attribute with the provided `name`.
     *
     * **Aliases:** `hasNoAttribute`, `lacksAttribute`
@@ -209,6 +223,27 @@ trait DOMAssertions extends js.Object {
     */
   def hasAnyValue(): DOMAssertions = js.native
   def hasAnyValue(message: String): DOMAssertions = js.native
+  /**
+    * Assert that the {@link HTMLElement} has an ARIA attribute with the provided
+    * `name` and optionally checks if the attribute `value` matches the provided
+    * text or regular expression.
+    *
+    * @param {string} name
+    * @param {string|RegExp|object?} value
+    * @param {string?} message
+    *
+    * @example
+    * assert.dom('button').hasAria('pressed', 'true');
+    *
+    * @see {@link #hasNoAria}
+    */
+  def hasAria(name: String): DOMAssertions = js.native
+  def hasAria(name: String, value: String): DOMAssertions = js.native
+  def hasAria(name: String, value: String, message: String): DOMAssertions = js.native
+  def hasAria(name: String, value: AnonAny): DOMAssertions = js.native
+  def hasAria(name: String, value: AnonAny, message: String): DOMAssertions = js.native
+  def hasAria(name: String, value: RegExp): DOMAssertions = js.native
+  def hasAria(name: String, value: RegExp, message: String): DOMAssertions = js.native
   /**
     * Assert that the {@link HTMLElement} has an attribute with the provided `name`.
     *
@@ -462,6 +497,8 @@ trait DOMAssertions extends js.Object {
     */
   def isDisabled(): DOMAssertions = js.native
   def isDisabled(message: String): DOMAssertions = js.native
+  def isEnabled(): DOMAssertions = js.native
+  def isEnabled(message: String): DOMAssertions = js.native
   /**
     * Assert that the {@link HTMLElement} or an {@link HTMLElement} matching the
     * `selector` is currently focused.
@@ -493,6 +530,8 @@ trait DOMAssertions extends js.Object {
   /**
     *  Assert that the {@link HTMLElement} or an {@link HTMLElement} matching the
     * `selector` is not disabled.
+    *
+    * **Aliases:** `isEnabled`
     *
     * @param {string?} message
     *
@@ -636,6 +675,6 @@ trait DOMAssertions extends js.Object {
   /**
     * @private
     */
-  /* private */ def targetDescription(): js.Any = js.native
+  /* private */ def targetDescription: js.Any = js.native
 }
 

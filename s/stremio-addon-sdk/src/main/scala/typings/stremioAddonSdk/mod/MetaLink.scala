@@ -26,7 +26,6 @@ object MetaLink {
   @scala.inline
   def apply(category: String, name: String, url: String): MetaLink = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MetaLink]
   }
 }

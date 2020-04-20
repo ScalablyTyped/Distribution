@@ -17,12 +17,10 @@ trait CompareMethod extends js.Object
 
 object CompareMethod {
   @scala.inline
-  def BinaryCompare: `0` = this.cast(0)
+  def BinaryCompare: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def DatabaseCompare: `2` = this.cast(2)
+  def DatabaseCompare: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def TextCompare: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def TextCompare: `1` = 1.asInstanceOf[`1`]
 }
 

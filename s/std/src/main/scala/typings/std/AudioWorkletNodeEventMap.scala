@@ -12,7 +12,6 @@ object AudioWorkletNodeEventMap {
   @scala.inline
   def apply(processorerror: Event_): AudioWorkletNodeEventMap = {
     val __obj = js.Dynamic.literal(processorerror = processorerror.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AudioWorkletNodeEventMap]
   }
 }

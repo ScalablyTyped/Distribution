@@ -13,7 +13,6 @@ object AnonPaused {
   @scala.inline
   def apply(paused: Boolean, scid: Double | String): AnonPaused = {
     val __obj = js.Dynamic.literal(paused = paused.asInstanceOf[js.Any], scid = scid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPaused]
   }
 }

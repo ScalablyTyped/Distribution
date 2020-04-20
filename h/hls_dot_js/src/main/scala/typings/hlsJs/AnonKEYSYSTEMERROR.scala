@@ -42,7 +42,6 @@ object AnonKEYSYSTEMERROR {
     OTHER_ERROR: K_OTHER_ERROR
   ): AnonKEYSYSTEMERROR = {
     val __obj = js.Dynamic.literal(KEY_SYSTEM_ERROR = KEY_SYSTEM_ERROR.asInstanceOf[js.Any], MEDIA_ERROR = MEDIA_ERROR.asInstanceOf[js.Any], MUX_ERROR = MUX_ERROR.asInstanceOf[js.Any], NETWORK_ERROR = NETWORK_ERROR.asInstanceOf[js.Any], OTHER_ERROR = OTHER_ERROR.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonKEYSYSTEMERROR]
   }
 }

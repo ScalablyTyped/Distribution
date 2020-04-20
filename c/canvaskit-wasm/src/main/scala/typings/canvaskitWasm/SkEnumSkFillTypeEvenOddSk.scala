@@ -24,7 +24,6 @@ object SkEnumSkFillTypeEvenOddSk {
     values: js.Array[SkFillType]
   ): SkEnumSkFillTypeEvenOddSk = {
     val __obj = js.Dynamic.literal(EvenOdd = EvenOdd.asInstanceOf[js.Any], InverseEvenOdd = InverseEvenOdd.asInstanceOf[js.Any], InverseWinding = InverseWinding.asInstanceOf[js.Any], Winding = Winding.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SkEnumSkFillTypeEvenOddSk]
   }
 }

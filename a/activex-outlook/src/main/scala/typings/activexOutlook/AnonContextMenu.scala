@@ -13,7 +13,6 @@ object AnonContextMenu {
   @scala.inline
   def apply(ContextMenu: OlContextMenu): AnonContextMenu = {
     val __obj = js.Dynamic.literal(ContextMenu = ContextMenu.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonContextMenu]
   }
 }

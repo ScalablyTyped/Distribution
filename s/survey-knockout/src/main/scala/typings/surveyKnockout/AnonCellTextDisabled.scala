@@ -40,7 +40,6 @@ object AnonCellTextDisabled {
     tableWrapper: String
   ): AnonCellTextDisabled = {
     val __obj = js.Dynamic.literal(cell = cell.asInstanceOf[js.Any], cellText = cellText.asInstanceOf[js.Any], cellTextDisabled = cellTextDisabled.asInstanceOf[js.Any], cellTextSelected = cellTextSelected.asInstanceOf[js.Any], headerCell = headerCell.asInstanceOf[js.Any], itemChecked = itemChecked.asInstanceOf[js.Any], itemDecorator = itemDecorator.asInstanceOf[js.Any], itemDisabled = itemDisabled.asInstanceOf[js.Any], itemHover = itemHover.asInstanceOf[js.Any], itemValue = itemValue.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], materialDecorator = materialDecorator.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], tableWrapper = tableWrapper.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCellTextDisabled]
   }
 }

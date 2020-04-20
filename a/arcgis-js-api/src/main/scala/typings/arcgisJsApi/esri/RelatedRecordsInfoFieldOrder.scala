@@ -1,8 +1,8 @@
 package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisJsApi.arcgisJsApiStrings.asc
-import typings.arcgisJsApi.arcgisJsApiStrings.desc
+import typings.arcgisJsApi.arcgisJsApiStrings.asc_
+import typings.arcgisJsApi.arcgisJsApiStrings.desc_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ trait RelatedRecordsInfoFieldOrder
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-support-RelatedRecordsInfoFieldOrder.html#order)
     */
-  var order: asc | desc = js.native
+  var order: asc_ | desc_ = js.native
 }
 
 @JSGlobal("__esri.RelatedRecordsInfoFieldOrder")

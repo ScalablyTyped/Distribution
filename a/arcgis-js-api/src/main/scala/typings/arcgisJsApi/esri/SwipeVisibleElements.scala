@@ -10,13 +10,13 @@ trait SwipeVisibleElements extends Object {
   /**
     * Indicates whether the divider between the leading and trailing layers is visible. Default value is `true`.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#visibleElements)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#VisibleElements)
     */
   var divider: Boolean
   /**
     * Indicates whether the handle from which you drag the widget is visible. Default value is `true`.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#visibleElements)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#VisibleElements)
     */
   var handle: Boolean
 }
@@ -31,7 +31,6 @@ object SwipeVisibleElements {
     propertyIsEnumerable: PropertyKey => Boolean
   ): SwipeVisibleElements = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], divider = divider.asInstanceOf[js.Any], handle = handle.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-  
     __obj.asInstanceOf[SwipeVisibleElements]
   }
 }

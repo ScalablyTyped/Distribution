@@ -37,9 +37,9 @@ object latlonNvectorEllipsoidalMod extends js.Object {
   @js.native
   class Ned protected () extends js.Object {
     def this(north: Double, east: Double, down: Double) = this()
-    def bearing(): Double = js.native
-    def elevation(): Double = js.native
-    def length(): Double = js.native
+    def bearing: Double = js.native
+    def elevation: Double = js.native
+    def length: Double = js.native
     def toString(dp: Double): String = js.native
   }
   
@@ -68,7 +68,7 @@ object latlonNvectorEllipsoidalMod extends js.Object {
     def fromLocale(str: String): String = js.native
     def parse(dms: String): Double = js.native
     def parse(dms: Double): Double = js.native
-    def separator(): String = js.native
+    def separator: String = js.native
     def separator(char: String): js.Any = js.native
     def toBrng(deg: Double): String = js.native
     def toBrng(deg: Double, format: Format): String = js.native

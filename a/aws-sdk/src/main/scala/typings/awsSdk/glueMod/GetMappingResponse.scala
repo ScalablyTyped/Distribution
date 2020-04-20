@@ -16,7 +16,6 @@ object GetMappingResponse {
   @scala.inline
   def apply(Mapping: MappingList): GetMappingResponse = {
     val __obj = js.Dynamic.literal(Mapping = Mapping.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetMappingResponse]
   }
 }

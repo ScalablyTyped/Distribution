@@ -18,16 +18,14 @@ trait ɵBypassType extends js.Object
 
 object ɵBypassType {
   @scala.inline
-  def Html: HTML = this.cast("HTML")
+  def Html: HTML = "HTML".asInstanceOf[HTML]
   @scala.inline
-  def ResourceUrl: ResourceURL = this.cast("ResourceURL")
+  def ResourceUrl: ResourceURL = "ResourceURL".asInstanceOf[ResourceURL]
   @scala.inline
-  def Script: typings.angularCore.angularCoreStrings.Script = this.cast("Script")
+  def Script: typings.angularCore.angularCoreStrings.Script = "Script".asInstanceOf[typings.angularCore.angularCoreStrings.Script]
   @scala.inline
-  def Style: typings.angularCore.angularCoreStrings.Style = this.cast("Style")
+  def Style: typings.angularCore.angularCoreStrings.Style = "Style".asInstanceOf[typings.angularCore.angularCoreStrings.Style]
   @scala.inline
-  def Url: URL = this.cast("URL")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Url: URL = "URL".asInstanceOf[URL]
 }
 

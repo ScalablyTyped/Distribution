@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.xstate.typesMod._Action because Already inherited */ trait SendAction[TContext, TEvent /* <: EventObject */] extends ActionObject[TContext, TEvent] {
+trait SendAction[TContext, TEvent /* <: EventObject */] extends ActionObject[TContext, TEvent] {
   var delay: js.UndefOr[Double | String | (DelayExpr[TContext, TEvent])] = js.undefined
   var event: TEvent | (SendExpr[TContext, TEvent])
   var id: String | Double

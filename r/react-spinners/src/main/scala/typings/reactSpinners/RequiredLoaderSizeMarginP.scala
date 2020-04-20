@@ -25,7 +25,6 @@ object RequiredLoaderSizeMarginP {
     size: LengthType
   ): RequiredLoaderSizeMarginP = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], css = css.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], margin = margin.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RequiredLoaderSizeMarginP]
   }
 }

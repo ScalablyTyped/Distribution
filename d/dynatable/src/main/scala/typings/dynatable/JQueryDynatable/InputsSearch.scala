@@ -28,7 +28,6 @@ object InputsSearch {
   @scala.inline
   def apply(attach: () => Unit, create: () => JQuery, init: () => Unit, initOnLoad: () => Boolean): InputsSearch = {
     val __obj = js.Dynamic.literal(attach = js.Any.fromFunction0(attach), create = js.Any.fromFunction0(create), init = js.Any.fromFunction0(init), initOnLoad = js.Any.fromFunction0(initOnLoad))
-  
     __obj.asInstanceOf[InputsSearch]
   }
 }

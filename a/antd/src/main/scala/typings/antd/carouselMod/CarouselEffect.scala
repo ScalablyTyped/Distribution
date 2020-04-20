@@ -12,10 +12,8 @@ trait CarouselEffect extends js.Object
 
 object CarouselEffect {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fade: typings.antd.antdStrings.fade = "fade".asInstanceOf[typings.antd.antdStrings.fade]
   @scala.inline
-  def fade: typings.antd.antdStrings.fade = this.cast("fade")
-  @scala.inline
-  def scrollx: typings.antd.antdStrings.scrollx = this.cast("scrollx")
+  def scrollx: typings.antd.antdStrings.scrollx = "scrollx".asInstanceOf[typings.antd.antdStrings.scrollx]
 }
 

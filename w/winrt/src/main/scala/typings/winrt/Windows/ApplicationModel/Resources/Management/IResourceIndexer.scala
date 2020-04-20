@@ -19,7 +19,6 @@ object IResourceIndexer {
     indexFilePath: Uri => IndexedResourceCandidate
   ): IResourceIndexer = {
     val __obj = js.Dynamic.literal(indexFileContentsAsync = js.Any.fromFunction1(indexFileContentsAsync), indexFilePath = js.Any.fromFunction1(indexFilePath))
-  
     __obj.asInstanceOf[IResourceIndexer]
   }
 }

@@ -25,7 +25,6 @@ object AnonField {
     value: String
   ): AnonField = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], relation = relation.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonField]
   }
 }

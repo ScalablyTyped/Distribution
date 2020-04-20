@@ -24,7 +24,6 @@ object AcceptMatchInput {
   @scala.inline
   def apply(AcceptanceType: AcceptanceType, PlayerIds: StringList, TicketId: MatchmakingIdStringModel): AcceptMatchInput = {
     val __obj = js.Dynamic.literal(AcceptanceType = AcceptanceType.asInstanceOf[js.Any], PlayerIds = PlayerIds.asInstanceOf[js.Any], TicketId = TicketId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AcceptMatchInput]
   }
 }

@@ -23,7 +23,6 @@ object AnonEventLoopDelay {
   @scala.inline
   def apply(eventLoopDelay: Double, heapUsed: Double, rss: Double): AnonEventLoopDelay = {
     val __obj = js.Dynamic.literal(eventLoopDelay = eventLoopDelay.asInstanceOf[js.Any], heapUsed = heapUsed.asInstanceOf[js.Any], rss = rss.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonEventLoopDelay]
   }
 }

@@ -15,7 +15,6 @@ object PickResolveInputHooksOptiContext {
   @scala.inline
   def apply(context: js.Any, existingItem: js.Any, list: AnonQueryManyMeta): PickResolveInputHooksOptiContext = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], existingItem = existingItem.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickResolveInputHooksOptiContext]
   }
 }

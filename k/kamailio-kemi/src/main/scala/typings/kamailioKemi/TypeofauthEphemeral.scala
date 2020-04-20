@@ -22,7 +22,6 @@ object TypeofauthEphemeral {
     autheph_www_method: (String, String) => Double
   ): TypeofauthEphemeral = {
     val __obj = js.Dynamic.literal(autheph_authenticate = js.Any.fromFunction2(autheph_authenticate), autheph_check = js.Any.fromFunction1(autheph_check), autheph_proxy = js.Any.fromFunction1(autheph_proxy), autheph_www = js.Any.fromFunction1(autheph_www), autheph_www_method = js.Any.fromFunction2(autheph_www_method))
-  
     __obj.asInstanceOf[TypeofauthEphemeral]
   }
 }

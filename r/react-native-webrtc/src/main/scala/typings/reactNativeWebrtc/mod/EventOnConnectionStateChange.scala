@@ -13,7 +13,6 @@ object EventOnConnectionStateChange {
   @scala.inline
   def apply(target: AnonIceConnectionState): EventOnConnectionStateChange = {
     val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EventOnConnectionStateChange]
   }
 }

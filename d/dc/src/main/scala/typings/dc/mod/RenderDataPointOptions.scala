@@ -14,7 +14,6 @@ object RenderDataPointOptions {
   @scala.inline
   def apply(fillOpacity: Double, radius: Double, strokeOpacity: Double): RenderDataPointOptions = {
     val __obj = js.Dynamic.literal(fillOpacity = fillOpacity.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], strokeOpacity = strokeOpacity.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RenderDataPointOptions]
   }
 }

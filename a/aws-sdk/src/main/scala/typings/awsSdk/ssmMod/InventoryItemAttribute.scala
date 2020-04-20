@@ -20,7 +20,6 @@ object InventoryItemAttribute {
   @scala.inline
   def apply(DataType: InventoryAttributeDataType, Name: InventoryItemAttributeName): InventoryItemAttribute = {
     val __obj = js.Dynamic.literal(DataType = DataType.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InventoryItemAttribute]
   }
 }

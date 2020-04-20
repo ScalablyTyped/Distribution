@@ -13,7 +13,6 @@ object ICallControlStatics {
   @scala.inline
   def apply(fromId: String => CallControl, getDefault: () => CallControl): ICallControlStatics = {
     val __obj = js.Dynamic.literal(fromId = js.Any.fromFunction1(fromId), getDefault = js.Any.fromFunction0(getDefault))
-  
     __obj.asInstanceOf[ICallControlStatics]
   }
 }

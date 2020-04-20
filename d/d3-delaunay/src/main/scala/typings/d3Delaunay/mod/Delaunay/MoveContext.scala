@@ -18,7 +18,6 @@ object MoveContext {
   @scala.inline
   def apply(moveTo: (Double, Double) => Unit): MoveContext = {
     val __obj = js.Dynamic.literal(moveTo = js.Any.fromFunction2(moveTo))
-  
     __obj.asInstanceOf[MoveContext]
   }
 }

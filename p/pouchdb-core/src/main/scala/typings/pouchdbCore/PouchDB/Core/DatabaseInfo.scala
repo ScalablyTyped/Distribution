@@ -17,7 +17,6 @@ object DatabaseInfo {
   @scala.inline
   def apply(db_name: String, doc_count: Double, update_seq: Double | String): DatabaseInfo = {
     val __obj = js.Dynamic.literal(db_name = db_name.asInstanceOf[js.Any], doc_count = doc_count.asInstanceOf[js.Any], update_seq = update_seq.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DatabaseInfo]
   }
 }

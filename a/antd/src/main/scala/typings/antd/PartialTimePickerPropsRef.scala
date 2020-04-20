@@ -161,6 +161,7 @@ trait PartialTimePickerPropsRef extends js.Object {
   var open: js.UndefOr[Boolean] = js.undefined
   var pickerRef: js.UndefOr[MutableRefObject[PickerRefConfig]] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
+  var popupClassName: js.UndefOr[String] = js.undefined
   var popupStyle: js.UndefOr[CSSProperties] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
   var ref: js.UndefOr[Ref[_]] = js.undefined
@@ -276,6 +277,7 @@ object PartialTimePickerPropsRef {
     open: js.UndefOr[Boolean] = js.undefined,
     pickerRef: MutableRefObject[PickerRefConfig] = null,
     placeholder: String = null,
+    popupClassName: String = null,
     popupStyle: CSSProperties = null,
     prefixCls: String = null,
     ref: Ref[_] = null,
@@ -388,6 +390,7 @@ object PartialTimePickerPropsRef {
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
     if (pickerRef != null) __obj.updateDynamic("pickerRef")(pickerRef.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (popupClassName != null) __obj.updateDynamic("popupClassName")(popupClassName.asInstanceOf[js.Any])
     if (popupStyle != null) __obj.updateDynamic("popupStyle")(popupStyle.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])

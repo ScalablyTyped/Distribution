@@ -15,14 +15,12 @@ trait Feature extends js.Object
 
 object Feature {
   @scala.inline
-  def bg: typings.amapJsApi.amapJsApiStrings.bg = this.cast("bg")
+  def bg: typings.amapJsApi.amapJsApiStrings.bg = "bg".asInstanceOf[typings.amapJsApi.amapJsApiStrings.bg]
   @scala.inline
-  def building: typings.amapJsApi.amapJsApiStrings.building = this.cast("building")
+  def building: typings.amapJsApi.amapJsApiStrings.building = "building".asInstanceOf[typings.amapJsApi.amapJsApiStrings.building]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def point: point_ = "point".asInstanceOf[point_]
   @scala.inline
-  def point: point_ = this.cast("point")
-  @scala.inline
-  def road: typings.amapJsApi.amapJsApiStrings.road = this.cast("road")
+  def road: typings.amapJsApi.amapJsApiStrings.road = "road".asInstanceOf[typings.amapJsApi.amapJsApiStrings.road]
 }
 

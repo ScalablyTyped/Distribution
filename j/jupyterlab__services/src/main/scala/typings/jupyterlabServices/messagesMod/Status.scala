@@ -17,20 +17,18 @@ trait Status extends js.Object
 
 object Status {
   @scala.inline
-  def autorestarting: typings.jupyterlabServices.jupyterlabServicesStrings.autorestarting = this.cast("autorestarting")
+  def autorestarting: typings.jupyterlabServices.jupyterlabServicesStrings.autorestarting = "autorestarting".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.autorestarting]
   @scala.inline
-  def busy: typings.jupyterlabServices.jupyterlabServicesStrings.busy = this.cast("busy")
+  def busy: typings.jupyterlabServices.jupyterlabServicesStrings.busy = "busy".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.busy]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dead: typings.jupyterlabServices.jupyterlabServicesStrings.dead = "dead".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.dead]
   @scala.inline
-  def dead: typings.jupyterlabServices.jupyterlabServicesStrings.dead = this.cast("dead")
+  def idle: typings.jupyterlabServices.jupyterlabServicesStrings.idle = "idle".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.idle]
   @scala.inline
-  def idle: typings.jupyterlabServices.jupyterlabServicesStrings.idle = this.cast("idle")
+  def restarting: typings.jupyterlabServices.jupyterlabServicesStrings.restarting = "restarting".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.restarting]
   @scala.inline
-  def restarting: typings.jupyterlabServices.jupyterlabServicesStrings.restarting = this.cast("restarting")
+  def starting: typings.jupyterlabServices.jupyterlabServicesStrings.starting = "starting".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.starting]
   @scala.inline
-  def starting: typings.jupyterlabServices.jupyterlabServicesStrings.starting = this.cast("starting")
-  @scala.inline
-  def unknown: typings.jupyterlabServices.jupyterlabServicesStrings.unknown = this.cast("unknown")
+  def unknown: typings.jupyterlabServices.jupyterlabServicesStrings.unknown = "unknown".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.unknown]
 }
 

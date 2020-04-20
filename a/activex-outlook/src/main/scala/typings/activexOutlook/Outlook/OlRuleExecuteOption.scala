@@ -16,12 +16,10 @@ trait OlRuleExecuteOption extends js.Object
 
 object OlRuleExecuteOption {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olRuleExecuteAllMessages: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def olRuleExecuteAllMessages: `0` = this.cast(0)
+  def olRuleExecuteReadMessages: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olRuleExecuteReadMessages: `1` = this.cast(1)
-  @scala.inline
-  def olRuleExecuteUnreadMessages: `2` = this.cast(2)
+  def olRuleExecuteUnreadMessages: `2` = 2.asInstanceOf[`2`]
 }
 

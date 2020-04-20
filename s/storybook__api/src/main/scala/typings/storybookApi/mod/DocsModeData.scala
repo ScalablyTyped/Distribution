@@ -12,7 +12,6 @@ object DocsModeData {
   @scala.inline
   def apply(docsMode: Boolean): DocsModeData = {
     val __obj = js.Dynamic.literal(docsMode = docsMode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DocsModeData]
   }
 }

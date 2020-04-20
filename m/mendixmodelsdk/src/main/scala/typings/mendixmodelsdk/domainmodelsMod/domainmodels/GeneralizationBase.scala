@@ -29,7 +29,7 @@ abstract class GeneralizationBase protected () extends Element {
   val containerAsEntity_FGeneralizationBase: IEntity = js.native
   @JSName("model")
   var model_FGeneralizationBase: IModel = js.native
-  def containerAsEntity(): Entity = js.native
+  def containerAsEntity: Entity = js.native
 }
 
 /* static members */

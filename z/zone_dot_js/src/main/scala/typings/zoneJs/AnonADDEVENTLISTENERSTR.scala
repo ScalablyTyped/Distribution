@@ -34,7 +34,6 @@ object AnonADDEVENTLISTENERSTR {
     zoneSymbolEventNames: js.Any
   ): AnonADDEVENTLISTENERSTR = {
     val __obj = js.Dynamic.literal(ADD_EVENT_LISTENER_STR = ADD_EVENT_LISTENER_STR.asInstanceOf[js.Any], FALSE_STR = FALSE_STR.asInstanceOf[js.Any], REMOVE_EVENT_LISTENER_STR = REMOVE_EVENT_LISTENER_STR.asInstanceOf[js.Any], TRUE_STR = TRUE_STR.asInstanceOf[js.Any], ZONE_SYMBOL_PREFIX = ZONE_SYMBOL_PREFIX.asInstanceOf[js.Any], eventNames = eventNames.asInstanceOf[js.Any], globalSources = globalSources.asInstanceOf[js.Any], isBrowser = isBrowser.asInstanceOf[js.Any], isMix = isMix.asInstanceOf[js.Any], isNode = isNode.asInstanceOf[js.Any], zoneSymbolEventNames = zoneSymbolEventNames.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonADDEVENTLISTENERSTR]
   }
 }

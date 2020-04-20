@@ -15,7 +15,7 @@ trait RelationshipMeta[Model /* <: Model */] extends js.Object {
   var name: String
   var options: RelationshipMetaOptions
   var parentType: Model
-  var `type`: String
+  var `type`: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String
 }
 
 object RelationshipMeta {
@@ -27,7 +27,7 @@ object RelationshipMeta {
     name: String,
     options: RelationshipMetaOptions,
     parentType: Model,
-    `type`: String
+    `type`: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String
   ): RelationshipMeta[Model] = {
     val __obj = js.Dynamic.literal(isRelationship = isRelationship.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], parentType = parentType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

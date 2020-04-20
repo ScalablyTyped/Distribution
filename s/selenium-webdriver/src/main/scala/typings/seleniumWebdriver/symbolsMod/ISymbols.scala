@@ -22,7 +22,6 @@ object ISymbols {
   @scala.inline
   def apply(serialize: js.Symbol): ISymbols = {
     val __obj = js.Dynamic.literal(serialize = serialize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISymbols]
   }
 }

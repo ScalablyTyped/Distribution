@@ -15,7 +15,6 @@ object IonSkeletonText {
   @scala.inline
   def apply(animated: Boolean): IonSkeletonText = {
     val __obj = js.Dynamic.literal(animated = animated.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IonSkeletonText]
   }
 }

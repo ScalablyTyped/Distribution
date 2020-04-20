@@ -23,7 +23,6 @@ object RoomInfo {
     state: js.Array[js.Object]
   ): RoomInfo = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], realJoinedUsers = realJoinedUsers.asInstanceOf[js.Any], remoteJoinedUsers = remoteJoinedUsers.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RoomInfo]
   }
 }

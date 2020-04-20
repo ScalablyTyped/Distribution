@@ -16,7 +16,6 @@ object HapiMiddleware {
   @scala.inline
   def apply(config: ConfigInternal, plugin: AnonRegister, runner: Runner): HapiMiddleware = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any], runner = runner.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[HapiMiddleware]
   }
 }

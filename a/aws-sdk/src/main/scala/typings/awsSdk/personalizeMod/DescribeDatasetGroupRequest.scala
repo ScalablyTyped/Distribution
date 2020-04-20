@@ -16,7 +16,6 @@ object DescribeDatasetGroupRequest {
   @scala.inline
   def apply(datasetGroupArn: Arn): DescribeDatasetGroupRequest = {
     val __obj = js.Dynamic.literal(datasetGroupArn = datasetGroupArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeDatasetGroupRequest]
   }
 }

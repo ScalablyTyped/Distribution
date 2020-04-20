@@ -24,7 +24,6 @@ object InstanceMetadataOptions {
   @scala.inline
   def apply(httpEndpoint: String, httpPutResponseHopLimit: Double, httpTokens: String): InstanceMetadataOptions = {
     val __obj = js.Dynamic.literal(httpEndpoint = httpEndpoint.asInstanceOf[js.Any], httpPutResponseHopLimit = httpPutResponseHopLimit.asInstanceOf[js.Any], httpTokens = httpTokens.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InstanceMetadataOptions]
   }
 }

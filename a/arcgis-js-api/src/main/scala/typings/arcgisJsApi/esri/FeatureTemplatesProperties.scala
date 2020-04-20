@@ -55,6 +55,12 @@ trait FeatureTemplatesProperties extends WidgetProperties {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#viewModel)
     */
   var viewModel: js.UndefOr[FeatureTemplatesViewModelProperties] = js.undefined
+  /**
+    * The visible elements that are displayed within the widget. This property provides the ability to turn individual elements of the widget's display on/off.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#visibleElements)
+    */
+  var visibleElements: js.UndefOr[FeatureTemplatesVisibleElements] = js.undefined
 }
 
 object FeatureTemplatesProperties {
@@ -69,7 +75,8 @@ object FeatureTemplatesProperties {
     id: String = null,
     label: String = null,
     layers: js.Array[FeatureLayerProperties] = null,
-    viewModel: FeatureTemplatesViewModelProperties = null
+    viewModel: FeatureTemplatesViewModelProperties = null,
+    visibleElements: FeatureTemplatesVisibleElements = null
   ): FeatureTemplatesProperties = {
     val __obj = js.Dynamic.literal()
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
@@ -82,6 +89,7 @@ object FeatureTemplatesProperties {
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
     if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel.asInstanceOf[js.Any])
+    if (visibleElements != null) __obj.updateDynamic("visibleElements")(visibleElements.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureTemplatesProperties]
   }
 }

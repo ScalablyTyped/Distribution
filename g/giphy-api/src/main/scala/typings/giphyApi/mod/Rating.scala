@@ -15,16 +15,14 @@ trait Rating extends js.Object
 
 object Rating {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def g: typings.giphyApi.giphyApiStrings.g = "g".asInstanceOf[typings.giphyApi.giphyApiStrings.g]
   @scala.inline
-  def g: typings.giphyApi.giphyApiStrings.g = this.cast("g")
+  def pg: typings.giphyApi.giphyApiStrings.pg = "pg".asInstanceOf[typings.giphyApi.giphyApiStrings.pg]
   @scala.inline
-  def pg: typings.giphyApi.giphyApiStrings.pg = this.cast("pg")
+  def `pg-13`: typings.giphyApi.giphyApiStrings.`pg-13` = "pg-13".asInstanceOf[typings.giphyApi.giphyApiStrings.`pg-13`]
   @scala.inline
-  def `pg-13`: typings.giphyApi.giphyApiStrings.`pg-13` = this.cast("pg-13")
+  def r: typings.giphyApi.giphyApiStrings.r = "r".asInstanceOf[typings.giphyApi.giphyApiStrings.r]
   @scala.inline
-  def r: typings.giphyApi.giphyApiStrings.r = this.cast("r")
-  @scala.inline
-  def y: typings.giphyApi.giphyApiStrings.y = this.cast("y")
+  def y: typings.giphyApi.giphyApiStrings.y = "y".asInstanceOf[typings.giphyApi.giphyApiStrings.y]
 }
 

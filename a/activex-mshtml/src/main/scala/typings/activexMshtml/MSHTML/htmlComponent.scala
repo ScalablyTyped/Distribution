@@ -72,68 +72,66 @@ trait htmlComponent extends js.Object
 
 object htmlComponent {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def htmlComponentClient: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def htmlComponentClient: `0` = this.cast(0)
+  def htmlComponentGHBottom: `27` = 27.asInstanceOf[`27`]
   @scala.inline
-  def htmlComponentGHBottom: `27` = this.cast(27)
+  def htmlComponentGHBottomLeft: `25` = 25.asInstanceOf[`25`]
   @scala.inline
-  def htmlComponentGHBottomLeft: `25` = this.cast(25)
+  def htmlComponentGHBottomRight: `29` = 29.asInstanceOf[`29`]
   @scala.inline
-  def htmlComponentGHBottomRight: `29` = this.cast(29)
+  def htmlComponentGHLeft: `23` = 23.asInstanceOf[`23`]
   @scala.inline
-  def htmlComponentGHLeft: `23` = this.cast(23)
+  def htmlComponentGHRight: `28` = 28.asInstanceOf[`28`]
   @scala.inline
-  def htmlComponentGHRight: `28` = this.cast(28)
+  def htmlComponentGHTop: `24` = 24.asInstanceOf[`24`]
   @scala.inline
-  def htmlComponentGHTop: `24` = this.cast(24)
+  def htmlComponentGHTopLeft: `22` = 22.asInstanceOf[`22`]
   @scala.inline
-  def htmlComponentGHTopLeft: `22` = this.cast(22)
+  def htmlComponentGHTopRight: `26` = 26.asInstanceOf[`26`]
   @scala.inline
-  def htmlComponentGHTopRight: `26` = this.cast(26)
+  def htmlComponentOutside: `21` = 21.asInstanceOf[`21`]
   @scala.inline
-  def htmlComponentOutside: `21` = this.cast(21)
+  def htmlComponentSbBottom: `20` = 20.asInstanceOf[`20`]
   @scala.inline
-  def htmlComponentSbBottom: `20` = this.cast(20)
+  def htmlComponentSbDown: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def htmlComponentSbDown: `10` = this.cast(10)
+  def htmlComponentSbDown2: `17` = 17.asInstanceOf[`17`]
   @scala.inline
-  def htmlComponentSbDown2: `17` = this.cast(17)
+  def htmlComponentSbHThumb: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def htmlComponentSbHThumb: `3` = this.cast(3)
+  def htmlComponentSbLeft: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def htmlComponentSbLeft: `1` = this.cast(1)
+  def htmlComponentSbLeft2: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def htmlComponentSbLeft2: `11` = this.cast(11)
+  def htmlComponentSbPageDown: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def htmlComponentSbPageDown: `9` = this.cast(9)
+  def htmlComponentSbPageDown2: `18` = 18.asInstanceOf[`18`]
   @scala.inline
-  def htmlComponentSbPageDown2: `18` = this.cast(18)
+  def htmlComponentSbPageLeft: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def htmlComponentSbPageLeft: `2` = this.cast(2)
+  def htmlComponentSbPageLeft2: `12` = 12.asInstanceOf[`12`]
   @scala.inline
-  def htmlComponentSbPageLeft2: `12` = this.cast(12)
+  def htmlComponentSbPageRight: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def htmlComponentSbPageRight: `4` = this.cast(4)
+  def htmlComponentSbPageRight2: `14` = 14.asInstanceOf[`14`]
   @scala.inline
-  def htmlComponentSbPageRight2: `14` = this.cast(14)
+  def htmlComponentSbPageUp: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def htmlComponentSbPageUp: `7` = this.cast(7)
+  def htmlComponentSbPageUp2: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def htmlComponentSbPageUp2: `16` = this.cast(16)
+  def htmlComponentSbRight: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def htmlComponentSbRight: `5` = this.cast(5)
+  def htmlComponentSbRight2: `13` = 13.asInstanceOf[`13`]
   @scala.inline
-  def htmlComponentSbRight2: `13` = this.cast(13)
+  def htmlComponentSbTop: `19` = 19.asInstanceOf[`19`]
   @scala.inline
-  def htmlComponentSbTop: `19` = this.cast(19)
+  def htmlComponentSbUp: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def htmlComponentSbUp: `6` = this.cast(6)
+  def htmlComponentSbUp2: `15` = 15.asInstanceOf[`15`]
   @scala.inline
-  def htmlComponentSbUp2: `15` = this.cast(15)
+  def htmlComponentSbVThumb: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def htmlComponentSbVThumb: `8` = this.cast(8)
-  @scala.inline
-  def htmlComponent_Max: `2147483647` = this.cast(2147483647)
+  def htmlComponent_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

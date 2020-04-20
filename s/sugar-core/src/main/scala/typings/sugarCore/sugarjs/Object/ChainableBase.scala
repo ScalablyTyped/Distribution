@@ -12,7 +12,6 @@ object ChainableBase {
   @scala.inline
   def apply[RawValue](raw: RawValue): ChainableBase[RawValue] = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ChainableBase[RawValue]]
   }
 }

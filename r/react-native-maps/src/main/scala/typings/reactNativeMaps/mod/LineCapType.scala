@@ -13,12 +13,10 @@ trait LineCapType extends js.Object
 
 object LineCapType {
   @scala.inline
-  def butt: typings.reactNativeMaps.reactNativeMapsStrings.butt = this.cast("butt")
+  def butt: typings.reactNativeMaps.reactNativeMapsStrings.butt = "butt".asInstanceOf[typings.reactNativeMaps.reactNativeMapsStrings.butt]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def round: typings.reactNativeMaps.reactNativeMapsStrings.round = "round".asInstanceOf[typings.reactNativeMaps.reactNativeMapsStrings.round]
   @scala.inline
-  def round: typings.reactNativeMaps.reactNativeMapsStrings.round = this.cast("round")
-  @scala.inline
-  def square: typings.reactNativeMaps.reactNativeMapsStrings.square = this.cast("square")
+  def square: typings.reactNativeMaps.reactNativeMapsStrings.square = "square".asInstanceOf[typings.reactNativeMaps.reactNativeMapsStrings.square]
 }
 

@@ -16,7 +16,6 @@ object AnonAVG_ {
   @scala.inline
   def apply(AVG: String, COUNT: String, MAX: String, MIN: String, SUM: String): AnonAVG_ = {
     val __obj = js.Dynamic.literal(AVG = AVG.asInstanceOf[js.Any], COUNT = COUNT.asInstanceOf[js.Any], MAX = MAX.asInstanceOf[js.Any], MIN = MIN.asInstanceOf[js.Any], SUM = SUM.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAVG_]
   }
 }

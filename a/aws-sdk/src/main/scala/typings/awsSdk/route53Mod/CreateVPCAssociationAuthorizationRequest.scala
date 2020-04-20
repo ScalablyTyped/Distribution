@@ -20,7 +20,6 @@ object CreateVPCAssociationAuthorizationRequest {
   @scala.inline
   def apply(HostedZoneId: ResourceId, VPC: VPC): CreateVPCAssociationAuthorizationRequest = {
     val __obj = js.Dynamic.literal(HostedZoneId = HostedZoneId.asInstanceOf[js.Any], VPC = VPC.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateVPCAssociationAuthorizationRequest]
   }
 }

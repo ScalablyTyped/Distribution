@@ -16,7 +16,6 @@ object ListAccessControlRulesRequest {
   @scala.inline
   def apply(OrganizationId: OrganizationId): ListAccessControlRulesRequest = {
     val __obj = js.Dynamic.literal(OrganizationId = OrganizationId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListAccessControlRulesRequest]
   }
 }

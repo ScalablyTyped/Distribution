@@ -13,12 +13,10 @@ trait PrimaryKeyType extends js.Object
 
 object PrimaryKeyType {
   @scala.inline
-  def boolean: typings.pulumiCloud.pulumiCloudStrings.boolean = this.cast("boolean")
+  def boolean: typings.pulumiCloud.pulumiCloudStrings.boolean = "boolean".asInstanceOf[typings.pulumiCloud.pulumiCloudStrings.boolean]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def number: typings.pulumiCloud.pulumiCloudStrings.number = "number".asInstanceOf[typings.pulumiCloud.pulumiCloudStrings.number]
   @scala.inline
-  def number: typings.pulumiCloud.pulumiCloudStrings.number = this.cast("number")
-  @scala.inline
-  def string: typings.pulumiCloud.pulumiCloudStrings.string = this.cast("string")
+  def string: typings.pulumiCloud.pulumiCloudStrings.string = "string".asInstanceOf[typings.pulumiCloud.pulumiCloudStrings.string]
 }
 

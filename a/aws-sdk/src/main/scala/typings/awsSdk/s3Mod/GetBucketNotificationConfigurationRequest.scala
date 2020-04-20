@@ -16,7 +16,6 @@ object GetBucketNotificationConfigurationRequest {
   @scala.inline
   def apply(Bucket: BucketName): GetBucketNotificationConfigurationRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBucketNotificationConfigurationRequest]
   }
 }

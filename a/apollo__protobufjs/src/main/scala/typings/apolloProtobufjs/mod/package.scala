@@ -86,7 +86,7 @@ package object mod {
   /** Properties type. */
   type Properties[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? T[P]}
-    */ typings.apolloProtobufjs.apolloProtobufjsStrings.Properties with T
+    */ typings.apolloProtobufjs.apolloProtobufjsStrings.Properties with org.scalablytyped.runtime.TopLevel[T]
   /**
     * RPC implementation passed to {@link Service#create} performing a service request on network level, i.e. by utilizing http requests or websockets.
     * @param method Reflected or static method being called

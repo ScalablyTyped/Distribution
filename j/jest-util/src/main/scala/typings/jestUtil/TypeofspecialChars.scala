@@ -15,7 +15,6 @@ object TypeofspecialChars {
   @scala.inline
   def apply(ARROW: `SpaceSinglerightpointinganglequotationmark `, CLEAR: String, ICONS: AnonFailed): TypeofspecialChars = {
     val __obj = js.Dynamic.literal(ARROW = ARROW.asInstanceOf[js.Any], CLEAR = CLEAR.asInstanceOf[js.Any], ICONS = ICONS.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofspecialChars]
   }
 }

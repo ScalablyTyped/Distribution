@@ -1,6 +1,7 @@
 package typings.reactRelay
 
 import typings.react.mod.ComponentType
+import typings.reactRelay.hooksMod
 import typings.reactRelay.mod.QueryRendererProps
 import typings.relayRuntime.relayRuntimeTypesMod.OperationType
 import scala.scalajs.js
@@ -22,25 +23,25 @@ object reactRelayComponents extends reactRelayProps {
       // tslint:disable-next-line no-unnecessary-generics
   TExtraProps
     ]
-  ] = typings.reactRelay.hooksMod.asInstanceOf[js.Dynamic].selectDynamic("LazyLoadEntryPointContainer").asInstanceOf[typings.react.mod.ComponentType[
-  LazyLoadEntryPointContainerProps[
-    // tslint:disable-next-line no-unnecessary-generics
+  ] = hooksMod.asInstanceOf[js.Dynamic].selectDynamic("LazyLoadEntryPointContainer").asInstanceOf[ComponentType[
+    LazyLoadEntryPointContainerProps[
+      // tslint:disable-next-line no-unnecessary-generics
   TEntryPointParams, 
-    // tslint:disable-next-line no-unnecessary-generics
+      // tslint:disable-next-line no-unnecessary-generics
   TPreloadedQueries, 
-    // tslint:disable-next-line no-unnecessary-generics
+      // tslint:disable-next-line no-unnecessary-generics
   TPreloadedEntryPoints, 
-    // tslint:disable-next-line no-unnecessary-generics
+      // tslint:disable-next-line no-unnecessary-generics
   TRuntimeProps, 
-    // tslint:disable-next-line no-unnecessary-generics
+      // tslint:disable-next-line no-unnecessary-generics
   TExtraProps
-  ]]]
+    ]
+  ]]
   @scala.inline
-  def LocalQueryRenderer[TOperation /* <: OperationType */]: ComponentType[LocalQueryRendererProps[TOperation]] = js.constructorOf[typings.reactRelay.mod.LocalQueryRenderer[TOperation]].asInstanceOf[typings.react.mod.ComponentType[LocalQueryRendererProps[TOperation]]]
+  def LocalQueryRenderer[TOperation /* <: OperationType */]: ComponentType[LocalQueryRendererProps[TOperation]] = js.constructorOf[typings.reactRelay.mod.LocalQueryRenderer[TOperation]].asInstanceOf[ComponentType[LocalQueryRendererProps[TOperation]]]
   @scala.inline
-  def QueryRenderer[TOperation /* <: OperationType */]: ComponentType[AnonCacheConfig with QueryRendererProps[TOperation]] = js.constructorOf[typings.reactRelay.mod.QueryRenderer[TOperation]].asInstanceOf[typings.react.mod.ComponentType[
-  typings.reactRelay.AnonCacheConfig with typings.reactRelay.mod.QueryRendererProps[TOperation]]]
+  def QueryRenderer[TOperation /* <: OperationType */]: ComponentType[AnonCacheConfig with QueryRendererProps[TOperation]] = js.constructorOf[typings.reactRelay.mod.QueryRenderer[TOperation]].asInstanceOf[ComponentType[AnonCacheConfig with QueryRendererProps[TOperation]]]
   @scala.inline
-  def RelayEnvironmentProvider: ComponentType[RelayEnvironmentProviderProps] = typings.reactRelay.hooksMod.asInstanceOf[js.Dynamic].selectDynamic("RelayEnvironmentProvider").asInstanceOf[typings.react.mod.ComponentType[RelayEnvironmentProviderProps]]
+  def RelayEnvironmentProvider: ComponentType[RelayEnvironmentProviderProps] = hooksMod.asInstanceOf[js.Dynamic].selectDynamic("RelayEnvironmentProvider").asInstanceOf[ComponentType[RelayEnvironmentProviderProps]]
 }
 

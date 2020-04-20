@@ -33,7 +33,6 @@ object SendSSHPublicKeyRequest {
     SSHPublicKey: SSHPublicKey
   ): SendSSHPublicKeyRequest = {
     val __obj = js.Dynamic.literal(AvailabilityZone = AvailabilityZone.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any], InstanceOSUser = InstanceOSUser.asInstanceOf[js.Any], SSHPublicKey = SSHPublicKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SendSSHPublicKeyRequest]
   }
 }

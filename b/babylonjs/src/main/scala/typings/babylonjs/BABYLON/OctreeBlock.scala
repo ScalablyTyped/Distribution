@@ -52,7 +52,7 @@ class OctreeBlock[T] protected () extends js.Object {
   /**
     * Gets the maximum capacity of this block (if capacity is reached the block will be split into sub blocks)
     */
-  def capacity(): Double = js.native
+  def capacity: Double = js.native
   /**
     * Subdivide the content into child blocks (this block will then be empty)
     */
@@ -80,11 +80,11 @@ class OctreeBlock[T] protected () extends js.Object {
   /**
     * Gets the maximum vector (in world space) of the block's bounding box
     */
-  def maxPoint(): Vector3 = js.native
+  def maxPoint: Vector3 = js.native
   /**
     * Gets the minimum vector (in world space) of the block's bounding box
     */
-  def minPoint(): Vector3 = js.native
+  def minPoint: Vector3 = js.native
   /**
     * Remove an element from this block
     * @param entry defines the element to remove

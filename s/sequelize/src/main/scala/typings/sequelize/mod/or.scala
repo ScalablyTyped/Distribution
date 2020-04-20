@@ -12,7 +12,6 @@ object or {
   @scala.inline
   def apply(args: js.Array[_]): or = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[or]
   }
 }

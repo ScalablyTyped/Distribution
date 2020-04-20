@@ -54,7 +54,7 @@ class PostProcessRenderPipeline protected () extends js.Object {
     */
   def addEffect(renderEffect: PostProcessRenderEffect): Unit = js.native
   /** Gets the list of attached cameras */
-  def cameras(): js.Array[Camera] = js.native
+  def cameras: js.Array[Camera] = js.native
   /**
     * Disposes of the pipeline
     */
@@ -67,10 +67,10 @@ class PostProcessRenderPipeline protected () extends js.Object {
   /**
     * If all the render effects in the pipeline are supported
     */
-  def isSupported(): Boolean = js.native
+  def isSupported: Boolean = js.native
   /**
     * Gets pipeline name
     */
-  def name(): String = js.native
+  def name: String = js.native
 }
 

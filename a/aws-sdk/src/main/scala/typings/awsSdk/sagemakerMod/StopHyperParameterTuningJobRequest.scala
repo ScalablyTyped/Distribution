@@ -16,7 +16,6 @@ object StopHyperParameterTuningJobRequest {
   @scala.inline
   def apply(HyperParameterTuningJobName: HyperParameterTuningJobName): StopHyperParameterTuningJobRequest = {
     val __obj = js.Dynamic.literal(HyperParameterTuningJobName = HyperParameterTuningJobName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopHyperParameterTuningJobRequest]
   }
 }

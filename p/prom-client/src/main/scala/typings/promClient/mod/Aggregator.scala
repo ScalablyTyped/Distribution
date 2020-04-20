@@ -16,18 +16,16 @@ trait Aggregator extends js.Object
 
 object Aggregator {
   @scala.inline
-  def average: typings.promClient.promClientStrings.average = this.cast("average")
+  def average: typings.promClient.promClientStrings.average = "average".asInstanceOf[typings.promClient.promClientStrings.average]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def first: typings.promClient.promClientStrings.first = "first".asInstanceOf[typings.promClient.promClientStrings.first]
   @scala.inline
-  def first: typings.promClient.promClientStrings.first = this.cast("first")
+  def max: typings.promClient.promClientStrings.max = "max".asInstanceOf[typings.promClient.promClientStrings.max]
   @scala.inline
-  def max: typings.promClient.promClientStrings.max = this.cast("max")
+  def min: typings.promClient.promClientStrings.min = "min".asInstanceOf[typings.promClient.promClientStrings.min]
   @scala.inline
-  def min: typings.promClient.promClientStrings.min = this.cast("min")
+  def omit: typings.promClient.promClientStrings.omit = "omit".asInstanceOf[typings.promClient.promClientStrings.omit]
   @scala.inline
-  def omit: typings.promClient.promClientStrings.omit = this.cast("omit")
-  @scala.inline
-  def sum: typings.promClient.promClientStrings.sum = this.cast("sum")
+  def sum: typings.promClient.promClientStrings.sum = "sum".asInstanceOf[typings.promClient.promClientStrings.sum]
 }
 

@@ -12,10 +12,8 @@ trait ChannelInterpretation extends js.Object
 
 object ChannelInterpretation {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def discrete: typings.std.stdStrings.discrete = "discrete".asInstanceOf[typings.std.stdStrings.discrete]
   @scala.inline
-  def discrete: typings.std.stdStrings.discrete = this.cast("discrete")
-  @scala.inline
-  def speakers: typings.std.stdStrings.speakers = this.cast("speakers")
+  def speakers: typings.std.stdStrings.speakers = "speakers".asInstanceOf[typings.std.stdStrings.speakers]
 }
 

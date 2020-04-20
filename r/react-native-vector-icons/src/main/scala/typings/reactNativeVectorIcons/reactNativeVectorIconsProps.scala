@@ -15,13 +15,13 @@ trait reactNativeVectorIconsProps {
   def AntDesignButtonProps: typings.reactNativeVectorIcons.iconMod.IconButtonProps.type = typings.reactNativeVectorIcons.iconMod.IconButtonProps
   type AntDesignButtonProps = typings.reactNativeVectorIcons.iconMod.IconButtonProps
   @scala.inline
-  def AntDesignTabBarItemProps: TabBarItemIOSProps.type = typings.reactNativeVectorIcons.iconMod.TabBarItemIOSProps
+  def AntDesignTabBarItemProps: TabBarItemIOSProps.type = TabBarItemIOSProps
   type AntDesignTabBarItemProps = TabBarItemIOSProps
   @scala.inline
-  def AntDesignTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactNativeVectorIcons.iconMod.TabBarItemIOSProps
+  def AntDesignTabBarItemIOSProps: TabBarItemIOSProps.type = TabBarItemIOSProps
   type AntDesignTabBarItemIOSProps = TabBarItemIOSProps
   @scala.inline
-  def AntDesignToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactNativeVectorIcons.iconMod.ToolbarAndroidProps
+  def AntDesignToolbarAndroidProps: ToolbarAndroidProps.type = ToolbarAndroidProps
   type AntDesignToolbarAndroidProps = ToolbarAndroidProps
   @scala.inline
   def EntypoProps: typings.reactNativeVectorIcons.iconMod.IconProps.type = typings.reactNativeVectorIcons.iconMod.IconProps
@@ -30,13 +30,13 @@ trait reactNativeVectorIconsProps {
   def EntypoButtonProps: typings.reactNativeVectorIcons.iconMod.IconButtonProps.type = typings.reactNativeVectorIcons.iconMod.IconButtonProps
   type EntypoButtonProps = typings.reactNativeVectorIcons.iconMod.IconButtonProps
   @scala.inline
-  def EntypoTabBarItemProps: TabBarItemIOSProps.type = typings.reactNativeVectorIcons.iconMod.TabBarItemIOSProps
+  def EntypoTabBarItemProps: TabBarItemIOSProps.type = TabBarItemIOSProps
   type EntypoTabBarItemProps = TabBarItemIOSProps
   @scala.inline
-  def EntypoTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactNativeVectorIcons.iconMod.TabBarItemIOSProps
+  def EntypoTabBarItemIOSProps: TabBarItemIOSProps.type = TabBarItemIOSProps
   type EntypoTabBarItemIOSProps = TabBarItemIOSProps
   @scala.inline
-  def EntypoToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactNativeVectorIcons.iconMod.ToolbarAndroidProps
+  def EntypoToolbarAndroidProps: ToolbarAndroidProps.type = ToolbarAndroidProps
   type EntypoToolbarAndroidProps = ToolbarAndroidProps
   @scala.inline
   def EvilIconsProps: typings.reactNativeVectorIcons.iconMod.IconProps.type = typings.reactNativeVectorIcons.iconMod.IconProps
@@ -45,13 +45,13 @@ trait reactNativeVectorIconsProps {
   def EvilIconsButtonProps: typings.reactNativeVectorIcons.iconMod.IconButtonProps.type = typings.reactNativeVectorIcons.iconMod.IconButtonProps
   type EvilIconsButtonProps = typings.reactNativeVectorIcons.iconMod.IconButtonProps
   @scala.inline
-  def EvilIconsTabBarItemProps: TabBarItemIOSProps.type = typings.reactNativeVectorIcons.iconMod.TabBarItemIOSProps
+  def EvilIconsTabBarItemProps: TabBarItemIOSProps.type = TabBarItemIOSProps
   type EvilIconsTabBarItemProps = TabBarItemIOSProps
   @scala.inline
-  def EvilIconsTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactNativeVectorIcons.iconMod.TabBarItemIOSProps
+  def EvilIconsTabBarItemIOSProps: TabBarItemIOSProps.type = TabBarItemIOSProps
   type EvilIconsTabBarItemIOSProps = TabBarItemIOSProps
   @scala.inline
-  def EvilIconsToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactNativeVectorIcons.iconMod.ToolbarAndroidProps
+  def EvilIconsToolbarAndroidProps: ToolbarAndroidProps.type = ToolbarAndroidProps
   type EvilIconsToolbarAndroidProps = ToolbarAndroidProps
   @scala.inline
   def FeatherProps: typings.reactNativeVectorIcons.iconMod.IconProps.type = typings.reactNativeVectorIcons.iconMod.IconProps
@@ -60,13 +60,13 @@ trait reactNativeVectorIconsProps {
   def FeatherButtonProps: typings.reactNativeVectorIcons.iconMod.IconButtonProps.type = typings.reactNativeVectorIcons.iconMod.IconButtonProps
   type FeatherButtonProps = typings.reactNativeVectorIcons.iconMod.IconButtonProps
   @scala.inline
-  def FeatherTabBarItemProps: TabBarItemIOSProps.type = typings.reactNativeVectorIcons.iconMod.TabBarItemIOSProps
+  def FeatherTabBarItemProps: TabBarItemIOSProps.type = TabBarItemIOSProps
   type FeatherTabBarItemProps = TabBarItemIOSProps
   @scala.inline
-  def FeatherTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactNativeVectorIcons.iconMod.TabBarItemIOSProps
+  def FeatherTabBarItemIOSProps: TabBarItemIOSProps.type = TabBarItemIOSProps
   type FeatherTabBarItemIOSProps = TabBarItemIOSProps
   @scala.inline
-  def FeatherToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactNativeVectorIcons.iconMod.ToolbarAndroidProps
+  def FeatherToolbarAndroidProps: ToolbarAndroidProps.type = ToolbarAndroidProps
   type FeatherToolbarAndroidProps = ToolbarAndroidProps
   @scala.inline
   def FontAwesomeProps: typings.reactNativeVectorIcons.iconMod.IconProps.type = typings.reactNativeVectorIcons.iconMod.IconProps
@@ -77,13 +77,13 @@ trait reactNativeVectorIconsProps {
   def FontAwesomeButtonProps: typings.reactNativeVectorIcons.iconMod.IconButtonProps.type = typings.reactNativeVectorIcons.iconMod.IconButtonProps
   type FontAwesomeButtonProps = typings.reactNativeVectorIcons.iconMod.IconButtonProps
   @scala.inline
-  def FontAwesomeTabBarItemProps: TabBarItemIOSProps.type = typings.reactNativeVectorIcons.iconMod.TabBarItemIOSProps
+  def FontAwesomeTabBarItemProps: TabBarItemIOSProps.type = TabBarItemIOSProps
   type FontAwesomeTabBarItemProps = TabBarItemIOSProps
   @scala.inline
-  def FontAwesomeTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactNativeVectorIcons.iconMod.TabBarItemIOSProps
+  def FontAwesomeTabBarItemIOSProps: TabBarItemIOSProps.type = TabBarItemIOSProps
   type FontAwesomeTabBarItemIOSProps = TabBarItemIOSProps
   @scala.inline
-  def FontAwesomeToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactNativeVectorIcons.iconMod.ToolbarAndroidProps
+  def FontAwesomeToolbarAndroidProps: ToolbarAndroidProps.type = ToolbarAndroidProps
   type FontAwesomeToolbarAndroidProps = ToolbarAndroidProps
   @scala.inline
   def FontistoProps: typings.reactNativeVectorIcons.iconMod.IconProps.type = typings.reactNativeVectorIcons.iconMod.IconProps
@@ -92,13 +92,13 @@ trait reactNativeVectorIconsProps {
   def FontistoButtonProps: typings.reactNativeVectorIcons.iconMod.IconButtonProps.type = typings.reactNativeVectorIcons.iconMod.IconButtonProps
   type FontistoButtonProps = typings.reactNativeVectorIcons.iconMod.IconButtonProps
   @scala.inline
-  def FontistoTabBarItemProps: TabBarItemIOSProps.type = typings.reactNativeVectorIcons.iconMod.TabBarItemIOSProps
+  def FontistoTabBarItemProps: TabBarItemIOSProps.type = TabBarItemIOSProps
   type FontistoTabBarItemProps = TabBarItemIOSProps
   @scala.inline
-  def FontistoTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactNativeVectorIcons.iconMod.TabBarItemIOSProps
+  def FontistoTabBarItemIOSProps: TabBarItemIOSProps.type = TabBarItemIOSProps
   type FontistoTabBarItemIOSProps = TabBarItemIOSProps
   @scala.inline
-  def FontistoToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactNativeVectorIcons.iconMod.ToolbarAndroidProps
+  def FontistoToolbarAndroidProps: ToolbarAndroidProps.type = ToolbarAndroidProps
   type FontistoToolbarAndroidProps = ToolbarAndroidProps
   @scala.inline
   def FoundationProps: typings.reactNativeVectorIcons.iconMod.IconProps.type = typings.reactNativeVectorIcons.iconMod.IconProps
@@ -107,13 +107,13 @@ trait reactNativeVectorIconsProps {
   def FoundationButtonProps: typings.reactNativeVectorIcons.iconMod.IconButtonProps.type = typings.reactNativeVectorIcons.iconMod.IconButtonProps
   type FoundationButtonProps = typings.reactNativeVectorIcons.iconMod.IconButtonProps
   @scala.inline
-  def FoundationTabBarItemProps: TabBarItemIOSProps.type = typings.reactNativeVectorIcons.iconMod.TabBarItemIOSProps
+  def FoundationTabBarItemProps: TabBarItemIOSProps.type = TabBarItemIOSProps
   type FoundationTabBarItemProps = TabBarItemIOSProps
   @scala.inline
-  def FoundationTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactNativeVectorIcons.iconMod.TabBarItemIOSProps
+  def FoundationTabBarItemIOSProps: TabBarItemIOSProps.type = TabBarItemIOSProps
   type FoundationTabBarItemIOSProps = TabBarItemIOSProps
   @scala.inline
-  def FoundationToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactNativeVectorIcons.iconMod.ToolbarAndroidProps
+  def FoundationToolbarAndroidProps: ToolbarAndroidProps.type = ToolbarAndroidProps
   type FoundationToolbarAndroidProps = ToolbarAndroidProps
   @scala.inline
   def IconProps: typings.reactNativeVectorIcons.iconMod.IconProps.type = typings.reactNativeVectorIcons.iconMod.IconProps
@@ -122,13 +122,13 @@ trait reactNativeVectorIconsProps {
   def IconButtonProps: typings.reactNativeVectorIcons.iconMod.IconButtonProps.type = typings.reactNativeVectorIcons.iconMod.IconButtonProps
   type IconButtonProps = typings.reactNativeVectorIcons.iconMod.IconButtonProps
   @scala.inline
-  def IconTabBarItemProps: TabBarItemIOSProps.type = typings.reactNativeVectorIcons.iconMod.TabBarItemIOSProps
+  def IconTabBarItemProps: TabBarItemIOSProps.type = TabBarItemIOSProps
   type IconTabBarItemProps = TabBarItemIOSProps
   @scala.inline
-  def IconTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactNativeVectorIcons.iconMod.TabBarItemIOSProps
+  def IconTabBarItemIOSProps: TabBarItemIOSProps.type = TabBarItemIOSProps
   type IconTabBarItemIOSProps = TabBarItemIOSProps
   @scala.inline
-  def IconToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactNativeVectorIcons.iconMod.ToolbarAndroidProps
+  def IconToolbarAndroidProps: ToolbarAndroidProps.type = ToolbarAndroidProps
   type IconToolbarAndroidProps = ToolbarAndroidProps
   @scala.inline
   def IoniconsProps: typings.reactNativeVectorIcons.iconMod.IconProps.type = typings.reactNativeVectorIcons.iconMod.IconProps
@@ -137,13 +137,13 @@ trait reactNativeVectorIconsProps {
   def IoniconsButtonProps: typings.reactNativeVectorIcons.iconMod.IconButtonProps.type = typings.reactNativeVectorIcons.iconMod.IconButtonProps
   type IoniconsButtonProps = typings.reactNativeVectorIcons.iconMod.IconButtonProps
   @scala.inline
-  def IoniconsTabBarItemProps: TabBarItemIOSProps.type = typings.reactNativeVectorIcons.iconMod.TabBarItemIOSProps
+  def IoniconsTabBarItemProps: TabBarItemIOSProps.type = TabBarItemIOSProps
   type IoniconsTabBarItemProps = TabBarItemIOSProps
   @scala.inline
-  def IoniconsTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactNativeVectorIcons.iconMod.TabBarItemIOSProps
+  def IoniconsTabBarItemIOSProps: TabBarItemIOSProps.type = TabBarItemIOSProps
   type IoniconsTabBarItemIOSProps = TabBarItemIOSProps
   @scala.inline
-  def IoniconsToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactNativeVectorIcons.iconMod.ToolbarAndroidProps
+  def IoniconsToolbarAndroidProps: ToolbarAndroidProps.type = ToolbarAndroidProps
   type IoniconsToolbarAndroidProps = ToolbarAndroidProps
   @scala.inline
   def MaterialCommunityIconsProps: typings.reactNativeVectorIcons.iconMod.IconProps.type = typings.reactNativeVectorIcons.iconMod.IconProps
@@ -152,13 +152,13 @@ trait reactNativeVectorIconsProps {
   def MaterialCommunityIconsButtonProps: typings.reactNativeVectorIcons.iconMod.IconButtonProps.type = typings.reactNativeVectorIcons.iconMod.IconButtonProps
   type MaterialCommunityIconsButtonProps = typings.reactNativeVectorIcons.iconMod.IconButtonProps
   @scala.inline
-  def MaterialCommunityIconsTabBarItemProps: TabBarItemIOSProps.type = typings.reactNativeVectorIcons.iconMod.TabBarItemIOSProps
+  def MaterialCommunityIconsTabBarItemProps: TabBarItemIOSProps.type = TabBarItemIOSProps
   type MaterialCommunityIconsTabBarItemProps = TabBarItemIOSProps
   @scala.inline
-  def MaterialCommunityIconsTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactNativeVectorIcons.iconMod.TabBarItemIOSProps
+  def MaterialCommunityIconsTabBarItemIOSProps: TabBarItemIOSProps.type = TabBarItemIOSProps
   type MaterialCommunityIconsTabBarItemIOSProps = TabBarItemIOSProps
   @scala.inline
-  def MaterialCommunityIconsToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactNativeVectorIcons.iconMod.ToolbarAndroidProps
+  def MaterialCommunityIconsToolbarAndroidProps: ToolbarAndroidProps.type = ToolbarAndroidProps
   type MaterialCommunityIconsToolbarAndroidProps = ToolbarAndroidProps
   @scala.inline
   def MaterialIconsProps: typings.reactNativeVectorIcons.iconMod.IconProps.type = typings.reactNativeVectorIcons.iconMod.IconProps
@@ -167,13 +167,13 @@ trait reactNativeVectorIconsProps {
   def MaterialIconsButtonProps: typings.reactNativeVectorIcons.iconMod.IconButtonProps.type = typings.reactNativeVectorIcons.iconMod.IconButtonProps
   type MaterialIconsButtonProps = typings.reactNativeVectorIcons.iconMod.IconButtonProps
   @scala.inline
-  def MaterialIconsTabBarItemProps: TabBarItemIOSProps.type = typings.reactNativeVectorIcons.iconMod.TabBarItemIOSProps
+  def MaterialIconsTabBarItemProps: TabBarItemIOSProps.type = TabBarItemIOSProps
   type MaterialIconsTabBarItemProps = TabBarItemIOSProps
   @scala.inline
-  def MaterialIconsTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactNativeVectorIcons.iconMod.TabBarItemIOSProps
+  def MaterialIconsTabBarItemIOSProps: TabBarItemIOSProps.type = TabBarItemIOSProps
   type MaterialIconsTabBarItemIOSProps = TabBarItemIOSProps
   @scala.inline
-  def MaterialIconsToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactNativeVectorIcons.iconMod.ToolbarAndroidProps
+  def MaterialIconsToolbarAndroidProps: ToolbarAndroidProps.type = ToolbarAndroidProps
   type MaterialIconsToolbarAndroidProps = ToolbarAndroidProps
   @scala.inline
   def OcticonsProps: typings.reactNativeVectorIcons.iconMod.IconProps.type = typings.reactNativeVectorIcons.iconMod.IconProps
@@ -182,13 +182,13 @@ trait reactNativeVectorIconsProps {
   def OcticonsButtonProps: typings.reactNativeVectorIcons.iconMod.IconButtonProps.type = typings.reactNativeVectorIcons.iconMod.IconButtonProps
   type OcticonsButtonProps = typings.reactNativeVectorIcons.iconMod.IconButtonProps
   @scala.inline
-  def OcticonsTabBarItemProps: TabBarItemIOSProps.type = typings.reactNativeVectorIcons.iconMod.TabBarItemIOSProps
+  def OcticonsTabBarItemProps: TabBarItemIOSProps.type = TabBarItemIOSProps
   type OcticonsTabBarItemProps = TabBarItemIOSProps
   @scala.inline
-  def OcticonsTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactNativeVectorIcons.iconMod.TabBarItemIOSProps
+  def OcticonsTabBarItemIOSProps: TabBarItemIOSProps.type = TabBarItemIOSProps
   type OcticonsTabBarItemIOSProps = TabBarItemIOSProps
   @scala.inline
-  def OcticonsToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactNativeVectorIcons.iconMod.ToolbarAndroidProps
+  def OcticonsToolbarAndroidProps: ToolbarAndroidProps.type = ToolbarAndroidProps
   type OcticonsToolbarAndroidProps = ToolbarAndroidProps
   @scala.inline
   def SimpleLineIconsProps: typings.reactNativeVectorIcons.iconMod.IconProps.type = typings.reactNativeVectorIcons.iconMod.IconProps
@@ -197,13 +197,13 @@ trait reactNativeVectorIconsProps {
   def SimpleLineIconsButtonProps: typings.reactNativeVectorIcons.iconMod.IconButtonProps.type = typings.reactNativeVectorIcons.iconMod.IconButtonProps
   type SimpleLineIconsButtonProps = typings.reactNativeVectorIcons.iconMod.IconButtonProps
   @scala.inline
-  def SimpleLineIconsTabBarItemProps: TabBarItemIOSProps.type = typings.reactNativeVectorIcons.iconMod.TabBarItemIOSProps
+  def SimpleLineIconsTabBarItemProps: TabBarItemIOSProps.type = TabBarItemIOSProps
   type SimpleLineIconsTabBarItemProps = TabBarItemIOSProps
   @scala.inline
-  def SimpleLineIconsTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactNativeVectorIcons.iconMod.TabBarItemIOSProps
+  def SimpleLineIconsTabBarItemIOSProps: TabBarItemIOSProps.type = TabBarItemIOSProps
   type SimpleLineIconsTabBarItemIOSProps = TabBarItemIOSProps
   @scala.inline
-  def SimpleLineIconsToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactNativeVectorIcons.iconMod.ToolbarAndroidProps
+  def SimpleLineIconsToolbarAndroidProps: ToolbarAndroidProps.type = ToolbarAndroidProps
   type SimpleLineIconsToolbarAndroidProps = ToolbarAndroidProps
   @scala.inline
   def ZocialProps: typings.reactNativeVectorIcons.iconMod.IconProps.type = typings.reactNativeVectorIcons.iconMod.IconProps
@@ -212,13 +212,13 @@ trait reactNativeVectorIconsProps {
   def ZocialButtonProps: typings.reactNativeVectorIcons.iconMod.IconButtonProps.type = typings.reactNativeVectorIcons.iconMod.IconButtonProps
   type ZocialButtonProps = typings.reactNativeVectorIcons.iconMod.IconButtonProps
   @scala.inline
-  def ZocialTabBarItemProps: TabBarItemIOSProps.type = typings.reactNativeVectorIcons.iconMod.TabBarItemIOSProps
+  def ZocialTabBarItemProps: TabBarItemIOSProps.type = TabBarItemIOSProps
   type ZocialTabBarItemProps = TabBarItemIOSProps
   @scala.inline
-  def ZocialTabBarItemIOSProps: TabBarItemIOSProps.type = typings.reactNativeVectorIcons.iconMod.TabBarItemIOSProps
+  def ZocialTabBarItemIOSProps: TabBarItemIOSProps.type = TabBarItemIOSProps
   type ZocialTabBarItemIOSProps = TabBarItemIOSProps
   @scala.inline
-  def ZocialToolbarAndroidProps: ToolbarAndroidProps.type = typings.reactNativeVectorIcons.iconMod.ToolbarAndroidProps
+  def ZocialToolbarAndroidProps: ToolbarAndroidProps.type = ToolbarAndroidProps
   type ZocialToolbarAndroidProps = ToolbarAndroidProps
 }
 

@@ -18,7 +18,6 @@ object TypeofDriverService {
   @scala.inline
   def apply(Builder: Instantiable1[/* exe */ String, Builder]): TypeofDriverService = {
     val __obj = js.Dynamic.literal(Builder = Builder.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofDriverService]
   }
 }

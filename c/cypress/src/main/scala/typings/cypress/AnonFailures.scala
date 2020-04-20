@@ -1,7 +1,7 @@
 package typings.cypress
 
-import typings.cypress.cypressMod.dateTimeISO
-import typings.cypress.cypressMod.ms
+import typings.cypress.mod.dateTimeISO
+import typings.cypress.mod.ms
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,7 +32,6 @@ object AnonFailures {
     wallClockStartedAt: dateTimeISO
   ): AnonFailures = {
     val __obj = js.Dynamic.literal(failures = failures.asInstanceOf[js.Any], passes = passes.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], skipped = skipped.asInstanceOf[js.Any], suites = suites.asInstanceOf[js.Any], tests = tests.asInstanceOf[js.Any], wallClockDuration = wallClockDuration.asInstanceOf[js.Any], wallClockEndedAt = wallClockEndedAt.asInstanceOf[js.Any], wallClockStartedAt = wallClockStartedAt.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFailures]
   }
 }

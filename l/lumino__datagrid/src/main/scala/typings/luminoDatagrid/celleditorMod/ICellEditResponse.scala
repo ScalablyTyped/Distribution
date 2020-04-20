@@ -25,7 +25,6 @@ object ICellEditResponse {
   @scala.inline
   def apply(cell: CellConfig, cursorMovement: CursorMoveDirection, value: js.Any): ICellEditResponse = {
     val __obj = js.Dynamic.literal(cell = cell.asInstanceOf[js.Any], cursorMovement = cursorMovement.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICellEditResponse]
   }
 }

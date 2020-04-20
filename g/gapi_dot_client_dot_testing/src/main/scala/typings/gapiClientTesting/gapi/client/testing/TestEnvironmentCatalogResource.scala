@@ -23,7 +23,6 @@ object TestEnvironmentCatalogResource {
   @scala.inline
   def apply(get: AnonBearertoken => Request_[TestEnvironmentCatalog]): TestEnvironmentCatalogResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
-  
     __obj.asInstanceOf[TestEnvironmentCatalogResource]
   }
 }

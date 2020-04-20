@@ -13,7 +13,6 @@ object ParsedResult {
   @scala.inline
   def apply(addresses: js.Array[ParsedMailbox | ParsedGroup], ast: ASTNode): ParsedResult = {
     val __obj = js.Dynamic.literal(addresses = addresses.asInstanceOf[js.Any], ast = ast.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ParsedResult]
   }
 }

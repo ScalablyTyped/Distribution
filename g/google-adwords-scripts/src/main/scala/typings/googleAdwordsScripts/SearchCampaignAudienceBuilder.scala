@@ -21,7 +21,6 @@ object SearchCampaignAudienceBuilder {
     withBidModifier: Double => SearchCampaignAudienceBuilder[SearchCampaignAudience]
   ): SearchCampaignAudienceBuilder[SearchCampaignAudience] = {
     val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), exclude = js.Any.fromFunction0(exclude), withAudience = js.Any.fromFunction1(withAudience), withAudienceId = js.Any.fromFunction1(withAudienceId), withBidModifier = js.Any.fromFunction1(withBidModifier))
-  
     __obj.asInstanceOf[SearchCampaignAudienceBuilder[SearchCampaignAudience]]
   }
 }

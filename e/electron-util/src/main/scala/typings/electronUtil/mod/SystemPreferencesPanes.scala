@@ -58,7 +58,6 @@ object SystemPreferencesPanes {
     universalaccess: Captioning | Hearing | Keyboard | Media_Descriptions | Mouse | Seeing_Display | Seeing_VoiceOver | Seeing_Zoom | SpeakableItems | Switch
   ): SystemPreferencesPanes = {
     val __obj = js.Dynamic.literal(security = security.asInstanceOf[js.Any], sharing = sharing.asInstanceOf[js.Any], speech = speech.asInstanceOf[js.Any], universalaccess = universalaccess.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SystemPreferencesPanes]
   }
 }

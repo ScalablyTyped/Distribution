@@ -20,7 +20,6 @@ object DateRange {
   @scala.inline
   def apply(end: Date, start: Date): DateRange = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DateRange]
   }
 }

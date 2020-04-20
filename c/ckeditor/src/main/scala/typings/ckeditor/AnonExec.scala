@@ -15,7 +15,6 @@ object AnonExec {
   @scala.inline
   def apply(exec: editor => Boolean, refresh: (editor, elementPath) => Double): AnonExec = {
     val __obj = js.Dynamic.literal(exec = js.Any.fromFunction1(exec), refresh = js.Any.fromFunction2(refresh))
-  
     __obj.asInstanceOf[AnonExec]
   }
 }

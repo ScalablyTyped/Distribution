@@ -20,7 +20,6 @@ object CreatePublicVirtualInterfaceRequest {
   @scala.inline
   def apply(connectionId: ConnectionId, newPublicVirtualInterface: NewPublicVirtualInterface): CreatePublicVirtualInterfaceRequest = {
     val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any], newPublicVirtualInterface = newPublicVirtualInterface.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreatePublicVirtualInterfaceRequest]
   }
 }

@@ -32,7 +32,6 @@ object OCRReadPara {
     Type: String
   ): OCRReadPara = {
     val __obj = js.Dynamic.literal(AjaxFunctionUrl = AjaxFunctionUrl.asInstanceOf[js.Any], AryZone = AryZone.asInstanceOf[js.Any], FileNames = FileNames.asInstanceOf[js.Any], FunctionName = FunctionName.asInstanceOf[js.Any], ImageIndex = ImageIndex.asInstanceOf[js.Any], JsonString = JsonString.asInstanceOf[js.Any], OnFailure = js.Any.fromFunction0(OnFailure), OnSuccess = js.Any.fromFunction0(OnSuccess), STWAIN = STWAIN.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OCRReadPara]
   }
 }

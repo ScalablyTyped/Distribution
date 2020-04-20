@@ -30,7 +30,6 @@ object AnonBottomJustifyContent {
     zIndex: Double
   ): AnonBottomJustifyContent = {
     val __obj = js.Dynamic.literal(alignItems = alignItems.asInstanceOf[js.Any], backgroundColor = backgroundColor.asInstanceOf[js.Any], bottom = bottom.asInstanceOf[js.Any], justifyContent = justifyContent.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], zIndex = zIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBottomJustifyContent]
   }
 }

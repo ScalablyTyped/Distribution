@@ -16,7 +16,6 @@ object AnonLinks {
   @scala.inline
   def apply(links: js.Object, routerProps: MemoryRouterProps, story: StoryApi[_]): AnonLinks = {
     val __obj = js.Dynamic.literal(links = links.asInstanceOf[js.Any], routerProps = routerProps.asInstanceOf[js.Any], story = story.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLinks]
   }
 }

@@ -18,7 +18,6 @@ object Context {
     Provider: ComponentClass[ProviderProps[T], ComponentState]
   ): Context[T] = {
     val __obj = js.Dynamic.literal(Consumer = Consumer.asInstanceOf[js.Any], Provider = Provider.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Context[T]]
   }
 }

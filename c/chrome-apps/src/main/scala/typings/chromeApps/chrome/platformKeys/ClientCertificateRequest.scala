@@ -2,6 +2,8 @@ package typings.chromeApps.chrome.platformKeys
 
 import typings.chromeApps.AnonECDSASIGN
 import typings.chromeApps.chrome.ToStringLiteral
+import typings.chromeApps.chromeAppsStrings.ECDSA_SIGN
+import typings.chromeApps.chromeAppsStrings.RSA_SIGN
 import typings.chromeApps.chromeAppsStrings.ecdsaSign
 import typings.chromeApps.chromeAppsStrings.rsaSign
 import typings.std.ArrayBuffer
@@ -27,17 +29,28 @@ trait ClientCertificateRequest extends js.Object {
     * empty list, however, certificates of any type will be returned.
     * @see ClientCertificateType
     */
-  var certificateTypes: js.Array[ToStringLiteral[AnonECDSASIGN, String, Exclude[String, rsaSign | ecdsaSign]]]
+  var certificateTypes: js.Array[
+    ToStringLiteral[
+      AnonECDSASIGN, 
+      RSA_SIGN | ECDSA_SIGN, 
+      Exclude[RSA_SIGN | ECDSA_SIGN, rsaSign | ecdsaSign]
+    ]
+  ]
 }
 
 object ClientCertificateRequest {
   @scala.inline
   def apply(
     certificateAuthorities: js.Array[ArrayBuffer],
-    certificateTypes: js.Array[ToStringLiteral[AnonECDSASIGN, String, Exclude[String, rsaSign | ecdsaSign]]]
+    certificateTypes: js.Array[
+      ToStringLiteral[
+        AnonECDSASIGN, 
+        RSA_SIGN | ECDSA_SIGN, 
+        Exclude[RSA_SIGN | ECDSA_SIGN, rsaSign | ecdsaSign]
+      ]
+    ]
   ): ClientCertificateRequest = {
     val __obj = js.Dynamic.literal(certificateAuthorities = certificateAuthorities.asInstanceOf[js.Any], certificateTypes = certificateTypes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClientCertificateRequest]
   }
 }

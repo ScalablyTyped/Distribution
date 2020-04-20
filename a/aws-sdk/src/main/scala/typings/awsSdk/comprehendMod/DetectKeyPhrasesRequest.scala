@@ -20,7 +20,6 @@ object DetectKeyPhrasesRequest {
   @scala.inline
   def apply(LanguageCode: LanguageCode, Text: String): DetectKeyPhrasesRequest = {
     val __obj = js.Dynamic.literal(LanguageCode = LanguageCode.asInstanceOf[js.Any], Text = Text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DetectKeyPhrasesRequest]
   }
 }

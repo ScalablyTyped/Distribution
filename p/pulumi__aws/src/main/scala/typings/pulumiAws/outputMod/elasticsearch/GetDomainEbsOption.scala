@@ -29,7 +29,6 @@ object GetDomainEbsOption {
   @scala.inline
   def apply(ebsEnabled: Boolean, iops: Double, volumeSize: Double, volumeType: String): GetDomainEbsOption = {
     val __obj = js.Dynamic.literal(ebsEnabled = ebsEnabled.asInstanceOf[js.Any], iops = iops.asInstanceOf[js.Any], volumeSize = volumeSize.asInstanceOf[js.Any], volumeType = volumeType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetDomainEbsOption]
   }
 }

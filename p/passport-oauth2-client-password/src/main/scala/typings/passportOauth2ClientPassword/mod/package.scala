@@ -17,7 +17,12 @@ package object mod {
     scala.Unit
   ]
   type VerifyFunctionWithRequest = js.Function4[
-    /* req */ typings.express.mod.Request_[typings.expressServeStaticCore.mod.ParamsDictionary], 
+    /* req */ typings.express.mod.Request_[
+      typings.expressServeStaticCore.mod.ParamsDictionary, 
+      js.Any, 
+      js.Any, 
+      typings.expressServeStaticCore.mod.Query
+    ], 
     /* clientId */ java.lang.String, 
     /* clientSecret */ java.lang.String, 
     /* done */ js.Function3[

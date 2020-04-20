@@ -26,7 +26,6 @@ object AnonAwards {
     teams: js.Array[String]
   ): AnonAwards = {
     val __obj = js.Dynamic.literal(awards = awards.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any], rankings = rankings.asInstanceOf[js.Any], season_rankings = season_rankings.asInstanceOf[js.Any], skills = skills.asInstanceOf[js.Any], teams = teams.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAwards]
   }
 }

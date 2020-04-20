@@ -15,7 +15,6 @@ object ReferenceFrame {
   @scala.inline
   def apply(ellipsoid: Ellipsoid, epoch: Double, name: String): ReferenceFrame = {
     val __obj = js.Dynamic.literal(ellipsoid = ellipsoid.asInstanceOf[js.Any], epoch = epoch.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReferenceFrame]
   }
 }

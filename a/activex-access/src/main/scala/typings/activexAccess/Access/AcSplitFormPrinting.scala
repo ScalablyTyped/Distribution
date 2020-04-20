@@ -14,10 +14,8 @@ trait AcSplitFormPrinting extends js.Object
 
 object AcSplitFormPrinting {
   @scala.inline
-  def acFormOnly: `0` = this.cast(0)
+  def acFormOnly: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def acGridOnly: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def acGridOnly: `1` = 1.asInstanceOf[`1`]
 }
 

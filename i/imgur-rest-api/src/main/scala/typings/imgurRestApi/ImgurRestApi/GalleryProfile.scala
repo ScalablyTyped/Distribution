@@ -20,7 +20,6 @@ object GalleryProfile {
     trophies: js.Array[Trophy]
   ): GalleryProfile = {
     val __obj = js.Dynamic.literal(total_gallery_comments = total_gallery_comments.asInstanceOf[js.Any], total_gallery_favorites = total_gallery_favorites.asInstanceOf[js.Any], total_gallery_submissions = total_gallery_submissions.asInstanceOf[js.Any], trophies = trophies.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GalleryProfile]
   }
 }

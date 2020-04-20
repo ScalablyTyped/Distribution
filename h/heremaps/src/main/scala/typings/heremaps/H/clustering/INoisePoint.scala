@@ -46,7 +46,6 @@ object INoisePoint {
     isCluster: () => Boolean
   ): INoisePoint = {
     val __obj = js.Dynamic.literal(getData = js.Any.fromFunction0(getData), getMinZoom = js.Any.fromFunction0(getMinZoom), getPosition = js.Any.fromFunction0(getPosition), getWeight = js.Any.fromFunction0(getWeight), isCluster = js.Any.fromFunction0(isCluster))
-  
     __obj.asInstanceOf[INoisePoint]
   }
 }

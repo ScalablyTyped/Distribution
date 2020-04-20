@@ -22,7 +22,6 @@ object AnalyticsParameters {
     setTerm: String => DynamicLink
   ): AnalyticsParameters = {
     val __obj = js.Dynamic.literal(setCampaign = js.Any.fromFunction1(setCampaign), setContent = js.Any.fromFunction1(setContent), setMedium = js.Any.fromFunction1(setMedium), setSource = js.Any.fromFunction1(setSource), setTerm = js.Any.fromFunction1(setTerm))
-  
     __obj.asInstanceOf[AnalyticsParameters]
   }
 }

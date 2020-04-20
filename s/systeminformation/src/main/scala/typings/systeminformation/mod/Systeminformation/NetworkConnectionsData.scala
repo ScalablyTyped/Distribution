@@ -28,7 +28,6 @@ object NetworkConnectionsData {
     state: String
   ): NetworkConnectionsData = {
     val __obj = js.Dynamic.literal(localaddress = localaddress.asInstanceOf[js.Any], localport = localport.asInstanceOf[js.Any], peeraddress = peeraddress.asInstanceOf[js.Any], peerport = peerport.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], process = process.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NetworkConnectionsData]
   }
 }

@@ -22,7 +22,6 @@ object BasicReader {
     parseData: String => js.Any
   ): BasicReader = {
     val __obj = js.Dynamic.literal(handle = js.Any.fromFunction4(handle), parseData = js.Any.fromFunction1(parseData))
-  
     __obj.asInstanceOf[BasicReader]
   }
 }

@@ -24,7 +24,6 @@ object ResendValidationEmailRequest {
   @scala.inline
   def apply(CertificateArn: Arn, Domain: DomainNameString, ValidationDomain: DomainNameString): ResendValidationEmailRequest = {
     val __obj = js.Dynamic.literal(CertificateArn = CertificateArn.asInstanceOf[js.Any], Domain = Domain.asInstanceOf[js.Any], ValidationDomain = ValidationDomain.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ResendValidationEmailRequest]
   }
 }

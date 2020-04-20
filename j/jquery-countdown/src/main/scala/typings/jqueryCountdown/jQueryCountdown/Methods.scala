@@ -13,12 +13,10 @@ trait Methods extends js.Object
 
 object Methods {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def finishDotcountdown: typings.jqueryCountdown.jqueryCountdownStrings.finishDotcountdown = "finish.countdown".asInstanceOf[typings.jqueryCountdown.jqueryCountdownStrings.finishDotcountdown]
   @scala.inline
-  def finishDotcountdown: typings.jqueryCountdown.jqueryCountdownStrings.finishDotcountdown = this.cast("finish.countdown")
+  def stopDotcountdown: typings.jqueryCountdown.jqueryCountdownStrings.stopDotcountdown = "stop.countdown".asInstanceOf[typings.jqueryCountdown.jqueryCountdownStrings.stopDotcountdown]
   @scala.inline
-  def stopDotcountdown: typings.jqueryCountdown.jqueryCountdownStrings.stopDotcountdown = this.cast("stop.countdown")
-  @scala.inline
-  def updateDotcountdown: typings.jqueryCountdown.jqueryCountdownStrings.updateDotcountdown = this.cast("update.countdown")
+  def updateDotcountdown: typings.jqueryCountdown.jqueryCountdownStrings.updateDotcountdown = "update.countdown".asInstanceOf[typings.jqueryCountdown.jqueryCountdownStrings.updateDotcountdown]
 }
 

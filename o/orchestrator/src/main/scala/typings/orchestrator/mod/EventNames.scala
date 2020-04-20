@@ -18,22 +18,20 @@ trait EventNames extends js.Object
 
 object EventNames {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def err: typings.orchestrator.orchestratorStrings.err = "err".asInstanceOf[typings.orchestrator.orchestratorStrings.err]
   @scala.inline
-  def err: typings.orchestrator.orchestratorStrings.err = this.cast("err")
+  def start: typings.orchestrator.orchestratorStrings.start = "start".asInstanceOf[typings.orchestrator.orchestratorStrings.start]
   @scala.inline
-  def start: typings.orchestrator.orchestratorStrings.start = this.cast("start")
+  def stop: typings.orchestrator.orchestratorStrings.stop = "stop".asInstanceOf[typings.orchestrator.orchestratorStrings.stop]
   @scala.inline
-  def stop: typings.orchestrator.orchestratorStrings.stop = this.cast("stop")
+  def task_err: typings.orchestrator.orchestratorStrings.task_err = "task_err".asInstanceOf[typings.orchestrator.orchestratorStrings.task_err]
   @scala.inline
-  def task_err: typings.orchestrator.orchestratorStrings.task_err = this.cast("task_err")
+  def task_not_found: typings.orchestrator.orchestratorStrings.task_not_found = "task_not_found".asInstanceOf[typings.orchestrator.orchestratorStrings.task_not_found]
   @scala.inline
-  def task_not_found: typings.orchestrator.orchestratorStrings.task_not_found = this.cast("task_not_found")
+  def task_recursion: typings.orchestrator.orchestratorStrings.task_recursion = "task_recursion".asInstanceOf[typings.orchestrator.orchestratorStrings.task_recursion]
   @scala.inline
-  def task_recursion: typings.orchestrator.orchestratorStrings.task_recursion = this.cast("task_recursion")
+  def task_start: typings.orchestrator.orchestratorStrings.task_start = "task_start".asInstanceOf[typings.orchestrator.orchestratorStrings.task_start]
   @scala.inline
-  def task_start: typings.orchestrator.orchestratorStrings.task_start = this.cast("task_start")
-  @scala.inline
-  def task_stop: typings.orchestrator.orchestratorStrings.task_stop = this.cast("task_stop")
+  def task_stop: typings.orchestrator.orchestratorStrings.task_stop = "task_stop".asInstanceOf[typings.orchestrator.orchestratorStrings.task_stop]
 }
 

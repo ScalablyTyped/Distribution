@@ -63,32 +63,32 @@ abstract class AssociationBase protected ()
   val remoteSourceDocument_FAssociationBase: IRemoteEntitySourceDocument | Null = js.native
   @JSName("type")
   val type_FAssociationBase: AssociationType = js.native
-  def containerAsDomainModel(): DomainModel = js.native
-  def dataStorageGuid(): String = js.native
+  def containerAsDomainModel: DomainModel = js.native
+  def dataStorageGuid: String = js.native
   def dataStorageGuid(newValue: String): js.Any = js.native
-  def deleteBehavior(): AssociationDeleteBehavior = js.native
+  def deleteBehavior: AssociationDeleteBehavior = js.native
   def deleteBehavior(newValue: AssociationDeleteBehavior): js.Any = js.native
-  def documentation(): String = js.native
+  def documentation: String = js.native
   def documentation(newValue: String): js.Any = js.native
-  def name(): String = js.native
+  def name: String = js.native
   def name(newValue: String): js.Any = js.native
-  def owner(): AssociationOwner = js.native
+  def owner: AssociationOwner = js.native
   def owner(newValue: AssociationOwner): js.Any = js.native
-  def parent(): Entity = js.native
+  def parent: Entity = js.native
   def parent(newValue: Entity): js.Any = js.native
   @JSName("qualifiedName")
-  def qualifiedName_MAssociationBase(): String | Null = js.native
+  def qualifiedName_MAssociationBase: String | Null = js.native
   def remoteSourceDocument(): js.Any = js.native
   def remoteSourceDocument(newValue: IRemoteEntitySourceDocument): js.Any = js.native
-  def remoteSourceDocumentQualifiedName(): String | Null = js.native
+  def remoteSourceDocumentQualifiedName: String | Null = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 8.3.0: introduced
     */
   @JSName("remoteSourceDocument")
-  def remoteSourceDocument_Union(): IRemoteEntitySourceDocument | Null = js.native
-  def `type`(): AssociationType = js.native
+  def remoteSourceDocument_Union: IRemoteEntitySourceDocument | Null = js.native
+  def `type`: AssociationType = js.native
   def `type`(newValue: AssociationType): js.Any = js.native
 }
 

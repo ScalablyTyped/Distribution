@@ -26,7 +26,6 @@ object Transaction {
     stats: () => TransactionStats
   ): Transaction = {
     val __obj = js.Dynamic.literal(attach = js.Any.fromFunction1(attach), begin = js.Any.fromFunction1(begin), commit = js.Any.fromFunction0(commit), exec = js.Any.fromFunction1(exec), rollback = js.Any.fromFunction0(rollback), stats = js.Any.fromFunction0(stats))
-  
     __obj.asInstanceOf[Transaction]
   }
 }

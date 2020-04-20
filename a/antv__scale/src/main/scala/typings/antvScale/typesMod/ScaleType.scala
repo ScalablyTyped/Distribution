@@ -18,22 +18,20 @@ trait ScaleType extends js.Object
 
 object ScaleType {
   @scala.inline
-  def base: typings.antvScale.antvScaleStrings.base = this.cast("base")
+  def base: typings.antvScale.antvScaleStrings.base = "base".asInstanceOf[typings.antvScale.antvScaleStrings.base]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cat: typings.antvScale.antvScaleStrings.cat = "cat".asInstanceOf[typings.antvScale.antvScaleStrings.cat]
   @scala.inline
-  def cat: typings.antvScale.antvScaleStrings.cat = this.cast("cat")
+  def identity: typings.antvScale.antvScaleStrings.identity = "identity".asInstanceOf[typings.antvScale.antvScaleStrings.identity]
   @scala.inline
-  def identity: typings.antvScale.antvScaleStrings.identity = this.cast("identity")
+  def linear: typings.antvScale.antvScaleStrings.linear = "linear".asInstanceOf[typings.antvScale.antvScaleStrings.linear]
   @scala.inline
-  def linear: typings.antvScale.antvScaleStrings.linear = this.cast("linear")
+  def log: typings.antvScale.antvScaleStrings.log = "log".asInstanceOf[typings.antvScale.antvScaleStrings.log]
   @scala.inline
-  def log: typings.antvScale.antvScaleStrings.log = this.cast("log")
+  def pow: typings.antvScale.antvScaleStrings.pow = "pow".asInstanceOf[typings.antvScale.antvScaleStrings.pow]
   @scala.inline
-  def pow: typings.antvScale.antvScaleStrings.pow = this.cast("pow")
+  def time: typings.antvScale.antvScaleStrings.time = "time".asInstanceOf[typings.antvScale.antvScaleStrings.time]
   @scala.inline
-  def time: typings.antvScale.antvScaleStrings.time = this.cast("time")
-  @scala.inline
-  def timeCat: typings.antvScale.antvScaleStrings.timeCat = this.cast("timeCat")
+  def timeCat: typings.antvScale.antvScaleStrings.timeCat = "timeCat".asInstanceOf[typings.antvScale.antvScaleStrings.timeCat]
 }
 

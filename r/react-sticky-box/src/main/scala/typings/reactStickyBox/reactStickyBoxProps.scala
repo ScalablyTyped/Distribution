@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactStickyBoxProps {
   @scala.inline
-  def ReactStickyBoxProps: StickyBoxProps.type = typings.reactStickyBox.mod.StickyBoxProps
+  def ReactStickyBoxProps: StickyBoxProps.type = StickyBoxProps
   type ReactStickyBoxProps = StickyBoxProps
 }
 

@@ -38,7 +38,6 @@ object FeatureEditResult {
     propertyIsEnumerable: PropertyKey => Boolean
   ): FeatureEditResult = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], globalId = globalId.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), objectId = objectId.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-  
     __obj.asInstanceOf[FeatureEditResult]
   }
 }

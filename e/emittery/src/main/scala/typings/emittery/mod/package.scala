@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object mod {
   type EventName = java.lang.String | js.Symbol
-  type EventNameFromDataMap[EventDataMap] = typings.std.Extract[java.lang.String, typings.emittery.mod.EventName]
+  type EventNameFromDataMap[EventDataMap] = typings.std.Extract[/* keyof EventDataMap */ java.lang.String, typings.emittery.mod.EventName]
   /**
   	Removes an event subscription.
   	*/

@@ -6,9 +6,6 @@ import scala.scalajs.js.annotation._
 
 object eventemitter3Strings {
   @js.native
-  sealed trait Class extends js.Object
-  
-  @js.native
   sealed trait EventArgs extends js.Object
   
   @js.native
@@ -26,8 +23,6 @@ object eventemitter3Strings {
   @js.native
   sealed trait ^ extends js.Object
   
-  @scala.inline
-  def Class: Class = "Class".asInstanceOf[Class]
   @scala.inline
   def EventArgs: EventArgs = "EventArgs".asInstanceOf[EventArgs]
   @scala.inline

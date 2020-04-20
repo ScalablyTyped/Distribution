@@ -41,7 +41,6 @@ object MediaDeviceInfo {
   @scala.inline
   def apply(deviceId: String, kind: String, label: String): MediaDeviceInfo = {
     val __obj = js.Dynamic.literal(deviceId = deviceId.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MediaDeviceInfo]
   }
 }

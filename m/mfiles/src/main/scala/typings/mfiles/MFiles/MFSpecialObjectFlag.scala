@@ -24,20 +24,18 @@ trait MFSpecialObjectFlag extends js.Object
 
 object MFSpecialObjectFlag {
   @scala.inline
-  def Conflict: `16` = this.cast(16)
+  def Conflict: `16` = 16.asInstanceOf[`16`]
   @scala.inline
-  def Deleted: `2` = this.cast(2)
+  def Deleted: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def HasSharedFiles: `8` = this.cast(8)
+  def HasSharedFiles: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def None: `0` = this.cast(0)
+  def None: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def Normal: `64` = this.cast(64)
+  def Normal: `64` = 64.asInstanceOf[`64`]
   @scala.inline
-  def RecentlyAccessedByValid: `4` = this.cast(4)
+  def RecentlyAccessedByValid: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def Shortcut: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Shortcut: `1` = 1.asInstanceOf[`1`]
 }
 

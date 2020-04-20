@@ -13,7 +13,6 @@ object Container {
   @scala.inline
   def apply(client: Client): Container = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Container]
   }
 }

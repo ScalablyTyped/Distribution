@@ -14,7 +14,6 @@ object AnonLoc {
   @scala.inline
   def apply(loc: SourceLocation | AnonColumn): AnonLoc = {
     val __obj = js.Dynamic.literal(loc = loc.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLoc]
   }
 }

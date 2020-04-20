@@ -26,7 +26,6 @@ object Linking {
     removeEventListener: (url, URLListener) => Unit
   ): Linking = {
     val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), canOpenURL = js.Any.fromFunction1(canOpenURL), getInitialURL = js.Any.fromFunction0(getInitialURL), openURL = js.Any.fromFunction1(openURL), removeEventListener = js.Any.fromFunction2(removeEventListener))
-  
     __obj.asInstanceOf[Linking]
   }
 }

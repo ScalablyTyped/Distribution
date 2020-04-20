@@ -22,7 +22,7 @@ trait rcPickerProps {
   def DecadeHeaderProps: typings.rcPicker.decadeHeaderMod.YearHeaderProps.type = typings.rcPicker.decadeHeaderMod.YearHeaderProps
   type DecadeHeaderProps[DateType] = typings.rcPicker.decadeHeaderMod.YearHeaderProps[DateType]
   @scala.inline
-  def GetRangesProps: RangesProps.type = typings.rcPicker.getRangesMod.RangesProps
+  def GetRangesProps: RangesProps.type = RangesProps
   type GetRangesProps = RangesProps
   @scala.inline
   def HeaderProps: typings.rcPicker.headerMod.HeaderProps.type = typings.rcPicker.headerMod.HeaderProps

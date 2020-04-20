@@ -26,7 +26,6 @@ object daterangepicker {
     startDate: Moment
   ): daterangepicker = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], endDate = endDate.asInstanceOf[js.Any], remove = js.Any.fromFunction0(remove), setEndDate = js.Any.fromFunction1(setEndDate), setStartDate = js.Any.fromFunction1(setStartDate), startDate = startDate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[daterangepicker]
   }
 }

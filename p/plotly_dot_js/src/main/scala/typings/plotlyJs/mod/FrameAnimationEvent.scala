@@ -15,7 +15,6 @@ object FrameAnimationEvent {
   @scala.inline
   def apply(animation: AnonFrame, frame: Frame, name: String): FrameAnimationEvent = {
     val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FrameAnimationEvent]
   }
 }

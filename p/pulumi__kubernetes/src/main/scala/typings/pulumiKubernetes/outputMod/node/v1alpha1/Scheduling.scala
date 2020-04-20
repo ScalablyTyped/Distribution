@@ -29,7 +29,6 @@ object Scheduling {
   @scala.inline
   def apply(nodeSelector: StringDictionary[String], tolerations: js.Array[Toleration]): Scheduling = {
     val __obj = js.Dynamic.literal(nodeSelector = nodeSelector.asInstanceOf[js.Any], tolerations = tolerations.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Scheduling]
   }
 }

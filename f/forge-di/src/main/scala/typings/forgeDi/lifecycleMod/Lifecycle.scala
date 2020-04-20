@@ -14,7 +14,6 @@ object Lifecycle {
   @scala.inline
   def apply(resolve: (default, typings.forgeDi.contextMod.default, Arguments) => js.Any): Lifecycle = {
     val __obj = js.Dynamic.literal(resolve = js.Any.fromFunction3(resolve))
-  
     __obj.asInstanceOf[Lifecycle]
   }
 }

@@ -15,7 +15,6 @@ object Request {
   @scala.inline
   def apply(data: js.Any, options: js.Object, template: PartialTemplate): Request = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Request]
   }
 }

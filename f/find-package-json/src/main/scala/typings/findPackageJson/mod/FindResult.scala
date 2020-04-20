@@ -16,7 +16,6 @@ object FindResult {
   @scala.inline
   def FoundPackage(done: `false`, filename: String, value: Package): FindResult = {
     val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FindResult]
   }
   @scala.inline

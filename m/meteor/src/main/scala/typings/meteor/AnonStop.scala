@@ -12,7 +12,6 @@ object AnonStop {
   @scala.inline
   def apply(stop: () => Unit): AnonStop = {
     val __obj = js.Dynamic.literal(stop = js.Any.fromFunction0(stop))
-  
     __obj.asInstanceOf[AnonStop]
   }
 }

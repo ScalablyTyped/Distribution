@@ -13,12 +13,10 @@ trait ICSSRule extends js.Object
 
 object ICSSRule {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def inherit: typings.uifabricMergeStyles.uifabricMergeStylesStrings.inherit = "inherit".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.inherit]
   @scala.inline
-  def inherit: typings.uifabricMergeStyles.uifabricMergeStylesStrings.inherit = this.cast("inherit")
+  def initial: typings.uifabricMergeStyles.uifabricMergeStylesStrings.initial = "initial".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.initial]
   @scala.inline
-  def initial: typings.uifabricMergeStyles.uifabricMergeStylesStrings.initial = this.cast("initial")
-  @scala.inline
-  def unset: typings.uifabricMergeStyles.uifabricMergeStylesStrings.unset = this.cast("unset")
+  def unset: typings.uifabricMergeStyles.uifabricMergeStylesStrings.unset = "unset".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.unset]
 }
 

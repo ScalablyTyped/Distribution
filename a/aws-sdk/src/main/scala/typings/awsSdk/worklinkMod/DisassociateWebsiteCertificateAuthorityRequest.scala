@@ -20,7 +20,6 @@ object DisassociateWebsiteCertificateAuthorityRequest {
   @scala.inline
   def apply(FleetArn: FleetArn, WebsiteCaId: Id): DisassociateWebsiteCertificateAuthorityRequest = {
     val __obj = js.Dynamic.literal(FleetArn = FleetArn.asInstanceOf[js.Any], WebsiteCaId = WebsiteCaId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DisassociateWebsiteCertificateAuthorityRequest]
   }
 }

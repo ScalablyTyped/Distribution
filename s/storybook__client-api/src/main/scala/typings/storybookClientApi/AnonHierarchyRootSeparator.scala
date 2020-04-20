@@ -14,7 +14,6 @@ object AnonHierarchyRootSeparator {
   @scala.inline
   def apply(hierarchyRootSeparator: String, hierarchySeparator: RegExp): AnonHierarchyRootSeparator = {
     val __obj = js.Dynamic.literal(hierarchyRootSeparator = hierarchyRootSeparator.asInstanceOf[js.Any], hierarchySeparator = hierarchySeparator.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHierarchyRootSeparator]
   }
 }

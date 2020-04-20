@@ -56,10 +56,10 @@ trait reactColorProps {
   def HuePickerProps: typings.reactColor.hueHueMod.HuePickerProps.type = typings.reactColor.hueHueMod.HuePickerProps
   type HuePickerProps = typings.reactColor.hueHueMod.HuePickerProps
   @scala.inline
-  def MaterialProps: ColorPickerProps.type = typings.reactColor.mod.ColorPickerProps
+  def MaterialProps: ColorPickerProps.type = ColorPickerProps
   type MaterialProps = typings.reactColor.materialMod.MaterialPickerProps
   @scala.inline
-  def MaterialPickerProps: ColorPickerProps.type = typings.reactColor.mod.ColorPickerProps
+  def MaterialPickerProps: ColorPickerProps.type = ColorPickerProps
   type MaterialPickerProps = typings.reactColor.materialMod.MaterialPickerProps
   @scala.inline
   def PhotoshopProps: typings.reactColor.photoshopMod.PhotoshopPickerProps.type = typings.reactColor.photoshopMod.PhotoshopPickerProps
@@ -68,7 +68,7 @@ trait reactColorProps {
   def PhotoshopPickerProps: typings.reactColor.photoshopMod.PhotoshopPickerProps.type = typings.reactColor.photoshopMod.PhotoshopPickerProps
   type PhotoshopPickerProps = typings.reactColor.photoshopMod.PhotoshopPickerProps
   @scala.inline
-  def SaturationProps: CustomPickerProps.type = typings.reactColor.mod.CustomPickerProps
+  def SaturationProps: CustomPickerProps.type = CustomPickerProps
   type SaturationProps = typings.reactColor.saturationMod.SaturationProps
   @scala.inline
   def SketchProps: typings.reactColor.sketchMod.SketchPickerProps.type = typings.reactColor.sketchMod.SketchPickerProps
@@ -77,10 +77,10 @@ trait reactColorProps {
   def SketchPickerProps: typings.reactColor.sketchMod.SketchPickerProps.type = typings.reactColor.sketchMod.SketchPickerProps
   type SketchPickerProps = typings.reactColor.sketchMod.SketchPickerProps
   @scala.inline
-  def SliderProps: ColorPickerProps.type = typings.reactColor.mod.ColorPickerProps
+  def SliderProps: ColorPickerProps.type = ColorPickerProps
   type SliderProps = typings.reactColor.sliderMod.SliderPickerProps
   @scala.inline
-  def SliderPickerProps: ColorPickerProps.type = typings.reactColor.mod.ColorPickerProps
+  def SliderPickerProps: ColorPickerProps.type = ColorPickerProps
   type SliderPickerProps = typings.reactColor.sliderMod.SliderPickerProps
   @scala.inline
   def SwatchesProps: typings.reactColor.swatchesMod.SwatchesPickerProps.type = typings.reactColor.swatchesMod.SwatchesPickerProps

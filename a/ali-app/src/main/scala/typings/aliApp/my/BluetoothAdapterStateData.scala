@@ -20,7 +20,6 @@ object BluetoothAdapterStateData {
   @scala.inline
   def apply(available: Boolean, discovering: Boolean, errMsg: ok | String): BluetoothAdapterStateData = {
     val __obj = js.Dynamic.literal(available = available.asInstanceOf[js.Any], discovering = discovering.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BluetoothAdapterStateData]
   }
 }

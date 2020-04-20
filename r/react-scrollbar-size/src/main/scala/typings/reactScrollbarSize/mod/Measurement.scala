@@ -13,7 +13,6 @@ object Measurement {
   @scala.inline
   def apply(scrollbarHeight: Double, scrollbarWidth: Double): Measurement = {
     val __obj = js.Dynamic.literal(scrollbarHeight = scrollbarHeight.asInstanceOf[js.Any], scrollbarWidth = scrollbarWidth.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Measurement]
   }
 }

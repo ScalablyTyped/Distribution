@@ -19,6 +19,10 @@ trait CreateJobTemplateRequest extends js.Object {
     */
   var Description: js.UndefOr[string] = js.native
   /**
+    * Optional. Use queue hopping to avoid overly long waits in the backlog of the queue that you submit your job to. Specify an alternate queue and the maximum time that your job will wait in the initial queue before hopping. For more information about this feature, see the AWS Elemental MediaConvert User Guide.
+    */
+  var HopDestinations: js.UndefOr[listOfHopDestination] = js.native
+  /**
     * The name of the job template you are creating.
     */
   var Name: string = js.native
@@ -52,6 +56,7 @@ object CreateJobTemplateRequest {
     AccelerationSettings: AccelerationSettings = null,
     Category: string = null,
     Description: string = null,
+    HopDestinations: listOfHopDestination = null,
     Priority: Int | Double = null,
     Queue: string = null,
     StatusUpdateInterval: StatusUpdateInterval = null,
@@ -61,6 +66,7 @@ object CreateJobTemplateRequest {
     if (AccelerationSettings != null) __obj.updateDynamic("AccelerationSettings")(AccelerationSettings.asInstanceOf[js.Any])
     if (Category != null) __obj.updateDynamic("Category")(Category.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (HopDestinations != null) __obj.updateDynamic("HopDestinations")(HopDestinations.asInstanceOf[js.Any])
     if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
     if (Queue != null) __obj.updateDynamic("Queue")(Queue.asInstanceOf[js.Any])
     if (StatusUpdateInterval != null) __obj.updateDynamic("StatusUpdateInterval")(StatusUpdateInterval.asInstanceOf[js.Any])

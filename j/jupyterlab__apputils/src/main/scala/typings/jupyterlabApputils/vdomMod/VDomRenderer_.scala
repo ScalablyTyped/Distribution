@@ -18,7 +18,7 @@ abstract class VDomRenderer_[T /* <: IModel | Null */] protected () extends Reac
   /**
     * Get the current model.
     */
-  def model(): T = js.native
+  def model: T = js.native
   /**
     * Set the model and fire changed signals.
     */
@@ -26,6 +26,6 @@ abstract class VDomRenderer_[T /* <: IModel | Null */] protected () extends Reac
   /**
     * A signal emitted when the model changes.
     */
-  def modelChanged(): ISignal[this.type, Unit] = js.native
+  def modelChanged: ISignal[this.type, Unit] = js.native
 }
 

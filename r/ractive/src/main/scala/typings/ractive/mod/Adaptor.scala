@@ -29,7 +29,6 @@ object Adaptor {
     wrap: (Ractive[Ractive[_]], js.Any, String, AdaptorPrefixer) => AdaptorHandle
   ): Adaptor = {
     val __obj = js.Dynamic.literal(filter = js.Any.fromFunction3(filter), wrap = js.Any.fromFunction4(wrap))
-  
     __obj.asInstanceOf[Adaptor]
   }
 }

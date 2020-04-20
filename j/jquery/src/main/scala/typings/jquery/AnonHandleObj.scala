@@ -13,7 +13,6 @@ object AnonHandleObj {
   @scala.inline
   def apply[TTarget, TData](handleObj: HandleObject[TTarget, TData]): AnonHandleObj[TTarget, TData] = {
     val __obj = js.Dynamic.literal(handleObj = handleObj.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHandleObj[TTarget, TData]]
   }
 }

@@ -102,7 +102,7 @@ class MainAreaWidget_[T /* <: Widget */] protected ()
   /**
     * The content hosted by the widget.
     */
-  def content(): T = js.native
+  def content: T = js.native
   /**
     * Dispose of the resources held by the object.
     *
@@ -147,7 +147,7 @@ class MainAreaWidget_[T /* <: Widget */] protected ()
   /**
     * Whether the content widget or an error is revealed.
     */
-  def isRevealed(): Boolean = js.native
+  def isRevealed: Boolean = js.native
   /**
     * Invoke the message processing routine of the widget's layout.
     *
@@ -303,7 +303,7 @@ class MainAreaWidget_[T /* <: Widget */] protected ()
   /**
     * A promise that resolves when the widget is revealed.
     */
-  def revealed(): js.Promise[Unit] = js.native
+  def revealed: js.Promise[Unit] = js.native
   /**
     * Set the given widget flag.
     *
@@ -361,7 +361,7 @@ class MainAreaWidget_[T /* <: Widget */] protected ()
   /**
     * The toolbar hosted by the widget.
     */
-  def toolbar(): Toolbar[Widget] = js.native
+  def toolbar: Toolbar[Widget] = js.native
   /**
     * Post an `'update-request'` message to the widget.
     *

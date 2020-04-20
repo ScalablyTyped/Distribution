@@ -14,7 +14,6 @@ object UpdateScalingParametersRequest {
   @scala.inline
   def apply(DomainName: DomainName, ScalingParameters: ScalingParameters): UpdateScalingParametersRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any], ScalingParameters = ScalingParameters.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateScalingParametersRequest]
   }
 }

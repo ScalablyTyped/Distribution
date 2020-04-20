@@ -13,7 +13,6 @@ object SetListItems {
   @scala.inline
   def apply[T /* <: TemplateBuilder[T] */](setListItems: js.Array[ListItem] => T): SetListItems[T] = {
     val __obj = js.Dynamic.literal(setListItems = js.Any.fromFunction1(setListItems))
-  
     __obj.asInstanceOf[SetListItems[T]]
   }
 }

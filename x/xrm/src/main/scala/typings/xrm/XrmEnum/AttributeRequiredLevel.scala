@@ -21,14 +21,12 @@ trait AttributeRequiredLevel extends js.Object
 
 object AttributeRequiredLevel {
   @scala.inline
-  def ApplicationRequired: `2` = this.cast(2)
+  def ApplicationRequired: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def None: `0` = this.cast(0)
+  def None: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def Recommended: `3` = this.cast(3)
+  def Recommended: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def SystemRequired: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SystemRequired: `1` = 1.asInstanceOf[`1`]
 }
 

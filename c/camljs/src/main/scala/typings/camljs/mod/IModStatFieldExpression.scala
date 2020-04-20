@@ -27,7 +27,6 @@ object IModStatFieldExpression {
     ValueAsText: () => ITextFieldExpression
   ): IModStatFieldExpression = {
     val __obj = js.Dynamic.literal(IsApproved = js.Any.fromFunction0(IsApproved), IsPending = js.Any.fromFunction0(IsPending), IsRejected = js.Any.fromFunction0(IsRejected), ModStatId = js.Any.fromFunction0(ModStatId), ValueAsText = js.Any.fromFunction0(ValueAsText))
-  
     __obj.asInstanceOf[IModStatFieldExpression]
   }
 }

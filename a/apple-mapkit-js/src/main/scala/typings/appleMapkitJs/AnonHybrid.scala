@@ -28,7 +28,6 @@ object AnonHybrid {
   @scala.inline
   def apply(Hybrid: String, MutedStandard: String, Satellite: String, Standard: String): AnonHybrid = {
     val __obj = js.Dynamic.literal(Hybrid = Hybrid.asInstanceOf[js.Any], MutedStandard = MutedStandard.asInstanceOf[js.Any], Satellite = Satellite.asInstanceOf[js.Any], Standard = Standard.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHybrid]
   }
 }

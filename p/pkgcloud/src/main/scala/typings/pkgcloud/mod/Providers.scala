@@ -24,34 +24,32 @@ trait Providers extends js.Object
 
 object Providers {
   @scala.inline
-  def amazon: typings.pkgcloud.pkgcloudStrings.amazon = this.cast("amazon")
+  def amazon: typings.pkgcloud.pkgcloudStrings.amazon = "amazon".asInstanceOf[typings.pkgcloud.pkgcloudStrings.amazon]
   @scala.inline
-  def azure: typings.pkgcloud.pkgcloudStrings.azure = this.cast("azure")
+  def azure: typings.pkgcloud.pkgcloudStrings.azure = "azure".asInstanceOf[typings.pkgcloud.pkgcloudStrings.azure]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def digitalocean: typings.pkgcloud.pkgcloudStrings.digitalocean = "digitalocean".asInstanceOf[typings.pkgcloud.pkgcloudStrings.digitalocean]
   @scala.inline
-  def digitalocean: typings.pkgcloud.pkgcloudStrings.digitalocean = this.cast("digitalocean")
+  def google: typings.pkgcloud.pkgcloudStrings.google = "google".asInstanceOf[typings.pkgcloud.pkgcloudStrings.google]
   @scala.inline
-  def google: typings.pkgcloud.pkgcloudStrings.google = this.cast("google")
+  def hp: typings.pkgcloud.pkgcloudStrings.hp = "hp".asInstanceOf[typings.pkgcloud.pkgcloudStrings.hp]
   @scala.inline
-  def hp: typings.pkgcloud.pkgcloudStrings.hp = this.cast("hp")
+  def iriscouch: typings.pkgcloud.pkgcloudStrings.iriscouch = "iriscouch".asInstanceOf[typings.pkgcloud.pkgcloudStrings.iriscouch]
   @scala.inline
-  def iriscouch: typings.pkgcloud.pkgcloudStrings.iriscouch = this.cast("iriscouch")
+  def joyent: typings.pkgcloud.pkgcloudStrings.joyent = "joyent".asInstanceOf[typings.pkgcloud.pkgcloudStrings.joyent]
   @scala.inline
-  def joyent: typings.pkgcloud.pkgcloudStrings.joyent = this.cast("joyent")
+  def mongohq: typings.pkgcloud.pkgcloudStrings.mongohq = "mongohq".asInstanceOf[typings.pkgcloud.pkgcloudStrings.mongohq]
   @scala.inline
-  def mongohq: typings.pkgcloud.pkgcloudStrings.mongohq = this.cast("mongohq")
+  def mongolab: typings.pkgcloud.pkgcloudStrings.mongolab = "mongolab".asInstanceOf[typings.pkgcloud.pkgcloudStrings.mongolab]
   @scala.inline
-  def mongolab: typings.pkgcloud.pkgcloudStrings.mongolab = this.cast("mongolab")
+  def oneandone: typings.pkgcloud.pkgcloudStrings.oneandone = "oneandone".asInstanceOf[typings.pkgcloud.pkgcloudStrings.oneandone]
   @scala.inline
-  def oneandone: typings.pkgcloud.pkgcloudStrings.oneandone = this.cast("oneandone")
+  def openstack: typings.pkgcloud.pkgcloudStrings.openstack = "openstack".asInstanceOf[typings.pkgcloud.pkgcloudStrings.openstack]
   @scala.inline
-  def openstack: typings.pkgcloud.pkgcloudStrings.openstack = this.cast("openstack")
+  def rackspace: typings.pkgcloud.pkgcloudStrings.rackspace = "rackspace".asInstanceOf[typings.pkgcloud.pkgcloudStrings.rackspace]
   @scala.inline
-  def rackspace: typings.pkgcloud.pkgcloudStrings.rackspace = this.cast("rackspace")
+  def redistogo: typings.pkgcloud.pkgcloudStrings.redistogo = "redistogo".asInstanceOf[typings.pkgcloud.pkgcloudStrings.redistogo]
   @scala.inline
-  def redistogo: typings.pkgcloud.pkgcloudStrings.redistogo = this.cast("redistogo")
-  @scala.inline
-  def telefonic: typings.pkgcloud.pkgcloudStrings.telefonic = this.cast("telefonic")
+  def telefonic: typings.pkgcloud.pkgcloudStrings.telefonic = "telefonic".asInstanceOf[typings.pkgcloud.pkgcloudStrings.telefonic]
 }
 

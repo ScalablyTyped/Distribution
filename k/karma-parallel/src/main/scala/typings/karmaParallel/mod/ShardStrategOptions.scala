@@ -23,7 +23,6 @@ object ShardStrategOptions {
   @scala.inline
   def apply(description: String, executors: Double, shardIndex: Double): ShardStrategOptions = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], executors = executors.asInstanceOf[js.Any], shardIndex = shardIndex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ShardStrategOptions]
   }
 }

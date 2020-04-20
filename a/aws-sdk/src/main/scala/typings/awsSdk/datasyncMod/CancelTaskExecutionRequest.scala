@@ -16,7 +16,6 @@ object CancelTaskExecutionRequest {
   @scala.inline
   def apply(TaskExecutionArn: TaskExecutionArn): CancelTaskExecutionRequest = {
     val __obj = js.Dynamic.literal(TaskExecutionArn = TaskExecutionArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CancelTaskExecutionRequest]
   }
 }

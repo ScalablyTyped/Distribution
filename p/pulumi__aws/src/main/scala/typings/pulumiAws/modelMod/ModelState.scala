@@ -1,6 +1,5 @@
 package typings.pulumiAws.modelMod
 
-import typings.pulumiAws.restApiMod.RestApi
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,23 +8,23 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ModelState extends js.Object {
   /**
-    * The content type of the model
+    * The API identifier.
+    */
+  val apiId: js.UndefOr[Input[String]] = js.native
+  /**
+    * The content-type for the model, for example, `application/json`.
     */
   val contentType: js.UndefOr[Input[String]] = js.native
   /**
-    * The description of the model
+    * The description of the model.
     */
   val description: js.UndefOr[Input[String]] = js.native
   /**
-    * The name of the model
+    * The name of the model. Must be alphanumeric.
     */
   val name: js.UndefOr[Input[String]] = js.native
   /**
-    * The ID of the associated REST API
-    */
-  val restApi: js.UndefOr[Input[String | RestApi]] = js.native
-  /**
-    * The schema of the model in a JSON form
+    * The schema for the model. This should be a [JSON schema draft 4](https://tools.ietf.org/html/draft-zyp-json-schema-04) model.
     */
   val schema: js.UndefOr[Input[String]] = js.native
 }
@@ -33,17 +32,17 @@ trait ModelState extends js.Object {
 object ModelState {
   @scala.inline
   def apply(
+    apiId: Input[String] = null,
     contentType: Input[String] = null,
     description: Input[String] = null,
     name: Input[String] = null,
-    restApi: Input[String | RestApi] = null,
     schema: Input[String] = null
   ): ModelState = {
     val __obj = js.Dynamic.literal()
+    if (apiId != null) __obj.updateDynamic("apiId")(apiId.asInstanceOf[js.Any])
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (restApi != null) __obj.updateDynamic("restApi")(restApi.asInstanceOf[js.Any])
     if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelState]
   }

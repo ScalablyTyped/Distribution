@@ -16,7 +16,6 @@ object DeleteSchemaRequest {
   @scala.inline
   def apply(schemaArn: Arn): DeleteSchemaRequest = {
     val __obj = js.Dynamic.literal(schemaArn = schemaArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteSchemaRequest]
   }
 }

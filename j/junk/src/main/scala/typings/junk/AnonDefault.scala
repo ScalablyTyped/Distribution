@@ -38,7 +38,6 @@ object AnonDefault {
   @scala.inline
   def apply(is: String => Boolean, not: String => Boolean, regex: RegExp): AnonDefault = {
     val __obj = js.Dynamic.literal(is = js.Any.fromFunction1(is), not = js.Any.fromFunction1(not), regex = regex.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDefault]
   }
 }

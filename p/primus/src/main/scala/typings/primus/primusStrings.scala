@@ -110,11 +110,11 @@ object primusStrings {
   @scala.inline
   def reconnect: reconnect = "reconnect".asInstanceOf[reconnect]
   @scala.inline
-  def `reconnect failed`: `reconnect failed` = "reconnect failed".asInstanceOf[`reconnect failed`]
+  def `reconnect failed`: `reconnect failed` = ("reconnect failed").asInstanceOf[`reconnect failed`]
   @scala.inline
-  def `reconnect scheduled`: `reconnect scheduled` = "reconnect scheduled".asInstanceOf[`reconnect scheduled`]
+  def `reconnect scheduled`: `reconnect scheduled` = ("reconnect scheduled").asInstanceOf[`reconnect scheduled`]
   @scala.inline
-  def `reconnect timeout`: `reconnect timeout` = "reconnect timeout".asInstanceOf[`reconnect timeout`]
+  def `reconnect timeout`: `reconnect timeout` = ("reconnect timeout").asInstanceOf[`reconnect timeout`]
   @scala.inline
   def reconnected: reconnected = "reconnected".asInstanceOf[reconnected]
   @scala.inline

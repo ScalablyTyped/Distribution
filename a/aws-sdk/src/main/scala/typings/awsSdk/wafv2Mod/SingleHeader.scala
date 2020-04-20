@@ -16,7 +16,6 @@ object SingleHeader {
   @scala.inline
   def apply(Name: FieldToMatchData): SingleHeader = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SingleHeader]
   }
 }

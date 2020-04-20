@@ -16,7 +16,6 @@ object DescribeLocationNfsRequest {
   @scala.inline
   def apply(LocationArn: LocationArn): DescribeLocationNfsRequest = {
     val __obj = js.Dynamic.literal(LocationArn = LocationArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeLocationNfsRequest]
   }
 }

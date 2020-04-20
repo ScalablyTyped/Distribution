@@ -32,28 +32,26 @@ trait XlDataLabelPosition extends js.Object
 
 object XlDataLabelPosition {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlLabelPositionAbove: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def xlLabelPositionAbove: `0` = this.cast(0)
+  def xlLabelPositionBelow: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlLabelPositionBelow: `1` = this.cast(1)
+  def xlLabelPositionBestFit: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xlLabelPositionBestFit: `5` = this.cast(5)
+  def xlLabelPositionCenter: `-4108` = -4108.asInstanceOf[`-4108`]
   @scala.inline
-  def xlLabelPositionCenter: `-4108` = this.cast(-4108)
+  def xlLabelPositionCustom: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def xlLabelPositionCustom: `7` = this.cast(7)
+  def xlLabelPositionInsideBase: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlLabelPositionInsideBase: `4` = this.cast(4)
+  def xlLabelPositionInsideEnd: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlLabelPositionInsideEnd: `3` = this.cast(3)
+  def xlLabelPositionLeft: `-4131` = -4131.asInstanceOf[`-4131`]
   @scala.inline
-  def xlLabelPositionLeft: `-4131` = this.cast(-4131)
+  def xlLabelPositionMixed: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def xlLabelPositionMixed: `6` = this.cast(6)
+  def xlLabelPositionOutsideEnd: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlLabelPositionOutsideEnd: `2` = this.cast(2)
-  @scala.inline
-  def xlLabelPositionRight: `-4152` = this.cast(-4152)
+  def xlLabelPositionRight: `-4152` = -4152.asInstanceOf[`-4152`]
 }
 

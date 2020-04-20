@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactRecaptchaProps {
   @scala.inline
-  def ReactRecaptchaProps: RecaptchaProps.type = typings.reactRecaptcha.mod.RecaptchaProps
+  def ReactRecaptchaProps: RecaptchaProps.type = RecaptchaProps
   type ReactRecaptchaProps = RecaptchaProps
 }
 

@@ -13,7 +13,6 @@ object AnonFunctionName {
   @scala.inline
   def apply(FunctionName: String, UserParameters: String): AnonFunctionName = {
     val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any], UserParameters = UserParameters.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonFunctionName]
   }
 }

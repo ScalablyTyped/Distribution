@@ -13,7 +13,6 @@ object AnonCtrl {
   @scala.inline
   def apply(Ctrl: CommandBarComboBox): AnonCtrl = {
     val __obj = js.Dynamic.literal(Ctrl = Ctrl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCtrl]
   }
 }

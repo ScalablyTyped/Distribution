@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation._
 
 /**
 			 * Use with <Attribute.type> to skew the text.
+			 * @deprecated Use the [Titanium.UI.ATTRIBUTE_OBLIQUENESS](Titanium.UI.ATTRIBUTE_OBLIQUENESS) constant instead (without the iOS namespace).
 			 */
 @JSGlobal("Titanium.UI.iOS.ATTRIBUTE_OBLIQUENESS")
 @js.native
-object ATTRIBUTE_OBLIQUENESS extends TopLevel[Double]
+object ATTRIBUTE_OBLIQUENESS
+  extends TopLevel[scala.Nothing]
 

@@ -25,7 +25,6 @@ object ProductstatusesResource {
     list: AnonPageToken => Request_[ProductstatusesListResponse]
   ): ProductstatusesResource = {
     val __obj = js.Dynamic.literal(custombatch = js.Any.fromFunction1(custombatch), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[ProductstatusesResource]
   }
 }

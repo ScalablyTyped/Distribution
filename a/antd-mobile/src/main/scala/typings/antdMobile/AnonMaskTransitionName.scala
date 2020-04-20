@@ -14,7 +14,6 @@ object AnonMaskTransitionName {
   @scala.inline
   def apply(WrapComponent: String, maskTransitionName: String, transitionName: String): AnonMaskTransitionName = {
     val __obj = js.Dynamic.literal(WrapComponent = WrapComponent.asInstanceOf[js.Any], maskTransitionName = maskTransitionName.asInstanceOf[js.Any], transitionName = transitionName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonMaskTransitionName]
   }
 }

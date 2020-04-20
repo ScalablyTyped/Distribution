@@ -36,7 +36,6 @@ object Typeofsiputils {
     uri_param_value: (String, String) => Double
   ): Typeofsiputils = {
     val __obj = js.Dynamic.literal(has_totag = js.Any.fromFunction0(has_totag), is_alphanum = js.Any.fromFunction1(is_alphanum), is_alphanumex = js.Any.fromFunction2(is_alphanumex), is_first_hop = js.Any.fromFunction0(is_first_hop), is_numeric = js.Any.fromFunction1(is_numeric), is_reply = js.Any.fromFunction0(is_reply), is_request = js.Any.fromFunction0(is_request), is_tel_number = js.Any.fromFunction1(is_tel_number), is_uri = js.Any.fromFunction1(is_uri), is_user = js.Any.fromFunction1(is_user), uri_param = js.Any.fromFunction1(uri_param), uri_param_value = js.Any.fromFunction2(uri_param_value))
-  
     __obj.asInstanceOf[Typeofsiputils]
   }
 }

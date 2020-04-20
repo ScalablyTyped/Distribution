@@ -21,7 +21,6 @@ object IGridMoveColumnsApi {
   @scala.inline
   def apply(moveColumn: (Double, Double) => Unit, on: AnonColumnPositionChanged): IGridMoveColumnsApi = {
     val __obj = js.Dynamic.literal(moveColumn = js.Any.fromFunction2(moveColumn), on = on.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IGridMoveColumnsApi]
   }
 }

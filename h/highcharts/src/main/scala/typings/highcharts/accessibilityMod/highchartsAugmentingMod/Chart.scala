@@ -28,7 +28,6 @@ object Chart {
   @scala.inline
   def apply(dismissPopupContent: () => Unit, langFormat: (String, Dictionary[_]) => String): Chart = {
     val __obj = js.Dynamic.literal(dismissPopupContent = js.Any.fromFunction0(dismissPopupContent), langFormat = js.Any.fromFunction2(langFormat))
-  
     __obj.asInstanceOf[Chart]
   }
 }

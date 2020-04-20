@@ -16,24 +16,26 @@ import scala.scalajs.js.annotation._
 trait blueprintjsDatetimeProps {
   type DateInputProps = IDateInputProps
   @scala.inline
-  def DatePickerProps: IDatePickerProps.type = typings.blueprintjsDatetime.datePickerMod.IDatePickerProps
+  def DatePickerProps: IDatePickerProps.type = IDatePickerProps
   type DatePickerProps = IDatePickerProps
   @scala.inline
-  def DatePickerCaptionProps: IDatePickerCaptionProps.type = typings.blueprintjsDatetime.datePickerCaptionMod.IDatePickerCaptionProps
+  def DatePickerCaptionProps: IDatePickerCaptionProps.type = IDatePickerCaptionProps
   type DatePickerCaptionProps = IDatePickerCaptionProps
+  @scala.inline
+  def DatePickerNavbarProps: IDatePickerNavbarProps.type = IDatePickerNavbarProps
   type DatePickerNavbarProps = IDatePickerNavbarProps
   type DateRangeInputProps = IDateRangeInputProps
   @scala.inline
-  def DateRangePickerProps: IDateRangePickerProps.type = typings.blueprintjsDatetime.dateRangePickerMod.IDateRangePickerProps
+  def DateRangePickerProps: IDateRangePickerProps.type = IDateRangePickerProps
   type DateRangePickerProps = IDateRangePickerProps
   @scala.inline
-  def DateTimePickerProps: IDateTimePickerProps.type = typings.blueprintjsDatetime.dateTimePickerMod.IDateTimePickerProps
+  def DateTimePickerProps: IDateTimePickerProps.type = IDateTimePickerProps
   type DateTimePickerProps = IDateTimePickerProps
   @scala.inline
-  def ShortcutsProps: IShortcutsProps.type = typings.blueprintjsDatetime.shortcutsMod.IShortcutsProps
+  def ShortcutsProps: IShortcutsProps.type = IShortcutsProps
   type ShortcutsProps = IShortcutsProps
   @scala.inline
-  def TimePickerProps: ITimePickerProps.type = typings.blueprintjsDatetime.timePickerMod.ITimePickerProps
+  def TimePickerProps: ITimePickerProps.type = ITimePickerProps
   type TimePickerProps = ITimePickerProps
 }
 

@@ -59,7 +59,6 @@ object dom {
     style_ : (js.Any, js.Any) => js.Any
   ): dom = {
     val __obj = js.Dynamic.literal(BufferNode = js.Any.fromFunction2(BufferNode), StyleNode = js.Any.fromFunction1(StyleNode), buffer = js.Any.fromFunction2(buffer), html = js.Any.fromFunction2(html), style_ = js.Any.fromFunction2(style_))
-  
     __obj.asInstanceOf[dom]
   }
 }

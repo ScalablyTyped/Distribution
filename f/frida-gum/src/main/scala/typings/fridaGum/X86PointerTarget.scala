@@ -13,12 +13,10 @@ trait X86PointerTarget extends js.Object
 
 object X86PointerTarget {
   @scala.inline
-  def byte: typings.fridaGum.fridaGumStrings.byte = this.cast("byte")
+  def byte: typings.fridaGum.fridaGumStrings.byte = "byte".asInstanceOf[typings.fridaGum.fridaGumStrings.byte]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dword: typings.fridaGum.fridaGumStrings.dword = "dword".asInstanceOf[typings.fridaGum.fridaGumStrings.dword]
   @scala.inline
-  def dword: typings.fridaGum.fridaGumStrings.dword = this.cast("dword")
-  @scala.inline
-  def qword: typings.fridaGum.fridaGumStrings.qword = this.cast("qword")
+  def qword: typings.fridaGum.fridaGumStrings.qword = "qword".asInstanceOf[typings.fridaGum.fridaGumStrings.qword]
 }
 

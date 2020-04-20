@@ -33,7 +33,6 @@ object GetAccessControlEffectRequest {
     UserId: WorkMailIdentifier
   ): GetAccessControlEffectRequest = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], IpAddress = IpAddress.asInstanceOf[js.Any], OrganizationId = OrganizationId.asInstanceOf[js.Any], UserId = UserId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetAccessControlEffectRequest]
   }
 }

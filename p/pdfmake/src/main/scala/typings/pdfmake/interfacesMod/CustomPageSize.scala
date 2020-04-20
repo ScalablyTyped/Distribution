@@ -14,7 +14,6 @@ object CustomPageSize {
   @scala.inline
   def apply(height: Double | auto, width: Double): CustomPageSize = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CustomPageSize]
   }
 }

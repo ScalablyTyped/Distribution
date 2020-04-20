@@ -16,7 +16,6 @@ object StopQueryRequest {
   @scala.inline
   def apply(queryId: QueryId): StopQueryRequest = {
     val __obj = js.Dynamic.literal(queryId = queryId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StopQueryRequest]
   }
 }

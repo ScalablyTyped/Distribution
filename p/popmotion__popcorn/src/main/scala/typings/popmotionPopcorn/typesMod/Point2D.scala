@@ -13,7 +13,6 @@ object Point2D {
   @scala.inline
   def apply(x: Double, y: Double): Point2D = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Point2D]
   }
 }

@@ -27,7 +27,6 @@ object CollapseCallbackArgs {
     isOpened: Boolean
   ): CollapseCallbackArgs = {
     val __obj = js.Dynamic.literal(containerHeight = containerHeight.asInstanceOf[js.Any], contentHeight = contentHeight.asInstanceOf[js.Any], isFullyClosed = isFullyClosed.asInstanceOf[js.Any], isFullyOpened = isFullyOpened.asInstanceOf[js.Any], isOpened = isOpened.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CollapseCallbackArgs]
   }
 }

@@ -18,7 +18,6 @@ object InProgressAuthToken {
   @scala.inline
   def apply(requestStatus: `1`, requestTime: Double): InProgressAuthToken = {
     val __obj = js.Dynamic.literal(requestStatus = requestStatus.asInstanceOf[js.Any], requestTime = requestTime.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InProgressAuthToken]
   }
 }

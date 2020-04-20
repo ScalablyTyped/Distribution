@@ -16,7 +16,6 @@ object DescribeApplicationRequest {
   @scala.inline
   def apply(ResourceGroupName: ResourceGroupName): DescribeApplicationRequest = {
     val __obj = js.Dynamic.literal(ResourceGroupName = ResourceGroupName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeApplicationRequest]
   }
 }

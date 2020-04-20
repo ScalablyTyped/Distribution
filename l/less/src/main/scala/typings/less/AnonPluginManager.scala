@@ -13,7 +13,6 @@ object AnonPluginManager {
   @scala.inline
   def apply(pluginManager: PluginManager): AnonPluginManager = {
     val __obj = js.Dynamic.literal(pluginManager = pluginManager.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPluginManager]
   }
 }

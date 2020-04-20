@@ -21,7 +21,6 @@ object DashboardArgs {
   @scala.inline
   def apply(dashboardBody: Input[String], dashboardName: Input[String]): DashboardArgs = {
     val __obj = js.Dynamic.literal(dashboardBody = dashboardBody.asInstanceOf[js.Any], dashboardName = dashboardName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DashboardArgs]
   }
 }

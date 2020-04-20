@@ -172,330 +172,328 @@ trait CurrencyISO extends js.Object
 
 object CurrencyISO {
   @scala.inline
-  def AED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.AED = this.cast("AED")
+  def AED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.AED = "AED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.AED]
   @scala.inline
-  def AFN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.AFN = this.cast("AFN")
+  def AFN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.AFN = "AFN".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.AFN]
   @scala.inline
-  def ALL: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ALL = this.cast("ALL")
+  def ALL: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ALL = "ALL".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ALL]
   @scala.inline
-  def AMD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.AMD = this.cast("AMD")
+  def AMD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.AMD = "AMD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.AMD]
   @scala.inline
-  def ANG: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ANG = this.cast("ANG")
+  def ANG: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ANG = "ANG".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ANG]
   @scala.inline
-  def AOA: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.AOA = this.cast("AOA")
+  def AOA: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.AOA = "AOA".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.AOA]
   @scala.inline
-  def ARS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ARS = this.cast("ARS")
+  def ARS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ARS = "ARS".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ARS]
   @scala.inline
-  def AUD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.AUD = this.cast("AUD")
+  def AUD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.AUD = "AUD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.AUD]
   @scala.inline
-  def AWG: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.AWG = this.cast("AWG")
+  def AWG: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.AWG = "AWG".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.AWG]
   @scala.inline
-  def AZN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.AZN = this.cast("AZN")
+  def AZN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.AZN = "AZN".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.AZN]
   @scala.inline
-  def BAM: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BAM = this.cast("BAM")
+  def BAM: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BAM = "BAM".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BAM]
   @scala.inline
-  def BBD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BBD = this.cast("BBD")
+  def BBD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BBD = "BBD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BBD]
   @scala.inline
-  def BDT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BDT = this.cast("BDT")
+  def BDT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BDT = "BDT".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BDT]
   @scala.inline
-  def BGN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BGN = this.cast("BGN")
+  def BGN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BGN = "BGN".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BGN]
   @scala.inline
-  def BHD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BHD = this.cast("BHD")
+  def BHD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BHD = "BHD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BHD]
   @scala.inline
-  def BIF: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BIF = this.cast("BIF")
+  def BIF: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BIF = "BIF".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BIF]
   @scala.inline
-  def BMD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BMD = this.cast("BMD")
+  def BMD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BMD = "BMD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BMD]
   @scala.inline
-  def BND: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BND = this.cast("BND")
+  def BND: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BND = "BND".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BND]
   @scala.inline
-  def BOB: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BOB = this.cast("BOB")
+  def BOB: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BOB = "BOB".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BOB]
   @scala.inline
-  def BRL: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BRL = this.cast("BRL")
+  def BRL: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BRL = "BRL".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BRL]
   @scala.inline
-  def BSD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BSD = this.cast("BSD")
+  def BSD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BSD = "BSD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BSD]
   @scala.inline
-  def BTN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BTN = this.cast("BTN")
+  def BTN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BTN = "BTN".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BTN]
   @scala.inline
-  def BWP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BWP = this.cast("BWP")
+  def BWP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BWP = "BWP".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BWP]
   @scala.inline
-  def BYN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BYN = this.cast("BYN")
+  def BYN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BYN = "BYN".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BYN]
   @scala.inline
-  def BZD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BZD = this.cast("BZD")
+  def BZD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BZD = "BZD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BZD]
   @scala.inline
-  def CAD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CAD = this.cast("CAD")
+  def CAD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CAD = "CAD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CAD]
   @scala.inline
-  def CDF: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CDF = this.cast("CDF")
+  def CDF: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CDF = "CDF".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CDF]
   @scala.inline
-  def CHF: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CHF = this.cast("CHF")
+  def CHF: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CHF = "CHF".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CHF]
   @scala.inline
-  def CLP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CLP = this.cast("CLP")
+  def CLP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CLP = "CLP".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CLP]
   @scala.inline
-  def CNY: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CNY = this.cast("CNY")
+  def CNY: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CNY = "CNY".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CNY]
   @scala.inline
-  def COP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.COP = this.cast("COP")
+  def COP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.COP = "COP".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.COP]
   @scala.inline
-  def CRC: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CRC = this.cast("CRC")
+  def CRC: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CRC = "CRC".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CRC]
   @scala.inline
-  def CUC: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CUC = this.cast("CUC")
+  def CUC: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CUC = "CUC".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CUC]
   @scala.inline
-  def CUP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CUP = this.cast("CUP")
+  def CUP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CUP = "CUP".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CUP]
   @scala.inline
-  def CVE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CVE = this.cast("CVE")
+  def CVE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CVE = "CVE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CVE]
   @scala.inline
-  def CZK: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CZK = this.cast("CZK")
+  def CZK: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CZK = "CZK".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CZK]
   @scala.inline
-  def DJF: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DJF = this.cast("DJF")
+  def DJF: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DJF = "DJF".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DJF]
   @scala.inline
-  def DKK: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DKK = this.cast("DKK")
+  def DKK: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DKK = "DKK".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DKK]
   @scala.inline
-  def DOP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DOP = this.cast("DOP")
+  def DOP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DOP = "DOP".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DOP]
   @scala.inline
-  def DZD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DZD = this.cast("DZD")
+  def DZD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DZD = "DZD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DZD]
   @scala.inline
-  def EGP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.EGP = this.cast("EGP")
+  def EGP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.EGP = "EGP".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.EGP]
   @scala.inline
-  def ERN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ERN = this.cast("ERN")
+  def ERN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ERN = "ERN".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ERN]
   @scala.inline
-  def ETB: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ETB = this.cast("ETB")
+  def ETB: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ETB = "ETB".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ETB]
   @scala.inline
-  def EUR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.EUR = this.cast("EUR")
+  def EUR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.EUR = "EUR".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.EUR]
   @scala.inline
-  def FJD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FJD = this.cast("FJD")
+  def FJD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FJD = "FJD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FJD]
   @scala.inline
-  def FKP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FKP = this.cast("FKP")
+  def FKP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FKP = "FKP".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FKP]
   @scala.inline
-  def GBP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.GBP = this.cast("GBP")
+  def GBP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.GBP = "GBP".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.GBP]
   @scala.inline
-  def GEL: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.GEL = this.cast("GEL")
+  def GEL: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.GEL = "GEL".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.GEL]
   @scala.inline
-  def GGP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.GGP = this.cast("GGP")
+  def GGP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.GGP = "GGP".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.GGP]
   @scala.inline
-  def GHS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.GHS = this.cast("GHS")
+  def GHS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.GHS = "GHS".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.GHS]
   @scala.inline
-  def GIP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.GIP = this.cast("GIP")
+  def GIP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.GIP = "GIP".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.GIP]
   @scala.inline
-  def GMD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.GMD = this.cast("GMD")
+  def GMD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.GMD = "GMD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.GMD]
   @scala.inline
-  def GNF: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.GNF = this.cast("GNF")
+  def GNF: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.GNF = "GNF".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.GNF]
   @scala.inline
-  def GTQ: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.GTQ = this.cast("GTQ")
+  def GTQ: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.GTQ = "GTQ".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.GTQ]
   @scala.inline
-  def GYD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.GYD = this.cast("GYD")
+  def GYD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.GYD = "GYD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.GYD]
   @scala.inline
-  def HKD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.HKD = this.cast("HKD")
+  def HKD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.HKD = "HKD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.HKD]
   @scala.inline
-  def HNL: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.HNL = this.cast("HNL")
+  def HNL: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.HNL = "HNL".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.HNL]
   @scala.inline
-  def HRK: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.HRK = this.cast("HRK")
+  def HRK: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.HRK = "HRK".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.HRK]
   @scala.inline
-  def HTG: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.HTG = this.cast("HTG")
+  def HTG: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.HTG = "HTG".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.HTG]
   @scala.inline
-  def HUF: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.HUF = this.cast("HUF")
+  def HUF: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.HUF = "HUF".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.HUF]
   @scala.inline
-  def IDR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.IDR = this.cast("IDR")
+  def IDR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.IDR = "IDR".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.IDR]
   @scala.inline
-  def ILS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ILS = this.cast("ILS")
+  def ILS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ILS = "ILS".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ILS]
   @scala.inline
-  def IMP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.IMP = this.cast("IMP")
+  def IMP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.IMP = "IMP".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.IMP]
   @scala.inline
-  def INR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.INR = this.cast("INR")
+  def INR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.INR = "INR".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.INR]
   @scala.inline
-  def IQD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.IQD = this.cast("IQD")
+  def IQD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.IQD = "IQD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.IQD]
   @scala.inline
-  def IRR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.IRR = this.cast("IRR")
+  def IRR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.IRR = "IRR".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.IRR]
   @scala.inline
-  def ISK: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ISK = this.cast("ISK")
+  def ISK: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ISK = "ISK".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ISK]
   @scala.inline
-  def JEP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.JEP = this.cast("JEP")
+  def JEP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.JEP = "JEP".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.JEP]
   @scala.inline
-  def JMD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.JMD = this.cast("JMD")
+  def JMD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.JMD = "JMD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.JMD]
   @scala.inline
-  def JOD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.JOD = this.cast("JOD")
+  def JOD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.JOD = "JOD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.JOD]
   @scala.inline
-  def JPY: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.JPY = this.cast("JPY")
+  def JPY: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.JPY = "JPY".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.JPY]
   @scala.inline
-  def KES: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.KES = this.cast("KES")
+  def KES: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.KES = "KES".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.KES]
   @scala.inline
-  def KGS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.KGS = this.cast("KGS")
+  def KGS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.KGS = "KGS".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.KGS]
   @scala.inline
-  def KHR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.KHR = this.cast("KHR")
+  def KHR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.KHR = "KHR".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.KHR]
   @scala.inline
-  def KMF: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.KMF = this.cast("KMF")
+  def KMF: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.KMF = "KMF".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.KMF]
   @scala.inline
-  def KPW: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.KPW = this.cast("KPW")
+  def KPW: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.KPW = "KPW".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.KPW]
   @scala.inline
-  def KRW: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.KRW = this.cast("KRW")
+  def KRW: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.KRW = "KRW".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.KRW]
   @scala.inline
-  def KWD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.KWD = this.cast("KWD")
+  def KWD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.KWD = "KWD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.KWD]
   @scala.inline
-  def KYD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.KYD = this.cast("KYD")
+  def KYD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.KYD = "KYD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.KYD]
   @scala.inline
-  def KZT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.KZT = this.cast("KZT")
+  def KZT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.KZT = "KZT".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.KZT]
   @scala.inline
-  def LAK: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LAK = this.cast("LAK")
+  def LAK: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LAK = "LAK".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LAK]
   @scala.inline
-  def LBP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LBP = this.cast("LBP")
+  def LBP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LBP = "LBP".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LBP]
   @scala.inline
-  def LKR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LKR = this.cast("LKR")
+  def LKR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LKR = "LKR".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LKR]
   @scala.inline
-  def LRD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LRD = this.cast("LRD")
+  def LRD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LRD = "LRD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LRD]
   @scala.inline
-  def LSL: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LSL = this.cast("LSL")
+  def LSL: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LSL = "LSL".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LSL]
   @scala.inline
-  def LYD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LYD = this.cast("LYD")
+  def LYD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LYD = "LYD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LYD]
   @scala.inline
-  def MAD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MAD = this.cast("MAD")
+  def MAD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MAD = "MAD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MAD]
   @scala.inline
-  def MDL: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MDL = this.cast("MDL")
+  def MDL: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MDL = "MDL".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MDL]
   @scala.inline
-  def MGA: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MGA = this.cast("MGA")
+  def MGA: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MGA = "MGA".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MGA]
   @scala.inline
-  def MKD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MKD = this.cast("MKD")
+  def MKD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MKD = "MKD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MKD]
   @scala.inline
-  def MMK: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MMK = this.cast("MMK")
+  def MMK: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MMK = "MMK".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MMK]
   @scala.inline
-  def MNT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MNT = this.cast("MNT")
+  def MNT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MNT = "MNT".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MNT]
   @scala.inline
-  def MOP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MOP = this.cast("MOP")
+  def MOP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MOP = "MOP".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MOP]
   @scala.inline
-  def MRU: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MRU = this.cast("MRU")
+  def MRU: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MRU = "MRU".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MRU]
   @scala.inline
-  def MUR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MUR = this.cast("MUR")
+  def MUR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MUR = "MUR".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MUR]
   @scala.inline
-  def MVR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MVR = this.cast("MVR")
+  def MVR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MVR = "MVR".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MVR]
   @scala.inline
-  def MWK: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MWK = this.cast("MWK")
+  def MWK: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MWK = "MWK".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MWK]
   @scala.inline
-  def MXN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MXN = this.cast("MXN")
+  def MXN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MXN = "MXN".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MXN]
   @scala.inline
-  def MYR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MYR = this.cast("MYR")
+  def MYR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MYR = "MYR".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MYR]
   @scala.inline
-  def MZN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MZN = this.cast("MZN")
+  def MZN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MZN = "MZN".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MZN]
   @scala.inline
-  def NAD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NAD = this.cast("NAD")
+  def NAD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NAD = "NAD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NAD]
   @scala.inline
-  def NGN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NGN = this.cast("NGN")
+  def NGN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NGN = "NGN".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NGN]
   @scala.inline
-  def NIO: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NIO = this.cast("NIO")
+  def NIO: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NIO = "NIO".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NIO]
   @scala.inline
-  def NOK: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NOK = this.cast("NOK")
+  def NOK: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NOK = "NOK".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NOK]
   @scala.inline
-  def NPR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NPR = this.cast("NPR")
+  def NPR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NPR = "NPR".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NPR]
   @scala.inline
-  def NZD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NZD = this.cast("NZD")
+  def NZD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NZD = "NZD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NZD]
   @scala.inline
-  def OMR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OMR = this.cast("OMR")
+  def OMR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OMR = "OMR".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OMR]
   @scala.inline
-  def PAB: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PAB = this.cast("PAB")
+  def PAB: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PAB = "PAB".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PAB]
   @scala.inline
-  def PEN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PEN = this.cast("PEN")
+  def PEN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PEN = "PEN".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PEN]
   @scala.inline
-  def PGK: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PGK = this.cast("PGK")
+  def PGK: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PGK = "PGK".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PGK]
   @scala.inline
-  def PHP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PHP = this.cast("PHP")
+  def PHP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PHP = "PHP".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PHP]
   @scala.inline
-  def PKR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PKR = this.cast("PKR")
+  def PKR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PKR = "PKR".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PKR]
   @scala.inline
-  def PLN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PLN = this.cast("PLN")
+  def PLN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PLN = "PLN".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PLN]
   @scala.inline
-  def PYG: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PYG = this.cast("PYG")
+  def PYG: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PYG = "PYG".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PYG]
   @scala.inline
-  def QAR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.QAR = this.cast("QAR")
+  def QAR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.QAR = "QAR".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.QAR]
   @scala.inline
-  def RON: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.RON = this.cast("RON")
+  def RON: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.RON = "RON".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.RON]
   @scala.inline
-  def RSD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.RSD = this.cast("RSD")
+  def RSD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.RSD = "RSD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.RSD]
   @scala.inline
-  def RUB: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.RUB = this.cast("RUB")
+  def RUB: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.RUB = "RUB".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.RUB]
   @scala.inline
-  def RWF: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.RWF = this.cast("RWF")
+  def RWF: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.RWF = "RWF".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.RWF]
   @scala.inline
-  def SAR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SAR = this.cast("SAR")
+  def SAR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SAR = "SAR".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SAR]
   @scala.inline
-  def SBD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SBD = this.cast("SBD")
+  def SBD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SBD = "SBD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SBD]
   @scala.inline
-  def SCR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SCR = this.cast("SCR")
+  def SCR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SCR = "SCR".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SCR]
   @scala.inline
-  def SDG: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SDG = this.cast("SDG")
+  def SDG: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SDG = "SDG".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SDG]
   @scala.inline
-  def SEK: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SEK = this.cast("SEK")
+  def SEK: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SEK = "SEK".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SEK]
   @scala.inline
-  def SGD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SGD = this.cast("SGD")
+  def SGD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SGD = "SGD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SGD]
   @scala.inline
-  def SHP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SHP = this.cast("SHP")
+  def SHP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SHP = "SHP".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SHP]
   @scala.inline
-  def SLL: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SLL = this.cast("SLL")
+  def SLL: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SLL = "SLL".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SLL]
   @scala.inline
-  def SOS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SOS = this.cast("SOS")
+  def SOS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SOS = "SOS".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SOS]
   @scala.inline
-  def SPL: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SPL = this.cast("SPL")
+  def SPL: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SPL = "SPL".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SPL]
   @scala.inline
-  def SRD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SRD = this.cast("SRD")
+  def SRD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SRD = "SRD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SRD]
   @scala.inline
-  def STN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.STN = this.cast("STN")
+  def STN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.STN = "STN".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.STN]
   @scala.inline
-  def SVC: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SVC = this.cast("SVC")
+  def SVC: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SVC = "SVC".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SVC]
   @scala.inline
-  def SYP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SYP = this.cast("SYP")
+  def SYP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SYP = "SYP".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SYP]
   @scala.inline
-  def SZL: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SZL = this.cast("SZL")
+  def SZL: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SZL = "SZL".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SZL]
   @scala.inline
-  def THB: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.THB = this.cast("THB")
+  def THB: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.THB = "THB".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.THB]
   @scala.inline
-  def TJS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TJS = this.cast("TJS")
+  def TJS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TJS = "TJS".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TJS]
   @scala.inline
-  def TMT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TMT = this.cast("TMT")
+  def TMT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TMT = "TMT".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TMT]
   @scala.inline
-  def TND: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TND = this.cast("TND")
+  def TND: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TND = "TND".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TND]
   @scala.inline
-  def TOP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TOP = this.cast("TOP")
+  def TOP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TOP = "TOP".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TOP]
   @scala.inline
-  def TRY: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TRY = this.cast("TRY")
+  def TRY: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TRY = "TRY".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TRY]
   @scala.inline
-  def TTD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TTD = this.cast("TTD")
+  def TTD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TTD = "TTD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TTD]
   @scala.inline
-  def TVD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TVD = this.cast("TVD")
+  def TVD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TVD = "TVD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TVD]
   @scala.inline
-  def TWD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TWD = this.cast("TWD")
+  def TWD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TWD = "TWD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TWD]
   @scala.inline
-  def TZS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TZS = this.cast("TZS")
+  def TZS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TZS = "TZS".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TZS]
   @scala.inline
-  def UAH: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.UAH = this.cast("UAH")
+  def UAH: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.UAH = "UAH".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.UAH]
   @scala.inline
-  def UGX: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.UGX = this.cast("UGX")
+  def UGX: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.UGX = "UGX".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.UGX]
   @scala.inline
-  def USD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.USD = this.cast("USD")
+  def USD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.USD = "USD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.USD]
   @scala.inline
-  def UYU: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.UYU = this.cast("UYU")
+  def UYU: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.UYU = "UYU".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.UYU]
   @scala.inline
-  def UZS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.UZS = this.cast("UZS")
+  def UZS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.UZS = "UZS".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.UZS]
   @scala.inline
-  def VEF: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VEF = this.cast("VEF")
+  def VEF: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VEF = "VEF".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VEF]
   @scala.inline
-  def VND: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VND = this.cast("VND")
+  def VND: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VND = "VND".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VND]
   @scala.inline
-  def VUV: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VUV = this.cast("VUV")
+  def VUV: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VUV = "VUV".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VUV]
   @scala.inline
-  def WST: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.WST = this.cast("WST")
+  def WST: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.WST = "WST".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.WST]
   @scala.inline
-  def XAF: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.XAF = this.cast("XAF")
+  def XAF: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.XAF = "XAF".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.XAF]
   @scala.inline
-  def XCD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.XCD = this.cast("XCD")
+  def XCD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.XCD = "XCD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.XCD]
   @scala.inline
-  def XDR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.XDR = this.cast("XDR")
+  def XDR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.XDR = "XDR".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.XDR]
   @scala.inline
-  def XOF: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.XOF = this.cast("XOF")
+  def XOF: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.XOF = "XOF".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.XOF]
   @scala.inline
-  def XPF: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.XPF = this.cast("XPF")
+  def XPF: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.XPF = "XPF".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.XPF]
   @scala.inline
-  def YER: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.YER = this.cast("YER")
+  def YER: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.YER = "YER".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.YER]
   @scala.inline
-  def ZAR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ZAR = this.cast("ZAR")
+  def ZAR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ZAR = "ZAR".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ZAR]
   @scala.inline
-  def ZMW: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ZMW = this.cast("ZMW")
+  def ZMW: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ZMW = "ZMW".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ZMW]
   @scala.inline
-  def ZWD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ZWD = this.cast("ZWD")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ZWD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ZWD = "ZWD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ZWD]
 }
 

@@ -42,7 +42,6 @@ object GoogleApiUrlShortenerUrlResourceAnalyticsObject {
     shortUrlClicks: String
   ): GoogleApiUrlShortenerUrlResourceAnalyticsObject = {
     val __obj = js.Dynamic.literal(browsers = browsers.asInstanceOf[js.Any], countries = countries.asInstanceOf[js.Any], longUrlClicks = longUrlClicks.asInstanceOf[js.Any], platforms = platforms.asInstanceOf[js.Any], referrers = referrers.asInstanceOf[js.Any], shortUrlClicks = shortUrlClicks.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GoogleApiUrlShortenerUrlResourceAnalyticsObject]
   }
 }

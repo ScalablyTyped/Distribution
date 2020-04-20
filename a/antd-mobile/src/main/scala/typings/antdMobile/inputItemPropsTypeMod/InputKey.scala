@@ -21,28 +21,26 @@ trait InputKey extends js.Object
 
 object InputKey {
   @scala.inline
-  def `0`: typings.antdMobile.antdMobileStrings.`0` = this.cast("0")
+  def `0`: typings.antdMobile.antdMobileStrings.`0` = "0".asInstanceOf[typings.antdMobile.antdMobileStrings.`0`]
   @scala.inline
-  def `1`: typings.antdMobile.antdMobileStrings.`1` = this.cast("1")
+  def `1`: typings.antdMobile.antdMobileStrings.`1` = "1".asInstanceOf[typings.antdMobile.antdMobileStrings.`1`]
   @scala.inline
-  def `2`: typings.antdMobile.antdMobileStrings.`2` = this.cast("2")
+  def `2`: typings.antdMobile.antdMobileStrings.`2` = "2".asInstanceOf[typings.antdMobile.antdMobileStrings.`2`]
   @scala.inline
-  def `3`: typings.antdMobile.antdMobileStrings.`3` = this.cast("3")
+  def `3`: typings.antdMobile.antdMobileStrings.`3` = "3".asInstanceOf[typings.antdMobile.antdMobileStrings.`3`]
   @scala.inline
-  def `4`: typings.antdMobile.antdMobileStrings.`4` = this.cast("4")
+  def `4`: typings.antdMobile.antdMobileStrings.`4` = "4".asInstanceOf[typings.antdMobile.antdMobileStrings.`4`]
   @scala.inline
-  def `5`: typings.antdMobile.antdMobileStrings.`5` = this.cast("5")
+  def `5`: typings.antdMobile.antdMobileStrings.`5` = "5".asInstanceOf[typings.antdMobile.antdMobileStrings.`5`]
   @scala.inline
-  def `6`: typings.antdMobile.antdMobileStrings.`6` = this.cast("6")
+  def `6`: typings.antdMobile.antdMobileStrings.`6` = "6".asInstanceOf[typings.antdMobile.antdMobileStrings.`6`]
   @scala.inline
-  def `7`: typings.antdMobile.antdMobileStrings.`7` = this.cast("7")
+  def `7`: typings.antdMobile.antdMobileStrings.`7` = "7".asInstanceOf[typings.antdMobile.antdMobileStrings.`7`]
   @scala.inline
-  def `8`: typings.antdMobile.antdMobileStrings.`8` = this.cast("8")
+  def `8`: typings.antdMobile.antdMobileStrings.`8` = "8".asInstanceOf[typings.antdMobile.antdMobileStrings.`8`]
   @scala.inline
-  def `9`: typings.antdMobile.antdMobileStrings.`9` = this.cast("9")
+  def `9`: typings.antdMobile.antdMobileStrings.`9` = "9".asInstanceOf[typings.antdMobile.antdMobileStrings.`9`]
   @scala.inline
-  def Dot: typings.antdMobile.antdMobileStrings.Dot = this.cast(".")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Dot: typings.antdMobile.antdMobileStrings.Dot = ".".asInstanceOf[typings.antdMobile.antdMobileStrings.Dot]
 }
 

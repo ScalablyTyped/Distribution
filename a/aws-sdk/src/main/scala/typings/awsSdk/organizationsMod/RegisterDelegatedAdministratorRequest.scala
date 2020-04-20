@@ -20,7 +20,6 @@ object RegisterDelegatedAdministratorRequest {
   @scala.inline
   def apply(AccountId: AccountId, ServicePrincipal: ServicePrincipal): RegisterDelegatedAdministratorRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], ServicePrincipal = ServicePrincipal.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RegisterDelegatedAdministratorRequest]
   }
 }

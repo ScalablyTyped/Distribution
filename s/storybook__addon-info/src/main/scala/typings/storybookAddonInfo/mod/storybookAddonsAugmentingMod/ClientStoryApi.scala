@@ -22,7 +22,6 @@ object ClientStoryApi {
     storiesOf: (String, NodeModule) => StoryApi[StoryFnReturnType]
   ): ClientStoryApi[StoryFnReturnType] = {
     val __obj = js.Dynamic.literal(addDecorator = js.Any.fromFunction1(addDecorator), addParameters = js.Any.fromFunction1(addParameters), storiesOf = js.Any.fromFunction2(storiesOf))
-  
     __obj.asInstanceOf[ClientStoryApi[StoryFnReturnType]]
   }
 }

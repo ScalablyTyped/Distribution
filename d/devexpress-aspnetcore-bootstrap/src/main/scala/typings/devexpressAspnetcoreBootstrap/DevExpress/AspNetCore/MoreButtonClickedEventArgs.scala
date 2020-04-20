@@ -23,7 +23,6 @@ object MoreButtonClickedEventArgs {
     targetDateTime: Date
   ): MoreButtonClickedEventArgs = {
     val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], targetDateTime = targetDateTime.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MoreButtonClickedEventArgs]
   }
 }

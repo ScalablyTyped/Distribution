@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait nivoCalendarProps {
   @scala.inline
-  def ResponsiveCalendarProps: CalendarSvgProps.type = typings.nivoCalendar.mod.CalendarSvgProps
+  def ResponsiveCalendarProps: CalendarSvgProps.type = CalendarSvgProps
   type ResponsiveCalendarProps = CalendarSvgProps
   @scala.inline
-  def ResponsiveCalendarCanvasProps: CalendarSvgProps.type = typings.nivoCalendar.mod.CalendarSvgProps
+  def ResponsiveCalendarCanvasProps: CalendarSvgProps.type = CalendarSvgProps
   type ResponsiveCalendarCanvasProps = CalendarSvgProps
 }
 

@@ -13,7 +13,6 @@ object AsyncValidator {
   @scala.inline
   def apply[V](hint: js.Promise[String | Null], validate: V => js.Promise[Boolean]): AsyncValidator[V] = {
     val __obj = js.Dynamic.literal(hint = hint.asInstanceOf[js.Any], validate = js.Any.fromFunction1(validate))
-  
     __obj.asInstanceOf[AsyncValidator[V]]
   }
 }

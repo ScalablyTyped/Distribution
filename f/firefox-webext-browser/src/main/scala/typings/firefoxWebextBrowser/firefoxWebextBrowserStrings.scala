@@ -1641,11 +1641,11 @@ object firefoxWebextBrowserStrings {
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   @scala.inline
-  def `center bottom`: `center bottom` = "center bottom".asInstanceOf[`center bottom`]
+  def `center bottom`: `center bottom` = ("center bottom").asInstanceOf[`center bottom`]
   @scala.inline
-  def `center center`: `center center` = "center center".asInstanceOf[`center center`]
+  def `center center`: `center center` = ("center center").asInstanceOf[`center center`]
   @scala.inline
-  def `center top`: `center top` = "center top".asInstanceOf[`center top`]
+  def `center top`: `center top` = ("center top").asInstanceOf[`center top`]
   @scala.inline
   def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
   @scala.inline
@@ -1867,11 +1867,11 @@ object firefoxWebextBrowserStrings {
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   @scala.inline
-  def `left bottom`: `left bottom` = "left bottom".asInstanceOf[`left bottom`]
+  def `left bottom`: `left bottom` = ("left bottom").asInstanceOf[`left bottom`]
   @scala.inline
-  def `left center`: `left center` = "left center".asInstanceOf[`left center`]
+  def `left center`: `left center` = ("left center").asInstanceOf[`left center`]
   @scala.inline
-  def `left top`: `left top` = "left top".asInstanceOf[`left top`]
+  def `left top`: `left top` = ("left top").asInstanceOf[`left top`]
   @scala.inline
   def link: link = "link".asInstanceOf[link]
   @scala.inline
@@ -2075,11 +2075,11 @@ object firefoxWebextBrowserStrings {
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   @scala.inline
-  def `right bottom`: `right bottom` = "right bottom".asInstanceOf[`right bottom`]
+  def `right bottom`: `right bottom` = ("right bottom").asInstanceOf[`right bottom`]
   @scala.inline
-  def `right center`: `right center` = "right center".asInstanceOf[`right center`]
+  def `right center`: `right center` = ("right center").asInstanceOf[`right center`]
   @scala.inline
-  def `right top`: `right top` = "right top".asInstanceOf[`right top`]
+  def `right top`: `right top` = ("right top").asInstanceOf[`right top`]
   @scala.inline
   def safe: safe = "safe".asInstanceOf[safe]
   @scala.inline

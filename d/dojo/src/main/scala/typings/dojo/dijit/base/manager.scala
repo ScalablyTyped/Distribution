@@ -26,7 +26,6 @@ object manager {
   @scala.inline
   def apply(defaultDuration: Double): manager = {
     val __obj = js.Dynamic.literal(defaultDuration = defaultDuration.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[manager]
   }
 }

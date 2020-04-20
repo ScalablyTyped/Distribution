@@ -1,24 +1,25 @@
 package typings.chromeApps.chrome.contextMenus
 
+import typings.chromeApps.chromeAppsStrings.audio_
+import typings.chromeApps.chromeAppsStrings.image_
+import typings.chromeApps.chromeAppsStrings.video_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.chromeApps.chromeAppsStrings.image
-  - typings.chromeApps.chromeAppsStrings.video
-  - typings.chromeApps.chromeAppsStrings.audio
+  - typings.chromeApps.chromeAppsStrings.image_
+  - typings.chromeApps.chromeAppsStrings.video_
+  - typings.chromeApps.chromeAppsStrings.audio_
 */
 trait MediaType extends js.Object
 
 object MediaType {
   @scala.inline
-  def audio: typings.chromeApps.chromeAppsStrings.audio = this.cast("audio")
+  def audio: audio_ = "audio".asInstanceOf[audio_]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def image: image_ = "image".asInstanceOf[image_]
   @scala.inline
-  def image: typings.chromeApps.chromeAppsStrings.image = this.cast("image")
-  @scala.inline
-  def video: typings.chromeApps.chromeAppsStrings.video = this.cast("video")
+  def video: video_ = "video".asInstanceOf[video_]
 }
 

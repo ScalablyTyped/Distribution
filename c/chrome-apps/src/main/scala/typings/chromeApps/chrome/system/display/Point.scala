@@ -19,7 +19,6 @@ object Point {
   @scala.inline
   def apply(x: integer, y: integer): Point = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Point]
   }
 }

@@ -24,7 +24,6 @@ object ModelVersion {
   @scala.inline
   def apply(modelId: identifier, modelType: ModelTypeEnum, modelVersionNumber: nonEmptyString): ModelVersion = {
     val __obj = js.Dynamic.literal(modelId = modelId.asInstanceOf[js.Any], modelType = modelType.asInstanceOf[js.Any], modelVersionNumber = modelVersionNumber.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ModelVersion]
   }
 }

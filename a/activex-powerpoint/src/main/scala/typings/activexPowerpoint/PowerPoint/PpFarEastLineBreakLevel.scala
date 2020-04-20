@@ -16,12 +16,10 @@ trait PpFarEastLineBreakLevel extends js.Object
 
 object PpFarEastLineBreakLevel {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ppFarEastLineBreakLevelCustom: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def ppFarEastLineBreakLevelCustom: `3` = this.cast(3)
+  def ppFarEastLineBreakLevelNormal: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def ppFarEastLineBreakLevelNormal: `1` = this.cast(1)
-  @scala.inline
-  def ppFarEastLineBreakLevelStrict: `2` = this.cast(2)
+  def ppFarEastLineBreakLevelStrict: `2` = 2.asInstanceOf[`2`]
 }
 

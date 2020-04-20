@@ -14,7 +14,6 @@ object TodoComment {
   @scala.inline
   def apply(descriptor: TodoCommentDescriptor, message: java.lang.String, position: Double): TodoComment = {
     val __obj = js.Dynamic.literal(descriptor = descriptor.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TodoComment]
   }
 }

@@ -13,7 +13,6 @@ object AnonMethod {
   @scala.inline
   def apply[T](columns: js.Array[T], method: AnonColumn[T] => T): AnonMethod[T] = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], method = js.Any.fromFunction1(method))
-  
     __obj.asInstanceOf[AnonMethod[T]]
   }
 }

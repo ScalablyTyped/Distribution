@@ -13,7 +13,6 @@ object SkGlyphPosition {
   @scala.inline
   def apply(affinity: SkAffinity, pos: Double): SkGlyphPosition = {
     val __obj = js.Dynamic.literal(affinity = affinity.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SkGlyphPosition]
   }
 }

@@ -24,7 +24,6 @@ object AnonLg {
     xxl: AnonMinWidth
   ): AnonLg = {
     val __obj = js.Dynamic.literal(lg = lg.asInstanceOf[js.Any], md = md.asInstanceOf[js.Any], sm = sm.asInstanceOf[js.Any], xl = xl.asInstanceOf[js.Any], xs = xs.asInstanceOf[js.Any], xxl = xxl.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLg]
   }
 }

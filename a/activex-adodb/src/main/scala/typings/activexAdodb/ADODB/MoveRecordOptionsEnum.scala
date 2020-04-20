@@ -18,14 +18,12 @@ trait MoveRecordOptionsEnum extends js.Object
 
 object MoveRecordOptionsEnum {
   @scala.inline
-  def adMoveAllowEmulation: `4` = this.cast(4)
+  def adMoveAllowEmulation: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def adMoveDontUpdateLinks: `2` = this.cast(2)
+  def adMoveDontUpdateLinks: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def adMoveOverWrite: `1` = this.cast(1)
+  def adMoveOverWrite: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def adMoveUnspecified: `-1` = this.cast(-1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def adMoveUnspecified: `-1` = -1.asInstanceOf[`-1`]
 }
 

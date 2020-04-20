@@ -15,7 +15,6 @@ object FirehoseTransformationResultRecord {
   @scala.inline
   def apply(data: String, recordId: String, result: FirehoseRecordTransformationStatus): FirehoseTransformationResultRecord = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], recordId = recordId.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FirehoseTransformationResultRecord]
   }
 }

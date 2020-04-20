@@ -25,7 +25,6 @@ object AnonAnimate {
   @scala.inline
   def apply(animate: Boolean, cancelable: Boolean, mode: single | multiple): AnonAnimate = {
     val __obj = js.Dynamic.literal(animate = animate.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAnimate]
   }
 }

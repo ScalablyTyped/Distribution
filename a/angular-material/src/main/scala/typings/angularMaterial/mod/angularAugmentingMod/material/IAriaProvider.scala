@@ -12,7 +12,6 @@ object IAriaProvider {
   @scala.inline
   def apply(disableWarnings: () => Unit): IAriaProvider = {
     val __obj = js.Dynamic.literal(disableWarnings = js.Any.fromFunction0(disableWarnings))
-  
     __obj.asInstanceOf[IAriaProvider]
   }
 }

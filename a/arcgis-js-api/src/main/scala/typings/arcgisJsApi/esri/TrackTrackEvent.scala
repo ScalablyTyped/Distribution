@@ -12,7 +12,6 @@ object TrackTrackEvent {
   @scala.inline
   def apply(position: js.Any): TrackTrackEvent = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TrackTrackEvent]
   }
 }

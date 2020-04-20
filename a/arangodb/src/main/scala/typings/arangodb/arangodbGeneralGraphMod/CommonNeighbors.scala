@@ -14,7 +14,6 @@ object CommonNeighbors {
   @scala.inline
   def apply(left: String, neighbors: js.Array[String], right: String): CommonNeighbors = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], neighbors = neighbors.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CommonNeighbors]
   }
 }

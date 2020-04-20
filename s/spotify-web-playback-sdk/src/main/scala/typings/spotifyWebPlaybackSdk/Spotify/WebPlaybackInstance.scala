@@ -12,7 +12,6 @@ object WebPlaybackInstance {
   @scala.inline
   def apply(device_id: String): WebPlaybackInstance = {
     val __obj = js.Dynamic.literal(device_id = device_id.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[WebPlaybackInstance]
   }
 }

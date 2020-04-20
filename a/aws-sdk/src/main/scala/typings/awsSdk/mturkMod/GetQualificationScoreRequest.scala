@@ -20,7 +20,6 @@ object GetQualificationScoreRequest {
   @scala.inline
   def apply(QualificationTypeId: EntityId, WorkerId: CustomerId): GetQualificationScoreRequest = {
     val __obj = js.Dynamic.literal(QualificationTypeId = QualificationTypeId.asInstanceOf[js.Any], WorkerId = WorkerId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetQualificationScoreRequest]
   }
 }

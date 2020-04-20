@@ -22,18 +22,16 @@ trait WdTextOrientation extends js.Object
 
 object WdTextOrientation {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdTextOrientationDownward: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdTextOrientationDownward: `3` = this.cast(3)
+  def wdTextOrientationHorizontal: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdTextOrientationHorizontal: `0` = this.cast(0)
+  def wdTextOrientationHorizontalRotatedFarEast: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdTextOrientationHorizontalRotatedFarEast: `4` = this.cast(4)
+  def wdTextOrientationUpward: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def wdTextOrientationUpward: `2` = this.cast(2)
+  def wdTextOrientationVertical: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdTextOrientationVertical: `5` = this.cast(5)
-  @scala.inline
-  def wdTextOrientationVerticalFarEast: `1` = this.cast(1)
+  def wdTextOrientationVerticalFarEast: `1` = 1.asInstanceOf[`1`]
 }
 

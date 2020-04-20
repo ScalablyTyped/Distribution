@@ -18,14 +18,12 @@ trait OlEditorType extends js.Object
 
 object OlEditorType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def olEditorHTML: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def olEditorHTML: `2` = this.cast(2)
+  def olEditorRTF: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def olEditorRTF: `3` = this.cast(3)
+  def olEditorText: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def olEditorText: `1` = this.cast(1)
-  @scala.inline
-  def olEditorWord: `4` = this.cast(4)
+  def olEditorWord: `4` = 4.asInstanceOf[`4`]
 }
 

@@ -20,7 +20,6 @@ object XssMatchTuple {
   @scala.inline
   def apply(FieldToMatch: FieldToMatch, TextTransformation: TextTransformation): XssMatchTuple = {
     val __obj = js.Dynamic.literal(FieldToMatch = FieldToMatch.asInstanceOf[js.Any], TextTransformation = TextTransformation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[XssMatchTuple]
   }
 }

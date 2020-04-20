@@ -12,7 +12,6 @@ object AnonBridge {
   @scala.inline
   def apply(bridge: Boolean): AnonBridge = {
     val __obj = js.Dynamic.literal(bridge = bridge.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBridge]
   }
 }

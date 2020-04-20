@@ -7,19 +7,21 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.surveyKnockout.mod.IParentElement because var conflicts: isReadOnly. Inlined addElement
 - typings.surveyKnockout.mod.ISurveyElement because Already inherited
-- typings.surveyKnockout.mod.IPanel because var conflicts: containsErrors, isPage, isPanel, isReadOnly, isVisible, name, parent. Inlined getChildrenLayoutType, getQuestionTitleLocation, elementWidthChanged, indexOf, elements */ @JSImport("survey-knockout", "QuestionCustomModelBase")
+- typings.surveyKnockout.mod.IPanel because var conflicts: containsErrors, isPage, isPanel, isReadOnly, isVisible, name, parent. Inlined getChildrenLayoutType, getQuestionTitleLocation, getQuestionStartIndex, elementWidthChanged, indexOf, elements */ @JSImport("survey-knockout", "QuestionCustomModelBase")
 @js.native
-class QuestionCustomModelBase protected ()
+abstract class QuestionCustomModelBase protected ()
   extends Question
      with ISurveyImpl
      with ISurveyData {
-  def this(name: String, customQuestion: CustomQuestionJSON) = this()
-  var customQuestion: CustomQuestionJSON = js.native
+  def this(name: String, customQuestion: ComponentQuestionJSON) = this()
+  var customQuestion: ComponentQuestionJSON = js.native
   val elements: js.Array[IElement] = js.native
   def addElement(element: IElement, index: Double): js.Any = js.native
   @JSName("addElement")
   def addElement_Unit(element: IElement, index: Double): Unit = js.native
-  /* protected */ def convertValue(name: String, newValue: js.Any): js.Any = js.native
+  /* protected */ def convertDataName(name: String): String = js.native
+  /* protected */ def convertDataValue(name: String, newValue: js.Any): js.Any = js.native
+  /* protected */ def createWrapper(): Unit = js.native
   def elementWidthChanged(el: IElement): js.Any = js.native
   @JSName("elementWidthChanged")
   def elementWidthChanged_Unit(el: IElement): Unit = js.native
@@ -28,6 +30,8 @@ class QuestionCustomModelBase protected ()
   /* InferMemberOverrides */
   override def getAllValues(): js.Any = js.native
   def getChildrenLayoutType(): String = js.native
+  /* protected */ def getElement(): SurveyElement = js.native
+  def getQuestionStartIndex(): String = js.native
   def getQuestionTitleLocation(): String = js.native
   /* CompleteClass */
   override def getSurvey(): ISurvey = js.native

@@ -31,7 +31,6 @@ object AnonRowSelectionChanged {
     rowSelectionChangedBatch: (IScope, rowSelectionChangedBatchHandler[TEntity]) => Unit
   ): AnonRowSelectionChanged[TEntity] = {
     val __obj = js.Dynamic.literal(rowSelectionChanged = js.Any.fromFunction2(rowSelectionChanged), rowSelectionChangedBatch = js.Any.fromFunction2(rowSelectionChangedBatch))
-  
     __obj.asInstanceOf[AnonRowSelectionChanged[TEntity]]
   }
 }

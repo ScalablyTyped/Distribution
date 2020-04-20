@@ -436,7 +436,7 @@ package object mod {
     */
   type DefineModelAttributes[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: string | sequelize.sequelize.DataTypeAbstract | sequelize.sequelize.DefineAttributeColumnOptions}
-    */ typings.sequelize.sequelizeStrings.DefineModelAttributes with js.Any
+    */ typings.sequelize.sequelizeStrings.DefineModelAttributes with org.scalablytyped.runtime.TopLevel[js.Any]
   /**
     * Interface for Define Scope Options
     *
@@ -862,7 +862,7 @@ package object mod {
     */
   type Models = org.scalablytyped.runtime.StringDictionary[typings.sequelize.mod.Model[js.Any, js.Any, js.Any]]
   type ModelsHashInterface = org.scalablytyped.runtime.StringDictionary[typings.sequelize.mod.Model[js.Any, js.Any, js.Any]]
-  type Omit[T, K /* <: java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[java.lang.String, K]]
+  type Omit[T, K /* <: /* keyof T */ java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
   /**
     * A hash of attributes to describe your search. See above for examples.
     *
@@ -886,5 +886,5 @@ package object mod {
   type TransactionTypeImmediate = typings.sequelize.sequelizeStrings.IMMEDIATE
   type WhereOptions[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? sequelize.sequelize.Primitives | std.Array<sequelize.sequelize.Primitives> | sequelize.sequelize.WhereLogic | T[P] extends sequelize.sequelize.Primitives? null : / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias sequelize.sequelize.WhereOptions<T[P]> * / object | sequelize.sequelize.col | sequelize.sequelize.and | sequelize.sequelize.or | sequelize.sequelize.WhereGeometryOptions | sequelize.sequelize.WhereNested | sequelize.sequelize.where | null}
-    */ typings.sequelize.sequelizeStrings.WhereOptions with T
+    */ typings.sequelize.sequelizeStrings.WhereOptions with org.scalablytyped.runtime.TopLevel[T]
 }

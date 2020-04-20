@@ -76,11 +76,11 @@ object mapElementVectorMod extends js.Object {
       /**
         * @inheritDoc
         */
-      def first(): Key = js.native
+      def first: Key = js.native
       /**
         * @inheritDoc
         */
-      def second(): T = js.native
+      def second: T = js.native
       /**
         * @inheritDoc
         */
@@ -127,11 +127,11 @@ object mapElementVectorMod extends js.Object {
       /**
         * @inheritDoc
         */
-      def first(): Key = js.native
+      def first: Key = js.native
       /**
         * @inheritDoc
         */
-      def second(): T = js.native
+      def second: T = js.native
       /**
         * @inheritDoc
         */

@@ -16,7 +16,6 @@ object CreateCloudFormationStackRequest {
   @scala.inline
   def apply(instances: InstanceEntryList): CreateCloudFormationStackRequest = {
     val __obj = js.Dynamic.literal(instances = instances.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateCloudFormationStackRequest]
   }
 }

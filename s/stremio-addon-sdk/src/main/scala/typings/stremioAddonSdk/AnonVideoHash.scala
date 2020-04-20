@@ -19,7 +19,6 @@ object AnonVideoHash {
   @scala.inline
   def apply(videoHash: String, videoSize: String): AnonVideoHash = {
     val __obj = js.Dynamic.literal(videoHash = videoHash.asInstanceOf[js.Any], videoSize = videoSize.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonVideoHash]
   }
 }

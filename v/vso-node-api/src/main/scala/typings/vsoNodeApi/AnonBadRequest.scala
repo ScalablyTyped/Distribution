@@ -22,7 +22,6 @@ object AnonBadRequest {
     unsupportedConflictType: Double
   ): AnonBadRequest = {
     val __obj = js.Dynamic.literal(badRequest = badRequest.asInstanceOf[js.Any], invalidResolution = invalidResolution.asInstanceOf[js.Any], notFound = notFound.asInstanceOf[js.Any], succeeded = succeeded.asInstanceOf[js.Any], unsupportedConflictType = unsupportedConflictType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBadRequest]
   }
 }

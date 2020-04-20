@@ -13,7 +13,6 @@ object LanguageChains {
   @scala.inline
   def apply(json: Assertion, using: Assertion): LanguageChains = {
     val __obj = js.Dynamic.literal(json = json.asInstanceOf[js.Any], using = using.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LanguageChains]
   }
 }

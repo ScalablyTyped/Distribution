@@ -13,7 +13,6 @@ object TypeofSSO {
   @scala.inline
   def apply(Types: TypeofSSO): TypeofSSO = {
     val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofSSO]
   }
 }

@@ -21,7 +21,6 @@ object DetectionsResource {
     list: AnonCallback => Request_[DetectionsListResponse]
   ): DetectionsResource = {
     val __obj = js.Dynamic.literal(detect = js.Any.fromFunction1(detect), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[DetectionsResource]
   }
 }

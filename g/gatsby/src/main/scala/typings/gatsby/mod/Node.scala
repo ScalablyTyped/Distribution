@@ -19,7 +19,6 @@ object Node {
   @scala.inline
   def apply(children: js.Array[String], id: String, internal: AnonContent with AnonOwner, parent: String): Node = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], internal = internal.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Node]
   }
 }

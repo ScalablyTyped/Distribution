@@ -12,7 +12,7 @@ trait SnapshotResult extends js.Object {
   /**
   	 * Error message, if any returned.
   	 */
-  var error: js.UndefOr[String] = js.undefined
+  var error: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * The snapshot image.
   	 */
@@ -25,7 +25,7 @@ trait SnapshotResult extends js.Object {
 
 object SnapshotResult {
   @scala.inline
-  def apply(error: String = null, snapshot: Blob = null, success: js.UndefOr[Boolean] = js.undefined): SnapshotResult = {
+  def apply(error: java.lang.String = null, snapshot: Blob = null, success: js.UndefOr[Boolean] = js.undefined): SnapshotResult = {
     val __obj = js.Dynamic.literal()
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (snapshot != null) __obj.updateDynamic("snapshot")(snapshot.asInstanceOf[js.Any])

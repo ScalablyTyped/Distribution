@@ -174,23 +174,23 @@ object semanticUiSearchStrings {
   sealed trait `write cache` extends js.Object
   
   @scala.inline
-  def `add results`: `add results` = "add results".asInstanceOf[`add results`]
+  def `add results`: `add results` = ("add results").asInstanceOf[`add results`]
   @scala.inline
   def apiSettings: apiSettings = "apiSettings".asInstanceOf[apiSettings]
   @scala.inline
   def cache: cache = "cache".asInstanceOf[cache]
   @scala.inline
-  def `cancel query`: `cancel query` = "cancel query".asInstanceOf[`cancel query`]
+  def `cancel query`: `cancel query` = ("cancel query").asInstanceOf[`cancel query`]
   @scala.inline
   def className: className = "className".asInstanceOf[className]
   @scala.inline
-  def `clear cache`: `clear cache` = "clear cache".asInstanceOf[`clear cache`]
+  def `clear cache`: `clear cache` = ("clear cache").asInstanceOf[`clear cache`]
   @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]
   @scala.inline
   def destroy: destroy = "destroy".asInstanceOf[destroy]
   @scala.inline
-  def `display message`: `display message` = "display message".asInstanceOf[`display message`]
+  def `display message`: `display message` = ("display message").asInstanceOf[`display message`]
   @scala.inline
   def duration: duration = "duration".asInstanceOf[duration]
   @scala.inline
@@ -200,23 +200,23 @@ object semanticUiSearchStrings {
   @scala.inline
   def fields: fields = "fields".asInstanceOf[fields]
   @scala.inline
-  def `generate results`: `generate results` = "generate results".asInstanceOf[`generate results`]
+  def `generate results`: `generate results` = ("generate results").asInstanceOf[`generate results`]
   @scala.inline
-  def `get result`: `get result` = "get result".asInstanceOf[`get result`]
+  def `get result`: `get result` = ("get result").asInstanceOf[`get result`]
   @scala.inline
-  def `get value`: `get value` = "get value".asInstanceOf[`get value`]
+  def `get value`: `get value` = ("get value").asInstanceOf[`get value`]
   @scala.inline
-  def `has minimum characters`: `has minimum characters` = "has minimum characters".asInstanceOf[`has minimum characters`]
+  def `has minimum characters`: `has minimum characters` = ("has minimum characters").asInstanceOf[`has minimum characters`]
   @scala.inline
-  def `hide results`: `hide results` = "hide results".asInstanceOf[`hide results`]
+  def `hide results`: `hide results` = ("hide results").asInstanceOf[`hide results`]
   @scala.inline
   def hideDelay: hideDelay = "hideDelay".asInstanceOf[hideDelay]
   @scala.inline
-  def `is empty`: `is empty` = "is empty".asInstanceOf[`is empty`]
+  def `is empty`: `is empty` = ("is empty").asInstanceOf[`is empty`]
   @scala.inline
-  def `is focused`: `is focused` = "is focused".asInstanceOf[`is focused`]
+  def `is focused`: `is focused` = ("is focused").asInstanceOf[`is focused`]
   @scala.inline
-  def `is visible`: `is visible` = "is visible".asInstanceOf[`is visible`]
+  def `is visible`: `is visible` = ("is visible").asInstanceOf[`is visible`]
   @scala.inline
   def maxResults: maxResults = "maxResults".asInstanceOf[maxResults]
   @scala.inline
@@ -244,15 +244,15 @@ object semanticUiSearchStrings {
   @scala.inline
   def query: query = "query".asInstanceOf[query]
   @scala.inline
-  def `read cache`: `read cache` = "read cache".asInstanceOf[`read cache`]
+  def `read cache`: `read cache` = ("read cache").asInstanceOf[`read cache`]
   @scala.inline
   def regExp: regExp = "regExp".asInstanceOf[regExp]
   @scala.inline
-  def `search local`: `search local` = "search local".asInstanceOf[`search local`]
+  def `search local`: `search local` = ("search local").asInstanceOf[`search local`]
   @scala.inline
-  def `search object`: `search object` = "search object".asInstanceOf[`search object`]
+  def `search object`: `search object` = ("search object").asInstanceOf[`search object`]
   @scala.inline
-  def `search remote`: `search remote` = "search remote".asInstanceOf[`search remote`]
+  def `search remote`: `search remote` = ("search remote").asInstanceOf[`search remote`]
   @scala.inline
   def searchDelay: searchDelay = "searchDelay".asInstanceOf[searchDelay]
   @scala.inline
@@ -264,11 +264,11 @@ object semanticUiSearchStrings {
   @scala.inline
   def selector: selector = "selector".asInstanceOf[selector]
   @scala.inline
-  def `set value`: `set value` = "set value".asInstanceOf[`set value`]
+  def `set value`: `set value` = ("set value").asInstanceOf[`set value`]
   @scala.inline
   def setting: setting = "setting".asInstanceOf[setting]
   @scala.inline
-  def `show results`: `show results` = "show results".asInstanceOf[`show results`]
+  def `show results`: `show results` = ("show results").asInstanceOf[`show results`]
   @scala.inline
   def showNoResults: showNoResults = "showNoResults".asInstanceOf[showNoResults]
   @scala.inline
@@ -284,6 +284,6 @@ object semanticUiSearchStrings {
   @scala.inline
   def verbose: verbose = "verbose".asInstanceOf[verbose]
   @scala.inline
-  def `write cache`: `write cache` = "write cache".asInstanceOf[`write cache`]
+  def `write cache`: `write cache` = ("write cache").asInstanceOf[`write cache`]
 }
 

@@ -23,7 +23,6 @@ object AnonOpenIdList {
   @scala.inline
   def apply(errCode: Double, errMsg: String, openIdList: js.Array[String]): AnonOpenIdList = {
     val __obj = js.Dynamic.literal(errCode = errCode.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any], openIdList = openIdList.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonOpenIdList]
   }
 }

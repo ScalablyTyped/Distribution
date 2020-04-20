@@ -13,7 +13,6 @@ object AnonDownloadedBytes {
   @scala.inline
   def apply(downloadedBytes: Double, totalBytes: Double): AnonDownloadedBytes = {
     val __obj = js.Dynamic.literal(downloadedBytes = downloadedBytes.asInstanceOf[js.Any], totalBytes = totalBytes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonDownloadedBytes]
   }
 }

@@ -13,7 +13,6 @@ object hasTrackingTemplateBuilder {
   @scala.inline
   def apply[B](withCustomParameters: js.Object => B, withTrackingTemplate: String => B): hasTrackingTemplateBuilder[B] = {
     val __obj = js.Dynamic.literal(withCustomParameters = js.Any.fromFunction1(withCustomParameters), withTrackingTemplate = js.Any.fromFunction1(withTrackingTemplate))
-  
     __obj.asInstanceOf[hasTrackingTemplateBuilder[B]]
   }
 }

@@ -13,7 +13,6 @@ object DropdownRenderProps {
   @scala.inline
   def apply(props: AnonOnKeyDown): DropdownRenderProps = {
     val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DropdownRenderProps]
   }
 }

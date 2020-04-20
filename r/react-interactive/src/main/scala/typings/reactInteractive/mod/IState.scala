@@ -15,16 +15,14 @@ trait IState extends js.Object
 
 object IState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def hover: typings.reactInteractive.reactInteractiveStrings.hover = "hover".asInstanceOf[typings.reactInteractive.reactInteractiveStrings.hover]
   @scala.inline
-  def hover: typings.reactInteractive.reactInteractiveStrings.hover = this.cast("hover")
+  def hoverActive: typings.reactInteractive.reactInteractiveStrings.hoverActive = "hoverActive".asInstanceOf[typings.reactInteractive.reactInteractiveStrings.hoverActive]
   @scala.inline
-  def hoverActive: typings.reactInteractive.reactInteractiveStrings.hoverActive = this.cast("hoverActive")
+  def keyActive: typings.reactInteractive.reactInteractiveStrings.keyActive = "keyActive".asInstanceOf[typings.reactInteractive.reactInteractiveStrings.keyActive]
   @scala.inline
-  def keyActive: typings.reactInteractive.reactInteractiveStrings.keyActive = this.cast("keyActive")
+  def normal: typings.reactInteractive.reactInteractiveStrings.normal = "normal".asInstanceOf[typings.reactInteractive.reactInteractiveStrings.normal]
   @scala.inline
-  def normal: typings.reactInteractive.reactInteractiveStrings.normal = this.cast("normal")
-  @scala.inline
-  def touchActive: typings.reactInteractive.reactInteractiveStrings.touchActive = this.cast("touchActive")
+  def touchActive: typings.reactInteractive.reactInteractiveStrings.touchActive = "touchActive".asInstanceOf[typings.reactInteractive.reactInteractiveStrings.touchActive]
 }
 

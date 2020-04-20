@@ -13,7 +13,6 @@ object AsyncStorage {
   @scala.inline
   def apply(getItem: String => js.Promise[js.Any], setItem: (String, js.Any) => js.Promise[Unit]): AsyncStorage = {
     val __obj = js.Dynamic.literal(getItem = js.Any.fromFunction1(getItem), setItem = js.Any.fromFunction2(setItem))
-  
     __obj.asInstanceOf[AsyncStorage]
   }
 }

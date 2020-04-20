@@ -18,7 +18,6 @@ object Methods {
     watch: (ZendeskID, Double, Double, ZendeskCallback[_, _]) => js.Any
   ): Methods = {
     val __obj = js.Dynamic.literal(show = js.Any.fromFunction2(show), watch = js.Any.fromFunction4(watch))
-  
     __obj.asInstanceOf[Methods]
   }
 }

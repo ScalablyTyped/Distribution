@@ -20,7 +20,6 @@ object Ribbon_ {
   @scala.inline
   def apply(requestUpdate: RibbonUpdaterData => js.Promise[Unit]): Ribbon_ = {
     val __obj = js.Dynamic.literal(requestUpdate = js.Any.fromFunction1(requestUpdate))
-  
     __obj.asInstanceOf[Ribbon_]
   }
 }

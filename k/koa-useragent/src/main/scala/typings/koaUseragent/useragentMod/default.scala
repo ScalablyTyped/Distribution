@@ -104,152 +104,152 @@ class default () extends UserAgent {
   /* CompleteClass */
   override var version: String = js.native
   /* CompleteClass */
-  override def SilkAccelerated(): Boolean = js.native
+  override def SilkAccelerated: Boolean = js.native
   /* CompleteClass */
   @JSName("browser")
-  override def browser_MUserAgent(): String = js.native
+  override def browser_MUserAgent: String = js.native
   /* CompleteClass */
   @JSName("geoIp")
-  override def geoIp_MUserAgent(): StringDictionary[js.Any] = js.native
+  override def geoIp_MUserAgent: StringDictionary[js.Any] = js.native
   /* CompleteClass */
-  override def isAlamoFire(): Boolean = js.native
+  override def isAlamoFire: Boolean = js.native
   /* CompleteClass */
   @JSName("isAmaya")
-  override def isAmaya_MUserAgent(): Boolean = js.native
+  override def isAmaya_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("isAndroidTablet")
-  override def isAndroidTablet_MUserAgent(): Boolean = js.native
+  override def isAndroidTablet_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("isAndroid")
-  override def isAndroid_MUserAgent(): Boolean = js.native
+  override def isAndroid_MUserAgent: Boolean = js.native
   /* CompleteClass */
-  override def isAuthoritative(): Boolean = js.native
+  override def isAuthoritative: Boolean = js.native
   /* CompleteClass */
   @JSName("isBada")
-  override def isBada_MUserAgent(): Boolean = js.native
+  override def isBada_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("isBlackberry")
-  override def isBlackberry_MUserAgent(): Boolean = js.native
+  override def isBlackberry_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("isBot")
-  override def isBot_MUserAgent(): Boolean = js.native
+  override def isBot_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("isCaptive")
-  override def isCaptive_MUserAgent(): Boolean = js.native
+  override def isCaptive_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("isChromeOS")
-  override def isChromeOS_MUserAgent(): Boolean = js.native
+  override def isChromeOS_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("isChrome")
-  override def isChrome_MUserAgent(): Boolean = js.native
+  override def isChrome_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("isCurl")
-  override def isCurl_MUserAgent(): Boolean = js.native
+  override def isCurl_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("isDesktop")
-  override def isDesktop_MUserAgent(): Boolean = js.native
+  override def isDesktop_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("isEdge")
-  override def isEdge_MUserAgent(): Boolean = js.native
+  override def isEdge_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("isEpiphany")
-  override def isEpiphany_MUserAgent(): Boolean = js.native
+  override def isEpiphany_MUserAgent: Boolean = js.native
   /* CompleteClass */
-  override def isFacebook(): Boolean = js.native
+  override def isFacebook: Boolean = js.native
   /* CompleteClass */
   @JSName("isFirefox")
-  override def isFirefox_MUserAgent(): Boolean = js.native
+  override def isFirefox_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("isFlock")
-  override def isFlock_MUserAgent(): Boolean = js.native
+  override def isFlock_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("isIECompatibilityMode")
-  override def isIECompatibilityMode_MUserAgent(): Boolean = js.native
+  override def isIECompatibilityMode_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("isIE")
-  override def isIE_MUserAgent(): Boolean = js.native
+  override def isIE_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("isKindleFire")
-  override def isKindleFire_MUserAgent(): Boolean = js.native
+  override def isKindleFire_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("isKonqueror")
-  override def isKonqueror_MUserAgent(): Boolean = js.native
+  override def isKonqueror_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("isLinux64")
-  override def isLinux64_MUserAgent(): Boolean = js.native
+  override def isLinux64_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("isLinux")
-  override def isLinux_MUserAgent(): Boolean = js.native
+  override def isLinux_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("isMac")
-  override def isMac_MUserAgent(): Boolean = js.native
+  override def isMac_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("isMobile")
-  override def isMobile_MUserAgent(): Boolean = js.native
+  override def isMobile_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("isOmniWeb")
-  override def isOmniWeb_MUserAgent(): Boolean = js.native
+  override def isOmniWeb_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("isOpera")
-  override def isOpera_MUserAgent(): Boolean = js.native
+  override def isOpera_MUserAgent: Boolean = js.native
   /* CompleteClass */
-  override def isPhantomJS(): Boolean = js.native
+  override def isPhantomJS: Boolean = js.native
   /* CompleteClass */
   @JSName("isRaspberry")
-  override def isRaspberry_MUserAgent(): Boolean = js.native
+  override def isRaspberry_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("isSafari")
-  override def isSafari_MUserAgent(): Boolean = js.native
+  override def isSafari_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("isSamsung")
-  override def isSamsung_MUserAgent(): Boolean = js.native
+  override def isSamsung_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("isSeaMonkey")
-  override def isSeaMonkey_MUserAgent(): Boolean = js.native
+  override def isSeaMonkey_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("isSilk")
-  override def isSilk_MUserAgent(): Boolean = js.native
+  override def isSilk_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("isSmartTV")
-  override def isSmartTV_MUserAgent(): Boolean = js.native
+  override def isSmartTV_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("isTablet")
-  override def isTablet_MUserAgent(): Boolean = js.native
+  override def isTablet_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("isWebkit")
-  override def isWebkit_MUserAgent(): Boolean = js.native
+  override def isWebkit_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("isWinJs")
-  override def isWinJs_MUserAgent(): Boolean = js.native
+  override def isWinJs_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("isWindowsPhone")
-  override def isWindowsPhone_MUserAgent(): Boolean = js.native
+  override def isWindowsPhone_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("isWindows")
-  override def isWindows_MUserAgent(): Boolean = js.native
+  override def isWindows_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("isiPad")
-  override def isiPad_MUserAgent(): Boolean = js.native
+  override def isiPad_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("isiPhone")
-  override def isiPhone_MUserAgent(): Boolean = js.native
+  override def isiPhone_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("isiPod")
-  override def isiPod_MUserAgent(): Boolean = js.native
+  override def isiPod_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("os")
-  override def os_MUserAgent(): String = js.native
+  override def os_MUserAgent: String = js.native
   /* CompleteClass */
   @JSName("platform")
-  override def platform_MUserAgent(): String = js.native
+  override def platform_MUserAgent: String = js.native
   /* CompleteClass */
   @JSName("silkAccelerated")
-  override def silkAccelerated_MUserAgent(): Boolean = js.native
+  override def silkAccelerated_MUserAgent: Boolean = js.native
   /* CompleteClass */
   @JSName("source")
-  override def source_MUserAgent(): String = js.native
+  override def source_MUserAgent: String = js.native
   /* CompleteClass */
   @JSName("version")
-  override def version_MUserAgent(): String = js.native
+  override def version_MUserAgent: String = js.native
 }
 

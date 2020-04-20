@@ -66,7 +66,6 @@ object buddhist_ {
     locale: js.Object
   ): buddhist_ = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction3(add), compare = js.Any.fromFunction3(compare), difference = js.Any.fromFunction3(difference), getDaysInMonth = js.Any.fromFunction1(getDaysInMonth), isLeapYear = js.Any.fromFunction1(isLeapYear), locale = locale.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[buddhist_]
   }
 }

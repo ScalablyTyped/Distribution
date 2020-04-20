@@ -14,12 +14,10 @@ trait GridWrap extends js.Object
 
 object GridWrap {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def nowrap: nowrap_ = "nowrap".asInstanceOf[nowrap_]
   @scala.inline
-  def nowrap: nowrap_ = this.cast("nowrap")
+  def wrap: typings.materialUiCore.materialUiCoreStrings.wrap = "wrap".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.wrap]
   @scala.inline
-  def wrap: typings.materialUiCore.materialUiCoreStrings.wrap = this.cast("wrap")
-  @scala.inline
-  def `wrap-reverse`: typings.materialUiCore.materialUiCoreStrings.`wrap-reverse` = this.cast("wrap-reverse")
+  def `wrap-reverse`: typings.materialUiCore.materialUiCoreStrings.`wrap-reverse` = "wrap-reverse".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`wrap-reverse`]
 }
 

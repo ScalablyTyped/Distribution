@@ -12,7 +12,6 @@ object ISensorsApiResponse {
   @scala.inline
   def apply(sensors: js.Array[ISensor]): ISensorsApiResponse = {
     val __obj = js.Dynamic.literal(sensors = sensors.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISensorsApiResponse]
   }
 }

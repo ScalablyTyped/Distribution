@@ -16,18 +16,16 @@ trait LogLevelString extends js.Object
 
 object LogLevelString {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def debug: typings.firebaseLogger.firebaseLoggerStrings.debug = "debug".asInstanceOf[typings.firebaseLogger.firebaseLoggerStrings.debug]
   @scala.inline
-  def debug: typings.firebaseLogger.firebaseLoggerStrings.debug = this.cast("debug")
+  def error: typings.firebaseLogger.firebaseLoggerStrings.error = "error".asInstanceOf[typings.firebaseLogger.firebaseLoggerStrings.error]
   @scala.inline
-  def error: typings.firebaseLogger.firebaseLoggerStrings.error = this.cast("error")
+  def info: typings.firebaseLogger.firebaseLoggerStrings.info = "info".asInstanceOf[typings.firebaseLogger.firebaseLoggerStrings.info]
   @scala.inline
-  def info: typings.firebaseLogger.firebaseLoggerStrings.info = this.cast("info")
+  def silent: typings.firebaseLogger.firebaseLoggerStrings.silent = "silent".asInstanceOf[typings.firebaseLogger.firebaseLoggerStrings.silent]
   @scala.inline
-  def silent: typings.firebaseLogger.firebaseLoggerStrings.silent = this.cast("silent")
+  def verbose: typings.firebaseLogger.firebaseLoggerStrings.verbose = "verbose".asInstanceOf[typings.firebaseLogger.firebaseLoggerStrings.verbose]
   @scala.inline
-  def verbose: typings.firebaseLogger.firebaseLoggerStrings.verbose = this.cast("verbose")
-  @scala.inline
-  def warn: typings.firebaseLogger.firebaseLoggerStrings.warn = this.cast("warn")
+  def warn: typings.firebaseLogger.firebaseLoggerStrings.warn = "warn".asInstanceOf[typings.firebaseLogger.firebaseLoggerStrings.warn]
 }
 

@@ -13,7 +13,6 @@ object ReposGetBranchResponseProtectionRequiredStatusChecks {
   @scala.inline
   def apply(contexts: js.Array[String], enforcement_level: String): ReposGetBranchResponseProtectionRequiredStatusChecks = {
     val __obj = js.Dynamic.literal(contexts = contexts.asInstanceOf[js.Any], enforcement_level = enforcement_level.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReposGetBranchResponseProtectionRequiredStatusChecks]
   }
 }

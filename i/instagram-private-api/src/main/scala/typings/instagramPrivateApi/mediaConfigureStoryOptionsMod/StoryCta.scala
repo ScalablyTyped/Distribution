@@ -13,7 +13,6 @@ object StoryCta {
   @scala.inline
   def apply(links: js.Array[AnonWebUri]): StoryCta = {
     val __obj = js.Dynamic.literal(links = links.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StoryCta]
   }
 }

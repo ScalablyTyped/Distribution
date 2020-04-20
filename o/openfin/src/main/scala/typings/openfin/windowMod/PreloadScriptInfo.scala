@@ -15,7 +15,6 @@ object PreloadScriptInfo {
   @scala.inline
   def apply(state: `load-failed` | failed | succeeded): PreloadScriptInfo = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PreloadScriptInfo]
   }
 }

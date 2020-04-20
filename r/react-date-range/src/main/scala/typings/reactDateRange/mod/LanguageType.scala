@@ -19,24 +19,22 @@ trait LanguageType extends js.Object
 
 object LanguageType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def cn: typings.reactDateRange.reactDateRangeStrings.cn = "cn".asInstanceOf[typings.reactDateRange.reactDateRangeStrings.cn]
   @scala.inline
-  def cn: typings.reactDateRange.reactDateRangeStrings.cn = this.cast("cn")
+  def de: typings.reactDateRange.reactDateRangeStrings.de = "de".asInstanceOf[typings.reactDateRange.reactDateRangeStrings.de]
   @scala.inline
-  def de: typings.reactDateRange.reactDateRangeStrings.de = this.cast("de")
+  def es: typings.reactDateRange.reactDateRangeStrings.es = "es".asInstanceOf[typings.reactDateRange.reactDateRangeStrings.es]
   @scala.inline
-  def es: typings.reactDateRange.reactDateRangeStrings.es = this.cast("es")
+  def fr: typings.reactDateRange.reactDateRangeStrings.fr = "fr".asInstanceOf[typings.reactDateRange.reactDateRangeStrings.fr]
   @scala.inline
-  def fr: typings.reactDateRange.reactDateRangeStrings.fr = this.cast("fr")
+  def it: typings.reactDateRange.reactDateRangeStrings.it = "it".asInstanceOf[typings.reactDateRange.reactDateRangeStrings.it]
   @scala.inline
-  def it: typings.reactDateRange.reactDateRangeStrings.it = this.cast("it")
+  def jp: typings.reactDateRange.reactDateRangeStrings.jp = "jp".asInstanceOf[typings.reactDateRange.reactDateRangeStrings.jp]
   @scala.inline
-  def jp: typings.reactDateRange.reactDateRangeStrings.jp = this.cast("jp")
+  def ko: typings.reactDateRange.reactDateRangeStrings.ko = "ko".asInstanceOf[typings.reactDateRange.reactDateRangeStrings.ko]
   @scala.inline
-  def ko: typings.reactDateRange.reactDateRangeStrings.ko = this.cast("ko")
+  def ru: typings.reactDateRange.reactDateRangeStrings.ru = "ru".asInstanceOf[typings.reactDateRange.reactDateRangeStrings.ru]
   @scala.inline
-  def ru: typings.reactDateRange.reactDateRangeStrings.ru = this.cast("ru")
-  @scala.inline
-  def tr: typings.reactDateRange.reactDateRangeStrings.tr = this.cast("tr")
+  def tr: typings.reactDateRange.reactDateRangeStrings.tr = "tr".asInstanceOf[typings.reactDateRange.reactDateRangeStrings.tr]
 }
 

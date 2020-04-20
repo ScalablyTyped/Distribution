@@ -17,7 +17,6 @@ object ErrorObject {
   @scala.inline
   def apply(message: String, status: Double): ErrorObject = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ErrorObject]
   }
 }

@@ -16,7 +16,6 @@ object AnonValue {
   @scala.inline
   def apply(enable: Boolean, value: SAMEORIGIN | DENY | `ALLOW-FROM`): AnonValue = {
     val __obj = js.Dynamic.literal(enable = enable.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonValue]
   }
 }

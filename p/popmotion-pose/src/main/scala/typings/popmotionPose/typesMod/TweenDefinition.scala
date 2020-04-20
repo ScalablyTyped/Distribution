@@ -2,6 +2,17 @@ package typings.popmotionPose.typesMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.popmotionEasing.mod.Easing
+import typings.popmotionPose.popmotionPoseStrings.anticipate
+import typings.popmotionPose.popmotionPoseStrings.backIn
+import typings.popmotionPose.popmotionPoseStrings.backInOut
+import typings.popmotionPose.popmotionPoseStrings.backOut
+import typings.popmotionPose.popmotionPoseStrings.circIn
+import typings.popmotionPose.popmotionPoseStrings.circInOut
+import typings.popmotionPose.popmotionPoseStrings.circOut
+import typings.popmotionPose.popmotionPoseStrings.easeIn
+import typings.popmotionPose.popmotionPoseStrings.easeInOut
+import typings.popmotionPose.popmotionPoseStrings.easeOut
+import typings.popmotionPose.popmotionPoseStrings.linear
 import typings.popmotionPose.popmotionPoseStrings.tween
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +22,9 @@ import scala.scalajs.js.annotation._
 trait TweenDefinition extends TransitionDefinition {
   var delay: js.UndefOr[Double] = js.undefined
   var duration: js.UndefOr[Double] = js.undefined
-  var ease: js.UndefOr[Easing | js.Array[Easing] | StringDictionary[Easing] | String | CubicBezierArgs] = js.undefined
+  var ease: js.UndefOr[
+    Easing | js.Array[Easing] | StringDictionary[Easing] | linear | easeIn | easeOut | easeInOut | circIn | circOut | circInOut | backIn | backOut | backInOut | anticipate | CubicBezierArgs
+  ] = js.undefined
   var elapsed: js.UndefOr[Double] = js.undefined
   var flip: js.UndefOr[Double] = js.undefined
   var flipCount: js.UndefOr[Double] = js.undefined
@@ -35,7 +48,7 @@ object TweenDefinition {
     `type`: tween,
     delay: Int | Double = null,
     duration: Int | Double = null,
-    ease: Easing | js.Array[Easing] | StringDictionary[Easing] | String | CubicBezierArgs = null,
+    ease: Easing | js.Array[Easing] | StringDictionary[Easing] | linear | easeIn | easeOut | easeInOut | circIn | circOut | circInOut | backIn | backOut | backInOut | anticipate | CubicBezierArgs = null,
     elapsed: Int | Double = null,
     flip: Int | Double = null,
     flipCount: Int | Double = null,
