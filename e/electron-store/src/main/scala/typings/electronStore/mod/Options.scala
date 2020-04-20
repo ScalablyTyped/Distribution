@@ -1,6 +1,7 @@
 package typings.electronStore.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.conf.mod.Conf
 import typings.node.Buffer
 import typings.node.NodeJS.TypedArray
@@ -28,7 +29,7 @@ trait Options[T] extends js.Object {
   var schema: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: conf.conf.Schema}
-    */ typings.electronStore.electronStoreStrings.Options with js.Any
+    */ typings.electronStore.electronStoreStrings.Options with TopLevel[js.Any]
   ] = js.undefined
   var serialize: js.UndefOr[js.Function1[/* value */ T, String]] = js.undefined
   var watch: js.UndefOr[Boolean] = js.undefined
@@ -48,7 +49,7 @@ object Options {
     name: String = null,
     schema: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: conf.conf.Schema}
-    */ typings.electronStore.electronStoreStrings.Options with js.Any = null,
+    */ typings.electronStore.electronStoreStrings.Options with TopLevel[js.Any] = null,
     serialize: /* value */ T => String = null,
     watch: js.UndefOr[Boolean] = js.undefined
   ): Options[T] = {

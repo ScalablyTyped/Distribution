@@ -16,7 +16,6 @@ object DescribeMatchmakingInput {
   @scala.inline
   def apply(TicketIds: MatchmakingIdList): DescribeMatchmakingInput = {
     val __obj = js.Dynamic.literal(TicketIds = TicketIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeMatchmakingInput]
   }
 }

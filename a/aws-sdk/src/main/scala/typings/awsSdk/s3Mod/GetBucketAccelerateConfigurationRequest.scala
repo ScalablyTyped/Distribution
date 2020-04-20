@@ -16,7 +16,6 @@ object GetBucketAccelerateConfigurationRequest {
   @scala.inline
   def apply(Bucket: BucketName): GetBucketAccelerateConfigurationRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetBucketAccelerateConfigurationRequest]
   }
 }

@@ -13,7 +13,6 @@ object UpdateApnsVoipChannelResponse {
   @scala.inline
   def apply(APNSVoipChannelResponse: APNSVoipChannelResponse): UpdateApnsVoipChannelResponse = {
     val __obj = js.Dynamic.literal(APNSVoipChannelResponse = APNSVoipChannelResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateApnsVoipChannelResponse]
   }
 }

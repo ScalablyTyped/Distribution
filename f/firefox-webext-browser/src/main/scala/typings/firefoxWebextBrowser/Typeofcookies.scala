@@ -55,7 +55,6 @@ object Typeofcookies {
     set: AnonExpirationDate => js.Promise[Cookie]
   ): Typeofcookies = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), getAll = js.Any.fromFunction1(getAll), getAllCookieStores = js.Any.fromFunction0(getAllCookieStores), onChanged = onChanged.asInstanceOf[js.Any], remove = js.Any.fromFunction1(remove), set = js.Any.fromFunction1(set))
-  
     __obj.asInstanceOf[Typeofcookies]
   }
 }

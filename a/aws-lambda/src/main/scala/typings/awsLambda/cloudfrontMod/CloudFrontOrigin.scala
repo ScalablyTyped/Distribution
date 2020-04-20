@@ -14,13 +14,11 @@ object CloudFrontOrigin {
   @scala.inline
   def AnonS3(s3: CloudFrontS3Origin): CloudFrontOrigin = {
     val __obj = js.Dynamic.literal(s3 = s3.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CloudFrontOrigin]
   }
   @scala.inline
   def AnonCustom(custom: CloudFrontCustomOrigin): CloudFrontOrigin = {
     val __obj = js.Dynamic.literal(custom = custom.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CloudFrontOrigin]
   }
 }

@@ -14,7 +14,6 @@ object AnonParsePath {
   @scala.inline
   def apply(parsePath: js.Any, parsePoint: js.Any, parsePoints: js.Any): AnonParsePath = {
     val __obj = js.Dynamic.literal(parsePath = parsePath.asInstanceOf[js.Any], parsePoint = parsePoint.asInstanceOf[js.Any], parsePoints = parsePoints.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonParsePath]
   }
 }

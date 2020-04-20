@@ -68,7 +68,6 @@ object DirectionsRoute {
     waypoint_order: js.Array[Double]
   ): DirectionsRoute = {
     val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], copyrights = copyrights.asInstanceOf[js.Any], fare = fare.asInstanceOf[js.Any], legs = legs.asInstanceOf[js.Any], overview_path = overview_path.asInstanceOf[js.Any], overview_polyline = overview_polyline.asInstanceOf[js.Any], warnings = warnings.asInstanceOf[js.Any], waypoint_order = waypoint_order.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DirectionsRoute]
   }
 }

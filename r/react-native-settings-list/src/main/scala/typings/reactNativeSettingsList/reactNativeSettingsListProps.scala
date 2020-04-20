@@ -13,7 +13,7 @@ trait reactNativeSettingsListProps {
   def ItemProps: typings.reactNativeSettingsList.mod.ItemProps.type = typings.reactNativeSettingsList.mod.ItemProps
   type ItemProps = typings.reactNativeSettingsList.mod.ItemProps
   @scala.inline
-  def ReactNativeSettingsListProps: SettingsListProps.type = typings.reactNativeSettingsList.mod.SettingsListProps
+  def ReactNativeSettingsListProps: SettingsListProps.type = SettingsListProps
   type ReactNativeSettingsListProps = SettingsListProps
 }
 

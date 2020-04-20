@@ -16,7 +16,6 @@ object DeleteDatasetRequest {
   @scala.inline
   def apply(datasetArn: Arn): DeleteDatasetRequest = {
     val __obj = js.Dynamic.literal(datasetArn = datasetArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteDatasetRequest]
   }
 }

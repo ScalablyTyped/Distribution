@@ -21,7 +21,6 @@ object WebCLEvent {
     setCallback: (CommandExecutionStatus, WebCLCallback) => Unit
   ): WebCLEvent = {
     val __obj = js.Dynamic.literal(getInfo = js.Any.fromFunction1(getInfo), getProfilingInfo = js.Any.fromFunction1(getProfilingInfo), release = js.Any.fromFunction0(release), setCallback = js.Any.fromFunction2(setCallback))
-  
     __obj.asInstanceOf[WebCLEvent]
   }
 }

@@ -15,7 +15,6 @@ object PullHookChangeEvent {
   @scala.inline
   def apply(state: initial | preaction | action): PullHookChangeEvent = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PullHookChangeEvent]
   }
 }

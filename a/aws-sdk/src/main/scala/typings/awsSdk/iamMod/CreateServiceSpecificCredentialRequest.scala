@@ -20,7 +20,6 @@ object CreateServiceSpecificCredentialRequest {
   @scala.inline
   def apply(ServiceName: serviceName, UserName: userNameType): CreateServiceSpecificCredentialRequest = {
     val __obj = js.Dynamic.literal(ServiceName = ServiceName.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CreateServiceSpecificCredentialRequest]
   }
 }

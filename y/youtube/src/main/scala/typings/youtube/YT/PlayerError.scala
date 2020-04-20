@@ -23,28 +23,26 @@ object PlayerError {
   		 * The owner of the requested video does not allow it to be played in embedded players.
   		 */
   @scala.inline
-  def EmbeddingNotAllowed: `101` = this.cast(101)
+  def EmbeddingNotAllowed: `101` = 101.asInstanceOf[`101`]
   /**
   		 * This error is the same as 101. It's just a 101 error in disguise!
   		 */
   @scala.inline
-  def EmbeddingNotAllowed2: `150` = this.cast(150)
+  def EmbeddingNotAllowed2: `150` = 150.asInstanceOf[`150`]
   /**
   		 * The requested content cannot be played in an HTML5 player.
   		 */
   @scala.inline
-  def Html5Error: `5` = this.cast(5)
+  def Html5Error: `5` = 5.asInstanceOf[`5`]
   /**
   		 * The request contained an invalid parameter value.
   		 */
   @scala.inline
-  def InvalidParam: `2` = this.cast(2)
+  def InvalidParam: `2` = 2.asInstanceOf[`2`]
   /**
   		 * The video requested was not found.
   		 */
   @scala.inline
-  def VideoNotFound: `100` = this.cast(100)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def VideoNotFound: `100` = 100.asInstanceOf[`100`]
 }
 

@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 object uploadListMod extends js.Object {
   @js.native
   trait UploadList
-    extends Component[UploadListProps, js.Any, js.Any] {
+    extends Component[UploadListProps[js.Any], js.Any, js.Any] {
     @JSName("componentDidUpdate")
     def componentDidUpdate_MUploadList(): Unit = js.native
     def handleActionIconRender(customIcon: ReactNode, callback: js.Function0[Unit]): Element = js.native

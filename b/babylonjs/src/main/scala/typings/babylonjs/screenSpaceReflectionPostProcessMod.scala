@@ -142,7 +142,7 @@ object screenSpaceReflectionPostProcessMod extends js.Object {
       * Gets wether or not smoothing reflections is enabled.
       * Enabling smoothing will require more GPU power and can generate a drop in FPS.
       */
-    def enableSmoothReflections(): Boolean = js.native
+    def enableSmoothReflections: Boolean = js.native
     /**
       * Sets wether or not smoothing reflections is enabled.
       * Enabling smoothing will require more GPU power and can generate a drop in FPS.
@@ -152,7 +152,7 @@ object screenSpaceReflectionPostProcessMod extends js.Object {
       * Gets the number of samples taken while computing reflections. More samples count is high,
       * more the post-process wil require GPU power and can generate a drop in FPS. Basically in interval [25, 100].
       */
-    def reflectionSamples(): Double = js.native
+    def reflectionSamples: Double = js.native
     /**
       * Sets the number of samples taken while computing reflections. More samples count is high,
       * more the post-process wil require GPU power and can generate a drop in FPS. Basically in interval [25, 100].
@@ -163,7 +163,7 @@ object screenSpaceReflectionPostProcessMod extends js.Object {
       * more the post-process will require GPU power and can generate a drop in FPS.
       * Default value (5.0) work pretty well in all cases but can be adjusted.
       */
-    def smoothSteps(): Double = js.native
+    def smoothSteps: Double = js.native
     def smoothSteps(steps: Double): js.Any = js.native
   }
   

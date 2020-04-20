@@ -23,7 +23,6 @@ object PopoverControllerRenderProps {
     setPopoverAnchor: js.Any => Unit
   ): PopoverControllerRenderProps = {
     val __obj = js.Dynamic.literal(closePopover = js.Any.fromFunction0(closePopover), openPopover = js.Any.fromFunction0(openPopover), popoverAnchorRect = popoverAnchorRect.asInstanceOf[js.Any], popoverVisible = popoverVisible.asInstanceOf[js.Any], setPopoverAnchor = js.Any.fromFunction1(setPopoverAnchor))
-  
     __obj.asInstanceOf[PopoverControllerRenderProps]
   }
 }

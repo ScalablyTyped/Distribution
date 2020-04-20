@@ -35,7 +35,6 @@ object ICalenderStrings {
     qMonthNames: js.Array[String]
   ): ICalenderStrings = {
     val __obj = js.Dynamic.literal(qDayNames = qDayNames.asInstanceOf[js.Any], qLongDayNames = qLongDayNames.asInstanceOf[js.Any], qLongMonthNames = qLongMonthNames.asInstanceOf[js.Any], qMonthNames = qMonthNames.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICalenderStrings]
   }
 }

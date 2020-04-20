@@ -16,7 +16,7 @@ object baseMod extends js.Object {
     var promptToInstallCapacitor: js.Any = js.native
     def checkCapacitor(runinfo: CommandInstanceInfo): js.Promise[Unit] = js.native
     def checkForPlatformInstallation(platform: String): js.Promise[Unit] = js.native
-    def integration(): RequiredProjectIntegratio = js.native
+    def integration: RequiredProjectIntegratio = js.native
     def preRunChecks(runinfo: CommandInstanceInfo): js.Promise[Unit] = js.native
     def runCapacitor(argList: js.Array[String]): js.Promise[Unit] = js.native
   }

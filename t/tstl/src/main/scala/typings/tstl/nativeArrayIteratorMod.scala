@@ -19,7 +19,7 @@ object nativeArrayIteratorMod extends js.Object {
     def next(): NativeArrayIterator[T] = js.native
     def prev(): NativeArrayIterator[T] = js.native
     def swap(obj: NativeArrayIterator[T]): Unit = js.native
-    def value(): T = js.native
+    def value: T = js.native
   }
   
 }

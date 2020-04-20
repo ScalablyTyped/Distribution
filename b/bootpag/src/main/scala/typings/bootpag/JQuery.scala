@@ -25,7 +25,6 @@ object JQuery {
   @scala.inline
   def apply(bootpag: Options => JQuery, on: (page, PageEventHandler) => JQuery): JQuery = {
     val __obj = js.Dynamic.literal(bootpag = js.Any.fromFunction1(bootpag), on = js.Any.fromFunction2(on))
-  
     __obj.asInstanceOf[JQuery]
   }
 }

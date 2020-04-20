@@ -36,32 +36,30 @@ trait styleFontStretch extends js.Object
 
 object styleFontStretch {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleFontStretchCondensed: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def styleFontStretchCondensed: `5` = this.cast(5)
+  def styleFontStretchExpanded: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def styleFontStretchExpanded: `9` = this.cast(9)
+  def styleFontStretchExtraCondensed: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def styleFontStretchExtraCondensed: `4` = this.cast(4)
+  def styleFontStretchExtraExpanded: `10` = 10.asInstanceOf[`10`]
   @scala.inline
-  def styleFontStretchExtraExpanded: `10` = this.cast(10)
+  def styleFontStretchNarrower: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleFontStretchNarrower: `2` = this.cast(2)
+  def styleFontStretchNormal: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def styleFontStretchNormal: `7` = this.cast(7)
+  def styleFontStretchNotSet: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleFontStretchNotSet: `0` = this.cast(0)
+  def styleFontStretchSemiCondensed: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def styleFontStretchSemiCondensed: `6` = this.cast(6)
+  def styleFontStretchSemiExpanded: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def styleFontStretchSemiExpanded: `8` = this.cast(8)
+  def styleFontStretchUltraCondensed: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def styleFontStretchUltraCondensed: `3` = this.cast(3)
+  def styleFontStretchUltraExpanded: `11` = 11.asInstanceOf[`11`]
   @scala.inline
-  def styleFontStretchUltraExpanded: `11` = this.cast(11)
+  def styleFontStretchWider: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleFontStretchWider: `1` = this.cast(1)
-  @scala.inline
-  def styleFontStretch_Max: `2147483647` = this.cast(2147483647)
+  def styleFontStretch_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

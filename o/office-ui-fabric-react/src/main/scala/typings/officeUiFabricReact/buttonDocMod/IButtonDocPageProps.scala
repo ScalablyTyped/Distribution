@@ -13,7 +13,6 @@ object IButtonDocPageProps {
   @scala.inline
   def apply(areButtonsChecked: Boolean, areButtonsDisabled: Boolean): IButtonDocPageProps = {
     val __obj = js.Dynamic.literal(areButtonsChecked = areButtonsChecked.asInstanceOf[js.Any], areButtonsDisabled = areButtonsDisabled.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IButtonDocPageProps]
   }
 }

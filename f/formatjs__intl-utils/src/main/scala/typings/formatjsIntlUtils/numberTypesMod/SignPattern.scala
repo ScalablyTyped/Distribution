@@ -14,7 +14,6 @@ object SignPattern {
   @scala.inline
   def apply(negativePattern: String, positivePattern: String, zeroPattern: String): SignPattern = {
     val __obj = js.Dynamic.literal(negativePattern = negativePattern.asInstanceOf[js.Any], positivePattern = positivePattern.asInstanceOf[js.Any], zeroPattern = zeroPattern.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SignPattern]
   }
 }

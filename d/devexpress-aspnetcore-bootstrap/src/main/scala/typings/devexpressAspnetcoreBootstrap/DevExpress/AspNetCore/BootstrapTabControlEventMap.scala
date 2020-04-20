@@ -25,7 +25,6 @@ object BootstrapTabControlEventMap {
     tabClick: TabControlTabClickEventArgs
   ): BootstrapTabControlEventMap = {
     val __obj = js.Dynamic.literal(activeTabChanged = activeTabChanged.asInstanceOf[js.Any], activeTabChanging = activeTabChanging.asInstanceOf[js.Any], beginCallback = beginCallback.asInstanceOf[js.Any], callbackError = callbackError.asInstanceOf[js.Any], endCallback = endCallback.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], tabClick = tabClick.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BootstrapTabControlEventMap]
   }
 }

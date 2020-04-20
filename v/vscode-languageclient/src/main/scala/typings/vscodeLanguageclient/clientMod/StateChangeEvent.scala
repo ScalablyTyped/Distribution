@@ -13,7 +13,6 @@ object StateChangeEvent {
   @scala.inline
   def apply(newState: State, oldState: State): StateChangeEvent = {
     val __obj = js.Dynamic.literal(newState = newState.asInstanceOf[js.Any], oldState = oldState.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StateChangeEvent]
   }
 }

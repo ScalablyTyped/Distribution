@@ -15,7 +15,6 @@ object ojModuleSettableProperties {
   @scala.inline
   def apply(animation: js.Object, config: AnonCleanupMode): ojModuleSettableProperties = {
     val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ojModuleSettableProperties]
   }
 }

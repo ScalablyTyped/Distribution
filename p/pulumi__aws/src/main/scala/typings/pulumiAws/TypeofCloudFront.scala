@@ -23,7 +23,6 @@ object TypeofCloudFront {
     Types: TypeofCloudFront
   ): TypeofCloudFront = {
     val __obj = js.Dynamic.literal(Signer = Signer.asInstanceOf[js.Any], Types = Types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TypeofCloudFront]
   }
 }

@@ -122,7 +122,6 @@ object typematic {
     trigger: (Event_, js.Object, HTMLElement, js.Function, js.Object, Double, Double, Double) => Unit
   ): typematic = {
     val __obj = js.Dynamic.literal(addKeyListener = js.Any.fromFunction7(addKeyListener), addListener = js.Any.fromFunction8(addListener), addMouseListener = js.Any.fromFunction6(addMouseListener), stop = js.Any.fromFunction0(stop), trigger = js.Any.fromFunction8(trigger))
-  
     __obj.asInstanceOf[typematic]
   }
 }

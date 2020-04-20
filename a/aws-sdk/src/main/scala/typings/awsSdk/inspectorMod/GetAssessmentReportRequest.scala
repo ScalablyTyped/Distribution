@@ -24,7 +24,6 @@ object GetAssessmentReportRequest {
   @scala.inline
   def apply(assessmentRunArn: Arn, reportFileFormat: ReportFileFormat, reportType: ReportType): GetAssessmentReportRequest = {
     val __obj = js.Dynamic.literal(assessmentRunArn = assessmentRunArn.asInstanceOf[js.Any], reportFileFormat = reportFileFormat.asInstanceOf[js.Any], reportType = reportType.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetAssessmentReportRequest]
   }
 }

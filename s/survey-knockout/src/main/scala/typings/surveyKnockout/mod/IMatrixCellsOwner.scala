@@ -19,7 +19,6 @@ object IMatrixCellsOwner {
     getRows: () => js.Array[_]
   ): IMatrixCellsOwner = {
     val __obj = js.Dynamic.literal(getColumns = js.Any.fromFunction0(getColumns), getLocale = js.Any.fromFunction0(getLocale), getMarkdownHtml = js.Any.fromFunction1(getMarkdownHtml), getProcessedText = js.Any.fromFunction1(getProcessedText), getRows = js.Any.fromFunction0(getRows))
-  
     __obj.asInstanceOf[IMatrixCellsOwner]
   }
 }

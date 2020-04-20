@@ -15,7 +15,6 @@ object CustomAppsResource {
   @scala.inline
   def apply(create: AnonAccount => Request_[CustomApp]): CustomAppsResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
-  
     __obj.asInstanceOf[CustomAppsResource]
   }
 }

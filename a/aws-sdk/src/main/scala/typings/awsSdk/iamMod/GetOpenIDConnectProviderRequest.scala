@@ -16,7 +16,6 @@ object GetOpenIDConnectProviderRequest {
   @scala.inline
   def apply(OpenIDConnectProviderArn: arnType): GetOpenIDConnectProviderRequest = {
     val __obj = js.Dynamic.literal(OpenIDConnectProviderArn = OpenIDConnectProviderArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetOpenIDConnectProviderRequest]
   }
 }

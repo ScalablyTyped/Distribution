@@ -23,7 +23,6 @@ object BlinkMemoryInfo {
   @scala.inline
   def apply(allocated: Double, marked: Double, total: Double): BlinkMemoryInfo = {
     val __obj = js.Dynamic.literal(allocated = allocated.asInstanceOf[js.Any], marked = marked.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BlinkMemoryInfo]
   }
 }

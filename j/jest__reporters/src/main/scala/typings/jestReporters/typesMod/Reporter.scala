@@ -26,7 +26,6 @@ object Reporter {
     onTestStart: Test => js.Promise[Unit] | Unit
   ): Reporter = {
     val __obj = js.Dynamic.literal(getLastError = js.Any.fromFunction0(getLastError), onRunComplete = js.Any.fromFunction2(onRunComplete), onRunStart = js.Any.fromFunction2(onRunStart), onTestResult = js.Any.fromFunction3(onTestResult), onTestStart = js.Any.fromFunction1(onTestStart))
-  
     __obj.asInstanceOf[Reporter]
   }
 }

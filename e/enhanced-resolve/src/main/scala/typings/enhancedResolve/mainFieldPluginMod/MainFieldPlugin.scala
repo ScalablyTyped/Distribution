@@ -22,7 +22,6 @@ object MainFieldPlugin {
     target: String
   ): MainFieldPlugin = {
     val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), options = options.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MainFieldPlugin]
   }
 }

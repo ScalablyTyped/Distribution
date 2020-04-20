@@ -34,7 +34,6 @@ object AppUser {
     user: APIUser
   ): AppUser = {
     val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], allUsers = js.Any.fromFunction2(allUsers), callTimeout = callTimeout.asInstanceOf[js.Any], count = js.Any.fromFunction2(count), endpoint = endpoint.asInstanceOf[js.Any], getUser = js.Any.fromFunction1(getUser), setPassword = js.Any.fromFunction3(setPassword), setUser = js.Any.fromFunction2(setUser), systemKey = systemKey.asInstanceOf[js.Any], systemSecret = systemSecret.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AppUser]
   }
 }

@@ -16,7 +16,6 @@ object PhoneSingleFactorInfoOptions {
   @scala.inline
   def apply(phoneNumber: String): PhoneSingleFactorInfoOptions = {
     val __obj = js.Dynamic.literal(phoneNumber = phoneNumber.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PhoneSingleFactorInfoOptions]
   }
 }

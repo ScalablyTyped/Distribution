@@ -22,7 +22,7 @@ trait reactNativeMaterialUiProps {
   def BottomNavigationProps: typings.reactNativeMaterialUi.mod.BottomNavigationProps.type = typings.reactNativeMaterialUi.mod.BottomNavigationProps
   type BottomNavigationProps = typings.reactNativeMaterialUi.mod.BottomNavigationProps
   @scala.inline
-  def BottomNavigationActionProps: BottomNavigationAction.type = typings.reactNativeMaterialUi.mod.BottomNavigationAction
+  def BottomNavigationActionProps: BottomNavigationAction.type = BottomNavigationAction
   type BottomNavigationActionProps = BottomNavigationAction
   @scala.inline
   def ButtonProps: typings.reactNativeMaterialUi.mod.ButtonProps.type = typings.reactNativeMaterialUi.mod.ButtonProps
@@ -31,7 +31,7 @@ trait reactNativeMaterialUiProps {
   def CardProps: typings.reactNativeMaterialUi.mod.CardProps.type = typings.reactNativeMaterialUi.mod.CardProps
   type CardProps = typings.reactNativeMaterialUi.mod.CardProps
   @scala.inline
-  def CheckboxProps: CheckBoxProps.type = typings.reactNativeMaterialUi.mod.CheckBoxProps
+  def CheckboxProps: CheckBoxProps.type = CheckBoxProps
   type CheckboxProps = CheckBoxProps
   @scala.inline
   def DialogProps: typings.reactNativeMaterialUi.mod.DialogProps.type = typings.reactNativeMaterialUi.mod.DialogProps
@@ -88,10 +88,10 @@ trait reactNativeMaterialUiProps {
   def SubheaderProps: typings.reactNativeMaterialUi.mod.SubheaderProps.type = typings.reactNativeMaterialUi.mod.SubheaderProps
   type SubheaderProps = typings.reactNativeMaterialUi.mod.SubheaderProps
   @scala.inline
-  def ThemeContextConsumerProps: ThemeConsumerProps.type = typings.reactNativeMaterialUi.mod.ThemeConsumerProps
+  def ThemeContextConsumerProps: ThemeConsumerProps.type = ThemeConsumerProps
   type ThemeContextConsumerProps = ThemeConsumerProps
   @scala.inline
-  def ThemeContextProviderProps: ThemeProviderProps.type = typings.reactNativeMaterialUi.mod.ThemeProviderProps
+  def ThemeContextProviderProps: ThemeProviderProps.type = ThemeProviderProps
   type ThemeContextProviderProps = ThemeProviderProps
   @scala.inline
   def ToolbarProps: typings.reactNativeMaterialUi.mod.ToolbarProps.type = typings.reactNativeMaterialUi.mod.ToolbarProps

@@ -14,7 +14,6 @@ object PickImplmockResponse {
   @scala.inline
   def apply(mockResponse: js.Any | `false`): PickImplmockResponse = {
     val __obj = js.Dynamic.literal(mockResponse = mockResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplmockResponse]
   }
 }

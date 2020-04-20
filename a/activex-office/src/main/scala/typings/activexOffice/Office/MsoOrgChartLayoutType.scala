@@ -22,18 +22,16 @@ trait MsoOrgChartLayoutType extends js.Object
 
 object MsoOrgChartLayoutType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoOrgChartLayoutBothHanging: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoOrgChartLayoutBothHanging: `2` = this.cast(2)
+  def msoOrgChartLayoutDefault: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def msoOrgChartLayoutDefault: `5` = this.cast(5)
+  def msoOrgChartLayoutLeftHanging: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoOrgChartLayoutLeftHanging: `3` = this.cast(3)
+  def msoOrgChartLayoutMixed: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def msoOrgChartLayoutMixed: `-2` = this.cast(-2)
+  def msoOrgChartLayoutRightHanging: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoOrgChartLayoutRightHanging: `4` = this.cast(4)
-  @scala.inline
-  def msoOrgChartLayoutStandard: `1` = this.cast(1)
+  def msoOrgChartLayoutStandard: `1` = 1.asInstanceOf[`1`]
 }
 

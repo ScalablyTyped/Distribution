@@ -14,10 +14,8 @@ trait WdHorizontalLineWidthType extends js.Object
 
 object WdHorizontalLineWidthType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdHorizontalLineFixedWidth: `-2` = -2.asInstanceOf[`-2`]
   @scala.inline
-  def wdHorizontalLineFixedWidth: `-2` = this.cast(-2)
-  @scala.inline
-  def wdHorizontalLinePercentWidth: `-1` = this.cast(-1)
+  def wdHorizontalLinePercentWidth: `-1` = -1.asInstanceOf[`-1`]
 }
 

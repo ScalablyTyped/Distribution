@@ -2,15 +2,32 @@ package typings.titanium.Titanium.UI
 
 import typings.titanium.Titanium.Blob
 import typings.titanium.Titanium.Filesystem.File
+import typings.titanium.titaniumStrings.click
+import typings.titanium.titaniumStrings.dblclick
+import typings.titanium.titaniumStrings.doubletap
+import typings.titanium.titaniumStrings.focus
+import typings.titanium.titaniumStrings.keypressed
+import typings.titanium.titaniumStrings.longclick
+import typings.titanium.titaniumStrings.longpress
+import typings.titanium.titaniumStrings.pinch
+import typings.titanium.titaniumStrings.postlayout
+import typings.titanium.titaniumStrings.singletap
+import typings.titanium.titaniumStrings.swipe
+import typings.titanium.titaniumStrings.touchcancel
+import typings.titanium.titaniumStrings.touchend
+import typings.titanium.titaniumStrings.touchmove
+import typings.titanium.titaniumStrings.touchstart
+import typings.titanium.titaniumStrings.twofingertap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * A toolbar, which can contain buttons and certain other controls.
+		 * A Toolbar can contain buttons, as well as certain other widgets, including text fields and labels.
 		 */
+@JSGlobal("Titanium.UI.Toolbar")
 @js.native
-trait Toolbar extends View {
+class Toolbar () extends View {
   /**
   			 * Background color for the toolbar, as a color name or hex triplet.
   			 */
@@ -71,8 +88,41 @@ trait Toolbar extends View {
   			 * Collapses expandend ActionViews and hides overflow menu
   			 */
   def dismissPopupMenus(): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_click(name: click, event: ToolbarClickEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_dblclick(name: dblclick, event: ToolbarDblclickEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_doubletap(name: doubletap, event: ToolbarDoubletapEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_focus(name: focus, event: ToolbarFocusEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_keypressed(name: keypressed, event: ToolbarKeypressedEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_longclick(name: longclick, event: ToolbarLongclickEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_longpress(name: longpress, event: ToolbarLongpressEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_pinch(name: pinch, event: ToolbarPinchEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_postlayout(name: postlayout, event: ToolbarPostlayoutEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_singletap(name: singletap, event: ToolbarSingletapEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_swipe(name: swipe, event: ToolbarSwipeEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_touchcancel(name: touchcancel, event: ToolbarTouchcancelEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_touchend(name: touchend, event: ToolbarTouchendEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_touchmove(name: touchmove, event: ToolbarTouchmoveEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_touchstart(name: touchstart, event: ToolbarTouchstartEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_twofingertap(name: twofingertap, event: ToolbarTwofingertapEvent): Unit = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Toolbar.barColor> property.
+  			 * @deprecated Access <Titanium.UI.Toolbar.barColor> instead.
   			 */
   def getBarColor(): String = js.native
   /**
@@ -81,6 +131,7 @@ trait Toolbar extends View {
   def getContentInsetEnd(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Toolbar.contentInsetEndWithActions> property.
+  			 * @deprecated Access <Titanium.UI.Toolbar.contentInsetEndWithActions> instead.
   			 */
   def getContentInsetEndWithActions(): Double = js.native
   /**
@@ -97,6 +148,7 @@ trait Toolbar extends View {
   def getContentInsetStart(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Toolbar.contentInsetStartWithNavigation> property.
+  			 * @deprecated Access <Titanium.UI.Toolbar.contentInsetStartWithNavigation> instead.
   			 */
   def getContentInsetStartWithNavigation(): Double = js.native
   /**
@@ -117,38 +169,47 @@ trait Toolbar extends View {
   def getCurrentContentInsetStart(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Toolbar.items> property.
+  			 * @deprecated Access <Titanium.UI.Toolbar.items> instead.
   			 */
   def getItems(): js.Array[View] = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Toolbar.logo> property.
+  			 * @deprecated Access <Titanium.UI.Toolbar.logo> instead.
   			 */
   def getLogo(): String | Blob | File = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Toolbar.navigationIcon> property.
+  			 * @deprecated Access <Titanium.UI.Toolbar.navigationIcon> instead.
   			 */
   def getNavigationIcon(): String | Blob | File = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Toolbar.overflowIcon> property.
+  			 * @deprecated Access <Titanium.UI.Toolbar.overflowIcon> instead.
   			 */
   def getOverflowIcon(): String | Blob | File = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Toolbar.subtitle> property.
+  			 * @deprecated Access <Titanium.UI.Toolbar.subtitle> instead.
   			 */
   def getSubtitle(): String = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Toolbar.subtitleTextColor> property.
+  			 * @deprecated Access <Titanium.UI.Toolbar.subtitleTextColor> instead.
   			 */
   def getSubtitleTextColor(): String = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Toolbar.title> property.
+  			 * @deprecated Access <Titanium.UI.Toolbar.title> instead.
   			 */
   def getTitle(): String = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Toolbar.titleTextColor> property.
+  			 * @deprecated Access <Titanium.UI.Toolbar.titleTextColor> instead.
   			 */
   def getTitleTextColor(): String = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Toolbar.translucent> property.
+  			 * @deprecated Access <Titanium.UI.Toolbar.translucent> instead.
   			 */
   def getTranslucent(): Boolean = js.native
   /**
@@ -165,14 +226,17 @@ trait Toolbar extends View {
   def isOverflowMenuShowing(): Boolean = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Toolbar.barColor> property.
+  			 * @deprecated Set the value using <Titanium.UI.Toolbar.barColor> instead.
   			 */
   def setBarColor(barColor: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Toolbar.contentInsetEndWithActions> property.
+  			 * @deprecated Set the value using <Titanium.UI.Toolbar.contentInsetEndWithActions> instead.
   			 */
   def setContentInsetEndWithActions(contentInsetEndWithActions: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Toolbar.contentInsetStartWithNavigation> property.
+  			 * @deprecated Set the value using <Titanium.UI.Toolbar.contentInsetStartWithNavigation> instead.
   			 */
   def setContentInsetStartWithNavigation(contentInsetStartWithNavigation: Double): Unit = js.native
   /**
@@ -185,62 +249,53 @@ trait Toolbar extends View {
   def setContentInsetsRelative(insetStart: Double, insetEnd: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Toolbar.items> property.
+  			 * @deprecated Set the value using <Titanium.UI.Toolbar.items> instead.
   			 */
-  def setItems(items: js.Array[_]): Unit = js.native
+  def setItems(items: js.Array[View]): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Toolbar.logo> property.
+  			 * @deprecated Set the value using <Titanium.UI.Toolbar.logo> instead.
   			 */
   def setLogo(logo: String): Unit = js.native
-  /**
-  			 * Sets the value of the <Titanium.UI.Toolbar.logo> property.
-  			 */
   def setLogo(logo: Blob): Unit = js.native
-  /**
-  			 * Sets the value of the <Titanium.UI.Toolbar.logo> property.
-  			 */
   def setLogo(logo: File): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Toolbar.navigationIcon> property.
+  			 * @deprecated Set the value using <Titanium.UI.Toolbar.navigationIcon> instead.
   			 */
   def setNavigationIcon(navigationIcon: String): Unit = js.native
-  /**
-  			 * Sets the value of the <Titanium.UI.Toolbar.navigationIcon> property.
-  			 */
   def setNavigationIcon(navigationIcon: Blob): Unit = js.native
-  /**
-  			 * Sets the value of the <Titanium.UI.Toolbar.navigationIcon> property.
-  			 */
   def setNavigationIcon(navigationIcon: File): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Toolbar.overflowIcon> property.
+  			 * @deprecated Set the value using <Titanium.UI.Toolbar.overflowIcon> instead.
   			 */
   def setOverflowIcon(overflowIcon: String): Unit = js.native
-  /**
-  			 * Sets the value of the <Titanium.UI.Toolbar.overflowIcon> property.
-  			 */
   def setOverflowIcon(overflowIcon: Blob): Unit = js.native
-  /**
-  			 * Sets the value of the <Titanium.UI.Toolbar.overflowIcon> property.
-  			 */
   def setOverflowIcon(overflowIcon: File): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Toolbar.subtitle> property.
+  			 * @deprecated Set the value using <Titanium.UI.Toolbar.subtitle> instead.
   			 */
   def setSubtitle(subtitle: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Toolbar.subtitleTextColor> property.
+  			 * @deprecated Set the value using <Titanium.UI.Toolbar.subtitleTextColor> instead.
   			 */
   def setSubtitleTextColor(subtitleTextColor: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Toolbar.title> property.
+  			 * @deprecated Set the value using <Titanium.UI.Toolbar.title> instead.
   			 */
   def setTitle(title: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Toolbar.titleTextColor> property.
+  			 * @deprecated Set the value using <Titanium.UI.Toolbar.titleTextColor> instead.
   			 */
   def setTitleTextColor(titleTextColor: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Toolbar.translucent> property.
+  			 * @deprecated Set the value using <Titanium.UI.Toolbar.translucent> instead.
   			 */
   def setTranslucent(translucent: Boolean): Unit = js.native
   /**

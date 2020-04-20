@@ -28,9 +28,9 @@ class ExposedAssociation protected () extends ExposedEntityBase {
   ) = this()
   @JSName("model")
   var model_FExposedAssociation: IModel = js.native
-  def association(): IAssociationBase = js.native
+  def association: IAssociationBase = js.native
   def association(newValue: IAssociationBase): js.Any = js.native
-  def associationQualifiedName(): String = js.native
+  def associationQualifiedName: String = js.native
 }
 
 /* static members */

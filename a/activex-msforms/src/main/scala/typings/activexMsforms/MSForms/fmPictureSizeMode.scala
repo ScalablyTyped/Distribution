@@ -16,12 +16,10 @@ trait fmPictureSizeMode extends js.Object
 
 object fmPictureSizeMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fmPictureSizeModeClip: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def fmPictureSizeModeClip: `0` = this.cast(0)
+  def fmPictureSizeModeStretch: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def fmPictureSizeModeStretch: `1` = this.cast(1)
-  @scala.inline
-  def fmPictureSizeModeZoom: `3` = this.cast(3)
+  def fmPictureSizeModeZoom: `3` = 3.asInstanceOf[`3`]
 }
 

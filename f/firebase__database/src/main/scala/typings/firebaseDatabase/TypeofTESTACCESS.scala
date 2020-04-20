@@ -19,7 +19,6 @@ object TypeofTESTACCESS {
     queryIdentifier: Query => String
   ): TypeofTESTACCESS = {
     val __obj = js.Dynamic.literal(forceRestClient = js.Any.fromFunction1(forceRestClient), hijackHash = js.Any.fromFunction1(hijackHash), queryIdentifier = js.Any.fromFunction1(queryIdentifier))
-  
     __obj.asInstanceOf[TypeofTESTACCESS]
   }
 }

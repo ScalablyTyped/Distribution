@@ -16,7 +16,6 @@ object LastResultDetails {
   @scala.inline
   def apply(dateCompleted: Date, duration: Double, runBy: IdentityRef): LastResultDetails = {
     val __obj = js.Dynamic.literal(dateCompleted = dateCompleted.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], runBy = runBy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LastResultDetails]
   }
 }

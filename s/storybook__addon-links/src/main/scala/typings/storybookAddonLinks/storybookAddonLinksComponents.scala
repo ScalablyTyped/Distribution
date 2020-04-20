@@ -1,14 +1,15 @@
 package typings.storybookAddonLinks
 
 import typings.react.mod.ComponentType
+import typings.storybookAddonLinks.linkMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object storybookAddonLinksComponents extends storybookAddonLinksProps {
   @scala.inline
-  def Link: ComponentType[LinkProps] = js.constructorOf[typings.storybookAddonLinks.linkMod.default].asInstanceOf[typings.react.mod.ComponentType[LinkProps]]
+  def Link: ComponentType[LinkProps] = js.constructorOf[default].asInstanceOf[ComponentType[LinkProps]]
   @scala.inline
-  def React: ComponentType[ReactProps] = js.constructorOf[typings.storybookAddonLinks.reactMod.default].asInstanceOf[typings.react.mod.ComponentType[ReactProps]]
+  def React: ComponentType[ReactProps] = js.constructorOf[typings.storybookAddonLinks.reactMod.default].asInstanceOf[ComponentType[ReactProps]]
 }
 

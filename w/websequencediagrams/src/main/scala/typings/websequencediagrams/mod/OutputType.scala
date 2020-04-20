@@ -13,12 +13,10 @@ trait OutputType extends js.Object
 
 object OutputType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def pdf: typings.websequencediagrams.websequencediagramsStrings.pdf = "pdf".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.pdf]
   @scala.inline
-  def pdf: typings.websequencediagrams.websequencediagramsStrings.pdf = this.cast("pdf")
+  def png: typings.websequencediagrams.websequencediagramsStrings.png = "png".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.png]
   @scala.inline
-  def png: typings.websequencediagrams.websequencediagramsStrings.png = this.cast("png")
-  @scala.inline
-  def svg: typings.websequencediagrams.websequencediagramsStrings.svg = this.cast("svg")
+  def svg: typings.websequencediagrams.websequencediagramsStrings.svg = "svg".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.svg]
 }
 

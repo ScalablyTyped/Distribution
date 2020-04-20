@@ -13,7 +13,6 @@ object AnonPool {
   @scala.inline
   def apply(pool: String, target: String): AnonPool = {
     val __obj = js.Dynamic.literal(pool = pool.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPool]
   }
 }

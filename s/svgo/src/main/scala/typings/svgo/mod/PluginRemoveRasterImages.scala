@@ -12,7 +12,6 @@ object PluginRemoveRasterImages {
   @scala.inline
   def apply(removeRasterImages: Boolean | js.Object): PluginRemoveRasterImages = {
     val __obj = js.Dynamic.literal(removeRasterImages = removeRasterImages.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PluginRemoveRasterImages]
   }
 }

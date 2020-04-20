@@ -16,12 +16,10 @@ trait XlCubeFieldType extends js.Object
 
 object XlCubeFieldType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlHierarchy: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def xlHierarchy: `1` = this.cast(1)
+  def xlMeasure: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlMeasure: `2` = this.cast(2)
-  @scala.inline
-  def xlSet: `3` = this.cast(3)
+  def xlSet: `3` = 3.asInstanceOf[`3`]
 }
 

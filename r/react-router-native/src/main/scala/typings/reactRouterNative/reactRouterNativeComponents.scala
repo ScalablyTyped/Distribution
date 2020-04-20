@@ -8,28 +8,28 @@ import scala.scalajs.js.annotation._
 
 object reactRouterNativeComponents extends reactRouterNativeProps {
   @scala.inline
-  def AndroidBackButton: ComponentType[AndroidBackButtonProps] = js.constructorOf[typings.reactRouterNative.mod.AndroidBackButton].asInstanceOf[typings.react.mod.ComponentType[AndroidBackButtonProps]]
+  def AndroidBackButton: ComponentType[AndroidBackButtonProps] = js.constructorOf[typings.reactRouterNative.mod.AndroidBackButton].asInstanceOf[ComponentType[AndroidBackButtonProps]]
   @scala.inline
-  def BackButton: ComponentType[BackButtonProps] = js.constructorOf[typings.reactRouterNative.mod.BackButton].asInstanceOf[typings.react.mod.ComponentType[BackButtonProps]]
+  def BackButton: ComponentType[BackButtonProps] = js.constructorOf[typings.reactRouterNative.mod.BackButton].asInstanceOf[ComponentType[BackButtonProps]]
   @scala.inline
-  def DeepLinking: ComponentType[js.Object] = js.constructorOf[typings.reactRouterNative.mod.DeepLinking].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
+  def DeepLinking: ComponentType[js.Object] = js.constructorOf[typings.reactRouterNative.mod.DeepLinking].asInstanceOf[ComponentType[js.Object]]
   @scala.inline
-  def Link: ComponentType[LinkProps] = js.constructorOf[typings.reactRouterNative.mod.Link].asInstanceOf[typings.react.mod.ComponentType[LinkProps]]
+  def Link: ComponentType[LinkProps] = js.constructorOf[typings.reactRouterNative.mod.Link].asInstanceOf[ComponentType[LinkProps]]
   @scala.inline
-  def MemoryRouter: ComponentType[MemoryRouterProps] = js.constructorOf[typings.reactRouterNative.mod.MemoryRouter].asInstanceOf[typings.react.mod.ComponentType[MemoryRouterProps]]
+  def MemoryRouter: ComponentType[MemoryRouterProps] = js.constructorOf[typings.reactRouterNative.mod.MemoryRouter].asInstanceOf[ComponentType[MemoryRouterProps]]
   @scala.inline
-  def NativeRouter: ComponentType[NativeRouterProps] = js.constructorOf[typings.reactRouterNative.mod.NativeRouter].asInstanceOf[typings.react.mod.ComponentType[NativeRouterProps]]
+  def NativeRouter: ComponentType[NativeRouterProps] = js.constructorOf[typings.reactRouterNative.mod.NativeRouter].asInstanceOf[ComponentType[NativeRouterProps]]
   @scala.inline
-  def Prompt: ComponentType[PromptProps] = js.constructorOf[typings.reactRouterNative.mod.Prompt].asInstanceOf[typings.react.mod.ComponentType[PromptProps]]
+  def Prompt: ComponentType[PromptProps] = js.constructorOf[typings.reactRouterNative.mod.Prompt].asInstanceOf[ComponentType[PromptProps]]
   @scala.inline
-  def Redirect: ComponentType[RedirectProps] = js.constructorOf[typings.reactRouterNative.mod.Redirect].asInstanceOf[typings.react.mod.ComponentType[RedirectProps]]
+  def Redirect: ComponentType[RedirectProps] = js.constructorOf[typings.reactRouterNative.mod.Redirect].asInstanceOf[ComponentType[RedirectProps]]
   @scala.inline
-  def Route[T /* <: RouteProps */]: ComponentType[T] = js.constructorOf[typings.reactRouterNative.mod.Route[T]].asInstanceOf[typings.react.mod.ComponentType[T]]
+  def Route[T /* <: RouteProps */]: ComponentType[T] = js.constructorOf[typings.reactRouterNative.mod.Route[T]].asInstanceOf[ComponentType[T]]
   @scala.inline
-  def Router: ComponentType[RouterProps] = js.constructorOf[typings.reactRouterNative.mod.Router].asInstanceOf[typings.react.mod.ComponentType[RouterProps]]
+  def Router: ComponentType[RouterProps] = js.constructorOf[typings.reactRouterNative.mod.Router].asInstanceOf[ComponentType[RouterProps]]
   @scala.inline
-  def StaticRouter: ComponentType[StaticRouterProps] = js.constructorOf[typings.reactRouterNative.mod.StaticRouter].asInstanceOf[typings.react.mod.ComponentType[StaticRouterProps]]
+  def StaticRouter: ComponentType[StaticRouterProps] = js.constructorOf[typings.reactRouterNative.mod.StaticRouter].asInstanceOf[ComponentType[StaticRouterProps]]
   @scala.inline
-  def Switch: ComponentType[SwitchProps] = js.constructorOf[typings.reactRouterNative.mod.Switch].asInstanceOf[typings.react.mod.ComponentType[SwitchProps]]
+  def Switch: ComponentType[SwitchProps] = js.constructorOf[typings.reactRouterNative.mod.Switch].asInstanceOf[ComponentType[SwitchProps]]
 }
 

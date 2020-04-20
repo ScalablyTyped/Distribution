@@ -16,7 +16,6 @@ object GetIdentityVerificationAttributesResponse {
   @scala.inline
   def apply(VerificationAttributes: VerificationAttributes): GetIdentityVerificationAttributesResponse = {
     val __obj = js.Dynamic.literal(VerificationAttributes = VerificationAttributes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetIdentityVerificationAttributesResponse]
   }
 }

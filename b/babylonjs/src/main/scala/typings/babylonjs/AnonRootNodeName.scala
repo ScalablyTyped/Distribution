@@ -14,7 +14,6 @@ object AnonRootNodeName {
   @scala.inline
   def apply(componentProperty: String, rootNodeName: String, states: js.Array[String]): AnonRootNodeName = {
     val __obj = js.Dynamic.literal(componentProperty = componentProperty.asInstanceOf[js.Any], rootNodeName = rootNodeName.asInstanceOf[js.Any], states = states.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRootNodeName]
   }
 }

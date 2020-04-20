@@ -12,7 +12,6 @@ object DatastoreInt {
   @scala.inline
   def apply(value: String): DatastoreInt = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DatastoreInt]
   }
 }

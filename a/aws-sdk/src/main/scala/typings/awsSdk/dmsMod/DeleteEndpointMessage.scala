@@ -16,7 +16,6 @@ object DeleteEndpointMessage {
   @scala.inline
   def apply(EndpointArn: String): DeleteEndpointMessage = {
     val __obj = js.Dynamic.literal(EndpointArn = EndpointArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteEndpointMessage]
   }
 }

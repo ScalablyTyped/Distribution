@@ -15,7 +15,6 @@ object PassportFile {
   @scala.inline
   def apply(file_date: Double, file_id: String, file_size: Double): PassportFile = {
     val __obj = js.Dynamic.literal(file_date = file_date.asInstanceOf[js.Any], file_id = file_id.asInstanceOf[js.Any], file_size = file_size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PassportFile]
   }
 }

@@ -19,7 +19,6 @@ object IMandateStatus {
   @scala.inline
   def apply(Active: ACTIVE, Created: CREATED, Failed: FAILED, Submitted: SUBMITTED): IMandateStatus = {
     val __obj = js.Dynamic.literal(Active = Active.asInstanceOf[js.Any], Created = Created.asInstanceOf[js.Any], Failed = Failed.asInstanceOf[js.Any], Submitted = Submitted.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IMandateStatus]
   }
 }

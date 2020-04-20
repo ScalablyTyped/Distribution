@@ -20,7 +20,6 @@ object AnonAsyncError {
   @scala.inline
   def apply(asyncError: Error, blockName: BlockName, mode: BlockMode, name: start_describe_definition): AnonAsyncError = {
     val __obj = js.Dynamic.literal(asyncError = asyncError.asInstanceOf[js.Any], blockName = blockName.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonAsyncError]
   }
 }

@@ -14,7 +14,6 @@ object IROOM_GROUP_SUBSCRIBE {
   @scala.inline
   def apply(groupId: String, newRooms: js.Array[SFSRoom]): IROOM_GROUP_SUBSCRIBE = {
     val __obj = js.Dynamic.literal(groupId = groupId.asInstanceOf[js.Any], newRooms = newRooms.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IROOM_GROUP_SUBSCRIBE]
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactBootstrapDaterangepickerProps {
   @scala.inline
-  def DateRangePickerProps: Props.type = typings.reactBootstrapDaterangepicker.ReactBootstrapDaterangepicker.Props
+  def DateRangePickerProps: Props.type = Props
   type DateRangePickerProps = Props
 }
 

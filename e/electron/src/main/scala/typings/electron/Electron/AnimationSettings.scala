@@ -30,7 +30,6 @@ object AnimationSettings {
     shouldRenderRichAnimation: Boolean
   ): AnimationSettings = {
     val __obj = js.Dynamic.literal(prefersReducedMotion = prefersReducedMotion.asInstanceOf[js.Any], scrollAnimationsEnabledBySystem = scrollAnimationsEnabledBySystem.asInstanceOf[js.Any], shouldRenderRichAnimation = shouldRenderRichAnimation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnimationSettings]
   }
 }

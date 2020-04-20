@@ -12,10 +12,8 @@ trait FieldType extends js.Object
 
 object FieldType {
   @scala.inline
-  def Field: typings.reduxForm.reduxFormStrings.Field = this.cast("Field")
+  def Field: typings.reduxForm.reduxFormStrings.Field = "Field".asInstanceOf[typings.reduxForm.reduxFormStrings.Field]
   @scala.inline
-  def FieldArray: typings.reduxForm.reduxFormStrings.FieldArray = this.cast("FieldArray")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def FieldArray: typings.reduxForm.reduxFormStrings.FieldArray = "FieldArray".asInstanceOf[typings.reduxForm.reduxFormStrings.FieldArray]
 }
 

@@ -20,7 +20,7 @@ class WindowResolver () extends IWindowResolver {
     * If the `resolve` promise has not resolved, the behavior is undefined.
     */
   @JSName("name")
-  def name_MWindowResolver(): String = js.native
+  def name_MWindowResolver: String = js.native
   /**
     * Resolve a window name to use as a handle among shared resources.
     *

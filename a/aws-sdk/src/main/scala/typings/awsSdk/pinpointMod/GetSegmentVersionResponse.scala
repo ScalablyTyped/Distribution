@@ -13,7 +13,6 @@ object GetSegmentVersionResponse {
   @scala.inline
   def apply(SegmentResponse: SegmentResponse): GetSegmentVersionResponse = {
     val __obj = js.Dynamic.literal(SegmentResponse = SegmentResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetSegmentVersionResponse]
   }
 }

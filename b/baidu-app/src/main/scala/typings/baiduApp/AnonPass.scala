@@ -19,7 +19,6 @@ object AnonPass {
   @scala.inline
   def apply(pass: js.Array[AnonHit], reject: js.Array[_], review: js.Array[_], spam: Double): AnonPass = {
     val __obj = js.Dynamic.literal(pass = pass.asInstanceOf[js.Any], reject = reject.asInstanceOf[js.Any], review = review.asInstanceOf[js.Any], spam = spam.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPass]
   }
 }

@@ -14,7 +14,6 @@ object AnonBottom {
   @scala.inline
   def apply(bottom: Double, left: Double, right: Double): AnonBottom = {
     val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBottom]
   }
 }

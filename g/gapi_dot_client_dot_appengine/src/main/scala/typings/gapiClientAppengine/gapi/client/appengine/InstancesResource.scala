@@ -34,7 +34,6 @@ object InstancesResource {
     list: AnonPageSize => Request_[ListInstancesResponse]
   ): InstancesResource = {
     val __obj = js.Dynamic.literal(debug = js.Any.fromFunction1(debug), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[InstancesResource]
   }
 }

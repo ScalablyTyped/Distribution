@@ -14,7 +14,6 @@ object AnonConnectionRefetch {
   @scala.inline
   def apply(connection: js.Array[ConnectionMetadata], refetch: ReaderRefetchMetadataconn): AnonConnectionRefetch = {
     val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], refetch = refetch.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonConnectionRefetch]
   }
 }

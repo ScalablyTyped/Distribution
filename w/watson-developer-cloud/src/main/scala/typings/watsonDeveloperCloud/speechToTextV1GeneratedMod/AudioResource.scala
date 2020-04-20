@@ -20,7 +20,6 @@ object AudioResource {
   @scala.inline
   def apply(details: AudioDetails, duration: Double, name: String, status: String): AudioResource = {
     val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AudioResource]
   }
 }

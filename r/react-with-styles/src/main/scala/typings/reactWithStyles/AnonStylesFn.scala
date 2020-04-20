@@ -13,7 +13,6 @@ object AnonStylesFn {
   @scala.inline
   def apply[TStyles /* <: Styles */](stylesFn: /* repeated */ js.Any => TStyles): AnonStylesFn[TStyles] = {
     val __obj = js.Dynamic.literal(stylesFn = js.Any.fromFunction1(stylesFn))
-  
     __obj.asInstanceOf[AnonStylesFn[TStyles]]
   }
 }

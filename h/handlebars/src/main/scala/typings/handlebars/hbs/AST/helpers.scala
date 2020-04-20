@@ -18,7 +18,6 @@ object helpers {
     simpleId: PathExpression => Boolean
   ): helpers = {
     val __obj = js.Dynamic.literal(helperExpression = js.Any.fromFunction1(helperExpression), scopeId = js.Any.fromFunction1(scopeId), simpleId = js.Any.fromFunction1(simpleId))
-  
     __obj.asInstanceOf[helpers]
   }
 }

@@ -12,7 +12,6 @@ object ListCollection {
   @scala.inline
   def apply(lists: js.Array[ListObject]): ListCollection = {
     val __obj = js.Dynamic.literal(lists = lists.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListCollection]
   }
 }

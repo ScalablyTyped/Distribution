@@ -37,7 +37,6 @@ object String {
     trimStart: () => java.lang.String
   ): String = {
     val __obj = js.Dynamic.literal(endsWith = js.Any.fromFunction1(endsWith), trim = js.Any.fromFunction0(trim), trimEnd = js.Any.fromFunction0(trimEnd), trimStart = js.Any.fromFunction0(trimStart))
-  
     __obj.asInstanceOf[String]
   }
 }

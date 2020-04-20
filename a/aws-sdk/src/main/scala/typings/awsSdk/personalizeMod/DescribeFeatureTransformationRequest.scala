@@ -16,7 +16,6 @@ object DescribeFeatureTransformationRequest {
   @scala.inline
   def apply(featureTransformationArn: Arn): DescribeFeatureTransformationRequest = {
     val __obj = js.Dynamic.literal(featureTransformationArn = featureTransformationArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeFeatureTransformationRequest]
   }
 }

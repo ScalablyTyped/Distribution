@@ -13,7 +13,6 @@ object PickImpliconIcon {
   @scala.inline
   def apply(icon: String): PickImpliconIcon = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpliconIcon]
   }
 }

@@ -12,7 +12,6 @@ object AnonTempImagePath {
   @scala.inline
   def apply(tempImagePath: String): AnonTempImagePath = {
     val __obj = js.Dynamic.literal(tempImagePath = tempImagePath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTempImagePath]
   }
 }

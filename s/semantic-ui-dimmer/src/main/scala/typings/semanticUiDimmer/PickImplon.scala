@@ -16,7 +16,6 @@ object PickImplon {
   @scala.inline
   def apply(on: `false` | hover | click): PickImplon = {
     val __obj = js.Dynamic.literal(on = on.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplon]
   }
 }

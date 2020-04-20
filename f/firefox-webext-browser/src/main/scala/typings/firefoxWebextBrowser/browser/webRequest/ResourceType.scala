@@ -32,48 +32,46 @@ trait ResourceType extends js.Object
 
 object ResourceType {
   @scala.inline
-  def beacon: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.beacon = this.cast("beacon")
+  def beacon: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.beacon = "beacon".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.beacon]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def csp_report: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.csp_report = "csp_report".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.csp_report]
   @scala.inline
-  def csp_report: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.csp_report = this.cast("csp_report")
+  def font: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.font = "font".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.font]
   @scala.inline
-  def font: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.font = this.cast("font")
+  def image: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.image = "image".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.image]
   @scala.inline
-  def image: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.image = this.cast("image")
+  def imageset: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.imageset = "imageset".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.imageset]
   @scala.inline
-  def imageset: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.imageset = this.cast("imageset")
+  def main_frame: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.main_frame = "main_frame".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.main_frame]
   @scala.inline
-  def main_frame: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.main_frame = this.cast("main_frame")
+  def media: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.media = "media".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.media]
   @scala.inline
-  def media: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.media = this.cast("media")
+  def `object`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`object` = "object".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`object`]
   @scala.inline
-  def `object`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`object` = this.cast("object")
+  def object_subrequest: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.object_subrequest = "object_subrequest".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.object_subrequest]
   @scala.inline
-  def object_subrequest: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.object_subrequest = this.cast("object_subrequest")
+  def other: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.other = "other".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.other]
   @scala.inline
-  def other: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.other = this.cast("other")
+  def ping: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.ping = "ping".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.ping]
   @scala.inline
-  def ping: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.ping = this.cast("ping")
+  def script: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.script = "script".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.script]
   @scala.inline
-  def script: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.script = this.cast("script")
+  def speculative: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.speculative = "speculative".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.speculative]
   @scala.inline
-  def speculative: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.speculative = this.cast("speculative")
+  def stylesheet: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.stylesheet = "stylesheet".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.stylesheet]
   @scala.inline
-  def stylesheet: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.stylesheet = this.cast("stylesheet")
+  def sub_frame: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.sub_frame = "sub_frame".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.sub_frame]
   @scala.inline
-  def sub_frame: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.sub_frame = this.cast("sub_frame")
+  def web_manifest: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.web_manifest = "web_manifest".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.web_manifest]
   @scala.inline
-  def web_manifest: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.web_manifest = this.cast("web_manifest")
+  def websocket: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.websocket = "websocket".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.websocket]
   @scala.inline
-  def websocket: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.websocket = this.cast("websocket")
+  def xbl: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.xbl = "xbl".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.xbl]
   @scala.inline
-  def xbl: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.xbl = this.cast("xbl")
+  def xml_dtd: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.xml_dtd = "xml_dtd".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.xml_dtd]
   @scala.inline
-  def xml_dtd: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.xml_dtd = this.cast("xml_dtd")
+  def xmlhttprequest: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.xmlhttprequest = "xmlhttprequest".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.xmlhttprequest]
   @scala.inline
-  def xmlhttprequest: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.xmlhttprequest = this.cast("xmlhttprequest")
-  @scala.inline
-  def xslt: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.xslt = this.cast("xslt")
+  def xslt: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.xslt = "xslt".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.xslt]
 }
 

@@ -12,7 +12,6 @@ object GroupWidth {
   @scala.inline
   def apply(groupWidth: js.Any): GroupWidth = {
     val __obj = js.Dynamic.literal(groupWidth = groupWidth.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GroupWidth]
   }
 }

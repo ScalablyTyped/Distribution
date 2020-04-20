@@ -12,7 +12,6 @@ object NetworkErrorInfo {
   @scala.inline
   def apply(message: String, networkErrorCode: Double, stack: String): NetworkErrorInfo = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], networkErrorCode = networkErrorCode.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NetworkErrorInfo]
   }
 }

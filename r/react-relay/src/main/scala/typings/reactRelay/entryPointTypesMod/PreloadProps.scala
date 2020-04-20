@@ -1,5 +1,6 @@
 package typings.reactRelay.entryPointTypesMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,13 +10,13 @@ trait PreloadProps[TPreloadParams, TPreloadedQueries /* <: js.Object */, TPreloa
   val entryPoints: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ T in keyof TPreloadedEntryPoints ]: react-relay.react-relay/lib/relay-experimental/EntryPointTypes.ExtractEntryPointTypeHelper<TPreloadParams>}
-    */ typings.reactRelay.reactRelayStrings.PreloadProps with js.Any
+    */ typings.reactRelay.reactRelayStrings.PreloadProps with TopLevel[js.Any]
   ] = js.undefined
   val extraProps: js.UndefOr[TExtraProps] = js.undefined
   val queries: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ T in keyof TPreloadedQueries ]: react-relay.react-relay/lib/relay-experimental/EntryPointTypes.ExtractQueryTypeHelper<TEnvironmentProviderOptions>}
-    */ typings.reactRelay.reactRelayStrings.PreloadProps with js.Any
+    */ typings.reactRelay.reactRelayStrings.PreloadProps with TopLevel[js.Any]
   ] = js.undefined
 }
 
@@ -24,11 +25,11 @@ object PreloadProps {
   def apply[TPreloadParams, TPreloadedQueries /* <: js.Object */, TPreloadedEntryPoints /* <: js.Object */, TExtraProps, TEnvironmentProviderOptions](
     entryPoints: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ T in keyof TPreloadedEntryPoints ]: react-relay.react-relay/lib/relay-experimental/EntryPointTypes.ExtractEntryPointTypeHelper<TPreloadParams>}
-    */ typings.reactRelay.reactRelayStrings.PreloadProps with js.Any = null,
+    */ typings.reactRelay.reactRelayStrings.PreloadProps with TopLevel[js.Any] = null,
     extraProps: TExtraProps = null,
     queries: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ T in keyof TPreloadedQueries ]: react-relay.react-relay/lib/relay-experimental/EntryPointTypes.ExtractQueryTypeHelper<TEnvironmentProviderOptions>}
-    */ typings.reactRelay.reactRelayStrings.PreloadProps with js.Any = null
+    */ typings.reactRelay.reactRelayStrings.PreloadProps with TopLevel[js.Any] = null
   ): PreloadProps[
     TPreloadParams, 
     TPreloadedQueries, 
@@ -41,11 +42,12 @@ object PreloadProps {
     if (extraProps != null) __obj.updateDynamic("extraProps")(extraProps.asInstanceOf[js.Any])
     if (queries != null) __obj.updateDynamic("queries")(queries.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreloadProps[
-  TPreloadParams, 
-  TPreloadedQueries, 
-  TPreloadedEntryPoints, 
-  TExtraProps, 
-  TEnvironmentProviderOptions]]
+      TPreloadParams, 
+      TPreloadedQueries, 
+      TPreloadedEntryPoints, 
+      TExtraProps, 
+      TEnvironmentProviderOptions
+    ]]
   }
 }
 

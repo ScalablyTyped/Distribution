@@ -1,6 +1,25 @@
 package typings.titanium.Titanium.UI
 
 import typings.titanium.Font
+import typings.titanium.LabelLineSpacing
+import typings.titanium.Point
+import typings.titanium.titaniumStrings.click
+import typings.titanium.titaniumStrings.dblclick
+import typings.titanium.titaniumStrings.doubletap
+import typings.titanium.titaniumStrings.focus
+import typings.titanium.titaniumStrings.keypressed
+import typings.titanium.titaniumStrings.link
+import typings.titanium.titaniumStrings.longclick
+import typings.titanium.titaniumStrings.longpress
+import typings.titanium.titaniumStrings.pinch
+import typings.titanium.titaniumStrings.postlayout
+import typings.titanium.titaniumStrings.singletap
+import typings.titanium.titaniumStrings.swipe
+import typings.titanium.titaniumStrings.touchcancel
+import typings.titanium.titaniumStrings.touchend
+import typings.titanium.titaniumStrings.touchmove
+import typings.titanium.titaniumStrings.touchstart
+import typings.titanium.titaniumStrings.twofingertap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,8 +27,9 @@ import scala.scalajs.js.annotation._
 /**
 		 * A text label, with an optional background image.
 		 */
+@JSGlobal("Titanium.UI.Label")
 @js.native
-trait Label extends View {
+class Label () extends View {
   /**
   			 * Specify an attributed string for the label.
   			 */
@@ -61,7 +81,7 @@ trait Label extends View {
   /**
   			 * Line spacing of the [text](Titanium.UI.Label.text), as a dictionary with the properties `add` and `multiply`.
   			 */
-  var lineSpacing: js.Any = js.native
+  var lineSpacing: LabelLineSpacing = js.native
   /**
   			 * Makes the label be exactly this many lines tall.
   			 */
@@ -81,7 +101,7 @@ trait Label extends View {
   /**
   			 * Shadow offset of the [text](Titanium.UI.Label.text), as a dictionary with the properties `x` and `y`.
   			 */
-  var shadowOffset: js.Any = js.native
+  var shadowOffset: Point = js.native
   /**
   			 * Shadow radius of the [text](Titanium.UI.Label.text).
   			 */
@@ -105,206 +125,289 @@ trait Label extends View {
   var verticalAlign: Double | String = js.native
   /**
   			 * Enable or disable word wrapping in the label.
+  			 * @deprecated If you want to disable wrapping, then set [Titanium.UI.Label.maxLines](Titanium.UI.Label.maxLines) to 1 instead.
   			 */
   var wordWrap: Boolean = js.native
+  @JSName("addEventListener")
+  def addEventListener_link(name: link, callback: js.ThisFunction1[/* this */ this.type, /* event */ LabelLinkEvent, Unit]): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_click(name: click, event: LabelClickEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_dblclick(name: dblclick, event: LabelDblclickEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_doubletap(name: doubletap, event: LabelDoubletapEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_focus(name: focus, event: LabelFocusEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_keypressed(name: keypressed, event: LabelKeypressedEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_link(name: link): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_link(name: link, event: LabelLinkEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_longclick(name: longclick, event: LabelLongclickEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_longpress(name: longpress, event: LabelLongpressEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_pinch(name: pinch, event: LabelPinchEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_postlayout(name: postlayout, event: LabelPostlayoutEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_singletap(name: singletap, event: LabelSingletapEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_swipe(name: swipe, event: LabelSwipeEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_touchcancel(name: touchcancel, event: LabelTouchcancelEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_touchend(name: touchend, event: LabelTouchendEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_touchmove(name: touchmove, event: LabelTouchmoveEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_touchstart(name: touchstart, event: LabelTouchstartEvent): Unit = js.native
+  @JSName("fireEvent")
+  def fireEvent_twofingertap(name: twofingertap, event: LabelTwofingertapEvent): Unit = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Label.attributedString> property.
+  			 * @deprecated Access <Titanium.UI.Label.attributedString> instead.
   			 */
   def getAttributedString(): AttributedString = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Label.autoLink> property.
+  			 * @deprecated Access <Titanium.UI.Label.autoLink> instead.
   			 */
   def getAutoLink(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Label.backgroundPaddingBottom> property.
+  			 * @deprecated Access <Titanium.UI.Label.backgroundPaddingBottom> instead.
   			 */
   def getBackgroundPaddingBottom(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Label.backgroundPaddingLeft> property.
+  			 * @deprecated Access <Titanium.UI.Label.backgroundPaddingLeft> instead.
   			 */
   def getBackgroundPaddingLeft(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Label.backgroundPaddingRight> property.
+  			 * @deprecated Access <Titanium.UI.Label.backgroundPaddingRight> instead.
   			 */
   def getBackgroundPaddingRight(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Label.backgroundPaddingTop> property.
+  			 * @deprecated Access <Titanium.UI.Label.backgroundPaddingTop> instead.
   			 */
   def getBackgroundPaddingTop(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Label.color> property.
+  			 * @deprecated Access <Titanium.UI.Label.color> instead.
   			 */
   def getColor(): String = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Label.ellipsize> property.
+  			 * @deprecated Access <Titanium.UI.Label.ellipsize> instead.
   			 */
   def getEllipsize(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Label.font> property.
+  			 * @deprecated Access <Titanium.UI.Label.font> instead.
   			 */
   def getFont(): Font = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Label.highlightedColor> property.
+  			 * @deprecated Access <Titanium.UI.Label.highlightedColor> instead.
   			 */
   def getHighlightedColor(): String = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Label.html> property.
+  			 * @deprecated Access <Titanium.UI.Label.html> instead.
   			 */
   def getHtml(): String = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Label.includeFontPadding> property.
+  			 * @deprecated Access <Titanium.UI.Label.includeFontPadding> instead.
   			 */
   def getIncludeFontPadding(): Boolean = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Label.lineSpacing> property.
+  			 * @deprecated Access <Titanium.UI.Label.lineSpacing> instead.
   			 */
-  def getLineSpacing(): js.Any = js.native
+  def getLineSpacing(): LabelLineSpacing = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Label.lines> property.
+  			 * @deprecated Access <Titanium.UI.Label.lines> instead.
   			 */
   def getLines(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Label.maxLines> property.
+  			 * @deprecated Access <Titanium.UI.Label.maxLines> instead.
   			 */
   def getMaxLines(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Label.minimumFontSize> property.
+  			 * @deprecated Access <Titanium.UI.Label.minimumFontSize> instead.
   			 */
   def getMinimumFontSize(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Label.shadowColor> property.
+  			 * @deprecated Access <Titanium.UI.Label.shadowColor> instead.
   			 */
   def getShadowColor(): String = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Label.shadowOffset> property.
+  			 * @deprecated Access <Titanium.UI.Label.shadowOffset> instead.
   			 */
-  def getShadowOffset(): js.Any = js.native
+  def getShadowOffset(): Point = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Label.shadowRadius> property.
+  			 * @deprecated Access <Titanium.UI.Label.shadowRadius> instead.
   			 */
   def getShadowRadius(): Double = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Label.text> property.
+  			 * @deprecated Access <Titanium.UI.Label.text> instead.
   			 */
   def getText(): String = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Label.textAlign> property.
+  			 * @deprecated Access <Titanium.UI.Label.textAlign> instead.
   			 */
   def getTextAlign(): String | Double = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Label.textid> property.
+  			 * @deprecated Access <Titanium.UI.Label.textid> instead.
   			 */
   def getTextid(): String = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Label.verticalAlign> property.
+  			 * @deprecated Access <Titanium.UI.Label.verticalAlign> instead.
   			 */
   def getVerticalAlign(): Double | String = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Label.wordWrap> property.
+  			 * @deprecated If you want to disable wrapping, then set [Titanium.UI.Label.maxLines](Titanium.UI.Label.maxLines) to 1 instead.
   			 */
   def getWordWrap(): Boolean = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_link(name: link, callback: js.ThisFunction1[/* this */ this.type, /* event */ LabelLinkEvent, Unit]): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Label.attributedString> property.
+  			 * @deprecated Set the value using <Titanium.UI.Label.attributedString> instead.
   			 */
   def setAttributedString(attributedString: AttributedString): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Label.autoLink> property.
+  			 * @deprecated Set the value using <Titanium.UI.Label.autoLink> instead.
   			 */
   def setAutoLink(autoLink: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Label.backgroundPaddingBottom> property.
+  			 * @deprecated Set the value using <Titanium.UI.Label.backgroundPaddingBottom> instead.
   			 */
   def setBackgroundPaddingBottom(backgroundPaddingBottom: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Label.backgroundPaddingLeft> property.
+  			 * @deprecated Set the value using <Titanium.UI.Label.backgroundPaddingLeft> instead.
   			 */
   def setBackgroundPaddingLeft(backgroundPaddingLeft: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Label.backgroundPaddingRight> property.
+  			 * @deprecated Set the value using <Titanium.UI.Label.backgroundPaddingRight> instead.
   			 */
   def setBackgroundPaddingRight(backgroundPaddingRight: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Label.backgroundPaddingTop> property.
+  			 * @deprecated Set the value using <Titanium.UI.Label.backgroundPaddingTop> instead.
   			 */
   def setBackgroundPaddingTop(backgroundPaddingTop: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Label.color> property.
+  			 * @deprecated Set the value using <Titanium.UI.Label.color> instead.
   			 */
   def setColor(color: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Label.ellipsize> property.
+  			 * @deprecated Set the value using <Titanium.UI.Label.ellipsize> instead.
   			 */
   def setEllipsize(ellipsize: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Label.font> property.
+  			 * @deprecated Set the value using <Titanium.UI.Label.font> instead.
   			 */
   def setFont(font: Font): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Label.highlightedColor> property.
+  			 * @deprecated Set the value using <Titanium.UI.Label.highlightedColor> instead.
   			 */
   def setHighlightedColor(highlightedColor: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Label.html> property.
+  			 * @deprecated Set the value using <Titanium.UI.Label.html> instead.
   			 */
   def setHtml(html: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Label.includeFontPadding> property.
+  			 * @deprecated Set the value using <Titanium.UI.Label.includeFontPadding> instead.
   			 */
   def setIncludeFontPadding(includeFontPadding: Boolean): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Label.lineSpacing> property.
+  			 * @deprecated Set the value using <Titanium.UI.Label.lineSpacing> instead.
   			 */
-  def setLineSpacing(lineSpacing: js.Any): Unit = js.native
+  def setLineSpacing(lineSpacing: LabelLineSpacing): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Label.lines> property.
+  			 * @deprecated Set the value using <Titanium.UI.Label.lines> instead.
   			 */
   def setLines(lines: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Label.maxLines> property.
+  			 * @deprecated Set the value using <Titanium.UI.Label.maxLines> instead.
   			 */
   def setMaxLines(maxLines: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Label.minimumFontSize> property.
+  			 * @deprecated Set the value using <Titanium.UI.Label.minimumFontSize> instead.
   			 */
   def setMinimumFontSize(minimumFontSize: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Label.shadowColor> property.
+  			 * @deprecated Set the value using <Titanium.UI.Label.shadowColor> instead.
   			 */
   def setShadowColor(shadowColor: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Label.shadowOffset> property.
+  			 * @deprecated Set the value using <Titanium.UI.Label.shadowOffset> instead.
   			 */
-  def setShadowOffset(shadowOffset: js.Any): Unit = js.native
+  def setShadowOffset(shadowOffset: Point): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Label.shadowRadius> property.
+  			 * @deprecated Set the value using <Titanium.UI.Label.shadowRadius> instead.
   			 */
   def setShadowRadius(shadowRadius: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Label.text> property.
+  			 * @deprecated Set the value using <Titanium.UI.Label.text> instead.
   			 */
   def setText(text: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Label.textAlign> property.
+  			 * @deprecated Set the value using <Titanium.UI.Label.textAlign> instead.
   			 */
   def setTextAlign(textAlign: String): Unit = js.native
-  /**
-  			 * Sets the value of the <Titanium.UI.Label.textAlign> property.
-  			 */
   def setTextAlign(textAlign: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Label.textid> property.
+  			 * @deprecated Set the value using <Titanium.UI.Label.textid> instead.
   			 */
   def setTextid(textid: String): Unit = js.native
-  /**
-  			 * Sets the value of the <Titanium.UI.Label.verticalAlign> property.
-  			 */
   def setVerticalAlign(verticalAlign: String): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Label.verticalAlign> property.
+  			 * @deprecated Set the value using <Titanium.UI.Label.verticalAlign> instead.
   			 */
   def setVerticalAlign(verticalAlign: Double): Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.Label.wordWrap> property.
+  			 * @deprecated If you want to disable wrapping, then set [Titanium.UI.Label.maxLines](Titanium.UI.Label.maxLines) to 1 instead.
   			 */
   def setWordWrap(wordWrap: Boolean): Unit = js.native
 }

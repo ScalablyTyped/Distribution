@@ -28,7 +28,6 @@ object Configuration {
     subscriptionsUri: String
   ): Configuration = {
     val __obj = js.Dynamic.literal(backoffConfig = backoffConfig.asInstanceOf[js.Any], documentsUri = documentsUri.asInstanceOf[js.Any], insightsUri = insightsUri.asInstanceOf[js.Any], listsUri = listsUri.asInstanceOf[js.Any], mapsUri = mapsUri.asInstanceOf[js.Any], sessionStorageEnabled = sessionStorageEnabled.asInstanceOf[js.Any], streamsUri = streamsUri.asInstanceOf[js.Any], subscriptionsUri = subscriptionsUri.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Configuration]
   }
 }

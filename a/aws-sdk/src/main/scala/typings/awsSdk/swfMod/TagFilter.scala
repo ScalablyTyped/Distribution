@@ -16,7 +16,6 @@ object TagFilter {
   @scala.inline
   def apply(tag: Tag): TagFilter = {
     val __obj = js.Dynamic.literal(tag = tag.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TagFilter]
   }
 }

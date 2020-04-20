@@ -14,7 +14,6 @@ object Anon18 {
   @scala.inline
   def apply(columns: enabled | disabled): Anon18 = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Anon18]
   }
 }

@@ -15,7 +15,6 @@ object ExtensionRequestUrls {
   @scala.inline
   def apply(extensionIcon: String, extensionPage: String, requestPage: String): ExtensionRequestUrls = {
     val __obj = js.Dynamic.literal(extensionIcon = extensionIcon.asInstanceOf[js.Any], extensionPage = extensionPage.asInstanceOf[js.Any], requestPage = requestPage.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ExtensionRequestUrls]
   }
 }

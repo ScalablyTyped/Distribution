@@ -18,22 +18,20 @@ trait PolicyPlatformType extends js.Object
 
 object PolicyPlatformType {
   @scala.inline
-  def all: typings.microsoftGraph.microsoftGraphStrings.all = this.cast("all")
+  def all: typings.microsoftGraph.microsoftGraphStrings.all = "all".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.all]
   @scala.inline
-  def android: typings.microsoftGraph.microsoftGraphStrings.android = this.cast("android")
+  def android: typings.microsoftGraph.microsoftGraphStrings.android = "android".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.android]
   @scala.inline
-  def androidWorkProfile: typings.microsoftGraph.microsoftGraphStrings.androidWorkProfile = this.cast("androidWorkProfile")
+  def androidWorkProfile: typings.microsoftGraph.microsoftGraphStrings.androidWorkProfile = "androidWorkProfile".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.androidWorkProfile]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def iOS: typings.microsoftGraph.microsoftGraphStrings.iOS = "iOS".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.iOS]
   @scala.inline
-  def iOS: typings.microsoftGraph.microsoftGraphStrings.iOS = this.cast("iOS")
+  def macOS: typings.microsoftGraph.microsoftGraphStrings.macOS = "macOS".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.macOS]
   @scala.inline
-  def macOS: typings.microsoftGraph.microsoftGraphStrings.macOS = this.cast("macOS")
+  def windows10AndLater: typings.microsoftGraph.microsoftGraphStrings.windows10AndLater = "windows10AndLater".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.windows10AndLater]
   @scala.inline
-  def windows10AndLater: typings.microsoftGraph.microsoftGraphStrings.windows10AndLater = this.cast("windows10AndLater")
+  def windows81AndLater: typings.microsoftGraph.microsoftGraphStrings.windows81AndLater = "windows81AndLater".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.windows81AndLater]
   @scala.inline
-  def windows81AndLater: typings.microsoftGraph.microsoftGraphStrings.windows81AndLater = this.cast("windows81AndLater")
-  @scala.inline
-  def windowsPhone81: typings.microsoftGraph.microsoftGraphStrings.windowsPhone81 = this.cast("windowsPhone81")
+  def windowsPhone81: typings.microsoftGraph.microsoftGraphStrings.windowsPhone81 = "windowsPhone81".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.windowsPhone81]
 }
 

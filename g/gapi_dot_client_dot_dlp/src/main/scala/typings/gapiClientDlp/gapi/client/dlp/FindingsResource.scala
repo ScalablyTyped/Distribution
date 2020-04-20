@@ -15,7 +15,6 @@ object FindingsResource {
   @scala.inline
   def apply(list: AnonBearertoken => Request_[GooglePrivacyDlpV2beta1ListInspectFindingsResponse]): FindingsResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-  
     __obj.asInstanceOf[FindingsResource]
   }
 }

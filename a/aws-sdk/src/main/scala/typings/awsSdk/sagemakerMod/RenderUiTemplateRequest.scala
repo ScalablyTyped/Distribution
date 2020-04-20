@@ -24,7 +24,6 @@ object RenderUiTemplateRequest {
   @scala.inline
   def apply(RoleArn: RoleArn, Task: RenderableTask, UiTemplate: UiTemplate): RenderUiTemplateRequest = {
     val __obj = js.Dynamic.literal(RoleArn = RoleArn.asInstanceOf[js.Any], Task = Task.asInstanceOf[js.Any], UiTemplate = UiTemplate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RenderUiTemplateRequest]
   }
 }

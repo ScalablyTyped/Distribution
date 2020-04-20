@@ -15,16 +15,14 @@ trait IconPrefix extends js.Object
 
 object IconPrefix {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fab: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fab = "fab".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fab]
   @scala.inline
-  def fab: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fab = this.cast("fab")
+  def fad: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fad = "fad".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fad]
   @scala.inline
-  def fad: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fad = this.cast("fad")
+  def fal: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fal = "fal".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fal]
   @scala.inline
-  def fal: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fal = this.cast("fal")
+  def far: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.far = "far".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.far]
   @scala.inline
-  def far: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.far = this.cast("far")
-  @scala.inline
-  def fas: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fas = this.cast("fas")
+  def fas: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fas = "fas".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fas]
 }
 

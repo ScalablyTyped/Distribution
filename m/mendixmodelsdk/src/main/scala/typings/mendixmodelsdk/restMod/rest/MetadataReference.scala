@@ -27,15 +27,15 @@ class MetadataReference protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FMetadataReference: IModel = js.native
-  def containerAsConsumedODataService(): ConsumedODataService = js.native
-  def containerAsMetadataReference(): MetadataReference = js.native
-  def metadata(): String = js.native
+  def containerAsConsumedODataService: ConsumedODataService = js.native
+  def containerAsMetadataReference: MetadataReference = js.native
+  def metadata: String = js.native
   def metadata(newValue: String): js.Any = js.native
   /**
     * In version 8.8.0: introduced
     */
-  def metadataReferences(): IList[MetadataReference] = js.native
-  def uri(): String = js.native
+  def metadataReferences: IList[MetadataReference] = js.native
+  def uri: String = js.native
   def uri(newValue: String): js.Any = js.native
 }
 

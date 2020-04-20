@@ -26,7 +26,6 @@ object BatchSummary {
     selection: ISelectionData
   ): BatchSummary = {
     val __obj = js.Dynamic.literal(executionElapsed = executionElapsed.asInstanceOf[js.Any], executionEnd = executionEnd.asInstanceOf[js.Any], executionStart = executionStart.asInstanceOf[js.Any], hasError = hasError.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resultSetSummaries = resultSetSummaries.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchSummary]
   }
 }

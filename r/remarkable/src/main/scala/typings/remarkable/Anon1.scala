@@ -14,7 +14,6 @@ object Anon1 {
   @scala.inline
   def apply(ruler: ^[CoreParsingRule]): Anon1 = {
     val __obj = js.Dynamic.literal(ruler = ruler.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Anon1]
   }
 }

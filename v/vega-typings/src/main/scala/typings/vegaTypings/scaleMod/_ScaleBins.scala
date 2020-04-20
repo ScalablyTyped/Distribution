@@ -11,7 +11,6 @@ object _ScaleBins {
   @scala.inline
   def SignalRef(signal: String): _ScaleBins = {
     val __obj = js.Dynamic.literal(signal = signal.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[_ScaleBins]
   }
   @scala.inline

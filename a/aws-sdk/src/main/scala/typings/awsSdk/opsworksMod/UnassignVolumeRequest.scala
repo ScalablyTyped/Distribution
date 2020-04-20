@@ -16,7 +16,6 @@ object UnassignVolumeRequest {
   @scala.inline
   def apply(VolumeId: String): UnassignVolumeRequest = {
     val __obj = js.Dynamic.literal(VolumeId = VolumeId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UnassignVolumeRequest]
   }
 }

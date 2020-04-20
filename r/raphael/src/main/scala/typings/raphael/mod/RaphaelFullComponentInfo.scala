@@ -25,7 +25,6 @@ object RaphaelFullComponentInfo {
   @scala.inline
   def apply(b: Double, g: Double, h: Double, hex: String, l: Double, r: Double, s: Double): RaphaelFullComponentInfo = {
     val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], hex = hex.asInstanceOf[js.Any], l = l.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RaphaelFullComponentInfo]
   }
 }

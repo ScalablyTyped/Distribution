@@ -34,7 +34,6 @@ object EventSet {
     removeHandlers: EventListeners => EventSet
   ): EventSet = {
     val __obj = js.Dynamic.literal(addHandlers = js.Any.fromFunction1(addHandlers), dispatchEvent = js.Any.fromFunction2(dispatchEvent), handlers = handlers.asInstanceOf[js.Any], hasHandlers = js.Any.fromFunction0(hasHandlers), removeHandlers = js.Any.fromFunction1(removeHandlers))
-  
     __obj.asInstanceOf[EventSet]
   }
 }

@@ -22,18 +22,16 @@ trait MsoCalloutAngleType extends js.Object
 
 object MsoCalloutAngleType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def msoCalloutAngle30: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def msoCalloutAngle30: `2` = this.cast(2)
+  def msoCalloutAngle45: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def msoCalloutAngle45: `3` = this.cast(3)
+  def msoCalloutAngle60: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def msoCalloutAngle60: `4` = this.cast(4)
+  def msoCalloutAngle90: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def msoCalloutAngle90: `5` = this.cast(5)
+  def msoCalloutAngleAutomatic: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def msoCalloutAngleAutomatic: `1` = this.cast(1)
-  @scala.inline
-  def msoCalloutAngleMixed: `-2` = this.cast(-2)
+  def msoCalloutAngleMixed: `-2` = -2.asInstanceOf[`-2`]
 }
 

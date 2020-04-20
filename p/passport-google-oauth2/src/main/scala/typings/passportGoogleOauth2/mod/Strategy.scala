@@ -2,6 +2,7 @@ package typings.passportGoogleOauth2.mod
 
 import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.ParamsDictionary
+import typings.expressServeStaticCore.mod.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +15,7 @@ class Strategy protected () extends js.Object {
   def this(options: StrategyOptionsWithRequest, verify: VerifyFunctionWithRequestAndParams) = this()
   def this(options: StrategyOptions, verify: VerifyFunction) = this()
   var name: String = js.native
-  def authenticate(req: Request_[ParamsDictionary]): Unit = js.native
-  def authenticate(req: Request_[ParamsDictionary], options: js.Object): Unit = js.native
+  def authenticate(req: Request_[ParamsDictionary, _, _, Query]): Unit = js.native
+  def authenticate(req: Request_[ParamsDictionary, _, _, Query], options: js.Object): Unit = js.native
 }
 

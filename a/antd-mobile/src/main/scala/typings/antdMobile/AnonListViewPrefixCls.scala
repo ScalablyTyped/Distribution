@@ -14,7 +14,6 @@ object AnonListViewPrefixCls {
   @scala.inline
   def apply(listPrefixCls: String, listViewPrefixCls: String, prefixCls: String): AnonListViewPrefixCls = {
     val __obj = js.Dynamic.literal(listPrefixCls = listPrefixCls.asInstanceOf[js.Any], listViewPrefixCls = listViewPrefixCls.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonListViewPrefixCls]
   }
 }

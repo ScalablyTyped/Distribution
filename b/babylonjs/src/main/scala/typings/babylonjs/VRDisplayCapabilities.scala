@@ -22,7 +22,6 @@ object VRDisplayCapabilities {
     maxLayers: Double
   ): VRDisplayCapabilities = {
     val __obj = js.Dynamic.literal(canPresent = canPresent.asInstanceOf[js.Any], hasExternalDisplay = hasExternalDisplay.asInstanceOf[js.Any], hasOrientation = hasOrientation.asInstanceOf[js.Any], hasPosition = hasPosition.asInstanceOf[js.Any], maxLayers = maxLayers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VRDisplayCapabilities]
   }
 }

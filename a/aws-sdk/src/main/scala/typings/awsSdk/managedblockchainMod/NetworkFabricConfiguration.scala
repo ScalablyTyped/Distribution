@@ -16,7 +16,6 @@ object NetworkFabricConfiguration {
   @scala.inline
   def apply(Edition: Edition): NetworkFabricConfiguration = {
     val __obj = js.Dynamic.literal(Edition = Edition.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NetworkFabricConfiguration]
   }
 }

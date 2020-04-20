@@ -26,7 +26,6 @@ object SkEnumSkPathOpDifferenceS {
     values: js.Array[SkPathOp]
   ): SkEnumSkPathOpDifferenceS = {
     val __obj = js.Dynamic.literal(Difference = Difference.asInstanceOf[js.Any], Intersect = Intersect.asInstanceOf[js.Any], ReverseDifference = ReverseDifference.asInstanceOf[js.Any], Union = Union.asInstanceOf[js.Any], XOR = XOR.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SkEnumSkPathOpDifferenceS]
   }
 }

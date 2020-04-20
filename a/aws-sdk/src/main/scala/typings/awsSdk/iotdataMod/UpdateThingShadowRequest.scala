@@ -20,7 +20,6 @@ object UpdateThingShadowRequest {
   @scala.inline
   def apply(payload: JsonDocument, thingName: ThingName): UpdateThingShadowRequest = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any], thingName = thingName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UpdateThingShadowRequest]
   }
 }

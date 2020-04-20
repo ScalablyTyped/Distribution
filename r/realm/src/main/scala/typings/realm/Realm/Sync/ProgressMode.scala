@@ -12,10 +12,8 @@ trait ProgressMode extends js.Object
 
 object ProgressMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def forCurrentlyOutstandingWork: typings.realm.realmStrings.forCurrentlyOutstandingWork = "forCurrentlyOutstandingWork".asInstanceOf[typings.realm.realmStrings.forCurrentlyOutstandingWork]
   @scala.inline
-  def forCurrentlyOutstandingWork: typings.realm.realmStrings.forCurrentlyOutstandingWork = this.cast("forCurrentlyOutstandingWork")
-  @scala.inline
-  def reportIndefinitely: typings.realm.realmStrings.reportIndefinitely = this.cast("reportIndefinitely")
+  def reportIndefinitely: typings.realm.realmStrings.reportIndefinitely = "reportIndefinitely".asInstanceOf[typings.realm.realmStrings.reportIndefinitely]
 }
 

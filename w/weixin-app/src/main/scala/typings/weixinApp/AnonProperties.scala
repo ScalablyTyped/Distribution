@@ -13,7 +13,6 @@ object AnonProperties {
   @scala.inline
   def apply(properties: js.Array[AnonIndicate], uuid: String): AnonProperties = {
     val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonProperties]
   }
 }

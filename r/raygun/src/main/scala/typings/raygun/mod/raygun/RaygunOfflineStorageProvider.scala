@@ -21,7 +21,6 @@ object RaygunOfflineStorageProvider {
     send: js.Function2[/* error */ Error, /* sendItems */ js.Array[TStorageItem], Unit] => Unit
   ): RaygunOfflineStorageProvider[TTransportItem, TStorageItem] = {
     val __obj = js.Dynamic.literal(init = js.Any.fromFunction1(init), retrieve = js.Any.fromFunction1(retrieve), save = js.Any.fromFunction2(save), send = js.Any.fromFunction1(send))
-  
     __obj.asInstanceOf[RaygunOfflineStorageProvider[TTransportItem, TStorageItem]]
   }
 }

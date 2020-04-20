@@ -13,7 +13,6 @@ object FragmentReplacement {
   @scala.inline
   def apply(field: String, fragment: String): FragmentReplacement = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], fragment = fragment.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FragmentReplacement]
   }
 }

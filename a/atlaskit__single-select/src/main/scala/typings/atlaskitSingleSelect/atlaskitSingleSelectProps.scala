@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 
 trait atlaskitSingleSelectProps {
   @scala.inline
-  def SingleSelectProps: Props.type = typings.atlaskitSingleSelect.mod.Props
+  def SingleSelectProps: Props.type = Props
   type SingleSelectProps = Props
   @scala.inline
-  def StatelessSelectProps: StatelessProps.type = typings.atlaskitSingleSelect.mod.StatelessProps
+  def StatelessSelectProps: StatelessProps.type = StatelessProps
   type StatelessSelectProps = StatelessProps
 }
 

@@ -25,7 +25,6 @@ object V1Resource {
     installAttribution: AnonAccesstoken => Request_[GetIosPostInstallAttributionResponse]
   ): V1Resource = {
     val __obj = js.Dynamic.literal(getLinkStats = js.Any.fromFunction1(getLinkStats), installAttribution = js.Any.fromFunction1(installAttribution))
-  
     __obj.asInstanceOf[V1Resource]
   }
 }

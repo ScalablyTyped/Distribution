@@ -21,26 +21,24 @@ trait ARIAPropertyCurrent extends js.Object
 
 object ARIAPropertyCurrent {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def date: typings.ariaQuery.ariaQueryStrings.date = "date".asInstanceOf[typings.ariaQuery.ariaQueryStrings.date]
   @scala.inline
-  def date: typings.ariaQuery.ariaQueryStrings.date = this.cast("date")
-  @scala.inline
-  def `false`: typings.ariaQuery.ariaQueryStrings.`false` = this.cast("false")
+  def `false`: typings.ariaQuery.ariaQueryStrings.`false` = "false".asInstanceOf[typings.ariaQuery.ariaQueryStrings.`false`]
   @JSName("false")
   @scala.inline
-  def false_false: `false` = this.cast(false)
+  def false_false: `false` = false.asInstanceOf[`false`]
   @scala.inline
-  def location: typings.ariaQuery.ariaQueryStrings.location = this.cast("location")
+  def location: typings.ariaQuery.ariaQueryStrings.location = "location".asInstanceOf[typings.ariaQuery.ariaQueryStrings.location]
   @scala.inline
-  def page: typings.ariaQuery.ariaQueryStrings.page = this.cast("page")
+  def page: typings.ariaQuery.ariaQueryStrings.page = "page".asInstanceOf[typings.ariaQuery.ariaQueryStrings.page]
   @scala.inline
-  def step: typings.ariaQuery.ariaQueryStrings.step = this.cast("step")
+  def step: typings.ariaQuery.ariaQueryStrings.step = "step".asInstanceOf[typings.ariaQuery.ariaQueryStrings.step]
   @scala.inline
-  def time: typings.ariaQuery.ariaQueryStrings.time = this.cast("time")
+  def time: typings.ariaQuery.ariaQueryStrings.time = "time".asInstanceOf[typings.ariaQuery.ariaQueryStrings.time]
   @scala.inline
-  def `true`: typings.ariaQuery.ariaQueryStrings.`true` = this.cast("true")
+  def `true`: typings.ariaQuery.ariaQueryStrings.`true` = "true".asInstanceOf[typings.ariaQuery.ariaQueryStrings.`true`]
   @JSName("true")
   @scala.inline
-  def true_true: `true` = this.cast(true)
+  def true_true: `true` = true.asInstanceOf[`true`]
 }
 

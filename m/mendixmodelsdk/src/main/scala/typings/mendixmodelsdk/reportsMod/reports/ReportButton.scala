@@ -51,7 +51,7 @@ class ReportButton protected () extends Widget {
   ) = this()
   @JSName("model")
   var model_FReportButton: IModel = js.native
-  def caption(): Text = js.native
+  def caption: Text = js.native
   def caption(newValue: Text): js.Any = js.native
 }
 

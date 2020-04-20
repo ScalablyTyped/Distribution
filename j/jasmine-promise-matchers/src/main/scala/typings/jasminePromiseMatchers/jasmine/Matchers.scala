@@ -37,7 +37,6 @@ object Matchers {
     toBeResolvedWith: js.Any => Boolean
   ): Matchers[T] = {
     val __obj = js.Dynamic.literal(toBePromise = js.Any.fromFunction0(toBePromise), toBeRejected = js.Any.fromFunction0(toBeRejected), toBeRejectedWith = js.Any.fromFunction1(toBeRejectedWith), toBeResolved = js.Any.fromFunction0(toBeResolved), toBeResolvedWith = js.Any.fromFunction1(toBeResolvedWith))
-  
     __obj.asInstanceOf[Matchers[T]]
   }
 }

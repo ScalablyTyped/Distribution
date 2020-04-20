@@ -1,6 +1,6 @@
 package typings.shelljs
 
-import typings.node.NodeJS.ProcessEnv
+import typings.node.NodeJS.Dict
 import typings.node.NodeJS.Signals
 import typings.shelljs.shelljsBooleans.`false`
 import scala.scalajs.js
@@ -27,7 +27,7 @@ trait ExecOptionsasyncfalse extends js.Object {
   	 * @default "utf8"
   	 */
   var encoding: js.UndefOr[String] = js.undefined
-  var env: js.UndefOr[ProcessEnv] = js.undefined
+  var env: js.UndefOr[Dict[String]] = js.undefined
   /**
   	 * Exit when command return code is non-zero.
   	 *
@@ -61,7 +61,7 @@ object ExecOptionsasyncfalse {
     async: js.UndefOr[Boolean with `false`] = js.undefined,
     cwd: String = null,
     encoding: String = null,
-    env: ProcessEnv = null,
+    env: Dict[String] = null,
     fatal: js.UndefOr[Boolean] = js.undefined,
     gid: Int | Double = null,
     killSignal: Signals | Double = null,

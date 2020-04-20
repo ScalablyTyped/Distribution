@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListHumanLoopsResponse extends js.Object {
   /**
-    * An array of objects containing information about the human loops.
+    * An array of objects that contain information about the human loops.
     */
   var HumanLoopSummaries: typings.awsSdk.augmentedairuntimeMod.HumanLoopSummaries = js.native
   /**
-    * A token to resume pagination.
+    * A token to display the next page of results.
     */
   var NextToken: js.UndefOr[typings.awsSdk.augmentedairuntimeMod.NextToken] = js.native
 }

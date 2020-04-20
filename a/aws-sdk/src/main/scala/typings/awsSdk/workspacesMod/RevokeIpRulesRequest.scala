@@ -20,7 +20,6 @@ object RevokeIpRulesRequest {
   @scala.inline
   def apply(GroupId: IpGroupId, UserRules: IpRevokedRuleList): RevokeIpRulesRequest = {
     val __obj = js.Dynamic.literal(GroupId = GroupId.asInstanceOf[js.Any], UserRules = UserRules.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RevokeIpRulesRequest]
   }
 }

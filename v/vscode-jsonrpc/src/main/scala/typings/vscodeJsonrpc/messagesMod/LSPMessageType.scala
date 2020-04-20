@@ -16,18 +16,16 @@ trait LSPMessageType extends js.Object
 
 object LSPMessageType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `receive-notification`: typings.vscodeJsonrpc.vscodeJsonrpcStrings.`receive-notification` = "receive-notification".asInstanceOf[typings.vscodeJsonrpc.vscodeJsonrpcStrings.`receive-notification`]
   @scala.inline
-  def `receive-notification`: typings.vscodeJsonrpc.vscodeJsonrpcStrings.`receive-notification` = this.cast("receive-notification")
+  def `receive-request`: typings.vscodeJsonrpc.vscodeJsonrpcStrings.`receive-request` = "receive-request".asInstanceOf[typings.vscodeJsonrpc.vscodeJsonrpcStrings.`receive-request`]
   @scala.inline
-  def `receive-request`: typings.vscodeJsonrpc.vscodeJsonrpcStrings.`receive-request` = this.cast("receive-request")
+  def `receive-response`: typings.vscodeJsonrpc.vscodeJsonrpcStrings.`receive-response` = "receive-response".asInstanceOf[typings.vscodeJsonrpc.vscodeJsonrpcStrings.`receive-response`]
   @scala.inline
-  def `receive-response`: typings.vscodeJsonrpc.vscodeJsonrpcStrings.`receive-response` = this.cast("receive-response")
+  def `send-notification`: typings.vscodeJsonrpc.vscodeJsonrpcStrings.`send-notification` = "send-notification".asInstanceOf[typings.vscodeJsonrpc.vscodeJsonrpcStrings.`send-notification`]
   @scala.inline
-  def `send-notification`: typings.vscodeJsonrpc.vscodeJsonrpcStrings.`send-notification` = this.cast("send-notification")
+  def `send-request`: typings.vscodeJsonrpc.vscodeJsonrpcStrings.`send-request` = "send-request".asInstanceOf[typings.vscodeJsonrpc.vscodeJsonrpcStrings.`send-request`]
   @scala.inline
-  def `send-request`: typings.vscodeJsonrpc.vscodeJsonrpcStrings.`send-request` = this.cast("send-request")
-  @scala.inline
-  def `send-response`: typings.vscodeJsonrpc.vscodeJsonrpcStrings.`send-response` = this.cast("send-response")
+  def `send-response`: typings.vscodeJsonrpc.vscodeJsonrpcStrings.`send-response` = "send-response".asInstanceOf[typings.vscodeJsonrpc.vscodeJsonrpcStrings.`send-response`]
 }
 

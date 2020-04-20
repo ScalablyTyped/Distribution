@@ -28,10 +28,10 @@ class TemplateGrid protected () extends Grid {
   def evenRowsContents(): js.Any = js.native
   def evenRowsContents(newValue: TemplateGridContents): js.Any = js.native
   @JSName("evenRowsContents")
-  def evenRowsContents_Union(): TemplateGridContents | Null = js.native
-  def numberOfColumns(): Double = js.native
+  def evenRowsContents_Union: TemplateGridContents | Null = js.native
+  def numberOfColumns: Double = js.native
   def numberOfColumns(newValue: Double): js.Any = js.native
-  def oddRowsContents(): TemplateGridContents = js.native
+  def oddRowsContents: TemplateGridContents = js.native
   def oddRowsContents(newValue: TemplateGridContents): js.Any = js.native
 }
 

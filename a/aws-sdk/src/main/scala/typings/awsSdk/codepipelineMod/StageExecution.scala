@@ -20,7 +20,6 @@ object StageExecution {
   @scala.inline
   def apply(pipelineExecutionId: PipelineExecutionId, status: StageExecutionStatus): StageExecution = {
     val __obj = js.Dynamic.literal(pipelineExecutionId = pipelineExecutionId.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StageExecution]
   }
 }

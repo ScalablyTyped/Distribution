@@ -14,7 +14,6 @@ object AnonPitch {
   @scala.inline
   def apply(pitch: Double, roll: Double, yaw: Double): AnonPitch = {
     val __obj = js.Dynamic.literal(pitch = pitch.asInstanceOf[js.Any], roll = roll.asInstanceOf[js.Any], yaw = yaw.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPitch]
   }
 }

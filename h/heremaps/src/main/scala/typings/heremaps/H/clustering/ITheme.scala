@@ -27,7 +27,6 @@ object ITheme {
   @scala.inline
   def apply(getClusterPresentation: ICluster => Object, getNoisePresentation: INoisePoint => Object): ITheme = {
     val __obj = js.Dynamic.literal(getClusterPresentation = js.Any.fromFunction1(getClusterPresentation), getNoisePresentation = js.Any.fromFunction1(getNoisePresentation))
-  
     __obj.asInstanceOf[ITheme]
   }
 }

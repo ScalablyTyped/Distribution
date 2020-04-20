@@ -42,7 +42,6 @@ object Process {
     isRendered: () => Boolean
   ): Process = {
     val __obj = js.Dynamic.literal(getId = js.Any.fromFunction0(getId), getName = js.Any.fromFunction0(getName), getStages = js.Any.fromFunction0(getStages), isRendered = js.Any.fromFunction0(isRendered))
-  
     __obj.asInstanceOf[Process]
   }
 }

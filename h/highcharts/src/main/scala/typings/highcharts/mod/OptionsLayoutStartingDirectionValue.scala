@@ -12,10 +12,8 @@ trait OptionsLayoutStartingDirectionValue extends js.Object
 
 object OptionsLayoutStartingDirectionValue {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def horizontal: typings.highcharts.highchartsStrings.horizontal = "horizontal".asInstanceOf[typings.highcharts.highchartsStrings.horizontal]
   @scala.inline
-  def horizontal: typings.highcharts.highchartsStrings.horizontal = this.cast("horizontal")
-  @scala.inline
-  def vertical: typings.highcharts.highchartsStrings.vertical = this.cast("vertical")
+  def vertical: typings.highcharts.highchartsStrings.vertical = "vertical".asInstanceOf[typings.highcharts.highchartsStrings.vertical]
 }
 

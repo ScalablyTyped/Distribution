@@ -13,7 +13,6 @@ object ICharacterGrouping {
   @scala.inline
   def apply(first: String, label: String): ICharacterGrouping = {
     val __obj = js.Dynamic.literal(first = first.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICharacterGrouping]
   }
 }

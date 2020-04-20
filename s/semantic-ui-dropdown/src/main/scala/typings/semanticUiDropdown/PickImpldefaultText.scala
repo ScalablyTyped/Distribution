@@ -13,7 +13,6 @@ object PickImpldefaultText {
   @scala.inline
   def apply(defaultText: String): PickImpldefaultText = {
     val __obj = js.Dynamic.literal(defaultText = defaultText.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImpldefaultText]
   }
 }

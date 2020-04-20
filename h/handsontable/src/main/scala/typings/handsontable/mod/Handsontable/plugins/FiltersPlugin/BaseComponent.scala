@@ -26,7 +26,6 @@ object BaseComponent {
     show: () => Unit
   ): BaseComponent = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), elements = elements.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any], hide = js.Any.fromFunction0(hide), isHidden = js.Any.fromFunction0(isHidden), reset = js.Any.fromFunction0(reset), show = js.Any.fromFunction0(show))
-  
     __obj.asInstanceOf[BaseComponent]
   }
 }

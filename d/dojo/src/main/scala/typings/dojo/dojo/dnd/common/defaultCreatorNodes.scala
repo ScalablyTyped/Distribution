@@ -32,7 +32,6 @@ object defaultCreatorNodes {
   @scala.inline
   def apply(div: String, ol: String, p: String, ul: String): defaultCreatorNodes = {
     val __obj = js.Dynamic.literal(div = div.asInstanceOf[js.Any], ol = ol.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], ul = ul.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[defaultCreatorNodes]
   }
 }

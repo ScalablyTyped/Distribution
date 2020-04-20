@@ -158,7 +158,6 @@ object Agent_ {
     unmute: () => Unit
   ): Agent_ = {
     val __obj = js.Dynamic.literal(connect = js.Any.fromFunction2(connect), getAgentStates = js.Any.fromFunction0(getAgentStates), getConfiguration = js.Any.fromFunction0(getConfiguration), getContacts = js.Any.fromFunction1(getContacts), getExtension = js.Any.fromFunction0(getExtension), getName = js.Any.fromFunction0(getName), getRoutingProfile = js.Any.fromFunction0(getRoutingProfile), getState = js.Any.fromFunction0(getState), getStateDuration = js.Any.fromFunction0(getStateDuration), isSoftphoneEnabled = js.Any.fromFunction0(isSoftphoneEnabled), mute = js.Any.fromFunction0(mute), onAfterCallWork = js.Any.fromFunction1(onAfterCallWork), onContactPending = js.Any.fromFunction1(onContactPending), onError = js.Any.fromFunction1(onError), onMuteToggle = js.Any.fromFunction1(onMuteToggle), onNotRoutable = js.Any.fromFunction1(onNotRoutable), onOffline = js.Any.fromFunction1(onOffline), onRefresh = js.Any.fromFunction1(onRefresh), onRoutable = js.Any.fromFunction1(onRoutable), setConfiguration = js.Any.fromFunction2(setConfiguration), setState = js.Any.fromFunction2(setState), toSnapshot = js.Any.fromFunction0(toSnapshot), unmute = js.Any.fromFunction0(unmute))
-  
     __obj.asInstanceOf[Agent_]
   }
 }

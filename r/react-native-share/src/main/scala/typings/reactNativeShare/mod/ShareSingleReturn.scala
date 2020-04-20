@@ -12,7 +12,6 @@ object ShareSingleReturn {
   @scala.inline
   def apply(message: String): ShareSingleReturn = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ShareSingleReturn]
   }
 }

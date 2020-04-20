@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactSvgComponents extends reactSvgProps {
   @scala.inline
-  def ReactSVG: ComponentType[ReactSVGProps] = js.constructorOf[typings.reactSvg.mod.ReactSVG].asInstanceOf[typings.react.mod.ComponentType[ReactSVGProps]]
+  def ReactSVG: ComponentType[ReactSVGProps] = js.constructorOf[typings.reactSvg.mod.ReactSVG].asInstanceOf[ComponentType[ReactSVGProps]]
 }
 

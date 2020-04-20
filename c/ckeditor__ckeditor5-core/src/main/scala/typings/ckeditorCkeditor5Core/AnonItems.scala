@@ -13,7 +13,6 @@ object AnonItems {
   @scala.inline
   def apply(items: js.Array[String], viewportTopOffset: Double): AnonItems = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], viewportTopOffset = viewportTopOffset.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonItems]
   }
 }

@@ -22,7 +22,6 @@ object TranslateAnimation {
     translateZ: Double => Animation
   ): TranslateAnimation = {
     val __obj = js.Dynamic.literal(translate = js.Any.fromFunction1(translate), translate3d = js.Any.fromFunction0(translate3d), translateX = js.Any.fromFunction1(translateX), translateY = js.Any.fromFunction1(translateY), translateZ = js.Any.fromFunction1(translateZ))
-  
     __obj.asInstanceOf[TranslateAnimation]
   }
 }

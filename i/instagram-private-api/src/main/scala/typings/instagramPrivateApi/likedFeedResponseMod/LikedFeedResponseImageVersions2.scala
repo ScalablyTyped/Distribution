@@ -12,7 +12,6 @@ object LikedFeedResponseImageVersions2 {
   @scala.inline
   def apply(candidates: js.Array[LikedFeedResponseCandidatesItem]): LikedFeedResponseImageVersions2 = {
     val __obj = js.Dynamic.literal(candidates = candidates.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LikedFeedResponseImageVersions2]
   }
 }

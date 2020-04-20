@@ -18,7 +18,6 @@ object Literal {
   @scala.inline
   def apply(kind: typings.relayCompiler.relayCompilerStrings.Literal, loc: Location, value: js.Any): Literal = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Literal]
   }
 }

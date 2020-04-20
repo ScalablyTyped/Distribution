@@ -12,7 +12,6 @@ object Window {
   @scala.inline
   def apply(mapsforge: MapsforgePlugin): Window = {
     val __obj = js.Dynamic.literal(mapsforge = mapsforge.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Window]
   }
 }

@@ -22,7 +22,6 @@ object ITextSelection {
   @scala.inline
   def apply(end: IPosition, start: IPosition, style: ISelectionStyle, uuid: String): ITextSelection = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ITextSelection]
   }
 }

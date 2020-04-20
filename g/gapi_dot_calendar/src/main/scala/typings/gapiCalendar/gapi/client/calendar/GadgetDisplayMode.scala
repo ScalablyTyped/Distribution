@@ -13,10 +13,8 @@ trait GadgetDisplayMode extends js.Object
 
 object GadgetDisplayMode {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def chip: typings.gapiCalendar.gapiCalendarStrings.chip = "chip".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.chip]
   @scala.inline
-  def chip: typings.gapiCalendar.gapiCalendarStrings.chip = this.cast("chip")
-  @scala.inline
-  def icon: typings.gapiCalendar.gapiCalendarStrings.icon = this.cast("icon")
+  def icon: typings.gapiCalendar.gapiCalendarStrings.icon = "icon".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.icon]
 }
 

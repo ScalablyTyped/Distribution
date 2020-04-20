@@ -12,10 +12,8 @@ trait ReturnKeyTypeAndroid extends js.Object
 
 object ReturnKeyTypeAndroid {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def none: typings.reactNative.reactNativeStrings.none = "none".asInstanceOf[typings.reactNative.reactNativeStrings.none]
   @scala.inline
-  def none: typings.reactNative.reactNativeStrings.none = this.cast("none")
-  @scala.inline
-  def previous: typings.reactNative.reactNativeStrings.previous = this.cast("previous")
+  def previous: typings.reactNative.reactNativeStrings.previous = "previous".asInstanceOf[typings.reactNative.reactNativeStrings.previous]
 }
 

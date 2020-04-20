@@ -14,7 +14,6 @@ object BaseFloatingFilterChange {
   @scala.inline
   def apply[M](apply: Boolean, model: M): BaseFloatingFilterChange[M] = {
     val __obj = js.Dynamic.literal(apply = apply.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BaseFloatingFilterChange[M]]
   }
 }

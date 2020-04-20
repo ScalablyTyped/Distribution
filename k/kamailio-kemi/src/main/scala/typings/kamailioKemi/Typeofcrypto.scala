@@ -13,7 +13,6 @@ object Typeofcrypto {
   @scala.inline
   def apply(aes_decrypt: (String, String, String) => Double, aes_encrypt: (String, String, String) => Double): Typeofcrypto = {
     val __obj = js.Dynamic.literal(aes_decrypt = js.Any.fromFunction3(aes_decrypt), aes_encrypt = js.Any.fromFunction3(aes_encrypt))
-  
     __obj.asInstanceOf[Typeofcrypto]
   }
 }

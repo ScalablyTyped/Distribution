@@ -43,7 +43,6 @@ object Choice {
     isCorrectAnswer: () => Boolean
   ): Choice = {
     val __obj = js.Dynamic.literal(getGotoPage = js.Any.fromFunction0(getGotoPage), getPageNavigationType = js.Any.fromFunction0(getPageNavigationType), getValue = js.Any.fromFunction0(getValue), isCorrectAnswer = js.Any.fromFunction0(isCorrectAnswer))
-  
     __obj.asInstanceOf[Choice]
   }
 }

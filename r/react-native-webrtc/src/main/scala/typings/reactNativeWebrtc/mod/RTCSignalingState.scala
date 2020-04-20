@@ -16,18 +16,16 @@ trait RTCSignalingState extends js.Object
 
 object RTCSignalingState {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def closed: typings.reactNativeWebrtc.reactNativeWebrtcStrings.closed = "closed".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.closed]
   @scala.inline
-  def closed: typings.reactNativeWebrtc.reactNativeWebrtcStrings.closed = this.cast("closed")
+  def `have-local-offer`: typings.reactNativeWebrtc.reactNativeWebrtcStrings.`have-local-offer` = "have-local-offer".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.`have-local-offer`]
   @scala.inline
-  def `have-local-offer`: typings.reactNativeWebrtc.reactNativeWebrtcStrings.`have-local-offer` = this.cast("have-local-offer")
+  def `have-local-pranswer`: typings.reactNativeWebrtc.reactNativeWebrtcStrings.`have-local-pranswer` = "have-local-pranswer".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.`have-local-pranswer`]
   @scala.inline
-  def `have-local-pranswer`: typings.reactNativeWebrtc.reactNativeWebrtcStrings.`have-local-pranswer` = this.cast("have-local-pranswer")
+  def `have-remote-offer`: typings.reactNativeWebrtc.reactNativeWebrtcStrings.`have-remote-offer` = "have-remote-offer".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.`have-remote-offer`]
   @scala.inline
-  def `have-remote-offer`: typings.reactNativeWebrtc.reactNativeWebrtcStrings.`have-remote-offer` = this.cast("have-remote-offer")
+  def `have-remote-pranswer`: typings.reactNativeWebrtc.reactNativeWebrtcStrings.`have-remote-pranswer` = "have-remote-pranswer".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.`have-remote-pranswer`]
   @scala.inline
-  def `have-remote-pranswer`: typings.reactNativeWebrtc.reactNativeWebrtcStrings.`have-remote-pranswer` = this.cast("have-remote-pranswer")
-  @scala.inline
-  def stable: typings.reactNativeWebrtc.reactNativeWebrtcStrings.stable = this.cast("stable")
+  def stable: typings.reactNativeWebrtc.reactNativeWebrtcStrings.stable = "stable".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.stable]
 }
 

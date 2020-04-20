@@ -19,24 +19,22 @@ trait LogLevels extends js.Object
 
 object LogLevels {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def error: typings.npmlog.npmlogStrings.error = "error".asInstanceOf[typings.npmlog.npmlogStrings.error]
   @scala.inline
-  def error: typings.npmlog.npmlogStrings.error = this.cast("error")
+  def http: typings.npmlog.npmlogStrings.http = "http".asInstanceOf[typings.npmlog.npmlogStrings.http]
   @scala.inline
-  def http: typings.npmlog.npmlogStrings.http = this.cast("http")
+  def info: typings.npmlog.npmlogStrings.info = "info".asInstanceOf[typings.npmlog.npmlogStrings.info]
   @scala.inline
-  def info: typings.npmlog.npmlogStrings.info = this.cast("info")
+  def notice: typings.npmlog.npmlogStrings.notice = "notice".asInstanceOf[typings.npmlog.npmlogStrings.notice]
   @scala.inline
-  def notice: typings.npmlog.npmlogStrings.notice = this.cast("notice")
+  def silent: typings.npmlog.npmlogStrings.silent = "silent".asInstanceOf[typings.npmlog.npmlogStrings.silent]
   @scala.inline
-  def silent: typings.npmlog.npmlogStrings.silent = this.cast("silent")
+  def silly: typings.npmlog.npmlogStrings.silly = "silly".asInstanceOf[typings.npmlog.npmlogStrings.silly]
   @scala.inline
-  def silly: typings.npmlog.npmlogStrings.silly = this.cast("silly")
+  def timing: typings.npmlog.npmlogStrings.timing = "timing".asInstanceOf[typings.npmlog.npmlogStrings.timing]
   @scala.inline
-  def timing: typings.npmlog.npmlogStrings.timing = this.cast("timing")
+  def verbose: typings.npmlog.npmlogStrings.verbose = "verbose".asInstanceOf[typings.npmlog.npmlogStrings.verbose]
   @scala.inline
-  def verbose: typings.npmlog.npmlogStrings.verbose = this.cast("verbose")
-  @scala.inline
-  def warn: typings.npmlog.npmlogStrings.warn = this.cast("warn")
+  def warn: typings.npmlog.npmlogStrings.warn = "warn".asInstanceOf[typings.npmlog.npmlogStrings.warn]
 }
 

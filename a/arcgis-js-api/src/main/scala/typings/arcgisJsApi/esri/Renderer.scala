@@ -1,6 +1,11 @@
 package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisJsApi.arcgisJsApiStrings.`class-breaks`
+import typings.arcgisJsApi.arcgisJsApiStrings.`dot-density`
+import typings.arcgisJsApi.arcgisJsApiStrings.`unique-value`
+import typings.arcgisJsApi.arcgisJsApiStrings.dictionary
+import typings.arcgisJsApi.arcgisJsApiStrings.simple
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,11 +21,11 @@ trait Renderer
     */
   var authoringInfo: AuthoringInfo = js.native
   /**
-    * The renderer type.  **Possible values:** class-breaks | heatmap | simple | unique-value | raster-stretch
+    * The renderer type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-Renderer.html#type)
     */
-  val `type`: String = js.native
+  val `type`: `class-breaks` | dictionary | `dot-density` | typings.arcgisJsApi.arcgisJsApiStrings.heatmap | simple | `unique-value` = js.native
 }
 
 @JSGlobal("__esri.Renderer")

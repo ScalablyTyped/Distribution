@@ -20,7 +20,6 @@ object DropdownFilterItem {
     value: String
   ): DropdownFilterItem = {
     val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DropdownFilterItem]
   }
 }

@@ -20,7 +20,6 @@ object ServiceAccountCredentials {
   @scala.inline
   def apply(AccountName: AccountName, AccountPassword: AccountPassword): ServiceAccountCredentials = {
     val __obj = js.Dynamic.literal(AccountName = AccountName.asInstanceOf[js.Any], AccountPassword = AccountPassword.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ServiceAccountCredentials]
   }
 }

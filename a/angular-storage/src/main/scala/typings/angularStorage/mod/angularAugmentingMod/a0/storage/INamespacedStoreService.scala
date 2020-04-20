@@ -31,7 +31,6 @@ object INamespacedStoreService {
   @scala.inline
   def apply(get: String => js.Any, remove: String => Unit, set: (String, js.Any) => Unit): INamespacedStoreService = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), remove = js.Any.fromFunction1(remove), set = js.Any.fromFunction2(set))
-  
     __obj.asInstanceOf[INamespacedStoreService]
   }
 }

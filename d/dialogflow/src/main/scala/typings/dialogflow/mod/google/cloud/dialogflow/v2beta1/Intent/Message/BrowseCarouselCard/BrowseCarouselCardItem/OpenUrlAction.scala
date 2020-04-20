@@ -22,7 +22,7 @@ class OpenUrlAction () extends IOpenUrlAction {
   def this(properties: IOpenUrlAction) = this()
   /** OpenUrlAction urlTypeHint. */
   @JSName("urlTypeHint")
-  var urlTypeHint_OpenUrlAction: UrlTypeHint | String = js.native
+  var urlTypeHint_OpenUrlAction: UrlTypeHint | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.UrlTypeHint * / any */ String) = js.native
   /** OpenUrlAction url. */
   @JSName("url")
   var url_OpenUrlAction: String = js.native

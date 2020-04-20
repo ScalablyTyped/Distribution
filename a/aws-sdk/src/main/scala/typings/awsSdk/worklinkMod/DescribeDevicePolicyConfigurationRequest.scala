@@ -16,7 +16,6 @@ object DescribeDevicePolicyConfigurationRequest {
   @scala.inline
   def apply(FleetArn: FleetArn): DescribeDevicePolicyConfigurationRequest = {
     val __obj = js.Dynamic.literal(FleetArn = FleetArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeDevicePolicyConfigurationRequest]
   }
 }

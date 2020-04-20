@@ -57,6 +57,7 @@ object projMod extends js.Object {
   def toUserExtent(extent: Extent, sourceProjection: ProjectionLike): Extent = js.native
   def transform(coordinate: Coordinate, source: ProjectionLike, destination: ProjectionLike): Coordinate = js.native
   def transformExtent(extent: Extent, source: ProjectionLike, destination: ProjectionLike): Extent = js.native
+  def transformExtent(extent: Extent, source: ProjectionLike, destination: ProjectionLike, opt_stops: Double): Extent = js.native
   def transformWithProjections(point: Coordinate, sourceProjection: default, destinationProjection: default): Coordinate = js.native
   def useGeographic(): Unit = js.native
   type ProjectionLike = default | String

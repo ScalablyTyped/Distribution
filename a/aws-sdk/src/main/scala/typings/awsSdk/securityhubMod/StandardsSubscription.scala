@@ -33,7 +33,6 @@ object StandardsSubscription {
     StandardsSubscriptionArn: NonEmptyString
   ): StandardsSubscription = {
     val __obj = js.Dynamic.literal(StandardsArn = StandardsArn.asInstanceOf[js.Any], StandardsInput = StandardsInput.asInstanceOf[js.Any], StandardsStatus = StandardsStatus.asInstanceOf[js.Any], StandardsSubscriptionArn = StandardsSubscriptionArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[StandardsSubscription]
   }
 }

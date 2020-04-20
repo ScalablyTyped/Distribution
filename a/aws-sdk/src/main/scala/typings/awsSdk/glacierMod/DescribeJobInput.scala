@@ -24,7 +24,6 @@ object DescribeJobInput {
   @scala.inline
   def apply(accountId: String, jobId: String, vaultName: String): DescribeJobInput = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], jobId = jobId.asInstanceOf[js.Any], vaultName = vaultName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeJobInput]
   }
 }

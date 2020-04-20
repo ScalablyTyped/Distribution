@@ -15,7 +15,6 @@ object AnonOnFieldChange {
   @scala.inline
   def apply(knobs: js.Array[KnobStoreKnob], onFieldChange: () => Unit, onFieldClick: () => Unit): AnonOnFieldChange = {
     val __obj = js.Dynamic.literal(knobs = knobs.asInstanceOf[js.Any], onFieldChange = js.Any.fromFunction0(onFieldChange), onFieldClick = js.Any.fromFunction0(onFieldClick))
-  
     __obj.asInstanceOf[AnonOnFieldChange]
   }
 }

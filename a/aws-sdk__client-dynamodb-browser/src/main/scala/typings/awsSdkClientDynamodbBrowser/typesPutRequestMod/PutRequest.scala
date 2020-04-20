@@ -18,7 +18,6 @@ object PutRequest {
   @scala.inline
   def apply(Item: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]])): PutRequest = {
     val __obj = js.Dynamic.literal(Item = Item.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutRequest]
   }
 }

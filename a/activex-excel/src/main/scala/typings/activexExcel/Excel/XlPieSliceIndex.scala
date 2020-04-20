@@ -28,24 +28,22 @@ trait XlPieSliceIndex extends js.Object
 
 object XlPieSliceIndex {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def xlCenterPoint: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def xlCenterPoint: `5` = this.cast(5)
+  def xlInnerCenterPoint: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def xlInnerCenterPoint: `8` = this.cast(8)
+  def xlInnerClockwisePoint: `7` = 7.asInstanceOf[`7`]
   @scala.inline
-  def xlInnerClockwisePoint: `7` = this.cast(7)
+  def xlInnerCounterClockwisePoint: `9` = 9.asInstanceOf[`9`]
   @scala.inline
-  def xlInnerCounterClockwisePoint: `9` = this.cast(9)
+  def xlMidClockwiseRadiusPoint: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def xlMidClockwiseRadiusPoint: `4` = this.cast(4)
+  def xlMidCounterClockwiseRadiusPoint: `6` = 6.asInstanceOf[`6`]
   @scala.inline
-  def xlMidCounterClockwiseRadiusPoint: `6` = this.cast(6)
+  def xlOuterCenterPoint: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def xlOuterCenterPoint: `2` = this.cast(2)
+  def xlOuterClockwisePoint: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def xlOuterClockwisePoint: `3` = this.cast(3)
-  @scala.inline
-  def xlOuterCounterClockwisePoint: `1` = this.cast(1)
+  def xlOuterCounterClockwisePoint: `1` = 1.asInstanceOf[`1`]
 }
 

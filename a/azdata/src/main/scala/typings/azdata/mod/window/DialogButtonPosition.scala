@@ -12,10 +12,8 @@ trait DialogButtonPosition extends js.Object
 
 object DialogButtonPosition {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def left: typings.azdata.azdataStrings.left = "left".asInstanceOf[typings.azdata.azdataStrings.left]
   @scala.inline
-  def left: typings.azdata.azdataStrings.left = this.cast("left")
-  @scala.inline
-  def right: typings.azdata.azdataStrings.right = this.cast("right")
+  def right: typings.azdata.azdataStrings.right = "right".asInstanceOf[typings.azdata.azdataStrings.right]
 }
 

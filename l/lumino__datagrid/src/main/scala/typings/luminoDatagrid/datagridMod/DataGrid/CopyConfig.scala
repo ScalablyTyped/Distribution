@@ -39,7 +39,6 @@ object CopyConfig {
     warningThreshold: Double
   ): CopyConfig = {
     val __obj = js.Dynamic.literal(format = js.Any.fromFunction1(format), headers = headers.asInstanceOf[js.Any], separator = separator.asInstanceOf[js.Any], warningThreshold = warningThreshold.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CopyConfig]
   }
 }

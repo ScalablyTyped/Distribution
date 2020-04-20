@@ -14,7 +14,6 @@ object Chart {
     fullscreen: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Fullscreen */ js.Any
   ): Chart = {
     val __obj = js.Dynamic.literal(fullscreen = fullscreen.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Chart]
   }
 }

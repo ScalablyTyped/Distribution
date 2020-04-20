@@ -20,7 +20,6 @@ object EnableAddOnRequest {
   @scala.inline
   def apply(addOnRequest: AddOnRequest, resourceName: ResourceName): EnableAddOnRequest = {
     val __obj = js.Dynamic.literal(addOnRequest = addOnRequest.asInstanceOf[js.Any], resourceName = resourceName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[EnableAddOnRequest]
   }
 }

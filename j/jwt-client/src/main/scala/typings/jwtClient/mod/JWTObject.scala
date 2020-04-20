@@ -14,7 +14,6 @@ object JWTObject {
   @scala.inline
   def apply(claim: js.Any, header: JWTHeader, signature: String): JWTObject = {
     val __obj = js.Dynamic.literal(claim = claim.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JWTObject]
   }
 }

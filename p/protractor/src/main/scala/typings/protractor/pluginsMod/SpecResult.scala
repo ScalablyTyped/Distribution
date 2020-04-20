@@ -13,7 +13,6 @@ object SpecResult {
   @scala.inline
   def apply(assertions: js.Array[AssertionResult], description: String): SpecResult = {
     val __obj = js.Dynamic.literal(assertions = assertions.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SpecResult]
   }
 }

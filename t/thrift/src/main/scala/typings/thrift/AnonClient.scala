@@ -13,7 +13,6 @@ object AnonClient {
   @scala.inline
   def apply[TClient](Client: AnonInstantiableTClient[TClient]): AnonClient[TClient] = {
     val __obj = js.Dynamic.literal(Client = Client.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonClient[TClient]]
   }
 }

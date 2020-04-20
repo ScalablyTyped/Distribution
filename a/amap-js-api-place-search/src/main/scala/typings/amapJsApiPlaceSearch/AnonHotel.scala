@@ -18,7 +18,6 @@ object AnonHotel {
   @scala.inline
   def apply(deep_type: HOTEL, hotel: Hotel): AnonHotel = {
     val __obj = js.Dynamic.literal(deep_type = deep_type.asInstanceOf[js.Any], hotel = hotel.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonHotel]
   }
 }

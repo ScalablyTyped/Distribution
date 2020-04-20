@@ -12,7 +12,6 @@ object AnonTextTransform {
   @scala.inline
   def apply(textTransform: String): AnonTextTransform = {
     val __obj = js.Dynamic.literal(textTransform = textTransform.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonTextTransform]
   }
 }

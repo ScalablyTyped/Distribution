@@ -32,7 +32,6 @@ object IgtvBrowseFeedResponseRootObject {
     status: String
   ): IgtvBrowseFeedResponseRootObject = {
     val __obj = js.Dynamic.literal(badging = badging.asInstanceOf[js.Any], banner_token = banner_token.asInstanceOf[js.Any], browse_items = browse_items.asInstanceOf[js.Any], channels = channels.asInstanceOf[js.Any], composer = composer.asInstanceOf[js.Any], max_id = max_id.asInstanceOf[js.Any], more_available = more_available.asInstanceOf[js.Any], my_channel = my_channel.asInstanceOf[js.Any], seen_state = seen_state.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IgtvBrowseFeedResponseRootObject]
   }
 }

@@ -19,24 +19,22 @@ trait BoxStyleType extends js.Object
 
 object BoxStyleType {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def dashed: typings.grommet.grommetStrings.dashed = "dashed".asInstanceOf[typings.grommet.grommetStrings.dashed]
   @scala.inline
-  def dashed: typings.grommet.grommetStrings.dashed = this.cast("dashed")
+  def dotted: typings.grommet.grommetStrings.dotted = "dotted".asInstanceOf[typings.grommet.grommetStrings.dotted]
   @scala.inline
-  def dotted: typings.grommet.grommetStrings.dotted = this.cast("dotted")
+  def double: typings.grommet.grommetStrings.double = "double".asInstanceOf[typings.grommet.grommetStrings.double]
   @scala.inline
-  def double: typings.grommet.grommetStrings.double = this.cast("double")
+  def groove: typings.grommet.grommetStrings.groove = "groove".asInstanceOf[typings.grommet.grommetStrings.groove]
   @scala.inline
-  def groove: typings.grommet.grommetStrings.groove = this.cast("groove")
+  def hidden: typings.grommet.grommetStrings.hidden = "hidden".asInstanceOf[typings.grommet.grommetStrings.hidden]
   @scala.inline
-  def hidden: typings.grommet.grommetStrings.hidden = this.cast("hidden")
+  def inset: typings.grommet.grommetStrings.inset = "inset".asInstanceOf[typings.grommet.grommetStrings.inset]
   @scala.inline
-  def inset: typings.grommet.grommetStrings.inset = this.cast("inset")
+  def outset: typings.grommet.grommetStrings.outset = "outset".asInstanceOf[typings.grommet.grommetStrings.outset]
   @scala.inline
-  def outset: typings.grommet.grommetStrings.outset = this.cast("outset")
+  def ridge: typings.grommet.grommetStrings.ridge = "ridge".asInstanceOf[typings.grommet.grommetStrings.ridge]
   @scala.inline
-  def ridge: typings.grommet.grommetStrings.ridge = this.cast("ridge")
-  @scala.inline
-  def solid: typings.grommet.grommetStrings.solid = this.cast("solid")
+  def solid: typings.grommet.grommetStrings.solid = "solid".asInstanceOf[typings.grommet.grommetStrings.solid]
 }
 

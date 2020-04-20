@@ -24,18 +24,18 @@ class TemplateGridContents protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FTemplateGridContents: IModel = js.native
-  def containerAsTemplateGrid(): TemplateGrid = js.native
+  def containerAsTemplateGrid: TemplateGrid = js.native
   def widget(): js.Any = js.native
   def widget(newValue: Widget): js.Any = js.native
   /**
     * In version 7.15.0: deleted
     */
   @JSName("widget")
-  def widget_Union(): Widget | Null = js.native
+  def widget_Union: Widget | Null = js.native
   /**
     * In version 7.15.0: introduced
     */
-  def widgets(): IList[Widget] = js.native
+  def widgets: IList[Widget] = js.native
 }
 
 /* static members */

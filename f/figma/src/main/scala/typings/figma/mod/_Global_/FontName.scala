@@ -13,7 +13,6 @@ object FontName {
   @scala.inline
   def apply(family: String, style: String): FontName = {
     val __obj = js.Dynamic.literal(family = family.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[FontName]
   }
 }

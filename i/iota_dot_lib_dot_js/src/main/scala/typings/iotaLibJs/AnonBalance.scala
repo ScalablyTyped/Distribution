@@ -23,7 +23,6 @@ object AnonBalance {
     transfers: js.Array[String]
   ): AnonBalance = {
     val __obj = js.Dynamic.literal(addresses = addresses.asInstanceOf[js.Any], balance = balance.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], latestAddress = latestAddress.asInstanceOf[js.Any], transfers = transfers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonBalance]
   }
 }

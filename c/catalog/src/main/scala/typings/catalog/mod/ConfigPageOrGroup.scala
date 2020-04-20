@@ -34,7 +34,6 @@ object ConfigPageOrGroup {
   @scala.inline
   def ConfigPageGroup(pages: js.Array[ConfigPage], title: String): ConfigPageOrGroup = {
     val __obj = js.Dynamic.literal(pages = pages.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConfigPageOrGroup]
   }
 }

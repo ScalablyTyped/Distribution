@@ -36,8 +36,8 @@ class BasicParameterType protected () extends ParameterType {
   @JSName("type")
   val type_FBasicParameterType: IType = js.native
   @JSName("containerAsCodeActionParameter")
-  def containerAsCodeActionParameter_MBasicParameterType(): CodeActionParameter = js.native
-  def `type`(): Type = js.native
+  def containerAsCodeActionParameter_MBasicParameterType: CodeActionParameter = js.native
+  def `type`: Type = js.native
   def `type`(newValue: Type): js.Any = js.native
 }
 

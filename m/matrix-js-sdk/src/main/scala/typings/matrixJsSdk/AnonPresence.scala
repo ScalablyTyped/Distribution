@@ -13,7 +13,6 @@ object AnonPresence {
   @scala.inline
   def apply(presence: MatrixEvent): AnonPresence = {
     val __obj = js.Dynamic.literal(presence = presence.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonPresence]
   }
 }

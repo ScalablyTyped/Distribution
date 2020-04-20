@@ -13,7 +13,6 @@ object Transliterate {
   @scala.inline
   def apply(locale: String, replacement: String): Transliterate = {
     val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], replacement = replacement.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Transliterate]
   }
 }

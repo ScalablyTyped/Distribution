@@ -13,7 +13,6 @@ object PermIdGetByName {
   @scala.inline
   def apply(permid: Double, permsid: String): PermIdGetByName = {
     val __obj = js.Dynamic.literal(permid = permid.asInstanceOf[js.Any], permsid = permsid.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PermIdGetByName]
   }
 }

@@ -17,7 +17,6 @@ object AnonCols {
   @scala.inline
   def apply(align: LEFT | CENTER | RIGHT, cols: Double, text: String): AnonCols = {
     val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], cols = cols.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCols]
   }
 }

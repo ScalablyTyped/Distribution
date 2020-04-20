@@ -22,18 +22,16 @@ trait WdRelativeVerticalSize extends js.Object
 
 object WdRelativeVerticalSize {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def wdRelativeVerticalSizeBottomMarginArea: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def wdRelativeVerticalSizeBottomMarginArea: `3` = this.cast(3)
+  def wdRelativeVerticalSizeInnerMarginArea: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def wdRelativeVerticalSizeInnerMarginArea: `4` = this.cast(4)
+  def wdRelativeVerticalSizeMargin: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def wdRelativeVerticalSizeMargin: `0` = this.cast(0)
+  def wdRelativeVerticalSizeOuterMarginArea: `5` = 5.asInstanceOf[`5`]
   @scala.inline
-  def wdRelativeVerticalSizeOuterMarginArea: `5` = this.cast(5)
+  def wdRelativeVerticalSizePage: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def wdRelativeVerticalSizePage: `1` = this.cast(1)
-  @scala.inline
-  def wdRelativeVerticalSizeTopMarginArea: `2` = this.cast(2)
+  def wdRelativeVerticalSizeTopMarginArea: `2` = 2.asInstanceOf[`2`]
 }
 

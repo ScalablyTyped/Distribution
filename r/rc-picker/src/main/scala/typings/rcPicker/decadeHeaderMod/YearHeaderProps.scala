@@ -23,7 +23,6 @@ object YearHeaderProps {
     viewDate: DateType
   ): YearHeaderProps[DateType] = {
     val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], onNextDecades = js.Any.fromFunction0(onNextDecades), onPrevDecades = js.Any.fromFunction0(onPrevDecades), prefixCls = prefixCls.asInstanceOf[js.Any], viewDate = viewDate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[YearHeaderProps[DateType]]
   }
 }

@@ -13,12 +13,10 @@ trait SubscriptionType extends js.Object
 
 object SubscriptionType {
   @scala.inline
-  def Exclusive: typings.pulsarClient.pulsarClientStrings.Exclusive = this.cast("Exclusive")
+  def Exclusive: typings.pulsarClient.pulsarClientStrings.Exclusive = "Exclusive".asInstanceOf[typings.pulsarClient.pulsarClientStrings.Exclusive]
   @scala.inline
-  def Failover: typings.pulsarClient.pulsarClientStrings.Failover = this.cast("Failover")
+  def Failover: typings.pulsarClient.pulsarClientStrings.Failover = "Failover".asInstanceOf[typings.pulsarClient.pulsarClientStrings.Failover]
   @scala.inline
-  def Shared: typings.pulsarClient.pulsarClientStrings.Shared = this.cast("Shared")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Shared: typings.pulsarClient.pulsarClientStrings.Shared = "Shared".asInstanceOf[typings.pulsarClient.pulsarClientStrings.Shared]
 }
 

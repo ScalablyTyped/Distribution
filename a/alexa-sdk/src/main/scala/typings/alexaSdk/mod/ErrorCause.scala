@@ -12,7 +12,6 @@ object ErrorCause {
   @scala.inline
   def apply(requestId: String): ErrorCause = {
     val __obj = js.Dynamic.literal(requestId = requestId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ErrorCause]
   }
 }

@@ -14,10 +14,8 @@ trait fmBackStyle extends js.Object
 
 object fmBackStyle {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def fmBackStyleOpaque: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def fmBackStyleOpaque: `1` = this.cast(1)
-  @scala.inline
-  def fmBackStyleTransparent: `0` = this.cast(0)
+  def fmBackStyleTransparent: `0` = 0.asInstanceOf[`0`]
 }
 

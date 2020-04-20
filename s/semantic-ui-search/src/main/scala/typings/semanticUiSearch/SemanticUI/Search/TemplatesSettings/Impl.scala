@@ -20,7 +20,6 @@ object Impl {
     standard: js.Any => String
   ): Impl = {
     val __obj = js.Dynamic.literal(category = js.Any.fromFunction1(category), escape = js.Any.fromFunction1(escape), message = js.Any.fromFunction2(message), standard = js.Any.fromFunction1(standard))
-  
     __obj.asInstanceOf[Impl]
   }
 }

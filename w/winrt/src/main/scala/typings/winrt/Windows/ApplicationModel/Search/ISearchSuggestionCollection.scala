@@ -30,7 +30,6 @@ object ISearchSuggestionCollection {
     size: Double
   ): ISearchSuggestionCollection = {
     val __obj = js.Dynamic.literal(appendQuerySuggestion = js.Any.fromFunction1(appendQuerySuggestion), appendQuerySuggestions = js.Any.fromFunction1(appendQuerySuggestions), appendResultSuggestion = js.Any.fromFunction5(appendResultSuggestion), appendSearchSeparator = js.Any.fromFunction1(appendSearchSeparator), size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISearchSuggestionCollection]
   }
 }

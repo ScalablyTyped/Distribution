@@ -28,7 +28,6 @@ object GridStackEngine {
     nodes: js.Array[GridStackNode]
   ): GridStackEngine = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], float = float.asInstanceOf[js.Any], getRow = js.Any.fromFunction0(getRow), maxRow = maxRow.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GridStackEngine]
   }
 }

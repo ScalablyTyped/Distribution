@@ -20,16 +20,14 @@ trait styleRubyOverhang extends js.Object
 
 object styleRubyOverhang {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def styleRubyOverhangAuto: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def styleRubyOverhangAuto: `1` = this.cast(1)
+  def styleRubyOverhangNone: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def styleRubyOverhangNone: `3` = this.cast(3)
+  def styleRubyOverhangNotSet: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def styleRubyOverhangNotSet: `0` = this.cast(0)
+  def styleRubyOverhangWhitespace: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def styleRubyOverhangWhitespace: `2` = this.cast(2)
-  @scala.inline
-  def styleRubyOverhang_Max: `2147483647` = this.cast(2147483647)
+  def styleRubyOverhang_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }
 

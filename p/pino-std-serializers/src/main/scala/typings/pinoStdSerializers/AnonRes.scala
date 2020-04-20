@@ -13,7 +13,6 @@ object AnonRes {
   @scala.inline
   def apply(res: SerializedResponse): AnonRes = {
     val __obj = js.Dynamic.literal(res = res.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonRes]
   }
 }

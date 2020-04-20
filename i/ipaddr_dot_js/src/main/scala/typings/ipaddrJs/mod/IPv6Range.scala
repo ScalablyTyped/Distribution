@@ -22,30 +22,28 @@ trait IPv6Range extends js.Object
 
 object IPv6Range {
   @scala.inline
-  def `6to4`: typings.ipaddrJs.ipaddrJsStrings.`6to4` = this.cast("6to4")
+  def `6to4`: typings.ipaddrJs.ipaddrJsStrings.`6to4` = "6to4".asInstanceOf[typings.ipaddrJs.ipaddrJsStrings.`6to4`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def ipv4Mapped: typings.ipaddrJs.ipaddrJsStrings.ipv4Mapped = "ipv4Mapped".asInstanceOf[typings.ipaddrJs.ipaddrJsStrings.ipv4Mapped]
   @scala.inline
-  def ipv4Mapped: typings.ipaddrJs.ipaddrJsStrings.ipv4Mapped = this.cast("ipv4Mapped")
+  def linkLocal: typings.ipaddrJs.ipaddrJsStrings.linkLocal = "linkLocal".asInstanceOf[typings.ipaddrJs.ipaddrJsStrings.linkLocal]
   @scala.inline
-  def linkLocal: typings.ipaddrJs.ipaddrJsStrings.linkLocal = this.cast("linkLocal")
+  def loopback: typings.ipaddrJs.ipaddrJsStrings.loopback = "loopback".asInstanceOf[typings.ipaddrJs.ipaddrJsStrings.loopback]
   @scala.inline
-  def loopback: typings.ipaddrJs.ipaddrJsStrings.loopback = this.cast("loopback")
+  def multicast: typings.ipaddrJs.ipaddrJsStrings.multicast = "multicast".asInstanceOf[typings.ipaddrJs.ipaddrJsStrings.multicast]
   @scala.inline
-  def multicast: typings.ipaddrJs.ipaddrJsStrings.multicast = this.cast("multicast")
+  def reserved: typings.ipaddrJs.ipaddrJsStrings.reserved = "reserved".asInstanceOf[typings.ipaddrJs.ipaddrJsStrings.reserved]
   @scala.inline
-  def reserved: typings.ipaddrJs.ipaddrJsStrings.reserved = this.cast("reserved")
+  def rfc6052: typings.ipaddrJs.ipaddrJsStrings.rfc6052 = "rfc6052".asInstanceOf[typings.ipaddrJs.ipaddrJsStrings.rfc6052]
   @scala.inline
-  def rfc6052: typings.ipaddrJs.ipaddrJsStrings.rfc6052 = this.cast("rfc6052")
+  def rfc6145: typings.ipaddrJs.ipaddrJsStrings.rfc6145 = "rfc6145".asInstanceOf[typings.ipaddrJs.ipaddrJsStrings.rfc6145]
   @scala.inline
-  def rfc6145: typings.ipaddrJs.ipaddrJsStrings.rfc6145 = this.cast("rfc6145")
+  def teredo: typings.ipaddrJs.ipaddrJsStrings.teredo = "teredo".asInstanceOf[typings.ipaddrJs.ipaddrJsStrings.teredo]
   @scala.inline
-  def teredo: typings.ipaddrJs.ipaddrJsStrings.teredo = this.cast("teredo")
+  def unicast: typings.ipaddrJs.ipaddrJsStrings.unicast = "unicast".asInstanceOf[typings.ipaddrJs.ipaddrJsStrings.unicast]
   @scala.inline
-  def unicast: typings.ipaddrJs.ipaddrJsStrings.unicast = this.cast("unicast")
+  def uniqueLocal: typings.ipaddrJs.ipaddrJsStrings.uniqueLocal = "uniqueLocal".asInstanceOf[typings.ipaddrJs.ipaddrJsStrings.uniqueLocal]
   @scala.inline
-  def uniqueLocal: typings.ipaddrJs.ipaddrJsStrings.uniqueLocal = this.cast("uniqueLocal")
-  @scala.inline
-  def unspecified: typings.ipaddrJs.ipaddrJsStrings.unspecified = this.cast("unspecified")
+  def unspecified: typings.ipaddrJs.ipaddrJsStrings.unspecified = "unspecified".asInstanceOf[typings.ipaddrJs.ipaddrJsStrings.unspecified]
 }
 

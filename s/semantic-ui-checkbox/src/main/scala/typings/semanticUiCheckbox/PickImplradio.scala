@@ -13,7 +13,6 @@ object PickImplradio {
   @scala.inline
   def apply(radio: String): PickImplradio = {
     val __obj = js.Dynamic.literal(radio = radio.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickImplradio]
   }
 }

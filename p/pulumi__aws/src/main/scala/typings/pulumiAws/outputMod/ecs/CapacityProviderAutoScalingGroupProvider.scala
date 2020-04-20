@@ -19,7 +19,6 @@ object CapacityProviderAutoScalingGroupProvider {
     managedTerminationProtection: String
   ): CapacityProviderAutoScalingGroupProvider = {
     val __obj = js.Dynamic.literal(autoScalingGroupArn = autoScalingGroupArn.asInstanceOf[js.Any], managedScaling = managedScaling.asInstanceOf[js.Any], managedTerminationProtection = managedTerminationProtection.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CapacityProviderAutoScalingGroupProvider]
   }
 }

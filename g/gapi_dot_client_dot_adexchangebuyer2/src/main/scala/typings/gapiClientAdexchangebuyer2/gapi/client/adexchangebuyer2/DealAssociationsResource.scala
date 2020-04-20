@@ -24,7 +24,6 @@ object DealAssociationsResource {
     remove: AnonCreativeId => Request_[js.Object]
   ): DealAssociationsResource = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), list = js.Any.fromFunction1(list), remove = js.Any.fromFunction1(remove))
-  
     __obj.asInstanceOf[DealAssociationsResource]
   }
 }

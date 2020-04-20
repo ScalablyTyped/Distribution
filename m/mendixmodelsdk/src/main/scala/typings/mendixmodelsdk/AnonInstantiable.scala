@@ -1,6 +1,7 @@
 package typings.mendixmodelsdk
 
 import org.scalablytyped.runtime.Instantiable3
+import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.commonMod.common.IErrorCallback
 import typings.mendixmodelsdk.configurationMod.configuration.ISdkConfig
 import typings.mendixmodelsdk.imodelserverclientMod.IModelServerClient
@@ -10,7 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait AnonInstantiable[CT /* <: AbstractModel with IT */] extends Instantiable3[
+trait AnonInstantiable[CT /* <: AbstractModel with IT */, IT /* <: IAbstractModel */] extends Instantiable3[
       /* _client */ IModelServerClient, 
       /* _errorHandler */ IErrorCallback, 
       /* _connectionConfig */ ISdkConfig, 

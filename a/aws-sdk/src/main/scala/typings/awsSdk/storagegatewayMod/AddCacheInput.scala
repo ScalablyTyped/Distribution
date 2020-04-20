@@ -17,7 +17,6 @@ object AddCacheInput {
   @scala.inline
   def apply(DiskIds: DiskIds, GatewayARN: GatewayARN): AddCacheInput = {
     val __obj = js.Dynamic.literal(DiskIds = DiskIds.asInstanceOf[js.Any], GatewayARN = GatewayARN.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AddCacheInput]
   }
 }

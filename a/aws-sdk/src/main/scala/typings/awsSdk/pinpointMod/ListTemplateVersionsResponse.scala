@@ -13,7 +13,6 @@ object ListTemplateVersionsResponse {
   @scala.inline
   def apply(TemplateVersionsResponse: TemplateVersionsResponse): ListTemplateVersionsResponse = {
     val __obj = js.Dynamic.literal(TemplateVersionsResponse = TemplateVersionsResponse.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ListTemplateVersionsResponse]
   }
 }

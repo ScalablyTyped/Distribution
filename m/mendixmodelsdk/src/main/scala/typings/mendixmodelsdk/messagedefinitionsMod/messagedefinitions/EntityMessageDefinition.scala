@@ -34,11 +34,11 @@ class EntityMessageDefinition protected () extends MessageDefinition {
   @JSName("model")
   var model_FEntityMessageDefinition: IModel = js.native
   @JSName("containerAsMessageDefinitionCollection")
-  def containerAsMessageDefinitionCollection_MEntityMessageDefinition(): MessageDefinitionCollection = js.native
+  def containerAsMessageDefinitionCollection_MEntityMessageDefinition: MessageDefinitionCollection = js.native
   def exposedEntity(): js.Any = js.native
   def exposedEntity(newValue: ExposedEntity): js.Any = js.native
   @JSName("exposedEntity")
-  def exposedEntity_Union(): ExposedEntity | Null = js.native
+  def exposedEntity_Union: ExposedEntity | Null = js.native
 }
 
 /* static members */

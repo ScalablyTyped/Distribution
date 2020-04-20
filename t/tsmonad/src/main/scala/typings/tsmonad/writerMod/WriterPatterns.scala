@@ -12,7 +12,6 @@ object WriterPatterns {
   @scala.inline
   def apply[S, T, U](writer: (js.Array[S], T) => U): WriterPatterns[S, T, U] = {
     val __obj = js.Dynamic.literal(writer = js.Any.fromFunction2(writer))
-  
     __obj.asInstanceOf[WriterPatterns[S, T, U]]
   }
 }

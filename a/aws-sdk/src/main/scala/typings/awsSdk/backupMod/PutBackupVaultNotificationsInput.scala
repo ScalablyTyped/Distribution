@@ -24,7 +24,6 @@ object PutBackupVaultNotificationsInput {
   @scala.inline
   def apply(BackupVaultEvents: BackupVaultEvents, BackupVaultName: BackupVaultName, SNSTopicArn: ARN): PutBackupVaultNotificationsInput = {
     val __obj = js.Dynamic.literal(BackupVaultEvents = BackupVaultEvents.asInstanceOf[js.Any], BackupVaultName = BackupVaultName.asInstanceOf[js.Any], SNSTopicArn = SNSTopicArn.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PutBackupVaultNotificationsInput]
   }
 }

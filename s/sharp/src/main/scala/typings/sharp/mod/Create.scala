@@ -19,7 +19,6 @@ object Create {
   @scala.inline
   def apply(background: Color, channels: Channels, height: Double, width: Double): Create = {
     val __obj = js.Dynamic.literal(background = background.asInstanceOf[js.Any], channels = channels.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Create]
   }
 }

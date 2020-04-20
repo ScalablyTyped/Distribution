@@ -17,7 +17,6 @@ object SkEnumSkStrokeJoinBevelSk {
   @scala.inline
   def apply(Bevel: SkStrokeJoin, Miter: SkStrokeJoin, Round: SkStrokeJoin, values: js.Array[SkStrokeJoin]): SkEnumSkStrokeJoinBevelSk = {
     val __obj = js.Dynamic.literal(Bevel = Bevel.asInstanceOf[js.Any], Miter = Miter.asInstanceOf[js.Any], Round = Round.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SkEnumSkStrokeJoinBevelSk]
   }
 }

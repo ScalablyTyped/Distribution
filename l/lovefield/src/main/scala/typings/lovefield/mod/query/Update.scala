@@ -22,7 +22,6 @@ object Update {
     where: Predicate => Update
   ): Update = {
     val __obj = js.Dynamic.literal(bind = js.Any.fromFunction1(bind), exec = js.Any.fromFunction0(exec), explain = js.Any.fromFunction0(explain), set = js.Any.fromFunction2(set), toSql = js.Any.fromFunction0(toSql), where = js.Any.fromFunction1(where))
-  
     __obj.asInstanceOf[Update]
   }
 }

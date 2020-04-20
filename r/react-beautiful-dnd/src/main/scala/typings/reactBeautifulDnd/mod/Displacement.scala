@@ -13,7 +13,6 @@ object Displacement {
   @scala.inline
   def apply(draggableId: DraggableId, shouldAnimate: Boolean): Displacement = {
     val __obj = js.Dynamic.literal(draggableId = draggableId.asInstanceOf[js.Any], shouldAnimate = shouldAnimate.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Displacement]
   }
 }

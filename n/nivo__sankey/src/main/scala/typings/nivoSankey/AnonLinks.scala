@@ -15,7 +15,6 @@ object AnonLinks {
   @scala.inline
   def apply(links: js.Array[SankeyDataLink], nodes: js.Array[SankeyDataNode]): AnonLinks = {
     val __obj = js.Dynamic.literal(links = links.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonLinks]
   }
 }

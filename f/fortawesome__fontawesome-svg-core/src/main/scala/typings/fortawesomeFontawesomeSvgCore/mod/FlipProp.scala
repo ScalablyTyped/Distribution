@@ -13,12 +13,10 @@ trait FlipProp extends js.Object
 
 object FlipProp {
   @scala.inline
-  def both: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.both = this.cast("both")
+  def both: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.both = "both".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.both]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def horizontal: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.horizontal = "horizontal".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.horizontal]
   @scala.inline
-  def horizontal: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.horizontal = this.cast("horizontal")
-  @scala.inline
-  def vertical: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.vertical = this.cast("vertical")
+  def vertical: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.vertical = "vertical".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.vertical]
 }
 

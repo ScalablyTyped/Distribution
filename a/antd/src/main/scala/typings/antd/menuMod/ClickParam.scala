@@ -16,7 +16,6 @@ object ClickParam {
   @scala.inline
   def apply(domEvent: Event_, item: js.Any, key: String, keyPath: js.Array[String]): ClickParam = {
     val __obj = js.Dynamic.literal(domEvent = domEvent.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], keyPath = keyPath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ClickParam]
   }
 }

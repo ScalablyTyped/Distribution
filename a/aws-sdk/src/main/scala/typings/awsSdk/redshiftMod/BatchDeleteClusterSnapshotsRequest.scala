@@ -16,7 +16,6 @@ object BatchDeleteClusterSnapshotsRequest {
   @scala.inline
   def apply(Identifiers: DeleteClusterSnapshotMessageList): BatchDeleteClusterSnapshotsRequest = {
     val __obj = js.Dynamic.literal(Identifiers = Identifiers.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BatchDeleteClusterSnapshotsRequest]
   }
 }

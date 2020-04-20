@@ -48,7 +48,6 @@ object CustomerAgentInfo {
     unknownAgents: Integer
   ): CustomerAgentInfo = {
     val __obj = js.Dynamic.literal(activeAgents = activeAgents.asInstanceOf[js.Any], blackListedAgents = blackListedAgents.asInstanceOf[js.Any], healthyAgents = healthyAgents.asInstanceOf[js.Any], shutdownAgents = shutdownAgents.asInstanceOf[js.Any], totalAgents = totalAgents.asInstanceOf[js.Any], unhealthyAgents = unhealthyAgents.asInstanceOf[js.Any], unknownAgents = unknownAgents.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CustomerAgentInfo]
   }
 }

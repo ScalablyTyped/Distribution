@@ -22,7 +22,6 @@ object IBezierRange {
   @scala.inline
   def apply(endT: Double, startT: Double): IBezierRange = {
     val __obj = js.Dynamic.literal(endT = endT.asInstanceOf[js.Any], startT = startT.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IBezierRange]
   }
 }

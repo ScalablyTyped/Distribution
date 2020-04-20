@@ -24,20 +24,18 @@ trait CommandTypeEnum extends js.Object
 
 object CommandTypeEnum {
   @scala.inline
-  def adCmdFile: `256` = this.cast(256)
+  def adCmdFile: `256` = 256.asInstanceOf[`256`]
   @scala.inline
-  def adCmdStoredProc: `4` = this.cast(4)
+  def adCmdStoredProc: `4` = 4.asInstanceOf[`4`]
   @scala.inline
-  def adCmdTable: `2` = this.cast(2)
+  def adCmdTable: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def adCmdTableDirect: `512` = this.cast(512)
+  def adCmdTableDirect: `512` = 512.asInstanceOf[`512`]
   @scala.inline
-  def adCmdText: `1` = this.cast(1)
+  def adCmdText: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def adCmdUnknown: `8` = this.cast(8)
+  def adCmdUnknown: `8` = 8.asInstanceOf[`8`]
   @scala.inline
-  def adCmdUnspecified: `-1` = this.cast(-1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def adCmdUnspecified: `-1` = -1.asInstanceOf[`-1`]
 }
 

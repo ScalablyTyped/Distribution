@@ -20,7 +20,6 @@ object ReceiptIpFilter {
   @scala.inline
   def apply(Cidr: Cidr, Policy: ReceiptFilterPolicy): ReceiptIpFilter = {
     val __obj = js.Dynamic.literal(Cidr = Cidr.asInstanceOf[js.Any], Policy = Policy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReceiptIpFilter]
   }
 }

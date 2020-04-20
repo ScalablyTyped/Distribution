@@ -20,7 +20,6 @@ object AnonSql {
     ]
   ): AnonSql[TParams] = {
     val __obj = js.Dynamic.literal(sql = sql.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonSql[TParams]]
   }
 }

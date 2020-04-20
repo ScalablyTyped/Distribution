@@ -17,7 +17,6 @@ object ICompressorFactory {
     createCompressorEx: (IOutputStream, CompressAlgorithm, Double) => Compressor
   ): ICompressorFactory = {
     val __obj = js.Dynamic.literal(createCompressor = js.Any.fromFunction1(createCompressor), createCompressorEx = js.Any.fromFunction3(createCompressorEx))
-  
     __obj.asInstanceOf[ICompressorFactory]
   }
 }

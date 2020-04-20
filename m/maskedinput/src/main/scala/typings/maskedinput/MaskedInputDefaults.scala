@@ -13,7 +13,6 @@ object MaskedInputDefaults {
   @scala.inline
   def apply(aliases: js.Any, definitions: js.Any): MaskedInputDefaults = {
     val __obj = js.Dynamic.literal(aliases = aliases.asInstanceOf[js.Any], definitions = definitions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MaskedInputDefaults]
   }
 }

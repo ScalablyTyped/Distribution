@@ -15,14 +15,12 @@ trait AttendeeResponseStatus extends js.Object
 
 object AttendeeResponseStatus {
   @scala.inline
-  def accepted: typings.gapiCalendar.gapiCalendarStrings.accepted = this.cast("accepted")
+  def accepted: typings.gapiCalendar.gapiCalendarStrings.accepted = "accepted".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.accepted]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def declined: typings.gapiCalendar.gapiCalendarStrings.declined = "declined".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.declined]
   @scala.inline
-  def declined: typings.gapiCalendar.gapiCalendarStrings.declined = this.cast("declined")
+  def needsAction: typings.gapiCalendar.gapiCalendarStrings.needsAction = "needsAction".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.needsAction]
   @scala.inline
-  def needsAction: typings.gapiCalendar.gapiCalendarStrings.needsAction = this.cast("needsAction")
-  @scala.inline
-  def tentative: typings.gapiCalendar.gapiCalendarStrings.tentative = this.cast("tentative")
+  def tentative: typings.gapiCalendar.gapiCalendarStrings.tentative = "tentative".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.tentative]
 }
 

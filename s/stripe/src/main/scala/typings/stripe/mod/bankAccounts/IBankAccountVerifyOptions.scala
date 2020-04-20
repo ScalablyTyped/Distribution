@@ -15,7 +15,6 @@ object IBankAccountVerifyOptions {
   @scala.inline
   def apply(amounts: js.Tuple2[Double, Double]): IBankAccountVerifyOptions = {
     val __obj = js.Dynamic.literal(amounts = amounts.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IBankAccountVerifyOptions]
   }
 }

@@ -24,7 +24,6 @@ object SecurityDetails {
   @scala.inline
   def apply(roleArn: RoleArn, securityGroupIds: SecurityGroupIdList, subnetIds: SubnetList): SecurityDetails = {
     val __obj = js.Dynamic.literal(roleArn = roleArn.asInstanceOf[js.Any], securityGroupIds = securityGroupIds.asInstanceOf[js.Any], subnetIds = subnetIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SecurityDetails]
   }
 }

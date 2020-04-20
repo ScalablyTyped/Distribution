@@ -13,7 +13,6 @@ object SectionDropdownClickEvent {
   @scala.inline
   def apply(dropdown: DropdownView): SectionDropdownClickEvent = {
     val __obj = js.Dynamic.literal(dropdown = dropdown.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SectionDropdownClickEvent]
   }
 }

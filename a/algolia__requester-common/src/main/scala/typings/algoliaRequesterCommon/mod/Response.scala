@@ -23,7 +23,6 @@ object Response {
   @scala.inline
   def apply(content: String, isTimedOut: Boolean, status: Double): Response = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], isTimedOut = isTimedOut.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Response]
   }
 }

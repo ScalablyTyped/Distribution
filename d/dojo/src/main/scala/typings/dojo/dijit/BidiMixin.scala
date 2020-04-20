@@ -83,7 +83,6 @@ object BidiMixin {
     textDir: String
   ): BidiMixin = {
     val __obj = js.Dynamic.literal(applyTextDir = js.Any.fromFunction2(applyTextDir), enforceTextDirWithUcc = js.Any.fromFunction2(enforceTextDirWithUcc), getTextDir = js.Any.fromFunction1(getTextDir), restoreOriginalText = js.Any.fromFunction1(restoreOriginalText), textDir = textDir.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BidiMixin]
   }
 }

@@ -18,7 +18,6 @@ object Typeofsanity {
     sanity_reply: () => Double
   ): Typeofsanity = {
     val __obj = js.Dynamic.literal(sanity_check = js.Any.fromFunction2(sanity_check), sanity_check_defaults = js.Any.fromFunction0(sanity_check_defaults), sanity_reply = js.Any.fromFunction0(sanity_reply))
-  
     __obj.asInstanceOf[Typeofsanity]
   }
 }

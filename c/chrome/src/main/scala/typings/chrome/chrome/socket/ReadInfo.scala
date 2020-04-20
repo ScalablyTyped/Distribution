@@ -14,7 +14,6 @@ object ReadInfo {
   @scala.inline
   def apply(data: ArrayBuffer, resultCode: Double): ReadInfo = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], resultCode = resultCode.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ReadInfo]
   }
 }

@@ -110,7 +110,7 @@ object skeletonMod extends js.Object {
     /**
       * Gets or sets the animation properties override
       */
-    def animationPropertiesOverride(): Nullable[AnimationPropertiesOverride] = js.native
+    def animationPropertiesOverride: Nullable[AnimationPropertiesOverride] = js.native
     def animationPropertiesOverride(value: Nullable[AnimationPropertiesOverride]): js.Any = js.native
     /**
       * Begin a specific animation range
@@ -230,7 +230,7 @@ object skeletonMod extends js.Object {
     /**
       * Gets a boolean indicating that the skeleton effectively stores matrices into a texture
       */
-    def isUsingTextureForMatrices(): Boolean = js.native
+    def isUsingTextureForMatrices: Boolean = js.native
     /**
       * Build all resources required to render a skeleton
       */
@@ -252,12 +252,12 @@ object skeletonMod extends js.Object {
     /**
       * Gets the unique ID of this skeleton
       */
-    def uniqueId(): Double = js.native
+    def uniqueId: Double = js.native
     /**
       * Gets or sets a boolean indicating that bone matrices should be stored as a texture instead of using shader uniforms (default is true).
       * Please note that this option is not available if the hardware does not support it
       */
-    def useTextureToStoreBoneMatrices(): Boolean = js.native
+    def useTextureToStoreBoneMatrices: Boolean = js.native
     def useTextureToStoreBoneMatrices(value: Boolean): js.Any = js.native
   }
   

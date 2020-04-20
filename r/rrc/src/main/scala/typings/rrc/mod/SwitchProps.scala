@@ -14,7 +14,6 @@ object SwitchProps {
   @scala.inline
   def apply(location: LocationDescriptorObjectL, routes: js.Array[RouteConfiguration]): SwitchProps = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SwitchProps]
   }
 }

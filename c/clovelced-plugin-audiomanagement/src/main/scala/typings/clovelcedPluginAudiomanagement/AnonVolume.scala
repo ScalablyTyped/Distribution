@@ -12,7 +12,6 @@ object AnonVolume {
   @scala.inline
   def apply(volume: Double): AnonVolume = {
     val __obj = js.Dynamic.literal(volume = volume.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonVolume]
   }
 }

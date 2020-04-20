@@ -59,7 +59,7 @@ trait HTML5Backend extends Backend {
   def connectDragPreview(sourceId: String, node: Element, options: js.Any): js.Function0[Unit] = js.native
   def connectDragSource(sourceId: String, node: Element, options: js.Any): js.Function0[Unit] = js.native
   def connectDropTarget(targetId: String, node: HTMLElement): js.Function0[Unit] = js.native
-  def document(): js.Any = js.native
-  def window(): js.Any = js.native
+  def document: js.Any = js.native
+  def window: js.Any = js.native
 }
 

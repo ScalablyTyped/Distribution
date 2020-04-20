@@ -16,7 +16,6 @@ object DeleteCacheSecurityGroupMessage {
   @scala.inline
   def apply(CacheSecurityGroupName: String): DeleteCacheSecurityGroupMessage = {
     val __obj = js.Dynamic.literal(CacheSecurityGroupName = CacheSecurityGroupName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DeleteCacheSecurityGroupMessage]
   }
 }

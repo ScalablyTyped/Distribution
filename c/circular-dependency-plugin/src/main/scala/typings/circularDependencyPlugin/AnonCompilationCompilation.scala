@@ -13,7 +13,6 @@ object AnonCompilationCompilation {
   @scala.inline
   def apply(compilation: Compilation): AnonCompilationCompilation = {
     val __obj = js.Dynamic.literal(compilation = compilation.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AnonCompilationCompilation]
   }
 }

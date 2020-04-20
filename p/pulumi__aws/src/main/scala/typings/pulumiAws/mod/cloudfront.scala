@@ -2,10 +2,13 @@ package typings.pulumiAws.mod
 
 import typings.pulumiAws.distributionMod.DistributionArgs
 import typings.pulumiAws.distributionMod.DistributionState
+import typings.pulumiAws.getDistributionMod.GetDistributionArgs
+import typings.pulumiAws.getDistributionMod.GetDistributionResult
 import typings.pulumiAws.originAccessIdentityMod.OriginAccessIdentityArgs
 import typings.pulumiAws.originAccessIdentityMod.OriginAccessIdentityState
 import typings.pulumiAws.publicKeyMod.PublicKeyArgs
 import typings.pulumiAws.publicKeyMod.PublicKeyState
+import typings.pulumiPulumi.invokeMod.InvokeOptions
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
@@ -59,6 +62,8 @@ object cloudfront extends js.Object {
     def this(name: String, args: PublicKeyArgs, opts: CustomResourceOptions) = this()
   }
   
+  def getDistribution(args: GetDistributionArgs): js.Promise[GetDistributionResult] with GetDistributionResult = js.native
+  def getDistribution(args: GetDistributionArgs, opts: InvokeOptions): js.Promise[GetDistributionResult] with GetDistributionResult = js.native
   /* static members */
   @js.native
   object Distribution extends js.Object {

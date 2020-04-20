@@ -15,7 +15,6 @@ object Facet {
   @scala.inline
   def AnonName(data: String, field: String, name: String): Facet = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Facet]
   }
   @scala.inline

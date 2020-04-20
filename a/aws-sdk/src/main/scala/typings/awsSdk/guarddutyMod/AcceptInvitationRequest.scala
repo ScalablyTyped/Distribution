@@ -24,7 +24,6 @@ object AcceptInvitationRequest {
   @scala.inline
   def apply(DetectorId: DetectorId, InvitationId: String, MasterId: String): AcceptInvitationRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId.asInstanceOf[js.Any], InvitationId = InvitationId.asInstanceOf[js.Any], MasterId = MasterId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AcceptInvitationRequest]
   }
 }

@@ -16,7 +16,6 @@ object GetRelationalDatabaseLogStreamsRequest {
   @scala.inline
   def apply(relationalDatabaseName: ResourceName): GetRelationalDatabaseLogStreamsRequest = {
     val __obj = js.Dynamic.literal(relationalDatabaseName = relationalDatabaseName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetRelationalDatabaseLogStreamsRequest]
   }
 }

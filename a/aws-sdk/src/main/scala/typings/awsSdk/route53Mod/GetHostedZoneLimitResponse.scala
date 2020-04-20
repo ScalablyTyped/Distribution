@@ -20,7 +20,6 @@ object GetHostedZoneLimitResponse {
   @scala.inline
   def apply(Count: UsageCount, Limit: HostedZoneLimit): GetHostedZoneLimitResponse = {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Limit = Limit.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetHostedZoneLimitResponse]
   }
 }

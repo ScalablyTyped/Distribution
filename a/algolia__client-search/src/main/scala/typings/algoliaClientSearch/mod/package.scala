@@ -17,6 +17,6 @@ package object mod {
         ]
       ]
     ], 
-    typings.algoliaClientSearch.mod.SearchIndex with typings.algoliaClientSearch.algoliaClientSearchStrings.CreateIndex with js.Any
+    typings.algoliaClientSearch.mod.SearchIndex with typings.algoliaClientSearch.algoliaClientSearchStrings.CreateIndex with org.scalablytyped.runtime.TopLevel[js.Any]
   ]
 }

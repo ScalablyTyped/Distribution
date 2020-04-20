@@ -13,7 +13,6 @@ object InfoProps {
   @scala.inline
   def apply(item: Result): InfoProps = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InfoProps]
   }
 }

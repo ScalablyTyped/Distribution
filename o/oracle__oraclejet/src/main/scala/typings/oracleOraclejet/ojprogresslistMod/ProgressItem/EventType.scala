@@ -17,20 +17,18 @@ trait EventType extends js.Object
 
 object EventType {
   @scala.inline
-  def abort: typings.oracleOraclejet.oracleOraclejetStrings.abort = this.cast("abort")
+  def abort: typings.oracleOraclejet.oracleOraclejetStrings.abort = "abort".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.abort]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def error: typings.oracleOraclejet.oracleOraclejetStrings.error = "error".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.error]
   @scala.inline
-  def error: typings.oracleOraclejet.oracleOraclejetStrings.error = this.cast("error")
+  def load: typings.oracleOraclejet.oracleOraclejetStrings.load = "load".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.load]
   @scala.inline
-  def load: typings.oracleOraclejet.oracleOraclejetStrings.load = this.cast("load")
+  def loadend: typings.oracleOraclejet.oracleOraclejetStrings.loadend = "loadend".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.loadend]
   @scala.inline
-  def loadend: typings.oracleOraclejet.oracleOraclejetStrings.loadend = this.cast("loadend")
+  def loadstart: typings.oracleOraclejet.oracleOraclejetStrings.loadstart = "loadstart".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.loadstart]
   @scala.inline
-  def loadstart: typings.oracleOraclejet.oracleOraclejetStrings.loadstart = this.cast("loadstart")
+  def progress: typings.oracleOraclejet.oracleOraclejetStrings.progress = "progress".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.progress]
   @scala.inline
-  def progress: typings.oracleOraclejet.oracleOraclejetStrings.progress = this.cast("progress")
-  @scala.inline
-  def timeout: typings.oracleOraclejet.oracleOraclejetStrings.timeout = this.cast("timeout")
+  def timeout: typings.oracleOraclejet.oracleOraclejetStrings.timeout = "timeout".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.timeout]
 }
 

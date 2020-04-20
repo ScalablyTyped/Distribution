@@ -13,7 +13,6 @@ object IonicEnvironmentFlags {
   @scala.inline
   def apply(confirm: Boolean, interactive: Boolean): IonicEnvironmentFlags = {
     val __obj = js.Dynamic.literal(confirm = confirm.asInstanceOf[js.Any], interactive = interactive.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IonicEnvironmentFlags]
   }
 }

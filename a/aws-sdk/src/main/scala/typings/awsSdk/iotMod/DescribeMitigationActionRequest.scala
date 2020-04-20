@@ -16,7 +16,6 @@ object DescribeMitigationActionRequest {
   @scala.inline
   def apply(actionName: MitigationActionName): DescribeMitigationActionRequest = {
     val __obj = js.Dynamic.literal(actionName = actionName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DescribeMitigationActionRequest]
   }
 }

@@ -18,7 +18,6 @@ object AnonRemove {
   @scala.inline
   def apply[TTarget, TData](remove: HandleObject[TTarget, TData] => Unit): AnonRemove[TTarget, TData] = {
     val __obj = js.Dynamic.literal(remove = js.Any.fromFunction1(remove))
-  
     __obj.asInstanceOf[AnonRemove[TTarget, TData]]
   }
 }

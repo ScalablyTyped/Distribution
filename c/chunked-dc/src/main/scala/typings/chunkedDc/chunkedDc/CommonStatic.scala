@@ -13,7 +13,6 @@ object CommonStatic {
   @scala.inline
   def apply(HEADER_LENGTH: Double): CommonStatic = {
     val __obj = js.Dynamic.literal(HEADER_LENGTH = HEADER_LENGTH.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CommonStatic]
   }
 }
